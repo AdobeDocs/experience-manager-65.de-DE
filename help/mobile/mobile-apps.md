@@ -1,0 +1,32 @@
+---
+title: Mobile-Apps
+seo-title: Mobile-Apps
+description: 'null'
+seo-description: 'null'
+uuid: 4a91241e-8c78-42fe-a5d3-732a6c34cbfd
+contentOwner: msm-service
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/MOBILE
+discoiquuid: eda55579-4140-477b-b4d0-a87d14ec3237
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# Mobile-Apps{#mobile-apps}
+
+>[!NOTE]
+>
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+
+Adobe Experience Manager (AEM) Mobile ist Teil der digitalen Mehrkanal-Plattform von Adobe Experience Manager, die auch AEM Assets, Sites, Bildschirme, Workflow, User Manager, Commerce und Forms nutzt. AEM Mobile bietet eine bemerkenswerte Flexibilität bei der Bereitstellung, sodass Unternehmen eine Vielzahl von Inhaltsquellen nutzen können.
+
+AEM Mobile bietet mehrere Methoden zum Erstellen von Apps. Die verschiedenen Methoden zum Erstellen von Apps sind:
+
+* [Erste Schritte mit AEM Mobile-On-Demand-Diensten](/help/mobile/mobile-apps-ondemand.md)
+* [Erste Schritte mit Adobe PhoneGap Enterprise mit AEM](/help/mobile/phonegap.md)
+
+>[!NOTE]
+>
+>Wenn Sie neu bei Adobe Experience Manager sind, sollten Sie die [ersten Schritte mit AEM](/help/sites-deploying/deploy.md)durchführen.
