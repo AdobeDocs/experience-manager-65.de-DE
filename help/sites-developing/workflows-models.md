@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
 
 ---
 
@@ -174,19 +174,25 @@ Beim Ausführen eines Workflows im [Übergangsmodus](/help/sites-developing/work
 
 ## Workflow-Modelle in der Touch-Benutzeroberfläche verfügbar machen {#classic2touchui}
 
-Befolgen Sie die Konfiguration, wenn ein Workflow-Modell der klassischen Benutzeroberfläche im Auswahl-Popup-Menü der Zeitleiste in der Touch-Benutzeroberfläche fehlt und verfügbar gemacht werden muss. Die folgenden Schritte zeigen Ihnen, wie Sie die AEM Assets-Workflow-Modelle **[!UICONTROL Aktivierungsanfrage]** und **[!UICONTROL Deaktivierungsanfrage]** verwenden.
+If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. Die folgenden Schritte veranschaulichen die Verwendung des Workflow-Modells **[!UICONTROL Request for Activation]**.
 
-1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Access an asset using `/assets.html/content/dam` path. Wählen Sie das Asset aus. Öffnen Sie die **[!UICONTROL Timeline]** in der linken Leiste. Klicken Sie auf **[!UICONTROL Workflow starten]**. Sie werden bemerken, dass die Modelle **[!UICONTROL Aktivierungsanfrage]** und **[!UICONTROL Deaktivierungsanfrage]** nicht in der Popup-Liste enthalten sind.
-1. Klicken Sie auf **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
-1. Klicken Sie auf **[!UICONTROL Erstellen > Tag erstellen]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Access an asset using `/assets.html/content/dam` path. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Timeline]** in der linken Leiste. Klicken Sie auf Arbeitsablauf **[!UICONTROL starten]** und vergewissern Sie sich, dass das **[!UICONTROL Aktivierungsmodell]** nicht in der Popup-Liste vorhanden ist.
 
+1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
+
+1. Select **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Klicken Sie auf **[!UICONTROL Übermitteln]**.
    ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
 
-1. Klicken Sie auf **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** (oder **[!UICONTROL Deaktivierungsanfrage]**). Klicken Sie auf **[!UICONTROL Bearbeiten]**.
-1. Rufen Sie im Sidekick die Registerkarte **[!UICONTROL Seite]** auf. Öffnen Sie die **[!UICONTROL Seiteneigenschaften]**.
-1. Add `Workflow : DAM` to **[!UICONTROL Tags/Keywords]** field. Klicken Sie auf **[!UICONTROL OK]**. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** und dann **[!UICONTROL Bearbeiten]**.
 
+1. Wählen Sie &quot; **[!UICONTROL Bearbeiten]**&quot;, öffnen Sie das Menü &quot; **[!UICONTROL Seiteninformationen]** &quot;, wählen Sie dort &quot;Eigenschaften ****&#x200B;öffnen&quot;und gehen Sie zur Registerkarte &quot; **[!UICONTROL Grundeinstellungen]** &quot;(falls nicht bereits geöffnet).
+
+1. Zu `Workflow : DAM`Tags **** hinzufügen. Bestätigen Sie die Auswahl mit dem Häkchen.
+
+1. Bestätigen Sie das Hinzufügen des Tags mit **[!UICONTROL Speichern und Schließen]**.
    ![Seiteneigenschaften des Modells bearbeiten](assets/workflow_model_edit_activation1.png)
+
+1. Schließen Sie den Prozess mit **[!UICONTROL Synchronisieren]** ab. Der Workflow ist jetzt in der Touch-fähigen Benutzeroberfläche verfügbar.
 
 ### Konfigurieren von Workflows für die Unterstützung für mehrere Ressourcen {#configuring-a-workflow-for-multi-resource-support}
 
