@@ -1,0 +1,89 @@
+---
+title: Verwalten von Agentenunterschriftbildern
+seo-title: Verwalten von Agentsignaturbildern
+description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie diese verwenden, um Korrespondenz in AEM Forms zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
+seo-description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie diese verwenden, um Korrespondenz in AEM Forms zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
+uuid: 48b2697e-6065-4e23-9aa8-333e7b11ede1
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: correspondence-management
+discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+
+---
+
+
+# Verwalten von Agentenunterschriftbildern{#manage-agent-signature-images}
+
+## Überblick {#overview}
+
+In der Correspondence Management können Sie ein Bild für die Agentunterzeichnung in Briefen verwenden. Nachdem Sie das Agentsignaturbild beim Erstellen eines Briefs eingerichtet haben, können Sie das Agentsignaturbild im Brief als Signatur des Absenderagenten wiedergeben.
+
+Das agentSignatureImage-DDE ist ein berechnetes DDE zur Darstellung des Signaturbilds des Agenten. Der Ausdruck für dieses berechnete DDE verwendet eine neue benutzerdefinierte Funktion, die vom Baustein „Expression Manager“ bereitgestellt wird. Diese benutzerdefinierte Funktion akzeptiert agentID und agentFolder als Eingabeparameter und ruft den Bildinhalt auf Basis dieser Parameter ab. Das Systemdatenwörterbuch SystemContext gibt Briefen in Correspondence Management Zugriff auf Informationen im aktuellen Systemkontext. Der Systemkontext umfasst Informationen zum derzeit angemeldeten Benutzer und zu aktiven Konfigurationsparametern.
+
+Sie können Bilder im cmuserroot-Ordner hinzufügen. In den [Eigenschaften der Correspondence Management-Konfiguration](/help/forms/using/cm-configuration-properties.md) können Sie mithilfe der Eigenschaft „URL für CM-Benutzerelemente“ den Ordner wechseln, aus dem das Agentsignaturbild abgerufen wird.
+
+Der Wert des agentFolder-DDE wird dem CMUserRoot-Konfigurationsparameter für die Correspondence Management-Konfigurationseigenschaften entnommen. Standardmäßig verweist dieser Konfigurationsparameter auf /content/cmUserRoot im CRX-Repository. Sie können den Wert der CMUserRoot-Konfiguration in den Konfigurationseigenschaften ändern.
+Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum Abrufen des Bilds der Benutzerunterschrift zu definieren.
+
+## Agentsignaturbild hinzufügen {#adding-agent-signature-image}
+
+1. Stellen Sie sicher, dass das Agentsignaturbild denselben Namen wie der AEM-Benutzername des Benutzers hat. (Eine Erweiterung wird den Namen der Bilddateien nicht benötigt.)
+1. Erstellen Sie in CRX einen Ordner mit dem Namen `cmUserRoot` im aktuellen Ordner.
+
+   1. Wechseln zu `https://[server]:[port]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **content** und wählen Sie **Erstellen** > **Ordner erstellen**.
+
+      ![Ordner erstellen](assets/1_createnode_cmuserroot.png)
+
+   1. Geben Sie im Dialogfeld „Ordner erstellen“ den Namen des Ordners als `cmUserRoot` an. Klicken Sie auf **Alle speichern**.
+
+      >[!NOTE]
+      >
+      >cmUserRoot ist der Standardspeicherort, unter dem AEM nach dem Agentsignaturbild sucht. You can, however, change it by editing the CM User Root property in the [Correspondence Management configuration properties](/help/forms/using/cm-configuration-properties.md).
+
+1. Navigieren Sie in Content Explorer zum cmUserRoot-Ordner und fügen Sie das Agentsignaturbild hinzu.
+
+   1. Wechseln zu `https://[server]:[port]/crx/explorer/index.jsp`. Melden Sie sich nötigenfalls als Administrator an.
+   1. Klicken Sie auf **Content Explorer**. Content Explorer wird in einem neuen Fenster geöffnet.
+   1. Navigieren Sie in Content Explorer zum cmUserRoot-Ordner und wählen Sie ihn aus. Klicken Sie mit der rechten Maustaste auf den **cmUserRoot**-Ordner und wählen Sie **Neuer Knoten**.
+
+      ![Neuer Knoten in cmUserRoot](assets/2_cmuserroot_newnode.png)
+
+      Nehmen Sie die folgenden Einträge in der Zeile für neue Knoten vor und klicken Sie dann auf das grüne Häkchen.
+
+      **** Name: JohnDoe (oder der Name Ihrer Agentsignaturdatei)
+
+      **Typ:** nt:file
+
+      Under the `cmUserRoot` folder, a new folder called `JohnDoe` (or the name you have given in the previous step) is created.
+
+   1. Click the new folder you have created (here `JohnDoe`). Der Content Explorer zeigt den Inhalt des Ordners abgeblendet an.
+
+   1. Double-click the **jcr:content** property, set its type as **nt:resource**, and then click the green check mark to save the entry.
+
+      Wenn die Eigenschaft nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“. 
+
+      ![Eigenschaft „jcr:content“](assets/3_jcrcontentntresource.png)
+
+      Zu den Untereigenschaften von „jcr:content“ gehört die abgeblendet dargestellte Eigenschaft „jcr:data“. Doppelklicken Sie auf „jcr:data“. Die Eigenschaft kann bearbeitet werden, und die Schaltfläche &quot;Datei auswählen&quot;wird im Eintrag angezeigt. Click **Choose File** and select the image file you want to use as a logo. Für die Bilddatei wird keine Erweiterung benötigt.
+
+      ![JCR-Daten](assets/5_jcrdata.png)
+   Klicken Sie auf **Alle speichern**.
+
+1. Stellen Sie sicher, dass im für den Brief verwendeten XDP\Layout in der linken unteren Ecke (oder einer anderen geeigneten Stelle im Layout, an der die Signatur ausgegeben werden soll) ein Bildfeld für die Ausgabe des Signaturbilds zur Verfügung steht.
+1. Wählen Sie beim Erstellen von Korrespondenz wie folgt auf der Registerkarte „Daten“ ein Bildfeld für das Signaturbild:
+
+   1. Wählen Sie aus dem Popupmenü „Verbindungstyp“ im rechten Bereich die Option „System“.
+
+   1. Wählen Sie das agentSignatureImage-DDE aus der Liste im Datenelementbereich für das SystemContext-DD.
+
+   1. Speichern Sie den Brief.
+
+1. Wenn der Brief gerendert wird, wird die Signatur ind er Briefvorschau im Bildfeld angezeigt, wie durch das Layout bestimmt.
+
+   ![Agentsignaturbild im Brief](assets/letterwithsignature.png)
+
