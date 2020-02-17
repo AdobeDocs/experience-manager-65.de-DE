@@ -1,0 +1,59 @@
+---
+title: Tastaturbefehle bei der Seitenbearbeitung
+seo-title: Tastaturbefehle für die Seitenbearbeitung
+description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch für die Bearbeitung von Seiten
+seo-description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch für die Bearbeitung von Seiten
+uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
+contentOwner: Chris Bohnert
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: page-authoring
+content-type: reference
+discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
+translation-type: tm+mt
+source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+
+---
+
+
+# Tastaturbefehle für die Seitenbearbeitung{#keyboard-shortcuts-when-editing-pages}
+
+In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>Die für AEM-Tastaturbefehle erforderlichen [Modifikatortasten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md#os-specific-modifier-keys) variieren je nach Betriebssystem.
+
+## Tastaturbefehle für die Bearbeitung {#editing-keyboard-shortcuts}
+
+| Position | Kürzel | Beschreibung |
+|---|---|---|
+| Beliebiger Bearbeitungsfenster-Modus | `Ctrl-Shift-m` | Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)* |
+| Modus **Bearbeiten** | `Ctrl-z` | [Letzte Änderung rückgängig machen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
+|  | `Ctrl-y` | [Letzte Änderung wiederholen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
+|  | `Ctrl-Click` | Auswahl mehrerer Absätze |
+|  | `Ctrl-c` | Ausgewählte Absätze kopieren |
+|  | `Ctrl-x` | Ausgewählte(n) Absatz(e) ausschneiden (ausgeschnittene Absätze werden in der Benutzeroberfläche erst nach dem Einfügen ausgeblendet) |
+|  | `Ctrl-v` | Einfügen von zuvor ausgeschnittenen oder kopierten Absätzen |
+|  | `Ctrl-Backspace` | Ausgewählte Absätze löschen |
+| Modus **Bearbeiten** - Rich-Text-Editor | `Ctrl-b` | Fett |
+|  | `Ctrl-I` | Kursiv |
+|  | `Ctrl-u` | Unterstrichen |
+
+>[!NOTE]
+>
+>&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. Der Benutzer muss auf die obere Editorleiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
+
+Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
+
+>[!NOTE]
+>
+>Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+
+## Betriebssystemspezifische Modifikatortasten {#os-specific-modifier-keys}
+
+Die für die Tastaturbefehle verwendeten Zusatztasten hängen vom Betriebssystem des Clients ab.
+
+| Windows und Linux | macOS |
+|---|---|
+| `Ctrl` | `Command` |
+| `Alt` | `Option` |
