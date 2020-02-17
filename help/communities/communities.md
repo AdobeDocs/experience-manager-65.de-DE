@@ -1,0 +1,99 @@
+---
+title: Entwicklungsländer
+seo-title: Entwicklungsländer
+description: Community-Funktionen wie Foren, Benutzergruppen und mehr erstellen und anpassen
+seo-description: Community-Funktionen wie Foren, Benutzergruppen und mehr erstellen und anpassen
+uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
+contentOwner: msm-service
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: developing
+content-type: reference
+discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# Entwicklungsländer {#developing-communities}
+
+## Überblick {#overview}
+
+AEM Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalender, Kommentare, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Veröffentlichungsumgebung eingegeben werden.
+
+Die Grundlage einer [Community-Site](overview.md#communitiessites) bildet das [Social-Komponenten-Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl einer [Community-Site-Vorlage](sites-console.md) , die aus [Community-Funktionen](functions.md)besteht.
+
+Einen Überblick und die ersten Schritte finden Sie unter:
+
+* [Übersicht über AEM Communities](overview.md)
+* [Einstieg in AEM Communities](getting-started.md)
+* [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
+
+>[!NOTE]
+>
+>Es wird dringend empfohlen, über die [neuesten Versionen](deploy-communities.md#latest-releases)auf dem Laufenden zu bleiben.
+
+## Empfohlene Bereitstellungen {#recommended-deployments}
+
+* [Community-Inhaltsspeicherung](working-with-srp.md): beschreibt die verfügbaren SRP-Optionen für einen UGC-gemeinsamen Store
+* [Empfohlene Topologien für Communities](topologies.md): Diskussion der Topologien auf der Grundlage von Anwendungsfällen und SRP-Auswahl
+
+## Social Component Framework {#social-component-framework}
+
+* [Social Component Framework](scf.md): Überblick über Framework und APIs
+* [SCF Handlebars Helpers](handlebars-helpers.md): Standard-Helfer und Schreiben von benutzerdefinierten Helfern
+* [Clientseitige Anpassung](client-customize.md): Anpassen von Code, der im Browser ausgeführt wird
+* [Serverseitige Anpassung](server-customize.md): Anpassen von Code, der auf dem Server ausgeführt wird
+* [Storage Resource Provider (SRP)](srp.md): Überblick über die Speicherung von Community-Inhalten
+* [Kodierungsleitlinien](code-guide.md): Richtlinien, Tipps und Tricks
+* [Leitfaden](components-guide.md)zu Community-Komponenten: interaktives Entwicklungstool
+
+## Komponenten, Funktionen und Funktionen {#component-function-and-feature-essentials}
+
+Die Komponenten, Funktionen und Funktionen von AEM Communities stellen die Bausteine für [Community-Sites](sites-console.md)dar.
+
+* [Komponenten, Funktionen und Funktionen](essentials.md)
+* [Clientlibs für Communities-Komponenten](clientlibs.md)
+* [Community-Funktionen](functions.md)
+* [Community-Gruppen-Vorlagen](tools-groups.md)
+* [Community-Site-Vorlagen](sites.md)
+
+## Community-Mitglieder {#community-members}
+
+* [Verwalten von Benutzern und Benutzergruppen](users.md)
+* [Social-Anmeldung bei Facebook und Twitter](social-login.md)
+
+## Community-Gruppen {#community-groups}
+
+[Gemeinschaftsgruppen](overview.md#communitygroups) sind das Konzept, dass es Mitgliedern der Gemeinschaft erlaubt wird, Untergemeinschaften innerhalb der Community-Site zu bilden. Das Erstellen einer Community-Gruppe kann in der Veröffentlichungs- oder Autorenumgebung erfolgen.
+
+* [Community-Gruppengrundlagen](essentials-groups.md)
+* [Gruppenfunktion](functions.md#groups-function)
+* [Community-Gruppen-Vorlagen](tools-groups.md)
+* [Verwalten von Benutzern und Benutzergruppen](users.md)
+* [Community-Gruppen für Autoren](creating-groups.md)
+
+## Daten verwalten {#managing-data}
+
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP API-Dienstprogrammmethoden und Beispiele
+* [Tag Essentials](tag.md) - Möglichkeit für Community-Mitglieder, UGC und/oder katalogisierte Ressourcen für die Aktivierung zu taggen
+
+## Tutorials {#tutorials}
+
+* [Clientseitige Lernprogramme](tutorials.md#client-side-customization)
+* [Serverseitige Übungen](tutorials.md#server-side-customization)
+* [Anleitungen](tutorials.md#how-to-instructions)
+
+## Fehlerbehebung {#troubleshooting}
+
+* [Fehlerbehebung](troubleshooting.md)
+* [Bekannte Probleme](/help/release-notes/known-issues.md)
+
+## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
+
+* Besuchen Sie [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen und Dispatcher-Konfiguration zu erfahren.
+
+* Visit [Administering Communities Sites](administer-landing.md) to learn about creating a Community Site, configuring Community Site Templates, moderating community content, managing members, and configuring messaging.
+
+* Unter [Authoring Communities-Komponenten](author-communities.md) erfahren Sie, wie Sie Communities-Komponenten erstellen und konfigurieren.
+
