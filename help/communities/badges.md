@@ -1,0 +1,63 @@
+---
+title: Badges-Konsole
+seo-title: Badges-Konsole
+description: Mit der Konsole "Communities-Badges"können Sie benutzerdefinierte Abzeichen hinzufügen, die Mitgliedern angezeigt werden können, wenn sie eine bestimmte Rolle in der Community übernehmen (zugewiesen)
+seo-description: Mit der Konsole "Communities-Badges"können Sie benutzerdefinierte Abzeichen hinzufügen, die Mitgliedern angezeigt werden können, wenn sie eine bestimmte Rolle in der Community übernehmen (zugewiesen)
+uuid: 7103b133-ef3f-47d6-a2dc-4e6ff92e8fed
+contentOwner: Janice Kendall
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: administering
+content-type: reference
+discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+
+---
+
+
+# Badges-Konsole{#badges-console}
+
+## Info zu Abzeichen {#about-badges}
+
+Die Communities Badges-Konsole bietet die Möglichkeit, benutzerdefinierte Abzeichen hinzuzufügen, die für ein Mitglied angezeigt werden können, wenn es verdient (verliehen) oder eine bestimmte Rolle in der Community übernimmt (zugewiesen).
+
+### Sichtbarkeit der Abzeichen {#badge-visibility}
+
+Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen wird, zusammen mit ihrem Namen und Avatar an den folgenden Orten angezeigt:
+
+*  Profile
+* [foren](/help/communities/forum.md)
+* [Frage und Antwort](/help/communities/working-with-qna.md)
+* [Lederboards](/help/communities/enabling-leaderboard.md)
+* [Idee](/help/communities/ideation-feature.md)
+
+In der Autorenumgebung, um die Badges-Konsole zu erreichen
+
+* aus der globalen Navigation: **Werkzeuge, Communities, Abzeichen**
+
+Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeichen hinzugefügt werden können.
+
+![chlimage_1-123](assets/chlimage_1-123.png)
+
+## Abzeichen erstellen {#create-badge}
+
+Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/etc/community/badging/images` und automatisch in die Veröffentlichungsumgebung repliziert.
+
+Wenn die Veröffentlichungsumgebung eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](/help/communities/sync.md)konfigurieren.
+
+![chlimage_1-124](assets/chlimage_1-124.png)
+
+* **Bild** hochladen (*erforderlich*) Ein Badge-Bild mit einer empfohlenen Größe von 32 x 32 Pixel bei 72 dpi im JPEG- oder PNG-Format.
+
+* **Name**(*erforderlich*) Der Kennzeichenname. Dies ist der Standardname `Display Name` sowie der Repository-Knotenname. Wenn der Knoten kein gültiger Repository-Knotenname `Name` ist, wird er geändert.
+
+* **Anzeigename**(*optional*) Der Name, der für das Zeichen in der Benutzeroberfläche angezeigt wird. &quot;Standard&quot;ist der unveränderte Text, der für die `Name`Variable eingegeben wurde.
+
+* **Beschreibung**(*optional*) Eine Beschreibung für das Zeichen.
+
+## Zusätzliche Informationen {#additional-information}
+
+Weitere Informationen zum Einrichten von Scoring- und Kennzeichnungsregeln finden Sie unter [Scoring and Badges](/help/communities/implementing-scoring.md).
+
+Informationen zum Verwalten von Abzeichen für Mitglieder finden Sie unter [Mitglieder-Konsole](/help/communities/members.md).
