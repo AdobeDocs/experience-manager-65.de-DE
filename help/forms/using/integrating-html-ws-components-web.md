@@ -1,0 +1,93 @@
+---
+title: Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen
+seo-title: Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen
+description: Wiederverwenden von AEM Forms Workspace-Komponenten in eigenen Webapps, um Funktion zu nutzen und Integration bereitzustellen.
+seo-description: Wiederverwenden von AEM Forms Workspace-Komponenten in eigenen Webapps, um Funktion zu nutzen und Integration bereitzustellen.
+uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
+contentOwner: robhagat
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: forms-workspace
+discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen {#integrating-aem-forms-workspace-components-in-web-applications}
+
+Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung verwenden. In der folgenden Beispielimplementierung werden Komponenten aus einem AEM Forms Workspace-Dev-Paket verwendet, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten gezeigte Lösung an Ihre spezifischen Anforderungen an. The sample implementation reuses `UserInfo`, `FilterList`, and `TaskList`components inside a web portal.
+
+1. Log into CRXDE Lite environment at `https://[server]:[port]/lc/crx/de/`. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
+1. Erstellen Sie einen Pfad `/apps/sampleApplication/wscomponents`.
+1. Kopieren Sie CSS, Bilder, js/libs, js/runtime und js/registry.js
+
+   * from `/libs/ws`
+   * in `/apps/sampleApplication/wscomponents`.
+
+1. Erstellen Sie im Ordner /apps/sampleApplication/wscomponents/js eine Datei mit dem Namen demomain.js. Kopieren Sie Code aus /libs/ws/js/main.js in demomain.js.
+1. Entfernen Sie in demomain.js den Code zum Initialisieren des Routers und fügen Sie folgenden Code hinzu:
+
+   ```
+   require(['initializer','runtime/util/usersession'],
+       function(initializer, UserSession) {
+           UserSession.initialize(
+               function() {
+                   // Render all the global components
+                   initializer.initGlobal();
+               });
+       });
+   ```
+
+1. Create a node under /content by name `sampleApplication` and type `nt:unstructured`. In the properties of this node add `sling:resourceType` of type String and value `sampleApplication`. Fügen Sie der Zugriffsteuerungsliste dieses Knotens den Eintrag `PERM_WORKSPACE_USER` hinzu, um jcr:read-Zugriff zuzulassen. Also, in the Access Control List of `/apps/sampleApplication` add an entry for `PERM_WORKSPACE_USER` allowing jcr:read privileges.
+1. Aktualisieren Sie `/apps/sampleApplication/wscomponents/js/registry.js` die Pfade von `/lc/libs/ws/` zu `/lc/apps/sampleApplication/wscomponents/` für Vorlagenwerte.
+1. In your portal home page JSP file at `/apps/sampleApplication/GET.jsp`, add the following code to include the required components inside the portal.
+
+   ```as3
+   <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
+   <div class="UserInfoView gcomponent" data-name="userinfo"></div>
+   <div class="filterListView gcomponent" data-name="filterlist"></div>
+   <div class="taskListView gcomponent" data-name="tasklist"></div>
+   ```
+
+   Schließen Sie außerdem die CSS-Dateien ein, die für die AEM Forms Workspace-Komponenten erforderlich sind.
+
+   >[!NOTE]
+   >
+   >Beim render-Prozess wird jede Komponente dem Komponenten-Tag (der Klasse gcomponent) hinzugefügt. Stellen Sie sicher, dass Ihre Startseite die betreffenden Tags enthält. Weitere Informationen zu diesen Basissteuerungstags finden Sie in der Datei von AEM Forms Workspace `html.jsp`.
+
+1. Um die Komponenten anzupassen, können Sie die vorhandenen Ansichten für die erforderliche Komponente wie folgt erweitern:
+
+   ```as3
+   define([
+       ‘jquery’,
+       ‘underscore’,
+       ‘backbone’,
+       ‘runtime/views/userinfo'],
+       function($, _, Backbone, UserInfo){
+           var demoUserInfo = UserInfo.extend({
+               //override the functions to customize the functionality
+               render: function() {
+                   UserInfo.prototype.render.call(this); // call the render function of the super class
+                   …
+                   //other tasks
+                   …
+               }
+           });
+           return demoUserInfo;
+   });
+   ```
+
+1. Ändern Sie das Portal-CSS, um das Layout, die Positionierung und den Stil der erforderlichen Komponenten im Portal zu konfigurieren. Beispiel: Sie möchten die Hintergrundfarbe Schwarz in diesem Portal behalten, um die Komponente userInfo gut sichtbar darzustellen. You can do this by changing background color in `/apps/sampleApplication/wscomponents/css/style.css` as follows:
+
+   ```as3
+   body {
+       font-family: "Myriad pro", Arial;
+       background: #000;    //This was origianlly #CCC
+       position: relative;
+       margin: 0 auto;
+   }
+   ```
+
+**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
