@@ -1,0 +1,450 @@
+---
+title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
+seo-title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
+description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen
+seo-description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen
+uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: correspondence-management
+discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+
+---
+
+
+# Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu {#add-custom-action-button-in-create-correspondence-ui}
+
+## Überblick {#overview}
+
+Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen.
+
+Im Szenario in diesem Dokument wird erläutert, wie Sie eine Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;erstellen können, um einen Brief als Review-PDF freizugeben, das an eine E-Mail angehängt wird.
+
+### Voraussetzungen {#prerequisites}
+
+Um dieses Beispiel auszuführen, benötigen Sie Folgendes:
+
+* Kenntnisse von CRX und JavaScript
+* LiveCycle-Server
+
+## Szenario: Erstellen Sie die Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“, um ein Schreiben zum Review zu senden {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+
+Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review senden) zur Benutzeroberfläche „Korrespondenz erstellen“. Diese enthält Folgendes:
+
+1. Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche 
+1. Hinzufügen der Aktionsbearbeitung zur Schaltfläche
+1. Hinzufügen eines LiveCycle-Prozesses, um die Aktionsbearbeitung zu aktivieren
+
+### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche {#add-the-button-to-the-create-correspondence-user-interface}
+
+1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. In the apps folder, create a folder named `defaultApp` with path/structure similar to the defaultApp folder (located in config folder). Mit den folgenden Schritten können Sie den Ordner erstellen:
+
+   1. Right-click the **defaultApp** folder at the following path and select **Overlay Node**:
+
+      /libs/fd/cm/config/defaultApp/
+
+      ![Überlagerungsknoten](assets/1_defaultapp.png)
+
+   1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
+
+      **** Pfad: /libs/fd/cm/config/defaultApp/
+
+      **** Überlagerungsort: /apps/
+
+      **** Knotentypen abgleichen: Überprüft
+
+      ![Überlagerungsknoten](assets/2_defaultappoverlaynode.png)
+
+   1. Klicken Sie auf **OK**.
+   1. Klicken Sie auf **Alle speichern**.
+
+1. Erstellen Sie eine Kopie der acmExtensionsConfig.xml-Datei (vorhanden unter der /libs-Verzweigung) unter der /apps-Verzweigung.
+
+   1. Wechseln Sie zu „/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml“
+
+   1. Right click the acmExtensionsConfig.xml file and select **Copy**.
+
+      ![Kopieren Sie acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
+
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **defaultApp** unter „/apps/fd/cm/config/defaultApp/,“ und wählen Sie **Einfügen**.
+   1. Klicken Sie auf **Alle speichern**.
+
+1. Doppelklicken Sie auf die Kopie von „acmExtentionsConfig.xml“, die Sie im Apps-Ordner neu erstellten haben. Die Datei wird zur Bearbeitung geöffnet.
+1. Suchen Sie folgenden Code:
+
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <extensionsConfig>
+       <modelExtensions>
+           <modelExtension type="LetterInstance">
+     <customAction name="Preview" label="loc.letterInstance.preview.label" tooltip="loc.letterInstance.preview.tooltip" styleName="previewButton"/>
+               <customAction name="Submit" label="loc.letterInstance.submit.label" tooltip="loc.letterInstance.submit.tooltip" styleName="submitButton" permissionName="forms-users"/>
+               <customAction name="SaveAsDraft" label="loc.letterInstance.saveAsDraft.label" tooltip="loc.letterInstance.saveAsDraft.tooltip" styleName="submitButton" permissionName="forms-users"/>
+               <customAction name="Close" label="loc.letterInstance.close.label" tooltip="loc.letterInstance.close.tooltip" styleName="closeButton"/>
+           </modelExtension>
+       </modelExtensions>
+   </extensionsConfig>
+   ```
+
+1. Um ein Schreiben per E-Mail zu versenden, können Sie den LiveCycle Forms-Arbeitsablauf verwenden. Fügen Sie unter dem modelExtension-Tag in der Datei acmExtensionsConfig.xml einen customAction-Tag wie folgt hinzu:
+
+   ```xml
+    <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
+         <serviceName>Forms Workflow -> SendLetterForReview/SendLetterForReviewProcess</serviceName>
+       </customAction>
+   ```
+
+   ![customAction-Tag](assets/5_acmextensionsconfig_xml.png)
+
+   Das modelExtension-Tag besitzt eine Reihe von untergeordneten customAction-Tags, die die Aktion, die Berechtigungen und das Erscheinungsbild der Aktionsschaltfläche konfigurieren. Im Folgenden finden Sie eine Liste der customAction Konfigurations-Tags:
+
+   | **Name** | **Beschreibung** |
+   |---|---|
+   | name | Der alphanumerische Name der auszuführenden Aktion. Der Wert dieses Tags wird benötigt, muss eindeutig sein (d. h. innerhalb des modelExtension-Tags) und muss mit einem Buchstaben beginnen. |
+   | label | Die Beschriftung der Aktionsschaltfläche |
+   | tooltip | QuickInfo-Text der Schaltfläche, der angezeigt wird, wenn der Benutzer den Cursor auf der Schaltfläche bewegt. |
+   | styleName | Name des benutzerdefinierten Stils, der auf die Aktionsschaltfläche angewendet wird. |
+   | permissionName | Die entsprechende Aktion wird nur angezeigt, wenn der Benutzer über die von permissionName angegebene Berechtigung verfügt. When you specify permissionName as `forms-users`, all the users get access to this option. |
+   | actionHandler | Vollqualifizierter Name der ActionHandler-Klasse, die aufgerufen wird, wenn der Benutzer auf die Schaltfläche klickt. |
+
+   Neben den oben genannten Parametern kann es weitere Konfigurationen geben, die mit einer customAction verknüpft sind. Diese zusätzlichen Konfigurationen werden dem Handler über das CustomAction-Objekt zur Verfügung gestellt.
+
+   | **Name** | **Beschreibung** |
+   |---|---|
+   | serviceName | Wenn eine customAction ein untergeordnetes Tag mit dem Namen serviceName enthält, wird beim Klicken auf die entsprechende Schaltfläche/Verknüpfung ein Prozess mit dem Namen aufgerufen, der vom Tag serviceName repräsentiert wird. Stellen Sie sicher, dass dieser Prozess dieselbe Signatur wie der Brief PostProcess hat. Fügen Sie das Präfix „Forms-Arbeitsablauf“ zum Servicenamen hinzu. |
+   | Parameter, die das Präfix cm_ im Tag-Namen enthalten | Enthält eine customAction untergeordnete Tags, die mit dem Namen cm_ beginnen, dann sind diese Parameter im Nachbearbeitungsprozess (Brief-Nachbearbeitung oder der spezielle Prozess, der vom serviceName-Tag dargestellt wird) im Eingabe-XML-Code unter dem entsprechenden Tag verfügbar, wobei das Präfix cm_ entfernt wurde. |
+   | actionName | Wenn ein Nachbearbeitungsprozess durch einen Klick verursacht wird, enthält die gesendete XML ein spezielles Tag mit dem Namen unter dem Tag mit dem Namen der Benutzeraktion. |
+
+1. Klicken Sie auf **Alle speichern**.
+
+#### Erstellen Sie einen lokalen Ordner mit der Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+
+Die ACMExtensionsMessages.properties-Datei enthält Beschriftungen und Quickinfo-Meldungen verschiedener Felder in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
+
+1. Right-click the **locale** folder at the following path and select **Overlay Node**:
+
+   /libs/fd/cm/config/defaultApp/locale
+
+1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
+
+   **** Pfad: /libs/fd/cm/config/defaultApp/locale
+
+   **** Überlagerungsort: /apps/
+
+   **** Knotentypen abgleichen: Überprüft
+
+1. Klicken Sie auf **OK**.
+1. Klicken Sie auf **Alle speichern**.
+1. Klicken Sie mit der rechten Maustaste auf die folgende Datei und wählen Sie **Kopieren**:
+
+   `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
+
+1. Klicken Sie mit der rechten Maustaste auf den Ordner **locale** unter folgendem Pfad und wählen Sie die Option **Einfügen**:
+
+   `/apps/fd/cm/config/defaultApp/locale/`
+
+   ACMExtensionsMessages.properties-Datei wird in den Ordner „locale“ kopiert.
+
+1. To localize the labels of the newly added custom action/button, create the ACMExtensionsMessages.properties file for the relevant locale in `/apps/fd/cm/config/defaultApp/locale/`.
+
+   Beispiel für die Lokalisierung der benutzerdefinierten Aktion/Schaltfläche, die in diesem Artikel erstellt wurde, erstellen Sie eine Datei mit dem Namen ACMExtensionsMessages_fr.properties mit folgendem Eintrag:
+
+   `loc.letterInstance.letterreview.label=Revue De Lettre`
+
+   In ähnlicher Weise können Sie in dieser Datei weitere Eigenschaften hinzufügen, z. B. für QuickInfo und Stil.
+
+1. Klicken Sie auf **Alle speichern**.
+
+#### Starten Sie das Asset Composer-Baustein-Bundle von Adobe neu {#restart-the-adobe-asset-composer-building-block-bundle}
+
+Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset Composer-Baustein-Bundle von Adobe neu. In diesem Szenario werden die Dateien &quot;acmExtensionsConfig.xml&quot;und &quot;ACMExtensionsMessages.properties&quot;auf der Serverseite bearbeitet. Daher muss das Asset Composer-Baustein-Bundle von Adobe neu gestartet werden.
+
+>[!NOTE]
+>
+>Möglicherweise müssen Sie die Daten im Browsercache löschen.
+
+1. Wechseln zu `https://[host]:[port]/system/console/bundles`. Falls erforderlich, melden Sie sich als Administrator an.
+
+1. Suchen Sie das Asset Composer-Baustein-Bundle von Adobe. Starten Sie das Bundle neu: Klicken Sie auf „Anhalten“ und klicken Sie dann auf „Start“.
+
+   ![Asset Composer-Baustein von Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
+
+Nachdem das Asset Composer-Baustein-Bundle von Adobe neu gestartet wurde, wird die benutzerdefinierte Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können ein Schreiben in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine benutzerdefinierte Schaltfläche in der Vorschau anzuzeigen.
+
+### Hinzufügen der Aktionsbearbeitung zur Schaltfläche {#add-action-handling-to-the-button}
+
+Die Benutzeroberfläche „Korrespondenz erstellen“ ist standardmäßig in der Implementierung der ActionHandler cm.domain.js-Datei am folgenden Speicherort:
+
+/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccr/js/cm.domain.js
+
+Erstellen Sie für die benutzerdefinierte Aktionsbearbeitung eine Überlagerung der cm.domain.js-Datei in der /apps-Verzweigung von CRX.
+
+Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfläche beinhaltet Logik für:
+
+* Ein-/Ausblenden der neu hinzugefügten Aktion: durch Überschreiben der Funktion „actionVisible()“.
+* Aktivieren/Deaktivieren der neu hinzugefügten Aktion: , indem die Funktion actionEnabled() außer Kraft gesetzt wird.
+* Tatsächliche Behandlung der Aktion, wenn der Benutzer auf die Schaltfläche klickt: erfolgt, indem die Implementierung der Funktion handleAction() außer Kraft gesetzt wird.
+
+1. Wechseln zu `https://[server]:[port]/[ContextPath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+
+1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen`js`   in der /apps-Verzweigung von CRX, mit einer ähnlichen Struktur des folgenden Ordners:
+
+   `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
+
+   Mit den folgenden Schritten können Sie den Ordner erstellen:
+
+   1. Right-click the **js** folder at the following path and select **Overlay Node**:
+
+      `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
+
+   1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
+
+      **** Pfad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+
+      **** Überlagerungsort: /apps/
+
+      **** Knotentypen abgleichen: Überprüft
+
+   1. Klicken Sie auf **OK**.
+   1. Klicken Sie auf **Alle speichern**.
+
+1. Erstellen Sie im Ordner js eine Datei mit dem Namen ccrcustomization.js mit dem Code für die Aktionsbearbeitung der Schaltfläche, indem Sie folgende Schritte durchführen:
+
+   1. Right-click the **js** folder at the following path and select **Create > Create File**:
+
+      `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
+
+      Benennen Sie die Datei als ccrcustomization.js.
+
+   1. Doppelklicken Sie auf die ccrcustomization.js-Datei, um sie in CRX zu öffnen.
+   1. Fügen Sie in die Datei den folgenden Code und klicken Sie auf **Alle speichern**:
+
+      ```
+      /* for adding and handling custom actions in Extensible Toolbar.
+        * One instance of handler will be created for each action.
+        * CM.domain.CCRCustomActionHandler is actionHandler class.
+        */
+      var CCRCustomActionHandler;
+          CCRCustomActionHandler = CM.domain.CCRCustomActionHandler = new Class({
+              className: 'CCRCustomActionHandler',
+              extend: CCRDefaultActionHandler,
+              construct : function(action,model){
+              }
+          });
+          /**
+           * Called when user user click an action
+           * @param extraParams additional arguments that may be passed to handler (For future use)
+           */
+          CCRCustomActionHandler.prototype.handleAction = function(extraParams){
+              if (this.action.name == CCRCustomActionHandler.SEND_FOR_REVIEW) {
+                  var sendForReview = function(){
+                      var serviceName = this.action.actionConfig["serviceName"];
+                      var inputParams = {};
+                      inputParams["dataXML"] = this.model.iccData.data;
+                      inputParams["letterId"] = this.letterVO.id;
+                      inputParams["letterName"] = this.letterVO.name;
+                      inputParams["mailId"] = $('#email').val();
+                      /*function to invoke the LivecyleService */
+                      ServiceDelegate.callJSONService(this,"lc.icc.renderlib.serviceInvoker.json","invokeProcess",[serviceName,inputParams],this.onProcessInvokeComplete,this.onProcessInvokeFail);
+                      $('#ccraction').modal("hide");
+                  }
+                  if($('#ccraction').length == 0){
+                      /*For first click adding popup & setting letterName.*/
+                      $("body").append(popUp);
+                      $("input[id*='letterName']").val(this.letterVO.name);
+                      $(document).on('click',"#submitLetter",$.proxy( sendForReview, this ));
+                  }
+                  $('#ccraction').modal("show");
+              }
+          };
+          /**
+           * Should the action be enabled in toolbar
+           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @return flag indicating whether the action should be enabled
+           */
+         CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){
+                  /*can be customized as per user requirement*/
+                  return true;
+          };
+          /**
+           * Should the action be visible in toolbar
+           * @param extraParams additional arguments that may be passed to handler (For future use)
+           * @return flag indicating whether the action should be enabled
+           */
+          CCRCustomActionHandler.prototype.actionVisible = function(extraParams){
+              /*Check can be enabled for Non-Preview Mode.*/
+              return true;
+          };
+          /*SuccessHandler*/
+          CCRCustomActionHandler.prototype.onProcessInvokeComplete = function(response) {
+              ErrorHandler.showSuccess("Letter Sent for Review");
+          };
+          /*FaultHandler*/
+          CCRCustomActionHandler.prototype.onProcessInvokeFail = function(event) {
+              ErrorHandler.showError(event.message);
+          };
+          CCRCustomActionHandler.SEND_FOR_REVIEW  = "Letter Review";
+      /*For PopUp*/
+          var popUp = '<div class="modal fade" id="ccraction" tabindex="-1" role="dialog" aria-hidden="true">'+
+          '<div class="modal-dialog modal-sm">'+
+              '<div class="modal-content">' +
+                  '<div class="modal-header">'+
+                      '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</code></button>'+
+                      '<h4 class="modal-title"> Send Review </h4>'+
+                  '</div>'+
+                  '<div class="modal-body">'+
+                      '<form>'+
+                          '<div class="form-group">'+
+                              '<label class="control-label">Email Id</label>'+
+                              '<input type="text" class="form-control" id="email">'+
+                          '</div>'+
+                          '<div class="form-group">'+
+                              '<label  class="control-label">Letter Name</label>'+
+                              '<input id="letterName" type="text" class="form-control" readonly>'+
+                          '</div>'+
+                          '<div class="form-group">'+
+                              '<input id="letterData" type="text" class="form-control hide" readonly>'+
+                          '</div>'+
+                      '</form>'+
+                  '</div>'+
+                  '<div class="modal-footer">'+
+                     '<button type="button" class="btn btn-default" data-dismiss="modal"> Cancel </button>'+
+                     '<button type="button" class="btn btn-primary" id="submitLetter"> Submit </button>'+
+                  '</div>'+
+              '</div>'+
+          '</div>'+
+      '</div>';
+      ```
+
+### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktions<span class="acrolinxCursorMarker"></code>bearbeitung zu aktivieren {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+
+Aktivieren Sie in diesem Szenario die folgenden Komponenten, die Teil der angehängten Datei components.zip sind:
+
+* DSC-Komponente JAR-Datei (DSCSample.jar)
+* Brief zum Review-Prozess LCA senden(SendLetterForReview.lca)
+
+Laden Sie die Datei components.zip herunter und dekomprimieren Sie sie, um die Dateien DSCSample.jar und SendLetterForReview.lca abzurufen. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
+components.zip
+
+#### Konfigurieren Sie den LiveCycle-Server, um den LCA-Vorgang auszuführen {#configure-the-livecycle-server-to-run-the-lca-process}
+
+>[!NOTE]
+>
+>Dieser Schritt ist nur erforderlich, wenn Sie mit einem OSGI-Setup arbeiten und die LC-Integration für die Art der Anpassung, die Sie implementieren, erforderlich ist.
+
+Der LCA-Vorgang wird auf dem LiveCycle-Server ausgeführt und erfordert die Serveradresse und die Anmeldeinformationen.
+
+1. Go to `https://[server]:[port]/system/console/configMgr` and login as Administrator.
+1. Suchen Sie nach Adobe LiveCycle Client SDK-Konfiguration und klicken Sie auf **Bearbeiten** (Bearbeiten-Symbol). Das Konfigurationsfenster öffnet sich.
+
+1. Enter the following details and click **Save**:
+
+   * **Server-URL**: URL des LC-Servers, dessen Dienst &quot;Zur Überprüfung senden&quot;der Aktionshandler-Code verwendet.
+   * **Benutzername**: Administratorbenutzername des LC-Servers
+   * **Kennwort:** Kennwort des Adminbenutzernamens 
+   ![Adobe LiveCycle Client SDK-Konfiguration](assets/3_clientsdkconfiguration.png)
+
+#### Installieren des LiveCycle Archivs (LCA) {#install-livecycle-archive-lca}
+
+Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienst-Prozess aktiviert.
+
+>[!NOTE]
+>
+>Wenn Sie sehen möchten, wie dieser Vorgang funktioniert oder wenn Sie ähnliche Vorgänge selbst erstellen möchten, benötigen Sie Workbench.
+
+1. Log in as Administrator to Livecycle Server adminui at `https:/[lc server]/:[lc port]/adminui`.
+
+1. Navigieren Sie zu **Startseite > Dienste > Anwendungen und Dienste > Anwendungsverwaltung**.
+
+1. Wenn die SendLetterForReview-Anwendung bereits vorhanden ist, überspringen Sie die restlichen Schritte in diesem Verfahren, andernfalls fahren Sie mit den nächsten Schritten fort.
+
+   ![SendLetterForReview-Anwendung in der Benutzeroberfläche](assets/12_applicationmanagementlc.png)
+
+1. Wählen Sie **Importieren**.
+
+1. Click **Choose File** and select SendLetterForReview.lca.
+
+   ![Wählen Sie die SendLetterForReview.lca-Datei](assets/14_sendletterforreview_lca.png)
+
+1. Klicken Sie auf **Vorschau**.  
+
+1. Select **Deploy assets to runtime when import is complete**.
+
+1. Wählen Sie **Importieren**.
+
+#### Hinzufügen von ServiceName zur WhiteListed-Liste der Dienste {#adding-servicename-to-the-whitelisted-service-list}
+
+Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server zugreifen möchten.
+
+1. Melden Sie sich als Administrator an `https:/[host]/:[port]/system/console/configMgr`.
+
+1. Locate and click **Adobe LiveCycle Client SDK Configuration**. Das Bedienfeld Adobe LiveCycle Client SDK-Konfiguration wird angezeigt.
+1. In the Service Name list, click + icon and add a serviceName **SendLetterForReview/SendLetterForReviewProcess**.
+
+1. Klicken Sie auf **Speichern**.
+
+#### E-Mail-Dienst konfigurieren {#configure-the-email-service}
+
+In diesem Szenario müssen Sie den E-Mail-Dienst im LifeCycle-Server konfigurieren, damit Correspondence Management eine E-Mail senden kann.
+
+1. Log in with Admin credentials to Livecycle Server adminui at `https:/[lc server]:[lc port]/adminui`.
+
+1. Navigieren Sie zu **Startseite > Dienste > Anwendungen und Dienste > Dienstverwaltung**.
+
+1. Suchen Sie nach der Option **EmailService** und klicken Sie darauf.
+
+1. In **SMTP Host**, configure the email service.
+
+1. Klicken Sie auf **Speichern**.
+
+#### DSC-Dienst konfigurieren {#configure-the-dsc-service}
+
+Um die Correspondence Management-API zu verwenden, laden Sie die Datei &quot;DSCSample.jar&quot;(in diesem Dokument als Teil von components.zip angehängt) herunter und laden Sie sie auf den LiveCycle-Server hoch. Nachdem die Datei &quot;DSCSample.jar&quot;auf den LiveCycle-Server hochgeladen wurde, verwendet der AEM-Server die Datei &quot;DSCSample.jar&quot;, um auf die renderLetter-API zuzugreifen.
+
+For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+
+1. Aktualisieren Sie die AEM-Server-URL in cmsa.properties in DSCSample.jar, das sich am folgenden Speicherort befindet:
+
+   DSCSample.jar\com\adobe\livecycle\cmsa.properties
+
+1. Stellen Sie die folgenden Parameter in der Konfigurationsdatei bereit:
+
+   * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
+   * **crx.username** = AEM-Benutzername
+   * **crx.password**= AEM-Kennwort
+   * **crx.appRoot** = /content/apps/cm
+   >[!NOTE]
+   >
+   >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten. Informationen über das Erstellen Ihrer eigenen Livecycle-Komponente finden Sie unter [ Erweiterung der LiveCycle ES-Software durch kundenspezifische DSC-Entwicklung](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+
+   Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+
+#### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
+
+Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API, um den Brief als PDF-Bytes aus XML-Daten zu rendern, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+
+1. Anfang Workbench und melden Sie sich an.
+1. Select **Window > Show Views > Components**. Die Komponentenansicht wird Workbench ES2 hinzugefügt.
+
+1. Right-click **Components** and select **Install Component**.
+
+1. Select the **DSCSample.jar** file through the file browser and click **Open**.
+1. Right-click **RenderWrapper** and select **Start Component**. Wenn die Komponente gestartet wird, erscheint ein grüner Pfeil neben dem Komponentennamen.
+
+## Schreiben an Review senden {#send-letter-for-review}
+
+Nachdem Sie die Aktion und Schaltfläche zum Versenden des Schreibens an den Review konfiguriert haben:
+
+1. Löschen Sie den Browsercache.
+
+1. Klicken Sie in der Benutzeroberfläche „Korrespondenz erstellen“ auf **Brief-Review** und geben Sie die E-Mail-ID des Überprüfers an.
+
+1. Klicken Sie auf **Übermitteln**.
+
+![sendreview](assets/sendreview.png)
+
+Der Reviewer erhält eine E-Mail von einem System mit dem Schreiben als PDF-Anlage.
