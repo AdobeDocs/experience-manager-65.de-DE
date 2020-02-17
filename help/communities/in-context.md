@@ -1,0 +1,167 @@
+---
+title: Kontextbezogene Moderation
+seo-title: Kontextbezogene Moderation
+description: So führen Sie Moderatoraktionen durch
+seo-description: So führen Sie Moderatoraktionen durch
+uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
+contentOwner: Janice Kendall
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: administering
+content-type: reference
+discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# Kontextbezogene Moderation {#in-context-moderation}
+
+Bei AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite durchgeführt werden, auf der die Community-Inhalte veröffentlicht wurden.
+
+Bei Verwendung einer [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die beim Moderieren im Kontext verfügbar sind.
+
+## Moderationsaktionen {#moderation-actions}
+
+Eine Beschreibung der [Moderationsaktionen](moderate-ugc.md#moderation-actions)finden Sie in der Moderationsübersicht.
+
+## Moderations-Benutzeroberfläche {#moderation-ui}
+
+Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz angezeigt wird, ist im Dialogfeld zum Posten und Verwalten benutzergenerierter Inhalte enthalten. Die Elemente der Benutzeroberfläche werden vom Status des Site-Besuchers bestimmt - ob es sich um...
+
+1. Das Mitglied, das den Inhalt veröffentlicht hat
+1. Moderator eines vertrauenswürdigen Mitglieds
+1. Administrator
+1. Angemeldet, aber weder Administrator, Moderator noch Autor des Inhalts
+1. Nicht angemeldet
+
+## Beispiel {#example}
+
+Mithilfe der beim [Einstieg in AEM Communities](http://localhost:4503/content/sites/engage/en.html)erstellten [Geometrixx-Engage](getting-started.md) -Website können Sie schnell einen Thread in einem Forum einrichten, in dem verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung ausgeführt werden können (siehe unten).
+
+Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Site zur Community-Interaktions-Moderatorengruppe hinzufügte.
+
+Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied einer Community-Interaktionsgruppe über die [Members Console](members.md)hinzugefügt werden.
+
+Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
+
+### Forumbeiträge erstellen {#create-the-forum-posts}
+
+* Als Rebekah Larsen anmelden (rebekah.larsen@trashymail.com)
+
+   * Forum auswählen
+   * Neuen Beitrag auswählen
+   * Betreff eingeben
+
+      Wann ändert sich der Nektar in der Humming Bird Feeder
+
+   * Textkörper eingeben
+
+      Ich hatte nicht viel Erfolg, als ich jedes Jahr eine Kolibris-Feeder aufhängte. Es scheint, sie kommen ein oder zwei Tage, dann ist es. Ich ändere es einmal in der Woche ist das zu lang? Muss ich es früher ändern?
+   * Beitrag auswählen
+   * Abmelden auswählen
+
+* Melden Sie sich als Aaron McDonald an (aaron.mcdonald@mailinator.com)
+
+   * Forum auswählen
+   * Wählen Sie für das Hummingbird-Thema Mehr lesen
+   * Geben Sie den Kommentar für Antwort auf Beitrag ein
+
+      Ich wechsele meine einmal pro Woche und bekomme sie von Mai bis Oktober.
+
+   * Antwort auswählen
+   * Abmelden auswählen
+
+* Melden Sie sich als Andrew Schäffer an (andrew.schaeffer@trashymail.com)
+
+   * Forum auswählen
+   * Wählen Sie für das Hummingbird-Thema Mehr lesen
+   * Geben Sie den Kommentar für Antwort auf Beitrag ein
+
+      Ich verkaufe Nektar und Feeds - https://my.viral.url/
+
+   * Antwort auswählen
+   * Abmelden auswählen
+
+### Anonymer Site-Besucher (#5) {#anonymous-site-visitor}
+
+Im Folgenden finden Sie einen Überblick über das Forum, das ein nicht angemeldeter Besucher anzeigt (5).
+
+Ein anonymer Sitebesucher kann nur das Forum anzeigen, jedoch keine Inhalte veröffentlichen und keine Moderationsaktionen durchführen.
+
+![chlimage_1](assets/chlimage_1.png)
+
+### Neues Mitglied (#4) {#new-member}
+
+Melden Sie sich beim Autor als Admin an und fügen Sie Boyd Larsen (boyd.larsen@dodgit.com) als neues Mitglied der Community-Interaktionsgruppe mithilfe der [Members-Konsole](members.md)hinzu und melden Sie sich dann ab.
+
+Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie ihn auswählen `Forum`und dann `Read more` für den Beitrag Hummingbird.
+
+Hinweis
+
+* Boyd hat nicht am Forum teilgenommen
+* Boyd kann nichts löschen
+* Boyd ist angemeldet und kann Inhalte beantworten oder kennzeichnen
+
+Lassen Sie Boyd &quot;Flag&quot;auswählen, um die von Andrew veröffentlichten Inhalte zu kennzeichnen.
+
+Abmelden
+
+![chlimage_1-1](assets/chlimage_1-1.png)
+
+### Administrator (#3) {#administrator}
+
+Melden Sie sich als Administrator (Admin) an und greifen Sie auf den Thread zu, indem Sie &quot;Forum&quot;auswählen und dann mehr für einen Beitrag lesen.
+
+Hinweis
+
+* Admin kann Flag, Löschen, Bearbeiten, Ablehnen, Ausschneiden, Schließen, Einfügen, Funktion
+* Admin kann Administration auswählen, um auf die Moderationskonsole zuzugreifen
+
+![community-admin-forum](assets/communityadmin-forum.png)
+
+Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Veröffentlichungsumgebung.
+
+Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Geometrixx Engage Community-Site.
+
+Der Suchfilter ist ein Sidepanel, das geöffnet oder geschlossen wird.
+
+Abmelden.
+
+![moderationconsole-publish](assets/moderationconsole-publish.png)
+
+### Community-Moderator (#2) {#community-moderator}
+
+Melden Sie sich als Aaron McDonald (aaron.mcdonal@mailinator.com) an, ein Community-Moderator, und greifen Sie auf den Thread zu, indem Sie Forum auswählen, und lesen Sie mehr für den Beitrag hummingbird.
+
+Hinweis
+
+* Aaron kann seinen eigenen Beitrag beantworten, löschen, bearbeiten oder ablehnen
+* Aaron kann auch anderen Inhalt kennzeichnen/zulassen, beantworten, löschen, bearbeiten, ablehnen
+* Aaron kann das Forenthema ausschneiden, um es in ein anderes Forum zu verschieben, für das er moderiert
+* Aaron kann Administration auswählen, um auf die Moderationskonsole zuzugreifen
+
+![chlimage_1-2](assets/chlimage_1-2.png)
+
+Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Veröffentlichungsumgebung.
+
+Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage-Community-Site sichtbar sind.
+
+Beachten Sie, dass der Community-Moderator dieselben Optionen wie der Administrator hat (Bild ist bei geschlossener Suchseitenleiste geschlossen), aber keinen Zugriff auf andere AEM-Konsolen hat.
+
+Abmelden.
+
+![moderatoraccess](assets/moderatoraccess.png)
+
+### Content Author (#1) {#content-author}
+
+Melden Sie sich bei Rebekah Larsen (rebekah.larsen@mailinator.com) an, einem Community-Mitglied, das den Thread gestartet hat, und greifen Sie auf den Thread zu, indem Sie Forum auswählen und dann mehr für den Beitrag von hummingbird lesen.
+
+Hinweis
+
+* Rebekah kann ihren eigenen Beitrag löschen oder bearbeiten
+* Rebekah kann auch auf andere Inhalte antworten oder sie kennzeichnen
+* Rebekah kann nicht auf die Moderationskonsole zugreifen
+
+![chlimage_1-3](assets/chlimage_1-3.png)
+
