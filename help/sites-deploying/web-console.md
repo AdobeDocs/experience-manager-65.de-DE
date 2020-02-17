@@ -1,0 +1,178 @@
+---
+title: Web-Konsole
+seo-title: Web-Konsole
+description: Erfahren Sie, wie Sie die Web-Konsole von AEM verwenden.
+seo-description: Erfahren Sie, wie Sie die Web-Konsole von AEM verwenden.
+uuid: 7856b2b3-4216-421d-a315-cd9a55936362
+contentOwner: Guillaume Carlino
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+content-type: reference
+topic-tags: configuring
+discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
+translation-type: tm+mt
+source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+
+---
+
+
+# Web-Konsole{#web-console}
+
+Die Web-Konsole in AEM basiert auf der [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix ist ein gemeinschaftlich entwickeltes Framework zum Implementieren der OSGi R4 Service Platform, die das OSGi-Framework und die Standarddienste umfasst.
+
+>[!NOTE]
+>
+>In der Web-Konsole beziehen sich alle Beschreibungen mit Standardeinstellungen auf Sling-Standardwerte.
+>
+>Für AEM gelten eigene Standardeinstellungen, sodass sich die festgelegten Standardeinstellungen möglicherweise von denen der Konsole unterscheiden.
+
+Die Web-Konsole umfasst eine Reihe von Registerkarten für die Verwaltung der OSGi-Bundles, darunter:
+
+* [Konfiguration:](#configuration) Dient zur Konfiguration der OSGi-Bundles und bildet deshalb den zugrunde liegenden Mechanismus für die Konfiguration der AEM-Systemparameter.
+* [Bundles:](#bundles) Dient zum Installieren von Bundles.
+* [Komponenten:](#components) Steuert den Status der für AEM erforderlichen Komponenten.
+
+Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Ein Neustart ist nicht erforderlich.
+
+The console can be accessed from `../system/console`; for example:
+
+`http://localhost:4502/system/console/components`
+
+## Konfiguration{#configuration}
+
+Die Registerkarte **Konfiguration** dient zur Konfiguration der OSGi-Bundles und bildet deshalb den zugrunde liegenden Mechanismus für die Konfiguration der AEM-Systemparameter.
+
+>[!NOTE]
+>
+>Weitere Einzelheiten finden Sie unter [OSGi-Konfiguration mit der Web-Konsole](/help/sites-deploying/configuring-osgi.md).
+
+Sie können mit einer der beiden folgenden Methoden auf die Registerkarte **Konfiguration** zugreifen:
+
+* Das Dropdownmenü:
+
+   **OSGi >**
+
+* die URL; Beispiel:
+
+   `http://localhost:4502/system/console/configMgr`
+
+Eine Liste der Konfigurationen wird angezeigt:
+
+![screen_shot_2012-02-15at52308pm](assets/screen_shot_2012-02-15at52308pm.png)
+
+Es gibt zwei Arten von Konfigurationen, die in den Dropdown-Listen auf dem Bildschirm verfügbar sind:
+
+* **Konfigurationen** Ermöglicht die Aktualisierung der vorhandenen Konfigurationen. Diese haben eine Persistent Identity (PID) und fallen in eine der beiden folgenden Kategorien:
+
+   * Standardkonfigurationen, die ein integraler Bestandteil von AEM sind. Sie sind erforderlich, und die Werte werden beim Löschen auf die Standardeinstellungen zurückgesetzt.
+   * Instanzen, die vom Benutzer auf Basis von Factory-Konfigurationen erstellt werden. Sie werden durch Löschen der Instanzen entfernt.
+
+* **Factory-Konfigurationen** Diese Konfigurationen ermöglichen die Erstellung einer Instanz des erforderlichen Funktionsobjekts.
+
+   Diesem Objekt wird eine Persistent Identity (PID) zugewiesen und es wird dann in der Dropdown-Liste „Konfigurationen“ aufgeführt.
+
+Bei Auswahl eines Eintrags aus den Listen werden die Parameter für die Konfiguration angezeigt:
+
+![chlimage_1-21](assets/chlimage_1-21a.png)
+
+Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgenden Optionen wählen:
+
+* **Speichern**
+
+   Speichern Sie die vorgenommenen Änderungen.
+
+    Für eine Factory-Konfiguration wird hierdurch eine neue Instanz mit einer Persistent Identity erstellt. Die neue Instanz wird dann unter „Konfigurationen“ aufgelistet.
+
+* **Zurücksetzen**
+
+   Setzen Sie die auf dem Bildschirm angezeigten Parameter auf die zuletzt gespeicherten Parameter zurück.
+
+* **Löschen**
+
+   Löschen Sie die aktuelle Konfiguration. Bei einer Standardinstanz werden die Parameter auf die Standardeinstellungen zurückgesetzt. Basiert die Instanz auf einer Factory-Konfiguration, wird die spezifische Instanz gelöscht.
+
+* **Unbind**
+
+   Trennen Sie die Bindung der aktuellen Konfiguration vom Bundle.
+
+* **Abbrechen**
+
+   Alle aktuellen Änderungen abbrechen.
+
+## Bundles {#bundles}
+
+The **Bundles** tab is the mechanism for installing the OSGi bundles required for AEM. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+
+* Das Dropdownmenü:
+
+   **OSGi >**
+
+* die URL; Beispiel:
+
+   `http://localhost:4502/system/console/bundles`
+
+Eine Liste mit Bundles wird angezeigt:
+
+![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
+
+Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
+
+* **Installieren oder Aktualisieren**
+
+   You can **Browse** to find the file containing your bundle and specify whether it should **Start** immediately and at which **Start Level**.
+
+* **Neu laden**
+
+   Aktualisiert die angezeigte Liste.
+
+* **Pakete aktualisieren**
+
+   Dadurch werden die Referenzen aller Pakete überprüft und nach Bedarf aktualisiert.
+
+    So werden möglicherweise nach einer Aktualisierung die alte und die neue Version aufgrund vorheriger Verweise weiter ausgeführt, Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version beendet werden kann.
+
+* **Anfang**
+
+   Startet ein Bundle entsprechend der angegebenen Startstufe.
+
+* **Stopp**
+
+   Stoppt das Bundle.
+
+* **Deinstallieren**
+
+   Deinstalliert das Bundle vom System.
+
+* **den Status**
+
+   Die Liste gibt den aktuellen Status des Bundles an. Klicken Sie auf den Namen eines Bundles mit weiteren Informationen.
+
+>[!NOTE]
+>
+>Nach einer **Aktualisierung** wird empfohlen, die **Pakete zu aktualisieren**.
+
+## Komponenten {#components}
+
+The **Components** tab allows you to Enable and/or Disable the various components. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+
+* Das Dropdownmenü:
+
+   **Haupt >**
+
+* die URL; Beispiel:
+
+   `http://localhost:4502/system/console/components`
+
+Eine Liste der Komponenten wird angezeigt. Eine Reihe von Symbolen steht zur Verfügung, mit denen Sie die Komponenten aktivieren, deaktivieren oder ggf. Konfigurationsdetails für eine bestimmte Komponente öffnen können.
+
+![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
+
+Klicken Sie auf den Namen einer bestimmten Komponente, um weitere Informationen zu deren Status anzuzeigen. Hier können Sie die Komponente auch aktivieren, deaktivieren oder neu laden.
+
+![chlimage_1-22](assets/chlimage_1-22a.png)
+
+>[!NOTE]
+>
+>Das Aktivieren oder Deaktivieren einer Komponente gilt nur, bis AEM/CRX neu gestartet wird.
+>
+>Der Startstatus ist im Komponenten-Deskriptor definiert, der bei der Entwicklung generiert wird, und wird bei der Bundle-Erstellung im Bundle gespeichert.
+
