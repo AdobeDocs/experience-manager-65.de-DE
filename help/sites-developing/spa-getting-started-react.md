@@ -1,0 +1,286 @@
+---
+title: Erste Schritte mit SPAs in AEM - React
+seo-title: Erste Schritte mit SPAs in AEM - React
+description: In diesem Artikel wird eine Beispielanwendung für SPA vorgestellt, die Zusammenstellung erklärt und Ihnen ermöglicht, sich schnell mit Ihrer eigenen SPA mit dem React Framework vertraut zu machen.
+seo-description: In diesem Artikel wird eine Beispielanwendung für SPA vorgestellt, die Zusammenstellung erklärt und Ihnen ermöglicht, sich schnell mit Ihrer eigenen SPA mit dem React Framework vertraut zu machen.
+uuid: 2beca277-a381-4482-99f6-85005d826d06
+contentOwner: bohnert
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: spa
+content-type: reference
+discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+
+---
+
+
+# Getting Started with SPAs in AEM - React{#getting-started-with-spas-in-aem-react}
+
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten in der Lage sein, Websites mithilfe von SPA-Frameworks zu erstellen, und Autoren möchten Inhalte innerhalb von AEM für eine Website, die mit SPA-Frameworks erstellt wurde, nahtlos bearbeiten.
+
+Die SPA-Erstellungsfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. In diesem Artikel wird eine vereinfachte SPA-Anwendung im React Framework vorgestellt, die erklärt, wie sie zusammengestellt wird, sodass Sie sich schnell mit Ihrer eigenen SPA vertraut machen können.
+
+>[!NOTE]
+>
+>Dieser Artikel basiert auf dem React Framework. Das entsprechende Dokument für das Angular-Framework finden Sie unter [Erste Schritte mit SPAs in AEM - Angular](/help/sites-developing/spa-getting-started-angular.md).
+
+>[!NOTE]
+>
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen clientseitiges Rendering (z.B. React oder Angular) durch das SPA-Framework erforderlich ist.
+
+## Einführung {#introduction}
+
+Dieser Artikel fasst die grundlegenden Funktionen einer einfachen SPA und die Grundlagen zusammen, die Sie für deren Nutzung benötigen.
+
+Weitere Informationen zur Funktionsweise von SPAs in AEM finden Sie in den folgenden Dokumenten:
+
+* [Einführung und exemplarische Vorgehensweisen zu SPA](/help/sites-developing/spa-walkthrough.md)
+* [Einführung in die SPA-Erstellung](/help/sites-developing/spa-overview.md)
+* [SPA-Blueprint](/help/sites-developing/spa-blueprint.md)
+
+>[!NOTE]
+>
+>Um Inhalt in einer SPA zu erstellen, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
+>
+>Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
+
+In diesem Dokument wird die Struktur einer vereinfachten Einzelseitenanwendung erläutert, die mithilfe des React-Frameworks erstellt wurde, und es wird veranschaulicht, wie sie funktioniert, damit Sie diese Verständigung auf Ihre eigene Einzelseitenanwendung anwenden können.
+
+## Abhängigkeiten, Konfiguration und Aufbau {#dependencies-configuration-and-building}
+
+Zusätzlich zur erwarteten React-Abhängigkeit kann die Beispiel-SPA zusätzliche Bibliotheken nutzen, um die Erstellung der SPA effizienter zu gestalten.
+
+### Abhängigkeiten {#dependencies}
+
+Die `package.json` Datei definiert die Anforderungen des gesamten SPA-Pakets. Die AEM-Abhängigkeiten für eine funktionierende SPA sind hier aufgeführt.
+
+```
+  "dependencies": {
+    "@adobe/cq-react-editable-components": "~1.0.3",
+    "@adobe/cq-spa-component-mapping": "~1.0.3",
+    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  }
+```
+
+Da dieses Beispiel auf dem React-Framework basiert, gibt es zwei reaktionsspezifische Abhängigkeiten, die in der Datei `package.json` obligatorisch sind:
+
+```
+react
+ react-dom
+```
+
+The `aem-clientlib-generator` is leveraged to make the creation of client libraries automatic as part of the build process.
+
+`"aem-clientlib-generator": "^1.4.1",`
+
+Weitere Details dazu können [hier auf GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator) gefunden werden.
+
+>[!CAUTION]
+>
+>Die Mindestversion der `aem-clientlib-generator` erforderlichen Version ist 1.4.1.
+
+The `aem-clientlib-generator` is configured in the `clientlib.config.js` file as follows.
+
+```
+module.exports = {
+    // default working directory (can be changed per 'cwd' in every asset option)
+    context: __dirname,
+
+    // path to the clientlib root folder (output)
+    clientLibRoot: "./../content/jcr_root/apps/my-react-app/clientlibs",
+
+    libs: {
+        name: "my-react-app",
+        allowProxy: true,
+        categories: ["my-react-app"],
+        embed: ["my-react-app.responsivegrid"],
+        jsProcessor: ["min:gcc"],
+        serializationFormat: "xml",
+        assets: {
+            js: [
+                "dist/**/*.js"
+            ],
+            css: [
+                "dist/**/*.css"
+            ]
+        }
+    }
+};
+```
+
+### Erstellung {#building}
+
+Bei der Erstellung der App wird neben dem aem-clientlib-generator zur automatischen Client-Bibliothekserstellung auch [Webpack](https://webpack.js.org/) für die Übertragung verwendet. Daher ähnelt der Aufbaubefehl dem folgenden:
+
+`"build": "webpack && clientlib --verbose"`
+
+Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
+
+### Maven Archetype für SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+
+Adobe empfiehlt die Verwendung des [Maven Archetype for SPA Starter Kits](https://github.com/adobe/aem-spa-project-archetype) , um Ihnen beim Starten Ihres eigenen SPA-Projekts für AEM zu helfen.
+
+## Anwendungsstruktur {#application-structure}
+
+Wenn Sie die Abhängigkeiten einbeziehen und Ihre App wie oben beschrieben erstellen, erhalten Sie ein funktionierendes SPA-Paket, das Sie in Ihre AEM-Instanz hochladen können.
+
+Im nächsten Abschnitt dieses Dokuments erfahren Sie, wie eine SPA in AEM strukturiert ist, welche wichtigen Dateien die Anwendung antreiben und wie sie zusammenarbeiten.
+
+Eine vereinfachte Bildkomponente wird als Beispiel verwendet, aber alle Komponenten der Anwendung basieren auf demselben Konzept.
+
+### index.js {#index-js}
+
+Der Einstiegspunkt in die SPA ist natürlich die hier gezeigte Datei `index.js`, die sich auf den wichtigen Inhalt konzentriert.
+
+```
+import ReactDOM from 'react-dom';
+import App from './App';
+import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+
+...
+
+ModelManager.initialize().then((pageModel) => {
+ReactDOM.render(
+    <App cqChildren={pageModel[Constants.CHILDREN_PROP]} cqItems={pageModel[Constants.ITEMS_PROP]} cqItemsOrder={pageModel[Constants.ITEMS_ORDER_PROP]} cqPath={ModelManager.rootPath} locationPathname={ window.location.pathname }/>
+, document.getElementById('page'));
+
+});
+```
+
+Die Hauptfunktion von `index.js` ist die Verwendung der Funktion `ReactDOM.render`, um zu bestimmen, wo im DOM die Anwendung injiziert werden soll.
+
+Dies ist eine Standardverwendung dieser Funktion, nicht nur für diese Beispielanwendung.
+
+#### Statische Instanziierung {#static-instantiation}
+
+Wenn die Komponente mit der Komponentenvorlage (z. B. JSX) statisch instanziiert wird, muss der Wert vom Modell an die Eigenschaften der Komponente übergeben werden.
+
+### App.js {#app-js}
+
+Beim Rendern der App ruft `index.js` `App.js` auf, die hier in einer vereinfachten Version angezeigt wird, um die Erläuterung auf den wesentlichen Inhalt zu reduzieren.
+
+```
+import {Page, withModel } from '@adobe/cq-react-editable-components';
+
+...
+
+class App extends Page {
+...
+}
+
+export default withModel(App);
+```
+
+`App.js` dient hauptsächlich dazu, die Root-Komponenten einzuschließen, aus denen die App besteht. Der Einstiegspunkt einer App ist die Seite.
+
+### Page.js {#page-js}
+
+Durch Rendern der Seite werden `App.js` Aufrufe in einer vereinfachten Version `Page.js` angezeigt.
+
+```
+import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+
+...
+
+class AppPage extends Page {
+...
+}
+
+MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppPage));
+```
+
+In diesem Beispiel erweitert sich die `AppPage` Klasse `Page`, die die Methoden des inneren Inhalts enthält, die dann verwendet werden können.
+
+Der `Page` nimmt die JSON-Repräsentation des Seitenmodells auf und verarbeitet den Inhalt, um jedes Element der Seite zu umhüllen/dekorieren. Weitere Details zum `Page` finden Sie im Dokument [SPA-Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
+
+### Image.js {#image-js}
+
+Mit der gerenderten Seite können die Komponenten wie `Image.js` wie hier dargestellt gerendert werden.
+
+```
+import React, {Component} from 'react';
+import {MapTo} from '@adobe/cq-react-editable-components';
+
+require('./Image.css');
+
+const ImageEditConfig = {
+
+    emptyLabel: 'Image',
+
+    isEmpty: function() {
+        return !this.props || !this.props.src || this.props.src.trim().length < 1;
+    }
+};
+
+class Image extends Component {
+
+    render() {
+        return (<img src={this.props.src}>);
+    }
+}
+
+MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
+```
+
+Die zentrale Idee von SPAs in AEM ist die Idee, SPA-Komponenten auf AEM-Komponenten abzubilden und die Komponente zu aktualisieren, wenn der Inhalt geändert wird (und umgekehrt). See the document [SPA Editor Overview](/help/sites-developing/spa-overview.md) for an summary of this communication model.
+
+`MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
+
+Die `MapTo`-Methode ordnet die SPA-Komponente der AEM-Komponente zu. Es unterstützt die Verwendung einer einzelnen Zeichenfolge oder eines Arrays von Zeichenfolgen.
+
+`ImageEditConfig` ist ein Konfigurationsobjekt, das dazu beiträgt, die Authoring-Funktionen einer Komponente zu aktivieren, indem die erforderlichen Metadaten bereitgestellt werden, damit der Editor Platzhalter generieren kann
+
+Wenn kein Inhalt vorhanden ist, werden Etiketten als Platzhalter bereitgestellt, um den leeren Inhalt darzustellen.
+
+#### Dynamisch weitergegebene Eigenschaften {#dynamically-passed-properties}
+
+Die vom Modell stammenden Daten werden dynamisch als Eigenschaften der Komponente übergeben.
+
+## Exportieren bearbeitbarer Inhalte {#exporting-editable-content}
+
+Sie können eine Komponente exportieren und bearbeitbar halten.
+
+```
+import React, { Component } from 'react';
+import { MapTo } from '@cq/cq-react-editable-components';
+
+...
+
+const EditConfig = {...}
+
+class PageClass extends Component {...};
+
+...
+
+export default MapTo('my-react-app/react/components/structure/page')(PageClass, EditConfig);
+```
+
+The `MapTo` function returns a `Component` which is the result of a composition that extends the provided `PageClass` with the class names and attributes that enable the authoring. Diese Komponente kann exportiert werden, um später im Markup Ihrer Anwendung instanziiert zu werden.
+
+When exported using the `MapTo` or `withModel` functions, the `Page` component, is wrapped with a `ModelProvider` component which provides standard components access to the latest version of the page model or a precise location in that page model.
+
+Weitere Informationen finden Sie im Dokument [SPA-Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-329251743).
+
+>[!NOTE]
+>
+>Standardmäßig erhalten Sie das gesamte Modell der Komponente, wenn Sie die Funktion `withModel` verwenden.
+
+## Freigeben von Informationen zwischen SPA-Komponenten {#sharing-information-between-spa-components}
+
+Es ist regelmäßig erforderlich, dass Komponenten in einer Einzelseitenanwendung Informationen austauschen. Es gibt mehrere empfohlene Methoden, um dies zu tun, wie folgt in steigender Reihenfolge der Komplexität aufgeführt.
+
+* **** Option 1: Zentralisieren Sie die Logik und senden Sie sie an die erforderlichen Komponenten, z. B. mithilfe von &quot;React Context&quot;.
+* **** Option 2: Freigeben von Komponentenstatus mithilfe einer Statusbibliothek wie Redux
+* **** Option 3: Nutzen Sie die Objekthierarchie durch Anpassen und Erweitern der Container-Komponente.
+
+## Nächste Schritte {#next-steps}
+
+Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Tutorial [Erste Schritte mit dem AEM SPA Editor - WKND Events](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+
+Weitere Informationen zum Organisieren von SPAs für AEM finden Sie im Artikel [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md).
+
+Weitere Informationen zum dynamischen Modell zur Komponentenzuordnung und dazu, wie es in AEM in SPAs funktioniert, finden Sie im Artikel [Dynamisches Modell zur Komponentenzuordnung für SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+
+Wenn Sie SPAs in AEM für ein anderes Framework als &quot;React&quot;oder &quot;Angular&quot;implementieren möchten oder einfach einen tiefen Einblick in die Funktionsweise des SPA-SDK für AEM erhalten möchten, lesen Sie den Artikel [SPA Blueprint](/help/sites-developing/spa-blueprint.md) .
