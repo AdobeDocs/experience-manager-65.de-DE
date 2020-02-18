@@ -9,12 +9,12 @@ topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
 
-# Inline-Stile für Komponenten adaptiver Formulare{#inline-styling-of-adaptive-form-components}
+# Inline-Stile für Komponenten adaptiver Formulare {#inline-styling-of-adaptive-form-components}
 
 Sie können die Darstellung und das Design eines adaptiven Formulars definieren, indem Sie die Stile mithilfe des Designs mithilfe des [Designeditors](../../forms/using/themes.md) angeben. Außerdem können Sie Inline-CSS-Stile auf einzelne Komponenten anwenden und die Änderungen direkt in der Vorschau anzeigen. Inline-Formatvorlagen überschreiben die Formatierung, die im Design bereitgestellt werden.
 
