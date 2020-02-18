@@ -2,12 +2,9 @@
 title: Digitale Assets und Bilder in AEM suchen
 description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
-docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
+source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
 
 ---
 
@@ -62,11 +59,15 @@ Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindi
 
 Sie können Suchbegriffssuchen im OmniSearch-Feld ausführen. Bei der Stichwortsuche wird nicht zwischen Groß- und Kleinschreibung unterschieden und es handelt sich um eine Volltextsuche (über die beliebten Metadatenfelder hinweg). Wenn mehr als ein Suchbegriff gesucht wird, wird der Standardoperator zwischen den Suchbegriffen `AND` für die Standardsuche verwendet, `OR` wenn Assets mit intelligenten Tags versehen sind.
 
-Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den nächsten Übereinstimmungen. Bei mehreren Suchbegriffen sind die Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Suchbegriffe, die als Smart-Tags angezeigt werden, höher eingestuft als Suchbegriffe, die in anderen Metadatenfeldern angezeigt werden. AEM ermöglicht die höhere Gewichtung eines bestimmten Suchbegriffs. Außerdem ist es möglich, den Rang[ einiger gezielter Assets für bestimmte Suchbegriffe zu ](#searchrank)erhöhen.
+Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den nächsten Übereinstimmungen. Bei mehreren Suchbegriffen sind die Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Suchbegriffe, die als Smart-Tags angezeigt werden, höher eingestuft als Suchbegriffe, die in anderen Metadatenfeldern angezeigt werden. Mit AEM können Sie einem bestimmten Suchbegriff mehr Gewicht verleihen. Außerdem ist es möglich, den Rang[ einiger gezielter Assets für bestimmte Suchbegriffe zu ](#searchrank)erhöhen.
 
-Um die relevanten Assets schnell zu finden, bietet die Rich-Oberfläche Filter-, Sortierungs- und Auswahlmechanismen. Sie können Ergebnisse nach mehreren Kriterien filtern und die Anzahl der gesuchten Assets nach verschiedenen Filtern anzeigen. Alternativ dazu können Sie die Suche erneut ausführen, indem Sie die Abfrage im Feld Omniture Search ändern. Wenn Sie Ihre Suchbegriffe oder Filter ändern, bleiben die anderen Filter angewendet, um den Kontext Ihrer Suche zu erhalten. Wenn die Ergebnisse größer als 1000 sind, zeigt AEM nicht alle gesuchten Assets an und 1000+ wird als Anzahl der gesuchten Assets angezeigt. Dadurch soll die Suchleistung verbessert werden. Wenn Sie einen Bildlauf durchführen, um weitere Assets anzuzeigen, erhöht sich die Anzahl nach und nach um 200.
+Um die relevanten Assets schnell zu finden, bietet die Rich-Oberfläche Filter-, Sortierungs- und Auswahlmechanismen. Sie können Ergebnisse nach mehreren Kriterien filtern und die Anzahl der gesuchten Assets nach verschiedenen Filtern anzeigen. Alternativ dazu können Sie die Suche erneut ausführen, indem Sie die Abfrage im Feld Omniture Search ändern. Wenn Sie Ihre Suchbegriffe oder Filter ändern, bleiben die anderen Filter angewendet, um den Kontext Ihrer Suche zu erhalten.
 
-Manchmal werden in den Suchergebnissen einige unerwartete Elemente angezeigt. Weitere Informationen finden Sie unter [Unerwartete Ergebnisse](#unexpectedresults).
+Wenn die Ergebnisse viele Assets sind, zeigt AEM die ersten 100 in der Kartenansicht und 200 in der Listenansicht an. Wenn Benutzer einen Bildlauf durchführen, werden weitere Assets geladen. Dadurch soll die Leistung verbessert werden.
+
+>[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+
+Manchmal werden in den Suchergebnissen einige unerwartete Elemente angezeigt. Weitere Informationen finden Sie unter [Unerwartete Ergebnisse](#troubleshoot-unexpected-search-results-and-issues).
 
 AEM kann viele Dateiformate suchen und die Suchfilter können an Ihre geschäftlichen Anforderungen angepasst werden. Wenden Sie sich an Ihren Administrator, um zu verstehen, welche Suchoptionen für Ihr DAM-Repository verfügbar sind und welche Einschränkungen Ihr Konto hat.
 
@@ -243,7 +244,7 @@ Sie können die folgenden Anforderungsparameter in einer URL übergeben, um den 
 | assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Verwenden Sie diese Option, um die Asset-Typen basierend auf dem übergebenen Wert zu filtern. |
 | root | &lt;Ordnerpfad> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
 
-To access the asset selector interface, go to `https://[AEM server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im Feld OmnitureSearch nach dem gewünschten Asset suchen, den Filter nach Bedarf anwenden und es dann auswählen.
+To access the asset selector interface, go to `https://[aem_server]:[port]/aem/assetpicker`. Navigieren Sie zum gewünschten Ordner und wählen Sie mindestens ein Asset aus. Alternativ können Sie im Feld OmnitureSearch nach dem gewünschten Asset suchen, den Filter nach Bedarf anwenden und es dann auswählen.
 
 ![Asset in der Asset-Auswahl durchsuchen und auswählen](assets/assetpicker.png)
 
@@ -258,7 +259,7 @@ Die Suchfunktion in AEM Assets unterliegt folgenden Einschränkungen:
 * AEM kann den Suchbegriff weiterhin anzeigen, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und dann die Suche abgebrochen haben. <!-- (CQ-4273540) -->
 * Bei der Suche nach Ordnern, Dateien und Ordnern können die Suchergebnisse nicht nach Parametern sortiert werden.
 * Wenn Sie die Eingabetaste drücken, ohne etwas in die Omniture Suchleiste einzugeben, gibt AEM eine Liste mit nur Dateien und nicht Ordnern zurück. Wenn Sie gezielt nach Ordnern suchen, ohne einen Suchbegriff zu verwenden, gibt AEM keine Ergebnisse zurück.
-* Mit dem Kontrollkästchen &quot;Alleauswählen&quot;können Sie nur die ersten 100 gesuchten Assets in der Kartenansicht und die ersten 200 gesuchten Assets in der Listenansicht auswählen.
+* Mit dem Kontrollkästchen &quot;Alleauswählen&quot;können Sie nur die ersten 100 gesuchten Assets in der Kartenansicht und die ersten 200 gesuchten Assets in der Listenansicht auswählen. Wenn Sie einen Bildlauf durchführen und weitere Assets in der Benutzeroberfläche laden, können Sie mit der Option &quot;Alle [!UICONTROL auswählen] &quot;weitere Elemente auswählen.
 
 Die visuelle Suche oder Ähnlichkeitssuche weist die folgenden Einschränkungen auf:
 
@@ -457,7 +458,7 @@ Sie können intelligente Sammlungen auf Grundlage der Suchkriterien erstellen. W
 | Suchfilter/-vorhersage nicht verfügbar | <ul><li>Der Suchfilter ist entweder nicht konfiguriert.</li><li>Es ist nicht für Ihre Anmeldung verfügbar.</li><li>(Weniger wahrscheinlich) Die Suchoptionen werden nicht auf die verwendete Bereitstellung angepasst.</li></ul> | <ul><li>Wenden Sie sich an den Administrator, um zu prüfen, ob die Suchanpassung verfügbar ist oder nicht.</li><li>Wenden Sie sich an den Administrator, um zu prüfen, ob Ihr Konto über die Berechtigung/Berechtigungen zur Verwendung der Anpassung verfügt.</li><li>Wenden Sie sich an den Administrator und überprüfen Sie die verfügbaren Anpassungen für die AEM Assets-Bereitstellung, die Sie verwenden.</li></ul> |
 | Bei der Suche nach visuell ähnlichen Bildern fehlt ein erwartetes Bild | <ul><li>Bild ist in AEM nicht verfügbar.</li><li>Bild wird nicht indiziert. In der Regel, wenn es kürzlich hochgeladen wurde.</li><li>Bild ist nicht intelligent getaggt.</li></ul> | <ul><li>Fügen Sie das Bild zu AEM Assets hinzu.</li><li>Wenden Sie sich an Ihren Administrator, um das Repository erneut zu indizieren. Stellen Sie außerdem sicher, dass Sie den entsprechenden Index verwenden.</li><li>Wenden Sie sich an Ihren Administrator, um die relevanten Assets mit einem intelligenten Tag zu versehen.</li></ul> |
 | Wenn Sie nach visuell ähnlichen Bildern suchen, wird ein irrelevantes Bild angezeigt | Visuelles Suchverhalten. | AEM zeigt so viele potenziell relevante Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, allerdings mit einer niedrigeren Suchrangliste. Die Qualität der Übereinstimmungen und die Relevanz der gesuchten Assets werden beim Bildlauf nach unten verringert. |
-| Bei der Auswahl und beim Betrieb von gesuchten Assets werden nicht alle gesuchten Assets verarbeitet | Die Option &quot;Alleauswählen&quot;wählt nur die ersten 100 Suchergebnisse in der Kartenansicht und die ersten 200 Suchergebnisse in der Listenansicht aus. |  |
+| Bei Auswahl und Verwendung der Suchergebnisse werden nicht alle gesuchten Assets verarbeitet | Die Option &quot;Alleauswählen&quot;wählt nur die ersten 100 Suchergebnisse in der Kartenansicht und die ersten 200 Suchergebnisse in der Listenansicht aus. |  |
 
 >[!MORELIKETHIS]
 >
