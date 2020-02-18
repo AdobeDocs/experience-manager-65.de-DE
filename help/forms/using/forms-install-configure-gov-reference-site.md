@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93f3696242c681a019c2252364fe7cee510cb933
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
@@ -312,11 +312,15 @@ Dieser Abschnitt enthält Details und Anweisungen zur Adobe Analytics Cloud-Konf
 
 **Verweise:**
 
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html)
+* [Integrieren mit Adobe Analytics](../../sites-administering/adobeanalytics.md)
+
+* [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](../../sites-administering/adobeanalytics-connect.md)
+
+* [Anzeigen von Seitenanalysedaten](../../sites-authoring/pa-using.md)
+
+* [Konfigurieren von Analysen und Berichten](configure-analytics-forms-documents.md)
+
+* [Anzeigen und Verstehen der Analytics-Berichte in AEM Forms](view-understand-aem-forms-analytics-reports.md)
 
 ### Konfiguration des Adobe Analytics-Cloud-Dienstes {#adobe-analytics-cloud-service-configuration}
 
@@ -432,7 +436,7 @@ Die in diesem Paket enthaltenen bearbeitbaren Vorlagen sind auch mit Vorlagen-/S
 
 Die in diesem Paket enthaltenen Vorlagen unterstützen auch das Stilsystem:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[Stilsystem](../../sites-authoring/style-system.md)
 
 #### Vorlagen-Logos {#template-logos}
 
@@ -446,7 +450,7 @@ Beim Bearbeiten der Seiten- und Formularvorlagen können Sie die Markenlogos dur
 
 Weitere Informationen finden Sie unter Bearbeiten von Seiteninhalten:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32)
+[Bearbeiten des Seiteninhalts](../../sites-authoring/editing-content.md)
 
 ### Seiten anpassen {#sites-pages-customization}
 
@@ -458,7 +462,7 @@ Diese Siteseiten verwenden auch das AEM-Grid-Paket, um das Layout einiger Kompon
 
 Die in diesem Paket enthaltenen Seiten unterstützen auch das Stilsystem:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[Stilsystem](../../sites-authoring/style-system.md)
 
 Die Dokumentation zu unterstützten Stilen finden Sie auch unter [Vorlagenanpassungsstilsystem](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) .
 
@@ -480,8 +484,8 @@ Diese Formulare können an bestimmte Verwendungsfälle angepasst werden. Beachte
 
 Adaptive Formulare können auch mit dem Stileditor oder dem Design-Editor formatiert werden:
 
-* [https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html)
-* [https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html](https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html)
+* [Inline-Stile für Komponenten adaptiver Formulare](inline-style-adaptive-forms.md)
+* [Erstellen und Verwenden von Designs](themes.md)
 
 ### Workflow-Anpassung {#workflow-customization}
 
