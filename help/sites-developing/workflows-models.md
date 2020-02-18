@@ -185,7 +185,7 @@ If a workflow model is present in Classic UI, but missing in the selection popup
 
 1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** und dann **[!UICONTROL Bearbeiten]**.
 
-1. Wählen Sie &quot; **[!UICONTROL Bearbeiten]**&quot;, öffnen Sie das Menü &quot; **[!UICONTROL Seiteninformationen]** &quot;, wählen Sie dort &quot; **[UICONTROL Open Properties]** &quot;und gehen Sie zur Registerkarte &quot; **[!UICONTROL Basic]** &quot;(falls noch nicht geöffnet).
+1. Wählen Sie &quot; **[!UICONTROL Bearbeiten]**&quot;, öffnen Sie das Menü &quot; **[!UICONTROL Seiteninformationen]** &quot;, wählen Sie dort &quot;Eigenschaften ****&#x200B;öffnen&quot;und gehen Sie zur Registerkarte &quot; **[!UICONTROL Grundeinstellungen]** &quot;(falls nicht bereits geöffnet).
 
 1. Zu `Workflow : DAM`Tags **** hinzufügen. Bestätigen Sie die Auswahl mit dem Häkchen.
 
