@@ -7,7 +7,7 @@ discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager (AEM) Assets bieten robuste Methoden zur Ermittlung von
 
 AEM unterstützt die folgenden Anwendungsfälle und in diesem Artikel werden die Verwendung, Konzepte, Konfigurationen, Einschränkungen und die Fehlerbehebung für diese Anwendungsfälle beschrieben.
 
-| Assets suchen | Konfiguration und Verwaltung | Arbeiten mit Suchergebnissen |
+| Suchen nach Assets | Konfiguration und Verwaltung | Arbeiten mit Suchergebnissen |
 |---|---|---|
 | [Grundlegende Suchvorgänge](#searchbasics) | [Suchindex](#searchindex) | [Ergebnisse sortieren](#sort) |
 | [Benutzeroberfläche für die Suche](#searchui) | [Visuelle Suche oder Ähnlichkeitssuche](#configvisualsearch) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
@@ -459,7 +459,7 @@ Sie können intelligente Sammlungen auf Grundlage der Suchkriterien erstellen. W
 | Wenn Sie nach visuell ähnlichen Bildern suchen, wird ein irrelevantes Bild angezeigt | Visuelles Suchverhalten. | AEM zeigt so viele potenziell relevante Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, allerdings mit einer niedrigeren Suchrangliste. Die Qualität der Übereinstimmungen und die Relevanz der gesuchten Assets werden beim Bildlauf nach unten verringert. |
 | Bei der Auswahl und beim Betrieb von gesuchten Assets werden nicht alle gesuchten Assets verarbeitet | Die Option &quot;Alleauswählen&quot;wählt nur die ersten 100 Suchergebnisse in der Kartenansicht und die ersten 200 Suchergebnisse in der Listenansicht aus. |  |
 
->[!MORE WIE DIESE]
+>[!MORELIKETHIS]
 >
 >* [Anleitung zur AEM-Suchimplementierung](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Die erweiterte Konfiguration von Multi-Wert- und Tag-Suche prognostiziert](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
