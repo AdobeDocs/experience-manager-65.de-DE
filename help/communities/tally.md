@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 9532c1fb8af37b29285007bc72e86d42d5eb9c4d
+source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
 
 ---
 
@@ -27,7 +27,7 @@ Eine benutzerdefinierte Tally-Komponente kann durch Erweitern der abstrakten Tal
 
 [Rating](rating-basics.md) ist eine Implementierung von Tally, die ein Sternsystem verwendet, um eine Reihe von Meinungen von positiv bis negativ auszudrücken.
 
-Ab AEM 6.1 ist die [Umfragekomponente](poll-basics.md) nicht mehr verfügbar.
+Ab AEM 6.1 ist die Umfragekomponente nicht mehr verfügbar.
 
 [Reviews](reviews-basics.md) ist eine SCF-Komponente, die eine Mischung aus [Kommentaren](essentials-comments.md) und [Bewertungen](rating-basics.md)darstellt.
 
