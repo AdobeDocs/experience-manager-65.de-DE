@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
+source-git-commit: 9f260d3ccb98409790cd18b2540329fc36a07c05
 
 ---
 
@@ -48,8 +48,9 @@ Gehen Sie folgendermaßen vor, um einen neuen Workflow mit dem Editor zu erstell
 >Wenn Sie Modelle programmgesteuert (mithilfe eines CRX-Pakets) erstellen, können Sie auch einen Unterordner erstellen:
 >
 >`/var/workflow/models`
-
+>
 >Beispiel: `/var/workflow/models/prototypes`
+>
 >Dieser Ordner kann anschließend zum [Verwalten des Zugriffs auf die Modelle in diesem Ordner](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that) verwendet werden.
 
 ## Bearbeiten von Workflows {#editing-a-workflow}
@@ -89,7 +90,8 @@ Wenn Sie ein [Standard- bzw. Legacy-Modell](/help/sites-developing/workflows.md#
 * Sie erhalten die Möglichkeit, Änderungen vorzunehmen.
 
 >[!NOTE]
-Unter [Speicherorte von Workflow-Modellen](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) finden Sie weitere Informationen.
+>
+>Unter [Speicherorte von Workflow-Modellen](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) finden Sie weitere Informationen.
 
 ![wf-22](assets/wf-22.png)
 
@@ -102,7 +104,8 @@ Wenn Sie ein Modell bearbeiten, werden die verfügbaren Schritte in den verschie
 ![wf-10](assets/wf-10.png)
 
 >[!NOTE]
-Weitere Informationen zu den primären Schrittkomponenten, die mit AEM installiert werden, finden Sie in der [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md).
+>
+>Weitere Informationen zu den primären Schrittkomponenten, die mit AEM installiert werden, finden Sie in der [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md).
 
 Gehen Sie folgendermaßen vor, um Schritte zu Ihrem Workflow-Modell hinzuzufügen:
 
@@ -144,7 +147,8 @@ Sie können das Verhalten von Workflow-Schritten über das Dialogfeld **Schritt-
 
    * Doppelklicken Sie auf den Schritt.
    >[!NOTE]
-   Weitere Informationen zu den primären Schrittkomponenten, die mit AEM installiert werden, finden Sie in der [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md).
+   >
+   >Weitere Informationen zu den primären Schrittkomponenten, die mit AEM installiert werden, finden Sie in der [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md).
 
 1. Konfigurieren Sie die **Schritt-Eigenschaften** nach Bedarf. Die jeweils verfügbaren Eigenschaften hängen vom Schritttyp ab, ggf. stehen auch mehrere Registerkarten zur Verfügung. For example, the default **Participant Step**, present in a new workflow as `Step 1`:
 
@@ -170,7 +174,8 @@ Sie können ein [Übergangs-](/help/sites-developing/workflows.md#transient-work
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
 >[!NOTE]
-Beim Ausführen eines Workflows im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt. [](/help/sites-authoring/basic-handling.md#timeline)
+>
+>Beim Ausführen eines Workflows im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Workflow-Modelle in der Touch-Benutzeroberfläche verfügbar machen {#classic2touchui}
 
@@ -214,7 +219,8 @@ Sie konfigurieren ein Workflow-Modell für die [Unterstützung für mehrere Ress
 Die [Workflow-Phasen](/help/sites-developing/workflows.md#workflow-stages) helfen Ihnen bei der Visualisierung des Fortschritts bei der Verarbeitung von Aufgaben.
 
 >[!CAUTION]
-Wenn Workflow-Phasen in **Seiteneigenschaften** definiert sind, aber für keinen der Workflow-Schritte verwendet werden, zeigt der Fortschrittsbalken keinen Fortschritt an (unabhängig vom aktuellen Workflow-Schritt).
+>
+>Wenn Workflow-Phasen in **Seiteneigenschaften** definiert sind, aber für keinen der Workflow-Schritte verwendet werden, zeigt der Fortschrittsbalken keinen Fortschritt an (unabhängig vom aktuellen Workflow-Schritt).
 
 Die jeweils verfügbaren Phasen werden in den Workflow-Modellen definiert. Die vorhandenen Workflow-Modelle können aktualisiert werden, um die Phasendefinitionen einzubinden. Sie können eine beliebige Anzahl von Phasen für das Workflow-Modell definieren.
 
@@ -340,7 +346,8 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
    * Aktivieren Sie das Kontrollkästchen **Benachrichtigen Sie den Benutzer per E-Mail**.
    * Select `Administrator` ( `admin`) for the **User/Group** field.
    >[!NOTE]
-   Damit E-Mails versendet werden können, müssen [der E-Mail-Dienst und die Benutzerkontoinformationen konfiguriert werden](/help/sites-administering/notification.md).
+   >
+   >Damit E-Mails versendet werden können, müssen [der E-Mail-Dienst und die Benutzerkontoinformationen konfiguriert werden](/help/sites-administering/notification.md).
 
 1. Bestätigen Sie Ihre Änderungen durch Klicken auf das Häkchen-Symbol.
 
@@ -393,7 +400,8 @@ Gehen Sie folgendermaßen vor, um eine Regel für eine ODER-Teilung zu definiere
    `/apps/myapp/workflow/scripts`
 
    >[!NOTE]
-   The scripts must have a [function `check()`](#function-check) that returns a boolean.
+   >
+   >The scripts must have a [function `check()`](#function-check) that returns a boolean.
 
 1. Bearbeiten Sie den Workflow und fügen Sie die **ODER-Teilung** zum Modell hinzu.
 1. Bearbeiten Sie die Eigenschaften von **Zweig 1** der **ODER-Teilung**:
@@ -403,7 +411,8 @@ Gehen Sie folgendermaßen vor, um eine Regel für eine ODER-Teilung zu definiere
    * As **Rule**, set the path to the script. Beispiel:
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
-   Sie können bei Bedarf die Abzweigungsreihenfolge wechseln.
+   >
+   >Sie können bei Bedarf die Abzweigungsreihenfolge wechseln.
 
 1. Bearbeiten Sie die Eigenschaften von **Zweig 2** der **ODER-Teilung**:
 
@@ -418,7 +427,8 @@ Gehen Sie folgendermaßen vor, um eine Regel für eine ODER-Teilung zu definiere
 #### Funktion „Check()“ {#function-check}
 
 >[!NOTE]
-Weitere Informationen finden Sie unter [Verwenden von ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+>
+>Weitere Informationen finden Sie unter [Verwenden von ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
 
 The following sample script returns `true` if the node is a `JCR_PATH` located under `/content/we-retail/us/en`:
 
