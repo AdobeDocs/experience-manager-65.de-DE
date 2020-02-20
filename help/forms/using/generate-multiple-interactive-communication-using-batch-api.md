@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 3ba9308f7a6252f7ea6ae0de6455ab3e97e3b8dd
+source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
 
 ---
 
@@ -174,6 +174,22 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
 
 1. Melden Sie sich bei Ihrer AEM-Instanz an und erstellen Sie eine interaktive Kommunikation. Um die interaktive Kommunikation zu verwenden, die im folgenden Beispielcode erwähnt wird, [klicken Sie hier](assets/SimpleMediumIC.zip).
 1. [Erstellen und Bereitstellen eines AEM-Projekts mit Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) auf Ihrer AEM-Instanz.
+1. Fügen Sie [AEM Forms Client SDK Version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) oder höher und die neueste [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) in der Abhängigkeitsliste der POm-Datei Ihres AEM-Projekts hinzu. Beispiel:
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aemfd</groupId>
+           <artifactId>aemfd-client-sdk</artifactId>
+           <version>6.0.122</version>
+       </dependency>
+       <dependency>
+          <groupId>com.adobe.aem</groupId>
+          <artifactId>uber-jar</artifactId>
+          <version>6.5.0</version>
+          <classifier>apis</classifier>
+          <scope>provided</scope>
+       </dependency>
+   ```
 1. Öffnen Sie das Java-Projekt, erstellen Sie eine .java-Datei, z. B. CCMBatchServlet.java. Fügen Sie der Datei „“ den folgenden Code hinzu:
 
    ```java
@@ -271,7 +287,7 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
                            throw new Exception("Invalid JSON Data. File name : " + filePath, ex);
                        }
                    }
-                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/testsample/mediumic").build();
+                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/[path of the interactive communcation]").build();
                    BatchConfig batchConfig = batchBuilderFactory.getBatchConfigBuilder().setBatchType(BatchType.WEB_AND_PRINT).build();
                    BatchResult batchResult = batchGeneratorService.generateBatch(batchInput, batchConfig);
                    List<RecordResult> recordList = batchResult.getRecordResults();
@@ -338,9 +354,7 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
    * Wenn Sie sowohl PRINT- als auch WEB-Optionen angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Datensatz generiert.
 
 1. [Verwenden Sie Maven, um den aktualisierten Code für Ihre AEM-Instanz](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)bereitzustellen.
-1. Rufen Sie die Stapel-API auf, um die interaktive Kommunikation zu generieren. Die Stapel-API gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Datensätze zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Webvorlage](#web-template)verwenden.
-
-   Wenn Sie den obigen Code verwenden, wird die API unter bereitgestellt `http://localhost:4502/bin/batchServlet`. Wenn Sie die in Schritt 1 bereitgestellte interaktive Beispielkommunikation verwenden, können Sie mithilfe von [records.json](assets/records.json) eine interaktive Kommunikation erstellen. Beispiel: `http://localhost:4502/bin/batchServlet?filePath=C:/aem/records.json>.` Es wird ein Stream einer PDF- und einer JSON-Datei gedruckt und zurückgegeben.
+1. Rufen Sie die Stapel-API auf, um die interaktive Kommunikation zu generieren. Die Stapel-API gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Datensätze zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Webvorlage](#web-template)verwenden. Wenn Sie den obigen Code verwenden, wird die API unter bereitgestellt `http://localhost:4502/bin/batchServlet`. Der Code gibt einen Stream von PDF- und JSON-Dateien aus und gibt ihn zurück.
 
 ### Vorausfüllen einer Webvorlage {#web-template}
 
