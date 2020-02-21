@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 
 ---
 
@@ -38,9 +38,9 @@ Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners 
 >* Knotennamen können Leerzeichen enthalten, bei Verwendung in einem URI muss das Leerzeichen jedoch entweder als &#39;%20&#39; oder als &#39;+&#39; kodiert werden
 >* Knotennamen können Bindestriche und Unterstriche enthalten, müssen jedoch kodiert werden, wenn sie als Paketname in einer Java-Datei referenziert werden. Sowohl Bindestriche als auch Unterstriche werden mit einem Unterstrich gefolgt von ihrem Unicode-Wert versehen:
    >
-   >  
-* Bindestrich wird &#39;_002d&#39;
->  * Unterstrich wird &#39;_005f&#39;
+   >   
+   * Bindestrich wird &#39;_002d&#39;
+   >   * Unterstrich wird &#39;_005f&#39;
 
 
 ## Anwendungsverzeichnis einrichten (/apps) {#setup-the-application-directory-apps}
