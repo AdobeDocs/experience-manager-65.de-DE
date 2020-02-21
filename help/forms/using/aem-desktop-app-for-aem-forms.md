@@ -10,7 +10,7 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 6fa293028332596bb93013119b4339c7721eb536
+source-git-commit: 3460909eb77cc078b728d1af4becd47cc4377b73
 
 ---
 
@@ -34,7 +34,7 @@ Mithilfe der App können Sie AEM Forms-Binärdateien der Typen Formatvorlage (.x
 Die AEM-Desktop-App verwendet das WebDAV-Protokoll unter Microsoft Windows und SMB1 unter Mac OS X, um eine Verbindung zu einem AEM Forms-Server herzustellen. Standardmäßig ist der AEM Forms-Server nicht zum Synchronisieren von Binärdateien und anderen Assets mit einem WebDAV- oder SMB-Client aktiviert. Führen Sie die folgenden Schritte aus, um AEM Forms für die AEM-Desktop-App zu aktivieren:
 
 1. Melden Sie sich bei AEM Forms als Administrator an.
-1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools **![hammer](assets/hammer.png)**> Deployment > Operations > Web Console]**. Die Web-Konsole wird in einem neuen Fenster geöffnet.
+1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![hammer](assets/hammer.png) **[!UICONTROL > Deployment > Operations > Web Console]**. Die Web-Konsole wird in einem neuen Fenster geöffnet.
 1. Suchen Sie im Fenster der Web-Konsole die Option **[!UICONTROL FormsManager AddOn Configuration]** und öffnen Sie sie.
 1. Deaktivieren Sie im Dialogfeld „FormsManager AddOn Configuration“ das Kontrollkästchen **[!UICONTROL Asynchronously Sync Resources]** und klicken Sie auf **[!UICONTROL Speichern]**.
 1. Starten Sie den AEM Forms-Server neu. Nach dem Neustart ist der AEM Forms-Server für das Akzeptieren und Freigeben von Inhalten mit der AEM-Desktop-App aktiviert.
