@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e9f5d8f63bc342723f2002f677c1673b4af6f891
 
 ---
 
@@ -70,7 +70,7 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 >
 >If you are creating and developing custom viewers and using the Content Finder, you need to explicity add the **[!UICONTROL allowfullscreen]** parameter.
 
-### Abkündigungshinweis für Flash-Viewer {#flash-viewers-end-of-life-notice}
+### Hinweis zur Einstellung von Flash-Viewer {#flash-viewers-end-of-life-notice}
 
 Ab dem 31. Januar 2017 hat Adobe Dynamic Media Classic die Unterstützung für die Flash-Viewer-Plattform eingestellt.
 
@@ -265,11 +265,9 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die 
 >* Wenn die [sichere Vorschau aktiviert](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)ist, werden veröffentlichte und unveröffentlichte Assets in Dynamic Media Classic im Inhaltsbrowser von Dynamic Media Classic angezeigt.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Für Videos unterstützt der Inhaltsbrowser Dynamic Media Classic Folgendes:
-   >
-   >  
-* Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
->  * Einzelnes MP4-Video
->  * Einzelnes F4V-Video
+   >   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
+   >   * Einzelnes MP4-Video
+   >   * Einzelnes F4V-Video
 
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
