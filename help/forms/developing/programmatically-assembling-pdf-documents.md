@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
 
 ---
 
@@ -100,7 +100,7 @@ Sowohl die Datei &quot;map.pdf&quot;als auch die Datei &quot;richtungen.pdf&quot
 
 >[!NOTE]
 >
->Ein `AssemblerResult` Objekt, das ein Collection-Objekt enthält, wird zurückgegeben, wenn Sie den `invokeDDX` Vorgang aufrufen. Dieser Vorgang wird verwendet, wenn Sie zwei oder mehr PDF-Eingabedokumente an den Assembler-Dienst übergeben. Wenn Sie jedoch nur eine Eingabe-PDF an den Assembler-Dienst übergeben und nur ein Rückgabedokument erwarten, rufen Sie den `invokeOneDocument` Vorgang auf. Beim Aufrufen dieses Vorgangs wird ein einzelnes Dokument zurückgegeben. Informationen zur Verwendung dieses Vorgangs finden Sie unter [Zusammenstellen verschlüsselter PDF-Dokumente](/help/forms/develop/assembling-encrypted-pdf-documents-assembling assembling-encrypted-pdf-documents-assembling.md#assembling-encrypted-pdf-documents).
+>Ein `AssemblerResult` Objekt, das ein Collection-Objekt enthält, wird zurückgegeben, wenn Sie den `invokeDDX` Vorgang aufrufen. Dieser Vorgang wird verwendet, wenn Sie zwei oder mehr PDF-Eingabedokumente an den Assembler-Dienst übergeben. Wenn Sie jedoch nur eine Eingabe-PDF an den Assembler-Dienst übergeben und nur ein Rückgabedokument erwarten, rufen Sie den `invokeOneDocument` Vorgang auf. Beim Aufrufen dieses Vorgangs wird ein einzelnes Dokument zurückgegeben. Informationen zur Verwendung dieses Vorgangs finden Sie unter [Zusammenstellen verschlüsselter PDF-Dokumente](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **Festlegen von Laufzeitoptionen**
 
