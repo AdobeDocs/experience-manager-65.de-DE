@@ -4,7 +4,7 @@ seo-title: Abwesenheitseinstellungen konfigurieren
 description: Abwesenheitseinstellungen konfigurieren
 seo-description: Abwesenheitseinstellungen konfigurieren
 translation-type: tm+mt
-source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
+source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
 
 ---
 
@@ -48,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um die Abwesenheitseinstellung für Ihr 
 
    Wiederholen Sie den Schritt, um weitere Zuweisungsdaten hinzuzufügen. <br>
 
-   [!NOTE]
+   >[!NOTE]
    >Die Reihenfolge der Bevollmächtigten ist wichtig. Wenn ein Element einem Benutzer zugewiesen wird, der die Abwesenheitseinstellung aktiviert hat, wird das Element anhand der Liste der angegebenen Verantwortlichen ausgewertet, in der die zugewiesenen Bevollmächtigten hinzugefügt werden. Entspricht ein Element den Kriterien, wird es dem Verantwortlichen zugewiesen und der nächste Verantwortliche wird nicht überprüft.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Die Einstellung wird am angegebenen Startdatum und zur angegebenen Startzeit wirksam. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
@@ -56,9 +56,9 @@ Führen Sie die folgenden Schritte aus, um die Abwesenheitseinstellung für Ihr 
 Jetzt werden Ihnen während des Abwesenheitszeitraums zugewiesene Artikel automatisch dem angegebenen Verantwortlichen zugewiesen.\
 ![Abwesenheit](assets/out-of-office.png)
 
-[!NOTE]
+>[!NOTE]
 >(Nur für formularorientierte Workflow-Elemente) Aktivieren Sie die Option **Delegieren durch den Verantwortlichen über die Abwesenheitseinstellungen** im Schritt Aufgabe **** zuweisen im Workflow zulassen. Nur Artikel, für die die oben genannte Option aktiviert ist, werden an andere Benutzer übertragen.
-> 
+
 ## Beschränkungen {#limitations}
 
 * Das Zuweisen von Elementen zu einer Gruppe wird nicht unterstützt.
