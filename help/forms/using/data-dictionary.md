@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 2b8d64082e3ba837c057ab5ee8c45ea0735ef6d0
 
 ---
 
@@ -423,8 +423,15 @@ Wenn Sie denselben Brief in unterschiedlichen Sprachen senden möchten, können 
 1. Tap **OK** in the alert. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
 1. Die ZIP-Datei enthält eine Datei des Typs „.properties“. Diese Datei definiert das heruntergeladene Datenwörterbuch. Der Inhalt dieser Datei ist ähnliche wie folgender Inhalt:
 
-   # Med May 20 16:06:23 BST 2015
-   DataDictionary.EmployeeDD.description=DataDictionary.EmployeeDD.displayName=EmployeeDataDictionaryDataDictionaryElement.name.description=DataDictionaryElement.name.displayName=nameDataDictionaryElement.person.description=DataDictionaryElement.person.displayName=person
+   ```
+   #Wed May 20 16:06:23 BST 2015
+   DataDictionary.EmployeeDD.description=
+   DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
+   DataDictionaryElement.name.description=
+   DataDictionaryElement.name.displayName=name
+   DataDictionaryElement.person.description=
+   DataDictionaryElement.person.displayName=person
+   ```
 
    In der Struktur der Eigenschaftendatei definiert jeweils eine Zeile die Beschreibung und den Anzeigenamen des Datenwörterbuchs sowie jedes Datenwörterbuchelement im Datenwörterbuch. Darüber wird in der Eigenschaftendatei in jeweils einer Zeile ein Enum-Wertesatz für jedes Datenwörterbuchelement definiert. Wie ein Datenwörterbuch kann auch die entsprechende Eigenschaftendatei über mehrere Datenwörterbuch-Elementdefinitionen verfügen. Darüber hinaus kann die Datei die Definitionen für einen oder mehrere Enum-Wertesätze enthalten.
 
