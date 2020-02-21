@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 0885fb6eb6b6a6b8fefd522b2656c8f64e0a537e
 
 ---
 
@@ -61,10 +61,9 @@ Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprach-Master hinweg 
 >
 >* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md) – insbesondere:
    >
-   >  
-* [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
->  * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-   >
-   >
-* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
+   >   
+   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
 
