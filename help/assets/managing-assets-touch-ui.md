@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Verwaltungsaufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
 
 ---
 
@@ -354,13 +354,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    ![chlimage_1-218](assets/chlimage_1-13.png)
 
-1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein. Anschließend drücken Sie die Eingabetaste. Das neue Tag wird in AEM gespeichert.
-
-   YouTube erfordert Tags zur Veröffentlichung und einen YouTube-Link (wenn ein geeigneter Link gefunden werden kann).
+1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein. Anschließend drücken Sie die Eingabetaste. Das neue Tag wird in AEM gespeichert. YouTube erfordert Tags zum Veröffentlichen. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >Zum Erstellen von Tags benötigen Sie Schreibberechtigung für `/content/cq:tags/default` das CRX-Repository.
+   >Zum Erstellen von Tags benötigen Sie Schreibberechtigung `/content/cq:tags/default` im CRX-Repository.
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
@@ -602,7 +600,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
 
-## Assets suchen {#assetsearch}
+## Suchen nach Assets {#assetsearch}
 
 Die Suche nach Assets ist ein zentraler Faktor für die Nutzung eines digitalen Asset-Managements – sowohl für eine weitere Verwendung durch kreative Elemente als auch für eine robuste Verwaltung von Assets durch die Geschäftsbenutzer und Marketingexperten oder für die Verwaltung durch DAM-Administratoren.
 
