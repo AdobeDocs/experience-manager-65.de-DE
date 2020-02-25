@@ -283,7 +283,8 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 >Der Rich-Text-Editor verwendet ein Container-DOM-Element mit einer ID von `CQrte`, die verwendet werden kann, um verschiedene Stile für die Anzeige und Bearbeitung bereitzustellen:
 >
 
-```
+>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
