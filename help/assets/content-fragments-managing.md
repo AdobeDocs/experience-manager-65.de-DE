@@ -138,12 +138,9 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >[!NOTE]
    >
    >1. Eine Meldung wird angezeigt, wenn auf einer Inhaltsseite bereits auf das Fragment verwiesen wird.
-      >
-      >
-      >
-
-   2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
-
+   >
+   >
+   >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 1. Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die drei Modi:
 

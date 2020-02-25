@@ -86,7 +86,7 @@ So kann eine Webseitenanforderung zum Beispiel wie folgt aussehen:
 
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anforderung einer Webseite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
-* # 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
+* &#x200B;# 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
 * `[GET <?>]` ist der Inhalt der Anforderung, im Beispiel einer der HTTP-Header (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:

@@ -576,8 +576,7 @@ Um die aus den JSPs kompilierten Klassen zu löschen, richten wir das Maven-Clea
 >
 >E.g. if you include `/libs/foundation/global.jsp`, you can use the following configuration for the `maven-resources-plugin` instead of the configuration above which completely skips over `/libs`.
 >
->
-```
+>```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -586,6 +585,7 @@ Um die aus den JSPs kompilierten Klassen zu löschen, richten wir das Maven-Clea
 >       </includes>  
 >   </resource>  
 >```
+>
 
 ### Arbeit mit SCM-Systemen {#how-to-work-with-scm-systems}
 

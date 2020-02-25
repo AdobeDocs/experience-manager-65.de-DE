@@ -357,27 +357,33 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
-   * eine maximalen Dateigröße
-   * einen Zeit-/Terminplan
-   um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
-   * Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   * Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
-   Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
-   So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
-       | `&#39;.&#39;
-    yyyy-MM`| Rotation zu Beginn jedes Monats|
- |—|—|     |&quot;&quot;.jjjj-ww&quot;|Drehung am ersten Wochentag (abhängig vom Gebietsschema). |
-       | `&#39;.&#39;yyyy-MM-dd`|Rotation jeden Tag um Mitternacht. |
-       | `&#39;.&#39;yyyy-MM-dd-a`|Rotation um Mitternacht und Mittag jeden Tages. |
-       | `&#39;.&#39;yyyy-MM-dd-HH&quot;|Rotation am Anfang jeder Stunde. |
-       | `&#39;.&#39;JJJJ-MM-TT-HH-mm&quot;|Drehung zu Beginn jeder Minute. 
- |    
-      
-Anmerkung: Bei Angabe einer Uhrzeit/eines Datums:       1. 
- Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;   Dadurch     soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
-       1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
-   
+   >
+   >`org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
+   >
+   >* eine maximalen Dateigröße
+   >* einen Zeit-/Terminplan
+   >
+   >um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
+   >
+   >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
+   >
+   >Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
+   >
+   >So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
+   >
+   >| `&#39;.&#39;yyyy-MM`| Rotation zu Beginn jedes Monats|
+   >|---|---|
+   >|&quot;&quot;.jjjj-ww&quot;|Drehung am ersten Wochentag (abhängig vom Gebietsschema). |
+   >| `&#39;.&#39;yyyy-MM-dd`|Rotation jeden Tag um Mitternacht. |
+   >| `&#39;.&#39;yyyy-MM-dd-a`|Rotation um Mitternacht und Mittag jeden Tages. |
+   >| `&#39;.&#39;yyyy-MM-dd-HH&quot;|Rotation am Anfang jeder Stunde. |
+   >| `&#39;.&#39;JJJJ-MM-TT-HH-mm&quot;|Drehung zu Beginn jeder Minute.  |
+   >
+   >Anmerkung: Bei Angabe einer Uhrzeit/eines Datums:
+   >1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;
+   >   Dadurch soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
+   >1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
 
 1. Lesen Sie die neue Protokolldatei mit dem von Ihnen ausgewählten Tool.
 

@@ -60,10 +60,8 @@ Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprach-Master hinweg 
 >Bei allen Nutzungsszenarien wird empfohlen, die folgenden Best Practices zu lesen:
 >
 >* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md) – insbesondere:
-   >
-   >   
-   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
-

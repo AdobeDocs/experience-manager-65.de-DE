@@ -37,11 +37,9 @@ Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners 
 >* Die in CRXDE angezeigten Namen sind Knotennamen, die den Pfad zu adressierbarem Inhalt bilden
 >* Knotennamen können Leerzeichen enthalten, bei Verwendung in einem URI muss das Leerzeichen jedoch entweder als &#39;%20&#39; oder als &#39;+&#39; kodiert werden
 >* Knotennamen können Bindestriche und Unterstriche enthalten, müssen jedoch kodiert werden, wenn sie als Paketname in einer Java-Datei referenziert werden. Sowohl Bindestriche als auch Unterstriche werden mit einem Unterstrich gefolgt von ihrem Unicode-Wert versehen:
-   >
-   >   
-   * Bindestrich wird &#39;_002d&#39;
-   >   * Unterstrich wird &#39;_005f&#39;
-
+>
+>   * Bindestrich wird &#39;_002d&#39;
+>   * Unterstrich wird &#39;_005f&#39;
 
 ## Anwendungsverzeichnis einrichten (/apps) {#setup-the-application-directory-apps}
 

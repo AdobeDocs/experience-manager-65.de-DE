@@ -36,16 +36,13 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* Der Modus ist nur in der Touch-optimierten Oberfläche (beim Bearbeiten von Seiten) verfügbar.
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
-   >
-   >    
-   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
 >
-* Für den Modus sind die entsprechenden Berechtigungen erforderlich:
-
-   * Access to Developer Mode is given to users who have write access on `/apps`.
-
-
-
+>    * Dies gilt bei einer Breite von weniger als 1024 Pixel.
+>
+>* Für den Modus sind die entsprechenden Berechtigungen erforderlich:
+>
+>    * Access to Developer Mode is given to users who have write access on `/apps`.
+>
 
 >[!CAUTION]
 >

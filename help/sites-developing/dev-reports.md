@@ -1318,11 +1318,11 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    >
    >Dies entspricht den Definitionen:
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >Dabei gibt die Funktion einfach den Wert zurück, den sie erhält.
 
 1. Definieren Sie Ihr Berichtsdesign. Beispiel `osgireport[cq:Page]` unter `/etc/designs/reports`.
@@ -1389,13 +1389,13 @@ Sie können nun eine Instanz Ihres neuen Berichts erstellen:
    >
    >Da bei diesem Beispiel keine gruppierbaren Spalten gibt, sind die Diagramme nicht verfügbar. To see charts, set `groupable` to `true`:
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Konfigurieren der Dienste für das Framework für die Berichterstellung {#configuring-the-report-framework-services}
 

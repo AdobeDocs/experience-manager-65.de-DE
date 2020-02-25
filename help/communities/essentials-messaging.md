@@ -103,16 +103,13 @@ Siehe auch [clientseitige Anpassungen](/help/communities/client-customize.md)
 >* `setInboxPath`()
 >* `setSentItemsPath`()
 >
->
 Beispiel:
 >
->
-```>
+>```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
+>
 
 ### Community-Site {#community-site}
 

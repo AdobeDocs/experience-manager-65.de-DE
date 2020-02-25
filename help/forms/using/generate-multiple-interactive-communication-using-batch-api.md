@@ -190,6 +190,7 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
           <scope>provided</scope>
        </dependency>
    ```
+
 1. Öffnen Sie das Java-Projekt, erstellen Sie eine .java-Datei, z. B. CCMBatchServlet.java. Fügen Sie der Datei „“ den folgenden Code hinzu:
 
    ```java
