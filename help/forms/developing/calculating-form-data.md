@@ -110,7 +110,7 @@ Bevor Sie einen Forms-Dienst-Client-API-Vorgang programmgesteuert durchführen k
 
 **Abrufen eines Formulars mit einem Berechnungsskript**
 
-Mit der Forms-Dienst-Client-API können Sie eine Anwendungslogik erstellen, die ein Formular verarbeitet, das ein Skript enthält, das für die Ausführung auf dem Server konfiguriert wurde. Der Prozess ähnelt der Bearbeitung eines gesendeten Formulars. (Siehe [Verarbeiten von gesendeten Formularen](/help/forms/develop/rendering-forms-render-handling-mitted-forms-handling-mitted.md#handling-mitted-forms).)
+Mit der Forms-Dienst-Client-API können Sie eine Anwendungslogik erstellen, die ein Formular verarbeitet, das ein Skript enthält, das für die Ausführung auf dem Server konfiguriert wurde. Der Prozess ähnelt der Bearbeitung eines gesendeten Formulars. (Siehe [Verarbeiten von gesendeten Formularen](/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms).)
 
 Vergewissern Sie sich, dass der mit dem gesendeten Formular verknüpfte Verarbeitungsstatus `1` `(Calculate)`ist. Das bedeutet, dass der Forms-Dienst eine Berechnung der Formulardaten durchführt und die Ergebnisse an den Benutzer zurückgeschrieben werden müssen. In diesem Fall wird automatisch ein Skript ausgeführt, das für die Ausführung auf dem Server konfiguriert ist.
 
