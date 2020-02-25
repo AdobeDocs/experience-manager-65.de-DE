@@ -138,7 +138,7 @@ Wiedergabe eines Formulars nach Wert mithilfe der Forms API (Java):
 
 **Siehe auch**
 
-[Wiedergabe von Formularen nach Wert](/help/forms/develop/rendering-forms-rendering-forms-forms-value-rendering-forms.md#rendering-forms-by-value)
+[Wiedergabe von Formularen nach Wert](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
 
 [Kurzanleitung (SOAP-Modus): Rendern nach Wert mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
