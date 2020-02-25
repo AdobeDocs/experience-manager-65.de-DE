@@ -80,7 +80,7 @@ Wenn ein Benutzer auf das Lesezeichen *Öffnen der Kreditdetails* klickt, wird d
 
 >[!NOTE]
 >
->Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit dem Zusammenstellen von PDF-Dokumenten mit dem Assembler-Dienst vertraut machen. In diesem Abschnitt werden keine Konzepte beschrieben, wie z. B. das Erstellen eines Collection-Objekts, das Eingabedokumente enthält, oder das Extrahieren der Ergebnisse aus dem zurückgegebenen Collection-Objekt. (Siehe [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/develop/programmatically-assembling-pdf-documents-programmatically-assembling-pdf-documents-programmatically.md#programmatically-assembling-pdf-documents).)
+>Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit dem Zusammenstellen von PDF-Dokumenten mit dem Assembler-Dienst vertraut machen. In diesem Abschnitt werden keine Konzepte beschrieben, wie z. B. das Erstellen eines Collection-Objekts, das Eingabedokumente enthält, oder das Extrahieren der Ergebnisse aus dem zurückgegebenen Collection-Objekt. (Siehe [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
