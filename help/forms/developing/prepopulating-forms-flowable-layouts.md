@@ -209,7 +209,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen einer speicherinternen XML-Datenquelle**
 
-Mithilfe von `org.w3c.dom` Klassen können Sie eine XML-Datenquelle im Arbeitsspeicher erstellen, um ein Formular mit einem flexiblen Layout im Voraus zu füllen. Sie müssen Daten in eine XML-Datenquelle einfügen, die dem Formular entspricht. Informationen zur Beziehung zwischen einem Formular mit einem flexiblen Layout und der XML-Datenquelle finden Sie unter [Grundlegendes zu Datenuntergruppen](/help/forms/develop/rendering-forms-rendering-forms-prepopating-forms-flexiblen-layouts-prepopating-forms-flexiblen-layouts-prepopings.md#understand-data-subgroups).
+Mithilfe von `org.w3c.dom` Klassen können Sie eine XML-Datenquelle im Arbeitsspeicher erstellen, um ein Formular mit einem flexiblen Layout im Voraus zu füllen. Sie müssen Daten in eine XML-Datenquelle einfügen, die dem Formular entspricht. Informationen zur Beziehung zwischen einem Formular mit einem flexiblen Layout und der XML-Datenquelle finden Sie unter [Grundlegendes zu Datenuntergruppen](/help/forms/developing/prepopulating-forms-flowable-layouts.md#understanding-data-subgroups).
 
 **XML-Datenquelle konvertieren**
 
