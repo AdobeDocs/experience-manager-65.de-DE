@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a107f3d3f10e2f5b5aed7722aee467a838f9d13d
+source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
 
 ---
 
@@ -27,9 +27,9 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Bereitstellung.
 * Bei Bereitstellungstypen von Adobe Experience Manager ist eines der unterstützten Kriterien erfüllt. AEM 6.5 Assets funktioniert mit AEM als Cloud-Dienst. Weitere Informationen finden Sie unter [Funktionen für verbundene Assets in AEM als Cloud-Dienst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | AEM-Sites als Cloud-Dienst | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
+   |  | AEM Sites als Cloud Service | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
    |---|---|---|---|
-   | **AEM Assets als Cloud-Dienst** | Unterstützt | Unterstützt | Unterstützt |
+   | **AEM Assets als Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets auf AMS** | Nicht unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets lokal** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
@@ -171,7 +171,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Alle Sites-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Bereitstellung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](assets-migration-guide.md).
-* Es ist nicht möglich, ein Remote-Asset als Miniaturansicht für eine Webseite auf der Registerkarte [!UICONTROL Miniaturansicht] in den [!UICONTROL Seiteneigenschaften] zu verwenden, indem Sie auf Bild [!UICONTROL auswählen]klicken.
+* Es ist nicht möglich, ein Remote-Asset als Seitenminiaturansicht in der Benutzeroberfläche der [!UICONTROL Seiteneigenschaften] zu verwenden. Sie können eine Miniaturansicht einer Webseite in der Benutzeroberfläche &quot; [!UICONTROL Seiteneigenschaften] &quot;in der [!UICONTROL Miniaturansicht] festlegen, indem Sie auf Bild [!UICONTROL auswählen]klicken.
 
 **Einrichten und Lizenzieren**
 
