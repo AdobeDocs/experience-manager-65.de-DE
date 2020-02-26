@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -58,7 +58,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
  <tbody>
   <tr>
    <th><strong>Schritt</strong></th>
-   <th><strong>Konfigurieren Sie Folgendes</strong></th>
+   <th><strong>Konfigurieren</strong></th>
    <th><strong>Hinweise</strong></th>
   </tr>
   <tr>
@@ -220,8 +220,8 @@ To learn more about how to use packages and package share, see [How to Work With
 
 Nachdem Sie die Pakete installiert und den Autoren- und Veröffentlichungsmodus begonnen haben, besuchen Sie die folgenden URLs in Ihrem Browser:
 
-* https://[server]:[port]/wegov
-* https://[server]:[port]/wefinance
+* `https://[server]:[port]/wegov`
+* `https://[server]:[port]/wefinance`
 
 Wenn die Installation erfolgreich abläuft, können Sie auf die Startseiten der Referenz-Sites und We.Finance zugreifen.
 
@@ -231,12 +231,12 @@ Die Referenzseiten für die Hypothekenanwendung und die Anwendung für die autom
 
 So importieren Sie die benutzerdefinierte Entität für die Anwendung für die automatische Versicherung:
 
-1. Download the **WeFinanceAutoInsurance_1_0.zip** solution package from https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip on your AEM author instance.
+1. Download the **WeFinanceAutoInsurance_1_0.zip** solution package from `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` on your AEM author instance.
 1. In your Microsoft Dynamics instance, go to **Settings > Solutions** and click **Import**. Wählen Sie das Paket aus und importieren Sie es.
 
 So importieren Sie die benutzerdefinierte Entität für die Anwendung für die automatische Versicherung:
 
-1. Laden Sie das **AEMFormsFSIRefsite_1_0.zip** -Paket von https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip herunter. Wählen Sie das Paket aus und importieren Sie es.
+1. Laden Sie das **AEMFormsFSIRefsite_1_0.zip** -Paket herunter `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Wählen Sie das Paket aus und importieren Sie es.
 
 1. In your Microsoft Dynamics instance, go to **Settings > Solutions** and click **Import**. Wählen Sie das Paket aus und importieren Sie es.
 
@@ -244,9 +244,9 @@ Importieren der Kunden- und Versicherungspolice-Datensätze:
 
 1. Download the **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, and **home mortgage** data files from the following locations on your AEM author instance:
 
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv
-   * https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Führen Sie in Ihrer Microsoft Dynamics-Instanz die folgenden Schritte aus:
 
@@ -273,7 +273,7 @@ Konfigurieren Sie den OAuth-Cloud-Dienst in AEM Forms, um die Kommunikation zwis
 
 Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Veröffentlichungsinstanz aus:
 
-1. Go to AEM Web Configuration console at https://[server]:[host]/system/console/configMgr.
+1. Go to AEM Web Configuration console at `https://[server]:[host]/system/console/configMgr`.
 1. Find and tap **[!UICONTROL Adobe Sign Configuration Service]** to open it for configuration.
 1. Konfigurieren Sie **[!UICONTROL Status Update Scheduler Expression]** als **0 0/2 * * * ?**.
 
