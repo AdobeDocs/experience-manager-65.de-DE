@@ -3,7 +3,7 @@ title: Verwalten mehrerer Assets und Sammlungen
 description: Erfahren Sie, wie Sie die Metadaten mehrerer Assets und Sammlungen simultan bearbeiten können, um schnell häufige Metadaten-Änderungen zu übertragen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
 
 ---
 
@@ -44,31 +44,11 @@ Verwenden Sie den Schemaeditor, um die Seite mit den Metadateneigenschaften, ein
 
 1. Wenn Sie ein anderes Metadatenschema für die Assets wählen möchten, tippen oder klicken Sie auf das Symbol **[!UICONTROL Einstellungen]** in der Symbolleiste und wählen Sie das gewünschte Schema aus.
 1. Speichern Sie die Änderungen.
-1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den Feldern. Tap/click **[!UICONTROL Submit]**.
+1. Um die neuen Metadaten mit den vorhandenen Metadaten für Felder anzuhängen, die mehrere Werte enthalten, wählen Sie **[!UICONTROL Beifügemodus]** aus. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen/Klicken Sie auf **[!UICONTROL Senden]**.
 
    >[!CAUTION]
    >
-   >Bei Feldern, die nur einen einzigen Wert enthalten, werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Anlagenmodus]** auswählen.
-
-## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
-
-1. Wählen Sie in der Konsole „Sammlungen“ die Sammlungen aus, die Sie bearbeiten möchten.
-1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the properties page for the selected collections.
-1. Ändern Sie die Metadateneigenschaften für ausgewählte Sammlungen auf den verschiedenen Registerkarten.
-
-   >[!NOTE]
-   >
-   >Die Metadaten, die Sie für die ausgewählten Sammlungen hinzufügen, überschreiben die vorherigen Metadaten für diese Sammlungen, außer für Tags. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
-
-1. Heben Sie die Auswahl der anderen Sammlungen in der Sammlungsliste auf, um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
-
-   >[!NOTE]
-   >
-   >* Auf der Sammlungseigenschaftenseite können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie die Auswahl aufheben. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Die Metadaten für Sammlungen, die Sie entfernen, werden nicht aktualisiert.
-   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
-
-
-1. Speichern Sie die Änderungen.
+   >Bei Feldern mit nur einem einzigen Wert werden die neuen Metadaten nicht an den vorhandenen Wert im Feld angehängt, selbst wenn Sie **[!UICONTROL Beifügemodus]** auswählen.
 
 ## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#configlimit}
 
@@ -76,4 +56,9 @@ Um DOS-ähnliche Situationen zu vermeiden, beschränkt AEM die Anzahl der Parame
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Um den Grenzwert zu ändern, greifen Sie auf die Web-Konsole (**[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**) zu und ändern Sie den Wert für **[!UICONTROL maximale POST-Parameter]** unter **[!UICONTROL Apache Sling Request Parameter Handling]** der OSGi-Konfiguration.
+Um den Grenzwert zu ändern, greifen Sie auf die Web Console zu (**[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**) und ändern Sie den Wert der **[!UICONTROL Max. POST-Parameter]** in der OSGi-Konfiguration für das **[!UICONTROL Parameter-Handling von Apache Sling-Anfragen]**.
+
+>[!MORELIKETHIS]
+>
+>* [Metadateneigenschaften mehrerer Sammlungen bearbeiten](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
