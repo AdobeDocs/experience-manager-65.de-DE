@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
+source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
 
 ---
 
@@ -42,7 +42,7 @@ Machen Sie sich mit der Suchschnittstelle und den verfügbaren Aktionen vertraut
 
 *Abbildung: Die Oberfläche für die Suchergebnisse von Assets*
 
-**** A. Speichern Sie die Suche als intelligente Sammlung. **** B. Filter (Prädikate) zur Eingrenzung der Suchergebnisse. **C.** Anzeigen von Dateien, Ordnern oder beidem in den Suchergebnissen. **** D. Klicken Sie auf Filter, um die linke Leiste zu öffnen oder zu schließen. **** E. Die Suchposition ist DAM. **** F. Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **** G. Markieren Sie das Kontrollkästchen, um alle Suchergebnisse auszuwählen. **** H. Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. ******I. Schließen Sie die Suche** J. Wechseln Sie zwischen Karten- und Listenansicht.
+**A.** Speichern Sie die Suche als Smart-Sammlung. **B.** Filter (Eigenschaften) zur Eingrenzung der Suchergebnisse. **C.** Zeigen Sie Dateien, Ordner oder beides in den Suchergebnissen an. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. ************ F. Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G. Markieren Sie das Kontrollkästchen, um alle Suchergebnisse auszuwählen.** H. Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **Ich. Schließen Sie die Suche** J. Wechseln Sie zwischen Karten- und Listenansicht.
 
 ### Facets der dynamischen Suche {#dynamicfacets}
 
@@ -113,7 +113,7 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 Sie können die Relevanz von Suchbegriffen für bestimmte Assets verbessern, um die auf Suchbegriffen basierenden Suchen zu optimieren. D. h. die Bilder, für die Sie bestimmte Suchbegriffe festlegen, erscheinen bei der Suche nach diesen Suchbegriffen oben in den Suchergebnissen.
 
-1. Öffnen Sie in der Benutzeroberfläche &quot;Assets&quot;die Seite &quot;Eigenschaften&quot;für das Asset. Klicken Sie auf **[!UICONTROL Erweitert]** und dann auf **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Erhöhen für Suchbegriffe]**.
+1. Öffnen Sie in der Benutzeroberfläche „Assets“ die Seite „Eigenschaften“ für das Asset. Klicken Sie auf **[!UICONTROL Erweitert]** und dann auf **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Erhöhen für Suchbegriffe]**.
 1. Geben Sie im Feld **[!UICONTROL Suche priorisieren]** einen Suchbegriff ein, für den Sie die Bildsuche optimieren möchten, und klicken oder tippen Sie anschließend auf **[!UICONTROL Hinzufügen]**. Sie können mehrere Suchbegriffe auf dieselbe Weise angeben.
 1. Klicken/tippen Sie auf **[!UICONTROL Speichern und schließen]**. Das Asset, das Sie für diesen Suchbegriff beworben haben, wird unter den Top-Suchergebnissen angezeigt.
 
@@ -138,7 +138,7 @@ AEM bietet verschiedene Methoden wie Filter, die für die gesuchten Assets gelte
 
 ### Ähnliche Bilder suchen {#visualsearch}
 
-Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild visuell ähnlich sind, klicken Sie in der Kartenansicht eines Bildes oder in der Symbolleiste auf &quot;Ähnliches **[!UICONTROL suchen]** &quot;. AEM zeigt die mit Smart-Tags versehenen Bilder aus dem DAM-Repository an, die einem vom Benutzer ausgewählten Bild ähnlich sind. Siehe [Konfigurieren der Ähnlichkeitssuche](#configvisualsearch).
+Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild ähneln, klicken Sie in der Kartenansicht eines Bildes oder in der Symbolleiste auf **[!UICONTROL Ähnliche suchen]**. AEM zeigt die Bilder mit Smart-Tags aus dem DAM-Repository an, die einem vom Benutzer ausgewählten Bild ähnlich sind. Siehe [Konfigurieren der Ähnlichkeitssuche](#configvisualsearch).
 
 ![Ähnliche Bilder mit der Option in der Kartenansicht suchen](assets/search_find_similar.png)
 
@@ -151,7 +151,7 @@ From within the AEM user interface, users can search [Adobe Stock assets](/help/
 
 ### Dynamische Medien {#dmassets}
 
-Sie können nach Bildern mit dynamischen Medien filtern, indem Sie im Bedienfeld &quot; **[!UICONTROL Dynamische Medien&quot;> &quot;Sets]** &quot; **[!UICONTROL Filter]** auswählen. Es filtert und zeigt Assets wie Bildsätze, Karussells, gemischte Mediensets und Rotationssets an.
+Sie können nach Bildern mit dynamischen Medien filtern, indem Sie im Bedienfeld **[!UICONTROL Filter]** auf **[!UICONTROL Dynamische Medien > Sets]** klicken. Durch diesen Filtervorgang werden Assets wie Bildsets, Karusselle, gemischte Mediensets und Rotationssets angezeigt.
 
 ### Suchen mit bestimmten Werten in Metadatenfeldern {#gqlsearch}
 
@@ -217,7 +217,7 @@ Benutzer können aus der AEM-Benutzeroberfläche heraus Adobe Stock-Assets suche
 
 ### Dynamische Medienelemente durchsuchen {#dynamicmedia}
 
-Sie können nach Bildern mit dynamischen Medien filtern, indem Sie im Bedienfeld &quot; **[!UICONTROL Filter]** &quot;auf &quot; **[!UICONTROL Dynamische Medien]** &quot;> &quot; **[!UICONTROL Sets]** &quot;klicken. Es filtert und zeigt Assets wie Bildsätze, Karussells, gemischte Mediensets und Rotationssets an. Beim Erstellen von Webseiten können die Autoren in der Inhaltssuche nach Sets suchen. Ein Filter für Sätze ist in einem Popupmenü verfügbar.
+Sie können nach Bildern mit dynamischen Medien filtern, indem Sie im Bedienfeld **[!UICONTROL Filter]** auf **[!UICONTROL Dynamische Medien]** > **[!UICONTROL Sets]** klicken. Durch diesen Filtervorgang werden Assets wie Bildsets, Karusselle, gemischte Mediensets und Rotationssets angezeigt. Beim Erstellen von Webseiten können Autoren im Content Finder nach Sets suchen. Ein Filter für Sets ist in einem Pop-up-Menü verfügbar.
 
 ### Suchen von Assets in der Inhaltssuche beim Erstellen von Webseiten {#contentfinder}
 
@@ -408,7 +408,7 @@ Nachdem Sie einige gesuchte Assets sehen, die Ihren Kriterien entsprechen, könn
 
 ### Sortieren der gesuchten Ergebnisse {#sort}
 
-Die Sortierung der Suchergebnisse hilft Ihnen, die erforderlichen Assets schneller zu ermitteln. Die Sortierung der Suchergebnisse funktioniert in der Listenansicht und nur, wenn Sie im Bedienfeld &quot; **[!UICONTROL [Dateien](#searchui)]**&quot;**[!UICONTROL  Filter ]**auswählen. AEM Assets verwendet eine serverseitige Sortierung, um alle Assets (wie viele auch immer) innerhalb eines Ordners oder der Ergebnisse einer Suchabfrage schnell zu sortieren. Die serverseitige Sortierung liefert schnellere und genauere Ergebnisse als die clientseitige Sortierung.
+Die Sortierung der Suchergebnisse hilft Ihnen dabei, die erforderlichen Assets schneller zu ermitteln. Die Sortierung der Suchergebnisse funktioniert in der Listenansicht und nur, wenn Sie im Bedienfeld **[!UICONTROL [Dateien](#searchui)]****[!UICONTROL  Filter ]**auswählen. AEM Assets verwendet eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) innerhalb eines Ordners oder der Ergebnisse einer Suchabfrage schnell zu sortieren. Die serverseitige Sortierung bietet schnellere und genauere Ergebnisse als die Client-seitige Sortierung.
 
 In der Listenansicht können Sie die Suchergebnisse genau so sortieren, wie Sie Assets in einem beliebigen Ordner sortieren können. Die Sortierung funktioniert mit diesen Spalten: Name, Titel, Status, Dimensionen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) Veröffentlicht, Workflow und Checked-out.
 
@@ -420,7 +420,7 @@ Sie können detaillierte Informationen zu gesuchten Assets auf der Suchergebniss
 
 Um alle Metadaten eines Assets anzuzeigen, wählen Sie das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** .
 
-Um die Kommentare zu einem Asset oder zum Versionsverlauf eines Assets zu überprüfen, klicken Sie auf das Asset, um eine Vorschau mit großer Größe zu öffnen. Öffnen Sie die Zeitleiste in der linken Leiste und wählen Sie **[!UICONTROL Kommentare]** oder **[!UICONTROL Versionen]**. Sie können auch die Zeitschienenaktivität wie Kommentare oder Versionen in chronologischer Reihenfolge sortieren.
+Um die Kommentare zu einem Asset oder zum Versionsverlauf eines Assets zu überprüfen, klicken Sie auf das Asset, um eine Vorschau mit großer Größe zu öffnen. Öffnen Sie die Timeline in der linken Leiste und wählen Sie **[!UICONTROL Kommentare]** oder **[!UICONTROL Versionen]**. Sie können die Timeline-Aktivität auch wie Kommentare oder Versionen in chronologischer Reihenfolge anordnen.
 
 ![Sortieren von Zeitleisteneinträgen für ein Suchelement](assets/sort_timeline_search_results.gif)
 
@@ -435,7 +435,7 @@ Sie können die gesuchten Assets und deren Darstellungen herunterladen, während
 
 Es ist möglich, Massenaktualisierungen der allgemeinen Metadatenfelder mehrerer Assets vorzunehmen. Wählen Sie aus den Suchergebnissen ein oder mehrere Assets aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** und aktualisieren Sie die Metadaten nach Bedarf. Klicken Sie abschließend auf **[!UICONTROL Speichern und schließen]** . Die zuvor vorhandenen Metadaten in den aktualisierten Feldern werden überschrieben.
 
-Bei Assets, die in einem einzelnen Ordner oder einer Sammlung verfügbar sind, ist es einfacher, die Metadaten stapelweise zu [aktualisieren](/help/assets/managing-multiple-assets.md). Bei Assets, die über mehrere Ordner hinweg verfügbar sind oder die einem allgemeinen Kriterium entsprechen, ist es schneller, die Metadaten per Massen-Aktualisierung zu aktualisieren.
+Bei Assets, die in einem einzelnen Ordner oder einer Sammlung verfügbar sind, ist es einfacher, die Metadaten stapelweise[ zu ](/help/assets/managing-multiple-assets.md)aktualisieren, ohne die Suchfunktion zu verwenden. Bei Assets, die über mehrere Ordner hinweg verfügbar sind oder die einem allgemeinen Kriterium entsprechen, ist es schneller, die Metadaten per Massen-Aktualisierung zu aktualisieren.
 
 ### Intelligente Sammlungen {#collections-1}
 
@@ -444,7 +444,7 @@ Eine Sammlung ist ein geordneter Satz von Assets, die Assets von verschiedenen S
 * Eine statische Referenzliste mit Assets, Ordnern und anderen Sammlungen.
 * Eine dynamische Liste (intelligente Sammlung), die Assets in der Sammlung basierend auf Suchkriterien füllt.
 
-Sie können intelligente Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im **[!UICONTROL Filterbedienfeld]** die Option &quot; **[!UICONTROL Dateien]** &quot;und klicken Sie auf &quot;Intelligente Sammlung **[!UICONTROL speichern&quot;]**. Siehe [Verwalten von Sammlungen](/help/assets/managing-collections-touch-ui.md).
+Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/managing-collections-touch-ui.md).
 
 ## Fehlerbehebung bei unerwarteten Suchergebnissen und Problemen {#troubleshoot-unexpected-search-results-and-issues}
 
