@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -70,7 +70,7 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
       * **Datenquellenname:** Sie können einen beliebigen Namen angeben, beispielsweise **WeRetailMySQL**.
       * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Er wird beim Registrieren der Datenquelleninstanz als OSGi-Dienst angegeben. Zum Beispiel: **datasource.name**.
       * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. For MySQL database, specify **com.mysql.jdbc.Driver**.
-      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. For MySQL database running on port 3306 and schema weretail, the URL is: jdbc:mysql://[server]:3306/weretail?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8
+      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **** Test auf Borge: Aktivieren Sie die Option **Test on Borrow** .
