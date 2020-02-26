@@ -346,7 +346,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
    >
    >The layout of the [!UICONTROL Properties] page and the metadata properties available depend on the underlying metadata schema. To learn how to modify the layout of the [!UICONTROL Properties] page, see [Metadata Schemas](/help/assets/metadata-schemas.md).
 
-1. Um ein bestimmtes Datum/eine Zeit für die Aktivierung der Assets einzustellen, verwenden Sie die Datumsauswahl neben dem Feld **[!UICONTROL Startzeit]**.
+1. Um ein bestimmtes Datum/eine bestimmte Uhrzeit für die Aktivierung des Assets zu planen, verwenden Sie die Datumsauswahl neben dem Feld **[!UICONTROL Zeit]**.
 
    ![chlimage_1-217](assets/chlimage_1-12.png)
 
@@ -360,7 +360,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
    >
    >Zum Erstellen von Tags benötigen Sie Schreibberechtigung `/content/cq:tags/default` im CRX-Repository.
 
-1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
+1. Um eine Bewertung für das Asset bereitzustellen, tippen/klicken Sie auf die Registerkarte **[!UICONTROL Erweitert]** und tippen/klicken Sie dann auf den Stern an der entsprechenden Position, um die gewünschte Bewertung zuzuweisen.
 
    ![Bewertungen](assets/ratings.png)
 
@@ -477,17 +477,17 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    **Eine neue Darstellung hochladen**
 
-   Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
+   Navigieren Sie zur Seite mit den Asset-Details und tippen/klicken Sie auf das Symbol **[!UICONTROL Ausgabedarstellung hinzufügen]** in der Symbolleiste, um eine neue Ausgabedarstellung für das Asset hochzuladen.
 
    ![chlimage_1-221](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Optionen wie das Symbol „Ausgabeformat hochladen“ werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
+   >Wenn Sie eine Ausgabedarstellung aus dem Bedienfeld **[!UICONTROL Ausgabedarstellungen]** auswählen, ändert sich der Kontext in der Symbolleiste und zeigt nur die Aktionen an, die für die Ausgabedarstellung relevant sind. Optionen wie das Symbol „Ausgabedarstellung hochladen“ werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
 
    Sie können die Dimensionen für das anzuzeigende Ausgabeformat auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. AEM Assets zeigt anhand der von Ihnen angegebenen Abmessungen das Ausgabeformat mit den genauen oder möglichst genauen Abmessungen an.
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um das Wiedergabeformat auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft `preferOriginal` der Originalgröße den Vorzug, wenn das angepasste Wiedergabeformat größer ist als das Original.
+   Um die Ausgabedarstellungsdimensionen eines Bildes auf der Stufe der Asset-Details zu konfigurieren, überlagern Sie den `renditionpicker`-Knoten (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) und konfigurieren Sie den Wert der Eigenschaft „width“. Konfigurieren Sie die Eigenschaft **[!UICONTROL Größe (lang) in KB]** anstelle der Breite, um die Ausgabedarstellung auf der Seite mit den Asset-Details basierend auf der Bildgröße anzupassen. Bei der größenbasierten Anpassung weist die Eigenschaft `preferOriginal` dem Original die Voreinstellung zu, wenn die Größe der übereinstimmenden Ausgabedarstellung größer als das Original ist.
 
    Ebenso können Sie das Bild der Anmerkungsseite durch Überlagern anpassen `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -540,7 +540,7 @@ Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.m
 
 1. Navigieren Sie zum Speicherort des bzw. der Assets/Ordner, das/die/den Sie veröffentlichen möchten.
 
-1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
+1. Wählen Sie entweder per Schnellzugriff **[!UICONTROL Veröffentlichen]** auf der Asset-Karte aus oder wählen Sie das Asset aus und tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Schnell veröffentlichen]**.
 1. Wenn das Asset andere Assets referenziert, werden die Verweise im Assistenten aufgelistet. Es werden nur Verweise angezeigt, die entweder unveröffentlicht sind oder seit der letzten Veröffentlichung/Aufhebung der Veröffentlichung geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
    ![chlimage_1-225](assets/chlimage_1-21.png)
@@ -650,7 +650,7 @@ Mit den Bearbeitungswerkzeugen in der Oberfläche von AEM Assets können Sie kl
 
    ![chlimage_1-226](assets/chlimage_1-22.png)
 
-1. Wählen Sie die gewünschte Option in der Liste aus. Der Zuschneidebereich wird basierend auf der gewählten Option auf dem Bild angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen im Hinblick auf das Seitenverhältnis beschneiden.
+1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
 
    ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
 
@@ -659,7 +659,7 @@ Mit den Bearbeitungswerkzeugen in der Oberfläche von AEM Assets können Sie kl
 
    ![chlimage_1-228](assets/chlimage_1-24.png)
 
-1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
+1. Verwenden Sie die Symbole **Rückgängig** und **Wiederholen** oben rechts, um zum nicht zugeschnittenen Bild zurückzukehren oder das nicht geschnittene Bild beizubehalten.
 
    ![chlimage_1-229](assets/chlimage_1-25.png)
 
@@ -716,7 +716,7 @@ Videoanmerkungen werden nur für Browser mit HTML5-kompatiblen Videoformaten unt
    * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben     oder zur Asset-Seite navigiert sind
    ![chlimage_1-233](assets/chlimage_1-29.png)
 
-1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
+1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Alternativ können Sie einen Bildbereich markieren und eine Anmerkung im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** hinzufügen.
 
    ![chlimage_1-234](assets/chlimage_1-30.png)
 
@@ -747,7 +747,7 @@ Videoanmerkungen werden nur für Browser mit HTML5-kompatiblen Videoformaten unt
 
    ![Wählen Sie das Symbol &quot;Benutzerprofil&quot;und dann &quot;Meine Voreinstellungen&quot;, um die Benutzereinstellungen zu öffnen](assets/User-profile-preferences.png)
 
-   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
+   Geben Sie die gewünschte Farbe im Feld **[!UICONTROL Anmerkungsfarbe]** an und klicken Sie dann auf **[!UICONTROL Akzeptieren]**.
 
    ![Wählen Sie in den Benutzereinstellungen die Farbe der Anmerkung aus, um die Farbe der Benutzerrolle festzulegen](assets/Annotation-color.png)
 
@@ -763,7 +763,7 @@ Videoanmerkungen werden nur für Browser mit HTML5-kompatiblen Videoformaten unt
 
    ![chlimage_1-239](assets/chlimage_1-35.png)
 
-1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
+1. Wählen Sie in der Timeline in der Liste **[!UICONTROL Alle anzeigen]** die Option **[!UICONTROL Kommentare]**, um die Ergebnisse auf der Grundlage von Anmerkungen zu filtern.
 
    ![chlimage_1-240](assets/chlimage_1-36.png)
 
@@ -803,13 +803,13 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
    ![Position der Anmerkung/des Überprüfungsstatus auswählen, der im Dialogfeld &quot;Drucken&quot;in PDF angezeigt werden soll](assets/Print-annotation-dialog.png)
 
-   Sie können auch andere Einstellungen wählen, was von der von Ihnen gewünschten Position der Anmerkungen oder des Status in der gedruckten PDF-Datei abhängig ist. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
+   Sie können je nach Position, an der Anmerkungen/Status in der gedruckten PDF-Datei angezeigt werden sollen, andere Einstellungen auswählen. Wenn Anmerkungen/Status auf einer Seite angezeigt werden sollen, die vom gedruckten Asset getrennt ist, wählen Sie **[!UICONTROL Nächste Seite]**.
 
    >[!NOTE]
    >
    >Längere Anmerkungen werden in der PDF-Datei möglicherweise nicht richtig gerendert. Für optimales Rendering wird empfohlen, Anmerkungen auf 50 Wörter zu begrenzen.
 
-1. Tap/click **[!UICONTROL Print]**. Je nach der Option, die Sie in Schritt 2 wählen, zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
+1. Tippen/Klicken Sie auf **[!UICONTROL Drucken]**. Basierend auf der in Schritt 2 gewählten Option zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. Wenn Sie z. B. mit der Einstellung **Oben links** sowohl Anmerkungen als auch Prüfungsstatus drucken möchten, entspricht die generierte Ausgabe der hier dargestellten PDF-Datei.
 
    ![chlimage_1-246](assets/chlimage_1-42.png)
 
@@ -891,7 +891,7 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
    ![chlimage_1-251](assets/chlimage_1-47.png)
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. Alle für ein Asset erstellten Versionen werden unter der Timeline-Registerkarte angezeigt. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+1. Um die neue Version anzuzeigen, öffnen Sie auf der Seite mit den Asset-Details oder in der Benutzeroberfläche „Assets“ die Liste **[!UICONTROL Alle anzeigen]** und wählen Sie **[!UICONTROL Versionen]** aus. Alle für ein Asset erstellten Versionen werden auf der Registerkarte „Timeline“ aufgeführt. Sie können die Liste filtern, um Versionen anzuzeigen, indem Sie auf den Pfeil klicken und in der Liste **[!UICONTROL Versionen]** auswählen.
 
    ![versions_option](assets/versions_option.png)
 
@@ -907,7 +907,7 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
+1. Um eine Vorschau für die Version zu generieren, tippen/klicken Sie auf **[!UICONTROL Versionsvorschau anzeigen]**.
 1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
 1. Um zwei Versionen miteinander zu vergleichen, gehen Sie zur Asset-Seite des Assets und tippen oder klicken Sie auf die Version, die mit der aktuellen Version verglichen werden soll.
 
@@ -940,7 +940,7 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
    ![chlimage_1-255](assets/chlimage_1-51.png)
 
-1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Jeder Schritt des Workflows wird in der Timeline als ein Ereignis angezeigt.
+1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Jeder Schritt des Workflows wird in der Timeline als Ereignis angezeigt.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
