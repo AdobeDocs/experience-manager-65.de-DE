@@ -3,12 +3,12 @@ title: Digital Rights Management in Assets
 description: Erfahren Sie, wie Sie den Assetablaufstatus und Informationen für lizenzierte Assets in AEM verwalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# Digital Rights Management für digitale Assets {#digital-rights-management-in-assets}
+# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
 
 Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen und die Nutzungsdauer festgelegt sind. Da Adobe Experience Manager (AEM) Assets vollständig in die AEM-Plattform integriert sind, können Sie Asset-Ablaufinformationen und Asset-Status effizient verwalten. Sie können Lizenzinformationen mit Assets verknüpfen.
 
@@ -18,11 +18,15 @@ Der Asset-Ablauf ist eine effektive Möglichkeit zum Durchsetzen von Lizenzanfor
 
 Sie können den Ablaufstatus für ein Asset in der Assets-Konsole sowohl in der Karten- als auch in der Listenansicht anzeigen.
 
-![expired_flag_card](assets/expired_flag_card.png)<br> *Abbildung: In der Kartenansicht zeigt ein Flag auf der Karte das abgelaufene Asset an.*
+![expired_flag_card](assets/expired_flag_card.png)
+
+*Abbildung: In der Kartenansicht zeigt ein Flag auf der Karte das abgelaufene Asset an.*
 
 **Listenansicht**
 
-![expired_flag_list](assets/expired_flag_list.png)*Abbildung: In der Listenansicht wird in der Spalte **[!UICONTROL Status]**das Banner **[!UICONTROL Abgelaufen]**angezeigt.*
+![expired_flag_list](assets/expired_flag_list.png)
+
+*Abbildung: In der Listenansicht wird in der Spalte[!UICONTROL Status]das Banner[!UICONTROL Abgelaufen]angezeigt.*
 
 Sie können den Ablaufstatus eines Assets in der Timeline einsehen. Wählen Sie das Asset und danach im GlobalNav-Menü die Option „Timeline“ aus.
 
@@ -59,7 +63,7 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Un
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Klicken/tippen Sie auf die Option **[!UICONTROL Gültigkeitsstatus]**, um sie zu erweitern.
+1. Klicken Sie auf die Option **[!UICONTROL Ablaufstatus]**, um sie zu erweitern.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -73,14 +77,14 @@ Wenn Sie das Ablaufdatum eines veröffentlichten Assets in ein Datum ändern, da
 
 Wenn eine Störung oder ein Fehler verhindert, dass der Planer abgelaufene Assets im aktuellen Zyklus erkennt, untersucht der Planer diese Assets im nächsten Zyklus erneut und erkennt dann, dass sie abgelaufen sind.
 
-To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in AEM Configuration Manager.
+Damit die Assets-Konsole die verknüpften Assets zusammen mit den abgelaufenen Teil-Assets anzeigen kann, konfigurieren Sie in AEM Configuration Manager einen Workflow für die **Benachrichtigung zum Ablauf von Adobe CQ-DAM**.
 
 1. Öffnen Sie AEM Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Unter-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
-1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. Beispiel: Der Beispielausdruck &quot;0 0 0 &amp;ast; &amp;ast; ?&#39; löst den Auftrag um 00:00 Uhr aus.
+1. Um den Auftrag regelmäßig auszuführen, löschen Sie das Feld **[!UICONTROL Zeitbasierte Planungsregel]** und ändern Sie die Zeit im Feld **[!UICONTROL Periodische Planung]** in Sekunden. Beispiel: Der Beispielausdruck „0 0 0 &amp;ast; &amp;ast; ?“ löst den Auftrag um 00 Uhr aus.
 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
@@ -134,15 +138,15 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
 1. Drücken Sie die Eingabetaste und tippen Sie dann auf **[!UICONTROL GlobalNav]** , um das Suchfeld anzuzeigen.
-1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
+1. Tippen/Klicken Sie im Suchbedienfeld auf **[!UICONTROL Veröffentlichungsstatus]** und wählen Sie **[!UICONTROL Veröffentlicht]**, um in AEM Assets nach veröffentlichten Assets zu suchen.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
+1. Tippen/Klicken Sie auf **[!UICONTROL Genehmigungsstatus]** und dann auf die entsprechende Option, um nach genehmigten oder abgelehnten Assets zu suchen.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. To search for assets based on their expiration status, select **[!UICONTROL Expiry Status]** in the Search panel and choose the appropriate option.
+1. Um nach Assets basierend auf dem Ablaufstatus zu suchen, wählen Sie im Suchfeld die Option **[!UICONTROL Ablaufstatus]** und anschließend die entsprechende Option aus.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -172,12 +176,12 @@ Ein Asset gilt als geschützt, wenn eine der folgenden Bedingungen erfüllt ist:
 ### Herunterladen von DRM-geschützten Assets {#downloading-drm-assets}
 
 1. In the Card view, select the assets you want to download and click **[!UICONTROL Download]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Copyright-Management]** das Asset aus, das Sie von der Liste herunterladen möchten.
+1. Wählen Sie auf der Seite **[!UICONTROL Copyright-Management]** das Asset aus, das Sie herunterladen möchten.
 1. Wählen Sie im Lizenzfenster **[!UICONTROL Zustimmen]**. Möglicherweise erscheint ein Häkchen neben dem Asset, für das Sie die Lizenzvereinbarung angenommen haben. Tap/click the **[!UICONTROL Download]** button.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Download]** button is enabled only when you choose to agree to the license agreement for a protected asset. However, if your selection comprises both protected and unprotected assets, only the protected assets are listed in the left pane and the **[!UICONTROL Download]** button is enabled to download the unprotected assets. Sie können mehrere Lizenzvereinbarungen für verschiedene geschützte Assets gleichzeitig annehmen, indem Sie die Assets in der Liste auswählen und anschließend auf **[!UICONTROL Zustimmen]** klicken.
+   >Die Schaltfläche **[!UICONTROL Herunterladen]** ist nur aktiviert, wenn Sie der Lizenzvereinbarung für ein geschütztes Asset zustimmen. Wenn Ihre Auswahl jedoch sowohl geschützte als auch ungeschützte Assets umfasst, werden nur die geschützten Assets im linken Bereich aufgelistet und die Schaltfläche **[!UICONTROL Herunterladen]** ist aktiviert, um die ungeschützten Assets herunterzuladen. Um gleichzeitig Lizenzvereinbarungen für mehrere geschützte Assets zu akzeptieren, wählen Sie die Assets aus der Liste aus und dann **[!UICONTROL Zustimmen]**.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
