@@ -3,7 +3,7 @@ title: Importieren und Exportieren von Asset-Metadaten in Massen
 description: Importieren und Exportieren von Asset-Metadaten in Massen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -22,7 +22,7 @@ Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. 
 
 1. Navigieren Sie zur Benutzeroberfläche „Assets“ und tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie aus dem Menü **[!UICONTROL Metadaten]** aus.
-1. In the **[!UICONTROL Metadata Import]** page, tap/click **[!UICONTROL Select File]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
+1. Tippen/Klicken Sie auf der Seite **[!UICONTROL Metadatenimport]** auf **[!UICONTROL Datei auswählen]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
 1. Geben Sie die folgenden Parameter an:
 
    | Metadaten-Importparameter | Beschreibung |
@@ -59,6 +59,7 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 1. Öffnen Sie die Posteingangsbenachrichtigung für den Exportauftrag. Wählen Sie den Auftrag aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**. Um die CSV-Datei mit den Metadaten herunterzuladen, tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL CSV-Download]**. Klicken Sie auf **[!UICONTROL Schließen]**.
 
    ![Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die in großen Mengen exportiert wurden](assets/csv_download.png)
+
    *Abbildung: Dialogfeld zum Herunterladen der CSV-Datei, die Metadaten enthält, die als Massendatei exportiert wurden*
 
 >[!MORELIKETHIS]
