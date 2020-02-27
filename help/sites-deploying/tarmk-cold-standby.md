@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ---
 
@@ -362,13 +362,15 @@ Desweiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) ab
 
 ## Wartung des Cold-Standby-Repositorys {#cold-standby-repository-maintenance}
 
+### Revisionsbereinigung {#revision-clean}
+
 >[!NOTE]
-Wenn Sie auf der primären Instanz die [Online-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) ausführen, ist das im Folgenden vorgestellte manuelle Verfahren nicht erforderlich. Addittionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
+Wenn Sie auf der primären Instanz die [Online-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) ausführen, ist das im Folgenden vorgestellte manuelle Verfahren nicht erforderlich. Additionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
 
 >[!NOTE]
 Führen Sie auf der Standby-Instanz keine Offline-Revisionsbereinigung aus. Dies ist nicht erforderlich und die Größe des Segmentspeichers wird dadurch nicht reduziert.
 
-Adobe empfiehlt, regelmäßig Wartungsarbeiten durchzuführen, um ein übermäßiges Repository-Wachstum im Laufe der Zeit zu vermeiden. Führen Sie zum manuellen Warten des Cold-Standby-Repositorys die folgenden Schritte aus:
+Adobe empfiehlt die regelmäßige Wartung, um ein übermäßiges Repository-Wachstum im Laufe der Zeit zu vermeiden. Führen Sie zum manuellen Warten des Cold-Standby-Repositorys die folgenden Schritte aus:
 
 1. Beenden Sie den Standby-Prozess auf der Standby-Instanz. Wechseln Sie dazu zur JMX-Konsole und verwenden Sie das Bean **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**. Weitere Informationen finden Sie im obigen Abschnitt zur [Überwachung](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
