@@ -4,7 +4,7 @@ description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus ü
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -68,6 +68,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu ers
 1. Wählen Sie Quell-Assets oder -ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen > Live Copy]**.
 
    ![Erstellen einer Live Copy über die AEM-Oberfläche](assets/create_lc1.png)
+
    *Abbildung:Live-Kopie der AEM-Benutzeroberfläche erstellen*
 
 1. Wählen Sie einen Zielordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
@@ -79,6 +80,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu er
 1. Klicken Sie oben rechts in der AEM-Oberfläche auf **[!UICONTROL Erstellen > Live Copy]**.
 
    ![Erstellen einer Live Copy über die AEM-Oberfläche](assets/create_lc2.png)
+
    *Abbildung:Live-Kopie der AEM-Benutzeroberfläche erstellen*
 
 1. Wählen Sie Quell-Asset oder -ordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
@@ -111,6 +113,7 @@ Führen Sie folgende Schritte aus, um Informationen und Status eines Live Copy-A
 1. Klicken Sie auf **[!UICONTROL Live Copy]**. Sie können den Pfad der Quelle, den Aussetzen-Status, den Synchronisierungsstatus, das letzte Rollout-Datum und den Benutzer, der das letzte Rollout durchgeführt hat, prüfen.
 
    ![Live Copy-Informationen und -Status werden in einer Konsole in den Eigenschaften angezeigt.](assets/lcfolder_info_properties.png)
+
    *Abbildung:Live-Kopierinformationen und Status*
 
 1. Eine Aktivierung oder Deaktivierung ist möglich, wenn untergeordnete Assets die Live Copy-Konfiguration übernehmen.
@@ -122,12 +125,13 @@ Führen Sie folgende Schritte aus, um Informationen und Status eines Live Copy-A
 AEM stellt eine Konsole bereit, um die Status aller Live Copies eines Quellordners zu prüfen. Diese Konsole zeigt den Status aller untergeordneten Assets an.
 
 1. Wählen Sie einen Quellordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Sie können auch den Tastaturbefehl `p` verwenden.
-1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie auf **[!UICONTROL Live Copy-Übersicht]**, um die Konsole zu öffnen. Dieses Dashboard liefert übergeordnete Statusinformationen aller untergeordneten Assets.
+1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Um die Konsole zu öffnen, klicken Sie auf **[!UICONTROL Live Copy-Übersicht]**. Dieses Dashboard bietet den Status aller untergeordneten Assets auf der höchsten Stufe.
 
    ![Anzeigen der Status von Live Copies in der Live Copy-Konsole der Quelle](assets/livecopy-statuses.png)
+
    *Abbildung:Status von Live-Kopien in der Live Copy-Konsole der Quelle anzeigen*
 
-1. Um detaillierte Informationen zu jedem Asset im Live Copy-Ordner anzuzeigen, wählen Sie ein Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Beziehungsstatus]**.
+1. Um die detaillierten Informationen zu den einzelnen Assets im Ordner „Live Copy“ anzuzeigen, wählen Sie ein Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Beziehungsstatus]**.
 
    ![Detaillierte Informationen und Status eines untergeordneten Live Copy-Assets in einem Ordner](assets/livecopy_relationship_status.png)
 
@@ -147,13 +151,17 @@ Für Quell-Assets oder -ordner können Sie die folgenden Informationen über die
 * Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration für eine bestimmte Live Copy
 * Zugreifen auf die Konsole „Live Copy-Übersicht“
 
-Wählen Sie Quell-Asset oder -ordner aus, öffnen Sie die linke Leiste und klicken Sie auf **[!UICONTROL Verweise]**. Sie können auch ein Asset oder einen Ordner auswählen und den Tastaturbefehl `Alt + 4` verwenden.
+Wählen Sie Quell-Asset oder -ordner aus, öffnen Sie die linke Leiste und klicken Sie auf **[!UICONTROL Verweise]**. Alternativ können Sie ein Asset oder einen Ordner auswählen und den Tastaturbefehl `Alt + 4` verwenden.
 
-![Aktionen und Informationen, die in der Leiste &quot;Referenzen&quot;für die ausgewählte Quelle](assets/referencerail_source.png)verfügbar sind *Abbildung:Aktionen und Informationen, die in der Leiste &quot;Referenzen&quot;für die ausgewählte Quelle verfügbar sind*
+![In der Leiste „Verweise“ für die ausgewählte Quelle verfügbare Aktionen und Informationen](assets/referencerail_source.png)
+
+*Abbildung:Aktionen und Informationen, die in der Leiste &quot;Referenzen&quot;für die ausgewählte Quelle verfügbar sind*
 
 Klicken Sie für eine bestimmte Live Copy auf **[!UICONTROL Live Copy bearbeiten]**, um die Beziehung auszusetzen oder die Rollout-Konfiguration zu ändern.
 
-![Bei einer bestimmten Live-Kopie ist die Option zum Aussetzen der Beziehung oder zum Ändern der Rollout-Konfiguration über die Bezugsleiste verfügbar, wenn das Quellelement ausgewählt](assets/referencerail_editlc_options.png)*Abbildung:Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration einer bestimmten Live Copy*
+![Für eine bestimmte Live Copy kann die Option zum Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration bei ausgewähltem Quell-Asset über die Leiste „Verweise“ aufgerufen werden.](assets/referencerail_editlc_options.png)
+
+*Abbildung:Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration einer bestimmten Live Copy*
 
 ### Schnellaktionen in der Leiste „Verweise“ für Live Copies {#refraillc}
 
@@ -163,9 +171,11 @@ Für Live Copy-Assets oder -Ordner können Sie die folgenden Informationen übe
 * Öffnen und Anzeigen einer bestimmten Live Copy in der AEM-Benutzeroberfläche
 * Stellen Sie die Aktualisierungen bereit.
 
-Wählen Sie Live Copy-Asset oder -Ordner aus, öffnen Sie die linke Leiste und klicken Sie auf **[!UICONTROL Verweise]**. Sie können auch ein Asset oder einen Ordner auswählen und den Tastaturbefehl `Alt + 4` verwenden.
+Wählen Sie ein Asset oder einen Ordner für eine Live Copy aus, öffnen Sie die linke Leiste und klicken Sie auf **[!UICONTROL Referenzen]**. Alternativ können Sie ein Asset oder einen Ordner auswählen und den Tastaturbefehl `Alt + 4` verwenden.
 
-![In der Leiste &quot;Referenzen&quot;verfügbare Aktionen für die ausgewählte Live-Kopie](assets/referencerail_livecopy.png)*Abbildung:In der Leiste &quot;Referenzen&quot;verfügbare Aktionen für die ausgewählte Live-Kopie*
+![In der Leiste „Referenzen“ verfügbare Aktionen für die ausgewählte Live Copy](assets/referencerail_livecopy.png)
+
+*Abbildung:In der Leiste &quot;Referenzen&quot;verfügbare Aktionen für die ausgewählte Live-Kopie*
 
 ## Übertragen von Änderungen von der Quelle an Live Copies {#rolloutsync}
 
@@ -176,10 +186,11 @@ Nach der Bearbeitung einer Quelle können die Änderungen entweder mithilfe eine
 Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle oder einige ausgewählte Live Copies aktualisieren.
 
 1. Wählen Sie ein Live Copy-Asset oder einen Ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Sie können auch den Tastaturbefehl `p` verwenden.
-1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie oben in der Symbolleiste auf **[!UICONTROL Rollout]**.
+1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie oben in der Symbolleiste auf **[!UICONTROL Rollout]**.
 1. Wählen Sie die zu aktualisierenden Live Copies aus. Klicken Sie auf **[!UICONTROL Rollout]**. Um ein Rollout der an den untergeordneten Assets vorgenommenen Aktualisierungen durchzuführen, wählen Sie **[!UICONTROL Rollout von Quelle und allen untergeordneten Elementen]**. aus.
 
    ![Rollout von Quelländerungen an einige oder alle Live Copies](assets/livecopy_rollout_page.png)
+
    *Abbildung:Rollout die Änderungen der Quelle auf einige oder alle Live-Kopien*
 
 >[!NOTE]
@@ -188,7 +199,9 @@ Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle 
 
 Sie können eine Aktion „Rollout“ auch über die Leiste „Verweise“ initiieren, nachdem Sie eine bestimmte Live Copy ausgewählt haben. Weitere Informationen finden Sie unter [Schnellaktionen in der Leiste „Verweise“ für Live Copies](#refraillc). Bei dieser Rollout-Methode werden nur die ausgewählte Live Copy und optional deren untergeordnete Elemente aktualisiert.
 
-![Entfernen Sie die Änderungen der Quelle auf die ausgewählte Live-Kopie](assets/livecopy_rollout_dialog.png)*Abbildung:Rollout die Änderungen der Quelle auf die ausgewählte Live-Kopie*
+![Rollout von Quelländerungen an die ausgewählte Live Copy](assets/livecopy_rollout_dialog.png)
+
+*Abbildung:Rollout die Änderungen der Quelle auf die ausgewählte Live-Kopie*
 
 ### Wissenswertes über die Aktion „Synchronisieren“{#aboutsync}
 
@@ -202,11 +215,13 @@ Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur 
 
 ### Synchronisieren von Live Copies {#synclc}
 
-Um eine Aktion „Synchronisieren“ zu starten, öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
+Um eine Synchronisierungsaktion zu starten, öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
 
-Anweisungen zum Anzeigen von Status und Informationen zu einer Aktion „Synchronisieren“ finden Sie unter [Informationen und Status von Live Copies](#statuslcasset) sowie [Informationen und Status aller Live Copies eines Ordners](#statuslcfolder).
+Informationen zu den Status und Informationen einer Synchronisierungsaktion finden Sie unter [Informationen und Status einer Live Copy](#statuslcasset) sowie [Informationen und Status aller Live Copys eines Ordners](#statuslcfolder).
 
-![Die Synchronisierungsaktion zieht die an der Quelle](assets/livecopy_sync.png)vorgenommenen Änderungen *ab. Abbildung:Aktion zum Synchronisieren zieht die an der Quelle vorgenommenen Änderungen ab*
+![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/livecopy_sync.png)
+
+*Abbildung:Aktion zum Synchronisieren zieht die an der Quelle vorgenommenen Änderungen ab*
 
 >[!NOTE]
 >
@@ -216,19 +231,20 @@ Anweisungen zum Anzeigen von Status und Informationen zu einer Aktion „Synchro
 
 Sie können die Beziehung vorübergehend aussetzen, um zu verhindern, dass eine Live Copy am Quell-Asset oder -ordner vorgenommene Änderungen erhält. Die Beziehung kann für die Live Copy auch fortgesetzt werden, um Änderungen von der Quelle zu erhalten.
 
-Zum Aussetzen oder Fortsetzen öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
+Um den Vorgang aus- oder fortzusetzen, öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
 
-Beziehungen von mehreren Assets in einem Live Copy-Ordner können auch schnell über die Konsole **[!UICONTROL Live Copy-Übersicht]** ausgesetzt oder fortgesetzt werden. Siehe [Ausführen von Aktionen für viele Assets in einem Live Copy-Ordner](#bulkactions).
+Alternativ dazu können Sie die Beziehungen mehrerer Assets in einem Live Copy-Ordner in der Konsole **[!UICONTROL Live Copy-Übersicht]** schnell aussetzen oder wiederaufnehmen. Siehe [Aktionen für viele Assets in Live Copy-Ordnern durchführen](#bulkactions).
 
 ## Lokales Ändern von Live Copies {#localmods}
 
 Eine Live Copy ist eine Replikation der ursprünglichen Quelle zum Zeitpunkt ihrer Erstellung. Die Metadatenwerte einer Live Copy werden von der Quelle übernommen. Die Metadatenfelder halten einzeln die Vererbung mit den entsprechenden Feldern des Quell-Assets aufrecht.
 
-Sie haben jedoch die Möglichkeit, eine Live Copy lokal zu ändern, um einige ausgewählte Eigenschaften zu ändern. Um lokale Änderungen vorzunehmen, brechen Sie die Vererbung der gewünschten Eigenschaft ab. Wenn die Vererbung eines oder mehrerer Metadatenfelder abgebrochen wird, werden die Live-Beziehung des Assets und die Vererbung der anderen Metadatenfelder beibehalten. Bei Synchronisationen oder Rollouts werden lokale Änderungen nicht überschrieben. Öffnen Sie dazu die Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets und klicken Sie auf das Symbol **[!UICONTROL Vererbung abbrechen]** neben einem Metadatenfeld.
+Sie haben jedoch die Flexibilität, lokale Änderungen an einer Live Copy vorzunehmen, um einige ausgewählte Eigenschaften zu ändern. Um lokale Änderungen vorzunehmen, brechen Sie die Vererbung der gewünschten Eigenschaft ab. Wenn die Vererbung von mindestens einem Metadatenfeld abgebrochen wird, werden Live-Beziehung des Assets und Vererbung der anderen Metadatenfelder beibehalten. Bei einer Synchronisierung oder einem Rollout werden die lokalen Änderungen nicht überschrieben. Öffnen Sie dazu die Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets und klicken Sie neben dem Metadatenfeld auf das Symbol **[!UICONTROL Vererbung abbrechen]**.
 
 Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den Status seiner Quelle zurücksetzen. Setzen Sie die Aktion unwiderruflich zurück, überschreiben Sie sofort alle lokalen Änderungen und stellen Sie die Vererbung bei allen Metadatenfeldern wieder her. Zwecks Wiederherstellung klicken Sie auf der Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets in der Symbolleiste auf **[!UICONTROL Zurücksetzen]**.
 
 ![Aktion „Zurücksetzen“ – Überschreiben lokaler Bearbeitungen und Abgleichen der Live Copy mit der zugehörigen Quelle](assets/livecopy_reset.png)
+
 *Abbildung: Aktion zurücksetzen überschreibt lokale Bearbeitungen und bringt die Live-Kopie zum Teil mit der Quelle*
 
 ## Entfernen von Live-Beziehungen {#detach}
@@ -240,23 +256,25 @@ Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trenn
 1. Klicken Sie auf **[!UICONTROL Live Copy]**. Klicken Sie in der Symbolleiste auf **[!UICONTROL Trennen]**. Klicken Sie im angezeigten Dialogfeld auf **[!UICONTROL Trennen]**.
 
    ![Aktion „Trennen“ – vollständiges Entfernen der Beziehung zwischen Quelle und Live Copy](assets/livecopy_detach.png)
+
    *Abbildung:Durch die Aktion &quot;Trennen&quot;wird die Beziehung zwischen Quelle und Live Copy vollständig entfernt*
 
    >[!CAUTION]
    >
    >Die Beziehung wird entfernt, sobald Sie im Dialogfeld auf **[!UICONTROL Trennen]** klicken. Sie können diesen Vorgang nicht rückgängig machen, indem Sie auf der Seite „Eigenschaften“ auf **[!UICONTROL Abbrechen]** klicken.
 
-Mehrere Assets in einem Live Copy-Ordner können auch schnell über die Konsole **[!UICONTROL Live Copy-Übersicht]** getrennt werden. Siehe [Ausführen von Aktionen für viele Assets in einem Live Copy-Ordner](#bulkactions).
+Mehrere Assets in einem Live Copy-Ordner können auch schnell über die Konsole **[!UICONTROL Live Copy-Übersicht]** getrennt werden. Siehe [Aktionen für viele Assets in Live Copy-Ordnern durchführen](#bulkactions).
 
 ## Ausführen von Aktionen für viele Assets in einem Live Copy-Ordner {#bulkactions}
 
 Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiieren von Aktionen für jedes Asset mühsam sein. Sie können grundlegende Aktionen für eine große Zahl von Assets schnell über die Live Copy-Konsole initiieren. Die oben genannten Methoden können nach wie vor für einzelne Assets verwendet werden.
 
 1. Wählen Sie einen Quellordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Sie können auch den Tastaturbefehl `p` verwenden.
-1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie auf **[!UICONTROL Live Copy-Übersicht]**, um die Konsole zu öffnen.
-1. Wählen Sie in diesem Dashboard ein Live Copy-Asset aus einem Live Copy-Ordner aus. Klicken Sie in der Symbolleiste auf die gewünschten Aktionen. Die verfügbaren Aktionen sind **[!UICONTROL Synchronisieren]**, **[!UICONTROL Zurücksetzen]**, **[!UICONTROL Aussetzen]** und **[!UICONTROL Trennen]**. Sie können diese Aktionen schnell für beliebige Assets in einer beliebigen Anzahl von Live Copy-Ordnern starten, die sich in einer Live-Beziehung mit dem ausgewählten Quellordner befinden.
+1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Um die Konsole zu öffnen, klicken Sie auf **[!UICONTROL Live Copy-Übersicht]**.
+1. Wählen Sie in diesem Dashboard ein Live Copy-Asset aus einem Live Copy-Ordner aus. Klicken Sie in der Symbolleiste auf die gewünschten Aktionen. Die verfügbaren Aktionen sind **[!UICONTROL Synchronisieren]**, **[!UICONTROL Zurücksetzen]**, **[!UICONTROL Aussetzen]** und **[!UICONTROL Lösen]**. Sie können diese Aktionen schnell für beliebige Assets in einer beliebigen Anzahl von Live Copy-Ordnern starten, die sich in einer Live-Beziehung mit dem ausgewählten Quellordner befinden.
 
    ![Einfaches Aktualisieren vieler Assets in Live Copy-Ordnern über die Konsole „Live Copy-Übersicht“](assets/livecopyconsole_update_many_assets.png)
+
    *Abbildung:Einfache Aktualisierung vieler Assets in Live Copy-Ordnern über die Live Copy-Übersichtskonsole*
 
 ## Erweitern von MSM für Assets {#extendapi}
