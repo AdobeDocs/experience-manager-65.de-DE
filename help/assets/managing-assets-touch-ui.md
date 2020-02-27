@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Verwaltungsaufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -689,7 +689,9 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
 
 In der Timeline können Sie diverse Ereignisse für ein ausgewähltes Objekt ansehen, wie z. B. aktive Workflows für ein Asset, Kommentare/Anmerkungen, Aktivitätsprotokolle und Versionen.
 
-![Sortieren von Zeitleisteneinträgen für ein Asset](assets/sort_timeline.gif)*Abbildung: Sortieren von Zeitleisteneinträgen für ein Asset*
+![Sortieren von Timeline-Einträgen für ein Asset](assets/sort_timeline.gif)
+
+*Abbildung: Sortieren von Zeitleisteneinträgen für ein Asset*
 
 >[!NOTE]
 >
