@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -49,7 +49,6 @@ Machen Sie sich mit der Suchschnittstelle und den verfügbaren Aktionen vertraut
 Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindig machen, indem Sie die dynamisch aktualisierte Anzahl der erwarteten Suchergebnisse in den Suchfacetten verwenden. Die erwartete Anzahl an Assets wird noch vor Anwendung des Suchfilters aktualisiert. Durch Anzeige der erwarteten Anzahl im Filter können Sie schnell und effizient durch Suchergebnisse navigieren. Weitere Informationen finden Sie unter [Suche nach Assets in AEM](search-assets.md).
 
 ![Anzeigen der ungefähren Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten](assets/asset_search_results_in_facets_filters.png)
-
 
 *Abbildung:Sehen Sie sich die ungefähre Anzahl der Assets an, ohne die Suchergebnisse in Suchfacetten zu filtern.*
 
@@ -100,7 +99,6 @@ Um Vorschläge für mehr als einen Suchbegriff zu erhalten, geben Sie weiterhin 
 
 ![Geben Sie mehrere Suchbegriffe ein, um Vorschläge anzuzeigen, die allen entsprechen](assets/search_suggestionsmanykeywords.gif)
 
-
 *Abbildung:Geben Sie mehrere Suchbegriffe ein, um Vorschläge anzuzeigen, die allen entsprechen*
 
 ### Suchranking und -verstärkung {#searchrank}
@@ -133,7 +131,6 @@ AEM bietet verschiedene Methoden wie Filter, die für die gesuchten Assets gelte
 
 ![Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Filterbedienfeld einen Ordnerpfad hinzufügen](assets/search_folder_select.gif)
 
-
 *Abbildung:Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Filterbedienfeld einen Ordnerpfad hinzufügen*
 
 ### Ähnliche Bilder suchen {#visualsearch}
@@ -141,7 +138,6 @@ AEM bietet verschiedene Methoden wie Filter, die für die gesuchten Assets gelte
 Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild ähneln, klicken Sie in der Kartenansicht eines Bildes oder in der Symbolleiste auf **[!UICONTROL Ähnliche suchen]**. AEM zeigt die Bilder mit Smart-Tags aus dem DAM-Repository an, die einem vom Benutzer ausgewählten Bild ähnlich sind. Siehe [Konfigurieren der Ähnlichkeitssuche](#configvisualsearch).
 
 ![Ähnliche Bilder mit der Option in der Kartenansicht suchen](assets/search_find_similar.png)
-
 
 *Abbildung:Ähnliche Bilder mit der Option in der Kartenansicht suchen*
 
@@ -248,7 +244,6 @@ To access the asset selector interface, go to `https://[aem_server]:[port]/aem/a
 
 ![Asset in der Asset-Auswahl durchsuchen und auswählen](assets/assetpicker.png)
 
-
 *Abbildung:Asset in der Asset-Auswahl durchsuchen und auswählen*
 
 ## Beschränkungen {#limitations}
@@ -290,7 +285,6 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ![Suchverhalten mit und ohne Anführungszeichen](assets/search_with_quotes.gif)
 
-
 *Abbildung:Suchverhalten mit und ohne Anführungszeichen*
 
 **Suche mit Sternchen-Platzhalter**: Um die Suche zu erweitern, verwenden Sie ein Sternchen vor oder nach dem Suchwort, um eine beliebige Anzahl von Zeichen einzuhalten. Wenn Sie beispielsweise nach einer Ausführung ohne Sternchen suchen, werden keine Assets zurückgegeben, die Varianten des Wortes enthalten (auch in den Metadaten). Ein Sternchen ersetzt eine beliebige Anzahl von Zeichen. Beispiel:
@@ -301,7 +295,6 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 * `*run*` gibt alle möglichen Kombinationen zurück.
 
 ![Veranschaulichung der Verwendung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels](assets/search_with_asterisk_run.gif)
-
 
 *Abbildung:Veranschaulichung der Verwendung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels*
 
@@ -315,13 +308,11 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ![Veranschaulichen der Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels](assets/search_with_questionmark_run.gif)
 
-
 *Abbildung:Veranschaulichen der Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels*
 
 **Suchbegriff** ausschließen: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die keinen Suchbegriff enthalten. Beispielsweise gibt `running -shoe` die Abfrage Assets zurück, die `running`, aber nicht `shoe`. Gleichermaßen gibt `camp -night` die Abfrage Assets zurück, die enthalten sind, `camp` aber nicht `night`. Beachten Sie, dass die `camp-night` Abfrage Assets zurückgibt, die sowohl `camp` als auch `night`enthalten.
 
 ![Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten](assets/search_dash_exclude_keyword.gif)
-
 
 *Abbildung:Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten*
 
@@ -423,7 +414,6 @@ Um alle Metadaten eines Assets anzuzeigen, wählen Sie das Asset aus und klicken
 Um die Kommentare zu einem Asset oder zum Versionsverlauf eines Assets zu überprüfen, klicken Sie auf das Asset, um eine Vorschau mit großer Größe zu öffnen. Öffnen Sie die Timeline in der linken Leiste und wählen Sie **[!UICONTROL Kommentare]** oder **[!UICONTROL Versionen]**. Sie können die Timeline-Aktivität auch wie Kommentare oder Versionen in chronologischer Reihenfolge anordnen.
 
 ![Sortieren von Zeitleisteneinträgen für ein Suchelement](assets/sort_timeline_search_results.gif)
-
 
 *Abbildung:Sortieren von Zeitleisteneinträgen für ein Suchelement*
 
