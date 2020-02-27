@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 56006a1f49e4d357cd7ee44a4a1dd1af7189e70a
 
 ---
 
@@ -41,7 +41,7 @@ Werden die Kriterien nicht erfüllt, wird zwecks Verfügbarkeit eine aktive TarM
 
 ### Minimale MongoDB-Bereitstellung für AEM {#minimal-mongodb-deployment-for-aem}
 
-Unten ist eine minimale Bereitstellung für AEM auf MongoDB abgebildet. Zur Vereinfachung wurden die SSL-Beendigungs- und HTTP-Proxykomponenten verallgemeinert. Die Bereitstellung besteht aus einer einzigen MongoDB-Replikatgruppe mit einem primären Replikat und zwei sekundären Replikaten.
+Unten ist eine minimale Bereitstellung für AEM auf MongoDB abgebildet. Zur Vereinfachung wurden die SSL-Beendigungs- und HTTP-Proxykomponenten verallgemeinert. Es besteht aus einem einzigen MongoDB Replik-Satz, mit einem primären und zwei Sekunden.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
