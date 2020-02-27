@@ -3,7 +3,7 @@ title: Erkennung Asset-Duplikaten aktivieren
 description: Erfahren Sie, wie Sie die Erkennung von Asset-Duplikaten in AEM aktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -17,7 +17,6 @@ Wenn Sie versuchen, ein Asset hochzuladen, das in Adobe Experience Manager (AEM)
 1. Select the **[!UICONTROL detect duplicate]** option, and click/tap **[!UICONTROL Save]**.
 
    ![Auswahl der Option „Duplikat erkennen“ im Servlet](assets/chlimage_1-377.png)
-
 
    *Abbildung: Wählen Sie die Option &quot;Duplikate erkennen&quot;im Servlet aus.*
 
