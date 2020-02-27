@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37d0225f69800225e82f253ad9dbab8b2b30ac5e
+source-git-commit: fdcd9173b02347a7a9527b292635d63e8aa9ce19
 
 ---
 
@@ -291,6 +291,12 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 **Foundation JEE**
 
 * Die Aktionskonfiguration lädt die Prozessnamen für Übermittlungsaktion &quot;Aufrufen eines Formulararbeitsablaufs&quot;(NPR-31478) nicht.
+* AEM Forms on JEE-Benutzern treten beim Importieren von .lca-Dateien oder beim Einrichten von LDAP in der Admin-Konsole ähnliche Fehler auf:
+
+   `com.ibm.ws.webcontainer.filter.FilterInstanceWrapper doFilter SRVE8109W: Uncaught exception thrown by filter um: java.lang.NoClassDefFoundError: org/apache/commons/io/IOUtils at org.apache.commons.fileupload.util.Streams.copy`
+
+   `Error 500: javax.servlet.ServletException: java.lang.NoClassDefFoundError: org.apache.commons.io.IOUtils` (NPR-30931)
+
 
 ### Enthaltene Feature Packs {#feature-packs-included-6530}
 
