@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -27,24 +27,15 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Bereitstellung.
 * Bei Bereitstellungstypen von Adobe Experience Manager ist eines der unterstützten Kriterien erfüllt. AEM 6.5 Assets funktioniert mit AEM als Cloud-Dienst. Weitere Informationen finden Sie unter [Funktionen für verbundene Assets in AEM als Cloud-Dienst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | AEM Sites als Cloud Service | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
+   |  | AEM Sites as a Cloud Service | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
    |---|---|---|---|
-   | **AEM Assets als Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
+   | **AEM Assets as a Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets auf AMS** | Nicht unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets lokal** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
 ### Unterstützte Dateiformate {#mimetypes}
 
-Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components.
-
-* Microsoft Word (DOC und DOCX)
-* Microsoft Excel (XLS und XLSX)
-* Microsoft PowerPoint (PPT und PPTX)
-* Adobe PDF (PDF)
-* OpenDocument Text (ODT)
-* Rich Text Format (RTF)
-* Nur Text (TXT)
-* Webseiten (HTML)
+Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Eine Liste der unterstützten Formate finden Sie unter Unterstützte Formate für [verbundene Assets](assets-formats.md#supported-document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
