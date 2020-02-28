@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -134,7 +134,7 @@ Siehe [Sicherungsstrategien](https://articles.techrepublic.com.com/5100-1035_61-
 
 Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass die MySQL-Datenbank im binären Protokollmodus ausgeführt wird. (Siehe[ Binäre Protokollierung in MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Ein Werkzeug für die Sicherung bei laufendem Betrieb für MySQL steht außerdem von InnoBase Software zur Verfügung. (Siehe [Innobase-Sicherungen im laufenden Betrieb (Hot Backup)](https://www.innodb.com/hot-backup/features.md).)
 
-**Hinweis**: *Der binäre Standardprotokollierungsmodus für MySQL ist &quot;Statement&quot;, was mit von Content Services verwendeten Tabellen (nicht mehr unterstützt) nicht kompatibel ist. Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:*
+**Note**: *The default binary logging mode for MySQL is &quot;Statement&quot;, which is incompatible with tables used by Content Services (Deprecated). Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:*
 `binlog_format=mixed log-bin=logname`
 
 Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. To do an incremental backup, ensure that you start the server with the - `log-bin` option as described in the previous section. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. You can force a switch manually with the `FLUSH LOGS SQL` command. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
@@ -154,7 +154,7 @@ Der Stammordner für Inhalte enthält das Repository für Content Services (nich
 
 Der Stammordner für Inhalte wird bei der Installation von Content Services (nicht mehr unterstützt) erstellt. Der Speicherort des Stammordners für Inhalte wird während des Installationsprozesses von AEM Forms bestimmt.
 
-The default location for the Content Storage Root directory is *[aem-forms root]*/lccs_data.
+The default location for the Content Storage Root directory is `[aem-forms root]/lccs_data`.
 
 Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
 
@@ -176,7 +176,7 @@ Bei der Installation von Content Services (nicht mehr unterstützt) in einer Clu
 
 **Indexstammordner:** Ein Ordner, der auf jedem Knoten im Cluster erstellt wird und immer denselben Pfad und Ordnernamen hat.
 
-The default location for the Content Storage Root directory is *[GDS root]*/lccs_data, where *[GDS root]* is the location described in [GDS location](files-back-recover.md#gds-location). Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
+The default location for the Content Storage Root directory is `[GDS root]/lccs_data`, where `[GDS root]` is the location described in [GDS location](files-back-recover.md#gds-location). Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ The default location for the Content Storage Root directory is *[GDS root]*/lccs
 
 Wenn der Ordner „/backup-lucene-indexes“ nicht vorhanden ist, sichern Sie den Ordner „/lucene-indexes“ (ebenfalls im Stammordner für Inhalte). Wenn der Ordner „/backup-lucene-indexes“ vorhanden ist, sichern Sie nicht den Ordner „/lucene-indexes“, weil dies zu Fehlern führen kann.
 
-The default location for the Index Root directory is *[aem-forms root]*/lucene-indexes on each node.
+The default location for the Index Root directory is `[aem-forms root]/lucene-indexes` on each node.
 
 ## Vom Kunden installierte Schriftarten {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ Wenn Sie zusätzliche Schriftarten in Ihrer AEM Forms-Umgebung installiert haben
 
 >[!NOTE]
 >
->By default, the Adobe fonts installed with AEM forms are located in the [aem-forms root]/fonts directory.
+>By default, the Adobe fonts installed with AEM forms are located in the `[aem-forms root]/fonts` directory.
 
 Wenn das Betriebssystem auf dem Hostcomputer neu initialisiert wird und Sie Schriftarten des vorherigen Betriebssystems verwenden möchten, muss der Inhalt des Ordners mit den Systemschriftarten ebenfalls gesichert werden. (Spezifische Anweisungen finden Sie in der Dokumentation zum Betriebssystem.)
