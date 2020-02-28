@@ -3,7 +3,7 @@ title: Von Assets unterstützte Formate
 description: Liste der von AEM Assets unterstützten Dateiformate sowie der für die jeweiligen Formate unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1e70a1a0f82bcdf698dec378df1c3d59815e692b
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -93,26 +93,26 @@ Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbi
 
 Folgende Dokumentformate werden für Asset-Verwaltungsfunktionen unterstützt:
 
-| Format | Speicher | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | Einblicke |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
-| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| ODT | ✓ | ✓ | ✓ |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |  |  |  |  |
-| RTF | ✓ | ✓ | ✓ |  |  |  |  |
-| TXT | ✓ | ✓ | ✓ |  |  |  |  |
-| XLS | ✓ | ✓ | ✓ |  |  |  |  |
-| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| ODS | ✓ | ✓ | ✓ |  |  |  |  |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ODP | ✓ | ✓ | ✓ |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
-| PS | ✓ | ✓ |  |  |  |  |  |
-| QXP | ✓ | ✓ |  |  |  |  |  |
-| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| Format | Speicher | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | Einblicke | Connected Assets |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
+| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| ODT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| RTF | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| TXT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| XLS | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| ODS | ✓ | ✓ | ✓ |  |  |  |  |  |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| ODP | ✓ | ✓ | ✓ |  |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
+| PS | ✓ | ✓ |  |  |  |  |  |  |
+| QXP | ✓ | ✓ |  |  |  |  |  |  |
+| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
 Die folgenden Dokumentformate werden für dynamische Medienfunktionen unterstützt:
 
@@ -272,5 +272,4 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
 >[!MORELIKETHIS]
 >
 >* [Aktivieren der Unterstützung von MIME-Typen-basierten Assets/Scene7-Upload-Auftragsparametern](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
->* [Unterstützte Formate für die Funktion &quot;Verbundene Assets&quot;](/help/assets/use-assets-across-connected-assets-instances.md)
 
