@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
 
 ---
 
@@ -35,7 +35,10 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
 ### Unterstützte Dateiformate {#mimetypes}
 
-Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Eine Liste der unterstützten Formate finden Sie unter Unterstützte Formate für [verbundene Assets](assets-formats.md#supported-document-formats).
+Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
+
+* **Bildformate**: Die Bildformate, die von der [Image-Komponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) unterstützt werden, werden von verbundenen Assets unterstützt. Dynamische Medienkomponenten werden nicht unterstützt.
+* **Dokumentformate**: Siehe Unterstützte Dokumentformate für [verbundene Assets](assets-formats.md#supported-document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
