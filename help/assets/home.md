@@ -4,7 +4,7 @@ seo-title: AEM 6.5 Assets-Benutzerhandbuch
 description: In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 seo-description: Behandelt alle AEM Assets-Aufgaben, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: b90343874d5afd9858d8a6d82828eabdfa1d3ccd
 
 ---
 
@@ -39,11 +39,11 @@ In diesem Handbuch werden alle AEM Assets-Aufgaben behandelt, z. B. das Erstelle
 
 ## Wichtige AEM-Ressourcen
 
-* [AEM-Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM-Videoschulungen](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [AEM Assets-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Hauptkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Einhaltung der Datenschutz-Grundverordnung](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
