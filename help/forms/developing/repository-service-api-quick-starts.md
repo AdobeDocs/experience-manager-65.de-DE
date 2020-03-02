@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -53,7 +53,7 @@ Der Pfad zu einer Ressource im AEM Forms-Repository lautet:
 
 >[!NOTE]
 >
->Sie können das AEM Forms-Repository über einen Webbrowser durchsuchen. Um das Repository zu durchsuchen, geben Sie die folgende URL in einen Webbrowser ein https://[Servername]:[Serverport]/Repository. Mithilfe eines Webbrowsers können Sie die Schnellstartergebnisse überprüfen. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen.
+>Sie können das AEM Forms-Repository über einen Webbrowser durchsuchen. Um das Repository zu durchsuchen, geben Sie die folgende URL in einen Webbrowser ein `https://[server name]:[server port]/repository`. Mithilfe eines Webbrowsers können Sie die Schnellstartergebnisse überprüfen. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen.
 
 >[!NOTE]
 >
