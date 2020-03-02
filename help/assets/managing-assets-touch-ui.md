@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Verwaltungsaufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
 
 ---
 
@@ -384,7 +384,7 @@ Beim Kopieren eines Assets oder eines Ordners wird das gesamte Asset bzw. der Or
 
 Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werden nicht übertragen. Beispiele:
 
-* Relativer Pfad, Asset-ID, Erstellungsdatum und -zeitpunkt sowie Versionen und Versionsverlauf. Some of these properties are indicated by the properties `dam:relativePath`, `jcr:uuid`, `jcr:created`, and `cq:name`.
+* Asset-ID, Erstellungsdatum und -zeit sowie Versionen und Versionsverlauf. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
 * Der Erstellungszeitpunkt und referenzierte Pfade sind für jedes Asset und jede seiner Wiedergaben eindeutig.
 
