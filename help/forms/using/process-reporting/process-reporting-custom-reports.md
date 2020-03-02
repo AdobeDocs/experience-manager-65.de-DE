@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -32,7 +32,7 @@ Bevor Sie einen benutzerspezifischen Bericht hinzufügen, führen Sie das folgen
 
 Die REST-Schnittstelle CRX QueryBuilder stellt die Funktionalität des Asset Share Query Builder über eine Java-API und eine REST-API zur Verfügung. Erfahren Sie, wie Sie die REST-Oberfläche[von ](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder verwenden, bevor Sie die folgenden Schritte ausführen:
 
-1. Navigieren Sie zur URL https://[server]:[port]/lc/bin/querybuilder.json
+1. URL suchen `https://[server]:[port]/lc/bin/querybuilder.json`
 1. Erstellen Sie eine Abfrage auf Basis der Process Reporting-Knotenstruktur und der Knoteneigenschaften.
 
    Sie können optionale Parameter angeben, um Offset, Limit, Treffer und Eigenschaften anzugeben. Sie können die Argumente für statische Berichte komprimieren und die Parameter für dynamische Berichte aus der Benutzeroberfläche abrufen.
