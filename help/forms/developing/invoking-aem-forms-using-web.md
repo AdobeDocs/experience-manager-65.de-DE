@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -368,7 +368,7 @@ Sie können JAX-WS verwenden, um eine Forms-Dienst-WSDL in Java-Proxyklassen zu 
 1. Installieren Sie JDK 1.6 oder höher.
 
    * Fügen Sie dem Klassenpfad den JDK-bin-Ordner hinzu.
-   * Fügen Sie dem Klassenpfad den Ordner &quot;JRE bin&quot;hinzu. Diese Ablage befindet sich im Ordner [*JDK_INSTALL_LOCATION*]/jre.
+   * Fügen Sie dem Klassenpfad den Ordner &quot;JRE bin&quot;hinzu. Diese Ablage befindet sich im `[JDK_INSTALL_LOCATION]/jre` Ordner.
    * Legen Sie die `JAVA_HOME` Umgebungsvariable auf den Ordner fest, in dem Sie das JDK installiert haben.
    JDK 1.6 enthält das wsimport-Programm, das in der Datei &quot;build.xml&quot;verwendet wird. JDK 1.5 enthält dieses Programm nicht.
 
@@ -558,7 +558,7 @@ Sie können die Java-Bibliotheksdateien von Axis wie folgt generieren:
    * xalan.jar
    * xbean.jar
    * xercesImpl.jar
-   Diese JAR-Dateien befinden sich im *[Installationsverzeichnis]*/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty.
+   Diese JAR-Dateien befinden sich im `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` Ordner.
 
 **Siehe auch**
 
