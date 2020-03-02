@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -963,7 +963,7 @@ Der vollständig qualifizierte Datentyp des komplexen AEM Forms-Typs wird dem Al
 Die Felder der ActionScript-Klasse entsprechen den Feldern, die zum komplexen AEM Forms-Typ gehören. Die sechs Felder in der ActionScript-Klasse des Kunden stimmen mit den Feldern überein, zu denen `com.adobe.livecycle.sample.customer.Customer`es gehört.
 
 >[!NOTE]
-Eine gute Methode zur Bestimmung der Feldnamen, die zu einem komplexen Forms-Typ gehören, besteht darin, die WSDL eines Dienstes in einem Webbrowser anzuzeigen. Eine WSDL gibt die komplexen Typen eines Dienstes und die entsprechenden Datenmitglieder an. Der folgende WSDL wird für den Kundendienst verwendet: *https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.*
+Eine gute Methode zur Bestimmung der Feldnamen, die zu einem komplexen Forms-Typ gehören, besteht darin, die WSDL eines Dienstes in einem Webbrowser anzuzeigen. Eine WSDL gibt die komplexen Typen eines Dienstes und die entsprechenden Datenmitglieder an. Der folgende WSDL wird für den Kundendienst verwendet: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 Die ActionScript-Klasse von Customer gehört zu einem Paket namens customer. Es wird empfohlen, alle ActionScript-Klassen, die komplexen AEM Forms-Datentypen zugeordnet sind, in ihrem eigenen Paket zu platzieren. Erstellen Sie einen Ordner im Ordner src des Flex-Projekts und legen Sie die ActionScript-Datei wie in der folgenden Abbildung gezeigt im Ordner ab.
 
