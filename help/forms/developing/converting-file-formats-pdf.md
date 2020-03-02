@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -713,7 +713,7 @@ Wenn Sie mit Dialog- oder Skript-XML-Dateien arbeiten möchten, sollten Sie die 
 Die Dialogue- und Skriptdateien befinden sich in der Datei &quot;appmondata.jar&quot;. Bevor Sie eine dieser Dateien ändern oder neue Skript- oder Dialogfelddateien hinzufügen können, müssen Sie die JAR-Datei entpacken. Angenommen, Sie möchten Unterstützung für die Anwendung EditPlus hinzufügen. Sie erstellen zwei XML-Dateien mit den Namen &quot;appmon.editplus.script.en_US.xml&quot;und &quot;appmon.editplus.script.additional.en_US.xml&quot;. Diese XML-Skripten müssen der Datei &quot;adobe-appmondata.jar&quot;an zwei Speicherorten hinzugefügt werden, wie unten angegeben:
 
 * adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Die Datei &quot;adobe-livecycle-native-jboss-x86_win32.ear&quot;befindet sich im Exportordner unter `[AEM forms install directory]\configurationManager`. (Wenn AEM Forms auf einem anderen J2EE-Anwendungsserver bereitgestellt wird, ersetzen Sie die Datei &quot;adobe-livecycle-native-jboss-x86_win32.ear&quot;durch die EAR-Datei, die Ihrem J2EE-Anwendungsserver entspricht.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (die Datei &quot;adobe-appmondata.jar&quot;befindet sich in der Datei &quot;adobe-generatepdf-dsc.jar&quot;). Die Datei &quot;adobe-generatepdf-dsc.jar&quot;befindet sich im Ordner &quot; *[AEM forms install directory]*\deploy&quot;.
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (die Datei &quot;adobe-appmondata.jar&quot;befindet sich in der Datei &quot;adobe-generatepdf-dsc.jar&quot;). Die Datei &quot;adobe-generatepdf-dsc.jar&quot;befindet sich im `[AEM forms install directory]\deploy` Ordner.
 
 Nachdem Sie diese XML-Dateien der Datei &quot;adobe-appmondata.jar&quot;hinzugefügt haben, müssen Sie die GeneratePDF-Komponente erneut bereitstellen. So fügen Sie der Datei &quot;adobe-appmondata.jar&quot;Dialogue- und Skript-XML-Dateien hinzu:
 
@@ -741,7 +741,7 @@ Nachdem Sie diese XML-Dateien der Datei &quot;adobe-appmondata.jar&quot;hinzugef
 
 Wenn Sie Dateien an eine neue native Anwendung weiterleiten möchten, müssen Sie eine XML-Skript-Datei für diese Anwendung erstellen. Wenn Sie die Interaktion des Generate PDF-Dienstes mit einer bereits unterstützten nativen Anwendung ändern möchten, müssen Sie das Skript für diese Anwendung ändern.
 
-Das Skript enthält Anweisungen, die durch die Fensterelemente der nativen Anwendung navigieren und spezifische Antworten auf diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, ist appmon.*[appname]*.script.*[locale]*.xml. Ein Beispiel ist appmon.notepad.script.en_US.xml.
+Das Skript enthält Anweisungen, die durch die Fensterelemente der nativen Anwendung navigieren und spezifische Antworten auf diese Elemente bereitstellen. Die Datei, die diese Informationen enthält, ist `appmon.[appname]``.script.[locale].xml`. Ein Beispiel ist appmon.notepad.script.en_US.xml.
 
 #### Identifizieren der Schritte, die das Skript ausführen muss {#identifying-steps-the-script-must-execute}
 
@@ -836,16 +836,16 @@ Wenn Sie ein Skript für eine native Anwendung erstellen, die zuvor nicht unters
 
 >[!NOTE]
 >
->In diesem Zusammenhang bedeutet der Begriff &quot;Zusatzstoff&quot;den Inhalt der Lappelle.[applicationname].additional.[Datei &quot;locale].xml&quot;. Eine solche Datei gibt Überschreibungen und Ergänzungen zur XML-Datei des Dialogfelds an.
+>In diesem Zusammenhang bezeichnet der Begriff &quot;Zusatzinformationen&quot;den Inhalt der `appmon.[applicationname].addition.[locale].xml` Datei. Eine solche Datei gibt Überschreibungen und Ergänzungen zur XML-Datei des Dialogfelds an.
 
 Sie können die zusätzliche XML-Datei für das Dialogfeld für eine native Anwendung für folgende Zwecke ändern:
 
 * So überschreiben Sie die XML-Datei des Dialogfelds für eine Anwendung mit einer anderen Antwort
 * So fügen Sie eine Antwort zu einem Dialogfeld hinzu, das in der XML-Datei des Dialogfelds für diese Anwendung nicht adressiert ist
 
-Der Dateiname, der eine zusätzliche Datei &quot;dialogXML&quot;identifiziert, ist appmon.*[appname]*.additional.*[locale]*.xml. Ein Beispiel ist appmon.excel.additional.de_DE.xml.
+Der Dateiname, der eine zusätzliche Datei &quot;dialogXML&quot;identifiziert, ist `appmon.[appname].addition.[locale].xml`angegeben. Ein Beispiel ist appmon.excel.additional.de_DE.xml.
 
-Der Name der zusätzlichen XML-Datei im Dialogfeld muss das Format appmon verwenden.*[applicationname]*.additional.*[locale]*.xml, wobei *applicationname* exakt mit dem Anwendungsnamen übereinstimmen muss, der in der XML-Konfigurationsdatei und im Skript verwendet wird.
+Der Name der zusätzlichen XML-Datei im Dialogfeld muss das Format verwenden, `appmon.[applicationname].addition.[locale].xml`wobei der *Anwendungsname* exakt mit dem Anwendungsnamen übereinstimmen muss, der in der XML-Konfigurationsdatei und im Skript verwendet wird.
 
 >[!NOTE]
 >
@@ -898,7 +898,7 @@ In diesem Beispiel wurden die mit dem Generate PDF-Dienst bereitgestellten Stand
 
 #### Erstellen einer Umgebungsvariablen zum Suchen der nativen Anwendung {#creating-an-environment-variable-to-locate-the-native-application}
 
-Erstellen Sie eine Umgebungsvariable, die den Speicherort der ausführbaren Datei der nativen Anwendung angibt. Die Variable muss das Format *[applicationname]*_PATH verwenden, wobei *applicationname* exakt mit dem Anwendungsnamen übereinstimmen muss, der in der XML-Konfigurationsdatei und im Skript verwendet wird, und wo der Pfad den Pfad zur ausführbaren Datei in doppelten Anführungszeichen enthält. Ein Beispiel für eine solche Umgebungsvariable ist `Photoshop_PATH`.
+Erstellen Sie eine Umgebungsvariable, die den Speicherort der ausführbaren Datei der nativen Anwendung angibt. Die Variable muss das Format verwenden, `[applicationname]_PATH`wobei der *Anwendungsname* exakt mit dem Anwendungsnamen übereinstimmen muss, der in der XML-Konfigurationsdatei und im Skript verwendet wird, und wo der Pfad den Pfad zur ausführbaren Datei in doppelten Anführungszeichen enthält. Ein Beispiel für eine solche Umgebungsvariable ist `Photoshop_PATH`.
 
 Nach dem Erstellen der neuen Umgebungsvariablen müssen Sie den Server neu starten, auf dem der Generate PDF-Dienst bereitgestellt ist.
 
@@ -907,7 +907,7 @@ Nach dem Erstellen der neuen Umgebungsvariablen müssen Sie den Server neu start
 1. Select **Control Panel > System**.
 1. Klicken Sie im Dialogfeld &quot;Systemeigenschaften&quot;auf die Registerkarte &quot; **Erweitert** &quot;und dann auf &quot; **Umgebungsvariablen&quot;**.
 1. Klicken Sie im Dialogfeld &quot;Umgebungsvariablen&quot;unter &quot;Systemvariablen&quot;auf **Neu**.
-1. Geben Sie im Dialogfeld &quot;Neue Systemvariable&quot;in das Feld **Variablenname** einen Namen ein, der das Format *[applicationName]*_PATH verwendet.
+1. Geben Sie im Dialogfeld &quot;Neue Systemvariable&quot;im Feld &quot;Name der **Variablen** &quot;einen Namen ein, der das Format verwendet `[applicationname]_PATH`.
 1. Geben Sie in das Feld **Variablenwert** den vollständigen Pfad und den Dateinamen der ausführbaren Datei der Anwendung ein und klicken Sie auf **OK**. Geben Sie beispielsweise: `c:\windows\Notepad.exe`
 1. Klicken Sie im Dialogfeld &quot;Umgebungsvariablen&quot;auf **OK**.
 
