@@ -43,7 +43,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Möglichkeit zum [Festlegen von Abwesenheitseinstellungen](../forms/using/configure-out-of-office-settings.md) in AEM-Workflows.
 
-* Möglichkeit, Inbox- oder Inbox-Elemente[ für andere Benutzer in AEM-Workflows zu ](../forms/using/configure-shared-queues-osgi.md)freigeben.
+* Möglichkeit, Inbox- oder Inbox-Elemente [für andere Benutzer in AEM-Workflows zu](../forms/using/configure-shared-queues-osgi.md) freigeben.
 
 * Möglichkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
@@ -63,7 +63,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Asset-Dateien GLB, GLTF, OBJ und STL unterstützen die Asset-Vorschau auf der Seite &quot;Asset-Details&quot;in DAM (CQ-4282277).
 
-* Das ReplicationOnModifyListener-Ereignis wird beim Hochladen von Chunk-Knoten in dynamischen Medien (CQ-4281279) ausgelöst.
+* Das ReplicationOnModifyListener-Ereignis wird beim Hochladen von Segmenten in dynamischen Medien (CQ-4281279) für Chunk-Knoten ausgelöst.
 
 * Dynamische Medien unterstützen jetzt Smart-Zuschneiden von Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen (CQ-4278995).
 
@@ -75,7 +75,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Metadaten für einige PDF-Dokumente werden beim Ändern des Titels (NPR-31629) nicht aktualisiert und im PDF gespeichert.
 
-* Asset Sharing funktioniert nicht für Assets, deren Name das Zeichen &quot;+&quot;enthält (NPR-31547).
+* Asset Sharing funktioniert nicht für Assets, deren Name das Pluszeichen &quot;+&quot;enthält (NPR-31547).
 
 * Änderungen im Standardsuchformular Assets Admin * Suchleiste funktionieren nicht wie erwartet (NPR-31502).
 
@@ -89,7 +89,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Alle Kontrollkästchen werden deaktiviert, wenn die Kontrollkästchen der zweiten Ebene im Filter &quot;Dateityp&quot;deaktiviert werden, und der Text in der Suchleiste ist nicht mit den ausgewählten/nicht ausgewählten Eigenschaften synchronisiert (NPR-31287).
 
-* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Abschnitt &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
+* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Bereich &quot;Mitglieder&quot;eines Ordners entfernt werden. bei dem Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
 
 * Assets mit dem Pluszeichen &quot;+&quot;im Dateinamen können nicht gelöscht werden (NPR-31162).
 
@@ -97,7 +97,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Ordnerauswahl &quot;Erstellen&quot;> &quot;DateiUpload&quot;-Aktionselement fehlt, wenn ACL für &quot;Ablehnen&quot;(jcr:removeChildNodes) und &quot;jcr:removeNode&quot;auf Pfad für einen Benutzer angewendet werden (NPR-30840).
 
-* DAM-Workflows werden beim Hochladen bestimmter MP4-Assets in den Status &quot;Stall&quot;versetzt, sodass alle verbleibenden Workflows in den Status &quot;Stall&quot;wechseln (NPR-30662).
+* DAM-Workflows werden beim Hochladen bestimmter MP4-Assets in den Status &quot;Stall&quot;versetzt, sodass alle verbleibenden Workflows in den Status &quot;Stable&quot;versetzt werden (NPR-30662).
 
 * Fehler wegen ungenügenden Speicherplatzes werden beobachtet, wenn große PDF-Dateien (mit mehreren Gigabytes) zu DAM hochgeladen und deren Teilassets verarbeitet werden (NPR-30614).
 
@@ -151,7 +151,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Ansicht &quot;Assets UI-Spalte&quot;zeigt alle Pfade unabhängig vom Pfad des Stammordners (CQ-4278175) an.
 
-* Die Suche der Asset-Auswahl funktioniert nicht wie erwartet (CQ-4275886).
+* Die Suche des Asset-Selektors funktioniert nicht wie erwartet (CQ-4275886).
 
 * Darstellungs-Workflows funktionieren nicht (CQ-4271928).
 
@@ -170,7 +170,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Wenn die LiveCopy-Vererbung beschädigt ist, werden auf Live-Kopierseiten anstelle von LiveCopy-Links Sprachkopie-Links angezeigt (NPR-30980).
 * Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint zeigt leere Zeilen für die übrigen Datensätze an (NPR-31182).
 * Wenn ein Benutzer japanische oder koreanische Zeichen in die Eigenschaft description eines Menüs einfügt, werden im Menü verzerrte Zeichen für japanischen und koreanischen Text angezeigt. (NPR-31331).
-* Rich Text Editor (RTE) erlaubt nicht, eine eingebettete Tabelle als Listenelement einzufügen (NPR-30879).
+* Rich Text Editor (RTE) erlaubt es nicht, eine eingebettete Tabelle als Listenelement einzufügen (NPR-30879).
 * Standardmäßig wird der RTE-Editor (RTE) mit Gerüsten versehen. wendet die Inline-Schriftgröße unerwartet auf Elemente an (NPR-31284).
 * Wenn ein Benutzer sich auf Felder in der linken Schiene konzentriert und zum Einfügen von Inhalten einen Tastaturbefehl verwendet, wird der Inhalt der Zwischenablage des Seiteneditors anstelle des Inhalts eingefügt, der aus den Feldern der linken Schiene kopiert wurde (NPR-31172).
 * Wenn ein Benutzer ein Feld zum Hochladen von Dateien zu einem Multifeld hinzufügt, wird der Bildpfad im Komponentenknoten und nicht im Multifield-Knoten (NPR-30882) gespeichert.
@@ -178,7 +178,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Wenn eine Seite mit ExperienceFragments im Nicht-Editor-Modus geöffnet wird (entweder im Autorenmodus ohne das `editor.html` Präfix und `wcmmode=disabled`im Publisher)., endet die Anforderung im HTTP-Statusfehlercode 500 (NPR-30743).
 * Benutzer können ihr Kennwort nicht ändern und auf ihre Profilseite zugreifen (NPR-31161).
 * Eine JavaScript-Datei mit Benutzerdaten wird serverseitig generiert (NPR-30822).
-* Die Benutzeroberfläche für das Authoring von AEM ermöglicht Phishing mit externen Inhalten (NPR-29745).
+* Die Benutzeroberfläche für das Authoring von AEM ermöglicht das Phishing mit externen Inhalten (NPR-29745).
 * Sicherheitslücke beim Spritzen von Ausdruckssprachen im AEM 6.5-Metadateneditor (NPR-31017).
 
 #### Suchen und Benutzeroberfläche {#search-ui-interface}
@@ -187,7 +187,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Das Kontrollkästchen &quot;Alle auswählen&quot;ist in der Listenansicht der Benutzeroberfläche &quot;Sites&quot;ausgeblendet (NPR-31614).
 
-* Die Zählung Alle auswählen auf einer Suchergebnisseite ist nicht korrekt (NPR-31120).
+* Die Zählung &quot;Alle auswählen&quot;auf einer Suchergebnisseite ist nicht korrekt (NPR-31120).
 
 * Der Metadaten-Editor zeigt Tags an, die nicht vorhanden sind (NPR-31119).
 
@@ -266,7 +266,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * **MissingNode.toString()** gibt nach der Aktualisierung der Jackson-Bibliotheken auf 2.10.0 (NPR-31549) falsche Ergebnisse zurück.
 
-* Im Texteditor werden Leerzeichen zufällig aus dem aus Microsoft Word kopierten Text entfernt (NPR-31113).
+* Der Texteditor entfernt nach dem Zufallsprinzip Leerzeichen aus dem aus Microsoft Word kopierten Text (NPR-31113).
 
 **Korrespondenzverwaltung**
 
