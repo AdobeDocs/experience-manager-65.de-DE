@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
+source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
 
 ---
 
@@ -37,7 +37,7 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
 Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiten-Editor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
 
-* **Bildformate**: Die Bildformate, die von der [Image-Komponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) unterstützt werden, werden von verbundenen Assets unterstützt. Dynamische Medienkomponenten werden nicht unterstützt.
+* **Bildformate**: Die Bildformate, die von der [Image-Komponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) unterstützt werden, werden von verbundenen Assets unterstützt. Bilder mit dynamischen Medien werden nicht unterstützt.
 * **Dokumentformate**: Siehe Unterstützte Dokumentformate für [verbundene Assets](assets-formats.md#supported-document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
