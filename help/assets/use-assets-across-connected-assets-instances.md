@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
+source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
 
 ---
 
@@ -30,12 +30,12 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
    |  | AEM Sites as a Cloud Service | AEM 6.5-Sites auf AMS | AEM 6.5-Sites vor Ort |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
-   | **AEM 6.5 Assets auf AMS** | Nicht unterstützt | Unterstützt | Unterstützt |
+   | **AEM 6.5 Assets auf AMS** | Unterstützt | Unterstützt | Unterstützt |
    | **AEM 6.5 Assets lokal** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
 ### Unterstützte Dateiformate {#mimetypes}
 
-Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
+Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiten-Editor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
 
 * **Bildformate**: Die Bildformate, die von der [Image-Komponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) unterstützt werden, werden von verbundenen Assets unterstützt. Dynamische Medienkomponenten werden nicht unterstützt.
 * **Dokumentformate**: Siehe Unterstützte Dokumentformate für [verbundene Assets](assets-formats.md#supported-document-formats).
