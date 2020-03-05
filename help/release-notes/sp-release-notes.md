@@ -1,13 +1,14 @@
 ---
 title: Versionshinweise zum AEM 6.5 Service Pack
-description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 Service Pack 3.
+description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 Service Pack 4.
 uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
+mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9f4a460c7f64d86e35e950e512ed5b6cda1cbf2a
+source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 
 ---
 
@@ -18,327 +19,268 @@ source-git-commit: 9f4a460c7f64d86e35e950e512ed5b6cda1cbf2a
 
 | Produkte | **Adobe Experience Manager 6.5** |
 |---|---|
-| Version | 6.5.3.0 |
+| Version | 6.5.4.0 |
 | Typ | Service Pack-Version |
-| Datum | 12. Dezember 2019 |
-| Download-URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0) |
+| Datum | 05. März 2020 |
+| Download-URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
 
-## Inhalt von Adobe Experience Manager 6.5.3.0 {#what-s-included-in-aem}
+## Inhalt von Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
-Adobe Experience Manager 6.5.3.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of 6.5 release in **April 2019**. Es kann über Adobe Experience Manager (AEM) 6.5 installiert werden.
+Adobe Experience Manager 6.5.4.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Verbesserungen sowie Leistung, Stabilität und Sicherheitsverbesserungen umfasst. Dieses Update wurde seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht. Es kann über Adobe Experience Manager (AEM) 6.5 installiert werden.
 
-Zu den wichtigsten Merkmalen dieses Service Packs gehören:
+Zu den wichtigsten Funktionen und Verbesserungen, die in AEM 6.5.4.0 eingeführt wurden, zählen:
 
-* Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.6 aktualisiert.
+* AEM Assets wird jetzt über die Adobe I/O-Konsole mit dem Markenportal konfiguriert.
 
-* Experience Manager Assets unterstützt jetzt ZIP-Archive, die mit dem Deflate 64-Algorithmus erstellt wurden.
+* Für AEM-Arbeitsabläufe steht nun ein neuer Schritt zum [Generieren druckbarer Ausgabe](../forms/using/aem-forms-workflow-step-reference.md) zur Verfügung.
 
-* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM-Listenansicht und in den Asset-Suchergebnissen in der Listenansicht hinzugefügt.
+* [Mehrspaltige Unterstützung](../forms/using/resize-using-layout-mode.md) für den Layoutmodus für adaptive Formulare und interaktive Kommunikation.
 
-* Die Sortierung von Assets basierend auf der Spalte Name wurde in der Listenansicht aktiviert.
+* Unterstützung für [Rich Text](../forms/using/designing-form-template.md) in HTML5-Formularen.
 
-* Dynamische Medien unterstützen jetzt Smart-Zuschneiden von Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen.
+* Barrierefreiheitsverbesserungen in Assets.
 
-* Dynamische Medien unterstützen Smart Imaging.
+* Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.8 aktualisiert.
 
-* Möglichkeit zum [Festlegen von Abwesenheitseinstellungen](../forms/using/configure-out-of-office-settings.md) in AEM-Workflows.
+Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funktionen, die in früheren AEM 6.5 Service Packs eingeführt wurden, finden Sie unter [Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
-* Möglichkeit, Inbox- oder Inbox-Elemente [für andere Benutzer in AEM-Workflows zu](../forms/using/configure-shared-queues-osgi.md) freigeben.
+### Assets {#assets-6540-enhancements}
 
-* Möglichkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
+* Die Schaltfläche zum Auslösen des Workflows auf der Seite zur Asset-Sammlung ist deaktiviert (NPR-32471).
 
-* Die Version von jQuery im Paket ContextHub wurde auf 3.4.1 aktualisiert.
+* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit dynamischer Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
-### Liste der Änderungen   {#list-of-changes}
+* Die Aktion zum Verschieben aller Assets (mit &quot;Alle auswählen&quot;und dann &quot;Verschieben&quot;) in einen Ordner mit veröffentlichten Assets schlägt fehl (NPR-32366).
 
-#### Assets {#assets-6530-enhancements}
+* Die Generierung von Ausgabeformaten für Assets mit ${extension} schlägt fehl (NPR-32294).
 
-**Produktverbesserungen**
+* Die URLs im Versionsverlauf werden auf der Eigenschaftenseite (NPR-31889) unter &quot;Verwiesen nach&quot;angezeigt.
 
-* Experience Manager Assets unterstützt jetzt ZIP-Archive, die mit dem Deflate 64-Algorithmus (NPR-27573) erstellt wurden.
+* Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-32293) geöffnet werden.
 
-* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM-Listenansicht und in den Asset-Suchergebnissen in der Listenansicht hinzugefügt (NPR-31312).
+* Ursprüngliche Berechtigungen eines Ordners werden aktualisiert, wenn Ordnereinstellungen geöffnet werden, um den Ordnertitel oder das Miniaturbild zu ändern und dann zu speichern (NPR-32292).
 
-* Asset-Sortierung basierend auf der Spalte &quot;Name&quot;wurde in der Listenansicht zugelassen (NPR-31299).
+* Das Kalendersymbol für die geplante Aktivierung wird nicht in der Statusspalte (in der klassischen Benutzeroberfläche der DAM-Asset-Auflistung) für Assets angezeigt, deren Aktivierung für ein späteres Datum und eine spätere Uhrzeit geplant ist (NPR-32291).
 
-* Die Asset-Dateien GLB, GLTF, OBJ und STL unterstützen die Asset-Vorschau auf der Seite &quot;Asset-Details&quot;in DAM (CQ-4282277).
+* Die Erstellung von Snippets mithilfe von Snippet-Vorlagen gibt beim Erstellen von Snippets (NPR-32290) Fehler beim Suchen nach Sammlungen.
 
-* Das ReplicationOnModifyListener-Ereignis wird beim Hochladen von Segmenten in dynamischen Medien (CQ-4281279) für Chunk-Knoten ausgelöst.
+* Mehrere Suchabfragen werden ausgelöst, wenn mehrere Tags aus dem Suchfilter ausgewählt werden (NPR-32143).
 
-* Dynamische Medien unterstützen jetzt Smart-Zuschneiden von Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen (CQ-4278995).
+* In der Benutzeroberfläche von Experience Manager Assets werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
-* Dynamic Media unterstützt Smart Imaging (CQ-4222249).
+* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen in Adobe Stock auf Stufe zwei markiert wurden (NPR-31919).
 
-* Die Such-/Durchsuchen-Ansicht wurde als Standardansicht in der Foundation-Auswahl festgelegt, wenn Abfrageparameter in einer Anforderung übergeben werden (NPR-31601).
+* Die Datei- und Ordnersuche mit Omniture-Facetten bildet eine Ausnahme (NPR-31872).
 
-**Fehlerkorrekturen**
+* Die Feldhervorhebung für die obligatorische Feldauswahl im Metadateneditor wird auch nach Auswahl des erforderlichen Felds nicht entfernt, wenn die Abhängigkeitsregeln im entsprechenden Metadatenschema-Formular (NPR-31834) festgelegt sind.
 
-* Metadaten für einige PDF-Dokumente werden beim Ändern des Titels (NPR-31629) nicht aktualisiert und im PDF gespeichert.
+* Vollständige Namen von Tags auf Blattebene (aus der Taghierarchie) werden auf der Seite &quot;Asset-Eigenschaften&quot;nicht angezeigt (NPR-31820).
 
-* Asset Sharing funktioniert nicht für Assets, deren Name das Pluszeichen &quot;+&quot;enthält (NPR-31547).
-
-* Änderungen im Standardsuchformular Assets Admin * Suchleiste funktionieren nicht wie erwartet (NPR-31502).
-
-* Vorschläge werden nicht angezeigt, wenn Sie Omniture Search für die Asset-Ansicht zum Durchsuchen von Assets verwenden (NPR-31496).
-
-* Asset-Verweise in Sammlungen werden nicht aktualisiert, wenn die referenzierten Assets an einen anderen Speicherort verschoben werden, sofern dieselben Assets von verschiedenen Benutzern durch unterschiedliche Sammlungen referenziert werden (NPR-31486).
-
-* Duplizierte IPTC-Tags werden zu Asset-Metadaten hinzugefügt (NPR-31328).
-
-* Die Suchergebnisanzahl in der oberen rechten Ecke wird nicht korrekt aktualisiert, wenn die Suche über die Filterleiste ausgelöst wird (NPR-31316).
-
-* Alle Kontrollkästchen werden deaktiviert, wenn die Kontrollkästchen der zweiten Ebene im Filter &quot;Dateityp&quot;deaktiviert werden, und der Text in der Suchleiste ist nicht mit den ausgewählten/nicht ausgewählten Eigenschaften synchronisiert (NPR-31287).
-
-* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Bereich &quot;Mitglieder&quot;eines Ordners entfernt werden. bei dem Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
-
-* Assets mit dem Pluszeichen &quot;+&quot;im Dateinamen können nicht gelöscht werden (NPR-31162).
-
-* Dropdown-Menü erstellen, das im oberen Menü bei Auswahl eines Ordners angezeigt wird, zeigt nicht &quot;Ordner&quot; als Erstellungsoption (NPR-30877).
-
-* Ordnerauswahl &quot;Erstellen&quot;> &quot;DateiUpload&quot;-Aktionselement fehlt, wenn ACL für &quot;Ablehnen&quot;(jcr:removeChildNodes) und &quot;jcr:removeNode&quot;auf Pfad für einen Benutzer angewendet werden (NPR-30840).
-
-* DAM-Workflows werden beim Hochladen bestimmter MP4-Assets in den Status &quot;Stall&quot;versetzt, sodass alle verbleibenden Workflows in den Status &quot;Stable&quot;versetzt werden (NPR-30662).
-
-* Fehler wegen ungenügenden Speicherplatzes werden beobachtet, wenn große PDF-Dateien (mit mehreren Gigabytes) zu DAM hochgeladen und deren Teilassets verarbeitet werden (NPR-30614).
-
-* Die Massenbewegung von Assets schlägt fehl und es wird eine Warnmeldung angezeigt (NPR-30610).
-
-* Beim Verschieben von Assets aus einem Ordner in einen anderen in AEM, das im Dynamic Media Scene7-Runmode ausgeführt wird (NPR-31630), werden die Asset-Namen in Kleinbuchstaben geändert.
-
-* Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler festgestellt, da sich das Bild im Ordner befindet, der mit dem Namen des Scene7-Unternehmens identisch ist (NPR-31340).
-
-* Dynamische Medienelemente, die Verweise enthalten, werden nicht veröffentlicht (NPR-31180).
-
-* Uploads von AEM Dynamic Media - Scene7-Runmode zu Scene7 dauern zu lange, bis sie abgeschlossen sind (NPR-31048).
-
-* Hotspot, der zu einem Bild-Asset hinzugefügt wurde, ist auf der Seite mit den Asset-Details nicht über den interaktiven Bild-Viewer sichtbar (NPR-30979).
-
-* Es werden enorme Sling-Aufträge erstellt und das Verarbeitungsbanner wird erneut angezeigt, wenn Aktionen, die in AEM Assets ausgeführt werden, an Scene7 (NPR-30947) übergeben werden.
-
-* Beim Erstellen der Sprachkopie von Assets treten Konflikte auf, und Assets werden nicht nach Scene7 hochgeladen (NPR-30932).
-
-* Dynamische Darstellungen, die von AEM heruntergeladen wurden und im Dynamic Media Hybrid-Modus ausgeführt werden, sind beschädigt (sie sind vom Texttyp mit Inhalt, der &quot;Bild kann nicht gefunden werden&quot;anstelle des Bildinhaltstyps) (NPR-30876).
-
-* Der Arbeitsablauf für die Videokodierung mit dynamischer Medienkodierung kann keine Miniaturansicht für das Video generieren, das aus Scene7 in den Modus für die Ausführung von Scene7 migriert wird (CQ-4282011).
-
-* Bei der Migration von Assets von einer Instanz zu einer anderen mit unterschiedlichen Scene7-Unternehmens-IDs wurde eine IpsApiException beobachtet (CQ-4280548).
-
-* Die Miniaturansicht von 3D-Assets ist nicht informativ, wenn ein unterstütztes 3D-Modell in AEM integriert wird (CQ-4283701).
-
-* Bildlaufschaltflächen werden im Viewer angezeigt, wenn ein 3D-Asset nur über wenige Kameraansichten verfügt (CQ-4283322).
-
-* Falsche Behälterhöhe eines hochgeladenen 3D-Modells, das auf der Seite &quot;Asset-Details&quot;im DimensionalViewer in der Vorschau angezeigt wird (CQ-4283309).
-
-* Videos können nicht mit SmartCropVideoViewer in Internet Explorer 11 und Safari wiedergegeben werden (CQ-4281422).
-
-* Die Verwendung der Schaltfläche zum Verschieben, um mehrere Assets von einem Ordner in einen anderen zu verschieben, schlägt in AEM, das auf Dynamic Media - scene7 ausgeführt wird, fehl (CQ-4280384).
-
-* Verzerrtes Video wird in Asset-Details angezeigt, wenn der MIME-Typ nicht MP4 ist (CQ-4279704).
-
-* Videos, die neu in Ordnern mit Videoprofil aufgenommen wurden, bleiben auch nach Abschluss der Kodierung auf 100 % im Verarbeitungszustand (CQ-4279389).
-
-* Durch das Verschieben von Assets aus einem Ordner werden zahlreiche Sling-Aufträge (Scene7-API-Aufrufe) generiert, die im Idealfall erforderlich sind (CQ-4278664).
-
-* Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn Bildsatz (oder Mediaset) erstellt und mit einer entsprechenden Benennungskonvention in DAM (CQ-4281112) benannt wird.
-
-* Scene7 Migrator stellt den Veröffentlichungsstatus falsch ein (CQ-4263492).
-
-* Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers in Inhaltsfragmenten (CQ-4282898).
-
-* PDF-Dateien werden nicht indiziert und der Inhalt in ist nicht durchsuchbar (CQ-4278916).
-
-* Fehler &quot;Gruppe nicht nach Benutzerauswahl aufgeführt: &quot;false to equal true&quot;wird beim Hinzufügen von &quot;Closed User Group&quot;mit &quot;different&quot; `principalName` und `authorizableId` (CQ-4278177) beobachtet.
-
-* Die Ansicht &quot;Assets UI-Spalte&quot;zeigt alle Pfade unabhängig vom Pfad des Stammordners (CQ-4278175) an.
-
-* Die Suche des Asset-Selektors funktioniert nicht wie erwartet (CQ-4275886).
-
-* Darstellungs-Workflows funktionieren nicht (CQ-4271928).
-
-* DAM Event Purge löscht die neuesten (maxSavedActivities) Ereignisdaten und speichert die zuvor erstellten Daten (NPR-31336).
+* Die Verwendung des Befehls &quot;Zurück&quot;auf der Seite &quot;Asset-Eigenschaften&quot;im Safari-Browser gibt einen Fehler zurück (NPR-31753).
 
 * Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
 
-* Die Aktionsleiste und die Asset-Anzahl werden nicht aktualisiert, wenn Sie alle Elemente auswählen und dann die Auswahl einiger Elemente (Ordner/einzelne Assets) in der Touch-Benutzeroberfläche (NPR-31118) aufheben.
+* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, mit Ausnahme der Schaltflächen &quot;Zur Sammlung&quot;und &quot;Darstellung hinzufügen&quot;in Experience Manager, der im dynamischen Media Scene7-Ausführungsmodus ausgeführt wird (CQ-4286705).
 
-* Während der Abfrage nach Auftragsdetails eines Assets (CQ-4283569) wird in AEM eine Ausnahme angezeigt.
+* Assets, die größer als 2 GB sind, können jetzt in Dynamic Media-Scene7 hochgeladen werden (CQ-4286561).
 
-* XSS-Schwachstelle in DAM (NPR-31654).
+* Die Verarbeitung von Assets durch den Batch-Upload von Scene7 (CQ-4286445) dauert zu lange.
 
-#### Sites {#sites}
+* Die Schaltfläche &quot;Speichern&quot;importiert kein Remote-Set, wenn der Benutzer im Set-Editor im Dynamic Media Client keine Änderungen vorgenommen hat (CQ-4285690).
 
-* Wenn die LiveCopy-Vererbung beschädigt ist, werden auf Live-Kopierseiten anstelle von LiveCopy-Links Sprachkopie-Links angezeigt (NPR-30980).
-* Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint zeigt leere Zeilen für die übrigen Datensätze an (NPR-31182).
-* Wenn ein Benutzer japanische oder koreanische Zeichen in die Eigenschaft description eines Menüs einfügt, werden im Menü verzerrte Zeichen für japanischen und koreanischen Text angezeigt. (NPR-31331).
-* Rich Text Editor (RTE) erlaubt es nicht, eine eingebettete Tabelle als Listenelement einzufügen (NPR-30879).
-* Standardmäßig wird der RTE-Editor (RTE) mit Gerüsten versehen. wendet die Inline-Schriftgröße unerwartet auf Elemente an (NPR-31284).
-* Wenn ein Benutzer sich auf Felder in der linken Schiene konzentriert und zum Einfügen von Inhalten einen Tastaturbefehl verwendet, wird der Inhalt der Zwischenablage des Seiteneditors anstelle des Inhalts eingefügt, der aus den Feldern der linken Schiene kopiert wurde (NPR-31172).
-* Wenn ein Benutzer ein Feld zum Hochladen von Dateien zu einem Multifeld hinzufügt, wird der Bildpfad im Komponentenknoten und nicht im Multifield-Knoten (NPR-30882) gespeichert.
-* Die ResponsiveGridExporter-API gibt die com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter-Schnittstelle nicht zurück. Das Paket com.day.cq.wcm.foundation.model.impl wird als privates Paket deklariert (NPR-31398).
-* Wenn eine Seite mit ExperienceFragments im Nicht-Editor-Modus geöffnet wird (entweder im Autorenmodus ohne das `editor.html` Präfix und `wcmmode=disabled`im Publisher)., endet die Anforderung im HTTP-Statusfehlercode 500 (NPR-30743).
-* Benutzer können ihr Kennwort nicht ändern und auf ihre Profilseite zugreifen (NPR-31161).
-* Eine JavaScript-Datei mit Benutzerdaten wird serverseitig generiert (NPR-30822).
-* Die Benutzeroberfläche für das Authoring von AEM ermöglicht das Phishing mit externen Inhalten (NPR-29745).
-* Sicherheitslücke beim Spritzen von Ausdruckssprachen im AEM 6.5-Metadateneditor (NPR-31017).
+* Die Miniaturansicht von 3D-Assets ist nicht informativ, wenn ein unterstütztes 3D-Modell in AEM integriert wird (CQ-4283701).
 
-#### Suchen und Benutzeroberfläche {#search-ui-interface}
+* Der unverarbeitete Status der Viewer-Vorgabe für intelligente Beschneidung wird zweimal neben dem Vorgabennamen auf dem Bannertext angezeigt (CQ-4283517).
 
-* Beim Wechsel von der Kartenansicht zur Listenansicht auf einer Suchergebnisseite kommt es zu einer Verzögerung, bevor ein Bildlauf der Seite durchgeführt werden kann (NPR-31286).
+* Auf der Detailseite des Assets (CQ-4283309) wird eine falsche Behälterhöhe eines hochgeladenen 3D-Modells, das im 3D-Viewer in der Vorschau angezeigt wird, festgestellt.
 
-* Das Kontrollkästchen &quot;Alle auswählen&quot;ist in der Listenansicht der Benutzeroberfläche &quot;Sites&quot;ausgeblendet (NPR-31614).
+* Karussell-Editor wird in IE 11 im dynamischen Medienmodus von Experience Manager (CQ-4255590) nicht geöffnet.
 
-* Die Zählung &quot;Alle auswählen&quot;auf einer Suchergebnisseite ist nicht korrekt (NPR-31120).
+* Der Tastaturfokus wird in der Dropdown-Liste &quot;E-Mail&quot;im Dialogfeld &quot;Herunterladen&quot;in Chrome und Safari-Browsern (NPR-32067) angehalten.
 
-* Der Metadaten-Editor zeigt Tags an, die nicht vorhanden sind (NPR-31119).
+* Das Kontrollkästchen &quot;Alle Inhalte synchronisieren&quot;ist nicht standardmäßig aktiviert, wenn versucht wird, eine DM-Cloud-Konfiguration in AEM hinzuzufügen (CQ-4288533).
 
-#### Übersetzung {#translation}
+### Sites {#sites-fixes}
 
-* Bei Auswahl der Option &quot;Fälliges Datum&quot;in einem Übersetzungsauftrag (NPR-31270) werden zwei Kalender-Popups angezeigt.
+* Wenn eine URL einer AEM-Siteseite einen Doppelpunkt enthält ( : ) oder Prozentsymbol (%), der zugrunde liegende Browser reagiert nicht mehr und die CPU-Zyklen zeigen eine Spitze (NPR-32369, NPR-31918).
 
-#### Plattform {#platform}
+* Wenn eine AEM-Siteseite zur Bearbeitung geöffnet und eine Komponente kopiert wird, bleibt die Einfügeaktion für einige Platzhalter nicht verfügbar (NPR-32317).
 
-* Die Option &quot;Mime-Typ&quot;in der Webkonsole funktioniert nicht (NPR-31108).
+* Wenn der Assistent zum Verwalten von Veröffentlichungen geöffnet wird, wird ein Erlebnisfragment, das mit einer Core-Komponente verknüpft ist, nicht in den Listen der veröffentlichten Referenzen angezeigt (NPR-32233).
 
-* Das Clientzertifikat wird beim Konfigurieren des Single Sign-On (NPR-31165) nicht akzeptiert.
+* Die Übersicht über Live-Kopien in der Touch-Benutzeroberfläche dauert wesentlich länger als die klassische Benutzeroberfläche (NPR-32149).
 
-* Aktualisierungen der Puffergrößenkonfiguration für den Jetty-basierten HTTP-Dienst werden nicht gespeichert (NPR-30925).
+* Wenn sich die Server- und die Maschinenzeit in unterschiedlichen Zeitzonen befinden, zeigt die geplante Veröffentlichungszeit die Serverzeit in der Touch-Benutzeroberfläche an, während in der klassischen Benutzeroberfläche die Maschinenzeit angezeigt wird (NPR-32077).
 
-* QueryBuilder unterstützt jetzt orderby ``fn:name()`` in xpath Abfragen (NPR-31322).
+* AEM-Sites können keine Seite mit einem Suffix in der URL (NPR-32072) geöffnet werden.
 
-* Bei der Aktualisierung von AEM 6.3 (NPR-31513) wird eine doppelte Aktivierungsstruktur erstellt.
+* Wenn ein Benutzer ein Inhaltsfragment bearbeitet, wird eine gelöschte Variante des Inhaltsfragments wiederhergestellt (NPR-32062).
 
-* Bei weitergeleiteten Anforderungen werden keine Antwortheader beibehalten, die während der Sling-Authentifizierung festgelegt werden (NPR-30013).
+* Benutzer dürfen ein Inhaltsfragment speichern, ohne in den erforderlichen Feldern Informationen anzugeben (NPR-31988).
 
-* Die Suche innerhalb der Picker-Komponenten funktioniert nicht (NPR-31692).
+* kernel.js und ui.js sind nicht vorab erfüllt oder zwischengespeichert. Dies führt zu zusätzlicher Zeit beim Rendern von Seiten (NPR-31891).
 
-* Beim Anhängen einer ZIP-Datei an einen AEM Communities-Beitrag aufgrund verschiedener Versionen von Apache POI und Apache Tika Bundle (NPR-31018) wird ein Fehler angezeigt.
+* Wenn PageEventAuditListener aktiviert ist, wird die Länge der Warteschlange zum Übernehmen verlängert. Es wirkt sich auf die Leistung vieler Vorgänge wie Massenveröffentlichung, Navigation, Massenbewegung von Assets aus (NPR-31890).
 
-* Das ``org.apache.sling.distribution.api`` Bundle ist im Konfigurationsmanager ausgeblendet und steht daher nicht für benutzerdefinierte Bundles (NPR-31720) zur Verfügung.
+* Wenn Erlebnisfragmente gezogen werden, wird eine hohe Reaktionszeit beobachtet (NPR-31878).
 
-#### Projekte {#projects}
+* Wenn Sie die Option Komponente hierher ziehen im Platzhalter eines interaktiven Rasters auswählen, wird eine GET-Anforderung gesendet und die Anforderung führt zum HTTP-403-Fehler (NPR-31845).
 
-* Das Wechseln von Kalenderansichten funktioniert nicht (NPR-31271).
+* Wenn Sie den Inhalt innerhalb desselben Ordners verschieben, ist die Option zum Verschieben der Seite deaktiviert (NPR-31840).
 
-#### Brand Portal {#assets-brand-portal}
+* Wenn URLs mit /_jcr_content/.html oder /jcr:content/.html aufgerufen werden, reagieren CPU-Spitzen und AEM nicht mehr (NPR-31837).
 
-**Produktverbesserungen**
+* Im Strukturmodus bearbeitbarer Vorlagen zeigt die Liste der zulässigen Komponenten im Layout-Container falsche Ergebnisse an. Im Layout-Container (NPR-31816) werden nur Komponenten mit Design-Dialog angezeigt.
 
-* Der Workflow zum Importieren von Assets in AEM Assets wurde geändert, um nur die neu erstellten Assets vom Markenportal zu AEM abzurufen und die bereits vorhandenen Assets im Ordner NEW zu überspringen, um eine Replikation zu vermeiden (CQ-4278527).
+* Wenn eine Seite schreibgeschützte Berechtigungen für einen Benutzer hat, ist die Option &quot;Eigenschaften öffnen&quot;in sites.html, jedoch nicht in editor.html (NPR-31770) sichtbar.
 
-**Fehlerkorrekturen**
+* Wenn ein Benutzer auf die Schaltfläche Erstellen klickt, ist die Seitenoption nicht verfügbar (NPR-31756).
 
-* Beim Erstellen eines neuen Beitragsordners in der Asset-Sourcing-Funktion (CQ-4282825) wird ein falsches Symbol angezeigt.
-* Beim Erstellen eines neuen Beitragsordners werden ein oder beide Unterordner (NEU und FREIGEGEBEN) nicht im Beitragsordner (CQ-4282424) angezeigt.
-* System gibt eine Ausnahme aus, wenn der Benutzer versucht, den Beitragsordner von AEM in das Markenportal erneut zu veröffentlichen, nachdem er neue Assets aus dem Beitragsordner vom Markenportal-Ende (CQ-4279740) erhalten hat.
-* Das Erstellen eines Beitragsordners in einem Beitragsordner (verschachtelter Ordner) ist verboten, um Komplexität zu vermeiden (CQ-4278391).
-* Das System gibt beim Hochladen der aus der AEM Admin Console importierten Markenportal-Benutzerliste (.csv-Datei) eine Ausnahme aus. Nur die Felder &quot;E-Mail&quot;, &quot;Vorname&quot;und &quot;Nachname&quot;in der .csv-Datei sind obligatorisch (CQ-4278390).
+* Die Kampagne in Adobe-Kampagnen mit OOTB (Out-of-the-Box) Design Importer-Komponente (NPR-31728) kann nicht synchronisiert werden.
 
-#### Communities {#communities}
+* Wenn Sie versuchen, eine Aufzählungsliste in eine nummerierte Liste zu ändern, werden nur die ersten beiden Elemente der Liste geändert (NPR-31636).
 
-**Fehlerkorrekturen**
+* Wenn eine Seite nicht verfasst ist und die untergeordnete Node ausgewählt ist, wird im Auswahldialogfeld weiterhin die ursprüngliche Node angezeigt. Wenn die Seite erstellt wird und der Benutzer auf &quot;Durchsuchen&quot;klickt, wird die Seite zum Stammknoten statt zum erstellten Knoten (NPR-31618) umgeleitet.
 
-* Schnelllinks zum Verwalten von Gruppen (Gruppen öffnen/bearbeiten/Veröffentlichen/Löschen) sind für Community-Administratoren nicht sichtbar (Gruppenadministrator/Site-Administrator) (NPR-31627).
-* Ein gesendeter Blog wird nur angezeigt, wenn die Seite manuell aktualisiert/neu geladen wird (NPR-31599).
-* Bei der JCR-Abfrage, die von der Funktion &quot;Erwähnungen&quot;verwendet wird, wird zwischen Groß- und Kleinschreibung unterschieden. Die Rückgabe der Ergebnisse dauert zu lange (NPR-31475).
-* AEM 6.5 UberJar-Datei löst eine Ausnahme aus, da das `cq-social-translation` Bundle in der AEM 6.5 UberJar-Datei (NPR-31186) fehlt.
-* Jackson Databind-Bibliotheken wurden auf Version 2.9.9.3 aktualisiert, um neue Schwachstellen zu beheben (NPR-30967).
-* Die Titel der Aktivitäten und Benachrichtigungen sind inkonsistent (NPR-30941).
-* Die Paginierung in Communities Blogs funktioniert nicht richtig. (NPR-30914) 
-* Analytics-Berichte werden nicht in der AEM-Autorenumgebung ausgefüllt, eine leere Seite wird angezeigt (NPR-30913).
+* Das Dialogfeld für die Ansichtskonfiguration funktioniert bei der Arbeitsablauffunktion für die Anpassung des Postfachs (NPR-32503 und NPR-32492) nicht ordnungsgemäß.
 
-#### Oak {#oak}
+* Beim Anzeigen von Workflow-Informationen mit Inbox (CQ-4282168) wird eine Fehlermeldung angezeigt.
 
-* Aktualisierungen des Lucene-Indexes, die dazu führen, dass der Autorenserver langsamer wird (NPR-31548).
+### Foundation-Benutzeroberfläche {#foundation-ui-6540}
 
-#### Formulare {#forms-6530}
+* Die Maussteuerung wechselt zum vorherigen Filterfeld, anstatt im vorhandenen Filterfeld zu bleiben, während Assets mit dem Filterbedienfeld (NPR-32538) gesucht werden.
+
+* [Oder die] Suche nach Tags durch Eingabe in die Tag-Felder zeigt Tags außerhalb der Root-Grenzen an und berücksichtigt nicht die `rootPath` Eigenschaft der Tag-Felder (NPR-31895).
+
+* [Browser des Platform UI] -Pfads wird umgebrochen, wenn im Textfeld ein ungültiger Pfad hinzugefügt wird (NPR-31884).
+
+* Die Benachrichtigung wird hinter einem fixierbaren Menü bei der Seitenauswahl (NPR-31628) versteckt.
+
+### Plattform {#platform-sling-6540}
+
+* (HTL) Unterstriche ersetzen Doppelpunkte im Pfadabschnitt der URL (NPR-32231).
+
+### Projekte {#projects-6540}
+
+* Schaltfläche &quot;Erstellen&quot;ist für den Benutzer nicht sichtbar, auch wenn der Benutzer berechtigt ist, ein Projekt im Unterordner zu erstellen (NPR-31832).
+
+### Projektübersetzung {#projects-translation-6540}
+
+* Bei der Erstellung von Übersetzungsprojekten wird die Benutzeroberfläche unterbrochen, wenn die Option &quot;Beschneidungsbereiche&quot;in `Apache Sling JSP Script Handler` (NPR-32154) aktiviert ist.
+
+* Fehler in UI- und Null-Punkt-Ausnahme in Fehlerprotokollen werden beobachtet, wenn ein zu übersetzendes Tag einem Übersetzungsprojekt hinzugefügt wird (NPR-31896).
+
+### Integrationen {#integrations-6540}
+
+* Die URL-Erstellung der Startbibliothek basiert nur auf `path` und `library_name` Werten aus der Start-API und basiert nicht auf dem `library_path` Wert (NPR-31550).
+
+* Während der Verarbeitung von LiveFyre-bezogenen Elementen wird eine Fehlermeldung angezeigt (FYR-12420).
+
+### WCM-Vorlageneditor {#wcm-template-editor-6540}
+
+* Im Strukturmodus bearbeitbarer Vorlagen zeigt die Liste der zulässigen Komponenten im Layout-Container keine Komponente der Verknüpfungsschaltfläche an (CQ-4282099).
+
+* CPU-Spitzen und Experience Manager reagiert nicht mehr, wenn URLs mit `/_jcr_content/.html` oder `/jcr:content/.html` aufgerufen werden (CQ-4280770).
+
+### WCM Page Editor {#wcm-page-editor-6540}
+
+* Fehler werden bei der Auswahl einer Überlagerung und der anschließenden Auswahl von reaktionsfähigen Raster Ziehen Sie Komponenten hierher (CQ-4283342).
+
+### Campaign Targeting {#campaign-targeting-6540}
+
+* Die Target-Cloud-Konfiguration schlägt fehl, wenn die Fehlermeldung &quot;get mboxes&quot;fehlgeschlagen ist (CQ-4279880).
+
+### Brand Portal {#assets-brand-portal}
+
+* Dropdown-Werte für Metadaten-Schemas sind in den Asset-Eigenschaften nicht sichtbar (CQ-4283287).
+
+* Das Metadaten-Unterschema zeigt keine Registerkarten basierend auf dem MIME-Typ in den Asset-Eigenschaften an (CQ-4283288).
+
+* Beim Rückgängigmachen der Veröffentlichung des Metadatenschemas wird eine Fehlermeldung angezeigt, obwohl das Schema im Backend entfernt wurde.
+
+* Das Vorschaubild wird für ein veröffentlichtes Asset nicht angezeigt (CQ-4285886).
+
+* Benutzer kann Assets, die ein einzelnes Anführungszeichen im Namen enthalten (CQ-4272686), nicht veröffentlichen oder die Veröffentlichung rückgängig machen.
+
+* Die Geschäftsbedingungen werden beim Herunterladen mehrerer Assets nicht angezeigt (CQ-4281224).
+
+* Geringfügige Sicherheitslücken wurden behoben.
+
+### Communities {#communities}
+
+* Das Formular &quot;Create Member&quot;wird als leere Seite angezeigt (NPR-31997).
+
+* Benutzer kann den Analytics-Bericht nicht in der Autoreninstanz anzeigen (NPR-30913).
+
+### Oak- Indizierung und Abfragen {#oak-indexing-6540}
+
+* MS Word- und MS Excel-Dokumente, die JPEG-Bild enthalten, wenn die Analyse mit Tika Parser nicht durchgeführt werden kann und der Fehler class not found (Klasse nicht gefunden) wird beobachtet (NPR-31952).
+
+### Formulare {#forms-6530}
 
 >[!NOTE]
 >
 >Das AEM Service Pack enthält keine Fehlerbehebungen für AEM Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
-##### Forms-Add-on-Paket {#forms-add-on-package-6530}
+* Correspondence Management: Briefe zeigen zusätzliche Zeichen an, nachdem Arbeitsabläufe für die Übermittlung an die Nachbearbeitung (NPR-32626) gesendet wurden.
 
-**Adaptive Formulare**
+* Correspondence Management: Briefe zeigen einen Dropdown-Platzhalter als Textkomponente an, nachdem sie an Workflows nach dem Prozess gesendet wurden (NPR-32539).
 
-* Zeichenfolgen enthalten den Wörterbuchschlüssel beim Lokalisieren von adaptiven Formularen (NPR-31110).
+* Correspondence Management: Die in der Briefvorlage definierten Standardwerte werden nicht im Vorschaumodus (NPR-32511) angezeigt.
 
-**Interaktive Kommunikation**
+* Mobile Forms: Die Senden-Schaltfläche wird beim Rendern eines XDP-Formulars in einer HTML-Version (NPR-32514) als vergrößert angezeigt.
 
-* **MissingNode.toString()** gibt nach der Aktualisierung der Jackson-Bibliotheken auf 2.10.0 (NPR-31549) falsche Ergebnisse zurück.
+* Document Services: URL-Zugriffsfehler für Briefe und einige andere Seiten nach Anwendung von Service Pack 2 (NPR-32508, NPR-32509).
 
-* Der Texteditor entfernt nach dem Zufallsprinzip Leerzeichen aus dem aus Microsoft Word kopierten Text (NPR-31113).
+* Document Services: Wenn die Anzahl der Transaktionen auf einem Server eine bestimmte Grenze überschreitet, schlägt die Konvertierung von HTML in PDF fehl und die Dateitypeinstellungen werden vom AEM Forms-Server (NPR-32204) entfernt.
 
-**Korrespondenzverwaltung**
+* Adaptive Formulare: Das Tool zur Barrierefreiheit des Browsers meldet Fehler in adaptiven Formularen gemäß den Richtlinien für WCAG2 Level AA (NPR-32312, NPR-32309, CQ-4285439).
 
-* Beschriftungen und QuickInfos werden beim Migrieren von Briefen von LiveCycle ES4SP1 auf AEM 6.5 (NPR-31615) nicht angezeigt.
+* Adaptive Formulare: Chrome-Browser-Barrierefreiheitstool berichtet über einen Best Practice-Fehler (NPR-32310).
 
-* **Textflussformatierung wird beim Speichern von Briefen als Entwürfe nicht mehr unterstützt** (NPR-30463).
+* Adaptive Formulare: Übersetzungsprobleme beim Konfigurieren eines adaptiven Formulars, das in eine AEM-Siteseite eingebettet ist (NPR-32168).
 
-**Workflow**
+* Workbench: Beim Verwenden des Vorgangs &quot;PDF-Eigenschaften abrufen&quot;für den PDF Utilities-Dienst (NPR-32150) wird eine Fehlermeldung angezeigt.
 
-* OSGi-Arbeitsablauf schlägt aufgrund der 100%igen CPU-Auslastung (NPR-31233) fehl.
+* Document Security: Eine geschützte PDF-Datei kann nicht offline geöffnet werden, wenn die Option DisableGlobalOfflineSynchronizationData auf True (NPR-32078) eingestellt ist.
 
-**HTML5-Formulare**
+* Designer: Wenn die Tagging-Option aktiviert ist, wird der Rand des Teilformulars in der generierten PDF-Ausgabe (NPR-32547) ausgeblendet.
 
-* Beim Generieren einer HTML5-Vorschau eines XDP-Formulars tritt Flackern auf, während Instanzen eines Teilformulars hinzugefügt werden (NPR-30909).
+* Designer: Wenn die Tagging-Option aktiviert ist, wird der Rand des Teilformulars in der generierten PDF-Ausgabe (NPR-31983, NPR-31950) ausgeblendet.
 
-##### Forms on JEE-Installationsprogramm {#forms-jee-installer-6530}
+* Designer: Wenn eine Tabelle zusammengeführte Zellen enthält, schlägt der Barrierefreiheitstest für die Ausgabe-PDF-Datei fehl, die mithilfe des Ausgabediensts (CQ-4285372) aus einem XDP-Formular konvertiert wurde.
 
-**Forms - Document Services**
-
-* Der SOAP-Webdienst, der MTOM in einem .NET-Projekt verwendet, zeigt Ausnahmen für AssemblerServiceClient-Aufrufe und HtmlToPDF2-Methoden (NPR-4281771) an.
-
-**Foundation JEE**
-
-* Die Aktionskonfiguration lädt die Prozessnamen für Übermittlungsaktion &quot;Aufrufen eines Formulararbeitsablaufs&quot;(NPR-31478) nicht.
-* AEM Forms on JEE-Benutzern treten beim Importieren von .lca-Dateien oder beim Einrichten von LDAP in der Admin-Konsole ähnliche Fehler auf:
-
-   `com.ibm.ws.webcontainer.filter.FilterInstanceWrapper doFilter SRVE8109W: Uncaught exception thrown by filter um: java.lang.NoClassDefFoundError: org/apache/commons/io/IOUtils at org.apache.commons.fileupload.util.Streams.copy`
-
-   `Error 500: javax.servlet.ServletException: java.lang.NoClassDefFoundError: org.apache.commons.io.IOUtils` (NPR-30931)
-
-
-### Enthaltene Feature Packs {#feature-packs-included-6530}
-
->[!NOTE]
->
->AEM Forms-Kunden müssen unbedingt beachten, dass das AEM Forms-Add-on-Paket erst nach der Installation jeglicher Service Packs, Cumulative Fix Packs oder Feature Packs von AEM installiert werden darf.
-
-#### Forms – Foundation JEE {#forms-foundation-jee-feature}
-
-* AEM Forms-Unterstützung für Oracle 18c (NPR-29155).
-
-## Install 6.5.3.0 {#install}
+## Install 6.5.4.0 {#install}
 
 **Einrichtungsvoraussetzungen**
 
-* AEM 6.5.3.0 requires AEM 6.5. Check [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* AEM 6.5.4.0 requires AEM 6.5. Check [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * Der Download des Service Packs ist in Adobe Package Share verfügbar, auf das Sie direkt über die AEM 6.5-Instanz zugreifen können.
-* Installieren Sie bei einer Implementierung mit MongoDB und mehreren Instanzen AEM 6.5.3.0 mithilfe von Package Manager auf einer der Autoreninstanzen.
+* Installieren Sie bei einer Implementierung mit MongoDB und mehreren Instanzen AEM 6.5.4.0 mithilfe von Package Manager auf einer der Autoreninstanzen.
 * Erstellen Sie eine Momentaufnahme oder ein neues Backup Ihrer AEM-Instanz, bevor Sie das Service Pack installieren.
 * Starten Sie die Instanz vor der Installation neu. Dies ist zwar nur dann erforderlich, wenn sich die Instanz noch im Aktualisierungsmodus befindet (und dies ist der Fall, wenn die Instanz von einer früheren Version aktualisiert wurde). Dennoch wird dies empfohlen, wenn die Instanz über einen längeren Zeitraum ausgeführt wurde.
 
 >[!CAUTION]
 >
->Adobe rät davon ab, das AEM 6.5.3.0-Paket zu entfernen oder zu deinstallieren.
+>Adobe rät davon ab, das AEM 6.5.4.0-Paket zu entfernen oder zu deinstallieren.
 
 ### Installieren des Service Packs über Package Share {#install-service-pack-via-package-share}
 
 Führen Sie folgende Schritte aus, um das Service Pack in einer vorhandenen AEM 6.5-Instanz zu installieren:
 
-1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.3.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0).
+1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.4.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0).
 
 1. Installieren Sie das heruntergeladene Paket mit Package Manager.
 
 >[!NOTE]
 >
->**Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird in einigen Fällen während der Installation von 6.5.3.0 frühzeitig beendet.**
+>**Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird in einigen Fällen während der Installation von 6.5.4.0 frühzeitig beendet.**
 >
 >Es wird daher empfohlen, auf die Stabilisierung der Fehlerprotokolle zu warten, bevor auf die Instanz zugegriffen wird. Der Benutzer muss auf bestimmte Protokolle im Zusammenhang mit der Deinstallation des Updater-Bundles warten, bevor sichergestellt wird, dass die Installation erfolgreich ist. In der Regel trifft dies auf Safari zu, kann aber mitunter auch auf allen anderen Browsern der Fall sein.
 
 **Automatische Installation**
 
-Es gibt zwei Möglichkeiten, AEM 6.5.3.0 automatisch in einer laufenden Instanz zu installieren:
+Es gibt zwei Möglichkeiten, AEM 6.5.4.0 automatisch in einer laufenden Instanz zu installieren:
 
 A. Platzieren Sie das Paket in ..*Ordner /crx-quickstart/install* , während der Server online verfügbar ist. Das Paket wird automatisch installiert.
 
@@ -346,11 +288,11 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 >[!NOTE]
 >
->AEM 6.5.3.0 unterstützt keine Bootstrap-Installation.
+>AEM 6.5.4.0 unterstützt keine Bootstrap-Installation.
 
 **Bestätigen der Installation**
 
-1. Auf der Seite &quot;Produktinformationen&quot;(/system/console/productinfo) wird die aktualisierte Versionszeichenfolge `Adobe Experience Manager, Version 6.5.3.0` unter &quot;Installierte Produkte&quot;angezeigt.
+1. Auf der Seite &quot;Produktinformationen&quot;(/system/console/productinfo) wird die aktualisierte Versionszeichenfolge `Adobe Experience Manager, Version 6.5.4.0` unter &quot;Installierte Produkte&quot;angezeigt.
 
 1. All  OSGi  bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: /system/console/bundles).
 1. Das OSGI-Bundle org.apache.jackrabbit.oak-core ist auf Version 1.10.6 oder höher (Web-Konsole verwenden: /system/console/bundles).
@@ -365,7 +307,7 @@ In order to see what platforms are certified to run with this release, please re
 
 >[!NOTE]
 >
->AEM 6.5.3.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Wenn Sie eine ältere Version des AEM Forms-Kompatibilitätspakets verwenden und auf AEM 6.5.3.0 aktualisieren, installieren Sie nach der Installation des Forms Add-On-Pakets die neueste Version des AEM Forms-Kompatibilitätspakets.
+>AEM 6.5.4.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Wenn Sie eine ältere Version des AEM Forms-Kompatibilitätspakets verwenden und auf AEM 6.5.4.0 aktualisieren, installieren Sie nach der Installation des Forms Add-On-Pakets die neueste Version des AEM Forms-Kompatibilitätspakets.
 
 1. Stellen Sie sicher, dass Sie das AEM Service Pack installiert haben.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
@@ -377,15 +319,15 @@ In order to see what platforms are certified to run with this release, please re
 >
 >Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Korrekturen in AEM Forms on JEE werden über ein separates Installationsprogramm bereitgestellt.
 
-For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0007](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0007.html).
+For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
 
 #### Workbench-Installationsprogramm
 
 Da es sich um ein vollständiges Installationsprogramm handelt, ist die Dateigröße im Vergleich zur Patch-Version größer. Deinstallieren Sie die vorherige Workbench-Version, bevor Sie die neue Version installieren.
 
-## UberJar {#uber-jar}
+### UberJar {#uber-jar}
 
-The UberJar for AEM 6.5.3.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.3/).
+The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -393,15 +335,15 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.5.3.0</version>
+      <version>6.5.4.0</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
 ```
 
-## Veraltete Funktionen {#removed-deprecated-features}
+## Deprecated features {#removed-deprecated-features}
 
-Dieser Abschnitt listet Funktionen auf, die mit AEM 6.5.3.0 als veraltet markiert wurden. Funktionen, die in einer zukünftigen Version entfernt werden sollen, werden zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine alternative Option verwendet werden muss.
+Dieser Abschnitt listet Funktionen auf, die mit AEM 6.5.4.0 als veraltet markiert wurden. Funktionen, die in einer zukünftigen Version entfernt werden sollen, werden zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine alternative Option verwendet werden muss.
 
 Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität in ihrer aktuellen Bereitstellung nutzen, und Pläne zur Änderung ihrer Implementierung zu erstellen, um die alternative Option zu verwenden.
 
@@ -411,7 +353,7 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 ## Bekannte Probleme {#known-issues}
 
-* Wenn der Assistent zur Konfiguration **von** verknüpften Assets nach der Installation von AEM 6.5.3.0 eine Fehlermeldung 404 zurückgibt, müssen Sie die Pakete **cq-remotedam-client-ui-content** und **cq-remotedam-client-ui-components** manuell mit dem Package Manager neu installieren.
+* Wenn der Konfigurationsassistent für **verbundene Assets nach der Installation die Fehlermeldung 404 zurückgibt, müssen Sie die Pakete** cq-remotedam-client-ui-content **und** cq-remotedam-client-ui-components **** manuell mit dem Package Manager neu installieren.
 * Die folgenden Fehler- und Warnmeldungen können während der Installation von AEM 6.5.x.x angezeigt werden:
    * „Wenn die Target-Integration mit der Target Standard-API (IMS-Authentifizierung) in AEM konfiguriert wird, führt der Export von Experience Fragments nach Target dazu, dass falsche Angebotstypen erstellt werden. Anstelle des Typs „Experience Fragment“/der Quelle „Adobe Experience Manager“ erstellt Target mehrere Angebote mit dem Typ „HTML“/der Quelle „Adobe Target Classic“.
    * com.adobe.granite.maintenance.impl.TaskScheduler: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
@@ -419,28 +361,29 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
    * com.adobe.granite.maintenance.impl.TaskScheduler - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Der Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn Sie eine Vorschau des Assets mit dem Viewer für Banner mit Shopping-Funktion anzeigen.
 
-## Enthaltene OSGi-Bundles und Inhaltspakete {#osgi-bundles-and-content-packages-included}
+## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-In den nachfolgenden Textdokumenten werden die in AEM 6.5.3.0 enthaltenen OSGi-Bundles und Inhaltspakete aufgeführt.
+In den nachfolgenden Textdokumenten werden die in AEM 6.5.4.0 enthaltenen OSGi-Bundles und Inhaltspakete aufgeführt.
 
-Liste der in AEM 6.5.3.0 enthaltenen OSGi-Bundles
+Liste der in AEM 6.5.4.0 enthaltenen OSGi-Bundles
 
-[Datei laden](assets/6530_bundles.txt)
+[Datei laden](assets/6540_bundles.txt)
 
-Liste der in AEM 6.5.3.0 enthaltenen Inhaltspakete
+Liste der in AEM 6.5.4.0 enthaltenen Inhaltspakete
 
-[Datei laden](assets/sp_6530_packages.txt)
+[Datei laden](assets/6540_packages.txt)
 
-## Hilfreiche Ressourcen {#helpful-resources}
-
-* [Versionshinweise zu AEM 6.5](/help/release-notes/release-notes.md)
-* [AEM-Produktseite](https://www.adobe.com/marketing/experience-manager.html)
-* [Dokumentation zu AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
-* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
-
-## Eingeschränkte Sites {#restricted-sites}
+## Restricted sites {#restricted-sites}
 
 Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
 * [Wenden Sie sich an den Support](https://daycare.day.com/public/contact.html). Weitere Informationen zum Zugriff auf das Support-Portal finden Sie unter [Zugriff auf das Support-Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+
+>[!MORE WIE DIESE]
+>
+>* [Versionshinweise zu AEM 6.5](/help/release-notes/release-notes.md)
+>* [AEM-Produktseite](https://www.adobe.com/solutions/web-experience-management.html)
+>* [Dokumentation zu AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
+
