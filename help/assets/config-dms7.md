@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7029d6e7047680880ef89365826dd47af478c0b6
+source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
 
 ---
 
@@ -68,11 +68,13 @@ Mit dem Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder 
 
 Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration](/help/assets/bulk-ingest-migrate.md) von Assets.
 
-## Konfigurieren von Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
+## Erstellen einer Konfiguration für dynamische Medien {#configuring-dynamic-media-cloud-services}
 
-**Vor der Konfiguration von Dynamic Media Cloud Services**: Nachdem Sie Ihre Bereitstellungs-E-Mail mit Anmeldeinformationen für Dynamic Media erhalten haben, müssen Sie sich bei Dynamic Media Classic [anmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) und Ihr Kennwort ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit der Dynamic Media-Cloud-Service mit den richtigen Anmeldedaten eingerichtet wird.
+**Vor der Konfiguration von Dynamic Media**: Nachdem Sie Ihre Bereitstellungs-E-Mail mit Anmeldeinformationen für Dynamic Media erhalten haben, müssen Sie sich bei Dynamic Media Classic [anmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) und Ihr Kennwort ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit der Dynamic Media-Cloud-Service mit den richtigen Anmeldedaten eingerichtet wird.
 
-So konfigurieren Sie Dynamic Media Cloud Services:
+![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+
+**So erstellen Sie eine Konfiguration für dynamische Medien**
 
 1. In AEM, tap the AEM logo to access the global navigation console and tap or click the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Tippen Sie auf der Seite „Browser zur Konfiguration dynamischer Medien“ im linken Bereich auf **[!UICONTROL global]** (tippen Sie nicht auf bzw. wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus) und tippen Sie dann auf **[!UICONTROL Erstellen]**.
@@ -110,8 +112,6 @@ Um einen ausgewählten Ordner zur Synchronisierung mit dynamischen Medien zu mar
    >
    >
    >Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 1. Für eine sichere Vorschau auf Dynamic Media-Inhalt vor dessen Veröffentlichung müssen Sie die AEM Author-Instanz der Whitelist hinzufügen, um eine Verbindung mit Dynamic Media herzustellen:
