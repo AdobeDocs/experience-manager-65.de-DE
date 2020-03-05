@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -75,16 +75,16 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 1. Klicken/tippen Sie auf die Anzeige in der Symbolleiste.
 
-1. Wählen Sie **Alle anzeigen**. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
-1. Standardmäßig wird die [Listenansicht](#inbox-list-view) verwendet, Sie können aber auch zur [Kalenderansicht](#inbox-calendar-view) wechseln. Dies erfolgt über den Ansichtselektor oben rechts in der Symbolleiste.
+1. Wählen Sie **Alle anzeigen**. Der **AEM-Posteingang** wird geöffnet. Der Posteingang zeigt Elemente aus Workflows, Projekten und Aufgaben an.
+1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
 
-   ![wf-79](assets/wf-79.png)
+   ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>Der Posteingang dient als Konsole. Verwenden Sie daher [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation) oder [Suche](/help/sites-authoring/search.md), um nach Beendigung zu einem anderen Ort zu navigieren.
 
 ### Posteingang – Listenansicht {#inbox-list-view}
 
@@ -109,7 +109,7 @@ Sie haben folgende Möglichkeiten:
 
 ![wf-91](assets/wf-91.png)
 
-### Posteingang – Anzeigeeinstellungen {#inbox-view-settings}
+### Inbox - Settings {#inbox-view-settings}
 
 Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
@@ -118,7 +118,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    Für die **Kalenderansicht** können Sie Folgendes konfigurieren:
 
    * **Gruppieren nach**
-   * **Plan** oder **Ohne**
+   * **Zeitplan** oder **Ohne**
    * **Kartengröße**
    ![wf-92](assets/wf-92.png)
 
@@ -126,9 +126,29 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
    Für die **Listenansicht** können Sie die Art der Sortierung konfigurieren:
 
-   * **Sortieren nach**
+   * **Sortierfeld**
    * **Sortierreihenfolge**
-   ![wf-83](assets/wf-83.png)
+   ![wf-83](assets/inbox-settings.png)
+
+### Posteingang - Admin-Steuerung {#inbox-admin-control}
+
+Benutzer, die zur Gruppe der **Workflow-Administratoren** gehören, können die Option &quot;Admin-Steuerung&quot;in der Liste anzeigen. Mithilfe dieser Option können Administratoren:
+
+* Definieren Sie Anpassungen für den Text und das Logo in der Kopfzeile.
+
+* Steuern Sie die Anzeige der verfügbaren Navigationsoptionen in der Kopfzeile und beschränken Sie die Benutzer darauf, zum Workflow-Authoring-Modus zu wechseln oder zu Hilfe- oder anderen Lösungslinks zu navigieren.
+
+![admin-control](assets/admin-control.png)
+
+* **Branding-Anpassung**
+
+   * **Kopfzeilentext anpassen:** Geben Sie den Text in diesem Feld an, um den vorhandenen **Adobe Experience Manager** -Text in der Kopfzeile zu ersetzen.
+
+   * **Logo anpassen:** Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie mit diesem Feld auf dieses Bild, um das in der Kopfzeile angezeigte Adobe Experience Manager-Logo zu ersetzen.
+
+* **Benutzernavigation**
+   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die im Header verfügbaren Navigationsoptionen auszublenden, z. B. die Option zum Navigieren zu anderen Lösungen, den Link Hilfe und die Optionen, die beim Tippen auf das Adobe Experience Manager-Logo oder -Text angezeigt werden.
+* **Speichern:** Tippen/klicken Sie auf diese Option, um die Einstellungen zu speichern.
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
@@ -209,7 +229,7 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
    >
    >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
-1. Klicken Sie in der Symbolleiste auf **Projekt erstellen**, um den Assistenten zu öffnen.
+1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
 1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
 1. Geben Sie die gewünschten Eigenschaften an:
 
