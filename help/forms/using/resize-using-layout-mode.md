@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cc4b667bb20622949c71eee64b07d679109482c1
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -36,15 +36,15 @@ Wählen Sie **Layout** aus der Dropdownliste, die oben auf der Authoring-Oberfl�
 ## Größe von Komponenten ändern {#resize-components}
 
 1. Tippen Sie im Layoutmodus auf die zu ändernde Komponente. Die blauen Punkte werden am Anfang und am Ende des reaktionsfähigen Rasters angezeigt.
-1. Ziehen Sie die blauen Punkte, um die Position der Komponente im interaktiven Raster zu definieren.
+1. Ziehen Sie die blauen Punkte per Drag &amp; Drop, um die Position der Komponente im interaktiven Raster zu definieren.
 
    ![Größe mithilfe des Layoutmodus ändern](assets/layout_mode_resize_new_updated.png)
 
    Die Symbolleiste, die nach dem Tippen auf Komponenten angezeigt wird, besteht aus den folgenden Optionen:
 
-   * **** Übergeordnet: Wählen Sie das übergeordnete Element einer Komponente aus.
-   * **** In neue Zeile schwenken: Versetzen Sie die Komponente in die nächste Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
-   Mit der Option &quot;Haltepunkt **[!UICONTROL zurücksetzen&quot;können Sie alle Änderungen an der Größe rückgängig machen und Standardlayout auf das Bedienfeld anwenden, das die Größe der Komponenten enthält, indem Sie die Option &quot;Haltepunktzurücksetzen&quot;]** (&quot;Haltepunkt ![zurücksetzen&quot;](assets/reverttopreviouslypublishedversion.png)) verwenden. Tippen Sie auf die übergeordnete Komponente der Größenanpassung, um die Option anzuzeigen.
+   * **Übergeordnet:** Wählen Sie das übergeordnete Element einer Komponente aus.
+   * **In neue Zeile schwenken:** Versetzen Sie die Komponente in die nächste Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
+   Mit der Option &quot;Haltepunkt **[!UICONTROL zurücksetzen&quot;können Sie alle Änderungen an der Größe rückgängig machen und Standardlayout auf das Bedienfeld anwenden, das die Größe der Komponenten enthält, indem Sie die Option &quot;Haltepunkt]** zurücksetzen&quot; ![(&quot;Haltepunkt](assets/reverttopreviouslypublishedversion.png)zurücksetzen&quot;) verwenden. Tippen Sie auf die übergeordnete Komponente der Größenanpassung, um die Option anzuzeigen.
 
    >[!NOTE]
    >
@@ -52,21 +52,21 @@ Wählen Sie **Layout** aus der Dropdownliste, die oben auf der Authoring-Oberfl�
 
 ### Beispiel {#example}
 
-**** Zielsetzung: Sie möchten eine Tabellenkomponente und eine Bildkomponente einfügen und sie in einer interaktiven Kommunikation parallel zueinander positionieren.
+**Zielsetzung:** Sie möchten eine Tabellenkomponente und eine Bildkomponente einfügen und sie in einer interaktiven Kommunikation parallel zueinander positionieren.
 
-1. Fügen Sie die Tabellen- und Bildkomponenten im Bearbeitungsmodus im Webkanal ein. Die Bildkomponente wird nach der Tabellenkomponente angezeigt.
+1. Fügen Sie die Tabellen- und Bildkomponenten im Bearbeitungsmodus im Webkanal ein. Die Image-Komponente wird nach der Tabellenkomponente angezeigt.
 1. Wechseln Sie zum Layoutmodus und tippen Sie auf die Komponente &quot;Tabelle&quot;. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
 1. Ziehen Sie den blauen Punkt in Spalte 12 in Spalte 6 des interaktiven Rasters.
 
    ![Definieren des Endpunkts der Tabelle](assets/layout_mode_end_point_table_new.png)
 
-1. Ebenso wählen Sie die Image-Komponente aus und ziehen Sie den blauen Punkt in Spalte 1 in Spalte 7 des interaktiven Rasters. Die Tabellen- und Bildkomponenten werden parallel zueinander angezeigt.
+1. Wählen Sie auf ähnliche Weise die Image-Komponente aus und ziehen Sie den blauen Punkt in Spalte 1 in Spalte 7 des interaktiven Rasters. Die Tabellen- und Bildkomponenten werden parallel zueinander angezeigt.
 
    ![Tabelle und Bild parallel im Layoutmodus](assets/table_image_parallel_new.png)
 
    Sie können die Bildkomponente auswählen und auf die Option &quot; **Auf neue Zeile** verschieben&quot;tippen, die in der Symbolleiste verfügbar ist, um die Bildkomponente zur nächsten Zeile zu verschieben.
 
-## Bedienfelder anpassen {#resize-panels-layout-mode}
+## Größe von Bedienfeldern ändern {#resize-panels-layout-mode}
 
 Führen Sie die folgenden Schritte aus, wenn Sie die Größe des gesamten Bedienfelds anstelle einzelner Komponenten ändern möchten:
 
@@ -76,6 +76,20 @@ Führen Sie die folgenden Schritte aus, wenn Sie die Größe des gesamten Bedien
 
 1. Ziehen Sie die blauen Punkte per Drag &amp; Drop, um die Position des Bereichs im interaktiven Raster zu definieren.
 Sie können die Schritte 1 und 2 wiederholen und &quot;Übergeordnetes Element ![auswählen](assets/float_to_new_line_icon.svg) &quot;auswählen, um den Bereich mit der Größenanpassung zur nächsten Zeile zu verschieben.
+
+## Definieren des Layouts für mehrere Spalten für ein Bedienfeld
+
+Führen Sie die folgenden Schritte aus, um die Anzahl der Spalten für ein Bedienfeld zu definieren:
+
+1. Tippen Sie im **[!UICONTROL Bearbeitungsmodus]** auf das Bedienfeld, wählen Sie &quot; ![Konfigurieren](assets/configure_icon.png)&quot;und wählen Sie &quot; **[!UICONTROL Interaktiv - alles auf der Seite ohne Navigationsoption]** &quot;.
+
+1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
+
+1. Tippen Sie im **[!UICONTROL Layoutmodus]** auf eine der Komponenten im Bereich, deren Größe Sie ändern möchten, wählen Sie &quot;Übergeordnet ![auswählen](assets/select_parent_icon.svg)&quot;und wählen Sie in der Dropdownliste die erste Option aus, wenn der Bereich direkt über der Komponente liegt.
+
+1. Tippen Sie auf ![mehrere Spalten](assets/multi-column.svg) und wählen Sie die Anzahl der Spalten aus der Dropdownliste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Das Bedienfeld wird in ein mehrspaltiges Layout unterteilt.
+
+![mehrere Spalten im Layoutmodus](assets/multi-column-layout.png)
 
 ## Aktivieren des neuen interaktiven Rasters für alte reaktionsfähige Layouts {#enableresponsivegrid}
 
@@ -98,7 +112,7 @@ Mit dem neuen reaktionsfähigen Layout für adaptive Formulare können Sie ein a
 
 Wenn Sie ein Fragment mit dem neuen reaktionsfähigen Layout in ein adaptives Formular mit einem alten reaktionsfähigen Layout einbetten, fordert Sie das System auf, den Layoutmodus für das Formular zu aktivieren und das Fragment erneut einzubetten.
 
-Um den Layoutmodus zu aktivieren, wählen Sie in der Dropdown-Liste, die oben neben der Option &quot; **Vorschau** &quot;angezeigt wird, die Option &quot; **Layout** &quot;und klicken Sie zur Bestätigung auf **&quot;Ja** &quot;. Wählen Sie **Bearbeitungsmodus** , um das Fragment erneut einzubetten.
+Um den Layoutmodus zu aktivieren, wählen Sie in der Dropdown-Liste, die oben neben der Option &quot; **Vorschau** &quot;angezeigt wird, die Option &quot; **Layout** &quot;aus und tippen Sie zur Bestätigung auf **Ja** . Wählen Sie **Bearbeitungsmodus** , um das Fragment erneut einzubetten.
 
 ## Layout-Modus für Formulare mit altem reaktionsfähigem Layout deaktivieren {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
