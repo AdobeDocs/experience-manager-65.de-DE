@@ -4,7 +4,7 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 27fdeaf50255379fd6e5bb45eaf593cec895cd04
 
 ---
 
@@ -21,7 +21,7 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 
 * Eine Sammlung, die eine statische Referenzliste mit Assets, Ordnern und anderen Sammlungen enthält.
 
-* Eine intelligente Sammlung, die basierend auf Suchkriterien dynamisch Elemente enthält.
+* Eine intelligente Sammlung, die Elemente basierend auf Suchkriterien dynamisch enthält.
 
 ## Zugriff auf die Sammlungskonsole {#navigating-the-collections-console}
 
@@ -77,7 +77,7 @@ Gehen Sie wie folgt vor, um eine intelligente Sammlung zu erstellen:
 
 1. Navigieren Sie zur Benutzeroberfläche &quot;Assets&quot;und tippen/klicken Sie auf das Suchsymbol.
 
-1. Geben Sie in das Feld Omniture Search den Suchbegriff ein und drücken Sie die Eingabetaste. Öffnen Sie das Filterbedienfeld und wenden Sie einen Suchfilter an.
+1. Geben Sie den Suchbegriff in das Feld Omniture Search ein und drücken Sie die Eingabetaste. Öffnen Sie das Filterbedienfeld und wenden Sie einen Suchfilter an.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Dateien und Ordner]** die Option **[!UICONTROL Dateien]** aus.
 
@@ -119,7 +119,7 @@ Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Ass
 
 ## Bearbeiten einer intelligenten Sammlung {#editing-a-smart-collection}
 
-Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#editing-saved-searches).
+Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. Tippen bzw. klicken Sie in der Benutzeroberfläche &quot;Assets&quot;in der Symbolleiste auf das Suchsymbol.
 
@@ -209,7 +209,7 @@ Sie können Sammlungseinstellungen, wie z. B. Titel und Beschreibung, bearbeite
 
    >[!NOTE]
    >
-   >You can also delete smart collections by [deleting saved searches](#deleting-saved-searches).
+   >You can also delete smart collections by [deleting saved searches](#saved-searches).
 
 ## Sammlung herunterladen {#downloading-a-collection}
 
