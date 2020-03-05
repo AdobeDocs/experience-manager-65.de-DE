@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9c73abc3291f2847c705cb649d2993fb186b0993
+source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 
 ---
 
 
 # Veröffentlichen von Sammlungen in Brand Portal {#publish-collections-to-brand-portal}
 
-Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Sammlungen in der AEM Assets Brand Portal-Instanz veröffentlichen. Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. For details, see [Configure AEM Assets integration with Brand Portal](/help/assets/brand-portal-configuring-integration.md).
+Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Sammlungen in der AEM Assets Brand Portal-Instanz veröffentlichen. Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. For details, see [Configure AEM Assets with Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Wenn Sie nachfolgende Änderungen an der ursprünglichen Sammlung in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie die Sammlung erneut veröffentlichen. Mit dieser Eigenschaft wird sichergestellt, dass in der Arbeit befindliche Änderungen nicht im Markenportal verfügbar sind. Nur genehmigte Änderungen, die von einem Administrator veröffentlicht werden, sind im Markenportal verfügbar.
 
