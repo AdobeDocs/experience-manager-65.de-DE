@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Verwaltungsaufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f191f90f7a417387930d2d4cf7b9482aabbd6156
+source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
 
 ---
 
@@ -331,6 +331,24 @@ Gehen Sie wie folgt vor, um eine Vorschau eines Assets anzuzeigen.
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
+
+**Anzeigen einer Asset-Vorschau nur mit Tastaturbefehlen**
+
+Gehen Sie wie folgt vor, um eine Vorschau eines Assets über die Tastatur anzuzeigen:
+
+1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;mithilfe der Pfeiltasten zum Speicherort des Assets, das Sie in der Vorschau anzeigen möchten, `Tab` und wählen Sie den Speicherort aus.
+
+1. Öffnen Sie das gewünschte Asset.
+
+   In the preview mode, zoom and reset options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
+1. So vergrößern Sie das Asset:
+   1. Verwenden Sie die `Tab` Taste, um den Fokus auf das Einzoomen-Symbol zu verschieben.
+   1. Verwenden Sie die `Enter` Taste, um das Bild zu vergrößern.
+   Zum Auszoomen verwenden Sie die `Tab` Taste, um den Fokus auf das Zoomsymbol zu verschieben, und drücken `Enter`Sie die Eingabetaste.
+
+1. Verwenden Sie `Shift` + `Tab` , um den Fokus wieder auf das Bild zu verschieben.
+
+1. Verwenden Sie die Pfeiltasten, um sich um das gezoomte Bild zu bewegen.
 
 See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
