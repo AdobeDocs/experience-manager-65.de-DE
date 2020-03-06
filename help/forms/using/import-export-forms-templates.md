@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -21,7 +21,7 @@ Sie können Formulare und zugehörige Assets, Designs, Datenwörterbücher, Doku
 
 >[!NOTE]
 >
->* In AEM 6.4 Forms hat sich die Struktur und die Pfade des CRX-Repository geändert. Wenn Sie Assets aus einer früheren Version in AEM 6.4 Forms importieren und das Formular Abhängigkeiten zur älteren Struktur aufweist, müssen Sie die Abhängigkeiten manuell exportieren. Weitere Informationen zu Änderungen in der Struktur und den Pfaden des Repositorys finden Sie unter [Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+>* In AEM 6.4 Forms hat sich die Struktur und die Pfade des CRX-Repository geändert. Wenn Sie Assets aus einer früheren Version in AEM 6.4 Forms importieren und das Formular einige Abhängigkeiten von der älteren Struktur aufweist, müssen Sie die Abhängigkeiten manuell exportieren. Weitere Informationen zu Änderungen in der Struktur und den Pfaden des Repositorys finden Sie unter [Repository-Umstrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 
@@ -36,7 +36,7 @@ Sie müssen AEM Package Manager verwenden, um ein CRX-Paket dieser Elemente auf 
 
 ### Assets für Formulare und Dokumente herunterladen {#download-forms-amp-documents-assets}
 
-So laden Sie Formulare und Dokumente herunter:
+So laden Sie die Assets &quot;Formulare und Dokumente&quot;herunter:
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms > Forms &amp; Documents.
@@ -136,7 +136,7 @@ Um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten al
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
 
-   (Die Seite &quot;Alle Correspondence Management-Assets exportieren&quot;wird angezeigt und enthält Informationen zum letzten Mal, wenn der Exportvorgang versucht wurde, sowie einen Link zum Herunterladen des zuletzt erfolgreich exportierten Pakets.
+   (&quot;Die Seite &quot;Alle Correspondence Management-Assets exportieren&quot;wird angezeigt und enthält Informationen zum letzten Mal, wenn der Exportvorgang versucht wurde, sowie einen Link zum Herunterladen des zuletzt erfolgreich exportierten Pakets.
 
    ![export-last-run-details](assets/export-last-run-details.png)
 
@@ -202,7 +202,7 @@ Führen Sie zum Erstellen eines Ordners die folgenden Schritte aus:
 1. Tippen Sie auf „Erstellen“ > „Ordner“.
 1. Geben Sie die folgenden Details ein:
 
-   * **** Titel: Anzeigename für den Ordner
+   * **Titel:** Anzeigename für den Ordner
    * **Name:***(Obligatorisch)* Der Knotenname, unter dem Sie den Ordner im Repository speichern möchten
    >[!NOTE]
    >
@@ -239,7 +239,7 @@ Wenn Sie nach Assets suchen, zeigt AEM Forms den Seitenbereich an. You can also 
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Suche** B. Filter
+**A.** Suche **B.** Filter
 
 ![Seitenbereich - Filter](assets/search_sidepanel.png)
 
