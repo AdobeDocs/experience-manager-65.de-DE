@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -88,7 +88,7 @@ Das klassische Benutzeroberflächen-Authoring ist in AEM 6.5 weiterhin verfügba
 
 Um Aktualisierungen zu vereinfachen und sicherzustellen, dass Konfigurationen während einer Aktualisierung nicht überschrieben werden, wird das Repository in 6.4 umstrukturiert, um Inhalt und Konfiguration voneinander zu trennen.
 
-Therefore, a number of settings must be moved to no longer reside under `/etc` as had been the case in the past. To review the full set of repository restructuring concerns that must be reviewed and accomodated in the updated to AEM 6.4, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+Therefore, a number of settings must be moved to no longer reside under `/etc` as had been the case in the past. To review the full set of repository restructuring concerns that must be reviewed and accomodated in the updated to AEM 6.4, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## AEM-Anpassungen  {#aem-customizations}
 
