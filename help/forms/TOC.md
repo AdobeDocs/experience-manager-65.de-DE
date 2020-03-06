@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 translation-type: tm+mt
-source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
+source-git-commit: 42a08dca17df382b875c5326a64b5584028741d8
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Einführung in das Verwalten von Formularen](using/introduction-managing-forms.md)
    + [Einführung in den Dienst für die automatisierte Formularkonvertierung](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
    + Tutorial: Create your First Adaptive Form {#create-first-adaptive-form}
-      + [Übung: Erstes adaptives Formular erstellen](using/create-your-first-adaptive-form.md)
+      + [Übung: Erstellen des ersten adaptiven Formulars](using/create-your-first-adaptive-form.md)
       + [Schulung: Erstellen eines adaptiven Formulars](using/create-adaptive-form.md)
       + [Schulung: Formulardatenmodell erstellen](using/create-form-data-model.md)
       + [Übung: Regeln auf Felder in adaptiven Formularen anwenden](using/apply-rules-to-adaptive-form-fields.md)
@@ -62,7 +62,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Automatisierte Formularkonvertierungsdienste installieren und konfigurieren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [Unterstützte Plattformen für AEM Forms on JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+      + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [Installieren und Konfigurieren von AEM Forms Document Security Server](using/installing-and-configuring-the-document-security-server.md)
       + [Vorbereiten der Installation des AEM Forms-Einzelservers](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
       + [Installieren und Bereitstellen von AEM Forms on JEE für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
@@ -302,6 +302,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Correspondence Management – Zusammenfassung](using/cm-overview.md)
    + [Layout-Design](using/layout-design-details.md)
    + [Datenwörterbuch](using/data-dictionary.md)
+   + [Dokumentfragmente](using/document-fragments.md)
    + [Brief erstellen](using/create-letter.md)
    + [Korrespondenz erstellen](using/create-correspondence.md)
    + [Remote-Funktionen im Ausdrucksgenerator](using/expression-builder.md)
@@ -564,7 +565,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Einführung in die Prozessberichterstellung](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Erste Schritte mit der Prozessberichterstellung](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funktionsweise der Prozessberichterstellung](/help/forms/using/process-reporting/process-reporting-architecture.md)
-   + [Vordefinierte Berichte in Process Reporting](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)
+   + [Vordefinierte Berichte in der Prozessberichterstellung](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)
    + [Benutzerspezifische Berichte in der Prozessberichterstellung](/help/forms/using/process-reporting/process-reporting-custom-reports.md)
    + [Ad-hoc-Abfragen in der Prozessberichterstellung](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Fehlerbehebung bei der Prozessberichterstellung](/help/forms/using/process-reporting/troubleshooting-process-management.md)
@@ -638,7 +639,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
          + [Aufteilen eines PDF-Dokuments mit der Webdienst-API](developing/disassemble-pdf-document-using-web.md)
          + [Bestimmen, ob Dokumente PDF/A-konform sind](developing/determining-whether-documents-pdf-a.md)
          + [Dynamisches Erstellen von DDX-Dokumenten](developing/dynamically-creating-ddx-documents.md)
-         + [Bearbeiten gesendeter Formulare](developing/handling-submitted-forms.md)
+         + [Verarbeiten gesendeter Formulare](developing/handling-submitted-forms.md)
          + [Optimieren der Leistung des Forms-Dienstes](developing/optimizing-performance-forms-service.md)
          + [Übergeben von Dokumenten an den FormsService](developing/passing-documents-forms-service.md)
          + [Vorausfüllen von Formularen mit flexiblen Layouts](developing/prepopulating-forms-flowable-layouts.md)
