@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 | Version | 6.5.4.0 |
 | Typ | Service Pack-Version |
 | Datum | 05. März 2020 |
-| Download-URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| Download-URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), [Software Distribution(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Inhalt von Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -128,8 +128,6 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Wenn Sie den Inhalt innerhalb desselben Ordners verschieben, ist die Option zum Verschieben der Seite deaktiviert (NPR-31840).
 
-* Wenn URLs mit /_jcr_content/.html oder /jcr:content/.html aufgerufen werden, reagieren CPU-Spitzen und AEM nicht mehr (NPR-31837).
-
 * Im Strukturmodus bearbeitbarer Vorlagen zeigt die Liste der zulässigen Komponenten im Layout-Container falsche Ergebnisse an. Im Layout-Container (NPR-31816) werden nur Komponenten mit Design-Dialog angezeigt.
 
 * Wenn eine Seite schreibgeschützte Berechtigungen für einen Benutzer hat, ist die Option &quot;Eigenschaften öffnen&quot;in sites.html, jedoch nicht in editor.html (NPR-31770) sichtbar.
@@ -179,8 +177,6 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 ### WCM-Vorlageneditor {#wcm-template-editor-6540}
 
 * Im Strukturmodus bearbeitbarer Vorlagen zeigt die Liste der zulässigen Komponenten im Layout-Container keine Komponente der Verknüpfungsschaltfläche an (CQ-4282099).
-
-* CPU-Spitzen und Experience Manager reagiert nicht mehr, wenn URLs mit `/_jcr_content/.html` oder `/jcr:content/.html` aufgerufen werden (CQ-4280770).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
