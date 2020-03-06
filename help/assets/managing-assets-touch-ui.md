@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Verwaltungsaufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
+source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
 
 ---
 
@@ -562,8 +562,6 @@ Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.m
 
 1. Wählen Sie entweder per Schnellzugriff **[!UICONTROL Veröffentlichen]** auf der Asset-Karte aus oder wählen Sie das Asset aus und tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Schnell veröffentlichen]**.
 1. Wenn das Asset andere Assets referenziert, werden die Verweise im Assistenten aufgelistet. Es werden nur Verweise angezeigt, die entweder unveröffentlicht sind oder seit der letzten Veröffentlichung/Aufhebung der Veröffentlichung geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
-
-   ![chlimage_1-225](assets/chlimage_1-21.png)
 
    >[!NOTE]
    >
