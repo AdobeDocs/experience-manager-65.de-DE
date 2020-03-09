@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -41,6 +41,6 @@ Das Hauptziel für HTML5-Formulare sind Touch-Geräte. Daher wurde ein neues Scr
 
 #### Rich text format {#rich-text-format}
 
-Um einem Textfeld im gerenderten HTML5-Formular eine Liste mit Formatierungsoptionen hinzuzufügen, können Sie in Forms Designer ein Feldformat für das Textfeld definieren. Tippen Sie in der **[!UICONTROL Designansicht]** auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdownliste &quot; **[!UICONTROL Feldformat]** &quot;die Option &quot; **[!UICONTROL Rich Text]** &quot;aus, um die Einstellungen anzuwenden. Das Textfeld zeigt Formatierungsoptionen an, wenn es in einem HTML5-Formular wiedergegeben wird.
+Definieren Sie ein Rich-Text-Feldformat für das Textfeld in Forms Designer, um dem Feld im gerenderten HTML5-Formular eine Liste mit Formatierungsoptionen hinzuzufügen. Um die Einstellungen anzuwenden, tippen Sie in der **[!UICONTROL Designansicht]** auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdownliste &quot; **[!UICONTROL Feldformat]** &quot;die Option &quot; **[!UICONTROL Rich Text]** &quot;aus. Das Textfeld zeigt Formatierungsoptionen an, wenn es in einem HTML5-Formular wiedergegeben wird.
 
 [Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
