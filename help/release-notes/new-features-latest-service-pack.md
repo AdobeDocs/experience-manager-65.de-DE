@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
+source-git-commit: 93521f102596a7f5cb247ddc430626d352338ce8
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 Im Jahr 2020 bietet Adobe Experience Manager (AEM) 6.5 Funktionen und kontinuierliche Verbesserungen in Quartalspaketen. Die Kunden profitieren von diesem neuen Ansatz, wenn sie die Innovationen schneller umsetzen.
 
-Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlicht. Dieser Artikel hebt die Funktionen hervor, die das neueste Service Pack bietet, um Ihre AEM-Reise noch bereichernder zu gestalten.
+Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlicht. In diesem Artikel werden die Funktionen der neuesten Service Pack-Angebot vorgestellt, mit denen Sie Ihre AEM-Reise noch bereichern können.
 
 ## AEM Sites {#aem-sites}
 
@@ -27,7 +27,7 @@ Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlic
 
 * Im Vorlageneditor wurde die Verarbeitung unvollständiger oder ungültiger URLs verbessert, die eine Verlangsamung des Vorlageneditors auslösen können.
 
-Darüber hinaus umfasst AEM 6.5 SP4 auch Verbesserungen am Style-System. Sie können jetzt auch Stile in einem Komponentendialogfeld auswählen.
+Darüber hinaus enthält AEM 6.5 SP4 auch Verbesserungen am Style-System. Sie können jetzt auch Stile in einem Komponentendialogfeld auswählen.
 
 
 ## AEM Assets {#aem-assets}
@@ -54,7 +54,7 @@ Sie können entweder eine neue Integration erstellen oder Ihre Integrationseinst
 
 ## AEM Forms {#aem-forms}
 
-### Generieren einer druckbaren Ausgabe in AEM Forms-Arbeitsabläufen {#generate-printable-output}
+### Generieren einer druckbaren Ausgabe in AEM Forms Workflows {#generate-printable-output}
 
 Wenn eine Lösung mehrere Kopien einer Quellvorlagendatei drucken und in eine Datendatei mit zahlreichen Datensätzen integrieren soll, steht in AEM Forms ein neuer Arbeitsablaufschritt zum Generieren druckbarer Ausgabe zur Verfügung. Wenn Sie z. B. ein Quellformular mit einem anderen Namen jedes Mal drucken möchten, wenn es gedruckt wird, können Sie diese Namen in der Datendatei enthalten und in eine Standardvorlagendatei integrieren.
 
@@ -82,13 +82,13 @@ Müssen Sie die in AEM-Kopfzeilen verfügbaren Optionen je anpassen? Es ist jetz
 
 Benutzer, die zur Gruppe der **Workflow-Administratoren** gehören, können jetzt den am oberen Rand verfügbaren Kopfzeilentext mit dem Text Ihrer Wahl anpassen, um den vorhandenen **[!UICONTROL Adobe Experience Manager]** -Text zu ersetzen.
 
-Die neue Option Kopfzeilentext **** anpassen finden Sie unter &quot;Ansichtsauswahl&quot;(oben rechts in der Symbolleiste verfügbar) > **[!UICONTROL Admin-Steuerung]**.
+Die neue Option Kopfzeilentext **** anpassen finden Sie unter Ansicht-Selektor (rechts oben in der Symbolleiste verfügbar) > **[!UICONTROL Admin-Steuerung]**.
 
 **Logo anpassen**
 
 Ähnlich wie beim Anpassen des Kopfzeilentextes können Benutzer, die zur Gruppe der **Workflow-Administratoren** gehören, jetzt das Logo anpassen, das oben mit dem Logo Ihrer Wahl verfügbar ist.
 
-Die neue Option Logo **** anpassen finden Sie unter Auswahl > **[!UICONTROL Admin-Steuerung]**.
+Die neue **[!UICONTROL Option Logo]** anpassen finden Sie unter Ansicht-Auswahl > **[!UICONTROL Admin-Kontrolle]**.
 
 Weitere Informationen zu dieser Funktion finden Sie unter [Ihr Posteingang](../sites-authoring/inbox.md).
 
@@ -96,15 +96,15 @@ Weitere Informationen zu dieser Funktion finden Sie unter [Ihr Posteingang](../s
 
 Benutzer, die zur Gruppe der **Workflow-Administratoren** gehören, haben die Möglichkeit, die Benutzer je nach ihrer Rolle in einem eingeschränkten Modus mit AEM arbeiten zu lassen. Die Administratoren können die Anzeige der verfügbaren Navigationsoptionen in der Kopfzeile steuern und die Benutzer darauf beschränken, zum Workflow-Authoring-Modus zu wechseln oder zu Hilfe- oder anderen Lösungslinks zu navigieren.
 
-Sehen Sie sich die neuen **[!UICONTROL Navigationsoptionen]** &quot;Ausblenden&quot;unter &quot;Ansichtsauswahl&quot;> &quot; **[!UICONTROL Admin-Steuerung]**&quot;an.
+Sehen Sie sich die neuen **[!UICONTROL Navigationsoptionen]** &quot;Ausblenden&quot;unter &quot;Ansicht-Auswahl&quot;> &quot; **[!UICONTROL Admin-Kontrolle]**&quot;an.
 
 Weitere Informationen zu dieser Funktion finden Sie unter [Ihr Posteingang](../sites-authoring/inbox.md).
 
 ### Rich-Text-Unterstützung in HTML5-Formularen {#rich-text-support}
 
-Das Textfeld kann jetzt eine Liste der Formatierungsoptionen im gerenderten HTML5-Formular anzeigen. Sie müssen ein Feldformat für das Textfeld in Forms Designer definieren, um geeignete Einstellungen auf das Feld anzuwenden.
+Das Textfeld kann jetzt eine Liste von Formatierungsoptionen im gerenderten HTML5-Formular anzeigen. Sie müssen ein Feldformat für das Textfeld in Forms Designer definieren, um geeignete Einstellungen auf das Feld anzuwenden.
 
-Um diese Funktion zu verwenden, tippen Sie in der **[!UICONTROL Designansicht]** von Forms Designer auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdownliste &quot; **[!UICONTROL Feldformat]** &quot;die Option &quot; **[!UICONTROL Rich Text]** &quot;aus, um die Einstellungen anzuwenden. Das Textfeld zeigt jetzt Formatierungsoptionen an, wenn es in einem HTML5-Formular wiedergegeben wird.
+Um diese Funktion zu verwenden, tippen Sie in Forms Designer in der **[!UICONTROL Design-Ansicht]** auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdown-Liste &quot; **[!UICONTROL Feldformat]** &quot;die Option &quot; **[!UICONTROL Rich Text]** &quot;aus, um die Einstellungen anzuwenden. Das Textfeld zeigt jetzt Formatierungsoptionen an, wenn es in einem HTML5-Formular wiedergegeben wird.
 
 Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML5-Formulare](../forms/using/designing-form-template.md).
 
@@ -112,7 +112,7 @@ Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML
 
 Zusätzlich zu den neuen Funktionen umfasst AEM 6.5 Service Pack 4 die folgenden wichtigen Highlights:
 
-* Es können jetzt nur selektive Content-Unterbäume mit Scene7 anstelle von allen synchronisiert werden `content/dam`.
+* Es können jetzt nur ausgewählte Unterbäume mit *dynamischen Medien - Scene7-Modus* anstelle von allen synchronisiert werden `content/dam`.
 
 * Die Integration von Formulardatenmodellen mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
@@ -154,9 +154,9 @@ Zwischen dem 12. Dezember 2019 und dem 5. März 2020 hat Adobe die folgenden Fun
 
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
 
-* CLI-Aktualisierungen für AEM Cloud ManagerAutomatisieren von Cloud Manager-Aufgaben mithilfe des Befehlszeilenwerkzeugs. Wir erweitern den CLI kontinuierlich - nehmen an [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases)teil.
+* CLI-Aktualisierungen für AEM Cloud ManagerAutomatisieren von Cloud Manager-Aufgaben mit dem Befehlszeilenwerkzeug. Wir erweitern den CLI kontinuierlich - nehmen an [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases)teil.
 
-* AEM-Sites: Project Archetype 23Die beste Möglichkeit, ein neues AEM-Projekt zu starten. Mit Archetype 23 [verschmelzen wir den Projektarchiv für SPA und reguläre Sites zu einem](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23)und bieten damit ein Standarddesign, um Ihre Front-End-Entwicklung zu starten.
+* AEM-Sites: Project Archetype 23Die beste Möglichkeit, ein neues AEM-Projekt Beginn. Mit Archetype 23 [verschmelzen wir den Projektarchiv für SPA und reguläre Sites zu einem](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23)und bieten damit ein Standarddesign, um Ihre Front-End-Entwicklung voranzutreiben.
 
 * AEM-Sites: WKND-ReferenzseiteAlle [neuen Referenzprojekte](https://www.wknd.site/) mit Best Practices zum Erstellen von Sites mit AEM. Erfahren Sie mehr über das komplett aktualisierte [WKND-Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) und nehmen Sie den Code von [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
 
