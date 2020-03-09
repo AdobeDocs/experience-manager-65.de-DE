@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -81,11 +81,11 @@ Sie können die Schritte 1 und 2 wiederholen und &quot;Übergeordnetes Element !
 
 Führen Sie die folgenden Schritte aus, um die Anzahl der Spalten für ein Bedienfeld zu definieren:
 
-1. Tippen Sie im **[!UICONTROL Bearbeitungsmodus]** auf das Bedienfeld, wählen Sie &quot; ![Konfigurieren](assets/configure_icon.png)&quot;und wählen Sie &quot; **[!UICONTROL Interaktiv - alles auf der Seite ohne Navigationsoption]** &quot;.
+1. Tippen Sie im **[!UICONTROL Bearbeitungsmodus]** auf das Bedienfeld, wählen Sie ![Konfigurieren](assets/configure_icon.png)und wählen Sie **[!UICONTROL Responsive - alles auf der Seite ohne Navigationsoption]** aus der Dropdownliste **[!UICONTROL Bedienfeldlayout]** .
 
 1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
 
-1. Tippen Sie im **[!UICONTROL Layoutmodus]** auf eine der Komponenten im Bereich, deren Größe Sie ändern möchten, wählen Sie &quot;Übergeordnet ![auswählen](assets/select_parent_icon.svg)&quot;und wählen Sie in der Dropdownliste die erste Option aus, wenn der Bereich direkt über der Komponente liegt.
+1. Tippen Sie im **[!UICONTROL Layoutmodus]** auf eine der Komponenten im Bedienfeld, wählen Sie &quot;Übergeordnetes Element ![auswählen](assets/select_parent_icon.svg)&quot;und dann den Bereich aus.
 
 1. Tippen Sie auf ![mehrere Spalten](assets/multi-column.svg) und wählen Sie die Anzahl der Spalten aus der Dropdownliste aus. Die Anzahl der Spalten kann zwischen 1 und 12 liegen. Das Bedienfeld wird in ein mehrspaltiges Layout unterteilt.
 
