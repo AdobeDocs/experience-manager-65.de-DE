@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -245,7 +245,7 @@ Einige empfohlene Vorgehensweisen beim Lokalisieren adaptiver Formulare lauten w
 
    `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms unterstützt derzeit die Lokalisierung von Inhalten adaptiver Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-br), Chinesisch (zh-tn), Chinesisch-Taiwan (zh-tw) und Koreanisch (ko-kr). Sie können jedoch neuen Support für neue Gebietsschemata für adaptive Formulare zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen](/help/forms/using/supporting-new-language-localization.md).
+* AEM Forms unterstützt derzeit die Lokalisierung von Inhalten adaptiver Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können jedoch neuen Support für neue Gebietsschemata für adaptive Formulare zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen](/help/forms/using/supporting-new-language-localization.md).
 
 ## Vorbereiten von Formularprojekten für die Produktion {#prepare-forms-project-for-production}
 
