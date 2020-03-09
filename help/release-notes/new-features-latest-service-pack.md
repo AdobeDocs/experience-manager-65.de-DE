@@ -112,7 +112,7 @@ Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML
 
 Zusätzlich zu den neuen Funktionen umfasst AEM 6.5 Service Pack 4 die folgenden wichtigen Highlights:
 
-* Es können jetzt nur ausgewählte Unterbäume mit *dynamischen Medien - Scene7-Modus* anstelle von allen synchronisiert werden `content/dam`.
+* Es können jetzt nur ausgewählte Unterbäume mit ***dynamischen Medien - Scene7-Modus*** anstelle von allen synchronisiert werden `content/dam`.
 
 * Die Integration von Formulardatenmodellen mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
