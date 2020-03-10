@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c9e8e1f2ebb72efc2f54c13c3ddae525ec55349f
+source-git-commit: d0038181326037ab71f4df9b509d2f0827191c86
 
 ---
 
@@ -109,7 +109,7 @@ Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML
 
 Zusätzlich zu den neuen Funktionen umfasst AEM 6.5 Service Pack 4 die folgenden wichtigen Highlights:
 
-* Sie können jetzt ausgewählte Inhaltsunterbauten mit Scene7 synchronisieren, anstatt mit allen verfügbaren zu synchronisieren `content/dam`.
+* Sie können jetzt ausgewählte Inhaltsunterbauten mit *dynamischen Medien - Scene7-Modus* und nicht mit allen verfügbaren Elementen synchronisieren `content/dam`.
 
 * Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
