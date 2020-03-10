@@ -4,14 +4,14 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 93521f102596a7f5cb247ddc430626d352338ce8
+source-git-commit: c9e8e1f2ebb72efc2f54c13c3ddae525ec55349f
 
 ---
 
 
 # Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Im Jahr 2020 bietet Adobe Experience Manager (AEM) 6.5 Funktionen und kontinuierliche Verbesserungen in Quartalspaketen. Die Kunden profitieren von diesem neuen Ansatz, wenn sie die Innovationen schneller umsetzen.
+Adobe Experience Manager (AEM) 6.5 bietet Funktionen und kontinuierliche Verbesserungen durch vierteljährliche Service Packs in diesem Jahr. Der neue Ansatz kommt unseren Kunden zugute, wenn sie die Innovationen schneller umsetzen.
 
 Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlicht. In diesem Artikel werden die Funktionen der neuesten Service Pack-Angebot vorgestellt, mit denen Sie Ihre AEM-Reise noch bereichern können.
 
@@ -23,20 +23,17 @@ Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlic
 
 * Die Zeit zum Aktualisieren einer Seite nach dem Ziehen und Ablegen von Erlebnisfragmenten in die Arbeitsfläche eines Seiteneditors wurde verringert.
 
-* In der Live Copy-Übersicht wurde die Zeit zum Laden von Einträgen verkürzt, wenn eine Site über mehr als 200 Live-Kopien verfügt.
+* Die Zeit zum Laden von Einträgen für eine Siteseite mit mehr als 200 Live-Kopien in der Live Copy-Übersicht wurde verkürzt.
 
-* Im Vorlageneditor wurde die Verarbeitung unvollständiger oder ungültiger URLs verbessert, die eine Verlangsamung des Vorlageneditors auslösen können.
+* Verbesserte Verarbeitung unvollständiger oder ungültiger URLs, die dazu führen können, dass der Vorlageneditor im Vorlageneditor langsamer wird.
 
-Darüber hinaus enthält AEM 6.5 SP4 auch Verbesserungen am Style-System. Sie können jetzt auch Stile in einem Komponentendialogfeld auswählen.
-
+Darüber hinaus enthält AEM 6.5 Service Pack 4 Style-Systemverbesserungen. Sie können jetzt auch Stile in einem Komponentendialogfeld auswählen.
 
 ## AEM Assets {#aem-assets}
 
 ### Integration mit dem Markenportal über die Adobe I/O-Konsole {#assets-integration-bp}
 
-AEM Assets wird jetzt über Adobe I/O mit dem Markenportal konfiguriert, das ein IMS-Token zur Autorisierung des Markenportal-Mandanten erhält. Früher wurde es über das Legacy OAuth Gateway in der klassischen Benutzeroberfläche konfiguriert.
-
-Neue Integrationen mit älterem OAuth werden nach dem 6. April 2020 nicht mehr unterstützt und wechseln zur Adobe I/O-Konsole. Wenn Sie die Integration nicht ändern, funktionieren die vorhandenen Konfigurationen weiterhin.
+Sie können AEM Assets mit dem Markenportal jetzt über die Adobe I/O-Konsole konfigurieren. Die Adobe-E/A-Konsole ruft ein IMS-Token zur Autorisierung des Markenportal-Pätners ab. Früher wurde AEM Assets über das Legacy OAuth Gateway mit dem Markenportal in der klassischen Benutzeroberfläche konfiguriert. Die Konfigurationen mit dem Legacy OAuth Gateway werden bis zum 6. April 2020 unterstützt. Wenn Sie die Integration nicht ändern, funktionieren die vorhandenen Konfigurationen weiterhin.
 
 Sie können entweder eine neue Integration erstellen oder Ihre Integrationseinstellungen auf die Adobe I/O-Konsole aktualisieren.
 
@@ -56,7 +53,7 @@ Sie können entweder eine neue Integration erstellen oder Ihre Integrationseinst
 
 ### Generieren einer druckbaren Ausgabe in AEM Forms Workflows {#generate-printable-output}
 
-Wenn eine Lösung mehrere Kopien einer Quellvorlagendatei drucken und in eine Datendatei mit zahlreichen Datensätzen integrieren soll, steht in AEM Forms ein neuer Arbeitsablaufschritt zum Generieren druckbarer Ausgabe zur Verfügung. Wenn Sie z. B. ein Quellformular mit einem anderen Namen jedes Mal drucken möchten, wenn es gedruckt wird, können Sie diese Namen in der Datendatei enthalten und in eine Standardvorlagendatei integrieren.
+Wenn eine Lösung mehrere Kopien einer Quellvorlagendatei drucken oder speichern und in eine Datendatei mit zahlreichen Datensätzen integrieren soll, steht in AEM Forms ein neuer Arbeitsablaufschritt zum Generieren druckbarer Ausgabe zur Verfügung. Wenn Sie z. B. ein Quellformular mit einem anderen Namen jedes Mal drucken möchten, wenn es gedruckt wird, können Sie diese Namen in der Datendatei enthalten und in eine Standardvorlagendatei integrieren.
 
 Nutzen Sie diese Funktion mithilfe von **Tools** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL Erstellen]** und suchen Sie dann nach dem Workflow **[!UICONTROL Generate Printable Output]** .
 
@@ -68,7 +65,7 @@ Weitere Informationen zu dieser Funktion finden Sie unter [Forms-zentrierter Arb
 
 Sie können jetzt die Anzahl der Spalten für ein Bedienfeld in adaptiven Formularen und in interaktiver Kommunikation definieren.
 
-Sie können die neue Option finden, indem Sie zum Modus &quot;Layout&quot;wechseln, auf das Bedienfeld tippen, das Sie in ein mehrspaltiges Format konvertieren möchten, dessen übergeordnetes Element auswählen und auf das Symbol für mehrere Spalten tippen, wie in der folgenden Abbildung dargestellt, um die Anzahl der Spalten für das Bedienfeld zu definieren.
+Sie können die neue Option finden, indem Sie in den Layoutmodus wechseln. Tippen Sie auf das Bedienfeld, das Sie in ein mehrspaltiges Format konvertieren möchten, wählen Sie das übergeordnete Element aus und tippen Sie auf das Symbol für mehrere Spalten, um die Anzahl der Spalten für das Bedienfeld zu definieren.
 
 ![Mehrspaltiges Layout](assets/multi-column-layout.gif)
 
@@ -80,13 +77,13 @@ Müssen Sie die in AEM-Kopfzeilen verfügbaren Optionen je anpassen? Es ist jetz
 
 **Kopfzeilentext anpassen**
 
-Benutzer, die zur Gruppe der **Workflow-Administratoren** gehören, können jetzt den am oberen Rand verfügbaren Kopfzeilentext mit dem Text Ihrer Wahl anpassen, um den vorhandenen **[!UICONTROL Adobe Experience Manager]** -Text zu ersetzen.
+Workflow-Administratoren können jetzt den Kopfzeilentext Ihrer Wahl angeben.
 
 Die neue Option Kopfzeilentext **** anpassen finden Sie unter Ansicht-Selektor (rechts oben in der Symbolleiste verfügbar) > **[!UICONTROL Admin-Steuerung]**.
 
 **Logo anpassen**
 
-Ähnlich wie beim Anpassen des Kopfzeilentextes können Benutzer, die zur Gruppe der **Workflow-Administratoren** gehören, jetzt das Logo anpassen, das oben mit dem Logo Ihrer Wahl verfügbar ist.
+Ähnlich wie beim Anpassen des Kopfzeilentextes können Workflow-Administratoren jetzt ein Kopfzeilenlogo Ihrer Wahl festlegen.
 
 Die neue **[!UICONTROL Option Logo]** anpassen finden Sie unter Ansicht-Auswahl > **[!UICONTROL Admin-Kontrolle]**.
 
@@ -94,7 +91,7 @@ Weitere Informationen zu dieser Funktion finden Sie unter [Ihr Posteingang](../s
 
 ### Benutzernavigationssteuerung {#user-navigation-control}
 
-Benutzer, die zur Gruppe der **Workflow-Administratoren** gehören, haben die Möglichkeit, die Benutzer je nach ihrer Rolle in einem eingeschränkten Modus mit AEM arbeiten zu lassen. Die Administratoren können die Anzeige der verfügbaren Navigationsoptionen in der Kopfzeile steuern und die Benutzer darauf beschränken, zum Workflow-Authoring-Modus zu wechseln oder zu Hilfe- oder anderen Lösungslinks zu navigieren.
+Workflow-Administratoren haben jetzt die Möglichkeit, die Benutzer je nach Rolle in einem eingeschränkten Modus mit AEM arbeiten zu lassen. Die Administratoren können die Anzeige der in der Kopfzeile verfügbaren Navigationsoptionen steuern, um die Benutzer auf den Workflow-Authoring-Modus oder andere Lösungslinks zu beschränken.
 
 Sehen Sie sich die neuen **[!UICONTROL Navigationsoptionen]** &quot;Ausblenden&quot;unter &quot;Ansicht-Auswahl&quot;> &quot; **[!UICONTROL Admin-Kontrolle]**&quot;an.
 
@@ -102,9 +99,9 @@ Weitere Informationen zu dieser Funktion finden Sie unter [Ihr Posteingang](../s
 
 ### Rich-Text-Unterstützung in HTML5-Formularen {#rich-text-support}
 
-Das Textfeld kann jetzt eine Liste von Formatierungsoptionen im gerenderten HTML5-Formular anzeigen. Sie müssen ein Feldformat für das Textfeld in Forms Designer definieren, um geeignete Einstellungen auf das Feld anzuwenden.
+Das Textfeld kann jetzt eine Liste von Formatierungsoptionen im gerenderten HTML5-Formular anzeigen. Sie müssen ein Format für das Textfeld in Forms Designer definieren, um geeignete Einstellungen auf das Feld anzuwenden.
 
-Um diese Funktion zu verwenden, tippen Sie in Forms Designer in der **[!UICONTROL Design-Ansicht]** auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdown-Liste &quot; **[!UICONTROL Feldformat]** &quot;die Option &quot; **[!UICONTROL Rich Text]** &quot;aus, um die Einstellungen anzuwenden. Das Textfeld zeigt jetzt Formatierungsoptionen an, wenn es in einem HTML5-Formular wiedergegeben wird.
+Um diese Funktion zu verwenden, tippen Sie in Forms Designer in der **[!UICONTROL Design-Ansicht]** auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdown-Liste &quot; **[!UICONTROL Feldformat]** &quot;die Option &quot; **[!UICONTROL Rich Text]** &quot;aus, um die Einstellungen anzuwenden.
 
 Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML5-Formulare](../forms/using/designing-form-template.md).
 
@@ -112,9 +109,9 @@ Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML
 
 Zusätzlich zu den neuen Funktionen umfasst AEM 6.5 Service Pack 4 die folgenden wichtigen Highlights:
 
-* Es können jetzt nur ausgewählte Unterbäume mit ***dynamischen Medien - Scene7-Modus*** anstelle von allen synchronisiert werden `content/dam`.
+* Sie können jetzt ausgewählte Inhaltsunterbauten mit Scene7 synchronisieren, anstatt mit allen verfügbaren zu synchronisieren `content/dam`.
 
-* Die Integration von Formulardatenmodellen mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
+* Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
 * SOAP-Eingabe- oder -Ausgabe und komplexe Datenstrukturen unterstützen jetzt die dynamische Gruppenersetzung.
 
@@ -158,7 +155,7 @@ Zwischen dem 12. Dezember 2019 und dem 5. März 2020 hat Adobe die folgenden Fun
 
 * AEM-Sites: Project Archetype 23Die beste Möglichkeit, ein neues AEM-Projekt Beginn. Mit Archetype 23 [verschmelzen wir den Projektarchiv für SPA und reguläre Sites zu einem](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23)und bieten damit ein Standarddesign, um Ihre Front-End-Entwicklung voranzutreiben.
 
-* AEM-Sites: WKND-ReferenzseiteAlle [neuen Referenzprojekte](https://www.wknd.site/) mit Best Practices zum Erstellen von Sites mit AEM. Erfahren Sie mehr über das komplett aktualisierte [WKND-Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) und nehmen Sie den Code von [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+* AEM-Sites: WKND-ReferenzseiteAlle [neuen Referenzprojekte](https://www.wknd.site/) mit Best Practices zum Erstellen von Sites mit AEM. Erfahren Sie mehr, indem Sie das komplett aktualisierte [WKND-Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) lesen und den Code von [GitHub](https://github.com/adobe/aem-guides-wknd/releases)erfassen.
 
 * AEM-Sites: Commerce CIF-Kernkomponenten 0.7.0 und 0.9.0Integration von AEM-Sites und Magento Commerce. Wir [erweitern kontinuierlich dedizierte Kernkomponenten und einen Projektarchiv mit Schwerpunkt Handel](https://github.com/adobe/aem-core-cif-components/releases).
 
