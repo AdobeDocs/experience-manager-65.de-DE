@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,15 +20,21 @@ Der RTE kann konfiguriert werden, um die in den Authoring-Komponenten verfügbar
 
 Der folgende Workflow veranschaulicht die empfohlene Reihenfolge für die RTE-Konfigurationsaufgaben.
 
-![Sequenz der Schritte zum Konfigurieren der Zeichenfolge](assets/rte_workflow_v1.png)*Abbildung: Sequenz der Schritte zum Konfigurieren von RTE*
+![Sequenz der Schritte zum Konfigurieren der RTE](assets/rte_workflow_v1.png)
+
+*Abbildung: Sequenz der Schritte zum Konfigurieren von RTE*
 
 ## Grundlegendes zur Touch-optimierten und klassischen Benutzeroberfläche {#understand-touch-enabled-ui-and-classic-ui}
 
 Die Touch-aktivierte Benutzeroberfläche ist die Standard-Benutzeroberfläche für AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. Diese Benutzeroberfläche unterscheidet sich deutlich von der ursprünglichen klassischen Benutzeroberfläche.
 
-![Rich-Text-Editor-Symbolleiste in der Touch-fähigen Benutzeroberfläche](assets/chlimage_1-35.png)*Abbildung: Rich-Text-Editor-Symbolleiste in der Touch-fähigen Benutzeroberfläche*
+![Rich-Text-Editor-Symbolleiste in der Touch-optimierten Benutzeroberfläche](assets/chlimage_1-35.png)
 
-![Rich-Text-Editor-Symbolleiste in der klassischen Benutzeroberfläche](assets/rtedefault.png)*Abbildung: Rich-Text-Editor-Symbolleiste in der klassischen Benutzeroberfläche*
+*Abbildung: Rich-Text-Editor-Symbolleiste in der Touch-fähigen Benutzeroberfläche*
+
+![Rich-Text-Editor-Symbolleiste in der klassischen Benutzeroberfläche](assets/rtedefault.png)
+
+*Abbildung: Rich-Text-Editor-Symbolleiste in der klassischen Benutzeroberfläche*
 
 >[!MORELIKETHIS]
 >
@@ -51,13 +57,15 @@ Autoren können Textinhalte in AEM mithilfe der verschiedenen Komponentenmodi er
 
 >[!NOTE]
 >
->Die Quellbearbeitungsfunktion ist im Inline-Bearbeitungsmodus in der Touch-fähigen Benutzeroberfläche nicht verfügbar. Im Vollbildmodus können Sie Bilder nicht per Drag-and-Drop verschieben. Alle anderen Funktionen sind in allen Modi verfügbar.
+>Die Funktion zum Bearbeiten der Quelle ist im Inline-Bearbeitungsmodus in der Touch-fähigen Benutzeroberfläche nicht verfügbar. Im Vollbildmodus können Sie Bilder nicht per Drag-and-Drop verschieben. Alle anderen Funktionen sind in allen Modi verfügbar.
 
 ### Inline-Bearbeitung {#inline-editing}
 
 Beim Öffnen (durch langsames Doppeltippen/Doppelklicken) kann der Inhalt innerhalb der Seite bearbeitet werden. Dazu steht Ihnen eine kompakte Symbolleiste mit sehr grundlegenden Optionen zur Verfügung.
 
-![Inline-Bearbeitung mit einfacher Symbolleiste in der Touch-Benutzeroberfläche](assets/chlimage_1-36.png)*Abbildung: Inline-Bearbeitung mit einfacher Symbolleiste in der Touch-fähigen Benutzeroberfläche*
+![Inline-Bearbeitung mit einfacher Symbolleiste in der Touch-optimierten Benutzeroberfläche](assets/chlimage_1-36.png)
+
+*Abbildung: Inline-Bearbeitung mit einfacher Symbolleiste in der Touch-fähigen Benutzeroberfläche*
 
 In der klassischen Benutzeroberfläche ermöglicht ein langsamer Doppelklick auf die Komponente die Inline-Bearbeitung. Eine orangefarbene Kontur markiert dann den Inhalt. Wenn der Content Finder geöffnet ist, wird oben im Fenster eine Symbolleiste mit den verfügbaren RTE-Formatierungsoptionen angezeigt. Ist der Content Finder nicht geöffnet, werden die Formatierungsoptionen nicht angezeigt und Sie können nur grundlegende Textbearbeitungen vornehmen.
 
@@ -67,15 +75,21 @@ AEM-Komponenten können im Vollbildmodus geöffnet werden. Dabei wird der Seiten
 
 Im Dialogfeld-Vollbildmodus stehen neben einer detaillierten RTE-Symbolleiste auch die in einem Dialogfeld verfügbaren Optionen und Komponenten zur Verfügung. Dies gilt nur für ein Dialogfeld, das neben anderen Komponenten einen RTE enthält.
 
-![Die detaillierte RTE-Symbolleiste beim Bearbeiten im Vollbildmodus in der Touch-fähigen Benutzeroberfläche](assets/chlimage_1-37.png)*Abbildung: Die detaillierte RTE-Symbolleiste beim Bearbeiten im Vollbildmodus in der Touch-fähigen Benutzeroberfläche*
+![Die detaillierte RTE-Symbolleiste bei der Bearbeitung im Vollbildmodus in der Touch-optimierten Benutzeroberfläche](assets/chlimage_1-37.png)
+
+*Abbildung: Die detaillierte RTE-Symbolleiste beim Bearbeiten im Vollbildmodus in der Touch-fähigen Benutzeroberfläche*
 
 ### Bearbeitung in einem Dialogfeld {#dialog-editing}
 
 Wenn Sie auf eine Komponente doppelklicken, öffnet sich ein Dialogfeld zur Bearbeitung des Inhalts. Das Dialogfeld öffnet sich oben auf der jeweiligen Seite. In bestimmten Fällen kann dieses Dialogfeld auch als Popup-Fenster geöffnet werden. Wenn eine Textkomponente beispielsweise Teil einer Spalte in einem mehrspaltigen Seitenlayout ist und der für das Dialogfeld verfügbare Bereich kleiner ist.
 
-![Dialogfeldbearbeitungsmodus in der Touch-fähigen Benutzeroberfläche](assets/dialog_editing_modetouchui.png)*Abbildung: Dialogfeldbearbeitungsmodus in der Touch-fähigen Benutzeroberfläche*
+![Dialogfeld-Bearbeitungsmodus in Touch-optimierter Benutzeroberfläche](assets/dialog_editing_modetouchui.png)
 
-![Dialogfeld in der klassischen Benutzeroberfläche mit detaillierter Symbolleiste zur Bearbeitung](assets/chlimage_1-38.png)*Abbildung: Dialogfeld in der klassischen Benutzeroberfläche mit detaillierter Symbolleiste zur Bearbeitung*
+*Abbildung: Dialogfeldbearbeitungsmodus in der Touch-fähigen Benutzeroberfläche*
+
+![Dialogfeld in der klassischen Benutzeroberfläche mit einer Symbolleiste zur Bearbeitung](assets/chlimage_1-38.png)
+
+*Abbildung: Dialogfeld in der klassischen Benutzeroberfläche mit detaillierter Symbolleiste zur Bearbeitung*
 
 ## RTE-Plug-ins und die zugehörigen Funktionen {#aboutplugins}
 
@@ -110,7 +124,7 @@ In der folgenden Tabelle sind die aktuellen Plug-ins und Folgendes aufgeführt:
 | [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Miscellaneous tools allow authors to enter [special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list. |
 | Paraformat | paraformat | The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). Sie können [weitere Absatzformate](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) hinzufügen oder die Liste erweitern. |
 | spellcheck | checktext | [Rechtschreibprüfung mit Spracherkennung](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
-| styles | styles | Unterstützung für die Formatierung mit einer CSS-Klasse. [Fügen Sie neue Textstile](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) hinzu, wenn Sie Ihren eigenen Stilbereich für die Verwendung mit Text hinzufügen (oder erweitern) möchten. |
+| styles | styles | Unterstützung für die Formatierung mit einer CSS-Klasse. [Hinzufügen Sie neue Textstile](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) , wenn Sie Ihren eigenen Stilbereich für die Verwendung mit Text hinzufügen (oder erweitern) möchten. |
 | subsuperscript | subscript superscript | Erweiterungen zu den grundlegenden Formaten, indem Sie Unter- und Super-Skript hinzufügen. |
 | table | table removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | See [configure table styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles), if you want to add your own styles for either entire tables or individual cells. |
 | undo | undo redo | History size of [undo and redo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) operations. |
@@ -142,7 +156,7 @@ Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Otherwise, the RTE
 
 Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeld-Bearbeitungsmodus in der Touch-optimierten Benutzeroberfläche verfügbar sind:
 
-* `useFixedInlineToolbar`: Legen Sie diese auf dem RTE-Knoten definierte boolesche Eigenschaft (mit sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) auf `True`fest, um die RTE-Symbolleiste anstatt schwebend zu gestalten.
+* `useFixedInlineToolbar`: Legen Sie diese boolesche Eigenschaft, die auf dem RTE-Knoten definiert ist (mit sling:resourceType= `cq/gui/components/authoring/dialog/richtext`), auf `True`fest, damit die RTE-Symbolleiste nicht schwebend, sondern fixiert wird.
 
    Wenn diese Eigenschaft auf „true“ gesetzt ist, wird die Rich-Text-Bearbeitung standardmäßig bei dem Ereignis „foundation-contentloaded“ gestartet.
 
@@ -319,7 +333,7 @@ Wenn Sie vor allem die verfügbaren Plug-ins und zugehörigen Optionen sehen wol
 
 * Weitere Informationen zu den HTML-Regeln für Links sind ebenfalls verfügbar.
 
-Mit diesen können Sie Ihre eigene RTE erweitern und anpassen. Um zum Beispiel die auf der Seite verfügbaren Anker beim Erstellen eines Links aufzulisten, können Sie eine eigene Implementierung des `LinkPlugin` bereitstellen.
+Diese können verwendet werden, um Ihre eigene RTE zu erweitern und anzupassen. Um zum Beispiel die auf der Seite verfügbaren Anker beim Erstellen eines Links aufzulisten, können Sie eine eigene Implementierung des `LinkPlugin` bereitstellen.
 
 ## Bekannte Einschränkungen {#known-limitations}
 
