@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d0038181326037ab71f4df9b509d2f0827191c86
+source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
 
 ---
 
@@ -19,15 +19,15 @@ Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlic
 
 ### Leistungsverbesserungen in verschiedenen Bereichen {#performance-improvements}
 
-* Verkürzte Ladezeit und Initialisierung von ContextHub innerhalb einer Site (contexthub.kernel.js). Dadurch wird eine Seite schneller während eines Site-Besuchs geladen.
+* Verkürzte Ladezeit und Initialisierung von ContextHub innerhalb einer Site (contexthub.kernel.js). Das führt zu schnelleren Seitenladevorgängen während eines Site-Besuchs.
 
-* Die Zeit zum Aktualisieren einer Seite nach dem Ziehen und Ablegen von Erlebnisfragmenten in die Arbeitsfläche eines Seiteneditors wurde verringert.
+* Die Zeit zum Aktualisieren einer Seite nach dem Ziehen und Ablegen von Erlebnisfragmenten in den Seiten-Editor für Sites wurde verringert.
 
 * Die Zeit zum Laden von Einträgen für eine Siteseite mit mehr als 200 Live-Kopien in der Live Copy-Übersicht wurde verkürzt.
 
-* Verbesserte Verarbeitung unvollständiger oder ungültiger URLs, die dazu führen können, dass der Vorlageneditor im Vorlageneditor langsamer wird.
+* Verbesserte Verarbeitung von unvollständigen oder ungültigen URLs. Solche URLs können den Vorlageneditor verlangsamen.
 
-Darüber hinaus enthält AEM 6.5 Service Pack 4 Style-Systemverbesserungen. Sie können jetzt auch Stile in einem Komponentendialogfeld auswählen.
+Darüber hinaus enthält AEM 6.5.4.0 Style-Systemverbesserungen. Sie können jetzt Stile im Komponentendialogfeld auswählen.
 
 ## AEM Assets {#aem-assets}
 
