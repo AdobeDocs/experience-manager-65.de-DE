@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Erfahren Sie, wie Sie den Assetablaufstatus und Informationen für lizenzierte Assets in AEM verwalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -16,17 +16,17 @@ Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen 
 
 Der Asset-Ablauf ist eine effektive Möglichkeit zum Durchsetzen von Lizenzanforderungen für Assets. Wenn ein veröffentlichtes Asset abläuft, wird seine Veröffentlichung aufgehoben und damit die Möglichkeit einer Lizenzverletzung unterbunden. Ein Benutzer ohne Administratorrechte kann ein abgelaufenes Asset weder bearbeiten, kopieren, verschieben, veröffentlichen noch herunterladen.
 
-Sie können den Ablaufstatus für ein Asset in der Assets-Konsole sowohl in der Karten- als auch in der Listenansicht anzeigen.
+Sie können den Ablaufstatus für ein Asset in der Asset-Konsole sowohl in den Ansichten &quot;Karte&quot;als auch &quot;Liste&quot;Ansicht haben.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Abbildung: In der Kartenansicht zeigt ein Flag auf der Karte das abgelaufene Asset an.*
+*Abbildung: In der Ansicht der Karte zeigt ein Flag auf einem abgelaufenen Asset an*
 
 **Listenansicht**
 
-![expired_flag_list](assets/expired_flag_list.png)
+![expired_Flag_Liste](assets/expired_flag_list.png)
 
-*Abbildung: In der Listenansicht wird in der Spalte[!UICONTROL Status]das Banner[!UICONTROL Abgelaufen]angezeigt.*
+*Abbildung: In der Ansicht &quot;Liste&quot;wird in der Spalte &quot;[!UICONTROL Status]&quot;das Banner &quot;[!UICONTROL Abgelaufen]&quot;angezeigt.*
 
 Sie können den Ablaufstatus eines Assets in der Timeline einsehen. Wählen Sie das Asset und danach im GlobalNav-Menü die Option „Timeline“ aus.
 
@@ -129,7 +129,7 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
 
 1. Wählen Sie in der Konsole „Assets“ einen Ordner aus und erstellen Sie eine Prüfungsaufgabe für den Ordner.
 1. Review and approve/reject the assets in the review task and click **[!UICONTROL Complete]**.
-1. Navigieren Sie zu dem Ordner, für den Sie die Prüfungsaufgabe erstellt haben. Der Status des Assets, das Sie bestätigt oder abgelehnt haben, wird unten in der Kartenansicht angezeigt. In der Listenansicht werden die Status der Genehmigung und des Ablaufs in den entsprechenden Spalten angezeigt.
+1. Navigieren Sie zu dem Ordner, für den Sie die Prüfungsaufgabe erstellt haben. Der Status des Assets, das Sie bestätigt oder abgelehnt haben, wird unten in der Kartenansicht angezeigt. In der Ansicht &quot;Liste&quot;werden die Genehmigungs- und Ablaufstatus in den entsprechenden Spalten angezeigt.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
