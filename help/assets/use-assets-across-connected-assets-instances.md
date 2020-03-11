@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -35,10 +35,10 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 
 ### Unterstützte Dateiformate {#mimetypes}
 
-Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenttypen suchen und die gesuchten Assets im Seiten-Editor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
+Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenten suchen und die gesuchten Assets im Seiteneditor verwenden. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Die Liste der unterstützten Formate lautet:
 
 * **Bildformate**: Die Bildformate, die von der [Image-Komponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) unterstützt werden, werden von verbundenen Assets unterstützt. Bilder mit dynamischen Medien werden nicht unterstützt.
-* **Dokumentformate**: Siehe Unterstützte Dokumentformate für [verbundene Assets](assets-formats.md#supported-document-formats).
+* **Dokument-Formate**: Siehe Unterstützte [Videoformate](assets-formats.md#supported-document-formats)für verbundene Assets.
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
@@ -113,7 +113,7 @@ Die Websiteautoren verwenden den Content Finder zum Verbinden mit der DAM-Instan
 
 Autoren können Assets verwenden, die sowohl in lokalen als auch in Remote-DAM-Instanzen in einer einzigen Webseite verfügbar sind. Verwenden Sie den Content Finder, um zwischen der Suche im lokalen und im Remote-DAM zu wechseln.
 
-Es werden nur die Tags von Remote-Assets abgerufen, die über ein exakt entsprechendes Tag verfügen - mit derselben Taxonomie-Hierarchie -, das in der lokalen Site-Instanz verfügbar ist. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-AEM-Bereitstellung nach Remote-Assets suchen, da AEM eine Volltextsuche bietet.
+Es werden nur die Tags von Remote-Assets abgerufen, die über ein exakt entsprechendes Tag verfügen - mit derselben Taxonomie-Hierarchie -, das in der lokalen Site-Instanz verfügbar ist. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-AEM-Bereitstellung nach Remote-Assets suchen, da AEM Angebots eine Volltextsuche durchführt.
 
 ### Beispiel für die Verwendung {#walk-through-of-usage}
 
@@ -127,19 +127,19 @@ Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Fu
 
 1. Open the Assets tab and click **[!UICONTROL Log in to Connected Assets]**.
 1. Provide the credentials -- `ksaner` as user name and `password` as password. Der Benutzer hat Autorenberechtigungen für beide AEM-Bereitstellungen.
-1. Suchen Sie nach dem Asset, das Sie dem DAM hinzugefügt haben. Die Remote-Assets werden im linken Bereich angezeigt. Filtern Sie nach Bildern oder Dokumenten und weiter nach unterstützten Dokumenttypen. Ziehen Sie die Bilder auf eine `Image` Komponente und Dokumente auf eine `Download` Komponente.
+1. Suchen Sie nach dem Asset, das Sie dem DAM hinzugefügt haben. Die Remote-Assets werden im linken Bereich angezeigt. Filtern Sie nach Bildern oder Dokumenten und weiter nach unterstützten Dokumenttypen. Ziehen Sie die Bilder auf eine `Image` Komponente und die Dokumente auf eine `Download` Komponente.
 
    Die abgerufenen Assets sind in der lokalen AEM-Sites-Bereitstellung schreibgeschützt. Sie können weiterhin die Optionen verwenden, die Ihre AEM Sites-Komponenten bereitstellen, um das abgerufene Asset zu bearbeiten. Die Bearbeitung durch Komponenten erfolgt zerstörungsfrei.
 
    ![Optionen zum Filtern von Dokumenttypen und Bildern bei der Suche nach Assets auf Remote-DAM](assets/filetypes_filter_connected_assets.png)
 
-   *Abbildung: Optionen zum Filtern von Dokumenttypen und Bildern bei der Suche nach Assets auf Remote-DAM*
+   *Abbildung: Optionen zum Filtern von Dokument-Typen und Bildern bei der Suche nach Assets auf Remote-DAM*
 
 1. Ein Site-Autor wird benachrichtigt, wenn ein Asset asynchron abgerufen wird und wenn eine Abruf-Aufgabe fehlschlägt. Beim oder auch nach dem Authoring können die Autoren detaillierte Informationen zu Abruf-Aufgaben und -Fehlern in der Benutzeroberfläche von [Async-Aufträgen](/help/assets/asynchronous-jobs.md) anzeigen.
 
    ![Benachrichtigung zum asynchronen Abrufen von Assets, die im Hintergrund ausgeführt werden.](assets/assets_async_transfer_fails.png)
 
-   *Abbildung: Benachrichtigung zum asynchronen Abrufen von Assets, die im Hintergrund ausgeführt werden.*
+   *Abbildung: Benachrichtigung zum asynchronen Abrufen von Assets, die im Hintergrund ausgeführt werden*
 
 1. Beim Veröffentlichen einer Seite zeigt AEM eine vollständige Liste der auf der Seite verwendeten Assets an. Stellen Sie sicher, dass die Remote-Assets zum Zeitpunkt der Veröffentlichung erfolgreich abgerufen wurden. Informationen zum Überprüfen des Status der einzelnen abgerufenen Assets finden Sie in der Benutzeroberfläche für [Async-Aufträge](/help/assets/asynchronous-jobs.md).
 
@@ -160,7 +160,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Lokale Assets werden nicht mit den ursprünglichen Assets auf der Remote-Bereitstellung synchronisiert. Das Ändern, Löschen oder Widerrufen von Berechtigungen auf der DAM-Bereitstellung wird nicht auf absteigende Hierarchien angewendet.
 * Lokale Assets sind schreibgeschützte Kopien. AEM-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
-* Es werden nur Bilder und die aufgelisteten Dokumentformate unterstützt. Dynamische Medienelemente, Inhaltsfragmente und Erlebnisfragmente werden nicht unterstützt.
+* Es werden nur die Bildformate und die aufgelisteten Dokumente unterstützt. Dynamische Medienelemente, Inhaltsfragmente und Erlebnisfragmente werden nicht unterstützt.
 * Metadatenschemata werden nicht abgerufen.
 * Alle Sites-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Bereitstellung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
