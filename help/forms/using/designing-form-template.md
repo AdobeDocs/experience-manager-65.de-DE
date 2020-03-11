@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -41,6 +41,6 @@ Das Hauptziel für HTML5-Formulare sind Touch-Geräte. Daher wurde ein neues Scr
 
 #### Rich text format {#rich-text-format}
 
-Definieren Sie ein Rich-Text-Feldformat für das Textfeld in Forms Designer, um dem Feld im gerenderten HTML5-Formular eine Liste mit Formatierungsoptionen hinzuzufügen. Um die Einstellungen anzuwenden, tippen Sie in der **[!UICONTROL Designansicht]** auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdownliste &quot; **[!UICONTROL Feldformat]** &quot;die Option &quot; **[!UICONTROL Rich Text]** &quot;aus. Das Textfeld zeigt Formatierungsoptionen an, wenn es in einem HTML5-Formular wiedergegeben wird.
+Sie können ein Textfeld in ein Rich-Text-Feld konvertieren. Es wird eine Liste von Formatierungsoptionen zum Textfeld hinzugefügt. Um eine Konvertierung vorzunehmen, öffnen Sie den Forms Designer und tippen Sie in der **[!UICONTROL Design-Ansicht]** auf das Textfeld. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Feld]** &quot;in der Dropdown-Liste &quot; **[!UICONTROL Feldformat&quot;die Option &quot;]** Rich Text **** &quot;aus. Wenn das XFA-Formular jetzt als HTML5-Formular wiedergegeben wird, wird das Feld als Rich-Text-Feld gerendert.
 
 [Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
