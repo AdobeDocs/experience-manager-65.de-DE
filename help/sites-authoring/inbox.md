@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -138,15 +138,15 @@ Mit der Option &quot;Admin-Steuerung&quot;können Administratoren:
 
 * Steuern der Anzeige der in der Kopfzeile verfügbaren Navigationslinks
 
-Die Option &quot;Admin-Steuerung&quot;wird in der Dropdownliste &quot;Ansichtsauswahl&quot;nur angezeigt, wenn Sie Mitglied der Gruppe &quot;Administratoren&quot;oder &quot;Workflow-Administratoren&quot;sind.
+Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe &quot;Administratoren&quot;oder &quot;Workflow-Administratoren&quot;sichtbar.
 
 ![admin-control](assets/admin-control.png)
 
 * **Branding-Anpassung**
 
-   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll.
+   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den Standardtext von **Adobe Experience Manager** zu ersetzen.
 
-   * **Logo anpassen:** Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie auf dieses Bild, um es in der Kopfzeile anzuzeigen.
+   * **Logo anpassen:** Geben Sie das Bild an, das in der Kopfzeile als Logo angezeigt werden soll. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie auf dieses Bild im Feld.
 
 * **Benutzernavigation**
    * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Links und die Authoring-Optionen, die beim Tippen auf das Adobe Experience Manager-Logo oder -Text verfügbar sind.
