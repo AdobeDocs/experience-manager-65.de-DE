@@ -1,6 +1,6 @@
 ---
-title: Wiedergabe und Bereitstellung
-seo-title: Wiedergabe und Bereitstellung
+title: Rendern und Versand
+seo-title: Rendern und Versand
 description: 'null'
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
@@ -9,12 +9,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
 
-# Wiedergabe und Bereitstellung{#rendering-and-delivery}
+# Rendern und Versand{#rendering-and-delivery}
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
    <td>Zeichenfolge[]</td>
    <td>nichts ausschließen</td>
    <td>Präfixe für Eigenschaften</td>
-   <td>Ausschließen von Eigenschaften, die mit bestimmten Präfixen beginnen, aus dem JSON-Export</td>
+   <td>Ausschließen von Eigenschaften, die Beginn mit angegebenen Präfixen aus dem JSON-Export enthalten</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
@@ -157,7 +157,7 @@ Die folgende Tabelle zeigt die Eigenschaften:
    <td>Zeichenfolge[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Bei den folgenden Sling-Ressourcentypen sollten Sie den standardmäßigen CaaS-JSON-Export nicht zurückgeben.<br /><br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Bei den folgenden Sling-Ressourcentypen sollten Sie den standardmäßigen CaaS-JSON-Export nicht zurückgeben.<br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -226,7 +226,7 @@ Diese Konfiguration erweitert den Standard um die Einbeziehung von untergeordnet
 
 Weitere Informationen zu zusätzlichen Themen in Content Services finden Sie in den nachfolgend aufgeführten Ressourcen:
 
-* [Entwicklung von Modellen](/help/mobile/models-in-repository.md)
+* [Entwicklung von Modellen](/help/mobile/administer-mobile-apps.md)
 * [Authoring von Content Services](/help/mobile/develop-content-as-a-service.md)
 * [Verwalten von Content Services](/help/mobile/developing-content-services.md)
 
