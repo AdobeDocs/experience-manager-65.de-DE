@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -32,7 +32,7 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in AEM 6.5.4.0 eingeführt
 
 * AEM Assets wird jetzt über die Adobe I/O-Konsole mit dem Markenportal konfiguriert.
 
-* Für AEM Forms-Arbeitsabläufe steht jetzt ein neuer Schritt zum [Generieren druckbarer Ausgabe](../forms/using/aem-forms-workflow-step-reference.md) zur Verfügung.
+* Für AEM Forms Workflows steht jetzt ein neuer Schritt zum [Generieren druckbarer Ausgabe](../forms/using/aem-forms-workflow-step-reference.md) zur Verfügung.
 
 * [Mehrspaltige Unterstützung](../forms/using/resize-using-layout-mode.md) für den Layoutmodus für adaptive Formulare und interaktive Kommunikation.
 
@@ -50,7 +50,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Wenn eine AEM-Siteseite zur Bearbeitung geöffnet und eine Komponente kopiert wird, bleibt die Einfügeaktion für einige Platzhalter nicht verfügbar (NPR-32317).
 
-* Wenn der Assistent zum Verwalten von Veröffentlichungen geöffnet wird, wird ein Erlebnisfragment, das mit einer Core-Komponente verknüpft ist, nicht in den Listen der veröffentlichten Referenzen angezeigt (NPR-32233).
+* Wenn der Assistent zum Verwalten von Veröffentlichungen geöffnet wird, wird ein Erlebnisfragment, das mit einer Kernkomponente verknüpft ist, nicht in den Listen veröffentlichter Verweise (NPR-32233) angezeigt.
 
 * Die Übersicht über Live-Kopien in der Touch-Benutzeroberfläche dauert wesentlich länger als die klassische Benutzeroberfläche (NPR-32149).
 
@@ -72,19 +72,19 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Wenn Sie den Inhalt innerhalb desselben Ordners verschieben, ist die Option zum Verschieben der Seite deaktiviert (NPR-31840).
 
-* Im Strukturmodus bearbeitbarer Vorlagen zeigt die Liste der zulässigen Komponenten im Layout-Container falsche Ergebnisse an. Im Layout-Container (NPR-31816) werden nur Komponenten mit Design-Dialog angezeigt.
+* Im Strukturmodus für bearbeitbare Vorlagen zeigt die Liste der zulässigen Komponenten im Layout-Container falsche Ergebnisse an. Im Layout-Container (NPR-31816) werden nur Komponenten mit Design-Dialog angezeigt.
 
 * Wenn eine Seite schreibgeschützte Berechtigungen für einen Benutzer hat, ist die Option &quot;Eigenschaften öffnen&quot;in sites.html, jedoch nicht in editor.html (NPR-31770) sichtbar.
 
 * Wenn ein Benutzer auf die Schaltfläche Erstellen klickt, ist die Seitenoption nicht verfügbar (NPR-31756).
 
-* Die Kampagne in Adobe-Kampagnen mit OOTB (Out-of-the-Box) Design Importer-Komponente (NPR-31728) kann nicht synchronisiert werden.
+* Campaign mit OOTB (Out-of-the-Box) Design Importer-Komponente (NPR-31728) kann nicht in Adobe Campaign synchronisiert werden.
 
-* Wenn Sie versuchen, eine Aufzählungsliste in eine nummerierte Liste zu ändern, werden nur die ersten beiden Elemente der Liste geändert (NPR-31636).
+* Wenn Sie versuchen, eine Aufzählungszeichen-Liste in eine nummerierte Liste zu ändern, werden nur die ersten beiden Elemente der Liste geändert (NPR-31636).
 
 * Wenn eine Seite nicht verfasst ist und die untergeordnete Node ausgewählt ist, wird im Auswahldialogfeld weiterhin die ursprüngliche Node angezeigt. Wenn die Seite erstellt wird und der Benutzer auf &quot;Durchsuchen&quot;klickt, wird die Seite zum Stammknoten statt zum erstellten Knoten (NPR-31618) umgeleitet.
 
-* Das Dialogfeld für die Ansichtskonfiguration funktioniert bei der Arbeitsablauffunktion für die Anpassung des Postfachs (NPR-32503 und NPR-32492) nicht ordnungsgemäß.
+* Das Dialogfeld für die Konfiguration der Ansicht funktioniert nicht ordnungsgemäß bei der Funktion für den Arbeitsablauf für die Anpassung des Posteingangs (NPR-32503 und NPR-32492).
 
 * Beim Anzeigen von Workflow-Informationen mit Inbox (CQ-4282168) wird eine Fehlermeldung angezeigt.
 
@@ -104,11 +104,11 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Ursprüngliche Berechtigungen eines Ordners werden aktualisiert, wenn Ordnereinstellungen geöffnet werden, um den Ordnertitel oder das Miniaturbild zu ändern und dann zu speichern (NPR-32292).
 
-* Das Kalendersymbol für die geplante Aktivierung wird nicht in der Statusspalte (in der klassischen Benutzeroberfläche der DAM-Asset-Auflistung) für Assets angezeigt, deren Aktivierung für ein späteres Datum und eine spätere Uhrzeit geplant ist (NPR-32291).
+* Das Kalendersymbol für geplante Aktivierungen wird nicht in der Statusspalte (in der Classic UI der DAM-Asset-Auflistung) für Assets angezeigt, deren Aktivierung für ein späteres Datum und eine spätere Uhrzeit geplant ist (NPR-32291).
 
 * Die Erstellung von Snippets mithilfe von Snippet-Vorlagen gibt beim Erstellen von Snippets (NPR-32290) Fehler beim Suchen nach Sammlungen.
 
-* Mehrere Suchabfragen werden ausgelöst, wenn mehrere Tags aus dem Suchfilter ausgewählt werden (NPR-32143).
+* Mehrere Abfragen der Suche werden ausgelöst, wenn mehrere Tags aus dem Suchfilter ausgewählt werden (NPR-32143).
 
 * In der Benutzeroberfläche von Experience Manager Assets werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
@@ -116,7 +116,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Die Datei- und Ordnersuche mit Omniture-Facetten bildet eine Ausnahme (NPR-31872).
 
-* Die Feldhervorhebung für die obligatorische Feldauswahl im Metadateneditor wird auch nach Auswahl des erforderlichen Felds nicht entfernt, wenn die Abhängigkeitsregeln im entsprechenden Metadatenschema-Formular (NPR-31834) festgelegt sind.
+* Die Feldhervorhebung für die obligatorische Feldauswahl im Metadateneditor wird auch nach Auswahl des erforderlichen Schemas nicht entfernt, wenn die Abhängigkeitsregeln im entsprechenden Metadaten-Formular (NPR-31834) festgelegt sind.
 
 * Vollständige Namen von Tags auf Blattebene (aus der Taghierarchie) werden auf der Seite &quot;Asset-Eigenschaften&quot;nicht angezeigt (NPR-31820).
 
@@ -124,7 +124,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
 
-* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, mit Ausnahme der Schaltflächen &quot;Zur Sammlung&quot;und &quot;Darstellung hinzufügen&quot;in Experience Manager, der im dynamischen Media Scene7-Ausführungsmodus ausgeführt wird (CQ-4286705).
+* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, mit Ausnahme der Schaltflächen &quot;Zur Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, der im dynamischen Media Scene7-Ausführungsmodus ausgeführt wird (CQ-4286705).
 
 * Assets, die größer als 2 GB sind, können jetzt in Dynamic Media-Scene7 hochgeladen werden (CQ-4286561).
 
@@ -136,7 +136,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Der unverarbeitete Status der Viewer-Vorgabe für intelligente Beschneidung wird zweimal neben dem Vorgabennamen auf dem Bannertext angezeigt (CQ-4283517).
 
-* Auf der Detailseite des Assets (CQ-4283309) wird eine falsche Behälterhöhe eines hochgeladenen 3D-Modells, das im 3D-Viewer in der Vorschau angezeigt wird, festgestellt.
+* Auf der Detailseite des Assets (CQ-4283309) wird eine falsche Höhe des Containers eines hochgeladenen 3D-Modells, das in der Vorschau im 3D-Viewer angezeigt wird, festgestellt.
 
 * Karussell-Editor wird in IE 11 im dynamischen Medienmodus von Experience Manager (CQ-4255590) nicht geöffnet.
 
@@ -176,7 +176,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 ### WCM-Vorlageneditor {#wcm-template-editor-6540}
 
-* Im Strukturmodus bearbeitbarer Vorlagen zeigt die Liste der zulässigen Komponenten im Layout-Container keine Komponente der Verknüpfungsschaltfläche an (CQ-4282099).
+* Im Strukturmodus für bearbeitbare Vorlagen zeigt die Liste für zulässige Komponenten im Layout-Container keine Komponente für die Verknüpfungsschaltfläche an (CQ-4282099).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
@@ -184,17 +184,17 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 ### Campaign Targeting {#campaign-targeting-6540}
 
-* Die Target-Cloud-Konfiguration schlägt fehl, wenn die Fehlermeldung &quot;get mboxes&quot;fehlgeschlagen ist (CQ-4279880).
+* Die Konfiguration der Zielgruppe Cloud schlägt fehl, wenn die Fehlermeldung &quot;get mboxes&quot;fehlgeschlagen ist (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
 
-* Dropdown-Werte für Metadaten-Schemas sind in den Asset-Eigenschaften nicht sichtbar (CQ-4283287).
+* Dropdown-Werte für Metadaten-Schema sind in den Asset-Eigenschaften nicht sichtbar (CQ-4283287).
 
 * Das Metadaten-Unterschema zeigt keine Registerkarten basierend auf dem MIME-Typ in den Asset-Eigenschaften an (CQ-4283288).
 
 * Beim Rückgängigmachen der Veröffentlichung des Metadatenschemas wird eine Fehlermeldung angezeigt, obwohl das Schema im Backend entfernt wurde.
 
-* Das Vorschaubild wird für ein veröffentlichtes Asset nicht angezeigt (CQ-4285886).
+* Für ein veröffentlichtes Asset wird kein Bild für die Vorschau angezeigt (CQ-4285886).
 
 * Benutzer kann Assets, die ein einzelnes Anführungszeichen im Namen enthalten (CQ-4272686), nicht veröffentlichen oder die Veröffentlichung rückgängig machen.
 
@@ -206,11 +206,11 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Das Formular &quot;Create Member&quot;wird als leere Seite angezeigt (NPR-31997).
 
-* Benutzer kann den Analytics-Bericht nicht in der Autoreninstanz anzeigen (NPR-30913).
+* Der Benutzer kann den Analytics-Bericht nicht in der Autoreninstanz (NPR-30913) Ansicht werden.
 
-### Oak- Indizierung und Abfragen {#oak-indexing-6540}
+### Eichen- Indizierung und Abfragen {#oak-indexing-6540}
 
-* MS Word- und MS Excel-Dokumente, die JPEG-Bild enthalten, wenn die Analyse mit Tika Parser nicht durchgeführt werden kann und der Fehler class not found (Klasse nicht gefunden) wird beobachtet (NPR-31952).
+* MS Word- und MS Excel-Dokumente, die JPEG-Image enthalten, wenn mit Tika Parser analysiert werden kann, und der Fehler class not found (Klasse nicht gefunden) wird beobachtet (NPR-31952).
 
 ### Formulare {#forms-6530}
 
@@ -218,17 +218,17 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 >
 >Das AEM Service Pack enthält keine Fehlerbehebungen für AEM Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
-* Correspondence Management: Briefe zeigen zusätzliche Zeichen an, nachdem Arbeitsabläufe für die Übermittlung an die Nachbearbeitung (NPR-32626) gesendet wurden.
+* Correspondence Management: Briefe zeigen zusätzliche Zeichen nach der Übermittlung an die Workflows an (NPR-32626).
 
-* Correspondence Management: Briefe zeigen einen Dropdown-Platzhalter als Textkomponente an, nachdem sie an Workflows nach dem Prozess gesendet wurden (NPR-32539).
+* Correspondence Management: Briefe zeigen einen Dropdown-Platzhalter als Textkomponente an, nachdem sie an Workflows gesendet wurden (NPR-32539).
 
-* Correspondence Management: Die in der Briefvorlage definierten Standardwerte werden nicht im Vorschaumodus (NPR-32511) angezeigt.
+* Correspondence Management: Die in der Briefvorlage definierten Standardwerte werden nicht im Vorschau-Modus (NPR-32511) angezeigt.
 
 * Mobile Forms: Die Senden-Schaltfläche wird beim Rendern eines XDP-Formulars in einer HTML-Version (NPR-32514) als vergrößert angezeigt.
 
-* Document Services: URL-Zugriffsfehler für Briefe und einige andere Seiten nach Anwendung von Service Pack 2 (NPR-32508, NPR-32509).
+* Dokument-Dienste: URL-Zugriffsfehler für Briefe und einige andere Seiten nach Anwendung von Service Pack 2 (NPR-32508, NPR-32509).
 
-* Document Services: Wenn die Anzahl der Transaktionen auf einem Server eine bestimmte Grenze überschreitet, schlägt die Konvertierung von HTML in PDF fehl und die Dateitypeinstellungen werden vom AEM Forms-Server (NPR-32204) entfernt.
+* Dokument-Dienste: Wenn die Anzahl der Transaktionen auf einem Server eine bestimmte Grenze überschreitet, schlägt die Konvertierung von HTML in PDF fehl und die Dateitypeinstellungen werden vom AEM Forms-Server (NPR-32204) entfernt.
 
 * Adaptive Formulare: Das Tool zur Barrierefreiheit des Browsers meldet Fehler in adaptiven Formularen gemäß den Richtlinien für WCAG2 Level AA (NPR-32312, NPR-32309, CQ-4285439).
 
@@ -238,11 +238,13 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Workbench: Beim Verwenden des Vorgangs &quot;PDF-Eigenschaften abrufen&quot;für den PDF Utilities-Dienst (NPR-32150) wird eine Fehlermeldung angezeigt.
 
-* Document Security: Eine geschützte PDF-Datei kann nicht offline geöffnet werden, wenn die Option DisableGlobalOfflineSynchronizationData auf True (NPR-32078) eingestellt ist.
+* Dokument Security: Eine geschützte PDF-Datei kann nicht offline geöffnet werden, wenn die Option DisableGlobalOfflineSynchronizationData auf True (NPR-32078) eingestellt ist.
 
 * Designer: Wenn die Tagging-Option aktiviert ist, wird der Rand des Teilformulars in der generierten PDF-Ausgabe (NPR-32547, NPR-31983, NPR-31950) ausgeblendet.
 
 * Designer: Wenn eine Tabelle zusammengeführte Zellen enthält, schlägt der Barrierefreiheitstest für die Ausgabe-PDF-Datei fehl, die mithilfe des Ausgabediensts (CQ-4285372) aus einem XDP-Formular konvertiert wurde.
+
+* Foundation JEE: Server, der von einem Cluster getrennt wird, können aufgrund von Cache-Problemen (NPR-32412) nicht erneut eine Verbindung herstellen.
 
 ## Install 6.5.4.0 {#install}
 
@@ -337,13 +339,13 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 
 ## Deprecated features {#removed-deprecated-features}
 
-Dieser Abschnitt listet Funktionen auf, die mit AEM 6.5.4.0 als veraltet markiert wurden. Funktionen, die in einer zukünftigen Version entfernt werden sollen, werden zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine alternative Option verwendet werden muss.
+In diesem Abschnitt werden Funktionen Liste, die mit AEM 6.5.4.0 als veraltet gekennzeichnet wurden. Funktionen, die in einer zukünftigen Version entfernt werden sollen, werden zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine alternative Option verwendet werden muss.
 
 Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität in ihrer aktuellen Bereitstellung nutzen, und Pläne zur Änderung ihrer Implementierung zu erstellen, um die alternative Option zu verwenden.
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. Mit der AEM- und Target-Integration, die in AEM 6.5 aktualisiert wurde, um die Target Standard-API zu unterstützen, die Authentifizierung über Adobe IMS und I/O verwendet, und der wachsenden Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung ist der Opt-In-Assistent nun funktional irrelevant. | Konfigurieren von Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über entsprechende AEM-Cloud-Services |
+| Integrationen | The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. Die AEM- und Zielgruppe-Integration wurde in AEM 6.5 aktualisiert, um die Zielgruppe Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu beigetragen, dass der Assistent für die Teilnahme an einer Teilnahme an der App funktional irrelevant geworden ist. | Konfigurieren von Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über entsprechende AEM-Cloud-Services |
 
 ## Bekannte Probleme {#known-issues}
 
@@ -351,7 +353,7 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 * Die folgenden Fehler- und Warnmeldungen können während der Installation von AEM 6.5.x.x angezeigt werden:
    * „Wenn die Target-Integration mit der Target Standard-API (IMS-Authentifizierung) in AEM konfiguriert wird, führt der Export von Experience Fragments nach Target dazu, dass falsche Angebotstypen erstellt werden. Anstelle des Typs „Experience Fragment“/der Quelle „Adobe Experience Manager“ erstellt Target mehrere Angebote mit dem Typ „HTML“/der Quelle „Adobe Target Classic“.
    * com.adobe.granite.maintenance.impl.TaskScheduler: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
-   * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregationsfunktionen wie SUM, MAX und MIN verwendet werden. CQ-4274424
+   * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregat-Funktionen wie SUM, MAX und MIN verwendet werden. CQ-4274424
    * com.adobe.granite.maintenance.impl.TaskScheduler - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Der Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn Sie eine Vorschau des Assets mit dem Viewer für Banner mit Shopping-Funktion anzeigen.
 
