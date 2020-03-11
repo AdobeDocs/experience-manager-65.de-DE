@@ -3,7 +3,7 @@ title: Verwandte Assets
 description: Erfahren Sie, wie Sie Assets mit bestimmten gemeinsamen Attributen verknüpfen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
+source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
 
 ---
 
@@ -14,7 +14,7 @@ Mit Adobe Experience Manager (AEM)-Assets können Sie Assets mithilfe der entspr
 
 Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit niedriger Auflösung für Händler oder Agenturen freizugeben und die hochauflösende INDD-Datei nur auf Anfrage verfügbar zu machen.
 
->[!NOTE] Benutzer mit Bearbeitungsberechtigungen können Assets verknüpfen und die Verknüpfung aufheben.
+>[!NOTE] Nur Benutzer mit Bearbeitungsberechtigungen können Assets verknüpfen und die Verknüpfung aufheben.
 >
 
 ## Relate assets {#relating-assets}
