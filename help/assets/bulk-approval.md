@@ -3,7 +3,7 @@ title: Überprüfen von Ordner-Assets und Sammlungen
 description: Richten Sie Prüfungsworkflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -41,7 +41,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 
 1. Geben Sie eine Beschreibung, die Aufgabenpriorität und das Fälligkeitsdatum für die Prüfungsaufgabe ein.
 
-   ![task_details](assets/task_details.png)
+   ![Aufgabe_details](assets/task_details.png)
 
 1. Geben Sie auf der Registerkarte „Erweitert“ eine Beschriftung ein, die zum Erstellen der URL verwendet werden soll.
 
@@ -55,18 +55,18 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 1. Überprüfen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** die Details der Prüfungsaufgabe und tippen/klicken Sie dann auf **[!UICONTROL Prüfen]**.
 1. In the **[!UICONTROL Review Task]** page, select assets, and tap **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
 
-   ![review_task](assets/review_task.png)
+   ![review_Aufgabe](assets/review_task.png)
 
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Abschließen]** . In the dialog, enter a comment and tap/click  **[!UICONTROL Complete]** to confirm.
-1. Navigieren Sie zur Benutzeroberfläche &quot;Assets&quot;und öffnen Sie den Ordner. Die Symbole für den Genehmigungsstatus für die Assets werden in der Karten- und Listenansicht angezeigt.
+1. Navigieren Sie zur Benutzeroberfläche &quot;Assets&quot;und öffnen Sie den Ordner. Die Symbole für den Genehmigungsstatus für die Assets werden in der Ansicht für die Ansicht und Liste der Karte angezeigt.
 
    **Kartenansicht**
 
-   ![Überprüfungsstatus in der Kartenansicht](assets/chlimage_1-404.png)
+   ![Überprüfungsstatus in der Ansicht der Karte](assets/chlimage_1-404.png)
 
    **Listenansicht**
 
-   ![Überprüfungsstatus in der Listenansicht](assets/review_status_listview.png)
+   ![Überprüfungsstatus in der Ansicht der Liste](assets/review_status_listview.png)
 
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
@@ -89,22 +89,22 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 
 1. Geben Sie eine Beschreibung, die Aufgabenpriorität und das Fälligkeitsdatum für die Prüfungsaufgabe ein.
 
-   ![task_details-collection](assets/task_details-collection.png)
+   ![Aufgabe_details-collection](assets/task_details-collection.png)
 
 1. Tippen/Klicken Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Fertig]**, um die Bestätigungsmeldung zu schließen. Eine Benachrichtigung für die neue Aufgabe wird an den Genehmiger gesendet.
 1. Melden Sie sich bei AEM Assets als Genehmiger an und gehen Sie zur Konsole „Assets“. To approve assets, tap **[!UICONTROL Notifications]** and then select the review task from the list.
 1. Überprüfen Sie auf der Seite **[!UICONTROL Prüfungsaufgabe]** die Details der Prüfungsaufgabe und tippen/klicken Sie dann auf **[!UICONTROL Prüfen]**.
 1. Alle Assets in der Sammlung sind auf der Prüfungsseite sichtbar. Select the assets and tap **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 
-   ![review_task_collection](assets/review_task_collection.png)
+   ![review_Aufgabe_collection](assets/review_task_collection.png)
 
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Abschließen]** . In the dialog, enter a comment and tap/click **[!UICONTROL Complete]** to confirm.
 1. Gehen Sie zur Konsole „Sammlungen“ und öffnen Sie die Sammlung. Die Symbole für den Genehmigungsstatus der Assets werden in der Karten- sowie in der Listenansicht angezeigt.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Abbildung:Kartenansicht*
+   *Abbildung: Ansicht der Karte*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Abbildung:Listenansicht*
+   *Abbildung: Liste Ansicht*
