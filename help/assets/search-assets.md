@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c491b77dac1bf25b9e348ed12d16ed7894e5493e
+source-git-commit: 1d09e02c451c01955b93bc3149fc663754435fdf
 
 ---
 
@@ -21,16 +21,18 @@ AEM unterstützt die folgenden Anwendungsfälle und in diesem Artikel werden die
 | [Benutzeroberfläche für die Suche](#searchui) | [Visuelle Suche oder Ähnlichkeitssuche](#configvisualsearch) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
 | [Suchvorschläge](#searchsuggestions) | [Obligatorische Metadaten](#mandatorymetadata) | [Download](#download) |
 | [Suchergebnisse und Verhalten verstehen](#searchbehavior) | [Suchfacetten ändern](#searchfacets) | [Aktualisierung von Massenmetadaten](#metadataupdates) |
-| [Suchrang und -verstärkung](#searchrank) | [Textextrahierung](#extracttextupload) | [Intelligente Sammlungen](#collections) |
+| [Suchrang und -verstärkung](#searchrank) | [Extraktion von Text](#extracttextupload) | [Intelligente Sammlungen](#collections) |
 | [Erweiterte Suche: Filtern und Umfang der Suche](#scope) | [Benutzerdefinierte Vorhersagen](#custompredicates) | [Unerwartete Ergebnisse und Fehlerbehebung verstehen](#troubleshoot-unexpected-search-results-and-issues) |
 | [Suchen Sie nach anderen Lösungen und Apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[AEM Desktop App](#desktopapp)</li><li>[Adobe Stock Images](#adobestock)</li><li>[Dynamische Medienelemente](#dynamicmedia)</li></ul> |  |  |
 | [Asset-Auswahl/Auswahl](#assetselector) |  |  |
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Beispiele](#samples) |  |  |
 
-Suchen Sie mithilfe des Felds Omniture Search oben auf der AEM-Weboberfläche nach Assets. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, klicken Sie auf das Suchsymbol in der oberen Leiste, geben Sie den Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie den Suchbegriff-Shortcut / (Schrägstrich) verwenden, um das Omniture-Suchfeld zu öffnen. Ort: Assets sind vorausgewählt, um die Suchen auf DAM-Assets zu beschränken. AEM bietet Vorschläge, wenn Sie mit der Eingabe eines Suchbegriffs beginnen.
+Suchen Sie mithilfe des Felds Omniture Search oben auf der AEM-Weboberfläche nach Assets. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, klicken Sie auf das Suchsymbol in der oberen Leiste, geben Sie den Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie den Suchbegriff-Shortcut / (Schrägstrich) verwenden, um das Omniture-Suchfeld zu öffnen. Ort: Assets sind vorausgewählt, um die Suchen auf DAM-Assets zu beschränken. AEM bietet Vorschläge, wenn Ihr Beginn einen Suchbegriff eingeben soll.
 
-Verwenden Sie das Bedienfeld &quot; **[!UICONTROL Filter]** &quot;, um die Suche einzuschränken, indem Sie die Suchergebnisse auf Grundlage der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Insight-Daten und Adobe Stock-Lizenzierung. Ihre Administratoren können das Filterbedienfeld anpassen und mithilfe von Suchfacetten Suchvorhersagen hinzufügen oder entfernen.
+Verwenden Sie das Bedienfeld &quot; **[!UICONTROL Filter]** &quot;, um die Suche einzuschränken, indem Sie die Suchergebnisse auf Grundlage der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Insight-Daten und Adobe Stock-Lizenzierung. Ihre Administratoren können das Bedienfeld &quot;Filter&quot;anpassen und mithilfe von Suchfacetten Suchvorhersagen hinzufügen oder entfernen.
+
+Beachten Sie, dass für den [!UICONTROL Dateityp] -Filter im Bedienfeld &quot; [!UICONTROL Filter] &quot;Kontrollkästchen mit gemischtem Status aktiviert sind. Dies bedeutet, dass die Kontrollkästchen der ersten Ebene nicht ausgewählt sind und stattdessen durchgestrichen werden, es sei denn, Sie wählen alle verschachtelten Prädikate (oder Formate) aus.
 
 Die AEM-Suchfunktion unterstützt die Suche nach Sammlungen und die Suche nach Assets in einer Sammlung. Siehe [Suchsammlungen](/help/assets/managing-collections-touch-ui.md).
 
@@ -42,7 +44,7 @@ Machen Sie sich mit der Suchschnittstelle und den verfügbaren Aktionen vertraut
 
 *Abbildung: Die Oberfläche für die Suchergebnisse zu Teilen von Assets*
 
-**A.** Speichern Sie die Suche als Smart-Sammlung. **B.** Filter (Eigenschaften) zur Eingrenzung der Suchergebnisse. **C.** Zeigen Sie Dateien, Ordner oder beides in den Suchergebnissen an. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G.** Markieren Sie das Kontrollkästchen, um alle Suchergebnisse auszuwählen. **H.** Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **Ich.** Schließen Sie die Suche **J.** Wechseln Sie zwischen Karten- und Listenansicht.
+**A.** Speichern Sie die Suche als Smart-Sammlung. **B.** Filter (Eigenschaften) zur Eingrenzung der Suchergebnisse. **C.** Zeigen Sie Dateien, Ordner oder beides in den Suchergebnissen an. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G.** Markieren Sie das Kontrollkästchen, um alle Suchergebnisse auszuwählen. **H.** Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **Ich.** Schließen Sie die Suche **J.** Wechseln Sie zwischen der Ansicht der Karte und der Ansicht der Liste.
 
 ### Facets der dynamischen Suche {#dynamicfacets}
 
@@ -58,28 +60,28 @@ Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindi
 
 Sie können Suchbegriffssuchen im OmniSearch-Feld ausführen. Bei der Stichwortsuche wird nicht zwischen Groß- und Kleinschreibung unterschieden und es handelt sich um eine Volltextsuche (über die beliebten Metadatenfelder hinweg). Wenn mehr als ein Suchbegriff gesucht wird, wird der Standardoperator zwischen den Suchbegriffen `AND` für die Standardsuche verwendet, `OR` wenn Assets mit intelligenten Tags versehen sind.
 
-Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den nächsten Übereinstimmungen. Bei mehreren Suchbegriffen sind die Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Suchbegriffe, die als Smart-Tags angezeigt werden, höher eingestuft als Suchbegriffe, die in anderen Metadatenfeldern angezeigt werden. Mit AEM können Sie einem bestimmten Suchbegriff mehr Gewicht verleihen. Außerdem ist es möglich, den Rang [einiger gezielter Assets für bestimmte Suchbegriffe zu](#searchrank) erhöhen.
+Die Ergebnisse werden nach Relevanz sortiert, beginnend mit den nächsten Übereinstimmungen. Bei mehreren Suchbegriffen sind die Assets, die beide Begriffe in ihren Metadaten enthalten, relevanter. In Metadaten werden Suchbegriffe, die als Smart-Tags angezeigt werden, höher eingestuft als Suchbegriffe, die in anderen Metadatenfeldern angezeigt werden. Mit AEM können Sie einem bestimmten Suchbegriff eine höhere Gewichtung geben. Außerdem ist es möglich, den Rang [einiger gezielter Assets für bestimmte Suchbegriffe zu](#searchrank) erhöhen.
 
-Um die relevanten Assets schnell zu finden, bietet die Rich-Oberfläche Filter-, Sortierungs- und Auswahlmechanismen. Sie können Ergebnisse nach mehreren Kriterien filtern und die Anzahl der gesuchten Assets nach verschiedenen Filtern anzeigen. Alternativ dazu können Sie die Suche erneut ausführen, indem Sie die Abfrage im Feld Omniture Search ändern. Wenn Sie Ihre Suchbegriffe oder Filter ändern, bleiben die anderen Filter angewendet, um den Kontext Ihrer Suche zu erhalten.
+Um die relevanten Assets schnell zu finden, bietet die Rich-Oberfläche Filter-, Sortierungs- und Auswahlmechanismen. Sie können die Ergebnisse nach mehreren Kriterien filtern und die Anzahl der gesuchten Assets für verschiedene Filter anzeigen. Alternativ dazu können Sie die Suche erneut ausführen, indem Sie die Abfrage im Feld Omniture ändern. Wenn Sie Ihre Suchbegriffe oder Filter ändern, bleiben die anderen Filter angewendet, um den Kontext Ihrer Suche zu erhalten.
 
-Wenn die Ergebnisse viele Assets sind, zeigt AEM die ersten 100 in der Kartenansicht und 200 in der Listenansicht an. Wenn Benutzer einen Bildlauf durchführen, werden weitere Assets geladen. Dadurch soll die Leistung verbessert werden.
+Wenn die Ergebnisse viele Assets sind, zeigt AEM die ersten 100 in der Ansicht und 200 in der Ansicht Liste an. Wenn Benutzer einen Bildlauf durchführen, werden weitere Assets geladen. Dadurch soll die Leistung verbessert werden.
 
 >[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
 
 Manchmal werden in den Suchergebnissen einige unerwartete Assets angezeigt. Weitere Informationen finden Sie unter [Unerwartete Ergebnisse](#troubleshoot-unexpected-search-results-and-issues).
 
-AEM kann viele Dateiformate suchen und die Suchfilter können an Ihre geschäftlichen Anforderungen angepasst werden. Wenden Sie sich an Ihren Administrator, um zu verstehen, welche Suchoptionen für Ihr DAM-Repository verfügbar sind und welche Einschränkungen Ihr Konto hat.
+AEM kann viele Dateiformate suchen und die Filter für die Suche an Ihre geschäftlichen Anforderungen anpassen. Wenden Sie sich an Ihren Administrator, um zu verstehen, welche Suchoptionen für Ihr DAM-Repository verfügbar sind und welche Einschränkungen Ihr Konto hat.
 
 ### Ergebnisse mit und ohne erweiterte intelligente Tags {#withsmarttags}
 
-Die AEM-Suche kombiniert die Suchbegriffe standardmäßig mit einer UND-Klausel. Suchen Sie beispielsweise nach einer Frau mit Keywords. In den Suchergebnissen werden standardmäßig nur die Assets angezeigt, bei denen in den Metadaten sowohl weibliche als auch ausgeführte Suchbegriffe aufgeführt sind. Das gleiche Verhalten wird beibehalten, wenn mit den Suchbegriffen Sonderzeichen (Punkte, Unterstriche oder Gedankenstriche) verwendet werden. Die folgenden Suchabfragen geben die gleichen Ergebnisse zurück:
+Die AEM-Suche kombiniert die Suchbegriffe standardmäßig mit einer UND-Klausel. Suchen Sie beispielsweise nach einer Frau mit Keywords. In den Suchergebnissen werden standardmäßig nur die Assets angezeigt, bei denen in den Metadaten sowohl weibliche als auch ausgeführte Suchbegriffe aufgeführt sind. Das gleiche Verhalten wird beibehalten, wenn mit den Suchbegriffen Sonderzeichen (Punkte, Unterstriche oder Gedankenstriche) verwendet werden. Die folgenden Abfragen geben die gleichen Ergebnisse zurück:
 
 * `woman running`
 * `woman.running`
 * `woman-running`
 
 Die Abfrage `woman -running` gibt jedoch Assets ohne `running` Metadaten zurück.
-Using smart tags adds an extra `OR` clause to find any of the search terms as the applied smart tags. Ein Asset, das mit intelligenten Tags versehen wurde `woman` oder `running` diese verwendet, wird ebenfalls in einer solchen Suchanfrage angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Using smart tags adds an extra `OR` clause to find any of the search terms as the applied smart tags. Ein Asset, das mit intelligenten Tags versehen wurde `woman` oder `running` diese verwendet, wird ebenfalls in einer solchen Abfrage angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
 * Assets mit `woman` und `running` Schlüsselwörtern in den Metadaten (Standardverhalten)
 
@@ -87,7 +89,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 ### Search suggestions as you type {#searchsuggestions}
 
-Wenn Sie mit der Eingabe von Suchbegriffen beginnen, schlägt AEM die möglichen Suchbegriffe oder -ausdrücke vor. Die Vorschläge basieren auf den Metadaten der vorhandenen Assets. AEM indiziert alle Metadatenfelder, um die Suche zu unterstützen. Zur Bereitstellung von Suchvorschlägen verwendet das System die Werte der folgenden Metadatenfelder. Um Suchvorschläge zu erhalten, sollten Sie die folgenden Felder mit geeigneten Suchbegriffen füllen:
+Beim Beginn der Eingabe von Suchbegriffen schlägt AEM die möglichen Suchbegriffe oder -ausdrücke vor. Die Vorschläge basieren auf den Metadaten der vorhandenen Assets. AEM indiziert alle Metadatenfelder, um die Suche zu unterstützen. Zur Bereitstellung von Suchvorschlägen verwendet das System die Werte der folgenden Metadatenfelder. Um Suchvorschläge zu erhalten, sollten Sie die folgenden Felder mit geeigneten Suchbegriffen füllen:
 
 * Asset-Tags. (Maps zu `jcr:content/metadata/cq:tags`)
 * Asset-Titel. (Maps zu `jcr:content/metadata/dc:title`)
@@ -97,9 +99,9 @@ Wenn Sie mit der Eingabe von Suchbegriffen beginnen, schlägt AEM die möglichen
 
 Um Vorschläge für mehr als einen Suchbegriff zu erhalten, geben Sie weiterhin alle Suchbegriffe ein, ohne einen Vorschlag für einen einzelnen Suchbegriff auszuwählen.
 
-![Geben Sie mehrere Suchbegriffe ein, um Vorschläge anzuzeigen, die allen entsprechen](assets/search_suggestionsmanykeywords.gif)
+![Geben Sie mehrere Suchbegriffe in Ansichten ein, die allen entsprechen](assets/search_suggestionsmanykeywords.gif)
 
-*Abbildung: Geben Sie mehrere Suchbegriffe ein, um Vorschläge anzuzeigen, die allen entsprechen*
+*Abbildung: Geben Sie mehrere Suchbegriffe in Ansichten ein, die allen entsprechen*
 
 ### Suchranking und -verstärkung {#searchrank}
 
@@ -125,25 +127,25 @@ Sie können dies zu Ihrem Vorteil nutzen, indem Sie den Rang einiger Assets in d
 
 AEM bietet verschiedene Methoden wie Filter, die für die gesuchten Assets gelten, um die gewünschten Assets schneller zu finden. Nachfolgend werden einige häufig verwendete Methoden beschrieben. Nachfolgend werden einige [illustrierte Beispiele](#samples) vorgestellt.
 
-**Suchen nach Dateien oder Ordnern**: In den Suchergebnissen finden Sie entweder Dateien, Ordner oder beides. Wählen Sie im **[!UICONTROL Filterbedienfeld]** die entsprechende Option aus. Siehe [Suchschnittstelle](#searchui).
+**Suchen nach Dateien oder Ordnern**: In den Suchergebnissen finden Sie entweder Dateien, Ordner oder beides. Wählen Sie im Bedienfeld &quot; **[!UICONTROL Filter]** &quot;die entsprechende Option aus. Siehe [Suchschnittstelle](#searchui).
 
-**Suchen nach Assets in einem Ordner**: Sie können die Suche auf einen bestimmten Ordner beschränken. Fügen Sie im **[!UICONTROL Filter]** -Bedienfeld den Pfad eines Ordners hinzu. Sie können jeweils nur einen Ordner auswählen.
+**Suchen nach Assets in einem Ordner**: Sie können die Suche auf einen bestimmten Ordner beschränken. Fügen Sie im **[!UICONTROL Ordnerbedienfeld]** den Ordnerpfad hinzu. Sie können jeweils nur einen Ordner auswählen.
 
-![Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Filterbedienfeld einen Ordnerpfad hinzufügen](assets/search_folder_select.gif)
+![Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Bedienfeld &quot;Filter&quot;einen Ordnerpfad hinzufügen](assets/search_folder_select.gif)
 
-*Abbildung: Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Filterbedienfeld einen Ordnerpfad hinzufügen*
+*Abbildung: Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Bedienfeld &quot;Filter&quot;einen Ordnerpfad hinzufügen*
 
 ### Ähnliche Bilder suchen {#visualsearch}
 
 Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild ähneln, klicken Sie in der Kartenansicht eines Bildes oder in der Symbolleiste auf **[!UICONTROL Ähnliche suchen]**. AEM zeigt die Bilder mit Smart-Tags aus dem DAM-Repository an, die einem vom Benutzer ausgewählten Bild ähnlich sind. Siehe [Konfigurieren der Ähnlichkeitssuche](#configvisualsearch).
 
-![Ähnliche Bilder mit der Option in der Kartenansicht suchen](assets/search_find_similar.png)
+![Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht der Karte](assets/search_find_similar.png)
 
-*Abbildung: Ähnliche Bilder mit der Option in der Kartenansicht suchen*
+*Abbildung: Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht der Karte*
 
 ### Adobe Stock Images {#adobestock}
 
-From within the AEM user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Fügen Sie `Location: Adobe Stock` in die Omniture Suchleiste ein. Sie können auch das Filterbedienfeld verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen oder ein bestimmtes Asset mit der Adobe Stock-Dateinummer zu suchen.
+From within the AEM user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Hinzufügen `Location: Adobe Stock` in der Omniture Suchleiste. Sie können auch das Bedienfeld &quot;Filter&quot;verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen oder ein bestimmtes Asset mit der Adobe Stock-Dateinummer zu suchen.
 
 ### Dynamische Medienelemente {#dmassets}
 
@@ -151,7 +153,7 @@ Sie können nach Bildern mit dynamischen Medien filtern, indem Sie im Bedienfeld
 
 ### Suchen mit bestimmten Werten in Metadatenfeldern {#gqlsearch}
 
-Sie können nach Assets suchen, die auf exakten Werten bestimmter Metadatenfelder wie Titel, Beschreibung und Autor basieren. Die Volltextsuche-Funktion GQL ruft nur die Assets ab, deren Metadatenwert exakt mit Ihrer Suchabfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und den Werten wird zwischen Groß- und Kleinschreibung unterschieden.
+Sie können nach Assets suchen, die auf exakten Werten bestimmter Metadatenfelder wie Titel, Beschreibung und Autor basieren. Die Volltextsuche-Funktion GQL ruft nur die Assets ab, deren Metadatenwert exakt mit Ihrer Abfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und den Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 | Metadatenfeld | Factsheet-Wert und Nutzung |
 |---|---|
@@ -193,7 +195,7 @@ Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen
 
 ## Suchen von Assets aus anderen AEM-Angeboten oder -Schnittstellen {#beyondomnisearch}
 
-Adobe Experience Manager (AEM) verbindet das DAM-Repository mit verschiedenen anderen AEM-Lösungen, um den Zugriff auf digitale Assets zu beschleunigen und die kreativen Arbeitsabläufe zu optimieren. Jede Elementerkennung beginnt mit der Suche oder Suche. Das Suchverhalten bleibt über die verschiedenen Oberflächen und Lösungen hinweg weitgehend gleich. Einige Suchmethoden ändern sich je nach Zielgruppe, Anwendungsfällen und Benutzeroberfläche der AEM-Lösungen. Die spezifischen Methoden werden für die einzelnen Lösungen unter den unten stehenden Links dokumentiert. Die allgemein anwendbaren Tipps und Verhaltensweisen werden in diesem Artikel beschrieben.
+Adobe Experience Manager (AEM) verbindet das DAM-Repository mit verschiedenen anderen AEM-Lösungen, um den Zugriff auf digitale Assets zu beschleunigen und die kreativen Workflows zu optimieren. Alle Beginn zur Ermittlung von Assets mit Durchsuchen oder Suchen. Das Suchverhalten bleibt über die verschiedenen Oberflächen und Lösungen hinweg weitgehend gleich. Einige Suchmethoden ändern sich je nach AEM-Audience, Anwendungsfällen und Benutzeroberfläche. Die spezifischen Methoden werden für die einzelnen Lösungen unter den unten stehenden Links dokumentiert. Die allgemein anwendbaren Tipps und Verhaltensweisen werden in diesem Artikel beschrieben.
 
 ### Suchen von Assets im Bedienfeld &quot;Adobe Asset Link&quot; {#aal}
 
@@ -201,7 +203,7 @@ Mit Adobe Asset Link können Kreativprofis jetzt auf in AEM Assets gespeicherte 
 
 ### Suchen von Assets in der AEM-Desktop-App {#desktopapp}
 
-Kreativprofis verwenden die Desktop-App, um AEM Assets einfach auf ihrem lokalen Desktop (Win oder Mac) zu durchsuchen und verfügbar zu machen. Kreativelemente können die gewünschten Assets einfach in Mac Finder oder Windows Explorer anzeigen, in Desktop-Anwendungen öffnen und lokal ändern - die Änderungen werden mit einer neuen Version, die im Repository erstellt wurde, wieder in AEM gespeichert. Die Anwendung unterstützt grundlegende Suchvorgänge mit einem oder mehreren Suchbegriffen, * und ? Platzhalter und AND-Operator. Siehe [Durchsuchen, Suchen und Anzeigen einer Vorschau von Assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in der Desktop-App.
+Kreativprofis verwenden die Desktop-App, um AEM Assets einfach auf ihrem lokalen Desktop (Win oder Mac) zu durchsuchen und verfügbar zu machen. Kreativelemente können die gewünschten Assets einfach in Mac Finder oder Windows Explorer anzeigen, in Desktop-Anwendungen öffnen und lokal ändern - die Änderungen werden mit einer neuen Version, die im Repository erstellt wurde, wieder in AEM gespeichert. Die Anwendung unterstützt grundlegende Suchvorgänge mit einem oder mehreren Suchbegriffen, * und ? Platzhalter und AND-Operator. Siehe [Durchsuchen, Suchen und Vorschau von Assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in der Desktop-App.
 
 ### Search assets in Brand Portal {#brandportal}
 
@@ -209,7 +211,7 @@ Geschäftskunden und Marketingfachleute nutzen Brand Portal, um die genehmigten 
 
 ### Adobe Stock Images durchsuchen {#adobestock-1}
 
-Benutzer können aus der AEM-Benutzeroberfläche heraus Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Fügen Sie `Location: Adobe Stock` im Feld Omniture Search hinzu. Sie können auch das Bedienfeld &quot; **[!UICONTROL Filter]** &quot;verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen oder ein bestimmtes Asset mit der Adobe Stock-Dateinummer zu suchen. Siehe [Verwalten von Adobe Stock-Bildern in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Benutzer können aus der AEM-Benutzeroberfläche heraus Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren. Hinzufügen `Location: Adobe Stock` im Feld Omnese. Sie können auch das Bedienfeld &quot; **[!UICONTROL Filter]** &quot;verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen oder ein bestimmtes Asset mit der Adobe Stock-Dateinummer zu suchen. Siehe [Verwalten von Adobe Stock-Bildern in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Dynamische Medienelemente durchsuchen {#dynamicmedia}
 
@@ -227,7 +229,7 @@ Die AEM-Suchfunktion unterstützt die Suche nach Sammlungen und die Suche nach A
 
 Mit der Asset-Auswahl können Sie die DAM-Assets auf besondere Weise suchen, filtern und durchsuchen. Asset-Auswahl ist verfügbar unter `https://[aem-server]:[port]/aem/assetpicker.html`. Sie können die Metadaten der ausgewählten Assets mithilfe der Asset-Auswahl abrufen. Sie können sie mit unterstützten Anforderungsparametern wie dem Asset-Typ (Bild, Video, Text) und dem Auswahlmodus (eine oder mehrere Auswahlen) starten. Diese Parameter legen den Kontext der Asset-Auswahl für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt.
 
-Die Asset-Auswahl verwendet die HTML5-Meldung Window.postMessage, um Daten für das ausgewählte Asset an den Empfänger zu senden. Der Asset-Wähler basiert auf dem Vokabular der Foundation-Auswahl von Granite. Standardmäßig befindet sich der Asset-Wähler im Modus „Durchsuchen“. 
+Die Asset-Auswahl verwendet die Meldung &quot;HTML5 Window.postMessage&quot;, um Daten für das ausgewählte Asset an den Empfänger zu senden. Der Asset-Wähler basiert auf dem Vokabular der Foundation-Auswahl von Granite. Standardmäßig befindet sich der Asset-Wähler im Modus „Durchsuchen“. 
 
 Sie können die folgenden Anforderungsparameter in einer URL übergeben, um den Asset-Wähler in einem bestimmten Kontext zu starten:
 
@@ -250,11 +252,11 @@ To access the asset selector interface, go to `https://[aem_server]:[port]/aem/a
 
 Die Suchfunktion in AEM Assets unterliegt folgenden Einschränkungen:
 
-* Geben Sie in der Suchabfrage keinen Leerzeichen ein, da sonst die Suche nicht funktioniert.
+* Geben Sie keinen Leerzeichen am Anfang in der Abfrage ein, da sonst die Suche nicht funktioniert.
 * AEM kann den Suchbegriff weiterhin anzeigen, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und dann die Suche abgebrochen haben. <!-- (CQ-4273540) -->
 * Bei der Suche nach Ordnern, Dateien und Ordnern können die Suchergebnisse nicht nach Parametern sortiert werden.
-* Wenn Sie die Eingabetaste drücken, ohne etwas in die Omniture Suchleiste einzugeben, gibt AEM eine Liste mit nur Dateien und nicht Ordnern zurück. Wenn Sie gezielt nach Ordnern suchen, ohne einen Suchbegriff zu verwenden, gibt AEM keine Ergebnisse zurück.
-* Mit dem Kontrollkästchen &quot;Alle  auswählen&quot;können Sie nur die ersten 100 gesuchten Assets in der Kartenansicht und die ersten 200 gesuchten Assets in der Listenansicht auswählen. Wenn Sie einen Bildlauf durchführen und weitere Assets in der Benutzeroberfläche laden, können Sie mit der Option &quot;Alle [!UICONTROL auswählen] &quot;weitere Elemente auswählen.
+* Wenn Sie die Eingabetaste drücken, ohne etwas in die Omniture Suchleiste einzugeben, gibt AEM eine Liste von nur Dateien und nicht Ordnern zurück. Wenn Sie gezielt nach Ordnern suchen, ohne einen Suchbegriff zu verwenden, gibt AEM keine Ergebnisse zurück.
+* Mit dem Kontrollkästchen &quot;Alle  auswählen&quot;können Sie nur die ersten 100 gesuchten Assets in der Ansicht der Karten und die ersten 200 gesuchten Assets in der Ansicht der Liste auswählen. Wenn Sie einen Bildlauf durchführen und weitere Assets in der Benutzeroberfläche laden, können Sie mit der Option &quot;Alle [!UICONTROL auswählen] &quot;weitere Elemente auswählen.
 
 Die visuelle Suche oder Ähnlichkeitssuche weist die folgenden Einschränkungen auf:
 
@@ -263,25 +265,25 @@ Die visuelle Suche oder Ähnlichkeitssuche weist die folgenden Einschränkungen 
 
 Die Suchfunktion weist in den folgenden Szenarien möglicherweise Leistungseinschränkungen auf:
 
-* Die Kartenansicht hat eine schnellere Ladezeit als die Listenansicht, um die Suchergebnisse anzuzeigen.
+* Die Ansicht der Karten ist schneller als die Ansicht der Liste, die Suchergebnisse anzuzeigen.
 
 ## Suchtipps {#tips}
 
 * Wenn Sie den Prüfungsstatus von Assets überwachen, verwenden Sie die entsprechende Option, um herauszufinden, welche Assets genehmigt wurden und für welche Assets die Genehmigung aussteht.
-* Verwenden Sie das Prädikat Einblicke, um basierend auf den Nutzungsstatistiken diverser kreativer Applikationen nach unterstützten Assets zu suchen. Nutzungsdaten werden unter Nutzungsprozentsatz, Impressionen, Klicks und Medienkanäle gruppiert, in denen die Assets Kategorien angezeigt werden.
-* Aktivieren Sie das Kontrollkästchen &quot;Alle **[!UICONTROL auswählen]** &quot;, um die gesuchten Assets auszuwählen. Es werden die ersten 100 Assets in der Kartenansicht und die ersten 200 Assets in der Listenansicht ausgewählt. Sie können die Auswahl bearbeiten, indem Sie beispielsweise die ausgewählten Assets herunterladen, die Metadateneigenschaften stapelweise für die ausgewählten Assets aktualisieren oder die ausgewählten Assets einer Sammlung hinzufügen.
+* Verwenden Sie das Prädikat Einblicke, um basierend auf den Nutzungsstatistiken diverser kreativer Applikationen nach unterstützten Assets zu suchen. Nutzungsdaten werden unter Nutzungsprozentsatz, Impressionen, Klicks und Media-Kanal gruppiert, in denen die Assets Kategorien angezeigt werden.
+* Aktivieren Sie das Kontrollkästchen &quot;Alle **[!UICONTROL auswählen]** &quot;, um die gesuchten Assets auszuwählen. Es werden die ersten 100 Assets in der Ansicht der Karten und die ersten 200 Assets in der Ansicht der Liste ausgewählt. Sie können die Auswahl bearbeiten, indem Sie beispielsweise die ausgewählten Assets herunterladen, die Metadateneigenschaften stapelweise für die ausgewählten Assets aktualisieren oder die ausgewählten Assets einer Sammlung hinzufügen.
 * Informationen zum Suchen nach Assets, die keine obligatorischen Metadaten enthalten, finden Sie unter [Erforderliche Metadaten](#mandatorymetadata).
-* Die Suche verwendet alle Metadatenfelder. Eine allgemeine Suche, z. B. nach 12, gibt in der Regel viele Ergebnisse zurück. Für bessere Ergebnisse sollten Sie doppelte (nicht einfache) Anführungszeichen verwenden oder sicherstellen, dass die Zahl mit einem Wort ohne Sonderzeichen (z. B. *schuh12*) verknüpft ist.
+* Die Suche verwendet alle Metadatenfelder. Eine allgemeine Suche, z. B. nach 12, gibt in der Regel viele Ergebnisse zurück. Um bessere Ergebnisse zu erzielen, sollten Sie Anführungszeichen für die Dublette (nicht einfache Anführungszeichen) verwenden oder sicherstellen, dass die Nummer mit einem Wort ohne Sonderzeichen (z. B. *schuh12*) verknüpft ist.
 * Die Volltextsuche unterstützt Operatoren wie -, ^ usw. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie zum Beispiel &quot;Notebook - Schönheit&quot; anstelle von Notebook - Schönheit.
 * Wenn die Suchergebnisse zu viele sind, beschränken Sie den [Suchbereich](#scope) auf null in den gewünschten Assets. Es funktioniert am besten, wenn Sie eine Vorstellung davon haben, wie Sie besser nach den gewünschten Assets suchen können, z. B. nach einem bestimmten Dateityp, einem bestimmten Speicherort, bestimmten Metadaten usw.
 
-* **Tagging**: Mit Tags können Sie Assets kategorisieren, die effizienter durchsucht und durchsucht werden können. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Arbeitsabläufe. AEM bietet Methoden zum automatischen Taggen von Assets mit den künstlich intelligenten Diensten von Adobe Sensei, die das Taggen von Assets mit Verwendung und Schulung immer besser machen. Wenn Sie nach Assets suchen, werden die Smart-Tags eingefasst, wenn die Funktion in Ihrem Konto aktiviert ist. Es funktioniert zusammen mit der integrierten Suchfunktion von AEM. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie die Suchrangliste [einiger ausgewählter Assets](#searchrank) erhöhen.
+* **Tagging**: Mit Tags können Sie Assets kategorisieren, die effizienter durchsucht und durchsucht werden können. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows. Mit den Methoden von AEM Angebots können Sie Assets automatisch mit den künstlich intelligenten Adobe Sensei-Diensten taggen, die das Tagging Ihrer Assets mit Nutzung und Schulung verbessern. Wenn Sie nach Assets suchen, werden die Smart-Tags eingefasst, wenn die Funktion in Ihrem Konto aktiviert ist. Es funktioniert zusammen mit der integrierten Suchfunktion von AEM. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie die Suchrangliste [einiger ausgewählter Assets](#searchrank) erhöhen.
 
 * **Indizierung**: In den Suchergebnissen werden nur indizierte Metadaten und Assets zurückgegeben. Um eine bessere Abdeckung und Leistung zu erzielen, stellen Sie eine ordnungsgemäße Indexierung sicher und befolgen Sie die Best Practices. Siehe [Indexierung](#searchindex).
 
 ## Beispiele zur Veranschaulichung der Suche {#samples}
 
-Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, die den genauen Wortlaut in der vom Benutzer angegebenen Reihenfolge enthalten.
+Verwenden Sie Stichwörter in Anführungszeichen zur Dublette, um Assets zu finden, die die exakte Wortfolge in der vom Benutzer angegebenen Reihenfolge enthalten.
 
 ![Suchverhalten mit und ohne Anführungszeichen](assets/search_with_quotes.gif)
 
@@ -300,27 +302,27 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 **Suche mit Fragezeichen-Platzhalter**: Verwenden Sie eines oder mehrere &#39;?&#39;, um die Suche zu erweitern. Zeichen zur exakten Zeichenanzahl. Beispiel: In der folgenden Abbildung
 
-* `run???` -Abfrage stimmt mit keinem Asset überein.
+* `run???` Abfrage stimmt mit keinem Asset überein.
 
-* `run????` -Abfrage entspricht dem Wort `running` mit vier Zeichen nach `run`.
+* `run????` Abfrage passt das Wort `running` mit vier Zeichen nach `run`.
 
-* `??run` -Abfrage entspricht dem Wort `rerun` vor zwei Zeichen `run`.
+* `??run` Abfrage passt das Wort `rerun` mit zwei Zeichen vorher `run`.
 
 ![Veranschaulichen der Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels](assets/search_with_questionmark_run.gif)
 
 *Abbildung: Veranschaulichen der Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels*
 
-**Einen Suchbegriff** ausschließen: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die keinen Suchbegriff enthalten. Beispielsweise gibt `running -shoe` die Abfrage Assets zurück, die `running`, aber nicht `shoe`enthalten. Gleichermaßen gibt `camp -night` die Abfrage Assets zurück, die enthalten sind, `camp` aber nicht `night`. Beachten Sie, dass die `camp-night` Abfrage Assets zurückgibt, die sowohl `camp` als auch `night`enthalten.
+**Einen Suchbegriff** ausschließen: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die keinen Suchbegriff enthalten. Beispielsweise gibt `running -shoe` Abfrage Assets zurück, die `running`, aber nicht `shoe`. Gleichermaßen gibt die `camp -night` Abfrage Assets zurück, die zwar enthalten, `camp` aber nicht `night`. Beachten Sie, dass `camp-night` Abfrage Assets zurückgibt, die sowohl `camp` als auch `night`enthalten.
 
 ![Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten](assets/search_dash_exclude_keyword.gif)
 
 *Abbildung: Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten*
 
-## Konfigurations- und Verwaltungsaufgaben im Zusammenhang mit Suchfunktionen {#configadmin}
+## Konfigurations- und Verwaltungsfunktionen in Bezug auf die Suchfunktion {#configadmin}
 
 ### Suchindexkonfigurationen {#searchindex}
 
-Die Ermittlung von Assets beruht auf der Indexierung von DAM-Inhalten, einschließlich der Metadaten. Die schnellere und genaue Erkennung von Assets beruht auf optimierter Indexierung und geeigneten Konfigurationen. Siehe [Suchindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [Eichenabfragen und Indexierung](/help/sites-deploying/queries-and-indexing.md)und [Best Practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Die Ermittlung von Assets beruht auf der Indexierung von DAM-Inhalten, einschließlich der Metadaten. Die schnellere und genaue Erkennung von Assets beruht auf optimierter Indexierung und geeigneten Konfigurationen. Siehe [Suchindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [Eichen-Abfragen und Indexierung](/help/sites-deploying/queries-and-indexing.md)und [Best Practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Visuelle Suche oder Ähnlichkeitssuche {#configvisualsearch}
 
@@ -337,13 +339,13 @@ Die visuelle Suche verwendet intelligentes Tagging und erfordert AEM 6.5.2.0 ode
 
 1. Um einen Lucene-Index zu erstellen, erstellen Sie in CRXDE einen Knoten mit dem Namen `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`des Typs `imageFeatures` `nt-unstructured`. Im `imageFeatures` Knoten
 
-   * Fügen Sie die `name` Eigenschaft des Typs `String` mit dem Wert hinzu `jcr:content/metadata/imageFeatures/haystack0`.
+   * Hinzufügen `name` Eigenschaft des Typs `String` mit dem Wert `jcr:content/metadata/imageFeatures/haystack0`.
 
-   * Fügen Sie die `nodeScopeIndex` Eigenschaft des Typs `Boolean` mit dem Wert `true`&quot;hinzu.
+   * Hinzufügen `nodeScopeIndex` Eigenschaft des Typs `Boolean` mit dem Wert `true`.
 
-   * Fügen Sie die `propertyIndex` Eigenschaft des Typs `Boolean` mit dem Wert `true`&quot;hinzu.
+   * Hinzufügen `propertyIndex` Eigenschaft des Typs `Boolean` mit dem Wert `true`.
 
-   * Fügen Sie die `useInSimilarity` Eigenschaft des Typs `Boolean` mit dem Wert hinzu `true`.
+   * Hinzufügen `useInSimilarity` Eigenschaft des Typs `Boolean` mit dem Wert `true`.
    Speichern Sie die Änderungen.
 
 1. Zugriff `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` und Hinzufügen `similarityTags` der Eigenschaft vom Typ `Boolean` mit dem Wert `true`.
@@ -359,7 +361,7 @@ Geschäftsbenutzer, Administratoren oder DAM-Bibliothekare können einige Metada
 
 ### Suchfacetten ändern {#searchfacets}
 
-Um die Suchgeschwindigkeit zu erhöhen, bietet AEM Assets Suchfacetten an, mit denen Sie die Suchergebnisse filtern können. Das Filterbedienfeld enthält standardmäßig einige Standardfacetten. Administratoren können das Filterbedienfeld anpassen, um die Standardfacetten mithilfe der integrierten Prädikate zu ändern. AEM bietet eine gute Sammlung integrierter Prädikate und einen Editor zum Anpassen der Facetten. Siehe [Suchfacetten](/help/assets/search-facets.md).
+Um die Suchgeschwindigkeit zu erhöhen, suchen Sie in AEM Assets Angebots nach Facets, mit denen Sie die Suchergebnisse filtern können. Das Bedienfeld &quot;Filter&quot;enthält standardmäßig einige Standardfacetten. Administratoren können das Bedienfeld &quot;Filter&quot;anpassen, um die Standardfacetten mithilfe der integrierten Prädikate zu ändern. AEM bietet eine gute Sammlung integrierter Prädikate und einen Editor zum Anpassen der Facetten. Siehe [Suchfacetten](/help/assets/search-facets.md).
 
 ### Text beim Hochladen von Assets extrahieren {#extracttextupload}
 
@@ -367,9 +369,9 @@ Sie können AEM so konfigurieren, dass der Text aus den Assets extrahiert wird, 
 
 ### Benutzerdefinierte Vorhersagen zum Filtern von Suchergebnissen {#custompredicates}
 
-Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Filterbedienfeld mithilfe vorkonfigurierter Prädikate anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prädikate](/help/assets/searchx.md).
+Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Bedienfeld &quot;Filter&quot;mithilfe vorkonfigurierter Voreinstellungen anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prognosen](/help/assets/searchx.md).
 
-Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets suchen. Filter, die auf einige dieser Eigenschaften angewendet werden, sind standardmäßig verfügbar, und einige andere Filter können benutzerdefiniert erstellt werden, um sie auf die anderen Eigenschaften anzuwenden.
+Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets suchen. Filter, die für einige dieser Eigenschaften gelten, sind standardmäßig verfügbar, und einige andere Filter können benutzerdefiniert erstellt werden, um sie auf die anderen Eigenschaften anzuwenden.
 
 | Suchfeld | Sucheigenschaftswerte |
 |---|---|
@@ -390,9 +392,9 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 
 ## Arbeiten mit Asset-Suchergebnissen {#aftersearch}
 
-Nachdem Sie einige gesuchte Assets sehen, die Ihren Kriterien entsprechen, können Sie die folgenden typischen Aufgaben mit diesen Suchergebnissen ausführen oder die folgenden Aktionen ausführen:
+Nachdem Sie einige gesuchte Assets sehen, die Ihren Kriterien entsprechen, können Sie die folgenden typischen Aufgaben mit diesen Suchergebnissen durchführen oder folgende Aktionen ausführen:
 
-* Anzeigen von Metadateneigenschaften und anderen Informationen
+* Eigenschaften und andere Informationen zu Ansichten-Metadaten.
 * Laden Sie ein oder mehrere Assets herunter.
 * Verwenden Sie Desktop-Aktionen, um diese Assets in der Desktop-App zu öffnen.
 * Erstellen intelligenter Sammlungen.
@@ -401,7 +403,7 @@ Nachdem Sie einige gesuchte Assets sehen, die Ihren Kriterien entsprechen, könn
 
 Die Sortierung der Suchergebnisse hilft Ihnen dabei, die erforderlichen Assets schneller zu ermitteln. Die Sortierung der Suchergebnisse funktioniert in der Listenansicht und nur, wenn Sie im Bedienfeld **[!UICONTROL [Dateien](#searchui)]****[!UICONTROL  Filter ]**auswählen. AEM Assets verwendet eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) innerhalb eines Ordners oder der Ergebnisse einer Suchabfrage schnell zu sortieren. Die serverseitige Sortierung bietet schnellere und genauere Ergebnisse als die Client-seitige Sortierung.
 
-In der Listenansicht können Sie die Suchergebnisse genau so sortieren, wie Sie Assets in einem beliebigen Ordner sortieren können. Die Sortierung funktioniert mit diesen Spalten: Name, Titel, Status, Dimensionen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) Veröffentlicht, Workflow und Checked-out.
+In der Ansicht &quot;Liste&quot;können Sie die Suchergebnisse genau so sortieren, wie Sie Assets in einem beliebigen Ordner sortieren können. Die Sortierung funktioniert mit diesen Spalten: Name, Titel, Status, Dimensionen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) Veröffentlicht, Workflow und Checked-out.
 
 Einschränkungen der Sortierfunktion finden Sie unter [Einschränkungen](#limitations).
 
@@ -431,7 +433,7 @@ Bei Assets, die in einem einzelnen Ordner oder einer Sammlung verfügbar sind, i
 
 Eine Sammlung ist ein geordneter Satz von Assets, die Assets von verschiedenen Speicherorten enthalten können, da Sammlungen nur Verweise auf diese Assets enthalten. Sammlungen haben die folgenden beiden Typen:
 
-* Eine statische Referenzliste mit Assets, Ordnern und anderen Sammlungen.
+* Eine statische Referenz-Liste von Assets, Ordnern und anderen Sammlungen.
 * Eine dynamische Liste (intelligente Sammlung), die Assets in der Sammlung basierend auf Suchkriterien füllt.
 
 Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/managing-collections-touch-ui.md).
@@ -441,14 +443,14 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
 | Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten | Bei der Suche nach Assets, bei denen die erforderlichen Metadaten fehlen, zeigt AEM möglicherweise einige Assets mit gültigen Metadaten an. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
-| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
+| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu beschränken. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht zusammenhängende oder teilweise zugehörige Suchergebnisse | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
-| Keine Vorschläge zum automatischen Ausfüllen für Assets | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie mit der Eingabe eines Suchbegriffs in die Omniture Suchleiste beginnen. | AEM Assets wartet bis zum Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde), bevor ein Hintergrundauftrag ausgeführt wird, um die Metadaten für alle neu hochgeladenen oder aktualisierten Assets zu indizieren, und fügt dann die Metadaten zur Liste der Vorschläge hinzu. |
-| Keine Suchergebnisse | <ul><li>Es sind keine Assets vorhanden, die mit Ihrer Abfrage übereinstimmen.</li><li>Vor der Suchabfrage wurde ein Leerzeichen hinzugefügt.</li><li>Ein nicht unterstütztes Metadatenfeld enthält den Suchbegriff, nach dem Sie suchen.</li><li>Die Zeit &quot;On&quot;und &quot;Off&quot;wird für das Asset konfiguriert und die Suche wurde während der &quot;Off&quot;-Zeit eines Assets durchgeführt.</li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie (intelligente) Tagging verwenden, um die Suchergebnisse zu verbessern.</li><li>Es ist eine [bekannte Einschränkung](#limitations).</li><li>Nicht alle Metadatenfelder werden für Suchvorgänge berücksichtigt. Siehe [Anwendungsbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Ein- und Ausschaltzeiten für die erforderlichen Assets.</li></ul> |
+| Keine Vorschläge zum automatischen Ausfüllen für Assets | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | AEM Assets wartet bis zum Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde), bevor ein Hintergrundauftrag ausgeführt wird, um die Metadaten für alle neu hochgeladenen oder aktualisierten Assets zu indizieren, und fügt dann die Metadaten zur Liste der Vorschläge hinzu. |
+| Keine Suchergebnisse | <ul><li>Es gibt keine Assets, die Ihrer Abfrage entsprechen.</li><li>Vor der Abfrage der Suche wurde ein Leerzeichen hinzugefügt.</li><li>Ein nicht unterstütztes Metadatenfeld enthält den Suchbegriff, nach dem Sie suchen.</li><li>Die Zeit &quot;On&quot;und &quot;Off&quot;wird für das Asset konfiguriert und die Suche wurde während der &quot;Off&quot;-Zeit eines Assets durchgeführt.</li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie (intelligente) Tagging verwenden, um die Suchergebnisse zu verbessern.</li><li>Es ist eine [bekannte Einschränkung](#limitations).</li><li>Nicht alle Metadatenfelder werden für Suchvorgänge berücksichtigt. Siehe [Anwendungsbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Ein- und Ausschaltzeiten für die erforderlichen Assets.</li></ul> |
 | Suchfilter/-vorhersage ist nicht verfügbar | <ul><li>Der Suchfilter ist entweder nicht konfiguriert.</li><li>Es ist nicht für Ihre Anmeldung verfügbar.</li><li>(Weniger wahrscheinlich) Die Suchoptionen werden nicht auf die verwendete Bereitstellung angepasst.</li></ul> | <ul><li>Wenden Sie sich an den Administrator, um zu prüfen, ob die Suchanpassungen verfügbar sind oder nicht.</li><li>Wenden Sie sich an den Administrator, um zu prüfen, ob Ihr Konto über die Berechtigung/Berechtigungen zur Verwendung der Anpassung verfügt.</li><li>Wenden Sie sich an den Administrator und überprüfen Sie die verfügbaren Anpassungen für die AEM Assets-Bereitstellung, die Sie verwenden.</li></ul> |
-| Bei der Suche nach visuell ähnlichen Bildern fehlt ein erwartetes Bild | <ul><li>Bild ist in AEM nicht verfügbar.</li><li>Bild wird nicht indiziert. In der Regel, wenn es kürzlich hochgeladen wurde.</li><li>Bild ist nicht intelligent getaggt.</li></ul> | <ul><li>Fügen Sie das Bild zu AEM Assets hinzu.</li><li>Wenden Sie sich an Ihren Administrator, um das Repository erneut zu indizieren. Stellen Sie außerdem sicher, dass Sie den entsprechenden Index verwenden.</li><li>Wenden Sie sich an Ihren Administrator, um die relevanten Assets mit einem intelligenten Tag zu versehen.</li></ul> |
+| Bei der Suche nach visuell ähnlichen Bildern fehlt ein erwartetes Bild | <ul><li>Bild ist in AEM nicht verfügbar.</li><li>Bild wird nicht indiziert. In der Regel, wenn es kürzlich hochgeladen wurde.</li><li>Bild ist nicht intelligent getaggt.</li></ul> | <ul><li>Hinzufügen Sie das Bild in AEM Assets.</li><li>Wenden Sie sich an Ihren Administrator, um das Repository erneut zu indizieren. Stellen Sie außerdem sicher, dass Sie den entsprechenden Index verwenden.</li><li>Wenden Sie sich an Ihren Administrator, um die relevanten Assets mit einem intelligenten Tag zu versehen.</li></ul> |
 | Wenn Sie nach visuell ähnlichen Bildern suchen, wird ein irrelevantes Bild angezeigt | Visuelles Suchverhalten. | AEM zeigt so viele potenziell relevante Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, allerdings mit einer niedrigeren Suchrangliste. Die Qualität der Übereinstimmungen und die Relevanz der gesuchten Assets werden mit dem Bildlauf nach unten verringert. |
-| Bei Auswahl und Verwendung der Suchergebnisse werden nicht alle gesuchten Assets verarbeitet | Die Option &quot;Alle  auswählen&quot;wählt nur die ersten 100 Suchergebnisse in der Kartenansicht und die ersten 200 Suchergebnisse in der Listenansicht aus. |  |
+| Bei Auswahl und Verwendung der Suchergebnisse werden nicht alle gesuchten Assets verarbeitet | Die Option &quot;Alle  auswählen&quot;wählt nur die ersten 100 Suchergebnisse in der Ansicht der Karte und die ersten 200 Suchergebnisse in der Ansicht der Liste aus. |  |
 
 >[!MORELIKETHIS]
 >
