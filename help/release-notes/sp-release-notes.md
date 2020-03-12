@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 7cc22c6558394c5e12ea2477bb07ff02dabc8dbc
 
 ---
 
@@ -244,7 +244,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Designer: Wenn eine Tabelle zusammengeführte Zellen enthält, schlägt der Barrierefreiheitstest für die Ausgabe-PDF-Datei fehl, die mithilfe des Ausgabediensts (CQ-4285372) aus einem XDP-Formular konvertiert wurde.
 
-* Foundation JEE: Server, der von einem Cluster getrennt wird, können aufgrund von Cache-Problemen (NPR-32412) nicht erneut eine Verbindung herstellen.
+* Foundation JEE: Wenn ein AEM Forms-Server von einem Cluster getrennt ist, verhindern Cache-Probleme die erneute Verbindung zum Server (NPR-32412).
 
 ## Install 6.5.4.0 {#install}
 
