@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 
 ---
 
@@ -12,8 +12,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Grundlegende Aufgaben, Werkzeuge und Konzepte für AEM Authoring {#essentials}
++ Grundlegende Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
+   + [Bearbeiten von Seiten](page-authoring.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
    + [Grundlegende Handhabung](basic-handling.md)
@@ -22,7 +23,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Ihr Posteingang](inbox.md)
    + [Tastaturbefehle für Konsolen](keyboard-shortcuts.md)
    + [Festlegen der Benutzeroberfläche](select-ui.md)
-+ Bearbeiten {#authoring}
++ Authoring {#authoring}
    + [Autorenumgebung und Tools](author-environment-tools.md)
    + [Anmerkungen beim Bearbeiten einer Seite](annotations.md)
    + [Erstellen und Organisieren von Seiten](managing-pages.md)
@@ -31,7 +32,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Bearbeiten der Seiteneigenschaften](editing-page-properties.md)
    + [Veröffentlichen von Seiten](publishing-pages.md)
    + [Seitenbearbeitung mit Inhaltsfragmenten](content-fragments.md)
-   + [Erlebnisfragmente](experience-fragments.md)
+   + [Experience Fragments](experience-fragments.md)
    + [Exportieren in CSV](csv-export.md)
    + [Komponenten](default-components.md)
    + [Verfassen einer Seite für Mobilgeräte](mobile.md)
@@ -74,8 +75,8 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
++ Personalisierung     {#personalization}
+   + [Personalisierung    ](personalization.md)
    + [Seitenvorschau mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
@@ -84,7 +85,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Verwalten von Zielgruppen](managing-audiences.md)
    + [Erstellen und Verwalten von Angeboten](offerlib.md)
    + [Grundlegendes zur Segmentierung](segmentation-overview.md)
-+ AEM und Adobe Campaign {aem-adobe-campaign}
++ AEM und Adobe Campaign {aem-adobe-Campaign}
    + [Arbeiten mit Adobe Campaign](adobe-campaign.md)
    + [Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard](campaign.md)
    + [Targeting von Adobe Campaign](target-adobe-campaign.md)
