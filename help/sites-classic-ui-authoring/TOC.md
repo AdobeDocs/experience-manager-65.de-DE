@@ -4,14 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 
 ---
 
 
 # AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
 
-+ [Überblick über die Benutzeroberfläche](home.md)
++ [Überblick über das Authoring der klassischen Benutzeroberfläche](home.md)
 + Einführung in das Authoring der klassischen Benutzeroberfläche {#introduction}
    + [Erste Schritte für Autoren](classic-page-author-first-steps.md)
    + [Bearbeiten in der klassischen Benutzeroberfläche](classicui.md)
@@ -22,7 +22,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Suchen](author-env-search.md)
    + [Ihr Posteingang](author-env-inbox.md)
    + [Tastaturbefehle für Konsolen](author-env-keyboard-shortcuts.md)
-+ Bearbeiten {#authoring}
++ Authoring {#authoring}
    + [Bearbeiten von Seiten (Authoring)](classic-page-author.md)
    + [Bearbeiten: Umgebung und Tools](classic-page-author-env-tools.md)
    + [Erstellen und Organisieren von Seiten](classic-page-author-manage-pages.md)
@@ -54,7 +54,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung  {#personalization}
++ Personalisierung     {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
@@ -74,11 +74,12 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Arbeiten mit Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign-Komponenten](classic-personalization-ac-components.md)
    + [Targeting von Adobe Campaign](classic-personalization-ac-target.md)
+   + [Erstellen von Adobe Campaign-Formularen in AEM](classic-personalization-ac-forms.md)
 + Assets-Authoring in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](classicui-assets.md)
    + [Bereitstellen von Dynamic Media Assets](dynamic-media-assets-delivering.md)
    + [Hinzufügen von Assets mit dynamischen Medien zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Scene7-Features zu Ihrer Seite](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
-   + [Arbeiten mit dynamischen Medien](dynamic-media-assets.md)
+   + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
    + [Benennungskonventionen für Assets-Tests](asset-naming-conventions.md)
