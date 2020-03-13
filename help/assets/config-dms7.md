@@ -9,14 +9,14 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
+source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
 
 ---
 
 
 # Konfigurieren von Dynamic Media – Scene7-Modus{#configuring-dynamic-media-scene-mode}
 
-Wenn Sie Adobe Experience Manager für verschiedene Umgebungen verwenden, z. B. eine für die Entwicklung, eine für die Staging-Umgebung und eine für die Live-Produktion, müssen Sie die dynamischen Media Cloud-Dienste für jede dieser Umgebungen konfigurieren.
+Wenn Sie Adobe Experience Manager für verschiedene Umgebung verwenden, z. B. eine für die Entwicklung, eine für die Staging-Version und eine für die Live-Produktion, müssen Sie die dynamischen Media Cloud-Dienste für jede dieser Umgebung konfigurieren.
 
 ## Architekturgrafik von Dynamic Media – Scene7-Modus {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -100,9 +100,9 @@ Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmen
    * **[!UICONTROL Synchronisieren Sie alle Inhalte]** - standardmäßig <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets selektiv aus der Synchronisierung mit dynamischen Medien einschließen oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für dynamische Medien wählen:
 
    * **[!UICONTROL Synchronisierungsmodus für dynamische Medien]**
-      * **[!UICONTROL Standardmäßig]** aktiviert - Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL Standardmäßig]** aktiviert - Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschluss. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Standardmäßig]** deaktiviert - Die Konfiguration wird erst auf einen Ordner angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit dynamischen Medien markiert haben.
-Um einen ausgewählten Ordner zur Synchronisierung mit dynamischen Medien zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Details]** &quot;in der Dropdown-Liste &quot;Synchronisierungsmodus für **[!UICONTROL dynamische Medien]** &quot;aus den folgenden drei Optionen. When you are done tap **[!UICONTROL Save]**. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor &quot;Alle Inhalte **synchronisieren&quot;ausgewählt haben**.*
+Um einen ausgewählten Ordner zur Synchronisierung mit dynamischen Medien zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Details]** &quot;in der Dropdown-Liste &quot;Synchronisierungsmodus für **[!UICONTROL dynamische Medien]** &quot;eine der folgenden drei Optionen. When you are done tap **[!UICONTROL Save]**. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor &quot;Alle Inhalte **synchronisieren&quot;ausgewählt haben**.*
          * **[!UICONTROL Vererbt]** - Kein expliziter Synchronisierungswert im Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
          * **[!UICONTROL Aktivieren für Unterordner]** - Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit dynamischen Medien ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
          * **[!UICONTROL Deaktiviert für Unterordner]** - Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit dynamischen Medien aus.
@@ -164,17 +164,17 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 * **[!UICONTROL Standardattribute für Anfragen]**: Diese Einstellungen beziehen sich auf die standardmäßige Darstellung von Bildern.
 * **[!UICONTROL Allgemeine Attribute für Miniaturansichten]**: Diese Einstellungen beziehen sich auf die standardmäßige Darstellung von Miniaturbildern.
 * **[!UICONTROL Standardeinstellungen für Katalogfelder]**- Diese Einstellungen beziehen sich auf die Auflösung und den Standard-Miniaturansichtstyp von Bildern.
-* **[!UICONTROL Farbmanagementattribute]** - Diese Einstellungen bestimmen, welche ICC-Farbprofile verwendet werden.
+* **[!UICONTROL Farbmanagementattribute]** - Diese Einstellungen bestimmen, welche ICC-Profil verwendet werden.
 * **[!UICONTROL Kompatibilitätsattribute]** - Mit dieser Einstellung können führende und nachgestellte Absätze in Textebenen wie in Version 3.6 behandelt werden, um die Abwärtskompatibilität zu gewährleisten.
-* **[!UICONTROL Lokalisierungsunterstützung]** - Mit diesen Einstellungen können Sie mehrere Gebietsschema-Attribute verwalten. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. For more information about setting up **Localization Support]**, see [Considerations when setting up localization of assets](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Unterstützung]** von Lokale Anpassungen - Mit diesen Einstellungen können Sie mehrere Gebietsschemaattribute verwalten. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. For more information about setting up **Localization Support]**, see [Considerations when setting up localization of assets](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
 #### Konfigurieren der allgemeinen Anwendungseinstellungen {#configuring-application-general-settings}
 
 To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings]**.
 
-**Server - **Bei der Kontobereitstellung stellt Dynamic Media automatisch die zugewiesenen Server für Ihr Unternehmen bereit. Diese Server werden verwendet, um URL-Zeichenfolgen für Ihre Website und Anwendungen zu erstellen. Diese URL-Aufrufe gelten spezifisch für Ihr Konto. Ändern Sie keine Servernamen, es sei denn, Sie werden ausdrücklich von der AEM-Unterstützung dazu aufgefordert.
+**Server - **Bei der Kontobereitstellung stellt Dynamic Media automatisch die zugewiesenen Server für Ihre Firma bereit. Diese Server werden verwendet, um URL-Zeichenfolgen für Ihre Website und Anwendungen zu erstellen. Diese URL-Aufrufe gelten spezifisch für Ihr Konto. Ändern Sie keine Servernamen, es sei denn, Sie werden ausdrücklich von der AEM-Unterstützung dazu aufgefordert.
 
-**[!UICONTROL Bilder]** überschreiben: Bei dynamischen Medien ist es nicht möglich, dass zwei Dateien denselben Namen haben. Die URL-ID (Dateiname ohne Erweiterung) eines Elements muss jeweils eindeutig sein. Diese Optionen geben an, wie Ersatzelemente hochgeladen werden: ob sie das Original ersetzen oder duplizieren. Duplizierte Assets werden durch Anhängen von „-1“ umbenannt („chair.tif“ wird beispielsweise zu „chair-1.tif“). Diese Optionen gelten für Assets, die in einen anderen Ordner als das Original hochgeladen werden, oder Assets mit einer anderen Dateinamenerweiterung als das Original (z. B. JPG, TIF oder PNG).
+**[!UICONTROL Bilder]** überschreiben: Bei dynamischen Medien ist es nicht möglich, dass zwei Dateien denselben Namen haben. Die URL-ID (Dateiname ohne Erweiterung) eines Elements muss jeweils eindeutig sein. Diese Optionen geben an, wie Ersatzelemente hochgeladen werden: ob sie das Original ersetzen oder Duplikat werden. Duplizierte Assets werden durch Anhängen von „-1“ umbenannt („chair.tif“ wird beispielsweise zu „chair-1.tif“). Diese Optionen gelten für Assets, die in einen anderen Ordner als das Original hochgeladen werden, oder Assets mit einer anderen Dateinamenerweiterung als das Original (z. B. JPG, TIF oder PNG).
 
 * **[!UICONTROL Im aktuellen Ordner mit demselben Namen/derselben Erweiterung]** des Basisbilds überschreiben - Diese Option ist die strengste Ersatzregel. Das Ersatzbild muss in den Ordner des Originalbilds hochgeladen werden und dieselbe Dateierweiterung haben wie das Originalbild. Wenn diese Voraussetzungen nicht erfüllt sind, wird ein Duplikat erstellt.
 
@@ -185,7 +185,7 @@ To open the Application General Settings page, in Dynamic Media Classic Global N
 * **[!UICONTROL In jedem Ordner überschreiben, Name/Erweiterung]** des Basisassets - Erfordert, dass das Ersatzbild dieselbe Dateinamenerweiterung wie das Originalbild hat (beispielsweise muss &quot;Sessel.jpg&quot;die Datei &quot;Sessel.jpg&quot;ersetzen, nicht &quot;Sessel.tif&quot;). Sie können das Ersatzbild jedoch in einen anderen Ordner hochladen als den, in dem sich das Original befindet. Das hochgeladene Bild bleibt dann im neuen Ordner; die Datei befindet sich also nicht mehr am ursprünglichen Speicherort.
 * **[!UICONTROL In jedem Ordner mit demselben Asset-Namen unabhängig von der Erweiterung]** überschreiben - Diese Option ist die beste Ersatzregel. Sie können ein Ersatzbild in einen anderen Ordner hochladen als den, in dem sich das Originalbild befindet, und eine Datei mit einer anderen Dateierweiterung verwenden, um die Originaldatei zu ersetzen. Wenn sich die Originaldatei in einem anderen Ordner befindet, bleibt das Ersatzbild in dem neuen Ordner, in den es hochgeladen wurde.
 
-**[!UICONTROL Standardfarbprofile]** - Weitere Informationen finden Sie unter [Konfigurieren des Farbmanagements](#configuring-color-management) .
+**[!UICONTROL Profile]** zur Standardfarbe - Weitere Informationen finden Sie unter [Konfigurieren des Farbmanagements](#configuring-color-management) .
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ To open the Application General Settings page, in Dynamic Media Classic Global N
 
 #### Konfigurieren des Farbmanagements {#configuring-color-management}
 
-Beim Farbmanagement für dynamische Medien können Sie die richtigen Assets farbig markieren. Bei der Farbkorrektur behalten eingebettete Assets ihren Farbraum (RGB, CMYK, Grau) und ihr eingebettetes Farbprofil bei. Wenn Sie eine dynamische Ausgabe anfordern, wird die Bildfarbe gemäß dem Zielfarbraum korrigiert, indem eine CMYK-, RGB- oder Grau-Ausgabe verwendet wird. Siehe [Konfigurieren von Bildvorgaben](/help/assets/managing-image-presets.md).
+Beim Farbmanagement für dynamische Medien können Sie die richtigen Assets farbig markieren. Bei der Farbkorrektur behalten eingebettete Assets ihren Farbraum (RGB, CMYK, Grau) und ihr eingebettetes Profil bei. Wenn Sie eine dynamische Ausgabe anfordern, wird die Bildfarbe gemäß dem Zielfarbraum korrigiert, indem eine CMYK-, RGB- oder Grau-Ausgabe verwendet wird. Siehe [Konfigurieren von Bildvorgaben](/help/assets/managing-image-presets.md).
 
 So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim Anfordern Bildern aktiviert ist:
 
@@ -204,9 +204,9 @@ So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim
 
    Sie können die folgenden Farbkorrektureigenschaften festlegen:
 
-   * **[!UICONTROL CMYK-Standardfarbraum]** - Name des Standard-CMYK-Farbprofils
-   * **[!UICONTROL Standardfarbraum]** für graue Skalierung - Name des standardmäßigen grauen Farbprofils
-   * **[!UICONTROL RGB-Standardfarbraum]** - Name des standardmäßigen RGB-Farbprofils
+   * **[!UICONTROL CMYK-Standardfarbraum]** - Name des Standard-CMYK-Profils
+   * **[!UICONTROL Standardfarbraum]** für Graustufen - Name des standardmäßigen grauen Profils
+   * **[!UICONTROL RGB-Standardfarbraum]** - Name des standardmäßigen RGB-Profils
    * **[!UICONTROL Renderpriorität]** für Farbkonvertierung - Gibt die Renderpriorität an. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]]**as the default.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
@@ -301,7 +301,7 @@ Sie können benutzerdefinierte MIME-Typen für nicht unterstützte Formate in AE
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
 1. Wenn der Mime-Typ `image_vnd.dwg` noch ausgewählt ist, klicken Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** in der **[!UICONTROL aktivierten]** Zeile unter der Spaltenüberschrift **[!UICONTROL Wert]** doppelt auf den Wert, um die Dropdownliste **[!UICONTROL Wert]** zu öffnen.
-1. Geben Sie `false` in das Feld ein (oder wählen Sie **[!UICONTROL false]** aus der Dropdownliste).
+1. Geben Sie `false` in das Feld ein (oder wählen Sie in der Dropdown-Liste **[!UICONTROL false]** ).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
@@ -548,13 +548,13 @@ Die Einstellung &quot;Scene7-Upload-Verbindung&quot;synchronisiert AEM-Assets mi
 
 In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your AEM author environment to the AEM publish node. Dieser Arbeitsablauf ist erforderlich, da die AEM-Veröffentlichungsserver auch die Assets bereitstellen.
 
-Da Assets jedoch über den Cloud-Dienst bereitgestellt werden, müssen diese Assets in Bereitstellungen für dynamische Medien nicht an AEM-Veröffentlichungsknoten repliziert werden. Ein solcher &quot;Hybrid-Veröffentlichungs&quot;-Arbeitsablauf vermeidet zusätzliche Speicherkosten und längere Verarbeitungszeiten, um Assets zu replizieren. Andere Inhalte, z. B. Webseiten in Sites, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
+Da Assets jedoch über den Cloud-Dienst bereitgestellt werden, müssen diese Assets in Bereitstellungen für dynamische Medien nicht an AEM-Veröffentlichungsknoten repliziert werden. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Webseiten in Sites, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
 Mit den Filtern können Sie Assets von der Replikation auf dem AEM-Veröffentlichungsknoten *ausschließen*.
 
 #### Verwenden von Asset-Standardfiltern für die Replikation {#using-default-asset-filters-for-replication}
 
-Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, können Sie die Standardfilter verwenden, die wir Ihnen zur Verfügung stellen. Folgende Filter sind standardmäßig aktiviert:
+Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, können Sie die standardmäßigen Filter verwenden, die wir Ihnen zur Verfügung stellen. Folgende Filter sind standardmäßig aktiviert:
 
 <table>
  <tbody>
@@ -565,18 +565,18 @@ Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, könne
    <td><strong>Wiedergaben</strong></td>
   </tr>
   <tr>
-   <td>Bereitstellung von dynamischen Medien-Bildern</td>
+   <td>Dynamic Media Image Versand</td>
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
-   <td><p>Beginnt mit <strong>image/</strong></p> <p>Enthält <strong>Anwendung/</strong> und endet mit dem <strong>Satz</strong>.</p> </td>
+   <td><p>Beginn mit <strong>image/</strong></p> <p>Enthält <strong>Anwendung/</strong> und endet mit dem <strong>Satz</strong>.</p> </td>
    <td>Die vordefinierten "Filterbilder"(gilt für Einzelbilder, einschließlich interaktiver Bilder) und "Filtersätze"(gilt für Rotationssets, Bildsätze, gemischte Mediensets und Karussell-Sets) werden wie folgt ausgeführt:
     <ul>
      <li>Das Originalbild und statische Bildausgabeformate werden von der Replikation ausgeschlossen.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Videobereitstellung für dynamische Medien</td>
+   <td>Video-Versand für dynamische Medien</td>
    <td>filter-video</td>
-   <td>Beginnt mit <strong>Video/</strong></td>
+   <td>Beginn mit <strong>Video/</strong></td>
    <td>Das vordefinierte "filter-video" wird:
     <ul>
      <li>Schließen Sie die Originaldarstellungen für Videos und statische Miniaturansichten von der Replikation aus.<br /> <br /> </li>
@@ -618,7 +618,7 @@ Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, könne
  <tbody>
   <tr>
    <td><strong>Zu verwendendes Zeichen</strong></td>
-   <td><strong>Filtern von Assets für die Replizierung</strong></td>
+   <td><strong>So werden Assets für die Replizierung Filter</strong></td>
   </tr>
   <tr>
    <td>*</td>
