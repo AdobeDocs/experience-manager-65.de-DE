@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
+source-git-commit: ed756d785864131c2e031aec4331388bc057576b
 
 ---
 
@@ -39,15 +39,17 @@ Sie können entweder eine neue Integration erstellen oder Ihre Integrationseinst
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-* Kontrollkästchen mit gemischtem Status haben jetzt das Attribut aria-check mit dem Wert &quot;gemischt&quot;, um den gemischten Status für Bildschirmlesehilfen verfügbar zu machen.
+Experience Manager Assets umfasst die folgenden Verbesserungen der Barrierefreiheit:
 
-* Tastaturbasierte Steuerelemente werden jetzt neben pfadbasierten Gesten unterstützt, um gezoomte Bilder zu verschieben.
+* Mit den Pfeiltasten auf der Tastatur können Sie Bereiche innerhalb gezoomter Bilder verschieben und schwenken. Weitere Informationen finden Sie unter [Vorschau-Assets nur](../assets/managing-assets-touch-ui.md#previewing-assets)mit Tastaturbefehlen.
 
-* Datumsformateinschränkungen wurden in Feldbeschriftungen bereitgestellt, damit Benutzer, die nur über die Tastatur verfügen, das Datum manuell eingeben können.
+* Die Kontrollkästchen für gemischten Status (bei denen, sofern Sie nicht alle verschachtelten Kontrollkästchen auswählen, vorausgesagt, dass die Kontrollkästchen der ersten Ebene nicht ausgewählt sind und durchgestrichen werden) im Bedienfeld &quot;Filter&quot;sind für Bildschirmlesehilfen lesbar.
 
-* Alt-Attribut wurde zu dekorativen Symbolen hinzugefügt und das Attribut role=img entfernt, sodass diese Symbole und Bilder nicht für Benutzer von Bildschirmlesehilfen verfügbar sind.
+* Datums- und Uhrzeitformateinschränkungen werden in den Feldbezeichnungen der Datumsfelder bereitgestellt, damit die Benutzer das Datum mit der Tastatur im korrekten Format eingeben können.
 
-* Das Alt-Attribut wurde zum Schließen von Symbolen hinzugefügt, um Bildschirmlesehilfen-Benutzern anzuzeigen, wenn sie mit der Tabulatortaste darauf klicken.
+   Beispiel: `On Time (MM-DD-YYYY HH:mm)`. Hier ist MM Monat im zweistelligen Format, JJJJ ist Jahr, TT ist Tag im zweistelligen Format, HH ist Stunde im 24-Stunden-Militärformat und mm ist Minute.
+
+* Das `X` Symbol auf der Schaltfläche zum Entfernen der aktuell ausgewählten Tags wird jetzt von Bildschirmlesehilfen zusammen mit der Anzahl der ausgewählten Tags angekündigt.
 
 ## AEM Forms {#aem-forms}
 
