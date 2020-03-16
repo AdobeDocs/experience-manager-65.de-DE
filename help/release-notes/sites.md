@@ -1,13 +1,13 @@
 ---
 title: Versionshinweise zu AEM Sites
-description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Sites
+description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 Sites
 uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -33,7 +33,7 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
    * Variablendeklarationen mit Datensatz:
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Listen- und Wiederholungssteuerungsparameter: begin, step, end:
+   * Liste- und Wiederholungskontrollparameter: begin, step, end:
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Bezeichner für die datenbasierte Aufhebung:
@@ -88,7 +88,7 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 ## Übersetzung {#translation}
 
 * Übersetzungsprojekte lassen sich durch Projekt-Master einfacher erstellen.
-* Vereinfachen Sie die Ausführung von Übersetzungsprojekten, indem Sie Übersetzungsaufträge standardmäßig auf den genehmigten Status setzen.
+* Vereinfachen Sie die Ausführung von Übersetzungsprojekten, indem Sie Übersetzungsaufträge standardmäßig auf den Status &quot;Genehmigt&quot;setzen.
 * Sie können zulassen, dass übersetzte Seiten mit Änderungen aus dem Translation Memory von Drittanbietern aktualisiert werden.
 * Übersetzungsaufträge können in das JSON-Format exportiert werden.
 * Aktualisierung der Microsoft Translation-Integration für die Verwendung der V3-API
@@ -108,13 +108,13 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
 * Die ContextHub-Datenebene und die clientseitige JavaScript-Regel-Engine wurden so aktualisiert, dass standardmäßig jQuery 3 verwendet wird.
 
-## AEM und Adobe Target {#aem-amp-adobe-target}
+## AEM und Adobe Zielgruppe {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
 >at.js 2.x wird zum Zeitpunkt der Veröffentlichung von AEM 6.5 nicht in AEM unterstützt. Aktualisieren Sie auf die neueste Version von at.js 1.x.
 
-* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Target Classic HTTP-API, die jetzt nicht mehr unterstützt wird.
+* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Zielgruppe Classic HTTP API, die jetzt nicht mehr unterstützt wird.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
 * `at.js` Version 1.5.0 ist jetzt enthalten. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
