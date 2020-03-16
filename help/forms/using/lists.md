@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -60,7 +60,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
    [ ![Symbolleiste](assets/advancedediting.png)
 
-   * **Link**: Fügen Sie eine Hypertextverknüpfung in den Text ein. Tippen Sie auf **[!UICONTROL Link]**, geben Sie den Link im Feld **[!UICONTROL URL]** an, entfernen Sie den Standardobjektnamen aus dem Feld **[!UICONTROL Alt-Text]** und tippen Sie auf ![Speichern](assets/save_icon.svg).
+   * **Link**[](#insert-hyperlink): Fügen Sie eine Hypertextverknüpfung in den Text ein.
    * **Wiederholen**: Mit diesem Befehl wird ein Collection-Element unter Verwendung eines Trennzeichens in ein Datenwörterbuch gedruckt.
    * **Bedingung**: Klicken Sie, um eine Bedingung einzufügen. Text wird auf der Grundlage einer Bedingung eingefügt. Nur wenn die Bedingung den Status „true“ hat, wird der Text im Brief sichtbar.
    * **Hinzufügen Beschreibung**: Hinzufügen Anmerkung zu einem Textteil. Es handelt sich hierbei um Metadaten, die nur für den Autor sichtbar und nicht Teil des erstellten Briefs sind.
@@ -131,6 +131,18 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
 1. Sie können Inline-Bedingungen verwenden und wiederholen, um den Brief sehr kontextabhängig und gut strukturiert zu machen. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
 1. Tippen Sie auf **Speichern**.
+
+#### Einfügen eines Hyperlinks in einen Text {#insert-hyperlink}
+
+Führen Sie die folgenden Schritte aus, um einen Hyperlink in einem Textelement zu erstellen:
+
+1. Wählen Sie den Text oder das Datenmodellobjekt im Texteditor aus.
+
+2. Tippen Sie auf **[!UICONTROL Link]**. Tippen Sie auf **[!UICONTROL Feld &quot;Alt-Text]** &quot;, um den vorhandenen Objektnamen oder Text des Datenmodells zu entfernen.
+
+3. Geben Sie die URL an und tippen Sie auf ![Speichern](assets/save_icon.svg).
+
+![Hyperlink in Textelement erstellen](assets/text-create-hyperlink.png)
 
 #### Text suchen und ersetzen {#searching-and-replacing-text}
 
