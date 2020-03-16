@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 0ae42d9f81df89a7e1c08fac5cce5240f14e8c60
 
 ---
 
 
-# Bekannte Probleme{#known-issues}
+# Bekannte Probleme {#known-issues}
 
 Nachfolgend sind bekannte Probleme in Version 6.5 von Adobe Experience Manager aufgeführt, die im April 2019 veröffentlicht wurde.
 
@@ -26,13 +26,13 @@ Stellen Sie bei jeder dieser Aktionen sicher, dass die Eigenschaft &quot;*htmlli
 
 1. Aufruf von &quot;*/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true*&quot;.
 2. Aktualisieren auf AEM 6.5.
-3. &quot;Migration von verzögertem Inhalt&quot;auf AEM 6.5 ausführen.
+3. Ausführung der &quot;Migration von verzögertem Inhalt&quot;auf AEM 6.5.
 
 Es steht ein Artikel der [Wissensdatenbank](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) mit weiteren Details und der Problemumgehung zur Verfügung.
 
 ## Assets {#assets}
 
-* **** Suchen: Die Suche führt nicht zu Rückgaben, wenn die Suchzeichenfolge führende Leerzeichen enthält ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
+* **Suchen:** Die Suche führt nicht zu Rückgaben, wenn die Suchzeichenfolge Leerzeichen am Anfang enthält ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Ordner-Metadatenschema**: Nach Hinzufügen einer Auswahlschaltfläche entsprechen das ID-Feld und das Wertfeld nicht den Erwartungen und die Löschfunktion kann nicht verwendet werden (CQ-4261144)
 * Beim Umbenennen eines Assets ist es nicht möglich, ein Leerzeichen im Asset-Namen zu verwenden (CQ-4266403)
 
