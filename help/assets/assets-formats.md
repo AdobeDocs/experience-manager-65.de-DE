@@ -3,7 +3,7 @@ title: Von Assets unterstützte Formate
 description: Liste der von AEM Assets unterstützten Dateiformate sowie der für die jeweiligen Formate unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
+source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
 
 ---
 
@@ -55,7 +55,7 @@ Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
- &amp;ast; Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+&amp;ast; Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
@@ -91,7 +91,7 @@ Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbi
 
 ## Unterstützte Dokumentformate {#supported-document-formats}
 
-Folgende Dokumentformate werden für Asset-Verwaltungsfunktionen unterstützt:
+Folgende Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
 
 | Format | Speicher | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Einblicke](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -114,7 +114,7 @@ Folgende Dokumentformate werden für Asset-Verwaltungsfunktionen unterstützt:
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-Die folgenden Dokumentformate werden für dynamische Medienfunktionen unterstützt:
+Folgende Formate werden für dynamische Medienfunktionen unterstützt:
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -188,24 +188,23 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 
 ## Weitere unterstützte Formate {#other-supported-formats}
 
-Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wird in der folgenden Tabelle beschrieben.
+Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wird in der folgenden Tabelle beschrieben. Die normale DAM-Funktionalität, mit Ausnahme von Dynamic Media Versand, wird für alle Dateien unterstützt.
 
 | Formate | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Die anderen Formate werden in DAM für Speicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
+**&amp;ast;** Die anderen Formate werden in DAM für Datenspeicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
 Standardmäßig erkennt AEM den Dateityp mit der Dateierweiterung. AEM kann es anhand des Inhalts der Dateien erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
 
-Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 Siehe [Konfigurieren von Unterstützung für MIME-Typ-basierte Upload-Auftragsparameter](config-dynamic.md).
 
