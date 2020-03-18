@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed756d785864131c2e031aec4331388bc057576b
+source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
 
 ---
 
@@ -31,11 +31,12 @@ Darüber hinaus enthält AEM 6.5.4.0 Style-Systemverbesserungen. Sie können jet
 
 ## AEM Assets {#aem-assets}
 
-### Integration mit dem Markenportal über die Adobe I/O-Konsole {#assets-integration-bp}
+### Konfigurieren von AEM Assets mit Brand Portal {#configure-assets-bp}
 
-Sie können AEM Assets mit dem Markenportal jetzt über die Adobe I/O-Konsole konfigurieren. Die Adobe-E/A-Konsole ruft ein IMS-Token zur Autorisierung des Markenportal-Pätners ab. Früher wurde AEM Assets über das Legacy OAuth Gateway mit dem Markenportal in der klassischen Benutzeroberfläche konfiguriert. Die Konfigurationen mit dem Legacy OAuth Gateway werden bis zum 6. April 2020 unterstützt. Wenn Sie die Integration nicht ändern, funktionieren die vorhandenen Konfigurationen weiterhin.
+Der Kanal für die Autorisierung zwischen AEM Assets und Brand Portal wurde geändert. Zuvor wurde Brand Portal über das Legacy-OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab. AEM Assets wird jetzt über Adobe I/O in Brand Portal konfiguriert. Die Konsole ruft das IMS-Token zur Authentifizierung Ihres Brand Portal-Mandanten ab.
 
-Sie können entweder eine neue Integration erstellen oder Ihre Integrationseinstellungen auf die Adobe I/O-Konsole aktualisieren.
+Die Schritte zum Konfigurieren von AEM Assets mit Brand Portal unterscheiden sich je nach Ihrer AEM-Version und davon, ob Sie zum ersten Mal eine Konfiguration durchführen oder die vorhandenen Konfigurationen aktualisieren. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
+
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
