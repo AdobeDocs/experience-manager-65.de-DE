@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -21,21 +21,21 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Aus Entwicklungs- und Demonstrationsgründen müssen ein Autor und eine Instanz im Veröffentlichungsmodus ausgeführt werden.
 
-Befolgen Sie die grundlegenden AEM- [Anweisungen](../../help/sites-deploying/deploy.md#getting-started) für die ersten Schritte, die in
+Befolgen Sie die grundlegenden AEM- [Erste](../../help/sites-deploying/deploy.md#getting-started) Schritte, die zu
 
-* Autorenumgebung auf [localhost:4502](http://localhost:4502/)
-* Veröffentlichungsumgebung auf [localhost:4503](http://localhost:4503/)
+* Autorendatei auf [localhost:4502](http://localhost:4502/)
+* Umgebung auf [localhost veröffentlichen: 4503](http://localhost:4503/)
 
 Für AEM Communities
 
-* Die Autorenumgebung ist für
+* Die Umgebung des Verfassers ist für
 
    * Entwicklung von Sites, Vorlagen, Komponenten, Ressourcen für die Aktivierung und Lernpfade
    * Zuweisung von Mitgliedern und Gruppen von Mitgliedern zur Aktivierung von Ressourcen und Lernpfaden
    * Erstellen von Berichten zu Zuweisungen, Ansichten und Beiträgen
-   * Verwaltungs- und Konfigurationsaufgaben
+   * Verwaltungs- und Konfigurationseinstellungen
 
-* Die Veröffentlichungsumgebung ist
+* Die Umgebung zum Veröffentlichen ist
 
    * Lernen/Training auf der Grundlage von Themen, die vom Aktivierungsmanager verwaltet werden
    * Kommentieren und Auswerten von Ressourcen und Lernpfaden
@@ -55,7 +55,7 @@ Ein Tutorial zum Erstellen einer [Interaktionssite](overview.md#engagement-commu
 
 ## Aktivierungsfunktionen konfigurieren {#configure-enablement-features}
 
-Um diesem Lernprogramm zu folgen, müssen Sie die Aktivierung[ordnungsgemäß installieren und ](enablement.md)konfigurieren. Dazu sind Produkte von Drittanbietern wie MySQL und FFmpeg erforderlich.
+Um diesem Lernprogramm zu folgen, müssen Sie die Aktivierung [ordnungsgemäß installieren und](enablement.md)konfigurieren. Dazu sind Produkte von Drittanbietern wie MySQL und FFmpeg erforderlich.
 
 ## Konfigurieren Sie Analytics {#configure-analytics}
 
@@ -63,7 +63,7 @@ Wenn [Adobe Analytics für die Community-Site](analytics.md)konfiguriert ist, st
 
 ## E-Mail für Benachrichtigungen konfigurieren {#configure-email-for-notifications}
 
-Die Benachrichtigungsfunktion, die standardmäßig für alle Sites verfügbar ist, die mit der `Communities Sites` Konsole erstellt wurden, bietet einen E-Mail-Kanal für Benachrichtigungen.
+Die Benachrichtigungsfunktion, die standardmäßig für alle Sites verfügbar ist, die mit der `Communities Sites` Konsole erstellt wurden, stellt einen E-Mail-Kanal für Benachrichtigungen bereit.
 
 E-Mail muss für die Site ordnungsgemäß konfiguriert sein.
 
@@ -71,7 +71,7 @@ See [Configuring Email](email.md).
 
 ## Tunneldienst aktivieren {#enable-the-tunnel-service}
 
-Beim Erstellen einer Community-Site in der Autorenumgebung ermöglicht der Tunneldienst die Erstellung und Verwaltung von in der Veröffentlichungsumgebung (Mitglieder) registrierten Benutzern und Benutzergruppen, die Zuweisung von Rollen zu vertrauenswürdigen Mitgliedern der Community und die Zuweisung von Inhalten zu Lernenden.
+Beim Erstellen einer Community-Site in der Autor-Umgebung ermöglicht der Tunnel-Dienst das Erstellen und Verwalten von in der Veröffentlichungs-Umgebung (Mitglieder) registrierten Benutzern und Benutzergruppen, das Zuweisen von Rollen zu vertrauenswürdigen Community-Mitgliedern und das Zuweisen von Inhalten zu Lernenden.
 
 For more information see [Managing Users and User Groups](users.md).
 
@@ -79,7 +79,7 @@ Eine einfache Anleitung zum Aktivieren des Tunneldienstes finden Sie unter [Tunn
 
 ## Tutorial-Tags erstellen {#create-tutorial-tags}
 
-Erstellen Sie Tags, die für die Interaktions- und Aktivierungsübungen mit dem Tag-Namespace von verwendet werden `Tutorial`.
+Erstellen Sie Tags, die mithilfe des Tag-Namensraums von für die Interaktions- und Aktivierungsübungen verwendet werden `Tutorial`.
 
 Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) , um die folgenden Tags zu erstellen:
 
@@ -103,43 +103,43 @@ Beispielpaket mit Tags, die für die Erste Schritte-Tutorials in AEM Communities
 
 ## Aktivierungsmitglieder und -gruppen erstellen {#create-enablement-members-and-groups}
 
-Bei einer Community-Site für die Aktivierung sollten Site-Besucher sich nicht [selbst registrieren und keine Social-Anmeldung](sites-console.md#user-management)verwenden können.
+Für eine Community-Site, die eine Aktivierung ermöglicht, sollten Site-Besucher sich nicht [selbst registrieren und keine Social-Anmeldung](sites-console.md#user-management)verwenden können.
 
-Stattdessen wird bei aktiviertem [Tunneldienst](#enable-the-tunnel-service) die [Mitgliederkonsole](members.md) verwendet, um neue Mitglieder in der Veröffentlichungsumgebung zu registrieren.
+Stattdessen wird bei aktiviertem [Tunneldienst](#enable-the-tunnel-service) die [Mitgliederkonsole](members.md) verwendet, um neue Mitglieder in der Veröffentlichungs-Umgebung zu registrieren.
 
-In diesem Lernprogramm werden drei Mitglieder in der Veröffentlichungsumgebung erstellt. Zwei Mitglieder werden Mitglieder einer Benutzergruppe, die einem Lernpfad zugeordnet ist, während das dritte Mitglied ein Kontakt zu einer Ressource für die Aktivierung wird.
+In diesem Lernprogramm werden in der Umgebung &quot;Veröffentlichen&quot;drei Mitglieder erstellt. Zwei Mitglieder werden Mitglieder einer Benutzergruppe, die einem Lernpfad zugeordnet ist, während das dritte Mitglied ein Kontakt zu einer Ressource für die Aktivierung wird.
 
-Ein vierter Benutzer wird in der Autorenumgebung erstellt und den Rollen &quot;Communities-Administrator&quot;und &quot;Community-Aktivierungsmanager&quot;zugewiesen.
+Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die Rollen &quot;Communities Administrator&quot;und &quot;Community Enablement Manager&quot;zugewiesen.
 
 >[!NOTE]
 >
 >Diese Mitglieder werden vor der Einrichtung der Community-Site für *Übungen* zur Aktivierung erstellt.
 >
->Wenn sie danach erstellt wurden, könnten sie während der Mitgliedererstellung als Mitglieder der Gruppe *der*&#x200B;Übungsmitglieder hinzugefügt werden.
+>Wenn sie danach erstellt wurden, könnten sie während der Mitgliedererstellung als Mitglieder der Gruppe *der* Übungsmitglieder hinzugefügt werden.
 >
 >Stattdessen werden sie später der Mitgliedergruppe [zugewiesen](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
 
-### Riley Taylor - Einschreibung {#riley-taylor-enrollee}
+### Riley Taylor - Kursteilnehmer {#riley-taylor-enrollee}
 
 [Erstellen Sie ein Mitglied](members.md#create-new-member) , das zu einer Gruppe von Lernenden hinzugefügt wird - der Community Ski Class Gruppe.
 
 * **ID**: Riley
 * **E-Mail**: riley.taylor@mailinator.com
 * **Kennwort:** password
-* **Kennwort** bestätigen:password
+* **Kennwort** bestätigen: password
 * **Vorname**: Riley
 * **Nachname**: Taylor
 
-### Sidney Croft - Einschreibung {#sidney-croft-enrollee}
+### Sidney Croft - Kursteilnehmer {#sidney-croft-enrollee}
 
 [Erstellen Sie ein zweites Mitglied](members.md#create-new-member) , das der Community Ski Class Gruppe hinzugefügt wird.
 
 * **ID**: sidney
 * **E-Mail**: sidney.croft@mailinator.com
 * **Kennwort:** password
-* **Kennwort** bestätigen:password
+* **Kennwort** bestätigen: password
 * **Vorname**: Sidney
-* **Nachname**: Croß
+* **Nachname**: Überlappend
 
 ### Quinn Harper - Ansprechpartner für die Aktivierungsressource und Moderator {#quinn-harper-enablement-resource-contact-and-moderator}
 
@@ -148,21 +148,21 @@ Ein vierter Benutzer wird in der Autorenumgebung erstellt und den Rollen &quot;C
 * **ID**: Quinn
 * **E-Mail**: quinn.harper@mailinator.com
 * **Kennwort:** password
-* **Kennwort** bestätigen:password
+* **Kennwort** bestätigen: password
 * **Vorname**: Quinn
 * **Nachname**: Harper
 
-### Benutzergruppe hinzufügen - Community-Ski-Klasse {#add-a-user-group-community-ski-class}
+### Hinzufügen einer Benutzergruppe - Community-Skiklasse {#add-a-user-group-community-ski-class}
 
-[Fügen Sie eine neue Gruppe](members.md#create-new-group) mit dem Namen Community Ski Class hinzu.
+[Hinzufügen eine neue Gruppe](members.md#create-new-group) namens Community Ski Class.
 
 * **ID**: community-ski-class
 * **Name**: Community Ski Class
 * **Beschreibung**: eine Beispielgruppe zum Zuweisen von Ressourcen für die Aktivierung
-* **Mitglieder zu Gruppe** hinzufügen:
+* **Hinzufügen Mitglieder zu Gruppe** hinzufügen:
 
-   *  Riley
-   *  sidney
+   * Riley
+   * sidney
 
 * Wählen Sie **[!UICONTROL Speichern]**
 
@@ -186,19 +186,19 @@ Erstellen Sie einen Benutzer beim *Autor*, dem die Rolle des Community-Administr
 
    * For example, [http://localhost:4502/](http://localhost:4503/)
 
-* Anmelden mit Administratorrechten
+* Anmelden mit Administratorberechtigungen
 
    * Beispiel: Benutzername &quot;admin&quot;/ Kennwort &quot;admin&quot;
 
 * Navigieren Sie in der Hauptkonsole zu **[!UICONTROL Tools, Vorgänge > Sicherheit > Benutzer]**
-* Wählen Sie im Menü **[!UICONTROL Bearbeiten]** die Option Benutzer **[!UICONTROL hinzufügen]**
+* Wählen Sie im Menü **[!UICONTROL Bearbeiten]** die Option **[!UICONTROL Hinzufügen Benutzer]**
 
 * Geben Sie im `Create New User` Dialogfeld
 
    * **ID&amp;ast;**: Sirius
    * **E-Mail-Adresse**: sirius.nilson@mailinator.com
-   * **Password&amp;ast;**:password
-   * **Password&amp;amp bestätigen;ast;**:password
+   * **Password&amp;ast;**: password
+   * **Password&amp;amp bestätigen;ast;**: password
    * **Vorname**: Sirius
    * **Nachname&amp;last;**: Nilson
 
