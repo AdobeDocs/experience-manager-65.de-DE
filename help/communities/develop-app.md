@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -30,18 +30,18 @@ Der erste Schritt besteht darin, dem `/apps/an-scf-sandbox/components/playpage` 
 Verwenden von CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Name: `sling:resourceSuperType`
-    * Typ: `String`
-    * Wert: `foundation/components/page`
+    Name: `sling:resourceSuperType`
+    Type: `String`
+    Value: `foundation/components/page`
 
-1. Klicken Sie auf Grün **[!UICONTROL [+]Hinzufügen]**
+1. Klicken Sie auf die grüne **[!UICONTROL [+]Hinzufügen]**
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
-1. Navigieren Sie im **CRXDE Lite** -Explorer-Bereich zu der Datei `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie darauf, `playpage.jsp` um sie im Bearbeitungsbereich zu öffnen.
+1. Navigieren Sie im **CRXDE Lite** -Explorer-Bereich zu der Datei `/apps/an-scf-sandbox/components/playpage` und klicken Sie mit der Dublette darauf, `playpage.jsp` um sie im Bearbeitungsbereich zu öffnen.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -86,9 +86,9 @@ Verwenden von CRXDE Lite:
 
    Um das Authoring einzurichten, überlagern Sie `body.jsp` mit einem lokalen Skript und fügen Sie ein Absatzsystem (parsys) in den Text ein:
 
-   1. navigate to `/apps/an-scf-sandbox/components`
-   1. den `playpage`Knoten auswählen
-   1. Rechtsklick und Auswahl `Create > Create File...`
+   1. Navigieren Sie zu `/apps/an-scf-sandbox/components`
+   1. Wählen Sie den `playpage`Knoten
+   1. Right-click and select `Create > Create File...`
 
       * Name: **body.jsp**
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**
@@ -112,7 +112,7 @@ Verwenden von CRXDE Lite:
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
-**Zeigen Sie die Seite in einem Browser im Bearbeitungsmodus an:**
+**Ansicht der Seite in einem Browser im Bearbeitungsmodus:**
 
 * Standard-Benutzeroberfläche: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
@@ -130,11 +130,11 @@ So wird die Wiedergabeseite in der klassischen Benutzeroberfläche angezeigt, au
 
 ## Communities-Komponenten {#communities-components}
 
-Um Communities-Komponenten für das Authoring zu aktivieren, führen Sie zunächst die folgenden Anweisungen aus:
+Um Communities-Komponenten für das Authoring zu aktivieren, führen Sie Beginn wie folgt aus:
 
 * [Auf Communities-Komponenten zugreifen](basics.md#accessing-communities-components)
 
-Für die Zwecke dieser Sandbox beginnen Sie mit den **Communities** -Komponenten (aktivieren Sie das Kontrollkästchen):
+Für die Zwecke dieser Sandbox ist der Beginn mit diesen **Communities** -Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren):
 
 * Comments
 * Forum
@@ -157,9 +157,9 @@ Wählen Sie außerdem **[!UICONTROL Allgemeine]** Komponenten, wie
 
 ## Landingpage {#landing-page}
 
-In einer mehrsprachigen Umgebung enthält die Stammseite ein Skript, das die Anforderung des Clients zur Bestimmung der bevorzugten Sprache analysiert.
+In einer mehrsprachigen Umgebung enthält die Stammeseite ein Skript, das die Anforderung des Clients zur Bestimmung der bevorzugten Sprache analysiert.
 
-In diesem einfachen Beispiel wird die Root-Seite statisch so eingestellt, dass sie auf die englische Seite umgeleitet wird, die in Zukunft als Haupt-Landingpage mit einem Link zur play-Seite entwickelt werden kann.
+In diesem einfachen Beispiel wird die Root-Landingpage statisch so eingestellt, dass sie auf die englische Seite umgeleitet wird, die in der Zukunft als Hauptseite mit einem Link zur play-Seite entwickelt werden kann.
 
 Ändern Sie die Browser-URL in die Stammseite: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
@@ -168,10 +168,10 @@ In diesem einfachen Beispiel wird die Root-Seite statisch so eingestellt, dass s
 * Registerkarte &quot;ERWEITERT&quot;
 
    * Für den Eintrag &quot;Umleitung&quot;navigieren Sie zu **[!UICONTROL Websites > SCF Sandbox-Site > SCF Sandbox]**
-   * Klicken Sie auf **[!UICONTROL OK]**.
+   * Klicken Sie auf **[!UICONTROL OK]**
 
-* Klicken Sie auf **[!UICONTROL OK]**.
+* Klicken Sie auf **[!UICONTROL OK]**
 
 Sobald die Site veröffentlicht wurde, führt das Browsen zur Root-Seite in einer Veröffentlichungsinstanz eine Umleitung zur englischen Seite durch.
 
-Der letzte Schritt vor der Wiedergabe mit den Communities SCF-Komponenten ist, einen Client Library Folder (clientlibs) hinzuzufügen ... . **[](add-clientlibs.md)**
+Der letzte Schritt vor der Wiedergabe mit den Communities SCF-Komponenten ist, einen Client Library Folder (clientlibs) hinzuzufügen .... [Hinzufügen Clienlibs](add-clientlibs.md)
