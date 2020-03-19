@@ -10,15 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Entwicklung von Sandbox-Inhalten {#develop-sandbox-content}
 
-**[⇐ Hinzufügen von Clientlibs](add-clientlibs.md)**
+**[Hinzufügen Clientlibs](add-clientlibs.md)**
 
 An dieser Stelle ist es möglich, Community-Features in der Sandbox zu erkunden und gleichzeitig die [We-Retail Community](../../help/sites-developing/we-retail.md), den [Community Components Guide](components-guide.md) und die wichtigsten [Features](essentials.md) zu verwenden.
 
-**[⇐ Hinzufügen von Clientlibs](add-clientlibs.md)**
+
