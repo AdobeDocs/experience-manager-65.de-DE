@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren der von AEM Assets mit Brand Portal
-seo-title: Konfigurieren der von AEM Assets mit Brand Portal
+title: Konfigurieren von AEM Assets mit Brand Portal
+seo-title: Konfigurieren von AEM Assets mit Brand Portal
 description: Erfahren Sie, wie Sie AEM Assets mit dem Markenportal für das Veröffentlichen von Assets und Sammlungen im Markenportal konfigurieren.
 seo-description: Erfahren Sie, wie Sie AEM Assets mit dem Markenportal für das Veröffentlichen von Assets und Sammlungen im Markenportal konfigurieren.
 uuid: b95c046e-9988-444c-b50e-ff5ec8cafe14
@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 36e9743b8b41d53e735dce4ba13c986ea22e612b
+source-git-commit: f63e776d1f7a9433e80633cdcfdf5ffed37b29da
 
 ---
 
 
-# Konfigurieren der von AEM Assets mit Brand Portal {#configure-integration-65}
+# Konfigurieren von AEM Assets mit Brand Portal {#configure-integration-65}
 
-Adobe Experience Manager (AEM)-Assets werden über die Adobe-ID/O mit dem Markenportal konfiguriert. Dadurch wird ein IMS-Token zur Autorisierung Ihres Markenportal-Mandanten beschafft.
+Adobe Experience Manager (AEM) Assets wird über Adobe I/O in Brand Portal konfiguriert. Dadurch wird ein IMS-Token zur Autorisierung Ihres Brand Portal-Mandanten abgerufen.
 
 >[!NOTE]
 >
->Die Konfiguration von AEM Assets mit dem Markenportal über Adobe I/O wird auf AEM 6.5.4.0 und höher unterstützt.
+>Die Konfiguration von AEM Assets mit Brand Portal über Adobe I/O wird auf AEM 6.5.4.0 und höher unterstützt.
 >
 >Zuvor wurde Brand Portal über das Legacy-OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab.
 >
->Die Konfiguration über Legacy-OAuth wird ab dem 6. April 2020 nicht mehr unterstützt. Die Konfiguration erfolgt nun über Adobe I/O.
+>Die Konfiguration über Legacy OAuth wird ab dem 6. April 2020 nicht mehr unterstützt, sondern erfolgt nun über Adobe I/O.
 >
->Wenn Sie ein bestehender Brand Portal-Benutzer mit einer Konfiguration auf dem alten OAuth Gateway sind, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration auf der Adobe-E/A-Datei erstellen.
+>Wenn Sie ein bestehender Brand Portal-Benutzer mit einer Konfiguration auf dem Legacy-OAuth-Gateway sind, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration auf Adobe I/O erstellen.
 >
->Die vorhandene Konfiguration funktioniert jedoch weiterhin, wenn Sie die Konfigurationen nicht ändern.
+>Die vorhandenen Konfigurationen funktionieren jedoch auch weiterhin, sofern Sie sie nicht ändern.
 
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
 * [Neue Konfiguration](#configure-new-integration-65): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit dem Markenportal konfigurieren möchten, können Sie eine neue Konfiguration auf der Adobe-E/A erstellen.
@@ -39,32 +39,32 @@ Benutzer dieser Hilfe sollten mit den folgenden Technologien vertraut sein:
 
 * Installieren, Konfigurieren und Verwalten von Adobe Experience Manager- und AEM-Paketen
 
-* Linux- und Microsoft Windows-Betriebssysteme
+* Verwenden von Linux- und Microsoft Windows-Betriebssystemen
 
 ## Voraussetzungen {#prerequisites}
 
-Sie benötigen Folgendes, um AEM Assets mit Markenportal zu konfigurieren:
+Sie benötigen Folgendes, um AEM Assets mit Brand Portal zu konfigurieren:
 
-* Eine Autoreninstanz für AEM Assets mit dem neuesten Service Pack.
-* Markenportal-Mandanten-URL.
-* Ein Benutzer mit Systemadministrator-Berechtigungen für die IMS-Organisation des Markenportal-Mandanten.
+* Eine betriebsbereite AEM Assets-Autoreninstanz mit dem neuesten Service Pack.
+* Brand Portal-Mandanten-URL
+* Ein Benutzer mit Systemadministrator-Berechtigungen für die IMS-Organisation des Brand Portal-Mandanten
 
 
 [Herunterladen und Installieren von AEM 6.5](#aemquickstart)
 
-[Laden Sie das neueste AEM Service Pack herunter und installieren Sie es](#servicepack)
+[Herunterladen und Installieren des neuesten AEM Service Packs](#servicepack)
 
 ### Herunterladen und Installieren von AEM 6.5 {#aemquickstart}
 
-Es wird empfohlen, AEM 6.5 zum Einrichten einer AEM-Autoreninstanz zu verwenden. Wenn Sie AEM nicht ausgeführt haben, laden Sie es von den folgenden Speicherorten herunter:
+Es wird empfohlen, AEM 6.5 zum Einrichten einer AEM-Autoreninstanz zu verwenden. Wenn Sie AEM nicht eingerichtet haben, laden Sie es von den folgenden Speicherorten herunter:
 
-* Wenn Sie bereits AEM-Kunde sind, laden Sie AEM 6.5 von der [Adobe Licensing-Website](http://licensing.adobe.com)herunter.
+* If you are an existing AEM customer, download AEM 6.5 from [Adobe Licensing website](http://licensing.adobe.com).
 
-* Wenn Sie Adobe-Partner sind, verwenden Sie das [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) , um AEM 6.5 anzufordern.
+* If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
 
-Nach dem Herunterladen von AEM finden Sie Anweisungen zum Einrichten einer AEM-Autoreninstanz unter [Bereitstellen und Warten](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
-### Download and install AEM latest Service Pack {#servicepack}
+### Herunterladen und Installieren des neuesten AEM Service Packs{#servicepack}
 
 Ausführliche Anweisungen finden Sie unter
 
@@ -72,7 +72,7 @@ Ausführliche Anweisungen finden Sie unter
 
 **Wenden Sie sich an den Support** , wenn Sie das neueste AEM-Paket oder Service Pack nicht finden können.
 
-## Create configuration {#configure-new-integration-65}
+## Konfiguration erstellen {#configure-new-integration-65}
 
 Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge durch, wenn Sie AEM Assets mit Markenportal zum ersten Mal konfigurieren:
 1. [Erhalten eines öffentlichen Zertifikats](#public-certificate)
@@ -115,7 +115,7 @@ Mit dem öffentlichen Zertifikat können Sie Ihr Profil auf Adobe I/O authentifi
 
    ![Zertifikat erstellen](assets/ims-config2.png)
 
-1. Klicken Sie auf Öffentlichen Schlüssel **[!UICONTROL herunterladen]** und speichern Sie die *AEM-Adobe-IMS.crt* -Zertifikatdatei auf Ihrem Computer. Die Zertifikatdatei wird zum [Erstellen der Adobe-E/A-Integration](#createnewintegration)verwendet.
+1. Click **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create Adobe I/O integration](#createnewintegration).
 
    ![Zertifikat herunterladen](assets/ims-config3.png)
 
@@ -141,27 +141,27 @@ Die Adobe-I/O-Integration generiert API-Schlüssel, geheimen Clientschlüssel un
 
 1. Eine neue Integrationsseite wird geöffnet.
 
-   Wählen Sie Ihre Organisation aus der Dropdownliste aus.
+   Wählen Sie Ihre Organisation aus der Dropdown-Liste aus.
 
    Wählen Sie in **[!UICONTROL Experience Cloud]** das **[!UICONTROL AEM-Markenportal]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
-   Wenn die Option &quot;Markenportal&quot;für Sie deaktiviert ist, vergewissern Sie sich, dass Sie im Dropdownfeld über der Option &quot; **[!UICONTROL Adobe-Dienste]** &quot;die richtige Organisation ausgewählt haben. Wenn Sie Ihr Unternehmen nicht kennen, wenden Sie sich an Ihren Administrator.
+   If the Brand Portal option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. Wenn Sie Ihre Organisation nicht kennen, wenden Sie sich an Ihren Administrator.
 
    ![Integration erstellen](assets/create-new-integration2.png)
 
-1. Geben Sie einen Namen und eine Beschreibung für die Integration ein. Klicken Sie auf Datei von Ihrem Computer **** auswählen und laden Sie die `AEM-Adobe-IMS.crt` Datei hoch, die Sie im Abschnitt [Öffentliche Zertifikate](#public-certificate) abrufen heruntergeladen haben.
+1. Geben Sie einen Namen und eine Beschreibung für die Integration ein. Click **[!UICONTROL Select a File from your computer]** and upload the `AEM-Adobe-IMS.crt` file downloaded in the [obtain public certificates](#public-certificate) section.
 
 1. Wählen Sie das Profil Ihrer Organisation aus.
 
-   Oder wählen Sie das Standardprofil **[!UICONTROL Assets Brand Portal]** und klicken Sie auf Integration **[!UICONTROL erstellen]**. Die Integration wird erstellt.
+   Oder wählen Sie das Standard-Markenportal für Profil- **[!UICONTROL Assets aus]** und klicken Sie auf Integration **[!UICONTROL erstellen]**. Die Integration wird erstellt.
 
-1. Klicken Sie auf **[!UICONTROL Weiter zu den Integrationsdetails]** , um die Integrationsinformationen anzuzeigen.
+1. Click **[!UICONTROL Continue to integration details]** to view the integration information.
 
    Kopieren des **[!UICONTROL API-Schlüssels]**
 
    Klicken Sie auf **[!UICONTROL Clientgeheimnis abrufen]** und kopieren Sie den geheimen Schlüssel des Kunden.
 
-   ![API-Schlüssel, geheimer Clientschlüssel und Nutzdaten einer Integration](assets/create-new-integration3.png)
+   ![API-Schlüssel, Client Secret und Nutzdaten einer Integration ](assets/create-new-integration3.png)
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL JWT]** und kopieren Sie die **[!UICONTROL JWT-Nutzlast]**.
 
@@ -176,7 +176,7 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 **Schritte zum Erstellen der Konfiguration des IMS-Kontos:**
 
-1. Öffnen Sie die Seite &quot;IMS-Konfiguration&quot;, Registerkarte &quot; **[!UICONTROL Konten]** &quot;. Sie haben die Seite am Ende des Abschnitts geöffnet, [öffentliches Zertifikat](#public-certificate)abrufen.
+1. Öffnen Sie die Seite &quot;IMS-Konfiguration&quot;, Registerkarte &quot; **[!UICONTROL Konten]** &quot;. Sie haben die Seite am Ende des Abschnitts [Öffentliche Zertifikate abrufen](#public-certificate) geöffnet gelassen.
 
 1. Geben Sie einen **[!UICONTROL Titel]** für das IMS-Konto an.
 
@@ -190,17 +190,20 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
    ![IMS-Kontokonfiguration](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >Erstellen Sie nur eine IMS-Konfiguration. Erstellen Sie nicht mehrere IMS-Konfigurationen.
 
-1. Wählen Sie die IMS-Konfiguration aus und klicken Sie auf **[!UICONTROL Gesundheit]**&#x200B;überprüfen. Das folgende Dialogfeld wird angezeigt.
+1. Select the IMS configuration and click **[!UICONTROL Check Health]**. Das folgende Dialogfeld wird angezeigt.
 
-   Klicken Sie auf **[!UICONTROL Überprüfen]**. Bei erfolgreicher Verbindung wird die Meldung *Token erfolgreich* abgerufen angezeigt.
+   Klicken Sie auf **[!UICONTROL Überprüfen]**. Bei erfolgreicher Verbindung wird die Meldung *Token erfolgreich abgerufen* angezeigt.
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+>
+>Erstellen Sie nur eine gültige IMS-Konfiguration. Erstellen Sie nicht mehrere IMS-Konfigurationen.
+>
+> Stellen Sie sicher, dass die Konfiguration ordnungsgemäß ist. Falls die Konfiguration ungesund ist, löschen Sie sie und erstellen Sie eine neue, gesunde Konfiguration.
+
+<br/> <br/>
 
 ### Configure cloud service {#configure-the-cloud-service}
 
@@ -285,7 +288,7 @@ Markenportal wurde erfolgreich mit Ihrer AEM Assets-Autoreninstanz konfiguriert.
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Konfigurieren Sie die Asset-Beschaffung](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) , damit die Benutzer des Markenportals Elemente in AEM Assets hinzufügen und veröffentlichen können.
 
-## Konfiguration aktualisieren {#upgrade-integration-65}
+## Upgrade der Konfiguration {#upgrade-integration-65}
 
 Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge aus, um vorhandene Konfigurationen zu aktualisieren:
 1. [Ausführen von Aufträgen überprüfen](#verify-jobs)
@@ -316,7 +319,7 @@ Vergewissern Sie sich, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentli
 
 ### Vorhandene Konfigurationen löschen {#delete-existing-configuration}
 
-Sie müssen beim Löschen der vorhandenen Konfigurationen die folgende Checkliste ausführen.
+Sie müssen beim Löschen der vorhandenen Konfigurationen die folgende Liste ausführen.
 * Alle vier Replizierungsagenten löschen
 * Cloud-Dienst löschen
 * MAC-Benutzer löschen
