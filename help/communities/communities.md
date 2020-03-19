@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Überblick {#overview}
 
-AEM Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalender, Kommentare, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Veröffentlichungsumgebung eingegeben werden.
+AEM Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalender, Kommentare, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Umgebung &quot;Veröffentlichen&quot;eingegeben werden.
 
 Die Grundlage einer [Community-Site](overview.md#communitiessites) bildet das [Social-Komponenten-Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl einer [Community-Site-Vorlage](sites-console.md) , die aus [Community-Funktionen](functions.md)besteht.
 
@@ -35,16 +35,16 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
-* [Community-Inhaltsspeicherung](working-with-srp.md): beschreibt die verfügbaren SRP-Optionen für einen UGC-gemeinsamen Store
-* [Empfohlene Topologien für Communities](topologies.md): Diskussion der Topologien auf der Grundlage von Anwendungsfällen und SRP-Auswahl
+* [Community Content Datenspeicherung](working-with-srp.md): beschreibt die verfügbaren SRP-Optionen für einen UGC-gemeinsamen Store
+* [Empfohlene Topologien für Communities](topologies.md): diskutiert Topologien auf der Grundlage von Anwendungsfällen und SRP-Auswahl.
 
 ## Social Component Framework {#social-component-framework}
 
-* [Social Component Framework](scf.md): Überblick über Framework und APIs
+* [Social-Komponenten-Framework](scf.md): Überblick über Framework und APIs
 * [SCF Handlebars Helpers](handlebars-helpers.md): Standard-Helfer und Schreiben von benutzerdefinierten Helfern
 * [Clientseitige Anpassung](client-customize.md): Anpassen von Code, der im Browser ausgeführt wird
 * [Serverseitige Anpassung](server-customize.md): Anpassen von Code, der auf dem Server ausgeführt wird
-* [Storage Resource Provider (SRP)](srp.md): Überblick über die Speicherung von Community-Inhalten
+* [Datenspeicherung Resource Provider (SRP)](srp.md): Übersicht über die Datenspeicherung von Community-Inhalten
 * [Kodierungsleitlinien](code-guide.md): Richtlinien, Tipps und Tricks
 * [Leitfaden](components-guide.md)zu Community-Komponenten: interaktives Entwicklungstool
 
@@ -65,7 +65,7 @@ Die Komponenten, Funktionen und Funktionen von AEM Communities stellen die Baust
 
 ## Community-Gruppen {#community-groups}
 
-[Gemeinschaftsgruppen](overview.md#communitygroups) sind das Konzept, dass es Mitgliedern der Gemeinschaft erlaubt wird, Untergemeinschaften innerhalb der Community-Site zu bilden. Das Erstellen einer Community-Gruppe kann in der Veröffentlichungs- oder Autorenumgebung erfolgen.
+[Gemeinschaftsgruppen](overview.md#communitygroups) sind das Konzept, dass es Mitgliedern der Gemeinschaft erlaubt wird, Untergemeinschaften innerhalb der Community-Site zu bilden. Die Erstellung einer Community-Gruppe kann in der Umgebung &quot;Veröffentlichen&quot;oder &quot;Autor&quot;erfolgen.
 
 * [Community-Gruppengrundlagen](essentials-groups.md)
 * [Gruppenfunktion](functions.md#groups-function)
@@ -76,11 +76,11 @@ Die Komponenten, Funktionen und Funktionen von AEM Communities stellen die Baust
 ## Daten verwalten {#managing-data}
 
 * [SRP und UGC Essentials](srp-and-ugc.md) - SRP API-Dienstprogrammmethoden und Beispiele
-* [Tag Essentials](tag.md) - Möglichkeit für Community-Mitglieder, UGC und/oder katalogisierte Ressourcen für die Aktivierung zu taggen
+* [Tag Essentials](tag.md) - Möglichkeit für Community-Mitglieder, UGC- und/oder katalogisierte Ressourcen für die Aktivierung zu taggen
 
 ## Tutorials {#tutorials}
 
-* [Clientseitige Lernprogramme](tutorials.md#client-side-customization)
+* [clientseitige Übungen](tutorials.md#client-side-customization)
 * [Serverseitige Übungen](tutorials.md#server-side-customization)
 * [Anleitungen](tutorials.md#how-to-instructions)
 
