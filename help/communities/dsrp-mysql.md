@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -35,7 +35,7 @@ Diese Anweisungen beschreiben, wie eine Verbindung zum MySQL-Server hergestellt 
 
 ## MySQL installieren {#installing-mysql}
 
-[MySQL](https://dev.mysql.com/downloads/mysql/) sollte gemäß den Anweisungen für das Zielbetriebssystem heruntergeladen und installiert werden.
+[MySQL](https://dev.mysql.com/downloads/mysql/) sollte gemäß den Anweisungen für das Zielgruppe OS heruntergeladen und installiert werden.
 
 ### Tabellennamen in Kleinbuchstaben {#lower-case-table-names}
 
@@ -71,7 +71,7 @@ Um eine bessere mehrsprachige Unterstützung zu bieten, muss der UTF8-Zeichensat
 
 MySQL Workbench bietet eine Benutzeroberfläche zum Ausführen von SQL-Skripten, die das Schema und die Ausgangsdaten installieren.
 
-MySQL Workbench sollte gemäß den Anweisungen für das Zielbetriebssystem heruntergeladen und installiert werden.
+MySQL Workbench sollte gemäß den Anweisungen für das Zielgruppe OS heruntergeladen und installiert werden.
 
 ## Communities-Verbindung {#communities-connection}
 
@@ -84,14 +84,14 @@ Wenn MySQL Workbench zum ersten Mal gestartet wird, werden, sofern sie nicht ber
 1. Wählen Sie das `+` Symbol rechts neben `MySQL Connections`.
 1. Geben Sie im Dialogfeld `Setup New Connection`die für Ihre Plattform geeigneten Werte ein
 
-   Zu Demonstrationszwecken mit dem Autor AEM-Instanz und MySQL auf demselben Server:
+   Zu Demonstrationszwecken, wenn sich die Autoreninstanz AEM und MySQL auf demselben Server befinden:
 
    * Verbindungsname: `Communities`
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
    * Kennwort: `no password by default`
-   * Standardschema: `leave blank`
+   * Standard-Schema: `leave blank`
 
 1. Wählen Sie `Test Connection` zur Überprüfung der Verbindung mit dem ausgeführten MySQL-Dienst
 
@@ -118,17 +118,17 @@ Das SQL-Skript wird vom AEM-Repository abgerufen:
 
    * For example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Wählen Sie den Ordner /libs/social/config/datastore/dsrp/schema
+1. Wählen Sie den Ordner /libs/social/config/datastore/dsrp/Schema
 1. Download `init-schema.sql`
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Eine Methode zum Herunterladen des Schemas ist
+Eine Möglichkeit zum Herunterladen des Schemas besteht darin,
 
-* Wählen Sie den `jcr:content`Knoten für die SQL-Datei aus
-* Beachten Sie, dass der Wert für die `jcr:data`Eigenschaft ein Ansichtslink ist
+* Wählen Sie den `jcr:content` Knoten für die sql-Datei
+* Beachten Sie, dass der Wert für die `jcr:data` Eigenschaft ein Link zur Ansicht ist.
 
-* Link &quot;Ansicht&quot;auswählen, um die Daten in einer lokalen Datei zu speichern
+* Wählen Sie den Link &quot;Ansicht&quot;, um die Daten in einer lokalen Datei zu speichern
 
 ### DSRP-Datenbank erstellen {#create-the-dsrp-database}
 
@@ -155,7 +155,7 @@ In der folgenden Abbildung steht die `init_schema.sql` Datei zur Ausführung ber
 
 #### Aktualisieren {#refresh}
 
-Nach Ausführung des Skripts muss der `SCHEMAS`Abschnitt des Skripts aktualisiert werden, `Navigator` damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
+Nachdem das Skript ausgeführt wurde, muss der `SCHEMAS` Abschnitt des Skripts aktualisiert werden, `Navigator` damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -185,7 +185,7 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
       Server anstelle von localhost angeben, wenn der MySQL-Server nicht mit dem AEM-Server &quot;this&quot;identisch ist
 
-      *Communities* ist der standardmäßige Datenbankname (Schema)
+      *Communities* ist der Standarddateiname (Schema)
 
    * **[!UICONTROL Benutzername]**: `root`
 
