@@ -1,6 +1,6 @@
 ---
-title: Grundlagen zu Bewertung und Abzeichen
-seo-title: Grundlagen zu Bewertung und Abzeichen
+title: Grundlagen zu Scoring und Abzeichen
+seo-title: Grundlagen zu Scoring und Abzeichen
 description: Übersicht über die Funktionen "Bewertung und Abzeichen"
 seo-description: Übersicht über die Funktionen "Bewertung und Abzeichen"
 uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d522c5ec6c72a9fd391d021f2fac37f88c686bd9
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Grundlagen zu Bewertung und Abzeichen{#scoring-and-badges-essentials}
+# Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
 
 Die Funktion für die Bewertung und Abzeichen von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
@@ -26,9 +26,9 @@ Die Details zur Einrichtung der Funktion finden Sie unter
 
 Diese Seite enthält weitere technische Details:
 
-* wie eine Markierung[ als Bild oder Text ](#displaying-badges)angezeigt wird
+* So [zeigen Sie eine Markierung](#displaying-badges) als Bild oder Text an
 * So aktivieren Sie die umfassende [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
-* wie Sie [auf UGC](#ugc-for-scoring-and-badging) im Zusammenhang mit Scoring und Abzeichen zugreifen können
+* Wie [kann ich auf UGC](#ugc-for-scoring-and-badging) im Zusammenhang mit Scoring und Abzeichen zugreifen?
 
 >[!CAUTION]
 >
@@ -74,58 +74,58 @@ Wenn &quot;false&quot;festgelegt ist, zeigt Zugewiesen an, dass das Abzeichen f�
 
 ## Debug-Protokoll für Bewertung und Abzeichen {#debug-log-for-scoring-and-badging}
 
-Um das Debugging von Bewertung und Markierung zu unterstützen, kann eine benutzerdefinierte Protokolldatei eingerichtet werden. Der Inhalt dieser Protokolldatei kann dann dem Kundensupport zur Verfügung gestellt werden, wenn Probleme mit der Funktion auftreten.
+Um das Debugging von Scoring und Abzeichen zu unterstützen, kann eine benutzerdefinierte Protokolldatei eingerichtet werden. Der Inhalt dieser Protokolldatei kann dann dem Kundensupport zur Verfügung gestellt werden, wenn Probleme mit der Funktion auftreten.
 
 Ausführliche Anweisungen finden Sie unter [Erstellen einer benutzerdefinierten Protokolldatei](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 So richten Sie schnell eine Slinglog-Datei ein:
 
-1. Zugriff auf die **Adobe Experience Manager Web Console-Protokollunterstützung**, z. B.
+1. Greifen Sie beispielsweise auf die **Adobe Experience Manager Web Console-Protokollunterstützung** zu.
 
    * https://localhost:4502/system/console/slinglog
 
-1. Neue Protokollfunktion **hinzufügen**
+1. Neue **Hinzufügen auswählen**
 
-   1. Wählen Sie `DEBUG`für **Protokollebene**
+   1. Wählen Sie `DEBUG` für **Protokollebene**
 
    1. Geben Sie beispielsweise einen Namen für die **Protokolldatei** ein.
 
       * logs/scoring-debug.log
-   1. Geben Sie zwei **Logger **(class) Einträge ein (über `+` das Symbol)
+   1. Geben Sie zwei **Protokolleinträge** (Klasseneinträge) ein (mit `+` dem Symbol)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
-   1. Wählen Sie **Save** aus.
+   1. Wählen Sie **Speichern**
 
 
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-So zeigen Sie Protokolleinträge an
+So zeigen Sie Protokolleinträge an:
 
-* aus der Web-Konsole
+* Über die Web-Konsole
 
-   * unter dem Menü **Status **Menü
+   * Im Menü &quot; **Status** &quot;
    * Protokolldateien auswählen ****
-   * nach dem Namen der Protokolldatei suchen, z. B. `scoring-debug`
+   * Suchen Sie nach dem Namen Ihrer Protokolldatei, z. B. `scoring-debug`
 
-* auf dem lokalen Datenträger des Servers
+* Auf dem lokalen Datenträger des Servers
 
    * Die Protokolldatei befindet sich unter &lt;*Server-Installationsdir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * for example, `.../crx-quickstart/logs/scoring-debug.log`
+   * Beispiel: `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## UGC für Scoring und Bading {#ugc-for-scoring-and-badging}
 
-Es ist möglich, die UGC im Zusammenhang mit Scoring und Abzeichen anzuzeigen, wenn die ausgewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter Übersicht über den [Community-Content-Speicher](/help/communities/working-with-srp.md) und den [Speicher-Ressourcenanbieter](/help/communities/srp.md).)
+Es ist möglich, die UGC in Bezug auf die Bewertung und Abzeichen zu Ansichten, wenn die gewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community Content Datenspeicherung](/help/communities/working-with-srp.md) und Übersicht über [Datenspeicherung Resource Provider](/help/communities/srp.md).)
 
 Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da die UGC mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)leicht zugänglich ist.
 
-**JSRP zum Autor** : Das Experimentieren in der Autorenumgebung führt zu einer UGC, die nur in der Autorenumgebung sichtbar ist.
+**JSRP für Autor**: Das Experimentieren in der Autorendatei führt zu einer UGC, die nur in der Autorenversion der Umgebung sichtbar ist.
 
-**JSRP zur Veröffentlichung** : Ebenso ist es bei Tests in der Veröffentlichungsumgebung erforderlich, auf CRXDE Lite mit Administratorrechten auf einer Veröffentlichungsinstanz zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](/help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss CRXDE Lite [aktiviert werden](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei Veröffentlichung**: Ähnlich ist es bei Tests auf der Veröffentlichungsinstanz erforderlich, auf CRXDE Lite mit Administratorrechten auf einer Veröffentlichungsinstanz zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](/help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss CRXDE Lite [aktiviert werden](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
@@ -146,12 +146,12 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 
 1. Eine AEM-Site *mit* einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde):
 
-* Verwendung der Website &quot;Erste Schritte - Tutorial&quot;(Einsatz), die während der [Übungen für die ersten Schritte erstellt wurde](/help/communities/getting-started.md)
-* den Knoten der Forumseite suchen
+   * Verwenden der Website &quot;Erste Schritte&quot;-Lernprogramm (Interaktion), die während der [Übungen für die ersten Schritte erstellt wurde](/help/communities/getting-started.md)
+   * Suchen Sie den Knoten der Forumseite
 
-   * `/content/sites/engage/en/forum/jcr:content`
+      `/content/sites/engage/en/forum/jcr:content`
 
-* Eigenschaften für Bewertung und Markierung hinzufügen
+   * Hinzufügen und Abzeichen
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -163,25 +163,26 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* den Knoten der Forumkomponente suchen
+   * Suchen Sie den Knoten der Forumkomponente
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* Eigenschaft hinzufügen, um Abzeichen anzuzeigen
+   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* ein Benutzer anmelden, ein Forenthema erstellen und ein Bronze-Abzeichen erhalten
+   * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
+
 
 1. Eine AEM-Site *ohne* eine eindeutige ID:
 
-* Verwenden des Handbuchs &quot; [Community-Komponenten&quot;](/help/communities/components-guide.md)
-* den Knoten der Forumseite suchen
+   * Verwenden des Handbuchs &quot; [Community-Komponenten&quot;](/help/communities/components-guide.md)
+   * Suchen Sie den Knoten der Forumseite
 
-   * `/content/community-components/en/forum/jcr:content`
+      `/content/community-components/en/forum/jcr:content`
 
-* Eigenschaften für Bewertung und Markierung hinzufügen
+   * Hinzufügen und Abzeichen
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -193,24 +194,25 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* den Knoten der Forumkomponente suchen
+   * Suchen Sie den Knoten der Forumkomponente
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+      `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* Eigenschaft hinzufügen, um Abzeichen anzuzeigen
+   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* ein Benutzer anmelden, ein Forenthema erstellen und ein Bronze-Abzeichen erhalten
+   * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
 
-1. einem Benutzer mit cURL ein Moderator-Abzeichen zugewiesen wird:
 
-```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
-```
+1. Dem Benutzer wird mit cURL ein Moderator-Abzeichen zugewiesen:
 
-Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen erhalten hat, wird der Benutzer mit seinem Foreneintrag wie folgt angezeigt:
+   ```shell
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   ```
+
+   Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen erhalten hat, erscheint der Benutzer mit seinem Forumseintrag so.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -219,7 +221,7 @@ Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen e
 >Dieses Beispiel folgt nicht den folgenden bewährten Verfahren:
 >
 >* Die Namen von Bewertungsregeln sollten global eindeutig sein. sie sollten nicht mit demselben Namen enden.
-   >  Ein Beispiel dafür, was *nicht *zu tun ist:
+   >  Ein Beispiel dafür, was *nicht* zu tun ist:
    >  /etc/community/scoring/rules/site1/forums-scoring
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
@@ -237,7 +239,7 @@ Zu Ermittlungszwecken ist der Basisordner, der Ergebnisse enthält, z. B. mithil
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-Der untergeordnete Knoten von `scoring`ist der Name der Bewertungsregel. Eine Best Practice ist daher, dass die Namen von Bewertungsregeln auf einem Server global eindeutig sind.
+Der untergeordnete Knoten von `scoring` ist der Name der Bewertungsregel. Eine Best Practice ist daher, dass die Namen von Bewertungsregeln auf einem Server global eindeutig sind.
 
 Für die Geometrixx-Engage-Site befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Bewertungsregel, der Community-Site-ID ( `engage-ba81p`), einer eindeutigen ID und der Benutzer-ID verknüpft ist:
 
@@ -257,17 +259,17 @@ Die Verwendung der [APIs](#scoring-and-badging-apis) wird bevorzugt.
 
 Zu Ermittlungszwecken wird beispielsweise mithilfe von JSRP der Basisordner mit Informationen über zugewiesene oder zugewiesene Kennzeichen wie folgt angezeigt:
 
-* /content/usergenerated/asi/jcr
+* `/content/usergenerated/asi/jcr`
 
-Nach dem Pfad zum Benutzerprofil, der in einem Ablagenordner endet, z. B.
+Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.
 
-* /home/users/community/w271OOup2Z4DjnOQrviv/profile/badges
+* `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
-#### Auszeichnung {#awarded-badge}
+#### Ausgezeichnetes Zeichen {#awarded-badge}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-#### zugewiesene Markierung {#assigned-badge}
+#### Zugewiesenes Zeichen {#assigned-badge}
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
