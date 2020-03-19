@@ -4,7 +4,7 @@ description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus ü
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: dc1a9eb4c02c7751b99ed074e0f3250193957c59
 
 ---
 
@@ -34,25 +34,25 @@ MSM behält eine (Live-) Beziehung zwischen Quell-Asset und seinen Live Copies 
 
 ### Glossar der MSM Assets-Begriffe {#glossary}
 
-**Quelle** Die ursprünglichen Assets oder Ordner. Masterkopie, aus der Live Copies abgeleitet werden.
+**Quelle:** Die ursprünglichen Assets oder Ordner. Masterkopie, aus der Live Copies abgeleitet werden.
 
-**Live Copy** Die Kopie der Quellelemente/Ordner, die mit der Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe Erstellen von LCs.
+**Live Copy:** Die Kopie der Quellelemente/Ordner, die mit der Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe Erstellen von LCs.
 
-**Vererbung** Ein Link/Verweis zwischen einem Live-Copy-Asset/-Ordner und seiner Quelle, über den das System speichert, wohin die Updates gesendet werden. Eine Vererbung existiert für Metadatenfelder auf granularer Ebene. Die Vererbung kann für ausgewählte Metadatenfelder entfernt werden, während die Live-Beziehung zwischen Quelle und zugehöriger Live Copy beibehalten wird.
+**Vererbung:** Ein Link/Verweis zwischen einem Live-Copy-Asset/-Ordner und seiner Quelle, über den das System speichert, wohin die Updates gesendet werden. Eine Vererbung existiert für Metadatenfelder auf granularer Ebene. Die Vererbung kann für ausgewählte Metadatenfelder entfernt werden, während die Live-Beziehung zwischen Quelle und zugehöriger Live Copy beibehalten wird.
 
-**Rollout** Eine Aktion, die die Änderungen an der Quelle nach den Live-Kopien schiebt. Es ist möglich, mithilfe der Aktion „Rollout“ eine oder mehrere Live Copies in einem Schritt zu aktualisieren. Siehe Rollout.
+**Rollout:** Eine Aktion, die die Änderungen an der Quelle nach ihren Live-Kopien schiebt. Es ist möglich, mithilfe der Aktion „Rollout“ eine oder mehrere Live Copies in einem Schritt zu aktualisieren. Siehe Rollout.
 
-**Rollout-Konfigurationsregeln** , die festlegen, welche Eigenschaften synchronisiert werden, wie und wann. Diese Konfigurationen werden beim Erstellen von Live Copies angewendet und können später bearbeitet werden. Dabei kann ein untergeordnetes Element die Rollout-Konfiguration vom zugehörigen übergeordneten Asset übernehmen. Verwenden Sie für MSM für Assets nur die standardmäßige Rollout-Konfiguration. Die anderen Rollout-Konfigurationen sind für MSM für Assets nicht verfügbar.
+**Rollout-Konfiguration:** Regeln, die bestimmen, welche Eigenschaften synchronisiert werden, wie und wann. Diese Konfigurationen werden beim Erstellen von Live Copies angewendet und können später bearbeitet werden. Dabei kann ein untergeordnetes Element die Rollout-Konfiguration vom zugehörigen übergeordneten Asset übernehmen. Verwenden Sie für MSM für Assets nur die standardmäßige Rollout-Konfiguration. Die anderen Rollout-Konfigurationen sind für MSM für Assets nicht verfügbar.
 
-**Synchronisieren** Sie eine weitere Aktion, die zusätzlich zur Einführung eine Parität zwischen Quelle und Live-Kopie bietet, indem Sie die Updates von der Quelle an Live-Kopien senden. Eine Synchronisierung wird für eine bestimmte Live Copy initiiert und die Aktion ruft die Änderungen von der Quelle ab. Mit dieser Aktion können Sie nur eine der Live Copies aktualisieren. Siehe Aktion „Synchronisieren“.
+**Synchronisieren:** Eine weitere Aktion, die zusätzlich zur Einführung die Parität zwischen Quelltext und Live-Kopie herstellt, indem die Updates von der Quelle an Live-Kopien gesendet werden. Eine Synchronisierung wird für eine bestimmte Live Copy initiiert und die Aktion ruft die Änderungen von der Quelle ab. Mit dieser Aktion können Sie nur eine der Live Copies aktualisieren. Siehe Aktion „Synchronisieren“.
 
-**Aussetzen** : Entfernen Sie vorübergehend die Live-Beziehung zwischen einer Live-Kopie und ihrem Quellasset/Ordner. Sie können die Beziehung wieder aufnehmen. Siehe Aktion „Aussetzen“.
+**Aussetzen:** Entfernen Sie vorübergehend die Live-Beziehung zwischen einer Live-Kopie und ihrem Quellasset/Ordner. Sie können die Beziehung wieder aufnehmen. Siehe Aktion „Aussetzen“.
 
-**Fortsetzen** Sie die Live-Beziehung fort, sodass eine Live-Kopie erneut beginnt, die Updates von der Quelle zu erhalten. Siehe Aktion „Fortsetzen“.
+**Fortsetzen:** Nehmen Sie die Live-Beziehung wieder auf, damit eine Live-Kopie die Beginn, die die Updates von der Quelle erhalten, erneut aufnimmt. Siehe Aktion „Fortsetzen“.
 
-**Mit der Aktion &quot;Zurücksetzen** &quot;wird die Live-Kopie erneut zu einer Kopie der Quelle, indem alle lokalen Änderungen überschrieben werden. Außerdem werden abgebrochene Vererbungsvorgänge entfernt und Vererbungen in allen Metadatenfeldern zurückgesetzt. Für zukünftige lokale Änderungen müssen Sie die Vererbung bestimmter Felder erneut abbrechen. Siehe Lokale Änderungen an LC.
+**Zurücksetzen:** Durch die Aktion &quot;Zurücksetzen&quot;wird die Live-Kopie erneut zu einer Kopie der Quelle, indem alle lokalen Änderungen überschrieben werden. Außerdem werden abgebrochene Vererbungsvorgänge entfernt und Vererbungen in allen Metadatenfeldern zurückgesetzt. Für zukünftige lokale Änderungen müssen Sie die Vererbung bestimmter Felder erneut abbrechen. Siehe Lokale Änderungen an LC.
 
-**Lösen** Sie unwiderruflich die Live-Beziehung eines Live Copy-Assets/Ordners. Nach der Aktion „Trennen“ können Live Copies niemals Aktualisierungen aus der Quelle empfangen und sie haben keinen Live Copy-Status mehr. Siehe Entfernen von Beziehungen.
+**Detach:** Entfernen Sie unwiderruflich die Live-Beziehung eines Live Copy-Assets/Ordners. Nach der Aktion „Trennen“ können Live Copies niemals Aktualisierungen aus der Quelle empfangen und sie haben keinen Live Copy-Status mehr. Siehe Entfernen von Beziehungen.
 
 ## Erstellen von Live Copies eines Assets {#createlc}
 
@@ -69,7 +69,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu ers
 
    ![Erstellen einer Live Copy über die AEM-Oberfläche](assets/create_lc1.png)
 
-   *Abbildung:Live-Kopie der AEM-Benutzeroberfläche erstellen*
+   *Abbildung: Live-Kopie der AEM-Benutzeroberfläche erstellen*
 
 1. Wählen Sie einen Zielordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und Namen an. Assets haben keine untergeordneten Elemente. Wenn Sie eine Live Copy von Ordnern erstellen, können Sie die untergeordneten Elemente ein- oder ausschließen.
@@ -81,7 +81,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu er
 
    ![Erstellen einer Live Copy über die AEM-Oberfläche](assets/create_lc2.png)
 
-   *Abbildung:Live-Kopie der AEM-Benutzeroberfläche erstellen*
+   *Abbildung: Live-Kopie der AEM-Benutzeroberfläche erstellen*
 
 1. Wählen Sie Quell-Asset oder -ordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Wählen Sie einen Zielordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
@@ -103,7 +103,7 @@ Die folgenden beiden Methoden funktionieren für Assets und Ordner:
 
 >[!TIP]
 >
-> Um den Status einiger separater Live-Kopien zu überprüfen, verwenden Sie die erste Methode, die die Seite Eigenschaften anzeigt. Um den Status einer großen Zahl von Live Copies zu prüfen, verwenden Sie die zweite Methode (rufen Sie die Seite **[!UICONTROL Beziehungsstatus]** auf).
+>Um den Status einiger separater Live-Kopien zu überprüfen, verwenden Sie die erste Methode, die die Seite Eigenschaften anzeigt. Um den Status einer großen Zahl von Live Copies zu prüfen, verwenden Sie die zweite Methode (rufen Sie die Seite **[!UICONTROL Beziehungsstatus]** auf).
 
 ### Informationen und Status von Live Copies {#statuslcasset}
 
@@ -114,7 +114,7 @@ Führen Sie folgende Schritte aus, um Informationen und Status eines Live Copy-A
 
    ![Live Copy-Informationen und -Status werden in einer Konsole in den Eigenschaften angezeigt.](assets/lcfolder_info_properties.png)
 
-   *Abbildung:Live-Kopierinformationen und Status*
+   *Abbildung: Live-Kopierinformationen und -Status*
 
 1. Eine Aktivierung oder Deaktivierung ist möglich, wenn untergeordnete Assets die Live Copy-Konfiguration übernehmen.
 
@@ -129,7 +129,7 @@ AEM stellt eine Konsole bereit, um die Status aller Live Copies eines Quellordn
 
    ![Anzeigen der Status von Live Copies in der Live Copy-Konsole der Quelle](assets/livecopy-statuses.png)
 
-   *Abbildung:Status von Live-Kopien in der Live Copy-Konsole der Quelle anzeigen*
+   *Abbildung: Status der Ansicht von Live-Kopien in der Live Copy-Konsole der Quelle*
 
 1. Um die detaillierten Informationen zu den einzelnen Assets im Ordner „Live Copy“ anzuzeigen, wählen Sie ein Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Beziehungsstatus]**.
 
@@ -139,7 +139,7 @@ AEM stellt eine Konsole bereit, um die Status aller Live Copies eines Quellordn
 
 >[!TIP]
 >
-> Sie können die Status von Live-Kopien anderer Ordner schnell sehen, ohne zu viel durchsuchen zu müssen. Ändern Sie einfach den Ordner in der Popup-Liste im oberen mittleren Teil der Oberfläche mit der **[!UICONTROL Live Copy-Übersicht]**.
+>Sie können die Status von Live-Kopien anderer Ordner schnell sehen, ohne zu viel durchsuchen zu müssen. Ändern Sie einfach den Ordner in der Popup-Liste im oberen mittleren Teil der Oberfläche mit der **[!UICONTROL Live Copy-Übersicht]**.
 
 ### Schnellaktionen in der Leiste „Verweise“ für Quellen {#refrailsource}
 
@@ -155,13 +155,13 @@ Wählen Sie Quell-Asset oder -ordner aus, öffnen Sie die linke Leiste und klick
 
 ![In der Leiste „Verweise“ für die ausgewählte Quelle verfügbare Aktionen und Informationen](assets/referencerail_source.png)
 
-*Abbildung:Aktionen und Informationen, die in der Leiste &quot;Referenzen&quot;für die ausgewählte Quelle verfügbar sind*
+*Abbildung: Aktionen und Informationen, die in der Leiste &quot;Referenzen&quot;für die ausgewählte Quelle verfügbar sind*
 
 Klicken Sie für eine bestimmte Live Copy auf **[!UICONTROL Live Copy bearbeiten]**, um die Beziehung auszusetzen oder die Rollout-Konfiguration zu ändern.
 
 ![Für eine bestimmte Live Copy kann die Option zum Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration bei ausgewähltem Quell-Asset über die Leiste „Verweise“ aufgerufen werden.](assets/referencerail_editlc_options.png)
 
-*Abbildung:Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration einer bestimmten Live Copy*
+*Abbildung: Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration einer bestimmten Live Copy*
 
 ### Schnellaktionen in der Leiste „Verweise“ für Live Copies {#refraillc}
 
@@ -175,7 +175,7 @@ Wählen Sie ein Asset oder einen Ordner für eine Live Copy aus, öffnen Sie die
 
 ![In der Leiste „Referenzen“ verfügbare Aktionen für die ausgewählte Live Copy](assets/referencerail_livecopy.png)
 
-*Abbildung:In der Leiste &quot;Referenzen&quot;verfügbare Aktionen für die ausgewählte Live-Kopie*
+*Abbildung: In der Leiste &quot;Referenzen&quot;verfügbare Aktionen für die ausgewählte Live-Kopie*
 
 ## Übertragen von Änderungen von der Quelle an Live Copies {#rolloutsync}
 
@@ -191,7 +191,7 @@ Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle 
 
    ![Rollout von Quelländerungen an einige oder alle Live Copies](assets/livecopy_rollout_page.png)
 
-   *Abbildung:Rollout die Änderungen der Quelle auf einige oder alle Live-Kopien*
+   *Abbildung: Rollout die Änderungen der Quelle auf einige oder alle Live-Kopien*
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Sie können eine Aktion „Rollout“ auch über die Leiste „Verweise“ initi
 
 ![Rollout von Quelländerungen an die ausgewählte Live Copy](assets/livecopy_rollout_dialog.png)
 
-*Abbildung:Rollout die Änderungen der Quelle auf die ausgewählte Live-Kopie*
+*Abbildung: Rollout die Änderungen der Quelle auf die ausgewählte Live-Kopie*
 
 ### Wissenswertes über die Aktion „Synchronisieren“{#aboutsync}
 
@@ -221,7 +221,7 @@ Informationen zu den Status und Informationen einer Synchronisierungsaktion find
 
 ![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/livecopy_sync.png)
 
-*Abbildung:Aktion zum Synchronisieren zieht die an der Quelle vorgenommenen Änderungen ab*
+*Abbildung: Aktion zum Synchronisieren zieht die an der Quelle vorgenommenen Änderungen ab*
 
 >[!NOTE]
 >
@@ -257,7 +257,7 @@ Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trenn
 
    ![Aktion „Trennen“ – vollständiges Entfernen der Beziehung zwischen Quelle und Live Copy](assets/livecopy_detach.png)
 
-   *Abbildung:Durch die Aktion &quot;Trennen&quot;wird die Beziehung zwischen Quelle und Live Copy vollständig entfernt*
+   *Abbildung: Durch die Aktion &quot;Trennen&quot;wird die Beziehung zwischen Quelle und Live Copy vollständig entfernt*
 
    >[!CAUTION]
    >
@@ -275,7 +275,7 @@ Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiier
 
    ![Einfaches Aktualisieren vieler Assets in Live Copy-Ordnern über die Konsole „Live Copy-Übersicht“](assets/livecopyconsole_update_many_assets.png)
 
-   *Abbildung:Einfache Aktualisierung vieler Assets in Live Copy-Ordnern über die Live Copy-Übersichtskonsole*
+   *Abbildung: Einfache Aktualisierung vieler Assets in Live Copy-Ordnern über die Live Copy-Übersichtskonsole*
 
 ## Erweitern von MSM für Assets {#extendapi}
 
