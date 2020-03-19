@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
 
 ---
 
@@ -62,7 +62,7 @@ Die Vorteile der Benutzersynchronisierung mit der Sling-Distribution im Vergleic
 >
 >Aufgrund der Aktivierung der Benutzersynchronisierung sollten keine neuen Konfigurationen hinzugefügt werden.
 
-Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die Verteilung der Benutzerdaten verwaltet, auch wenn die Benutzerdaten nicht in der Autoreninstanz erstellt werden. Viele, aber nicht alle der Konfigurationen finden in der Autorenumgebung statt und jeder Schritt zeigt klar an, ob sie beim Autor oder beim Veröffentlichen durchgeführt werden soll.
+Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die Verteilung der Benutzerdaten verwaltet, auch wenn die Benutzerdaten nicht in der Autoreninstanz erstellt werden. Viele, aber nicht alle der Konfigurationen finden in der Autorenkonfiguration statt und jeder Schritt gibt klar an, ob sie beim Autor oder beim Veröffentlichen durchgeführt werden soll.
 
 Im Folgenden finden Sie eine Beschreibung der Schritte, die zum Aktivieren der Benutzersynchronisierung erforderlich sind, gefolgt von einem Abschnitt zur [Fehlerbehebung](#troubleshooting):
 
@@ -193,7 +193,7 @@ Verify `Name`: `socialpubsync-reverse`
 
       * select the `Enabled` checkbox
       * auswählen `Save`
-   * **wiederholen **für jede Instanz im Veröffentlichungsmodus
+   * **Wiederholen **für jede Instanz im Veröffentlichungsmodus
 
 
 
@@ -333,7 +333,7 @@ Wenn die Sling-ID für mehrere Veröffentlichungsinstanzen in einer Veröffentli
 
 Um zu überprüfen, ob alle Sling-ID-Werte unterschiedlich sind, gehen Sie in jeder Veröffentlichungsinstanz wie folgt vor:
 
-1. browse to [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. zu `http://<host>:<port>/system/console/status-slingsettings`
 1. Überprüfen Sie den Wert unter **Sling ID**.
 
 ![](assets/chlimage_1-27.png)
@@ -345,13 +345,13 @@ Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Ver
 
    * Suchen und löschen Sie die Datei *sling.id.file*.
 
-      * Beispiel:
+      * zum Beispiel auf einem Linux-System:
          `rm -i $(find . -type f -name sling.id.file)`
 
-      * beispielsweise auf einem Windows-System:
+      * z. B. auf einem Windows-System:
          `use windows explorer and search for *sling.id.file*`
 
-1. die Veröffentlichungsinstanz starten
+1. Beginn der Veröffentlichungsinstanz
 
    * Beim Start wird der Instanz eine neue Sling-ID zugewiesen.
 
@@ -495,7 +495,7 @@ Wenn Folgendes im Protokoll steht:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Then verify that the section [2. Autorisierter Benutzer]erstellen (/content/docs/en/aem/6-1/administer/security/security/sync.md#2) autorisierten Benutzer erstellen) ordnungsgemäß befolgt wurde.
+Then verify that the section [2. Autorisierter Benutzer]erstellen (/content/docs/en/aem/6-1/administer/security/security/sync.md#2). autorisierten Benutzer erstellen) ordnungsgemäß befolgt wurde.
 
 Dieser Abschnitt beschreibt, wie ein autorisierter Benutzer erstellt wird, wer in allen Veröffentlichungsinstanzen existiert und wie diese Benutzer in der OSGi-Konfiguration „Secret Provider“ der Autoreninstanz identifiziert werden. By default, the user is `admin`.
 
@@ -530,7 +530,7 @@ Siehe Abschnitt [9. Eindeutige Sling-ID](#unique-sling-id)
 * Bei Herausgebern mit Benutzern und Benutzergruppen:
 
    * [Deaktivieren Sie ggf. die Benutzersynchronisierung.](#how-to-take-user-sync-offline)
-   * [Paket](/help/sites-administering/package-manager.md#creating-a-new-package) erstellen von `/home`
+   * [Erstellen eines Pakets](/help/sites-administering/package-manager.md#creating-a-new-package) von `/home`
 
       * Beim Bearbeiten des Pakets
 
@@ -549,7 +549,7 @@ To configure or enable user sync, go to step 1: [Apache Sling Distribution Agent
 
 Wenn eine Veröffentlichungsinstanz nicht mehr verfügbar ist, sollte sie nicht entfernt werden, sofern sie zukünftig wieder online geschaltet wird. Änderungen für den Herausgeber werden in die Warteschlange gestellt und sobald dieser wieder online ist, werden die Änderungen verarbeitet.
 
-Wenn die Instanz im Veröffentlichungsmodus nie wieder online ist, wenn sie dauerhaft offline ist, muss sie entfernt werden, da die Warteschlangenaufbauung zu einer spürbaren Speichernutzung in der Autorenumgebung führt.
+Wenn die Instanz im Veröffentlichungsmodus nie wieder online ist, wenn sie dauerhaft offline ist, muss sie entfernt werden, da die Warteschlangenaufbauung zu einer merklichen Speichernutzung in der Autorendatei führt.
 
 Wenn ein Herausgeber nicht mehr verfügbar ist, finden Sie im Autorprotokoll Ausnahmen wie die folgende:
 
