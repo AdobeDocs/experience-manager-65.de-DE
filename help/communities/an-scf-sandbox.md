@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
@@ -35,12 +35,12 @@ Die Schritte in diesem Lernprogramm sind:
 * [Anfänglicher Sandbox-Antrag](initial-app.md)
 * [Anfänglicher Sandbox-Inhalt](initial-content.md)
 * [Sandbox-Anwendung entwickeln](develop-app.md)
-* [Clientlibs hinzufügen](add-clientlibs.md)
+* [Hinzufügen Clientlibs](add-clientlibs.md)
 * [Entwicklung von Sandbox-Inhalten](develop-content.md)
 
 >[!CAUTION]
 >
->In diesem Lernprogramm wird keine Community-Site mit den Funktionen erstellt, die mit der [Communities Sites-Konsole](sites-console.md)erstellt wurden. In diesem Tutorial wird beispielsweise nicht beschrieben, wie Sie Anmeldung, Selbstregistrierung, [Social-Anmeldung](social-login.md), Nachrichten, Profile usw. einrichten.
+>In diesem Lernprogramm wird keine Community-Site mit den Funktionen erstellt, die mit der [Communities Sites-Konsole](sites-console.md)erstellt wurden. In diesem Lernprogramm wird beispielsweise nicht beschrieben, wie Sie Anmeldung, Selbstregistrierung, [Social-Anmeldung](social-login.md), Messaging, Profile usw. einrichten.
 >
 >Wenn eine einfache Community-Site bevorzugt wird, folgen Sie dem Lernprogramm &quot;Beispielseite [erstellen&quot;](create-sample-page.md) .
 
@@ -50,14 +50,14 @@ Bei dieser Übung wird davon ausgegangen, dass ein AEM-Autor und eine AEM-Veröf
 
 Im Folgenden finden Sie einige hilfreiche Links für Entwickler, die mit der AEM-Plattform neu arbeiten:
 
-* [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started) - Für die Bereitstellung von AEM-Instanzen
+* [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started): zum Bereitstellen von AEM-Instanzen
 
-   * [Grundlagen](../../help/sites-developing/the-basics.md) - Für Entwickler von Websites und Funktionen
-   * [Erste Schritte für Autoren](../../help/sites-authoring/first-steps.md) - zum Erstellen von Seiteninhalten
+   * [Grundlagen](../../help/sites-developing/the-basics.md): für Entwickler von Websites und Funktionen
+   * [Erste Schritte für Autoren](../../help/sites-authoring/first-steps.md): zum Authoring von Seiteninhalten
 
-## Verwenden der CRXDE Lite-Entwicklungsumgebung {#using-crxde-lite-development-environment}
+## Verwenden der CRXDE Lite Development Umgebung {#using-crxde-lite-development-environment}
 
-AEM-Entwickler verbringen einen Großteil ihrer Zeit in der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) -Entwicklungsumgebung auf einer Autoreninstanz. CRXDE Lite bietet einen weniger eingeschränkten Zugriff auf das CRX-Repository. Klassische UI-Werkzeuge und touchfähige UI-Konsolen bieten strukturierteren Zugriff auf bestimmte Teile des CRX-Repositorys.
+AEM-Entwickler verbringen einen Großteil ihrer Zeit in der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) -Entwicklungs-Umgebung auf einer Autoreninstanz. CRXDE Lite bietet einen weniger eingeschränkten Zugriff auf das CRX-Repository. Klassische UI-Werkzeuge und touchfähige UI-Konsolen bieten strukturierteren Zugriff auf bestimmte Teile des CRX-Repositorys.
 
 Nach der Anmeldung mit Administratorrechten gibt es verschiedene Möglichkeiten, auf CRXDE Lite zuzugreifen:
 
@@ -65,13 +65,13 @@ Nach der Anmeldung mit Administratorrechten gibt es verschiedene Möglichkeiten,
 
    ![chlimage_1-350](assets/chlimage_1-350.png)
 
-2. Blättern Sie auf der Begrüßungsseite[der ](http://localhost:4502/welcome.html)klassischen Benutzeroberfläche nach unten und klicken Sie im rechten Bereich auf **[!UICONTROL CRXDE Lite]** .
+2. Blättern Sie auf der Begrüßungsseite [der](http://localhost:4502/welcome.html)klassischen Benutzeroberfläche nach unten und klicken Sie im rechten Bereich auf **[!UICONTROL CRXDE Lite]** .
 
    ![chlimage_1-351](assets/chlimage_1-351.png)
 
 3. Gehen Sie direkt zu `CRXDE Lite`: `<server>:<port>/crx/de`
 
-   Beispiel: ` [http://localhost:4502/crx/de](http://localhost:4502/crx/de)`
+   Beispiel für eine lokale Autorinstanz: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 Um mit CRXDE Lite zu arbeiten, müssen Sie sich mit Entwickler- oder Administratorberechtigungen anmelden. Bei der standardmäßigen localhost-Instanz können Sie sich mit
 
