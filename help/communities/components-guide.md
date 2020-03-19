@@ -10,18 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Handbuch der Community-Komponenten {#community-components-guide}
+# Handbuch der Community-Komponenten  {#community-components-guide}
 
-Das Handbuch &quot;Community Components&quot;ist ein interaktives Entwicklungstool für den Rahmen für [soziale Komponenten (SCF)](scf.md). Es enthält eine Liste der verfügbaren AEM Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten bestehen.
+Das Handbuch &quot;Community Components&quot;ist ein interaktives Entwicklungstool für den Rahmen für [soziale Komponenten (SCF)](scf.md). Es bietet eine Liste der verfügbaren AEM Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten bestehen.
 
 Neben den grundlegenden Informationen für jede Komponente ermöglicht das Handbuch Experimente darüber, wie die SCF-Komponenten/-Funktionen funktionieren und wie sie konfiguriert oder angepasst werden können.
 
-Weitere Informationen zu Entwicklungserfordernissen für die einzelnen Komponenten finden Sie unter [Funktionen und Komponenten](essentials.md).
+Weitere Informationen zu Entwicklungserfordernissen für die einzelnen Komponenten finden Sie unter [Feature und Component Essentials](essentials.md).
 
 ## Erste Schritte {#getting-started}
 
@@ -38,7 +38,7 @@ Die Interaktionen mit den Communities-Komponenten variieren je nach:
 * Bei Anmeldung werden die dem Mitglied zugewiesenen Rechte
 * Ob der Standard-SRP, [JSRP](jsrp.md), verwendet wird
 
-Um beim Autor in den Bearbeitungsmodus zu wechseln, fügen Sie nach dem Servernamen entweder `editor.html` oder `cf#` als erstes Pfadsegment ein:
+Wenn Sie beim Autor in den Bearbeitungsmodus wechseln möchten, fügen Sie nach dem Servernamen entweder `editor.html` oder `cf#` als erstes Pfadsegment ein:
 
 * Standard-UI:
 
@@ -52,7 +52,7 @@ Um beim Autor in den Bearbeitungsmodus zu wechseln, fügen Sie nach dem Serverna
 >
 >Beim Autor im Bearbeitungsmodus sind die Links auf einer Seite nicht aktiv.
 >
->Um zu einer Komponentenseite zu navigieren, wählen Sie zunächst den Vorschaumodus, um die Links zu aktivieren.
+>Um zu einer Komponentenseite zu navigieren, wählen Sie zunächst den Vorschau-Modus aus, um die Links zu aktivieren.
 >
 >Kehren Sie bei angezeigter Komponentenseite zum Bearbeitungsmodus zurück, um das Dialogfeld der Komponente zu öffnen.
 >
@@ -62,7 +62,7 @@ Um beim Autor in den Bearbeitungsmodus zu wechseln, fügen Sie nach dem Serverna
 
 ### Startseite {#home-page}
 
-Das Handbuch enthält eine Liste der SCF-Komponenten, die für die Vorschau und das Prototyping auf der linken Seite der Seite verfügbar sind.
+Das Handbuch enthält eine Liste der SCF-Komponenten, die für die Vorschau und das Erstellen von Prototypen auf der linken Seite verfügbar sind.
 
 Komponentenhandbuch, wie auf einer Autoreninstanz im Bearbeitungsmodus angezeigt:
 
@@ -77,7 +77,7 @@ Wählen Sie eine Komponente aus der Liste links auf der Seite aus.
 Der Hauptteil des Handbuchs wird angezeigt:
 
 1. Titel: Der Name der ausgewählten Komponente
-1. [Clientseitige Bibliotheken](#client-side-libraries): Liste einer oder mehrerer erforderlicher Kategorien
+1. [Clientseitige Bibliotheken](#client-side-libraries): Eine Liste einer oder mehrerer erforderlicher Kategorien
 1. [Einschließlich](scf.md#add-or-include-a-communities-component): Wenn die Komponente dynamisch eingeschlossen werden kann, kann der Status im Bearbeitungsmodus des Autors umgeschaltet werden:
 
    * Wenn der Text hinzugefügt wird, wird Folgendes angezeigt: &quot;Diese Komponente wird über ihren par-Knoten eingeschlossen.&quot;
@@ -94,7 +94,7 @@ Der Hauptteil des Handbuchs wird angezeigt:
 
 Wenn Sie das Handbuch für eine Autoreninstanz verwenden, können Sie die Konfiguration einer Komponente durch Öffnen des Dialogfelds durchführen. Informationen für Entwickler finden Sie im Abschnitt [Komponenten und Funktionen](essentials.md) der Dokumentation, während die Dialogeinstellungen im Abschnitt [Communities Komponenten](author-communities.md) für Autoren beschrieben werden.
 
-Im Handbuch &quot;Community-Komponenten&quot;werden einige Einstellungen für das Komponentendialogfeld mit dem Status &quot; [Einschließen](scf.md#add-or-include-a-communities-component) &quot;überlagert. Um zwischen der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource umzuschalten, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den inklusiven Text aus, und doppelklicken Sie, um das Dialogfeld &quot;Bearbeiten&quot;zu öffnen:
+Im Handbuch &quot;Community-Komponenten&quot;werden einige Einstellungen für das Komponentendialogfeld mit dem Status &quot; [Einschließen](scf.md#add-or-include-a-communities-component) &quot;überlagert. Um zwischen der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource zu wechseln, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den inklusiven Text aus und klicken Sie bei gedrückter Dublette, um das Bearbeitungsdialogfeld zu öffnen:
 
 ![chlimage_1-406](assets/chlimage_1-406.png)
 
@@ -114,11 +114,11 @@ Auf der Registerkarte **Vorlagen** :
 
 ### Veröffentlichungsinteraktionen {#publish-interactions}
 
-Bei Verwendung des Handbuchs in einer Veröffentlichungsinstanz ist es möglich, die Komponenten und Funktionen als Site-Besucher (nicht angemeldet) und als Mitglieder mit verschiedenen Berechtigungen zu erleben, wenn sie angemeldet sind.
+Bei Verwendung des Handbuchs in einer Veröffentlichungsinstanz können die Komponenten und Funktionen als Site-Besucher (nicht angemeldet) und als Mitglieder mit verschiedenen Berechtigungen beim Anmelden angezeigt werden.
 
 >[!NOTE]
 >
->Wenn die SRP standardmäßig auf [JSRP](jsrp.md)festgelegt ist, ist UGC, der in der Veröffentlichungsinstanz eingegeben wird, nur bei der Veröffentlichung sichtbar und *nicht *in der [Moderationskonsole](moderate-ugc.md) auf der Autoreninstanz sichtbar.
+>Wenn die SRP standardmäßig auf [JSRP](jsrp.md)festgelegt ist, ist UGC, die in der Veröffentlichungsinstanz eingegeben wird, nur bei der Veröffentlichung sichtbar und *nicht* in der [Moderationskonsole](moderate-ugc.md) auf der Autoreninstanz sichtbar.
 
 ## Client-seitige Bibliotheken {#client-side-libraries}
 
@@ -128,7 +128,7 @@ Weitere Informationen finden Sie unter [Clientlibs für Communities-Komponenten]
 
 ## Personifikation {#impersonation}
 
-Wenn Sie in der Autoreninstanz, in der eine häufig als Administrator oder Entwickler angemeldet ist, die Komponente als ein anderer Benutzer angemeldet haben, verwenden Sie das Textfeld links neben der Schaltfläche **[!UICONTROL Eigenschaftswechsel]** , um entweder den Benutzernamen einzugeben oder aus der Pulldown-Liste auszuwählen, und klicken Sie dann auf die Schaltfläche. Klicken Sie auf &quot;Zurück&quot;, um den Identitätswechsel zu signalisieren und zu beenden.
+Verwenden Sie für die Autoreninstanz, bei der einer oft als Administrator oder Entwickler angemeldet ist, das Textfeld links neben der Schaltfläche **[!UICONTROL Eigenschaftswechsel]** , um den Benutzernamen einzugeben oder aus der Pulldown-Liste auszuwählen, und klicken Sie dann auf die Schaltfläche. Klicken Sie auf &quot;Zurück&quot;, um den Identitätswechsel zu signalisieren und zu beenden.
 
 Die Instanz im Veröffentlichungsmodus muss nicht imitiert werden. Verwenden Sie einfach den Link Anmelden/Abmelden, um verschiedene Benutzer, wie z.B. die [Demobenutzer](tutorials.md#demo-users), zu imitieren.
 
@@ -171,7 +171,7 @@ Verwenden der Kommentarkomponente als Beispiel für die Autor- oder Veröffentli
 
 ### Registerkarte &quot;Vorlagen&quot; {#templates-tab}
 
-Wählen Sie die Registerkarte &quot;Vorlagen&quot;, um die der Komponente zugeordneten Vorlagen anzuzeigen.
+Wählen Sie die Registerkarte &quot;Vorlagen&quot;, um die mit der Komponente verknüpften Vorlagen anzuzeigen.
 
 Mit dem Vorlageneditor können lokale Bearbeitungen kompiliert und auf die Beispielkomponenteninstanz oben auf der Seite angewendet werden, ohne dass die Komponente im Repository betroffen ist.
 
