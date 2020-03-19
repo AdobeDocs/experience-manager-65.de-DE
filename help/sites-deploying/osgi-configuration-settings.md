@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0849cfdd0e4f9a614c455214e6520ead07ae6da0
 
 ---
 
@@ -36,21 +36,21 @@ Die folgenden OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) sind f�
 
 >[!NOTE]
 >
->Das [AEM OSGi Config Details](https://www.aemstuff.com/osgi.html)-Tool kann zum Auflisten der OSGi-Standardkonfigurationen verwendet werden.
+>Das OSGi Configuration Diff-Tool, das Teil der [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)ist, kann zur Liste der standardmäßigen OSGi-Konfigurationen verwendet werden.
 
 >[!NOTE]
 >
 >Für spezifische Funktionsbereiche in AEM sind möglicherweise weitere Bundles erforderlich. In solchen Fällen können Sie die Konfigurationsdetails der Seite entnehmen, die sich auf die entsprechende Funktion bezieht.
 
-**AEM Replication Event-Listener** konfigurieren:
+**AEM Replication Ereignis-Listener** konfigurieren:
 
-* Die **Ausführungsmodi**, in denen Replikationsereignisse an Listener verteilt werden. Wenn dies beispielsweise als &quot;author&quot;definiert ist, wird die Replikation durch dieses System &quot;initiiert&quot;.
+* Die **Ausführungsmodi**, in denen Replikations-Ereignis an Listener verteilt werden. Wenn dies beispielsweise als &quot;author&quot;definiert ist, wird die Replikation durch dieses System &quot;initiiert&quot;.
 
-* Die **Veröffentlichung** im Ausführungsmodus muss hinzugefügt werden, wenn der Projektcode Replikationsereignisse (umgekehrte Replizierung) in einer Veröffentlichungsumgebung verarbeitet. Beispiel: Wenn der Dispatcher zum Löschen aus der Veröffentlichungsumgebung verwendet wird oder wenn eine standardmäßige Replizierung in andere Instanzen im Veröffentlichungsmodus erfolgt.
+* Der **Veröffentlichungsmodus** im Ausführungsmodus muss hinzugefügt werden, wenn der Projektcode Replizierungs-Ereignis (umgekehrte Replizierung) in einer Veröffentlichungs-Umgebung verarbeitet. Wenn der Dispatcher beispielsweise zum Löschen aus der Veröffentlichungsinstanz verwendet wird oder wenn eine standardmäßige Replizierung in andere Veröffentlichungsinstanzen erfolgt.
 
 **AEM Repository Change-Listener** konfigurieren:
 
-* Die **Pfade**, Positionen, die auf Repository-Ereignisse warten, die für die Verteilung bereit sind.
+* Die **Pfade**, Positionen, die auf Repository-Ereignis warten, die für die Verteilung bereit sind.
 
 **CRX Sling Client Repository** Konfigurieren Sie den Zugriff auf das zugrunde liegende Inhalts-Repository.
 
@@ -83,12 +83,12 @@ Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deployi
 
 **Apache Sling Eventing Thread Pool** konfigurieren:
 
-* **Min. Poolgröße** und **Max. Poolgröße**, die Größe des Pools, der zum Speichern von Ereignisthreads verwendet wird.
+* **Min. Poolgröße** und **Max. Poolgröße**, die Poolgröße, die zum Speichern von Ereignis-Threads verwendet wird.
 
 * **Warteschlangengröße**, die maximale Größe der Threadwarteschlange, wenn der Pool erschöpft ist.
 Der empfohlene Wert lautet `-1` wie folgt: Hiermit wird die Warteschlange auf unbegrenzt eingestellt. Wenn eine Begrenzung festgelegt ist, können bei Überschreitung Verluste auftreten.
 
-* Eine Änderung dieser Einstellungen kann bei der Leistung in Szenarien mit einer hohen Anzahl von Ereignissen helfen. z. B. starke Verwendung von AEM DAM oder Workflow.
+* Eine Änderung dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Ereignissen verbessern. z. B. starke Verwendung von AEM DAM oder Workflow.
 * Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
 * Diese Einstellungen können sich auf die Leistung Ihrer Instanz auswirken. Ändern Sie sie daher nicht ohne Grund und unter gebührender Berücksichtigung.
 
@@ -118,9 +118,9 @@ Bestimmte Einstellungen können die Leistung beeinträchtigen. Deaktivieren Sie 
 
 * **Search Path** listet die Pfade auf, in denen jcrinstall nach zu installierenden Ressourcen sucht, und eine Ziffer, die den Gewichtungsfaktor für den Pfad angibt.
 
-**Apache Sling Job Event Handler** Konfigurieren Sie Parameter, die die Auftragsplanung verwalten:
+**Apache Sling Job Ereignis Handler** konfiguriert Parameter, die die Auftragsplanung verwalten:
 
-* **Wiederholungsintervall**, **Maximale Wiederholungen**, **Maximale Anzahl paralleler Aufträge**, **Bestätigung der Wartezeit**.
+* **Wiederholungsintervall**, **Maximale Weitere Zustellversuche**, **maximale Anzahl paralleler Aufträge**, **Anerkennungswartezeit** u. a.
 
 * Eine Änderung dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Aufträgen verbessern. z. B. starke Nutzung von AEM DAM und Workflows.
 * Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
@@ -181,7 +181,7 @@ Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deployi
 
 * **MIME-Typen**, um die für Ihr Projekt erforderlichen Typen hinzuzufügen. Dadurch kann eine `GET`-Anforderung einer Datei die richtige Kopfzeile für den Inhaltstyp zum Verknüpfen von Dateityp und Anwendung festlegen.
 
-**Apache Sling Referrer-Filter** Um bekannte Sicherheitsprobleme mit Cross-Site Request Forgery (CSRF) in CRX WebDAV und Apache Sling zu beheben, müssen Sie den Referrer-Filter konfigurieren.
+**Apache Sling Werber-Filter** Um bekannte Sicherheitsprobleme mit Cross-Site Request Forgery (CSRF) in CRX WebDAV und Apache Sling zu beheben, müssen Sie den Werber-Filter konfigurieren.
 
 Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurieren können:
 
@@ -246,9 +246,9 @@ Falls ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamt
 **Day Commons GFX Font Helper** Beim Rendern von Grafiken können Sie DrawText zum Einbetten von Text verwenden. Dazu können Sie auch eigene Schriftarten installieren:
 
 * Definieren Sie den **Schriftpfad** , der nach projektspezifischen Schriftarten gesucht werden soll.
-Beispiel, `/apps/myapp/fonts`.
+Beispiel: `/apps/myapp/fonts`. 
 
-**Apache HTTP-Komponenten Proxy Configuration** Proxy Configuration Proxy-Konfiguration für alle Code, der den Apache HTTP-Client verwendet, wenn ein HTTP-Vorgang ausgeführt wird; zum Beispiel bei der Replikation.
+**Apache HTTP-Komponenten Proxy Configuration** Proxy Configuration Proxy-Konfiguration für alle Code, der den Apache HTTP-Client verwendet, wenn ein HTTP-Vorgang ausgeführt wird; z. B. bei der Replikation.
 
 When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **https://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
 
@@ -262,7 +262,7 @@ When creating a new configuration, do not make changes to the factory configurat
 * **API-Schlüssel**
 * **Registrierte URL**
 
-**Adobe Granite HTML Library Manager** Konfigurieren Sie dies, um die Handhabung von Client-Bibliotheken (css oder js) zu steuern. einschließlich, wie die zugrunde liegende Struktur gesehen wird.
+**Adobe Granite HTML Library Manager** Konfigurieren Sie dies, um die Handhabung von Client-Bibliotheken (css oder js) zu steuern. einschließlich, wie beispielsweise die zugrunde liegende Struktur gesehen wird.
 
 * Für Produktionsinstanzen:
 
@@ -300,7 +300,7 @@ Wenn Sie [geschlossene Benutzergruppen](/help/sites-administering/cug.md) verwen
 * Überprüfen Sie **Bad Link Tolerance Interval** für den Zeitraum, nach dem ein nicht erfolgreicher externer Link als nicht korrekt betrachtet wird.
 * **Link Check Override Patterns**: definiert alle Pfade, die von der Link-Überprüfung ausgenommen werden sollen.
 
-**Day CQ Link Checker Task** Einstellungen für eine einzelne Linkprüfer-Aufgabe konfigurieren (eine Aufgabe, die einen externen Link überprüft):
+**Day CQ Link Checker-Aufgabe** Einstellungen für eine Aufgabe zur Prüfung einzelner Links konfigurieren (eine Aufgabe, die einen externen Link überprüft):
 
 * Überprüfen Sie die unter **Good Link Test Interval** und **Bad Link Test Interval**  festgelegten Intervalle.
 
@@ -312,7 +312,7 @@ Wenn Sie [geschlossene Benutzergruppen](/help/sites-administering/cug.md) verwen
 
 **Tag-CQ-Stammzuordnung** konfigurieren:
 
-* **Target Path** , um festzulegen, an welche Stelle eine Anforderung an &quot; `/`&quot;umgeleitet wird.
+* **Zielgruppe Path** , um zu definieren, an welche Stelle eine Anforderung an &quot; `/`&quot;umgeleitet wird.
 
 In AEM sind zwei Benutzeroberflächen verfügbar:
 
@@ -436,7 +436,7 @@ Die folgenden Eigenschaften gelten nur, wenn HTTPS aktiviert ist.
 
 * **HTTPS-Anschluss**, Anschluss für HTTPS-Anforderung. Standardwert ist 433.
 * **NIO für HTTPS**, ob NIO für HTTP verwendet werden soll oder nicht. Der Standardwert ist der NIO-Wert für die HTTP-Eigenschaft.
-* **Keystore**, Absoluter Pfad zum Keystore für HTTPS. Erforderlich, wenn HTTPS aktiviert ist.
+* **Keystore**, Absoluter Pfad zum Keystore, der für HTTPS verwendet werden soll. Erforderlich, wenn HTTPS aktiviert ist.
 * **Keystore Password**, Password, um auf den Keystore zuzugreifen.
 * **Key Alias**, Alias des geheimen Schlüssels im Keystore.
 * **Key Password**, Password, um den geheimen Schlüssel im Keystore zu entsperren.
