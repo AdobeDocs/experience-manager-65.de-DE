@@ -1,6 +1,6 @@
 ---
-title: Die veröffentlichte Site
-seo-title: Die veröffentlichte Site
+title: Erleben Sie die veröffentlichte Site
+seo-title: Erleben Sie die veröffentlichte Site
 description: Eine veröffentlichte Site zur Aktivierung aufrufen
 seo-description: Eine veröffentlichte Site zur Aktivierung aufrufen
 uuid: 1bfefa8a-fd9c-4ca8-b2ff-add79776c8ae
@@ -10,29 +10,29 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 
-# Die veröffentlichte Site {#experience-the-published-site}
+# Erleben Sie die veröffentlichte Site {#experience-the-published-site}
 
 
 **[⇐ Erstellen und Zuweisen von Aktivierungsressourcen](resource.md)**
 
-## Neue Site bei Veröffentlichung suchen {#browse-to-new-site-on-publish}
+## Neue Site bei der Veröffentlichung suchen {#browse-to-new-site-on-publish}
 
 Nachdem die neu erstellte Community-Site und ihre Aktivierungsressourcen und der Lernpfad veröffentlicht wurden, ist es möglich, die Seite &quot;Aktivierungsübungen&quot;zu erleben.
 
 Beginnen Sie damit, zu der URL zu navigieren, die beim Erstellen der Site angezeigt wird, jedoch auf dem Veröffentlichungsserver, z.
 
-* author URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
-* publish URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
+* Autor-URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
+* Veröffentlichungs-URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Wenn die [Standardstartseite festgelegt](enablement-create-site.md#changethedefaulthomepage)wurde, sollte die Site einfach zu [http://localhost:4503/](http://localhost:4503/) navigieren.
+Wenn die [Standard-Startseite festgelegt](enablement-create-site.md#changethedefaulthomepage)wurde, sollte die Site einfach zu [http://localhost:4503/](http://localhost:4503/) navigieren.
 
-Bei der ersten Ankunft auf der veröffentlichten Site wurde der Site-Besucher in der Regel nicht bereits angemeldet und wäre anonym.
+Bei der ersten Ankunft auf der veröffentlichten Site wäre der Site-Besucher normalerweise nicht bereits angemeldet und anonym.
 
 **http://localhost:4503/content/sites/enable/en.html**
 
@@ -40,18 +40,18 @@ Bei der ersten Ankunft auf der veröffentlichten Site wurde der Site-Besucher in
 
 ## Anonymer Site-Besucher {#anonymous-site-visitor}
 
-Ein anonymer Sitebesucher wird sofort mit der Anmeldeseite für diese private Community-Site zur Aktivierung angezeigt. Beachten Sie, dass es keine Möglichkeit gibt, sich bei Facebook oder Twitter selbst zu registrieren oder sich anzumelden.
+Ein anonymer Site-Besucher wird sofort mit der Anmeldeseite für diese private Community-Site zur Aktivierung angezeigt. Beachten Sie, dass es keine Möglichkeit gibt, sich bei Facebook oder Twitter selbst zu registrieren oder sich anzumelden.
 
-Beachten Sie, dass auf dieser Homepage vier Menüelemente angezeigt werden: `Assignments, Ski Catalog, What's New` und `Discussions`, jedoch ohne Anmeldung nicht erreicht werden.
+Beachten Sie, dass diese Startseite vier Menüelemente enthält: `Assignments, Ski Catalog, What's New` und `Discussions`, jedoch kann keine erreicht werden, ohne sich anzumelden.
 
 >[!NOTE]
 >
 >Es ist möglich, anonymen Zugriff auf eine Aktivierungs-Site zu gewähren, ohne dass Site-Besucher sich selbst registrieren können.
->Wenn eine Aktivierungsressource auf `show in catalog` und festgelegt ist, können anonyme Site-Besucher Ressourcen im Katalog anzeigen. `allow anonymous access`Dies ist möglich.
+>Wenn eine Aktivierungsressource auf `show in catalog` `allow anonymous access`und festgelegt ist, können anonyme Site-Besucher Ansichten im Katalog ausführen.
 
 ### Anonymen Zugriff auf JCR verhindern {#prevent-anonymous-access-on-jcr}
 
-Eine bekannte Einschränkung setzt den Inhalt der Community-Site anonymen Besuchern durch jcr-Inhalte und json aus, obwohl der anonyme Zugriff **[!UICONTROL für den Site-Inhalt deaktiviert]** ist. Dieses Verhalten kann jedoch mithilfe von Sling-Beschränkungen als Behelfslösung gesteuert werden.
+Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen Besuchern durch jcr-Inhalte und json zugänglich gemacht, obwohl der anonyme Zugriff **[!UICONTROL für den Site-Inhalt deaktiviert]** ist. Dieses Verhalten kann jedoch mithilfe von Sling-Beschränkungen als Behelfslösung gesteuert werden.
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer durch jcr-Inhalte und json zu schützen:
 
@@ -70,21 +70,21 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
    ![site-authentication-1](assets/site-authentication-1.png)
 
-1. Fügen Sie den Pfad der Anmeldeseite hinzu. Beispiel, `/content/......./GetStarted`.
+1. Hinzufügen den Pfad der Anmeldeseite. Beispiel: `/content/......./GetStarted`. 
 1. Veröffentlichen Sie die Seite.
 
 ## Eingeschriebenes Mitglied {#enrolled-member}
 
-Diese Erfahrung beruht darauf, dass Benutzer `Riley Taylor` und `Sidney Croft` durch ihre Mitgliedschaft in der [Community Ski Class](enablement-setup.md#publishcreateenablementmembers) -Gruppe [erstellt](resource.md#settings) und dem *Skilehrpfad* ** zugewiesenwerden.
+Diese Erfahrung beruht darauf, dass Benutzer `Riley Taylor` und `Sidney Croft` durch ihre Mitgliedschaft in der [Community Ski Class](enablement-setup.md#publishcreateenablementmembers) -Gruppe [erstellt](resource.md#settings) und dem *Ski Lektionen* -Lernpfad *zugewiesen* werden.
 
 Anmelden mit
 
 * `Username: riley`
 * `Password: password`
 
-Wenn das Benutzerprofil nicht durch die Selbstregistrierung erstellt wurde, wird bei der ersten Anmeldung eines Mitglieds dessen Profilseite angezeigt, damit es überprüft und gegebenenfalls geändert werden kann.
+Wenn das Profil nicht durch Selbstregistrierung erstellt wurde, wird bei der ersten Anmeldung eines Mitglieds dessen Profil angezeigt, sodass es überprüft und ggf. geändert werden kann.
 
-Wenn sich das Mitglied das nächste Mal anmeldet, wird die durch das erste Menüelement identifizierte Homepage angezeigt.
+Wenn sich das Mitglied das nächste Mal anmeldet, wird die durch das erste Menüelement identifizierte Startseite angezeigt.
 
 ![chlimage_1-434](assets/chlimage_1-434.png)
 
@@ -110,15 +110,15 @@ Wenn Sie *Skiunterricht* auswählen, werden die beiden Aktivierungsressourcen an
 
 Wenn Sie *Skiunterricht 1* auswählen, wird die Seite mit den Details zur Aktivierung der Ressource geöffnet.
 
-Auf der Seite &quot;Details&quot;kann das Mitglied lernen, die Lektion [bewerten](rating.md) und [Kommentare](comments.md)hinzufügen. Jede Mitgliederaktivität wird im Abschnitt Neue Funktionen der Site angezeigt.
+Auf der Seite &quot;Details&quot;kann das Mitglied lernen, die Lektion [bewerten](rating.md) und [Kommentare](comments.md)hinzufügen. Jede Aktivität eines Mitglieds wird im Abschnitt Neue Funktionen der Site angezeigt.
 
-Interaktionen mit der Aktivierungsressource werden im Abschnitt Bericht vermerkt, auf den in der Autorenumgebung zugegriffen werden kann.
+Interaktionen mit der Aktivierungsressource werden im Berichtsabschnitt vermerkt, auf den in der Autorendatei zugegriffen werden kann.
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
 ### Skikatalog {#ski-catalog}
 
-Die Seite Skikatalog ist der Katalog der Aktivierungsressourcen, die mit Tags aus dem `Tutorial` Namespace getaggt sind. Die beiden *Ski-Lektionen* -Ressourcen sind mit dem `Skiing` Tag versehen, sodass, wenn keine anderen Tags ausgewählt `All` oder `Tutorial: Sports / Skiing` ausgewählt sind, nichts angezeigt wird.
+Die Seite &quot;Skizze&quot;enthält den Katalog der Aktivierungsressourcen, die mit Tags des `Tutorial` Namensraums versehen sind. Die beiden *Ski-Lektionen* -Ressourcen sind mit dem `Skiing` Tag versehen, sodass, wenn keine anderen Tags ausgewählt `All` oder `Tutorial: Sports / Skiing` ausgewählt sind, nichts angezeigt wird.
 
 Wenn einem Mitglied weder direkt noch über einen Lernpfad Ressourcen für die Aktivierung zugewiesen wurden, ist es möglich, mit den in einem Katalog befindlichen Ressourcen für die Aktivierung zu interagieren und Feedback über Kommentare und Bewertungen bereitzustellen.
 
@@ -138,15 +138,15 @@ Beachten Sie, dass es neben der Inline-Moderation Optionen gibt, das Thema in so
 
 ### Neuerungen {#what-s-new}
 
-Der `What's New` Menüpunkt ist der Titel der [Aktivitätsstream-Funktion](functions.md#activity-stream-function) in der Struktur dieser Community-Site.
+Der `What's New` Menüpunkt ist der Titel der [Aktivität-Stream-Funktion](functions.md#activity-stream-function) in der Struktur dieser Community-Site.
 
-Wählen Sie den Link, über den die Aktivität angezeigt werden soll, und zwar noch als Sidney. `What's New`
+Wählen Sie den `What's New` Link noch als Sidney angemeldet, um die Aktivität anzuzeigen.
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
 ## Vertrauenswürdiger Community-Mitglied {#trusted-community-member}
 
-Dieses Erlebnis setzt voraus, dass die Rollen des ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)`Moderators[ und des ](enablement-create-site.md#moderation)Ressourcenkontakts[](resource.md#settings) zugewiesen wurden.
+Dieses Erlebnis setzt voraus, dass die Rollen des ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` Moderators [und des](enablement-create-site.md#moderation) Ressourcenkontakts [](resource.md#settings)zugewiesen wurden.
 
 Anmelden mit
 
@@ -157,11 +157,11 @@ Nach der Anmeldung wird ein neuer Menüpunkt angezeigt, `Administration`der ange
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
-Die Homepage wird durch den ersten Menüpunkt Zuweisungen gekennzeichnet. Quinn ist der Ansprechpartner für Moderator- und Aktivierungsressourcen und wurde nicht in Aktivierungsressourcen oder Lernpfaden eingeschrieben. Es ist daher nichts anzuzeigen.
+Die Startseite wird durch den ersten Menüpunkt Zuweisungen gekennzeichnet. Quinn ist der Ansprechpartner für Moderator- und Aktivierungsressourcen und wurde nicht in Aktivierungsressourcen oder Lernpfaden eingeschrieben. Es ist daher nichts anzuzeigen.
 
 ### Administration {#administration}
 
-Da die Aktivitäten der beiden Lernenden aktiv sind `Riley Taylor` und der `Sidney Croft. By s`Link für den Zugriff auf die Moderationskonsole `Administration`ausgewählt wird, kann Quinn ihre Beiträge über die [Massenmoderationskonsole](moderation.md) moderieren.
+Was es gibt, ist Aktivität durch die beiden Lernenden, `Riley Taylor` und `Sidney Croft`. Durch Auswahl des `Administration` Links für den Zugriff auf die Moderationskonsole kann Quinn die [Massenmoderationskonsole](moderation.md) verwenden, um ihre Beiträge zu moderieren.
 
 Wenn Sie das Symbol für das Seitenbedienfeld auswählen, werden die Filter geöffnet, die zum Durchsuchen von Community-Inhalten verwendet werden.
 
@@ -171,7 +171,7 @@ Wenn Sie den Mauszeiger über eine Kommentarkarte bewegen, werden Moderationsakt
 
 ## Berichte zum Autor {#reports-on-author}
 
-Es gibt zwei Möglichkeiten, auf Berichte zu Lernenden und Aktivierungsressourcen zuzugreifen.
+Es gibt zwei Möglichkeiten, auf Berichte für Lernende zuzugreifen und Ressourcen zu aktivieren.
 
 Navigieren Sie beim Autor zur **Communities, zur[Ressourcenkonsole](resources.md)**, in der die Aktivierungsressourcen verwaltet werden, und nach Auswahl einer Community-Site können Sie Berichte für
 
@@ -197,16 +197,16 @@ Navigieren Sie zur **Communities-,[Reports-Konsole](reports.md)**und erstellen S
 
 ### Ressourcenkonsole {#resources-console}
 
-Bei etwas Aktivität und Interaktion mit den Ressourcen bei der Veröffentlichung lohnt es sich, die Berichte zum Autor anzuzeigen.
+Mit ein wenig Aktivität und Interaktion mit den Ressourcen bei der Veröffentlichung lohnt es sich, die Berichte zum Autor anzuzeigen.
 
 * Autor
 * Anmelden mit Administratorrechten
 * Navigieren Sie vom Hauptmenü zu **[!UICONTROL Communities > Ressourcen]**
 * Wählen Sie die `Enablement Tutorial` Site
-* Wählen Sie das `Report`Symbol für eine Zusammenfassung aller Ressourcen aus.
-* Wählen Sie eine Ressource und dann das `Report`Symbol für einen Bericht zu dieser Ressource aus
+* Wählen Sie das `Report` Symbol für eine Zusammenfassung aller Ressourcen aus.
+* Wählen Sie eine Ressource und dann das `Report` Symbol für einen Bericht in dieser Ressource aus
 
-Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anzuzeigen, was bis zum Auftreten von Daten zwischen 1 und 12 Stunden dauern kann. Es stehen jedoch bereits grundlegende SCORM-Berichte zur Verfügung.
+Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anzuzeigen, was bis zum Auftreten von Daten zwischen 1 und 12 Stunden dauern kann. Es ist jedoch bereits ein einfacher SCORM-Berichte verfügbar.
 
 #### Bericht über die Ressourcen für Skifahrten {#ski-lessons-resource-report}
 
@@ -218,16 +218,16 @@ Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anz
 
 * Karte öffnen `Enablement Tutorial`
 * Karte öffnen `Ski Lessons`
-* `select Report, User Report`
+* Wählen Sie nun eine der folgenden Optionen aus `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
 ### Berichte-Konsole {#reports-console}
 
-Die Berichtskonsole ermöglicht die Erstellung von Berichten über
+Die Konsole &quot;Berichte&quot;ermöglicht die Erstellung von Berichten über
 
 * **Zuweisungen** für eine beliebige Community-Site für eine Aktivierung
-* **Ansichten** jeder Community-Site
+* **Ansichten** für jede Community-Site
 * **Beiträge** für jede Community-Site
 
 Für Zuweisungsberichte:
@@ -235,7 +235,7 @@ Für Zuweisungsberichte:
 * Autor
 * Anmelden mit Administratorrechten
 * Navigieren Sie zu **[!UICONTROL Communities > Berichte > Zuweisungsbericht]**
-* Wählen Sie eine **[!UICONTROL Site]** aus dem Pulldown-Menü (wählen Sie `Enablement Tutorial`)
+* Wählen Sie eine **[!UICONTROL Site]** aus dem Pulldown-Menü aus (wählen Sie `Enablement Tutorial`)
 
 * Gruppe **[!UICONTROL auswählen]** (auswählen `Community Ski Class`)
 
@@ -249,8 +249,8 @@ Für Berichte zu Ansichten:
 
 * Autor
 * Anmelden mit Administratorrechten
-* Navigieren Sie zu **[!UICONTROL Communities > Berichte > Ansichtsbericht]**
-* Wählen Sie eine **Site **aus dem Pulldown-Menü (wählen Sie`Enablement Tutorial`)
+* Navigieren Sie zum Bericht **[!UICONTROL Communities > Berichte > Ansichten]**
+* Wählen Sie eine **Site **aus dem Pulldown-Menü aus (wählen Sie`Enablement Tutorial`)
 
 * Content- **[!UICONTROL Typ]** auswählen (wählen Sie `all`)
 
