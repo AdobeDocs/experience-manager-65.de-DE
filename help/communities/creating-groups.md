@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Community-Gruppen{#community-groups}
+# Community-Gruppen {#community-groups}
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenumgebung erstellt zu werden.
+Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenversion der Umgebung erstellt zu werden.
 
 This ability is present when the [groups function](/help/communities/functions.md#groups-function) is present in the [community site](/help/communities/sites-console.md) structure.
 
@@ -32,33 +32,46 @@ The ability to create a new community group relies on the existence of a communi
 
 The examples that follow use the community site created from the `Reference Site Template` as described in the [Getting Started with AEM Communities](/help/communities/getting-started.md) tutorial.
 
-Diese Seite wird beim Veröffentlichen geladen, wenn der Menüpunkt **Gruppen **ausgewählt ist:
+This is the page that loads on publish when the **Groups** menu item is selected:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 Wählen Sie das Symbol für **Neue Gruppe** aus, öffnet sich das Bearbeitungsdialogfeld.
 
-Unter der Registerkarte **Einstellungen **stellen Sie die grundlegenden Funktionen der Gruppe bereit:
+Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschaften der Gruppe an:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-* **Gruppenname** Der Titel der Gruppe, der auf der Community-Site angezeigt wird.
+* **Gruppenname**
 
-* **Beschreibung** Eine Beschreibung der Gruppe, die auf der Community-Site angezeigt wird.
+   Der Titel der Gruppe, die auf der Community-Site angezeigt werden soll.
 
-* **Einladen** Eine Auflistung der Mitglieder, die zum Beitritt zur Gruppe eingeladen werden können. Mithilfe der Vervollständigungsfunktion erhalten Sie Vorschläge für einzuladende Mitglieder.
+* **Beschreibung**
 
-* **Gruppen-URL-Name** Der Name der Gruppenseite, der Teil ihrer URL ist.
+   Eine Beschreibung der Gruppe, die auf der Community-Site angezeigt werden soll.
 
-* **Gruppe**&#x200B;öffnen Die Auswahl `Open Group` zeigt an, dass ein anonymer Sitebesucher den Inhalt anzeigen kann und die Auswahl aufhebt `Member Only Group`.
+* **Einladen**
 
-* **&quot;Nur Gruppe** auswählen&quot; `Member Only Group` bedeutet, dass nur Mitglieder der Gruppe den Inhalt anzeigen können und die Auswahl aufheben `Open Group`.
+   Eine Liste von Mitgliedern, die zur Teilnahme an der Gruppe eingeladen werden. Mithilfe der Vervollständigungsfunktion erhalten Sie Vorschläge für einzuladende Mitglieder.
 
-Unter der Registerkarte **Vorlage **können Sie aus der Liste der Gruppenvorlagen auswählen, die angegeben wurden, wenn die Funktion &quot;Gruppen&quot;in der Struktur der Community-Site oder in einer Community-Site-Vorlage enthalten war.
+* **Gruppen-URL-Name**
+
+   Der Name der Gruppenseite, die Teil der URL wird.
+
+* **Gruppe öffnen**
+
+   Die Auswahl `Open Group` zeigt an, dass ein anonymer Site-Besucher den Inhalt Ansicht und die Auswahl aufhebt `Member Only Group`.
+
+* **Gruppe nur für Mitglieder**
+
+   Die Auswahl `Member Only Group` zeigt an, dass nur Gruppenmitglieder die Ansicht des Inhalts durchführen können, und deaktiviert die Auswahl `Open Group`.
+
+Under the **Template** tab is the ability to
+select from the list of community group templates that were specified when the groups function was included in the community site&#39;s structure or in a community site template.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-Unter der Registerkarte **Bild **können Sie ein Bild hochladen, das für die Gruppe auf der Seite Gruppen der Community-Site angezeigt wird. Durch das Standard-Stylesheet wird das Bild auf eine Größe von 170 x 90 Pixeln zugeschnitten.
+Auf der Registerkarte **Bild** können Sie ein Bild hochladen, das auf der Seite „Gruppen“ der Community-Site angezeigt werden soll. Durch das Standard-Stylesheet wird das Bild auf eine Größe von 170 x 90 Pixeln zugeschnitten.
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
