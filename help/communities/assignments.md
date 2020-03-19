@@ -1,8 +1,8 @@
 ---
 title: Zuweisungsfunktion
 seo-title: Zuweisungsfunktion
-description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen zugreifen
-seo-description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen zugreifen
+description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen für die Aktivierung zugreifen
+seo-description: Derzeit angemeldete Community-Mitglieder können auf zugewiesene Ressourcen für die Aktivierung zugreifen
 uuid: b71716d2-e882-48dc-90f0-5ecffa8c4a4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 2de88b55-dda9-4ccf-ad4d-dd67943ef610
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Zuweisungsfunktion{#assignments-feature}
+# Zuweisungsfunktion {#assignments-feature}
 
 Die Komponenten „Aktivierungszuweisungen“ und [Aktivierungskatalog](/help/communities/catalog.md), die sich in der Communities-Gruppe des Komponenten-Browsers finden, sind Komponenten einer [Aktivierungs-Community](/help/communities/overview.md#enablement-community).
 
