@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e776d1f7a9433e80633cdcfdf5ffed37b29da
+source-git-commit: 4f3928558641af89d138bfbf85ba099a4286b2f3
 
 ---
 
@@ -203,7 +203,6 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 >
 > Stellen Sie sicher, dass die Konfiguration ordnungsgemäß ist. Falls die Konfiguration ungesund ist, löschen Sie sie und erstellen Sie eine neue, gesunde Konfiguration.
 
-<br/> <br/>
 
 ### Configure cloud service {#configure-the-cloud-service}
 
