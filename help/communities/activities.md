@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Aktivitäts-Streams-Funktion{#activity-streams-feature}
+# Aktivitäts-Streams-Funktion {#activity-streams-feature}
 
 ## Einführung {#introduction}
 
@@ -26,8 +26,8 @@ Diese Verfolgungsmöglichkeit bietet eine zusätzliche Art der Aktivitätenansic
 
 Das Dokument beschreibt:
 
-* Hinzufügen der Komponente „Aktivitäts-Streams“ zu AEM-Sites
-* Konfigurationseinstellungen der Komponente „Aktivitäts-Streams“
+* Hinzufügen der Aktivität Streams-Komponente zu einer AEM-Site
+* Konfigurationseinstellungen für die Aktivität Streams-Komponente
 
 ### Hinzufügen von Aktivitäts-Streams zu einer Seite {#adding-activity-streams-to-a-page}
 
@@ -53,27 +53,37 @@ Auf der Registerkarte **Benutzeraktivitäten** können Sie festlegen, welche Akt
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-* **Maximale Anzahl von Aktivitäten** Anzahl der angezeigten Aktivitäten
+* **Maximale Anzahl von Aktivitäten**
 
-* **Stream-Ressourcenpfad** Feld leer lassen, um standardmäßig auf die Community-Site oder die Community-Gruppe zu verweisen. Mit dem Stream-Ressourcenpfad wird die Aktivitätenquelle festgelegt. Standardmäßig ist das Feld leer.
+   Die Anzahl der anzuzeigenden Aktivitäten
 
-* **Ansicht der Benutzeraktivitäten anzeigen** Ist diese Option aktiviert, findet sich auf der Aktivitätenseite eine Registerkarte, mit der Aktivitäten nach denjenigen Elementen gefiltert werden können, die vom aktuellen Mitglied innerhalb der Community generiert wurden. Diese Option ist standardmäßig aktiviert.
+* **Stream-Ressourcenpfad**
 
-* **Ansicht aller Aktivitäten anzeigen** Ist diese Option aktiviert, findet sich auf der Aktivitätenseite eine Registerkarte, in der alle in der Community generierten Aktivitäten aufgeführt werden, auf die das aktuell angemeldete Mitglied Zugriff hat. Diese Option ist standardmäßig aktiviert.
+   Leer lassen, um standardmäßig die Community-Site oder Community-Gruppe zu verwenden. Mit dem Stream-Ressourcenpfad wird die Aktivitätenquelle festgelegt. Standardmäßig ist das Feld leer.
 
-* **Follower-Ansicht anzeigen** Ist diese Option aktiviert, findet sich auf der Aktivitätenseite eine Registerkarte, mit der Aktivitäten nach denjenigen Elementen gefiltert werden können, denen das aktuell angemeldete Mitglied folgt. Diese Option ist standardmäßig aktiviert.
+* **Ansicht der Benutzeraktivitäten anzeigen**
 
-### Folgende Ansicht {#following-view}
+   Wenn diese Option aktiviert ist, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, auf der die Aktivitäten der Filter basieren, die vom aktuellen Mitglied innerhalb der Community generiert wurden. Diese Option ist standardmäßig aktiviert.
+
+* **Ansicht aller Aktivitäten anzeigen**
+
+   Wenn diese Option aktiviert ist, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, die alle in der Community generierten Aktivitäten enthält, auf die das aktuelle Mitglied Zugriff hat. Diese Option ist standardmäßig aktiviert.
+
+* **Follower-Ansicht anzeigen**
+
+   Wenn diese Option aktiviert ist, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, auf der die Aktivitäten der Filter basieren, die vom aktuellen Member ausgeführt werden. Diese Option ist standardmäßig aktiviert.
+
+### FOLGENDE Ansicht {#following-view}
 
 Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [Blog](/help/communities/blog-feature.md), [Forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [Kalender](/help/communities/calendar.md), [Dateibibliothek](/help/communities/file-library.md)[](/help/communities/comments.md)undKommentare.
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-Mit der Schaltfläche **Folgen **können Sie Einsendungen als Aktivitäten, [Benachrichtigungen](/help/communities/notifications.md)oder [Abonnements](/help/communities/subscriptions.md)verfolgen. Jedes Mal, wenn die Schaltfläche **Folgen **ausgewählt ist, können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
+Über die Schaltfläche &quot; **Folgen** &quot;können Sie Einträgen wie Aktivitäten, [Benachrichtigungen](/help/communities/notifications.md)oder [Abonnement](/help/communities/subscriptions.md)folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
 
 Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Folgendem** geändert. Aus praktischen Gründen ist es möglich, alle Methoden `Unfollow All` zu deaktivieren.
 
-Die Schaltfläche **Folgen **wird angezeigt
+Die Schaltfläche **Folgen** wird angezeigt
 
 * beim Anzeigen des Profils eines anderen Mitglieds
 * auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs
@@ -82,7 +92,7 @@ Die Schaltfläche **Folgen **wird angezeigt
 
 * für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Beantwortung einer Frage oder einen Blog-Artikel
 
-   * alle Aktivitäten für diesen spezifischen Eintrag
+   * folgt allen Aktivitäten für diesen spezifischen Eintrag
 
 ### Zusätzliche Informationen {#additional-information}
 
