@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
+source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
 
 ---
 
@@ -41,6 +41,12 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in AEM 6.5.4.0 eingeführt
 * [Barrierefreiheitsverbesserungen](new-features-latest-service-pack.md#accessibility-enhancements) in Experience Manager Assets.
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.8 aktualisiert.
+
+* Sie können jetzt ausgewählte Inhaltsunterbauten mit *dynamischen Medien - Scene7-Modus* und nicht mit allen verfügbaren Elementen synchronisieren `content/dam`.
+
+* Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
+
+* SOAP-Eingabe- oder -Ausgabe und komplexe Datenstrukturen unterstützen jetzt die dynamische Gruppenersetzung.
 
 Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funktionen, die in früheren AEM 6.5 Service Packs eingeführt wurden, finden Sie unter [Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
@@ -112,7 +118,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * In der Benutzeroberfläche von Experience Manager Assets werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
-* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen in Adobe Stock auf Stufe zwei markiert wurden (NPR-31919).
+* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen der Stufe 2 der Kontrollkästchenstruktur in Adobe Stock aktiviert wurden (NPR-31919).
 
 * Die Datei- und Ordnersuche mit Omniture-Facetten bildet eine Ausnahme (NPR-31872).
 
