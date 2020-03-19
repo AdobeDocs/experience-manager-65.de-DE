@@ -11,42 +11,42 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Analytics-Konfiguration für Communities-Funktionen{#analytics-configuration-for-communities-features}
+# Analytics-Konfiguration für Communities-Funktionen {#analytics-configuration-for-communities-features}
 
 ## Überblick {#overview}
 
 Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen der Adobe Marketing Cloud.
 
-Adobe Analytics kann für AEM Communities konfiguriert werden, sodass bei der Interaktion eines Mitglieds mit unterstützten Communities-Funktionen Ereignisse an Adobe Analytics gesendet werden, aus denen Berichte generiert werden.
+Adobe Analytics kann für AEM Communities konfiguriert werden, sodass Ereignis, die von einem Mitglied mit unterstützten Communities-Funktionen interagieren, an Adobe Analytics gesendet werden, von dem aus Berichte generiert werden.
 
-Wenn ein Mitglied einer Community-Site für eine Aktivierung beispielsweise eine Videoressource anzeigt, die ihm zugewiesen ist, sendet der Ressourcenplayer Ereignisse, einschließlich Video Heartbeat-Daten. Auf der Community-Site können Administratoren verschiedene Berichte zur Wiedergabe des Videos sehen.
+Wenn beispielsweise ein Mitglied einer Community-Site zur Aktivierung eine Videoressource Ansicht, die ihm zugewiesen wurde, sendet der Ressourcenplayer Ereignis, einschließlich Video Heartbeat-Daten. Auf der Community-Site können Administratoren verschiedene Berichte zur Wiedergabe des Videos sehen.
 
 Darüber hinaus sind Analysen erforderlich für:
 
-* in der Veröffentlichungsumgebung:
+* In der Umgebung &quot;Veröffentlichen&quot;:
 
-   * Berichterstattung über [Trends in der Community](/help/communities/trends.md)
-   * Site-Besuchern erlauben, nach &quot;am meisten angezeigt&quot;, &quot;am aktivsten&quot;, &quot;am meisten gefällt&quot; zu sortieren
-   * Anzahl der Ansichten in UGC-Listen
+   * Berichte zu [Trends in der Community](/help/communities/trends.md)
+   * Zulassen der Sortierung von Site-Besuchern nach &quot;am meisten angezeigt&quot;, &quot;am aktivsten&quot;, &quot;am meisten gefällt&quot;
+   * Ansicht zählt auf UGC-Listen
 
-* in der Autorenumgebung:
+* Umgebung des Verfassers:
 
-   * Anzeige von Beitragsdaten in der [Mitgliederverwaltungskonsole](/help/communities/members.md) (Ansichten, Beiträge, folgt, &quot;Gefällt mir&quot;-Klicks)
-   * Trendzusammenfassung, Video Heartbeat und Video-Gerät für [Berichte über die Aktivierung von Ressourcen](/help/communities/reports.md)
+   * Anzeigen von Beitragsdaten in der [Mitgliederverwaltungskonsole](/help/communities/members.md) (Ansichten, Beiträge, Follower, &quot;Gefällt mir&quot;-Klicks)
+   * Trendzusammenfassung, Video Heartbeat und Videogerät für [Berichte über die Aktivierung der Ressourcen](/help/communities/reports.md)
 
 Zu den unterstützten Communities-Funktionen gehören:
 
-* [Ressourcen aktivieren](/help/communities/resources.md)
+* [Aktivierungsressourcen](/help/communities/resources.md)
 * [Forum](/help/communities/forum.md)
 * [Frage und Antwort](/help/communities/working-with-qna.md)
-* [blog](/help/communities/blog-feature.md)
+* [Blog](/help/communities/blog-feature.md)
 * [Dateibibliothek](/help/communities/file-library.md)
-* [calendar](/help/communities/calendar.md)
+* [Kalender](/help/communities/calendar.md)
 
 In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics-Report Suite mit Communities-Funktionen verbinden. Die grundlegenden Schritte sind:
 
@@ -64,54 +64,67 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie eine Analytics-R
 
 Zur Konfiguration der Funktionen von Analytics für Communities müssen Sie mit Ihrem Kundenbetreuer zusammenarbeiten, um ein Adobe Analytics-Konto und eine Adobe Analytics- [Report Suite](#adobe-analytics-report-suite-for-video-reporting)einzurichten. Nach der Festlegung sollten folgende Informationen verfügbar sein:
 
-* Unternehmen, das mit dem Adobe Analytics-Konto verknüpft ist
-* Benutzername: der Benutzername für den Benutzer, der zur Verwaltung des Analytics-Kontos berechtigt ist (sollte Web Service Access-Berechtigungen enthalten)
+* **Name der Firma**
 
-* Kennwort, das Anmeldekennwort für den autorisierten Benutzer
-* Analytics Data Center die URL des Analytics-Rechenzentrums für das Konto
-* Report Suite der Name der zu verwendenden Analytics Report Suite
+   Die Firma, die mit dem Adobe Analytics-Konto verknüpft ist.
 
-## Adobe Analytics Report Suite für Videoberichte {#adobe-analytics-report-suite-for-video-reporting}
+* **User Name**
+
+   Der Anmeldename des Benutzers, der zur Verwaltung des Analytics-Kontos berechtigt ist (sollte Web Service Access-Berechtigungen enthalten).
+
+* **Kennwort**
+
+   Das Anmeldekennwort des autorisierten Benutzers.
+
+* **Analytics Data Center**
+
+   Die URL des Analytics-Rechenzentrums für das Konto.
+
+* **Report Suite**
+
+   Der Name der verwendeten Analytics-Report Suite.
+
+## Adobe Analytics Report Suite for Video Berichte {#adobe-analytics-report-suite-for-video-reporting}
 
 Mithilfe des [Report Suite Manager](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)der Adobe Marketing Cloud können Analytics-Report Suites so konfiguriert werden, dass eine Community-Site Berichte für Communities-Funktionen bereitstellen kann.
 
-Durch die Anmeldung bei der [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) mit [Firmenname und Benutzername](/help/communities/analytics.md#prerequisites)können Sie eine neue oder vorhandene Report Suite so konfigurieren, dass sie Folgendes aufweist:
+Durch die Anmeldung bei der [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) mit [Firmen- und Benutzername](/help/communities/analytics.md#prerequisites)können Sie eine neue oder vorhandene Report Suite für folgende Aufgaben konfigurieren:
 
 * [11 Konversionsvariablen](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) (eVars)
 
    * **`evar1`** durch **`evar11`** Aktivierung
 
-   * kann vorhandene eVars wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
+   * Kann vorhandene eVars wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
 
-* [7 Erfolgsereignisse](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) (Ereignisse)
+* [7 Erfolgserlebnisse](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) (Ereignis)
 
    * **`event1`** durch **`event7`** Aktivierung
 
-   * Typ **`Counter`**
+   * type **`Counter`**
 
       * not **`Counter (no subrelations)`**
-   * kann bestehende Ereignisse wiederverwenden (umbenennen) oder neue Ereignisse erstellen, die für Communities-Funktionen verwendet werden können
+   * Kann vorhandene Ereignis wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
 
 
 * [Videomanagement](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
 
-   * Videoberichterstellungskonsole
+   * Video Berichte Console
 
-      * freischalten `Video Core`
-      * Wählen Sie Save aus.
+      * Aktivieren `Video Core`
+      * Wählen Sie Speichern
    * Video-Core-Messkonsole
 
-      * auswählen `Use Solution Variables`
-      * Wählen Sie Save aus.
+      * Wählen Sie nun eine der folgenden Optionen aus `Use Solution Variables`
+      * Wählen Sie Speichern
 
 
-Wenn Sie eine **neue Report Suite** verwenden, beachten Sie, dass eine neue Report Suite möglicherweise nur 4 eVars und 6 Ereignisvariablen hat, während für Communities 11 eVars und 7 Ereignisvariablen erforderlich sind.
+Wenn Sie eine **neue Report Suite** verwenden, beachten Sie, dass eine neue Report Suite möglicherweise nur 4 eVars und 6 Ereignis-Variablen enthält, während für Communities 11 eVars und 7 Ereignis Vars erforderlich sind.
 
-Wenn Sie eine **vorhandene Report Suite** verwenden, müssen Sie die Variablenzuordnung[ ggf. ](#modifying-analytics-variable-mapping)ändern, bevor Sie das Analytics-Framework für eine Community-Site aktivieren. Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie Bedenken hinsichtlich der Variablen für Communities haben.
+Wenn Sie eine **vorhandene Report Suite** verwenden, müssen Sie die Variablenzuordnung [ggf.](#modifying-analytics-variable-mapping) ändern, bevor Sie das Analytics-Framework für eine Community-Site aktivieren. Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie Bedenken hinsichtlich der Variablen für Communities haben.
 
 >[!CAUTION]
 >
->**Bei Verwendung einer vorhandenen Report Suite, die bereits Variablen in**
+>**Wenn Sie eine vorhandene Report Suite verwenden, die bereits Variablen in**
 >
 >* **`evar1`** through **`evar11`**
    >
@@ -129,83 +142,103 @@ Wenn Sie eine **vorhandene Report Suite** verwenden, müssen Sie die Variablenzu
 
 Wenn Video Heartbeat Analytics lizenziert ist, `Marketing Cloud Org Id` wird eine zugewiesen.
 
-So aktivieren Sie die Video Heartbeat-Berichterstellung nach der [Konfiguration der Analytics Report Suite für die Videoberichte](#adobe-analytics-report-suite-for-video-reporting):
+So aktivieren Sie Video Heartbeat Berichte nach der [Konfiguration der Analytics Report Suite für Video-Berichte](#adobe-analytics-report-suite-for-video-reporting):
 
-* einen [Analytics-Cloud-Dienst erstellen](#aem-analytics-cloud-service-configuration)
+* Erstellen eines [Analytics-Cloud-Dienstes](#aem-analytics-cloud-service-configuration)
 * Aktivieren von [Analytics für eine Community-Site](#enable-analytics-for-a-community-site)
-* die `Marketing Cloud Org Id` mit der Community-Site verbinden
+* Verknüpfen Sie die `Marketing Cloud Org Id` Datei mit der Community-Site.
 
 Die `Marketing Cloud Org Id` Variable kann zum Zeitpunkt der [Community-Site-Erstellung](/help/communities/sites-console.md#enablement) oder später eingegeben werden, indem die Eigenschaften der Community-Site [geändert](/help/communities/sites-console.md#modifying-site-properties) werden. [](#aem-analytics-cloud-service-configuration)
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-Wenn Video Heartbeat Analytics aktiviert ist, instanziiert der JavaScript-Code (JS) für den Videoplayer den Video Heartbeat Library-Code (auch in JS), der alle Logik zum Senden von Videostatusaktualisierungen an die Analytics-Videoverfolgungsserver alle 10 Sekunden (nicht konfigurierbar) verarbeitet und schließlich einen kumulativen Bericht der Videositzung an die Analytics-Hauptserver sendet.
+Wenn Video Heartbeat Analytics aktiviert ist, instanziiert der JavaScript-(JS-)Code für den Videoplayer den Video Heartbeat Library-Code (auch in JS), der alle Logik zum Senden von Videostatusaktualisierungen an die Analytics-Videoverfolgungsserver alle 10 Sekunden (nicht konfigurierbar) verarbeitet und schließlich einen kumulativen Bericht der Videositzung an die Analytics-Hauptserver sendet.
 
-Ist diese Option nicht aktiviert, wird der Video Heartbeat-Code nie instanziiert, und nur die Videoverfolgung und die Verfolgung der Wiederaufnahme-Position werden zur Berichterstellung auf SRP beibehalten.
+Ist diese Option nicht aktiviert, wird der Video Heartbeat-Code nie instanziiert und nur die Videoverfolgung und die Verfolgung der Wiederaufnahme-Position bleiben zum Berichte auf SRP beschränkt.
 
 ## Konfiguration des AEM Analytics Cloud-Dienstes {#aem-analytics-cloud-service-configuration}
 
 Um eine neue Analytics-Integration zu erstellen, die Adobe Analytics mit der AEM-Community-Site integriert, verwenden Sie die Standard-Benutzeroberfläche in der Autoreninstanz:
 
-* aus der globalen Navigation: **Werkzeuge, Bereitstellung, Cloud-Dienste**
-* scroll down to **Adobe Analytics**
-* entweder Konfigurationen **konfigurieren** oder **anzeigen**
+* Aus globaler Navigation: &quot; **[UIControl Tools&quot;> &quot;Bereitstellung&quot;> &quot;Cloud-Dienste&quot;]**
+* Hinunter scrollen zu **[UIControl Adobe Analytics]**
+* Wählen Sie &quot; **[UIControl &quot;Jetzt]** konfigurieren&quot;oder &quot; **[UIControl-Konfigurationen anzeigen&quot;]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Dialogfeld &quot;Konfiguration erstellen&quot; {#create-configuration-dialog}
 
-* Klicken Sie auf **[+]** neben **Verfügbare Konfigurationen** , um eine neue Konfiguration zu erstellen.
+* Klicken Sie auf `[+]` das Symbol neben **[UIControl Verfügbare Konfigurationen]** , um eine neue Konfiguration zu erstellen.
 
 Im Dialogfeld &quot;Konfiguration erstellen&quot;wird die Konfiguration durch die eingegebenen Werte identifiziert.
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-* **Titel**(erforderlich) Ein Anzeigentitel für die Konfiguration.
-Beispiel: *Enablement Community Analytics eingeben*
+* **Titel**
 
-* **Name**(optional) Wenn nicht angegeben, wird standardmäßig ein gültiger Knotenname verwendet, der aus dem Titel abgeleitet wurde.
+   (Erforderlich) Ein Anzeigentitel für die Konfiguration.
+Geben Sie z. B. *Enablement Community Analytics ein.*
+
+* **Name**
+
+   (Optional) Wenn kein Name angegeben ist, wird standardmäßig ein gültiger Knotenname verwendet, der aus dem Titel abgeleitet wurde.
 For example, enter *communities*
 
-* *Vorlage* auswählen `Adobe Analytics Configuration`
+* **Vorlage**
+
+   Wählen Sie nun eine der folgenden Optionen aus `Adobe Analytics Configuration`
 
 * Wählen Sie **Erstellen**
 
-   * startet Konfigurationsseite und öffnet `Analytics Settings` Dialogfeld
+   * Startet die Konfigurationsseite und öffnet `Analytics Settings` das Dialogfeld
 
 ### Dialogfeld &quot;Analytics-Einstellungen&quot; {#analytics-settings-dialog}
 
-Bei der ersten Erstellung einer neuen Analytics-Konfiguration wird die Konfiguration angezeigt und es wird ein neues Dialogfeld für die Eingabe der Analytics-Einstellungen angezeigt. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer erhalten wurden.
+Bei der ersten Erstellung einer neuen Analytics-Konfiguration wird die Konfiguration angezeigt und es wird ein neues Dialogfeld für die Eingabe der Analytics-Einstellungen angezeigt. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer eingeholt werden.
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-* **Unternehmen**, das mit dem Adobe Analytics-Konto verknüpft ist
+* **Unternehmen**
 
-* **Benutzername** der Anmeldename des Benutzers, der zur Verwaltung des Analytics-Kontos berechtigt ist
+   Die Firma, die mit dem Adobe Analytics-Konto verknüpft ist
 
-* **Kennwort** für den autorisierten Benutzer
+* **Benutzername**
 
-* **Rechenzentrum** wählt das Analytics-Rechenzentrum aus, in dem die Report Suite gehostet wird
+   Der Anmeldename des Benutzers, der zur Verwaltung des Analytics-Kontos berechtigt ist
 
-* **Fügen Sie kein Verfolgungs-Tag hinzu, um die Seite** standardmäßig zu verlassen (deaktiviert)
+* **Kennwort**
 
-* **AppMeasurement** leave als Standard verwenden (deaktiviert)
+   Das Anmeldekennwort für den autorisierten Benutzer
 
-* **Seitenimpressionen nicht nachts importieren (Autor)** als Standard beibehalten (deaktiviert)
+* **Datenzentrum**
+
+   Wählen Sie das Analytics-Rechenzentrum aus, in dem die Report Suite gehostet wird
+
+* **Kein Verfolgungs-Tag zur Seite hinzufügen**
+
+   Als Standard deaktivieren
+
+* **AppMeasurement verwenden**
+
+   Als Standard deaktivieren
+
+* **Nachts keine Seitenimpressionen importieren (verfassen)**
+
+   Als Standard deaktivieren
 
 * **Seitenimpressionen nicht nachts importieren (veröffentlichen)** als Standard beibehalten (deaktiviert)
 
 So speichern Sie die Einstellungen:
 
-* select **Connect to Analytics**
+* Select **Connect to Analytics**
 
-   * falls nicht erfolgreich,
+   * Wenn dies nicht erfolgreich ist,
 
-      * Überprüfen Sie, ob Einträge keine führenden Leerzeichen enthalten.
-      * ein anderes Rechenzentrum ausprobieren
-      * Kontakt zu Ihrem Kundenbetreuer
+      * Überprüfen Sie, ob die Einträge keine Leerzeichen enthalten
+      * Ein anderes Rechenzentrum ausprobieren
+      * Wenden Sie sich an Ihren Kundenbetreuer
 
-* Wählen Sie **OK** aus.
+* Wählen Sie **OK** aus
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
@@ -213,16 +246,22 @@ So speichern Sie die Einstellungen:
 
 Nach der erfolgreichen Konfiguration der grundlegenden Verbindung mit Adobe Analytics müssen Sie ein Framework für die Community-Site erstellen oder bearbeiten. Der Zweck des Frameworks besteht darin, Variablen der Funktion Communities (AEM) Analytics (Report Suite)-Variablen zuzuordnen.
 
-* Klicken Sie auf `[+]` das Symbol neben **Verfügbare Frameworks** , um ein neues Framework zu erstellen.
+* Klicken Sie auf `[+]` das Symbol neben **[UIControl Verfügbare Frameworks]** , um ein neues Framework zu erstellen
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-* **Titel**(erforderlich) Ein Anzeigentitel für das FrameworkGeben Sie z. B. *Enablement Community Framework ein.*
+* **Titel**
 
-* **Name**(optional) Wenn nicht angegeben, wird standardmäßig ein gültiger Knotenname verwendet, der aus dem Titel abgeleitet wurde.
+   (Erforderlich) Ein Anzeigentitel für das FrameworkGeben Sie z. B. *Enablement Community Framework ein.*
+
+* **Name**
+
+   (Optional) Wenn kein Name angegeben ist, wird standardmäßig ein gültiger Knotenname verwendet, der aus dem Titel abgeleitet wurde.
 For example, enter *communities*
 
-* *Vorlage* auswählen `Adobe Analytics Framework`
+* *Vorlage*
+
+   Wählen Sie nun eine der folgenden Optionen aus `Adobe Analytics Framework`
 
 * Wählen Sie **Erstellen**
 
@@ -230,29 +269,32 @@ Das Erstellen des Analytics-Frameworks öffnet das Framework für die Konfigurat
 
 ## Konfiguration des AEM Analytics-Frameworks {#aem-analytics-framework-configuration}
 
-Der Zweck des Frameworks ist die Zuordnung von AEM-Variablen zu Analytics-Variablen (eVars und Ereignisse). Die für die Zuordnung verfügbaren Analytics-Variablen werden in der Report Suite [definiert](#adobe-analytics-report-suite-for-video-reporting).
+Das Framework dient dazu, AEM-Variablen Analytics-Variablen zuzuordnen (eVars und Ereignis). Die für die Zuordnung verfügbaren Analytics-Variablen werden in der Report Suite [definiert](#adobe-analytics-report-suite-for-video-reporting).
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 
 ### Report Suite auswählen {#select-report-suite}
 
-Wählen Sie die Report Suite aus, die für die Videoberichte eingerichtet wurde.
+Wählen Sie die Report Suite aus, die für Video Berichte eingerichtet wurde.
 
 Wenn eine Report Suite noch nicht erstellt oder nicht ordnungsgemäß eingerichtet wurde, lesen Sie den vorherigen Abschnitt:
-Report Suite[für Videoberichte in Adobe Analytics](#adobe-analytics-report-suite-for-video-reporting)
+Report Suite[für Video Berichte in Adobe Analytics](#adobe-analytics-report-suite-for-video-reporting)
 
 Der Sidekick ist nicht erforderlich und kann minimiert werden, sodass er den Zugriff auf die Report Suites-Einstellungen nicht behindert.
 
-#### Report Suites Dialogfeld vor und nach Auswahl von &quot;Element hinzufügen&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
+#### Report Suites Dialogfeld vor und nach Auswahl von &quot;Hinzufügen Element&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. Wählen Sie Element **hinzufügen +.**
-Es werden zwei Dropdownfelder angezeigt.
+1. Element **Hinzufügen + auswählen**
 
-1. Wählen Sie `Report suite.`die Report Suites aus, die mit dem Unternehmenskonto verknüpft sind.
+   Es werden zwei Dropdownfelder angezeigt.
 
-1. Wählen Sie **Ja **im angezeigten Dialogfeld aus:
+1. Choose a `Report suite.`
+
+   Die mit dem Firmen-Konto verknüpften Report Suites stehen zur Auswahl zur Verfügung.
+
+1. Wählen Sie **Ja** im angezeigten Dialogfeld aus:
 
    ```
    Load default server settings?
@@ -260,7 +302,8 @@ Es werden zwei Dropdownfelder angezeigt.
    ```
 
 1. Choose a `Run Mode`
-1. Select **publish**
+
+1. Wählen Sie **Veröffentlichen**
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -274,7 +317,7 @@ So fügen Sie beim [Erstellen einer neuen Community-Site](/help/communities/site
 
 * In Schritt 3 unter der Registerkarte &quot; [ANALYTICS&quot;](/help/communities/sites-console.md#analytics):
    * Aktivieren Sie das Kontrollkästchen **Analytics** aktivieren.
-   * Wählen Sie das Framework aus der Dropdownliste.
+   * Wählen Sie das Framework aus dem Dropdown-Feld.
 
 * Optional können Sie zur Analytics-Framework-Konfiguration zurückkehren, um die Variablenzuordnungen anzupassen.
 
@@ -282,7 +325,7 @@ So fügen Sie beim [Erstellen einer neuen Community-Site](/help/communities/site
 
 Hinzufügen des Analytics-Cloud-Dienstes zu einer [bestehenden Community-Site](/help/communities/sites-console.md#modifying-site-properties):
 
-* Navigieren Sie zur **Communities, Sites** Console.
+* Navigieren Sie zur Konsole **Communities > Sites** .
 * Wählen Sie das Symbol &quot;Site bearbeiten&quot;der Community-Site aus.
 * Wählen Sie die EINSTELLUNGEN.
 * Im Abschnitt Analytics:
@@ -324,9 +367,9 @@ Für eine **generische AEM-Site** , die Communities-Komponenten enthält, aber n
 
 Analytics wird automatisch für mehrere Communities-Funktionen verwendet.
 
-Die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)der Autorenumgebung `AEM Communities Analytics Component Configuration`enthält eine Liste der Komponenten, die für Analytics instrumentiert wurden. Die automatische Zuordnung von Variablen wird von den aufgeführten Komponenten bestimmt.
+Die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)der Autorenkonfiguration `AEM Communities Analytics Component Configuration`enthält eine Auflistung der Komponenten, die für Analytics instrumentiert wurden. Die automatische Zuordnung von Variablen wird von den aufgeführten Komponenten bestimmt.
 
-Wenn neue benutzerdefinierte Komponenten erstellt werden, die für Analytics instrumentiert werden, sollten sie dieser Liste der konfigurierten Komponenten hinzugefügt werden.
+Wenn neue benutzerdefinierte Komponenten erstellt werden, die für Analytics instrumentiert werden, sollten sie dieser Liste konfigurierter Komponenten hinzugefügt werden.
 
 ### Komponentenkonfiguration {#component-configuration}
 
@@ -334,13 +377,13 @@ Wenn neue benutzerdefinierte Komponenten erstellt werden, die für Analytics ins
 
 >[!NOTE]
 >
->Die Journalkomponenten werden zur Implementierung der Blog-Funktion verwendet.
+>Die Protokoll-Komponenten werden zur Implementierung der Blog-Funktion verwendet.
 
 ### Analytics AEM-Variablen zugeordnet {#mapped-analytics-to-aem-variables}
 
-Sobald die Community-Site mit aktiviertem Analytics und aktiviertem Cloud-Konfigurationsframework gespeichert wurde, werden die AEM-Variablen automatisch den Analytics-eVars und -Ereignissen zugeordnet, die mit &quot;evar1&quot;bzw. &quot;event1&quot;beginnen und um 1 inkrementiert werden.
+Sobald die Community-Site mit aktiviertem Analytics und aktiviertem Cloud-Konfigurationsframework gespeichert wurde, werden die AEM-Variablen automatisch den Analytics-eVars und -Ereignissen zugeordnet, die mit &quot;evar1&quot;bzw. &quot;Ereignis1&quot;beginnen und um 1 erhöht werden.
 
-Wenn Sie eine vorhandene Report Suite verwenden, die eine der Variablen in evar1 bis evar11 und event1 bis event7 zugeordnet hat, müssen Sie die AEM-Variablen [neu zuordnen und die ursprüngliche Zuordnung wiederherstellen](#modifying-analytics-variable-mapping) .
+Wenn Sie eine vorhandene Report Suite verwenden, die eine der Variablen in evar1 bis evar11 und Ereignis1 bis Ereignis7 zugeordnet hat, müssen Sie die AEM-Variablen [neu zuordnen und die ursprüngliche Zuordnung wiederherstellen](#modifying-analytics-variable-mapping) .
 
 Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg](/help/communities/getting-started-enablement.md):
 
@@ -377,7 +420,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
    <td><strong>eVar10</strong></td>
   </tr>
   <tr>
-   <td><strong>event1<br /> -Ressourcenwiedergabe</strong></td>
+   <td><strong>Ereignis1<br /> -Ressourcenwiedergabe</strong></td>
    <td><em>(eine)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -390,7 +433,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
    <td><em>-</em></td>
   </tr>
   <tr>
-   <td><strong>event2<br /> SCFView</strong></td>
+   <td><strong>Ereignis2<br /> SCFView</strong></td>
    <td><em>(eine)</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
@@ -403,7 +446,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>event3<br /> SCFCreate (Post)</strong></td>
+   <td><strong>Ereignis3<br /> SCFCreate (Post)</strong></td>
    <td><em>-</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
@@ -416,7 +459,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>event4<br /> SCFFollow</strong></td>
+   <td><strong>Ereignis4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
@@ -429,7 +472,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>event5<br /> SCFVoteUp</strong></td>
+   <td><strong>Ereignis5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
@@ -442,7 +485,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>event6<br /> SCFVoteDown</strong></td>
+   <td><strong>Ereignis6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
@@ -455,7 +498,7 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
    <td><em>j)</em></td>
   </tr>
   <tr>
-   <td><strong>event7<br /> SCFRate</strong></td>
+   <td><strong>Ereignis7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
@@ -472,17 +515,17 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
 
 **Beispiele für eVar-Werte:**
 
-* *a)[MIME-Typ](https://www.iana.org/assignments/media-types)*:video/mp4
-* *b) Titel der[Gemeinschaftssite](/help/communities/sites-console.md#step13asitetemplate)*: Geometrixx Communities
-* *c)[Community-Funktionsname](/help/communities/functions.md)*: Forum
-* *d)[Gemeinschaftsgruppenname](/help/communities/creating-groups.md#creating-a-new-group)*: Wandern
-* *e) Pfad zu Community-Gruppeninhalten*: /content/sites/community/de/groups/wandern
-* *(f)[UGC component resourceType](/help/communities/essentials.md)*: social/forum/components/hbs/topic
-* *g) UGC-Komponententitel*: Wanderthemen
-* *(h) login (authorizedId)*: aaron.mcdonald@mailinator.com
-* *i) SRP-Pfad zu UGC*: /content/usergenerated/asi/.../forum/jmtz-topic3oder *der Pfad der zu folgenden* Komponente: /content/sites/groups/de/jcr:content/content/primary/forum
+* *[MIME-Typ](https://www.iana.org/assignments/media-types)*: video/mp4
+* *[Community-Site-Titel](/help/communities/sites-console.md#step13asitetemplate)*: Geometrixx Communities
+* *[Community-Funktionsname](/help/communities/functions.md)*: Forum
+* *[Community-Gruppenname](/help/communities/creating-groups.md#creating-a-new-group)*: Wandern
+* *Pfad zu Community-Gruppeninhalten*: `/content/sites/communities/en/groups/hiking`
+* *[UGC component resourceType](/help/communities/essentials.md)*:`social/forum/components/hbs/topic`
+* *UGC-Komponententitel*: Wanderthemen
+* *login (authorizedId)*: `aaron.mcdonald@mailinator.com`
+* *SRP-Pfad zu UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`oder *Pfad der Komponente, der folgen* soll: `/content/sites/communities/en/jcr:content/content/primary/forum`
 
-* *j) Pfad zum Inhalt* der Community-Site: /content/sites/community/de
+* *Pfad zum Inhalt* der Community-Site: `/content/sites/community/en`
 
 ### Ändern der Analytics-Variablenzuordnung {#modifying-analytics-variable-mapping}
 
@@ -490,9 +533,9 @@ Die Zuordnung von Analytics-eVars und -Ereignissen zu AEM-Variablen ist in der F
 
 Nachdem Analytics aktiviert wurde und bevor die Community-Site veröffentlicht wird, kann die Zuordnung im Framework geändert werden, indem die gewünschte Analytics-eVar oder das gewünschte Analytics-Ereignis aus der linken Leiste gezogen und in die entsprechende Zeile der Zuordnungstabelle eingefügt wird.
 
-Um doppelte Zuordnungen zu vermeiden, müssen Sie die ersetzte Analytics-eVar oder das ersetzte Analytics-Ereignis aus der Zeile entfernen, indem Sie den Mauszeiger darüber halten und das X auswählen, das rechts neben dem Analytics-Variablenelement angezeigt wird.
+Um Duplikat-Zuordnungen zu vermeiden, müssen Sie die ersetzte Analytics-eVar oder das ersetzte Analytics-Ereignis aus der Zeile entfernen, indem Sie den Mauszeiger darüber halten und das X auswählen, das rechts neben dem Analytics-Variablenelement angezeigt wird.
 
-Wenn Communities-eVars und -Ereignisse Zuordnungen überschreiben, die bereits in der Report Suite vorhanden waren, weisen Sie zur Vermeidung von Datenverlusten die AEM-Variablen für Communities-Funktionen anderen Analytics-eVars oder -Ereignissen zu und stellen Sie die ursprünglichen Zuordnungen wieder her.
+Wenn Communities-eVars und -Ereignis Zuordnungen überschreiben, die bereits in der Report Suite vorhanden waren, weisen Sie zur Vermeidung von Datenverlusten die AEM-Variablen für Communities-Funktionen anderen Analytics-eVars oder -Ereignissen zu und stellen Sie die ursprünglichen Zuordnungen wieder her.
 
 >[!CAUTION]
 >
@@ -523,7 +566,7 @@ Siehe Abschnitte:
 
 >[!CAUTION]
 >
->**Bei Verwendung einer vorhandenen Report Suite, die bereits Variablen in**
+>**Wenn Sie eine vorhandene Report Suite verwenden, die bereits Variablen in**
 >
 >* **`evar1`** through **`evar11`**
    >
@@ -557,7 +600,7 @@ Befolgen Sie dazu die Anweisungen unter Crypto-Schlüssel [replizieren](/help/co
 
 ### Community-Site und Analytics-Cloud-Dienst veröffentlichen {#publish-community-site-and-analytics-cloud-service}
 
-Nachdem der Analytics-Cloud-Dienst für eine Community-Site aktiviert wurde und die [Zuordnung von Analytics zu AEM-Variablen erforderlichenfalls angepasst](#mapped-analytics-to-aem-variables)wurde, muss die Konfiguration in der Veröffentlichungsumgebung repliziert werden, indem die Community-Site[veröffentlicht ](/help/communities/sites-console.md#publishing-the-site)(erneut)veröffentlicht wird.
+Nachdem der Analytics-Cloud-Dienst für eine Community-Site aktiviert wurde und die [Zuordnung von Analytics zu AEM-Variablen erforderlichenfalls angepasst](#mapped-analytics-to-aem-variables)wurde, muss die Konfiguration der Veröffentlichungskonfiguration repliziert werden, indem die Community-Site [veröffentlicht](/help/communities/sites-console.md#publishing-the-site)(erneut)veröffentlicht wird.
 
 ## Abrufen von Berichten aus Analytics {#obtaining-reports-from-analytics}
 
@@ -565,11 +608,11 @@ Nachdem der Analytics-Cloud-Dienst für eine Community-Site aktiviert wurde und 
 
 Die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)des Autors und des primären Herausgebers `AEM Communities Analytics Report Management`wird zur Abfrage von Analytics verwendet.
 
-Beim Autor werden die Abfragen für Echtzeitberichte erstellt.
+Beim Autor werden die Abfragen für Echtzeitberichte verwendet.
 
 Beim primären Herausgeber werden die Abfragen verwendet, um Informationen zur Vorbereitung des Analytics-Datenimports des Berichts bereitzustellen.
 
-Das Abfrageintervall beträgt standardmäßig 10 Sekunden.
+Das Zeitintervall der Abfrage ist standardmäßig auf 10 Sekunden eingestellt.
 
 ### Report Importer {#report-importer}
 
@@ -592,7 +635,7 @@ Das Forumthema ist derzeit das einzige Beispiel für diese Anpassung:
 * Melden Sie sich beim primären Herausgeber mit Administratorrechten an.
 * Navigate to [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). For example, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
-* Navigieren Sie unter dem Knoten jcr:content im Sprachstamm (z. B. `/content/sites/engage/en/jcr:content),`zu der für die Analytics-Berichterstellung konfigurierten Komponente).
+* Navigieren Sie unter dem Knoten jcr:content im Sprachstamm (z. B. `/content/sites/engage/en/jcr:content),`zu der für Analytics Berichte konfigurierten Komponente).
 Beispiel: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Beachten Sie die erstellten Zeiträume:
@@ -603,7 +646,7 @@ Beispiel: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Beachten Sie die `total`Node.
 
-   * Durch das Ändern der **`interval`**Eigenschaft wird das Report Importer-Intervall außer Kraft gesetzt.
+   * Das Ändern der **`interval`** Eigenschaft setzt das Report Importer-Intervall außer Kraft.
    * Der Wert wird in Sekunden und auf 4 Stunden (14400 Sekunden) festgelegt.
 
 ![chlimage_1-192](assets/chlimage_1-192.png)
