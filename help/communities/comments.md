@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Verwenden von Kommentaren{#using-comments}
+# Verwenden von Kommentaren {#using-comments}
 
 ## Einführung {#introduction}
 
@@ -24,8 +24,8 @@ Die Kommentarfunktion ermöglicht es angemeldeten Site-Besuchern (Mitgliedern), 
 
 Das Dokument beschreibt:
 
-* adding `Comments`to a page.
-* configuration settings for the `Comments`component.
+* Adding `Comments`to a page.
+* Configuration settings for the `Comments`component.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Legen Sie auf der Registerkarte **Kommentare** fest, wie Benutzer Kommentare ein
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, wird das Textfeld zum Hochladen einer Datei angezeigt. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, wird die Option zum Hochladen einer Datei mit dem Texteingabefeld angezeigt. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Max. Dateigröße**
 
@@ -81,7 +81,7 @@ Legen Sie auf der Registerkarte **Kommentare** fest, wie Benutzer Kommentare ein
 
 * **Zulässige Dateitypen**
 
-   Relevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Eine kommagetrennte Liste mit Dateinamenerweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind nicht angegebene Dateitypen nicht zulässig. Der Standardwert ist nicht angegeben, sodass** **alle Dateitypen zulässig sind.
+   Relevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Eine kommagetrennte Liste von Dateinamenerweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind nicht angegebene Dateitypen nicht zulässig. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **Rich-Text-Editor**
 
@@ -89,7 +89,7 @@ Legen Sie auf der Registerkarte **Kommentare** fest, wie Benutzer Kommentare ein
 
 * **Abstimmung zulassen**
 
-   Wenn diese Option aktiviert ist, wird das Textfeld angezeigt, in dem die Option für die Abstimmung aktiviert oder deaktiviert ist. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, wird das Textfeld angezeigt, in dem die Option für die Abstimmung aktiviert bzw. deaktiviert ist. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Folgende zulassen**
 
@@ -99,11 +99,13 @@ Legen Sie auf der Registerkarte **Kommentare** fest, wie Benutzer Kommentare ein
 
    Wenn diese Option aktiviert ist, lassen Sie die Anzeige von verdienten und zuerkannten Abzeichen zu. Die Option &quot;Standard&quot;ist deaktiviert.
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Geben Sie auf der Registerkarte **Benutzermoderation **an, wie die veröffentlichten Kommentare verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Under the **User Moderation** tab, specify how the posted comments are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-* **Vor der Moderation** Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungssite angezeigt werden. Die Option &quot;Standard&quot;ist deaktiviert.
+* **Vor der Moderation**
+
+   Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungssite angezeigt werden. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Kommentare löschen**
 
@@ -123,7 +125,7 @@ Geben Sie auf der Registerkarte **Benutzermoderation **an, wie die veröffentlic
 
 * **Liste mit Kenn-zeichnungsgründen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie einen Kommentar als unangemessen kennzeichnen. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, können die Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie einen Kommentar als unangemessen kennzeichnen. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Grund für benutzerdefinierte Kennzeichnung**
 
@@ -139,7 +141,7 @@ Geben Sie auf der Registerkarte **Benutzermoderation **an, wie die veröffentlic
 
 #### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
-Geben Sie unter der Registerkarte **Sortiereinstellungen **an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie auf der Registerkarte &quot; **Sortiereinstellungen** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortierfeld**
 
@@ -155,7 +157,7 @@ Durch Änderung des Kommentarressource-Typs generiert das Kommentarsystem nicht 
 
 Once the custom resource types are known, enter [Design Mode](/help/sites-authoring/default-components-designmode.md) and double click the placed `Comments` component to open a dialog with an extra tab.
 
-Under the **Resource Types **tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -185,10 +187,10 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 Abhängig von der Konfiguration können angemeldete Besucher Folgendes tun:
 
-* Veröffentlichen neuer Kommentare
-* Bearbeiten eigener Kommentare
-* Löschen eigener Kommentare
-* Kennzeichnen von Kommentaren anderer Mitglieder
+* Posten eines neuen Kommentars
+* Eigene Kommentare bearbeiten
+* eigenen Kommentar löschen
+* Kommentare anderer markieren
 
 #### Anonym {#anonymous}
 
