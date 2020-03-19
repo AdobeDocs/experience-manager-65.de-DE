@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
+source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
 
 ---
 
@@ -23,7 +23,7 @@ Sie führen das VLT-Tool von der Befehlszeile aus. In diesem Dokument wird besch
 
 ## Konzepte und Architektur {#concepts-and-architecture}
 
-Eine ausführliche Übersicht über die Konzepte und die Struktur des Filevault-Werkzeugs finden Sie auf der Seite [Filevault-Übersicht](https://jackrabbit.apache.org/filevault/overview.html) und [Vault-FS](https://jackrabbit.apache.org/filevault/vaultfs.html) in der offiziellen Dokumentation[ zu ](https://jackrabbit.apache.org/filevault/index.html)Apache Jackrabbit Filevault.
+Eine ausführliche Übersicht über die Konzepte und die Struktur des Filevault-Werkzeugs finden Sie auf der Seite [Filevault-Übersicht](https://jackrabbit.apache.org/filevault/overview.html) und [Vault-FS](https://jackrabbit.apache.org/filevault/vaultfs.html) in der offiziellen Dokumentation [zu](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault.
 
 ## Erste Schritte mit VLT {#getting-started-with-vlt}
 
@@ -39,12 +39,12 @@ Um VLT verwenden zu können, müssen Sie folgende Schritte ausführen:
 
 Um das VLT-Tool zu verwenden, müssen Sie zunächst das Programm installieren. Es wird nicht standardmäßig installiert, da es sich um ein zusätzliches Tool handelt. Außerdem müssen Sie die Umgebungsvariable Ihres Systems festlegen.
 
-1. Laden Sie die FileVault-Archivdatei von der [Apache Jackrabbit-Website herunter.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Laden Sie die Archivdatei FileVault aus dem [Maven Artefakt-Repository herunter.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >Die Quelle des VLT-Tools ist auf GitHub [verfügbar.](https://github.com/apache/jackrabbit-filevault)
 1. Entpacken Sie das Archiv.
-1. Fügen Sie Ihrer Umgebung `<archive-dir>/vault-cli-<version>/bin` hinzu, `PATH` damit auf die Befehlsdateien zugegriffen werden kann `vlt` oder `vlt.bat` . Beispiel:
+1. Hinzufügen Sie `<archive-dir>/vault-cli-<version>/bin` die Umgebung an, `PATH` damit auf die Befehlsdateien zugegriffen werden kann `vlt` oder `vlt.bat` . Beispiel:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -301,8 +301,8 @@ Im Folgenden finden Sie eine Liste mit VLT-Optionen, die für alle Befehle verf�
 | `--credentials <arg>` | Die zu verwendenden Standardberechtigungen |
 | `--config <arg>` | Die zu verwendende JcrFs-Konfiguration |
 | `-v (--verbose)` | verbose Ausgabe |
-| `-q (--quiet)` | möglichst wenig drucken |
-| `--version` | Druckt die Versionsinformationen und beendet VLT |
+| `-q (--quiet)` | so wenig wie möglich drucken |
+| `--version` | Druckt die Versionsinformationen und verlässt VLT |
 | `--log-level <level>` | Gibt die Protokollebene an, z. B. die Protokollebene log4j. |
 | `-h (--help) <command>` | Druckt Hilfe für diesen Befehl |
 
@@ -350,7 +350,7 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 | `-v (--verbose)` | verbose Ausgabe |
 | `-t (--type) <arg>` | gibt den Exporttyp entweder Plattform oder JAR an. |
 | `-p (--prune-missing)` | gibt an, ob fehlende lokale Dateien gelöscht werden sollen |
-| `<uri>` | Bergpunkturi |
+| `<uri>` | Mountpoint uri |
 | `<jcrPath>` | JCR-Pfad |
 | `<localPath>` | lokaler Pfad |
 
@@ -376,7 +376,7 @@ import -v|-s <uri> <local-path> <jcr-path>
 |--- |--- |
 | `-v (--verbose)` | verbose Ausgabe |
 | `-s (-- sync)` | legt die lokalen Dateien unter die Standardkontrolle |
-| `<uri>` | Bergpunkturi |
+| `<uri>` | Mountpoint uri |
 | `<jcrPath>` | JCR-Pfad |
 | `<localPath>` | lokaler Pfad |
 
@@ -404,7 +404,7 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 | `-v (--verbose)` | verbose Ausgabe |
 | `-q (--quiet)` | druckt so wenig wie möglich |
 | `-f (--filter) <file>` | gibt automatische Filter an, wenn keine definiert ist |
-| `<uri>` | Bergpunkturi |
+| `<uri>` | Mountpoint uri |
 | `<jcrPath>` | (optional) Remote-Pfad |
 | `<localPath>` | (optional) lokaler Pfad |
 
@@ -604,7 +604,7 @@ proplist -q|-R <file1> [<file2> ...]
 |--- |--- |
 | `-q (--quiet)` | druckt so wenig wie möglich |
 | `-R (--recursive)` | absteigend rekursiv |
-| `<file> [<file> ...]` | Datei oder Verzeichnis, in der die Eigenschaften aufgeführt werden sollen |
+| `<file> [<file> ...]` | Datei oder Verzeichnis zur Liste der Eigenschaften |
 
 ### Propset {#propset}
 
