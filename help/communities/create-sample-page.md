@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
@@ -27,7 +27,7 @@ Eine weitere Möglichkeit zur Untersuchung von Beispielkomponenten ist die Verwe
 
 Dies ist der Erstellung einer neuen Site sehr ähnlich, die unter [Erste Schritte mit AEM Communities](getting-started.md)beschrieben wird.
 
-Der Hauptunterschied ist, dass dieses Tutorial eine neue Community-Site-Vorlage erstellen wird, die nur die Funktion[ ](functions.md#page-function)Seite enthält, um eine einfache Community-Site zu erstellen, die frei von anderen Funktionen ist (außer den vorab verkabelten Funktionen, die für alle Community-Sites grundlegend sind).
+Der Hauptunterschied ist, dass dieses Tutorial eine neue Community-Site-Vorlage erstellen wird, die nur die Funktion [](functions.md#page-function) Seite enthält, um eine einfache Community-Site zu erstellen, die frei von anderen Funktionen ist (außer den vorab verkabelten Funktionen, die für alle Community-Sites grundlegend sind).
 
 ### Neue Site-Vorlage erstellen {#create-new-site-template}
 
@@ -42,7 +42,7 @@ Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Ext
 
    * `Name`: Einzelseitenvorlage
    * `Description`: Eine Vorlage, die aus einer einzelnen Seitenfunktion besteht.
-   * auswählen `Enabled`
+   * Wählen Sie nun eine der folgenden Optionen aus `Enabled`
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
@@ -107,14 +107,14 @@ Wählen Sie in der [Community-Sites-Konsole](sites-console.md)das Veröffentlich
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
-Wählen Sie das Symbol zum Öffnen der Site, um die Site im Bearbeitungsmodus anzuzeigen.
+Wählen Sie das Symbol zum Öffnen der Site aus, um die Site im Bearbeitungsmodus Ansicht.
 
 Die URL lautet [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
-Auf der einfachen Homepage können Sie sehen, was durch die Community-Funktionen und -Vorlagen vorverdrahtet wird, und mit dem Hinzufügen und Konfigurieren von Community-Komponenten spielen.
+Auf der einfachen Startseite ist es möglich, zu sehen, was durch die Community-Funktionen und -Vorlagen vorverkabelt ist, und mit dem Hinzufügen und Konfigurieren von Community-Komponenten zu spielen.
 
-## Site bei Veröffentlichung anzeigen {#view-site-on-publish}
+## Ansicht-Site bei Veröffentlichung {#view-site-on-publish}
 
-Nach dem Veröffentlichen der Seite öffnen Sie die Seite in der [Veröffentlichungsinstanz](http://localhost:4503/content/sites/sample/en.html) , um mit den Funktionen als anonymer Site-Besucher, angemeldeter Mitglied oder Administrator zu experimentieren. Der in der Autorenumgebung angezeigte Link &quot;Administration&quot;wird in der Veröffentlichungsumgebung nur angezeigt, wenn sich ein Administrator anmeldet.
+Nach dem Veröffentlichen der Seite öffnen Sie die Seite in der [Veröffentlichungsinstanz](http://localhost:4503/content/sites/sample/en.html) , um mit den Funktionen als anonymer Site-Besucher, angemeldeter Benutzer oder Administrator zu experimentieren. Der in der Autorenumgebung angezeigte Link &quot;Administration&quot;wird in der Umgebung &quot;Veröffentlichen&quot;nur angezeigt, wenn sich ein Administrator anmeldet.
