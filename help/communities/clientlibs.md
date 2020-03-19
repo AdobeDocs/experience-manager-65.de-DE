@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Clientlibs für Communities-Komponenten{#clientlibs-for-communities-components}
+# Clientlibs für Communities-Komponenten {#clientlibs-for-communities-components}
 
 ## Einführung {#introduction}
 
@@ -48,7 +48,7 @@ Wenn die erforderlichen clientlibs fehlen, kann das [Hinzufügen einer Communiti
 
 Die wesentlichen Funktionsinformationen für Entwickler identifizieren die erforderlichen clientlibs.
 
-Darüber hinaus bietet das Durchsuchen des [Community-Komponentenhandbuchs](/help/communities/components-guide.md) von einer AEM-Instanz aus Zugriff auf eine Auflistung der für eine Komponente erforderlichen clientlib-Kategorien.
+Darüber hinaus können Sie von einer AEM-Instanz aus im [Community-Komponentenleitfaden](/help/communities/components-guide.md) eine Auflistung der für eine Komponente erforderlichen clientlib-Kategorien aufrufen.
 
 Die erforderlichen clientlibs sind beispielsweise ganz oben auf der Seite [Reviews aufgeführt](https://localhost:4502/content/community-components/en/reviews.html) .
 
@@ -66,21 +66,21 @@ Verwenden Sie [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene clientlibslis
 So fügen Sie eine clientlib für eine Community-Site mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) hinzu:
 
 * Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Suchen Sie die `clientlibslist` Node der Seite, auf der Sie die Komponente hinzufügen möchten.
+* Suchen Sie die `clientlibslist` Node der Seite, auf der Sie die Komponente hinzufügen möchten
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* mit ausgewählter `clientlibslist` Node
+* Mit `clientlibslist` ausgewählter Node
 
-   * Suchen der String[] -Eigenschaft `scg:requiredClientLibs`
-   * Wählen Sie das Element `Value` , um auf das Dialogfeld &quot;String-Array&quot;zuzugreifen
+   * Suchen Sie die String[] -Eigenschaft `scg:requiredClientLibs`
+   * Wählen Sie `Value` die Option zum Zugriff auf das Dialogfeld &quot;String-Array&quot;
 
-      * gegebenenfalls nach unten
+      * Bei Bedarf scrollen
       * Wählen Sie +, um eine neue Client-Bibliothek einzugeben
 
-         * wiederholen, um weitere Client-Bibliotheken hinzuzufügen
-      * select** OK**
-   * Wählen Sie **Alle speichern** aus.
+         * Wiederholen, um weitere Client-Bibliotheken hinzuzufügen
+      * Wählen Sie **OK** aus
+   * Select **Save All**
 
 
 
