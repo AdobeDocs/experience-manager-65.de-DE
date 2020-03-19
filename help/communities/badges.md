@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Badges-Konsole{#badges-console}
+# Badges-Konsole {#badges-console}
 
 ## Info zu Abzeichen {#about-badges}
 
@@ -26,15 +26,15 @@ Die Communities Badges-Konsole bietet die Möglichkeit, benutzerdefinierte Abzei
 
 Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen wird, zusammen mit ihrem Namen und Avatar an den folgenden Orten angezeigt:
 
-*  Profile
-* [foren](/help/communities/forum.md)
+* Profile
+* [Foren](/help/communities/forum.md)
 * [Frage und Antwort](/help/communities/working-with-qna.md)
-* [Lederboards](/help/communities/enabling-leaderboard.md)
-* [Idee](/help/communities/ideation-feature.md)
+* [Leadership-Pinnwände](/help/communities/enabling-leaderboard.md)
+* [Ideen](/help/communities/ideation-feature.md)
 
-In der Autorenumgebung, um die Badges-Konsole zu erreichen
+In der Umgebung &quot;Autor&quot;zur Konsole &quot;Badges&quot;
 
-* aus der globalen Navigation: **Werkzeuge, Communities, Abzeichen**
+* Navigieren Sie von der globalen Navigation zu **[UIControl Tools > Communities > Badges]**
 
 Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeichen hinzugefügt werden können.
 
@@ -42,19 +42,27 @@ Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeic
 
 ## Abzeichen erstellen {#create-badge}
 
-Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/etc/community/badging/images` und automatisch in die Veröffentlichungsumgebung repliziert.
+Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/etc/community/badging/images` und automatisch in die Umgebung &quot;Veröffentlichen&quot;repliziert.
 
-Wenn die Veröffentlichungsumgebung eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](/help/communities/sync.md)konfigurieren.
+Wenn die Umgebung zum Veröffentlichen eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](/help/communities/sync.md)konfigurieren.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-* **Bild** hochladen (*erforderlich*) Ein Badge-Bild mit einer empfohlenen Größe von 32 x 32 Pixel bei 72 dpi im JPEG- oder PNG-Format.
+* **Bild hochladen**
 
-* **Name**(*erforderlich*) Der Kennzeichenname. Dies ist der Standardname `Display Name` sowie der Repository-Knotenname. Wenn der Knoten kein gültiger Repository-Knotenname `Name` ist, wird er geändert.
+   (*Erforderlich*) Ein Badge-Bild mit einer empfohlenen Größe von 32 x 32 Pixel bei 72 dpi im JPEG- oder PNG-Format.
 
-* **Anzeigename**(*optional*) Der Name, der für das Zeichen in der Benutzeroberfläche angezeigt wird. &quot;Standard&quot;ist der unveränderte Text, der für die `Name`Variable eingegeben wurde.
+* **Name**
 
-* **Beschreibung**(*optional*) Eine Beschreibung für das Zeichen.
+   (*Erforderlich*) Der Markenname. Dies ist der Standardname `Display Name` sowie der Repository-Knotenname. Wenn der Knoten kein gültiger Repository-Knotenname `Name` ist, wird er geändert.
+
+* **Anzeigename**
+
+   (*Optional*) Der Name, der für das Zeichen in der Benutzeroberfläche angezeigt wird. &quot;Standard&quot;ist der unveränderte Text, der für die `Name`Variable eingegeben wurde.
+
+* **Beschreibung**
+
+   (*Optional*) Eine Beschreibung des Kennzeichens.
 
 ## Zusätzliche Informationen {#additional-information}
 
