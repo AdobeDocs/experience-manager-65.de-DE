@@ -3,7 +3,7 @@ title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
 description: Erfahren Sie mehr über Asset-Metadaten in AEM Assets und lernen Sie die verschiedenen Bearbeitungsmöglichkeiten kennen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 Metadaten sind zusätzliche Informationen zum Element, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder neue Metadateneigenschaften vorhandenen Feldern hinzufügen (etwa wenn ein Metadatenfeld leer ist).
 
-Da Unternehmen kontrollierte und zuverlässige Metadaten-Vokabeln benötigen, ist es in AEM Assets nicht möglich, neue Metadateneigenschaften ad hoc hinzuzufügen. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. See [Create new metadata property for assets](meta-edit.md#editing-metadata-schema).
+Da Firmen gesteuerte und zuverlässige Metadaten-Vokabeln benötigen, ist das AEM Assets-Hinzufügen neuer Metadateneigenschaften nicht möglich. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. See [Create new metadata property for assets](meta-edit.md#editing-metadata-schema).
 
 ## Edit metadata for an asset {#editing-metadata-for-an-asset}
 
@@ -24,11 +24,15 @@ So bearbeiten Sie Metadaten:
    * From the asset thumbnail, select the **[!UICONTROL View Properties]** quick action.
    * From the asset page, click/tap the **[!UICONTROL View Properties]** icon from the toolbar.
       ![chlimage_1-168](assets/chlimage_1-168.png)
+      *Abbildung: Eigenschaftensymbol*
    Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Diese Metadaten wurden beim Hochladen (Erfassen) in AEM Assets automatisch extrahiert.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![Asset-Eigenschaften für Ansicht-Metadaten auswählen](assets/asset-metadata.png)
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click/tap **[!UICONTROL Save]** from the toolbar to save your changes. Click/tap **[!UICONTROL Close]** to return to the Assets web interface.
+
+   *Abbildung: Bearbeiten oder Hinzufügen von Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;*
+
+1. Nehmen Sie die gewünschten Änderungen an den Metadaten unter den verschiedenen Registerkarten vor und tippen/klicken Sie nach Abschluss der Bearbeitung in der Symbolleiste auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern. Tippen/Klicken Sie auf **[!UICONTROL Schließen]**, um zur Assets-Weboberfläche zurückzukehren.
 
    >[!NOTE]
    >
