@@ -1,10 +1,10 @@
 ---
 title: Digitale Assets mit AEM Assets verwalten
-description: Erfahren Sie mehr über die Asset-Verwaltungsaufgaben wie Hochladen, Herunterladen, Bearbeiten, Suchen, Löschen, Anmerkungen und Version Ihrer digitalen Assets.
+description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen, Herunterladen, Bearbeiten, Suchen, Löschen, Anmerkungen und Version Ihrer digitalen Assets.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -102,7 +102,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![chlimage_1-214](assets/chlimage_1-8.png)
 
-   Um das Duplikat des Assets in AEM Assets beizubehalten, tippen/klicken Sie auf &quot; **[!UICONTROL Behalten]**&quot;. Um das hochgeladene Duplikat zu löschen, tippen/klicken Sie auf **[!UICONTROL Löschen]**.
+   Um das Duplikat-Asset in AEM Assets beizubehalten, tippen/klicken Sie auf &quot; **[!UICONTROL Behalten]**&quot;. Um das hochgeladene Duplikat-Asset zu löschen, tippen/klicken Sie auf **[!UICONTROL Löschen]**.
 
    AEM Assets verhindert, dass Sie Assets mit den verbotenen Zeichen in ihren Dateinamen hochladen. Wenn Sie versuchen, ein Asset mit einem Dateinamen mit einem nicht zulässigen Zeichen oder mehr hochzuladen, zeigt AEM Assets eine Warnmeldung an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
@@ -218,7 +218,7 @@ Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können 
 |---|---|---|
 | Verarbeitung |  | Wählen Sie **[!UICONTROL Rastern]**, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | Transparenten Hintergrund in gerendertem Bild beibehalten |  | Zur Beibehaltung der Hintergrundtransparenz der Datei. |
-| Auflösung |  | Zur Einstellung der Auflösung. Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
+| Lösung |  | Zur Einstellung der Auflösung. Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
 | Farbraum |  | Klicken Sie auf das Menü „Farbraum“ und wählen Sie unter den folgenden Farbraumoptionen: |
 |  | Automatisch erkennen | Der Farbraum der Datei wird beibehalten. |
 |  | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
@@ -227,7 +227,7 @@ Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können 
 
 #### Festlegen von Upload-Optionen für Fotoshop {#setting-photoshop-upload-options}
 
-Fotoshop-Dokumentdateien (PSD-Dateien) werden meist zum Erstellen von Bildvorlagen verwendet. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
+Fotoshop Dokument-(PSD-)Dateien werden meist zum Erstellen von Bildvorlagen verwendet. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
 
 Dynamic Media erstellt mehrere Bilder aus einer PSD-Datei mit Ebenen, wenn Sie die Datei zum Erstellen einer Vorlage verwenden. Für jede Ebene wird ein Bild erstellt.
 
@@ -265,7 +265,7 @@ Wählen Sie unter folgenden Optionen:
 | Extrahieren | Suchbegriffe | Zum Extrahieren von Wörtern aus der PDF-Datei, damit die Datei in einem E-Katalog-Viewer mit einem Schlüsselwort durchsucht werden kann. |
 |  | Links | Zum Extrahieren von Links aus den PDF-Dateien und zum Konvertieren der PDF-Dateien in Imagemaps, die in einem E-Katalog-Viewer verwendet werden. |
 | E-Katalog aus mehrseitiger PDF automatisch erstellen |  | Zum automatischen Erstellen eines E-Katalogs aus der PDF-Datei. Der E-Katalog wird nach der von Ihnen hochgeladenen PDF-Datei benannt. (Diese Option ist nur dann verfügbar, wenn Sie die PDF-Datei beim Hochladen rastern.) |
-| Auflösung |  | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Standard: 150. |
+| Lösung |  | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Standard: 150. |
 | Farbraum |  | Wählen Sie das Farbraummenü und einen Farbraum für die PDF-Datei aus. Die meisten PDF-Dateien enthalten sowohl RGB- als auch CMYK-Farbbilder. Der RGB-Farbraum eignet sich besonders gut, um Dateien online anzuzeigen. |
 |  | Automatisch erkennen | Der Farbraum der PDF-Datei wird beibehalten. |
 |  | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
@@ -278,11 +278,11 @@ So transkodieren Sie eine Videodatei, indem Sie aus einer Vielzahl von Video-Vor
 
 | Wahl | Unteroption | Beschreibung |
 |---|---|---|
-| Adaptives Video |  | Eine einzelne Kodierungsvorgabe, die mit jedem Seitenverhältnis verwendet werden kann, um Videos zur Wiedergabe auf Mobilgeräten, Tablets und Desktops zu erstellen. Hochgeladene Quellvideos, die mit dieser Vorgabe kodiert wurden, weisen eine feste Höhe auf. Die Breite wird jedoch automatisch skaliert, um das Seitenverhältnis des Videos beizubehalten. <br>Die beste Vorgehensweise ist die Verwendung der adaptiven Videokodierung. |
+| Adaptives Video |  | Eine einzelne Kodierungsvorgabe, die mit jedem Seitenverhältnis verwendet werden kann, um Videos für Versand zu Mobilgeräten, Tablets und Desktops zu erstellen. Hochgeladene Quellvideos, die mit dieser Vorgabe kodiert wurden, weisen eine feste Höhe auf. Die Breite wird jedoch automatisch skaliert, um das Seitenverhältnis des Videos beizubehalten. <br>Die beste Vorgehensweise ist die Verwendung der adaptiven Videokodierung. |
 | Einzelne Kodierungsvorgaben | Kodierungsvorgaben sortieren | Wählen Sie &quot;Name&quot;oder &quot;Größe&quot;, um die unter &quot;Desktop&quot;, &quot;Mobil&quot;und &quot;Tablet&quot;aufgelisteten Kodierungsvorgaben nach Name oder Auflösung zu sortieren. |
-|  | Desktop | Erstellen Sie eine MP4-Datei zur Bereitstellung eines Streaming- oder progressiven Videoerlebnisses auf Desktop-Computern.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Zieldatenrate aus. |
-|  | Mobilgerät | Erstellen Sie eine MP4-Datei zur Bereitstellung auf iPhone- oder Android-Mobilgeräten.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Zieldatenrate aus. |
-|  | Tablet | Erstellen Sie eine MP4-Datei zur Wiedergabe auf iPad- oder Android-Tablet-Geräten.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Zieldatenrate aus. |
+|  | Desktop | Erstellen Sie eine MP4-Datei zur Bereitstellung eines Streaming- oder progressiven Videoerlebnisses auf Desktop-Computern.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Datenrate für die Zielgruppe aus. |
+|  | Mobilgerät | Erstellen Sie eine MP4-Datei für den Versand auf iPhone- oder Android-Mobilgeräten.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Zielgruppe für die Datenrate aus. |
+|  | Tablet | Erstellen Sie eine MP4-Datei für den Versand auf iPad- oder Android-Tablet-Geräten.Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösung und Datenrate für die Zielgruppe aus. |
 
 #### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
@@ -292,7 +292,7 @@ Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Ko
 
 ### Gestreamte Uploads {#streamed-uploads}
 
-Wenn Sie viele Assets in AEM hochladen, erhöhen sich die E/A-Anforderungen an den Server drastisch, was die Upload-Effizienz verringert und sogar dazu führen kann, dass einige Upload-Aufgaben zeitaufwendig ausfallen. AEM Assets unterstützt gestreamte Uploads von Assets. Durch Streaming-Uploads wird der I/O-Speicher des Datenträgers während des Upload-Vorgangs reduziert, da der Speicher des Assets in einem temporären Ordner auf dem Server vermieden wird, bevor er in das Repository kopiert wird. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit für das Hochladen von Assets und die Möglichkeit von Zeitüberschreitungen verringert. Das gestreamte Hochladen ist in AEM Assets standardmäßig aktiviert.
+Wenn Sie viele Assets in AEM hochladen, erhöhen sich die E/A-Serveranforderungen drastisch, was die Upload-Effizienz verringert und sogar dazu führen kann, dass einige Aufgaben beim Hochladen zeitlimit überschreiten. AEM Assets unterstützt gestreamte Uploads von Assets. Durch Streaming-Uploads wird der I/O-Speicher während des Upload-Vorgangs reduziert, da die Datenspeicherung von Assets in einem temporären Serverordner vermieden wird, bevor sie in das Repository kopiert werden. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit für das Hochladen von Assets und die Möglichkeit von Zeitüberschreitungen verringert. Das gestreamte Hochladen ist in AEM Assets standardmäßig aktiviert.
 
 >[!NOTE]
 >
@@ -306,7 +306,7 @@ Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv ext
 
 Nach Abschluss des Extrahierungsvorgangs erhalten Sie von AEM eine Benachrichtigung im Benachrichtigungsbereich. Während AEM das ZIP-Archiv extrahiert, können Sie ohne Unterbrechung des Extrahierungsvorgangs zu Ihrer Arbeit zurückkehren.
 
-![Meldung der ZIP-Extraktion](assets/Zip-extraction-notification.png)
+![Meldung der Postleitzahl-Extraktion](assets/Zip-extraction-notification.png)
 
 Die Funktion hat einige Einschränkungen:
 
@@ -315,11 +315,11 @@ Die Funktion hat einige Einschränkungen:
 * Sie können nicht gleichzeitig zwei ZIP-Dateien auswählen und extrahieren. Sie können jeweils nur ein ZIP-Archiv extrahieren.
 * Wenn beim Hochladen eines ZIP-Archivs im Dialogfeld „Hochladen“ ein „500 Server Error“ angezeigt wird, versuchen Sie es nach der Installation des neuesten Service Packs erneut.
 
-## Anzeigen einer Asset-Vorschau {#previewing-assets}
+## Vorschauen {#previewing-assets}
 
-Gehen Sie wie folgt vor, um eine Vorschau eines Assets anzuzeigen.
+Gehen Sie wie folgt vor, um ein Asset Vorschau.
 
-1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;zum Speicherort des Assets, dessen Vorschau Sie anzeigen möchten.
+1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;zum Speicherort des Assets, das Sie Vorschau haben möchten.
 1. Tippen Sie auf das gewünschte Asset, um es zu öffnen.
 
 1. Im Vorschaumodus ist eine Zoom-Funktion für [unterstützte Bildtypen](/help/assets/assets-formats.md#supported-raster-image-formats) verfügbar (mit interaktiver Bearbeitung).
@@ -332,15 +332,14 @@ Gehen Sie wie folgt vor, um eine Vorschau eines Assets anzuzeigen.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
 
-**Anzeigen einer Asset-Vorschau nur mit Tastaturbefehlen**
+**Vorschau von Assets nur mit Tastatur**
 
-Gehen Sie wie folgt vor, um eine Vorschau eines Assets über die Tastatur anzuzeigen:
+Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
-1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;mithilfe der Pfeiltasten zum Speicherort des Assets, das Sie in der Vorschau anzeigen möchten, `Tab` und wählen Sie den Speicherort aus.
+1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;mit den Pfeiltasten zum gewünschten Asset `Tab` .
 
-1. Öffnen Sie das gewünschte Asset.
+1. Drücken Sie die `Enter` Taste, um das gewünschte Asset zu öffnen. Sie können Assets im Vorschau-Modus heranzoomen.
 
-   In the preview mode, zoom and reset options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
 1. So vergrößern Sie das Asset:
    1. Verwenden Sie die `Tab` Taste, um den Fokus auf das Einzoomen-Symbol zu verschieben.
    1. Verwenden Sie die `Enter` Taste, um das Bild zu vergrößern.
@@ -368,11 +367,15 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. Um ein bestimmtes Datum/eine bestimmte Uhrzeit für die Aktivierung des Assets zu planen, verwenden Sie die Datumsauswahl neben dem Feld **[!UICONTROL Zeit]**.
 
-   ![chlimage_1-217](assets/chlimage_1-12.png)
+   ![Datums- oder Tastaturkürzel im Feld &quot;Zeit&quot;verwenden, um Datum und Uhrzeit für die Asset-Aktivierung hinzuzufügen](assets/schedule-activation.png)
+
+   *Abbildung: Asset-Aktivierung planen*
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. Das Deaktivierungsdatum sollte später als das Aktivierungsdatum für ein Asset sein. Nach der [!UICONTROL Abschaltzeit]sind ein Asset und seine Darstellungen weder über die Assets-Weboberfläche noch über die HTTP-API verfügbar.
 
-   ![chlimage_1-218](assets/chlimage_1-13.png)
+   ![Verwenden Sie die Datumszeitauswahl oder die Tastaturbefehle im Feld &quot;außerhalb der Zeit&quot;, um Datum und Uhrzeit für die Asset-Aktivierung hinzuzufügen.](assets/schedule-deactivation.png)
+
+   *Abbildung: Asset-Deaktivierung planen*
 
 1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein. Anschließend drücken Sie die Eingabetaste. Das neue Tag wird in AEM gespeichert. YouTube erfordert Tags zum Veröffentlichen. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
@@ -591,7 +594,7 @@ Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.m
 1. Tippen oder klicken Sie im Bestätigungsdialogfeld auf:
 
    * **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen.
-   * **[!UICONTROL Rückgängigmachen der Veröffentlichung]** , um zu bestätigen, dass die Veröffentlichung der Assets am angegebenen Datum rückgängig gemacht wurde (sie sind nicht mehr in der Veröffentlichungsumgebung verfügbar).
+   * **[!UICONTROL Rückgängigmachen der Veröffentlichung]** , um zu bestätigen, dass die Veröffentlichung der Assets am angegebenen Umgebung rückgängig gemacht wurde (sie sind nicht mehr auf der Veröffentlichungsseite verfügbar).
    >[!NOTE]
    >
    >Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Machen Sie nicht die Veröffentlichung der Referenzen rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
@@ -635,17 +638,17 @@ Schnellaktion-Symbole sind jeweils nur für ein Asset verfügbar. Führen Sie je
 
 You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option.
 
-In der Listen- und Spaltenansicht wird die Option &quot; **[!UICONTROL Auswählen]** &quot;angezeigt, wenn Sie den Mauszeiger über die Asset-Miniaturansicht bewegen.
+In der Ansicht &quot;Ansicht der Liste&quot;und &quot;Spalte&quot;wird die Option &quot; **[!UICONTROL Auswählen]** &quot;angezeigt, wenn Sie den Mauszeiger über die Asset-Miniaturansicht bewegen.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
 ![select_quick_in_columnView](assets/select_quick_in_columnview.png)
 
-In der Kartenansicht wird die Option &quot; **[!UICONTROL Auswählen]** &quot;als Schnellaktion angezeigt.
+In der Ansicht der Karte wird die Option &quot; **[!UICONTROL Auswählen]** &quot;als Schnellaktion angezeigt.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Beim Durchsuchen eines Ordners oder einer Sammlung in der Benutzeroberfläche &quot;Assets&quot;in einem Browser können Sie alle angezeigten oder geladenen Assets mit der Option &quot;Alle [!UICONTROL auswählen] &quot;in der oberen rechten Ecke auswählen. Wenn Sie nicht weiter unten scrollen, werden nur 100 Assets in der Kartenansicht geladen und 200 werden in der Listenansicht geladen. Bei Auswahl der Option &quot;Alle&quot;werden nur diese vielen Assets ausgewählt.
+Beim Durchsuchen eines Ordners oder einer Sammlung in der Benutzeroberfläche &quot;Assets&quot;in einem Browser können Sie alle angezeigten oder geladenen Assets mit der Option &quot;Alle [!UICONTROL auswählen] &quot;in der oberen rechten Ecke auswählen. Wenn Sie nicht weiter unten scrollen, werden nur 100 Assets in der Ansicht geladen und 200 werden in der Ansicht der Liste geladen. Bei Auswahl der Option &quot;Alle&quot;werden nur diese vielen Assets ausgewählt.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
@@ -765,7 +768,7 @@ Videoanmerkungen werden nur für Browser mit HTML5-kompatiblen Videoformaten unt
 
 1. Wenn Sie eine andere Farbe auswählen möchten, um zwischen Benutzern zu unterscheiden, klicken/tippen Sie auf das Symbol „Profil“. Anschließend klicken/tippen Sie auf **[!UICONTROL Eigene Voreinstellungen]**.
 
-   ![Wählen Sie das Symbol &quot;Benutzerprofil&quot;und dann &quot;Meine Voreinstellungen&quot;, um die Benutzereinstellungen zu öffnen](assets/User-profile-preferences.png)
+   ![Wählen Sie das Symbol &quot;Benutzereinstellungen&quot;und dann &quot;Meine Voreinstellungen&quot;aus, um die Benutzereinstellungen zu öffnen](assets/User-profile-preferences.png)
 
    Geben Sie die gewünschte Farbe im Feld **[!UICONTROL Anmerkungsfarbe]** an und klicken Sie dann auf **[!UICONTROL Akzeptieren]**.
 
@@ -775,7 +778,7 @@ Videoanmerkungen werden nur für Browser mit HTML5-kompatiblen Videoformaten unt
 >
 >Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung jedoch untergeordnete Sammlungen enthält, können Sie nur der übergeordneten Sammlung Anmerkungen/Kommentare hinzufügen. Die Option „Anmerken“ ist nicht für untergeordnete Sammlungen verfügbar.
 
-### Gespeicherte Anmerkungen anzeigen {#viewing-saved-annotations}
+### Ansicht gespeicherte Anmerkungen {#viewing-saved-annotations}
 
 1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
 
