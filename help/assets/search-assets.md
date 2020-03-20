@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -30,9 +30,7 @@ AEM unterstützt die folgenden Anwendungsfälle und in diesem Artikel werden die
 
 Suchen Sie mithilfe des Felds Omniture Search oben auf der AEM-Weboberfläche nach Assets. Gehen Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, klicken Sie auf das Suchsymbol in der oberen Leiste, geben Sie den Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie den Suchbegriff-Shortcut / (Schrägstrich) verwenden, um das Omniture-Suchfeld zu öffnen. Ort: Assets sind vorausgewählt, um die Suchen auf DAM-Assets zu beschränken. AEM bietet Vorschläge, wenn Ihr Beginn einen Suchbegriff eingeben soll.
 
-Verwenden Sie das Bedienfeld &quot; **[!UICONTROL Filter]** &quot;, um die Suche einzuschränken, indem Sie die Suchergebnisse auf Grundlage der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Insight-Daten und Adobe Stock-Lizenzierung. Ihre Administratoren können das Bedienfeld &quot;Filter&quot;anpassen und mithilfe von Suchfacetten Suchvorhersagen hinzufügen oder entfernen.
-
-Beachten Sie, dass für den [!UICONTROL Dateityp] -Filter im Bedienfeld &quot; [!UICONTROL Filter] &quot;Kontrollkästchen mit gemischtem Status aktiviert sind. Dies bedeutet, dass die Kontrollkästchen der ersten Ebene nicht ausgewählt sind und stattdessen durchgestrichen werden, es sei denn, Sie wählen alle verschachtelten Prädikate (oder Formate) aus.
+Verwenden Sie das Bedienfeld &quot; **[!UICONTROL Filter]** &quot;, um die Suche einzuschränken, indem Sie die Suchergebnisse auf Grundlage der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Insight-Daten und Adobe Stock-Lizenzierung. Ihre Administratoren können das Bedienfeld &quot;Filter&quot;anpassen und mithilfe von Suchfacetten Suchvorhersagen hinzufügen oder entfernen. Der [!UICONTROL Dateityp] -Filter im Bedienfeld &quot; [!UICONTROL Filter] &quot;enthält Kontrollkästchen mit gemischtem Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene nicht ausgewählt und stattdessen durchsucht.
 
 Die AEM-Suchfunktion unterstützt die Suche nach Sammlungen und die Suche nach Assets in einer Sammlung. Siehe [Suchsammlungen](/help/assets/managing-collections-touch-ui.md).
 
@@ -369,7 +367,7 @@ Sie können AEM so konfigurieren, dass der Text aus den Assets extrahiert wird, 
 
 ### Benutzerdefinierte Vorhersagen zum Filtern von Suchergebnissen {#custompredicates}
 
-Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Bedienfeld &quot;Filter&quot;mithilfe vorkonfigurierter Voreinstellungen anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prognosen](/help/assets/searchx.md).
+Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Bedienfeld &quot;Filter&quot;mithilfe vorkonfigurierter Voreinstellungen anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prädikate](/help/assets/searchx.md).
 
 Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets suchen. Filter, die für einige dieser Eigenschaften gelten, sind standardmäßig verfügbar, und einige andere Filter können benutzerdefiniert erstellt werden, um sie auf die anderen Eigenschaften anzuwenden.
 
@@ -442,8 +440,8 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
-| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten | Bei der Suche nach Assets, bei denen die erforderlichen Metadaten fehlen, zeigt AEM möglicherweise einige Assets mit gültigen Metadaten an. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
-| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
+| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten | Bei der Suche nach Assets, bei denen die erforderlichen Metadaten fehlen, zeigt AEM möglicherweise einige Assets mit gültigen Metadaten an. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nachdem die Metadaten aktualisiert wurden, muss der Asset-Metadatenstatus neu deklariert werden. Siehe [obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
+| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu beschränken. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht zusammenhängende oder teilweise zugehörige Suchergebnisse | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
 | Keine Vorschläge zum automatischen Ausfüllen für Assets | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | AEM Assets wartet bis zum Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde), bevor ein Hintergrundauftrag ausgeführt wird, um die Metadaten für alle neu hochgeladenen oder aktualisierten Assets zu indizieren, und fügt dann die Metadaten zur Liste der Vorschläge hinzu. |
 | Keine Suchergebnisse | <ul><li>Es gibt keine Assets, die Ihrer Abfrage entsprechen.</li><li>Vor der Abfrage der Suche wurde ein Leerzeichen hinzugefügt.</li><li>Ein nicht unterstütztes Metadatenfeld enthält den Suchbegriff, nach dem Sie suchen.</li><li>Die Zeit &quot;On&quot;und &quot;Off&quot;wird für das Asset konfiguriert und die Suche wurde während der &quot;Off&quot;-Zeit eines Assets durchgeführt.</li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie (intelligente) Tagging verwenden, um die Suchergebnisse zu verbessern.</li><li>Es ist eine [bekannte Einschränkung](#limitations).</li><li>Nicht alle Metadatenfelder werden für Suchvorgänge berücksichtigt. Siehe [Anwendungsbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Ein- und Ausschaltzeiten für die erforderlichen Assets.</li></ul> |
