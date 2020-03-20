@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
 
 ---
 
@@ -37,30 +37,12 @@ Die Klasse bietet außerdem mehrere Methoden zum Eingreifen in Workflow-Lebenszy
 
 Die folgende Tabelle enthält Links zur Referenzdokumentation verschiedener wichtiger Java-Objekte, die bei der programmgesteuerten Interaktion mit Workflows verwendet werden. Die folgenden Beispiele veranschaulichen, wie Sie die Klassenobjekte im Code abrufen und verwenden.
 
-<table>
- <tbody>
-  <tr>
-   <th>Funktionen<a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th>
-   <th>Objekte<br /> </th>
-  </tr>
-  <tr>
-   <td>Zugriff auf einen Workflow<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Ausführung und Abfrage einer Workflow-Instanz<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Verwaltung eines Workflow-Modells<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Informationen für einen Knoten, der sich im Workflow befindet (oder nicht) </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td>
-  </tr>
- </tbody>
-</table>
+| Funktionen | Objekte |
+|---|---|
+| Zugriff auf einen Workflow | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Ausführung und Abfrage einer Workflow-Instanz | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Verwaltung eines Workflow-Modells | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Informationen für einen Knoten, der sich im Workflow befindet (oder nicht) | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Abrufen von Workflow-Objekten in ECMA-Skripten {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -111,11 +93,11 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Listet die verfügbaren Workflow-Instanzen auf.</td>
+   <td>Liste der verfügbaren Workflow-Instanzen.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Erstellt eine neue Workflow-Instanz. <br /> Die Parameter sind: - <code>model</code>: die ID (URI) des jeweiligen Workflow-Modells<br /> - <code>payloadType</code>: enthält den Nutzlasttyp (z. B. <code>JCR_PATH</code> oder URL).<br /> Die Nutzlast wird als Parameter gesendet <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
+   <td><p>Erstellt eine neue Workflow-Instanz. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> Die Nutzlast wird als Parameter gesendet <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -128,7 +110,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 | HTTP-Anforderungsmethode | Aktionen |
 |---|---|
-| `GET` | Listet die verfügbaren Workflow-Instanzen und deren Status auf ( `RUNNING`, `SUSPENDED``ABORTED` oder `COMPLETED`) |
+| `GET` | Listen der verfügbaren Workflow-Instanzen und deren Status ( `RUNNING`, `SUSPENDED``ABORTED` oder `COMPLETED`) |
 
 #### Verwaltung einer Workflow-Instanz nach ID {#managing-a-workflow-instance-by-its-id}
 
@@ -167,7 +149,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Listet die verfügbaren Workflow-Modelle auf.</td>
+   <td>Liste der verfügbaren Workflow-Modelle.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
@@ -371,7 +353,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Listet die Arbeitselemente auf, die sich im Posteingang des Benutzers befinden, der durch die HTTP-Authentifizierungskopfzeilen identifiziert wird.</td>
+   <td>Liste der Arbeitselemente, die sich im Posteingang des Benutzers befinden, der durch die HTTP-Authentifizierungskopfzeilen identifiziert wird.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
@@ -427,7 +409,7 @@ Um den **Workflow-Titel** zu ändern, der auf der Registerkarte **Instanzen** de
 * mit den folgenden Parametern:
 
    * `action`: sein Wert muss: `UPDATE`
-   * `workflowTitle`: der Workflow-Titel
+   * `workflowTitle`: der Titel des Workflows
 
 #### Ändern des Workflow-Titels – REST mit curl {#how-to-change-the-workflow-title-rest-using-curl}
 
