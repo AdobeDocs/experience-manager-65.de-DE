@@ -3,7 +3,7 @@ title: Verwandte Assets
 description: Erfahren Sie, wie Sie Assets mit bestimmten gemeinsamen Attributen verknüpfen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,14 +14,16 @@ Mit Adobe Experience Manager (AEM)-Assets können Sie Assets mithilfe der entspr
 
 Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit niedriger Auflösung für Händler oder Agenturen freizugeben und die hochauflösende INDD-Datei nur auf Anfrage verfügbar zu machen.
 
->[!NOTE] Nur Benutzer mit Bearbeitungsberechtigungen können Assets verknüpfen und die Verknüpfung aufheben.
+>[!NOTE] Nur Benutzer mit Bearbeitungsberechtigungen für Assets können die Assets verknüpfen und die Verknüpfung aufheben.
 >
 
 ## Relate assets {#relating-assets}
 
-1. From the AEM interface, open the [!UICONTROL Properties] page for an asset that you want to relate.
+1. From the AEM interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![Öffnen der Seite &quot;Eigenschaften&quot;eines Assets, um das Asset zu verknüpfen](assets/asset-properties-relate-assets.png)
+
+   *Abbildung: Seite mit Asset-Eigenschaften zum Verknüpfen von Assets*
 
    Wählen Sie alternativ das gewünschte Asset in der Liste aus.
 
@@ -67,11 +69,14 @@ Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen/abgelei
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft AEM Assets das referenzierte Asset ab und nimmt es zur Übersetzung auf.
+Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft Experience Manager Assets das referenzierte Asset ab und nimmt es zur Übersetzung auf.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![Seite &quot;Asset-Eigenschaften&quot;zeigt die Quelldatei des zugehörigen Assets an, die zur Übersetzung verwendet werden soll](assets/asset-properties-source-asset.png)
+
+*Abbildung: Quellenasset der zugehörigen Assets, die zur Übersetzung verwendet werden sollen*
 
 1. Übersetzen Sie die Assets im Quellordner für eine Zielsprache, indem Sie die Schritte unter [Neues Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project) befolgen. Übersetzen Sie in diesem Fall zum Beispiel Ihre Assets ins Französische.
+
 1. From the [!UICONTROL Projects] page, open the translation folder.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
