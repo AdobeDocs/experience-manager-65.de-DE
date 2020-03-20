@@ -3,16 +3,16 @@ title: 'Erstellen von Übersetzungsprojekten '
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM erstellen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
 
 # Erstellen von Übersetzungsprojekten{#creating-translation-projects} 
 
-Um eine Sprachkopie zu erstellen, lösen Sie einen der folgenden Arbeitsabläufe für Sprachkopien aus, die in der Leiste &quot;Referenzen&quot;in der AEM-Benutzeroberfläche verfügbar sind.
+Um eine Sprachkopie zu erstellen, lösen Sie eine der folgenden Sprachkopien aus, die in der Leiste &quot;Referenzen&quot;auf der AEM-Benutzeroberfläche verfügbar Workflows.
 
-* **Erstellen und übersetzen**:In diesem Arbeitsablauf werden die zu übersetzenden Assets in die Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Darüber hinaus wird je nach gewählten Optionen ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
+* **Erstellen und übersetzen**: In diesem Arbeitsablauf werden die zu übersetzenden Assets in die Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Darüber hinaus wird je nach gewählten Optionen ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
 
 * **Sprachkopien** aktualisieren: Führen Sie diesen Workflow aus, um eine zusätzliche Gruppe von Assets zu übersetzen und sie in eine Sprachkopie für ein bestimmtes Gebietsschema einzuschließen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält.
 
@@ -34,10 +34,10 @@ Sie verwenden den Arbeitsablauf zum Erstellen und Übersetzen, um zum ersten Mal
 
 ### Nur Struktur erstellen {#create-structure-only}
 
-Use the **[!UICONTROL Create structure only]** option to create a target folder hierarchy within the target language root to match the hierarchy of the source folder within the source language root. In diesem Fall werden die Quell-Assets in den Zielordner kopiert. Allerdings wird kein Übersetzungsprojekt erstellt.
+Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielordnerhierarchie im Zielsprachstamm zu erstellen, die der Hierarchie des Quellordners im Quellsprachstamm entspricht. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
 1. Wählen Sie in der Benutzeroberfläche von Assets den Ordner, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
-1. Wechseln Sie zum Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
+1. Öffnen Sie den Bereich **[!UICONTROL Referenzen]** und klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -49,11 +49,11 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
-1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Nur Struktur erstellen]**.
+1. Wählen Sie in der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Nur Struktur erstellen]**.
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. The new structure for the target language is listed under **[!UICONTROL Language Copies]**.
+1. Tippen/Klicken Sie auf **[!UICONTROL Erstellen]**. The new structure for the target language is listed under **[!UICONTROL Language Copies]**.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -66,7 +66,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Je nach gewählten Optionen wird ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wird.
 
 1. Wählen Sie in der Benutzeroberfläche von Assets den Ordner, für den Sie eine Sprachkopie erstellen möchten.
-1. Wechseln Sie zum Bereich **[!UICONTROL Verweise]** und klicken/tippen Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
+1. Öffnen Sie den Bereich **[!UICONTROL Referenzen]** und klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -74,7 +74,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
+1. Wählen Sie in der Liste **[!UICONTROL Zielsprachen]** die Sprache(n) aus, für die Sie eine Ordnerstruktur erstellen möchten.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -82,11 +82,11 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
+1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Titel für das Projekt ein.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Assets aus dem Quellordner werden in die Zielordner für die Gebietsschemata kopiert, die Sie in Schritt 4 gewählt haben.
+1. Tippen/Klicken Sie auf **[!UICONTROL Erstellen]**. Assets aus dem Quellordner werden in die Zielordner für die Gebietsschemata kopiert, die Sie in Schritt 4 gewählt haben.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -114,7 +114,10 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 1. Navigieren Sie zur Benutzeroberfläche „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+   ![Ansicht der übersetzten Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;](assets/translated-metadata-asset-properties.png)
+
+   *Abbildung: Übersetzte Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;*
+
 
    >[!NOTE]
    >
@@ -125,17 +128,17 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets ausgeführt, die Sie zum Quellordner hinzufügen, nachdem bereits ein Übersetzungs-Workflow ausgeführt wurde. Nur die neu hinzugefügten Assets werden in den Zielordner kopiert, der zuvor übersetzte Assets enthält. In diesem Fall wird kein neues Übersetzungsprojekt erstellt.
 
 1. Navigieren Sie in der Benutzeroberfläche „Assets“ zu dem Ordner, der nicht übersetzte Assets enthält.
-1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
-1. Click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. Eine Liste der verfügbaren Übersetzungskopien wird angezeigt.
+1. Wählen Sie ein zu übersetzendes Asset aus und öffnen Sie den **[!UICONTROL Referenzbereich]**. Im Abschnitt **[!UICONTROL Sprachkopien]** wird die Anzahl der derzeit verfügbaren Übersetzungskopien angezeigt.
+1. Tippen/Klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**. Eine Liste der verfügbaren Übersetzungskopien wird angezeigt.
 1. Click/tap **[!UICONTROL Create &amp; Translate]** at the bottom.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
+1. Wählen Sie in der Liste **[!UICONTROL Zielsprachen]** die Sprache(n) aus, für die Sie eine Ordnerstruktur erstellen möchten.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]**, um den Übersetzungs-Workflow für den Ordner auszuführen.
+1. Wählen Sie in der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** aus, um den Übersetzungsworkflow im Ordner auszuführen.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -147,7 +150,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Die zu übersetzenden Assets werden zum Zielordner hinzugefügt. Der aktualisierte Ordner wird unter **[!UICONTROL Sprachkopien]** aufgeführt.
+1. Tippen/Klicken Sie auf **[!UICONTROL Erstellen]**. Die zu übersetzenden Assets werden dem Zielordner hinzugefügt. Der aktualisierte Ordner wird im Abschnitt **[!UICONTROL Sprachkopien]** aufgeführt.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -198,8 +201,8 @@ Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetze
 Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von Assets erstellt, für die Sie eine Sprachkopie aktualisieren möchten.
 
 1. Wählen Sie in der Benutzeroberfläche „Assets“ den Quellordner, dem Sie einen Asset-Ordner hinzugefügt haben.
-1. Open the **[!UICONTROL References]** pane, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
-1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Sprachkopien]** und wählen Sie dann den entsprechenden Zielordner für das gewünschte Gebietsschema.
+1. Öffnen Sie den Bereich **[!UICONTROL Referenzen]** und tippen/klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**, um die Liste der Sprachkopien anzuzeigen.
+1. Aktivieren Sie das Kontrollkästchen vor **[!UICONTROL Sprachkopien]** und wählen Sie dann den Zielordner aus, der dem entsprechenden Gebietsschema entspricht.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -211,11 +214,11 @@ Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von
 
    ![chlimage_1-86](assets/chlimage_1-86.png)
 
-1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
+1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Titel für das Projekt ein.
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Klicken/tippen Sie auf **[!UICONTROL Start]**.
+1. Tippen/Klicken Sie auf **[!UICONTROL Launch]**.
 1. Navigieren Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
@@ -249,11 +252,11 @@ Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von
 Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen Übersetzungsprojekt hinzugefügt, um die Sprachkopien für das von Ihnen gewählte Gebietsschema zu aktualisieren.
 
 1. Wählen Sie in der Benutzeroberfläche „Assets“ den Quellordner, dem Sie einen Asset-Ordner hinzugefügt haben.
-1. Open the **[!UICONTROL References pane]**, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
+1. Öffnen Sie den **[!UICONTROL Referenzbereich]** und tippen/klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**, um die Liste der Sprachkopien anzuzeigen.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Select the check box before **[!UICONTROL Language Copies]**, which selects all language copies. Heben Sie die Auswahl anderer Kopien auf. Nur die Sprachkopien, die den gewünschten Gebietsschemas entsprechen, sollten ausgewählt bleiben.
+1. Aktivieren Sie das Kontrollkästchen vor **[!UICONTROL Sprachkopien]**. So werden alle Sprachkopien ausgewählt. Heben Sie die Auswahl anderer Kopien auf, mit Ausnahme der Sprachkopie(n), die dem/den Gebietsschema(ta) entspricht/entsprechen, in das/die Sie übersetzen möchten.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -269,14 +272,14 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-1. Klicken/tippen Sie auf **[!UICONTROL Start]**.
+1. Tippen/Klicken Sie auf **[!UICONTROL Launch]**.
 1. See steps 9-14 of [Add to existing translation project](translation-projects.md#add-to-existing-translation-project) to complete the rest of the procedure.
 
 ## Erstellen von temporären Sprachkopien {#creating-temporary-language-copies}
 
 Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. AEM Assets speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
 
-1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in AEM Assets.
+1. Tippen/Klicken Sie unter **[!UICONTROL Sprachkopien]**, für die Sie bereits eine Sprachkopie erstellt haben, auf den Quellstammordner und dann auf **[!UICONTROL In Assets anzeigen]**, um den Ordner in AEM Assets zu öffnen.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -288,7 +291,7 @@ Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbe
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Titel]**.
-1. From the toolbar, click/tap **[!UICONTROL Accept Translation]** and then click/tap **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
+1. Tippen/Klicken Sie in der Symbolleiste auf **[!UICONTROL Übersetzung akzeptieren]** und im Dialogfeld anschließend auf **[!UICONTROL Akzeptieren]**, um das ursprüngliche Asset im Zielordner mit der übersetzten Version des bearbeiteten Assets zu überschreiben.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
