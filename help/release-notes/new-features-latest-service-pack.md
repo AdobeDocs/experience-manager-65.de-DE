@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
+source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
 
 ---
 
@@ -17,6 +17,8 @@ Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlic
 
 ## AEM Sites {#aem-sites}
 
+AEM 6.5.4.0 enthält Verbesserungen am Stilsystem. Sie können jetzt Stile im Komponentendialogfeld auswählen.
+
 ### Leistungsverbesserungen in verschiedenen Bereichen {#performance-improvements}
 
 * Verkürzte Ladezeit und Initialisierung von ContextHub innerhalb einer Site (`contexthub.kernel.js`). Das führt zu schnelleren Seitenladevorgängen während eines Site-Besuchs.
@@ -26,8 +28,6 @@ Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlic
 * Die Ladezeit für Einträge auf einer Seite &quot;Sites&quot;mit mehr als 200 Live-Kopien in der Übersicht über **[!UICONTROL Live Copy wurde verkürzt]**.
 
 * Verbesserte Verarbeitung von unvollständigen oder ungültigen URLs. Solche URLs können den Vorlageneditor verlangsamen.
-
-Darüber hinaus enthält AEM 6.5.4.0 Style-Systemverbesserungen. Sie können jetzt Stile im Komponentendialogfeld auswählen.
 
 ## AEM Assets {#aem-assets}
 
@@ -116,16 +116,19 @@ Sie haben die Möglichkeit, ein Anfangs- und Enddatum sowie eine Anfangs- und En
 
 Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus einer Vorlage zu erstellen. Die Vorlage ist eine interaktive Kommunikation ohne Daten. Die Stapel-API kombiniert Daten mit einer Vorlage, um eine interaktive Kommunikation zu erzeugen. Die API ist bei der Massenproduktion interaktiver Kommunikation nützlich. Zum Beispiel Telefonrechnungen, Kreditkartenauszüge für mehrere Kunden. Siehe [Generieren mehrerer interaktiver Kommunikation mit der Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-
-
 ## Wichtige Versionen seit AEM 6.5 SP3
 
 Zwischen dem 12. Dezember 2019 und dem 5. März 2020 hat Adobe die folgenden Funktionen veröffentlicht, die außerhalb der AEM-Hauptversion verfügbar sind:
 
-* AEM Cloud Manager 2020.1.0 und 2020.2.0Die Versionsupdates verbessern den Pipeline-Status und die Möglichkeit, Protokolle für verschiedene Schritte herunterzuladen. Weitere Informationen finden Sie unter:
+* AEM Cloud Manager 2020.1.0 und 2020.2.0
+
+   Die Versionsupdates verbessern den Pipeline-Status und die Möglichkeit, Protokolle für verschiedene Schritte herunterzuladen. Weitere Informationen finden Sie unter:
+
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * Aktualisierungen der AEM Cloud Manager-CLI
 
