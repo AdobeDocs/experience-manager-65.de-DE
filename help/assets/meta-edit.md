@@ -3,7 +3,7 @@ title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
 description: Erfahren Sie mehr über Asset-Metadaten in AEM Assets und lernen Sie die verschiedenen Bearbeitungsmöglichkeiten kennen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,8 @@ So bearbeiten Sie Metadaten:
    * From the asset thumbnail, select the **[!UICONTROL View Properties]** quick action.
    * From the asset page, click/tap the **[!UICONTROL View Properties]** icon from the toolbar.
       ![chlimage_1-168](assets/chlimage_1-168.png)
-      *Abbildung: Eigenschaftensymbol*
+   *Abbildung: Eigenschaftensymbol*
+
    Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Diese Metadaten wurden beim Hochladen (Erfassen) in AEM Assets automatisch extrahiert.
 
    ![Asset-Eigenschaften für Ansicht-Metadaten auswählen](assets/asset-metadata.png)
