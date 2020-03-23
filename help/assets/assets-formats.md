@@ -3,7 +3,7 @@ title: Von Assets unterstützte Formate
 description: Liste der von AEM Assets unterstützten Dateiformate sowie der für die jeweiligen Formate unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
+source-git-commit: 8431275c0e4de408e1ebafafafa94dcfae3c1127
 
 ---
 
@@ -37,10 +37,12 @@ Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**¹** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 
@@ -51,11 +53,11 @@ Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-&amp;ast; Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+**¹** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
@@ -192,13 +194,14 @@ Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wir
 
 | Formate | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **²** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) |  |  |  |  |  | ✓ |
 
-**&amp;ast;** Die anderen Formate werden in DAM für Datenspeicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
+**²** Die anderen Formate werden in DAM für Datenspeicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
