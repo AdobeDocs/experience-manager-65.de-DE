@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
+source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
 ---
 
@@ -92,7 +92,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >* Sollte nicht auf eine vorhandene Seite eingestellt sein.
 
 
-   Außerdem müssen Sie Dispatcher konfigurieren, um Zugriff auf Vanity-URLs zu ermöglichen. Weitere Informationen finden Sie unter Zugriff auf Vanity-URLs [aktivieren](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) .
+   Außerdem müssen Sie Dispatcher konfigurieren, um den Zugriff auf Vanity-URLs zu aktivieren. Weitere Informationen finden Sie unter Zugriff auf Vanity-URLs [aktivieren](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) .
 
 * **Vanity-URL umleiten**
 
@@ -199,7 +199,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
    Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
 
-### Personalisierung  {#personalization}
+### Personalisierung     {#personalization}
 
 * **ContextHub-Konfigurationen**
 
@@ -208,6 +208,9 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 * **Konfiguration für Targeting**
 
    Wählen Sie eine [Marke aus, um einen Bereich für das Targeting anzugeben](/help/sites-authoring/target-adobe-campaign.md).
+
+   >[!NOTE]
+   >Für diese Option muss sich das Benutzerkonto in der `Target Adminstrators`Gruppe befinden.
 
 ### Berechtigungen {#permissions}
 
@@ -261,7 +264,7 @@ Sie können Seiteneigenschaften an folgenden Stellen definieren:
 
 * Im Seiten-Editor:
 
-   * Using **Page Information** (then **Open Properties**)
+   * Verwenden von **Seiteninformationen** (dann **Eigenschaften öffnen**)
 
 ### In der Sites-Konsole (einzelne Seite):{#from-the-sites-console-single-page}
 
@@ -289,7 +292,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. Außerdem sind rechts in der Symbolleiste auch folgende Schaltflächen verfügbar:
+1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
 
    * **Abbrechen**
    * **Speichern und schließen**
@@ -298,7 +301,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
 ### In der Sites-Konsole (mehrere Seiten):{#from-the-sites-console-multiple-pages}
 
-In der **Sites-Konsole** können Sie mehrere Seiten auswählen. Anschließend können Sie die Seiteneigenschaften mithilfe der Option **Eigenschaften anzeigen** anzeigen bzw. bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
+In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 
 >[!NOTE]
 >
@@ -313,7 +316,7 @@ Sie können mehrere Seiten zur Massenbearbeitung auf verschiedene Arten auswähl
 
 ![epp-01](assets/epp-01.png)
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Nach Auswahl der Seiten und anschließendem Tippen/Klicken auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
 
 ![epp-02](assets/epp-02.png)
 
