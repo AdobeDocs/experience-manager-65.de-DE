@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
@@ -22,7 +22,7 @@ This tutorial is a step in the [Create your first Interactive Communication](/he
 
 ## Über die Schulung {#about-the-tutorial}
 
-Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Back-End-Datenquellen wie AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
+Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Back-End-Datenquellen wie AEM-Profil, RESTful-Webdiensten, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -38,7 +38,7 @@ Das Formulardatenmodell sieht etwa wie folgt aus:
 
 ![Formulardatenmodell](assets/form_data_model_callouts_new.png)
 
-**********A. Konfigurierte Datenquellen** B. Datenquellenschemata **C.** Verfügbare Dienste **D. Datenmodellobjekte** E. Konfigurierte Dienste
+**A.** Konfigurierte Datenquellen **B.** Datenquellen-Schema **C.** Verfügbare Dienste **D.** Datenmodellobjekte **E.** Konfigurierte Dienste
 
 ## Voraussetzungen {#prerequisites}
 
@@ -54,9 +54,61 @@ Die folgende Abbildung zeigt Beispieldaten für die Kundentabelle:
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-Die Anrufliste enthält die Anrufdetails, wie z. B. Anrufdatum, Anrufzeit, Anrufnummer, Anrufdauer und Gebühren. Die Kundentabelle ist über das Feld „Mobilfunknummer (mobilenum)“ mit der Anruftabelle verknüpft. Für jede in der Kundentabelle aufgeführte Mobilfunknummer gibt es mehrere Datensätze in der Anruftabelle. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die Anruftabelle beziehen.
+Use the following DDL statement to create the **customer** table in database.
 
-Die Rechnungstabelle enthält die Rechnungsdetails wie Rechnungsdatum, Rechnungszeitraum, Monatsgebühren und Verbindungskosten. Die Kundentabelle ist mit der Rechnungstabelle über das Feld „Rechnungsplan“ verknüpft. In der Kundentabelle ist jedem Kunden ein Plan zugeordnet. Die Rechnungstabelle enthält die Preisangaben für alle vorhandenen Pläne. Sie können beispielsweise die Plandetails für **Sarah** aus der Kundentabelle abrufen und diese Details verwenden, um Preisdetails aus der Rechnungstabelle abzurufen.
+```sql
+CREATE TABLE `customer` (
+   `mobilenum` int(11) NOT NULL,
+   `name` varchar(45) NOT NULL,
+   `address` varchar(45) NOT NULL,
+   `alternatemobilenumber` int(11) DEFAULT NULL,
+   `relationshipnumber` int(11) DEFAULT NULL,
+   `customerplan` varchar(45) DEFAULT NULL,
+   PRIMARY KEY (`mobilenum`),
+   UNIQUE KEY `mobilenum_UNIQUE` (`mobilenum`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Use the following DDL statement to create the **bills** table in database.
+
+```sql
+CREATE TABLE `bills` (
+   `billplan` varchar(45) NOT NULL,
+   `latepayment` decimal(4,2) NOT NULL,
+   `monthlycharges` decimal(4,2) NOT NULL,
+   `billdate` date NOT NULL,
+   `billperiod` varchar(45) NOT NULL,
+   `prevbal` decimal(4,2) NOT NULL,
+   `callcharges` decimal(4,2) NOT NULL,
+   `confcallcharges` decimal(4,2) NOT NULL,
+   `smscharges` decimal(4,2) NOT NULL,
+   `internetcharges` decimal(4,2) NOT NULL,
+   `roamingnational` decimal(4,2) NOT NULL,
+   `roamingintnl` decimal(4,2) NOT NULL,
+   `vas` decimal(4,2) NOT NULL,
+   `discounts` decimal(4,2) NOT NULL,
+   `tax` decimal(4,2) NOT NULL,
+   PRIMARY KEY (`billplan`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Use the following DDL statement to create the **calls** table in database.
+
+```sql
+CREATE TABLE `calls` (
+   `mobilenum` int(11) DEFAULT NULL,
+   `calldate` date DEFAULT NULL,
+   `calltime` varchar(45) DEFAULT NULL,
+   `callnumber` int(11) DEFAULT NULL,
+   `callduration` varchar(45) DEFAULT NULL,
+   `callcharges` decimal(4,2) DEFAULT NULL,
+   `calltype` varchar(45) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+The **calls** table includes the call details such as call date, call time, call number, call duration, and call charges. The **customer** table is linked to the calls table using the Mobile Number (mobilenum) field. For each mobile number listed in the **customer** table, there are multiple records in the **calls** table. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die Anruftabelle beziehen.****
+
+The **bills** table includes the bill details such as bill date, bill period, monthly charges, and call charges. The **customer** table is linked to the **bills** table using the Bill Plan field. There is a plan associated to each customer in the **customer** table. The **bills** table includes the pricing details for all the existing plans. Sie können beispielsweise die Plandetails für **Sarah** aus der Kundentabelle abrufen und diese Details verwenden, um Preisdetails aus der Rechnungstabelle abzurufen.********
 
 ## Schritt 2: Konfigurieren der MySQL-Datenbank als Datenquelle {#step-configure-mysql-database-as-data-source}
 
@@ -86,7 +138,7 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
       * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. For MySQL database running on port 3306 and schema teleca, the URL is: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
-      * **** Test auf Borge: Aktivieren Sie die Option **Test on Borrow** .
+      * **Test auf Borge:** Aktivieren Sie die Option **Test on Borrow** .
 
       * **Test on Return:** Aktivieren Sie die Option **Test on Return.**
 
@@ -105,8 +157,8 @@ AEM Forms provide an intuitive user interface to [create a form data mode](https
 
 Gehen Sie folgendermaßen vor, um ein Formulardatenmodell zu erstellen:
 
-1. In AEM author instance, navigate to **Forms** > **Data Integrations**.
-1. Tap **Create** > **Form Data Model**.
+1. Navigieren Sie in der AEM-Autoreninstanz zu **Formulare** > **Datenintegration**.
+1. Tippen Sie auf **Erstellen** > **Formulardatenmodell**.
 1. In the Create Form Data Model wizard, specify a **name** for the form data model. For example, **FDM_Create_First_IC**. Tippen Sie auf **Weiter**.
 1. Im Bildschirm „Datenquelle auswählen“ werden alle konfigurierten Datenquellen angezeigt. Select **MySQL** data source and tap **Create**.
 
@@ -183,7 +235,7 @@ Führen Sie die folgenden Schritte durch, um untergeordnete berechnete Eigenscha
 
    ![Nutzungskostenregel](assets/usage_charges_rule_all_new.png)
 
-1. Tippen Sie auf **Done** (Fertig). Die Regel wird im Regeleditor erstellt.
+1. Tippen Sie auf **Fertig**. Die Regel wird im Regeleditor erstellt.
 1. Tap **Close** to close the Rule Editor window.
 
 ### Hinzufügen von Assoziationen zwischen Datenmodellobjekten {#add-associations-between-data-model-objects}
@@ -212,7 +264,7 @@ Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellob
    * Wählen Sie **get** aus der Dropdown-Liste **Service**.
 
    * Tap **Add** to link the **customer** data model object to **calls** data model object using a property. Basierend auf dem Anwendungsfall muss das Datenmodellobjekt „call“ mit der Eigenschaft der Mobilfunknummer im Datenmodellobjekt „customer“ verknüpft sein. The **Add Argument** dialog box opens.
-   ![Verknüpfung hinzufügen](assets/add_association_new.png)
+   ![Hinzufügen](assets/add_association_new.png)
 
 1. Im Dialogfeld **Argument hinzufügen**:
 
@@ -225,11 +277,11 @@ Für jede im Datenmodellobjekt „customer“ verfügbare Mobilfunknummer stehen
    * Wählen Sie **mobilenum** aus der Dropdown-Liste **Bindungswert** aus.
 
    * Tippen Sie auf **Hinzufügen**.
-   ![Verknüpfung zu einem Argument hinzufügen](assets/add_association_argument_new.png)
+   ![Hinzufügen Verbindung für ein Argument](assets/add_association_argument_new.png)
 
    Die Eigenschaft „mobilenum“ wird im Abschnitt **Argumente** angezeigt.
 
-   ![Argumentzuordnung hinzufügen](assets/add_argument_association_new.png)
+   ![Hinzufügen](assets/add_argument_association_new.png)
 
 1. Tap **Done** to create a 1:n association between customer and calls data model objects.
 
@@ -251,7 +303,7 @@ Die Datenmodellobjekte „bills“ und „customer“ werden jeweils mit den Eig
    * Wählen Sie **customerplan** aus der Dropdown-Liste **Bindungswert**.
 
    * Tap **Done** to create a binding between the billplan and customerplan properties.
-   ![Verknüpfung zur Kundenrechnung hinzufügen](assets/add_association_customer_bills_new.png)
+   ![Hinzufügen Verband für Kundenrechnung](assets/add_association_customer_bills_new.png)
 
    Das folgende Bild zeigt die Zuordnungen zwischen den Datenmodellobjekten und den Eigenschaften, die zum Erstellen von Zuordnungen zwischen ihnen verwendet werden:
 
@@ -283,7 +335,7 @@ Bearbeiten Sie nach dem Erstellen von Zuordnungen zwischen den Datenmodellobjekt
 
 1. Select the check box at the top of the **calls** data model object to select it and tap **Edit Properties**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
 1. Deaktivieren Sie das **Modellobjekt der obersten Ebene** für das Datenmodellobjekt **calls**.
-1. Tippen Sie auf **Done** (Fertig).
+1. Tippen Sie auf **Fertig**.
 
    Wiederholen Sie die Schritte 8 bis 10, um die Eigenschaften für das Datenmodellobjekt **bills** zu konfigurieren.
 
@@ -305,7 +357,7 @@ Bearbeiten Sie nach dem Erstellen von Zuordnungen zwischen den Datenmodellobjekt
    * Geben Sie optional einen Titel und eine Beschreibung ein.
    * Select **customer** from the **Input Model Object** drop-down list.
 
-   * Tippen Sie auf **Done** (Fertig).
+   * Tippen Sie auf **Fertig**.
    * Tippen Sie auf **Speichern**, um das Formulardatenmodell zu speichern.
    ![Diensteigenschaften aktualisieren](assets/update_service_properties_new.png)
 
