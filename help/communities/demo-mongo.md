@@ -132,7 +132,7 @@ Wenn ja, aktualisieren Sie die Datei etc/hosts mit einem neuen Eintrag für dies
 
 ### SolrCloud {#solrcloud}
 
-Um eine sehr einfache (nicht produktive) solrCloud-Einrichtung auszuführen, führen Sie Beginn-Solr mit:
+Um ein sehr einfaches (nicht produktives) solrCloud-Setup auszuführen, führen Sie Beginn-Solr mit:
 
 * java -Dbootstrap_condir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar Beginn.jar
 
