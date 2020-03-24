@@ -4,22 +4,22 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
+source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
 
 ---
 
 
 # Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 bietet Funktionen und kontinuierliche Verbesserungen durch vierteljährliche Service Packs. Der neue Ansatz kommt unseren Kunden zugute, wenn sie die Innovationen schneller umsetzen.
+Adobe Experience Manager (AEM) 6.5 bietet Funktionen und kontinuierliche Verbesserungen durch vierteljährliche Service Packs. Der Ansatz nützt Ihnen, wenn die Innovationen leichter umzusetzen sind.
 
-Das neueste AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlicht. In diesem Artikel werden die Funktionen der neuesten Service Pack-Angebot vorgestellt, mit denen Sie Ihre AEM-Reise noch bereichern können.
+AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlicht. In diesem Artikel werden die wichtigsten Funktionen des 6.5 Service Packs-Angebots hervorgehoben, mit denen Sie Ihre AEM-Reise noch bereichern können.
 
 ## AEM Sites {#aem-sites}
 
 ### Verbesserte Stilsysteme
 
-AEM 6.5.4.0 enthält Verbesserungen am Stilsystem. Sie können jetzt Stile im Komponentendialogfeld auswählen.
+Sie können jetzt Stile im Komponentendialogfeld mit dem erweiterten Stilsystem auswählen.
 
 ### Leistungsverbesserungen in verschiedenen Bereichen {#performance-improvements}
 
@@ -58,7 +58,7 @@ Experience Manager Assets umfasst die folgenden Verbesserungen der Barrierefreih
 
 ### Generieren einer druckbaren Ausgabe in AEM Forms Workflows {#generate-printable-output}
 
-Mit dem neuen Arbeitsablaufschritt &quot;Druckbare Ausgabe generieren&quot;können Sie eine Quellvorlagendatei in eine Datendatei integrieren. Mit dieser Integration können Sie verschiedene Kopien der Vorlagendatei drucken oder speichern. Beispielsweise können Sie ein Quellformular mit einem anderen Namen jedes Mal drucken, wenn es gedruckt wird. Speichern Sie die Namen in der Datendatei und integrieren Sie die Datendatei in eine Standardvorlagendatei. Weitere Informationen zu dieser Funktion finden Sie unter [Forms-zentrierter Arbeitsablauf auf OSGi - Schritt-Referenz](../forms/using/aem-forms-workflow-step-reference.md).
+Mit dem Arbeitsablaufschritt &quot;Druckbare Ausgabe generieren&quot;können Sie eine Quellvorlagendatei in eine Datendatei integrieren. Mit dieser Integration können Sie verschiedene Kopien der Vorlagendatei drucken oder speichern. Der Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe. Weitere Informationen zu dieser Funktion finden Sie unter [Forms-zentrierter Arbeitsablauf auf OSGi - Schritt-Referenz](../forms/using/aem-forms-workflow-step-reference.md).
 
 ![Druckbare Ausgabe generieren](assets/generate-print-output-demo.gif)
 
@@ -66,10 +66,7 @@ Mit dem neuen Arbeitsablaufschritt &quot;Druckbare Ausgabe generieren&quot;könn
 
 Sie können jetzt die Anzahl der Spalten für ein Bedienfeld in adaptiven Formularen und in interaktiver Kommunikation definieren. Wechseln Sie zum Layoutmodus, um die neue Option für mehrere Spalten zu verwenden. Weitere Informationen finden Sie unter [Verwenden des Layoutmodus zum Ändern der Größe von Komponenten](../forms/using/resize-using-layout-mode.md).
 
-
 ![Mehrspaltiges Layout](assets/multi-column-layout.gif)
-
-
 
 ### AEM Inbox-Anpassungen {#aem-inbox}
 
@@ -83,7 +80,7 @@ Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe &qu
 
 ### Rich-Text-Unterstützung in HTML5-Formularen {#rich-text-support}
 
-Sie können jetzt ein Textfeld in einem XFA-Formular in ein Rich-Text-Feld konvertieren, wenn es in einem HTML5-Formular wiedergegeben wird. Daher zeigt das Textfeld eine Liste anderer Formatierungsoptionen in einem HTML5-Formular an. Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML5-Formulare](../forms/using/designing-form-template.md).
+Konvertieren Sie ein Textfeld in einem XFA-Formular in ein Rich-Text-Feld in einem HTML5-Formular. Weitere Informationen finden Sie unter [Entwerfen von Formularvorlagen für HTML5-Formulare](../forms/using/designing-form-template.md).
 
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
@@ -105,16 +102,16 @@ Die intelligente Bildbearbeitung nutzt die einzigartigen Ansichtsmerkmale der ei
 
 Assets-Benutzer können nach visuell ähnlichen Bildern suchen. AEM zeigt die Bilder mit Smart-Tags aus dem DAM-Repository an, die einem vom Benutzer ausgewählten Bild ähnlich sind. See [Visual search](../assets/search-assets.md).
 
-### Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Benutzers (6.5.3.0) {#share-request-access}
+### Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines AEM Forms-Benutzers (6.5.3.0) {#share-request-access}
 
 Sie können Ihre Inbox-Elemente für andere Benutzer freigeben. Sobald ein anderer Benutzer Zugriff auf Ihre Posteingangselemente erhält, kann der Benutzer für freigegebene Elemente entsprechende Aktionen anfordern. Ebenso können Sie von anderen Benutzern den Zugriff auf Posteingangselemente anfordern. Siehe [Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Benutzers](../forms/using/configure-shared-queues-osgi.md).
 
-### Konfigurieren Sie die Abwesenheitseinstellung für Ihre Posteingangselemente (6.5.3.0) {#configure-out-of-office}
+### Abwesenheitseinstellungen für Posteingangselemente eines AEM Forms-Benutzers konfigurieren (6.5.3.0) {#configure-out-of-office}
 
 Wenn Sie planen, abwesend zu sein, können Sie angeben, was mit Artikeln geschieht, die Ihnen für diesen Zeitraum zugewiesen wurden.
 Sie haben die Möglichkeit, ein Anfangs- und Enddatum sowie eine Anfangs- und Enduhrzeit für die Gültigkeit der Abwesenheitseinstellungen anzugeben. Sie können eine Standardperson festlegen, an die alle Elemente gesendet werden sollen. Siehe Abwesenheitseinstellungen [konfigurieren](../forms/using/configure-out-of-office-settings.md).
 
-### Generieren mehrerer interaktiver Kommunikation mit der Batch-API (6.5.3.0) {#generate-multiple-ic}
+### Generieren mehrerer interaktiver Kommunikation mit der Batch-API für AEM Forms (6.5.3.0) {#generate-multiple-ic}
 
 Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus einer Vorlage zu erstellen. Die Vorlage ist eine interaktive Kommunikation ohne Daten. Die Stapel-API kombiniert Daten mit einer Vorlage, um eine interaktive Kommunikation zu erzeugen. Die API ist bei der Massenproduktion interaktiver Kommunikation nützlich. Zum Beispiel Telefonrechnungen, Kreditkartenauszüge für mehrere Kunden. Siehe [Generieren mehrerer interaktiver Kommunikation mit der Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
