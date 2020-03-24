@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
+source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
 
 ---
 
@@ -88,7 +88,7 @@ Wenn Ihre Bildvorgaben zum Zurückgeben verwendet werden `fmt !=JPEG` oder `fmt 
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Smart Imaging funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben. Für Smart Imaging müssen Sie außerdem keinen Code auf Ihrer Website hinzufügen, um den Browser eines Benutzers zu erkennen. All dies wird automatisch verarbeitet.
+Nein. Smart Imaging funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben. Für Smart Imaging müssen Sie außerdem keinen Code auf Ihrer Website hinzufügen, um den Browser eines Benutzers zu erkennen. All dies wird automatisch verarbeitet.
 
 Wie bereits erwähnt, unterstützt Smart Imaging nur JPEG- und PNG-Bildformate. Bei anderen Formaten müssen Sie den Modifikator an die `bfc=off` URL anhängen, wie oben beschrieben.
 
@@ -115,11 +115,11 @@ Ihre erste benutzerdefinierte Domäne ist mit einer Lizenz für dynamische Medie
 
 Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine entsprechende Anfrage stellen.
 
-1. Richten Sie eine Anfrage an den technischen Support (E-Mail: s7support@adobe.com). 
+1. Initiate a Technical Support request (email: `s7support@adobe.com`).
 1. In der Anfrage geben Sie folgende Informationen an:
 
    1. Name des Hauptansprechpartners, E-Mail, Telefon.
-   1. Geben Sie alle Domänen an, für die intelligente Bildbearbeitung aktiviert werden soll (also bilder.unternehmen.com oder meinunternehmen.scene7.com).
+   1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
        Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an. 
 
