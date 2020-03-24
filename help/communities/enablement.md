@@ -39,7 +39,7 @@ Einrichtung von:
 
 Optionale Konfiguration von:
 
-* **Die Adobe Analytics**-Integration in Adobe Analytics bietet umfassende Funktionen für Berichte und unterstützt die Video Heartbeat-Erweiterung zu Analytics.
+* **Die Adobe Analytics**-Integration mit Adobe Analytics bietet umfassende Funktionen für Berichte und unterstützt die Video Heartbeat-Erweiterung zu Analytics.
 
 * **Dispatcher**
 
