@@ -143,7 +143,7 @@ Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild ähne
 
 ### Adobe Stock Images {#adobestock}
 
-From within the AEM user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Hinzufügen `Location: Adobe Stock` in der Omniture Suchleiste. Sie können auch das Bedienfeld &quot;Filter&quot;verwenden, um alle lizenzierten oder nicht lizenzierten Assets zu suchen oder ein bestimmtes Asset mit der Adobe Stock-Dateinummer zu suchen.
+From within the AEM user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Hinzufügen `Location: Adobe Stock` in der Omniture Suchleiste. Sie können im Bedienfeld &quot;Filter&quot;auch alle lizenzierten oder nicht lizenzierten Assets suchen oder ein bestimmtes Asset mit der Adobe Stock-Dateinummer suchen.
 
 ### Dynamische Medienelemente {#dmassets}
 
@@ -367,7 +367,7 @@ Sie können AEM so konfigurieren, dass der Text aus den Assets extrahiert wird, 
 
 ### Benutzerdefinierte Vorhersagen zum Filtern von Suchergebnissen {#custompredicates}
 
-Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Bedienfeld &quot;Filter&quot;mithilfe vorkonfigurierter Voreinstellungen anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prädikate](/help/assets/searchx.md).
+Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Bedienfeld &quot;Filter&quot;mithilfe vorkonfigurierter Voreinstellungen anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prognosen](/help/assets/searchx.md).
 
 Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets suchen. Filter, die für einige dieser Eigenschaften gelten, sind standardmäßig verfügbar, und einige andere Filter können benutzerdefiniert erstellt werden, um sie auf die anderen Eigenschaften anzuwenden.
 
