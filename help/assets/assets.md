@@ -3,7 +3,7 @@ title: Info zu AEM Assets
 description: Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle und das AEM Asset-Angebot von Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
 
 ---
 
@@ -60,7 +60,7 @@ Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Me
 
 Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Terminologie vertraut sein:
 
-* **Sammlung** Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
+* **Sammlung** Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), den allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
 
 * **Metadaten** -Assets enthalten Metadaten; zum Beispiel Autor, Ablaufdatum, DRM-Informationen (Digital Rights Management) usw. Metadaten sind unter der Zugangssteuerung zu finden. AEM Assets unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
 
@@ -72,7 +72,7 @@ Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Termino
 
 * **Darstellungen** Eine Darstellung ist die binäre Darstellung eines Assets. Assets verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
 
-* **Versionen** -Versionierung erstellt einen Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt. Sie können frühere Versionen von Assets wiederherstellen. Siehe Versionierung in AEM Assets.
+* **Versionen** -Versionierung erstellt einen Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **Unter-Assets** sind Teilassets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Fotoshop-Datei oder Seiten in einer PDF-Datei. In AEM Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
 
@@ -80,7 +80,7 @@ Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Termino
 
 Sie können für Assets oder Sammlungen Aktionen durchführen. Mit Aktionen können Assets, Sammlungen und Darstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen - Hochladen, Löschen, Aktualisieren, Speichern von Teilassets - lösen vorkonfigurierte Workflows aus. Diese werden automatisch in AEM Assets aktiviert und detailliert in den Medien-Handlern für AEM Assets beschrieben.
 
-Die Aufgaben, die Sie mit diesen vorkonfigurierten Workflows ausführen können:
+Die Aufgaben, die mit den vorkonfigurierten Workflows ausgeführt werden können:
 
 * Speichern von Assets in oder Löschen aus dem Repository.
 * Extrahieren und Speichern von Metadaten der Assets. Die einzelnen Metadatenelemente werden als XMP gespeichert.
