@@ -1,58 +1,53 @@
 ---
-title: Versionshinweise zu AEM Assets
+title: Versionshinweise zu Adobe Experience Manager Assets
 description: Die neuen Funktionen und Erweiterungen für Adobe Experience Manager 6.5 Assets.
-uuid: f785029d-e0fd-494f-b215-7b4caca4e806
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 1ab34a42-2f0e-4b05-a7b6-2fc8dca07ef5
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 95d9ed8a0ccfa7651b83058d337511dd6b15665f
+source-git-commit: 23f838b681d4d9eda55e287519f330addf7928aa
 
 ---
 
 
-# AEM Assets Versionshinweise{#aem-assets-release-notes}
+# Versionshinweise zu Adobe Experience Manager Assets {#aem-assets-release-notes}
 
-Im Folgenden werden die wichtigsten Funktionen und Highlights von AEM 6.5 Assets aufgeführt.
+Im Folgenden finden Sie die wichtigsten Funktionen und Highlights der Version Adobe Experience Manager 6.5 Assets.
 
-## Integration in Adobe Creative Cloud und kreative Workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
+## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
-AEM bietet verschiedene Möglichkeiten, um Adobe Creative Cloud zu integrieren und Assets für die Verwendung in Workflows freizugeben, in denen Kreativ-, Marketing- oder Businessteams eng zusammenarbeiten. AEM 6.5 ermöglicht eine noch bessere Integration und stärkere Optimierung. Das Ergebnis: mehr Chancen und die Verbesserung vorhandener Methoden.
+[!DNL Adobe Experience Manager] bietet verschiedene Möglichkeiten, um zu integrieren und Assets für die Verwendung in Workflows freizugeben, in denen Kreativ-, Marketing- oder Businessteams eng zusammenarbeiten. [!DNL Adobe Creative Cloud] [!DNL Experience Manager] 6.5 ermöglicht eine noch bessere Integration und stärkere Optimierung. Das Ergebnis: mehr Chancen und die Verbesserung vorhandener Methoden.
 
-Im Folgenden werden die spezifischen Funktionen und Integrationsmöglichkeiten von AEM 6.5 beschrieben, mit denen Sie Ihre Content-Velocity-Nutzungsszenarien optimal unterstützen können.
+Read on to know the specific capabilities and integrations of [!DNL Experience Manager] 6.5 that you can leverage to best support your content velocity use cases.
 
 ### Adobe Asset Link {#aal}
 
-Adobe Asset Link stärkt die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Kreative können auf Inhalte zugreifen, die in Adobe Experience Manager Assets (AEM Assets) gespeichert sind, ohne die ihnen besonders vertrauten Apps verlassen zu müssen. Kreative können mit dem In-App-Bedienfeld in Photoshop, Illustrator und InDesign Assets nahtlos (durch) suchen sowie ein- und auschecken.
+[!DNL Adobe Asset Link] stärkt die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Inhaltserstellung. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
 
-Adobe Asset Link ist Teil des [Creative Cloud-Angebots für Unternehmen](https://www.adobe.com/creativecloud/business/enterprise.html). Weitere Informationen, einschließlich der erforderlichen Konfiguration für Ihre AEM-Bereitstellung, finden Sie unter [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). 
+[!DNL Adobe Asset Link] ist Teil der [Creative Cloud für Unternehmen](https://www.adobe.com/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
-![Asset-Suche in Photoshop](assets/asset_search_photoshop.png)
+![Suchen von Assets in Adobe Fotoshop](assets/asset_search_photoshop.png)
 
-### Adobe Stock-Integration {#stock}
+### [!DNL Adobe Stock] integration {#stock}
 
-Ihr Unternehmen kann seinen Adobe Stock-Unternehmensplan in AEM Assets verwenden, um sicherzustellen, dass lizenzierte Assets für Ihre Kreativ- und Marketingprojekte allgemein verfügbar sind. Mit den leistungsstarken DAM-Funktionen von AEM können Sie schnell nach Adobe Stock-Assets suchen und diese im Nu in einer Vorschau anzeigen sowie lizenzieren.
+Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for your creative and marketing projects. You can quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in Experience Manager, using the powerful DAM capabilities of [!DNL Experience Manager].
 
-Der Adobe Stock-Service bietet Designern und Unternehmen Zugang zu Millionen von hochwertigen, kuratierten und gebührenfreien Fotos, Vektorgrafiken, Illustrationen, Videos, Vorlagen und 3D-Assets für sämtliche Kreativprojekte.
+[!DNL Adobe Stock] Der Dienst bietet Designern und Unternehmen Zugriff auf Millionen von hochwertigen, kuratierten, gebührenfreien Fotos, Vektoren, Illustrationen, Videos, Vorlagen und 3D-Assets für all ihre kreativen Projekte.
 
-Weitere Informationen finden Sie unter [Adobe Stock-Assets in AEM Assets verwenden](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use DNL Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Vorschau von Adobe Stock-Bildern und Lizenzierung in AEM Assets](assets/stock_image_preview_license_options.png)
+![Vorschau des Adobe Stock-Images und der Lizenz aus Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
-Vorschau von Adobe Stock-Bildern und Lizenzierung in AEM Assets
+*Abbildung: Vorschau[!DNL Adobe Stock]Image und Lizenz von innen[!DNL Experience Manager Assets].*
 
-![Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in AEM](assets/aem-search-filters2.jpg)
+![Suchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager](assets/aem-search-filters2.jpg)
 
-Durchsuchen und Filtern der lizenzierten Adobe Stock-Bilder in AEM
+*Abbildung: Suchen und filtern Sie die lizenzierten[!DNL Adobe Stock]Bilder in[!DNL Experience Manager].*
 
-### Dynamic references in Adobe InDesign {#dynamic-references-in-indesign}
+### Dynamic references in [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
 
-Die in Adobe InDesign verwendeten AEM-Assets sind dynamisch. Die Verweise werden automatisch aktualisiert, wenn die referenzierten Assets in die JCR-Hierarchie verschoben werden. Weitere Informationen finden Sie unter [Verwalten von ebenenübergreifenden Assets](/help/assets/managing-linked-subassets.md).
+[!DNL Experience Manager Assets] in [!DNL Adobe InDesign] Dateien verwendet werden dynamisch. Die Verweise werden automatisch aktualisiert, wenn die referenzierten Assets im Repository verschoben werden. Weitere Informationen finden Sie unter [Verwalten von zusammengesetzten Assets](/help/assets/managing-linked-subassets.md).
 
 ## Brand Portal-Funktionen {#brand-portal-capabilities}
 
-Mit AEM Assets Brand Portal können Sie problemlos genehmigte Assets abrufen, diese wirksam kontrollieren und sicher und geräteübergreifend an externe Anbieter/Agenturen und interne Geschäftsanwender verteilen. Brand Portal ermöglicht eine effizientere Asset-Freigabe sowie schnellere Time-to-Market für Assets und verringert das Risiko von Nicht-Compliance und unbefugtem Zugriff.
+[!DNL Experience Manager Assets Brand Portal]Mit können Sie problemlos genehmigte Assets abrufen, diese wirksam kontrollieren und sicher und geräteübergreifend an externe Anbieter/Agenturen und interne Geschäftsanwender verteilen. Brand Portal ermöglicht eine effizientere Asset-Freigabe sowie schnellere Time-to-Market für Assets und verringert das Risiko von Nicht-Compliance und unbefugtem Zugriff.
 
 Weitere Informationen finden Sie unter [Neue Funktionen in AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html).
 
@@ -60,23 +55,21 @@ Weitere Informationen finden Sie unter [Neue Funktionen in AEM Assets Brand Por
 
 In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infrastruktur verteilt werden. Manchmal befinden sich die Funktionen zur Website-Erstellung und die hierfür benötigten digitalen Assets in unterschiedlichen Silos.
 
-AEM Sites bietet Funktionen zum Erstellen von Webseiten, während AEM Assets das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. AEM unterstützt nun dank Integration von AEM Sites und AEM Assets das obige Nutzungsszenario.
+[!DNL Experience Manager Sites] bietet Funktionen zum Erstellen von Webseiten, während das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. [!DNL Experience Manager Assets] [!DNL Experience Manager] unterstützt nun den oben genannten Anwendungsfall durch Integration [!DNL Sites] und [!DNL Assets]. Siehe [Konfigurieren und Verwenden der Funktion](/help/assets/use-assets-across-connected-assets-instances.md)&quot;Connected Assets&quot;.
 
-Weitere Informationen finden Sie unter [Verwenden von Assets aus Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
+![Ziehen eines Assets aus einer [!DNL Experience Manager] Bereitstellung auf einer [!DNL Sites] Seite einer anderen [!DNL Experience Manager] Bereitstellung](assets/connected-assets-drag-and-drop-only.gif)
 
-![Drag-and-Drop von DAM-Assets aus einer AEM-Instanz auf einer Sites-Seite in eine andere AEM-Instanz](assets/connected-assets-drag-and-drop-only.gif)
-
-Verschieben von DAM-Assets per Drag-and-Drop aus einer AEM-Instanz auf einer Sites-Seite in eine andere AEM-Instanz
+*Abbildung: Ziehen Sie ein Asset aus einer[!DNL Experience Manager]Bereitstellung auf einer[!DNL Sites]Seite in eine andere[!DNL Experience Manager]Bereitstellung.*
 
 ## Dynamic Media {#dynamic-media}
 
-Dynamic Media bietet eine erweiterte Rich-Media-Erstellung und -Bereitstellung in AEM Assets für beeindruckend intensive, personalisierte Erlebnisse. Durch Hochladen eines einzigen hochwertigen Master-Assets und Verwenden unserer erweiterten Cloudrendering-Funktion und Viewer können Sie eine beliebige Kombination von Ausgabeformaten direkt bereitstellen und so die Medienstrategie Ihres Unternehmens unterstützen.
+[!DNL Dynamic Media] bietet erweiterte Rich-Media-Authoring- und Versände, [!DNL Experience Manager Assets] um innovative und personalisierte Erlebnisse zu fördern. Durch das Hochladen eines einzelnen hochwertigen Master-Assets und die Verwendung unseres erweiterten Cloud-Renderings und der Viewer können Sie jede beliebige Kombination von Darstellungen spontan bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
 
-Weitere Informationen zu neuen Dynamic Media-Funktionen finden Sie in den [Versionshinweisen zu Dynamic Media](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
+For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
 
 ### Unterstützung für 360°-Videos {#video-support}
 
-Mit den hochmodernen Viewern von Dynamic Media können Sie 360°-Videodateien direkt in AEM verwalten, um VR-Erlebnisse auf Desktops, Mobilgeräten und VR-Headsets bereitzustellen. Weitere Informationen finden Sie unter [Verwenden von 360°-Videos](/help/assets/360-video.md).
+Manage your 360-video files directly in [!DNL Experience Manager] using the cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. Weitere Informationen finden Sie unter [Verwenden von 360°-Videos](/help/assets/360-video.md).
 
 ### Benutzerdefinierte Videominiaturen {#custom-video-thumbnails}
 
@@ -84,30 +77,30 @@ Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus de
 
 ### Verbesserte Barrierefreiheit {#accessibility-enhancements}
 
-Dynamic Media-Viewer unterstützen nun erweiterte Funktionen zur Barrierefreiheit wie ARIA-Unterstützung, Sprachausgabe und alternativen Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alt-Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
 
 ## Verbessertes Sucherlebnis {#search-experience-enhancement}
 
-Ab AEM 6.5 können Marketingexperten die gewünschten Assets schneller von der Suchergebnisseite aus entdecken. Die Suchfacetten werden mit der Anzahl der Assets aktualisiert, noch bevor der Suchfilter angewendet wird. Durch Anzeige der erwarteten Anzahl im Filter können Benutzer effizient durch Suchergebnisse navigieren. Weitere Informationen finden Sie unter [Suche nach Assets in AEM](../assets/search-assets.md).
+[!DNL Experience Manager] Ab 6.5 können Marketingexperten die gewünschten Assets schneller von der Suchergebnisseite aus entdecken. Die Suchfacetten werden mit der Anzahl der Assets aktualisiert, noch bevor der Suchfilter angewendet wird. Durch Anzeige der erwarteten Anzahl im Filter können Benutzer effizient durch Suchergebnisse navigieren. For more information, see [Search assets in Experience Manager](../assets/search-assets.md).
 
 ![Anzeigen der Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten](/help/assets/assets/asset_search_results_in_facets_filters.png)
 
-Anzeigen der Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten
+*Abbildung: Zeigen Sie die Anzahl der Assets ohne Filterung der Suchergebnisse in den Suchfacetten an.*
 
 ## Größere Anwenderfreundlichkeit {#usability-enhancement}
 
-Sie können nun alle Assets in einem Ordner oder aus einem Suchergebnis in einem Schritt auswählen. Dies ermöglicht eine schnelle Verwaltung aller Assets. Mit dem Kontrollkästchen werden alle zum Szenario passenden Assets ausgewählt, beispielsweise ein Suchergebnis, und nicht nur die in der AEM-Oberfläche angezeigten Assets.
+Sie können jetzt alle geladenen Assets in einem Ordner oder aus einem Suchergebnis in einem Schritt auswählen. Dies ermöglicht eine schnelle Verwaltung aller Assets. The check box selects all the assets that fits the scenario, say a search result and not just the assets that are visible in the [!DNL Experience Manager] interface.
 
-![Auswahl aller Assets mit einem Klick über die Option „Alle auswählen“](assets/select-all-in-aem-assets.gif)
+![Mit der Option &quot;Alle auswählen&quot;können Sie alle geladenen Assets mit einem Klick auswählen.](assets/select-all-in-aem-assets.gif)
 
-Auswahl aller Assets mit einem Klick über die Option „Alle auswählen“
+*Abbildung: Verwenden Sie die Option &quot;Alle auswählen&quot;, um alle geladenen Assets mit einem Klick auszuwählen.*
 
 ## Verbesserte Metadaten {#metadata-enhancements}
 
-Mit Assets können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Ordnereigenschaften-Seiten angezeigten Layouts und Metadaten definieren. Sie können einem vorhandenen Ordner ein Ordner-Metadatenschema zu diesem Zeitpunkt oder beim Erstellen eines neuen Ordners zuweisen. Weitere Informationen finden Sie unter [Ordner-Metadatenschema](/help/assets/folder-metadata-schema.md).
+[!DNL Assets]Mit können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Ordnereigenschaften-Seiten angezeigten Layouts und Metadaten definieren. Sie können einem vorhandenen Ordner ein Ordner-Metadatenschema zu diesem Zeitpunkt oder beim Erstellen eines neuen Ordners zuweisen. Weitere Informationen finden Sie unter [Ordner-Metadatenschema](/help/assets/folder-metadata-schema.md).
 
 Beim Festlegen kaskadierender Metadaten können die Optionen zur Laufzeit aus einer JSON-Datei geladen werden, anstatt sie manuell in das Formular einzugeben. Weitere Informationen finden Sie unter [Kaskadierende Metadaten](/help/assets/cascading-metadata.md).
 
 ## Verbessertes Reporting {#reporting-enhancements}
 
-Standardmäßig sind die Inhaltsfragmente und Linkfreigaben nun im Bericht „Asset heruntergeladen“ enthalten. Weitere Informationen finden Sie unter [Asset-Berichte](/help/assets/asset-reports.md).
+Die Inhaltsfragmente und die Linkfreigabe sind jetzt im heruntergeladenen Bericht enthalten. Weitere Informationen finden Sie unter [Asset-Berichte](/help/assets/asset-reports.md).
