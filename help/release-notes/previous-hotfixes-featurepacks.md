@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7ae0055e09c3ae2ff2898ac4f6c537a825dc0cf0
+source-git-commit: 7345d629aa628c2e2e094a8194d9306d7c3d2d60
 
 ---
 
@@ -22,19 +22,19 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.6 aktualisiert.
 
-* Experience Manager Assets unterstützt jetzt ZIP-Archive, die mit dem Deflate 64-Algorithmus erstellt wurden.
+* Adobe Experience Manager Assets unterstützt jetzt ZIP-Archive, die mit dem Deflate64-Algorithmus erstellt wurden.
 
-* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM-Listenansicht und in den Asset-Suchergebnissen in der Listenansicht hinzugefügt.
+* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM-Liste Ansicht und in den Asset-Suchergebnissen in der Ansicht der Liste hinzugefügt.
 
-* Die Sortierung von Assets basierend auf der Spalte Name wurde in der Listenansicht aktiviert.
+* Die Sortierung von Assets basierend auf der Spalte &quot;Name&quot;wurde in der Ansicht &quot;Liste&quot;aktiviert.
 
 * Dynamische Medien unterstützen jetzt Smart-Zuschneiden von Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen.
 
 * Dynamische Medien unterstützen Smart Imaging.
 
-* Möglichkeit zum [Festlegen von Abwesenheitseinstellungen](../forms/using/configure-out-of-office-settings.md) in AEM-Workflows.
+* Möglichkeit zum [Festlegen von Abwesenheitseinstellungen](../forms/using/configure-out-of-office-settings.md) in AEM Workflows.
 
-* Möglichkeit, Inbox- oder Inbox-Elemente [für andere Benutzer in AEM-Workflows zu](../forms/using/configure-shared-queues-osgi.md) freigeben.
+* Möglichkeit zur [Freigabe von Inbox- oder Inbox-Elementen](../forms/using/configure-shared-queues-osgi.md) für andere Benutzer in AEM Workflows.
 
 * Möglichkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
@@ -46,39 +46,39 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Experience Manager Assets unterstützt jetzt ZIP-Archive, die mit dem Deflate 64-Algorithmus (NPR-27573) erstellt wurden.
 
-* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM-Listenansicht und in den Asset-Suchergebnissen in der Listenansicht hinzugefügt (NPR-31312).
+* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM Liste Ansicht und in den Asset-Suchergebnissen in der Liste Ansicht (NPR-31312) hinzugefügt.
 
-* Asset-Sortierung basierend auf der Spalte &quot;Name&quot;wurde in der Listenansicht zugelassen (NPR-31299).
+* Die Sortierung nach der Spalte &quot;Name&quot;ist in der Ansicht &quot;Liste&quot;zulässig (NPR-31299).
 
 * Die Asset-Dateien GLB, GLTF, OBJ und STL unterstützen die Asset-Vorschau auf der Seite &quot;Asset-Details&quot;in DAM (CQ-4282277).
 
-* Das ReplicationOnModifyListener-Ereignis wird beim Hochladen von Chunk-Knoten in dynamischen Medien (CQ-4281279) ausgelöst.
+* ReplicationOnModifyListener-Ereignis wird beim Hochladen von Segmenten in dynamischen Medien (CQ-4281279) für Chunk-Knoten ausgelöst.
 
 * Dynamische Medien unterstützen jetzt Smart-Zuschneiden von Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen (CQ-4278995).
 
 * Dynamic Media unterstützt Smart Imaging (CQ-4222249).
 
-* Die Such-/Durchsuchen-Ansicht wurde als Standardansicht in der Foundation-Auswahl festgelegt, wenn Abfrageparameter in einer Anforderung übergeben werden (NPR-31601).
+* Die Ansicht &quot;Suchen/Durchsuchen&quot;wurde in der Foundation-Auswahl als Standard-Ansicht festgelegt, wenn Abfrage-Parameter in der Anforderung übergeben werden (NPR-31601).
 
 **Fehlerkorrekturen**
 
-* Metadaten für einige PDF-Dokumente werden beim Ändern des Titels (NPR-31629) nicht aktualisiert und im PDF gespeichert.
+* Metadaten für einige PDF-Dokumente werden beim Ändern des Titels (NPR-31629) nicht aktualisiert und im PDF-Format gespeichert.
 
 * Asset Sharing funktioniert nicht für Assets, deren Name das Pluszeichen &quot;+&quot;enthält (NPR-31547).
 
 * Änderungen im Standardsuchformular Assets Admin * Suchleiste funktionieren nicht wie erwartet (NPR-31502).
 
-* Vorschläge werden nicht angezeigt, wenn Sie Omniture Search für die Asset-Ansicht zum Durchsuchen von Assets verwenden (NPR-31496).
+* Vorschläge werden nicht angezeigt, wenn Sie die Omniture-Ansicht für Assets zum Durchsuchen von Assets verwenden (NPR-31496).
 
 * Asset-Verweise in Sammlungen werden nicht aktualisiert, wenn die referenzierten Assets an einen anderen Speicherort verschoben werden, sofern dieselben Assets von verschiedenen Benutzern durch unterschiedliche Sammlungen referenziert werden (NPR-31486).
 
-* Duplizierte IPTC-Tags werden zu Asset-Metadaten hinzugefügt (NPR-31328).
+* Duplikat-IPTC-Tags werden Asset-Metadaten hinzugefügt (NPR-31328).
 
 * Die Suchergebnisanzahl in der oberen rechten Ecke wird nicht korrekt aktualisiert, wenn die Suche über die Filterleiste ausgelöst wird (NPR-31316).
 
 * Alle Kontrollkästchen werden deaktiviert, wenn die Kontrollkästchen der zweiten Ebene im Filter &quot;Dateityp&quot;deaktiviert werden, und der Text in der Suchleiste ist nicht mit den ausgewählten/nicht ausgewählten Eigenschaften synchronisiert (NPR-31287).
 
-* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Bereich &quot;Mitglieder&quot;eines Ordners entfernt werden. bei dem Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
+* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Bereich &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
 
 * Assets mit dem Pluszeichen &quot;+&quot;im Dateinamen können nicht gelöscht werden (NPR-31162).
 
@@ -86,7 +86,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Ordnerauswahl &quot;Erstellen&quot;> &quot;DateiUpload&quot;-Aktionselement fehlt, wenn ACL für &quot;Ablehnen&quot;(jcr:removeChildNodes) und &quot;jcr:removeNode&quot;auf Pfad für einen Benutzer angewendet werden (NPR-30840).
 
-* DAM-Workflows werden beim Hochladen bestimmter MP4-Assets in den Status &quot;Stall&quot;versetzt, sodass alle verbleibenden Workflows in den Status &quot;Stable&quot;versetzt werden (NPR-30662).
+* DAM Workflows beim Hochladen bestimmter MP4-Assets in den Status &quot;statisch&quot;wechseln, wodurch alle verbleibenden Workflows in den Status &quot;statisch&quot;wechseln (NPR-30662).
 
 * Fehler wegen ungenügenden Speicherplatzes werden beobachtet, wenn große PDF-Dateien (mit mehreren Gigabytes) zu DAM hochgeladen und deren Teilassets verarbeitet werden (NPR-30614).
 
@@ -94,7 +94,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Beim Verschieben von Assets aus einem Ordner in einen anderen in AEM, das im Dynamic Media Scene7-Runmode ausgeführt wird (NPR-31630), werden die Asset-Namen in Kleinbuchstaben geändert.
 
-* Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler festgestellt, da sich das Bild im Ordner befindet, der mit dem Namen des Scene7-Unternehmens identisch ist (NPR-31340).
+* Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler festgestellt, da sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31340).
 
 * Dynamische Medienelemente, die Verweise enthalten, werden nicht veröffentlicht (NPR-31180).
 
@@ -110,13 +110,13 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Der Arbeitsablauf für die Videokodierung mit dynamischer Medienkodierung kann keine Miniaturansicht für das Video generieren, das aus Scene7 in den Modus für die Ausführung von Scene7 migriert wird (CQ-4282011).
 
-* Bei der Migration von Assets von einer Instanz zu einer anderen mit unterschiedlichen Scene7-Unternehmens-IDs wurde eine IpsApiException beobachtet (CQ-4280548).
+* Bei der Migration von Assets von einer Instanz zu einer anderen mit unterschiedlichen Scene7-Firmen-IDs (CQ-4280548) wurde eine IpsApiException-Ausnahme beobachtet.
 
 * Die Miniaturansicht von 3D-Assets ist nicht informativ, wenn ein unterstütztes 3D-Modell in AEM integriert wird (CQ-4283701).
 
-* Bildlaufschaltflächen werden im Viewer angezeigt, wenn ein 3D-Asset nur über wenige Kameraansichten verfügt (CQ-4283322).
+* Bildlaufschaltflächen werden im Viewer angezeigt, wenn ein 3D-Asset nur über wenige Ansichten verfügt (CQ-4283322).
 
-* Falsche Behälterhöhe eines hochgeladenen 3D-Modells, das auf der Seite &quot;Asset-Details&quot;im DimensionalViewer in der Vorschau angezeigt wird (CQ-4283309).
+* Falsche Höhe des Containers eines hochgeladenen 3D-Modells, das auf der Seite &quot;Asset-Details&quot;in der Vorschau in DimensionalViewer angezeigt wird (CQ-4283309).
 
 * Videos können nicht mit SmartCropVideoViewer in Internet Explorer 11 und Safari wiedergegeben werden (CQ-4281422).
 
@@ -124,7 +124,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Verzerrtes Video wird in Asset-Details angezeigt, wenn der MIME-Typ nicht MP4 ist (CQ-4279704).
 
-* Videos, die neu in Ordnern mit Videoprofil aufgenommen wurden, bleiben auch nach Abschluss der Kodierung auf 100 % im Verarbeitungszustand (CQ-4279389).
+* Neuaufgenommene Videos in Ordnern mit Video-Profil bleiben auch nach Abschluss der Kodierung auf 100 % im Verarbeitungszustand (CQ-4279389).
 
 * Durch das Verschieben von Assets aus einem Ordner werden zahlreiche Sling-Aufträge (Scene7-API-Aufrufe) generiert, die im Idealfall erforderlich sind (CQ-4278664).
 
@@ -138,13 +138,13 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Fehler &quot;Gruppe nicht nach Benutzerauswahl aufgeführt: &quot;false to equal true&quot;wird beim Hinzufügen von &quot;Closed User Group&quot;mit &quot;different&quot; `principalName` und `authorizableId` (CQ-4278177) beobachtet.
 
-* Die Ansicht &quot;Assets UI-Spalte&quot;zeigt alle Pfade unabhängig vom Pfad des Stammordners (CQ-4278175) an.
+* Die Ansicht &quot;Assets UI Column&quot;zeigt alle Pfade unabhängig vom Stammpfad des jeweiligen Mandanten an (CQ-4278175).
 
 * Die Suche des Asset-Selektors funktioniert nicht wie erwartet (CQ-4275886).
 
-* Darstellungs-Workflows funktionieren nicht (CQ-4271928).
+* Die Workflows sind fehlgeschlagen (CQ-4271928).
 
-* DAM Event Purge löscht die neuesten (maxSavedActivities) Ereignisdaten und speichert die zuvor erstellten Daten (NPR-31336).
+* DAM Ereignis Purge löscht die neuesten (maxSavedActivities) Ereignis-Daten und speichert die zuvor erstellten Daten (NPR-31336).
 
 * Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
 
@@ -157,19 +157,19 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Wenn die LiveCopy-Vererbung beschädigt ist, werden auf Live-Kopierseiten anstelle von LiveCopy-Links Sprachkopie-Links angezeigt (NPR-30980).
 * Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint zeigt leere Zeilen für die übrigen Datensätze an (NPR-31182).
 * Wenn ein Benutzer japanische oder koreanische Zeichen in die Eigenschaft description eines Menüs einfügt, werden im Menü verzerrte Zeichen für japanischen und koreanischen Text angezeigt. (NPR-31331).
-* Rich Text Editor (RTE) erlaubt es nicht, eine eingebettete Tabelle als Listenelement einzufügen (NPR-30879).
+* Rich Text Editor (RTE) erlaubt nicht, eine eingebettete Liste als Element einzufügen (NPR-30879).
 * Standardmäßig wird der RTE-Editor (RTE) mit Gerüsten versehen. wendet die Inline-Schriftgröße unerwartet auf Elemente an (NPR-31284).
 * Wenn ein Benutzer sich auf Felder in der linken Schiene konzentriert und zum Einfügen von Inhalten einen Tastaturbefehl verwendet, wird der Inhalt der Zwischenablage des Seiteneditors anstelle des Inhalts eingefügt, der aus den Feldern der linken Schiene kopiert wurde (NPR-31172).
 * Wenn ein Benutzer ein Feld zum Hochladen von Dateien zu einem Multifeld hinzufügt, wird der Bildpfad im Komponentenknoten und nicht im Multifield-Knoten (NPR-30882) gespeichert.
 * Die ResponsiveGridExporter-API gibt die com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter-Schnittstelle nicht zurück. Das Paket com.day.cq.wcm.foundation.model.impl wird als privates Paket deklariert (NPR-31398).
 * Wenn eine Seite mit ExperienceFragments im Nicht-Editor-Modus geöffnet wird (entweder im Autorenmodus ohne das `editor.html` Präfix und `wcmmode=disabled`im Publisher)., endet die Anforderung im HTTP-Statusfehlercode 500 (NPR-30743).
-* Benutzer können ihr Kennwort nicht ändern und auf ihre Profilseite zugreifen (NPR-31161).
+* Benutzer können ihr Kennwort nicht ändern und nicht auf ihre Profil-Seite zugreifen (NPR-31161).
 
 ### Suchen und Benutzeroberfläche {#search-ui-interface}
 
-* Beim Wechsel von der Kartenansicht zur Listenansicht auf einer Suchergebnisseite kommt es zu einer Verzögerung, bevor ein Bildlauf der Seite durchgeführt werden kann (NPR-31286).
+* Beim Wechsel von der Card-Ansicht zur Liste-Ansicht auf einer Suchergebnisseite kommt es zu einer Verzögerung, bevor ein Bildlauf durchgeführt werden kann (NPR-31286).
 
-* Das Kontrollkästchen &quot;Alle auswählen&quot;ist in der Listenansicht der Benutzeroberfläche &quot;Sites&quot;ausgeblendet (NPR-31614).
+* Das Kontrollkästchen &quot;Alle auswählen&quot;ist in der Ansicht &quot;Liste&quot;auf der Benutzeroberfläche der Sites (NPR-31614) ausgeblendet.
 
 * Die Zählung &quot;Alle auswählen&quot;auf einer Suchergebnisseite ist nicht korrekt (NPR-31120).
 
@@ -187,9 +187,9 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Aktualisierungen der Puffergrößenkonfiguration für den Jetty-basierten HTTP-Dienst werden nicht gespeichert (NPR-30925).
 
-* QueryBuilder unterstützt jetzt orderby ``fn:name()`` in xpath Abfragen (NPR-31322).
+* QueryBuilder unterstützt jetzt orderby ``fn:name()`` in xpath-Abfragen (NPR-31322).
 
-* Bei der Aktualisierung von AEM 6.3 (NPR-31513) wird eine doppelte Aktivierungsstruktur erstellt.
+* Die Struktur der Duplikat-Aktivierung wird beim Aktualisieren von AEM 6.3 (NPR-31513) erstellt.
 
 * Bei weitergeleiteten Anforderungen werden keine Antwortheader beibehalten, die während der Sling-Authentifizierung festgelegt werden (NPR-30013).
 
@@ -201,7 +201,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 ### Projekte {#projects}
 
-* Das Wechseln von Kalenderansichten funktioniert nicht (NPR-31271).
+* Das Wechseln von Kalendereinstellungen funktioniert nicht (NPR-31271).
 
 ### Brand Portal {#assets-brand-portal}
 
@@ -215,7 +215,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Beim Erstellen eines neuen Beitragsordners werden ein oder beide Unterordner (NEU und FREIGEGEBEN) nicht im Beitragsordner (CQ-4282424) angezeigt.
 * System gibt eine Ausnahme aus, wenn der Benutzer versucht, den Beitragsordner von AEM in das Markenportal erneut zu veröffentlichen, nachdem er neue Assets aus dem Beitragsordner vom Markenportal-Ende (CQ-4279740) erhalten hat.
 * Das Erstellen eines Beitragsordners in einem Beitragsordner (verschachtelter Ordner) ist verboten, um Komplexität zu vermeiden (CQ-4278391).
-* Das System gibt beim Hochladen der aus der AEM Admin Console importierten Markenportal-Benutzerliste (.csv-Datei) eine Ausnahme aus. Nur die Felder &quot;E-Mail&quot;, &quot;Vorname&quot;und &quot;Nachname&quot;in der .csv-Datei sind obligatorisch (CQ-4278390).
+* Das System gibt beim Hochladen der aus der AEM Admin Console importierten Markenportal-Liste (.csv-Datei) eine Ausnahme aus. Nur die Felder &quot;E-Mail&quot;, &quot;Vorname&quot;und &quot;Nachname&quot;in der .csv-Datei sind obligatorisch (CQ-4278390).
 
 ### Communities {#communities}
 
@@ -223,7 +223,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Schnelllinks zum Verwalten von Gruppen (Gruppen öffnen/bearbeiten/Veröffentlichen/Löschen) sind für Community-Administratoren nicht sichtbar (Gruppenadministrator/Site-Administrator) (NPR-31627).
 * Ein gesendeter Blog wird nur angezeigt, wenn die Seite manuell aktualisiert/neu geladen wird (NPR-31599).
-* Bei der JCR-Abfrage, die von der Funktion &quot;Erwähnungen&quot;verwendet wird, wird zwischen Groß- und Kleinschreibung unterschieden. Die Rückgabe der Ergebnisse dauert zu lange (NPR-31475).
+* Bei der von der Funktion &quot;Erwähnungen&quot;verwendeten JCR-Abfrage wird zwischen Groß- und Kleinschreibung unterschieden. Die Rückgabe der Ergebnisse dauert zu lange (NPR-31475).
 * AEM 6.5 UberJar-Datei löst eine Ausnahme aus, da das `cq-social-translation` Bundle in der AEM 6.5 UberJar-Datei (NPR-31186) fehlt.
 * Jackson Databind-Bibliotheken wurden auf Version 2.9.9.3 aktualisiert, um neue Schwachstellen zu beheben (NPR-30967).
 * Die Titel der Aktivitäten und Benachrichtigungen sind inkonsistent (NPR-30941).
@@ -258,7 +258,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * **Textflussformatierung wird beim Speichern von Briefen als Entwürfe nicht mehr unterstützt** (NPR-30463).
 
-**Workflow**
+**Arbeitsablauf**
 
 * OSGi-Arbeitsablauf schlägt aufgrund der 100%igen CPU-Auslastung (NPR-31233) fehl.
 
@@ -298,7 +298,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Funktionalität von Connected Assets wurde dahingehend erweitert, dass jetzt auch das Abrufen von Dokumenten aus Remote-DAM-Implementierungen unterstützt wird. Site-Autoren können jetzt die Inhaltssuche verwenden, um unterstützte Dokumenttypen zu durchsuchen und zu filtern. Die Remote-Dokumente können der Download-Komponente auf Webseiten hinzugefügt werden. Siehe [Verwenden von Connected Assets](../assets/use-assets-across-connected-assets-instances.md).
 
-* EnhanceDokumenttypfilter mit mehr MIME-Typen, um Optionen mit mehreren Werten zu unterstützen.
+* EnhanceDokumenttyp-Filter mit mehr MIME-Typen zur Unterstützung von Optionen mit mehreren Werten.
 * Ein Workflow zur erneuten, externen Verarbeitung wurde zur Unterstützung für mehrere Ressourcen eingeführt.
 * Anhand von Asset-Standardfiltern für die Replikation wird die Performance von Dynamic Media optimiert.
 * Für den Dynamic Media Scene 7-Modus (DMS7) wurden die Optionen zum Zuschneiden/Drehen von Assets wiederhergestellt.
@@ -338,7 +338,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Die Funktion „Link freigeben“ funktioniert nicht auf einer AEM-Instanz mit DMS7-Konfiguration. NPR-30080, NPR-30492: Hotfix für CQ-4273651
 * Das Hinzufügen der Dynamic Media Scene7-Komponente zur Seite und das anschließende Veröffentlichen der Seite lösen nicht jedes Mal die Konfiguration von dmscene7 aus. NPR-30641: Hotfix für CQ-4275962
 * In AEM wurde ein IPSJobJournal ergänzt, damit pro Verarbeitungsprofil nur ein IPS-Auftrag (Intrusion Prevention System) erstellt wird. NPR-30490: Hotfix für CQ-4273614
-* Dynamische Medien: Es wurden Standardfilter hinzugefügt, um Assets von der Replizierung auf den AEM-Veröffentlichungsknoten auszuschließen. NPR-30538: Hotfix für CQ-4274678
+* Dynamische Medien: Es wurden Standard-Filter hinzugefügt, um Assets von der Replizierung auf den AEM-Veröffentlichungsknoten auszuschließen. NPR-30538: Hotfix für CQ-4274678
 * Ein Workflow zur erneuten, externen Verarbeitung wurde zur Unterstützung für mehrere Ressourcen eingeführt, der die Nutzung von Ordnern als Nutzlast ermöglicht. Der Workflow umfasst zwei Schritte: Die erneute Verarbeitung von Assets ohne Handles erfolgt über die Zuordnung von Metadaten zum nächsten Schritt, das erneute Hochladen aller Assets ohne Asset-Handle zu S7 dann in einem einzelnen IPS-Auftrag. Weitere Informationen finden Sie unter „Konfigurieren von Dynamic Media Cloud Services“. NPR-30489: Hotfix für CQ-4272903
 * Wird nach der korrekten CSV-Datei eine falsche CSV-Datei hochgeladen, wird die korrekte CSV-Datei gelöscht. Hotfix für CQ-4277694, CQ-4277814
 * Falsches Symbol für die zu entfernenden Beitragsordner. Hotfix für CQ-4277580
@@ -369,7 +369,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Wenn die LiveCopy-Vererbung beschädigt ist, werden auf Live Copy-Seiten Sprachkopie-Links anstelle von LiveCopy-Links angezeigt. (NPR-30980)
 * Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint zeigt leere Zeilen für die übrigen Datensätze an. (NPR-31182)
 * Rich Text Editor (RTE)-Plug-In der Textkomponente zeigt verzerrte Zeichen für japanischen und koreanischen Text an. (NPR-31331)
-* Rich Text Editor (RTE) erlaubt es nicht, eine eingebettete Tabelle als Listenelement einzufügen. (NPR-30879)
+* Rich Text Editor (RTE) erlaubt nicht, eine eingebettete Liste als Element einzufügen. (NPR-30879)
 * Rich Text Editor (RTE) wird standardmäßig auf Elemente mit Inline-Schriftgröße angewendet, was unerwartet geschieht. (NPR-31284)
 * Wenn sich ein Benutzer auf linke Schienenfelder konzentriert und zum Einfügen von Inhalten Tastaturbefehle verwendet, werden Inhalte der Zwischenablage des Seiteneditors anstatt des Inhalts eingefügt, der aus den Feldern der linken Leiste kopiert wurde. (NPR-31172)
 * Wenn ein Benutzer ein Feld zum Hochladen von Dateien zu einem Mehrfachfeld hinzufügt, wird der Bildpfad im Komponentenknoten und nicht im Multifield-Knoten gespeichert. (NPR-30882)
@@ -380,7 +380,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 **Produktverbesserungen**
 
-* EnhanceDokumenttypfilter mit mehr MIME-Typen, um Optionen mit mehreren Werten zu unterstützen. Hotfix für CQ-4270694
+* EnhanceDokumenttyp-Filter mit mehr MIME-Typen zur Unterstützung von Optionen mit mehreren Werten. Hotfix für CQ-4270694
 
 ### Verwaltung von Inhaltsfragmenten {#content-fragment-management-6520}
 
@@ -500,7 +500,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 ### Assets
 
 * Die DAM DMGGateway-Schnittstelle bietet jetzt Unterstützung für S3-Multipart. NPR-29740: Hotfix für CQ-4226303
-* Die Ausgabevorschau erzeugt `Only empty tenantId is currently supported` Fehler nach der Aktualisierung auf AEM 6.5\. NPR-29986: Hotfix für CQ-4272353
+* Die Vorschau &quot;Ausgabeformate&quot;erzeugt nach der Aktualisierung auf AEM 6.5\ `Only empty tenantId is currently supported` Fehler. NPR-29986: Hotfix für CQ-4272353
 * Da das Dialogfeld „Löschen“ nicht sichtbar ist, können Aufträge nicht gelöscht werden. NPR-29720: Hotfix für CQ-4271074
 * Wenn ein Benutzer nach dem Hinzufügen des Asset-Titels auf der Eigenschaftenseite versucht, die Seite zu schließen, öffnet AEM die Eigenschaftenseite erneut. NPR-29627: Hotfix für CQ-4264929
 * VersioningTimelineEventProvider sollte die Stammversion zusammen mit dem Knoten des Typs „nt: version“ bereitstellen. Hotfix für GRANITE-26063
@@ -537,7 +537,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 ### Experience Fragments
 
 * Exportieren von AEM Experience Fragments nach Adobe Target. Hotfix für CQ-4265469
-* Der Export von Erlebnisfragmenten als Ziel schlägt bei Smart-Bildern fehl. Hotfix für CQ-4269606
+* Der Export von Erlebnisfragmenten in die Zielgruppe schlägt mit dem intelligenten Bild fehl. Hotfix für CQ-4269606
 
 * Der Versuch, mithilfe von Omnisearch Experience Fragments in der Kartenansicht zu verschieben, führt nicht ans Ziel. Hotfix für CQ-4263848
 
@@ -616,7 +616,7 @@ Zu den wichtigsten Merkmalen von AEM 6.5.1.0 Forms gehören:
 * Wenn AEM Forms auf IBM WebSphere installiert ist, schlägt das Erstellen eines SOAP-basierten Formulardatenmodells fehl. Hotfix für CQ-4251134
 * Für die On-Premise-Integration von Microsoft Dynamics wurde Unterstützung für ADFS (Active Directory Federation Services) 3.0 ergänzt. Hotfix für CQ-4270586
 * Wenn der Titel einer Datenquelle geändert wird, zeigt das Formulardatenmodell den aktualisierten Titel nicht an. Hotfix für CQ-4265599
-* Wenn der Name einer Entität oder eines Attributs Bindestriche oder Leerzeichen enthält, können diese Entitäten und Attribute nicht ausgewertet werden. Hotfix für CQ-4225129
+* Wenn der Name einer Entität oder eines Attributs Bindestriche oder Leerzeichen enthält, können Ausdruck diese Entitäten und Attribute nicht auswerten. Hotfix für CQ-4225129
 
 * Falsche Ausgabe wird beobachtet, wenn ein Doppelpunkt in der Ausgabe der Primitive-Zeichenfolge vorhanden ist. Hotfix für CQ-4260825
 
@@ -641,7 +641,7 @@ Zu den wichtigsten Merkmalen von AEM 6.5.1.0 Forms gehören:
 * Die Vorlage für interaktive Kommunikation führt in der Liste der zulässigen Komponenten keine Kopf- und Fußzeilenkomponenten auf. Hotfix für CQ-4237895
 * Wird eine Druckvorlage für interaktive Kommunikation erstellt, die ein Bildfeld enthält, wird für den Titel des Diagramms „leer“ festgelegt. Hotfix für CQ-4264772
 * Für die Linienfarbe eines Diagramms wird beim Löschen „nicht definiert“ festgelegt. Hotfix für CQ-4264762
-* Änderungen an der Layoutebene, die auf dem Dokumentfragment vorgenommen wurden, werden bei der Synchronisierung der Änderungen ausgeblendet. Hotfix für CQ-4266054
+* Änderungen an der Layoutebene, die am Dokument-Fragment vorgenommen wurden, werden bei der Synchronisierung der Änderungen nicht mehr angezeigt. Hotfix für CQ-4266054
 * Ein innerhalb eines Dokumentfragments an ein Textfeld gebundenes Formulardatenmodellelement zeigt kein Vererbungssymbol an, und es kann verknüpft werden. Hotfix für CQ-4261089
 * Die API zum Rendern von Druckkanälen verfügt nicht über die Option zum Übergeben von Daten als Parameter in der API. Hotfix für CQ-4263540
 * Agent-Einstellungen sind nicht sichtbar, da das Kontrollkästchen Bearbeitbar nach Agent deaktiviert wird, wenn der Bindungstyp von Textfragment in Keine/Datenmodellobjekt für das String-Feld/die String-Variable geändert wird. Hotfix für CQ-4261953
@@ -690,7 +690,7 @@ Zu den wichtigsten Merkmalen von AEM 6.5.1.0 Forms gehören:
 * Die digitale Signatur mit dem Hardware-Sicherheitsmodul (HSM) funktioniert auf Linux-basierten OSGi-Installationen nicht mit Java 11 und Java 8\. NPR-29838: Hotfix für CQ-4270441
 * Die digitale Signatur mit dem Hardware-Sicherheitsmodul (HSM) funktioniert auf Linux-basierten JEE-Installationen sowie allen unterstützten Anwendungsservern, d. h. JBoss und Websphere, nicht. NPR-29839: Hotfix für CQ-4266721
 * Beim Überprüfen der Signaturen in einer PDF-Datei mit PAdES (PDF Advanced Electronic Signatures) wird eine InvalidOperationException generiert. NPR-29842: Hotfix für CQ-4244837
-* Document Security Extension-Unterstützung für Office 2019\ hinzugefügt. Hotfix für CQ-4254369, CQ-4259764
+* Unterstützung für Dokument Security Extension für Office 2019\ hinzugefügt. Hotfix für CQ-4254369, CQ-4259764
 
 **Forms - Document Services**
 
