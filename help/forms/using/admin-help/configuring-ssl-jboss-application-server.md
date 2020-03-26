@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: a7ce63433f7e46feae8b0d23778e36d10c33972a
 
 ---
 
@@ -23,18 +23,18 @@ Sie können das Keytool mit einem einzelnen Befehl ausführen, der alle zum Erst
 
 In diesem Verfahren gilt:
 
-* *[Der Anwendungsserver-Stammordner]* ist der Basisordner des Anwendungsservers, auf dem AEM Forms ausgeführt wird.
-* *[type]* ist ein Ordnername, der je nach dem von Ihnen ausgeführten Installationstyp variiert.
+* `[appserver root]` ist der Basisordner des Anwendungsservers, auf dem AEM Forms ausgeführt wird.
+* `[type]` ist ein Ordnername, der je nach der von Ihnen ausgeführten Installation variiert.
 
 ## SSL-Berechtigung erstellen {#create-an-ssl-credential}
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the credential and keystore:
 
-   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppenname* `, O=`*Firmenname *`,L=`*Stadt* `, S=`*Land *`, C=`** `" -alias` `"` `*LC Cert*`**`-keyalg RSA -keypass`** `-keystore`**-CodeKeyPasswordkeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppenname* `, O=`*Firma Name *`,L=`*Stadt* `, S=`*Land *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`**Ländercode&quot;key_passwordkeystorename`.keystore`
 
    >[!NOTE]
    >
-   >Replace [JAVA_HOME] with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment. Der Hostname ist der voll qualifizierte Domänenname des Anwendungsservers.
+   >Replace `[JAVA_HOME]` with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment. Der Hostname ist der voll qualifizierte Domänenname des Anwendungsservers.
 
 1. Enter the `keystore_password` when prompted for a password. Das Kennwort für den Keystore und der Schlüssel müssen identisch sein.
 
@@ -42,60 +42,51 @@ In diesem Verfahren gilt:
    >
    >The `keystore_password` *ntered at this step may be the same password (key_password) that you entered in step 1, or it may be different.*
 
-1. Copy the *keystorename*.keystore to the *[appserver root]*/server/*[type]*/conf directory by typing one of the following commands:
+1. Copy the *keystorename*.keystore to the `[appserver root]/server/[type]/conf` directory by typing one of the following commands:
 
-   * (Windows-Einzelserver) `copy`*Keystorename *`.keystore`*[Anwendungsserver-Stammordner ]*`\standalone\configuration`
-   * (Windows Server Cluster) copy *keystorename*.keystore *[appserver root]*\domain\configuration
-   * (Linux Single Server) `cp`*keystorename *`.keystore`*[appserver root ]*`/standalone/configuration`
-   * (Linux-Servercluster)
+   * (Windows-Einzelserver) `copy``keystorename.keystore[appserver root]\standalone\configuration`
+   * (Windows-Servercluster) copy `keystorename.keystore[appserver root]\domain\configuration`
+   * (Linux Einzelserver) `cp keystorename.keystore [appserver root]/standalone/configuration`
+   * (Linux-Servercluster) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
 
-      ```
-      cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration
-      ```
 
 1. Exportieren Sie die Zertifikatdatei durch Eingabe des folgenden Befehls:
 
-   * ``(Single Server) keytool -export -alias &quot;LC Cert&quot; -file LC_cert.cer -keystore [appserver root]/standalone/configuration/keystorename.keystore
-   * (Server Cluster) keytool -export -alias *&quot;LC Cert&quot;* -file *LC_cert*.cer -keystore *[appserver root]*/domain/configuration/*keystorename*.keystore
+   * (Einzelserver) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/standalone/configuration/keystorename.keystore`
+   * (Servercluster) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
 
 1. Geben Sie das *keystore_Kennwort* ein, wenn Sie zur Eingabe eines Kennworts aufgefordert werden.
-1. Copy the LC_cert.cer file to the *[appserver root]\conf *directory by typing the following command:
+1. Copy the AEMForms_cert.cer file to the *[appserver root]\conf *directory by typing the following command:
 
-   * (Windows Single Server) copy LC_cert.cer [appserver root]\standalone\configuration
-   * (Windows Server Cluster) copy LC_cert.cer [appserver root]\domain\configuration
-   * (Linux Single Server) cp LC _cert.cer [appserver root]\standalone\configuration
-   * (Linux Server Cluster) cp LC _cert.cer [appserver root]\domain\configuration
+   * (Windows-Einzelserver) `copy AEMForms_cert.cer [appserver root]\standalone\configuration`
+   * (Windows-Servercluster) `copy AEMForms_cert.cer [appserver root]\domain\configuration`
+   * (Linux Einzelserver) `cp AEMForms _cert.cer [appserver root]\standalone\configuration`
+   * (Linux-Servercluster) `cp AEMForms _cert.cer [appserver root]\domain\configuration`
 
 1. Zeigen Sie den Inhalt des Zertifikats durch Eingabe des folgenden Befehls an:
 
-   * `keytool -printcert -v -file [appserver root]\standalone\configuration\LC_cert.cer`
-   * 
+   * `keytool -printcert -v -file [appserver root]\standalone\configuration\AEMForms_cert.cer`
+   * `keytool -printcert -v -file [appserver root]\domain\configuration\AEMForms_cert.cer`
 
-   ```
-   keytool -printcert -v -file [appserver root]\domain\configuration\LC_cert.cer
-   ```
-
-   ``
-
-1. To provide write access to the cacerts file in *[JAVA_HOME]*\jre\lib\security, if required, perform the following task:
+1. To provide write access to the cacerts file in `[JAVA_HOME]\jre\lib\security`, if required, perform the following task:
 
    * (Windows) Klicken Sie mit der rechten Maustaste auf die Datei „cacerts“, wählen Sie „Eigenschaften“ und deaktivieren Sie das Attribut „Schreibgeschützt“.
    * (Linux) Typ `chmod 777 cacerts`
 
 1. Importieren Sie das Zertifikat durch Eingabe des folgenden Befehls:
 
-   `keytool -import -alias “LC Cert” -file`*LC_cert *`.cer -keystore`*JAVA_HOME*`\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME*`\jre\lib\security\cacerts`
 
 1. Type `changeit` as the password. Dieses Kennwort ist das Standardkennwort für Java-Installationen. Eventuell wurde es von Ihrem Systemadministrator geändert.
 1. Geben Sie bei Aufforderung `Trust this certificate? [no]`: `yes`ein. Daraufhin wird die Bestätigung „Certificate was added to keystore“ angezeigt.
 1. Wenn Sie die Verbindung über SSL von Workbench aus herstellen, müssen Sie das Zertifikat auf dem Workbench-Computer installieren.
 1. Öffnen Sie in einem Texteditor die folgende Dateien zur Bearbeitung:
 
-   * Single Server - [appserver root]/standalone/configuration/lc_&lt;dbname/turnkey>.xml
+   * Single Server - `[appserver root]`/standalone/configuration/lc_&lt;dbname/turnkey>.xml
 
-   * Server Cluster - [appserver root]/domain/configuration/host.xml
+   * Servercluster - `[appserver root]`/domain/configuration/host.xml
 
-   * Server Cluster - [appserver root]/domain/configuration/domain_&lt;dbname>.xml
+   * Server Cluster - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
 1. 
    * **Für Einzelserver** Fügen Sie in der Datei „lc_&lt;dbaname/tunkey>.xml“ Folgendes nach dem Abschnitt „&lt;security-realms>“ ein:
@@ -104,7 +95,7 @@ In diesem Verfahren gilt:
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
-   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="adobe" alias="AEMformsCert" key-password="adobe"/>
+   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="changeit" alias="AEMformsCert" key-password="changeit"/>
    </ssl>
    </server-identities>
    </security-realm>
@@ -126,7 +117,7 @@ In diesem Verfahren gilt:
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
-   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="adobe" alias="AEMformsCert" key-password="adobe"/>
+   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="changeit" alias="AEMForms Cert" key-password="changeit"/>
    </ssl>
    </server-identities>
    </security-realm>
@@ -175,15 +166,15 @@ In diesem Verfahren gilt:
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the keystore and the key:
 
-   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppenname* `, O=`*Firmenname *`, L=`*Stadt* `, S=`*Staatscode *`, C=`** `" -alias` `"` `*LC Cert*`**`-keyalg RSA -keypass`**`-keystore`** Land-CodeKeyName `.keystore`
+   `keytool -genkey -dname "CN=`*Hostname *`, OU=`*Gruppe Name* `, O=`*Firma Name *`, L=`*Stadt* `, S=`*Land *Code&quot;`, C=`**`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`**-Schlüssel KennwortKeystorename`.keystore`
 
    >[!NOTE]
    >
-   >Replace *`[JAVA_HOME]`with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
+   >Replace *`[JAVA_HOME]`* with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.
 
 1. Geben Sie den folgenden Befehl ein, um eine Zertifikatanforderung an die Zertifizierungsstelle zu erzeugen:
 
-   `keytool -certreq -alias`*&quot;LC Cert&quot;*`-keystore`*keystorename* `.keystore -file`*LCcertRequest.csr *
+   `keytool -certreq -alias` &quot;AEMForms Cert&quot; `-keystore`*keystorename *`.keystore -file`*AEMFormscertRequest.csr*
 
 1. Wenn Ihre Anforderung einer Zertifikatdatei erfüllt wurde, führen Sie die Schritte im nächsten Verfahren durch.
 
@@ -191,7 +182,7 @@ In diesem Verfahren gilt:
 
 1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to import the root certificate of the CA with which the CSR has been signed:
 
-   `keytool -import -trustcacerts -file`*rootcert *`.pem -keystore`*keystorename*`.keystore -alias root`
+   `keytool -import -trustcacerts -file` rootcert.pem -keystore` keystorename.keystore -alias root`
 
    Wenn sich das Stammzertifikat nicht im Browser befindet, importieren Sie es ebenfalls dorthin.
 
