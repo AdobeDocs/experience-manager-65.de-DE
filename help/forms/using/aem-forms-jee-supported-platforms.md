@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29a94f3ece1b96b24e1b77f4abe6f6f28924ae7b
+source-git-commit: 6cf69dc86ce70a43e77b00d6b3986fa40ae0a4ec
 
 ---
 
@@ -74,7 +74,7 @@ Adobe empfiehlt die folgenden Konfigurationen und bietet vollständige oder eing
 >IBM DB2-Datenbank
 >・ IBM AIX und Sun Solaris
 >
->Bei neuen Installationen wird empfohlen, AEM Forms auf dem modernen OSGi-Stapel bereitzustellen, um die neuesten Innovationen rund um adaptive Formulare für mobile, interaktive Kommunikation mit mehreren Kanälen und Datenintegrationen mit Backend mithilfe des Formulardatenmodells zu nutzen.
+>Bei neuen Installationen wird empfohlen, AEM Forms auf dem modernen OSGi-Stapel bereitzustellen, um die neuesten Innovationen rund um adaptive Formulare für interaktive Mobilkommunikation, interaktive Kommunikation mit mehreren Kanälen und Datenintegrationen mit Backend mithilfe des Formulardatenmodells zu nutzen.
 >
 >Wir erkennen, dass bestehende Benutzer den AEM Forms on JEE-Stapel weiterhin bereitstellen müssen. In solchen Fällen erfordert Adobe die Bereitstellung von AEM Forms JEE auf der unterstützten Infrastruktur, wie in dieser Dokumentation beschrieben. Wenn Sie auf AEM 6.5 Forms aktualisieren und eine nicht unterstützte Plattform in der vorherigen Version von AEM Forms verwenden, können Sie sich an den Adobe-Support wenden, um Hilfe beim Aktualisieren auf eine unterstützte Plattform zu erhalten.
 
@@ -122,8 +122,6 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 
 ### Datenbanken und CRX-Persistenz {#databases-and-crx-persistence}
 
-#### AEM-Persistenzunterstützung {#aem-persistence-support}
-
 <table>
  <tbody>
   <tr>
@@ -137,7 +135,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0</p> </td>
+   <td><p>MongoDB Enterprise 4.0 </p> </td>
    <td><p>Repository-Mikrokernel</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
@@ -154,7 +152,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 
 <tr>
    <td>Oracle Database 19c </td>
-   <td>Repository-Mikrokernel</td>
+   <td>Repository</td>
    <td>Unterstützt</td>
   </tr>
   <tr>
@@ -167,12 +165,16 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td>Repository-Mikrokernel</td>
    <td>R: Eingeschränkte Unterstützung</td>
   </tr>
+    <tr>
+   <td>MySQL 5.7.19 </td>
+   <td>-</td>
+   <td>R: Eingeschränkte Unterstützung </td>
+  </tr>
  </tbody>
 </table>
 
 * IBM DB2 wird für Neuinstallationen nicht unterstützt. Es wird nur für bestehende Kunden unterstützt, die auf AEM 6.5 Forms aktualisieren.
 * MongoDB ist eine Drittanbietersoftware und nicht Bestandteil des AEM-Lizenzierungspakets. Weitere Informationen finden Sie auf der Seite mit der [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.org/about/licensing/).
-
 * Adobe empfiehlt die Lizenzierung der MongoDB Enterprise-Version, damit Sie von der professionellen Unterstützung profitieren und die AEM-Bereitstellung optimal nutzen können.
 * Die Adobe-Kundenunterstützung unterstützt Sie bei bestimmten Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen. Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 * „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dies umfasst eine Netzwerkspeichertechnologie. Beachten Sie, dass die Dateisystemleistung möglicherweise variieren kann und sich auf die Gesamtleistung auswirkt. Es wird empfohlen, einen Lasttest für AEM in Verbindung mit dem Netzwerk/Remote-Dateisystem durchzuführen.
@@ -180,50 +182,8 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 * MongoDB Sharding wird in AEM nicht unterstützt.
 * AEM Forms on JEE unterstützt MySQL für RDBMK-Persistenz.
 * Das Document Security-Modul verwendet nicht das Content Repository. Das bedeutet, wenn Sie nur Document Security und nicht HTML Workspace, HTML5 Forms und adaptive Formulare verwenden möchten, müssen Sie Content Repository nicht installieren.
+* AEM Forms on JEE unterstützt nicht die Verwendung von MySQL für die Persistenz des AEM-Repositorys (CRX-Repository).
 
-#### DATENBANK-Unterstützung {#database-support}
-
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Plattform</strong></p> </td>
-   <td><p><strong> Beschreibung</strong></p> </td>
-   <td><p><strong>Unterstützungsebene</strong></p> </td>
-  </tr>
-  <tr>
-   <td>IBM DB2 11.1</td>
-   <td>Repository-Mikrokernel</td>
-   <td>R: Eingeschränkte Unterstützung</td>
-  </tr>
-  <tr>
-   <td><p>Oracle Database 12c Freigabe 1</p> </td>
-   <td><p>Repository-Mikrokernel</p> </td>
-   <td><p>Unterstützt</p> </td>
-  </tr>
-  <tr>
-   <td>Oracle Database 18c</td>
-   <td>Repository-Mikrokernel</td>
-   <td>Unterstützt</td>
-  </tr>
-    <tr>
-   <td>Oracle Database 19c</td>
-   <td>Repository-Mikrokernel</td>
-   <td>Unterstützt</td>
-  </tr>
-  <tr>
-   <td><p>MySQL 5.7.19<br /> </p> </td>
-   <td><p>Repository-Mikrokernel</p> </td>
-   <td><p>Unterstützt</p> </td>
-  </tr>
-  <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
-   <td><p>Repository-Mikrokernel</p> </td>
-   <td><p>Unterstützt</p> </td>
-  </tr>
- </tbody>
-</table>
-
-* IBM DB2 wird für Neuinstallationen nicht unterstützt. Es wird nur für bestehende Kunden unterstützt, die auf AEM 6.5 Forms aktualisieren.
 
 ### Datenbanktreiber {#database-drivers}
 
@@ -319,7 +279,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 
 #### Virtualisierte Umgebung {#virtualized-environment}
 
-Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuellen Umgebung ausführen. Wenn Sie mit AEM Forms in einer virtuellen Umgebung auf Probleme stoßen, versuchen Sie, das Problem auf einer physischen Maschine zu reproduzieren. Wenn das Problem auf dem physischen Computer weiterhin auftritt, wenden Sie sich zwecks Lösung an den Adobe Support. Wenden Sie sich an Ihren Anbieter der virtuellen Umgebung, um Probleme zu beheben, die nicht auf einem physischen Computer repliziert werden können.
+Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuellen Umgebung ausführen. Wenn Sie mit AEM Forms in einer virtuellen Umgebung auf Probleme stoßen, versuchen Sie, das Problem auf einer physischen Maschine zu reproduzieren. Wenn das Problem auf dem physischen Computer weiterhin auftritt, wenden Sie sich an den Adobe Support, um eine Lösung zu erhalten. Wenden Sie sich an Ihren Anbieter für virtuelle Umgebung, wenn Probleme auftreten, die nicht auf einem physischen Computer repliziert werden können.
 
 #### Entwicklungsumgebungen {#development-environments}
 
@@ -346,7 +306,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. AEM Forms on JEE unterstützt und JBoss nicht unter SUSE Linux Enterprise Server 12. Nur IBM WebSphere wird auf SUSE Linux Enterprise Server 12 unterstützt.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
-1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Sie können nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository haben. In einer AEM Forms on JEE-Umgebung können Sie MongoMK mit CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
+1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Es können nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository vorhanden sein. Auf einer AEM Forms on JEE-Umgebung können Sie MongoMK mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit dem Anwendungsserver verwenden.
 1. AEM Forms on JEE unterstützt keinen WebSphere-Anwendungsserver unter CentOS.
 1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss.
 
@@ -359,7 +319,7 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 * AEM Forms on JEE unterstützt keine TarMK Cold Standby.
 * AEM Forms on JEE unterstützt kein vertikales Clustering.
 * AEM Forms on JEE unterstützt nicht MySQL-Datenbank in Cluster-Umgbungen.
-* Eine Liste der entfernten oder aktualisierten Plattformen finden Sie unter [AEM 6.5 Forms - Zusammenfassung](../../forms/using/whats-new.md) der neuen Funktionen.
+* Die Liste entfernter oder aktualisierter Plattformen finden Sie im Dokument [AEM 6.5 Forms - Übersicht über die neuen Funktionen](../../forms/using/whats-new.md) .
 
 ### LDAP-Server (optional) {#ldap-servers-optional}
 
