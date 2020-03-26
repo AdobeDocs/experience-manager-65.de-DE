@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 00c98c4c1178f88844f6bec8a214d096205c58cd
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie mit der Konfiguration oder dem Code Ihrer Komponente beginnen, sollten
 Bevor es um die Entwicklung von Komponenten geht, müssen Sie wissen, welche Benutzeroberfläche Ihre Autoren verwenden:
 
 * **Touch-optimierte Benutzeroberfläche**
-   [Die Standard-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) basiert auf der einheitlichen Benutzererfahrung für die Adobe Marketing Cloud und verwendet dabei die zugrunde liegenden Technologien der Benutzeroberfläche[ ](/help/sites-developing/touch-ui-concepts.md#coral-ui)von Coral und der Benutzeroberfläche von [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [Die Standard-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) basiert auf der einheitlichen Benutzererfahrung für die Adobe Marketing Cloud, wobei die zugrunde liegenden Technologien der Benutzeroberfläche [](/help/sites-developing/touch-ui-concepts.md#coral-ui) von Coral und der Benutzeroberfläche von [Granite verwendet werden](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Klassische Benutzeroberfläche** auf Grundlage der ExtJS-Technologie, die mit AEM 6.4 nicht mehr unterstützt wurde.
 
 Weitere Informationen finden Sie unter [Benutzeroberflächen-Empfehlungen für Kunden](/help/sites-deploying/ui-recommendations.md).
@@ -57,7 +57,7 @@ Komponenten können je nach Implementierung die Touch-optimierte Benutzeroberfl�
 Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider Versionen abgedeckt.
 
 >[!NOTE]
-> Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration erleichtern.
+> Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration vereinfachen.
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
@@ -161,9 +161,9 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
    * Ressourcen:
 
-      Diese definieren statische Elemente, die von der Komponente verwendet werden.
+      Diese definieren Statische Element, die von der Komponente verwendet werden.
 
-   * Skripten:
+   * Skripte:
    werden verwendet, um das Verhalten der resultierenden Instanz der Komponente zu implementieren.
 
 * **Stammknoten**:
@@ -265,7 +265,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Gruppe, aus der die Komponente im Komponenten-Browser (Touch-optimierte Benutzeroberfläche) oder Sidekick (klassische Benutzeroberfläche) ausgewählt werden kann.<br /> Ein Wert von <code>.hidden</code> wird für Komponenten verwendet, die nicht über die Benutzeroberfläche ausgewählt werden können, wie z. B. die Absatzsysteme.</td>
+   <td>Gruppe, aus der die Komponente im Komponenten-Browser (Touch-optimierte Benutzeroberfläche) oder Sidekick (klassische Benutzeroberfläche) ausgewählt werden kann.<br /> Ein Wert von <code>.hidden</code> wird für Komponenten verwendet, die nicht über die Benutzeroberfläche ausgewählt werden können, wie z. B. die eigentlichen Absatzsysteme.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -528,7 +528,7 @@ Komponenten in AEM unterliegen drei verschiedenen Hierarchien:
    * Dialogfelder
    * Beschreibungen (darunter Miniaturansichten, Symbole usw.)
 
-* **Behälterhierarchie**
+* **Container-Hierarchie**
 
    Dies wird zum Füllen der Konfigurationseinstellungen für die untergeordnete Komponente verwendet und wird meist in einem Parsys-Szenario verwendet.
 
@@ -553,18 +553,18 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
 * [ `cq:editConfig` Knoteneigenschaften](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` ( `String array`) definiert die Aktionen, die für die Komponente ausgeführt werden können.
-   * `cq:layout` ( `String`): definiert, wie die Komponente in der klassischen Benutzeroberfläche bearbeitet wird.
+   * `cq:layout` ( `String`) : definiert, wie die Komponente in der klassischen Benutzeroberfläche bearbeitet wird.
    * `cq:dialogMode` ( `String`) legt fest, wie das Komponentendialogfeld in der klassischen Benutzeroberfläche geöffnet wird
 
       * In der Touch-optimierten Benutzeroberfläche sind die Dialogfelder im Desktopmodus immer unverankert und werden im mobilen Modus immer im Vollbild geöffnet.
    * `cq:emptyText` ( `String`) definiert Text, der angezeigt wird, wenn kein sichtbarer Inhalt vorhanden ist.
-   * `cq:inherit` ( `Boolean`) definiert, ob fehlende Werte von der Komponente übernommen werden, von der sie übernommen wird.
+   * `cq:inherit` ( `Boolean`) definiert, ob fehlende Werte von der Komponente geerbt werden, von der sie übernommen wird.
    * `dialogLayout` (String): legt fest, wie das Dialogfeld geöffnet werden soll
 
 
 * [ `cq:editConfig` untergeordnete Knoten](#configuring-with-cq-editconfig-child-nodes):
 
-   * `cq:dropTargets` (Knotentyp `nt:unstructured`): definiert eine Liste von Ablagezielen, die ein Ablegen aus einem Asset der Inhaltssuche akzeptieren können
+   * `cq:dropTargets` (Knotentyp `nt:unstructured`): definiert eine Liste von Dropdown-Zielgruppen, die ein Ablegen aus einem Asset der Inhaltssuche akzeptieren können
 
       * Mehrere Ablageziele sind nur in der klassischen Benutzeroberfläche verfügbar.
       * In der Touch-optimierten Benutzeroberfläche ist nur ein einziges Ablageziel zulässig.
@@ -624,6 +624,10 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
    <td><code>edit</code></td>
    <td>Fügt eine Schaltfläche zum Bearbeiten der Komponente hinzu.</td>
   </tr>
+      <tr>
+    <td><code>editannotate</code></td>
+    <td>Fügt eine Schaltfläche zum Bearbeiten der Komponente und zum Zulassen von <a href="/help/sites-authoring/annotations.md">Anmerkungen</a>hinzu.</td>
+   </tr>
   <tr>
    <td><code>delete</code></td>
    <td>Fügt eine Schaltfläche zum Löschen der Komponente hinzu</td>
@@ -795,7 +799,7 @@ Der Knoten des Typs `cq:DropTargetConfig` muss die folgenden Eigenschaften aufwe
   </tr>
   <tr>
    <td><code>groups</code></td>
-   <td>Array von Dropdown-Zielgruppen. Jede Gruppe muss mit dem Gruppentyp übereinstimmen, der in der Content Finder-Erweiterung definiert wurde und der bei den Assets angehängt ist.</td>
+   <td>Array von Dropdown-Zielpopulationen. Jede Gruppe muss mit dem Gruppentyp übereinstimmen, der in der Content Finder-Erweiterung definiert wurde und der bei den Assets angehängt ist.</td>
   </tr>
   <tr>
    <td><code>propertyName</code></td>
