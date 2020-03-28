@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -27,15 +27,15 @@ Der Pfad zur Komponente ist eindeutig und verweist auf die Standardkomponente al
 
 ## Beispiel {#example}
 
-Angenommen, die Kopfzeile der Kommentarkomponente muss auf einer Seite der AEM-Instanz mit einem alternativen Erscheinungsbild angezeigt werden, während sie auf einer anderen Site mit der Standardanzeige angezeigt wird. Statt den Standardkommentar zu überlagern, wodurch die Kommentarkomponente für alle Instanzen geändert wird, ist eine bessere Lösung sicherzustellen, dass auf verschiedenen Sites mehrere Kommentarkomponenten verfügbar sind.
+Angenommen, die Kopfzeile für die Kommentarkomponente muss auf einer Seite der AEM-Instanz mit einem alternativen Erscheinungsbild angezeigt werden, während sie auf einer anderen Site mit der Standardanzeige angezeigt wird. Statt den Standardkommentar zu überlagern, wodurch die Kommentarkomponente für alle Instanzen geändert wird, ist eine bessere Lösung sicherzustellen, dass auf verschiedenen Sites mehrere Kommentarkomponenten verfügbar sind.
 
 Um diese Lösung zu implementieren, erstellen Sie eine neue Komponente, die die vorhandene Komponente erweitert (überschreibt) und das Handlebars-Skript ändert. Der Bereich der Site, der die neuen Kommentare verwendet, kann den erweiterten verwenden, während die Sites, die das Standardbild verwenden, unverändert bleiben.
 
-Die Kommentarkomponente ist eigentlich eine von zwei Komponenten, die das Kommentarsystem umfassen. Es gibt also zwei Komponenten, die erweitert werden müssen: *Kommentare* und *Kommentare*. Das zu bearbeitende Skript befindet sich in der `header.hbs` Datei *comment *component, während die übergeordnete Komponente *comments* (das Kommentarsystem) das ist, was ein Autor der Seite tatsächlich hinzufügt.
+Die Kommentarkomponente ist eigentlich eine von zwei Komponenten, die das Kommentarsystem umfassen. Es gibt also zwei Komponenten, die erweitert werden müssen: *Kommentare* und *Kommentare*. Das zu bearbeitende Skript befindet sich in der *-Datei der* Kommentarkomponente `header.hbs` , während die übergeordnete Komponente für *Kommentare* (das Kommentarsystem) dem entspricht, was ein Autor der Seite tatsächlich hinzufügt.
 
 Um Kommentare zu erweitern, müssen Sie:
 
 1. [Komponenten erstellen](extend-create-components.md)
-1. [Kommentar zur Beispielseite hinzufügen](extend-sample-page.md)
+1. [Hinzufügen auf Beispielseite](extend-sample-page.md)
 1. [Erscheinungsbild ändern](extend-alter-appearance.md)
 
