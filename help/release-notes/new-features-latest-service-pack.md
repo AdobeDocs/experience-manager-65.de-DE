@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 61d1531c020b5a25207b5e3f1c2b0c14e2974e02
+source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
 
 ---
 
@@ -39,6 +39,10 @@ Der Kanal für die Autorisierung zwischen AEM Assets und Brand Portal wurde geä
 
 Die Schritte zum Konfigurieren von AEM Assets mit Brand Portal unterscheiden sich je nach Ihrer AEM-Version und davon, ob Sie zum ersten Mal eine Konfiguration durchführen oder die vorhandenen Konfigurationen aktualisieren. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
+
+### Bekannte Probleme {#known-issues-bp}
+
+* Benutzer von Markenportalen können beim Aktualisieren auf Adobe I/O auf AEM 6.5.4 keine Beitragsordnerelemente in AEM Assets veröffentlichen.
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
