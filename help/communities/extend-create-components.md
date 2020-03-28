@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -40,15 +40,15 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 
 1. Erstellen Sie einen Speicherort für benutzerdefinierte Anwendungen:
 
-   * Wählen Sie den `/apps` Knoten
+   * Wählen Sie die `/apps` Node
 
       * **Ordner** mit **[!UICONTROL benutzerdefiniertem Namen erstellen]**
-   * Wählen Sie den `/apps/custom` Knoten
+   * Wählen Sie die `/apps/custom` Node
 
       * **Erstellen von** Komponenten mit Ordnernamen ****
 
 
-1. Wählen Sie den `/apps/custom/components` Knoten
+1. Wählen Sie die `/apps/custom/components` Node
 
    * **[!UICONTROL Erstellen > Komponente...]**
 
@@ -73,11 +73,11 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 
 ### Komponente für untergeordneten Kommentar erstellen {#create-the-child-comment-component}
 
-Diese Anweisungen setzen **Gruppe** auf `.hidden` , da nur die übergeordnete Komponente in eine Seite einbezogen werden sollte.
+In diesen Anweisungen wird **Gruppe** auf `.hidden` festgelegt, da nur die übergeordnete Komponente in eine Seite einbezogen werden sollte.
 
 Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die Standard-HBS-Datei verwendet wird.
 
-1. Navigieren zum `/apps/custom/components/comments` Knoten
+1. Navigate to the `/apps/custom/components/comments` node
 1. Klicken Sie mit der rechten Maustaste auf den Knoten
 
    * Wählen Sie **[!UICONTROL Erstellen > Komponente...]**
@@ -101,7 +101,7 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 
 ![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Standardskripte für HBS kopieren und ändern {#copy-and-modify-the-default-hbs-scripts}
+### Kopieren und Ändern der Standard-HBS-Skripten {#copy-and-modify-the-default-hbs-scripts}
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -139,7 +139,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ## Erstellen eines Client-Bibliotheksordners {#create-a-client-library-folder}
 
-Um zu vermeiden, dass diese Client-Bibliothek explizit einbezogen werden muss, könnte der Kategoriewert für die clientlib des Standard-Kommentarsystems verwendet werden ( `cq.social.author.hbs.comments`), aber dann würde diese clientlib auch für alle Instanzen der Standardkomponente eingeschlossen.
+Um zu vermeiden, dass diese Client-Bibliothek explizit einbezogen werden muss, könnte der Wert &quot;Kategorien&quot;für die clientlib des standardmäßigen Kommentarsystems verwendet werden ( `cq.social.author.hbs.comments`), aber dann würde diese clientlib auch für alle Instanzen der Standardkomponente enthalten sein.
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -148,10 +148,10 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
    * **Name**: `clientlibs`
    * **Typ**: `cq:ClientLibraryFolder`
-   * Registerkarte &quot;Zu **[!UICONTROL Eigenschaften]** hinzufügen&quot;:
+   * Registerkarte &quot; **[!UICONTROL Eigenschaften]** &quot;Hinzufügen:
 
-      * **Name** `categories` Typ ****`String`Wert **** `cq.social.author.hbs.comments``Multi`
-      * **Name** `dependencies` Typ ****`String`Wert **** `cq.social.scf``Multi`
+      * **Name** `categories` Typ ****`String` Wert **** `cq.social.author.hbs.comments``Multi`
+      * **Name** `dependencies` Typ ****`String` Wert **** `cq.social.scf``Multi`
 
 * Select **[!UICONTROL Save All]**
 * Erstellen Sie `/apps/custom/components/comments/clientlib`bei ausgewählter Node 3 Dateien:
@@ -165,9 +165,9 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-## SCF-Modell und Ansicht registrieren {#register-the-scf-model-view}
+## SCF-Modell und -Ansicht registrieren {#register-the-scf-model-view}
 
-Beim Erweitern (Überschreiben) einer SCF-Komponente ist resourceType anders (Überlagern verwendet den relativen Suchmechanismus, der `/apps` zuvor durchsucht wird, `/libs` sodass resourceType gleich bleibt). Daher ist es notwendig, JavaScript (in der Client-Bibliothek) zu schreiben, um das SCF JS-Modell zu registrieren und für den benutzerdefinierten resourceType anzuzeigen.
+Beim Erweitern (Überschreiben) einer SCF-Komponente ist resourceType anders (Überlagern verwendet den relativen Suchmechanismus, der `/apps` zuvor durchsucht wird, `/libs` sodass resourceType gleich bleibt). Daher müssen Sie JavaScript (in der Client-Bibliothek) schreiben, um das SCF JS-Modell und die Ansicht für den benutzerdefinierten resourceType zu registrieren.
 
 Geben Sie den folgenden Text als Inhalt von ein `customcommentsystem.js`:
 
@@ -193,7 +193,7 @@ Geben Sie den folgenden Text als Inhalt von ein `customcommentsystem.js`:
 
 ## App veröffentlichen {#publish-the-app}
 
-Um die erweiterte Komponente in der Veröffentlichungsumgebung zu nutzen, müssen Sie die benutzerdefinierte Komponente replizieren.
+Um die erweiterte Komponente in der Umgebung &quot;Veröffentlichen&quot;nutzen zu können, müssen Sie die benutzerdefinierte Komponente replizieren.
 
 Eine Möglichkeit dazu ist
 
