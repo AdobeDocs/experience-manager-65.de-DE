@@ -11,23 +11,23 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Leader-Funktion{#leaderboard-feature}
+# Leader-Funktion {#leaderboard-feature}
 
 ## Einführung {#introduction}
 
-Die `Leaderboard` Komponente bietet die Möglichkeit, sich ein Gefühl dafür zu verschaffen, wie Mitglieder innerhalb der Gemeinschaft interagieren, indem sie Mitglieder nach Punkten (Grundbewertung) oder ihrem Fachwissen (fortgeschrittenes Scoring) einstufen.
+Die `Leaderboard` Komponente bietet die Möglichkeit, einen Eindruck davon zu erhalten, wie Mitglieder innerhalb der Gemeinschaft interagieren, indem sie Mitglieder nach Punkten (Basis-Scoring) oder ihrem Fachwissen (Advanced Scoring) einstufen.
 
-Bevor Sie die Lederboard-Komponente auf eine Seite einfügen, müssen Sie die [Bewertung und Abzeichen](/help/communities/implementing-scoring.md)für Communities konfigurieren.
+Bevor Sie die Komponente &quot;Lederboard&quot;auf eine Seite einfügen, müssen Sie die Bewertung und Abzeichen der [Communities konfigurieren](/help/communities/implementing-scoring.md).
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der `Leaderboard` Komponente zu einer [Community-Site](/help/communities/overview.md#community-sites)
-* Konfigurationseinstellungen für die Komponente `Leaderboard`
+* Configuration settings for the `Leaderboard` component
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -51,7 +51,7 @@ Select the placed `Leaderboard` component to access and select the `Configure` i
 
 #### Registerkarte „Settings“{#settings-tab}
 
-Geben Sie unter der Registerkarte **Einstellungen **an, welche Informationen zum Mitglied angezeigt werden sollen:
+Geben Sie auf der Registerkarte &quot; **Einstellungen** &quot;an, welche Informationen zum Mitglied angezeigt werden sollen:
 
 * **Anzeigename**
 
@@ -70,12 +70,12 @@ Diese Option ist standardmäßig deaktiviert.
 
 * **Avatar verwenden**
 
-   Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds neben dem Namen des Mitglieds mit dem Mitgliederprofil verknüpft.
+   Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds neben dem Namen des Mitglieds mit dem Profil des Mitglieds verknüpft.
 Diese Option ist standardmäßig deaktiviert.
 
 #### Registerkarte &quot;Regeln&quot; {#rules-tab}
 
-Auf der Registerkarte &quot; **Regeln** &quot;finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln
+Auf der Registerkarte &quot; **Regeln** &quot;finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln.
 
 * **Speicherort für Regel**
 
@@ -83,17 +83,15 @@ Auf der Registerkarte &quot; **Regeln** &quot;finden Sie die Community-Site und 
 
 * **Bewertungsregel**
 
-   (erforderlich) Spezifische Regel, die die anzuzeigenden Werte generiert.
+   (Erforderlich) Spezifische Regel, die die anzuzeigenden Werte generiert.
 
 * **Abzeichenregel**
 
-   (erforderlich) Spezifische Regel, die das anzuzeigende Zeichen generiert.
+   (Erforderlich) Spezifische Regel, die das anzuzeigende Zeichen generiert.
 
 * **Anzeigelimit**
 
-   Anzahl der Mitglieder, die pro Seite angezeigt werden sollen.
-
-   Der Standardwert ist 10.
+   Anzahl der Mitglieder, die pro Seite angezeigt werden sollen. Der Standardwert ist 10.
 
 ### Beispiel: Hauptplatine der Teilnehmer {#example-participants-leaderboard}
 
@@ -121,7 +119,7 @@ Konfiguration der Leaderboard-Komponenten:
 
 ### Beispiel: Expert Leaderboard {#example-experts-leaderboard}
 
-Dieser Bericht des Lederboards beruht auf der Anwendung erweiterter Bewertungsregeln.
+Dieser Bericht des Lederboards ist das Ergebnis der Anwendung erweiterter Bewertungsregeln.
 
 Konfiguration der Leaderboard-Komponenten:
 
