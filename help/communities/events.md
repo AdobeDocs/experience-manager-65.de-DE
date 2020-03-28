@@ -1,8 +1,8 @@
 ---
-title: OSGi-Ereignisse für Communities-Komponenten
-seo-title: OSGi-Ereignisse für Communities-Komponenten
-description: OSGi-Ereignisse werden gesendet, die asynchrone Listener auslösen können
-seo-description: OSGi-Ereignisse werden gesendet, die asynchrone Listener auslösen können
+title: OSGi-Ereignis für Communities-Komponenten
+seo-title: OSGi-Ereignis für Communities-Komponenten
+description: OSGi-Ereignis werden gesendet, die asynchrone Listener auslösen können
+seo-description: OSGi-Ereignis werden gesendet, die asynchrone Listener auslösen können
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,20 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# OSGi-Ereignisse für Communities-Komponenten {#osgi-events-for-communities-components}
+# OSGi-Ereignis für Communities-Komponenten {#osgi-events-for-communities-components}
 
 ## Überblick {#overview}
 
-Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignisse gesendet, die asynchrone Listener auslösen können, wie Benachrichtigungen oder Gamification (Scoring und Abzeichen).
+Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen oder Gamification (Scoring und Abzeichen).
 
-Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) -Instanz einer Komponente zeichnet die Ereignisse auf, `actions`die für eine `topic`Komponente auftreten. Das SocialEvent enthält eine Methode, um eine mit der Aktion `verb`verbundene Aktion zurückzugeben. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
+Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) -Instanz einer Komponente zeichnet die Ereignis auf, die für eine `actions` `topic`Komponente auftreten. Das SocialEvent enthält eine Methode, um eine mit der Aktion `verb` verknüpfte Aktion zurückzugeben. Es gibt eine *n-1* Beziehung zwischen `actions` und `verbs`.
 
-Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version bereitgestellten Communities-Komponenten, die für die einzelnen `topic`verfügbaren Komponenten definiert sind.
+Die folgenden Tabellen beschreiben die für die in der Version bereitgestellten Communities-Komponenten `verbs` , die für die einzelnen `topic` verfügbaren Komponenten definiert sind.
 
 ## Themen und Verben {#topics-and-verbs}
 
@@ -31,10 +31,10 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| POST | Mitglied erstellt ein Kalenderereignis |
-| HINZUFÜGEN | Mitgliederkommentare für ein Kalenderereignis |
-| UPDATE | Kalenderereignis oder Kommentar des Mitglieds wird bearbeitet |
-| DELETE | Kalenderereignis oder Kommentar des Mitglieds wird gelöscht |
+| POST | Mitglied erstellt ein Ereignis im Kalender |
+| HINZUFÜGEN | Mitgliederkommentare für ein Kalendertool |
+| UPDATE | Ereignis oder Kommentar des Mitglieds wird bearbeitet |
+| DELETE | Ereignis oder Kommentar des Mitglieds wird gelöscht |
 
 [Kommentarkomponente](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
 
@@ -63,7 +63,7 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 | UPDATE | Forenthema oder Antwort des Mitglieds wird bearbeitet |
 | DELETE | Forenthema oder Antwort des Mitglieds wird gelöscht |
 
-[Journal Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/Journal
+[Protokoll Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/Protokoll
 
 | **Verb** | **Beschreibung** |
 |---|---|
@@ -95,14 +95,14 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| RATING HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
+| HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
 | RATING ENTFERNEN | der Inhalt des Mitglieds wurde heruntergesetzt |
 
 [Komponente](essentials-voting.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| ABSTIMMUNG HINZUFÜGEN | Der Inhalt des Mitglieds wurde abgestimmt |
+| HINZUFÜGEN ABSTIMMUNG | Der Inhalt des Mitglieds wurde abgestimmt |
 | ABSTIMMUNG ENTFERNEN | Inhalt des Mitglieds wurde abgelehnt |
 
 **Moderationsaktivierte Komponenten** SocialEvent `topic`= com/adobe/cq/social/moderation
@@ -116,19 +116,19 @@ Die folgenden Tabellen beschreiben die `verbs`Definition für die in der Version
 | SCHLIESSEN | Mitglied schließt Kommentar zu Bearbeitungen und Antworten |
 | OPEN | Mitglied öffnet Kommentar erneut |
 
-## Ereignisse für benutzerdefinierte Komponenten {#events-for-custom-components}
+## Ereignis für benutzerdefinierte Komponenten {#events-for-custom-components}
 
-Bei einer benutzerdefinierten Komponente muss die abstrakte [SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) erweitert werden, um die Ereignisse der Komponente als `actions`die Ereignisse für eine `topic`Komponente aufzuzeichnen.
+Bei einer benutzerdefinierten Komponente muss die abstrakte [SocialEvent-Klasse](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) erweitert werden, um die Ereignis der Komponente als `actions`die für eine `topic`Komponente auftretenden Ereignisse aufzuzeichnen.
 
-Das benutzerspezifische Ereignis setzt die Methode außer Kraft, `getVerb()` sodass jeweils ein passender Wert zurückgegeben `verb`wird `action`. Die für eine Aktion `verb` zurückgegebene kann eine häufig verwendete (z. B. `POST`) oder eine für die Komponente spezialisierte (z. B. `ADD RATING`) Aktion sein. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
+Das benutzerdefinierte Ereignis setzt die Methode außer Kraft, `getVerb()` sodass für jede Methode ein passender Wert zurückgegeben `verb`wird `action`. Die für eine Aktion `verb` zurückgegebene kann eine häufig verwendete (z. B. `POST`) oder eine für die Komponente spezialisierte (z. B. `ADD RATING`) Aktion sein. Es gibt eine *n-1* Beziehung zwischen `actions`und `verbs`.
 
 >[!NOTE]
 >
 >Stellen Sie sicher, dass eine benutzerdefinierte Erweiterung mit einer niedrigeren Rangfolge registriert ist als jede vorhandene Implementierung im Produkt.
 
-### Pseudo-Code für benutzerdefiniertes Komponentenereignis {#pseudo-code-for-custom-component-event}
+### Pseudo-Code für Ereignis einer benutzerdefinierten Komponente {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
+[org.osgi.service.Ereignis.Ereignis](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
 [com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
 [com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
@@ -227,11 +227,11 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 }
 ```
 
-## Beispiel für EventListener zum Filtern von Aktivitäts-Stream-Daten {#sample-eventlistener-to-filter-activity-stream-data}
+## Beispiel für EventListener zum Filtern von Aktivität-Stream-Daten {#sample-eventlistener-to-filter-activity-stream-data}
 
-Es ist möglich, Ereignisse zu überwachen, um zu ändern, was im Aktivitätsstream angezeigt wird.
+Es ist möglich, auf Ereignis zu hören, um zu ändern, was im Aktivitäten-Stream angezeigt wird.
 
-Im folgenden Beispiel für Pseudo-Code werden DELETE-Ereignisse für die Kommentarkomponente aus dem Aktivitätsstream entfernt.
+Im folgenden Pseudo-Codebeispiel werden DELETE-Ereignis für Kommentarkomponente aus dem Aktivitäten-Stream entfernt.
 
 ### Pseudo-Code für EventListener {#pseudo-code-for-eventlistener}
 
