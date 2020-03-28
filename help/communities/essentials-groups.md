@@ -10,20 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
 # Community-Gruppengrundlagen {#community-group-essentials}
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern aus der Veröffentlichungs- und Autorenumgebung erstellt zu werden.
+Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern aus der Umgebung &quot;Veröffentlichen&quot;und &quot;Autor&quot;erstellt zu werden.
 
 Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack)können Gruppen innerhalb anderer Gruppen verschachtelt werden
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
-### Community Groups-Mitgliederliste {#community-groups-member-list}
+### Community Groups Liste {#community-groups-member-list}
 
 <table>
  <tbody>
@@ -85,9 +85,9 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack)können 
 
 ### Gruppenfunktion {#groups-function}
 
-Eine Community-Site-Struktur, die eine [Gruppenfunktion](functions.md#groups-function) enthält, unterstützt die Erstellung neuer Elemente `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe enthält eine `community groups member list` Komponente, die die Mitglieder der Gruppe auflistet.
+Eine Community-Sitestruktur, die eine [Gruppenfunktion](functions.md#groups-function) enthält, unterstützt die Erstellung neuer Elemente `community groups` aus der Veröffentlichungs- und der Autorenfunktion. Die erstellte Community-Gruppe enthält eine `community groups member list` Komponente, die die Gruppenmitglieder Liste.
 
-Eine oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseite(n) bereitstellen, können für die Funktion &quot;Gruppen&quot;konfiguriert werden, wenn die Funktion einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
+Eine oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppen-Seite(n) bereitstellen, können für die Funktion &quot;Gruppen&quot;konfiguriert werden, wenn die Funktion einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
 
 Die Einbeziehung mehrerer Community-Gruppenvorlagen führt dazu, dass dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site eine Auswahl an Designs angezeigt wird, wie im Abschnitt über [Community-Gruppen](creating-groups.md) für Autoren dargestellt.
 
@@ -97,10 +97,10 @@ Ab Communities [FP1](deploy-communities.md#latestfeaturepack)ist es möglich, ei
 
 Wenn eine Community-Site oder Gruppenvorlage die Funktion Gruppen enthält, können Sie
 
-* Erstellen einer Untergemeinschaft in der Autorenumgebung
-* Erstellen Sie eine Gruppe in der Veröffentlichungsumgebung, sofern diese für ihre Verwendung konfiguriert ist
+* Erstellen einer Unter-Community in der Autorenversion-Umgebung
+* Erstellen Sie eine Gruppe in der Umgebung &quot;Veröffentlichen&quot;, wenn diese für die
 
-Wenn Sie eine Gruppe in der Autorenumgebung erstellen, müssen Sie zuerst die Community-Site veröffentlichen und dann die Gruppe veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Untergruppen der Community erstellt werden, in denen die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
+Wenn Sie eine Gruppe in der Autorengruppe erstellen, müssen Sie zuerst die Community-Umgebung veröffentlichen und dann die Gruppe veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Untergruppen der Community erstellt werden, in denen die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
 
 ## Links und zugehörige Informationen {#links-and-related-information}
 
