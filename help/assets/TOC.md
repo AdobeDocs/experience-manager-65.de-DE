@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
+source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
 
 ---
 
@@ -12,19 +12,19 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 # AEM 6.5 Assets User Guide {#assets}
 
 + [Asset-Benutzerhandbuch](home.md)
-+ [Versionshinweise zu AEM 6.5 Assets](../release-notes/assets.md)
++ [Versionshinweise zu AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + AEM Assets verwenden {#using}
-   + [AEM Assets-Homepage](assets-home-page.md)
+   + [AEM Assets-Startseite](assets-home-page.md)
    + [Suche nach Assets in AEM](search-assets.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
    + [Adobe Stock-Assets in AEM Assets verwenden](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Aktivitäts-Stream in der Timeline](activity-stream.md)
-   + [Arbeitsabläufe auf Assets anwenden](assets-workflow.md)
-   + [Imagemaps hinzufügen](image-maps.md)
+   + [Workflows auf Assets anwenden](assets-workflow.md)
+   + [Hinzufügen](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
    + [Verbundene Assets mit AEM-Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
@@ -74,7 +74,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Verarbeiten von Assets mit Media Handlern und Workflows](media-handlers.md)
    + [Suchfunktion erweitern](searchx.md)
    + [Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können.](best-practices-for-imagemagick.md)
-   + [Assets in den Aktivitätsstream integrieren](extending-activity-stream.md)
+   + [Assets in den Aktivitäten-Stream integrieren](extending-activity-stream.md)
    + [Asset-Editor erweitern](asseteditorx.md)
    + [Assets-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](assets-api-content-fragments.md)
@@ -121,7 +121,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Verwaltung intelligenter Tags](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Konfigurieren der von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Konfigurieren von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in Brand Portal](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in Brand Portal](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen in Brand Portal](brand-portal-publish-collection.md)
