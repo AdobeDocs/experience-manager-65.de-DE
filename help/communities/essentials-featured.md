@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -56,4 +56,4 @@ Im Gegensatz zum Veröffentlichen eines Beitrags am Anfang eines Forums ermögli
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die Funktion[&quot; ](functions.md#featured-content-function)Vorgestellte Inhalte&quot;enthält, enthält eine konfigurierte `featured content` Komponente.
+Eine Community-Site-Struktur, die die Funktion [&quot;](functions.md#featured-content-function)Vorgestellte Inhalte&quot;enthält, enthält eine konfigurierte `featured content` Komponente.
