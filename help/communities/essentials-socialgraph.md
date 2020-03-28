@@ -1,8 +1,8 @@
 ---
 title: Grundlagen zu Social-Diagrammen
 seo-title: Grundlagen zu Social-Diagrammen
-description: Komponente folgen und folgende Komponentenübersicht
-seo-description: Komponente folgen und folgende Komponentenübersicht
+description: Folgen Sie der Komponente und der folgenden Komponentenübersicht
+seo-description: Folgen Sie der Komponente und der folgenden Komponentenübersicht
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 The ability for a Community member to follow [activities](essentials-activities.md) as well as be followed is established through two components:
 
-Die `follow`Komponente muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für bestehende Communities Mitglieder und Funktionen auf einer [Community-Site](overview.md#communitiessites)eingerichtet.
+Die `following` Komponente muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für bestehende Communities Mitglieder und Funktionen auf einer [Community-Site](overview.md#communitiessites)eingerichtet.
 
-The `following`component lists the members that are either following the current member or are being followed by the current member. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine Community-Site bereitgestellt wird.
+The `following` component lists the members that are either following the current member or are being followed by the current member. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine Community-Site bereitgestellt wird.
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -61,8 +61,8 @@ The `following`component lists the members that are either following the current
      <li>Type: Boolean</li>
      <li>Wert:<br />
       <ul>
-       <li><i>true </i>- die <code>following</code> Komponente listet die Mitglieder auf, die das derzeit angemeldete Mitglied sind <code>follows</code></li>
-       <li><i>false </i>- die <code>following</code> Komponente listet die Mitglieder auf, <code>follow </code>die das derzeit angemeldete Mitglied sind</li>
+       <li><i>True </i>- Die <code>following</code> Komponente Liste die Mitglieder, die das derzeit angemeldete Mitglied sind <code>follows</code></li>
+       <li><i>FALSE </i>- Die <code>following</code> Komponente Liste die Mitglieder, <code>follow </code>die derzeit angemeldet sind.</li>
       </ul> </li>
     </ul> <p>Wenn die Eigenschaft fehlt, wird standardmäßig <i>true</i> verwendet. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss einer Instanz des <code>following </code>Knotens mit <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>hinzugefügt werden.</p> </td>
   </tr>
@@ -71,11 +71,11 @@ The `following`component lists the members that are either following the current
 
 ### Folgen {#follow}
 
-| **resourceType** | social/socialgraph/components/hbs/following |
+| **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
 | [**einschließbar **](scf.md#add-or-include-a-communities-component) | Nein |
-| **templates** | /libs/social/socialgraph/components/hbs/following/following.hbs |
-| **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
+| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Clientseitige Anpassungen](client-customize.md)
 
