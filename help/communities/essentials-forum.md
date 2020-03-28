@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -45,7 +45,7 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="forum.md">Forumsfunktion</a></td>
+   <td>Siehe Funktion <a href="forum.md">des Forums</a></td>
   </tr>
  </tbody>
 </table>
@@ -62,21 +62,21 @@ Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit de
 
 ### Forumsfunktion {#forum-function}
 
-Eine Community-Site-Struktur, die die Funktion[](functions.md#forum-function)Forum enthält, enthält eine konfigurierte `forum` Komponente sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
+Eine Community-Site-Struktur, die die Funktion [](functions.md#forum-function)Forum enthält, enthält eine konfigurierte `forum` Komponente sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
 
 ### Zugriff auf Forumbeiträge (UGC) {#accessing-forum-posts-ugc}
 
-UGC sollte mit einer der Standardmethoden für Moderation moderiert werden.
+UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
 * [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien zum Kodieren
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Coding-Richtlinien
+* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
 
