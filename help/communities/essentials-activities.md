@@ -1,8 +1,8 @@
 ---
-title: Aktivitäts-Stream-Grundlagen
-seo-title: Aktivitäts-Stream-Grundlagen
-description: Liste der zuletzt von einem Mitglied durchgeführten Aktivitäten oder einer Liste der zuletzt durchgeführten Aktivitäten in einem einzigen Inhaltsthread
-seo-description: Liste der zuletzt von einem Mitglied durchgeführten Aktivitäten oder einer Liste der zuletzt durchgeführten Aktivitäten in einem einzigen Inhaltsthread
+title: Aktivität Stream Essentials
+seo-title: Aktivität Stream Essentials
+description: Liste der zuletzt durchgeführten Aktivitäten eines Mitglieds oder einer Liste der letzten Aktivitäten in einem einzigen Inhaltsthread
+seo-description: Liste der zuletzt durchgeführten Aktivitäten eines Mitglieds oder einer Liste der letzten Aktivitäten in einem einzigen Inhaltsthread
 uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,28 +11,28 @@ content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Aktivitäts-Stream-Grundlagen{#activity-stream-essentials}
+# Aktivität Stream Essentials {#activity-stream-essentials}
 
-Die Aktivitäten eines in einem Community-Mitglied unterschriebenen Mitglieds, wie das Posten in einem Forum oder Blog, werden in einem Stream gesammelt, der durch die Konfiguration der Aktivitätsstreams-Komponente auf verschiedene Weise gefiltert und angezeigt werden kann.
+Die Aktivitäten eines in einem Community-Mitglied unterschriebenen Mitglieds, wie z.B. das Posten in einem Forum oder Blog, werden in einem Stream gesammelt, der durch die Konfiguration der Aktivität Streams-Komponente gefiltert und auf verschiedene Weise angezeigt werden kann.
 
 Die Möglichkeit zu folgen, fügt weitere Aktivitäten hinzu, wenn Community-Mitglieder Beiträge von Interesse oder andere Community-Mitglieder folgen.
 
-Alle [Community-Sites](/help/communities/overview.md#communitiessites) enthalten eine Benutzerprofilseite für das angemeldete Mitglied, auf der die Mitgliederaktivitäten auf dieselbe Weise angezeigt werden.
+Alle [Community-Sites](/help/communities/overview.md#communitiessites) enthalten eine Benutzerseite für das Profil des angemeldeten Mitglieds, auf der die Mitgliederangaben auf dieselbe Weise angezeigt werden.
 
 ## Konzepte {#concepts}
 
-Ein *Aktivitätsstream* ist die Liste der zuletzt von einem Mitglied durchgeführten Aktivitäten oder eine Liste der zuletzt durchgeführten Aktivitäten in einem einzigen Inhaltsthread, wie z. B. einem Forenthema oder einem Blog.
+Ein *Aktivität-Stream* ist die Liste der letzten Aktivitäten, die von einem Mitglied oder einer Liste der letzten Aktivitäten an einem einzigen Inhaltsthread, wie z. B. einem Forenthema oder einem Blog, durchgeführt wurden.
 
-Ein Mitglied kann einem Aktivitätsstream folgen, indem es entweder einer anderen Einzelperson oder einem anderen Inhalt folgt.
+Ein Mitglied kann einem Aktivitäten-Stream folgen, indem es entweder einer anderen Einzelperson oder einem anderen Inhalt folgt.
 
-Ein *News-Feed* ist eine Zusammenführung der Aktivitätsströme, denen ein Mitglied gefolgt ist, in einem einzigen Stream.
+Ein *News-Feed* ist eine Zusammenführung der Aktivität-Streams, die von einem Mitglied in einem Stream verfolgt werden.
 
-Ein * [Social Graph](/help/communities/essentials-socialgraph.md)* erfasst die folgenden Beziehungen eines Mitglieds zum anderen.
+Ein *[Social Graph](/help/communities/essentials-socialgraph.md)*erfasst die folgenden Beziehungen eines Mitglieds zum anderen.
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -60,7 +60,7 @@ Ein * [Social Graph](/help/communities/essentials-socialgraph.md)* erfasst die f
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>siehe <a href="/help/communities/activities.md">Activity Streams-Funktion</a></td>
+   <td>siehe <a href="/help/communities/activities.md">Aktivität Streams-Funktion</a></td>
   </tr>
  </tbody>
 </table>
@@ -69,12 +69,12 @@ Ein * [Social Graph](/help/communities/essentials-socialgraph.md)* erfasst die f
 
 ## Grundlagen für serverseitige {#essentials-for-server-side}
 
-* [Activity Streams-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [Aktivität Streams API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [Activity Stream-Listener-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [Aktivität Streams Listener API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Serverseitige Anpassungen](/help/communities/server-customize.md)
 
 ### Aktivitäts-Stream-Funktion {#activity-stream-function}
 
-Eine Community-Site-Struktur, die die [Activity Stream-Funktion](/help/communities/functions.md#activity-stream-function)enthält, enthält eine konfigurierte `activity streams` Komponente.
+Eine Community-Site-Struktur, die die [Aktivität Stream-Funktion](/help/communities/functions.md#activity-stream-function)enthält, enthält eine konfigurierte `activity streams` Komponente.
