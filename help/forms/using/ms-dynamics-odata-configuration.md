@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
 
 ![data-integer](assets/data-integeration.png)
 
-Microsoft Dynamics ist eine Customer Relationship Management(CRM)- und Enterprise Resource Planning(ERP)-Software, die Enterprise-Lösungen zum Erstellen und Verwalten von Kundenkonten, Kontakten, Leads, Chancen und Fällen bereitstellt. [AEM Forms Data Integration](../../forms/using/data-integration.md) bietet eine OData-Cloud-Service-Konfiguration für die Integration von Formularen mit Online- und lokalen Microsoft Dynamics-Servern. Mit dieser Funktion können Sie ein Formulardatenmodell basierend auf den im Microsoft Dynamics-Dienst definierten Entitäten, Attributen und Diensten erstellen. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit dem Microsoft Dynamics-Server interagieren, um Geschäftsabläufe zu ermöglichen. Beispiel:
+Microsoft Dynamics ist eine Customer Relationship Management(CRM)- und Enterprise Resource Planning(ERP)-Software, die Enterprise-Lösungen zum Erstellen und Verwalten von Kundenkonten, Kontakten, Leads, Chancen und Fällen bereitstellt. [AEM Forms Data Integration](../../forms/using/data-integration.md) bietet eine OData-Cloud-Service-Konfiguration für die Integration von Formularen mit Online- und lokalen Microsoft Dynamics-Servern. Mit dieser Funktion können Sie ein Formulardatenmodell basierend auf den im Microsoft Dynamics-Dienst definierten Entitäten, Attributen und Diensten erstellen. Das Formulardatenmodell kann verwendet werden, um adaptive Formulare zu erstellen, die mit dem Microsoft Dynamics-Server interagieren, um Workflows zu ermöglichen. Beispiel:
 
-* Abfrage des Microsoft Dynamics-Servers für Daten und Vorausfüllen adaptiver Formulare
+* Abfrage Microsoft Dynamics-Server für Daten und Vorausfüllen adaptiver Formulare
 * Daten beim Senden adaptiver Formulare in Microsoft Dynamics schreiben
 * Daten in Microsoft Dynamics durch benutzerdefinierte Entitäten im Formulardatenmodell schreiben und umgekehrt
 
@@ -55,7 +55,7 @@ Gehen Sie folgendermaßen vor, um die Antwort-URL für eine registrierte Microso
 
 1. Go to Microsoft Azure Active Directory account and add the following cloud service configuration URL in **Reply URLs** settings for your registered application:
 
-   `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+   `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
    ![Adaptverzeichnis](assets/azure_directory_new.png)
 
@@ -97,7 +97,7 @@ Führen Sie die folgenden Schritte aus, um einen OAuth-Client auf einem Active D
 
    * `Client-ID` ist eine Client-ID, die Sie mit einem beliebigen GUID-Generator generieren können.
    * `redirect-uri` ist die URL zum Microsoft Dynamics OData Cloud-Dienst auf AEM Forms. Der mit dem AEM Forms-Paket installierte Standard-Cloud-Dienst wird unter folgender URL bereitgestellt:
-      `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Führen Sie den folgenden Befehl aus, um Zugriff auf den AD FS-Computer zu gewähren:
 
@@ -140,7 +140,7 @@ Beim ersten Öffnen des Formulardatenmodells verbindet es sich mit dem konfiguri
 
 Um das Formulardatenmodell zu überprüfen, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]**. Wählen Sie **MS Dynamics FDM** und klicken Sie auf **Bearbeiten**, um das Formulardatenmodell im Bearbeitungsmodus zu öffnen. Alternativ können Sie das Formulardatenmodell auch direkt über die folgende URL öffnen:
 
-`https://[server]:[port]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+`https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 ![default-fdm-1](assets/default-fdm-1.png)
 
