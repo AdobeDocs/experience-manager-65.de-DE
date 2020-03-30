@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -46,7 +46,7 @@ Eine Regel entspricht normalerweise einem der folgenden Konstrukte:
 
 Im Regeleditor wird das Bedingung-Aktion-Konstrukt durch den Regeltyp **Wenn** durchgesetzt.
 
-**Aktionsbedingung** In diesem Konstrukt definiert eine Regel zuerst eine auszulösende Aktion, gefolgt von Bedingungen für die Auswertung. Eine weitere Variante dieses Konstrukts ist Aktion-Bedingung-alternative Aktion, wobei auch eine alternative Aktion angegeben wird, die ausgelöst wird, wenn die Bedingung den Wert False zurückgibt.
+**Action-Bedingung** In diesem Konstrukt definiert eine Regel zuerst eine auszulösende Aktion, gefolgt von Bedingungen für die Auswertung. Eine weitere Variante dieses Konstrukts ist Aktion-Bedingung-alternative Aktion, wobei auch eine alternative Aktion angegeben wird, die ausgelöst wird, wenn die Bedingung den Wert False zurückgibt.
 
 Die Regeltypen zum Anzeigen, Ausblenden, Aktivieren, Deaktivieren und Wert einstellen im Regeleditor setzen das Aktion-Bedingung-Regelkonstrukt um. Die alternative Aktion für „Anzeigen“ ist standardmäßig „Ausblenden“, für „Aktivieren“ ist es „Deaktivieren“ und umgekehrt. Sie können die standardmäßige alternative Aktion nicht ändern.
 
@@ -135,7 +135,7 @@ Zusätzlich zum Formulardatenmodelldienst können Sie eine direkte WSDL-URL ange
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-**Legen Sie den Wert** &quot;Berechnet&quot;fest und legen Sie den Wert des angegebenen Objekts fest. Sie können den Objektwert auf eine Zeichenfolge, den Wert eines anderen Objekts, den berechneten Wert mithilfe eines mathematischen Ausdrucks oder einer Funktion, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodelldiensts festlegen. Wenn Sie die Option &quot;Webdienst&quot;wählen, werden alle Dienste angezeigt, die in allen Formulardatenmodellen auf Ihrer AEM-Instanz konfiguriert sind. Bei der Auswahl eines Formulardatenmodell-Diensts erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen dienst zuordnen können.
+**Legen Sie den Wert** &quot;Berechnet&quot;fest und legen Sie den Wert des angegebenen Objekts fest. Sie können den Objektwert auf eine Zeichenfolge, den Wert eines anderen Objekts, den berechneten Ausdruck mit mathematischem  oder einer Funktion, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodelldiensts festlegen. Wenn Sie die Option &quot;Webdienst&quot;wählen, werden alle Dienste angezeigt, die in allen Formulardatenmodellen auf Ihrer AEM-Instanz konfiguriert sind. Bei der Auswahl eines Formulardatenmodell-Diensts erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen dienst zuordnen können.
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
@@ -145,11 +145,11 @@ Damit können Sie Regeln definieren, um Kontrollkästchen dynamisch zum adaptive
 
 ![Eigenschaft festlegen](assets/set_property_rule_new.png)
 
-Um eine auf einer benutzerdefinierten Funktion basierende Regel zu definieren, wählen Sie in der Dropdownliste die Option **Funktionsausgabe** und ziehen Sie eine benutzerdefinierte Funktion auf die Registerkarte &quot; **Funktionen** &quot;. Wenn die Bedingungsaktion erfüllt ist, werden die in der benutzerdefinierten Funktion definierten Kontrollkästchen dem adaptiven Formular hinzugefügt.
+Um eine auf einer benutzerdefinierten Funktion basierende Regel zu definieren, wählen Sie in der Dropdown-Liste &quot; **Funktionsausgabe** &quot;und ziehen Sie eine benutzerdefinierte Funktion auf die Registerkarte &quot; **Funktionen** &quot;. Wenn die Bedingungsaktion erfüllt ist, werden die in der benutzerdefinierten Funktion definierten Kontrollkästchen dem adaptiven Formular hinzugefügt.
 
-Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie in der Dropdownliste &quot; **Formularobjekt** &quot;aus und ziehen Sie ein Formularobjekt auf die Registerkarte &quot; **Formularobjekte** &quot;. Wenn die Bedingungsaktion erfüllt ist, wird die Anzahl der im Formularobjekt definierten Kontrollkästchen dem adaptiven Formular hinzugefügt.
+Um eine auf einem Formularobjekt basierende Regel zu definieren, wählen Sie in der Dropdown-Liste &quot; **Formularobjekt** &quot;aus und ziehen Sie ein Formularobjekt per Drag &amp; Drop von der Registerkarte &quot; **Formularobjekte** &quot;. Wenn die Bedingungsaktion erfüllt ist, wird die Anzahl der im Formularobjekt definierten Kontrollkästchen dem adaptiven Formular hinzugefügt.
 
-Mit einer auf einer Objekteigenschaft basierenden Regel zum Festlegen der Eigenschaft können Sie die Anzahl der Kontrollkästchen in einem adaptiven Formular auf der Grundlage einer anderen Objekteigenschaft hinzufügen, die im adaptiven Formular enthalten ist.
+Mit einer auf einer Objekteigenschaft basierenden Regel zum Festlegen der Eigenschaft können Sie die Anzahl der Kontrollkästchen in einem adaptiven Formular hinzufügen, das auf einer anderen Objekteigenschaft basiert, die im adaptiven Formular enthalten ist.
 
 Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Kontrollkästchen basierend auf der Anzahl der Dropdown-Listen im adaptiven Formular:
 
@@ -167,11 +167,11 @@ Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Ko
 
 **Formular** überprüfen Validiert das Formular.
 
-**Instanz** hinzufügen Fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
+**Hinzufügen Instanz** fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
 **Instanz** entfernen Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
-**Navigieren Sie zu** Navigiert zu anderen interaktiven Mitteilungen, adaptiven Formularen, anderen Assets wie Bildern oder Dokumentfragmenten oder zu einer externen URL. Weitere Informationen finden Sie unter Schaltfläche [Hinzufügen zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navigieren Sie zu** Navigiert zu anderen interaktiven Kommunikationen, adaptiven Formularen, anderen Assets wie Bildern oder Dokument-Fragmenten oder zu einer externen URL. Weitere Informationen finden Sie unter [Hinzufügen Schaltfläche zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
 
 ### Einstellen des Wertes von {#set-value-of}
 
@@ -183,7 +183,7 @@ Der Regeltyp „Wert einstellen“ steht für manche Formularobjekte nicht zur V
 
 Wert von Objekt A einstellen auf:
 
-(String ABC) OR(object property X of Object C) OR(value from a function) OR(value from a mathematical expression) OR(output value of a data model service or web service);
+(String ABC) OR(object property X of Object C) OR(value from a function) OR(value from a mathematical Ausdruck) OR(output value of a data model service or web service);
 
 Wenn (optional):
 
@@ -301,7 +301,7 @@ Eine typische Regel zum Validieren ist wie folgt strukturiert:
 
 Mit dem Regeltyp &quot;Optionen **einstellen&quot;können Sie Regeln definieren, um Kontrollkästchen dynamisch zum adaptiven Formular hinzuzufügen** . Sie können ein Formulardatenmodell oder eine benutzerdefinierte Funktion verwenden, um die Regel zu definieren.
 
-Um eine auf einer benutzerdefinierten Funktion basierende Regel zu definieren, wählen Sie in der Dropdownliste die Option **Funktionsausgabe** und ziehen Sie eine benutzerdefinierte Funktion auf die Registerkarte &quot; **Funktionen** &quot;. Die Anzahl der in der benutzerdefinierten Funktion definierten Kontrollkästchen wird dem adaptiven Formular hinzugefügt.
+Um eine auf einer benutzerdefinierten Funktion basierende Regel zu definieren, wählen Sie in der Dropdown-Liste &quot; **Funktionsausgabe** &quot;und ziehen Sie eine benutzerdefinierte Funktion auf die Registerkarte &quot; **Funktionen** &quot;. Die Anzahl der in der benutzerdefinierten Funktion definierten Kontrollkästchen wird dem adaptiven Formular hinzugefügt.
 
 ![Benutzerdefinierte Funktionen](assets/custom_functions_set_options_new.png)
 
@@ -309,10 +309,10 @@ Informationen zum Erstellen einer benutzerdefinierten Funktion finden Sie unter 
 
 So definieren Sie eine auf einem Formulardatenmodell basierende Regel:
 
-1. Wählen Sie **Dienstausgabe** aus der Dropdownliste.
+1. Wählen Sie **Dienstausgabe** aus der Dropdown-Liste.
 1. Wählen Sie das Datenmodellobjekt aus.
-1. Wählen Sie eine Datenmodellobjekteigenschaft aus der Dropdownliste **Anzeigewert** . Die Anzahl der Kontrollkästchen im adaptiven Formular wird von der Anzahl der Instanzen abgeleitet, die für diese Eigenschaft in der Datenbank definiert wurden.
-1. Wählen Sie eine Datenmodellobjekteigenschaft aus der Dropdownliste Wert **speichern** .
+1. Wählen Sie eine Datenmodellobjekteigenschaft aus der Dropdown-Liste &quot; **Anzeigewert** &quot;aus. Die Anzahl der Kontrollkästchen im adaptiven Formular wird von der Anzahl der Instanzen abgeleitet, die für diese Eigenschaft in der Datenbank definiert wurden.
+1. Wählen Sie eine Datenmodellobjekteigenschaft aus der Dropdown-Liste Wert **speichern** .
 
 ![FDM-Set-Optionen](assets/fdm_set_options_new.png)
 
@@ -374,7 +374,7 @@ Benutzer können in der Gruppe der Formular-Hauptbenutzer auf den Code-Editor zu
 
 AEM Forms zeichnet den zuletzt von Ihnen zum Erstellen einer Regel verwendeten Modus des Regeleditors auf. Wenn Sie den Regeleditor das nächste Mal starten, wird er in diesem Modus geöffnet. Sie können jedoch auch einen Standardmodus konfigurieren, sodass der Regeleditor immer in diesem Modus geöffnet wird. Gehen Sie dazu wie folgt vor:
 
-1. Go to AEM web console at https://[host]:[port]/system/console/configMgr.
+1. Go to AEM web console at `https://[host]:[port]/system/console/configMgr`.
 1. Click to edit **[!UICONTROL Adaptive Form Configuration Service]**.
 1. Wählen Sie **[!UICONTROL Visual Editor]** oder **[!UICONTROL Codeeditor]** aus der Dropdownliste für den **[!UICONTROL Standardmodus für den Regeleditor]**.
 
@@ -519,7 +519,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
 Benutzer, die zur Gruppe der Formular-Hauptbenutzer hinzugefügt wurden, können den Code-Editor verwenden. Der Regeleditor generiert automatisch den JavaScript-Code für jede Regel, die Sie mithilfe des Visual Editor erstellen. Indem Sie vom Visual Editor zum Codeeditor wechseln, können Sie den generierten Code anzeigen. Wenn Sie jedoch den Code einer Regel im Codeeditor ändern, können Sie nicht mehr zurück zum Visual Editor wechseln. Sie können neue Regeln auch von Anfang an im Codeeditor schreiben, wenn Sie diesen dem Visual Editor vorziehen. Mithilfe des Schalters zwischen dem Visual Editor und dem Codeeditor können Sie zwischen den beiden Modi wechseln.
 
-Der Code-Editor JavaScript ist die Ausdruckssprache adaptiver Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Der Code-Editor JavaScript ist die Programmiersprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 Weitere Informationen zu Richtlinien für das Schreiben von Regeln im Codeeditor finden Sie unter [Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md).
 
@@ -547,13 +547,13 @@ Unterstützte `jsdoc` Tags:
 
 * **Private** Syntax: Eine `@private`private Funktion ist nicht als benutzerdefinierte Funktion enthalten.
 
-* **Namenssyntax**: Sie können `@name funcName <Function Name>`alternativ `,` Folgendes verwenden: `@function funcName <Function Name>` oder **** `@func``funcName <Function Name>`.
+* **Namenssyntax**: Sie können `@name funcName <Function Name>`alternativ `,` Folgendes verwenden: `@function funcName <Function Name>` oder **** `@func` `funcName <Function Name>`.
    `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
    `<Function Name>` ist der Anzeigename der Funktion.
 
-* **Mitgliedersyntax**: Fügt der Funktion einen Namespace `@memberof namespace`hinzu.
+* **Mitgliedersyntax**: Fügt der Funktion einen Namensraum `@memberof namespace`hinzu.
 
-* **Parametersyntax**: `@param {type} name <Parameter Description>`Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` oder **** `@arg``{type}``name <Parameter Description>`.
+* **Parametersyntax**: `@param {type} name <Parameter Description>`Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` oder **** `@arg``{type}` `name <Parameter Description>`.
 Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens). 
    `{type}` stellt den Parametertyp dar. Zugelassene Parametertypen sind: 
 
@@ -586,7 +586,7 @@ Führen Sie die folgenden Schritte aus, um eine Client-Bibliothek zu erstellen u
 
    >[!NOTE]
    >
-   >`customfunction`ist eine Beispielkategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib` erstellen.
+   >`customfunction`ist eine Kategorie. Sie können einen beliebigen Namen für die Kategorie wählen, die Sie im Ordner `clientlib` erstellen.
 
 Nachdem Sie die Client-Bibliothek im CRX-Repository hinzugefügt haben, verwenden Sie sie in Ihrem adaptiven Formular. Sie ermöglicht die Verwendung der benutzerdefinierten Funktion als Regel im Formular. Führen Sie die folgenden Schritte aus, um die Client-Bibliothek dem adaptiven Formular hinzuzufügen.
 
@@ -668,7 +668,7 @@ var c = {
 
 Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules1.png). Sie können den Titel und eine Vorschau der Regelübersicht anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
-![list-rules](assets/list-rules.png)
+![Listen](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln durchführen:
 
@@ -795,7 +795,7 @@ Ein Bestellformular enthält die folgende Tabelle, in der die Benutzer ihre Best
 
 ![example-function-table](assets/example-function-table.png)
 
-******A. Zeile 1** B. Menge **C.** Menge insgesamt
+**A.** Zeile 1 **B.** Menge **C.** Menge insgesamt
 
 Als Nächstes sollen die in der Spalte „Produktmenge“ angegebenen Mengen für alle Produkte addiert und die Summe in der Zelle „Menge insgesamt“ angezeigt werden. Dies erreichen Sie, indem Sie wie unten gezeigt eine Regel des Typs „Wert einstellen“ für die Zelle „Menge insgesamt“ schreiben.
 
