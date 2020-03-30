@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Schnellstart zur Java-API für Endpunktregistrierung (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Java-API-Quick-Beginn (SOAP) der Endpunktregistrierung {#endpoint-registry-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) ist für die Endpunktregistrierung verfügbar.
+Java API Quick Beginn (SOAP) ist für die Endpunktregistrierung verfügbar.
 
 [QuickStart: Hinzufügen eines EJB-Endpunkts mithilfe der Java-API](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
@@ -39,7 +39,7 @@ Java API Quick Start(SOAP) ist für die Endpunktregistrierung verfügbar.
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Schnellstart unter &quot;Programmieren mit AEM Forms&quot;basiert auf Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Quick Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
 **Hinweis**: Sie können mit einem Webdienst nicht mit Endpunkten arbeiten.
 
@@ -109,7 +109,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -208,7 +208,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -248,7 +248,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 >[!NOTE]
 >
->Sie müssen die Datei &quot;watchedFolderEndpointConfigConstants.java&quot;in Ihr Projekt einschließen, um die Kompilierung durchzuführen und den folgenden Schnellstart auszuführen. (Siehe [Konfigurationswerte der Konstanten Datei](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)für überwachte Ordner.)
+>Sie müssen die Datei &quot;watchedFolderEndpointConfigConstants.java&quot;in Ihr Projekt einschließen, um den folgenden Quick-Beginn zu kompilieren und auszuführen. (Siehe [Konfigurationswerte der Konstanten Datei](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)für überwachte Ordner.)
 
 ```as3
  /*
@@ -311,7 +311,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -383,7 +383,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/* 
 
 >[!NOTE]
 >
->Sie müssen die Datei EmailEndpointConfigConstants.java in Ihr Projekt einschließen, um den folgenden Schnellstart zu kompilieren und auszuführen. (Siehe Konstante Datei [E-Mail-Konfigurationswerte](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Sie müssen die Datei &quot;EmailEndpointConfigConstants.java&quot;in Ihr Projekt einschließen, um den folgenden Quick Beginn zu kompilieren und auszuführen. (Siehe Konstante Datei [E-Mail-Konfigurationswerte](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```as3
  /*
@@ -446,7 +446,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/* 
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -590,7 +590,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -693,7 +693,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -804,7 +804,7 @@ Im folgenden Java-Codebeispiel wird ein Endpunkt des Typs &quot;Überwachter Ord
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -956,7 +956,7 @@ Der folgende Java-Code entfernt einen EJB-Endpunkt aus einem Dienst mit dem Name
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1005,7 +1005,7 @@ Der folgende Java-Code entfernt einen EJB-Endpunkt aus einem Dienst mit dem Name
 
 ## QuickStart: Abrufen von Endpunktschnittstellenverbindungsinformationen mit der Java-API {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-Der folgende Java-Code ruft Informationen zu einem Endpunkt des Typs &quot;Überwachter Ordner&quot;ab. Informationen zu den einzelnen Konfigurationswerten werden abgerufen und angezeigt. Diese Codeliste gibt an, ob jeder Konfigurationswert erforderlich oder optional ist. Darüber hinaus werden Name und Wert für jeden Konfigurationswert angezeigt. (Siehe [Abrufen von Endpunkt-Connector-Informationen](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+Der folgende Java-Code ruft Informationen zu einem Endpunkt des Typs &quot;Überwachter Ordner&quot;ab. Informationen zu den einzelnen Konfigurationswerten werden abgerufen und angezeigt. Diese Code-Liste gibt an, ob jeder Konfigurationswert erforderlich oder optional ist. Darüber hinaus werden Name und Wert für jeden Konfigurationswert angezeigt. (Siehe [Abrufen von Endpunkt-Connector-Informationen](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```as3
  /*
@@ -1070,7 +1070,7 @@ Der folgende Java-Code ruft Informationen zu einem Endpunkt des Typs &quot;Über
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
