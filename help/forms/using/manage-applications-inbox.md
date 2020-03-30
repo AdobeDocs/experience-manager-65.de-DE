@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,7 +31,7 @@ Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen
 
 ## Anwendung erstellen {#create-application}
 
-1. Go to AEM Inbox at https://[server]:[port]/aem/inbox.
+1. Go to AEM Inbox at https://&#39;[server]:[port]&#39;/aem/inbox.
 1. In the Inbox UI, tap **[!UICONTROL Create > Application]**. Die Seite &quot;Anwendung auswählen&quot;wird angezeigt.
 1. Select an application and click **[!UICONTROL Create]**. Das mit der Anwendung verknüpfte adaptive Formular wird geöffnet. Füllen Sie die Informationen im adaptiven Formular aus und tippen Sie auf **[!UICONTROL Senden]**. Der dazugehörige Workflow wird gestartet und erstellt eine Aufgabe im Posteingang des Empfängers.
 
@@ -45,7 +45,7 @@ Aufgaben, die einer Gruppe zugewiesen sind, werden im Posteingang aller Gruppenm
 
 1. Tippen Sie auf die Miniaturansicht der Aufgabe, um sie auszuwählen. Optionen zum Öffnen oder Delegieren der Aufgabe werden oben angezeigt.
 
-   ![select-task](assets/select-task.png)
+   ![select-Aufgabe](assets/select-task.png)
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -66,7 +66,7 @@ Wenn Sie eine Aufgabe öffnen, können Sie Aufgabendetails anzeigen und verfügb
    >
    >Wenn eine Aufgabe einer Gruppe zugewiesen ist, müssen Sie sie annehmen, damit Sie sie in der detaillierten Ansicht anzeigen können.
 
-![task-details](assets/task-details.png)
+![Aufgabe-Details](assets/task-details.png)
 
 Die detaillierte Aufgabenansicht umfasst die folgenden Abschnitte:
 
@@ -112,9 +112,9 @@ Die Aufgabe wird geöffnet und das dazugehörige Dokument oder adaptive Formular
 
 Im Abschnitt mit den Aufgabendetails werden Informationen wie die durchgeführte Aktion, der Aufgabenstatus, das Startdatum und das Enddatum angezeigt.
 
-![completed-task](assets/completed-task.png)
+![completed-Aufgabe](assets/completed-task.png)
 
 The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap **[!UICONTROL View details]** for a step for detailed information.
 
-![completed-task-workflow](assets/completed-task-workflow.png)
+![completed-Aufgabe-workflow](assets/completed-task-workflow.png)
 
