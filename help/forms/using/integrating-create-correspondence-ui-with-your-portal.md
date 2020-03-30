@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Cluster
 * die URL für die XML-Datei, die aus der gewünschten Datenquelle (unter Verwendung des cmDataUrl-Parameters) erfasst wurde
 
 Beispielsweise würde das benutzerdefinierte Portal die URL als\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, was die href eines Links im Portal sein könnte.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, was die href eines Links im Portal sein könnte.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Beispielsweise würde das benutzerdefinierte Portal die URL als\
 
 ## Auf Daten basierter Inline-Aufruf {#inline-data-based-invocation}
 
-Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
+Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
 
 ### Parameter für das Festlegen des Briefs {#parameters-for-specifying-letter}
 
