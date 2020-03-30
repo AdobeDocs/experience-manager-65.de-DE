@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname ]*`:`*[Port]* - `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[Administrator-Benutzername ]*-`&password=`*[Kennwort]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
    Die Meldung „Jetzt angehalten“ wird im Browserfenster angezeigt.
 
@@ -40,7 +40,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]:[Port ]*-`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[Administrator-Benutzername]* - `&password=`*[Kennwort ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
    Der Status wird im Browserfenster angezeigt. Der Status „true“ zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und „false“ zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
 
@@ -48,7 +48,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]:[Port ]*-`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[Administrator-Benutzername]* - `&password=`*[Kennwort ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
    Die Meldung „Wird ausgeführt“ wird im Browserfenster angezeigt.
 
