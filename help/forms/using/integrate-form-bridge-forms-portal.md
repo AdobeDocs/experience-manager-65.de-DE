@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
 1. **Wählen oder erstellen Sie ein Profil.**
 
-   1. Navigieren Sie in der CRX DE-Schnittstelle zu: `https://[server]:[port]/crx/de`.
+   1. Navigieren Sie in der CRX DE-Schnittstelle zu: `https://'[server]:[port]'/crx/de`.
    1. Melden Sie sich mit Administratorberechtigungen an.
    1. Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil aus.
 
