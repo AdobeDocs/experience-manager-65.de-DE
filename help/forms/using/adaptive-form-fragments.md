@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -163,7 +163,7 @@ Sie können das Fragmentasset und dessen Bindungen im Dialogfeld „Komponente b
 
 Sie können mehrere Vorgänge auf adaptive Formularfragmente mithilfe von AEM Forms ausführen.
 
-1. Wechseln zu `https://[hostname]:[port]/aem/forms.html`.
+1. Wechseln zu `https://[hostname]:'port'/aem/forms.html`.
 
 1. Klicken Sie in der Symbolleiste von AEM Forms auf **Auswählen** und wählen Sie ein adaptives Formularfragment aus. Die Symbolleiste enthält die folgenden Vorgänge, die Sie auf dem ausgewählten adaptiven Formularfragment ausführen können.
 
