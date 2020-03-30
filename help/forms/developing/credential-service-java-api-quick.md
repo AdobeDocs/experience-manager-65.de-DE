@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Java-API-Schnellstart für den Berechtigungsdienst (SOAP) {#credential-service-java-api-quickstart-soap}
+# Java-API-Quick-Beginn (SOAP) für den Berechtigungsdienst {#credential-service-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) ist für den Berechtigungsdienst verfügbar.
+Java API Quick Beginn (SOAP) ist für den Berechtigungsdienst verfügbar.
 
-[Kurzanleitung (SOAP-Modus): Importieren von Berechtigungen mit der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Importieren von Berechtigungen mit der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Löschen von Berechtigungen mit der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Löschen von Berechtigungen mit der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Schnellstarts unter Programmieren mit AEM Forms basieren auf dem FormsServer, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem FormsServer, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
 ***Hinweis **: Berechtigungsdienstvorgänge können nicht mit Webdiensten ausgeführt werden.*
 
-## Kurzanleitung (SOAP-Modus): Importieren von Berechtigungen mit der Java-API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Importieren von Berechtigungen mit der Java-API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
 Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei mit dem Namen *cred.p12* importiert. Der Aliaswert, der zum Importieren der Berechtigung verwendet wird, ist `Secure`. (Siehe [Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)importieren.)
 
@@ -95,7 +95,7 @@ Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei mit d
  
           //Set connection properties required to invoke AEM Forms using SOAP mode
               Properties connectionProps = new Properties();
-              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -130,7 +130,7 @@ Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei mit d
  
 ```
 
-## Kurzanleitung (SOAP-Modus): Löschen von Berechtigungen mit der Java-API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Löschen von Berechtigungen mit der Java-API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 Im folgenden Codebeispiel wird eine Berechtigung basierend auf einem Aliaswert *secure* gelöscht. (Siehe [Löschen von Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
@@ -197,7 +197,7 @@ Im folgenden Codebeispiel wird eine Berechtigung basierend auf einem Aliaswert *
  
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
