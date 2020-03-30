@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -130,7 +130,7 @@ Der Dienst kann zusätzlich sämtliche Strichcodes dekodieren, die unterstützte
 
 ## Konfigurieren Sie die Eigenschaften des Dienstes   {#configureproperties}
 
-Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. The default URL of AEM console is `https://[host]:[port]/system/console/configMgr`.
+Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. The default URL of AEM console is `https://[host]:'port'/system/console/configMgr`.
 
 ## Verwendung des Dienstes {#using}
 
@@ -233,7 +233,7 @@ Der folgende Beispielcode dekodiert einen Barcode in einem Dokument und speicher
 
 Die Ausführung des Barcoded Forms-Dienstes über einen Workflow ist ähnlich wie die Ausführung über JSP/Servlet. Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird.
 
-Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokumentobjekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
+Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Anschließend verwendet das Dokument-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalte aus dem Repository zu lesen.
 
 Der folgende Workflowprozess dekodiert einen Barcode in einem Dokument und speichert das Ergebnis auf der Festplatte. Der Code ist in ECMAScript geschrieben und das Dokument wird als Workflow-Nutzlast übergeben:
 
