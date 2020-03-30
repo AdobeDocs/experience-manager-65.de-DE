@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
 
 ## Überblick {#overview}
 
-Ein Textdokument besteht aus einem oder mehreren Textabsätzen. Ein Absatz kann statisch oder dynamisch sein. Ein dynamischer Absatz kann Formulardatenmodelleigenschaften und -variablen enthalten. Sie können auch Regeln anwenden und innerhalb eines Textdokumentfragments wiederholen. Beispielsweise könnte der Kundenname in einer Begrüßung eine FDM-Eigenschaft (Form Data Model) sein, deren Wert zur Laufzeit verfügbar gemacht wird. Durch Änderung dieser Werte kann dieselbe interaktive Kommunikation verwendet werden, um die interaktive Kommunikation für verschiedene Kunden mithilfe der Agent-Benutzeroberfläche vorzubereiten.
+Ein Textdokument besteht aus einem oder mehreren Textabsätzen. Ein Absatz kann statisch oder dynamisch sein. Ein dynamischer Absatz kann Formulardatenmodelleigenschaften und -variablen enthalten. Sie können auch Regeln anwenden und innerhalb eines Textfragments wiederholen. Beispielsweise könnte der Kundenname in einer Begrüßung eine FDM-Eigenschaft (Form Data Model) sein, deren Wert zur Laufzeit verfügbar gemacht wird. Durch Änderung dieser Werte kann dieselbe interaktive Kommunikation verwendet werden, um die interaktive Kommunikation für verschiedene Kunden mithilfe der Agent-Benutzeroberfläche vorzubereiten.
 
-Das Textdokumentfragment in Interaktiver Kommunikation unterstützt den folgenden Typ dynamischer Daten:
+Das Textfragment in Interaktiver Kommunikation unterstützt den folgenden Typ dynamischer Dokumente:
 
 * **Datenmodellobjekte**: Die Dateneigenschaften verwenden eine Back-End-Datenquelle.
 * **Regelbasierter Inhalt**: Teile des Inhalts in einem Text, die basierend auf einer Regel angezeigt oder ausgeblendet werden. Eine Regel kann auch auf den Eigenschaften und Variablen des Formulardatenmodells basieren.
@@ -33,7 +33,7 @@ Das Textdokumentfragment in Interaktiver Kommunikation unterstützt den folgende
 1. Wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Text]**.
 1. Geben Sie die folgenden Daten an:
 
-   * **[!UICONTROL Titel]**: (Optional) Geben Sie den Titel für das Textdokumentfragment ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Texte werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Eigenschaften referenziert.
+   * **[!UICONTROL Titel]**: (Optional) Geben Sie den Dokument für das Textfragment ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Texte werden durch ihren Titel (falls verfügbar) wie etwa in Miniaturen und Eigenschaften referenziert.
    * **[!UICONTROL Name]**: Der eindeutige Name des Textes in einem Ordner. Es ist nicht möglich, dass zwei Dokumentfragmente (Text, Bedingung oder Liste) mit demselben Namen vorhanden sind, ungeachtet ihres jeweiligen Status. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
 
    * **[!UICONTROL Beschreibung]**: Geben Sie eine Beschreibung des Texts ein.
@@ -69,7 +69,7 @@ Das Textdokumentfragment in Interaktiver Kommunikation unterstützt den folgende
 
 ## Text bearbeiten {#edittext}
 
-Sie können ein vorhandenes Textdokumentfragment mithilfe der folgenden Schritte bearbeiten. Sie können ein Textdokumentfragment auch in einem Interaktiven Kommunikationseditor bearbeiten.
+Sie können ein vorhandenes Textdokumentfragment mithilfe der folgenden Schritte bearbeiten. Sie können auch ein Textfragment aus einem Dokument in einem Interaktiven Kommunikationseditor bearbeiten.
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Navigieren Sie zu einem Textdokumentfragment und wählen Sie es aus.
@@ -79,15 +79,15 @@ Sie können ein vorhandenes Textdokumentfragment mithilfe der folgenden Schritte
 
 ## Personalisieren eines Textdokumentfragments mithilfe von Formulardatenmodelleigenschaften {#formdatamodel}
 
-Sie können Textdokumentfragmente personalisieren, indem Sie die Formulardatenmodelleigenschaften einfügen. Durch Einfügen von Formulardatenmodelleigenschaften in Text können Sie empfängerspezifische Daten aus der zugehörigen Datenquelle abrufen und ausfüllen, während Sie eine Vorschau einer interaktiven Kommunikation anzeigen. For more information on form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+Sie können Textdokumentfragmente personalisieren, indem Sie die Formulardatenmodelleigenschaften einfügen. Durch Einfügen der Eigenschaften des Formulardatenmodells in den Text können Sie Empfänger-spezifische Daten aus der zugehörigen Datenquelle abrufen und ausfüllen, während Sie eine Vorschau der interaktiven Kommunikation anzeigen. For more information on form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-Wenn Sie beim Erstellen eines Textes ein Formulardatenmodell angegeben haben, werden die Eigenschaften im Formulardatenmodell im linken Bereich des Texteditors angezeigt. Das angegebene Formulardatenmodell sollte sowohl für das Textdokumentfragment als auch für die interaktive Kommunikation, die es enthält, identisch sein.
+Wenn Sie beim Erstellen eines Textes ein Formulardatenmodell angegeben haben, werden die Eigenschaften im Formulardatenmodell im linken Bereich des Texteditors angezeigt. Das angegebene Formulardatenmodell sollte sowohl für das Textfeldfragment als auch für die interaktive Kommunikation, die das Dokument enthält, identisch sein.
 
 ![insertFdmelementtext](assets/insertfdmelementtext.png)
 
 * To insert an form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and tap **[!UICONTROL [B]Add Selected]**. You can also just double-tap the property to insert it at the**[ C ]**cursor position. Die Eigenschaften des Formulardatenmodells werden in einer braunen Hintergrundfarbe hervorgehoben.
 
-Alternativ dazu können Sie die Formulardatenmodelleigenschaft mit dem @-Symbol im Texteditor suchen und hinzufügen. Platzieren Sie den Cursor an der Stelle, an der Sie die Eigenschaft einfügen möchten. Geben Sie @ gefolgt von der Suchzeichenfolge ein. Der Suchvorgang wird mit allen Formulardatenmodelleigenschaften und -variablen durchgeführt, die im Dokumentfragment verfügbar sind. Die Eigenschaften oder Variablen, die die Suchzeichenfolge enthalten, werden abgerufen und als Dropdown-Liste angezeigt. Navigieren Sie durch die Suchergebnisse und klicken Sie auf die Eigenschaft, die Sie an der Cursorposition einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
+Alternativ dazu können Sie die Formulardatenmodelleigenschaft mit dem @-Symbol im Texteditor suchen und hinzufügen. Platzieren Sie den Cursor an der Stelle, an der Sie die Eigenschaft einfügen möchten. Geben Sie @ gefolgt von der Suchzeichenfolge ein. Der Suchvorgang wird mit allen Formulardatenmodelleigenschaften und -variablen durchgeführt, die im Dokument-Fragment verfügbar sind. Die Eigenschaften oder Variablen, die die Suchzeichenfolge enthalten, werden abgerufen und als Dropdown-Liste angezeigt. Navigieren Sie durch die Suchergebnisse und klicken Sie auf die Eigenschaft, die Sie an der Cursorposition einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
 
 * To allow the agents to edit an form data model property&#39;s value in the agent UI while [Prepare and send Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) using the Agent UI, tap the **[D]** lock icon for that property and ensure it is in an unlocked state. Der Standardstatus der Eigenschaft ist gesperrt und ein Agent kann die Eigenschaft in der Benutzeroberfläche für Agenten nicht bearbeiten.
 
@@ -134,7 +134,7 @@ Beim Erstellen oder Bearbeiten eines Textdokumentfragments können Sie Variablen
 
    Variablen werden in hellblauer Hintergrundfarbe hervorgehoben, während Formulardatenmodelleigenschaften in einer bräunlichen Farbe hervorgehoben werden.
 
-   Alternativ dazu können Sie Variablen mit dem @-Symbol im Texteditor suchen und hinzufügen. Platzieren Sie den Cursor an der Stelle, an der Sie die Variable einfügen möchten. Geben Sie @ gefolgt von der Suchzeichenfolge ein. Der Suchvorgang wird mit allen Formulardatenmodelleigenschaften und -variablen durchgeführt, die im Dokumentfragment verfügbar sind. Die Eigenschaften und Variablen, die die Suchzeichenfolge enthalten, werden abgerufen und als Dropdown-Liste angezeigt. Navigieren Sie durch die Suchergebnisse und klicken Sie auf die Variable, die Sie an der Cursorposition einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
+   Alternativ dazu können Sie Variablen mit dem @-Symbol im Texteditor suchen und hinzufügen. Platzieren Sie den Cursor an der Stelle, an der Sie die Variable einfügen möchten. Geben Sie @ gefolgt von der Suchzeichenfolge ein. Der Suchvorgang wird mit allen Formulardatenmodelleigenschaften und -variablen durchgeführt, die im Dokument-Fragment verfügbar sind. Die Eigenschaften und Variablen, die die Suchzeichenfolge enthalten, werden abgerufen und als Dropdown-Liste angezeigt. Navigieren Sie durch die Suchergebnisse und klicken Sie auf die Variable, die Sie an der Cursorposition einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
@@ -183,7 +183,7 @@ Mit Regeleditor in einem Text können Sie Regeln erstellen, um Textzeichenfolgen
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
    * Sie können auch überlappende Regeln erstellen, in denen eine Regel auf einen Teil eines Inhalts angewendet wird, auf den bereits eine Regel angewendet wurde.
 
-1. Tippen Sie auf **[!UICONTROL Done]** (Fertig).
+1. Tippen Sie auf **[!UICONTROL Fertig]**.
 
    Die Regel wird angewendet. Der Text oder Inhalt, auf den die Regel angewendet wurde, wird grün hervorgehoben. Wenn Sie den Mauszeiger über den linken Ziehpunkt der Hervorhebung bewegen, wird die angewendete Regel angezeigt.
 
@@ -216,9 +216,9 @@ Um Teile eines Textes in einem bearbeitbaren Dokumentfragment hervorzuheben, wä
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
+You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
+Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -243,7 +243,7 @@ Sie können den Text direkt aus dem Microsoft® Word-Dokument in ein bearbeitbar
 Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
 * Währungssymbole wie €,¥ und £
-* Mathematische Symbole wie z. B. □, , ^
+* Mathematische Symbole wie z. B. □, , ^ und ^
 * Interpunktionssymbole wie ‟ und&quot;
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
@@ -252,7 +252,7 @@ Texteditor enthält integrierte Unterstützung für 210 Sonderzeichen. The admin
 
 ## Text suchen und ersetzen {#searching}
 
-Wenn Sie mit Textdokumentfragmenten arbeiten, die eine große Menge Text enthalten, müssen Sie nach einer bestimmten Textzeichenfolge suchen. Möglicherweise müssen Sie auch eine bestimmte Zeichenfolge durch eine alternative Zeichenfolge ersetzen.
+Wenn Sie mit Textfragmenten arbeiten, die eine große Textmenge enthalten, müssen Sie nach einer bestimmten Textzeichenfolge suchen. Möglicherweise müssen Sie auch eine bestimmte Textzeichenfolge durch eine alternative Zeichenfolge ersetzen.
 
 Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebigen Zeichenfolge in einem Textdokumentfragment suchen und diese ersetzen. Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken.
 
