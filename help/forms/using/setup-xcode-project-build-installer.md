@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -150,7 +150,7 @@ Sie müssen das Xcode-Projekt archivieren, um das Installationsprogramm (eine .i
 1. Wählen Sie die Verteilungsmethode **Save for Enterprise or Ad-Hoc Deployment** und klicken Sie auf **Next**.
 1. Wählen Sie die entsprechende Option unter **Code Signing Identity** und klicken Sie auf **Next**. Klicken Sie auf **Allow**, um die Signatur anzuwenden.
 1. Geben Sie den Namen der App an und wählen Sie **Save for Enterprise Distribution**.
-1. Geben Sie im Feld **Application URL** die URL für die App an. Um die App beispielsweise auf einem CRX-Server zu hosten, geben Sie die URL an `https://[LC_host]:[port]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Geben Sie im Feld **Application URL** die URL für die App an. Um die App beispielsweise auf einem CRX-Server zu hosten, geben Sie die URL an `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. Geben Sie im Feld **Titel** AEM Forms an.
 1. Klicken Sie auf **Save** und schließen Sie Xcode.
 
