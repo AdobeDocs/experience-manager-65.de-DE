@@ -1,6 +1,6 @@
 ---
-title: Acrobat Reader DC Extensions-DienstJava API-Kurzanleitung (SOAP)
-seo-title: Acrobat Reader DC Extensions-DienstJava API-Kurzanleitung (SOAP)
+title: Acrobat Reader DC Extensions ServiceJava API Quick Beginn(SOAP)
+seo-title: Acrobat Reader DC Extensions ServiceJava API Quick Beginn(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -9,28 +9,28 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 687cdacc2868de16a4df968dddedd330ce3317bb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Acrobat Reader DC Extensions ServiceJava API-Kurzanleitung (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Acrobat Reader DC Extensions ServiceJava API Quick Beginn (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-Die folgenden Kurzanleitungen sind für den Acrobat Reader DC Extensions-Dienst verfügbar.
+Die folgenden Quick-Beginn sind für den Acrobat Reader DC Extensions-Dienst verfügbar.
 
-[Kurzanleitung (SOAP-Modus):Verwendungsrechte mit der Java-API anwenden](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Quick Beginn (SOAP-Modus):Verwendungsrechte mithilfe der Java-API anwenden](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Entfernen von Verwendungsrechten aus PDF-Dokumenten](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
 
-[Kurzanleitung (SOAP-Modus): Abrufen von Anmeldeinformationen mit der Java-API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Abrufen von Anmeldeinformationen mit der Java-API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Schnellstarts unter Programmieren mit AEM Forms basieren auf dem Formularserver-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Kurzanleitung (SOAP-Modus):Verwendungsrechte mit der Java-API anwenden {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Quick Beginn (SOAP-Modus):Verwendungsrechte mithilfe der Java-API anwenden {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Das PDF-Dokument mit aktivierten Berechtigungen wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf* gespeichert. Für dieses PDF-Dokument gelten die folgenden Verwendungsrechte: `enabledComments`, `enabledFormFillIn`und `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
+Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Das PDF-Dokument mit aktivierten Benutzerrechten wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf* gespeichert. Für dieses PDF-Dokument gelten die folgenden Verwendungsrechte: `enabledComments`, `enabledFormFillIn`und `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```as3
@@ -90,7 +90,7 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mi
                    
            //Set connection properties required to invoke AEM Forms using SOAP mode                                 
            Properties connectionProps = new Properties(); 
-           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
+           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'"); 
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
@@ -141,7 +141,7 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mi
  
 ```
 
-## Kurzanleitung (SOAP-Modus): Entfernen von Verwendungsrechten aus einem PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Entfernen von Verwendungsrechten aus einem PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
 Im folgenden Java-Codebeispiel werden Verwendungsrechte aus einem PDF-Dokument mit aktivierten Verwendungsrechten mit dem Namen *LoanUsageRights.pdf* entfernt. (Siehe [Entfernen von Verwendungsrechten aus PDF-Dokumenten](/help/forms/developing/assigning-usage-rights.md).)
 
@@ -208,7 +208,7 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte aus einem PDF-Dokument m
        try{ 
            //Set connection properties required to invoke AEM Forms                                 
            Properties connectionProps = new Properties(); 
-           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
+           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'"); 
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
@@ -241,7 +241,7 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte aus einem PDF-Dokument m
  
 ```
 
-## Kurzanleitung (SOAP-Modus): Abrufen von Anmeldeinformationen mit der Java-API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Abrufen von Anmeldeinformationen mit der Java-API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
 Im folgenden Java-Codebeispiel werden Informationen über die Berechtigung abgerufen, mit der Verwendungsrechte auf ein PDF-Dokument mit aktivierten Verwendungsrechten mit dem Namen *LoanUsageRights.pdf* angewendet werden. (Siehe [Abrufen von Berechtigungsinformationen](/help/forms/developing/assigning-usage-rights.md).)
 
@@ -308,7 +308,7 @@ Im folgenden Java-Codebeispiel werden Informationen über die Berechtigung abger
                    
            //Set connection properties required to invoke AEM Forms                             
            Properties connectionProps = new Properties(); 
-           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
+           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'"); 
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
