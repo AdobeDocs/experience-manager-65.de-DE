@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 0a7c243589b410a671674b85d27fad158fe96b2a
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -38,11 +38,11 @@ Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms 
 
       >[!NOTE]
       >
-      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. The bundles are listed at https://[server]:[port]/system/console/.
+      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. The bundles are listed at https://&#39;[server]:[port]&#39;/system/console/.
 
 1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
 
-   1. Melden Sie sich beim AEM-Server als Administrator an und öffnen Sie Package Share. The default URL of the package share is `https://[server]:[port]/crx/packageshare`.
+   1. Melden Sie sich beim AEM-Server als Administrator an und öffnen Sie Package Share. The default URL of the package share is `https://'[server]:[port]'/crx/packageshare`.
    1. Suchen Sie in Package Share nach **Add-On-Pakete für AEM 6.5 Forms** und klicken Sie auf das Paket für Ihr Betriebssystem und dann auf **Herunterladen**. Lesen und akzeptieren Sie die Lizenzvereinbarung und klicken Sie auf **OK**. Der Download wird gestartet. Nachdem der Download abgeschlossen ist, wird das Wort **Heruntergeladen** neben dem Paket angezeigt.
 
       Alternately, you can also use the hyperlinks listed in [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) to manually download a package.
@@ -83,10 +83,10 @@ Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms 
 
    * **Unterstützung für jQuery**
 
-      In AEM 6.5 Forms wird die Version von jQuery auf 3.2.1 aktualisiert und die jQuery UI-Version auf 1.12.1 aktualisiert. AEM Form verwendet JQuery im **Modus &quot;Kein Konflikt&quot;** . Wenn Sie also eine andere jQuery-Version verwenden, werden während der Aktualisierung keine Probleme angezeigt. Wenn Sie jedoch auf AEM 6.5 Forms aktualisieren:
+      In AEM 6.5 Forms wird die Version von jQuery auf 3.2.1 aktualisiert und die jQuery UI-Version auf 1.12.1 aktualisiert. AEM Form verwendet JQuery im **Modus &quot;Keine Konflikte** &quot;. Wenn Sie also eine andere jQuery-Version verwenden, werden während der Aktualisierung keine Probleme angezeigt. Wenn Sie jedoch auf AEM 6.5 Forms aktualisieren:
 
       * Stellen Sie sicher, dass Ihre benutzerdefinierten Komponenten, falls vorhanden, mit unterstützten jQuery-Versionen kompatibel sind.
-      * Entfernen Sie nicht unterstützte APIs aus den benutzerdefinierten Komponenten. Eine Liste der entfernten APIs finden Sie im [Aktualisierungshandbuch](https://jquery.com/upgrade-guide/3.0/) . Beispielsweise wird die Unterstützung für die APIs load(), .unload() und .error() entfernt. Verwenden Sie die Methode .on() anstelle der oben genannten APIs. Ändern Sie beispielsweise $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
+      * Entfernen Sie nicht unterstützte APIs aus den benutzerdefinierten Komponenten. Informationen zur Liste entfernter APIs finden Sie im [Aktualisierungshandbuch](https://jquery.com/upgrade-guide/3.0/) . Beispielsweise wird die Unterstützung für die APIs load(), .unload() und .error() entfernt. Verwenden Sie die Methode .on() anstelle der oben genannten APIs. Ändern Sie beispielsweise $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
    * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Analysen und Berichte neu**
 
       In AEM 6.4 Forms stehen keine Traffic-Variablen für Quelle und Erfolgsereignis für Impressionen zur Verfügung. Wenn Sie von AEM 6.2 Forms oder vorherigen Versionen aktualisieren, sendet AEM Forms daher keine Daten mehr an den Adobe Analytics-Server und es stehen keine Analyseberichte für adaptive Formulare zur Verfügung. Darüber hinaus werden mit AEM 6.4 Forms Traffic-Variablen für die Version der Formularanalyse und das Erfolgsereignis mit Angabe der Dauer der Aktivität in einem Feld eingeführt. Konfigurieren Sie daher die Analysen und Berichte erneut für Ihre AEM Forms-Umgebung. Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analyse und Berichten](../../forms/using/configure-analytics-forms-documents.md).
@@ -98,9 +98,9 @@ Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms 
    * **Überprüfen Sie Replikation und Rückwärtsreplikation:** Veröffentlichen Sie einige migrierte Formulare, füllen Sie sie aus und übermitteln Sie sie. Überprüfen Sie auch die gesendeten Daten.
    * **Überprüfen Sie den Zugriff auf die Administrator- und Benutzeroberflächen:** Melden Sie sich über ein Administratorkonto bei der AEM-Instanz an und überprüfen Sie, ob Sie Zugriff auf die folgenden URLs haben:
 
-      * `https://[server]:[port]/crx/packmgr`
-      * `https://[server]:[port]/crx/de`
-      * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
+      * `https://'[server]:[port]'/crx/packmgr`
+      * `https://'[server]:[port]'/crx/de`
+      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
    >[!NOTE]
    In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Wenn Sie von 6.3 Forms auf AEM 6.5 Forms aktualisieren, verwenden Sie die geänderten Pfade zur Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 
