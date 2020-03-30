@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 translation-type: tm+mt
-source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -67,17 +67,17 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
    >
    >Wenn den Ordner „/restore“ bereits vorhanden ist, sichern Sie ihn zuerst und löschen ihn dann, bevor Sie den Ordner „/backup“, der die neuesten Daten enthält, umbenennen.
 
-   * (JBoss) Benennen Sie `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` Folgendes um:
+   * (JBoss) Benennen Sie `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` Folgendes um:
 
-      `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
+      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) Umbenennen `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` in:
+   * (WebLogic) Umbenennen `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` in:
 
-      `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
+      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Benennen Sie `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` Folgendes um:
+   * (WebSphere) Benennen Sie `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` Folgendes um:
 
-      `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
+      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Stellen Sie den Stammordner für Inhalte wieder her, indem Sie zuerst den Inhalt des Stammordners für Inhalte in der vorhandenen Installation von AEM Forms löschen und dann unter Ausführung der Schritte für eigenständige oder Clusterumgebungen wiederherstellen:
 
@@ -106,7 +106,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
       Für die Wiederherstellung in einer Clusterumgebung finden Sie weitere Informationen unter [Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Löschen Sie alle temporären AEM Forms-Dateien, die im Ordner „java.io.temp“ oder im temporären Adobe-Ordner erstellt wurden.
-1. Starten Sie AEM Forms (siehe Dienste [starten und beenden](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Beginn AEM Forms (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern {#changing-the-gds-location-during-recovery}
 
