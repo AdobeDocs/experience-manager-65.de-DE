@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -69,7 +69,7 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 
 ## Java-Optionen zu WebLogic hinzufügen {#add-java-options-to-weblogic}
 
-1. Start the WebLogic administration console by typing https://[host name]:[port]/console in the URL line of a web browser.
+1. Start the WebLogic administration console by typing https://[host name]:&#39;port&#39;/console in the URL line of a web browser.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
