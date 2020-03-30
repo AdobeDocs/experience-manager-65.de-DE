@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung benutz
 
 ## Beispiel installieren und konfigurieren {#set-up-and-configure-the-sample}
 
-Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinstanzen aus, um das Beispiel zu installieren und zu konfigurieren:
+Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinstanzen durch, um das Beispiel zu installieren und zu konfigurieren :
 
 1. Laden Sie das folgende **aem-fp-db-integration-sample-pkg-6.1.2.zip**-Paket auf Ihr Dateisystem herunter.
 
@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 1. Go to AEM package manager at https://[*host*]:[*port*]/crx/packmgr/.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
-1. Wählen Sie das **aem-fp-db-integration-sample-pkg-6.1.2.zip**-Paket und klicken Sie auf **[!UICONTROL OK]**.
+1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
 1. Go to **[!UICONTROL AEM Web Console Configuration]**
 page at https://[*host*]:[*port*]/system/console/configMgr.
@@ -54,11 +54,11 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    | **Eigenschaft** | **Beschreibung** | **Wert** |
    |---|---|---|
    | Forms Portal-Datendienst für Entwurf | Bezeichner für den Datendienst für Entwurf | formsportal.sampledataservice |
-   | Forms Portal-Metadatendienst für Entwurf | Bezeichner für den Metadatendienst für Entwurf | formsportal.samplemetadataservice |
-   | Forms Portal-Datendienst für Übermittlung | Bezeichner für den Datendienst für Übermittlung | formsportal.sampledataservice |
-   | Forms Portal-Metadatendienst für Übermittlung | Bezeichner für den Metadatendienst für Übermittlung | formsportal.samplemetadataservice |
-   | Forms Portal ausstehender Sign Datendienst | Bezeichner für ausstehenden Sign-Datendienst | formsportal.sampledataservice |
-   | Forms Portal ausstehender Sign Metadatendienst | Bezeichner für ausstehenden Sign Metadatendienst | formsportal.samplemetadataservice |
+   | Forms Portal-Metadatendienst für Entwurf | Bezeichner für den Dienst für Entwurfs-Metadaten | formsportal.samplemetadataservice |
+   | Forms Portal-Datendienst für Übermittlung | Bezeichner für den Dienst zur Datenübermittlung | formsportal.sampledataservice |
+   | Forms Portal-Metadatendienst für Übermittlung | Bezeichner für den Dienst Metadatenübermittlung | formsportal.samplemetadataservice |
+   | Forms Portal ausstehender Sign Datendienst | Bezeichner für den Dienst für Daten zu ausstehende Signaturen | formsportal.sampledataservice |
+   | Forms Portal ausstehender Sign Metadatendienst | Bezeichner für den Dienst für Metadaten zu ausstehende Signaturen | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -299,18 +299,18 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
 
 Die Beispielimplementierung ist jetzt konfiguriert. Sie können sie verwenden, um Ihre Entwürfe und Übermittlungen aufzulisten, während Sie alle Daten und Metadaten in einer Datenbank speichern. Als Nächstes geht es darum, wie im Beispiel die Daten- und Metadatendienste konfiguriert werden.
 
-## Istallieren Sie mysql-connector-java-5.1.39-bin.jar file {#install-mysql-connector-java-bin-jar-file}
+## Installieren der Datei mysql-connector-java-5.1.39-bin.jar{#install-mysql-connector-java-bin-jar-file}
 
-Führen Sie die folgenden Schritte auf allen Autor- und Veröffentlichungsinstanzen aus, um die Datei mysql-connector-java-5.1.39-bin.jar zu installieren:
+Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinstanzen aus, um die Datei mysql-connector-java-5.1.39-bin.jar zu installieren:
 
-1. Navigieren Sie zum Paket com.mysql.jdbc `https://[server]:[port]/system/console/depfinder` und suchen Sie es.
+1. Navigieren Sie zu `https://'[server]:[port]'/system/console/depfinder` und suchen Sie nach dem com.mysql.jdbc-Paket.
 1. Überprüfen Sie in der Spalte „Exportiert von“, ob das Paket von einem Paket exportiert wird.
 
    Fahren Sie fort, wenn das Paket nicht von einem Paket exportiert wird.
 
-1. Navigieren Sie zu `https://[server]:[port]/system/console/bundles` und klicken Sie auf **[!UICONTROL Installieren/Aktualisieren]**.
-1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Also, select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]** checkboxes.
-1. Click **[!UICONTROL Install or Update]**. Wenn Sie bereit sind, starten Sie den Server neu.
+1. Navigieren Sie zu `https://'[server]:[port]'/system/console/bundles` und klicken Sie auf **[!UICONTROL Installieren/Aktualisieren]**.
+1. Klicken Sie auf **[!UICONTROL Datei auswählen]** und wählen Sie die Datei mysql-connector-java-5.1.39-bin.jar. Aktivieren Sie außerdem die Kontrollkästchen **[!UICONTROL Paket starten]** und **[!UICONTROL Paket aktualisieren]**.
+1. Klicken Sie auf **[!UICONTROL Installieren oder Aktualisieren]**. Wenn dies abgeschlossen ist, starten Sie den Server neu.
 1. (*Windows only*) Turn off the system firewall for your operating system.
 
 ## Beispielcode für Formularportaldaten und Metadatendienst {#sample-code-for-forms-portal-data-and-metadata-service}
@@ -326,7 +326,7 @@ Die Datenbankimplementierung von Forms Portal verwendet eine zusätzliche Metada
 Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen](/help/sites-developing/clientlibs.md) und das Skript zu verwenden:
 
 1. Melden Sie sich bei CRXDE an und navigieren Sie zu /etc/clientlibs/
-1. Erstellen Sie einen Knoten vom Typ **cq:ClientLibraryFolder** und geben Sie den Namen des Knotens an. Beispiel, `validation`.
+1. Erstellen Sie einen Knoten vom Typ **cq:ClientLibraryFolder** und geben Sie den Namen des Knotens an. Beispiel: `validation`. 
 
    Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -414,7 +414,7 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
    >[!NOTE]
    >
-   >Wenn Sie benutzerdefinierte Client-Bibliotheken anstelle der Clientbibliotheken guideRuntime und guideRuntimeWithXfa verwenden, verwenden Sie den Kategorienamen, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
+   >Wenn Sie benutzerdefinierte Clientbibliotheken anstelle der Clientbibliotheken guideRuntime und guideWithXfa verwenden, verwenden Sie den Namen der Kategorie, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname nun größer als 150 Zeichen (einschließlich Erweiterung) ist, wird eine Meldung angezeigt.
 
