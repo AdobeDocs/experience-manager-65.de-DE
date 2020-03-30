@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -26,24 +26,24 @@ Der Endpoint-Registrierungsdienst bietet die Möglichkeit, Endpunkte programmges
 * Überwachter Ordner
 * E-Mail
 * (Veraltet für AEM Forms) Remoting
-* Task-Manager
+* Aufgabe Manager
 
    ***Hinweis **: SOAP-, EJB- und (für AEM Forms on JEE nicht mehr unterstützt) Remoting-Endpunkte werden automatisch für jeden aktivierten Dienst erstellt. Die SOAP- und EJB-Endpunkte ermöglichen SOAP und EJB für alle Dienstvorgänge.*
 
-   Ein Remoting-Endpunkt ermöglicht es Flex-Clients, Vorgänge für den AEM Forms-Dienst aufzurufen, dem der Endpunkt hinzugefügt wird. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt und Flex-Clients können RemoteObjects erstellen, die auf dieses Ziel verweisen, um Vorgänge für den betreffenden Dienst aufzurufen.
+   Ein Remoting-Endpunkt ermöglicht es Flex-Clients, Vorgänge für den AEM Forms-Dienst aufzurufen, dem der Endpunkt hinzugefügt wird. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt, und Flex-Clients können RemoteObjects erstellen, die auf dieses Ziel verweisen, um Vorgänge für den betreffenden Dienst aufzurufen.
 
-   Die Endpunkte &quot;E-Mail&quot;, &quot;Task-Manager&quot;und &quot;Überwachter Ordner&quot;stellen nur einen bestimmten Vorgang des Dienstes bereit. Das Hinzufügen dieser Endpunkte erfordert einen zweiten Konfigurationsschritt, um eine Methode zum Aufrufen auszuwählen, Konfigurationsparameter festzulegen und Zuordnungen von Eingabe- und Ausgabeparametern festzulegen.
+   Die Endpunkte &quot;E-Mail&quot;, &quot;Aufgabe-Manager&quot;und &quot;Überwachter Ordner&quot;stellen nur einen bestimmten Dienstvorgang bereit. Das Hinzufügen dieser Endpunkte erfordert einen zweiten Konfigurationsschritt, um eine Methode zum Aufrufen auszuwählen, Konfigurationsparameter festzulegen und Zuordnungen von Eingabe- und Ausgabeparametern festzulegen.
 
-   Sie können TaskManager-Endpunkte in Gruppen organisieren, die als *Kategorien* bezeichnet werden. Diese Kategorien werden dann Workspace über TaskManager angezeigt, wobei die TaskManager-Endpunkte den Endpunkten während der Kategorisierung angezeigt werden. Innerhalb von Workspace sehen Endbenutzer diese Kategorien im Navigationsbereich. Die Endpunkte in jeder Kategorie werden auf der Seite &quot;Startprozesse&quot;in Workspace als Prozesskarten angezeigt.
+   Sie können TaskManager-Endpunkte in Gruppen organisieren, die als *Kategorien* bezeichnet werden. Diese Kategorien werden dann Workspace über TaskManager angezeigt, wobei die TaskManager-Endpunkte den Endpunkten während der Kategorisierung angezeigt werden. Innerhalb von Workspace sehen Endbenutzer diese Kategorien im Navigationsbereich. Die Endpunkte in den einzelnen Kategorien werden als Prozesskarten auf der Seite &quot;Beginn-Prozesse&quot;in Workspace angezeigt.
 
    Sie können diese Aufgaben mithilfe des Endpunktregistrierungsdiensts ausführen:
 
-* Fügen Sie EJB-Endpunkte hinzu. (Siehe [Hinzufügen von EJB-Endpunkten](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Fügen Sie SOAP-Endpunkte hinzu. (Siehe [Hinzufügen von SOAP-Endpunkten](programmatically-endpoints.md#adding-soap-endpoints).)
-* Endpunkte für überwachte Ordner hinzufügen (siehe [Hinzufügen von Endpunkten](programmatically-endpoints.md#adding-watched-folder-endpoints)für überwachte Ordner)
-* E-Mail-Endpunkte hinzufügen. (See [Adding Email Endpoints](programmatically-endpoints.md#adding-email-endpoints).)
-* Remoting-Endpunkte hinzufügen. (Siehe [Hinzufügen von Remoting-Endpunkten](programmatically-endpoints.md#adding-remoting-endpoints).)
-* Hinzufügen von TaskManager-Endpunkten (siehe [Hinzufügen von TaskManager-Endpunkten](programmatically-endpoints.md#adding-taskmanager-endpoints).)
+* Hinzufügen EJB-Endpunkte. (Siehe [Hinzufügen von EJB-Endpunkten](programmatically-endpoints.md#adding-ejb-endpoints).)
+* Hinzufügen SOAP-Endpunkte. (Siehe [Hinzufügen von SOAP-Endpunkten](programmatically-endpoints.md#adding-soap-endpoints).)
+* Hinzufügen Endpunkte für überwachte Ordner (siehe [Hinzufügen von Endpunkten](programmatically-endpoints.md#adding-watched-folder-endpoints)für überwachte Ordner)
+* Hinzufügen E-Mail-Endpunkte. (See [Adding Email Endpoints](programmatically-endpoints.md#adding-email-endpoints).)
+* Hinzufügen Remoting-Endpunkte. (Siehe [Hinzufügen von Remoting-Endpunkten](programmatically-endpoints.md#adding-remoting-endpoints).)
+* Hinzufügen TaskManager-Endpunkte (siehe [Hinzufügen von TaskManager-Endpunkten](programmatically-endpoints.md#adding-taskmanager-endpoints).)
 * Endpunkte ändern (Siehe [Ändern von Endpunkten](programmatically-endpoints.md#modifying-endpoints).)
 * Entfernen von Endpunkten (Siehe [Entfernen von Endpunkten](programmatically-endpoints.md#removing-endpoints).)
 * Abrufen von Informationen zum Endpunktanschluss (siehe [Abrufen von Endpunktschnittstellenverbindungsinformationen](programmatically-endpoints.md#retrieving-endpoint-connector-information).)
@@ -93,7 +93,7 @@ Um einen EJB-Endpunkt für einen Dienst zu erstellen, geben Sie die folgenden We
 * **Beschreibung**: Gibt die Endpunktbeschreibung an.
 * **Name**: Gibt den Namen des Endpunkts an.
 * **Dienstkennung**: Gibt den Dienst an, zu dem der Endpunkt gehört.
-* **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines EJB-Endpunkts ein Platzhalterzeichen ( `*`) an. Wenn Sie jedoch einen bestimmten Vorgang angeben möchten, anstatt alle Dienstvorgänge aufzurufen, geben Sie den Namen des Vorgangs anstelle des Platzhalterzeichens ( `*`) an.
+* **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines EJB-Endpunkts ein Platzhalterzeichen ( `*`) an. Wenn Sie jedoch einen bestimmten Vorgang angeben möchten, anstatt alle Dienstvorgänge aufzurufen, geben Sie den Namen des Vorgangs an, anstatt das Platzhalterzeichen ( `*`) zu verwenden.
 
 **Erstellen eines EJB-Endpunkts**
 
@@ -101,7 +101,7 @@ Nachdem Sie EJB-Endpunktattribute festgelegt haben, können Sie einen EJB-Endpun
 
 **Endpunkt aktivieren**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Nachdem Sie den Endpunkt aktiviert haben, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console anzeigen.
+Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Nachdem Sie den Endpunkt aktiviert haben, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console Ansicht haben.
 
 **Siehe auch**
 
@@ -111,9 +111,9 @@ Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Nac
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Hinzufügen eines EJB-Endpunkts mithilfe der Java-API {#adding-an-ejb-endpoint-using-the-java-api}
+### Hinzufügen eines EJB-Endpunkts mithilfe der Java-API {#adding-an-ejb-endpoint-using-the-java-api}
 
-Fügen Sie mithilfe der Java-API einen EJB-Endpunkt hinzu:
+Hinzufügen eines EJB-Endpunkts mithilfe der Java-API:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -198,7 +198,7 @@ Um einem Dienst einen SOAP-Endpunkt hinzuzufügen, geben Sie die folgenden Werte
 * **Beschreibung**: Gibt die Endpunktbeschreibung an.
 * **Name**: Gibt den Endpunktnamen an.
 * **Dienst-ID-Wert**: Gibt den Dienst an, zu dem der Endpunkt gehört.
-* **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines SOAP-Endpunkts ein Platzhalterzeichen ( `*`) an. Wenn Sie jedoch einen bestimmten Vorgang angeben möchten, anstatt alle Dienstvorgänge aufzurufen, geben Sie den Namen des Vorgangs anstelle des Platzhalterzeichens ( `*`) an.
+* **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines SOAP-Endpunkts ein Platzhalterzeichen ( `*`) an. Wenn Sie jedoch einen bestimmten Vorgang angeben möchten, anstatt alle Dienstvorgänge aufzurufen, geben Sie den Namen des Vorgangs an, anstatt das Platzhalterzeichen ( `*`) zu verwenden.
 
 **SOAP-Endpunkt erstellen**
 
@@ -206,19 +206,19 @@ Nachdem Sie SOAP-Endpunktattribute festgelegt haben, können Sie einen SOAP-Endp
 
 **Endpunkt aktivieren**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console anzeigen.
+Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console für die Ansicht anzeigen.
 
 **Siehe auch**
 
-[Einen SOAP-Endpunkt mit der Java-API hinzufügen](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[Hinzufügen eines SOAP-Endpunkts mit der Java-API](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Einen SOAP-Endpunkt mit der Java-API hinzufügen {#add-a-soap-endpoint-using-the-java-api}
+### Hinzufügen eines SOAP-Endpunkts mit der Java-API {#add-a-soap-endpoint-using-the-java-api}
 
-Fügen Sie einem Dienst mithilfe der Java-API einen SOAP-Endpunkt hinzu:
+Hinzufügen eines SOAP-Endpunkts zu einem Dienst mithilfe der Java-API:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -258,13 +258,13 @@ Fügen Sie einem Dienst mithilfe der Java-API einen SOAP-Endpunkt hinzu:
 
 ## Endpunkte für überwachte Ordner hinzufügen {#adding-watched-folder-endpoints}
 
-Sie können einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines Endpunkts für überwachte Ordner können Sie Benutzern das Platzieren einer Datei (z. B. einer PDF-Datei) in einem Ordner ermöglichen. Wenn die Datei im Ordner abgelegt wird, wird der konfigurierte Dienst aufgerufen und verarbeitet die Datei. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei in einem angegebenen Ausgabeordner gespeichert. Ein überwachter Ordner ist so konfiguriert, dass er in einem bestimmten Zeitintervall oder mit einem Cron-Zeitplan gescannt wird, z. B. jeden Montag, Mittwoch und Freitag um 12 Uhr.
+Sie können einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines Endpunkts für den überwachten Ordner können Sie Benutzern das Platzieren einer Datei (z. B. einer PDF-Datei) in einem Ordner ermöglichen. Wenn die Datei im Ordner abgelegt wird, wird der konfigurierte Dienst aufgerufen und verarbeitet die Datei. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei in einem angegebenen Ausgabeordner gespeichert. Ein überwachter Ordner ist so konfiguriert, dass er in einem bestimmten Zeitintervall oder mit einem Cron-Zeitplan gescannt wird, z. B. jeden Montag, Mittwoch und Freitag um 12 Uhr.
 
 Um einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzuzufügen, beachten Sie den folgenden Prozess mit kurzer Lebensdauer namens *EncryptDocument*. (Siehe [AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Bei diesem Prozess wird ein unbesichertes PDF-Dokument als Eingabewert akzeptiert und anschließend das unbesicherte PDF-Dokument an den `EncryptPDFUsingPassword` Vorgang des Encryption-Dienstes weitergegeben. Das PDF-Dokument wird mit einem Kennwort verschlüsselt, und das kennwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Prozesses. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) ist `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) ist `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Vorgang wird ein unbesichertes PDF-Dokument als Eingabewert akzeptiert und anschließend das unbesicherte PDF-Dokument an den `EncryptPDFUsingPassword` Vorgang des Encryption-Dienstes weitergeleitet. Das PDF-Dokument wird mit einem Kennwort verschlüsselt, und das kennwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) ist `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (kennwortverschlüsseltes PDF-Dokument) ist `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ Bei diesem Prozess wird ein unbesichertes PDF-Dokument als Eingabewert akzeptier
 
 ### Zusammenfassung der Schritte {#summary_of_steps-2}
 
-So fügen Sie einem Dienst einen Endpunkt für den überwachten Ordner hinzu:
+So fügen Sie einem Dienst einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzu:
 
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie ein `EndpointRegistryClient` Objekt.
@@ -314,39 +314,39 @@ Geben Sie die folgenden Werte an, um einen Endpunkt des Typs &quot;Überwachter 
 
 Sie müssen Konfigurationswerte für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;angeben, wenn Sie einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen. Diese Konfigurationswerte werden von einem Administrator angegeben, wenn mithilfe von Administration Console ein Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzugefügt wird.
 
-In der folgenden Liste sind Konfigurationswerte aufgeführt, die festgelegt werden, wenn einem Dienst programmgesteuert ein Endpunkt des Typs &quot;überwachter Ordner&quot;hinzugefügt wird:
+Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn einem Dienst programmgesteuert ein Endpunkt des Typs &quot;überwachter Ordner&quot;hinzugefügt wird:
 
-* **url**: Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss dieser Wert auf einen freigegebenen Netzwerkordner verweisen, auf den von jedem Computer im Cluster zugegriffen werden kann.
+* **url**: Gibt den Speicherort des überwachten Ordners an. In einer geclusterten Umgebung muss dieser Wert auf einen freigegebenen Netzwerkordner verweisen, auf den von jedem Computer im Cluster zugegriffen werden kann.
 * **asynchron**: Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet true. Asynchron wird empfohlen.
 * **cronExpression**: Wird von Quarz verwendet, um die Abfrage des Eingabeordners zu planen. Weitere Informationen zum Konfigurieren des Cron-Ausdrucks finden Sie unter [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
 * **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll ist. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **repeatInterval**: Das Intervall (in Sekunden), in dem der überwachte Ordner auf Eingabe überprüft wird. Sofern die Einschränkungen nicht aktiviert sind, sollte dieser Wert länger als die Verarbeitungszeit für einen durchschnittlichen Auftrag sein. Andernfalls kann das System überlastet werden. Der Standardwert ist 5.
 * **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder Ordner überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
 * **throttleOn**: Begrenzt die Anzahl der Aufträge für überwachte Ordner, die jederzeit verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert batchSize bestimmt.
-* **userName**: Der Benutzername, der beim Aufrufen eines Zieldiensts aus dem überwachten Ordner verwendet wird. Dieser Wert ist erforderlich. Der Standardwert ist „SuperAdmin“.
+* **userName**: Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus dem überwachten Ordner verwendet wird. Dieser Wert ist erforderlich. Der Standardwert ist „SuperAdmin“.
 * **domainName**: Die Domäne des Benutzers. Dieser Wert ist erforderlich. Der Standardwert ist „DefaultDom“.
 * **batchSize**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Verwenden Sie diesen Wert, um eine Überlastung des Systems zu vermeiden. Das gleichzeitige Scannen zu vieler Dateien kann zu einem Absturz führen. Der Standardwert ist 2.
 * **waitTime**: Die Zeit in Millisekunden, die nach der Erstellung gewartet wird, bevor ein Ordner oder eine Datei überprüft wird. Wenn die Wartezeit beispielsweise 36.000.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von 59 oder mehr Minuten aufgenommen. Dieses Attribut ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Diese Einstellung verhindert, dass der überwachte Ordner die Datei überprüft, wenn sie zehn Minuten lang nicht gewartet hat. Der Standardwert ist 0.
-* **excludeFilePattern**: Das Muster, mit dem ein überwachter Ordner ermittelt, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Dateien oder Ordner mit diesem Muster werden nicht zur Verarbeitung überprüft. Diese Einstellung ist nützlich, wenn die Eingabe ein Ordner ist, der mehrere Dateien enthält. Der Inhalt des Ordners kann in einen Ordner kopiert werden, der einen Namen hat, der vom überwachten Ordner aufgenommen wird. Dieser Schritt verhindert, dass der überwachte Ordner einen Ordner zur Verarbeitung aufnimmt, bevor der Ordner vollständig in den Eingabeordner kopiert wird. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ordner ändert den regulären Ausdruck, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von regulären Ausdrücken nicht unterstützt.
-* **includeFilePattern**: Das Muster, mit dem der überwachte Ordner ermittelt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. Der Standardwert ist `*`. Dieser Wert gibt alle Dateien und Ordner an. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ordner ändert den regulären Ausdruck, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von regulären Ausdrücken nicht unterstützt. Dieser Wert ist ein obligatorischer Wert.
+* **excludeFilePattern**: Das Muster, mit dem ein überwachter Ordner ermittelt, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Dateien oder Ordner mit diesem Muster werden nicht zur Verarbeitung überprüft. Diese Einstellung ist nützlich, wenn die Eingabe ein Ordner ist, der mehrere Dateien enthält. Der Inhalt des Ordners kann in einen Ordner kopiert werden, der einen Namen hat, der vom überwachten Ordner aufgenommen wird. Dieser Schritt verhindert, dass der überwachte Ordner einen Ordner zur Verarbeitung aufnimmt, bevor der Ordner vollständig in den Eingabeordner kopiert wird. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ausdruck ändert den regulären Ordner, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von normalen Ausdrücken nicht unterstützt.
+* **includeFilePattern**: Das Muster, mit dem der überwachte Ordner ermittelt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. Der Standardwert ist `*`. Dieser Wert gibt alle Dateien und Ordner an. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ausdruck ändert den regulären Ordner, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von normalen Ausdrücken nicht unterstützt. Dieser Wert ist ein obligatorischer Wert.
 * **resultFolderName**: Der Ordner, in dem die gespeicherten Ergebnisse gespeichert werden. Dieser Speicherort kann ein absoluter oder ein relativer Ordnerpfad sein. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Der Standardwert ist `result/%Y/%M/%D/`. Dies ist der Ergebnisordner im überwachten Ordner.
 * **preserveFolderName**: Der Speicherort, an dem Dateien nach erfolgreichem Scannen und Aufnehmen gespeichert werden. Dieser Speicherort kann ein absoluter, relativer oder Null-Ordnerpfad sein. Der Standardwert ist `preserve/%Y/%M/%D/`.
 * **failureFolderName**: Der Ordner, in dem Fehlerdateien gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Der Standardwert ist `failure/%Y/%M/%D/`.
 * **preserveOnFailure**: Behält Eingabedateien bei, wenn der Vorgang für einen Dienst nicht ausgeführt werden konnte. Der Standardwert lautet true.
 * **overwriteDuplicateFilename**: Bei der Einstellung &quot;true&quot;werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf &quot;false&quot;werden Dateien und Ordner mit dem Suffix &quot;Numerischer Index&quot;als Name verwendet. Der Standardwert lautet false.
 
-**Definieren von Eingabeparametern**
+**Definieren von Eingabeparameterwerten**
 
-Beim Erstellen eines Endpunkts für überwachte Ordner müssen Sie Eingabeparameterwerte definieren. Das heißt, Sie müssen die Eingabewerte beschreiben, die an den Vorgang übergeben werden, der vom überwachten Ordner aufgerufen wird. Betrachten Sie beispielsweise den in diesem Thema eingeführten Prozess. Es hat einen Eingabewert namens `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Wenn Sie einen Endpunkt für den überwachten Ordner für diesen Prozess erstellen (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst), müssen Sie den Wert des Eingabeparameters definieren.
+Beim Erstellen eines Endpunkts für überwachte Ordner müssen Sie Eingabeparameterwerte definieren. Das heißt, Sie müssen die Eingabewerte beschreiben, die an den Vorgang übergeben werden, der vom überwachten Ordner aufgerufen wird. Betrachten Sie zum Beispiel den in diesem Thema eingeführten Prozess. Es hat einen Eingabewert namens `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Wenn Sie einen Endpunkt für den überwachten Ordner für diesen Prozess erstellen (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst), müssen Sie den Wert des Eingabeparameters definieren.
 
-Geben Sie die folgenden Werte an, um die für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;erforderlichen Eingabeparameterwerte zu definieren:
+Geben Sie die folgenden Werte an, um Eingabeparameterwerte zu definieren, die für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;erforderlich sind:
 
 **Name** des Eingabeparameters: Der Name des Eingabeparameters. Der Name eines Eingabewerts wird in Workbench für einen Prozess angegeben. Wenn der Eingabewert zu einem Dienstvorgang gehört (einem Dienst, der nicht in Workbench erstellt wurde), wird der Eingabename in der Datei component.xml angegeben. Beispielsweise lautet der Name des Eingabeparameters für den in diesem Abschnitt eingeführten Prozess `InDoc`.
 
 **Zuordnungstyp**: Dient zum Konfigurieren der zum Aufrufen des Dienstvorgangs erforderlichen Eingabewerte. Es gibt zwei Arten von Zuordnungstypen:
 
 * `Literal`: Der Endpunkt des Typs &quot;Überwachter Ordner&quot;verwendet den in das Feld eingegebenen Wert, wie er angezeigt wird. Alle grundlegenden Java-Typen werden unterstützt. Wenn eine API beispielsweise Eingaben wie String, long, int und Boolean verwendet, wird die Zeichenfolge in den richtigen Typ konvertiert und der Dienst aufgerufen.
-* `Variable`: Der eingegebene Wert ist ein Dateimuster, das vom überwachten Ordner zum Auswählen der Eingabe verwendet wird. Wenn Sie beispielsweise Variable für den Zuordnungstyp auswählen und das Eingabedokument eine PDF-Datei sein muss, können Sie `*.pdf`als Zuordnungswert angeben.
+* `Variable`: Der eingegebene Wert ist ein Dateimuster, das vom überwachten Ordner zum Auswählen der Eingabe verwendet wird. Wenn Sie beispielsweise Variable für den Zuordnungstyp auswählen und das Eingabedatei-Dokument eine PDF-Datei sein muss, können Sie `*.pdf`als Zuordnungswert angeben.
 
 **Zuordnungswert**: Gibt den Wert des Zuordnungstyps an. Wenn Sie beispielsweise einen `Variable` Zuordnungstyp auswählen, können Sie `*.pdf` als Dateimuster angeben.
 
@@ -354,7 +354,7 @@ Geben Sie die folgenden Werte an, um die für einen Endpunkt des Typs &quot;Übe
 
 **Definieren eines Ausgabeparameterwerts**
 
-Beim Erstellen eines Endpunkts für einen überwachten Ordner müssen Sie einen Ausgabeparameterwert definieren. Das heißt, Sie müssen den Ausgabewert beschreiben, der von dem Dienst zurückgegeben wird, der vom Endpunkt des Typs &quot;Überwachter Ordner&quot;aufgerufen wird. Betrachten Sie beispielsweise den in diesem Thema eingeführten Prozess. Es hat einen Ausgabewert namens `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`. Wenn Sie einen Endpunkt für den überwachten Ordner für diesen Prozess erstellen (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst), müssen Sie den Wert des Ausgabeparameters definieren.
+Beim Erstellen eines Endpunkts für einen überwachten Ordner müssen Sie einen Ausgabeparameterwert definieren. Das heißt, Sie müssen den Ausgabewert beschreiben, der von dem Dienst zurückgegeben wird, der vom Endpunkt des Typs &quot;Überwachter Ordner&quot;aufgerufen wird. Betrachten Sie zum Beispiel den in diesem Thema eingeführten Prozess. Es hat einen Ausgabewert namens `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`. Wenn Sie einen Endpunkt für den überwachten Ordner für diesen Prozess erstellen (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst), müssen Sie den Wert des Ausgabeparameters definieren.
 
 Um einen für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;erforderlichen Ausgabeparameterwert zu definieren, geben Sie die folgenden Werte an:
 
@@ -362,9 +362,9 @@ Um einen für einen Endpunkt des Typs &quot;Überwachter Ordner&quot;erforderlic
 
 **Zuordnungstyp**: Dient zum Konfigurieren der Ausgabe des Dienstes und Vorgangs. Die folgenden Optionen sind verfügbar:
 
-* Wenn der Dienst ein einzelnes Objekt (ein einzelnes Dokument) zurückgibt, lautet das Muster `%F.pdf` und das Quellziel &quot;sourcefilename.pdf&quot;. Beispielsweise gibt der in diesem Abschnitt eingeführte Prozess ein einzelnes Dokument zurück. Daher kann der Zuordnungstyp definiert werden als `%F.pdf` ( `%F` bedeutet, den angegebenen Dateinamen zu verwenden). Das Muster `%E` gibt die Erweiterung des Eingabedokuments an.
+* Wenn der Dienst ein einzelnes Objekt (ein einzelnes Dokument) zurückgibt, lautet das Muster `%F.pdf` und das Quellziel &quot;sourcefilename.pdf&quot;. Beispielsweise gibt der in diesem Abschnitt eingeführte Prozess ein einzelnes Dokument zurück. Daher kann der Zuordnungstyp definiert werden als `%F.pdf` ( `%F` bedeutet, den angegebenen Dateinamen zu verwenden). Das Muster `%E` gibt die Erweiterung des Eingabe-Dokuments an.
 * Wenn der Dienst eine Liste zurückgibt, ist das Muster `Result\%F\`und das Quellziel lautet Result\sourcefilename\source1 (output 1) und Result\sourcefilename\source2 (output 2).
-* Wenn der Dienst eine Zuordnung zurückgibt, ist das Muster `Result\%F\`und das Quellziel ist Result\sourcefilename\file1 and Result\sourcefilename\file2. Wenn die Map mehr als ein Objekt enthält, ist das Muster `Result\%F.pdf` und das Quellziel lautet Result\sourcefilename1.pdf (Ausgabe 1), Result\sourcefilenam2.pdf (Ausgabe 2) usw.
+* Wenn der Dienst eine Zuordnung zurückgibt, ist das Muster `Result\%F\`und das Quellziel ist Result\sourcefilename\file1 and Result\sourcefilename\file2. Wenn die Map über mehr als ein Objekt verfügt, ist das Muster `Result\%F.pdf` und das Quellziel lautet Result\sourcefilename1.pdf (Ausgabe 1), Result\sourcefilenam2.pdf (Ausgabe 2) usw.
 
 **Datentyp**: Gibt den Datentyp des Rückgabewerts an. Beispielsweise lautet der Datentyp des Rückgabewerts des in diesem Abschnitt eingeführten Prozesses `com.adobe.idp.Document`.
 
@@ -374,19 +374,19 @@ Nachdem Sie die Attribute und Konfigurationswerte des Endpunkts festgelegt und W
 
 **Endpunkt aktivieren**
 
-Nachdem Sie einen Endpunkt für den überwachten Ordner erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console anzeigen.
+Nachdem Sie einen Endpunkt des Typs &quot;Überwachter Ordner&quot;erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console Ansicht haben.
 
 **Siehe auch**
 
-[Einen Endpunkt für den überwachten Ordner mit der Java-API hinzufügen](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
+[Hinzufügen eines Endpunkts für einen überwachten Ordner mit der Java-API](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Einen Endpunkt für den überwachten Ordner mit der Java-API hinzufügen {#add-a-watched-folder-endpoint-using-the-java-api}
+### Hinzufügen eines Endpunkts für einen überwachten Ordner mit der Java-API {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Fügen Sie mithilfe der AEM Forms Java-API einen Endpunkt für den überwachten Ordner hinzu:
+Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms Java API:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -414,7 +414,7 @@ Fügen Sie mithilfe der AEM Forms Java-API einen Endpunkt für den überwachten 
    * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Geben Sie beim Festlegen des `url` Konfigurationswerts den Speicherort des überwachten Ordners an.
    >[!NOTE]
    >
-   >Alle für den EncryptDocument-Dienst festgelegten Konfigurationswerte finden Sie im Java-Codebeispiel unter [QuickStart: Hinzufügen eines Endpunkts für überwachte Ordner mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
+   >Informationen zu allen für den EncryptDocument-Dienst festgelegten Konfigurationswerten finden Sie im Java-Codebeispiel unter [QuickStart: Hinzufügen eines Endpunkts für überwachte Ordner mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
 
 1. Definieren Sie Eingabeparameterwerte.
 
@@ -454,9 +454,9 @@ Fügen Sie mithilfe der AEM Forms Java-API einen Endpunkt für den überwachten 
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Konfigurationswerte der Konstanten für überwachte Ordner {#watched-folder-configuration-values-constant-file}
+### Konfigurationswerte für überwachte Ordner - Konstante Datei {#watched-folder-configuration-values-constant-file}
 
-Der [Schnellstart: Beim Hinzufügen eines Endpunkts für überwachte Ordner mit der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die Teil Ihres Java-Projekts sein muss, um den Schnellstart kompilieren zu können. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines Endpunkts für den überwachten Ordner festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
+Der [Schnellstart: Beim Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die Teil Ihres Java-Projekts sein muss, um den schnellen Beginn zu kompilieren. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines Endpunkts für den überwachten Ordner festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
 
 ```as3
  /**
@@ -489,13 +489,13 @@ Der [Schnellstart: Beim Hinzufügen eines Endpunkts für überwachte Ordner mit 
 
 ## Hinzufügen von E-Mail-Endpunkten {#adding-email-endpoints}
 
-Sie können einem Dienst programmgesteuert einen E-Mail-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines E-Mail-Endpunkts können Sie Benutzern das Senden einer E-Mail mit einer oder mehreren Dateianlagen an ein angegebenes E-Mail-Konto ermöglichen. Anschließend wird der Konfigurationsdienst aufgerufen und die Dateien werden verarbeitet. Nachdem der Dienst den angegebenen Vorgang ausgeführt hat, wird eine E-Mail-Nachricht mit den geänderten Dateien als Dateianlagen an den Absender gesendet.
+Sie können einem Dienst programmgesteuert einen E-Mail-Endpunkt hinzufügen, indem Sie die AEM Forms Java-API verwenden. Durch Hinzufügen eines E-Mail-Endpunkts können Sie Benutzern das Senden einer E-Mail mit einer oder mehreren Dateianlagen an ein angegebenes E-Mail-Konto ermöglichen. Anschließend wird der Konfigurationsdienst aufgerufen und die Dateien werden verarbeitet. Nachdem der Dienst den angegebenen Vorgang ausgeführt hat, wird eine E-Mail-Nachricht mit den geänderten Dateien als Dateianlagen an den Absender gesendet.
 
-Zum programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *MyApplication\EncryptDocument* berücksichtigen. Informationen zu Prozessen mit kurzer Lebensdauer finden Sie unter [AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
+Zum programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *MyApplication\EncryptDocument* in Betracht ziehen. Weitere Informationen zu Prozessen mit kurzer Lebensdauer finden Sie unter [AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Bei diesem Prozess wird ein unbesichertes PDF-Dokument als Eingabewert akzeptiert und anschließend das unbesicherte PDF-Dokument an den `EncryptPDFUsingPassword` Vorgang des Encryption-Dienstes weitergegeben. Dieser Prozess verschlüsselt das PDF-Dokument mit einem Kennwort und gibt das kennwortverschlüsselte PDF-Dokument als Ausgabewert zurück. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) ist `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) ist `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Vorgang wird ein unbesichertes PDF-Dokument als Eingabewert akzeptiert und anschließend das unbesicherte PDF-Dokument an den `EncryptPDFUsingPassword` Vorgang des Encryption-Dienstes weitergeleitet. Dieser Vorgang verschlüsselt das PDF-Dokument mit einem Kennwort und gibt das kennwortverschlüsselte PDF-Dokument als Ausgabenwert zurück. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) ist `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (kennwortverschlüsseltes PDF-Dokument) ist `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -551,15 +551,15 @@ Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Dienst müs
 
 Die folgenden Konfigurationswerte werden festgelegt, wenn einem Dienst programmgesteuert ein E-Mail-Endpunkt hinzugefügt wird:
 
-* **cronExpression**: Ein Cron-Ausdruck, wenn die E-Mail mit einem Cron-Ausdruck geplant werden muss.
+* **cronExpression**: Ein Cron-Ausdruck, wenn die E-Mail mithilfe eines Cron-Ausdrucks geplant werden muss.
 * **repeatCount**: Gibt an, wie oft der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
 * **repeatInterval**: Die Abtastrate in Sekunden, die der Empfänger zum Prüfen auf eingehende E-Mails verwendet. Der Standardwert ist 10.
-* **startDelay**: Die Wartezeit bis zum Scan nach dem Start des Schedulers. Die Standardzeit ist 0.
+* **startDelay**: Die Wartezeit bis zum Scannen nach den Beginn der Planung. Die Standardzeit ist 0.
 * **batchSize**: Die Anzahl der E-Mail-Nachrichten, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
-* **userName**: Der Benutzername, der beim Aufrufen eines Zieldiensts aus einer E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
+* **userName**: Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domänenmuster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. For example, if `adobe.com` is used, only email from adobe.com is processed, email from other domains is ignored.
-* **filePattern**: Gibt die Muster für eingehende Dateianlagen an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (Daten) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&amp;ast;..[dD][aA][Tt]). Der Standardwert ist `*`.
+* **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (Daten) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&amp;ast;.[d][aA]&#39;port&#39;). Der Standardwert ist `*`.
 * **empfängerSuccessfulJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, die jeweils durch ein Komma getrennt werden. Um diese Option zu deaktivieren, lassen Sie diesen Wert leer. In einigen Fällen sollten Sie einen Prozess auslösen und keine E-Mail-Benachrichtigung zum Ergebnis erhalten. Der Standardwert ist `sender`.
 * **empfängerFailedJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über fehlgeschlagene Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über fehlgeschlagene Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, die jeweils durch ein Komma getrennt werden. Um diese Option zu deaktivieren, lassen Sie diesen Wert leer. Der Standardwert ist `sender`.
 * **inboxHost**: Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
@@ -571,16 +571,16 @@ Die folgenden Konfigurationswerte werden festgelegt, wenn einem Dienst programmg
 * **inboxSSLEnabled**: Legen Sie diesen Wert fest, um den E-Mail-Anbieter zu zwingen, SSL zu verwenden, wenn Benachrichtigungen über Ergebnisse oder Fehler gesendet werden. Stellen Sie sicher, dass der IMAP- oder POP3-Host SSL unterstützt.
 * **smtpHost**: Der Hostname des E-Mail-Servers, an den der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet.
 * **smtpPort**: Der Standardwert für den SMTP-Anschluss ist 25.
-* **smtpUser**: Das Benutzerkonto, das vom E-Mail-Anbieter verwendet werden soll, wenn er E-Mail-Benachrichtigungen über Ergebnisse und Fehler sendet.
+* **smtpUser**: Das Benutzerkonto, das vom E-Mail-Anbieter verwendet werden soll, wenn E-Mail-Benachrichtigungen zu Ergebnissen und Fehlern gesendet werden.
 * **smtpPassword**: Das Kennwort für das SMTP-Konto. Einige E-Mail-Server benötigen kein SMTP-Kennwort.
 * **charSet**: Der vom E-Mail-Anbieter verwendete Zeichensatz. Der Standardwert ist `UTF-8`.
 * **smtpSSLEnabled**: Legen Sie diesen Wert fest, um den E-Mail-Anbieter zu zwingen, SSL zu verwenden, wenn Benachrichtigungen über Ergebnisse oder Fehler gesendet werden. Stellen Sie sicher, dass der SMTP-Host SSL unterstützt.
 * **failedJobFolder**: Gibt einen Ordner an, in dem Ergebnisse gespeichert werden, wenn der SMTP-Mail-Server nicht betriebsbereit ist.
-* **asynchron**: Wenn &quot;synchron&quot;festgelegt ist, werden alle Eingabedokumente verarbeitet und eine einzige Antwort zurückgegeben. Bei Festlegung auf &quot;asynchron&quot;wird für jedes verarbeitete Eingabedokument eine Antwort gesendet. Beispielsweise wird ein E-Mail-Endpunkt für den in diesem Thema eingeführten Prozess erstellt und eine E-Mail-Nachricht an den Posteingang des Endpunkts gesendet, die mehrere nicht geschützte PDF-Dokumente enthält. Wenn alle PDF-Dokumente mit einem Kennwort verschlüsselt sind und der Endpunkt als synchron konfiguriert ist, wird eine einzige E-Mail-Antwort mit allen geschützten PDF-Dokumenten gesendet. Wenn der Endpunkt als asynchron konfiguriert ist, wird für jedes geschützte PDF-Dokument eine separate E-Mail-Antwort gesendet. Jede E-Mail-Nachricht enthält ein einzelnes PDF-Dokument als Anlage. Der Standardwert ist „asynchron“.
+* **asynchron**: Wenn &quot;synchron&quot;festgelegt ist, werden alle Eingabedateien verarbeitet und eine einzige Antwort zurückgegeben. Bei Festlegung auf &quot;asynchron&quot;wird für jedes verarbeitete Eingabedatum eine Antwort gesendet. Beispielsweise wird ein E-Mail-Endpunkt für den in diesem Thema eingestellten Prozess erstellt und eine E-Mail-Nachricht an den Posteingang des Endpunkts gesendet, die mehrere ungesicherte PDF-Dokumente enthält. Wenn alle PDF-Dokumente mit einem Kennwort verschlüsselt sind und der Endpunkt als synchron konfiguriert ist, wird eine einzige E-Mail-Antwort mit allen geschützten PDF-Dokumenten gesendet. Wenn der Endpunkt als asynchron konfiguriert ist, wird für jedes geschützte PDF-Dokument eine separate E-Mail-Antwort gesendet. Jede E-Mail-Nachricht enthält ein einzelnes PDF-Dokument als Anlage. Der Standardwert ist „asynchron“.
 
-**Definieren von Eingabeparametern**
+**Definieren von Eingabeparameterwerten**
 
-Beim Erstellen eines E-Mail-Endpunkts müssen Sie Eingabeparameterwerte definieren. Das heißt, Sie müssen die Eingabewerte beschreiben, die an den Vorgang übergeben werden, der vom E-Mail-Endpunkt aufgerufen wird. Betrachten Sie beispielsweise den in diesem Thema eingeführten Prozess. Es hat einen Eingabewert namens `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Wenn Sie einen E-Mail-Endpunkt für diesen Prozess erstellen (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst), müssen Sie den Eingabeparameterwert definieren.
+Beim Erstellen eines E-Mail-Endpunkts müssen Sie Eingabeparameterwerte definieren. Das heißt, Sie müssen die Eingabewerte beschreiben, die an den Vorgang übergeben werden, der vom E-Mail-Endpunkt aufgerufen wird. Betrachten Sie zum Beispiel den in diesem Thema eingeführten Prozess. Es hat einen Eingabewert namens `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Wenn Sie einen E-Mail-Endpunkt für diesen Prozess erstellen (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst), müssen Sie den Eingabeparameterwert definieren.
 
 Geben Sie die folgenden Werte an, um die für einen E-Mail-Endpunkt erforderlichen Eingabeparameterwerte zu definieren:
 
@@ -589,15 +589,15 @@ Geben Sie die folgenden Werte an, um die für einen E-Mail-Endpunkt erforderlich
 **Zuordnungstyp**: Dient zum Konfigurieren der zum Aufrufen des Dienstvorgangs erforderlichen Eingabewerte. Es gibt zwei Arten von Zuordnungstypen:
 
 * `Literal`: Der E-Mail-Endpunkt verwendet den in das Feld eingegebenen Wert, wie er angezeigt wird. Alle grundlegenden Java-Typen werden unterstützt. Wenn eine API beispielsweise Eingaben wie String, Long, Int oder Boolean verwendet, wird die Zeichenfolge in einen ordnungsgemäßen Typ konvertiert und der Dienst aufgerufen.
-* `Variable`: Der eingegebene Wert ist ein Dateimuster, das vom E-Mail-Endpunkt zum Auswählen der Eingabe verwendet wird. Wenn Sie beispielsweise Variable für den Zuordnungstyp auswählen und das Eingabedokument eine PDF-Datei sein muss, können Sie `*.pdf` als Zuordnungswert angeben.
+* `Variable`: Der eingegebene Wert ist ein Dateimuster, das vom E-Mail-Endpunkt zum Auswählen der Eingabe verwendet wird. Wenn Sie beispielsweise Variable für den Zuordnungstyp auswählen und das Eingabedatei-Dokument eine PDF-Datei sein muss, können Sie `*.pdf` als Zuordnungswert angeben.
 
 **Zuordnungswert**: Gibt den Wert des Zuordnungstyps an. Wenn Sie beispielsweise einen Variablenzuordnungstyp auswählen, können Sie `*.pdf` als Dateimuster angeben.
 
-**Datentyp**: Gibt den Datentyp der Eingabewerte an. Der Datentyp des Eingabewerts des in diesem Abschnitt eingeführten Prozesses ist beispielsweise com.adobe.idp.Document.
+**Datentyp**: Gibt den Datentyp der Eingabewerte an. Der Datentyp des Eingabewerts des in diesem Abschnitt eingeführten Prozesses ist beispielsweise com.adobe.idp.Dokument.
 
 **Definieren eines Ausgabeparameterwerts**
 
-Beim Erstellen eines E-Mail-Endpunkts müssen Sie einen Ausgabeparameterwert definieren. Das heißt, Sie müssen den Ausgabewert beschreiben, der von dem Dienst zurückgegeben wird, der vom E-Mail-Endpunkt aufgerufen wird. Betrachten Sie beispielsweise den in diesem Thema eingeführten Prozess. Es hat einen Ausgabewert namens `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`. Beim Erstellen eines E-Mail-Endpunkts für diesen Prozess (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst) müssen Sie den Wert des Ausgabeparameters definieren.
+Beim Erstellen eines E-Mail-Endpunkts müssen Sie einen Ausgabeparameterwert definieren. Das heißt, Sie müssen den Ausgabewert beschreiben, der von dem Dienst zurückgegeben wird, der vom E-Mail-Endpunkt aufgerufen wird. Betrachten Sie zum Beispiel den in diesem Thema eingeführten Prozess. Es hat einen Ausgabewert namens `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`. Wenn Sie einen E-Mail-Endpunkt für diesen Prozess erstellen (nachdem ein Prozess aktiviert wurde, wird er zu einem Dienst), müssen Sie den Wert des Ausgabeparameters definieren.
 
 Um einen für einen E-Mail-Endpunkt erforderlichen Ausgabeparameterwert zu definieren, geben Sie die folgenden Werte an:
 
@@ -605,9 +605,9 @@ Um einen für einen E-Mail-Endpunkt erforderlichen Ausgabeparameterwert zu defin
 
 **Zuordnungstyp**: Dient zum Konfigurieren der Ausgabe des Dienstes und Vorgangs. Die folgenden Optionen sind verfügbar:
 
-* Wenn der Dienst ein einzelnes Objekt (ein einzelnes Dokument) zurückgibt, lautet das Muster `%F.pdf` und das Quellziel &quot;sourcefilename.pdf&quot;. Beispielsweise gibt der in diesem Abschnitt eingeführte Prozess ein einzelnes Dokument zurück. Daher kann der Zuordnungstyp definiert werden als `%F.pdf` ( `%F` bedeutet, den angegebenen Dateinamen zu verwenden). Das Muster `%E` gibt die Erweiterung des Eingabedokuments an.
+* Wenn der Dienst ein einzelnes Objekt (ein einzelnes Dokument) zurückgibt, lautet das Muster `%F.pdf` und das Quellziel &quot;sourcefilename.pdf&quot;. Beispielsweise gibt der in diesem Abschnitt eingeführte Prozess ein einzelnes Dokument zurück. Daher kann der Zuordnungstyp definiert werden als `%F.pdf` ( `%F` bedeutet, den angegebenen Dateinamen zu verwenden). Das Muster `%E` gibt die Erweiterung des Eingabe-Dokuments an.
 * Wenn der Dienst eine Liste zurückgibt, ist das Muster `Result\%F\`und das Quellziel lautet Result\sourcefilename\source1 (output 1) und Result\sourcefilename\source2 (output 2).
-* Wenn der Dienst eine Zuordnung zurückgibt, ist das Muster `Result\%F\`und das Quellziel ist Result\sourcefilename\file1 and Result\sourcefilename\file2. Wenn die Map mehr als ein Objekt enthält, ist das Muster `Result\%F.pdf` und das Quellziel lautet Result\sourcefilename1.pdf (Ausgabe 1), Result\sourcefilenam2.pdf (Ausgabe 2) usw.
+* Wenn der Dienst eine Zuordnung zurückgibt, ist das Muster `Result\%F\`und das Quellziel ist Result\sourcefilename\file1 and Result\sourcefilename\file2. Wenn die Map über mehr als ein Objekt verfügt, ist das Muster `Result\%F.pdf` und das Quellziel lautet Result\sourcefilename1.pdf (Ausgabe 1), Result\sourcefilenam2.pdf (Ausgabe 2) usw.
 
 **Datentyp**: Gibt den Datentyp des Rückgabewerts an. Beispielsweise lautet der Datentyp des Rückgabewerts des in diesem Abschnitt eingeführten Prozesses `com.adobe.idp.Document`.
 
@@ -617,19 +617,19 @@ Nachdem Sie die E-Mail-Endpunktattribute und Konfigurationswerte festgelegt und 
 
 **Endpunkt aktivieren**
 
-Nachdem Sie einen E-Mail-Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console anzeigen.
+Nachdem Sie einen E-Mail-Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console Ansicht haben.
 
 **Siehe auch**
 
-[Einen E-Mail-Endpunkt mit der Java-API hinzufügen](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
+[Hinzufügen eines E-Mail-Endpunkts mit der Java-API](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Einen E-Mail-Endpunkt mit der Java-API hinzufügen {#add-an-email-endpoint-using-the-java-api}
+### Hinzufügen eines E-Mail-Endpunkts mit der Java-API {#add-an-email-endpoint-using-the-java-api}
 
-Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
+Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -699,7 +699,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 ### Konstantendatei für die E-Mail-Konfiguration {#email-configuration-values-constant-file}
 
-Der [Schnellstart: Beim Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die Teil Ihres Java-Projekts sein muss, um den Schnellstart kompilieren zu können. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines E-Mail-Endpunkts festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
+Der [Schnellstart: Beim Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die zum Kompilieren des schnellen Beginns in Ihrem Java-Projekt enthalten sein muss. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines E-Mail-Endpunkts festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
 
 ```as3
  /**
@@ -749,7 +749,7 @@ Zum programmgesteuerten Hinzufügen eines Remoting-Endpunkts zu einem Dienst sol
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Bei diesem Prozess wird ein unbesichertes PDF-Dokument als Eingabewert akzeptiert und anschließend das unbesicherte PDF-Dokument an den `EncryptPDFUsingPassword` Vorgang des Encryption-Dienstes weitergegeben. Das PDF-Dokument wird mit einem Kennwort verschlüsselt, und das kennwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Prozesses. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) ist `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) ist `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Vorgang wird ein unbesichertes PDF-Dokument als Eingabewert akzeptiert und anschließend das unbesicherte PDF-Dokument an den `EncryptPDFUsingPassword` Vorgang des Encryption-Dienstes weitergeleitet. Das PDF-Dokument wird mit einem Kennwort verschlüsselt, und das kennwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) ist `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (kennwortverschlüsseltes PDF-Dokument) ist `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 Um zu zeigen, wie ein Remoting-Endpunkt zu einem Dienst hinzugefügt wird, wird in diesem Abschnitt ein Remoting-Endpunkt zu einem Dienst namens EncryptDocument hinzugefügt.
 
@@ -804,15 +804,15 @@ Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wen
 
 **Siehe auch**
 
-[Einen Remoting-Endpunkt mit der Java-API hinzufügen](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
+[Hinzufügen eines Remoting-Endpunkts mit der Java-API](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Einen Remoting-Endpunkt mit der Java-API hinzufügen {#add-a-remoting-endpoint-using-the-java-api}
+### Hinzufügen eines Remoting-Endpunkts mit der Java-API {#add-a-remoting-endpoint-using-the-java-api}
 
-Fügen Sie mithilfe der Java-API einen Remoting-Endpunkt hinzu:
+Hinzufügen eines Remoting-Endpunkts mithilfe der Java-API:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -852,7 +852,7 @@ Fügen Sie mithilfe der Java-API einen Remoting-Endpunkt hinzu:
 
 ## Hinzufügen von TaskManager-Endpunkten {#adding-taskmanager-endpoints}
 
-Sie können einem Dienst programmgesteuert einen TaskManager-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Indem Sie einem Dienst einen TaskManager-Endpunkt hinzufügen, aktivieren Sie einen Workspace-Benutzer, um den Dienst aufzurufen. Das heißt, ein in Workspace arbeitender Benutzer kann einen Prozess aufrufen, der über einen entsprechenden TaskManager-Endpunkt verfügt.
+Sie können einem Dienst programmgesteuert einen TaskManager-Endpunkt hinzufügen, indem Sie die AEM Forms Java-API verwenden. Indem Sie einem Dienst einen TaskManager-Endpunkt hinzufügen, aktivieren Sie einen Workspace-Benutzer, um den Dienst aufzurufen. Das heißt, ein in Workspace arbeitender Benutzer kann einen Prozess aufrufen, der über einen entsprechenden TaskManager-Endpunkt verfügt.
 
 >[!NOTE]
 >
@@ -886,13 +886,13 @@ For information about the location of these JAR files, see [Including AEM Forms 
 
 Bevor Sie einen TaskManager-Endpunkt programmgesteuert hinzufügen können, müssen Sie ein `EndpointRegistryClient` Objekt erstellen.
 
-**Erstellen einer Kategorie für den Endpunkt**
+**Kategorie für den Endpunkt erstellen**
 
-Kategorien werden zur Organisation von Diensten in Workspace verwendet. Das heißt, ein Workspace-Benutzer kann einen Dienst mit einem TaskManager-Endpunkt aufrufen, indem er eine Kategorie in Workspace auswählt. Beim Erstellen eines TaskManager-Endpunkts können Sie entweder auf eine vorhandene Kategorie verweisen oder programmgesteuert eine neue Kategorie erstellen.
+Kategorien werden verwendet, um Dienste in Workspace zu organisieren. Das heißt, ein Workspace-Benutzer kann einen Dienst mit einem TaskManager-Endpunkt aufrufen, indem er eine Kategorie in Workspace auswählt. Beim Erstellen eines TaskManager-Endpunkts können Sie entweder auf eine vorhandene Kategorie verweisen oder programmgesteuert eine neue Kategorie erstellen.
 
 >[!NOTE]
 >
->In diesem Abschnitt wird eine neue Kategorie erstellt, wenn einem Dienst ein TaskManager-Endpunkt hinzugefügt wird.
+>In diesem Abschnitt wird eine neue Kategorie erstellt, um einem Dienst einen TaskManager-Endpunkt hinzuzufügen.
 
 **TaskManager-Endpunktattribute festlegen**
 
@@ -902,7 +902,7 @@ Um einen TaskManager-Endpunkt für einen Dienst zu erstellen, geben Sie die folg
 * **Beschreibung**: Gibt die Beschreibung des Endpunkts an.
 * **Name**: Gibt den Namen des Endpunkts an.
 * **Dienstkennung**: Gibt den Dienst an, zu dem der Endpunkt gehört.
-* **Kategorie**: Gibt einen Kategorie-ID-Wert an, der mit dem TaskManager-Endpunkt verknüpft ist.
+* **Kategorie**: Gibt einen Kategorien-ID-Wert an, der mit dem TaskManager-Endpunkt verknüpft ist.
 * **Vorgangsname**: Beim Erstellen eines TaskManager-Endpunkts für einen Dienst, der aus einem in Workbench erstellten Prozess stammt, lautet der Name des Vorgangs normalerweise `invoke`.
 
 **TaskManager-Endpunkt erstellen**
@@ -911,7 +911,7 @@ Nachdem Sie die TaskManager-Endpunktattribute festgelegt haben, können Sie eine
 
 **Endpunkt aktivieren**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes in Workspace verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console anzeigen.
+Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes in Workspace verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console Ansicht haben.
 
 **Siehe auch**
 
@@ -923,7 +923,7 @@ Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wen
 
 ### Hinzufügen eines TaskManager-Endpunkts mit der Java-API {#add-a-taskmanager-endpoint-using-the-java-api}
 
-Fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
+Hinzufügen eines TaskManager-Endpunkts mithilfe der Java-API:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -938,9 +938,9 @@ Fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
 
    * Create a `CreateEndpointCategoryInfo` object by using its constructor and passing the following values:
 
-      * Ein Zeichenfolgenwert, der den Bezeichnerwert der Kategorie angibt
+      * Ein Zeichenfolgenwert, der den ID-Wert der Kategorie angibt
       * Ein Zeichenfolgenwert, der die Beschreibung der Kategorie angibt
-   * Erstellen Sie die Kategorie, indem Sie die `EndpointRegistryClient` Methode des `createEndpointCategory` Objekts aufrufen und das `CreateEndpointCategoryInfo` Objekt übergeben. Diese Methode gibt ein `EndpointCategory` Objekt zurück, das die neue Kategorie darstellt.
+   * Erstellen Sie die Kategorie, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und das `createEndpointCategory` `CreateEndpointCategoryInfo` Objekt übergeben. Diese Methode gibt ein `EndpointCategory` Objekt zurück, das die neue Kategorie darstellt.
 
 
 1. Legen Sie TaskManager-Endpunktattribute fest.
@@ -950,7 +950,7 @@ Fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die `CreateEndpointInfo` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt. `setDescription`
    * Geben Sie den Namen des Endpunkts an, indem Sie die `CreateEndpointInfo` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Namen angibt, `setName` und zwar
    * Geben Sie den Dienst an, zu dem der Endpunkt gehört, indem Sie die `CreateEndpointInfo` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Dienstnamen angibt. `setServiceId`
-   * Geben Sie die Kategorie an, zu der der Endpunkt gehört, indem Sie die `CreateEndpointInfo` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Kategoriekennungswert angibt. `setCategoryId` Sie können die `EndpointCategory` Methode des `getId` Objekts aufrufen, um den Bezeichnerwert dieser Kategorie abzurufen.
+   * Geben Sie die Kategorie an, zu der der Endpunkt gehört, indem Sie die `CreateEndpointInfo` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Kategorien-ID-Wert angibt. `setCategoryId` Sie können die `EndpointCategory` `getId` Objektmethode aufrufen, um den Bezeichnerwert dieser Kategorie abzurufen.
    * Geben Sie den Vorgang an, der durch Aufrufen der `CreateEndpointInfo` Objektmethode und Übergeben eines Zeichenfolgenwerts, der den Vorgangsnamen angibt, aufgerufen `setOperationName` wird. Beim Erstellen eines `TaskManager` Endpunkts für einen Dienst, der aus einem in Workbench erstellten Prozess stammt, lautet der Name des Vorgangs normalerweise `invoke`.
 
 1. Erstellen Sie einen TaskManager-Endpunkt.
@@ -1011,9 +1011,9 @@ Um einen Endpunkt programmgesteuert zu ändern, müssen Sie ein `EndpointRegistr
 
 Bevor Sie einen Endpunkt ändern können, müssen Sie ihn abrufen. Um einen Endpunkt abzurufen, müssen Sie eine Verbindung als Benutzer herstellen, der auf einen Endpunkt zugreifen kann. Es wird empfohlen, eine Verbindung als Administrator herzustellen. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
-Sie können einen Endpunkt abrufen, indem Sie eine Liste mit Endpunkten abrufen. Anschließend können Sie die Liste durchlaufen und nach dem zu entfernenden Endpunkt suchen. Sie können beispielsweise einen Endpunkt suchen, indem Sie den Dienst festlegen, der dem Endpunkt und dem Endpunkttyp entspricht. Wenn Sie den Endpunkt suchen, können Sie ihn ändern.
+Sie können einen Endpunkt abrufen, indem Sie eine Liste von Endpunkten abrufen. Anschließend können Sie die Liste durchlaufen und nach dem zu entfernenden Endpunkt suchen. Sie können beispielsweise einen Endpunkt suchen, indem Sie den Dienst festlegen, der dem Endpunkt und dem Endpunkttyp entspricht. Wenn Sie den Endpunkt suchen, können Sie ihn ändern.
 
-**Neue Konfigurationswerte angeben**
+**Geben Sie neue Konfigurationswerte an**
 
 Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispielsweise einen Endpunkt des Typs &quot;Überwachter Ordner&quot;zu ändern, setzen Sie alle Konfigurationswerte des Endpunkts &quot;Überwachter Ordner&quot;zurück, nicht nur die, die Sie ändern möchten. Weitere Informationen zu Konfigurationswerten, die zu einem Endpunkt des Typs &quot;Überwachter Ordner&quot;gehören, finden Sie unter [Hinzufügen von Endpunkten](programmatically-endpoints.md#adding-watched-folder-endpoints)für überwachte Ordner.
 
@@ -1033,7 +1033,7 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Ändern eines Endpunkts mit der Java-API {#modifying-an-endpoint-using-the-java-api}
+### Ändern eines Endpunkts mit der Java-API {#modifying-an-endpoint-using-the-java-api}
 
 Ändern Sie einen Endpunkt mithilfe der Java-API:
 
@@ -1048,9 +1048,9 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 1. Rufen Sie den zu ändernden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein `getEndpoints` `PagingFilter` Objekt übergeben, das als Filter fungiert. Sie können einen `(PagingFilter)null` Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist. Informationen zu einem `PagingFilter` Objekt finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein als Filter fungierendes `getEndpoints` `PagingFilter` Objekt übergeben. Sie können einen `(PagingFilter)null` Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist. Weitere Informationen zu einem `PagingFilter` Objekt finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Durchlaufen Sie das `java.util.List` Objekt, um zu ermitteln, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint` Instanz.
-   * Bestimmen Sie den Dienst, der einem Endpunkt entspricht, indem Sie die `EndPoint` Objektmethode `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
+   * Stellen Sie den Dienst fest, der einem Endpunkt entspricht, indem Sie die `EndPoint` Objektmethode `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
    * Bestimmen Sie den Endpunkttyp, indem Sie die `EndPoint` Objektmethode `getConnectorId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein Endpunkt des Typs &quot;Überwachter Ordner&quot;ist, gibt diese Methode `WatchedFolder`zurück.
 
 1. Geben Sie neue Konfigurationswerte an.
@@ -1113,11 +1113,11 @@ Um einen Endpunkt programmgesteuert zu entfernen, müssen Sie ein `EndpointRegis
 
 Bevor Sie einen Endpunkt entfernen können, müssen Sie ihn abrufen. Um einen Endpunkt abzurufen, müssen Sie eine Verbindung als Benutzer herstellen, der auf einen Endpunkt zugreifen kann. Es wird empfohlen, eine Verbindung als Administrator herzustellen. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
-Sie können einen Endpunkt abrufen, indem Sie eine Liste mit Endpunkten abrufen. Anschließend können Sie die Liste durchlaufen und nach dem zu entfernenden Endpunkt suchen. Sie können beispielsweise einen Endpunkt suchen, indem Sie den Dienst festlegen, der dem Endpunkt und dem Endpunkttyp entspricht. Wenn Sie den Endpunkt suchen, können Sie ihn entfernen.
+Sie können einen Endpunkt abrufen, indem Sie eine Liste von Endpunkten abrufen. Anschließend können Sie die Liste durchlaufen und nach dem zu entfernenden Endpunkt suchen. Sie können beispielsweise einen Endpunkt suchen, indem Sie den Dienst festlegen, der dem Endpunkt und dem Endpunkttyp entspricht. Wenn Sie den Endpunkt suchen, können Sie ihn entfernen.
 
 **Endpunkt entfernen**
 
-Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console anzeigen.
+Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wenn der Endpunkt aktiviert ist, kann er zum Aufrufen des Dienstes verwendet werden. Nachdem Sie den Endpunkt aktiviert haben, können Sie ihn in Administration Console Ansicht haben.
 
 **Siehe auch**
 
@@ -1127,7 +1127,7 @@ Nachdem Sie einen neuen Endpunkt erstellt haben, müssen Sie ihn aktivieren. Wen
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Entfernen eines Endpunkts mit der Java-API {#removing-an-endpoint-using-the-java-api}
+### Entfernen eines Endpunkts mit der Java-API {#removing-an-endpoint-using-the-java-api}
 
 Entfernen Sie einen Endpunkt mithilfe der Java-API:
 
@@ -1142,9 +1142,9 @@ Entfernen Sie einen Endpunkt mithilfe der Java-API:
 
 1. Rufen Sie den zu entfernenden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) Zugriff hat, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein `getEndpoints` `PagingFilter` Objekt übergeben, das als Filter fungiert. Sie können alle Endpunkte übergeben `(PagingFilter)null` und zurückgeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist.
+   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) Zugriff hat, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein als Filter fungierendes `getEndpoints` `PagingFilter` Objekt übergeben. Sie können alle Endpunkte übergeben `(PagingFilter)null` und zurückgeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist.
    * Durchlaufen Sie das `java.util.List` Objekt, um zu ermitteln, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint` Instanz.
-   * Bestimmen Sie den Dienst, der einem Endpunkt entspricht, indem Sie die `EndPoint` Objektmethode `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
+   * Stellen Sie den Dienst fest, der einem Endpunkt entspricht, indem Sie die `EndPoint` Objektmethode `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
    * Bestimmen Sie den Endpunkttyp, indem Sie die `EndPoint` Objektmethode `getConnectorId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein EJB-Endpunkt ist, gibt diese Methode `EJB`zurück.
 
 1. Entfernen Sie den Endpunkt.
@@ -1203,7 +1203,7 @@ Um Endpunktverbindungsinformationen programmgesteuert abzurufen, erstellen Sie e
 
 **Angeben des Connector-Typs**
 
-Geben Sie den Connector-Typ an, von dem Informationen abgerufen werden sollen. Die folgenden Verbindungsarten sind vorhanden:
+Geben Sie den Connector-Typ an, von dem Informationen abgerufen werden sollen. Die folgenden Arten von Connectors sind vorhanden:
 
 * **EJB**: Aktiviert eine Clientanwendung, um einen Dienst im EJB-Modus aufzurufen.
 * **SOAP**: Aktiviert eine Clientanwendung, um einen Dienst im SOAP-Modus aufzurufen.
@@ -1232,7 +1232,7 @@ Rufen Sie Endpunktschnittstellenverbindungsinformationen mithilfe der Java-API a
 
    Schließen Sie Client-JAR-Dateien wie &quot;adobe-livecycle-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
 
-1. Erstellen Sie ein ConnectorRegistry Client-Objekt.
+1. Erstellen Sie ein ConnectorRegistry-Client-Objekt.
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Erstellen Sie ein `ConnectorRegistryClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
