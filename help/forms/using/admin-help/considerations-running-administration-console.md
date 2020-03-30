@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
 
 Folgendes sollte beim Ausführen von Administration Console beachtet werden:
 
-* If you access administration console using the URL `https://[hostname]:[port]/adminui`, the specified host name cannot contain underscore characters. Andernfalls funktionieren Links zu einigen Bereichen von Administration Console eventuell nicht ordnungsgemäß.
+* If you access administration console using the URL `https://[hostname]:'port'/adminui`, the specified host name cannot contain underscore characters. Andernfalls funktionieren Links zu einigen Bereichen von Administration Console eventuell nicht ordnungsgemäß.
 * Wenn Sie Administration Console in Windows Explorer unter einem japanischen Betriebssystem ausführen, können Sie auf folgende Probleme stoßen:
 
    * Beim Klicken auf einen Link wechseln Sie zur Anmeldeseite zurück, nicht zum erwarteten Ziel des Links.
