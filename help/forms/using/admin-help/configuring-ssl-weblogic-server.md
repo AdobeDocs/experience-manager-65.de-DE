@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -156,14 +156,14 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-The Custom Trust keystore file named ‘‘ads-ca.jks’’ is created in the [appserverdomain]/adobe/[server] directory.
+The Custom Trust keystore file named ‘‘ads-ca.jks’’ is created in the [appserverdomain]/adobe/&#39;server&#39; directory.
 
 Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore und Ihr benutzerdefinierter Trust-Keystore verwendet werden. Deaktivieren Sie außerdem die Überprüfungsfunktion des Hostnamens in WebLogic, da der Name des Computers, der als Host für WebLogic Server dient, nicht in dem eindeutigen Namen enthalten ist, mit dem die Keystore-Dateien erstellt wurden.
 
 ## WebLogic zur Verwendung mit SSL konfigurieren {#configure-weblogic-to-use-ssl}
 
 1. Start the WebLogic Server administration console by typing `https://`*[host name ]*`:7001/console`in the URL line of a web browser.
-1. Under Environment, in Domain Configurations, select **Servers >[server]> Configuration > General**.
+1. Under Environment, in Domain Configurations, select **Servers > &#39;server&#39; > Configuration > General**.
 1. Vergewissern Sie sich, dass unter „General“ im Bereich „Configuration“die Optionen **Listen Port Enabled** und **SSL Listen Port Enabled** ausgewählt sind. Ist es nicht aktiviert, führen Sie folgende Schritte aus:
 
    1. Klicken Sie im Change Center auf **Lock &amp; Edit**, um Auswahlen und Werte zu ändern.
@@ -185,7 +185,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
 1. Geben Sie unter „Trust“ die folgenden Werte an:
 
-   **Benutzerdefinierter Trust Keystore-Dateiname**: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, wobei `*[appserverdomain]*` der tatsächliche Pfad ist
+   **Benutzerdefinierter Trust Keystore-Dateiname**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, wobei `*[appserverdomain]*` der tatsächliche Pfad ist
 
    **Custom Trust Keystore Type**: JKS
 
