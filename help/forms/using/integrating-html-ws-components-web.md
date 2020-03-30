@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung verwenden. In der folgenden Beispielimplementierung werden Komponenten aus einem AEM Forms Workspace-Dev-Paket verwendet, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten gezeigte Lösung an Ihre spezifischen Anforderungen an. The sample implementation reuses `UserInfo`, `FilterList`, and `TaskList`components inside a web portal.
 
-1. Log into CRXDE Lite environment at `https://[server]:[port]/lc/crx/de/`. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
+1. Log into CRXDE Lite environment at `https://'[server]:[port]'/lc/crx/de/`. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
 1. Erstellen Sie einen Pfad `/apps/sampleApplication/wscomponents`.
 1. Kopieren Sie CSS, Bilder, js/libs, js/runtime und js/registry.js
 
