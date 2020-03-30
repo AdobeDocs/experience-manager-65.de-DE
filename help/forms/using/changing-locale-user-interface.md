@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 AEM Forms Workspace bietet standardmäßig Unterstützung für Englisch, Französisch, Deutsch und Japanisch. Darüber hinaus können Sie die Benutzeroberfläche von AEM Forms Workspace in jeder anderen Sprache lokalisieren.
 
-So lokalisieren Sie die Benutzeroberfläche von AEM Forms Workspace in die gewünschte Sprache:
+So lokalisieren Sie die Benutzeroberfläche von AEM Forms Workspace in eine Sprache Ihrer Wahl:
 
 * Lokalisieren des Texts von AEM Forms Workspace
 * Lokalisieren von ausgeblendeten Kategorien, Warteschlangen und Prozessen
@@ -37,7 +37,7 @@ Before performing above steps, ensure that you follow the steps listed at [Gener
 Perform the following steps to add support for a language *New* and the browser locale code *nw*.
 
 1. Melden Sie sich bei CRXDE Lite an.
-The default URL of CRXDE Lite is `https://[server]:[port]/lc/crx/de/index.jsp`.
+The default URL of CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Navigate to the location `apps/ws/locales` and create a new folder `nw.`
 1. Kopieren Sie die Datei `translation.json`vom Speicherort `/apps/ws/locales/en-US` zum Speicherort `/apps/ws/locales/nw` .
 1. Navigate to `/apps/ws/locales/nw` and open `translation.json` for editing. Nehmen Sie gebietsschemaspezifische Änderungen an der Datei „translation.json“ vor.
@@ -54,7 +54,7 @@ In den folgenden Schritten wird davon ausgegangen, dass es sich bei den neuen lo
 
 >[!NOTE]
 >
->Den Browser-Sprachschema-Code Ihres Browsers finden Öffnen Sie `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>Den Browser-Sprachschema-Code Ihres Browsers finden Öffnen Sie `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![collapse_panels_image](assets/collapsing_panels_image.png)
 
