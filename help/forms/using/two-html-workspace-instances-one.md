@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,12 +18,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Die Standardinstallation und -einstellungen von AEM Forms lassen nur die Bereitstellung einer AEM Forms Workspace-Instanz auf dem Server zu. Möglicherweise müssen Sie jedoch zwei verschiedene Instanzen von AEM Forms Workspace auf einem AEM Forms-Server hosten. Sie können auf die beiden Instanzen über unterschiedliche URLs zugreifen.
 
-AEM Forms-Administratoren passen Workspace an, um zwei unterschiedliche URLs zu erstellen und zwei Workspace-Instanzen auf demselben Server bereitzustellen. In diesem Artikel zur Anpassung gehen wir davon aus, dass die beiden Arbeitsbereiche an- `https://[server]:[port]/lc/ws` und `https://[server]:[port]:/lc/ws2`zugänglich sind.
+AEM Forms-Administratoren passen Workspace an, um zwei unterschiedliche URLs zu erstellen und zwei Workspace-Instanzen auf demselben Server bereitzustellen. In diesem Artikel zur Anpassung gehen wir davon aus, dass die beiden Arbeitsbereiche an- `https://'[server]:[port]'/lc/ws` und `https://'[server]:[port]':/lc/ws2`zugänglich sind.
 
 Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
 1. Installieren Sie das Dev-Paket von AEM Forms Workspace auf dem Server. Anweisungen zum Erstellen finden Sie unter [Dev-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
-1. Melden Sie sich bei CRXDE Lite als Administrator an, indem Sie darauf zugreifen `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Melden Sie sich bei CRXDE Lite als Administrator an, indem Sie darauf zugreifen `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Kopieren Sie den Knoten „ws“ unter „/content“ und fügen Sie ihn unter „/content“ ein. Benennen Sie den Knoten in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**. Ändern Sie in den Eigenschaften dieses Knotens den Wert `sling:resourceType` in „ws2“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Kopieren Sie den Ordner „ws“ unter „/libs“ und fügen Sie ihn unter „/apps “ein. Benennen Sie den Ordner in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
