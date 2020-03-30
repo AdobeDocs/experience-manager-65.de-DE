@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,8 +23,8 @@ In diesem Artikel werden Strategien und empfohlene Vorgehensweisen besprochen, d
 
 Sie können die Cachestrategie für AEM Forms mithilfe der Komponente **Mobile Forms Configurations** in AEM Web Configuration Console konfigurieren und steuern:
 
-* (AEM Forms on OSGi) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms unter JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* (AEM Forms on OSGi) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms unter JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 Für die Zwischenspeicherung sind folgende Optionen verfügbar:
 
@@ -131,7 +131,7 @@ Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
    </Location>
    ```
 
-   Verwenden Sie für den Zugriff auf den CRX-Server `https://[server]:80`, wobei `server` für den Namen des Servers steht, auf dem der Apache-Server ausgeführt wird.
+   Verwenden Sie für den Zugriff auf den CRX-Server `https://'server':80`, wobei `server` für den Namen des Servers steht, auf dem der Apache-Server ausgeführt wird.
 
 ## Verwendung eines Antivirenprogramms auf dem Server, auf dem AEM Forms ausgeführt wird {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -153,9 +153,9 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * **(Nur AEM Forms unter JEE),** Ordner des globalen Dokumentenspeichers (GDS). Der Standardspeicherort lautet:
 
-   * (JBoss) [appserver root]/server/[server]/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver root]/installedApps/adobe/[server]/DocumentStorage
+   * (JBoss) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+   * (WebSphere) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(Nur AEM Forms unter JEE),** AEM Forms-Serverprotokolle und temporäres Verzeichnis. Der Standardspeicherort lautet:
 
@@ -164,7 +164,7 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 >[!NOTE]
 >
->* If you are using a different location for GDS and temporary directory, open AdminUI at `https://[server]:[port]/adminui`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
+>* If you are using a different location for GDS and temporary directory, open AdminUI at `https://'[server]:[port]'/adminui`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
 
 * Wenn der AEM Forms-Server selbst nach dem Ausschluss der vorgeschlagenen Ordner langsam arbeitet, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
 
