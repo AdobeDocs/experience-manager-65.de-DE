@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,7 +24,7 @@ Sie können das Dienstprogramm der Protokollfunktion konfigurieren, um mit der E
 
 Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfigurieren:
 
-1. Wechseln zu `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Das folgende Dialogfeld wird angezeigt:
+1. Wechseln zu `https://'[server]:[port]'/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Das folgende Dialogfeld wird angezeigt:
 
    ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
@@ -176,7 +176,7 @@ Beispiel:
 
 Wenn Sie Configuration Manager zur Aktivierung der Protokollierung verwenden, werden Protokolle für jede Renderanforderung generiert, bis die Protokollierung wieder deaktiviert wird.
 
-1. Melden Sie sich bei CQ Configuration Manager an `https://[server]:[port]/system/console/configMgr` und melden Sie sich mit Administratorberechtigungen an.
+1. Melden Sie sich bei CQ Configuration Manager an `https://'[server]:[port]'/system/console/configMgr` und melden Sie sich mit Administratorberechtigungen an.
 1. Suchen Sie nach **Mobile Forms Configurations** und klicken Sie darauf.
 1. Geben Sie im Textfeld &quot;Debug Options&quot; die Protokollkonfigurationen ein, wie sie im letzten Abschnitt beschrieben sind, z. B. **2a4-b5-c6**
 
@@ -192,7 +192,7 @@ Standardmäßig werden alle Daten der Datei „error.log“ im Ordner „/crx-re
 
 Speicherort und Namen der Protokolldatei ändern:
 
-1. Melden Sie sich beim Configuration Manager als Administrator an. Die Standard-URL von Configuration Manager lautet `https://[Server]:[Port]/system/console/configMgr`.
+1. Melden Sie sich beim Configuration Manager als Administrator an. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/system/console/configMgr`.
 1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Das folgende Dialogfeld wird angezeigt.
 
    ![logconfig-1](assets/logconfig-1.png)
