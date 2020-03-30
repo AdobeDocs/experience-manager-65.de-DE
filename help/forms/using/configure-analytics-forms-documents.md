@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -77,7 +77,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
    * **formName**: Bezeichner für ein adaptives Formular.
    * **formInstance**: Bezeichner einer Instanz eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
    * **fieldName**: Bezeichner eines adaptiven Formularfelds. Aktivieren Sie Pfadberichte für diese Variable.
-   * **panelName**: Bezeichner eines Bereichs für ein adaptives Formular. Aktivieren Sie Pfadberichte für diese Variable.
+   * **panelName**: Bezeichner eines Bedienfelds für ein adaptives Formular. Aktivieren Sie Pfadberichte für diese Variable.
    * **formTitle**: Titel des Formulars.
    * **fieldTitle**: Titel des Formularfelds.
    * **panelTitle**: Titel des Formularbereichs.
@@ -85,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 
 1. Navigate to **Edit Settings** > **Conversion** > **Success Events**. Definieren und aktivieren Sie die folgenden Erfolgsereignisse:
 
-   | Erfolgsereignis | Typ |
+   | Erfolgs-Ereignis | Typ |
    |---|---|
    | abandon | Zähler |
    | render | Zähler |
@@ -175,14 +175,14 @@ Jetzt können Sie Analysen für Formulare aktivieren und einen Analysebericht er
 
 ## Aktivieren der Analyse für ein Formular oder Dokument {#enabling-analytics-for-a-form-or-document}
 
-1. Log in to AEM portal at `https://[hostname]:[port]`.
+1. Log in to AEM portal at `https://[hostname]:'port'`.
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**, wählen Sie ein Formular oder ein Dokument aus und klicken Sie auf **Analyse aktivieren**. Die Analyse ist aktiviert.
 
    ![Aktivieren der Analyse für ein Formular oder Dokument](assets/enable-analytics-1.png)
 
    Aktivieren der Analyse für ein Formular
 
-   ******A. Schaltfläche &quot;Analyse&quot;** B aktivieren Ausgewähltes Formular
+   **A.** Schaltfläche &quot;Analyse&quot; **B aktivieren** Ausgewähltes Formular
 
    For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md)
 
