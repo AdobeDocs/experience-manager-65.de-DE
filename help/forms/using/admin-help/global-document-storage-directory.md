@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -72,8 +72,8 @@ AEM Forms-Anwendungsdaten befinden sich im Ordner des globalen Dokumentenspeiche
 Der Speicherort des Ordners des globalen Dokumentspeichers kann während der Installation von AEM Forms manuell konfiguriert werden. Wenn die Speicherorteinstellung bei der Installation leer bleibt, wird als Speicherort standardmäßig ein Ordner unter dem Installationsordner des Anwendungsservers gewählt (siehe unten):
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/DocumentServer/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 ## Standardspeicherort des globalen Dokumentspeichers ändern {#change-the-default-gds-location}
 
