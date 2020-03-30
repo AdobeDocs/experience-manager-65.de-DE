@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -17,9 +17,9 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 ## Einführung {#introduction}
 
-Unternehmen erfassen und verarbeiten Daten aus mehreren Formularen, Back-End-Systemen und anderen Datenquellen. Die Datenverarbeitung umfasst Review- und Genehmigungsverfahren, sich wiederholende Aufgaben und die Datenarchivierung. Beispiel: Überprüfen eines Formulars und Konvertieren in ein PDF-Dokument. Bei manueller Ausführung können sich wiederholende Aufgaben sehr viel Zeit und Ressourcen kosten.
+Unternehmen erfassen und verarbeiten Daten aus mehreren Formularen, Back-End-Systemen und anderen Datenquellen. Die Datenverarbeitung umfasst Überprüfungs- und Genehmigungsverfahren, sich wiederholende Aufgaben und die Datenarchivierung. Betrachten Sie beispielsweise ein Formular und konvertieren Sie es in ein PDF-Dokument. Bei manueller Ausführung können sich die sich wiederholenden Aufgaben sehr viel Zeit und Ressourcen kosten.
 
-Sie können den [formularorientierten Arbeitsablauf auf OSGi](../../forms/using/aem-forms-workflow.md) verwenden, um schnell adaptive formularbasierte Arbeitsabläufe zu erstellen. Diese Arbeitsabläufe unterstützen Sie bei der Automatisierung von Review- und Genehmigungsabläufen, Geschäftsprozessabläufen und anderen sich wiederholenden Aufgaben. Diese Arbeitsabläufe unterstützen Sie auch bei der Verarbeitung von Dokumenten (Erstellen, Zusammenstellen, Verteilen und Archivieren von PDF-Dokumenten, Hinzufügen digitaler Signaturen zur Einschränkung des Zugriffs auf Dokumente, Dekodieren von mit Strichcode versehenen Formularen usw.) und bei der Verwendung des Adobe Signatur-Workflows mit Formularen und Dokumenten.
+Sie können den [formularorientierten Arbeitsablauf auf OSGi](../../forms/using/aem-forms-workflow.md) verwenden, um schnell adaptive formularbasierte Workflows zu erstellen. Diese Workflows unterstützen Sie bei der Automatisierung von Review- und Genehmigungs-Workflows, Workflows und anderen wiederholten Aufgaben. Diese Workflows helfen auch bei der Verarbeitung von Dokumenten (Erstellen, Zusammenstellen, Verteilen und Archivieren von PDF-Dokumenten, Hinzufügen digitaler Signaturen, um den Zugriff auf Dokumente zu beschränken, Barcode-Formulare zu dekodieren und vieles mehr) und bei der Verwendung des Adobe Signatur-Workflows mit Formularen und Dokumenten.
 
 Nach der Einrichtung können diese Workflows manuell ausgelöst werden, um einen definierten Prozess abzuschließen oder programmgesteuert auszuführen, wenn Benutzer ein Formular oder eine interaktive Kommunikation senden. Die Funktion ist im AEM Forms Add-On-Paket enthalten.
 
@@ -27,13 +27,13 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Der formular
 
 >[!NOTE]
 >
->Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Informationen zu den Unterschieden und Ähnlichkeiten in den Funktionen finden Sie in einem [Vergleich](../../forms/using/capabilities-osgi-jee-workflows.md) der formularzentrierten AEM-Workflows auf OSGi und Process Management on JEE.
+>Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Weitere Informationen zu den Unterschieden und Ähnlichkeiten in den Funktionen finden Sie in einem [Vergleich](../../forms/using/capabilities-osgi-jee-workflows.md) der formularzentrierten AEM Workflows auf OSGi und Process Management on JEE.
 >
->Nach dem Vergleich finden Sie unter &quot;Installieren oder Aktualisieren von AEM Forms on JEE&quot;ausführliche Informationen zum Installieren und Konfigurieren des JEE-Stapels und zu den Process Management-Funktionen, wenn Sie die Process Management-Funktion auf dem JEE-Stapel installieren möchten[ ](/help/forms/home.md).
+>Nach dem Vergleich finden Sie unter &quot;Installieren oder Aktualisieren von AEM Forms on JEE&quot;ausführliche Informationen zum Installieren und Konfigurieren des JEE-Stapels und zu den Process Management-Funktionen, wenn Sie sich dafür entscheiden, die Process Management-Funktion auf dem JEE-Stapel zu installieren [](/help/forms/home.md) .
 
 ## Bereitstellungstopologie {#deployment-topology}
 
-AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens eine AEM Author- oder Verarbeitungsinstanz (Produktionsautor), um den formularzentrierten Workflow mit OSGi-Funktionalität auszuführen. A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. Führen Sie kein tatsächliches Authoring wie das Erstellen von Workflows oder adaptiven Formularen auf dem Produktionsautor durch.
+AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens eine AEM Author- oder Verarbeitungsinstanz (Produktionsautor), um den formularzentrierten Workflow mit OSGi-Funktionalität auszuführen. A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. Führen Sie kein tatsächliches Authoring wie das Erstellen von Workflows oder adaptiven Formularen im Produktionsautor durch.
 
 Die folgende Topologie ist eine indikative Topologie zum Ausführen von AEM Forms Interactive Communications, Correspondence Management, AEM Forms-Datenerfassung und Forms-Centric-Workflow für OSGi-Funktionen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -45,7 +45,7 @@ AEM Forms-zentrierter Arbeitsablauf auf OSGi führt die Benutzeroberfläche zur 
 
 >[!NOTE]
 >
->Gehen Sie zum Abschnitt [Nächste Schritte](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) des Dokuments, wenn Sie AEM Forms on OSGi bereits installiert haben, wie im Artikel [Installation und Konfiguration der Datenerfassungsfunktionen](../../forms/using/installing-configuring-aem-forms-osgi.md) beschrieben.
+>Gehen Sie zum Abschnitt [Nächste Schritte](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) des Dokuments, wenn Sie AEM Forms on OSGi bereits installiert haben, wie im Artikel [Installations- und Konfigurationsfunktionen](../../forms/using/installing-configuring-aem-forms-osgi.md) beschrieben.
 
 Bevor Sie mit der Installation und Konfiguration des formularzentrierten Workflows auf OSGi beginnen, stellen Sie Folgendes sicher:
 
@@ -140,7 +140,7 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 
 Führen Sie die folgenden Schritte auf allen Autor- und Veröffentlichungsinstanzen aus, um das Paket auf die Whitelist zu setzen:
 
-1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. The default URL is https://[server]:[port]/system/console/configMgr.
+1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. The default URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Suchen und öffnen Sie die **Deserialisierungs-Firewallkonfiguration**.
 1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Whitelist** hinzu. Klicken Sie auf Speichern.
 1. Wiederholen Sie Schritten 1-3 für alle Autor- und Veröffentlichungsinstanzen.  
@@ -161,7 +161,7 @@ Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich fü
 
 1. Konfigurieren des Referrer-Filterservice:
 
-   Melden Sie sich beim Apache Felix Configuration Manager als Administrator an. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. Wählen Sie im Menü **Configurations** die Option **Apache Sling Referrer Filter.** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **Speichern**. The format of the entry is `https://[server]:[port]`.
+   Melden Sie sich beim Apache Felix Configuration Manager als Administrator an. The Default URL of the configuration manager is https://&#39;server&#39;:[port_number]/system/console/configMgr. Wählen Sie im Menü **Configurations** die Option **Apache Sling Referrer Filter.** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **Speichern**. The format of the entry is `https://'[server]:[port]'`.
 
 #### Konfigurieren des Cache {#configure-cache}
 
@@ -172,7 +172,7 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
+1. Go to AEM web console configuration manager at `https://'[server]:[port]'/system/console/configMgr`.
 1. Click **Adaptive Form Configuration Service** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
@@ -183,13 +183,13 @@ Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu 
 
 Adobe Sign aktiviert Arbeitsabläufe für E-Signaturen für adaptive Formulare. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. a.
 
-In a typical Adobe Sign and Forms-centric workflow on OSGi scenario, a user fills an adaptive form to **apply for a service**. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger. Wenn ein Benutzer das Antragsformular ausfüllt, sendet und unterzeichnet, wird ein Genehmigungsvorgang gestartet. Der Service Provider prüft die Anwendung in AEM Inbox und verwendet Adobe Sign, um die Anwendung elektronisch zu signieren. Sie können ähnliche Workflows für elektronische Signaturen ermöglichen, indem Sie Adobe Sign in AEM Forms integrieren.
+In a typical Adobe Sign and Forms-centric workflow on OSGi scenario, a user fills an adaptive form to **apply for a service**. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger. Wenn ein Benutzer das Antragsformular ausfüllt, sendet und unterzeichnet, wird ein Genehmigungsvorgang gestartet. Der Dienstleister prüft die Anwendung in AEM Inbox und verwendet Adobe Sign, um die Anwendung elektronisch zu signieren. Sie können ähnliche Workflows für elektronische Signaturen ermöglichen, indem Sie Adobe Sign in AEM Forms integrieren.
 
 Um Adobe Sign mit AEM Forms zu verwenden, [integrieren Sie Adobe Sign mit AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben eine Umgebung für die Verwendung des formularzentrierten Workflows auf OSGi-Funktionen konfiguriert. Die folgenden Schritte zur Nutzung der Funktion sind nun:
+Sie haben eine Umgebung für die Verwendung des formularzentrierten Arbeitsablaufs auf OSGi-Funktionen konfiguriert. Die folgenden Schritte zur Nutzung der Funktion sind nun die folgenden:
 
 * [Verwenden des formularzentrierten Workflows auf OSGi](../../forms/using/aem-forms-workflow.md)
 * [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md)
