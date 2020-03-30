@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -97,8 +97,8 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
    * Dateien mit bestimmten Namen; mit „data*“ würden beispielsweise Dateien und Ordner mit den Namen „data1“, „data2“ usw. ausgeschlossen.
    * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-      * Data[0-9][0-9][0-9].[dD][aA][tT]
-      * *.[dD][Aa][Tt]
+      * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+      * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
@@ -110,9 +110,9 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
-      * *.[dD][Aa][Tt]
+      * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
@@ -216,7 +216,7 @@ Ein Dienst ist eine benutzerdefinierte Implementierung der `com.adobe.aemfd.watc
 
 #### Benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle {#custom-implementation-of-the-contentprocessor-interface}
 
-Die benutzerdefinierte Implementierung akzeptiert einen Verarbeitungskontext (ein Objekt vom Typ com.adobe.aemfd.watchfolder.service.api.ProcessorContext), liest Eingabedokumente und Konfigurationsparameter aus dem Kontext, verarbeitet die Eingaben und fügt die Ausgabe zurück zum\
+Die benutzerdefinierte Implementierung akzeptiert einen Verarbeitungskontext (ein Objekt vom Typ com.adobe.aemfd.watchfolder.service.api.ProcessorContext), liest Eingabe- und Konfigurationsparameter aus dem Kontext, verarbeitet die Eingaben und fügt die Ausgabe wieder zum\
 Kontext. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
 
 * **getWatchFolderId**: Gibt die ID des überwachten Ordners zurück.
@@ -224,8 +224,8 @@ Kontext. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
 * **getConfigParameters**: Gibt eine unveränderliche Zuordnung des Typs „Map“ zurück. Die Map enthält\
    die Konfigurationsparameter eines überwachten Ordners.
 
-* **setResult**: Implementierung von ContentProcessor\
-   verwendet die API, um das Ausgabedokument in den Ergebnisordner zu schreiben. Sie können den Namen für die Ausgabedatei an die setResult-API übergeben. Die API kann die übergebene Datei abhängig vom angegebenen Ausgabeordner/Dateimuster entweder verwenden oder ignorieren. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
+* **setResult**: Die ContentProcessor-Implementierung\
+   verwendet die API, um das Output-Dokument in den Ergebnisordner zu schreiben. Sie können den Namen für die Ausgabedatei an die setResult-API übergeben. Die API kann die übergebene Datei abhängig vom angegebenen Ausgabeordner/Dateimuster entweder verwenden oder ignorieren. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
 
 Beispiel: Der folgende Code ist eine benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle mit der benutzerdefinierten Eigenschaft „foo=bar“.
 
@@ -286,7 +286,7 @@ Standardmäßig wird ein Containerordner (/etc/fd/watchfolder/scripts) bereitges
 
 Wenn Sie Ihre Skripten an einem benutzerdefinierten Speicherort ablegen möchten, hat der Standarddienstbenutzer möglicherweise keine Leserechte für den benutzerdefinierten Speicherort. Führen Sie in einem solchen Fall die folgenden Schritte durch, um die benötigten Berechtigungen für den benutzerdefinierten Speicherort bereitzustellen:
 
-1. Create a system user programmatically or via the console https://[server]:[port]/crx/explorer. Sie können auch einen bestehenden Systembenutzer verwenden. Für diesen Zweck ist es wichtig, nicht mit normalen, sondern mit Systembenutzern zu arbeiten.
+1. Create a system user programmatically or via the console https://&#39;[server]:[port]&#39;/crx/explorer. Sie können auch einen bestehenden Systembenutzer verwenden. Für diesen Zweck ist es wichtig, nicht mit normalen, sondern mit Systembenutzern zu arbeiten.
 1. Weisen Sie dem neu erstellten oder bestehenden Systembenutzer für den benutzerdefinierten Speicherort, unter dem die Skripte gespeichert sind, Leserechte zu. Sie können mehrere benutzerdefinierte Speicherorte verwenden. Gewähren Sie mindestens Leserechte für alle benutzerdefinierten Speicherorte.
 1. Suchen Sie in der Felix-Konfigurationskonsole (/system/console/configMgr) die Dienstbenutzer-Zuordnung für die watch-folders. Diese Zuordnung lautet ähnlich wie &#39;Mapping: adobe-aemds-core-watch-folder=...&#39;.
 1. Klicken Sie auf die Zuordnung. Ändern Sie für den Eintrag &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; die Angabe „fd-service“ in die ID des benutzerdefinierten Systembenutzers. Klicken Sie auf Speichern.
@@ -337,7 +337,7 @@ Darüber hinaus stehen die folgenden ProcessorContext-APIs zur Verfügung:
 * getConfigParameters: Gibt eine unveränderliche Zuordnung des Typs „Map&lt;String, Objekt>“ zurück. Die Zuordnung enthält die Konfigurationsparameter eines überwachten Ordners.
 * setResult: Die ContentProcessor-Implementierung verwendet diese API zum Schreiben des Ausgabedokuments in den Ergebnisordner. Sie können den Namen für die Ausgabedatei an die setResult-API übergeben. Die API kann die übergebene Datei abhängig vom angegebenen Ausgabeordner/Dateimuster entweder verwenden oder ignorieren. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
 
-Berücksichtigen Sie bei Verwendung in Workflows die setResult-API:
+Überlegungen zur setResult-API bei Verwendung in Workflows:
 
 * Um ein neues Ausgabedokument als weiteren Beitrag zum Gesamtergebnis des Workflows hinzuzufügen, rufen Sie die setResult-API mit einem Dateinamen auf, der von keinem der vorhergehende Schritte als Name der Ausgabedatei verwendet wurde.
 * Um die von einem vorhergegangenen Schritt generierte Ausgabe zu aktualisieren, rufen Sie die setResult-API mit einem Dateinamen auf, der bereits von einem vorhergehenden Schritt verwendet wurde.
@@ -559,8 +559,8 @@ Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werd
 * Dateien mit bestimmten Namen, z. B. data.*
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
-   * *.[dD][Aa][Tt]
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * *.[dD][Aa]&#39;port&#39;
    * *.[Xx][mm][Ll]
 
 * Der Administrator kann das Dateimuster für den Ausgabeordner definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehalten und Fehler; „result“, „preserve“ und „failure“) kann der Administrator jedes der folgenden Dateimuster angeben:
@@ -598,7 +598,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Gen
 
 Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsoft Word-Dokumente (.docx) in PDF-Dokumente. Führen Sie die folgenden Schritte aus, um das Skript zu erstellen:
 
-1. Öffnen Sie CRXDE Lite in einem Browserfenster. The URL is https://[server]:[port]/crx/de.
+1. Öffnen Sie CRXDE Lite in einem Browserfenster. The URL is https://&#39;[server]:[port]&#39;/crx/de.
 
 1. Navigieren Sie zu „/etc/workflow/scripts“ und erstellen Sie einen Ordner namens „PDFG“. 
 
@@ -632,7 +632,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 ### Workflow erstellen {#create-a-workflow}
 
 1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.\
-   https://[servername]:[port]/workflow
+   https://[servername]:&#39;port&#39;/worklow
 
 1. Klicken Sie in der Modellansicht auf **Neu**. Geben Sie im Dialogfeld „Neuer Workflow“ den **Titel** an und klicken Sie auf **OK**.
 
@@ -652,7 +652,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 ### Überwachten Ordner konfigurieren {#configure-the-watched-folder}
 
-1. Öffnen Sie CRXDE Lite in einem Browserfenster. https://[server]:[port]/crx/de/
+1. Öffnen Sie CRXDE Lite in einem Browserfenster. https://&#39;[server]:[port]&#39;/crx/de/
 
 1. Navigieren Sie zum Ordner /etc/fd/watchfolder/config/ und erstellen Sie einen Knoten des Typs nt:unstructured.
 
