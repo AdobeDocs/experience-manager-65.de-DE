@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -80,7 +80,7 @@ In den folgenden Szenarios können Sie das jedoch nicht erkennen oder die Ergebn
 
 Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Instanz zu identifizieren und darauf zuzugreifen:
 
-1. On AEM author instance, go to `https://[server]:[port]/crx/de` and navigate to **[!UICONTROL Tools > Query]**.
+1. On AEM author instance, go to `https://'[server]:[port]'/crx/de` and navigate to **[!UICONTROL Tools > Query]**.
 
    Wählen Sie **[!UICONTROL SQL2]** aus der Dropdownliste **[!UICONTROL Typ]**.
 
@@ -133,7 +133,7 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
 
 1. Perform this step for workflow instances in **RUNNING**, **SUSPENDED**, or **STALE** status:
 
-   1. Go to `https://[server]:[port]/aem/start.html` and log in with administrator credentials.
+   1. Go to `https://'[server]:[port]'/aem/start.html` and log in with administrator credentials.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
    1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]**, um die laufenden Instanzen zu beenden.
    For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
