@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -41,7 +41,7 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
    * forms-users (zur Vorschau auf der Autoreninstanz)
    * cm-agent-users (für Rendering auf Veröffentlichungsinstanz)
-   Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). Wenn Sie versuchen, eine Korrespondenz ohne die entsprechenden Berechtigungen wiederzugeben, wird die Fehlerseite 404 angezeigt.
+   Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). Wenn Sie versuchen, eine Korrespondenz ohne die entsprechenden Berechtigungen wiederzugeben, wird die 404-Fehlerseite angezeigt.
 
 1. Wenn Sie **Vorschau**> **Benutzerdefiniert** wählen, wird ein Dialogfeld geöffnet. In the dialog, select a data file, corresponding to the data dictionary, to preview the letter with and then select **Preview**. Eine Datendatei wird basierend auf einem Datenwörterbuch für einen bestimmten Brief erstellt: For more information on the data file, see [Data Dictionary](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
 
@@ -124,7 +124,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 1. Falls erforderlich, fügen Sie Sonderzeichen in die Korrespondenz ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
    * Währungssymbole wie €,¥ und £
-   * Mathematische Symbole wie z. B. □, , ^
+   * Mathematische Symbole wie z. B. □, , ^ und ^
    * Interpunktionssymbole wie ‟ und&quot;
    ![Sonderzeichen](assets/specialcharacters.png)
 
@@ -134,9 +134,9 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
+   You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
@@ -165,7 +165,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
    * **Text** Zeigt die Summe der eindeutigen nicht ausgefüllten Platzhaltervariablen und Datenwörterbuchelemente im Textmodul an.
    * **Bedingung** Zeigt die Summe der eindeutigen nicht ausgefüllten Bedingungsvariablen an, die in der Bedingung enthalten sind, und der Variablen, die in den resultierenden Modulen enthalten sind.
    * **Liste** Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den der Liste zugewiesenen Modulen enthalten sind.
-   * **Zielbereich** Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die dem Zielbereich zugewiesen sind.
+   * **Bereich** Zielgruppe Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die dem Bereich Zielgruppe zugewiesen sind.
    Beachten Sie Folgendes zu Variablen mit Standardwerten:
 
    * Ein boolesches Variablenfeld ergibt standardmäßig *false*. Die Variable wird jedoch als nicht ausgefüllt erfasst. This implies that the variable count includes all Boolean variable fields with value *false*.
@@ -188,7 +188,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 * Auswahl (Augenauswahl): Schließt Modul aus dem Brief ein oder aus.
 * Aufzählungszeichen überspringen (gilt für Listenmodule und ihre untergeordneten Module): Überspringt Aufzählungszeichen in einem bestimmten Modul.
 * Seitenumbruch bevor (anwendbar für untergeordnete Module des Zielbereichs): Fügt Seitenumbruch vor dem Modul ein.
-* Seitenumbruch nach (gilt für untergeordnete Module des Zielbereichs): Fügt einen Seitenumbruch vor dem Modul ein.
+* Seitenumbruch nach (gilt für untergeordnete Module des Bereichs Zielgruppe): Fügt einen Seitenumbruch vor dem Modul ein.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Zielbereich an.
 * Bearbeiten (nur Textmodule): Öffnen Sie den Rich-Text-Editor zum Bearbeiten des Textmoduls.
 * Datenformat (Text- und Bedingungsmodule): Öffnen Sie alle Variablen des Moduls.
@@ -350,7 +350,7 @@ For more information on browser compatibility with letter preview, see [Disconti
 
 Um den Vorschaumodus des Briefs zu ändern, führen Sie die folgenden Schritte aus:
 
-1. Go to `https://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
+1. Go to `https://[system]:'port'/system/console/configMgr` and, if necessary, log in as Admin.
 1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
