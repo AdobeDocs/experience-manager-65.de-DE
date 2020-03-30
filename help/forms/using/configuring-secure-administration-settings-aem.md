@@ -1,22 +1,22 @@
 ---
 title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
 seo-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, in einer Produktionsumgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
-seo-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, in einer Produktionsumgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+seo-description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, in einer Produktionsumgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
 
 Im Allgemeinen verwenden Entwickler nicht die -Produktionsumgebung zum Erstellen und Testen ihrer Anwendungen. Sie müssen daher Benutzerkonten und -dienste verwalten, die, obwohl sie in einer privaten Entwicklungsumgebung benötigt werden, in einer Produktionsumgebung nicht erforderlich sind.
 
@@ -35,7 +35,7 @@ Führen Sie dieses Verfahren mithilfe der Webseite &quot;Anwendungen und Dienste
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Klicken Sie auf **Dienste > Anwendungen und Dienste > Voreinstellungen**.
@@ -70,7 +70,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Klicken Sie auf **Dienste > Anwendungen und Dienste > Dienstverwaltung**.
@@ -112,7 +112,7 @@ Endbenutzer können sich über Workbench, AEM Forms-Webanwendungen oder benutzer
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Klicken Sie auf **Einstellungen > User Management > Konfiguration > Konfigurationsdateien importieren und exportieren**.
