@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -81,7 +81,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
    Tippen Sie auf **[!UICONTROL Erstellen]**, um die Adobe Sign-Konfiguration zu erstellen.
 
-1. Öffnen Sie die AEM Web-Konsole. Die URL lautet `https://[server]:[port]/system/console/configMgr`
+1. Öffnen Sie die AEM Web-Konsole. The URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Öffnen Sie **Forms Common-Konfigurationsdienst.** 
 1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** Autoreninstanz ist konfiguriert, um Aobe Sign zu verwenden.
 1. Melden Sie sich in der Instanz [Veröffentlichen](/help/sites-deploying/deploy.md) an und öffnen Sie die folgende URL:
@@ -99,9 +99,9 @@ Ein Adobe Sign-aktivirtes adaptives Formular wird nur gesendet, nachdem alle Unt
 1. Melden Sie sich beim AEM Forms-Server mit den Admin-Anmeldedaten an und navigieren Sie zu **Tools**> **Vorgänge**> **Web-Konsole**.
 
    Sie können auch die folgende URL in einem Browserfenster öffnen:
-   `https://[localhost]:[port]/system/console/configMgr`
+   `https://[localhost]:'port'/system/console/configMgr`
 
-1. Suchen und öffnen Sie die Option **Adobe Sign-Konfigurationsdienst**. Geben Sie einen[ Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) in das Feld **Status-Aktualisierungs-Scheduler-Ausdruck** und klicken Sie auf **Speichern**. Um beispielsweise den Konfigurationsdienst täglich um 00:00 Uhr auszuführen, geben Sie `0 0 0 1/1 * ? *` im Feld **Statusupdate Scheduler-Ausdruck** an.
+1. Suchen und öffnen Sie die Option **Adobe Sign-Konfigurationsdienst**. Geben Sie einen[ Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) in das Feld **Status-Aktualisierungs-Scheduler-Ausdruck** und klicken Sie auf **Speichern**. Um beispielsweise den Konfigurationsdienst täglich um 00:00 Uhr auszuführen, geben Sie `0 0 0 1/1 * ? *` im Ausdruck **&quot;** Statusupdate-Planung&quot;an.
 
 Das Standardintervall für den Synchronisationsstatus von Adobe Sign wurde geändert.
 
