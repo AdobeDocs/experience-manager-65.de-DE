@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ d
 
 Um die nicht autorisierte Verwendung dieser Daten zu verhindern, können Unternehmen der PDF-Vorschau ein Wasserzeichen hinzufügen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
 
-To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://[server]:[port]/system/console/configMgr.
+To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
 ![default-watermark](assets/default-watermark.png)
 
@@ -31,7 +31,7 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
 ## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an {#customizewatermark-}
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named **[!UICONTROL previewwatermark]** with path/structure similar to the previewwatermark folder in the libs folder:
 
    1. Right-click the **previewwatermark** folder at the following path and select **Overlay Node**:
@@ -40,11 +40,11 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/configFiles/previewwatermark
+      **Pfad:** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Überlagerungsort: /apps/
+      **Überlagerungsort:** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **Knotentypen abgleichen:** Überprüft
 
       >[!NOTE]
       >
