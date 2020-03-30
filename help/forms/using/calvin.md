@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -94,7 +94,7 @@ Bevor Sie diesen Artikel verwenden, um Ihre Testfälle zu erstellen, müssen Sie
 
 Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen mehrerer adaptiver Formulare. Sie müssen einen separaten Testfall für jedes Formular erstellen, das Sie testen wollen. Wenn Sie die folgenden Schritte befolgen und den JavaScript-Code in Schritt 11 ändern, können Sie Ihre eigenen Testfälle erstellen, um Ihre adaptiven Formulare zu testen.
 
-1. Go to CRXDE Lite in your web browser: `https://[server]:[port]/crx/de`.
+1. Go to CRXDE Lite in your web browser: `https://'[server]:[port]'/crx/de`.
 1. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **Erstellen** > **Knoten erstellen**. Geben Sie einen Namen (hier afTestRegistration) ein, geben Sie die Art des Knotens als cq:ClientLibraryFolder ein und klicken Sie auf **OK.** 
 
    Der Ordner „clientlibs“ enthält den Ausrichtungsaspekt Ihrer Anwendung (JS und Init). Es wird empfohlen, dass Sie alle Hobbes Test-Objekte, die für ein Formular spezifisch sind, im Clientlibs-Ordner registrieren.
@@ -160,7 +160,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
    * Name: testForm (Ihr Formularname)
    * Typ: cq:ClientLibraryFolder
 
-1. Fügen Sie die folgenden Eigenschaften zum Testen eines adaptiven Formulars zum neu erstellten Knoten (hier &quot;testForm&quot;) hinzu:
+1. Hinzufügen Sie die folgenden Eigenschaften an den neu erstellten Knoten (hier &quot;testForm&quot;), um ein adaptives Formular zu testen:
 
    | **Eigenschaft** | **Typ** | **Wert** |
    |---|---|---|
