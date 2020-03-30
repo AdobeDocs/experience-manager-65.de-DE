@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,9 +37,9 @@ Der Speicherort des globalen Dokumentenspeichers wird während des Installations
 
 Wenn Sie die Speicherorteinstellung bei der Installation leer lassen, wird als Speicherort standardmäßig ein Ordner im Installationsordner des Anwendungsservers gewählt. Sie müssen für Ihren Anwendungsserver den folgenden Ordner sichern:
 
-* (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 Wenn der Speicherort des globalen Dokumentenspeichers vom Standardspeicherort abweicht, können Sie ihn wie folgt bestimmen:
 
@@ -134,7 +134,7 @@ Siehe [Sicherungsstrategien](https://articles.techrepublic.com.com/5100-1035_61-
 
 Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass die MySQL-Datenbank im binären Protokollmodus ausgeführt wird. (Siehe[ Binäre Protokollierung in MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Ein Werkzeug für die Sicherung bei laufendem Betrieb für MySQL steht außerdem von InnoBase Software zur Verfügung. (Siehe [Innobase-Sicherungen im laufenden Betrieb (Hot Backup)](https://www.innodb.com/hot-backup/features.md).)
 
-**Note**: *The default binary logging mode for MySQL is &quot;Statement&quot;, which is incompatible with tables used by Content Services (Deprecated). Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:*
+**Hinweis**: *Der binäre Standardprotokollierungsmodus für MySQL ist &quot;Statement&quot;, was mit von Content Services verwendeten Tabellen (nicht mehr unterstützt) nicht kompatibel ist. Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:*
 `binlog_format=mixed log-bin=logname`
 
 Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. To do an incremental backup, ensure that you start the server with the - `log-bin` option as described in the previous section. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. You can force a switch manually with the `FLUSH LOGS SQL` command. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
