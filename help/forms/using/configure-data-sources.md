@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OA
 
 Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration konfigurieren. Gehen Sie folgendermaßen vor:
 
-1. Go to AEM web console at https://[server]:[host]/system/console/configMgr.
+1. Wechseln Sie zu AEM-Webkonsole unter https://server:host/system/console/configMgr.
 1. Suchen Sie die Konfiguration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
 
@@ -47,7 +47,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    >
    >    
    >    
-   >    1. Go to https://[server]:[port]/system/console/crypto.
+   >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort bzw. die zu verschlüsselnde Zeichenfolge ein und klicken Sie auf **[!UICONTROL Protect]**.
    >    
    >    
@@ -66,7 +66,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
 
 Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfiguration in der AEM-Webkonsole konfigurieren. Gehen Sie folgendermaßen vor:
 
-1. Go to AEM web console at https://[server]:[host]/system/console/configMgr.
+1. Go to AEM web console at https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
 1. Im Dialogfeld für die Benutzerprofil-Connector-Konfiguration können Sie Benutzerprofileigenschaften hinzufügen, entfernen oder aktualisieren. Die angegebenen Eigenschaften sind zur Verwendung im Formulardatenmodell verfügbar. Verwenden Sie das folgende Format, um Benutzerprofileigenschaften festzulegen:
 
@@ -119,12 +119,12 @@ Gehen Sie wie folgt vor, um RESTful-Dienste zu konfigurieren:
    * Wählen Sie in der Dropdown-Liste &quot;Swagger-Quelle&quot;die Option &quot;URL&quot;oder &quot;Datei&quot;und geben Sie entsprechend die Swagger-URL zur Swagger-Definitionsdatei an oder laden Sie die Swagger-Datei aus Ihrem lokalen Dateisystem hoch.
    * Basierend auf der Swagger-Quelleingabe werden die folgenden Felder mit Werten vorausgefüllt:
 
-      * Regelung: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdownliste angezeigten Schematypen hängt von den in der Swagger-Quelle definierten Schemata ab.
+      * Regelung: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den in der Swagger-Quelle definierten Schemata ab.
       * Host: Der Domänenname oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
          Bearbeiten Sie bei Bedarf die vorausgefüllten Werte für diese Felder.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung — , um auf den RESTful-Dienst zuzugreifen und dementsprechend Details zur Authentifizierung anzugeben.
-   Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL API-Schlüssel]** &quot;auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungsheader oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste &quot; **[!UICONTROL Position]** &quot;und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld &quot; **[!UICONTROL Parametername]** &quot;entsprechend an.
+   Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL API-Schlüssel]** &quot;auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungsheader oder als Abfrage-Parameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste &quot; **[!UICONTROL Position]** &quot;und geben Sie den Namen der Kopfzeile bzw. des Abfrage-Parameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Dienst zu erstellen.
 
