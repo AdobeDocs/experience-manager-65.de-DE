@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,7 +22,7 @@ Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives 
 
 ## Über die Schulung {#about-the-tutorial}
 
-Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Back-End-Datenquellen wie AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
+Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Back-End-Datenquellen wie AEM-Profil, RESTful-Webdiensten, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](../../forms/using/data-integration.md).
 
@@ -37,7 +37,7 @@ Das Formulardatenmodell sieht etwa wie folgt aus:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**********A. Konfigurierte Datenquellen** B. Datenquellenschemata **C.** Verfügbare Dienste **D. Datenmodellobjekte** E. Konfigurierte Dienste
+**A.** Konfigurierte Datenquellen **B.** Datenquellen-Schema **C.** Verfügbare Dienste **D.** Datenmodellobjekte **E.** Konfigurierte Dienste
 
 ## Voraussetzungen {#prerequisites}
 
@@ -70,10 +70,10 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
       * **Datenquellenname:** Sie können einen beliebigen Namen angeben, beispielsweise **WeRetailMySQL**.
       * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Er wird beim Registrieren der Datenquelleninstanz als OSGi-Dienst angegeben. Zum Beispiel: **datasource.name**.
       * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. For MySQL database, specify **com.mysql.jdbc.Driver**.
-      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
-      * **** Test auf Borge: Aktivieren Sie die Option **Test on Borrow** .
+      * **Test auf Borge:** Aktivieren Sie die Option **Test on Borrow** .
       * **Test on Return:** Aktivieren Sie die Option **Test on Return.**
       * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **Wählen Sie * aus Kundendaten**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
@@ -88,8 +88,8 @@ AEM Forms bietet eine intuitive Benutzeroberfläche zum [Erstellen eines Formula
 
 Gehen Sie folgendermaßen vor, um ein Formulardatenmodell zu erstellen:
 
-1. In AEM author instance, navigate to **Forms** > **Data Integrations**.
-1. Tap **Create** > **Form Data Model**.
+1. Navigieren Sie in der AEM-Autoreninstanz zu **Formulare** > **Datenintegration**.
+1. Tippen Sie auf **Erstellen** > **Formulardatenmodell**.
 1. Geben Sie im Dialogfeld „Formulardatenmodell erstellen“ einen **Namen** für das Formulardatenmodell ein. Zum Beispiel **customer-shipping-billing-details**. Tippen Sie auf **Weiter**.
 1. Im Bildschirm „Datenquelle auswählen“ werden alle konfigurierten Datenquellen angezeigt. Select **WeRetailMySQL** data source and tap **Create**.
 
@@ -168,11 +168,11 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Ausgabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail-Schema
+         customerdetail Schema
 
       * **Array zurückgeben**: Deaktivieren Sie die Option **Array zurückgeben**.
       * **Argumente**: Wählen Sie das Argument mit dem Namen **ID**.
-      Tippen Sie auf **Done** (Fertig). Der Dienst zum Abrufen von Kundendaten aus der MySQL-Datenbank ist konfiguriert.
+      Tippen Sie auf **Fertig**. Der Dienst zum Abrufen von Kundendaten aus der MySQL-Datenbank ist konfiguriert.
 
       ![shiiping-address-retrieve](assets/shiiping-address-retrieval.png)
 
@@ -187,12 +187,12 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Eingabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail-Schema
+         customerdetail Schema
 
       * **Ausgabetyp**: Wählen Sie **BOOLEAN**.
 
       * **Argumente**: Wählen Sie das Argument mit dem Namen **ID** und **customerdetails**.
-      Tippen Sie auf **Done** (Fertig). Der Dienst **update** zum Aktualisieren von Kundendetails in der MySQL-Datenbank ist konfiguriert.
+      Tippen Sie auf **Fertig**. Der Dienst **update** zum Aktualisieren von Kundendetails in der MySQL-Datenbank ist konfiguriert.
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
 
