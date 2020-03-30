@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -84,7 +84,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 
 **Java-Optionen zu WebLogic hinzufügen**
 
-1. Start the WebLogic Administration Console by typing `https://`*[host name ]*`:`*[port]* `/console` in a web browser.
+1. Beginn Sie WebLogic Administration Console, indem Sie `https://[host name]:[port]/console` in einen Webbrowser eingeben.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
