@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27695ee7880cfa23d504d723297c9a06729a424b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt
 
 Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisierungs-Scheduler zu ändern:
 
-1. Melden Sie sich bei AEM Configuration Manager an. Die URL von Configuration Manager lautet `https://[Server]:[Port]/lc/system/console/configMgr`
+1. Melden Sie sich bei AEM Configuration Manager an. Die URL von Configuration Manager lautet `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Suchen Sie das Bundle **FormsManagerConfiguration** und öffnen Sie es.
 
@@ -35,26 +35,26 @@ Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisie
 
 Sie können die Option **Assets aus Repository synchronisieren** verwenden, um die Elemente manuell zu synchronisieren. Führen Sie die folgenden Schritte durch, um die Elemente manuell zu synchronisieren:
 
-1. Melden Sie sich bei AEM Forms an. The default URL is `https://[Server]:[Port]/lc/aem/forms/`.
+1. Melden Sie sich bei AEM Forms an. Die Standardeinstellung ist `https://'[server]:[port]'/lc/aem/forms/`.
 
    ![AEM Forms-Benutzeroberfläche](assets/aem_forms_ui.png)
 
-   **** Abbildung: Benutzeroberfläche von *AEM Forms*
+   **Abbildung:** Benutzeroberfläche von *AEM Forms*
 
 1. Klicken Sie in der Symbolleiste auf das Symbol ![aem6forms_sync](assets/aem6forms_sync.png) . Wenn im zuletzt konfigurierten Pfad keine Elemente vorhanden sind, wird das nachfolgende Dialogfeld angezeigt. Klicken Sie auf **Start**, um die Synchronisierung zu starten.
 
    ![Das Dialogfeld „Synchronisierung“](assets/migrate-and-syncronize.png)
 
-   **** Abbildung: Dialogfeld &quot; *Synchronisierung&quot;*
+   **Abbildung:** Dialogfeld &quot; *Synchronisierung&quot;*
 
 ## Fehlerbehebung von Snchronisierungsfehler {#troubleshooting-synchronization-error}
 
 Sie können neue Anwendungen im Workflow Designer (LiveCycle Workbench) erstellen. 
 
-If the newly created application and a folder at /content/dam/formsanddocuments has identical name, an error &quot;*An asset with the same name as this application already exists at root level.*&quot; protokolliert.
+If the newly created application and a folder at /content/dam/formsanddocuments has identical name, an error &quot;*An asset with the same name as this application already exists at root level.*&quot; wird protokolliert.
 
 Benennen Sie zum Beheben des Konflikts die Anwendung um und synchronisieren Sie die Elemente manuell.
 
 ![Das Dialogfeld „Konflikte bei der Synchronisierung von Elementen“](assets/sync-conflict.png)
 
-**** Abbildung: Dialogfeld &quot; *Konflikte bei der Synchronisierung von Elementen&quot;*
+**Abbildung:** Dialogfeld &quot; *Konflikte bei der Synchronisierung von Elementen&quot;*
