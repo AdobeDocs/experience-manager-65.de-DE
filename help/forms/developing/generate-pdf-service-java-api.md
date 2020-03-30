@@ -10,24 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Generate PDF Service Java API Quick Start (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
+# Generate PDF Service Java API Quick Beginn (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) ist für den Generate PDF-Dienst verfügbar.
+Java API Quick Beginn (SOAP) ist für den Generate PDF-Dienst verfügbar.
 
-[Kurzanleitung (SOAP-Modus): Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Java-API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mit der Java-API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Konvertieren von HTML-Inhalten in ein PDF-Dokument mit der Java-API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Konvertieren von HTML-Inhalten in ein PDF-Dokument mit der Java-API](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Konvertieren eines PDF-Dokuments in eine RTF-Datei mit der Java API (SOAP-Modus)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
+[Quick Beginn (SOAP-Modus): Konvertieren eines PDF-Dokuments in eine RTF-Datei mit der Java-API (SOAP-Modus)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Die Kurzanleitung unter Programmieren mit AEM Forms basiert auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Quick Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
 ## Quick Start (SOAP mode): Converting a Microsoft Word document to a PDF document using the Java API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
@@ -98,7 +98,7 @@ Im folgenden Codebeispiel wird eine Word-Datei mit dem Namen *Loan.doc* in ein P
          try{
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -143,7 +143,7 @@ Im folgenden Codebeispiel wird eine Word-Datei mit dem Namen *Loan.doc* in ein P
  }
 ```
 
-## Kurzanleitung (SOAP-Modus): Konvertieren von HTML-Inhalten in ein PDF-Dokument mit der Java-API {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Konvertieren von HTML-Inhalten in ein PDF-Dokument mit der Java-API {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird HTML-Inhalt unter https://www.adobe.com in ein PDF-Dokument mit dem Namen *AdobeHTML.pdf* konvertiert. (Siehe [Konvertieren von HTML-Dokumenten in PDF-Dokumente](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
@@ -210,7 +210,7 @@ Im folgenden Java-Codebeispiel wird HTML-Inhalt unter https://www.adobe.com in e
          try{
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -249,7 +249,7 @@ Im folgenden Java-Codebeispiel wird HTML-Inhalt unter https://www.adobe.com in e
  }
 ```
 
-## Kurzanleitung (SOAP-Modus): Konvertieren eines PDF-Dokuments in eine RTF-Datei mit der Java API (SOAP-Modus) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
+## Quick Beginn (SOAP-Modus): Konvertieren eines PDF-Dokuments in eine RTF-Datei mit der Java-API (SOAP-Modus) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
 Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein RTF-Dokument mit dem Namen *Loan.rtf* konvertiert. (Siehe [Konvertieren von PDF-Dokumenten in Nicht-Bildformate](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
 
@@ -319,7 +319,7 @@ Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein 
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
