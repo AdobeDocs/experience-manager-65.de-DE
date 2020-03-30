@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -119,7 +119,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
   <tr>
    <td><a href="#anonymous">Allgemeinen Forms-Konfigurationsdienst für anonyme Benutzer konfigurieren</a></td>
    <td>Veröffentlichen</td>
-   <td>Die Konfiguration ermöglicht die Erstellung von Sende-, Signatur- und Datensatzdokumenten für anonyme Benutzer.</td>
+   <td>Die Konfiguration ermöglicht das Senden, Signieren und Dokument der Datensatzgenerierung für anonyme Benutzer.</td>
   </tr>
   <tr>
    <td><a href="#fdm">REST-Dienst-Swagger-Datei für das Formulardatenmodell ändern</a></td>
@@ -220,8 +220,8 @@ To learn more about how to use packages and package share, see [How to Work With
 
 Nachdem Sie die Pakete installiert und den Autoren- und Veröffentlichungsmodus begonnen haben, besuchen Sie die folgenden URLs in Ihrem Browser:
 
-* `https://[server]:[port]/wegov`
-* `https://[server]:[port]/wefinance`
+* `https://'[server]:[port]'/wegov`
+* `https://'[server]:[port]'/wefinance`
 
 Wenn die Installation erfolgreich abläuft, können Sie auf die Startseiten der Referenz-Sites und We.Finance zugreifen.
 
@@ -231,12 +231,12 @@ Die Referenzseiten für die Hypothekenanwendung und die Anwendung für die autom
 
 So importieren Sie die benutzerdefinierte Entität für die Anwendung für die automatische Versicherung:
 
-1. Download the **WeFinanceAutoInsurance_1_0.zip** solution package from `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` on your AEM author instance.
+1. Download the **WeFinanceAutoInsurance_1_0.zip** solution package from `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` on your AEM author instance.
 1. In your Microsoft Dynamics instance, go to **Settings > Solutions** and click **Import**. Wählen Sie das Paket aus und importieren Sie es.
 
 So importieren Sie die benutzerdefinierte Entität für die Anwendung für die automatische Versicherung:
 
-1. Laden Sie das **AEMFormsFSIRefsite_1_0.zip** -Paket herunter `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Wählen Sie das Paket aus und importieren Sie es.
+1. Laden Sie das **AEMFormsFSIRefsite_1_0.zip** -Paket von `https://[author]:'port'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`herunter. Wählen Sie das Paket aus und importieren Sie es.
 
 1. In your Microsoft Dynamics instance, go to **Settings > Solutions** and click **Import**. Wählen Sie das Paket aus und importieren Sie es.
 
@@ -244,9 +244,9 @@ Importieren der Kunden- und Versicherungspolice-Datensätze:
 
 1. Download the **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, and **home mortgage** data files from the following locations on your AEM author instance:
 
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
-   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Führen Sie in Ihrer Microsoft Dynamics-Instanz die folgenden Schritte aus:
 
@@ -273,7 +273,7 @@ Konfigurieren Sie den OAuth-Cloud-Dienst in AEM Forms, um die Kommunikation zwis
 
 Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Veröffentlichungsinstanz aus:
 
-1. Go to AEM Web Configuration console at `https://[server]:[host]/system/console/configMgr`.
+1. Go to AEM Web Configuration console at `https://'[server]:[port]'system/console/configMgr`.
 1. Find and tap **[!UICONTROL Adobe Sign Configuration Service]** to open it for configuration.
 1. Konfigurieren Sie **[!UICONTROL Status Update Scheduler Expression]** als **0 0/2 * * * ?**.
 
@@ -301,7 +301,7 @@ Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Ve
 
 Führen Sie in der Veröffentlichungsinstanz die folgenden Schritte aus, um anonymen Benutzern den Zugriff zu ermöglichen:
 
-1. Go to AEM Web Configuration console at `https://[server]:[port]/system/console/configMgr`.
+1. Go to AEM Web Configuration console at `https://'[server]:[port]'/system/console/configMgr`.
 1. Find and tap **[!UICONTROL Forms Common Configuration Service]** to open it for configuration.
 1. Configure the **[!UICONTROL Allow]** field for **[!UICONTROL All Users]**.
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
@@ -310,30 +310,30 @@ Führen Sie in der Veröffentlichungsinstanz die folgenden Schritte aus, um anon
 
 Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Veröffentlichungsinstanz aus:
 
-1. Gehen Sie zu CRXDE am `https://[server]:[port]/crx/de/index.jsp`.
+1. Gehen Sie zu CRXDE am `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Navigieren Sie zu **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** und öffnen Sie die Swagger-Datei.
 1. Aktualisieren Sie die Host- und Anschlusseinstellungen gemäß Ihrer Umgebung.
 1. Speichern Sie die Einstellungen.
-1. (Nur **Autoreninstanz**) Gehen Sie zu **Werkzeuge** > **Cloud-Dienste** > **Datenquellen** > **global**. Wählen Sie &quot; **roi-rest** &quot;aus und tippen Sie auf **Eigenschaften**.Tippen Sie auf **Authentifizierungseinstellungen** und legen Sie den **Authentifizierungstyp** auf **Grundlegende Authentifizierung** fest. Geben Sie `admin`/ `admin`als Benutzernamen/Kennwort für den Zugriff auf den Dienst an. Tap **Save &amp; Close**.
+1. (Nur **Autoreninstanz**) Gehen Sie zu **Werkzeuge** > **Cloud-Dienste** > **Datenquellen** > **global**. Wählen Sie &quot; **roi-rest** &quot;aus und tippen Sie auf **Eigenschaften**.Tippen Sie auf **Authentifizierungseinstellungen** und legen Sie den **Authentifizierungstyp** auf **Grundlegende Authentifizierung** fest. Geben Sie `admin`/ `admin`als Benutzernamen/Kennwort für den Zugriff auf den Dienst an. Tippen Sie auf **Speichern und Schließen**.
 
 ## Integration in Marketing Cloud {#integrate-with-marketing-cloud}
 
-Sie können AEM Forms in Adobe Analytics und Adobe Target integrieren. Während Adobe Analytics Ihnen dabei hilft, Berichte zu erstellen und die Leistung adaptiver Formulare zu analysieren, unterstützt Adobe Target Sie bei der Bereitstellung personalisierter Erlebnisse und der Durchführung von A/B-Tests für adaptive Formulare.
+Sie können AEM Forms in Adobe Analytics und Adobe Zielgruppe integrieren. Während Adobe Analytics Ihnen dabei hilft, Berichte zu erstellen und die Leistung adaptiver Formulare zu analysieren, hilft Ihnen Adobe Zielgruppe bei der Bereitstellung personalisierter Erlebnisse und der Durchführung von A/B-Tests für adaptive Formulare.
 
-Führen Sie die folgenden Schritte aus, um Adobe Analytics und Adobe Target in AEM Forms zu konfigurieren.
+Führen Sie die folgenden Schritte aus, um Adobe Analytics und Adobe Zielgruppe in AEM Forms zu konfigurieren.
 
 ### Konfigurieren Sie Analytics {#configureanalytics}
 
-Anhand von AEM Forms-Integration und Adobe Analytics können Sie verfolgen und analysieren, wie Ihre Kunden mit Ihren Formularen und Dokumenten interagieren. Es hilft Ihnen, Problembereiche zu identifizieren und zu beheben und zu handeln, um die Konversionsrate zu erhöhen.
+Anhand von AEM Forms-Integration und Adobe Analytics können Sie verfolgen und analysieren, wie Ihre Kunden mit Ihren Formularen und Dokumenten interagieren. Es hilft Ihnen, Problembereiche zu identifizieren und zu beheben und zu handeln, um das Konversionsrate zu erhöhen.
 
 Um diese Funktion auf der Referenz-Website zu nutzen, konfigurieren Sie Ihr Analytics-Konto, wie beschrieben unter [Konfigurieren von Analysen und Berichten](../../forms/using/configure-analytics-forms-documents.md).
 
 Zur Erstellung eines Berichts werden Seed-Daten mit den Referenz-Sites gebündelt. Bevor Sie Seed-Daten verwenden, führen Sie die folgenden Schritte aus:
 
-1. Stellen Sie sicher, dass die Analytics-Konfigurationen von Web.Finance in den AEM Cloud-Services verfügbar sind. Sie können Cloud-Dienste auf eine der folgenden Arten finden:
+1. Stellen Sie sicher, dass die Analytics-Konfigurationen für Web.Finance in den AEM Cloud-Services verfügbar sind. Sie können Cloud-Dienste auf eine der folgenden Arten finden:
 
    * Navigieren Sie zu **[!UICONTROL Tools > Cloud-Dienste > Legacy-Cloud-Dienste]** oder navigieren Sie zu https://&lt;Host>:&lt;Port>/libs/cq/core/content/tools/cloudservices.html.
-   * In the **[!UICONTROL Cloud Services]** page, under **[!UICONTROL Adobe Analytics]** section, click `Show Configurations`. Sie können die verfügbaren We.Finance-Konfigurationen sehen. Klicken Sie auf „Öffnen“, um die Konfiguration zu öffnen. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Bearbeiten]**. Geben Sie ein gültiges Unternehmen, Benutzername, Shared Secret (Kennwort) und Rechenzentrum an und klicken Sie auf **[!UICONTROL Verbindung zu Analytics]** herstellen. Nachdem Sie das Dialogfeld Verbindung erfolgreich abgeschlossen haben, klicken Sie im Konfigurationsdialogfeld auf **[!UICONTROL OK]** . Konfigurieren Sie das Framework unter der Analytics-Konfiguration, wie in [Konfigurieren von Analytics und Berichten](../../forms/using/configure-analytics-forms-documents.md)beschrieben.
+   * In the **[!UICONTROL Cloud Services]** page, under **[!UICONTROL Adobe Analytics]** section, click `Show Configurations`. Sie können die verfügbaren We.Finance-Konfigurationen sehen. Klicken Sie auf „Öffnen“, um die Konfiguration zu öffnen. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Bearbeiten]**. Geben Sie gültige Firma, Benutzernamen, Shared Secret (Kennwort) und Rechenzentrum ein und klicken Sie auf **[!UICONTROL Verbindung zu Analytics]** herstellen. Nachdem Sie das Dialogfeld Verbindung erfolgreich abgeschlossen haben, klicken Sie im Konfigurationsdialogfeld auf **[!UICONTROL OK]** . Konfigurieren Sie das Framework unter der Analytics-Konfiguration, wie in [Konfigurieren von Analytics und Berichten](../../forms/using/configure-analytics-forms-documents.md)beschrieben.
 
 1. Navigieren Sie zu https://&lt;*Host*>:&lt;*Anschluss*>/system/console/configMgr und führen Sie folgende Schritte aus:
 
@@ -345,8 +345,8 @@ Zur Erstellung eines Berichts werden Seed-Daten mit den Referenz-Sites gebündel
 1. Navigieren Sie zum Forms Manager unter https://&lt;Host>:&lt;Anschluss>/aem/forms und führen Sie die folgenden Schritte aus:
 
    * Öffnen Sie den Ordner &quot;We.Finance&quot;und wählen Sie das Formular aus, für das Sie den Bericht anzeigen möchten.
-   * Klicken Sie in der Aktions-Symbolleiste auf Analyse aktivieren. Nachdem Sie die Analyse für das Formular aktiviert haben, klicken Sie auf Analysebericht. Sie können sehen, dass ein leerer Bericht generiert wurde. Nachdem ein leerer Bericht generiert wurde, müssen Sie Seed-Daten bereitstellen, die mit refsite-Paket versandt werden, um einen Analysebericht für Demozwecke zu erstellen.
-   Referenzseiten bieten Analyseberichte mit Seed-Daten für Kreditkarten-, Hypotheken- und Kindergeld-Anwendungsfälle.
+   * Klicken Sie in der Aktions-Symbolleiste auf Analyse aktivieren. Nachdem Sie die Analyse für das Formular aktiviert haben, klicken Sie auf Analysebericht. Sie können sehen, dass ein leerer Bericht generiert wurde. Nachdem ein leerer Bericht generiert wurde, müssen Sie Seed-Daten bereitstellen, die mit refsite-Paket versandt wurden, um einen Analysebericht für Demozwecke zu erstellen.
+   Referenz-Websites bieten dem Analytics-Berichte Startdaten für Kreditkarten-, Hypotheken- und Kindergeld-Anwendungsfälle.
 
 ### Target konfigurieren {#configure-target}
 
@@ -360,15 +360,15 @@ Um die Integration auf der Referenz-Website zu testen, führen Sie folgende Schr
 
 1. Zugriff `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
 
-1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. Sie können die Target-Konfiguration für Web.Finance anzeigen. Klicken Sie auf „Öffnen“, um die Konfiguration zu öffnen. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Bearbeiten]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
+1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. Die Konfiguration der Web.Finance-Zielgruppe ist verfügbar. Klicken Sie auf „Öffnen“, um die Konfiguration zu öffnen. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Bearbeiten]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
 
 1. Geben Sie Ihren Client-Code, die E-Mail und das Kennwort an, die mit Ihrem Target-Konto verknüpft sind. Wählen Sie den API-Typ als **[!UICONTROL REST]**.
-1. Klicken Sie auf **[!UICONTROL Verbindung mit Adobe-Target herstellen]**. Klicken Sie nach erfolgreicher Konfiguration des Target-Kontos auf **[!UICONTROL OK]**. Sie können sehen, dass die gepackte Konfiguration über ein Target Framework verfügt.
+1. Klicken Sie auf **[!UICONTROL Verbindung mit Adobe-Target herstellen]**. Klicken Sie nach erfolgreicher Konfiguration des Kontos auf **[!UICONTROL OK]**. Sie können sehen, dass die gepackte Konfiguration über ein Zielgruppe Framework verfügt.
 
 1. Wechseln zu `https://<hostname>:<port>/system/console/configMgr`.
 
 1. Klicken Sie auf **[!UICONTROL AEM Forms Target-Konfiguration]**.
-1. Wählen Sie ein Target-Framework.
+1. Wählen Sie ein Zielgruppe-Framework.
 1. Geben Sie im Feld **[!UICONTROL Target-URLs]** die URL für AEM Forms ein. Beispiel: `https://<hostname>:<port>/`.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
