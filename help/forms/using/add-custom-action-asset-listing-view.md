@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -42,7 +42,7 @@ In den nachstehenden Schritten wird der Ansicht „Asset-Auflistung“ für Brie
 
 Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF von Briefen herunterladen können, führen Sie folgende Schritte aus:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 
 1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen &quot;items&quot;mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;items&quot;im Auswahlordner, indem Sie die folgenden Schritte durchführen:
 
@@ -61,11 +61,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **Pfad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **** Ort: /apps/
+      **Ort:** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **Knotentypen abgleichen:** Ausgewählt
 
       ![Überlagerungsknoten](assets/2_createnodedownloadflatpdf.png)
 
@@ -79,7 +79,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
-      **** Name: downloadFlatPDF (oder der Name, den Sie dieser Eigenschaft geben möchten)
+      **Name:** downloadFlatPDF (oder der Name, den Sie dieser Eigenschaft geben möchten)
 
       **Typ:** nt:unstructured
 
@@ -102,7 +102,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
         <tr>
         <td>foundation-collection-action</td>
         <td>Zeichenfolge</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> kann ein oder mehrere der folgenden Einträge sein (durch Kommas getrennt): BRIEF,TEXT,LISTE,BEDINGUNG,DATADIKTIONÄR</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> kann ein oder mehrere der folgenden Einträge sein (durch Kommas getrennt): BRIEF,TEXT,LISTE,BEDINGUNG,DATADIKTIONSBUCH</p> </td>
         </tr>
         <tr>
         <td>icon</td>
@@ -130,7 +130,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
         <td>Einfache PDF herunterladen (oder eine beliebige andere Beschriftung)<br /> <br /> Der Befehl, der in der Benutzeroberfläche von „Asset-Auflistung“ angezeigt wird</td>
         </tr>
         <tr>
-        <td>Titels</td>
+        <td>Titel</td>
         <td>Zeichenfolge</td>
         <td>Einfache PDF des ausgewählten Briefs herunterladen (oder eine beliebige andere Beschriftung/alternativer Text)<br /> <br /> Der Titel ist der alternative Text, den Correspondence Management anzeigt, wenn ein Benutzer den Mauszeiger auf den benutzerdefinierten Befehl bewegt.</td>
         </tr>
@@ -145,11 +145,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **Pfad:** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Ort: /apps/
+      **Ort:** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **Knotentypen abgleichen:** Ausgewählt
 
    1. Klicken Sie auf **OK**. Die Ordnerstruktur wird im Apps-Ordner erstellt. Klicken Sie auf **Alle speichern**.
 
@@ -235,11 +235,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **Pfad:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Ort: /apps/
+      **Ort:** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **Knotentypen abgleichen:** Ausgewählt
 
    1. Klicken Sie auf **OK**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
@@ -251,7 +251,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
-      **** Name: letterpdfdownloader (oder der Name, den Sie dieser Eigenschaft geben möchten - muss eindeutig sein. Wenn Sie hier einen anderen Namen verwenden, geben Sie dasselbe auch in der ACTION_URL-Variablen der Datei &quot;formaction.js&quot;an.)
+      **Name:** letterpdfdownloader (oder der Name, den Sie dieser Eigenschaft geben möchten - muss eindeutig sein. Wenn Sie hier einen anderen Namen verwenden, geben Sie dasselbe auch in der ACTION_URL-Variablen der Datei &quot;formaction.js&quot;an.)
 
       **Typ:** nt:unstructured
 
@@ -349,7 +349,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
 Nachdem Sie eine benutzerdefinierte Funktion zum Herunterladen einer einfachen PDF Ihrer Briefe hinzugefügt haben, können Sie eine einfache PDF-Version des von Ihnen ausgewählten Briefs herunterladen, indem Sie folgende Schritte durchführen:
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/projects.html` und melden Sie sich an.
+1. Gehen Sie zu `https://'[server]:[port]'/[ContextPath]/projects.html` und melden Sie sich an.
 
 1. Wählen Sie **Formulare > Briefe**. Correspondence Management listet die im System verfügbaren Briefe auf.
 1. Click **Select** and then click a letter to select it.
