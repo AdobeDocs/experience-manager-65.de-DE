@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -158,11 +158,11 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Webseite d
 * Verwenden Sie für den Formularcontainer auf der Webseite die gesamte Fensterbreite. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formularcontainer nicht die gesamte Fensterbreite einnimmt, müssen Sie benutzerdefinierte CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
 * Use `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
 * Use `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
-* Richten Sie die Kopfzeile access-control-origin beim Senden der Antwort vom AEM-Server ein.
+* Richten Sie die Kopfzeile &quot;access-control-Herkunft&quot;ein, wenn Sie eine Antwort vom AEM-Server senden.
 
 ## Bereitstellung adaptiver Formulare auf einer domänenübergreifenden Site durch AEM Forms {#cross-site}
 
-1. On AEM author instance, go to AEM Web Console Configuration Manager at `https://[server]:[port]/system/console/configMgr`.
+1. On AEM author instance, go to AEM Web Console Configuration Manager at `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie die Konfiguration **Apache Sling Referrer Filter** und öffnen Sie sie.
 1. Geben Sie im Feld Zulässige Hosts die Domäne an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungsdomänen anzugeben.
 
