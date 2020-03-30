@@ -9,7 +9,7 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,9 +24,9 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Erstellen Sie zunächst eine Beispielvorlage für Correspondence Management, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](../../forms/using/create-letter.md).
+Beginn durch Erstellen einer Beispielvorlage für Correspondence Management, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](../../forms/using/create-letter.md).
 
-Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 Dabei ist `encodedLetterId` die URL-kodierte Brief-ID. Verwenden Sie die gleiche Brief-ID, wenn Sie den Wiedergabeprozess für eine Workspace-Aufgabe in der Workbench definieren.
 
@@ -58,7 +58,7 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
 
 1. Klicken Sie auf „Aktionsprofile verwalten“. Das Dialogfeld „Aktionsprofile verwalten“ wird angezeigt. Stellen Sie sicher, dass „Prozess rendern“ und „Prozess übermitteln“ entsprechend ausgewählt werden.
 1. Um den Brief mit einer XML-Datendatei zu öffnen, suchen Sie die entsprechende Datendatei und wählen Sie diese unter „Datenprozess vorbereiten“ aus.
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 1. Definieren Sie die Variablen für Startpunkt-Ausgabe und Aufgabenanlagen. Die definierten Variablen enthalten Daten zur Startpunktausgabe und zu Aufgabenanlagen.
 1. (Optional) Um einen weiteren Benutzer im Arbeitsablauf hinzuzufügen, ziehen Sie eine Aktivitätenauswahl, konfigurieren Sie sie ihn und weisen sie ihn Benutzern zu. Schreiben Sie einen benutzerdefinierten Wrapper (im Beispiel unten angezeigt) oder laden Sie das DSC herunter und installieren Sie es (unten angezeigt), um Briefvorlagen, Startpunktausgabe und Aufgabenanlagen zu extrahieren.
 
@@ -104,7 +104,7 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
    Wählen Sie im Dialogfeld „Aktivität definieren“ die entsprechende Aktivität wie getLetterInstanceInfo aus und klicken Sie auf **OK**.
 
 1. Stellen Sie die Anwendung bereit. Speichern Sie bei Aufforderung die Assets.
-1. Log in to the AEM forms workspace at https://[server]:[port]/lc/content/ws.
+1. Log in to the AEM forms workspace at https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Öffnen Sie die Aufgabe, die Sie in CMRenderer hinzugefügt haben. Der Correspondence Management-Brief wird angezeigt.
 
    ![cminworkspace](assets/cminworkspace.png)
