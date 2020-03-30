@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 Für jede Anpassung gelten die folgenden generischen Schritte:
 
-1. Log in to CRXDE Lite by accessing `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Log in to CRXDE Lite by accessing `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Create a folder named `ws`at `/apps`, if it does not exist. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Browse to `/apps/ws`, and navigate to the **[!UICONTROL Access Control]** tab.
 1. In the **[!UICONTROL Access Control]** list, click **[!UICONTROL +]** to add a new entry. Klicken Sie erneut auf **[!UICONTROL +]**.
@@ -97,6 +97,6 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**, löschen Sie den Cache und aktualisieren Sie AEM Forms Workspace.
 
-   Access the URL `https://[server]:[port]/lc/ws` and log in with administrator/password credentials. Der Browser leitet Sie zu `https://[server]:[port]/lc/apps/ws/index.html`.
+   Access the URL `https://'[server]:[port]'/lc/ws` and log in with administrator/password credentials. Der Browser leitet Sie zu `https://'[server]:[port]'/lc/apps/ws/index.html`.
 
 [Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
