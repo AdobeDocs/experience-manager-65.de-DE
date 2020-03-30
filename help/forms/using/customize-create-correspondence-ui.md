@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -51,7 +51,7 @@ Die /apps-Verzweigung (Ordnerstruktur):
 
 Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der /apps-Verzweigung zu erstellen:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen `css` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der css-Ordner (im ccrui-Ordner).
 
    Schritte zum Erstellen des css-Ordners:
@@ -62,11 +62,11 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Überlagerungsort: /apps/
+      **Überlagerungsort:** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **Knotentypen abgleichen:** Überprüft
 
       ![Überlagerungsknotenpfad](assets/0_1_5ioverlaynodedialog.png)
 
@@ -90,11 +90,11 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
    1. Right-click the **imgs** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Überlagerungsort: /apps/
+      **Überlagerungsort:** /apps/
 
-      **** Knotentypen abgleichen: Überprüft
+      **Knotentypen abgleichen:** Überprüft
 
    1. Klicken Sie auf **OK**.
 
@@ -114,7 +114,7 @@ Laden Sie Ihre benutzerdefinierte Logodatei auf CRX hoch. Standard-HTML-Regeln s
 
 Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf CRX hochzuladen:
 
-1. Wechseln zu `https://[server]:[port]/[contextpath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Wechseln zu `https://'[server]:[port]'/[contextpath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
 1. Klicken Sie in CRXDE mit der rechten Maustaste auf den Ordner **imgs** an folgendem Speicherort und wählen Sie **Erstellen > Datei erstellen:**
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -139,7 +139,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
    Das Dialogfeld „jcr:data bearbeiten“ wird angezeigt.
 
-   Klicken Sie jetzt auf den Ordner newlogo.png, doppelklicken Sie auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Falls sie nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
+   Klicken Sie nun auf den Ordner newlogo.png, klicken Sie in der Dublette auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Falls sie nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
 
 1. Klicken Sie im Dialogfeld „jcr:data bearbeiten“, auf **Durchsuchen** und wählen Sie die Bilddatei, die Sie als Logo (hier CustomLogo.png) verwenden möchten.
 
@@ -157,7 +157,7 @@ Das benutzerdefinierte Logobild ist ein zusätzliches im Inhaltskontext zu laden
 
 Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe des Logos einzurichten:
 
-1. Wechseln zu `https://[server]:[port]/[contextpath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Wechseln zu `https://'[server]:[port]'/[contextpath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
 1. Erstellen Sie eine Datei mit dem Namen customcss.css (Sie können keinen anderen Dateinamen verwenden) an folgendem Speicherort:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
