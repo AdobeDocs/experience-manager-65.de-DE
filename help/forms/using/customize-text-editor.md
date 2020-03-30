@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,8 +37,8 @@ Wenn Sie so verfahren, müssen Sie folgende Schritte durchführen:
 
 Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxeditor-config.xml&quot;anzupassen:
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;config&quot;, der sich unter &quot;libs/fd/cm/config&quot;befindet, indem Sie die folgenden Schritte durchführen:
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;config&quot;, der sich unter &quot;libs/fd/cm/config&quot;befindet, und führen Sie die folgenden Schritte aus:
 
    1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -48,11 +48,11 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **** Pfad: /libs/fd/cm/config
+      **Pfad:** /libs/fd/cm/config
 
-      **** Ort: /apps/
+      **Ort:** /apps/
 
-      **** Knotentypen abgleichen: Ausgewählt
+      **Knotentypen abgleichen:** Ausgewählt
 
       ![Überlagerungsknoten](assets/2.png)
 
@@ -71,7 +71,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
 1. Öffnen Sie die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config und nehmen Sie dann die erforderlichen Änderungen vor.
 
-   1. Doppelklicken Sie auf die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config. Die Datei wird geöffnet.
+   1. Klicken Sie bei gedrückter Dublette auf die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config. Die Datei wird geöffnet.
 
       ```xml
       <editorConfig>
