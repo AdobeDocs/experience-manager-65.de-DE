@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -53,9 +53,9 @@ Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie f�
 * Mit AEM Forms können Sie adaptive Formulare erstellen, die auf den folgenden Formularmodellen basieren. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und einem AEM-System und liefern eine XML-basierte Struktur für Datenfluss innerhalb und außerhalb eines adaptiven Formulars. Die Formularmodelle legen die Regeln und Beschränkungen für adaptive Formulare in dem Formular von Schema- und XFA-Beschränkungen fest.
 
    * **Ohne**: Die adaptiven Formulare, die mit dieser Option erstellt worden sind, verwenden kein Datenmodell. Die XML-Datendatei, die aus diesen Formularen generiert wurde, hat eine flache Struktur mit Feldern und entsprechenden Werten.
-   * **XML- oder JSON-Schema**: XML- und JSON-Schemata stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dessen Elemente verwenden, um dem adaptiven Formular dynamischen Inhalt hinzuzufügen. Die Elemente des Schemas sind auf der Registerkarte &quot;Datenmodellobjekt&quot;des Inhaltsbrowsers zum Authoring adaptiver Formulare verfügbar. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
+   * **XML- oder JSON-Schema**: XML- und JSON-Schema stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und mit dessen Elementen dem adaptiven Formular dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte &quot;Datenmodellobjekt&quot;des Inhaltsbrowsers zum Authoring adaptiver Formulare zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
    * **XFA-Formularvorlage**: Es ist ein optimales Datenmodell, wenn Sie Investitionen in XFA-basierten HTML5-Formularen haben. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln werden in den zugehörigen adaptiven Formularen beibehalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
-   * **Formulardatenmodell**: Es ist ein bevorzugtes Formularmodell, wenn Sie Back-End-Systeme wie Datenbanken, Webdienste und AEM-Benutzerprofile integrieren möchten, um adaptive Formulare im Voraus auszufüllen und gesendete Formulardaten zurück in die Backend-Systeme zu schreiben. Verwendung eines Formulardatenmodells Datenintegration ermöglicht die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
+   * **Formulardatenmodell**: Es ist ein bevorzugtes Formularmodell, wenn Sie Backend-Systeme wie Datenbanken, Webdienste und AEM-Profil integrieren möchten, um adaptive Formulare im Voraus auszufüllen und gesendete Formulardaten in Backend-Systeme zu schreiben. Verwendung eines Formulardatenmodells Datenintegration ermöglicht die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
 Es ist wichtig, das Datenmodell mit Bedacht auszuwählen, das nicht nur Ihren Anforderungen entspricht, aber Ihre bereits getätigten Investitionen in XSD-Asset XFA-Assets erweitert. Es wird empfohlen, das XSD-Modell zu verwenden, um Formularvorlagen zu erstellen, weil die generiert XML-Daten enthält, die per XPFAD vom Schema definiert wurden. Die Verwendung des XSD-Modells als Standardauswahl für das Formulardatenmodell hilft auch dabei, weil es das Formulardesign vom Backendsystem abkoppelt, das Daten verarbeitet und verbraucht und es verbessert die Leistung des Formulard, wegen der One-to-One-Zuweisung des Formularfelds. BindRef des Felds kann auch aus dem XPFAD seines Datenwerts in XML gemacht werden.
 
@@ -102,11 +102,11 @@ AEM Forms bietet einen [Regeleditor](/help/forms/using/rule-editor.md), der es I
 Der Regeleditor bietet einen visuellen Editor und einen Code-Editor für Schreibregeln. Achten Sie auf Folgendes, wenn Sie Schreibregeln mit dem Code-Editormodus verwenden:
 
 * Verwenden Sie eindeutige Namen aussagekräftig und Formularfelder und Komponenten, damit alle möglichen Konflikten während Schreibregeln vermeiden.
-* Use `this` operator for a component to refer to itself in a rule expression. Es wird sichergestellt, dass die Regel gültig bleibt, selbst wenn sich der Komponentenname ändert. Beispiel, `field1.valueCommit script: this.value > 10`.
+* Use `this` operator for a component to refer to itself in a rule expression. Es wird sichergestellt, dass die Regel gültig bleibt, selbst wenn sich der Komponentenname ändert. Beispiel: `field1.valueCommit script: this.value > 10`. 
 
-* Verwenden Sie Komponentennamen, wenn Sie auf verschiedene Formularkomponenten verweisen. Use the `value` property to fetch the value of a field or component. Beispiel, `field1.value`.
+* Verwenden Sie Komponentennamen, wenn Sie auf verschiedene Formularkomponenten verweisen. Use the `value` property to fetch the value of a field or component. Beispiel: `field1.value`. 
 
-* Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel, `parentName.fieldName`.
+* Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel: `parentName.fieldName`. 
 
 * Wenn Sie komplexe oder häufig verwendete Regeln bearbeiten, sollten Sie die Geschäftslogik als Funktionen in einer separaten Client-Bibliothek schreiben, die Sie für adaptive Formulare angeben und wiederverwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. You can also use the client library to enforce [server-side revalidation](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) of submitted form data.
 * Adaptive Formulare bieten eine Reihe von APIs, die Sie verwenden können, um zu kommunizieren und Aktionen auf adaptiven Formularen anzuzeigen. Einige Schlüssel-APIs lauten wie folgt: Weitere Informationen finden Sie unter[ JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://adobe.com/go/learn_aemforms_documentation_63).
@@ -176,7 +176,7 @@ For more information, see [Prefill adaptive form fields](/help/forms/using/prepo
 
 ### Adaptive Formulare signieren und senden {#signing-and-submitting-adaptive-forms}
 
-Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe, die für die Daten ausgeführt wird, die Sie mit einem adaptiven Formular senden.
+Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe der Daten, die Sie mit einem adaptiven Formular senden.
 
 * Es gibt mehrere Sendeaktionen, die in adaptiven Formularen sofort verfügbar sind. For details, see [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md).
 * Sie können eine benutzerdefinierte Sendeaktion schreiben, wenn die standardmäßigen Sendeaktionen Ihren Anwendungsfall nicht erfüllen. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
@@ -240,12 +240,12 @@ AEM bietet Übersetzungsarbeitsläufe, die Sie zur Lokalisierung adaptiver Formu
 Einige empfohlene Vorgehensweisen beim Lokalisieren adaptiver Formulare lauten wie folgt:
 
 * Verwenden Sie adaptive Formularfragmente für allgemeine Elemente in Formularen und lokalisieren Sie Fragmente. Das stellt sicher, dass Sie ein Fragment einmal lokalisieren und es wird in allen Formularen reflektiert, in denen das Fragment verwendet wird.
-* Alle Modifizierungen wie das Hinzufügen einer neuen Komponente oder das Anwenden eines Skripts in einem lokalisierten Formular, werden nicht automatisch lokalisiert. Daher müssen Sie ein Formular vor der Lokalisierung fertigstellen, um mehrere Lokalisierungszyklen zu vermeiden.
+* Alle Modifizierungen wie das Hinzufügen einer neuen Komponente oder das Anwenden eines Skripts in einem lokalisierten Formular, werden nicht automatisch lokalisiert. Daher müssen Sie ein Formular vor der Lokalisierung fertigstellen, um mehrere lokale Anpassungen zu vermeiden.
 * Verwenden Sie den Anforderungsparameter `afAcceptLang` , , um das Browsergebietsschemazu überschreiben und das Formular in einem spezifischen Gebietsschema zu lokalisieren. Beispielsweise erzwingt die folgende URL die Wiedergabe des Formulars im japanischen Gebietsschema, unabhängig vom in der Browsereinstellung angegebenen Gebietsschema:
 
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms unterstützt derzeit die Lokalisierung von Inhalten adaptiver Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können jedoch neuen Support für neue Gebietsschemata für adaptive Formulare zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen](/help/forms/using/supporting-new-language-localization.md).
+* AEM Forms unterstützt derzeit die lokale Anpassung von Inhalten für adaptive Formulare in den Gebietsschemata Englisch (en), Spanisch (es), Französisch (fr), Italienisch (es), Deutsch (de), Japanisch (ja), Portugiesisch-Brasilianisch (pt-BR), Chinesisch (zh-CN), Chinesisch-Taiwan (zh-TW) und Koreanisch (ko-KR). Sie können jedoch neuen Support für neue Gebietsschemata für adaptive Formulare zur Laufzeit hinzufügen. Weitere Informationen finden Sie unter [Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen](/help/forms/using/supporting-new-language-localization.md).
 
 ## Vorbereiten von Formularprojekten für die Produktion {#prepare-forms-project-for-production}
 
