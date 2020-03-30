@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,9 +33,9 @@ Um sich als Administrator anmelden zu können, muss Ihnen die Rolle „Administr
 
 Zum Anmelden bei den Webseiten über einen Browser benötigen Sie die Document Security-URL sowie ein Konto. Die URL für Benutzer unterscheidet sich von der für Administratoren. Administratoren können sich auch an den Benutzerseiten anmelden, um Richtlinien zu erstellen.
 
-Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. The default URL for the user pages is https://*[host]*:*[port]*/edc. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
+Wenn Sie Zugriff auf mehrere Document Security-Installationen haben, benötigen Sie die URL der Instanz von Document Security, auf die Sie zugreifen möchten. Befragen Sie den Administrator, sollten Sie diese Informationen nicht haben. The default URL for the user pages is `https://[host]:[port]/edc`. In einigen Fällen ist die Anschlussnummer möglicherweise nicht erforderlich. Fragen Sie Ihren Administrator nach Details.
 
-The default URL for administrators is https://*[host]*:*[port]*/adminui.
+Die Standard-URL für Administratoren ist `https://[host]:[port]/adminui`.
 
 Für Administratoren wird ein standardmäßiges Superadministratorkonto während der Installation angelegt. Sie können sich mit diesem Konto anmelden, nachdem Document Security erstmals installiert wurde.
 
@@ -45,9 +45,9 @@ Für Administratoren wird ein standardmäßiges Superadministratorkonto während
 
 1. Geben Sie die URL in den Browser ein.
 
-   Document security URL: `https://`*[host ]*`:`*[port]* `/edc`
+   Dokument-Sicherheits-URL: `https://[host]:[port]/edc`
 
-   or Administration Console URL: `https://`*[host ]*`:`*[port]* `/adminui`
+   oder URL der Administrationskonsole: `https://[host]:[port]/adminui`
 
 1. Geben Sie im Anmeldefenster Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf „OK“.
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“.
