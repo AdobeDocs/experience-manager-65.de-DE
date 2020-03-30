@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -70,169 +70,169 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 ### Einstellungen für Standard-E-Mail-Endpunkte {#default-email-endpoint-settings}
 
-**** Cron-Ausdruck: Der Cron-Ausdruck, wie er von Quarz zum Planen der Abfrage des Eingabeordners verwendet wird.
+**Cron-Ausdruck:** Der Cron-Ausdruck, der von Quarz verwendet wird, um die Abfrage des Eingabeordners zu planen.
 
-**** Wiederholungsintervall: Die Häufigkeit, mit der die Ordnerabfrage wiederholt wird. Der Standardwert für das Wiederholungsintervall in Sekunden, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Der Standardwert ist 10. Dieser Wert kann nicht kleiner als „10“ sein.
+**Wiederholungsintervall:** Die Häufigkeit, mit der die Ordnerabfrage wiederholt wird. Der Standardwert für das Wiederholungsintervall in Sekunden, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Der Standardwert ist 10. Dieser Wert kann nicht kleiner als „10“ sein.
 
-**** Wiederholungszahl: Die Häufigkeit, mit der der Eingabeordner abgerufen wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet uneingeschränktes Überprüfen des Ordners („unendlich“). Der Standardwert ist -1.
+**Wiederholungszahl:** Die Häufigkeit, mit der der Eingabeordner abgerufen wird. Der Standardwert für die Anzahl der Wiederholungen, der verwendet wird, wenn in der Endpunktkonfiguration kein Wert angegeben ist. Ein Wert von „-1“ bedeutet uneingeschränktes Überprüfen des Ordners („unendlich“). Der Standardwert ist -1.
 
-**** Verzögerung beim Starten des Auftrags: Der Standardwert in Sekunden für die Verzögerung, bevor der Auftrag beginnt, den Endpunkt zu prüfen. Der Standardwert ist 0.
+**Verzögern Sie den Beginn des Auftrags:** Der Standardwert in Sekunden für die Verzögerung vor dem Beginn des Auftrags, um den Endpunkt zu prüfen. Der Standardwert ist 0.
 
-**** Stapelgröße: Die Anzahl der E-Mails, die der Empfänger pro Scan verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Scan verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
 
-**** Asynchron: Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert ist „asynchron“.
+**Asynchron:** Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert ist „asynchron“.
 
-**** Domänenmuster: Das Domänennamenmuster, das zum Filtern eingehender E-Mails verwendet wird. Wenn beispielsweise adobe.com verwendet wird, werden nur E-Mails aus der Domäne „adobe.com“ verarbeitet, während E-Mails aus anderen Domänen ignoriert werden.
+**Domänenmuster:** Das Domänennamenmuster, das zum Filtern eingehender E-Mails verwendet wird. Wenn beispielsweise adobe.com verwendet wird, werden nur E-Mails aus der Domäne „adobe.com“ verarbeitet, während E-Mails aus anderen Domänen ignoriert werden.
 
-**** Dateimuster: Die Muster für eingehende Dateianhänge, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), bestimmten Namen (Daten) und zusammengesetzten Ausdrücken im Namen und in der Erweiterung (.[dD][aA][Tt]). Der Standardwert ist &amp;ast;.&amp;ast;.
+**Dateimuster:** Die Muster für eingehende Dateianhänge, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), bestimmten Ausdrücken (Daten) und Composite-Dateien mit Namen und Erweiterung (.[d][aA]&#39;port&#39;). Der Standardwert ist &amp;ast;.&amp;ast;.
 
-**** Empfänger erfolgreicher Aufträge: Eine oder mehrere E-Mail-Adressen, an die E-Mails gesendet werden, um erfolgreiche Aufträge anzuzeigen. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender des Ausgangsauftrags gesendet. Es werden bis zu 100 Empfänger unterstützt. Zum Deaktivieren dieser Einstellung lassen Sie das Feld unausgefüllt.
+**Empfänger des erfolgreichen Auftrags:** Eine oder mehrere E-Mail-Adressen, an die E-Mails gesendet werden, um erfolgreiche Aufträge anzuzeigen. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender des Ausgangsauftrags gesendet. Es werden bis zu 100 Empfänger unterstützt. Zum Deaktivieren dieser Einstellung lassen Sie das Feld unausgefüllt.
 
-**** Empfänger von fehlgeschlagenen Aufträgen: Eine oder mehrere E-Mail-Adressen, an die E-Mails gesendet werden, um fehlgeschlagene Aufträge anzuzeigen. Standardmäßig wird eine Benachrichtigung über fehlgeschlagene Aufträge immer an den Absender des Ausgangsauftrags gesendet. Es werden bis zu 100 Empfänger unterstützt. Zum Deaktivieren dieser Einstellung lassen Sie das Feld unausgefüllt.
+**Empfänger des fehlgeschlagenen Auftrags:** Eine oder mehrere E-Mail-Adressen, an die E-Mails gesendet werden, um fehlgeschlagene Aufträge anzuzeigen. Standardmäßig wird eine Benachrichtigung über fehlgeschlagene Aufträge immer an den Absender des Ausgangsauftrags gesendet. Es werden bis zu 100 Empfänger unterstützt. Zum Deaktivieren dieser Einstellung lassen Sie das Feld unausgefüllt.
 
-**** Posteingangshost: Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
+**Posteingangshost:** Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
 
-**** Posteingangsanschluss: Die Anschlussnummer des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll. Wenn der Wert 0 ist, wird der IMAP- oder POP3-Standardanschluss verwendet.
+**Posteingangsanschluss:** Die Anschlussnummer des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll. Wenn der Wert 0 ist, wird der IMAP- oder POP3-Standardanschluss verwendet.
 
-**** Posteingangsprotokoll: Das E-Mail-Protokoll für den E-Mail-Endpunkt, der zum Überprüfen des Posteingangs verwendet wird. Die Optionen sind IMAP und POP3. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
+**Posteingangsprotokoll:** Das E-Mail-Protokoll für den E-Mail-Endpunkt, der zum Überprüfen des Posteingangs verwendet wird. Die Optionen sind IMAP und POP3. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
 
-**** Zeitlimit für Posteingang: Gibt an, wie lange der Endpunkt beim Versuch, eine Verbindung zum Posteingang herzustellen, wartet, bevor er abbricht. Wenn vor Erreichen des Zeitlimitwertes keine Verbindung hergestellt werden konnte, wird der Posteingang nicht abgefragt.
+**Zeitlimit für Posteingang:** Gibt an, wie lange der Endpunkt beim Versuch, eine Verbindung zum Posteingang herzustellen, wartet, bevor er abbricht. Wenn vor Erreichen des Zeitlimitwertes keine Verbindung hergestellt werden konnte, wird der Posteingang nicht abgefragt.
 
-**** Posteingangsbenutzer: Der Benutzername, der zum Anmelden beim E-Mail-Konto erforderlich ist. In Abhängigkeit vom E-Mail-Server und der Konfiguration kann dies nur der Benutzernamenteil der E-Mail-Adresse oder die vollständige E-Mail-Adresse sein.
+**Posteingangsbenutzer:** Der Benutzername, der zum Anmelden beim E-Mail-Konto erforderlich ist. In Abhängigkeit vom E-Mail-Server und der Konfiguration kann dies nur der Benutzernamenteil der E-Mail-Adresse oder die vollständige E-Mail-Adresse sein.
 
-**** Posteingangskennwort: Das Kennwort für den Posteingangsbenutzer.
+**Posteingangskennwort:** Das Kennwort für den Posteingangsbenutzer.
 
-**** SSL für POP3/IMAP aktiviert: Wenn diese Option aktiviert ist, wird SSL aktiviert.
+**SSL für POP3/IMAP aktiviert:** Wenn diese Option aktiviert ist, wird SSL aktiviert.
 
-**** SMTP-Host: Der Hostname des E-Mail-Servers, mit dem der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet. Zum Beispiel mail.corp.example.com.
+**SMTP-Host:** Der Hostname des E-Mail-Servers, mit dem der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet. Zum Beispiel mail.corp.example.com.
 
-**** SMTP-Anschluss: Der Anschluss, über den eine Verbindung zum E-Mail-Server hergestellt wird. Der Standardwert ist 25.
+**SMTP-Anschluss:** Der Anschluss, über den eine Verbindung zum E-Mail-Server hergestellt wird. Der Standardwert ist 25.
 
-**** SMTP-Benutzer: Das Benutzerkonto, das vom E-Mail-Anbieter verwendet werden soll, wenn E-Mail-Nachrichten zu Ergebnissen und Fehlern gesendet werden.
+**SMTP-Benutzer:** Das Benutzerkonto, das vom E-Mail-Anbieter verwendet werden soll, wenn E-Mail-Nachrichten zu Ergebnissen und Fehlern gesendet werden.
 
-**** SMTP-Kennwort: Das Kennwort für das SMTP-Konto. Einige E-Mail-Server benötigen kein SMTP-Kennwort.
+**SMTP-Kennwort:** Das Kennwort für das SMTP-Konto. Einige E-Mail-Server benötigen kein SMTP-Kennwort.
 
-**** Senden von: Die E-Mail-Adresse (z. B. user@company.com), an die E-Mail-Benachrichtigungen zu Ergebnissen und Fehlern gesendet werden. Wenn Sie keinen Wert für „Senden von“ angeben, versucht der E-Mail-Server, die E-Mail-Adresse zu ermitteln, indem der für die Einstellung „SMTP-Benutzer“ festgelegte Wert mit einer auf dem E-Mail-Server konfigurierten Standarddomäne kombiniert wird. Wenn auf dem E-Mail-Server keine Standarddomäne konfiguriert ist und Sie keinen Wert für „Senden von“ angeben, können Fehler auftreten. Geben Sie daher einen Wert für die Einstellung „Senden von“ an, um sicherzustellen, dass die E-Mail-Nachrichten eine korrekte von-Adresse aufweisen.
+**Senden von:** Die E-Mail-Adresse (z. B. user@company.com), an die E-Mail-Benachrichtigungen zu Ergebnissen und Fehlern gesendet werden. Wenn Sie keinen Wert für „Senden von“ angeben, versucht der E-Mail-Server, die E-Mail-Adresse zu ermitteln, indem der für die Einstellung „SMTP-Benutzer“ festgelegte Wert mit einer auf dem E-Mail-Server konfigurierten Standarddomäne kombiniert wird. Wenn auf dem E-Mail-Server keine Standarddomäne konfiguriert ist und Sie keinen Wert für „Senden von“ angeben, können Fehler auftreten. Geben Sie daher einen Wert für die Einstellung „Senden von“ an, um sicherzustellen, dass die E-Mail-Nachrichten eine korrekte von-Adresse aufweisen.
 
-**** SSL für SMTP aktiviert: Wenn diese Option aktiviert ist, wird SSL über SMTP aktiviert.
+**SSL für SMTP aktiviert:** Wenn diese Option aktiviert ist, wird SSL über SMTP aktiviert.
 
-**** Include the Original Email Body As An Attachment: Wenn Sie eine E-Mail an den Formularserver senden, wird standardmäßig der Originaltext der Nachricht im Nachrichtentext eingefügt. Um den Text stattdessen als Anhang einzufügen, wählen Sie diese Option.
+**Include the Original Email Body As An Attachment:** Wenn Sie eine E-Mail an den Formularserver senden, wird standardmäßig der Originaltext der Nachricht im Nachrichtentext eingefügt. Um den Text stattdessen als Anhang einzufügen, wählen Sie diese Option.
 
-**** Verwenden Sie die ursprüngliche Betreff-Zeile für Ergebnis-E-Mails: Standardmäßig verwendet der Forms-Server beim Senden von Ergebnis-E-Mail-Nachrichten die in den Einstellungen für Success Email Subject und Error Email Subject angegebenen Werte als Betreffzeile. Wenn Sie stattdessen dieselbe Betreffzeile wie in der ursprünglichen E-Mail, die an den Server gesendet wurde, verwenden möchten, wählen Sie diese Option.
+**Verwenden Sie die ursprüngliche Betreff-Zeile für Ergebnis-E-Mails:** Standardmäßig verwendet der Forms-Server beim Senden von Ergebnis-E-Mail-Nachrichten die in den Einstellungen für Success Email Subject und Error Email Subject angegebenen Werte als Betreffzeile. Wenn Sie stattdessen dieselbe Betreffzeile wie in der ursprünglichen E-Mail, die an den Server gesendet wurde, verwenden möchten, wählen Sie diese Option.
 
-**** Success Email Subject: Nachdem Sie eine E-Mail an einen E-Mail-Endpunkt gesendet haben, um einen Prozess zu starten oder fortzusetzen, erhalten Sie vom AEM Forms-Server eine E-Mail-Rücksendung. Wenn Ihre E-Mail erfolgreich gesendet wird, erhalten Sie eine Erfolgs-E-Mail. Wenn das Senden Ihrer E-Mail fehlschlägt, erhalten Sie eine Fehler-E-Mail, die Sie über den Fehler informiert. Mit dieser Einstellung können Sie die Betreffzeile von Erfolgs-E-Mails, die an diesen Endpunkt gesendet werden, angeben.
+**Success Email Subject:** Nachdem Sie eine E-Mail an einen E-Mail-Endpunkt an den Beginn gesendet oder einen Vorgang fortgesetzt haben, erhalten Sie vom AEM Forms-Server eine E-Mail-Rücksendung. Wenn Ihre E-Mail erfolgreich gesendet wird, erhalten Sie eine Erfolgs-E-Mail. Wenn das Senden Ihrer E-Mail fehlschlägt, erhalten Sie eine Fehler-E-Mail, die Sie über den Fehler informiert. Mit dieser Einstellung können Sie die Betreffzeile von Erfolgs-E-Mails, die an diesen Endpunkt gesendet werden, angeben.
 
-**** Success Email Body: Hiermit können Sie den Haupttext der Erfolgs-E-Mail-Nachrichten angeben, die an diesen Endpunkt gesendet werden.
+**Success Email Body:** Hiermit können Sie den Haupttext der Erfolgs-E-Mail-Nachrichten angeben, die an diesen Endpunkt gesendet werden.
 
-**** Error Email Subject Prefix: Ermöglicht die Angabe des Textes, der am Anfang der Betreffzeile der für diesen Endpunkt gesendeten Fehlermeldungen verwendet wird.
+**Error Email Subject Prefix:** Ermöglicht die Angabe des Textes, der am Anfang der Betreffzeile der für diesen Endpunkt gesendeten Fehlermeldungen verwendet wird.
 
-**** Error Email Subject: Ermöglicht die Angabe der Betreffzeile der für diesen Endpunkt gesendeten E-Mail-Fehlermeldungen. Dieser Text wird nach dem Präfix des Fehler-E-Mail-Betreffs angezeigt.
+**Fehler-E-Mail-Betreff:** Ermöglicht die Angabe der Betreffzeile von E-Mail-Fehlermeldungen, die an diesen Endpunkt gesendet werden. Dieser Text wird nach dem Präfix des Fehler-E-Mail-Betreffs angezeigt.
 
-**** Fehler-E-Mail-Textkörper: Ermöglicht die Angabe der ersten Zeile im Textkörper der für diesen Endpunkt gesendeten Fehler-E-Mail-Nachrichten.
+**Fehler-E-Mail-Textkörper:** Ermöglicht die Angabe der ersten Zeile im Textkörper der für diesen Endpunkt gesendeten Fehler-E-Mail-Nachrichten.
 
-**** Info zur E-Mail-Zusammenfassung: Jede Erfolgs- oder Fehlermeldung enthält einen Abschnitt mit dem ursprünglichen E-Mail-Text, den Sie an den Formularserver gesendet haben. Diese Einstellung legt den Text fest, der oberhalb dieses Abschnitts angezeigt wird.
+**Info zur E-Mail-Zusammenfassung:** Jede Erfolgs- oder Fehlermeldung enthält einen Abschnitt mit dem ursprünglichen E-Mail-Text, den Sie an den Formularserver gesendet haben. Diese Einstellung legt den Text fest, der oberhalb dieses Abschnitts angezeigt wird.
 
-**** Validieren des Posteingangs vor dem Erstellen/Aktualisieren dieses Endpunkts: Wenn diese Option aktiviert ist, prüft der Formularserver, ob Ihre SMTP/POP3-Einstellungen korrekt sind, bevor der Endpunkt erstellt wird. Wenn Sie auf „Hinzufügen“ klicken, wird angezeigt, ob das Posteingangskonto gültig ist. Wenn diese Option nicht ausgewählt ist, erstellt der AEM Forms-Server den Endpunkt, ohne den Posteingang zu überprüfen.
+**Validieren des Posteingangs vor dem Erstellen/Aktualisieren dieses Endpunkts:** Wenn diese Option aktiviert ist, prüft der Formularserver, ob Ihre SMTP/POP3-Einstellungen korrekt sind, bevor der Endpunkt erstellt wird. Wenn Sie auf „Hinzufügen“ klicken, wird angezeigt, ob das Posteingangskonto gültig ist. Wenn diese Option nicht ausgewählt ist, erstellt der AEM Forms-Server den Endpunkt, ohne den Posteingang zu überprüfen.
 
-**** Zeichensatzkodierung: Das für die E-Mail-Nachricht zu verwendende Kodierungsformat. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in japanischen Umgebungen wählen eher ISO2022-JP.
+**Zeichensatzkodierung:** Das für die E-Mail-Nachricht zu verwendende Kodierungsformat. Der Standardwert ist UTF-8, der von den meisten Benutzern außerhalb von Japan benutzt wird. Benutzer in japanischen Umgebungen wählen eher ISO2022-JP.
 
-**** Fehler beim Senden der E-Mail: Gibt einen Ordner an, in dem Ergebnisse gespeichert werden, wenn der SMTP-Mail-Server nicht betriebsbereit ist.
+**Fehler beim Senden der E-Mail:** Gibt einen Ordner an, in dem Ergebnisse gespeichert werden, wenn der SMTP-Mail-Server nicht betriebsbereit ist.
 
 ## E-Mail-Endpunkteinstellungen {#email-endpoint-settings}
 
 Mithilfe der folgenden Einstellungen können Sie einen E-Mail-Endpunkt konfigurieren.
 
-**** Name: Eine obligatorische Einstellung, die den Endpunkt identifiziert. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
+**Name:** Eine obligatorische Einstellung, die den Endpunkt identifiziert. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
 
-**** Beschreibung: Eine Beschreibung des Endpunkts. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
+**Beschreibung:** Eine Beschreibung des Endpunkts. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
 
-**** Cron-Ausdruck: Geben Sie einen Cron-Ausdruck ein, wenn die E-Mail mit einem Cron-Ausdruck geplant werden muss.
+**Cron-Ausdruck:** Geben Sie einen Cron-Ausdruck ein, wenn die E-Mail mithilfe eines Cron-Ausdrucks geplant werden muss.
 
-**** Wiederholungszahl: Gibt an, wie oft der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
+**Wiederholungszahl:** Gibt an, wie oft der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
 
-**** Wiederholungsintervall: Die Scanrate, mit der der Empfänger nach eingehenden Nachrichten sucht.
+**Wiederholungsintervall:** Die Scanrate, mit der der Empfänger auf eingehende E-Mails prüft.
 
-**** Verzögerung beim Starten des Auftrags: Die Wartezeit bis zum Scan nach dem Start des Schedulers.
+**Verzögern Sie den Beginn des Auftrags:** Die Wartezeit bis zum Scannen nach den Beginn der Planung.
 
-**** Stapelgröße: Die Anzahl der E-Mails, die der Empfänger pro Scan verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+**Stapelgröße:** Die Anzahl der E-Mails, die der Empfänger pro Scan verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
 
-**** Benutzername: Eine obligatorische Einstellung, bei der es sich um den Benutzernamen handelt, der beim Aufrufen eines Zieldienstes aus E-Mail verwendet wird. Der Standardwert ist „SuperAdmin“.
+**Benutzername:** Eine obligatorische Einstellung, bei der es sich um den Benutzernamen handelt, der beim Aufrufen eines E-Mail-Zielgruppe-Dienstes verwendet wird. Der Standardwert ist „SuperAdmin“.
 
-**** Domänenname: Eine obligatorische Einstellung, bei der es sich um die Domäne des Benutzers handelt. Der Standardwert ist „DefaultDom“.
+**Domänenname:** Eine obligatorische Einstellung, bei der es sich um die Domäne des Benutzers handelt. Der Standardwert ist „DefaultDom“.
 
-**** Domänenmuster: Gibt die Domänenmuster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „adobe.com“ verwendet wird, werden nur E-Mails aus der Domäne „adobe.com“ verarbeitet, während E-Mails aus anderen Domänen ignoriert werden.
+**Domänenmuster:** Gibt die Domänenmuster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „adobe.com“ verwendet wird, werden nur E-Mails aus der Domäne „adobe.com“ verarbeitet, während E-Mails aus anderen Domänen ignoriert werden.
 
-**** Dateimuster: Gibt die Muster für eingehende Dateianlagen an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), bestimmten Namen (Daten) oder zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&amp;ast;..[dD][aA][Tt]).
+**Dateimuster:** Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), bestimmten Ausdrücken (Daten) oder zusammengesetzten Namen in Name und Erweiterung (&amp;ast;..[d][aA]&#39;port&#39;).
 
-**** Empfänger erfolgreicher Aufträge: Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie sender eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit durch Kommas (,) getrennte E-Mail-Adressen an.
-
-Zum Deaktivieren dieser Einstellung lassen Sie sie unausgefüllt. Es kann Fälle geben, in denen Sie einen Prozess auslösen möchten, ohne ein Benachrichtigung per E-Mail zum Ergebnis erhalten zu wollen.
-
-**** Empfänger von fehlgeschlagenen Aufträgen: Eine E-Mail-Adresse, an die Benachrichtigungen über fehlgeschlagene Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über Aufträge mit Fehlern immer an den Absender gesendet. Wenn Sie sender eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit durch Kommas (,) getrennte E-Mail-Adressen an.
+**Empfänger des erfolgreichen Auftrags:** Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie sender eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit durch Kommas (,) getrennte E-Mail-Adressen an.
 
 Zum Deaktivieren dieser Einstellung lassen Sie sie unausgefüllt. Es kann Fälle geben, in denen Sie einen Prozess auslösen möchten, ohne ein Benachrichtigung per E-Mail zum Ergebnis erhalten zu wollen.
 
-**** Posteingangshost: Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
+**Empfänger des fehlgeschlagenen Auftrags:** Eine E-Mail-Adresse, an die Benachrichtigungen über fehlgeschlagene Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über Aufträge mit Fehlern immer an den Absender gesendet. Wenn Sie sender eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit durch Kommas (,) getrennte E-Mail-Adressen an.
 
-**** Posteingangsanschluss: Der Anschluss, den der E-Mail-Server verwendet. Der Standardwert ist für POP3 „110“ und für IMAP „143“. Ist SSL aktiviert, ist der Standardwert für POP3 „995“ und für IMAP „993“.
+Zum Deaktivieren dieser Einstellung lassen Sie sie unausgefüllt. Es kann Fälle geben, in denen Sie einen Prozess auslösen möchten, ohne ein Benachrichtigung per E-Mail zum Ergebnis erhalten zu wollen.
 
-**** Posteingangsprotokoll: Das E-Mail-Protokoll für den E-Mail-Endpunkt, der zum Überprüfen des Posteingangs verwendet wird. Die Werte sind IMAP und POP3. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
+**Posteingangshost:** Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
 
-**** Zeitlimit für Posteingang: Das Zeitlimit in Sekunden, das der E-Mail-Anbieter auf Posteingangsantworten wartet.
+**Posteingangsanschluss:** Der Anschluss, den der E-Mail-Server verwendet. Der Standardwert ist für POP3 „110“ und für IMAP „143“. Ist SSL aktiviert, ist der Standardwert für POP3 „995“ und für IMAP „993“.
 
-**** Posteingangsbenutzer: Der Benutzername, der zum Anmelden beim E-Mail-Konto erforderlich ist. In Abhängigkeit vom E-Mail-Server und der Konfiguration kann dies nur der Benutzernamenteil der E-Mail-Adresse oder die vollständige E-Mail-Adresse sein.
+**Posteingangsprotokoll:** Das E-Mail-Protokoll für den E-Mail-Endpunkt, der zum Überprüfen des Posteingangs verwendet wird. Die Werte sind IMAP und POP3. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
 
-**** Posteingangskennwort: Das Kennwort für den Posteingangsbenutzer.
+**Zeitlimit für Posteingang:** Das Zeitlimit in Sekunden, das der E-Mail-Anbieter auf Posteingangsantworten wartet.
 
-**** SSL für POP3/IMAP aktiviert: Wählen Sie diese Einstellung, um den E-Mail-Anbieter zu zwingen, SSL zum Überprüfen des Posteingangs zu verwenden. Vergewissern Sie sich, dass Ihr E-Mail-Server SSL unterstützt.
+**Posteingangsbenutzer:** Der Benutzername, der zum Anmelden beim E-Mail-Konto erforderlich ist. In Abhängigkeit vom E-Mail-Server und der Konfiguration kann dies nur der Benutzernamenteil der E-Mail-Adresse oder die vollständige E-Mail-Adresse sein.
 
-**** SMTP-Host: Der Hostname des E-Mail-Servers, mit dem der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet.
+**Posteingangskennwort:** Das Kennwort für den Posteingangsbenutzer.
 
-**** SMTP-Anschluss: Der Standardwert für den SMTP-Anschluss ist 25.
+**SSL für POP3/IMAP aktiviert:** Wählen Sie diese Einstellung, um den E-Mail-Anbieter zu zwingen, SSL zum Überprüfen des Posteingangs zu verwenden. Vergewissern Sie sich, dass Ihr E-Mail-Server SSL unterstützt.
 
-**** SMTP-Benutzer: Das Benutzerkonto, das vom E-Mail-Anbieter verwendet werden soll, wenn E-Mail-Benachrichtigungen zu Ergebnissen und Fehlern gesendet werden.
+**SMTP-Host:** Der Hostname des E-Mail-Servers, mit dem der E-Mail-Anbieter Ergebnisse und Fehlermeldungen sendet.
 
-**** SMTP-Kennwort: Das Kennwort für das SMTP-Konto. Einige E-Mail-Server benötigen kein SMTP-Kennwort.
+**SMTP-Anschluss:** Der Standardwert für den SMTP-Anschluss ist 25.
 
-**** Senden von: Die E-Mail-Adresse (z. B. user@company.com), an die E-Mail-Benachrichtigungen zu Ergebnissen und Fehlern gesendet werden. Wenn Sie keinen Wert für „Senden von“ angeben, versucht der E-Mail-Server, die E-Mail-Adresse zu ermitteln, indem der für die Einstellung „SMTP-Benutzer“ festgelegte Wert mit einer auf dem E-Mail-Server konfigurierten Standarddomäne kombiniert wird. Wenn auf dem E-Mail-Server keine Standarddomäne konfiguriert ist und Sie keinen Wert für „Senden von“ angeben, können Fehler auftreten. Geben Sie daher einen Wert für die Einstellung „Senden von“ an, um sicherzustellen, dass die E-Mail-Nachrichten eine korrekte von-Adresse aufweisen.
+**SMTP-Benutzer:** Das Benutzerkonto, das vom E-Mail-Anbieter verwendet werden soll, wenn E-Mail-Benachrichtigungen zu Ergebnissen und Fehlern gesendet werden.
 
-**** SSL für SMTP aktiviert: Wählen Sie diese Einstellung, um den E-Mail-Anbieter zu zwingen, SSL zum Überprüfen des Posteingangs zu verwenden. Vergewissern Sie sich, dass Ihr E-Mail-Server SSL unterstützt.
+**SMTP-Kennwort:** Das Kennwort für das SMTP-Konto. Einige E-Mail-Server benötigen kein SMTP-Kennwort.
 
-**** Fehler beim Senden der E-Mail: Gibt einen Ordner an, in dem Ergebnisse gespeichert werden, wenn der SMTP-Mail-Server nicht betriebsbereit ist.
+**Senden von:** Die E-Mail-Adresse (z. B. user@company.com), an die E-Mail-Benachrichtigungen zu Ergebnissen und Fehlern gesendet werden. Wenn Sie keinen Wert für „Senden von“ angeben, versucht der E-Mail-Server, die E-Mail-Adresse zu ermitteln, indem der für die Einstellung „SMTP-Benutzer“ festgelegte Wert mit einer auf dem E-Mail-Server konfigurierten Standarddomäne kombiniert wird. Wenn auf dem E-Mail-Server keine Standarddomäne konfiguriert ist und Sie keinen Wert für „Senden von“ angeben, können Fehler auftreten. Geben Sie daher einen Wert für die Einstellung „Senden von“ an, um sicherzustellen, dass die E-Mail-Nachrichten eine korrekte von-Adresse aufweisen.
 
-**** asynchron: Wenn &quot;synchron&quot;festgelegt ist, werden alle Eingabedokumente verarbeitet und eine einzige Antwort zurückgegeben. Bei Festlegung auf „asynchron“ wird für jedes verarbeitete Dokument eine Antwort gesendet.
+**SSL für SMTP aktiviert:** Wählen Sie diese Einstellung, um den E-Mail-Anbieter zu zwingen, SSL zum Überprüfen des Posteingangs zu verwenden. Vergewissern Sie sich, dass Ihr E-Mail-Server SSL unterstützt.
+
+**Fehler beim Senden der E-Mail:** Gibt einen Ordner an, in dem Ergebnisse gespeichert werden, wenn der SMTP-Mail-Server nicht betriebsbereit ist.
+
+**asynchron:** Wenn &quot;synchron&quot;festgelegt ist, werden alle Eingabedateien verarbeitet und eine einzige Antwort zurückgegeben. Bei Festlegung auf „asynchron“ wird für jedes verarbeitete Dokument eine Antwort gesendet.
 
 Beispielsweise wird für einen Dienst ein E-Mail-Endpunkt erstellt, der ein einzelnes Word-Dokument akzeptiert und das Dokument als PDF-Datei zurückgibt. An den Posteingang des Endpunktes kann eine E-Mail gesendet werden, die mehrere (3) Word-Dokumente enthält. Wenn nach der Verarbeitung aller drei Dokumente der Endpunkt als „synchron“ konfiguriert wird, wird eine E-Mail-Antwort mit allen drei Dokumenten als Anlage gesendet. Ist der Endpunkt aber „asynchron“, wird nach der Konvertierung jedes Word-Dokuments in PDF eine E-Mail-Antwort gesendet. Das heißt also, dass drei E-Mails mit jeweils einem einzelnen PDF-Anhang gesendet werden.
 
 Der Standardwert ist „asynchron“.
 
-**** Fügen Sie den ursprünglichen E-Mail-Textkörper als Anlage hinzu: Wenn Sie eine E-Mail an den Formularserver senden, wird standardmäßig der Originaltext der Nachricht im Nachrichtentext eingefügt. Um den Text stattdessen als Anhang einzufügen, wählen Sie diese Option.
+**Fügen Sie den ursprünglichen E-Mail-Textkörper als Anlage hinzu:** Wenn Sie eine E-Mail an den Formularserver senden, wird standardmäßig der Originaltext der Nachricht im Nachrichtentext eingefügt. Um den Text stattdessen als Anhang einzufügen, wählen Sie diese Option.
 
-**** Verwenden Sie die ursprüngliche Betreffzeile für Ergebnis-E-Mails: Standardmäßig verwendet der Forms-Server beim Senden von Ergebnis-E-Mail-Nachrichten die in den Einstellungen für Success Email Subject und Error Email Subject angegebenen Werte als Betreffzeile. Wenn Sie stattdessen dieselbe Betreffzeile wie in der ursprünglichen E-Mail, die an den Server gesendet wurde, verwenden möchten, wählen Sie diese Option.
+**Verwenden Sie die ursprüngliche Betreffzeile für Ergebnis-E-Mails:** Standardmäßig verwendet der Forms-Server beim Senden von Ergebnis-E-Mail-Nachrichten die in den Einstellungen für Success Email Subject und Error Email Subject angegebenen Werte als Betreffzeile. Wenn Sie stattdessen dieselbe Betreffzeile wie in der ursprünglichen E-Mail, die an den Server gesendet wurde, verwenden möchten, wählen Sie diese Option.
 
-**** Success Email Subject: Nachdem Sie eine E-Mail an einen E-Mail-Endpunkt gesendet haben, um einen Prozess zu starten oder fortzusetzen, erhalten Sie vom AEM Forms-Server eine E-Mail-Rücksendung. Wenn Ihre E-Mail erfolgreich gesendet wird, erhalten Sie eine Erfolgs-E-Mail. Wenn das Senden Ihrer E-Mail fehlschlägt, erhalten Sie eine Fehler-E-Mail, die Sie über den Fehler informiert. Mit dieser Einstellung können Sie die Betreffzeile von Erfolgs-E-Mails, die an diesen Endpunkt gesendet werden, angeben.
+**Success Email Subject:** Nachdem Sie eine E-Mail an einen E-Mail-Endpunkt an den Beginn gesendet oder einen Vorgang fortgesetzt haben, erhalten Sie vom AEM Forms-Server eine E-Mail-Rücksendung. Wenn Ihre E-Mail erfolgreich gesendet wird, erhalten Sie eine Erfolgs-E-Mail. Wenn das Senden Ihrer E-Mail fehlschlägt, erhalten Sie eine Fehler-E-Mail, die Sie über den Fehler informiert. Mit dieser Einstellung können Sie die Betreffzeile von Erfolgs-E-Mails, die an diesen Endpunkt gesendet werden, angeben.
 
-**** Success Email Body: Hiermit können Sie den Haupttext der Erfolgs-E-Mail-Nachrichten angeben, die an diesen Endpunkt gesendet werden.
+**Success Email Body:** Hiermit können Sie den Haupttext der Erfolgs-E-Mail-Nachrichten angeben, die an diesen Endpunkt gesendet werden.
 
-**** Error Email Subject Prefix: Ermöglicht die Angabe des Textes, der am Anfang der Betreffzeile der für diesen Endpunkt gesendeten Fehlermeldungen verwendet wird.
+**Error Email Subject Prefix:** Ermöglicht die Angabe des Textes, der am Anfang der Betreffzeile der für diesen Endpunkt gesendeten Fehlermeldungen verwendet wird.
 
-**** Error Email Subject: Ermöglicht die Angabe der Betreffzeile der für diesen Endpunkt gesendeten E-Mail-Fehlermeldungen. Dieser Text wird nach dem Präfix des Fehler-E-Mail-Betreffs angezeigt.
+**Fehler-E-Mail-Betreff:** Ermöglicht die Angabe der Betreffzeile von E-Mail-Fehlermeldungen, die an diesen Endpunkt gesendet werden. Dieser Text wird nach dem Präfix des Fehler-E-Mail-Betreffs angezeigt.
 
-**** Fehler-E-Mail-Textkörper: Ermöglicht die Angabe der ersten Zeile im Textkörper der für diesen Endpunkt gesendeten Fehler-E-Mail-Nachrichten.
+**Fehler-E-Mail-Textkörper:** Ermöglicht die Angabe der ersten Zeile im Textkörper der für diesen Endpunkt gesendeten Fehler-E-Mail-Nachrichten.
 
-**** Info zur E-Mail-Zusammenfassung: Jede Erfolgs- oder Fehlermeldung enthält einen Abschnitt mit dem ursprünglichen E-Mail-Text, den Sie an den Formularserver gesendet haben. Diese Einstellung legt den Text fest, der oberhalb dieses Abschnitts angezeigt wird.
+**Info zur E-Mail-Zusammenfassung:** Jede Erfolgs- oder Fehlermeldung enthält einen Abschnitt mit dem ursprünglichen E-Mail-Text, den Sie an den Formularserver gesendet haben. Diese Einstellung legt den Text fest, der oberhalb dieses Abschnitts angezeigt wird.
 
-**** Validieren Sie den Posteingang, bevor Sie diesen Endpunkt erstellen/aktualisieren: Wenn diese Option aktiviert ist, prüft der Formularserver, ob Ihre SMTP/POP3-Einstellungen korrekt sind, bevor der Endpunkt erstellt wird. Wenn Sie auf „Hinzufügen“ klicken, wird angezeigt, ob das Posteingangskonto gültig ist. Wenn diese Option nicht ausgewählt ist, erstellt der AEM Forms-Server den Endpunkt, ohne den Posteingang zu überprüfen.
+**Validieren Sie den Posteingang, bevor Sie diesen Endpunkt erstellen/aktualisieren:** Wenn diese Option aktiviert ist, prüft der Formularserver, ob Ihre SMTP/POP3-Einstellungen korrekt sind, bevor der Endpunkt erstellt wird. Wenn Sie auf „Hinzufügen“ klicken, wird angezeigt, ob das Posteingangskonto gültig ist. Wenn diese Option nicht ausgewählt ist, erstellt der AEM Forms-Server den Endpunkt, ohne den Posteingang zu überprüfen.
 
-**** Vorgangsname: Diese Einstellung ist obligatorisch. Eine Liste von Vorgängen, die dem E-Mail-Endpunkt zugewiesen werden können. Der Vorgang, den Sie hier auswählen, bestimmt, welche Felder in den Abschnitten „Zuordnungen von Eingabeparametern“ und „Zuordnungen von Ausgabeparametern“ angezeigt werden.
+**Vorgangsname:** Diese Einstellung ist obligatorisch. Eine Liste von Vorgängen, die dem E-Mail-Endpunkt zugewiesen werden können. Der Vorgang, den Sie hier auswählen, bestimmt, welche Felder in den Abschnitten „Zuordnungen von Eingabeparametern“ und „Zuordnungen von Ausgabeparametern“ angezeigt werden.
 
-**** Zuordnungen von Eingabeparametern: Dient zum Konfigurieren der Eingabe, die zur Verarbeitung des Dienstes und Vorgangs erforderlich ist. Die beiden Eingabetypen sind „Literal“ und „Variable“.
+**Zuordnungen von Eingabeparametern:** Dient zum Konfigurieren der Eingabe, die zur Verarbeitung des Dienstes und Vorgangs erforderlich ist. Die beiden Eingabetypen sind „Literal“ und „Variable“.
 
-**** Literal: Die E-Mail verwendet den Wert, der in das Feld eingegeben wird, wie er angezeigt wird.
+**Literal:** Die E-Mail verwendet den Wert, der in das Feld eingegeben wird, wie er angezeigt wird.
 
-**** Variable: Sie können eine Zeichenfolge aus dem E-Mail-Betreff, dem Text, der Kopfzeile oder der E-Mail-Adresse des Absenders zuordnen. Dazu verwenden Sie eines der folgenden Schlüsselwörter: %SUBJECT%, %BODY%, %HEADER% oder %SENDER%. Wenn Sie z. B. %SUBJECT%, angeben, wird der Inhalt des E-Mail-Betreffs als Eingabeparameter verwendet. Zum Auswählen von Anhängen geben Sie ein Dateimuster ein, das vom E-Mail-Endpunkt zum Auswählen der angehängten Dokumente verwendet werden kann. Wenn Sie beispielsweise &amp;ast;.pdf eingeben, werden alle angehängten Dokumente mit der Dateierweiterung &quot;.pdf&quot;ausgewählt. Eingabe &amp;ast; wählt ein angehängtes Dokument aus. Durch die Eingabe von example.pdf werden alle angehängten Dokumente namens „example.pdf“ ausgewählt.
+**Variable:** Sie können eine Zeichenfolge aus dem E-Mail-Betreff, dem Text, der Kopfzeile oder der E-Mail-Adresse des Absenders zuordnen. Dazu verwenden Sie eines der folgenden Schlüsselwörter: %SUBJECT%, %BODY%, %HEADER% oder %SENDER%. Wenn Sie z. B. %SUBJECT%, angeben, wird der Inhalt des E-Mail-Betreffs als Eingabeparameter verwendet. Zum Auswählen von Anhängen geben Sie ein Dateimuster ein, das vom E-Mail-Endpunkt zum Auswählen der angehängten Dokumente verwendet werden kann. Wenn Sie beispielsweise &amp;ast;.pdf eingeben, werden alle angehängten Dokumente mit der Dateierweiterung .pdf ausgewählt. Eingabe &amp;ast; wählt angehängtes Dokument aus. Durch die Eingabe von example.pdf werden alle angehängten Dokumente namens „example.pdf“ ausgewählt.
 
-**** Zuordnungen von Ausgabeparametern: Dient zum Konfigurieren der Ausgabe des Dienstes und Vorgangs. Die folgenden Zeichen in den Zuordnungswerten von Ausgabeparametern werden im Dateinamen des Anhangs erweitert:
+**Zuordnungen von Ausgabeparametern:** Dient zum Konfigurieren der Ausgabe des Dienstes und Vorgangs. Die folgenden Zeichen in den Zuordnungswerten von Ausgabeparametern werden im Dateinamen des Anhangs erweitert:
 
 **%F** Stellt den Dateinamen der Quelldatei dar (ohne Erweiterung).
 
@@ -244,11 +244,11 @@ Alle Vorkommen von \ (Backslash) werden durch %% ersetzt.
 
 Die folgenden Werte sind verfügbar:
 
-**** Einzelobjekt: Der E-Mail-Anbieter verfügt nicht über das Ziel des Quellordners. Ergebnisse werden als Anlagen zurückgegeben. Das Muster ist Result/%F.ps und gibt Result%%sourcefilename.ps als Dateinamenanhang zurück.
+**Einzelobjekt:** Der E-Mail-Anbieter verfügt nicht über das Ziel des Quellordners. Ergebnisse werden als Anlagen zurückgegeben. Das Muster ist Result/%F.ps und gibt Result%%sourcefilename.ps als Dateinamenanhang zurück.
 
-**** Liste: Das Muster lautet Result/%F/ und gibt Result%%sourcefilename%%file1 als Dateinamenanhang zurück.
+**Liste:** Das Muster lautet Result/%F/ und gibt Result%%sourcefilename%%file1 als Dateinamenanhang zurück.
 
-**** Zuordnung: Das Muster lautet Result/%F/ und das Quellziel lautet Result%%sourcefilename%%file1 und Result%%sourcefilename%%file2. Wenn die Zuordnung mehr als ein Objekt enthält und das Muster Result/%F.ps ist, sind die Antwortdateianhänge Result%%Quelldateiname1.ps (Ausgabe 1) und Result%%Quelldateiname2.ps (Ausgabe 2).
+**Zuordnung:** Das Muster lautet Result/%F/ und das Quellziel lautet Result%%sourcefilename%%file1 und Result%%sourcefilename%%file2. Wenn die Zuordnung mehr als ein Objekt enthält und das Muster Result/%F.ps ist, sind die Antwortdateianhänge Result%%Quelldateiname1.ps (Ausgabe 1) und Result%%Quelldateiname2.ps (Ausgabe 2).
 
 ## E-Mail-Endpunkt für den Complete Task-Dienst erstellen {#create-an-email-endpoint-for-the-complete-task-service}
 
