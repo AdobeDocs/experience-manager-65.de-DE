@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-`<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` [ 01-aem-forms-architecture![Vollständige](assets/01-aem-forms-architecture.jpg)*Ansicht *](javascript:void(0).md)
+`<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` [ 01-aem-forms-architecture ![](assets/01-aem-forms-architecture.jpg)*Ansicht im Format *](javascript:void(0).md)
 
 [ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
 
@@ -32,7 +32,7 @@ HTML5 forms functionality is deployed as a package within the embedded AEM insta
 
 For details on REST endpoint and supported request parameters, see [Rendering Form Template](/help/forms/using/rendering-form-template.md).
 
-Wenn ein Benutzer eine Anforderung von einem Client-Gerät wie einem iOS- oder Android-Browser sendet, löst Sling zuerst den Profilknoten basierend auf der Anforderungs-URL auf. Aus diesem Profilknoten liest es **sling:resourceSuperType** und **sling:resourceType** aus, um alle verfügbaren Skripten zu ermitteln, die diese Anforderung, ein Formular zu rendern, bearbeiten können. Abschließend verwendet es Sling-Anforderungsselektoren zusammen mit der Anforderungsmethode, um das Skript zu identifizieren, das am besten für die Bearbeitung dieser Anforderung geeignet ist. Wenn die Anforderung ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
+Wenn ein Benutzer eine Anforderung von einem Client-Gerät wie einem iOS- oder Android-Browser abgibt, löst Sling zuerst den Profil-Knoten basierend auf der Anforderungs-URL auf. Aus diesem Profilknoten liest es **sling:resourceSuperType** und **sling:resourceType** aus, um alle verfügbaren Skripten zu ermitteln, die diese Anforderung, ein Formular zu rendern, bearbeiten können. Abschließend verwendet es Sling-Anforderungsselektoren zusammen mit der Anforderungsmethode, um das Skript zu identifizieren, das am besten für die Bearbeitung dieser Anforderung geeignet ist. Wenn die Anforderung ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
 
 Weitere Informationen zur Auflösung von Sling-Skripten finden Sie unter [AEM Sling-Spickzettel](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) oder [Apache Sling-URL-Auflösung](https://sling.apache.org/site/url-decomposition.html).
 
@@ -51,7 +51,7 @@ HTML5-Formulare speichert Vorlagen nicht zwischen, die fehlende Verweise auf Fra
 Der Forms OSGi-Dienst verarbeitet eine Anforderung in zwei Schritten:
 
 * **Generierung eines Layouts und des anfänglichen Formularstatus**: Der Forms OSGi-Renderdienst ruft die Formular-Cachekomponente auf, um zu bestimmen, ob das Formular bereits zwischengespeichert wurde und ob es noch gültig ist. Wenn das Formular zwischengespeichert und gültig ist, liefert es das generierte HTML aus dem Cache. Wenn das Formular ungültig ist, generiert der Forms OSGi-Render-Dienst das anfängliche Formularlayout und den Formularstatus im XML-Format. Diese XML-Datei wird vom Forms OSGi-Dienst in HTML-Layout und in den anfänglichen JSON-Formularstatus umgewandelt sowie für folgende Anforderungen zwischengespeichert.
-* **Vorausgefüllte Formulare**: Beim Rendern ruft der Forms OSGi-Renderdienst den Formulardienstcontainer auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
+* **Vorausgefüllte Formulare**: Beim Rendern ruft der Forms OSGi-Renderdienst den Forms-Dienst Container auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
 
 Wenn ein Formular aktualisiert wurde oder Elemente in einem Formular verwendet wurden, erkennt die Formular-Cache-Komponente es und der Cache für dieses bestimmte Formular wird ungültig. Wenn die Verarbeitung durch den Forms OSGi-Dienst abgeschlossen ist, fügt das Profil-Renderer-JSP JavaScript-Bibliotheksverweise in das Formular ein und gibt die Antwort an den Client zurück. Hierfür kann ein typischer Webserver wie [Apache](https://httpd.apache.org/) mit aktivierter HTML-Komprimierung verwendet werden. Ein Webserver würde die Antwortgröße, den Netzwerkverkehr und die für das Streaming der Daten zwischen Server und Clientcomputer erforderliche Zeit erheblich verringern.
 
@@ -63,7 +63,7 @@ Sie benötigen das AEM Forms-Add-On-Paket, um HTML5-Formulare zu aktivieren. Wei
 
 ### OSGi-Komponenten (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er in der Bundle-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er von der Bundle-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
 
 Diese Komponente enthält OSGi-Komponenten für Rendering, Cachemanagement und Konfigurationseinstellungen.
 
@@ -71,7 +71,7 @@ Diese Komponente enthält OSGi-Komponenten für Rendering, Cachemanagement und K
 
 Dieser OSGi-Dienst enthält die Logik zum Rendern einer XDP als HTML und verarbeitet Sendungen von Formularen zur Generierung einer Daten-XML. Dieser Dienst verwendet Forms-Dienstcontainer. Der Forms-Dienstcontainer ruft intern die native Komponente`XMLFormService.exe` auf, die anschließend die Verarbeitung durchführt.
 
-Wenn eine Renderanforderung empfangen wird, ruft diese Komponente den Formulardienstcontainer auf, um Layout- und Statusinformationen zu generieren, die weiter verarbeitet werden, um HTML- und JSON-Formular-DOM-Status zu generieren.
+Wenn eine Renderanforderung empfangen wird, ruft diese Komponente den Forms-Dienst-Container auf, um Layout- und Statusinformationen zu generieren, die weiter verarbeitet werden, um HTML- und JSON-Formular-DOM-Status zu generieren.
 
 Diese Komponente ist auch für die Generierung der Daten-XML aus dem Status-JSON des gesendeten Formulars zuständig.
 
@@ -110,7 +110,7 @@ HTML5-Formulare führt eine Zwischenspeicherung im Arbeitsspeicher durch und ver
 
 Der Konfigurationsdienst ermöglicht die Einstellung der Konfigurationsparameter und der Cacheeinstellungen für HTML5-Formulare.
 
-To update these settings, go to the CQ Felix Admin Console (available at https://&lt;[server]:[port]/system/console/configMgr), search for and select Mobile Forms Configuration.
+To update these settings, go to the CQ Felix Admin Console (available at https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), search for and select Mobile Forms Configuration.
 
 Mit dem Konfigurationsdienst können Sie die Cachegröße konfigurieren oder den Cache deaktivieren. Sie können auch mithilfe des Parameters „Debug Options“ das Debugging aktivieren. More information about debugging forms can be found at [Debugging HTML5 forms](/help/forms/using/debug.md).
 
