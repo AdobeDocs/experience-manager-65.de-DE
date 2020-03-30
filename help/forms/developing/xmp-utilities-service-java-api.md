@@ -1,6 +1,6 @@
 ---
-title: XMP Utilities Service Java APIQuick Start(SOAP)
-seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
+title: XMP Utilities Service Java APIQuick Beginn(SOAP)
+seo-title: XMP Utilities Service Java APIQuick Beginn(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
@@ -10,24 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# XMP Utilities Service Java API Quick Start (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
+# XMP Utilities Service Java API Quick Beginn (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
-Die folgenden Kurzanleitungen sind für den XMP Utilities-Dienst verfügbar.
+Die folgenden Quick-Beginn sind für den XMP Utilities-Dienst verfügbar.
 
-[Kurzanleitung (SOAP-Modus): Exportieren von XMP-Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Exportieren von XMP-Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Importieren von XMP-Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Importieren von XMP-Metadaten mit der Java-API](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Schnellstarts unter &quot;Programmieren mit AEM Forms&quot;basieren auf dem Forms-Server, wenn Sie ein anderes Betriebssystem verwenden, z. B. UNIX, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Quick-Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Server, wenn Sie ein anderes Betriebssystem verwenden, z. B. UNIX, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Kurzanleitung (SOAP-Modus): Exportieren von XMP-Metadaten mit der Java-API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Exportieren von XMP-Metadaten mit der Java-API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
 Im folgenden Codebeispiel werden XMP-Metadaten abgerufen, geprüft und gespeichert. (Siehe [Exportieren von Metadaten aus PDF-Dokumenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
@@ -95,7 +95,7 @@ Im folgenden Codebeispiel werden XMP-Metadaten abgerufen, geprüft und gespeiche
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -132,7 +132,7 @@ Im folgenden Codebeispiel werden XMP-Metadaten abgerufen, geprüft und gespeiche
  
 ```
 
-## Kurzanleitung (SOAP-Modus): Importieren von XMP-Metadaten mit der Java-API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Importieren von XMP-Metadaten mit der Java-API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
 Im folgenden Codebeispiel werden XMP-Metadaten importiert und die neue PDF-Datei auf der Festplatte gespeichert. Das PDF-Dokument basiert auf einer PDF-Datei mit dem Namen &quot;Loan.pdf&quot;. Das XML-Dokument, das die in das PDF-Dokument zu importierenden Metadaten enthält, basiert auf einer XML-Datei mit dem Namen *LoanMetaData.xml*. Weitere Informationen zu dieser XML-Datei finden Sie unter [Importieren von Metadaten in PDF-Dokumente](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
@@ -200,7 +200,7 @@ Im folgenden Codebeispiel werden XMP-Metadaten importiert und die neue PDF-Datei
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
