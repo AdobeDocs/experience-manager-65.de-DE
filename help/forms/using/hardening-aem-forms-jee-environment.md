@@ -9,12 +9,12 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Härtung der AEM Forms on JEE-Umgebung {#hardening-your-aem-forms-on-jee-environment}
+# Härtung Ihrer AEM Forms on JEE-Umgebung {#hardening-your-aem-forms-on-jee-environment}
 
 Erfahren Sie, wie Sie mit verschiedenen Einstellungen für die Sicherheitshärtung die Sicherheit von AEM Forms on JEE in einem Unternehmens-Intranet verbessern können.
 
@@ -23,7 +23,7 @@ In diesem Abschnitt werden empfohlene Vorgehensweisen und Richtlinien für das S
 In diesem Artikel werden Härtungsverfahren beschrieben, die in den folgenden Phasen des Installations- und Konfigurationszyklus durchgeführt werden sollten:
 
 * **Vor der Installation:** Verwenden Sie diese Verfahren, bevor Sie AEM Forms on JEE installieren.
-* **** Installation: Verwenden Sie diese Verfahren während der Installation von AEM Forms on JEE.
+* **Installation:** Verwenden Sie diese Verfahren während der Installation von AEM Forms on JEE.
 * **Nach der Installation:** Verwenden Sie diese Verfahren nach der Installation in regelmäßigen Abständen.
 
 AEM Forms on JEE kann in hohem Maß angepasst und in vielen verschiedenen Umgebungen eingesetzt werden. Einige der Empfehlungen entsprechen eventuell nicht den Anforderungen Ihrer Organisation.
@@ -239,7 +239,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Starten Sie den AEM Forms-Server.
 1. Geben Sie die folgende URL in einen Browser ein, um die Änderung zu testen und sicherzustellen, dass sie nicht mehr funktioniert.
 
-   https://&lt;localhost>:/adobe-bootstrapper/bootstrap
+   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
 
 **Remote-Zugriff auf den Trust Store sperren**
 
@@ -258,7 +258,7 @@ Beim Installieren von AEM Forms on JEE wird ein Standardbenutzerkonto für den B
 1. Geben Sie in einem Webbrowser die folgende URL ein:
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
    Der Standardanschluss lautet wie folgt:
@@ -278,7 +278,7 @@ Beim Installieren von AEM Forms on JEE wird ein Standardbenutzerkonto für den B
 
 Außerdem wird empfohlen, das Standardkennwort für den CRX-Administrator zu ändern, indem Sie folgende Schritte durchführen:
 
-1. Melden Sie sich mit dem Standardbenutzernamen/dem Standardkennwort `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` an.
+1. Melden Sie sich mit dem Standardbenutzernamen/dem Standardkennwort `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` an.
 1. Geben Sie „Administrator“ in das Suchfeld ein und klicken Sie auf **Suchen**.
 1. Select **Administrator** from the search result and click the **Edit** icon at the lower right of the user interface.
 1. Geben Sie das neue Kennwort in das Feld **Neues Kennwort** und das alte Kennwort in das Feld **Ihr Kennwort** ein.
@@ -291,7 +291,7 @@ Die WSDL-Generierung (Web Service Definition Language) sollte nur in Entwicklung
 1. Geben Sie in einem Webbrowser die folgende URL ein:
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
 1. Klicken Sie auf **Einstellungen > Core-Systemeinstellungen > Konfigurationen**.
@@ -344,7 +344,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 
 #### Integrierte Sicherheit für SQL Server unter Windows für WebLogic konfigurieren {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
-1. Starten Sie WebLogic Server Administration Console, indem Sie die folgende URL in die Adresszeile eines Webbrowsers eingeben:
+1. Beginn Sie WebLogic Server Administration Console, indem Sie die folgende URL in die Adresszeile eines Webbrowsers eingeben:
 
    ```as3
    https://[host name]:7001/console
@@ -521,7 +521,7 @@ Einige URLs sind als Endbenutzer-orientierte Webanwendungen gekennzeichnet. Sie 
   </tr> 
   <tr> 
    <td><p>/adminui/*</p> </td> 
-   <td><p>Homepage der Administrationskonsole</p> </td> 
+   <td><p>Administration Console-Startseite</p> </td> 
    <td><p>Ja</p> </td> 
    <td><p>Nein</p> </td> 
   </tr> 
@@ -637,50 +637,50 @@ Die folgenden Merkmale sind für CSRF-Angriffe charakteristisch:
 * Bringen den Browser des Benutzers dazu, HTTP-Anforderungen an eine Ziel-Site zu senden
 * Verwenden HTTP-Anforderungen mit Nebeneffekten
 
-AEM Forms on JEE verwendet die Funktion &quot;Referrer-Filter&quot;, um CSRF-Angriffe zu blockieren. Die folgenden Begriffe werden in diesem Abschnitt verwendet, um den Filter für verweisende Stellen zu beschreiben:
+AEM Forms on JEE verwendet die Funktion &quot;Werber-Filter&quot;, um CSRF-Angriffe zu blockieren. Die folgenden Begriffe werden in diesem Abschnitt verwendet, um den Werber-Filtermechanismus zu beschreiben:
 
-* **** Zulässige verweisende Stelle: Ein Referrer ist die Adresse der Quellseite, die eine Anforderung an den Server sendet. Bei JSP-Seiten oder -Formularen ist die verweisende Stelle normalerweise die vorherige Seite im Browserverlauf. Referrer für Bilder sind normalerweise die Seiten, auf denen die Bilder angezeigt werden. Sie können die verweisende Stelle, die Zugriff auf Ihre Serverressourcen hat, identifizieren, indem Sie sie zur Liste der zulässigen verweisenden Stellen hinzufügen.
-* **** Zulässige Referrer - Ausnahmen: Möglicherweise möchten Sie den Zugriffsbereich für einen bestimmten Referrer in Ihrer Liste der zulässigen Referrer einschränken. Um diese Einschränkung zu erzwingen, können Sie der Liste &quot;Zulässige Referrer - Ausnahmen&quot;einzelne Pfade dieses Referrers hinzufügen. Anforderungen, die von Pfaden in der Liste &quot;Zulässige Referrer - Ausnahmen&quot;stammen, können keine Ressourcen auf dem Formularserver aufrufen. Sie können Ausnahmen für zulässige Referrer für eine bestimmte Anwendung definieren und eine globale Liste mit Ausnahmen verwenden, die für alle Anwendungen gelten.
-* **** Zulässige URIs: Dies ist eine Liste der Ressourcen, die ohne Überprüfung der Referrer-Kopfzeile bereitgestellt werden sollen. Ressourcen, z. B. Hilfeseiten, die auf dem Server keine Statusänderungen hervorrufen, können zu dieser Liste hinzugefügt werden. Die Ressourcen in der Liste &quot;Zulässige URIs&quot;werden nie vom Referrer-Filter blockiert, unabhängig davon, wer der Referrer ist.
-* **** Null-Referrer: Eine Serveranforderung, die nicht mit einer übergeordneten Webseite verknüpft ist oder nicht von dieser stammt, gilt als Anforderung einer Null-verweisenden Stelle. Wenn Sie beispielsweise ein neues Browserfenster öffnen, eine Adresse eingeben und die Eingabetaste drücken, ist die an den Server gesendete verweisende Stelle null. Eine Desktopanwendung (.NET oder SWING), die eine HTTP-Anforderung an einen Webserver sendet, sendet auch eine Null-Referrer an den Server.
+* **Zulässiger Werber:** Ein Werber ist die Adresse der Quellseite, die eine Anforderung an den Server sendet. Bei JSP-Seiten oder -Formularen ist der Werber normalerweise die vorherige Seite im Browserverlauf. Werber für Bilder sind normalerweise die Seiten, auf denen die Bilder angezeigt werden. Sie können den Werber identifizieren, der Zugriff auf Ihre Serverressourcen hat, indem Sie ihn zur Liste &quot;Zulässige Werber&quot;hinzufügen.
+* **Zulässige Werber-Ausnahmen:** Möglicherweise möchten Sie den Zugriffsbereich für einen bestimmten Werber in Ihrer Liste für zulässige Werber einschränken. Um diese Einschränkung zu erzwingen, können Sie der Liste &quot;Zulässige Werber - Ausnahmen&quot;einzelne Pfade dieses Werbers hinzufügen. Anforderungen, die von Pfaden in der Liste &quot;Zulässige Werber - Ausnahmen&quot;stammen, können keine Ressourcen auf dem Formularserver aufrufen. Sie können Ausnahmen für zulässige Werber für eine bestimmte Anwendung definieren und eine globale Liste von Ausnahmen verwenden, die für alle Anwendungen gelten.
+* **Zulässige URIs:** Dies ist eine Liste von Ressourcen, die ohne Überprüfung der Werber-Kopfzeile bereitgestellt werden sollen. Ressourcen, z. B. Hilfeseiten, die auf dem Server keine Statusänderungen hervorrufen, können zu dieser Liste hinzugefügt werden. Die Ressourcen in der Liste Zulässige URIs werden nie vom Werber-Filter blockiert, unabhängig davon, wer der Werber ist.
+* **Null-Werber:** Eine Serveranforderung, die nicht mit einer übergeordneten Webseite verknüpft ist oder nicht von einer übergeordneten Webseite stammt, gilt als Anforderung eines Null-Werbers. Wenn Sie beispielsweise ein neues Browserfenster öffnen, eine Adresse eingeben und die Eingabetaste drücken, ist der an den Server gesendete Werber null. Eine Desktopanwendung (.NET oder SWING), die eine HTTP-Anforderung an einen Webserver sendet, sendet auch einen Null-Werber an den Server.
 
-### Referrer-Filter {#referer-filtering}
+### Werber-Filter {#referer-filtering}
 
-Der Referrer-Filter-Prozess kann wie folgt beschrieben werden:
+Der Werber-Filterprozess kann wie folgt beschrieben werden:
 
 1. Der Formularserver prüft die für den Aufruf verwendete HTTP-Methode:
 
-   1. Bei POST prüft der Formularserver den Referrer-Header.
+   1. Bei POST prüft der Formularserver den Werber-Header.
    1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. *CSRF_CHECK_GETS* ist in der Datei *web.xml* für Ihre Anwendung festgelegt.
 
 1. Der Formularserver prüft, ob die angeforderten URI in der Positivliste eingetragen ist:
 
    1. Wenn die URI in der Positivliste eingetragen ist, akzeptiert der Server die Anforderung.
-   1. Wenn der angeforderte URI nicht in die Positivliste eingetragen ist, ruft der Server den Referrer der Anforderung ab.
+   1. Wenn der angeforderte URI nicht in die Positivliste eingetragen ist, ruft der Server den Werber der Anforderung ab.
 
-1. Wenn die Anforderung einen Referrer enthält, prüft der Server, ob es sich um einen zulässigen Referrer handelt. Ist dies zulässig, sucht der Server nach einer Referrer-Ausnahme:
+1. Wenn die Anforderung einen Werber enthält, prüft der Server, ob es sich um einen zulässigen Werber handelt. Ist dies zulässig, sucht der Server nach einer Werber-Ausnahme:
 
    1. Wenn sie eine Ausnahme ist, wird die Anforderung blockiert.
    1. Wenn es sich nicht um eine Ausnahme handelt, wird die Anforderung übergeben.
 
-1. Wenn keine verweisende Stelle in der Anforderung vorhanden ist, prüft der Server, ob ein Null-Referrer zulässig ist:
+1. Wenn die Anforderung keinen Werber enthält, prüft der Server, ob ein Null-Werber zulässig ist:
 
-   1. Wenn ein Null-Referrer zulässig ist, wird die Anforderung übergeben.
-   1. Wenn ein Null-Referrer nicht zulässig ist, prüft der Server, ob der angeforderte URI eine Ausnahme für den Null-Referrer ist, und verarbeitet die Anforderung entsprechend.
+   1. Wenn ein Null-Werber zulässig ist, wird die Anforderung übergeben.
+   1. Wenn ein Null-Werber nicht zulässig ist, prüft der Server, ob der angeforderte URI eine Ausnahme für den Null-Werber ist, und verarbeitet die Anforderung entsprechend.
 
-### Verwalten des Referrer-Filters {#managing-referer-filtering}
+### Verwalten des Werber-Filters {#managing-referer-filtering}
 
-AEM Forms on JEE bietet einen Referrer-Filter, um Referrer anzugeben, denen der Zugriff auf Ihre Serverressourcen erlaubt ist. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. Wenn die Anschlussnummer für einen Eintrag für einen zulässigen Referrer auf 0 eingestellt ist, lässt AEM Forms on JEE alle Anforderungen mit Referrer von diesem Host unabhängig von der Anschlussnummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Der Referrer-Filter ist deaktiviert, wenn alle Einträge in der Liste &quot;Zulässige Referrer&quot;gelöscht werden.
+AEM Forms on JEE bietet einen Werber-Filter, um Werber anzugeben, für die der Zugriff auf Serverressourcen zulässig ist. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. Wenn die Anschlussnummer für einen Eintrag für einen zulässigen Werber auf 0 eingestellt ist, lässt AEM Forms on JEE alle Anforderungen mit Werber von diesem Host unabhängig von der Anschlussnummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Werber-Filterung ist deaktiviert, wenn alle Einträge in der Liste &quot;Zulässige Werber&quot;gelöscht werden.
 
-Wenn Sie Document Services zum ersten Mal installieren, wird die Liste der zulässigen Referrer mit der Adresse des Servers aktualisiert, auf dem Document Services installiert ist. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die der Liste &quot;Zulässige Referrer&quot;hinzugefügt werden, werden vom Host-Betriebssystem zurückgegeben. Ein Server mit einer IP-Adresse von 10.40.54.187 enthält beispielsweise die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für alle nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben wurden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domänennamen haben) wird die Positivliste nicht aktualisiert. Ändern Sie die Liste &quot;Zulässige Referrer&quot;entsprechend Ihrer Geschäftsumgebung. Stellen Sie den Formularserver nicht mit der Standardliste für zulässige Referrer in der Produktionsumgebung bereit. Nachdem Sie einen der zulässigen Referrer, Referrer-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
+Wenn Sie Dokument Services zum ersten Mal installieren, wird die Liste &quot;Zulässiger Werber&quot;mit der Adresse des Servers aktualisiert, auf dem Dokument Services installiert ist. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die der Liste für zulässige Werber hinzugefügt werden, werden vom Host-Betriebssystem zurückgegeben. Ein Server mit einer IP-Adresse von 10.40.54.187 enthält beispielsweise die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für alle nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben wurden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domänennamen haben) wird die Positivliste nicht aktualisiert. Ändern Sie die Liste für zulässige Werber entsprechend Ihrer geschäftlichen Umgebung. Stellen Sie den Formularserver nicht mit der standardmäßigen Liste für zulässigen Werber in der Produktions-Umgebung bereit. Nachdem Sie einen der zulässigen Werber, Werber-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
 
-**Liste &quot;Zulässige Referrer&quot;verwalten**
+**Verwalten der Liste für zulässige Werber**
 
-Sie können die Liste &quot;Zulässige Referrer&quot;über die Benutzeroberfläche von Administration Console verwalten. Die User Management-Oberfläche stellt Funktionen zum Erstellen, Bearbeiten oder Löschen der Liste bereit. Refer to the *[Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)*section of the *administration help*for more information on working with the Allowed Referrer list.
+Sie können die Liste für zulässige Werber über die User Management-Oberfläche von Administration Console verwalten. Die User Management-Oberfläche stellt Funktionen zum Erstellen, Bearbeiten oder Löschen der Liste bereit. Refer to the *[Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)*section of the *administration help*for more information on working with the Allowed Referrer list.
 
-**Listen &quot;Zulässige Referrer - Ausnahme&quot;und &quot;Zulässige URI&quot;verwalten**
+**Zulässige Werber-Ausnahmen und zulässige URI-Listen verwalten**
 
-AEM Forms on JEE bietet APIs zum Verwalten der Liste &quot;Zulässige Referrer - Ausnahmen&quot;und der Liste &quot;Zulässige URI&quot;. Mithilfe dieser APIs können Sie die Listen abrufen, erstellen, bearbeiten oder löschen. Im Folgenden Finden Sie eine Liste mit verfügbaren APIs:
+AEM Forms on JEE bietet APIs zum Verwalten der Liste &quot;Zulässige Werber - Ausnahmen&quot;und der Liste &quot;Zulässige URI&quot;. Mithilfe dieser APIs können Sie die Listen abrufen, erstellen, bearbeiten oder löschen. Im Folgenden Finden Sie eine Liste mit verfügbaren APIs:
 
 * createAllowedURIsList
 * getAllowedURIsList
@@ -695,7 +695,7 @@ Weitere Informationen zu den APIs finden Sie in der *AEM Forms on JEE API-Refere
 
 Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (e.g. `/index.html`) or a relative path (e.g. `/sample/`). You can also append a regular expression to the end of a relative URI, e.g. `/sample/(.)*`.
 
-Die Listen-ID ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTIONS*** wird als Konstante in der Klasse `UMConstants` des Namespace `com.adobe.idp.um.api` definiert, der in `adobe-usermanager-client.jar` zu finden ist. Sie können die AEM Forms-APIs zum Erstellen, Ändern oder Bearbeiten dieser Liste verwenden. Verwenden Sie zum Erstellen der Liste &quot;Ausnahmen für globale Referrer&quot;Folgendes:
+Die Listen-ID ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTIONS*** wird als Konstante in der Klasse `UMConstants` des Namespace `com.adobe.idp.um.api` definiert, der in `adobe-usermanager-client.jar` zu finden ist. Sie können die AEM Forms-APIs zum Erstellen, Ändern oder Bearbeiten dieser Liste verwenden. Verwenden Sie zum Erstellen der Liste für die  für globale zulässige Werber Ausnahmen beispielsweise Folgendes:
 
 ```as3
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
@@ -703,25 +703,25 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 Verwenden Sie die Liste ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** für anwendungsspezifische Ausnahmen.
 
-**Deaktivieren des Referrer-Filters**
+**Deaktivieren des Werber-Filters**
 
-Wenn der Filter &quot;Referrer&quot;den Zugriff auf den Formularserver vollständig blockiert und Sie die Liste &quot;Zulässige Referrer&quot;nicht bearbeiten können, können Sie das Serverstartskript aktualisieren und die Filterung &quot;Referrer&quot;deaktivieren.
+In dem Ereignis, dass der Werber-Filter den Zugriff auf den Formularserver vollständig blockiert und Sie die Liste &quot;Zulässiger Werber&quot;nicht bearbeiten können, können Sie das Serverstartskript aktualisieren und die Werber-Filterung deaktivieren.
 
-Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup script and restart the server. Stellen Sie sicher, dass Sie das JAVA-Argument löschen, nachdem Sie die Liste &quot;Zulässige Referrer&quot;entsprechend neu konfiguriert haben.
+Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup script and restart the server. Stellen Sie sicher, dass Sie das JAVA-Argument löschen, nachdem Sie die Liste für zulässige Werber entsprechend neu konfiguriert haben.
 
-**Referrer-Filter für benutzerdefinierte WAR-Dateien**
+**Werber-Filter für benutzerdefinierte WAR-Dateien**
 
 Möglicherweise haben Sie benutzerdefinierte WAR-Dateien für die Verwendung mit AEM Forms on JEE speziell für Ihre Geschäftsanforderungen erstellt. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the *web.xml* file with the following parameters:
 
-**CSRF_CHECK_GETS** steuert die Referrer-Prüfung bei GET-Anforderungen. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
+**CSRF_CHECK_GETS** steuert die Überprüfung des Werbers bei GET-Anforderungen. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** ist die ID der Liste &quot;Zulässige Referrer - Ausnahmen&quot;. Der Filter &quot;Verweisende Stelle&quot;verhindert, dass Anforderungen, die von verweisenden Stellen in der durch die Listen-ID identifizierten Liste stammen, Ressourcen auf dem Formularserver aufrufen.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** ist die ID der Liste &quot;Zulässige Werber - Ausnahmen&quot;. Der Werber-Filter verhindert, dass Anforderungen, die von Werbern in der durch die Listen-ID identifizierten Liste stammen, Ressourcen auf dem Formularserver aufrufen.
 
-**CSRF_ALLOWED_URIS_LIST_NAME** ist die ID der Liste „Zulässige URIs“. Der Referrer-Filter blockiert keine Anforderungen für die Ressourcen in der Liste, die durch die Listen-ID identifiziert werden, unabhängig vom Wert des Referrer-Headers in der Anforderung.
+**CSRF_ALLOWED_URIS_LIST_NAME** ist die ID der Liste „Zulässige URIs“. Der Werber-Filter blockiert keine Anfragen für Ressourcen in der durch die Listen-ID identifizierten Liste, unabhängig vom Wert des Werber-Headers in der Anforderung.
 
-**CSRF_ALLOW_NULL_REFERER** steuert das Verhalten des Referrer-Filters, wenn der Referrer null oder nicht vorhanden ist. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Schließen Sie diesen Parameter nur ein, wenn Sie Null-Referrer zulassen möchten. Das Zulassen von Null-Referrern kann einige Arten von Cross-Site Request Forgery-Angriffen zulassen.
+**CSRF_ALLOW_NULL_REFERER** steuert das Verhalten des Werber-Filters, wenn der Werber null ist oder nicht vorhanden ist. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Schließen Sie diesen Parameter nur ein, wenn Sie Null-Werber zulassen möchten. Das Zulassen von Null-Werbern kann einige Arten von Cross-Site Request Forgery-Angriffen zulassen.
 
-**CSRF_NULL_REFERER_EXCEPTIONS** ist eine Liste der URIs, für die keine Referrer-Prüfung durchgeführt wird, wenn der Referrer null ist. Dieser Parameter wird nur aktiviert, wenn für *CSRF_ALLOW_NULL_REFERER* „false“ festgelegt wird. Trennen Sie mehrere URIs in der Liste mit einem Komma.
+**CSRF_NULL_REFERER_EXCEPTIONS** ist eine Liste der URIs, für die keine Überprüfung des Werbers durchgeführt wird, wenn der Werber null ist. Dieser Parameter wird nur aktiviert, wenn für *CSRF_ALLOW_NULL_REFERER* „false“ festgelegt wird. Trennen Sie mehrere URIs in der Liste mit einem Komma.
 
 Im Folgenden finden Sie ein Beispiel für den Filtereintrag in der Datei *web.xml* für die WAR-Datei ***SAMPLE***:
 
@@ -766,8 +766,8 @@ Im Folgenden finden Sie ein Beispiel für den Filtereintrag in der Datei *web.xm
 
 Wenn rechtmäßige Serveranforderungen vom CSRF-Filter blockiert werden, haben Sie folgende Möglichkeiten:
 
-* Wenn die abgelehnte Anforderung über einen Referrer-Header verfügt, sollten Sie sorgfältig erwägen, ihn der Liste &quot;Zulässige Referrer&quot;hinzuzufügen. Fügen Sie nur Referrer hinzu, denen Sie vertrauen.
-* Wenn die abgelehnte Anforderung keinen Referrer-Header enthält, ändern Sie Ihre Clientanwendung, um einen Referrer-Header einzuschließen.
+* Wenn die abgelehnte Anforderung über einen Werber-Header verfügt, sollten Sie diese der Liste Zulässiger Werber hinzufügen. Hinzufügen nur Werber, dem du vertraust.
+* Wenn die abgelehnte Anforderung keinen Werber-Header enthält, ändern Sie Ihre Clientanwendung, um einen Werber-Header einzuschließen.
 * Wenn der Client einen Browser verwenden kann, versuchen Sie es mit diesem Bereitstellungsmodell.
 * Als letzten Ausweg können Sie die Ressource zur Liste „Zulässige URIs“ hinzufügen. Diese Vorgehensweise wird jedoch nicht empfohlen.
 
@@ -915,7 +915,7 @@ In diesem Abschnitt werden die Standardanschlüsse (und alternativen Konfigurati
 
 **WebSphere -Anschlüsse**
 
-Informationen zu WebSphere-Anschlüssen, die für AEM Forms on JEE erforderlich sind, finden Sie unter Port number setting in WebSphere Application Server UI.
+Informationen zu WebSphere-Anschlüssen, die für AEM Forms on JEE erforderlich sind, finden Sie unter Einstellung der Anschlussnummer in der WebSphere Application Server-Benutzeroberfläche.
 
 ### Konfigurieren von SSL {#configuring-ssl}
 
@@ -939,7 +939,7 @@ Informationen zum Konfigurieren der SSL-Umleitung für WebSphere oder WebLogic f
 
    &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot;/>
 
-1. Fügen Sie den folgenden Code im Element https connector hinzu:
+1. Hinzufügen Sie den folgenden Code im Element https connector:
 
    ```
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
