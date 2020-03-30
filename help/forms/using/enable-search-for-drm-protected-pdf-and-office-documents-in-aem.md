@@ -10,22 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
-Adobe Experience Manager bietet eine Benutzeroberfläche zum Suchen und Auffinden verschiedener Assets, die in AEM gespeichert werden. Die programmeigene Suchfunktion kann AEM-Assets durchsuchen und nach  Textsuche in verschiedenen häufig verwendeten Dokumentformaten, z. B. in Textdateien, Microsoft Office-Dokumenten und PDF-Dokumenten. Sie können die native Suche auch erweitern und aktivieren, um eine Volltextsuche in DRM-geschützten PDF- und Microsoft Office-Dokumenten durchzuführen.
+Adobe Experience Manager bietet eine Benutzeroberfläche zum Suchen und Auffinden verschiedener Assets, die in AEM gespeichert werden. Die programmeigene Suchfunktion kann AEM-Assets durchsuchen und nach  Textsuche in verschiedenen gebräuchlichen Dokument-Formaten wie Textdateien, Microsoft Office-Dokumenten und PDF-Dokumenten. Sie können die native Suche auch erweitern und aktivieren, um eine Volltextsuche auf DRM-geschützten PDF- und Microsoft Office-Dokumenten durchzuführen.
 
 Führen Sie die folgenden Schritte aus, um AEM die Suche in sicherheitsgeschützten PDF- und Microsoft Office Dokumenten zu ermöglichen:
 
 ## Bevor Sie beginnen {#before-you-start}
 
 * Installieren und konfigurieren Sie AEM Forms Document Security.
-* Fügen Sie der Positivliste der **Deserialisierungs-Firewall-Konfiguration „sun.util.calendar“ hinzu.** Die Konfiguration wird unter `https://[server]:[port]/system/console/configMgr`.
-* Stellen Sie sicher, dass alle AEM-Pakete aktiv sind. Die Bundles werden unter `https://[server]:[port]/system/console/bundles`. Wenn alle Bundles nicht aktiv, warten Sie einige Minuten und überprüfen Sie den Status der Bundles.
+* Fügen Sie der Positivliste der **Deserialisierungs-Firewall-Konfiguration „sun.util.calendar“ hinzu.** Die Konfiguration wird unter `https://'[server]:[port]'/system/console/configMgr`.
+* Stellen Sie sicher, dass alle AEM-Pakete aktiv sind. Die Bundles werden unter `https://'[server]:[port]'/system/console/bundles`. Wenn alle Bundles nicht aktiv, warten Sie einige Minuten und überprüfen Sie den Status der Bundles.
 
 ## Erstellen Sie eine sichere Verbindung AEM Forms Workflow (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
