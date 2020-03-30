@@ -9,14 +9,14 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Adaptive Formularausdrücke{#adaptive-form-expressions}
 
-Adaptive Formulare bieten ein optimiertes und vereinfachtes Ausfüllen von Formularen für Endbenutzer mit Kenntnissen in der dynamischen Skripterstellung. Dadurch können Sie Ausdrücke schreiben, um verschiedene Verhaltensweisen hinzuzufügen, z. B. dynamische Felder und Bereiche ein-/auszublenden. Außerdem können Sie berechnete Felder hinzufügen, Felder schreibgeschützt machen, Überprüfungslogik hinzufügen und vieles mehr. Das dynamische Verhalten basiert auf der Benutzereingabe oder vorausgefüllten Daten.
+Adaptive Formulare bieten ein optimiertes und vereinfachtes Ausfüllen von Formularen für Endbenutzer mit Kenntnissen in der dynamischen Skripterstellung. Dadurch können Sie Ausdruck schreiben, um verschiedene Verhaltensweisen hinzuzufügen, z. B. dynamische Ein-/Ausblenden-Felder und -Bedienfelder. Außerdem können Sie berechnete Felder hinzufügen, Felder schreibgeschützt machen, Überprüfungslogik hinzufügen und vieles mehr. Das dynamische Verhalten basiert auf der Benutzereingabe oder vorausgefüllten Daten.
 
 JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
@@ -43,7 +43,7 @@ Wiederholungsfelder sind Instanzen eines Fensters, das mithilfe einer Skripterst
 
 ## Ausdruckstypen {#expression-types}
 
-In adaptiven Formularen können Sie Ausdrücke schreiben, um Verhaltensweisen wie dynamisches Ein-/Ausblenden von Feldern und Bereichen hinzuzufügen. Sie können auch Ausdrücke schreiben, um berechnete Felder hinzuzufügen, Felder schreibgeschützt, Überprüfungslogik und vieles mehr zu machen. Adaptive Formulare unterstützen folgende Ausdrücke:
+In adaptiven Formularen können Sie Ausdruck schreiben, um Verhaltensweisen wie dynamische Ein-/Ausblenden-Felder und -Bereiche hinzuzufügen. Sie können auch Ausdrücke schreiben, um berechnete Felder hinzuzufügen, Felder schreibgeschützt, Überprüfungslogik zu gestalten und vieles mehr. Adaptive Formulare unterstützen folgende Ausdrücke:
 
 * **[Ausdrücke für den Zugriff](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**: Zum Aktivieren/Deaktivieren eines Felds.
 * **[Ausdrücke für die Berechnung](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: Zum automatischen Berechnen des Werts eines Felds.
@@ -52,7 +52,7 @@ In adaptiven Formularen können Sie Ausdrücke schreiben, um Verhaltensweisen wi
 * **[Ausdruck für Optionen](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**: Zum dynamischen Ausfüllen einer Dropdown-Liste.
 * **[Zusammenfassungsausdruck](#summary)**: Zum dynamischen Berechnen des Titels eines Akkordeons.
 * **[Ausdrücke für die Überprüfung](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: Zum Überprüfen eines Felds.
-* **[](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)Skript **zum Bestätigen von Werten: , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **[Skript](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)zum Bestätigen von Werten:**, um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
 * **[Ausdruck für die Sichtbarkeit](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**: Zum Steuern der Sichtbarkeit eines Felds oder Bereichs.
 * **[Ausdruck zum Abschluss von Schritten](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**: Um zu vermeiden, dass ein Benutzer zum nächsten Schritt eines Assistenten geht.
 
@@ -64,17 +64,17 @@ Sie können den Ausdruck für den Zugriff zum Aktivieren oder Deaktivieren eines
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Aktivierungsstatus des Felds wiedergibt. **true** bedeutet, dass das Feld aktiviert ist, und **false** bedeutet, dass das Feld deaktiviert ist.
 
-**Beispiel**: Um ein Feld nur dann zu aktivieren, wenn der Wert von **field1** auf **X** eingestellt ist, lautet der Ausdruck für den Zugriff: `field1.value == "X"`
+**Beispiel**: Um ein Feld nur dann zu aktivieren, wenn der Wert von **field1** auf **X** festgelegt ist, lautet der Ausdruck access wie folgt: `field1.value == "X"`
 
 ### Ausdruck für die Berechnung {#calculate-expression}
 
-Der Ausdruck für die Berechnung wird verwendet, um den Wert eines Felds unter Verwendung eines Ausdrucks automatisch zu berechnen. Normalerweise verwendet ein Ausdruck dieser Art die Werteigenschaften anderer Felder. Beispiel, `field2.value + field3.value`. Sobald sich der Wert für `field2` oder `field3` ändert, wird der Ausdruck erneut ausgelöst und der Wert neu berechnet.
+Der Ausdruck für die Berechnung wird verwendet, um den Wert eines Felds unter Verwendung eines Ausdrucks automatisch zu berechnen. Normalerweise verwendet ein Ausdruck dieser Art die Werteigenschaften anderer Felder. Beispiel: `field2.value + field3.value`. Sobald sich der Wert für `field2` oder `field3` ändert, wird der Ausdruck erneut ausgelöst und der Wert neu berechnet.
 
 **Gilt für**: Felder
 
 **Rückgabetyp**: Der Ausdruck gibt einen Wert zurück, der mit dem Feld kompatibel ist, in dem das Ergebnis des Ausdrucks angezeigt wird (z. B. dezimal).
 
-**Beispiel**: Der Ausdruck für die Berechnung, um die Summe zweier Felder in **Feld1** anzuzeigen, lautet:
+**Beispiel**: Der Ausdruck calculate, der die Summe zweier Felder in **field1** anzeigt, lautet:
 `field2.value + field3.value`
 
 ### Ausdruck für ein Klickereignis {#click-expression}
@@ -85,7 +85,7 @@ Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken a
 
 **Rückgabetyp:** Der Ausdruck für ein Klickereignis gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Wenn Sie ein Textfeld **textbox1** auf die Klickaktion einer Schaltfläche mit dem Wert **AEM Forms** füllen möchten, lautet der Ausdruck für das Klicken auf die Schaltfläche `textbox1.value="AEM Forms"`
+**Beispiel**: Wenn Sie ein Textfeld **textbox1** auf eine Schaltfläche mit dem Wert **AEM Forms** füllen möchten, lautet der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"`
 
 ### Initialisierungsskript {#initialization-script}
 
@@ -99,7 +99,7 @@ Das Initialisierungsskript wird ausgelöst, wenn ein adaptives Formular initiali
 
 **Rückgabetyp:** Der Ausdruck für das Initialisierungsskript gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**** Beispiel: Wenn in einem Szenario mit Daten vor dem Ausfüllen Felder mit Standardwert gefüllt werden sollen, `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Ausdruck für das Initialisierungsskript:
+**Beispiel:** Wenn in einem Datenvorausfüllszenario Felder mit dem Standardwert ausgefüllt werden sollen, `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Ausdruck des Initialisierungsskripts:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Ausdruck für Optionen {#options-expression}
@@ -118,19 +118,19 @@ Sobald sich der Wert des Felds **marital_status** ändert, wird der Ausdruck ern
 
 ### Zusammenfassungsausdruck {#summary}
 
-Der Zusammenfassungsausdruck berechnet dynamisch den Titel eines untergeordneten Bedienfelds eines Akkordeon-Layout-Bedienfelds. Sie können den Zusammenfassungsausdruck in einer Regel festlegen, die ein Formularfeld oder eine benutzerdefinierte Logik verwendet, um den Titel zu bewerten. Der Ausdruck wird ausgeführt, wenn das Formular initialisiert wird. Wenn Sie ein Formular im Voraus ausfüllen, wird der Ausdruck ausgeführt, nachdem die Daten vorausgefüllt wurden oder wenn sich der Wert der abhängigen Felder, die im Ausdruck verwendet werden, ändert.
+Der Zusammenfassungsausdruck berechnet dynamisch den Titel eines untergeordneten Bedienfelds eines Akkordeon-Layout-Bedienfelds. Sie können den Zusammenfassungsausdruck in einer Regel festlegen, die ein Formularfeld oder eine benutzerdefinierte Logik verwendet, um den Titel zu bewerten. Der Ausdruck wird ausgeführt, wenn das Formular initialisiert wird. Wenn Sie ein Formular im Voraus ausfüllen, wird der Ausdruck ausgeführt, nachdem die Daten vorausgefüllt wurden oder sich der Wert der im Ausdruck verwendeten abhängigen Felder ändert.
 
 Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeordneten Elementen eines Akkordeon-Layout-Bedienfelds verwendet, um einen aussagekräftigen Titel für jedes untergeordnete Bedienfeld zur Verfügung zu stellen.
 
-**** Gilt für: Bedienfelder, die direkt untergeordnete Elemente eines Bedienfelds sind, dessen Layout als Akkordeon konfiguriert ist.
+**Gilt für:** Bedienfelder, die direkt untergeordnete Elemente eines Bedienfelds sind, dessen Layout als Akkordeon konfiguriert ist.
 
-**** Rückgabetyp: Der Ausdruck gibt eine Zeichenfolge zurück, die zum Titel des Akkordeons wird.
+**Rückgabetyp:** Der Ausdruck gibt eine Zeichenfolge zurück, die zum Titel des Akkordeons wird.
 
-**** Beispiel: &quot;Kontonummer: &quot;+ textbox1.value
+**Beispiel:** &quot;Kontonummer: &quot;+ textbox1.value
 
 ### Ausdruck für die Überprüfung {#validate-expression}
 
-Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verwendung des entsprechenden Ausdrucks verwendet. Normalerweise verwenden solche Ausdrücke reguläre Ausdrücke zusammen mit dem Feldwert, um ein Feld zu validieren. Der Ausdruck wird bei jeder Änderung am Wert des Feldes erneut ausgelöst und der Überprüfungsstatus des Felds wird erneut berechnet.
+Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verwendung des entsprechenden Ausdrucks verwendet. Normalerweise verwenden solche Ausdruck reguläre Ausdruck zusammen mit dem Feldwert, um ein Feld zu validieren. Der Ausdruck wird bei jeder Änderung am Wert des Feldes erneut ausgelöst und der Überprüfungsstatus des Felds wird erneut berechnet.
 
 **Gilt für**: Felder
 
@@ -161,7 +161,7 @@ Das Skript zum Bestätigen von Werten wird ausgelöst, wenn
 
 >[!NOTE]
 >
->Sie können die Ausführung des Skripts zum Bestätigen von Werten deaktivieren, wenn der Wert eines Felds programmgesteuert geändert wird. To do so, go to https://[server]:[port]/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Dann wird das Skript zum Bestätigen von Werten nur ausgeführt, wenn der Benutzer den Wert des Felds in der Benutzeroberfläche ändert.
+>Sie können die Ausführung des Skripts zum Bestätigen von Werten deaktivieren, wenn der Wert eines Felds programmgesteuert geändert wird. To do so, go to https://&#39;[server]:[port]&#39;/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Dann wird das Skript zum Bestätigen von Werten nur ausgeführt, wenn der Benutzer den Wert des Felds in der Benutzeroberfläche ändert.
 
 ### Ausdruck für die Sichtbarkeit {#visibility-expression}
 
@@ -200,7 +200,7 @@ Für ein Feld stehen mehrere Überprüfungsmuster für den sofortigen Einsatz zu
 
 ### Ausdrücke für die Überprüfung {#validation-expressions}
 
-Die Überprüfung eines Felds kann auch mithilfe von Ausdrücken für verschiedene Felder berechnet werden. Diese Ausdrücke werden in das Feld **Gültigkeitsprüfungsskript** der Registerkarte **Skript** des Dialogfelds **Bearbeiten** der Komponente geschrieben. Der Überprüfungsstatus eines Felds hängt von dem Wert ab, den der Ausdruck zurückgibt. Informationen zum Schreiben solcher Ausdrücke finden Sie unter [Ausdruck für die Überprüfung](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+Die Überprüfung eines Felds kann auch mithilfe von Ausdrücken für verschiedene Felder berechnet werden. Diese Ausdrücke werden in das Feld **Gültigkeitsprüfungsskript** der Registerkarte **Skript** des Dialogfelds **Bearbeiten** der Komponente geschrieben. Der Überprüfungsstatus eines Felds hängt von dem vom Ausdruck zurückgegebenen Wert ab. Informationen zum Schreiben solcher Ausdrücke finden Sie unter [Ausdruck für die Überprüfung](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
 
 ## Zusätzliche Informationen {#additional-information}
 
@@ -250,7 +250,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->In AEM empfiehlt es sich, Code in eine clientLib zu schreiben und ihn in Ihre Seite aufzunehmen (header.jsp oder footer.jsp der Seite)
+>In AEM empfiehlt es sich, Code in eine clientLib zu schreiben und ihn in Ihre Seite aufzunehmen (header.jsp oder footer.jsp der Seite).
 
 Um GuideBridge nach der Initialisierung des Formulars zu verwenden (das `bridgeInitializeComplete`-Ereignis wird ausgelöst), rufen Sie die GuideBridge-Instanz mit `window.guideBridge` auf. Sie können den GuideBridge-Initialisierungsstatus mithilfe der `guideBride.isConnected`-API überprüfen.
 
