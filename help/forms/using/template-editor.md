@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -52,13 +52,13 @@ Wenn Sie eine Vorlage zum Bearbeiten öffnen, können Sie die folgenden AEM-Edit
    * **Seitliches Bedienfeld ein/aus**: Hier können Sie die Seitenleiste ein- oder ausblenden.
    * **Seiteninformationen**: Ermöglicht Ihnen die Angabe von Informationen wie dem Zeitpunkt der Veröffentlichung oder der Zurücknahme der Veröffentlichung, Miniaturen, clientseitigen Bibliotheken, einer Seitenrichtlinie und dem Seitendesign einer clientseitigen Bibliothek.
    * **Emulator**: Hier können Sie das Erscheinungsbild für verschiedene Geräte simulieren und anpassen.
-   * **** Ebenenauswahl: Hiermit können Sie die Ebene ändern.
+   * **Ebenenauswahl:** Hiermit können Sie die Ebene ändern.
 Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. Auf der Strukturebene können Sie die Kopf- und Fußzeile hinzufügen und anpassen. Auf der Ebene &quot;Anfänglicher Inhalt&quot;können Sie den Formularinhalt anpassen.
 
-   * **** Vorschau: Ermöglicht die Vorschau des Erscheinungsbilds der Vorlage beim Veröffentlichen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
+   * **Vorschau:** Ermöglicht die Vorschau, wie die Vorlage aussieht, wenn Sie sie veröffentlichen. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
 
 * **Seitenleiste:** Enthält die Inhalts-, Eigenschaften-, Elemente- und Komponenten-Browser.
-* **** Komponenten-Symbolleiste: Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie die Komponente anpassen können.
+* **Komponenten-Symbolleiste:** Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, mit der Sie die Komponente anpassen können.
 * **Seite**: Der Bereich, in dem Sie Inhalt hinzufügen, um die Vorlage zu erstellen.
 
 Weitere Informationen zum Touch UI-Editor finden Sie unter [Einführung in das Authoring adaptiver Formulare.](../../forms/using/introduction-forms-authoring.md)
@@ -80,7 +80,7 @@ Wenn Sie die Strukturebene im Vorlageneditor auswählen, werden die Layout-Conta
 
 Layout-Container in der Strukturebene
 
-******A. Layout-Container für Kopfzeilenkomponente** B. Layout-Container für Fußzeilenkomponente
+**A.** Layout Container für Kopfzeilenkomponente **B.** Layout-Container für Fußzeilenkomponente
 
 Ziehen Sie die Kopfzeilenkomponente des adaptiven Formulars in den Layout-Container über dem Container des adaptiven Formulars. Nachdem Sie die Komponente hinzugefügt haben, können Sie seine Eigenschaften festlegen, mit denen Sie ein Logo hinzufügen und den Titel angeben können.
 
@@ -117,7 +117,7 @@ Weitere Informationen finden Sie unter [Randleiste](../../forms/using/introducti
 
 >[!NOTE]
 >
->Wenn Sie &quot;Inhalt speichern&quot;oder &quot;PDF speichern&quot;als Übermittlungsaktion auswählen, erhalten Sie eine Option zum Angeben des Speicherpfads. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
+>Wenn Sie &quot;Inhalt speichern&quot;oder &quot;PDF speichern&quot;als Übermittlungsaktion auswählen, erhalten Sie eine Option zum Festlegen des Pfads für die Datenspeicherung. Wenn Sie einen Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den korrekten Speicherpfad angeben oder den Formularautoren die Angabe eines anderen Pfads überlassen, damit die Daten von jedem Formular nicht im gleichen Verzeichnis gespeichert werden.
 
 #### Erstellen einer Vorlage für ein adaptives Formular mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
@@ -179,7 +179,7 @@ Führen Sie die folgenden Schritte aus, um Vorlagen anzuzeigen bzw. auszublenden
 
    >[!NOTE]
    >
-   >The URL of AEM web console is https://[server]:[port]/system/console/configMgr
+   >The URL of AEM web console is https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Suchen und öffnen Sie die **FormsManager-Konfigurations** einstellungen:
 
