@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -49,20 +49,20 @@ Wenn ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgeze
 
 Führen Sie die folgenden Schritte aus, um Analytics-Berichte anzuzeigen:
 
-1. Log in to the AEM portal at `https://[hostname]:[port]`
+1. Log in to the AEM portal at `https://[hostname]:'port'`
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**.
 1. Wählen Sie das Formular aus, für das Sie die Analytics-Berichte anzeigen möchten.
 1. Wählen Sie **Mehr > Analytics-Berichte** aus.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**** A. Analytics-Bericht, Befehl
+**A.** Analytics-Bericht, Befehl
 
 AEM Forms zeigt Analytics-Berichte für das Formular und für jeden Bereich im Formular an, wie unten dargestellt.
 
 ![Zusammenfassungsbericht eines adaptiven Formulars](assets/analyticsdashboard_callout.png)
 
-************ A. Konversionen **B. Zusammenfassung auf Formularebene** C.**Zusammenfassung auf Bereichsebene** D. Browser der Besucher - Filter **E. Betriebssystem der Besucher - Filter** F. Sprache der Besucher - Filter
+**A.** Konversionen **B.** Zusammenfassung auf Formularebene **C.** Zusammenfassung auf Bereichsebene **D.** Browser der Besucher - Filter **E.** Betriebssystem der Besucher - Filter **F.** Sprache der Besucher - Filter
 
 Standardmäßig wird der Analytics-Bericht für die letzten sieben Tage angezeigt. Sie können Berichte für die letzten 15 Tage, den letzten Monat usw. anzeigen oder einen Datumsbereich angeben.
 
@@ -91,7 +91,7 @@ Mit der Zusammenfassung auf Formularebene erhalten Sie einen Einblick in die Lei
 * **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde 
 * **Übermittlungen**: Gibt an, wie oft das Formular gesendet wurde
 * **Abbruch**: Gibt an, wie oft Benutzer das Ausfüllen des Formulars begonnen und dann abgebrochen haben
-* **Individuelle Besucher**: Anzahl der Wiedergaben des Formulars durch Unique Visitors. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **Individuelle Besucher**: Anzahl der Wiedergaben des Formulars durch eindeutige Besucher. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Erweiterter zusammenfassender Analysebericht auf Formularebene](assets/analytics-report.png)
 
