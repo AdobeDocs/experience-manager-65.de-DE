@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -53,7 +53,7 @@ Für ein adaptives Formular ist die Option „Automatisches Speichern“ nicht s
    >
    >Damit die Option zum automatischen Speichern für anonyme Benutzer funktioniert, stellen Sie sicher, dass Sie den allgemeinen Forms-Konfigurationsdienst so konfiguriert ist, dass alle Benutzer Formulare in der Vorschau anzeigen, überprüfen und zu signieren können.
    >
-   >To configure the service, go to AEM Web Console configuration at `https://[server]:[host]/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
+   >To configure the service, go to AEM Web Console configuration at `https://server:port/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
 
 ## Implementieren einer benutzerdefinierten Strategie, um automatisches Speichern für adaptive Formulare zu aktivieren {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 
