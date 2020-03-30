@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -47,7 +47,7 @@ Ein Assistent zum Erstellen eines Designs wird gestartet.
 
    * **Clientlib-Speicherort**: Speicherort im Repository, in dem die clientlibs für das Design gespeichert werden.
 
-   * **Clientlib-Kategorie**: Stellt ein Textfeld zur Eingabe des clientlib-Kategorienamens für das Design bereit.
+   * **Clientlib-Kategorie**: Stellt ein Textfeld zur Eingabe des Namens der clientlib-Kategorie für das Design bereit.
 
 1. Click **Create** and then click **Edit** to open the theme in Theme Editor, or click **Done** to return to the themes page.
 
@@ -75,7 +75,7 @@ Hochladen von Designs:
 
 1. Auf der Seite „Designs“ klicken Sie auf **Erstellen > Dateiaktualisierung**.
 1. In der Eingabeaufforderung zur Dateiaktualisierung suchen Sie ein Designpaket auf Ihrem Computer, wählen es aus und klicken auf **Hochladen**.
-Das hochgeladene Design ist auf der Seite &quot;Designs&quot;verfügbar.
+Das hochgeladene Design ist auf der Seite &quot;Themen&quot;verfügbar.
 
 ## Metadaten eines Designs {#metadata-of-a-theme}
 
@@ -172,7 +172,7 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
      <li>Der benutzerdefinierte Pfad für das Repository innerhalb von „/etc“, wo die clientlibs für dieses Design gespeichert werden.</li>
      <li>Standardwert - „/etc/clientlibs/fd/themes“ + relativer Pfad des Designassets.</li>
      <li>Wenn der Speicherort nicht vorhanden ist, wird die Ordnerhierarchie automatisch generiert.</li>
-     <li>Wenn dieser Wert geändert wird, wird die clientlib-Knotenstruktur an den eingegebenen neuen Speicherort verschoben.<br /><em> <strong></strong>Hinweis: Wenn Sie den standardmäßigen clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>an <code>forms-users</code> und <code>crx:replicate</code>an <code>jcr:read </code>den neuen Speicherort <code>fd-service</code> zu. Also attach another ACL by adding <code>deny jcr:addChildNodes</code> for <code>forms-user</code></em></li>
+     <li>Wenn dieser Wert geändert wird, wird die clientlib-Knotenstruktur an den eingegebenen neuen Speicherort verschoben.<br /> <em><strong>Hinweis:</strong> Wenn Sie den standardmäßigen clientlib-Speicherort ändern, weisen Sie im CRXDE-Repository <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>an <code>forms-users</code> und <code>crx:replicate</code>an <code>jcr:read </code>den neuen Speicherort <code>fd-service</code> zu. Also attach another ACL by adding <code>deny jcr:addChildNodes</code> for <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ Liste der Metaeigenschaften eines Designs (auf der Eigenschaftenseite eines Desi
 
 ## Informationen zum Design-Editor {#about-the-theme-editor}
 
-Im Lieferumfang von AEM Forms ist der Design-Editor enthalten. Es handelt sich dabei um eine benutzerfreundliche Benutzeroberfläche für Unternehmen und Webdesigner/Entwickler, die Funktionen bietet, mit denen Sie die Formatierung verschiedener adaptiver Formulare und interaktiver Kommunikationselemente einfach festlegen können. Wenn Sie ein Design erstellen, wird es als separate Entität wie Formulare, interaktive Kommunikation, Briefe, Dokumentfragmente und Datenwörterbücher gespeichert.
+Im Lieferumfang von AEM Forms ist der Design-Editor enthalten. Es handelt sich dabei um eine benutzerfreundliche Benutzeroberfläche für Unternehmen und Webdesigner/Entwickler, die Funktionen bietet, mit denen Sie die Formatierung verschiedener adaptiver Formulare und interaktiver Kommunikationselemente einfach festlegen können. Wenn Sie ein Design erstellen, wird es als separate Entität wie Formulare, interaktive Kommunikation, Briefe, Dokument-Fragmente und Datenwörterbücher gespeichert.
 
 Mit dem Design-Editor können Sie Stile der in einem Design mit einem Stil versehenen Komponenten anpassen. Sie können festlegen, wie ein Formular oder eine interaktive Kommunikation auf einem Gerät angezeigt wird.
 
@@ -204,7 +204,7 @@ Der Design-Editor ist in zwei Bereiche unterteilt:
 
    * **Selektor:** Zeigt die für die Formatierung ausgewählte Komponente an und die Eigenschaften, die Sie gestalten können. Der Selektor stellt alle Komponenten eines bestimmten Typs dar. Wenn Sie eine Textfeld-Komponente in einem Design für die Formatierung auswählen, übernehmen alle Textfelder im Formular oder der interaktiven Kommunikation diesen Stil. Mit Selektoren können Sie eine allgemeine Komponente oder eine spezielle Komponente für die Formatierung auswählen. Beispielsweise ist eine Feldkomponente eine allgemeine Komponente und ein Textfeld ist eine spezielle Komponente.
 
-      ****Generische Stilkomponente:
+      **Generische Stilkomponente:**
 Ein Feld kann ein numerisches Feld (z. B. Alter) oder ein Textfeld (z. B. Adresse) sein.
 Wenn Sie ein Feld formatieren, werden alle Felder wie Alter, Name, Adresse formatiert.
 
@@ -215,15 +215,15 @@ Eine bestimmte Komponente wirkt sich auf Objekte der jeweiligen Kategorie aus. W
 
       Wenn Sie alle Feldkomponenten mit einer bestimmten Hintergrundfarbe anpassen, übernehmen alle Felder wie Alter, Name und Adresse die Hintergrundfarbe. Wenn Sie ein numerisches Feld wie Alter auswählen und seine Breite verringern, wird die Breite aller numerischer Felder, wie Alter, Anzahl der Personen in einer Familie, verringert. Die Breite der Textfelder wird nicht geändert.
 
-   * **** Bundesland: Ermöglicht das Anpassen der Stile eines Objekts in einem bestimmten Status. Beispielsweise können Sie festlegen, wie ein Objekt mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ aussieht.
+   * **Bundesland:** Ermöglicht das Anpassen der Stile eines Objekts in einem bestimmten Status. Beispielsweise können Sie festlegen, wie ein Objekt mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ aussieht.
    * **Eigenschaftenkategorien: ** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Zum Beispiel Dimension und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Stilinformationen ein. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
 
-   * **** Erweitert: Ermöglicht das Hinzufügen benutzerdefinierter CSS zu einem Objekt, wodurch die Eigenschaften, die visuelle Steuerelemente definieren, überschrieben werden, wenn eine Überschneidung vorliegt.
+   * **Erweitert:** Ermöglicht das Hinzufügen benutzerdefinierter CSS zu einem Objekt, wodurch die Eigenschaften, die visuelle Steuerelemente definieren, überschrieben werden, wenn eine Überschneidung vorliegt.
 
    * **CSS anzeigen**: Ermöglicht das Anzeigen von CSS für die ausgewählte Komponente
    Zusätzlich befindet sich unten in der Seitenleiste ein Pfeil. Wenn Sie auf den Pfeil klicken, erhalten Sie zwei zusätzliche Optionen: **Erfolg simulieren** und **Fehler simulieren.** Diese Optionen werden zusammen mit den oben beschriebenen Optionen [nachfolgend](../../forms/using/themes.md#using-rail) detailliert erläutert.
 
-[ ![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png)**** **A. Seitenleiste** B. Arbeitsfläche
+[ ![Design-Editor mit hervorgehobener Leiste und Arbeitsfläche.](assets/themes.png)](assets/themes-1.png) **A.** Seitenleiste **B.** Arbeitsfläche
 
 ### Stilkomponenten {#styling-components}
 
@@ -270,7 +270,7 @@ Verwenden Sie Design-Editor-Haltepunkte, um eine unterschiedliche Formatierung f
 
 >[!NOTE]
 >
->Das Design wird zuerst mithilfe eines Formulars oder interaktiver Kommunikation erstellt und dann auf verschiedene Formulare oder interaktive Kommunikation angewandt. Die Haltepunkte, die bei der Designerstellung verwendet werden, können sich von dem Formular oder der interaktiven Kommunikation unterscheiden, auf die das Design angewandt wird. Die CSS-Medienabfragen basieren auf dem Formular oder der interaktiven Kommunikation, die bei der Designerstellung verwendet wird, und nicht auf dem Formular oder der interaktiven Kommunikation, auf das bzw. die das Design angewendet wird.
+>Das Design wird zuerst mithilfe eines Formulars oder interaktiver Kommunikation erstellt und dann auf verschiedene Formulare oder interaktive Kommunikation angewandt. Die Haltepunkte, die bei der Designerstellung verwendet werden, können sich von dem Formular oder der interaktiven Kommunikation unterscheiden, auf die das Design angewandt wird. Die CSS-Media-Abfragen basieren auf dem Formular oder der interaktiven Kommunikation, die bei der Designerstellung verwendet wird, und nicht auf dem Formular oder der interaktiven Kommunikation, auf das bzw. die das Design angewendet wird.
 
 ### Kontextänderungen der Formatierungseigenschaften in der Seitenleiste bei der Auswahl der Objekte {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -288,7 +288,7 @@ Während Sie eine Komponente mit Stilen versehen, werden die Stile zwischengespe
 
 In diesem Beispiel wird der Stil für die Feldbeschriftung geändert, und wenn Responsive-Bereichsbeschreibung für den Stil ausgewählt ist, wird ein Listeneintrag in der Asset-Bibliothek hinzugefügt. Der Eintrag in der Asset-Bibliothek kann verwendet werden, um den Stil für die Responsive-Bereichsbeschreibung zu ändern.
 
-Wenn ein Stil in der Asset-Bibliothek hinzugefügt wird, steht er für andere Designs und im [Stil-Modus](../../forms/using/inline-style-adaptive-forms.md) des Formular-Editors oder in der Editor-Benutzeroberfläche der interaktiven Kommunikation zur Verfügung. Wenn Sie den Stilmodus des Formulareditors oder der interaktiven Kommunikations-Editor-Benutzeroberfläche zum Formatieren einer Komponente verwenden, wird der Stil zwischengespeichert und ist in Designs verfügbar.
+Wenn ein Stil in der Asset-Bibliothek hinzugefügt wird, steht er für andere Designs und im [Stil-Modus](../../forms/using/inline-style-adaptive-forms.md) des Formular-Editors oder in der Editor-Benutzeroberfläche der interaktiven Kommunikation zur Verfügung. Wenn Sie den Stilmodus des Formulareditors oder der interaktiven Kommunikations-Editor-Benutzeroberfläche zum Formatieren einer Komponente verwenden, wird der Stil zwischengespeichert und ist in Themen verfügbar.
 
 Mit der Plus-Schaltfläche in der Asset-Bibliothek können Sie den Stil dauerhaft mit einem Namen speichern. Das Pluszeichen speichert den Stil, selbst wenn Sie sich nicht auf die Schaltfläche „Speichern“ in der Seitenleiste klicken, um den Stil auf eine Komponente anzuwenden. Die Plusschaltfläche zum Speichern eines Stils für die spätere Verwendung ist im Stilmodus nicht verfügbar.
 
@@ -311,7 +311,7 @@ Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil a
 
 ### Theme with another adaptive form or interactive communication {#theme-with-another-adaptive-form-or-interactive-communication}
 
-Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie geben die Formatierung für die Komponenten in diesem Formular vor. Anstelle des Formulars, das im Lieferumfang des Design-Editors enthalten ist, können Sie ein Formular oder eine interaktive Kommunikation Ihrer Wahl auswählen, um die Formatierung bereitzustellen und eine Vorschau der Ergebnisse anzuzeigen.
+Wenn Sie ein Design erstellen, wird es mit einem Formular erstellt, das im Lieferumfang des Design-Editors enthalten ist. Sie geben die Formatierung für die Komponenten in diesem Formular vor. Anstelle des Formulars, das im Lieferumfang des Design-Editors enthalten ist, können Sie ein Formular oder eine interaktive Kommunikation Ihrer Wahl auswählen, um den Stil und die Vorschau der Ergebnisse zu gewährleisten.
 
 So ersetzen Sie das aktuelle Formular oder die interaktive Kommunikation auf der Arbeitsfläche des Design-Editors:
 
@@ -347,7 +347,7 @@ In der Arbeitsflächen-Symbolleiste sehen Sie Folgendes:
 * **Seitliches Bedienfeld** ![umschalten](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * **Themenoptionen** ![Themenoptionen](assets/theme-options.png): Bietet drei Optionen
 
-   * Konfigurieren: Bietet Optionen zur Auswahl des Vorschauformulars oder der interaktiven Kommunikation, der Basis-clientlib und der Typekit-Konfiguration.
+   * Konfigurieren: Bietet Optionen zur Auswahl des Formulars oder der interaktiven Kommunikation, der Basis-ClientLib und der Typekit-Konfiguration.
    * Design-CSS anzeigen: Erzeugt CSS für das ausgewählte Design.
    * Stile verwalten: Bietet Optionen zum Verwalten von Text- und Bildstilen
    * Hilfe: Zeigt eine Einführung in den Design-Editor mit Abbildungen an.
@@ -471,7 +471,7 @@ Um das Verhalten von anderen Status als „Fehler und Erfolg“ zu simulieren, v
 
 ### Formatieren vonayouts für kleinere Displays {#styling-layouts-for-smaller-displays}
 
-Verwenden Sie das Lineal auf der Arbeitsfläche, um Haltepunkte für Geräte mit kleineren Displays auszuwählen. Click emulator ![ruler](assets/ruler.png) in Canvas to view ruler and breakpoints. Mithilfe der Haltepunkte können Sie eine Vorschau eines Formulars oder einer interaktiven Kommunikation für Displaygrößen von verschiedenen Geräten wie Smartphones und Tablets anzeigen. Der Design-Editor unterstützt verschiedene Displaygrößen.
+Verwenden Sie das Lineal auf der Arbeitsfläche, um Haltepunkte für Geräte mit kleineren Displays auszuwählen. Click emulator ![ruler](assets/ruler.png) in Canvas to view ruler and breakpoints. Mithilfe der Haltepunkte können Sie ein Formular oder eine interaktive Kommunikation für Displaygrößen von verschiedenen Geräten, wie Smartphones und Tablets, Vorschau werden. Der Design-Editor unterstützt verschiedene Displaygrößen.
 
 So formatieren Sie Komponenten für verschiedene Haltepunkte:
 
@@ -508,7 +508,7 @@ Führen Sie die folgenden Schritte aus, um ein Design zu konfigurieren, um die T
 
 Mit dem Designkonfigurationsdienst können Sie dem Designeditor weitere Schriften hinzufügen. Führen Sie die folgenden Schritte durch, um Schriften hinzuzufügen:
 
-1. Melden Sie sich bei der AEM-Web-Konsole mit Administratorberechtigungen an. URL for the AEM Web Console is `https://[server]:[port]/system/console/configMgr`.
+1. Melden Sie sich bei der AEM-Web-Konsole mit Administratorberechtigungen an. URL for the AEM Web Console is `https://'[server]:[port]'/system/console/configMgr`.
 1. Öffnen Sie den **Adaptiven Formulardesignkonfigurationsdienst**.
 
    ![theme-config](assets/theme-config.png)
@@ -596,11 +596,11 @@ Nachdem Sie das Design angepasst haben, wenden Sie es auf Ihr Formular oder Ihre
 
 ## Auswirkungen auf andere Anwendungsfälle adaptiver Formulare {#impact-on-other-adaptive-form-use-cases}
 
-* **** Veröffentlichen und Rückgängigmachen der Veröffentlichung eines Formulars: Beim Veröffentlichen eines Formulars wird das angewendete Design ebenfalls veröffentlicht (sofern es noch nicht veröffentlicht wurde)
-* **** Formular importieren/exportieren: Beim Importieren oder Exportieren eines Formulars wird das zugehörige Design auch automatisch importiert oder exportiert.
-* **** Verweise auf ein Formular: Der Abschnitt &quot;Verweise&quot;in den Formularverweisen enthält einen zusätzlichen Eintrag für das Design.
-* **** Letzte Änderungszeit eines Formulars: Wird aktualisiert, wenn das zugehörige Design geändert wird.
-* **** A/B-Tests: Bei A/B-Tests können Sie ein anderes Design auf zwei Versionen des Formulars anwenden. Die Informationen der beiden Designs werden einzeln in den beiden Guide-Containern gespeichert.
+* **Veröffentlichen und Rückgängigmachen der Veröffentlichung eines Formulars:** Beim Veröffentlichen eines Formulars wird das angewendete Design ebenfalls veröffentlicht (sofern es noch nicht veröffentlicht wurde)
+* **Formular importieren/exportieren:** Beim Importieren oder Exportieren eines Formulars wird das zugehörige Design auch automatisch importiert oder exportiert.
+* **Verweise auf ein Formular:** Der Abschnitt &quot;Verweise&quot;in den Formularverweisen enthält einen zusätzlichen Eintrag für das Design.
+* **Letzte Änderungszeit eines Formulars:** Wird aktualisiert, wenn das zugehörige Design geändert wird.
+* **A/B-Tests:** Bei A/B-Tests können Sie ein anderes Design auf zwei Versionen des Formulars anwenden. Die Informationen der beiden Designs werden einzeln in den beiden Guide-Containern gespeichert.
 
 ## CSS-Generierungssequenz {#css-generation-sequence}
 
@@ -619,13 +619,13 @@ Wenn Sie im Design-Editor Stile für Komponenten angeben, wird wie oben beschrie
 Zum Anzeigen des generierten CSS stehen die folgenden Optionen zur Verfügung:
 
 * Option **CSS anzeigen** in der Seitenleiste: Wenn Sie eine Komponente im Design auswählen, wird die Option „CSS anzeigen“ in der Seitenleiste angezeigt. It shows the generated CSS, including CSS for `::before` and `::after` pseudo elements.
-* **Option &quot;Design-CSS** anzeigen&quot;in der Symbolleiste der Arbeitsfläche: Klicken Sie in der Symbolleiste der Arbeitsfläche auf ![Designoptionen](assets/theme-options.png) > Design-CSS **anzeigen**. Dadurch wird das gesamte Design-CSS angezeigt, das mithilfe der von Ihnen im Design-Editor definierten Eigenschaften generiert wurde.
+* **CSS** -Option &quot;Ansicht-Design&quot;in der Arbeitsflächenleiste: Klicken Sie in der Symbolleiste der Arbeitsfläche auf ![Designoptionen](assets/theme-options.png) > CSS für **Ansichten-Design**. Dadurch wird das gesamte Design-CSS angezeigt, das mithilfe der von Ihnen im Design-Editor definierten Eigenschaften generiert wurde.
 
 ## Fehlerbehebung, Empfehlungen und optimale Verfahren {#troubleshooting-recommendations-and-best-practices}
 
 * **Vermeiden von Assets aus einem anderen Design**
 
-   Wenn Sie ein Design bearbeiten, können Sie Assets (z. B. Bilder) aus anderen Designs durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. For example, when you select **Page** ![edit-button](assets/edit-button.png)> **Background** > **Add** > **Image**, you see a dialog that lets you browse and add images in other theme.
+   Wenn Sie ein Design bearbeiten, können Sie Assets (z. B. Bilder) aus anderen Themen durchsuchen und hinzufügen. Angenommen, Sie bearbeiten den Hintergrund einer Seite. For example, when you select **Page** ![edit-button](assets/edit-button.png)> **Background** > **Add** > **Image**, you see a dialog that lets you browse and add images in other theme.
 
 *  Dabei können Probleme im aktuellen Design auftreten, wenn ein Asset aus einem anderen Design hinzugefügt, dieses jedoch verschoben oder gelöscht wird. Wir empfehlen daher, keine Assets aus anderen Designs zu durchsuchen und hinzuzufügen.
 * **Verwenden der Basis-Clientlib, des Design-Editors und der Inline-Formatierung**
@@ -640,12 +640,12 @@ Zum Anzeigen des generierten CSS stehen die folgenden Optionen zur Verfügung:
       1. Wählen Sie auf der Registerkarte „Erweitert“ im Clientlib-Feld die Client-Bibliothek aus, die Sie verwenden möchten.
       1. Klicken Sie auf **Speichern**.
       Die Formatierung, die Sie in der Client-Library angeben, wird in das Design importiert, das sie verwendet. Beispiel: Geben Sie die Formatierung für das Textfeld, das numerische Feld ein, und wechseln Sie zur Client-Bibliothek. Wenn Sie die Client-Bibliothek im Design importieren, wird die Formatierung für das Textfeld, das numerische Feld und den Schalter importiert. Sie können dann andere Komponenten mithilfe des Design-Editors formatieren.
-Sie können auch ein Design erstellen, Kopien davon erstellen und dann die Formatierung in den kopierten Designs für ähnliche Anwendungsfälle ändern.
+Sie können auch ein Design erstellen, Kopien davon erstellen und dann die Formatierung in den kopierten Themen für ähnliche Anwendungsfälle ändern.
 Siehe [Kreieren eines bestimmten Looks mithilfe von Designs](#specific-af-appearance)
 
    * **Themen-Editor:**
 
-      Mit dem Design-Editor können Sie Designs erstellen, um Ihr Formular oder Ihre interaktive Kommunikation zu gestalten. Sie können auch die Gestaltung von Komponenten in einem Design festlegen, die die Konsistenz von Looks in mehreren Formularen oder interaktiven Kommunikationen, die Sie gestalten, gewährleisten. Es wird empfohlen, Stilinformationen in einem Design anzugeben und das Design dann auf ein Formular anzuwenden.
+      Mit dem Design-Editor können Sie Themen erstellen, um Ihr Formular oder Ihre interaktive Kommunikation zu gestalten. Sie können auch die Gestaltung von Komponenten in einem Design festlegen, die die Konsistenz von Looks in mehreren Formularen oder interaktiven Kommunikationen, die Sie gestalten, gewährleisten. Es wird empfohlen, Stilinformationen in einem Design anzugeben und das Design dann auf ein Formular anzuwenden.
 
    * **Inline-Stil:**
 
@@ -656,11 +656,11 @@ Siehe [Kreieren eines bestimmten Looks mithilfe von Designs](#specific-af-appear
 
    If you want to create client libraries to import styling information, see [Using Client Side Libraries](/help/sites-developing/clientlibs.md). Nachdem Sie eine Client-Bibliothek erstellt haben, können Sie sie in das Design mithilfe der oben genannten Schritte importieren.
 
-* **Ändern der Layoutbreite des Containerfelds**
+* **Ändern der Layoutbreite des Containers**
 
-   Eine Änderung der Behälterlayoutbreite wird nicht empfohlen. Wenn Sie die Breite eines Containerbereichs angeben, wird er statisch und kann nicht an unterschiedliche Anzeigen angepasst werden.
+   Eine Änderung der Layoutbreite des Containers wird nicht empfohlen. Wenn Sie die Breite eines Containerbereichs angeben, wird er statisch und kann nicht an unterschiedliche Anzeigen angepasst werden.
 
 * **Verwendung des Formular- oder Design-Editors für die Arbeit mit Kopf- und Fußzeile**
 
    Verwenden Sie den Design-Editor, wenn Sie Kopf- und Fußzeilen mit Formatierungsoptionen wie Schriftschnitt, Hintergrund und Transparenz formatieren möchten.
-Wenn Sie Informationen wie ein Logobild, einen Firmennamen in der Kopfzeile und Copyright-Informationen in der Fußzeile bereitstellen möchten, verwenden Sie die Optionen des Formulareditors.
+Wenn Sie Informationen wie ein Logobild, einen Firmen-Namen in der Kopfzeile und Copyright-Informationen in der Fußzeile bereitstellen möchten, verwenden Sie die Optionen des Formulareditors.
