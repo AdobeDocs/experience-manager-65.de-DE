@@ -8,7 +8,7 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -155,7 +155,7 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) ist eine Skriptsprache. Sie wird für clientseitige Skript- und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um ECMAScript zum Hinzufügen benutzerdefinierter Metadaten für eine E-Mail-Vorlage zu verwenden:
 
-1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. The URL is https://[server]:[port]/crx/de/index.jsp
+1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. The URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
 1. Navigieren Sie zu /apps/fd/dashboard/scripts/metadataScripts. Erstellen Sie eine Datei mit der Erweiterung „.ecma“. Beispiel: usermetadata.ecma
 
