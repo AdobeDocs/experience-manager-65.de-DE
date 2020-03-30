@@ -10,32 +10,32 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Java-API-Schnellstart (SOAP) des Encryption Service {#encryption-service-java-api-quickstart-soap}
+# Java API Quick Beginn (SOAP) des Encryption Service {#encryption-service-java-api-quickstart-soap}
 
-[Kurzanleitung (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Kennwortbasierte Verschlüsselung mit der Java-API entfernen](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Kennwortbasierte Verschlüsselung mit der Java-API entfernen](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Zertifikatbasierte Verschlüsselung mit der Java-API entfernen](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Zertifikatbasierte Verschlüsselung mit der Java-API entfernen](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mit der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mithilfe der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Ermitteln des Verschlüsselungstyps mithilfe der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Ermitteln des Verschlüsselungstyps mithilfe der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Die unter &quot;Programmieren mit AEM Forms&quot;aufgeführten Schnellstarts basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Kurzanleitung (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit der Java-API {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit der Java-API {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* mit dem Kennwortwert `OpenPassword`. Das Hauptkennwort lautet `PermissionPassword`. Das gesicherte PDF-Dokument wird als PDF-Datei mit dem Namen *EncryptLoan.pdf* gespeichert. (Siehe PDF-Dokumente mit einem Kennwort [verschlüsseln](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Das folgende Java-Codebeispiel verschlüsselt ein PDF-Dokument mit dem Namen *Loan.pdf* mit dem Kennwortwert `OpenPassword`. Das Hauptkennwort lautet `PermissionPassword`. Das gesicherte PDF-Dokument wird als PDF-Datei mit dem Namen *EncryptLoan.pdf* gespeichert. (Siehe PDF-Dokumente mit einem Kennwort [verschlüsseln](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 ```as3
  /*
@@ -102,7 +102,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* mi
      try{
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -153,9 +153,9 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* mi
  }
 ```
 
-## Kurzanleitung (SOAP-Modus): Kennwortbasierte Verschlüsselung mit der Java-API entfernen {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Kennwortbasierte Verschlüsselung mit der Java-API entfernen {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird die kennwortbasierte Verschlüsselung aus einem PDF-Dokument mit dem Namen *EncryptLoan.pdf* entfernt. Der Hauptkennwortwert zum Entfernen der kennwortbasierten Verschlüsselung ist *PermissionPassword*. Das unbesicherte PDF-Dokument wird als PDF-Datei mit dem Namen *noEncryptionLoan.pdf* gespeichert. (Siehe [Kennwortverschlüsselung](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)entfernen.)
+Im folgenden Java-Codebeispiel wird eine kennwortbasierte Verschlüsselung aus einem PDF-Dokument mit dem Namen *EncryptLoan.pdf* entfernt. Der Hauptkennwortwert zum Entfernen der kennwortbasierten Verschlüsselung ist *PermissionPassword*. Das unbesicherte PDF-Dokument wird als PDF-Datei mit dem Namen *noEncryptionLoan.pdf* gespeichert. (Siehe [Kennwortverschlüsselung](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)entfernen.)
 
 ```as3
  /*
@@ -220,7 +220,7 @@ Im folgenden Java-Codebeispiel wird die kennwortbasierte Verschlüsselung aus ei
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -250,7 +250,7 @@ Im folgenden Java-Codebeispiel wird die kennwortbasierte Verschlüsselung aus ei
  }
 ```
 
-## Kurzanleitung (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Java-API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Verschlüsseln eines PDF-Dokuments mit einem Zertifikat mithilfe der Java-API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* mit einem Zertifikat mit dem Namen *Encryption.cer* verschlüsselt. Das verschlüsselte PDF-Dokument wird als PDF-Datei mit dem Namen *EncryptLoanCert.pdf* gespeichert. (See [Encrypting PDF Documents with Certificates](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
@@ -320,7 +320,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* mi
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -379,7 +379,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* mi
  
 ```
 
-## Kurzanleitung (SOAP-Modus): Zertifikatbasierte Verschlüsselung mit der Java-API entfernen {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Zertifikatbasierte Verschlüsselung mit der Java-API entfernen {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
 
 The following Java code example removes certificate-based encryption from a PDF document named *EncryptLoanCert.pdf*. Der Alias des öffentlichen Schlüssels, der zum Entfernen der Verschlüsselung verwendet wird, ist `Encryption`. Das unbesicherte PDF-Dokument wird als PDF-Datei mit dem Namen *noEncryptionLoan.pdf* gespeichert. (Siehe [Zertifikatbasierte Verschlüsselung](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption)entfernen.)
 
@@ -446,7 +446,7 @@ The following Java code example removes certificate-based encryption from a PDF 
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -476,9 +476,9 @@ The following Java code example removes certificate-based encryption from a PDF 
  }
 ```
 
-## Kurzanleitung (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mit der Java-API {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Entsperren eines verschlüsselten PDF-Dokuments mithilfe der Java-API {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein kennwortverschlüsseltes PDF-Dokument mit dem Namen *EncryptLoan.pdf* entsperrt. (Siehe [Entsperren verschlüsselter PDF-Dokumente](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
+Im folgenden Java-Codebeispiel wird ein kennwortverschlüsseltes PDF-Dokument mit dem Namen *EncryptLoan.pdf* entsperrt. (Siehe [Entsperren von verschlüsselten PDF-Dokumenten](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
 ```as3
  /*
@@ -542,7 +542,7 @@ Im folgenden Java-Codebeispiel wird ein kennwortverschlüsseltes PDF-Dokument mi
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -572,7 +572,7 @@ Im folgenden Java-Codebeispiel wird ein kennwortverschlüsseltes PDF-Dokument mi
  
 ```
 
-## Kurzanleitung (SOAP-Modus): Ermitteln des Verschlüsselungstyps mithilfe der Java-API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Ermitteln des Verschlüsselungstyps mithilfe der Java-API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird der Typ der Verschlüsselung zum Schutz eines PDF-Dokuments mit dem Namen *EncryptLoan.pdf* festgelegt. (Siehe [Ermitteln des Verschlüsselungstyps](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
@@ -638,7 +638,7 @@ Im folgenden Java-Codebeispiel wird der Typ der Verschlüsselung zum Schutz eine
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
