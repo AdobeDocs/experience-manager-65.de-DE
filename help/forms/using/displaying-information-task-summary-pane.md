@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Wenn Sie eine Aufgabe in AEM Forms Workspace öffnen, kann eine Zusammenfassung der Aufgabe in einem entsprechenden Fenster angezeigt werden. Diese zusätzlichen und wichtigen Informationen zu einer Aufgabe sind nützlich für den Endbenutzer von AEM Forms Workspace.
 
-Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich Aufgabenzusammenfassung anzeigen. Es kann ein Vorgang erstellt werden, um eine Aufgabenzusammenfassung mithilfe von Workbench anzuzeigen.
+Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich &quot;Aufgabe Summary&quot;anzeigen. Es kann ein Vorgang erstellt werden, um eine Aufgabenzusammenfassung mithilfe von Workbench anzuzeigen.
 
 1. Erstellen Sie in Workbench einen Assign Task-Prozess. Weitere Informationen zum Prozess „Assign Task“ finden Sie im Dienstreferenzthema der [Workbench-Hilfe](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
@@ -30,7 +30,7 @@ Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich Aufgaben
 1. Konfigurieren Sie das URL-Feld für die Aufgabenzusammenfassung. Sie können einen Literalwert, eine Vorlage, eine Variable oder einen XPath-Ausdruck angeben.
 1. Nachfolgend finden Sie ein Beispiel für die Anzeige von Informationen auf der Aufgabenzusammenfassungsseite.
 
-   * Log in to CRXDE Lite environment at `https://[server]:[port]/lc/crx/de`.
+   * Log in to CRXDE Lite environment at `https://'[server]:[port]'/lc/crx/de`.
    * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
    * `Create a folder`**BeispielSummary **unter`/apps`. In the Access Control List of`/apps/SampleSummary`, add an entry for`PERM_WORKSPACE_USER`allowing`jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
