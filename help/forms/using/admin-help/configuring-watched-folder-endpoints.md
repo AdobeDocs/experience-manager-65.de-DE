@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 translation-type: tm+mt
-source-git-commit: 687cdacc2868de16a4df968dddedd330ce3317bb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -115,27 +115,27 @@ Der Prozess des Aufrufens eines Dienstes mithilfe überwachter Ordner läuft fol
 
 Mithilfe der folgenden Einstellungen können Sie einen Endpunkt des Typs „überwachter Ordner“ konfigurieren.
 
-**** Name: (Obligatorisch) Gibt den Endpunkt an. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
+**Name:** (Obligatorisch) Gibt den Endpunkt an. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
 
-**** Beschreibung: Eine Beschreibung des Endpunkts. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
+**Beschreibung:** Eine Beschreibung des Endpunkts. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
 
-**** Pfad: (Obligatorisch) Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss diese Einstellung auf einen freigegebenen Netzwerkordner zeigen, auf den alle Computer im Cluster zugreifen können.
+**Pfad:** (Obligatorisch) Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss diese Einstellung auf einen freigegebenen Netzwerkordner zeigen, auf den alle Computer im Cluster zugreifen können.
 
-**** Asynchron: Identifiziert den Aufruftyp als asynchron oder synchron. Der Standardwert ist „asynchron“. „Asynchron“ wird für langlebige Prozesse empfohlen, während „synchron“ für transiente und kurzlebige Prozesse empfohlen wird.
+**Asynchron:** Identifiziert den Aufruftyp als asynchron oder synchron. Der Standardwert ist „asynchron“. „Asynchron“ wird für langlebige Prozesse empfohlen, während „synchron“ für transiente und kurzlebige Prozesse empfohlen wird.
 
-**** Cron-Ausdruck: Geben Sie einen Cron-Ausdruck ein, wenn der überwachte Ordner mithilfe eines Cron-Ausdrucks geplant werden muss. Wenn diese Einstellung konfiguriert ist, wird „Repeat Interval“ ignoriert.
+**Cron-Ausdruck:** Geben Sie einen Cron-Ausdruck ein, wenn der überwachte Ordner mithilfe eines Cron-Ausdrucks geplant werden muss. Wenn diese Einstellung konfiguriert ist, wird „Repeat Interval“ ignoriert.
 
-**** Wiederholungsintervall: Das Intervall in Sekunden zum Überprüfen des überwachten Ordners auf Eingabe. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss „Wiederholungsintervall“ größer als die Dauer zum Verarbeiten eines durchschnittlichen Auftrags sein. Andernfalls kann das System überlastet werden. Der Standardwert ist „5“. Weitere Informationen finden Sie in der Beschreibung für die Stapelgröße.
+**Wiederholungsintervall:** Das Intervall in Sekunden zum Überprüfen des überwachten Ordners auf Eingabe. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss „Wiederholungsintervall“ größer als die Dauer zum Verarbeiten eines durchschnittlichen Auftrags sein. Andernfalls kann das System überlastet werden. Der Standardwert ist „5“. Weitere Informationen finden Sie in der Beschreibung für die Stapelgröße.
 
-**** Wiederholungszahl: Gibt an, wie oft der überwachte Ordner den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
+**Wiederholungszahl:** Gibt an, wie oft der überwachte Ordner den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
 
-**** Flasche: Wenn diese Option aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die AEM Forms zu jeder Zeit verarbeitet. Die maximale Anzahl von Aufträgen wird durch den Wert von „Stapelgröße“ bestimmt. (Siehe Informationen zu Einschränkungen.)
+**Flasche:** Wenn diese Option aktiviert ist, wird die Anzahl der Aufträge für überwachte Ordner begrenzt, die AEM Forms zu jeder Zeit verarbeitet. Die maximale Anzahl von Aufträgen wird durch den Wert von „Stapelgröße“ bestimmt. (Siehe Informationen zu Einschränkungen.)
 
-**** Benutzername: (Obligatorisch) Der Benutzername, der beim Aufrufen eines Zieldiensts aus dem überwachten Ordner verwendet wird. Der Standardwert ist „SuperAdmin“.
+**Benutzername:** (Obligatorisch) Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus dem überwachten Ordner verwendet wird. Der Standardwert ist „SuperAdmin“.
 
-**** Domänenname: (Obligatorisch) Die Domäne des Benutzers. Der Standardwert ist „DefaultDom“.
+**Domänenname:** (Obligatorisch) Die Domäne des Benutzers. Der Standardwert ist „DefaultDom“.
 
-**** Stapelgröße: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
+**Stapelgröße:** Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
 
 Die Einstellungen für Wiederholungsintervall und Stapelgröße bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der Watched Folder-Dienst verwendet einen Quartz-Threadpool, um den Eingabeordner zu überprüfen. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft. Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, verwenden Sie ein größeres Überprüfungsintervall, damit die anderen Dienste die Threads verwenden können.
 
@@ -143,11 +143,11 @@ Falls eine große Anzahl von Dateien abgelegt wird, wählen Sie eine große Stap
 
 Wenn Dateien im überwachten Ordner abgelegt werden, werden die Dateien in der Eingabe aufgelistet. Dadurch kann die Leistung reduziert werden, wenn jede Sekunde eine Überprüfung stattfindet. Durch Erhöhen des Überprüfungsintervalls kann die Leistung verbessert werden. Wenn das Volumen der abgelegten Dateien gering ist, passen Sie die Stapelgröße und das Wiederholungsintervall entsprechend an. Wenn beispielsweise jede Sekunde 10 Dateien abgelegt werden, probieren Sie ein Wiederholungsintervall von 1 Sekunde und eine Stapelgröße von 10 aus. 
 
-**** Wartezeit: Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
+**Wartezeit:** Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
 
 Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Dies verhindert, dass der überwachte Ordner die Datei überprüft, wenn sie nicht 10 Minuten alt ist.
 
-******Muster für auszuschließende Dateien: Semikolon**; eine Liste getrennter Muster, die von einem überwachten Ordner verwendet werden, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft.
+**Muster für auszuschließende Dateien:** Semikolon **;** Liste von Mustern, die von einem überwachten Ordner verwendet werden, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft.
 
 Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist.
 
@@ -157,13 +157,13 @@ Sie können Dateimuster verwenden, um Folgendes auszuschließen:
 * Dateien mit bestimmten Namen, z. B. data.&amp;ast; would exclude files and folders named *data1*, *data2*, and so on.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
-   * &amp;ast;.[dD][Aa][Tt]
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-******Muster für einzuschließende Dateien: (Obligatorisch) ein Semikolon**; eine Liste getrennter Muster, die vom überwachten Ordner verwendet wird, um zu bestimmen, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Wenn das Muster für einzuschließende Dateien beispielsweise &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw.
+**Muster für einzuschließende Dateien:** (Obligatorisch) ein Semikolon **;** durch Trennzeichen getrennte Liste von Mustern, die vom überwachten Ordner verwendet werden, um zu bestimmen, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw.
 
 Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an.
 
@@ -173,14 +173,14 @@ Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 * Dateien mit bestimmten Namen, z. B. data.&amp;ast; would include files and folders named *data1*, *data2*, and so on.
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
-   * &amp;ast;.[dD][Aa][Tt]
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
-**** Ergebnisordner: Der Ordner, in dem die gespeicherten Ergebnisse gespeichert werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit folgendem Dateimuster sein:
+**Ergebnisordner:** Der Ordner, in dem die gespeicherten Ergebnisse gespeichert werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit folgendem Dateimuster sein:
 
 * %F = Dateinamenpräfix
 * %E = Dateinamenerweiterung
@@ -203,31 +203,31 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachte
 
 ***Hinweis **Je kleiner die Größe des Ergebnisordners ist, desto höher wird die Watched Folder-Leistung sein. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie`result/%Y%M%D%H`verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. If the load is smaller (for example, 1000 files per day), you could use a pattern like`result/%Y%M%D`.*
 
-**** Ordner beibehalten: Der Speicherort, an dem Dateien nach erfolgreichem Scannen und Abrufen gespeichert werden. Dies kann ein absoluter, relativer oder leerer Ordnerpfad sein. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Der Standardwert ist „preserve/%Y/%M/%D/“.
+**Ordner beibehalten:** Der Speicherort, an dem Dateien nach erfolgreichem Scannen und Abrufen gespeichert werden. Dies kann ein absoluter, relativer oder leerer Ordnerpfad sein. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Der Standardwert ist „preserve/%Y/%M/%D/“.
 
-**** Fehlerordner: Der Ordner, in dem Fehlerdateien gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben.
+**Fehlerordner:** Der Ordner, in dem Fehlerdateien gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben.
 
 Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert.
 
 Der Standardwert ist „failure/%Y/%M/%D/“.
 
-**** Bei Fehler beibehalten: Behält Eingabedateien bei, wenn der Vorgang für einen Dienst nicht ausgeführt werden konnte. Der Standardwert lautet true.
+**Bei Fehler beibehalten:** Behält Eingabedateien bei, wenn der Vorgang für einen Dienst nicht ausgeführt werden konnte. Der Standardwert lautet true.
 
-**** Doppelte Dateinamen überschreiben: Bei Festlegung auf &quot;True&quot;werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
+**Duplikat-Dateinamen überschreiben:** Bei Festlegung auf &quot;True&quot;werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
 
-**** Bereinigungsdauer: (Obligatorisch) Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung hilft dafür zu sorgen, dass der Ergebnisordner nicht voll wird.
+**Bereinigungsdauer:** (Obligatorisch) Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung hilft dafür zu sorgen, dass der Ergebnisordner nicht voll wird.
 
 Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 
-**** Vorgangsname: (Obligatorisch) Eine Liste der Vorgänge, die dem Endpunkt des Typs &quot;überwachter Ordner&quot;zugewiesen werden können.
+**Vorgangsname:** (Obligatorisch) Eine Liste von Vorgängen, die dem Endpunkt des Typs &quot;überwachter Ordner&quot;zugewiesen werden können.
 
-**** Zuordnungen von Eingabeparametern: Dient zum Konfigurieren der für die Verarbeitung des Dienstes und Vorgangs erforderlichen Eingabe. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet. Es gibt zwei Eingabetypen:
+**Zuordnungen von Eingabeparametern:** Dient zum Konfigurieren der für die Verarbeitung des Dienstes und Vorgangs erforderlichen Eingabe. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet. Es gibt zwei Eingabetypen:
 
-**** Literal: Der überwachte Ordner verwendet den in das Feld eingegebenen Wert, wie er angezeigt wird. Alle grundlegenden Java-Typen werden unterstützt. Wenn eine API beispielsweise Eingaben wie String, Long, Int oder Boolean verwendet, wird die Zeichenfolge in einen ordnungsgemäßen Typ konvertiert und der Dienst aufgerufen.
+**Literal:** Der überwachte Ordner verwendet den in das Feld eingegebenen Wert, wie er angezeigt wird. Alle grundlegenden Java-Typen werden unterstützt. Wenn eine API beispielsweise Eingaben wie String, Long, Int oder Boolean verwendet, wird die Zeichenfolge in einen ordnungsgemäßen Typ konvertiert und der Dienst aufgerufen.
 
-**** Variable: Der eingegebene Wert ist ein Dateimuster, mit dem der überwachte Ordner die Eingabe auswählt. Beispiel: Bei dem Dienst für das verschlüsselte Kennwort, bei dem das Eingabedokument eine PDF-Datei sein muss, kann der Benutzer das Dateimuster &amp;ast;.pdf verwenden. Der überwachte Ordner nimmt alle Dateien im überwachten Ordner auf, die diesem Muster entsprechen, und ruft für jede Datei den Dienst auf. Wenn eine Variable verwendet wird, werden alle Eingabedateien in Dokumente konvertiert. Nur APIs, die „Document“ als Eingabetyp verwenden, werden unterstützt.
+**Variable:** Der eingegebene Wert ist ein Dateimuster, mit dem der überwachte Ordner die Eingabe auswählt. Beispiel: Bei dem Dienst zum Verschlüsseln eines Kennworts, bei dem das Eingabedateien eine PDF-Dokument sein muss, kann der Benutzer das Dateimuster &amp;ast;.pdf verwenden. Der überwachte Ordner nimmt alle Dateien im überwachten Ordner auf, die diesem Muster entsprechen, und ruft für jede Datei den Dienst auf. Wenn eine Variable verwendet wird, werden alle Eingabedateien in Dokumente konvertiert. Nur APIs, die „Document“ als Eingabetyp verwenden, werden unterstützt.
 
-**** Zuordnungen von Ausgabeparametern: Dient zum Konfigurieren der Ausgaben des Dienstes und Vorgangs. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet.
+**Zuordnungen von Ausgabeparametern:** Dient zum Konfigurieren der Ausgaben des Dienstes und Vorgangs. Die verfügbaren Einstellungen hängen davon ab, welcher Dienst den überwachten Ordner-Endpunkt verwendet.
 
 Die Watched Folder-Ausgabe kann ein einzelnes Dokument, eine Liste von Dokumenten oder eine Zuordnung von Dokumenten sein. Diese Ausgabe-Dokumente werden anschließend mithilfe des in der Ausgabeparameterzuordnung angegebenen Musters im Ergebnisordner gespeichert.
 
@@ -238,11 +238,11 @@ Die Watched Folder-Ausgabe kann ein einzelnes Dokument, eine Liste von Dokumente
 Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
 * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
-* Dateien mit bestimmten Namen, z. B. data. &amp;ast;
+* Dateien mit bestimmten Namen, z. B. data.&amp;ast;
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
-   * &amp;ast;.[dD][Aa][Tt]
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][mm][Ll]
 
 Der Administrator kann das Dateimuster für den Ausgabeordner definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehalten und Fehler; „result“, „preserve“ und „failure“) kann der Administrator jedes der folgenden Dateimuster angeben:
@@ -368,10 +368,10 @@ Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts 
 * Bei einem überwachten Ordner unter Windows, der Bilddateien verarbeitet, geben Sie Werte für die Optionen „Muster für einzuschließende Dateien“ bzw. „Muster für auszuschließende Dateien“ an, um zu verhindern, dass die automatisch von Windows erzeugte Datei „Thumbs.db“ vom überwachten Ordner abgerufen wird.
 * Wenn ein Cron-Ausdruck angegeben ist, wird das Wiederholungsintervall ignoriert. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 * Die Stapelgröße ist die Anzahl der Dateien und Ordner, die bei jeder Überprüfung des überwachten Ordners aufgenommen wird. Wenn die Stapelgröße auf 2 festgelegt ist und zehn Dateien oder Ordner im überwachten Ordner abgelegt werden, werden bei jeder Überprüfung nur zwei aufgenommen. Bei der nächsten Überprüfung, die nach dem im Wiederholungsintervall angegebenen Zeitraum eintritt, werden die nächsten zwei Dateien aufgenommen.
-* Administratoren können reguläre Ausdrücke mit der zusätzlichen Unterstützung durch Platzhalterzeichenmuster als Dateimuster angeben. Der Watched Folder-Dienst ändert den regulären Ausdruck, um Platzhaltermuster wie &amp;ast; zu unterstützen. &amp;ast; oder &amp;ast;.pdf. Diese Platzhalterzeichenmuster werden nicht von regulären Ausdrücken unterstützt.
+* Administratoren können reguläre Ausdrücke mit der zusätzlichen Unterstützung durch Platzhalterzeichenmuster als Dateimuster angeben. Der Watched Folder-Dienst ändert den regulären Ausdruck, um Platzhaltermuster wie &amp;ast; zu unterstützen.&amp;ast; oder &amp;ast;.pdf. Diese Platzhalterzeichenmuster werden nicht von regulären Ausdrücken unterstützt.
 * Der Watched Folder-Dienst überprüft den Eingabeordner auf Eingaben und erkennt nicht, ob die Quelldatei bzw. der Quellordner bereits vollständig in den Eingabeordner kopiert ist, bevor die Verarbeitung der Datei oder des Ordners begonnen wird. Führen Sie folgende Aufgaben durch, um sicherzustellen, dass die Quelldatei bzw. der Quellordner vollständig in den Eingabeordner des überwachten Ordners kopiert ist, bevor die Datei oder der Ordner aufgenommen wird:
 
-   * Verwenden Sie „Wartezeit“, wobei es sich um den Zeitraum in Millisekunden handelt, den der Watched Folder-Dienst ab dem Zeitpunkt der letzten Änderung wartet. Verwenden Sie dieses Feature, wenn große Dateien verarbeitet werden. Wenn das Herunterladen einer Datei beispielsweise 10 Minuten dauert, geben Sie die Wartezeit als 10&amp;ast;60 &amp;ast;1000 Millisekunden an. Dies verhindert, dass der Watched Folder-Dienst die Datei aufnimmt, wenn sie nicht bereits 10 Minuten alt ist.
+   * Verwenden Sie „Wartezeit“, wobei es sich um den Zeitraum in Millisekunden handelt, den der Watched Folder-Dienst ab dem Zeitpunkt der letzten Änderung wartet. Verwenden Sie dieses Feature, wenn große Dateien verarbeitet werden. Wenn das Herunterladen einer Datei z. B. 10 Minuten dauert, geben Sie die Wartezeit als 10&amp;ast;60 &amp;ast;1000 Millisekunden an. Dies verhindert, dass der Watched Folder-Dienst die Datei aufnimmt, wenn sie nicht bereits 10 Minuten alt ist.
    * Verwenden Sie „Muster für auszuschließende Dateien“ und „Muster für einzuschließende Dateien“. For example, if the exclude file pattern is `ex*` and the include file pattern is `in*`, Watched Folder will pick up the files that start with &quot;in&quot; and will not pick up the files that start with &quot;ex&quot;. Benennen Sie zum Kopieren großer Dateien oder Ordner zuerst die Datei bzw. den Ordner so um, dass der Name mit „ex“ beginnt. Nachdem die Datei oder der Ordner &quot;ex&quot;vollständig in den überwachten Ordner kopiert wurde, benennen Sie sie in &quot;in&amp;ast;&quot;um.
 
 * Verwenden Sie die „Bereinigungszeit“, um den Ergebnisordner leer zu halten. Der Watched Folder-Dienst bereinigt alle Dateien, die älter als die unter „Bereinigungszeit“ angegebene Dauer sind. Die Dauer wird in Tagen angegeben.
@@ -391,7 +391,7 @@ Im Folgenden finden Sie einige Tipps und Tricks zum Konfigurieren des Endpunkts 
 
    * Vorläufige Lösung 1
 
-      1. Geben Sie ein Muster für Muster für auszuschließende Dateien an, z. B. temp&amp;ast;.ps.
+      1. Geben Sie ein Muster für Muster für auszuschließende Dateien an, z. B. &quot;temp&amp;ast;.ps&quot;.
       1. Kopieren Sie Dateien, die mit &quot;temp&quot;(z. B. &quot;temp1.ps&quot;) beginnen, in den überwachten Ordner.
       1. Nachdem die Datei vollständig in den überwachten Ordner kopiert wurde, benennen Sie die Datei entsprechend dem für &quot;Muster für einzuschließende Dateien&quot;angegebenen Muster um. Die vollständige Datei wird dann vom überwachten Ordner in „stage“ verschoben.
    * Vorläufige Lösung 2
