@@ -1,6 +1,6 @@
 ---
-title: Application Manager Client JavaAPI-Kurzanleitung (SOAP)
-seo-title: Application Manager Client JavaAPI-Kurzanleitung (SOAP)
+title: Application Manager Client JavaAPI Quick Beginn (SOAP)
+seo-title: Application Manager Client JavaAPI Quick Beginn (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
@@ -10,36 +10,36 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Application Manager Client JavaAPI-Schnellstart (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+# Application Manager Client JavaAPI Quick Beginn (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
-Für den Application Manager-Client stehen die folgenden Java-API-Schnellstarts (SOAP) zur Verfügung.
+Der folgende Java API Quick Beginn (SOAP) ist für den Application Manager-Client verfügbar.
 
-[Kurzanleitung (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Exportieren von Anwendungen mit der Java-API](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Exportieren von Anwendungen mit der Java-API](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Anwendungen mit der Java-API importieren](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Anwendungen mit der Java-API importieren](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Abrufen einer AEM Forms-Anwendung mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Abrufen einer AEM Forms-Anwendung mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus): Abrufen des Anwendungsstatus mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[Quick Beginn (SOAP-Modus): Abrufen des Anwendungsstatus mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Kurzanleitung (SOAP-Modus):Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API anzeigen](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Kurzanleitung (SOAP-Modus):Löschen des AEM Forms-Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Löschen des AEM Forms-Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Schnellstart unter Programmieren mit AEM Forms basiert auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Quick Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Kurzanleitung (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API erstellt.
 
@@ -92,7 +92,7 @@ public class CreateApplicationVersion_SOAP {
         // Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
         connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT",
-                "https://[server]:[port]");
+                "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL",
                 ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE",
@@ -138,7 +138,7 @@ public class CreateApplicationVersion_SOAP {
 }
 ```
 
-## Kurzanleitung (SOAP-Modus): Exportieren von Anwendungen mit der Java-API {#quick-start-soap-mode-exporting-applications-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Exportieren von Anwendungen mit der Java-API {#quick-start-soap-mode-exporting-applications-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API exportiert.
 
@@ -191,7 +191,7 @@ public class ExportLCA_SOAP {
         // Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
         connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT",
-                "https://[server]:[port]");
+                "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL",
                 ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE",
@@ -241,7 +241,7 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## Kurzanleitung (SOAP-Modus): Importieren von Anwendungen mit der Java-API {#quick-start-soap-mode-importing-applications-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Importieren von Anwendungen mit der Java-API {#quick-start-soap-mode-importing-applications-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API importiert.
 
@@ -295,7 +295,7 @@ public class ImportLCA_SOAP {
         // Set connection properties required to invoke AEM FOrms
         Properties connectionProps = new Properties();
         connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT",
-                "https://[server]:[port]");
+                "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL",
                 ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE",
@@ -328,7 +328,7 @@ public class ImportLCA_SOAP {
 }
 ```
 
-## Kurzanleitung (SOAP-Modus): Abrufen einer Anwendung mit der Java-API {#quick-start-soap-mode-getting-a-application-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Abrufen einer Anwendung mit der Java-API {#quick-start-soap-mode-getting-a-application-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der Java-API abgerufen.
 
@@ -384,7 +384,7 @@ public class GetApplication_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -435,7 +435,7 @@ public class GetApplication_SOAP {
 }
 ```
 
-## Kurzanleitung (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
 Im folgenden Java-Codebeispiel werden die Anwendungen mit der Java-API abgerufen.
 
@@ -492,7 +492,7 @@ public class GetApplications_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -534,7 +534,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## Kurzanleitung (SOAP-Modus): Abrufen des Anwendungsstatus mit der Java-API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
+## Quick Beginn (SOAP-Modus): Abrufen des Anwendungsstatus mit der Java-API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
 ```as3
 /*
@@ -588,7 +588,7 @@ public class GetApplicationStatus_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -639,7 +639,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Kurzanleitung (SOAP-Modus):Vorschau des LiveCycle ES2- und späteren Anwendungsarchivs mit der Java-API anzeigen {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des LiveCycle ES2-Anwendungsarchivs und höher mit der Java-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird die Vorschau von AEM Forms und späteren Anwendungsarchiven mit der Java-API gezeigt.
 
@@ -686,7 +686,7 @@ public class PreviewLCA_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -718,7 +718,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Kurzanleitung (SOAP-Modus): Löschen des Anwendungsarchivs mit der Java-API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Quick Beginn (SOAP-Modus):Anwendungsarchiv mit der Java-API löschen {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 Das folgende Java-Codebeispiel dient zum Löschen eines Anwendungsarchivs.
 
@@ -771,7 +771,7 @@ public class DeleteApplication_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
