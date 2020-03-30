@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,7 +25,7 @@ Assign task and Adobe Sign steps of [Forms-centric workflows on OSGi](/help/form
 
 ECMAScript ist eine Skriptsprache. Sie wird für die clientseitige Skripterstellung und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um mit ECMAScript einen Benutzer oder eine Gruppe dynamisch auszuwählen:
 
-1. Öffnen Sie CRXDE Lite. Die URL lautet `https://[server]:[port]/crx/de/index.jsp`
+1. Öffnen Sie CRXDE Lite. The URL is `https://'[server]:[port]'/crx/de/index.jsp`
 1. Erstellen Sie eine Datei mit der Erweiterung „.ecma“ unter folgendem Pfad. Wenn der Pfad (Knotenstruktur) nicht vorhanden ist, erstellen Sie ihn.
 
    * (Path for Assign Task step) `/apps/fd/dashboard/scripts/participantChooser`
@@ -39,7 +39,7 @@ ECMAScript ist eine Skriptsprache. Sie wird für die clientseitige Skripterstell
 
    1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
    1. Fügen Sie die Eigenschaft `mix:title` im Dialogfeld „Mixins bearbeiten“ hinzu und klicken Sie auf **OK**.
-   1. Fügen Sie die folgende Eigenschaft zum Knoten jcr:content des Skripts hinzu:
+   1. Hinzufügen Sie die folgende Eigenschaft auf den Knoten jcr:content des Skripts:
 
       | Name | Typ | Wert |
       |--- |--- |--- |
