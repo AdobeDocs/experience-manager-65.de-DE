@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ Die Benutzerverwaltung ist eine AEM Forms JEE-Komponente, die das Erstellen, Ver
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
-Die Benutzerverwaltung speichert Benutzerdaten in einer Datenbank, z. B. MySQL, Oracle, MS SQL Server und IBM DB2. In addition, any user who has logged in at least once in Forms applications on AEM author at `https://[server]:[host]/lc`, the user gets created in AEM repository. Daher wird die Benutzerverwaltung in den folgenden Datenspeichern gespeichert:
+Die Benutzerverwaltung speichert Benutzerdaten in einer Datenbank, z. B. MySQL, Oracle, MS SQL Server und IBM DB2. In addition, any user who has logged in at least once in Forms applications on AEM author at `https://'[server]:[port]'lc`, the user gets created in AEM repository. Daher wird die Benutzerverwaltung in den folgenden Datenspeichern gespeichert:
 
 * Datenbank
 * AEM-Repository
@@ -86,7 +86,7 @@ Benutzerverwaltung speichert Benutzerdaten in den folgenden Datenbanktabellen:
 
 ### AEM-Repository {#aem-repository}
 
-User management data for users who have at least once accessed the Forms applications under `https://[server]:[host]/lc` is stored in AEM repository as well.
+User management data for users who have at least once accessed the Forms applications under `https://'[server]:[port]'lc` is stored in AEM repository as well.
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
@@ -178,14 +178,14 @@ Forms JEE-Benutzer haben ihre Daten im AEM-Repository, wenn sie mindestens eine 
 
 #### Zugreifen auf Benutzerdaten {#access-user-data}
 
-To view user created in AEM repository, log into `https://[server]:[port]/lc/useradmin` with AEM administrator credentials. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzern mit ihrem Benutzernamen suchen. Doppelklicken Sie auf einen Benutzer, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für den Benutzer anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
+To view user created in AEM repository, log into `https://'[server]:[port]'/lc/useradmin` with AEM administrator credentials. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzern mit ihrem Benutzernamen suchen. Doppelklicken Sie auf einen Benutzer, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für den Benutzer anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
 
 #### Benutzerdaten löschen {#delete-aem}
 
 So löschen Sie einen Benutzer:
 
-1. Wechseln Sie zu `https://[server]:[port]/lc/useradmin` mit AEM-Administratorberechtigungen.
+1. Wechseln Sie zu `https://'[server]:[port]'/lc/useradmin` mit AEM-Administratorberechtigungen.
 1. Suchen Sie nach einem Benutzer und doppelklicken Sie auf den Benutzernamen, um die Benutzereigenschaften zu öffnen. Kopieren Sie die `Path` Eigenschaft.
-1. Go to AEM CRX DELite at `https://[server]:[port]/lc/crx/de/index.jsp` and navigate or search the user path.
+1. Go to AEM CRX DELite at `https://'[server]:[port]'/lc/crx/de/index.jsp` and navigate or search the user path.
 1. Löschen Sie den Pfad und klicken Sie auf **[!UICONTROL Alle speichern]**, um dauerhaft den Benutzer vom AEM-Repository zu löschen.
 
