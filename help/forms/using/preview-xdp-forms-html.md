@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,8 +28,8 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 
 ### Apache Sling Authentifizierungsdienst konfigurieren{#configure-apache-sling-authentication-service} 
 
-1. Wechseln Sie zu `https://[server]:[port]/system/console/configMgr` AEM Forms unter OSGi oder
-   `https://[server]:[port]/lc/system/console/configMgr` auf AEM Forms, das auf JEE ausgeführt wird.
+1. Wechseln Sie zu `https://'[server]:[port]'/system/console/configMgr` AEM Forms unter OSGi oder
+   `https://'[server]:[port]'/lc/system/console/configMgr` auf AEM Forms, das auf JEE ausgeführt wird.
 1. Wählen Sie die Konfiguration **Apache Sling-Authentifizierungsdienst**, um ihn im Modus „Bearbeiten“ zu öffnen.
 
 1. Je nachdem, ob Sie AEM Forms unter OSGi oder JEE ausführen, müssen Sie Folgendes im Feld **Authentifizierungsanforderungen** hinzufügen:   
@@ -55,8 +55,8 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
 1. Melden Sie sich bei der AEM-Web-Konsole als Administrator an.
 
-   * URL for AEM Forms on OSGi is `https://[server]:[port]/system/console/configMgr`
-   * URL für AEM Forms on JEE ist `https://[server]:[port]/lc/system/console/configMgr`
+   * URL for AEM Forms on OSGi is `https://'[server]:[port]'/system/console/configMgr`
+   * URL für AEM Forms on JEE ist `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Öffnen Sie **[!UICONTROL Mobile Forms-Konfigurationen]** für die Bearbeitung.
 1. Wählen Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
@@ -69,7 +69,7 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
    * **Server URL**: AEM Forms-Server URL.
 
    * **HTTP-Portnummer**: AEM-Server-Port. Der Standardwert ist 4502.
-   * **** HTML-Vorschaukontext: Pfad des Profils zum Rendern von XFA-Formularen. Die folgenden Standardprofile werden zur Vorschau des Formulars in Designer verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
+   * **HTML-Vorschauen-Kontext:** Pfad des Profils zum Rendern von XFA-Formularen. Zur Vorschau des Formulars in Designer werden die folgenden Standard-Profile verwendet. Sie können außerdem den Pfad zu einem benutzerdefinierten Profil angeben.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
 
@@ -97,7 +97,7 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 
    >[!CAUTION]
    >
-   >Um das echte Endbenutzererlebnis zu testen, zeigen Sie Ihre Formulare auch in externen Browsern (Google Chrome, Microsoft Edge, Mozilla Firefox usw.) an. Jeder Browser verwendet eine separate Engine zum Rendern von HTML, sodass es einige Unterschiede bei der Vorschau eines Formulars in Designer und im externen Browser geben kann.
+   >Um das echte Endbenutzererlebnis zu testen, können Sie Ihre Formulare auch in externen Browsern (Google Chrome, Microsoft Edge, Mozilla Firefox usw.) Vorschau haben. Jeder Browser verwendet eine separate Engine zum Rendern von HTML, sodass es einige Unterschiede bei der Vorschau von Formularen in Designer und externen Browsern geben kann.
 
 ## Anzeigen der Vorschau eines Formulars mit Musterdaten {#to-preview-a-form-using-sample-data}
 
