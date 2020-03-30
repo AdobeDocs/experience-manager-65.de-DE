@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen.
 
 ## Hochladen von Formularen {#uploading-forms}
 
-1. Log in to the AEM Forms user interface by accessing `https://[server]:[port]/aem/forms.html`.
+1. Log in to the AEM Forms user interface by accessing `https://'[server]:[port]'/aem/forms.html`.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
 1. Auf der Aktionensymbolleiste klicken Sie auf **Erstellen > Datei hochladen**.
 
@@ -65,7 +65,7 @@ AEM Forms-Server ermöglicht es Ihnen, JavaScript-Code auszuführen. Ein schadha
 
 Der abgesicherte Modus ist standardmäßig aktiviert. Bei Bedarf können Sie den abgesicherten Modus deaktivieren:
 
-1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. The URL is https://[server]:[port]/system/console/configMgr
+1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr
 1. Öffnen Sie Mobile Forms Konfigurationen für die Bearbeitung.
 1. Wählen Sie die Option „Abgesicherter Modus“ und klicken Sie auf **Speichern**. Der abgesicherte Modus ist deaktiviert.
 
