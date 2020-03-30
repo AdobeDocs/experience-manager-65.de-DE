@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ AEM Forms Workspace ist SSO-fähig. Wenn sich ein Benutzer bei einer AEM Forms-A
 
 Sitzungs-Timeouts für einen Benutzer können in der Administration Console konfiguriert werden.
 
-To set the timeout, login to `https://[server]:[port]/adminui`, navigate to **Settings > User Management > Configuration > Configure Advanced System Attributes**, and make the desired settings.
+To set the timeout, login to `https://'[server]:[port]'/adminui`, navigate to **Settings > User Management > Configuration > Configure Advanced System Attributes**, and make the desired settings.
 
 In AEM Forms Workspace-Timeout wird wie folgt behandelt:
 
