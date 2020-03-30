@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -74,7 +74,7 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Eine]Änderung ablehnen.**Tippen Sie auf dieses Symbol, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.   **[B]Änderung akzeptieren.**Tippen Sie auf dieses Symbol, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.   **[C]Asset duplizieren.**Tippen Sie auf dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das duplizierte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zum Anzeigen alternativer Assets basierend auf einem bestimmten Kontext zu erstellen.   **[D]Vorschau anzeigen.**Tippen Sie auf dieses Symbol, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.   **[Neu]anordnen.**Tippen und halten Sie dieses Symbol, um Assets per Drag &amp; Drop in einer Bedingung neu anzuordnen.
+   **[Eine]Änderung ablehnen.**Tippen Sie auf dieses Symbol, um die Änderungen abzulehnen, die Sie möglicherweise an dem Asset und der Regel in der Bedingung vorgenommen haben.   **[B]Änderung akzeptieren.**Tippen Sie auf dieses Symbol, um die Änderungen zu akzeptieren, die Sie an dem Asset und der Regel in der Bedingung vorgenommen haben.   **[C]-Duplikat-Asset.**Tippen Sie auf dieses Symbol, um eine Kopie des Assets zusammen mit der angewendeten Regel (falls vorhanden) in der Bedingung zu erstellen. Anschließend können Sie die Regel und das Asset für das duplizierte Asset bearbeiten. Das Duplizieren eines Assets ist nützlich, um ähnliche Regeln zum Anzeigen alternativer Assets basierend auf einem bestimmten Kontext zu erstellen.   **[D]Vorschau anzeigen.**Tippen Sie auf dieses Symbol, um auf der Seite „Bedingungen erstellen/bearbeiten“ eine Vorschau des Assets anzuzeigen.   **&#39;server&#39; neu anordnen.** Tippen und halten Sie dieses Symbol, um Assets per Drag &amp; Drop in einer Bedingung neu anzuordnen.
 
    Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:
 
@@ -148,7 +148,7 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
 
-1. Tippen Sie auf **[!UICONTROL Done]** (Fertig).
+1. Tippen Sie auf **[!UICONTROL Fertig]**.
 
    Die Regel wird auf das Asset angewendet.
 
