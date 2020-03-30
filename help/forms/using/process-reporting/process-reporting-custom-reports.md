@@ -1,8 +1,8 @@
 ---
-title: Benutzerspezifische Berichte in der Prozessberichterstellung
-seo-title: Benutzerspezifische Berichte in der Prozessberichterstellung
-description: Sie können benutzerspezifische Berichte erstellen und diese Berichte zur Benutzeroberfläche der Prozessberichterstellung in AEM Forms on JEE hinzufügen.
-seo-description: Sie können benutzerspezifische Berichte erstellen und diese Berichte zur Benutzeroberfläche der Prozessberichterstellung in AEM Forms on JEE hinzufügen.
+title: Benutzerspezifische Berichte in Process Berichte
+seo-title: Benutzerspezifische Berichte in Process Berichte
+description: Sie können benutzerspezifische Berichte erstellen und diese Berichte der Benutzeroberfläche von AEM Forms on JEE Process Berichte hinzufügen.
+seo-description: Sie können benutzerspezifische Berichte erstellen und diese Berichte der Benutzeroberfläche von AEM Forms on JEE Process Berichte hinzufügen.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Benutzerspezifische Berichte in der Prozessberichterstellung{#custom-reports-in-process-reporting}
+# Benutzerspezifische Berichte in Process Berichte{#custom-reports-in-process-reporting}
 
 Sie können die REST-Schnittstelle von QueryBuilder verwenden oder einen OSGi-Dienst mit der QueryBuilder-API erstellen, um einen benutzerspezifischen Bericht zu erstellen.
 
@@ -23,31 +23,31 @@ Sie können die REST-Schnittstelle von QueryBuilder verwenden oder einen OSGi-Di
 
 Bevor Sie einen benutzerspezifischen Bericht hinzufügen, führen Sie das folgende Vorlagenverfahren aus:
 
-1. In benutzerspezifischen Berichten verwendete Daten müssen in der Prozessberichterstellung verfügbar sein. Um die Verfügbarkeit von Daten sicherzustellen, planen Sie einen Cron-Auftrag oder verwenden Sie die Option &quot; **[Synchronisieren](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**&quot;in der Benutzeroberfläche der Prozessberichterstellung.
-1. Die URL-Anforderung (die die gewünschte Abfrage kapselt) muss ein passendes Abfrageergebnis-Objekt zurückgeben. Zum Erstellen einer Abfrage können Sie die REST-Schnittstelle von [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) verwenden, um einen OSGi-Dienst mit der QueryBuilder-API zu erstellen. Sie können dynamische oder statische Abfragen erstellen.
+1. In benutzerspezifischen Berichten verwendete Daten müssen im Process Berichte verfügbar sein. Um die Verfügbarkeit von Daten sicherzustellen, planen Sie einen Cron-Auftrag oder verwenden Sie die Option &quot; **[Synchronisieren](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**&quot;in der Benutzeroberfläche von Process Berichte.
+1. Die URL-Anforderung (die die gewünschte Abfrage einkapselt) muss ein entsprechendes Ergebnisobjekt für die Abfrage zurückgeben. Um eine Abfrage zu erstellen, können Sie die REST-Schnittstelle von [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) verwenden, um einen OSGi-Dienst mit der QueryBuilder-API zu erstellen. Sie können dynamische oder statische Abfragen erstellen.
 
-1. Erstellen Sie eine benutzerdefinierte Benutzeroberfläche, um die Ergebnisse anzuzeigen. Sie können eine eigenständige Benutzeroberfläche erstellen oder Ergebnisse in die vorhandene Benutzeroberfläche der Prozessberichterstellung integrieren.
+1. Erstellen Sie eine benutzerdefinierte Benutzeroberfläche, um die Ergebnisse anzuzeigen. Sie können eine eigenständige Benutzeroberfläche erstellen oder Ergebnisse in die bestehende Process Berichte-Benutzeroberfläche integrieren.
 
 ## Verwenden der REST-Schnittstelle von QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-Die REST-Schnittstelle CRX QueryBuilder stellt die Funktionalität des Asset Share Query Builder über eine Java-API und eine REST-API zur Verfügung. Erfahren Sie, wie Sie die REST-Oberfläche[von ](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder verwenden, bevor Sie die folgenden Schritte ausführen:
+Die REST-Schnittstelle CRX QueryBuilder stellt die Funktionalität des Asset Share Abfrage Builders über eine Java-API und eine REST-API zur Verfügung. Erfahren Sie, wie Sie die REST-Oberfläche [von](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder verwenden, bevor Sie die folgenden Schritte ausführen:
 
-1. URL suchen `https://[server]:[port]/lc/bin/querybuilder.json`
-1. Erstellen Sie eine Abfrage auf Basis der Process Reporting-Knotenstruktur und der Knoteneigenschaften.
+1. Zur URL navigieren `https://'[server]:[port]'/lc/bin/querybuilder.json`
+1. Erstellen Sie eine Abfrage basierend auf der Prozessknotenstruktur und den Knoteneigenschaften der Berichte-Datenspeicherung.
 
    Sie können optionale Parameter angeben, um Offset, Limit, Treffer und Eigenschaften anzugeben. Sie können die Argumente für statische Berichte komprimieren und die Parameter für dynamische Berichte aus der Benutzeroberfläche abrufen.
 
    Um alle Prozessnamen abzurufen, lautet die Abfrage:
 
-   `https://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
+   `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >
-   >In jeder Abfrage verweist der Pfadparameter auf den Speicherort des CRX-Speichers, und die Zeichen werden gemäß dem URL-Standard mit Escape-Zeichen versehen.
+   >In jeder Abfrage verweist der Pfadparameter auf die Position der crx-Datenspeicherung und die Zeichen werden gemäß dem URL-Standard mit Escape-Zeichen versehen.
 
-## Erstellen eines Dienstes mit der Query Builder-API {#creating-a-service-using-query-builder-api-nbsp}
+## Erstellen eines Dienstes mit der Abfrage Builder-API {#creating-a-service-using-query-builder-api-nbsp}
 
-Voraussetzung für die Erstellung eines Dienstes mit der Query Builder-API sind das [Erstellen und Bereitstellen des CQ OSGI-Bundles](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) und die [Verwendung der Query Builder-API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+Voraussetzung für das Erstellen eines Dienstes mit der Abfrage Builder-API ist das [Erstellen und Bereitstellen des CQ OSGI-Bundles](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) und die [Verwendung der Abfrage Builder-API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Erstellen Sie einen OSGi-Dienst mit entsprechenden Anmerkungen. Verwenden Sie zum Zugriff auf den QueryBuilder Folgendes:
 
@@ -63,7 +63,7 @@ Voraussetzung für die Erstellung eines Dienstes mit der Query Builder-API sind 
     predicateGroup.setAllRequired(true);
    ```
 
-1. Fügen Sie der neu erstellten preGroup Prädikate hinzu. Einige nützliche Prognosekonstrukte sind [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)und [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
+1. Hinzufügen sagt die neu erstellte preGroup voraus. Einige nützliche Prognosekonstrukte sind [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)und [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
    Bei statischen Berichten werden die Prädikate hartcodiert, bei dynamischen Berichten hingegen werden die Vorhersagen aus der Anforderung abgerufen.
 
@@ -98,11 +98,11 @@ Voraussetzung für die Erstellung eines Dienstes mit der Query Builder-API sind 
      predicateGroup.add(predicate);
    ```
 
-1. Definieren Sie die Abfrage mithilfe der preGroup.
+1. Definieren Sie die Abfrage mithilfe von &quot;PredicateGroup&quot;.
 
    `Query query = queryBuilder.createQuery(predicateGroup, session);`
 
-1. Abrufen des Abfrageergebnisses
+1. Rufen Sie das Ergebnis der Abfrage ab.
 
    ```java
    query.setStart(offset); // hardcode or fetch from request
@@ -112,7 +112,7 @@ Voraussetzung für die Erstellung eines Dienstes mit der Query Builder-API sind 
            SearchResult searchResult = query.getResult();
    ```
 
-1. Iterate on the result and transform the results to want format. Code zum Senden der Ergebnisse im CSV-Format:
+1. Iterate on the result and transform the results to want format. Der Code zum Senden der Ergebnisse im CSV-Format lautet:
 
    ```java
    Iterator<Node> iter = searchResult.getNodes();
@@ -424,19 +424,19 @@ Die `pom.xml`Beispieldatei, die über dem Dienst erstellt werden soll, lautet:
 
 Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige der Ergebnisse sind die [Grundlagen](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html)zum Sling, das [Erstellen eines CRX-Knotens](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) und das Bereitstellen entsprechender [Zugriffsberechtigungen](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
-1. Erstellen Sie einen CRX-Knoten auf dem `/apps` Knoten und gewähren Sie entsprechende Zugriffsberechtigungen. (PERM_PROCESS_REPORTING_USER)
+1. Erstellen Sie einen CRX-Knoten auf dem `/apps` Knoten und gewähren Sie entsprechende Zugriffsberechtigungen. (PERM_PROCESS_BERICHTE_USER)
 1. Definieren Sie den Renderer auf der `/content` Node.
-1. Fügen Sie dem in Schritt 1 erstellten Knoten JSP- oder HTML-Dateien hinzu. Sie können auch CSS-Dateien hinzufügen.
+1. Hinzufügen Sie JSP- oder HTML-Dateien an den in Schritt 1 erstellten Knoten. Sie können auch CSS-Dateien hinzufügen.
 
    ![Ein Beispielknoten mit JSP- und CSS-Dateien](assets/nodewith_jsp_css_new.png)
 
    Ein Beispielknoten mit JSP- und CSS-Dateien
 
-1. Fügen Sie JavaScript-Code hinzu, um einen Ajax-Aufruf an die Abfragebuilder REST API oder Ihren Dienst zu starten. Fügen Sie außerdem geeignete Argumente hinzu.
+1. Hinzufügen JavaScript-Code, um einen Ajax-Aufruf an die Abfragebuilder REST API oder Ihren Dienst zu Beginn. Fügen Sie außerdem geeignete Argumente hinzu.
 
-1. Fügen Sie dem Ajax-Aufruf einen entsprechenden Erfolgshandler hinzu, um das Ergebnis zu analysieren und anzuzeigen. Sie können das Ergebnis in mehreren Formaten (json/csv/user defined) analysieren und in einer Tabelle oder in anderen Formularen anzeigen.
+1. Hinzufügen Sie einen entsprechenden Erfolgshandler zum Ajax-Aufruf, um das Ergebnis zu analysieren und anzuzeigen. Sie können das Ergebnis in mehreren Formaten (json/csv/user defined) analysieren und in einer Tabelle oder in anderen Formularen anzeigen.
 
-1. (Optional) Fügen Sie dem Ajax-Aufruf einen entsprechenden Fehlerhandler hinzu.
+1. (Optional) Hinzufügen Sie einen entsprechenden Fehlerhandler für den Ajax-Aufruf.
 
 Ein Beispiel für einen JSP-Code, der sowohl OSGi Service- als auch QueryBuilder API verwendet, lautet:
 
@@ -628,7 +628,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integrieren der Berichtsbenutzeroberfläche in die vorhandene Benutzeroberfläche der Prozessberichterstellung {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integrieren der Berichtsbenutzeroberfläche in die vorhandene Benutzeroberfläche von Process Berichte {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige der Ergebnisse sind die [Grundlagen](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html)zum Sling, das [Erstellen eines CRX-Knotens](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) und das Bereitstellen entsprechender [Zugriffsberechtigungen](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -644,7 +644,7 @@ Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige
 
    Knoteneigenschaften
 
-1. Die Benutzeroberfläche des Berichts ist in die Benutzeroberfläche der Prozessberichterstellung integriert. Nach der Integration der Benutzeroberfläche sieht die aktualisierte Benutzeroberfläche wie folgt aus:
+1. Die Benutzeroberfläche des Berichts ist in die Benutzeroberfläche von Process Berichte integriert. Nach der Integration der Benutzeroberfläche sieht die aktualisierte Benutzeroberfläche wie folgt aus:
 
    ![Benutzeroberfläche neu hinzugefügter benutzerdefinierter Berichte](assets/sampleui_screenshot_new.png)
 
