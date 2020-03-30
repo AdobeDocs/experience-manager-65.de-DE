@@ -1,7 +1,7 @@
 ---
 title: Formularzentrierte Workflows in OSGi
 seo-title: Erstellen Sie schnell adaptive formularbasierte Prozesse, automatisieren Sie Document Services-Vorgänge und verwenden Sie Adobe Sign mit AEM-Workflows
-description: Verwenden Sie AEM Forms Workflow, um Überprüfungen und Genehmigungen zu automatisieren und schnell zu erstellen und zu starten, um Document Services zu starten
+description: Verwenden Sie AEM Forms Workflow, um Review- und Genehmigungsverfahren für Beginn Dokument Services zu automatisieren und schnell zu erstellen.
 seo-description: Verwenden Sie AEM Forms-Workflows zum Automatisieren und schnellen Erstellen von Überprüfungen und Genehmigungen, zum Starten von Document Services (z. B. zum Konvertieren eines PDF-Dokuments in ein anderes Format), zum Integrieren in Signatur-Workflows mit Adobe Sign und mehr.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: document_services
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ Nachdem Sie diese Workflows eingerichtet haben, können Sie sie manuell auslöse
 
 Der formularzentrierte Workflow für OSGi erweitert den [AEM-Posteingang](/help/sites-authoring/inbox.md) und bietet zusätzliche Komponenten (Schritte) für den AEM-Workflow-Editor an, um Unterstützung für AEM Forms-zentrierte Workflows hinzuzufügen. Der erweiterte AEM-Posteingang bietet ähnliche Funktionen wie [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md). Sie können mithilfe von AEM-Workflows sowohl Workflows verwalten, die durch Personen ausgeführt werden müssen (Genehmigung, Prüfung usw.), als auch Vorgänge für [Document Services](/help/sites-developing/workflows-step-ref.md) (z. B. Generate PDF) automatisieren und Dokumente elektronisch (mit Adobe Sign) signieren.
 
-Alle Arbeitsablaufschritte von AEM Forms unterstützen die Verwendung von Variablen. Variablen ermöglichen Arbeitsablaufschritte zum Halten und Übergeben von Metadaten zur Laufzeit. Sie können verschiedene Typen von Variablen zum Speichern verschiedener Datentypen erstellen. Sie können auch variable Sammlungen (Array) erstellen, um mehrere Instanzen verwandter, identischer Daten zu speichern. In der Regel verwenden Sie eine Variable oder eine Sammlung von Variablen, wenn Sie eine Entscheidung basierend auf dem Wert treffen müssen, den sie enthält, oder Informationen speichern möchten, die Sie später in einem Prozess benötigen. Weitere Informationen zur Verwendung von Variablen in diesen formularzentrierten Workflow-Komponenten (Schritte) finden Sie unter [Forms-zentrierter Workflow unter OSGi - Schritt-Referenz](../../forms/using/aem-forms-workflow-step-reference.md). Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM-Workflows](../../forms/using/variable-in-aem-workflows.md).
+Alle Arbeitsablaufschritte von AEM Forms unterstützen die Verwendung von Variablen. Variablen ermöglichen Arbeitsablaufschritte zum Halten und Übergeben von Metadaten zur Laufzeit. Sie können verschiedene Typen von Variablen zum Speichern verschiedener Datentypen erstellen. Sie können auch variable Sammlungen (Array) erstellen, um mehrere Instanzen verwandter, identischer Daten zu speichern. In der Regel verwenden Sie eine Variable oder eine Sammlung von Variablen, wenn Sie eine Entscheidung basierend auf dem Wert treffen müssen, den sie enthält, oder Informationen speichern möchten, die Sie später in einem Prozess benötigen. Weitere Informationen zur Verwendung von Variablen in diesen formularzentrierten Workflow-Komponenten (Schritte) finden Sie unter [Forms-zentrierter Workflow unter OSGi - Schritt-Referenz](../../forms/using/aem-forms-workflow-step-reference.md). Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
 
 Das folgende Diagramm zeigt einen End-to-End-Vorgang zum Erstellen, Ausführen und Überwachen eines formularzentrierten Workflows in OSGi.
 
@@ -65,9 +65,9 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 [Datei laden](assets/example-mortgage-loan-application.zip)
 
-1. Öffnen Sie die Konsole für Workflow-Modelle. The default URL is https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
-1. Wählen Sie dann **Erstellen** und dann **Modell erstellen** aus. Daraufhin wird das Dialogfeld Workflow-Modell hinzufügen angezeigt.
-1. Geben Sie den **Titel** und den **Namen** ein (optional). Beispiel: Hypothekenantrag. Tippen Sie auf **Done** (Fertig).
+1. Öffnen Sie die Konsole für Arbeitsablaufmodelle. The default URL is https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Wählen Sie dann **Erstellen** und dann **Modell erstellen** aus. Das Dialogfeld Arbeitsablaufmodell hinzufügen wird angezeigt.
+1. Geben Sie den **Titel** und den **Namen** ein (optional). Beispiel: Hypothekenantrag. Tippen Sie auf **Fertig**.
 1. Wählen Sie das neu erstellte Workflow-Modell aus und tippen Sie auf **Bearbeiten**. Jetzt können Sie Workflow-Schritte hinzufügen, um Geschäftslogik zu erstellen. Wenn Sie ein Workflow-Modell neu erstellen, enthält dieses zunächst:
 
    * Die Schritte für Flussstart und Flussende. Diese Schritte geben den Anfang und das Ende des Workflows an. Diese Schritte sind obligatorisch und können nicht bearbeitet oder entfernt werden.
@@ -75,9 +75,9 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 1. Aktivieren Sie E-Mail-Benachrichtigungen. Sie können den formularzentrierten Arbeitsablauf auf OSGi konfigurieren, um E-Mail-Benachrichtigungen an Benutzer oder Bevollmächtigte zu senden. Führen Sie die folgenden Konfigurationen durch, um E-Mail-Benachrichtigungen zu aktivieren:
 
-   1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
+   1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Öffnen Sie die Konfiguration des **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
-   1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. Geben Sie im Feld **[!UICONTROL Domänen]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale Instanzen sowie Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
+   1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Geben Sie im Feld **[!UICONTROL Domänen]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale Instanzen sowie Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 1. Erstellen Sie Workflow-Phasen. Ein Workflow kann mehrere Phasen haben. Diese Phasen werden im AEM-Posteingang angezeigt und geben den Fortschritt des Workflow an.
 
@@ -97,23 +97,23 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 1. Ziehen Sie die Komponente „ODER-Teilung“ aus der Seitenleiste in das Workflow-Modell. Die ODER-Teilung erstellt eine Verzweigung im Workflow, nach nur einer der beiden Zweige aktiv bleibt. Mit diesem Schritt können Sie bedingte Prozesspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
-   Sie können einen Routingausdruck für eine Verzweigung mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
+   Sie können Routing-Ausdruck für eine Verzweigung mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 
-   Verwenden Sie den Ausdruckseditor, um Routingausdrücke für Zweig 1 und Zweig 2 zu erstellen. Diese Routing-Ausdrücke unterstützen Sie bei der Auswahl einer Verzweigung basierend auf der Benutzeraktion in AEM Inbox.
+   Verwenden Sie den Ausdruck-Editor, um Routing-Ausdruck für Zweig 1 und Zweig 2 zu erstellen. Diese Routing-Ausdruck unterstützen Sie bei der Auswahl einer Verzweigung, die auf der Benutzeraktion in AEM Inbox basiert.
 
-   **Routing-Ausdruck für Zweig 2**
+   **Routing Ausdruck für Zweig 1**
 
    When a user taps **Approve** in AEM Inbox, Branch 1 is activated.
 
    ![Beispiel für ODER-Teilung](assets/orsplit_branch1_active_new.png)
 
-   **Routing-Ausdruck für Zweig 2**
+   **Routing Ausdruck für Zweigstelle 2**
 
    When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
    ![Beispiel für ODER-Teilung](assets/orsplit_branch2_active_new.png)
 
-   Informationen zum Erstellen von Routingausdrücken mit Variablen finden Sie unter [Variablen in AEM Forms-Arbeitsabläufen](../../forms/using/variable-in-aem-workflows.md).
+   Informationen zum Erstellen von Routing-Ausdrücken mit Variablen finden Sie unter [Variablen in AEM Forms Workflows](../../forms/using/variable-in-aem-workflows.md).
 
 1. Fügen Sie weitere Workflow-Schritte hinzu, um die Geschäftslogik zu erstellen.
 
@@ -257,7 +257,7 @@ Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen N
 
 ### Senden einer interaktiven Kommunikation oder eines Briefes {#letter}
 
-Sie können einen formularzentrierten Workflow auf OSGi beim Senden einer interaktiven Kommunikation oder eines Briefs verknüpfen und ausführen. In Correspondence Management-Arbeitsabläufen werden interaktive Kommunikationen und Briefe nach der Verarbeitung verwendet. Dazu gehören beispielsweise Versenden per E-Mail, Drucken, Faxen und Archivieren der endgültigen Briefe. Detaillierte Schritte finden Sie unter [Nachbearbeitung von interaktiver Kommunikation und Briefen](../../forms/using/submit-letter-topostprocess.md).
+Sie können einen formularzentrierten Workflow auf OSGi beim Senden einer interaktiven Kommunikation oder eines Briefs verknüpfen und ausführen. Im Correspondence Management werden Workflows zur Nachbearbeitung von interaktiven Kommunikationen und Briefen verwendet. Dazu gehören beispielsweise Versenden per E-Mail, Drucken, Faxen und Archivieren der endgültigen Briefe. Detaillierte Schritte finden Sie unter [Nachbearbeitung von interaktiver Kommunikation und Briefen](../../forms/using/submit-letter-topostprocess.md).
 
 ## Zusätzliche Konfigurationen {#additional-configurations}
 
@@ -265,9 +265,9 @@ Sie können einen formularzentrierten Workflow auf OSGi beim Senden einer intera
 
 Sie können die Schritte „Aufgabe zuweisen“ und „E-Mail senden“ von AEM-Workflows verwenden, um eine E-Mail zu senden. Führen Sie die folgenden Schritte aus, um E-Mail-Server und andere Konfigurationen anzugeben, die zum Senden von E-Mails erforderlich sind:
 
-1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
+1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Öffnen Sie die Konfiguration des **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. Geben Sie im Feld **[!UICONTROL Domänen]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale Instanzen sowie Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Geben Sie im Feld **[!UICONTROL Domänen]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale Instanzen sowie Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ### Bereinigen von Workflow-Instanzen {#purge-workflow-instances}
 
