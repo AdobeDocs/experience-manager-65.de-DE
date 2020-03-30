@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -34,12 +34,12 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden und es kann eine Text
 * Wenn Sie nur den AEM Forms on JEE-Server verwenden, ist das Indexpaket bereits installiert. 
 * Stellen Sie sicher, dass alle Pakete aktiv sind. Wenn nicht alle Pakete aktiv sind, warten Sie, bis alle Pakete aktiv sind. 
 
-   * For AEM Forms on OSGi, the bundles are listed at https://[server]:[port]/system/console/bundles.
-   * For AEM Forms on JEE, the bundles are listed at https://[server]:[port]/[context-path]/system/console/bundles. Beispiel: https://localhost:8080/lc/system/console/bundles.
+   * For AEM Forms on OSGi, the bundles are listed at https://&#39;[server]:[port]&#39;/system/console/bundles.
+   * For AEM Forms on JEE, the bundles are listed at https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles. Beispiel: https://localhost:8080/lc/system/console/bundles.
 
 * Setzen Sie das *sun.util.calendar*-Paket auf die Positivliste. Gehen Sie wie folgt vor, um das Paket auf die Positivliste zu setzen:
 
-   1. Öffnen Sie die AEM Web-Konsole. The URL is https://[server]:[port]/system/console/configMgr.
+   1. Öffnen Sie die AEM Web-Konsole. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
 
    1. Fügen Sie das sun.util.calendar-Paket zu den Positiv-Klassen oder dem Paketpräfixfeld hinzu und klicken Sie auf **Save**.
@@ -53,7 +53,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 
 #### Konfigurieren des Adobe LiveCycle Client SDK Bundle mit AEM Forms on JEE-Administratorberechtigungen {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Öffnen Sie die AEM Web-Konsole. The URL is https://[server]:[port]/system/console/configMgr.
+1. Öffnen Sie die AEM Web-Konsole. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-Paket**. Geben Sie den Wert für die folgenden Felder an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der Forms on JEE-Keystore-Datei> neu.
@@ -65,7 +65,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 #### Konfigurieren von Adobe LiveCycle Client SDK Bundle mit gegenseitiger Authentifizierung {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
-1. Öffnen Sie die AEM Web-Konsole. The URL is https://[server]:[port]/system/console/configMgr.
+1. Öffnen Sie die AEM Web-Konsole. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-** Paket. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
