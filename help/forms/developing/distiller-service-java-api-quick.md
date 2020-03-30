@@ -10,24 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Kurzanleitung für die Java-API des Distiller-Dienstes (SOAP) {#distiller-service-java-api-quickstart-soap}
+# Distiller Service Java API Quick Beginn (SOAP) {#distiller-service-java-api-quickstart-soap}
 
-Java API Quick Start(SOAP) ist für den Distiller®-Dienst verfügbar:
+Java API Quick Beginn (SOAP) ist für den Distiller®-Dienst verfügbar:
 
-[Kurzanleitung (SOAP-Modus): Konvertieren einer PostScript-Datei in ein PDF-Dokument mit der Java-API](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Konvertieren einer PostScript-Datei in ein PDF-Dokument mit der Java-API](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Die unter &quot;Programmieren mit AEM Forms&quot;aufgeführten Schnellstarts basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Hinweis **: Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Kurzanleitung (SOAP-Modus): Konvertieren einer PostScript-Datei in ein PDF-Dokument mit der Java-API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Konvertieren einer PostScript-Datei in ein PDF-Dokument mit der Java-API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-Im folgenden Codebeispiel wird eine PostScript-Datei mit dem Namen *Loan.ps* in eine PDF-Datei mit dem Namen *Loan.pdf* konvertiert. (Siehe PostScript-Dokumente [in PDF-Dokumente](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents)konvertieren.)
+Im folgenden Codebeispiel wird eine PostScript-Datei mit dem Namen *Loan.ps* in eine PDF-Datei mit dem Namen *Loan.pdf* konvertiert. (Siehe PostScript- [Dokumente](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents)in PDF konvertieren.)
 
 ```as3
  /*
@@ -95,7 +95,7 @@ Im folgenden Codebeispiel wird eine PostScript-Datei mit dem Namen *Loan.ps* in 
          {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
