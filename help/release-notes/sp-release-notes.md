@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
+source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
 
 ---
 
@@ -84,7 +84,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * Wenn ein Benutzer auf die Schaltfläche Erstellen klickt, ist die Seitenoption nicht verfügbar (NPR-31756).
 
-* Campaign mit OOTB (Out-of-the-Box) Design Importer-Komponente (NPR-31728) kann nicht in Adobe Campaign synchronisiert werden.
+* Die Kampagne in der Adobe-Kampagne mit OOTB (Out-of-the-Box)-Design-Importer-Komponente (NPR-31728) kann nicht synchronisiert werden.
 
 * Wenn Sie versuchen, eine Aufzählungszeichen-Liste in eine nummerierte Liste zu ändern, werden nur die ersten beiden Elemente der Liste geändert (NPR-31636).
 
@@ -118,7 +118,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * In der Benutzeroberfläche von Experience Manager Assets werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
-* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen der Stufe 2 der Kontrollkästchenstruktur in Adobe Stock aktiviert wurden (NPR-31919).
+* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen in Adobe Stock auf Stufe zwei markiert wurden (NPR-31919).
 
 * Die Datei- und Ordnersuche mit Omniture-Facetten bildet eine Ausnahme (NPR-31872).
 
@@ -193,6 +193,13 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 * Die Konfiguration der Zielgruppe Cloud schlägt fehl, wenn die Fehlermeldung &quot;get mboxes&quot;fehlgeschlagen ist (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
+
+* Markenportal-Benutzer können beim Aktualisieren auf Adobe I/O auf AEM 6.5.4 (CQDOC-15655) keine Beitragsordnerelemente in AEM Assets veröffentlichen.
+
+   Dieses Problem wird im nächsten Service Pack AEM 6.5.5 behoben.
+
+   Für eine sofortige Fehlerbehebung in AEM 6.5.4 wird empfohlen, den Hotfix [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) herunterzuladen und auf Ihrer Autoreninstanz zu installieren.
+
 
 * Dropdown-Werte für Metadaten-Schema sind in den Asset-Eigenschaften nicht sichtbar (CQ-4283287).
 
