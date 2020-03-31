@@ -1,11 +1,11 @@
 ---
-source-git-commit: 6cd417e3607eee30fb250b5f5af99acbc2e644e3
+source-git-commit: 42d5f44c64faa54e9366532f55a92917b4d87f07
 translation-type: tm+mt
 
 ---
 # Beiträge zur Adobe Experience Manager-Dokumentation
 
-Vielen Dank, dass Sie sich entschieden haben, zur Adobe Experience Manager-Dokumentation beizutragen! Wir freuen uns über Inhaltsbeiträge von unserer Community und Adobe-Mitarbeitern außerhalb der Dokumentationsteams.
+Vielen Dank, dass Sie sich entschieden haben, zur Adobe Experience Manager-Dokumentation beizutragen! Wir freuen uns über Beiträge unserer gesamten Reader Community sowie anderer Mitarbeiter von Adobe.
 
 In dieser Datei wird beschrieben, wie Sie Beiträge beisteuern können und welche Richtlinien zu befolgen sind, wenn Sie Ihre Beiträge vornehmen.
 
@@ -14,56 +14,47 @@ In dieser Datei wird beschrieben, wie Sie Beiträge beisteuern können und welch
 Dieses Projekt folgt dem [Adobe Open Source-Verhaltenskodex](code-of-conduct.md). Mit Ihrer Teilnahme an der AEM-Dokumentation erklären Sie sich damit einverstanden, diesen Verhaltenskodex einzuhalten. Bitte melden Sie inakzeptables Verhalten an
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Richtlinien für die Teilnahme an der AEM-Dokumentation
+## Leitlinien für die Mitarbeit
 
-Wir freuen uns zwar über jeden Beitrag, um die AEM-Dokumentation zu verbessern, bitten jedoch darum, dass die Beiträge bestimmten Richtlinien und Standards entsprechen. Weitere Informationen finden Sie in den [Richtlinien zur Teilnahme an der AEM-Dokumentation](guidelines.md) .
+Obwohl wir alle Beiträge zur Verbesserung der AEM-Dokumentation begrüßen, bitten wir darum, dass die Beiträge nach Möglichkeit bestimmten Leitlinien und Standards entsprechen. Weitere Informationen finden Sie in den [Richtlinien zur Teilnahme an der AEM-Dokumentation](guidelines.md) .
 
 ## So können Sie einen Beitrag leisten
 
-Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
+Wir möchten Ihre Beiträge so einfach wie möglich einreichen. Sie können auf zwei Arten beitragen:
 
-### Erstellen eines Problems
+* [Problem erstellen](#create-an-issue)
+* [Pull-Anforderung erstellen](#create-a-pull-request)
 
-Haben Sie einen Vorschlag, eine Beobachtung zu den aktuellen Dokumenten oder eine Frage dazu, wie etwas beschrieben wird? Legen Sie einen Eintrag für ein Problem an. Probleme eignen sich auch, wenn Sie etwas beizutragen haben, jedoch lieber nicht selbst die Dokumente bearbeiten oder eine Pull-Abfrage stellen möchten.
+Welche Methode Sie wählen, hängt davon ab, wie bequem Sie die Dokumentation in GitHub selbst bearbeiten.
 
-### Geringfügige Änderungen
+>[!NOTE]
+>
+>Beiträge, die Sie senden, unterliegen den [Adobe-Nutzungsbedingungen.](https://www.adobe.com/legal/terms.html)
 
-Um kleinere Aktualisierungen einzureichen, klicken Sie in einem Artikel auf den Link **Bearbeiten**, wodurch der Quellartikel in GitHub geöffnet wird. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)
+### Erstellen eines Problems {#create-an-issue}
 
-Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentation und Codebeispiele in diesem Repo einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
+Haben Sie einen Vorschlag, eine Beobachtung zu den aktuellen Dokumenten oder eine Frage dazu, wie etwas beschrieben wird? Erstellen Sie dann bitte eine Ausgabe. Probleme sind auch hervorragend, wenn Sie etwas beizutragen haben, aber sich nicht wohl fühlen, die Dokumente zu bearbeiten oder selbst eine Pull-Anfrage zu machen.
 
-### Größere Änderungen oder neue Artikel von Communitymitgliedern
+Probleme ermöglichen es Ihnen, Ihre Idee zur Verbesserung der Dokumente einfach zu beschreiben und ein AEM Docs Team-Mitglied kann sie überprüfen. Klicken Sie einfach auf den Link **Ein Problem** protokollieren oben im rechten Navigationsbereich auf einer beliebigen Seite, um ein Problem zu erstellen.
 
-Wenn Sie Mitglied der Adobe-Community sind und einen Artikel erstellen oder größere Änderungen einreichen möchten, klicken Sie hierzu im GitHub-Repository auf die Registerkarte **Issues**. Ausgangspunkt für Ihren Beitrag ist der Austausch mit dem Dokumentationsteam. Sie müssen mit dem Autor (oder anderen Adobe-Mitarbeitern) zusammenarbeiten, um neue Inhalte zu veröffentlichen.
+### Erstellen einer Pull-Anforderung {#create-a-pull-request}
 
-Wenn Sie eine Abfrageanforderung mit signifikanten Änderungen an Dokumentation und Code-Beispielen übermitteln, wird in der Abfrageanforderung eine Meldung angezeigt, in der Sie aufgefordert werden, eine Online-Beitragslizenzvereinbarung (CLA) zu senden. Sie müssen das Online-Formular ausfüllen, bevor wir Ihre Abfrageanforderung überprüfen können.
+Wenn Sie ein Problem sehen und genau wissen, wie Sie es beheben können, sollten Sie eine Pull-Anforderung erstellen. Mithilfe von Pull-Anforderungen können Sie Ihre eigenen Änderungen an der Dokumentation vornehmen, die dann von einem AEM Docs Team-Mitglied zur Aufnahme geprüft werden. Klicken Sie einfach auf den Link &quot;Diese Seite **** bearbeiten&quot;oben im rechten Navigationsbereich auf einer beliebigen Seite, um Ihre vorgeschlagenen Änderungen vorzunehmen und die Pull-Anforderung zu erstellen.
 
-### Größere Änderungen von Adobe-Mitarbeitern
+Alle Pull-Anfragen müssen mit einer unterzeichneten [Lizenzvereinbarung oder CLA einhergehen.](https://opensource.adobe.com/cla.html)Damit kann Adobe Ihre Beiträge als Teil des Projekts weitervertreiben. Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie also bereits eine übermittelt haben, können Sie sofort loslegen!
 
-Wenn es zu Ihren Aufgaben als technischer Redakteur, Programmmanager oder Entwickler im Produktteam einer Adobe Experience Cloud-Lösung gehört, technische Artikel zu verfassen oder sich daran zu beteiligen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
+### Quick Video-Einführung
 
-Adobe-Mitarbeiter aus anderen Teilen der Adobe-Welt sollten das öffentliche Repo für kleinere Updates verwenden.
+Sehen Sie sich das folgende Video an, um einen schnellen Überblick darüber zu erhalten, wie Probleme erstellt und Anforderungen abgerufen werden können.
 
-## Lizenzvereinbarung für Mitwirkende (CLA)
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-Alle Drittanbieter-Beiträge zu diesem Projekt müssen von einer unterzeichneten Lizenzvereinbarung für Mitwirkende begleitet werden. Damit kann Adobe Ihre Beiträge als Teil des Projekts weitervertreiben. [Signieren Sie unsere CLA.](https://opensource.adobe.com/cla.html) Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie also bereits eine übermittelt haben, können Sie sofort loslegen!
+### Beiträge von Adobe-Mitarbeitern
 
-## Tools und Einrichtung
+Wenn Sie ein Adobe-Mitarbeiter sind und eine Pull-Anforderung stellen möchten, verwenden Sie bitte das private Repository unter `https://git.corp.adobe.com/AdobeDocs`.
 
-Communitymitwirkende können die GitHub-UI zur grundlegenden Bearbeitung verwenden oder das Repo zum Beisteuern größerer Beiträge forken.
+Für Probleme nutzen Sie bitte die öffentlichen Repositorys.
 
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
+## Weiterführende Informationen
 
-## Verwendung von Markdowns zum Formatieren Ihres Themas
-
-Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie mit Markdowns nicht vertraut sind, lesen Sie:
-
-* [Grundlagen zu Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Druckbares Infoblatt zu Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Beschriftungen
-
-Im öffentlichen Repository werden automatisierte Beschriftungen Abruf-Anfragen zugewiesen, die uns helfen, den Arbeitsablauf für Abruf-Anfragen zu verwalten und Ihnen mitzuteilen, was mit Ihrer Abruf-Anfrage passiert:
-
-* **Change sent to author**: Der Autor wurde über die ausstehende Abruf-Anfrage informiert.
-* **ready-to-merge**: Bereit für die Überprüfung durch unser Überprüfungsteam für Abruf-Anfragen.
+Weitere Informationen zur Verwendung der GitHub-Authoring-Plattform finden Sie im [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) .
