@@ -1,14 +1,14 @@
 ---
 title: Von Assets unterstützte Formate
-description: Liste der von AEM Assets unterstützten Dateiformate sowie der für die jeweiligen Formate unterstützten Funktionen.
+description: Liste der Dateiformate, die von AEM Assets und von Dynamic Media unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
+source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
 
 ---
 
 
-# Von Assets unterstützte Formate {#assets-supported-formats}
+# Unterstützte Asset-Formate {#assets-supported-formats}
 
 AEM Assets unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen.
 
@@ -22,9 +22,7 @@ Die Legende gibt den Grad der Unterstützung an.
 | * | Mit Funktionen von Zusatzmodulen unterstützt |
 | - | Nicht zutreffend |
 
-## Supported Raster image formats {#supported-raster-image-formats}
-
-Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
+## Unterstützte Rasterbildformate in AEM Assets {#supported-raster-image-formats}
 
 | Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Interaktive Bearbeitung | Metadaten-Writeback | Einblicke |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -44,7 +42,7 @@ Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 
 **¹** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
-Folgende Rasterbildformate werden für dynamische Medienfunktionen unterstützt:
+## Unterstützte Rasterbildformate in dynamischen Medien (#supported-raster-image-formats-dynamic-media)
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -69,6 +67,22 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
 
+## Nicht unterstützte Rasterbildformate in dynamischen Medien (#unsupported-image-formats-dynamic-media)
+
+Die folgende Tabelle beschreibt die Untertypen der Rasterbildformate, die in dynamischen Medien *nicht* unterstützt werden. In der Tabelle werden auch empfohlene Methoden beschrieben, mit denen Sie solche Dateien erkennen können.
+
+| Format | Was wird nicht unterstützt? | Vorgeschlagene Erkennungsmethode |
+|---|---|---|
+| JPEG | Dateien, bei denen die ersten drei Byte falsch sind. | Um eine JPEF-Datei zu identifizieren, müssen die ersten drei Byte `ff d8 ff`vorhanden sein. Wenn es sich um etwas Anderes handelt, wird es nicht als JPEG klassifiziert.<br>・ Es gibt kein Software-Werkzeug, das bei diesem Problem helfen kann.<br>・ Ein kleines C++/java-Programm, das die ersten drei Byte einer Datei liest, sollte diese Dateitypen erkennen können.<br>・ Es ist möglicherweise besser, die Quelle solcher Dateien zu verfolgen und das Tool zu sehen, das die Datei generiert. |
+| PNG | Dateien mit einer IDAT-Größe größer als 100 MB. | Sie können dieses Problem mithilfe von [libpng](http://www.libpng.org/pub/png/libpng.html) in C++ erkennen. |
+| PSB |  | Verwenden Sie exiftool, wenn der Dateityp PSB ist.<br>Beispiel in einem ExifTool-Protokoll:<br>1. Dateityp: `PSB` |
+| PSD | Dateien mit einem anderen Farbraum als CMYK, RGB, Graustufen oder Bitmap werden nicht unterstützt.<br>DuoTone-, Lab- und indizierte Farbräume werden nicht unterstützt. | Verwenden Sie ExifTool, wenn der Farbmodus Duplex ist.<br>Beispiel in einem ExifTool-Protokoll:<br>1. Farbmodus: `Duotone` |
+|  | Dateien mit abrupten Endungen. | Adobe kann diese Bedingung nicht erkennen. Solche Dateien können auch nicht mit Adobe FotoShop geöffnet werden. Adobe empfiehlt Ihnen, das Tool, das zum Erstellen einer solchen Datei verwendet wurde, zu prüfen und eine Fehlerbehebung an der Quelle vorzunehmen. |
+|  | Dateien mit einer Bittiefe größer als 16. | Verwenden Sie ExifTool, wenn die Bittiefe größer als 16 ist.<br>Beispiel in einem ExifTool-Protokoll:<br>1. Bittiefe: `32` |
+|  | Datei mit Lab-Farbraum. | Verwenden Sie exiftool, wenn der Farbmodus Lab ist.<br>Beispiel in einem ExifTool-Protokoll:<br>1. Farbmodus: `Lab` |
+| TIFF | Dateien mit Gleitkommadaten. Das heißt, eine TIFF-Datei mit 32-Bit-Tiefe wird nicht unterstützt. | Verwenden Sie ExifTool, wenn der MIME-Typ `image/tiff` und der SampleFormat-Wert `Float` darin enthalten ist. Beispiel in einem ExifTool-Protokoll:<br>1. MIME-Typ: `image/tiff`<br>Beispielformat: `Float #`<br>2. MIME-Typ: `image/tiff`<br>Beispielformat: `Float; Float; Float; Float` |
+|  | Dateien mit Lab-Farbraum. | Verwenden Sie ExifTool, wenn der Farbmodus Lab ist.<br>Beispiel in einem ExifTool-Protokoll:<br>1. Farbmodus: `Lab` |
+
 ## Unterstützte PDF Rasterizer-Bibliothek {#supported-pdf-rasterizer-library}
 
 Die Adobe PDF Rasterizer-Bibliothek generiert hochwertige Miniaturansichten und Vorschauen für große und ressourcenintensive Adobe Illustrator- und PDF-Dateien. Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Dateien:
@@ -91,7 +105,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbildern. See [Camera Raw support](camera-raw.md).
 
-## Unterstützte Dokumentformate {#supported-document-formats}
+## Unterstützte Asset-Dokument-Formate {#supported-document-formats}
 
 Folgende Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
 
@@ -116,7 +130,7 @@ Folgende Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-Folgende Formate werden für dynamische Medienfunktionen unterstützt:
+## Unterstützte Dokument-Formate in dynamischen Medien (##supported-Dokument-formats-dynamic-media)
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -155,7 +169,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Supported input video formats for Dynamic Media Transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Supported input video formats in Dynamic Media for transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
 |---|---|---|---|
