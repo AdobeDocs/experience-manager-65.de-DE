@@ -3,14 +3,14 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
 
 ---
 
 
 # Verwenden von Connected Assets zum Freigeben von DAM-Assets in AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Webseiten in verschiedenen Bereitstellungen. Häufig sind geografisch verteilte Bereitstellungen zur Zusammenarbeit erforderlich oder Akquisitionen führen zu einer heterogenen Infrastruktur, die das übergeordnete Unternehmen konsolidieren möchte. Aber häufig führt auch Wachstum dazu, dass eine eigene Instanz für das Asset-Management erforderlich wird.
+In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Webseiten in verschiedenen Bereitstellungen. Es gibt einige Gründe dafür, warum bestehende Bereitstellungen geografisch verteilt sind, die für die Arbeit im Tandem erforderlich sind, oder Akquisitionen, die zu einer heterogenen Infrastruktur führen, die die übergeordnete Firma gemeinsam nutzen möchte.
 
 AEM Sites bietet Funktionen zum Erstellen von Webseiten, während AEM Assets das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. AEM unterstützt nun dank Integration von AEM Sites und AEM Assets das obige Nutzungsszenario.
 
