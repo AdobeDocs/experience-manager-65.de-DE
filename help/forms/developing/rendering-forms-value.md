@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
 
 ---
 
@@ -24,7 +24,7 @@ Wenn ein Formularentwurf ein UUID-Attribut enthält, wird er zwischengespeichert
 
 Der Forms-Dienst kann auch die Position verknüpfter Inhalte im Formularentwurf auflösen. Verknüpfte Bilder, auf die im Formularentwurf verwiesen wird, sind beispielsweise relative URLs. Verknüpfte Inhalte werden immer als relativ zum Speicherort des Formularentwurfs betrachtet. Das Auflösen von verknüpften Inhalten ist daher eine Frage der Bestimmung der Position, indem der relative Pfad zum absoluten Speicherort des Formularentwurfs angewendet wird.
 
-Anstatt einen Formularentwurf als Referenz zu übergeben, können Sie ihn als Wert übergeben. Die Weitergabe eines Formularentwurfs durch Wert ist effizient, wenn ein Formularentwurf dynamisch erstellt wird. das heißt, wenn eine Clientanwendung die XML generiert, die einen Formularentwurf während der Laufzeit erstellt. In diesem Fall wird ein Formularentwurf nicht in einem physischen Repository gespeichert, da er im Arbeitsspeicher gespeichert wird. Wenn Sie einen Formularentwurf zur Laufzeit dynamisch erstellen und als Wert übergeben, können Sie das Formular zwischenspeichern und die Leistung des Forms-Dienstes verbessern.
+Anstatt einen Formularentwurf als Referenz zu übergeben, können Sie einen Formularentwurf als Wert übergeben. Die Weitergabe eines Formularentwurfs durch Wert ist effizient, wenn ein Formularentwurf dynamisch erstellt wird. das heißt, wenn eine Clientanwendung die XML generiert, die einen Formularentwurf während der Laufzeit erstellt. In diesem Fall wird ein Formularentwurf nicht in einem physischen Repository gespeichert, da er im Arbeitsspeicher gespeichert wird. Wenn Sie einen Formularentwurf zur Laufzeit dynamisch erstellen und als Wert übergeben, können Sie das Formular zwischenspeichern und die Leistung des Forms-Dienstes verbessern.
 
 **Einschränkungen bei der Übergabe eines Formulars nach Wert**
 
@@ -32,7 +32,7 @@ Die folgenden Einschränkungen gelten, wenn ein Formularentwurf nach Wert überg
 
 * Im Formularentwurf dürfen keine relativen verknüpften Inhalte enthalten sein. Alle Bilder und Fragmente müssen in den Formularentwurf eingebettet oder auf den unbedingt verwiesen werden.
 * Serverseitige Berechnungen können nach der Wiedergabe des Formulars nicht mehr durchgeführt werden. Wenn das Formular zurück an den Forms-Dienst gesendet wird, werden die Daten extrahiert und ohne serverseitige Berechnungen zurückgegeben.
-* Da HTML nur verknüpfte Bilder zur Laufzeit verwenden kann, ist es nicht möglich, HTML mit eingebetteten Bildern zu generieren. Der Forms-Dienst unterstützt eingebettete Bilder mit HTML, indem die Bilder von einem referenzierten Formularentwurf abgerufen werden. Da ein von Werten übergebener Formularentwurf keinen referenzierten Speicherort hat, können eingebettete Bilder nicht extrahiert werden, wenn die HTML-Seite angezeigt wird. Daher müssen Bildverweise absolute Pfade sein, die in HTML wiedergegeben werden sollen.
+* Da HTML nur verknüpfte Bilder zur Laufzeit verwenden kann, ist es nicht möglich, HTML mit eingebetteten Bildern zu generieren. Dies liegt daran, dass der Forms-Dienst eingebettete Bilder mit HTML unterstützt, indem die Bilder von einem referenzierten Formularentwurf abgerufen werden. Da ein von Werten übergebener Formularentwurf keinen referenzierten Speicherort hat, können eingebettete Bilder nicht extrahiert werden, wenn die HTML-Seite angezeigt wird. Daher müssen Bildverweise absolute Pfade sein, die in HTML wiedergegeben werden sollen.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Beim Rendern eines Formulars nach Wert müssen Sie ein `com.adobe.idp.Document` 
 
 >[!NOTE]
 >
->Dieser Abschnitt und der zugehörige Schnellstart verweisen auf eine vorhandene XDP-Datei.
+>Dieser Abschnitt und der zugehörige Quick Beginn verweisen auf eine vorhandene XDP-Datei.
 
 **Formular als Wert wiedergeben**
 
@@ -90,7 +90,7 @@ Wenn der Forms-Dienst ein Formular nach Wert wiedergibt, gibt er einen Formulard
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Schnellstarts zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Übergeben von Dokumenten an den Forms-Dienst](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -120,7 +120,7 @@ Wiedergabe eines Formulars nach Wert mithilfe der Forms API (Java):
 
    * Ein leerer Zeichenfolgenwert. (Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.)
    * Ein `com.adobe.idp.Document` Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
-   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen angeben möchten.
+   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen festlegen möchten.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
    Die `renderPDFForm` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden kann.
@@ -138,9 +138,9 @@ Wiedergabe eines Formulars nach Wert mithilfe der Forms API (Java):
 
 **Siehe auch**
 
-[Wiedergabe von Formularen nach Wert](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
+[Wiedergabe von Formularen nach Wert](/help/forms/developing/rendering-forms.md)
 
-[Kurzanleitung (SOAP-Modus): Rendern nach Wert mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Rendern nach Wert mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -173,7 +173,7 @@ Wiedergabe eines Formulars nach Wert mithilfe der Forms API (Webdienst):
 
    * Ein leerer Zeichenfolgenwert. (Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.)
    * Ein `BLOB` Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
-   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen angeben möchten.
+   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen festlegen möchten.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder` Objekt, das von der Methode gefüllt wird. Auf diese Weise wird das gerenderte PDF-Formular gespeichert.
