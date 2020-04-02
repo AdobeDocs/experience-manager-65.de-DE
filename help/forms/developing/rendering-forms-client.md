@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ab401a8007f6ea85c0e52169091ce7a38b3dbe5c
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Wiedergabe von Formularen auf dem Client {#rendering-forms-at-the-client-inner}
 
-Sie können die Bereitstellung von PDF-Inhalten optimieren und die Fähigkeit des Forms-Dienstes zur Handhabung der Netzwerkbelastung durch die clientseitige Wiedergabe von Acrobat oder Adobe Reader verbessern. Dieser Prozess wird als Wiedergabe eines Formulars auf dem Client bezeichnet. Um ein Formular auf dem Client wiederzugeben, muss das Client-Gerät (normalerweise ein Webbrowser) Acrobat 7.0 oder Adobe Reader 7.0 oder höher verwenden.
+Sie können den Versand von PDF-Inhalten optimieren und die Fähigkeit des Forms-Dienstes zur Handhabung der Netzwerkbelastung durch die clientseitige Wiedergabe von Acrobat oder Adobe Reader verbessern. Dieser Prozess wird als Wiedergabe eines Formulars auf dem Client bezeichnet. Um ein Formular auf dem Client wiederzugeben, muss das Client-Gerät (normalerweise ein Webbrowser) Acrobat 7.0 oder Adobe Reader 7.0 oder höher verwenden.
 
 Änderungen an einem Formular, die sich aus der serverseitigen Skriptausführung ergeben, werden nicht in einem Formular wiedergegeben, das auf dem Client wiedergegeben wird, es sei denn, das Stammteilformular enthält das `restoreState` Attribut, auf das festgelegt ist `auto`. Weitere Informationen zu diesem Attribut finden Sie unter [Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
@@ -35,7 +35,7 @@ So rendern Sie ein Formular auf dem Client:
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie ein Forms Client-API-Objekt.
 1. Legen Sie Clientrendering-Laufzeitoptionen fest.
-1. Formular auf dem Client wiedergeben
+1. Formular auf dem Client wiedergeben.
 1. Schreiben Sie das Formular in den Client-Webbrowser.
 
 **Projektdateien einschließen**
@@ -55,12 +55,12 @@ Eine optionale Laufzeitoption, die Sie einstellen können, ist die `SeedPDF` Opt
 Sie können Designer verwenden, um eine einfache dynamische PDF-Datei zu erstellen, die als Seed-PDF-Datei verwendet werden soll. Die folgenden Schritte sind erforderlich, um diese Aufgabe durchzuführen:
 
 1. Legen Sie fest, ob Schriftarten in die Seed-PDF-Datei eingebettet werden müssen. Die Seed-PDF-Datei muss zusätzliche Schriftarten enthalten, die für das wiedergegebene Formular erforderlich sind. Wenn Sie Schriftarten in die Seed-PDF-Datei einbetten, stellen Sie sicher, dass Sie keine Schriftartlizenzvereinbarungen verletzen. In Designer können Sie festlegen, ob Schriftarten legal eingebettet werden können. Wenn beim Speichern keine Schriften in das Formular eingebettet werden können, zeigt Designer eine Meldung an, in der die Schriften aufgelistet werden, die nicht eingebettet werden können. Diese Meldung wird in Designer für statische PDF-Dokumente nicht angezeigt.
-1. Wenn Sie die Seed-PDF-Datei in Designer erstellen, sollten Sie mindestens ein Textfeld mit einer Meldung hinzufügen. Die Meldung sollte an Benutzer früherer Versionen von Adobe Reader gerichtet werden und angeben, dass sie Acrobat 7.0 oder höher oder Adobe Reader 7.0 oder höher benötigen, um das Dokument anzuzeigen.
+1. Wenn Sie die Seed-PDF-Datei in Designer erstellen, sollten Sie mindestens ein Textfeld mit einer Meldung hinzufügen. Die Meldung sollte an Benutzer früherer Versionen von Adobe Reader gerichtet werden und angeben, dass sie Acrobat 7.0 oder höher oder Adobe Reader 7.0 oder höher benötigen, um das Dokument Ansicht.
 1. Speichern Sie die Seed-PDF-Datei als dynamische PDF-Datei mit der Erweiterung des PDF-Dateinamens.
 
 >[!NOTE]
 >
->Sie müssen die Laufzeitoption zum Wiedergeben eines Formulars auf dem Client nicht definieren. Wenn Sie keine Seed-PDF-Datei angeben, erstellt der Forms-Dienst eine Shell-PDF, die keine COS-Objekte enthält, aber einen PDF-Wrapper mit dem tatsächlichen XDP-Inhalt enthält, der in das Dokument eingebettet ist. Die Schritte in diesem Abschnitt legen die Option zum Starten der PDF-Laufzeitumgebung nicht fest. Informationen zu COS-Objekten finden Sie im Adobe PDF-Referenzhandbuch.
+>Sie müssen die Laufzeitoption &quot;Seed PDF&quot;nicht definieren, um ein Formular auf dem Client wiederzugeben. Wenn Sie keine Seed-PDF-Datei angeben, erstellt der Forms-Dienst eine Shell-PDF, die keine COS-Objekte enthält, aber einen PDF-Wrapper mit dem tatsächlichen XDP-Inhalt enthält, der in das Dokument eingebettet ist. Die Schritte in diesem Abschnitt legen die Option zum Starten der PDF-Laufzeitumgebung nicht fest. Informationen zu COS-Objekten finden Sie im Adobe PDF-Referenzhandbuch.
 
 **Formular auf dem Client wiedergeben**
 
@@ -80,7 +80,7 @@ Der Forms-Dienst erstellt einen Formulardatenstream, den Sie in den Client-Webbr
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Schnellstarts zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Übergeben von Dokumenten an den Forms-Dienst](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -108,7 +108,7 @@ Wiedergabe eines Formulars auf dem Client mithilfe der Forms API (Java):
 
    Rufen Sie die `FormsServiceClient` Objektmethode `renderPDFForm` auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer AEM Forms-Anwendung ist, müssen Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer AEM Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document` Objekt.
    * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert, die zum Rendern eines Formulars auf dem Client erforderlich sind.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst zum Rendern eines Formulars erforderlich sind.
@@ -127,7 +127,7 @@ Wiedergabe eines Formulars auf dem Client mithilfe der Forms API (Java):
 
 **Siehe auch**
 
-[Kurzanleitung (SOAP-Modus): Wiedergabe eines Formulars auf dem Client mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Wiedergabe eines Formulars auf dem Client mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -156,7 +156,7 @@ Wiedergabe eines Formulars auf dem Client mithilfe der Forms API (Webdienst):
    Rufen Sie die `FormsService` Objektmethode `renderPDFForm` auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `BLOB` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`. (Siehe [Vorausfüllen von Formularen mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
+   * Ein `BLOB` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`. (Siehe [Vorausfüllen von Formularen mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert, die zum Rendern eines Formulars auf dem Client erforderlich sind.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
