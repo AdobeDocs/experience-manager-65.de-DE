@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
 
 ---
 
@@ -68,12 +68,12 @@ Für mit AEM gelieferte Standardberichte:
    >
    >
 * Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
->* Elemente durch| eine Liste möglicher Elemente; zum Beispiel Typen oder Namen:
+>* Elemente, die durch| eine Liste möglicher Elemente; zum Beispiel Typen oder Namen:
 >
 >  
 Beispiel: `String|String[]` Die Eigenschaft kann entweder String oder String[]sein.
 >
->* `[]` stellt ein Array dar; wie z. B. String[] oder ein Array von Knoten wie in der [Abfragedefinition](#query-definition).
+>* `[]` stellt ein Array dar; wie z. B. String[] oder ein Array von Knoten wie in der [Abfrage Definition](#query-definition).
 >
 >
 Sofern nicht anders angegeben, lauten die Standardtypen:
@@ -667,11 +667,11 @@ N:definitions
          Mit dieser Eigenschaft kann ein Suffix angegeben werden, das an den Pfad angehängt wird, bevor der Wert aufgelöst wird.
    * `pathextension`
 
-      * `path` (obligatorisch)
+      * `path` (mandatory)
 
          Definiert den vorzuzeigenden Pfad.
 
-      * `propertyName` (obligatorisch)
+      * `propertyName` (mandatory)
 
          Definiert die Eigenschaft auf dem aufgelösten Pfad, in dem sich der tatsächliche Wert befindet.
 
@@ -953,7 +953,7 @@ N:definitions
 
 * `aggregates`
 
-   Aggregate-Definitionen.
+   Aggregat-Definitionen.
 
    * `text`
 
@@ -961,7 +961,7 @@ N:definitions
 
    * `type`
 
-      Aggregattyp. Die verfügbaren Aggregate sind:
+      Aggregat. Die verfügbaren Aggregate sind:
 
       * `count`
 
@@ -1067,8 +1067,8 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
    * `definitions/filters` - filters
    * `definitions/type` –   – der Typ der Spalte (dieser muss über das Dialogfeld definiert werden, entweder über eine Auswahl/ein Kombinationsfeld oder ein ausgeblendetes Feld)
    * `definitions/data/resolver` und `definitions/data/resolverConfig` (aber nicht `definitions/data/preprocessing` oder `.../clientFilter`) - der Auflöser und die Konfiguration
-   * `definitions/queryBuilder` - die Konfiguration des Abfragegenerators
-   * `defaults/aggregate` - das Standardaggregat
+   * `definitions/queryBuilder` - Abfrage Builder-Konfiguration
+   * `defaults/aggregate` - das Standard-Aggregat
    In the case of a new instance of the generic column on the **User Report** the properties defined with the dialog are persisted under:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
@@ -1318,7 +1318,8 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    >
    >Dies entspricht den Definitionen:
    >
-   >```
+   >
+   ```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
@@ -1389,13 +1390,13 @@ Sie können nun eine Instanz Ihres neuen Berichts erstellen:
    >
    >Da bei diesem Beispiel keine gruppierbaren Spalten gibt, sind die Diagramme nicht verfügbar. To see charts, set `groupable` to `true`:
    >
-   >```
+   >
+   ```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
-   >
 
 ## Konfigurieren der Dienste für das Framework für die Berichterstellung {#configuring-the-report-framework-services}
 
