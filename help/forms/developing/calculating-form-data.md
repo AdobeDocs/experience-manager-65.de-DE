@@ -11,22 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 4b9e2ceafc301db9337868b78bcae87c0f07e14b
+source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
 
 ---
 
 
 # Formulardaten berechnen {#calculating-form-data}
 
-Der Forms-Dienst kann die Werte berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzeigen. Zur Berechnung der Formulardaten müssen Sie zwei Aufgaben ausführen. Zunächst erstellen Sie ein Formularentwurfsskript, das die Formulardaten berechnet. Ein Formularentwurf unterstützt drei Skripttypen. Ein Skripttyp wird auf dem Client ausgeführt, ein anderer auf dem Server und der dritte auf dem Server und dem Client. Der in diesem Thema beschriebene Skripttyp wird auf dem Server ausgeführt. Serverseitige Berechnungen werden für HTML-, PDF- und Formularleitfadentransformationen (nicht mehr unterstützt) unterstützt.
+Der Forms-Dienst kann die Werte berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzeigen. Zur Berechnung der Formulardaten müssen Sie zwei Aufgaben ausführen. Zunächst erstellen Sie ein Formularentwurfsskript, das die Formulardaten berechnet. Ein Formularentwurf unterstützt drei Skripttypen. Ein Skripttyp wird auf dem Client ausgeführt, ein anderer auf dem Server und der dritte auf dem Server und auf dem Client. Der in diesem Thema beschriebene Skripttyp wird auf dem Server ausgeführt. Serverseitige Berechnungen werden für HTML-, PDF- und Formularleitfadentransformationen (nicht mehr unterstützt) unterstützt.
 
 Im Rahmen des Formularentwurfsprozesses können Sie Berechnungen und Skripten verwenden, um eine bessere Benutzerfreundlichkeit zu gewährleisten. Berechnungen und Skripten können den meisten Formularfeldern und -objekten hinzugefügt werden. Sie müssen ein Formularentwurfsskript erstellen, um Berechnungsvorgänge für Daten durchzuführen, die ein Benutzer in ein interaktives Formular eingibt.
 
-Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche Berechnen, um die Ergebnisse anzuzeigen. Der folgende Vorgang beschreibt eine Beispielanwendung, mit der ein Benutzer Daten berechnen kann:
+Der Benutzer gibt Werte in das Formular ein und klickt auf die Schaltfläche Berechnen, um die Ergebnisse Ansicht. Der folgende Vorgang beschreibt eine Beispielanwendung, mit der ein Benutzer Daten berechnen kann:
 
-* Der Benutzer greift auf eine HTML-Seite mit dem Namen StartLoan.html zu, die als Startseite der Webanwendung fungiert. Diese Seite ruft ein Java-Servlet mit dem Namen `GetLoanForm`auf.
+* Der Benutzer greift auf eine HTML-Seite mit dem Namen StartLoan.html zu, die als Beginn der Webanwendung fungiert. Diese Seite ruft ein Java-Servlet mit dem Namen `GetLoanForm`auf.
 * Das `GetLoanForm` Servlet rendert ein Darlehensformular. Dieses Formular enthält ein Skript, interaktive Felder, eine Berechnungsschaltfläche und eine Senden-Schaltfläche.
-* Der Benutzer gibt Werte in die Felder des Formulars ein und klickt auf die Schaltfläche &quot;Berechnen&quot;. Das Formular wird an das `CalculateData` Java-Servlet gesendet, wo das Skript ausgeführt wird. Das Formular wird mit den im Formular angezeigten Berechnungsergebnissen an den Benutzer zurückgesendet.
+* Der Benutzer gibt Werte in die Felder des Formulars ein und klickt auf die Schaltfläche &quot;Berechnen&quot;. Das Formular wird an das `CalculateData` Java-Servlet gesendet, in dem das Skript ausgeführt wird. Das Formular wird mit den im Formular angezeigten Berechnungsergebnissen an den Benutzer zurückgesendet.
 * Der Benutzer fährt mit der Eingabe und Berechnung der Werte fort, bis ein zufriedenstellendes Ergebnis angezeigt wird. Wenn der Benutzer zufrieden ist, klickt er auf die Schaltfläche &quot;Senden&quot;, um das Formular zu verarbeiten. Das Formular wird an ein anderes Java-Servlet mit dem Namen `ProcessForm` gesendet, das für das Abrufen der gesendeten Daten zuständig ist. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 
@@ -46,11 +46,11 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>Das <code>GetLoanForm</code> Java-Servlet wird von der HTML-Startseite aufgerufen. </p></td>
+   <td><p>Das <code>GetLoanForm</code> Java-Servlet wird auf der Seite "HTML-Beginn"aufgerufen. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Das <code>GetLoanForm</code> Java-Servlet verwendet die Forms-Dienst-Client-API, um das Darlehensformular an den Client-Webbrowser zu rendern. Der Unterschied zwischen der Wiedergabe eines Formulars, das ein Skript enthält, das für die Ausführung auf dem Server konfiguriert ist, und der Wiedergabe eines Formulars, das kein Skript enthält, besteht darin, dass Sie den Zielspeicherort angeben müssen, der zum Ausführen des Skripts verwendet wird. Wenn kein Zielort angegeben ist, wird kein Skript ausgeführt, das für die Ausführung auf dem Server konfiguriert ist. Betrachten Sie zum Beispiel die Anwendung, die in diesem Abschnitt eingeführt wurde. Das <code>CalculateData</code> Java-Servlet ist der Zielort, an dem das Skript ausgeführt wird.</p></td>
+   <td><p>Das <code>GetLoanForm</code> Java-Servlet verwendet die Forms-Dienst-Client-API, um das Darlehensformular an den Client-Webbrowser zu rendern. Der Unterschied zwischen der Wiedergabe eines Formulars, das ein für die Ausführung auf dem Server konfiguriertes Skript enthält, und der Wiedergabe eines Formulars ohne Skript besteht darin, dass Sie den Speicherort der Zielgruppe angeben müssen, mit dem das Skript ausgeführt wird. Wenn kein Speicherort für die Zielgruppe angegeben ist, wird kein Skript ausgeführt, das für die Ausführung auf dem Server konfiguriert ist. Betrachten Sie zum Beispiel die Anwendung, die in diesem Abschnitt eingeführt wurde. Das <code>CalculateData</code> Java-Servlet ist der Speicherort der Zielgruppe, an dem das Skript ausgeführt wird.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -62,7 +62,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>Der Benutzer klickt auf die Senden-Schaltfläche, wenn die Werte zufriedenstellend sind. Das Formular wird an ein anderes Java-Servlet namens <code>ProcessForm</code>.</p></td>
+   <td><p>Der Benutzer klickt auf die Senden-Schaltfläche, wenn die Werte zufriedenstellend sind. Das Formular wird an ein anderes Java-Servlet mit dem Namen <code>ProcessForm</code>gesendet.</p></td>
   </tr>
  </tbody>
 </table>
@@ -73,7 +73,7 @@ Um die Verwendung eines Formularentwurfsskripts zu veranschaulichen, wird in die
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-******A. Ein Feld mit dem Namen NumericField1** B. Ein Feld mit dem Namen NumericField2 **C.** Ein Feld mit dem Namen NumericField3
+**A.** Ein Feld mit dem Namen NumericField1 **B.** Ein Feld mit dem Namen NumericField2 **C.** Ein Feld mit dem Namen NumericField3
 
 Die Syntax des Skripts in diesem Formularentwurf lautet wie folgt:
 
@@ -110,7 +110,7 @@ Bevor Sie einen Forms-Dienst-Client-API-Vorgang programmgesteuert durchführen k
 
 **Abrufen eines Formulars mit einem Berechnungsskript**
 
-Mit der Forms-Dienst-Client-API können Sie eine Anwendungslogik erstellen, die ein Formular verarbeitet, das ein Skript enthält, das für die Ausführung auf dem Server konfiguriert wurde. Der Prozess ähnelt der Bearbeitung eines gesendeten Formulars. (Siehe [Verarbeiten von gesendeten Formularen](/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms).)
+Mit der Forms-Dienst-Client-API können Sie eine Anwendungslogik erstellen, die ein Formular verarbeitet, das ein Skript enthält, das für die Ausführung auf dem Server konfiguriert wurde. Der Prozess ähnelt der Bearbeitung eines gesendeten Formulars. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/handling-submitted-forms.md).)
 
 Vergewissern Sie sich, dass der mit dem gesendeten Formular verknüpfte Verarbeitungsstatus `1` `(Calculate)`ist. Das bedeutet, dass der Forms-Dienst eine Berechnung der Formulardaten durchführt und die Ergebnisse an den Benutzer zurückgeschrieben werden müssen. In diesem Fall wird automatisch ein Skript ausgeführt, das für die Ausführung auf dem Server konfiguriert ist.
 
@@ -121,7 +121,7 @@ Nachdem Sie überprüft haben, ob der Verarbeitungsstatus, der mit einem gesende
 **Siehe auch**
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-Formulardaten[mithilfe der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Berechnen von Formulardaten mithilfe der Web-Service-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)Festlegen der Verbindungseigenschaften[](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)Forms-Dienst-API - Schnellstarts[Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
+Formulardaten[mithilfe der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Berechnen von Formulardaten mithilfe der Web-Service-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)Festlegen der Verbindungseigenschaften[](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)Forms-Dienst-API Schnellaktionen[Anzeigen interaktiver PDF-Formulare](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Formulardaten mit der Java-API berechnen {#calculate-form-data-using-the-java-api}
 
@@ -142,7 +142,7 @@ Berechnen von Formulardaten mithilfe der Forms API (Java):
    * Rufen Sie die `FormsServiceClient` Objektmethode `processFormSubmission` auf und übergeben Sie die folgenden Werte:
 
       * Das `com.adobe.idp.Document` Objekt, das die Formulardaten enthält.
-      * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Header angibt. Sie müssen den zu verarbeitenden Inhaltstyp angeben, indem Sie einen oder mehrere Werte für die `CONTENT_TYPE` Umgebungsvariable angeben. Um beispielsweise XML- und PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Sie müssen den zu verarbeitenden Inhaltstyp angeben, indem Sie einen oder mehrere Werte für die Variable &quot; `CONTENT_TYPE` Umgebung&quot;angeben. Um beispielsweise XML- und PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt; zum Beispiel `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen speichert.
       Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
@@ -189,7 +189,7 @@ Berechnen von Formulardaten mithilfe der Forms API (Webdienst):
    * Rufen Sie die `FormsServiceClient` Objektmethode `processFormSubmission` auf und übergeben Sie die folgenden Werte:
 
       * Das `BLOB` Objekt, das die Formulardaten enthält.
-      * Ein Zeichenfolgenwert, der Umgebungsvariablen angibt, die alle relevanten HTTP-Header enthalten. Sie können beispielsweise den folgenden Zeichenfolgenwert angeben: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
+      * Ein Zeichenfolgenwert, der angibt, welche Umgebung alle relevanten HTTP-Header enthalten. Sie können beispielsweise den folgenden Zeichenfolgenwert angeben: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
       * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt; zum Beispiel `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen speichert. Für weitere Informationen, .
       * Ein leeres `BLOBHolder` Objekt, das von der Methode gefüllt wird.
