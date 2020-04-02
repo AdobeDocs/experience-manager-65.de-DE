@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
 
 ---
 
@@ -47,7 +47,7 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 | dps-abstract | Zeichenfolge |  |
 | dps-shortAbstract | Zeichenfolge |  |
 | dps-department | Zeichenfolge |  |
-| dps-category | Zeichenfolge |  |
+| dps-Kategorie | Zeichenfolge |  |
 | dps-keywords | Zeichenfolge[] |  |
 | dps-internalKeywords | Zeichenfolge[] |  |
 | dps-wichtig | Zeichenfolge[] | Wichtigkeit von {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
@@ -88,7 +88,7 @@ Die folgenden Tabellen beschreiben die Inhaltseigenschaften und -knoten.
 ### Häufige Knoten {#common-nodes}
 
 | Knotenname | Typ | Standardwerte oder erwartete Werte | Beschreibung |
---- |--- |--- |--- |
+|--- |--- |--- |--- |
 | image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entitäten {#entities}
