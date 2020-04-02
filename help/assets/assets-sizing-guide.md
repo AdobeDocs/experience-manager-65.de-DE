@@ -3,7 +3,7 @@ title: Handbuch zur Asset-Größenanpassung
 description: Best Practices zur Ermittlung effizienter Metriken zur Schätzung der Infrastruktur und der Ressourcen, die für die Bereitstellung von AEM Assets erforderlich sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
 
 ---
 
@@ -20,7 +20,7 @@ Ein häufiger Fehler bei der Dimensionierung des erforderlichen Festplattenspeic
 
 Die meisten Benutzer definieren benutzerdefinierte Wiedergaben neben den standardmäßig verfügbaren Wiedergaben. Zusätzlich zu den Wiedergaben können Sie mit AEM Assets Unter-Assets aus gängigen Dateitypen wie InDesign und Illustrator extrahieren.
 
-Schließlich werden die Versionierungsfunktionen von AEM Store-Duplikaten der Assets im Versionsverlauf übernommen. Sie können die Versionen so konfigurieren, dass Bereinigungen häufig durchgeführt werden. Jedoch entscheiden sich viele Benutzer für eine längere Aufbewahrung der Versionen im System, wodurch zusätzlicher Speicherplatz belegt wird.
+Und schließlich die Versionierungsfunktionen der AEM Store-Duplikat der Assets im Versionsverlauf. Sie können die Versionen so konfigurieren, dass Bereinigungen häufig durchgeführt werden. Jedoch entscheiden sich viele Benutzer für eine längere Aufbewahrung der Versionen im System, wodurch zusätzlicher Speicherplatz belegt wird.
 
 Angesichts dieser Faktoren benötigen Sie eine Methodik für eine ausreichend genaue Berechnung des Speicherplatzes, um Benutzer-Assets aufbewahren zu können.
 
@@ -52,7 +52,7 @@ Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung 
 
 ### Shared datastores {#shared-datastores}
 
-Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatastore auf einem angeschlossenen Laufwerk oder über einen S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Darüber hinaus erleichtert ein freigegebener Datenspeicher die Replikation ohne Binärdatei und verringert die Bandbreite, die zum Replizieren von Assets in Veröffentlichungsumgebungen verwendet wird.
+Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatastore auf einem angeschlossenen Laufwerk oder über einen S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Darüber hinaus erleichtert ein freigegebener Datenspeicher die Replikation ohne Binärdatei und verringert die Bandbreite, die zum Replizieren von Assets für die Veröffentlichung von Umgebung verwendet wird.
 
 #### Anwendungsfälle {#use-cases}
 
@@ -91,9 +91,9 @@ Es ist schwierig, genaue Dimensionierungszahlen für einen Knotenspeicher oder D
 * Auditprotokolle
 * Archivierte und aktive Workflows
 
-Binärdateien in einem Datenspeicher aufzubewahren bedeutet, dass entsprechender Speicherplatz belegt wird. Die meisten Repositorys sind zwar kleiner als 100 GB, Es kann jedoch größere Repositorys bis zu einer TB geben. Zusätzlich zur Offlinekomprimierung muss genügend freier Speicher auf dem Volume vorhanden sein, damit das komprimierte Repository neben der vorab komprimierten Version neu geschrieben werden kann. Eine geeignete Faustregel: Dimensionieren Sie die Festplatte so, dass sie 1,5-mal so groß ist wie die erwartete Repositorygröße.
+Binärdateien in einem Datenspeicher aufzubewahren bedeutet, dass entsprechender Speicherplatz belegt wird. Die meisten Repositorys sind zwar kleiner als 100 GB, Es kann jedoch auch größere Repositorys mit einer Größe von bis zu 1 TB geben. Zusätzlich zur Offlinekomprimierung muss genügend freier Speicher auf dem Volume vorhanden sein, damit das komprimierte Repository neben der vorab komprimierten Version neu geschrieben werden kann. Eine geeignete Faustregel: Dimensionieren Sie die Festplatte so, dass sie 1,5-mal so groß ist wie die erwartete Repositorygröße.
 
-Setzen Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level von mehr als 3 Kilobyte ein. Damit im Zuge der IOPS keine Leistungsengpässe entstehen, überwachen Sie die CPU-I/O-Wartelevel auf frühe Problemanzeichen.
+Verwenden Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level über 3000. Damit im Zuge der IOPS keine Leistungsengpässe entstehen, überwachen Sie die CPU-I/O-Wartelevel auf frühe Problemanzeichen.
 
 [Datei laden](assets/aem_environment_sizingtool.xlsx)
 
