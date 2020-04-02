@@ -1,5 +1,5 @@
 ---
-source-git-commit: 42d5f44c64faa54e9366532f55a92917b4d87f07
+source-git-commit: 5221738c024aca7322e1948893db07a1d21db4cf
 translation-type: tm+mt
 
 ---
@@ -20,7 +20,7 @@ Obwohl wir alle Beiträge zur Verbesserung der AEM-Dokumentation begrüßen, bit
 
 ## So können Sie einen Beitrag leisten
 
-Wir möchten Ihre Beiträge so einfach wie möglich einreichen. Sie können auf zwei Arten beitragen:
+Wir möchten Ihnen die Einreichung Ihrer Beiträge so einfach wie möglich machen. Sie können auf zwei Arten beitragen:
 
 * [Problem erstellen](#create-an-issue)
 * [Pull-Anforderung erstellen](#create-a-pull-request)
@@ -51,9 +51,9 @@ Sehen Sie sich das folgende Video an, um einen schnellen Überblick darüber zu 
 
 ### Beiträge von Adobe-Mitarbeitern
 
-Wenn Sie ein Adobe-Mitarbeiter sind und eine Pull-Anforderung stellen möchten, verwenden Sie bitte das private Repository unter `https://git.corp.adobe.com/AdobeDocs`.
+Wenn Sie ein Adobe-Mitarbeiter sind und einen Beitrag leisten, verwenden Sie bitte das `AdobeDocs` Org in der Unternehmensstruktur.
 
-Für Probleme nutzen Sie bitte die öffentlichen Repositorys.
+Selbstverständlich freuen wir uns über jeden Beitrag und werden Ihren Beitrag überprüfen, wenn er im öffentlichen Repository bereitgestellt wird, jedoch sind Abrufanforderungen von Adobe-Mitarbeitern einfacher zu verarbeiten und können schneller im Corporate Repo genehmigt werden. Bitte stellen Sie sicher, dass alle proprietären Informationen nur im Corporate Repo diskutiert werden.
 
 ## Weiterführende Informationen
 
