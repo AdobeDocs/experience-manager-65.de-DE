@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ebb60e79aa7fb45e059e2d2451f6d549cd24b8b0
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Vorausfüllen von Formularen mit flexiblen Layouts {#prepopulating-forms-with-flowable-layouts2}
 
-Beim Vorausfüllen von Formularen werden Daten für Benutzer in einem wiedergegebenen Formular angezeigt. Angenommen, ein Benutzer meldet sich mit einem Benutzernamen und einem Kennwort bei einer Website an. Bei erfolgreicher Authentifizierung fragt die Clientanwendung eine Datenbank nach Benutzerinformationen ab. Die Daten werden mit dem Formular zusammengeführt und dann dem Benutzer wiedergegeben. Dadurch kann der Benutzer personalisierte Daten im Formular anzeigen.
+Beim Vorausfüllen von Formularen werden Daten für Benutzer in einem wiedergegebenen Formular angezeigt. Angenommen, ein Benutzer meldet sich mit einem Benutzernamen und einem Kennwort bei einer Website an. Bei erfolgreicher Authentifizierung wird von der Clientanwendung eine Datenbank für Benutzerinformationen Abfrage. Die Daten werden mit dem Formular zusammengeführt und dann dem Benutzer wiedergegeben. Dadurch kann der Benutzer personalisierte Daten innerhalb des Formulars Ansicht haben.
 
 Das Vorausfüllen eines Formulars hat folgende Vorteile:
 
-* Ermöglicht dem Benutzer, benutzerdefinierte Daten in einem Formular anzuzeigen.
+* Ermöglicht dem Benutzer die Ansicht benutzerdefinierter Daten in einem Formular.
 * Verringert die Eingabe, die der Benutzer zum Ausfüllen eines Formulars vornimmt.
 * Stellt die Datenintegrität sicher, indem es die Position der Daten kontrolliert.
 
@@ -36,7 +36,7 @@ Für jedes Formularfeld, das im Voraus gefüllt werden soll, muss ein XML-Elemen
 
 Wenn Sie ein Formular vorab ausfüllen, das bereits Daten enthält, müssen Sie die Daten angeben, die bereits in der XML-Datenquelle angezeigt werden. Angenommen, ein Formular mit 10 Feldern enthält Daten in vier Feldern. Nehmen Sie als Nächstes an, dass Sie die restlichen sechs Felder vorab ausfüllen möchten. In diesem Fall müssen Sie 10 XML-Elemente in der XML-Datenquelle angeben, die zum Vorausfüllen des Formulars verwendet wird. Wenn Sie nur sechs Elemente angeben, sind die ursprünglichen vier Felder leer.
 
-Sie können beispielsweise ein Formular wie das Musterbestätigungsformular im Voraus ausfüllen. (Siehe &quot;Bestätigungsformular&quot;in [Wiedergabe von interaktiven PDF-Formularen](/help/forms/developing/rendering-interactive-pdf-forms.md#rendering-interactive-pdf-forms).)
+Sie können beispielsweise ein Formular wie das Musterbestätigungsformular im Voraus ausfüllen. (Siehe &quot;Bestätigungsformular&quot;in [Rendering Interactive PDF Forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 Zum Vorausfüllen des Musterbestätigungsformulars müssen Sie eine XML-Datenquelle erstellen, die drei XML-Elemente enthält, die den drei Feldern im Formular entsprechen. Dieses Formular enthält die folgenden drei Felder: `FirstName`, `LastName`und `Amount`. Der erste Schritt besteht darin, eine XML-Datenquelle zu erstellen, die XML-Elemente enthält, die mit den Feldern im Formularentwurf übereinstimmen. Der nächste Schritt besteht darin, den XML-Elementen Datenwerte zuzuweisen, wie im folgenden XML-Code dargestellt.
 
@@ -54,7 +54,7 @@ Nachdem Sie das Bestätigungsformular mit dieser XML-Datenquelle ausgefüllt und
 
 ### Vorausfüllen von Formularen mit flexiblen Layouts {#prepopulating_forms_with_flowable_layouts-1}
 
-Formulare mit flexiblen Layouts sind nützlich, um Benutzern eine unbestimmte Datenmenge anzuzeigen. Da sich das Layout des Formulars automatisch an die zusammengeführte Datenmenge anpasst, müssen Sie kein festes Layout oder keine Seitenzahl für das Formular vorab festlegen, wie Sie es bei einem Formular mit festem Layout tun müssen.
+Formulare mit flexiblen Layouts sind nützlich, um eine unbestimmte Datenmenge für Benutzer anzuzeigen. Da sich das Layout des Formulars automatisch an die zusammengeführte Datenmenge anpasst, müssen Sie kein festes Layout oder keine Seitenzahl für das Formular vorab festlegen, wie Sie es bei einem Formular mit festem Layout tun müssen.
 
 Ein Formular wird in der Regel mit Daten gefüllt, die während der Laufzeit abgerufen werden. Daher können Sie ein Formular vorab ausfüllen, indem Sie eine XML-Datenquelle im Arbeitsspeicher erstellen und die Daten direkt in die XML-Datenquelle im Arbeitsspeicher platzieren.
 
@@ -97,11 +97,11 @@ Das folgende Diagramm zeigt ein Beispiel für ein Bestellformular. Die Informati
 
 >[!NOTE]
 >
->Ein Formular kann vorab mit Daten aus anderen Quellen wie einer Unternehmensdatenbank oder externen Anwendungen gefüllt werden.
+>Ein Formular kann vorab mit Daten aus anderen Quellen wie einer Unternehmensdatenbank oder externen Anwendungen ausgefüllt werden.
 
 ### Überlegungen zum Formularentwurf {#form-design-considerations}
 
-Formulare mit flexiblen Layouts basieren auf Formularentwürfen, die in Designer erstellt wurden. Ein Formularentwurf gibt einen Satz von Layout-, Präsentations- und Datenerfassungsregeln an, einschließlich der Berechnung von Werten basierend auf der Benutzereingabe. Die Regeln werden angewendet, wenn Daten in ein Formular eingegeben werden. Felder, die einem Formular hinzugefügt werden, sind Teilformulare, die sich im Formularentwurf befinden. Im Bestellformular im vorherigen Diagramm ist jede Zeile beispielsweise ein Teilformular. Informationen zum Erstellen eines Formularentwurfs mit Teilformularen finden Sie unter [Bestellformular mit flexiblem Layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)erstellen.
+Formulare mit flexiblen Layouts basieren auf Formularentwürfen, die in Designer erstellt wurden. Ein Formularentwurf gibt einen Satz von Layout-, Präsentations- und Datenerfassungsregeln an, einschließlich der Berechnung von Werten, die auf der Benutzereingabe basieren. Die Regeln werden angewendet, wenn Daten in ein Formular eingegeben werden. Felder, die einem Formular hinzugefügt werden, sind Teilformulare, die sich im Formularentwurf befinden. Im Bestellformular im vorherigen Diagramm ist jede Zeile beispielsweise ein Teilformular. Informationen zum Erstellen eines Formularentwurfs mit Teilformularen finden Sie unter [Bestellformular mit flexiblem Layout](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)erstellen.
 
 ### Datenuntergruppen {#understanding-data-subgroups}
 
@@ -166,7 +166,7 @@ Die folgende XML-Datenquelle dient zum Vorausfüllen des Bestellformulars.
      </detail>
 ```
 
-Beachten Sie, dass jede Datenuntergruppe vier XML-Elemente enthält, die diesen Informationen entsprechen:
+Beachten Sie, dass jede Datenuntergruppe vier XML-Elemente enthält, die den folgenden Informationen entsprechen:
 
 * Artikelteilnummer
 * Beschreibung der Elemente
@@ -192,7 +192,7 @@ Jede Datenuntergruppe muss XML-Elemente enthalten, die mit den Feldnamen im Teil
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
-Um ein Formular mit einem flexiblen Layout im Voraus auszufüllen, führen Sie die folgenden Schritte aus:
+So füllen Sie ein Formular mit einem flexiblen Layout im Voraus aus:
 
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie eine speicherinterne XML-Datenquelle.
@@ -209,7 +209,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen einer speicherinternen XML-Datenquelle**
 
-Mithilfe von `org.w3c.dom` Klassen können Sie eine XML-Datenquelle im Arbeitsspeicher erstellen, um ein Formular mit einem flexiblen Layout im Voraus zu füllen. Sie müssen Daten in eine XML-Datenquelle einfügen, die dem Formular entspricht. Informationen zur Beziehung zwischen einem Formular mit einem flexiblen Layout und der XML-Datenquelle finden Sie unter [Grundlegendes zu Datenuntergruppen](/help/forms/developing/prepopulating-forms-flowable-layouts.md#understanding-data-subgroups).
+Mithilfe von `org.w3c.dom` Klassen können Sie eine XML-Datenquelle im Arbeitsspeicher erstellen, um ein Formular mit einem flexiblen Layout im Voraus zu füllen. Sie müssen Daten in eine XML-Datenquelle einfügen, die dem Formular entspricht. Informationen zur Beziehung zwischen einem Formular mit einem flexiblen Layout und der XML-Datenquelle finden Sie unter [Untergruppen](#understanding-data-subgroups)von Daten.
 
 **XML-Datenquelle konvertieren**
 
@@ -229,7 +229,7 @@ Sie können ein vorausgefülltes Formular wie jedes andere Formular wiedergeben.
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Schnellstarts zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
@@ -237,7 +237,7 @@ Sie können ein vorausgefülltes Formular wie jedes andere Formular wiedergeben.
 
 ### Vorausfüllen von Formularen mit der Java-API {#prepopulating-forms-using-the-java-api}
 
-So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (Java) im Voraus aus:
+So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms-API (Java) im Voraus aus:
 
 1. Projektdateien einschließen
 
@@ -248,7 +248,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
    * Erstellen Sie ein Java- `DocumentBuilderFactory` Objekt, indem Sie die `DocumentBuilderFactory` class- `newInstance` Methode aufrufen.
    * Erstellen Sie ein Java- `DocumentBuilder` Objekt, indem Sie die `DocumentBuilderFactory` Objektmethode `newDocumentBuilder` aufrufen.
    * Rufen Sie die `DocumentBuilder` Objektmethode auf, um ein `newDocument` `org.w3c.dom.Document` Objekt zu instanziieren.
-   * Erstellen Sie das Stammelement der XML-Datenquelle, indem Sie die `org.w3c.dom.Document` Objektmethode `createElement` aufrufen. Dadurch wird ein `Element` Objekt erstellt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement` Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Stammelement an das Dokument an, indem Sie die `Document` Methode des `appendChild` Objekts aufrufen und das Stammelementobjekt als Argument übergeben. Die folgende Codezeile zeigt diese Anwendungslogik:
+   * Erstellen Sie das Stammelement der XML-Datenquelle, indem Sie die `org.w3c.dom.Document` Objektmethode `createElement` aufrufen. Dadurch wird ein `Element` Objekt erstellt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement` Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Stammelement an das Dokument an, indem Sie die `Document` `appendChild` Objektmethode aufrufen und das Stammelementobjekt als Argument übergeben. Die folgende Codezeile zeigt diese Anwendungslogik:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
@@ -261,7 +261,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Fügen Sie alle verbleibenden Elemente zum Kopfzeilenelement hinzu, indem Sie den letzten Unterschritt für jedes Feld wiederholen, das im statischen Teil des Formulars angezeigt wird (im XML-Datenquellendiagramm werden diese Felder in Abschnitt A angezeigt). (Siehe [Datenuntergruppen](#understanding-data-subgroups).)
+   * Hinzufügen alle verbleibenden Elemente in das Kopfzeilenelement, indem der letzte Unterschritt für jedes Feld im statischen Teil des Formulars wiederholt wird (im XML-Datenquellendiagramm werden diese Felder in Abschnitt A angezeigt). (Siehe [Datenuntergruppen](#understanding-data-subgroups).)
    * Erstellen Sie das Detail-Element der XML-Datenquelle, indem Sie die `Document` Objektmethode `createElement` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement` Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Detail-Element an das Stammelement an, indem Sie die `root` `appendChild` Objektmethode aufrufen und das Detail-Element-Objekt als Argument übergeben. Die XML-Elemente, die an das Detail-Element angehängt werden, entsprechen dem dynamischen Teil des Formulars. Die folgenden Codezeilen zeigen diese Anwendungslogik:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -305,7 +305,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
 
 **Siehe auch**
 
-[Kurzanleitung (SOAP-Modus): Vorausfüllen von Formularen mit fließenden Layouts mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Vorausfüllen von Formularen mit fließenden Layouts mit der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -325,7 +325,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (W
    * Erstellen Sie ein Java- `DocumentBuilderFactory` Objekt, indem Sie die `DocumentBuilderFactory` class- `newInstance` Methode aufrufen.
    * Erstellen Sie ein Java- `DocumentBuilder` Objekt, indem Sie die `DocumentBuilderFactory` Objektmethode `newDocumentBuilder` aufrufen.
    * Rufen Sie die `DocumentBuilder` Objektmethode auf, um ein `newDocument` `org.w3c.dom.Document` Objekt zu instanziieren.
-   * Erstellen Sie das Stammelement der XML-Datenquelle, indem Sie die `org.w3c.dom.Document` Objektmethode `createElement` aufrufen. Dadurch wird ein `Element` Objekt erstellt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement` Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Stammelement an das Dokument an, indem Sie die `Document` Methode des `appendChild` Objekts aufrufen und das Stammelementobjekt als Argument übergeben. Die folgenden Codezeilen zeigen diese Anwendungslogik:
+   * Erstellen Sie das Stammelement der XML-Datenquelle, indem Sie die `org.w3c.dom.Document` Objektmethode `createElement` aufrufen. Dadurch wird ein `Element` Objekt erstellt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement` Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Stammelement an das Dokument an, indem Sie die `Document` `appendChild` Objektmethode aufrufen und das Stammelementobjekt als Argument übergeben. Die folgenden Codezeilen zeigen diese Anwendungslogik:
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
@@ -337,7 +337,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (W
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Fügen Sie alle verbleibenden Elemente zum Kopfzeilenelement hinzu, indem Sie den letzten Unterschritt für jedes Feld wiederholen, das im statischen Teil des Formulars angezeigt wird (im XML-Datenquellendiagramm werden diese Felder in Abschnitt A angezeigt). (Siehe [Datenuntergruppen](#understanding-data-subgroups).)
+   * Hinzufügen alle verbleibenden Elemente in das Kopfzeilenelement, indem der letzte Unterschritt für jedes Feld im statischen Teil des Formulars wiederholt wird (im XML-Datenquellendiagramm werden diese Felder in Abschnitt A angezeigt). (Siehe [Datenuntergruppen](#understanding-data-subgroups).)
    * Erstellen Sie das Detail-Element der XML-Datenquelle, indem Sie die `Document` Objektmethode `createElement` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `createElement` Methode. Wandeln Sie den Rückgabewert in `Element` um. Hängen Sie anschließend das Detail-Element an das Stammelement an, indem Sie die `root` `appendChild` Objektmethode aufrufen und das Detail-Element-Objekt als Argument übergeben. Die XML-Elemente, die an das Detail-Element angehängt werden, entsprechen dem dynamischen Teil des Formulars. Die folgende Codezeile zeigt diese Anwendungslogik:
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
