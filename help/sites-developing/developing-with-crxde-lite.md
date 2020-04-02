@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 78133b41e1c99f8f86f4c0d51961287735423fe2
 
 ---
 
@@ -171,13 +171,13 @@ Die Seite **Hello World** basiert auf einem Inhaltsknoten, der ein jsp-Skript du
 
 Folgende Knoten werden erstellt:
 
-* `/apps/<project-name>`: den Anwendungscontainer.
-* `/apps/<project-name>/components`: der Komponenten-Container, der die html.jsp-Beispieldatei enthält, die zum Rendern einer Seite verwendet wird.
+* `/apps/<project-name>`: dem Container der Anwendung.
+* `/apps/<project-name>/components`: der components-Container, der die html.jsp-Beispieldatei enthält, die zum Rendern einer Seite verwendet wird.
 
 * `/apps/<project-name>/src`: den Bundles-Container mit einem Beispielprojektpaket.
 
-* `/apps/<project-name>/install`: den kompilierten Bundles-Container mit dem kompilierten Beispiel-Projektpaket.
-* `/content/<project-name>`: den Inhaltsbehälter.
+* `/apps/<project-name>/install`: den kompilierten Bundles-Container, der das kompilierte Beispiel-Projektpaket enthält.
+* `/content/<project-name>`: den Content Container.
 * /etc/packages/&lt;Java-Suffix>/&lt;Projektname>.zip, ein Paket, das alle Projekt-Anwendungen und -Inhalte enthält. Sie können es verwenden, um das Projekt weiter zu entwickeln (z. B. in anderen Umgebungen) oder über Package Share zu teilen.
 
 Die Struktur sieht in CRXDE Lite wie folgt aus: Ein Projekt namens **myproject** und ein Java-Paketsuffix namens **mycompany**:
@@ -191,7 +191,7 @@ Die Struktur sieht in CRXDE Lite wie folgt aus: Ein Projekt namens **myproject**
 So erstellen Sie einen Ordner mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. **Klicken Sie im Navigationsbereich mit der rechten Maustaste auf den Ordner, unter dem Sie den neuen Ordner erstellen möchten, wählen Sie** Erstellen ...**und dann Ordner** erstellen ... .
+1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
 
 1. Geben Sie den **Namen** des Ordners ein und klicken Sie auf **OK**.
 
@@ -252,7 +252,7 @@ Folgendes wird erstellt:
 So erstellen Sie ein Dialogfeld mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. **Klicken Sie im Navigationsbereich mit der rechten Maustaste auf die Komponente, in der Sie das Dialogfeld erstellen möchten, wählen Sie** Erstellen ...**und dann Dialogfeld** erstellen ... .
+1. In the Navigation pane, right-click the component where you want to create the dialog, select **Create ...**, then **Create Dialog ...**.
 
 1. Geben Sie **Beschriftung** und **Titel** ein. Klicken Sie auf **OK**.
 
@@ -321,7 +321,7 @@ So erstellen Sie ein Testbundle mit CRXDE Lite:
    * `/apps/myapp/src`
    * `/apps/myapp/install`
 
-1. `/apps/myapp/src`Klicken Sie mit der rechten Maustaste auf den Ordner `Test` , der das **Bundle enthalten wird, wählen Sie** Erstellen ...**und dann Bündel** erstellen ... .
+1. Right-click the folder `/apps/myapp/src` that will contain the `Test` bundle, select **Create ...**, then **Create Bundle ...**.
 
 1. Legen Sie die Bundleeigenschaften wie folgt fest:
 
@@ -345,7 +345,7 @@ So erstellen Sie ein Testbundle mit CRXDE Lite:
 
 Der Assistent erstellt die folgenden Elemente:
 
-* Die Node `com.mycompany.test.TestBundle` des Typs `nt:folder.` &quot;It&quot;ist der Bundle-Container-Knoten.
+* Der Knoten `com.mycompany.test.TestBundle` des Typs `nt:folder.` Es ist der Bundle-Container-Knoten.
 
 * Die Datei `com.mycompany.test.TestBundle.bnd`. Sie fungiert als Bereitstellungsdeskriptor für Ihr Bundle und besteht aus einer Reihe von Kopfzeilen.
 
@@ -363,27 +363,27 @@ In der folgenden Tabelle sind alle Eigenschaften der.bnd-Datei, deren Werte und 
  <tbody>
   <tr>
    <td><strong>Eigenschaft</strong></td>
-   <td><strong>Wert (bei Bündelbildung)<br /> </strong></td>
+   <td><strong>Wert (bei der Bündelung)<br /> </strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
    <td>Exportpaket:</td>
-   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Pakets angepasst werden.</p> </td>
-   <td>Der Header Export-Paket definiert exportierte Pakete aus dem Bundle (kommagetrennte Liste der Pakete). The exported packages constitute the public<br /> view of the bundle.<br /> </td>
+   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Bundles angepasst werden.</p> </td>
+   <td>Der Header "Exportpaket"definiert exportierte Pakete aus dem Bundle (kommagetrennte Liste von Paketen). The exported packages constitute the public<br /> view of the bundle.<br /> </td>
   </tr>
   <tr>
    <td>Importpaket:</td>
-   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Pakets angepasst werden.</p> </td>
+   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Bundles angepasst werden.</p> </td>
    <td>Der Header "Paket importieren"definiert importierte Pakete für das Bundle (kommagetrennte Liste von Paketen)</td>
   </tr>
   <tr>
    <td>Privates Paket:</td>
-   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Pakets angepasst werden.</p> </td>
+   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Bundles angepasst werden.</p> </td>
    <td>Die Kopfzeile Private-Package definiert private Pakete für das Bundle (durch Komma getrennte Liste der Pakete). Die privaten Pakete bilden die interne Implementierung.<br /> </td>
   </tr>
   <tr>
    <td>Bundle-Name:</td>
-   <td>Testpaket</td>
+   <td>Bündel testen</td>
    <td>Definiert einen kurzen, für Menschen lesbaren Namen für das Bundle</td>
   </tr>
   <tr>
@@ -393,7 +393,7 @@ In der folgenden Tabelle sind alle Eigenschaften der.bnd-Datei, deren Werte und 
   </tr>
   <tr>
    <td>Bundle-SymbolicName:</td>
-   <td>com.meinunternehmen.test.TestBundle</td>
+   <td>com.mycompany.test.TestBundle</td>
    <td>Gibt einen eindeutigen, nicht lokalisierbaren Namen für das Bundle an</td>
   </tr>
   <tr>
@@ -404,7 +404,7 @@ In der folgenden Tabelle sind alle Eigenschaften der.bnd-Datei, deren Werte und 
   <tr>
    <td>Bundle-Aktivator:</td>
    <td>com.mycompany.test.Activator</td>
-   <td>Gibt den Namen der optionalen Lister-Klasse an, die über Bundle-Start- und -Stopp-Ereignisse benachrichtigt werden soll</td>
+   <td>Gibt den Namen der optionalen Lister-Klasse an, die über Bundle-Beginn- und stop-Ereignis benachrichtigt werden soll</td>
   </tr>
  </tbody>
 </table>
@@ -416,12 +416,12 @@ Weitere Informationen zum bnd-Format finden Sie im [bnd-Dienstprogramm](https://
 So erstellen Sie die Java-Klasse `HelloWorld` innerhalb des Testbundles:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. `Activator.java`Klicken Sie im Navigationsbereich mit der rechten Maustaste auf den Knoten, der die `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java` Datei enthält ( **), wählen Sie** Erstellen ...**und dann Datei** erstellen ... .
+1. In the Navigation pane, right-click the node containing the `Activator.java` file ( `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java`), select **Create ...**, then **Create File ...**.
 
 1. Name the file `HelloWorld.java`. Klicken Sie auf **OK**.
 
 1. Die Datei `HelloWorld.java`-Datei wird im Bearbeitungsfenster geöffnet.
-1. Fügen Sie die folgenden Zeilen hinzu `HelloWorld.java`:
+1. Hinzufügen die folgenden Zeilen nach `HelloWorld.java`:
 
    ```
      package com.mycompany.test;
