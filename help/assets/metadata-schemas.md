@@ -3,7 +3,7 @@ title: Metadatenschemata
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 5cbaefd5a377db5aa9f8ba35371fe2a9cb638fa1
 
 ---
 
@@ -123,8 +123,6 @@ Um die Eigenschaften einer Metadatenkomponente im Formular zu bearbeiten, klicke
 
 Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
-Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
-
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Assets als die Eigenschaft `dc:title`.
 
 * `./jcr:created`: Zeigt die JCR-Eigenschaft am Asset-Knoten an. Wenn Sie diese Eigenschaften für Ansichtseigenschaften konfigurieren, wird empfohlen, dass Sie sie mit „Bearbeitung deaktivieren“ markieren, da sie geschützt sind. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
@@ -132,11 +130,21 @@ Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt angezeigt wird, sollte der Eigenschaftenpfad keine Leerzeichen enthalten.
 
 **Platzhalter**: Geben Sie mit dieser Eigenschaft relevanten Platzhaltertext zur Metadateneigenschaft an.
+
 **Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftenseite als obligatorisch markieren.
+
 **Bearbeitung deaktivieren**: Mit dieser Eigenschaft können Sie verhindern, dass eine Metadateneigenschaft auf der Eigenschaftenseite bearbeitet werden kann.
+
 **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
-**Reihenfolge** der Liste anzeigen: Verwenden Sie diese Eigenschaft, um eine geordnete Liste der Auswahlmöglichkeiten **anzuzeigen**: Verwenden Sie diese Eigenschaft, um Auswahlmöglichkeiten in einer Liste **Beschreibung** anzugeben: Verwenden Sie diese Eigenschaft, um eine kurze Beschreibung für die Metadatenkomponente hinzuzufügen.
+
+**Reihenfolge** der Liste anzeigen: Verwenden Sie diese Eigenschaft, um eine geordnete Liste von Auswahlmöglichkeiten anzuzeigen
+
+**Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
+
+**Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
+
 **Klasse**: Objektklasse, der die Eigenschaft zugeordnet ist.
+
 **Löschen**: Klicken Sie auf dieses Symbol, um eine Komponente aus dem Schema-Formular zu löschen.
 
 ![chlimage_1-41](assets/chlimage_1-177.png)
