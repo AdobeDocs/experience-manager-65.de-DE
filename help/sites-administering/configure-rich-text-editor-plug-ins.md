@@ -8,7 +8,7 @@ discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 mini-toc-levels: 1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ac4c5ec920ed768002da1b4598590bfd9ca301f6
+source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
 
 ---
 
@@ -69,7 +69,9 @@ After activating a plug-in, follow these guidelines to configure the `features` 
 
 ## Das findreplace-Plug-in {#findreplace}
 
-The `findreplace` plug-in does not need any configuration. Es ist vorkonfiguriert und sofort einsatzfähig.
+The `findreplace` plug-in does not need any configuration. Es funktioniert aus der Schachtel.
+
+Bei Verwendung der Funktion zum Ersetzen sollte die zu ersetzende Zeichenfolge gleichzeitig mit der Zeichenfolge Suchen eingegeben werden. Sie können jedoch noch auf Suchen klicken, um nach der Zeichenfolge zu suchen, bevor Sie sie ersetzen. Wenn die Zeichenfolge zum Ersetzen eingegeben wird, nachdem auf Suchen geklickt wurde, wird die Suche auf den Anfang des Textes zurückgesetzt.
 
 Das Dialogfeld „Suchen und ersetzen“ wird transparent, wenn auf „Suchen“ geklickt wird, und undurchsichtig, wenn auf „Ersetzen“ geklickt wird. Dadurch kann der Autor den Text überprüfen, den der Autor ersetzen wird. Wenn der Benutzer auf „Alle ersetzen“ klickt, wird das Dialogfeld geschlossen und die Anzahl der vorgenommenen Ersetzungen angezeigt.
 
