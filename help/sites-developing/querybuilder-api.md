@@ -12,7 +12,7 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
 
 ---
 
@@ -23,7 +23,7 @@ Die Funktionalität der [Query-Builder-Komponente für die Asset-Freigabe](/help
 
 Der serverseitige Query Builder ([`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) akzeptiert eine Abfragebeschreibung, erstellt eine XPath-Abfrage und führt sie aus, filtert das Resultset und extrahiert bei Bedarf auch Facetten.
 
-Die Abfragebeschreibung ist einfach eine Gruppe mit Eigenschaften ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Examples include a full-text predicate, which corresponds to the `jcr:contains()` function in XPath, and an image size predicate that looks for width and height properties in the DAM asset subtree.
+Die Abfragebeschreibung ist einfach eine Gruppe mit Eigenschaften ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Beispiele sind eine Volltextvorhersage, die der `jcr:contains()` Funktion in XPath entspricht.
 
 Für jeden Eigenschaftentyp ist eine Auswertungskomponente ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) vorhanden, die weiß, wie die jeweilige Eigenschaft für XPath, die Filterung und die Facettenextrahierung verarbeitet werden muss. Es ist sehr einfach, benutzerdefinierte Auswertungskomponenten zu erstellen, die über die OSGi-Komponentenlaufzeit verknüpft werden.
 
@@ -119,7 +119,7 @@ Ab AEM 6.0 SP2 können Sie auch einen numerischen Wert verwenden, um bis zu ei
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=50&orderby=path`
 
-Es wird eine Zahl mit der gleichen Standardgrenze von 10 Ergebnissen mit einem 0-Offset zurückgegeben, es werden jedoch maximal 50 Ergebnisse angezeigt:
+Es wird eine Zahl mit der gleichen Standardgrenze von 10 Ergebnissen mit einem 0-Offset zurückgegeben, es werden jedoch nur maximal 50 Ergebnisse angezeigt:
 
 ```xml
 "success": true,
@@ -512,7 +512,7 @@ Erläutern Sie **alle** Abfragen während des Entwicklungszyklus für den festge
 1. Stellen Sie die Query-Builder-Abfrage im Query-Builder-Debugger bereit.
 1. Führen Sie die Suche durch.
 1. Rufen Sie den generierten XPath ab.
-1. Fügen Sie die XPath-Abfrage in &quot;Explain Query als XPath&quot;ein, um den Abfrageplan zu erhalten.
+1. Fügen Sie die XPath-Abfrage in Abfrage als XPath erklären ein, um den Abfrage-Plan zu erhalten.
 
 >[!NOTE]
 >
@@ -566,7 +566,7 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Beschreibung** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | Grundlegende Abfrage-Builder- und Abfrage-API |
+| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | Grundlegende API für QueryBuilder und Abfrage |
 | [com.day.cq.search.result](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | Ergebnis-API |
 | [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Facets |
 | [com.day.cq.search.facets.buckets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Behälter (in Facetten enthalten) |
