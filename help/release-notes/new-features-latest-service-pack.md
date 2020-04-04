@@ -4,16 +4,18 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
+source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
 
 ---
 
 
 # Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 bietet Funktionen und kontinuierliche Verbesserungen durch vierteljährliche Service Packs. Der Ansatz nützt Ihnen, wenn die Innovationen leichter umzusetzen sind.
+Mit Adobe Experience Manager (6.5) erhalten Sie Zugriff auf neue Funktionen und kontinuierliche Verbesserungen in den vierteljährlichen Service Pack-Versionen. Mithilfe dieses Ansatzes können Sie die Innovationen einfach übernehmen.
 
-AEM Service Pack 4 (6.5.4.0) wird am 5. **März 2020** veröffentlicht. In diesem Artikel werden die wichtigsten Funktionen des 6.5 Service Packs-Angebots hervorgehoben, mit denen Sie Ihre AEM-Reise noch bereichern können.
+Experience Manager Service Pack 4 (6.5.4.0) wird am 5. März 2020 veröffentlicht. Es handelt sich um eine wichtige Aktualisierung, die neue Funktionen, wichtige kundenspezifische Verbesserungen sowie Leistung, Stabilität und Sicherheitsverbesserungen umfasst, die seit der allgemeinen Verfügbarkeit der Version 6.5 im April 2019 veröffentlicht wurden. Experience Manager 6.5.4.0 kann über Adobe Experience Manager 6.5 installiert werden.
+
+In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wichtigsten Funktionen der vorherigen 6.5 Service Packs](#key-features-previous-service-packs)und einige der [wichtigsten Versionen seit Experience Manager 6.5.3.0](#key-features-sice-sp3)hervorgehoben.
 
 ## AEM Sites {#aem-sites}
 
@@ -94,7 +96,7 @@ Experience Manager Forms umfasst die folgenden Verbesserungen der Barrierefreihe
 
 * Jede Seite eines adaptiven Formulars enthält jetzt einen Titel und eine Hauptmarkenbeschriftung.
 
-## Wichtige Funktionen früherer AEM 6.5 Service Packs
+## Wichtige Funktionen früherer AEM 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### Smart Imaging for Dynamic Media (6.5.3.0) {#smart-imaging}
 
@@ -117,7 +119,7 @@ Sie haben die Möglichkeit, ein Anfangs- und Enddatum sowie eine Anfangs- und En
 
 Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus einer Vorlage zu erstellen. Die Vorlage ist eine interaktive Kommunikation ohne Daten. Die Stapel-API kombiniert Daten mit einer Vorlage, um eine interaktive Kommunikation zu erzeugen. Die API ist bei der Massenproduktion interaktiver Kommunikation nützlich. Zum Beispiel Telefonrechnungen, Kreditkartenauszüge für mehrere Kunden. Siehe [Generieren mehrerer interaktiver Kommunikation mit der Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Wichtige Versionen seit AEM 6.5 SP3
+## Wichtige Versionen seit AEM 6.5 SP3 {#key-features-sice-sp3}
 
 Zwischen dem 12. Dezember 2019 und dem 5. März 2020 hat Adobe die folgenden Funktionen veröffentlicht, die außerhalb der AEM-Hauptversion verfügbar sind:
 
