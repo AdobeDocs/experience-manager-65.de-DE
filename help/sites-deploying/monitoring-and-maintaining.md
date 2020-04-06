@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -99,7 +99,7 @@ Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Startpfad** Ein absoluter Pfad, auf dem die Bereinigung durchgeführt werden muss. Sie können den Startpfadauswählen, indem Sie auf den Navigatorbaum im Repository klicken.
+**Beginn Path** Ein absoluter Pfad, auf dem die Bereinigung durchgeführt werden muss. Sie können den Startpfadauswählen, indem Sie auf den Navigatorbaum im Repository klicken.
 
 **Rekursiv** Beim Bereinigen von Daten können Sie zwischen der Ausführung des Vorgangs auf einer Node oder einer ganzen Hierarchie wählen, indem Sie Rekursiv auswählen. Im letzteren Fall definiert der angegebene Pfad den Stammknoten der Hierarchie.
 
@@ -107,9 +107,9 @@ Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/
 
 **Maximum version age** Das maximale Alter der Version eines Knotens. Wenn das Alter einer Version diesen Wert überschreitet, wird sie gelöscht.
 
-**Trockenausführung** Da das Entfernen von Versionen Ihres Inhalts definitiv ist und ohne Wiederherstellung einer Sicherung nicht rückgängig gemacht werden kann, bietet das Bereinigen-Versionen-Tool einen trockenen Ausführungsmodus, mit dem Sie eine Vorschau der bereinigten Versionen anzeigen können. Klicken Sie auf Probelauf, um einen Probelauf des Bereinigungsvorgangs zu starten.
+**Trockenausführung** Da das Entfernen von Inhaltsversionen definitiv ist und ohne Wiederherstellung einer Sicherung nicht rückgängig gemacht werden kann, bietet das Bereinigen-Versionen-Tool einen trockenen Ausführungsmodus, mit dem Sie die bereinigten Versionen Vorschau haben. Klicken Sie auf Probelauf, um einen Probelauf des Bereinigungsvorgangs zu starten.
 
-**Bereinigen** Starten Sie die Bereinigung der Versionen auf dem Knoten, der vom Startpfad definiert wird.
+**Bereinigen** Starten Sie die Bereinigung der Versionen auf dem Knoten, der vom Beginn-Pfad definiert wird.
 
 ### Bereinigen von Versionen einer Website {#purging-versions-of-a-web-site}
 
@@ -194,12 +194,12 @@ Moderationsaktionen werden hier registriert.
    * `error.log`
 Hier werden Fehlermeldungen (mit unterschiedlichem Schweregrad) registriert.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Dieses Protokoll wird nur verwendet, wenn Dynamic Media aktiviert ist. Er enthält Statistiken und analytische Informationen, die zur Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Dieses Protokoll wird nur verwendet, wenn es aktiviert [!DNL Dynamic Media] ist. Er enthält Statistiken und analytische Informationen, die zur Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
 
    * `request.log`
 Hier werden alle Zugriffsanforderungen zusammen mit der Antwort registriert.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Dieses Protokoll wird nur verwendet, wenn Dynamic Media aktiviert ist. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Dieses Protokoll wird nur verwendet, wenn es aktiviert [!DNL Dynamic Media] ist. Das s7access-Protokoll zeichnet jede Anforderung auf, die [!DNL Dynamic Media] über `/is/image` und `/is/content`ausgeführt wurde.
 
    * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. By default the log level is set to `Warning` ( `WARN`)
 
@@ -215,7 +215,7 @@ Stellt ein Protokoll aller Aktualisierungsvorgänge bereit, die von den Paketen 
 Überarbeitung der Journalinformationen.
 
 >[!NOTE]
-Die ImageServer- und s7access-Protokolle sind nicht im **Download Full **Package enthalten, das aus der **system/console/status-bundlelist **Seite generiert wurde. Bei Problemen mit dynamischen Medien hängen Sie zu Supportzwecken bitte die Protokolle „ImageServer“ und „s7access“ an.
+Die ImageServer- und s7access-Protokolle sind nicht im **Download Full **Package enthalten, das aus der **system/console/status-bundlelist **Seite generiert wurde. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
 
 ### Aktivieren der DEBUG-Protokollebene {#activating-the-debug-log-level}
 
@@ -272,7 +272,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: Zeichenfolge[] (Zeichenfolge + Multi)
 
-      Wert: Geben Sie die OSGi-Dienste an, für die die Protokollfunktion Meldungen protokollieren soll. Beispielsweise alle folgenden Elemente:
+      Wert: Geben Sie die OSGi-Dienste an, für die die Protokollfunktion Meldungen protokollieren soll. zum Beispiel alle folgenden Elemente:
 
       * `org.apache.sling`
       * `org.apache.felix`
@@ -281,7 +281,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: String
 
-      Wert: die erforderliche Protokollierungsstufe ( `debug`, `info`, `warn` oder `error`) angeben;zum Beispiel `debug`
+      Wert: die erforderliche Protokollierungsstufe ( `debug`, `info`, `warn` oder `error`) angeben; zum Beispiel `debug`
 
    * Konfigurieren Sie ggf. weitere Parameter:
 
@@ -339,7 +339,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
       Typ: `String`
 
-      Wert: die Protokolldatei so anzugeben, dass sie mit der im Protokollprogramm angegebenen Datei übereinstimmt;
+      Wert: Geben Sie die Protokolldatei so an, dass sie mit der im Protokollprogramm angegebenen Datei übereinstimmt.
 
       für dieses Beispiel `../logs/myLogFile.log`.
 
@@ -357,33 +357,27 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
    >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
-   >
-   >* eine maximalen Dateigröße
-   >* einen Zeit-/Terminplan
-   >
-   >um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
-   >
-   >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
-   >
-   >Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
-   >
-   >So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
-   >
-   >| `&#39;.&#39;yyyy-MM`| Rotation zu Beginn jedes Monats|
-   >|---|---|
-   >|&quot;&quot;.jjjj-ww&quot;|Drehung am ersten Wochentag (abhängig vom Gebietsschema). |
-   >| `&#39;.&#39;yyyy-MM-dd`|Rotation jeden Tag um Mitternacht. |
-   >| `&#39;.&#39;yyyy-MM-dd-a`|Rotation um Mitternacht und Mittag jeden Tages. |
-   >| `&#39;.&#39;yyyy-MM-dd-HH&quot;|Rotation am Anfang jeder Stunde. |
-   >| `&#39;.&#39;JJJJ-MM-TT-HH-mm&quot;|Drehung zu Beginn jeder Minute.  |
-   >
-   >Anmerkung: Bei Angabe einer Uhrzeit/eines Datums:
-   >1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;
-   >   Dadurch soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
-   >1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
+   `org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
+   * eine maximalen Dateigröße
+   * einen Zeit-/Terminplan
+   um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
+   * Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   * Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
+   Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
+   So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
+       | `&#39;.&#39;yyyy-MM` |Rotation at the beginning of each month |
+       |---|---|
+       | `&#39;.&#39;jjjj-ww&quot;|Drehung am ersten Wochentag (abhängig vom Gebietsschema). |
+       | `&#39;.&#39;yyyy-MM-dd`|Rotation jeden Tag um Mitternacht. |
+       | `&#39;.&#39;yyyy-MM-dd-a`|Rotation um Mitternacht und Mittag jeden Tages. |
+       | `&#39;.&#39;yyyy-MM-dd-HH&quot;|Rotation am Anfang jeder Stunde. |
+       | `&#39;.&#39;JJJJ-MM-TT-HH-mm&quot;|Drehung zu Beginn jeder Minute. |
+       
+       Note: When specifying a time/date:
+       1. You should &quot;escape&quot; literal text within a pair of single quotes (&#39; &#39;);
+       this is to avoid certain characters being interpreted as pattern letters.
+       1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
+   
 
 1. Lesen Sie die neue Protokolldatei mit dem von Ihnen ausgewählten Tool.
 
@@ -533,12 +527,12 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
   <tr>
    <td>Thread-Dumps</td>
    <td>Beobachten Sie die JVM-Threads. Identifizieren Sie Konflikte, Sperren und lange Ausführungszeiten.</td>
-   <td><p><br /> Abhängig vom Betriebssystem: - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (Konsolenmodus): Strg+Umbruch<br /> </p> <p>Analyse-Tools sind ebenso verfügbar, wie zum Beispiel <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analyse-Tools sind ebenso verfügbar, wie zum Beispiel <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Heap-Dumps</td>
    <td>Probleme mit dem Speicher, die zu Leistungsverlusten führen.</td>
-   <td><p><br /> Fügen Sie Folgendes hinzu: zum <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> Java-Aufruf von AEM.</p> <p>Siehe <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Anleitung zur Fehlersuche für Java SE 6 with HotSpot VM</a>.</p> </td>
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>Siehe <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Anleitung zur Fehlersuche für Java SE 6 with HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Systemaufrufe</td>
@@ -799,7 +793,7 @@ Percentage of the requests served within a certain time (ms)
 
 Die obigen Zahlen stammen von einem MacBook Pro-Laptop (Mitte 2010), der auf die Unternehmensseite von Geometrixx zugreift, wie sie in einer Standardinstallation von AEM enthalten ist. Die Seite ist sehr einfach aufgebaut, aber nicht für Leistung optimiert.
 
-`apachebench` zeigt außerdem die Zeit pro Anforderung als Mittelwert für alle gleichzeitigen Anforderungen an; siehe `Time per request: 54.595 [ms]` (Mittelwert für alle gleichzeitigen Anforderungen). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
+`apachebench` zeigt auch die Zeit pro Anforderung als Mittelwert für alle gleichzeitigen Anforderungen an; siehe `Time per request: 54.595 [ms]` (Mittelwert für alle gleichzeitigen Anforderungen). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
 
 ### Anforderungszähler {#request-counters}
 
@@ -1015,9 +1009,9 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 
 >[!NOTE]
 In folgenden Artikeln finden Sie weitere Informationen:
-* [Thread-Dumps](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html) 
-* [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) 
-* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
+* [Thread-Dumps](https://helpx.adobe.com/de/experience-manager/kb/TakeThreadDump.html) 
+* [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
+* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
 * [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
 
 
@@ -1043,7 +1037,7 @@ In diesen Fällen müssen Sie Folgendes überprüfen:
 * Die zum [Starten von AEM](/help/sites-deploying/deploy.md#getting-started) verwendeten JVM-Einstellungen
 * Wissensdatenbank:
 
-   * [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) 
+   * [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
 
 ### Festplatten-I/O {#disk-i-o}
 
