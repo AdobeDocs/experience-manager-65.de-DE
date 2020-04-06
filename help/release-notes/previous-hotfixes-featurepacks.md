@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0e95ac8850a693764b82a29960b472d156dac535
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -36,7 +36,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Möglichkeit zur [Freigabe von Inbox- oder Inbox-Elementen](../forms/using/configure-shared-queues-osgi.md) für andere Benutzer in [!DNL Experience Manager] Workflows.
 
-* Fähigkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
+* Möglichkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
 * Die Version von jQuery im Paket ContextHub wurde auf 3.4.1 aktualisiert.
 
@@ -92,13 +92,13 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Massenbewegung von Assets schlägt fehl und es wird eine Warnmeldung angezeigt (NPR-30610).
 
-* Beim Verschieben von Assets aus einem Ordner in einen anderen im [!DNL Experience Manager] [!DNL Dynamic Media] Scene7-Runmode (NPR-31630) werden die Asset-Namen in Kleinbuchstaben geändert.
+* Beim Verschieben von Assets von einem Ordner in einen anderen im [!DNL Experience Manager] [!DNL Dynamic Media]Scene7-Modus (NPR-31630) wird die Schreibweise für Asset-Namen in Kleinbuchstaben geändert.
 
 * Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler festgestellt, da sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31340).
 
 * [!DNL Dynamic Media] Assets, die Verweise enthalten, werden nicht veröffentlicht (NPR-31180).
 
-* Die Uploads von [!DNL Experience Manager Dynamic Media] - Scene7-Runmode zu Scene7 dauern zu lange. (NPR-31048)
+* Uploads vom [!DNL Dynamic Media]7-Scene7-Modus in den [!DNL Dynamic Media Classic] Vorgang nehmen zu lange in Anspruch (NPR-31048).
 
 * Hotspot, der zu einem Bild-Asset hinzugefügt wurde, ist auf der Seite mit den Asset-Details nicht über den interaktiven Bild-Viewer sichtbar (NPR-30979).
 
@@ -106,9 +106,9 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Beim Erstellen der Sprachkopie von Assets treten Konflikte auf, und Assets werden nicht nach Scene7 hochgeladen (NPR-30932).
 
-* Dynamische Darstellungen, die aus [!DNL Experience Manager] dem [!DNL Dynamic Media] Hybrid-Modus heruntergeladen wurden, sind beschädigt (sie sind vom Texttyp mit Inhalt &quot;Bild kann nicht gefunden werden&quot; anstelle des Bildinhaltstyps) (NPR-30876).
+* Dynamische Darstellungen, die von [!DNL Experience Manager] im [!DNL Dynamic Media]-Hybrid-Modus heruntergeladen wurden, sind beschädigt (sie sind vom Texttyp mit Inhalt &quot;Bild kann nicht gefunden werden&quot; anstelle des Bildinhaltstyps) (NPR-30876).
 
-* [!DNL Dynamic Media] Der Arbeitsablauf zum Kodieren von Videos kann keine Miniaturansicht für das Video generieren, das aus Scene7 in den [!DNL Dynamic Media] - Scene7-Ausführungsmodus migriert wird (CQ-4282011).
+* [!DNL Dynamic Media] Der Arbeitsablauf für die Kodierung von Videos kann keine Miniaturansicht für das Video generieren, das in Adobe Experience Manager (CQ-4282011) vom Modus [!DNL Dynamic Media Classic] [!DNL Dynamic Media]Scene7 migriert wird.
 
 * Bei der Migration von Assets von einer Instanz zu einer anderen mit unterschiedlichen Scene7-Firmen-IDs (CQ-4280548) wurde eine IpsApiException-Ausnahme beobachtet.
 
@@ -120,7 +120,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Videos können nicht mit SmartCropVideoViewer in Internet Explorer 11 und Safari wiedergegeben werden (CQ-4281422).
 
-* Die Verwendung der Schaltfläche zum Verschieben, um mehrere Assets von einem Ordner in einen anderen zu verschieben, schlägt bei der [!DNL Experience Manager] Ausführung im [!DNL Dynamic Media] - scene7-Ausführungsmodus (CQ-4280384) fehl.
+* Die Verwendung der Schaltfläche &quot;Verschieben&quot;zum Verschieben mehrerer Assets von einem Ordner in einen anderen schlägt bei der [!DNL Experience Manager] Ausführung des [!DNL Dynamic Media]Scene7-Ausführungsmodus fehl (CQ-4280384).
 
 * Verzerrtes Video wird in Asset-Details angezeigt, wenn der MIME-Typ nicht MP4 ist (CQ-4279704).
 
@@ -336,7 +336,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Das Metadatenschemaformular für Ordner erkennt den Datentyp nicht automatisch, was zur Folge hat, dass es bei der Formularübermittlung den zugehörigen TypeHint nicht erstellt. NPR-30599: Hotfix für CQ-4275227
 * In der Autoren-Benutzeroberfläche für DMS7 sind die Optionen zum Zuschneiden und Drehen von Assets deaktiviert. NPR-30118: Hotfix für CQ-4273221
 * Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492: Hotfix für CQ-4273651
-* Adding the [!DNL Dynamic Media] Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix für CQ-4275962
+* Adding the [!DNL Dynamic Media]–Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix für CQ-4275962
 * Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490: Hotfix für CQ-4273614
 * [!DNL Dynamic Media]: Es wurden Standard-Filter hinzugefügt, um Assets von der Replizierung auf den [!DNL Experience Manager] Veröffentlichungsknoten auszuschließen. NPR-30538: Hotfix für CQ-4274678
 * Ein Workflow zur erneuten, externen Verarbeitung wurde zur Unterstützung für mehrere Ressourcen eingeführt, der die Nutzung von Ordnern als Nutzlast ermöglicht. Der Workflow umfasst zwei Schritte: Die erneute Verarbeitung von Assets ohne Handles erfolgt über die Zuordnung von Metadaten zum nächsten Schritt, das erneute Hochladen aller Assets ohne Asset-Handle zu S7 dann in einem einzelnen IPS-Auftrag. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489: Hotfix für CQ-4272903
@@ -351,7 +351,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Sorting search query by relevance returns [!DNL InDesign] documents along with [!DNL InDesign] templates. Hotfix für CQ-4273864
 * Wenn der Benutzer über eine E-Mail-ID in Großbuchstaben verfügt, können die Benutzer nicht für die zuvor ausgecheckten Assets einchecken. Hotfix für CQ-4276575
 * Der Löschvorgang gilt nur für die ausgewählten Vorgaben. Wenn der Bildschirm die Liste nach dem Vorgang automatisch aktualisiert, werden andere Vorgaben angezeigt, die bereits aktualisiert wurden. Hotfix für CQ-4261461
-* Configuring [!DNL Dynamic Media] Cloud Services in DMHybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix für CQ-4249780
+* Configuring [!DNL Dynamic Media] Cloud Services in [!DNL Dynamic Media]–Hybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix für CQ-4249780
 * Rename operation in [!DNL Experience Manager] asset to duplicated name fails to synchronize to Scene7. Hotfix für CQ-4276763
 * Im Suchfilterbedienfeld werden nutzergenerierte Inhalte falsch angezeigt. Hotfix für CQ-4273875
 * Die Option „Ähnliche suchen“ ist für TIFF-Bilder nicht verfügbar. Hotfix für CQ-4278238
@@ -494,7 +494,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Dynamische Benutzeroberflächenstatus können jetzt als benutzerdefinierte Attribute in Tracking-Ereignisse einbezogen werden.
-* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media] Scene 7.
+* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. Weitere Informationen finden Sie unter [Konfigurieren von japanischen Wortumbrüchen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
 ### Assets
