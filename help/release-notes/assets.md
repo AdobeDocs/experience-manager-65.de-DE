@@ -2,7 +2,7 @@
 title: Versionshinweise zu Adobe Experience Manager Assets
 description: Die neuen Funktionen und Erweiterungen für Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: 92619acaa2eb820eda304355f8eaf79ec4a400e1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -65,7 +65,7 @@ In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infras
 
 [!DNL Dynamic Media] bietet erweiterte Rich-Media-Authoring- und Versände, [!DNL Experience Manager Assets] um innovative und personalisierte Erlebnisse zu fördern. Durch das Hochladen eines einzelnen hochwertigen Master-Assets und die Verwendung unseres erweiterten Cloud-Renderings und der Viewer können Sie jede beliebige Kombination von Darstellungen spontan bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
 
-For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
+For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Unterstützung für 360°-Videos {#video-support}
 
@@ -77,7 +77,7 @@ Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus de
 
 ### Verbesserte Barrierefreiheit {#accessibility-enhancements}
 
-[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alt-Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+[!DNL Dynamic Media] Viewer unterstützen jetzt erweiterte Barrierefreiheitsfunktionen wie Aria-Unterstützung, Bildschirmlesehilfen und Alt-Text. Weitere Informationen finden Sie in den [Versionshinweisen zu Dynamic Media-Viewern](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 ## Verbessertes Sucherlebnis {#search-experience-enhancement}
 
