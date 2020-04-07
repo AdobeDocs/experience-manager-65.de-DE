@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -49,7 +49,7 @@ Wenn Sie ein neues adaptives Formular erstellen oder ein vorhandenes bearbeiten,
 
 ![Benutzeroberfläche für Authoring adaptiver Formulare](assets/formeditor.png)
 
-******A. Seitenleiste** B. Seitensymbolleiste **C.** Seite &quot;Adaptives Formular&quot;
+**A.** Seitenleiste **B.** Seitensymbolleiste **C.** Seite &quot;Adaptives Formular&quot;
 
 ### Randleiste {#sidebar}
 
@@ -62,7 +62,7 @@ Die Seitenleiste ermöglicht Ihnen Folgendes:
 
 ![Randleiste](assets/sidebar-comps.png)
 
-******** A. Inhaltsbrowser **B. Eigenschaftenbrowser** C.**Asset Browser** D. Komponentenbrowser
+**A.** Inhaltsbrowser **B.** Eigenschaftenbrowser **C.** Asset Browser **D.** Komponentenbrowser
 
 <!--Click to enlarge
 
@@ -79,9 +79,9 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
 
 * **Eigenschaftenbrowser**
 
-   Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des adaptiven Formularcontainers an:
+   Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des Containers für adaptive Formulare an:
 
-   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > **Container** für adaptive Formulare und dann auf ![cmppr](assets/cmppr.png).
+   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > Container **für** adaptives Formular und dann auf ![cmppr](assets/cmppr.png).
 
 * **Assets-Browser**
 
@@ -306,11 +306,11 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 * **Seitliches Bedienfeld** ![umschalten](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 
-* **Seiteninformationen** ![thematische Optionen](assets/theme-options.png): Ermöglicht die Anzeige von Seiteneigenschaften, das Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Formulars, das Starten eines Formular-Workflows und das Öffnen des Formulars in der klassischen Benutzeroberfläche.
+* **Seiteninformationen** ![thematische Optionen](assets/theme-options.png): Ermöglicht die Ansicht von Seiteneigenschaften, das Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Formulars, den Beginn eines Formular-Workflows und das Öffnen des Formulars in der klassischen Benutzeroberfläche.
 
 * **Emulator** - ![Lineal](assets/ruler.png): Hiermit können Sie das Aussehen des Formulars für verschiedene Displaygrößen wie Tablets und Smartphones emulieren.
 
-* **Bearbeiten**: Hiermit können Sie andere Modi auswählen, wie etwa: **Bearbeiten, Stil, Entwickler** und **Design**.
+* **Bearbeiten**: Hiermit können Sie andere Modi auswählen, wie etwa: **Bearbeiten, Stil, Entwickler und Design**.
 
    * **Bearbeiten**: Hiermit können Sie die Eigenschaften des Formulars und seiner Komponenten bearbeiten. Dies tun Sie, indem Sie beispielsweise eine Komponente hinzufügen, ein Bild ablegen oder obligatorische Felder festlegen.
    * **Stil**: Hiermit können Sie das Erscheinungsbild von Komponenten im Formular stilistisch anpassen. Im Stilmodus können Sie beispielsweise einen Bereich auswählen und dessen Hintergrundfarbe festlegen.
