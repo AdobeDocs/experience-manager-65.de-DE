@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
+source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
 
 ---
 
@@ -81,7 +81,7 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
 
    Hiermit können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie die Eigenschaften des Containers für adaptive Formulare an:
 
-   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > Container **für** adaptives Formular und dann auf ![cmppr](assets/cmppr.png).
+   Wählen Sie eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > Container **[!UICONTROL für]** adaptives Formular und dann auf ![cmppr](assets/cmppr.png).
 
 * **Assets-Browser**
 
@@ -288,9 +288,9 @@ Optimale Verfahren und wichtige Hinweise zum Arbeiten mit Komponenten von adapti
 * Specify values for Radio Button and Check Box items in `{value}={text}` format in component properties.
 * In der Dateianhangskomponente kann der Benutzer standardmäßig nur eine Datei anhängen. Sie können jedoch die Komponenteneigenschaften konfigurieren, sodass mehrere Anhänge unterstützt werden. Darüber hinaus können Probleme auftreten, wenn ein Benutzer mehrere Dateien mit demselben Dateinamen anhängt. Daher wird empfohlen, bei der Übermittlung des Formulars jedem übermittelten Anhang eine eindeutige Kennung zuzuweisen. Gehen Sie dazu wie folgt vor:
 
-   1. On your AEM Forms server, navigate to **Adobe Experience Manager > Tools > Operations > Web Console**.
-   1. Find and tap **Adaptive Forms Configuration Service**.
-   1. In the Adaptive Forms Configuration Service dialog, enable **Make File Names Unique**. Diese Option ist standardmäßig deaktiviert.
+   1. On your AEM Forms server, navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+   1. Find and tap **[!UICONTROL Adaptive Forms Configuration Service]**.
+   1. In the Adaptive Forms Configuration Service dialog, enable **[!UICONTROL Make File Names Unique]**. Diese Option ist standardmäßig deaktiviert.
 
 * Damit Benutzer eine PDF-Datei mit dem Safari-Browser anhängen können, müssen Sie sicherstellen, dass **application/pdf** der Eigenschaft „Unterstützte Dateitypen“ der Dateianhangskomponente hinzugefügt wird. Adaptive Formulare, die mit der vorherigen AEM Forms-Version erstellt wurden, enthalten möglicherweise **.pdf** anstelle von **application/pdf** in der Eigenschaft „Unterstützte Dateitypen“.
 
@@ -310,7 +310,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 * **Emulator** - ![Lineal](assets/ruler.png): Hiermit können Sie das Aussehen des Formulars für verschiedene Displaygrößen wie Tablets und Smartphones emulieren.
 
-* **Bearbeiten**: Hiermit können Sie andere Modi auswählen, wie etwa: **Bearbeiten, Stil, Entwickler und Design**.
+* **Bearbeiten**: Hier können Sie andere Modi auswählen, z. B.: **[!UICONTROL Bearbeiten]**, **[!UICONTROL Stil]**, **[!UICONTROL Entwickler]** und **[!UICONTROL Design]**.
 
    * **Bearbeiten**: Hiermit können Sie die Eigenschaften des Formulars und seiner Komponenten bearbeiten. Dies tun Sie, indem Sie beispielsweise eine Komponente hinzufügen, ein Bild ablegen oder obligatorische Felder festlegen.
    * **Stil**: Hiermit können Sie das Erscheinungsbild von Komponenten im Formular stilistisch anpassen. Im Stilmodus können Sie beispielsweise einen Bereich auswählen und dessen Hintergrundfarbe festlegen.
@@ -330,7 +330,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
 
 Wenn Sie eine Komponente auswählen, sehen Sie eine Symbolleiste, die folgende Funktionen bietet. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Festlegen von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A.**Konfigurieren**: Wenn Sie auf **Konfigurieren** tippen, werden in der Seitenleiste Komponenteneingenschaften sichtbar. Wenn Sie diese Eigenschaften konfigurieren, können Sie die Benutzererfahrung beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzer bei der Verwendung dieser Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie die Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und diese für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formularcontainer können Sie Clientbibliotheken, Layouts, Designs, Datensatzdokument-, Speicher-, Sende- und Metadateneinstellungen festlegen.
+A.**Konfigurieren**: Wenn Sie auf **[!UICONTROL Konfigurieren]** tippen, werden in der Seitenleiste Komponenteneingenschaften sichtbar. Wenn Sie diese Eigenschaften konfigurieren, können Sie die Benutzererfahrung beim Erfassen von Daten anpassen. Sie können den Elementnamen der Komponente ändern und den Beschriftungstext im Titelfeld der Komponente angeben. Mit dem Elementnamen können Sie Werte erfassen, die Benutzer bei der Verwendung dieser Komponente eingeben. In den Komponenteneigenschaften geben Sie das Verhalten der Komponente an und verwalten die Benutzereingabe. Konfigurieren Sie die Eigenschaften in der Seitenleiste, um Benutzerdaten zu erfassen und diese für die weitere Verarbeitung zu verwenden. Mit den Eigenschaften für den adaptiven Formularcontainer können Sie Clientbibliotheken, Layouts, Designs, Datensatzdokument-, Speicher-, Sende- und Metadateneinstellungen festlegen.
 
 B.**Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an andere Positionen im Formular einzufügen. Wenn Sie eine Komponente einfügen, erhält die eingefügte Komponente einen neuen Elementnamen, behält jedoch die Eigenschaften der kopierten Komponente bei.
 
@@ -348,7 +348,7 @@ H. **Gruppieren**: Mit dieser Funktion können Sie mehrere Komponenten auswähle
 
 I. **Übergeordnet**: Hier können Sie das übergeordnete Element einer Komponente auswählen. Beispiel: Ein Textfeld innerhalb eines Unterabschnitts liegt, der seinerseits Teil eines Abschnitts ist. Der Abschnitt befindet sich im Stammbereich (guideRootPanel), und der adaptive Formularcontainer ist guideRootPanel übergeordnet. Bei einer Komponente können Sie alle Optionen sehen, wobei die Hierarchie von unten nach oben angeordnet ist.
 
-For example, if you tap **Parent** for a text box, you can see:
+For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
 
 * Unterabschnitt
 * Abschnitt
@@ -371,7 +371,7 @@ Die Seite mit dem adaptiven Formular enthält das eigentliche Formular. Sie wird
 
 Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 
-* **guideContainer**: Der Stamm eines adaptiven Formulars, der als **Beginn eines adaptiven Formulars** in der Benutzeroberfläche des adaptiven Formulars markiert ist. In dieser Komponente können Sie Folgendes angeben:
+* **guideContainer**: Der Stamm eines adaptiven Formulars, der als **[!UICONTROL Beginn eines adaptiven Formulars]** in der Benutzeroberfläche des adaptiven Formulars markiert ist. In dieser Komponente können Sie Folgendes angeben:
 
    * *Mobile Layout of the adaptive form* (Mobiles Layout des adaptiven Formulars): Definiert die Darstellung des Formulars auf mobilen Geräten.
    * *Dankeseite*: Definiert die Seite, auf die der Benutzer umgeleitet wird, nachdem er das Formular gesendet hat.
@@ -380,7 +380,7 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 
 * **rootPanel:** Der Stammbereich eines adaptiven Formulars. Er kann Unterbereiche unterhalb des Elementknotens enthalten. Jeder Bereich, einschließlich des Stammbereichs, kann mit einem Layout verknüpft sein. Das Layout des Bereichs legt fest, wie das Formular unterteilt wird. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
 
-* **Symbolleiste:** Ein Container für ein adaptives Formular verfügt über eine zugehörige globale Symbolleiste, die global für das Formular gilt. This toolbar can be added using the **Add Toolbar** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
+* **Symbolleiste:** Ein Container für ein adaptives Formular verfügt über eine zugehörige globale Symbolleiste, die global für das Formular gilt. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets:** Dieser Knoten enthält zusätzliche Informationen für das Formular-Authoring. Beispiele: Formularmodelldetails, Lokalisierungsdetails usw.
 
