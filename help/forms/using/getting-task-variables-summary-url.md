@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -58,9 +58,9 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
    1. Erstellen Sie einen Prozess **create PTO summary** und verwenden Sie diesen als Teilprozess vor dem **Assign Task**-Vorgang in der Orchestrierung.
    1. Definieren Sie **employeeName**, **employeeID**, **ptoReason**, **totalDays** und **nodeName** als Eingabevariablen in dem neuen Prozess. Diese Variablen werden als gesendete Formulardaten übergeben.
 
-      Definieren Sie auch eine Ausgabevariable **ptoNodePath **die beim Festlegen der Zusammenfassungs-URL verwendet wird.
+      Definieren Sie auch eine Ausgabevariable **ptoNodePath**, die bei der Festlegung der Zusammenfassungs-URL verwendet wird.
 
-   1. In the **create PTO summary** process, use the **set value** component to set the input details in a **nodeProperty **(**nodeProps**) map.
+   1. Verwenden Sie im Prozess **create PTO summary** die Komponente **set value**, um die Eingabedetails in einer Zuordnung **nodeProperty** (**nodeProps** ) festzulegen.
 
       Die Schlüssel in dieser Zuordnung müssen identisch mit den Schlüsseln sein, die in Ihrem HTML-Renderer im vorherigen Schritt definiert wurden.
 
@@ -84,4 +84,4 @@ Wenn Sie in AEM Forms Workspace eine Aufgabe öffnen, greift die Zusammenfassung
 
 Das Zusammenfassungs-Layout kann geändert werden, ohne den Prozess zu ändern. Der HTML-Renderer zeigt die Zusammenfassung entsprechend an.
 
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
+**[Support kontaktieren](https://www.adobe.com/de/account/sign-in.supportportal.html)**
