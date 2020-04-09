@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -35,7 +35,7 @@ Mit der E-Mail-Aktion kann ein Autor automatisch eine E-Mail an einen oder mehre
 
 >[!NOTE]
 >
->To use the Email action, you need to configure the AEM mail service as described in [Configuring the mail service](/help/sites-administering/notification.md#configuring the mail service).
+>Um die E-Mail-Aktion verwenden zu können, müssen Sie dem AEM-E-Mail-Dienst konfigurieren, wie in [Konfigurieren des E-Mail-Diensts](/help/sites-administering/notification.md#configuring-the-mail-service) beschrieben.
 
 ### Aktivieren der E-Mail-Aktion in einem adaptiven Formular {#enabling-email-action-on-an-adaptive-form}
 
