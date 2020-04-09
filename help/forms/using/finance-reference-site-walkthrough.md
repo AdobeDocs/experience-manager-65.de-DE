@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -298,9 +298,9 @@ Führen Sie folgende Schritte aus, um die Erstellung eines A/B-Tests für das We
 1. Wechseln Sie zur Benutzeroberfläche für Formulare und Dokumente, wählen Sie das Formular aus, klicken Sie auf **Mehr** und wählen Sie **A/B-Tests starten**.
 1. Öffnen Sie das Formular nun mehrmals im Chrome-Browser unter Verwendung der folgenden URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Hinweis: Entfernen Sie das Cookie mit dem Namen **mbox** aus der Cookie-Persistenz des Browsers, bevor Sie das Formular das nächste Mal öffnen. Sie sehen dann das Erlebnis A und B des Formulars in zufälliger Ordnung.
+   >[!NOTE] Entfernen Sie das Cookie mit dem Namen **mbox** aus der Cookiepersistenz des Browsers, bevor Sie das Formular das nächste Mal öffnen. Sie sehen dann das Erlebnis A und B des Formulars in zufälliger Ordnung.
 
 1. Wählen Sie das Formular aus, klicken Sie auf **Mehr**, und klicken Sie dann auf **A/B-Testbericht**. Sie werden nicht viele Daten im Bericht finden, da Sie gerade erst mit dem Testen begonnen haben. Jetzt werden wir einige Seed-Daten bereitstellen, um zu sehen, wie der A/B-Testbericht aussehen wird. 
 1. Öffnen Sie CRXDE Lite und erstellen Sie eine Sicherungskopie der folgenden Datei: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -546,7 +546,7 @@ Führen Sie folgende Schritte im Autorenmodus aus, um A/B-Tests für das We.Fina
 1. Ändern Sie beliebig das Formular, um ein anderes Erlebnis als das Standarderlebnis A zu erstellen. 
 1. Wechseln Sie zur Benutzeroberfläche für Formulare und Dokumente, wählen Sie das Formular aus, klicken Sie auf **Mehr** und wählen Sie **A/B-Tests starten**.
 1. Öffnen Sie das Formular nun mehrmals im Chrome-Browser unter Verwendung der folgenden URL:
-   `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
    > Entfernen Sie das Cookie mit dem Namen **mbox** aus der Cookiepersistenz des Browsers, bevor Sie das Formular das nächste Mal öffnen. Sie sehen dann das Erlebnis A und B des Formulars in zufälliger Ordnung.
