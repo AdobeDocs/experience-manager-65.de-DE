@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,8 +23,7 @@ Ein Administrator kann einen Netzwerkordner konfigurieren, der als überwachter 
 
 Sie können überwachte Ordner im Dateisystem mit einer der folgenden Methoden erstellen:
 
-* Geben Sie beim Konfigurieren der Eigenschaften eines Konfigurationsknotens des Typs &quot;Überwachter Ordner&quot;den vollständigen Pfad des übergeordneten Ordners in die Eigenschaft &quot;folderPath&quot;ein und hängen Sie den Namen des zu erstellenden überwachten Ordners an, wie im folgenden Beispiel gezeigt: `C:/MyPDFs/MyWatchedFolder`\
-   Der `MyWatchedFolder`Ordner ist nicht vorhanden. AEM Forms versucht, den Ordner unter dem angegebenen Pfad zu erstellen.
+* Geben Sie bei der Konfiguration der Eigenschaften für einen Konfigurationsknoten des Typs „Überwachter Ordner“ den vollständigen Pfad zum übergeordneten Ordner in die Eigenschaft „folderPath“ ein und hängen Sie den Namen des zu erstellenden überwachten Ordners an wie in diesem Beispiel:`C:/MyPDFs/MyWatchedFolder`   Der Ordner `MyWatchedFolder` existiert nicht. AEM Forms versucht, den Ordner unter dem angegebenen Pfad zu erstellen.
 
 * Erstellen Sie vor dem Konfigurieren eines Endpunkts des Typs „Überwachter Ordner“ einen Ordner im Dateisystem und geben Sie anschließend den vollständigen Pfad in die Eigenschaft „folderPath“ ein. Detaillierte Informationen zur Eigenschaft „folderPath“ finden Sie unter [Eigenschaften für überwachte Ordner](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
 
@@ -90,8 +89,8 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, Standard true):** Ob die Zeitüberschreitungsfunktion nur aktiviert werden soll, wenn der überwachte Ordner gedrosselt wird. Die Funktion ist für gedrosselte überwachte Ordner relevanter, da eine geringe Anzahl von noch unformatiert gebliebenen Dateien (aufgrund der zeitweisen Fehlfunktion des Auftrags/Arbeitsablaufs) das Potenzial hat, die Verarbeitung des gesamten Stapels zu unterbinden, wenn die Drosselung aktiviert ist. Wenn diese Eigenschaft als „true“ beibehalten wird (Standardeinstellung), tritt für überwachte Ordner, die nicht gedrosselt werden, keine Zeitüberschreitung ein. Wenn die Eigenschaft als „false“ beibehalten wird, tritt die Zeitüberschreitung immer ein, wenn die stageFileExpirationDuration-Eigenschaft eine positive Zahl ist.
 
 * **pollInterval (Lang)**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist „5“. Weitere Informationen finden Sie in der Beschreibung für die Stapelgröße. Der Wert für „pollInterval“ muss größer als oder gleich eins sein.
-* **excludeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.\
-   Sie können Dateimuster verwenden, um Folgendes auszuschließen:[](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+* **excludeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
+Sie können Dateimuster verwenden, um Folgendes auszuschließen:[](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
    * Dateien mit bestimmten Dateinamenerweiterungen, z. B. *.dat, *.xml, .pdf, *.*
    * Dateien mit bestimmten Namen; mit „data*“ würden beispielsweise Dateien und Ordner mit den Namen „data1“, „data2“ usw. ausgeschlossen.
@@ -216,16 +215,13 @@ Ein Dienst ist eine benutzerdefinierte Implementierung der `com.adobe.aemfd.watc
 
 #### Benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle {#custom-implementation-of-the-contentprocessor-interface}
 
-Die benutzerdefinierte Implementierung akzeptiert einen Verarbeitungskontext (ein Objekt vom Typ com.adobe.aemfd.watchfolder.service.api.ProcessorContext), liest Eingabe- und Konfigurationsparameter aus dem Kontext, verarbeitet die Eingaben und fügt die Ausgabe wieder zum\
-Kontext. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
+Die benutzerdefinierte Implementierung übernimmt einen Verarbeitungskontext (ein Objekt des Typs „com.adobe.aemfd.watchfolder.service.api.ProcessorContext“), liest die Eingabedokumente und -konfigurationsparameter aus dem Kontext, verarbeitet die Eingaben und fügt die Ausgaben wieder in den Kontext ein. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
 
 * **getWatchFolderId**: Gibt die ID des überwachten Ordners zurück.
 * **getInputMap**: Gibt eine Zuordnung des Typs „Map“ zurück. Die Schlüssel der Zuordnung sind der Dateiname der Eingabedatei und ein Dokumentobjekt mit dem Inhalt der Datei. Verwenden Sie zum Lesen der Eingabedateien das getinputMap-API.
-* **getConfigParameters**: Gibt eine unveränderliche Zuordnung des Typs „Map“ zurück. Die Map enthält\
-   die Konfigurationsparameter eines überwachten Ordners.
+* **getConfigParameters**: Gibt eine unveränderliche Zuordnung des Typs „Map“ zurück. Die Zuordnung enthält die Konfigurationsparameter eines überwachten Ordners.
 
-* **setResult**: Die ContentProcessor-Implementierung\
-   verwendet die API, um das Output-Dokument in den Ergebnisordner zu schreiben. Sie können den Namen für die Ausgabedatei an die setResult-API übergeben. Die API kann die übergebene Datei abhängig vom angegebenen Ausgabeordner/Dateimuster entweder verwenden oder ignorieren. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
+* **setResult**: Die ContentProcessor-Implementierung verwendet diese API zum Schreiben des Ausgabedokuments in den Ergebnisordner. Sie können den Namen für die Ausgabedatei an die setResult-API übergeben. Die API kann die übergebene Datei abhängig vom angegebenen Ausgabeordner/Dateimuster entweder verwenden oder ignorieren. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
 
 Beispiel: Der folgende Code ist eine benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle mit der benutzerdefinierten Eigenschaft „foo=bar“.
 
@@ -276,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -298,8 +294,8 @@ Jetzt können Sie Skripte im konfigurierten benutzerdefinierten Speicherort spei
 Mithilfe von Workflows können Sie Aktivitäten in Experience Manager automatisieren. Workflows bestehen aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, etwa eine Seite aktiviert oder eine E-Mail verschickt. Workflows können mit Assets im Repository, mit Benutzerkonten und mit Experience Manager-Diensten interagieren. Mit Workflows können Sie daher komplexe Abläufe koordinieren.
 
 * Berücksichtigen Sie beim Erstellen von Workflows die folgenden Aspekte:
-* Die Ausgabe eines Schritts muss für alle nachfolgenden Schritte verfügbar sein.\
-   In jedem Schritt muss es möglich sein, die in vorhergehenden Schritten generierten bestehenden Ausgabedaten zu aktualisieren oder zu löschen.
+* Die Ausgabe eines Schritts muss für alle nachfolgenden Schritte verfügbar sein.
+In jedem Schritt muss es möglich sein, die in vorhergehenden Schritten generierten bestehenden Ausgabedaten zu aktualisieren oder zu löschen.
 * Die veränderlichen Variablen werden für die Weiterleitung der benutzerdefinierten dynamischen Daten zwischen den Schritten verwendet.
 
 Führen Sie für die Verarbeitung von Dateien mithilfe von Workflows die folgenden Schritte aus:
@@ -347,7 +343,7 @@ Darüber hinaus stehen die folgenden ProcessorContext-APIs zur Verfügung:
 >
 >Ein Aufruf der setResult-API mit einem Null-Inhalt würde in jedem anderen Szenario zu einem Fehler führen.
 
-Das folgende Beispiel zeigt eine Implementierung als Workflow-Schritt. In diesem Beispiel verwendet das ECMAScript die Variable stepCount, um zu verfolgen, wie oft ein Schritt in der aktuellen Instanz des Workflows aufgerufen wird.\
+Das folgende Beispiel zeigt eine Implementierung als Workflow-Schritt. In diesem Beispiel verwendet das ECMAScript die Variable stepCount, um zu verfolgen, wie oft ein Schritt in der aktuellen Instanz des Workflows aufgerufen wird.
 Der Name des Ausgabeordners ist eine Kombination aus der Nummer des aktuellen Schritts, dem Originaldateinamen und dem im Parameter „outPrefix“ angegebenen Präfix.
 
 Das ECMAScript ruft einen Verweis des Workflow-Kontext-Dienstes ab und erstellt eine Implementierung der WorkflowContextProcessor-Schnittstelle. Die WorkflowContextProcessor-Implementierung übernimmt Eingabedateien, kopiert sie an einen temporären Speicherort und gibt ein Dokument zurück, das die kopierte Datei repräsentiert. Basierend auf dem Wert der Booleschen Variablen „purgePrevious“ wird beim aktuellen Schritt die Ausgabe aus dessen zuletzt vorhergegangener Ausführung innerhalb der aktuellen Instanz des Workflows gelöscht. Zuletzt wird die Methode „wfSvc.execute“ aufgerufen, um die Implementierung von „WorkflowContextProcessor“ auszuführen. Der Inhalt des Ausgabedokuments wird im Ergebnisordner unter dem physischen Pfad gespeichert, der im Konfigurationsknoten für den überwachten Ordner angegeben wurde.
@@ -366,8 +362,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +374,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -631,8 +627,8 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 ### Workflow erstellen {#create-a-workflow}
 
-1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.\
-   https://[servername]:&#39;port&#39;/worklow
+1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.
+https://[servername]:&#39;port&#39;/worklow
 
 1. Klicken Sie in der Modellansicht auf **Neu**. Geben Sie im Dialogfeld „Neuer Workflow“ den **Titel** an und klicken Sie auf **OK**.
 
@@ -642,7 +638,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Löschen Sie den standardmäßigen Workflow-Schritt. Ziehen Sie den Prozessschritt aus dem Sidekick in den Workflow und legen Sie ihn dort ab.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Klicken Sie mit der rechten Maustaste auf den Prozessschritt und wählen Sie **Bearbeiten**. Das Fenster „Schritt-Eigenschaften“ wird angezeigt.
 
@@ -660,8 +656,8 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Fügen Sie dem Knoten  folgende Eigenschaften hinzu:
 
-   * folderPath (Zeichenfolge): Der Pfad des Ordners, der regelmäßig mit dem angegebenen Zeitintervall überprüft werden soll. Der Ordner muss sich an einem freigegebenen Speicherort befinden und alle Server müssen uneingeschränkten Zugriff auf diesen Server haben.\
-      inputProcessorType (Zeichenfolge): Der Typ des zu startenden Prozesses. Geben Sie für dieses Tutorial „Workflow“ an.
+   * folderPath (Zeichenfolge): Der Pfad des Ordners, der regelmäßig mit dem angegebenen Zeitintervall überprüft werden soll. Der Ordner muss sich an einem freigegebenen Speicherort befinden und alle Server müssen uneingeschränkten Zugriff auf diesen Server haben.
+inputProcessorType (Zeichenfolge): Der Typ des zu startenden Prozesses. Geben Sie für dieses Tutorial „Workflow“ an.
 
    * inputProcessorId (Zeichenfolge): Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. In diesem Beispiel hat die Eigenschaft „inputProcessorType“ den Wert „workflow“. Geben Sie daher für die Eigenschaft „inputProcessorId“ den folgenden Pfad des PDFG-Workflows an: /etc/workflow/models/pdfg/jcr:content/model
 
