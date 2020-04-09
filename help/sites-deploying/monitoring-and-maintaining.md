@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
 
 ---
 
@@ -365,19 +365,18 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    * Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
    Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
    So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
-       | `&#39;.&#39;yyyy-MM` |Rotation at the beginning of each month |
-       |---|---|
-       | `&#39;.&#39;jjjj-ww&quot;|Drehung am ersten Wochentag (abhängig vom Gebietsschema). |
-       | `&#39;.&#39;yyyy-MM-dd`|Rotation jeden Tag um Mitternacht. |
-       | `&#39;.&#39;yyyy-MM-dd-a`|Rotation um Mitternacht und Mittag jeden Tages. |
-       | `&#39;.&#39;yyyy-MM-dd-HH&quot;|Rotation am Anfang jeder Stunde. |
-       | `&#39;.&#39;JJJJ-MM-TT-HH-mm&quot;|Drehung zu Beginn jeder Minute. |
-       
-       Note: When specifying a time/date:
-       1. You should &quot;escape&quot; literal text within a pair of single quotes (&#39; &#39;);
-       this is to avoid certain characters being interpreted as pattern letters.
-       1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
-   
+   | `'.'yyyy-MM` | Rotation zu Beginn jedes Monats |
+   |---|---|
+   | `'.'yyyy-ww` | Rotation am ersten Wochentag (abhängig vom Gebietsschema). |
+   | `'.'yyyy-MM-dd` | Rotation jeden Tag um Mitternacht. |
+   | `'.'yyyy-MM-dd-a` | Rotation jeden Tages um Mitternacht und Mittag. |
+   | `'.'yyyy-MM-dd-HH` | Rotation am Anfang jeder Stunde. |
+   | `'.'yyyy-MM-dd-HH-mm` | Rotation am Anfang jeder Minute. |
+   Hinweis: Bei der Angabe einer Uhrzeit/eines Datums ist Folgendes zu beachten:
+   1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;
+Dadurch soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
+   1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
+
 
 1. Lesen Sie die neue Protokolldatei mit dem von Ihnen ausgewählten Tool.
 
