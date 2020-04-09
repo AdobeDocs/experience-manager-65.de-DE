@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -45,7 +45,7 @@ Informationen zum Konfigurieren von AEM-Inhalten, sodass diese in einem Portal a
 
 >[!CAUTION]
 >
->Der AEM Portal Director ist seit der Version AEM 6.4 veraltet. Weitere Informationen dazu finden Sie in [Veraltete und entfernte Funktionen](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>Der AEM Portal Director ist seit der Version AEM 6.4 veraltet. Weitere Informationen dazu finden Sie in [Veraltete und entfernte Funktionen](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Verwalten des AEM-Inhalts-Portlets {#administering-the-aem-content-portlet}
 
@@ -183,7 +183,7 @@ So konfigurieren Sie einen Replikationsagenten für das Portal:
 
 1. Melden Sie sich bei der Autoreninstanz an.
 1. In the Websites tab, click the *Tools* tab.
-1. **** Klicken Sie auf **Neue Seite... in den Replizierungsagenten** Neu... angezeigt.
+1. Click **New Page...** in the replication agents **New...** menu.
 
    ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
 
@@ -278,7 +278,7 @@ So greifen SIe auf die Portlet-Authentifizierungskonfiguration zu:
 
 Im Standardmodus werden alle vom Portlet für die AEM WCM-Autoreninstanz ausgegebenen Anfragen unabhängig vom aktuellen Portal-Benutzer unter Verwendung desselben technischen Benutzers ausgegeben. Der Modus „Technischer Benutzer“ ist standardmäßig aktiviert. Sie aktivieren/deaktivieren diesen Modus im entsprechenden Konfigurationsbildschirm in der OSGi-Verwaltungskonsole:
 
-Der angegebene technische Benutzer muss in der AEM WCM-Autoreninstanz und in der Veröffentlichungsinstanz vorhanden sein, wenn **Authentifizierung bei Veröffentlichung **aktiviert ist. Stellen Sie sicher, dass dem Benutzer ausreichend Zugriffsberechtigungen für die Bearbeitung gewährt werden.
+The technical user specified must exist on the AEM WCM author instance and on the publish instance if **Authenticate on Publish** is enabled. Stellen Sie sicher, dass dem Benutzer ausreichend Zugriffsberechtigungen für die Bearbeitung gewährt werden.
 
 #### SSO (Single Sign-On, einmalige Anmeldung) {#sso}
 
@@ -478,7 +478,7 @@ Die Veröffentlichungsansicht verfügt nur über eine Schaltfläche, mit der Sie
 
 | Platzhalterzeichenfolge | Beschreibung |
 |---|---|
-| {buttonManage} | Platzhalter wird durch die Schaltfläche **Verwalten **ersetzt, mit der der Portlet-Status in den Verwaltungsstatus geändert wird. |
+| {buttonManage} | Platzhalter wird durch die Schaltfläche &quot; **Verwalten** &quot;ersetzt, mit der der Portlet-Status in den Verwaltungsstatus geändert wird. |
 
 #### Verwaltungsansicht {#manage-view}
 
@@ -488,7 +488,7 @@ Die Verwaltungsansicht hat vier Schaltflächen: „Bearbeiten“, Registerkarte 
 
 | Platzhalterzeichenfolge | Beschreibung |
 |---|---|
-| {buttonEdit} | Platzhalter wird durch die Schaltfläche** Bearbeiten** ersetzt, mit der ein neues Fenster mit der aktuellen Seite im Bearbeitungsmodus von AEM geöffnet wird. |
+| {buttonEdit} | Der Platzhalter wird durch die Schaltfläche **Bearbeiten** ersetzt, mit der Sie die aktuelle Seite im AEM-Bearbeitungsmodus in einem neuen Fenster öffnen. |
 | {buttonWebsites tab} | Der Platzhalter wird durch eine Schaltfläche ersetzt, mit der Sie die Registerkarte „Websites“ von AEM WCM öffnen. |
 | {buttonRefresh} | Aktualisiert die aktuelle Ansicht |
 | {buttonBack} | Wechselt zurück zur Veröffentlichungsansicht |
@@ -505,7 +505,7 @@ In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendering vom 
 |---|---|
 | {name} | Name der Schaltfläche, z. B.* Autor, Zurück, Aktualisieren** usw. |
 | {id} | CSS-ID der Schaltfläche. |
-| {url} | URL für das Ziel der Schaltfläche. |
+| {url} | URL für die Zielgruppe der Schaltfläche. |
 | {text} | Beschriftung der Schaltfläche. |
 | {onclick} | Javascript- **onclick** -Funktion (enthält {url}). |
 
@@ -642,7 +642,7 @@ Führen Sie die folgenden Schritte aus, um AEM als Portal zu verwenden:
 
 >[!NOTE]
 >
->Sie können die Portlet-Komponente nur verwenden, wenn Sie AEM als Web-Anwendung bereitgestellt haben. ([Siehe Installieren von AEM mit einem Anwendungsserver](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server).)
+>Sie können die Portlet-Komponente nur verwenden, wenn Sie AEM als Web-Anwendung bereitgestellt haben. (Weitere Informationen finden Sie in [Installieren von AEM mit einem Anwendungsserver](/help/sites-deploying/application-server-install.md).)
 
 ### Installieren der Portlet-Komponente {#installing-the-portlet-component}
 
@@ -679,10 +679,10 @@ Stellen Sie die Portlets im Webcontainer des Anwendungsservers bereits, sodass s
 
 1. Extrahieren Sie den Inhalt der WAR-Datei der Portlet-Anwendung.
 
-   **** Tipp: Der Befehl jar xf *nameApp*.war extrahiert die Dateien.
+   **Tipp:** Der Befehl jar xf *nameApp*.war extrahiert die Dateien.
 
 1. Öffnen Sie die Datei web.xml in einem Texteditor.
-1. Fügen Sie die folgende Servlet-Konfiguration innerhalb des Web-App-Elements hinzu:
+1. Hinzufügen die folgende Servlet-Konfiguration innerhalb des Web-App-Elements:
 
    ```xml
    <servlet>
@@ -698,7 +698,7 @@ Stellen Sie die Portlets im Webcontainer des Anwendungsservers bereits, sodass s
 
 1. Speichern Sie die Datei web.xml und packen Sie die WAR-Datei neu.
 
-   **** Tipp: Der `jar cvf nameofapp.war *` Befehl fügt der Datei &quot;app.war&quot;den Inhalt des aktuellen Ordners hinzu.
+   **Tipp:** Der `jar cvf nameofapp.war *` Befehl fügt der Datei &quot;app.war&quot;den Inhalt des aktuellen Ordners hinzu.
 
 1. Stellen Sie die Portlet-Anwendung auf dem Anwendungsserver bereit. Weitere Informationen finden Sie in der Dokumentation für Ihren Anwendungsserver.
 
