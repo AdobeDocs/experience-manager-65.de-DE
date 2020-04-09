@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
+source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
 
 ---
 
@@ -151,8 +151,8 @@ Darüber hinaus stellt die Konsole nützliche Informationen zu den Versionen ber
 
 Im folgenden ein Beispiel:
 
-* Die Versionen unter **Shirts** werden gelöscht, da sie älter als 2 Tage sind.
-* Die Versionen unter **Tonga Fashions!** Versionen werden gelöscht, da die Anzahl der Versionen größer als 5 ist.
+* Die Versionen unter **[!DNL Shirts]** werden gelöscht, da sie älter als 2 Tage sind.
+* The **[!DNL Tonga Fashions!]** versions are purged because their number of versions is greater than 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -1033,7 +1033,7 @@ Falls das System nicht genügend Speicher hat, kann sich dies auf verschiedene W
 
 In diesen Fällen müssen Sie Folgendes überprüfen:
 
-* Die zum [Starten von AEM](/help/sites-deploying/deploy.md#getting-started) verwendeten JVM-Einstellungen
+* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
 * Wissensdatenbank:
 
    * [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
