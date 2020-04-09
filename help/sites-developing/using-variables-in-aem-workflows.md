@@ -1,8 +1,8 @@
 ---
-title: Variablen in AEM-Workflows
-seo-title: Variablen in AEM-Workflows
-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in den Arbeitsablaufschritten OR Split und Goto AEM.
-seo-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in den Arbeitsablaufschritten OR Split und Goto AEM.
+title: Variablen in AEM Workflows
+seo-title: Variablen in AEM Workflows
+description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in ODER-Teilung- und Goto-AEM-Arbeitsablaufschritten.
+seo-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in ODER-Teilung- und Goto-AEM-Arbeitsablaufschritten.
 uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,14 +10,14 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc042696506bf1691c2eeffc6ab941be85fa274c
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
 
-# Variablen in AEM-Workflows{#variables-in-aem-workflows}
+# Variablen in AEM Workflows{#variables-in-aem-workflows}
 
-Eine Variable in einem Workflow-Modell ist eine Methode, einen Wert basierend auf seinem Datentyp zu speichern. Anschließend können Sie den Namen der Variablen in jedem Workflow-Schritt verwenden, um den in der Variablen gespeicherten Wert abzurufen. Sie können auch Variablennamen verwenden, um Ausdrücke für Routingentscheidungen zu definieren.
+Eine Variable in einem Workflow-Modell ist eine Methode, einen Wert basierend auf seinem Datentyp zu speichern. Anschließend können Sie den Namen der Variablen in jedem Workflow-Schritt verwenden, um den in der Variablen gespeicherten Wert abzurufen. Sie können auch Variablennamen verwenden, um Ausdruck für Routing-Entscheidungen zu definieren.
 
 In AEM-Workflow-Modellen können Sie:
 
@@ -35,32 +35,32 @@ Variablen sind eine Erweiterung der [MetaDataMap](https://helpx.adobe.com/experi
 
 Sie erstellen Variablen mithilfe des Abschnitts &quot;Variablen&quot;im Sidekick des Workflow-Modells. AEM-Workflow-Variablen unterstützen die folgenden Datentypen:
 
-* **Primitive-Datentypen**: Long, Double, Boolean, Date und String
+* **Primitive-Datentypen**: Lang, Dublette, Boolescher Wert, Datum und Zeichenfolge
 * **Komplexe Datentypen**: [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) und [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
 
 >[!NOTE]
 >
->Workflows unterstützen nur das ISO8601-Format für Datumsvariablen.
+>Workflows unterstützt nur das ISO8601-Format für Datumsvariablen.
 
-Weitere komplexe Datentypen, die in AEM Forms-Workflows verfügbar sind, finden Sie unter [Variablen in AEM Forms-Workflows](/help/forms/using/variable-in-aem-workflows.md).  Verwenden Sie den ArrayList-Datentyp, um variable Sammlungen zu erstellen. Sie können ArrayList-Variablen für alle primitiven und komplexen Datentypen erstellen. Erstellen Sie beispielsweise eine ArrayList-Variable und wählen Sie String als Untertyp aus, um mehrere Zeichenfolgenwerte mit der Variablen zu speichern.
+Weitere komplexe Datentypen, die in AEM Forms Workflows verfügbar sind, finden Sie unter [Variablen in AEM Forms Workflows](/help/forms/using/variable-in-aem-workflows.md).  Verwenden Sie den ArrayList-Datentyp, um variable Sammlungen zu erstellen. Sie können die ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Erstellen Sie beispielsweise eine ArrayList-Variable und wählen Sie String als Untertyp aus, um mehrere Zeichenfolgenwerte mit der Variablen zu speichern.
 
 Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 
 1. Navigieren Sie in einer AEM-Instanz zu &quot;Extras&quot;> &quot;Workflow&quot;> &quot;Modelle&quot;.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
-1. Tippen Sie auf das Variablensymbol im Sidekick des Workflow-Modells und dann auf Variable **[!UICONTROL hinzufügen]**.
+1. Tippen Sie auf das Variablensymbol im Sidekick des Workflow-Modells und dann auf **[!UICONTROL Hinzufügen Variable]**.
 
    ![Variable hinzufügen](assets/variables_add_variable_new.png)
 
-1. Geben Sie im Dialogfeld &quot;Variable hinzufügen&quot;den Namen ein und wählen Sie den Variablentyp aus.
-1. Wählen Sie den Datentyp aus der Dropdownliste **[!UICONTROL Typ]** aus und geben Sie die folgenden Werte an:
+1. Geben Sie im Dialogfeld Hinzufügen Variable den Namen an und wählen Sie den Variablentyp aus.
+1. Wählen Sie den Datentyp aus der Dropdown-Liste &quot; **[!UICONTROL Typ]** &quot;und geben Sie die folgenden Werte an:
 
    * Primitive-Datentyp - Geben Sie einen optionalen Standardwert für die Variable an.
-   * JSON oder XML - Geben Sie einen optionalen JSON- oder XML-Schemapfad an. Das System überprüft den Schemapfad, während die in diesem Schema verfügbaren Eigenschaften einer anderen Variablen zugeordnet und gespeichert werden.
+   * JSON oder XML - Geben Sie einen optionalen JSON- oder XML-Schema-Pfad an. Das Schema überprüft den Pfad, während die in diesem Schema verfügbaren Eigenschaften einer anderen Variablen zugeordnet und gespeichert werden.
    * Formulardatenmodell: Geben Sie einen Pfad für ein Formulardatenmodell an.
    * ArrayList - Geben Sie einen Untertyp für die Sammlung an.
 
-1. Geben Sie eine optionale Beschreibung für die Variable ein und tippen Sie auf , ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) um die Änderungen zu speichern. Die Variable wird in der Liste im linken Bereich angezeigt.
+1. Geben Sie eine optionale Beschreibung für die Variable ein und tippen Sie auf , ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
 
 Berücksichtigen Sie beim Erstellen von Variablen die folgenden Vorgehensweisen:
 
@@ -77,57 +77,57 @@ Mit dem Schritt &quot;Variable festlegen&quot;können Sie den Wert einer Variabl
 Je nach Datentyp der Variablen können Sie die folgenden Optionen verwenden, um den Wert einer Variablen festzulegen:
 
 * **Literal:** Verwenden Sie die Option, wenn Sie den genauen, zu spezifizierenden Wert kennen.
-* **** Ausdruck: Verwenden Sie die Option, wenn der zu verwendende Wert auf Grundlage eines Ausdrucks berechnet wird. Der Ausdruck wird im angegebenen Ausdruckseditor erstellt.
-* **** JSON-Punktnotiz: Verwenden Sie die Option, um einen Wert aus einer JSON- oder FDM-Typvariablen abzurufen.
-* **** XPATH: Verwenden Sie die Option, um einen Wert aus einer XML-Typvariablen abzurufen.
-* **** Im Verhältnis zur Nutzlast: Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert unter einem Pfad relativ zur Nutzlast verfügbar ist.
-* **** Absoluter Pfad: Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert unter einem absoluten Pfad verfügbar ist.
+* **Ausdruck:** Verwenden Sie die Option, wenn der zu verwendende Wert auf Grundlage eines Ausdrucks berechnet wird. Der Ausdruck wird im bereitgestellten Ausdruck-Editor erstellt.
+* **JSON-Punktnotiz:** Verwenden Sie die Option, um einen Wert aus einer JSON- oder FDM-Typvariablen abzurufen.
+* **XPATH:** Verwenden Sie die Option, um einen Wert aus einer XML-Typvariablen abzurufen.
+* **Im Verhältnis zur Nutzlast:** Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert unter einem Pfad relativ zur Nutzlast verfügbar ist.
+* **Absoluter Pfad:** Verwenden Sie die Option, wenn der in einer Variablen zu speichernde Wert unter einem absoluten Pfad verfügbar ist.
 
 Sie können auch bestimmte Elemente einer JSON- oder XML-Typvariablen mithilfe der JSON-DOT-Notation oder XPATH-Notation aktualisieren.
 
-### Zuordnung zwischen Variablen hinzufügen {#add-mapping-between-variables}
+### Hinzufügen Zuordnung zwischen Variablen {#add-mapping-between-variables}
 
 Führen Sie die folgenden Schritte aus, um die Zuordnung zwischen Variablen hinzuzufügen:
 
 1. Tippen Sie auf der Seite zum Bearbeiten des Workflows auf das Symbol Schritte, das im Sidekick des Workflow-Modells verfügbar ist.
 1. Ziehen Sie den Schritt **Variable** festlegen in den Workflow-Editor, tippen Sie auf den Schritt und wählen Sie ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Konfigurieren).
-1. Wählen Sie im Dialogfeld &quot;Variable festlegen&quot; **[!UICONTROL Zuordnung]** > Zuordnung **[!UICONTROL hinzufügen]**.
+1. Wählen Sie im Dialogfeld &quot;Variable festlegen&quot; **[!UICONTROL Zuordnung]** > **[!UICONTROL Hinzufügen Zuordnung]**.
 1. Wählen Sie im Abschnitt **Zuordnungsvariable** die zu speichernde Variable aus, wählen Sie den Zuordnungsmodus und geben Sie einen Wert an, der in der Variablen gespeichert werden soll. Die Zuordnungsmodi variieren je nach Variablentyp.
 1. Ordnen Sie weitere Variablen zu, um einen aussagekräftigen Ausdruck zu erstellen. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes.
 
-### Beispiel 1: Abfragen einer XML-Variable zum Festlegen eines Werts für eine Zeichenfolgenvariable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
+### Beispiel 1: Abfrage einer XML-Variable zum Festlegen eines Werts für eine Zeichenfolgenvariable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
-Wählen Sie eine Variable des XML-Typs aus, um eine XML-Datei zu speichern. Abfragen der XML-Variable, um den Wert für eine Zeichenfolgenvariable für die in der XML-Datei verfügbare Eigenschaft festzulegen. Verwenden Sie **XPATH für das XML-Variablenfeld** angeben, um die Eigenschaft zu definieren, die in der Zeichenfolgenvariablen gespeichert werden soll.
+Wählen Sie eine Variable des XML-Typs aus, um eine XML-Datei zu speichern. Abfrage der XML-Variablen, um den Wert für eine Zeichenfolgenvariable für die in der XML-Datei verfügbare Eigenschaft festzulegen. Verwenden Sie &quot;XPATH **angeben&quot;für das XML-Variablenfeld** , um die Eigenschaft zu definieren, die in der Zeichenfolgenvariablen gespeichert werden soll.
 
-Wählen Sie in diesem Beispiel eine XML-Variable für **Formulardaten** aus, um die Datei &quot; **cc-app.xml** &quot;zu speichern. Abfragen Sie die **Variable &quot;formdata** &quot;, um den Wert für die **Zeichenfolgenvariable &quot;emailaddress** &quot;festzulegen, um den Wert für die Eigenschaft &quot; **emailAddress** &quot;zu speichern, die in der Datei &quot; **cc-app.xml** &quot;verfügbar ist.
+Wählen Sie in diesem Beispiel eine XML-Variable für **Formulardaten** aus, um die Datei &quot; **cc-app.xml** &quot;zu speichern. Abfrage der **Variablen &quot;formdata** &quot;, um den Wert für die **Zeichenfolgenvariable &quot;emailaddress** &quot;festzulegen, um den Wert für die Eigenschaft &quot; **emailAddress** &quot;zu speichern, die in der Datei &quot; **cc-app.xml** &quot;verfügbar ist.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Wert einer Variablen festlegen")
 
-### Beispiel 2: Verwenden Sie einen Ausdruck, um Werte basierend auf anderen Variablen zu speichern {#example2}
+### Beispiel 2: Ausdruck zum Speichern von Werten, die auf anderen Variablen basieren {#example2}
 
 Verwenden Sie einen Ausdruck, um die Summe der Variablen zu berechnen und das Ergebnis in einer Variablen zu speichern.
 
-In diesem Beispiel verwenden Sie den Ausdruckseditor, um einen Ausdruck zu definieren, um die Summe der **Assetkosten** - und **Bilanzsummenvariablen** zu berechnen und das Ergebnis in der Variablen **totalvalue** zu speichern.
+Verwenden Sie in diesem Beispiel den Ausdruck-Editor, um einen Ausdruck zur Berechnung der Summe der **Asset-Kosten** - und **Ausgleichsvariablen** zu definieren und das Ergebnis in der Variablen **totalvalue** zu speichern.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
-## Ausdruckseditor verwenden {#use-expression-editor}
+## Ausdruck-Editor verwenden {#use-expression-editor}
 
-Sie können auch Ausdrücke verwenden, um den Wert einer Variablen zur Laufzeit zu berechnen. Variablen bieten einen Ausdruckseditor zum Definieren von Ausdrücken.
+Sie können Ausdruck auch verwenden, um den Wert einer Variablen zur Laufzeit zu berechnen. Variablen bieten einen Ausdruck-Editor zum Definieren von Ausdrücken.
 
-Verwenden Sie den Ausdruckseditor, um:
+Verwenden Sie den Ausdruck-Editor, um:
 
-* Legen Sie den Wert von Variablen mit anderen Workflow-Variablen, Zahlen oder mathematischen Ausdrücken fest.
-* Verwenden Sie Workflow-Variablen, Zeichenfolge, Zahl oder einen Ausdruck in einem mathematischen Ausdruck
-* Fügen Sie Bedingungen hinzu, um Variablenwerte festzulegen.
-* Fügen Sie Operatoren zwischen Bedingungen hinzu.
+* Legen Sie den Variablenwert mithilfe anderer Workflow-Variablen, Zahlen oder mathematischer Ausdruck fest.
+* Verwenden Sie Workflow-Variablen, Zeichenfolge, Nummer oder einen Ausdruck in einem mathematischen Ausdruck
+* Hinzufügen Bedingungen zum Festlegen von Variablenwerten.
+* Hinzufügen Betreiber zwischen Bedingungen.
 
 ![Ausdruckseditor](assets/variables_expression_editor_new.png)
 
 Er basiert auf dem Regeleditor für adaptive Formulare mit folgenden Änderungen. Regeleditor in Variablen:
 
 * Unterstützt keine Funktionen.
-* Bietet keine Benutzeroberfläche zum Anzeigen einer Regelzusammenfassung
+* Stellt keine Benutzeroberfläche für die Ansicht der Regelzusammenfassung bereit
 * Hat keinen Code-Editor.
 * Aktiviert und deaktiviert den Wert eines Objekts nicht.
 * Die Eigenschaft zum Festlegen eines Objekts wird nicht unterstützt.
@@ -137,7 +137,7 @@ For more information, see [adaptive forms rule editor](/help/forms/using/rule-ed
 
 ## Use a variable {#use-a-variable}
 
-Mithilfe von Variablen können Sie Eingaben und Ausgaben abrufen oder das Ergebnis eines Schritts speichern. Der Workflow-Editor bietet zwei Arten von Workflow-Schritten:
+Sie können Variablen verwenden, um Eingaben und Ausgaben abzurufen oder das Ergebnis eines Schritts zu speichern. Der Workflow-Editor bietet zwei Arten von Workflow-Schritten:
 
 * Arbeitsablaufschritte mit Unterstützung für Variablen
 * Arbeitsablaufschritte ohne Unterstützung für Variablen
@@ -150,15 +150,15 @@ Der Schritt &quot;Gehe zu&quot;, &quot;ODER teilen&quot;, und alle AEM Forms-Wor
 
 Die ODER-Teilung erstellt eine Verzweigung im Workflow, nach nur einer der beiden Zweige aktiv bleibt. Mit diesem Schritt können Sie bedingte Prozesspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
-Sie können einen Routingausdruck für eine Verzweigung mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
+Sie können Routing-Ausdruck für eine Verzweigung mit einer Regeldefinition, einem ECMA-Skript oder einem externen Skript definieren.
 
-Sie können Variablen verwenden, um den Routingausdruck mit dem Ausdruckseditor zu definieren. Weitere Informationen zur Verwendung von Routing-Ausdrücken für den Schritt &quot;OR-Teilung&quot;finden Sie unter Schritt [ODER-Teilung](/help/sites-developing/workflows-step-ref.md#or-split).
+Sie können Variablen verwenden, um den Routing-Ausdruck mit dem Ausdruck-Editor zu definieren. Weitere Informationen zur Verwendung von Routing-Ausdrücken für den Schritt &quot;OR-Teilung&quot;finden Sie unter Schritt [ODER-Teilung](/help/sites-developing/workflows-step-ref.md#or-split).
 
-In diesem Beispiel verwenden Sie vor dem Definieren des Routing-Ausdrucks [Beispiel 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) , um den Wert für die **Variable totalvalue** festzulegen. Zweig 1 ist aktiv, wenn der Wert der Variablen **totalvalue** größer als 50000 ist. Gleichermaßen können Sie eine Regel definieren, mit der die Verzweigung 2 aktiviert wird, wenn der Wert der **Variablen totalvalue** unter 50000 liegt.
+In diesem Beispiel verwenden Sie vor dem Definieren des Routing-Ausdrucks [Beispiel 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) , um den Wert für die **totalvalue** -Variable festzulegen. Zweig 1 ist aktiv, wenn der Wert der Variablen **totalvalue** größer als 50000 ist. Gleichermaßen können Sie eine Regel definieren, mit der die Verzweigung 2 aktiviert wird, wenn der Wert der **Variablen totalvalue** unter 50000 liegt.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Wählen Sie entsprechend einen externen Skriptpfad oder geben Sie das ECMA-Skript für Routingausdrücke an, um die aktive Verzweigung auszuwerten. Tippen Sie auf Verzweigung **[!UICONTROL umbenennen]** , um einen alternativen Namen für die Verzweigung anzugeben.
+Wählen Sie auf ähnliche Weise einen externen Skriptpfad oder geben Sie das ECMA-Skript an, damit Routing-Ausdruck die aktive Verzweigung auswerten können. Tippen Sie auf Verzweigung **[!UICONTROL umbenennen]** , um einen alternativen Namen für die Verzweigung anzugeben.
 
 Weitere Beispiele finden Sie unter Workflow-Modell [erstellen](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -166,9 +166,9 @@ Weitere Beispiele finden Sie unter Workflow-Modell [erstellen](/help/forms/using
 
 The **Goto Step** allows you to specify the next step in the workflow model to execute, dependent on the result of a routing expression.
 
-Ähnlich wie beim Schritt OR-Teilung können Sie einen Routingausdruck für Goto-Schritt mit einer Regeldefinition, einem ECMA-Skript oder einem externen Skript definieren.
+Ähnlich wie beim Schritt &quot;OR-Teilung&quot;können Sie Routing-Ausdruck für &quot;Goto&quot;mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 
-Sie können Variablen verwenden, um den Routingausdruck mit dem Ausdruckseditor zu definieren. Weitere Informationen zur Verwendung von Routing-Ausdrücken für den Schritt Goto finden Sie unter [Goto Step](/help/sites-developing/workflows-step-ref.md#goto-step).
+Sie können Variablen verwenden, um den Routing-Ausdruck mit dem Ausdruck-Editor zu definieren. Weitere Informationen zur Verwendung von Routing-Ausdrücken für den Goto-Schritt finden Sie unter [Goto-Schritt](/help/sites-developing/workflows-step-ref.md#goto-step).
 
 ![Goto-Regel](assets/variables_goto_rule1_new.png)
 
@@ -190,11 +190,11 @@ Verwenden Sie die folgenden APIs im ECMA-Skript, um Werte für vorhandene Variab
 
 | Variablendatentyp | API |
 |---|---|
-| Primitive (lang, Double, Boolean, Date und String) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
-| XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
+| Primitive (lang, Dublette, Boolescher Wert, Datum und Zeichenfolge) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
+| XML | Packages.org.w3c.dom.Dokument xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Dokument.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Informationen zu APIs für zusätzliche komplexe Variablendaten, die in AEM Forms-Workflows verfügbar sind, finden Sie unter [Variablen in AEM Forms-Workflows](/help/forms/using/variable-in-aem-workflows.md).
+Informationen zu APIs für zusätzliche komplexe Variablendaten, die in AEM Forms Workflows verfügbar sind, finden Sie unter [Variablen in AEM Forms Workflows](/help/forms/using/variable-in-aem-workflows.md).
 
 **Beispiel**
 
@@ -226,7 +226,7 @@ Sie können eine API verwenden, um Variablen festzulegen und sie zum Aufrufen vo
 
 [workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) verwendet model, wfData und metaData als Argumente. Verwenden Sie MetaDataMap, um einen Wert für die Variable festzulegen.
 
-In dieser API ist die Variable **variableName** auf **value **mit metaData.put(variableName, value) eingestellt.
+In dieser API wird die Variable **variableName** mithilfe von metaData.put(variableName, value) auf **value** eingestellt.
 
 ```java
 import com.adobe.granite.workflow.model.WorkflowModel;
