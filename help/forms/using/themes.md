@@ -296,7 +296,7 @@ Mit der Plus-Schaltfläche in der Asset-Bibliothek können Sie den Stil dauerhaf
 
 Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil an ein Design gebunden und steht nicht mehr für andere Designs zur Verfügung. Löschen eines gespeicherten Stils:
 
-1. On the CANVAS toolbar, click **Theme Options** ![](/content/dam/help/en/aem-forms/6-2/theme-options.png) > **Manage Styles**.
+1. On the CANVAS toolbar, click **Theme Options** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) > **Manage Styles**.
 1. Wählen Sie im Dialogfeld „Stile verwalten“ einen gespeicherten Stil, klicken Sie auf **Löschen**.
 
    ![Löschen Sie den gespeicherten Stil](assets/manage-styles.png)
