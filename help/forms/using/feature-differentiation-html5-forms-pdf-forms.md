@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,7 +43,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
    <td>Unterstützt</td>
   </tr>
   <tr>
-   <td>Bilder </td>
+   <td>Bilder</td>
    <td>Das Daten-URI-Schema wird für die Darstellung von Bildern verwendet. Alle modernen Browser unterstützen dieses Schema, es gibt jedoch Unterschiede bei den Bildformaten, die die einzelnen Browser unterstützen.<br /> </td>
    <td>Die Formate .gif, .png, .jpeg, .bmp und .tiff werden unterstützt.</td>
   </tr>
@@ -81,5 +81,3 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
 </table>
 
 <!--Follow the best practices to enable a form template for HTML5 renditions and ensure that the behavior and appearance of HTML5 forms and XFA-based PDF is consistent. For detailed list of best practices, see [Best practices to design an HTML5 form.](/help/forms/using/best-practices-design-html5-forms.md)-->
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
