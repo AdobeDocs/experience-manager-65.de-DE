@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3afe5bf8e49202608e4c9369b2ff3d26afa03dc4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -45,9 +45,9 @@ Erstellen und verwalten Sie eine Vorlage für den Druckkanal von interaktiver Ko
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following subforms in the XDP template:
 
 * Rechnungsdetails: Enthält ein Dokumentfragment
-* Kundendetails: Umfasst ein Dokumentfragment
-* Bill Summary: Umfasst ein Dokumentfragment
-* Zusammenfassung: Umfasst ein Dokumentfragment (Teilformular &quot;Gebühren&quot;) und ein Diagramm (Teilformular &quot;Diagramme&quot;)
+* Kundendetails: Umfasst ein Dokument-Fragment
+* Bill Summary: Umfasst ein Dokument-Fragment
+* Zusammenfassung: Umfasst ein Dokument-Fragment (Teilformular &quot;Gebühren&quot;) und ein Diagramm (Teilformular &quot;Diagramme&quot;)
 * Angepasste Aufrufe: Umfasst eine Tabelle (Layout-Fragment)
 * Jetzt bezahlen: Umfasst ein Bild
 * Value Added Services: Umfasst ein Bild
@@ -173,7 +173,7 @@ Um eine Webkanal-Vorlage zu erstellen, definieren Sie einen Ordner, in dem Sie d
 
 Führen Sie die folgenden Schritte aus, um einen Ordner für die bearbeitbaren Vorlagen zu erstellen:
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Configuration Browser**.
+1. Tap **Tools** ![](assets/hammer-icon.svg) > **Configuration Browser**.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
@@ -186,9 +186,9 @@ Führen Sie die folgenden Schritte aus, um einen Ordner für die bearbeitbaren V
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following panels in the Web template:
 
 * Rechnungsdetails: Enthält ein Dokumentfragment
-* Kundendetails: Umfasst ein Dokumentfragment
-* Bill Summary: Umfasst ein Dokumentfragment
-* Zusammenfassung der Gebühren: Umfasst ein Dokumentfragment und ein Diagramm (zweispaltiges Layout)
+* Kundendetails: Umfasst ein Dokument-Fragment
+* Bill Summary: Umfasst ein Dokument-Fragment
+* Zusammenfassung der Gebühren: Umfasst ein Dokument- und ein Diagramm (zweispaltiges Layout)
 * Angepasste Aufrufe: Umfasst eine Tabelle
 * Pay Now: Includes a **Pay Now** button and an image
 * Value Added Services: Includes an image and a **Subscribe** button.
@@ -248,7 +248,7 @@ Nachdem Sie die Webvorlage erstellt haben, müssen Sie sie zur Erstellung der in
 
 Führen Sie die folgenden Schritte aus, um die Webvorlage zu aktivieren:
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Templates**.
+1. Tap **Tools** ![](assets/hammer-icon.svg) > **Templates**.
 1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
 1. Registerkarte **Aktivieren** erneut zur Bestätigung.
 
