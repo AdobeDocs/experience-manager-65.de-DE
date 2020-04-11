@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -24,7 +24,7 @@ HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und form
 
 >[!NOTE]
 >
->Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Symbole der DateTime- und Time Picture-Klausel nicht unterstützt.
+>Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Symbole der DateTime- und Time-Picture-Klausel nicht unterstützt.
 
 ## Unterstützte Datumsfeldsymbole {#supported-date-field-symbols}
 
@@ -210,5 +210,3 @@ HTML5-Formulare unterstützen die folgenden Text-Picture-Klausel-Ausdrücke:
 | O | Einzelnes alphanumerisches Zeichen. |
 | 0 (Null) | Einzelnes alphanumerisches Zeichen. |
 | 9 | Einzelne Ziffer. |
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
