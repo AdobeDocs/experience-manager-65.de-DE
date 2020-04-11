@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -36,5 +36,3 @@ Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruk
 **services** Enthält die Dienstschnittstelle zum Aufrufen von Adobe Experience Manager Server-APIs für REST-Endpunkte.
 
 **util** Enthält allgemeine Dienstprogramme, die von mehreren Komponenten verwendet werden können.
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
