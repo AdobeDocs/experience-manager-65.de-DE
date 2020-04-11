@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -832,7 +832,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| Rahmen | Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt. | Keine |
+| Rahmen | Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt. | none |
 
 ## Objekt {#object}
 
@@ -846,7 +846,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr>
    <td>className</td>
    <td>Legt den Namen der Klasse dieses Objekts fest.<br /> </td>
-   <td>Keine</td>
+   <td>none</td>
   </tr>
  </tbody>
 </table>
@@ -905,7 +905,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td>Keine</td>
   </tr>
   <tr>
-   <td>obligatorisch</td>
+   <td>mandatory</td>
    <td>Gibt den nullTest-Wert für das Feld an.</td>
    <td>Keine</td>
   </tr>
@@ -1213,7 +1213,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. Term()
+   1. Begriff()
 
 1. **Logikfunktionen**
 
@@ -1351,5 +1351,3 @@ Folgende clientseitige XFA-Ereignisse werden unterstützt:
 >[!NOTE]
 >
 >HTML5-Formulare werden clientseitig (im Browser) wiedergegeben. Es wird empfohlen, clientseitige **validate**- und **calculate**-Skripts anstelle serverseitiger Skripts zu verwenden.
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
