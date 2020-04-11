@@ -9,7 +9,7 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
 
 Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
-Nachdem das adaptive Formular fertig ist, können Sie es veröffentlichen, um es für Endbenutzer verfügbar zu machen. Endbenutzer können das veröffentlichte Formular auf jedem Gerät und in jedem Internetbrowser öffnen. Wenn ein adaptives Formular veröffentlicht wird, werden das Formular und der zugehörige Inhalt von einer AEM-Autoreninstanz in eine AEM-Veröffentlichungsinstanz kopiert. Das Formular wird dem Endbenutzer über die Veröffentlichungsinstanz zur Verfügung gestellt.
+Nachdem das adaptive Formular fertig ist, können Sie es veröffentlichen, um es für Endbenutzer verfügbar zu machen. Die Endbenutzer können das veröffentlichte Formular auf jedem Gerät und in jedem Internetbrowser öffnen. Wenn ein adaptives Formular veröffentlicht wird, werden das Formular und der zugehörige Inhalt von einer AEM-Autoreninstanz in eine AEM-Veröffentlichungsinstanz kopiert. Das Formular wird dem Endbenutzer über die Veröffentlichungsinstanz zur Verfügung gestellt.
 
 Sie haben die folgenden Methoden, um ein adaptives Formular zu veröffentlichen:
 
@@ -30,7 +30,7 @@ Sie haben die folgenden Methoden, um ein adaptives Formular zu veröffentlichen:
 
 ## Bevor Sie beginnen {#before-you-start}
 
-* **[Einrichten einer AEM Forms-Veröffentlichungsinstanz](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: Die Veröffentlichungsinstanz ist eine öffentliche Instanz von AEM Forms, die im Veröffentlichungsmodus ausgeführt wird. In einer Produktionsumgebung befindet sich die Veröffentlichungsinstanz außerhalb der Firewall des Unternehmens.
+* **[Einrichten einer AEM Forms-Veröffentlichungsinstanz](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: Die Veröffentlichungsinstanz ist eine öffentliche Instanz von AEM Forms, die im Veröffentlichungsmodus ausgeführt wird. In einer Produktions-Umgebung befindet sich die Veröffentlichungsinstanz außerhalb der Firewall des Unternehmens.
 * **[Richten Sie Replizierung und umgekehrte Replizierung](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**ein: Replizierung kopiert Inhalte aus der Autoreninstanz in eine Veröffentlichungsinstanz und gibt Benutzereingaben (z. B. Formulareingaben) aus der Veröffentlichungsinstanz an die Autoreninstanz zurück.
 
 ## Veröffentlichen des adaptiven Formulars als AEM-Seite {#publish-the-adaptive-form-as-an-aem-page}
@@ -47,7 +47,7 @@ Wenn das adaptive Formular als AEM-Seite veröffentlicht wird, enthält die gesa
 
 Mit AEM Forms können Formularentwickler adaptive Formulare nahtlos in eine AEM-Siteseite einbetten. Das eingebettete adaptive Formular ist voll funktionsfähig und Benutzer können es ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular zu interagieren.
 
-AEM Forms bietet eine Komponente, den AEM Forms-Container, um ein adaptives Formular in eine AEM-Siteseite einzubetten. Standardmäßig ist die Komponente nicht im AEM-Sites-Container sichtbar. Führen Sie die folgenden Schritte aus, um die AEM Forms-Container-Komponente zu aktivieren und das adaptive Formular in eine AEM-Siteseite einzubetten:
+AEM Forms bietet eine Komponente, AEM Forms Container, um ein adaptives Formular in eine AEM-Siteseite einzubetten. Standardmäßig ist die Komponente nicht im AEM Sites Container sichtbar. Führen Sie die folgenden Schritte aus, um die AEM Forms Container-Komponente zu aktivieren und das adaptive Formular in eine AEM-Siteseite einzubetten:
 
 1. Erstellen und öffnen Sie eine Seite auf der Website We.Retail zur Bearbeitung. Beispiel: [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Das adaptive Formular ist in die Siteseite eingebettet.
 
@@ -56,11 +56,11 @@ AEM Forms bietet eine Komponente, den AEM Forms-Container, um ein adaptives Form
    Die Website We.Retail wird mit AEM ausgeliefert. Wenn Sie die Website &quot;We.Retail&quot;nicht installiert haben, lesen Sie die Informationen unter [We.Retail Reference Implementation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) installieren.
 
 1. Tippen Sie auf die ![Eigenschaften](assets/properties.png) -Seiteninformationen und wählen Sie auf der neu erstellten Website &quot;Wir.Einzelhandel&quot;die Option &quot;Vorlage **** bearbeiten&quot;aus. Die Vorlage der Seite wird in einer neuen Registerkarte des Browsers geöffnet.
-1. Tippen Sie in das Feld **Layout-Container** und dann auf ![Feedmanagement](assets/feedmanagement.png). Erweitern Sie auf der Registerkarte &quot; **Zulässige Komponenten** &quot;das Akkordeon &quot; **Allgemein** &quot;, wählen Sie die Option &quot; **AEM Form** &quot;und tippen Sie auf ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). Die AEM Forms-Container-Komponente ist für die Seite aktiviert.
+1. Tippen Sie im Feld **Layout-Container** auf ![Feedmanagement](assets/feedmanagement.png). Erweitern Sie auf der Registerkarte &quot; **Zulässige Komponenten** &quot;das Akkordeon &quot; **Allgemein** &quot;, wählen Sie die Option &quot; **AEM Form** &quot;und tippen Sie auf ![](assets/save_icon.svg). Die AEM Forms Container-Komponente ist für die Seite aktiviert.
 
 1. Öffnen Sie die Browser-Registerkarte mit der Seite AEM-Sites, die in Schritt 1 geöffnet wurde. Tippen Sie auf das Feld Komponenten hierher **** ziehen und dann auf **+.** Tippen Sie im Feld Neue Komponente **** einfügen auf **AEM Form.** Die **AEM Forms-Container** -Komponente wird der Seite hinzugefügt.
-1. Tippen Sie auf die **AEM Forms-Container** -Komponente und dann auf ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/cmppr.png). Ein Dialogfeld mit Eigenschaften des AEM Forms-Containers wird angezeigt. Suchen Sie im Feld **Asset Path** das adaptive Formular shipping-address-add-update-form und wählen Sie es aus. Tippen Sie auf ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). Das adaptive Formular ist in die Seite eingebettet.
-1. Veröffentlichen Sie das adaptive Formular und die Siteseite. Beachten Sie dabei Folgendes:
+1. Tippen Sie auf die **AEM Forms Container** -Komponente und dann auf ![](assets/configure-icon.svg). Ein Dialogfeld mit Eigenschaften von AEM Forms Container wird angezeigt. Suchen Sie im Feld **Asset Path** das adaptive Formular shipping-address-add-update-form und wählen Sie es aus. Tippen ![](assets/save_icon.svg). Das adaptive Formular ist in die Seite eingebettet.
+1. Veröffentlichen Sie sowohl das adaptive Formular als auch die Siteseite. Beachten Sie dabei Folgendes:
 
    * Wenn Sie die AEM-Siteseite zum ersten Mal veröffentlichen und sie ein eingebettetes Formular enthält, veröffentlichen Sie die Siteseite und das eingebettete Formular.
    * Wenn Sie nur das eingebettete Formular auf einer veröffentlichten Siteseite ändern, veröffentlichen Sie das Originalformular und die Änderungen werden auf der veröffentlichten Siteseite übernommen. Die veröffentliche Siteseite enthält einen Verweis auf das Formular ein und erfordert kein erneutes Veröffentlichen der Seite.
