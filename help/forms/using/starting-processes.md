@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -127,5 +127,3 @@ Sie können Prozesse zu Ihrer Kategorie „Favoriten“ hinzufügen. Durch das F
 >Wenn Sie Prozesse meist beim Arbeiten mit AEM Forms Workspace starten, können Sie die Voreinstellung „Startposition“ so einstellen, dass beim Starten von AEM Forms Workspace automatisch die Kategorie „Favoriten“ angezeigt wird. Weitere Informationen finden Sie unter „Voreinstellungen verwalten“ in [Erste Schritte mit AEM Forms Workspace](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Um einen Prozess als Favoriten zu markieren, wählen Sie die Aufgabe in der Kategorie aus und klicken Sie auf den ungefüllten Stern. Der Stern wird golden. Um die Markierung eines Prozesses als Favorit zu entfernen, klicken Sie erneut auf den goldenen Stern.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
