@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -42,5 +42,3 @@ Anlagen auf Formularebene werden für adaptive Formulare, die in der AEM Forms-A
 
 1. Um ein Formular zu öffnen, tippen Sie auf dem Startbildschirm auf das entsprechende Formular.
 1. Sie können die Felder des Formulars aktualisieren, Anlagen auf Feldebene hinzufügen, das Formular als Entwurf speichern und es senden.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
