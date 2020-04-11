@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,7 +43,7 @@ HTML5-Formulare stellen eine Verbindung zu den AEM-Servern her, um serverseitige
 
 #### Ausführen von serverseitigen Skripten und Webdiensten {#execute-server-sided-scripts-and-web-services}
 
-Die Skripte, die für eine Ausführung auf dem Server markiert sind, werden als serverseitige Skripte bezeichnet. In der folgenden Tabelle sind alle Parameter aufgeführt, die in serverseitigen Skripten und Webdiensten verwendet werden.
+Die Skripte, die für eine Ausführung auf dem Server markiert sind, werden als serverseitige Skripte bezeichnet. In der folgenden Tabelle werden alle in serverseitigen Skripten und Webdiensten verwendeten Parameter Liste.
 
 <table>
  <tbody>
@@ -133,5 +133,3 @@ Der Sendedienst-Proxy wählt eine Topologie, wenn die submitUrl in den Anforderu
 * If proxy posts the data, the proxy service passes all the parameters except submitUrl to the */bin/xfaforms/submitaction* end point and receives xml bytes in response stream. Dann sendet der Proxy-Dienst die XML-Datenbytes an die submitUrl zur Verarbeitung.
 
 * Vor dem Versenden der Daten (POST-Anforderung) an einen Server prüfen HTML5-Formulare die Verbindung und Verfügbarkeit des Servers. Um die Verbindung und Verfügbarkeit zu prüfen, senden HTML-Formulare eine leere HEAD-Anforderung an den Server. Wenn der Server verfügbar ist, sendet das HTML5-Formular Daten (POST-Anforderung) an den Server. If the server is not available, an error message, *Could’t connect to the server,* is displayed. Durch die erweiterte Erkennung müssen Benutzer das Formular nicht stets von Neuem ausfüllen. Das Proxy-Servlet verarbeitet HEAD-Anforderungen und löst keine Ausnahme aus.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
