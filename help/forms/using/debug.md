@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -75,8 +75,8 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 ## Problem: Formular rendert ohne Stile {#problem-form-renders-without-styles}
 
-1. Rufen Sie im Browser **„Developer Tools“ auf**. Stellen Sie sicher, dass profile.css verfügbar ist.
-1. Wenn die Datei &quot;profile.css&quot;nicht verfügbar ist, melden Sie sich bei CRX DE unter https://&lt;server>:&lt;port>/crx/de an.
+1. Rufen Sie im Browser **„Developer Tools“ auf**. Stellen Sie sicher, dass Profil.css verfügbar ist.
+1. Wenn die Datei &quot;Profil.css&quot;nicht verfügbar ist, melden Sie sich bei CRX DE unter https://&lt;server>:&lt;port>/crx/de an.
 1. Navigieren Sie in der Ordnerhierarchie auf der linken Seite zu /etc/clientlibs/fd/xfaforms/. Öffnen Sie die in den Ordnern aufgeführten css.txt-Dateien.
 
    * Profil
@@ -100,7 +100,7 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 ### Problem: Unerwarteter Fehler gefunden {#problem-unexpected-error-encountered}
 
-1. Fügen Sie in der Formular-URL den Abfrageparameter debugClientLibs hinzu und setzen Sie dessen Wert auf true (z. B.: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;beliebiger Pfad>&amp;template=&lt;Name der xdp-Datei>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Fügen Sie in der Formular-URL den Parameter &quot;Abfrage&quot;debugClientLibs hinzu und setzen Sie den Wert auf &quot;true&quot;(z. B.: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;beliebiger Pfad>&amp;template=&lt;Name der xdp-Datei>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Im Desktop-Browser, z. B. Chrome, rufen Sie „Developer Tools“ -> „Console“ auf
 1. Öffnen Sie die Protokolle, um den Fehlertyp zu identifizieren. Detaillierte Informationen zu Protokollen finden Sie unter [Protokolle für HTML5-Formulare](/help/forms/using/enable-logs.md).
 1. Wechseln Sie zu „Developer Tools“ -> „Console“. Verwenden Sie die Stapelablaufverfolgung, um den Code zu finden, der den Fehler verursacht hat. Debuggen Sie den Fehler, um das Problem zu lösen.
@@ -179,5 +179,3 @@ Schritttext
 1. Rufen Sie im Desktop-Browser „Developer Tools“ -> „Ressourcen“ auf.
 
    Überprüfen Sie auf der linken Seite unter „Frames“, ob das Bild zu sehen ist.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
