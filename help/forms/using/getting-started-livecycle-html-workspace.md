@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -25,7 +25,7 @@ Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
 ## Navigieren in AEM Forms Workspace {#navigating-html-workspace}
 
-Je nach dem Prozess und der Aufgabe, an der Sie arbeiten, werden verschiedene Elemente in der Benutzeroberfläche von AEM Forms Workspace angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
+In der Benutzeroberfläche von AEM Forms Workspace werden je nach Prozess und Aufgabe, an der Sie arbeiten, verschiedene Elemente angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
 
 Sie können mithilfe einer der folgenden Methoden durch die Hauptbenutzeroberfläche von AEM Forms Workspace navigieren:
 
@@ -78,5 +78,3 @@ Legen Sie die Benutzeroberflächenvoreinstellungen auf der Registerkarte „UI-E
 * **Über Aufgabenereignisse per E-Mail benachrichtigen:** Gibt an, ob Sie E-Mail-Benachrichtigungen für Aufgabenereignisse erhalten, einschließlich Aufgabenzuweisungen, Erinnerungen und Terminen in Ihrer persönlichen Aufgabenliste oder in Gruppenaufgabenlisten, denen Sie zugewiesen sind.
 * **Formulare in E-Mail anfügen:** Gibt an, ob eine Kopie des Formulars in E-Mail-Benachrichtigungen angefügt wird. Anlagen werden nur für PDF- und XDP-Formulare unterstützt.
 * **Entwurf regelmäßig speichern:** Gibt an, ob Ihre Formularentwürfe regelmäßig automatisch gespeichert werden. Um Ihre Entwürfe in regelmäßigen Abständen zu speichern, aktivieren Sie diese Option und legen Sie die Dauer der automatischen Speicherung von 1 bis 30 Minuten fest. Wenn die automatische Speicherung aktiviert ist und ein Benutzer an einem Entwurf arbeitet, wird der Entwurf regelmäßig nach einer bestimmten Anzahl von Minuten gespeichert. Der Entwurf wird nur automatisch gespeichert, wenn er seit der letzten Speicherung oder automatischen Speicher geändert wurde. Wenn der Entwurf gespeichert wurde, erscheint eine Warnmeldung auf dem Bildschirm.
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
