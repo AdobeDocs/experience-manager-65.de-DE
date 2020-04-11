@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,7 +43,7 @@ Sie können festlegen, welche Spalten in den Suchergebnissen angezeigt werden so
 
 Auf der Seite „Verfolgung“ können Sie einen Prozess auswählen und seine Details anzeigen. Sie können die Prozesse basierend auf verschiedenen Parametern suchen, um die Aufgabendetails anzuzeigen. Sie können auch die Registerkarte „Status“ für Prozesse anzeigen, bei denen mehrere Benutzer parallel Aufgaben erhalten und bei denen die Werkzeuge zur Überprüfung von Dokumenten aktiviert sind.
 
-**** Status: Der Status der Aufgaben in einem Prozess wird in der Spalte &quot;Ausgewählte Aktion&quot;angezeigt, wenn Sie auf eine Aufgabe klicken. Allerdings ist der Zustand des Prozesses nicht verfügbar.
+**Status:** Der Status der Aufgaben in einem Prozess wird in der Spalte &quot;Ausgewählte Aktion&quot;angezeigt, wenn Sie auf eine Aufgabe klicken. Allerdings ist der Zustand des Prozesses nicht verfügbar.
 
 1. Wählen Sie die Prozessinstanz von der Suchergebnisliste aus, um Details zu den Aufgaben anzuzeigen, die Teil der Prozessinstanz sind.
 1. Um weitere Informationen über eine Aufgabe anzuzeigen, führen Sie eine oder mehrere der folgenden Aktionen durch:
@@ -51,5 +51,3 @@ Auf der Seite „Verfolgung“ können Sie einen Prozess auswählen und seine De
    * Zum Anzeigen von Notizen und Anlagen zu einer Aufgabe klicken Sie auf die Registerkarte „Anlagen“.
    * Zum Anzeigen der Aufgabenzuweisungsdetails klicken Sie auf die Registerkarte „Aufgaben“.
    * Zum Anzeigen des zugeordneten Formulars klicken Sie auf die Formularschaltfläche.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
