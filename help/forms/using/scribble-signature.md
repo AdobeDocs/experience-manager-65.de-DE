@@ -11,7 +11,7 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -63,7 +63,7 @@ Nachdem ein Scribble-Signatur-Feld dem Formular hinzugefügt wurde und das Formu
 
 ![Geolocation](assets/geolocation.png)
 
-******** A. Pinsel **B. Radiergummi** C.**Geolocation** D. Geografische Informationen
+**A.** Pinsel **B.** Radiergummi **C.** Geolocation **D.** Geografische Informationen
 
 ### Geotagging {#geo-tagging}
 
@@ -101,5 +101,3 @@ Löschen der Unterschriften aus dem Formular
 
 * (Auf mobilen Geräten) Drücken Sie lang auf das Unterschriftsfeld und tippen Sie im Bestätigungsdialogfeld auf **Ja**.
 * (Desktop) Bewegen Sie die Maus über das Unterschriftsfeld, klicken Sie auf das Symbol **Abbrechen** und klicken Sie im Bestätigungsdialogfeld auf **Ja**.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
