@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -123,5 +123,3 @@ Der Bericht &quot;Workflow-Volumen&quot;zeigt die Anzahl der derzeit ausgeführt
    * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten in der Datenspeicherung
    * **Legendenfarbe**&#x200B;ändern: Auswählen und Ändern der Farbe der Berichtslegende
    * **In CSV** exportieren: Daten aus dem Bericht exportieren und in eine kommagetrennte Datei herunterladen
-
-[Support kontaktieren](https://www.adobe.com/de/account/sign-in.supportportal.html)
