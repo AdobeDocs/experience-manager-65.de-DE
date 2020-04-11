@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,7 +21,7 @@ Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives 
 
 Nachdem das adaptive Formular fertig ist, müssen Sie das adaptive Formular testen, bevor Sie es an die Endbenutzer übertragen. Sie können jedes Feld manuell testen (funktionelle Tests) oder das Testen des adaptiven Formulars automatisieren. Wenn Sie mehrere adaptive Formulare haben, wird das manuelle Testen aller Felder der adaptiven Formulare zu einer beängstigenden Aufgabe.
 
-AEM Forms bietet ein Testframework, Calvin, um das Testen Ihrer adaptiven Formulare zu automatisieren. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt JavaScript-APIs zum Erstellen von Tests bereit. Mit dem automatisierten Test können Sie das Erlebnis zum Vorausfüllen eines adaptiven Formulars testen, das Sendeerlebnis eines adaptiven Formulars, Ausdrucksregeln, Überprüfungen, verzögertes Laden und Benutzeroberflächeninteraktionen. Dieses Lernprogramm führt Sie durch die Schritte zum Erstellen und Ausführen automatisierter Tests für ein adaptives Formular. Am Ende dieser Schulung können Sie Folgendes:
+AEM Forms bietet ein Testframework, Calvin, um das Testen Ihrer adaptiven Formulare zu automatisieren. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt JavaScript-APIs zum Erstellen von Tests bereit. Mit dem automatisierten Test können Sie das Erlebnis zum Vorausfüllen eines adaptiven Formulars testen, die Sendeerfahrung eines adaptiven Formulars, die Regeln für den Ausdruck von Überprüfungen, verzögertes Laden und Benutzeroberflächeninteraktionen testen. Dieses Lernprogramm führt Sie durch die Schritte zum Erstellen und Ausführen automatisierter Tests für ein adaptives Formular. Am Ende dieser Schulung können Sie Folgendes:
 
 * [Testsuite für Ihr adaptives Formular erstellen](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Erstellen von Tests für Ihr adaptives Formular](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -33,7 +33,7 @@ Test Suites verfügen über eine Reihe von Testfällen. Sie können über mehrer
 
 1. Melden Sie sich bei der Autoreninstanz von AEM Forms als Administrator an. Öffnen Sie CRXDE Lite. Sie können auf AEM Logo > **Tools** > **Allgemein** > **CRXDE Lite** tippen oder die URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in einem Browser öffnen, um CRXDE Lite zu öffnen.
 
-1. Navigieren Sie zu /etc/clientlibs in CRXDE Lite. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **Erstellen** > **Knoten erstellen.** Geben Sie im Feld Name den Wert **WeRetailFormTestCases** ein. Wählen Sie den Typ **cq:ClientLibraryFolder** und klicken Sie auf **OK**. Es erstellt einen Knoten. Sie können jeden beliebigen Namen anstelle von WeRetailFormTestCases verwenden.
+1. Navigieren Sie zu /etc/clientlibs in CRXDE Lite. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **Erstellen** > **Knoten erstellen.** Geben Sie im Feld Name den Wert **WeRetailFormTestCases** ein. Wählen Sie den Typ **cq:ClientLibraryFolder** und klicken Sie auf **OK**. Es wird eine Node erstellt. Sie können jeden beliebigen Namen anstelle von WeRetailFormTestCases verwenden.
 1. Add the following properties to the WeRetailFormTestCases node and tap **Save ALL**.
 
 <table>
@@ -80,7 +80,7 @@ Stellen Sie sicher, dass jede Eigenschaft wie unten dargestellt einem separaten 
     init.js
    ```
 
-1. Erstellen Sie eine Datei, init.js, im `WeRetailFormTestCases`Knoten. Fügen Sie der Datei den folgenden Code hinzu und tippen Sie auf Alle **[!UICONTROL speichern]**.
+1. Erstellen Sie eine Datei, init.js, im `WeRetailFormTestCases`Knoten. Hinzufügen Sie den folgenden Code in die Datei und tippen Sie auf Alle **[!UICONTROL speichern]**.
 
    ```
    (function(window, hobs) {
@@ -163,7 +163,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
  </tbody>
 </table>
 
-1. Erstellen Sie die Datei &quot;js.txt&quot;im Knoten **[!UICONTROL WeRetailFormTests]** . Fügen Sie der Datei Folgendes hinzu:
+1. Erstellen Sie die Datei &quot;js.txt&quot;im Knoten **[!UICONTROL WeRetailFormTests]** . Hinzufügen Sie Folgendes zur Datei:
 
    ```shell
    #base=.
@@ -172,7 +172,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
 
    Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-1. Erstellen Sie eine Datei `prefillTest.js`im Knoten **[!UICONTROL WeRetailFormTests]** . Fügen Sie der Datei den folgenden Code hinzu. Der Code erstellt einen Testfall. Der TestCase füllt alle Felder eines Formulars im Voraus aus und überprüft einige Felder, um sicherzustellen, dass korrekte Werte eingegeben werden.
+1. Erstellen Sie eine Datei `prefillTest.js`im Knoten **[!UICONTROL WeRetailFormTests]** . Hinzufügen Sie den unten stehenden Code in die Datei ein. Der Code erstellt einen Testfall. Der TestCase füllt alle Felder eines Formulars im Voraus aus und überprüft einige Felder, um sicherzustellen, dass korrekte Werte eingegeben werden.
 
    ```
    (function (window, hobs) {
@@ -206,26 +206,26 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
 
    Der Testfall wird erstellt und kann ausgeführt werden. Sie können Testfälle erstellen, um verschiedene Aspekte eines adaptiven Formulars zu validieren, z. B. die Ausführung des Berechnungsskripts, die Überprüfung von Mustern und die Überprüfung der Sendeerfahrung eines adaptiven Formulars. Weitere Informationen zu verschiedenen Aspekten des Testens adaptiver Formulare finden Sie unter Automatisches Testen von adaptiven Formularen.
 
-## Schritt 3: Führen Sie alle Tests in einer Suite oder einzelnen Testfällen aus {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
+## Schritt 3: Führen Sie alle Tests in einer Suite oder in einzelnen Testfällen aus {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
 
 Eine Testsuite kann mehrere Testfälle aufweisen. Sie können alle Testfälle in einer Testsuite auf einmal oder einzeln ausführen. Wenn Sie einen Test durchführen, werden die Ergebnisse durch die Symbole angezeigt:
 
-* Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: ![](https://helpx.adobe.com/content/dam/help/icons/Checkmark.png)
-* Das X-Symbol steht für einen gescheiterten Test: ![](https://helpx.adobe.com/content/dam/help/icons/Cross.png)
+* Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: ![](assets/save_icon.svg)
+* Das X-Symbol steht für einen gescheiterten Test: ![](assets/close-icon.svg)
 
 1. Navigieren Sie zu AEM-Symbol > **[!UICONTROL Werkzeuge]**> **[!UICONTROL Vorgänge]**> **[!UICONTROL Tests]**
 1. So führen Sie alle Tests der Test Suite aus:
 
-   1. Tippen Sie im Fenster Tests auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um eine Liste der Tests anzuzeigen.
+   1. Tippen Sie im Fenster Tests auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
    1. Tippen Sie auf die Schaltfläche Tests **[!UICONTROL ausführen]** . Der leere Bereich auf der rechten Seite des Bildschirms wird durch ein adaptives Formular ersetzt, während der Test ausgeführt wird.
    ![all-test](assets/run-all-test.png)
 
 1. So führen Sie einen einzelnen Test aus der Test Suite aus:
 
-   1. Tippen Sie im Fenster Tests auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um eine Liste der Tests anzuzeigen.
+   1. Tippen Sie im Fenster Tests auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
    1. Tippen Sie auf den Test **[!UICONTROL zum Vorausfüllen]** und dann auf die Schaltfläche zum **[!UICONTROL Ausführen von Tests]** . Der leere Bereich auf der rechten Seite des Bildschirms wird durch ein adaptives Formular ersetzt, während der Test ausgeführt wird.
 
-1. Tippen Sie auf den Testnamen &quot;Vorausfüllen&quot;, um die Ergebnisse des Test Case zu überprüfen. Dadurch wird der Bereich Ergebnis geöffnet. Tippen Sie im Fenster Ergebnis auf den Namen Ihres Testfalls, um alle Details des Tests anzuzeigen.
+1. Tippen Sie auf den Testnamen &quot;Vorausfüllen&quot;, um die Ergebnisse des Test Case zu überprüfen. Dadurch wird der Bereich Ergebnis geöffnet. Tippen Sie in der Ansicht des Ergebnisbedienfelds auf den Namen Ihres Testfalls.
 
    ![review-results](assets/review-results.png)
 
