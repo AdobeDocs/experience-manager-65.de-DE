@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -33,9 +33,9 @@ Um sich mit dem kompletten Ablauf zum Erstellen einer Formularanwendung vertraut
 
 Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
-**** Einen Geschäftsprozess starten: AEM Forms Workspace kategorisiert Ihre Prozesse, die von Ihrem Unternehmen entworfen und eingerichtet wurden. Sie können häufig verwendete Kategorien als Favoriten definieren, um schneller auf die zugreifen zu können. Beim Starten eines Prozesses füllen Sie normalerweise ein Formular aus, um einen von Forms gesteuerten Geschäftsprozess zu starten. Weitere Informationen finden Sie unter [Starten von Prozessen](/help/forms/using/starting-processes.md).
+**Beginn eines Geschäftsprozesses:** AEM Forms Workspace Kategorien Ihrer Prozesse, die von Ihrem Unternehmen entworfen und eingerichtet wurden. Sie können häufig verwendete Kategorien als Favoriten definieren, um schneller auf die zugreifen zu können. Beim Starten eines Prozesses füllen Sie normalerweise ein Formular aus, um einen von Forms gesteuerten Geschäftsprozess zu starten. Weitere Informationen finden Sie unter [Starten von Prozessen](/help/forms/using/starting-processes.md).
 
-**** Aufgaben anzeigen und ausführen: Wenn Sie Ihre Aufgabenlisten anzeigen, sehen Sie Aufgaben aus einem Geschäftsprozess, die Ihnen oder Gruppen, denen Sie angehören, zugewiesen sind oder die freigegebene Aufgaben anderer Benutzer sind. Sie können die Aufgaben wie benötigt öffnen, bearbeiten und abschließen. Um eine Aufgabe abzuschließen, müssen Sie normalerweise Informationen angeben, ein Formular genehmigen oder es ablehnen. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Aufgabenlisten](/help/forms/using/todo-lists.md).
+**Ansicht und Maßnahmen bei Aufgaben:** Bei der Ansicht Ihrer Aufgaben-Listen sehen Sie Aufgaben aus einem Geschäftsprozess, die Ihnen oder einer anderen Gruppe, der Sie angehören, zugewiesen sind oder die freigegebene Aufgaben anderer Benutzer sind. Sie können die Aufgaben wie benötigt öffnen, bearbeiten und abschließen. Um eine Aufgabe abzuschließen, müssen Sie normalerweise Informationen angeben, ein Formular genehmigen oder es ablehnen. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Aufgabenlisten](/help/forms/using/todo-lists.md).
 
 **Verfolgen von Aufgaben**: Um Ihre Aufgaben zu verfolgen, verwenden Sie die Registerkarte „Verfolgung“ von AEM Forms Workspace. Sie können nach aktiven oder abgeschlossenen Prozessen suchen, die von Ihnen gestartet wurden oder an denen Sie teilgenommen haben. Sie können die Aufgaben, Zuweisungen und Formulare anzeigen, die Teil des Prozesses waren. Zudem können Sie neue Prozesse mit Formulardaten aus einem zuvor gestarteten Prozess starten. Weitere Informationen finden Sie unter finden Sie unter [Verfolgen von Prozessen](/help/forms/using/tracking-processes.md).
 
@@ -43,7 +43,7 @@ Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
 **Unterstützung für Massengenehmigung von Aufgaben**:
 
-Sie können mehrere Aufgaben desselben Typs genehmigen. Wenn Sie eine Aufgabe zur Genehmigung auswählen, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgabennamen und denselben Routenoptionen aktiviert. See [Working with To-Do lists](/help/forms/using/todo-lists.md) for implementation details.
+Sie können mehrere Aufgaben desselben Typs genehmigen. Wenn Sie eine Aufgabe zur Genehmigung auswählen, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgaben und denselben Routenoptionen aktiviert. See [Working with To-Do lists](/help/forms/using/todo-lists.md) for implementation details.
 
 ## Migrieren von Flex Workspace zu AEM Forms Workspace {#migrating-from-flex-workspace-to-aem-forms-workspace}
 
@@ -137,5 +137,3 @@ Für neue Prozesse werden XDP-Formulare standardmäßig auf dem Desktop im PDF- 
 ## AEM Forms-Workspace-Applikation {#aem-forms-workspace-app}
 
 Um auf einem Mobilgerät an Ihren Geschäftsprozessen zu arbeiten, können Sie die für AEM Forms angebotene AEM Forms-Workspace-Applikation verwenden. Weitere Informationen finden Sie unter [Übersicht über AEM Forms Workspace-Applikation](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
