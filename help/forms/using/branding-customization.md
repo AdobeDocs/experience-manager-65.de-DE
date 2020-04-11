@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -90,7 +90,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 ### iOS {#for-ios-1}
 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
-1. Navigieren Sie in der Navigatoransicht von Capture zu **[!UICONTROL Capture > Capture > Unterstützende Dateien > InfoPlist.strings]**.
+1. Navigieren Sie in der Navigator-Ansicht von Capture zu **[!UICONTROL Capture > Capture > Unterstützende Dateien > InfoPlist.strings]**.
 
    Aktualisieren Sie den Wert des `CFBundleDisplayName` Attributs auf einen Namen, der für die App angezeigt werden soll.
 
@@ -152,7 +152,7 @@ Stellen Sie sicher, dass Sie die folgenden Bilder haben:
 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
 
-1. Navigate to the `www/wsmobile/images`folder.
+1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die Standarddatei `Landing_bg.jpeg` durch die benutzerdefinierte `Landing_bg.jpeg`Datei.
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
@@ -161,7 +161,7 @@ Stellen Sie sicher, dass Sie die folgenden Bilder haben:
 
 1. Öffnen Sie das Android-Projekt in Eclipse.
 
-1. Navigate to the `assets/www/wsmobile/images`folder.
+1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die Standarddatei `Landing_bg.jpeg` durch die benutzerdefinierte `Landing_bg.jpeg`Datei.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Android-Gerät.
@@ -170,7 +170,7 @@ Stellen Sie sicher, dass Sie die folgenden Bilder haben:
 
 1. Open the `MWSWindows.sln` project in Visual Studio.
 
-1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
+1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die Standarddatei `Landing_bg.jpeg` durch die benutzerdefinierte `Landing_bg.jpeg`Datei.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Windows-Gerät.
@@ -202,7 +202,7 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
 
-1. Navigate to the `www/wsmobile/images`folder.
+1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
 1. To change the logo, replace the default `aem_icon.png` file with the custom `aem_icon.png` file.
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
@@ -210,7 +210,7 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 
 1. Öffnen Sie das Android-Projekt in Eclipse.
 
-1. Navigate to the `assets/www/wsmobile/images`folder.
+1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`. 
 1. To change the logo, replace the default `aem_icon.png` file with the custom `aem_icon.png` file.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Android-Gerät.
 
@@ -218,8 +218,6 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 
 1. Open the `MWSWindows.sln` project in Visual Studio.
 
-1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
+1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
 1. To change the logo, replace the default `aem_icon.png` file with the custom `aem_icon.png` file.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Windows-Gerät.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
