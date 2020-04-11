@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -26,5 +26,3 @@ AEM Forms Workspace ist der ganz neue Arbeitsbereich. Im Folgenden werden einige
 * Die Option zur Verwaltung von Spaltenüberschriften für die Seite „Verfolgung“ ist in AEM Forms Workspace nicht verfügbar.
 * Das Festlegen eines Approval-Containers oder benutzerdefinierten Containers für eine Benutzeraufgabe wird in AEM Forms Workspace nicht berücksichtigt.
 * Eine Option zur Vorlagensuche ist auf der Registerkarte „Verfolgung“ verfügbar, jedoch nicht auf der Registerkarte „Aufgaben“.
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
