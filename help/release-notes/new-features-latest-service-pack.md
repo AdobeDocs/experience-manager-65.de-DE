@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 Mit Adobe Experience Manager (6.5) erhalten Sie Zugriff auf neue Funktionen und kontinuierliche Verbesserungen in den vierteljährlichen Service Pack-Versionen. Mithilfe dieses Ansatzes können Sie die Innovationen einfach übernehmen.
 
-Experience Manager Service Pack 4 (6.5.4.0) wird am 5. März 2020 veröffentlicht. Es handelt sich um eine wichtige Aktualisierung, die neue Funktionen, wichtige kundenspezifische Verbesserungen sowie Leistung, Stabilität und Sicherheitsverbesserungen umfasst, die seit der allgemeinen Verfügbarkeit der Version 6.5 im April 2019 veröffentlicht wurden. Experience Manager 6.5.4.0 kann über Adobe Experience Manager 6.5 installiert werden.
+Experience Manager Service Pack 4 (6.5.4.0) ist eine wichtige Aktualisierung. Es enthält alle neuen Funktionen, vom Kunden angeforderte Verbesserungen, Leistung, Stabilität und Sicherheit, die seit der Version AEM 6.5 im April 2019 veröffentlicht wurden. Sie können das Service Pack auf AEM 6.5 und höher installieren.
 
 In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wichtigsten Funktionen der vorherigen 6.5 Service Packs](#key-features-previous-service-packs)und einige der [wichtigsten Versionen seit Experience Manager 6.5.3.0](#key-features-sice-sp3)hervorgehoben.
 
@@ -100,11 +100,11 @@ Experience Manager Forms umfasst die folgenden Verbesserungen der Barrierefreihe
 
 ### Smart Imaging für dynamische Medien {#smart-imaging}
 
-Die intelligente Bildbearbeitung nutzt die einzigartigen Ansichtsmerkmale der einzelnen Benutzer, um automatisch die richtigen Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt. Die intelligente Bildbearbeitung arbeitet mit bestehenden Bildvorgaben und reduziert in der letzten Sekunde abhängig vom Browser oder der Geschwindigkeit der Netzverbindung die Größe der Bilddatei intelligent noch weiter. Siehe [Smart Imaging](../assets/imaging-faq.md).
+Die intelligente Bildbearbeitung nutzt die einzigartigen Ansichtsmerkmale der einzelnen Benutzer, um automatisch die richtigen Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt. Die intelligente Bildbearbeitung arbeitet mit bestehenden Bildvorgaben und reduziert im letzten Moment abhängig vom Browser oder der Geschwindigkeit der Netzverbindung die Größe der Bilddatei intelligent noch weiter. Siehe [Smart Imaging](../assets/imaging-faq.md).
 
 ### Smart-Zuschneiden in Video-Profilen für dynamische Medien (6.5.3.0) {#smart-crop-video}
 
-Intelligente Beschneidung für Video - eine optionale Funktion, die in Video-Profilen verfügbar ist - ist ein Werkzeug, das die Leistung künstlicher Intelligenz in Adobe Sensei nutzt, um den Fokuspunkt in adaptiven Videos oder progressiven Videos, die Sie hochgeladen haben, unabhängig von der Größe automatisch zu erkennen und zu beschneiden. Siehe [Grundlagen zum Verwenden von Smart-Zuschnitten in Video-Profilen](../assets/video-profiles.md).
+Smartes Zuschneiden für Video – eine optionale Funktion, die in Videoprofilen verfügbar ist – ist ein Tool, das die Leistung von künstlicher Intelligenz in Adobe Sensei nutzt, um den Fokuspunkt in adaptiven oder progressiven Videos, die Sie hochgeladen haben, unabhängig von der Größe automatisch zu erkennen und zu beschneiden. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Visuelle Suche nach AEM Assets (6.5.2.0) {#visual-search}
 
@@ -155,7 +155,7 @@ Zwischen dem 12. Dezember 2019 und dem 5. März 2020 hat Adobe die folgenden Fun
 
 * AEM Assets: Desktop-App 2.0.1.1
 
-   Siehe [Desktop-Zugriff auf die Assets](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/release-notes.html)abrufen.
+   Siehe [Desktop-Zugriff auf die Assets](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)abrufen.
 
 * AEM-Bildschirme: Feature Pack 202001
 
