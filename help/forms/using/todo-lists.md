@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -62,7 +62,7 @@ Weitere Werkzeuge, die bei den oben angegebenen Aufgaben verfügbar sind:
 
 Sie können Aufgaben aus Ihrer Aufgabenliste öffnen und sperren oder Aufgaben von einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anfordern und öffnen. Wenn Sie eine Aufgabe öffnen, wird diese im Hauptbereich angezeigt. Die anderen Aufgaben werden neben der Aufgabenliste angezeigt.
 
-Wenn eine Aufgabenzusammenfassungs-URL vorhanden ist, wird standardmäßig die Ansicht &quot;Aufgabenzusammenfassung&quot;anstelle des Formulars geöffnet, das einer Aufgabe zugeordnet ist. Auch wenn ein Benutzer in Assign Task die Option „Open the form in maximized mode“ aktiviert, wird das Formular nicht im maximierten Modus geöffnet.
+Wenn eine URL für die Aufgabe-Zusammenfassung vorhanden ist, wird standardmäßig die Ansicht &quot;Aufgabe-Zusammenfassung&quot;anstelle des Formulars geöffnet, das einer Aufgabe zugeordnet ist. Auch wenn ein Benutzer in Assign Task die Option „Open the form in maximized mode“ aktiviert, wird das Formular nicht im maximierten Modus geöffnet.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Wenn Sie eine Aufgabe aus Ihrer Aufgabenliste öffnen und Ihre Liste freigegeben
    >
    >Geöffnete Aufgaben können auch auf jeder Registerkarte gesperrt oder entsperrt werden.
 
-   ![lock_task](assets/lock_task.png)
+   ![lock_Aufgabe](assets/lock_task.png)
 
    Menü „Alle Optionen“ einer Aufgabe
 
@@ -94,10 +94,10 @@ Wenn Sie eine Aufgabe aus Ihrer Aufgabenliste öffnen und Ihre Liste freigegeben
 
 Wenn Sie eine Aufgabe von einer Gruppenliste oder freigegebenen Liste anfordern, wird die Aufgabe aus der Gruppenliste bzw. freigegebenen Liste in Ihre persönliche Aufgabenliste verschoben. Die Aufgabe wird für andere Benutzer mit Zugriff auf die Liste für die Bearbeitung gesperrt.
 
-1. Wählen Sie auf der Seite &quot;Aufgaben&quot;im linken Bereich eine Gruppenaufgabenliste oder eine freigegebene Aufgabenliste aus. Alle Aufgaben werden im mittleren Bereich angezeigt.
+1. Wählen Sie auf der Seite &quot;Aufgaben&quot;im linken Bereich eine Gruppenaufgabe oder freigegebene Aufgaben-Liste aus. Alle Aufgaben werden im mittleren Bereich angezeigt.
 1. Führen Sie einen der folgenden Schritte durch:
 
-   * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern, ohne sie zu öffnen, klicken Sie auf **Anfordern**, indem Sie den Zeiger über der Aufgabe bewegen. Wenn die Aufgabe geöffnet ist, steht die Schaltfläche &quot;Anfordern&quot;in der Aktionsleiste unter dem Aufgabenbereich zur Verfügung. Beim Anfordern wird eine Aufgabe aus der Gruppenaufgabenliste bzw. freigegebenen Aufgabenliste in Ihre Liste verschoben.
+   * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern, ohne sie zu öffnen, klicken Sie auf **Anfordern**, indem Sie den Zeiger über der Aufgabe bewegen. Wenn die Aufgabe geöffnet ist, steht die Schaltfläche &quot;Anfordern&quot;auch in der Aktionsleiste unter dem Bereich &quot;Aufgabe&quot;zur Verfügung. Beim Anfordern wird eine Aufgabe aus der Gruppenaufgabenliste bzw. freigegebenen Aufgabenliste in Ihre Liste verschoben.
    * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern und zu öffnen, klicken Sie auf **Anfordern und öffnen**.
 
 ## Mit Aufgaben arbeiten {#working-with-tasks}
@@ -246,16 +246,16 @@ Sie können mehrere Aufgaben aus Ihrer Aufgabenliste auf einmal senden. Es könn
 
 >[!NOTE]
 >
->Diese Option ist verfügbar, wenn beim Entwerfen eines Prozesses das Feld isMustOpenToComplete im Assign Task-Schritt in Workbench nicht ausgewählt ist.
+>Diese Option ist verfügbar, wenn beim Entwerfen eines Prozesses das Feld isMustOpenToComplete nicht im Schritt Aufgabe zuweisen in Workbench ausgewählt ist.
 
 1. Wählen Sie auf der Aufgabenseite im linken Fensterbereich Ihre persönliche Aufgabenliste aus. Alle Ihre Aufgaben werden im mittleren Bereich angezeigt.
 1. Wählen Sie die Option **Massenmodus aktivieren**. Kontrollkästchen erscheinen vor den Aufgaben in der Liste.
 
    >[!NOTE]
    >
-   >Diese Option steht nicht für Aufgaben zur Verfügung, für die beim Entwerfen eines Prozesses im Assign Task-Schritt in Workbench das Feld isMustOpenToComplete ausgewählt wurde. Kontrollkästchen solcher Aufgaben in der Aufgabenliste sind immer deaktiviert.
+   >Diese Option steht nicht für Aufgaben zur Verfügung, für die beim Entwerfen eines Prozesses im Schritt Aufgabe zuweisen in Workbench das Feld isMustOpenToComplete ausgewählt wurde. Kontrollkästchen solcher Aufgaben in der Aufgabenliste sind immer deaktiviert.
 
-1. Wählen Sie die Aufgaben aus, die Sie gleichzeitig genehmigen möchten. Es können mehrere Aufgaben desselben Prozesses mit denselben Aufgabennamen und denselben Routenoptionen ausgewählt werden. Wenn Sie eine Aufgabe zur Genehmigung auswählen, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgabennamen und denselben Routenoptionen aktiviert. Die anderen Aufgaben werden deaktiviert.
+1. Wählen Sie die Aufgaben aus, die Sie gleichzeitig genehmigen möchten. Es können mehrere Aufgaben desselben Prozesses mit denselben Aufgabennamen und denselben Routenoptionen ausgewählt werden. Wenn Sie eine Aufgabe zur Genehmigung auswählen, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgaben und denselben Routenoptionen aktiviert. Die anderen Aufgaben werden deaktiviert.
 
    ![1_bulkapproval](assets/1_bulkapproval.png)
 
@@ -267,7 +267,7 @@ Sie können mehrere Aufgaben aus Ihrer Aufgabenliste auf einmal senden. Es könn
 
 Sie können Aufgaben per E-Mail empfangen und abschließen. Durch das Teilnehmen an Aufgaben per E-Mail erübrigt sich das routinemäßige Prüfen Ihrer Aufgabenliste auf neue Aufgaben bzw. das Prüfen des Status einer Aufgabe auf der Seite „Verfolgung“.
 
-Legen Sie zunächst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Benachrichtigungen zu erhalten. AEM Forms Workspace kann E-Mail-Benachrichtigungen für Aufgaben in Ihrer Aufgabenliste oder einer beliebigen Gruppenaufgabenliste, der Sie angehören, senden. Der Administrator legt fest, wann und an wen E-Mail-Benachrichtigungen gesendet werden.
+Legen Sie zunächst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Benachrichtigungen zu erhalten. AEM Forms Workspace kann E-Mail-Benachrichtigungen für Aufgaben in Ihrer Aufgabenliste oder einer beliebigen Gruppenaufgabenzuordnung, der Sie angehören, senden. Der Administrator legt fest, wann und an wen E-Mail-Benachrichtigungen gesendet werden.
 
 Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AEM Forms Workspace geöffnet wird, eine Anlage mit dem Formular, das für die Aufgabe verwendet wird, oder Aktionen zum Abschließen der Aufgabe per E-Mail. Wenn die E-Mail-Nachricht ein Formular mit integrierten Schaltflächen zum Abschließen der Aufgabe enthält, können Sie das Formular öffnen und die Aufgabe abschließen. Wenn die E-Mail-Nachricht Aktionen zum Abschließen der Aufgabe enthält, können Sie die Aufgabe abschließen, indem Sie auf die Aktionen in der E-Mail klicken oder die E-Mail beantworten und die entsprechende Aktion als erste Zeile des E-Mail-Textes eingeben.
 
@@ -277,7 +277,7 @@ Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgab
 
 >[!NOTE]
 >
->Wenn der Benutzer nicht in AEM Forms Workspace im Browser angemeldet ist und einen Link zu einer Aufgabe öffnet, kann der direkte Link &quot;Aufgaben&quot;nicht geöffnet werden und es wird eine Ausnahme angezeigt. Melden Sie sich bei AEM Forms Workspace an, bevor Sie auf Links in den E-Mails klicken.
+>Wenn der Benutzer nicht in AEM Forms Workspace im Browser angemeldet ist und einen Link zu einer Aufgabendatei öffnet, kann der Link für die direkte Ausführung nicht geöffnet werden und es wird eine Ausnahme angezeigt. Melden Sie sich bei AEM Forms Workspace an, bevor Sie auf Links in den E-Mails klicken.
 
 >[!NOTE]
 >
@@ -311,7 +311,7 @@ Einer Aufgabenliste können mehrere Mitglieder zugewiesen sein. Aufgabenlisten w
 
 Angenommen, alle Mitglieder Ihres Teams bearbeiten Kreditantragsformulare. Alle diese Aufgaben werden an eine Aufgabenliste gesendet, auf die alle Mitglieder Ihrer Gruppe zugreifen können. Jedes Mitglied Ihrer Gruppe kann auf die Aufgaben in dieser Aufgabenliste zugreifen.
 
-Eine freigegebene Aufgabenliste wird angezeigt, wenn ein anderer Benutzer seine Aufgabenliste für Sie freigibt oder eine Aufgabe explizit für Sie freigibt. Sie können die Aufgaben in der Aufgabenliste dieses Benutzers anzeigen und sie in seinem Auftrag erledigen. Wenn Sie beispielsweise Urlaub nehmen, können Sie Ihre Aufgabenliste für einen Kollegen freigeben, der Ihre Aufgaben erledigt, solange Sie abwesend sind.
+Eine freigegebene Aufgaben-Liste wird angezeigt, wenn ein anderer Benutzer seine Aufgaben-Liste mit Ihnen teilt oder eine Aufgabe explizit für Sie freigegeben hat. Sie können die Aufgaben in der Aufgabenliste dieses Benutzers anzeigen und sie in seinem Auftrag erledigen. Wenn Sie beispielsweise Urlaub nehmen, können Sie Ihre Aufgabenliste für einen Kollegen freigeben, der Ihre Aufgaben erledigt, solange Sie abwesend sind.
 
 >[!NOTE]
 >
@@ -390,5 +390,3 @@ Sie können eine Person festlegen, an die Ihre Aufgaben standardmäßig gesendet
    >Der Prozessentwickler kann festlegen, dass Aufgaben aus bestimmten Prozessen immer privat sind und nicht an andere Benutzer weitergeleitet werden. Diese Einstellung setzt Ihre Einstellungen außer Kraft.
 
 1. Wenn Sie die gewünschten Voreinstellungen festgelegt haben, klicken Sie auf **Speichern**. Wenn die Einstellungen angeben, dass Sie zurzeit abwesend sind, treten die Änderungen sofort in Kraft. Anderenfalls treten sie am angegebenen Anfangsdatum zur festgelegten Uhrzeit in Kraft. Selbst wenn Sie sich während Ihrer Abwesenheit am System anmelden, gelten Sie erst wieder als anwesend, wenn Sie die Einstellungen ändern.
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
