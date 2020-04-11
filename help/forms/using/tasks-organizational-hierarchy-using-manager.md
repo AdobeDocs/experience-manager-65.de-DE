@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -20,13 +20,13 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 
 In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Benutzern in ihren Hierarchien – direkt oder indirekt unterstellten Mitarbeitern – zugewiesen sind, und dafür verschiedene Aktionen ausführen. Die Aufgaben sind in AEM Forms Workspace auf der Registerkarte „Aufgaben“ verfügbar. Die folgenden Aktionen werden für die Aufgaben direkt unterstellter Mitarbeiter unterstützt:
 
-**Leitet** eine Aufgabe vom direkten Bericht an einen beliebigen Benutzer weiter.
+**Weiterleiten** einer Aufgabe vom direkten Bericht an einen beliebigen Benutzer
 
-**Fordert** eine Aufgabe eines direkt unterstellten Mitarbeiters an.
+**Anforderung** einer Aufgabe eines direkt unterstellten Mitarbeiters
 
-**Anfordern und Öffnen** Fordert eine Aufgabe eines direkt unterstellten Mitarbeiters an und öffnet sie automatisch in der Aufgabenliste des Managers.
+**Anfordern und Öffnen** Fordern Sie eine Aufgabe eines direkt unterstellten Mitarbeiters an und öffnen Sie ihn automatisch in der Aufgaben-Liste des Managers.
 
-**Ablehnen** einer Aufgabe, die von einem anderen Benutzer an einen direkten Bericht weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
+**Ablehnen** einer Aufgabe, die von einem anderen Benutzer an einen direkt unterstellten Mitarbeiter weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
 
 AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der Benutzer die Zugriffskontrolle (ACL) hat. Durch diese Überprüfung wird sichergestellt, dass ein Benutzer nur die Aufgaben abrufen kann, für die er Zugriffsberechtigungen hat. Eine Organisation kann die Hierarchie mit Webdiensten von Drittanbietern definieren und die Definition von Managern und direkt unterstellten Mitarbeitern an ihren Bedarf anpassen.
 
@@ -115,8 +115,6 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
 
 Der folgende Bildschirm veranschaulicht den Zugriff auf die Aufgaben direkt unterstellter Mitarbeiter und die verfügbaren Aktionen.
 
-![cu_manager_view](assets/cu_manager_view.png)
+![cu_manager_Ansicht](assets/cu_manager_view.png)
 
 Zugreifen auf Aufgaben direkt unterstellter Mitarbeiter und Ausführen von Aktionen für die Aufgaben
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
