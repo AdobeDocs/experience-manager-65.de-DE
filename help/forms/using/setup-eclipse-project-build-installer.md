@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -48,7 +48,7 @@ Legen Sie die folgenden Umgebungsvariablen fest, bevor Sie den Erstellungsprozes
 
 ## Standardmäßige AEM Forms-App erstellen {#set-up-the-xcode-project}
 
-Nachdem Sie die Datei &quot;adobe-lc-mobileworkspace-src-&lt;Version>.zip&quot;im lokalen Dateisystem gespeichert und die Umgebungsvariablen festgelegt haben, erstellen Sie die AEM Forms-Android-Standardanwendung mit einer der folgenden Optionen:
+Nachdem Sie die Datei &quot;adobe-lc-mobileworkspace-src-&lt;version>.zip&quot;im lokalen Dateisystem gespeichert und die Variablen für die Umgebung festgelegt haben, erstellen Sie die AEM Forms-Android-Standardanwendung mit einer der folgenden Optionen:
 
 * [Erstellen Sie die AEM Forms-App mit Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-1347434739)
 * [Generieren Sie die .apk-Datei mit Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-0)
@@ -66,7 +66,7 @@ Erstellen Sie die AEM Forms-App mit Android Studio über folgende Schritte:
    ![android_folder_studio](assets/android_folder_studio.png)
 
 1. Select **android** from the left pane and click **Run** > **Run &#39;android&#39;**.
-1. Wählen Sie im Dialogfeld &quot;Bereitstellungsziel auswählen&quot;im Abschnitt &quot;Connected Devices&quot;das Android-Gerät aus und klicken Sie auf OK.
+1. Wählen Sie im Dialogfeld &quot;Zielgruppe für Bereitstellung auswählen&quot;im Abschnitt &quot;Angeschlossene Geräte&quot;das Android-Gerät aus und klicken Sie auf &quot;OK&quot;.
 
    Nachdem Sie die Entwicklungsumgebung erfolgreich erstellt haben, können Sie jetzt Anpassungen für die App vornehmen. Verwenden Sie die folgenden Artikel, um die App anzupassen:
 
@@ -93,8 +93,6 @@ Führen Sie die folgenden Schritte aus, um die APK-Datei mit Android Studio zu g
 
 Once the .apk file has been generated, execute the following command to install the application on an Android device using the [Android Debug Bridge](https://developer.android.com/tools/help/adb.html).
 
-**** Windows-Nutzer: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
+**Windows-Nutzer:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**** MAC-Benutzer: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
+**MAC-Benutzer:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
