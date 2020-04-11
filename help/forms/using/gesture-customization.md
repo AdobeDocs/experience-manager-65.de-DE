@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,7 +21,7 @@ Sie können die Gesten der AEM Forms-App anpassen, um eine unterschiedliche Meth
 
 ## So passen Sie Gesten in der AEM Forms-App an {#to-customize-gestures-in-aem-forms-app}
 
-In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ein neuer Startpunkt geöffnet, während beim Wischen nach rechts nichts passiert. Im folgenden Beispiel werden Schritte zum Öffnen einer neuen Aufgabe oder eines neuen Startpunkts beim Durchführen der Rechtswischgesten in der AEM Forms-App beschrieben.
+In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ein neuer Startpunkt geöffnet, während beim Wischen nach rechts nichts passiert. Im folgenden Beispiel wird beschrieben, wie Sie eine neue Aufgabe oder einen neuen Startpunkt öffnen, wenn Sie die Gesten zum Wischen nach rechts in der AEM Forms-App ausführen.
 
 1. Öffnen Sie Ihr Projekt.
 
@@ -40,7 +40,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
 1. Suchen Sie in der Datei `task.js` nach der Ereigniseigenschaft der Ansicht.
 
-   Die Ereigniseigenschaft ist eine Zuordnung mit jedem Eintrag im Format:
+   Die Eigenschaft &quot;Ereignisses&quot;ist eine Zuordnung mit jedem Eintrag im Format:
 
    `"EventName Selector": "Function"`
 
@@ -52,7 +52,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
       &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .task-content&quot;: &quot;onTaskClick&quot;,
+      &quot;tap .Aufgabe-content&quot;: &quot;onTaskClick&quot;,
 
       &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
    und ersetzen Sie diese durch
@@ -61,7 +61,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
       &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .task-content&quot;: &quot;onTaskClick&quot;,
+      &quot;swipe .Aufgabe-content&quot;: &quot;onTaskClick&quot;,
 
       &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
@@ -70,5 +70,3 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine Aufgabe mit einem Wischen nach links und rechts öffnen.
 
 Auf ähnliche Weise können Sie Änderungen in anderen Ansichten für verschiedene Kombinationen von Gesten, HTML-Elementen und Funktionen vornehmen.
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
