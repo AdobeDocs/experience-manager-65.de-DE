@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -127,7 +127,7 @@ Die wesentlichen Schritte für die CSS-Anpassung sind:
 * Fügen Sie der CSS-Datei Stilelemente hinzu. Weiteren Informationen finden Sie im entsprechenden Artikel zum Thema CSS-Stile.
 * Update its references in `html.jsp`.
 
-For the exact steps to do these customizations, see [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md). Die mit AEM Forms Workspace ausgelieferte CSS-Datei befindet sich unter /libs/ws/css/. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
+For the exact steps to do these customizations, see [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md). Die im Lieferumfang von AEM Forms Workspace enthaltene CSS-Datei befindet sich unter /libs/ws/css/. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
 
 #### Bild {#image}
 
@@ -236,7 +236,7 @@ Das CRX-Paket kann auf dem CRX™-Repository bereitgestellt werden. It is availa
 
 Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachstehend beschrieben werden.
 
-| **Profile** | **Beschreibung** | **Nutzung** |
+| **Profil** | **Beschreibung** | **Nutzung** |
 |---|---|---|
 | Ship-Profil | Dieses Profil erstellt ein CRX-Paket der kleinstmöglichen Größe mithilfe der Minimierung. Dieses Paket ist das effizienteste. Alle JavaScript™-Dateien werden zusammengefasst und zu einer JS-Datei minimiert. | Verwenden Sie dieses Profil, wenn keine weiteren Semantikänderungen in den JS-Dateien erforderlich sind. |
 | Debug-Profil | Dieses Profil erstellt ein mitteleffizientes CRX-Paket. Die Größe des Pakets ist etwas größer als die Größe eines Pakets, das mit dem Ship-Profil erstellt wird. Dieses Paket fasst die meisten JavaScript-Dateien in einer JS-Datei zusammen. | Verwenden Sie dieses Profil für das Debuggen. |
@@ -380,5 +380,3 @@ mvn clean -P Dev-Installation auf Client-Paket
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
