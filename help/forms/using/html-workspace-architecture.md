@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -34,5 +34,3 @@ Pakete, die für AEM Forms Workspace gesendet werden:
 
 * `adobe-lc-workspace-pkg-<version>.zip`: Dies ist ein CRX-Paket, das heißt, es kann mithilfe des Package Manager in CRX bereitgestellt werden.
 * `adobe-lc-workspace-<version>-src.zip`: Es handelt sich dabei um ein Archiv, das den vollständigen Code von AEM Forms Workspace und Skripten zum Erstellen der Bereitstellungspakete - Ship-, Debug- und Dev-Pakete - enthält.
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
