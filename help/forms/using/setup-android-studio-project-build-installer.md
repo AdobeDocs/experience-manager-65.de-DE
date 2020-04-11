@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -82,9 +82,9 @@ The following image displays the directory structure of the `android`folder in t
 1. Wählen Sie in Android™ Studio **[!UICONTROL Projekt importieren (Eclipse ADT, Gradle, etc.)]**.
 1. In the project explorer, select the root directory of the project that you want to build in the **Root Directory** text box:
 
-   **** Mac-Benutzer: [Benutzerstammordner]/Projekte/MobileWorkspace/src/android
+   **Mac-Benutzer:** [Benutzerstammordner]/Projekte/MobileWorkspace/src/android
 
-   **** Für Windows®-Nutzer: %HOMEPATH%\Projects\MobileWorkspace\src\android
+   **Für Windows®-Nutzer:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
 1. Nachdem das Projekt importiert wurde, erscheint ein Popup mit der Option zum Aktualisieren des Android™ Plugin Gradle. Klicken Sie wie für Ihre Zwecke benötigt auf die entsprechende Schaltfläche.
 
@@ -96,7 +96,7 @@ The following image displays the directory structure of the `android`folder in t
 
 1. Android™ Studio zeigt die verbundenen Geräte und verfügbaren Emulatoren an. Wählen Sie das Gerät, auf dem Sie die Anwendung ausführen wollen, und klicken Sie dann auf **OK**.
 
-   ![connectionDevice](assets/connecteddevice.png)
+   ![connectDevice](assets/connecteddevice.png)
 
 Nachdem Sie das Projekt erstellt haben, haben Sie folgende Möglichkeiten zum Installieren der App mit Android™ Debug Bridge oder Android™ Studio:
 
@@ -107,5 +107,3 @@ Sie können die Anwendung über [Android™ Debug Bridge](https://developer.andr
 **MAC-Benutzer**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Für Windows®-Benutzer**: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
-
-**[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)**
