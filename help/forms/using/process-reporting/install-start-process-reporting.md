@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -279,5 +279,3 @@ Weitere Informationen zum Datenveröffentlichungsdienst und zum Planen dieses Di
 * **[!UICONTROL Synchronisieren]**: Synchronisieren Sie das eingebettete Process Berichte-Repository mit der AEM Forms-Datenbank.
 * **[!UICONTROL Hilfe]**: Ansicht der Hilfedokumentation zu Process Berichte.
 * **[!UICONTROL Abmelden]**: Abmelden von Process Berichte
-
-[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
