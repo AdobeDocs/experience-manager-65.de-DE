@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
+source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
 
 ---
 
@@ -118,7 +118,7 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 
 * In der Benutzeroberfläche von Experience Manager Assets werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
-* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen der Stufe 2 der Kontrollkästchenstruktur in Adobe Stock aktiviert wurden (NPR-31919).
+* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen in Adobe Stock auf Stufe zwei markiert wurden (NPR-31919).
 
 * Die Datei- und Ordnersuche mit Omniture-Facetten bildet eine Ausnahme (NPR-31872).
 
@@ -177,6 +177,8 @@ Eine vollständige Liste der Funktionen, wichtigen Highlights und wichtigen Funk
 * Die URL-Erstellung der Startbibliothek basiert nur auf `path` und `library_name` Werten aus der Start-API und basiert nicht auf dem `library_path` Wert (NPR-31550).
 
 * Während der Verarbeitung von LiveFyre-bezogenen Elementen wird eine Fehlermeldung angezeigt (FYR-12420).
+
+* ReportSuitesServlet ist anfällig für SSRF (NPR-32156).
 
 ### WCM-Vorlageneditor {#wcm-template-editor-6540}
 
@@ -362,7 +364,7 @@ Wenn Sie die aktualisierte Version von UberJar verwenden, fügen Sie die folgend
 </dependency>
 ```
 
-## Deprecated features {#removed-deprecated-features}
+## Veraltete Funktionen {#removed-deprecated-features}
 
 In diesem Abschnitt werden Funktionen Liste, die mit AEM 6.5.4.0 als veraltet gekennzeichnet wurden. Funktionen, die in einer zukünftigen Version entfernt werden sollen, werden zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine alternative Option verwendet werden muss.
 
