@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
+source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
 
 ---
 
@@ -880,7 +880,7 @@ Es folgt ein Beispiel, wie Sie AEM konfigurieren können, um Anmerkungen in CJK 
 
 ## Erstellen, Verwalten, Vorschau und Wiederherstellen von Asset-Versionen {#asset-versioning}
 
-Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Sie hilft Ihnen bei der späteren Wiederherstellung eines vorherigen Asset-Zustands. Wenn Sie etwa eine Änderung an einem Asset rückgängig machen wollen, stellen Sie die unbearbeitete Version des Assets wieder her.
+Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Sie hilft Ihnen bei der späteren Wiederherstellung eines vorherigen Asset-Zustands. Wenn Sie etwa eine Änderung an einem Asset rückgängig machen wollen, stellen Sie die unbearbeitete Version des Assets wieder her. In Experience Manager können Sie eine Version erstellen, die aktuelle Version Ansicht, Unterschiede zwischen zwei Ansichten von Bildern nebeneinander darstellen und ein Asset in der vorherigen Version wiederherstellen.
 
 Sie können Versionen in Experience Manager in den folgenden Szenarien erstellen:
 
@@ -891,17 +891,11 @@ Sie können Versionen in Experience Manager in den folgenden Szenarien erstellen
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabeformate gemeinsam mit der Version gespeichert. Ausgabeformate sind gerenderte Alternativen für dieselben Bilder, z. B. ein PNG-Ausgabeformat einer hochgeladenen JPEG-Datei.
 
-In Experience Manager können Sie:
-
-* Erstellen einer Version eines Assets
-* Anzeigen der aktuellen Version eines Assets
-* Zurücksetzen des Assets auf eine frühere Version
-
 1. Navigieren Sie zum Speicherort des Assets, für das Sie eine Version erstellen möchten, und klicken Sie darauf, um die Vorschau zu öffnen. Öffnen Sie in der oberen linken Ecke der Seite das Menü und wählen Sie **[!UICONTROL Zeitschiene]**.
 
    ![Wählen Sie im linken Navigationsmenü die Option &quot;Zeitschiene&quot;](assets/timeline.png)
 
-*Abbildung: Öffnen Sie das Menü aus dem oberen linken Bereich der Seite und wählen Sie die Option &quot;[!UICONTROL Zeitschiene]&quot;aus.*
+   *Abbildung: Öffnen Sie das Menü aus dem oberen linken Bereich der Seite und wählen Sie die Option &quot;[!UICONTROL Zeitschiene]&quot;aus.*
 
 1. So erstellen Sie eine Version des Assets
 
@@ -910,6 +904,8 @@ In Experience Manager können Sie:
    * Klicken Sie auf **[!UICONTROL Erstellen]** , um eine Version zu erstellen.
 
       ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+
+      *Abbildung: Erstellen Sie eine Version eines Assets über die linke[!UICONTROL Zeitleiste].*
 
 1. So Ansicht einer Asset-Version:
 
@@ -926,6 +922,8 @@ In Experience Manager können Sie:
    * Click **[!UICONTROL Revert to this Version]**.
 
       ![select_version](assets/select_version.png)
+
+      *Abbildung: Wählen Sie eine Version aus und stellen Sie sie wieder her. Es wird die aktuelle Version, die dann den DAM-Benutzern zur Verfügung steht.*
 
 1. Gehen Sie wie folgt vor, um zwischen zwei Versionen eines Bildes zu vergleichen:
    * Klicken Sie auf die Version, die mit der aktuellen Version verglichen werden soll.
