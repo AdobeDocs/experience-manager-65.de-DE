@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
 
 ---
 
@@ -878,65 +878,61 @@ Es folgt ein Beispiel, wie Sie AEM konfigurieren können, um Anmerkungen in CJK 
 1. Konfigurieren Sie die PDF-Datei, die Anmerkungen enthält, indem Sie den Schriftartparameter auf `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` setzen. Diese Konfiguration ist standardmäßig verfügbar und funktioniert bei allen europäischen und CJK-Sprachen.
 1. Wenn sich die Sprache Ihrer Wahl von den Sprachen unterscheidet, die in Schritt 2 erwähnt werden, fügen Sie der Standardschriftart einen entsprechenden (kommagetrennten) Eintrag hinzu.
 
-## Asset-Versionen {#asset-versioning}
+## Erstellen, Verwalten, Vorschau und Wiederherstellen von Asset-Versionen {#asset-versioning}
 
 Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Sie hilft Ihnen bei der späteren Wiederherstellung eines vorherigen Asset-Zustands. Wenn Sie etwa eine Änderung an einem Asset rückgängig machen wollen, stellen Sie die unbearbeitete Version des Assets wieder her.
 
-In folgenden Szenarien werden Versionen erstellt:
+Sie können Versionen in Experience Manager in den folgenden Szenarien erstellen:
 
-* Sie ändern ein Bild in einer anderen Anwendung und laden es in AEM Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
-* Sie können die Metadaten eines Assets bearbeiten.
-* Sie verwenden das AEM-Desktop-Programm, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Es wird nicht bei jedem Speichern des Assets eine neue Version erstellt.
+* Laden Sie ein Asset mit demselben Dateinamen hoch, der sich am selben Speicherort befindet. Es kann sich um ein neues Asset oder um eine geänderte Version desselben Assets handeln.
+* Bearbeiten Sie ein Bild in Experience Manager und speichern Sie die Änderungen.
+* Bearbeiten Sie die Metadaten eines Assets.
+* Verwenden Sie die AEM-Desktop-App, um ein vorhandenes Asset auszuchecken, es zu bearbeiten und Ihre Änderungen [hochzuladen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabeformate gemeinsam mit der Version gespeichert. Ausgabeformate sind gerenderte Alternativen für dieselben Bilder, z. B. ein PNG-Ausgabeformat einer hochgeladenen JPEG-Datei.
 
-Die Versionierungsfunktion bietet folgende Möglichkeiten:
+In Experience Manager können Sie:
 
 * Erstellen einer Version eines Assets
 * Anzeigen der aktuellen Version eines Assets
 * Zurücksetzen des Assets auf eine frühere Version
 
-1. Navigieren Sie zum Speicherort des Assets, von dem Sie eine Version erstellen möchten, und klicken/tippen Sie darauf, um seine Asset-Seite zu öffnen.
+1. Navigieren Sie zum Speicherort des Assets, für das Sie eine Version erstellen möchten, und klicken Sie darauf, um die Vorschau zu öffnen. Öffnen Sie in der oberen linken Ecke der Seite das Menü und wählen Sie **[!UICONTROL Zeitschiene]**.
 
-1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Timeline]** aus dem Menü aus.
+   ![Wählen Sie im linken Navigationsmenü die Option &quot;Zeitschiene&quot;](assets/timeline.png)
 
-   ![Timeline](assets/timeline.png)
+*Abbildung: Öffnen Sie das Menü aus dem oberen linken Bereich der Seite und wählen Sie die Option &quot;[!UICONTROL Zeitschiene]&quot;aus.*
 
-1. Click the **[!UICONTROL Actions]** at the bottom to view the available actions you can perform on the asset.
+1. So erstellen Sie eine Version des Assets
 
-1. Tippen oder klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen.
+   * Click the **[!UICONTROL Actions]** at the bottom.
+   * Klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen. Fügen Sie optional eine Beschriftung und einen Kommentar hinzu.
+   * Klicken Sie auf **[!UICONTROL Erstellen]** , um eine Version zu erstellen.
 
-   ![chlimage_1-250](assets/chlimage_1-46.png)
+      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
 
-1. Fügen Sie eine Beschriftung und Kommentare hinzu und klicken Sie auf **[!UICONTROL Erstellen]**, um eine Version zu erstellen. Tippen oder klicken Sie alternativ auf **Abbrechen**, um den Vorgang abzubrechen.
+1. So Ansicht einer Asset-Version:
 
-   ![chlimage_1-251](assets/chlimage_1-47.png)
+   * Klicken Sie auf **[!UICONTROL Alle]** in der [!UICONTROL Zeitleiste]anzeigen.
+   * Klicken Sie auf **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden in der linken Seitenleiste aufgeführt.
 
-1. Um die neue Version anzuzeigen, öffnen Sie in der Timeline die Liste **[!UICONTROL Alle anzeigen]** auf der Detailseite für Assets oder der Assets-Benutzeroberfläche und wählen Sie **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden auf der Registerkarte „Timeline“ aufgeführt. Sie können die Liste filtern, sodass Versionen angezeigt werden, indem Sie auf den Dropdown-Pfeil klicken und **[!UICONTROL Versionen]** aus der Liste auswählen.
+      ![versions_option](assets/versions_option.png)
 
-   ![versions_option](assets/versions_option.png)
+   * Wählen Sie eine bestimmte Version des Assets aus und klicken Sie auf **[!UICONTROL Vorschau Version]**.
 
-1. Wählen Sie eine bestimmte Version für das Asset aus, um sie in der Vorschau anzuzeigen, oder aktivieren Sie sie, damit sie in der Assets-Benutzeroberfläche angezeigt wird.
+1. Gehen Sie wie folgt vor, um zu einer älteren Version des Assets zurückzukehren. Nach dem Zurücksetzen wird diese Version auf der [!DNL Assets] Benutzeroberfläche angezeigt und steht zur Verwendung zur Verfügung.
 
-   ![select_version](assets/select_version.png)
+   * Klicken Sie auf eine Version des Assets. Fügen Sie optional eine Beschriftung und einen Kommentar hinzu.
+   * Click **[!UICONTROL Revert to this Version]**.
 
-   >[!NOTE]
-   >
-   >You can also select the asset from the [List view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+      ![select_version](assets/select_version.png)
 
-1. Fügen Sie eine Beschriftung und Kommentare für die Version hinzu, um in der Assets-Benutzeroberfläche auf diese bestimmte Version zurückzusetzen.
+1. Gehen Sie wie folgt vor, um zwischen zwei Versionen eines Bildes zu vergleichen:
+   * Klicken Sie auf die Version, die mit der aktuellen Version verglichen werden soll.
+   * Ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu stellen und zu vergleichen.
+   ![Verwenden Sie den Regler, um die ausgewählten Versionen eines Assets mit der aktuellen Version zu vergleichen.](assets/version-slider.gif)
 
-   ![save_version](assets/save_version.png)
-
-1. Um eine Vorschau für die Version anzuzeigen, tippen oder klicken Sie auf **[!UICONTROL Versionsvorschau]**.
-1. Um diese Version in der Assets-Benutzeroberfläche anzuzeigen, wählen Sie **[!UICONTROL Auf diese Version zurücksetzen]**.
-1. Um zwei Versionen miteinander zu vergleichen, gehen Sie zur Asset-Seite des Assets und tippen oder klicken Sie auf die Version, die mit der aktuellen Version verglichen werden soll.
-
-   ![select_version_tocompare](assets/select_version_tocompare.png)
-
-1. Wählen Sie in der Timeline die Version aus, die Sie vergleichen wollen, und ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu setzen.
-
-   ![compare_versions](assets/compare_versions.png)
+   *Abbildung: Mit dem Schieberegler können Sie die ausgewählten Versionen eines Assets mühelos mit der aktuellen Version vergleichen.*
 
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
