@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Assets User Guide
+user-guide-title: AEM 6.5 Assets-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
+source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
 
 ---
 
@@ -17,13 +17,13 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + AEM Assets verwenden {#using}
    + [AEM Assets-Startseite](assets-home-page.md)
-   + [Suche nach Assets in AEM](search-assets.md)
+   + [Suchen nach Assets in AEM  ](search-assets.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
-   + [Adobe Stock-Assets in AEM Assets verwenden](aem-assets-adobe-stock.md)
+   + [Verwenden von Adobe Stock-Assets in AEM Assets](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Aktivitäts-Stream in der Timeline](activity-stream.md)
-   + [Workflows auf Assets anwenden](assets-workflow.md)
+   + [Prozesselemente](assets-workflow.md)
    + [Hinzufügen](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
    + [Verbundene Assets mit AEM-Sites](use-assets-across-connected-assets-instances.md)
@@ -83,7 +83,7 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Unterstützte Dateiformate](assets-formats.md)
    + [Suchfacetten](search-facets.md)
    + [Verwalten von Metadaten für Assets](metadata.md)
-   + [XMP-Writeback in Ausgabeformate](xmp-writeback.md)
+   + [XMP-Writeback in Ausgabeformaten](xmp-writeback.md)
    + [Asset-Linkfreigabe](link-sharing.md)
    + [Asset-Berichte](asset-reports.md)
    + [Optimierte Smart-Tags](enhanced-smart-tags.md)
@@ -97,11 +97,11 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Hinzufügen und Bearbeiten von Metadaten](meta-edit.md)
    + [Handbuch zur Asset-Migration](assets-migration-guide.md)
    + [XMP-Metadaten](xmp.md)
-   + [Überlegungen zum Netzwerk](assets-network-considerations.md)
+   + [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md)
    + [AEM Assets und AEM MediaLibrary](medialibrary.md)
    + [PDF-Rasterfunktion verwenden](aem-pdf-rasterizer.md)
    + [Upload-Beschränkungen konfigurieren](configuring-asset-upload-restrictions.md)
-   + [Best Practices zur Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Best Practices für die Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integration mit dem InDesign-Server](indesign.md)
    + [Metadatenprofile](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
@@ -135,15 +135,15 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments-delete.md)
    + [Inhaltsfragmente – Markdown](content-fragments-markdown.md)
    + [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md)
-+ Assets verwalten {#managing}
++ Manage Assets {#managing}
    + [Verwalten digitaler Assets](managing-assets-touch-ui.md)
    + [Verwalten von Sammlungen](managing-collections-touch-ui.md)
    + [Verwalten mehrerer Assets und Sammlungen](managing-multiple-assets.md)
    + [Tagging mit dem Smart Content Service konfigurieren](config-smart-tagging.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
-   + [Digitale Assets organisieren](organize-assets.md)
+   + [Organisieren von digitalen Assets](organize-assets.md)
    + [Verwalten von Video-Assets](managing-video-assets.md)
-   + [Erstellen von Übersetzungsprojekten](translation-projects.md) 
+   + [Erstellen von Übersetzungsprojekten](translation-projects.md)
    + [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
    + [Herunterladen von Assets aus AEM](download-assets-from-aem.md)
    + [Asynchrone Vorgänge](asynchronous-jobs.md)
@@ -152,10 +152,10 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Asset-Einblicke über DTM aktivieren](touch-ui-using-dtm-for-asset-insights.md)
    + [Asset-Einblicke konfigurieren](touch-ui-configuring-asset-insights.md)
    + [Assets ein- und auschecken](check-out-and-submit-assets.md)
-   + [Übersetzungsdienst auf Ordner anwenden](transition-cloud-services.md)
+   + [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
    + [Verwenden von Seiten-Tracker und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md)
-   + [Verwalten von zusammengesetzten Assets](managing-linked-subassets.md)
-   + [Verwandte Assets](related-assets.md)
+   + [Verwalten von ebenenübergreifenden Assets](managing-linked-subassets.md)
+   + [Zugehörige Assets](related-assets.md)
    + [Freigeben privater Ordner](private-folder.md)
    + [Schulungsrichtlinien für intelligente Inhaltsdienste](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
