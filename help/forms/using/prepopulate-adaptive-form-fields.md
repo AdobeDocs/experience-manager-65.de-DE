@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -27,10 +27,10 @@ Ein adaptives Formular kann eine Mischung aus gebundenen und ungebundenen Felder
 Sie können sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorbefüllen. Die Voreinstellungsdaten enthalten die Abschnitte „afBoundData“ und „afUnBoundData“, um sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorzubefüllen. Der Abschnitt `afBoundData` enthält die Daten zum Vorbefüllen für gebundene Felder und Bereiche. Diese Daten müssen mit dem verknüpften Formularmodellschema konform sein:
 
 * Bei adaptiven Formularen mit der [XFA-Formularvorlage](../../forms/using/prepopulate-adaptive-form-fields.md), muss die XML zum Vorbefüllen mit dem Datenschema der XFA-Vorlage konform sein.
-* Bei adaptiven Formularen mit dem [XML-Schema](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-header-3) muss die XML zum Vorbefüllen mit der Schemastruktur konform sein.
-* Bei adaptiven Formularen mit dem [JSON-Schema](../../forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms) muss die JSON zum Vorbefüllen mit dem Schema konform sein.
+* Bei adaptiven Formularen mit dem [XML-Schema](#xml-schema-af) muss die XML zum Vorbefüllen mit der Schemastruktur konform sein.
+* Bei adaptiven Formularen mit dem [JSON-Schema](#json-schema-based-adaptive-forms) muss die JSON zum Vorbefüllen mit dem Schema konform sein.
 * Bei adaptiven Formularen mit dem FDM-Schema muss das JSON zum Vorbefüllen mit dem FDM-Schema konform sein.
-* Bei adaptiven Formularen [ohne Formularmodell](../../forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p) gibt es keine gebundenen Daten. Jedes Feld ist ein ungebundenes Feld und wird anhand der ungebundenen XML vorausgefüllt.
+* Bei adaptiven Formularen [ohne Formularmodell](#adaptive-form-with-no-form-model) gibt es keine gebundenen Daten. Jedes Feld ist ein ungebundenes Feld und wird anhand der ungebundenen XML vorausgefüllt.
 
 ### XML-Beispielstruktur zum Vorbefüllen {#sample-prefill-xml-structure}
 
@@ -84,7 +84,7 @@ Die Struktur der XML zum Vorausfüllen und der gesendeten XML für XFA-basierte 
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[Beispiel für Datei](assets/prefill-submit-data-contentpackage.zip)abrufen, die Daten zum Vorausfüllen und gesendete Daten enthält
+[Beispiel für Datei](assets/prefill-submit-data-contentpackage.zip)abrufen, das die Daten zum Vorausfüllen und die gesendeten Daten enthält
 
 ### XML-Schemabasierte adaptive Formulare  {#xml-schema-af}
 
@@ -144,7 +144,7 @@ For fields whose model is XML schema, the data is prefilled in the `afBoundData`
 Für adaptive Formulare, die auf dem JSON-Schema basieren, wird im Folgenden die Struktur von vorbefüllten JSON und gesendeten JSON beschrieben. Weitere Informationen finden Sie unter[ Erstellen von adaptiven Formularen mit dem JSON-Schema](../../forms/using/adaptive-form-json-schema-form-model.md).
 
 * **Prefill-JSON-Struktur**: Das Prefill-JSON muss mit dem verknüpften JSON-Schema konform sein. Optional kann es in das /afData/afBoundData-Objekt eingeschlossen werden, wenn Sie auch ungebundene Felder im Voraus ausfüllen möchten.
-* **Gesendete JSON-Struktur**: Wenn keine JSON zum Vorausfüllen verwendet wird, enthält die gesendete JSON Daten für gebundene und ungebundene Felder im afData-Wrapper-Tag. Wenn die JSON zum Vorausfüllen verwendet wird, hat die gesendete JSON dieselbe Struktur wie die JSON zum Vorausfüllen. Wenn die JSON-Datei zum Vorausfüllen mit dem afData-Stammobjekt beginnt, hat die Ausgabe-JSON dasselbe Format. Wenn die JSON zum Vorausfüllen keinen afData/afBoundData-Wrapper hat und stattdessen direkt vom Schemastroamtobjekt wie dem Benutzer beginnt, beginnt die gesendete JSON auch mit dem user-Objekt.
+* **Gesendete JSON-Struktur**: Wenn keine JSON zum Vorausfüllen verwendet wird, enthält die gesendete JSON Daten für gebundene und ungebundene Felder im afData-Wrapper-Tag. Wenn die JSON zum Vorausfüllen verwendet wird, hat die gesendete JSON dieselbe Struktur wie die JSON zum Vorausfüllen. Wenn der JSON-Beginn zum Vorausfüllen mit dem afData-Stammobjekt gefüllt wird, hat die Ausgabe-JSON dasselbe Format. Wenn die JSON zum Vorausfüllen nicht über den afData/afBoundData-Wrapper verfügt und stattdessen Beginn direkt vom Schema-Stammobjekt wie user, wird die gesendete JSON auch mit dem user-Objekt Beginn.
 
 ```
 {
