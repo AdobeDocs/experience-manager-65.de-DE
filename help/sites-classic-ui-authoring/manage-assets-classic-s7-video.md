@@ -10,14 +10,14 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
 
 # Video{#video}
 
-Assets bieten eine zentralisierte Verwaltung von Video-Assets, mit der Sie Videos direkt in Assets hochladen können, um sie automatisch für Dynamic Media Classic zu kodieren, und mit denen Sie direkt aus Assets zum Erstellen von Seiten auf Dynamic Media Classic-Videos zugreifen können.
+Assets bieten eine zentralisierte Verwaltung von Video-Assets, mit der Sie Videos direkt in Assets hochladen können, um sie automatisch für Dynamic Media Classic zu kodieren, und mit denen Sie direkt aus Assets zum Erstellen von Seiten auf Videos für dynamische Medien Classic zugreifen können.
 
 Durch die Integration von Videos aus Dynamic Media Classic wird die Reichweite optimierter Videos auf alle Bildschirme (automatische Geräte- und Bandbreitenerkennung) erweitert.
 
@@ -26,14 +26,14 @@ Durch die Integration von Videos aus Dynamic Media Classic wird die Reichweite o
 
 ## Info zu FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung der FFMPEG-basierten Integration mit Videoprofilen. Aus diesem Grund enthält der Standard-Update-Asset-Workflow von DAM die folgenden ffmpeg-basierten Workflow-Schritte:
+Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung der FFMPEG-basierten Integration mit Videoprofilen. Therefore, the out-of-the-box [!UICONTROL DAM Update Asset] workflow contains the following two ffmpeg-based workflow steps:
 
 * FFMPEG-Miniaturen
 * FFMPEG-Kodierung
 
-Beachten Sie, dass beim Aktivieren und Konfigurieren der Dynamic Media Classic-Integration diese beiden Workflow-Schritte nicht automatisch aus dem vordefinierten DAM Update Asset-Erfassungsarbeitsablauf entfernt oder deaktiviert werden. Wenn Sie die FFMPEG-basierte Videokodierung in AEM bereits nutzen, ist es wahrscheinlich, dass FFMPEG in Ihren Erstellungsumgebungen bereits installiert ist. In diesem Fall wird ein neues Video, das mit Assets erfasst wird, zweimal kodiert: Einmal vom FFMPEG-Encoder und einmal von der Integration von Dynamic Media Classic.
+Be aware that enabling and configuring the Dynamic Media Classic integration does not automatically remove or deactivate these two workflow steps from the out-of-the-box [!UICONTROL DAM Update Asset] ingestion workflow. Wenn Sie die FFMPEG-basierte Videokodierung in AEM bereits nutzen, ist es wahrscheinlich, dass FFMPEG in Ihren Erstellungsumgebungen bereits installiert ist. In diesem Fall wird ein neues Video, das mit Assets erfasst wird, zweimal kodiert: Einmal vom FFMPEG-Encoder und einmal von der Integration von Dynamic Media Classic.
 
-Wenn Sie die FFMPEG-basierte Videokodierung in AEM konfiguriert und FFMPEG installiert haben, empfiehlt Adobe, die beiden FFMPEG-Workflows aus Ihren DAM-Update-Asset-Workflows zu entfernen.
+If you have the FFMPEG-based video encoding in AEM configured and FFMPEG installed, Adobe recommends that you remove the two FFMPEG workflows from your [!UICONTROL DAM Update Asset] workflows.
 
 ### Unterstützte Formate {#supported-formats}
 
@@ -63,7 +63,7 @@ Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, sol
 
 Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, sollten Sie Ihre Assets in Dynamic Media Classic hochladen. Der folgende Workflow wird empfohlen:
 
-1. Richten Sie in Dynamic Media Classic einen geplanten FTP-Upload- und -Kodierungsvorgang auf Dynamic Media Classic (systemautomatisiert)[](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html)ein.
+1. Richten Sie in Dynamic Media Classic einen geplanten FTP-Upload- und -Kodierungsvorgang auf Dynamic Media Classic (systemautomatisiert) [](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html)ein.
 1. In AEM, access video assets in WCM in the **[!UICONTROL Dynamic Media Classic]** tab of the Content Finder.
 1. Erstellen Sie mit der Videokomponente &quot;Dynamic Media Classic&quot;.
 
@@ -86,7 +86,7 @@ Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, s
    >
    >Adobe empfiehlt, entweder beide adaptive Videosets bei der Konfiguration der universellen Vorlagen oder die Option **[!UICONTROL Adaptive Videokodierung]** auszuwählen.
 
-1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den CQ DAM-Zielordner hochgeladen wurden, den Sie für diese Konfiguration der Dynamic Media Classic-Cloud eingerichtet haben. Sie können mehrere Dynamic Media Classic-Cloud-Konfigurationen mit unterschiedlichen Zielordnern einrichten, um bei Bedarf unterschiedliche Kodierungsprofile anzuwenden.
+1. Die ausgewählten Kodierungs-Profil werden automatisch auf alle Videos angewendet, die in den Ordner &quot;CQ DAM-Zielgruppe&quot;hochgeladen wurden, den Sie für diese Konfiguration der Dynamic Media Classic-Cloud eingerichtet haben. Sie können mehrere Dynamic Media Classic-Cloud-Konfigurationen mit unterschiedlichen Zielgruppen-Ordnern einrichten, um bei Bedarf unterschiedliche Kodierungs-Profil anzuwenden.
 
 ### Aktualisieren von Viewer- und Kodierungsvorlagen {#updating-viewer-and-encoding-presets}
 
@@ -98,7 +98,7 @@ If you need to update the viewer and encoding presets for video in AEM because t
 
 So laden Sie Ihr Mastervideo von Adobe DAM in Dynamic Media Classic hoch:
 
-1. Navigieren Sie zum CQ DAM-Zielordner, in dem Sie Ihre Cloud-Konfiguration mit dynamischen Media Classic-Kodierungsprofilen eingerichtet haben.
+1. Navigieren Sie zum Ordner &quot;CQ DAM-Zielgruppe&quot;, in dem Sie Ihre Cloud-Konfiguration mit Profilen für die Kodierung von Dynamic Media Classic eingerichtet haben.
 1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Mastervideo hochzuladen. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Dynamic Media Classic]** has a checkmark.
 
    >[!NOTE]
@@ -119,7 +119,7 @@ Die folgende Matrix verdeutlicht, wann Sie welche Komponente nutzen sollten:
 
 >[!NOTE]
 >
->Standardmäßig verwendet die Komponente &quot;Dynamic Media Classic&quot;das universelle Videoprofil. Sie können jedoch den HTML5-basierten Videoplayer für die Verwendung durch AEM abrufen. Kopieren Sie in Dynamic Media Classic den Einbettungscode des standardmäßigen HTML5-Videoplayers und fügen Sie ihn auf Ihre AEM-Seite ein.
+>Standardmäßig verwendet die Videokomponente &quot;Dynamic Media Classic&quot;das universelle Profil. Sie können jedoch den HTML5-basierten Videoplayer für die Verwendung durch AEM abrufen. Kopieren Sie in Dynamic Media Classic den Einbettungscode des standardmäßigen HTML5-Videoplayers und fügen Sie ihn auf Ihre AEM-Seite ein.
 
 
 ## AEM-Videokomponente {#aem-video-component}
@@ -142,14 +142,14 @@ In der folgenden Tabelle finden Sie einen Vergleich der unterstützen Funktionen
 
 #### Erstellen von Videoprofilen {#creating-video-profiles}
 
-Die verschiedenen Videokodierungen werden entsprechend den Kodierungsvorgaben für dynamische Medien Classic erstellt, die in der Cloud-Konfiguration für dynamische Medien Classic ausgewählt wurden. Damit die zugrunde liegende Videokomponente diese verwenden kann, muss für jede ausgewählte Kodierungsvorgabe für Dynamic Media Classic ein Videoprofil erstellt werden. Damit kann die Videokomponente die DAM-Ausgabeformate entsprechend auswählen.
+Die verschiedenen Videokodierungen werden entsprechend den Kodierungsvorgaben für dynamische Medien Classic erstellt, die in der Cloud-Konfiguration für dynamische Medien Classic ausgewählt wurden. Damit die zugrunde liegende Videokomponente diese verwenden kann, muss für jede ausgewählte Kodierungsvorgabe für Dynamic Media Classic ein Profil erstellt werden. Damit kann die Videokomponente die DAM-Ausgabeformate entsprechend auswählen.
 
 >[!NOTE]
 >
 >Neue Videoprofile und Änderungen daran müssen für eine Veröffentlichung aktiviert werden.
 
 1. Starten Sie AEM, gehen Sie zu **[!UICONTROL Tools]** und wählen Sie **[!UICONTROL Konfigurationskonsole]** aus. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Erstellen Sie ein neues Videoprofil für Dynamic Media Classic. **[!UICONTROL In der]** Neuen... wählen Sie &quot;Seite **[!UICONTROL erstellen]** &quot;und dann die Vorlage &quot;Dynamisches Medienklassisches Videoprofil&quot;. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Erstellen Sie ein neues Video-Profil für Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -177,13 +177,13 @@ Die Foundation-Videokomponente muss darüber informiert sein, welche Videoprofil
 >
 >Bei Änderungen am Design ist eine Aktivierung des Designs erforderlich, damit sie für die Veröffentlichung übernommen wird.
 
-1. Öffnen Sie den Designdialog der Foundation-Videokomponente und wechseln Sie auf die Registerkarte **[!UICONTROL Profile]**. Löschen Sie dann die vordefinierten Profile und fügen Sie die neuen Videoprofile für Dynamic Media Classic hinzu. Die Reihenfolge der Profilliste im Designdialogfeld definiert auch die Reihenfolge des Videoquellen-Elements beim Rendern.
+1. Öffnen Sie den Designdialog der Foundation-Videokomponente und wechseln Sie auf die Registerkarte **[!UICONTROL Profile]**. Löschen Sie dann die vordefinierten Profil und fügen Sie die neuen Video-Profil für Dynamic Media Classic hinzu. Die Reihenfolge der Profil-Liste im Designdialogfeld definiert auch die Reihenfolge des Videoquellen-Elements beim Rendern.
 1. Bei Browsern, die kein HTML5 unterstützen, ermöglicht die Videokomponente ein Ausweichen auf Flash. Öffnen Sie den Designdialog der Videokomponenten und wechseln Sie auf die Registerkarte **[!UICONTROL Flash]**. Konfigurieren Sie die Einstellungen des Flash-Players und ordnen Sie ein Ersatzprofil für den Flash-Player zu.
 
 #### Checkliste {#checklist}
 
 1. Erstellen Sie eine Cloud-Konfiguration für Dynamic Media Classic (Scene7). Vergewissern Sie sich, dass die Videokodierungsvorlagen festgelegt sind und das Importprogramm ausgeführt wird.
-1. Erstellen Sie für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorgabe ein Videoprofil für Dynamic Media Classic.
+1. Erstellen Sie für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorgabe ein Profil für &quot;Dynamic Media Classic&quot;.
 1. Die Videoprofile müssen aktiviert sein.
 1. Konfigurieren Sie das Design der Foundation-Videokomponente auf Ihrer Seite.
 1. Aktivieren Sie das Design, nachdem Sie mit Ihren Designänderungen fertig sind.
