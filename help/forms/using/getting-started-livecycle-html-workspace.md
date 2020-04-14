@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -61,11 +61,11 @@ Wenn Sie in AEM Forms Workspace mithilfe einer Tastatur navigieren, entspricht d
 
 Sie können die verschiedenen AEM Forms Workspace-Voreinstellungen in den folgenden Kategorien festlegen:
 
-**Abwesenheit:** Mit den verfügbaren Voreinstellungen steuern Sie, wie Aufgaben während Ihrer Abwesenheit anderen Personen zugewiesen werden. Siehe [Festlegen von Abwesenheitseinstellungen](/help/forms/using/todo-lists.md#main-pars-heading-22).
+**Abwesenheit:** Mit den verfügbaren Voreinstellungen steuern Sie, wie Aufgaben während Ihrer Abwesenheit anderen Personen zugewiesen werden. Siehe [Festlegen von Abwesenheitseinstellungen](todo-lists.md#setting-out-of-office-preferences).
 
-**Warteschlangen:** Legen Sie die Voreinstellungen zum Freigeben Ihrer Aufgabenliste für andere Benutzer oder zum Anfordern des Zugriffs auf die Liste eines anderen Benutzers fest. Siehe [Arbeiten mit Aufgaben aus Gruppen- und freigegebenen Warteschlangen](/help/forms/using/todo-lists.md#main-pars-heading-19).
+**Warteschlangen:** Legen Sie die Voreinstellungen zum Freigeben Ihrer Aufgabenliste für andere Benutzer oder zum Anfordern des Zugriffs auf die Liste eines anderen Benutzers fest. Siehe [Arbeiten mit Aufgaben aus Gruppen- und freigegebenen Warteschlangen](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Benutzeroberflächeneinstellungen:** Legen Sie Voreinstellungen für die Arbeit mit AEM Forms Workspace fest. Siehe [Festlegen von Benutzeroberflächeneinstellungen](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5).
+**Benutzeroberflächeneinstellungen:** Legen Sie Voreinstellungen für die Arbeit mit AEM Forms Workspace fest. Siehe [Festlegen von Benutzeroberflächeneinstellungen](#set-user-interface-preferences).
 
 ### Benutzeroberflächen-Voreinstellungen festlegen {#set-user-interface-preferences}
 
