@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -21,7 +21,7 @@ In PDF Generator können Sie die Anwendungseinstellungen für unterstützte Dat
 
 Auf der Seite „Dateitypeinstellungen“ können Sie die folgenden Aufgaben ausführen:
 
-* [Erstellen oder Bearbeiten einer Dateitypeinstellung](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-0)
+* [Erstellen oder Bearbeiten einer Dateitypeinstellung](#create-or-edit-file-type-settings)
 * Geben Sie an, welche Dateitypeinstellungen standardmäßig verwendet werden sollen (siehe [PDF Generator-Konfigurationsdateien importieren und exportieren](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html))
 * [Standardeinstellungen ändern](/help/forms/using/admin-help/configuring-file-type-settings2.md#change-the-default-settings)
 * [PDF/A-Unterstützung aktivieren](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
@@ -50,15 +50,15 @@ Sie erstellen oder bearbeiten eine Dateitypeinstellung, um anzugeben, wie die An
 
    [PDF Generator-Konfigurationsdateien importieren und exportieren](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
 
-   [Adobe PDF-Exporteinstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-2)
+   [Adobe PDF-Exporteinstellungen (nur Windows)](#adobe-pdf-export-settings-windows-only)
 
-   [„HTML in PDF“ -Einstellungen](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-3)
+   [„HTML in PDF“ -Einstellungen](#html-to-pdf-settings)
 
-   [„Flashvideos in PDF“-Einstellungen](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-9)
+   [„Flashvideos in PDF“-Einstellungen](#flash-videos-to-pdf-settings)
 
-   [„XPS in PDF“-Einstellungen](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-10)
+   [„XPS in PDF“-Einstellungen](#xps-to-pdf-settings)
 
-   [PDF-Optimierungseinstellungen](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-11)
+   [PDF-Optimierungseinstellungen](#pdf-optimizer-settings)
 
    [Microsoft Excel-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings2.md#microsoft-excel-settings-windows-only)
 
@@ -399,7 +399,7 @@ Wählen Sie eine der folgenden Flate-Komprimierungsoptionen aus dem Dropdownmen�
 
 ## Microsoft Excel-Einstellungen (nur Windows) {#microsoft-excel-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-0).
+Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](#create-or-edit-file-type-settings).
 
 **OpenOffice als Ersatzkonverter** versuchen: Wenn diese Option aktiviert ist und eine Konvertierung mit Microsoft Excel fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator die Konvertierung mithilfe von OpenOffice auszuführen. Wenn die Konvertierung mithilfe von OpenOffice fehlschlägt oder das angegebene Zeitlimit erreicht, wird ein Ausnahmefehler in die Protokolldatei aufgenommen.
 
@@ -463,7 +463,7 @@ Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden: I
 
 ## Microsoft Project-Einstellungen (nur Windows) {#microsoft-project-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft Project-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-0).
+Diese Optionen bestimmen, wie Microsoft Project-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](#create-or-edit-file-type-settings).
 
 1. **[!UICONTROL Dateinamenerweiterungen:]** Gibt die Dateinamenerweiterungen für Dateitypen an, die durch Kommas getrennt sind und für diese Anwendung akzeptiert werden. Der Standardwert lautet `mpp`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
@@ -474,7 +474,7 @@ Diese Optionen bestimmen, wie Microsoft Project-Dateien konvertiert werden. Info
 
 ## Microsoft Word-Einstellungen (nur Windows) {#microsoft-word-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-0).
+Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](#create-or-edit-file-type-settings).
 
 **[!UICONTROL OpenOffice als Ersatzkonverter versuchen]**: Wenn diese Option aktiviert ist und eine Konvertierung mit Microsoft Word fehlschlägt oder das angegebene Zeitlimit erreicht, versucht PDF Generator, die Konvertierung mithilfe von OpenOffice auszuführen. Wenn die Konvertierung mithilfe von OpenOffice fehlschlägt oder das angegebene Zeitlimit erreicht, wird ein Ausnahmefehler in die Protokolldatei aufgenommen.
 
@@ -534,7 +534,7 @@ Wenn der Name eines Microsoft Word-Stils ein Komma (,) oder Gleichheitszeichen (
 
 ## Microsoft Publisher-Einstellungen (nur Windows) {#microsoft-publisher-settings-windows-only}
 
-Diese Optionen bestimmen, wie Microsoft Publisher-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](/help/forms/using/admin-help/configuring-file-type-settings2.md#main-pars-heading-0).
+Diese Optionen bestimmen, wie Microsoft Publisher-Dateien konvertiert werden. Informationen zum Zugriff auf diese Optionen finden Sie unter [Dateitypeinstellungen erstellen und bearbeiten](#create-or-edit-file-type-settings).
 
 **[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `pub`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
