@@ -10,7 +10,7 @@ topic-tags: interactive-communications
 discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -31,13 +31,13 @@ Wenn Sie eine [neue interaktive Kommunikation](../../forms/using/create-interact
 
 ![Benutzeroberfläche der interaktiven Kommunikation](assets/form-editor.png)
 
-******A. Seitenleiste** B. Seitensymbolleiste **C.** Inhaltsbereich
+**A.** Seitenleiste **B.** Seitensymbolleiste **C.** Inhaltsbereich
 
 ## Randleiste {#sidebar}
 
 ![Randleiste](assets/sidebar-comps-2.png)
 
-**************A. Kanalbrowser** B. Inhaltsbrowser **C.** Eigenschaftenbrowser **D. Asset Browser** E. Komponenten-Browser **F. Datenquellen-Browser - Datenmodell** G. Datenquellen-Browser - Hauptinhalt
+**A.** Kanal Browser **B.** Inhaltsbrowser **C.** Eigenschaftenbrowser **D.** Asset Browser **E.** Komponenten-Browser **F.** Datenquellen-Browser - Datenmodell **G.** Data Sources-Browser - Hauptinhalt
 
 <!-- Click to enlarge
 
@@ -63,7 +63,7 @@ Select a component, then tap ![field-level](assets/field-level.png) > **Document
 | **Komponente** | **Druckkanal** | **Webkanal** | **Funktion** |
 |---|---|---|---|
 | Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
-| Dokumentfragment | ✓ | ✓ | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Texts, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder auf Formulardatenmodellen oder ohne Formulardatenmodell basieren. |
+| Dokumentfragment | ✓ | ✓ | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder auf Formulardatenmodellen oder ohne Formulardatenmodell basieren. |
 | Bild | ✓ | ✓ | Ermöglicht es Ihnen, ein Bild einzufügen. |
 | Fenster | - | ✓ | Die Bereichskomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bereichskomponente können Sie auch eine Gruppe von Komponenten für den Endbenutzer wiederholbar machen, z. B. mehrere Einträge zum Ausfüllen von Bildungsnachweisen. Es empfiehlt sich außerdem, ein Bedienfeld für jede Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
 | Tabelle | * | ✓ | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
@@ -113,19 +113,19 @@ H. **Gruppieren**: Mit dieser Funktion können Sie mehrere Komponenten auswähle
 
 I. **Übergeordnet**: Hier können Sie das übergeordnete Element einer Komponente auswählen.
 
-**J. SOM-Ausdruck** anzeigen: Hiermit können Sie den [SOM-Ausdruck](../../forms/using/using-som-expressions-adaptive-forms.md) für die Komponente anzeigen.
+J. SOM-Ausdruck **Ansicht:** Ermöglicht die Ansicht des [SOM-Ausdrucks](../../forms/using/using-som-expressions-adaptive-forms.md) für die Komponente.
 
-**K: Objekte im Bedienfeld** gruppieren: Ermöglicht die Gruppierung der Komponenten in einem Bereich, um Vorgänge an diesen Komponenten gleichzeitig durchführen zu können. Weitere Informationen finden Sie unter [Objekte in Bedienfeld](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)gruppieren.
+K: Objekte im Bedienfeld **gruppieren:** Ermöglicht die Gruppierung der Komponenten in einem Bereich, um Vorgänge an diesen Komponenten gleichzeitig durchführen zu können. Weitere Informationen finden Sie unter [Objekte in Bedienfeld](create-interactive-communication.md#groupobjectspanel)gruppieren.
 
-L. Untergeordnetes Bedienfeld **hinzufügen** (nur für Bedienfelder): Hiermit können Sie dem Bedienfeld ein untergeordnetes Bedienfeld hinzufügen.
+L. **Hinzufügen untergeordnetes Bedienfeld** (nur für Bedienfelder): Hiermit können Sie dem Bedienfeld ein untergeordnetes Bedienfeld hinzufügen.
 
-M: Symbolleiste **** hinzufügen (nur für Bereiche): Hiermit können Sie die Komponente &quot;Symbolleiste für Bereich&quot;hinzufügen. Anschließend können Sie weitere Aktionen in der Symbolleiste durchführen.
+M: **Hinzufügen Bedienfeldsymbolleiste** (nur für Bedienfelder): Hiermit können Sie die Komponente &quot;Symbolleiste für Bedienfeld&quot;hinzufügen. Anschließend können Sie weitere Aktionen in der Symbolleiste durchführen.
 
-Darüber hinaus können Sie mit der Option &quot; **Ersetzen** &quot;in der Symbolleiste die vorhandene Komponente durch eine alternative Komponente ersetzen. Die Option ist für die Bereichskomponente nicht verfügbar.
+Darüber hinaus können Sie mit der Option &quot; **Ersetzen** &quot;in der Symbolleiste die vorhandene Komponente durch eine alternative Komponente ersetzen. Die Option steht für die Bereichskomponente nicht zur Verfügung.
 
 ## Seitensymbolleiste {#page-toolbar}
 
-Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau der interaktiven Kommunikation anzeigen und deren Eigenschaften ändern können. Sie können eine Vorschau der interaktiven Kommunikation anzeigen, wenn Sie sie erstellen, und entsprechende Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
+Die Seitensymbolleiste oben bietet Optionen, mit denen Sie die interaktive Kommunikation Vorschau und ihre Eigenschaften ändern können. Sie können die interaktive Kommunikation beim Erstellen einer Vorschau erstellen und entsprechende Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
 
 * Toggle Side Panel ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide Sidebar.
 * Page information ![pageinformationad](assets/pageinformationad.png): Lets you view page properties.
@@ -138,8 +138,8 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau der int
 
       * Entdecken Sie, woraus interaktive Kommunikation besteht.
       * Debugging der am Formular durchgeführten Aktionen zur Behebung von Fehlern.
-   * Ziel: Ermöglicht die Aktivierung oder Deaktivierung benutzerdefinierter Komponenten oder von vordefinierten Komponenten, die nicht in der Seitenleiste aufgeführt sind.
+   * Zielgruppe: Ermöglicht die Aktivierung oder Deaktivierung benutzerdefinierter Komponenten oder von vordefinierten Komponenten, die nicht in der Seitenleiste aufgeführt sind.
 
 
-* Vorschau: Hier können Sie eine Vorschau der interaktiven Kommunikation anzeigen, wenn Sie sie veröffentlichen.
+* Vorschau: Ermöglicht die Vorschau, wie die interaktive Kommunikation aussieht, wenn Sie sie veröffentlichen.
 
