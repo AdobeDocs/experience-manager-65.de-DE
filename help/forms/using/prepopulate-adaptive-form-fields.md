@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -339,7 +339,7 @@ Sie können den benutzerdefinierten Vorbefüllungs-Dienst für die Szenarien ver
 Der Vorbefüllungsdienst ist ein OSGi-Dienst und wird über das OSGi-Paket bereitgestellt. Sie erstellen das OSGi-Bundle, laden es hoch und installieren es in die AEM Forms-Pakete. Bevor Sie mit der Erstellung des Pakets beginnen:
 
 * [Laden Sie das AEM Forms Client SDK herunter](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* [Laden Sie das Textbausteinpaket herunter](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
+* Laden Sie das Textbausteinpaket herunter
 
 * Platzieren Sie die Datendatei (Vorbefüllungsdaten) in das CRX-Repository. Sie können die Datei an einem beliebigen Ort in den Inhaltsordner des CRX-Repository platzieren. 
 
