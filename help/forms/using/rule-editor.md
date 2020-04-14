@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
 
 # Regeleditor für adaptive Formulare{#adaptive-forms-rule-editor}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Regeleditorfunktion in Adobe Experience Manager Forms ermöglicht es Geschäftsbenutzern und Entwicklern, Regeln für adaptive Formularobjekte zu erstellen. Diese Regeln definieren Aktionen für Formularobjekte, die durch voreingestellte Bedingungen, Benutzereingaben und Benutzeraktionen im Formular ausgelöst werden. Dies ermöglicht noch größere Effizienz beim schnellen und korrekten Ausfüllen der Formulare.
 
@@ -305,7 +305,7 @@ Um eine auf einer benutzerdefinierten Funktion basierende Regel zu definieren, w
 
 ![Benutzerdefinierte Funktionen](assets/custom_functions_set_options_new.png)
 
-Informationen zum Erstellen einer benutzerdefinierten Funktion finden Sie unter [benutzerdefinierte Funktionen im Regeleditor](../../forms/using/rule-editor.md#main-pars-header-296220653).
+Informationen zum Erstellen einer benutzerdefinierten Funktion finden Sie unter [benutzerdefinierte Funktionen im Regeleditor](#custom-functions).
 
 So definieren Sie eine auf einem Formulardatenmodell basierende Regel:
 
@@ -348,7 +348,7 @@ Die Registerkarte „Formularobjekte“ zeigt eine hierarchische Ansicht aller O
 
 Die Formularobjekte, für die eine oder mehrere gültige Regeln angewendet wurden, sind mit einem grünen Punkt markiert. Wenn eine der auf ein Formularobjekt angewendeten Regeln ungültig ist, ist das Formularobjekt mit einem gelben Punkt markiert.
 
-Die Registerkarte „Funktionen“ enthält eine Reihe integrierter Funktionen, z. B. für Summe von, Minimum von, Maximum von, Durchschnitt von, Anzahl von und Formular überprüfen. Mit diesen Funktionen können Sie Werte in wiederholbaren Bereichen und Tabellenzeilen berechnen und sie beim Erstellen von Regeln in Aktions- und Bedingungsanweisungen verwenden. You can, however, create [custom functions](../../forms/using/rule-editor.md#custom-functions) too.
+Die Registerkarte „Funktionen“ enthält eine Reihe integrierter Funktionen, z. B. für Summe von, Minimum von, Maximum von, Durchschnitt von, Anzahl von und Formular überprüfen. Mit diesen Funktionen können Sie Werte in wiederholbaren Bereichen und Tabellenzeilen berechnen und sie beim Erstellen von Regeln in Aktions- und Bedingungsanweisungen verwenden. You can, however, create [custom functions](#custom-functions) too.
 
 ![Registerkarte „Funktionen“](assets/functions.png)
 
@@ -519,7 +519,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
 Benutzer, die zur Gruppe der Formular-Hauptbenutzer hinzugefügt wurden, können den Code-Editor verwenden. Der Regeleditor generiert automatisch den JavaScript-Code für jede Regel, die Sie mithilfe des Visual Editor erstellen. Indem Sie vom Visual Editor zum Codeeditor wechseln, können Sie den generierten Code anzeigen. Wenn Sie jedoch den Code einer Regel im Codeeditor ändern, können Sie nicht mehr zurück zum Visual Editor wechseln. Sie können neue Regeln auch von Anfang an im Codeeditor schreiben, wenn Sie diesen dem Visual Editor vorziehen. Mithilfe des Schalters zwischen dem Visual Editor und dem Codeeditor können Sie zwischen den beiden Modi wechseln.
 
-Der Code-Editor JavaScript ist die Programmiersprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Der Code-Editor JavaScript ist die Programmiersprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
 
 Weitere Informationen zu Richtlinien für das Schreiben von Regeln im Codeeditor finden Sie unter [Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md).
 
