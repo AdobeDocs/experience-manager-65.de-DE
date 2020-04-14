@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
+source-git-commit: 28354bd9785fa83939f9e3b051aac195d7706633
 
 ---
 
@@ -67,13 +67,13 @@ Es wird empfohlen, AEM 6.5 zum Einrichten einer AEM-Autoreninstanz zu verwenden.
 
 * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
 
-Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://helpx.adobe.com/de/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### Herunterladen und Installieren des neuesten AEM Service Packs{#servicepack}
 
 Ausführliche Anweisungen finden Sie unter
 
-* [Versionshinweise zum AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)
+* [Versionshinweise zum AEM 6.5 Service Pack](https://helpx.adobe.com/de/experience-manager/6-5/release-notes/sp-release-notes.html)
 
 **Wenden Sie sich an den Support** , wenn Sie das neueste AEM-Paket oder Service Pack nicht finden können.
 
@@ -204,7 +204,7 @@ Stellen Sie sicher, dass Sie die folgenden Schritte ausgeführt haben:
 
 >[!CAUTION]
 >
->Erstellen Sie nur eine gültige IMS-Konfiguration. Erstellen Sie nicht mehrere IMS-Konfigurationen.
+>Erstellen Sie nur eine gültige IMS-Konfiguration.
 >
 > Stellen Sie sicher, dass die Konfiguration ordnungsgemäß ist. Falls die Konfiguration ungesund ist, löschen Sie sie und erstellen Sie eine neue, gesunde Konfiguration.
 
