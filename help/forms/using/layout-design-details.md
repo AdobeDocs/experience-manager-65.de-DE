@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -24,7 +24,7 @@ XFA-Formularvorlagen oder XDPs sind die Vorlagen für:
 
 * Layout-Fragmente
 
-Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Informationen zum Entwerfen Ihrer XDPs zum Erstellen effektiver Korrespondenz/Interaktive Kommunikation, z. B. wo Formularfelder oder Zielbereiche verwendet werden und wann Layout-Fragmente verwendet werden.
+Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Informationen zum Entwerfen Ihrer XDPs zum Erstellen effektiver Korrespondenz/Interaktive Kommunikation, z. B. wo Formularfelder oder Zielgruppen verwendet werden und wann Layout-Fragmente verwendet werden.
 
 ## Erstellen eines Layouts für Briefe oder für den Druckkanal von interaktiver Kommunikation {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -49,11 +49,11 @@ Befolgen Sie diese Schritte, um Layouts für Briefe/Druckkanal einer interaktive
 
 ### Teilformular in einer XDP-Vorlage verwenden {#usesubformxdp}
 
-Nachdem Sie das zum Erstellen der interaktiven Kommunikation erforderliche Layout analysiert haben, können Sie mit dem Forms Designer in der XDP-Vorlage Teilformulare erstellen. Leere Teilformularkomponenten, die in der XDP-Vorlage verwendet werden, führen zur Anzeige der Zielbereiche im Druckkanal der interaktiven Kommunikation.
+Nachdem Sie das zum Erstellen der interaktiven Kommunikation erforderliche Layout analysiert haben, können Sie mit dem Forms Designer in der XDP-Vorlage Teilformulare erstellen. Leere Teilformularkomponenten, die in der XDP-Vorlage verwendet werden, führen zur Anzeige von Zielgruppen im Kanal &quot;Drucken&quot;der interaktiven Kommunikation.
 
 >[!NOTE]
 >
->Fügen Sie Inhalte zum Druckkanal der interaktiven Kommunikation hinzu, anstatt Inhalte zur Teilformularkomponente der XDP-Vorlage hinzuzufügen. Fügen Sie den Zielbereichen im Druckkanal mithilfe von [Dokumentfragmenten, Diagrammen, Bildern](../../forms/using/create-interactive-communication.md#main-pars-header-741471925)und Layout-Fragmenten Inhalt hinzu.
+>Hinzufügen Sie Inhalte in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Teilformularkomponente in der XDP-Vorlage Inhalte hinzuzufügen. Hinzufügen Sie Inhalte mit Fragmenten, Diagrammen, Bildern [und Layout-Fragmenten in den Zielgruppen des Kanals &quot;Drucken&quot;in](create-interactive-communication.md#step2)Dokument.
 
 Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage zu verwenden:
 
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage
 
    1. Geben Sie im Feld &quot; **Name** &quot;einen Namen für das Teilformular ein.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
-   Wiederholen Sie die Schritte 2 bis 5, um der XDP-Vorlage weitere Teilformulare hinzuzufügen. Fügen Sie [Text, Dokumentfragmente, Bilder und Diagramme](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) nur beim Authoring der interaktiven Kommunikation den Zielbereichen hinzu.
+   Wiederholen Sie die Schritte 2 bis 5, um der XDP-Vorlage weitere Teilformulare hinzuzufügen. Hinzufügen von [Texten, Dokumenten, Bildern und Diagrammen](create-interactive-communication.md#step2) nur beim Authoring der interaktiven Zielgruppe.
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
@@ -98,7 +98,7 @@ Verwenden Sie die Bildfeld- oder Teilformularkomponente in der XDP-Vorlage und f
 
 >[!NOTE]
 >
->Fügen Sie dem Druckkanal der interaktiven Kommunikation ein Bild hinzu, anstatt es der Bildfeld- oder Teilformularkomponente in der XDP-Vorlage hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Inhalten zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#step2).
+>Hinzufügen Sie das Bild in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Bildfeld- oder Teilformularkomponente in der XDP-Vorlage ein Bild hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Inhalten zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#step2).
 
 Führen Sie die folgenden Schritte aus, um die Bildfeldkomponente in einer XDP-Vorlage zu verwenden:
 
@@ -111,11 +111,11 @@ Führen Sie die folgenden Schritte aus, um die Bildfeldkomponente in einer XDP-V
 
 ### XDP-Vorlage für Layoutfragmente erstellen {#xdplayoutfragments}
 
-Verwenden Sie die Komponente &quot;Tabelle&quot;in Forms Designer, um Layout-Fragmente zu erstellen, und erstellen Sie dann beim Authoring des Druckkanals der interaktiven Kommunikation Tabellen. Durch die Verwendung von Layout-Fragmenten zum Erstellen von Tabellen wird sichergestellt, dass die Struktur des Tabelleninhalts erhalten bleibt, wenn der Webkanal automatisch mithilfe des Druckkanals generiert wird.
+Verwenden Sie die Komponente &quot;Tabelle&quot;in Forms Designer, um Layout-Fragmente zu erstellen und diese dann zum Erstellen von Tabellen während des Authoring des Kanals &quot;Drucken&quot;der interaktiven Kommunikation zu verwenden. Durch die Verwendung von Layout-Fragmenten zum Erstellen von Tabellen wird sichergestellt, dass der Tabelleninhalt die Struktur behält, wenn der Web-Kanal automatisch mit dem print-Kanal generiert wird.
 
 >[!NOTE]
 >
->Geben Sie Text in die Tabellenzellen ein oder [erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) .
+>Geben Sie Text in die Tabellenzellen ein oder [erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](create-interactive-communication.md#step2) .
 
 Führen Sie die folgenden Schritte aus, um die Komponente &quot;Tabelle&quot;in der XDP-Vorlage mit Forms Designer zu verwenden:
 
@@ -127,14 +127,14 @@ Führen Sie die folgenden Schritte aus, um die Komponente &quot;Tabelle&quot;in 
    1. Tippen Sie auf **OK**.
 
 1. Tippen Sie im linken Bereich neben dem Namen der Tabelle auf **+** , klicken Sie mit der rechten Maustaste auf die Zellennamen in der Kopfzeile und anderen Zeilen und wählen Sie &quot;Objekt **umbenennen&quot;** , um die Tabellenzellen umzubenennen.
-1. Klicken Sie in der **Designansicht** auf die Textfelder für die Tabellenüberschrift und benennen Sie sie um.
-1. Ziehen Sie die Komponente &quot; **Textfeld** &quot;aus der **Objektbibliothek** in jede Tabellenzelle in der **Designansicht**. Führen Sie diesen Schritt aus, um Tabellenzellen beim Authoring der interaktiven Kommunikation mit den Formulardatenmodellobjekten zu verbinden.
+1. Klicken Sie in der **Design-Ansicht** auf die Textfelder für die Tabellenüberschrift und benennen Sie sie um.
+1. Ziehen Sie die **Textfeldkomponente** aus der **Objektbibliothek** in jede Tabellenzelle in der **Design-Ansicht**. Führen Sie diesen Schritt aus, um Tabellenzellen beim Authoring der interaktiven Kommunikation mit den Formulardatenmodellobjekten zu verbinden.
 
    ![Textfelder in einer Tabelle](assets/text_fields_table_new.png)
 
 1. Select the name of the row from the left pane and select **Object** > **Binding** > **Repeat Row for Each Data Item**. Führen Sie diesen Schritt aus, um sicherzustellen, dass die Tabellenzeile für jedes in der Datenbank verfügbare Datenelement automatisch wiederholt wird, wenn eine Bindung zwischen den Tabellenzellen dieser Zeile mit Formulardatenmodellobjekten des Erfassungstyps erstellt wird.
 
-   Geben Sie Text in die Tabellenzellen ein oder [erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) .
+   Geben Sie Text in die Tabellenzellen ein oder [erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](create-interactive-communication.md#step2) .
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
