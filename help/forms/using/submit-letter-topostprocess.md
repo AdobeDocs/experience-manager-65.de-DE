@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -25,9 +25,9 @@ Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und int
 
 Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Briefen oder interaktiver Kommunikation verknüpfen. Für abgesendete Briefe können zwei Typen von Arbeitsabläufen ausgeführt werden:
 
-1. **** Arbeitsablauf für Formulare: Dies sind die AEM Forms on JEE-Prozessverwaltungsarbeitsabläufe. Instructions for setting up [Forms Workflow](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+1. **Arbeitsablauf für Formulare:** Dies sind die AEM Forms on JEE-Workflows zur Prozessverwaltung. Instructions for setting up [Forms Workflow](#formsworkflow).
 
-1. **** AEM-Workflow: AEM-Arbeitsabläufe können auch als Nachbearbeitungsprozesse für gesendete Briefe verwendet werden. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
+1. **AEM-Workflow:** AEM Workflows kann auch als Nachbearbeitung für gesendete Briefe verwendet werden. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Formular-Workflow {#formsworkflow}
 
@@ -57,11 +57,11 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 
    Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
 
-   1. **** inPDFDoc (PDF-Dokumentparameter): Ein PDF-Dokument als Eingabe. Diese Eingabe enthält den gerenderten Brief als Eingabe. Die angegebenen Parameternamen können konfiguriert werden. Sie können über die Correspondence Management-Konfigurationen in „Konfiguration“ konfiguriert werden.
-   1. **** inXMLDoc (XML-Datenparameter): Ein XML-Dokument als Eingabe. Diese Eingabe enthält Daten, die vom Benutzer im XML-Formular eingegeben wurden.
-   1. **** inXDPDoc (XDP-Dokumentparameter): Ein XML-Dokument als Eingabe. Diese Eingabe enthält das zugrunde liegende Layout (XDP).
-   1. **** inAttachmentDocs (Parameter &quot;Anlagendokumente&quot;): Ein Listeneingabeparameter. Diese Eingabe enthält alle Anlagen als Eingabe.
-   1. **** redirectURL (Umleitungs-URL-Ausgabe): Ein Ausgabetyp, der die URL angibt, zu der umgeleitet werden soll.
+   1. **inPDFDoc (PDF-Dokument-Parameter):** Ein PDF-Dokument als Eingabe. Diese Eingabe enthält den gerenderten Brief als Eingabe. Die angegebenen Parameternamen können konfiguriert werden. Sie können über die Correspondence Management-Konfigurationen in „Konfiguration“ konfiguriert werden.
+   1. **inXMLDoc (XML-Datenparameter):** Ein XML-Dokument als Eingabe. Diese Eingabe enthält Daten, die vom Benutzer im XML-Formular eingegeben wurden.
+   1. **inXDPDoc (XDP-Dokument-Parameter):** Ein XML-Dokument als Eingabe. Diese Eingabe enthält das zugrunde liegende Layout (XDP).
+   1. **inAttachmentDocs (Parameter &quot;Dokumente des Anhangs&quot;):** Ein Eingabeparameter für die Liste. Diese Eingabe enthält alle Anlagen als Eingabe.
+   1. **redirectURL (Umleitungs-URL-Ausgabe):** Ein Ausgabetyp, der die URL angibt, zu der umgeleitet werden soll.
    Ihr Formular-Workflow muss entweder einen PDF-Dokumentparameter oder einen XML-Datenparameter als Eingabe mit demselben Namen enthalten, der in den **[!UICONTROL Correspondence Management-Konfigurationen]** angegeben ist. Das ist erforderlich, damit der Prozess in der Dropdown-Liste „Nachbearbeitung“ aufgelistet wird.
 
 ## Einstellungen für die Veröffentlichungsinstanz {#settings-on-the-publish-instance}
@@ -98,7 +98,7 @@ Gespeicherte Briefinstanzen können weiter bearbeitet werden, beispielsweise dur
   <tr>
    <td>List getAllLetterInstances(Query) throws ICCException; </td>
    <td>getAllLetterInstances </td>
-   <td>Diese API ruft Briefinstanzen basierend auf dem Eingabeabfrageparameter ab. Um alle Briefinstanzen abzurufen, können Abfrageparameter als Null weitergeleitet werden.<br /> </td>
+   <td>Diese API ruft Briefinstanzen basierend auf dem Parameter für die Abfrage der Eingabe ab. Um alle Briefinstanzen abzurufen, können Abfrageparameter als Null weitergeleitet werden.<br /> </td>
   </tr>
   <tr>
    <td>Public Boolean letterInstanceExists(String letterInstanceName) throws ICCException; </td>
