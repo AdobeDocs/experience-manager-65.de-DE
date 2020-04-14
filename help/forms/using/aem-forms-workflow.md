@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -97,17 +97,17 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 1. Ziehen Sie die Komponente „ODER-Teilung“ aus der Seitenleiste in das Workflow-Modell. Die ODER-Teilung erstellt eine Verzweigung im Workflow, nach nur einer der beiden Zweige aktiv bleibt. Mit diesem Schritt können Sie bedingte Prozesspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
-   Sie können Routing-Ausdruck für eine Verzweigung mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
+   Sie können Routing-Ausdruck für eine Verzweigung mit einer Regeldefinition, einem ECMA-Skript oder einem externen Skript definieren.
 
    Verwenden Sie den Ausdruck-Editor, um Routing-Ausdruck für Zweig 1 und Zweig 2 zu erstellen. Diese Routing-Ausdruck unterstützen Sie bei der Auswahl einer Verzweigung, die auf der Benutzeraktion in AEM Inbox basiert.
 
-   **Routing Ausdruck für Zweig 1**
+   **Routing Ausdruck für Zweigstelle 2**
 
    When a user taps **Approve** in AEM Inbox, Branch 1 is activated.
 
    ![Beispiel für ODER-Teilung](assets/orsplit_branch1_active_new.png)
 
-   **Routing Ausdruck für Zweigstelle 2**
+   **Routing Ausdruck für Zweig 1**
 
    When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
@@ -121,7 +121,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
    Um den vollständige Satz der Werte in allen Feldern für die Schritte „Aufgabe zuweisen“ sowie die Schritte für das Datensatzdokument und zum Unterzeichnen des Dokuments zu erhalten, die für den Beispielhypothekenantrag konfiguriert sind, importieren Sie das Beispielpaket, das am Anfang dieses Abschnitts zur Verfügung steht.
 
-   Damit ist das Workflow-Modell einsatzbereit. Sie können den Workflow über verschiedene Methoden starten. Weitere Informationen finden Sie unter [Starten eines formularzentrierten Workflow auf OSGi](../../forms/using/aem-forms-workflow.md#main-pars-header).
+   Damit ist das Workflow-Modell einsatzbereit. Sie können den Workflow über verschiedene Methoden starten. Weitere Informationen finden Sie unter [Starten eines formularzentrierten Workflow auf OSGi](#launch).
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
