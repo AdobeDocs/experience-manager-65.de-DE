@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -133,9 +133,9 @@ Verwenden Sie die Web-Konsole oder einen „slign:OsgiConfig“-Knoten, um die f
    <td>15</td>
   </tr>
   <tr>
-   <td>Minimale Ereignisverzögerung (Sekunden)</td>
+   <td>Minimale Ereignis-Verzögerung (Sekunden)</td>
    <td>minEventDelay</td>
-   <td><p>Wenn eine Änderung an der Topologie eintritt, die Zeitdauer, um die Statusänderung von TOPOLOGY_CHANGING zu TOPOLOGY_CHANGED zu verzögern. Jede Änderung, die auftritt, wenn der Status TOPOLOGY_CHANGING lautet, erhöht die Verzögerung um diesen zeitlichen Wert.</p> <p>Diese Verzögerung verhindert, dass Listener von Ereignissen überflutet werden. </p> <p>Wenn Sie keine Verzögerung verwenden möchten, geben Sie 0 oder eine negative Zahl an.</p> </td>
+   <td><p>Wenn eine Änderung an der Topologie eintritt, die Zeitdauer, um die Änderung des Status von TOPOLOGY_CHANGING zu TOPOLOGY_CHANGED zu verzögern. Jede Änderung, die auftritt, wenn der Status TOPOLOGY_CHANGING lautet, erhöht die Verzögerung um diesen zeitlichen Wert.</p> <p>Diese Verzögerung verhindert, dass Listener von Ereignissen überflutet werden. </p> <p>Wenn Sie keine Verzögerung verwenden möchten, geben Sie 0 oder eine negative Zahl an.</p> </td>
    <td>3</td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ Verwenden Sie die Web-Konsole oder einen „slign:OsgiConfig“-Knoten, um die f
   <tr>
    <td>Whitelist zum Thema-Connector</td>
    <td>topologyConnectorWhitelist</td>
-   <td>Die Liste der IP-Adressen oder Hostnamen, die der lokale Topology Connector-Dienst in der Topologie zulässt. </td>
+   <td>Die Liste von IP-Adressen oder Hostnamen, die der lokale Topology Connector-Dienst in der Topologie zulässt. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
   </tr>
   <tr>
@@ -207,13 +207,13 @@ Die Installation von Experience Manager umfasst mehrere implementierte JobConsum
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Mit Apache Sling installiert. Verarbeitet Aufträge, die vom OSGi-Event-Admin-Dienst aus Gründen der Abwärtskompatibilität generiert werden. |
 | com/day/cq/Replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Ein Replizierungsagenten, der Auftragsnutzlasten repliziert. |
-| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Verarbeitet Aufträge, die vom DAM Update Asset Offloader-Arbeitsablauf generiert werden. |
+| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Verarbeitet Aufträge, die vom [!UICONTROL DAM Update Asset Offloader] -Arbeitsablauf generiert werden. |
 
 ### Deaktivieren und Aktivieren von Themen für eine Instanz {#disabling-and-enabling-topics-for-an-instance}
 
 Der JobConsumerManager-Dienst von Apache Sling stellt Whitelist- und Blacklist-Eigenschaften für Themen bereit. Konfigurieren Sie diese Eigenschaften, um die Verarbeitung von bestimmten Themen auf einer Experience Manager-Instanz zu aktivieren oder zu deaktivieren.
 
-**** Hinweis: Wenn die Instanz zu einer Topologie gehört, können Sie den Offload-Browser auch auf einem beliebigen Computer in der Topologie verwenden, um Themen zu aktivieren oder zu deaktivieren.
+**Hinweis:** Wenn die Instanz zu einer Topologie gehört, können Sie den Offload-Browser auch auf einem beliebigen Computer in der Topologie verwenden, um Themen zu aktivieren oder zu deaktivieren.
 
 The logic that creates the list of enabled topics first allows all of the topics that are in the whitelist, and then removes topics that are on the blacklist.By default, all topics are enabled (the whitelist value is `*`) and no topics are disabled (the blacklist has no value).
 
@@ -221,8 +221,8 @@ Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folge
 
 | Eigenschaftsname in der Webkonsole | OSGi-ID | Beschreibung |
 |---|---|---|
-| ThemenWhitelist | job.consumermanager.whitelist | Eine Liste der Themen, die vom lokalen JobManager-Dienst verarbeitet werden. Der Standardwert von &amp;ast; bewirkt, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
-| Thema-Blacklist | job.consumermanager.blacklist | Eine Liste der Themen, die vom lokalen JobManager-Dienst nicht verarbeitet werden. |
+| ThemenWhitelist | job.consumermanager.whitelist | Eine Liste von Themen, die vom lokalen JobManager-Dienst verarbeitet werden. Der Standardwert von &amp;ast; bewirkt, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
+| Thema-Blacklist | job.consumermanager.blacklist | Eine Liste von Themen, die vom lokalen JobManager-Dienst nicht verarbeitet werden. |
 
 ## Erstellen von Replikationsagenten für die Abladung {#creating-replication-agents-for-offloading}
 
@@ -277,8 +277,8 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Einstellungen > Serialisierungstyp | Default |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Transportbenutzer | Replikationsbenutzer auf Zielinstanz |
-   | Transport > Transportpass | Benutzerkennwort auf Zielinstanz replizieren |
+   | Transport > Transportbenutzer | Replizierungsbenutzer auf Zielgruppe-Instanz |
+   | Transport > Transportpass | Replizieren des Benutzerkennworts auf der Zielgruppe |
    | Erweitert > HTTP-Methode | POST |
    | Auslöser > Standard ignorieren | True |
 
@@ -291,8 +291,8 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Einstellungen > Serialisierungstyp | Default |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Transportbenutzer | Replikationsbenutzer auf Zielinstanz |
-   | Transport > Transportpass | Benutzerkennwort auf Zielinstanz replizieren |
+   | Transport > Transportbenutzer | Replizierungsbenutzer auf Zielgruppe-Instanz |
+   | Transport > Transportpass | Replizieren des Benutzerkennworts auf der Zielgruppe |
    | Erweitert > HTTP-Methode | GET |
 
 ### Erstellen des Postausgangs-Agenten {#creating-the-outbox-agent}
@@ -317,11 +317,11 @@ Sie können die Sling-ID einer Experience Manager-Instanz mit einer der beiden f
 
 Konfigurieren Sie die Instanzen einer Topologie so, dass bestimmte Instanzen die Hintergrundverarbeitung von Assets durchführen, welche zu DAM hinzugefügt oder in DAM aktualisiert werden.
 
-Standardmäßig führt Experience Manager den Workflow „DAM-Update-Asset“ aus, wenn ein DAM-Asset geändert oder ein Asset zu DAM hinzugefügt wird. Ändern Sie das Standardverhalten so, dass Experience Manager stattdessen den Workflow „Asset-Abladung für DAM-Update“ ausführt. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Konfigurieren Sie dann die Topologie so, dass der Auftrag an eine dedizierte Worker-Instanz abgeladen wird.
+By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Konfigurieren Sie dann die Topologie so, dass der Auftrag an eine dedizierte Worker-Instanz abgeladen wird.
 
 >[!CAUTION]
 >
->Bei Verwendung mit Workflow-Ableitungen sollte kein Workflow vorübergehend sein. Beispielsweise darf sich der Workflow „DAM-Update-Asset“ nicht im Übergangsstatus befinden, wenn er für die Asset-Abladung verwendet wird. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
+>Bei Verwendung mit Workflow-Ableitungen sollte kein Workflow vorübergehend sein. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
 Beim nachfolgenden Verfahren wird von den folgenden Merkmalen für die Abladungs-Topologie ausgegangen:
 
@@ -334,14 +334,14 @@ Beim nachfolgenden Verfahren wird von den folgenden Merkmalen für die Abladungs
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. Konfigurieren Sie auf allen Instanzen, mit denen die Benutzer zum Hochladen oder Ändern von DAM-Assets interagieren, die Workflow-Starter so, dass sie den Workflow „Asset-Abladung für DAM-Update“ verwenden.
+1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow:
 
    1. Öffnen Sie die Workflow-Konsole.
    1. Klicken Sie auf die Registerkarte „Starter“.
-   1. Suchen Sie nach den beiden Starter-Konfigurationen, die den Workflow „DAM-Update-Asset“ ausführen. Ein Ereignistyp für die Starter-Konfiguration ist „Knoten erstellt“ und der andere „Knoten geändert“.
-   1. Ändern Sie beide Ereignistypen so, dass Sie den Workflow „Asset-Abladung für DAM-Update“ ausführen. (Weitere Informationen zu Starter-Konfigurationen finden Sie unter [Starten von Workflows bei Knotenänderungen](/help/sites-administering/workflows-starting.md).)
+   1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. Ein Ereignistyp für die Starter-Konfiguration ist „Knoten erstellt“ und der andere „Knoten geändert“.
+   1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (Weitere Informationen zu Starter-Konfigurationen finden Sie unter [Starten von Workflows bei Knotenänderungen](/help/sites-administering/workflows-starting.md).)
 
-1. Deaktivieren Sie auf den Instanzen, die die Hintergrundverarbeitung von DAM-Assets durchführen, die Workflow-Starter, die den Workflow „DAM-Update-Asset“ ausführen.
+1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
 
 ## Weiterführende Literatur {#further-reading}
 
