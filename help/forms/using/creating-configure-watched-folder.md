@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -31,7 +31,7 @@ Bevor Sie einen überwachten Ordner konfigurieren, stellen Sie Folgendes sicher:
 * Überwachte Ordner ist eine erweiterte Funktion von AEM Forms. Dafür wird das Add-On-Paket für AEM Forms benötigt. Stellen Sie sicher, dass das entsprechende Add-On-Paket für AEM Forms installiert und konfiguriert ist.
 * Sie können den überwachten Ordner auf einem freigegebenen oder lokalen Speicher erstellen. Sorgen Sie dafür, dass der AEM Forms-Benutzer, der den überwachten Ordner ausführen darf, über Lese- und Schreibberechtigungen für den überwachten Ordner verfügt.
 * Sie können einen Dienst, Arbeitsablauf oder ein Skript verwenden, um einen Prozess mithilfe überwachter Ordner zu automatisieren. Stellen Sie sicher, dass der entsprechende Service, der Arbeitsablauf oder ein Skript erstellt wurde und ausgeführt werden kann. For information about creating a Service, Workflow, and Script, see [Various methods of processing files](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
-* Ein überwachter Ordner besitzt verschiedene Eigenschaften, siehe [Eigenschaften für überwachte Ordner](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+* Ein überwachter Ordner besitzt verschiedene Eigenschaften, siehe [Eigenschaften für überwachte Ordner](watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstellen:
 
@@ -72,7 +72,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
    * **Stage-Dateien mit Zeitüberschreitung bei Einschränkung löschen:** Wenn diese Option aktiviert ist, wird der Mechanismus **Zeitüberschreitung für Stage-Dateien nach** nur bei aktivierten Einschränkungen für den überwachten Ordner aktiviert.
    * **Überprüfen des Eingabeordners alle:** Geben Sie das Intervall in Sekunden an, innerhalb dessen der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Anderenfalls könnte es zu einer Überlastung des Systems kommen. Der Wert für den Intervall muss größer als oder gleich eins sein.
    * **Muster für auszuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die von einem überwachten Ordner verwendet wird, um zu ermitteln, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem angegebenen Muster entsprechen, werden nicht für die Verarbeitung überprüft. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Muster für einzuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Wenn das Muster für einzuschließende Dateien beispielsweise &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. For more information about file patterns, see [About File Patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Muster für einzuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. For more information about file patterns, see [About File Patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Wartezeit:** Geben Sie die Zeit in Millisekunden an, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
 
       Diese Einstellung ist nützlich, um sicherzustellen, dass der gesamte Inhalt einer Datei oder eines Ordners in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Dieses Intervall verhindert, dass der überwachte Ordner die Datei bereits überprüft, wenn sie noch keine 10 Minuten alt ist.
