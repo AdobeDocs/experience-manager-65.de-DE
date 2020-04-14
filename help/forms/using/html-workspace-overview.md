@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
 
 ---
 
@@ -49,7 +49,7 @@ Sie können mehrere Aufgaben desselben Typs genehmigen. Wenn Sie eine Aufgabe zu
 
 Flex Workspace wird für AEM Forms-Kunden nicht unterstützt. Alle Kunden, die Flex Workspace verwenden, sollten zu AEM Forms Workspace wechseln.
 
-In AEM Forms Workspace wurden die mit XDP-Formularen verknüpften standardmäßigen Wiedergabe- und Sendedienste im standardmäßigen Aktionsprofil geändert und neue Dienste wurden eingeführt. Weitere Informationen finden Sie unter [Neue Wiedergabe- und Sendedienste](/help/forms/using/new-render-submit-service.md). Um Ihre vorhandenen Prozesse, die XDP-Formulare nutzen, zu migrieren, sodass Sie diese Dienste nutzen können, führen Sie [diese Schritte](/help/forms/using/new-render-submit-service.md#main-pars-faq) aus.
+In AEM Forms Workspace wurden die mit XDP-Formularen verknüpften standardmäßigen Wiedergabe- und Sendedienste im standardmäßigen Aktionsprofil geändert und neue Dienste wurden eingeführt. Weitere Informationen finden Sie unter [Neue Wiedergabe- und Sendedienste](/help/forms/using/new-render-submit-service.md). Um Ihre vorhandenen Prozesse, die XDP-Formulare nutzen, zu migrieren, sodass Sie diese Dienste nutzen können, führen Sie [diese Schritte](new-render-submit-service.md) aus.
 
 **Zuordnen von Flex Workspace-Anpassungen zu AEM Forms Workspace**
 
@@ -120,11 +120,11 @@ AEM Forms Workspace unterstützt viele Anpassungen, mit denen das Layout, die Da
 * Funktionen mithilfe der semantischen Anpassungen
 * Wiederverwenden von HTML-Komponenten in anderen Webanwendungen
 
-Der Artikel zu [Anpassungen](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) beschreibt die Arten solcher Anpassungen.
+Der Artikel zu [Anpassungen](introduction-customizing-html-workspace.md#types-of-customizations) beschreibt die Arten solcher Anpassungen.
 
 ### Einrichten der Entwicklungsumgebung {#set-up-the-developer-environment}
 
-AEM Forms Workspace wird bereitgestellt mit einem auf CRX implementierten CRX -Paket, einem SDK-Archiv mit dem vollständigen Quellcode, JavaScript-Bibliotheken anderer Anbieter sowie Build-Skripten von AEM Forms Workspace. Verwenden Sie diese zum Einrichten der Entwicklungsumgebung, um die oben genannten Anpassungen durchführen zu können. Weitere Informationen finden Sie unter [Erstellen von AEM Forms Workspace-Code](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3).
+AEM Forms Workspace wird bereitgestellt mit einem auf CRX implementierten CRX -Paket, einem SDK-Archiv mit dem vollständigen Quellcode, JavaScript-Bibliotheken anderer Anbieter sowie Build-Skripten von AEM Forms Workspace. Verwenden Sie diese zum Einrichten der Entwicklungsumgebung, um die oben genannten Anpassungen durchführen zu können. Weitere Informationen finden Sie unter [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 Sie können einen Großteil der Benutzeroberfläche sowie Hauptfunktionen wie Schriftarten, Farbschema, Logo, Anmeldebildschirm, Fehlerdialoge, Integration mit Anwendungen anderer Anbieter und Wiederverwendung von Komponenten in Anwendungen anderer Anbieter anpassen. Sie können darüber hinaus den Inhalt der Seite „Aufgabenzusammenfassung“ verbessern, Abbildungen zu Aktionen für Aufgabenrouten anzeigen und sogar die systemnahen Backbone-Modelle und Ansichten bearbeiten, die die AEM Forms Workspace-Anwendung erstellen.
 
