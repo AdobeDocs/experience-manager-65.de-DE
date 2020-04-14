@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
 
 ---
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen verbundenen Assets und lokal
 
    >[!NOTE]
    >
-   >Alle in der Remote-AEM-Bereitstellung verfügbaren Darstellungen werden abgerufen, wenn Autoren ein Asset abrufen. Überspringen Sie diesen Konfigurationsschritt, wenn Sie mehr Wiedergabedarstellungen eines abgerufenen Assets erstellen möchten. Der Workflow „DAM-Update-Asset“ wird gestartet und es werden mehr Wiedergabedarstellungen erstellt. Diese Wiedergabedarstellungen sind nur für die lokale Sites-Bereitstellung verfügbar und nicht für die Remote-DAM-Bereitstellung.
+   >Alle in der Remote-AEM-Bereitstellung verfügbaren Darstellungen werden abgerufen, wenn Autoren ein Asset abrufen. Überspringen Sie diesen Konfigurationsschritt, wenn Sie mehr Wiedergabedarstellungen eines abgerufenen Assets erstellen möchten. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Fügen Sie die AEM Sites-Instanz als **[!UICONTROL zulässigen Ursprung]** in der Remote-CORS-Konfiguration von AEM Assets hinzu.
 
@@ -111,7 +111,7 @@ Die Websiteautoren verwenden den Content Finder zum Verbinden mit der DAM-Instan
 
 Autoren können Assets verwenden, die sowohl in lokalen als auch in Remote-DAM-Instanzen in einer einzigen Webseite verfügbar sind. Verwenden Sie den Content Finder, um zwischen der Suche im lokalen und im Remote-DAM zu wechseln.
 
-Es werden nur die Tags von Remote-Assets abgerufen, die über ein exakt entsprechendes Tag verfügen - mit derselben Taxonomie-Hierarchie -, das in der lokalen Site-Instanz verfügbar ist. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-AEM-Bereitstellung nach Remote-Assets suchen, da AEM Angebots eine Volltextsuche durchführt.
+Es werden nur die Tags von Remote-Assets abgerufen, die ein exaktes entsprechendes Tag mit derselben Taxonomie-Hierarchie aufweisen, die in der lokalen Site-Instanz verfügbar ist. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-AEM-Bereitstellung nach Remote-Assets suchen, da AEM Angebots eine Volltextsuche durchführt.
 
 ### Beispiel für die Verwendung {#walk-through-of-usage}
 
