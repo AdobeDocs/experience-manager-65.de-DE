@@ -3,7 +3,7 @@ title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -21,12 +21,12 @@ Die Adobe Imaging Transcoding Library ist eine proprietäre Bildverarbeitungslö
 
 Imaging Transcoding Library bietet CMYK-Unterstützung und vollständige Alpha-Unterstützung, mit Ausnahme von CMYK -Alpha.
 
-Die Imaging Transcoding Library unterstützt nicht nur eine Vielzahl von Dateiformaten und Profilen, sondern bietet auch erhebliche Vorteile gegenüber anderen Lösungen von Drittanbietern, was Leistung, Skalierbarkeit und Qualität betrifft. Die Verwendung von Imaging Transcoding Library bietet folgende Vorteile:
+Die Imaging Transcoding Library unterstützt nicht nur eine Vielzahl von Dateiformaten und Profilen, sondern bietet im Hinblick auf Leistung, Skalierbarkeit und Qualität auch gegenüber anderen Drittanbieterlösungen erhebliche Vorteile. Die Verwendung von Imaging Transcoding Library bietet folgende wichtige Vorteile:
 
 * **Skaliert mit zunehmender Dateigröße oder Auflösung**: Die Skalierung wird primär über die patentierte Fähigkeit der Imaging Transcoding Library erzielt, die Größe während der Dekodierung von Dateien anzupassen. Dadurch wird sichergestellt, dass die Speicherverwendung während der Laufzeit immer optimal und keine quadratische Funktion der steigenden Dateigröße oder der Megapixel der Auflösung ist. Die Imaging Transcoding Library kann größere Dateien sowie Dateien mit hoher Auflösung (mit mehr Megapixel) verarbeiten. Tools von Drittanbietern, z. B. ImageMagick, können keine großen Dateien bearbeiten und stürzen bei der Verarbeitung solcher Dateien ab.
 * **Komprimierung in Photoshop-Qualität und Algorithmen für die Größenänderung**: Entspricht dem Branchenstandard hinsichtlich der Qualität des Downsamplings (glatt, scharf und automatisch bikubisch) und der Komprimierungsqualität. Imaging Transcoding Library bewertet den Qualitätsfaktor des Eingabebilds weiter und verwendet auf intelligente Weise optimale Tabellen und Qualitätseinstellungen für das Ausgabebild. Dies erzeugt Dateien in optimaler Größe, ohne Abstriche bei der visuellen Qualität.
-* **** Hoher Durchsatz: Die Antwortzeit ist niedriger und der Durchsatz ist durchgängig höher als ImageMagick. Daher sollten Imaging Transcoding Library die Wartezeit für Benutzer und die Hosting-Kosten verringern.
-* **** Bei gleichzeitiger Belastung besser skalieren: Imaging Transcoding Library funktioniert unter gleichzeitigen Ladebedingungen optimal. Sie bietet hohen Durchsatz mit optimaler CPU-Leistung, Speichernutzung und niedriger Antwortzeit, was die Kosten für das Hosting verringert.
+* **Hoher Durchsatz:** Die Antwortzeit ist niedriger und der Durchsatz ist durchgängig höher als ImageMagick. Daher sollten Imaging Transcoding Library die Wartezeit für Benutzer und die Hosting-Kosten verringern.
+* **Bei gleichzeitiger Belastung besser skalieren:** Imaging Transcoding Library funktioniert unter gleichzeitigen Ladebedingungen optimal. Sie bietet hohen Durchsatz mit optimaler CPU-Leistung, Speichernutzung und niedriger Antwortzeit, was die Kosten für das Hosting verringert.
 
 ## Unterstützte Plattformen {#supported-platforms}
 
@@ -85,11 +85,11 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
    vi SWitchEngineLibs.conf
    ```
 
-1. Fügen Sie der conf-Datei `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` mithilfe des `cat SWitchEngineLibs.conf` Befehls den Pfad hinzu.
+1. Hinzufügen `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` Pfad zur conf-Datei mit `cat SWitchEngineLibs.conf` Befehl.
 
 1. Führen Sie `ldconfig` den Befehl aus, um die erforderlichen Links und den Cache zu erstellen.
 
-1. Bearbeiten Sie die `.bash_profile` Datei in dem Konto, das zum Starten von AEM verwendet wird. Fügen Sie Folgendes `LD_LIBRARY_PATH` hinzu.
+1. Bearbeiten Sie die `.bash_profile` Datei in dem Konto, das zum Beginn von AEM verwendet wird. Hinzufügen `LD_LIBRARY_PATH` durch Hinzufügen folgender Elemente:
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -98,11 +98,11 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 1. Um sicherzustellen, dass der Wert des Pfads auf festgelegt ist, verwenden Sie `.`den `echo $LD_LIBRARY_PATH` Befehl. Die Ausgabe sollte einfach `.`sein. Wenn der Wert nicht auf `.`festgelegt ist, starten Sie die Sitzung neu.
 
-### DAM-Arbeitsablauf zum Aktualisieren von Assets konfigurieren {#configure-dam-asset-update-workflow}
+### Arbeitsablauf für [!UICONTROL DAM-Aktualisierung von Assets] konfigurieren {#configure-dam-asset-update-workflow}
 
 Aktualisieren Sie den Arbeitsablauf [!UICONTROL DAM Update Asset] , um die Bibliothek zur Bildverarbeitung zu verwenden.
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**.
+1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
@@ -117,7 +117,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
 1. Blenden Sie das seitliche Bedienfeld ein und fügen Sie aus der Liste der Schritte **[!UICONTROL SwitchEngine Handler]** hinzu.
 
-1. Fügen Sie dem [!UICONTROL SwitchEngine-Handler] entsprechend Ihren individuellen Anforderungen Befehle hinzu. Passen Sie die Parameter der von Ihnen angegebenen Befehle an Ihre Anforderungen an. Wenn Sie z. B. das Farbprofil Ihres JPEG-Bildes beibehalten möchten, fügen Sie die folgenden Befehle zur Liste **[!UICONTROL Befehle]** hinzu:
+1. Hinzufügen Befehle für den [!UICONTROL SwitchEngine-Handler] entsprechend Ihren individuellen Anforderungen. Passen Sie die Parameter der von Ihnen angegebenen Befehle an Ihre Anforderungen an. Wenn Sie z. B. das Farbprofil Ihres JPEG-Bildes beibehalten möchten, fügen Sie die folgenden Befehle zur Liste **[!UICONTROL Befehle]** hinzu:
 
    * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
@@ -133,7 +133,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
 1. Sync the updated [!UICONTROL DAM Update Asset] workflow model. Speichern Sie den Workflow.
 
-Überprüfen Sie die Konfiguration, laden Sie ein TIFF-Bild hoch und überwachen Sie die Datei &quot;error.log&quot;. Sie werden `INFO` Nachrichten mit Erwähnungen von bemerken `SwitchEngineHandlingProcess execute: executing command line`. In den Protokollen werden die generierten Darstellungen aufgeführt. Nach Abschluss des Workflows können Sie die neuen Darstellungen in AEM anzeigen.
+Überprüfen Sie die Konfiguration, laden Sie ein TIFF-Bild hoch und überwachen Sie die Datei &quot;error.log&quot;. Sie werden `INFO` Nachrichten mit Erwähnungen von bemerken `SwitchEngineHandlingProcess execute: executing command line`. In den Protokollen werden die generierten Darstellungen aufgeführt. Sobald der Workflow abgeschlossen ist, können Sie die neuen Darstellungen in AEM Ansicht haben.
 
 >[!MORELIKETHIS]
 >
