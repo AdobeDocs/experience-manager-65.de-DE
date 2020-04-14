@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -43,7 +43,7 @@ Die Website für Adobe-Entwickler enthält die folgenden Artikel, in denen der A
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](#including-aem-forms-java-library-files)
 
-[An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[An Menschen orientierte langlebige Prozesse aufrufen](invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
 [AEM Forms mit Web Services aufrufen](/help/forms/developing/invoking-aem-forms-using-web.md)
 
@@ -79,7 +79,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
   <tr>
    <th><p>Datei</p></th>
    <th><p>Beschreibung</p></th>
-   <th><p>Standort</p></th>
+   <th><p>Ort</p></th>
   </tr>
  </thead>
  <tbody>
@@ -230,7 +230,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmo
   <tr>
    <th><p>Datei</p> </th>
    <th><p>Beschreibung</p> </th>
-   <th><p>Standort</p> </th>
+   <th><p>Ort</p> </th>
   </tr>
  &lt;/thead align="left"&gt;
  <tbody>
