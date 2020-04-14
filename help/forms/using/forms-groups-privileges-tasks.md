@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -29,7 +29,7 @@ Sobald Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-aem
    <td>Aufgaben</td> 
   </tr>
   <tr>
-   <td>forms-user <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>forms-user <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Erstellen Sie eine Vorschau, veröffentlichen und senden Sie adaptive Formulare</li> 
@@ -59,7 +59,7 @@ Sobald Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-aem
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-authors <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Adaptive Formulare oder interaktive Kommunikationsvorlagen erstellen oder in der Vorschau anzeigen</li> 
@@ -99,7 +99,7 @@ Sobald Sie [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-aem
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>AEM-Posteingangsanwendungen<br /> verwenden <strong>Hinweis: Für </strong>den Zugriff auf die Benutzeroberfläche von Interactive Communications Agent im AEM-Posteingang müssen cm-agent-users und Gruppen von Workflow-Benutzern zugewiesen sein.</li> 
+     <li>AEM-Posteingangsanwendungen<br /> verwenden <strong>Hinweis: Für </strong>den Zugriff auf die Benutzeroberfläche von Interactive Communications Agent im AEM-Posteingang müssen cm-agent-users und Gruppen von Workflows-Benutzern zugewiesen sein.</li> 
      <li>Workflow-Instanzen verwalten</li> 
     </ul> </td> 
   </tr>
