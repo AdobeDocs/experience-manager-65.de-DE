@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -60,7 +60,7 @@ Im Falle großer Mengen können DAM-Prozesse sehr gut parallel durchgeführt wer
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardwareressourcen erforderlich; die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
-Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow „DAM-Update-Asset“ so, dass Rohbilder mit dem [Camera Raw-Paket](/help/assets/camera-raw.md) aufgenommen werden.
+Allocate at least 16GB of heap and configure the [!UICONTROL DAM Update Asset] workflow to use the [Camera Raw package](/help/assets/camera-raw.md) for the ingestion of raw images.
 
 ## Wissenswertes über das System {#understanding-the-system}
 
@@ -80,7 +80,7 @@ In der folgenden Legende werden Bereiche mit möglichen Leistungsproblemen samt 
 
 Ursachen für eine schlechte Latenz und unzureichenden Durchsatz in einem NAS sind gewöhnlich die Netzwerktopologie oder eine NAS-Überauslastung durch andere Dienste.
 
-**Netzwerkgebundene Speichersysteme** Zu wenig genutzte, mit Netzwerken verbundene Speichersysteme können zu einer Reihe von Problemen führen:
+**Netzwerkgebundene Datenspeicherung** Durch zu viele Netzwerkverbindungen verursachte Datenspeicherung können Probleme verursachen:
 
 * Geringer Festplattenspeicher ist ein häufig auftretendes Problem, das durch eine ordnungsgemäße Dimensionierung von DAM-Projekten verhindert werden kann.
 * Eine hohe Festplattenlatenz führt zu langsamen Zugriffszeiten für CRX und kann Probleme mit der interaktiven Leistung verursachen.
