@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -41,7 +41,7 @@ Sie können Datenmodellobjekte und Dienste aus verfügbaren Datenquellen im Form
 So fügen Sie Datenmodellobjekte und -dienste hinzu:
 
 1. Melden Sie sich bei der AEM-Autorinstanz an, navigieren Sie zu **[!UICONTROL Formulare > Datenintegrationen]** und öffnen Sie das Formulardatenmodell, in dem Sie Datenmodellobjekte hinzufügen möchten.
-1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und -dienste anzuzeigen.
+1. Erweitern Sie im Bereich Data Sources die Datenquellen, um verfügbare Datenmodellobjekte und -dienste Ansicht.
 1. Wählen Sie Datenmodellobjekte und Dienste aus, die Sie dem Formulardatenmodell hinzufügen möchten, und tippen Sie auf **[!UICONTROL Ausgewählte hinzufügen]**.
 
    ![selected-object](assets/selected-objects.png)
@@ -155,12 +155,12 @@ Um Daten für ein Datenmodellobjekt zu lesen und zu schreiben, gehen Sie folgend
 
    Für die Mitarbeiterdatenquelle konfigurierte Lese- und Schreibdienste
 
-1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) for the read service argument to [bind the argument to a User Profile Attribute, Request Attribute, or Literal value](../../forms/using/work-with-form-data-model.md#main-pars-header-2140694395) and specify the binding value.
+1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) for the read service argument to [bind the argument to a User Profile Attribute, Request Attribute, or Literal value](#bindargument) and specify the binding value.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um das Argument zu speichern, dann auf **[!UICONTROL Fertig]**, um die Eigenschaften zu speichern, und schließlich auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 
 ### Argumente des Bind Read-Dienstes {#bindargument}
 
-Bind Read-Dienstargument an ein Benutzerprofilattribut, ein Anforderungsattribut oder einen Literalwert basierend auf einem Bindungswert. Der Wert wird als Argument an den Dienst übergeben, um die mit dem angegebenen Wert verknüpften Details aus der Datenquelle abzurufen.
+Bind Read-Dienstargument an ein User Profil-Attribut, ein Request-Attribut oder einen Literalwert basierend auf einem Bindungswert. Der Wert wird als Argument an den Dienst übergeben, um Details abzurufen, die mit dem angegebenen Wert aus der Datenquelle verknüpft sind.
 
 #### Literalwert {#literal-value}
 
@@ -172,7 +172,7 @@ In diesem Beispiel werden die mit **4367655678** als Wert für das `mobilenum` A
 
 #### Benutzerprofilattribut {#user-profile-attribute}
 
-Wählen Sie **[!UICONTROL Benutzerprofilattribut]** aus dem Dropdown-Menü &quot; **[!UICONTROL Bindung an]** &quot;und geben Sie den Attributnamen in das Feld &quot; **[!UICONTROL Bindungswert]** &quot;ein. Die Details des Benutzers, der bei der AEM-Instanz angemeldet ist, werden anhand des Attributnamens aus der Datenquelle abgerufen.
+Wählen Sie **[!UICONTROL User Profil Attribute]** aus dem Dropdownmenü **[!UICONTROL Bindung an]** und geben Sie den Attributnamen in das Feld **[!UICONTROL Bindungswert]** ein. Die Details des Benutzers, der bei der AEM-Instanz angemeldet ist, werden anhand des Attributnamens aus der Datenquelle abgerufen.
 
 Der im Feld **[!UICONTROL Bindungswert]** angegebene Attributname muss den vollständigen Bindungspfad bis zum Attributnamen des Benutzers enthalten. Öffnen Sie die folgende URL, um auf die Benutzerdetails in CRXDE zuzugreifen:
 
@@ -190,7 +190,7 @@ The `id` argument takes the value of the `empid` attribute of the user profile a
 
 Verwenden Sie das Anforderungsattribut, um die zugehörigen Eigenschaften aus der Datenquelle abzurufen.
 
-1. Wählen Sie im Dropdown-Menü &quot; **[!UICONTROL Bindung an&quot;die Option &quot;Attribut]** **[!UICONTROL anfordern&quot;und geben Sie den Attributnamen in das Feld &quot;]** Bindungswert **** &quot;ein.
+1. Wählen Sie im Dropdown-Menü &quot; **[!UICONTROL Bindung an]** &quot;die Option &quot;Attribut **** anfordern&quot;und geben Sie den Attributnamen in das Feld &quot; **[!UICONTROL Bindungswert]** &quot;ein.
 
 1. Öffnen Sie head.jsp, um die Attributdetails in CRXDE zu definieren:\
    `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
@@ -398,7 +398,7 @@ Auf ähnliche Weise können Sie andere Datenmodellobjekte und Dienste im Formula
 
 ## Automatisierte Validierung von Eingabedaten {#automated-validation-of-input-data}
 
-Das Formulardatenmodell validiert Daten, die beim Aufrufen der DermisBridge-API als Eingabe empfangen wurden (basierend auf den im Formulardatenmodell verfügbaren Validierungskriterien). Die Überprüfung basiert auf dem `ValidationOptions` Flag im Abfrageobjekt, das zum Aufrufen der API verwendet wird.
+Das Formulardatenmodell validiert Daten, die beim Aufrufen der DermisBridge-API als Eingabe empfangen wurden (basierend auf den im Formulardatenmodell verfügbaren Validierungskriterien). Die Überprüfung basiert auf dem `ValidationOptions` Flag im Abfrage-Objekt, das zum Aufrufen der API verwendet wird.
 
 Das Flag kann auf einen der folgenden Werte eingestellt werden:
 
@@ -416,12 +416,12 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 
 >[!NOTE]
 >
->Der Wert, den Sie für ein Attribut in den Eingabedaten angeben, muss mit dem für das Attribut im Metadatendokument definierten Datentyp übereinstimmen.\
+>Der Wert, den Sie für ein Attribut in den Eingabedaten angeben, muss mit dem Datentyp übereinstimmen, der für das Attribut im Metadaten-Dokument definiert wurde.\
 >Wenn der Wert nicht mit dem für das Attribut definierten Datentyp übereinstimmt, zeigt die DermisBridge-API unabhängig vom Wert des `ValidationOptions` Flag eine Ausnahme an. Wenn die Protokollebene auf &quot;Debug&quot;festgelegt ist, wird ein Fehler bei der Datei &quot; **error.log** &quot;protokolliert.
 
-Das Formulardatenmodell validiert Eingabedaten anhand einer Liste von Datentypbeschränkungen. Die Liste der Einschränkungen für Eingabedaten kann je nach Datenquelle variieren.
+Das Formulardatenmodell validiert Eingabedaten auf der Grundlage einer Liste von Datentypbeschränkungen. Die Liste von Einschränkungen für Eingabedaten kann je nach Datenquelle variieren.
 
-In der folgenden Tabelle sind die Einschränkungen für Eingabedaten auf der Grundlage der Datenquelle aufgeführt:
+In der folgenden Tabelle werden die Einschränkungen für Eingabedaten basierend auf der Datenquelle Liste:
 
 <table>
  <tbody> 
@@ -467,7 +467,7 @@ In der folgenden Tabelle sind die Einschränkungen für Eingabedaten auf der Gru
   </tr> 
   <tr> 
    <td>maxLength</td> 
-   <td>Gibt die obere Grenze für die Anzahl der Zeichen in einer Zeichenfolge an. Der als Obergrenze angegebene Wert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
+   <td>Gibt die Obergrenze für die Anzahl der Zeichen an, die in einer Zeichenfolge enthalten sind. Der als Obergrenze angegebene Wert kann auch dem Parameter in den Eingabedaten zugewiesen werden.</td> 
    <td>Swagger, WSDL, Odata und Datenbank</td> 
   </tr> 
   <tr> 
