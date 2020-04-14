@@ -3,7 +3,7 @@ title: Verwenden des PDF-Rasters zum Generieren von Darstellungen
 description: Dieser Artikel beschreibt, wie Sie mit der Adobe PDF Rasterizer-Bibliothek hochwertige Minaturansichten und Ausgabeformate erstellen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,9 +26,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    >
    >Die PDF Rasterizer-Bibliothek ist nur für Windows und Linux verfügbar.
 
-1. Access the AEM Assets workflow console at `https://[server]:[port]/workflow`.
-
-   Öffnen Sie die Workflow-Seite „DAM-Update-Asset“.
+1. Access the AEM Assets workflow console at `https://[server]:[port]/workflow`. Open the [!UICONTROL DAM Update Asset] workflow page.
 
 1. Gehen Sie folgendermaßen vor, um die Generierung von Miniaturansichten und Webwiedergaben für PDF- und AI-Dateien mit den Standardmethoden zu verhindern:
 
@@ -55,7 +53,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
    * `-p`: Seitenzahl. Der Standardwert ist „Alle Seiten“. „*“ steht für „Alle Seiten“.
 
-   * `-s`: Maximale Bildgröße (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
+   * `-s`: Maximale Bildabmessungen (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
 
    * `-t`: Ausgabebildtyp. Gültige Formate sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
 
@@ -88,7 +86,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
    * `-p`: Seitenzahl. Der Standardwert ist „Alle Seiten“. `*` kennzeichnet alle Seiten.
 
-   * `-s`: Maximale Bildgröße (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
+   * `-s`: Maximale Bildabmessungen (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
 
    * `-t`: Ausgabebildtyp. Gültige Formate sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
 
