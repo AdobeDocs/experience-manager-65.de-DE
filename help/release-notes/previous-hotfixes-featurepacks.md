@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -326,7 +326,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Cross-Site-Scripting-Angriff (XSS) über das Fenster für die Warnmeldung zu eingeschränktem Dateizugriff möglich, da das injizierte Bild sichtbar ist. NPR-30617: Hotfix für CQ-4270133
 * MultiTenant: Mandanten, die Ordnereigenschaften speichern, beachten sowohl die Erfolgsaufforderung als auch die Fehlermeldung, dass die Aktion nicht erfolgreich war: &quot;Eigenschaften können nicht bearbeitet werden. unzureichenden Berechtigungen nicht geändert werden konnten, was für Verwirrung sorgt. NPR-30545: Hotfix für CQ-4275333
 * Im Asset-Auswahldialog lässt sich keine Asset auswählen und somit auch nicht die Funktion zum Ersetzen der zugehörigen Quelle verwenden, um die Quelle zu aktualisieren. NPR-30502: Hotfix für CQ-4275029
-* Der Workflow „DAM-Update-Asset“ beim Hochladen großer mp4-Dateien den Status „veraltet“. NPR-30480: Hotfix für CQ-4271352
+* [!UICONTROL DAM Update Asset] Workflow - Im statischen Zustand beim Hochladen großer MP4-Dateien. NPR-30480: Hotfix für CQ-4271352
 * Die Funktion zum Erstellen von Prüfungsaufgaben schlägt aufgrund nicht vorhandener Nutzdaten fehl, was entsprechend auch alle nachfolgenden Aktionen im Zusammenhang mit Prüfungsaufgaben fehlschlagen lässt. NPR-30468: Hotfix für CQ-4274263
 * Problem bei der Verbindung mit Adobe Smart-Tag über DataPower. NPR-30026: Hotfix für CQ-4269457
 * Die Spaltenansicht der Assets-Benutzeroberfläche löst einen Fehler aus, wenn versucht wird, die Filter links von der Leiste zu öffnen. NPR-30501: Hotfix für CQ-4273862
@@ -497,7 +497,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. Weitere Informationen finden Sie unter [Konfigurieren von japanischen Wortumbrüchen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Assets
+### Assets 
 
 * Die DAM DMGGateway-Schnittstelle bietet jetzt Unterstützung für S3-Multipart. NPR-29740: Hotfix für CQ-4226303
 * Renditions preview generates `Only empty tenantId is currently supported` error after upgrading to [!DNL Experience Manager] 6.5. NPR-29986: Hotfix for CQ-4272353
@@ -709,7 +709,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 ### Enthaltende Feature Packs
 
-#### Assets - Einbezogen
+#### Assets - einschließlich
 
 * Multi-Site-Manager bietet jetzt Unterstützung für [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: Hotfix für CQ-4259922
 
