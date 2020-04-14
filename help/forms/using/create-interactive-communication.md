@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -127,7 +127,7 @@ For more information on the Interactive Communication authoring interface, see [
  </tbody>
 </table>
 
-Sie können die Bindung auch zwischen einem Zielgruppen- und einem Dokument-Fragment ersetzen, indem Sie das neue Fragment auf der Registerkarte &quot; **Assets** &quot;im Bereich &quot;Zielgruppe&quot;ablegen. Die blaue Farbschattierung des Bereichs Zielgruppe beim Ziehen des Fragments zeigt an, dass das Dokument-Fragment in den Bereich Zielgruppe verschoben werden kann.
+Sie können die Bindung auch zwischen einem Zielgruppen- und einem Dokument-Fragment ersetzen, indem Sie das neue Fragment auf der Registerkarte &quot; **[!UICONTROL Assets]** &quot;im Bereich &quot;Zielgruppe&quot;ablegen. Die blaue Farbschattierung des Bereichs Zielgruppe beim Ziehen des Fragments zeigt an, dass das Dokument-Fragment in den Bereich Zielgruppe verschoben werden kann.
 
 Weitere Informationen zu Dokumentfragmenten finden Sie unter [Dokumentfragmente](/help/forms/using/document-fragments.md).
 
@@ -178,11 +178,11 @@ Tippen Sie auf das Fragment Dokument, dann auf ![configure_icon](assets/configur
 
 1. Switch to **[!UICONTROL Web Channel]**. Der Web-Kanal wird im Editor für interaktive Kommunikation angezeigt. Wenn Sie zum ersten Mal vom Print-Kanal zum Web-Kanal wechseln, erfolgt die automatische Synchronisierung. For more information, see [Synchronizing web channel from the print channel](../../forms/using/create-interactive-communication.md#synchronize).
 
-   Da wir in diesem Beispiel Druck als Master für das Web verwenden, werden die Platzhalter, der Inhalt und die Datenbindung des Druckkanals mit dem Webkanal synchronisiert. Sie können jedoch den jeweiligen Inhalt im Web Kanal ändern und anpassen. [Die Vererbung](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) für die Zielgruppen und Variablen abbrechen, die mit dem Kanal &quot;Drucken&quot;generiert wurden, um Inhalte anpassen zu können.
+   Da wir in diesem Beispiel Druck als Master für das Web verwenden, werden die Platzhalter, der Inhalt und die Datenbindung des Druckkanals mit dem Webkanal synchronisiert. Sie können jedoch den jeweiligen Inhalt im Web Kanal ändern und anpassen. [Die Vererbung](#cancelinheritance) für die Zielgruppen und Variablen abbrechen, die mit dem Kanal &quot;Drucken&quot;generiert wurden, um Inhalte anpassen zu können.
 
    ![webchannelAssets](assets/webchannelassets.png)
 
-   Tippen Sie auf das Fragment Dokument, dann auf ![configure_icon](assets/configure_icon.png) (Konfigurieren) und dann auf **[!UICONTROL Eigenschaften]** im Sidekick der interaktiven Kommunikation. Im Abschnitt &quot; **[!UICONTROL Variablen und Datenmodellobjekte]** &quot;werden die Variablen, einschließlich der ausgeblendeten Variablen, und die Datenmodellobjekte, die in den Dokument-Fragmenten verwendet werden, Liste. Verwenden Sie das Symbol zum ![Bearbeiten](assets/edit.svg) (Bearbeiten) neben jedem Datenmodellobjekt oder jeder Datenvariablen, um die Eigenschaften zu bearbeiten. Darüber hinaus können Sie für Dokument-Fragmente, die mit Print Kanal in Web Kanal [automatisch generiert](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) wurden, neben jedem Datenmodellobjekt und jeder Datenvariable das Symbol ![](assets/cancelinheritance.png) (Vererbung abbrechen) verwenden, um die Vererbung zu [beenden und zu bearbeiten](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) .
+   Tippen Sie auf das Fragment Dokument, dann auf ![configure_icon](assets/configure_icon.png) (Konfigurieren) und dann auf **[!UICONTROL Eigenschaften]** im Sidekick der interaktiven Kommunikation. Im Abschnitt &quot; **[!UICONTROL Variablen und Datenmodellobjekte]** &quot;werden die Variablen, einschließlich der ausgeblendeten Variablen, und die Datenmodellobjekte, die in den Dokument-Fragmenten verwendet werden, Liste. Verwenden Sie das Symbol zum ![Bearbeiten](assets/edit.svg) (Bearbeiten) neben jedem Datenmodellobjekt oder jeder Datenvariablen, um die Eigenschaften zu bearbeiten. Darüber hinaus können Sie für Dokument-Fragmente, die mit Print Kanal in Web Kanal [automatisch generiert](#synchronize) wurden, neben jedem Datenmodellobjekt und jeder Datenvariable das Symbol ![](assets/cancelinheritance.png) (Vererbung abbrechen) verwenden, um die Vererbung zu [beenden und zu bearbeiten](#cancelinheritance) .
 
 1. Um weitere Komponenten im Webkanal hinzuzufügen, tippen Sie bei dem ausgewählten Webkanal auf **[!UICONTROL Komponenten]**. Ziehen Sie Komponenten nach Bedarf per Drag &amp; Drop in den Web-Kanal Ihrer interaktiven Kommunikation und konfigurieren Sie sie.
 
@@ -581,9 +581,9 @@ Tippen Sie auf die Komponente, um die folgenden Optionen Ansicht:
 * **Übergeordnet:** Wählen Sie das übergeordnete Element einer Komponente aus.
 * **Ansicht SOM-Ausdruck:** Ansicht des [SOM-Ausdrucks](../../forms/using/using-som-expressions-adaptive-forms.md) für die Komponente.
 
-* **Gruppenobjekte im Bedienfeld:** Gruppieren Sie die Komponenten in einem Bereich, um Vorgänge an diesen Komponenten gleichzeitig durchführen zu können. Weitere Informationen finden Sie unter **[Objekte in Bedienfeld](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**gruppieren.
+* **Gruppenobjekte im Bedienfeld:** Gruppieren Sie die Komponenten in einem Bereich, um Vorgänge an diesen Komponenten gleichzeitig durchführen zu können. Weitere Informationen finden Sie unter [Objekte in Bedienfeld](#groupobjectspanel)gruppieren.
 
-* **Vererbung abbrechen:** Die [Vererbung](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) der Komponenten im Bereich &quot;Zielgruppe&quot;abbrechen, um sie zu bearbeiten.
+* **Vererbung abbrechen:** Die [Vererbung](#cancelinheritance) der Komponenten im Bereich &quot;Zielgruppe&quot;abbrechen, um sie zu bearbeiten.
 
 ### Group objects in Panel {#groupobjectspanel}
 
