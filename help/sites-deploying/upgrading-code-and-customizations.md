@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,7 +26,7 @@ Beim Planen einer Aktualisierung sollten folgende Bereiche der Implementierung u
 * [AEM-Anpassungen](#aem-customizations)
 * [Testverfahren](#testing-procedure) 
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 1. **Mustererkennung** : Führen Sie den Musterdetektor wie in der Aktualisierungsplanung beschrieben und auf [dieser Seite](/help/sites-deploying/pattern-detector.md) detailliert beschrieben aus, um einen Musterdetektorbericht mit weiteren Details zu Bereichen zu erhalten, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielgruppe von AEM behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.5 kompatibel ist, können Sie dennoch eine neue Entwicklung für die Verwendung der 6.5-Funktionalität durchführen. Sie benötigen sie jedoch nicht nur zur Aufrechterhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.5-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
 
@@ -150,7 +150,7 @@ ContextHub-Konfigurationen sind von einer Aktualisierung betroffen. Anweisungen,
 
 ### Workflow-Anpassungen {#workflow-customizations}
 
-Vorkonfigurierte Workflows werden häufig angepasst, um Funktionen hinzuzufügen oder nicht erforderliche Funktionen zu löschen. Der Workflow „DAM-Update-Asset“ ist ein typischer Workflow, der häufig angepasst wird. Erstellen Sie eine Sicherungskopie aller für eine angepasste Implementierung erforderlichen Workflows und speichern Sie diese in der Versionskontrolle, da sie möglicherweise bei einer Aktualisierung überschrieben werden.
+Vorkonfigurierte Workflows werden häufig angepasst, um Funktionen hinzuzufügen oder nicht erforderliche Funktionen zu löschen. A common workflow that is customized is the [!UICONTROL DAM Update Asset] workflow. Erstellen Sie eine Sicherungskopie aller für eine angepasste Implementierung erforderlichen Workflows und speichern Sie diese in der Versionskontrolle, da sie möglicherweise bei einer Aktualisierung überschrieben werden.
 
 ### Bearbeitbare Vorlagen {#editable-templates}
 
@@ -187,7 +187,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
    <td>Testen von AEM-Implementierung und zugehörigem Code auf der Veröffentlichungsschicht<br /> durch den Dispatcher. Muss Kriterien für Seitenaktualisierungen und<br /> Cache-Invalidierungen enthalten.</td>
   </tr>
   <tr>
-   <td>Authoring</td>
+   <td>Authoring – </td>
    <td>Testen von AEM-Implementierung und zugehörigem Code auf der Autorenschicht. Dabei sollten Seiten, Komponenten-Authoring und Dialoge berücksichtigt werden.</td>
   </tr>
   <tr>
@@ -211,7 +211,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
    <td>Alle Erweiterungen und Anpassungen der AEM-Benutzeroberfläche in der Autorenumgebung.</td>
   </tr>
   <tr>
-   <td>Workflows</td>
+   <td>Workflows  </td>
    <td>Benutzerdefinierte und/oder vorkonfigurierte Workflows und Funktionen.</td>
   </tr>
   <tr>
