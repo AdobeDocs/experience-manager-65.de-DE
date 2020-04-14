@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Erfahren Sie mehr über die zentralisierte Verwaltung von AEM-Assets für Video-Assets, mit denen Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt aus AEM Assets auf Videos für dynamische Medien Classic zugreifen können. Durch die Integration von Videos aus Dynamic Media Classic wird die Reichweite optimierter Videos auf alle Bildschirme erweitert.
+description: Erfahren Sie mehr über die zentralisierte Verwaltung von AEM-Assets für Video-Assets, mit denen Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt von AEM Assets aus auf Videos für dynamische Medien Classic zugreifen können. Durch die Integration von Videos aus Dynamic Media Classic wird die Reichweite optimierter Videos auf alle Bildschirme erweitert.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,7 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -29,7 +29,7 @@ Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung 
 * FFMPEG-Miniaturen
 * FFMPEG-Kodierung
 
-Beachten Sie, dass beim Aktivieren und Konfigurieren der Dynamic Media Classic-Integration diese beiden Workflow-Schritte nicht automatisch aus dem vordefinierten DAM-Erfassungsarbeitsablauf entfernt oder deaktiviert werden. Wenn Sie die FFMPEG-basierte Videokodierung in AEM bereits nutzen, ist es wahrscheinlich, dass FFMPEG in Ihren Erstellungsumgebungen bereits installiert ist. In diesem Fall würde ein neues mit DAM erfasstes Video zweimal kodiert werden: Einmal vom FFMPEG-Encoder und einmal von der Integration von Dynamic Media Classic.
+Beachten Sie, dass beim Aktivieren und Konfigurieren der Dynamic Media Classic-Integration diese beiden Workflow-Schritte nicht automatisch aus dem vordefinierten DAM-Erfassungsarbeitsablauf entfernt oder deaktiviert werden. Wenn Sie die FFMPEG-basierte Videokodierung in AEM bereits nutzen, ist es wahrscheinlich, dass FFMPEG in Ihren Erstellungsumgebungen bereits installiert ist. In diesem Fall würde ein neues Video, das mit DAM erfasst wird, zweimal kodiert werden: Einmal vom FFMPEG-Encoder und einmal von der Integration von Dynamic Media Classic.
 
 Wenn Sie die FFMPEG-basierte Videokodierung in AEM konfiguriert und FFMPEG installiert haben, empfiehlt Adobe, die beiden FFMPEG-Workflows aus Ihren DAM-Aufnahme-Workflows zu entfernen.
 
@@ -97,7 +97,7 @@ Wenn Sie in AEM die Viewer- und Kodierungsvorlagen für Videos aktualisieren mü
 ## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
 1. Navigieren Sie zum CQ DAM-Zielordner, in dem Sie Ihre Cloud-Konfiguration mit Scene7-Kodierungsprofilen eingerichtet haben.
-1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Mastervideo hochzuladen. Video uploading and encoding is complete after the DAM Update Asset workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Mastervideo hochzuladen. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorlage
 
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Konfigurationskonsole**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Erstellen Sie ein neues S7-Videoprofil. **[!UICONTROL In der]** Neuen... wählen Sie &quot;Seite **[!UICONTROL erstellen]** &quot;und dann die Vorlage &quot;Scene7-Videoprofil&quot;aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Erstellen Sie ein neues S7-Videoprofil. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -165,7 +165,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorlage
 
 #### Configuring design {#configuring-design}
 
-The **[!UICONTROL Foundation Video]** component must know about what video profiles to use in order to build the video sources list. Sie müssen das Dialogfeld für den Entwurf der Videokomponenten öffnen und den Komponentenentwurf für die Verwendung der neuen Videoprofile konfigurieren.
+The **[!UICONTROL Foundation Video]** component must know about what video profiles to use in order to build the video sources list. Sie müssen das Dialogfeld für den Entwurf von Videokomponenten öffnen und den Komponentenentwurf für die Verwendung der neuen Video-Profil konfigurieren.
 
 >[!NOTE]
 >
@@ -175,8 +175,8 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 >
 >Bei Änderungen am Design ist eine Aktivierung des Designs erforderlich, damit sie für die Veröffentlichung übernommen wird.
 
-1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Löschen Sie dann die vordefinierten Profile und fügen Sie die neuen S7-Videoprofile hinzu. Die Reihenfolge der Profilliste im Dialogfeld &quot;Entwurf&quot;definiert die Reihenfolge des Videoquellen-Elements beim Rendern.
-1. Bei Browsern, die HTML5 nicht unterstützen, ermöglicht die Videokomponente die Konfiguration einer Flash-Ausweichmöglichkeit. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Konfigurieren Sie die Flash Player-Einstellungen und weisen Sie dem Flash-Player ein Ausweichprofil zu.
+1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Löschen Sie dann die vordefinierten Profil und fügen Sie die neuen S7-Profil hinzu. Die Reihenfolge der Profil-Liste im Dialogfeld &quot;Entwurf&quot;definiert die Reihenfolge des Videoquellen-Elements beim Rendern.
+1. Bei Browsern, die HTML5 nicht unterstützen, ermöglicht die Videokomponente die Konfiguration einer Flash-Ausweichmöglichkeit. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Konfigurieren Sie die Flash Player-Einstellungen und weisen Sie dem Flash-Player ein Fallback-Profil zu.
 
 #### Checkliste {#checklist}
 
