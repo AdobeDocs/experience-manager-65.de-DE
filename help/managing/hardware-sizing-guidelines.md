@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -54,9 +54,9 @@ Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsu
 
 In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung, in denen Sie Projektphasen inszenieren können:
 
-* **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Best Practice ist, mit einer Entwicklungsumgebung pro Entwickler zu arbeiten (normalerweise lokale Installationen auf ihren persönlichen Systemen).
+* **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Best Practice ist es, mit einer Entwicklungs-Umgebung pro Entwickler zu arbeiten (in der Regel lokale Installationen auf eigenen Systemen).
 
-* **Author-Testumgebung**, um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
+* **Author-Test-Umgebung**, um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
 
 * **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
@@ -146,7 +146,7 @@ Für solche Szenarien führte Adobe Benchmarktests auf einem Shared-Nothing-Clus
 
    * **Ergebnis** Der maximale Durchsatz für eine einfache Seitenerstellung wie oben beschrieben (als eine Transaktion betrachtet) liegt bei 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
 
-* **Benchmark-Test 2b** Mit einem Active-Active-nichts-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz, wenn das Lastenprofil eine Mischung aus neuer Seitenerstellung (10 %), Änderung einer vorhandenen Seite (80 %) und anschließender Erstellung und Änderung einer Seite (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
+* **Benchmark-Test 2b** Mit einem Active-Active-nichts-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz, wenn das Load-Profil eine Mischung aus neuer Seitenerstellung (10 %), Änderung einer vorhandenen Seite (80 %) und anschließender Erstellung und Änderung einer Seite (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
 
    * **Ergebnis** Der maximale Durchsatz für ein solches Mischbetriebsszenario lag bei 6288 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 93 % im Vergleich zu einer eigenständigen Autoreninstanz für denselben Benchmarktest.
 
@@ -159,7 +159,7 @@ Die beiden oben genannten Tests zeigen deutlich, dass AEM für Autoren, die grun
 
 Auf einer typischen Website geschieht das meiste Authoring während der Projektphase. Nach dem Start der Website sinkt die Anzahl der parallel arbeitenden Autoren in der Regel auf einen niedrigeren (Regelbetriebs-)Durchschnitt.
 
-Sie können die für die Autorenumgebung erforderliche Anzahl von Computern (oder CPUs) wie folgt berechnen:
+Sie können die für die Authoring-Umgebung erforderliche Anzahl von Computern (oder CPUs) wie folgt berechnen:
 
 `n = numberOfParallelAuthors / 30`
 
@@ -171,7 +171,7 @@ Please also see the additional comments on [Parallelization](/help/managing/hard
 
 Normalerweise können Sie für Ihre Autorenumgebung die gleiche Hardware verwenden, die für Ihre Veröffentlichungsumgebung empfohlen wird. Normalerweise ist der Website-Traffic auf Autorensystemen viel geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM-Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Leseoperationen; mit anderen Worten, ein AEM-Cluster skaliert gut mit Autoren, die grundlegende Bearbeitungsoperationen durchführen.
 
-Die Benchmark-Tests bei Adobe wurden unter Verwendung des Betriebssystems RedHat 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5 Hardware-Plattform mit der folgenden Konfiguration ausgeführt wurde:
+Die Benchmark-Tests bei Adobe wurden unter Verwendung des Betriebssystems RedHat 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5-Hardwareplattform mit der folgenden Konfiguration ausgeführt wurde:
 
 * Zwei Quad-Core Intel Xeon X5450 CPUs mit 3,00 GHz
 * 8 GB RAM
@@ -213,7 +213,7 @@ Mithilfe der folgenden Formel können Sie eine Schätzung der Gesamtkomplexität
 
 `complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
 
-Anhand der Komplexität können Sie die Anzahl der Server (oder CPU-Kerne) ermitteln, die Sie für die Veröffentlichungsumgebung benötigen:
+Anhand der Komplexität können Sie die Anzahl der Server (oder CPU-Kerne) ermitteln, die Sie für die Umgebung zur Veröffentlichung benötigen:
 
 `n = (traffic * complexity / 1000 ) * activations`
 
@@ -222,7 +222,7 @@ Die Variablen in der Gleichung lauten wie folgt:
 <table>
  <tbody>
   <tr>
-   <td>traffic</td>
+   <td>Traffic</td>
    <td>Der erwartete Spitzenverkehr pro Sekunde. Man kann dies als die Anzahl der Seitenaufrufe pro Tag, geteilt durch 35.000, schätzen.</td>
   </tr>
   <tr>
@@ -230,9 +230,9 @@ Die Variablen in der Gleichung lauten wie folgt:
    <td><p>Verwenden Sie 1 für eine einfache Anwendung, 2 für eine komplexe Anwendung oder einen dazwischen liegenden Wert:</p>
     <ul>
      <li>1 - eine vollständig anonyme, inhaltsorientierte Site</li>
-     <li>1.1 - eine vollständig anonyme, inhaltsorientierte Site mit clientseitiger/Target-Personalisierung</li>
-     <li>1.5 - eine inhaltsorientierte Site mit anonymen und angemeldeten Abschnitten, clientseitige/Target-Personalisierung</li>
-     <li>1.7 - für eine inhaltsorientierte Site mit anonymen und angemeldeten Abschnitten, clientseitige/Target-Personalisierung und einige benutzergenerierte Inhalte</li>
+     <li>1.1 - eine vollständig anonyme, inhaltsorientierte Site mit clientseitiger/Zielgruppe-Personalisierung</li>
+     <li>1.5 - eine inhaltsorientierte Site mit anonymen und angemeldeten Bereichen, clientseitige/Zielgruppe-Personalisierung</li>
+     <li>1.7 - für eine inhaltsorientierte Site mit anonymen und angemeldeten Bereichen, clientseitige/benutzerspezifische Personalisierung und einige benutzergenerierte Zielgruppen</li>
      <li>2 - bei denen die gesamte Site angemeldet werden muss, mit umfangreichen benutzergenerierten Inhalten und einer Vielzahl von Personalisierungstechniken</li>
     </ul> </td>
   </tr>
@@ -246,7 +246,7 @@ Die Variablen in der Gleichung lauten wie folgt:
   </tr>
   <tr>
    <td>Aktivierungen</td>
-   <td>Anzahl der durchschnittlichen Aktivierungen (Replizierung von Seiten mit durchschnittlicher Größe und Assets vom Autor zur Veröffentlichungsstufe) pro Stunde geteilt durch x, wobei x die Anzahl der auf einem System durchgeführten Aktivierungen ohne Leistungsbeeinträchtigungen zu anderen vom System verarbeiteten Aufgaben ist. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
+   <td>Anzahl der durchschnittlichen Aktivierungen (Replizierung von Seiten mit mittlerer Größe und Assets vom Autor zur Veröffentlichungsstufe) pro Stunde geteilt durch x, wobei x die Anzahl der Aktivierungen ist, die auf einem System durchgeführt werden, ohne dass Auswirkungen auf die Leistung auf andere vom System verarbeitete Aufgaben auftreten. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -257,14 +257,14 @@ Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere W
 ・ 1024 MB JVM RAM* ・ CPU mit niedriger bis mittlerer Leistung
 
 * Komplexität zwischen 4 und 8:
-・ 2048 MB JVM RAM* ・ Mid to high-performance CPU
+・ 2048 MB JVM RAM* ・ Mid-to-high-performance CPU
 
 * Komplexität über 8:
 ・ 4096 MB JVM RAM* ・ High-End-CPU
 
 >[!NOTE]
 >
->* Reservieren Sie zusätzlich zu dem für Ihre JVM benötigten Arbeitsspeicher genügend RAM für Ihr Betriebssystem.
+>* Reservieren Sie zusätzlich zu dem für Ihre JVM benötigten Arbeitsspeicher genügend Arbeitsspeicher für Ihr Betriebssystem.
 
 ## Zusätzliche anwendungsspezifische Berechnungen {#additional-use-case-specific-calculations}
 
@@ -274,7 +274,7 @@ Neben der Berechnung für eine Standard-Webanwendung müssen Sie ggf. spezifisch
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardwareressourcen erforderlich; die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
-Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow „DAM-Update-Asset“ so, dass Rohbilder mit dem [Camera Raw-Paket](/help/assets/camera-raw.md) aufgenommen werden.
+Allocate at least 16GB of heap and configure the [!UICONTROL DAM Update Asset] workflow to use the [Camera Raw package](/help/assets/camera-raw.md) for the ingestion of raw images.
 
 >[!NOTE]
 Ein höherer Datendurchsatz bedeutet, dass die Rechnerressourcen mit den System-E/As Schritt halten müssen und umgekehrt. Wenn beispielsweise Workflows durch den Import von Bildern gestartet werden, kann das Hochladen vieler Bilder über WebDAV zu einem Rückstau von Workflows führen.
