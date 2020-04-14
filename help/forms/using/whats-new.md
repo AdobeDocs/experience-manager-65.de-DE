@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Informationen zum Konfigurieren und Verwenden von Transaktionsberichten finden S
 
 **Datenanzeigemuster definieren**
 
-Autoren interaktiver Kommunikation können jetzt [Datenanzeigemuster](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) für Felder, Variablen und Formulardatenmodellelemente definieren. Beispiel: Datumsformat, Währung oder Telefonformat.
+Autoren interaktiver Kommunikation können jetzt [Datenanzeigemuster](create-interactive-communication.md#datadisplaypatterns) für Felder, Variablen und Formulardatenmodellelemente definieren. Beispiel: Datumsformat, Währung oder Telefonformat.
 
 **Neue Diagrammtypen verwenden**
 
@@ -40,31 +40,31 @@ Sie können jetzt Diagramme und Diagramme mit [Quadranten mit mehreren Reihen](.
 
 **Spalten in einer Tabelle sortieren**
 
-In der interaktiven Kommunikation können Sie jetzt Tabellenspalten [sortieren](../../forms/using/create-interactive-communication.md#sortcolumns) . Sie können Tabellenspalten mit statischen Text- oder Datenmodellobjekten binden und sortieren.
+In der interaktiven Kommunikation können Sie jetzt Tabellenspalten [sortieren](../../forms/using/create-interactive-communication.md#sortcolumns) . Sie können Tabellenspalten mit statischem Text oder Datenmodellobjekten binden und sortieren.
 
-**Neue Komponenten in einem Webkanal verwenden**
+**Neue Komponenten in einem Web-Kanal verwenden**
 
-Sie können dem Webkanal jetzt Schaltflächen- und Trennzeichenkomponenten hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen einer Schaltflächenkomponente zum Webkanal](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) und zur [Trennzeichenkomponente im Webkanal](../../forms/using/create-interactive-communication.md#separatorcomponent).
+Sie können dem Web-Kanal jetzt Schaltflächen- und Trennzeichenkomponenten hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen Schaltflächenkomponente zur Webkomponente &quot;Kanal](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) &quot;und &quot; [Trennzeichenkomponente&quot;in Web Kanal](../../forms/using/create-interactive-communication.md#separatorcomponent).
 
 **Layout-Modus zur Größenanpassung von Komponenten**
 
-Sie können jetzt mithilfe einer WYSIWYG-Schnittstelle zum [Layoutmodus](../../forms/using/resize-using-layout-mode.md) wechseln, um die Größe von Komponenten im Webkanal zu ändern.
+Sie können jetzt mithilfe einer WYSIWYG-Schnittstelle zum [Layoutmodus](../../forms/using/resize-using-layout-mode.md) wechseln, um die Größe von Komponenten im Web Kanal zu ändern.
 
 **Verbesserungen der Benutzerfreundlichkeit**
 
-Autoren interaktiver Kommunikation können beim Erstellen von Schriftstücken jetzt verschiedene, einfach zu bedienende Vorgänge verwenden. Die Liste umfasst:
+Autoren interaktiver Kommunikation können beim Erstellen von Schriftstücken jetzt verschiedene, einfach zu bedienende Vorgänge verwenden. Die Liste der Maßnahmen umfasst:
 
-* [Rückgängigmachen von Wiederholungsaktionen in Druck- und Webkanälen](../../forms/using/create-interactive-communication.md#undoredoactions)
-* [Hinzufügen von Variablen in einem Dokumentfragment mit dem @-Symbol](../../forms/using/texts-interactive-communications.md#searchvariables)
-* [Hinzufügen von Datenmodellelementen in einem Dokumentfragment mit dem @-Symbol](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
-* [Löschen oder Hinzufügen eines Webkanals zu einer vorhandenen interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
+* [Rückgängigmachen von Wiederholungsaktionen in Druck- und Web-Kanälen](../../forms/using/create-interactive-communication.md#undoredoactions)
+* [Variablen in einem Dokument-Fragment mit dem Symbol @ Hinzufügen](../../forms/using/texts-interactive-communications.md#searchvariables)
+* [Hinzufügen von Datenmodellelementen in einem Dokument-Fragment mit dem @-Symbol](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
+* [Löschen oder Hinzufügen eines Web-Kanals zu einer vorhandenen interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
 * [Binden von Datenquellenelementen mit Feldern und Variablen mithilfe von Drag &amp; Drop-Aktionen](../../forms/using/create-interactive-communication.md#binddatasourceelements)
 * [Ungebundene Felder und Variablen beim Authoring der interaktiven Kommunikation hervorheben](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
-* [Durchführen zusätzlicher Aktionen wie Kopieren, Gruppieren oder mehr für geerbte Komponenten in einem Webkanal](../../forms/using/create-interactive-communication.md#componenttoolbar)
+* [Durchführen zusätzlicher Aktionen wie Kopieren, Gruppieren oder mehr für geerbte Komponenten in einem Web Kanal](../../forms/using/create-interactive-communication.md#componenttoolbar)
 
 **Verbesserungen beim Synchronisierungsprozess**
 
-Das Webkanallayout, das automatisch mithilfe des Druckkanals erstellt wird, wurde um einige Verbesserungen erweitert.
+Das Web-Kanal-Layout, das mit dem Kanal &quot;Drucken&quot;automatisch generiert wird, wurde um einige Verbesserungen erweitert.
 
 ![Diagramme für interaktive Kommunikation](assets/interactive-communication-charts.png)
 
@@ -72,43 +72,43 @@ Das Webkanallayout, das automatisch mithilfe des Druckkanals erstellt wird, wurd
 
 ### Verwenden der Cloud-basierten digitalen Signaturen von Adobe Sign in adaptiven Formularen {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-basierte digitale Signaturen](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) oder Remote-Signaturen sind eine neue Generation digitaler Signaturen, die über Desktop, Mobilgeräte und das Web funktioniert — und die höchste Kompatibilitätsstufe und die höchste Sicherheit für die Signiererauthentifizierung erfüllen. Sie können jetzt ein adaptives Formular[ mit Cloud-basierten digitalen Signaturen ](../../forms/using/working-with-adobe-sign.md)signieren.
+[Cloud-basierte digitale Signaturen](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) oder Remote-Signaturen sind eine neue Generation digitaler Signaturen, die über Desktop, Mobilgeräte und das Web funktioniert — und die höchste Kompatibilitätsstufe und die höchste Sicherheit für die Signiererauthentifizierung erfüllen. Sie können jetzt ein adaptives Formular [mit Cloud-basierten digitalen Signaturen](../../forms/using/working-with-adobe-sign.md) signieren.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-Mit AEM Forms können Sie ein adaptives Formular[ oder eine interaktive Kommunikation ](../../forms/using/embed-adaptive-form-aem-sites-spa.md)nahtlos in eine Einzelseitenanwendung (SPA) von AEM Sites einbetten. Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig. Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem adaptiven Formular oder der interaktiven Kommunikation zu interagieren.
+Mit AEM Forms können Sie ein adaptives Formular [oder eine interaktive Kommunikation](../../forms/using/embed-adaptive-form-aem-sites-spa.md) nahtlos in eine Einzelseitenanwendung (SPA) von AEM Sites einbetten. Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig. Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem adaptiven Formular oder der interaktiven Kommunikation zu interagieren.
 
 #### Spalten in Tabellen des adaptiven Formulars sortieren {#sort-columns-of-adaptive-form-tables}
 
-Sie können jede Spalte einer Tabelle[ für adaptives Formular in auf- oder absteigender Reihenfolge ](../../forms/using/adaptive-forms-tables.md#sortcolumnstable)sortieren. Sie können die Sortierung auf Tabellenspalten mit statischem Text, Datenmodellobjekteigenschaften oder einer Kombination aus statischen Text- und Datenmodellobjekteigenschaften anwenden.
+Sie können jede Spalte einer Tabelle [für adaptives Formular in auf- oder absteigender Reihenfolge](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) sortieren. Sie können die Sortierung auf Tabellenspalten mit statischem Text, Datenmodellobjekteigenschaften oder einer Kombination aus statischen Text- und Datenmodellobjekteigenschaften anwenden.
 
 #### Die Verfügbarkeit von Vorlagen für adaptive Formulare auf bestimmte Pfade beschränken {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
 Adaptive Formulare unterstützen jetzt die Eigenschaft cq:allowedPaths. Die Eigenschaft [beschränkt die Verfügbarkeit von Vorlagen für adaptive Formulare auf bestimmte Pfade](../../forms/using/creating-adaptive-form.md#main-pars-text).
 
-#### Kontrollkästchen dynamisch zum adaptiven Formular hinzufügen {#add-check-boxes-to-the-adaptive-form-dynamically}
+#### Kontrollkästchen für das adaptive Formular dynamisch Hinzufügen {#add-check-boxes-to-the-adaptive-form-dynamically}
 
-Sie können nun Regeln definieren, um dem adaptiven Formular basierend auf benutzerdefinierten Funktionen, Formularobjekten oder Objekteigenschaften dynamisch[ Kontrollkästchen ](../../forms/using/rule-editor.md#setpropertyrule)hinzuzufügen.
+Sie können nun Regeln definieren, um dem adaptiven Formular basierend auf benutzerdefinierten Funktionen, Formularobjekten oder Objekteigenschaften dynamisch [Kontrollkästchen](../../forms/using/rule-editor.md#setpropertyrule) hinzuzufügen.
 
 ## AEM-Workflows {#aem-workflows}
 
-### Variablen in AEM-Workflows verwenden {#use-variables-in-aem-workflows}
+### Variablen in AEM Workflows verwenden {#use-variables-in-aem-workflows}
 
 Variablen ermöglichen Arbeitsablaufschritte zum Speichern und Übergeben von Metadaten über Arbeitsablaufschritte zur Laufzeit. Sie können verschiedene Typen von Variablen zum Speichern verschiedener Datentypen erstellen. Beispielsweise Ganzzahlen, Zeichenfolgen, Dokumente oder Formulardatenmodellinstanzen. In der Regel verwenden Sie eine Variable oder eine Sammlung von Variablen, wenn Sie eine Entscheidung basierend auf dem Wert treffen müssen, den sie enthält, oder Informationen speichern möchten, die Sie später in einem Prozess benötigen.
 
-Variablen sind eine Erweiterung der in der vorherigen Version verfügbaren [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) -Schnittstelle. Auf diese Weise sparen Sie Zeit beim Entwickeln von benutzerspezifischem ECMAScript-Code zum Abrufen und Aktualisieren von Metadatenwerten. Sie verwenden weiterhin die MetaDataMap-Schnittstelle und den ECMAScript-Code zum Bearbeiten von Metadaten. Die Verwendung von Variablen über MetaDataMap und ECMAScript bietet unter anderem folgende Vorteile:
+Variablen sind eine Erweiterung der in der vorherigen Version verfügbaren [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) -Schnittstelle. Auf diese Weise sparen Sie Zeit beim Entwickeln von benutzerspezifischem ECMAScript-Code, der zum Abrufen und Aktualisieren von Metadatenwerten verwendet wird. Sie verwenden weiterhin die MetaDataMap-Schnittstelle und den ECMAScript-Code zum Bearbeiten von Metadaten. Die Verwendung von Variablen über MetaDataMap und ECMAScript bietet unter anderem folgende Vorteile:
 
 * Dynamische Speicherung, Aktualisierung und Verwendung von Werten, die in einer Variablen gespeichert sind, im gesamten Workflow ohne Verwendung von benutzerspezifischem Code
 * Abrufen und Aktualisieren von Werten direkt in ein Formulardatenmodell und eine Datendatei (XML/JSON) eines gesendeten Formulars
-* Speichern vollständiger Dokumente in einer Variablen zur Dokumentverarbeitung
+* Speichern Sie vollständige Dokumente in einer Variablen, um die Verarbeitung von Dokumenten durchzuführen
 
-Der Schritt &quot;Gehe zu&quot;, &quot;ODER teilen&quot;, und alle AEM Forms-Workflow-Schritte unterstützen Variablen. Sie können die MetaDataMap-Schnittstelle verwenden, um auf Variablen in Workflow-Schritten zuzugreifen, die keine native Unterstützung für Variablen haben. Weitere Informationen finden Sie unter [Variablen in AEM-Workflows](../../forms/using/variable-in-aem-workflows.md).
+Der Schritt &quot;Gehe zu&quot;, &quot;ODER teilen&quot;, und alle AEM Forms-Workflow-Schritte unterstützen Variablen. Sie können die MetaDataMap-Schnittstelle verwenden, um auf Variablen in Workflow-Schritten zuzugreifen, die keine native Unterstützung für Variablen haben. Weitere Informationen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
 
 ![Festlegen einer Variablen für einen Workflow](assets/variable.png)
 
 #### Verwenden eines Workflows mit verschiedenen adaptiven Formularen {#use-a-workflow-with-different-adaptive-forms}
 
-Sie können ein adaptives Formular für die Zuweisungsaufgabe[ und das Dokument des Datensatzschritts für formularzentrierte Arbeitsabläufe zur Laufzeit ](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step)angeben. Dadurch kann ein Workflow mit verschiedenen adaptiven Formularen arbeiten. Sie können die Methode zur Auswahl eines adaptiven Formulars beim Entwerfen des Workflows festlegen. Das adaptive Formular kann sich an einem absoluten Pfad befinden, als Payload an den Workflow gesendet werden, oder an einem Pfad verfügbar sein, der mithilfe einer Variablen berechnet wird.
+Sie können ein adaptives Formular für die zuweisende Aufgabe [und das Dokument des Datensatzschritts der formularzentrierten Workflows zur Laufzeit](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) angeben. Dadurch kann ein Workflow mit verschiedenen adaptiven Formularen arbeiten. Sie können die Methode zur Auswahl eines adaptiven Formulars beim Entwerfen des Workflows festlegen. Das adaptive Formular kann sich an einem absoluten Pfad befinden, als Payload an den Workflow gesendet werden, oder an einem Pfad verfügbar sein, der mithilfe einer Variablen berechnet wird.
 
 #### Erweiterte Protokollierungsfunktionen für formularorientierte Workflow-Schritte {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
@@ -176,7 +176,7 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
     </ul> </td>
   </tr>
   <tr>
-   <td>Connectors</td>
+   <td>Connectoren</td>
    <td>
     <ul>
      <li>Connector für Microsoft Sharepoint 2013</li>
@@ -204,7 +204,7 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
 
 #### Neue HTML5-basierte Benutzeroberfläche {#new-html-based-uis}
 
-In Übereinstimmung mit dem geplanten EOL von Adobe Flash Player und der allgemeinen Richtung der Migration von Flash-basierten Inhalten zu offenen Standards hat AEM 6.5 Forms die Flash-basierte Benutzeroberfläche von Health Monitor, Process Management, Reader Extension und Category Management UI von AEM Forms on JEE Administration Console durch eine HTML5-basierte Benutzeroberfläche ersetzt.
+In Übereinstimmung mit der geplanten EOL-Version von Adobe Flash Player und der allgemeinen Ausrichtung der Migration von Flash-basierten Inhalten auf offene Standards hat AEM 6.5 Forms die Flash-basierte Benutzeroberfläche von Health Monitor, Process Management, Reader Extension und Kategorie Management UI von AEM Forms on JEE Administration Console durch eine HTML5-basierte Benutzeroberfläche ersetzt.
 
 #### Sicherheitsverbesserungen {#security-improvements}
 
