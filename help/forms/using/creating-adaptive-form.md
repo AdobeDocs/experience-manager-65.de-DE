@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -145,7 +145,7 @@ Darüber hinaus können Sie den Vorlageneditor verwenden, um eigene Vorlagen zu 
 
 >[!NOTE]
 >
->Wenn Sie ein adaptives Formular öffnen, das mit einer erweiterten Vorlage zur Bearbeitung erstellt wurde, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Komponente für den Unterzeichnungs-Schritt, und Adobe Sign ist für diesen standardmäßig aktiviert. Um den Fehler zu beheben, erstellen Sie eine [Adobe Sign Cloud-Konfiguration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) und [konfigurieren Sie einen Unterzeichner](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451).
+>Wenn Sie ein adaptives Formular öffnen, das mit einer erweiterten Vorlage zur Bearbeitung erstellt wurde, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Komponente für den Unterzeichnungs-Schritt, und Adobe Sign ist für diesen standardmäßig aktiviert. Um den Fehler zu beheben, erstellen Sie eine [Adobe Sign Cloud-Konfiguration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) und [konfigurieren Sie einen Unterzeichner](working-with-adobe-sign.md#addsignerstoanadaptiveform).
 
 ## Formularmodelleigenschaften eines adaptiven Formulars bearbeiten {#edit-form-model}
 
@@ -191,7 +191,7 @@ Die Option „Automatisches Speichern“ ist standardmäßig nicht aktiviert. Si
 
 1. (Nur ereignisbasiertes automatisches Speichern) Führen Sie die folgenden Schritte aus, um Optionen für ereignisbasiertes automatisches Speichern zu konfigurieren.
 
-   1. Geben Sie im Feld **Automatisch nach diesem Ereignis speichern** ein [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)-Ereignis an. Das Formular wird immer dann gespeichert, wenn der Ausdruck „TRUE“ ergibt.
+   1. Geben Sie im Feld **Automatisch nach diesem Ereignis speichern** ein [GuideBridge](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html)-Ereignis an. Das Formular wird immer dann gespeichert, wenn der Ausdruck „TRUE“ ergibt.
 
 1. (Optional) Um den Inhalt automatisch für anonyme Benutzer zu speichern, wählen Sie die Option **Automatisches Speichern für anonyme Benutzer aktivieren** und klicken Sie auf **[!UICONTROL OK]**.
 
