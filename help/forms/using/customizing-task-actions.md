@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -135,7 +135,7 @@ Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-A
 
 ### Aufgabenaktionen-Popupmenü „Aufgabenliste“{#task-list-task-action-nbsp-pop-up-menu}
 
-1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copy /libs/ws/js/runtime/templates/task.html to `/apps/ws/js/runtime/templates/task.html`replace the following code snippet:
 
