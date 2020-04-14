@@ -3,7 +3,7 @@ title: Verwenden von verknüpften Assets, um DAM-Assets im Authoring-Arbeitsabla
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote-Bereitstellung der Adobe Experience Manager-Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -45,7 +45,7 @@ Autoren können in der Inhaltssuche nach Bildern und den folgenden Dokumenten su
 Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurieren und Verwenden der Funktionen und entsprechenden Benutzergruppen beteiligt sind. Im Anwendungsbeispiel wird eine Website von einem Autor im lokalen Umfang erstellt. Der Remote-Bereich wird für die DAM-Bereitstellung verwendet, bei der die erforderlichen Assets gehostet werden. Der Sites-Autor ruft diese Remote-Assets ab.
 
 | Rolle | Anwendungsbereich | Benutzergruppe | Benutzername im Verlauf | Anforderung |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|
 | AEM Sites-Administrator | Lokal | AEM-Administrator | `admin` | Einrichten von AEM, Konfigurieren der Integration mit der Assets-Remote-Bereitstellung. |
 | DAM-Benutzer | Lokal | Autor | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
 | AEM Sites-Autor | Lokal | Autor (mit Lesezugriff auf das Remote-DAM und Autorenzugriff auf lokale Sites) | `ksaner` | Endbenutzer sind Sites-Autoren, die diese Integration für die Beschleunigung ihrer Inhalte verwenden. Die Autoren suchen und durchsuchen Assets in Remote DAM mit der Inhaltssuche und verwenden die erforderlichen Bilder auf lokalen Webseiten. The credentials of `ksaner` DAM user are used. |
@@ -73,11 +73,9 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen verbundenen Assets und lokal
    1. AEM Assets-Speicherort ist `https://[assets_servername_ams]:[port]`.
    1. Anmeldeinformationen eines DAM-Distributors (technischer Benutzer).
    1. Geben Sie im Feld **[!UICONTROL Bereitstellungspunkt]** den lokalen AEM-Pfad ein, aus dem AEM die Assets abruft. For example, `remoteassets` folder.
-
    1. Adjust the values of **[!UICONTROL Original Binary transfer optimization Threshold]** depending on your network. Ein Asset-Wiedergabeformat, dessen Größe diesen Schwellenwert überschreitet, wird asynchron übertragen.
    1. Wählen Sie **[!UICONTROL Mit Connected Assets gemeinsam verwendeter Datenspeicher]**, wenn Sie zum Speichern Ihrer Assets einen Datenspeicher verwenden und der Datenspeicher der gemeinsam verwendete Speicher beider AEM-Bereitstellungen ist. In diesem Fall spielt die Schwellenwertbegrenzung keine Rolle, da sich die tatsächlichen Asset-Binärdateien im Datenspeicher befinden und nicht übertragen werden.
-   ![Eine typische Konfiguration für Connected Assets](assets/connected-assets-typical-config.png)
-
+      ![Eine typische Konfiguration für Connected Assets](assets/connected-assets-typical-config.png)
    *Abbildung: Eine typische Konfiguration für verbundene Assets*
 
 1. Da die Assets bereits verarbeitet und die Wiedergabeformate abgerufen wurden, deaktivieren Sie die Workflow-Launcher. Passen Sie die Launcher-Konfigurationen in der lokalen (AEM Sites-)Bereitstellung an, um den Ordner `connectedassets` auszuschließen, aus dem Remote-Assets abgerufen werden.
