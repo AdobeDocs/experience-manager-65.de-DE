@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -48,7 +48,7 @@ Anstatt eine völlig neue Layoutvorlage zu erstellen, können Sie die von Corres
 
 ### Dokumentfragmenterstellung {#document-fragment-creation}
 
-Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit denen Sie Briefe/Korrespondenz zusammenstellen können.
+Dokument-Fragmente sind wiederverwendbare Bestandteile\Komponenten einer Korrespondenz, mit denen Sie Briefe/Korrespondenz zusammenstellen können.
 
 Es gibt Dokumentfragmente der folgenden Typen:
 
@@ -58,7 +58,7 @@ Ein Text-Asset ist eine Inhaltskomponente, die aus einem oder mehreren Textabsä
 
 #### Liste {#list}
 
-Liste ist eine Reihe von Dokumentfragmenten, einschließlich Text, Listen (die gleiche Liste kann nicht &quot;in sich selbst hinzugefügt werden), Bedingungen und Bilder. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren.
+Liste ist eine Reihe von Dokument-Fragmenten, einschließlich Text, Listen (die gleiche Liste kann nicht &quot;an sich hinzugefügt werden), Bedingungen und Bilder. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren.
 
 #### Bedingung {#condition}
 
@@ -102,7 +102,7 @@ Die folgende Grafik bietet eine Übersicht über eine Beispielarchitektur der Br
 
 ## Einzelkomponenten eines Briefs {#deconstructing-a-letter}
 
-Dieses Kündigungsmitteilungsdokument ist ein Beispiel für eine typische Korrespondenz:
+Dieses Dokument zur Kündigung einer Kündigung ist ein Beispiel für eine typische Korrespondenz:
 
 ![Ein Beispielkündigungsbrief](assets/5_deconstructingaletter.png)
 
@@ -163,13 +163,13 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 
 ## Vorteile der Analyse {#benefits-of-performing-the-analysis}
 
-**Wiederverwendung** von Inhalten Sie haben eine konsolidierte Liste neuer Inhalte, die für die Generierung von Korrespondenz erforderlich sind. Viele Inhalt, wie Kopf- und Fußzeilen, Haftungsausschlüsse und Einleitungen, kommen in vielen Briefen vor und können daher für zahlreiche Briefe wiederholt verwendet werden. Solche gemeinsam genutzten Inhalte können einmalig von Fachleuten erstellt und genehmigt und dann in vielen Schriftstücken wiederholt verwendet werden.
+**Wiederverwendung** von Inhalten Sie benötigen eine konsolidierte Liste von neuen Inhalten, um Korrespondenz zu generieren. Viele Inhalt, wie Kopf- und Fußzeilen, Haftungsausschlüsse und Einleitungen, kommen in vielen Briefen vor und können daher für zahlreiche Briefe wiederholt verwendet werden. Solche gemeinsam genutzten Inhalte können einmalig von Fachleuten erstellt und genehmigt und dann in vielen Schriftstücken wiederholt verwendet werden.
 
 **Erstellen des Datenwörterbuchs** Es gibt Datenwerte wie &quot;Kunden-ID&quot;und &quot;Kundenname&quot;, die in vielen Briefen verwendet werden. Sie können eine konsolidierte Liste mit all diesen Datenwerten vorbereiten. Normalerweise wird jemand aus dem Middleware-Team des Unternehmens hinzugezogen, wenn die Struktur geplant wird. Diese Liste bildet die Grundlage für den Aufbau des Datenwörterbuchs.
 
 **Datenquellen aus Back-End-Unternehmenssystemen** Sie werden auch alle erforderlichen Datenwerte kennen und wissen, von wo aus die Daten des Unternehmenssystems abgerufen werden. Sie können dann die Architektur so einrichten, dass die Daten aus dem Unternehmenssystem extrahiert und an die Brieflösung übermittelt werden.
 
-**Schätzung der Komplexität von Briefen** Es ist wichtig zu bestimmen, wie komplex die Erstellung einer bestimmten Korrespondenz sein wird. Mit Hilfe der entsprechenden Analyse lässt sich bestimmen, wie viel Zeit und Fachwissen zur Erstellung der Briefvorlagen erforderlich sein wird. Dies wiederum erleichtert die Schätzung des Ressourcenbedarfs und der Kosten zur Implementierung der Brieflösung.
+**Schätzung der Komplexität von Briefen** Es ist wichtig zu bestimmen, wie komplex es sein wird, eine bestimmte Korrespondenz zu erstellen. Mit Hilfe der entsprechenden Analyse lässt sich bestimmen, wie viel Zeit und Fachwissen zur Erstellung der Briefvorlagen erforderlich sein wird. Dies wiederum erleichtert die Schätzung des Ressourcenbedarfs und der Kosten zur Implementierung der Brieflösung.
 
 ## Komplexität der Schriftstücke {#correspondence-complexity}
 
@@ -227,7 +227,7 @@ Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
 
 * [Kompatibilitätspaket](compatibility-package.md). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
 * Die XDP-Datei des Briefs ([Layout](/help/forms/using/document-fragments.md)).
-* Andere XDP-Dateien ([Layoutfragmente](/help/forms/using/document-fragments.md#main-pars-header-13)), die Bestandteile des Briefs bilden. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* Andere XDP-Dateien ([Layoutfragmente](document-fragments.md#document-fragments)), die Bestandteile des Briefs bilden. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
 * The relevant [data dictionary](/help/forms/using/data-dictionary.md) (Optional).
 * Die [Datenmodule](/help/forms/using/document-fragments.md), die Sie in der Korrespondenz verwenden möchten.
 * [Testdaten](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) sind die XML-Datei mit den darin enthaltenen Testdaten. Testdaten sind erforderlich, wenn Sie ein Datenwörterbuch verwenden.
@@ -248,12 +248,12 @@ Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
 
 1. Enter the properties for the Correspondence and tap **Save:**
 
-   * **** Titel (optional): Geben Sie den Titel für den Brief ein. Der Titel muss nicht eindeutig sein und darf Sonderzeichen und nichtenglische Zeichen enthalten.
-   * **** Name: Der eindeutige Name des Briefs. Es darf immer nur ein Brief mit einem bestimmten Namen in einem Status vorhanden sein. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
+   * **Titel (optional):** Geben Sie den Titel für den Brief ein. Der Titel muss nicht eindeutig sein und darf Sonderzeichen und nichtenglische Zeichen enthalten.
+   * **Name:** Der eindeutige Name des Briefs. Es darf immer nur ein Brief mit einem bestimmten Namen in einem Status vorhanden sein. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
    * **Beschreibung (optional):** Geben Sie eine Beschreibung des Briefs als Referenz ein.
    * **Datenwörterbuch (optional)**: Das Datenwörterbuch kann mit der Korrespondenz verknüpft werden. Die Assets, die Sie später in diese Korrespondenz einfügen, sollten entweder dasselbe Datenwörterbuch wie Sie es für die Korrespondenz hier auswählen, oder gar kein Datenwörterbuch enthalten.
-   * **** Tags (optional): Wählen Sie die Tags aus, die auf die Korrespondenz angewendet werden sollen. Sie können auch einen neuen/benutzerdefinierten Tag-Namen eingeben und die Eingabetaste drücken, um ihn zu erstellen.
-   * **** Nachbearbeitung (optional): Wählen Sie den Nachbearbeitungsprozess aus, der auf die Briefvorlage angewendet werden soll. Es gibt sowohl standardmäßige Nachbearbeitungsprozesse als auch jene, die Sie mithilfe von AEM wie E-Mail und Druck erstellt haben.
+   * **Tags (optional):** Wählen Sie die Tags aus, die auf die Korrespondenz angewendet werden sollen. Sie können auch einen neuen/benutzerdefinierten Tag-Namen eingeben und die Eingabetaste drücken, um ihn zu erstellen.
+   * **Nachbearbeitung (optional):** Wählen Sie den Nachbearbeitungsprozess aus, der auf die Briefvorlage angewendet werden soll. Es gibt sowohl standardmäßige Nachbearbeitungsprozesse als auch jene, die Sie mithilfe von AEM wie E-Mail und Druck erstellt haben.
    ![Eigenschaften der Korrespondenz](assets/createcorrespondenceproperties.png)
 
 1. Das System zeigt eine Nachricht an: „Brief erfolgreich erstellt.“ (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done** to go back to the previous page.
@@ -264,7 +264,7 @@ Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
 
 ### Fügen Sie Datenmodule und Layout-Fragmente in einen Brief ein und konfigurieren Sie sie {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Wenn Sie nach dem Erstellen einer Korrespondenz auf Öffnen tippen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Teilformulare/Zielbereiche an. Sie können in jeden der Zielbereiche entweder ein Datenmodul oder ein Layout-Fragment einfügen (und dann Datenmodule in das Layout-Fragment).
+Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Teilformulare/Zielgruppen an. Sie können in jeden der Zielbereiche entweder ein Datenmodul oder ein Layout-Fragment einfügen (und dann Datenmodule in das Layout-Fragment).
 
 >[!NOTE]
 >
@@ -284,7 +284,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf Öffnen tippen, zeigt Corres
    1. **Bearbeitbar:** Wenn diese Option aktiviert ist, kann der Inhalt in der Benutzeroberfläche „Korrespondenz erstellen“ bearbeitet werden. Markieren Sie Inhalte nur dann als bearbeitbar, wenn eine Änderung durch einen Benutzer (z. B. einen Schadensregulierer) erforderlich ist.
    1. **Obligatorisch:** Wenn diese Option aktiviert ist, ist der Inhalt in der Benutzeroberfläche „Korrespondenz erstellen“ erforderlich.
    1. **Ausgewählt:** Nach Auswahl dieser Option wird der Inhalt standardmäßig in der Benutzeroberfläche „Korrespondenz erstellen“ ausgewählt.
-   1. **Einzug:** Vergrößern oder verringern Sie den Einzug des Moduls/Inhalts im Brief. Einzüge werden in Form von Ebenen angegeben, beginnend bei null. Jede Ebene wird um 36 pts eingezogen. Weitere Informationen zum Anpassen von Formularen finden Sie unter **[!UICONTROL Correspondence Management-Konfigurationen]** im [Forms-Workflow](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+   1. **Einzug:** Vergrößern oder verringern Sie den Einzug des Moduls/Inhalts im Brief. Einzüge werden in Form von Ebenen angegeben, beginnend bei null. Jede Ebene wird um 36 pts eingezogen. Weitere Informationen zum Anpassen von Formularen finden Sie unter **[!UICONTROL Correspondence Management-Konfigurationen]** im [Forms-Workflow](submit-letter-topostprocess.md#formsworkflow).
    1. **Seitenumbruch vor:** Wenn Sie die Funktion „Seitenumbruch vor“ einstellen, werden die Inhalte DIESES Moduls stets auf einer neuen Seite angezeigt.
    1. **Seitenumbruch nach:** Wenn Sie die Funktion „Seitenumbruch nach“ für ein bestimmtes Modul einstellen, werden die Inhalte des Moduls „WEITER“ stets auf der neuen Seite angezeigt.
    ![Eingefügte Datenmodule und Layout-Fragmente](assets/insertdmandlf2.png)
@@ -293,13 +293,13 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf Öffnen tippen, zeigt Corres
 
    Auf dieser Seite können Sie für die Unterformulare auch die folgenden Optionen einstellen:
 
-   1. **Freien Text** zulassen: Wenn &quot;Freien Text zulassen&quot;aktiviert ist, kann der Benutzer in der CCR-Ansicht Inline-Text in Brief hinzufügen. In der CCR-Ansicht wird die Aktion ‚T‘ für jene Zielbereiche aktiviert, für die „Freien Text zulassen“ aktiviert wurde. Wenn der Benutzer darauf tippt, wird er nach einem Namen und einer Beschreibung des Textes gefragt. Anschließend tippt der Benutzer auf „OK“ und dieser Text wird im Bearbeitungsmodus geöffnet, damit der Benutzer Text hinzufügen kann. Das funktioniert wie andere Textmodule
+   1. **Freien Text** zulassen: Wenn &quot;Freien Text zulassen&quot;aktiviert ist, kann der Benutzer in der CCR-Ansicht Inline-Text im Brief hinzufügen. In der CCR-Ansicht wird die Aktion ‚T‘ für jene Zielbereiche aktiviert, für die „Freien Text zulassen“ aktiviert wurde. Wenn der Benutzer darauf tippt, wird er nach einem Namen und einer Beschreibung des Textes gefragt. Anschließend tippt der Benutzer auf „OK“ und dieser Text wird im Bearbeitungsmodus geöffnet, damit der Benutzer Text hinzufügen kann. Das funktioniert wie andere Textmodule
    1. **Sperrungsreihenfolge:** Sperrt die Reihenfolge der Unterformulare im Brief. Der Autor ist nicht befugt, die Reihenfolge der Unterformulare/Komponenten beim Erstellen des Briefs zu ändern.
    Auf dieser Seite können Sie für jedes der Assets der Unterformulare auch die folgenden Optionen einstellen:
 
    1. **Reihenfolge der Assets**&#x200B;ändern: Ziehen Sie ein Asset per Drag &amp; Drop, indem Sie das Symbol &quot;Neu anordnen&quot;für ein Asset gedrückt halten ( ![Ziehen](assets/dragndrop.png)).
    1. **Assets löschen:** Tippen Sie neben dem Asset auf das Symbol „Löschen“, um das Asset zu löschen.
-   1. **Vorschau von Assets**: Tippen Sie auf das Symbol &quot;Vorschau anzeigen&quot;(&quot; ![Vorschau](assets/showpreview.png)anzeigen&quot;) neben einem Asset.
+   1. **Vorschauen-Assets**: Tippen Sie auf das Symbol Vorschau anzeigen ( ![Vorschau](assets/showpreview.png)anzeigen) neben einem Asset.
 
 
 1. Tippen Sie auf **Weiter**.
@@ -315,7 +315,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf Öffnen tippen, zeigt Corres
    * **Optional**: Sie können angeben, ob der Wert für field oder variable optional ist. Die Option „Optional“ ist für Felder und Variablen mit Verbindungstyp Benutzer oder nicht geschützte Datenlexikonelemente verfügbar.
 
    * **Validierung** von Feldern/Variablen: Um eine erweiterte Validierung des Werts eines Felds oder einer Variablen zu ermöglichen, können Sie dem Feld oder der Variablen einen Validator zuweisen. Die Option ist nur für Felder und Variablen mit Verbindungstyp „Benutzer“ oder nicht geschützte Datenlexikonelemente verfügbar.
-   * ******Beschriftung und QuickInfo:** Beschriftung ist die Beschreibung des Feldes, das in der CRR-Benutzeroberfläche vor dem Feld angezeigt wird. Diese Option ist für Felder und Variablen mit Verbindungstyp Benutzer oder ungeschützte Datenlexikonelemente verfügbar.
+   * ******Beschriftung und QuickInfo:** Beschriftung ist die Beschreibung des Feldes, das in der CRR-Benutzeroberfläche vor dem Feld angezeigt wird. Diese Option ist für Felder und Variablen mit Verbindungstyp &quot;Benutzer&quot;oder ungeschützte Datenwörterbuchelemente verfügbar.
    Es folgen die Validierungstypen, die Sie für die Felder verwenden können:
 
    * **Validator für Zeichenfolge:** Verwenden Sie den Validator für Zeichenfolge, um die minimale und maximale Länge der in ein Feld oder eine Variable eingegebenen Zeichenfolge festzulegen. Wenn Sie einen Validator für Zeichenfolge erstellen, stellen Sie sicher, dass Sie gültige Überprüfungsparameter angeben. Geben Sie eine gültige Länge für Mindest- und Höchstwerte ein. Für den Validator für Zeichenfolge können Sie die Mindest- und Höchstlänge des Wertes angeben, der eingegeben werden kann. Wenn der eingegebene Wert nicht der angegebenen Mindest- und Höchstlänge entspricht, wird das entsprechende Feld in der CCR-Benutzeroberfläche rot markiert.
@@ -334,7 +334,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf Öffnen tippen, zeigt Corres
 ### Richten Sie die Anlagen ein {#set-up-the-attachments}
 
 1. Select **Add Asset**.
-1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber auch Bilder anzuhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/managing-assets-touch-ui.md).
+1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber Sie können auch Bilder anhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/managing-assets-touch-ui.md).
 1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap **Lock Order**. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
 1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
 1. Tap **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Geben Sie eine Anlage als „Ausgewählt“ an, wenn sie in der CCR-Benutzeroberfläche vorausgewählt werden soll.
@@ -368,7 +368,7 @@ Die folgenden Werte in der Tabelle
    <td><strong>Variable</strong></td> 
   </tr> 
   <tr> 
-   <td><strong>Datum</strong></td> 
+   <td><strong>date</strong></td> 
    <td>Ja</td> 
    <td>Nein</td> 
    <td>Ja</td> 
