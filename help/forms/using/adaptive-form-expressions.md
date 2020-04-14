@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -45,16 +45,16 @@ Wiederholungsfelder sind Instanzen eines Fensters, das mithilfe einer Skripterst
 
 In adaptiven Formularen können Sie Ausdruck schreiben, um Verhaltensweisen wie dynamische Ein-/Ausblenden-Felder und -Bereiche hinzuzufügen. Sie können auch Ausdrücke schreiben, um berechnete Felder hinzuzufügen, Felder schreibgeschützt, Überprüfungslogik zu gestalten und vieles mehr. Adaptive Formulare unterstützen folgende Ausdrücke:
 
-* **[Ausdrücke für den Zugriff](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**: Zum Aktivieren/Deaktivieren eines Felds.
-* **[Ausdrücke für die Berechnung](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: Zum automatischen Berechnen des Werts eines Felds.
-* **[Ausdruck für ein Klickereignis](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**: Zum Verarbeiten von Aktionen beim Klicken auf eine Schaltfläche.
-* **[Initialisierungsskript](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p):**Durchführen einer Aktion zum Initialisieren eines Felds.
-* **[Ausdruck für Optionen](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**: Zum dynamischen Ausfüllen einer Dropdown-Liste.
+* **[Ausdrücke für den Zugriff](#access-expression-enablement-expression)**: Zum Aktivieren/Deaktivieren eines Felds.
+* **[Ausdrücke für die Berechnung](#calculate-expression)**: Zum automatischen Berechnen des Werts eines Felds.
+* **[Ausdruck für ein Klickereignis](#click-expression)**: Zum Verarbeiten von Aktionen beim Klicken auf eine Schaltfläche.
+* **[Initialisierungsskript](#initialization-script):**Durchführen einer Aktion zum Initialisieren eines Felds.
+* **[Ausdruck für Optionen](#options-expression)**: Zum dynamischen Ausfüllen einer Dropdown-Liste.
 * **[Zusammenfassungsausdruck](#summary)**: Zum dynamischen Berechnen des Titels eines Akkordeons.
-* **[Ausdrücke für die Überprüfung](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**: Zum Überprüfen eines Felds.
-* **[Skript](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)zum Bestätigen von Werten:**, um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
-* **[Ausdruck für die Sichtbarkeit](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**: Zum Steuern der Sichtbarkeit eines Felds oder Bereichs.
-* **[Ausdruck zum Abschluss von Schritten](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**: Um zu vermeiden, dass ein Benutzer zum nächsten Schritt eines Assistenten geht.
+* **[Ausdrücke für die Überprüfung](#validate-expression)**: Zum Überprüfen eines Felds.
+* **[Skript](#value-commit-script)zum Bestätigen von Werten:**, um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **[Ausdruck für die Sichtbarkeit](#visibility-expression)**: Zum Steuern der Sichtbarkeit eines Felds oder Bereichs.
+* **[Ausdruck zum Abschluss von Schritten](#step-completion-expression)**: Um zu vermeiden, dass ein Benutzer zum nächsten Schritt eines Assistenten geht.
 
 ### Ausdruck für den Zugriff (Ausdruck für die Aktivierung) {#access-expression-enablement-expression}
 
@@ -79,7 +79,7 @@ Der Ausdruck für die Berechnung wird verwendet, um den Wert eines Felds unter V
 
 ### Ausdruck für ein Klickereignis {#click-expression}
 
-Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken auf eine Schaltfläche durchgeführt werden. GuideBridge ist sofort einsetzbar und bietet APIs zum Ausführen verschiedener Funktionen wie dem Senden oder Überprüfen, die in Verbindung mit dem Ausdruck für ein Klickereignis Anwendung finden. Eine vollständige Liste der APIs finden Sie in den [GuideBridge-APIs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken auf eine Schaltfläche durchgeführt werden. GuideBridge ist sofort einsetzbar und bietet APIs zum Ausführen verschiedener Funktionen wie dem Senden oder Überprüfen, die in Verbindung mit dem Ausdruck für ein Klickereignis Anwendung finden. Eine vollständige Liste der APIs finden Sie in den [GuideBridge-APIs](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Gilt für**: Felder mit Schaltfläche
 
@@ -256,7 +256,7 @@ Um GuideBridge nach der Initialisierung des Formulars zu verwenden (das `bridgeI
 
 #### GuideBridge-Ereignisse {#guidebridge-events}
 
-GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html).
 
 Verwenden Sie folgenden Code zum Registrieren von Handlern:
 
