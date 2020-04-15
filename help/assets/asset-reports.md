@@ -3,7 +3,7 @@ title: Berichte zu Ihren digitalen Assets
 description: Verstehen Sie Berichte zu Ihren Assets in AEM Assets, die Ihnen beim Verständnis der Nutzung, Aktivität und Freigabe Ihrer digitalen Assets helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a839ec71e02ee5d92f054a686b7bb52142058ae9
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -36,12 +36,12 @@ AEM Assets generiert die folgenden standardmäßigen Berichte für Sie:
 
 AEM-Administratoren können diese Berichte einfach für Ihre Implementierung erstellen und anpassen. Um einen Bericht zu erstellen, müssen Administratoren folgende Schritte durchführen:
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
+1. Klicken Sie in der Experience Manager-Oberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 
 ![Tools-Seite zum Navigieren im Assets-Bericht](assets/AssetsReportNavigation.png)
 
-1. Tippen/klicken Sie auf der Seite „Asset-Berichte“ in der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den Bericht aus, den Sie erstellen möchten, und tippen/klicken Sie auf **[!UICONTROL Weiter]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
    ![Berichttyp auswählen](assets/choose_report.png)
 
@@ -53,7 +53,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
    >
    >Standardmäßig sind die Inhaltsfragmente und Linkfreigaben im Bericht „Asset heruntergeladen“ enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Downloadbericht auszuschließen.
 
-1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der standardmäßige Ordnerpfad lautet */content/dam*. Sie können auch einen anderen Pfad festlegen.
+1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. By default, the folder path is `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
    ![Seite zum Hinzufügen von Berichtsdetails](assets/report_configuration.png)
 
@@ -83,7 +83,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    ![Detailseite des Berichts &quot;Linkfreigabe&quot;](assets/link_share.png)
 
-1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können weitere Spalten auswählen. Heben Sie die Auswahl einer Spalte auf, wenn sie nicht im Bericht angezeigt werden soll.
 
@@ -91,14 +91,14 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    Um einen benutzerdefinierten Spaltennamen oder Eigenschaftspfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei im „jcr:content“-Knoten in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
 
-   ![Benutzerdefinierte Spalten für Bericht erstellen](assets/custom_columns.png)
+   ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
-1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. Auf der Seite „Asset-Berichte“ basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel „Erfolg“, „Fehlgeschlagen“, „In Warteschlange“ oder „Geplant“. Derselbe Status wird im Benachrichtigungsinbox angezeigt.Um die Berichtsseite Ansicht, tippen/klicken Sie auf den Link Bericht. Alternatively, select the report, and tap **[!UICONTROL View]** from the toolbar.
+1. Click **[!UICONTROL Create]** from the toolbar. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
+1. Auf der Seite „Asset-Berichte“ basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel „Erfolg“, „Fehlgeschlagen“, „In Warteschlange“ oder „Geplant“. Derselbe Status wird auch im Benachrichtigungsfeld angezeigt.Klicken Sie zur Ansicht der Berichtsseite auf den Link Bericht. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![Ein generierter Bericht](assets/report_page.png)
 
-   Tap **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
+   Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
 ## Hinzufügen benutzerdefinierter Spalten   {#add-custom-columns}
 
@@ -112,10 +112,10 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 * Veröffentlichung in Brand Portal
 * Dateien
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
-1. Tippen/klicken Sie auf der Seite „Asset-Berichte“ in der Symbolleiste auf **[!UICONTROL Erstellen]**.
+1. Klicken Sie in der Experience Manager-Oberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
-1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den Bericht aus, den Sie erstellen möchten, und tippen/klicken Sie auf **[!UICONTROL Weiter]**.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 1. Konfigurieren Sie Berichtsdetails wie Titel, Beschreibung, Miniaturansicht, Ordnerpfad und Datumsbereich wie gewünscht.
 
 1. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
@@ -126,9 +126,9 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 
    ![Ordnen Sie den Eigenschaftspfad Pfaden in jcr:content zu](assets/property_picker.png)
 
-   Tippen/klicken Sie auf **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 5 und 6, um weitere benutzerdefinierte Spalten hinzuzufügen.
+   To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
 
-1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
+1. Click **[!UICONTROL Create]** from the toolbar. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
 
 ## Konfigurieren des Bereinigungsdiensts {#configure-purging-service}
 
