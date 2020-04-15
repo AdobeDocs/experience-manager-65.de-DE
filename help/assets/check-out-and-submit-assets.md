@@ -3,7 +3,7 @@ title: Einchecken und Auschecken Ihrer digitalen Assets zur Bearbeitung
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,7 +19,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 ## Assets überprüfen {#checking-out-assets}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das ausgecheckt werden soll. Sie können auch mehrere Assets zum Auschecken auswählen.
-1. From the toolbar, click/tap **[!UICONTROL Checkout]**.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Checkout]**.
 Die **[!UICONTROL Checkout]** -Option wechselt zum **[!UICONTROL Checkin]**.
 Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Auf der Miniaturansicht des Assets, das Sie ausgecheckt haben, wird ein Sperrsymbol angezeigt.
 
@@ -29,9 +29,9 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   You can, however, tap **[!UICONTROL View Properties]** to edit the metadata for the locked asset.
+   You can click **[!UICONTROL View Properties]** to edit the metadata for the locked asset.
 
-1. Tippen Sie auf **[!UICONTROL Bearbeiten]** , um das Asset im Bearbeitungsmodus zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten]** , um das Asset im Bearbeitungsmodus zu öffnen.
 
    ![chlimage_1-473](assets/chlimage_1-473.png)
 
@@ -41,7 +41,7 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
    Sie können das Asset auch mit Anmerkungen versehen oder es veröffentlichen.
 
-1. Select the edited asset from the Assets UI, and tap **[!UICONTROL Checkin]** from the toolbar. Das geänderte Asset wird in AEM Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+1. Wählen Sie das bearbeitete Asset in der [!DNL Assets] Benutzeroberfläche aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Checkin]** . Das geänderte Asset wird in AEM Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
 
 ## Forced check in {#forced-check-in}
 
@@ -52,7 +52,7 @@ Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Sperren]**. Das Asset wird wieder eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Sperren]**. Das Asset wird wieder eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
 
 >[!MORELIKETHIS]
 >
