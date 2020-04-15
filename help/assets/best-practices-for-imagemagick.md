@@ -3,7 +3,7 @@ title: Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeite
 description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese installieren, den Befehlszeilenprozessschritt einrichten und damit Miniaturansichten von Bildern bearbeiten, zusammenstellen und generieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -34,7 +34,7 @@ Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssyste
 
 Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfall einrichten. Perform these steps to generate a flipped image and thumbnails (140x100, 48x48, 319x319, and 1280x1280) each time you add a JPEG image file to `/content/dam` on the AEM server:
 
-1. On the AEM server, go to the Workflow console ( `https://[*AEM server*]:[*Port*]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
+1. On the AEM server, go to the Workflow console (`https://[aem_server]:[port]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
 1. From the **[!UICONTROL DAM Update Asset]** workflow model, open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step.
 1. In the **[!UICONTROL Arguments tab]**, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
 
@@ -48,11 +48,11 @@ Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfal
 
    ![select_flags](assets/select_flags.png)
 
-1. Legen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** die Details für die Ausgabedarstellung mit 1280x1280 Pixel fest. In addition, specify i *mage/jpeg* in the **[!UICONTROL Mimetype]** box.
+1. Legen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** die Details für die Ausgabedarstellung mit 1280x1280 Pixel fest. Geben Sie außerdem `image/jpeg` im Feld **[!UICONTROL Mimetype]** an.
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tippen/klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfal
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Tippen/klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
 
    ![web_enabled](assets/web_enabled.png)
 
