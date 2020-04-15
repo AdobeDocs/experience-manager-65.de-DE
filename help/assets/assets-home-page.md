@@ -3,18 +3,18 @@ title: AEM Assets-Startseitenerlebnis
 description: Passen Sie die AEM Assets-Startseite an, um Benutzern ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
 # AEM Assets-Startseitenerlebnis {#aem-assets-home-page-experience}
 
-Personalisieren Sie die Startseite &quot;Adobe Experience Manager (AEM) Assets&quot;für einen umfassenden Begrüßungsbildschirm, einschließlich einer Momentaufnahme der jüngsten Aktivitäten rund um Assets.
+Personalisieren Sie die Asset-Startseite von Adobe Experience Manager (AEM), um einen umfassenden Bildschirm zu erhalten, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
 
-Die AEM Assets-Startseite bietet eine umfassende und personalisierte Benutzeroberfläche, die eine Momentaufnahme der jüngsten Aktivitäten enthält, wie zum Beispiel Assets, die kürzlich angezeigt oder hochgeladen wurden.
+Die AEM Assets-Startseite bietet eine umfassende und personalisierte Benutzeroberfläche, die eine Momentaufnahme der letzten Aktivitäten enthält, z. B. der zuletzt angezeigten oder hochgeladenen Assets.
 
-Die Homepage &quot;Assets&quot;ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um sie zu aktivieren:
+Die Startseite &quot;Assets&quot;ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um sie zu aktivieren:
 
 1. Öffnen Sie AEM Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Day CQ DAM Event Recorder]** service.
@@ -35,13 +35,13 @@ Die Homepage &quot;Assets&quot;ist standardmäßig deaktiviert. Gehen Sie wie fo
 
 1. Open the **[!UICONTROL User Preferences]** dialog, and select **[!UICONTROL Enable Assets Home Page]**. Speichern Sie die Änderungen.
 
-   ![Aktivieren der Assets-Homepage im Dialogfeld &quot;Benutzereinstellungen&quot;](assets/Annotation-color.png)
+   ![Aktivieren der Asset-Startseite im Dialogfeld &quot;Benutzereinstellungen&quot;](assets/Annotation-color.png)
 
 After enabling the Assets Home page, navigate to the Assets user interface either from the Navigation page or access it directly from the URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
 
 ![Erlebnislink auf der Benutzeroberfläche &quot;Assets&quot;konfigurieren](assets/config-experience-link.png)
 
-Tap/click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
+Click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
 
 Die Assets-Startseite enthält die folgenden Abschnitte:
 
@@ -50,7 +50,7 @@ Die Assets-Startseite enthält die folgenden Abschnitte:
 
 **Begrüßungsabschnitt** 
 
-Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Außerdem zeigt es Ihr Profilbild und ein Begrüßungsbild an (falls bereits konfiguriert).
+Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Außerdem werden Ihr Profil und ein Begrüßungsbild angezeigt (falls bereits konfiguriert).
 
 Wenn Ihr Profil unvollständig ist, zeigt der Begrüßungsabschnitt eine generische Begrüßungsnachricht und einen Platzhalter für Ihr Profilbild an.
 
@@ -62,7 +62,7 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 * Aktuell
 * Entdecken
 
-**Aktivität**: Unter diesem Abschnitt zeigt das Widget &quot; **[!UICONTROL Meine Aktivität]** &quot;die zuletzt vom angemeldeten Benutzer durchgeführten Aktivitäten mit Assets (einschließlich Assets ohne Ausgabeformate) an, z. B. Assets hochladen, Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und &quot;Teilen&quot;-Klicks.
+**Aktivität**: Unter diesem Abschnitt zeigt das Widget &quot; **[!UICONTROL Meine Aktivität]** &quot;aktuelle Aktivitäten an, die der angemeldete Benutzer mit Assets (einschließlich Assets ohne Ausgabeformate) durchgeführt hat, z. B. Asset-Uploads, Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und &quot;Teilen&quot;-Klicks.
 
 **Zuletzt**: Das **[!UICONTROL kürzlich angezeigte]** Widget unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten des angemeldeten Benutzers an, einschließlich Ordner, Sammlungen und Projekte.
 
@@ -78,7 +78,7 @@ Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in
 
 >[!CAUTION]
 >
->Die Erfassung, Filterung und Bereinigung von Benutzeraktivitäten, die für die Assets-Homepage erforderlich sind, verursachen einen Leistungsaufwand. Daher sollten Administratoren die Homepage für Zielbenutzer effektiv konfigurieren.
+>Das Erfassen, Filtern und Bereinigen der für die Asset-Startseite erforderlichen Aktivitäten führt zu einem Leistungsaufwand. Daher sollten Administratoren die Homepage für Zielbenutzer effektiv konfigurieren.
 >
 >Adobe empfiehlt Administratoren und Benutzern, die mit großen Datenmengen arbeiten, die Verwendung der Asset-Homepage-Funktion zu vermeiden, um einen Anstieg der Benutzeraktivitäten zu verhindern. Außerdem können Administratoren Aufzeichnungsaktivitäten von bestimmten Benutzern unterbinden, indem sie den [!UICONTROL Day CQ DAM Event Recorder][!UICONTROL  vom Configuration Manager aus konfigurieren].
 >
