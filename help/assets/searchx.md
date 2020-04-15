@@ -1,28 +1,28 @@
 ---
-title: Erweiterung der Suchfunktion von AEM Assets
-description: Erweitern Sie die Suchfunktionen von AEM Assets über die Standardwerte hinaus.
+title: Erweiterung der Suchfunktion von Adobe Experience Manager Assets
+description: Erweitern Sie die Suchfunktionen von Adobe Experience Manager Assets über die Standardwerte hinaus.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-# Suche nach Assets erweitern {#extending-assets-search}
+# Erweitern der Asset-Suche {#extending-assets-search}
 
-Sie können die Suchfunktionen von Adobe Experience Manager (AEM) Assets erweitern. Standardmäßig sucht AEM Assets anhand von Zeichenfolgen nach Assets.
+Sie können die [!DNL Adobe Experience Manager Assets] Suchfunktionen erweitern. Out of the box, [!DNL Experience Manager Assets] searches for assets by strings.
 
-Die Suchfunktion wird über die QueryBuilder-Schnittstelle durchgeführt und lässt sich mit mehreren Eigenschaften anpassen. You can overlay the default set of predicates in the following directory: `/apps/dam/content/search/searchpanel/facets`.
+Die Suchfunktion wird über die QueryBuilder-Schnittstelle durchgeführt und lässt sich mit mehreren Eigenschaften anpassen. Sie können den Standardsatz der Eigenschaften im folgenden Verzeichnis überlagern: `/apps/dam/content/search/searchpanel/facets`.
 
-Sie können dem AEM Assets-Admin-Bedienfeld auch weitere Registerkarten hinzufügen.
+You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->Seit Einführung von AEM 6.4 wird die klassische Benutzeroberfläche nicht mehr unterstützt. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Es empfiehlt sich, die Touch-optimierte Benutzeroberfläche zu verwenden. For customization, see [Search Facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe empfiehlt die Verwendung der Touch-fähigen Benutzeroberfläche. For customization, see [Search Facets](/help/assets/search-facets.md).
 
 ## Überlagerung {#overlaying}
 
-Um die vorkonfigurierten Voreinstellungen zu überlagern, kopieren Sie den `facets` Knoten von `/libs/dam/content/search/searchpanel` in eine andere `/apps/dam/content/search/searchpanel/` Eigenschaft in der `facetURL` Konfiguration (standardmäßig `searchpanel``/libs/dam/content/search/searchpanel/facets.overlay.infinity.json` ).
+To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the `searchpanel` configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
@@ -30,29 +30,28 @@ Um die vorkonfigurierten Voreinstellungen zu überlagern, kopieren Sie den `face
 >
 >Standardmäßig ist die Verzeichnisstruktur unter /`apps` nicht vorhanden und muss erstellt werden. Stellen Sie sicher, dass die Knotentypen den Typen unter /`libs` entsprechen.
 
-
 ## Hinzufügen von Registerkarten {#adding-tabs}
 
 Sie können weitere Suchregisterkarten hinzufügen, indem Sie sie im AEM Assets-Admin konfigurieren. So erstellen Sie weitere Registerkarten:
 
-1. Create the folder structure `/apps/wcm/core/content/damadmin/tabs,`if it does not already exist, and copy the `tabs` node from `/libs/wcm/core/content/damadmin` and paste it.
+1. Erstellen Sie die Ordnerstruktur `/apps/wcm/core/content/damadmin/tabs,`, falls noch nicht vorhanden, kopieren Sie den Knoten `tabs` aus `/libs/wcm/core/content/damadmin` und fügen Sie ihn ein.
 1. Erstellen und konfigurieren Sie die zweite Registerkarte wie gewünscht.
 
    >[!NOTE]
    >
-   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property in order to prevent form conflicts.
+   >Achten Sie bei Erstellung eines zweiten `siteadminsearchpanel` auf die Festlegung einer `id`-Eigenschaft, um Formularkonflikte zu vermeiden.
 
-## Erstellen benutzerdefinierter Prädikate {#creating-custom-predicates}
+## Erstellen benutzerdefinierter Eigenschaften {#creating-custom-predicates}
 
-AEM Assets verfügt über eine Reihe vordefinierter Prädikate, die zum Anpassen einer Seite zum Teilen von Assets verwendet werden können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
+[!DNL Assets] umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann. Customizing an Asset Share in this way is covered in [create and configure an Asset Share page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
 AEM-Entwickler können neben den bereits vorhandenen Eigenschaften auch eigene Prädikate erstellen. Hierfür können sie die [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) verwenden.
 
-Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html). 
+Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispiel-Eigenschaften befinden sich unter **/libs/cq/search/components/predicates**.
 
-### Beispiel: Einfaches Eigenschaftsprädikat erstellen {#example-build-a-simple-property-predicate}
+### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
@@ -69,7 +68,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
        componentGroup="Search"/>
    ```
 
-1. Fügen Sie `titlepredicate.jsp`.
+1. Fügen Sie `titlepredicate.jsp` hinzu.
 
    ```xml
    <%--
@@ -136,14 +135,14 @@ So erstellen Sie ein Eigenschaftsprädikat:
    </script>
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE einen Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Um Absätze entfernen zu können, fügen Sie eine **cq:actions**-Mehrwerteigenschaft mit **DELETE** als einzigem Wert hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
 
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein, geben Sie einen Suchbegriff – z. B. **Raute** – ein und klicken Sie auf das Lupensymbol, um die Suche zu starten.
 
    >[!NOTE]
    >
-   >Stellen Sie beim Suchen sicher, dass der Begriff korrekt eingegeben wird und auch die Groß-/Kleinschreibung stimmt. 
+   >Stellen Sie beim Suchen sicher, dass der Begriff korrekt eingegeben wird und auch die Groß-/Kleinschreibung stimmt.
 
 ### Beispiel: Einfache Gruppeneigenschaft erstellen {#example-build-a-simple-group-predicate}
 
@@ -240,7 +239,7 @@ So erstellen Sie eine Gruppeneigenschaft:
        });
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE einen Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Um Absätze entfernen zu können, fügen Sie eine **cq:actions**-Mehrwerteigenschaft mit **DELETE** als einzigem Wert hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein.
 
@@ -248,18 +247,18 @@ So erstellen Sie eine Gruppeneigenschaft:
 
 Die folgenden Prognosen sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
-### FulltextPredicate {#fulltextpredicate}
+### FulltextPredicate   {#fulltextpredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| calculateName | Zeichenfolge | Name der Vorhersage. Standardwert ist `fulltext` |
-| searchCallback | Funktion | Rückruf zum Auslösen der Suche nach Ereignis `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `fulltext` |
+| searchCallback | Funktion | Callback for triggering search on event `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| calculateName | Zeichenfolge | Name der Vorhersage. Standardwert ist `property` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `property` |
 | propertyName | Zeichenfolge | Name der JCR-Eigenschaft. Standardwert ist `jcr:title` |
 | defaultValue | Zeichenfolge | Vorgegebener Standardwert. |
 
@@ -267,16 +266,16 @@ Die folgenden Prognosen sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| calculateName | Zeichenfolge | Name der Vorhersage. Standardwert ist `path` |
-| rootPath | Zeichenfolge | Stammpfad der Vorhersage. Standardwert ist `/content/dam` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `path` |
+| rootPath | Zeichenfolge | Stammpfad der Eigenschaft. Standardwert ist `/content/dam` |
 | pathFieldPredicateName | Zeichenfolge | Standardwert ist `folder` |
-| showFlatOption | Boolesch  | Markieren, um Kontrollkästchen anzuzeigen `search in subfolders`. Der Standardwert ist „true“. |
+| showFlatOption | Boolesch | Markieren, um Kontrollkästchen anzuzeigen `search in subfolders`. Standardwert ist „true“. |
 
 ### DatePredicate {#datepredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| calculateName | Zeichenfolge | Name der Vorhersage. Standardwert ist `daterange` |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `daterange` |
 | propertyname | Zeichenfolge | Name der JCR-Eigenschaft. Standardwert ist `jcr:content/jcr:lastModified` |
 | defaultValue | Zeichenfolge | Vorgegebener Standardwert |
 
@@ -284,13 +283,13 @@ Die folgenden Prognosen sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
-| Titels | Zeichenfolge | Fügt einen zusätzlichen Top-Titel hinzu |
-| calculateName | Zeichenfolge | Name der Vorhersage. Standardwert ist `daterange` |
+| title | Zeichenfolge | Fügt einen zusätzlichen oberen Titel hinzu |
+| predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `daterange` |
 | propertyname | Zeichenfolge | Name der JCR-Eigenschaft. Standardwert ist `jcr:content/metadata/cq:tags` |
-| reduzieren | Zeichenfolge | Ebene reduzieren. Standardwert ist `level1` |
-| triggerSearch | Boolesch  | Flag zum Auslösen der Suche beim Scheck. Standard ist false |
-| searchCallback | Funktion | Rückruf zum Auslösen der Suche. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | Nummer | Timeout, bevor searchCallback ausgelöst wird. Der Standardwert ist 800 ms. |
+| collapse | Zeichenfolge | Ebene der Reduzierung. Standardwert ist `level1` |
+| triggerSearch | Boolesch | Markierung zum Auslösen der Suche nach Aktivierung. Standardwert ist „false“ |
+| searchCallback | Funktion | Callback zum Auslösen der Suche. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
+| searchTimeoutTime | Nummer | Zeitlimit, nach dem searchCallback ausgelöst wird. Standardwert ist 800 ms. |
 
 ## Suchergebnisse anpassen {#customizing-search-results}
 
