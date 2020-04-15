@@ -4,12 +4,12 @@ description: Vorschläge und Anleitungen zur AEM-Konfiguration, Änderungen an H
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-<!-- TBD: Formatting using backticks. Add UICONTROL tag. Redundant info as reviewed by engineering. -->
+<!-- TBD: Get reviewed by engineering. -->
 
 # Assets performance tuning guide {#assets-performance-tuning-guide}
 
@@ -29,11 +29,11 @@ AEM wird auf einer Reihe von Plattformen unterstützt. Adobe zufolge werden die 
 
 ### Temporärer Ordner {#temp-folder}
 
-Um die Upload-Zeit für Assets zu verbessern, verwenden Sie eine Hochleistungs-Datenspeicherung für den temporären Java-Ordner. Unter Linux und Windows können Sie beispielsweise ein RAM- oder SSD-Laufwerk verwenden. In Cloud-basierten Umgebungen kann ein äquivalenter Hochgeschwindigkeitsspeicher verwendet werden. For example in Amazon EC2, an [&#39;ephemeral drive&#39;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
+Um die Upload-Zeit für Assets zu verbessern, verwenden Sie eine Hochleistungs-Datenspeicherung für den temporären Java-Ordner. Unter Linux und Windows können Sie beispielsweise ein RAM- oder SSD-Laufwerk verwenden. In Cloud-basierten Umgebungen kann ein äquivalenter Hochgeschwindigkeitsspeicher verwendet werden. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
 
 Bei einer großen Speicherkapazität des Servers kann ein RAM-Laufwerk konfiguriert werden. Führen Sie unter Linux die folgenden Befehle aus, um ein RAM-Laufwerk von 8 GB zu erstellen:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -88,7 +88,7 @@ Mit der Implementierung eines S3-Datenspeichers oder Shared File Datastore spare
 
 Mit der folgenden Konfiguration des S3-Datenspeichers (`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) konnte Adobe binäre große Objekte (BLOBs) mit einer Größe von 12,8 TB von einem vorhandenen Dateidatenspeicher in einen S3-Datenspeicher am Standort eines Kunden extrahieren:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -126,18 +126,17 @@ Welche Strategie der Netzwerkoptimierung Sie verwenden, hängt in erster Linie v
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. Die Einstellung trägt zu einer erheblichen Reduzierung des Overheads bei, der für die Verarbeitung der Workflows benötigt wird, da die Workflows in diesem Fall nicht die normalen Tracking- und Archivierungsprozesse durchlaufen.
 
->[!NOTE]
->
->By default, the [!UICONTROL DAM Update Asset] workflow is set to Transient in AEM 6.3. In this case, you can skip the following procedure.
-
 1. Navigieren Sie zu `/miscadmin` in der AEM-Instanz unter `https://[aem_server]:[port]/miscadmin`.
+
 1. Erweitern Sie **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL dam]**.
+
 1. Open **[!UICONTROL DAM Update Asset]**. Wechseln Sie im unverankerten Tool-Fenster auf die Registerkarte **[!UICONTROL Seite]** und klicken Sie auf **[!UICONTROL Seiteneigenschaften]**.
+
 1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Einige Funktionen unterstützen keine Verlaufs-Workflows. Wenn diese Funktionen in Ihrer AEM Asset-Bereitstellung benötigt werden, konfigurieren Sie keine Verlaufs-Workflows.
+   >Einige Funktionen unterstützen keine Verlaufs-Workflows. If your [!DNL Assets] deployment requires these features, do not configure transient workflows.
 
 In cases where transient workflows cannot be used, run workflow purging regularly to delete archived [!UICONTROL DAM Update Asset] workflows to ensure system performance does not degrade.
 
@@ -147,14 +146,16 @@ Um die Workflow-Bereinigung zu konfigurieren, fügen Sie in der OSGi-Konsole ein
 
 Dauert die Bereinigung zu lange, kommt es zu einem Timeout. Daher sollten Sie sicherstellen, dass die Bereinigungsaufträge abgeschlossen sind. So vermeiden Sie, dass Bereinigungs-Workflows aufgrund der hohen Zahl an Workflows nicht abgeschlossen werden können.
 
-For example, after executing numerous non-transient workflows (that creates workflow instance nodes), you can run [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) on an ad-hoc basis. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite-Workflow-Bereinigungsplaners warten müssen.
+For example, after executing numerous non-transient workflows (that creates workflow instance nodes), you can execute [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) on an ad-hoc basis. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite-Workflow-Bereinigungsplaners warten müssen.
 
 ### Maximal parallel ausführbare Aufträge   {#maximum-parallel-jobs}
 
 Standardmäßig kann AEM maximal so viele Aufträge parallel ausführen wie Prozessoren auf dem Server vorhanden sind. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing AEM from running other processes that safeguard server performance and stability. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
 
-1. Wechseln Sie unter AEM Author zu `https://[aem_server]:[port]/system/console/slingevent`.
+1. Wechseln Sie unter Experience Manager Author zu `https://[aem_server]:[port]/system/console/slingevent`.
+
 1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example **[!UICONTROL Granite Transient Workflow Queue]**.
+
 1. Update the value of **[!UICONTROL Maximum Parallel Jobs]** and click **[!UICONTROL Save]**.
 
 Diese Einstellung des Werts auf die Hälfte der verfügbaren Prozesse ist für den Anfang eine praktikable Lösung. Unter Umständen müssen Sie diese Zahl jedoch nach oben oder unten anpassen, um den maximalen Durchsatz zu erreichen, und auch an die spezifische Umgebung anpassen. Es gibt separate Warteschlangen für Verlaufs- und Nicht-Verlaufs-Workflows sowie für andere Prozesse wie beispielsweise externe Workflows. Sind mehrere Warteschlangen, die auf 50 % der Prozessoren gesetzt sind, gleichzeitig aktiv, kann es schnell zu einer Überlastung des Systems kommen. Welche Warteschlangen stark ausgelastet sind, hängt in hohem Maße von den Benutzerimplementierungen ab. Sie müssen daher sorgfältig und mit Bedacht konfiguriert werden, um maximale Effizienz zu erreichen, die nicht zu Lasten der Serverstabilität geht.
@@ -256,11 +257,15 @@ Für die Oak-Indexkonfigurationen können Optimierungen vorgenommen werden, mit 
 1. Gehen Sie zu `/oak:index/damAssetLucene`. Hinzufügen einer `String[]` Eigenschaft `includedPaths` mit Wert `/content/dam`.
 1. Speichern.
 
-(Nur AEM 6.1 und 6.2) Aktualisieren Sie den Index „ntBaseLucene“, um die Leistung des Assets beim Löschen und Verschieben zu verbessern:
+<!-- TBD: Review by engineering if required in 6.5 docs or not.
 
-1. Navigieren zu `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Hinzufügen zwei nt:unstrukturierte Knoten `slingResource` und `damResolvedPath` darunter `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Legen Sie die folgenden Eigenschaften auf den Knoten fest (wobei `ordered` und `propertyIndex` Eigenschaften vom Typ sind `Boolean`:
+(AEM6.1 and 6.2 only) Update the `ntBaseLucene` index to improve asset delete and move performance:
+
+1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
    ```
    slingResource
@@ -275,24 +280,24 @@ Für die Oak-Indexkonfigurationen können Optimierungen vorgenommen werden, mit 
    type="String"
    ```
 
-1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Überwachen Sie im Protokoll „error.log“ den Abschluss der Indizierung: Neuindizierung abgeschlossen für Indizes: [/oak:index/ntBaseLucene].
-1. Den Abschluss der Indizierung können Sie auch nachverfolgen, indem Sie „/oak:index/ntBaseLucene“ in CRXDe aktualisieren. Die Eigenschaft für die Neuindizierung würde auf „false“ zurückgesetzt werden.
-1. Gehen Sie nach Abschluss der Indizierung zurück zu CRXDe und stellen Sie die Eigenschaft „Typ“ auf den beiden Indizes auf „deaktiviert“ ein.
+1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Click **[!UICONTROL Save All]**.
+1. Monitor the error.log to see when indexing is completed:
+   Reindexing completed for indexes: [/oak:index/ntBaseLucene]
+1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
+1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes
 
-   * */oak:index/slingResource*
-   * */oak:index/damResolvedPath*
+    * */oak:index/slingResource*
+    * */oak:index/damResolvedPath*
 
-1. Klicken Sie auf „Alle speichern“.
+1. Click "Save All"
+-->
 
 Lucene-Text-Extraktion deaktivieren:
 
-Wenn Ihre Benutzer nicht nach dem Inhalt von Assets suchen müssen, beispielsweise nach Texten, die in PDF-Dokumenten enthalten sind, können Sie diese Funktion deaktivieren und damit die Indexleistung verbessern.
+Wenn Ihre Benutzer keine Volltextsuche von Assets durchführen müssen, z. B. durch Durchsuchen von Text in PDF-Dokumenten, deaktivieren Sie diese Option. Sie verbessern die Indexleistung, indem Sie die Indexierung im Volltext deaktivieren.
 
-1. Gehen Sie zum AEM-Paketmanager „/crx/packmgr/index.jsp“.
-1. Laden Sie das folgende Paket herunter und installieren Sie es.
-
-[Datei laden](assets/disable_indexingbinarytextextraction-10.zip)
+1. Go to the AEM package manager `/crx/packmgr/index.jsp`.
+1. Laden Sie das Paket hoch und installieren Sie es unter [disable_indexingbinarytextraktion-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### guessTotal {#guess-total}
 
