@@ -3,7 +3,7 @@ title: Kaskadierende Metadaten
 description: In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,11 +19,11 @@ Nachfolgend finden Sie einige Anwendungsfälle, für die Sie kaskadierende Metad
 * Wenn der Standort des Benutzers erforderlich ist, können Sie die Namen relevanter Städte basierend auf dem vom Benutzer angegebenen Land und Staat anzeigen.
 * Laden Sie relevante Markennamen basierend auf der vom Benutzer ausgewählten Produktgruppe in einer Liste.
 * Aktivieren/Deaktivieren Sie die Sichtbarkeit eines bestimmten Felds basierend auf dem in einem anderen Feld angegebenen Wert. Zeigen Sie beispielsweise unterschiedliche Lieferadressen an, wenn der Benutzer angibt, dass die Lieferung an eine andere Adresse gehen soll.
-* Benennen Sie ein Feld als obligatorisch basierend auf dem in einem anderen Feld angegebenen Wert.
+* Legen Sie ein Feld basierend auf dem in einem anderen Feld angegebenen Wert als Pflichtfeld fest.
 * Ändern Sie die für ein bestimmtes Feld angezeigten Optionen basierend auf dem in einem anderen Wert angegebenen Wert.
 * Legen Sie den standardmäßigen Metadatenwert in einem bestimmten Feld basierend auf dem in einem anderen Feld angegebenen Wert fest.
 
-## Erstellen kaskadierender Metadaten in AEM {#configure-cascading-metadata-in-aem}
+## Erstellen kaskadierender Metadaten in AEM   {#configure-cascading-metadata-in-aem}
 
 Stellen Sie sich ein Szenario vor, bei dem Sie kaskadierende Metadaten anzeigen möchten, die auf dem ausgewählten Assettyp basieren. Beispiele
 
@@ -32,29 +32,29 @@ Stellen Sie sich ein Szenario vor, bei dem Sie kaskadierende Metadaten anzeigen 
 
 Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen als erforderliches Feld an.
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schemata]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Schemaformulare]** ein Schemaformular aus und tippen/klicken Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**, um das Schema zu bearbeiten.
+1. Wechseln Sie in der Experience Manager-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
-   ![select_form](assets/select_form.png)
+   ![Auswahlformular](assets/select_form.png)
 
 1. (Optional) Erstellen Sie im Metadatenschema-Editor ein neues bedingtes Feld. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und den Eigenschaftenpfad an.
 
-   To create a new tab, tap/click `+` to add a tab and then add a metadata field.
+   To create a new tab, click `+` to add a tab and then add a metadata field.
 
-   ![add_tab](assets/add_tab.png)
+   ![Registerkarte hinzufügen](assets/add_tab.png)
 
 1. Fügen Sie ein Dropdownfeld für den Assettyp hinzu. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und den Eigenschaftenpfad an. Fügen Sie optional eine Beschreibung hinzu.
 
-   ![asset_type_field](assets/asset_type_field.png)
+   ![Asset-Typ-Field](assets/asset_type_field.png)
 
 1. Schlüssel-Wert-Paare sind die von einem Formularbenutzer angegebenen Optionen. Sie können Schlüssel-Wert-Paare entweder manuell oder über eine JSON-Datei angeben.
 
-   * Um die Werte manuell anzugeben, wählen Sie **[!UICONTROL Manuell hinzufügen]** aus, tippen/klicken Sie auf **[!UICONTROL Auswahl hinzufügen]** und geben Sie den Optionstext und -wert an. Legen Sie z. B. die Assettypen „Video“, „PDF“, „Word“ und „Bild“ fest.
+   * To specify the values manually, select **[!UICONTROL Add Manually]**, and click **[!UICONTROL Add Choice]** and specify the option text and value. Legen Sie z. B. die Assettypen „Video“, „PDF“, „Word“ und „Bild“ fest.
 
    * Um die Werte dynamisch aus einer JSON-Datei abzurufen, wählen Sie **[!UICONTROL Über JSON-Pfad hinzufügen]** aus und geben Sie den Pfad einer JSON-Datei an. AEM ruft die Schlüssel-Wert-Paare in Echtzeit ab, wenn das Formular dem Benutzer angezeigt wird.
    Es kann immer nur eine der beiden Optionen aktiv sein. Sie können keine Optionen aus einer JSON-Datei importieren und sie manuell bearbeiten.
 
-   ![add_choice](assets/add_choice.png)
+   ![Auswahlmöglichkeiten hinzufügen](assets/add_choice.png)
 
    >[!NOTE]
    >
@@ -66,39 +66,39 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. (Optional) Fügen Sie die anderen erforderlichen Felder hinzu, wie z. B. Format, Codec und Dauer für Assets vom Typ „Video“.
 
-   Fügen Sie ebenso abhängige Felder für andere Asset-Typen hinzu. Fügen Sie z. B. die Anzahl der Felder und den Autor für Dokumentelemente wie PDF- und Word-Dateien hinzu.
+   Fügen Sie ebenso abhängige Felder für andere Asset-Typen hinzu. Fügen Sie bei Dokumenten-Assets wie PDF- und Word-Dateien beispielsweise die Felder „Seitenanzahl“ und „Autor“ hinzu.
 
-   ![video_dependence_fields](assets/video_dependent_fields.png)
+   ![Videoabhängigkeitsfelder](assets/video_dependent_fields.png)
 
-1. Um eine Abhängigkeit zwischen dem Feld „Assettyp“ und anderen Feldern zu erstellen, wählen Sie das abhängige Feld aus und öffnen Sie die Registerkarte **[!UICONTROL Regeln]**.
+1. Um eine Abhängigkeit zwischen dem Feld „Asset-Typ“ und anderen Feldern zu erstellen, wählen Sie das abhängige Feld aus und öffnen Sie die Registerkarte **[!UICONTROL Regeln]**.
 
-   ![select_depenentfield](assets/select_dependentfield.png)
+   ![Abhängigkeitsfeld auswählen](assets/select_dependentfield.png)
 
 1. Wählen Sie unter **[!UICONTROL Anforderung]** die Option **[!UICONTROL Erforderlich, basierend auf neuer Regel]** aus.
-1. Tippen/Klicken Sie auf **[!UICONTROL Regel hinzufügen]** und wählen Sie das Feld **[!UICONTROL Asset-Typ]**, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Tippen/Klicken Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Click **[!UICONTROL Done]** to save the changes.
 
-   ![define_rule](assets/define_rule.png)
+   ![Regel festlegen](assets/define_rule.png)
 
    >[!NOTE]
    >
    >Sie können mit Regeln Dropdown-Listen mit manuell vordefinierten Werten verwenden. Dropdownmenüs mit konfiguriertem JSON-Pfad können nicht in Verbindung mit Regeln verwendet werden, die vordefinierte Werte zur Anwendung von Bedingungen verwenden. Wenn die Werte zur Laufzeit aus einer JSON-Datei geladen werden, ist es nicht möglich, vordefinierte Regeln anzuwenden.
 
-1. Wählen Sie unter **[!UICONTROL Sichtbarkeit]** die Option **[!UICONTROL Sichtbar basierend auf der neuen Regel]**.
+1. Wählen Sie unter **[!UICONTROL Sichtbarkeit]** die Option **[!UICONTROL Sichtbar, basierend auf neuer Regel]** aus.
 
-1. Tippen/Klicken Sie auf **[!UICONTROL Regel hinzufügen]** und wählen Sie das Feld **[!UICONTROL Asset-Typ]**, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Tippen/Klicken Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
+1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Click **[!UICONTROL Done]** to save the changes.
 
-   ![define_visibilityRule](assets/define_visibilityrule.png)
+   ![Sichtbarkeitsregel festlegen](assets/define_visibilityrule.png)
 
    >[!NOTE]
    >
-   >Durch Tippen/Klicken auf einen Leerraum (oder einen anderen Ort als die Werte) werden die Werte zurückgesetzt. Wenn dies der Fall ist, wählen Sie die Werte erneut aus.
+   >Durch Klicken auf einen Leerraum (oder eine andere Stelle als die Werte) werden die Werte zurückgesetzt. Wenn dies der Fall ist, wählen Sie die Werte erneut aus.
 
    >[!NOTE]
    >
    >Sie können die Bedingungen **[!UICONTROL Anforderung]** und **[!UICONTROL Sichtbarkeit]** unabhängig voneinander anwenden.
 
-1. Erstellen Sie auf ähnliche Weise eine Abhängigkeit zwischen dem Wert Video im Feld Asset-Typ und anderen Feldern, z. B. Codec und Dauer.
-1. Repeat the steps to create dependency between document assets (PDF and Word) in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
+1. Erstellen Sie auf ähnliche Weise eine Abhängigkeit zwischen dem Wert „Video“ im Feld „Asset-Typ“ und anderen Feldern wie „Codec“ und „Dauer“.
+1. Wiederholen Sie die Schritte, um eine Abhängigkeit zwischen Dokumenten-Assets (PDF und Word) im Feld [!UICONTROL Asset-Typ] und Feldern wie [!UICONTROL Seitenzahl] und [!UICONTROL Autor] zu erstellen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Wenden Sie das Metadatenschema auf einen Ordner an.
 
 1. Navigieren Sie zu dem Ordner, auf den Sie das Metadatenschema angewendet haben, und öffnen Sie die Eigenschaftenseite eines Assets. Je nachdem, was Sie im Feld „Assettyp“ auswählen, werden relevante kaskadierende Metadatenfelder angezeigt.
@@ -109,4 +109,4 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
    ![Kaskadierende Metadaten für Dokumenten-Assets](assets/doc_type_fields.png)
 
-   *Abbildung: Metadaten für ein Dokument kopieren*
+   *Abbildung: Metadaten für ein Dokument in Kaskadenform*
