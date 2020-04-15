@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Layout-Container und Layout-Modus
 seo-title: Konfigurieren von Layout-Container und Layout-Modus
-description: Erfahren Sie, wie Sie Layout-Container und den Layout-Modus konfigurieren.
-seo-description: Erfahren Sie, wie Sie Layout-Container und den Layout-Modus konfigurieren.
+description: Erfahren Sie, wie Sie Layout Container und Layoutmodus konfigurieren.
+seo-description: Erfahren Sie, wie Sie Layout Container und Layoutmodus konfigurieren.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 710958ceecc8bbbbdae5e836ec0571a9eeaf6a9a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
 
-* [**Komponente &quot;Layout-Container **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)&quot;
+* [**Layout-Container-Komponente **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
    Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
 
@@ -38,11 +38,11 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
       * als Komponente, die Benutzer zu einer Seite hinzufügen können
       * als Standard-ParSys für die Seite
-      * beides:
+      * Beide.
 
          Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
-* **[Layoutmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den **Layoutmodus**verwenden, um Inhalte im interaktiven Raster zu positionieren.
+* **[Layoutmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Sobald der Container des Layouts auf der Seite positioniert ist, können Sie den **Layoutmodus**verwenden, um den Inhalt im interaktiven Raster zu positionieren.
 
 * [**Emulator **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich mit dem Emulator ansehen wie der Inhalt für bestimmte Geräte gerendert wird.
 
