@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -35,7 +35,9 @@ Java API Quick Beginn (SOAP) ist für die User Manager-API verfügbar.
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Quick Beginn unter &quot;Programmieren mit AEM Forms&quot;basieren auf dem Dokument, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+> Quick Beginn unter &quot;Programmieren mit AEM Forms&quot;basieren auf dem Dokument, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Hinzufügen von Benutzern mit der Java-API {#quick-start-soap-mode-adding-users-using-the-java-api}
 
