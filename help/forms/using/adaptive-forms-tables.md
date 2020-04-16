@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -94,7 +94,7 @@ So aktivieren Sie die Sortierung:
 
    ![Sortieren aktivieren](assets/enable_sorting_new.png)
 
-1. Wechseln Sie zum **Vorschaumodus** , um die Ausgabe anzuzeigen. Die Tabelle wird automatisch nach der ersten Spalte der Tabelle sortiert.
+1. Wechseln Sie zum **Vorschau** -Modus, um die Ausgabe Ansicht. Die Tabelle wird automatisch nach der ersten Spalte der Tabelle sortiert.
 1. Klicken Sie auf die Spaltenüberschrift, um die Werte anhand der Spalte zu sortieren.
 
    Eine Spaltenüberschrift mit einem Pfeil nach oben zeigt an, dass die Tabelle anhand dieser Spalte sortiert wird. Darüber hinaus werden die Werte in der Spalte in aufsteigender Reihenfolge angezeigt.
@@ -103,7 +103,7 @@ So aktivieren Sie die Sortierung:
 
    Gleichermaßen stellt eine Spaltenüberschrift mit einem Pfeil nach unten dar, dass die Werte in der Spalte in absteigender Reihenfolge angezeigt werden.
 
-   Sie können auch Änderungen an der Tabelle im **Vorschaumodus** vornehmen und erneut auf die Spaltenüberschrift klicken, um die Spaltenwerte zu sortieren.
+   Sie können auch im Tabellenmodus **Vorschau** ändern und erneut auf die Spaltenüberschrift klicken, um die Spaltenwerte zu sortieren.
 
 ## Konfigurieren des Tabellenstils {#configure}
 
@@ -143,7 +143,7 @@ Mit Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schrei
 Während Tabellen und Zeilen nur Ausdrücke zum Steuern ihrer Sichtbarkeit unterstützen, unterstützen Zellen folgende Ausdrücke:
 
 * **Initialisierungsskript**: Zum Ausführen einer Aktion nach der Initialsierung eines Felds.
-* **** Skript zum Bestätigen von Werten: , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **Skript zum Bestätigen von Werten:** , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs
 
 ## Layout für Mobilgeräte {#mobile-layouts}
 
-Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms bietet zwei Arten von mobilen Layouts für Tabellen: &quot;Kopfzeilen links&quot;und &quot;Reduzierbare Spalten&quot;.
+Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufgrund ihres formbaren und responsiven Layouts. AEM Forms Angebots bietet zwei Tabellenlayouts für Mobilgeräte: &quot;Kopfzeilen links&quot;und &quot;Reduzierbare Spalten&quot;.
 
 Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bearbeiten“ einer Tabelle auf der Registerkarte „Stile“ konfigurieren.
 
@@ -180,7 +180,9 @@ Mobilgeräteansicht einer Tabelle Layout „Kopfzeilen links“
 
 Im Layout „Reduzierbare Spalten“ werden die Spalten der Tabelle so reduziert, dass je nach Gerätegröße eine oder zwei Spalten angezeigt wird, während andere Spalten reduziert werden. Klicken Sie zum Anzeigen der anderen Spalten in der Tabelle auf das Symbol „Reduzieren/Erweitern“.
 
-**Hinweis**: Das Layout „Reduzierbare Spalten“ ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf Desktops, wenn nicht genug Platz verfügbar ist, um alle Spalten in einer Tabelle anzuzeigen.
+>[!NOTE]
+>
+>Das Layout &quot;Reduzierbare Spalten&quot;ist zwar für Mobilgeräte optimiert, funktioniert aber auch auf dem Desktop, wenn die verfügbare Breite nicht ausreicht, um alle Spalten in einer Tabelle anzuzeigen.
 
 In den folgenden Abbildungen werden Tabellen mit reduzierten und erweiterten Spalten verglichen.
 
