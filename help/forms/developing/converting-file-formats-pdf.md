@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -25,17 +25,23 @@ Der Generate PDF-Dienst verwendet native Anwendungen, um die folgenden Dateiform
 
 * Microsoft Office 2003 und 2007 zum Konvertieren von DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS und PUB (nur Windows)
 
-   **Hinweis**: Acrobat® 9.2 oder höher ist erforderlich, um das Microsoft XPS-Format in PDF zu konvertieren.*
+>[!NOTE]
+>
+>Acrobat® 9.2 oder höher ist erforderlich, um das Microsoft XPS-Format in PDF zu konvertieren.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 und 2009 zum Konvertieren von DWF, DWG und DXW (nur auf Englisch)
 * Corel WordPerfect 12 und X4 zum Konvertieren von WPD, QPW, SHW (nur auf Englisch)
 * OpenOffice 2.0, 2.4, 3.0.1 und 3.1 zum Konvertieren von ODT, ODS, ODP, ODG, ODF, SXW, SXI, SXC, SXD, DOC, DOCX, RTF, RTF, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX und PUB
 
-   ***Hinweis **: Der Generate PDF-Dienst unterstützt die 64-Bit-Versionen von OpenOffice nicht.*
+>[!NOTE]
+>
+>Der Generate PDF-Dienst unterstützt keine 64-Bit-Versionen von OpenOffice.
 
 * Adobe Fotoshop® CS2 zum Konvertieren von PSD (nur Windows)
 
-   ***Hinweis**: Fotoshop CS3 und CS4 werden nicht unterstützt, da Windows Server 2003 oder Windows Server 2008 nicht unterstützt wird. *
+>[!NOTE]
+>
+>Fotoshop CS3 und CS4 werden nicht unterstützt, da Windows Server 2003 oder Windows Server 2008 nicht unterstützt wird.
 
 * Adobe FrameMaker® 7.2 und 8 zum Konvertieren von FM (nur Windows)
 * Adobe PageMaker® 7.0 zum Konvertieren von PMD, PM6, P65 und PM (nur Windows)
@@ -156,7 +162,7 @@ Konvertieren eines Microsoft Word-Dokuments in ein PDF-Dokument mithilfe der Gen
    * A `com.adobe.idp.Document` object that represents the file to convert.
    * Ein `java.lang.String` Objekt, das die Dateierweiterung enthält.
    * Ein `java.lang.String` Objekt, das die bei der Konvertierung zu verwendenden Dateitypeinstellungen enthält. Dateitypeinstellungen bieten Konvertierungseinstellungen für verschiedene Dateitypen, z. B. .doc oder .xls.
-   * Ein `java.lang.String` Objekt, das den Namen der zu verwendenden PDF-Einstellungen enthält. Sie können beispielsweise angeben `Standard`.
+   * Ein `java.lang.String` Objekt, das den Namen der zu verwendenden PDF-Einstellungen enthält. For example, you can specify `Standard`.
    * Ein `java.lang.String` Objekt, das den Namen der zu verwendenden Sicherheitseinstellungen enthält.
    * Ein optionales `com.adobe.idp.Document` Objekt, das Einstellungen enthält, die beim Generieren des PDF-Dokuments angewendet werden sollen.
    * Ein optionales `com.adobe.idp.Document` Objekt, das Metadateninformationen enthält, die auf das PDF-Dokument angewendet werden sollen.
@@ -634,7 +640,7 @@ Im Gegensatz dazu reagieren die XML-Dialogfelddateien einfach auf Dialogfelder m
 
 #### Terminologie des Dialogfelds und des Fensters {#dialog-box-and-window-element-terminology}
 
-Dieser Abschnitt und der nächste Abschnitt verwenden je nach der zu beschreibenden Perspektive unterschiedliche Terminologie für Dialogfelder und die darin enthaltenen Komponenten. Dialogfeldkomponenten sind Elemente wie Schaltflächen, Felder und Kombinationsfelder.
+In diesem Abschnitt und im nächsten Abschnitt werden je nach Perspektive unterschiedliche Terminologie für Dialogfelder und die darin enthaltenen Komponenten verwendet. Dialogfeldkomponenten sind Elemente wie Schaltflächen, Felder und Kombinationsfelder.
 
 Wenn in diesem Abschnitt und im nächsten Abschnitt Dialogfelder und deren Komponenten aus der Perspektive eines Benutzers beschrieben werden, werden Begriffe wie *Dialogfeld*, *Schaltfläche*, *Feld* und *Kombinationsfeld* verwendet.
 
@@ -755,7 +761,7 @@ Legen Sie mithilfe der nativen Anwendung die zu navigierenden Fensterelemente un
 
 #### Identifizieren der in Beschriftungsattributen angegebenen Dialogfelder {#identifying-the-dialogs-specified-in-caption-attributes}
 
-Verwenden Sie Microsoft Spy++, um die Identitäten der Eigenschaften von Fensterelementen in der nativen Anwendung abzurufen. Sie müssen über diese Identitäten verfügen, um Skripten zu schreiben.
+Verwenden Sie Microsoft Spy++, um die IDs der Eigenschaften von Fensterelementen in der nativen Anwendung abzurufen. Sie müssen über diese Identitäten verfügen, um Skripten zu schreiben.
 
 #### Verwenden von regulären Ausdrücken in Beschriftungsattributen {#using-regular-expressions-in-caption-attributes}
 
