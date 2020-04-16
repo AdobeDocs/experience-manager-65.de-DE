@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,15 +28,17 @@ Der Endpoint-Registrierungsdienst bietet die Möglichkeit, Endpunkte programmges
 * (Veraltet für AEM Forms) Remoting
 * Aufgabe Manager
 
-   ***Hinweis **: SOAP-, EJB- und (für AEM Forms on JEE nicht mehr unterstützt) Remoting-Endpunkte werden automatisch für jeden aktivierten Dienst erstellt. Die SOAP- und EJB-Endpunkte ermöglichen SOAP und EJB für alle Dienstvorgänge.*
+>[!NOTE]
+>
+>SOAP-, EJB- und (für AEM Forms on JEE nicht mehr unterstützt) Remoting-Endpunkte werden automatisch für jeden aktivierten Dienst erstellt. Die SOAP- und EJB-Endpunkte ermöglichen SOAP und EJB für alle Dienstvorgänge.
 
-   Ein Remoting-Endpunkt ermöglicht es Flex-Clients, Vorgänge für den AEM Forms-Dienst aufzurufen, dem der Endpunkt hinzugefügt wird. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt, und Flex-Clients können RemoteObjects erstellen, die auf dieses Ziel verweisen, um Vorgänge für den betreffenden Dienst aufzurufen.
+Ein Remoting-Endpunkt ermöglicht es Flex-Clients, Vorgänge für den AEM Forms-Dienst aufzurufen, dem der Endpunkt hinzugefügt wird. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt, und Flex-Clients können RemoteObjects erstellen, die auf dieses Ziel verweisen, um Vorgänge für den betreffenden Dienst aufzurufen.
 
-   Die Endpunkte &quot;E-Mail&quot;, &quot;Aufgabe-Manager&quot;und &quot;Überwachter Ordner&quot;stellen nur einen bestimmten Dienstvorgang bereit. Das Hinzufügen dieser Endpunkte erfordert einen zweiten Konfigurationsschritt, um eine Methode zum Aufrufen auszuwählen, Konfigurationsparameter festzulegen und Zuordnungen von Eingabe- und Ausgabeparametern festzulegen.
+Die Endpunkte &quot;E-Mail&quot;, &quot;Aufgabe-Manager&quot;und &quot;Überwachter Ordner&quot;stellen nur einen bestimmten Dienstvorgang bereit. Das Hinzufügen dieser Endpunkte erfordert einen zweiten Konfigurationsschritt, um eine Methode zum Aufrufen auszuwählen, Konfigurationsparameter festzulegen und Zuordnungen von Eingabe- und Ausgabeparametern festzulegen.
 
-   Sie können TaskManager-Endpunkte in Gruppen organisieren, die als *Kategorien* bezeichnet werden. Diese Kategorien werden dann Workspace über TaskManager angezeigt, wobei die TaskManager-Endpunkte den Endpunkten während der Kategorisierung angezeigt werden. Innerhalb von Workspace sehen Endbenutzer diese Kategorien im Navigationsbereich. Die Endpunkte in den einzelnen Kategorien werden als Prozesskarten auf der Seite &quot;Beginn-Prozesse&quot;in Workspace angezeigt.
+Sie können TaskManager-Endpunkte in Gruppen organisieren, die als *Kategorien* bezeichnet werden. Diese Kategorien werden dann Workspace über TaskManager angezeigt, wobei die TaskManager-Endpunkte den Endpunkten während der Kategorisierung angezeigt werden. Innerhalb von Workspace sehen Endbenutzer diese Kategorien im Navigationsbereich. Die Endpunkte in den einzelnen Kategorien werden als Prozesskarten auf der Seite &quot;Beginn-Prozesse&quot;in Workspace angezeigt.
 
-   Sie können diese Aufgaben mithilfe des Endpunktregistrierungsdiensts ausführen:
+Sie können diese Aufgaben mithilfe des Endpunktregistrierungsdiensts ausführen:
 
 * Hinzufügen EJB-Endpunkte. (Siehe [Hinzufügen von EJB-Endpunkten](programmatically-endpoints.md#adding-ejb-endpoints).)
 * Hinzufügen SOAP-Endpunkte. (Siehe [Hinzufügen von SOAP-Endpunkten](programmatically-endpoints.md#adding-soap-endpoints).)
@@ -422,7 +424,7 @@ Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms 
 
    * Ein Zeichenfolgenwert, der den Namen des Eingabeparameters angibt. Beispielsweise lautet der Name des Eingabeparameters für den EncryptDocument-Dienst `InDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des `InDoc` Eingabeparameters lautet beispielsweise `com.adobe.idp.Document`.
-   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise angeben `variable`.
+   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. For example, you can specify `variable`.
    * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Sie können beispielsweise &amp;ast;.pdf als Dateimuster angeben.
    >[!NOTE]
    >
@@ -434,7 +436,7 @@ Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms 
 
    * Ein Zeichenfolgenwert, der den Namen des Ausgabeparameters angibt. Beispielsweise lautet der Name des Ausgabeparameters für den EncryptDocument-Dienst `SecuredDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Ausgabeparameters angibt. Der Datentyp des `SecuredDoc` Ausgabeparameters lautet beispielsweise `com.adobe.idp.Document`.
-   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise angeben `%F.pdf`.
+   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. For example, you can specify `%F.pdf`.
 
 1. Erstellen Sie einen Endpunkt des Typs &quot;Überwachter Ordner&quot;.
 
@@ -665,7 +667,7 @@ Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API:
 
    * Ein Zeichenfolgenwert, der den Namen des Eingabeparameters angibt. Beispielsweise lautet der Name des Eingabeparameters für den EncryptDocument-Dienst `InDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des `InDoc` Eingabeparameters lautet beispielsweise `com.adobe.idp.Document`.
-   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise angeben `variable`.
+   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. For example, you can specify `variable`.
    * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Sie können beispielsweise &amp;ast;.pdf als Dateimuster angeben.
    >[!NOTE]
    >
@@ -677,7 +679,7 @@ Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API:
 
    * Ein Zeichenfolgenwert, der den Namen des Ausgabeparameters angibt. Beispielsweise lautet der Name des Ausgabeparameters für den EncryptDocument-Dienst `SecuredDoc`.
    * Ein Zeichenfolgenwert, der den Datentyp des Ausgabeparameters angibt. Der Datentyp des `SecuredDoc` Ausgabeparameters lautet beispielsweise `com.adobe.idp.Document`.
-   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. Sie können beispielsweise angeben `%F.pdf`.
+   * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. For example, you can specify `%F.pdf`.
 
 1. Erstellen Sie den E-Mail-Endpunkt.
 
