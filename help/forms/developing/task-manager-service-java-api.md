@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -35,9 +35,13 @@ Die folgenden Quick-Beginn sind für den Aufgabe Manager-Dienst verfügbar.
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Sie können nicht mit der Web-Service-API nach Aufgaben suchen, die Benutzern zugewiesen wurden. Der Grund dafür ist, dass Sie die`taskList`Methode nicht aufrufen können. Dies ist ein erforderlicher Methodenaufruf zur Durchführung dieser Aufgabe.*
+>[!NOTE]
+>
+>Sie können nicht mit der Web-Service-API nach Aufgaben suchen, die Benutzern zugewiesen wurden. Der Grund dafür ist, dass Sie die `taskList` Methode nicht aufrufen können. Dies ist ein erforderlicher Methodenaufruf zur Durchführung dieser Aufgabe.
 
-***Hinweis **: Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Zuweisen von Aufgaben mit der Java-API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
