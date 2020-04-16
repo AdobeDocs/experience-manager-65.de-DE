@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -39,7 +39,9 @@ Der Java API Quick Beginn (SOAP) ist für den Signature-Dienst verfügbar:
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-***Hinweis **: Der unter &quot;Programmieren mit AEM Forms&quot;befindliche Quick Beginn basiert auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe[Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Der unter &quot;Programmieren mit AEM Forms&quot;befindliche Quick Beginn basiert auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Signaturfeld zu einem PDF-Dokument mithilfe der Java-API hinzufügen {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
