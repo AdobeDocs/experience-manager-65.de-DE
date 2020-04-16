@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -71,7 +71,9 @@ Wenn Sie ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für da
 1. Geben Sie im Bereich Dialogfeld „Fragmenterstellung“ die folgenden Informationen an:
 
    * **Name**: Name des Fragments. Der Standardwert ist der Elementname des Bedienfelds. Dies ist ein Pflichtfeld.
-      ***Hinweis **: Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment eingeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.*
+      >[!NOTE]
+      >
+      >Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment eingeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
 
    * **Title**: Titel des Formulars. Der Standardwert ist der Titel des Bedienfelds. 
 
