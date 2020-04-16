@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -104,7 +104,9 @@ Der Aliasname enthält alle Parameter, die ein HSM oder eToken erfordert. Befolg
    * **DLL-Pfad**: Geben Sie den vollständig qualifizierten Pfad der HSM- oder eToken-Clientbibliothek auf dem Server an. Beispiel: c:\Programme\LunaSA\cryptoki.dll. In einer Clusterumgebung muss dieser Pfad für alle Server im Cluster identisch sein.
    * **HSM-Pin**: Legen Sie ein Kennwort fest, das benötigt wird, um auf den Geräteschlüssel zuzugreifen.
    * **HSM-Steckplatz-ID**: Geben Sie eine Steckplatz-ID als Ganzzahl an. Die Steckplatz-ID wird für jeden Client einzeln festgelegt. Falls Sie einen zweiten Rechner bei einer anderen Partition registrieren (z. B. HSMPART2 auf demselben HSM-Gerät), wird Steckplatz 1 für diesen Client mit der Partition HSMPART2 verknüpft.
-   **Hinweis:***Geben Sie beim Konfigurieren von EToken einen numerischen Wert für das HSM-Steckplatz-ID-Feld an. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.*
+   >[!NOTE]
+   >
+   >Geben Sie beim Konfigurieren von Etoken einen numerischen Wert für das HSM-Steckplatz-ID-Feld ein. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.
 
    * **Zertifikat SHA1**: Geben Sie den SHA1-Wert (Thumbprint) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung an. Stellen Sie sicher, dass in dem SHA1-Wert keine Leerzeichen verwendet werden. Wenn Sie ein physisches Zertifikat verwenden, ist dies nicht erforderlich.
    * **HSM-Gerätetyp**: Wählen Sie den Hersteller des HSM- (Luna- oder anderen) oder eToken-Geräts aus.
