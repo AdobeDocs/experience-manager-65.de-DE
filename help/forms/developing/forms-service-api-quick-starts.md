@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -35,7 +35,7 @@ Die folgenden Quick-Beginn sind für den Forms-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Umgang mit PDF-Formularen, die als PDF mit der Java-API gesendet werden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML mit der Java-API gesendet werden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML gesendet werden, mit der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
 [Quick Beginn (SOAP-Modus): Erstellen von PDF-Dokumenten mit gesendeten XML-Daten mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
@@ -51,9 +51,11 @@ Die folgenden Quick-Beginn sind für den Forms-Dienst verfügbar:
 
 Anwendungslogik, die die Forms-Dienst-API verwendet, wird als Java-Servlets implementiert. AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
-* **Hinweis**: Quick-Beginn, die sich unter &quot;Programmieren mit v&quot;befinden, basieren auf dem Formularserver, auf dem Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>[!NOTE]
+>
+>Quick-Beginn, die sich unter &quot;Programmieren mit v&quot;befinden, basieren auf dem Formularserver, auf dem Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-   **Tipp**: Die Adobe Developer-Website enthält den folgenden Artikel, in dem erläutert wird, wie eine ASP.NET-Anwendung erstellt wird, die den Forms-Dienst aufruft und Formulare wiedergibt. Siehe [Erstellen von ASP.NET-Formularen](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
+**Tipp**: Die Adobe Developer-Website enthält den folgenden Artikel, in dem erläutert wird, wie eine ASP.NET-Anwendung erstellt wird, die den Forms-Dienst aufruft und Formulare wiedergibt. Siehe [Erstellen von ASP.NET-Formularen](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Quick Beginn (SOAP-Modus): Wiedergeben eines interaktiven PDF-Formulars mit der Java-API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -1527,7 +1529,7 @@ Im folgenden Codebeispiel wird ein Formular behandelt, das als PDF-Daten gesende
  
 ```
 
-## Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML mit der Java-API gesendet werden {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML gesendet werden, mit der Java-API {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
 Im folgenden Codebeispiel wird ein HTML-Formular verarbeitet, das als XML-Daten gesendet wird. Der an die `processFormSubmission` Methode übergebene Wert für den Inhaltstyp ist `CONTENT_TYPE=application/x-www-form-urlencoded`.Die Werte, die den Feldern mit den Namen `mortgageAmount`, `lastName`und `firstName` werden angezeigt. In diesem Beginn `getNodeText` wird eine benutzerdefinierte Methode verwendet. Es akzeptiert eine `org.w3c.dom.Document` Instanz und einen Zeichenfolgenwert, der den Knotennamen angibt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Node darstellt. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
