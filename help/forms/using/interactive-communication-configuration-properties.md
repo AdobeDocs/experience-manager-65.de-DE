@@ -11,7 +11,7 @@ topic-tags: interactive-communications
 discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -22,7 +22,7 @@ Interaktive Kommunikation enthält Eigenschaften, die nach der Installation des 
 
 Open the **Adobe Experience Manager Web Console Configuration** page using the following URL:
 
-`https://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr`
+`https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
 Die Konfigurationseigenschaften umfassen Folgendes:
 
@@ -45,7 +45,7 @@ Tap **Document Fragments configuration** on the **Adobe Experience Manager Web C
   </tr> 
   <tr> 
    <td>Datenanzeigeformate</td> 
-   <td>Gebietsschemaspezifisches Anzeigeformat für Felder, Variablen und Formulardatenmodellelemente, die beim Erstellen einer interaktiven Kommunikation für Druck- und Webkanäle verfügbar sind.</td> 
+   <td>Gebietsschemaspezifisches Anzeigeformat für Felder, Variablen und Formulardatenmodellelemente, das beim Erstellen einer interaktiven Kommunikation für Print- und Web-Kanal verfügbar ist.</td> 
    <td> 
     <ul> 
      <li>locale = en_US, de_DE, fr_FR und ja_JP</li> 
@@ -103,7 +103,7 @@ Tap **Create Correspondence Configuration** on the **Adobe Experience Manager We
   </tr> 
   <tr> 
    <td>Schrifteinbettung in PDF aktivieren</td> 
-   <td><p>Aktivieren Sie das Kontrollkästchen, um die Einbettung von Schriftarten in PDF-Dokumente zu aktivieren. Nach Auswahl dieser Option können Sie neue Schriftarten einbetten, nachdem Sie die PDF-Dokumente mithilfe der Agent-Benutzeroberfläche generiert oder in der Vorschau angezeigt haben. Verwenden Sie den Druckkanal der interaktiven Kommunikation, um PDF-Dokumente zu erstellen und in der Vorschau anzuzeigen.</p> <p>Das Einbetten von Schriftarten in ein PDF-Dokument ist nützlich, wenn eine Schriftart auf einem Computer verfügbar ist, der zum Generieren der PDF-Datei verwendet wird und nicht auf dem Clientcomputer verfügbar ist, der auf die PDF-Datei zugreift.</p> <p>Weitere Informationen zum Einbetten von Schriftarten finden Sie unter <a href="../../forms/using/customize-text-editor.md" target="_blank">Anpassen des Texteditors</a>.</p> </td> 
+   <td><p>Aktivieren Sie das Kontrollkästchen, um die Einbettung von Schriftarten in PDF-Dokumenten zu aktivieren. Nach Auswahl dieser Option können Sie neue Schriftarten einbetten, nachdem Sie die PDF-Dokumente mithilfe der Agent-Benutzeroberfläche generiert oder in der Vorschau angezeigt haben. Verwenden Sie den Kanal "Drucken"der interaktiven Kommunikation, um PDF-Dokumente zu erstellen und Vorschau.</p> <p>Das Einbetten von Schriftarten in ein PDF-Dokument ist nützlich, wenn eine Schriftart auf einem Computer verfügbar ist, der zum Generieren der PDF-Datei verwendet wird und nicht auf dem Clientcomputer verfügbar ist, der auf die PDF-Datei zugreift.</p> <p>Weitere Informationen zum Einbetten von Schriftarten finden Sie unter <a href="../../forms/using/customize-text-editor.md" target="_blank">Anpassen des Texteditors</a>.</p> </td> 
    <td>Nicht ausgewählt</td> 
    <td>Nicht zutreffend</td> 
   </tr> 
