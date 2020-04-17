@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
 
 ---
 
 
 # Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 
-Adobe bewertet die Produktfunktionen ständig, um ältere Funktionen mit der Zeit neu zu erfinden oder durch modernere Alternativen zu ersetzen, um den Gesamtwert der Kunden zu verbessern, wobei stets die Abwärtskompatibilität zu berücksichtigen ist.
+Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
 
 Für die Bekanntgabe des bevorstehenden Entfernens/Ersetzens von AEM-Funktionen gelten die folgenden Regeln:
 
@@ -42,7 +42,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
    <td>Kunden wird empfohlen, auf neue Creative Cloud-Integrationsfunktionen wie Adobe Asset Link oder AEM Desktop-App zu wechseln. Weitere Informationen finden Sie unter <a href="/help/assets/aem-cc-integration-best-practices.md">Best Practices für die Integration von AEM und Creative Cloud</a>.</td>
   </tr>
   <tr>
-   <td>Assets</td>
+   <td>Assets </td>
    <td>
     <ol>
      <li>AssetDownloadServlet ist bei den Veröffentlichungsinstanzen standardmäßig deaktiviert. Weitere Informationen finden Sie unter <a href="/help/sites-administering/security-checklist.md">Checkliste für die AEM-Sicherheit</a>.</li>
@@ -151,24 +151,30 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
    <td><p>Dialog-Editor für klassische UI in CRXDE Lite.</p> <p>Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird.</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>AEM Forms-Integration mit AEM Mobile&lt; wird nicht mehr unterstützt </p> </td>
+   <td>Kein Ersatz vorhanden. </td>
+  </tr>
  </tbody>
 </table>
 
 ## Entfernte Funktionen {#removed-features}
 
-Dieser Abschnitt listet Funktionen auf, die aus AEM 6.5 entfernt wurden. Frühere Versionen hatten diese Funktionen als veraltet markiert.
+In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.5 entfernt wurden. Frühere Versionen hatten diese Funktionen als veraltet markiert.
 
 | Bereich | Funktion | Ersatz |
 |--- |--- |--- |
-| Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [ActivityMap-Plugin, das von Adobe Analytics bereitgestellt wird](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Analytics-Aktivität-Map | Die Version der Aktivität Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [ActivityMap-Plugin, das von Adobe Analytics bereitgestellt wird](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrationen | Die ExactTarget-Integration wurde aus der Standardverteilung (QuickStart) entfernt und ist nicht mehr verfügbar. | Kein Ersatz vorhanden. |
 | Integrationen | Die Salesforce Force-API-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist jetzt ein zusätzliches, über PackageShare zu installierendes Paket. | Die Funktion ist weiterhin verfügbar. |
 | Formulare | Die Unterstützung für den Adobe Central Migration Bridge-Service wurde eingestellt, da Adobe Central nicht länger unterstützt wird. | Kein Ersatz vorhanden. |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Kein Ersatz vorhanden. |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Kein Ersatz vorhanden. |
+| Forms | Eine Single-Hop-Aktualisierung von LiveCycle ES4 SP1 auf AEM 6.5 Forms on JEE ist nicht verfügbar. | Siehe [verfügbare Aktualisierungspfade](../forms/using/upgrade.md) in der Dokumentation zur AEM Forms-Aktualisierung. |
 | Entwickler | Firebug Lite wurde aus der Standardverteilung (Quickstart) entfernt. | Verwenden Sie die im Browser integrierten Entwicklerkonsolen. |
 | Entwickler | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Kein Ersatz vorhanden. |
-| Assets | Die Funktion zum Abladen von Assets wurde in AEM 6.5 entfernt | Kein Ersatz vorhanden. |
+| Assets  | Die Funktion zum Abladen von Assets wurde in AEM 6.5 entfernt | Kein Ersatz vorhanden. |
 | Cache | `system/console/slingjsp` entfernt wurde, ist in AEM 6.5 nicht mehr verfügbar. | Klassen und Leichter Cache werden unter dem Apache Sling Commons FileSystem ClassLoader Bundle gespeichert. Sie können die Bundle-Nummer in der AEM Web Console überprüfen und den Cache-Ordner direkt aus dem Dateisystem entfernen (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
 ## Vorankündigung für die nächste Version {#pre-announcement-for-next-release}
