@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
 
 ---
 
@@ -306,7 +306,7 @@ Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv ext
 
 Nach Abschluss des Extrahierungsvorgangs erhalten Sie von AEM eine Benachrichtigung im Benachrichtigungsbereich. Während AEM das ZIP-Archiv extrahiert, können Sie ohne Unterbrechung des Extrahierungsvorgangs mit Ihrer Arbeit fortfahren.
 
-![Meldung der Postleitzahl-Extraktion](assets/Zip-extraction-notification.png)
+![Benachrichtigung über die Extraktion der ZIP-Datei](assets/Zip-extraction-notification.png)
 
 Die Funktion hat einige Einschränkungen:
 
@@ -326,11 +326,9 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
    Um ein Asset heranzuzoomen, tippen oder klicken Sie auf `+` (oder auf das Lupensymbol auf dem Asset). Um auszuzoomen, tippen oder klicken Sie auf `-`. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil „Zoom zurücksetzen“ gelangen Sie zurück zur Originalansicht.
 
-   ![uploadicon](assets/uploadicon.png)
-
    Tippen Sie auf **[!UICONTROL Zurücksetzen]**, um die Originalgröße der Ansicht wiederherzustellen.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Zurücksetzen-Symbol, um den Benutzer zur ursprünglichen Ansicht zurückzubringen](assets/chlimage_1-11.png)
 
 **Vorschau von Assets nur mit Tastatur**
 
@@ -353,11 +351,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Eigenschaften und Metadaten bearbeiten {#editing-properties}
 
-1. Navigieren Sie zum Speicherort des Assets, dessen Metadaten Sie bearbeiten möchten.
+1. Navigieren Sie zum Speicherort des Assets, um dessen Metadaten zu bearbeiten.
 
 1. Wählen Sie ein Asset aus und tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um die Asset-Eigenschaften anzuzeigen. Wählen Sie alternativ die Schnellaktion **[!UICONTROL Eigenschaften]** auf der Asset-Karte aus.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Schnellaktion &quot;Eigenschaften&quot;bei der Ansicht von Asset-Karten](assets/properties_quickaction.png)
 
 1. Bearbeiten Sie auf der Registerkarte [!UICONTROL Eigenschaften] die Metadateneigenschaften auf den verschiedenen Registerkarten. Zum Beispiel bearbeiten Sie auf der Registerkarte **[!UICONTROL Allgemein]** den Titel, die Beschreibung usw.
 
@@ -367,13 +365,13 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. Um ein bestimmtes Datum/eine Zeit für die Aktivierung der Assets einzustellen, verwenden Sie die Datumsauswahl neben dem Feld **[!UICONTROL Einschaltzeit]**.
 
-   ![Datums- oder Tastaturkürzel im Feld &quot;Zeit&quot;verwenden, um Datum und Uhrzeit für die Asset-Aktivierung hinzuzufügen](assets/schedule-activation.png)
+   ![Datums- und Zeitauswahl oder Verwendung von Tastaturbefehlen im Feld &quot;Uhrzeit&quot;, um Datum und Uhrzeit für die Aktivierung des Assets hinzuzufügen](assets/schedule-activation.png)
 
    *Abbildung: Asset-Aktivierung planen*
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabeformate weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar.
 
-   ![Verwenden Sie die Datumszeitauswahl oder die Tastaturbefehle im Feld &quot;außerhalb der Zeit&quot;, um Datum und Uhrzeit für die Asset-Aktivierung hinzuzufügen.](assets/schedule-deactivation.png)
+   ![Datumszeitauswahl oder Verwendung von Tasten im Feld &quot;außerhalb der Zeit&quot;, um Datum und Uhrzeit für die Asset-Aktivierung hinzuzufügen](assets/schedule-deactivation.png)
 
    *Abbildung: Asset-Deaktivierung planen*
 
@@ -385,7 +383,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. Um eine Bewertung für das Asset anzugeben, tippen oder klicken Sie auf die Registerkarte **[!UICONTROL Erweitert]** und dann auf den Stern an der richtigen Position, um die gewünschte Bewertung zuzuweisen.
 
-   ![Bewertungen](assets/ratings.png)
+   ![Registerkarte &quot;Erweitert&quot;in den Asset-Eigenschaften zum Zuweisen von Bewertungen](assets/ratings.png)
 
    Die Bewertungsnote, die Sie dem Asset zuweisen, wird unter **[!UICONTROL Ihre Bewertungen]** angezeigt. Die durchschnittliche Bewertungsnote, die das Asset von Benutzern erhält, wird unter **[!UICONTROL Bewertung]** angezeigt. Darüber hinaus wird die Aufschlüsselung der Bewertungen, die zur durchschnittlichen Bewertungsnote beitragen, unter **[!UICONTROL Bewertungsübersicht]** angezeigt. Sie können Assets basierend auf der durchschnittlichen Bewertungsnote durchsuchen.
 
@@ -414,7 +412,7 @@ Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werde
 Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine Teilkopie wird beim Kopieren eines Assets nicht erstellt.
 
 1. Wählen Sie in der Assets-Benutzeroberfläche mindestens ein Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Kopieren]**. Alternativ können Sie die Schnellaktion **[!UICONTROL Kopieren]**   auf der Asset-Karte auswählen.
-   ![copy_icon](assets/copy_icon.png)
+   ![Symbol kopieren in der Symbolleiste der Assets-Benutzeroberfläche](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -428,7 +426,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
 1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)Assets werden dann an diesen Speicherort kopiert.
+   ![Das Symbol &quot;Einfügen&quot;in die Benutzeroberfläche der Asset-Symbolleiste](assets/chlimage_1-14.png)&quot;Assets&quot;wird dann an diesen Speicherort kopiert.
 
    >[!NOTE]
    >
@@ -439,7 +437,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 1. Navigieren Sie zum Speicherort des Assets, das Sie verschieben möchten.
 
 1. Wählen Sie das Asset aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Verschieben]** .
-   ![move_icon](assets/move_icon.png)
+   ![Symbol verschieben in der Symbolleiste der Asset-Benutzeroberfläche](assets/move_icon.png)
 
 1. Führen Sie im Assistenten „Assets verschieben“ eine der folgenden Aktionen aus:
 
