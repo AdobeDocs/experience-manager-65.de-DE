@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
 
 Kenntnisse im Umgang mit HTML und CSS
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In der Benutzeroberfläche von AEM Forms können Sie jedem beliebigen Formular Metadaten hinzufügen. Mit benutzerdefinierten Metadaten können Sie die Benutzererfahrung bei der Auflistung und beim Durchsuchen von Formularen in Ihrem Unternehmen verbessern.
 
@@ -45,8 +45,12 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für 
    * Komponente „Link“: /libs/fd/fp/linkTemplate
    Fügen Sie einen Titel hinzu, der während der Auswahl der Layoutvorlagen angezeigt werden soll.
 
-   *Hinweis: Der Titel kann sich von dem Knotennamen des erstellten sling:Folder unterscheiden.*
-   *Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.* ![Erstellen eines sling:Folder](assets/1.png)
+   >[!NOTE]
+   >
+   >Der Titel kann sich vom Knotennamen von sling:Folder unterscheiden, den Sie erstellt haben.
+
+   Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.
+   ![Erstellen eines sling:Folder](assets/1.png)
 
 1. Erstellen Sie in diesem Ordner eine Datei „Template.html“, die als benutzerdefinierte Vorlage dienen soll.
 1. Schreiben Sie die benutzerdefinierte Vorlage und verwenden Sie dafür benutzerdefinierte Metadaten wie unten beschrieben.
@@ -102,13 +106,15 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 
 * **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Valid values are “**__FP_display_none**” or blank.
 
-   **** Hinweis: Denken Sie daran, die Klasse __FP_display_none in Ihrem benutzerdefinierten Stylesheet zu verwenden
+>[!NOTE]
+>
+>Denken Sie daran, die Klasse __FP_display_none in Ihrem benutzerdefinierten Stylesheet zu verwenden.
 
 * **downloadUrl**: URL für das Herunterladen eines Assets.
 
 Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationseigenschaften in der Benutzeroberfläche (nur Search &amp; Lister):
 
-1. **Lokalisierungsunterstützung**: Um statischen Text zu lokalisieren, verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert zur Verfügung, falls er noch nicht vorhanden ist.
+1. **Lokale Anpassung-Support**: Um statischen Text zu lokalisieren, verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert zur Verfügung, falls er noch nicht vorhanden ist.
    *In dem hier gezeigten Beispiel werden die Attribute`${localize-Apply}`und`${localize-Download}`verwendet, um den Text &quot;Anwenden&quot;und &quot;Herunterladen&quot;zu lokalisieren.*
 
 1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um Sortierung in ein Tabellenlayout einzufügen, fügen Sie dem jeweiligen Tabellen-Header das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
@@ -149,15 +155,15 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 **A**. Container-Element
 
-**** B. &quot;path&quot;-Metadaten mit einer festen Hierarchie, um die für jedes Formular gespeicherte Miniaturansicht abzurufen.
+**B.** &quot;path&quot;-Metadaten mit einer festen Hierarchie, um die für jedes Formular gespeicherte Miniaturansicht abzurufen.
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**** D. So lokalisieren Sie die Zeichenfolge &quot;Apply&quot;
+**D.** So lokalisieren Sie die Zeichenfolge &quot;Apply&quot;
 
-**** E. Verwenden der Konfigurationseigenschaft pdfLinkText
+**E.** Verwenden der Konfigurationseigenschaft pdfLinkText
 
-**** F. Verwenden der &quot;pdfUrl&quot;-Metadaten
+**F.** Verwenden der &quot;pdfUrl&quot;-Metadaten
 
 ## Tipps, Tricks und bekannte Probleme {#tips-tricks-and-known-issues}
 
@@ -172,7 +178,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 * [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Komponente &quot;Drafts and Submissions&quot;verwenden](/help/forms/using/draft-submission-component.md)
-* [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
+* [Anpassen der Datenspeicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)
