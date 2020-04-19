@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -87,7 +87,9 @@ Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgab
 
    Benutzer mit dieser Rolle können den Document Security-Server mithilfe der Seite „Konfiguration“ im Document Security-Abschnitt von Administration Console konfigurieren. Diese Berechtigung ist mit der Rolle „Konfiguration verwalten“ verknüpft.
 
-   ***Hinweis **: Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.*
+   >[!NOTE]
+   >
+   >Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
    **Document Security-Richtliniensatz-Administrator**
 
@@ -99,7 +101,9 @@ Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgab
    * Herausgeber des Dokuments verwalten
    * Ereignisse anzeigen
    * Delegieren
-   ***Hinweis **: Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.*
+   >[!NOTE]
+   >
+   >Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
    **Document Security – Eingeladene und lokale Benutzer verwalten**
 
@@ -108,7 +112,9 @@ Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgab
    * Verwalten eingeladener und lokaler Benutzer
    * Externe Benutzer einladen
    * Auf Webseiten für Endbenutzer zugreifen
-   ***Hinweis **: Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.*
+   >[!NOTE]
+   >
+   >Benutzer mit dieser Rolle müssen außerdem über die Rolle „Administration Console-Benutzer“ verfügen, um sich bei Administration Console anzumelden und Konfigurationseinstellungen zu bearbeiten.
 
    **Document security – Benutzer einladen**
 
