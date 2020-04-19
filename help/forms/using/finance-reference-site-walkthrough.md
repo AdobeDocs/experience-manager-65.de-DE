@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -306,7 +306,9 @@ Führen Sie folgende Schritte aus, um die Erstellung eines A/B-Tests für das We
 1. Öffnen Sie CRXDE Lite und erstellen Sie eine Sicherungskopie der folgenden Datei: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Ersetzen Sie die Definition der Funktion `onReportLoadSuccess` in der oben genannten Datei durch die Funktionsdefinition in der folgenden Datei: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Hinweis: Diese Änderungen dienen nur dem Zweck der Demo. Stellen Sie unbedingt den Dateiinhalt wieder her, nachdem Sie dieses Verfahren abgeschlossen haben. 
+   >[!NOTE]
+   >
+   >Diese Änderungen dienen nur dem Zweck der Demonstration. Stellen Sie unbedingt den Dateiinhalt wieder her, nachdem Sie dieses Verfahren abgeschlossen haben. 
 
 1. Aktualisieren Sie den von Ihnen erstellten Bericht. Dann sehen Sie Folgendes. Prüfen Sie das Berichts-Dashboard. 
 
@@ -555,7 +557,9 @@ Führen Sie folgende Schritte im Autorenmodus aus, um A/B-Tests für das We.Fina
 1. Öffnen Sie CRXDE Lite und erstellen Sie eine Sicherungskopie der folgenden Datei: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Ersetzen Sie die Definition der `onReportLoadSuccess` Funktion in der oben genannten Datei durch die Funktionsdefinition in der folgenden Datei: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Hinweis: Diese Änderungen dienen nur dem Zweck der Demo. Stellen Sie unbedingt den Dateiinhalt wieder her, nachdem Sie dieses Verfahren abgeschlossen haben. 
+   >[!NOTE]
+   >
+   >Diese Änderungen dienen nur dem Zweck der Demonstration. Stellen Sie unbedingt den Dateiinhalt wieder her, nachdem Sie dieses Verfahren abgeschlossen haben. 
 
 1. Aktualisieren Sie den von Ihnen erstellten Bericht. Dann sehen Sie Folgendes. Prüfen Sie das Berichts-Dashboard. 
 
@@ -804,7 +808,7 @@ Sarah untersucht die Registerkarten Überblick, Preis und Leistung, Portfolioman
 
 #### Funktionsweise {#how-it-works-18}
 
-Die interaktive Kommunikation des Blue Chip Growth Fund nutzt die Bereiche Eltern und Kinder, um damit zusammenhängende Informationen in verschiedene Abschnitte zu unterteilen. Im übergeordneten Bedienfeld werden alle untergeordneten Bedienfelder in Registerkarten organisiert.
+Die interaktive Kommunikation des Blue Chip Growth Fund nutzt die Bereiche Eltern und Kinder, um damit zusammenhängende Informationen in verschiedene Abschnitte zu unterteilen. Im übergeordneten Bereich werden alle untergeordneten Bereiche in Registerkarten organisiert.
 
 Das Layout der übergeordneten Registerkarte ist auf &quot;Registerkarten oben&quot;eingestellt, um alle untergeordneten Bereiche in Registerkarten zu konvertieren. Sie können die Bereiche der interaktiven Kommunikation im Bearbeitungsmodus unter `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
 
