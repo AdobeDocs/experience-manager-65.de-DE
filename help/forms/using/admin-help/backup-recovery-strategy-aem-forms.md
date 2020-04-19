@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -31,11 +31,13 @@ Adobe Experience Manager (AEM) ist ein wichtiger Bestandteil von AEM Forms. Dahe
 
 Die AEM Forms-Sicherungsstrategie umfasst zwei Sicherungsarten:
 
-**** Systembild: Eine vollständige Systemsicherung, mit der Sie den Inhalt Ihres Computers wiederherstellen können, wenn die Festplatte oder der gesamte Computer nicht mehr funktioniert. Eine Systemabbildsicherung ist nur vor der Bereitstellung von AEM Forms in der Produktionsumgebung erforderlich. Interne Unternehmensrichtlinien bestimmen anschließend, wie häufig Systemabbildsicherungen erforderlich sind.
+**Systembild:** Eine vollständige Systemsicherung, mit der Sie den Inhalt Ihres Computers wiederherstellen können, wenn die Festplatte oder der gesamte Computer nicht mehr funktioniert. Eine Systemabbildsicherung ist nur vor der Bereitstellung von AEM Forms in der Produktionsumgebung erforderlich. Interne Unternehmensrichtlinien bestimmen anschließend, wie häufig Systemabbildsicherungen erforderlich sind.
 
-**** AEM Forms-spezifische Daten: Anwendungsdaten befinden sich in der Datenbank, im globalen Dokumentenspeicher (GDS) und im AEM-Repository und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
+**AEM Forms-spezifische Daten:** Anwendungsdaten befinden sich in der Datenspeicherung für globale Dokumente (GDS) und im AEM-Repository und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
 
-***Hinweis **: Wenn Content Services (nicht mehr unterstützt) installiert ist, sichern Sie auch das Stammverzeichnis für Inhalte. (Siehe[Stammordner für Inhalte (nur Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).)*
+>[!NOTE]
+>
+>Wenn Content Services (nicht mehr unterstützt) installiert ist, sichern Sie auch das Stammordner für Inhalte. Siehe [Stammordner für Inhalte (nur Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 In der Datenbank werden Formularartefakte, Dienstkonfigurationen, Prozesszustände und Datenbankverweise auf Dateien im globalen Dokumentenspeicher gespeichert. Wenn Sie die Dokumentenspeicherung in der Datenbank aktiviert haben, werden permanente Daten und Dokumente im globalen Dokumentenspeicher ebenfalls in der Datenbank gespeichert. Die Datenbank kann mithilfe der folgenden Methoden gesichert und wiederhergestellt werden:
 
@@ -47,7 +49,9 @@ In der Datenbank werden Formularartefakte, Dienstkonfigurationen, Prozesszustän
 
 * **Der kontinuierliche Sicherungsmodus** gibt an, dass das System stets im Sicherungsmodus ist, wobei eine neue Sicherungsmodussitzung ausgelöst wird, sobald die vorherige Sitzung freigegeben wurde. Beim kontinuierlichen Sicherungsmodus gibt es kein Zeitlimit. Wenn das bereitgestellte LCBackupMode-Skript oder die APIs aufgerufen werden, um den kontinuierlichen Sicherungsmodus zu beenden, wird eine neue kontinuierliche Sicherungsmodussitzung gestartet. Dieser Modus eignet sich zur Unterstützung fortlaufender Sicherungen und ermöglicht zugleich das Entfernen alter und nicht benötigter Dokumente aus dem globalen Dokumentenspeicher. Der kontinuierliche Sicherungsmodus wird nicht über die Seite „Sicherung und Wiederherstellung“ unterstützt. Nach einem Wiederherstellungsszenario ist der kontinuierliche Sicherungsmodus weiter aktiv. Sie können den kontinuierlichen Sicherungsmodus mithilfe des bereitgestellten LCBackupMode-Skripts mit der Option `leaveContinuousCoverage` deaktivieren.
 
-***Note**: Leaving rolling backup mode immediately causes a new backup mode session to begin. Wenn Sie den kontinuierlichen Sicherungsmodus vollständig deaktivieren möchten, verwenden Sie die Option `leaveContinuousCoverage` im Skript. Damit wird die vorhandene Sicherungssitzung überschrieben. Im Snapshot-Modus können Sie den Sicherungsmodus wie gewohnt beenden. *
+>[!NOTE]
+>
+>Durch Beenden des kontinuierlichen Sicherungsmodus wird unmittelbar eine neue Sicherungsmodussitzung ausgelöst. Wenn Sie den kontinuierlichen Sicherungsmodus vollständig deaktivieren möchten, verwenden Sie die Option `leaveContinuousCoverage` im Skript. Damit wird die vorhandene Sicherungssitzung überschrieben. Im Snapshot-Modus können Sie den Sicherungsmodus wie gewohnt beenden.
 
 Zum Vermeiden von Datenverlusten müssen die AEM Forms-spezifischen Daten so gesichert werden, dass Dokumente im Ordner des globalen Dokumentenspeichers und im Stammordner für Inhalte in Korrelation zu Datenbankverweisen stehen.
 
