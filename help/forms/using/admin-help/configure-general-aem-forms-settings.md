@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -33,16 +33,20 @@ Informationen zum Aktivieren des abgesicherten Sicherungsmodus finden Sie unter 
 
 ## Optionen für die Core-Konfigurationen {#core-configurations-options}
 
-**Speicherort des temporären Ordners** Der Ordnerpfad, in dem AEM Forms temporäre Produktdateien erstellt. Wenn der Wert dieser Einstellung leer ist, wird als Speicherort standardmäßig ein Ordner unterhalb des Systemordners „temp“ gewählt. Stellen Sie sicher, dass der temporäre Ordner ein beschreibbarer Ordner ist. 
+**Speicherort des temporären Ordners** Der Ordnerpfad, in dem AEM Forms temporäre Produktdateien erstellt. Wenn der Wert dieser Einstellung leer ist, wird als Speicherort standardmäßig ein Ordner unterhalb des Systemordners „temp“ gewählt. Stellen Sie sicher, dass der temporäre Ordner ein beschreibbarer Ordner ist.
 
-***Hinweis **: Stellen Sie sicher, dass sich der temporäre Ordner im lokalen Dateisystem befindet. AEM Forms unterstützt keine temporären Ordner an einem Remote-Standort.*
+>[!NOTE]
+>
+>Stellen Sie sicher, dass sich der temporäre Ordner im lokalen Dateisystem befindet. AEM Forms unterstützt keine temporären Ordner an einem Remote-Standort.
 
 **Stammordner** der globalen Dokument-Datenspeicherung Der Stammordner der globalen Dokument-Datenspeicherung (GDS) wird für folgende Zwecke verwendet:
 
 * Speichern von dauerhaft genutzten Dokumenten. Dauerhaft genutzte Dokumente verfügen nicht über einen Ablaufzeitpunkt und bleiben bestehen, bis sie entfernt werden (z. B. in einem Workflow-Prozess verwendete PDF-Dateien). Die dauerhaft genutzten Dokumente bilden einen wichtigen Teil für den gesamten Systemstatus. Wenn einige oder alle diese Dokumente verloren gehen oder beschädigt werden, kann der Formularserver instabil werden. Aus diesem Grund muss dieser Ordner auf einem RAID-Gerät gespeichert werden.
 * Speichern von temporären Dokumenten, die während der Verarbeitung benötigt werden.
 
-   ***Hinweis **: Sie können die Dokumentenspeicherung auch in der AEM Forms-Datenbank aktivieren. Die Systemleistung ist jedoch bei der Verwendung des GDS höher.*
+>[!NOTE]
+>
+>Sie können die Dokumentenspeicherung auch in der AEM Forms-Datenbank aktivieren. Die Systemleistung ist jedoch bei der Verwendung des GDS höher.
 
 * Übertragen von Dokumenten zwischen Knoten in einem Cluster. Wenn Sie AEM Forms in einer Clusterumgebung ausführen, muss auf diesen Ordner von allen Knoten im Cluster zugegriffen werden können.
 * Empfangen eingehender Parameter von Remote-API-Aufrufen.
@@ -53,9 +57,13 @@ Wenn Sie keinen GDS-Stammordner angeben, wird als Ordner standardmäßig der Ord
 * `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
 * `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
-***Hinweis **: Das Ändern des Wertes dieser Einstellung für den Stammordner des globalen Dokumentenspeichers muss mit besonderer Sorgfalt erfolgen. Der Ordner des GDS wird zum Speichern sowohl von in einem Prozess dauerhaft genutzten Dateien als auch von kritischen AEM Forms-Produktkomponenten verwendet. Das Ändern des Speicherorts des GDS-Ordners stellt eine wesentliche Systemänderung dar. Die fehlerhafte Konfiguration des Speicherorts des GDS-Ordners führt dazu, dass AEM Forms nicht mehr funktionsfähig ist, und kann eine vollständige Neuinstallation von AEM Forms erforderlich machen. Wenn Sie einen neuen Speicherort für den Ordner des globalen Dokumentenspeichers angeben, muss der Anwendungsserver heruntergefahren und die Daten migriert werden, bevor der Server neu gestartet werden kann. Der Systemadministrator muss unter Beibehaltung der internen Ordnerstruktur alle Dateien aus dem alten an den neuen Speicherort verschieben.*
+>[!NOTE]
+>
+>Das Ändern des Wertes dieser Einstellung für den Stammordner des globalen Dokumentenspeichers muss mit besonderer Sorgfalt erfolgen. Der Ordner des GDS wird zum Speichern sowohl von in einem Prozess dauerhaft genutzten Dateien als auch von kritischen AEM Forms-Produktkomponenten verwendet. Das Ändern des Speicherorts des GDS-Ordners stellt eine wesentliche Systemänderung dar. Die fehlerhafte Konfiguration des Speicherorts des GDS-Ordners führt dazu, dass AEM Forms nicht mehr funktionsfähig ist, und kann eine vollständige Neuinstallation von AEM Forms erforderlich machen. Wenn Sie einen neuen Speicherort für den Ordner des globalen Dokumentenspeichers angeben, muss der Anwendungsserver heruntergefahren und die Daten migriert werden, bevor der Server neu gestartet werden kann. Der Systemadministrator muss unter Beibehaltung der internen Ordnerstruktur alle Dateien aus dem alten an den neuen Speicherort verschieben. 
 
-***Hinweis **: Geben Sie für den temporären Ordner („temp“) und den GDS-Ordner nicht denselben Ordner an.*
+>[!NOTE]
+>
+>Geben Sie für den temporären Ordner („temp“) und den GDS-Ordner nicht denselben Ordner an..
 
 Zusätzliche Informationen zum GDS-Ordner finden Sie unter [Vorbereiten der Installation von AEM Forms (Einzelserver).](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)
 
@@ -89,9 +97,11 @@ Dies ist eine obligatorische Einstellung. Der Standardwert ist 30 Sekunden.
 
 Im FIPS-Modus werden die in Adobe Acrobat®-Versionen vor 7.0 verwendeten Verschlüsselungsalgorithmen nicht unterstützt. Wenn der FIPS-Modus aktiviert ist und Sie den Encryption-Dienst zum Verschlüsseln von PDFs mit einem Kennwort mit einer Kompatibilitätsstufe verwenden, die auf Acrobat 5 festgelegt ist, kommt es bei dem Verschlüsselungsversuch zu einem Fehler.
 
-Im Allgemeinen wendet der Assembler-Dienst bei aktiviertem FIPS keine Kennwortverschlüsselung auf Dokumente an. Wird dies dennoch versucht, wird eine FIPSModeException-Ausnahme ausgelöst, die angibt, dass „Kennwortverschlüsselung im FIPS-Modus nicht zulässig“ ist. Darüber hinaus wird das DDX-Element (Document Description XML) PDFsFromBookmarks im FIPS-Modus nicht unterstützt, wenn das Basisdokument kennwortverschlüsselt ist. 
+Im Allgemeinen wendet der Assembler-Dienst bei aktiviertem FIPS keine Kennwortverschlüsselung auf Dokumente an. Wird dies dennoch versucht, wird eine FIPSModeException-Ausnahme ausgelöst, die angibt, dass „Kennwortverschlüsselung im FIPS-Modus nicht zulässig“ ist. Darüber hinaus wird das DDX-Element (Document Description XML) PDFsFromBookmarks im FIPS-Modus nicht unterstützt, wenn das Basisdokument kennwortverschlüsselt ist.
 
-***Hinweis **: AEM Forms überprüft keinen Code, um die FIPS-Kompatibilität sicherzustellen. Sie bietet einen FIPS-Betriebsmodus, sodass gemäß FIPS zugelassene Algorithmen für Kryptographiedienste aus den FIPS-zugelassenen Bibliotheken (RSA) verwendet werden.*
+>[!NOTE]
+>
+>AEM Forms überprüft keinen Code, um die FIPS-Kompatibilität sicherzustellen. Sie bietet einen FIPS-Betriebsmodus, sodass gemäß FIPS zugelassene Algorithmen für Kryptographiedienste aus den FIPS-zugelassenen Bibliotheken (RSA) verwendet werden.
 
 **Aktivieren Sie WSDL** Wählen Sie diese Option, um die WSDL-Generierung (Web Service Definition Language) für alle Dienste zu aktivieren, die Teil von AEM Forms sind.
 
