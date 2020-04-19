@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -59,13 +59,15 @@ Wenn Sie einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhal
 
 Sie können festlegen, welcher Repository Service Provider mit Documentum verwendet werden soll. Aufrufe des Repository-Dienstes werden an den konfigurierten Provider delegiert. Die folgenden Optionen sind verfügbar:
 
-**** Name des aktuellen Repository Service Providers: Der Name des aktuellen Repository Service Providers
+**Name des aktuellen Repository-Dienstleisters:** Der Name des aktuellen Repository-Dienstleisters
 
-**** ECM Documentum Repository Provider: Legt den Documentum Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
+**ECM Documentum Repository Provider:** Legt den Documentum Repository Provider als Provider für das Repository fest. Diese Option ist veraltet.
 
-**** Repository Provider: Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
 
-***Hinwesi **: Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie „RepositoryService“ in „Anwendungen und Dienste“ > „Dienstverwaltung“.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>To select a repository service provider other than those listed, configure RepositoryService in Applications and Services > Service Management. <!-- Fix broken link (See Managing Services) -->.
 
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
 1. Wählen Sie im Bereich „Repository Service Provider-Informationen“ einen anderen Repository Service Provider aus.
