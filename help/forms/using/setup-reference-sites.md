@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie die Referenz-Website einrichten, stellen Sie Folgendes sicher:
 
 * **Einen SMTP-Dienst** Sie können einen beliebigen SMTP-Dienst verwenden.
 
-* **Adobe Sign-Entwicklerkonto und Adobe Sign API-Anwendung** Um digitale Signatur-Funktionen zu verwenden, ist ein Adobe Sign-Entwicklerkonto erforderlich. Siehe[ Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
+* **Adobe Sign-Entwicklerkonto und Adobe Sign API-Anwendung** Um digitale Signatur-Funktionen zu verwenden, ist ein Adobe Sign-Entwicklerkonto erforderlich. Siehe[ Adobe Sign](https://acrobat.adobe.com/de/de/why-adobe/developer-form.html).
 
 * Eine laufende Instanz von Microsoft Dynamics 365 zur Integration in AEM Forms. Um die Referenz-Website auszuführen, importieren Sie die Beispieldaten in die Microsoft Dynamics-Instanz, um die interaktive Kommunikation, die auf der Referenz-Website verwendet wird, im Voraus auszufüllen.
 * Eine ausgeführte Instanz von AEM mit Add-On-Paket für Forms. Weitere Informationen finden Sie unter [Installation und Konfiguration von AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
@@ -187,7 +187,7 @@ Führen Sie die folgenden Schritte aus, um einen Mail-Dienst im Veröffentlichun
 
 Die E-Mail-Vorlagen für die We.Finance-Referenz-Site enthalten personalisierte Links in E-Mails. Diese Verknüpfungen haben Platzhalter wie `${placeholder}`. Diese Platzhalter werden durch tatsächliche Werte ersetzt, bevor E-Mails versendet werden. Die standardmäßige XSS-Schutzkonfiguration für AEM erlaubt keine (**{ }**) in der URL und im HTML-Inhalt. Sie können jedoch die Standardkonfiguration außer Kraft setzen, indem Sie folgende Schritte im Veröffentlichungsmodus ausführen: 
 
-1. Kopieren `/libs/cq/xssprotection/config.xml` nach `/apps/cq/xssprotection/config.xml`.
+1. Kopieren Sie `/libs/cq/xssprotection/config.xml` nach `/apps/cq/xssprotection/config.xml`.
 1. Öffnen Sie `/apps/cq/xssprotection/config.xml`.
 1. In the `common-regexps` section, modify the `onsiteURL` entry as follows and save the file.
 
@@ -355,10 +355,13 @@ Die Referenz-Website zeigt die Integration von AEM Forms mit Adobe Target, einer
 Um die Integration auf der Referenz-Website zu testen, führen Sie folgende Schritte aus, um Target in AEM zu konfigurieren:
 
 1. Start the author quickstart with the jvm argument `-Dabtesting.enabled=true` to enable A/B testing on the server.
-   **Hinweis**: Wenn die AEM-Instanz auf JBoss ausgeführt wird, das als Dienst aus der Turnkey-Installation gestartet wird, fügen Sie den `-Dabtesting.enabled=true` Parameter in den folgenden Eintrag in der `jboss\bin\standalone.conf.bat` Datei ein:
+
+   >[!NOTE]
+   >
+   >Wenn die AEM-Instanz auf JBoss ausgeführt wird, das als Dienst aus der Turnkey-Installation gestartet wird, fügen Sie den `-Dabtesting.enabled=true` Parameter in den folgenden Eintrag in der `jboss\bin\standalone.conf.bat` Datei ein:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
-1. Zugriff `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
+1. Greife Sie auf `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html` zu.
 
 1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. Die Konfiguration der Web.Finance-Zielgruppe ist verfügbar. Klicken Sie auf „Öffnen“, um die Konfiguration zu öffnen. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Bearbeiten]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
 
