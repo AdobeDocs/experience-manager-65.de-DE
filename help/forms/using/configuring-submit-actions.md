@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -102,7 +102,8 @@ Alle Formularfelder müssen über verschiedene Elementnamen verfügen, auch wenn
 
 Bei der Übermittlungsaktion **PDF mittels E-Mail senden** wird bei erfolgreicher Übermittlung des Formulars an einen oder mehrere Empfänger eine mit einer PDF-Datei gesendet, die Formulardaten enthält.
 
-**Hinweis:** Diese Übermittlungsaktion ist für XFA-basierte adaptive Formulare und XSD-basierte adaptive Formulare verfügbar, die das Dokument aus Datensatzvorlage enthalten.
+>[!NOTE]
+Diese Übermittlungsaktion ist für XFA-basierte adaptive Formulare und XSD-basierte adaptive Formulare mit dem Dokument Datensatzvorlage verfügbar.
 
 ## Workflow für Formulare aufrufen {#invoke-a-forms-workflow}
 
