@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -44,7 +44,7 @@ Die Adobe PDF-Einstellungen gelten nur für PDFMaker-Konvertierungen. Dazu zähl
 
 PDF Generator bietet mehrere vordefinierte PDF-Einstellungen. Sie können diese vordefinierten Einstellungen nicht ändern, Sie können jedoch eine Einstellung auf Grundlage einer vorhandenen erstellen, indem Sie diese Einstellung bearbeiten und unter einem neuen Namen speichern.
 
-**** Drucken in hoher Qualität: Erstellt PDF-Dateien für die Ausgabe in hoher Qualität. Diese Einstellung dient zum:
+**Drucken in hoher Qualität:** Erstellt PDF-Dateien für die Ausgabe in hoher Qualität. Diese Einstellung dient zum:
 
 * Neuberechnen von Farb- und Graustufenbildern mit 300 dpi;
 * Neuberechnen von Schwarzweißbildern mit 1200 dpi;
@@ -53,15 +53,15 @@ PDF Generator bietet mehrere vordefinierte PDF-Einstellungen. Sie können diese 
 
 Diese PDF-Dateien können in Adobe Acrobat 5 und Adobe Acrobat Reader® 5 oder höher geöffnet werden.
 
-**** Übergroße Seiten: Erstellt PDF-Dokumente, die für eine zuverlässige Anzeige und Druckausgabe technischer Zeichnungen mit einer Größe von mehr als 200 x 200 Zoll geeignet sind. Erstellte PDF-Dokumente können in Adobe Acrobat Professional und in Acrobat Standard Version 7 oder höher sowie Adobe Reader 7 oder höher geöffnet werden.
+**Übergroße Seiten:** Erstellt PDF-Dokumente, die für eine zuverlässige Anzeige und Druckausgabe technischer Zeichnungen mit einer Größe von mehr als 200 x 200 Zoll geeignet sind. Erstellte PDF-Dokumente können in Adobe Acrobat Professional und in Acrobat Standard Version 7 oder höher sowie Adobe Reader 7 oder höher geöffnet werden.
 
-**** PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB: Überprüft eingehende Aufträge auf Einhaltung des ISO-Standards für die langfristige Erhaltung (Archivierung) elektronischer Dokumente und erstellt PDF/A-Dateien nur, wenn sie konform sind. Diese Dateien dienen hauptsächlich zur Archivierung. Kompatible Dateien dürfen nur Text, Rasterbilder und Vektorobjekte und keine Verschlüsselung oder Skripte enthalten. Darüber hinaus müssen alle Schriftarten so eingebettet sein, dass die Dokumente ihrer Erstellung entsprechend geöffnet und angezeigt werden können. PDF/A 1b verwendet PDF 1.4 und konvertiert alle Farben je nach ausgewähltem Standard entweder in CMYK oder in RGB. Mithilfe dieser Einstellungsdatei erstellte PDF-Dateien können in Acrobat 5 und Acrobat Reader 5 und höher geöffnet werden. Weitere Informationen zu PDF/A finden Sie unter Adobe und Branchenstandards.
+**PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB:** Überprüft eingehende Aufträge auf Einhaltung des ISO-Standards für die langfristige Erhaltung (Archivierung) elektronischer Dokumente und erstellt PDF/A-Dateien nur, wenn sie konform sind. Diese Dateien dienen hauptsächlich zur Archivierung. Kompatible Dateien dürfen nur Text, Rasterbilder und Vektorobjekte und keine Verschlüsselung oder Skripte enthalten. Darüber hinaus müssen alle Schriftarten so eingebettet sein, dass die Dokumente ihrer Erstellung entsprechend geöffnet und angezeigt werden können. PDF/A 1b verwendet PDF 1.4 und konvertiert alle Farben je nach ausgewähltem Standard entweder in CMYK oder in RGB. Mithilfe dieser Einstellungsdatei erstellte PDF-Dateien können in Acrobat 5 und Acrobat Reader 5 und höher geöffnet werden. Weitere Informationen zu PDF/A finden Sie unter Adobe und Branchenstandards.
 
-**** PDF/X-1a 2001: Überprüft eingehende Aufträge auf Übereinstimmung mit PDF/X-1a und erstellt PDF-Dateien nur, wenn sie konform sind. PDF/X-1a ist ein ISO-Standard für den Austausch grafischer Inhalte. PDF/X-1a erfordert, dass alle Schriftarten eingebettet, die entsprechenden PDF-Felder angegeben und Farben entweder als CMYK oder Volltonfarben angezeigt werden. PDF-Dateien, die die PDF/X-1a-Anforderungen erfüllen, werden für eine bestimmte Ausgabebedingung eingerichtet (z. B. für den Web-Offset-Druck gemäß Specifications Web Offset Publications [SWOP]). Weitere Informationen zu PDF/X finden Sie unter Adobe und Branchenstandards.
+**PDF/X-1a 2001:** Überprüft eingehende Aufträge auf Übereinstimmung mit PDF/X-1a und erstellt PDF-Dateien nur, wenn sie konform sind. PDF/X-1a ist ein ISO-Standard für den Austausch grafischer Inhalte. PDF/X-1a erfordert, dass alle Schriftarten eingebettet, die entsprechenden PDF-Felder angegeben und Farben entweder als CMYK oder Volltonfarben angezeigt werden. PDF-Dateien, die die PDF/X-1a-Anforderungen erfüllen, werden für eine bestimmte Ausgabebedingung eingerichtet (z. B. für den Web-Offset-Druck gemäß Specifications Web Offset Publications [SWOP]). Weitere Informationen zu PDF/X finden Sie unter Adobe und Branchenstandards.
 
-**** PDF/X-3 2002: Überprüft eingehende Aufträge auf PDF/X-3-Kompatibilität und erstellt PDF-Dateien nur, wenn sie konform sind. Ebenso wie PDF/X-1a ist PDF/X-3 ein ISO-Standard für den Austausch grafischer Inhalte. Der Hauptunterschied ist, dass PDF/X-3 geräteunabhängige Farben unterstützt.
+**PDF/X-3 2002:** Überprüft eingehende Aufträge auf PDF/X-3-Kompatibilität und erstellt PDF-Dateien nur, wenn sie konform sind. Ebenso wie PDF/X-1a ist PDF/X-3 ein ISO-Standard für den Austausch grafischer Inhalte. Der Hauptunterschied ist, dass PDF/X-3 geräteunabhängige Farben unterstützt.
 
-**** Pressequalität: Erstellt PDF-Dateien für eine hochwertige Druckproduktion (z. B. auf einem Belichter oder einem Plattenbelichter). In diesem Fall spielt die Dateigröße keine Rolle. Ziel ist die Erhaltung sämtlicher Informationen in einer PDF-Datei, die ein Akzidenzdrucker oder Druckvorstufen-Dienstleister zum ordnungsgemäßen Drucken des Dokuments benötigt. Die dazugehörigen Optionen dienen zum:
+**Pressequalität:** Erstellt PDF-Dateien für eine hochwertige Druckproduktion (z. B. auf einem Belichter oder einem Plattenbelichter). In diesem Fall spielt die Dateigröße keine Rolle. Ziel ist die Erhaltung sämtlicher Informationen in einer PDF-Datei, die ein Akzidenzdrucker oder Druckvorstufen-Dienstleister zum ordnungsgemäßen Drucken des Dokuments benötigt. Die dazugehörigen Optionen dienen zum:
 
 * Neuberechnen von Farb- und Graustufenbildern mit 300 dpi;
 * Neuberechnen von Schwarzweißbildern mit 1200 dpi;
@@ -70,13 +70,15 @@ Diese PDF-Dateien können in Adobe Acrobat 5 und Adobe Acrobat Reader® 5 oder h
 * Nicht automatischen Drehen von Seiten basierend auf der Ausrichtung des Textes oder von DSC-Kommentaren;
 * Verwenden anderer Einstellungen zum Erhalten eines Höchstmaßes an Informationen über das Originaldokument.
 
-Druckaufträge mit Schriftarten, die nicht eingebettet werden können, schlagen fehl. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5 (und höheren Versionen) geöffnet werden.  
+Druckaufträge mit Schriftarten, die nicht eingebettet werden können, schlagen fehl. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5 (und höheren Versionen) geöffnet werden.
 
-**Hinweis**: Ermitteln Sie vor dem Erstellen einer PDF-Datei, die an einen Akzidenzdrucker oder Druckvorstufen-Dienstleister gesendet werden soll, die benötigte Ausgabeauflösung und andere Einstellungen und fordern Sie eine „.joboptions“-Datei mit den empfohlenen Einstellungen an. Sie müssen ggf. die Adobe PDF-Einstellungen für einen bestimmten Dienstleister anpassen und anschließend eine eigene „.joboptions“-Datei bereitstellen.
+>[!NOTE]
+>
+>Ermitteln Sie vor dem Erstellen einer PDF-Datei, die an einen Akzidenzdrucker oder Druckvorstufen-Dienstleister gesendet werden soll, die benötigte Ausgabeauflösung und andere Einstellungen und fordern Sie eine „.joboptions“-Datei mit den empfohlenen Einstellungen an. Sie müssen ggf. die Adobe PDF-Einstellungen für einen bestimmten Dienstleister anpassen und anschließend eine eigene „.joboptions“-Datei bereitstellen.
 
-**** Minimale Dateigröße: Erstellt PDF-Dateien für die Anzeige im Internet oder Intranet oder für die Verteilung über ein E-Mail-System zur Anzeige auf dem Bildschirm. Bei dieser Gruppe von Optionen wird eine Komprimierung, Neuberechnung und relativ niedrige Bildauflösung verwendet. Alle Farben werden in sRGB konvertiert und Schriftarten werden nur eingebettet, wenn dies notwendig ist. Außerdem werden Dateien für das seitenweise Herunterladen von Dokumenten optimiert. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
+**Minimale Dateigröße:** Erstellt PDF-Dateien für die Anzeige im Internet oder Intranet oder für die Verteilung über ein E-Mail-System zur Anzeige auf dem Bildschirm. Bei dieser Gruppe von Optionen wird eine Komprimierung, Neuberechnung und relativ niedrige Bildauflösung verwendet. Alle Farben werden in sRGB konvertiert und Schriftarten werden nur eingebettet, wenn dies notwendig ist. Außerdem werden Dateien für das seitenweise Herunterladen von Dokumenten optimiert. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
 
-**** Standard: Erstellt PDF-Dateien zum Drucken auf Desktop-Druckern oder digitalen Kopierern, zum Veröffentlichen auf einer CD oder zum Senden an einen Client als Proof für die Veröffentlichung. Bei dieser Gruppe von Optionen werden Komprimierung und Neuberechnung verwendet, um die Dateigröße zu reduzieren. Es werden jedoch auch alle in der Datei verwendeten Teilmengen von Schriftarten eingebettet und alle Farben in sRGB konvertiert. Ferner erfolgt die Druckausgabe mit einer mittleren Auflösung, um eine ausreichend präzise Wiedergabe des Originaldokuments zu erstellen. Beachten Sie, dass Microsoft Windows-Schriftartenuntergruppen nicht standardmäßig eingebettet werden. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
+**Standard:** Erstellt PDF-Dateien zum Drucken auf Desktop-Druckern oder digitalen Kopierern, zum Veröffentlichen auf einer CD oder zum Senden an einen Client als Veröffentlichungs-Testversand. Bei dieser Gruppe von Optionen werden Komprimierung und Neuberechnung verwendet, um die Dateigröße zu reduzieren. Es werden jedoch auch alle in der Datei verwendeten Teilmengen von Schriftarten eingebettet und alle Farben in sRGB konvertiert. Ferner erfolgt die Druckausgabe mit einer mittleren Auflösung, um eine ausreichend präzise Wiedergabe des Originaldokuments zu erstellen. Beachten Sie, dass Microsoft Windows-Schriftartenuntergruppen nicht standardmäßig eingebettet werden. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
 
 ## PDF-Einstellungen hinzufügen und bearbeiten {#add-or-edit-pdf-settings}
 
@@ -126,7 +128,7 @@ Verwenden Sie die allgemeinen Optionen, um die Version von Acrobat anzugeben, di
 
 ### Dateioptionen {#file-options}
 
-**** Kompatibilität: Die Kompatibilitätsstufe der PDF-Datei. Wählen Sie für Dokumente, die in großem Umfang verteilt werden sollen, Acrobat 4 (PDF 1.3) oder Acrobat 5 (PDF 1.4), um sicherzustellen, dass alle Benutzer das Dokument anzeigen und drucken können. Wenn Sie Dateien basierend auf der Kompatibilität mit Acrobat 5 oder höher erstellen, sind diese ggf. nicht mit früheren Versionen von Acrobat kompatibel. In den folgenden Unterabschnitten werden einige der Unterschiede zwischen PDF-Dateien erläutert, die mit verschiedenen Acrobat-Kompatibilitätsstufen erstellt wurden.
+**Kompatibilität:** Die Kompatibilitätsstufe der PDF-Datei. Wählen Sie für Dokumente, die in großem Umfang verteilt werden sollen, Acrobat 4 (PDF 1.3) oder Acrobat 5 (PDF 1.4), um sicherzustellen, dass alle Benutzer das Dokument anzeigen und drucken können. Wenn Sie Dateien basierend auf der Kompatibilität mit Acrobat 5 oder höher erstellen, sind diese ggf. nicht mit früheren Versionen von Acrobat kompatibel. In den folgenden Unterabschnitten werden einige der Unterschiede zwischen PDF-Dateien erläutert, die mit verschiedenen Acrobat-Kompatibilitätsstufen erstellt wurden.
 
 <table>
  <tbody>
@@ -175,36 +177,39 @@ Verwenden Sie die allgemeinen Optionen, um die Version von Acrobat anzugeben, di
  </tbody>
 </table>
 
-**** Komprimierung auf Objektebene: Fasst kleine Objekte (die jeweils selbst nicht komprimierbar sind) in Streams zusammen, die dann effizient komprimiert werden können.
+**Komprimierung auf Objektebene:** Fasst kleine Objekte (die jeweils selbst nicht komprimierbar sind) in Streams zusammen, die dann effizient komprimiert werden können.
 
-**** Aus: Komprimiert keine Strukturinformationen im PDF-Dokument. Wählen Sie diese Option aus, wenn Benutzer Lesezeichen und andere Strukturinformationen in Acrobat 5 oder höher anzeigen, durch diese navigieren und mit diesen interagieren können sollen.
+**Aus:** Komprimiert keine Strukturinformationen im PDF-Dokument. Wählen Sie diese Option aus, wenn Benutzer Lesezeichen und andere Strukturinformationen in Acrobat 5 oder höher anzeigen, durch diese navigieren und mit diesen interagieren können sollen.
 
-**** Nur Tags: Komprimiert Strukturinformationen im PDF-Dokument. Diese Option resultiert in einer PDF-Datei, die in Acrobat 5 geöffnet und gedruckt werden kann. Die Benutzer können keine Eingabehilfe, Struktur- und PDF-Informationen in Tags in Acrobat 5 oder Acrobat Reader 5.0 anzeigen. In Acrobat 6 und Adobe Reader 6.0 können diese Informationen angezeigt werden.
+**Nur Tags:** Komprimiert Strukturinformationen im PDF-Dokument. Diese Option resultiert in einer PDF-Datei, die in Acrobat 5 geöffnet und gedruckt werden kann. Die Benutzer können keine Eingabehilfe, Struktur- und PDF-Informationen in Tags in Acrobat 5 oder Acrobat Reader 5.0 anzeigen. In Acrobat 6 und Adobe Reader 6.0 können diese Informationen angezeigt werden.
 
-**** Seiten automatisch drehen: Legt die automatische Drehung von Seiten basierend auf der Ausrichtung des Textes oder der DSC-Kommentare fest. Für einige Seiten (z. B. mit Tabellen) ist es ggf. erforderlich, dass sie seitlich gedreht werden, damit sie gelesen werden können. Wählen Sie „Einzeln“ aus, um jede Seite basierend auf der Ausrichtung des Textes auf der jeweiligen Seite zu drehen. Wählen Sie „Zusammen pro Datei“ aus, um alle Seiten im Dokument basierend auf der Ausrichtung des Großteils des Textes zu drehen.  
+**Seiten automatisch drehen:** Legt die automatische Drehung von Seiten basierend auf der Ausrichtung des Textes oder der DSC-Kommentare fest. Für einige Seiten (z. B. mit Tabellen) ist es ggf. erforderlich, dass sie seitlich gedreht werden, damit sie gelesen werden können. Wählen Sie „Einzeln“ aus, um jede Seite basierend auf der Ausrichtung des Textes auf der jeweiligen Seite zu drehen. Wählen Sie „Zusammen pro Datei“ aus, um alle Seiten im Dokument basierend auf der Ausrichtung des Großteils des Textes zu drehen.
 
-***Hinweis **: Wenn „DSC-Kommentare verarbeiten“ in den Einstellungen unter „Erweiterte Einstellungen“ ausgewählt ist und Kommentare zur Anzeigeausrichtung enthalten sind, haben diese Kommentare beim Bestimmen der Seitenausrichtung Vorrang.*
+>[!NOTE]
+>
+>Wenn „DSC-Kommentare verarbeiten“ in den Einstellungen unter „Erweiterte Einstellungen“ ausgewählt ist und Kommentare zur Anzeigeausrichtung enthalten sind, haben diese Kommentare beim Bestimmen der Seitenausrichtung Vorrang.
 
-**** Bindung: Gibt an, ob eine PDF-Datei mit Bindung links oder rechts angezeigt werden soll. Diese Einstellung wirkt sich auf die Anzeige von Seiten im Layout „Fortlaufend - Doppelseiten“ aus und bewirkt, dass Kleinbilder nebeneinander angezeigt werden.
+**Bindung:** Gibt an, ob eine PDF-Datei mit Bindung links oder rechts angezeigt werden soll. Diese Einstellung wirkt sich auf die Anzeige von Seiten im Layout „Fortlaufend - Doppelseiten“ aus und bewirkt, dass Kleinbilder nebeneinander angezeigt werden.
 
-**** Lösung: Legt die Emulation für die Auflösung eines Druckers für Eingabedateien fest, die ihr Verhalten an die Auflösung des Druckers anpassen, auf den sie gedruckt werden. Bei den meisten Eingabedateien führt eine höhere Auflösungseinstellung zu größeren PDF-Dateien mit hoher Qualität und eine niedrigere Einstellung zu kleineren PDF-Dateien mit geringerer Qualität. In der Regel bestimmt die Auflösung die Anzahl der Schritte in einem Verlauf. Sie können einen Wert von 72 bis 4000 eingeben. Sie sollten diese Einstellung als Standard beibehalten, es sei denn, Sie möchten die PDF-Datei auf einem bestimmten Drucker drucken und die für die ursprüngliche Eingabedatei festgelegte Auflösung emulieren.  
+**Lösung:** Legt die Emulation für die Auflösung eines Druckers für Eingabedateien fest, die ihr Verhalten an die Auflösung des Druckers anpassen, auf den sie gedruckt werden. Bei den meisten Eingabedateien führt eine höhere Auflösungseinstellung zu größeren PDF-Dateien mit hoher Qualität und eine niedrigere Einstellung zu kleineren PDF-Dateien mit geringerer Qualität. In der Regel bestimmt die Auflösung die Anzahl der Schritte in einem Verlauf. Sie können einen Wert von 72 bis 4000 eingeben. Sie sollten diese Einstellung als Standard beibehalten, es sei denn, Sie möchten die PDF-Datei auf einem bestimmten Drucker drucken und die für die ursprüngliche Eingabedatei festgelegte Auflösung emulieren.
 
-***Hinweis **: Durch das Erhöhen der Auflösungseinstellung wird die Dateigröße erhöht und ggf. die Verarbeitungsdauer einiger Dateien verlängert.*
+>[!NOTE]
+>
+>Durch das Erhöhen der Auflösungseinstellung wird die Dateigröße erhöht und ggf. die Verarbeitungsdauer einiger Dateien verlängert.
 
-**** Alle Seiten oder Seiten von: Gibt an, welche Seiten konvertiert werden sollen. Lassen Sie das Feld „Bis“ leer, um einen Bereich von der Seitennummer, die Sie in das Feld „Von“ eingeben, bis zum Ende der Datei zu erstellen.
+**Alle Seiten oder Seiten von:** Gibt an, welche Seiten konvertiert werden sollen. Lassen Sie das Feld „Bis“ leer, um einen Bereich von der Seitennummer, die Sie in das Feld „Von“ eingeben, bis zum Ende der Datei zu erstellen.
 
-**** Für schnelle Webansicht optimieren: Strukturiert die Datei für das seitenweise Herunterladen (Byte Serving) von Webservern um. Diese Option komprimiert Text und Strichgrafiken unabhängig von den auf der Registerkarte „Bilder“ ausgewählten Komprimierungseinstellungen. Die Komprimierung führt zu einer Beschleunigung von Zugriff und Anzeige, wenn die Datei aus dem Internet oder einem Netzwerk heruntergeladen wird. In der Standardeinstellung ist diese Option deaktiviert.
+**Für schnelle Web-Ansicht optimieren:** Strukturiert die Datei für das seitenweise Herunterladen (Byte Serving) von Webservern um. Diese Option komprimiert Text und Strichgrafiken unabhängig von den auf der Registerkarte „Bilder“ ausgewählten Komprimierungseinstellungen. Die Komprimierung führt zu einer Beschleunigung von Zugriff und Anzeige, wenn die Datei aus dem Internet oder einem Netzwerk heruntergeladen wird. In der Standardeinstellung ist diese Option deaktiviert.
 
 ### Standardpapierformat {#default-page-size}
 
 Die Optionen unter „Standardpapierformat“ geben das zu verwendende Papierformat an, wenn in der Originaldatei keines angegeben ist. Adobe PostScript-Dateien enthalten in der Regel diese Informationen, mit Ausnahme von EPS-Dateien (Encapsulated PostScript), in denen die Größe eines Begrenzungsrahmens, jedoch kein Papierformat angegeben wird. Das maximal zulässige Papierformat ist 31.800.000 cm in beide Richtungen. Mit diesen Optionen wird das Standardpapierformat konfiguriert:
 
-**** 
-Breite: Breite der Seite
+**Breite:** Breite der Seite
 
-**** Höhe: Höhe der Seite
+**Höhe:** Höhe der Seite
 
-**** Einheiten: Für die Einstellungen für Breite und Höhe zu verwendende Einheiten
+**Einheiten:** Für die Einstellungen für Breite und Höhe zu verwendende Einheiten
 
 ## Bildoptionen {#images-options}
 
@@ -212,19 +217,21 @@ Die Bildoptionen dienen zum Angeben der Komprimierung und Neuberechnung für Bil
 
 Mit diesen Optionen werden Farb-, Graustufen- und Schwarzweißbilder konfiguriert:
 
-**** Neuberechnung: Legen Sie einen Wert für jeden Bildtyp fest. Um Farb-, Graustufen- und Schwarzweißbilder neu zu berechnen, kombiniert PDF Generator Pixel in einem Auswahlbereich und erstellt daraus ein größeres Pixel. Geben Sie die Auflösung Ihres Ausgabegeräts in dpi (Dots per Inch, Punkte pro Zoll) an und geben Sie in das Feld „Für Auflösungen über“ eine Auflösung in dpi ein. Für Bilder mit einer Auflösung über diesem Grenzwert kombiniert PDF Generator Pixel wie benötigt, um die Auflösung des Bildes (Pixel pro Zoll) auf die angegebene dpi-Einstellung zu reduzieren. Um die Neuberechnung zu deaktivieren, wählen Sie „Aus“ aus. Die Optionen lauten:
+**Neuberechnung:** Legen Sie einen Wert für jeden Bildtyp fest. Um Farb-, Graustufen- und Schwarzweißbilder neu zu berechnen, kombiniert PDF Generator Pixel in einem Auswahlbereich und erstellt daraus ein größeres Pixel. Geben Sie die Auflösung Ihres Ausgabegeräts in dpi (Dots per Inch, Punkte pro Zoll) an und geben Sie in das Feld „Für Auflösungen über“ eine Auflösung in dpi ein. Für Bilder mit einer Auflösung über diesem Grenzwert kombiniert PDF Generator Pixel wie benötigt, um die Auflösung des Bildes (Pixel pro Zoll) auf die angegebene dpi-Einstellung zu reduzieren. Um die Neuberechnung zu deaktivieren, wählen Sie „Aus“ aus. Die Optionen lauten:
 
-**** Durchschnittliche Neuberechnung auf: Durchschnittlich die Pixel in einem Beispielbereich und ersetzt den gesamten Bereich durch die durchschnittliche Pixelfarbe mit der angegebenen Auflösung.
+**Durchschnittliche Neuberechnung auf:** Durchschnittlich die Pixel in einem Beispielbereich und ersetzt den gesamten Bereich durch die durchschnittliche Pixelfarbe mit der angegebenen Auflösung.
 
-**** Bikubische Neuberechnung auf: Verwendet einen gewichteten Durchschnitt, um die Pixelfarbe zu bestimmen, und liefert in der Regel bessere Ergebnisse als die einfache Mittelungsmethode zum Downsampling. Die bikubische Methode ist die langsamste, jedoch präziseste Methode und führt zu den feinsten tonlichen Abstufungen.
+**Bikubische Neuberechnung auf:** Verwendet einen gewichteten Durchschnitt, um die Pixelfarbe zu bestimmen, und liefert in der Regel bessere Ergebnisse als die einfache Mittelungsmethode zum Downsampling. Die bikubische Methode ist die langsamste, jedoch präziseste Methode und führt zu den feinsten tonlichen Abstufungen.
 
-**** Unterstichproben nach: Wählt ein Pixel in der Mitte des Musterbereichs aus und ersetzt den gesamten Bereich mit der angegebenen Auflösung. Die Kurzberechnung verkürzt im Vergleich zur Neuberechnung die Konvertierungsdauer beträchtlich, führt jedoch zu weniger feinen bzw. regelmäßigen Bildern.
+**Unterstichproben nach:** Wählt ein Pixel in der Mitte des Musterbereichs aus und ersetzt den gesamten Bereich mit der angegebenen Auflösung. Die Kurzberechnung verkürzt im Vergleich zur Neuberechnung die Konvertierungsdauer beträchtlich, führt jedoch zu weniger feinen bzw. regelmäßigen Bildern.
 
 Die Auflösungseinstellung für Farben und Graustufen muss dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. (Vorausgesetzt, Sie unterschreiten nicht diese empfohlene Auflösungseinstellung, sind Bilder ohne Geraden bzw. geometrische oder sich wiederholende Muster nicht von einer niedrigeren Auflösung betroffen.) Die Auflösung von Schwarzweißbildern muss derjenigen des Ausgabegeräts entsprechen. Beachten Sie jedoch, dass sich durch das Speichern eines Schwarzweißbildes mit einer höheren Auflösung als 1500 dpi die Dateigröße erhöht, ohne dass sich die Bildqualität spürbar verbessert.
 
 Berücksichtigen Sie auch, ob Benutzer eine Seite vergrößern müssen. Wenn Sie beispielsweise ein PDF-Dokument einer Karte erstellen, sollten Sie eine höhere Bildauflösung erwägen, damit Benutzer einen Kartenausschnitt vergrößern können.
 
-***Hinweis **: Das Neuberechnen von Schwarzweißbildern kann bei der Anzeige zu unerwarteten Ergebnissen führen, z. B. keiner Bildanzeige. Tritt dieses Problem auf, deaktivieren Sie die Neuberechnung und konvertieren Sie die Datei erneut. Dieses Problem tritt am ehesten bei der Kurzberechnung und am ehesten nicht bei der bikubischen Neuberechnung auf.*
+>[!NOTE]
+>
+>Das Neuberechnen von Schwarzweißbildern kann bei der Anzeige zu unerwarteten Ergebnissen führen, z. B. keiner Bildanzeige. Tritt dieses Problem auf, deaktivieren Sie die Neuberechnung und konvertieren Sie die Datei erneut. Dieses Problem tritt am ehesten bei der Kurzberechnung und am ehesten nicht bei der bikubischen Neuberechnung auf.
 
 Diese Tabelle zeigt die Typen von Druckern und ihre in dpi gemessene Auflösung, ihre standardmäßige Rasterweite in lpi (Lines per Inch, Zeilen pro Zoll) und eine Neuberechnungsauflösung für Bilder gemessen in ppi (Pixel per Inch, Bildpunkte pro Zoll). Wenn die Druckausgabe beispielsweise auf einem 600-dpi-Laserdrucker erfolgt, müssen Sie 170 als die Auflösung eingeben, mit der Bilder neu berechnet werden sollen.
 
@@ -258,20 +265,22 @@ Diese Tabelle zeigt die Typen von Druckern und ihre in dpi gemessene Auflösung,
  </tbody>
 </table>
 
-**** Komprimierung: Legen Sie einen Wert fest, der auf Farb-, Graustufen- und Schwarzweißbilder angewendet werden soll. Legen Sie für Farb- und Graustufenbilder auch die Bildqualität fest:
+**Komprimierung:** Legen Sie einen Wert fest, der auf Farb-, Graustufen- und Schwarzweißbilder angewendet werden soll. Legen Sie für Farb- und Graustufenbilder auch die Bildqualität fest:
 
 * Wählen Sie für Farb- und Graustufenbilder die Option „ZIP“ aus, um eine Komprimierung anzuwenden, die bei Bildern mit großen einfarbigen Bereichen oder sich wiederholenden Mustern gut funktioniert, z. B. bei Screenshots, einfachen mit Malprogrammen erstellten Bildern und Schwarzweißbildern mit sich wiederholenden Mustern. Wählen Sie „JPEG“ (Qualität: minimal bis maximal), um eine für Farb- und Graustufenbilder geeignete Komprimierung anzuwenden, z. B. für Halbtonfotos mit höherem Detailgrad, die auf dem Bildschirm oder gedruckt abgebildet werden können. Wählen Sie „Automatisch (JPEG)“ aus, um die für Farb- und Graustufenbilder die optimale Qualität automatisch bestimmen zu lassen.
 * Wählen Sie für Schwarzweißbilder die Komprimierung „CCITT Gruppe 4“, „CCITT Gruppe 3“, „ZIP“, „JPEG200“, „Automatisch (JPEG2000)“ oder „Run Length“.
 
 Stellen Sie sicher, dass Schwarzweißbilder nicht als Graustufenbilder gescannt werden. Gescannter Text wird mitunter standardmäßig als Graustufenbild gespeichert. Mit der JPEG-Komprimierung komprimierter Graustufentext ist unscharf und ggf. unleserlich.
 
-**** Bildqualität: Konfiguriert die Bildqualität für Farb- und Graustufenbilder. Die Optionen lauten „Minimal“, „Niedrig“, „Mittel“, „Hoch“ und „Maximal“.
+**Bildqualität:** Konfiguriert die Bildqualität für Farb- und Graustufenbilder. Die Optionen lauten „Minimal“, „Niedrig“, „Mittel“, „Hoch“ und „Maximal“.
 
-**** Glätten auf Grau: Glättet gezackte Kanten in Schwarzweißbildern. Wählen Sie „2 Bit“, „4 Bit“ oder „8 Bit“, um 4, 16 oder 256 Graustufen anzugeben. (Dieses Verfahren kann bewirken, dass kleine Schriftgrade oder dünne Linien unklar aussehen.)  
+**Glätten auf Grau:** Glättet gezackte Kanten in Schwarzweißbildern. Wählen Sie „2 Bit“, „4 Bit“ oder „8 Bit“, um 4, 16 oder 256 Graustufen anzugeben. (Dieses Verfahren kann bewirken, dass kleine Schriftgrade oder dünne Linien unklar aussehen.)
 
-***Hinweis **: Die Komprimierung von Text und Strichgrafiken ist stets aktiviert.*
+>[!NOTE]
+>
+>Die Komprimierung von Text und Strichgrafiken ist stets aktiviert.
 
-**** Bildrichtlinie: Legen Sie eine Richtlinie für Farb-, Graustufen- und Schwarzweißbilder fest. Wenn die Bildauflösung unter der angegebenen Auflösung liegt, können Sie dennoch fortfahren (die Option „Ignorieren“ auswählen), eine Warnmeldung bereitstellen oder den Auftrag abbrechen.
+**Bildrichtlinie:** Legen Sie eine Richtlinie für Farb-, Graustufen- und Schwarzweißbilder fest. Wenn die Bildauflösung unter der angegebenen Auflösung liegt, können Sie dennoch fortfahren (die Option „Ignorieren“ auswählen), eine Warnmeldung bereitstellen oder den Auftrag abbrechen.
 
 ## Schriftartoptionen {#fonts-options}
 
@@ -281,13 +290,13 @@ Die Schriftartoptionen dienen dazu, anzugeben, welche Schriftarten in eine PDF-D
 >
 >Wenn Sie PDF-Dateien mit derselben Schriftartteilmenge kombinieren, versucht PDF Generator, die Schriftartteilmengen zu kombinieren.
 
-**** Alle Schriften einbetten: Bettet alle in der Datei verwendeten Schriften ein. Die Schrifteinbettung ist für die Erfüllung der PDF/X-Anforderungen erforderlich.
+**Alle Schriften einbetten:** Bettet alle in der Datei verwendeten Schriften ein. Die Schrifteinbettung ist für die Erfüllung der PDF/X-Anforderungen erforderlich.
 
-**** Eingebettete Schriften in Untergruppen, wenn der Prozentsatz der verwendeten Zeichen kleiner ist als: Wenn Sie diese Option auswählen, geben Sie einen Schwellenwert-Prozentsatz an, um nur eine Untergruppe der Schriftarten einzubetten. Wenn beispielsweise der Schwellenwert 35 ist und weniger als 35 % der Zeichen verwendet werden, bettet PDF Generator nur diese Zeichen ein. Es werden nur Schriften mit entsprechenden Berechtigungsbits eingebettet.
+**Eingebettete Schriften in Untergruppen, wenn der Prozentsatz der verwendeten Zeichen kleiner ist als:** Wenn Sie diese Option auswählen, geben Sie einen Prozentwert für den Schwellenwert an, um nur eine Untergruppe der Schriftarten einzubetten. Wenn beispielsweise der Schwellenwert 35 ist und weniger als 35 % der Zeichen verwendet werden, bettet PDF Generator nur diese Zeichen ein. Es werden nur Schriften mit entsprechenden Berechtigungsbits eingebettet.
 
-**** Wenn Einbettung fehlschlägt: Gibt an, wie PDF Generator reagiert, wenn beim Verarbeiten einer Datei keine einzubettende Schrift gefunden wird. Die folgenden Möglichkeiten stehen zur Verfügung: PDF Generator kann entweder die Anforderung ignorieren und die Schrift ersetzen, Sie warnen und die Schrift ersetzen oder die Verarbeitung des aktuellen Auftrags abbrechen.
+**Bei fehlgeschlagenem Einbetten:** Gibt an, wie PDF Generator reagiert, wenn beim Verarbeiten einer Datei keine einzubettende Schrift gefunden wird. Die folgenden Möglichkeiten stehen zur Verfügung: PDF Generator kann entweder die Anforderung ignorieren und die Schrift ersetzen, Sie warnen und die Schrift ersetzen oder die Verarbeitung des aktuellen Auftrags abbrechen.
 
-**** Schriftquelle: Der Speicherort der von PDF Generator verwendeten Schriften.
+**Schriftquelle:** Der Speicherort der von PDF Generator verwendeten Schriften.
 
 ### Einzubettende Schriften angeben {#specify-which-fonts-to-embed}
 
@@ -313,49 +322,53 @@ Die Farboptionen legen alle Informationen für das Farbmanagement für PDF Gener
 
 ### Adobe-Farbeinstellungen {#adobe-color-settings}
 
-**** Einstellungsdatei: Diese Liste enthält eine Liste der Farbeinstellungen, die auch in gängigen Grafikprogrammen wie Adobe Fotoshop und Adobe Illustrator verwendet werden. Die ausgewählte Farbeinstellung bestimmt die anderen Adobe-Farbeinstellungen auf dieser Seite. Wenn Sie beispielsweise eine andere Einstellung als „Ohne“ auswählen, sind alle Optionen (außer für „Geräteabhängige Daten“) vordefiniert und abgeblendet. Sie können die Einstellungen „Farbmanagement“ und „Arbeitsfarbräume“ nur bearbeiten, wenn Sie für „Einstellungsdatei“ die Option „Ohne“ auswählen.
+**Einstellungsdatei:** Diese Liste enthält eine Liste von Farbeinstellungen, die auch in gängigen Grafikprogrammen wie Adobe Fotoshop und Adobe Illustrator verwendet werden. Die ausgewählte Farbeinstellung bestimmt die anderen Adobe-Farbeinstellungen auf dieser Seite. Wenn Sie beispielsweise eine andere Einstellung als „Ohne“ auswählen, sind alle Optionen (außer für „Geräteabhängige Daten“) vordefiniert und abgeblendet. Sie können die Einstellungen „Farbmanagement“ und „Arbeitsfarbräume“ nur bearbeiten, wenn Sie für „Einstellungsdatei“ die Option „Ohne“ auswählen.
 
 ### Farbmanagement-Richtlinien {#color-management-policies}
 
 Wenn Sie für „Einstellungsdatei“ die Option „Ohne“ ausgewählt haben, gibt der Bereich „Farbmanagement“ an, wie PDF Generator nicht verwaltete Farben in einer PostScript-Datei konvertiert.
 
-**** Farbe unverändert lassen: Behält geräteabhängige Farben unverändert bei und behält geräteunabhängige Farben als nächstmögliche Entsprechung in PDF bei. Diese Option eignet sich für Druckereien, die alle ihre Geräte kalibriert haben, diese Informationen zum Angeben von Farben in der Datei genutzt haben und alle Druckaufträge nur auf diesen Geräten ausgeben.
+**Farbe unverändert lassen:** Behält geräteabhängige Farben unverändert bei und behält geräteunabhängige Farben als nächstmögliche Entsprechung in PDF bei. Diese Option eignet sich für Druckereien, die alle ihre Geräte kalibriert haben, diese Informationen zum Angeben von Farben in der Datei genutzt haben und alle Druckaufträge nur auf diesen Geräten ausgeben.
 
-**** Alles für Farbmanagement kennzeichnen: Bettet beim Destillieren von Dateien ein Profil des International Color Consortium ein und kalibriert Farben in den Bildern, wodurch Farben in den resultierenden PDF-Dateien geräteunabhängig werden, wenn Sie die Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben. Geräteabhängige Farbräume in Dateien (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert.
+**Alles für Farbmanagement kennzeichnen:** Bettet beim Destillieren von Dateien ein Profil des International Color Consortium ein und kalibriert Farbwerte in den Bildern, wodurch die Farben in den resultierenden PDF-Dateien geräteunabhängig werden, wenn Sie die Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben. Geräteabhängige Farbräume in Dateien (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert.
 
-**** Nur Bilder für Farbmanagement kennzeichnen: Bettet ICC-Profile nur bei Auswahl der Kompatibilität mit Acrobat 4 (PDF 1.3) in Bilder, nicht in Text oder Grafiken ein. Diese Option verhindert, dass schwarzer Text Farbverschiebungen unterzogen wird. Geräteabhängige Farbräume in Bildern (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert. Text und Grafiken werden nicht konvertiert.
+**Nur Bilder für Farbmanagement kennzeichnen:** Bettet ICC-Profile nur bei Auswahl der Kompatibilität mit Acrobat 4 (PDF 1.3) in Bilder, nicht in Text oder Grafiken ein. Diese Option verhindert, dass schwarzer Text Farbverschiebungen unterzogen wird. Geräteabhängige Farbräume in Bildern (RGB, Grayscale und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert. Text und Grafiken werden nicht konvertiert.
 
-**** Alle Farben in sRGB konvertieren oder Alle Farben in CMYK konvertieren: Kalibriert die Farbe in der Datei, wodurch die Farbe geräteunabhängig wird, ähnlich wie bei &quot;Alles für Farbmanagement kennzeichnen&quot;. Wenn Sie eine Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben und eine Konvertierung in sRGB ausführen, werden CMYK- und RGB-Bilder in sRGB konvertiert.
+**Alle Farben in sRGB konvertieren oder Alle Farben in CMYK konvertieren:** Kalibriert die Farbe in der Datei, wodurch die Farbe geräteunabhängig wird, ähnlich wie bei &quot;Alles für Farbmanagement kennzeichnen&quot;. Wenn Sie eine Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben und eine Konvertierung in sRGB ausführen, werden CMYK- und RGB-Bilder in sRGB konvertiert.
 
 Unabhängig von der ausgewählten Kompatibilitätsoption bleiben Graustufenbilder unverändert. Dadurch wird bei PDF-Dateien die Größe verringert und die Anzeige beschleunigt, da zum Beschreiben von RGB-Bilder weniger Informationen als zum Beschreiben von CMYK-Dateien benötigt werden. Da RGB der von Monitoren verwendete native Farbraum ist, muss während der Anzeige keine Farbkonvertierung erfolgen, wodurch die Online-Anzeige beschleunigt wird. Diese Option wird empfohlen, wenn die PDF-Datei online auf Druckern mit niedriger Auflösung verwendet wird.
 
-**** Zweck der Dokumentwiedergabe: Die Methode zum Zuordnen von Farben zwischen Farbräumen. Das Ergebnis einer bestimmten Methode hängt von den Profilen der Farbräume ab. Einige Profile liefern beispielsweise bei unterschiedlichen Methoden identische Ergebnisse. Die folgenden Optionen stehen zur Auswahl:  
+**Dokument-Renderpriorität:** Die Methode zum Zuordnen von Farben zwischen Farbräumen. Das Ergebnis einer bestimmten Methode hängt von den Profilen der Farbräume ab. Einige Profile liefern beispielsweise bei unterschiedlichen Methoden identische Ergebnisse. Die folgenden Optionen stehen zur Auswahl:  
 
-***Hinweis **: In allen Fällen können Bedingungen ggf. von Farbmanagementvorgängen ignoriert oder außer Kraft gesetzt werden, die im Anschluss an die Erstellung der PDF-Datei erfolgen.*
+>[!NOTE]
+>
+>In allen Fällen können Bedingungen ggf. von Farbmanagementvorgängen ignoriert oder außer Kraft gesetzt werden, die im Anschluss an die Erstellung der PDF-Datei erfolgen.
 
-**** Beibehalten: Das bedeutet, dass die Absicht im Ausgabegerät und nicht in der PDF-Datei angegeben wird. Bei vielen Ausgabegeräten ist „Relativ farbmetrisch“ die Standardbedingung.
+**Beibehalten:** Das bedeutet, dass die Absicht auf dem Ausgabegerät und nicht in der PDF-Datei angegeben wird. Bei vielen Ausgabegeräten ist „Relativ farbmetrisch“ die Standardbedingung.
 
-**** Perzeptiv: Behält die relativen Farbwerte unter den ursprünglichen Pixeln bei, während sie dem Zielfarbumfang zugeordnet werden. Bei dieser Methode bleibt die optische Beziehung zwischen Farben erhalten, obgleich die Farbwerte selbst sich ggf. ändern.
+**Perzeptiv:** Behält die relativen Farbwerte unter den ursprünglichen Pixeln bei, während sie dem Zielfarbumfang zugeordnet werden. Bei dieser Methode bleibt die optische Beziehung zwischen Farben erhalten, obgleich die Farbwerte selbst sich ggf. ändern.
 
-**** Sättigung: Behält die relativen Sättigungswerte der ursprünglichen Pixel bei. Diese Methode eignet sich für Geschäftsgrafiken, bei denen die exakte Beziehung zwischen Farben nicht so wichtig ist wie das Vorhandensein leuchtender gesättigter Farben.
+**Sättigung:** Behält die relativen Sättigungswerte der ursprünglichen Pixel bei. Diese Methode eignet sich für Geschäftsgrafiken, bei denen die exakte Beziehung zwischen Farben nicht so wichtig ist wie das Vorhandensein leuchtender gesättigter Farben.
 
-**** Relativ farbmetrisch: Ordnet den weißen Punkt des Quellraums dem weißen Punkt des Zielraums zu.
+**Relativ farbmetrisch:** Ordnet den weißen Punkt des Quellraums dem weißen Punkt des Zielraums zu.
 
-**** Absolut farbmetrisch: Deaktiviert die Zuordnung von weißen und schwarzen Punkten beim Konvertieren von Farben. Diese Methode wird nicht empfohlen, es sei denn, Sie müssen Signaturfarben erhalten, z. B. in Warenzeichen oder Logos.
+**Absolut farbmetrisch:** Deaktiviert die Zuordnung von weißen und schwarzen Punkten beim Konvertieren von Farben. Diese Methode wird nicht empfohlen, es sei denn, Sie müssen Signaturfarben erhalten, z. B. in Warenzeichen oder Logos.
 
 ### Arbeitsfarbräume {#working-spaces}
 
 Wählen Sie für alle Werte in der Liste unter „Farbmanagement“ außer „Farbe unverändert lassen“ Optionen in den Listen im Bereich „Arbeitsfarbraum“ aus, um anzugeben, welche ICC-Profile für die Definition und Kalibrierung der Graustufen-, RGB- und CMYK-Farbräume in untersuchten PDF-Dateien verwendet werden. Die folgenden Optionen stehen zur Auswahl:
 
-**** Grau: Definiert den Farbraum aller Graustufenbilder in Dateien. Diese Option ist nur verfügbar, wenn Sie „Alles für Farbmanagement kennzeichnen“ oder „Nur Bilder für Farbmanagement kennzeichnen“ auswählen. Das standardmäßige ICC-Profil für Graustufenbilder ist Gray Gamma 2.2. Sie können auch „Ohne“ wählen, um die Konvertierung von Graustufenbildern zu verhindern.
+**Grau:** Definiert den Farbraum aller Graustufenbilder in Dateien. Diese Option ist nur verfügbar, wenn Sie „Alles für Farbmanagement kennzeichnen“ oder „Nur Bilder für Farbmanagement kennzeichnen“ auswählen. Das standardmäßige ICC-Profil für Graustufenbilder ist Gray Gamma 2.2. Sie können auch „Ohne“ wählen, um die Konvertierung von Graustufenbildern zu verhindern.
 
-**** RGB: Definiert den Farbraum aller RGB-Bilder in Dateien. Die Standardeinstellung „sRGB IEC61966-2.1“ ist meist eine gute Wahl, da diese Einstellung sich zum Industriestandard entwickelt, der von vielen Ausgabegeräten erkannt wird. Sie können auch „Ohne“ auswählen, um das Konvertieren von RGB-Bildern zu verhindern.
+**RGB:** Definiert den Farbraum aller RGB-Bilder in Dateien. Die Standardeinstellung „sRGB IEC61966-2.1“ ist meist eine gute Wahl, da diese Einstellung sich zum Industriestandard entwickelt, der von vielen Ausgabegeräten erkannt wird. Sie können auch „Ohne“ auswählen, um das Konvertieren von RGB-Bildern zu verhindern.
 
-**** CMYK: Definiert den Farbraum aller CMYK-Bilder in Dateien. Die Standardeinstellung ist „U.S. Web Coated (SWOP) v2“. Sie können auch „Ohne“ auswählen, um das Konvertieren von CMYK-Bildern zu verhindern.  
+**CMYK:** Definiert den Farbraum aller CMYK-Bilder in Dateien. Die Standardeinstellung ist „U.S. Web Coated (SWOP) v2“. Sie können auch „Ohne“ auswählen, um das Konvertieren von CMYK-Bildern zu verhindern.
 
-***Hinweis **: Die Auswahl von „Ohne“ für alle drei Arbeitsfarbräume hat dieselbe Auswirkung wie die Auswahl von „Farbe unverändert lassen“.*
+>[!NOTE]
+>
+>Die Auswahl von „Ohne“ für alle drei Arbeitsfarbräume hat dieselbe Auswirkung wie die Auswahl von „Farbe unverändert lassen“.
 
-**** CMYK-Werte für kalibrierte CMYK-Farbräume beibehalten: Wenn diese Option aktiviert ist, werden geräteunabhängige CMYK-Werte als geräteabhängige (DeviceCMYK) Werte behandelt, geräteunabhängige Farbräume werden verworfen und PDF/X-1a-Dateien verwenden den Wert &quot;Alle Farben in CMYK konvertieren&quot;. Falls nicht ausgewählt, werden geräteunabhängige Farbräume in CMYK konvertiert, wenn das Farbmanagement auf „Alle Farben in CMYK konvertieren“ festgelegt ist.
+**CMYK-Werte für kalibrierte CMYK-Farbräume beibehalten:** Wenn diese Option aktiviert ist, werden geräteunabhängige CMYK-Werte als geräteabhängige (DeviceCMYK) Werte behandelt, geräteunabhängige Farbräume werden verworfen und PDF/X-1a-Dateien verwenden den Wert &quot;Alle Farben in CMYK konvertieren&quot;. Falls nicht ausgewählt, werden geräteunabhängige Farbräume in CMYK konvertiert, wenn das Farbmanagement auf „Alle Farben in CMYK konvertieren“ festgelegt ist.
 
 ### Geräteabhängige Daten {#device-dependent-data}
 
@@ -363,17 +376,17 @@ Diese Einstellungen gelten, wenn Sie mit Dokumenten arbeiten, die mit profession
 
 Übertragungsfunktionen werden für künstlerische Effekte und zum Anpassen an die technischen Bedingungen eines bestimmten Ausgabegeräts verwendet. Eine Datei, die auf einem bestimmten Filmbelichter ausgegeben werden soll, kann beispielsweise Übertragungsfunktionen aufweisen, welche den diesem Filmbelichter inhärenten Tonwertzuwachs ausgleichen.
 
-**** Unterfarbreduktion und Schwarzaufbau beibehalten: Behält diese Einstellungen bei, wenn sie in der PostScript-Datei vorhanden sind. Der Schwarzaufbau berechnet die benötigte Menge an Schwarz, wenn versucht wird, eine bestimmte Farbe zu reproduzieren. Die Unterfarbreduktion reduziert die Menge an Zyan-, Magenta-, und Gelbkomponenten, um die Menge an Schwarz auszugleichen, die vom Schwarzaufbau hinzugefügt wurde. Da weniger Druckfarbe benötigt wird, wird die Unterfarbreduktion im Allgemeinen für Zeitungspapier und ungestrichenen Ganzstoff verwendet.
+**Unterfarbreduktion und Schwarzaufbau beibehalten:** Behält diese Einstellungen bei, wenn sie in der PostScript-Datei vorhanden sind. Der Schwarzaufbau berechnet die benötigte Menge an Schwarz, wenn versucht wird, eine bestimmte Farbe zu reproduzieren. Die Unterfarbreduktion reduziert die Menge an Zyan-, Magenta-, und Gelbkomponenten, um die Menge an Schwarz auszugleichen, die vom Schwarzaufbau hinzugefügt wurde. Da weniger Druckfarbe benötigt wird, wird die Unterfarbreduktion im Allgemeinen für Zeitungspapier und ungestrichenen Ganzstoff verwendet.
 
-**** Wenn Übertragungsfunktionen gefunden werden: Legt fest, was zu tun ist, wenn Übertragungsfunktionen gefunden werden:
+**Wenn Übertragungsfunktionen gefunden werden:** Legt fest, was zu tun ist, wenn Übertragungsfunktionen gefunden werden:
 
-**** Beibehalten: Behält die Übertragungsfunktionen bei, die herkömmlicherweise zum Ausgleich von Tonwertzuwachs oder Tonwertverlust verwendet werden, die auftreten können, wenn ein Bild auf einen Film übertragen wird. Ein Tonwertzuwachs erfolgt, wenn die Druckfarbpunkte, die ein gedrucktes Bild bilden (z. B. aufgrund der Verteilung auf Papier) größer als im Halbtonraster sind. Zu einem Tonwertverlust kommt es, wenn die Punkte kleiner gedruckt werden. Bei dieser Option werden die Übertragungsfunktionen als Teil der Datei beibehalten und auf die Datei angewendet, sobald diese ausgegeben wird.
+**Beibehalten:** Behält die Übertragungsfunktionen bei, die herkömmlicherweise zum Ausgleich von Tonwertzuwachs oder Tonwertverlust verwendet werden, die auftreten können, wenn ein Bild auf einen Film übertragen wird. Ein Tonwertzuwachs erfolgt, wenn die Druckfarbpunkte, die ein gedrucktes Bild bilden (z. B. aufgrund der Verteilung auf Papier) größer als im Halbtonraster sind. Zu einem Tonwertverlust kommt es, wenn die Punkte kleiner gedruckt werden. Bei dieser Option werden die Übertragungsfunktionen als Teil der Datei beibehalten und auf die Datei angewendet, sobald diese ausgegeben wird.
 
-**** Anwenden: Behält die Übertragungsfunktion nicht bei, wendet sie aber auf die Datei an, wodurch die Farben in der Datei geändert werden. Diese Option ist nützlich, um Farbeffekte in einer Datei zu erstellen. In der Standardeinstellung ist diese Option für neue Einstellungen aktiviert.
+**Anwenden:** Behält die Übertragungsfunktion nicht bei, wendet sie aber auf die Datei an, wodurch die Farben in der Datei geändert werden. Diese Option ist nützlich, um Farbeffekte in einer Datei zu erstellen. In der Standardeinstellung ist diese Option für neue Einstellungen aktiviert.
 
-**** Entfernen: Entfernt alle angewendeten Übertragungsfunktionen. Entfernen Sie angewendete Übertragungsfunktionen, es sei denn, die PDF-Datei soll auf demselben Gerät ausgegeben werden, für das die PostScript-Quelldatei erstellt wurde.
+**Entfernen:** Entfernt alle angewendeten Übertragungsfunktionen. Entfernen Sie angewendete Übertragungsfunktionen, es sei denn, die PDF-Datei soll auf demselben Gerät ausgegeben werden, für das die PostScript-Quelldatei erstellt wurde.
 
-**** Halbtoninformationen beibehalten: Behält alle Halbtoninformationen in Dateien bei. Halbtoninformationen bestehen aus Punkten, die steuern, wie viel Druckfarbe von Halbtongeräten an einer bestimmten Stelle auf dem Papier aufgebracht wird. Durch Variieren der Punktgröße und -dichte wird die Illusion von Variationen grauer bzw. einheitlicher Farbe erzeugt. Für ein CMYK-Bild werden vier Halbtonraster verwendet, eine für jede beim Druckvorgang verwendete Druckfarbe.
+**Halbtoninformationen beibehalten:** Behält alle Halbtoninformationen in Dateien bei. Halbtoninformationen bestehen aus Punkten, die steuern, wie viel Druckfarbe von Halbtongeräten an einer bestimmten Stelle auf dem Papier aufgebracht wird. Durch Variieren der Punktgröße und -dichte wird die Illusion von Variationen grauer bzw. einheitlicher Farbe erzeugt. Für ein CMYK-Bild werden vier Halbtonraster verwendet, eine für jede beim Druckvorgang verwendete Druckfarbe.
 
 Bei einem herkömmlichen Druckvorgang wird ein Halbton produziert, indem ein Halbtonraster zwischen einem Stück Film und dem Bild platziert und der Film anschließend belichtet wird. Entsprechende elektronische Produkte, z. B. Adobe Photoshop, ermöglichen dem Benutzer die Angabe der Attribute des Halbtonrasters, bevor der Film oder die Papierausgabe produziert wird. Halbtoninformationen beschränken sich auf ein bestimmtes Ausgabegerät.
 
@@ -383,43 +396,43 @@ Die erweiterten Optionen bestimmen, welche DSC-Kommentare (Document Structuring 
 
 Für das Arbeiten mit den erweiterten Optionen ist es hilfreich, mit der Sprache PostScript und ihrer Übersetzung in PDF vertraut zu sein. (Siehe [Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html).)
 
-**** PostScript-Datei darf Adobe PDF-Einstellungen außer Kraft setzen: Verwendet Einstellungen, die in einer PostScript-Datei gespeichert werden, anstelle der aktuellen Adobe PDF-Einstellungsdatei. Vor der Verarbeitung einer PostScript-Datei können Sie der Datei Parameter hinzufügen, um folgende Aspekte zu steuern:
+**PostScript-Datei darf Adobe PDF-Einstellungen außer Kraft setzen:** Verwendet Einstellungen, die in einer PostScript-Datei gespeichert werden, anstelle der aktuellen Adobe PDF-Einstellungsdatei. Vor der Verarbeitung einer PostScript-Datei können Sie der Datei Parameter hinzufügen, um folgende Aspekte zu steuern:
 
 * Komprimierung von Text und Grafiken
 * Neuberechnung und Kodierung ausgewählter Bilder
 * Einbetten von Type 1-Schriften und Vorkommen von Type 1 Multiple Master-Schriften
 
-**** PostScript XObjects zulassen: PostScript XObjects speichern Informationen, die auf vielen Seiten derselben Datei angezeigt werden, wie z.B. ein Hintergrundbild oder Kopf- und Fußzeileninformationen. Das Verwenden von PostScript XObjects kann zu einem schnelleren Druck führen, belegt aber mehr Druckerspeicher. Um das Erstellen von PostScript XObjects zu verhindern, deaktivieren Sie diese Option, wenn Sie PDF-Dateien mit einer Kompatibilität mit Acrobat 5 (PDF 1.4) oder höher erstellen.
+**PostScript XObjects zulassen:** PostScript XObjects speichern Informationen, die auf vielen Seiten derselben Datei angezeigt werden, wie z.B. ein Hintergrundbild oder Kopf- und Fußzeileninformationen. Das Verwenden von PostScript XObjects kann zu einem schnelleren Druck führen, belegt aber mehr Druckerspeicher. Um das Erstellen von PostScript XObjects zu verhindern, deaktivieren Sie diese Option, wenn Sie PDF-Dateien mit einer Kompatibilität mit Acrobat 5 (PDF 1.4) oder höher erstellen.
 
-**** Verläufe in weiche Schattierungen konvertieren: Konvertiert Überblendungen in glatte Schattierungen für Acrobat 4 und höher, wodurch PDF-Dateien kleiner werden und die Qualität der endgültigen Ausgabe möglicherweise verbessert wird. PDF Generator konvertiert Farbverläufe aus Adobe Illustrator, Adobe InDesign, Adobe Freehand MX, CorelDraw, Quark XPress und Microsoft PowerPoint.
+**Verläufe in weiche Schattierungen konvertieren:** Konvertiert Füllfarben in weiche Farbtöne für Acrobat 4 und höher, wodurch PDF-Dateien kleiner werden und die Qualität der endgültigen Ausgabe möglicherweise verbessert wird. PDF Generator konvertiert Farbverläufe aus Adobe Illustrator, Adobe InDesign, Adobe Freehand MX, CorelDraw, Quark XPress und Microsoft PowerPoint.
 
-**** Glatte Linien in Kurven konvertieren: Reduziert die Anzahl der Steuerpunkte, die zum Erstellen von Kurven in CAD-Zeichnungen verwendet werden, was zu kleineren PDFs und einer schnelleren Bildschirmwiedergabe führt.
+**Glatte Linien in Kurven konvertieren:** Reduziert die Anzahl der Steuerpunkte, die zum Erstellen von Kurven in CAD-Zeichnungen verwendet werden, was zu kleineren PDFs und einer schnelleren Bildschirmwiedergabe führt.
 
-**** Level 2 Copypage-Semantik beibehalten: Verwendet den Copypage-Operator, der in LanguageLevel 2 PostScript anstatt in LanguageLevel 3 PostScript definiert ist. Wenn Sie eine PostScript-Datei haben und diese Option aktivieren, kopiert ein Copypage-Operator die Seite. Ist diese Option nicht aktiviert, wird die Entsprechung eines Showpage-Vorgangs ausgeführt, ohne dass der Grafikstatus erneut initialisiert wird.
+**Level 2 Copypage-Semantik beibehalten:** Verwendet den Copypage-Operator, der in LanguageLevel 2 PostScript anstatt in LanguageLevel 3 PostScript definiert ist. Wenn Sie eine PostScript-Datei haben und diese Option aktivieren, kopiert ein Copypage-Operator die Seite. Ist diese Option nicht aktiviert, wird die Entsprechung eines Showpage-Vorgangs ausgeführt, ohne dass der Grafikstatus erneut initialisiert wird.
 
-**** Überdruckeinstellungen beibehalten: Behält alle Überdruckeinstellungen in Dateien bei, die in PDF konvertiert werden. Überdruckte Farben sind zwei oder mehr übereinander gedruckte Druckfarben. Wenn beispielsweise die Druckfarbe Zyan über die Druckfarbe Gelb gedruckt wird, hat der resultierende Überdruck die Farbe Grün. Ohne Überdrucken würde das zugrunde liegende Gelb nicht, sondern nur die Farbe Zyan gedruckt.
+**Überdruckeinstellungen beibehalten:** Behält alle Überdruckeinstellungen in Dateien bei, die in PDF konvertiert werden. Überdruckte Farben sind zwei oder mehr übereinander gedruckte Druckfarben. Wenn beispielsweise die Druckfarbe Zyan über die Druckfarbe Gelb gedruckt wird, hat der resultierende Überdruck die Farbe Grün. Ohne Überdrucken würde das zugrunde liegende Gelb nicht, sondern nur die Farbe Zyan gedruckt.
 
-**** Überdruckstandard ist nicht Null: Verhindert, dass überdruckte Objekte mit 0 CMYK-Werten CMYK-Objekte, die darunter liegen, ausschließen. Dieser Effekt wird erreicht, indem der Grafikstatusparameter OPM 1 an den Stellen in die PDF-Datei eingefügt wird, an denen der Operator Setoverprint vorhanden ist.
+**Überdruckstandard ist nicht Null:** Verhindert, dass überdruckte Objekte mit 0 CMYK-Werten CMYK-Objekte, die darunter liegen, ausschließen. Dieser Effekt wird erreicht, indem der Grafikstatusparameter OPM 1 an den Stellen in die PDF-Datei eingefügt wird, an denen der Operator Setoverprint vorhanden ist.
 
-**** Adobe PDF-Einstellungen in PDF-Datei speichern: Bettet die Einstellungsdatei ein, die zum Erstellen der PDF-Datei verwendet wird. Sie können die Einstellungsdatei (mit der Erweiterung „.joboptions“) im Dialogfeld „Dateianlagen“ in Acrobat öffnen und anzeigen. Die Adobe PDF-Einstellungsdatei wird zum Element der Struktur „EmbeddedFiles“ in der PDF-Datei.
+**Adobe PDF-Einstellungen in PDF-Datei speichern:** Bettet die Einstellungsdatei ein, die zum Erstellen der PDF-Datei verwendet wird. Sie können die Einstellungsdatei (mit der Erweiterung „.joboptions“) im Dialogfeld „Dateianlagen“ in Acrobat öffnen und anzeigen. Die Adobe PDF-Einstellungsdatei wird zum Element der Struktur „EmbeddedFiles“ in der PDF-Datei.
 
-**** Ursprüngliche JPEG-Bilder nach Möglichkeit als PDF speichern: Verarbeitet komprimierte JPEG-Bilder (Bilder, die bereits mit der DCT-Kodierung komprimiert wurden), ohne sie erneut zu komprimieren. Ist diese Option aktiviert, dekomprimiert PDF GeneratorJPEG-Bilder, um sicherzustellen, dass sie fehlerfrei sind. Gültige Bilder werden dagegen nicht erneut komprimiert, weshalb bei der Verarbeitung das Originalbild unberührt bleibt. Wird diese Option aktiviert, verbessert sich die Leistung, da nur eine De- und keine Rekomprimierung erfolgt und die Bild- und Metadaten beibehalten bleiben.
+**Ursprüngliche JPEG-Bilder nach Möglichkeit als PDF speichern:** Verarbeitet komprimierte JPEG-Bilder (Bilder, die bereits mit der DCT-Kodierung komprimiert wurden), ohne sie erneut zu komprimieren. Ist diese Option aktiviert, dekomprimiert PDF GeneratorJPEG-Bilder, um sicherzustellen, dass sie fehlerfrei sind. Gültige Bilder werden dagegen nicht erneut komprimiert, weshalb bei der Verarbeitung das Originalbild unberührt bleibt. Wird diese Option aktiviert, verbessert sich die Leistung, da nur eine De- und keine Rekomprimierung erfolgt und die Bild- und Metadaten beibehalten bleiben.
 
-**** Portable Job Ticket in PDF-Datei speichern: Behält ein PostScript Job Ticket in einer PDF-Datei bei. Das Job Ticket enthält Informationen zur PostScript-Datei, z. B. Papierformat, Auflösung und Überfüllungsinformationen, statt Informationen zum Inhalt. Diese Informationen können später in einem Workflow oder zum Drucken der PDF-Datei verwendet werden.
+**Portable Job Ticket in PDF-Datei speichern:** Behält ein PostScript Job Ticket in einer PDF-Datei bei. Das Job Ticket enthält Informationen zur PostScript-Datei, z. B. Papierformat, Auflösung und Überfüllungsinformationen, statt Informationen zum Inhalt. Diese Informationen können später in einem Workflow oder zum Drucken der PDF-Datei verwendet werden.
 
-**** Verwenden Sie Prologue.ps und Epilogue.ps: Sendet bei jedem Auftrag eine Prologue- und Epilogue-Datei. Diese Dateien haben vielfältige Zwecke. Prologue-Dateien können beispielsweise so bearbeitet werden, dass Umschlagseiten angegeben werden. Epilogue-Dateien können so bearbeitet werden, dass eine Folge von Prozeduren in einer PostScript-Datei aufgelöst wird. Die Dateien können hoch- und heruntergeladen werden. (Siehe Hochladen und Herunterladen von Prologue- und Epilogue-Dateien.)
+**Verwenden Sie Prologue.ps und Epilogue.ps:** Sendet bei jedem Auftrag eine Prologue- und Epilogue-Datei. Diese Dateien haben vielfältige Zwecke. Prologue-Dateien können beispielsweise so bearbeitet werden, dass Umschlagseiten angegeben werden. Epilogue-Dateien können so bearbeitet werden, dass eine Folge von Prozeduren in einer PostScript-Datei aufgelöst wird. Die Dateien können hoch- und heruntergeladen werden. (Siehe Hochladen und Herunterladen von Prologue- und Epilogue-Dateien.)
 
-**** DSC-Kommentare verarbeiten: Behält DSC-Informationen aus einer PostScript-Datei bei. Diese Unteroptionen lauten wie folgt:
+**DSC-Kommentare verarbeiten:** Behält DSC-Informationen aus einer PostScript-Datei bei. Diese Unteroptionen lauten wie folgt:
 
-**** DSC-Warnungen protokollieren: Zeigt Warnmeldungen zu problematischen DSC-Kommentaren während der Verarbeitung an und fügt sie einer Protokolldatei hinzu.
+**DSC-Warnungen protokollieren:** Zeigt Warnmeldungen zu problematischen DSC-Kommentaren während der Verarbeitung an und fügt sie einer Protokolldatei hinzu.
 
-**** EPS-Informationen von DSC beibehalten: Behält Informationen wie die Ausgangsanwendung und das Erstellungsdatum für eine EPS-Datei bei. Ist diese Option deaktiviert, werden die Größe und Mitte der Seite basierend auf der linken unteren Ecke des linken unteren Objekts und der rechten unteren Ecke des rechten unteren Objekts auf der Seite bestimmt.
+**EPS-Informationen von DSC beibehalten:** Behält Informationen wie die Ausgangsanwendung und das Erstellungsdatum für eine EPS-Datei bei. Ist diese Option deaktiviert, werden die Größe und Mitte der Seite basierend auf der linken unteren Ecke des linken unteren Objekts und der rechten unteren Ecke des rechten unteren Objekts auf der Seite bestimmt.
 
-**** OPI-Kommentare beibehalten: Behält Informationen bei, die erforderlich sind, um ein FPO-Bild (For Placement Only) oder einen Kommentar durch das hochauflösende Bild auf Servern zu ersetzen, die Open Prepress Interface (OPI) Versionen 1.3 und 2.0 unterstützen.
+**OPI-Kommentare beibehalten:** Behält Informationen bei, die erforderlich sind, um ein FPO-Bild (For Placement Only) oder einen Kommentar durch das hochauflösende Bild auf Servern zu ersetzen, die Open Prepress Interface (OPI) Versionen 1.3 und 2.0 unterstützen.
 
-**** Dokumentinformationen von DSC beibehalten: Behält Informationen wie Titel, Erstellungsdatum und -zeit bei. Wenn Sie eine PDF-Datei in Acrobat öffnen, werden diese Informationen im Bereich „Dokumenteigenschaften“ unter „Beschreibung“ angezeigt.
+**Dokument-Informationen von DSC beibehalten:** Behält Informationen wie Titel, Erstellungsdatum und -zeit bei. Wenn Sie eine PDF-Datei in Acrobat öffnen, werden diese Informationen im Bereich „Dokumenteigenschaften“ unter „Beschreibung“ angezeigt.
 
-**** Größe der Seite ändern und Bildmaterial für EPS-Dateien zentrieren: Zentriert ein EPS-Bild und passt die Größe der Seite an die Größe des Bildes an. Diese Option gilt nur für Aufträge, die aus einer einzelnen EPS-Datei bestehen.
+**Größe der Seite ändern und Bildmaterial für EPS-Dateien zentrieren:** Zentriert ein EPS-Bild und passt die Größe der Seite an die Größe des Bildes an. Diese Option gilt nur für Aufträge, die aus einer einzelnen EPS-Datei bestehen.
 
 ## Optionen für „Standards - Berichterstellung und Kompatibilität“ {#standards-reporting-and-compliance-options}
 
@@ -435,7 +448,7 @@ PDF/A-kompatible Dateien dienen hauptsächlich zur Archivierung. Da die langfris
 
 Weitere Informationen zum Zugriff auf die Optionen zu „Standards - Berichterstellung und Kompatibilität“ finden Sie unter [PDF-Einstellungen hinzufügen und bearbeiten](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-**** Compliance-Standard: Wählen Sie einen Standard aus, um einen Bericht zu erstellen, der angibt, ob die Datei die Anforderungen erfüllt und, falls nicht, welche Probleme aufgetreten sind. Wenn „Kompatibilität“ auf der Seite „Allgemeine Einstellungen“ auf „Acrobat 4.0“ festgelegt ist, sind alle folgenden Optionen aktiviert. Wenn „Kompatibilität“ auf „Acrobat 5.0“ festgelegt ist, können nur die Acrobat 5.0-Optionen ausgewählt werden. Wenn „Kompatibilität“ auf eine andere Option festgelegt ist, sind die folgenden Optionen abgeblendet:
+**Compliance-Standard:** Wählen Sie einen Standard aus, um einen Bericht zu erstellen, der angibt, ob die Datei die Anforderungen erfüllt und, falls nicht, welche Probleme aufgetreten sind. Wenn „Kompatibilität“ auf der Seite „Allgemeine Einstellungen“ auf „Acrobat 4.0“ festgelegt ist, sind alle folgenden Optionen aktiviert. Wenn „Kompatibilität“ auf „Acrobat 5.0“ festgelegt ist, können nur die Acrobat 5.0-Optionen ausgewählt werden. Wenn „Kompatibilität“ auf eine andere Option festgelegt ist, sind die folgenden Optionen abgeblendet:
 
 * PDF/X-1a (kompatibel mit Acrobat 4.0)
 * PDF/X-3 (kompatibel mit Acrobat 4,0)
@@ -445,49 +458,49 @@ Weitere Informationen zum Zugriff auf die Optionen zu „Standards - Berichterst
 
 ### Optionen für PDF/X-Standards {#options-for-pdf-x-standards}
 
-**** Wenn nicht konform: Gibt an, ob die PDF-Datei erstellt werden soll, wenn die PostScript-Datei die PDF/X-Anforderungen nicht erfüllt. Diese Option ist verfügbar, wenn auf der Seite „Standards - Berichterstellung und Kompatibilität“ die Option „Kompatibilitätsstandard“ auf eine andere Option als „Ohne“ festgelegt ist.
+**Wenn nicht konform:** Gibt an, ob die PDF-Datei erstellt werden soll, wenn die PostScript-Datei die PDF/X-Anforderungen nicht erfüllt. Diese Option ist verfügbar, wenn auf der Seite „Standards - Berichterstellung und Kompatibilität“ die Option „Kompatibilitätsstandard“ auf eine andere Option als „Ohne“ festgelegt ist.
 
-**** Weiter: Erstellt eine PDF-Datei.
+**Weiter:** Erstellt eine PDF-Datei.
 
-**** Auftrag abbrechen: Erstellt eine PDF-Datei nur, wenn die PostScript-Datei die PDF/X-Anforderungen der ausgewählten Berichtsoptionen erfüllt und ansonsten gültig ist. Wenn sowohl PDF/X-Berichtsoptionen ausgewählt sind und die PostScript-Datei nur eine Teilmenge der PDF/X-Kriterien erfüllt (z. B. PDF/X-3), erstellt PDF Generator > die konforme Datei.
+**Auftrag abbrechen:** Erstellt eine PDF-Datei nur, wenn die PostScript-Datei die PDF/X-Anforderungen der ausgewählten Berichtsoptionen erfüllt und ansonsten gültig ist. Wenn sowohl PDF/X-Berichtsoptionen ausgewählt sind und die PostScript-Datei nur eine Teilmenge der PDF/X-Kriterien erfüllt (z. B. PDF/X-3), erstellt PDF Generator > die konforme Datei.
 
-**** Wenn weder Endformatrahmen noch Objektrahmen angegeben sind: Verfügbar, wenn auf der Seite &quot;Standards - Berichterstellung und Kompatibilität&quot;die Option &quot;Kompatibilitätsstandard&quot;auf eine andere Option als &quot;Ohne&quot;eingestellt ist.
+**Wenn weder Endformatrahmen noch Objektrahmen angegeben sind:** Verfügbar, wenn auf der Seite &quot;Standards Berichte&quot;und &quot;Kompatibilität&quot;die Option &quot;Kompatibilitätsstandard&quot;auf eine andere Option als &quot;Ohne&quot;eingestellt ist.
 
-**** Als Fehler melden: Kennzeichnet die PostScript-Datei als nicht kompatibel, wenn eine der Berichtsoptionen ausgewählt ist und auf einer Seite ein Endformat- oder Objektrahmen fehlt.
+**Als Fehler melden:** Kennzeichnet die PostScript-Datei als nicht kompatibel, wenn eine der Optionen für den Berichte ausgewählt ist und auf einer Seite ein Endformat- oder Objektrahmen fehlt.
 
-**** Endformatrahmen auf Medienrahmen mit Abständen festlegen: Berechnet Werte in Punkten für das Endformatfeld basierend auf den Abständen für das Medienfeld der jeweiligen Seiten, wenn weder das Endformatfeld noch das Objektrahmen angegeben ist. Der Endformatrahmen ist stets genau so klein wie oder kleiner als der umgehende Medienrahmen.
+**Endformatrahmen auf Medienrahmen mit Abständen festlegen:** Berechnet Werte in Punkten für das Endformatfeld basierend auf den Abständen für das Medienfeld der jeweiligen Seiten, wenn weder das Endformatfeld noch das Objektrahmen angegeben ist. Der Endformatrahmen ist stets genau so klein wie oder kleiner als der umgehende Medienrahmen.
 
-**** Wenn kein Anschnittrahmen angegeben ist: Verfügbar, wenn auf der Seite &quot;Standards - Berichterstellung und Kompatibilität&quot;die Option &quot;Kompatibilitätsstandard&quot;auf eine andere Option als &quot;Ohne&quot;eingestellt ist.
+**Wenn kein Anschnittrahmen angegeben ist:** Verfügbar, wenn auf der Seite &quot;Standards Berichte&quot;und &quot;Kompatibilität&quot;die Option &quot;Kompatibilitätsstandard&quot;auf eine andere Option als &quot;Ohne&quot;eingestellt ist.
 
-**** Anschnittrahmen auf Medienrahmen festlegen: Verwendet die Medienfeldwerte für den Anschnittrahmen, wenn der Anschnittrahmen nicht angegeben ist.
+**Anschnittrahmen auf Medienrahmen festlegen:** Verwendet die Medienfeldwerte für den Anschnittrahmen, wenn der Anschnittrahmen nicht angegeben ist.
 
-**** Anschnittrahmen auf Endformatrahmen mit Abständen festlegen: Berechnet Werte in Punkten für den Anschnittrahmen basierend auf den Abständen für den Endformatrahmen der jeweiligen Seiten, wenn der Anschnittrahmen nicht angegeben ist. Der Anschnittrahmen ist stets genau so groß wie oder größer als der umgehende Endformatrahmen.
+**Anschnittrahmen auf Endformatrahmen mit Abständen festlegen:** Berechnet Werte in Punkten für den Anschnittrahmen basierend auf den Abständen für den Endformatrahmen der jeweiligen Seiten, wenn der Anschnittrahmen nicht angegeben ist. Der Anschnittrahmen ist stets genau so groß wie oder größer als der umgehende Endformatrahmen.
 
-**** Standardwerte, sofern nicht im Dokument angegeben: Diese Option ist verfügbar, wenn auf der Seite &quot;Standards - Berichterstellung und Kompatibilität&quot;die Option &quot;Kompatibilitätsstandard&quot;auf eine andere Option als &quot;Ohne&quot;eingestellt ist.
+**Standardwerte, wenn im Dokument nicht angegeben:** Diese Option ist verfügbar, wenn auf der Seite &quot;Standards und Kompatibilität&quot;die Option &quot;Kompatibilitätsstandard&quot;auf eine andere Option als &quot;Ohne&quot;eingestellt ist.
 
-**** Profilname der Ausgabebedingung: Gibt die gekennzeichnete Druckbedingung an, für die das Dokument vorbereitet wurde. Wenn in einem Dokument keine Ausgabebedingung angegeben ist, verwendet PDF Generator den in diesem Menü ausgewählten Wert. Sie können einen der angebotenen Namen auswählen oder in das vorgesehene Feld einen Namen eingeben. Wenn Ihr Workflow erfordert, dass das Dokument die Ausgabebedingung angibt, wählen Sie „Ohne“ aus. Dokumente, die nicht die Anforderung erfüllen, bestehen nicht die Kompatibilitätsprüfung.
+**Name des Output Intent-Profils:** Gibt die gekennzeichnete Druckbedingung an, für die das Dokument vorbereitet wurde. Wenn in einem Dokument keine Ausgabebedingung angegeben ist, verwendet PDF Generator den in diesem Menü ausgewählten Wert. Sie können einen der angebotenen Namen auswählen oder in das vorgesehene Feld einen Namen eingeben. Wenn Ihr Workflow erfordert, dass das Dokument die Ausgabebedingung angibt, wählen Sie „Ohne“ aus. Dokumente, die nicht die Anforderung erfüllen, bestehen nicht die Kompatibilitätsprüfung.
 
-**** Kennung der Ausgabebedingung: Gibt den Referenznamen an, der von der Registrierung des Profilnamens für die Ausgabebedingung angegeben wurde.
+**Kennung der Ausgabebedingung:** Gibt den Referenznamen an, der von der Registrierung des Profils der Ausgabebedingung angegeben wird.
 
-**** Ausgabebedingung: Beschreibt die beabsichtigte Druckbedingung. Dieser Eintrag kann für den vorgesehenen Empfänger des PDF-Dokuments nützlich sein.
+**Ausgabebedingung:** Beschreibt die beabsichtigte Druckbedingung. Dieser Eintrag kann für den vorgesehenen Empfänger des PDF-Dokuments nützlich sein.
 
-**** Registrierungsname (URL): Gibt die Webadresse an, um weitere Informationen zur Registrierung zu erhalten. Der URL wird für ICC-Registrierungsnamen automatisch eingegeben.
+**Registrierungsname (URL):** Gibt die Webadresse an, um weitere Informationen zur Registrierung zu erhalten. Der URL wird für ICC-Registrierungsnamen automatisch eingegeben.
 
-**** Überfüllung: Gibt den Überfüllungsstatus im Dokument an. Für die PDF/X-Kompatibilität ist der Wert „Wahr“ oder „Falsch“ erforderlich. Wenn das Dokument nicht den Überfüllungsstatus angibt, wird der hier angegebene Wert verwendet. Wenn Ihr Workflow es erfordert, dass das Dokument den Überfüllungsstatus angibt, wählen Sie „Nicht definiert“ aus. Dokumente, die nicht die Anforderung erfüllen, bestehen nicht die Kompatibilitätsprüfung.
+**Überfüllung:** Gibt den Überfüllungsstatus im Dokument an. Für die PDF/X-Kompatibilität ist der Wert „Wahr“ oder „Falsch“ erforderlich. Wenn das Dokument nicht den Überfüllungsstatus angibt, wird der hier angegebene Wert verwendet. Wenn Ihr Workflow es erfordert, dass das Dokument den Überfüllungsstatus angibt, wählen Sie „Nicht definiert“ aus. Dokumente, die nicht die Anforderung erfüllen, bestehen nicht die Kompatibilitätsprüfung.
 
 ### Optionen für PDF/A-Standards {#options-for-pdf-a-standard}
 
 Diese Optionen sind aktiviert, wenn „Kompatibilität“ (im Bereich „Allgemein“) auf „Acrobat 4“ (PDF 1.3) oder auf „Acrobat 5“ (PDF 1.4) festgelegt ist.
 
-**** Wenn nicht konform: Gibt an, ob die PDF-Datei erstellt werden soll, wenn die PostScript-Datei die PDF/A-Anforderungen nicht erfüllt.
+**Wenn nicht konform:** Gibt an, ob die PDF-Datei erstellt werden soll, wenn die PostScript-Datei die PDF/A-Anforderungen nicht erfüllt.
 
-**** Weiter: Erstellt eine PDF-Datei, auch wenn die PostScript-Datei die Anforderungen des Standards nicht erfüllt.
+**Weiter:** Erstellt eine PDF-Datei, auch wenn die PostScript-Datei die Anforderungen des Standards nicht erfüllt.
 
-**** Auftrag abbrechen: Erstellt eine PDF-Datei nur, wenn die PostScript-Datei die PDF/A-Anforderungen erfüllt und ansonsten gültig ist.
+**Auftrag abbrechen:** Erstellt eine PDF-Datei nur, wenn die PostScript-Datei die PDF/A-Anforderungen erfüllt und ansonsten gültig ist.
 
-**** Profilname der Ausgabebedingung: Gibt die gekennzeichnete Druckbedingung an, für die das Dokument vorbereitet wurde, und ist für die PDF/A-Kompatibilität erforderlich. Wenn Ihr Workflow es erfordert, dass das Dokument die Ausgabebedingung angibt, wählen Sie „Ohne“ aus. Das Dokument wird bei der Kompatibilitätsüberprüfung fehlschlagen, wenn diese Informationen nicht bereitgestellt werden.
+**Name des Output Intent-Profils:** Gibt die gekennzeichnete Druckbedingung an, für die das Dokument vorbereitet wurde, und ist für die PDF/A-Kompatibilität erforderlich. Wenn Ihr Workflow es erfordert, dass das Dokument die Ausgabebedingung angibt, wählen Sie „Ohne“ aus. Das Dokument wird bei der Kompatibilitätsüberprüfung fehlschlagen, wenn diese Informationen nicht bereitgestellt werden.
 
-**** Ausgabebedingung: Beschreibt die beabsichtigte Druckbedingung. Dieser Eintrag ist nicht erforderlich, kann aber verwendet werden, um nützliche Informationen für den vorgesehenen Empfänger der PDF-Datei bereitzustellen.
+**Ausgabebedingung:** Beschreibt die beabsichtigte Druckbedingung. Dieser Eintrag ist nicht erforderlich, kann aber verwendet werden, um nützliche Informationen für den vorgesehenen Empfänger der PDF-Datei bereitzustellen.
 
 ## Optionen für Ansicht beim Öffnen {#initial-view-options}
 
@@ -499,39 +512,43 @@ Um die Optionen zu verwenden, wählen Sie die Option „Einstellungen für Ansic
 
 Die Dokumentoptionen steuern die Darstellung des Dokuments innerhalb des Dokumentfensters, z. B. den Vergrößerungsgrad und das Bildlaufverhalten.
 
-**** Anzeigen: Legt fest, welche Bereiche und Registerkarten standardmäßig im Anwendungsfenster angezeigt werden. „Lesezeichenfenster und Seite“ öffnet den Dokumentbereich und die Registerkarte „Lesezeichen“.
+**Anzeigen:** Legt fest, welche Bereiche und Registerkarten standardmäßig im Anwendungsfenster angezeigt werden. „Lesezeichenfenster und Seite“ öffnet den Dokumentbereich und die Registerkarte „Lesezeichen“.
 
-**** Seitenlayout: Legt fest, ob das Dokument im einseitigen, nach der Seite gerichteten, fortlaufenden oder fortlaufenden Modus angezeigt wird.
+**Seitenlayout:** Legt fest, ob das Dokument im einseitigen, nach der Seite gerichteten, fortlaufenden oder fortlaufenden Seitenmodus angezeigt wird.
 
-**** Vergrößerung: Legt den Zoomgrad fest, mit dem das Dokument beim Öffnen angezeigt wird. Die Standardeinstellung verwendet den vom Benutzer in den Acrobat- oder Adobe Reader-Voreinstellungen festgelegten Vergrößerungswert.
+**Vergrößerung:** Legt den Zoomgrad fest, mit dem das Dokument beim Öffnen angezeigt wird. Die Standardeinstellung verwendet den vom Benutzer in den Acrobat- oder Adobe Reader-Voreinstellungen festgelegten Vergrößerungswert.
 
-**** Auf Seitenzahl öffnen: Legt die Seite fest, auf der das Dokument geöffnet wird (normalerweise Seite 1).
+**Auf Seitenzahl öffnen:** Legt die Seite fest, auf der das Dokument geöffnet wird (normalerweise Seite 1).
 
-***Hinweis **: Wenn „Standard“ für die Vergrößerungs- und Seitenlayoutoptionen gewählt wird, werden die in den Voreinstellungen für die Seitenanzeige festgelegten Einstellungen der einzelnen Benutzer in Acrobat oder Adobe Reader verwendet.*
+>[!NOTE]
+>
+>Wenn „Standard“ für die Vergrößerungs- und Seitenlayoutoptionen gewählt wird, werden die in den Voreinstellungen für die Seitenanzeige festgelegten Einstellungen der einzelnen Benutzer in Acrobat oder Adobe Reader verwendet.
 
 ### Fensteroptionen {#window-options}
 
 Die Fensteroptionen legen fest, wie das Fenster an den Bildschirmbereich angepasst wird, wenn ein Benutzer das Dokument öffnet. Diese Optionen haben allerdings keine Auswirkungen, wenn ein PDF-Dokument in einem Webbrowser angezeigt wird.
 
-**** Fenstergröße auf Anfangsseite ändern: Passt das Dokumentfenster entsprechend den Optionen, die Sie unter &quot;Dokumentoptionen&quot;ausgewählt haben, an die Anfangsseite an.
+**Fenstergröße auf Anfangsseite ändern:** Passt das Dokument entsprechend den Optionen, die Sie unter &quot;Dokument-Optionen&quot;ausgewählt haben, an die Anfangsseite an.
 
-**** Fenster auf Bildschirm zentrieren: Positioniert das Fenster in der Mitte des Bildschirmbereichs.
+**Fenster auf Bildschirm zentrieren:** Positioniert das Fenster in der Mitte des Bildschirmbereichs.
 
-**** Im Vollbildmodus öffnen: Maximiert das Dokumentfenster und zeigt das Dokument ohne Menüleiste, Symbolleiste oder Fenstersteuerelemente an.
+**Im Vollbildmodus öffnen:** Maximiert das Dokument-Fenster und zeigt das Dokument ohne Menüleiste, Symbolleiste oder Fenstersteuerelemente an.
 
-**** Anzeigen: Dateiname zeigt den Dateinamen in der Titelleiste des Fensters an. „Dokumenttitel“ zeigt den Dokumenttitel in der Titelleiste des Fensters an.
+**Anzeigen:** Dateiname zeigt den Dateinamen in der Titelleiste des Fensters an. „Dokumenttitel“ zeigt den Dokumenttitel in der Titelleiste des Fensters an.
 
 ### Benutzeroberflächenoptionen {#user-interface-options}
 
 Die Benutzeroberflächenoptionen bestimmen, welche Steuerelemente nach dem Öffnen des Dokuments angezeigt oder ausgeblendet werden.
 
-**** Menüleiste ausblenden: Blendet, falls aktiviert, die Menüleiste aus
+**Menüleiste ausblenden:** Blendet, falls aktiviert, die Menüleiste aus
 
-**** Werkzeugleisten ausblenden: Blendet, falls aktiviert, die Werkzeugleisten aus
+**Werkzeugleisten ausblenden:** Blendet, falls aktiviert, die Werkzeugleisten aus
 
-**** Fenstersteuerelemente ausblenden: Blendet bei Auswahl die Fenstersteuerelemente aus.
+**Fenstersteuerelemente ausblenden:** Blendet bei Auswahl die Fenstersteuerelemente aus.
 
-***Hinweis **: Wenn Sie die Menü- und Symbolleiste ausblenden, können die Benutzer keine Befehle anwenden und Werkzeuge auswählen, es sei denn, sie kennen die Tastenkombinationen, wenn sie die Datei in Acrobat öffnen.*
+>[!NOTE]
+>
+>Wenn Sie die Menü- und Symbolleiste ausblenden, können die Benutzer keine Befehle anwenden und Werkzeuge auswählen, es sei denn, sie kennen die Tastenkombinationen, wenn sie die Datei in Acrobat öffnen.
 
 ## Prologue- und Epilogue-Dateien hochladen und herunterladen {#uploading-and-downloading-prologue-and-epilogue-files}
 
