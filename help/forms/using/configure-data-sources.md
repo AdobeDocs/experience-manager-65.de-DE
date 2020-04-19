@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -84,7 +84,8 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
 ## Ordner für Cloud-Dienstkonfigurationen konfigurieren {#cloud-folder}
 
-**Hinweis**: Die Konfiguration des Cloud Services-Ordners ist erforderlich, um Cloud-Dienste für RESTful-, SOAP- und OData-Dienste zu konfigurieren.
+>[!NOTE]
+Zum Konfigurieren von Cloud-Diensten für RESTful-, SOAP- und OData-Dienste ist eine Konfiguration des Ordners für Cloud-Dienste erforderlich.
 
 All cloud service configurations in AEM are consolidated in the `/conf` folder in AEM repository. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud-Dienst-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud-Dienstkonfigurationen zu erstellen und zu organisieren.
 
