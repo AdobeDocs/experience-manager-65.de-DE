@@ -8,14 +8,14 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 66a3db6cd50ae25849dc173e0714df7c140c1774
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
 
 # Document Security | Umgang mit Benutzerdaten {#document-security-handling-user-data}
 
-Mit AEM Forms Document Security können Sie vordefinierte Sicherheitseinstellungen erstellen, speichern und auf Ihre Dokumente anwenden. Es stellt sicher, dass nur autorisierte Benutzer die Dokumente verwenden können. Sie können Dokumente durch Richtlinien schützen. Eine Richtlinie ist eine Zusammenstellung von Informationen, die unter anderem Sicherheitseinstellungen und eine Liste berechtigter Benutzer umfasst. Sie können eine Richtlinie auf ein oder mehrere Dokumente anwenden und Benutzer autorisieren, die in der AEM Forms JEE-Benutzerverwaltung hinzugefügt wurden.
+Mit AEM Forms Dokument Security können Sie vordefinierte Sicherheitseinstellungen erstellen, speichern und auf Ihre Dokumente anwenden. Es stellt sicher, dass nur autorisierte Benutzer die Dokumente verwenden können. Sie können Dokumente durch Richtlinien schützen. Eine Richtlinie ist eine Zusammenstellung von Informationen, die unter anderem Sicherheitseinstellungen und eine Liste berechtigter Benutzer umfasst. Sie können eine Richtlinie auf ein oder mehrere Dokumente anwenden und Benutzer autorisieren, die in der AEM Forms JEE-Benutzerverwaltung hinzugefügt wurden.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -49,7 +49,7 @@ Die folgende Tabelle zeigt, wie die Dokumentensicherheit Daten in Datenbanktabel
   </tr>
   <tr>
    <td><p><code>EdcRevokationEntity</code></p> </td>
-   <td>Speichert Informationen über den Widerruf und die Wiederherstellung geschützter Dokumente.</td>
+   <td>Speichert Informationen zum Widerruf und zur Wiederherstellung geschützter Dokumente.</td>
   </tr>
   <tr>
    <td><code>EdcMyPolicyListEntity</code></td>
@@ -201,7 +201,9 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
    1. Users who have personal policies log into their document security web page at https://[*server*]:[*port*]/edc.
    1. Navigate to **[!UICONTROL Services > Document Security > My Policies]**.
    1. Öffnen Sie eine Richtliniengruppe und löschen Sie den Benutzer aus der Richtlinie.
-   **Hinweis**: Administratoren können in Administration Console unter &quot; **[!UICONTROL Dienste&quot;> &quot;Document Security&quot;> &quot;Meine Richtlinien&quot;Benutzerdaten suchen, aufrufen und aus den persönlichen Richtlinien anderer Benutzer löschen. Dies geschieht in Administration Console]** .
+   >[!NOTE]
+   >
+   >Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.
 
 1. Löschen Sie die Daten für die Prinzipal-ID aus der Benutzerverwaltungsdatenbank. For detailed steps, see [Forms User Management | Handling user data](/help/forms/using/user-management-handling-user-data.md).
 1. Starten Sie den AEM Forms-Server.
