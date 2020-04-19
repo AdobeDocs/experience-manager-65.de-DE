@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -90,7 +90,7 @@ Um die Datenbank in Echtzeit zu sichern, müssen Sie den Snapshot-Modus wählen 
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html). Informationen zum Konfigurieren von Content Services (nicht mehr unterstützt) finden Sie unter [Content Services verwalten](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ### DB2 {#db2}
 
@@ -134,7 +134,9 @@ Siehe [Sicherungsstrategien](https://articles.techrepublic.com.com/5100-1035_61-
 
 Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass die MySQL-Datenbank im binären Protokollmodus ausgeführt wird. (Siehe[ Binäre Protokollierung in MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Ein Werkzeug für die Sicherung bei laufendem Betrieb für MySQL steht außerdem von InnoBase Software zur Verfügung. (Siehe [Innobase-Sicherungen im laufenden Betrieb (Hot Backup)](https://www.innodb.com/hot-backup/features.md).)
 
-**Hinweis**: *Der binäre Standardprotokollierungsmodus für MySQL ist &quot;Statement&quot;, was mit von Content Services verwendeten Tabellen (nicht mehr unterstützt) nicht kompatibel ist. Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:*
+>[!NOTE]
+>
+>Der binäre Standardprotokolliermodus für MySQL ist „Statement“. Dieser Modus ist mit von Content Services (nicht mehr unterstützt) verwendeten Tabellen nicht kompatibel. Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:*
 `binlog_format=mixed log-bin=logname`
 
 Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. To do an incremental backup, ensure that you start the server with the - `log-bin` option as described in the previous section. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. You can force a switch manually with the `FLUSH LOGS SQL` command. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
