@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -34,81 +34,83 @@ Eine *Sicherheitseinstellung* steuert die Sicherheit und Berechtigungen für Dat
 
 Mit diesen Einstellungen werden die Kompatibilität und Verschlüsselung konfiguriert. Weitere Informationen zum Zugriff auf die Schrifteinstellungen finden Sie unter [Sicherheitseinstellung erstellen oder bearbeiten](configuring-security-settings.md#create-or-edit-a-security-setting).
 
-**** Kompatibilität: Legt den Verschlüsselungstyp zum Öffnen eines kennwortgeschützten Dokuments fest. Die Option „Acrobat 3.0 und höher“ verwendet einen niedrigen Verschlüsselungsgrad. Die anderen Optionen verwenden einen hohen Verschlüsselungsgrad.
+**Kompatibilität:** Legt den Verschlüsselungstyp zum Öffnen eines kennwortgeschützten Dokuments fest. Die Option „Acrobat 3.0 und höher“ verwendet einen niedrigen Verschlüsselungsgrad. Die anderen Optionen verwenden einen hohen Verschlüsselungsgrad.
 
-**** Acrobat 3.0 und höher: Verwendet niedrige Verschlüsselung (40-Bit RC4).
+**Acrobat 3.0 und höher:** Verwendet niedrige Verschlüsselung (40-Bit RC4).
 
-**** Acrobat 5.0 und höher: Verwendet hohe Verschlüsselung (128-Bit RC4).
+**Acrobat 5.0 und höher:** Verwendet hohe Verschlüsselung (128-Bit RC4).
 
-**** Acrobat 6.0 und höher: Verwendet hohe Verschlüsselung (128-Bit RC4). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen.
+**Acrobat 6.0 und höher:** Verwendet hohe Verschlüsselung (128-Bit RC4). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen.
 
-**** Acrobat 7.0 und höher: Verwendet hohe Verschlüsselung (128-Bit AES). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen und die ausschließliche Verschlüsselung von Dateianlagen.
+**Acrobat 7.0 und höher:** Verwendet hohe Verschlüsselung (128-Bit AES). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen und die ausschließliche Verschlüsselung von Dateianlagen.
 
-**** Acrobat 9.0 und höher: Verwendet hohe Verschlüsselung (256-Bit AES). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen und die ausschließliche Verschlüsselung von Dateianlagen. 
+**Acrobat 9.0 und höher:** Verwendet hohe Verschlüsselung (256-Bit AES). Diese Option ermöglicht die Aktivierung von Metadaten für Suchfunktionen und die ausschließliche Verschlüsselung von Dateianlagen. 
 
 Mit einer früheren Version von Acrobat können keine PDF-Dokumente mit einer höheren Kompatibilitätseinstellung geöffnet werden. Wenn Sie beispielsweise die Option „Acrobat 7.0 und höher“ auswählen, kann das Dokument nicht in Acrobat 6.0 oder niedriger geöffnet werden. 
 
 Stellen Sie sicher, dass die Kompatibilitätsstufe der PDF-Kompatibilitätsstufe für dieselbe Quelle entspricht. Wenn Sie beispielsweise einen überwachten Ordner für die PDF-Einstellung „Standard“ konfiguriert haben (die mit Acrobat 5.0 und höher kompatibel ist), darf die Kompatibilitätsstufe für die Sicherheit nicht höher sein als Acrobat 5.0.
 
-**** Dokumenteinschränkung: Die verfügbaren Dokumenteinschränkungen hängen von der ausgewählten Kompatibilitätsoption ab.
+**Dokument-Einschränkung:** Die verfügbaren Dokument-Einschränkungen hängen von der ausgewählten Kompatibilitätsoption ab.
 
-**** Keine Verschlüsselung: Verschlüsselt keine Teile des Dokuments.
+**Keine Verschlüsselung:** Verschlüsselt keine Teile des Dokuments.
 
-**** Gesamten Dokumentinhalt verschlüsseln: Verschlüsselt das Dokument und die Dokumentmetadaten. Bei Aktivierung dieser Option können Suchmaschinen nicht auf die Dokumentmetadaten zugreifen.
+**Gesamten Dokument verschlüsseln:** Verschlüsselt das Dokument und die Metadaten des Dokuments. Bei Aktivierung dieser Option können Suchmaschinen nicht auf die Dokumentmetadaten zugreifen.
 
-**** Alle Dokumentinhalte außer Metadaten verschlüsseln (kompatibel mit Acrobat6 und höher): Verschlüsselt den Inhalt eines Dokuments, erlaubt Suchmaschinen jedoch weiterhin den Zugriff auf die Dokumentmetadaten. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 6.0 und höher“, „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ festgelegt ist.
+**Alle Dokument-Inhalte außer Metadaten verschlüsseln (kompatibel mit Acrobat6 und höher):** Verschlüsselt den Inhalt eines Dokuments, erlaubt Suchmaschinen jedoch weiterhin den Zugriff auf die Dokument-Metadaten. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 6.0 und höher“, „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ festgelegt ist.
 
-**** Nur Dateianlagen verschlüsseln (kompatibel mit Acrobat 7 und höher): Benutzer können das Dokument ohne Kennwort öffnen, müssen jedoch ein Kennwort eingeben, um Dateianlagen zu öffnen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ festgelegt ist. 
+**Nur Dateianlagen verschlüsseln (kompatibel mit Acrobat 7 und höher):** Benutzer können das Dokument ohne Kennwort öffnen, müssen jedoch ein Kennwort eingeben, um Dateianlagen zu öffnen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ festgelegt ist. 
 
-Mit diesen Einstellungen wird der Kennwortschutz konfiguriert: 
+Mit diesen Einstellungen wird der Kennwortschutz konfiguriert:
 
-***Hinweis **: Ein vergessenes Kennwort kann nicht aus den Dokumentdaten wiederhergestellt werden. Deshalb wird empfohlen, Kennwörter an einem sicheren Ort aufzubewahren. Außerdem sollten Sie eine Sicherungskopie von Dokumenten aufbewahren, die nicht kennwortgeschützt sind.*
+>[!NOTE]
+>
+>Ein vergessenes Kennwort kann nicht aus den Dokumentdaten wiederhergestellt werden. Deshalb wird empfohlen, Kennwörter an einem sicheren Ort aufzubewahren. Außerdem sollten Sie eine Sicherungskopie von Dokumenten aufbewahren, die nicht kennwortgeschützt sind.
 
-**** Kennwort zum Öffnen des Dokuments erforderlich: Aktiviert die Kennwortoptionen.
+**Kennwort zum Öffnen des Dokuments erforderlich:** Aktiviert die Kennwortoptionen.
 
-**** Kennwort zum Öffnen des Dokuments: Verhindert, dass Benutzer das Dokument öffnen, es sei denn, sie geben das von Ihnen angegebene Kennwort ein. Bei Kennwörtern muss die Groß- und Kleinschreibung beachtet werden. Acrobat verwendet die RC4-Sicherheitsmethode von RSA Security, Inc., um PDF-Dokumente mit Kennwörtern zu schützen. Wenn Sie Druck- und Bearbeitungsvorgänge einschränken, sollten Sie ein Kennwort zum Öffnen des Dokuments zum Verstärken des Dokumentschutzes anfordern.
+**Kennwort zum Öffnen des Dokuments:** Verhindert, dass Benutzer das Dokument öffnen, es sei denn, sie geben das von Ihnen angegebene Kennwort ein. Bei Kennwörtern muss die Groß- und Kleinschreibung beachtet werden. Acrobat verwendet die RC4-Sicherheitsmethode von RSA Security, Inc., um PDF-Dokumente mit Kennwörtern zu schützen. Wenn Sie Druck- und Bearbeitungsvorgänge einschränken, sollten Sie ein Kennwort zum Öffnen des Dokuments zum Verstärken des Dokumentschutzes anfordern.
 
-**** Kennwort zum Öffnen des Dokuments erneut eingeben: Stellt sicher, dass das Kennwort zum Öffnen des Dokuments korrekt ist.
+**Geben Sie das Kennwort zum Öffnen des Dokuments erneut ein:** Stellt sicher, dass das Kennwort zum Öffnen des Dokuments korrekt ist.
 
-**** Kennwort zum Öffnen der Dateianlagen erforderlich: Aktiviert die Kennwortoptionen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist.
+**Kennwort zum Öffnen der Dateianlagen erforderlich:** Aktiviert die Kennwortoptionen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist.
 
-**** Kennwort zum Öffnen der Dateianlage: Stellt sicher, dass zum Öffnen einer Dateianlage ein Kennwort erforderlich ist. Benutzer können das Dokument nicht ohne Kennwortangabe öffnen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist.
+**Kennwort zum Öffnen der Dateianlage:** Stellt sicher, dass zum Öffnen einer Dateianlage ein Kennwort erforderlich ist. Benutzer können das Dokument nicht ohne Kennwortangabe öffnen. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist.
 
-**** Dateianlage erneut eingeben: Stellt sicher, dass das Kennwort korrekt ist. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist. 
+**Dateianlage erneut eingeben:** Stellt sicher, dass das Kennwort korrekt ist. Diese Option ist nur verfügbar, wenn die Option „Kompatibilität“ auf „Acrobat 7.0 und höher“ oder „Acrobat 9.0 und höher“ und die Option „Dokumenteinschränkung“ auf „Nur Dateianlagen verschlüsseln“ festgelegt ist. 
 
 Mit diesen Optionen werden Berechtigungen konfiguriert:
 
-**** Verwenden Sie ein Kennwort, um das Drucken und Bearbeiten des Dokuments und seiner Sicherheitseinstellungen zu beschränken: Aktiviert Zugriffsbeschränkungen.
+**Verwenden Sie ein Kennwort, um das Drucken und Bearbeiten des Dokuments und seiner Sicherheitseinstellungen zu beschränken:** Aktiviert Zugriffsbeschränkungen.
 
-**** Berechtigungskennwort: Beschränkt Benutzer auf Drucken und Bearbeiten. Benutzer können diese Sicherheitseinstellungen nur ändern, wenn sie das von Ihnen festgelegte Kennwort eingeben. Es ist nicht möglich, das für „Kennwort zum Öffnen des Dokuments“ verwendete Kennwort anzugeben. Wenn Sie ein Berechtigungskennwort festlegen, können nur Benutzer, die das entsprechende Kennwort eingeben, die Sicherheitseinstellungen ändern. Wenn für ein PDF-Dokument beide Kennworttypen festgelegt wurden, kann es durch Eingabe eines der Kennwörter geöffnet werden. Ein Benutzer kann jedoch die eingeschränkten Funktionen nur durch Angabe des Berechtigungskennworts festlegen oder ändern. Wenn für das PDF-Dokument nur das Berechtigungskennwort festgelegt wurde oder ein Benutzer das Dokument über das Kennwort zum Öffnen des Dokuments öffnet, wird die Aufforderung zur Kennworteingabe eingeblendet, wenn der Benutzer versucht, die Sicherheitseinstellungen zu ändern.
+**Berechtigungskennwort:** Beschränkt Benutzer auf Drucken und Bearbeiten. Benutzer können diese Sicherheitseinstellungen nur ändern, wenn sie das von Ihnen festgelegte Kennwort eingeben. Es ist nicht möglich, das für „Kennwort zum Öffnen des Dokuments“ verwendete Kennwort anzugeben. Wenn Sie ein Berechtigungskennwort festlegen, können nur Benutzer, die das entsprechende Kennwort eingeben, die Sicherheitseinstellungen ändern. Wenn für ein PDF-Dokument beide Kennworttypen festgelegt wurden, kann es durch Eingabe eines der Kennwörter geöffnet werden. Ein Benutzer kann jedoch die eingeschränkten Funktionen nur durch Angabe des Berechtigungskennworts festlegen oder ändern. Wenn für das PDF-Dokument nur das Berechtigungskennwort festgelegt wurde oder ein Benutzer das Dokument über das Kennwort zum Öffnen des Dokuments öffnet, wird die Aufforderung zur Kennworteingabe eingeblendet, wenn der Benutzer versucht, die Sicherheitseinstellungen zu ändern.
 
-**** Berechtigungskennwort erneut eingeben: Stellt sicher, dass das Berechtigungskennwort korrekt ist.
+**Berechtigungskennwort erneut eingeben:** Stellt sicher, dass das Berechtigungskennwort korrekt ist.
 
-**** Zulässiges Drucken: Gibt die Druckqualität für das PDF-Dokument an:
+**Zulässiges Drucken:** Gibt die Druckqualität für das PDF-Dokument an:
 
-**** Keine: Hindert Benutzer am Drucken des Dokuments.
+**Keine:** Verhindert, dass Benutzer das Dokument drucken.
 
-**** Niedrige Auflösung (150 dpi): Ermöglicht Benutzern das Drucken des Dokuments mit einer Auflösung von maximal 150 dpi. Der Druckvorgang ist ggf. langsam, da jede Seite als Bitmap-Bild gedruckt wird. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
+**Niedrige Auflösung (150 dpi):** Ermöglicht Benutzern das Drucken des Dokuments mit einer Auflösung von maximal 150 dpi. Der Druckvorgang ist ggf. langsam, da jede Seite als Bitmap-Bild gedruckt wird. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
 
-**** Hohe Auflösung: Ermöglicht Benutzern das Drucken mit beliebiger Auflösung und leitet eine Vektorausgabe hoher Qualität an PostScript- und andere Drucker weiter, die erweiterte Druckfunktionen hoher Qualität unterstützen.
+**Hohe Auflösung:** Ermöglicht Benutzern das Drucken mit beliebiger Auflösung und leitet eine Vektorausgabe hoher Qualität an PostScript- und andere Drucker weiter, die erweiterte Druckfunktionen hoher Qualität unterstützen.
 
-**** Zulässige Änderungen: Definiert, welche Bearbeitungsaktionen im PDF-Dokument zulässig sind:
+**Zulässige Änderungen:** Definiert, welche Bearbeitungsaktionen im PDF-Dokument zulässig sind:
 
-**** Keine: Verhindert, dass Benutzer das Dokument ändern, einschließlich Ausfüllen von Unterschriften- und Formularfeldern.
+**Keine:** Verhindert, dass Benutzer das Dokument ändern, einschließlich des Ausfüllens von Unterschriften- und Formularfeldern.
 
-**** Einfügen, Löschen und Drehen von Seiten: Ermöglicht Benutzern das Einfügen, Löschen und Drehen von Seiten sowie das Erstellen von Lesezeichen und Miniaturbildern. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
+**Einfügen, Löschen und Drehen von Seiten:** Ermöglicht Benutzern das Einfügen, Löschen und Drehen von Seiten sowie das Erstellen von Lesezeichen und Miniaturbildern. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
 
-**** Ausfüllen von Formularfeldern und Unterschreiben vorhandener Unterschriftsfelder: Ermöglicht Benutzern das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen. Benutzer können jedoch keine Kommentare hinzufügen oder Formularfelder erstellen. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
+**Ausfüllen von Formularfeldern und Unterschreiben vorhandener Unterschriftsfelder:** Ermöglicht Benutzern das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen. Benutzer können jedoch keine Kommentare hinzufügen oder Formularfelder erstellen. Diese Option ist nur verfügbar, wenn ein hoher Verschlüsselungsgrad (Acrobat 5.0, 6.0, 7.0 oder 9.0) aktiviert ist.
 
-**** Kommentieren, Ausfüllen von Formularfeldern und Unterschreiben vorhandener Unterschriftsfelder: Ermöglicht Benutzern das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen und Kommentare.
+**Kommentieren, Ausfüllen von Formularfeldern und Unterschreiben vorhandener Unterschriftsfelder:** Ermöglicht Benutzern das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen und Kommentare.
 
-**** Seitenlayout, Touch-up, Ausfüllen von Formularfeldern und UnterschreibenVorhandene Unterschriftsfelder: Ermöglicht Benutzern das Einfügen, Drehen und Löschen von Seiten sowie das Erstellen von Lesezeichen oder Miniaturbildern, das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen. Diese Option ermöglicht Benutzern nicht das Erstellen von Formularfeldern. Sie ist nur verfügbar, wenn ein niedriger Verschlüsselungsgrad (Acrobat 3.0) aktiviert ist.
+**Seitenlayout, Touch-up, Ausfüllen von Formularfeldern und UnterschreibenVorhandene Unterschriftsfelder:** Ermöglicht Benutzern das Einfügen, Drehen und Löschen von Seiten sowie das Erstellen von Lesezeichen oder Miniaturbildern, das Ausfüllen von Formularen und das Hinzufügen digitaler Signaturen. Diese Option ermöglicht Benutzern nicht das Erstellen von Formularfeldern. Sie ist nur verfügbar, wenn ein niedriger Verschlüsselungsgrad (Acrobat 3.0) aktiviert ist.
 
-**** Alle außer Seiten extrahieren: Ermöglicht Benutzern das Ändern des Dokuments mit einer beliebigen Methode in der Liste &quot;Zulässige Änderungen&quot;, mit Ausnahme von Seiten.
+**Alle außer Seiten extrahieren:** Ermöglicht Benutzern, das Dokument mit einer beliebigen Methode in der Liste &quot;Zulässige Änderungen&quot;zu ändern, mit Ausnahme von &quot;Seiten entfernen&quot;.
 
-**** Kopieren von Text, Bildern und anderen Inhalten aktivieren: Ermöglicht Benutzern das Auswählen und Kopieren des Inhalts des PDF-Dokuments. Erlaubt ferner, dass Dienstprogramme, die Zugriff auf den Inhalt einer PDF-Datei benötigen (z. B. Acrobat Catalog), auf diesen Inhalt zugreifen können. Diese Option ist verfügbar, wenn ein hoher Verschlüsselungsgrad aktiviert ist.
+**Kopieren von Text, Bildern und anderen Inhalten aktivieren:** Ermöglicht Benutzern das Auswählen und Kopieren des Inhalts des PDF-Dokuments. Erlaubt ferner, dass Dienstprogramme, die Zugriff auf den Inhalt einer PDF-Datei benötigen (z. B. Acrobat Catalog), auf diesen Inhalt zugreifen können. Diese Option ist verfügbar, wenn ein hoher Verschlüsselungsgrad aktiviert ist.
 
-**** Textzugriff auf Bildschirmlesehilfen-Geräte für Sehbehinderte aktivieren: Ermöglicht Benutzern mit Sehbehinderungen das Lesen des Dokuments mithilfe von Bildschirmlesehilfen. Benutzer dürfen jedoch den Dokumentinhalt weder kopieren noch entnehmen. Diese Option ist verfügbar, wenn ein hoher Verschlüsselungsgrad aktiviert ist.
+**Textzugriff auf Bildschirmlesehilfen-Geräte für Sehbehinderte aktivieren:** Ermöglicht Sehbehinderten das Lesen des Dokuments mithilfe von Bildschirmlesehilfen. Benutzer dürfen jedoch den Dokumentinhalt weder kopieren noch entnehmen. Diese Option ist verfügbar, wenn ein hoher Verschlüsselungsgrad aktiviert ist.
 
 ## Eine Sicherheitseinstellung löschen {#delete-a-security-setting}
 
