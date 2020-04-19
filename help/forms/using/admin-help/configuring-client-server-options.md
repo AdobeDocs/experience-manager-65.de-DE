@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -24,9 +24,11 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 **Basis-URL:** Die Basis-Dokument-Sicherheits-URL mit Servername und Port. Durch Anfügen von Informationen an die Basis-URL werden Verbindungs-URLs erstellt. /edc/Main.do wird beispielsweise angefügt, um auf die Webseiten zuzugreifen. Diese URL ermöglicht Benutzern auch , auf Einladungen externer Benutzer zur Registrierung zu antworten.
 
-Wenn Sie IPv6 verwenden, geben Sie die Basis-URL als Computernamen oder den DNS-Namen ein. Wenn Sie eine numerische IP-Adresse verwenden, kann Acrobat die richtliniengeschützten Dateien nicht öffnen. Verwenden Sie auch die sichere HTTP-URL (HTTPS) für Ihren Server.  
+Wenn Sie IPv6 verwenden, geben Sie die Basis-URL als Computernamen oder den DNS-Namen ein. Wenn Sie eine numerische IP-Adresse verwenden, kann Acrobat die richtliniengeschützten Dateien nicht öffnen. Verwenden Sie auch die sichere HTTP-URL (HTTPS) für Ihren Server.
 
-***Hinweis **: Die Basis-URL ist in durch Richtlinien geschützte Dateien eingebettet. Sie wird von Clientanwendungen verwendet, um sich wieder mit dem Server zu verbinden. Geschützte Dateien enthalten die Basis-URL auch dann weiter, wenn diese später geändert wird. Wenn Sie die Basis-URL ändern, müssen die Konfigurationsinformationen für alle sich mit dem Server verbindenden Clients geändert werden.*
+>[!NOTE]
+>
+>Die Basis-URL ist in durch Richtlinien geschützte Dateien eingebettet. Sie wird von Clientanwendungen verwendet, um sich wieder mit dem Server zu verbinden. Geschützte Dateien enthalten die Basis-URL auch dann weiter, wenn diese später geändert wird. Wenn Sie die Basis-URL ändern, müssen die Konfigurationsinformationen für alle sich mit dem Server verbindenden Clients geändert werden.
 
 **Standardmäßige Offline-Nutzungsdauer:** Die Standarddauer, die ein Benutzer offline ein geschütztes Dokument verwenden kann. Diese Einstellung bestimmt den ursprünglichen Wert der Einstellung für die Automatische Offline-Nutzungsdauer, wenn Sie eine Richtlinie erstellen. (Siehe Richtlinien erstellen und bearbeiten.) Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
 
@@ -853,7 +855,7 @@ Acrobat Reader DC Extensions für Microsoft Office ist ein Plug-In, das mit den 
    * Apple OS X
    * Sun Solaris
    * HP-UX
-   `SDKVersions` gibt die Version der Document Security C++ Client-API an, die von der Clientanwendung verwendet wird. Beispiel: `"8.2"`. 
+   `SDKVersions` gibt die Version der Document Security C++ Client-API an, die von der Clientanwendung verwendet wird. Beispiel: `"8.2"`.
 
    `APPFamilies` ist durch die Client-API definiert.
 
@@ -989,7 +991,7 @@ Die folgenden Änderungen in „config.xml“ ermöglichen die TLS-Unterstützun
 
 1. Legen Sie für den Schlüssel `SmtpUseTls` unter dem Knoten `ExternalUser` den Wert **true** fest.
 1. Legen Sie für den Schlüssel `SmtpUseSsl` unter dem Knoten `ExternalUser` den Wert **false** fest.
-1. Speichern Sie die `config.xml`.
+1. Save the `config.xml`.
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### SOAP-Endpunkte für Document Security-Dokumente deaktivieren {#disable-soap-endpoints-for-document-security-documents}
@@ -1017,7 +1019,7 @@ Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte 
    </node>
    ```
 
-1. Speichern Sie die `config.xml`.
+1. Save the `config.xml`.
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### Erhöhen der Skalierbarkeit des Document Security-Servers {#increasingscalability}
