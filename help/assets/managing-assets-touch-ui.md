@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -347,7 +347,11 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
 1. Verwenden Sie die Pfeiltasten, um sich um das gezoomte Bild zu bewegen.
 
-See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Vorschau dynamischer Medienelemente](/help/assets/previewing-assets.md).
+>* [Anzeigen von Unter-Assets](managing-linked-subassets.md#viewing-subassets).
+
 
 ## Eigenschaften und Metadaten bearbeiten {#editing-properties}
 
