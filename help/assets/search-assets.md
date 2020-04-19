@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -38,11 +38,11 @@ Die AEM-Suchfunktionen erlauben die Suche nach Sammlungen sowie die Suche nach A
 
 Machen Sie sich mit der Suchoberfläche und den verfügbaren Aktionen vertraut.
 
-![Die Oberfläche für die Suchergebnisse zu Teilen von Assets](assets/aem_search_results.png)
+![Benutzeroberfläche der Suchergebnisse von Experience Manager Assets](assets/aem_search_results.png)
 
-*Abbildung: Die Oberfläche für die Suchergebnisse zu Teilen von Assets*
+*Abbildung: Benutzeroberfläche der Suchergebnisse von Experience Manager Assets*
 
-**A.** Speichern Sie die Suche als Smart-Sammlung. **B.** Verwenden Sie Filter (Prädikate) zur Eingrenzung der Suchergebnisse. **C.** Zeigen Sie Dateien, Ordner oder beide in den Suchergebnissen an. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G.** Markieren Sie das Kontrollkästchen, um alle Suchergebnisse auszuwählen. **H.** Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **Ich.** Schließen Sie die Suche **J.** Wechseln Sie zwischen der Ansicht der Karte und der Ansicht der Liste.
+**A.** Speichern Sie die Suche als intelligente Sammlung. **B.** Filter oder Vorhersagen zur Eingrenzung der Suchergebnisse. **C.** Anzeigen von Dateien, Ordnern oder beidem. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G.** Wählen Sie die geladenen Suchergebnisse aus. **H.** Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **I.** Schließen Sie die Suche **J.** Wechseln Sie zwischen der Ansicht der Karte und der Ansicht der Liste.
 
 ### Dynamische Suchfacetten {#dynamicfacets}
 
@@ -254,7 +254,7 @@ Die Suchfunktion in AEM Assets unterliegt folgenden Einschränkungen:
 * AEM zeigt den Suchbegriff ggf. weiter an, nachdem Sie Eigenschaften eines Assets aus den Suchergebnissen ausgewählt und die Suche dann abgebrochen haben. <!-- (CQ-4273540) -->
 * Bei der Suche nach Ordnern bzw. Dateien und Ordnern können die Suchergebnisse mit keinem anderen Parameter sortiert werden.
 * Wenn Sie die Eingabetaste drücken, ohne etwas in die Omniture Suchleiste einzugeben, gibt AEM eine Liste von nur Dateien und nicht Ordnern zurück. Wenn Sie gezielt nach Ordnern suchen, ohne einen Suchbegriff zu verwenden, gibt AEM keine Ergebnisse zurück.
-* Mit dem Kontrollkästchen &quot;Alle  auswählen&quot;können Sie nur die ersten 100 gesuchten Assets in der Ansicht der Karten und die ersten 200 gesuchten Assets in der Ansicht der Liste auswählen. Wenn Sie einen Bildlauf durchführen und weitere Assets in der Benutzeroberfläche laden, können Sie mit der Option &quot;Alle [!UICONTROL auswählen] &quot;weitere Elemente auswählen.
+* Verwenden Sie die Option &quot;Alle **[!UICONTROL auswählen]** &quot;in der oberen rechten Ecke der Suchseite, um die gesuchten Assets auszuwählen. Experience Manager zeigt zunächst 100 Assets in der Ansicht der Karten und 200 Assets in der Ansicht der Liste an. Während des Bildlaufs der Suchergebnisse werden weitere Assets geladen. Sie können mehr Assets als die geladenen Assets auswählen. Die Anzahl der ausgewählten Assets wird oben rechts auf der Suchergebnisseite angezeigt. Sie können die Auswahl bearbeiten, indem Sie beispielsweise die ausgewählten Assets herunterladen, die Metadateneigenschaften stapelweise für die ausgewählten Assets aktualisieren oder die ausgewählten Assets einer Sammlung hinzufügen. Wenn mehr Assets ausgewählt als angezeigt werden, wird entweder eine Aktion auf alle ausgewählten Assets angewendet oder ein Dialogfeld zeigt die Anzahl der Assets an, auf die sie angewendet werden. Um eine Aktion auf die Assets anzuwenden, die nicht geladen wurden, stellen Sie sicher, dass alle Assets explizit ausgewählt sind.
 
 Visuelle Suchen oder Ähnlichkeitssuchen weisen die folgenden Einschränkungen auf:
 
@@ -269,7 +269,7 @@ Die Suchfunktion weist in den folgenden Szenarien möglicherweise Leistungseinsc
 
 * Wenn Sie den Prüfungsstatus von Assets überwachen, verwenden Sie die entsprechende Option, um herauszufinden, welche Assets genehmigt wurden und für welche Assets die Genehmigung aussteht.
 * Verwenden Sie das Prädikat „Einblicke“, um basierend auf den Nutzungsstatistiken diverser Creative Cloud-Programme nach unterstützten Assets zu suchen. Nutzungsdaten werden unter Nutzungsbewertung, Impressions, Klicks und Medienkanäle gruppiert, in denen die Assets anhand von Kategorien angezeigt werden.
-* Aktivieren Sie das Kontrollkästchen &quot;Alle **[!UICONTROL auswählen]** &quot;, um die gesuchten Assets auszuwählen. Es werden die ersten 100 Assets in der Ansicht der Karten und die ersten 200 Assets in der Ansicht der Liste ausgewählt. Sie können die Auswahl bearbeiten, indem Sie beispielsweise die ausgewählten Assets herunterladen, die Metadateneigenschaften stapelweise für die ausgewählten Assets aktualisieren oder die ausgewählten Assets einer Sammlung hinzufügen.
+* Aktivieren Sie das Kontrollkästchen &quot;Alle **[!UICONTROL auswählen]** &quot;, um die gesuchten Assets auszuwählen. Experience Manager zeigt zunächst 100 Assets in der Ansicht der Karten und 200 Assets in der Ansicht der Liste an. Während des Bildlaufs der Suchergebnisse werden weitere Assets geladen. Sie können mehr Assets als die geladenen Assets auswählen. Die Anzahl der ausgewählten Assets wird oben rechts auf der Suchergebnisseite angezeigt. Sie können die Auswahl bearbeiten, indem Sie beispielsweise die ausgewählten Assets herunterladen, die Metadateneigenschaften stapelweise für die ausgewählten Assets aktualisieren oder die ausgewählten Assets einer Sammlung hinzufügen. Wenn mehr Assets ausgewählt als angezeigt werden, wird entweder eine Aktion auf alle ausgewählten Assets angewendet oder ein Dialogfeld zeigt die Anzahl der Assets an, auf die sie angewendet werden. Um eine Aktion auf die Assets anzuwenden, die nicht geladen wurden, stellen Sie sicher, dass alle Assets explizit ausgewählt sind.
 * Informationen zum Suchen nach Assets, die keine obligatorischen Metadaten enthalten, finden Sie unter [Obligatorische Metadaten](#mandatorymetadata).
 * Die Suche nutzt alle Metadatenfelder. Eine allgemeine Suche, z. B. nach 12, gibt in der Regel viele Ergebnisse zurück. Für bessere Ergebnisse sollten Sie doppelte (nicht einfache) Anführungszeichen verwenden oder sicherstellen, dass die Zahl an ein Wort ohne Sonderzeichen angrenzt (z. B. *Schuh12*).
 * Die Volltextsuche unterstützt Operatoren wie „-“, „^“ und andere. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie z. B. „Notebook - Schönheit“ statt Notebook - Schönheit.
@@ -441,7 +441,7 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
 | Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten | Bei der Suche nach Assets, bei denen die erforderlichen Metadaten fehlen, zeigt AEM möglicherweise einige Assets mit gültigen Metadaten an. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
-| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu beschränken. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
+| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht zusammenhängende oder teilweise zugehörige Suchergebnisse | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
 | Keine Vorschläge zum automatischen Ausfüllen für Assets | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | AEM Assets erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
 | Keine Suchergebnisse | <ul><li>Es sind keine Assets vorhanden, die Ihrer Abfrage entsprechen.</li><li>Vor der Abfrage der Suche wurde ein Leerzeichen hinzugefügt.</li><li>Ein nicht unterstütztes Metadatenfeld enthält den Suchbegriff, nach dem Sie suchen.</li><li>Die Ein- und Ausschaltzeit wurde für ein Asset konfiguriert und die Suche wurde während der Ausschaltzeit des Assets durchgeführt.</li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie (intelligente) Tagging verwenden, um die Suchergebnisse zu verbessern.</li><li>Dabei handelt es sich um eine [bekannte Einschränkung](#limitations).</li><li>Nicht alle Metadatenfelder werden bei Suchvorgängen berücksichtigt. Siehe [Suchbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Ein- und Ausschaltzeiten für die erforderlichen Assets.</li></ul> |
