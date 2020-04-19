@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -78,14 +78,15 @@ Sie können konfigurieren, welcher Repository Service Provider mit FileNet verwe
 
 Die folgenden Optionen sind verfügbar:
 
-**** Name des aktuellen Repository Provider: Der Name des aktuellen Repository Service Providers
+**Name des aktuellen Repository Provider:** Der Name des aktuellen Repository-Dienstleisters
 
-**** IBM FileNet Repository Provider: Legt den FileNet-Repository-Provider als Provider für das Repository fest. Diese Option ist veraltet.
+**IBM FileNet Repository Provider:** Legt den FileNet-Repository-Provider als Provider für das Repository fest. Diese Option ist veraltet.
 
-**** Repository Provider: Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
 
-***Hinweis **: Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie RepositoryService in Anwendungen und Dienste.<!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie RepositoryService in Anwendungen und Dienste. <!-- Fix broken link(See Managing Services) -->
 
 1. Wählen Sie in Administration Console „Dienste“ > „ Connector für IBM FileNet“.
 1. Wählen Sie im Bereich „Repository Service Provider-Informationen“ einen anderen Repository Service Provider aus und klicken Sie auf „Speichern“.
-
