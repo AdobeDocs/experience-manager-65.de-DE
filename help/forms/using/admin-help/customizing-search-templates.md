@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -44,9 +44,9 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
 
    * Wählen Sie oben in der Registerkarte „Kriterien“ ein Prozess- oder Aufgabenelement aus.
 
-      **Tipp**: *Wenn Sie zuvor das Element &quot;Prozessname&quot;ausgewählt und einen Prozess angegeben haben, stehen alle in diesem Prozess definierten Prozessvariablen zur Auswahl bereit.*
+      **Tipp**: *Wenn Sie zuvor das Element &quot;Prozessname&quot;ausgewählt und einen Prozess angegeben haben, stehen alle in diesem Prozess definierten Prozessvariablen ebenfalls zur Auswahl bereit.*
 
-      **Tipp**: *Wenn Sie das Element &quot;Aufgabe sichtbar&quot;auswählen, können Benutzer abgeschlossene Aufgaben aus den Suchergebnissen entfernen.*
+      **Tipp**: Wenn *Sie das Element &quot;Sichtbare Aufgabe&quot;auswählen, können Benutzer abgeschlossene Aufgaben aus den Suchergebnissen entfernen.*
 
       Die Suchkriterienfelder für das ausgewählte Element werden am unteren Rand der Registerkarte angezeigt.
 
@@ -65,8 +65,9 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
    * Wählen Sie ein Prozess- oder Aufgabenelement aus und klicken Sie auf den Pfeil  , um es in die Liste „Anzuzeigende Spalten“ zu übernehmen.
    * Wählen Sie in der Liste „Anzuzeigende Spalten“ das Prozess- oder Aufgabenelement aus und klicken Sie auf den Nach-oben- oder Nach-unten-Pfeil´ , um es an die gewünschte Position in der Spaltenreihenfolge zu verschieben. Die Spaltenüberschriften der Suchergebnisse werden in der hier aufgeführten Reihenfolge angezeigt.
    * (Optional) Wählen Sie zum Ändern des Namens des Elements für die Spaltenüberschrift das Element in der Liste „Anzuzeigende Spalten“ aus und geben Sie den neuen Namen an.
-
-      **Hinweis**: Das in *der Suchvorlage angegebene Layout setzt die Voreinstellungen des Benutzers für Spaltenüberschriften in Workspace außer Kraft.*
+   >[!NOTE]
+   >
+   >Das in der Suchvorlage angegebene Layout setzt die für Spaltenüberschriften in Workspace festgelegten Voreinstellungen des Benutzers außer Kraft.
 
 1. (Optional) Klicken Sie für jede Spalte, die in den Suchergebnissen sortiert werden soll, auf die Registerkarte „Sortierung“ und führen Sie folgende Schritte aus:
 
