@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -646,7 +646,7 @@ In der Ansicht der Karte wird die Option &quot; **[!UICONTROL Auswählen]** &quo
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Beim Durchsuchen eines Ordners oder einer Sammlung in der Benutzeroberfläche &quot;Assets&quot;in einem Browser können Sie alle angezeigten oder geladenen Assets mit der Option &quot;Alle [!UICONTROL auswählen] &quot;in der oberen rechten Ecke auswählen. Wenn Sie nicht weiter unten scrollen, werden nur 100 Assets in der Ansicht geladen und 200 werden in der Ansicht der Liste geladen. Bei Auswahl der Option &quot;Alle&quot;werden nur diese vielen Assets ausgewählt.
+Beim Durchsuchen eines Ordners oder einer Sammlung in der Benutzeroberfläche &quot;Assets&quot;in einem Browser können Sie alle angezeigten oder geladenen Assets mit der Option &quot;Alle [!UICONTROL auswählen] &quot;in der oberen rechten Ecke auswählen. Zunächst werden nur 100 Assets in der Ansicht geladen und 200 in der Ansicht der Liste. Weitere Assets werden beim Bildlauf auf der Suchergebnisseite in Ansicht geladen. Mit der Option &quot;Alle [!UICONTROL auswählen] &quot;werden nur die geladenen Assets ausgewählt.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
