@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -197,13 +197,15 @@ If your solution is deployed in a clustered environment, replace `@@notification
 
 **JBoss:** 8080
 
-**** Oracle WebLogic Server: 7001
+**Oracle WebLogic Server:** 7001
 
-**** IBM WebSphere: 9080
+**IBM WebSphere:** 9080
 
 To make these URLs function correctly, replace `<`*PORT *`>`with the port number that is appropriate for your environment.
 
-***Hinweis **: Wenn Sie mithilfe einer benutzerdefinierten anderen Webanwendung als Forms Benutzern den Zugriff auf die Aufgaben ermöglichen, müssen Sie stattdessen ein URL-Format verwenden, das dem der benutzerdefinierten Anwendung entspricht.*
+>[!NOTE]
+>
+>Wenn Sie mithilfe einer benutzerdefinierten anderen Webanwendung als Forms Benutzern den Zugriff auf die Aufgaben ermöglichen, müssen Sie stattdessen ein URL-Format verwenden, das dem der benutzerdefinierten Anwendung entspricht.
 
 ### Variablenauswahl {#variable-picker}
 
@@ -211,9 +213,9 @@ Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder 
 
 Für Erinnerungen, Aufgabenzuweisungen und Termine für Benutzer und Gruppen können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**description** Der Inhalt der Eigenschaft Beschreibung, wie im Benutzerschritt (Startpunkt, Vorgang &quot;Aufgabe zuweisen&quot;oder Vorgang &quot;Mehrere Aufgaben zuweisen&quot;des Prozesses in Workbench definiert.
+**description** Der Inhalt der Eigenschaft &quot;Beschreibung&quot;, wie im Benutzervorgang (Beginn-Point, Vorgang &quot;Aufgabe zuweisen&quot;oder Vorgang &quot;Mehrere Aufgaben zuweisen&quot;) des Prozesses in Workbench definiert.
 
-**Anweisungen** Der Inhalt der Eigenschaft &quot;Aufgabenanweisungen&quot;, wie im Benutzerschritt des Prozesses in Workbench definiert.
+**Anweisungen** Der Inhalt der Eigenschaft &quot;Aufgabe Instructions&quot;, wie im Benutzervorgang des Prozesses in Workbench definiert.
 
 **notification-host** Der Hostname des AEM Forms-Anwendungsservers .
 
@@ -229,7 +231,9 @@ Zusätzlich können für Gruppenerinnerungen, Gruppenaufgabenzuweisungen und Gru
 
 **group-name** Der Name der Gruppe, der das Arbeitselement zugewiesen ist.
 
-**Hinweis**: *Wenn eine Variable keinen Wert hat, wird nichts zurückgegeben.*
+>[!NOTE]
+>
+>Wenn eine Variable keinen Wert hat, wird nichts zurückgegeben.
 
 Für angehaltene Zweige können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
