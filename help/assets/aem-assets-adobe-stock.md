@@ -3,12 +3,12 @@ title: Verwalten von Adobe Stock-Assets in AEM Assets
 description: Suchen, Abrufen, Lizenzieren und Verwalten von Adobe Stock-Assets aus AEM. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62e82b6da2a5f961acf8cbc30ad29b3c25b1ecef
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
 
-# Adobe Stock-Assets in AEM Assets verwenden {#use-adobe-stock-assets-in-aem-assets}
+# Verwenden von Adobe Stock-Assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
 
 Organisationen können ihr Adobe Stock-Unternehmensabo in AEM Assets integrieren, damit lizenzierte Assets umfassend für kreative und Marketing-Projekte verfügbar sind und mit den leistungsstarken Asset-Management-Funktionen von AEM verwaltet werden können.
 
@@ -26,17 +26,17 @@ Um die Kommunikation zwischen AEM und Adobe Stock zu ermöglichen, erstellen Sie
 >
 >Nur AEM- und Admin Console-Administratoren einer Organisation können die Integration durchführen, da hierfür Administratorrechte erforderlich sind.
 
-### Erstellen einer IMS-Konfiguration {#create-an-ims-configuration}
+### Erstellen einer IMS-Konfiguration   {#create-an-ims-configuration}
 
-1. Klicken Sie auf AEM-Logo. Navigieren Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloudlösung]** > **[!UICONTROL Adobe Stock]**.
+1. Klicken Sie auf das AEM-Logo. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloudlösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie die entsprechenden Werte in den Feldern **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungsserver]**, **[!UICONTROL API-Schlüssel]**, **[!UICONTROL Geheimer Clientschlüssel]** und **[!UICONTROL Nutzlast]** ein. Detaillierte Informationen zum Abrufen dieser Werte aus der Adobe-E/A-Datei finden Sie unter [Schnellstart zur JWT-Authentifizierung](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 1. Fügen Sie den heruntergeladenen Schlüssel zu Ihrem Adobe I/O-Servicekonto hinzu.
 
-### Adobe Stock-Konfiguration in AEM erstellen {#create-adobe-stock-configuration-in-aem}
+### Erstellen einer Adobe Stock-Konfiguration in AEM   {#create-adobe-stock-configuration-in-aem}
 
-1. Navigieren Sie in der AEM-Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Navigieren Sie in der AEM-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um eine Konfiguration zu erstellen und sie Ihrer bestehenden IMS-Konfiguration zuzuordnen. Wählen Sie `PROD` als Umgebungsparameter aus.
 1. Lassen Sie den Speicherort im Feld **[!UICONTROL Pfad lizenzierter Assets]** unverändert. Ändern Sie den Speicherort nicht in den Pfad, in dem Sie die Adobe Stock-Assets speichern möchten.
 1. Schließen Sie die Erstellung ab, indem Sie alle erforderlichen Eigenschaften hinzufügen. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
@@ -44,37 +44,37 @@ Um die Kommunikation zwischen AEM und Adobe Stock zu ermöglichen, erstellen Sie
 
 >[!NOTE]
 >
->Wenn mehrere Adobe Stock Configurations vorhanden sind, wählen Sie die gewünschte Konfiguration im Bedienfeld &quot; [!UICONTROL Benutzereinstellungen] &quot;aus, indem Sie auf das AEM-Logo in der AEM-Benutzeroberfläche klicken.
+>Wenn mehrere Adobe Stock-Konfigurationen vorhanden sind, wählen Sie die gewünschte Konfiguration im Bedienfeld [!UICONTROL Benutzereinstellungen] aus, indem Sie auf das AEM-Logo in der AEM-Benutzeroberfläche klicken.
 
 ## Verwenden und Verwalten von Adobe Stock-Assets in AEM {#usemanage}
 
 Mit dieser Funktion können Organisationen ihren Benutzern die Arbeit mit Adobe Stock-Assets in AEM Assets ermöglichen. Benutzer können aus der AEM-Benutzeroberfläche heraus Adobe Stock-Assets suchen und die erforderlichen Assets lizenzieren.
 
-Sobald ein Adobe Stock-Asset in AEM lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. In AEM können die Benutzer die Assets suchen und in der Vorschau anzeigen. die Assets kopieren und veröffentlichen; Assets im Markenportal freigeben; Zugriff und Verwendung der Assets über die AEM-Desktop-App; und so weiter.
+Sobald ein Adobe Stock-Asset in AEM lizenziert ist, kann es wie ein typisches Asset verwendet und verwaltet werden. Benutzer können die Assets in AEM suchen und eine Vorschau zu diesen anzeigen, Assets kopieren und veröffentlichen, die Assets in Brand Portal teilen, die Assets per AEM-Desktop-Programm aufrufen und verwenden und vieles mehr.
 
 ![Adobe Stock-Assets im AEM-Workspace durchsuchen und Ergebnisse filtern](assets/adobe-stock-search-results-workspace.png)
 
 *Abbildung: Suchen Sie nach Adobe Stock Assets und filtern Sie die Ergebnisse aus Ihrem AEM Workspace*
 
-**A.** Suchen Sie Assets, die den Assets ähneln, deren Adobe Stock ID bereitgestellt wird. **B.** Suchen Sie Assets, die Ihrer Form oder Ausrichtung entsprechen. **C.** Suchen Sie nach einem der unterstützten Asset-Typen. **D.** Öffnen oder minimieren Sie den Filterbereich. **E.** Lizenzieren und speichern Sie das ausgewählte Asset in AEM. **F.** Speichern Sie das Asset in AEM mit Wasserzeichen. **G.** Entdecken Sie Assets auf der Adobe Stock-Website, die dem ausgewählten Asset ähneln. **H.** Zeigen Sie die ausgewählten Assets auf der Adobe Stock-Website an. **I.** Anzahl der ausgewählten Assets aus den Suchergebnissen. **J.** Wechseln Sie zwischen Karten- und Listenansicht.
+**A.** Nach Assets suchen, die denen ähneln, deren Adobe Stock-ID angegeben wurde. **B.** Nach Assets suchen, die Ihrer Form- und Ausrichtungswahl entsprechen. **C.** Einen oder mehrere unterstützte Asset-Typen suchen **D.** Filterbereich anzeigen oder ausblenden **E.** Ausgewähltes Asset in AEM lizenzieren und speichern **F.** Asset mit Wasserzeichen in AEM speichern **G.** Assets auf der Adobe Stock-Website suchen, die dem ausgewählten Asset ähneln **H.** Ausgewählte Assets auf der Adobe Stock-Website anzeigen **I.** Anzahl ausgewählter Assets aus den Suchergebnissen **J.** Zwischen Karten- und Listenansicht wechseln
 
 ### Suchen von Assets {#find-assets}
 
-Ihre AEM-Benutzer können nach Assets in AEM und Adobe Stock suchen. Wenn die Suchposition nicht auf Adobe Stock beschränkt ist, werden die Suchergebnisse von AEM und Adobe Stock angezeigt.
+Ihre AEM-Benutzer können nach Assets in AEM und Adobe Stock suchen. Wenn die Suche nicht auf Adobe Stock beschränkt ist, werden Suchergebnisse aus AEM und Adobe Stock angezeigt.
 
 * Um nach Adobe Stock-Assets zu suchen, klicken Sie auf **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock durchsuchen]**.
 
-* To search for assets across Adobe Stock and AEM Assets, click the search icon ![search_icon](assets/search_icon.png).
+* Um in Adobe Stock und AEM Assets nach Assets zu suchen, klicken Sie auf das Suchsymbol ![Suchsymbol](assets/search_icon.png).
 
-Alternatively, start typing `Location: Adobe Stock` in the search bar to select Adobe Stock assets.  AEM bietet erweiterte Filterfunktionen für die gesuchten Assets, sodass Benutzer die erforderlichen Assets schnell mit Filtern wie unterstützten Assets, Bildausrichtung und lizenziertem Status einschließen können.
+Geben Sie alternativ `Location: Adobe Stock` in die Suchleiste ein, um Adobe Stock-Assets auszuwählen. AEM bietet erweiterte Filterfunktionen, mit denen Benutzer schnell die gewünschten Assets finden können. Hierzu stehen Filter, wie z. B. unterstützte Asset-Typen, Bildausrichtung und Lizenzstatus, zur Verfügung.
 
 >[!NOTE]
 >
->Von Adobe Stock durchsuchte Assets werden nur in AEM angezeigt. Adobe Stock-Assets werden erst abgerufen und im AEM-Repository gespeichert, nachdem Benutzer ein [Asset speichern](/help/assets/aem-assets-adobe-stock.md#saveassets) oder ein [lizenzieren](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets, die bereits in AEM gespeichert sind, werden angezeigt und hervorgehoben, um einfachen Zugriff und schnelle Referenzierung zu ermöglichen. Außerdem werden solche Assets mit einigen zusätzlichen Metadaten gespeichert, um die Quelle als Adobe Stock anzugeben.
+>In Adobe Stock durchsuchte Assets werden in AEM nur angezeigt. Adobe Stock-Assets werden nur dann abgerufen und im AEM-Repository gespeichert, wenn Benutzer [Assets speichern](/help/assets/aem-assets-adobe-stock.md#saveassets) oder [Assets lizenzieren](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets, die bereits in AEM gespeichert sind, werden angezeigt und hervorgehoben, um einfachen Zugriff und schnelle Referenzierung zu ermöglichen. Außerdem werden solche Assets mit einigen zusätzlichen Metadaten gespeichert, um die Quelle als Adobe Stock anzugeben.
 
 ![Suchfilter in AEM und in Suchergebnissen hervorgehobene Adobe Stock-Assets](assets/aem-search-filters2.jpg)
 
-*Abbildung: Suchfilter in AEM und hervorgehobene Adobe Stock-Assets in Suchergebnissen*
+*Abbildung: Suchen Sie Filter in AEM und markieren Sie Adobe Stock Assets in den Suchergebnissen.*
 
 ### Speichern und Anzeigen erforderlicher Assets {#saveassets}
 
@@ -102,7 +102,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 ![Metadaten und Lizenzreferenzen gespeicherter Assets anzeigen](assets/metadata_properties.jpg)
 
-*Abbildung: Anzeigen und Zugreifen auf Metadaten und Lizenzverweise gespeicherter Assets*
+*Abbildung: Ansicht und Zugriff auf Metadaten und Lizenzverweise auf gespeicherte Assets*
 
 ## Bekannte Einschränkungen {#known-limitations}
 
@@ -118,10 +118,9 @@ Es ist möglich, dass in AEM ein falscher Lizenztyp für Assets angezeigt wird. 
 
 Wenn ein Benutzer ein Lizenzreferenzfeld bearbeitet, werden die Lizenzreferenz-Informationen in AEM, aber nicht auf der Adobe Stock-Website aktualisiert. Ebenso werden Änderungen, die Benutzer an den Referenzfeldern auf der Adobe Stock-Website vornehmen, nicht mit AEM synchronisiert.
 
-## Verwandte Ressourcen {#related-resources}
+>[!MORELIKETHIS]
+>
+>* [Video-Tutorial zur Verwendung von Adobe Stock-Assets mit AEM Assets](https://helpx.adobe.com/de/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Hilfe zum Adobe Stock-Unternehmensplan](https://helpx.adobe.com/de/enterprise/using/adobe-stock-enterprise.html)
+>* [Häufig gestellte Fragen zu Adobe Stock](https://helpx.adobe.com/de/stock/faq.html)
 
-[Video-Tutorial zur Verwendung von Adobe Stock-Assets mit AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
-
-[Hilfe zum Adobe Stock-Unternehmensplan](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
-
-[Häufig gestellte Fragen zu Adobe Stock](https://helpx.adobe.com/stock/faq.html)
