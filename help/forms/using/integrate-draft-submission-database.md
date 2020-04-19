@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -79,7 +79,9 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    Angeben eines anderen Namens für die Datentabelle:
 
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Datenservice. Sie können die Werte der Datenquelle und Datentabellennamen ändern.
-   **Hinweis**: Wenn Sie die Tabellennamen ändern, geben Sie sie in der Form Portal-Konfiguration an.
+   >[!NOTE]
+   >
+   >Wenn Sie die Tabellennamen ändern, geben Sie sie in der Form Portal-Konfiguration an.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -326,7 +328,7 @@ Die Datenbankimplementierung von Forms Portal verwendet eine zusätzliche Metada
 Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen](/help/sites-developing/clientlibs.md) und das Skript zu verwenden:
 
 1. Melden Sie sich bei CRXDE an und navigieren Sie zu /etc/clientlibs/
-1. Erstellen Sie einen Knoten vom Typ **cq:ClientLibraryFolder** und geben Sie den Namen des Knotens an. Beispiel: `validation`. 
+1. Erstellen Sie einen Knoten vom Typ **cq:ClientLibraryFolder** und geben Sie den Namen des Knotens an. Beispiel: `validation`.
 
    Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
