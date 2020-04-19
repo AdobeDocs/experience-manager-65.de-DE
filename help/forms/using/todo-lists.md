@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -213,7 +213,11 @@ Sie können eine Aufgabe auf verschiedene Weise abschließen:
 * mit den Aktionen auf einer der Registerkarten
 * mit den im Formular integrierten Schaltflächen
 * über Ihre Aufgabenliste, ohne die Aufgabe zu öffnen
-Hinweis: Diese Option ist verfügbar, wenn beim Entwerfen eines Prozesses das Feld `isMustOpenToComplete` im `Assign Task`-Vorgang in Workbench nicht ausgewählt ist.
+
+>[!NOTE]
+>
+>This option is available if `isMustOpenToComplete` field is not selected in the `Assign Task` step in Workbench, while designing a process.
+
 * per E-Mail, wenn Sie E-Mail-Benachrichtigungen erhalten
 
 Wenn Sie eine Aufgabe abschließen, wird je nach Aufgabe möglicherweise ein Dialogfeld zum Bestätigen der Aktion angezeigt. Beispielsweise kann ein Dialogfeld angezeigt werden, in dem Sie aufgefordert werden, die Gültigkeit der eingegebenen Informationen zu bestätigen.
@@ -271,7 +275,9 @@ Legen Sie zunächst Ihre AEM Forms Workspace-Voreinstellungen fest, um E-Mail-Be
 
 Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AEM Forms Workspace geöffnet wird, eine Anlage mit dem Formular, das für die Aufgabe verwendet wird, oder Aktionen zum Abschließen der Aufgabe per E-Mail. Wenn die E-Mail-Nachricht ein Formular mit integrierten Schaltflächen zum Abschließen der Aufgabe enthält, können Sie das Formular öffnen und die Aufgabe abschließen. Wenn die E-Mail-Nachricht Aktionen zum Abschließen der Aufgabe enthält, können Sie die Aufgabe abschließen, indem Sie auf die Aktionen in der E-Mail klicken oder die E-Mail beantworten und die entsprechende Aktion als erste Zeile des E-Mail-Textes eingeben.
 
-**Hinweis**: Informationen zum Konfigurieren des Arbeitsbereichs für die Verwendung der entsprechenden E-Mail-Vorlagen finden Sie im [AEM Forms JEE Administrationshandbuch](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>[!NOTE]
+>
+>To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgabenliste in AEM Forms Workspace entfernt.
 
