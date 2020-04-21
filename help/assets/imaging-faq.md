@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 3e37ee6da263bb12eb0efea85213987e8286bc60
+source-git-commit: 7daf89f7e69d3e2e938780ff98fd2df46723e708
 
 ---
 
@@ -19,16 +19,16 @@ source-git-commit: 3e37ee6da263bb12eb0efea85213987e8286bc60
 
 Die Smart-Imaging-Technologie nutzt die AI-Funktionen von Adobe Sensei und arbeitet mit vorhandenen &quot;Bildvorgaben&quot;zusammen, um die Performance von Image-Versänden zu verbessern, indem Bildformat, -größe und -qualität automatisch auf der Grundlage der Browserfunktionen des Kunden optimiert werden.
 
-Smart Imaging profitiert auch von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigen CDN-Premium-Dienst von Adobe. Dieser Dienst findet die optimale Internetverbindung zwischen Servern, Netzwerken und Peering Points, die eine niedrigste Latenzzeit und/oder Paketverlustrate als die Standardverbindung im Internet haben.
+Smart Imaging profitiert auch von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigen CDN-Premium-Dienst von Adobe. Dieser Dienst ermittelt die optimale Internet-Route zwischen Servern, Netzwerken und Austauschpunkten mit niedrigster Latenz und/oder Paketverlustrate im Vergleich zur Standardroute im Internet.
 
 Die folgenden Beispiele für Bild-Asset-Beispiele zeigen die hinzugefügte Optimierung der intelligenten Bildbearbeitung:
 
-| Image<br>(URL) | Miniatur | Größe<br> (JPEG) | Größe (WebP)<br> (mit Smart Imaging) | % Reduktion |
+| Image<br>(URL) | Miniaturansicht   | Größe<br> (JPEG) | Größe (WebP)<br> (mit Smart Imaging) | % Reduktion |
 |---|---|---|---|---|
-| [Bild 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
-| [Bild 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
-| [Bild 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
-| [Bild 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
+| [Bild 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
+| [Bild 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
+| [Bild 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
+| [Bild 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | Durchschnitt = 51 % |
 
 Ähnlich wie oben führte Adobe auch einen Test mit 7009 URLs von Live-Kunden durch und konnte aufgrund der Smart Imaging-Funktion eine durchschnittlich 38%ige weitere Dateigrößenoptimierung für JPEG und eine weitere Optimierung der Dateigröße für PNG mit WebP-Format erzielen.
@@ -66,35 +66,34 @@ Smart Imaging verwendet Adobe Sensei, um Bilder je nach Browserfunktionalität a
 
 Wenn die ursprüngliche Bildgröße kleiner ist als die von Smart Imaging produzierte, wird das Originalbild bereitgestellt.
 
-## What image formats are supported? {#what-image-formats-are-supported}
+## Welche Bildformate werden unterstützt?    {#what-image-formats-are-supported}
 
 Die folgenden Bildformate werden für Smart Imaging unterstützt:
 * JPEG
 * PNG
 
-Bei allen anderen in einer URL genannten Formaten sollten Sie die Smart-Imaging-Funktion explizit deaktivieren.  Hängen Sie Modifikator `bfc=off` an die URL für andere Dateiformate als JPEG und PNG an. Sie können dies mit einer der folgenden Methoden erreichen:
+<!-- For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
 
-* Verwenden Sie einen Regelsatz, wenn der `fmt` Modifikator in der URL erwähnt wird.
-* Hängen Sie im Feld URL-Modifikatoren der betreffenden Vorgaben an.
+* Use a ruleset if the `fmt` modifier is mentioned in the URL. 
+* Append in URL modifiers field of the presets concerned.
 
-Adobe arbeitet an einer dauerhaften Fehlerbehebung, bei der Sie nicht `bfc=off` für `fmt !=JPEG` oder `fmt !=PNG`anhängen müssen. Dieses Thema wird aktualisiert, nachdem die Fehlerbehebung abgeschlossen wurde.
-
+Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
 ## How does Smart Imaging work with our existing image presets that are already in use? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Smart Imaging funktioniert mit Ihren vorhandenen &quot;Bildvorgaben&quot; und beachtet alle Bildeinstellungen mit Ausnahme von Qualität (qlt) und Format (fmt), wenn das angeforderte Dateiformat JPEG oder PNG ist. Bei der Formatkonvertierung wird die vollständige visuelle Genauigkeit, wie von Ihren Bildvorgabeeinstellungen definiert, bei einer kleineren Dateigröße beibehalten. Wenn die ursprüngliche Bildgröße kleiner ist als die von Smart Imaging produzierte, wird das Originalbild bereitgestellt.
+Smart Imaging funktioniert mit Ihren vorhandenen &quot;Bildvorgaben&quot; und beachtet alle Bildeinstellungen mit Ausnahme von Qualität (qlt) und Format (fmt), wenn das angeforderte Dateiformat JPEG oder PNG ist. Bei der Formatkonvertierung bleibt die Wiedergabetreue vollständig erhalten, und zwar gemäß den von Ihnen für die Bildvorgabe gewählten Einstellungen – jedoch bei kleinerer Dateigröße. Wenn die ursprüngliche Bildgröße kleiner ist als die von Smart Imaging produzierte, wird das Originalbild bereitgestellt.
 
-Wenn Ihre Bildvorgaben zum Zurückgeben verwendet werden `fmt !=JPEG` oder `fmt !=PNG`müssen Sie sicherstellen, dass Sie `bfc=off` im Feld &quot;Vorgabe-Modifikator&quot;das angeforderte Dateiformat zurückgeben.
+<!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
 Nein. Smart Imaging funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben. Für Smart Imaging müssen Sie außerdem keinen Code auf Ihrer Website hinzufügen, um den Browser eines Benutzers zu erkennen. All dies wird automatisch verarbeitet.
 
-Wie bereits erwähnt, unterstützt Smart Imaging nur JPEG- und PNG-Bildformate. Bei anderen Formaten müssen Sie den Modifikator an die `bfc=off` URL anhängen, wie oben beschrieben.
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 Also, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) um die Voraussetzungen für Smart Imaging zu verstehen.
 
-## Funktioniert Smart Mmaging mit HTTPS? How about HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## Funktioniert Smart Mmaging mit HTTPS? Und mit HTTP/2?    {#does-smart-imaging-working-with-https-how-about-http}
 
 Smart Imaging funktioniert mit Bildern, die über HTTP oder HTTPS bereitgestellt werden. Darüber hinaus funktioniert es auch über HTTP/2.
 
@@ -102,12 +101,12 @@ Smart Imaging funktioniert mit Bildern, die über HTTP oder HTTPS bereitgestellt
 
 Um Smart Imaging verwenden zu können, müssen die Dynamic Media Classic- oder Dynamic Media-Daten Ihrer Firma für AEM die folgenden Anforderungen erfüllen:
 
-* Verwenden Sie das Adobe-gebündelte CDN (Content Versand Network) als Teil Ihrer Lizenz.
+* Sie verwenden das im Adobe-Bundle enthaltene CDN (Content Delivery Network) im Rahmen Ihrer Lizenz.
 * Verwenden Sie eine dedizierte Domäne (z. B. `images.company.com` oder `mycompany.scene7.com`), keine generische Domäne (z. B. `s7d1.scene7.com`, `s7d2.scene7.com`oder `s7d13.scene7.com`).
 
- Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an. 
+ Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an.
 
-Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungsservername]**.  Wenn Sie derzeit eine generische Domäne verwenden, können Sie beim Senden eines Tickets für den technischen Support beantragen, dass Sie im Rahmen dieser Transition zu Ihrer eigenen benutzerdefinierten Domäne wechseln.
+Tippen Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Domäne verwenden, können Sie beim Senden eines Tickets für den technischen Support beantragen, dass Sie im Rahmen dieser Transition zu Ihrer eigenen benutzerdefinierten Domäne wechseln.
 
 Ihre erste benutzerdefinierte Domäne ist mit einer Lizenz für dynamische Medien kostenfrei.
 
@@ -121,33 +120,33 @@ Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine 
    1. Name des Hauptansprechpartners, E-Mail, Telefon.
    1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
-       Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an. 
+       Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an.
 
-      Klicken Sie auf **[!UICONTROL Setup > Anwendungssetup > Allgemeine Einstellungen]**.
+       Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**.
 
-      Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungsservername]**.  
-   1. Vergewissern Sie sich, dass Sie CDN über Adobe und nicht verwaltet mit einer direkten Beziehung nutzen. 
-   1. Vergewissern Sie sich, dass Sie eine dedizierte Domäne wie `images.company.com` oder `mycompany.scene7.com`verwenden und keine generische Domäne wie `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+      Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**.
+   1. Vergewissern Sie sich, dass Sie CDN über Adobe und nicht verwaltet mit einer direkten Beziehung nutzen.
+   1. Vergewissern Sie sich, dass Sie eine dedizierte Domäne wie `images.company.com` oder `mycompany.scene7.com` und nicht eine generische Domäne wie `s7d1.scene7.com`, `s7d2.scene7.com` oder `s7d13.scene7.com` verwenden.
 
-       Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an. 
+       Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an.
 
-      Klicken Sie auf **[!UICONTROL Setup > Anwendungssetup > Allgemeine Einstellungen]**.
+       Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen]**.
 
-      Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungsservername]**.  Wenn Sie derzeit eine allgemeine Dynamic Media Classic-Domäne verwenden, können Sie im Rahmen dieser Transition den Übergang zu Ihrer eigenen benutzerdefinierten Domäne anfordern.
+      Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media Classic-Domäne verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domäne beantragen.
    1. Geben Sie an, ob dies auch über HTTP/2 funktioniert.
 
 1. Der technische Support fügt Sie je nach der Reihenfolge, in der Anfragen eingereicht wurden, zur Smart Imaging-Liste Wait hinzu.
 1. Wenn Adobe Ihre Anfrage bearbeiten kann, setzt sich der Support mit Ihnen zwecks Koordinierung und Vereinbarung eines Zieldatums in Verbindung. 
 1. **Optional**: Sie haben die Möglichkeit, intelligente Bildbearbeitung in Staging zu testen, bevor Adobe die neue Funktion in die Produktion einbringt.
 1. Bei Abschluss werden Sie vom Support benachrichtigt. 
-1. Zur Optimierung der Leistung von Smart Imaging empfiehlt Adobe die Einstellung der &quot;Time To Live&quot;(TTL) auf 24 Stunden oder länger. Die TTL definiert, wie lange Assets vom CDN zwischengespeichert werden. So ändern Sie diese Einstellung: 
+1. Zur Optimierung der Leistung von Smart Imaging empfiehlt Adobe die Einstellung der &quot;Time To Live&quot;(TTL) auf 24 Stunden oder länger. Die TTL-Einstellung definiert, wie lange Assets vom CDN-Dienst im Cache gespeichert werden. So ändern Sie diese Einstellung:
 
-   1. If you use Dynamic Media Classic, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Stellen Sie den Wert **[!UICONTROL Standardeinstellung für Time-To-Live des Client-Cache]** auf mindestens 24 ein.
+   1. Klicken Sie bei Verwendung von Dynamic Media Classic auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinstellungen > Image-Server]**. Stellen Sie den Wert **[!UICONTROL Standardeinstellung für Time-To-Live des Client-Cache]** auf mindestens 24 ein.
    1. Wenn Sie dynamische Medien verwenden, befolgen Sie [diese Anweisungen](config-dynamic.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
 
 ## When can I expect my account to be enabled with Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Die Anfragen werden in der Reihenfolge ihres Eingangs beim technischen Support gemäß Warteliste bearbeitet. 
+Die Anfragen werden in der Reihenfolge ihres Eingangs beim technischen Support gemäß Warteliste bearbeitet.
 
 >[!NOTE]
 Es kann eine lange Vorlaufzeit geben, da bei der Aktivierung von Smart Imaging Adobe den Cache leeren muss. Daher kann nur jeweils eine geringe Anzahl von Kunden gleichzeitig umgestellt werden. 
@@ -158,10 +157,10 @@ Eine Kundenwebseite ist nicht gefährdet. Sie sollten sich jedoch bewusst sein, 
 
 Zu Beginn der Übergangsphase treffen die nicht im Cache gespeicherten Bilder direkt auf die Adobe-Ursprungsserver, bis der Cache neu erstellt wurde.  Aus diesem Grund führt Adobe nur wenige Umstellungen zugleich durch, wodurch eine akzeptable Leistung aufrechterhalten werden kann, wenn Anforderungen aus unserer Quelle abgerufen werden. Bei den meisten Kunden ist der CDN-Cache innerhalb von 1 bis 2 Tagen vollständig neu aufgebaut.
 
-## Wie kann ich feststellen, ob die intelligente Bildbearbeitung erwartungsgemäß funktioniert?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## Wie kann ich feststellen, ob die intelligente Bildbearbeitung erwartungsgemäß funktioniert? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Laden Sie nach der Konfiguration Ihres Kontos mit der intelligenten Bildbearbeitung eine URL für das Bild für dynamische Medien (Scene7)/Dynamische Medien in den Browser.
-1. Öffnen Sie den Chrome-Entwicklerbereich, indem Sie im Browser auf **[!UICONTROL Anzeigen > Entwickler > Entwickler-Tools]** klicken.  Oder wählen Sie ein beliebiges Browser-Entwicklerwerkzeug Ihrer Wahl.
+1. Öffnen Sie den Chrome-Entwicklerbereich, indem Sie im Browser auf **[!UICONTROL Anzeigen > Entwickler > Entwickler-Tools]** klicken. Oder wählen Sie ein beliebiges Browser-Entwicklerwerkzeug Ihrer Wahl.
 
 1. Stellen Sie sicher, dass der Cache deaktiviert ist, wenn die Entwickler-Tools geöffnet sind. 
 
