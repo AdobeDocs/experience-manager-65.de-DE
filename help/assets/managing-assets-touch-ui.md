@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
 
 ---
 
@@ -478,15 +478,15 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
 1. Tippen oder klicken Sie auf das Asset, um die Asset-Seite zu öffnen.
 
-   ![chlimage_1-220](assets/chlimage_1-15.png)
+   ![Assets-Detailseite zum Verwalten von Darstellungen](assets/chlimage_1-15.png)
 
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie in der Liste **[!UICONTROL Ausgabeformate]** aus.
 
-   ![renditions_menu](assets/renditions_menu.png)
+   ![Linke Leiste zum Öffnen des Menüs und Auswahl der Option &quot;Darstellungen&quot;](assets/renditions_menu.png)
 
 1. Im Bereich **[!UICONTROL Ausgabeformate]** wird die Liste der für das Asset generierten Ausgabeformate angezeigt.
 
-   ![renditions_panel](assets/renditions_panel.png)
+   ![Bedienfeld &quot;Darstellungen&quot;auf der Seite &quot;Assets Detail&quot;](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    Navigieren Sie zur Seite mit Asset-Details und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Ausgabeformat hinzufügen]**, um ein neues Ausgabeformat für das Asset hochzuladen.
 
-   ![chlimage_1-221](assets/chlimage_1-16.png)
+   ![Symbol &quot;Darstellung&quot;Hinzufügen, um eine neue Darstellung hochzuladen](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    Ebenso können Sie das Bild der Anmerkungsseite durch Überlagern von `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` anpassen.
 
-   ![chlimage_1-222](assets/chlimage_1-17.png)
+   ![Overlay RenderingPicker-Knoten in CRXDE zum Anpassen des Bilds der Anmerkungsseite](assets/chlimage_1-17.png)
 
    Navigieren Sie zur Konfiguration der Ausgabeformatabmessungen für ein Video-Asset zum Knoten `videopicker` im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
 
@@ -536,7 +536,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
 1. Wählen Sie das Asset und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Löschen]**.
 
-   ![delete_icon](assets/delete_icon.png)
+   ![Symbol löschen](assets/delete_icon.png)
 
 1. Klicken Sie im Bestätigungsdialogfeld auf:
 
@@ -584,11 +584,11 @@ Siehe [Herunterladen von Assets aus AEM](/help/assets/download-assets-from-aem.m
 
 1. Wählen Sie das Asset/den Ordner aus, dessen Veröffentlichung Sie rückgängig machen möchten, und klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Veröffentlichung rückgängig machen]**.
 
-   ![manage_publication](assets/manage_publication.png)
+   ![Symbol &quot;Veröffentlichung verwalten&quot;](assets/manage_publication.png)
 
 1. Wählen Sie die Aktion **[!UICONTROL Veröffentlichung rückgängig machen]** aus der Liste aus.
 
-   ![unpublish_action](assets/unpublish_action.png)
+   ![Aktion rückgängig machen](assets/unpublish_action.png)
 
 1. Um die Veröffentlichung des Assets später rückgängig zu machen, wählen Sie **[!UICONTROL Veröffentlichung später rückgängig machen]** und anschließend ein Datum aus, an dem die Veröffentlichung des Assets rückgängig gemacht werden soll.
 1. Legen Sie ein Datum fest, an dem die Assets aus der Veröffentlichungsumgebung entfernt werden sollen.
@@ -610,11 +610,11 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Wählen Sie in der Assets-Benutzeroberfläche einen Ordner aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol „Eigenschaften“, um die Eigenschaftsseite anzuzeigen.
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Berechtigungen]** unter **[!UICONTROL Geschlossene Benutzergruppe]** Mitglieder oder Gruppen hinzu.
 
-   ![add_user](assets/add_user.png)
+   ![Hinzufügen Benutzer in geschlossenen Benutzergruppen](assets/add_user.png)
 
 1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie anschließend den Pfad zur Anmeldeseite in AEM aus und speichern Sie die Änderungen.
 
-   ![login_page](assets/login_page.png)
+   ![Anmeldeseite aktivieren und auswählen, die beim Ordner mit Benutzerzugriff angezeigt werden soll](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -642,13 +642,13 @@ You can view, navigate through, and select assets with any of the available view
 
 In der Ansicht &quot;Ansicht der Liste&quot;und &quot;Spalte&quot;wird die Option &quot; **[!UICONTROL Auswählen]** &quot;angezeigt, wenn Sie den Mauszeiger über die Asset-Miniaturansicht bewegen.
 
-![select_quick_in_listview](assets/select_quick_in_listview.png)
+![Assets in der Ansicht Liste auswählen](assets/select_quick_in_listview.png)
 
-![select_quick_in_columnView](assets/select_quick_in_columnview.png)
+![Assets in der Ansicht der Spalte auswählen](assets/select_quick_in_columnview.png)
 
 In der Ansicht der Karte wird die Option &quot; **[!UICONTROL Auswählen]** &quot;als Schnellaktion angezeigt.
 
-![select_quick_action](assets/select_quick_action.png)
+![Schnellaktion bei der Ansicht der Karte auswählen](assets/select_quick_action.png)
 
 Beim Durchsuchen eines Ordners oder einer Sammlung in der Benutzeroberfläche &quot;Assets&quot;in einem Browser können Sie alle angezeigten oder geladenen Assets mit der Option &quot;Alle [!UICONTROL auswählen] &quot;in der oberen rechten Ecke auswählen. Zunächst werden nur 100 Assets in der Ansicht geladen und 200 in der Ansicht der Liste. Weitere Assets werden beim Bildlauf auf der Suchergebnisseite in Ansicht geladen. Mit der Option &quot;Alle [!UICONTROL auswählen] &quot;werden nur die geladenen Assets ausgewählt.
 
@@ -667,36 +667,36 @@ Mit den Bearbeitungswerkzeugen in der Oberfläche von AEM Assets können Sie kl
    * Wählen Sie das Asset aus und klicken oder tippen Sie dann in der Symbolleiste auf das Symbol **[!UICONTROL Bearbeiten]**.
    * Tippen oder klicken Sie auf das Symbol **[!UICONTROL Bearbeiten]**, das über einem Asset in der Kartenansicht angezeigt wird.
    * Klicken Sie in der Symbolleiste auf der Asset-Seite auf das Symbol **[!UICONTROL Bearbeiten]**.
-   ![edit_icon](assets/edit_icon.png)
+   ![Symbol in der Symbolleiste bearbeiten](assets/edit_icon.png)
 
 1. Um das Bild zu beschneiden, tippen oder klicken Sie auf das Symbol **Zuschneiden**.
 
-   ![chlimage_1-226](assets/chlimage_1-22.png)
+   ![Symbol &quot;Beschneiden&quot;](assets/chlimage_1-22.png)
 
 1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
 
-   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
+   ![Optionen für das Zuschneiden](/help/assets/assets/chlimage_1-23.png)
 
 1. Wählen Sie den zuzuschneidenden Bereich und ändern Sie die Größe oder Position auf dem Bild.
 1. Verwenden Sie das Symbol **Fertig** (in der rechten oberen Ecke), um das Bild zu beschneiden. Durch Klicken auf **Fertigstellen** wird auch die Neuerstellung von Ausgabeformaten ausgelöst.
 
-   ![chlimage_1-228](assets/chlimage_1-24.png)
+   ![Fertigstellungssymbol](assets/chlimage_1-24.png)
 
 1. Mit den Symbolen **Rückgängig** und **Wiederherstellen** oben rechts können Sie das nicht zugeschnittene Bild wiederherstellen bzw. das zugeschnittene Bild beibehalten.
 
-   ![chlimage_1-229](assets/chlimage_1-25.png)
+   ![Rückgängigmachen und Wiederholen von Symbolen](assets/chlimage_1-25.png)
 
 1. Tippen oder klicken Sie auf das entsprechende Drehsymbol, um das Bild im oder entgegen dem Uhrzeigersinn zu drehen.
 
-   ![chlimage_1-230](assets/chlimage_1-26.png)
+   ![Drehsymbole im Uhrzeigersinn und gegen den Uhrzeigersinn](assets/chlimage_1-26.png)
 
 1. Tippen oder klicken Sie auf das entsprechende Spiegelsymbol, um das Bild horizontal oder vertikal zu spiegeln.
 
-   ![chlimage_1-231](assets/chlimage_1-27.png)
+   ![Symbole zum horizontalen oder vertikalen Spiegeln des Bildes](assets/chlimage_1-27.png)
 
 1. Tippen oder klicken Sie auf das Symbol **Fertigstellen**, um die Änderungen zu speichern.
 
-   ![chlimage_1-232](assets/chlimage_1-28.png)
+   ![Fertigstellungssymbol](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -739,11 +739,11 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
    * [Schnellaktionen](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben  oder zur Asset-Seite navigiert sind
-   ![chlimage_1-233](assets/chlimage_1-29.png)
+   ![Anmerkungssymbol](assets/chlimage_1-29.png)
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
-   ![chlimage_1-234](assets/chlimage_1-30.png)
+   ![Kommentarfeld im Dialogfeld &quot;Hinzufügen Anmerkung&quot;](assets/chlimage_1-30.png)
 
 1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Beispiel: Um Aaron MacDonald über eine Anmerkung zu benachrichtigen, geben Sie „@aa“ ein. Vorschläge für alle übereinstimmenden Benutzer werden in einer Liste angezeigt. Wählen Sie die E-Mail-Adresse von Aaron in der Liste aus, um ihn über den Kommentar zu informieren. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
 
@@ -751,11 +751,11 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    >
    >Für einen Benutzer ohne Administratorberechtigung sind Vorschläge nur dann sichtbar, wenn er über eine Leseberechtigung in */home* in Crx-de verfügt.
 
-   ![chlimage_1-235](assets/chlimage_1-31.png)
+   ![E-Mail-Adresse des Benutzers angeben und Kommentar hinzufügen, um den Benutzer zu benachrichtigen](assets/chlimage_1-31.png)
 
 1. Nachdem Sie die Anmerkung hinzugefügt haben, klicken Sie auf **[!UICONTROL Hinzufügen]**, um sie zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
 
-   ![chlimage_1-236](assets/chlimage_1-32.png)
+   ![Schaltfläche &quot;Hinzufügen&quot;zum Speichern einer Anmerkung](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -770,7 +770,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 1. Wenn Sie eine andere Farbe auswählen möchten, um zwischen Benutzern zu unterscheiden, klicken/tippen Sie auf das Symbol „Profil“. Anschließend klicken/tippen Sie auf **[!UICONTROL Eigene Voreinstellungen]**.
 
-   ![Wählen Sie das Symbol &quot;Benutzereinstellungen&quot;und dann &quot;Meine Voreinstellungen&quot;aus, um die Benutzereinstellungen zu öffnen](assets/User-profile-preferences.png)
+   ![Wählen Sie das Symbol &quot;Benutzereinstellungen&quot;und anschließend &quot;Meine Voreinstellungen&quot;, um die Benutzereinstellungen zu öffnen](assets/User-profile-preferences.png)
 
    Geben Sie die gewünschte Farbe im Feld **[!UICONTROL Anmerkungsfarbe]** an und klicken/tippen Sie auf **[!UICONTROL Annehmen]**.
 
@@ -786,15 +786,15 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 1. Tippen oder klicken Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Timeline]** aus der Liste aus.
 
-   ![chlimage_1-239](assets/chlimage_1-35.png)
+   ![Auf dem GlobalNav-Symbol verfügbare Optionen](assets/chlimage_1-35.png)
 
 1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Timeline **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
 
-   ![chlimage_1-240](assets/chlimage_1-36.png)
+   ![Alle Listen in der Zeitschiene anzeigen](assets/chlimage_1-36.png)
 
    Tippen oder klicken Sie im Bedienfeld **[!UICONTROL Timeline]** auf einen Kommentar, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
-   ![chlimage_1-241](assets/chlimage_1-37.png)
+   ![Zeitschienenbedienfeld zur Ansicht Anmerkung zum Bild](assets/chlimage_1-37.png)
 
    Tippen oder klicken Sie auf **[!UICONTROL Löschen]**, um einen bestimmten Kommentar zu löschen.
 
@@ -814,15 +814,15 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
 1. Zum Drucken bestimmter Anmerkungen wählen Sie die Anmerkungen aus der Timeline aus.
 
-   ![chlimage_1-242](assets/chlimage_1-38.png)
+   ![Wählen Sie eine Anmerkung in der Zeitleiste aus, um sie zu drucken](assets/chlimage_1-38.png)
 
    Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Timeline aus.
 
-   ![chlimage_1-243](assets/chlimage_1-39.png)
+   ![Um nur den Überprüfungsstatus der Anmerkung zu drucken, wählen Sie ihn in der Zeitleiste aus](assets/chlimage_1-39.png)
 
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Drucken]**.
 
-   ![chlimage_1-244](assets/chlimage_1-40.png)
+   ![Drucksymbol in der Symbolleiste](assets/chlimage_1-40.png)
 
 1. Wählen Sie im Dialogfeld „Drucken“ die Position, deren Anmerkungen/Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen/den Status in der linken oberen Ecke der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **Oben links**. Sie ist standardmäßig aktiviert.
 
@@ -836,11 +836,11 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Drucken]**. Je nach der Option, die Sie in Schritt 2 wählen, zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **Oben links** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
-   ![chlimage_1-246](assets/chlimage_1-42.png)
+   ![Anmerkungs- und Überprüfungsstatus in der erstellten PDF](assets/chlimage_1-42.png)
 
 1. Laden Sie die PDF-Datei herunter oder drucken Sie sie mithilfe der Optionen in der rechten oberen Ecke.
 
-   ![chlimage_1-247](assets/chlimage_1-43.png)
+   ![Download- und Druckoptionen für PDF](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -848,7 +848,7 @@ Zum Drucken der Anmerkungen und des Prüfungsstatus tippen/klicken Sie auf das S
 
    Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern (z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status), öffnen Sie in Configuration Manager die **[!UICONTROL Konfiguration für PDF-Anmerkungen]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farbcode. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-44.png)
+   ![Konfiguration zum Drucken von Asset-Anmerkungen im PDF-Dokument](assets/chlimage_1-44.png)
 
    Kehren Sie zu der gerenderten PDF-Datei zurück und aktualisieren Sie sie. Der aktualisierte PDF-Datei spiegelt die von Ihnen vorgenommenen Änderungen wider.
 
@@ -905,7 +905,7 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
    * Klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen. Fügen Sie optional eine Beschriftung und einen Kommentar hinzu.
    * Klicken Sie auf **[!UICONTROL Erstellen]** , um eine Version zu erstellen.
 
-      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+      ![Asset-Version von der Seitenleiste erstellen](assets/create-new-version-from-timeline.png)
 
       *Abbildung: Erstellen Sie eine Version eines Assets über die linke[!UICONTROL Zeitleiste].*
 
@@ -914,7 +914,7 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
    * Klicken Sie auf **[!UICONTROL Alle]** in der [!UICONTROL Zeitleiste]anzeigen.
    * Klicken Sie auf **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden in der linken Seitenleiste aufgeführt.
 
-      ![versions_option](assets/versions_option.png)
+      ![ Option &quot;Versionen auswählen&quot;in der Zeitleiste](assets/versions_option.png)
 
    * Wählen Sie eine bestimmte Version des Assets aus und klicken Sie auf **[!UICONTROL Vorschau Version]**.
 
@@ -923,7 +923,7 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
    * Klicken Sie auf eine Version des Assets. Fügen Sie optional eine Beschriftung und einen Kommentar hinzu.
    * Click **[!UICONTROL Revert to this Version]**.
 
-      ![select_version](assets/select_version.png)
+      ![Wählen Sie eine Version aus, um sie wiederherzustellen](assets/select_version.png)
 
       *Abbildung: Wählen Sie eine Version aus und stellen Sie sie wieder her. Es wird die aktuelle Version, die dann den DAM-Benutzern zur Verfügung steht.*
 
