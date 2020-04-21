@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
+source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
 
 ---
 
@@ -34,6 +34,7 @@ source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
    + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
    + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
    + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
+   + [Migration von dynamischen Medien - Hybridmodus zu dynamischen Medien - S7-Modus](migrate-from-hybrid-to-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Verwalten von Viewer-Vorgaben für Dynamic Media](managing-viewer-presets.md)
