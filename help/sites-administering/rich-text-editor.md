@@ -1,13 +1,9 @@
 ---
-title: 'Rich-Text-Editor zum Erstellen von Inhalten in AEM konfigurieren '
-description: Hier erfahren Sie, wie Sie den AEM Rich Text Editor so konfigurieren, dass Inhalte in AEM erstellt werden.
-uuid: 4f87745e-586a-4cba-887b-391e37520ffc
+title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Manager zu erstellen.
+description: Hier erfahren Sie, wie Sie den Rich-Text-Editor von Adobe Experience Manager konfigurieren, um Inhalte in Adobe Experience Manager zu erstellen.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
-docset: aem65
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -16,19 +12,17 @@ source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 Der Rich-Text-Editor (RTE) bietet Autoren eine große Bandbreite an Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleiste und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt.
 
-Der RTE kann konfiguriert werden, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Informationen zur Verwendung der Authoring-Funktionen des RTE finden Sie unter [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-authoring/rich-text-editor.md).
+Informationen zur Verwendung der Authoring-Funktionen des RTE finden Sie unter [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-authoring/rich-text-editor.md). Der RTE kann konfiguriert werden, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Der folgende Arbeitsablauf zeigt die empfohlene Reihenfolge zum Abschluss der RTE-Konfigurationsschritte in Experience Manager.
 
-Der folgende Workflow veranschaulicht die empfohlene Reihenfolge für die RTE-Konfigurationsaufgaben.
-
-![Sequenz der Schritte zum Konfigurieren der RTE](assets/rte_workflow_v1.png)
+![Sequenz der Schritte zum Konfigurieren von RTE](assets/rte_workflow_v1.png)
 
 *Abbildung: Sequenz der Schritte zum Konfigurieren von RTE*
 
 ## Grundlegendes zur Touch-optimierten und klassischen Benutzeroberfläche {#understand-touch-enabled-ui-and-classic-ui}
 
-Die Touch-aktivierte Benutzeroberfläche ist die Standard-Benutzeroberfläche für AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. Diese Benutzeroberfläche unterscheidet sich deutlich von der ursprünglichen klassischen Benutzeroberfläche.
+Die Touch-aktivierte Benutzeroberfläche ist die Standard-Benutzeroberfläche für Experience Manager. Adobe hat eine Touch-fähige Benutzeroberfläche mit [reaktionsfähigem Design](/help/sites-authoring/responsive-layout.md) für die Authoring-Umgebung eingeführt. Die Touch-fähige Benutzeroberfläche ist für Touch- und Desktop-Geräte konzipiert. Die Oberfläche unterscheidet sich erheblich von der ursprünglichen klassischen Benutzeroberfläche.
 
-![Rich-Text-Editor-Symbolleiste in der Touch-optimierten Benutzeroberfläche](assets/chlimage_1-35.png)
+![Rich-Text-Editor-Symbolleiste in der Touch-fähigen Benutzeroberfläche](assets/chlimage_1-35.png)
 
 *Abbildung: Rich-Text-Editor-Symbolleiste in der Touch-fähigen Benutzeroberfläche*
 
@@ -39,14 +33,14 @@ Die Touch-aktivierte Benutzeroberfläche ist die Standard-Benutzeroberfläche f�
 >[!MORELIKETHIS]
 >
 >* [Empfehlungen für die Benutzeroberfläche](/help/sites-deploying/ui-recommendations.md).
->* Informationen zur eingestellten Unterstützung für die klassische Benutzeroberfläche finden Sie in den [Versionshinweisen für AEM 6.5](/help/release-notes/deprecated-removed-features.md).
+>* About deprecating the Classic UI, see [Experience Manager 6.5 release notes](/help/release-notes/deprecated-removed-features.md)
 >* For difference between the UIs, see [Touch UI and Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Details zur Touch-optimierten Benutzeroberfläche finden Sie unter [Konzepte der Touch-basierten AEM-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
+>* To understand the Touch-enabled UI in detail, see [Concepts of Experience Manager Touch UI](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Verschiedene Bearbeitungsmodi {#editingmodes}
 
-Autoren können Textinhalte in AEM mithilfe der verschiedenen Komponentenmodi erstellen und bearbeiten. Die Symbolleistenoptionen für das Erstellen und Formatieren von Inhalten und das Benutzererlebnis von RTE-aktivierten Komponenten in verschiedenen Bearbeitungsmodi variieren je nach RTE-Konfiguration.
+Autoren können Textinhalte in Experience Manager mit den verschiedenen Modi von Komponenten erstellen und bearbeiten. Die Symbolleistenoptionen für das Erstellen und Formatieren von Inhalten und das Benutzererlebnis von RTE-aktivierten Komponenten in verschiedenen Bearbeitungsmodi variieren je nach RTE-Konfiguration.
 
 | Bearbeitungsmodus | Bearbeitungsbereich | Für die Aktivierung empfohlene Funktionen | Touch-optimierte Benutzeroberfläche | Klassische Benutzeroberfläche |
 |--- |--- |--- |--- |--- |
@@ -71,7 +65,7 @@ In der klassischen Benutzeroberfläche ermöglicht ein langsamer Doppelklick auf
 
 ### Bearbeitung im Vollbildmodus {#full-screen-editing}
 
-AEM-Komponenten können im Vollbildmodus geöffnet werden. Dabei wird der Seiteninhalt überdeckt und der gesamte Bildschirm ausgefüllt. Die Bearbeitung im Vollbildmodus ist quasi eine detaillierte Version der Inline-Bearbeitung, da sie die meisten Bearbeitungsmöglichkeiten bietet. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Experience Manager-Komponenten können in Ansicht im Vollbildmodus geöffnet werden, die den Seiteninhalt ausblendet und den verfügbaren Bildschirm einnimmt. Die Bearbeitung im Vollbildmodus ist quasi eine detaillierte Version der Inline-Bearbeitung, da sie die meisten Bearbeitungsmöglichkeiten bietet. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
 Im Dialogfeld-Vollbildmodus stehen neben einer detaillierten RTE-Symbolleiste auch die in einem Dialogfeld verfügbaren Optionen und Komponenten zur Verfügung. Dies gilt nur für ein Dialogfeld, das neben anderen Komponenten einen RTE enthält.
 
@@ -109,7 +103,6 @@ In der folgenden Tabelle sind die aktuellen Plug-ins und Folgendes aufgeführt:
 * Plug-in-IDs mit einem Link zur API-Dokumentation. Die ID wird bei [Aktivierung eines Plug-ins](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin) als Knotenname verwendet.
 * Zulässige Werte für die Eigenschaft `features`.
 * Eine Beschreibung der vom Plug-in bereitgestellten Funktion.
-
 
 | Plug-in-ID | features | Beschreibung |
 |--- |--- |--- |
@@ -178,9 +171,9 @@ Ausführliche Konfigurationen des RTE-Plug-ins finden Sie unter [Aktivieren und 
 
 >[!NOTE]
 >
->Die [Text-Kernkomponente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Inhaltsrichtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Inhaltsrichtlinien können mit RTE-UI-Konfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
+>Die [Text-Kernkomponente](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Inhaltsrichtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Inhaltsrichtlinien können mit RTE-UI-Konfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
 >
->Weitere Informationen finden Sie im Abschnitt [RTE-Benutzeroberflächeneinstellungen und Inhaltsrichtlinien](/help/sites-administering/rich-text-editor.md) dieses Dokuments sowie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und in der [Dokumentation für Entwickler von Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+>Weitere Informationen finden Sie im Abschnitt [RTE-Benutzeroberflächeneinstellungen und Inhaltsrichtlinien](/help/sites-administering/rich-text-editor.md) dieses Dokuments sowie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und in der [Dokumentation für Entwickler von Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -257,7 +250,7 @@ Die verfügbaren Optionen im RTE werden von der Benutzeroberflächenkonfiguratio
 * Wenn die Benutzeroberflächenkonfiguration des RTE entfernt wurde oder ein Element nicht aktiviert wird, kann die Inhaltsrichtlinie es nicht konfigurieren.
 * Ein Autor hat nur auf die Funktionen Zugriff, die durch die Benutzeroberflächen-Konfigurationen und Content-Richtlinien zur Verfügung gestellt werden.
 
-Beispielsweise können Sie die [Text-Core Component-Dokumentation](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) sehen.
+Beispielsweise können Sie die [Text-Core Component-Dokumentation](https://docs.adobe.com/help/de/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) sehen.
 
 ## Anpassen der Zuordnung zwischen Symbolleistenelementen und Befehlen {#iconstoolbar}
 
