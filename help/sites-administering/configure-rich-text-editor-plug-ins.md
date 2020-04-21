@@ -1,14 +1,9 @@
 ---
 title: Konfigurieren der Rich-Text-Editor-Plug-ins
-description: Erfahren Sie, wie Sie die Rich-Text-Editor-Plug-ins von AEM konfigurieren, um einzelne Funktionen zu aktivieren.
-uuid: 012552b7-5e32-4d74-be07-b441c3d4b47b
+description: Hier erfahren Sie, wie Sie die Adobe Experience Manager Rich Text Editor-Plug-Ins konfigurieren, um einzelne Funktionen zu aktivieren.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
-mini-toc-levels: 1
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -21,7 +16,7 @@ Weitere Informationen zu den anderen RTE-Konfigurationen finden Sie unter [Konfi
 
 >[!NOTE]
 >
->Beim Arbeiten mit CRXDE Lite ist es ratsam, die Änderungen regelmäßig mit dem Befehl Alle speichern zu speichern.
+>When working with CRXDE Lite, it is recommended to save the changes regularly using [!UICONTROL Save All] option.
 
 ## Aktivieren von Plug-ins und Konfigurieren der Eigenschaft „features“{#activateplugin}
 
@@ -601,20 +596,18 @@ Wenn Sie sowohl die CSS- als auch die Stilzeichenfolge im Code angeben, hat die 
 Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher für jede entsprechende Sprache. Diese werden dann entsprechend der Sprache der Website ausgewählt, indem entweder die language-Eigenschaft der Unterstruktur verwendet oder die Sprache aus der URL extrahiert wird. the `/en/` branch is checked as English, the `/de/` branch as German.
 
 >[!NOTE]
-Die Meldung „Rechtschreibprüfung fehlgeschlagen.“ wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist.
+The message `Spell checking failed` is seen if a check is attempted for a language that is not installed. The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Diese Dateien sollten nicht geändert werden.
 
-Eine AEM-Standardinstallation umfasst die Wörterbücher für:
-
-* Amerikanisches Englisch (en_us)
-* Britisches Englisch (en_gb)
-
->[!NOTE]
-The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Diese Dateien sollten nicht geändert werden.
-
-Gehen Sie wie folgt vor, um ggf. weitere Wörterbücher hinzuzufügen.
+Eine AEM-Standardinstallation beinhaltet die Wörterbücher für Englisch (`en_us`) und Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
 
 1. Navigieren Sie zur Seite [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Wählen Sie die gewünschte Sprache aus und laden Sie die ZIP-Datei mit den Rechtschreibedefinitionen herunter. Entpacken Sie den Inhalt des Archivs in Ihrem Dateisystem.
+
+1. Führen Sie einen der folgenden Schritte aus, um ein Wörterbuch Ihrer Sprache zu suchen:
+
+   * Suchen Sie nach einem Wörterbuch Ihrer Sprache. Suchen Sie auf der Wörterbuchseite den Link zur ursprünglichen Quelle oder zur Autorenseite. Suchen Sie die Wörterbuchdateien für v2.x auf einer solchen Seite.
+   * Suchen Sie nach Wörterbuchdateien der Version 2.x unter [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+
+1. Laden Sie das Archiv mit den Rechtschreibdefinitionen herunter. Entpacken Sie den Inhalt des Archivs in Ihrem Dateisystem.
 
    >[!CAUTION]
    Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da die Wörterbücher jetzt Archivdateien sind, ist es ratsam, eine vollständige Prüfung nach dem Herunterladen durchzuführen.
@@ -623,9 +616,8 @@ Gehen Sie wie folgt vor, um ggf. weitere Wörterbücher hinzuzufügen.
 1. Load the .aff and .dic files in the repository at `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben.
-Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste auf die Schaltfläche „Rechtschreibprüfung“ tippen/klicken. Der RTE überprüft die Rechtschreibprüfung der Wörter und markiert falsch geschriebene Wörter.
-Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Um die Rechtschreibprüfung auszuführen, tippen/klicken Sie erneut auf die Rechtschreibprüfung.
+Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE überprüft die Rechtschreibung von Wörtern und hebt die falsch geschriebenen Wörter hervor.
+Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden die Textänderungen und falsch geschriebenen Wörter nicht mehr hervorgehoben. Um die Rechtschreibprüfung auszuführen, tippen/klicken Sie erneut auf die Rechtschreibprüfung.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“{#undohistory}
 
