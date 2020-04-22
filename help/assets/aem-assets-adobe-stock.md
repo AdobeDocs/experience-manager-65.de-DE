@@ -1,9 +1,9 @@
 ---
-title: Verwalten von Adobe Stock-Assets in AEM Assets
-description: Suchen, Abrufen, Lizenzieren und Verwalten von Adobe Stock-Assets aus AEM. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
+title: Verwalten Sie [!DNL Adobe Stock]-Assets in [!DNL Adobe Experience Manager Assets].
+description: Suchen, Abrufen, Lizenzieren und Verwalten von [!DNL Adobe Stock]-Assets aus Adobe Experience Manager. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
