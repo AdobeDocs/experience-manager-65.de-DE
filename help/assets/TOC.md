@@ -4,14 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
 
 # AEM 6.5 Assets User Guide {#assets}
 
-+ [Asset-Benutzerhandbuch](home.md)
++ [[!DNL Assets] Benutzerhandbuch](home.md)
 + [Versionshinweise zu AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
@@ -19,7 +19,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [AEM Assets-Startseite](assets-home-page.md)
    + [Suchen nach Assets in AEM  ](search-assets.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
-   + [Verwenden von Adobe Stock-Assets in AEM Assets](aem-assets-adobe-stock.md)
+   + [Verwenden von [!DNL Adobe Stock]-Assets in AEM Assets](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Aktivitäts-Stream in der Timeline](activity-stream.md)
@@ -74,7 +74,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Anpassen und Erweitern von AEM Assets](extending-assets.md)
    + [Verarbeiten von Assets mit Media Handlern und Workflows](media-handlers.md)
    + [Suchfunktion erweitern](searchx.md)
-   + [Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können.](best-practices-for-imagemagick.md)
+   + [[!DNL ImageMagick] für die Verwendung mit AEM Assets installieren und konfigurieren](best-practices-for-imagemagick.md)
    + [Assets in den Aktivitäten-Stream integrieren](extending-activity-stream.md)
    + [Asset-Editor erweitern](asseteditorx.md)
    + [Assets-HTTP-API](mac-api-assets.md)
