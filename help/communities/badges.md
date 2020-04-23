@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -34,7 +34,7 @@ Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen 
 
 In der Umgebung &quot;Autor&quot;zur Konsole &quot;Badges&quot;
 
-* Navigieren Sie von der globalen Navigation zu **[UIControl Tools > Communities > Badges]**
+* Navigieren Sie zur globalen Navigation zu **[!UICONTROL Tools > Communities > Abzeichen]**
 
 Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeichen hinzugefügt werden können.
 
