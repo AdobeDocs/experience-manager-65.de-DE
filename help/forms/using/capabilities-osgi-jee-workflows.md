@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
+source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
 
 ---
 
@@ -79,12 +79,17 @@ Sie können AEM Inbox verwenden, um Forms-zentriertes AEM Workflows unter OSGi a
   </tr>
   <tr>
    <td>Warteschlangen (freigegebene persönliche Warteschlange, Aufgaben aus der Warteschlange abrufen)</td>
-   <td>Nicht unterstützt</td>
+   <td>Unterstützt</td>
    <td>Unterstützt</td>
   </tr>
   <tr>
    <td>Abwesenheitsbenachrichtigung</td>
-   <td>Nicht unterstützt</td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+    <tr>
+   <td>Anpassen von UI-Elementen</td>
+   <td>Unterstützt</td>
    <td>Unterstützt</td>
   </tr>
   <tr>
@@ -303,6 +308,11 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   </tr>
   <tr>
    <td>Gateways, KEIN WAIT </td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+   <tr>
+   <td>Variablen zum Speichern von Daten </td>
    <td>Unterstützt</td>
    <td>Unterstützt</td>
   </tr>
