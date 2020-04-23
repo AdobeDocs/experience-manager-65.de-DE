@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -36,17 +36,17 @@ In diesem Tutorial werden Sie durch die Schritte zum Erstellen interaktiver Komm
 
 Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutorial erstellt wurden und beim Erstellen der interaktiven Kommunikation für den Druckkanal benötigt werden:
 
-**** Druckvorlage: [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
+**Druckvorlage:** [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
 
-**** Formulardatenmodell: [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
+**Formulardatenmodell:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**** Dokumentfragmente: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
+**Dokument-Fragmente:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
 
 **Layout-Fragmente:** [table_lf](../../forms/using/create-templates-print-web.md)
 
 **Bilder:** PayNow und ValueAddedServices
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
@@ -69,16 +69,16 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    | bill_summary_first_ic | BillSummary |
    | summary_charges_first_interactive_communication | Gebühren |
 
-   ![Dokumentfragmente für interaktive Kommunikation](assets/create_first_ic_doc_fragments_new.png)
+   ![Fragmente von Dokumenten für interaktive Kommunikation](assets/create_first_ic_doc_fragments_new.png)
 
 1. Tippen Sie auf den Zielbereich **Diagramme** und anschließend auf **+**, um eine Komponente **Diagramm** hinzuzufügen.
 1. Tap the Chart component and select ![](assets/configure_icon.png) (Configure). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie einen Namen für das Diagramm an.
    1. Wählen Sie **Kreis** aus der Dropdownliste **Diagrammtyp**.
-   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen Sie auf ![](assets/done_icon.png).
+   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen ![](assets/done_icon.png).
    1. Wählen Sie **Frequenz** aus der Dropdown-Liste **Funktion**.
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen Sie auf ![](assets/done_icon.png).
+   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen ![](assets/done_icon.png).
    1. Tap ![](assets/done_icon.png) to save the chart properties.
 
 1. Go to the **Assets** tab and apply the filter to display only the layout fragments in the left pane. Ziehen Sie das Layout **table_lf** per Drag-and-Drop in den Zielbereich **Einzeln aufgeführte Anrufe**.
@@ -100,15 +100,15 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
 Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutorial erstellt wurden und beim Erstellen der interaktiven Kommunikation für den Webkanal benötigt werden:
 
-**** Webvorlage: [Create_First_IC_Web_Template](../../forms/using/create-templates-print-web.md)
+**Webvorlage:** [Create_First_IC_Web_Template](../../forms/using/create-templates-print-web.md)
 
-**** Formulardatenmodell: [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
+**Formulardatenmodell:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**** Dokumentfragmente: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
+**Dokument-Fragmente:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_Ladungen_first_ic](../../forms/using/create-document-fragments.md)
 
-**** Bilder: PayNowWeb und ValueAddedServicesWeb
+**Bilder:** PayNowWeb und ValueAddedServicesWeb
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
@@ -138,11 +138,11 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    1. Geben Sie einen Namen für das Diagramm an.
    1. Wählen Sie **Kreis** aus der Dropdownliste **Diagrammtyp**.
 
-   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen Sie auf ![](assets/done_icon.png).
+   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen ![](assets/done_icon.png).
 
    1. Wählen Sie **Frequenz** aus der Dropdown-Liste **Funktion**.
 
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen Sie auf ![](assets/done_icon.png).
+   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen ![](assets/done_icon.png).
 
    1. Tap ![](assets/done_icon.png) to save the chart properties.
 
@@ -198,7 +198,7 @@ Sie können auch eine interaktive Kommunikation erstellen, indem Sie die automat
 
 Führen Sie die folgenden Schritte aus, um den Webkanal-Inhalt mithilfe des Druckkanals abzuleiten:
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tap **Create** and select **Interactive Communication**. The **Create Interactive Communication** wizard is displayed.
 1. Geben Sie **create_first_ic** im Feld **Titel** und im Feld **Name** an. Select **FDM_Create_First_IC** as the Form Data Model and tap **Next**.
 1. In the **Channels** wizard:
