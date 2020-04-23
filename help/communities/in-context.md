@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -29,19 +29,19 @@ Eine Beschreibung der [Moderationsaktionen](moderate-ugc.md#moderation-actions)f
 
 Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz angezeigt wird, ist im Dialogfeld zum Posten und Verwalten benutzergenerierter Inhalte enthalten. Die Elemente der Benutzeroberfläche werden vom Status des Site-Besuchers bestimmt - ob es sich um...
 
-1. Das Mitglied, das den Inhalt veröffentlicht hat
-1. Moderator eines vertrauenswürdigen Mitglieds
-1. Administrator
-1. Angemeldet, aber weder Administrator, Moderator noch Autor des Inhalts
-1. Nicht angemeldet
+1. Das Mitglied, das den Inhalt veröffentlicht hat.
+1. Moderator für vertrauenswürdige Mitglieder.
+1. Ein Administrator.
+1. Angemeldet, jedoch weder Administrator, Moderator noch Autor des Inhalts.
+1. Nicht angemeldet.
 
 ## Beispiel {#example}
 
-Mithilfe der beim [Einstieg in AEM Communities](http://localhost:4503/content/sites/engage/en.html)erstellten [Geometrixx-Engage](getting-started.md) -Website können Sie schnell einen Thread in einem Forum einrichten, in dem verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung ausgeführt werden können (siehe unten).
+Mithilfe der beim [Einstieg in AEM Communities](http://localhost:4503/content/sites/engage/en.html) erstellten [Geometrixx-Engage](getting-started.md)-Website können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Umgebung &quot;Veröffentlichen&quot;erleben können, wie unten dargestellt.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Site zur Community-Interaktions-Moderatorengruppe hinzufügte.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied einer Community-Interaktionsgruppe über die [Members Console](members.md)hinzugefügt werden.
+Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied einer Community-Interaktionsgruppe über die [Members-Konsole](members.md)hinzugefügt werden.
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
@@ -85,9 +85,9 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
 
 ### Anonymer Site-Besucher (#5) {#anonymous-site-visitor}
 
-Im Folgenden finden Sie einen Überblick über das Forum, das ein nicht angemeldeter Besucher anzeigt (5).
+Im Folgenden finden Sie eine Ansicht des Forums, das von einem Site-Besucher gesehen wird, der nicht angemeldet ist (5).
 
-Ein anonymer Sitebesucher kann nur das Forum anzeigen, jedoch keine Inhalte veröffentlichen und keine Moderationsaktionen durchführen.
+Ein anonymer Site-Besucher kann nur die Ansicht des Forums durchführen, darf jedoch keine Inhalte veröffentlichen und keine Moderationsaktionen durchführen.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -97,11 +97,11 @@ Melden Sie sich beim Autor als Admin an und fügen Sie Boyd Larsen (boyd.larsen@
 
 Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie ihn auswählen `Forum`und dann `Read more` für den Beitrag Hummingbird.
 
-Hinweis
+Hinweis:
 
-* Boyd hat nicht am Forum teilgenommen
-* Boyd kann nichts löschen
-* Boyd ist angemeldet und kann Inhalte beantworten oder kennzeichnen
+* Boyd hat nicht am Forum teilgenommen.
+* Boyd kann nichts löschen.
+* Boyd ist angemeldet und kann Inhalte beantworten oder kennzeichnen.
 
 Lassen Sie Boyd &quot;Flag&quot;auswählen, um die von Andrew veröffentlichten Inhalte zu kennzeichnen.
 
@@ -113,14 +113,14 @@ Abmelden
 
 Melden Sie sich als Administrator (Admin) an und greifen Sie auf den Thread zu, indem Sie &quot;Forum&quot;auswählen und dann mehr für einen Beitrag lesen.
 
-Hinweis
+Hinweis:
 
-* Admin kann Flag, Löschen, Bearbeiten, Ablehnen, Ausschneiden, Schließen, Einfügen, Funktion
-* Admin kann Administration auswählen, um auf die Moderationskonsole zuzugreifen
+* Admin kann Flag, Löschen, Bearbeiten, Ablehnen, Ausschneiden, Schließen, Stecken, Funktion.
+* Admin kann Administration auswählen, um auf die Moderationskonsole zuzugreifen.
 
 ![community-admin-forum](assets/communityadmin-forum.png)
 
-Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Veröffentlichungsumgebung.
+Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
 
 Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Geometrixx Engage Community-Site.
 
@@ -134,16 +134,16 @@ Abmelden.
 
 Melden Sie sich als Aaron McDonald (aaron.mcdonal@mailinator.com) an, ein Community-Moderator, und greifen Sie auf den Thread zu, indem Sie Forum auswählen, und lesen Sie mehr für den Beitrag hummingbird.
 
-Hinweis
+Hinweis:
 
-* Aaron kann seinen eigenen Beitrag beantworten, löschen, bearbeiten oder ablehnen
-* Aaron kann auch anderen Inhalt kennzeichnen/zulassen, beantworten, löschen, bearbeiten, ablehnen
-* Aaron kann das Forenthema ausschneiden, um es in ein anderes Forum zu verschieben, für das er moderiert
-* Aaron kann Administration auswählen, um auf die Moderationskonsole zuzugreifen
+* Aaron kann seinen eigenen Beitrag beantworten, löschen, bearbeiten oder ablehnen.
+* Aaron kann auch andere Inhalte kennzeichnen/zulassen, beantworten, löschen, bearbeiten, ablehnen.
+* Aaron kann das Forenthema ausschneiden, um es in ein anderes Forum zu verschieben, für das er moderiert.
+* Aaron kann Administration auswählen, um auf die Moderationskonsole zuzugreifen.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Veröffentlichungsumgebung.
+Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
 
 Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage-Community-Site sichtbar sind.
 
@@ -157,11 +157,11 @@ Abmelden.
 
 Melden Sie sich bei Rebekah Larsen (rebekah.larsen@mailinator.com) an, einem Community-Mitglied, das den Thread gestartet hat, und greifen Sie auf den Thread zu, indem Sie Forum auswählen und dann mehr für den Beitrag von hummingbird lesen.
 
-Hinweis
+Hinweis:
 
-* Rebekah kann ihren eigenen Beitrag löschen oder bearbeiten
-* Rebekah kann auch auf andere Inhalte antworten oder sie kennzeichnen
-* Rebekah kann nicht auf die Moderationskonsole zugreifen
+* Rebekah kann ihren eigenen Beitrag löschen oder bearbeiten.
+* Rebekah kann auch andere Inhalte beantworten oder kennzeichnen.
+* Rebekah kann nicht auf die Moderationskonsole zugreifen.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
