@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorlage](initial-app.md#createthepagetemplate)verwenden:
 
-* SCF Sandbox-Site, die zur englischen Version der Hauptseite umleitet
+* SCF Sandbox Site, die zur englischen Version der Hauptseite umleitet.
 
-   * SCF Sandbox - Die Hauptseite für die englische Version der Site
+   * SCF Sandbox - Die Hauptseite für die englische Version der Site.
 
-      * SCF Play - Untergeordnetes Element der Hauptseite, auf der die Wiedergabe durchgeführt werden soll
+      * SCF Play - Untergeordnetes Element der Hauptseite, auf der abgespielt werden soll.
 
 Obwohl dieses Lernprogramm keine [Sprachkopien](../../help/sites-administering/tc-prep.md)enthält, wurde es so konzipiert, dass die Stammeseite die Erkennung der bevorzugten Sprache für den Benutzer über die HTML-Kopfzeile implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Regel besteht darin, den aus zwei Buchstaben bestehenden Ländercode für den Knotennamen der Seite zu verwenden, z. B. &quot;en&quot;für Englisch, &quot;fr&quot;für Französisch usw.
 
@@ -45,7 +45,7 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
 
    Alternativ können Sie die klassische Benutzeroberfläche für Websites direkt aufrufen, indem Sie zu [/siteadmin navigieren.](http://localhost:4502/siteadmin)
 
-1. Wählen Sie im Explorer-Bereich **[!UICONTROL Websites]** und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Neu > Neue Seite]**.
+1. Wählen Sie im Explorer-Bereich **[!UICONTROL Websites]** und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**.
 
    In the **[!UICONTROL Create Page]** dialog, enter the following:
 
@@ -55,14 +55,14 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
    * Klicken Sie auf **[!UICONTROL Erstellen]**
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site`und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**:
+1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**:
 
    * Titel: `SCF Sandbox`
    * Name: `en`
    * Wählen Sie **eine SCF-Sandbox-Abspielvorlage **
    * Klicken Sie auf **Erstellen **
 
-1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site/SCF Sandbox`und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**
+1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site/SCF Sandbox`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**
 
    * Titel: `SCF Play`
    * Name: `play`
@@ -77,7 +77,7 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-## Entwurfspfad hinzufügen {#add-the-design-path}
+## Hinzufügen des Entwurfspfads {#add-the-design-path}
 
 Wenn ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` sie mithilfe des Abschnitts &quot;Entwürfe&quot;der Konsole &quot;Werkzeuge&quot;erstellt wurde, wird die Eigenschaft
 
@@ -105,4 +105,5 @@ Der Befund sollte wie folgt aussehen:
 >[!NOTE]
 >
 >Die Verwendung von cq:designPath ist optional und steht in keinem Zusammenhang mit der [Verwendung von clientlibs](develop-app.md#includeclientlibsintemplate), die im Wesentlichen erforderlich sind, da die SCF-Komponenten [clientlibs](client-customize.md#clientlibs-for-scf) zur Verwaltung ihrer JS und CSS verwenden.
+
 
