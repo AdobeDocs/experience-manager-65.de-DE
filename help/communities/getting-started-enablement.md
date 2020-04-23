@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 341fef2b8f040848a59381b0d4996c29f352b929
 
 ---
 
 
-# Erste Schritte mit AEM Communities zur Aktivierung  {#getting-started-with-aem-communities-for-enablement}
+# Erste Schritte mit AEM Communities zur Aktivierung {#getting-started-with-aem-communities-for-enablement}
 
-AEM Communities unterstützt Marken bei der Erstellung konsistenter Erlebnisse über digitale und persönliche Kanäle, indem es Mitarbeitern und Kunden die Aktivierung mit einem Katalog von Ressourcen für die Aktivierung, zugewiesenen Inhalten und dynamischen Empfehlungen erleichtert - alles in einer Social Community zur Förderung der Interaktion.
+AEM Communities unterstützt Marken bei der Erstellung konsistenter Erlebnisse über digitale und persönliche Kanal hinweg, indem es die Aktivierung von Mitarbeitern und Kunden mit einem Katalog von Ressourcen für die Aktivierung, zugewiesenen Inhalten und dynamischen Empfehlungen erleichtert - alles in einer Social Community, um Interaktionen zu fördern.
 
 Im Folgenden finden Sie eine Anleitung zum schnellen Einrichten einer [Aktivierungsgemeinschaft](overview.md#enablement-community) zu Demonstrations- oder Entwicklungszwecken.
 
@@ -25,7 +25,8 @@ Eine Anleitung zum schnellen Einrichten einer [Interaktionsgemeinschaft](overvie
 
 >[!NOTE]
 >
->Dieses Lernprogramm setzt die Installation von Feature Pack 1[ oder höher für ](deploy-communities.md#latestfeaturepack)Communities voraus.
+>Dieses Lernprogramm setzt die Installation von Feature Pack 1 [oder höher für](deploy-communities.md#latestfeaturepack) Communities voraus.
+
 
 * [Ersteinrichtung](enablement-setup.md)
 
@@ -33,5 +34,5 @@ Eine Anleitung zum schnellen Einrichten einer [Interaktionsgemeinschaft](overvie
 
 * [Ressourcen erstellen und zuweisen](resource.md)
 
-* [Die veröffentlichte Site](enablement-published-site.md)
+* [Erleben Sie die veröffentlichte Site](enablement-published-site.md)
 
