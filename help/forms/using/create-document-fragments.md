@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -23,7 +23,7 @@ This tutorial is a step in the [Create your first Interactive Communication](/he
 Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zum Erstellen einer interaktiven Kommunikation verwendet werden. Es gibt Dokumentfragmente der folgenden Typen:
 
 * Text - Ein Textelement ist ein Inhaltselement, das aus einem oder mehreren Textabsätzen besteht. Ein Absatz kann statisch oder dynamisch sein.
-* List - List ist eine Gruppe von Dokumentfragmenten, einschließlich Text, Listen, Bedingungen und Bildern.
+* Liste - Liste ist eine Gruppe von Dokument-Fragmenten, einschließlich Text, Listen, Bedingungen und Bildern.
 * Bedingung - Mithilfe von Bedingungen können Sie festlegen, welche Inhalte auf der Grundlage der vom Formulardatenmodell erhaltenen Daten in die interaktive Kommunikation einbezogen werden sollen.
 
 This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section. Am Ende dieser Schulung können Sie Folgendes:
@@ -32,7 +32,7 @@ This tutorial walks you through the steps to create multiple text document fragm
 * Variablen erstellen
 * Regeln erstellen und anwenden
 
-![text_document_fragments](assets/text_document_fragments.gif)
+![text_Dokument_fragments](assets/text_document_fragments.gif)
 
 Im Folgenden finden Sie eine Liste der Dokumentfragmente, die in diesem Lernprogramm erstellt werden:
 
@@ -60,7 +60,7 @@ Das Dokumentfragment „Rechnungsdetails“ enthält die folgenden Felder:
 
 Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenutzeroberfläche als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
-1. Wählen Sie **Formulare** > **Dokumentfragmente**.
+1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
@@ -122,7 +122,7 @@ Das Dokumentfragment „Kundendetails“ enthält die folgenden Felder:
 
 Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenutzeroberfläche als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
-1. Wählen Sie **Formulare** > **Dokumentfragmente**.
+1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
@@ -171,7 +171,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
 ## Schritt 3: Erstellen Sie ein Textdokumentfragment für Rechnungszusammenfassung {#step-create-bill-summary-text-document-fragment}
 
-Das Dokumentfragment &quot;Bill Summary&quot;enthält die folgenden Felder:
+Das Fragment &quot;Bill Summary Dokument&quot;enthält die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
@@ -184,7 +184,7 @@ Das Dokumentfragment &quot;Bill Summary&quot;enthält die folgenden Felder:
 
 Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenutzeroberfläche als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
-1. Wählen Sie **Formulare** > **Dokumentfragmente**.
+1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
@@ -234,7 +234,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
 ## Schritt 4: Erstellen Sie ein Textdokumentfragment für „Zusammenfassung der Kosten“{#step-create-summary-of-charges-text-document-fragment}
 
-Das Fragment &quot;Zusammenfassung der Gebühren&quot;enthält die folgenden Felder:
+Das Fragment &quot;Summary of Ladungs&quot;-Dokument enthält die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
@@ -250,7 +250,7 @@ Das Fragment &quot;Zusammenfassung der Gebühren&quot;enthält die folgenden Fel
 
 Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
-1. Wählen Sie **Formulare** > **Dokumentfragmente**.
+1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
