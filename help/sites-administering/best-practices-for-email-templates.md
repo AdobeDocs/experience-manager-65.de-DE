@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0cb6abe024bc4ff77c9932c99b816c832377f5
+source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 ---
 
@@ -32,9 +32,9 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 >[!NOTE]
 >
->Alle Kampagneninhalte sollten unter einer `master` Seite des Typs erstellt werden `cq/personalization/components/ambitpage`.
+>Der gesamte Inhalt der Kampagne sollte unter einer `master` Seite des Typs erstellt werden `cq/personalization/components/ambitpage`.
 >
->Beispiel: Ihre geplante Kampagnenstruktur entspricht
+>Wenn Ihre geplante Kampagne z. B. in etwa
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
@@ -57,11 +57,11 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
    <td><strong>Implementierung</strong></td>
   </tr>
   <tr>
-   <td><p>Geben Sie den Dokumenttyp an, um eine konsistente Wiedergabe sicherzustellen.</p> <p>Hinzufügen von DOCTYPE am Anfang (HTML oder XHTML)</p> </td>
-   <td><p>Ist konfigurierbar durch Änderung der <i>Eigenschaft cq:doctype</i> in<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>Die Standardeinstellung ist "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//DE" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kann in "HTML_5"geändert werden:</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
+   <td><p>Geben Sie den Dokument-Typ an, um eine einheitliche Darstellung sicherzustellen.</p> <p>Hinzufügen DOCTYPE am Anfang (HTML oder XHTML)</p> </td>
+   <td><p>Ist konfigurierbar durch Änderung der <i>Eigenschaft cq:doctype</i> in<i>"/etc/designs/default/jcr:content/Kampagne_newsletterpage"</i></p> <p>Die Standardeinstellung ist "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//DE" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kann in "HTML_5"geändert werden:</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>Fügen Sie CHARSET-Deklaration (z. B. iso-8859-15, UTF-8) zu &lt;head&gt; hinzu.</p> </td>
+   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>Hinzufügen CHARSET-Erklärung (z. B. iso-8859-15, UTF-8) bis</p> </td>
    <td><p>Ist auf UTF-8 eingestellt.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
@@ -73,11 +73,11 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
    <td><p>Alle Tabellen enthalten die erforderlichen Attribute wie <i>Rahmen</i>, <i>Zellauffüllung</i>, <i>Zellabstand</i> und <i>Breite</i>.</p> <p>To harmonize element positioning inside tables, all table cells have the attribute <i>valign="top"</i> being set.</p> </td>
   </tr>
   <tr>
-   <td><p>Berücksichtigen Sie nach Möglichkeit die Mobillichkeit. Verwenden Sie Medienabfragen zur Erhöhung der Textgrößen auf kleinen Bildschirmen und stellen Sie zu Links Trefferbereiche im Miniaturformat bereit.</p> <p>Erstellen Sie falls möglich ein responsives E-Mail-Design.</p> </td>
+   <td><p>Berücksichtigen Sie nach Möglichkeit die mobile Freundlichkeit. Verwenden Sie Medienabfragen zur Erhöhung der Textgrößen auf kleinen Bildschirmen und stellen Sie zu Links Trefferbereiche im Miniaturformat bereit.</p> <p>Erstellen Sie falls möglich ein responsives E-Mail-Design.</p> </td>
    <td>Sofern CSS-Stile zum Illustrieren des Demodesigns verwendet werden, werden Medienabfragen für die Bereitstellung einer mobilfreundlichen Version verwendet.</td>
   </tr>
   <tr>
-   <td>Inline-CSS ist besser, als alle CSS am Anfang zu setzen.</td>
+   <td>Inline-CSS ist besser, als alle CSS in den Anfang zu stellen.</td>
    <td><p>Um die zugrunde liegende HTML-Struktur besser zu demonstrieren und die Möglichkeit zur Anpassung der Newsletterstruktur zu erleichtern, erfolgen nur einige CSS-Definitionen inline.</p> <p>Basisstile und Vorlagenvarianten wurden in einen Stylesheet im Abschnitt &lt;head&gt; der Seite extrahiert. Bei der finalen Übermittlung des Newsletters sollten diese CSS-Definitionen inline in HTML vorhanden sein. Ein automatischer Inlining-Mechanismus ist geplant, aktuell jedoch noch nicht verfügbar.</p> </td>
   </tr>
   <tr>
@@ -99,8 +99,8 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 |---|---|
 | Hinzufügen von *Alt* -Attributen zu Bildern | Das *Alt* -Attribut wurde als obligatorisch für die Bildkomponente definiert. |
 | Verwenden Sie *das Format &quot;jpg* &quot;anstelle des *PNG* -Formats für Bilder | Bilder werden immer als JPG von der Bildkomponente bereitgestellt. |
-| Verwenden Sie <img> in einer Tabelle Elemente anstelle von Hintergrundbildern. | In den Vorlagen werden keine Hintergrundbilddaten verwendet. |
-| Fügen Sie attribute style=&quot;display block&quot; auf Bildern hinzu. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig das Attribut *style=&quot;display block&quot;* . |
+| Verwenden Sie `<img>` in einer Tabelle Elemente anstelle von Hintergrundbildern. | In den Vorlagen werden keine Hintergrundbilddaten verwendet. |
+| Hinzufügen attribute style=&quot;display block&quot; auf Bildern. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig das Attribut *style=&quot;display block&quot;* . |
 
 ### Text und Links {#text-and-links}
 
@@ -127,9 +127,9 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 | **Best Practice** | **Implementierung** |
 |---|---|
-| Mit dem W3C-Validator können Sie den HTML-Code korrigieren. Stellen Sie sicher, dass alle offenen Tags ordnungsgemäß geschlossen werden. | Code wurde validiert. Für XHTML-Übergangsdokumenttyp nur das fehlende xmlns-Attribut für die <html> -Element fehlt. |
+| Verwenden Sie den W3C-Validator, um den HTML-Code zu korrigieren. Stellen Sie sicher, dass alle offenen Tags ordnungsgemäß geschlossen werden. | Code wurde validiert. Bei XHTML-Übergangsdokumenten ist nur das fehlende xmlns-Attribut für die Variable <html> -Element fehlt. |
 | Machen Sie sich keine Gedanken mit JavaScript oder Flash - diese Technologien werden von E-Mail-Clients weitgehend nicht unterstützt. | In der Newslettervorlage werden weder JavaScript noch Flash verwendet. |
-| Fügen Sie eine Nur-Text-Version für das mehrteilige Senden hinzu. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
+| Hinzufügen einer Nur-Text-Version für mehrteilige Versand. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
 
 ## Kampagnen-Newsletter – Vorlagen und Beispiele {#campaign-newsletter-templates-and-examples}
 
@@ -149,13 +149,13 @@ Es stehen aktuell [sieben Komponenten zur Verfügung, die innerhalb von Kampagne
 
 | **Komponentenname** | **Komponentenpfad** |
 |---|---|
-| Überschrift | /libs/mcm/campaign/components/heading |
+| Überschrift | /libs/mcm/Kampagne/components/heading |
 | Bild | /libs/mcm/campaign/components/image |
-| Text und Personalisierung | /libs/mcm/campaign/components/personalization |
-| Textimage | /libs/mcm/campaign/components/textimage |
-| Verknüpfung | /libs/mcm/campaign/components/reference |
-| Scene7-Bildvorlage | /libs/mcm/campaign/s7image |
-| Targeting-Referenz | /libs/mcm/campaign/components/reference |
+| Text und Personalisierung | /libs/mcm/Kampagne/components/personalization |
+| Textimage | /libs/mcm/Kampagne/components/textimage |
+| Verknüpfung | /libs/mcm/Kampagne/components/reference |
+| Scene7-Bildvorlage | /libs/mcm/Kampagne/s7image |
+| Targeting-Referenz | /libs/mcm/Kampagne/components/reference |
 
 >[!NOTE]
 >
