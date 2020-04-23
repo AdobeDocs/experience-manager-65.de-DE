@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -27,7 +27,7 @@ So erstellen Sie eine neue Community-Site:
 Verwenden der [Autoreninstanz](https://localhost:4502/)
 
 * Anmelden mit Administratorrechten
-* Navigieren Sie zu **[UIControl Communities > Sites]**
+* Navigieren Sie zu **[!UICONTROL Communities > Sites]**
 
 * Wählen Sie **Erstellen**
 
@@ -54,7 +54,7 @@ Geben Sie im Schritt **Site-Vorlage** einen Titel, eine Beschreibung und den Nam
 
 * **Referenz-Site-Vorlage**: nach unten ziehen `Reference Structured Learning Site Template`
 
-Wählen Sie **Weiter**
+Wählen Sie **Weiter** aus
 
 ### Schritt 2: Design {#step-design}
 
@@ -70,7 +70,7 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 ![chlimage_1-2](assets/chlimage_1-2.png) ![chlimage_1](assets/chlimage_1.jpeg)
 
-Wählen Sie **Weiter**.
+Wählen Sie **Weiter** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
@@ -158,7 +158,7 @@ Für eine Aktivierungsgemeinschaft ist es erforderlich, einen oder mehrere Commu
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-Wählen Sie **Weiter**.
+Wählen Sie **Weiter** aus.
 
 ### Schritt 4: Community-Site erstellen {#step-create-community-site}
 
@@ -242,7 +242,7 @@ In diesem Beispiel `Community Ski Class` wird die Gruppe als Mitglied der Gruppe
 * &quot;quinn&quot;in das Suchfeld eingeben
 * Wählen Sie *Quinn Harper* (Ansprechpartner für die Aktivierungsressource)
 
-* Wählen Sie **Speichern**
+* Wählen Sie **Speichern** aus
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
