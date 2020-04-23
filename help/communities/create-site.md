@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -54,7 +54,7 @@ Geben Sie im Schritt [&quot;](/help/communities/sites-console.md#step2013asitete
 
 * **Vorlage**: nach unten ziehen `Reference Site`
 
-Wählen Sie **Weiter**
+Wählen Sie **Weiter** aus
 
 ### Schritt 2: Design {#step-design}
 
@@ -70,7 +70,7 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 ![chlimage_1-58](assets/chlimage_1-58.png) ![chlimage_1-59](assets/chlimage_1-59.png)
 
-Wählen Sie **Weiter**.
+Wählen Sie **Weiter** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
@@ -155,7 +155,7 @@ Lassen Sie beim Erstellen einer Interaktionsgemeinschaft leer.
 
 Eine ähnliche Übung zum schnellen Erstellen einer [Aktivierungsgemeinschaft](/help/communities/overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md).
 
-Wählen Sie **Weiter**.
+Wählen Sie **Weiter** aus.
 
 ### Schritt 4: Communities-Site erstellen {#step-create-communities-site}
 
@@ -200,7 +200,7 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
 * **Site löschen**
 
-   Wählen Sie das Symbol zum Löschen, um die Community-Site aus der Konsole **[UIControl Communities > Sites zu löschen]**. Durch diese Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. UGC, Benutzergruppen, Assets und Datenbankdatensätze.
+   Wählen Sie das Symbol Löschen, um die Community-Site in der Konsole **[!UICONTROL Communities > Sites zu löschen]**. Durch diese Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. UGC, Benutzergruppen, Assets und Datenbankdatensätze.
 
 ![sitteactions](assets/siteactions.png)
 
@@ -210,17 +210,17 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 >
 >Auf der Autoreninstanz über das Hauptmenü:
 >
->1. Navigieren Sie zum Menü **[UIControl Tools > Vorgänge > Replikation]** .
->1. Wählen Sie **[UIControl Agents on author]**.
->1. Wählen Sie **[UIControl Default Agent (publish)]**.
->1. Wählen Sie neben **[UIControl Settings]** die Option **[UIControl Edit]**.
->1. Wählen Sie im Popup-Dialogfeld für Agenteneinstellungen die Registerkarte **[UIControl Transport]** .
+>1. Navigieren Sie zu **[!UICONTROL Tools > Vorgänge > Replizierungsmenü]** .
+>1. Wählen Sie **[!UICONTROL Agenten beim Autor]**.
+>1. Wählen Sie **[!UICONTROL Standardagent (publish)]**.
+>1. Wählen Sie neben **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Bearbeiten]**.
+>1. Wählen Sie im Popup-Dialogfeld für Agenteneinstellungen die Registerkarte **[!UICONTROL Transport]** .
 >1. Ändern Sie in URI die Anschlussnummer 4503 in die gewünschte Anschlussnummer >
    >    * So verwenden Sie z. B. Port 6103:
       >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
-1. Wählen Sie **[UIControl OK]**.
-1. (Optional) Wählen Sie **[UIControl Clear]** oder **[UIControl Force Retry]** , um die Replikationswarteschlange zurückzusetzen.
+1. Wählen Sie **[!UICONTROL OK]** aus.
+1. (Optional) Wählen Sie **[!UICONTROL Löschen]** oder Wiederholen **[!UICONTROL erzwingen]** , um die Replikationswarteschlange zurückzusetzen.
 
 
 
@@ -274,7 +274,7 @@ Hinzufügen `Login Page Mapping` als
 
 Wenn Sie zu Demonstrationszwecken mit der Veröffentlichungs-Site arbeiten, ist es ggf. sinnvoll, die standardmäßige Startseite auf die neue Site zu ändern.
 
-Hierzu müssen Sie [CRXDE](https://localhost:4503/crx/de) Lite verwenden, um die [Ressourcenzuordnungstabelle](/help/sites-deploying/resource-mapping.md) bei der Veröffentlichung zu bearbeiten.
+Dazu müssen Sie [CRXDE](https://localhost:4503/crx/de) Lite verwenden, um die [Ressourcenzuordnungstabelle](/help/sites-deploying/resource-mapping.md) bei der Veröffentlichung zu bearbeiten.
 
 Erste Schritte:
 
