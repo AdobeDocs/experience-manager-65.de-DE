@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 
 
-## Neueste Versionen {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA wird mit Communities-Paketen geliefert. Informationen zu Updates für AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities)finden Sie in den [Versionshinweisen](/help/release-notes/release-notes.md#communities-release-notes.html)zu AEM 6.5.
 
@@ -231,7 +231,7 @@ Für alle anderen (sekundären) Veröffentlichungsinstanzen in einer Veröffentl
 * Suchen Sie die `AEM Communities Publisher Configuration`
 * Wählen Sie das Bearbeitungssymbol
 * Deaktivieren Sie das Kontrollkästchen **Primärherausgeber** .
-* Wählen Sie **Speichern**
+* Wählen Sie **Speichern** aus
 
 ### Replizierungsagenten beim Autor {#replication-agents-on-author}
 
@@ -245,7 +245,7 @@ Es gibt zwei Replizierungsagenten in der Authoring-Umgebung, für die die Transp
 
 * Zugriff auf die Replikationskonsole beim Autor
 
-   * Navigieren Sie von der globalen Navigation zu **[UIControl Tools > Bereitstellung > Replikation > Agenten beim Autor]**
+   * Navigieren Sie zur globalen Navigation zu **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten beim Autor]**
 
 * Für beide Wirkstoffe gilt das gleiche Verfahren:
 
@@ -288,7 +288,7 @@ So aktivieren Sie den Tunneldienst:
 * Suchen Sie die `AEM Communities Publish Tunnel Service`
 * Wählen Sie das Bearbeitungssymbol
 * Aktivieren Sie das **Kontrollkästchen &quot;Aktivieren** &quot;
-* Wählen Sie **Speichern**
+* Wählen Sie **Speichern** aus
 
 ![](/help/communities/assets/chlimage_1-129.png)
 
@@ -325,7 +325,7 @@ for example,
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, könnte die Replizierung der Verschlüsselungsschlüssel die Konfiguration beschädigen. Wenden Sie sich zwecks Hilfe [an die Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, könnte die Replizierung der Verschlüsselungsschlüssel die Konfiguration beschädigen. Wenden Sie sich zwecks Hilfe [an die Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 #### Repository-Replikation {#repository-replication}
 
