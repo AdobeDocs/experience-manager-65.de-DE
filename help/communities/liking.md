@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
 # Verwenden von &quot;Gefällt mir&quot; {#using-liking}
 
-Die `Liking`Komponente ist ein nützliches Werkzeug, mit dem Benutzer eine Meinung zu einem bestimmten Inhalt, z. B. zu einem Kommentar in einem Forum, äußern können. Bei der `Liking`Komponente wählen die Mitglieder das Herzsymbol aus, um eine positive Meinung anzuzeigen.
+Die `Liking` Komponente ist ein nützliches Werkzeug, mit dem Benutzer eine Meinung zu einem bestimmten Inhalt, wie z.B. einem Kommentar in einem Forum, äußern können. Bei der `Liking` Komponente wählen die Mitglieder das Herzsymbol aus, um eine positive Meinung anzuzeigen.
 
 ## Adding Liking to a Page {#adding-liking-to-a-page}
 
-To add a `Liking` component to a page in author mode, use the component browser to locate
+To add a `Liking` component to a page in author mode, use the component browser to locate:
 
 * `Communities / Liking`
 
@@ -43,11 +43,17 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Bezeichnung]** für positive Antwort (*erforderlich*) Der Eigenschaftsname für eine positive Antwort.
+* **[!UICONTROL Beschriftung für positive Antwort]**
 
-* **[!UICONTROL Negative Response Label]**(*Erforderlich*) Der Eigenschaftsname für eine negative Antwort.
+   (*Erforderlich*) Der Eigenschaftsname für eine positive Antwort.
 
-* **[!UICONTROL Tally Name]**(*Erforderlich*) Der interne, identifizierbare Eigenschaftenname für diese Instanz einer stimmberechtigten Komponente.
+* **[!UICONTROL Beschriftung für negative Antwort]**
+
+   (*Erforderlich*) Der Eigenschaftsname für eine negative Antwort.
+
+* **[!UICONTROL Zählername]**
+
+   (*Required*) The internal, identifiable property name for this instance of a voting component.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
