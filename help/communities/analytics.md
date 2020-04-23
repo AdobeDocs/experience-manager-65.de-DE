@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
 # Analytics-Konfiguration für Communities-Funktionen {#analytics-configuration-for-communities-features}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen der Adobe Marketing Cloud.
 
@@ -111,11 +111,11 @@ Durch die Anmeldung bei der [Adobe Marketing Cloud](https://marketing.adobe.com/
    * Video Berichte Console
 
       * Aktivieren `Video Core`
-      * Wählen Sie Speichern
+      * Wählen Sie Speichern aus
    * Video-Core-Messkonsole
 
       * Wählen Sie nun eine der folgenden Optionen aus `Use Solution Variables`
-      * Wählen Sie Speichern
+      * Wählen Sie Speichern aus
 
 
 Wenn Sie eine **neue Report Suite** verwenden, beachten Sie, dass eine neue Report Suite möglicherweise nur 4 eVars und 6 Ereignis-Variablen enthält, während für Communities 11 eVars und 7 Ereignis Vars erforderlich sind.
@@ -126,10 +126,10 @@ Wenn Sie eine **vorhandene Report Suite** verwenden, müssen Sie die Variablenzu
 >
 >**Wenn Sie eine vorhandene Report Suite verwenden, die bereits Variablen in**
 >
->* **`evar1`** through **`evar11`**
+>* **`evar1`** bis **`evar11`**
    >
    >
-* **`event1`** through **`event7`**
+* **`event1`** bis **`event7`**
 >
 >
 **Bevor die Community-Site veröffentlicht wird,** müssen Sie die bereits vorhandene Zuordnung wiederherstellen, indem Sie die AEM-Variablen verschieben, die automatisch Analytics-Variablen zugeordnet wurden, wenn Analytics für eine Community-Site aktiviert wurde.
@@ -160,15 +160,15 @@ Ist diese Option nicht aktiviert, wird der Video Heartbeat-Code nie instanziiert
 
 Um eine neue Analytics-Integration zu erstellen, die Adobe Analytics mit der AEM-Community-Site integriert, verwenden Sie die Standard-Benutzeroberfläche in der Autoreninstanz:
 
-* Aus globaler Navigation: &quot; **[UIControl Tools&quot;> &quot;Bereitstellung&quot;> &quot;Cloud-Dienste&quot;]**
-* Hinunter scrollen zu **[UIControl Adobe Analytics]**
-* Wählen Sie &quot; **[UIControl &quot;Jetzt]** konfigurieren&quot;oder &quot; **[UIControl-Konfigurationen anzeigen&quot;]**
+* Aus globaler Navigation: **[!UICONTROL Werkzeuge > Bereitstellung > Cloud-Dienste]**
+* Scroll-down to **[!UICONTROL Adobe Analytics]**
+* Wählen Sie **[!UICONTROL Konfigurationen jetzt]** konfigurieren oder Konfigurationen **[!UICONTROL anzeigen]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Dialogfeld &quot;Konfiguration erstellen&quot; {#create-configuration-dialog}
 
-* Klicken Sie auf `[+]` das Symbol neben **[UIControl Verfügbare Konfigurationen]** , um eine neue Konfiguration zu erstellen.
+* Klicken Sie auf `[+]` das Symbol neben **[!UICONTROL Verfügbare Konfigurationen]** , um eine neue Konfiguration zu erstellen.
 
 Im Dialogfeld &quot;Konfiguration erstellen&quot;wird die Konfiguration durch die eingegebenen Werte identifiziert.
 
@@ -246,7 +246,7 @@ So speichern Sie die Einstellungen:
 
 Nach der erfolgreichen Konfiguration der grundlegenden Verbindung mit Adobe Analytics müssen Sie ein Framework für die Community-Site erstellen oder bearbeiten. Der Zweck des Frameworks besteht darin, Variablen der Funktion Communities (AEM) Analytics (Report Suite)-Variablen zuzuordnen.
 
-* Klicken Sie auf `[+]` das Symbol neben **[UIControl Verfügbare Frameworks]** , um ein neues Framework zu erstellen
+* Klicken Sie auf `[+]` das Symbol neben **[!UICONTROL Verfügbare Frameworks]** , um ein neues Framework zu erstellen.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -568,10 +568,10 @@ Siehe Abschnitte:
 >
 >**Wenn Sie eine vorhandene Report Suite verwenden, die bereits Variablen in**
 >
->* **`evar1`** through **`evar11`**
+>* **`evar1`** bis **`evar11`**
    >
    >
-* **`event1`** through **`event7`**
+* **`event1`** bis **`event7`**
 >
 >
 **Bevor die Community-Site veröffentlicht wird,** müssen Sie die bereits vorhandene Zuordnung wiederherstellen und die AEM-Variablen für Communities, die automatisch zugeordnet wurden (als Analytics für die Community-Site aktiviert wurde), an andere Analytics-Variablen verschieben. Diese Neuzuordnung sollte für alle Communities-Komponenten einheitlich sein.
