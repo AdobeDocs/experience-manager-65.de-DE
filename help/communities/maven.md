@@ -10,18 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
 # Verwenden von Maven für Communities {#using-maven-for-communities}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Dieser Abschnitt der Dokumentation zu AEM Communities ergänzt:
 
-* [So erstellen Sie AEM-Projekte mit Apache Maven](../../help/sites-developing/ht-projects-maven.md)
+* [Erstellen von AEM-Projekten mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Es gibt jetzt zwei &quot;Uber&quot;-Artefakte, die einzelne Artefakte ersetzen:
 
@@ -44,18 +44,19 @@ Im Folgenden finden Sie ein Beispiel für eine GAV für die AEM Communities API-
 Stellen Sie sicher, dass die angegebene Version der Communities-Paketversion entspricht, die für AEM Communities installiert wurde. So überprüfen Sie die installierte Versionsnummer:
 
 1. Melden Sie sich mit Administratorrechten an.
-2. Navigieren Sie zu [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Navigieren Sie zu [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-3. Suchen Sie das Paket *cq-socialgroups-pkg-1.x.xxx.*
-4. Version aus dem Paketnamen extrahieren
-   * Die erste Version für AEM 6.3 ist Version 1.11.170
-   * Feature Packs sind die Versionen 1.12.xxx
+1. Suchen Sie das Paket *cq-socialgroups-pkg-1.x.xxx*
+1. Extrahieren Sie die Version aus dem Paketnamen:
+   * Die erste Version von AEM 6.3 ist Version 1.11.170.
+   * Feature Packs sind die Versionen 1.12.xxx.
 
 >[!NOTE]
 >
 >Es wird empfohlen, mit der neuesten Version von Communities auf dem Laufenden zu bleiben.
 >
 >Im Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) finden Sie die neueste Version.
+
 
 ## Beispiel für eine Maven-Abhängigkeit {#maven-dependency-example}
 
