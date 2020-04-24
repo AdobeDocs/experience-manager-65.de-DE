@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -24,7 +24,7 @@ Die Absicht, eine Standardkomponente zu [überlagern](/help/communities/client-c
 
 **Komponente &quot;Überlagerungskommentare&quot;**
 
-Angenommen, Sie möchten die Kommentarfunktion so ändern, dass sie mit dem Design Ihrer Website übereinstimmt, indem Sie die Kommentarkopfzeile ändern, sodass der Avatar für keinen Kommentar mehr angezeigt wird. Die Lösungen zum Ausblenden des Avatars verwenden entweder CSS oder überlagern, wie hier beschrieben, die Datei header.jsp im Anwendungsordner, damit der HTML-Code mit dem Avatar nie an den Client gesendet wird.
+Angenommen, Sie möchten die Kommentarfunktion so ändern, dass sie mit dem Design Ihrer Website übereinstimmt, indem Sie die Kommentarkopfzeile ändern, sodass der Avatar für keinen Kommentar mehr angezeigt wird. Die Lösungen zum Ausblenden des Avatars verwenden entweder CSS oder überlagern, wie hier beschrieben, die Datei header.jsp im Anwendungsordner, damit der HTML-Code, der den Avatar enthält, nie an den Client gesendet wird.
 
 Um Kommentare zu überlagern, müssen Sie:
 
@@ -34,9 +34,9 @@ Um Kommentare zu überlagern, müssen Sie:
 
 **E-Mails zu Überlagerungsbenachrichtigungen**
 
-Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, indem Sie die Vorlagen unter [/libs/settings/community/templates/email/html ](/help/communities/client-customize.md#overlays)überlagern ****.
+Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, indem Sie die Vorlagen unter [/libs/settings/community/templates/email/html](/help/communities/client-customize.md#overlays) überlagern ****.
 
-Um beispielsweise die Benachrichtigungen zu Erwähnungen-E-Mails zu ändern (für eine bestimmte Communities-Komponente, in der ugc erstellt wird), fügen Sie eine**-if **Bedingung für die **Erwähnung des Verb** in den Vorlagen der Komponenten hinzu, für die Sie die **Unterstützung von @mentions** aktiviert haben.
+Um beispielsweise die Benachrichtigungen zu Erwähnungen-E-Mails zu ändern (für eine bestimmte Communities-Komponente, in der ugc erstellt wird), fügen Sie in den Vorlagen der Komponenten, für die Sie die Unterstützung von **@Erwähnungen** aktiviert haben, eine if **-Bedingung für die** Erwähnung **** des Verb hinzu.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -44,4 +44,4 @@ Um beispielsweise die Benachrichtigungen zu Erwähnungen-E-Mails zu ändern (fü
 {{/equals}}\
 ```
 
-Um die E-Mail-Benachrichtigungsvorlage für &quot;@mension&quot;in Blog-Kommentaren zu ändern, platzieren Sie die Vorlage &quot;Out-of-the-Box&quot; unter: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/de**
+Um die E-Mail-Benachrichtigungsvorlage für &quot;@mension&quot;in Blog-Kommentaren zu ändern, platzieren Sie die Vorlage &quot;Out-of-the-Box&quot; unter: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
