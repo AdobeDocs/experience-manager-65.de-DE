@@ -3,24 +3,24 @@ title: Verwenden des PDF-Rasters zum Generieren von Darstellungen
 description: Dieser Artikel beschreibt, wie Sie mit der Adobe PDF Rasterizer-Bibliothek hochwertige Minaturansichten und Ausgabeformate erstellen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# PDF-Rasterfunktion verwenden {#using-pdf-rasterizer}
+# PDF-Raster verwenden {#using-pdf-rasterizer}
 
 Wenn große, inhaltslastige PDF- oder AI-Dateien in Adobe Experience Manager (AEM) Assets hochgeladen werden, erstellt die Standardbibliothek u. U. manchmal keine genaue Ausgabe. In solchen Fällen kann die Adobe PDF Rasterizer-Bibliothek zuverlässigere und präzisere Ausgaben erstellen als Standardbibliotheken.
 
 Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Dateien:
 
-* Große, inhaltslastige AI-/PDF-Dateien
-* Nicht standardmäßig erstellte AI-/PDF-Dateien mit Miniaturansichten
-* AI-Dateien mit Pantone Matching System (PMS)-Farben
+* Große, inhaltslastige AI-/PDF-Dateien.
+* AI- und PDF-Dateien mit nicht standardmäßig generierten Miniaturbildern.
+* AI-Dateien mit PMS-Farben (Pantone Matching System)
 
 Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt unabhängig vom Farbraum der Quelldatei immer in RGB.
 
-1. Installieren Sie das PDF Rasterizer-Paket aus [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) auf Ihrer AEM-Instanz.
+1. Install the PDF Rasterizer package on your AEM deployment from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
