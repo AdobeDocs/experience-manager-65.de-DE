@@ -4,7 +4,7 @@ description: Vorschläge und Anleitungen zur AEM-Konfiguration, Änderungen an H
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -267,7 +267,7 @@ Für die Oak-Indexkonfigurationen können Optimierungen vorgenommen werden, mit 
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false
