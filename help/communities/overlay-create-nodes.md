@@ -10,22 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
 
 # Nodes erstellen {#create-nodes}
 
-Überlagern Sie das Kommentarsystem mit einer benutzerdefinierten Version, indem Sie die minimale Anzahl von Dateien kopieren, die von /libs in /apps benötigt werden, und sie in /apps ändern.
+Überlagern Sie das Kommentarsystem mit einer benutzerdefinierten Version, indem Sie die minimale Anzahl von Dateien kopieren, die erforderlich sind, `/libs` in `/apps` und ändern Sie sie in `/apps`.
 
 >[!CAUTION]
 >
 >Der Inhalt des Ordners &quot;/libs&quot;wird nie bearbeitet, da bei einer Neuinstallation oder Aktualisierung der Ordner &quot;/libs&quot;gelöscht oder ersetzt werden kann, während der Inhalt des Ordners &quot;/apps&quot;unverändert bleibt.
 
-Wenn Sie [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz verwenden, erstellen Sie zunächst einen Pfad im Ordner /apps, der mit dem Pfad zu den überlagerten Komponenten im Ordner /libs identisch ist.
 
-Der duplizierte Pfad ist
+Wenn Sie [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz verwenden, erstellen Sie zunächst einen Pfad im Ordner &quot;/apps&quot;, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs&quot;identisch ist.
+
+Der zu duplizierende Pfad lautet:
 
 * `/libs/social/commons/components/hbs/comments/comment`
 
@@ -37,7 +38,7 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
    * **[!UICONTROL Erstellen > Ordner ...]**
       * Namen eingeben: `social`
 1. Knoten `social` auswählen
-   * **[!UICONTROL Erstellen > Ordner...]**
+   * **[!UICONTROL Erstellen]** > **[!UICONTROL Ordner...]**
       * Namen eingeben: `commons`
 1. Knoten `commons` auswählen
    * **[!UICONTROL Erstellen > Ordner...]**
@@ -46,7 +47,7 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
    * **[!UICONTROL Erstellen > Ordner..]**.
       * Namen eingeben: `hbs`
 1. Knoten `hbs` auswählen
-   * **[!UICONTROL Erstellen > Komponente erstellen...]**
+   * **[!UICONTROL Erstellen]** > Komponente **[!UICONTROL erstellen...]**
       * Beschriftung eingeben: `comments`
       * Enter Title: `Comments`
       * Enter Description: `List of comments without showing avatars`
@@ -74,7 +75,7 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 
 >[!NOTE]
 >
->Um die Vererbungskette beizubehalten, wird für die `Super Type` (Eigenschaft `sling:resourceSuperType`) der Überlagerungskomponenten der gleiche Wert wie `Super Type` der Wert der überlagerten Komponenten festgelegt, in diesem Fall, in diesem Fall
+>Um die Vererbungskette beizubehalten, wird für die `Super Type` (Eigenschaft `sling:resourceSuperType`) der Überlagerungskomponenten der gleiche Wert wie `Super Type` der Wert der überlagerten Komponenten festgelegt, in diesem Fall:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
