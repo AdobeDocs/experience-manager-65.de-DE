@@ -3,7 +3,7 @@ title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -36,7 +36,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Mithilfe von Tags als Metadaten können Sie ganz einfach Assets suchen, Sammlungen mit den Suchergebnissen erstellen, die Suchrangliste nach bestimmten Assets verbessern und die AI-Algorithmen von Adobe Sensei zur Ermittlung von Assets nutzen.
+Mithilfe von Tags als Metadaten können Sie Assets mühelos suchen, Sammlungen mit den Suchergebnissen erstellen, die Suchrangliste für einige Assets verbessern und AI-Algorithmen von Adobe Sensei zur Ermittlung von Assets nutzen.
 
 Adobe Experience Manager Assets verwendet einen Selbstlernalgorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset in nur wenigen Klicks finden können. Beim intelligenten Tagging wird Adobe Sensei verwendet, unser Framework für künstliche Intelligenz und maschinelles Lernen, mit dem Standard- und unternehmensspezifische Tags erkannt und auf Bilder angewendet werden können. Intelligente Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden
 
