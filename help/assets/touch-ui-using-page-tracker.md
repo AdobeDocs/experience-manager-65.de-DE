@@ -3,7 +3,7 @@ title: Verwenden von Seiten-Tracker und Einbettungscode in Webseiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -14,9 +14,9 @@ Die Seitenverfolgung ist Teil des JavaScript-Codes, den Sie in Code von Websites
 
 Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungscode in den Code der Websites von Drittanbietern ein.
 
-Der folgende Beispielcode zeigt, wie eine Webseite, die sowohl den Seiten-Tracker-Code als auch den Einbettungscode enthält, aussieht:
+Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sowohl den Seitenverfolgungs-Code als auch Einbettungs-Code enthält:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -56,9 +56,9 @@ Der folgende Beispielcode zeigt, wie eine Webseite, die sowohl den Seiten-Tracke
 </html>
 ```
 
-## Seiten-Tracker-Code hinzufügen {#adding-page-tracker-code}
+## Add page tracker code {#adding-page-tracker-code}
 
-Sie fügen den Seiten-Trackercode im Kopfzeilenabschnitt Ihres Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
+Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
 
 ```xml
  <head>
@@ -76,9 +76,9 @@ Sie fügen den Seiten-Trackercode im Kopfzeilenabschnitt Ihres Website-Codes hin
  </head>
 ```
 
-## Einbettungscode hinzufügen {#add-embed-code}
+## Einbettungscode Hinzufügen {#add-embed-code}
 
-Sie fügen den Einbettungscode im Hauptteil Ihres Website-Codes hinzu. Das folgende Codebeispiel zeigt den Einbettungscode, der in einer Webseite enthalten ist:
+Sie können Einbettungs-Code im Hauptteil des Website-Codes hinzufügen. Das folgende Code-Beispiel zeigt den Einbettungs-Code, der in einer Web-Seite enthalten ist:
 
 ```xml
 <body>
