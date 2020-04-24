@@ -3,7 +3,7 @@ title: Asset Proxy-Entwicklung
 description: Ein Proxy ist eine AEM-Instanz, die Proxy Workers verwendet, um Aufträge zu verarbeiten. Erfahren Sie, wie Sie einen AEM-Proxy konfigurieren und einen benutzerdefinierten Proxy Worker entwickeln können, und erhalten Sie Informationen zu unterstützten Vorgängen und Proxy-Komponenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -14,7 +14,7 @@ Adobe Experience Manager (AEM) Assets verwendet einen Proxy, um die Verarbeitung
 
 Ein Proxy ist eine bestimmte (und gelegentlich separate) AEM-Instanz, die Proxy Worker als Prozessoren verwendet, um Aufträge zu bearbeiten und Ergebnisse zu generieren. Ein Proxy Worker kann für eine Vielzahl von Aufgaben verwendet werden. Bei einem AEM Assets-Proxy kann dies zum Laden von Assets zum Rendern in AEM Assets verwendet werden. Beispielsweise verarbeitet der [IDS-Proxy-Worker](indesign.md) Dateien, die in AEM Assets verwendet werden sollen, mit einem InDesign-Server.
 
-Wenn der Proxy eine separate AEM-Instanz ist, wird die Last für die AEM-Autorinstanz(en) reduziert. Standardmäßig führt AEM Assets die Asset-Verarbeitungsaufgaben in derselben JVM aus (extern über Proxy), um die Belastung der AEM-Authoring-Instanz zu verringern.
+Wenn der Proxy eine separate AEM-Instanz ist, wird die Last für die AEM-Autorinstanz(en) reduziert. Standardmäßig führt AEM Assets die Asset-Verarbeitungs-Aufgaben in derselben JVM aus (über Proxy extern übertragen), um die Belastung der AEM-Authoring-Instanz zu verringern.
 
 ## Proxy (HTTP-Zugriff) {#proxy-http-access}
 
@@ -131,7 +131,7 @@ Nachstehend finden Sie ein Beispiel für die API-Verwendung:
 
 The [IDS proxy worker](indesign.md) is an example of a AEM Assets proxy worker that is already provided out-of-the-box to outsource the processing of Indesign assets.
 
-Sie können auch Ihren eigenen AEM Assets-Proxy-Worker entwickeln und konfigurieren, um einen spezialisierten Worker zum Dispatch und Outsourcing Ihrer AEM Assets-Verarbeitungsaufgaben zu erstellen.
+Sie können auch Ihren eigenen AEM Assets-Proxy-Worker entwickeln und konfigurieren, um einen spezialisierten Worker zum Dispatch und Outsourcing Ihrer AEM Assets-Verarbeitungs-Aufgaben zu erstellen.
 
 Für die Einrichtung eines eigenen benutzerdefinierten Proxy Workers müssen Sie die folgenden Aufgaben ausführen:
 
@@ -175,7 +175,7 @@ Die Vorgehensweise wird im folgenden Diagramm erläutert:
 >
 >Was das AEM Assets-Proxyframework nicht standardmäßig bereitstellt, ist der Poolmechanismus.
 >
->Die Integration mit InDesign ermöglicht jedoch den Zugriff auf einen Pool von InDesign-Servern (IDSPool). Diese Zusammenführung ist spezifisch für die InDesign-Integration und nicht Teil des AEM Assets-Proxy-Frameworks.
+>Die Integration mit InDesign ermöglicht jedoch den Zugriff auf einen Pool von InDesign-Servern (IDSPool). Diese Pooling-Funktion ist spezifisch für die InDesign-Integration und nicht Teil des AEM Assets-Proxy-Frameworks.
 
 >[!NOTE]
 >
