@@ -10,14 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
 # MySQL-Konfiguration für Aktivierungsfunktionen {#mysql-configuration-for-enablement-features}
 
-MySQL ist eine relationale Datenbank, die hauptsächlich für die SCORM-Verfolgung und Berichterstellung von Daten für Aktivierungsressourcen verwendet wird. Es sind Tabellen für andere Funktionen wie das Verfolgen der Video-Pause/-Wiederaufnahme enthalten.
+MySQL ist eine relationale Datenbank, die in erster Linie für die SCORM-Verfolgung und die Berichte-Daten für die Aktivierungsressourcen verwendet wird. Es sind Tabellen für andere Funktionen wie das Verfolgen der Video-Pause/-Wiederaufnahme enthalten.
 
 Diese Anweisungen beschreiben, wie eine Verbindung zum MySQL-Server hergestellt, die Aktivierungsdatenbank eingerichtet und die Datenbank mit den Ausgangsdaten gefüllt wird.
 
@@ -25,16 +25,16 @@ Diese Anweisungen beschreiben, wie eine Verbindung zum MySQL-Server hergestellt,
 
 Bevor Sie die Funktion zur Aktivierung von MySQL für Communities konfigurieren, stellen Sie sicher, dass
 
-* Installation von [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server Version 5.6
-   * Version 5.7 wird für SCORM nicht unterstützt
-   * Kann derselbe Server sein wie die Authoring-AEM-Instanz
-* Installieren Sie auf allen AEM-Instanzen den offiziellen [JDBC-Treiber für MySQL](deploy-communities.md#jdbc-driver-for-mysql)
-* Installieren der [MySQL-Workbench](https://dev.mysql.com/downloads/tools/workbench/)
-* Installieren Sie auf allen AEM-Instanzen das [SCORM-Paket](enablement.md#scorm)
+* Installieren Sie [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server Version 5.6:
+   * Version 5.7 wird für SCORM nicht unterstützt.
+   * Kann derselbe Server sein wie die Authoring-AEM-Instanz.
+* Installieren Sie auf allen AEM-Instanzen den offiziellen [JDBC-Treiber für MySQL](deploy-communities.md#jdbc-driver-for-mysql).
+* Installieren Sie [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/).
+* Installieren Sie auf allen AEM-Instanzen das [SCORM-Paket](enablement.md#scorm).
 
 ## MySQL installieren {#installing-mysql}
 
-MySQL sollte gemäß den Anweisungen für das Zielbetriebssystem heruntergeladen und installiert werden.
+MySQL sollte gemäß den Anweisungen für das Zielgruppe OS heruntergeladen und installiert werden.
 
 ### Tabellennamen in Kleinbuchstaben {#lower-case-table-names}
 
@@ -43,28 +43,25 @@ Da bei SQL nicht zwischen Groß- und Kleinschreibung unterschieden wird, müssen
 So geben Sie beispielsweise alle Tabellennamen in Kleinbuchstaben unter Linux an:
 
 * Datei bearbeiten `/etc/my.cnf`
-* Fügen Sie im `[mysqld]` Abschnitt die folgende Zeile hinzu:
-   `lower_case_table_names = 1`
+* Fügen Sie im `[mysqld]` Abschnitt die folgende Zeile hinzu: `lower_case_table_names = 1`
 
 ### UTF8-Zeichensatz {#utf-character-set}
 
 Um eine bessere mehrsprachige Unterstützung zu bieten, muss der UTF8-Zeichensatz verwendet werden.
 
 Ändern Sie MySQL so, dass UTF8 als Zeichensatz verwendet wird:
-* mysql> SET NAMES &#39;utf8&#39;;
+* mysql > SET NAMES &#39;utf8&#39;;
 
 Ändern Sie die MySQL-Datenbank in UTF8:
 * Datei bearbeiten `/etc/my.cnf`
-* Fügen Sie im `[client]` Abschnitt die folgende Zeile hinzu:
-   `default-character-set=utf8`
-* Fügen Sie im `[mysqld]` Abschnitt die folgende Zeile hinzu:
-   `character-set-server=utf8`
+* Fügen Sie im `[client]` Abschnitt Folgendes hinzu: `default-character-set=utf8`
+* Fügen Sie im `[mysqld]` Abschnitt Folgendes hinzu: `character-set-server=utf8`
 
 ## MySQL Workbench installieren {#installing-mysql-workbench}
 
 MySQL Workbench bietet eine Benutzeroberfläche zum Ausführen von SQL-Skripten, die das Schema und die Ausgangsdaten installieren.
 
-MySQL Workbench sollte gemäß den Anweisungen für das Zielbetriebssystem heruntergeladen und installiert werden.
+MySQL Workbench sollte gemäß den Anweisungen für das Zielgruppe OS heruntergeladen und installiert werden.
 
 ## Aktivierungsverbindung {#enablement-connection}
 
@@ -74,20 +71,19 @@ Wenn MySQL Workbench zum ersten Mal gestartet wird, werden, sofern sie nicht ber
 
 ### Neue Verbindungseinstellungen {#new-connection-settings}
 
-1. Wählen Sie das Symbol &quot;+&quot;rechts neben `MySQL Connections`.
+1. Klicken Sie auf das Symbol &quot;+&quot;rechts neben `MySQL Connections`.
 1. Geben `Setup New Connection`Sie im Dialogfeld Werte ein, die für Ihre Plattform zu Demonstrationszwecken geeignet sind, wobei sich die Autoreninstanz AEM und MySQL auf demselben Server befinden:
    * Verbindungsname: `Enablement`
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
    * Kennwort: `no password by default`
-   * Standardschema: `leave blank`
-1. Wählen Sie `Test Connection` zur Überprüfung der Verbindung mit dem ausgeführten MySQL-Dienst
+   * Standard-Schema: `leave blank`
+1. Wählen Sie diese Option, `Test Connection` um die Verbindung zum ausgeführten MySQL-Dienst zu überprüfen.
 
 **Hinweise**:
-
-* Der Standardanschluss ist `3306`
-* Die `Connection Name` ausgewählte Angabe wird als `datasource` Name in der [JDBC OSGi-Konfiguration angegeben](#configure-jdbc-connections)
+* Der Standardanschluss ist `3306`.
+* Die `Connection Name` gewählte Bezeichnung wird als `datasource` Name in der [JDBC OSGi-Konfiguration](#configure-jdbc-connections)eingegeben.
 
 #### Erfolgreiche Verbindung {#successful-connection}
 
@@ -99,7 +95,7 @@ Wenn MySQL Workbench zum ersten Mal gestartet wird, werden, sofern sie nicht ber
 
 ## Datenbank einrichten {#database-setup}
 
-Beachten Sie beim Öffnen der neuen Aktivierungsverbindung, dass ein Testschema und Standardbenutzerkonten vorhanden sind.
+Beachten Sie beim Öffnen der neuen Aktivierungsverbindung, dass ein Test-Schema und Standardbenutzerkonten vorhanden sind.
 
 ![chlimage_1-330](assets/chlimage_1-330.png)
 
@@ -107,7 +103,7 @@ Beachten Sie beim Öffnen der neuen Aktivierungsverbindung, dass ein Testschema 
 
 Die SQL-Skripten werden mit CRXDE Lite auf der Autoreninstanz abgerufen. Das [SCORM-Paket](deploy-communities.md#scorm) muss installiert sein:
 
-1. Zu CRXDE Lite navigieren
+1. Wechseln Sie zu CRXDE Lite:
    * For example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Erweitern des `/libs/social/config/scorm/` Ordners
 1. Download `database_scormengine.sql`
@@ -115,11 +111,11 @@ Die SQL-Skripten werden mit CRXDE Lite auf der Autoreninstanz abgerufen. Das [SC
 
 ![chlimage_1-331](assets/chlimage_1-331.png)
 
-Eine Methode zum Herunterladen des Schemas ist
+Eine Möglichkeit zum Herunterladen des Schemas besteht darin,
 
-* Wählen Sie den `jcr:content`Knoten für die SQL-Datei aus
-* Beachten Sie, dass der Wert für die `jcr:data`Eigenschaft ein Ansichtslink ist
-* Link &quot;Ansicht&quot;auswählen, um die Daten in einer lokalen Datei zu speichern
+* Wählen Sie den `jcr:content`Knoten für die SQL-Datei aus.
+* Beachten Sie, dass der Wert für die `jcr:data`Eigenschaft ein Link zur Ansicht ist.
+* Wählen Sie den Link &quot;Ansicht&quot;, um die Daten in einer lokalen Datei zu speichern.
 
 ### SCORM-Datenbank erstellen {#create-scorm-database}
 
@@ -134,7 +130,7 @@ Installieren Sie das Schema, bevor Sie die Daten installieren.
 
 >[!CAUTION]
 >
->Wenn der Datenbankname geändert wird, stellen Sie sicher, dass Sie ihn in
+>Wenn der Datenbankname geändert wird, stellen Sie sicher, dass Sie ihn in den folgenden Elementen korrekt angeben:
 >
 >* [JDBC-Konfiguration](#configure-jdbc-connections)
 >* [SCORM-Konfiguration](#configure-scorm)
@@ -164,13 +160,13 @@ Beachten Sie, dass die Ausführung des `database_scormengine.sql` Skripts zum Er
 
 #### Aktualisieren {#refresh}
 
-Nachdem die Skripten ausgeführt wurden, muss der `SCHEMAS`Abschnitt des Skripts aktualisiert werden, `Navigator` damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
+Nachdem die Skripten ausgeführt wurden, muss der `SCHEMAS` Abschnitt des Skripts aktualisiert werden, `Navigator` damit die neue Datenbank angezeigt wird. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
 
 ![chlimage_1-334](assets/chlimage_1-334.png)
 
 #### Ergebnis: scormenginedb {#result-scormenginedb}
 
-Nach der Installation und Aktualisierung von SCHEMAS ist das **`scormenginedb`**sichtbar.
+Nach der Installation und Aktualisierung von SCHEMAS wird der Bildschirm angezeigt `scormenginedb` .
 
 ![chlimage_1-335](assets/chlimage_1-335.png)
 
@@ -193,11 +189,11 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
 * Geben Sie die folgenden Werte ein:
    * **[!UICONTROL JDBC-Treiberklasse]**: `com.mysql.jdbc.Driver`
-   * **DBC-Verbindung URIJ **: Server anstelle von localhost`jdbc:mysql://localhost:3306/aem63reporting`angeben, wenn der MySQL-Server nicht mit dem AEM-Server &quot;this&quot;identisch ist
-   * **[!UICONTROL Benutzername]**: Stamm-Node oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, wenn nicht &quot;root&quot;
-   * **[!UICONTROL Kennwort]**: Löschen Sie dieses Feld, wenn für MySQL kein Kennwort festgelegt wurde. Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein
-   * **[!UICONTROL Name]** der Datenquelle: Für die [MySQL-Verbindung](#new-connection-settings)eingegebener Name, z. B. &quot;Aktivierung&quot;
-* Wählen Sie **[!UICONTROL Speichern]**
+   * **DBC-Verbindung URIJ **: Geben Sie`jdbc:mysql://localhost:3306/aem63reporting`den Server anstelle von localhost an, wenn der MySQL-Server nicht mit dem AEM-Server &quot;this&quot;identisch ist.
+   * **[!UICONTROL Benutzername]**: Stamm-Node oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, wenn nicht &quot;root&quot;.
+   * **[!UICONTROL Kennwort]**: Löschen Sie dieses Feld, wenn für MySQL kein Kennwort festgelegt wurde. Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
+   * **[!UICONTROL Name]** der Datenquelle: Name, der für die [MySQL-Verbindung](#new-connection-settings)eingegeben wurde, z. B. &quot;Aktivierung&quot;.
+* Wählen Sie **[!UICONTROL Speichern]** aus.
 
 ## Scorm konfigurieren {#configure-scorm}
 
@@ -221,25 +217,26 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 * Überprüfen Sie, ob die folgenden Parameterwerte mit der [JDBC Connection](#configurejdbcconnectionspool) -Konfiguration übereinstimmen:
    * **[!UICONTROL JDBC-Verbindungs-URI]**: `jdbc:mysql://localhost:3306/ScormEngineDB` ScormEngineDB ** ist der standardmäßige Datenbankname in den SQL-Skripten
    * **[!UICONTROL Benutzername]**: Stamm-Node oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, wenn nicht &quot;root&quot;
-   * **[!UICONTROL Kennwort]**: Löschen Sie dieses Feld, wenn für MySQL kein Kennwort festgelegt wurde. Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein
+   * **[!UICONTROL Kennwort]**: Löschen Sie dieses Feld, wenn für MySQL kein Kennwort festgelegt wurde. Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
 * Zum folgenden Parameter:
    * **[!UICONTROL Scorm-Benutzerkennwort]**: NICHT BEARBEITEN
 
-      Nur zur internen Verwendung. Es ist für einen speziellen Dienstbenutzer bestimmt, der von AEM Communities zur Kommunikation mit der Scorm-Engine verwendet wird.
-* Wählen Sie **[!UICONTROL Speichern]**
+      Nur zur internen Verwendung: Es ist für einen speziellen Dienstbenutzer bestimmt, der von AEM Communities zur Kommunikation mit der Scorm-Engine verwendet wird.
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ### Adobe Granite CSRF-Filter {#adobe-granite-csrf-filter}
 
 Um sicherzustellen, dass Aktivierungskurse in allen Browsern korrekt funktionieren, müssen Sie Mozilla als Benutzeragent hinzufügen, der nicht vom CSRF-Filter überprüft wird.
 
-* Bei jeder veröffentlichten AEM-Instanz
-* Mit Administratorrechten angemeldet
+* Melden Sie sich mit Administratorrechten bei der AEM-Veröffentlichungsinstanz an.
 * Access the [web console](../../help/sites-deploying/configuring-osgi.md)
    * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
-* Suchen `Adobe Granite CSRF Filter`
-* Wählen Sie das Bearbeitungssymbol
+* Suchen Sie `Adobe Granite CSRF Filter`.
+* Wählen Sie das Bearbeitungssymbol aus.
+
    ![chlimage_1-338](assets/chlimage_1-338.png)
-* Wählen Sie das `[+]` Symbol, um einen sicheren Benutzeragent hinzuzufügen
-* Geben Sie Folgendes ein `Mozilla/*`
-* Wählen Sie **[!UICONTROL Speichern]**
+
+* Klicken Sie auf das `[+]` Symbol, um einen sicheren Benutzeragent hinzuzufügen.
+* Geben Sie Folgendes ein `Mozilla/*`.
+* Wählen Sie **[!UICONTROL Speichern]** aus.
 
