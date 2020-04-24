@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -26,14 +26,14 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 
 1. Kopieren `comment.hbs`von `libs`nach `apps`
 
-   1. auswählen `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Select **Copy**
-   1. auswählen `/apps/social/commons/components/hbs/comments/comment`
+   1. Wählen Sie nun eine der folgenden Optionen aus `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Auswahl **kopieren**
+   1. Wählen Sie nun eine der folgenden Optionen aus `/apps/social/commons/components/hbs/comments/comment`
    1. Einfügen **auswählen**
 
-1. Öffnen des überlappenden `comment.hbs`
+1. Öffnen Sie die Überlagerung `comment.hbs`
 
-   * Doppelklicken auf Knoten `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Dublette-Click auf Knoten `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Suchen Sie die folgenden Zeilen und löschen oder kommentieren Sie sie aus:
 
@@ -42,7 +42,7 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Löschen Sie die Zeilen oder umschließen Sie sie mit &#39;&lt;!—&#39; und &#39;—>&#39;, um sie zu kommentieren. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
+Löschen Sie entweder die Zeilen oder umschließen Sie sie `<!--` und `-->` kommentieren Sie sie aus. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
 
 ```xml
    xxx
@@ -53,19 +53,20 @@ Löschen Sie die Zeilen oder umschließen Sie sie mit &#39;&lt;!—&#39; und &#3
 
 ### Overlay replizieren {#replicate-the-overlay}
 
-Schieben Sie die überlagerte Kommentarkomponente mithilfe des Replikationswerkzeugs an die Veröffentlichungsinstanz.
+Schieben Sie die überlagerte Kommentarkomponente mithilfe des Replizierungswerkzeugs an die Veröffentlichungsinstanz.
 
 >[!NOTE]
 >
 >Eine stabilere Form der Replikation wäre, ein Paket im Package Manager zu erstellen und es zu [aktivieren](/help/sites-administering/package-manager.md#replicating-packages) . Ein Paket kann exportiert und archiviert werden.
 
-Wählen Sie in der globalen Navigation &quot; **Tools&quot;, &quot;Bereitstellung&quot;, &quot;Replikation** &quot;und **&quot;Tree** aktivieren&quot;.
 
-Geben Sie für den Startpfad `/apps/social/commons`** **ein und wählen Sie **Aktivieren**.
+Wählen Sie in der globalen Navigation &quot; **[!UICONTROL Werkzeuge]** &quot;> &quot; **[!UICONTROL Bereitstellung]** &quot;> &quot; **[!UICONTROL Replikation]** &quot;und klicken Sie auf &quot; **[!UICONTROL Struktur]** aktivieren&quot;.
+
+Geben Sie für den Beginn Pfad ein `/apps/social/commons` und wählen Sie **[!UICONTROL Aktivieren]**.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Ergebnisse anzeigen {#view-results}
+### Ansichten {#view-results}
 
 Wenn Sie sich als Administrator bei der Veröffentlichungsinstanz anmelden, z. B. https://localhost:4503/crx/de als Administrator/Administrator, können Sie überprüfen, ob die überlagerten Komponenten vorhanden sind.
 
