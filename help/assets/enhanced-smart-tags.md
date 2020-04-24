@@ -3,7 +3,7 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -44,7 +44,7 @@ Stellen Sie vor der Verwendung des Smart Content Service Folgendes sicher, um ei
 
 ## Einstieg {#onboarding}
 
-Smart Content Service kann als Add-on zu Experience Manager erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zum Adobe IO an den Administrator Ihres Unternehmens gesendet.
+Smart Content Service kann als Add-on zu Experience Manager erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zur Adobe-ID/O an den Administrator Ihres Unternehmens gesendet.
 
 Der Administrator kann auf den Link klicken, um den Dienst für intelligente Inhalte in Experience Manager zu integrieren. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
 
