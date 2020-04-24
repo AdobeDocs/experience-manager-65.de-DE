@@ -3,7 +3,7 @@ title: Verarbeiten von Assets mit Media Handlern und Workflows
 description: Erfahren Sie mehr über die Media-Handler und wie Sie Workflows verwenden, um Aufgaben an Ihren digitalen Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -462,7 +462,7 @@ Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Re
 
 ### An example using ImageMagick {#an-example-using-imagemagick}
 
-Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt so einrichten, dass jedes Mal, wenn ein Asset mit dem MIME-Typ GIF oder TIFF zu /content/dam auf dem AEM-Server hinzugefügt wird, ein gespiegeltes Bild des Originals zusammen mit drei zusätzlichen Miniaturbildern (140x100, 48x48 und 10x250) erstellt wird.
+Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozess einrichten, damit jedes Mal, wenn ein Asset mit dem mime-type gif oder tiff auf dem AEM-Server zu &quot;/content/dam&quot;hinzugefügt wird, ein gedrehtes Bild des Originals zusammen mit drei weiteren Miniaturansichten (140 x 100, 48 x 48 und 10 x 250) erstellt wird.
 
 Zu diesem Zweck verwenden Sie ImageMagick. ImageMagick ist eine kostenlose Software zum Erstellen, Bearbeiten und Zusammenstellen von Bitmapbildern und wird in der Regel über die Befehlszeile ausgeführt.
 
@@ -516,7 +516,7 @@ Wenn beispielsweise ImageMagick auf dem Datenträger installiert ist, der den AE
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-dann gilt der Schritt bei der Ausführung des Workflows nur für Assets, die image/gif oder mime:image/tiff als MIME-Typ haben. Der Schritt erstellt ein gespiegeltes Bild des Originals, wandelt es in eine JPG-Datei um und erstellt drei Miniaturbilder mit den Abmessungen 140x100, 48x48 und 10x250.
+then, when the workflow runs, the step only applies to assets that have `image/gif` or `mime:image/tiff` as `mime-types`, it creates a flipped image of the original, converts it into JPG and creates three thumbnails that have the dimensions: 140x100, 48x48, and 10x250.
 
 Verwenden Sie die folgenden [!UICONTROL Prozess-Argumente], um die drei Standard-Miniaturbilder mithilfe von ImageMagick zu erstellen:
 
