@@ -3,7 +3,7 @@ title: Konfigurieren von Asset-Tagging mit dem Smart Content Service
 description: Erfahren Sie, wie Sie Smart-Tagging und optimierte Smart-Tags in AEM mit dem Smart Content Service konfigurieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 Sie können Adobe Experience Manager (AEM) mithilfe von Adobe I/O mit dem Smart ContentService integrieren. Verwenden Sie diese Konfiguration, um über AEM auf den Smart Content Service zuzugreifen.
 
-Der Artikel beschreibt die folgenden Hauptaufgaben, die zum Konfigurieren des Smart Content Service erforderlich sind. Am Back-End authentifiziert der AEM-Server Ihre Service-Anmeldeinformationen beim Adobe IO-Gateway, bevor Ihre Anfrage an den Smart Content Service weitergeleitet wird.
+Der Artikel beschreibt die folgenden Hauptaufgaben, die zum Konfigurieren des Smart Content Service erforderlich sind. Am Back-End authentifiziert der AEM-Server Ihre Dienstberechtigungen mit dem Adobe I/O-Gateway, bevor Sie Ihre Anforderung an den Smart Content Service weiterleiten.
 
 * Erstellen Sie in AEM eine Konfiguration für den Smart Content Service, um einen öffentlichen Schlüssel zu erstellen. Erhalten Sie ein öffentliches Zertifikat für die OAuth-Integration.
 * Erstellen Sie eine Integration in Adobe I/O und laden Sie den generierten öffentlichen Schlüssel hoch.
