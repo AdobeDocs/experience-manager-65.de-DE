@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# Nachrichten konfigurieren{#configure-messaging}
+# Nachrichten konfigurieren {#configure-messaging}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Die Messaging-Funktion für AEM Communities bietet Besuchern (Mitgliedern) der angemeldeten Site die Möglichkeit, Nachrichten miteinander zu senden, auf die beim Anmelden der Site zugegriffen werden kann.
+Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern, die sich angemeldet haben, Nachrichten an andere zu senden, auf die beim Anmelden der Site zugegriffen werden kann.
 
-Die Messaging-Funktion wird für eine Community-Site aktiviert, indem während der Erstellung[](/help/communities/sites-console.md)einer Community-Site ein Kästchen markiert wird.
+Die Messaging-Funktion wird für eine Community-Site aktiviert, indem während der Erstellung [](/help/communities/sites-console.md)einer Community-Site ein Kästchen markiert wird.
 
 Diese Seite enthält Informationen zur Standardkonfiguration und möglichen Anpassungen.
 
@@ -44,60 +44,101 @@ Wie unten gezeigt, existiert eine Konfiguration des Dienstes für Sites, die mit
 
 Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** neben dem Dienstnamen:
 
-* **Whitelist für Nachrichtenfelder** Gibt die Eigenschaften der Komponente &quot;Nachricht erstellen&quot;an, die Benutzer bearbeiten und beibehalten können. Wenn neue Formularelemente hinzugefügt werden, muss die Element-ID hinzugefügt werden, falls gewünscht, damit sie in SRP gespeichert werden kann. Der Standardwert ist zwei Einträge: *Betreff* und *Inhalt*.
+* **Whitelist zu Nachrichtenfeldern**
 
-* **Begrenzung** der Größe des Meldungsfelds Die maximale Anzahl von Byte im Meldungsfeld jedes Benutzers. Der Standardwert ist *1073741824 *(1 GB).
+   Gibt die Eigenschaften der Komponente &quot;Nachricht erstellen&quot;an, die Benutzer bearbeiten und beibehalten können. Wenn neue Formularelemente hinzugefügt werden, muss die Element-ID hinzugefügt werden, falls gewünscht, damit sie in SRP gespeichert werden kann. Die Standardeinstellung sind zwei Einträge: *Betreff* und *Inhalt*.
 
-* **Begrenzung** der Nachrichtenanzahl Die Gesamtzahl der pro Benutzer zulässigen Nachrichten. Der Wert -1 gibt an, dass eine unbegrenzte Anzahl von Nachrichten zulässig ist, sofern die Größe des Meldungsfelds begrenzt ist. Der Standardwert ist *10000* (10 k).
+* **Begrenzung der Größe des Meldungsfelds**
 
-* **Benachrichtigt einen Lieferfehler** Wenn diese Option aktiviert ist, benachrichtigen Sie den Absender, wenn die Nachrichtenübermittlung bei einigen Empfängern fehlschlägt. Default is *checked*.
+   Die maximale Anzahl von Bytes im Meldungsfeld jedes Benutzers. Der Standardwert ist *1073741824* (1 GB).
 
-* **Fehler-Absender-ID** Name des Absenders, der in der Meldung über den Lieferfehler angezeigt wird. Der Standardwert ist *failureNotifier*.
+* **Begrenzung der Nachrichtenanzahl**
 
-* **Fehlermeldungsvorlagenpfad** Absoluter Pfad zum Stammordner für die ausgelieferte Meldung. Der Standardwert ist */etc/notification/messaging/default*.
+   Die Gesamtzahl der pro Benutzer zulässigen Nachrichten. Der Wert -1 gibt an, dass eine unbegrenzte Anzahl von Nachrichten zulässig ist, sofern die Größe des Meldungsfelds begrenzt ist. Der Standardwert ist *10000* (10 k).
 
-* **Anzahl der Wiederholungen** Anzahl der Male, die eine erneute Meldung versucht werden soll, die nicht zugestellt werden kann. Der Standardwert ist *3*.
+* **Versand-Fehler benachrichtigen**
 
-* **Warten Sie zwischen Wiederholungen** Anzahl der Sekunden, die zwischen Versuchen, eine Nachricht erneut zu senden, zu warten sind, wenn das Senden fehlgeschlagen ist. Der Standardwert ist *100 *(Sekunden).
+   Wenn diese Option aktiviert ist, benachrichtigen Sie den Absender, wenn der Versand in einigen Empfängern fehlschlägt. Default is *checked*.
 
-* **Anzahl der Updatepool-Größe** Anzahl der gleichzeitigen Threads, die für die Zähleraktualisierung verwendet werden. Der Standardwert ist *10*.
+* **Versand-Absender-ID versagen**
 
-* **Posteingangspfad**(*Erforderlich*) Der Pfad relativ zum Benutzerknoten (/home/users/*username*), der für den **`inbox`** Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/inbox.*
+   Name des Absenders, der in der Fehlermeldung angezeigt wird. Der Standardwert ist *failureNotifier*.
 
-* **Pfad** der gesendeten Elemente (*Erforderlich*) Der Pfad relativ zum Knoten des Benutzers (/home/users/*username*), der für den **`send items`** Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/sentitems* .
+* **Fehlermeldungsvorlagenpfad**
 
-* **Unterstützung von Anlagen** Wenn diese aktiviert sind, können Benutzer ihren Nachrichten Anlagen hinzufügen. Default is *checked*.
+   Absoluter Pfad zum Fehlermeldungsvorlagenstamm des Versands. Der Standardwert ist */etc/notification/messaging/default*.
 
-* **Gruppennachrichten** aktivieren Wenn diese Option aktiviert ist, können registrierte Benutzer eine Massennachricht an eine Gruppe von Mitgliedern senden. &quot;Standard&quot;ist *deaktiviert*.
+* **Anzahl der weitere Zustellversuche**
 
-* **Maximale Anzahl der Gesamtzahl der Empfänger** Wenn Gruppennachrichten aktiviert ist, geben Sie die maximale Anzahl der Empfänger an, an die eine Gruppennachricht gleichzeitig gesendet werden kann. Der Standardwert ist *100*.
+   Anzahl der Male, die eine erneute Meldung versucht werden soll, die nicht zugestellt werden kann. Der Standardwert ist *3*.
 
-* **Stapelgröße** Anzahl der Meldungen, die zusammen für einen Senden gesendet werden, wenn sie an eine große Gruppe von Empfängern gesendet werden. Der Standardwert ist *100*.
+* **Zwischen weiteren Zustellversuchen warten**
 
-* **Gesamtgröße** der Anlage Wenn supportAttachments aktiviert ist, gibt dieser Wert die maximal zulässige Gesamtgröße (in Byte) aller Anlagen an. Default is *104857600* (100 MB).
+   Anzahl der Sekunden, die zwischen Versuchen, eine Nachricht erneut zu senden, zu warten sind, wenn das Senden fehlgeschlagen ist. Default is *100* (seconds).
 
-* **Attachment type black list** Eine schwarze Liste mit Dateinamenerweiterungen, mit dem Präfix &#39;**.**&quot;, die vom System abgelehnt werden. Falls nicht auf der schwarzen Liste aufgeführt, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &#39;**+**&#39; und &#39;**-**&#39; hinzugefügt oder entfernt werden.
+* **Anzahl der Updatepoolgröße**
+
+   Anzahl der gleichzeitigen Threads, die für die Zähleraktualisierung verwendet werden. Der Standardwert ist *10*.
+
+* **Posteingangspfad**
+
+   (*Erforderlich*) Der Pfad relativ zum Knoten des Benutzers (/home/users/*username*), der für den **`inbox`** Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/inbox*.
+
+* **Pfad zu gesendeten Elementen**
+
+   (*Erforderlich*) Der Pfad relativ zum Knoten des Benutzers (/home/users/*username*), der für den **`send items`** Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/sentitems* .
+
+* **Unterstützungsanlagen**
+
+   Wenn diese Option aktiviert ist, können Benutzer ihren Nachrichten Anlagen hinzufügen. Default is *checked*.
+
+* **Aktivieren der Gruppennachrichten**
+
+   Wenn diese Option aktiviert ist, können registrierte Benutzer eine Massennachricht an eine Gruppe von Mitgliedern senden. Die Option &quot;Standard&quot;ist *deaktiviert*.
+
+* **Maximale Anzahl der Empfänger insgesamt**
+
+   Wenn Gruppennachrichten aktiviert ist, geben Sie die maximale Anzahl von Empfängern an, an die eine Gruppennachricht gleichzeitig gesendet werden kann. Der Standardwert ist *100*.
+
+* **Batch-Größe**
+
+   Anzahl der Nachrichten, die zusammen für einen Senden gesendet werden, wenn sie an eine große Gruppe von Empfängern gesendet werden. Der Standardwert ist *100*.
+
+* **Anlagengröße insgesamt**
+
+   Wenn supportAttachments aktiviert ist, gibt dieser Wert die maximal zulässige Gesamtgröße (in Byte) aller Anlagen an. Default is *104857600* (100 MB).
+
+* **Anhang Typ schwarze Liste**
+
+   Eine schwarze Liste mit Dateinamenerweiterungen, mit dem Präfix &#39;**.**&quot;, die vom System abgelehnt werden. Ist dies nicht auf der Blacklist, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &#39;**+**&#39; und &#39;**-**&#39; hinzugefügt oder entfernt werden.
 
 * **Zulässige Anlagentypen**
-   **(*Aktion erforderlich*)** Eine Whitelist der Dateinamenerweiterungen, das Gegenteil der schwarzen Liste. Um alle Dateierweiterungen mit Ausnahme der auf der schwarzen Liste aufgeführten zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um den einzelnen leeren Eintrag zu entfernen.
 
-* **Dienstauswahl**(*Erforderlich*) Ein absoluter Pfad (Endpunkt), über den der Dienst aufgerufen wird (eine virtuelle Ressource). Der Stamm des ausgewählten Pfads muss in der OSGi-Konfiguration für die *Ausführungspfade* enthalten sein [ wie `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`und `/apps/``/services/`. Zur Auswahl dieser Konfiguration für die Messaging-Funktion einer Site wird dieser Endpunkt als **`Service selector`** Wert für die `Message List and Compose Message components` (siehe [Nachrichtenfunktion](/help/communities/configure-messaging.md)) bereitgestellt.
-Die Standardeinstellung ist */bin/messaging* .
+   **(*Aktion erforderlich*)** Eine Whitelist der Dateinamenerweiterungen, das Gegenteil der schwarzen Liste. Um alle Dateinamenerweiterungen mit Ausnahme der auf der Blacklist zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um den einzelnen leeren Eintrag zu entfernen.
 
-* **Whitelist für Felder mit****Meldungsfeldern verwenden**.
+* **Dienstauswahl**
+
+   (*Erforderlich*) Ein absoluter Pfad (Endpunkt), über den der Dienst aufgerufen wird (eine virtuelle Ressource). Der Stamm des ausgewählten Pfads muss in der OSGi-Konfiguration für die *Ausführungspfade* enthalten sein [ wie `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`und `/apps/``/services/`. Um diese Konfiguration für die Messaging-Funktion einer Site auszuwählen, wird dieser Endpunkt als **`Service selector`** Wert für die `Message List and Compose Message components` (siehe [Nachrichtenfunktion](/help/communities/configure-messaging.md)) bereitgestellt.
+
+   Die Standardeinstellung ist */bin/messaging* .
+
+* **Feld-Whitelist**
+
+   Whitelist für **Nachrichtenfelder verwenden**.
 
 >[!CAUTION]
 >
 >Jedes Mal, wenn eine `Messaging Operations Service` Konfiguration zur Bearbeitung geöffnet wird und sie entfernt `allowedAttachmentTypes.name` wurde, wird ein leerer Eintrag erneut hinzugefügt, damit die Eigenschaft konfiguriert werden kann. Ein einzelner leerer Eintrag deaktiviert Dateianlagen effektiv.
 >
->Um alle Dateinamenerweiterungen mit Ausnahme der auf der schwarzen Liste aufgeführten zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um (erneut) den einzelnen leeren Eintrag zu entfernen, bevor Sie auf **Speichern** klicken.
+>Um alle Dateinamenerweiterungen mit Ausnahme der auf der Blacklist zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um (erneut) den einzelnen leeren Eintrag zu entfernen, bevor Sie auf **Speichern** klicken.
+
 
 ## Group Messaging {#group-messaging}
 
-Damit registrierte Benutzer Direktnachrichten stapelweise an Benutzergruppen senden können, stellen Sie sicher, dass Sie **Gruppennachrichten aktivieren **in den folgenden beiden Instanzen der Konfiguration von **Messaging-Vorgangsdiensten** aktivieren:
+Damit registrierte Benutzer Direktnachrichten stapelweise an Benutzergruppen senden können, müssen Sie sicherstellen, dass Sie in den beiden folgenden Instanzen der Konfiguration von **Messaging Operation Services** die Gruppennachrichten **** aktivieren:
 
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
 
 **Messaging-Dienst: Social Console**
 
