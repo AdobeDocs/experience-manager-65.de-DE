@@ -3,7 +3,7 @@ title: Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeite
 description: Erfahren Sie mehr über die ImageMagick-Software, wie Sie diese installieren, den Befehlszeilenprozessschritt einrichten und damit Miniaturansichten von Bildern bearbeiten, zusammenstellen und generieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -18,7 +18,7 @@ Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheran
 
 >[!NOTE]
 >
->Wenn Sie AEM in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten.
+>Wenn Sie AEM unter Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe-Kundendienst, wenn Sie viele hochauflösende PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
 
 ## Installieren von ImageMagick {#installing-imagemagick}
 
