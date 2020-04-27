@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
 
 ---
 
@@ -21,7 +21,7 @@ Die Bewertungskomponente, eine [tally](tally.md) -Unterklasse, ermöglicht es de
 
 Die Platzierung mehrerer Instanzen einer stimmberechtigten Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` Eigenschaft konfiguriert werden.
 
-Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilzunehmen. Der angemeldete Besucher (Mitglied) kann seine Bewertung jederzeit ändern.
+Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilzunehmen. Der in Besucher (Mitglied) unterzeichnete Vertrag kann seine Berechtigung jederzeit ändern.
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -66,17 +66,17 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Site-Besucher müsse
 
 ### Zugriff auf gepostete Ratings (UGC) {#accessing-posted-ratings-ugc}
 
-UGC sollte mit einer der Standardmethoden für Moderation moderiert werden.
+UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien zum Kodieren
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
+* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
