@@ -11,70 +11,78 @@ content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
-# Berichte-Konsole{#reports-console}
+# Berichte-Konsole {#reports-console}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Für AEM Communities gibt es verschiedene Berichte, auf die auf verschiedene Weise aus der Autorenumgebung zugegriffen werden kann.
+Für AEM Communities gibt es verschiedene Berichte, auf die von der Autorendatei aus auf verschiedene Weise zugegriffen werden kann.
 
-Im Allgemeinen sind die verschiedenen Berichte:
+Die verschiedenen Berichte sind im Allgemeinen:
 
-* [Bericht](#assignments-report) &quot;Zuweisungen&quot;- für eine [Community](/help/communities/overview.md#enablement-community), die die Lernenden bei ihren Zuweisungen unterstützt, bietet einen Überblick über den Fortschritt, einschließlich eines zugehörigen Ergebnisses bei der Implementierung des SCORM-Standards
-* [Bericht](#views-report) &quot;Ansichten&quot;: Bietet ein Diagramm der Ansichten der Inhalte von Community-Mitgliedern und Site-Besuchern für jede Community-Site
-* [Bericht](#posts-report) zu Beiträgen - enthält ein Diagramm der verschiedenen Arten von Beiträgen von Mitgliedern der Community zu jeder Community-Site
+* [Zuweisungsbericht](#assignments-report)
 
-Wenn [Adobe Analytics aktiviert](/help/communities/sites-console.md#analytics)ist, enthalten die Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Laufe der Zeit
+   Eine [Community](/help/communities/overview.md#enablement-community)für die Aktivierung bietet einen Überblick über den Fortschritt der Lernenden bei ihren Aufgaben, einschließlich eines zugehörigen Ergebnisses bei der Implementierung des SCORM-Standards.
+
+* [Ansichtsbericht](#views-report)
+
+   Bietet eine Übersicht über die Ansichten von Inhalten von Community-Mitgliedern und Site-Besuchern für jede Community-Site.
+
+* [Post-Bericht](#posts-report)
+
+   Bietet ein Diagramm mit verschiedenen Beitragstypen von Community-Mitgliedern zu jeder Community-Site.
+
+Wenn [Adobe Analytics aktiviert](/help/communities/sites-console.md#analytics)ist, enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Laufe der Zeit.
 
 Tabuläre Berichte können zur anschließenden Verarbeitung im .csv-Format exportiert werden.
 
-## Berichtkonsolen {#reporting-consoles}
+## Berichte-Konsolen {#reporting-consoles}
 
 ### Berichte für Community-Sites {#reports-for-community-sites}
 
-* aus der globalen Navigation: **Navigation**, **Communities, Berichte**
+* Aus globaler Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Berichte]**
 
-* auswählen aus
+* Wählen Sie aus:
 
-   * **Zuweisungsbericht**
+   * **[!UICONTROL Zuweisungsbericht]**
 
-      * einen Bericht für die ausgewählte Community-Site, den ausgewählten Benutzer oder die ausgewählte Gruppe und die Zuweisung erstellen
+      * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den ausgewählten Benutzer bzw. die ausgewählte Gruppe und die Zuweisung.
+   * **[!UICONTROL Post-Bericht]**
 
-      * **Post-Bericht**
+      * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
+   * **[!UICONTROL Ansichtsbericht]**
 
-         * einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum erstellen
-      * **Ansichtsbericht**
+      * einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum erstellen.
 
-         * einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum erstellen
 
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
 ### Berichte zu Aktivierungsressourcen und Lernpfaden {#reports-for-enablement-resources-and-learning-paths}
 
-* aus der globalen Navigation: **Navigation**, **Communities, Ressourcen**
+* Aus globaler Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Ressourcen]**
 
-* eine vorhandene Community-Site für die Aktivierung auswählen
+* Wählen Sie eine vorhandene Community-Site für die Aktivierung aus:
 
-   * Klicken Sie auf das Symbol **Bericht*, um Berichte zu erstellen, die alle Aktivierungsressourcen abdecken.
-   * Auswählen eines Lernpfads für die Aktivierung
-   * Wählen Sie das Symbol **Bericht **aus, um Berichte zu erstellen für
+   * Klicken Sie auf das Symbol **Bericht** , um Berichte zu erstellen, die alle Aktivierungsressourcen abdecken.
+   * Wählen Sie einen Lernpfad für die Aktivierung aus.
+   * Klicken Sie auf das Symbol **Bericht** , um Berichte zu erstellen für:
 
-      * die enthaltenen Aktivierungsressourcen
-      * den Lernenden, die dem Lernpfad zugewiesen sind
+      * Die im Lieferumfang enthaltenen Aktivierungsressourcen.
+      * Die Lernenden, die dem Lernpfad zugewiesen sind.
 
 * Diese Berichte bieten:
 
-   * Tabellendaten als CSV herunterladen
+   * Tabellendaten als CSV herunterladen:
 
-      * identifizieren von Lernenden
-      * ihren Status
-      * ob zugewiesen oder über Katalog aufgerufen
-      * Anzahl der Stellungnahmen
+      * Identifizieren des Lernenden
+      * ihr Status
+      * Ob zugewiesen oder über Katalog aufgerufen
+      * Anzahl der Kommentare
       * Sternbewertung
 
 Weitere Informationen finden Sie im Abschnitt [Berichte](/help/communities/resources.md#report) der Ressourcenkonsole.
@@ -91,16 +99,16 @@ Wählen Sie die Kriterien für den Bericht aus:
 
 * **Website**
 
-   eine Community-Site für die Aktivierung auswählen
+   Wählen Sie eine Community-Site für die Aktivierung aus.
 
 * **Benutzer oder Gruppe**
-   * Benutzer auswählen, um einen Bericht für einen Lernenden zu erstellen
-   * Gruppe auswählen, um einen Bericht für eine Gruppe Lernender zu erstellen
-   Der Tunneldienst greift in der Veröffentlichungsumgebung auf Mitglieder und Mitgliedergruppen zu
+   * Wählen Sie Benutzer, um einen Bericht für einen Lernenden zu erstellen.
+   * Wählen Sie Gruppe, um einen Bericht für eine Gruppe von Lernenden zu erstellen.
+   Der Tunneldienst greift von der Umgebung zur Veröffentlichung auf Mitglieder und Mitgliedergruppen zu.
 
 * **Zuweisung**
 
-   Wählen Sie aus den den den ausgewählten Lernenden zugewiesenen Ressourcen
+   Wählen Sie aus den den den ausgewählten Lernenden zugewiesenen Ressourcen.
 
 Wählen Sie **Erstellen** , um den Bericht zu erstellen:
 
@@ -108,30 +116,30 @@ Wählen Sie **Erstellen** , um den Bericht zu erstellen:
 
 ## Ansichtsbericht {#views-report}
 
-Die Konsole &quot;Ansichten&quot;ermöglicht die Erstellung von Berichten bei Seitenansichten durch Community-Funktionen für einen bestimmten Zeitraum.
+Die Konsole &quot;Ansichten&quot;ermöglicht die Erstellung von Berichten auf Ansichten durch Community-Funktionen für einen bestimmten Zeitraum.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **Website**
+* **[!UICONTROL Website]**
 
-   Community-Site auswählen
+   Wählen Sie eine Community-Site aus.
 
-* **Inhaltstyp**
+* **[!UICONTROL Inhaltstyp]**
 
-   kann &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen
+   Sie können &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen.
 
-* Zeitrahmen
+* **[!UICONTROL Zeitrahmen]**
 
-   Wählen Sie eines von
+   Wählen Sie eine der folgenden Optionen:
 
    * Letzte 7 Tage
    * Letzte 30 Tage
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **Erstellen** , um den Bericht zu erstellen:
+Wählen Sie **[!UICONTROL Generieren]** , um den Bericht zu erstellen.
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -143,24 +151,24 @@ In der Konsole &quot;Beiträge&quot;können Berichte für die Anzahl der Beiträ
 
 Wählen Sie die Kriterien für den Bericht aus:
 
-* **Website**
+* **[!UICONTROL Website]**
 
-   Community-Site auswählen
+   Wählen Sie eine Community-Site aus.
 
-* **Inhaltstyp**
+* **[!UICONTROL Inhaltstyp]**
 
-   kann &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen
+   Sie können &quot;Alle Inhalte&quot;auswählen oder eine der Funktionen auf der Site auswählen.
 
-* Zeitrahmen
+* **[!UICONTROL Zeitrahmen]**
 
-   Wählen Sie eines von
+   Wählen Sie eine der folgenden Optionen:
 
    * Letzte 7 Tage
    * Letzte 30 Tage
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **Erstellen** , um den Bericht zu erstellen:
+Wählen Sie **[!UICONTROL Generieren]** , um den Bericht zu erstellen.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -172,6 +180,6 @@ Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Anal
 
 ### Berichte werden nicht in der AEM Author-Instanz angezeigt {#reports-do-not-show-in-aem-author-instance}
 
-Wenn Berichte nicht in der AEM Author-Instanz angezeigt werden, prüfen Sie, ob Anpassungen vorgenommen wurden, z. B. die URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM Publish-Instanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM Authoring-Instanz in der Konfiguration **Site-Trendbericht Social-KomponentenFactory **konfiguriert wurde.
+Wenn Berichte nicht in der AEM Author-Instanz angezeigt werden, prüfen Sie, ob Anpassungen vorgenommen wurden, z. B. die URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM Publish-Instanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM Authoring-Instanz in der Konfiguration der **Site-Trendbericht Social-KomponentenFactory** konfiguriert wurde.
 
 ![URL-Zuordnung in AEM Authoring](assets/sitetrend.png)
