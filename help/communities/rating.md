@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # Verwenden von Bewertungen {#using-ratings}
 
-The `Rating`component is used standalone or in conjunction with other Communities features. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
+The `Rating` component is used standalone or in conjunction with other Communities features. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
 
 ## Hinzufügen einer Bewertung zu einer Seite {#adding-a-rating-to-a-page}
 
-Um eine `Rating`Komponente einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente `Communities / Rating` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die Mitglieder bewerten sollen.
+Um einer Seite im Autorenmodus eine `Rating` Komponente hinzuzufügen, suchen Sie die Komponente `Communities / Rating` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die Mitglieder bewerten sollen.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
