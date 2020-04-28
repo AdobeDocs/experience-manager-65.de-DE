@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 844d42ed50da153077423190684aa85265bce12f
 
 ---
 
@@ -27,7 +27,11 @@ Autoren sehen sich bei der Arbeit mit dem Editor zur Bearbeitung von Seiten mög
 
 When [editing a page](/help/sites-authoring/editing-content.md), links are not active.
 
-* [Wechseln Sie zum **Vorschaumodus**](/help/sites-authoring/editing-content.md#preview-mode) , um mithilfe der Links in Ihrem Inhalt zu navigieren.
+* [Wechseln Sie zum **Vorschau** -Modus](/help/sites-authoring/editing-content.md#preview-mode) , um mithilfe der Links in Ihrem Inhalt zu navigieren.
+
+### Strukturseiten {#structure-pages}
+
+Seiten können nicht benannt werden `structure`. Seiten mit Namen können im Seiteneditor nicht bearbeitet werden. `structure`
 
 ## CSS-Einschränkungen {#css-limitations}
 
