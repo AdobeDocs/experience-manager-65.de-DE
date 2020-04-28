@@ -1,6 +1,6 @@
 ---
-title: Bearbeiten
-seo-title: Bearbeiten
+title: 'Authoring – '
+seo-title: 'Authoring – '
 description: Konzepte der Bearbeitung (Authoring) in AEM
 seo-description: Konzepte der Bearbeitung (Authoring) in AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 
 ---
 
 
-# Bearbeiten{#authoring}
+# Authoring{#authoring}
 
 ## Das Konzept der Bearbeitung (und Veröffentlichung) {#concept-of-authoring-and-publishing}
 
@@ -38,13 +38,11 @@ In der Autorenumgebung werden die Funktionen von AEM in zwei Benutzeroberfläche
 
 >[!NOTE]
 >
->AEM selbst wird für das Erstellen der AEM-Dokumentation verwendet.
->
->Gemeinsam mit dem Dispatcher wird es auch für die Veröffentlichung genutzt.
+>Mit AEM und dem Dispatcher wird diese AEM-Dokumentation veröffentlicht.
 
 ### Autorenumgebung {#author-environment}
 
-The author works in what is known as the **author environment**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+Der Autor arbeitet in der sogenannten **Autorenumgebung**. Diese bietet eine einfach zu verwendende Oberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen von Inhalt. Normalerweise befindet sich diese hinter der Firewall eines Unternehmens, die vollen Schutz bietet und eine Anmeldung des Autors mit einem Konto mit entsprechenden Zugriffsrechten erfordert.
 
 >[!NOTE]
 >
@@ -83,19 +81,19 @@ Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/over
 >Leider gibt es bei der verwendeten Terminologie gelegentlich Überschneidungen. Dies ist bei folgenden Begriffen möglich:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
-   >  Dies sind die primären Begriffe für die Aktionen, mit denen Ihre Inhalte in Ihrer Veröffentlichungsumgebung öffentlich verfügbar gemacht werden (oder nicht).
+   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
    >
    >
 * **Aktivieren/Deaktivieren**
-   >  Diese Begriffe sind gleichbedeutend mit Veröffentlichung/Rückgängigmachen der Veröffentlichung.
+   >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
    >
    >
-* **Wiederholen/Replikation**
-   >  Hierbei handelt es sich um die technischen Begriffe, die zur Angabe der Datenbewegung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere verwendet werden; z. B. beim Veröffentlichen oder Reproduzieren von Benutzerkommentaren.
+* **Replizieren/Replikation**
+   >  Hierbei handelt es sich um die technischen Begriffe, die zur Angabe der Datenbewegung (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung zur anderen verwendet werden; z. B. beim Veröffentlichen oder Reproduzieren von Benutzerkommentaren.
 >
 
 
 
 #### Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Lastverteilung und Caching durch.**
