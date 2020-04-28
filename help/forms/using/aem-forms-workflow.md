@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
 
 ---
 
@@ -65,7 +65,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 [Datei laden](assets/example-mortgage-loan-application.zip)
 
-1. Öffnen Sie die Konsole für Arbeitsablaufmodelle. The default URL is https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Öffnen Sie die Konsole für Arbeitsablaufmodelle. Die Standardeinstellung ist `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Wählen Sie dann **Erstellen** und dann **Modell erstellen** aus. Das Dialogfeld Arbeitsablaufmodell hinzufügen wird angezeigt.
 1. Geben Sie den **Titel** und den **Namen** ein (optional). Beispiel: Hypothekenantrag. Tippen Sie auf **Fertig**.
 1. Wählen Sie das neu erstellte Workflow-Modell aus und tippen Sie auf **Bearbeiten**. Jetzt können Sie Workflow-Schritte hinzufügen, um Geschäftslogik zu erstellen. Wenn Sie ein Workflow-Modell neu erstellen, enthält dieses zunächst:
@@ -75,7 +75,7 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 1. Aktivieren Sie E-Mail-Benachrichtigungen. Sie können den formularzentrierten Arbeitsablauf auf OSGi konfigurieren, um E-Mail-Benachrichtigungen an Benutzer oder Bevollmächtigte zu senden. Führen Sie die folgenden Konfigurationen durch, um E-Mail-Benachrichtigungen zu aktivieren:
 
-   1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
+   1. Wechseln Sie zum AEM Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
    1. Öffnen Sie die Konfiguration des **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
    1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Geben Sie im Feld **[!UICONTROL Domänen]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale Instanzen sowie Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -97,17 +97,17 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 1. Ziehen Sie die Komponente „ODER-Teilung“ aus der Seitenleiste in das Workflow-Modell. Die ODER-Teilung erstellt eine Verzweigung im Workflow, nach nur einer der beiden Zweige aktiv bleibt. Mit diesem Schritt können Sie bedingte Prozesspfade in einem Workflow einrichten. Sie fügen jeder Verzweigung nach Bedarf Workflow-Schritte hinzu.
 
-   Sie können Routing-Ausdruck für eine Verzweigung mit einer Regeldefinition, einem ECMA-Skript oder einem externen Skript definieren.
+   Sie können Routing-Ausdruck für eine Verzweigung mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 
    Verwenden Sie den Ausdruck-Editor, um Routing-Ausdruck für Zweig 1 und Zweig 2 zu erstellen. Diese Routing-Ausdruck unterstützen Sie bei der Auswahl einer Verzweigung, die auf der Benutzeraktion in AEM Inbox basiert.
 
-   **Routing Ausdruck für Zweigstelle 2**
+   **Routing Ausdruck für Zweig 1**
 
    When a user taps **Approve** in AEM Inbox, Branch 1 is activated.
 
    ![Beispiel für ODER-Teilung](assets/orsplit_branch1_active_new.png)
 
-   **Routing Ausdruck für Zweig 1**
+   **Routing Ausdruck für Zweigstelle 2**
 
    When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
@@ -265,10 +265,10 @@ Sie können einen formularzentrierten Workflow auf OSGi beim Senden einer intera
 
 Sie können die Schritte „Aufgabe zuweisen“ und „E-Mail senden“ von AEM-Workflows verwenden, um eine E-Mail zu senden. Führen Sie die folgenden Schritte aus, um E-Mail-Server und andere Konfigurationen anzugeben, die zum Senden von E-Mails erforderlich sind:
 
-1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Wechseln Sie zum AEM Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
 1. Öffnen Sie die Konfiguration des **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Geben Sie im Feld **[!UICONTROL Domänen]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale Instanzen sowie Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ### Bereinigen von Workflow-Instanzen {#purge-workflow-instances}
 
-Die Minimierung der Anzahl von Workflow-Instanzen steigert die Leistung der Workflow-Engine, sodass Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen können. Detaillierte Informationen finden Sie unter [Regelmäßiges Bereinigen von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+Die Minimierung der Anzahl von Workflow-Instanzen steigert die Leistung der Workflow-Engine, sodass Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen können. Ausführliche Informationen finden Sie unter [Regelmäßiges Bereinigen von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular) bereinigen von Workflow-Instanzen
