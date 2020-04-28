@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -19,19 +19,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Die Suchfunktion kann für zahlreiche andere Funktionen wie beispielsweise Foren eingesetzt werden und bietet somit die Möglichkeit, bestimmte Inhalte aufzufinden.
 
-When adding the ability to search posts entered by community members, referred to as user generated content (UGC), there are two components: [ `Search`](#search) and [ `Search Results`](#search-results).
+Wird die Funktion zum Durchsuchen der von Community-Mitgliedern veröffentlichten Beiträge – hier „user generated content“ (UGC, benutzergenerierter Inhalt) genannt – hinzugefügt, stehen zwei Komponenten zur Verfügung: [Suche](#search) und [Suchergebnisse](#search-results).
 
 The page that includes the `Search Results` component supports both searching and the display of results.
 
-The page that includes the `Search`component provides a place to launch a search with results appearing on the `Search Results` page.
+The page that includes the `Search` component provides a place to launch a search with results appearing on the `Search Results` page.
 
 Die Suchfunktion kann gemeinsam mit anderen Funktionen verwendet werden, sodass Site-Besucher und Mitglieder in der Lage sind, Inhalte einzusehen.
 
-## Suche{#search-features}
+## Suche {#search-features}
 
 ### Hinzufügen einer Suche zu einer Seite {#add-search-to-a-page}
 
-Um einer Seite im Autorenmodus eine `Search` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Search` und an ihre Position auf einer Seite zu ziehen. Die Verwendung `Search` erfordert eine zweite Seite für die Variable `Search Results.`
+Um einer Seite im Autorenmodus eine `Search` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Search` und auf eine Seite zu ziehen. Die Verwendung `Search` erfordert eine zweite Seite für die Variable `Search Results.`
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -83,9 +83,13 @@ Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Suchergebnisse pro Seite]** Definieren Sie die Anzahl der Themen/Beiträge, die pro Seite angezeigt werden. Der Standardwert ist 10.
+* **[!UICONTROL Suchergebnisse pro Seite]**
 
-* **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt.
+   Definieren Sie die Anzahl der Themen/Beiträge pro Seite. Der Standardwert ist 10.
+
+* **[!UICONTROL Suchpfade]**
+
+   Durch Hinzufügen von Suchpfaden mit der Schaltfläche &quot;Hinzufügen Element&quot;ist die Inhaltssuche eingeschränkt.
 
 ## Zusätzliche Informationen {#additional-information}
 
