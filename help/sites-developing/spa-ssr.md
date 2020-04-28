@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 9f0eebfa0c5d2449dcc2977c7085b11a48a10eb9
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
 
 >[!NOTE]
 >
->AEM 6.5.1.0 oder höher ist erforderlich, um die Funktionen für die serverseitige Wiedergabe von SPA zu verwenden, wie in diesem Dokument beschrieben.
+>AEM 6.5.1.0 oder höher ist erforderlich, um die Funktionen zum Rendern auf der Seite des SPA-Servers zu verwenden, wie in diesem Dokument beschrieben.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-Einzelseitenanwendungen (SPAs) bieten dem Benutzer ein vielseitiges, dynamisches Erlebnis, das auf vertraute Weise reagiert und sich verhält, oft genau wie eine native Anwendung. [Dies wird erreicht, indem der Client den Inhalt vorab lädt und dann die Benutzerinteraktion](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work) intensiv aufhebt und so die erforderliche Kommunikation zwischen Client und Server minimiert, wodurch die App reaktiver wird.
+Einzelseitenanwendungen (SPAs) können dem Anwender ein umfangreiches, dynamisches Erlebnis Angebot werden, das auf vertraute Weise reagiert und sich verhält, oft genau wie eine native Anwendung. [Dies wird erreicht, indem der Client den Inhalt vorab lädt und dann die Benutzerinteraktion](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work) intensiv aufhebt und so die erforderliche Kommunikation zwischen Client und Server minimiert, wodurch die App reaktiver wird.
 
 Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wenn die SPA groß und inhaltlich reich ist. Um die Ladezeit zu optimieren, können einige Inhalte serverseitig wiedergegeben werden. Die Verwendung des serverseitigen Renderings (SSR) kann das anfängliche Laden der Seite beschleunigen und dann das Rendering an den Client weiterleiten.
 
@@ -40,8 +40,8 @@ Bei der Entscheidung, SSR zu implementieren, müssen Sie zunächst abschätzen, 
 
 SSR bietet in der Regel einen Wert, wenn eine der folgenden Fragen mit einem klaren Ja beantwortet wird:
 
-* **** SEO: Ist SSR noch immer erforderlich, damit Ihre Site von den Suchmaschinen, die Traffic bringen, korrekt indiziert wird? Beachten Sie, dass die wichtigsten Suchmaschinen-Crawler jetzt JS bewerten.
-* **** Seitengeschwindigkeit: Bietet SSR eine messbare Geschwindigkeitsverbesserung in Echtzeit-Umgebungen und steigert die Benutzererfahrung insgesamt?
+* **SEO:** Ist SSR noch immer erforderlich, damit Ihre Site von den Suchmaschinen, die Traffic bringen, korrekt indiziert wird? Denken Sie daran, dass die wichtigsten Suchmaschinen-Crawler jetzt JS bewerten.
+* **Seitengeschwindigkeit:** Bietet SSR eine messbare Geschwindigkeitsverbesserung in Echtzeit-Umgebung und steigert die Benutzerfreundlichkeit insgesamt?
 
 Nur wenn mindestens eine dieser beiden Fragen mit einem klaren Ja für Ihr Projekt beantwortet wird, empfiehlt Adobe die Implementierung von SSR. In den folgenden Abschnitten wird beschrieben, wie Sie dies mit der Adobe I/O-Laufzeit tun.
 
@@ -61,7 +61,34 @@ In den folgenden Abschnitten wird erläutert, wie Adobe I/O Runtime zum Implemen
 
 >[!NOTE]
 >
->Adobe empfiehlt für jede AEM-Umgebung (Autor, Veröffentlichung, Stage usw.) eine separate Adobe I/O-Laufzeitinstanz.
+>Adobe empfiehlt für jede AEM-Umgebung (Autor, Veröffentlichen, Stage usw.) eine separate Adobe I/O-Laufzeitinstanz.
+
+## Remote Renderer-Konfiguration {#remote-renderer-configuration}
+
+AEM muss wissen, wo der remote gerenderte Inhalt abgerufen werden kann. Unabhängig davon, [welches Modell Sie für SSR implementieren,](#adobe-i-o-runtime) müssen Sie AEM angeben, wie auf diesen Remote-Rendering-Dienst zugegriffen werden soll.
+
+Dies erfolgt über den **RemoteContentRenderer - Configuration Factory OSGi-Dienst**. Suchen Sie in der Web-Konsolenkonfiguration nach der Zeichenfolge &quot;RemoteContentRenderer&quot;unter `http://<host>:<port>/system/console/configMgr`.
+
+![Renderer-Konfiguration](assets/rendererconfig.png)
+
+Die folgenden Felder stehen für die Konfiguration zur Verfügung:
+
+* **Inhaltspfadmuster** - Regulärer Ausdruck, um bei Bedarf einen Inhaltsbereich zuzuordnen
+* **Remote-Endpunkt-URL** - URL des Endpunkts, der für die Erstellung des Inhalts verantwortlich ist
+   * Verwenden Sie das gesicherte HTTPS-Protokoll, wenn nicht im lokalen Netzwerk.
+* **Zusätzliche Anforderungsheader** - Zusätzliche Header, die der an den Remote-Endpunkt gesendeten Anforderung hinzugefügt werden
+   * Muster: `key=value`
+* **Anfrage-Timeout** - Zeitlimit für Remote-Host-Anfrage in Millisekunden
+
+>[!NOTE]
+>
+>Unabhängig davon, ob Sie sich für die Implementierung des [AEM-basierten Kommunikationsflusses](#aem-driven-communication-flow) oder des [Adobe-I/O-Laufzeitflusses entscheiden,](#adobe-i-o-runtime-driven-communication-flow) müssen Sie eine Remote-Konfiguration des Inhalts-Renderers definieren.
+>
+>Diese Konfiguration muss auch definiert werden, wenn Sie einen benutzerdefinierten Node.js-Server [verwenden.](#using-node-js)
+
+>[!NOTE]
+>
+>Diese Konfiguration nutzt den [Remote Content Renderer,](#remote-content-renderer) der über zusätzliche Erweiterungs- und Anpassungsoptionen verfügt.
 
 ## AEM-gesteuerter Kommunikationsfluss {#aem-driven-communication-flow}
 
@@ -79,7 +106,7 @@ Bei Verwendung von SSR umfasst der [Komponenteninteraktionsarbeitsablauf](/help/
 
 ## Adobe I/O-Laufzeitgesteuerter Kommunikationsfluss {#adobe-i-o-runtime-driven-communication-flow}
 
-Im vorherigen Abschnitt wird die standardmäßige und empfohlene Implementierung des serverseitigen Renderings in Bezug auf SPAs in AEM beschrieben, wobei AEM das Bootstrapping und Bereitstellen von Inhalten ausführt.
+Im vorherigen Abschnitt wird die standardmäßige und empfohlene Implementierung des serverseitigen Renderings in Bezug auf SPAs in AEM beschrieben, bei denen AEM das Bootstrapping und Bereitstellen von Inhalten ausführt.
 
 Alternativ kann SSR implementiert werden, sodass Adobe I/O Runtime für das Bootstrapping verantwortlich ist und den Kommunikationsfluss effektiv umkehrt.
 
@@ -122,7 +149,7 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
 
 ## Planung für SSR {#planning-for-ssr}
 
-Im Allgemeinen muss nur ein Teil einer Anwendung serverseitig gerendert werden. Das allgemeine Beispiel ist der Inhalt, der über der Kante beim ersten Laden der Seite angezeigt wird, wird serverseitig gerendert. Dies spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client wiedergegeben.
+Im Allgemeinen muss nur ein Teil einer Anwendung serverseitig gerendert werden. Das allgemeine Beispiel ist der Inhalt, der über der Kante beim ersten Laden der Seite angezeigt wird, wird serverseitig gerendert. Dies spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
 
 Wenn Sie erwägen, das serverseitige Rendering für Ihre SPA zu implementieren, müssen Sie überprüfen, welche Teile der App erforderlich sind.
 
@@ -130,7 +157,7 @@ Wenn Sie erwägen, das serverseitige Rendering für Ihre SPA zu implementieren, 
 
 SPA-Komponenten können vom Client (im Browser) oder vom Server gerendert werden. Beim Rendern auf Serverseite sind keine Browsereigenschaften wie Fenstergröße und -position vorhanden. Daher sollten SPA-Komponenten isomorphisch sein, sodass keine Annahme darüber besteht, wo sie gerendert werden.
 
-Um SSR zu nutzen, müssen Sie Ihren Code in AEM sowie in Adobe I/O Runtime bereitstellen, die für das serverseitige Rendering zuständig ist. Der Großteil des Codes ist identisch, aber serverspezifische Aufgaben unterscheiden sich.
+Um SSR zu nutzen, müssen Sie Ihren Code in AEM sowie in Adobe I/O Runtime bereitstellen, die für das serverseitige Rendering zuständig ist. Der Großteil des Codes ist gleich, jedoch unterscheiden sich serverspezifische Aufgaben.
 
 ## SSR für SPAs in AEM {#ssr-for-spas-in-aem}
 
@@ -141,11 +168,11 @@ Genau wie AEM die standardmäßigen SPA-Frameworks Angular und React unterstütz
 * Reaktion: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Ein einfaches Beispiel finden Sie in der App [We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Gibt die gesamte Anwendungsserverseite wieder. Obwohl dies kein echtes Beispiel ist, zeigt es doch, was zur Umsetzung der Reform des Sicherheitssektors erforderlich ist.
+Ein einfaches Beispiel finden Sie in der [Web.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Es rendert die gesamte Anwendungsserverseite. Obwohl dies kein echtes Beispiel ist, zeigt es doch, was zur Umsetzung der Reform des Sicherheitssektors erforderlich ist.
 
 >[!CAUTION]
 >
->Die [We.Retail Journal-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) dient nur zu Demonstrationszwecken und verwendet daher Node.js als einfaches Beispiel anstelle der empfohlenen Adobe I/O-Laufzeit. Dieses Beispiel sollte für keine Projektarbeit verwendet werden.
+>Die [Web.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) dient nur zu Demonstrationszwecken und verwendet daher Node.js als einfaches Beispiel anstelle der empfohlenen Adobe I/O-Laufzeit. Dieses Beispiel sollte für keine Projektarbeit verwendet werden.
 
 >[!NOTE]
 >
@@ -164,3 +191,53 @@ Bei AEM-Instanzen im Vorfeld ist es auch möglich, SSR mit einer benutzerdefinie
 >[!NOTE]
 >
 >Wenn SSR über Node.js implementiert werden muss, empfiehlt Adobe für jede AEM-Umgebung (Autor, Veröffentlichung, Stage usw.) eine separate Node.js-Instanz.
+
+## Remote Content Renderer {#remote-content-renderer}
+
+Die [Remote Content Renderer-Konfiguration](#remote-content-renderer-configuration) , die zur Verwendung von SSR mit Ihrer SPA in AEM erforderlich ist, fügt sich in einen allgemeineren Renderdienst ein, der erweitert und an Ihre Anforderungen angepasst werden kann.
+
+### RemoteContentRenderingService {#remotecontentrenderingservice}
+
+`RemoteContentRenderingService` ist ein OSGi-Dienst zum Abrufen von Inhalten, die auf einem Remote-Server wiedergegeben werden, z. B. von Adobe I/O. Der an den Remote-Server gesendete Inhalt basiert auf dem weitergeleiteten Anforderungsparameter.
+
+`RemoteContentRenderingService` kann durch Abhängigkeitsinversion in ein benutzerdefiniertes Sling-Modell oder Servlet eingefügt werden, wenn zusätzliche Inhaltsbearbeitung erforderlich ist.
+
+Dieser Dienst wird intern vom [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet)verwendet.
+
+### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
+
+Mit der `RemoteContentRendererRequestHandlerServlet` können Sie die Anforderungskonfiguration programmgesteuert einstellen. `DefaultRemoteContentRendererRequestHandlerImpl`, der bereitgestellten standardmäßigen Implementierung des Anforderungs-Handlers, ermöglicht Ihnen, mehrere OSGi-Konfigurationen zu erstellen, um einen Speicherort in der Inhaltsstruktur einem Remote-Endpunkt zuzuordnen.
+
+Um einen benutzerdefinierten Anforderungs-Handler hinzuzufügen, implementieren Sie die `RemoteContentRendererRequestHandler` Schnittstelle. Stellen Sie sicher, dass die `Constants.SERVICE_RANKING` component-Eigenschaft auf eine Ganzzahl größer als 100 gesetzt wird, was der Rangfolge der Komponente entspricht `DefaultRemoteContentRendererRequestHandlerImpl`.
+
+```
+@Component(immediate = true,
+        service = RemoteContentRendererRequestHandler.class,
+        property={
+            Constants.SERVICE_RANKING +":Integer=1000"
+        })
+public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteContentRendererRequestHandler {}
+```
+
+### OSGi-Konfiguration des Standardhandlers konfigurieren {#configure-default-handler}
+
+Die Konfiguration des Standard-Handlers muss wie im Abschnitt [Remote Content Renderer-Konfiguration](#remote-content-renderer-configuration)beschrieben konfiguriert werden.
+
+### Remote Content Renderer-Nutzung {#usage}
+
+So rufen Sie ein Servlet ab und geben Inhalte zurück, die in die Seite eingefügt werden können:
+
+1. Stellen Sie sicher, dass auf den Remote-Server zugegriffen werden kann.
+1. Hinzufügen eines der folgenden Snippets zur HTML-Vorlage einer AEM-Komponente.
+1. Optional können Sie die OSGi-Konfigurationen erstellen oder ändern.
+1. Durchsuchen des Inhalts Ihrer Site
+
+In der Regel ist die HTL-Vorlage einer Seitenkomponente der wichtigste Empfänger einer solchen Funktion.
+
+```
+<sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
+```
+
+### Voraussetzungen {#requirements}
+
+Die Servlets verwenden den Sling Model Exporter, um die Komponentendaten zu serialisieren. Standardmäßig werden sowohl das `com.adobe.cq.export.json.ContainerExporter` als auch `com.adobe.cq.export.json.ComponentExporter` als Sling Model-Adapter unterstützt. Bei Bedarf können Sie Klassen hinzufügen, die an die Verwendung der Variablen `RemoteContentRendererServlet` und die Implementierung der Anforderung angepasst werden sollen `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Die zusätzlichen Klassen müssen den `ComponentExporter`Wert erweitern.
