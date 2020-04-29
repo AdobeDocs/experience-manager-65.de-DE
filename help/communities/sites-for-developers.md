@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -21,48 +21,54 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Eine benutzerdefinierte Site-Vorlage kann für jede Sprachkopie einer Community-Site separat angegeben werden.
 
-Gehen Sie dazu wie folgt vor,
+Gehen Sie dazu wie folgt vor:
 
-* Erstellen einer benutzerdefinierten Vorlage
-* Überlagern des Standardpfads für die Site-Vorlage
-* Hinzufügen der benutzerdefinierten Vorlage zum Überlagerungspfad
-* Geben Sie die benutzerdefinierte Vorlage an, indem Sie eine `page-template` Eigenschaft zum `configuration` Knoten hinzufügen
+* Erstellen Sie eine benutzerdefinierte Vorlage.
+* Überlagern Sie den Standardpfad für die Site-Vorlage.
+* Hinzufügen die benutzerdefinierte Vorlage an den Überlagerungspfad.
+* Geben Sie die benutzerdefinierte Vorlage an, indem Sie der `page-template` Node eine `configuration` Eigenschaft hinzufügen.
 
 **Standardvorlage**:
 
-/**libs**/social/console/components/hbs/sitepage/**sitepage**.hbs
+`/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
 **Benutzerdefinierte Vorlage im Überlagerungspfad**:
 
-/**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
+`/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Eigenschaft**: page-template **Type**: Zeichenfolgenwert ****: &lt;*template-name*> (keine Erweiterung)
+**Eigenschaft**: page-template
+
+**Typ**: String
+
+**Wert**: `template-name` (keine Erweiterung)
 
 **Konfigurationsknoten**:
 
-/content/&lt;*Community-Site-Pfad*>/&lt;*lang*>/configuration
+`/content/community site path/lang/configuration`
 
-Beispiel: /content/sites/engagement/de/configuration
+Beispiel: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
 >Alle Knoten im überlagerten Pfad müssen nur vom Typ `Folder`sein.
 
+
 >[!CAUTION]
 >
->Wenn die benutzerdefinierte Vorlage den Namen *sitepage.hbs erhält,* werden alle Community-Sites angepasst.
+>Wenn der benutzerdefinierten Vorlage der Name *sitepage.hbs* zugewiesen wird, werden alle Community-Sites angepasst.
+
 
 ### Beispiel für eine benutzerdefinierte Site {#custom-site-template-example}
 
-Beispiel: `vertical-sitepage.hbs` Eine Sitevorlage, die dazu führt, dass Menülinks vertikal links unten auf der Seite platziert werden, anstatt horizontal unter dem Banner.
+Beispiel: `vertical-sitepage.hbs` Eine Sitevorlage, die dazu führt, dass Menülinks vertikal links unten auf der Seite platziert werden, anstatt horizontal unterhalb des Banners.
 
 [Datei abrufen](assets/vertical-sitepage.hbs)Platzieren Sie die benutzerdefinierte Site-Vorlage im Überlagerungsordner:
 
-/**apps**/social/console/components/hbs/sitepage/**vertical-site**.hbs
+`/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
 Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie eine `page-template` Eigenschaft zum Konfigurationsknoten hinzufügen:
 
-/content/sites/sample/de/configuration
+`/content/sites/sample/en/configuration`
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -82,7 +88,7 @@ Verwenden Sie zum Exportieren von UGC das UGC-Migrationswerkzeug für [AEM Commu
 
 ## Löschen einer Community-Site {#deleting-a-community-site}
 
-Ab AEM Communities 6.3 Service Pack 1 wird das Symbol &quot;Site löschen&quot;angezeigt, wenn Sie den Mauszeiger über die Community-Site über Communities > Sites-Konsole bewegen. Wenn Sie während der Entwicklung eine Community-Site löschen und neu starten möchten, können Sie diese Funktion verwenden. Wenn Sie eine Community-Site löschen, werden die folgenden Elemente entfernt, die mit dieser Site verbunden sind:
+Ab AEM Communities 6.3 Service Pack 1 wird das Symbol &quot;Site löschen&quot;angezeigt, wenn Sie den Mauszeiger über die Community-Site von **[!UICONTROL Communities]** > **[!UICONTROL Sites]** -Konsole führen. Wenn Sie während der Entwicklung eine Community-Site und einen Beginn löschen möchten, können Sie diese Funktion verwenden. Wenn Sie eine Community-Site löschen, werden die folgenden Elemente, die mit dieser Site verbunden sind, entfernt:
 
 * [UGC](#user-generated-content)
 * [Benutzergruppen](#community-user-groups)
@@ -93,11 +99,13 @@ Ab AEM Communities 6.3 Service Pack 1 wird das Symbol &quot;Site löschen&quot;a
 
 Identifizieren der eindeutigen Site-ID, die mit der Community-Site verknüpft ist, mithilfe von CRXDE:
 
-* Navigieren Sie zum Sprachstamm der Site, z. B. `/content/sites/*<site name>*/en/rep:policy`
+* Navigieren Sie zum Sprachstamm der Site, z. B. `/content/sites/*<site name>*/en/rep:policy`.
 
-* Suchen Sie den `allow<#>` Knoten mit einem `rep:principalName` im folgenden Format `rep:principalName = *community-enable-nrh9h-members*`
+* Suchen Sie den `allow<#>` Knoten mit einem `rep:principalName` in diesem Format `rep:principalName = *community-enable-nrh9h-members*`.
 
-* Die Site-ID ist die dritte Komponente von `rep:principalName`Beispiel: `rep:principalName = community-enable-nrh9h-members`
+* Die Site-ID ist die dritte Komponente von `rep:principalName`
+
+   Wenn z. B.`rep:principalName = community-enable-nrh9h-members`
 
    * **site name** = *enable*
    * **Site-ID** = *nrh9h*
@@ -113,27 +121,27 @@ Dies enthält ein Servlet, um alle UGC aus einem SRP zu löschen.
 
 Alle UGC können entfernt werden oder für eine bestimmte Site, z. B.:
 
-* path=/content/usergenerated/asi/mongo/content/sites/engagement
+* `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
 Dadurch werden nur benutzergenerierte Inhalte (die in der Veröffentlichung eingegeben werden) und nicht verfasste Inhalte (die im Autor eingegeben wurden) entfernt. Daher sind [Schattenknoten](srp.md#shadownodes) nicht betroffen.
 
 ### Community-Benutzergruppen {#community-user-groups}
 
-Suchen Sie in allen Autoren- und Veröffentlichungsinstanzen in der [Sicherheitskonsole](../../help/sites-administering/security.md)die [Benutzergruppen](users.md) , die folgende Elemente enthalten:
+Suchen Sie in allen Autoren- und Veröffentlichungsinstanzen in der [Sicherheitskonsole](../../help/sites-administering/security.md)nach den [Benutzergruppen](users.md) , die folgende Elemente enthalten:
 
 * Präfix mit `community`
 * Nach [eindeutiger Site-ID](#community-unique-site-id)
 
-Beispiel, `community-engage-x0e11-members`.
+Beispiel: `community-engage-x0e11-members`.
 
 ### Aktivierungselemente {#enablement-assets}
 
 In der Hauptkonsole:
 
-* Select **[!UICONTROL Assets]**
-* Modus **[!UICONTROL auswählen]** aktivieren
-* Wählen Sie den Ordner mit der [eindeutigen Site-ID](#community-unique-site-id)
-* Wählen Sie **[!UICONTROL Löschen]** aus (unter **[!UICONTROL Mehr..]**).
+* Select **[!UICONTROL Assets]**.
+* Starten Sie den **[!UICONTROL Auswahlmodus]** .
+* Wählen Sie den Ordner mit der [eindeutigen Site-ID](#community-unique-site-id)aus.
+* Wählen Sie &quot; **[!UICONTROL Löschen]** &quot;(unter **[!UICONTROL Mehr...]**).
 
 ### Datenbankdatensätze {#database-records}
 
