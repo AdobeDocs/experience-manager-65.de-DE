@@ -10,29 +10,28 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
 
 ---
 
 
 # Tagging von Aktivierungsressourcen {#tagging-enablement-resources}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Das Tagging von Ressourcen zur Aktivierung ermöglicht das Filtern von Ressourcen und Lernpfaden, wenn Mitglieder [Kataloge](functions.md#catalog-function)durchsuchen.
 
 Im Wesentlichen:
 
-* [Tag-Namespace](../../help/sites-administering/tags.md#creating-a-namespace) für jeden Katalog erstellen
+* [Tag-Namensraum](../../help/sites-administering/tags.md#creating-a-namespace) für jeden Katalog erstellen
 
    * [Tag-Berechtigungen festlegen](../../help/sites-administering/tags.md#setting-tag-permissions)
+   * Nur für Community-Mitglieder (geschlossene Community)
 
-      * Nur für Community-Mitglieder (geschlossene Community)
+      * Lesezugriff für die Mitgliedergruppe der [Community-Site zulassen](users.md#publish-group-roles)
+   * Für jeden Site-Besucher, ob angemeldet oder anonym (Open Community)
 
-         * Lesezugriff für die Mitgliedergruppe der [Community-Site zulassen](users.md#publish-group-roles)
-      * Für jeden Site-Besucher, ob angemeldet oder anonym (Open Community)
-
-         * Lesezugriff für die `Everyone`Gruppe zulassen
+      * Lesezugriff für die `Everyone` Gruppe zulassen
    * [Veröffentlichen der Tags](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -41,8 +40,8 @@ Im Wesentlichen:
 
    * [Konfigurieren von Katalogen, die in der Struktur der Site vorhanden sind](functions.md#catalog-function)
 
-      * Kann Tags zur Kataloginstanz hinzufügen, um die Liste der Tags zu steuern, die in den UI-Filtern angezeigt werden
-      * Kann [Vorfilter](catalog-developer-essentials.md#pre-filters)hinzufügen, um die im Katalog enthaltenen Ressourcen einzuschränken
+      * Kann Tags zur Kataloginstanz hinzufügen, um die Liste der Tags zu steuern, die in den UI-Filtern angezeigt werden.
+      * Kann [Pre-Filter](catalog-developer-essentials.md#pre-filters)hinzufügen, um die im Katalog enthaltenen Ressourcen einzuschränken.
 
 * [Veröffentlichen der Community-Site](sites-console.md#publishing-the-site)
 * [Tags zur Aktivierung von Ressourcen](resources.md#create-a-resource) anwenden, damit diese kategorisch gefiltert werden können
@@ -50,7 +49,7 @@ Im Wesentlichen:
 
 ## Community-Site-Tags {#community-site-tags}
 
-Beim Erstellen oder Bearbeiten einer Community-Site legt die Einstellung[ für das ](sites-console.md#tagging)Tagging den Umfang der Tags fest, die für Funktionen der Site verfügbar sind, indem eine Untergruppe der vorhandenen Tag-Namespaces ausgewählt wird.
+Beim Erstellen oder Bearbeiten einer Community-Site legt die Einstellung [für das](sites-console.md#tagging) Tagging den Umfang der Tags fest, die für Funktionen der Site verfügbar sind, indem eine Untergruppe der vorhandenen Tag-Namensraum ausgewählt wird.
 
 Obwohl Tags jederzeit erstellt und der Community-Site hinzugefügt werden können, wird empfohlen, vorher eine Taxonomie zu entwerfen, ähnlich wie beim Entwerfen einer Datenbank. Weitere Informationen finden Sie unter [Verwenden von Tags](../../help/sites-authoring/tags.md).
 
@@ -62,11 +61,11 @@ Im Folgenden sehen Sie, wie es in CRXDE angezeigt wird, wenn ein Administrator L
 
 ![chlimage_1-420](assets/chlimage_1-420.png)
 
-## Katalog-Tag-Namespaces {#catalog-tag-namespaces}
+## Kataloge Tag-Namensraum {#catalog-tag-namespaces}
 
-Die Katalogfunktion verwendet Tags, um sich selbst zu definieren. Wenn Sie die Katalogfunktion auf einer Community-Site konfigurieren, werden die Tag-Namespaces, aus denen Sie auswählen können, durch den Umfang der Tag-Namespace definiert, die für die Community-Site festgelegt werden.
+Die Katalogfunktion verwendet Tags, um sich selbst zu definieren. Wenn Sie die Katalogfunktion auf einer Community-Site konfigurieren, werden die Tag-Namensraum, aus denen Sie auswählen können, durch den Umfang der Tag-Namespace definiert, die für die Community-Site festgelegt werden.
 
-Die Funktion &quot;Katalog&quot;enthält eine Tag-Einstellung, mit der die in der Filter-Benutzeroberfläche für den Katalog aufgelisteten Tags definiert werden. Die Einstellung &quot;Alle Namespaces&quot;bezieht sich auf den Umfang der Tag-Namespaces, die für die Community-Site ausgewählt wurden.
+Die Funktion &quot;Katalog&quot;enthält eine Tag-Einstellung, mit der die in der Filter-Benutzeroberfläche für den Katalog aufgelisteten Tags definiert werden. Die Einstellung &quot;Alle Namensraum&quot;bezieht sich auf den Umfang der Tag-Namensraum, die für die Community-Site ausgewählt wurden.
 
 ![chlimage_1-421](assets/chlimage_1-421.png)
 
@@ -74,17 +73,16 @@ Die Funktion &quot;Katalog&quot;enthält eine Tag-Einstellung, mit der die in de
 
 Aktivierungsressourcen und Lernpfade werden in allen Katalogen angezeigt, wenn diese markiert `Show in Catalog` sind. Das Hinzufügen von Tags zu Ressourcen und Lernpfaden ermöglicht das Vorfiltern in bestimmten Katalogen sowie das Filtern in der Katalogbenutzeroberfläche.
 
-Die Beschränkung von Ressourcen für die Aktivierung und Lernpfaden auf bestimmte Kataloge erfolgt durch Erstellen von [Vorfiltern](catalog-developer-essentials.md#pre-filters).
+Die Beschränkung von Ressourcen für die Aktivierung und Lernpfaden auf bestimmte Kataloge erfolgt durch Erstellen von [Filtern](catalog-developer-essentials.md#pre-filters).
 
-Die Katalogbenutzeroberfläche ermöglicht es Besuchern, einen Tag-Filter auf die Liste der Ressourcen und Lernpfade anzuwenden, die in diesem Katalog angezeigt werden.
+Die Katalogbenutzeroberfläche ermöglicht es Besuchern, einen Tag-Filter auf die Liste von Ressourcen und Lernpfaden anzuwenden, die in diesem Katalog angezeigt werden.
 
-Der Administrator, der die Tags auf die Aktivierungsressourcen anwendet, muss sich der mit den Katalogen verknüpften Tag-Namespaces sowie der Taxonomie bewusst sein, um ein Untertag für eine verfeinerte Kategorisierung auszuwählen.
+Der Administrator, der die Tags auf die Aktivierungsressourcen anwendet, muss sich der mit den Katalogen verbundenen Tag-Namensraum sowie der Taxonomie bewusst sein, um ein Untertag für eine verfeinerte Kategorisierung auszuwählen.
 
-Wenn beispielsweise ein `ski-catalog` Namespace für einen Katalog mit dem Namen erstellt und festgelegt wurde `Ski Catalog`, könnte er zwei untergeordnete Tags haben: `lesson-1` und `lesson-2`.
+Wenn beispielsweise ein `ski-catalog` Namensraum erstellt und in einem Katalog mit dem Namen `Ski Catalog`festgelegt wurde, könnte er zwei untergeordnete Tags haben: `lesson-1` und `lesson-2`.
 
-Daher werden alle Aktivierungsressourcen mit einem der folgenden Tags versehen:
+Daher werden alle Aktivierungsressourcen, die mit einem von
 
-* Ski-Katalog:
 * Ski-Katalog:Lektion-1
 * Ski-Katalog:Lektion-2
 
@@ -94,13 +92,13 @@ angezeigt wird, `Ski Catalog` nachdem die Aktivierungsressource veröffentlicht 
 
 ## Ansicht des Katalogs bei der Veröffentlichung {#viewing-catalog-on-publish}
 
-Sobald alles in der Autorenumgebung eingerichtet und veröffentlicht wurde, kann die Verwendung des Katalogs zur Suche nach Ressourcen zur Aktivierung in der Veröffentlichungsumgebung erleben.
+Sobald alles in der Autorenversion eingerichtet und veröffentlicht wurde, kann die Verwendung des Katalogs zur Suche nach Ressourcen für die Aktivierung in der Umgebung &quot;Veröffentlichen&quot;erfahren werden.
 
-Wenn keine Tag-Namespaces in der Dropdown-Liste angezeigt werden, stellen Sie sicher, dass die Berechtigungen in der Veröffentlichungsumgebung korrekt festgelegt wurden.
+Wenn keine Tag-Namensraum in der Dropdown-Liste angezeigt werden, stellen Sie sicher, dass die Berechtigungen in der Umgebung zum Veröffentlichen korrekt festgelegt wurden.
 
-Wenn Tag-Namespaces hinzugefügt wurden und fehlen, stellen Sie sicher, dass die Tags und die Site erneut veröffentlicht wurden.
+Wenn Tag-Namensraum hinzugefügt wurden und fehlen, stellen Sie sicher, dass die Tags und die Site erneut veröffentlicht wurden.
 
-Wenn nach der Auswahl eines Tags beim Anzeigen des Katalogs keine Aktivierungsressourcen angezeigt werden, stellen Sie sicher, dass ein Tag aus dem (den) Namespace(en) des Katalogs, der (die) auf die Aktivierungsressource angewendet wird, vorhanden ist.
+Wenn nach der Auswahl eines Tags beim Anzeigen des Katalogs keine Aktivierungsressourcen angezeigt werden, stellen Sie sicher, dass ein Tag aus dem Namensraum des Katalogs bzw. den Katalogs auf die Aktivierungsressource angewendet wurde.
 
 ![chlimage_1-423](assets/chlimage_1-423.png)
 
