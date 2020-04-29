@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -19,15 +19,15 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Einführung {#introduction}
 
-The ability for a community member to follow [activities](activities.md) as well as be followed is established through two components: `Follow`and `Following`.
+The ability for a community member to follow [activities](activities.md) as well as be followed is established through two components: `Follow` and `Following`.
 
-The `Follow`component must be associated with another resource, and this association is already established for community members and features.
+The `Follow` component must be associated with another resource, and this association is already established for community members and features.
 
-The `Following`component simply lists the members that are either following the current member or are being followed by the current member. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine [Community-Site](overview.md#communitiessites) bereitgestellt wird.
+The `Following` component simply lists the members that are either following the current member or are being followed by the current member. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine [Community-Site](overview.md#communitiessites) bereitgestellt wird.
 
 ## Hinzufügen von Folgenden zu einer Seite {#adding-following-to-a-page}
 
-Wenn eine `Following`Komponente im Autorenmodus einer Seite hinzugefügt werden soll, suchen Sie die Komponente `Communities / Following` und ziehen Sie sie auf eine Seite, auf der das Social-Diagramm angezeigt werden soll.
+Wenn Sie eine `Following` Komponente im Autorenmodus zu einer Seite hinzufügen möchten, suchen Sie die Komponente `Communities / Following` und ziehen Sie sie auf eine Seite, auf der das Social-Diagramm angezeigt werden soll.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -37,7 +37,7 @@ When the [required client-side libraries](essentials-socialgraph.md#essentials-f
 
 ## Konfigurieren von Folgenden {#configuring-following}
 
-Currently, it is necessary to set the property to determine whether the component displays the `follows`relationship, or the `following`relationship.
+Currently, it is necessary to set the property to determine whether the component displays the `follows` relationship, or the `following` relationship.
 
 ## Zusätzliche Informationen {#additional-information}
 
