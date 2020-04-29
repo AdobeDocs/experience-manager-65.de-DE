@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
 
 ---
 
@@ -30,6 +30,7 @@ Bevor Sie mit Ihrem AEM-Entwicklungsprojekt beginnen, machen Sie sich zunächst 
 * [Fallstricke beim Programmieren](/help/sites-developing/code-pitfalls.md)
 * [JCR-Interaktion](/help/sites-developing/jcr-integration.md)
 * [OSGi-Bundles](/help/sites-developing/osgi-bundles.md)
+* [Best Practices für Java-API](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Weitere Informationen zu Best Practices {#additional-best-practices-information}
 
@@ -69,7 +70,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
    <td>Beschreibt, wie Sie die Seiteninhaltserstellung für die Touch-optimierte Benutzeroberfläche erweitern.</td>
   </tr>
   <tr>
-   <td>Workflows</td>
+   <td>Workflows  </td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">Entwickeln und Erweitern von Workflows</a></td>
    <td><p>Mit Workflows können Sie Adobe Experience Manager (AEM)-Aktivitäten automatisieren und einen größeren Umfang der Verarbeitung repräsentieren, die in einer AEM-Umgebung stattfindet. Daher empfiehlt es sich, die Workflow-Implementierungen sorgfältig zu planen.</p> </td>
   </tr>
@@ -84,7 +85,7 @@ Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzerdefinierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien zur Entwicklung flexibler, portabler Codes für das [Social-Komponenten-Framework](/help/communities/scf.md) (SCF). |
+| Best Practices für die Arbeit mit benutzerdefinierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung flexibler, portabler Codes für das [Social-Komponenten-Framework](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Communities-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungstool. |
 
 ## Tools/HTL {#tooling-htl}
@@ -93,7 +94,7 @@ HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0
 
 |  |  |  |
 |---|---|---|
-| HTL-Überblick | [HTL-Überblick und -Syntax](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
+| HTL-Überblick | [HTL-Überblick und -Syntax](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
 | Verwenden von APIs in Java | [HTL-Java-Anwendungs-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
 
 >[!NOTE]
