@@ -3,7 +3,7 @@ title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Ma
 description: Hier erfahren Sie, wie Sie den Rich-Text-Editor von Adobe Experience Manager konfigurieren, um Inhalte in Adobe Experience Manager zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
+source-git-commit: 430994c8e9951500378e0a4d56c8004e7e81c24f
 
 ---
 
@@ -160,6 +160,15 @@ Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeld-Bearbeitung
 * `rte-start`: Lösen Sie dieses Ereignis bei `contenteditable-div` des RTE aus, wenn die RTE-Bearbeitung gestartet werden soll. Dies funktioniert nur, wenn `customStart` auf „true“ gesetzt ist.
 
 Wenn der RTE im Touch-optimierten Dialogfeld verwendet wird, muss die Eigenschaft `useFixedInlineToolbar` auf „true“ gesetzt werden, um Probleme zu vermeiden.
+
+## Anpassen der ersetzenden Bearbeitung {#customizing-in-place-editing}
+
+Sie können festlegen, für welchen HTML-Selektor die Beginn des Texteditors definiert werden, indem Sie die folgenden Eigenschaften konfigurieren:
+
+* **`editElementQuery`** - Definiert auf `cq:InplaceEditingConfig`, wird diese Eigenschaft verwendet, um einen Selektor des HTML-Elements anzugeben, auf dem die Inline-Bearbeitung für die Textkomponente gestartet wird. Wenn nicht angegeben, wird die Inline-Bearbeitung direkt im HTML der Textkomponente gestartet.
+* **`textPropertyName`** - Definiert auf `cq:InplaceEditingConfig`, wird diese Eigenschaft verwendet, um den Namen der Eigenschaft anzugeben, die auf dem Knoten &quot;content&quot;gespeichert wird, auf dem der HTML-Wert der Textkomponente nach der Inline-Bearbeitung beibehalten wird.
+
+Die entsprechende Eigenschaft für den Dialogmodus ist `name`.
 
 ## Aktivieren von RTE-Funktionen durch Aktivieren von Plug-ins {#enable-rte-functionalities-by-activating-plug-ins}
 
