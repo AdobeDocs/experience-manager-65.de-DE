@@ -1,8 +1,8 @@
 ---
 title: Speicher  Konfiguration
 seo-title: Speicher  Konfiguration
-description: Zugriff auf die Speicherkonfigurationskonsole
-seo-description: Zugriff auf die Speicherkonfigurationskonsole
+description: Zugriff auf die Datenspeicherung Configuration Console
+seo-description: Zugriff auf die Datenspeicherung Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,31 +10,31 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
 
 # Speicherkonfiguration {#storage-configuration}
 
-Die Speicherkonfiguration ist das Mittel zur Identifizierung des Speicherplatzes, der für Community-Inhalte ausgewählt wurde, auch als benutzergenerierter Inhalt (UGC) bezeichnet.
+Die Konfiguration der Datenspeicherung ist das Mittel zur Identifizierung der Datenspeicherung, die für Community-Inhalte gewählt wurde, auch als benutzergenerierte Inhalte (UGC) bezeichnet.
 
-Diese Einstellung informiert den AEM Communities-Code darüber, welche Implementierung des SRP (Storage Resource Provider) beim Zugriff auf UGC verwendet werden soll, und muss die bei der Bereitstellung von AEM festgelegte Topologie widerspiegeln.
+Diese Einstellung informiert den AEM Communities-Code darüber, welche Implementierung des Datenspeicherung Resource Provider (SRP) beim Zugriff auf UGC verwendet werden soll, und muss die bei der Bereitstellung von AEM festgelegte Topologie widerspiegeln.
 
-Eine Diskussion der Speicheroptionen und Bereitstellungstopologien finden Sie unter
+Eine Diskussion der Optionen für die Datenspeicherung und der Bereitstellungstopologien finden Sie unter:
 
 * [Community Content Store](working-with-srp.md)
 * [Empfohlene Topologien](topologies.md)
 
-## Speicherkonfigurationskonsole {#storage-configuration-console}
+## Datenspeicherung Configuration Console {#storage-configuration-console}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-In der Autorenumgebung zur Speicherkonfigurationskonsole
+In der Autorenkonfiguration, um die Datenspeicherung-Konfigurationskonsole zu erreichen.
 
-* Aus globaler Navigation: **[!UICONTROL Werkzeuge > Communities > Speicherkonfiguration]**
+* Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Datenspeicherung Configuration.]**
 
-So wählen Sie eine andere Speicheroption als die Standard-JCR-Option aus:
+So wählen Sie eine andere Datenspeicherung als die Standard-JCR-Option aus:
 
 * Option auswählen
 * Passend konfigurieren
@@ -43,17 +43,18 @@ So wählen Sie eine andere Speicheroption als die Standard-JCR-Option aus:
    * Siehe Details zur [Auswahl von DSRP](dsrp.md#select-dsrp)
    * Siehe Details zur [Auswahl von ASRP](asrp.md#select-asrp)
 
-* Klicken Sie auf **[!UICONTROL Übermitteln]**
+* Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
-### JCR-Speicher {#about-jcr-storage}
+### Informationen zur JCR-Datenspeicherung {#about-jcr-storage}
 
 Beachten Sie, dass bei fehlender Auswahl standardmäßig das AEM-Repository JCR verwendet wird.
 
-JCR ist *kein* gemeinsamer Speicher für Autor- und Veröffentlichungsumgebungen. Gemeinschaftsinhalte sind nur in der Autoren- oder Veröffentlichungsumgebung sichtbar, in der sie erstellt wurden.
+JCR ist *kein* gemeinsamer Speicher für Autoren- und Veröffentlichungsfunktionen. Der Community-Inhalt ist nur von der Autor- oder Veröffentlichungsdatei sichtbar, in der er erstellt wurde.
 
 Weitere Informationen finden Sie im [JCR Store](jsrp.md) .
 
 >[!NOTE]
 >
->Das Fehlen des Knotens `srpc`unter `/etc/socialconfig` gibt den standardmäßigen [JCR-Store](jsrp.md)an.
+>Das Fehlen des Knotens `srpc` unter `/etc/socialconfig` gibt den standardmäßigen [JCR-Store](jsrp.md)an.
+
 
