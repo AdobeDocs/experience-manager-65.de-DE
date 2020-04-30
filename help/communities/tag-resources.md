@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -81,7 +81,7 @@ Der Administrator, der die Tags auf die Aktivierungsressourcen anwendet, muss si
 
 Wenn beispielsweise ein `ski-catalog` Namensraum erstellt und in einem Katalog mit dem Namen `Ski Catalog`festgelegt wurde, könnte er zwei untergeordnete Tags haben: `lesson-1` und `lesson-2`.
 
-Daher werden alle Aktivierungsressourcen, die mit einem von
+Daher werden alle Aktivierungsressourcen mit einem der folgenden Tags versehen:
 
 * Ski-Katalog:Lektion-1
 * Ski-Katalog:Lektion-2
