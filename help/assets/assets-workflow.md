@@ -3,7 +3,7 @@ title: Verarbeiten Sie Assets, um Geschäftsprozesse durchzuführen, Prüfungen 
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -24,7 +24,7 @@ Informationen zu den verschiedenen Workflow-Modellen, die standardmäßig verfü
 
 ![Einige der standardmäßigen Arbeitsabläufe](assets/aem-default-workflows.png)
 
-*Abbildung: Einige der standardmäßigen Arbeitsabläufe, die in[!DNL Experience Manager]*
+*Abbildung: Einige der standardmäßigen Workflows in[!DNL Experience Manager].*
 
 ## Apply workflows to process assets {#applying-workflows-to-assets}
 
