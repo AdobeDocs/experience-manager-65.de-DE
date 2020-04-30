@@ -3,7 +3,7 @@ title: Berichte zu Ihren digitalen Assets
 description: Verstehen Sie Berichte zu Ihren Assets in AEM Assets, die Ihnen beim Verständnis der Nutzung, Aktivität und Freigabe Ihrer digitalen Assets helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -38,12 +38,12 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
 1. Klicken Sie in der Experience Manager-Oberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 
-![Tools-Seite zum Navigieren im Assets-Bericht](assets/AssetsReportNavigation.png)
+![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
-   ![Berichttyp auswählen](assets/choose_report.png)
+   ![](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
 1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. By default, the folder path is `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
-   ![Seite zum Hinzufügen von Berichtsdetails](assets/report_configuration.png)
+   ![](assets/report_configuration.png)
 
    Wählen Sie den Datumsbereich für Ihren Bericht aus.
 
@@ -71,32 +71,32 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
    >
    >Der Bericht zur **[!UICONTROL Festplattenauslastung]** umfasst keine Felder für den Datumsbereich, da er nur den aktuellen Speicherbedarf angibt.
 
-   ![Detailseite des Berichts &quot;Festplattennutzung&quot;](assets/disk_usage_configuration.png)
+   ![](assets/disk_usage_configuration.png)
 
    When you create the **[!UICONTROL Files]** report, you can include/exclude sub-folders. Bei diesem Bericht können Sie jedoch keine Asset-Ausgabeformate miteinbeziehen.
 
-   ![Detailseite des Dateiberichts](assets/files_report.png)
+   ![](assets/files_report.png)
 
    Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus AEM Assets freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![Detailseite des Berichts &quot;Linkfreigabe&quot;](assets/link_share.png)
+   ![](assets/link_share.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können weitere Spalten auswählen. Heben Sie die Auswahl einer Spalte auf, wenn sie nicht im Bericht angezeigt werden soll.
 
-   ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/configure_columns.png)
+   ![](assets/configure_columns.png)
 
    Um einen benutzerdefinierten Spaltennamen oder Eigenschaftspfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei im „jcr:content“-Knoten in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
 
-   ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
+   ![](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
 1. Auf der Seite „Asset-Berichte“ basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel „Erfolg“, „Fehlgeschlagen“, „In Warteschlange“ oder „Geplant“. Derselbe Status wird auch im Benachrichtigungsfeld angezeigt.Klicken Sie zur Ansicht der Berichtsseite auf den Link Bericht. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
-   ![Ein generierter Bericht](assets/report_page.png)
+   ![](assets/report_page.png)
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
@@ -120,11 +120,11 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 
 1. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
 
-   ![Name für benutzerdefinierte Berichtsspalte angeben](assets/custom_columns-1.png)
+   ![](assets/custom_columns-1.png)
 
 1. Fügen Sie den Eigenschaftspfad mit der Auswahl für den Eigenschaftspfad im `jcr:content`-Knoten in CRXDE hinzu. Alternativ können Sie den Pfad im Feld „Eigenschaftspfad“ eingeben.
 
-   ![Ordnen Sie den Eigenschaftspfad Pfaden in jcr:content zu](assets/property_picker.png)
+   ![](assets/property_picker.png)
 
    To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
 
