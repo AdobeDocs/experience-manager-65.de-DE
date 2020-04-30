@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -375,13 +375,13 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
    ![Datums- und Zeitauswahl oder Verwendung von Tastaturbefehlen im Feld &quot;Uhrzeit&quot;, um Datum und Uhrzeit für die Aktivierung des Assets hinzuzufügen](assets/schedule-activation.png)
 
-   *Abbildung: Asset-Aktivierung planen*
+   *Abbildung: Planen der Asset-Aktivierung.*
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabeformate weder über die Assets-Web-Oberfläche noch über die HTTP-API verfügbar.
 
    ![Datumszeitauswahl oder Verwendung von Tasten im Feld &quot;außerhalb der Zeit&quot;, um Datum und Uhrzeit für die Asset-Aktivierung hinzuzufügen](assets/schedule-deactivation.png)
 
-   *Abbildung: Asset-Deaktivierung planen*
+   *Abbildung: Planen Sie die Deaktivierung des Assets.*
 
 1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein. Anschließend drücken Sie die Eingabetaste. Das neue Tag wird in AEM gespeichert. YouTube erfordert Tags zum Veröffentlichen. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
