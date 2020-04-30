@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -21,7 +21,9 @@ Dies sind Beispiele für das Lernen und Arbeiten mit AEM 6.1 Communities [Social
 
 ## Clientseitige Anpassung {#client-side-customization}
 
-Siehe auch clientseitige [SCF-Anpassung](client-customize.md).
+Siehe auch:
+
+* [SCF clientseitige Anpassung](client-customize.md)
 
 * [Handbuch &quot;Community-Komponenten&quot;](components-guide.md)
 
@@ -45,7 +47,7 @@ Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Mark
 
 * [AEM Communities zu MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf entwickelt wird
+   ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf entwickelt wird.
 
 * [Einstieg in AEM Communities](getting-started.md)
 
@@ -57,13 +59,13 @@ Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Mark
 
 ## Demobenutzer {#demo-users}
 
-Das Geometrixx-Beispielpaket enthält Demobenutzer. Es besteht oft ein Unterschied zwischen Besuchern (die nicht angemeldet sind) und Mitgliedern (angemeldet sind). Solange die Geometrixx-Beispielpakete installiert bleiben, können Sie mit diesen Benutzern einen angemeldeten Status simulieren, wenn Sie mit dem [Community-Komponenten-Handbuch](components-guide.md)arbeiten.
+Das Geometrixx-Beispielpaket enthält Demobenutzer. Es gibt oft Unterschiede zwischen Besuchern (die nicht angemeldet sind) und Mitgliedern (angemeldet sind). Solange die Geometrixx-Beispielpakete installiert bleiben, können Sie mithilfe dieser Benutzer einen angemeldeten Status simulieren, wenn Sie mit dem [Community Components-Handbuch](components-guide.md)arbeiten.
 
-Um eine vollständige Liste der Demobenutzer anzuzeigen, navigieren Sie mit der Leiste zu **[!UICONTROL Tools > Vorgänge > Sicherheit > Benutzer]**. Oder verwenden Sie die Classic UI- [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
+Um eine vollständige Liste der Demobenutzer zu erhalten, navigieren Sie mit der Leiste zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit > Benutzer]**. Oder verwenden Sie die Classic UI- [Sicherheitskonsole](http://localhost:4502/useradmin) zum Verwalten von Benutzern und Gruppen.
 
 Wenn eine [Community-Site erstellt](getting-started.md)wurde, ist es möglich, Demobenutzer den [Community-Benutzergruppen](users.md)zuzuweisen.
 
-***Benutzer-ID */*Kennwort:***
+***Benutzer-ID */*Kennwort***:
 
 * aaron.mcdonald@mailinator.com/Kennwort
 * emily.andrews@mailinator.com/Kennwort
