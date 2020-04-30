@@ -3,7 +3,7 @@ title: AEM Assets- und AEM Media Library-Angebot vergleichen
 description: Vergleichen Sie AEM Assets- und AEM Media Library-Angebote und kennen Sie die Unterschiede.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -70,36 +70,35 @@ In diesem Fall muss AEM Assets nicht erworben werden. Auch die Nutzung der Media
 * Adobe Asset Link (Verbindung mit Creative Cloud für Unternehmen)
 * AEM-Desktop-Programm
 * Verarbeitungsprofile
-* InDesign-Serverintegration
-* Asset-Vorlagen und Framework zur Katalogerstellung
-* Mit Adobe Photoshop, Illustrator und InDesign verknüpfte Assets
+* Integration von InDesign Server
+* Asset-Vorlagen und Katalogerstellungsrahmen
+* Integration von Adobe Fotoshop, Adobe Illustrator und Adobe InDesign
 * Mehrsprachiges Asset-Management
 * PIM-Integration
 * Rights Management
-* Unterstützung von Camera Raw
-* Suchfacetten-Management und -Konfiguration
+* Unterstützung von Camera RAW
+* Verwaltung und Konfiguration von Search Facets
 * Vordefinierte DAM-Workflows (z. B. Fotoshooting)
-* Asset-Berichte und -Analysen: Asset Insights
+* Asset Berichte und Analysen namens Insights
 * 3D-Asset-Management
 * Connected Assets
 * Brand Portal
 * Self-Service-Zugriff
 * Durchsuchen, Suchen und Herunterladen
-* Freigabe von Sammlungen und Ordnern
-* Admin Tools
-* Smart-Tags
+* Sammlungen und gemeinsame Nutzung von Ordnern
+* Admin Tools und Oberfläche
+* Intelligente Tags
 * Visuelle Suche
-* Asset-Admin-Benutzeroberfläche
 
 **Media Library**
 
 * Grundlegende Metadateneigenschaften
 * Tag-Management
 * Versionskontrolle
-* Statische Ausgabeformate
-* Projekte, Aufgaben, Workflow-Erstellung
-* Aktivitäts-Streams (Timeline)
+* Statische Darstellungen
+* Projekte, Aufgaben, Workflow-Authoring
+* Aktivität-Stream (Zeitschiene)
 * Query Builder (API)
 * Marketing Cloud-Integration
-* Benutzeroberflächenanpassung und -erweiterung
+* Anpassung und Erweiterung der Benutzeroberfläche
 * Kommentare und Anmerkungen
