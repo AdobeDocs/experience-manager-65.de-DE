@@ -1,16 +1,16 @@
 ---
-title: Bewährte Verfahren zur Überwachung der Bereitstellung von AEM Assets
-description: Bewährte Verfahren zur Überwachung der Umgebung und Leistung Ihrer AEM-Instanz nach deren Bereitstellung.
+title: Best Practices zur Überwachung der [!DNL Adobe Experience Manager Assets]-Bereitstellung.
+description: Bewährte Verfahren zur Überwachung der Umgebung und Leistung Ihrer [!DNL Adobe Experience Manager]-Bereitstellung nach deren Bereitstellung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0555655bceda4b1ac4a9f14029778387b223c2f
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Bewährte Verfahren zur Überwachung der Bereitstellung von AEM Assets {#assets-monitoring-best-practices}
+# Bewährte Verfahren zur Überwachung der [!DNL Adobe Experience Manager Assets] Bereitstellung {#assets-monitoring-best-practices}
 
-Aus Sicht von Adobe Experience Manager (AEM) Assets sollte die Überwachung das Beobachten und das Erstellen von Berichten für die folgenden Prozesse und Technologien umfassen:
+From the [!DNL Experience Manager Assets] standpoint, monitoring should include observing and reporting on the following processes and technologies:
 
 * System-CPU
 * Systemspeicherauslastung
@@ -19,13 +19,13 @@ Aus Sicht von Adobe Experience Manager (AEM) Assets sollte die Überwachung das 
 * JMX MBeans für die Heap-Nutzung und asynchrone Prozesse wie Workflows
 * Integritätsprüfungen der OSGi-Konsole
 
-Normalerweise kann die Überwachung in AEM Assets auf zwei Arten durchgeführt werden: Live-Überwachung und Langzeitüberwachung.
+Typically, [!DNL Experience Manager Assets] can be monitored in two ways, live monitoring and long term monitoring.
 
 ## Live monitoring {#live-monitoring}
 
 Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwicklungsprozesses oder in Situationen mit hoher Auslastung durchzuführen, um sich mit den Leistungsmerkmalen Ihrer Umgebung vertraut zu machen. Normalerweise sollte für die Live-Überwachung eine Tool-Suite eingesetzt werden. Einige Empfehlungen:
 
-* [Visual VM](https://visualvm.java.net/): Mit Visual VM können Sie detaillierte Java VM-Informationen einschließlich CPU-Auslastung und Java-Speicherbelegung anzeigen. Außerdem können Sie Code prüfen und auswerten, der auf einer Instanz ausgeführt wird.
+* [Visual VM](https://visualvm.java.net/): Mit Visual VM können Sie detaillierte Java-VM-Informationen, einschließlich CPU-Auslastung und Java-Speicherbelegung, Ansicht werden. Darüber hinaus können Sie Code, der in einer Bereitstellung ausgeführt wird, testen und auswerten.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html): „Top“ ist ein Linux-Befehl zum Öffnen eines Dashboards, in dem Auslastungsstatistiken angezeigt werden, z. B. zur CPU-, Arbeitsspeicher- und I/O-Auslastung. Darin können Sie sich einen allgemeinen Überblick über die Vorgänge auf einer Instanz verschaffen.
 * [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
 
@@ -34,10 +34,10 @@ Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwi
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
 
 * Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. For more details, see [How to Use Java Flight Recorder to Diagnose CQ Runtime Problems](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* AEM-Datei „error.log“: Sie können die AEM-Datei „error.log“ nach Details zu Fehlern durchsuchen, die im System protokolliert wurden. Use the command `tail -F quickstart/logs/error.log` to identify errors that you should investigate.
+* [!DNL Experience Manager] `error.log` Datei: Sie können die [!DNL Experience Manager] `error.log` Datei auf Einzelheiten zu den im System angemeldeten Fehlern überprüfen. Verwenden Sie den Befehl `tail -F quickstart/logs/error.log` , um zu untersuchende Fehler zu identifizieren.
 * [Workflow-Konsole](/help/sites-administering/workflows.md): Nutzen Sie die Workflow-Konsole, um Workflows zu überwachen, die Verzögerungen aufweisen oder hängen.
 
-Normalerweise verwenden Sie diese Tools zusammen, um sich einen umfassenden Überblick über die Leistung Ihrer AEM-Instanz zu verschaffen.
+Typically, you use these tools together to obtain a comprehensive idea about the performance of your [!DNL Experience Manager] deployment.
 
 >[!NOTE]
 >
@@ -45,18 +45,17 @@ Normalerweise verwenden Sie diese Tools zusammen, um sich einen umfassenden Übe
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
-*Abbildung: Live-Überwachung mit dem Visual VM-Tool*
-
+*Abbildung: Live-Überwachung mit dem Visual VM-Tool.*
 
 ![chlimage_1-32](assets/chlimage_1-142.png)
 
 ## Langfristige Überwachung {#long-term-monitoring}
 
-Bei der Langzeitüberwachung einer AEM-Instanz werden die gleichen Komponenten, die live überwacht werden, auch über einen längeren Zeitraum überwacht. Außerdem werden Warnungen definiert, die speziell auf Ihre Umgebung zugeschnitten sind.
+Long term monitoring of an [!DNL Experience Manager] deployment involves monitoring for a longer duration the same portions that are monitored live. Außerdem werden Warnungen definiert, die speziell auf Ihre Umgebung zugeschnitten sind.
 
 ### Protokollaggregation und Berichterstellung {#log-aggregation-and-reporting}
 
-Es sind mehrere Tools zum Aggregieren von Protokollen verfügbar, z. B. Splunk(TM) und Elastic Search/Logstash/Kabana (ELK). Zum Auswerten der Betriebszeit Ihrer AEM-Instanz ist es wichtig, dass Sie mit den jeweiligen Protokollereignissen Ihres Systems vertraut sind und basierend darauf Warnungen erstellen. Eine gute Kenntnis Ihrer Entwicklungs- und Betriebspraktiken kann Ihnen helfen, besser zu verstehen, wie Sie Ihren Protokollaggregationsprozess zur Generierung kritischer Warnungen optimieren.
+Für Aggregat-Protokolle stehen verschiedene Tools zur Verfügung, z. B. Splunk(TM) und Elastic Search, Logstash und Kabana (ELK). To evaluate the uptime of your [!DNL Experience Manager] deployment, it is important for you to understand log events specific to your system and create alerts based on them. Eine gute Kenntnis Ihrer Entwicklungs- und Betriebspraktiken kann Ihnen helfen, besser zu verstehen, wie Sie Ihren Protokollaggregationsprozess zur Generierung kritischer Warnungen optimieren.
 
 ### Umgebungsüberwachung {#environment-monitoring}
 
@@ -73,7 +72,7 @@ Sie benötigen externe Tools, z. B. NewRelic(TM) und AppDynamics(TM), um die ei
 
 #### Interne Anwendungsüberwachung {#internal-application-monitoring}
 
-Die interne Anwendungsüberwachung umfasst das Überwachen der Anwendungskomponenten, aus denen der AEM-Stapel besteht, z. B. JVM, das Inhaltsrepository und die Überwachung mit benutzerdefiniertem Anwendungscode, der auf der Plattform erstellt wird. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
+Internal application monitoring includes monitoring the application components that make up the [!DNL Experience Manager] stack, including JVM, the content repository, and monitoring through custom application code built on the platform. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
 
 Der Remotezugriff auf die JMX MBeans ist standardmäßig nicht aktiviert. Weitere Informationen zur Überwachung per JMX finden Sie unter [Überwachung und Verwaltung per JMX-Technologie](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
@@ -81,7 +80,7 @@ In vielen Fällen ist für das effektive Überwachen eines statistischen Werts e
 
 **JVM-Überwachung**
 
-Wie alle Java-basierten Anwendungsstapel ist auch AEM von den Ressourcen abhängig, die über die zugrunde liegende Java Virtual Machine bereitgestellt werden. Sie können den Status von vielen dieser Ressourcen über Platform MXBeans überwachen, die per JVM verfügbar gemacht werden. Weitere Informationen zu MXBeans finden Sie unter [Verwenden von Platform MBean Server und Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+As with any Java-based application stack, [!DNL Experience Manager] depends on the resources that are provided to it through the underlying Java Virtual Machine. Sie können den Status von vielen dieser Ressourcen über Platform MXBeans überwachen, die per JVM verfügbar gemacht werden. Weitere Informationen zu MXBeans finden Sie unter [Verwenden von Platform MBean Server und Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 Hier sind einige Baselineparameter angegeben, die Sie für JVM überwachen können:
 
@@ -93,7 +92,7 @@ Arbeitsspeicher
 * Alarmschwellenwert: Wenn die Arbeitsspeicherauslastung (Heap oder Nicht-Heap) 75 % der jeweiligen maximalen Arbeitsspeichergröße überschreitet.
 * Alarmdefinition: Entweder ist der Arbeitsspeicher des Systems unzureichend oder der Code weist ein Speicherleck auf. Analysieren Sie eine Thread-Sicherungskopie, um eine Definition zu erhalten.
 
->[!Note]
+>[!NHinweis]
 >
 >Die von dieser Bean bereitgestellten Informationen werden in Byte ausgedrückt.
 
@@ -105,11 +104,11 @@ Threads
 * Alarmschwellenwert: Wenn die Anzahl von Threads größer als 150 % des Ausgangswerts ist.
 * Alarmdefinition: Entweder ist ein aktiver ausufernder Prozess vorhanden, oder ein ineffizienter Vorgang verbraucht eine große Menge von Ressourcen. Analysieren Sie eine Thread-Sicherungskopie, um eine Definition zu erhalten.
 
-**AEM-Überwachung**
+**Monitor[!DNL Experience Manager]**
 
-AEM stellt über JMX auch einen Satz mit Statistiken und Vorgängen bereit. Diese Daten können dazu beitragen, die Systemintegrität zu bewerten und potenzielle Probleme zu identifizieren, bevor sie für Benutzer eine Beeinträchtigung darstellen. Weitere Informationen finden Sie in der [Dokumentation](/help/sites-administering/jmx-console.md) zu AEM JMX MBeans.
+[!DNL Experience Manager] stellt über JMX auch einen Satz mit Statistiken und Vorgängen bereit. Diese Daten können dazu beitragen, die Systemintegrität zu bewerten und potenzielle Probleme zu identifizieren, bevor sie für Benutzer eine Beeinträchtigung darstellen. Weitere Informationen finden Sie in der [Dokumentation](/help/sites-administering/jmx-console.md) zu JMX MBeans.[!DNL Experience Manager]
 
-Hier sind einige Baselineparameter angegeben, die Sie für AEM überwachen können:
+Here are some baseline parameters that you can monitor for [!DNL Experience Manager]:
 
 Replikationsagenten
 
@@ -120,7 +119,7 @@ Replikationsagenten
 
 * Alarmdefinition: Blockierte Warteschlange im System. Dies ist ein Hinweis darauf, dass das Replikationsziel ausgefallen oder nicht erreichbar ist. Häufig führen Netzwerk- oder Infrastrukturprobleme dazu, dass eine übermäßig hohe Zahl von Einträgen in eine Warteschlange eingereiht wird, und dies kann sich negativ auf die Systemleistung auswirken.
 
->[!Note]
+>[!NHinweis]
 >
 >For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
 
@@ -187,14 +186,14 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 ## Common issues and resolutions  {#common-issues-and-resolutions}
 
-Wenn während des Überwachungsprozesses Probleme auftreten, können Sie die folgenden Problembehandlungsschritte ausführen, um häufig auftretende Probleme mit AEM-Instanzen zu lösen:
+In the process of monitoring, if you encounter issues, here are some troubleshooting tasks that you can perform to resolve common issues with [!DNL Experience Manager] deployments:
 
 * Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. For more details, see [Maintain the repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Überprüfen Sie die `OutOfMemoryError` Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Überprüfen Sie die `OutOfMemoryError` Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 * Prüfen Sie die Protokolle auf Verweise auf nicht indizierte Abfragen, Baumstrukturdurchläufe oder Indexdurchläufe. Dies deutet auf nicht indizierte bzw. fehlerhaft indizierte Abfragen hin. For For best practices on optimizing query and indexing performance, see [Best practices for queries and indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
-* Untersuchen Sie die Ausgangspunkte des Clientnetzwerks und die Eingangspunkte des AEM-Instanznetzwerks, einschließlich Dispatcher. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
-* Vergrößern Sie den AEM-Server. Unter Umständen verfügen Sie über eine AEM-Instanz mit unzureichender Größe. Der Adobe Support kann bei der Ermittlung, ob Ihr Server ggf. zu klein ausgelegt ist, Unterstützung leisten.
+* Investigate the egress points from the client network and the ingress points to the [!DNL Experience Manager] deployment network, including the dispatcher. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
+* Vergrößern Sie Ihren [!DNL Experience Manager] Server. You may have an inadequately sized your [!DNL Experience Manager] deployment. Der Adobe-Kundendienst kann Ihnen dabei helfen, festzustellen, ob Ihr Server untermaßig ist.
 * Untersuchen Sie die Dateien `access.log` und `error.log` auf Einträge, die zu Fehlerzeitpunkten erstellt wurden. Suchen Sie nach Mustern, die ggf. auf Anomalien im benutzerdefinierten Code hinweisen. Fügen Sie diese der Liste mit den zu überwachenden Ereignissen hinzu.
