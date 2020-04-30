@@ -1,28 +1,28 @@
 ---
-title: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateiformate mit AEM Assets.
-description: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateitypen mit AEM Assets.
+title: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateiformate mit [!DNL Adobe Experience Manager Assets].
+description: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateitypen mit [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Best Practices für Dateiformate in Assets {#assets-file-format-best-practices}
 
-AEM Assets unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Zu den unterstützten Adobe-Bibliotheken zählen Adobe Camera Raw, Gibson, Adobe PDF Rasterizer und Adobe InDesign Server. Außerdem unterstützt AEM Assets Drittanbieterbibliotheken, darunter ImageMagick, TwelveMonkeys usw.
+[!DNL Adobe Experience Manager Assets] unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. The supported Adobe libraries include, [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer, and [!DNL Adobe InDesign Server]. In addition, [!DNL Experience Manager Assets] supports third-party libraries, including [!DNL ImageMagick], [!DNL TwelveMonkeys], and so on.
 
 Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von Assets unterstützte Formate](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Wenn Sie Experience Manager unter Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe-Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten. Wenden Sie sich an den Kundenbetreuer von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Werkzeuge und Modelle für die proprietären Formate von Adobe auszuwählen. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die größer als 30000 x 23000 Pixel sind.
+>If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Wenden Sie sich an den Kundenbetreuer von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Werkzeuge und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel verarbeiten.
 
-## Adobe Camera Raw-Bibliothek {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] library {#adobe-camera-raw-library}
 
-Zur optimalen Leistung empfiehlt Adobe die Verwendung der Adobe Camera Raw-Bibliothek für RAW- und DNG-Dateien.
+Zur optimalen Leistung empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw] Bibliothek für RAW- und DNG-Dateien.
 
-Die Adobe Camera Raw-Bibliothek unterstützt CMYK-Profil als Eingabe. Sie generiert die Ausgabe jedoch im RGB-Farbraum und unterstützt nur Darstellungen im JPEG-Format. Sie behält nicht den Quelldatei-Farbraum (z. B. CMYK) in den Miniaturen bei.
+[!DNL Adobe Camera Raw] library unterstützt CMYK-Profil als Eingabe. Sie generiert die Ausgabe jedoch im RGB-Farbraum und unterstützt nur Darstellungen im JPEG-Format. Sie behält nicht den Quelldatei-Farbraum (z. B. CMYK) in den Miniaturen bei.
 
 For more information, see [Camera Raw support](/help/assets/camera-raw.md).
 
@@ -36,26 +36,26 @@ Um optimale Ergebnisse zu erzielen, sollte die Adobe PDF Rasterizer-Bibliothek f
 
 Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Raster-Bibliothek unterstützt keine Farbraumkonvertierung. Unabhängig vom Farbraum der PDF-Quelldatei erzeugt Adobe PDF Raster nur RGB-Ausgaben.
 
-## Adobe InDesign Server {#adobe-indesign-server}
+## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. For more information, see [Adding AEM assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+Adobe empfiehlt, dass Sie [!DNL Adobe InDesign Server] zum Extrahieren [!DNL Adobe InDesign]spezifischer Darstellungen wie IDML und HTML verwenden. For more information, see [Adding Experience Manager assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
-## Dynamic Media  {#dynamic-media}
+## [!DNL Dynamic Media]  {#dynamic-media}
 
-Dynamic Media generiert und stellt mehrere Varianten von anspruchsvollem Inhalt über sein globales, skalierbares und leistungsoptimiertes Netzwerk bereit. Es dient der Bereitstellung interaktiver Erlebnisse und optimiert die Verwaltung digitaler Kampagnen. Weitere Informationen zur Aktivierung von Dynamic Media finden Sie unter [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] generiert und stellt mehrere Varianten von anspruchsvollem Inhalt über sein globales, skalierbares und leistungsoptimiertes Netzwerk bereit. Es dient der Bereitstellung interaktiver Erlebnisse und optimiert die Verwaltung digitaler Kampagnen. For details around enabling [!DNL Dynamic Media], see [Configuring Dynamic Media](/help/assets/config-dynamic.md).
 
-Derzeit unterstützt Dynamic Media Videos mit bis zu 20 GB Inhalt pro Datei.
+Currently, [!DNL Dynamic Media] can support videos up to 20 GB of content per file.
 
 ## ImageMagick-Bibliothek {#imagemagick-library}
 
 Adobe empfiehlt, die ImageMagick-Bibliothek für folgende Zwecke zu verwenden:
 
-* Generieren von Miniaturausgabeformaten für EPS-Dateien
-* Beibehaltung von Bildprofilinformationen
-* Beibehaltung von Transparenz
-* Verarbeitung von PSD- und PSB-Dateien
+* Generieren von Miniaturausgabeformaten für EPS-Dateien.
+* Beibehaltung von Bildprofilinformationen.
+* Beibehaltung von Transparenz.
+* Verarbeitung von PSD- und PSB-Dateien.
 
-To know how to set up the ImageMagic library in AEM, see [Using ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+To know how to set up the [!DNL ImageMagick] library in [!DNL Experience Manager], see [Using ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 ## Imaging Transcoding Library {#image-transcoding-library}
 
