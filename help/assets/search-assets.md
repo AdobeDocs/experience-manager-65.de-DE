@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mithilfe des Bedienfelds "Filter"die erforder
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -40,7 +40,7 @@ Machen Sie sich mit der Suchoberfläche und den verfügbaren Aktionen vertraut.
 
 ![Benutzeroberfläche der Suchergebnisse von Experience Manager Assets](assets/aem_search_results.png)
 
-*Abbildung: Benutzeroberfläche der Suchergebnisse von Experience Manager Assets*
+*Abbildung: Erfahren Sie mehr über die Benutzeroberfläche der Suchergebnisse von Experience Manager Assets.*
 
 **A.** Speichern Sie die Suche als intelligente Sammlung. **B.** Filter oder Vorhersagen zur Eingrenzung der Suchergebnisse. **C.** Anzeigen von Dateien, Ordnern oder beidem. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G.** Wählen Sie die geladenen Suchergebnisse aus. **H.** Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **I.** Schließen Sie die Suche **J.** Wechseln Sie zwischen der Ansicht der Karte und der Ansicht der Liste.
 
@@ -50,7 +50,7 @@ Sie können die gewünschten Assets schneller auf der Suchergebnisseite ausfindi
 
 ![Anzeigen der ungefähren Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten](assets/asset_search_results_in_facets_filters.png)
 
-*Abbildung: Anzeigen der ungefähren Anzahl der Assets ohne Filtern der Suchergebnisse in Suchfacets*
+*Abbildung: Sehen Sie sich die ungefähre Anzahl der Assets an, ohne die Suchergebnisse in den Suchfacetten zu filtern.*
 
 ## Suchergebnisse und -verhalten verstehen {#searchbehavior}
 
@@ -99,7 +99,7 @@ Um Vorschläge für mehr als einen Suchbegriff zu erhalten, geben Sie weiterhin 
 
 ![Geben Sie mehrere Suchbegriffe in Ansichten ein, die allen entsprechen](assets/search_suggestionsmanykeywords.gif)
 
-*Abbildung: Geben Sie mehrere Suchbegriffe in Ansichten ein, die allen entsprechen*
+*Abbildung: Geben Sie mehrere Suchbegriffe ein, um Vorschläge zur Ansicht einzugeben.*
 
 ### Such-Ranking und -Optimierung {#searchrank}
 
@@ -131,7 +131,7 @@ Experience Manager bietet verschiedene Methoden wie Filter, die für die gesucht
 
 ![Suchergebnisse durch Hinzufügen eines Ordnerpfads im Bedienfeld „Filter“ auf einen Ordner begrenzen](assets/search_folder_select.gif)
 
-*Abbildung: Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Bedienfeld &quot;Filter&quot;einen Ordnerpfad hinzufügen*
+*Abbildung: Beschränken Sie die Suchergebnisse auf einen Ordner, indem Sie im Bedienfeld &quot;Filter&quot;einen Ordnerpfad hinzufügen.*
 
 ### Ähnliche Bilder suchen {#visualsearch}
 
@@ -139,7 +139,7 @@ Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild ähne
 
 ![Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht der Karte](assets/search_find_similar.png)
 
-*Abbildung: Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht der Karte*
+*Abbildung: Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht.*
 
 ### Adobe Stock-Fotos {#adobestock}
 
@@ -244,7 +244,7 @@ To access the asset Picker interface, go to `https://[aem_server]:[port]/aem/ass
 
 ![Asset in der Asset-Auswahl suchen und auswählen](assets/assetpicker.png)
 
-*Abbildung: Asset in der Asset-Auswahl durchsuchen und auswählen*
+*Abbildung: Durchsuchen Sie das Asset und wählen Sie es in der Asset-Auswahl aus.*
 
 ## Beschränkungen {#limitations}
 
@@ -285,7 +285,7 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ![Suchverhalten mit und ohne Anführungszeichen](assets/search_with_quotes.gif)
 
-*Abbildung: Suchverhalten mit und ohne Anführungszeichen*
+*Abbildung: Suchverhalten mit und ohne Anführungszeichen.*
 
 **Suche mit Sternchen als Platzhalter**: Wenn Sie die Suche erweitern möchten, verwenden Sie ein Sternchen vor oder nach dem Suchbegriff, um Treffer mit einer beliebigen Anzahl von Zeichen zu erhalten. Wenn Sie beispielsweise ohne Sternchen nach „run“ suchen, werden keine Assets zurückgegeben, die Varianten des Worts enthalten (auch in den Metadaten). Ein Sternchen ersetzt eine beliebige Anzahl von Zeichen. Beispiel:
 
@@ -296,7 +296,7 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ![Illustration der Nutzung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels](assets/search_with_asterisk_run.gif)
 
-*Abbildung: Veranschaulichung der Verwendung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels*
+*Abbildung: Die Verwendung eines Sternchen-Platzhalters bei der Asset-Suche anhand eines Beispiels.*
 
 **Suchen mit Fragezeichen als Platzhalter**: Verwenden Sie zur Erweiterung der Suche ein oder mehrere Fragezeichen („?“), um Treffer mit der genauen Zeichenzahl zu erhalten. So gilt beispielsweise in der folgenden Illustration:
 
@@ -308,13 +308,13 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ![Illustration der Nutzung eines Fragezeichen-Platzhalters bei der Asset-Suche anhand eines Beispiels](assets/search_with_questionmark_run.gif)
 
-*Abbildung: Veranschaulichen der Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels*
+*Abbildung: Die Verwendung des Platzhalters für Fragezeichen bei der Asset-Suche anhand eines Beispiels wird veranschaulicht.*
 
 **Suchbegriff ausschließen**: Verwenden Sie einen Bindestrich, um nach Assets zu suchen, die einen Suchbegriff nicht enthalten. Beispielsweise gibt die Abfrage `running -shoe` Assets zurück, die `running`, aber nicht `shoe` enthalten. Gleichermaßen gibt die Abfrage `camp -night` Assets zurück, die `camp`, aber nicht `night` enthalten. Beachten Sie, dass die Abfrage `camp-night` Assets zurückgibt, die sowohl `camp` als auch `night` enthalten.
 
 ![Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten](assets/search_dash_exclude_keyword.gif)
 
-*Abbildung: Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten*
+*Abbildung: Verwendung eines Bindestrichs zur Suche nach Assets, die keinen ausgeschlossenen Suchbegriff enthalten.*
 
 ## Konfigurations- und Verwaltungsfunktionen in Bezug auf die Suchfunktion {#configadmin}
 
@@ -441,7 +441,7 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
 | Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten | Beim Suchen nach Assets, bei denen die erforderlichen Metadaten fehlen, zeigt Experience Manager möglicherweise einige Assets mit gültigen Metadaten an. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
-| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
+| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu beschränken. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht zusammenhängende oder teilweise zugehörige Suchergebnisse | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
 | Keine Vorschläge zum automatischen Ausfüllen für Assets | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | Experience Manager Assets wartet bis zum Ablauf einer Zeitüberschreitungsfrist (standardmäßig eine Stunde), bevor ein Hintergrundauftrag ausgeführt wird, um die Metadaten für alle neu hochgeladenen oder aktualisierten Assets zu indizieren, und fügt dann die Metadaten zur Liste der Vorschläge hinzu. |
 | Keine Suchergebnisse | <ul><li>Es sind keine Assets vorhanden, die Ihrer Abfrage entsprechen.</li><li>Vor der Abfrage der Suche wurde ein Leerzeichen hinzugefügt.</li><li>Ein nicht unterstütztes Metadatenfeld enthält den Suchbegriff, nach dem Sie suchen.</li><li>Die Ein- und Ausschaltzeit wurde für ein Asset konfiguriert und die Suche wurde während der Ausschaltzeit des Assets durchgeführt.</li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie (intelligente) Tagging verwenden, um die Suchergebnisse zu verbessern.</li><li>Dabei handelt es sich um eine [bekannte Einschränkung](#limitations).</li><li>Nicht alle Metadatenfelder werden bei Suchvorgängen berücksichtigt. Siehe [Suchbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Ein- und Ausschaltzeiten für die erforderlichen Assets.</li></ul> |
