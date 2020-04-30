@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in AEM verwalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -20,7 +20,7 @@ Sie können den Ablaufstatus für ein Asset in der Asset-Konsole sowohl in den A
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Abbildung: In der Ansicht der Karte zeigt ein Flag auf einem abgelaufenen Asset an*
+*Abbildung: In der Ansicht der Karte zeigt ein Flag auf der Karte das abgelaufene Asset an.*
 
 **Listenansicht**
 
@@ -123,7 +123,7 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
    ![Asset-Ablaufdatum und -Uhrzeit im Feld &quot;Abgelaufen&quot;](assets/asset-properties-advanced-tab.png)
 
 
-   *Abbildung: Erweiterte Registerkarte in Asset-Eigenschaften zum Festlegen des Asset-Ablaufs*
+   *Abbildung: Registerkarte &quot;[!UICONTROL Erweitert]&quot;auf der Seite &quot;Asset-[!UICONTROL Eigenschaften]&quot;zum Festlegen des Asset-Ablaufs.*
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL Schließen]**, um die Konsole „Assets“ anzuzeigen.
 1. Der Veröffentlichungsstatus des Assets weist in der Kartenansicht im unteren Bereich der Miniaturansicht darauf hin, dass das Asset abgelaufen ist. In der Listenansicht wird der Status des Assets als **[!UICONTROL Abgelaufen]** angegeben.
