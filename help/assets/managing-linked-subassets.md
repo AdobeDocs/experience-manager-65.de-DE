@@ -1,18 +1,18 @@
 ---
-title: Verwalten Sie zusammengesetzte Assets mit Verweisen und mehrseitigen Assets in Adobe Experience Manager.
-description: Hier erfahren Sie, wie Sie in Adobe InDesign, Adobe Illustrator und Adobe Fotoshop Verweise auf digitale Assets erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
+title: Verwalten Sie zusammengesetzte Assets mit Verweisen und mehrseitigen Assets in [!DNL Adobe Experience Manager].
+description: Hier erfahren Sie, wie Sie Verweise auf digitale Assets aus [!DNL Adobe InDesign], [!DNL Adobe Illustrator] und [!DNL Adobe Fotoshop] erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Verwalten von zusammengesetzten und mehrseitigen Assets {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] kann identifizieren, ob eine hochgeladene Datei Verweise auf Assets enthält, die bereits im Repository vorhanden sind. Diese Funktion ist nur für unterstützte Dateiformate verfügbar. Wenn das hochgeladene Asset Verweise auf Experience Manager-Assets enthält, wird eine bidirektionale Verknüpfung zwischen den hochgeladenen und den referenzierten Assets erstellt.
+[!DNL Adobe Experience Manager Assets] kann identifizieren, ob eine hochgeladene Datei Verweise auf Assets enthält, die bereits im Repository vorhanden sind. Diese Funktion ist nur für unterstützte Dateiformate verfügbar. If the uploaded asset contains any references to [!DNL Experience Manager] assets, a bidirectional link is created between the uploaded and referenced assets.
 
-Neben der Vermeidung von Redundanz wird durch Referenzieren der Assets in Adobe Creative Cloud-Anwendungen die Zusammenarbeit verbessert und die Effizienz und Produktivität der Benutzer erhöht.
+Besides eliminating redundancy, referencing the assets in [!DNL Adobe Creative Cloud] applications enhances collaboration and increases the efficiency and productivity of users.
 
 [!DNL Experience Manager Assets] unterstützt bidirektionale Verweise. Referenzierte Assets finden Sie auf der Asset-Detailseite der hochgeladenen Datei. Darüber hinaus können Sie die referenzierenden Dateien auf der Seite mit den Asset-Details des referenzierten Assets Ansicht haben.
 
@@ -25,7 +25,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 1. Rufen Sie mithilfe der [Experience Manager-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)die digitalen Assets im lokalen Dateisystem ab. Navigieren Sie zum Dateisystemspeicherort des Assets, auf den Sie verweisen möchten.
 1. Ziehen Sie das Asset aus dem lokalen Ordner in die [!DNL Illustrator] Datei.
 
-1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the Experience Manager repository.
+1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
 
 1. Nachdem der Workflow abgeschlossen ist, navigieren Sie zur Detailseite für das Asset. The references to existing digital assets are listed under **[!UICONTROL Dependencies]** in the **[!UICONTROL References]** column.
 
@@ -39,7 +39,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
    ![Ansicht der Verweise auf Experience Manager-Assets in der Spalte &quot;Verweise&quot;in den Asset-Details](assets/asset-references.png)
 
-   *Abbildung: Asset-Verweise in Asset-Details*
+   *Abbildung: Asset-Verweise in den Asset-Details.*
 
 ## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -86,7 +86,7 @@ Für die unterstützten Assets mit mehrseitigen Formaten — PDF-Dateien, AI-Dat
 
 Die Erstellung von Unter-Assets ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um die Erzeugung von Teilassets zu aktivieren:
 
-1. Melden Sie sich bei Experience Manager als Administrator an. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
 1. Wählen Sie **[!UICONTROL DAM Update Asset]** Workflow und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Klicken Sie auf **[!UICONTROL Seitenbedienfeld]** umschalten und suchen Sie den Schritt &quot;Unterelement **[!UICONTROL erstellen&quot;]** . Hinzufügen den Schritt zum Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
 
