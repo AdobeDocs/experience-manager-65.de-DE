@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -23,8 +23,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 Das Forum-Feature QnA (Fragen und Antworten) bietet Community-Mitgliedern einen Raum, Fragen zu stellen und zu beantworten. Es ermöglicht Mitgliedern Folgendes:
 
 * Neue Fragen erstellen
-* Inline-Bilder hinzufügen (mit Unterstützung für Drag &amp; Drop)
-* Fragen anzeigen und beantworten
+* Inline-Bilder Hinzufügen (mit Unterstützung für Drag &amp; Drop)
+* Ansicht und Fragen beantworten
 * Nach einer Frage suchen
 * Hilfe beim Moderieren des QnA-Inhalts
 * Identifizieren Sie die besten Antworten.
@@ -32,8 +32,8 @@ Das Forum-Feature QnA (Fragen und Antworten) bietet Community-Mitgliedern einen 
 
 Die Dokumentation beschreibt:
 
-* Hinzufügen der Funktion „Fragen-und-Antworten-Forum“ zu einer AEM-Site.
-* configuration settings for the `QnA`component.
+* Hinzufügen der Funktion des QnA-Forums zu einer AEM-Site.
+* Configuration settings for the `QnA`component.
 
 ## Hinzufügen eines Fragen-und-Antworten-Forums zu einer Seite {#adding-a-q-a-forum-to-a-page}
 
@@ -101,11 +101,11 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Fixierung zulassen**
 
-   Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Themenliste angefügt werden. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, können Forenthemen an den Anfang der Liste der Themen angefügt werden. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, per E-Mail über neue Beiträge informiert zu werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert, dass Folgendes zugelassen und [E-Mail-Konfiguration](/help/communities/email.md)konfiguriert wird. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie den Mitgliedern per E-Mail ([Abonnement](/help/communities/subscriptions.md)) eine Benachrichtigung über neue Beiträge erlauben. Erfordert, dass die Option &quot;Zulassen&quot;aktiviert und die [E-Mail-Konfiguration](/help/communities/email.md)konfiguriert wird. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Max. Dateigröße**
 
@@ -113,32 +113,35 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Zulässige Dateitypen**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste mit Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, dürfen nicht angegebene nicht hochgeladen werden. Der Standardwert ist nicht angegeben, sodass** **alle Dateitypen zulässig sind.
+   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, dürfen nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass** **alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
 
-   Relevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximale Anzahl von Bytes, die eine hochgeladene Bilddatei haben kann. Der Standardwert ist 2097152****(2 MB).
+   Relevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximale Anzahl von Bytes, die eine hochgeladene Bilddatei haben kann. Der Standardwert ist 2097152 (2 MB).
 
 * **Antworten zulassen**
 
    Wenn diese Option aktiviert ist, können Sie Antworten auf die zur Frage geposteten Kommentare zulassen. Die Option &quot;Standard&quot;ist deaktiviert.
+
 * **Abstimmung zulassen**
 
    Wenn diese Option aktiviert ist, schließen Sie die Funktion &quot;Abstimmung&quot;mit einer Frage ein. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Fragen löschen. Die Standardeinstellung ist** **deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Fragen löschen. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Privilegierte Mitglieder zulassen**
 
-   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
+   Wenn diese Option aktiviert ist, dürfen nur Privilegierte Mitglieder Inhalte erstellen.
 
 * **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
 
    Wenn diese Option aktiviert ist, wird der vom Benutzer erstellte Inhalt bei der Bearbeitung im Autorenmodus blockiert.
 
-* **Ausgewählte Antwort an den Anfang verschieben**Wenn aktiviert, ist die erste angezeigte Antwort eine ausgewählte Antwort. Die Option &quot;Standard&quot;ist deaktiviert.
+* **Ausgewählte Antwort an den Anfang verschieben**
+
+   Wenn diese Option aktiviert ist, ist die erste angezeigte Antwort eine ausgewählte Antwort. Die Option &quot;Standard&quot;ist deaktiviert.
 * **Abzeichen anzeigen**
 
    Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Abzeichen](/help/communities/implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Die Option &quot;Standard&quot;ist deaktiviert.
@@ -157,9 +160,9 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **UI-Erwähnungsmuster**
 
-   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag zu taggen (@Erwähnung). Beispiel: ~{{familyName}}{{vorname}}.
+   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag zu taggen (@Erwähnung). Beispiel: `~{{familyName}}{{givenName}}`.
 
-#### Registerkarte Benutzermoderation {#user-moderation-tab}
+#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Under the **User Moderation** tab, specify how the posted topics (questions) and answers (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
@@ -171,7 +174,7 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
    Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern eine Frage (Thema) schließen, um weitere Bearbeitungen und Antworten vorzunehmen, und eine Frage erneut öffnen. Die Option &quot;Standard&quot;ist deaktiviert.
 
-* **Themen** verschieben Wenn diese Option aktiviert ist, können Sie Moderatoren auf Veröffentlichungsseite das Verschieben von Fragen zulassen. Die Option &quot;Standard&quot;ist deaktiviert.
+* **Themen** verschieben Wenn diese Option aktiviert ist, können Sie Moderatoren auf Veröffentlichungsseite das Verschieben von Fragen gestatten. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Posts kennzeichnen**
 
@@ -179,7 +182,7 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 * **Liste mit Kenn-zeichnungsgründen**
 
-   Wenn diese Option aktiviert ist, können Sie den Mitgliedern in einer Dropdownliste gestatten, ihren Grund für die Kennzeichnung einer Frage oder Antwort als unangemessen auszuwählen. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, können die Mitglieder aus einer Dropdown-Liste auswählen, aus welchem Grund sie eine Frage oder Antwort als unangemessen kennzeichnen. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Grund für benutzerdefinierte Kennzeichnung**
 
@@ -195,11 +198,15 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 #### Tag-Feld, Registerkarte {#tag-field-tab}
 
-Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings **tab, are limited according to namespaces chosen.
+Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings** tab, are limited according to namespaces chosen.
 
-* **Zulässige Namespaces** Relevant, wenn sie unter der Registerkarte **Einstellungen **markiert `Allow Tagging` sind. Die Tags, die angewendet werden können, sind auf die Tags innerhalb der aktivierten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+* **Zulässige Namespaces**
 
-* **Empfehlungsgrenze** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Der Wert **-**1 bedeutet keine Einschränkungen. Der Standardwert ist 0.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert wurde. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namensraum-Kategorien. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) und &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+
+* **Empfehlungsgrenze**
+
+   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Wert **-**1 bedeutet keine Einschränkungen. Der Standardwert ist 0.
 
 #### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
@@ -207,7 +214,7 @@ Geben Sie auf der Registerkarte &quot; **Sortiereinstellungen** &quot;an, wie di
 
 * **Sortierfolge**
 
-   Aktivieren Sie alle zulässigen Sortieroptionen: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
+   Aktivieren Sie alle zulässigen Sortierungsoptionen: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
 
 * **Als Standard festlegen**
 
@@ -221,11 +228,11 @@ Geben Sie auf der Registerkarte &quot; **Sortiereinstellungen** &quot;an, wie di
 
 ### Identifizieren von Antworten {#identifying-answers}
 
-Eine Antwort kann mit der `Select Answer` Schaltfläche als richtige oder nützliche Antwort gekennzeichnet werden. Nachdem eine Frage als &quot;Beantwortet&quot;markiert wurde, kann erst eine andere Antwort ausgewählt werden, wenn die erste mit der `Unmark Chosen Answer`Schaltfläche deaktiviert wurde.
+Eine Antwort kann mit der `Select Answer` Schaltfläche als richtige oder nützliche Antwort gekennzeichnet werden. Nachdem eine Frage als &quot;Beantwortet&quot;markiert wurde, kann erst eine andere Antwort ausgewählt werden, wenn die erste mit der `Unmark Chosen Answer` Schaltfläche deaktiviert wurde.
 
-Nach Auswahl als brauchbare Antwort kann die Auswahl mithilfe der `Unmark Chosen Answer` Schaltfläche aufgehoben werden.
+Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der `Unmark Chosen Answer` Schaltfläche aufgehoben werden.
 
-Sobald eine Antwort als praktikable Antwort ausgewählt wurde, wird auf der Hauptseite der QnA neben dem Fragethema ein Hinweis darauf angezeigt, dass die Frage angezeigt `Answered`wurde.
+Sobald eine Antwort als praktikable Antwort ausgewählt wurde, wird auf der Hauptseite der QnA neben dem Fragethema ein Hinweis darauf angezeigt, dass die Frage angezeigt `Answered` wurde.
 
 #### Moderatoren und Administratoren {#moderators-and-administrators}
 
@@ -235,12 +242,12 @@ Sie können auch Antworten identifizieren.
 
 #### Mitglieder {#members}
 
-Wenn die Besucher der Site angemeldet sind, können sie je nach Konfiguration:
+Wenn die Site-Besucher angemeldet sind, können sie je nach Konfiguration:
 
-* Veröffentlichen neuer Fragen.
-* Bearbeiten oder Löschen selbst gestellter Fragen.
-* Flag Fragen oder Antworten anderer Mitglieder.
-* Antworten auf von ihnen erstellte Fragen zu finden.
+* Posten Sie eine neue Frage.
+* Bearbeiten oder löschen Sie die von ihnen erstellten Fragen.
+* Kennzeichnen Sie Fragen oder Antworten anderer Mitglieder.
+* Finden Sie die Antworten auf die von Ihnen erstellten Fragen heraus.
 
 #### Anonym {#anonymous}
 
