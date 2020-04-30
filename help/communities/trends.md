@@ -1,8 +1,8 @@
 ---
 title: Aktivitätstrends
 seo-title: Aktivitätstrends
-description: Hinzufügen einer Community-Aktivitätsliste-Komponente zu einer Seite
-seo-description: Hinzufügen einer Community-Aktivitätsliste-Komponente zu einer Seite
+description: Hinzufügen einer Liste zur Community-Aktivität zu einer Seite
+seo-description: Hinzufügen einer Liste zur Community-Aktivität zu einer Seite
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# Aktivitätstrends{#activity-trends}
+# Aktivitätstrends {#activity-trends}
 
 ## Einführung {#introduction}
 
@@ -24,9 +24,9 @@ The `Community Activity List` component provides the ability to add trending inf
 
 Das Dokument beschreibt:
 
-* Hinzufügen der `Community Activity List` Komponente zu einer [Community-Site](/help/communities/overview.md#community-sites)
+* Hinzufügen der `Community Activity List` Komponente zu einer [Community-Site](/help/communities/overview.md#community-sites).
 
-* Konfigurationseinstellungen für die Komponente `Community Activity List`
+* Configuration settings for the `Community Activity List` component.
 
 ### Anforderung {#requirement}
 
@@ -48,13 +48,13 @@ Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-### Konfigurieren der Community-Aktivitätsliste {#configuring-community-activity-list}
+### Liste der Community-Aktivität konfigurieren {#configuring-community-activity-list}
 
 Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-Geben Sie unter der Registerkarte **Kommentare **an, ob und wie Kommentare für hochgeladene Dateien angezeigt werden:
+Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -62,7 +62,7 @@ Geben Sie unter der Registerkarte **Kommentare **an, ob und wie Kommentare für 
 
    Geben Sie an, ob Daten zu Community-Mitgliedern oder benutzergenerierten Inhalten (UGC) angezeigt werden sollen.
 
-   Die folgenden Optionen stehen zur Auswahl
+   Die folgenden Optionen stehen zur Auswahl:
 
    * `Members`
    * `Content`
@@ -75,22 +75,22 @@ Standardmäßig ist kein Name eingegeben.
 
 * **Anzeigezahl**
 
-   Die Anzahl der anzuzeigenden Elemente.
+   Die Anzahl der zu Liste Elemente.
 Der Standardwert ist 10.
 
 * **Aktivitätstyp**
 
-   Wählen Sie eines von
+   Wählen Sie eine der folgenden Optionen:
 
    * `Views`(Seitenbesuche)
-   * `Posts`(UGC erstellen)
+   * `Posts`(Erstellen von UGC)
    * `Follows`
    * `Likes`
    Die Standardeinstellung lautet „Ansichten“.
 
 * **Zeitraum**
 
-   Wählen Sie eines von
+   Wählen Sie eine der folgenden Optionen:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -102,23 +102,23 @@ Der Standardwert ist 10.
 
 * **Kontextpfad**
 
-   Bietet die Möglichkeit, die Aktivität auf eine Teilmenge der Site zu beschränken, z. B. auf einen bestimmten Blog.
+   Bietet die Möglichkeit, die Aktivität auf eine Untergruppe der Site, z. B. einen bestimmten Blog, zu erweitern.
 Standardmäßig ist die Community-Site ausgewählt.
 
 * **Gesammelte Mitgliederzahl**
 
-   Wenn diese Option deaktiviert ist, werden nur Beiträge der obersten Ebene gezählt. For example, if the context is the root page (the default), then an `Activity Type`of `Posts`will never show any activity as there is no ability to post content to the root page. Ist diese Option aktiviert, werden auch die Ergebnisse aller untergeordneten Seiten eingeschlossen.
+   Wenn diese Option deaktiviert ist, werden nur Beiträge der obersten Ebene gezählt. For example, if the context is the root page (the default), then an `Activity Type` of `Posts` will never show any activity as there is no ability to post content to the root page. Ist diese Option aktiviert, werden auch die Ergebnisse aller untergeordneten Seiten eingeschlossen.
 Diese Option ist standardmäßig aktiviert.
 
 ### Beispielseite mit vier Komponenten {#example-page-with-components}
 
 Konfiguration **Wichtigste Besucher** (Top Visitors): Typ = Mitglieder, Aktivitätstyp = Ansichten
 
-**Konfiguration der wichtigsten Mitarbeiter** : Typ = Mitglieder, Aktivitätstyp = Beiträge
+**Konfiguration der wichtigsten Mitarbeiter** : Typ = Member, Aktivität type = Beiträge
 
-**Konfiguration des Hauptinhalts** : Typ = Inhalt, Aktivitätstyp = Ansichten,
+**Konfiguration des Hauptinhalts** : Typ = Aktivität, Typ = Ansichten,
 
-**Konfigurieren des Trendinhalts** : Typ = Inhalt, Aktivitätstyp = Beiträge
+**Konfigurieren des Trendinhalts** : Typ = Aktivität, Typ = Beiträge
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
