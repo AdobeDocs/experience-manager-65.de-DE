@@ -3,7 +3,7 @@ title: Metadatenschemata
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -26,7 +26,7 @@ Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ä
 
    ![Grundlegende Registerkarte der Asset-Eigenschaften, auf der der Asset-Typ nicht geändert werden kann](assets/asset-properties-basic-tab.png)
 
-   *Abbildung: Registerkarte &quot;Einfach&quot;in den Asset-Eigenschaften*
+   *Abbildung: Registerkarte &quot;Einfach&quot;in den Asset-Eigenschaften.*
 
    Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Wenn Sie das Metadatenschema für einen bestimmten MIME-Typ ändern, werden das Layout der Eigenschaftenseite für Assets mit dem aktuellen MIME-Typ und alle untergeordneten Asset-Typen geändert. Durch die Bearbeitung des jpeg-Schemas unter `default/image` wird nur das Metadaten-Layout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `image/jpeg` bearbeitet. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
 
@@ -86,9 +86,9 @@ Sie können dem Metadatenschema-Formular neue Registerkarten oder Formularelemen
 
    ![Metadaten-Schema-Editor zum Anpassen der Seite &quot;Asset-Eigenschaften&quot;](assets/metadata-schema-editor.png)
 
-   *Abbildung: Grundlegende Registerkarte des Metadaten-Schema-Editors*
+   *Abbildung: Registerkarte &quot;[!UICONTROL Einfach]&quot;des[!UICONTROL Metadaten-Schema]-Editors.*
 
-1. Um eine Komponente zu konfigurieren, wählen Sie diese aus und ändern Sie ihre Eigenschaften auf der Registerkarte **Einstellungen**.
+1. Um eine Komponente zu konfigurieren, wählen Sie diese aus und ändern Sie ihre Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
 
 ### Komponenten auf der Registerkarte „Formular erstellen“{#components-within-the-build-form-tab}
 
@@ -127,29 +127,21 @@ Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
 Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt angezeigt wird, sollte der Eigenschaftenpfad keine Leerzeichen enthalten.
 
-**Platzhalter**: Geben Sie mit dieser Eigenschaft relevanten Platzhaltertext zur Metadateneigenschaft an.
-
-**Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftenseite als obligatorisch markieren.
-
-**Bearbeitung deaktivieren**: Mit dieser Eigenschaft können Sie verhindern, dass eine Metadateneigenschaft auf der Eigenschaftenseite bearbeitet werden kann.
-
-**Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
-
-**Liste geordnet anzeigen**: Mit dieser Eigenschaft zeigen Sie eine geordnete Liste von Optionen an.
-
-**Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
-
-**Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
-
-**Klasse**: Objektklasse, der die Eigenschaft zugeordnet ist.
-
-**Löschen**: Klicken Sie auf dieses Symbol, um eine Komponente aus dem Schema-Formular zu löschen.
+* **Platzhalter**: Geben Sie mit dieser Eigenschaft relevanten Platzhaltertext zur Metadateneigenschaft an.
+* **Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftenseite als obligatorisch markieren.
+* **Bearbeitung deaktivieren**: Mit dieser Eigenschaft können Sie verhindern, dass eine Metadateneigenschaft auf der Eigenschaftenseite bearbeitet werden kann.
+* **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
+* **Liste geordnet anzeigen**: Mit dieser Eigenschaft zeigen Sie eine geordnete Liste von Optionen an.
+* **Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
+* **Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
+* **Klasse**: Objektklasse, der die Eigenschaft zugeordnet ist.
+* **Löschen**: Klicken Sie auf dieses Symbol, um eine Komponente aus dem Schema-Formular zu löschen.
 
 ![Löschen-Symbol im Metadaten-Schema-Formular](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
->Die Komponente „Verborgenes Feld“ enthält diese Attribute nicht. Sie enthält stattdessen Eigenschaften wie die Attribute „Name“, „Wert“, „Feldbezeichnung“ und „Beschreibung“. Die Werte für die Komponente „Ausgeblendetes Feld“ werden beim Speichern des Assets als POST-Parameter gesendet. Sie werden nicht als Metadaten für das Asset gespeichert.
+>The [!UICONTROL Hidden Field] component does not include these attributes. Sie enthält stattdessen Eigenschaften wie die Attribute „Name“, „Wert“, „Feldbezeichnung“ und „Beschreibung“. Die Werte für die Komponente „Ausgeblendetes Feld“ werden beim Speichern des Assets als POST-Parameter gesendet. Sie werden nicht als Metadaten für das Asset gespeichert.
 
 Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bedienfeld **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadatenvalidierung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. Die Suchergebnisse zeigen Assets an, denen erforderliche Metadaten fehlen, die Sie über das Schemaformular konfiguriert haben.
 
@@ -163,7 +155,7 @@ Um neben der Registerkarte, auf die die Komponente &quot;Kontextuelle Metadaten&
 
 ![Die in der Liste &quot;Kontextuelle Metadaten&quot;ausgewählte Registerkarte wird auf der Seite &quot;Asset-Eigenschaften&quot;angezeigt](assets/contextual-metadata-asset-properties.png)
 
-*Abbildung: Kontextbezogene Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;*
+*Abbildung: Kontextbezogene Metadaten auf der Seite mit den Asset-Eigenschaften.*
 
 ### Festlegen von Eigenschaften in einer JSON-Datei {#specify-properties-in-json-file}
 
@@ -263,7 +255,7 @@ Assets in Unterordnern übernehmen die Metadaten aus dem Schema, das auf den Unt
 
    ![Textfeld zum Metadaten-Schema-Formulareditor hinzugefügt](assets/text-field-metadata-schema-editor.png)
 
-   *Abbildung: Textfeld zum Metadaten-Schema-Formulareditor hinzugefügt*
+   *Abbildung: Textfeld zum Metadaten-Schema-Formulareditor hinzugefügt.*
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt.
 1. Klicken/tippen Sie in der Symbolleiste auf **[!UICONTROL Auf Ordner anwenden]**, um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden.
@@ -295,7 +287,7 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
    ![Hinzufügen eines erforderlichen Felds in das Metadatenformular, indem Sie im Metadaten-Schema-Formulareditor auf der Registerkarte &quot;Regeln&quot;die Option &quot;Erforderlich&quot;auswählen](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Abbildung: Obligatorisches Feld im Metadaten-Schema-Formulareditor*
+   *Abbildung: Obligatorisches Feld im Metadaten-Schema-Formulareditor.*
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Wählen Sie das Formular aus und klicken oder tippen Sie dann in der Symbolleiste auf **[!UICONTROL Auf Ordner anwenden]**, um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden.
 
