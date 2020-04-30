@@ -1,9 +1,9 @@
 ---
 title: Asset-Vorlagen
-description: Erfahren Sie mehr über Asset-Vorlagen in AEM Assets und wie Sie mit Asset-Vorlagen Marketingmaterial erstellen.
+description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Adobe Experience Manager Assets] und wie Sie Asset-Vorlagen verwenden, um Marketingmaterial zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -16,11 +16,11 @@ Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z.�
 
 Die Flexibilität, begrenzte Bearbeitungen bei gleichzeitiger Sicherung globaler Signaturen vorzunehmen, macht Asset-Vorlagen zu idealen Bausteinen für die schnelle Anpassung und Verteilung von Inhalten als Inhaltsartefakte für verschiedene Funktionen. Die Wiederverwendung von Inhalten trägt dazu bei, die Kosten für die Verwaltung von Print- und digitalen Kanälen zu senken und ganzheitliche und konsistente Erlebnisse in diesen Kanälen bereitzustellen.
 
-Marketingexperten können Vorlagen in AEM Assets speichern und verwalten und eine einzige Basisvorlage verwenden, um mühelos mehrere personalisierte Druckerlebnisse zu erstellen. Sie können verschiedene Arten von Marketingmaterial erstellen, z. B. Broschüren, Flyer, Postkarten, Visitenkarten usw., um Kunden Ihre Marketingbotschaft eindeutig und klar zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Umgebungen und Printumgebungen bereitstellen, um für Benutzer eine konsistente integrierte Erfahrung zu schaffen.
+As a marketer, you can store and manage templates within [!DNL Experience Manager Assets] and use a single base template to create multiple personalized print experiences with ease. Sie können verschiedene Arten von Marketingmaterial erstellen, z. B. Broschüren, Flyer, Postkarten, Visitenkarten usw., um Kunden Ihre Marketingbotschaft eindeutig und klar zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Umgebungen und Printumgebungen bereitstellen, um für Benutzer eine konsistente integrierte Erfahrung zu schaffen.
 
-Während Asset-Vorlagen hauptsächlich Adobe InDesign-Dateien sind, stellt die Kompetenz in Adobe InDesign keine Barriere für die Erstellung von Sternartefakten dar. Sie müssen die Felder Ihrer Adobe InDesign-Vorlage nicht den Produktfeldern zuordnen, die Sie sonst beim Erstellen von Katalogen benötigen. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Weboberfläche bearbeiten. Damit Adobe InDesign Ihre Bearbeitungsänderungen verarbeiten kann, müssen Sie zunächst AEM Assets für die Integration mit dem Adobe InDesign-Server konfigurieren.
+While asset templates are mostly [!DNL Adobe InDesign] files, proficiency in [!DNL Adobe InDesign] is not a barrier to creating stellar artifacts. You need not map the fields of your [!DNL Adobe InDesign] template with your product fields that you otherwise require to when creating catalogs. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Weboberfläche bearbeiten. However, for [!DNL Adobe InDesign] to process your editing changes, you must first configure [!DNL Experience Manager Assets] to integrate with [!DNL Adobe InDesign Server].
 
-Die Möglichkeit, Adobe InDesign-Vorlagen über die Weboberfläche zu bearbeiten, trägt dazu bei, die Zusammenarbeit zwischen Kreativ- und Marketingmitarbeitern zu verbessern und gleichzeitig die Time-to-Market für lokale Werbemaßnahmen zu verkürzen.
+The ability to edit [!DNL Adobe InDesign] templates from the web interface helps foster greater collaboration between Creative and Marketing personnel, while reducing the time to market for local promotion initiatives.
 
 Sie können Asset-Vorlagen für folgende Zwecke nutzen:
 
@@ -30,7 +30,7 @@ Sie können Asset-Vorlagen für folgende Zwecke nutzen:
 * Anzeigen von Vorlagenbearbeitungen in der Vorschau
 * Zusammenführen mehrerer Vorlagendateien zum Erstellen eines mehrseitigen Artefakts
 
-Wenn Sie eine Vorlage für Ihr Marketingmaterial auswählen, erstellt AEM Assets eine Kopie der Vorlage, die Sie bearbeiten können. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
+When you choose a template for your collateral, [!DNL Experience Manager Assets] creates a copy of the template that you can edit. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
 
 Sie können die aktualisierte Datei im übergeordneten Ordner in den folgenden Formaten exportieren:
 
@@ -42,9 +42,9 @@ Außerdem können Sie die Ausgabe in diesen Formaten auf Ihr lokales System heru
 
 ## Erstellen von Sicherheiten {#creating-a-collateral}
 
-Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (ein- oder mehrseitig) erstellen, indem sie eine Lösung für die Kreativarbeit nutzen, z. B. InDesign, und die Vorlagen für Sie in AEM Assets hochladen. Bevor Sie eine Sicherheit erstellen, sollten Sie eine oder mehrere INDD-Vorlagen vorab in Experience Manager hochladen und verfügbar machen.
+Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designers can create the campaign templates (single-page or multi-page) using a creative solution, such as [!DNL InDesign] and upload the templates to [!DNL Experience Manager Assets] for you. Bevor Sie eine Sicherheit erstellen, sollten Sie eine oder mehrere INDD-Vorlagen hochladen und [!DNL Experience Manager] im Voraus verfügbar machen.
 
-1. Klicken Sie in der Experience Manager-Oberfläche auf [!UICONTROL Assets].
+1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf [!UICONTROL Assets].
 
 1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
 
@@ -54,7 +54,7 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmateri
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
-1. Lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in Experience Manager hochgeladen und verfügbar sein. Choose a template for your brochure, and click **[!UICONTROL Next]**.
+1. Lassen Sie eine oder mehrere INDD-Vorlagen [!DNL Experience Manager] im Voraus hochladen und verfügbar sein. Choose a template for your brochure, and click **[!UICONTROL Next]**.
 
    ![chlimage_1-103](assets/chlimage_1-308.png)
 
@@ -90,17 +90,17 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    Sie können den Text-Editor verwenden, um den Text zu ändern, der im Textfeld angezeigt werden soll. Sie können Schriftgröße, -stil, -farbe und -typ auf der Tag-Ebene ändern.
 
-   Mithilfe der Asset-Suche können Sie in AEM Assets nach Bildern suchen und die bearbeitbaren Bilder in der Vorlage durch Bilder Ihrer Wahl ersetzen.
+   Using the asset finder, you can browse or search for images within [!DNL Experience Manager Assets] and replace the editable images in the template with images of your choice.
 
    ![chlimage_1-109](assets/chlimage_1-314.png)
 
-   Die bearbeitbaren Bilder werden rechts angezeigt. Damit ein Feld in AEM Assets bearbeitbar ist, muss das entsprechende Feld in der Vorlage in InDesign mit einem Tag versehen sein. Mit anderen Worten, sie sollten in InDesign als bearbeitbar markiert werden.
+   Die bearbeitbaren Bilder werden rechts angezeigt. For a field to be editable in [!DNL Experience Manager Assets], corresponding field in the template must be tagged in [!DNL InDesign]. In other words, they should be marked as editable in [!DNL InDesign].
 
    ![chlimage_1-110](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass Ihre AEM-Instanz in einen InDesign-Server integriert ist, damit AEM Assets Daten aus der InDesign-Vorlage extrahieren und für die Bearbeitung bereitstellen kann. For details, see [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the InDesign template and make it available for editing. For details, see [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
 1. Um den Text in einem bearbeitbaren Feld zu ändern, klicken Sie in der Liste der bearbeitbaren Felder auf das Textfeld und bearbeiten Sie den Text im Feld.
 
@@ -120,7 +120,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   Sie können auch nach Bildern suchen, indem Sie Stichwörter, Tags und den Veröffentlichungsstatus angeben. Sie können das AEM Assets-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
+   Sie können auch nach Bildern suchen, indem Sie Stichwörter, Tags und den Veröffentlichungsstatus angeben. You can browse through the [!DNL Experience Manager Assets] repository and navigate to the location of the desired image.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
@@ -136,17 +136,17 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    >[!NOTE]
    >
-   >Die Symbole „Vorschau“ und „Fertig“ sind nur aktiviert, wenn die bearbeitbaren Bildfelder im Material keine fehlenden Symbole aufweisen. Falls in Ihrem Material Symbole fehlen, liegt dies daran, dass AEM die Bilder in der InDesign-Vorlage nicht auflösen kann. Normalerweise können Bilder von AEM in den folgenden Fällen nicht aufgelöst werden:
+   >Die Symbole „Vorschau“ und „Fertig“ sind nur aktiviert, wenn die bearbeitbaren Bildfelder im Material keine fehlenden Symbole aufweisen. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
    >
-   >    * Bilder werden nicht in die zugrunde liegende InDesign-Vorlage eingebettet
-   >    * Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem
+   >    * Images are not embedded in the underlying [!DNL InDesign] template.
+   >    * Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem.
    >
-   >Gehen Sie wie folgt vor, um für AEM das Auflösen von Bildern zu ermöglichen:
+   >To enable [!DNL Experience Manager] to resolve images, do the following:
    >
-   >    * Betten Sie Bilder ein, während Sie InDesign-Vorlagen erstellen (siehe [Informationen zu Links und eingebetteten Grafiken](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
-   >    * Stellen Sie AEM in Ihrem lokalen Dateisystem bereit und ordnen Sie anschließend fehlende Symbole den vorhandenen AEM-Assets zu.
+   >    * Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
+   >    * Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
    >
-   >For more information around working with InDesign documents, see [Best Practices for Working with InDesign Documents in AEM](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >For more information around working with [!DNL InDesign] documents, see [Best Practices for Working with InDesign Documents in Experience Manager](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Wählen Sie zum Generieren einer PDF-Ausgabe für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 1. Das Marketingmaterial wird in dem Ordner erstellt, in dem Sie den Vorgang begonnen haben. Öffnen Sie das Marketingmaterialelement und wählen Sie in der GlobalNav-Liste die Option **[!UICONTROL Ausgabeformate]**, um die Ausgabeformate anzuzeigen.
@@ -159,7 +159,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
 ## Merge collateral {#merge-collateral}
 
-1. Klicken Sie auf der Navigationsseite in der Experience Manager-Oberfläche auf [!UICONTROL Assets] .
+1. Klicken Sie auf der [!DNL Experience Manager] Navigationsseite auf [!UICONTROL Assets] .
 
 1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
 
@@ -179,7 +179,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-123](assets/chlimage_1-328.png)
 
-   Sie können das AEM Assets-Repository bzw. die Sammlungen durchsuchen, zum Speicherort der gewünschten Vorlagen navigieren und sie dann für die Zusammenführung auswählen.
+   You can browse through the [!DNL Experience Manager Assets] repository or collections, and navigate to the location of the desired templates and then select them to merge.
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
 
@@ -192,7 +192,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. In the [!UICONTROL Configure Template] screen, specify a name for the collateral. Geben Sie optional Tags an, die jeweils geeignet sind. If you want to export the output in PDF format, select **[!UICONTROL Acrobat (.PDF)]**. Standardmäßig wird das Material im JPG- und InDesign-Format exportiert. To change the display thumbnail for the multi-page collateral, click **[!UICONTROL Change Thumbnail]**.
+1. In the [!UICONTROL Configure Template] screen, specify a name for the collateral. Geben Sie optional Tags an, die jeweils geeignet sind. If you want to export the output in PDF format, select **[!UICONTROL Acrobat (.PDF)]**. By default, the collateral is exported in JPG and [!DNL InDesign] format. To change the display thumbnail for the multi-page collateral, click **[!UICONTROL Change Thumbnail]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
