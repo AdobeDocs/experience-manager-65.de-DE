@@ -3,7 +3,7 @@ title: URL zu freigegebenen Assets erstellen
 description: In diesem Artikel wird beschrieben, wie Assets, Ordner und Sammlungen im AEM Assets-Repository als URL für externe Parteien freigegeben werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -18,7 +18,7 @@ Mit Adobe Experience Manager (AEM) Assets können Sie Assets, Ordner und Sammlun
 
 ## Freigeben von Assets {#sharelink}
 
-Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im Dialogfeld „Linkfreigabe“. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
+Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im Dialogfeld „Link-Freigabe“. Benutzer mit Administratorrechten oder mit Leserechten für den Speicherort `/var/dam/share` können dann die Links sehen, die für sie freigegeben sind.
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im
 1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
 1. From the toolbar, click/tap the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
 
-   An asset link is auto-created in the **[!UICONTROL Share Link]** field. Sie können diesen Link kopieren und für andere Benutzer freigeben. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
+   Im Feld **[!UICONTROL Link freigeben]** wird automatisch ein Asset-Link erstellt. Sie können diesen Link kopieren und für andere Benutzer freigeben. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
 
    ![Dialogfeld zur Linkfreigabe](assets/Link-sharing-dialog-box.png)
 
-   *Abbildung: Dialogfeld mit Linkfreigabe*
+   *Abbildung: Das Dialogfeld zum Freigeben von Assets als Link.*
 
    Alternativ dazu können Sie auch die Schritte 3 bis 7 dieses Verfahrens ausführen, um E-Mail-Empfänger hinzuzufügen, die Ablaufzeit für den Link zu konfigurieren und ihn aus dem Dialogfeld zu senden.
 
@@ -45,14 +45,11 @@ Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im
 
 
    >[!NOTE]
-   Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn erneut für die Benutzer frei.
+   Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzer frei.
 
-1. Öffnen Sie in der Web Console die **[!UICONTROL Day CQ Link Externalizer]**-Konfiguration und ändern Sie die folgenden Eigenschaften im Feld **[!UICONTROL Domänen]** mit den jeweils angegebenen Werten:
+1. In AEM interface, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   * local
-   * Autor
-   * veröffentlichen
-   Für die Eigenschaften „local“ und „author“ geben Sie die URL für die entsprechenden Instanzen an. Wenn Sie eine einzelne AEM-Autoreninstanz ausführen, haben die Eigenschaften „local“ und „author“ denselben Wert. Geben Sie für die Eigenschaft „publish“ die URL für die Veröffentlichungsinstanz an.
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. For the `local` and `author` properties, provide the URL for the local and the author instance respectively. Both `local` and `author` properties have the same value if you run a single Experience Manager Author instance. For `publish`, provide the URL for the Experience Manager publish instance.
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Linkfreigabe]** in das Feld „E-Mail-Adresse“ die E-Mail-ID des Benutzers ein, für den Sie den Link freigeben möchten. Sie können den Link auch für mehrere Benutzer freigeben.
 
@@ -62,13 +59,15 @@ Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im
 
    ![Freigeben von Links zu Assets direkt über das Dialogfeld „Linkfreigabe“](assets/Asset-Sharing-LinkShareDialog.png)
 
-   Freigeben von Links zu Assets direkt über das Dialogfeld „Linkfreigabe“
+   *Abbildung: Verknüpfungen zu Assets direkt über das Dialogfeld &quot;[!UICONTROL Linkfreigabe]&quot;freigeben*
 
    >[!NOTE]
-   Wenn Sie die E-Mail-ID eines Benutzers eingeben, der nicht zu Ihrem Unternehmen gehört, wird den Worten „Externer Benutzer“ die E-Mail-ID des Benutzers vorangestellt.
+   If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
 
-1. Geben Sie in das Feld **[!UICONTROL Betreff]** einen Betreff für das freizugebende Asset ein.
-1. Geben Sie im Feld **[!UICONTROL Meldung]** eine optionale Meldung ein.
+1. In the **[!UICONTROL Subject]** field, enter a subject for the asset you want to share.
+
+1. In the **[!UICONTROL Message]** field, enter an optional message.
+
 1. Geben Sie im Feld **[!UICONTROL Ablauf]** mit der Datumsauswahl ein Ablaufdatum und eine Ablaufuhrzeit für den Link an. Standardmäßig ist das Ablaufdatum auf eine Woche nach dem Datum der Linkfreigabe gesetzt.
 
    ![Ablaufdatum des freigegebenen Links festlegen](assets/Set-shared-link-expiration.png)
@@ -83,9 +82,9 @@ Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-   Um zur Listenansicht zu wechseln, klicken bzw. tippen Sie auf die Layoutoption in der Symbolleiste.
+   Um zur Ansicht der Liste zu wechseln, klicken Sie in der Symbolleiste auf die Layoutoption bzw. tippen Sie auf diese.
 
-1. Um eine Vorschau des Assets zu generieren, tippen/klicken Sie auf das freigegebene Asset. Um die Vorschau zu schließen und zur Seite **[!UICONTROL Experience Cloud]** zurückzukehren, tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Zurück]**. Wenn Sie einen Ordner freigegeben haben, tippen/klicken Sie auf **[!UICONTROL Übergeordneter Ordner]**, um zum übergeordneten Ordner zurückzukehren.
+1. Um eine Vorschau des Assets zu generieren, tippen/klicken Sie auf das freigegebene Asset. Um die Vorschau zu schließen und zur Seite **[!UICONTROL Marketing Cloud]** zurückzukehren, klicken oder tippen Sie in der Symbolleiste auf **[!UICONTROL Zurück]**. Wenn Sie einen Ordner freigegeben haben, tippen/klicken Sie auf **[!UICONTROL Übergeordneter Ordner]**, um zum übergeordneten Ordner zurückzukehren.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
@@ -96,13 +95,13 @@ Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Um die Assets anzuzeigen, die Sie als Links freigegeben haben, wechseln Sie zur Benutzeroberfläche &quot;Assets&quot;und tippen Sie auf das Experience Manager-Logo. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
-1. Wählen Sie im Navigationsbereich **[!UICONTROL Freigegebene Links]**, um eine Liste der freigegebenen Assets anzuzeigen.
-1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar. Es folgt eine Bestätigungsmeldung. Der Eintrag für das Asset wird aus der Liste entfernt.
+1. Um die Assets, die Sie als Links freigegeben haben, Ansicht, wechseln Sie zur Asset-Benutzeroberfläche und tippen Sie auf das Experience Manager-Logo. Wählen Sie in der Liste die Option **[!UICONTROL Navigation]** aus, um das Bedienfeld „Navigation“ anzuzeigen.
+1. Wählen Sie im Bedienfeld „Navigation“ die Option **[!UICONTROL Freigegebene Links]** aus, um eine Liste der freigegebenen Assets anzuzeigen.
+1. Um die Freigabe eines Assets aufzuheben, wählen Sie es aus und tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Freigabe aufheben.]** Es folgt eine Bestätigungsmeldung. Der Eintrag für das Asset wird aus der Liste entfernt.
 
 ## Konfigurieren des Day CQ Mail Service {#configmailservice}
 
-1. Navigieren Sie auf der Startseite von Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Navigieren Sie auf der Experience Manager-Startseite zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. Wählen Sie in der Liste der Dienste **[!UICONTROL Day CQ Mail Service]** aus.
 1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -114,13 +113,13 @@ Sie generieren die URL für Assets, die Sie für Benutzer freigeben möchten, im
 
 1. Klicken oder tippen Sie auf **[!UICONTROL Speichern]**.
 
-## Konfigurieren der maximal zulässigen Datengröße {#maxdatasize}
+## Konfigurieren der maximal zulässigen Datengröße   {#maxdatasize}
 
-Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegeben wurden, komprimiert AEM die Asset-Hierarchie aus dem Repository und gibt anschließend das Asset in einer ZIP-Datei zurück. Da jedoch die Datenmenge, die in einer ZIP-Datei komprimiert werden kann, nicht begrenzt wird, führt das bei großen komprimierten Datenmengen zu Speicherfehlern in JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **[!UICONTROL Max Content Size (uncompressed)]** parameter for [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in Configuration Manager. Wenn die unkomprimierte Größe des Assets den konfigurierten Wert überschreitet, werden Asset-Download-Anforderungen abgelehnt. Der Standardwert lautet 100 MB.
+Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegeben wurden, komprimiert AEM die Asset-Hierarchie aus dem Repository und gibt anschließend das Asset in einer ZIP-Datei zurück. Da jedoch die Datenmenge, die in einer ZIP-Datei komprimiert werden kann, nicht begrenzt wird, kann es bei großen komprimierten Datenmengen zu Speicherfehlern in JVM kommen. Um das System vor einem damit zusammenhängenden potenziellen DoS-Angriff zu schützen, konfigurieren Sie die Maximalgröße mithilfe des Parameters **[!UICONTROL Maximale Größe von Inhalten (unkomprimiert)]** für das Day CQ DAM Adhoc Asset Share Proxy Servlet in Configuration Manager.  Wenn die unkomprimierte Größe des Assets den konfigurierten Wert überschreitet, werden Asset-Download-Anforderungen abgelehnt. Der Standardwert lautet 100 MB.
 
-1. Tippen/Klicken Sie auf das AEM-Logo und gehen Sie dann zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
+1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie anschließend zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
-1. Öffnen Sie die **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**-Konfiguration im Bearbeitungsmodus und ändern Sie den Wert des Parameters **[!UICONTROL Max. Inhaltsgröße (nicht komprimiert)]**.
+1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** im Bearbeitungsmodus und ändern Sie den Wert des Parameters **[!UICONTROL Maximale Größe von Inhalten (unkomprimiert)]**.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 
