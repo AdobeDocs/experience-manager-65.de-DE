@@ -1,25 +1,25 @@
 ---
-title: Unterstützung von Camera Raw
-description: Erfahren Sie, wie Sie die Camera Raw-Unterstützung in Adobe Experience Manager Assets aktivieren.
+title: '[!DNL Adobe Camera Raw]-Unterstützung.'
+description: Erfahren Sie, wie Sie die [!DNL Adobe Camera Raw]-Unterstützung in [!DNL Adobe Experience Manager Assets] aktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Unterstützung für die Verarbeitung von Bildern mit Camera Raw {#camera-raw-support}
+# Bilder mit Camera Raw verarbeiten {#camera-raw-support}
 
-Sie können die Camera Raw-Unterstützung aktivieren, um Rohdateiformate wie CR2, NEF und RAF zu verarbeiten und die Bilder im JPEG-Format zu rendern. Die Funktion wird in Adobe Experience Manager-Assets mit dem [Camera Raw-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt, das über Package Share verfügbar ist.
+Sie können die [!DNL Adobe Camera Raw] Unterstützung aktivieren, um Rohdateiformate wie CR2, NEF und RAF zu verarbeiten und die Bilder im JPEG-Format zu rendern. Die Funktion wird bei [!DNL Adobe Experience Manager Assets] der Verwendung des [Camera Raw-Pakets](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt, das über Package Share verfügbar ist.
 
 >[!NOTE]
 >
 >Die Funktion unterstützt nur JPEG-Darstellungen. Es wird unter Windows 64 Bit, Mac OS und RHEL 7.x unterstützt.
 
-Gehen Sie wie folgt vor, um die Camera Raw-Unterstützung in Adobe Experience Manager Assets zu aktivieren:
+Gehen Sie wie folgt vor, um die [!DNL Camera Raw] Unterstützung in [!DNL Experience Manager Assets]zu aktivieren:
 
 1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
-1. Zugriff `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
+1. Greife Sie auf `https://[aem_server]:[port]/workflow` zu. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Open the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
 
@@ -53,13 +53,13 @@ Nun können Sie Camera Raw-Dateien in AEM Assets importieren. After you instal
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
-*Abbildung: Optionen im Seitenbereich*
+*Abbildung: Optionen im Seitenbereich.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*Abbildung: Verwenden Sie diese Option, um Ihre Bilder leichter zu bearbeiten*
+*Abbildung: Verwenden Sie diese Option, um Ihre Bilder leichter zu bearbeiten.*
 
-Nach Speichern der Änderungen in einem Camera Raw-Bild wird die neue Darstellung `AdjustedPreview.jpg` für das Bild erstellt. Für andere Bildtypen als Camera Raw werden die Änderungen in allen Darstellungen übernommen.
+After saving the edits to a [!DNL Camera Raw] image, a new rendition `AdjustedPreview.jpg` is generated for the image. For other image types except [!DNL Camera Raw], the changes are reflected in all the renditions.
 
 ## Best Practices, bekannte Probleme und Einschränkungen {#best-practices}
 
@@ -67,4 +67,4 @@ Für die Funktionalität gelten folgende Einschränkungen:
 
 * Die Funktion unterstützt nur JPEG-Darstellungen. Sie wird unter 64-Bit Windows, macOS und RHEL 7.x unterstützt.
 * Metadaten-Writeback wird für RAW- und DNG-Formate nicht unterstützt.
-* Für die Camera Raw-Bibliothek gelten Beschränkungen bei der gleichzeitig verarbeiteten Gesamtanzahl von Pixel. Derzeit kann eine Datei maximal 65000 Pixel auf der langen Seite oder 512 MP verarbeitet werden, je nachdem, welches Kriterium zuerst erfüllt wird.
+* The [!DNL Camera Raw] library has limitations around the total pixels it can process at a time. Derzeit kann eine Datei maximal 65000 Pixel auf der langen Seite oder 512 MP verarbeitet werden, je nachdem, welches Kriterium zuerst erfüllt wird.
