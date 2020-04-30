@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -45,31 +45,39 @@ Select the placed `Social Tag Cloud` component to access and select the `Configu
 
 ![chlimage_1-304](assets/chlimage_1-304.png)
 
-Legen Sie auf der Registerkarte **[!UICONTROL Social Tag-Cloud]** fest, welche Tags angezeigt werden sollen, und geben Sie den Ort der Suchergebnisseite an, falls es sich bei den Tags um aktive Links handelt:
+Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display and, if the tags are active links, the location of the page for search results:
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
-* **[!UICONTROL Anzuzeigende Social Tags]** Legt fest, welche UGC-Tags angezeigt werden sollen. Die verfügbaren Optionen sind
+* **[!UICONTROL Anzuzeigende Social Tags]** Legt fest, welche UGC-Tags angezeigt werden sollen. Die verfügbaren Optionen sind:
 
    * `From page and child pages`
    * `All tags`
-   Die Standardeinstellung ist `From page and child pages`, wobei &quot;page&quot;auf die **Seiteneinstellung** unten verweist.
+   Die Standardeinstellung ist `From page and child pages`, wobei &quot;page&quot;auf die unten stehende Einstellung &quot; **Page** &quot;verweist.
 
-* **[!UICONTROL Seite]**(erforderlich, wenn nicht `All tags)` Der Pfad zum UGC für eine Seite. Wird kein Pfad angegeben, verweist die Standardeinstellung automatisch auf die aktuelle Seite.
+* **[!UICONTROL Seite]**
 
-* **[!UICONTROL Keine Einschränkung bezüglich Tags]** Ist diese Option aktiviert, werden Tags in der Tag-Cloud als normaler Text dargestellt. Wenn diese Option nicht aktiviert ist, werden die Tags als aktive Links angezeigt, die nach allen Inhalten suchen, auf die dieses Tag angewendet wird. Standardmäßig ist die Option deaktiviert und es muss ein **[!UICONTROL Suchergebnispfad]** festgelegt werden.
+   (Required if not `All tags)` The path to the UGC for a page. Wird kein Pfad angegeben, verweist die Standardeinstellung automatisch auf die aktuelle Seite.
 
-* **[!UICONTROL Suchergebnispfad]** Der Pfad zu einer Seite, auf der eine `Search Result` Komponente platziert wurde, die so konfiguriert ist, dass auf UGC verwiesen wird, das den von der Einstellung &quot; **Seite** &quot;angegebenen UGC-Pfad enthält.
+* **[!UICONTROL Keine Einschränkung bezüglich Tags]**
+
+   Wenn diese Option aktiviert ist, werden die Tags in der Tag-Cloud als Nur-Text angezeigt. Wenn diese Option nicht aktiviert ist, werden die Tags als aktive Links angezeigt, die nach allen Inhalten suchen, auf die dieses Tag angewendet wird. Standardmäßig ist die Option deaktiviert und es muss ein **[!UICONTROL Suchergebnispfad]** festgelegt werden.
+
+* **[!UICONTROL Suchergebnispfad]**
+
+   The path to a page on which a `Search Result` component has been placed, configured to reference UGC which includes the UGC path specified by the **Page** setting.
 
 ## Anpassen der Anzeige einer Social-Tag-Cloud {#change-display-of-social-tag-cloud}
 
 To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
 
-Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Ein Tag kann ein einfaches Tag, ein einzelnes Wort im Standard-Namespace oder eine hierarchische Taxonomie sein:
+Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Ein Tag kann ein einfaches Tag, ein einzelnes Wort im Standard-Namensraum oder eine hierarchische Taxonomie sein:
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
-* **[!UICONTROL Vollständige Titelpfade anzeigen]** Ist diese Option aktiviert, werden die Titel der übergeordneten Tags sowie der Namespace für alle verwendeten Tags angezeigt.
+* **[!UICONTROL Vollständige Titelpfade anzeigen]**
+
+   Wenn diese Option aktiviert ist, werden die Titel der übergeordneten Tags und des Namensraums für jedes angewendete Tag angezeigt.
 
    Beispiel:
 
@@ -79,23 +87,31 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
    Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Nur Leaf-Tags anzeigen]** Ist diese Option aktiviert, werden nur verwendete Tags angezeigt, in denen keine weiteren Tags enthalten sind.
+* **[!UICONTROL Nur Leaf-Tags anzeigen]**
 
-   Wenn beispielsweise TagID von
+   Wenn diese Option aktiviert ist, werden nur angewendete Tags angezeigt, die keine anderen Tags enthalten.
+
+   Beispiel für TagID:
 
    `Geometrixx Media: Gadgets / Cars`
 
-   Es gibt drei Tags, die angewendet werden können: `Geometrixx Media (the namespace)`, `Gadgets`und `Cars`
+   Es gibt drei Tags, die angewendet werden können:
 
-   * Checked: only `Cars` will display, if applied
-   * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied
+   `Geometrixx Media (the namespace)`, `Gadgets`, und `Cars`
+
+   * Checked: Only `Cars` will display, if applied.
+   * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied.
    Einfache Tags sind immer Leaf-Tags.
 
    Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Verknüpfungsvorlage]** Eine Vorlage, die sich von der Standardeinstellung unterscheidet und dazu dient, Links in einer Tag-Cloud anzuzeigen, wenn diese im Dialogfeld für die Komponentenbearbeitung aktiviert wurden.
+* **[!UICONTROL Verknüpfungsvorlage]**
 
-* **[!UICONTROL Gleiche Größe für alle Tags]** Ist diese Option aktiviert, werden alle Wörter einer Tag-Cloud nach demselben Muster formatiert. Wenn diese Option deaktiviert ist, werden Wörter je nach Verwendung unterschiedlich formatiert. Diese Option ist standardmäßig deaktiviert.
+   Eine Vorlage, die nicht standardmäßig verwendet wird, um die Links in einer Tag-Cloud anzuzeigen, wenn die Verknüpfungen über das Dialogfeld zum Bearbeiten der Komponente aktiviert werden.
+
+* **[!UICONTROL Gleiche Größe für alle Tags]**
+
+   Wenn diese Option aktiviert ist, werden alle Wörter in der Tag-Cloud gleich formatiert. Wenn diese Option deaktiviert ist, werden Wörter je nach Verwendung unterschiedlich formatiert. Diese Option ist standardmäßig deaktiviert.
 
 ## Zusätzliche Informationen {#additional-information}
 
