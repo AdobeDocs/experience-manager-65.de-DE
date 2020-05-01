@@ -3,7 +3,7 @@ title: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dat
 description: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateitypen mit [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
 
 ---
 
@@ -44,7 +44,7 @@ Adobe empfiehlt, dass Sie [!DNL Adobe InDesign Server] zum Extrahieren [!DNL Ado
 
 [!DNL Dynamic Media] generiert und stellt mehrere Varianten von anspruchsvollem Inhalt über sein globales, skalierbares und leistungsoptimiertes Netzwerk bereit. Es dient der Bereitstellung interaktiver Erlebnisse und optimiert die Verwaltung digitaler Kampagnen. For details around enabling [!DNL Dynamic Media], see [Configuring Dynamic Media](/help/assets/config-dynamic.md).
 
-Currently, [!DNL Dynamic Media] can support videos up to 20 GB of content per file.
+Currently, [!DNL Dynamic Media] can support videos up to 15 GB of content per file.
 
 ## ImageMagick-Bibliothek {#imagemagick-library}
 
