@@ -3,7 +3,7 @@ title: Von Assets unterstützte Formate
 description: Liste der Dateiformate, die von AEM Assets und von Dynamic Media unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
+source-git-commit: 134530e6e4cabc31342fc3136ec3218ba5acea4a
 
 ---
 
@@ -66,6 +66,17 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 * Um mithilfe von Dynamic Media dynamische Ausgaben für EPS-Dateien in der Vorschau anzuzeigen und zu generieren, informieren Sie sich unter [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
+
+## Nicht unterstützte Rasterbildformate in dynamischen Medien (#unsupported-image-formats-dynamic-media)
+
+In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
+
+* PNG-Dateien mit einer IDAT-Größe größer als 100 MB.
+* PSB-Dateien.
+* PSD-Dateien mit einem anderen Farbraum als CMYK, RGB, Graustufen oder Bitmap werden nicht unterstützt. DuoTone-, Lab- und indizierte Farbräume werden nicht unterstützt.
+* PSD-Dateien mit einer Bittiefe größer als 16.
+* TIFF-Dateien mit Gleitkommadaten.
+* TIFF-Dateien mit Lab-Farbraum.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
