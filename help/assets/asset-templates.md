@@ -1,18 +1,16 @@
 ---
-title: Asset-Vorlagen
+title: Asset-Vorlagen in [!DNL Adobe Experience Manager Assets].
 description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Adobe Experience Manager Assets] und wie Sie Asset-Vorlagen verwenden, um Marketingmaterial zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
 
 ---
 
 
 # Asset templates {#asset-templates}
 
-Asset-Vorlagen sind eine spezielle Asset-Klasse, die eine schnelle Wiederverwendung visuell reicher Inhalte für digitale und Druckmedien ermöglicht. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messagingabschnitt und den bearbeitbaren Abschnitt.
-
-Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle und textuelle Inhalte in Feldern enthalten, die bearbeitet werden können, um Messaging anzupassen.
+Asset-Vorlagen sind eine spezielle Asset-Klasse, die eine schnelle Wiederverwendung visuell reicher Inhalte für digitale und Druckmedien ermöglicht. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messagingabschnitt und den bearbeitbaren Abschnitt. Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle und textuelle Inhalte in Feldern enthalten, die bearbeitet werden können, um Messaging anzupassen.
 
 Die Flexibilität, begrenzte Bearbeitungen bei gleichzeitiger Sicherung globaler Signaturen vorzunehmen, macht Asset-Vorlagen zu idealen Bausteinen für die schnelle Anpassung und Verteilung von Inhalten als Inhaltsartefakte für verschiedene Funktionen. Die Wiederverwendung von Inhalten trägt dazu bei, die Kosten für die Verwaltung von Print- und digitalen Kanälen zu senken und ganzheitliche und konsistente Erlebnisse in diesen Kanälen bereitzustellen.
 
@@ -20,25 +18,19 @@ As a marketer, you can store and manage templates within [!DNL Experience Manage
 
 While asset templates are mostly [!DNL Adobe InDesign] files, proficiency in [!DNL Adobe InDesign] is not a barrier to creating stellar artifacts. You need not map the fields of your [!DNL Adobe InDesign] template with your product fields that you otherwise require to when creating catalogs. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Weboberfläche bearbeiten. However, for [!DNL Adobe InDesign] to process your editing changes, you must first configure [!DNL Experience Manager Assets] to integrate with [!DNL Adobe InDesign Server].
 
-The ability to edit [!DNL Adobe InDesign] templates from the web interface helps foster greater collaboration between Creative and Marketing personnel, while reducing the time to market for local promotion initiatives.
+Die Möglichkeit, [!DNL Adobe InDesign] Vorlagen über die Web-Oberfläche zu bearbeiten, trägt dazu bei, die Zusammenarbeit zwischen Kreativ- und Marketingmitarbeitern zu verbessern. Die höhere Inhaltsgeschwindigkeit verringert die Markteinführungszeit für Marketingsicherheiten.
 
-Sie können Asset-Vorlagen für folgende Zwecke nutzen:
+Mit Asset-Vorlagen können Sie Folgendes erreichen:
 
-* Ändern von bearbeitbaren Vorlagenfeldern über die Webbenutzeroberfläche
-* Steuern der grundlegenden Textformatierung, z. B. Schriftgröße, -stil und -typ auf Tag-Ebene
-* Ändern von Bildern in der Vorlage per Inhaltsauswahl
-* Anzeigen von Vorlagenbearbeitungen in der Vorschau
-* Zusammenführen mehrerer Vorlagendateien zum Erstellen eines mehrseitigen Artefakts
+* Ändern von bearbeitbaren Vorlagenfeldern über die Webbenutzeroberfläche.
+* Steuern der grundlegenden Textformatierung, z. B. Schriftgröße, -stil und -typ auf Tag-Ebene.
+* Ändern von Bildern in der Vorlage per Inhaltsauswahl.
+* Anzeigen von Vorlagenbearbeitungen in der Vorschau.
+* Zusammenführen mehrerer Vorlagendateien zum Erstellen eines mehrseitigen Artefakts.
 
 When you choose a template for your collateral, [!DNL Experience Manager Assets] creates a copy of the template that you can edit. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
 
-Sie können die aktualisierte Datei im übergeordneten Ordner in den folgenden Formaten exportieren:
-
-* INDD
-* PDF
-* JPG
-
-Außerdem können Sie die Ausgabe in diesen Formaten auf Ihr lokales System herunterladen.
+Sie können die aktualisierte Datei im übergeordneten Ordner in die Formate INDD, PDF oder JPG exportieren. Sie können die Ausgabe in diesen Formaten auch in Ihr lokales Dateisystem herunterladen.
 
 ## Erstellen von Sicherheiten {#creating-a-collateral}
 
@@ -70,13 +62,13 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmateri
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   Alternativ hierzu können Sie das Dialogfeld schließen und auf der Seite „Vorlagen“ zu dem Ordner navigieren, mit dem Sie den Vorgang begonnen haben, um die erstellte Broschüre anzuzeigen. Der Typ des Materials wird in der Kartenansicht in der dazugehörigen Miniaturansicht angezeigt. In diesem Fall wird in der Miniaturansicht beispielsweise „Broschüre“ angezeigt.
+   Alternativ hierzu können Sie das Dialogfeld schließen und auf der Seite „Vorlagen“ zu dem Ordner navigieren, mit dem Sie den Vorgang begonnen haben, um die erstellte Broschüre anzuzeigen. Der Typ des Materials wird in der Kartenansicht in der dazugehörigen Miniaturansicht angezeigt. For example, in this case, the word [!UICONTROL Brochure] is displayed on the thumbnail.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Bearbeiten von Zusätzen {#editing-a-collateral}
 
-Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu können Sie es über die Seite „Vorlagen“ oder die Asset-Seite öffnen.
+Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you open it from the [!UICONTROL Templates] page or the asset page.
 
 1. Sie haben folgende Möglichkeiten, um das Material zur Bearbeitung zu öffnen:
 
@@ -100,13 +92,13 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the InDesign template and make it available for editing. For details, see [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Weitere Informationen finden Sie unter [Integration von Experience Manager-Assets in InDesign Server](/help/assets/indesign.md).
 
 1. Um den Text in einem bearbeitbaren Feld zu ändern, klicken Sie in der Liste der bearbeitbaren Felder auf das Textfeld und bearbeiten Sie den Text im Feld.
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   Sie können die Texteigenschaften, z. B. Schriftstil, -farbe und -größe, mit den vorhandenen Optionen bearbeiten.
+   Sie können die Texteigenschaften, z. B. Schriftschnitt, Farbe und Größe, mithilfe der bereitgestellten Optionen bearbeiten.
 
 1. Klicken Sie auf **[!UICONTROL Vorschau]** , um die Textänderungen Vorschau.
 
@@ -201,3 +193,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
    >[!NOTE]
    >
    >Es ist nicht möglich, zusammengeführtes Material später zu ändern oder zum Erstellen von anderem Material zu verwenden.
+
+## Best practices and limitations {#best-practices-limitations-tips}
+
+* Der AEM InDesign-Editor funktioniert auf Tag-Ebene und der gesamte Text unter einem Tag wird als eine Entität betrachtet. Um Textformatierung und -stile bei der Bearbeitung beizubehalten, müssen Sie jeden Absatz (oder Text mit einem anderen Stil) separat taggen.
