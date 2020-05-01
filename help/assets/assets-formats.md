@@ -3,7 +3,7 @@ title: Von Assets unterstützte Formate
 description: Liste der Dateiformate, die von AEM Assets und von Dynamic Media unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 134530e6e4cabc31342fc3136ec3218ba5acea4a
+source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
 
 ---
 
@@ -42,7 +42,7 @@ Die Legende gibt den Grad der Unterstützung an.
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
-## Unterstützte Rasterbildformate in dynamischen Medien (#supported-raster-image-formats-dynamic-media)
+## Unterstützte Rasterbildformate in dynamischen Medien {#supported-raster-image-formats-dynamic-media}
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -67,7 +67,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
 
-## Nicht unterstützte Rasterbildformate in dynamischen Medien (#unsupported-image-formats-dynamic-media)
+## Nicht unterstützte Rasterbildformate in dynamischen Medien {#unsupported-image-formats-dynamic-media}
 
 In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
 
@@ -168,7 +168,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Unterstützte Dokument-Formate in dynamischen Medien (#supported-Dokument-formats-dynamic-media)
+## Unterstützte Dokument-Formate in dynamischen Medien {#supported-document-formats-dynamic-media}
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
