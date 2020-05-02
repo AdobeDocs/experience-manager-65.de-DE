@@ -3,7 +3,7 @@ title: Verwalten Sie Metadaten Ihrer digitalen Assets in [!DNL Adobe Experience 
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] beim Verwalten von Metadaten für Assets hilft, um die Kategorisierung und Organisation von Assets zu erleichtern. [!DNL Experience Manager] ermöglicht die automatische Organisation und Verarbeitung von Assets anhand ihrer Metadaten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: f21e9dbb81f18e07a691b2470c1c5b1569876b17
 
 ---
 
@@ -114,7 +114,7 @@ Die unterstützten Metadaten-Schemata sind unten aufgeführt.
 
 ### Standard metadata {#standard-metadata}
 
-* dc - [!DNL Dublin Core] is the most important and widely used set of metadata.
+* DC - [!DNL Dublin Core] ist ein wichtiger und häufig verwendeter Metadatensatz.
 * DICOM – Digital Imaging and Communications in Medicine.
 * Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard enthält viele themenspezifische Metadaten.
 * rdf – Resource Description Framework: Für generische semantische Webmetadaten.
@@ -127,44 +127,44 @@ Die anwendungsspezifischen Metadaten enthalten technische und beschreibende Meta
 
 * ACDSee - Metadata managed by the [!DNL ACDSee] program. Siehe [www.acdsee.com/](https://www.acdsee.com/).
 * Album - [!DNL Adobe Photoshop Album].
-* cq - Used by [!DNL Experience Manager Assets].
-* dam - Used by [!DNL Experience Manager Assets].
-* dex: Optima SC Description Explorer.
-* crs: Adobe Photoshop Camera Raw.
-* lr - [!DNL Adobe Lightroom].
-* mediapro: IView MediaPro.
+* CQ - Used by [!DNL Experience Manager Assets].
+* DAM - Used by [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description Explorer](http://www.optimasc.com/products/dex/index.html) ist eine Sammlung von Tools für Metadaten und Dateiverwaltung für Windows Betriebssysteme.
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto und MP: Microsoft Photo.
-* pdf und pdfx.
-* photoshop &amp; psAux - [!DNL Adobe Photoshop].
+* PDF &amp; PDF/X.
+* Fotoshop und psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* plus - [Picture Licensing Universal System](https://www.useplus.com).
-* Prism - https://www.idealliance.org/prism-metadata für Veröffentlichungsanforderungen für Standard-Metadaten der Branche.
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - PRISM-Nutzungsrechte.
-* xmpPlus - Integration von PLUS mit XMP.
+* `xmpPlus` - Integration von PLUS in XMP.
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
 * Exif - Technische Informationen von der Kamera, einschließlich GPS-Position.
 * CRS - [!DNL Camera Raw] Schema.
-* Iptc4xmpCore und iptc4xmpExt.
+* `iptc4xmpCore` und `iptc4xmpExt`.
 * TIFF: Bildmetadaten (nicht nur für TIFF-Bilder).
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf und pdfx: Adobe PDF und Drittanbieteranwendungen.
-* prism: [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* PDF und PDF/X - Adobe PDF- und Drittanbieteranwendungen.
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
 * XMP.
-* xmpPG - XMP-Metadaten für Seiten-Text.
+* `xmpPG` - XMP-Metadaten für Seiten-Text.
 
 ### Multimedia-spezifische Metadaten {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM: Medien-Management.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` - Medienverwaltung.
 
 ## Metadatengesteuerte Workflows {#metadata-driven-workflows}
 
