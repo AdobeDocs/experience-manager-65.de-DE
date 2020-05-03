@@ -3,7 +3,7 @@ title: Verwenden Sie verbundene Assets, um DAM-Assets im [!DNL Adobe Experience 
 description: Verwenden Sie beim Erstellen Ihrer Webseiten in einer anderen Experience Manager-Site-Bereitstellung verfügbare Elemente in einer Remote [!DNL Adobe Experience Manager Assets]-Bereitstellung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 2cdcea028814b40fb178e63f583939df27a46cad
 
 ---
 
@@ -46,12 +46,12 @@ Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurier
 
 | Rolle | Anwendungsbereich | Benutzergruppe | Benutzername im Verlauf | Anforderung |
 |---|---|---|---|---|
-| [!DNL Sites] administrator | Lokal | Experience Manager-Administrator | `admin` | Richten Sie Experience Manager ein, konfigurieren Sie die Integration mit der Remote- [!DNL Assets] Bereitstellung. |
-| DAM-Benutzer | Lokal | Autor | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Lokal | Autor (mit Lesezugriff auf das Remote-DAM und Autorenzugriff auf lokale [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Die Autoren suchen und durchsuchen Assets in Remote DAM mit der Inhaltssuche und verwenden die erforderlichen Bilder auf lokalen Webseiten. The credentials of `ksaner` DAM user are used. |
-| [!DNL Assets] administrator | Remote | Experience Manager-Administrator | `admin` auf Remote Experience Manager | Cross-Origin Resource Sharing (CORS) konfigurieren. |
-| DAM-Benutzer | Remote | Autor | `ksaner` auf Remote Experience Manager | Autorenrolle bei der Remote Experience Manager-Bereitstellung. Suchen und Durchsuchen von Assets in Connected Assets mit dem Content Finder. |
-| DAM-Distributor (technischer Benutzer) | Remote | Paketersteller und Site-Autoren | `ksaner` auf Remote Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Diese Rolle unterscheidet sich von den beiden oben aufgeführten `ksaner`-Rollen und gehört einer anderen Benutzergruppe an. |
+| [!DNL Sites] administrator | Lokal | Experience Manager `administrators` | `admin` | Richten Sie Experience Manager ein, konfigurieren Sie die Integration mit der Remote- [!DNL Assets] Bereitstellung. |
+| DAM-Benutzer | Lokal | `Authors` | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
+| [!DNL Sites] author | Lokal | `Authors` (mit Lesezugriff auf den Remote-DAM und Zugriff des Autors auf lokale [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Die Autoren suchen und durchsuchen Assets in Remote DAM mit der Inhaltssuche und verwenden die erforderlichen Bilder auf lokalen Webseiten. The credentials of `ksaner` DAM user are used. |
+| [!DNL Assets] administrator | Remote | Experience Manager `administrators` | `admin` auf Remote Experience Manager | Cross-Origin Resource Sharing (CORS) konfigurieren. |
+| DAM-Benutzer | Remote | `Authors` | `ksaner` auf Remote Experience Manager | Autorenrolle bei der Remote Experience Manager-Bereitstellung. Suchen und Durchsuchen von Assets in Connected Assets mit dem Content Finder. |
+| DAM-Distributor (technischer Benutzer) | Remote | `Authors` | `ksaner` auf Remote Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Diese Rolle unterscheidet sich von den beiden oben aufgeführten `ksaner`-Rollen und gehört einer anderen Benutzergruppe an. |
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
