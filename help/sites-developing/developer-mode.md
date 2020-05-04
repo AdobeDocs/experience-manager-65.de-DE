@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
 
 ---
 
@@ -36,13 +36,9 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* Der Modus ist nur in der Touch-optimierten Oberfläche (beim Bearbeiten von Seiten) verfügbar.
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
->
->    * Dies gilt bei einer Breite von weniger als 1024 Pixel.
->
->* Für den Modus sind die entsprechenden Berechtigungen erforderlich:
->
->    * Access to Developer Mode is given to users who have write access on `/apps`.
->
+   >   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
+>* Steht nur Benutzern zur Verfügung, die Mitglieder der `administrators` Gruppe sind.
+
 
 >[!CAUTION]
 >
