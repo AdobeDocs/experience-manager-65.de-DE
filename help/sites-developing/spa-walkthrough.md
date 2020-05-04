@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -39,6 +39,12 @@ Die exemplarische Vorgehensweise basiert auf der standardmäßigen AEM-Funktiona
 * [AEM Version 6.4 mit Service Pack 2 oder neuer
    ](/help/release-notes/sp-release-notes.md)
 * [Installieren Sie hier die Beispielanwendung &quot;We.Retail&quot;, die auf GitHub verfügbar ist.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
+>[!CAUTION]
+>
+>Dieses Dokument verwendet die [We.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken. Es sollte nicht für Projektarbeiten verwendet werden.
+>
+>Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ### Was ist ein BSG? {#what-is-a-spa}
 
