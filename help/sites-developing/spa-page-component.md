@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -26,16 +26,16 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 
 ## Einführung {#introduction}
 
-Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über eine JSP- oder HTML-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung untergeordneter Komponenten wird als JSON-Datenstruktur (d. h. als Modell) abgerufen. Die SPA-Komponenten werden dann gemäß dem bereitgestellten JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den vorgerenderten HTML-Entsprechungen.
+Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über eine JSP- oder HTL-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung untergeordneter Komponenten wird als JSON-Datenstruktur (d. h. als Modell) abgerufen. Die SPA-Komponenten werden dann gemäß dem bereitgestellten JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den vorgerenderten HTML-Entsprechungen.
 
 ## Seitenmodellverwaltung {#page-model-management}
 
 The resolution and the management of the page model is delegated to a provided [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. Die SPA muss mit dem `PageModelManager` Modul interagieren, wenn sie initialisiert wird, um das anfängliche Seitenmodell abzurufen und sich für Modellaktualisierungen zu registrieren - meistens, wenn der Autor die Seite über den Seiten-Editor bearbeitet. Das `PageModelManager` ist mit dem SPA-Projekt als npm-Paket verfügbar. Als Dolmetscher zwischen AEM und der SPA `PageModelManager` soll die SPA begleitet werden.
 
-Damit die Seite erstellt werden kann, `cq.authoring.pagemodel.messaging` muss eine Client-Bibliothek mit dem Namen hinzugefügt werden, um einen Kommunikationskanal zwischen der SPA und dem Seiteneditor bereitzustellen. Wenn die SPA-Seitenkomponente von der Seite wcm/core-Komponente erbt wird, gibt es die folgenden Optionen, um die Kategorie der `cq.authoring.pagemodel.messaging` Client-Bibliothek verfügbar zu machen:
+Damit die Seite erstellt werden kann, `cq.authoring.pagemodel.messaging` muss eine Client-Bibliothek mit dem Namen hinzugefügt werden, um einen Kanal für die Kommunikation zwischen der SPA und dem Seiteneditor bereitzustellen. Wenn die SPA-Seitenkomponente von der page wcm/core-Komponente erbt wird, gibt es die folgenden Optionen, um die `cq.authoring.pagemodel.messaging` Client-Bibliothekskomponente verfügbar zu machen:
 
-* Wenn die Vorlage bearbeitbar ist, fügen Sie der Seitenrichtlinie die Kategorie &quot;Client-Bibliothek&quot;hinzu.
-* Fügen Sie die Client-Bibliothekskategorie mithilfe `customfooterlibs.html` der Seitenkomponente hinzu.
+* Wenn die Vorlage bearbeitbar ist, fügen Sie der Seitenrichtlinie die Kategorie der Client-Bibliothek hinzu.
+* Hinzufügen die Client-Bibliothekskomponente mit der Kategorie `customfooterlibs.html` der Seitenkomponente.
 
 Vergessen Sie nicht, die Einbeziehung der `cq.authoring.pagemodel.messaging` Kategorie auf den Kontext des Seiteneditors zu beschränken.
 
@@ -85,7 +85,13 @@ Die Metadatenressourceneigenschaften, die den SPA-Inhalt beschreiben:
 
 * `cq:pagemodel_router`: Aktivieren oder Deaktivieren ` [ModelRouter](/help/sites-developing/spa-routing.md)` der `PageModelManager` Bibliothek
 
-* `cq:pagemodel_route_filters`: Kommagetrennte Liste oder reguläre Ausdrücke, um Routen bereitzustellen, die ignoriert werden ` [ModelRouter](/help/sites-developing/spa-routing.md)` müssen.
+* `cq:pagemodel_route_filters`: Kommagetrennte Liste oder reguläre Ausdruck, um Routen bereitzustellen, die ignoriert werden ` [ModelRouter](/help/sites-developing/spa-routing.md)` müssen.
+
+>[!CAUTION]
+>
+>Dieses Dokument verwendet die App &quot;We.Retail Protokoll&quot;nur zu Demonstrationszwecken. Es sollte nicht für Projektarbeiten verwendet werden.
+>
+>Jedes AEM-Projekt sollte den [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt. Alle SPA-Projekte auf AEM sollten auf dem Maven Archetype for SPA Starter Kit basieren.
 
 ## Synchronisierung von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 
@@ -93,7 +99,7 @@ Die Synchronisierung der Überlagerungen wird durch denselben Mutation-Beobachte
 
 ## Sling Model JSON Export Structure Configuration {#sling-model-json-exported-structure-configuration}
 
-Wenn die Routing-Funktionen aktiviert sind, wird davon ausgegangen, dass der JSON-Export der SPA die verschiedenen Routen der Anwendung enthält, dank des JSON-Exports der AEM-Navigationskomponente. Die JSON-Ausgabe der AEM-Navigationskomponente kann in der SPA-Stammseiten-Inhaltsrichtlinie mit den folgenden beiden Eigenschaften konfiguriert werden:
+Wenn die Routing-Funktionen aktiviert sind, wird davon ausgegangen, dass der JSON-Export der SPA die verschiedenen Anwendungsrouten enthält, dank des JSON-Exports der AEM-Navigationskomponente. Die JSON-Ausgabe der AEM-Navigationskomponente kann in der SPA-Stammseiten-Inhaltsrichtlinie mit den folgenden beiden Eigenschaften konfiguriert werden:
 
 * `structureDepth`: Zahl, die die Tiefe der exportierten Baumstruktur angibt
 * `structurePatterns`: Regex des Arrays von Regexen, die der zu exportierenden Seite entsprechen
