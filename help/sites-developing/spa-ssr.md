@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9f0eebfa0c5d2449dcc2977c7085b11a48a10eb9
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -176,7 +176,7 @@ Ein einfaches Beispiel finden Sie in der [Web.Retail-Protokoll-App](https://gith
 
 >[!NOTE]
 >
->Alle SPA-Projekte auf AEM sollten auf dem [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype)basieren.
+>Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ## Verwenden von Node.js {#using-node-js}
 
