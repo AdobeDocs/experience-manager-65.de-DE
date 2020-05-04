@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -46,7 +46,7 @@ Weitere Informationen zur Funktionsweise von SPAs in AEM finden Sie in den folge
 >
 >Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
 
-In diesem Dokument wird die Struktur einer vereinfachten Einzelseitenanwendung erläutert, die mithilfe des React-Frameworks erstellt wurde, und es wird veranschaulicht, wie sie funktioniert, damit Sie diese Verständigung auf Ihre eigene Einzelseitenanwendung anwenden können.
+In diesem Dokument wird die Struktur einer vereinfachten Einzelseitenanwendung erläutert, die mithilfe des React-Frameworks erstellt wurde, um zu veranschaulichen, wie sie funktioniert, damit Sie diese Vorstellung auf Ihre eigene Einzelseitenanwendung anwenden können.
 
 ## Abhängigkeiten, Konfiguration und Aufbau {#dependencies-configuration-and-building}
 
@@ -118,9 +118,9 @@ Bei der Erstellung der App wird neben dem aem-clientlib-generator zur automatisc
 
 Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
-### Maven Archetype für SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+### AEM-Projektarchetyp {#aem-project-archetype}
 
-Adobe empfiehlt die Verwendung des [Maven Archetype for SPA Starter Kits](https://github.com/adobe/aem-spa-project-archetype) , um Ihnen beim Starten Ihres eigenen SPA-Projekts für AEM zu helfen.
+Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ## Anwendungsstruktur {#application-structure}
 
@@ -271,15 +271,15 @@ Weitere Informationen finden Sie im Dokument [SPA-Blueprint](/help/sites-develop
 
 Es ist regelmäßig erforderlich, dass Komponenten in einer Einzelseitenanwendung Informationen austauschen. Es gibt mehrere empfohlene Methoden, um dies zu tun, wie folgt in steigender Reihenfolge der Komplexität aufgeführt.
 
-* **** Option 1: Zentralisieren Sie die Logik und senden Sie sie an die erforderlichen Komponenten, z. B. mithilfe von &quot;React Context&quot;.
-* **** Option 2: Freigeben von Komponentenstatus mithilfe einer Statusbibliothek wie Redux
-* **** Option 3: Nutzen Sie die Objekthierarchie durch Anpassen und Erweitern der Container-Komponente.
+* **Option 1:** Zentralisieren Sie die Logik und senden Sie sie an die erforderlichen Komponenten, z. B. mithilfe von &quot;React Context&quot;.
+* **Option 2:** Freigeben von Komponentenstatus mithilfe einer Statusbibliothek wie Redux
+* **Option 3:** Nutzen Sie die Objekthierarchie durch Anpassen und Erweitern der Container-Komponente.
 
 ## Nächste Schritte {#next-steps}
 
-Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Tutorial [Erste Schritte mit dem AEM SPA Editor - WKND Events](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Lernprogramm [Erste Schritte mit dem AEM SPA Editor - WKND Ereignisses](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
-Weitere Informationen zum Organisieren von SPAs für AEM finden Sie im Artikel [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md).
+Weitere Informationen zur Organisation der Entwicklung von SPAs für AEM finden Sie im Artikel [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md).
 
 Weitere Informationen zum dynamischen Modell zur Komponentenzuordnung und dazu, wie es in AEM in SPAs funktioniert, finden Sie im Artikel [Dynamisches Modell zur Komponentenzuordnung für SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
