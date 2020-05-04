@@ -3,7 +3,7 @@ title: Metadaten-Profil zum Anpassen der Metadatenanforderungen für Assets
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ---
 
@@ -53,7 +53,6 @@ Mit einem Metadaten-Profil können Sie Standardmetadaten auf Assets in einem Ord
 ![chlimage_1-201](assets/chlimage_1-484.png)
 
 1. Klicken oder tippen Sie auf **[!UICONTROL Fertig]**. Das Metadatenprofil wird der Liste der Profile auf der Seite **[!UICONTROL Metadatenprofile]** hinzugefügt.<br>
-
 
    ![Auf der Seite &quot;Metadaten-Profil&quot;hinzugefügtes Metadaten-Profil](assets/MetadataProfiles-page.png)
 
@@ -128,13 +127,13 @@ Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet we
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Metadatenprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
-**Um ein Metadatenprofil global anzuwenden, führen Sie einen der folgenden Schritte aus:**
+Gehen Sie wie folgt vor, um ein Metadaten-Profil global anzuwenden:
 
 * Navigieren Sie zu `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` und wenden Sie das entsprechende Profil an und klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` hinzu und tippen Sie auf **Alle speichern**.
+* In CRXDE Lite, navigate to the following node: `/content/dam/jcr:content`. Add the property `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` and click **[!UICONTROL Save All]**.
 
    ![chlimage_1-210](assets/chlimage_1-493.png)
 
@@ -157,6 +156,10 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]**
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus. Wählen Sie anschließend **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+
+## Einschränkungen und Best Practices {#limitations-best-practices-tips}
+
+* Möglicherweise gibt es bereits vorhandene Metadaten-Profile, bevor Sie auf [!DNL Experience Manager] 6.5 aktualisieren. Wenn Sie nach der Aktualisierung ein solches Profil auf der Registerkarte &quot; [!UICONTROL Eigenschaften] von Ordnern&quot;auf die Registerkarte &quot; [!UICONTROL Metadaten-Profile] &quot;anwenden, werden die Metadatenformularfelder nicht angezeigt. Wenn Sie jedoch ein neu erstelltes Metadaten-Profil anwenden, werden die Formularfelder angezeigt, aber nicht wie erwartet verfügbar. Die Funktionen gehen nicht verloren, wenn Sie jedoch die (nicht verfügbaren) Formularfelder anzeigen möchten, bearbeiten und speichern Sie die vorhandenen Metadaten-Profil.
 
 >[!MORELIKETHIS]
 >
