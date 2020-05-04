@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -33,9 +33,9 @@ Beim Entwickeln von Einzelseitenanwendungen in AEM wird davon ausgegangen, dass 
 * **[Portabilität](/help/sites-developing/spa-architecture.md#portability)-**Wie bei allen Komponenten sollten die Komponenten so gebaut sein, dass sie möglichst tragbar sind. Die SPA sollte mit tragbaren und wiederverwendbaren Komponenten erstellt werden.
 * **[AEM Drives-Site-Struktur](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**- Der Front-End-Entwickler erstellt Komponenten und besitzt deren interne Struktur. Bei der Definition der Inhaltsstruktur der Site ist AEM jedoch darauf angewiesen.
 * **[Dynamisches Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)**: Alle Rendering-Vorgänge sollten dynamisch sein.
-* **[Dynamische Routing](#dynamic-routing)**- Die SPA ist für das Routing verantwortlich und AEM überwacht es und ruft auf, basierend darauf. Jede Route sollte ebenfalls dynamisch sein.
+* **[Dynamisches Routing](#dynamic-routing)-**Das SPA ist für das Routing verantwortlich, und AEM überwacht es und ruft es ab. Jedes Routing sollte ebenfalls dynamisch sein.
 
-Wenn Sie diese Prinzipien bei der Entwicklung Ihrer SPA beachten, ist diese so flexibel und so zukunftssicher wie möglich, während alle unterstützten AEM-Authoring-Funktionen aktiviert werden.
+Wenn Sie diese Prinzipien bei der Entwicklung Ihrer SPA beachten, ist diese so flexibel und so flexibel wie möglich, während alle unterstützten AEM-Authoring-Funktionen aktiviert werden.
 
 Wenn Sie keine AEM-Authoring-Funktionen unterstützen müssen, müssen Sie möglicherweise ein anderes [SPA-Designmodell](/help/sites-developing/spa-architecture.md#spa-design-models)in Betracht ziehen.
 
@@ -47,7 +47,7 @@ Die resultierende SPA sollte mit hochtragbaren und wiederverwendbaren Komponente
 
 ### AEM Drives-Site-Struktur {#aem-drives-site-structure}
 
-Der Frontend-Entwickler muss sich selbst als verantwortlich für die Erstellung einer Bibliothek mit SPA-Komponenten betrachten, die zum Erstellen der App verwendet werden. Der Front-End-Entwickler hat die vollständige Kontrolle über die interne Struktur der Komponenten. [AEM besitzt jedoch jederzeit die Struktur der Site.](/help/sites-developing/spa-overview.md)
+Der Front-End-Entwickler muss sich selbst als verantwortlich für die Erstellung einer Bibliothek mit SPA-Komponenten betrachten, die zum Erstellen der App verwendet werden. Der Front-End-Entwickler hat die vollständige Kontrolle über die interne Struktur der Komponenten. [AEM besitzt jedoch jederzeit die Struktur der Site.](/help/sites-developing/spa-overview.md)
 
 Das bedeutet, dass der Front-End-Entwickler Kundeninhalte vor oder nach dem Einstiegspunkt der Komponenten hinzufügen und auch Drittanbieter-Aufrufe innerhalb der Komponente durchführen kann. Der Front-End-Entwickler hat jedoch nicht die volle Kontrolle darüber, wie die Komponenten verschachteln.
 
@@ -57,15 +57,15 @@ Die SPA sollte nur auf der dynamischen Wiedergabe von Inhalten basieren. Dies is
 
 Jedes explizite Rendering, das auf bestimmte Inhalte verweist, gilt als statisches Rendering und ist mit den Inhaltserstellungsfunktionen von AEM nicht kompatibel. Dies widerspricht auch dem Grundsatz der [Übertragbarkeit](/help/sites-developing/spa-architecture.md#portability).
 
-### Dynamische Routing {#dynamic-routing}
+### Dynamisches Routing {#dynamic-routing}
 
-Wie beim Rendering sollte auch das Routing dynamisch sein. In AEM sollte [die SPA immer Eigentümer der Routingfunktion](/help/sites-developing/spa-routing.md) sein, und AEM überwacht sie und ruft Inhalt auf, der darauf basiert.
+Wie beim Rendering sollte auch das gesamte Routing dynamisch sein. In AEM sollte [die SPA stets Eigentümer des Routings](/help/sites-developing/spa-routing.md) sein, und AEM überwacht es und ruft Inhalte auf Grundlage dieses Inhalts ab.
 
-Jede statische Weiterleitung funktioniert gegen das [Prinzip der Portabilität](/help/sites-developing/spa-architecture.md#portability) und schränkt den Autor ein, da sie nicht mit den Inhaltserstellungsfunktionen von AEM kompatibel ist. Wenn der Autor beispielsweise eine Route ändern oder eine Seite ändern möchte, muss er bei statischem Routing den Frontend-Entwickler bitten, dies zu tun.
+Jedes statische Routing verstößt gegen das [Prinzip der Portabilität](/help/sites-developing/spa-architecture.md#portability) und schränkt den Autor ein, da es nicht mit Inhaltserstellungsfunktionen von AEM kompatibel ist. Bei statischem Routing muss der Autor beispielsweise den Front-End-Entwickler bitten, eine Route zu ändern oder eine Seite zu ändern.
 
-## Maven Archetype für SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+## AEM-Projektarchetyp {#aem-project-archetype}
 
-Adobe empfiehlt die Verwendung des [Maven Archetype for SPA Starter Kits](https://github.com/adobe/aem-spa-project-archetype) , um Ihnen beim Starten Ihres eigenen SPA-Projekts für AEM zu helfen.
+Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ## SPA-Designmodelle {#spa-design-models}
 
@@ -81,14 +81,14 @@ Es kann jedoch Fälle geben, in denen dies nicht ganz notwendig ist. Die folgend
    <th><strong>Nachteile</strong></th>
   </tr>
   <tr>
-   <td>AEM wird als kopfloses CMS ohne Verwendung des <a href="/help/sites-developing/spa-reference-materials.md">SPA Editor SDK Frameworks verwendet.</a></td>
+   <td>AEM wird als kopfloses CMS ohne Verwendung des <a href="/help/sites-developing/spa-reference-materials.md">SPA Editor SDK-Frameworks verwendet.</a></td>
    <td>Der Frontend-Entwickler hat die vollständige Kontrolle über die App.</td>
    <td><p>Autoren von Inhalten können das Authoring-Erlebnis von AEM nicht nutzen.</p> <p>Der Code ist weder portabel noch wiederverwendbar, wenn er statische Referenzen oder Routing enthält.</p> <p>Die Verwendung des Vorlageneditors ist nicht zulässig. Daher muss der Front-End-Entwickler bearbeitbare Vorlagen über JCR verwalten.</p> </td>
   </tr>
   <tr>
    <td>Der Front-End-Entwickler verwendet das SPA Editor SDK Framework, öffnet jedoch nur einige Bereiche für den Inhaltsersteller.</td>
    <td>Der Entwickler behält die Kontrolle über die App, indem er nur das Authoring in eingeschränkten Bereichen der App aktiviert.</td>
-   <td><p>Autoren von Inhalten sind auf eine begrenzte Anzahl von AEM-Inhaltserstellungsprogrammen beschränkt.</p> <p>Der Code läuft Gefahr, weder übertragbar noch wiederverwendbar zu sein, wenn er statische Referenzen oder Routingvorgänge enthält.</p> <p>Die Verwendung des Vorlageneditors ist nicht zulässig. Daher muss der Front-End-Entwickler bearbeitbare Vorlagen über JCR verwalten.</p> </td>
+   <td><p>Autoren von Inhalten sind auf eine begrenzte Anzahl von AEM-Inhaltserstellungs-Erlebnissen beschränkt.</p> <p>Der Code kann weder portabel noch wiederverwendbar sein, wenn er statische Referenzen oder Routing enthält.</p> <p>Die Verwendung des Vorlageneditors ist nicht zulässig. Daher muss der Front-End-Entwickler bearbeitbare Vorlagen über JCR verwalten.</p> </td>
   </tr>
   <tr>
    <td>Das Projekt nutzt das SPA Editor SDK vollständig, und die Frontend-Komponenten werden als Bibliothek entwickelt und die Inhaltsstruktur der App wird an AEM übertragen.</td>
@@ -121,7 +121,7 @@ Führen Sie die folgenden Schritte aus, um Ihre vorhandene SPA für die Verwendu
 
 ## Anweisungen für Front-End-Entwickler {#instructions-for-front-end-developers}
 
-Die Hauptaufgabe bei der Erstellung eines SPA für AEM durch einen Front-End-Entwickler besteht darin, die Komponenten und ihre JSON-Modelle zu vereinbaren.
+Die wichtigste Aufgabe bei der Erstellung eines SPA für AEM durch einen Front-End-Entwickler besteht darin, die Komponenten und ihre JSON-Modelle zu vereinbaren.
 
 Im Folgenden werden die Schritte erläutert, die ein Front-End-Entwickler bei der Entwicklung einer SPA für AEM ausführen muss.
 
@@ -151,17 +151,17 @@ Im Folgenden werden die Schritte erläutert, die ein Front-End-Entwickler bei de
 
    Dieser Parameter ist erforderlich, um dem Editor mitzuteilen, wie die Komponente benannt werden soll, solange at noch nicht gerendert ist oder über keinen zu rendernden Inhalt verfügt.
 
-1. **Erweitern der bereitgestellten`Container`Klasse für Seiten und Behälter**
+1. **Erweitern der bereitgestellten`Container`Klasse für Seiten und Container**
 
    Seiten und Absatzsysteme sollten diese Klasse erweitern, damit die Übertragung auf innere Komponenten erwartungsgemäß funktioniert.
 
-1. **Implementieren Sie eine Routinglösung, die die HTML5-`History`API verwendet.**
+1. **Implementieren Sie eine Routing-Lösung, die die HTML5`History`-API verwendet.**
 
    Wenn die Funktion `ModelRouter` aktiviert ist, löst der Aufruf der Funktionen `pushState` und `replaceState` eine Anforderung aus, ein fehlendes Fragment des Modells abzurufen `PageModelManager` .
 
    Die aktuelle Version der `ModelRouter` einzigen Version unterstützt die Verwendung von URLs, die auf den tatsächlichen Ressourcenpfad von Sling Model-Einstiegspunkten zeigen. Die Verwendung von Vanity-URLs oder Aliasnamen wird nicht unterstützt.
 
-   Die Variable `ModelRouter` kann deaktiviert oder konfiguriert werden, um eine Liste mit regulären Ausdrücken zu ignorieren.
+   Das `ModelRouter` kann deaktiviert oder so konfiguriert werden, dass eine Liste von regulären Ausdrücken ignoriert wird.
 
 ## AEM-Agnostik {#aem-agnostic}
 
@@ -184,11 +184,11 @@ Weitere Informationen zum Verwenden `MapTo` und Erstellen von SPAs für AEM im A
 
 ## AEM Architecture and SPAs {#aem-architecture-and-spas}
 
-Die allgemeine Architektur von AEM einschließlich Entwicklungs-, Authoring- und Veröffentlichungsumgebungen ändert sich bei der Verwendung von SPAs nicht. Es ist jedoch hilfreich zu verstehen, wie die SPA-Entwicklung in diese Architektur passt.
+Die allgemeine Architektur von AEM einschließlich der Entwicklungs-, Authoring- und Veröffentlichungsarchitektur ändert sich nicht, wenn SPAs verwendet werden. Es ist jedoch hilfreich zu verstehen, wie die SPA-Entwicklung in diese Architektur passt.
 
 ![screen_shot_2018-12-11at145348](assets/screen_shot_2018-12-11at145348.png)
 
-* **Build-Umgebung**
+* **Umgebung erstellen**
 
    Hier werden die Quelle für die SPA-Anwendungsquelle und die Komponentenquelle ausgecheckt.
 
@@ -199,7 +199,7 @@ Die allgemeine Architektur von AEM einschließlich Entwicklungs-, Authoring- und
 
    Inhalte werden auf dem AEM-Autor erstellt, einschließlich Authoring-SPAs.
 
-   Wenn eine SPA mit dem SPA-Editor in der Authoring-Umgebung bearbeitet wird:
+   Wenn eine SPA mit dem SPA-Editor auf der Authoring-Umgebung bearbeitet wird:
 
    1. Die SPA fordert den äußeren HTML-Code an.
    1. Das CSS wird geladen.
@@ -213,10 +213,10 @@ Die allgemeine Architektur von AEM einschließlich Entwicklungs-, Authoring- und
 
 * **Dispatcher/CDN**
 
-   Der Dispatcher dient als Zwischenspeicherungsebene von AEM für Besucher der Site.
+   Der Dispatcher dient als Zwischenspeicherebene von AEM für Besucher der Site.
 
    * Anforderungen werden ähnlich wie im AEM-Autor verarbeitet, es gibt jedoch keine Anforderung der Seiteninformationen, da dies nur vom Editor benötigt wird.
-   * JavaScript, CSS, JSON und HTML werden zwischengespeichert, wodurch die Seite für eine schnelle Bereitstellung optimiert wird.
+   * JavaScript, CSS, JSON und HTML werden zwischengespeichert, wodurch die Seite für einen schnellen Versand optimiert wird.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Die allgemeine Architektur von AEM einschließlich Entwicklungs-, Authoring- und
 
 Eine Übersicht darüber, wie eine einfache SPA in AEM strukturiert ist und wie sie funktioniert, finden Sie im Handbuch &quot;Erste Schritte&quot;für [React](/help/sites-developing/spa-getting-started-react.md) und [Angular](/help/sites-developing/spa-getting-started-angular.md).
 
-Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Tutorial [Erste Schritte mit dem AEM SPA Editor - WKND Events](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Lernprogramm [Erste Schritte mit dem AEM SPA Editor - WKND Ereignisses](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
 Weitere Informationen zum dynamischen Modell zur Komponentenzuordnung und dazu, wie es in AEM in SPAs funktioniert, finden Sie im Artikel [Dynamisches Modell zur Komponentenzuordnung für SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
