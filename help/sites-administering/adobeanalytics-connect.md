@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -20,8 +20,8 @@ source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
 
 Um Webdaten von Ihren AEM-Seiten in Adobe Analytics zu verfolgen, erstellen Sie eine Adobe Analytics Cloud Services-Konfiguration und ein Adobe Analytics-Framework:
 
-* **** Adobe Analytics-Konfiguration: Informationen zu Ihrem Adobe Analytics-Konto. Mit der Adobe Analytics-Konfiguration kann AEM eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
-* **** Adobe Analytics Framework: Eine Gruppe von Zuordnungen zwischen Adobe Analytics Report Suite-Eigenschaften und CQ-Variablen. Verwenden Sie ein Framework, um zu konfigurieren, wie Ihre Websitedaten Ihre Adobe Analytics-Berichte auffüllen. Frameworks sind mit einer Adobe Analytics-Konfiguration verknüpft. Sie können mehrere Frameworks für jede Konfiguration erstellen.
+* **Adobe Analytics-Konfiguration:** Informationen zu Ihrem Adobe Analytics-Konto. Mit der Adobe Analytics-Konfiguration kann AEM eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
+* **Adobe Analytics Framework:** Eine Gruppe von Zuordnungen zwischen Adobe Analytics Report Suite-Eigenschaften und CQ-Variablen. Verwenden Sie ein Framework, um zu konfigurieren, wie Ihre Websitedaten Ihre Adobe Analytics-Berichte auffüllen. Frameworks sind mit einer Adobe Analytics-Konfiguration verknüpft. Sie können mehrere Frameworks für jede Konfiguration erstellen.
 
 Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework eine Verfolgung für diese Seite und die untergeordneten Elemente dieser Seite durch. Seitenansichten können dann von Adobe Analytics abgerufen und in der Sites-Konsole angezeigt werden.
 
@@ -110,12 +110,12 @@ Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche
 >Beispielsweise wird ein Framework zur Verwendung der Report Suite *diiweretail* konfiguriert und der Autor ist die ausgewählte Serverinstanz. Wenn die Seiten zusammen mit dem Framework veröffentlicht werden, werden nach wie vor Aufrufe in Adobe Analytics getätigt, allerdings beinhalten diese Aufrufe nicht die Report Suite-ID. Nur Aufrufe von der Autoreninstanz beinhalten die Report Suite-ID.
 
 1. Wählen Sie unter **Navigation** die Option **Tools** > **Cloud Services** und dann **Legacy-Cloud-Services** aus.
-1. Scrollen Sie zu **Adobe Analytics** und klicken Sie auf **[+]** neben **Verfügbare Konfigurationen**.
+1. Blättern Sie zu **Adobe Analytics** und wählen Sie Konfigurationen **anzeigen**.
 1. Click the **[+]** link next to your Adobe Analytics configuration.
 
 1. Im Dialogfeld **Framework erstellen**:
 
-   * Geben Sie einen **Titel** an.
+   * einen **Titel** angeben,
    * Optional können Sie auch den **Namen** zu dem Knoten angeben, der die Framework-Details im Repository speichert.
    * Select **Adobe Analytics Framework**
    und klicken Sie auf **Erstellen**.
@@ -166,7 +166,7 @@ Beginnen Sie mit dem Öffnen des Bedienfelds. Klicken Sie auf den Pfeil nach unt
 
 ## Verknüpfung einer Seite mit einem Adobe Analytics-Framework {#associating-a-page-with-a-adobe-analytics-framework}
 
-Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, sendet die Seite beim Laden der Seite Daten an Adobe Analytics. Variablen, die auf der Seite eingetragen werden, werden zugeordnet und von den Adobe Analytics-Variablen im Framework abgerufen. Die Seitenansichten werden beispielsweise von Adobe Analytics abgerufen.
+Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, sendet die Seite Daten an Adobe Analytics, wenn die Seite geladen wird. Variablen, die auf der Seite eingetragen werden, werden zugeordnet und von den Adobe Analytics-Variablen im Framework abgerufen. Die Seitenansichten werden beispielsweise von Adobe Analytics abgerufen.
 
 Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework. Wenn Sie beispielsweise die Stammseite Ihrer Website mit einem Framework verknüpfen, werden alle Seiten der Website mit dem Framework verknüpft.
 
@@ -181,12 +181,12 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 1. Wählen Sie **Speichern und schließen** aus.
 1. **[Veröffentlichen](/help/sites-authoring/publishing-pages.md)**Sie die Seite, um die Seite und alle verbundenen Konfigurationen/Dateien zu aktivieren.
 1. Der letzte Schritt ist der Besuch der Seite in der Veröffentlichungsinstanz und die Suche nach Stichwort (z. B. Aubergine) mithilfe der Komponente **Suchen**.
-1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/de_DE/sc/implement/debugger_install.html).
 1. In dem genannten Beispiel sollte der Aufruf den eingegebenen Wert (d. h. Aubergine) in eVar7 enthalten und die Ereignisliste sollte „event3“ enthalten.
 
 ### Seitenansichten {#page-views}
 
-Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anzahl der Seitenansichten in der Listenansicht der Site-Konsole angezeigt werden.
+Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anzahl der Ansichten in der Liste-Ansicht der Site-Konsole angezeigt werden.
 
 Weitere Details finden Sie unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md).
 
