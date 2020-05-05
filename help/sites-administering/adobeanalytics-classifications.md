@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -21,14 +21,22 @@ Adobe Classifications exports classifications data to [Adobe Analytics](/help/si
 
 So konfigurieren Sie diese Komponente:
 
-1. Navigieren Sie über **Tools > Cloud-Services** zum Abschnitt **Adobe Analytics**.
-1. Fügen Sie eine neue Konfiguration hinzu. Die Konfigurationsvorlage **Adobe Analytics-Klassifizierungen** wird unter der Konfiguration **Adobe Analytics-Framework** angezeigt. Geben Sie einen **Titel** und einen **Namen** nach Bedarf an:
+1. Wählen Sie unter **Navigation** die Option **Tools** > **Cloud Services** und dann **Legacy-Cloud-Services** aus.
+1. Blättern Sie zu **Adobe Analytics** und wählen Sie Konfigurationen **anzeigen**.
+1. Click the **[+]** link next to your Adobe Analytics configuration.
 
-   ![aa-25](assets/aa-25.png)
+1. Im Dialogfeld **Framework erstellen**:
 
-1. Klicken Sie auf **Erstellen**, um die Einstellungen zu konfigurieren.
+   * einen **Titel** angeben,
+   * Optional können Sie auch den **Namen** zu dem Knoten angeben, der die Framework-Details im Repository speichert.
+   * Select **Adobe Analytics Classifications**
+   und klicken Sie auf **Erstellen**.
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   ![Framework-Dialogfeld erstellen](assets/aa-25.png)
+
+1. Das Dialogfeld **Klassifizierungseinstellungen** wird zur Bearbeitung geöffnet.
+
+   ![Dialogfeld &quot;Classification-Einstellungen&quot;](assets/aa-classifications-settings.png)
 
    Die Eigenschaften umfassen Folgendes:
 
@@ -69,7 +77,7 @@ So ändern Sie die Seitengröße:
 
 Ein Exporter kann einen Transformator verwenden, um die Exportdaten in ein bestimmtes Format zu konvertieren. For Adobe Classifications, a subinterface `SAINTTransformer<String[]>` implementing the Transformer interface has been provided. This interface is used to restrict the data type to `String[]` which is used by the SAINT API and to have a marker interface to find such services for selection.
 
-In der Standardimplementierung SAINTDefaultTransformer werden die untergeordneten Ressourcen der Exporteurquelle als Datensätze mit Eigenschaftsnamen als Schlüssel und Eigenschaftenwerte als Werte behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Namespaced properties (containing `:`) are disregarded.
+In der Standardimplementierung SAINTDefaultTransformer werden die untergeordneten Ressourcen der Exporteurquelle als Datensätze mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerte als Werte behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Namespaced properties (containing `:`) are disregarded.
 
 *Knotenstruktur:*
 
