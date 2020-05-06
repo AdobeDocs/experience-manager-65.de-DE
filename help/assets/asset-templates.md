@@ -1,9 +1,12 @@
 ---
 title: Asset-Vorlagen in [!DNL Adobe Experience Manager Assets].
-description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Adobe Experience Manager Assets] und wie Sie Asset-Vorlagen verwenden, um Marketingmaterial zu erstellen.
+description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1553'
+ht-degree: 35%
 
 ---
 
@@ -196,4 +199,4 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
 ## Best practices and limitations {#best-practices-limitations-tips}
 
-* Der AEM InDesign-Editor funktioniert auf Tag-Ebene und der gesamte Text unter einem Tag wird als eine Entität betrachtet. Um Textformatierung und -stile bei der Bearbeitung beizubehalten, müssen Sie jeden Absatz (oder Text mit einem anderen Stil) separat taggen.
+* Der [!DNL InDesign] Editor in [!DNL Experience Manager] funktioniert auf Tag-Ebene, und der gesamte Text unter einem einzelnen Tag wird als einzelne Entität betrachtet. Um Textformatierung und -stile bei der Bearbeitung beizubehalten, müssen Sie jeden Absatz (oder Text mit einem anderen Stil) separat taggen.
