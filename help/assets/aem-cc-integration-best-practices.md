@@ -1,17 +1,17 @@
 ---
-title: Best Practices zur Integration von Adobe Creative Cloud und [!DNL Adobe Experience Manager].
-description: Best Practices zur Integration von [!DNL Adobe Experience Manager] in [!DNL Adobe Creative Cloud], um die Übertragung von Assets zu optimieren und eine hohe Workflows zu erzielen.
+title: Best Practices für Adobe Creative Cloud [!DNL Adobe Experience Manager] und Integration.
+description: Best Practices zur [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] Integration, um Asset-Transfer-Workflows zu optimieren und eine hohe Inhaltsgeschwindigkeit zu erzielen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1321aa3421455d78fd4562d6cb524aa232ee2ce1
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '3253'
+ht-degree: 57%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] und Best Practices für die [!DNL Creative Cloud] Integration {#aem-and-creative-cloud-integration-best-practices}
-
-<!-- TBD: Reconcile with 6.4 article that's behind this article in terms of content streamlining and structuring.
--->
 
 [!DNL Adobe Experience Manager Assets] ist eine DAM-Lösung (Digital Asset Management), die DAM-Benutzer bei der Zusammenarbeit mit Kreativteams unterstützen und so die Zusammenarbeit bei der Inhaltserstellung optimieren kann. [!DNL Adobe Creative Cloud]
 
@@ -47,19 +47,19 @@ Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte d
 
 | Nutzungsszenario   | [!DNL Adobe Asset Link] | [!DNL Experience Manager] Desktop-App | Anmerkungen/sonstige Lösungen |
 |---|---|---|---|
-| Discover - DAM-Ordner durchsuchen | Ja | [!DNL Experience Manager] Web-UI- und Desktop-Aktionen | Deaktivieren Sie beim Durchsuchen der Netzwerkfreigabe die Miniaturansichten, um das Herunterladen binärer Asset-Dateien zu vermeiden. |
-| Discover - Zugriff auf DAM-Sammlungen | Ja | [!DNL Experience Manager] Web-UI- und Desktop-Aktionen |  |
-| Discover - Suche nach Assets aus DAM | Ja | [!DNL Experience Manager] Web-UI- und Desktop-Aktionen |  |
-| Verwenden – Öffnen von Assets | Ja | Ja – für jede App | [Öffnen über die Web-Benutzeroberfläche](managing-assets-touch-ui.md#previewing-assets) oder den Finder |
+| Discover - DAM-Ordner durchsuchen | Ja | [!DNL Experience Manager] Web-Oberfläche und Desktop-Aktionen |  |
+| Discover - Zugriff auf DAM-Sammlungen | Ja | [!DNL Experience Manager] Web-Oberfläche und Desktop-Aktionen |  |
+| Discover - Suche nach Assets aus DAM | Ja | [!DNL Experience Manager] Web-Oberfläche und Desktop-Aktionen |  |
+| Verwenden – Öffnen von Assets | Ja | Ja | [Öffnen über die Web-Benutzeroberfläche](managing-assets-touch-ui.md#previewing-assets) oder den Finder |
 | Verwenden - Platzieren Sie Assets aus DAM in ein Dokument | Ja – Einbetten | Ja – Verknüpfen oder Einbetten | [!DNL Experience Manager] Desktop App ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Applikationen werden durch lokale Pfade dargestellt. |
 | Bearbeiten – Öffnen zur Bearbeitung | Ja – Checkout-Aktion | Ja – Öffnen-Aktion (über die Netzwerkfreigabe) | Beim [Checkout in AAL](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) wird standardmäßig das Asset für das Creative Cloud-Speicherkonto des Benutzers (synchronisiert durch die Creative Cloud-Applikation) gespeichert. |
 | Bearbeiten - Arbeiten, die außerhalb von DAM ausgeführt werden | Ja – Asset im mit dem Desktop synchronisierten Creative Cloud-Speicherkonto des Benutzers verfügbar. | Ja |  |
 | Bearbeiten – Hochladen von Änderungen | Ja – [Checkin-Aktion](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
 | Hochladen – einzelne Datei | Ja – Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](managing-assets-touch-ui.md#uploading-assets) |
-| Hochladen – mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](managing-assets-touch-ui.md#uploading-assets);<br>Benutzerdefiniertes Skript- oder Tool-Tool |
-| Sonstiges – Benutzer und Anmeldung | Erkennung des Creative Cloud-Benutzers, der bei der Creative Cloud-Desktop-Applikation angemeldet ist (SSO) | [!DNL Experience Manager] user/login | Users of both solutions count against the [!DNL Experience Manager] user quota. |
-| Sonstiges – Netzwerk und Zugriff | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | Adobe Asset Link gibt keine Netzwerk-Proxy-Umgebung frei. |
-| Sonstiges – Migrieren einer großen Anzahl von Assets | Nein | Nein | [Migrationshandbuch](assets-migration-guide.md) |
+| Hochladen – mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](managing-assets-touch-ui.md#uploading-assets) oder über benutzerdefinierte Skripten oder Tools. |
+| Sonstiges – Benutzer und Anmeldung | Erkennung des Creative Cloud-Benutzers, der bei der Creative Cloud-Desktop-Applikation angemeldet ist (SSO) | [!DNL Experience Manager] Benutzer und Berechtigungen | Users of both solutions count towards the [!DNL Experience Manager] user quota. |
+| Sonstiges – Netzwerk und Zugriff | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | [!DNL Adobe Asset Link] hat keine Netzwerk-Proxy-Umgebung. |
+| Sonstiges – Migrieren einer großen Anzahl von Assets | Nein | Nein | [Handbuch zur Asset-Migration](assets-migration-guide.md) |
 
 Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere Lösungen in Betracht gezogen werden:
 
