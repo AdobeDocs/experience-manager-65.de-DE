@@ -3,7 +3,10 @@ title: Verarbeiten von Assets mit Media Handlern und Workflows
 description: Erfahren Sie mehr über die Media-Handler und wie Sie Workflows verwenden, um Aufgaben an Ihren digitalen Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 72%
 
 ---
 
@@ -448,7 +451,7 @@ Die folgenden Konvertierungen können automatisch ausgeführt und in AEM Assets 
 
 >[!NOTE]
 >
->Auf Nicht-Windows-Systemen gibt das FFMpeg-Tool einen Fehler aus, wenn Ausgabeformate für ein Video-Asset erstellt werden, dessen Dateiname ein einfaches Anführungszeichen (&#39;) enthält. Wenn der Name Ihrer Videodatei ein einfaches Anführungszeichen enthält, entfernen Sie es, bevor Sie das Asset auf AEM hochladen.
+>Bei Nicht-Windows-Systemen gibt das FFmpeg-Tool einen Fehler zurück, wenn Darstellungen für ein Video-Asset generiert werden, dessen Dateiname ein einfaches Anführungszeichen (&#39;) enthält. Wenn der Name Ihrer Videodatei ein einfaches Anführungszeichen enthält, entfernen Sie es, bevor Sie das Asset auf AEM hochladen.
 
 Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Reihenfolge aus:
 
