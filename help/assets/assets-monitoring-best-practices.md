@@ -1,9 +1,12 @@
 ---
-title: Best Practices zur Überwachung der [!DNL Adobe Experience Manager Assets]-Bereitstellung.
-description: Bewährte Verfahren zur Überwachung der Umgebung und Leistung Ihrer [!DNL Adobe Experience Manager]-Bereitstellung nach deren Bereitstellung.
+title: Bewährte Verfahren zur [!DNL Adobe Experience Manager Assets] Überwachung der Bereitstellung.
+description: Best practices to monitor the environment and performance of your [!DNL Adobe Experience Manager] deployment after it is deployed.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1673'
+ht-degree: 69%
 
 ---
 
@@ -146,7 +149,7 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 * Replikations-Warteschlange
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Instanzen: ein Autoren-, alle Veröffentlichungsserver
    * Alarmschwellenwert: Wenn der Status nicht „OK“ lautet.
