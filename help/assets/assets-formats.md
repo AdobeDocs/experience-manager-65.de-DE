@@ -3,7 +3,10 @@ title: Von Assets unterstützte Formate
 description: Liste der Dateiformate, die von AEM Assets und von Dynamic Media unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1770'
+ht-degree: 71%
 
 ---
 
@@ -24,7 +27,7 @@ Die Legende gibt den Grad der Unterstützung an.
 
 ## Unterstützte Rasterbildformate in AEM Assets {#supported-raster-image-formats}
 
-| Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Bearbeiten | Metadaten-Writeback | Einblicke |
+| Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Bearbeiten | Metadaten-Writeback | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -118,9 +121,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbildern. See [Camera Raw support](camera-raw.md).
 
-## Unterstützte Asset-Dokument-Formate {#supported-document-formats}
+## Supported Assets document formats {#supported-document-formats}
 
-Folgende Dokument-Formate werden für Asset-Management-Funktionen unterstützt:
+Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
 <!--
 DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
@@ -186,7 +189,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 ## Unterstützte Multimediaformate {#supported-multimedia-formats}
 
-|  | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | FFMPEG-Transkodierung |
+|  | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | FFmpeg-Transkodierung |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | ✓ | ✓ |  | − | * |
 | MIDI | ✓ | ✓ |  | − | * |
