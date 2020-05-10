@@ -1,41 +1,46 @@
 ---
-title: Digital Rights Management in Assets
-description: Erfahren Sie, wie Sie den Asset-Ablaufstatus und Informationen für lizenzierte Assets in AEM verwalten.
+title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
+description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 18862ca1ce80682a28293ca4ba6741dbdd6b12f2
+workflow-type: tm+mt
+source-wordcount: '1426'
+ht-degree: 54%
 
 ---
 
 
-# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
+# Digital Rights Management for assets {#digital-rights-management-in-assets}
 
-Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen und die Nutzungsdauer festgelegt sind. Da Adobe Experience Manager (AEM) Assets vollständig mit der AEM-Plattform integriert ist, können Sie Asset-Ablaufinformationen und -Status effizient verwalten. Sie können Lizenzinformationen mit Assets verknüpfen.
+Digitale Assets werden oft mit einer Lizenz verknüpft, die die Nutzungsbedingungen und die Nutzungsdauer angibt. Because [!DNL Adobe Experience Manager Assets] is fully integrated with the [!DNL Experience Manager] platform, you can efficiently manage asset expiration information and asset states. Sie können Lizenzinformationen mit Assets verknüpfen.
 
 ## Asset-Ablauf {#asset-expiration}
 
-Der Asset-Ablauf ist eine effektive Möglichkeit zum Durchsetzen von Lizenzanforderungen für Assets. Wenn ein veröffentlichtes Asset abläuft, wird seine Veröffentlichung aufgehoben und damit die Möglichkeit einer Lizenzverletzung unterbunden. Ein Benutzer ohne Administratorrechte kann ein abgelaufenes Asset weder bearbeiten, kopieren, verschieben, veröffentlichen noch herunterladen.
+Der Ablauf von Assets ist eine effektive Möglichkeit, Lizenzanforderungen für Assets zu erzwingen. Wenn ein veröffentlichtes Asset abläuft, wird seine Veröffentlichung aufgehoben und damit die Möglichkeit einer Lizenzverletzung unterbunden. Benutzer ohne Administratorberechtigungen können abgelaufene Assets nicht bearbeiten, kopieren, verschieben, veröffentlichen und herunterladen.
 
-Sie können den Ablaufstatus für ein Asset in der Asset-Konsole sowohl in den Ansichten &quot;Karte&quot;als auch &quot;Liste&quot;Ansicht haben.
+You can view the expiration status for an asset in the [!DNL Assets] console in both the card and list views.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
 *Abbildung: In der Ansicht der Karte zeigt ein Flag auf der Karte das abgelaufene Asset an.*
 
-**Listenansicht**
-
 ![expired_Flag_Liste](assets/expired_flag_list.png)
 
 *Abbildung: In der Ansicht &quot;Liste&quot;wird in der Spalte &quot;[!UICONTROL Status]&quot;das Banner &quot;[!UICONTROL Abgelaufen]&quot;angezeigt.*
 
-Sie können den Ablaufstatus eines Assets in der Timeline einsehen. Wählen Sie das Asset und danach im GlobalNav-Menü die Option „Timeline“ aus.
+You can view the expiration status of an asset in the [!UICONTROL Timeline] in left rail.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
+
+>[!NOTE]
+>
+>Das Ablaufdatum eines Assets wird für Benutzer in verschiedenen Zeitzonen unterschiedlich angezeigt.
 
 You can also view the expiration status of assets in the **[!UICONTROL References]** rail. Hier werden der Asset-Ablaufstatus und die Beziehungen zwischen ebenenübergreifenden Assets und referenzierten Teil-Assets, Sammlungen und Projekten verwaltet.
 
 1. Navigieren Sie zu dem Asset, für das Sie referenzierende Web-Seiten und ebenenübergreifende Assets anzeigen möchten.
-1. Wählen Sie das Asset und das Experience Manager-Logo aus.
+1. Wählen Sie das Asset und das [!DNL Experience Manager] Logo aus.
 
 1. Wählen Sie im Menü **[!UICONTROL Verweise]** aus.
 
@@ -53,13 +58,13 @@ You can also view the expiration status of assets in the **[!UICONTROL Reference
 
 Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Teil-Assets suchen.
 
-1. In the Assets console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
+1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
 
 1. Klicken Sie mit dem Cursor in das Feld Omniture Search (Suchergebnis) auf die Eingabetaste, um die Seite Search Results (Suchergebnisse) anzuzeigen.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Klicken Sie auf das Experience Manager-Logo, um das Suchfeld anzuzeigen.
+1. Klicken Sie auf [!DNL Experience Manager] das Logo, um das Suchfeld anzuzeigen.
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -71,15 +76,15 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Te
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
-Bei Auswahl der Option **Abgelaufen** zeigt die Konsole „Assets“ nur die abgelaufenen Assets und Teil-Assets an, auf die von ebenenübergreifenden Assets verwiesen wird. Die ebenenübergreifenden Assets, die auf abgelaufene Unter-Assets verweisen, werden nicht sofort nach Ablauf eines Unter-Assets angezeigt. Stattdessen werden sie angezeigt, nachdem AEM Assets bei der nächsten Ausführung des Planers erkennt, dass sie auf abgelaufene Unter-Assets verweisen.
+When you select the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. Die ebenenübergreifenden Assets, die auf abgelaufene Unter-Assets verweisen, werden nicht sofort nach Ablauf eines Unter-Assets angezeigt. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
 
 Wenn Sie das Ablaufdatum eines veröffentlichten Assets in ein Datum ändern, das vor dem aktuellen Planerzyklus liegt, erkennt der Planer das Asset als abgelaufenes Asset, wenn es das nächste Mal aufgeführt wird, und spiegelt dementsprechend seinen Status wider.
 
 Wenn eine Störung oder ein Fehler verhindert, dass der Planer abgelaufene Assets im aktuellen Zyklus erkennt, untersucht der Planer diese Assets im nächsten Zyklus erneut und erkennt dann, dass sie abgelaufen sind.
 
-Damit die Konsole „Assets“ die verweisenden ebenenübergreifenden Assets neben den abgelaufenen Teil-Assets anzeigt, konfigurieren Sie in AEM Configuration Manager einen Workflow für **Adobe CQ DAM-Ablaufbenachrichtigungen**.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in [!DNL Experience Manager] Configuration Manager.
 
-1. Öffnen Sie AEM Configuration Manager.
+1. Open [!DNL Experience Manager] Configuration Manager.
 1. Wählen Sie **[!UICONTROL Adobe CQ DAM-Ablaufbenachrichtigung]** aus. Standardmäßig wird **[!UICONTROL Zeitbasierter Planer]** ausgewählt, womit ein Auftrag geplant wird, der zu einem bestimmten Zeitpunkt prüft, ob ein Asset abgelaufene Teil-Assets aufweist. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Teil-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -89,7 +94,7 @@ Damit die Konsole „Assets“ die verweisenden ebenenübergreifenden Assets neb
 
    >[!NOTE]
    >
-   >Nur der Ersteller eines Assets (die Person, die ein bestimmtes Asset in AEM Assets hochlädt) erhält eine E-Mail, wenn das Asset abläuft. Weitere Einzelheiten zur Konfiguration von E-Mail-Benachrichtigungen in AEM im Allgemeinen finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md).
+   >Only the asset creator (the person who uploads a particular asset to [!DNL Assets]) receives an email when the asset expires. Weitere Einzelheiten zur Konfiguration von E-Mail-Benachrichtigungen in im Allgemeinen finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md).[!DNL Experience Manager]
 
 1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Wenn Sie ein Administrator oder der Ersteller des Assets sind, werden Sie vor Ablauf des Assets darüber informiert, dass das Asset nach dem angegebenen Zeitraum ablaufen wird.
 
@@ -99,9 +104,9 @@ Damit die Konsole „Assets“ die verweisenden ebenenübergreifenden Assets neb
 
 ## Asset-Zustände {#asset-states}
 
-Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschiedene Zustände für Assets anzeigen. Abhängig vom aktuellen Zustand eines bestimmten Assets zeigt die zugehörige Kartenansicht eine Beschreibung des Zustands an, z. B. „Abgelaufen“, „Veröffentlicht“, „Genehmigt“, „Abgelehnt“ usw.
+Die [!DNL Assets] Konsole kann verschiedene Status für Assets anzeigen. Abhängig vom aktuellen Zustand eines bestimmten Assets zeigt die zugehörige Kartenansicht eine Beschreibung des Zustands an, z. B. „Abgelaufen“, „Veröffentlicht“, „Genehmigt“, „Abgelehnt“ usw.
 
-1. Wählen Sie in der Assets-Benutzeroberfläche ein Asset aus.
+1. In the [!DNL Assets] user interface, select an asset.
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -114,7 +119,7 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. In the Assets interface, select an asset and click **[!UICONTROL Properties]** to display its asset details page.
+1. Wählen Sie in der [!DNL Assets] Benutzeroberfläche ein Asset aus und klicken Sie auf **[!UICONTROL Eigenschaften]** , um die Seite mit den Asset-Details anzuzeigen.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -122,15 +127,14 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
 
    ![Asset-Ablaufdatum und -Uhrzeit im Feld &quot;Abgelaufen&quot;](assets/asset-properties-advanced-tab.png)
 
-
-   *Abbildung: Registerkarte &quot;[!UICONTROL Erweitert]&quot;auf der Seite &quot;Asset-[!UICONTROL Eigenschaften]&quot;zum Festlegen des Asset-Ablaufs.*
+   *Abbildung:[!UICONTROL Registerkarte &quot;Erweitert]&quot;auf der Seite &quot;Asset-[!UICONTROL Eigenschaften]&quot;, um den Ablauf des Assets festzulegen.*
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL Schließen]**, um die Konsole „Assets“ anzuzeigen.
 1. Der Veröffentlichungsstatus des Assets weist in der Kartenansicht im unteren Bereich der Miniaturansicht darauf hin, dass das Asset abgelaufen ist. In der Listenansicht wird der Status des Assets als **[!UICONTROL Abgelaufen]** angegeben.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-1. Wählen Sie in der Konsole „Assets“ einen Ordner aus und erstellen Sie eine Prüfungsaufgabe für den Ordner.
+1. In the [!DNL Assets] console, select a folder and create a review task on the folder.
 1. Prüfen und bestätigen Sie das Asset in der Prüfungsaufgabe (bzw. lehnen Sie es ab) und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zu dem Ordner, für den Sie die Prüfungsaufgabe erstellt haben. Der Status des Assets, das Sie bestätigt oder abgelehnt haben, wird unten in der Kartenansicht angezeigt. In der Listenansicht werden Bestätigungs- und Ablaufstatus in entsprechenden Spalten angezeigt.
 
@@ -140,8 +144,8 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Drücken Sie die Eingabetaste und klicken Sie dann auf **[!UICONTROL GlobalNav]** , um das Suchfeld anzuzeigen.
-1. In the Search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
+1. Drücken Sie die Eingabetaste und klicken Sie auf **[!UICONTROL GlobalNav]** , um das Suchfeld anzuzeigen.
+1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -157,11 +161,11 @@ Die Konsole „Assets“ in Adobe Experience Manager (AEM) Assets kann verschied
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
+## Digital Rights Management in [!DNL Assets] {#digital-rights-management-in-assets-1}
 
-Diese Funktion erzwingt die Annahme der Lizenzvereinbarung, bevor Sie ein lizenziertes Asset aus Adobe Experience Manager Assets herunterladen können.
+This feature enforces the acceptance of the license agreement before you can download a licensed asset from [!DNL Adobe Experience Manager Assets].
 
-If you select a protected asset and click **[!UICONTROL Download]**, you are redirected to a license page where you accept the license agreement. Wenn Sie die Lizenzvereinbarung nicht annehmen, wird die Schaltfläche **[!UICONTROL Herunterladen]** deaktiviert.
+If you select a protected asset and click **[!UICONTROL Download]**, you are redirected to a license page to accept the license agreement. If you do not accept the license agreement, the **[!UICONTROL Download]** option is not available.
 
 Falls die Auswahl mehrere geschützte Assets enthält, wählen Sie jeweils eines aus, nehmen Sie die Lizenzvereinbarung an und fahren Sie mit dem Herunterladen des Assets fort.
 
@@ -172,19 +176,19 @@ Ein Asset gilt als geschützt, wenn eine der folgenden Bedingungen erfüllt ist:
 
 >[!NOTE]
 >
->Der Speicherort `/etc/dam/drm/licenses`, der in den früheren Versionen von AEM zum Speichern von Lizenzen verwendet wurde, wird nicht mehr unterstützt.
+>Der Speicherort `/etc/dam/drm/licenses`, der in den früheren Versionen von zum Speichern von Lizenzen verwendet wurde, wird nicht mehr unterstützt.[!DNL Experience Manager]
 >
->If you create or modify licence pages, or port them from previous AEM releases, Adobe recommends that you store them under `/apps/settings/dam/drm/licenses` or `/conf/&ast;/settings/dam/drm/licenses`.
+>If you create or modify licence pages, or port them from previous [!DNL Experience Manager] releases, Adobe recommends that you store them under `/apps/settings/dam/drm/licenses` or `/conf/&ast;/settings/dam/drm/licenses`.
 
 ### Herunterladen von DRM-geschützten Assets {#downloading-drm-assets}
 
-1. In the Card view, select the assets you want to download and click **[!UICONTROL Download]**.
+1. In the card view, select the assets you want to download and click **[!UICONTROL Download]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Copyright-Management]** das Asset aus, das Sie herunterladen möchten.
-1. Wählen Sie im Lizenzfenster **[!UICONTROL Zustimmen]**. Möglicherweise erscheint ein Häkchen neben dem Asset, für das Sie die Lizenzvereinbarung angenommen haben. Klicken Sie auf die Schaltfläche **[!UICONTROL Herunterladen]**.
+1. In the [!UICONTROL License] pane, choose **[!UICONTROL Agree]**. Neben dem Asset wird ein Häkchen angezeigt. Click the **[!UICONTROL Download]** option.
 
    >[!NOTE]
    >
-   >Die Schaltfläche **[!UICONTROL Herunterladen]** ist nur dann verfügbar, wenn Sie der Lizenzvereinbarung für ein geschütztes Asset zustimmen. Wenn Ihre Auswahl jedoch sowohl geschützte als auch nicht geschützte Assets enthält, erscheinen nur die geschützten Assets im linken Bereich und die Schaltfläche **[!UICONTROL Herunterladen]** ist für den Download der nicht geschützten Assets verfügbar. Sie können mehrere Lizenzvereinbarungen für verschiedene geschützte Assets gleichzeitig annehmen, indem Sie die Assets in der Liste auswählen und anschließend auf **[!UICONTROL Zustimmen]** klicken.
+   >The **[!UICONTROL Download]** option is enabled only when you choose to agree to the license agreement for a protected asset. However, if your selection comprises both protected and unprotected assets, only the protected assets are listed in the pane and the **[!UICONTROL Download]** option is enabled to download the unprotected assets. Sie können mehrere Lizenzvereinbarungen für verschiedene geschützte Assets gleichzeitig annehmen, indem Sie die Assets in der Liste auswählen und anschließend auf **[!UICONTROL Zustimmen]** klicken.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
