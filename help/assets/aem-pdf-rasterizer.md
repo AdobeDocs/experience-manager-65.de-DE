@@ -1,34 +1,35 @@
 ---
-title: Verwenden des PDF-Rasters zum Generieren von Darstellungen
-description: Dieser Artikel beschreibt, wie Sie mit der Adobe PDF Rasterizer-Bibliothek hochwertige Minaturansichten und Ausgabeformate erstellen können.
+title: Verwenden Sie PDF-Rasterfunktion, um Darstellungen von PDF-Dateien zu erstellen.
+description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Raster-Bibliothek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 42%
 
 ---
 
 
 # PDF-Raster verwenden {#using-pdf-rasterizer}
 
-Wenn große, inhaltslastige PDF- oder AI-Dateien in Adobe Experience Manager (AEM) Assets hochgeladen werden, erstellt die Standardbibliothek u. U. manchmal keine genaue Ausgabe. In solchen Fällen kann die Adobe PDF Rasterizer-Bibliothek zuverlässigere und präzisere Ausgaben erstellen als Standardbibliotheken.
+When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. Die PDF-Rasterbibliothek von Adobe kann eine zuverlässigere und genauere Ausgabe im Vergleich zur Ausgabe aus einer Standardbibliothek generieren. Adobe empfiehlt die Verwendung der PDF-Rasterbibliothek für folgende Szenarien:
 
-Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Dateien:
-
-* Große, inhaltslastige AI-/PDF-Dateien.
-* AI- und PDF-Dateien mit nicht standardmäßig generierten Miniaturbildern.
+* Starke, inhaltsintensive AI-Dateien oder PDF-Dateien.
+* AI-Dateien und PDF-Dateien mit Miniaturansichten, die nicht standardmäßig generiert werden.
 * AI-Dateien mit PMS-Farben (Pantone Matching System)
 
 Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt unabhängig vom Farbraum der Quelldatei immer in RGB.
 
-1. Install the PDF Rasterizer package on your AEM deployment from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Install the PDF Rasterizer package on your [!DNL Experience Manager] deployment from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >Die PDF Rasterizer-Bibliothek ist nur für Windows und Linux verfügbar.
 
-1. Access the AEM Assets workflow console at `https://[server]:[port]/workflow`. Open the [!UICONTROL DAM Update Asset] workflow page.
+1. Greifen Sie auf die [!DNL Assets] Workflow-Konsole unter `https://[aem_server]:[port]/workflow`. Open [!UICONTROL DAM Update Asset] workflow.
 
-1. Gehen Sie folgendermaßen vor, um die Generierung von Miniaturansichten und Webwiedergaben für PDF- und AI-Dateien mit den Standardmethoden zu verhindern:
+1. Gehen Sie wie folgt vor, um die Generierung von Miniaturbildern und Webdarstellungen für PDF- und AI-Dateien mithilfe der Standardmethoden zu verhindern:
 
    * Open the **[!UICONTROL Process Thumbnails]** step, and add `application/pdf` or `application/postscript` in the **[!UICONTROL Skip Mime Types]** field under the **[!UICONTROL Thumbnails]** tab as necessary.
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
@@ -44,14 +45,13 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
 
    * MIME-Typen: `application/pdf` oder `application/postscript`
-
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
    * `-d`: Markieren, um eine reibungslose Wiedergabe von Text, Vektorgrafiken und Bildern zu ermöglichen. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
 
-   * `-p`: Seitenzahl. Der Standardwert ist „Alle Seiten“. „*“ steht für „Alle Seiten“.
+   * `-p`: Seitenzahl. Der Standardwert ist „Alle Seiten“. Um alle Seiten zu kennzeichnen, verwenden Sie `*`.
 
    * `-s`: Maximale Bildabmessungen (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
 
@@ -63,7 +63,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
-1. Um Webausgabeformate von PDF Rasterizer generieren zu lassen, wählen Sie **[!UICONTROL Webausgabe erstellen]**.
+1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
@@ -79,8 +79,8 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    * MIME-Typen: `application/pdf` oder `application/postscript`
 
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
-   Die Befehlszeilenargumente für den PDFRasterizer-Befehl können Folgendes enthalten:
+   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. Hinzufügen benutzerdefinierte Miniaturansicht-Konfiguration nach Bedarf.
+   Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
    * `-d`: Markieren, um eine reibungslose Wiedergabe von Text, Vektorgrafiken und Bildern zu ermöglichen. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
 
@@ -96,7 +96,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
-1. Um Webausgabeformate von PDF Rasterizer generieren zu lassen, wählen Sie **[!UICONTROL Webausgabe erstellen]**.
+1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
@@ -105,4 +105,4 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Speichern Sie den Workflow.
-1. Laden Sie eine PDF- oder AI-Datei in AEM Assets hoch. PDF Rasterizer erstellt die Miniaturansichten und Webausgaben für die Datei.
+1. Upload a PDF or an AI file to [!DNL Experience Manager Assets]. PDF Rasterizer erstellt die Miniaturansichten und Webausgaben für die Datei.
