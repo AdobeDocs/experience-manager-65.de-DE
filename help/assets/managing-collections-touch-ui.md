@@ -1,17 +1,20 @@
 ---
-title: Digitale Asset-Sammlungen verwalten
+title: Verwalten von digitalen Asset-Sammlungen
 description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. Sammlungen erstellen, Ansicht, löschen, bearbeiten und herunterladen.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2229'
+ht-degree: 72%
 
 ---
 
 
 # Verwalten von Sammlungen {#managing-collections}
 
-Eine Sammlung ist ein Satz von Assets in Adobe Experience Manager Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Der Satz kann eine statische Sammlung oder eine dynamische Sammlung sein, die auf Suchergebnissen basiert.
+Eine Sammlung ist ein Satz von Assets innerhalb von Adobe Experience Manager Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Der Satz kann eine statische Sammlung oder eine dynamische Sammlung sein, die auf Suchergebnissen basiert.
 
 Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können Sammlungen für mehrere Benutzer mit unterschiedlichen Berechtigungsstufen, wie Anzeigen, Bearbeiten usw., freigeben.
 
@@ -21,9 +24,9 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 
 * Eine Sammlung mit einer statischen Referenzliste von Assets, Ordnern und anderen Sammlungen.
 
-* Eine intelligente Sammlung, die Elemente basierend auf Suchkriterien dynamisch enthält.
+* Eine Smart-Sammlung, die Assets auf Grundlage eines Suchkriteriums dynamisch verwendet.
 
-## Access the collections console {#navigating-the-collections-console}
+## Aufrufen der Konsole „Sammlungen“ {#navigating-the-collections-console}
 
 Um die **[!UICONTROL Sammlungen]** zu öffnen, gehen Sie in der Experience Manager-Oberfläche zu **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**.
 
@@ -49,15 +52,15 @@ Sie können eine Sammlung mit statischen Referenzen erstellen, wie eine Sammlung
 
    >[!NOTE]
    >
-   >Mit Experience Manager Assets können Sie Review-Aufgaben für eine Sammlung erstellen, ähnlich wie Sie Review-Aufgaben für einen Asset-Ordner erstellen.
+   >Mit Experience Manager Assets können Sie Prüfungsaufgaben für eine Sammlung auf ähnliche Weise wie Prüfungsaufgaben für einen Assets-Ordner erstellen.
 
    Um Assets zur Sammlung hinzuzufügen, navigieren Sie zur Assets-Benutzeroberfläche. Weitere Informationen finden Sie unter [Hinzufügen von Assets zu einer Sammlung](#adding-assets-to-a-collection).
 
-### Create collections using dropzone {#create-collections-using-dropzone}
+### Erstellen von Sammlungen mithilfe der Dropzone {#create-collections-using-dropzone}
 
 Sie können Assets aus der Assets-Benutzeroberfläche ziehen und in einer Sammlung ablegen. Sie können auch eine Kopie einer Sammlung erstellen und Assets dort hinziehen.
 
-1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;die Assets aus, die Sie einer Sammlung hinzufügen möchten.
+1. Wählen Sie in der Assets-Benutzeroberfläche die Assets aus, die Sie zu einer Sammlung hinzufügen möchten.
 1. Ziehen Sie die Assets in den Bereich **[!UICONTROL In Sammlung ablegen]**. Alternatively, click the **[!UICONTROL To Collection]** icon from the toolbar.
 
    ![drop_in_collection](assets/drop_in_collection.png)
@@ -203,8 +206,6 @@ Sie können Sammlungseinstellungen, wie z. B. Titel und Beschreibung, bearbeite
 
 1. Wählen Sie in der Konsole &quot;Sammlungen&quot;eine oder mehrere Sammlungen aus und klicken Sie auf das Symbol &quot;Löschen&quot;in der Symbolleiste.
 
-   ![chlimage_1-11](assets/chlimage_1-177.png)
-
 1. In the dialog, click **[!UICONTROL Delete]** to confirm the delete action.
 
    >[!NOTE]
@@ -239,7 +240,7 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge   {#saved-searches}
+## Gespeicherte Suchvorgänge     {#saved-searches}
 
 In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
@@ -259,7 +260,7 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
    ![chlimage_1-13](assets/chlimage_1-114.png)
 
-1. Drücken Sie mit dem Cursor im Feld Omniture die Eingabetaste.
+1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die Eingabetaste.
 
 1. Klicken Sie auf das GlobalNav-Symbol, um das Bedienfeld &quot;Filter&quot;anzuzeigen.
 
@@ -269,7 +270,7 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 1. In the dialog, click **[!UICONTROL Delete]** to delete the saved search.
 
-## Execute a workflow on a collection {#running-a-workflow-on-a-collection}
+## Ausführen eines Workflows für eine Sammlung {#running-a-workflow-on-a-collection}
 
 Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn die Sammlung verschachtelte Sammlungen enthält, wird der Workflow auch für die Assets in den verschachtelten Sammlungen ausgeführt. Wenn jedoch die Sammlung und die verschachtelte Sammlung doppelte Assets enthalten, wird der Workflow nur einmal für solche Assets ausgeführt.
 
