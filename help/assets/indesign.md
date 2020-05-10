@@ -1,14 +1,17 @@
 ---
-title: '[!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] integrieren'
-description: Erfahren Sie, wie Sie [!DNL Adobe Experience Manager Assets] in [!DNL Adobe InDesign Server] integrieren.
+title: ' [!DNL Adobe Experience Manager Assets] Integrieren mit [!DNL Adobe InDesign Server]'
+description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 39%
 
 ---
 
 
-# Integrieren [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server]{#integrating-aem-assets-with-indesign-server}
+# Integrieren [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] den:
 
@@ -64,7 +67,7 @@ To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager As
 Dies ist nur dann notwendig, wenn die Standardwerte für Ihre Instanz nicht geeignet sind.
 1. Konfigurieren Sie einen [Proxy Worker für InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installieren Sie die [!DNL InDesign Server]{#installing-the-indesign-server}
+### Installieren Sie die [!DNL InDesign Server] {#installing-the-indesign-server}
 
 To install and start the [!DNL InDesign Server] for use with [!DNL Experience Manager]:
 
@@ -116,7 +119,7 @@ Weitere Informationen zu InDesign-Skripten finden Sie in der [InDesign-Entwickle
 
 The `ThumbnailExport.jsx` script run by the Media Extraction workflow step generates a thumbnail rendition in JPG format. This rendition is used by the Process Thumbnails workflow step to generate the static renditions required by [!DNL Experience Manager].
 
-Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
+Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Im Arbeitsablauf zum Löschen der Bildwiedergabe wird die JPG-Miniaturdarstellung entfernt, da sie nicht mehr benötigt wird.
 
 #### Page extraction {#page-extraction}
 
@@ -139,7 +142,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
 * **Seitendesign**: Der Seitenentwurf, der beim Generieren der resultierenden Seite verwendet wird.
 
-### Proxy-Worker konfigurieren für [!DNL InDesign Server]{#configuring-the-proxy-worker-for-indesign-server}
+### Proxy-Worker konfigurieren für [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -167,7 +170,7 @@ If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hos
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
-### Aktivieren der parallelen Auftragsverarbeitung für [!DNL InDesign Server]{#enabling-parallel-job-processing-for-indesign-server-s}
+### Parallele Auftragsverarbeitung aktivieren für [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
 
 Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren. Bestimmen Sie die maximale Anzahl paralleler Aufträge (`x`), die verarbeitet werden [!DNL InDesign Server] können:
 
