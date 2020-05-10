@@ -3,10 +3,10 @@ title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften i
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6151c1afe3006e8d4b93648fc9eb779c73df4181
+source-git-commit: 739f1c6fcc910ed134849c27a44a6feccd1684c9
 workflow-type: tm+mt
-source-wordcount: '2741'
-ht-degree: 67%
+source-wordcount: '2738'
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,7 @@ Organisationen verfügen über ein Metadatenmodell, das die Ermittlung, Verwendu
 
 In [!DNL Adobe Experience Manager Assets]Schemas sind spezielle Felder enthalten, in die die spezifischen Informationen eingetragen werden sollen. Es enthält außerdem Layoutinformationen, um Metadatenfelder benutzerfreundlich anzuzeigen. Zu den Metadateneigenschaften gehören Titel, Beschreibung, MIME-Typen, Tags und mehr. You can use the [!UICONTROL Metadata Schema Forms] editor to modify the existing schemas or add custom metadata schemas.
 
-Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht:
+Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu bearbeiten:
 
 1. Klicken Sie auf das Symbol &quot; **[!UICONTROL Ansichten-Eigenschaften]** &quot;in den Schnellaktionen auf der Asset-Kachel in der Ansicht &quot;Karte&quot;.
 
@@ -35,36 +35,22 @@ Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht:
 
 Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Wenn Sie das Metadatenschema für einen bestimmten MIME-Typ ändern, werden das Layout der Eigenschaftenseite für Assets mit dem aktuellen MIME-Typ und alle untergeordneten Asset-Typen geändert. Durch die Bearbeitung des jpeg-Schemas unter `default/image` wird nur das Metadaten-Layout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `image/jpeg` bearbeitet. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
 
-1. Um eine Liste von Formularen/Vorlagen Ansicht, navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
+## Metadaten-Schemaformulare {#default-metadata-schema-forms}
 
-## Standardmäßig verfügbare Metadaten-Schema-Formulare {#available-metadata-schema-templates}
+Um eine Liste von Formularen/Vorlagen Ansicht, navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
 
-[!DNL Experience Manager] stellt die folgenden Vorlagen bereit:
+[!DNL Experience Manager] stellt die folgenden Metadaten-Schema-Formularvorlagen bereit:
 
-### default {#default-template}
-
-The [!UICONTROL default] is the base metadata schema form for assets. Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des Standardformulars:
-
-**image** ist das Schema-Formular für Assets mit dem MIME-Typ &quot;image&quot;. Zum Beispiel `image/jpeg`, `image/png`usw. Das Formular „image“ weist die folgenden untergeordneten Formularvorlagen auf:
-* **jpeg** ist das Schema-Formular für Assets mit Untertyp `jpeg`.
-
-* **tiff** ist das Schema-Formular für die Assets mit dem Untertyp `tiff`.
-
-**application** ist das Schema-Formular für Assets mit MIME-Typ `application`. Zum Beispiel `application/pdf`, `application/zip`usw. **pdf** ist das Schema-Formular für Assets mit Untertyp `pdf`.
-
-**video** ist das Schema-Formular für Assets mit MIME-Typ `video`, z. B. `video/avi`, `video/mp4`usw.
-
-### collection {#collection-template}
-
-Die [!UICONTROL Sammlung] ist das Schema-Formular für Sammlungen.
-
-### contentfragment {#contentfragment-template}
-
-Das [!UICONTROL Inhaltsfragment] ist das Schema-Formular für Inhaltsfragmente.
-
-### Formulare {#forms-template}
-
-The [!UICONTROL forms] schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md).
+| Vorlagen |  | Beschreibung |
+|---|---|---|
+| [!UICONTROL default] |  | Dies ist das Basisformular für Assets. |
+|  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Schema-Formular für Assets mit dem MIME-Typ &quot;image&quot;, z. B. image/jpeg, image/png usw. <br> Das [!UICONTROL Bildformular] verfügt über die folgenden Vorlagen für untergeordnete Formulare: <ul><li> [!UICONTROL jpeg]: Schema-Formular für Assets mit [!UICONTROL JPEG]-Untertyp.</li> <li>[!UICONTROL tiff]: Schema-Formular für die Assets mit Untertyp [!UICONTROL tiff].</li></ul> |
+|  | <ul><li> [!UICONTROL Anwendung]</li></ul> | Schema-Formular für Assets mit MIME-Typ &quot;application&quot;, z. B. application/pdf, application/zip usw. <br>[!UICONTROL pdf]: Schema-Formular für Assets mit dem Untertyp pdf. |
+|  | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Assets mit dem MIME-Typ „video“, beispielsweise video/avi, video/mp4 usw. |
+| [!UICONTROL collection] |  | Schema-Formular für Sammlungen. |
+| [!UICONTROL contentfragment] |  | Schema-Formular für Inhaltsfragmente. |
+| [!UICONTROL forms] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
