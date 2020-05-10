@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Verwenden Sie Assets, die in einer [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] Remote-Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d2f9bf9f8e83a088769507da8a46f1c9ef4e74e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 50%
+source-wordcount: '2081'
+ht-degree: 48%
 
 ---
 
@@ -41,7 +41,7 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 Autoren können in Content Finder nach Bildern und den folgenden Dokumenten suchen und die gesuchten Assets im Seiten-Editor verwenden. Dokumente können zur `Download`-Komponente und Bilder zur `Image`-Komponente hinzugefügt werden. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Folgende Formate werden unterstützt:
 
 * **Bildformate**: Die Formate, die von der [Image-Komponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) unterstützt werden. [!DNL Dynamic Media] Bilder werden nicht unterstützt.
-* **Dokumentenformate**: Siehe [Unterstützte Dokumentformate für Connected Assets](assets-formats.md#supported-document-formats).
+* **Dokument-Formate**: Weitere Informationen finden Sie [in den von Connected Assets](assets-formats.md#supported-document-formats)unterstützten Videoformaten.
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
@@ -185,5 +185,5 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 
 Führen Sie die folgenden Schritte aus, um häufige Fehler zu beheben:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* Ein Asset, das aus einem Remote-DAM abgerufen wurde, kann aus folgenden Gründen nicht auf einer Web-Seite veröffentlicht werden: Es ist im Remote-Speicher nicht vorhanden, es fehlen die Berechtigungen für den Abruf oder es liegt ein Netzwerkfehler vor. Vergewissern Sie sich, dass das Asset nicht aus dem Remote-DAM entfernt wird oder dass die Berechtigungen nicht geändert werden. Stellen Sie sicher, dass geeignete Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie es erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/assets/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* Ein aus dem Remote-Damm abgerufenes Asset kann aus einem oder mehreren Gründen nicht auf einer Webseite veröffentlicht werden. Es existiert nicht auf einem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler kann die Ursache sein. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass entsprechende Berechtigungen vorhanden sind und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie es erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/assets/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
