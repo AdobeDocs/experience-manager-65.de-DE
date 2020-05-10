@@ -1,34 +1,32 @@
 ---
-title: Von Assets unterstützte Formate
-description: Liste der Dateiformate, die von AEM Assets und von Dynamic Media unterstützt werden, sowie der für jedes Format unterstützten Funktionen.
+title: Unterstützte Dateiformate zur Verarbeitung in [!DNL Adobe Experience Manager Assets].
+description: Dateiformate und MIME-Typen, die [!DNL Assets] and [!DNL Dynamic Media] von und die für die einzelnen Formate unterstützten Funktionen unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 71%
+source-wordcount: '1756'
+ht-degree: 69%
 
 ---
 
 
-# Unterstützte Asset-Formate {#assets-supported-formats}
+# Unterstützte Formate in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen.
-
-Um AEM Assets mit anderen standardkonformen DAM-Lösungen (Digital Asset Management) und Desktop-Software-Anwendungen zu integrieren, verwenden Sie die Extensible Metadata Platform (XMP) von Adobe.
+[!DNL Experience Manager Assets] unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen. To integrate [!DNL Assets] with other standards-compliant digital asset management (DAM) solutions and desktop software, use Adobe&#39;s [!DNL Extensible Metadata Platform] (XMP).
 
 Die Legende gibt den Grad der Unterstützung an.
 
 | Unterstützungsebene | Beschreibung |
-|:---:|---|
+| :-----------: | ------------------------------ |
 | ✓ | Unterstützt |
 | * | Mit Funktionen von Zusatzmodulen unterstützt |
 | − | Nicht zutreffend |
 
-## Unterstützte Rasterbildformate in AEM Assets {#supported-raster-image-formats}
+## Supported raster image formats in [!DNL Assets] {#supported-raster-image-formats}
 
 | Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Bearbeiten | Metadaten-Writeback | Insights |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -45,7 +43,7 @@ Die Legende gibt den Grad der Unterstützung an.
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
-## Unterstützte Rasterbildformate in dynamischen Medien {#supported-raster-image-formats-dynamic-media}
+## Supported raster image formats in [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -66,7 +64,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 * Metadata writeback works for PSB file format when it is added to the `NComm` handler.
 
-* Um mithilfe von Dynamic Media dynamische Ausgaben für EPS-Dateien in der Vorschau anzuzeigen und zu generieren, informieren Sie sich unter [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+* To use [!DNL Dynamic Media] to preview and generate dynamic renditions for EPS files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
 
