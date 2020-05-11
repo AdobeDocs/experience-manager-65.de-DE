@@ -4,7 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 56%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + AEM Assets verwenden {#using}
    + [AEM Assets-Startseite](assets-home-page.md)
-   + [Suchen nach Assets in AEM  ](search-assets.md)
+   + [Suchen nach Assets in AEM    ](search-assets.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
-   + [Verwenden von [!DNL Adobe Stock]-Assets in AEM Assets](aem-assets-adobe-stock.md)
+   + [Verwenden von [!DNL Adobe Stock] Assets in AEM Assets](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Aktivitäts-Stream in der Timeline](activity-stream.md)
@@ -53,14 +56,14 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [Panoramabilder](panoramic-images.md)
    + [Gemischte Mediensets](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
-   + [Video](video.md)
+   + [Video in dynamischen Medien](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [360-Grad-VR-Video](/help/assets/360-video.md)
    + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](/help/assets/launch.md)
    + [Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups](custom-pop-ups.md)
-   + [Bereitstellen von optimierten Bildern für eine responsive Website](responsive-site.md)
+   + [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
    + [Anzeigen einer Vorschau von Dynamic Media-Assets](previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md)
    + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md)
@@ -74,7 +77,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [Anpassen und Erweitern von AEM Assets](extending-assets.md)
    + [Verarbeiten von Assets mit Media Handlern und Workflows](media-handlers.md)
    + [Suchfunktion erweitern](searchx.md)
-   + [[!DNL ImageMagick] für die Verwendung mit AEM Assets installieren und konfigurieren](best-practices-for-imagemagick.md)
+   + [ [!DNL ImageMagick] Installieren und konfigurieren Sie , um mit AEM Assets arbeiten zu können.](best-practices-for-imagemagick.md)
    + [Assets in den Aktivitäten-Stream integrieren](extending-activity-stream.md)
    + [Asset-Editor erweitern](asseteditorx.md)
    + [Assets-HTTP-API](mac-api-assets.md)
