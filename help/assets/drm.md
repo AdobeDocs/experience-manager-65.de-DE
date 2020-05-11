@@ -3,10 +3,10 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 18862ca1ce80682a28293ca4ba6741dbdd6b12f2
+source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 54%
+source-wordcount: '1428'
+ht-degree: 55%
 
 ---
 
@@ -19,7 +19,7 @@ Digitale Assets werden oft mit einer Lizenz verknüpft, die die Nutzungsbedingun
 
 Der Ablauf von Assets ist eine effektive Möglichkeit, Lizenzanforderungen für Assets zu erzwingen. Wenn ein veröffentlichtes Asset abläuft, wird seine Veröffentlichung aufgehoben und damit die Möglichkeit einer Lizenzverletzung unterbunden. Benutzer ohne Administratorberechtigungen können abgelaufene Assets nicht bearbeiten, kopieren, verschieben, veröffentlichen und herunterladen.
 
-You can view the expiration status for an asset in the [!DNL Assets] console in both the card and list views.
+You can view the expiration status of an asset in the [!DNL Assets] console in both the card and list views.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
@@ -40,7 +40,7 @@ You can view the expiration status of an asset in the [!UICONTROL Timeline] in l
 You can also view the expiration status of assets in the **[!UICONTROL References]** rail. Hier werden der Asset-Ablaufstatus und die Beziehungen zwischen ebenenübergreifenden Assets und referenzierten Teil-Assets, Sammlungen und Projekten verwaltet.
 
 1. Navigieren Sie zu dem Asset, für das Sie referenzierende Web-Seiten und ebenenübergreifende Assets anzeigen möchten.
-1. Wählen Sie das Asset und das [!DNL Experience Manager] Logo aus.
+1. Wählen Sie das Asset aus und klicken Sie auf das [!DNL Experience Manager] Logo.
 
 1. Wählen Sie im Menü **[!UICONTROL Verweise]** aus.
 
@@ -60,7 +60,7 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Te
 
 1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
 
-1. Klicken Sie mit dem Cursor in das Feld Omniture Search (Suchergebnis) auf die Eingabetaste, um die Seite Search Results (Suchergebnisse) anzuzeigen.
+1. Betätigen Sie bei in das Omnisearch-Feld gesetztem Cursor die Eingabetaste, um die Seite mit den Suchergebnissen anzuzeigen.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -72,17 +72,17 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Te
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Wählen Sie **[!UICONTROL Abgelaufen]** aus. Die abgelaufenen Assets werden in den Suchergebnissen angezeigt.
+1. Wählen Sie **[!UICONTROL Abgelaufen]**. Die abgelaufenen Assets werden in den Suchergebnissen angezeigt.
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
-When you select the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. Die ebenenübergreifenden Assets, die auf abgelaufene Unter-Assets verweisen, werden nicht sofort nach Ablauf eines Unter-Assets angezeigt. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
+Bei Auswahl der Option **[!UICONTROL Abgelaufen]** zeigt die Konsole „“ nur die abgelaufenen Assets und Teil-Assets an, auf die von ebenenübergreifenden Assets verwiesen wird. [!DNL Assets] Die ebenenübergreifenden Assets, die auf abgelaufene Unter-Assets verweisen, werden nicht sofort nach Ablauf eines Unter-Assets angezeigt. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
 
 Wenn Sie das Ablaufdatum eines veröffentlichten Assets in ein Datum ändern, das vor dem aktuellen Planerzyklus liegt, erkennt der Planer das Asset als abgelaufenes Asset, wenn es das nächste Mal aufgeführt wird, und spiegelt dementsprechend seinen Status wider.
 
 Wenn eine Störung oder ein Fehler verhindert, dass der Planer abgelaufene Assets im aktuellen Zyklus erkennt, untersucht der Planer diese Assets im nächsten Zyklus erneut und erkennt dann, dass sie abgelaufen sind.
 
-To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in [!DNL Experience Manager] Configuration Manager.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Wählen Sie **[!UICONTROL Adobe CQ DAM-Ablaufbenachrichtigung]** aus. Standardmäßig wird **[!UICONTROL Zeitbasierter Planer]** ausgewählt, womit ein Auftrag geplant wird, der zu einem bestimmten Zeitpunkt prüft, ob ein Asset abgelaufene Teil-Assets aufweist. Nach Abschluss des Auftrags werden Assets mit abgelaufenen Teil-Assets und verwiesenen Assets in den Suchergebnissen als abgelaufen angezeigt.
@@ -94,7 +94,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
    >[!NOTE]
    >
-   >Only the asset creator (the person who uploads a particular asset to [!DNL Assets]) receives an email when the asset expires. Weitere Einzelheiten zur Konfiguration von E-Mail-Benachrichtigungen in im Allgemeinen finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md).[!DNL Experience Manager]
+   >Only the asset creator (the person who uploads a particular asset to [!DNL Assets]) receives an email when the asset expires. See [how to configure email notification](/help/sites-administering/notification.md) for additional details around configuring email notifications at the overall [!DNL Experience Manager] level.
 
 1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Wenn Sie ein Administrator oder der Ersteller des Assets sind, werden Sie vor Ablauf des Assets darüber informiert, dass das Asset nach dem angegebenen Zeitraum ablaufen wird.
 
@@ -119,7 +119,7 @@ Die [!DNL Assets] Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Wählen Sie in der [!DNL Assets] Benutzeroberfläche ein Asset aus und klicken Sie auf **[!UICONTROL Eigenschaften]** , um die Seite mit den Asset-Details anzuzeigen.
+1. Um die Seite mit den Asset-Details anzuzeigen, wählen Sie in der [!DNL Assets] Benutzeroberfläche ein Asset aus und klicken Sie auf **[!UICONTROL Eigenschaften]**.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -144,7 +144,7 @@ Die [!DNL Assets] Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Drücken Sie die Eingabetaste und klicken Sie auf **[!UICONTROL GlobalNav]** , um das Suchfeld anzuzeigen.
+1. Drücken Sie die Eingabetaste und klicken Sie auf [!DNL Experience Manager] , um das Suchfeld anzuzeigen.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
