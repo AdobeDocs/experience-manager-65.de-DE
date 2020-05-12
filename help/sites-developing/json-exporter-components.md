@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 75%
 
 ---
 
@@ -56,6 +59,16 @@ Außerdem kann die Sling-Modell-Klasse dadurch in der `ComponentExporter`-Oberfl
 >
 >The `ExporterConstants` and `ComponentExporter` classes come from the `com.adobe.cq.export.json` bundle.
 
+### Mehrere Selektoren verwenden {#multiple-selectors}
+
+Obwohl es sich nicht um einen Standard-Anwendungsfall handelt, ist es möglich, zusätzlich zum `model` Selektor mehrere Selektoren zu konfigurieren.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+In einem solchen Fall muss der `model` Selektor jedoch der erste Selektor sein und die Erweiterung muss `.json`sein.
+
 ## Anmerkungen für die Sling-Modell-Oberfläche {#annotate-the-sling-model-interface}
 
 Damit sie im JSON-Exporter-Framework beachtet wird, sollte die `ComponentExporter`-Oberfläche (oder `ContainerExporter` bei Container-Komponenten) in der Modell-Oberfläche implementiert werden.
@@ -66,7 +79,7 @@ Es müssen die richtigen Anmerkungen für die Modell-Oberfläche angewendet werd
 
 ## Beispiel {#example}
 
-Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). Sie können als Referenz verwendet werden.
+Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). Sie können als Referenz verwendet werden.
 
 Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und deren kommentierte Oberfläche.
 
@@ -86,5 +99,5 @@ Weitere Informationen finden Sie unter:
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) und die [Komponente „Inhaltsfragment“](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und die [Komponente „Inhaltsfragment“](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
