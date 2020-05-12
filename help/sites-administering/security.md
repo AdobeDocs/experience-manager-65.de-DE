@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd667ae10b930f6e3b97fb22b4a99b0841fac171
+source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+workflow-type: tm+mt
+source-wordcount: '5487'
+ht-degree: 80%
 
 ---
 
@@ -148,7 +151,7 @@ You can change the permissions granted/denied to a given user by selecting or cl
 
 Wo sich das Häkchen im Raster befindet, gibt zudem an, welche Berechtigungen Benutzer in welchen AEM-Bereichen (also Pfaden) haben.
 
-### Aktionen {#actions}
+### Aktionen  {#actions}
 
 Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Für jede Seite in der Hierarchie können Sie angeben, zu welcher Aktion der Benutzer auf der Seite berechtigt ist. [Mit Berechtigungen](#permissions-and-acls) können Sie Aktionen zulassen oder ablehnen.
 
@@ -187,15 +190,15 @@ Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Fü
   </tr>
   <tr>
    <td>ACL lesen</td>
-   <td>Der Benutzer kann die Zugriffssteuerungsliste der Seite oder untergeordneten Seiten lesen.</td>
+   <td>Der Benutzer kann die Liste der Zugriffskontrolle der Seite oder der untergeordneten Seiten lesen.</td>
   </tr>
   <tr>
    <td>ACL bearbeiten</td>
-   <td>Der Benutzer kann die Zugriffssteuerungsliste der Seite oder untergeordneter Seiten ändern.</td>
+   <td>Der Benutzer kann die Liste der Zugriffskontrolle der Seite oder der untergeordneten Seiten ändern.</td>
   </tr>
   <tr>
    <td>Replizieren</td>
-   <td>Der Benutzer kann Inhalte in eine andere Umgebung replizieren (z. B. die Veröffentlichungsumgebung). Die Berechtigung gilt auch für untergeordnete Seiten.</td>
+   <td>Der Benutzer kann Inhalte in eine andere Umgebung replizieren (z. B. die Umgebung "Veröffentlichen"). Die Berechtigung gilt auch für untergeordnete Seiten.</td>
   </tr>
  </tbody>
 </table>
@@ -216,7 +219,7 @@ Zugriffssteuerungslisten setzen sich aus einzelnen Berechtigungen zusammen und d
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Ermöglicht jedem Leserzugriff.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Ermöglicht jedem Leserzugriff.
->`/home/users/geometrixx-outdoors`: Ermöglicht jedem Leserzugriff für `*/profile*` und
+>`/home/users/geometrixx-outdoors`: Ermöglicht allen Lesern Zugriff auf `*/profile*` und
 >`*/social/relationships/following/*`.
 >
 >Your custom application may set access for other relationships, such as `*/social/relationships/friend/*` or `*/social/relationships/pending-following/*`.
@@ -263,11 +266,11 @@ Wenn Sie auf das Sternchen oder Ausrufezeichen zeigen, liefert eine QuickInfo we
  <tbody>
   <tr>
    <td>Oberer Teil</td>
-   <td><p>Listet die effektiven Einträge auf.</p> </td>
+   <td><p>Liste der effektiven Einträge.</p> </td>
   </tr>
   <tr>
    <td>Unterer Teil</td>
-   <td>Listet die nicht wirksamen Einträge auf, die einen Effekt an einer anderen Stelle im Baum haben können (wie durch ein spezielles Attribut mit dem entsprechenden ACE angegeben, das den Umfang des Eintrags begrenzt). Dies kann auch ein Eintrag sein, dessen Wirkung von einem anderen Eintrag, der unter dem angegebenen Pfad oder in einem Vorgängerknoten definiert wurde, aufgehoben wurde.</td>
+   <td>Liste der nicht wirksamen Einträge, die einen Effekt an einer anderen Stelle im Baum haben können (wie durch ein spezielles Attribut mit dem entsprechenden ACE angegeben, das den Umfang des Eintrags begrenzt). Dies kann auch ein Eintrag sein, dessen Wirkung von einem anderen Eintrag, der unter dem angegebenen Pfad oder in einem Vorgängerknoten definiert wurde, aufgehoben wurde.</td>
   </tr>
  </tbody>
 </table>
@@ -409,12 +412,12 @@ In der linken Struktur sehen Sie alle aktuell im System vorhandenen Benutzer und
 |--- |--- |
 | Filterfeld | Ein Mechanismus zum Filtern der aufgelisteten Benutzer und/oder Gruppen. See [Filtering Users and Groups](#filtering-users-and-groups). |
 | Benutzer ausblenden | Ein Umschalter, mit dem alle aufgelisteten Benutzer ausgeblendet werden, wobei nur Gruppen verbleiben. See [Hiding Users and Groups](#hiding-users-and-groups). |
-| Gruppen ausblenden | Ein Umschalter, mit dem alle aufgelisteten Gruppen ausgeblendet werden, wobei nur Benutzer verbleiben. See [Hiding Users and Groups](#hiding-users-and-groups). |
+| Gruppen ausblenden | Ein Umschalter, mit dem alle aufgelisteten Gruppen ausgeblendet werden, wobei nur Benutzer übrig bleiben. See [Hiding Users and Groups](#hiding-users-and-groups). |
 | Bearbeiten | Ein Menü, mit dem Sie Benutzer oder Gruppen erstellen und löschen sowie aktivieren und deaktivieren können. Siehe [Erstellen von Benutzern und Gruppen](#creating-users-and-groups) und [Löschen von Benutzern und Gruppen](#deleting-users-and-groups). |
-| Eigenschaften | Listet Informationen über den Benutzer oder die Gruppe auf, die E-Mail-Informationen, eine Beschreibung und Namensinformationen enthalten können. Außerdem können Sie das Kennwort des Benutzers ändern. Siehe [Erstellen von Benutzern und Gruppen](#creating-users-and-groups), [Ändern von Benutzer- und Gruppeneigenschaften](#modifying-user-and-group-properties) und [Ändern eines Benutzerkennworts](#changing-a-user-password). |
-| Gruppen | Listet alle Gruppen auf, denen der ausgewählte Benutzer oder die ausgewählte Gruppe angehört. Sie können den ausgewählten Benutzer oder die ausgewählte Gruppe zusätzlichen Gruppen zuweisen oder aus Gruppen entfernen. Siehe [Gruppen](#adding-users-or-groups-to-a-group). |
+| Eigenschaften | Listen zu Benutzern oder Gruppen, die E-Mail-Informationen, Beschreibungen und Namensinformationen enthalten können. Außerdem können Sie das Kennwort des Benutzers ändern. Siehe [Erstellen von Benutzern und Gruppen](#creating-users-and-groups), [Ändern von Benutzer- und Gruppeneigenschaften](#modifying-user-and-group-properties) und [Ändern eines Benutzerkennworts](#changing-a-user-password). |
+| Gruppen | Liste aller Gruppen, zu denen der ausgewählte Benutzer oder die ausgewählte Gruppe gehört. Sie können den ausgewählten Benutzer oder die ausgewählte Gruppe zusätzlichen Gruppen zuweisen oder aus Gruppen entfernen. Siehe [Gruppen](#adding-users-or-groups-to-a-group). |
 | Mitglieder | Nur für Gruppen verfügbar. Es werden nur die Mitglieder einer bestimmten Gruppe aufgeführt. Siehe [Mitglieder](#members-adding-users-or-groups-to-a-group). |
-| Berechtigungen | Sie können einem Benutzer oder einer Gruppe Berechtigungen zuweisen. Hier können Sie Folgendes steuern:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. See [Setting Permissions](#setting-permissions). </li><li>Berechtigungen zum Erstellen und Löschen von Seiten und zur Änderung der Hierarchie. ??? ermöglicht die [Zuweisung von Berechtigungen](#settingprivileges), z. B. Hierarchieänderungen, mit denen Sie Seiten erstellen und löschen können,</li><li>Berechtigungen im Zusammenhang mit [Replizierungsberechtigungen](#setting-replication-privileges) (normalerweise vom Autor bis zur Veröffentlichung) gemäß einem Pfad.</li></ul> |
+| Berechtigungen | Sie können einem Benutzer oder einer Gruppe Berechtigungen zuweisen. Hier können Sie Folgendes steuern:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. See [Setting Permissions](#setting-permissions). </li><li>Berechtigungen zum Erstellen und Löschen von Seiten und zur Änderung der Hierarchie. ??? ermöglicht die [Zuweisung von Berechtigungen](#settingprivileges), z. B. Hierarchieänderungen, mit denen Sie Seiten erstellen und löschen können,</li><li>Berechtigungen im Zusammenhang mit [Replizierungsberechtigungen](#setting-replication-privileges) (normalerweise vom Autor bis zum Veröffentlichen) gemäß einem Pfad.</li></ul> |
 | Darsteller | Hiermit können andere Benutzer das Konto imitieren. Dies ist nützlich, wenn ein Benutzer stellvertretend für einen anderen Benutzer agieren soll. Siehe [Identifizieren von Benutzern](#impersonating-another-user). |
 | Preferences | Legt [Voreinstellungen für die Gruppe oder den Benutzer](#setting-user-and-group-preferences)fest. etwa Sprachvoreinstellungen. |
 
@@ -490,7 +493,7 @@ Gehen Sie wie folgt vor, um das Kennwort eines Benutzers zu ändern.
 >[!NOTE]
 >
 >Sie können das Administratorkennwort nicht mit der Sicherheitskonsole ändern. Um das Kennwort für das Admin-Konto zu ändern, verwenden Sie die unter „Granite-Vorgänge“ bereitgestellte [Benutzerkonsole.](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user)
-
+> Wenn Sie AEM Forms on JEE verwenden, verwenden Sie keine der folgenden Anweisungen zum Ändern des Kennworts, sondern verwenden Sie AEM Forms on JEE Admin Console (/adminui), um das Kennwort zu ändern.
 
 1. Doppelklicken Sie in der **Sicherheitskonsole** auf den Namen des Benutzers, dessen Kennwort geändert werden soll.
 1. Klicken Sie auf die Registerkarte **Eigenschaften** (sofern noch nicht aktiv).
@@ -665,7 +668,7 @@ Im Suchfeld stehen Ihnen folgende Möglichkeiten zur Verfügung:
 | Aktion | Funktion |
 |--- |--- |
 | Nach rechts | Wählt einen Unterknoten im Suchergebnis aus |
-| Nach-unten-Taste | Startet die Suche erneut. |
+| Nach-unten-Taste | Die Suche wird erneut Beginn. |
 | Eingabetaste | Wählt eine Unterknoten aus und lädt sie in die Hierarchie |
 
 * Volltextsuche – Wenn die Suchzeichenfolge nicht mit „/“ beginnt, wird eine Volltextsuche in allen Knoten unter dem Pfad /content ausgeführt.
@@ -734,7 +737,7 @@ The definition and registration of custom privileges is officially part of the [
 
 The privilege registration mechanism is reflected in the UI under **Repository Configuration**.
 
-Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene (in JCR: Übergeben von &#39;null&#39; als &#39;absPath&#39; Parameter in der ac-mgt-API, siehe jsr 333 für Details). By default, **admin** and all members of administrators have that privilege granted.
+Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene (in JCR: Übergeben von &#39;null&#39; als &#39;absPath&#39; Parameter in der ac-mgt-API, siehe jsr 333 für weitere Informationen). By default, **admin** and all members of administrators have that privilege granted.
 
 >[!NOTE]
 >
