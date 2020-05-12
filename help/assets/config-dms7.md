@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
+source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
 workflow-type: tm+mt
-source-wordcount: '5759'
+source-wordcount: '5763'
 ht-degree: 86%
 
 ---
@@ -502,11 +502,11 @@ Damit der Modus &quot;Dynamische Medien - Scene7&quot;reibungslos ausgeführt we
 * Aktualisieren der vordefinierten Warteschlangen-Workerthreads des Granite-Verlaufs-Workflows (Bilder und Nicht-Video-Assets)
 * Aktualisieren der maximalen Upload-Verbindungen mit dem Dynamic Media Classic-Server
 
-#### Aktualisieren der Verlaufs-Workflow-Warteschlange von Granite {#updating-the-granite-transient-workflow-queue}
+#### Updating the Granite transient workflow queue {#updating-the-granite-transient-workflow-queue}
 
 Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICONTROL DAM-Update-Asset]** verwendet. In Dynamic Media wird sie für die Bildaufnahme und -verarbeitung genutzt.
 
-**So aktualisieren Sie die Verlaufs-Workflow-Warteschlange von Granite**
+**So aktualisieren Sie die Warteschlange für den transienten Granite-Workflow**
 
 1. Navigieren Sie zu [https://&lt;Server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach **Warteschlange: Warteschlange für die Granite-Übergangs-Workflows**.
 
@@ -524,7 +524,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
-#### Aktualisieren der Granite-Workflow-Warteschlange {#updating-the-granite-workflow-queue}
+#### Updating the Granite workflow queue {#updating-the-granite-workflow-queue}
 
 Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. In Dynamic Media dient sie zum Verarbeiten von Videos mit dem Workflow **[!UICONTROL Dynamic Media-Videokodierung]**.
 
@@ -546,11 +546,11 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**.
 
-#### Aktualisieren der Scene7-Upload-Verbindung {#updating-the-scene-upload-connection}
+#### Aktualisieren der Verbindung zum Hochladen von dynamischen Medien in Classic {#updating-the-scene-upload-connection}
 
 Die Einstellung der Upload-Verbindung (Scene 7) synchronisiert AEM-Assets mit Dynamic Media Classic-Servern.
 
-**So aktualisieren Sie die Scene7-Upload-Verbindung**
+**So aktualisieren Sie die Verbindung zum Hochladen von Dynamic Media Classic**
 
 1. Navigieren Sie zu `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Ändern Sie im Feld **[!UICONTROL Anzahl der Verbindungen]** und/oder im Feld **[!UICONTROL Zeitüberschreitung bei aktiven Aufträgen]** den Wert in die gewünschte Anzahl.
