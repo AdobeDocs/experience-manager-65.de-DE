@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+workflow-type: tm+mt
+source-wordcount: '1970'
+ht-degree: 84%
 
 ---
 
@@ -164,6 +167,10 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 1. Warum funktionieren Bildschirmlesehilfen nicht korrekt mit dem Datums-/Uhrzeitfeldobjekt?
 
    Bildschirmlesehilfen unterstützen keine Datums-/Uhrzeitfelder. Sie können das Datum/die Uhrzeit jedoch manuell in das Feld eingeben, damit die Bildschirmlesehilfe es lesen kann. Verwenden Sie QuickInfo oder Bildschirmlesehilfen-Text, um den Benutzer anzuweisen, das Datum/die Uhrzeit für das Feld manuell auszuwählen.
+
+1. Unterstützen HTML5-Formulare Anzeigemuster für schwebende Felder?
+
+   Antwort: HTML5-Formulare unterstützen keine Anzeigemuster für schwebende Felder.
 
 ### Skripterstellung {#scripting}
 
