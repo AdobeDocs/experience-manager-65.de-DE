@@ -3,9 +3,9 @@ title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften i
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 739f1c6fcc910ed134849c27a44a6feccd1684c9
+source-git-commit: 530a720a5fbad906e7015aa41a650b31f09fe2c4
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2708'
 ht-degree: 68%
 
 ---
@@ -22,10 +22,6 @@ Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu 
 1. Klicken Sie auf das Symbol &quot; **[!UICONTROL Ansichten-Eigenschaften]** &quot;in den Schnellaktionen auf der Asset-Kachel in der Ansicht &quot;Karte&quot;.
 
    ![Schnellaktionen für Asset-Kacheln](assets/chlimage_1-170.png)
-
-1. Bearbeiten Sie dann unterschiedliche Eigenschaften in den verschiedenen Registerkarten. However, you cannot modify the asset type in the [!UICONTROL Properties] page.
-
-   ![Grundlegende Registerkarte der Asset-Eigenschaften, auf der der Asset-Typ nicht geändert werden kann](assets/asset-properties-basic-tab.png)
 
 1. Sie können verschiedene Metadateneigenschaften unter den verfügbaren Registerkarten bearbeiten. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
