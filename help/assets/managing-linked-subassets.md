@@ -1,9 +1,12 @@
 ---
 title: Verwalten Sie zusammengesetzte Assets mit Verweisen und mehrseitigen Assets in [!DNL Adobe Experience Manager].
-description: Hier erfahren Sie, wie Sie Verweise auf digitale Assets aus [!DNL Adobe InDesign], [!DNL Adobe Illustrator] und [!DNL Adobe Fotoshop] erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
+description: Hier erfahren Sie, wie Sie Verweise auf digitale Assets von innen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]aus erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+workflow-type: tm+mt
+source-wordcount: '1359'
+ht-degree: 17%
 
 ---
 
@@ -18,7 +21,7 @@ Besides eliminating redundancy, referencing the assets in [!DNL Adobe Creative C
 
 Referenzen werden auf der Grundlage von Pfad, Dokument-ID und Instanz-ID der referenzierten Assets aufgelöst.
 
-## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe Illustrator]{#refai}
+## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe Illustrator] {#refai}
 
 You can reference existing digital assets from within an [!DNL Adobe Illustrator] file.
 
@@ -41,7 +44,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
    *Abbildung: Asset-Verweise in den Asset-Details.*
 
-## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
+## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
 To reference digital assets from within an [!DNL InDesign] file, either drag assets to the [!DNL InDesign] file or export the [!DNL InDesign] file as a ZIP archive.
 
@@ -63,7 +66,7 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 1. Start the `Unarchiver` workflow.
 1. Nach Abschluss des Workflows werden die Verweise im Ordner &quot;Links&quot;automatisch als Teilassets referenziert. To view a list of referred assets, navigate to the asset details page of the [!DNL InDesign] asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe Photoshop]{#refps}
+## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe Photoshop] {#refps}
 
 1. Verwenden Sie die [!DNL Experience Manager] Desktop-App, um darauf zuzugreifen [!DNL Experience Manager Assets]. Laden Sie die Assets herunter und zeigen Sie sie auf dem lokalen Dateisystem an. Verwenden Sie die Funktion [!UICONTROL Linked] platzieren in [!DNL Adobe Photoshop]. Siehe [Platzieren von Assets in der Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
@@ -82,7 +85,7 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 
 ## Erstellen von Teilassets {#generate-subassets}
 
-Für die unterstützten Assets mit mehrseitigen Formaten — PDF-Dateien, AI-Dateien [!DNL Microsoft PowerPoint] und [!DNL Apple Keynote] -Dateien und [!DNL Adobe InDesign] -Dateien — Sie [!DNL Experience Manager] können Teilassets generieren, die den einzelnen Seiten des ursprünglichen Assets entsprechen. Diese Teilassets sind mit dem *übergeordneten* Asset verknüpft und erleichtern die mehrseitige Ansicht. Für alle anderen Zwecke werden die Teilassachen wie normale Aktiva in [!DNL Experience Manager]behandelt.
+Für die unterstützten Assets mit mehrseitigen Formaten — PDF-Dateien, AI-Dateien [!DNL Microsoft PowerPoint] und [!DNL Apple Keynote] -Dateien und [!DNL Adobe InDesign] -Dateien — [!DNL Experience Manager] können Teilassets generieren, die jeder einzelnen Seite des ursprünglichen Assets entsprechen. Diese Teilassets sind mit dem *übergeordneten* Asset verknüpft und erleichtern die mehrseitige Ansicht. Für alle anderen Zwecke werden die Teilassachen wie normale Aktiva in [!DNL Experience Manager]behandelt.
 
 Die Erstellung von Unter-Assets ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um die Erzeugung von Teilassets zu aktivieren:
 
@@ -125,6 +128,10 @@ Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in d
 * **[!UICONTROL Die Option &quot;Seitenübersicht]** &quot;zeigt alle Teilassets gleichzeitig an.
 
 * **[!UICONTROL Die Option &quot;Zeitschiene]** &quot;in der linken Leiste nach dem Klicken auf das Symbol ![für die](assets/do-not-localize/aem_leftrail_contentonly.png) linke Leiste zeigt den Dateistream an.
+
+## Best practices and limitation {#best-practice-limitation-tips}
+
+* Die Erzeugung von Teilassets kann bei jeder Experience Manager-Bereitstellung sehr ressourcenintensiv sein. Wenn Sie beim Hochladen komplexer Assets Teilassets generieren, fügen Sie den Schritt im DAM-Arbeitsablauf zum Aktualisieren von Assets hinzu. Wenn Sie bei Bedarf Teilassets erstellen, erstellen Sie einen separaten Workflow, um Teilassets zu generieren. Ein dedizierter Arbeitsablauf ermöglicht es Ihnen, die anderen Schritte im DAM Update Asset-Arbeitsablauf zu überspringen und Rechenressourcen zu speichern.
 
 >[!MORELIKETHIS]
 >
