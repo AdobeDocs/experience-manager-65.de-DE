@@ -3,12 +3,15 @@ title: Berichte zu Ihren digitalen Assets
 description: Verstehen Sie Berichte zu Ihren Assets in AEM Assets, die Ihnen beim Verständnis der Nutzung, Aktivität und Freigabe Ihrer digitalen Assets helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 70%
 
 ---
 
 
-# Asset-Berichte   {#asset-reports}
+# Asset-Berichte     {#asset-reports}
 
 Asset-Berichte stellen ein wesentliches Tool für die Bewertung der Funktionalität Ihrer Bereitstellung von Adobe Experience Manager (AEM) Assets dar. Mit AEM Assets können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
 
@@ -37,8 +40,7 @@ AEM Assets generiert die folgenden standardmäßigen Berichte für Sie:
 AEM-Administratoren können diese Berichte einfach für Ihre Implementierung erstellen und anpassen. Um einen Bericht zu erstellen, müssen Administratoren folgende Schritte durchführen:
 
 1. Klicken Sie in der Experience Manager-Oberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
-
-![](assets/AssetsReportNavigation.png)
+   ![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
@@ -77,7 +79,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    ![](assets/files_report.png)
 
-   Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus AEM Assets freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
+   Der Bericht **[!UICONTROL Link-Freigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus AEM Assets freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
@@ -100,7 +102,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
-## Hinzufügen benutzerdefinierter Spalten   {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten     {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
@@ -111,6 +113,8 @@ Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weite
 * Veröffentlichen
 * Veröffentlichung in Brand Portal
 * Dateien
+
+Gehen Sie wie folgt vor, um benutzerspezifische Spalten zu diesen Berichten hinzuzufügen:
 
 1. Klicken Sie in der Experience Manager-Oberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
