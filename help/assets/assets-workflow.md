@@ -3,7 +3,10 @@ title: Verarbeiten Sie Assets, um Geschäftsprozesse durchzuführen, Prüfungen 
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 21%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Zur Verarbeitung von Assets [!DNL Experience Manager] werden Workflows verwendet. Workflows helfen bei der Automatisierung der Geschäftslogik oder der Aktivitäten. Granuläre Schritte zum Ausführen bestimmter Aufgaben werden standardmäßig bereitgestellt, und Entwickler können eigene benutzerdefinierte Schritte erstellen. Diese Schritte können in einer logischen Reihenfolge kombiniert werden, um Workflows zu erstellen. Ein Workflow kann beispielsweise Wasserzeichen auf hochgeladene Bilder anwenden, die auf bestimmten Kriterien basieren, wie dem hochgeladenen Ordner, der Bildauflösung usw. Ein weiteres Beispiel ist ein Workflow, der für Wasserzeichen konfiguriert ist und gleichzeitig Metadaten hinzufügt, Darstellungen erstellt, intelligente Tags hinzugefügt und in einem Datenspeicher veröffentlicht wird.
 
-## Workflows verfügbar unter [!DNL Experience Manager]{#default-workflows}
+## Standardmäßige Workflows verfügbar unter [!DNL Experience Manager] {#default-workflows}
 
 Standardmäßig werden alle hochgeladenen Assets mit dem [!UICONTROL DAM Update Asset] -Arbeitsablauf verarbeitet. Der Arbeitsablauf wird für jedes hochgeladene Asset ausgeführt und führt grundlegende Aufgaben zur Asset-Verwaltung durch, wie z. B. Generierung von Ausgabeformaten, Schreibback von Metadaten, Extraktion von Seiten, Extraktion von Medien und Transkodierung.
 
@@ -34,7 +37,7 @@ Nutzen Sie Workflows in digitalen Assets, um das Asset zu aktivieren oder Wasser
 
 >[!NOTE]
 >
->If a workflow available in Classic UI is not available in Touch enabled UI, like [!UICONTROL Request to Activate] and [!UICONTROL Request to Deactivate], see [make workflow models](/help/sites-developing/workflows-models.md#classic2touchui).
+>If a workflow available in Classic UI is not available in Touch-enabled UI such as [!UICONTROL Request to Activate] and [!UICONTROL Request to Deactivate], see [make workflow models](/help/sites-developing/workflows-models.md#classic2touchui).
 
 ## Apply a workflow to an asset {#apply-a-workflow-to-an-asset}
 
@@ -84,7 +87,7 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
 Die Vorgehensweise zum Anwenden eines Workflows auf mehrere Ordner ähnelt der Vorgehensweise beim Anwenden eines Workflows auf mehrere Assets. Select the folders in the [!DNL Assets] interface, and perform steps 2-7 of the procedure [apply a workflow to multiple assets](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
-## Apply a workflow to a collection {#applying-a-workflow-to-a-collection}
+## Anwenden eines Workflows auf eine Sammlung {#applying-a-workflow-to-a-collection}
 
 Siehe [Anwenden eines Workflows auf eine Sammlung](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
 
@@ -96,6 +99,10 @@ Für ein Workflow-Modell können Benutzer einen Workflow-Starter erstellen, der 
 
 * Erstellen Sie eine Kopie des [!UICONTROL DAM Update Asset] -Workflows und ändern Sie ihn, um ihn in einer bestimmten Ordnerhierarchie auszuführen. Dieser Ansatz ist für einige Ordner nützlich.
 * Die zusätzlichen Verarbeitungsschritte können mit einer [ODER-Teilung](/help/sites-developing/workflows-step-ref.md#or-split) hinzugefügt werden, die je nach Bedarf für so viele Ordner gilt.
+
+## Best practices and limitations {#best-practices-limitations-tips}
+
+* Berücksichtigen Sie beim Entwerfen von Workflows Ihre Anforderungen für alle Darstellungsarten. Wenn Sie nicht vorhersehen, dass eine Darstellung in Zukunft erforderlich sein soll, entfernen Sie den Erstellungsschritt aus dem Workflow. Darstellungen können danach nicht mehr stapelweise gelöscht werden. Unerwünschte Darstellungen können nach längerer Nutzung von [!DNL Experience Manager]Daten viel Datenspeicherung in Anspruch nehmen. Bei einzelnen Assets können Sie Darstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie entweder anpassen, [!DNL Experience Manager] um bestimmte Darstellungen zu löschen, oder die Assets löschen und erneut hochladen.
 
 >[!MORELIKETHIS]
 >
