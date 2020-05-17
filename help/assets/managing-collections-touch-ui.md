@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 72%
+source-wordcount: '2216'
+ht-degree: 70%
 
 ---
 
@@ -149,26 +149,26 @@ Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt,
 
 Sammlungsmetadaten umfassen die Daten zur Sammlung, einschließlich aller hinzugefügten Tags.
 
-1. From the Collections console, select a collection and Click the **[!UICONTROL Properties]** icon from the toolbar.
+1. From the [!UICONTROL Collections] console, select a collection and click **[!UICONTROL Properties]** from the toolbar.
 1. Zeigen Sie auf der Seite **[!UICONTROL Sammlungs-Metadaten]** die Metadaten der Sammlung auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** an.
-1. Modify the metadata, as necessary, and then Click **[!UICONTROL Save &amp; Close]** from the toolbar to save the changes.
+1. Ändern Sie die Metadaten nach Bedarf. Um die Änderungen zu speichern, klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern &amp; Schließen]** .
 
 ## Metadaten mehrerer Sammlungen stapelweise bearbeiten {#editing-collection-metadata-in-bulk}
 
 Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit dieser Funktion können Sie schnell allgemeine Metadaten in mehreren Sammlungen replizieren.
 
-1. Wählen Sie in der Konsole „Sammlungen“ zwei oder mehr Sammlungen aus, für die Sie Metadaten bearbeiten möchten.
+1. Wählen Sie in der Sammlungskonsole zwei oder mehr Sammlungen aus.
 1. From the toolbar, click the **[!UICONTROL Properties]** icon.
 1. Bearbeiten Sie auf der Seite **[!UICONTROL Sammlungs-Metadaten]** die Metadaten auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** nach Bedarf.
 1. Heben Sie die Auswahl der anderen Sammlungen in der Sammlungsliste auf, um die Metadateneigenschaften für eine bestimmte Sammlung anzuzeigen. Die Metadateneditorfelder werden mit den Metadaten für die bestimmte Sammlung gefüllt.
 
    >[!NOTE]
    >
-   >* Auf der Sammlungseigenschaftenseite können Sie Sammlungen aus der Liste der Sammlungen entfernen, indem Sie die Auswahl aufheben. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Die Metadaten für Sammlungen, die Sie entfernen, werden nicht aktualisiert.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Experience Manager aktualisiert die Metadaten der Sammlungen, die Sie entfernen, nicht.
    >* Aktivieren Sie über der Sammlungsliste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Sammlungen und dem Deaktivieren der Liste umzuschalten.
 
 
-1. Click **[!UICONTROL Save &amp; Close]** from the toolbar, and then close the confirmation dialog to complete the process.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern &amp; Schließen]** und schließen Sie dann das Bestätigungsdialogfeld.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
    >[!NOTE]
