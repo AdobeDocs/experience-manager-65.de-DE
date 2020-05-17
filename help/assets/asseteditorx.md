@@ -3,16 +3,19 @@ title: Asset-Editor erweitern
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '701'
+ht-degree: 94%
 
 ---
 
 
-# Asset-Editor erweitern {#extending-asset-editor}
+# Extend Asset Editor {#extending-asset-editor}
 
 Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein über die Asset-Freigabe gefundenes Asset geklickt wird. Er ermöglicht dem Benutzer das Bearbeiten von Aspekten des Assets wie Metadaten, Miniatur, Titel und Tags.
 
-Configuration of the editor using the predefined editing components is covered in [Creating and Configuring an Asset Editor Page](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
+Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wird in [Erstellen und Konfigurieren einer Asset-Editor-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page) behandelt.
 
 Zusätzlich zur Verwendung von vorhandenen Bearbeiterkomponenten können Adobe Experience Manager (AEM)-Entwickler ihre eigenen Komponenten erstellen.
 
@@ -30,35 +33,35 @@ AEM Assets-Komponenten verwenden eine Erweiterung der WCM-clientlib zur Bearbei
 
 Anders als beim Laden der Standard-clientlib (in `init.jsp` des Kerns) muss eine AEM Assets-Vorlage Folgendes enthalten:
 
-* The template must include the `cq.dam.edit` clientlib (instead of `cq.wcm.edit`).
+* Die Vorlage muss die clientlib `cq.dam.edit` (anstelle von `cq.wcm.edit`) enthalten.
 
 * Die clientlib muss auch im deaktivierten WCM-Modus (z. B. beim **Veröffentlichen** geladen) verfügbar sein, um die Eigenschaften, Aktionen und Linsen darzustellen.
 
-In most cases, copying the existing sample `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) should meet these needs.
+In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorhandene Muster `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) kopiert wird.
 
 ### JS-Aktionen konfigurieren {#configuring-js-actions}
 
-Some of the AEM Assets components require JS functions defined in `component.js`. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
+Einige der AEM Assets-Komponenten erfordern, dass JS-Funktionen in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-The sample loads this javascript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Additional style sheets {#additional-style-sheets}
 
-Einige der AEM Assets-Komponenten verwenden die AEM Widgets-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Einige der Komponenten von AEM Assets verwenden die AEM-Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx-Stylesheet {#geometrixx-style-sheet}
+### Geometrixx-Stylesheet   {#geometrixx-style-sheet}
 
-The sample page components require that all selectors start with `.asseteditor` of `static.css` (`/etc/designs/geometrixx/static.css`). Best practice: Copy all `.asseteditor` selectors to your style sheet and adjust the rules as desired.
+Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.asseteditor` von `static.css` (`/etc/designs/geometrixx/static.css`) beginnen. Best Practice: Kopieren Sie alle `.asseteditor`-Selektoren in Ihr Stylesheet und passen Sie bei Bedarf die Regeln an.
 
-### FormChooser: Anpassungen für Ressourcen, die irgendwann geladen werden {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser: Anpassungen für eventuell geladene Ressourcen {#formchooser-adjustments-for-eventually-loaded-resources}
 
 Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen – in diesem Fall Assets – auf derselben Formularseite bearbeiten können, indem Sie der URL des Assets einfach einen Formularselektor und den Pfad des Formulars hinzufügen.
 
@@ -67,13 +70,13 @@ Beispiel:
 * Einfache Formularseite: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
 * In der Formularseite geladenes Asset: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-The sample handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) do the following:
+Die Beispiel-Handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) führen Folgendes aus:
 
 * Sie erkennen, wenn ein Asset geladen wird oder wenn das einfache Formular angezeigt werden muss.
 * Wenn ein Asset geladen wird, deaktivieren sie den WCM-Modus, da ParSys nur auf einer einfachen Formularseite bearbeitet werden kann.
-* Wenn ein Asset geladen wird, verwenden Sie dessen Titel anstelle des Titels auf der Formularseite.
+* Wenn ein Asset geladen wird, verwenden sie dessen Titel anstelle des Titels auf der Formularseite.
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -113,7 +116,7 @@ The sample handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.
 
 Verwenden Sie im HTML-Teil den vorhergehenden festgelegten Titel (entweder Asset- oder Seitentitel):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -121,8 +124,8 @@ Verwenden Sie im HTML-Teil den vorhergehenden festgelegten Titel (entweder Asset
 
 In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Metadaten eines geladenen Assets anzeigt.
 
-1. Create a component folder in your projects directory, for example, `/apps/geometrixx/components/samplemeta`.
-1. Fügen Sie `content.xml` das folgende Codefragment hinzu:
+1. Erstellen Sie in Ihrem Projektverzeichnis einen Komponentenordner, z. B. `/apps/geometrixx/components/samplemeta`.
+1. Fügen Sie `content.xml` mit dem folgenden Snippet hinzu:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -134,9 +137,9 @@ In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Meta
        componentGroup="Asset Editor"/>
    ```
 
-1. Fügen Sie `samplemeta.jsp` das folgende Codefragment hinzu:
+1. Fügen Sie `samplemeta.jsp` mit dem folgenden Snippet hinzu:
 
-   ```xml
+   ```javascript
    <%--
    
      Sample metadata field component
@@ -192,25 +195,25 @@ In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Meta
    </div>
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. Um Absätze entfernen zu können, fügen Sie eine `cq:actions`-Mehrwerteigenschaft mit `DELETE` als einzigem Wert hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE Lite den Knoten `cq:editConfig` (primärer Typ `cq:EditConfig`) hinzu. Um Absätze entfernen zu können, fügen Sie eine `cq:actions`-Mehrwerteigenschaft mit `DELETE` als einzigem Wert hinzu.
 
-1. Navigieren Sie zu Ihrem Browser, wechseln Sie auf Ihrer Beispielseite (z. B.`asseteditor.html`) in den Designmodus und aktivieren Sie Ihre neue Komponente für das Absatzsystem.
+1. Navigieren Sie zu Ihrem Browser, wechseln Sie auf Ihrer Beispielseite (z. B.`asseteditor.html`) in den Design-Modus und aktivieren Sie Ihre neue Komponente für das Absatzsystem.
 
-1. Im **Bearbeitungsmodus** ist die neue Komponente (z. B. **Beispielmetadaten**) jetzt im Sidekick (in der Gruppe **Asset-Editor**) verfügbar. Fügen Sie die Komponente ein. Um die Metadaten speichern zu können, muss sie dem Metadatenformular hinzugefügt werden.
+1. Im **Bearbeitungsmodus** ist die neue Komponente (z. B. **Beispielmetadaten**) jetzt im Sidekick (in der Gruppe **Asset-Editor**) verfügbar. Fügen Sie die Komponente ein. Um die Metadaten speichern zu können, müssen sie dem Metadatenformular hinzugefügt werden.
 
 ## Ändern der Metadatenoptionen {#modifying-metadata-options}
 
 Sie können die im [Metadatenformular](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component) verfügbaren Namespaces ändern.
 
-Currently available metadata are defined in `/libs/dam/options/metadata`:
+Aktuell verfügbare Metadaten sind in `/libs/dam/options/metadata` definiert:
 
 * Die erste Ebene innerhalb dieses Verzeichnisses enthält die Namespaces.
 * Die Elemente in den einzelnen Namespaces stellen Metadaten dar, beispielsweise Ergebnisse in einem lokalen Teilelement.
 * Die Metadaten enthalten die Informationen für den Typ und die Optionen mit mehreren Werten.
 
-The options can be overwritten in `/apps/dam/options/metadata`:
+Die Optionen können in `/apps/dam/options/metadata` überschrieben werden:
 
-1. Copy the directory from `/libs` to `/apps`.
+1. Kopieren Sie das Verzeichnis von `/libs` nach `/apps`.
 
 1. Sie können Elemente entfernen, ändern und hinzufügen.
 
