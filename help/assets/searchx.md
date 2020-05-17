@@ -3,7 +3,10 @@ title: Erweiterung der Suchfunktion von Adobe Experience Manager Assets
 description: Erweitern Sie die Suchfunktionen von Adobe Experience Manager Assets über die Standardwerte hinaus.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe empfiehlt die Verwendung der Touch-fähigen Benutzeroberfläche. For customization, see [Search Facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe empfiehlt die Verwendung der Touch-fähigen Benutzeroberfläche. For customization, see [search facets](/help/assets/search-facets.md).
 
 ## Überlagerung {#overlaying}
 
@@ -70,7 +73,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
 
 1. Fügen Sie `titlepredicate.jsp` hinzu.
 
-   ```xml
+   ```java
    <%--
    
      Sample title predicate component
@@ -163,7 +166,7 @@ So erstellen Sie eine Gruppeneigenschaft:
 
 1. Fügen Sie **titlepredicate.jsp** hinzu:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
