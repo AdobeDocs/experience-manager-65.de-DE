@@ -3,7 +3,7 @@ title: Verwenden Sie PDF-Rasterfunktion, um Darstellungen von PDF-Dateien zu ers
 description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Raster-Bibliothek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 42%
@@ -63,6 +63,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
+
 1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -72,8 +73,11 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Speichern Sie den Workflow.
-1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **[!UICONTROL DAM Process Subasset]** model from the Workflow console.
+
+1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **[!UICONTROL DAM Process Subasset]** model from the [!UICONTROL Workflow] console.
+
 1. From the side panel, drag the PDF Rasterizer Handler step under the **[!UICONTROL Create Web-Enabled Image Rendition]** step.
+
 1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
 
    * MIME-Typen: `application/pdf` oder `application/postscript`
