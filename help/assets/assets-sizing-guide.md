@@ -3,7 +3,10 @@ title: Handbuch zur Asset-Größenanpassung
 description: Best Practices zur Ermittlung effizienter Metriken zur Schätzung der Infrastruktur und der Ressourcen, die für die Bereitstellung von AEM Assets erforderlich sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 76%
 
 ---
 
@@ -28,21 +31,21 @@ Angesichts dieser Faktoren benötigen Sie eine Methodik für eine ausreichend ge
 1. Beschaffen Sie sich eine repräsentative Stichprobe der Assets, die in AEM hochgeladen werden sollen. Wenn Sie beispielsweise PSD-, JPG-, AI- und PDF-Dateien in das System laden möchten, benötigen Sie mehrere Beispielbilder für jedes Dateiformat. Außerdem sollten diese Stichproben repräsentativ für die verschiedenen Dateigrößen und die Komplexität der Bilder sein.
 1. Definieren Sie die zu verwendenden Wiedergaben.
 1. Erstellen Sie die Wiedergaben in AEM mit ImageMagick oder den Creative Cloud-Anwendungen von Adobe. Erstellen Sie neben den von den Benutzern angegebenen Wiedergaben sofort einsetzbare Standardwiedergaben. Für Benutzer, die Scene7 implementieren, können Sie mithilfe der IC-Binärdatei die in AEM zu speichernden PTIFF-Wiedergaben generieren.
-1. Wenn Sie die Verwendung von Unter-Assets beabsichtigen, generieren Sie diese für die entsprechenden Dateitypen. Informationen zum Generieren von Unter-Asset-Seiten aus InDesign-Dateien oder PNG-/PDF-Dateien aus Illustrator-Ebenen finden Sie in der entsprechenden Onlinedokumentation.
+1. Wenn Sie die Verwendung von Unter-Assets beabsichtigen, generieren Sie diese für die entsprechenden Dateitypen.
 1. Vergleichen Sie die Größe der Ausgabebilder, Wiedergaben und Unter-Assets mit den Originalbildern. So können Sie den erwarteten Wachstumsfaktor beim Laden des Systems generieren. Wenn Sie z. B. Wiedergaben und Unter-Assets mit einer kombinierten Größe von 3 GB nach der Verarbeitung von 1 GB an Assets erzeugen, lautet der Wiedergabe-Wachstumsfaktor 3.
 1. Ermitteln Sie, wie lange die einzelnen Asset-Versionen maximal im System aufbewahrt werden sollen.
 1. Ermitteln Sie, wie oft vorhandene Assets im System geändert werden. Wenn AEM als Collaboration-Hub in kreativen Workflows dient, gibt es viele Änderungen. Wenn nur fertiggestellte Assets in das System hochgeladen werden, ist diese Zahl wesentlich niedriger.
 1. Ermitteln Sie, wie viele Assets jeden Monat in das System geladen werden. Wenn Sie sich nicht sicher sind, bestimmen Sie die Anzahl der aktuell verfügbaren Assets und dividieren Sie diese Zahl durch das Alter des ältesten Assets, um einen ungefähren Wert zu berechnen. 
 
-Mit den Schritten 1–9 können Sie Folgendes ermitteln:
+Mithilfe der obigen Schritte können Sie Folgendes feststellen:
 
-* Rohgröße der zu ladenden Assets
-* Anzahl der zu ladenden Assets
-* Wiedergabe-Wachstumsfaktor
-* Anzahl der Asset-Änderungen pro Monat
-* Anzahl der Monate für die Aufbewahrung von Asset-Versionen
-* Anzahl der neu geladenen Assets pro Monat
-* Wachstumsjahre, für die Speicher reserviert werden muss
+* Rohgröße der zu ladenden Assets.
+* Anzahl der zu ladenden Assets.
+* Wiedergabe-Wachstumsfaktor.
+* Anzahl der Asset-Änderungen pro Monat.
+* Anzahl der Monate für die Aufbewahrung von Asset-Versionen.
+* Anzahl der neu geladenen Assets pro Monat.
+* Wachstumsjahre für die Raumordnung der Datenspeicherung.
 
 Sie können diese Zahlen in der Tabelle zur Netzwerkdimensionierung angeben, um den Gesamtspeicherbedarf für den Datenspeicher zu ermitteln. Zudem lässt sich so nützlicherweise feststellen, wie sich die Aufbewahrung von Asset-Versionen oder die Änderung von Assets in AEM auf das Festplattenwachstum auswirkt. 
 
@@ -52,9 +55,9 @@ Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung 
 
 ### Shared datastores {#shared-datastores}
 
-Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatastore auf einem angeschlossenen Laufwerk oder über einen S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Darüber hinaus erleichtert ein freigegebener Datenspeicher die Replikation ohne Binärdatei und verringert die Bandbreite, die zum Replizieren von Assets für die Veröffentlichung von Umgebung verwendet wird.
+Bei großen Datenspeichern können Sie einen freigegebenen Datenspeicher entweder über einen freigegebenen Dateidatastore auf einem angeschlossenen Laufwerk oder über einen Amazon S3-Datenspeicher implementieren. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Darüber hinaus erleichtert ein freigegebener Datenspeicher die Replikation ohne Binärdatei und verringert die Bandbreite, die zum Replizieren von Assets für die Veröffentlichung von Umgebung verwendet wird.
 
-#### Anwendungsfälle {#use-cases}
+#### Anwendungsfälle   {#use-cases}
 
 Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutzt werden, um den zeitlichen Aufwand zum Aktualisieren der Standby-Instanz mit Änderungen der primären Instanz zu minimieren. Sie können den Datenspeicher zudem zwischen Autor- und Veröffentlichungsinstanzen freigeben, um den Traffic während der Replikation zu minimieren.
 
@@ -72,7 +75,7 @@ Den AWS S3-Dienst für freigegebene Datenspeicher bereitzustellen, wird vorgezo
 
 Freigegebene Datenspeicher erhöhen ebenfalls die Komplexität solcher Vorgänge, etwa der automatischen Speicherbereinigung. Normalerweise kann die automatische Speicherbereinigung für einen Standalone-Datenspeicher mit einem einzigen Klick initiiert werden. Allerdings setzen freigegebene Datenspeicher zusätzlich zu der auf jedem Knoten tatsächlich durchgeführten Bereinigung Mark-Sweep-Vorgänge auf jedem Mitglied voraus, das den Datenspeicher nutzt.
 
-Bei AWS-Vorgängen können, wenn statt des Aufbaus eines RAID-Arrays von EBS-Volumes ein zentraler Speicherort (über S3) implementiert wird, die Komplexität und die Betriebsrisiken auf dem System deutlich kompensiert werden.
+Bei AWS-Operationen kann die Implementierung eines zentralen Standorts (über Amazon S3), anstatt ein RAID-Array mit EBS-Volumes zu erstellen, die Komplexität und die operationellen Risiken des Systems erheblich ausgleichen.
 
 #### Performance concerns {#performance-concerns}
 
