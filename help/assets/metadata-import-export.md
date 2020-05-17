@@ -3,7 +3,10 @@ title: Importieren und Exportieren von Asset-Metadaten in Massen.
 description: Massenimport und -export von Metadaten digitaler Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2fd9a32396152eaf46e69c3141cbe1b6a69a3891
+source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 52%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 2fd9a32396152eaf46e69c3141cbe1b6a69a3891
 
 ## Importieren von Metadaten   {#import-metadata}
 
-Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während Zeiten geringer Servernutzung, damit die Leistung anderer Benutzer nicht beeinträchtigt wird.
+Der Metadaten-Import erfolgt asynchron und beeinträchtigt nicht die Systemleistung. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während Zeiten geringer Servernutzung, damit die Leistung anderer Benutzer nicht beeinträchtigt wird.
 
 >[!NOTE]
 >
@@ -23,7 +26,7 @@ Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. 
 1. Navigate to the [!DNL Assets] user interface, and click **[!UICONTROL Create]** from the toolbar.
 1. Wählen Sie aus dem Menü **[!UICONTROL Metadaten]** aus.
 1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
-1. Geben Sie die folgenden Parameter an:
+1. Geben Sie die folgenden Parameter an. Siehe Beispiel für eine CSV-Datei unter [metadata-import-sample-file.csv](assets/metadata-import-sample-file.csv).
 
    | Metadaten-Importparameter | Beschreibung |
    |:---|:---|
@@ -33,7 +36,9 @@ Der Metadatenimport ist asynchron und beeinträchtigt nicht die Systemleistung. 
    | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. When set to `true` and default Launcher settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Die Aktivierung von Start-Workflows verlangsamt das System. |
    | [!UICONTROL Asset-Pfad-Spaltenname] | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. After the metadata is imported, a notification is sent to your [!UICONTROL Notification] inbox. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
+1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
+
+1. Um den korrekten Import zu überprüfen, navigieren Sie zur Seite &quot; [!UICONTROL Eigenschaften] &quot;eines Assets und überprüfen Sie die Werte in den Feldern.
 
 Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00` Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T`, `hh` Stunden im 24-Stunden-Format, `fff` Nanosekunden und Zeitzonenversatz getrennt `-00:00` angegeben. Zum Beispiel `2020-03-26T11:26:00.000-07:00` ist der 26. März 2020 um 11:26:00 Uhr PST-Zeit.
 
@@ -41,7 +46,7 @@ Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden
 >
 >Stimmt das Datumsformat nicht überein, `YYYY-MM-DDThh:mm:ss.fff-00:00`werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei haben das Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie es importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den von `fff`Ihnen angegebenen Nanosekunden-Wert hinzufügen.
 
-## Exportieren von Metadaten {#export-metadata}
+## Export metadata {#export-metadata}
 
 Sie können Metadaten für mehrere Assets in ein CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. To export metadata, [!DNL Experience Manager] traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
 
@@ -50,7 +55,7 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 * Importieren Sie die Metadaten in ein Drittanbietersystem, wenn Sie Assets migrieren.
 * Geben Sie Asset-Metadaten für ein breiteres Projektteam frei.
 * Testen oder prüfen Sie die Metadaten auf Ihre Konformität.
-* Externalisieren Sie die Metadaten für eine separate Lokalisierung.
+* Externalisieren Sie die Metadaten, um sie separat zu lokalisieren.
 
 1. Wählen Sie einen Asset-Ordner aus, der Assets enthält, für die Sie Metadaten exportieren möchten. Wählen Sie in der Symbolleiste **[!UICONTROL Metadaten exportieren]** aus.
 
@@ -69,6 +74,12 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
    ![Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden](assets/csv_download.png)
 
    *Abbildung: Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden.*
+
+## Best Practices, Einschränkungen und Tipps {#best-practices-limitations-tips}
+
+* Die CSV-Datei zum Importieren von Asset-Metadaten ist in einem sehr spezifischen Format verfügbar. Um Arbeitsaufwand und Zeit zu sparen und unbeabsichtigte Fehler zu vermeiden, können Sie mit dem Erstellen der CSV-Datei das Format einer exportierten CSV-Datei verwenden.
+* Beim Importieren von Metadaten mit einer CSV-Datei ist das erforderliche Datumsformat `YYYY-MM-DDThh:mm:ss.fff-00:00`erforderlich. Wenn ein anderes Format verwendet wird, werden die Datumswerte nicht festgelegt. Die Datumsformate der exportierten Metadaten-CSV-Datei haben das Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie es importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den von `fff`Ihnen angegebenen Nanosekunden-Wert hinzufügen.
+* Um Metadaten in benutzerdefinierte Namespaces zu importieren, registrieren Sie zunächst die Namespaces.
 
 >[!MORELIKETHIS]
 >
