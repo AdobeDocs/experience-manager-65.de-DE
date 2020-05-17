@@ -3,7 +3,10 @@ title: Asset Proxy-Entwicklung
 description: Ein Proxy ist eine AEM-Instanz, die Proxy Workers verwendet, um Aufträge zu verarbeiten. Erfahren Sie, wie Sie einen AEM-Proxy konfigurieren und einen benutzerdefinierten Proxy Worker entwickeln können, und erhalten Sie Informationen zu unterstützten Vorgängen und Proxy-Komponenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 75%
 
 ---
 
@@ -80,7 +83,7 @@ Ein Proxy Worker ist ein Prozessor, der für die Verarbeitung von Aufträgen und
 
 Nachstehend finden Sie ein Beispiel für die API-Verwendung:
 
-```xml
+```java
 @Reference
  JobService proxyJobService;
 
@@ -114,7 +117,7 @@ Both proxy and proxy worker configurations are available via cloud services conf
 
 Nachstehend finden Sie ein Beispiel für die API-Verwendung:
 
-```xml
+```java
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
 
