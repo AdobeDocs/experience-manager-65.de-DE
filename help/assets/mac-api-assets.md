@@ -3,10 +3,10 @@ title: Assets-HTTP-API in [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 40%
+source-wordcount: '1570'
+ht-degree: 38%
 
 ---
 
@@ -46,8 +46,8 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 
 **Eigenschaften**:
 
-* `name`: Name des Ordners. Dies entspricht dem letzten Segment im URL-Pfad ohne die Erweiterung
-* `title`: Optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann
+* `name` ist der Name des Ordners. Dies entspricht dem letzten Segment im URL-Pfad ohne die Erweiterung.
+* `title` ist ein optionaler Titel des Ordners, der anstelle seines Namens angezeigt werden kann.
 
 >[!NOTE]
 >
@@ -55,39 +55,39 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 
 **Links**-Ordner stellen drei Links bereit:
 
-* `self`: Link zu sich selbst
-* `parent`: Link zum übergeordneten Ordner
-* `thumbnail`: (Optionaler) Link zu einem Ordnerminiaturbild
+* `self`: Link zu sich selbst.
+* `parent`: Link zum übergeordneten Ordner.
+* `thumbnail`: (Optionaler) Link zu einem Ordnerminiaturbild.
 
 ### Assets {#assets}
 
 In Experience Manager enthält ein Asset die folgenden Elemente:
 
-* Die Eigenschaften und Metadaten des Assets
-* Mehrere Wiedergabeformate, z. B. das ursprüngliche Wiedergabeformat (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Wiedergabeformate. Bei den zusätzlichen Wiedergabeformaten kann es sich um Bilder unterschiedlicher Größe, unterschiedliche Videokodierungen oder aus PDF- oder InDesign-Dateien extrahierte Seiten handeln.
-* Optionale Kommentare
+* Die Eigenschaften und Metadaten des Assets.
+* Mehrere Wiedergabeformate, z. B. das ursprüngliche Wiedergabeformat (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Wiedergabeformate. Weitere Darstellungen können Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder extrahierte Seiten aus PDF- oder Adobe InDesign-Dateien sein.
+* Optionale Kommentare.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 In Experience Manager verfügt ein Ordner über die folgenden Komponenten:
 
 * Einrichtungen: Die untergeordneten Elemente von Assets sind ihre Darstellungen.
-* Eigenschaften
-* Links
+* Eigenschaften.
+* Links.
 
 Die Assets-HTTP-API bietet die folgenden Funktionen:
 
-* Abrufen von Ordnerauflistungen
-* Erstellen von Ordnern
-* Erstellen von Assets    
-* Aktualisieren der Asset-Binärdatei
-* Aktualisieren der Asset-Metadaten
-* Erstellen von Asset-Ausgabeformaten
-* Aktualisieren von Asset-Ausgabeformaten
-* Erstellen von Asset-Kommentaren
-* Kopieren von Ordnern oder Assets
-* Verschieben von Ordnern oder Assets
-* Löschen von Ordnern, Assets oder Wiedergabeformaten
+* Abrufen von Ordnerauflistungen.
+* Erstellen von Ordnern.
+* Erstellen von Assets.
+* Aktualisieren der Asset-Binärdatei.
+* Aktualisieren der Asset-Metadaten.
+* Erstellen von Asset-Ausgabeformaten.
+* Aktualisieren von Asset-Ausgabeformaten.
+* Erstellen von Asset-Kommentaren.
+* Kopieren von Ordnern oder Assets.
+* Verschieben von Ordnern oder Assets.
+* Löschen von Ordnern, Assets oder Wiedergabeformaten.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Erstellt einen neuen Ordner `sling`: `OrderedFolder` im festgelegten Pfad. If a 
 
 Ein API-Aufruf schlägt mit einem `500` Antwortcode fehl, wenn der übergeordnete Knoten des angegebenen Pfads nicht vorhanden ist. Ein Aufruf gibt einen Antwortcode zurück, `409` wenn der Ordner bereits vorhanden ist.
 
-**Parameter**: `name` - Ordnername
+**Parameter**: `name` ist der Ordnername.
 
 **Anforderung**
 
