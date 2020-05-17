@@ -3,10 +3,10 @@ title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
 description: Learn about asset metadata in [!DNL Adobe Experience Manager Assets] an various ways by which you can edit asset metadata.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 42%
+source-wordcount: '421'
+ht-degree: 33%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 42%
 
 Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder vorhandenen Feldern neue Metadateneigenschaften hinzufügen (etwa wenn ein Metadatenfeld leer ist).
 
-Because organizations need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for ad-hoc adding of new metadata properties. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. See [create new metadata property for assets](meta-edit.md#editing-metadata-schema).
+Because organizations need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for on demand adding of new metadata properties. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Siehe [Erstellen der Metadateneigenschaft für Assets](meta-edit.md#editing-metadata-schema).
 
 ## Edit metadata for an asset {#editing-metadata-for-an-asset}
 
-So bearbeiten Sie Metadaten:
+Gehen Sie wie folgt vor, um Metadaten zu bearbeiten:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -32,13 +32,13 @@ So bearbeiten Sie Metadaten:
 
    *Abbildung: Bearbeiten oder Hinzufügen von Metadaten auf der Seite[!UICONTROL &quot;Asset-Eigenschaften&quot;].*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the Assets web interface.
+1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
    >[!NOTE]
    >
    >Ein leeres Textfeld gibt an, dass kein Metadatenset vorhanden ist. Sie können einen Wert in das Feld eingeben und speichern, um diese Metadateneigenschaft hinzuzufügen. 
 
-Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. This is done via [!DNL Experience Manager] metadata write-back workflow. Änderungen an den vorhandenen Eigenschaften (z. B. `dc:title`) werden überschrieben und neu erstellte Eigenschaften (einschließlich benutzerdefinierten Eigenschaften wie `cq:tags`) werden zusammen mit dem Schema hinzugefügt.
+Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Der Metadaten-Schreibback-Arbeitsablauf fügt die Metadaten zur ursprünglichen Binärdatei hinzu. Changes made to the existing properties (such as `dc:title`) are overwritten and new properties (including custom properties like `cq:tags`) are added with the schema.
 
 XMP write-back is supported and enabled for the platforms and file formats described in [technical requirements.](/help/sites-deploying/technical-requirements.md)
 
