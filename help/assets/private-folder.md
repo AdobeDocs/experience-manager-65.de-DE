@@ -3,9 +3,9 @@ title: Erstellen und Freigeben eines privaten Ordners in AEM
 description: Erfahren Sie, wie Sie in Adobe Experience Manager (AEM) Assets einen privaten Ordner erstellen, ihn mit anderen Benutzern teilen und ihnen verschiedene Berechtigungen zuweisen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 979d5074fcf94ca999fd941c77038ab6305cc67d
+source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '513'
 ht-degree: 71%
 
 ---
@@ -17,7 +17,7 @@ Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-B
 
 >[!NOTE]
 >
-> Der private Ordner hat immer mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;.
+> Der private Ordner hat mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;.
 
 
 1. Klicken oder tippen Sie in der Konsole „Assets“ von der Symbolleiste aus auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Ordner]** aus dem Menü aus.
@@ -50,7 +50,7 @@ Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-B
 
    >[!NOTE]
    >
-   > Der private Ordner hat immer mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;. Daher kann der Administrator nicht alle Inhaber-Mitglieder aus einem privaten Ordner entfernen. Um vorhandene Inhaber aus dem privaten Ordner zu entfernen, muss der Administrator jedoch andere Benutzer als Inhaber hinzufügen.
+   > Der private Ordner hat mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;. Daher kann der Administrator nicht alle Inhaber-Mitglieder aus einem privaten Ordner entfernen. Um jedoch vorhandene Inhaber (und den Administrator selbst) aus dem privaten Ordner zu entfernen, muss der Administrator einen anderen Benutzer als Inhaber hinzufügen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Je nach der zugewiesenen Rolle erhält der Benutzer einen Satz Berechtigungen für den privaten Ordner, wenn er sich bei AEM Assets anmeldet.
 1. Klicken Sie auf **[!UICONTROL OK]** zum Schließen der Bestätigungsmeldung.
