@@ -3,9 +3,9 @@ title: Assets-HTTP-API in [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 38%
 
 ---
@@ -69,7 +69,7 @@ In Experience Manager enthält ein Asset die folgenden Elemente:
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-In Experience Manager verfügt ein Ordner über die folgenden Komponenten:
+In [!DNL Experience Manager] a folder has the following components:
 
 * Einrichtungen: Die untergeordneten Elemente von Assets sind ihre Darstellungen.
 * Eigenschaften.
@@ -95,9 +95,9 @@ Die Assets-HTTP-API bietet die folgenden Funktionen:
 
 **Voraussetzungen**
 
-1. Wechseln zu `https://[aem_server]:[port]/system/console/configMgr`.
-1. Navigate to **Adobe Granite CSRF Filter**.
-1. Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
+* Greife Sie auf `https://[aem_server]:[port]/system/console/configMgr` zu.
+* Navigate to **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** Folgendes umfasst: `POST`, `PUT`, `DELETE`.
 
 ## Abrufen von Ordnerauflistungen {#retrieve-a-folder-listing}
 
@@ -181,14 +181,14 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 
 Erstellen Sie eine neue Asset-Darstellung für ein Asset. Wenn der Parametername der Anforderung nicht angegeben wird, wird der Dateiname als Darstellungsname verwendet.
 
-**Parameter** Die Parameter werden `name` für den Namen der Darstellung und `file` als Dateiverweis verwendet.
+**Parameter**: Die Parameter dienen `name` dem Namen der Darstellung und `file` als Dateiverweis.
 
 **Anforderung**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Antwort-Codes**
+**Antwortcodes**: Die Antwortcodes sind:
 
 * 201 - ERSTELLT - wenn die Darstellung erfolgreich erstellt wurde.
 * 404 - NICHT GEFUNDEN - wenn Asset nicht gefunden oder unter dem angegebenen URI aufgerufen werden konnte.
@@ -201,7 +201,7 @@ Aktualisiert bzw. ersetzt ein Asset-Wiedergabeformat durch die neuen Binärdaten
 
 **Anforderung**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Antwortcodes** Die Antwortcodes sind:
+**Antwortcodes**: Die Antwortcodes sind:
 
 * 200 - OK - wenn die Darstellung erfolgreich aktualisiert wurde.
 * 404 - NICHT GEFUNDEN - wenn Asset nicht gefunden oder unter dem angegebenen URI aufgerufen werden konnte.
