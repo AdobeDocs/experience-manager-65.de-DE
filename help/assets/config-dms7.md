@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
+source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
 workflow-type: tm+mt
-source-wordcount: '5782'
+source-wordcount: '5777'
 ht-degree: 85%
 
 ---
@@ -479,8 +479,6 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
    Durch das Aktivieren dieser Vorgabe wird sichergestellt, dass beim Hochladen von Assets in Dynamic Media die Stapelsatzvorgabe angewendet wird, um den Satz zu erstellen.
 
 ### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
-
-**Synchronisierungsleistung/Skalierbarkeit - Tipps zur Feinabstimmung**
 
 Damit der Modus &quot;Dynamische Medien - Scene7&quot;reibungslos ausgeführt werden kann, empfiehlt Adobe die folgenden Tipps zur Synchronisierungsleistung/Skalierbarkeit:
 
