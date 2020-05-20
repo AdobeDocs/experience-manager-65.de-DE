@@ -3,10 +3,10 @@ title: Erstellen und Freigeben eines privaten Ordners in AEM
 description: Erfahren Sie, wie Sie in Adobe Experience Manager (AEM) Assets einen privaten Ordner erstellen, ihn mit anderen Benutzern teilen und ihnen verschiedene Berechtigungen zuweisen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 71%
+source-wordcount: '508'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-B
 > Der private Ordner hat mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;.
 
 
-1. Klicken oder tippen Sie in der Konsole „Assets“ von der Symbolleiste aus auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Ordner]** aus dem Menü aus.
+1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
    ![Asset-Ordner erstellen](assets/Create-folder.png)
 
@@ -28,11 +28,11 @@ Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-B
 
    ![Aktivieren Sie das Kontrollkästchen &quot;Privat&quot;, um den Ordner privat zu machen](assets/private-folder.png)
 
-1. Tippen oder klicken Sie auf **[!UICONTROL Erstellen]**. Ein privater Ordner wird auf der Assets-Benutzeroberfläche erstellt.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. Ein privater Ordner wird auf der Assets-Benutzeroberfläche erstellt.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. Um den Ordner für andere Benutzer freizugeben und ihnen Berechtigungen zuzuweisen, wählen Sie den Ordner aus und tippen/klicken Sie auf das Symbol **[!UICONTROL Eigenschaften]** in der Symbolleiste.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,11 +58,11 @@ Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-B
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Tippen/klicken Sie auf das Symbol „Benachrichtigungen“, um eine Liste der Benachrichtigungen zu öffnen.
+1. Klicken Sie auf das Symbol „Benachrichtigungen“, um eine Liste der Benachrichtigungen zu öffnen.
 
    ![Liste der Meldungen](assets/Assets-Notification.png)
 
-1. Klicken oder tippen Sie auf den Eintrag für den privaten Ordner, der vom Administrator freigegeben wurde, um den Ordner zu öffnen.
+1. Klicken Sie auf den Eintrag für den vom Administrator freigegebenen privaten Ordner, um den Ordner zu öffnen.
 
 >[!NOTE]
 >
