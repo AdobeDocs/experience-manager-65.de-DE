@@ -3,7 +3,10 @@ title: XMP-Writeback in Ausgabeformaten
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 63%
 
 ---
 
@@ -44,7 +47,7 @@ Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten 
 1. Öffnen Sie über die Seite „Modelle“ das Workflow-Modell **[!UICONTROL DAM-Metadaten-Writeback]**.
 1. Öffnen Sie auf der Eigenschaftsseite **[!UICONTROL DAM-Metadaten-Writeback]** den Schritt **[!UICONTROL XMP-Writeback-Vorgang]**.
 1. In the [!UICONTROL Step Properties] dialog box, click the **[!UICONTROL Process]** tab.
-1. In the **Arguments** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, andd then tap/click **OK**.
+1. In the **Arguments** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, andd then click **OK**.
 
    ![Schritteigenschaften](assets/step_properties.png)
 
