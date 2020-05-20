@@ -3,10 +3,10 @@ title: Importieren und Exportieren von Asset-Metadaten in Massen.
 description: Massenimport und -export von Metadaten digitaler Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 52%
+source-wordcount: '785'
+ht-degree: 51%
 
 ---
 
@@ -36,7 +36,7 @@ Der Metadaten-Import erfolgt asynchron und beeinträchtigt nicht die Systemleist
    | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. When set to `true` and default Launcher settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Die Aktivierung von Start-Workflows verlangsamt das System. |
    | [!UICONTROL Asset-Pfad-Spaltenname] | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
+1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
 
 1. Um den korrekten Import zu überprüfen, navigieren Sie zur Seite &quot; [!UICONTROL Eigenschaften] &quot;eines Assets und überprüfen Sie die Werte in den Feldern.
 
