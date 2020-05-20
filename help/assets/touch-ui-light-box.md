@@ -3,7 +3,10 @@ title: Lightbox als persönliche Bildgalerie in AEM Assets
 description: Erfahren Sie mehr über Lightbox als Ihre persönliche Bildgalerie in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 66%
 
 ---
 
@@ -14,16 +17,16 @@ Lightbox ist ein spezieller Sammlungstyp, der den einfachen Zugriff auf Assets e
 
 Wenn Sie Adobe Experience Manager (AEM) Assets verwenden, wird Lightbox bei Ihrer ersten Anmeldung bei der Anwendung automatisch erstellt. Lightbox bezieht sich ausschließlich auf Ihre eigenen Anmeldungen. Andere Benutzer können nicht auf Ihren Lightbox-Ordner zugreifen.
 
-## Assets zu Lightbox hinzufügen {#adding-assets-to-lightbox}
+## Hinzufügen von Assets zu Lightbox {#adding-assets-to-lightbox}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche die Assets aus, die zu Lightbox hinzugefügt werden sollen.
-1. Drag the assets to the **[!UICONTROL Drop in Lightbox]** zone. Release when the drop-zone becomes active, and its label changes to **[!UICONTROL Drop to Add]**.
+1. Ziehen Sie die Assets in den Bereich **[!UICONTROL In Lightbox ablegen]**. Release when the drop-zone becomes active, and its label changes to **[!UICONTROL Drop to Add]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. In the dialog, tap/click **[!UICONTROL Add]**, and then close it to complete the process. Die gewählten Assets werden Lightbox hinzugefügt.
-1. Rufen Sie die Konsole &quot;Sammlungen&quot;auf, um Lightbox anzuzeigen.
-1. Tap/click **[!UICONTROL Lightbox]** to view the assets in it.
+1. In the dialog, click **[!UICONTROL Add]**, and then close it to complete the process. Die ausgewählten Assets werden zu Lightbox hinzugefügt.
+1. Um Lightbox anzuzeigen, wechseln Sie zur Konsole „Sammlungen“.
+1. Click **[!UICONTROL Lightbox]** to view the assets in it.
 
    >[!NOTE]
    >
@@ -31,7 +34,7 @@ Wenn Sie Adobe Experience Manager (AEM) Assets verwenden, wird Lightbox bei I
 
 ## Remove assets from Lightbox {#removing-assets-from-lightbox}
 
-1. Gehen Sie zur Konsole „Sammlungen“ und tippen/klicken Sie auf „Lightbox“, um die entsprechenden Assets anzuzeigen.
+1. Navigieren Sie zur Sammlungskonsole und klicken Sie auf &quot;Leuchtkasten&quot;, um die Assets Ansicht.
 1. Wählen Sie die Assets aus, die Sie entfernen möchten.
-1. From the toolbar, tap/click **[!UICONTROL Remove]**.
-1. In the dialog, tap/click **[!UICONTROL Remove]** to confirm the delete action. Die Assets werden aus Lightbox gelöscht.
+1. From the toolbar, click **[!UICONTROL Remove]**.
+1. In the dialog, click **[!UICONTROL Remove]** to confirm the delete action. Die Assets werden aus Lightbox gelöscht.
