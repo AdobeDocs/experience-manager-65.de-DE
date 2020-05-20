@@ -3,10 +3,10 @@ title: Verwalten Sie Metadaten vieler Assets und Sammlungen in Adobe Enterprise 
 description: Bearbeiten Sie die Metadaten vieler Assets und Sammlungen gleichzeitig, um häufig vorkommende Metadatenänderungen schnell zu übertragen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 70%
+source-wordcount: '499'
+ht-degree: 62%
 
 ---
 
@@ -30,7 +30,7 @@ Verwenden Sie den Schema-Editor, um die Seite mit den Metadateneigenschaften, ei
 
 1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
-1. Tippen oder klicken Sie auf das Symbol **[!UICONTROL Eigenschaften]**, um die Eigenschaftenseite für die ausgewählten Assets zu öffnen.
+1. From the toolbar, click the **[!UICONTROL Properties]** icon to open the properties page for the selected assets.
 
    >[!NOTE]
    >
@@ -45,9 +45,9 @@ Verwenden Sie den Schema-Editor, um die Seite mit den Metadateneigenschaften, ei
    >* Aktivieren Sie über der Asset-Liste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Assets und dem Deaktivieren der Liste umzuschalten.
 
 
-1. Wenn Sie ein anderes Metadatenschema für die Assets wählen möchten, tippen oder klicken Sie auf das Symbol **[!UICONTROL Einstellungen]** in der Symbolleiste und wählen Sie das gewünschte Schema aus.
+1. To select a different metadata schema for the assets, click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
 1. Speichern Sie die Änderungen.
-1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen oder klicken Sie auf **[!UICONTROL Absenden]**.
+1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
    >[!CAUTION]
    >
