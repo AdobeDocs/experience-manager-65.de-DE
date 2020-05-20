@@ -3,7 +3,10 @@ title: 'Aktivieren von Asset Insights über DTM  '
 description: Erfahren Sie, wie Sie Asset Insights mit Adobe Dynamic Tag Management (DTM) aktivieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 53%
 
 ---
 
@@ -20,7 +23,7 @@ Obwohl Sie Ihren Trackingcode anpassen können, um CMS-Lösungen von Drittanbiet
 
 Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights-Konfiguration]**.
+1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Konfigurieren Sie die AEM-Instanz mit dem DTM Cloud-Dienst.](/help/sites-administering/dtm.md)
 
    The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** from the Profile icon. Dieser Schritt ist aus der Sicht von Asset Insights nicht erforderlich, weil die Integration von AEM Sites mit Asset Insights noch in Arbeit ist.
@@ -28,21 +31,21 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 1. Melden Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) an und wählen Sie ggf. ein Unternehmen aus.
 1. Erstellen/Öffnen einer vorhandenen Webeigenschaft
 
-   * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
+   * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
-   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/de/experience-manager/using/dtm.html).
+   * Aktualisieren Sie die Felder entsprechend und klicken Sie auf Eigenschaft **[!UICONTROL erstellen]**. See [documentation](https://helpx.adobe.com/de/experience-manager/using/dtm.html).
    ![Webeigenschaft zum Bearbeiten](assets/Create-edit-web-property.png)
 
-1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
+1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and click **[!UICONTROL Create New Rule]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expand **[!UICONTROL Javascript /Third Party Tags]**. Then tap/click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
+1. Expand **[!UICONTROL Javascript /Third Party Tags]**. Then click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
-1. Tap/click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Speichern Sie die Änderungen.
+1. Click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Speichern Sie die Änderungen.
 
    >[!NOTE]
    >
@@ -62,7 +65,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 
    ![chlimage_1-61](assets/chlimage_1-197.png)
 
-1. Expand **[!UICONTROL Customize Page Code]**, and click or tap **[!UICONTROL Open Editor]**.
+1. Expand **[!UICONTROL Customize Page Code]**, and click **[!UICONTROL Open Editor]**.
 
    ![chlimage_1-62](assets/chlimage_1-198.png)
 
