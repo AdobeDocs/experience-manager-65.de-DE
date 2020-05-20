@@ -2,7 +2,7 @@
 title: Versionshinweise zu AEM 6.5 Previous Service Pack
 description: Versionshinweise speziell für Adobe Experience Manager 6.5 Service Pack 3 und früher.
 translation-type: tm+mt
-source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+source-git-commit: 321710219053ab43fe5a223665bc20987e1afb31
 workflow-type: tm+mt
 source-wordcount: '6277'
 ht-degree: 47%
@@ -12,7 +12,7 @@ ht-degree: 47%
 
 # In früheren Service Packs enthaltene Hotfixes und Feature Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0 {#aem-6530}
+## Adobe Experience Manager 6.5.3.0 {#aem-6530-rn}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 ist eine wichtige Version, die Leistungsverbesserungen, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Erweiterungen von Kunden umfasst, die seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht wurden. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
@@ -78,7 +78,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Alle Kontrollkästchen werden deaktiviert, wenn die Kontrollkästchen der zweiten Ebene im Filter &quot;Dateityp&quot;deaktiviert werden, und der Text in der Suchleiste ist nicht mit den ausgewählten/nicht ausgewählten Eigenschaften synchronisiert (NPR-31287).
 
-* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Abschnitt &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
+* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Bereich &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
 
 * Assets mit dem Pluszeichen &quot;+&quot;im Dateinamen können nicht gelöscht werden (NPR-31162).
 
