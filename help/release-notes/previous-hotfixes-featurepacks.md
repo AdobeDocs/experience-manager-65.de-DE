@@ -1,20 +1,18 @@
 ---
 title: Versionshinweise zu AEM 6.5 Previous Service Pack
 description: Versionshinweise speziell für Adobe Experience Manager 6.5 Service Pack 3 und früher.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+workflow-type: tm+mt
+source-wordcount: '6277'
+ht-degree: 47%
 
 ---
 
 
 # In früheren Service Packs enthaltene Hotfixes und Feature Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0
+## Adobe Experience Manager 6.5.3.0 {#aem-6530}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 ist eine wichtige Version, die Leistungsverbesserungen, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Erweiterungen von Kunden umfasst, die seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht wurden. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
@@ -24,9 +22,9 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * [!DNL Experience Manager Assets] unterstützt jetzt ZIP-Archive, die mit dem Deflate64-Algorithmus erstellt wurden.
 
-* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM-Liste Ansicht und in den Asset-Suchergebnissen in der Ansicht der Liste hinzugefügt.
+* Eine neue Spalte mit dem Erstellungsdatum von Assets ist verfügbar, wenn Assets in DAM und in den Suchergebnissen in der Ansicht der Liste angezeigt werden. Sortieren Sie die Spalte, um die Elemente in chronologischer oder umgekehrter chronologischer Reihenfolge der Erstellung anzuordnen.
 
-* Die Sortierung von Assets basierend auf der Spalte &quot;Name&quot;wurde in der Ansicht &quot;Liste&quot;aktiviert.
+* Sie können Assets nun basierend auf der `Name` Spalte in der Ansicht &quot;Liste&quot;sortieren.
 
 * [!DNL Dynamic Media] unterstützt jetzt Smart Crop-Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen.
 
@@ -46,9 +44,9 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * [!DNL Experience Manager Assets] unterstützt jetzt ZIP-Archive, die mit dem Deflate64-Algorithmus (NPR-27573) erstellt wurden.
 
-* Neue Spalte für das erstellte Datum, die sortierbar ist, wurde in der DAM Liste Ansicht und in den Asset-Suchergebnissen in der Liste Ansicht (NPR-31312) hinzugefügt.
+* Eine neue Spalte mit dem Erstellungsdatum von Assets ist verfügbar, wenn Assets in DAM und in den Suchergebnissen in der Ansicht der Liste angezeigt werden. Sortieren Sie die Spalte, um Assets in chronologischer oder umgekehrter chronologischer Reihenfolge der Erstellung anzuordnen (NPR-31312).
 
-* Die Sortierung nach der Spalte &quot;Name&quot;ist in der Ansicht &quot;Liste&quot;zulässig (NPR-31299).
+* Sie können Assets nun basierend auf der `Name` Spalte in der Ansicht Liste (NPR-31299) sortieren.
 
 * Die Asset-Dateien GLB, GLTF, OBJ und STL unterstützen die Asset-Vorschau auf der Seite &quot;Asset-Details&quot;in DAM (CQ-4282277).
 
@@ -61,6 +59,8 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Die Ansicht &quot;Suchen/Durchsuchen&quot;wurde in der Foundation-Auswahl als Standard-Ansicht festgelegt, wenn Abfrage-Parameter in der Anforderung übergeben werden (NPR-31601).
 
 **Fehlerkorrekturen**
+
+* Der OAuth IMS-Anbieter kann keine Verbindung über einen Proxyserver herstellen, wenn er Adobe Asset Link (NPR-30949) verwendet.
 
 * Metadaten für einige PDF-Dokumente werden beim Ändern des Titels (NPR-31629) nicht aktualisiert und im PDF-Format gespeichert.
 
@@ -78,23 +78,23 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Alle Kontrollkästchen werden deaktiviert, wenn die Kontrollkästchen der zweiten Ebene im Filter &quot;Dateityp&quot;deaktiviert werden, und der Text in der Suchleiste ist nicht mit den ausgewählten/nicht ausgewählten Eigenschaften synchronisiert (NPR-31287).
 
-* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Bereich &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
+* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Abschnitt &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
 
 * Assets mit dem Pluszeichen &quot;+&quot;im Dateinamen können nicht gelöscht werden (NPR-31162).
 
-* Dropdown-Menü erstellen, das im oberen Menü bei Auswahl eines Ordners angezeigt wird, zeigt nicht &quot;Ordner&quot; als Erstellungsoption (NPR-30877).
+* Eine Option zum Erstellen neuer Assets oder Ordner ist als Popupmenü in der Benutzeroberfläche &quot;Assets&quot;verfügbar. Wenn ein Ordner ausgewählt ist, zeigt Experience Manager den [!UICONTROL Ordner] nicht als eine der Optionen im Popupmenü an (NPR-30877).
 
-* Ordnerauswahl &quot;Erstellen&quot;> &quot;DateiUpload&quot;-Aktionselement fehlt, wenn ACL für &quot;Ablehnen&quot;(jcr:removeChildNodes) und &quot;jcr:removeNode&quot;auf Pfad für einen Benutzer angewendet werden (NPR-30840).
+* Ordnerauswahl &quot;Erstellen&quot;> &quot;DateiUpload&quot;-Aktionselement fehlt, wenn ACL für Verweigern `jcr:removeChildNodes` und `jcr:removeNode` auf Pfad für einen Benutzer angewendet werden (NPR-30840).
 
 * DAM Workflows beim Hochladen bestimmter MP4-Assets in den Status &quot;statisch&quot;wechseln, wodurch alle verbleibenden Workflows in den Status &quot;statisch&quot;wechseln (NPR-30662).
 
-* Fehler wegen ungenügenden Speicherplatzes werden beobachtet, wenn große PDF-Dateien (mit mehreren Gigabytes) zu DAM hochgeladen und deren Teilassets verarbeitet werden (NPR-30614).
+* Fehler wegen ungenügenden Speicherplatzes werden beobachtet, wenn eine große PDF-Datei mit mehreren Gigabytes zu DAM hochgeladen und deren Teilassets verarbeitet werden (NPR-30614).
 
 * Die Massenbewegung von Assets schlägt fehl und es wird eine Warnmeldung angezeigt (NPR-30610).
 
-* Beim Verschieben von Assets von einem Ordner in einen anderen im [!DNL Experience Manager] [!DNL Dynamic Media]Scene7-Modus (NPR-31630) wird die Schreibweise für Asset-Namen in Kleinbuchstaben geändert.
+* Beim Verschieben von Assets von einem Ordner in einen anderen im [!DNL Dynamic Media]Scene7-Modus (NPR-31630) werden die Asset-Namen in Kleinbuchstaben geändert.
 
-* Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler festgestellt, da sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31340).
+* Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler behoben, der dafür sorgt, dass sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31340).
 
 * [!DNL Dynamic Media] Assets, die Verweise enthalten, werden nicht veröffentlicht (NPR-31180).
 
@@ -234,7 +234,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Aktualisierungen des Lucene-Indexes, die dazu führen, dass der Autorenserver langsamer wird (NPR-31548).
 
-### Formulare {#forms-6530}
+### Forms {#forms-6530}
 
 >[!NOTE]
 >
@@ -418,7 +418,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Angepasster Content wird auf der Veröffentlichungsinstanz erst nach dem Neustart der Instanz korrekt angezeigt. NPR-30377: Hotfix für CQ-4273706
 * Bei der Konfiguration von Launch auf einer Website wird der Bibliotheksadresse ein Schrägstrich (/) vorangestellt, der jedes Mal einen manuellen Eingriff verursacht. NPR-30694: Hotfix für CQ-4275501
 
-### Formulare {#forms-6520}
+### Forms {#forms-6520}
 
 >[!NOTE]
 >
@@ -497,7 +497,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. Weitere Informationen finden Sie unter [Konfigurieren von japanischen Wortumbrüchen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Assets 
+### Assets
 
 * Die DAM DMGGateway-Schnittstelle bietet jetzt Unterstützung für S3-Multipart. NPR-29740: Hotfix für CQ-4226303
 * Renditions preview generates `Only empty tenantId is currently supported` error after upgrading to [!DNL Experience Manager] 6.5. NPR-29986: Hotfix for CQ-4272353
