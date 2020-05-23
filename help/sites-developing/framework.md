@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cef5251d6bd72a6fd352f18e31d3f9d787e4320e
+source-git-commit: 4c4a0b1a76f44dcf1084a4651194e60735bc5aea
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 52%
+source-wordcount: '1915'
+ht-degree: 51%
 
 ---
 
@@ -259,6 +259,10 @@ Dieser Schritt wird so lange wiederholt, wie das angehängte Tag eine `cq:movedT
 * Um eine Änderung zu veröffentlichen, wenn ein Tag verschoben oder zusammengeführt wurde, müssen der Knoten `cq:Tag` und all seine Backlinks repliziert werden. Dies geschieht automatisch, wenn das Tag in der Tag-Verwaltungskonsole aktiviert wird.
 
 * Spätere Aktualisierungen der `cq:tags`-Eigenschaft der Seite bereinigen automatisch die „alten“ Verweise. Dies wird ausgelöst, da die Auflösung eines verschobenen Tags über die API das Ziel-Tag zurückgibt und so die Ziel-Tag-ID bereitstellt.
+
+> [!NOTE]
+>
+> Die Bewegung von Tags unterscheidet sich von der Migration von Tags.
 
 ## Tags-Migration {#tags-migration}
 
