@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Managing User Guide
+user-guide-title: AEM 6.5 - Verwalten des Benutzerhandbuchs
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: cb7df7301364eb1ce3a1ca376256d2cd5afcb2c8
+workflow-type: tm+mt
+source-wordcount: '63'
+ht-degree: 79%
 
 ---
 
@@ -23,6 +26,6 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Best Practices für SEO und URL-Verwaltung](seo-and-url-management.md)
 + Erreichbarkeit {#accessibility}
    + [AEM und Richtlinien für barrierefreien Webzugang](web-accessibility.md)
-   + [Kurzanleitung zu WCAG 2.0](qg-wcag.md)
+   + [Kurzanleitung zu WCAG 2.1](qg-wcag.md)
 + Datenschutz {#data-protection}
-   + [AEM Readiness for Data Protection and Data Privacy Regulations](data-protection-and-privacy.md)
+   + [AEM – Einhaltung von Datenschutzbestimmungen](data-protection-and-privacy.md)
