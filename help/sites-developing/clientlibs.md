@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: da233b2d58e13bf86c88115a78f2fecf1be12ba9
+workflow-type: tm+mt
+source-wordcount: '2889'
+ht-degree: 59%
 
 ---
 
@@ -52,7 +55,7 @@ By default, `cq:ClientLibraryFolder` nodes can be placed anywhere within the `/a
 
 Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, along with a few supporting files (see below). The properties of the `cq:ClientLibraryFolder` are configured as follows:
 
-* `categories`: Identifiziert die Kategorien, in die der Satz von JS- und/oder CSS-Dateien in diesem `cq:ClientLibraryFolder` Fall fällt. Da die Eigenschaft `categories` mehrere Werte aufweisen kann, kann ein Bibliotheksordner zu mehreren Kategorien gehören (weiter unten sehen Sie, warum dies nützlich sein kann).
+* `categories`: Identifiziert die Kategorien, in die der Satz der JS- und/oder CSS-Dateien in diesem `cq:ClientLibraryFolder` Herbst fällt. Da die Eigenschaft `categories` mehrere Werte aufweisen kann, kann ein Bibliotheksordner zu mehreren Kategorien gehören (weiter unten sehen Sie, warum dies nützlich sein kann).
 
 * `dependencies`: Eine Liste anderer Client-Bibliothekskategorien, von denen dieser Bibliotheksordner abhängt. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` in order to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
 
@@ -100,7 +103,7 @@ Ausführliche Informationen wie Attribute zum Filtern von JS, CSS oder Themenbib
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, die in der Vergangenheit häufig zum Einschließen von Clientbibliotheken verwendet wurde, wurde seit AEM 5.6 nicht mehr unterstützt. Stattdessen [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) sollte wie oben beschrieben verwendet werden.
+>`<cq:includeClientLib>`, die in der Vergangenheit häufig zum Einschließen von Clientbibliotheken verwendet wurde, wurde seit AEM 5.6 nicht mehr unterstützt. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
 
 ## Erstellen von Client-Bibliotheksordnern {#creating-client-library-folders}
 
@@ -224,11 +227,11 @@ Das Einbetten von Code ist nützlich, um Zugriff auf Bibliotheken zu ermögliche
 
 It is a best practice to keep all application-related files in their application folder below `/app`. It is also a best practice to deny access for web site visitors to the `/app` folder. To satisfy both best practices, create a client library folder below the `/etc` folder that embeds the client library that is below `/app`.
 
-Verwenden Sie die categories-Eigenschaft, um den einzubettenden Clientbibliotheksordner zu identifizieren. Um die Bibliothek einzubetten, fügen Sie dem einbettenden `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Eigenschaftsattributen hinzu:
+Verwenden Sie die Eigenschaft &quot;Kategorien&quot;, um den einzubettenden Clientbibliotheksordner zu identifizieren. Um die Bibliothek einzubetten, fügen Sie dem einbettenden `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Eigenschaftsattributen hinzu:
 
-* **** Name: embed
+* **Name:** embed
 * **Typ:** String[]
-* **** Wert: Der Wert der categories-Eigenschaft der einzubettenden `cq:ClientLibraryFolder` Node.
+* **Wert:** Der Wert der Eigenschaft &quot;Kategorien&quot;des einzubettenden `cq:ClientLibraryFolder` Knotens.
 
 #### Minimieren von Anfragen durch Einbetten {#using-embedding-to-minimize-requests}
 
@@ -301,9 +304,9 @@ Verwenden Sie die Eigenschaft `channels` eines Client-Bibliotheksordners, um die
 
 To associate a client library folder with a device group, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
-* **** Name: Kanäle
+* **Name:** Kanal
 * **Typ:** String[]
-* **** Werte: Der Name der mobilen Gruppe. Um den Bibliotheksordner aus einer Gruppe auszuschließen, setzen Sie ein Ausrufezeichen („!“) vor den Namen.
+* **Werte:** Der Name der mobilen Gruppe. Um den Bibliotheksordner aus einer Gruppe auszuschließen, setzen Sie ein Ausrufezeichen („!“) vor den Namen.
 
 For example, the following table lists the value of the `channels` property for each client library folder of the `cq.widgets` category:
 
@@ -429,9 +432,9 @@ Wenn Sie die Datei `publicmain.css` öffnen, sehen Sie den folgenden Code:
 
 ### Ermitteln der Client-Bibliotheken {#discover-client-libraries}
 
-The `/libs/cq/ui/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/cq/ui/content/dumplibs` node has the component as a resource type. Um die Seite zu öffnen, verwenden Sie die folgende URL (verwenden Sie je nach Bedarf einen anderen Host und Port):
+The `/libs/cq/granite/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/granite/ui/content/dumplibs` node has the component as a resource type. Um die Seite zu öffnen, verwenden Sie die folgende URL (d. h. den Host und Port ändern Sie nach Bedarf):
 
-[https://localhost:4502/libs/cq/ui/content/dumplibs.test.html](https://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+`https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
 Zu den Informationen gehören der Bibliothekspfad und -typ (CSS oder JS) und die Werte der Bibliotheksattribute, wie z. B. Kategorien und Abhängigkeiten. Nachfolgende Tabellen auf der Seite zeigen die Bibliotheken in jeder Kategorie und jedem Kanal.
 
@@ -445,7 +448,7 @@ The `dumplibs` component includes a test selector that displays the source code 
 
    * Öffnen Sie die folgende URL in Ihrem Webbrowser (verwenden Sie je nach Bedarf einen anderen Host und Port):
 
-      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
    Die Standardseite zeigt die Ausgabe für Tags ohne Wert für das category-Attribut.
 
 1. To see the output for a category, type the value of the client library&#39;s `categories` property and click **Submit Query**.
