@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2350'
 ht-degree: 91%
 
 ---
@@ -283,7 +283,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    * Wählen Sie das Symbol **Seite einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
    * Wählen Sie den Dropdownpfeil aus, um die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. untergeordnete Seiten werden nicht kopiert.
    >[!NOTE]
-   Die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;ist in [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)verfügbar.
+   Die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;ist ab [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) verfügbar.
 
    >[!NOTE]
    Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
