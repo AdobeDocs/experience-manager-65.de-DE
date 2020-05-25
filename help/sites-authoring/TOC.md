@@ -4,7 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
+source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 89%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [Komponentenkonsole](default-components-console.md)
    + [Responsives Layout](responsive-layout.md)
    + [Inhaltseinblick ](content-insights.md)
-   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)  ](creating-accessible-content.md)
+   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) ](creating-accessible-content.md)
    + [Strukturvorlage](scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](default-components-designmode.md)
    + [Foundation-Komponenten](default-components-foundation.md)
@@ -75,8 +78,8 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
++ Personalisierung    {#personalization}
+   + [Personalisierung   ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten ](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus ](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
