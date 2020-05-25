@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+workflow-type: tm+mt
+source-wordcount: '2349'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +46,7 @@ Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhalts
 
 The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
 
-* Autorenumgebung
+* Autor-Umgebung
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Veröffentlichungsumgebung
@@ -77,13 +80,13 @@ Depending on the configuration of your instance, use of `/content` might be opti
  /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-authoring/basic-handling.md#navigating) and perform actions on the pages. Sie können auch neue Sites und [neue Seiten](#creating-a-new-page) erstellen.
+Diese Struktur kann über die **Sites-Konsole** angezeigt werden. Von dort aus können Sie [durch die Seiten Ihrer Website navigieren](/help/sites-authoring/basic-handling.md#navigating) und Aktionen auf den Seiten durchführen. Sie können auch neue Sites und [neue Seiten](#creating-a-new-page) erstellen.
 
-An jedem Punkt können Sie den Zweig nach oben in den Breadcrumbs in der Kopfzeilenleiste sehen:
+An jedem Punkt können Sie die Verzwigung nach oben in den Breadcrumbs in der Kopfzeilenleiste sehen:
 
 ![caop-01](assets/caop-01.png)
 
-### Page Naming Conventions {#page-naming-conventions}
+### Seitenbenennungskonventionen {#page-naming-conventions}
 
 Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
@@ -99,15 +102,15 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
 #### Seitennamen-Einschränkungen und Best Practices {#page-name-restrictions-and-best-practices}
 
-Der **Seitentitel** und **Seitenname** können separat erstellt werden, sind aber verwandt:    
+Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
-* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich.  Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung).  Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennahmen zu unterstützen.
+* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich.  Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung).  Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
 
 * Wenn ein Seitenname manuell vom Autor angegeben wird, gilt die Beschränkung von 64 Zeichen nicht, aber andere technische Einschränkungen gelten unter Umständen für die Länge des Seitennamens.
 
 >[!NOTE]
 >
->Beim Definieren eines Seitennamens ist es sinnvoll, den Seitennamen so kurz wie möglich zu halten, aber so ausdruckstark und erinnerungsstark wie möglich, um ihn für den Leser verständlich zu machen. Weitere Informationen finden Sie im [W3C-Styleguide](https://www.w3.org/Provider/Style/TITLE.html) für das `title`-Element.
+>Beim Definieren eines Seitennamens ist es sinnvoll, den Seitennamen so kurz wie möglich zu halten, aber so ausdruckstark und erinnerungsstark wie möglich, um ihn für den Leser verständlich zu machen. Weitere Informationen zum `title`-Element finden Sie im [W3C-Styleguide](https://www.w3.org/Provider/Style/TITLE.html).
 
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technisch Gründe für die Verwendung von kurzen Seitennamen bestehen.
 >
@@ -128,7 +131,7 @@ Wenn AEM auf einer [MongoMK-Persistenzmanager-Bereitstellung](/help/sites-deploy
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen**[ für die Seite von dieser Zeichenfolge ab und validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -137,12 +140,12 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen Seiten **namen** angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/sites-developing/naming-conventions.md) Eine Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
 
 ![caop-02](assets/caop-02.png)
 
 >[!NOTE]
-Sie sollten es vermeiden, einen Zwei-Buchstaben-Code gemäß ISO-639-1 als Seitennamen zu verwenden, sofern es sich nicht um eine Sprachwurzel handelt.
+Sie sollten es vermeiden, einen Zwei-Buchstaben-Code gemäß ISO-639-1 als Seitennamen zu verwenden, sofern es sich nicht um einen Sprachstamm handelt.
 Weitere Informationen finden Sie unter [Vorbereiten von Inhalten für die Übersetzung](/help/sites-administering/tc-prep.md).
 
 ### Vorlagen {#templates}
@@ -154,7 +157,7 @@ Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
 * **Titel**
-Der Titel wird auf der resultierenden Webseite angezeigt.
+Der Titel, der auf der resultierenden Web-Seite angezeigt wird.
 
 * **Name**
 Wird beim Benennen der Seite verwendet.
@@ -163,7 +166,7 @@ Wird beim Benennen der Seite verwendet.
 Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden können.
 
 >[!NOTE]
-Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlagen-Editor erstellen](/help/sites-authoring/templates.md).
+Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlageneditor erstellen](/help/sites-authoring/templates.md).
 
 ### Komponenten {#components}
 
@@ -246,7 +249,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) und Symbolleiste
-   And then select the **Edit** icon:
+   Wählen Sie anschließend das Symbol **Bearbeiten** aus:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
 
@@ -255,7 +258,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >[!NOTE]
 Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite   {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -272,14 +275,18 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    Wenn Sie sich im Auswahlmodus befinden, wird dieser automatisch beendet, sobald die Seite kopiert wird.
 
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Verwenden Sie das Symbol **Einfügen**:
+1. Das Symbol &quot; **Einfügen** &quot;ist mit einem Dropdownpfeil direkt rechts verfügbar:
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![Einfügen](assets/paste-without-children.png)
 
-   In diesem Verzeichnis wird eine Kopie der ursprünglichen Seite und aller Unterseiten erstellt.
+   Wählen Sie eine der folgenden Möglichkeiten:
+   * Wählen Sie das Symbol **Seite einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
+   * Wählen Sie den Dropdownpfeil aus, um die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. untergeordnete Seiten werden nicht kopiert.
+   >[!NOTE]
+   Die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;ist in [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)verfügbar.
 
    >[!NOTE]
-   Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` es beispielsweise bereits existiert, `winter` wird es `winter1`werden.
+   Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-a-page}
 
@@ -291,9 +298,9 @@ Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage z
 
 Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen und Ganzen gleich und wird von demselben Assistenten unterstützt. Dieser Assistent hilft Ihnen bei den folgenden Aktionen:
 
-* Umbenennen einer Seite, ohne sie zu verschieben
-* Verschieben der Seite, ohne sie umzubenennen
-* Verschieben und gleichzeitiges Umbenennen der Seite
+* Umbenennen einer Seite, ohne sie zu verschieben.
+* Verschieben der Seite, ohne sie umzubenennen.
+* Verschieben und gleichzeitiges Umbenennen der Seite.
 
 AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite verweisen, die umbenannt oder verschoben wird. Dies kann seitenweise erfolgen, um die volle Flexibilität zu ermöglichen.
 
@@ -310,7 +317,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 1. Im Schritt des Assistenten für das **Umbenennen** haben Sie folgende Möglichkeiten:
 
-   * Den Namen angeben, den die Seite nach dem Verschieben aufweisen soll, und dann auf **Weiter** tippen/klicken, um den Vorgang fortzusetzen.
+   * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
    ![caop-07](assets/caop-07.png)
@@ -318,7 +325,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
    Der Seitenname kann unverändert bleiben, wenn Sie die Seite nur verschieben.
 
    >[!NOTE]
-   Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` es beispielsweise bereits existiert, `winter` wird es `winter1`werden.
+   Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
 
 1. Im Schritt **Ziel auswählen** des Assistenten können Sie entweder:
 
@@ -333,9 +340,9 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
    ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
-   Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` es beispielsweise bereits existiert, `winter` wird es `winter1`werden.
+   Wenn Sie die Seite an einen Speicherort verschieben, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
 
-1. Wenn die Seite verknüpft ist oder darauf verwiesen wird, werden die Details im Schritt **Anpassen/Erneut veröffentlichen** aufgeführt.  
+1. Wenn die Seite verknüpft ist oder darauf verwiesen wird, werden die Details im Schritt **Anpassen/Erneut veröffentlichen** aufgeführt.
 
    Sie können angeben, welche Verweise ggf. angepasst und neu veröffentlicht werden sollen.
 
@@ -347,7 +354,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 1. Wenn Sie **Verschieben** auswählen, wird der Vorgang abgeschlossen und Ihre Seite verschoben oder umbenannt.
 
 >[!NOTE]
-Wenn eine Seite bereits veröffentlicht wurde, wird ihre Veröffentlichung durch Verschieben der Seite automatisch rückgängig gemacht. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies lässt sich jedoch ändern, indem Sie im Schritt **Anpassen/Erneut veröffentlichen** das Kontrollkästchen **Neu veröffentlichen** deaktivieren.
+Wenn die Seite bereits veröffentlicht wurde, wird das Veröffentlichen durch Verschieben der Seite automatisch rückgängig gemacht. Standardmäßig wird sie nach Abschluss des Verschiebevorgangs erneut veröffentlicht. Dies lässt sich jedoch ändern, indem Sie im Schritt **Anpassen/Erneut veröffentlichen** das Kontrollkästchen **Neu veröffentlichen** deaktivieren.
 
 >[!NOTE]
 Wenn es keine Verweise auf die Seite gibt, wird der Schritt **Anpassen/Erneut veröffentlichen** übersprungen.
@@ -360,7 +367,7 @@ Wenn es keine Verweise auf die Seite gibt, wird der Schritt **Anpassen/Erneut ve
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Aus Sicherheitsgründen ist das Symbol **Löschen** nicht als Schnellaktion verfügbar.
+   Als Sicherheitsmaßnahme ist das Seitensymbol **Löschen** nicht per Schnellzugriff verfügbar.
 
 1. Es wird ein Bestätigungsdialogfeld angezeigt.
 
@@ -368,7 +375,7 @@ Wenn es keine Verweise auf die Seite gibt, wird der Schritt **Anpassen/Erneut ve
    * **Löschen** bestätigen Sie die Aktion.
 
       * Wenn die Seite keine Referenzen aufweist, wird die Seite gelöscht.
-      * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darauf hingewiesen, dass **ein** Verweis auf mindestens eine Seite vorhanden ist. Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
+      * Wenn die Seite Verweise enthält, werden Sie in einem Meldungsfeld darauf hingewiesen, dass **eine oder mehrere Seiten über einen Verweis verfügen**. Sie können **Löschen erzwingen** oder **Abbrechen** auswählen.
 
 >[!NOTE]
 Wenn eine Seite bereits veröffentlicht ist, wird ihre Veröffentlichung vor dem Löschen automatisch rückgängig gemacht.
@@ -379,7 +386,7 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Sei
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
-### Creating a New Folder {#creating-a-new-folder}
+### Erstellen eines neuen Ordners {#creating-a-new-folder}
 
 Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 
@@ -388,7 +395,7 @@ Für Ordner gelten ebenfalls die [Benennungskonventionen für Seiten](#page-nami
 
 >[!CAUTION]
 * Ordner können nur direkt unter **Sites** oder unter anderen Ordnern erstellt werden. Sie können jedoch nicht unter einer Seite erstellt werden.
-* Die Standardaktionen Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften können für einen Ordner ausgeführt werden.
+* Für einen Ordner können folgende Standardaktionen ausgeführt werden: Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften.
 * Ordner sind in einer Live Copy nicht als Auswahl verfügbar.
 
 
