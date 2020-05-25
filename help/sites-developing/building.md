@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 1493b301ecf4c25f785495e11ead352de600ddb7
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 50%
 
 ---
 
@@ -65,7 +68,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling&#39;s `adaptTo` mechanism if you have the resource (e.g. such as `/etc/tags/default/my/tag`):
+For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling&#39;s `adaptTo` mechanism if you have the resource (e.g. such as `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -131,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Der Tag Garbage Collector {#the-tag-garbage-collector}
 
-Der Tag-Müll-Collector ist ein Hintergrunddienst, der die Tags bereinigt, die ausgeblendet und nicht verwendet werden. Hidden and unused tags are tags below `/etc/tags` that have a `cq:movedTo` property and are not used on a content node - they have a count of zero. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
+Der Tag-Müll-Collector ist ein Hintergrunddienst, der die Tags bereinigt, die ausgeblendet und nicht verwendet werden. Hidden and unused tags are tags below `/content/cq:tags` that have a `cq:movedTo` property and are not used on a content node - they have a count of zero. Durch Verwenden dieses Lazy-Deletion-Prozesses muss der Inhaltsknoten (d. h. die Eigenschaft `cq:tags`) nicht als Teil der Verschiebung oder dem Zusammenführungsvorgang aktualisiert werden. Die Verweise in der Eigenschaft `cq:tags` werden automatisch aktualisiert, wenn die Eigenschaft `cq:tags` aktualisiert wird, z. B. durch das Seiteneigenschaften-Dialogfeld.
 
 Das Garbage Collector Tag wird standardmäßig einmal am Tag ausgeführt. Dies kann konfiguriert werden unter:
 
@@ -149,7 +152,7 @@ Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
 ## Tags in verschiedenen Sprachen {#tags-in-different-languages}
 
-As described in the documentation for administering tags, in the section [Managing Tags in Different Languages](/help/sites-administering/tags.md#managing-tags-in-different-languages), a tag `title`can be defined in different languages. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft hat das Format `jcr:title.<locale>`, z.B. `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Zeichenfolge in Kleinbuchstaben sein und &quot;_&quot;anstelle von &quot;-&quot;verwenden. Beispiel: `de_ch`.
+As described in the documentation for administering tags, in the section [Managing Tags in Different Languages](/help/sites-administering/tags.md#managing-tags-in-different-languages), a tag `title`can be defined in different languages. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft hat das Format `jcr:title.<locale>`, z.B. `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und &quot;_&quot;anstelle von &quot;-&quot;verwenden. Beispiel: `de_ch`.
 
 When the **Animals** tag is added to the **Products** page, the value `stockphotography:animals` is added to the property `cq:tags` of the node /content/geometrixx/en/products/jcr:content. Die Übersetzung wird vom Tag-Knoten referenziert.
 
@@ -187,7 +190,7 @@ For tagging, localization depends on the context as tag `titles`can be displayed
 
 Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (Finnisch) im Dialogfeld **Tag bearbeiten** hinzufügen:
 
-1. In **CRXDE**, edit the multi-value property `languages` of the node `/etc/tags`.
+1. In **CRXDE**, edit the multi-value property `languages` of the node `/content/cq:tags`.
 
 1. Fügen Sie `fi_fi` hinzu, das das finnische Gebietsschema darstellt, und speichern Sie die Änderungen.
 
