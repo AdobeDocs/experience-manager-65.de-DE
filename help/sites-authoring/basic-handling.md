@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69e9b7499c1babcf7a6da62b8728bba7f127b4f9
+source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+workflow-type: tm+mt
+source-wordcount: '3010'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 69e9b7499c1babcf7a6da62b8728bba7f127b4f9
 
 >[!NOTE]
 >
->* Diese Seite soll einen Überblick über die grundlegende Handhabung der AEM-Autorenumgebung geben. Als Grundlage wird die **Websites-Konsole** verwendet.
+>* Diese Seite soll einen Überblick über die grundlegende Handhabung der AEM-Autorenumgebung geben. Als Grundlage wird die **Sites-Konsole** verwendet.
    >
    >
 * Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
@@ -55,7 +58,7 @@ Wenn ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zu
 
 ![bh-02](assets/bh-02.png)
 
-Klicken oder tippen Sie auf **Weiter**, um zur nächsten Seite der Übersicht zu wechseln.  Click or tap **Close** or click or tap outside of the overview dialog to close.
+Klicken oder tippen Sie auf **Weiter**, um zur nächsten Seite der Übersicht zu wechseln. Klicken bzw. tippen Sie auf **Schließen** oder klicken Sie außerhalb des Überblicksfensters, um es zu schließen.
 
 Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, sofern Sie nicht die Option **Nicht mehr anzeigen** aktivieren.
 
@@ -63,7 +66,7 @@ Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestarte
 
 Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dieses Navigationsfenster wird als Vollbild-Dropdown angezeigt, wenn Sie auf den AEM-Link in der oberen linken Bildschirmecke klicken oder tippen.
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
 ![bh-03](assets/bh-03.png)
 
@@ -78,13 +81,19 @@ Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
-### Navigationsfenster {#navigation-panel}
+### Navigationsfenster   {#navigation-panel}
 
-Das Navigationsfenster:
+Das Navigationsfenster bietet Zugriff auf die AEM-Konsolen:
 
 ![bh-01](assets/bh-01.png)
 
-Aus der Navigation sind die folgenden Konsolen verfügbar:
+Der Titel der Browser-Registerkarte wird aktualisiert, um Ihren Standort während der Navigation durch die Konsolen und Inhalte widerzuspiegeln.
+
+>[!NOTE]
+>
+>Der Registerkartentitel spiegelt den Speicherort ab [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) wider.
+
+Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 
 <table>
  <tbody>
@@ -113,7 +122,7 @@ Aus der Navigation sind die folgenden Konsolen verfügbar:
    <td>In dieser Konsole können Sie <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen, verwalten und verarbeiten.</td>
   </tr>
   <tr>
-   <td>Personalisierung </td>
+   <td>Personalisierung   </td>
    <td>Diese Konsole bietet ein <a href="/help/sites-authoring/personalization.md">Framework aus Tools für die Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse</a>.</td>
   </tr>
   <tr>
@@ -122,7 +131,7 @@ Aus der Navigation sind die folgenden Konsolen verfügbar:
   </tr>
   <tr>
    <td>Screens</td>
-   <td>Mit <a href="https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens </a>können Sie alle an Kunden gerichteten Bildschirme aller Größenordnungen und an jedem Ort verwalten.</td>
+   <td>Mit <a href="https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens </a>können Sie alle an Kunden gerichteten Bildschirme aller Größenordnungen und an jedem Ort verwalten.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -145,7 +154,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
 * [Globale Navigation](#navigatingconsolesandtools)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   Wählen Sie den Link **Adobe Experience Manager** aus, um zwischen Konsolen zu navigieren.
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
@@ -153,7 +162,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
-   You can also use the [shortcut key](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
 * [Lösungen](https://www.adobe.com/experience-cloud.html)
 
@@ -201,7 +210,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    Diese Option ist nur in der Listenansicht verfügbar. See [list view](#list-view) for more information.
 
-* **Schaltfläche &quot;Erstellen** &quot;
+* Schaltfläche **Erstellen**
 
    ![screen_shot_2018-03-23at104301](assets/screen_shot_2018-03-23at104301.png)
 
@@ -217,9 +226,21 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![bh-09](assets/bh-09.png)
 
+* Tastaturnavigation
+
+   Sie können auf einer Website nur mit der Tastatur navigieren. Dabei wird die standardmäßige Browserfunktionalität des **TAB** -Schlüssels (oder **OPT+TAB**) verwendet, um Sie zwischen fokussierbaren ** Elementen auf der Seite zu bewegen.
+
+   In der **Sites** -Konsole gibt es die hinzugefügte Option zum **Überspringen zum Hauptinhalt**. Dies wird sichtbar, wenn Sie die Kopfzeilenoptionen *durch Drücken* der Tabulatortaste durchlaufen und die Navigation beschleunigen, indem Sie die Standardelemente in der Produktsymbolleiste überspringen und Sie direkt zum Hauptinhalt weiterleiten können.
+
+   ![bh-30](assets/bh-30.png)
+
+   >[!NOTE]
+   >
+   >Der **Befehl &quot;Zu Hauptinhalt** überspringen&quot;ist ab [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) verfügbar.
+
 ## Aufrufen der Hilfe {#accessing-help}
 
-Ihnen stehen verschiedene Hilfe-Ressourcen zur Verfügung:
+Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Konsolensymbolleiste**
 
@@ -231,7 +252,7 @@ Ihnen stehen verschiedene Hilfe-Ressourcen zur Verfügung:
 
    Beim erstmaligen Navigieren im System [wird die AEM-Navigation über eine Reihe von Folien vorgestellt](/help/sites-authoring/basic-handling.md#product-navigation).
 
-* **Seiten-Editor**
+* **Seiteneditor**
 
    Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiteneditor durch eine Reihe von Folien vorgestellt.
 
@@ -252,7 +273,7 @@ Dokumentation für Web Experience Management anzeigen
 Entwicklungsressourcen und Downloads
    >[!NOTE]
    >
-   >Sie können jederzeit über den Hotkey `?` (Fragezeichen) in einer Konsole auf eine Übersicht der verfügbaren Tastenkombinationen zugreifen.
+   >Sie können jederzeit über den Hotkey `?` (Fragezeichen) in einer Konsole auf eine Übersicht der verfügbaren Tastaturbefehle zugreifen.
    >
    >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
    >
@@ -264,15 +285,15 @@ Entwicklungsressourcen und Downloads
 
 Bei der Auswahl einer Ressource (z. B. einer Seite oder eines Assets) werden in der Symbolleiste verschiedene durch Symbole und Text gekennzeichnete Aktionen angezeigt. Diese Aktionen sind abhängig von:
 
-* der aktuellen Konsole
-* dem aktuellen Kontext
+* der aktuellen Konsole.
+* dem aktuellen Kontext.
 * ob Sie sich im [Auswahlmodus](#navigatingandselectionmode) befinden
 
 In der Symbolleiste werden immer nur jene Aktionen angezeigt, die Sie bei den jeweiligen Elementen durchführen können.
 
-How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depends on the view.
+Wie Sie [eine Ressource auswählen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), hängt von der Ansicht ab.
 
-Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fallwerden weitere Optionen angezeigt. Wenn Sie auf die drei Punkte (**...**) klicken/tippen, wird eine Dropdown-Auswahl mit allen restlichen Aktionen geöffnet. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
+Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die Auslassungspunkte (drei Punkte bzw. **…**) wird eine Dropdown-Auswahl geöffnet, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
 
 ![bh-12](assets/bh-12.png)
 
@@ -280,7 +301,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 >
 >Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen {#quick-actions}
+## Schnellaktionen   {#quick-actions}
 
 In der [Kartenansicht](#cardviewquickactions) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -303,7 +324,7 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 >
 >Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Darstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Darstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen {#selecting-resources}
+### Auswählen von Ressourcen   {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -331,13 +352,13 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td>
    <td>
     <ul>
-     <li><br /> Desktop: Bewegen Sie den Mauszeiger über und verwenden Sie dann die Schnellaktion mit dem Häkchen</li>
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li>
     </ul> </td>
    <td>
     <ul>
-     <li><br /> Desktop:Klicken Sie auf die Karte</li>
-     <li><br /> Mobilgerät:Tippen Sie auf die Karte</li>
+     <li>Desktop:<br /> Click the card</li>
+     <li>Mobile device:<br /> Tap the card</li>
     </ul> </td>
   </tr>
   <tr>
@@ -362,7 +383,7 @@ Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen r
 
 * In der **Kartenansicht** sind alle Karten ausgewählt.
 * In der **Listenansicht** sind alle Elemente in der Liste ausgewählt.
-* In der **Spaltenansicht** sind alle Elemente in der Spalte ganz links ausgewählt.  
+* In der **Spaltenansicht** sind alle Elemente in der Spalte ganz links ausgewählt.
 
 ![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
 
@@ -388,7 +409,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 1. Nach Auswahl einer Ressource wird die obere Kopfzeile von der [Aktionssymbolleiste](#actionstoolbar) überdeckt, die Zugriff auf die Aktionen bietet, die für die ausgewählte Ressource verfügbar sind.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   Um den Auswahlmodus zu beenden, wählen Sie das **X** in der rechten oberen Ecke oder drücken Sie die **Esc-Taste**.
 
 ### Spaltenansicht {#column-view}
 
@@ -430,10 +451,10 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
 * In der Kartenansicht werden Informationskarten für jedes Element auf der aktuellen Ebene angezeigt. Diese bieten u. a. folgende Informationen:
 
-   * eine visuelle Darstellung des Seiteninhalts
-   * den Seitentitel
-   * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
-   * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
+   * eine visuelle Darstellung des Seiteninhalts.
+   * den Seitentitel.
+   * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht).
+   * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist.
    * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen (sofern zutreffend)
 
       * Markierungen, die auf erforderliche Aktionen hinweisen, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) verknüpft werden.
@@ -470,20 +491,20 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * **Geändert** – Datum der letzten Änderung und der Benutzer, der die Änderung vorgenommen hat
    * **Veröffentlicht** – Veröffentlichungsstatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
-   * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
+   * **Workflow** - Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Timeline öffnen.
 
    * **Seitenanalyse**
    * **Individuelle Besucher**
    * **Zeit auf Seite**
    ![bh-21](assets/bh-21.png)
 
-   By default the **Name** column is shown, which makes up part of the URL for the page. Unter Umständen muss der Autor auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. In diesem Fall ist die Anzeige des Seitennamens (der sich normalerweise nicht ändert) äußerst hilfreich, wenn der Autor die Sprache der Seite nicht kennt.
+   Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. Unter Umständen muss der Autor auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. In diesem Fall ist die Anzeige des Seitennamens (der sich normalerweise nicht ändert) äußerst hilfreich, wenn der Autor die Sprache der Seite nicht kennt.
 
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
    ![bh-22](assets/bh-22.png)
 
@@ -499,7 +520,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
 ## Schienenauswahl {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole stehen unterschiedliche Optionen zur Verfügung.
 
 ![bh-25](assets/bh-25.png)
 
@@ -525,7 +546,7 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 >
 >Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md).
 
-### Zeitleiste {#timeline}
+### Timeline {#timeline}
 
 Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Timeline-Spalte über die Schienenauswahl:
 
@@ -537,7 +558,7 @@ Die Timeline-Spalte bietet folgende Möglichkeiten:
 
       * [Kommentare](#timelineaddingandviewingcomments)
       * Anmerkungen
-      * Aktivitäten
+      * Aktivitäten 
       * [Launches](/help/sites-authoring/launches.md)
       * [Versionen](/help/sites-authoring/working-with-page-versions.md)
       * [Workflows](/help/sites-authoring/workflows-applying.md)
@@ -546,14 +567,14 @@ Die Timeline-Spalte bietet folgende Möglichkeiten:
       * Alle anzeigen
 
 
-* [Hinzufügen/Anzeigen von Kommentaren](#timelineaddingandviewingcomments) zum gewählten Element Das Feld **Kommentar** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar eingeben (und anschließend die Eingabetaste drücken), wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt wird.
+* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar eingeben (und anschließend die Eingabetaste drücken), wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt wird.
 
 * Einige Konsolen weisen weitere Funktionalitäten auf. So können Sie z. B. in der Sites-Konsole 
 
-   * [eine Version speichern](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui)
+   * [eine Version speichern](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [einen Workflow starten](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-These options accessible via the chevron next to the **Comment** field.
+Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ![bh-27](assets/bh-27.png)
 
@@ -564,7 +585,7 @@ These options accessible via the chevron next to the **Comment** field.
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Sprachkopien](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
-* Inhaltreferenzen:
+* Inhaltsverweise:
 
    * Links von anderen Seiten zur ausgewählten Seite
    * Inhalt, der von ausgewählten Seiten durch die Referenzkomponente geliehen oder verliehen wird
@@ -573,7 +594,7 @@ These options accessible via the chevron next to the **Comment** field.
 
 ### Filter {#filter}
 
-Hierdurch wird ein dem [Suchbereich](/help/sites-authoring/search.md) ähnliches Fenster mit bereits entsprechend eingestellten Ortsfiltern geöffnet. So können Sie weiter den für die Anzeige gewünschten Inhalt filtern.
+Hierdurch wird ein dem [Suchbereich](/help/sites-authoring/search.md) ähnliches Fenster mit bereits entsprechend eingestellten Ortsfiltern geöffnet. So können Sie den für die Anzeige gewünschten Inhalt weiter filtern.
 
 ![bh-29](assets/bh-29.png)
 
