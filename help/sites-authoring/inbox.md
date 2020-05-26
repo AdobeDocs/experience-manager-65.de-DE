@@ -1,6 +1,6 @@
 ---
-title: Ihr Posteingang
-seo-title: Ihr Posteingang
+title: 'Ihr Posteingang  '
+seo-title: 'Ihr Posteingang  '
 description: Verwalten Ihrer Aufgaben mit dem Posteingang
 seo-description: Verwalten Ihrer Aufgaben mit dem Posteingang
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,12 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 83%
 
 ---
 
 
-# Ihr Posteingang{#your-inbox}
+# Ihr Posteingang  {#your-inbox}
 
 Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (darunter auch aus Workflows und Projekten), z. B. Benachrichtigungen bezüglich:
 
@@ -69,13 +72,13 @@ AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrato
 * Aggregierte Sammlung von Nutzungsstatistiken aktivieren
 * [HTTPS konfigurieren](/help/sites-administering/ssl-by-default.md)
 
-## Öffnen des Posteingangs {#opening-the-inbox}
+## Öffnen des Posteingangs   {#opening-the-inbox}
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 1. Klicken/tippen Sie auf die Anzeige in der Symbolleiste.
 
-1. Wählen Sie **Alle anzeigen**. Der **AEM-Posteingang** wird geöffnet. Der Posteingang zeigt Elemente aus Workflows, Projekten und Aufgaben an.
+1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
@@ -84,7 +87,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 >[!NOTE]
 >
->Der Posteingang dient als Konsole. Verwenden Sie daher [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation) oder [Suche](/help/sites-authoring/search.md), um nach Beendigung zu einem anderen Ort zu navigieren.
+>Der Posteingang fungiert als Konsole. Verwenden Sie daher die [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation) oder die [Suche](/help/sites-authoring/search.md), um zu einer anderen Position zu navigieren, wenn Sie fertig sind.
 
 ### Posteingang – Listenansicht {#inbox-list-view}
 
@@ -154,22 +157,27 @@ Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe &qu
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>Es ist zwar möglich, mehr als ein Element auszuwählen, es können jedoch nur jeweils Aktionen für ein Element durchgeführt werden.
+
+
 1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
 
    ![wf-84](assets/wf-84.png)
 
    Die entsprechend dem ausgewählten Element verfügbaren Aktionen können Folgendes umfassen:
 
-   * **Fertig stellen**, z. B. eine Aufgabe oder ein Workflow-Element
+   * **Abschließen** einer Aktion; z. B. eine Aufgabe oder ein Workflow-Element.
    * **Neu zuweisen**/**Delegieren** eines Elements
    * **Öffnen** eines Elements; je nach Elementtyp bewirkt diese Aktion Folgendes:
 
       * Anzeigen der Eigenschaften des Elements
       * Öffnen des entsprechenden Dashboards oder Assistenten für weitere Aktionen
       * Aufrufen einer zugehörigen Dokumentation
-   * **Schritt zurück** zu einem vorherigen Schritt
-   * Anzeigen der Nutzlast eines Workflows
-   * Erstellen eines Projekts auf Basis des Elements
+   * **Schritt zurück** zu einem vorherigen Schritt.
+   * Anzeigen der Payload eines Workflows.
+   * Erstellen eines Projekts auf Basis des Elements.
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter:
@@ -200,7 +208,7 @@ Sie können vom Posteingang aus Aufgaben erstellen:
 1. Klicken Sie auf **Erstellen** und anschließend auf **Aufgabe**.
 1. Füllen Sie die Felder in den Registerkarten **Allgemein** und **Erweitert** aus. Obligatorisch ist hierbei nur der **Titel**, alle anderen sind optional:
 
-   * **Einfach**:
+   * **Allgemein**:
 
       * **Titel**
       * **Projekt**
@@ -227,7 +235,7 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
    >
    >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
@@ -235,7 +243,7 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
 1. Geben Sie die gewünschten Eigenschaften an:
 
-   * **Einfach**
+   * **Allgemein**
 
       * **Titel**
       * **Beschreibung**
