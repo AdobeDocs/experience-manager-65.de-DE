@@ -1,25 +1,28 @@
 ---
 title: Überlegungen und Anforderungen zum Netzwerk
-description: Enthält Netzwerküberlegungen für die Implementierung von AEM Assets.
+description: Erläutert Netzwerküberlegungen beim Entwerfen einer Adobe Experience Manager-Asset-Bereitstellung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '1026'
+ht-degree: 75%
 
 ---
 
 
-# Assets network considerations {#assets-network-considerations}
+# Überlegungen zum Assets-Netzwerk {#assets-network-considerations}
 
-Das Verständnis Ihres Netzwerks ist ebenso wichtig wie das Verständnis von Adobe Experience Manager (AEM). Das Netzwerk kann Uploads, Downloads und Benutzererlebnisse beeinflussen. Eine grafische Darstellung Ihrer Netzwerktopologie hilft bei der Erkennung von Engpässen und unzureichend optimierten Bereichen im Netzwerk, die Sie beseitigen bzw. korrigieren müssen, um die Netzwerkleistung und das Benutzererlebnis zu verbessern.
+Das Verstehen Ihres Netzwerks ist ebenso wichtig wie das Verstehen der Adobe Experience Manager-Assets. Das Netzwerk kann Uploads, Downloads und Benutzererlebnisse beeinflussen. Eine grafische Darstellung Ihrer Netzwerktopologie hilft bei der Erkennung von Engpässen und unzureichend optimierten Bereichen im Netzwerk, die Sie beseitigen bzw. korrigieren müssen, um die Netzwerkleistung und das Benutzererlebnis zu verbessern.
 
 Stellen Sie sicher, dass Sie Folgendes in Ihre Netzwerkgrafik einbeziehen:
 
 * Möglichkeit der Verbindung des Client-Geräts (z. B. Computer, Mobilgerät oder Tablet) mit dem Netzwerk
 * Topologie des Unternehmensnetzwerks
-* Uplink zum Internet vom Unternehmensnetzwerk und von der AEM-Umgebung
-* Topologie der AEM-Umgebung
-* Definition gleichzeitiger Nutzer der AEM-Netzwerkschnittstelle
-* Definierte Workflows der AEM-Instanz
+* Internetverbindung über das Unternehmensnetzwerk und die Experience Manager-Umgebung
+* Topologie der Experience Manager-Umgebung
+* Definieren von gleichzeitigen Benutzern der Experience Manager-Netzwerkschnittstelle
+* Definierte Workflows der Experience Manager-Instanz
 
 ## Möglichkeit der Verbindung des Client-Geräts mit dem Unternehmensnetzwerk {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -37,19 +40,19 @@ Unten links im Diagramm sind zwei Geräte dargestellt, die mit dem Unternehmensn
 
 Der rechts gezeigte Computer hat einen begrenzten Upstream zum Unternehmensnetzwerk über eine VPN-Verbindung mit einer Geschwindigkeit von 1 MBit/s. Das Benutzererlebnis bei der 1 MBit/s schnellen Verbindung unterscheidet sich erheblich vom Benutzererlebnis bei der 1 GBit/s schnellen Verbindung. Je nach Größe der Assets, mit denen Benutzer interagieren, kann ihr VPN-Uplink für die Aufgabe nicht ausreichend sein.
 
-## Topologie des Unternehmensnetzwerks {#topology-of-the-corporate-network}
+## Topologie des Unternehmensnetzwerks  {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
 Das Diagramm zeigt höhere Uplinkgeschwindigkeiten innerhalb des Unternehmensnetzwerks, als im Allgemeinen üblich sind. Diese Leitungen sind freigegebene Ressourcen. Wenn erwartet wird, dass der freigegebene Switch 50 Clients verarbeitet, kann es sich dabei möglicherweise um einen Choke-Point handeln. Im anfangs gezeigten Diagramm nutzen nur zwei Computer die betreffende Verbindung.
 
-## Uplink zum Internet vom Unternehmensnetzwerk und von der AEM-Umgebung {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uplink to the internet from the corporate network and Experience Manager environment {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 Es ist wichtig, unbekannte Faktoren des Internets und der VPC-Verbindung zu berücksichtigen, da die Bandbreite im Internet durch Spitzenlasten oder umfangreiche Anbieterausfälle verringert werden kann. Im Allgemeinen ist eine Internetverbindung zuverlässig. Manchmal kann es allerdings zu Engpässen kommen.
 
-Am Uplink von einem Unternehmensnetzwerk zum Internet können andere Dienste die Bandbreite nutzen. Es ist wichtig, zu verstehen, wie viel Bandbreite für AEM Assets bereitgestellt oder priorisiert werden kann. Beispielsweise können Sie bei einer 1 GBit/s schnellen Verbindung mit 80 % Auslastung nur maximal 20 % der Bandbreite für AEM Assets zuteilen.
+Am Uplink von einem Unternehmensnetzwerk zum Internet können andere Dienste die Bandbreite nutzen. Es ist wichtig, zu verstehen, wie viel Bandbreite für Assets bereitgestellt oder priorisiert werden kann. Wenn beispielsweise ein Link mit 1 Gbit/s bereits zu 80 % genutzt wird, können Sie für Experience Manager Assets nur maximal 20 % der Bandbreite zuweisen.
 
 Unternehmens-Firewalls und Proxys können Bandbreite zudem auf vielfältige Weise anpassen. Diese Geräteart kann Bandbreite mithilfe der Dienstgüte, der Bandbreitenbeschränkungen pro Benutzer oder der Bitratenbeschränkungen pro Host priorisieren. Dies sind wichtige Engpässe, die zu untersuchen sind, da sie das Assets-Benutzererlebnis erheblich beeinträchtigen können.
 
@@ -59,21 +62,21 @@ Dies ist der kleinste kundenorientierte Choke-Point. Sie können jedoch die für
 
 Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptionellen, 10 MBit/s schnellen Kanal gemeinsam nutzen. Je nach Größe der genutzten Assets reicht dies möglicherweise aus, um die Erwartungen der Benutzer zu erfüllen.
 
-## Topologie der AEM-Umgebung {#topology-of-the-aem-environment}
+## Topologie der Experience Manager-Umgebung {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Das Entwerfen der Topologie der AEM-Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration sowie der Art der Netzwerkverbindung innerhalb der Benutzerumgebung.
+Die Erstellung der Topologie der Experience Manager-Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration und der Netzwerkverbindung innerhalb der Umgebung.
 
-Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen binären S3-Store und dynamische Medien.
+Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen S3-Binärspeicher und dynamische Medien, die konfiguriert sind.
 
-Der Dispatcher nutzt seine 100 MBit/s schnelle Verbindung gemeinsam mit zwei Entitäten, der Außenwelt und der AEM-Instanz. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
+Der Dispatcher weist seine 100-Mbit/s-Verbindung mit zwei Entitäten, der Außenwelt und der Experience Manager-Instanz, auf. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
 
-Die AEM-Instanz nutzt ihre 1 GBit/s schnelle Verbindung gemeinsam mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
+Die Experience Manager-Instanz verfügt über eine 1 Gbit/s-Verbindung mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
 
-Wenn Sie das Netzwerk vom Client-Gerät zur AEM-Instanz überprüfen, scheint der kleinste Choke-Point die 10-Mbit-Firewall-Drosselklappe des Unternehmens zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
+Bei der Überprüfung des Netzwerks vom Client-Gerät zur Experience Manager-Instanz scheint der kleinste Choke-Point die 10-Mbit-Firewall-Drosselklappe zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
 
-## Definierte Workflows der AEM-Instanz{#defined-workflows-of-the-aem-instance} 
+## Definierte Workflows der Experience Manager-Instanz {#defined-workflows-of-the-aem-instance}
 
 Bei Überlegungen zur Netzwerkleistung ist es möglicherweise wichtig, die Workflows und die im System stattfindenden Veröffentlichungen zu berücksichtigen. Außerdem beanspruchen S3 oder Speicher, der im Netzwerk zugeteilt ist und von Ihnen verwendet wird, und I/O-Anforderungen Netzwerkbandbreite. Daher wird die Leistung selbst in einem voll optimierten Netzwerk durch die Anzahl der Datenträger-I/O beschränkt.
 
@@ -89,7 +92,7 @@ Es folgen einige Punkte, die zu berücksichtigen sind:
 
 * XMP-Metadaten lesen/schreiben-back
 * Automatische Aktivierung und Replikation
-* Wasserzeichen
+* Wasserzeichen  
 * Unter-Asset-Aufnahme/Seitenextraktion
 * Überlappende Workflows
 
