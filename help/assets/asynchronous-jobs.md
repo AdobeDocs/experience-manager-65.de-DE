@@ -1,23 +1,26 @@
 ---
 title: Asynchrone Vorgänge
-description: AEM Assets optimiert die Leistung, durch das asynchrone Ausführen ressourcenintensiver Vorgänge.
+description: Experience Manager Assets optimiert die Leistung, indem einige ressourcenintensive Aufgaben asynchron abgeschlossen werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 71%
 
 ---
 
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Um negative Auswirkungen auf die Leistung einzuschränken, werden bestimmte lang laufende und ressourcenintensive Asset-Vorgänge in Adobe Experience Manager (AEM) Assets asynchron verarbeitet.
+Um die Leistungsbeeinträchtigung zu verringern, verarbeitet Adobe Experience Manager Assets bestimmte langfristige und ressourcenintensive Asset-Vorgänge asynchron.
 
 Zu diesen Vorgängen gehören u. a.:
 
 * Löschen vieler Assets
 * Verschieben vieler Assets oder Assets mit vielen Verweisen
 * Exportieren/Importieren von Asset-Metadaten in großen Mengen.
-* Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, aus einer Remote-AEM-Bereitstellung.
+* Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, aus einer Remote Experience Manager-Bereitstellung.
 
 Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
 
@@ -25,11 +28,11 @@ Sie können den Status asynchroner Aufträge auf der Seite **[!UICONTROL Async-A
 
 >[!NOTE]
 >
->Standardmäßig werden Aufträge in AEM Assets parallel ausgeführt. Wenn N die Anzahl der CPU-Kerne ist, können standardmäßig N/2 Aufträge parallel ausgeführt werden. Um benutzerdefinierte Einstellungen für die Auftragswarteschlange festzulegen, passen Sie die Konfiguration **[!UICONTROL Async Operation Default Queue]** über die Web-Konsole an. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Standardmäßig werden Aufträge in  Assets parallel ausgeführt. Wenn N die Anzahl der CPU-Kerne ist, können standardmäßig N/2 Aufträge parallel ausgeführt werden. Um benutzerdefinierte Einstellungen für die Auftragswarteschlange festzulegen, passen Sie die Konfiguration **[!UICONTROL Async Operation Default Queue]** über die Web-Konsole an. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Jedes Mal, wenn AEM Assets einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem Posteingang sowie per E-Mail.
+Jedes Mal, wenn  Assets einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung in Ihrem Posteingang sowie per E-Mail.
 
 Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Async-Auftragsstatus]**.
 
@@ -69,7 +72,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
 ## Bereinigen von abgeschlossenen Aufträgen {#purging-completed-jobs}
 
-AEM Assets führt jeden Tag um 1:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
+Experience Manager Assets führt jeden Tag um 1:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als ein Tag sind.
 
 Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem können Sie anpassen, wie lange die Details zu abgeschlossenen Aufträgen gespeichert werden sollen, bevor sie gelöscht werden. Darüber hinaus können Sie die maximale Anzahl abgeschlossener Aufträge konfigurieren, deren Details zu einem beliebigen Zeitpunkt gespeichert werden.
 
@@ -83,7 +86,7 @@ Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem kön
 
 ## Configure thresholds for asynchronous processing {#configuring-thresholds-for-asynchronous-processing}
 
-Sie können den Schwellenwert für Assets oder Verweise festlegen, damit AEM Assets einen bestimmten Vorgang asynchron verarbeitet.
+Sie können den Schwellenwert für Assets oder Verweise festlegen, damit  Assets einen bestimmten Vorgang asynchron verarbeitet.
 
 ### Configure thresholds for asynchronous delete operations {#configuring-thresholds-for-asynchronous-delete-operations}
 
