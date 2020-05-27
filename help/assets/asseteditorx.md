@@ -3,10 +3,10 @@ title: Asset-Editor erweitern
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 94%
+source-wordcount: '695'
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein
 
 Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wird in [Erstellen und Konfigurieren einer Asset-Editor-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page) behandelt.
 
-Zusätzlich zur Verwendung von vorhandenen Bearbeiterkomponenten können Adobe Experience Manager (AEM)-Entwickler ihre eigenen Komponenten erstellen.
+Adobe Experience Manager-Entwickler können nicht nur bereits vorhandene Editorkomponenten verwenden, sondern auch eigene Komponenten erstellen.
 
 ## Create an Asset Editor template {#creating-an-asset-editor-template}
 
@@ -29,9 +29,9 @@ Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
 ### Clientlib konfigurieren {#configuring-clientlib}
 
-AEM Assets-Komponenten verwenden eine Erweiterung der WCM-clientlib zur Bearbeitung. Die clientlibs werden normalerweise in `init.jsp` geladen.
+ Assets-Komponenten verwenden eine Erweiterung der WCM-clientlib zur Bearbeitung. Die clientlibs werden normalerweise in `init.jsp` geladen.
 
-Anders als beim Laden der Standard-clientlib (in `init.jsp` des Kerns) muss eine AEM Assets-Vorlage Folgendes enthalten:
+Anders als beim Laden der Standard-clientlib (in `init.jsp` des Kerns) muss eine Assets-Vorlage Folgendes enthalten:
 
 * Die Vorlage muss die clientlib `cq.dam.edit` (anstelle von `cq.wcm.edit`) enthalten.
 
@@ -41,7 +41,7 @@ In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorha
 
 ### JS-Aktionen konfigurieren {#configuring-js-actions}
 
-Einige der AEM Assets-Komponenten erfordern, dass JS-Funktionen in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
+Einige der  Assets-Komponenten erfordern, dass JS-Funktionen in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,7 +51,7 @@ Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/compo
 
 ### Additional style sheets {#additional-style-sheets}
 
-Einige der Komponenten von AEM Assets verwenden die AEM-Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Einige der Assets-Komponenten verwenden die Widgets-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
