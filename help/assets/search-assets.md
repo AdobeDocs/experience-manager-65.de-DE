@@ -4,10 +4,10 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '5869'
-ht-degree: 57%
+source-wordcount: '5863'
+ht-degree: 56%
 
 ---
 
@@ -162,7 +162,7 @@ Sie können nach Assets suchen, die auf exakten Werten bestimmter Metadatenfelde
 | Ersteller | creator:John |
 | Standort | location:NA |
 | Beschreibung | description:&quot;Sample Image&quot; |
-| Erstellungswerkzeug | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Erstellungswerkzeug | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
 | Urheberrechtsbesitzer | copyrightowner:&quot;Adobe Systems&quot; |
 | Mitarbeiter | contributor:John |
 | Nutzungsbedingungen | usageterms:„CopyRights Reserved“ |
@@ -200,7 +200,7 @@ Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen
 
 ### Nach Assets über das Bedienfeld „Adobe Asset Link“ suchen {#aal}
 
-Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Kreative können mit dem In-App-Bedienfeld in folgenden Creative Cloud-Programmen Assets nahtlos suchen, durchsuchen sowie ein- und auschecken: Photoshop, Illustrator und InDesign. Asset Link ermöglicht es Benutzern auch, nach visuell ähnlichen Ergebnissen zu suchen. Die Ergebnisse der visuellen Suchanzeige basieren auf den maschinellen Lernalgorithmen von Adobe Sensei und helfen Benutzern dabei, optisch ähnliche Bilder zu finden. Siehe [Assets suchen und durchsuchen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mit Adobe Asset Link.
+Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. Asset Link ermöglicht es Benutzern auch, nach visuell ähnlichen Ergebnissen zu suchen. Die Ergebnisse der visuellen Suchanzeige basieren auf den maschinellen Lernalgorithmen von Adobe Sensei und helfen Benutzern dabei, optisch ähnliche Bilder zu finden. Siehe [Assets suchen und durchsuchen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mit Adobe Asset Link.
 
 ### Search assets in [!DNL Experience Manager] desktop app {#desktopapp}
 
@@ -443,8 +443,8 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
-| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
-| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu beschränken. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
+| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nachdem die Metadaten aktualisiert wurden, muss der Asset-Metadatenstatus neu deklariert werden. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
+| Zu viele Suchergebnisse | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht zusammenhängende oder teilweise zugehörige Suchergebnisse | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
 | Keine Vorschläge zum automatischen Ausfüllen für Assets | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | [!DNL Assets] erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
 | Keine Suchergebnisse | <ul><li>Es sind keine Assets vorhanden, die Ihrer Abfrage entsprechen.</li><li>Vor der Abfrage der Suche wurde ein Leerzeichen hinzugefügt.</li><li>Ein nicht unterstütztes Metadatenfeld enthält den Suchbegriff, nach dem Sie suchen.</li><li>Die Ein- und Ausschaltzeit wurde für ein Asset konfiguriert und die Suche wurde während der Ausschaltzeit des Assets durchgeführt.</li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie (intelligente) Tagging verwenden, um die Suchergebnisse zu verbessern.</li><li>Dabei handelt es sich um eine [bekannte Einschränkung](#limitations).</li><li>Nicht alle Metadatenfelder werden bei Suchvorgängen berücksichtigt. Siehe [Suchbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Ein- und Ausschaltzeiten für die erforderlichen Assets.</li></ul> |
