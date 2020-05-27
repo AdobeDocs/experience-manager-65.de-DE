@@ -1,23 +1,23 @@
 ---
 title: Berichte zu Ihren digitalen Assets
-description: Verstehen Sie Berichte zu Ihren Assets in AEM Assets, die Ihnen beim Verständnis der Nutzung, Aktivität und Freigabe Ihrer digitalen Assets helfen.
+description: Verstehen Sie Berichte zu Ihren Assets in Adobe Experience Manager Assets, die Ihnen beim Verständnis der Nutzung, Aktivität und Freigabe Ihrer digitalen Assets helfen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 70%
+source-wordcount: '976'
+ht-degree: 66%
 
 ---
 
 
 # Asset-Berichte     {#asset-reports}
 
-Asset-Berichte stellen ein wesentliches Tool für die Bewertung der Funktionalität Ihrer Bereitstellung von Adobe Experience Manager (AEM) Assets dar. Mit AEM Assets können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
+Asset Berichte ist ein wichtiges Tool zur Bewertung des Dienstprogramms Ihrer Adobe Experience Manager Assets-Bereitstellung. Mit Assets können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
 
-Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten, um festzustellen, wie gut AEM Assets innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
+Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten, um festzustellen, wie gut  Assets innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
-Das AEM Assets Berichte-Framework verwendet Sling-Aufträge, um Berichtanforderungen auf geordnete Weise asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
+Das Asset Berichte-Framework verwendet Sling-Aufträge, um Berichtanforderungen in einer geordneten Weise asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
@@ -25,7 +25,7 @@ Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und eine
 
 ## Erstellen von Berichten {#generate-reports}
 
-AEM Assets generiert die folgenden standardmäßigen Berichte für Sie:
+Experience Manager Assets generiert die folgenden Standardberichte:
 
 * Hochladen
 * Download
@@ -37,7 +37,7 @@ AEM Assets generiert die folgenden standardmäßigen Berichte für Sie:
 * Dateien
 * Link-Freigabe
 
-AEM-Administratoren können diese Berichte einfach für Ihre Implementierung erstellen und anpassen. Um einen Bericht zu erstellen, müssen Administratoren folgende Schritte durchführen:
+Experience Manager-Administratoren können diese Berichte ganz einfach für Ihre Implementierung erstellen und anpassen. Um einen Bericht zu erstellen, müssen Administratoren folgende Schritte durchführen:
 
 1. Klicken Sie in der Experience Manager-Oberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
    ![](assets/AssetsReportNavigation.png)
@@ -79,7 +79,7 @@ AEM-Administratoren können diese Berichte einfach für Ihre Implementierung ers
 
    ![](assets/files_report.png)
 
-   Der Bericht **[!UICONTROL Link-Freigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus AEM Assets freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
+   Der Bericht **[!UICONTROL Link-Freigabe]** zeigt URLs zu Assets an, die für externe Benutzer aus Assets freigegeben wurden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
