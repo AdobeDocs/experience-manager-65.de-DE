@@ -1,22 +1,25 @@
 ---
-title: AEM Assets-Startseitenerlebnis
-description: Passen Sie die AEM Assets-Startseite an, um Benutzern ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
+title: Adobe Experience Manager Assets Startseite Experience
+description: Personalisieren Sie die Experience Manager Assets-Startseite, um eine umfassende Bildschirmdarstellung zu erhalten, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 35%
 
 ---
 
 
-# AEM Assets-Startseitenerlebnis {#aem-assets-home-page-experience}
+# Adobe Experience Manager Assets Startseite Experience {#aem-assets-home-page-experience}
 
-Personalisieren Sie die Asset-Startseite von Adobe Experience Manager (AEM), um einen umfassenden Bildschirm zu erhalten, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
+Personalisieren Sie die Adobe Experience Manager Assets-Startseite, um eine umfassende Bildschirmdarstellung zu erhalten, einschließlich einer Momentaufnahme der neuesten Aktivitäten rund um Assets.
 
-Die AEM Assets-Startseite bietet eine umfassende und personalisierte Benutzeroberfläche, die eine Momentaufnahme der letzten Aktivitäten enthält, z. B. der zuletzt angezeigten oder hochgeladenen Assets.
+Die Assets-Startseite bietet eine umfassende und personalisierte Benutzeroberfläche für den Begrüßungsbildschirm, die eine Momentaufnahme der letzten Aktivitäten enthält, z. B. Assets, die kürzlich angezeigt oder hochgeladen wurden.
 
 Die Startseite &quot;Assets&quot;ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um sie zu aktivieren:
 
-1. Öffnen Sie AEM Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Öffnen Sie Experience Manager Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Day CQ DAM Event Recorder]** service.
 1. Select the **[!UICONTROL Enable this service]** to enable activity recording.
 
@@ -66,7 +69,7 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 
 **Zuletzt**: Das **[!UICONTROL kürzlich angezeigte]** Widget unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten des angemeldeten Benutzers an, einschließlich Ordner, Sammlungen und Projekte.
 
-**Discover**: Das **[!UICONTROL neue]** Widget unter diesem Abschnitt zeigt die Assets und Darstellungen an, die kürzlich in die AEM Assets-Instanz hochgeladen wurden.
+**Discover**: Das **[!UICONTROL neue]** Widget unter diesem Abschnitt zeigt die Assets und Darstellungen an, die kürzlich in die Assets-Instanz hochgeladen wurden.
 
 To enable purging of user activity data, enable the **[!UICONTROL DAM Event Purge Service]** from Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
@@ -74,7 +77,7 @@ Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in
 
 >[!NOTE]
 >
->Enabling the [!UICONTROL Day CQ DAM Event Recorder] and [!UICONTROL DAM Event Purge] services increases write operations to JCR and search indexing, which significantly increases the load on the AEM server. Die zusätzliche Last auf dem AEM-Server kann dessen Leistung beeinträchtigen.
+>Enabling the [!UICONTROL Day CQ DAM Event Recorder] and [!UICONTROL DAM Event Purge] services increases write operations to JCR and search indexing, which significantly increases the load on the Experience Manager server. Die zusätzliche Belastung des Experience Manager-Servers kann sich auf seine Leistung auswirken.
 
 >[!CAUTION]
 >
