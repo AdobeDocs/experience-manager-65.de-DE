@@ -3,10 +3,10 @@ title: Erweiterung der Suchfunktion von Adobe Experience Manager Assets
 description: Erweitern Sie die Suchfunktionen von Adobe Experience Manager Assets über die Standardwerte hinaus.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 81%
+source-wordcount: '859'
+ht-degree: 75%
 
 ---
 
@@ -35,7 +35,7 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 
 ## Hinzufügen von Registerkarten {#adding-tabs}
 
-Sie können weitere Suchregisterkarten hinzufügen, indem Sie sie im AEM Assets-Admin konfigurieren. So erstellen Sie weitere Registerkarten:
+Sie können weitere Suchregisterkarten hinzufügen, indem Sie sie in der Admin-Oberfläche von Assets konfigurieren. So erstellen Sie weitere Registerkarten:
 
 1. Erstellen Sie die Ordnerstruktur `/apps/wcm/core/content/damadmin/tabs,`, falls noch nicht vorhanden, kopieren Sie den Knoten `tabs` aus `/libs/wcm/core/content/damadmin` und fügen Sie ihn ein.
 1. Erstellen und konfigurieren Sie die zweite Registerkarte wie gewünscht.
@@ -48,7 +48,7 @@ Sie können weitere Suchregisterkarten hinzufügen, indem Sie sie im AEM Assets-
 
 [!DNL Assets] umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann. Customizing an Asset Share in this way is covered in [create and configure an Asset Share page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-AEM-Entwickler können neben den bereits vorhandenen Eigenschaften auch eigene Prädikate erstellen. Hierfür können sie die [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) verwenden.
+In addition to using pre-existing predicates, Experience Manager developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -296,6 +296,6 @@ Die folgenden Prognosen sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 ## Suchergebnisse anpassen {#customizing-search-results}
 
-Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. AEM Assets umfasst einen Satz vordefinierter Linsen, mit denen Sie eine Asset-Freigaben-Seite anpassen können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
+Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. Experience Manager Assets verfügt über eine Reihe vordefinierter Objektive, die zum Anpassen einer Seite zum Teilen von Assets verwendet werden können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
-Zusätzlich zu den bereits vorhandenen Linsen können AEM-Entwickler auch eigene Linsen erstellen.
+Zusätzlich zur Verwendung bereits vorhandener Objektive können Experience Manager-Entwickler auch eigene Objektive erstellen.
