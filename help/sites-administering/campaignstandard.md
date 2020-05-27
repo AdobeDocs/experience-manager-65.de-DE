@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+source-git-commit: f951c195c581f770dcc87fdf4a89d40ee6dd9ec0
+workflow-type: tm+mt
+source-wordcount: '1322'
+ht-degree: 69%
 
 ---
 
@@ -27,7 +30,7 @@ Damit Sie beide Lösungen gleichzeitig verwenden können, müssen Sie sie zunäc
 
 Die Arbeit mit Adobe Campaign in AEM bietet die Möglichkeit, über Adobe Campaign E-Mails und Formulare zu versenden. Dies wird beschrieben in [Arbeiten mit Adobe Campaign](/help/sites-authoring/campaign.md).
 
-Des Weiteren sind unter Umständen die folgenden Themen relevant, wenn Sie AEM mit [Adobe Campaign](https://docs.campaign.adobe.com/doc/standard/en/home.html) integrieren:
+Des Weiteren sind unter Umständen die folgenden Themen relevant, wenn Sie AEM mit [Adobe Campaign](https://docs.campaign.adobe.com/doc/standard/de/home.html) integrieren:
 
 * [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md)
 * [Fehlerbehebung bei der Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
@@ -56,7 +59,7 @@ Stellen Sie im Voraus sicher, dass Sie über die folgenden Elemente verfügen:
 
 * [Eine AEM-Autoreninstanz](/help/sites-deploying/deploy.md#getting-started)
 * [Eine AEM-Veröffentlichungsinstanz](/help/sites-deploying/deploy.md#author-and-publish-installs)
-* [Eine Adobe Campaign-Instanz](https://docs.adobe.com/content/docs/en/campaign/ACS.html)
+* [Eine Adobe Campaign-Instanz](https://docs.adobe.com/content/docs/de/campaign/ACS.html)
 
 >[!CAUTION]
 >
@@ -112,7 +115,7 @@ Die AEM-Funktion ist in den E-Mail-Vorlagen von Adobe Campaign standardmäßig 
 Erstellen Sie AEM-spezifische E-Mail-Bereitstellungsvorlagen wie folgt:
 
 1. Wechseln Sie zu **Ressourcen** > **Vorlagen** > **Bereitstellungsvorlagen**.
-1. **Aktivieren Sie die Auswahl** , indem Sie auf das Kontrollkästchen in der Aktionsleiste klicken und die vorhandene Standardvorlage für **Standard-E-Mail-Nachrichten (E-Mail)** auswählen. Duplizieren Sie diese dann, indem Sie auf das Symbol **Kopieren** klicken und auf **Bestätigen** klicken.
+1. **Aktivieren Sie die Auswahl** , indem Sie auf das Kontrollkästchen in der Aktionsleiste klicken und die vorhandene Standardvorlage für **Standard-E-Mail-Nachrichten (E-Mail)** auswählen. Anschließend können Sie sie durch Klicken auf das Symbol **Kopieren** und Klicken auf **Bestätigen** Duplikat werden.
 1. Disable the selection mode by clicking the **x** and open the newly created **Copy of Standard email (mail)** template, then select **Edit properties** from the action bar of the template dashboard.
 
    Sie können die **Beschriftung** der Vorlage ändern.
@@ -140,13 +143,13 @@ Inhalte, die in der AEM-Autoreninstanz erstellt werden, werden zunächst an die 
 >[!NOTE]
 >
 >Möchten Sie nicht die Replikations-URL sondern stattdessen die öffentlich zugängliche URL verwenden, so haben Sie die Möglichkeit, die **Öffentliche URL** in der folgenden Konfigurationseinstellung in OSGi festzulegen (**Tools** > **Web-Konsole** > **OSGi-Konfiguration > AEM-Kampagnenintegration – Konfiguration**):
-**** Öffentliche URL: com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+**Öffentliche URL:** com.day.cq.mcm.Kampagne.impl.IntegrationConfigImpl#aem.mcm.Kampagne.publicUrl
 
 Dieser Schritt ist auch erforderlich, um bestimmte Autoreninstanzkonfigurationen in die Veröffentlichungsinstanz zu replizieren.
 
 So konfigurieren Sie die Replikation zwischen AEM-Instanzen:
 
-1. From the authoring instance, select **AEM logo**> **Tools **icon > **Deployment** > **Replication** > **Agents on author**, then click **Default Agent**.
+1. From the authoring instance, select **AEM logo**> **Tools** > **Deployment** > **Replication** > **Agents on author**, then click **Default Agent**.
 
    ![chlimage_1-126](assets/chlimage_1-126a.png)
 
@@ -170,7 +173,7 @@ Bevor Sie AEM und Adobe Campaign zusammen verwenden können, müssen Sie die be
 1. Create a new configuration by entering a **Title** and click **Create**, or choose the existing configuration that you want to link with your Adobe Campaign instance.
 1. Passen Sie die Konfiguration so an, dass sie den Parametern Ihrer Adobe Campaign-Instanz entspricht.
 
-   * **Benutzername**: **aemserver**, der AEM-Integrationspaket-Operator für Adobe Campaign, der zum Herstellen der Verbindung zwischen den beiden Lösungen verwendet wird.
+   * **Benutzername**: **aemserver**, der Adobe Campaign-AEM-Integrationspaket-Operator, mit dem die Verknüpfung zwischen den beiden Lösungen hergestellt wird.
    * **Kennwort**: Das Adobe Campaign-Kennwort des aemserver-Operators. Unter Umständen müssen Sie das Kennwort für diesen Operator direkt in Adobe Campaign erneut angeben.
    * **API-Endpunkt**: URL der Adobe Campaign-Instanz.
 
