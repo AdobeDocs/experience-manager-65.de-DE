@@ -1,22 +1,25 @@
 ---
-title: Info zu AEM Assets
-description: Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle und das AEM Asset-Angebot von Adobe
+title: Info zu Adobe Experience Manager Assets
+description: Erfahren Sie, was die Verwaltung digitaler Assets, ihre Anwendungsfälle und das Experience Manager Asset-Angebot von Adobe sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '882'
+ht-degree: 52%
 
 ---
 
 
 # Verwalten von Assets {#administering-assets}
 
-Assets ist ein DAM-Tool (Digital Asset Management), das vollständig in die AEM-Plattform integriert ist und Ihrem Unternehmen die Freigabe und Verteilung digitaler Assets ermöglicht. Benutzer im gesamten Unternehmen können Bilder, Videos, Dokumente, Audioclips und Rich-Media wie Flash-Dateien für die Verwendung im Internet, zum Drucken und für die digitale Verteilung verwalten, speichern und darauf zugreifen.
+Assets ist ein DAM-Tool (Digital Asset Management), das vollständig in die Experience Manager-Plattform integriert ist und Ihrem Unternehmen die Freigabe und Verteilung digitaler Assets ermöglicht. Benutzer im gesamten Unternehmen können Bilder, Videos, Dokumente, Audioclips und Rich-Media wie Flash-Dateien für die Verwendung im Internet, zum Drucken und für die digitale Verteilung verwalten, speichern und darauf zugreifen.
 
 ## Was ist Digital Asset Management? {#what-is-digital-asset-management}
 
 Assets ermöglicht die unternehmensweite Frei- und Weitergabe der wichtigsten digitalen Assets einer Organisation. Benutzer in einem Unternehmen können digitale Assets wie Bilder, Grafiken, Audio, Video und Dokumente über eine Webschnittstelle (oder einen CIFS- oder WebDAV-Ordner) speichern, verwalten und darauf zugreifen.
 
-Mit AEM Assets, die gut in AEM integriert sind, haben Sie folgende Möglichkeiten:
+Die Asset-Funktion ist gut in Experience Manager integriert und ermöglicht Ihnen Folgendes:
 
 * Hinzufügen und Freigeben von Bildern, Dokumenten, Audiodateien und Videodateien in einer Vielzahl von Dateiformaten.
 * Verwalten Sie Assets, indem Sie sie nach Tags, Leuchtkästen oder Sternen (Ihren Favoriten) gruppieren. Hinzufügen von Anmerkungen zu Assets.
@@ -25,26 +28,18 @@ Mit AEM Assets, die gut in AEM integriert sind, haben Sie folgende Möglichkeite
 * Ausführen von Bildbearbeitungsvorgängen, beispielsweise Skalierung und Hinzufügen von Bildfiltern. Importieren und Exportieren mehrerer digitaler Assets gleichzeitig mithilfe eines WebDAV- oder CIFS-Ordners.
 * Verwenden von Workflows und Benachrichtigungen, um die gemeinsame Verarbeitung und den gemeinsamen Download mehrerer Assets zu ermöglichen und Zugriffsrechte auf Assets zu verwalten.
 
-### AEM Assets ist vollständig in CQ WCM integriert {#aem-assets-fully-integrated-in-cq-wcm}
+### Experience Manager Assets ist in Experience Manager-Sites integriert {#aem-assets-fully-integrated-in-cq-wcm}
 
-AEM Assets ist vollständig in CQ WCM integriert und die Funktionen sind über das DAM-Symbol verfügbar:
+Assets sind vollständig in Sites integriert und die Funktionalität ist über das DAM-Symbol verfügbar. Die im Assets-Repository verwalteten digitalen Assets können dann über die Inhaltssuche beim Erstellen von Webseiten aufgerufen werden.
 
-![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
-
-In CQ DAM verwaltete Assets sind dann über die Inhaltssuche von WCM zugänglich:
-
-![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png)
-
->[!NOTE]
->
->Die grundlegende GUI-Handhabung entspricht jener im Rest von WCM – umfassende Details finden Sie unter [Überblick über die GUI-Konsole](/help/sites-authoring/page-authoring.md).
+Die grundlegende Benutzeroberfläche ist die gleiche wie die der Sites. Ausführliche Informationen finden Sie unter [Übersicht über die Sites](/help/sites-authoring/page-authoring.md) .
 
 ### Digital Asset Management versus image component {#digital-asset-management-versus-image-component}
 
-Berücksichtigen Sie bei der Entscheidung, ob Sie ein Bild in AEM Assets einfügen oder die AEM Image-Komponente verwenden, den Lebenszyklus des Bildes:
+Berücksichtigen Sie bei der Entscheidung, ob ein Bild in das DAM-Repository eingefügt oder eine Bildkomponente verwendet werden soll, den Lebenszyklus des Bilds:
 
 * Wenn das Bild denselben Lebenszyklus wie die Seite hat, verwenden Sie die Bildkomponente.
-* Wenn das Bild einen eigenen Lebenszyklus hat – beispielsweise, wenn Sie das Bild zweimal oder außerhalb von WCM verwenden –, verwenden Sie AEM Assets.
+* Wenn das Bild einen eigenen Lebenszyklus hat – beispielsweise, wenn Sie das Bild zweimal oder außerhalb von WCM verwenden –, verwenden Sie Assets.
 
 ## Was sind digitale Assets? {#what-are-digital-assets}
 
@@ -54,15 +49,15 @@ Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Me
 
 >[!CAUTION]
 >
->Das Hochladen bzw. Bearbeiten von sehr vielen Assets (insbesondere von Bildern) kann sich auf die Leistung Ihrer CQ-Instanz auswirken.
+>Das Hochladen und/oder Bearbeiten einer großen Menge von Assets (insbesondere Bildern) kann sich auf die Leistung Ihrer Experience Manager-Instanz auswirken.
 
-### AEM Assets terminology {#aem-assets-terminology}
+### Experience Manager Assets-Terminologie {#aem-assets-terminology}
 
-Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Terminologie vertraut sein:
+Beim Arbeiten mit digitalen Assets in Experience Manager müssen Sie die folgende Terminologie verstehen:
 
 * **Sammlung** Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), den allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
 
-* **Metadaten** -Assets enthalten Metadaten; zum Beispiel Autor, Ablaufdatum, DRM-Informationen (Digital Rights Management) usw. Metadaten sind unter der Zugangssteuerung zu finden. AEM Assets unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
+* **Metadaten** -Assets enthalten Metadaten; zum Beispiel Autor, Ablaufdatum, DRM-Informationen (Digital Rights Management) usw. Metadaten sind unter der Zugangssteuerung zu finden.  Assets unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
 
    * Dublin Core: einschließlich Autor, Beschreibung, Datum, Thema usw.
    * IPTC: einschließlich Ereignis, Modell, Ort usw.
@@ -72,13 +67,13 @@ Bei der Arbeit mit digitalen Assets in AEM müssen Sie mit der folgenden Termino
 
 * **Darstellungen** Eine Darstellung ist die binäre Darstellung eines Assets. Assets verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
 
-* **Versionen** -Versionierung erstellt einen Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versionen** -Versionierung erstellt einen Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **Unter-Assets** sind Teilassets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Fotoshop-Datei oder Seiten in einer PDF-Datei. In AEM Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
+* **Unter-Assets** sind Teilassets, aus denen ein Asset besteht, z. B. Ebenen in einer Adobe Fotoshop-Datei oder Seiten in einer PDF-Datei. In  Assets lassen sich Unter-Assets genau so wie normale Assets verwalten.
 
 ### How to work with assets {#how-to-work-with-assets}
 
-Sie können für Assets oder Sammlungen Aktionen durchführen. Mit Aktionen können Assets, Sammlungen und Darstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen - Hochladen, Löschen, Aktualisieren, Speichern von Teilassets - lösen vorkonfigurierte Workflows aus. Diese werden automatisch in AEM Assets aktiviert und detailliert in den Medien-Handlern für AEM Assets beschrieben.
+Sie können für Assets oder Sammlungen Aktionen durchführen. Mit Aktionen können Assets, Sammlungen und Darstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen - Hochladen, Löschen, Aktualisieren, Speichern von Teilassets - lösen vorkonfigurierte Workflows aus. Diese werden automatisch in  Assets aktiviert und detailliert in den Medien-Handlern für Assets beschrieben.
 
 Die Aufgaben, die mit den vorkonfigurierten Workflows ausgeführt werden können:
 
@@ -87,8 +82,8 @@ Die Aufgaben, die mit den vorkonfigurierten Workflows ausgeführt werden können
 * Generieren von Darstellungen und Miniaturansichten der Assets, einschließlich automatischer Skalierung und Zuschnitt, wo erforderlich.
 * Transcodieren der Assets, sofern erforderlich. Beispielsweise werden Videos für Mobilgeräte und Verwendung im Netz mit 24 Bildern pro Sekunde transcodiert, für Downloads vorgesehene Videos hingegen mit 30 Bildern pro Sekunde. Audio für Mobilgeräte und Verwendung im Netz wird mit 128 Kbit/s transcodiert, Audio für den Download mit 192 Kbit/s.
 
-Sie können Workflows natürlich auch manuell anwenden. Eine Liste der Standard-Workflows finden Sie unter [Medien-Handler in AEM Assets](/help/assets/media-handlers.md).
+Sie können Workflows natürlich auch manuell anwenden. Eine Liste der Standard-Workflows finden Sie unter [Medien-Handler in  Assets](/help/assets/media-handlers.md).
 
-## AEM Assets and AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## Experience Manager Assets und MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
-Informationen zu den Unterschieden finden Sie unter [AEM Assets und AEM MediaLibrary](/help/assets/medialibrary.md) .
+Informationen zu den Unterschieden finden Sie unter [Assets und MediaLibrary](/help/assets/medialibrary.md) .
