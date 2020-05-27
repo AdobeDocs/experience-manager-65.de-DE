@@ -3,14 +3,17 @@ title: Einchecken und Auschecken Ihrer digitalen Assets zur Bearbeitung
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 60%
 
 ---
 
 
-# Checkin- und Checkout-Dateien in AEM DAM {#check-in-and-check-out-files-in-assets}
+# Checkin- und Checkout-Dateien in Experience Manager DAM {#check-in-and-check-out-files-in-assets}
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in AEM Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
+Mit Adobe Experience Manager Assets können Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
 Um Assets aus-/einchecken zu können, benötigen Sie entsprechenden Schreibzugriff.
 
@@ -41,13 +44,13 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
    Sie können das Asset auch mit Anmerkungen versehen oder es veröffentlichen.
 
-1. Wählen Sie das bearbeitete Asset in der [!DNL Assets] Benutzeroberfläche aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Checkin]** . Das geänderte Asset wird in AEM Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+1. Wählen Sie das bearbeitete Asset in der [!DNL Assets] Benutzeroberfläche aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Checkin]** . Das geänderte Asset wird in Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
 
 ## Forced check in {#forced-check-in}
 
 Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 
-1. Melden Sie sich bei AEM Assets als Administrator an.
+1. Melden Sie sich bei Assets als Administrator an.
 1. Wählen Sie in der Assets-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
@@ -56,6 +59,6 @@ Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 
 >[!MORELIKETHIS]
 >
->* [Einchecken und Auschecken in der AEM-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Videoschulung zum Einchecken und Auschecken in AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Einchecken und Auschecken in der Experience Manager Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Videoschulung zum Einchecken und Auschecken in Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 
