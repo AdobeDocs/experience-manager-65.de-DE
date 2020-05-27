@@ -1,78 +1,81 @@
 ---
-title: AEM Assets- und AEM Media Library-Angebot vergleichen
-description: Vergleichen Sie AEM Assets- und AEM Media Library-Angebote und kennen Sie die Unterschiede.
+title: Vergleichen Sie das Angebot von Adobe Experience Manager Assets und Media Library.
+description: Vergleichen Sie die Angebote von Experience Manager Assets und Media Library und kennen Sie die Unterschiede.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 36%
 
 ---
 
 
-# AEM Assets versus AEM Media Library {#aem-assets-vs-aem-medialibrary}
+# Experience Manager Assets versus Experience Manager Media Library {#aem-assets-vs-aem-medialibrary}
 
-Adobe Experience Manager (AEM) Assets ist ein integraler Bestandteil der AEM-Plattform. Diese nahtlose Integration gilt als Hauptvorteil von AEM und stellt nicht nur konsistentes Content-Management, sondern auch eine hohe Produktivität für Inhaltsautoren sicher.
+Adobe Experience Manager Assets ist ein integraler Bestandteil der Experience Manager-Plattform. Diese reibungslose Integration wird als großer Vorteil von Experience Manager betrachtet und gewährleistet Konsistenz im Content-Management und hohe Produktivität für Inhaltsersteller.
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
-### Was ist AEM Assets? {#what-is-aem-assets}
+### What is Assets? {#what-is-aem-assets}
 
-AEM Assets ist eine Anwendung auf der AEM-Plattform, durch die unsere Kunden ihre digitalen Assets (Bilder, Videos, Dokumente und Audio-Clips) in einem Web-basierten Repository verwalten können. AEM Assets umfasst Metadaten-Unterstützung, Wiedergabeformate, Digital Asset Management Finder und die AEM Assets Administration-Benutzeroberfläche. 
+Assets sind eine Funktion von Experience Manager, mit der Benutzer ihre digitalen Assets (Bilder, Videos, Dokumente und Audioclips) in einem webbasierten Repository verwalten können. Zu den Assets gehören Metadaten-Unterstützung, Darstellungen, der Finder und die Verwaltungsoberfläche.
 
-### Was ist AEM Media Library? {#what-is-the-aem-media-library}
+### Was ist die Experience Manager Media Library? {#what-is-the-aem-media-library}
 
-Die Medienbibliothek AEM Media Library ist ein bestimmter Teil des AEM WCM-Inhaltsrepositorys, in dem Bilder und andere freigegebene Ressourcen gespeichert sind. Media Library nutzt die Digital Asset Management-Funktionen von AEM WCM. 
+Die Experience Manager-Medienbibliothek ist ein designierter Teil des Experience Manager WCM-Inhalts-Repositorys, in dem Bilder und andere freigegebene Ressourcen gespeichert werden. Die Medienbibliothek bietet grundlegende Funktionen zur Verwaltung digitaler Assets für WCM.
 
-### Was bietet AEM Assets zusätzlich zu AEM WCM?   {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+### What do I get from Assets that is not part of WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
-Die folgenden einzigartigen Funktionen stehen AEM Assets-Kunden exklusiv zur Verfügung:
+Die folgenden einzigartigen Funktionen stehen Assets-Kunden exklusiv zur Verfügung:
 
 * Extrahieren und Bearbeiten von zusätzlichen Metadaten neben Titel, Tags und Beschreibung
-* den AEM Assets Admin, der im Startbildschirm verfügbar ist, indem Sie die zweite Schaltfläche neben dem Siteadmin auswählen.
-* alle Arbeitsablaufschritte im Zusammenhang mit dem Digital Asset Management, d. h. AEM Assets Ingestion, AEM Assets Deletion, AEM Assets Subasset-Handling, AEM Assets Metadata Extraktion.
-* Bibliotheken mit „dam“ im Paket
+* Assets Admin, verfügbar über den Startbildschirm.
+* alle Arbeitsablaufschritte im Zusammenhang mit der Digital Asset Management, z. B. Erfassung, Löschen von Assets, Bearbeitung von Teilassets, Metadaten-Extraktion.
+* -Bibliotheken, einschließlich `dam` im Paketbereich.
 
-Zur Nutzung dieser Funktionen ist eine gültige AEM Assets-Lizenz erforderlich. 
+Zur Nutzung dieser Funktionen ist eine gültige Assets-Lizenz erforderlich. 
 
-### Ist AEM Assets als separates Paket erhältlich?    {#is-aem-assets-available-as-a-separate-package}
+### Is Assets available as a separate Package? {#is-aem-assets-available-as-a-separate-package}
 
-Nein. Um die Installation und Bereitstellung zu vereinfachen, werden alle AEM-Applikationen und -Add-ons in einem einzigen Paket mit allen Funktionen zur Verfügung gestellt. Damit sind Sie aber nicht automatisch zur Nutzung aller im Paket enthaltenen Funktionen berechtigt. 
+Nein. Um die Installation und Bereitstellung zu erleichtern, werden alle Experience Manager-Anwendungen und Add-ons in einem Paket mit allen Funktionen bereitgestellt. Damit sind Sie aber nicht automatisch zur Nutzung aller im Paket enthaltenen Funktionen berechtigt. 
 
-### Ich möchte die Metadaten digitaler Assets bearbeiten. Benötige ich AEM Assets?    {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+### Ich möchte die Metadaten digitaler Assets bearbeiten. Do I need Assets? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
-Wenn Sie auch andere Metadaten als Titel, Beschreibung und Tags bearbeiten möchten, ist eine AEM Assets-Lizenz erforderlich.
+Wenn Sie auch andere Metadaten als Titel, Beschreibung und Tags bearbeiten möchten, ist eine Assets-Lizenz erforderlich.
 
-### Ich möchte die Kategorie-Eigenschaft auf meiner Website verwenden. Benötige ich AEM Assets?  {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+### Ich möchte die Kategorie-Eigenschaft auf meiner Website verwenden. Do I need Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Ja, die Kategorie Predicate ist Teil von AEM Assets und erfordert eine AEM Assets-Lizenz.
+Ja, die Kategorie Predicate ist Teil von Assets und erfordert eine Asset-Lizenz.
 
-### Ich möchte, dass die Bildgröße beim Import automatisch geändert wird. Benötige ich AEM Assets?  {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+### Ich möchte, dass die Bildgröße beim Import automatisch geändert wird. Do I need Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Nein. Die Größenanpassung und die automatische Workflow-gesteuerte Transformation statischer Bilder sowie die Möglichkeit, Darstellungen zu verwalten, sind Teil von AEM Media Library. Für diese Funktionen ist keine AEM Assets-Lizenz erforderlich.
+Nein. Die Größenanpassung und automatische Workflow-gesteuerte Transformation statischer Bilder sowie die Möglichkeit, Darstellungen zu verwalten, sind Teil der Experience Manager Media Library. Für diese Funktionen ist keine Assets-Lizenz erforderlich.
 
-### Ich möchte die Bildgröße mithilfe einer benutzerdefinierten Bildkomponente ändern. Benötige ich AEM Assets?  {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+### Ich möchte die Bildgröße mithilfe einer benutzerdefinierten Bildkomponente ändern. Do I need Assets? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
-Die Bildkomponente ist Teil von AEM WCM. Die Grafikbibliothek, die von der Bildkomponente (aber auch von AEM Assets) verwendet wird, ist Teil der AEM-Plattform und erfordert keine AEM Assets-Lizenz.
+Die Bildkomponente ist Teil von WCM. Die Grafikbibliothek, die von der Bildkomponente (aber auch von Assets) verwendet wird, ist Teil der Experience Manager-Plattform und erfordert keine Asset-Lizenz.
 
-### Wie kann ich verhindern, dass meine Benutzer AEM Assets nutzen, wenn ich über keine AEM Assets-Lizenz verfüge? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+### Wie kann ich verhindern, dass meine Benutzer  Assets nutzen, wenn ich über keine  Assets-Lizenz verfüge? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Sie können alle AEM Assets-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den AEM Assets-Admin aus AEM entfernen. Dadurch wird verhindert, dass Ihre Benutzer versehentlich AEM Assets-Funktionen verwenden, für die Sie keine Lizenz erteilt haben.
+Sie können alle Asset-spezifischen Workflows, Komponenten, Taxonomien, Optionen und den Asset-Administrator aus Experience Manager entfernen. Dadurch wird verhindert, dass Benutzer versehentlich Assets-Funktionen verwenden, für die Sie keine Lizenz erteilt haben.
 
-### Ich möchte einer Seite Bilder hinzufügen und diese Bilder zuschneiden sowie deren Größe ändern. Benötige ich AEM Assets?  {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+### Ich möchte einer Seite Bilder hinzufügen und diese Bilder zuschneiden sowie deren Größe ändern. Do I need Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-In diesem Fall muss AEM Assets nicht erworben werden. Auch die Nutzung der Media Library ist nicht erforderlich, um Bilder auf einer Website zu verwenden, da die intelligente Bildkomponente das Hochladen von Bildern direkt auf die Seite ermöglicht.
+In diesem Fall muss Assets nicht erworben werden. Auch die Nutzung der Media Library ist nicht erforderlich, um Bilder auf einer Website zu verwenden, da die intelligente Bildkomponente das Hochladen von Bildern direkt auf die Seite ermöglicht.
 
-### A detailed list of features available in AEM Assets vs Media Library {#listoffeatures}
+### A detailed list of features available in Assets vs Media Library {#listoffeatures}
 
-**AEM Assets**
+**Experience Manager Assets**
 
 * Sammlungen und Lightbox
 * Erweiterte Metadateneigenschaften und -verwaltung
 * Adobe Asset Link (Verbindung mit Creative Cloud für Unternehmen)
-* AEM-Desktop-Programm
+* Experience Manager-Desktop-Programm
 * Verarbeitungsprofile
-* Integration von InDesign Server
+* [!DNL Adobe InDesign Server] integration
 * Asset-Vorlagen und Katalogerstellungsrahmen
-* Integration von Adobe Fotoshop, Adobe Illustrator und Adobe InDesign
+* [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]und [!DNL Adobe InDesign] Integration
 * Mehrsprachiges Asset-Management
 * PIM-Integration
 * Rights Management
