@@ -3,21 +3,21 @@ title: Verwalten von Video-Assets
 description: Erfahren Sie, wie Sie Video-Assets hochladen und veröffentlichen, eine Vorschau der entsprechenden Assets anzeigen und Anmerkungen hinzufügen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 69%
+source-wordcount: '786'
+ht-degree: 64%
 
 ---
 
 
 # Verwalten von Video-Assets  {#manage-video-assets}
 
-Lernen Sie, wie Sie die Video-Assets in Adobe Experience Manager (AEM) Assets verwalten und bearbeiten. Wenn Sie eine Lizenz für die Nutzung von Dynamic Media besitzen, sehen Sie sich die [Dynamic Media-Videodokumentation](/help/assets/video.md) an.
+Erfahren Sie, wie Sie die Video-Assets in Adobe Experience Manager Assets verwalten und bearbeiten. Wenn Sie eine Lizenz für die Nutzung von Dynamic Media besitzen, sehen Sie sich die [Dynamic Media-Videodokumentation](/help/assets/video.md) an.
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#upload-and-preview-video-assets}
 
-Adobe Experience Manager Assets generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn das Asset nicht im MP4-Format vorliegt, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videodarstellungen vom Typ OGG und MP4. Sie können eine Vorschau dieser Wiedergaben in der Benutzeroberfläche von AEM Assets anzeigen.
+Adobe Experience Manager Assets generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn das Asset nicht im MP4-Format vorliegt, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videodarstellungen vom Typ OGG und MP4. Sie können eine Vorschau dieser Wiedergaben in der Benutzeroberfläche von Assets anzeigen.
 
 1. Navigieren Sie im Ordner „Digitale Assets“ (oder dessen Unterordnern) zum Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternativ können Sie sie direkt in den Assets-Bereich ziehen. Weitere Informationen zum Hochladen finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
@@ -44,11 +44,11 @@ Sie können aufgrund einer Größenbeschränkung für Dateien standardmäßig ke
 
 >[!NOTE]
 >
->Die klassische Benutzeroberfläche von AEM hat keine Dateigrößenbeschränkung von 2 GB. Außerdem werden End-to-End-Workflows für große Videos nicht vollständig unterstützt.
+>Für die Benutzeroberfläche von Experience Manager Classic gelten keine 2-GB-Dateigrößenbeschränkungen. Außerdem werden End-to-End-Workflows für große Videos nicht vollständig unterstützt.
 
 Um eine höhere Dateigrößenbeschränkung zu konfigurieren, führen Sie die folgenden Schritte im Verzeichnis `/apps` aus.
 
-1. Klicken Sie in AEM auf **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, click **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigieren Sie in CRXDE Lite zu `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Um das Verzeichnisfenster anzuzeigen, tippen Sie auf das `>>`-Symbol.
 1. From the toolbar, click the **[!UICONTROL Overlay Node]**. Wählen Sie alternativ **[!UICONTROL Überlagerungsknoten]** aus dem Kontextmenü aus.
 1. In the **[!UICONTROL Overlay Node]** dialog, click **[!UICONTROL OK]**.
@@ -59,11 +59,11 @@ Um eine höhere Dateigrößenbeschränkung zu konfigurieren, führen Sie die fol
 1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** den gewünschten Wert in Byte ein, um die maximale Größe festzulegen. Um beispielsweise die Größenbeschränkung auf 30 GB zu erhöhen, geben Sie den Wert `{sizeLimit : "32212254720"}` ein.
 
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Alle speichern]**.
-1. In AEM, click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klicken Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. On the Adobe Experience Manager Web Console Bundles page, under the Name column of the table, locate and click **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
 1. Stellen Sie auf der Seite „Adobe Granite Workflow External Process Job Handler“ die Sekunden für die Felder **[!UICONTROL Timeout-Standardwert]** und **[!UICONTROL Max. Timeout]** auf `18000` (fünf Stunden) ein.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-1. In AEM, click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Klicken Sie in Experience Manager auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. On the Workflow Models page, select **[!UICONTROL Dynamic Media Encode Video]**, then click **[!UICONTROL Edit]**.
 1. On the workflow page, double-click the **[!UICONTROL Dynamic Media Video Service Process]** component.
 1. Erweitern Sie im Dialogfeld [!UICONTROL Schritteigenschaften] auf der Registerkarte **[!UICONTROL Allgemein]** die Option **Erweiterte Einstellungen**.
