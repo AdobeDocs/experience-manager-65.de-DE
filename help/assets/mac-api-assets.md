@@ -3,9 +3,9 @@ title: Assets-HTTP-API in [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1566'
 ht-degree: 38%
 
 ---
@@ -64,7 +64,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 In Experience Manager enthält ein Asset die folgenden Elemente:
 
 * Die Eigenschaften und Metadaten des Assets.
-* Mehrere Wiedergabeformate, z. B. das ursprüngliche Wiedergabeformat (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Wiedergabeformate. Weitere Darstellungen können Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder extrahierte Seiten aus PDF- oder Adobe InDesign-Dateien sein.
+* Mehrere Wiedergabeformate, z. B. das ursprüngliche Wiedergabeformat (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Wiedergabeformate. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or [!DNL Adobe InDesign] files.
 * Optionale Kommentare.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
