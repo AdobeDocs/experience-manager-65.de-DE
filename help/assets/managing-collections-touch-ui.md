@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 70%
+source-wordcount: '2215'
+ht-degree: 68%
 
 ---
 
@@ -183,7 +183,7 @@ Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Meta
 
 ## Suchen nach Sammlungen {#searching-collections}
 
-Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie die Suche mit Schlüsselwörtern im Suchfeld durchführen, sucht AEM Assets nach Sammlungsnamen, Sammlungsmetadaten und den Tags, die zu den Sammlungen hinzugefügt wurden.
+Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie mit Suchbegriffen im Feld &quot;Omniture&quot;suchen, sucht Assets nach Sammlungsnamen, Metadaten und den Tags, die den Sammlungen hinzugefügt wurden.
 
 Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
@@ -191,7 +191,7 @@ Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen
 
 Klicken Sie in der Sammlungskonsole auf eine Sammlung, um sie zu öffnen.
 
-Innerhalb einer Sammlung ist die Suche von AEM Assets auf Assets (sowie deren Tags und Metadaten) in der angezeigten Sammlung begrenzt. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
+Innerhalb einer Sammlung ist die Experience Manager-Suche auf Assets (und ihre Tags und Metadaten) innerhalb der Sammlung beschränkt, die Sie anzeigen. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
 
 ## Bearbeiten von Sammlungseinstellungen {#editing-collection-settings}
 
