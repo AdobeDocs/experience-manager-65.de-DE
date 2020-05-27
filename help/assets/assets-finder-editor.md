@@ -3,10 +3,10 @@ title: Erstellen und Konfigurieren von Asset Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 81%
+source-wordcount: '2146'
+ht-degree: 76%
 
 ---
 
@@ -27,13 +27,13 @@ Dieses Dokument beschäftigt sich mit den folgenden Fragestellungen:
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Beim Umstieg von einer kleinen Lösung für eine kleine Gruppe professionell ausgebildeter Benutzer (beispielsweise Fotografen oder Taxonome) auf ein System für größere und vielfältigere Benutzergruppen (beispielsweise Geschäftsbenutzer, WCM-Autoren, Journalisten usw.) stellt die leistungsstarke Benutzeroberfläche von Adobe Experience Manager (AEM) Assets für professionelle Benutzer möglicherweise zu viele Informationen bereit, sodass die beteiligten Personen für den Zugriff auf die für sie relevanten digitalen Assets spezielle Benutzeroberflächen oder Anwendungen anfragen.
+Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Wenn Sie von einer kleinen Benutzergruppe mit professionell geschulten Benutzern - z. B. Fotografen oder Taxonomen - zu größeren und vielfältigeren Benutzergruppen (z. B. Geschäftsbenutzer, WCM-Autoren, Journalisten usw.) wechseln, kann die leistungsstarke Benutzeroberfläche von Adobe Experience Manager Assets für professionelle Anwender zu viele Informationen und Beginn für Interessengruppen bereitstellen, um bestimmte Benutzeroberflächen oder Anwendungen für den Zugriff auf die für sie relevanten digitalen Assets anzufordern.
 
 Diese Asset-orientierten Anwendungen können einfache Fotogalerien in einem Intranet sein, in denen Mitarbeiter Fotos von Messebesuchen oder einem Pressezentrum auf einer öffentlich zugänglichen Website hochladen können. Asset-orientierte Anwendungen können sich auch auf Komplettlösungen, einschließlich Warenkorb, Kassen- und Prüfprozessen, erstrecken.
 
-Eine Asset-orientierte Anwendung zu erstellen, wird so in erster Linie zu einem Konfigurationsvorgang, der keinerlei Kodierung erfordert. Sie müssen lediglich mit den Benutzergruppen, deren Bedürfnissen und den verwendeten Metadaten vertraut sein. Mit AEM Assets erstellte Asset-orientierte Anwendungen sind erweiterbar: Mit moderatem Kodierungsaufwand können Sie wiederverwendbare Komponenten für die Suche, Anzeige und Bearbeitung von Assets erstellen.
+Eine Asset-orientierte Anwendung zu erstellen, wird so in erster Linie zu einem Konfigurationsvorgang, der keinerlei Kodierung erfordert. Sie müssen lediglich mit den Benutzergruppen, deren Bedürfnissen und den verwendeten Metadaten vertraut sein. Mit Assets erstellte Asset-orientierte Anwendungen sind erweiterbar: Mit moderatem Kodierungsaufwand können Sie wiederverwendbare Komponenten für die Suche, Anzeige und Bearbeitung von Assets erstellen.
 
-Eine Asset-orientierte Anwendung in AEM besteht aus einer Asset-Editor-Seite, die eine detaillierte Ansicht eines bestimmten Assets liefert. Über eine Asset-Editor-Seite können zudem Metadaten bearbeitet werden, sofern der Benutzer, der auf das Asset zugreift, über die erforderlichen Berechtigungen verfügt.
+Eine Asset-orientierte Anwendung in Experience Manager besteht aus einer Asset-Editor-Seite, mit der eine detaillierte Ansicht eines bestimmten Assets abgerufen werden kann. Über eine Asset-Editor-Seite können zudem Metadaten bearbeitet werden, sofern der Benutzer, der auf das Asset zugreift, über die erforderlichen Berechtigungen verfügt.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -161,7 +161,7 @@ To customize the query builder:
 
 #### Add predicates {#adding-predicates}
 
-AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
+Experience Manager Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
 To add predicates:
 
@@ -278,7 +278,7 @@ Das Metadatenformular ist ein Formular mit Start- und Endaktion. Dazwischen nehm
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-See [Customizing and Extending AEM Assets](/help/assets/extending-assets.md) for information on modifying the namespaces available in the metadata form.
+See [Customizing and Extending Assets](/help/assets/extending-assets.md) for information on modifying the namespaces available in the metadata form.
 
 1. Klicken Sie auf die Registerkarte **Beschränkungen**. Hier können Sie festlegen, ob ein Feld erforderlich ist, und ggf. weitere Beschränkungen hinzufügen.
 
@@ -391,7 +391,7 @@ Die folgenden Aktionen stehen zur Verfügung:
 
 ## Multi-edit assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 
-Mit AEM Assets können Sie Änderungen an mehreren Assets gleichzeitig vornehmen. Nach Auswahl der Assets können Sie bei diesen gleichzeitig Folgendes ändern:
+Mit Experience Manager Assets können Sie Änderungen an mehreren Assets gleichzeitig vornehmen. Nach Auswahl der Assets können Sie bei diesen gleichzeitig Folgendes ändern:
 
 * Tags
 * Metadaten
