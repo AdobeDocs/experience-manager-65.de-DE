@@ -1,21 +1,19 @@
 ---
 title: Suchfacetten
-description: In diesem Artikel wird beschrieben, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
+description: In diesem Artikel wird das Erstellen, Ändern und Verwenden von Suchfacetten in Adobe Experience Manager beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 87%
+source-wordcount: '2517'
+ht-degree: 82%
 
 ---
 
 
 # Suchfacetten {#search-facets}
 
-Erfahren Sie, wie Sie Suchfacetten in AEM erstellen, bearbeiten und verwenden können.
-
-Eine unternehmensweite Bereitstellung von Adobe Experience Manager (AEM) Assets bietet die Möglichkeit, eine Vielzahl von Assets zu speichern. Es kann manchmal zur anstrengenden und zeitraubenden Aufgabe werden, das richtige Asset zu finden, wenn Sie nur die generischen Suchfunktionen von AEM verwenden.
+Eine unternehmensweite Bereitstellung von Adobe Experience Manager Assets verfügt über die Kapazität, viele Assets zu speichern. Manchmal kann es schwierig und zeitaufwendig sein, das richtige Asset zu finden, wenn Sie nur die allgemeinen Suchfunktionen von Experience Manager verwenden.
 
 Verwenden Sie Suchfacetten im Bedienfeld „Filter“, um Ihrer Suche ein höheres Maß an Granularität zu verleihen und die Suchfunktion effizienter und vielseitiger zu gestalten. Suchfacetten fügen mehrere Dimensionen (Prädikate) hinzu, mit denen Sie Ihre Suche genauer definieren können. Das Bedienfeld „Filter“ enthält einige standardmäßige Suchfacetten. Außerdem können Sie benutzerdefinierte Suchfacetten hinzufügen.
 
@@ -29,7 +27,7 @@ Die Suchfacetten, die im Bedienfeld „Filter“ angezeigt werden, werden im zug
 
 Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „Volltext“ hinzu. Mit dem Eigenschaftsprädikat können Sie nach Assets suchen, die mit einer einzelnen von Ihnen angegebenen Eigenschaft übereinstimmen. Mit dem Options-Prädikat können Sie nach Assets suchen, die mit einem oder mehreren Werten für eine bestimmte Eigenschaft übereinstimmen. Fügen Sie das Datumsbereichs-Prädikat hinzu, um nach Assets zu suchen, die innerhalb eines bestimmten Datumsbereichs erstellt wurden.
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Suchen und Auswählen der Asset-Admin-Suchschiene](assets/assets_admin_searchrail.png)
@@ -38,7 +36,7 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „V
 
    >[!NOTE]
    >
-   >So verwenden Sie die Funktion zur Ordnersuche aus der vorkonfigurierten **Assets Admin Search Leiste** aus einer früheren AEM-Version:
+   >So verwenden Sie die Ordnersuchfunktion aus der vorkonfigurierten **Assets Admin Search Leiste** aus einer früheren Version:
    >
    >1. Navigieren Sie zu */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRXDE.
    >1. Löschen Sie die **Typknoten** .
@@ -116,7 +114,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 >
 >Das Options-Prädikat ist ein benutzerdefinierter Wrapper, der Eigenschaftsprädikate umfasst, um das beschriebene Verhalten zu erreichen. Derzeit ist kein REST-Endpunkt verfügbar, um die Funktionalität nativ zu unterstützen.
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Allgemein > Suchformulare]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
 1. Ziehen Sie auf der Seite **[!UICONTROL Suchformular bearbeiten]** den Eintrag **[!UICONTROL Options-Eigenschaft]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Namen für die Eigenschaft ein. Beispiel: Um Assets basierend auf dem Format zu suchen, geben Sie einen aussagekräftigen Namen als Beschriftung ein, wie **[!UICONTROL Dateityp]**. Geben Sie die Eigenschaft, anhand derer die Suche durchgeführt werden soll, im Eigenschaftsfeld an, wie beispielsweise `jcr:content/metadata/dc:format.`
@@ -136,9 +134,9 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 
 ## Hinzufügen einer Eigenschaft mit mehreren Werten {#adding-a-multi-value-property-predicate}
 
-Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Angenommen, Sie haben in AEM Assets Bilder mehrerer Produkte, deren Metadaten die zum Produkt gehörende Artikelnummer enthalten. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
+Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Angenommen, Sie haben in Assets Bilder mehrerer Produkte, deren Metadaten die zum Produkt gehörende Artikelnummer enthalten. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the click **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Mehrwert-Eigenschaftsprädikat]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise `jcr:content/metadata/dc:value`. Sie können auch das Auswahl-Dialogfeld verwenden, um einen Knoten auszuwählen.
@@ -149,9 +147,9 @@ Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Asset
 
 ## Hinzufügen von Tag-Prädikaten {#adding-a-tags-predicate}
 
-Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. AEM Assets sucht standardmäßig nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
+Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. Standardmäßig sucht Assets Assets anhand der von Ihnen angegebenen Tags nach einer oder mehreren Tags. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then click **[!UICONTROL Edit]** ![aemassets_edit](assets/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Tag-Eigenschaft]** von der Registerkarte „Eigenschaft auswählen“ in den Hauptbereich.
 1. Geben Sie auf der Registerkarte „Einstellungen“ einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise *jcr:content/metadata/cq:tags*. Alternativ können Sie einen Knoten in CRXDE aus dem Auswahldialogfeld auswählen.
@@ -166,9 +164,9 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. AE
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 
-   ![AEM-bereitgestellte Empfehlung bei der Eingabe des Namens des Tags](assets/chlimage_1-419.png)
+   ![Von Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags](assets/chlimage_1-419.png)
 
-   AEM-bereitgestellte Empfehlung bei der Eingabe des Namens des Tags
+   *Abbildung: In Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags.*
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
