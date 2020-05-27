@@ -3,7 +3,10 @@ title: Überprüfen von Ordner-Assets und Sammlungen
 description: Richten Sie Prüfungs-Workflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 63%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Richten Sie Prüfungs-Workflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 
-Mit Adobe Experience Manager (AEM) Assets können Sie einen Ad-hoc-Prüfungs-Workflow für Assets innerhalb eines Ordners oder einer Sammlung einrichten und ihn für Prüfer oder kreative Partner freigeben, um Feedback zu erhalten.
+Mit Adobe Experience Manager Assets können Sie einen Ad-hoc-Review-Arbeitsablauf für Assets in einem Ordner oder einer Sammlung einrichten und diese dann für Reviewer oder Kreativpartner freigeben, um Feedback einzuholen.
 
 Sie können den Prüfungs-Workflow entweder mit einem Projekt verbinden oder eine eigenständige Prüfungsaufgabe erstellen.
 
@@ -48,7 +51,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
    ![Prüfungsname](assets/review_name.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Eine Benachrichtigung für die neue Aufgabe wird an den Genehmiger gesendet.
-1. Melden Sie sich bei AEM Assets als Genehmiger an und gehen Sie zur Assets-Benutzeroberfläche. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Melden Sie sich bei  Assets als Genehmiger an und gehen Sie zur Assets-Benutzeroberfläche. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 
    ![Asset-Benachrichtigung](assets/aemAssetsNotification.png)
 
@@ -92,7 +95,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
    ![Aufgabendetails-Sammlung](assets/task_details-collection.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Eine Benachrichtigung für die neue Aufgabe wird an den Genehmiger gesendet.
-1. Melden Sie sich bei AEM Assets als Genehmiger an und gehen Sie zur Konsole „Assets“. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Melden Sie sich bei Assets als Genehmiger an und gehen Sie zur Konsole „Assets“. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. Alle Assets in der Sammlung sind auf der Prüfungsseite sichtbar. Select the assets and click **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 
