@@ -3,7 +3,10 @@ title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 8%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht weitreichende Filtermöglichkeiten für Assets und hält dabei vollständig die korrekten Berechtigungen ein. Metadaten werden in den Metadaten in Digital Asset Management ausführlich behandelt.
 
-AEM Assets unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch organisieren, indem Sie Ordner verwenden oder sie auf ungeordnete, Ad-hoc-Weise organisieren, z. B. mithilfe von Tags. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
+Experience Manager Assets unterstützt mehrere Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch organisieren, indem Sie Ordner verwenden oder sie auf ungeordnete, Ad-hoc-Weise organisieren, z. B. mithilfe von Tags. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
 
 ## Assets in Ordnern organisieren {#organize-using-folders}
 
@@ -32,7 +35,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
    * **Datumsbasierte Ordner**: enthält digitale Assets, die auf einem Erstellungsdatum oder einem Datum der letzten Änderung basieren.
 
 * Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern, sodass Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Profil weiterhin.
-* If an asset is already published, then you use AEM to move the asset to another folder, and re-publish from its new location, the original published asset location is still available, along with the newly re-published asset. The original published asset, however, is *lost* to AEM and cannot be unpublished. Als Best Practice sollten Sie daher zunächst die Veröffentlichung eines Assets rückgängig machen und es dann in einen anderen Ordner verschieben.
+* Wenn ein Asset bereits veröffentlicht wurde, dann verwenden Sie Experience Manager, um das Asset in einen anderen Ordner zu verschieben und erneut zu veröffentlichen, ist der ursprüngliche Speicherort des veröffentlichten Assets zusammen mit dem neu veröffentlichten Asset weiterhin verfügbar. The original published asset, however, is *lost* to Experience Manager and cannot be unpublished. Als Best Practice sollten Sie daher zunächst die Veröffentlichung eines Assets rückgängig machen und es dann in einen anderen Ordner verschieben.
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
@@ -42,7 +45,7 @@ Adobe Experience Manager Assets verwendet einen Selbstlernalgorithmus, um hochgr
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
-* [Informationen zu Tags in AEM](/help/sites-authoring/tags.md)
+* [Tags in Experience Manager](/help/sites-authoring/tags.md)
 * [Bearbeiten von Asset-Metadaten](meta-edit.md)
 * [Verbesserte intelligente Tags in Assets](enhanced-smart-tags.md)
 
