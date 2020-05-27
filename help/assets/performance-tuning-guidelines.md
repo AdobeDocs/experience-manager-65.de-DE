@@ -1,10 +1,13 @@
 ---
 title: Leistungsoptimierung für [!DNL Adobe Experience Manager Assets].
-description: Vorschläge und Anleitungen zur Konfiguration von [!DNL Experience Manager], Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung von [!DNL Experience Manager Assets] zu optimieren.
+description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung [!DNL Experience Manager Assets]zu optimieren.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '2723'
+ht-degree: 54%
 
 ---
 
@@ -162,7 +165,7 @@ Diese Einstellung des Werts auf die Hälfte der verfügbaren Prozesse ist für d
 
 ### Konfiguration von DAM-Update-Asset {#dam-update-asset-configuration}
 
-The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and InDesign Server integration. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
+The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and [!DNL Adobe InDesign Server] integration. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
 
 Running the [!UICONTROL DAM Update Asset] workflow intensively can sharply increase the size of your file datatastore. Entsprechende Tests von Adobe haben gezeigt, dass die Datenspeichergröße um ca. 400 GB ansteigt, wenn innerhalb von 8 Stunden 5.500 Workflows ausgeführt werden.
 
