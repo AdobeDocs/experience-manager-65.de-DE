@@ -1,19 +1,19 @@
 ---
-title: Erstellen und Freigeben eines privaten Ordners in AEM
-description: Erfahren Sie, wie Sie in Adobe Experience Manager (AEM) Assets einen privaten Ordner erstellen, ihn mit anderen Benutzern teilen und ihnen verschiedene Berechtigungen zuweisen können.
+title: Erstellen Sie einen privaten Ordner in Adobe Experience Manager und geben Sie ihn frei.
+description: Erfahren Sie, wie Sie einen privaten Ordner in den Adobe Experience Manager-Assets erstellen und ihn für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 60%
+source-wordcount: '506'
+ht-degree: 47%
 
 ---
 
 
 # Freigeben privater Ordner {#private-folder-sharing}
 
-Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-Benutzeroberfläche erstellen, der nur für Sie verfügbar ist. Sie können diesen privaten Ordner für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
+Sie können in der Benutzeroberfläche von Adobe Experience Manager Assets einen privaten Ordner erstellen, der ausschließlich für Sie verfügbar ist. Sie können diesen privaten Ordner für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
 
 >[!NOTE]
 >
@@ -46,15 +46,15 @@ Sie können einen privaten Ordner in der Adobe Experience Manager (AEM) Assets-B
 
    >[!NOTE]
    >
-   >Sie können dem Benutzer, für den Sie den Ordner freigeben, verschiedene Rollen zuweisen, wie Bearbeiter, Eigentümer oder Betrachter. Wenn Sie dem Benutzer eine Eigentümerrolle zuweisen, hat der Benutzer Editor-Berechtigungen für den Ordner. Darüber hinaus kann der Benutzer den Ordner für andere freigeben. Wenn Sie die Rolle „Editor“ zuweisen, kann der Benutzer die Assets in Ihrem privaten Ordner bearbeiten. Wenn Sie die Rolle „Betrachter“ zuweisen, kann der Benutzer die Assets im privaten Ordner lediglich anzeigen.
+   >Sie können dem Benutzer, für den Sie den Ordner freigeben, verschiedene Rollen zuweisen, wie Bearbeiter, Eigentümer oder Betrachter. Wenn Sie dem Benutzer eine Eigentümerrolle zuweisen, hat der Benutzer Editor-Berechtigungen für den Ordner. Darüber hinaus kann der Benutzer den Ordner für andere freigeben. Wenn Sie die Rolle „Editor“ zuweisen, kann der Benutzer die Assets in Ihrem privaten Ordner bearbeiten. Wenn Sie eine Viewer-Rolle zuweisen, können die Assets nur in Ihrem privaten Ordner Ansicht werden.
 
    >[!NOTE]
    >
    > Der private Ordner hat mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;. Daher kann der Administrator nicht alle Inhaber-Mitglieder aus einem privaten Ordner entfernen. Um jedoch vorhandene Inhaber (und den Administrator selbst) aus dem privaten Ordner zu entfernen, muss der Administrator einen anderen Benutzer als Inhaber hinzufügen.
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Je nach der zugewiesenen Rolle erhält der Benutzer einen Satz Berechtigungen für den privaten Ordner, wenn er sich bei AEM Assets anmeldet.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Je nach der zugewiesenen Rolle erhält der Benutzer einen Satz Berechtigungen für den privaten Ordner, wenn er sich bei  Assets anmeldet.
 1. Klicken Sie auf **[!UICONTROL OK]** zum Schließen der Bestätigungsmeldung.
-1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Melden Sie sich bei AEM Assets mit den Anmeldedaten des Benutzers an, um die Benachrichtigungen anzuzeigen.
+1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Melden Sie sich bei Assets mit den Anmeldedaten des Benutzers an, um die Benachrichtigungen anzuzeigen.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
