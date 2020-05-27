@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrieren mit [!DNL Adobe InDe
 description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 39%
@@ -58,7 +58,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
    * The extracted text and files are stored in [!DNL Experience Manager Assets].
    * All renditions are stored in [!DNL Experience Manager Assets], in the asset itself.
 
-## Integrieren des [!DNL InDesign Server] AEM {#integrating-the-indesign-server-with-aem}
+## Integration von [!DNL InDesign Server] Experience Manager {#integrating-the-indesign-server-with-aem}
 
 To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager Assets] and after configuring your proxy, you need to:
 
@@ -111,7 +111,7 @@ Argumente und Skriptpfade zum Extrahieren von Medien
 
 * **Skripten** erweitern: Hier können Sie verschiedene Skriptkombinationen angeben. If you want your own scripts to be executed on the [!DNL InDesign Server], save the scripts at `/apps/settings/dam/indesign/scripts`.
 
-Weitere Informationen zu InDesign-Skripten finden Sie in der [InDesign-Entwicklerdokumentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Weitere Informationen zu [!DNL Adobe InDesign] Skripten finden Sie in der [InDesign-Entwicklerdokumentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -166,7 +166,7 @@ If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hos
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
-1. Specify the host name and context path for the [!DNL Indesign Server] and click **Save**.
+1. Specify the host name and context path for the [!DNL Adobe InDesign Server] and click **Save**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
@@ -217,7 +217,7 @@ For [!DNL InDesign Server] 10.0 or higher, perform the following steps to enable
 
 >[!NOTE]
 >
->For [!DNL InDesign Server] integration with [!DNL Experience Manager Assets], use a multi-core processor because the Session Support feature necessary for the integration is not supported on single core systems.
+>For [!DNL InDesign Server] integration with [!DNL Experience Manager Assets], use a multi-core processor because the session support feature necessary for the integration is not supported on single core systems.
 
 ## Konfigurieren von [!DNL Experience Manager] Berechtigungen {#configure-aem-credentials}
 
