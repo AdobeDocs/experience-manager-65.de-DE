@@ -10,7 +10,10 @@ topic-tags: author
 discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +41,7 @@ Nehmen wir ein Fallbeispiel, bei dem Sie für ein Formular eine Sequenz der Schr
    * **E-sign**: Enthält die Komponente **Sign**, die in einem XFA-basierten adaptiven Formular verwendet werden kann. Es werden die folgenden Dienste zum Signieren bereitgestellt:
 
       * Adobe Document Cloud eSignature-Dienste
-      * (Veraltet) Freihandsignatur
+      * Scribble-Signatur
    * **Confirmation**: Enthält die Komponente **Summary**, in der die Übermittlung bestätigt wird, nachdem der Benutzer das Formular signiert hat und in der Sequenz beim Bestätigungsschritt angekommen ist. Autoren können den Text der Summary-Komponente konfigurieren oder eine Dankesmeldung, einen Link zur erstellten PDF-Datei anzeigen usw.
 
 
