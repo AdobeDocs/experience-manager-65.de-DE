@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
+source-git-commit: 49209cb64c829fde396e87ca4b2e326ecf1dd941
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 58%
 
 ---
 
@@ -42,7 +45,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
    <td>Kunden wird empfohlen, auf neue Creative Cloud-Integrationsfunktionen wie Adobe Asset Link oder AEM Desktop-App zu wechseln. Review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
   </tr>
   <tr>
-   <td>Assets </td>
+   <td>Assets</td>
    <td>
     <ol>
      <li>AssetDownloadServlet ist bei den Veröffentlichungsinstanzen standardmäßig deaktiviert. Weitere Informationen finden Sie unter <a href="/help/sites-administering/security-checklist.md">Checkliste für die AEM-Sicherheit</a>.</li>
@@ -88,23 +91,6 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
    <td>Komponenten (AEM Sites)</td>
    <td>Design-Importtool-Komponenten (/libs/wcm/designimporter/components) sind seit 6.5 als veraltet gekennzeichnet. Adobe plant keine weiteren Verbesserungen an dieser Implementierung des Design-Importtools.</td>
    <td>Adobe plant für künftige Versionen eine alternative Implementierung des Nutzungsszenarios.</td>
-  </tr>
-  <tr>
-   <td>Komponenten (AEM Forms)</td>
-   <td><p>Mit dem Unterschriftsschritt können Benutzer ein adaptives Formular überprüfen und unterschreiben. In früheren Versionen konnte der Unterschriftsschritt sowohl die Komponenten "Adobe Sign"als auch "Scribble Signature"als Unterschriftsfelder verwenden. In AEM 6.5 Forms wird das Signaturerlebnis für Scribble-Signaturen des Signatur-Schritts nicht mehr unterstützt.</p> </td>
-   <td>
-    <ul>
-     <li>Wenn Sie eine Neuinstallation durchgeführt haben:
-      <ul>
-       <li>Verwenden Sie das Adobe Sign-basierte Signaturerlebnis in einem Signaturschritt in einem adaptiven Formular.</li>
-       <li>Verwenden Sie die eigenständige Scribble-Signatur-Komponente in einem adaptiven Formular, in einer interaktiven Kommunikation und in HTML5-Formularen.</li>
-      </ul> </li>
-     <li>Wenn Sie von einer früheren Version auf AEM 6.5 Forms aktualisiert haben:<br />
-      <ul>
-       <li>Verwenden Sie weiterhin die Scribble-Signatur-basierte Signatur-Erfahrung von Signature Step mit Formularen, die die Funktion bereits verwenden.<br /> </li>
-       <li>Verwenden Sie die eigenständige Scribble-Signatur-Komponente oder die Adobe Sign-basierte Signaturerfahrung in einem Signaturschritt, wenn Sie ein Formular erstellen. </li>
-      </ul> </li>
-    </ul> <p> </p> <p> </p> </td>
   </tr>
   <tr>
    <td>Foundation</td>
@@ -165,7 +151,7 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.5 entfernt wurden. Fr
 
 | Bereich | Funktion | Ersatz |
 |--- |--- |--- |
-| Analytics-Aktivität-Map | Die Version der Aktivität Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [ActivityMap-Plug-in, das von Adobe Analytics]bereitgestellt wird (https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [ActivityMap-Plug-in, das von Adobe Analytics]bereitgestellt wird (https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrationen | Die ExactTarget-Integration wurde aus der Standardverteilung (QuickStart) entfernt und ist nicht mehr verfügbar. | Kein Ersatz vorhanden. |
 | Integrationen | Die Salesforce Force-API-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist jetzt ein zusätzliches, über PackageShare zu installierendes Paket. | Die Funktion ist weiterhin verfügbar. |
 | Formulare | Die Unterstützung für den Adobe Central Migration Bridge-Service wurde eingestellt, da Adobe Central nicht länger unterstützt wird. | Kein Ersatz vorhanden. |
@@ -175,7 +161,7 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.5 entfernt wurden. Fr
 | Forms | Unterstützung für UPD-basiertes Clustering aus AEM Forms on JEE entfernt | Sie können nur TCP-basiertes Clustering in AEM Forms on JEE verwenden. Wenn Sie ein UDP-Multicast-Server von einer früheren Version auf AEM 5.5 Forms on JEE aktualisieren, führen Sie manuelle Konfigurationen durch, um zu TCP-basiertem Gemfire-Clustering zu wechseln. Detaillierte Anweisungen finden Sie unter [Aktualisierung auf AEM 6.5 Forms on JEE](../forms/using/upgrade-forms-jee.md) |
 | Entwickler | Firebug Lite wurde aus der Standardverteilung (Quickstart) entfernt. | Verwenden Sie die im Browser integrierten Entwicklerkonsolen. |
 | Entwickler | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Kein Ersatz vorhanden. |
-| Assets  | Die Funktion zum Abladen von Assets wurde in AEM 6.5 entfernt | Kein Ersatz vorhanden. |
+| Assets | Die Funktion zum Abladen von Assets wurde in AEM 6.5 entfernt | Kein Ersatz vorhanden. |
 | Cache | `system/console/slingjsp` entfernt wurde, ist in AEM 6.5 nicht mehr verfügbar. | Klassen und Leichter Cache werden unter dem Apache Sling Commons FileSystem ClassLoader Bundle gespeichert. Sie können die Bundle-Nummer in der AEM Web Console überprüfen und den Cache-Ordner direkt aus dem Dateisystem entfernen (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
 ## Vorankündigung für die nächste Version {#pre-announcement-for-next-release}
