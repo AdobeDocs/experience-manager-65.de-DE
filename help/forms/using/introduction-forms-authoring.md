@@ -10,7 +10,10 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '3075'
+ht-degree: 84%
 
 ---
 
@@ -202,7 +205,7 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
    <td>Fügt eine Schaltfläche zum Speichern der Formulardaten hinzu.</td>
   </tr>
   <tr>
-   <td>(Veraltet) Freihandsignatur</td>
+   <td>Scribble-Signatur</td>
    <td>Fügt ein Feld zum Erfassen von Freihandsignaturen hinzu.</td>
   </tr>
   <tr>
