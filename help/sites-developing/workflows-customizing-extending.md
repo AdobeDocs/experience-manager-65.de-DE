@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '3587'
+ht-degree: 69%
 
 ---
 
@@ -41,14 +44,14 @@ Wie [alle Komponenten](/help/sites-developing/components.md) erben Workflow-Schr
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
 >1. Recreate the required item (i.e. as it exists in `/libs` under `/apps`
->2. Make any changes within `/apps`
+>2. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
 The `/libs/cq/workflow/components/model/step` component is the nearest common ancestor of the **Process Step**, **Participant Step**, and **Dynamic Participant Step**, which all inherit the following items:
@@ -315,7 +318,7 @@ Der Workflow `MetaDataMap` ist für Java- und ECMA-Skript-Prozessimplementierung
 
 ### Beispiel: Abrufen der Argumente der Prozess-Schritt-Komponente {#example-retrieving-the-arguments-of-the-process-step-component}
 
-Das Dialogfeld „Bearbeiten“ der Komponente **Process Step** enthält die Eigenschaft **Arguments.** The value of the **Arguments** property is stored in the worklow metadata, and is associated with the `PROCESS_ARGS` key.
+Das Dialogfeld „Bearbeiten“ der Komponente **Process Step** enthält die Eigenschaft **Arguments.** The value of the **Arguments** property is stored in the workflow metadata, and is associated with the `PROCESS_ARGS` key.
 
 In the following diagram, the value of the **Arguments** property is `argument1, argument2`:
 
@@ -474,7 +477,7 @@ In der folgenden Tabelle sind die Variablen aufgeführt, die Prozess-Skripten un
 | `com.adobe.granite.workflow.WorkflowSession` | `graniteWorkflowSession` | Die Workflow-Sitzung der aktuellen Schrittinstanz. |
 | `String[]` (enthält Prozessargumente) | `args` | Die step-Argumente. |
 | `com.adobe.granite.workflow.metadata.MetaDataMap` | `metaData` | Die Metadaten der aktuellen Schrittinstanz. |
-| `org.apache.sling.scripting.core.impl.InternalScriptHelper` | `sling` | Bietet Zugriff auf die Sling-Laufzeitumgebung. |
+| `org.apache.sling.scripting.core.impl.InternalScriptHelper` | `sling` | Bietet Zugriff auf die Sling-Laufzeit-Umgebung. |
 
 Das folgende Beispielskript zeigt den Zugriff auf den JCR-Knoten, der die Workflow-Nutzlast repräsentiert. Die Variable `graniteWorkflowSession` ist an eine JCR-Sitzungsvariable angepasst, mit der der Knoten vom Nutzlastpfad abgerufen wird.
 
@@ -609,7 +612,7 @@ So definieren Sie einen Teilnehmer-Schritt als OSGi-Dienstkomponente (Java-Bundl
 
 1. In the **Models** editor, add the dynamic participant step to the workflow using the generic **Dynamic Participant Step** component.
 1. In the edit dialog select the **Participant Chooser** tab and select your chooser implementation.
-1. If you use arguments in your code set the **Process Arguments**. Beispiel: `/content/we-retail/de`.
+1. If you use arguments in your code set the **Process Arguments**. Für dieses Beispiel: `/content/we-retail/de`.
 1. Speichern Sie die Änderungen für den Schritt und das Workflow-Modell.
 
 ### Entwickeln einer Teilnehmer-Auswahl mit einem ECMA-Skript {#developing-a-participant-chooser-using-an-ecma-script}
