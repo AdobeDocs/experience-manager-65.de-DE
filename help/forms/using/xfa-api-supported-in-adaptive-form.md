@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 89%
 
 ---
 
@@ -58,7 +61,7 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, können Sie a
   </tr>
   <tr>
    <td><p>Scribble-Signatur</p> </td>
-   <td><p>(Veraltet) Freihandsignatur</p> </td>
+   <td><p>Scribble-Signatur</p> </td>
   </tr>
   <tr>
    <td><p>Numerisches Feld </p> </td>
@@ -176,7 +179,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
  </tbody>
 </table>
 
-### Skripten {#scripts}
+### Skripte {#scripts}
 
 Die folgende Tabelle erfasst, wie verschiedene XFA-Skripten, die in der XDP-Datei definiert sind, sich in adaptiven Formularen verhalten.
 
@@ -245,7 +248,7 @@ Die folgende Tabelle erfasst, wie XFA-Überprüfungen den Überprüfungen in ada
   </tr>
   <tr>
    <td><p>Erforderlich (nullTest)</p> </td>
-   <td><p>obligatorisch </p> </td>
+   <td><p>mandatory </p> </td>
   </tr>
   <tr>
    <td><p>Leere Meldung (nullTestMessage) </p> </td>
