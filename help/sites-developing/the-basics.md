@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: 2d0e0325d1fce2587e4766bf2f60fc5d4accf45b
+source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+workflow-type: tm+mt
+source-wordcount: '3365'
+ht-degree: 76%
 
 ---
 
@@ -43,7 +46,7 @@ Der Java Content Repository-Standard [JSR 283](https://docs.adobe.com/content/do
 
 Maßgeblich für Spezifikationen ist Adobe Research (Switzerland) AG gehalten.
 
-Das [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket, javax.jcr. &amp;ast; wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket, javax.jcr.&amp;ast; wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
 
 ## Experience Server (CRX) und Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -259,7 +262,14 @@ Beispiel:
 
 
 
-The type hierarchy of /x is [ c, b, a, &lt;default>] while for /y the hierarchy is [ c, a,
+Die Typhierarchie von:
+
+* `/x`
+   * das `[ c, b, a, <default>]`
+* while for `/y`
+   * die Hierarchie `[ c, a, <default>]`
+
+This is because `/y` has the `sling:resourceSuperType` property whereas `/x` does not and therefore its supertype is taken from its resource type.
 
 #### Sling-Skripte können nicht direkt aufgerufen werden {#sling-scripts-cannot-be-called-directly}
 
@@ -357,7 +367,7 @@ Um Inhalte zu bearbeiten, verwendet AEM Dialogfelder, die vom Anwendungsentwickl
 
 Dialogfelder werden auch zum Bearbeiten von Metadaten und von verschiedenen Verwaltungstools verwendet.
 
-**Komponente** Eine Softwarekomponente ist ein Systemelement, das einen vordefinierten Dienst oder ein vordefiniertes Ereignis anbietet und mit anderen Komponenten kommunizieren kann.
+**Komponente** A ist ein Systemelement, das einen vordefinierten Dienst oder ein vordefiniertes Ereignis anbietet und mit anderen Komponenten kommunizieren kann.
 
 Innerhalb von AEM wird häufig eine Komponente zum Rendern des Inhalts einer Ressource verwendet. Wenn es sich bei der Ressource um eine Seite handelt, wird die Komponente, die sie rendert, als Top-Level-Komponente oder als Seitenkomponente bezeichnet. Allerdings muss eine Komponente weder Inhalte darstellen noch mit einer bestimmten Ressource verknüpft sein. Zum Beispiel zeigt eine Navigationskomponente Informationen über mehrere Ressourcen an.
 
@@ -404,7 +414,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 >[!CAUTION]
 >
->You must not change anything in the `/libs` path. For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen, For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
 
 * `/apps`
 
