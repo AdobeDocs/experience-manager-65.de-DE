@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68cd1c13fff94ac485865e50bc955548cd285b14
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '1180'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +67,7 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 >* Für die Konvertierung von HTML in PDF müssen bestimmte Schriftarten im Schriftartensystemordner enthalten sein. Unter Linux-, Solaris- und AIX-Systemen muss der Schriftartensystemordner die Schriftart Courier enthalten. Unter Windows-Systemen muss der Schriftartensystemordner die Schriftart Times New Roman enthalten.
    >
    > 
-* Die folgenden sind japanische Standardschriftarten in AEM Forms unter Linux. Mindestens >eine dieser Schriftarten sollte verfügbar sein, um japanische Schriftarten im >System zu konvertieren.
+* (Nur UNIX-basiertes System) Eine der folgenden japanischen Schriften sollte auf dem AEM Forms-Server verfügbar sein, um eine Webseite mit japanischer Schrift in ein PDF-Dokument zu konvertieren.
    >
    >   
    * &quot;Sazanami Gothic&quot;
