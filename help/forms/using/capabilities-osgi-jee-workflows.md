@@ -9,9 +9,9 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: 7cc206dc95e6975f61ea9343dea67fa2681a9ae1
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '868'
 ht-degree: 73%
 
 ---
@@ -125,7 +125,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
    <td>Unterstützt</td>
   </tr>
   <tr>
-   <td>(Veraltet) Freihandsignatur</td>
+   <td>Scribble-Signatur</td>
    <td>Unterstützt</td>
    <td>Unterstützt<br /> </td>
   </tr>
