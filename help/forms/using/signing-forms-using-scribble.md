@@ -1,6 +1,6 @@
 ---
-title: Anwenden elektronischer Signaturen auf ein Formular mit (nicht mehr unterstützten) Freihandsignaturen
-seo-title: Anwenden elektronischer Signaturen auf ein Formular mit (nicht mehr unterstützten) Freihandsignaturen
+title: Anwenden von elektronischen Signaturen auf ein Formular mithilfe von Freihandsignaturen
+seo-title: Anwenden von elektronischen Signaturen auf ein Formular mithilfe von Freihandsignaturen
 description: Signieren von Formularen mit Freihandsignaturen
 seo-description: Signieren von Formularen mit Freihandsignaturen
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
@@ -9,14 +9,17 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 79%
 
 ---
 
 
-# Apply electronic signatures to a form using (Deprecated) scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Anwenden von elektronischen Signaturen auf ein Formular mithilfe von Freihandsignaturen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-You can use the (Deprecated) **Scribble Signature** component and **Signature Step** component to draw (Scribble) signature on an adaptive form. Die Signaturschritt-Komponente zeigt eine PDF-Version des adaptiven Formulars an. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die Signaturschritt-Komponente zu verwenden.
+Sie können die Komponente **Freihandsignatur** und die Komponente **Signaturschritt** verwenden, um eine Signatur in ein adaptives Formular zu zeichnen. Die Signaturschritt-Komponente zeigt eine PDF-Version des adaptiven Formulars an. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die Signaturschritt-Komponente zu verwenden.
 
 Wie unten dargestellt, stellen beide Komponenten ein Fenster bereit, um ein Formular zu signieren. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
 
