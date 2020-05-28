@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6b4a32b320d53c41ebf9615895dbf17ab722f19
+source-git-commit: 18345e6519169cfceb01ab56821b596e284f3303
+workflow-type: tm+mt
+source-wordcount: '3202'
+ht-degree: 77%
 
 ---
 
@@ -114,10 +117,8 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 
 >[!NOTE]
 >
->* AEM Forms on JEE wird nur von 64-Bit-JVMs für Produktionsumgebungen unterstützt.
 >* Es wird empfohlen, die Sicherheitsbulletins vom Java-Anbieter zu verfolgen, um den Schutz und die Sicherheit von Produktionsumgebungen sicherzustellen und die neuesten Java-Aktualisierungen zu installieren.
->
-
+>* AEM Forms on JEE wird nur von 64-Bit-JVMs für Produktionsumgebungen unterstützt.
 
 
 ### Datenbanken und CRX-Persistenz {#databases-and-crx-persistence}
