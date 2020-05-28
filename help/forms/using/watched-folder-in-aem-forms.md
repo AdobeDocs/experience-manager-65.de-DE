@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '7153'
+ht-degree: 96%
 
 ---
 
@@ -633,7 +636,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 ### Workflow erstellen {#create-a-workflow}
 
 1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.
-https://[servername]:&#39;port&#39;/worklow
+https://[Servername]:&#39;Port&#39;/workflow
 
 1. Klicken Sie in der Modellansicht auf **Neu**. Geben Sie im Dialogfeld „Neuer Workflow“ den **Titel** an und klicken Sie auf **OK**.
 
