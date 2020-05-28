@@ -9,7 +9,10 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '869'
+ht-degree: 73%
 
 ---
 
@@ -331,7 +334,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
 
 1. Sie können Form-zentriertes AEM Workflows auf OSGi verwenden, um ein ausgefülltes adaptives Formular zu signieren. Formularorientierte AEM-Workflows in OSGi unterstützen das externe Signieren von Formularen. [Formularinternes Signieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) wird nicht unterstützt.
 
-1. Sie benötigen Zugriff auf AEM Inbox, um formularorientierte Workflows auf AEM Forms OSGi und HTML Workspace auszuführen und zu überwachen, um AEM Forms JEE-Workflows ausführen und überwachen zu können.
+1. Sie benötigen Zugriff auf AEM Inbox, um formularzentrierte Workflows auf AEM Forms OSGi und HTML Workspace auszuführen und zu überwachen, um AEM Forms JEE-Workflows ausführen und überwachen zu können.
 1. Programmeigene AEM Forms Document Services sind sowohl für formularorientierte AEM-Workflows in OSGi als auch für AEM Forms in JEE-Workflows verfügbar. AEM Workflow verwendet native Dokument-Dienste für formularzentriertes AEM Workflows unter OSGi und AEM Forms JEE (Process Management) Workflows.
 1. AEM Forms JEE-Workflows können nur adaptive Formulare wiedergeben. Die Wiedergabe adaptiver Formulare als PDF-Dokument wird nicht unterstützt.
 1. AEM Forms JEE-Workflows bieten keinen separaten Schritt für Adobe Sign. Sie benötigen für AEM Forms JEE-Workflows ein adaptives Formular, in dem Adobe Sign aktiviert ist. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
