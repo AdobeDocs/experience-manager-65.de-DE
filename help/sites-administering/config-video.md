@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 44dbabeeea4e4e8d17cc69a2d8ea791c98be2bd2
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 38%
 
 ---
 
@@ -63,8 +66,12 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 **Konfigurieren von AEM**:
 
+>[!NOTE]
+>
+>Diese Schritte sind nur erforderlich, wenn eine weitere Anpassung der Codecs erforderlich ist.
+
 1. Open [!UICONTROL CRXDE Lite] in your web browser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Select the `/libs/settings/dam/video/format_aac/jcr:content` node and ensure that the node properties are as follows:
+2. Select the `/libs/settings/dam/video/format_aac/jcr:content` node and ensure that the node properties are as follows:
 
    * audioCodec:
 
@@ -78,13 +85,13 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
        -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
       ```
 
-1. To customize the configuration, create an overlay in `/apps/settings/` node and move the same structure under `/conf/global/settings/` node. It cannot be edited in `/libs` node. Um beispielsweise einen Überlagerungspfad zu erstellen, erstellen Sie ihn `/libs/settings/dam/video/fullhd-bp`unter `/conf/global/settings/dam/video/fullhd-bp`.
+3. To customize the configuration, create an overlay in `/apps/settings/` node and move the same structure under `/conf/global/settings/` node. It cannot be edited in `/libs` node. Um beispielsweise einen Überlagerungspfad zu erstellen, erstellen Sie ihn `/libs/settings/dam/video/fullhd-bp`unter `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
    >Überlagern und bearbeiten Sie den gesamten Profilknoten und nicht nur die Eigenschaft, die geändert werden muss. Solche Ressourcen werden nicht über SlingResourceMerger aufgelöst.
 
-1. Haben Sie eine der Eigenschaften geändert, klicken Sie auf **[!UICONTROL Alle speichern]**.
+4. Haben Sie eine der Eigenschaften geändert, klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 >[!NOTE]
 >
