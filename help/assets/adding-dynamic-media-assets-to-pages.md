@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 876589d26f17dc088531c3f34deea0fab4c7726a
+source-git-commit: b6a7648699bc8e8e041749fb03998f86a27292ce
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 87%
+source-wordcount: '3129'
+ht-degree: 86%
 
 ---
 
@@ -29,7 +29,7 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren W
 
 ## Hinzufügen einer Dynamic Media-Komponente zu einer Seite     {#adding-a-dynamic-media-component-to-a-page}
 
-Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Panoramamedien oder 360-Grad-Videomedien gehen Sie genauso vor wie beim Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
+Das Hinzufügen einer Komponente zu einer Seite mit 3D-Medien, dynamischen Medien, interaktiven Medien, Panorama-Medien, Smart-Zuschneiden-Video oder Video 360-Medien entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
 
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
 1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (möglicherweise müssen Sie die Anzeige des Seitenbedienfelds umschalten) auf das Symbol &quot; **[!UICONTROL Komponenten]** &quot;.
@@ -40,10 +40,6 @@ Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Pa
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Drag a **[!UICONTROL Dynamic Media]** component that you want to use and drop it in the desired location on the page.
-
-   Im folgenden Beispiel wird die Komponente für **[!UICONTROL 360-Grad-Videomedien]** verwendet.
-
-   ![6_5_360video_wcmcomponentDrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Bewegen Sie den Mauszeiger direkt über die Komponente. Wenn die Komponente blau hervorgehoben wird, tippen Sie einmal darauf, um die Symbolleiste der Komponente anzuzeigen. Tippen Sie auf das Symbol **[!UICONTROL Konfiguration]**(Schraubenschlüssel).
 
@@ -57,7 +53,7 @@ Beim Hinzufügen einer Komponente für dynamische Medien, interaktive Medien, Pa
 
    Die Dynamic Media-Komponente für 360-Grad-Videomedien
 
-1. Wenn Sie fertig sind, tippen Sie oben rechts im Dialogfeld auf das Häkchen, um Ihre Änderungen zu speichern.
+1. Wenn Sie fertig sind, tippen Sie in der oberen rechten Ecke des Dialogfelds auf das Kontrollkästchen, um Ihre Änderungen zu speichern.
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
