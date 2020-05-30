@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
 workflow-type: tm+mt
-source-wordcount: '9298'
+source-wordcount: '9304'
 ht-degree: 64%
 
 ---
@@ -301,11 +301,11 @@ Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Ko
 
 ### Gestreamte Uploads {#streamed-uploads}
 
-If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Experience Manager Assets] unterstützt Streaming-Uploads von Assets. Gestreamte Uploads sorgen für eine Datenträger-E/A-Reduzierung beim Hochladen, da die Speicherung von Assets in einem temporären Ordner auf dem Server vermieden wird, bevor Assets in das Repository kopiert werden. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit für das Hochladen von Assets und die Möglichkeit von Zeitüberschreitungen verringert. Streamed upload is enabled by default in [!DNL Assets].
+Wenn Sie viele Assets in Adobe Experience Manager hochladen, erhöhen sich die E/A-Serveranforderungen drastisch, was die Upload-Effizienz verringert und sogar dazu führen kann, dass einige Aufgaben beim Hochladen zeitlimit überschreiten. [!DNL Experience Manager Assets] unterstützt Streaming-Uploads von Assets. Gestreamte Uploads sorgen für eine Datenträger-E/A-Reduzierung beim Hochladen, da die Speicherung von Assets in einem temporären Ordner auf dem Server vermieden wird, bevor Assets in das Repository kopiert werden. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit für das Hochladen von Assets und die Möglichkeit von Zeitüberschreitungen verringert. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
+>Das Hochladen von Streaming ist für Adobe Experience Manager deaktiviert, der auf JEE-Server mit einer Servlet-API-Version unter 3.1 ausgeführt wird.
 
 ### ZIP-Archiv mit Assets extrahieren {#extractzip}
 
@@ -573,7 +573,7 @@ Siehe [Herunterladen von Assets aus Experience Manager](/help/assets/download-as
 >
 >Weitere Informationen speziell zu dynamischen Medien finden Sie unter [Veröffentlichen von Assets mit dynamischen Medien](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. Navigieren Sie zum Speicherort des bzw. der Assets/Ordner, das/die/den Sie veröffentlichen möchten.
+1. Navigieren Sie zum Speicherort des bzw. der Asset(s)/Ordner, den Sie veröffentlichen möchten.
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Wenn das Asset andere Assets referenziert, werden die Verweise im Assistenten aufgelistet. Es werden nur Verweise angezeigt, die entweder unveröffentlicht sind oder seit der letzten Veröffentlichung/Aufhebung der Veröffentlichung geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
