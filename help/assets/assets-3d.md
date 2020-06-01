@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: 46848fee0a3f838354ec65f2ea733cf70ac53deb
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2162'
 ht-degree: 13%
 
 ---
@@ -170,9 +170,7 @@ Siehe auch [Anzeigen einer Asset-Vorschau über die Software-Oberfläche](/help/
 
 ## Grundlagen zum Arbeiten mit der 3D-Medienkomponente {#working-with-three-d-media-component}
 
-Dynamische Medien enthalten eine Komponente für dynamische Medien mit 3D-Medien, die Sie in AEM-Sites verwenden können, um die interaktive Anzeige von 3D-Modellen auf Webseiten zu aktivieren.
-
-Dieser Abschnitt enthält die folgenden Themen:
+Dynamische Medien enthalten eine Komponente für dynamische Medien mit 3D-Medien, die Sie in AEM-Sites verwenden können, um die interaktive Anzeige von 3D-Modellen auf Ihren Webseiten zu ermöglichen.
 
 * [Hinzufügen der 3D-Medienkomponente zur Seitenvorlage](#adding-three-d-media-component-to-page-template)
 * [Hinzufügen der 3D-Medienkomponente zu einer Webseite](#adding-the-three-d-media-component-to-a-web-page)
