@@ -1,6 +1,6 @@
 ---
 title: Bildprofile für Dynamic Media
-description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Bildmuster (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
+description: Erstellen Sie Profile mit Einstellungen für Unschärfemaske und/oder intelligentes Beschneiden oder Muster und wenden Sie das Profil dann auf einen Ordner mit Bild-Assets an.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,10 +8,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 3cc0df3cdcb44250e26a31ac3ce1ad86064938d6
+source-git-commit: e78b3701e57b1954f03591c38b72e3dd33e8ef46
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 97%
+source-wordcount: '2674'
+ht-degree: 93%
 
 ---
 
@@ -26,11 +26,11 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 ## Optionen für das Zuschneiden {#crop-options}
 
-Für das Zuschneiden von Bildern stehen Ihnen zwei Optionen und für die Automatisierung der Erstellung von Farb- und Bildmustern eine Option zur Verfügung.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->Achten Sie darauf, dass jede von Ihnen erstellte intelligente Zuschneidegeneration zusätzliche Verarbeitungsschritte erfordert. Das Hinzufügen von mehr als fünf Seitenverhältnissen für intelligente Zuschneiden kann beispielsweise zu einer langsamen Erfassungsrate für Assets führen. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie Smart-Zuschnitte auf Ordnerebene anwenden können, empfiehlt Adobe, diese auf Ordner *nur* dort zu verwenden, wo sie benötigt werden.
+Achten Sie darauf, dass jede von Ihnen erstellte Smart-Zuschneidegeneration eine zusätzliche Verarbeitung erfordert. Das Hinzufügen von mehr als fünf Seitenverhältnissen für intelligente Zuschneiden kann beispielsweise zu einer langsamen Erfassungsrate für Assets führen. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie Smart-Zuschnitte auf Ordnerebene anwenden können, empfiehlt Adobe, diese auf Ordner *nur* dort zu verwenden, wo sie benötigt werden.
+
+Es stehen zwei Optionen zum Beschneiden zur Auswahl. Sie haben auch die Möglichkeit, die Erstellung von Farb- und Bildfeldern zu automatisieren.
 
 <table>
  <tbody>
@@ -49,7 +49,7 @@ Für das Zuschneiden von Bildern stehen Ihnen zwei Optionen und für die Automat
      <li>Startpunkt des Zuschnitts: Links ist X und oben ist Y</li>
      <li>Horizontale Berechnung: Horizontale Pixelabmessungen des Originalbilds abzüglich des Werts für links und dann abzüglich des Werts für rechts.</li>
      <li>Vertikale Berechnung: Die vertikale Pixelhöhe abzüglich des Werts für oben und dann abzüglich des Werts für unten.</li>
-    </ul> <p>Beispiel: Sie haben ein Bild in der Größe 4000 x 3000 Pixel. Sie verwenden folgende Werte: Oben = 250; Unten = 500; Links = 300; Rechts = 700.</p> <p>Schneiden Sie von oben links (300, 250) aus mit dem Füllraum (4000-300-700, 3000-250-500 oder 3000,2250).</p> </td>
+    </ul> <p>Beispiel: Sie haben ein Bild in der Größe 4000 x 3000 Pixel. Sie verwenden Werte: Oben=250, Unten=500, Links=300, Rechts=700.</p> <p>Schneiden Sie von oben links (300, 250) aus mit dem Füllraum (4000-300-700, 3000-250-500 oder 3000,2250).</p> </td>
   </tr>
   <tr>
    <td>Smartes Zuschneiden</td>
@@ -72,7 +72,7 @@ Sie können **[!UICONTROL Unschärfemaske]** verwenden, um einen Schärfefiltere
 
 >[!NOTE]
 >
->Die Unschärfemaske wird nur auf herunterskalierte Ausgabeformate im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabeformate im PTIFF nicht durch die Unschärfemaske beeinflusst. Demgegenüber werden kleinere Ausgabeformate wie Miniaturansichten geändert (dabei wird die Unschärfemaske angezeigt).
+>Die Unschärfemaske wird nur auf herunterskalierte Ausgabeformate im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Das bedeutet, dass die größtmöglichen Darstellungen innerhalb des Titels nicht von einer Unschärfemaske betroffen sind, während kleinere Darstellungen wie Miniaturbilder verändert werden (und die Unschärfemaske anzeigen).
 
 In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar:
 
@@ -148,7 +148,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** ein Bildprofil auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Bildprofile auf beide Arten auf Ordner anwenden.
 
-Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Videoprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
@@ -209,7 +209,7 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 
 1. Tippen Sie auf den Ordner, um seine Inhalte anzuzeigen.
 1. Tippen Sie auf das Bild, dessen smarten Zuschnitt oder smartes Farb-/Bildmuster Sie anpassen möchten.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Smartes Zuschneiden]**.
+1. In the toolbar, tap **[!UICONTROL Smart Crop]**.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -288,6 +288,6 @@ Sie können im Menü **[!UICONTROL Tools]** oder, wenn Sie sich im Ordner befind
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Bildprofil entfernen möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Bildprofile]**.
-1. Wählen Sie im Dropdown-Menü **[!UICONTROL Profilname]** die Option **[!UICONTROL Kein]** und klicken Sie dann auf **[!UICONTROL Speichern und schließen]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
 
-   Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+   Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
