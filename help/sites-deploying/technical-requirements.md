@@ -11,7 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+workflow-type: tm+mt
+source-wordcount: '3119'
+ht-degree: 85%
 
 ---
 
@@ -100,7 +103,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
    <td>Unterstützungsebene<br /> </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 12 JDK "\[1]"</td>
+   <td>Oracle Java SE 12 JDK [1]</td>
    <td>Z: Nicht unterstützt </td>
   </tr>
   <tr>
@@ -108,23 +111,23 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
    <td>A: Unterstützt</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 10 JDK "\[1]"</td>
+   <td>Oracle Java SE 10 JDK [1]</td>
    <td>Z: Nicht unterstützt </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 9 JDK \[1]`</td>
+   <td>Oracle Java SE 9 JDK [1]</td>
    <td>Z: Nicht unterstützt</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK – 64 Bit</td>
-   <td>A: Supported `\[3]`<br /> </td>
+   <td>A: Unterstützt (3)</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - Build 2.9, JRE 1.8.0"\[2]`</td>
+   <td>IBM J9 VM - Build 2.9, JRE 1.8.0 [2]</td>
    <td>A: Unterstützt</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - Build 2.8, JRE 1.8.0"\[2]`</td>
+   <td>IBM J9 VM - Build 2.8, JRE 1.8.0 [2]</td>
    <td>A: Unterstützt</td>
   </tr>
  </tbody>
@@ -141,15 +144,15 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
 
 | **Plattform** | **Beschreibung** | **Unterstützungsebene** |
 |---|---|---|
-| **Dateisystem mit TAR-Dateien`\[1]`** | Repository | A: Unterstützt  |
-| **Dateisystem mit Datenspeicher`\[1]`** | Binärdateien | A: Unterstützt |
-| Speichern von Binärdateien in TAR-Dateien im Dateisystem `\[1]` | Binärdateien | Z: Nicht für die Produktion unterstützt |
+| **Dateisystem mit TAR-Dateien[1 ]** | Repository | A: Unterstützt  |
+| **Dateisystem mit Datastore[1 ]** | Binärdateien | A: Unterstützt |
+| Store binaries in TAR files on file system [1] | Binärdateien | Z: Nicht für die Produktion unterstützt |
 | Amazon S3 | Binärdateien | A: Unterstützt |
 | Microsoft Azure Blob Storage | Binärdateien | A: Unterstützt |
 | MongoDB Enterprise 4.0 | Repository | A: Supported [2, 3] |
 | MongoDB Enterprise 3.6 | Repository | Z: Nicht unterstützt |
 | MongoDB Enterprise 3.4 | Repository | Z: Nicht unterstützt |
-| IBM DB2 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  `\[4]` |
+| IBM DB2 10.5 | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  [4] |
 | Oracle Database 12c (12.1.x) | Repository und Forms-Datenbank | R: Eingeschränkte Unterstützung  |
 | Microsoft SQL Server 2016 | Forms-Datenbank | A: Unterstützt |
 | **Apache Lucene (Schnellstart integriert)**  | Suchservice | A: Unterstützt |
@@ -196,11 +199,11 @@ Als Servlet-API-Version ist mindestens Servlet 3.1 erforderlich.
 |---|---|
 | **In „Quickstart“ integrierte Servlet-Engine (Jetty 9.4)** | A: Unterstützt |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Nicht unterstützt |
-| Continuous Delivery für IBM WebSphere Application Server (LibertyProfile) mit Web Profile 7.0 und IBM JRE 1.8 | R: Eingeschränkte Unterstützung für neue Verträge `\[2]` |
-| IBM WebSphere Application Server 9.0 und IBM JRE 1.8 | R: Eingeschränkte Unterstützung für neue Verträge `\[1]` `\[2]` |
-| Apache Tomcat 8.5.x | R: Eingeschränkte Unterstützung für neue Verträge `\[2]` |
+| Continuous Delivery für IBM WebSphere Application Server (LibertyProfile) mit Web Profile 7.0 und IBM JRE 1.8 | R: Restricted Support for new contracts [2] |
+| IBM WebSphere Application Server 9.0 und IBM JRE 1.8 | R: Restricted Support for new contracts [1] [2] |
+| Apache Tomcat 8.5.x | R: Restricted Support for new contracts [2] |
 | JBoss EAP 7.2.x mit JBoss Application Server | Z: Nicht unterstützt |
-| JBoss EAP 7.1.4 mit JBoss Application Server | R: Eingeschränkte Unterstützung für neue Verträge `\[1]` `\[2]` |
+| JBoss EAP 7.1.4 mit JBoss Application Server | R: Restricted Support for new contracts [1] [2] |
 | JBoss EAP 7.0.x mit JBoss Application Server | Z: Nicht unterstützt |
 
 1. Für Bereitstellungen mit AEM Forms empfohlen.
@@ -212,11 +215,11 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen in Pro
 
 | **Plattform** | **Unterstützungsebene** |
 |---|---|
-| **Linux, auf Basis der Red Hat-Distribution** | A: Unterstützt `\[1]` `\[3]` |
-| Linux, auf Basis der Debian-Distribution einschl. Ubuntu | A: Unterstützt `\[2]` |
+| **Linux, auf Basis der Red Hat-Distribution** | A: Supported [1] [3] |
+| Linux, auf Basis der Debian-Distribution einschl. Ubuntu | A: Supported [2] |
 | Linux, auf Basis der SUSE-Distribution | A: Unterstützt |
-| Microsoft Windows Server 2019 `\[4]` | R: Eingeschränkte Unterstützung für neue Verträge |
-| Microsoft Windows Server 2016 `\[4]` | R: Eingeschränkte Unterstützung für neue Verträge `\[5]` |
+| Microsoft Windows Server 2019 [4] | R: Eingeschränkte Unterstützung für neue Verträge |
+| Microsoft Windows Server 2016 [4] | R: Restricted Support for new contracts [5] |
 | Microsoft Windows Server 2012 R2 | Z: Nicht unterstützt |
 | Oracle Solaris 11 | Z: Nicht unterstützt |
 | IBM AIX 7.2 | Z: Nicht unterstützt |
@@ -239,7 +242,7 @@ Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services w
 
 ### Dispatcher-Plattformen (Webserver) {#dispatcher-platforms-web-servers}
 
-Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.5 ist die Dispatcher-Version 4.3.2 oder höher erforderlich.
+Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.5 ist die Dispatcher-Version 4.3.2 oder höher erforderlich.
 
 Die folgenden Webserver werden für die Verwendung mit der Dispatcher-Version 4.3.2 unterstützt:
 
@@ -298,7 +301,7 @@ Die AEM-Benutzeroberfläche ist für die Verwendung auf größeren Bildschirmen 
    <td>A: Unterstützt</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox letzter ESR "\[1]"</td>
+   <td>Mozilla Firefox letztes ESR [1]</td>
    <td>A: Unterstützt</td>
    <td>A: Unterstützt</td>
   </tr>
@@ -314,7 +317,7 @@ Die AEM-Benutzeroberfläche ist für die Verwendung auf größeren Bildschirmen 
   </tr>
   <tr>
    <td>Apple Safari auf iOS 12.x</td>
-   <td>A: Unterstützt "\[2]"</td>
+   <td>A: Unterstützt (2)</td>
    <td>Z: Nicht unterstützt</td>
   </tr>
   <tr>
@@ -430,15 +433,15 @@ Um Dynamic Media unter Windows zu verwenden, müssen Sie verteilbare Microsoft V
 
 Windows x64:
 
-* Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
-* Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/de-de/download/details.aspx?id=13523)
+* Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/de-de/download/details.aspx?id=40784)
+* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/de-de/download/details.aspx?id=48145)
 
 Windows x86:
 
 * Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
 * Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/de-de/download/details.aspx?id=52685)
 
 #### MacOS {#macos}
 
