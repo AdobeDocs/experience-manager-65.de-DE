@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cdcea49a25807e125ea15e7132ac9f188d3525bc
+source-git-commit: 9a27aabef07d5b5104c08c414138fbb22e284a68
 workflow-type: tm+mt
 source-wordcount: '2074'
-ht-degree: 28%
+ht-degree: 26%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM)-Assets werden über die Adobe Developer Console m
 
 >[!NOTE]
 >
->Die Konfiguration von AEM Assets mit Brand Portal über Adobe I/O wird auf AEM 6.5.4.0 und höher unterstützt.
+>Die Konfiguration von AEM Assets mit dem Markenportal über die Adobe Developer Console wird auf AEM 6.5.4.0 und höher unterstützt.
 >
 >Zuvor wurde Brand Portal über das alte OAuth-Gateway in der klassischen Benutzeroberfläche konfiguriert. Das Gateway ruft mithilfe des JWT-Token-Austauschs ein IMS-Zugriffstoken zur Autorisierung ab.
 >
@@ -35,13 +35,13 @@ Adobe Experience Manager (AEM)-Assets werden über die Adobe Developer Console m
 >
 >***Nur für Bestandskunden***
 >
->Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth-Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über Adobe I/O.
+>Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über Adobe Developer Console.
 
 
 
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
-* [Neue Konfiguration](#configure-new-integration-65): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit dem Markenportal konfigurieren möchten, können Sie eine neue Konfiguration auf der Adobe-E/A erstellen.
-* [Upgrade-Konfiguration](#upgrade-integration-65): Wenn Sie ein bestehender Brand Portal-Benutzer mit Ihrer AEM Assets-Autoreninstanz sind, die mit Brand Portal auf dem alten OAuth Gateway konfiguriert wurde, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration auf der Adobe-E/A-Benutzeroberfläche erstellen.
+* [Neue Konfiguration](#configure-new-integration-65): Wenn Sie ein neuer Markenportal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit dem Markenportal konfigurieren möchten, können Sie eine neue Konfiguration in der Adobe Developer Console erstellen.
+* [Upgrade-Konfiguration](#upgrade-integration-65): Wenn Sie ein bestehender Brand Portal-Benutzer mit Ihrer AEM Assets-Autoreninstanz sind, die mit Brand Portal auf dem alten OAuth Gateway konfiguriert wurde, sollten Sie die vorhandenen Konfigurationen löschen und eine neue Konfiguration in der Adobe Developer Console erstellen.
 
 Benutzer dieser Hilfe sollten mit den folgenden Technologien vertraut sein:
 
