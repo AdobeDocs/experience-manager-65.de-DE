@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
+source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+workflow-type: tm+mt
+source-wordcount: '2237'
+ht-degree: 6%
 
 ---
 
@@ -79,7 +82,7 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
 1. Erstellen Sie einen [überwachten Ordner](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) und konfigurieren Sie ihn für die Verwendung der Stapel-API:
    1. Melden Sie sich bei der Autoreninstanz von AEM Forms an.
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tippen Sie auf **[!UICONTROL Neu]**.
-   1. Geben Sie den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`. 
+   1. Geben Sie den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
    1. Wählen Sie im Feld &quot; **[!UICONTROL Prozessdatei mit]** &quot;die Option &quot; **[!UICONTROL Dienst]** &quot;aus.
    1. Wählen Sie den Dienst **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** im Feld **[!UICONTROL Dienstname]** .
    1. Geben Sie ein Muster für die **[!UICONTROL Ausgabedatei an]**. Das [Muster](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) &quot;%F/&quot;gibt beispielsweise an, dass der Watched Folder-Dienst Eingabedateien in einem Unterordner des Ordners &quot;Überwachter Ordner\input&quot;finden kann.
@@ -90,7 +93,7 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
       |--- |--- |--- |
       | templatePath | Zeichenfolge | Geben Sie den Pfad der zu verwendenden interaktiven Kommunikationsvorlage an. Beispiel: /content/dam/formsanddocuments/testsample/mediumic. Dies ist eine obligatorische Eigenschaft. |
       | recordPath | Zeichenfolge | Der Wert des Felds recordPath hilft beim Festlegen des Namens einer interaktiven Kommunikation. Sie können den Pfad eines Datensatzfelds als Wert des Felds recordPath festlegen. Wenn Sie beispielsweise /employee/Id angeben, wird der Wert des Felds &quot;id&quot;zum Namen für die entsprechende interaktive Kommunikation. Der Standardwert ist eine zufällige [UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Boolesch  | Legen Sie den Wert auf False fest. Sie können den Parameter usePrefillService verwenden, um die interaktive Kommunikation mit Daten, die aus dem Vorfülldienst abgerufen wurden, für die entsprechende interaktive Kommunikation vorab zu füllen. Wenn usePrefillService auf true festgelegt ist, werden JSON-Eingabedaten (für jeden Datensatz) als FDM-Argumente behandelt. Der Standardwert lautet false. |
+      | usePrefillService | Boolesch | Legen Sie den Wert auf False fest. Sie können den Parameter usePrefillService verwenden, um die interaktive Kommunikation mit Daten, die aus dem Vorfülldienst abgerufen wurden, für die entsprechende interaktive Kommunikation vorab zu füllen. Wenn usePrefillService auf true festgelegt ist, werden JSON-Eingabedaten (für jeden Datensatz) als FDM-Argumente behandelt. Der Standardwert lautet false. |
       | batchType | Zeichenfolge | Legen Sie als Wert DRINT, WEB oder WEB_AND_PRINT fest. Der Standardwert ist WEB_AND_PRINT. |
       | locale | Zeichenfolge | Geben Sie das Gebietsschema der Ausgabe für interaktive Kommunikation an. Der vordefinierte Dienst verwendet nicht die Sprachoption, Sie können jedoch einen benutzerdefinierten Dienst erstellen, um lokalisierte interaktive Kommunikation zu generieren. Der Standardwert ist en_US |
 
@@ -141,7 +144,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 1. Erstellen Sie einen [überwachten Ordner](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) und konfigurieren Sie ihn für die Verwendung des Batch API-Dienstes:
    1. Melden Sie sich bei der Autoreninstanz von AEM Forms an.
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tippen Sie auf **[!UICONTROL Neu]**.
-   1. Geben Sie den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`. 
+   1. Geben Sie den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
    1. Wählen Sie im Feld &quot; **[!UICONTROL Prozessdatei mit]** &quot;die Option &quot; **[!UICONTROL Dienst]** &quot;aus.
    1. Wählen Sie den Dienst **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** im Feld **[!UICONTROL Dienstname]** .
    1. Geben Sie ein Muster für die **[!UICONTROL Ausgabedatei an]**. Das [Muster](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) &quot;%F/&quot;gibt beispielsweise an, dass der Watched Folder-Dienst Eingabedateien in einem Unterordner des Ordners &quot;Überwachter Ordner\input&quot;finden kann.
@@ -152,7 +155,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
       |--- |--- |--- |
       | templatePath | Zeichenfolge | Geben Sie den Pfad der zu verwendenden interaktiven Kommunikationsvorlage an. Beispiel: /content/dam/formsanddocuments/testsample/mediumic. Dies ist eine obligatorische Eigenschaft. |
       | recordPath | Zeichenfolge | Der Wert des Felds recordPath hilft beim Festlegen des Namens einer interaktiven Kommunikation. Sie können den Pfad eines Datensatzfelds als Wert des Felds recordPath festlegen. Wenn Sie beispielsweise /employee/Id angeben, wird der Wert des Felds &quot;id&quot;zum Namen für die entsprechende interaktive Kommunikation. Der Standardwert ist eine zufällige [UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
-      | usePrefillService | Boolesch  | Legen Sie den Wert auf True fest. Der Standardwert lautet false.  Wenn der Wert auf &quot;true&quot;gesetzt ist, liest die Stapel-API Daten aus dem konfigurierten Formulardatenmodell und füllt sie in die interaktive Kommunikation. Wenn usePrefillService auf true festgelegt ist, werden JSON-Eingabedaten (für jeden Datensatz) als FDM-Argumente behandelt. |
+      | usePrefillService | Boolesch | Legen Sie den Wert auf True fest. Der Standardwert lautet false.  Wenn der Wert auf &quot;true&quot;gesetzt ist, liest die Stapel-API Daten aus dem konfigurierten Formulardatenmodell und füllt sie in die interaktive Kommunikation. Wenn usePrefillService auf true festgelegt ist, werden JSON-Eingabedaten (für jeden Datensatz) als FDM-Argumente behandelt. |
       | batchType | Zeichenfolge | Legen Sie als Wert DRINT, WEB oder WEB_AND_PRINT fest. Der Standardwert ist WEB_AND_PRINT. |
       | locale | Zeichenfolge | Geben Sie das Gebietsschema der Ausgabe für interaktive Kommunikation an. Der vordefinierte Dienst verwendet nicht die Sprachoption, Sie können jedoch einen benutzerdefinierten Dienst erstellen, um lokalisierte interaktive Kommunikation zu generieren. Der Standardwert ist en_US. |
 
@@ -168,26 +171,19 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 
 ## Aufrufen der Stapel-API mithilfe von REST-Anforderungen
 
-Sie können [die Stapel-API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) über REST-Anforderungen (Repräsentational State Transfer) aufrufen. Es ermöglicht Ihnen, anderen Benutzern einen REST-Endpunkt zum Zugriff auf die API bereitzustellen und eigene Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation zu konfigurieren. Sie können Ihr eigenes benutzerdefiniertes Java-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
+Sie können [die Stapel-API](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/index.html) über REST-Anforderungen (Repräsentational State Transfer) aufrufen. Es ermöglicht Ihnen, anderen Benutzern einen REST-Endpunkt zum Zugriff auf die API bereitzustellen und eigene Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation zu konfigurieren. Sie können Ihr eigenes benutzerdefiniertes Java-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
 
 Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über eine interaktive Kommunikation verfügen und die entsprechenden Datendateien bereit sind. Führen Sie die folgenden Schritte aus, um das Java-Servlet zu erstellen und bereitzustellen:
 
 1. Melden Sie sich bei Ihrer AEM-Instanz an und erstellen Sie eine interaktive Kommunikation. Um die interaktive Kommunikation zu verwenden, die im folgenden Beispielcode erwähnt wird, [klicken Sie hier](assets/SimpleMediumIC.zip).
 1. [Erstellen und Bereitstellen eines AEM-Projekts mit Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) auf Ihrer AEM-Instanz.
-1. Hinzufügen [AEM Forms Client SDK Version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) oder höher und neueste [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) in Abhängigkeiten Liste der POm-Datei Ihres AEM-Projekts. Beispiel:
+1. Hinzufügen [AEM Forms Client SDK Version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) oder höher in Abhängigkeiten Liste der POM-Datei Ihres AEM-Projekts. Beispiel:
 
    ```XML
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
            <version>6.0.122</version>
-       </dependency>
-       <dependency>
-          <groupId>com.adobe.aem</groupId>
-          <artifactId>uber-jar</artifactId>
-          <version>6.5.0</version>
-          <classifier>apis</classifier>
-          <scope>provided</scope>
        </dependency>
    ```
 
@@ -201,18 +197,9 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
            import java.io.FileOutputStream;
            import java.io.IOException;
            import java.io.InputStream;
-           import java.io.OutputStream;
            import java.io.PrintWriter;
            import java.util.List;
-           import java.util.logging.FileHandler;
-           import java.util.logging.Logger;
-           import java.util.logging.SimpleFormatter;
-   
            import javax.servlet.Servlet;
-           import javax.servlet.ServletContext;
-   
-           import com.adobe.aemfd.watchfolder.service.api.ContentProcessor;
-   
            import org.apache.commons.io.IOUtils;
            import org.apache.sling.api.SlingHttpServletRequest;
            import org.apache.sling.api.SlingHttpServletResponse;
@@ -222,8 +209,7 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
            import org.osgi.service.component.annotations.Component;
            import org.osgi.service.component.annotations.Reference;
    
-           import com.adobe.aemfd.docmanager.Document;
-           import com.adobe.aemfd.docmanager.passivation.DocumentPassivationHandler;
+           import com.adobe.fd.ccm.multichannel.batch.api.builder.BatchConfigBuilder;
            import com.adobe.fd.ccm.multichannel.batch.api.factory.BatchComponentBuilderFactory;
            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchConfig;
            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchInput;
@@ -233,21 +219,8 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
            import com.adobe.fd.ccm.multichannel.batch.api.model.RenditionResult;
            import com.adobe.fd.ccm.multichannel.batch.api.service.BatchGeneratorService;
            import com.adobe.fd.ccm.multichannel.batch.util.BatchConstants;
-           import com.adobe.icc.render.obj.Content;
-   
-           import javax.annotation.PostConstruct;
-           import javax.inject.Inject;
-           import javax.inject.Named;
-   
-           import org.apache.sling.api.resource.Resource;
-           import org.apache.sling.models.annotations.Default;
-           import org.apache.sling.models.annotations.Model;
-           import org.apache.sling.settings.SlingSettingsService;
-           import org.apache.sling.api.resource.ResourceUtil;
-   
-   
-           import org.slf4j.*;
            import java.util.Date;
+   
    
            @Component(service=Servlet.class,
            property={
@@ -361,11 +334,13 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
 
 Wenn Sie batchType so einstellen, dass der Web-Kanal wiedergegeben wird, generiert die API für jeden Datensatz eine JSON-Datei. Mit der folgenden Syntax können Sie die JSON-Datei mit dem entsprechenden Web-Kanal zusammenführen, um eine interaktive Kommunikation zu generieren:
 
-**Syntax**`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
+**Syntax**
+`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Beispiel**: Wenn sich Ihre JSON-Datei befindet `C:\batch\mergedJsonPath.json` und Sie die folgende interaktive Kommunikationsvorlage verwenden: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Anschließend zeigt die folgende URL auf dem Veröffentlichungsknoten den Web-Kanal der interaktiven Kommunikation an`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
+Anschließend zeigt die folgende URL auf dem Veröffentlichungsknoten den Web-Kanal der interaktiven Kommunikation an
+`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Neben dem Speichern der Daten im Dateisystem speichern Sie JSON-Dateien im CRX-Repository, Dateisystem, Webserver oder können über den OSGI-Vorfülldienst auf Daten zugreifen. Syntax zum Zusammenführen von Daten mit verschiedenen Protokollen:
 
