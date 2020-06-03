@@ -8,10 +8,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: e78b3701e57b1954f03591c38b72e3dd33e8ef46
+source-git-commit: a71507e3c6030ebc3f4abbd7064318d653d326bd
 workflow-type: tm+mt
-source-wordcount: '2674'
-ht-degree: 93%
+source-wordcount: '2755'
+ht-degree: 90%
 
 ---
 
@@ -24,9 +24,15 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 >
 >Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
+>[!IMPORTANT]
+>
+>Image-Profil sind nicht auf PDF-Dateien anwendbar.
+
 ## Optionen für das Zuschneiden {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for paragraph directly below -->
+
+Die Koordinaten der intelligenten Zuschneidung sind vom Seitenverhältnis abhängig. Das heißt, bei den verschiedenen Einstellungen für intelligente Beschneidung in einem Bild-Profil, wenn das Seitenverhältnis für die hinzugefügten Dimensionen im Profil identisch ist, wird dasselbe Seitenverhältnis an dynamische Medien gesendet. Aus diesem Grund empfiehlt Adobe, den gleichen Bereich für die Beschneidung zu verwenden. Auf diese Weise wird sichergestellt, dass die verschiedenen im Image-Profil verwendeten Abmessungen nicht beeinträchtigt werden.
 
 Achten Sie darauf, dass jede von Ihnen erstellte Smart-Zuschneidegeneration eine zusätzliche Verarbeitung erfordert. Das Hinzufügen von mehr als fünf Seitenverhältnissen für intelligente Zuschneiden kann beispielsweise zu einer langsamen Erfassungsrate für Assets führen. Es kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie Smart-Zuschnitte auf Ordnerebene anwenden können, empfiehlt Adobe, diese auf Ordner *nur* dort zu verwenden, wo sie benötigt werden.
 
