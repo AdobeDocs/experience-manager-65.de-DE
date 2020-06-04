@@ -3,7 +3,7 @@ title: Verwenden Sie PDF-Rasterfunktion, um Darstellungen von PDF-Dateien zu ers
 description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Raster-Bibliothek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: 21f30cf67b73d26afc3f0413ca997a0b6e46e3d3
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 41%
@@ -21,7 +21,7 @@ When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experien
 
 Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt unabhängig vom Farbraum der Quelldatei immer in RGB.
 
-1. Installieren Sie das PDF-Rasterpaket bei Ihrer [!DNL Experience Manager] Bereitstellung von [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) oder [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)
+1. Installieren Sie das PDF-Rasterpaket auf Ihrer [!DNL Experience Manager] Bereitstellung von [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) oder [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
@@ -32,9 +32,11 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 1. Gehen Sie wie folgt vor, um die Generierung von Miniaturbildern und Webdarstellungen für PDF- und AI-Dateien mithilfe der Standardmethoden zu verhindern:
 
    * Open the **[!UICONTROL Process Thumbnails]** step, and add `application/pdf` or `application/postscript` in the **[!UICONTROL Skip Mime Types]** field under the **[!UICONTROL Thumbnails]** tab as necessary.
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
+
    ![Konfiguration zum Überspringen der Miniaturansicht-Verarbeitung für ein Bildformat](assets/web_enabled_imageskiplist.png)
 
 1. Open the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type `application/pdf`, `application/postscript`, or `application/illustrator` from the **[!UICONTROL MIME Types]** list.
@@ -47,6 +49,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    * MIME-Typen: `application/pdf` oder `application/postscript`
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
+
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
    * `-d`: Markieren, um eine reibungslose Wiedergabe von Text, Vektorgrafiken und Bildern zu ermöglichen. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
@@ -84,6 +87,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. Hinzufügen benutzerdefinierte Miniaturansicht-Konfiguration nach Bedarf.
+
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
    * `-d`: Markieren, um eine reibungslose Wiedergabe von Text, Vektorgrafiken und Bildern zu ermöglichen. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
