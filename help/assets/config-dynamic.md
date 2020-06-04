@@ -10,10 +10,10 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: 5eb05c69b2236d92504305ca076734bf7fac21e2
 workflow-type: tm+mt
 source-wordcount: '8030'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -224,7 +224,7 @@ To disable dynamic media after you have enabled it, you remove the `-r dynamicme
 
 If you are upgrading AEM Dynamic Media from 6.3 to 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
-**Hinweis**: Wenn Sie Ihre AEM-Instanz im Kompatibilitätsmodus ausführen – d. h. wenn Sie das Kompatibilitätspaket installiert haben –, müssen Sie diese Befehle nicht ausführen.
+**Hinweis**: Wenn Sie Ihre AEM-Instanz im Kompatibilitätsmodus ausführen, d. h. das Kompatibilitätspaket installiert ist, müssen Sie diese Befehle nicht ausführen.
 
 Bei allen Upgrades – mit oder ohne Kompatibilitätspaket – können Sie die standardmäßig in Dynamic Media vorhandenen Viewer-Vorgaben kopieren, indem Sie unter Linux den folgenden curl-Befehl ausführen:
 
@@ -965,7 +965,7 @@ Advanced use cases could use a manual configure `icc=` modifier to explicitly se
 * `iccEmbed` – [https://marketing.adobe.com/resources/help/de_DE/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/de_DE/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
 
 >[!NOTE]
-Der Standardsatz von Adobe-Profilen für Farben ist nur verfügbar, wenn Sie [Feature Pack 12445](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) aus Package Share oder [Feature Pack 12445 aus der Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert haben. All feature packs and service packs are available via [Package Share](https://www.adobeaemcloud.com/content/packageshare.html ) and [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 enthält die Adobe-Farbprofile.
+Der Standardsatz von Adobe-Profilen für Farben ist nur verfügbar, wenn Sie [Feature Pack 12445 aus Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) oder [Feature Pack 12445 aus der Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert haben. All feature packs and service packs are available via [Package Share](https://www.adobeaemcloud.com/content/packageshare.html ) and [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 enthält die Adobe-Farbprofile.
 
 ### Installieren von Feature Pack 12445 {#installing-feature-pack}
 
