@@ -3,10 +3,10 @@ title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften i
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 52%
+source-wordcount: '2709'
+ht-degree: 51%
 
 ---
 
@@ -119,7 +119,7 @@ Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
 * `./jcr:content/metadata/dc:title`: Speichert den Wert im Metadatenknoten des Assets als die Eigenschaft `dc:title`.
 
-* `./jcr:created`: Zeigt die JCR-Eigenschaft am Asset-Knoten an. Wenn Sie diese Eigenschaften konfigurieren, empfiehlt Adobe, dass Sie sie als &quot;Bearbeiten deaktivieren&quot;markieren. Die Eigenschaften sind geschützt. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`: Zeigt die JCR-Eigenschaft am Asset-Knoten an. Wenn Sie diese Eigenschaften konfigurieren, empfiehlt Adobe, sie als &quot;Bearbeiten deaktivieren&quot;zu markieren und kein Datumsfeld an `./jcr:created`zu binden. Es handelt sich um eine geschützte Eigenschaft. Wenn DAM-Benutzer versuchen, Assets zu aktualisieren, führt dies zu dem Fehler, dass [!UICONTROL Asset(s) nicht geändert]wurden. Wenn Sie sich entscheiden, ein Datumsfeld dieser JCR-Eigenschaft zuzuordnen, verwenden Sie das Standard-Schema. Kopieren Sie das von Adobe bereitgestellte Standard-Metadaten-Schema und ändern Sie es, da das Datumsfeld im Standard-Schema zugeordnet wird `./jcr:created`.
 
 Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt angezeigt wird, sollte der Eigenschaftenpfad keine Leerzeichen enthalten.
 
