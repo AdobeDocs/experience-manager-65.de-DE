@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 79%
 
 ---
 
@@ -21,6 +24,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 
 **Mit der Aktualisierung auf 6.5**
 
+* [ContextHub-Konfigurationen](#contexthub-6.5)
 * [Workflow-Instanzen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
 * [Workflow-Modelle](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [Workflow-Starter](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
@@ -49,6 +53,21 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 * [E-Mail-Vorlagen für die Workflow-Benachrichtigung](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## Mit der Aktualisierung auf 6.5 {#with-upgrade}
+
+### ContextHub-Konfigurationen {#contexthub-6.5}
+
+Ab AEM 6.4 gibt es keine ContextHub-Standardkonfiguration mehr. Therefore on the root level of the site a `cq:contextHubPathproperty` should be set to indicate which configuration should be used.
+
+1. Navigieren Sie zum Stammverzeichnis der Site. 
+1. Öffnen Sie die Seiteneigenschaften der Stammseite und wählen Sie die Registerkarte Personalisierung aus. 
+1. Geben Sie im Feld ContextHub-Pfad Ihren Pfad zur ContextHub-Konfiguration ein.
+
+Additionally on the ContextHub configuration, the `sling:resourceType` needs to be updated to be relative and not absolute.
+
+1. Open the properties of ContextHub configuration node in CRX DE Lite, e.g. `/apps/settings/cloudsettings/legacy/contexthub`
+1. Ändern `sling:resourceType` von `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` zu `granite/contexthub/cloudsettings/components/baseconfiguration`
+
+Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein. 
 
 ### Workflow-Modelle {#workflow-models}
 
@@ -117,7 +136,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td>
-   <td>Bei expliziten Pfadverweisen im <code>
+   <td>Bei allen expliziten Pfadverweisen im <code>
      custom
     </code> Code auf den vorherigen Speicherort sollte auch der neue Speicherort berücksichtigt werden. Dies ist zu empfehlen, denn dieser Code wurde für die Verwendung in Verbindung mit AEM-Workflow-APIs überarbeitet.</td>
   </tr>
