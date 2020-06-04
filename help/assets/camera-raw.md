@@ -3,17 +3,17 @@ title: '[!DNL Adobe Camera Raw]-Unterstützung.'
 description: Erfahren Sie, wie Sie die Unterstützung [!DNL Adobe Camera Raw] aktivieren [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: bf840b0e13e58f961c32b0231e4b691cb47b947a
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 30%
+source-wordcount: '418'
+ht-degree: 28%
 
 ---
 
 
 # Bilder mit Camera Raw verarbeiten {#camera-raw-support}
 
-Sie können die [!DNL Adobe Camera Raw] Unterstützung aktivieren, um Rohdateiformate wie CR2, NEF und RAF zu verarbeiten und die Bilder im JPEG-Format zu rendern. Die Funktion wird bei [!DNL Adobe Experience Manager Assets] der Verwendung des [Camera Raw-Pakets](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt, das über Package Share verfügbar ist.
+Sie können die [!DNL Adobe Camera Raw] Unterstützung aktivieren, um Rohdateiformate wie CR2, NEF und RAF zu verarbeiten und die Bilder im JPEG-Format zu rendern. Die Funktion wird bei [!DNL Adobe Experience Manager Assets] der Verwendung des [Camera Raw-Pakets](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt, das über Package Share oder über die [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)verfügbar ist.
 
 >[!NOTE]
 >
@@ -21,13 +21,14 @@ Sie können die [!DNL Adobe Camera Raw] Unterstützung aktivieren, um Rohdateifo
 
 Gehen Sie wie folgt vor, um die [!DNL Camera Raw] Unterstützung in [!DNL Experience Manager Assets]zu aktivieren:
 
-1. Laden Sie das [Camera Raw-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) von Package Share oder von der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg)herunter.
+1. Laden Sie das [Camera Raw-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) von Package Share oder von der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)herunter.
 1. Greife Sie auf `https://[aem_server]:[port]/workflow` zu. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Open the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
 
    * **[!UICONTROL Miniaturansichten]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL MIME-Typen überspringen]**: `skip:image/dng, skip:image/x-raw-(.*)`
+
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
 1. Geben Sie auf der Registerkarte &quot; **[!UICONTROL Web-aktiviertes Bild]** &quot;im Feld &quot;Liste **** überspringen&quot; `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
@@ -44,6 +45,7 @@ Gehen Sie wie folgt vor, um die [!DNL Camera Raw] Unterstützung in [!DNL Experi
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+
    ![chlimage_1-130](assets/chlimage_1-336.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
