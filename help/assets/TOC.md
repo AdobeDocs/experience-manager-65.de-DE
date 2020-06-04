@@ -4,9 +4,9 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Benutzerhandbuch zu Experience Manager 6.5 Assets
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f2679ffd388893e876d79a4fe50e9761e14f31
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '639'
 ht-degree: 55%
 
 ---
@@ -52,6 +52,7 @@ ht-degree: 55%
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
+   + [3D-Dimensionsbilder](assets-3d.md)
    + [Bildsets](image-sets.md)
    + [Panoramabilder](panoramic-images.md)
    + [Gemischte Mediensets](mixed-media-sets.md)
