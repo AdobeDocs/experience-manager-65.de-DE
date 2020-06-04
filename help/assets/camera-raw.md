@@ -3,10 +3,10 @@ title: '[!DNL Adobe Camera Raw]-Unterstützung.'
 description: Erfahren Sie, wie Sie die Unterstützung [!DNL Adobe Camera Raw] aktivieren [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 32%
+source-wordcount: '392'
+ht-degree: 30%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können die [!DNL Adobe Camera Raw] Unterstützung aktivieren, um Rohdateifo
 
 Gehen Sie wie folgt vor, um die [!DNL Camera Raw] Unterstützung in [!DNL Experience Manager Assets]zu aktivieren:
 
-1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
+1. Laden Sie das [Camera Raw-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) von Package Share oder von der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg)herunter.
 1. Greife Sie auf `https://[aem_server]:[port]/workflow` zu. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Open the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
