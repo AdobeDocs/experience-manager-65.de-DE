@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 2f0e626aa16a62203755e29800a5935b350ffe79
+source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
 workflow-type: tm+mt
-source-wordcount: '2162'
-ht-degree: 13%
+source-wordcount: '2144'
+ht-degree: 14%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 13%
 
 Mit dynamischen Medien können Sie 3D-Assets hochladen, verwalten, Ansicht und bereitstellen - als eindrucksvolle Erlebnisse.
 
-* Ein Klick auf die Veröffentlichung von 3D-Bildern (mithilfe der **[!UICONTROL Schnellveröffentlichung]** in der Symbolleiste), um die URL zu generieren.
-* Optimierte Unterstützung für die Anzeige von 3D-Assets mit der hochwertigen, interaktiven Dimensions-Viewer-Vorgabe auf Basis von Adobe Dimension. Die Viewer-Vorgabe enthält u. a. eine Sammlung interaktiver Kamerasysteme, mit denen Sie umkreisen, zoomen und schwenken können.
+* Ein Klick auf die Veröffentlichung (mithilfe der **[!UICONTROL Schnellveröffentlichung]** in der Symbolleiste) von 3D-Assets, um eine URL zu generieren.
+* Optimierte Unterstützung für die Anzeige von 3D-Assets mit der hochwertigen, interaktiven Dimensions-Viewer-Vorgabe auf Basis von Adobe Dimension.
 * Mit der 3D-Media-WCM-Komponente können Sie Ihren AEM-Siteseiten mühelos 3D-Elemente hinzufügen.
 
-Es gibt keine Installation oder Konfiguration irgendeiner Art, um 3D-Assets in dynamischen Medien zu verwenden.
+Für die Verwendung von 3D-Assets in dynamischen Medien ist keine zusätzliche Konfiguration erforderlich.
 
 ![Schuh in 3D](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -36,10 +36,10 @@ Dynamische Medien unterstützen die folgenden 3D-Dateiformate:
 
 | 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
 |---|---|---|---|
-| GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Texturen mit dem Asset, anstatt sie als externe Bilder zu referenzieren. |
+| GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung nur für die Aufnahme; keine Anzeige oder Interaktion verfügbar ist.* USDZ ist das proprietäre 3D-Format von Apple, das nur von Safari oder iOS Ansicht werden kann. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung nur für die Aufnahme; keine Anzeige oder Interaktion verfügbar ist.* USDZ ist ein proprietäres 3D-Format, das nativ von Safari- und iOS-Geräten angezeigt werden kann. |
 
 ## Quick Beginn: 3D-Assets in dynamischen Medien {#quick-start-three-d}
 
@@ -149,7 +149,8 @@ Siehe auch [Anzeigen einer Asset-Vorschau über die Software-Oberfläche](/help/
 
    * Klicken Sie rechts oben auf der Seite auf **[!UICONTROL Vorschau]** , um in den **[!UICONTROL Vorschau]** -Modus zu wechseln.
    * Löschen Sie `/editor.html` aus der Seiten-URL im Browser.
-   ![3D-Asset, das innerhalb der 3D-Medienkomponente](/help/assets/assets-dm/3d-asset-in-3d-media.png)angezeigt wird Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschau]** -Modus angezeigt.
+
+Ein vollständig interaktives 3D-Asset, wie in    ![3D-Asset, das innerhalb der 3D-Medienkomponente](/help/assets/assets-dm/3d-asset-in-3d-media.png)angezeigt wird Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschau]** -Modus angezeigt.
 
 1. Führen Sie im Modus **[!UICONTROL Vorschau]** einen der folgenden Schritte aus:
 
@@ -280,6 +281,7 @@ Siehe auch [Veröffentlichen von Seiten](/help/sites-authoring/publishing-pages.
    * Das 3D-Asset ist ein unterstütztes Format (GLB, OBJ, STL und USDZ).
    * Das 3D-Asset wurde in das Dynamic Media Image Production System (IPS) integriert.
    * Das 3D-Asset wird veröffentlicht.
+
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
 1. Tippen Sie auf **[!UICONTROL URL]** , um die Produktions-URL des 3D-Assets anzuzeigen.
