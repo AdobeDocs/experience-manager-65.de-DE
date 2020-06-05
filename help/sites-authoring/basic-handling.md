@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '3010'
-ht-degree: 92%
+source-wordcount: '2979'
+ht-degree: 93%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 92%
    >
 * Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -89,10 +90,6 @@ Das Navigationsfenster bietet Zugriff auf die AEM-Konsolen:
 
 Der Titel der Browser-Registerkarte wird aktualisiert, um Ihren Standort während der Navigation durch die Konsolen und Inhalte widerzuspiegeln.
 
->[!NOTE]
->
->Der Registerkartentitel spiegelt den Speicherort ab [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) wider.
-
 Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 
 <table>
@@ -122,7 +119,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
    <td>In dieser Konsole können Sie <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen, verwalten und verarbeiten.</td>
   </tr>
   <tr>
-   <td>Personalisierung   </td>
+   <td>Personalisierung </td>
    <td>Diese Konsole bietet ein <a href="/help/sites-authoring/personalization.md">Framework aus Tools für die Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse</a>.</td>
   </tr>
   <tr>
@@ -233,10 +230,6 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
    In der **Sites** -Konsole gibt es die hinzugefügte Option zum **Überspringen zum Hauptinhalt**. Dies wird sichtbar, wenn Sie die Kopfzeilenoptionen *durch Drücken* der Tabulatortaste durchlaufen und die Navigation beschleunigen, indem Sie die Standardelemente in der Produktsymbolleiste überspringen und Sie direkt zum Hauptinhalt weiterleiten können.
 
    ![bh-30](assets/bh-30.png)
-
-   >[!NOTE]
-   >
-   >Der **Befehl &quot;Zu Hauptinhalt** überspringen&quot;ist ab [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) verfügbar.
 
 ## Aufrufen der Hilfe {#accessing-help}
 
@@ -422,6 +415,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 * Sie können im Baum nach oben und unten navigieren, indem Sie auf einen Ressourcennamen oder den Pfeil rechts vom Ressourcennamen tippen oder klicken.
 
    * Beim Tippen bzw. Klicken werden Ressourcenname und Pfeil hervorgehoben.
+
    ![bh-17](assets/bh-17.png)
 
    * Die untergeordneten Elemente der ausgewählten Ressource werden in der Spalte rechts neben der Ressource angezeigt.
@@ -433,6 +427,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * Dann erscheint ein Häkchen auf der Miniaturansicht und der Ressourcenname wird hervorgehoben dargestellt.
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
+
    ![bh-18](assets/bh-18.png)
 
    Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird sie zusammen mit den folgenden Details in der letzten Spalte angezeigt:
@@ -496,6 +491,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * **Seitenanalyse**
    * **Individuelle Besucher**
    * **Zeit auf Seite**
+
    ![bh-21](assets/bh-21.png)
 
    Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. Unter Umständen muss der Autor auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. In diesem Fall ist die Anzeige des Seitennamens (der sich normalerweise nicht ändert) äußerst hilfreich, wenn der Autor die Sprache der Seite nicht kennt.
