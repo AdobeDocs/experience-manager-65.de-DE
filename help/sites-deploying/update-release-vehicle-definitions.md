@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
+source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 49%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
 
 Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe Experience Manager (AEM), einschließlich Vollversionen, Feature Packs und Services Packs, die Adobe für Kunden bereitstellt.
 
->[!Note]
+>[!NHinweis]
 >
 >Versionsplan für AEM-Updateversionen finden Sie im Fahrplan für [AEM-Updateversionen](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
 
@@ -39,8 +42,8 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Benennung </strong></td>
    <td>
     <ul>
-     <li>Die Versionsnummern für größere Releases steigen nach der Formel X+1.Y.Z. </li>
-     <li>Versionsnummern für kleinere Releases steigen je nach Formel X.Y+1.Z</li>
+     <li>Die Versionsnummern für größere Releases erhöhen sich nach der Formel X+1.Y.Z. </li>
+     <li>Versionsnummern für kleinere Releases erhöhen sich je nach Formel X.Y+1.Z</li>
     </ul> <p>Dabei ist X die primäre Versionsnummer, Y die sekundäre Versionsnummer und Z die Patch-Nummer.</p> </td>
   </tr>
   <tr>
@@ -56,8 +59,8 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Dokumentation</strong></td>
    <td>
     <ul>
-     <li>Versionshinweise finden Sie im Dokumentationsportal</li>
-     <li>Dokumentation zu Funktionen, Verbesserungen und Fehlerbehebungen finden Sie im Dokumentationsportal</li>
+     <li>Versionshinweise finden Sie im Dokumentationsportal.</li>
+     <li>Dokumentation zu Funktionen, Verbesserungen und Fehlerkorrekturen finden Sie im Dokumentationsportal</li>
     </ul> </td>
   </tr>
   <tr>
@@ -151,7 +154,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Definition</strong></td>
    <td>
     <ul>
-     <li>Einzelauslieferungsmodell von Korrekturen</li>
+     <li>Ein Versand-Modell für die Freigabe von Korrekturen</li>
      <li>Aggregator-Inhaltspaket mit Inhaltspaket einzelner Komponenten</li>
      <li>CFPs sind ein Rollover von Hotfixes, und es gibt keine Verbesserungen.</li>
     </ul> </td>
@@ -186,93 +189,6 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
   <tr>
    <td><strong>Teststufe </strong></td>
    <td>Auf Integration validierte Qualitätssicherung und Regressionstests</td>
-  </tr>
- </tbody>
-</table>
-
-## Cumulative Oak Fix Pack {#oak-cumulative-fix-pack}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definition</strong></td>
-   <td>
-    <ul>
-     <li>Ähnlich wie eine Standard-CFP, enthält jedoch nur Korrekturen zu Eichen</li>
-     <li>COFP ist selbstständig (keine Abhängigkeiten). Kunden müssen sich nicht über die Suche nach/das Auflösen von Abhängigkeiten den Kopf zerbrechen. [1]</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Benennung </strong></td>
-   <td>oak &lt;version&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Lieferumfang </strong></td>
-   <td>COFP ist ein kumulatives Fix Pack mit Fehlerbehebungen aller Oak Komponenten für eine bestimmte 1.x Version. Wenn der Kunde z. B. COHF 1.x.3 anwendet, gilt: COHF 1.x.3. = COHF 1.x.1 + COHF 1.x.2.</td>
-  </tr>
-  <tr>
-   <td><strong>Dokumentation</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Veröffentlichungsintervall </strong></td>
-   <td><p>Erforderlich</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Verfügbarkeit und Installation </strong></td>
-   <td>
-    <ul>
-     <li>Der COFP-Installationsprozess wurde vereinfacht, um die Kundenerfahrung zu verbessern. (Kunden können ein einziges Paket für alle Komponenten installieren.)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Teststufe </strong></td>
-   <td><p>Qualitätssicherung validiert</p> </td>
-  </tr>
- </tbody>
-</table>
-
-## Hotfix {#hot-fix}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definition</strong></td>
-   <td><p>Paket, das eine oder mehrere Dateien enthält, die zur Behebung eines Produktfehlers erstellt wurden, der wesentliche Dienste erheblich beeinträchtigt oder den Geschäftsbetrieb erheblich beeinträchtigt. </p> </td>
-  </tr>
-  <tr>
-   <td><strong>Benennung </strong></td>
-   <td>cq-&lt;Release-Version&gt;-hotfix-&lt;Hotfix-ID&gt;-&lt;Hotfix-Version&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Lieferumfang </strong></td>
-   <td>Beinhaltet Korrekturen für ein bestimmtes Problem</td>
-  </tr>
-  <tr>
-   <td><strong>Dokumentation</strong></td>
-   <td>Versionshinweise zu den öffentlichen Hotfixes sind nur nach Kundenanfragen über das AEM-Support-Portal verfügbar.</td>
-  </tr>
-  <tr>
-   <td><strong>Veröffentlichungsintervall </strong></td>
-   <td>Erforderlich</td>
-  </tr>
-  <tr>
-   <td><strong>Verfügbarkeit und Installation </strong></td>
-   <td>
-    <ul>
-     <li>Wird als Paket bereitgestellt</li>
-     <li>Steht über Package Share zur Verfügung</li>
-     <li>Abhängig vom neuesten Service Pack veröffentlicht</li>
-     <li>Die meisten Hotfixes sind eigenständig, sofern nicht anders angegeben. Sie können in beliebiger Reihenfolge installiert werden. Sie können über die Registerkarte „Package Share Details“ des Elements „Abhängigkeiten“ verifiziert werden.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Teststufe </strong></td>
-   <td>
-    <ul>
-     <li>Validiert durch die Kundenunterstützung</li>
-     <li>Für AEM-Hotfixes gilt nicht die gleiche Qualitätssicherung wie für Service Packs oder Produktversionen. Daher sollten sie zuerst in einer Staging-Umgebung im Zuge des Qualitätsbereitstellungsprozesses geprüft werden.</li>
-    </ul> </td>
   </tr>
  </tbody>
 </table>
