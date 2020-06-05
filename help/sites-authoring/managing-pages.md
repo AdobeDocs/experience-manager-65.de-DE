@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 91%
+source-wordcount: '2334'
+ht-degree: 94%
 
 ---
 
@@ -140,7 +140,7 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/sites-developing/naming-conventions.md) Eine Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/sites-developing/naming-conventions.md) Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
 
 ![caop-02](assets/caop-02.png)
 
@@ -200,6 +200,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
    * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken/tippen Sie auf **Weiter**, um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![caop-04](assets/caop-04.png)
 
 1. Im letzten Schritt des Assistenten haben Sie folgende Möglichkeiten:
@@ -207,6 +208,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
    * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
 
    * Verwenden Sie **Zurück**, um zur Vorlagenauswahl zurückzukehren.
+
    Die Schlüsselfelder sind:
 
    * **Titel**:
@@ -249,6 +251,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Bearbeiten** aus:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -258,7 +261,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >[!NOTE]
 Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite   {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite     {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -267,6 +270,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Seite kopieren** aus:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -275,15 +279,13 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    Wenn Sie sich im Auswahlmodus befinden, wird dieser automatisch beendet, sobald die Seite kopiert wird.
 
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Kopie der Seite speichern möchten.
-1. Das Symbol &quot; **Einfügen** &quot;ist mit einem Dropdownpfeil direkt rechts verfügbar:
+1. Das Symbol **Einfügen** ist mit einem Dropdown-Pfeil direkt rechts verfügbar:
 
    ![Einfügen](assets/paste-without-children.png)
 
-   Wählen Sie eine der folgenden Möglichkeiten:
-   * Wählen Sie das Symbol **Seite einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
-   * Wählen Sie den Dropdownpfeil aus, um die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. untergeordnete Seiten werden nicht kopiert.
-   >[!NOTE]
-   Die Option &quot; **Ohne untergeordnete Elemente** einfügen&quot;ist ab [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) verfügbar.
+   Wählen Sie eine der folgenden Möglichkeiten aus:
+   * Wählen Sie das Symbol **Einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
+   * Wählen Sie den Dropdown-Pfeil aus, um die Option **Ohne untergeordnete Elemente einfügen** anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. Untergeordnete Seiten werden nicht kopiert.
 
    >[!NOTE]
    Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
@@ -309,6 +311,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Verschieben** aus:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -320,6 +323,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![caop-07](assets/caop-07.png)
 
    Der Seitenname kann unverändert bleiben, wenn Sie die Seite nur verschieben.
@@ -334,6 +338,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
       * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken. 
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
+
    >[!NOTE]
    Standardmäßig wird das übergeordnete Element der Seite, die Sie verschieben/umbenennen, als Ziel ausgewählt.
 
@@ -367,7 +372,7 @@ Wenn es keine Verweise auf die Seite gibt, wird der Schritt **Anpassen/Erneut ve
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Als Sicherheitsmaßnahme ist das Seitensymbol **Löschen** nicht per Schnellzugriff verfügbar.
+   Als Sicherheitsmaßnahme ist das Symbol **Löschen** nicht per Schnellzugriff verfügbar.
 
 1. Es wird ein Bestätigungsdialogfeld angezeigt.
 
