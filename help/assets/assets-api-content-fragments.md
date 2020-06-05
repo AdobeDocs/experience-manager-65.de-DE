@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18dc05876337629b7561320ff6f0945e3e785ea3
+source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 94%
@@ -29,6 +29,7 @@ ht-degree: 94%
 >
 >* Assets-REST-API
 >* einschließlich Unterstützung für Inhaltsfragmente
+
 >
 >
 Die aktuelle Implementierung der AEM Assets-HTTP-API ist REST.
@@ -129,6 +130,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >
 >* [Erklärung: CORS/AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-article-understand.html) 
 >* [Video: Entwicklung für CORS mit AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -201,7 +203,7 @@ Ein [Inhaltsfragment](/help/assets/content-fragments.md) ist ein spezieller Asse
 
 Da es einige Unterschiede zu *Standard*-Assets (z. B. Bildern oder Audio) aufweist, gelten einige zusätzliche Regeln für die Verarbeitung.
 
-#### Darstellung   {#representation}
+#### Darstellung     {#representation}
 
 Inhaltsfragmente:
 
@@ -210,7 +212,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Nutzlast eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente   {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente     {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Nutzlast ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -292,7 +294,7 @@ Es gibt einige Beschränkungen:
 
 Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden Status-Codes angezeigt:
 
-* **202 (OK)**
+* **200 (OK)**
 
    Wird zurückgegeben, wenn:
 
@@ -345,6 +347,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
 
    ```xml
@@ -360,7 +363,7 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    }
    ```
 
-## API-Referenz   {#api-reference}
+## API-Referenz     {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 
