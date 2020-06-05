@@ -4,15 +4,15 @@ description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 S
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d51577195e969ff8af31be49159ff575e3654cc9
+source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
 workflow-type: tm+mt
-source-wordcount: '4476'
+source-wordcount: '4486'
 ht-degree: 12%
 
 ---
 
 
-# Adobe Experience Manager 6.5 Service Pack Release Notes {#aem-service-pack-release-notes}
+# Versionshinweise zu Adobe Experience Manager 6.5 Service Pack {#aem-service-pack-release-notes}
 
 ## Versionshinweise {#release-information}
 
@@ -23,13 +23,13 @@ ht-degree: 12%
 | Datum       | 04. Juni 2020 |
 | Download-URL | [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.5.0-Service-Pack), [Softwareverteilung ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
-## What&#39;s included in Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
+## Inhalt von Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
-Adobe Experience Manager 6.5.5.0 is an important update that includes new features, key customer requested enhancements and performance, stability, security improvements, released since the general availability of 6.5 release in **April 2019**. Es kann über Adobe Experience Manager (AEM) 6.5 installiert werden.
+Adobe Experience Manager 6.5.5.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Verbesserungen sowie Leistung, Stabilität und Sicherheitsverbesserungen umfasst. Dieses Update wurde seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht. Es kann über Adobe Experience Manager (AEM) 6.5 installiert werden.
 
 Zu den wichtigsten Funktionen und Verbesserungen, die in AEM 6.5.5.0 eingeführt wurden, zählen:
 
-* Customizing the column names that display in AEM Inbox.
+* Anpassen der Spaltennamen, die in AEM Inbox angezeigt werden.
 
 * Verbesserung der Barrierefreiheit in verschiedenen Bereichen des AEM Web Content-Management (WCM), z. B. in den Bereichen Seiteneditor, Kernkomponenten, RTE und Admin-Benutzeroberfläche.
 
@@ -89,27 +89,27 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Das Dropdown-Feld &quot;Liste&quot;des Kombinationsfeldes (in verschiedenen Feldern auf verschiedenen Seiten) zeigt nun Einträge als Liste von Optionen an, die von Bildschirmlesehilfen angekündigt werden können (NPR-33516).
 
-* The sort functionality of sortable headers (in list view, [!UICONTROL Timeline] view, and [!UICONTROL Manage Publication] page) are now announced by screen readers and sorting controls on column headers are accessible using keyboard (NPR-32979).
+* Die Sortierfunktion sortierbarer Kopfzeilen (in Ansicht der Liste, Ansicht der [!UICONTROL Zeitschiene] und Seite Veröffentlichung [!UICONTROL verwalten] ) wird jetzt von Bildschirmlesehilfen angekündigt und die Sortiersteuerung auf Spaltenköpfen kann über die Tastatur aufgerufen werden (NPR-32979).
 
-* The clickable elements (such as comment cards, version updates, combo boxes, and chevron icons of menus) are now focusable and actionable using keyboard (NPR-33514).
+* Die anklickbaren Elemente (z. B. Kommentarkarten, Versionsupdates, Kombinationsfelder und Chevron-Symbole von Menüs) können jetzt über die Tastatur fokussiert und bearbeitet werden (NPR-33514).
 
-* Functionality (or purpose of action) of insights icons (for usage, impressions, and clicks) on [!UICONTROL Insights View] are now correctly announced by screen readers (NPR-33513).
+* Funktionen (oder Aktionszweck) von Insight-Symbolen (für die Verwendung, Impressionen und Klicks) in der [!UICONTROL Insight-Ansicht] werden jetzt von Bildschirmlesehilfen korrekt angekündigt (NPR-33513).
 
 * Schreibgeschützte Formularfelder (z. B. deaktivierte Felder auf der Registerkarte [!UICONTROL &quot;] Einfach&quot;von Asset- [!UICONTROL Eigenschaften]) können jetzt über die Tastatur fokussiert werden (NPR-33493, CQ-4273031).
 
-* Labels in various input fields are now permanent labels (thus accessible) and not just placeholder labels, which disappeared when text was entered (NPR-33475).
+* Bezeichnungen in verschiedenen Eingabefeldern sind nun dauerhafte Bezeichnungen (also barrierefrei) und nicht nur Platzhalterbeschriftungen, die bei der Texteingabe verschwanden (NPR-33475).
 
-* Different heading levels (such as page titles and section headings) are now perceived as headings with different levels to screen reader users (NPR-33471).
+* Verschiedene Überschriftenebenen (z. B. Seitentitel und Abschnittsüberschriften) werden nun als Überschriften mit unterschiedlichen Ebenen als Bildschirmlesehilfen-Benutzer wahrgenommen (NPR-33471).
 
 * Interaktive Elemente der Benutzeroberfläche, wie z. B. Links und Optionen (auf der Seite mit Kopf- und Zoomoptionen für Assets, Ordnernavigation), können jetzt über eine Tastatur aufgerufen werden (NPR-33468, CQ-4271412).
 
 * Die [!UICONTROL Optionen]-, [!UICONTROL Scope]- und [!UICONTROL Workflows] -Fortschrittsindikatoren auf der Seite &quot;Veröffentlichung  verwalten&quot;werden jetzt von Bildschirmlesehilfen als Fortschrittsindikatoren anstelle von Registerkarten korrekt gelesen (NPR-33416).
 
-* The color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast to be visible to users with limited vision and without perception of color (NPR-33414).
+* Die Farbe der Bewertungssymbole für Sterne (z. B. im [!UICONTROL Rating] -Bereich der Registerkarte &quot; [!UICONTROL Erweitert] &quot;in den Asset- [!UICONTROL Eigenschaften] oder in der Karten-Ansicht) wird geändert, damit der entsprechende Kontrast für Benutzer mit eingeschränkter Sichtbarkeit und ohne Farbwahrnehmung sichtbar ist (NPR-33414).
 
 * Nach oben zeigender Pfeil neben dem Feld [!UICONTROL Kommentar] auf der Seite mit den Asset-Details können Sie jetzt mit den Tastaturbefehlen (NPR-33397) aufrufen.
 
-* The expanded and collapsed states of [!UICONTROL Tags] dialog on asset [!UICONTROL Properties] and left rail navigation (on assets user interface) are now correctly announced by screen readers (NPR-33396).
+* Die erweiterten und reduzierten Zustände des Dialogfelds [!UICONTROL Tags] über Asset- [!UICONTROL Eigenschaften] und linke Schienennavigation (in der Assets-Benutzeroberfläche) werden jetzt von Bildschirmlesehilfen korrekt angekündigt (NPR-33396).
 
 * Die Titel aller durchsuchten Seiten auf [!DNL Adobe Experience Manager] Assets sind jetzt eindeutig (NPR-33343).
 
@@ -199,15 +199,15 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * In Protokollen zum Öffnen einer intelligenten Sammlung mit mehr als 10.000 Assets (NPR-32980) werden seitenübergreifende Warnungen angezeigt.
 
-* Asset names are changed to lowercase when moving assets from one folder to another in [!DNL Adobe Experience Manager] working on Dynamic Media Scene7 runmode (NPR-32995).
+* Beim Verschieben von Assets aus einem Ordner in einen anderen im [!DNL Adobe Experience Manager] Modus &quot;Dynamic Media Scene7&quot;wird der Asset-Name in Kleinbuchstaben geändert (NPR-32995).
 
-* A searched asset cannot be deleted after navigating to its properties from the search results and then going back to search results to delete it (NPR-32998).
+* Ein durchsuchtes Asset kann nicht gelöscht werden, nachdem es aus den Suchergebnissen zu seinen Eigenschaften navigiert und dann zu den Suchergebnissen zurückgekehrt ist, um es zu löschen (NPR-32998).
 
-* [!UICONTROL Next] option remains disabled on selecting destination folder in [!UICONTROL Move Assets] interface (NPR-33356).
+* [!UICONTROL Die nächste] Option bleibt bei der Auswahl des Zielordners in der Benutzeroberfläche &quot;Assets [!UICONTROL verschieben] &quot;deaktiviert (NPR-33356).
 
-* [!UICONTROL Next] option is not enabled on selecting parent node (where single child folder is visible) and then selecting child folder (NPR-33275).
+* [!UICONTROL Die nächste] Option ist nicht aktiviert, wenn der übergeordnete Knoten ausgewählt (wobei ein einzelner untergeordneter Ordner sichtbar ist) und anschließend der untergeordnete Ordner ausgewählt wird (NPR-33275).
 
-* Check in and check out permissions are disabled on Adobe Asset Link (AAL) for users with delete permission, even if other permissions such as read, create, or modify are allowed to them (NPR-33272).
+* Berechtigungen zum Ein- und Auschecken sind für Benutzer mit Berechtigung zum Löschen auf Adobe Asset Link (AAL) deaktiviert, auch wenn ihnen andere Berechtigungen wie Lesen, Erstellen oder Ändern zugewiesen werden dürfen (NPR-33272).
 
 * Im Dialogfeld zum Herunterladen von Assets (NPR-33167) sind keine Smart-Zuschneiden-Darstellungen verfügbar.
 
@@ -269,37 +269,37 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Übersetzte Tags werden nicht aus Übersetzungsdiensten von Drittanbietern (NPR-33154) in AEM importiert.
 * Auf der Seite &quot;Übersetzungskonfiguration&quot;wird ein falscher Übersetzungsanbieter angezeigt als der für die Übersetzung verwendete (NPR-32971).
-* Adding an experience fragment folder to an existing translation project creates a new project (NPR-32843).
-* A `NullPointerException` error is seen in the logs on running a translation job (NPR-32628).
+* Durch das Hinzufügen eines Erlebnisfragmentordners zu einem vorhandenen Übersetzungsprojekt wird ein neues Projekt erstellt (NPR-32843).
+* In den Protokollen zur Ausführung eines Übersetzungsauftrags (NPR-32628) wird ein `NullPointerException` Fehler angezeigt.
 
 ### WCM {#wcm-6550}
 
-* Page Editor - The [!DNL Sites] Page Editor does not allow the keyboard-only users to skip to the main content instead of shifting tab focus through all options available in the header (CQ-4293883).
-* Page Editor  - Panels that use Well component and include saved data do not display due to updates in [!DNL Chrome] and [!DNL Firefox] versions (CQ-4292995).
-* MSM - Deleting a component from the page does not delete the component from the published version of the page (CQ-4292360).
+* Seiten-Editor - Der [!DNL Sites] Seiten-Editor erlaubt es Benutzern, die nur über die Tastatur verfügen, nicht, zum Hauptinhalt zu springen, anstatt den Tabulatorfokus durch alle verfügbaren Optionen in der Kopfzeile zu verschieben (CQ-4293883).
+* Seiten-Editor - Bedienfelder, die Gut-Komponente verwenden und gespeicherte Daten enthalten, werden aufgrund von Aktualisierungen in [!DNL Chrome] und [!DNL Firefox] Versionen nicht angezeigt (CQ-4292995).
+* MSM - Das Löschen einer Komponente von der Seite löscht die Komponente nicht aus der veröffentlichten Version der Seite (CQ-4292360).
 
 ### Brand Portal {#assets-brand-portal-6550}
 
-* Removing a published metadata schema from [!DNL Brand Portal] results in an error (CQ-4292063).
-* If an administrator configures [!DNL Experience Manager Assets] 6.5.4 with Brand Portal via Adobe Developer Console, the [!DNL Brand Portal] user is not able to publish a contribution folder&#39;s asset from [!DNL Brand Portal] to [!DNL Experience Manager]. (NPR-33046).
-* Duplicate replication of the parent folders causing conflicts (NPR-33001).
+* Wenn Sie ein veröffentlichtes Metadaten-Schema aus [!DNL Brand Portal] den Ergebnissen entfernen, wird ein Fehler ausgegeben (CQ-4292063).
+* Wenn ein Administrator [!DNL Experience Manager Assets] 6.5.4 über die Adobe Developer Console mit dem Markenportal konfiguriert, kann der [!DNL Brand Portal] Benutzer das Asset des Beitragsordners nicht von [!DNL Brand Portal] bis veröffentlichen [!DNL Experience Manager]. (NPR-33046).
+* Duplikat-Replikation der übergeordneten Ordner, die Konflikte verursachen (NPR-33001).
 
 ### Communities {#communities-6550}
 
-* Cannot delete a card in moderation console using the quick edit menu option (NPR-33117).
-* An error occurs on accessing the [!UICONTROL Activity Stream] page (NPR-33146).
-* Groups deleted on author instance are not removed from all publish instances (NPR-33199).
-* Authors, after creating a new group, are not redirected to the [!UICONTROL Community Group] section on [!DNL Internet Explorer] 11 (NPR-33205).
-* Accessing a message in AEM Inbox does not change the status of the message to Read (NPR-32764).
-* Editing a [!DNL Communities] group and changing the thumbnail image does not update the group thumbnail image (NPR-32599).
-* A user is not able to send an email to another user in a community (NPR-32598).
-* A submitted blog does not display until the user refreshes the page (NPR-32391).
-* While creating a version of notifications and subscriptions of User Generated Content (UGC), an incorrect ID of the source page is stored (CQ-4279355, CQ-4289703).
+* Karten können nicht in der Moderationskonsole mit der Schnellbearbeitungs-Menüoption (NPR-33117) gelöscht werden.
+* Beim Zugriff auf die [!UICONTROL Aktivität Stream] -Seite (NPR-33146) tritt ein Fehler auf.
+* In der Autoreninstanz gelöschte Gruppen werden nicht aus allen Veröffentlichungsinstanzen entfernt (NPR-33199).
+* Autoren werden nach der Erstellung einer neuen Gruppe nicht in den Abschnitt [!UICONTROL Community Group] unter [!DNL Internet Explorer] 11 (NPR-33205) umgeleitet.
+* Der Zugriff auf eine Nachricht in AEM Inbox ändert den Status der Nachricht in Lesen (NPR-32764) nicht.
+* Durch Bearbeiten einer [!DNL Communities] Gruppe und Ändern der Miniaturansicht wird das Gruppenminiaturbild nicht aktualisiert (NPR-32599).
+* Ein Benutzer kann keine E-Mail an einen anderen Benutzer in einer Community senden (NPR-32598).
+* Ein gesendeter Blog wird erst angezeigt, wenn der Benutzer die Seite aktualisiert (NPR-32391).
+* Beim Erstellen einer Version von Benachrichtigungen und Abonnements von User Generated Content (UGC) wird eine falsche ID der Quellseite gespeichert (CQ-4279355, CQ-4289703).
 
 ### Workflow {#workflow-6550}
 
-* The [!UICONTROL Timeline] option in the left rail takes more time to load than expected (NPR-32851).
-* After restarting an AEM instance, the email for the review task for a collection includes an incorrect payload link (NPR-32774).
+* Die [!UICONTROL Option &quot;Zeitschiene] &quot;in der linken Leiste dauert länger als erwartet (NPR-32851).
+* Nach dem Neustart einer AEM-Instanz enthält die E-Mail für die Review-Aufgabe für eine Sammlung einen falschen Payload-Link (NPR-32774).
 
 ### Forms {#forms-6550}
 
@@ -307,20 +307,20 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 >
 >Das AEM Service Pack enthält keine Fehlerbehebungen für AEM Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
-* Correspondence Management: The order of assets in a target area shuffles after submitting a letter (NPR-33359, NPR-33153).
-* Adaptive Forms: When a user edits an adaptive form, the [!UICONTROL Start Workflow] option available in the [!UICONTROL Page Information] menu does not work (NPR-33004).
-* Adaptive Forms: The user is not able to save an adaptive form with more than one attachment (NPR-32997).
-* Adaptive Forms: Changing the panel layout in an adaptive form results in an error (CQ-4293880).
-* Adaptive Forms: A new line to a string in an adaptive forms dictionary adds `&#xa;` characters to the dictionary (NPR-33266).
+* Correspondence Management: Die Reihenfolge der Vermögenswerte in einem Zielgruppen-Bereich wird nach der Einreichung eines Schreibens (NPR-33359, NPR-33153) geändert.
+* Adaptive Formulare: Wenn ein Benutzer ein adaptives Formular bearbeitet, funktioniert die Option [!UICONTROL Beginn-Workflow] im Menü &quot; [!UICONTROL Seiteninformationen] &quot;nicht (NPR-33004).
+* Adaptive Formulare: Der Benutzer kann ein adaptives Formular nicht mit mehr als einer Anlage speichern (NPR-32997).
+* Adaptive Formulare: Das Ändern des Bedienfeldlayouts in einem adaptiven Formular führt zu einem Fehler (CQ-4293880).
+* Adaptive Formulare: Eine neue Zeile zu einer Zeichenfolge in einem Wörterbuch für adaptive Formulare fügt dem Wörterbuch Zeichen hinzu (NPR-33266). `&#xa;`
 * Barrierefreiheit adaptiver Formulare: Wenn ein Benutzer ein adaptives Formular als HTML-Formular Vorschau, kann das [!UICONTROL Scribble-Signatur] -Feld den Tabstopp nicht beibehalten (NPR-33159).
-* Adaptive Forms accessibility: The error messages that display on submitting an adaptive form do not link to an `aria-describedBy` attribute (NPR-33071).
+* Barrierefreiheit adaptiver Formulare: Die Fehlermeldungen, die beim Senden eines adaptiven Formulars angezeigt werden, sind nicht mit einem `aria-describedBy` Attribut verknüpft (NPR-33071).
 * Barrierefreiheit adaptiver Formulare: Felder, die in einem adaptiven Formular als Pflichtfelder markiert sind, haben im ARIA-Schema (NPR-33070) nicht das obligatorische Attribut &quot;True&quot;.
-* PDFG Service: When a user converts a text file to a PDF, Japanese characters do not render correctly (NPR-33238).
+* PDFG-Dienst: Wenn ein Benutzer eine Textdatei in eine PDF-Datei konvertiert, werden japanische Zeichen nicht korrekt dargestellt (NPR-33238).
 * PDFG-Dienst: `CreatePDF` Vorgang kann eine PDF-Datei nicht in das PDF OCR-Format konvertieren (NPR-32994).
-* PDFG Service: PDF conversion fails for the 200th instance of an [!DNL OpenOffice] document (NPR-32766).
+* PDFG-Dienst: Die PDF-Konvertierung schlägt bei der 200. Instanz eines [!DNL OpenOffice] Dokuments fehl (NPR-32766).
 * BackendIntegration: Formulardatenmodellanforderungen schlagen fehl, da der Aktualisierungstoken aufgrund eines inaktiven Status (NPR-33169) abläuft.
-* Designer: Screen readers execute the tabbing order based on the default geographic order instead of the custom tabbing order defined in the XDP file (NPR-32160).
-* Designer: If the tagging option is enabled, the subform border disappears in the generated PDF output (NPR-32778).
+* Designer: Bildschirmlesehilfen führen die Tab-Reihenfolge basierend auf der geografischen Standardreihenfolge statt der benutzerdefinierten Tab-Reihenfolge aus, die in der XDP-Datei (NPR-32160) definiert ist.
+* Designer: Wenn die Tagging-Option aktiviert ist, wird der Rand des Teilformulars in der generierten PDF-Ausgabe (NPR-32778) ausgeblendet.
 
 ## Install 6.5.5.0 {#install}
 
@@ -329,7 +329,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * AEM 6.5.5.0 requires AEM 6.5. Check [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * Der Download des Service Packs ist in Adobe Package Share verfügbar, auf das Sie direkt über die AEM 6.5-Instanz zugreifen können.
 * Installieren Sie bei einer Implementierung mit MongoDB und mehreren Instanzen AEM 6.5.5.0 mithilfe von Package Manager auf einer der Autoreninstanzen.
-* Before installing, take a snapshot or a fresh backup of your AEM instance.
+* Erstellen Sie vor der Installation einen Schnappschuss oder eine neue Sicherung Ihrer AEM-Instanz.
 * Starten Sie die Instanz vor der Installation neu. Dies ist zwar nur dann erforderlich, wenn sich die Instanz noch im Aktualisierungsmodus befindet (und dies ist der Fall, wenn die Instanz von einer früheren Version aktualisiert wurde). Dennoch wird dies empfohlen, wenn die Instanz über einen längeren Zeitraum ausgeführt wurde.
 
 >[!NOTE]
@@ -340,11 +340,11 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 Führen Sie folgende Schritte aus, um das Service Pack in einer vorhandenen AEM 6.5-Instanz zu installieren:
 
-1. Click the [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.5.0-Service-Pack) or [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) link to download the package.
+1. Klicken Sie auf den Link [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.5.0-Service-Pack) oder [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) , um das Paket herunterzuladen.
 
 1. Öffnen Sie [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) und klicken Sie auf Paket **hochladen** , um das Paket hochzuladen.
 
-1. Select the package name and click **Install**.
+1. Wählen Sie den Paketnamen und klicken Sie auf **Installieren**.
 
 >[!NOTE]
 >
@@ -356,7 +356,7 @@ Führen Sie folgende Schritte aus, um das Service Pack in einer vorhandenen AEM�
 
 Es gibt zwei Möglichkeiten, AEM 6.5.5.0 automatisch in einer laufenden Instanz zu installieren:
 
-A. Place the package into `../crx-quickstart/install ` folder while the server is available online. Das Paket wird automatisch installiert.
+A. Platzieren Sie das Paket in einen `../crx-quickstart/install ` Ordner, während der Server online verfügbar ist. Das Paket wird automatisch installiert.
 
 B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/de/experience-manager/aem-previous-versions.html) - make sure that you use `cmd=install&recursive=true` - so the nested packages  are  installed.
 
@@ -419,11 +419,11 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 ## Bekannte Probleme {#known-issues}
 
-* If you are installing [!DNL Experience Manager] 6.5.5.0 with [!DNL Java] 11, restart the server after installing the Service Pack. Wenn Sie das Service Pack mit [!DNL Java] 8 installieren, ist kein Neustart erforderlich.
+* Wenn Sie [!DNL Experience Manager] 6.5.5.0 mit [!DNL Java] 11 installieren, starten Sie den Server nach der Installation des Service Packs neu. Wenn Sie das Service Pack mit [!DNL Java] 8 installieren, ist kein Neustart erforderlich.
 
 * Wenn ein Ordner in der Hierarchie umbenannt wird [!DNL Experience Manager Assets] und der verschachtelte Ordner, der ein Asset enthält, in veröffentlicht wird, wird [!DNL Brand Portal]der Titel des Ordners erst dann aktualisiert, [!DNL Brand Portal] wenn der Stammordner erneut veröffentlicht wird.
 
-* Die Aktualisierung von [!DNL chrome] Version 83 verursacht ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Firefox]andere Installationsoptionen für AEM-Standardpakete, um das Problem zu beheben.
+* Bei der Installation von AEM 6.5.5.0 verursacht die Aktualisierung von [!DNL Chrome] Version 83 ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Firefox]andere Installationsoptionen für AEM-Standardpakete, um das Problem zu beheben. Das Problem wird nach der Installation von AEM 6.5.5.0 behoben.
 
 * Es kann keine E-Mail mit dem AEM-Standard-E-Mail-Sender an den Remote-SMTP-Server gesendet werden, da nur die Kommunikation mit TLS v1.2 möglich ist. Entfernen Sie das Bundle `javax.mail:mail:1.5.0-b01` aus `system/console` und aktualisieren Sie die Bundles, um das Problem zu beheben.
 
@@ -451,8 +451,7 @@ Die folgenden Dokumente Liste der OSGi-Pakete und Inhaltspakete in AEM 6.5.5.0:
 Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Contact customer support](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
-For more information on accessing the support portal, see [Accessing the support portal](https://helpx.adobe.com/de/experience-manager/kb/accessing-aem-support-portal.html).
+* [Wenden Sie sich an den Support](https://docs.adobe.com/content/help/en/customer-one/using/home.html). Weitere Informationen zum Zugriff auf das Support-Portal finden Sie unter [Zugriff auf das Support-Portal](https://helpx.adobe.com/de/experience-manager/kb/accessing-aem-support-portal.html).
 
 >[!MORELIKETHIS]
 >
