@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2765'
+ht-degree: 5%
 
 ---
 
 
 # Analytics-Konfiguration für Communities-Funktionen {#analytics-configuration-for-communities-features}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen der Adobe Marketing Cloud.
 
@@ -278,7 +281,7 @@ Das Framework dient dazu, AEM-Variablen Analytics-Variablen zuzuordnen (eVars un
 Wählen Sie die Report Suite aus, die für Video Berichte eingerichtet wurde.
 
 Wenn eine Report Suite noch nicht erstellt oder nicht ordnungsgemäß eingerichtet wurde, lesen Sie den vorherigen Abschnitt:
-Report Suite[für Video Berichte in Adobe Analytics](#adobe-analytics-report-suite-for-video-reporting)
+[Adobe Analytics Report Suite for Video Berichte](#adobe-analytics-report-suite-for-video-reporting)
 
 Der Sidekick ist nicht erforderlich und kann minimiert werden, sodass er den Zugriff auf die Report Suites-Einstellungen nicht behindert.
 
@@ -519,13 +522,15 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
 * *[Community-Site-Titel](/help/communities/sites-console.md#step13asitetemplate)*: Geometrixx Communities
 * *[Community-Funktionsname](/help/communities/functions.md)*: Forum
 * *[Community-Gruppenname](/help/communities/creating-groups.md#creating-a-new-group)*: Wandern
-* *Pfad zu Community-Gruppeninhalten*: `/content/sites/communities/en/groups/hiking`
+* *Pfad zu Community-Gruppeninhalten*: `/content/sites/<site name>/en/groups/hiking`
 * *[UGC component resourceType](/help/communities/essentials.md)*:`social/forum/components/hbs/topic`
 * *UGC-Komponententitel*: Wanderthemen
 * *login (authorizedId)*: `aaron.mcdonald@mailinator.com`
-* *SRP-Pfad zu UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`oder *Pfad der Komponente, der folgen* soll: `/content/sites/communities/en/jcr:content/content/primary/forum`
+* *SRP-Pfad zu UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
+oder 
+*Komponentenpfad*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
-* *Pfad zum Inhalt* der Community-Site: `/content/sites/community/en`
+* *Pfad zum Inhalt* der Community-Site: `/content/sites/<site name>/en`
 
 ### Ändern der Analytics-Variablenzuordnung {#modifying-analytics-variable-mapping}
 
@@ -657,7 +662,7 @@ Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, sie expo
 
 ## Ressourcen {#resources}
 
-* Adobe Marketing Cloud: Hilfe und Referenz zu [Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Hilfe und Referenz zu Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
 * AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics with External Providers](/help/sites-administering/external-providers.md)
 
