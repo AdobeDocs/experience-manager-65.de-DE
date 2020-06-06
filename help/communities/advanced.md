@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
@@ -105,7 +108,7 @@ Siehe [Scoring-Unterregeln](/help/communities/implementing-scoring.md#scoring-su
 
 Das erweiterte Bewertungspaket installiert einen Konfigurationsordner, der eine stopwords-Datei enthält:
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
 Der erweiterte Bewertungsalgorithmus verwendet die Liste der Wörter, die in der Stoppwortdatei enthalten sind, um häufig verwendete englische Wörter zu identifizieren, die bei der Inhaltsverarbeitung ignoriert werden.
 
@@ -126,12 +129,12 @@ Anstatt Punkte mit einem Abzeichen zu verknüpfen, ist es nur notwendig, die Anz
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wert Beschreibung</th>
+   <th>Wertbeschreibung</th>
   </tr>
   <tr>
    <td>badgingPath</td>
    <td>Zeichenfolge[]</td>
-   <td><em>(Erforderlich)</em> Eine Zeichenfolge mit mehreren Werten für Abzeichen bis zur Anzahl der badgingLevels. Die Abzeichen-Bildpfade müssen so angeordnet sein, dass der erste dem höchsten Fachmann verliehen wird. Wenn weniger Zeichen vorhanden sind als durch badgingLevels angegeben, füllt das letzte Zeichen im Array den Rest des Arrays aus. Beispieleintrag:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Erforderlich)</em> Eine Zeichenfolge mit mehreren Werten für Abzeichen bis zur Anzahl der badgingLevels. Die Abzeichen-Bildpfade müssen so angeordnet sein, dass der erste dem höchsten Fachmann verliehen wird. Wenn weniger Zeichen vorhanden sind als durch badgingLevels angegeben, füllt das letzte Zeichen im Array den Rest des Arrays aus. Beispieleintrag:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -146,7 +149,7 @@ Anstatt Punkte mit einem Abzeichen zu verknüpfen, ist es nur notwendig, die Anz
   <tr>
    <td>scoringRules</td>
    <td>Zeichenfolge[]</td>
-   <td><em>(Optional)</em> Eine Zeichenfolge mit mehreren Werten, mit der die Kennzeichnungsregel auf die von der/den aufgeführten Bewertungsregel(n) identifizierten Ereignis beschränkt wird.<br /> Beispieleintrag:<br /> "Standard" <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> ist keine Einschränkung.</td>
+   <td><em>(Optional)</em> Eine Zeichenfolge mit mehreren Werten, mit der die Kennzeichnungsregel auf die von der/den aufgeführten Bewertungsregel(n) identifizierten Ereignis beschränkt wird.<br /> Beispieleintrag:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Standard ist keine Einschränkung.</td>
   </tr>
  </tbody>
 </table>
@@ -159,7 +162,7 @@ In dieser Beta-Version ist ein auf Belohnung basierendes Expertenabzeichen entha
 
 * `expert`
 
-   `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -178,19 +181,19 @@ Grundlegende Informationen finden Sie unter:
 
 In der Beta-Version sind zwei erweiterte Bewertungsregeln für die [Forenfunktion](/help/communities/functions.md#forum-function) enthalten (eine für die Foren- und Kommentarkomponenten der Forumsfunktion):
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/etc/community/scoring/rules/sub-rules/adv-voting-rule`
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-forums-rule
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
 **Hinweise:**
 
@@ -208,8 +211,8 @@ In der Beta-Version sind zwei erweiterte Bewertungsregeln für die [Forenfunktio
 
 In der Version sind zwei erweiterte Kennzeichnungsregeln enthalten, die den [erweiterten Foren und den Regeln](#included-scoring-rules-and-sub-rules)zur Bewertung von Kommentaren entsprechen.
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
 **Hinweise:**
 
