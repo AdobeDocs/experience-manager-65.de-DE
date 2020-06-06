@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +45,7 @@ Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeic
 
 ## Abzeichen erstellen {#create-badge}
 
-Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/etc/community/badging/images` und automatisch in die Umgebung &quot;Veröffentlichen&quot;repliziert.
+Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/libs/settings/community/badging/images` und automatisch in die Umgebung &quot;Veröffentlichen&quot;repliziert.
 
 Wenn die Umgebung zum Veröffentlichen eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](/help/communities/sync.md)konfigurieren.
 
