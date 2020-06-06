@@ -12,14 +12,17 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2896'
+ht-degree: 3%
 
 ---
 
 
 # Communities - Bewertung und Abzeichen {#communities-scoring-and-badges}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die Funktion für die Bewertung und Abzeichen von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
@@ -43,7 +46,7 @@ Kennzeichen werden unter dem Namen eines Mitglieds platziert, um entweder ihre R
 
 Standardmäßig befinden sich Abzeichen im Repository unter
 
-* `/etc/community/badging/images`
+* `/libs/settings/community/badging/images`
 
 Wenn sie an einem anderen Ort gespeichert sind, sollten sie von allen gelesen werden können.
 
@@ -62,13 +65,16 @@ Zugewiesene (und gewarnte) Abzeichen werden im ausgewählten [SRP](/help/communi
 In der Version sind drei rollenbasierte Abzeichen enthalten:
 
 * **moderator**
-   `/etc/community/badging/images/moderator/jcr:content/moderator.png`
+
+   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **group Manager**
-   `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
+
+   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **privilegiertes Mitglied**
-   `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
+
+   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -84,13 +90,16 @@ Damit Kennzeichen als Belohnung für Aktivität erscheinen, müssen zwei Dinge g
 In der Version sind drei belohnungsbasierte Abzeichen enthalten:
 
 * **Gold**
-   `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+
+   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **silber**
-   `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+
+   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **Bronze**
-   `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+
+   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -182,8 +191,8 @@ Scores werden in SRP gespeichert.
 >Die Namen von Bewertungsregeln sollten global eindeutig sein. sie sollten nicht mit demselben Namen enden.
 >
 >Ein Beispiel dafür, was *nicht* zu tun ist:
->/etc/community/scoring/rules/site1/forums-scoring
->/etc/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 
 ### Bewertungsunterregeln {#scoring-sub-rules}
@@ -274,13 +283,13 @@ Unter-Regeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:conte
 
 In der Version sind zwei Bewertungsregeln für die [Forenfunktion](/help/communities/functions.md#forum-function) enthalten (eine für die Foren- und Kommentarkomponenten der Funktion &quot;Forum&quot;):
 
-1. /etc/community/scoring/rules/comments-scoring
+1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/member-comment-create/etc/community/scoring/rules/sub-rules/member-receive-Votum/etc/community/scoring/rules/sub-rules/member-Gabe/etc/community/scoring/rules/sub-rules/member-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/member-comment-create/libs/settings/community/scoring/rules/sub-rules/member-receive-opt/libs/settings/community/scoring/rules/sub-rules/member-gäbe/libs/settings/community/scoring/rules/sub-rules/member-is-moderiert
 
-1. /etc/community/scoring/rules/forums-scoring
+1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/member-forum-create/etc/community/scoring/rules/sub-rules/member-receive-Votum/etc/community/scoring/rules/sub-rules/member-Gabe/etc/community/scoring/rules/sub-rules/member-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/member-forum-create/libs/settings/community/scoring/rules/sub-rules/member-receive-alert/libs/settings/community/scoring/rules/sub-rules/member-gäbe/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 **Hinweise:**
 
@@ -308,15 +317,15 @@ Kennzeichnungsregeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf dem `jcr
 
 Die Kennzeichnungsregeln bestehen aus einer obligatorischen `thresholds` Eigenschaft, bei der es sich um eine geordnete Liste von Kennzahlen handelt, die Kennzeichen zugeordnet sind. Die Ergebnisse müssen in zunehmendem Wert angeordnet werden. Beispiel:
 
-* `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+* `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
    * Ein Bronzemaske wird für 1 Punkt erwartet.
 
-* `60|/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+* `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
    * Ein Silberabzeichen wird vergeben, wenn 60 Punkte gesammelt wurden.
 
-* `80|/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+* `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
    * Wenn 80 Punkte gesammelt wurden, wird ein Goldabzeichen erwartet.
 
@@ -346,7 +355,7 @@ Die `scoringRules` Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein
      <li>number = score</li>
      <li>| = vertikaler Zeilenabstand (U+007C)</li>
      <li>path = vollständiger Pfad zur Abzeichen-Bildressource</li>
-    </ul> Die Zeichenfolgen müssen so angeordnet sein, dass die Zahlen an Wert zunehmen und zwischen Zahl und Pfad kein Leerzeichen angezeigt wird.<br /> Beispieleintrag:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> Die Zeichenfolgen müssen so angeordnet sein, dass die Zahlen an Wert zunehmen und zwischen Zahl und Pfad kein Leerzeichen angezeigt wird.<br /> Beispieleintrag:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -365,8 +374,9 @@ Die `scoringRules` Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein
 
 In der Version sind zwei Kennzeichnungsregeln enthalten, die den Bewertungsregeln für [Foren und Kommentare entsprechen](#includedscoringrules).
 
-* /etc/community/badging/rules/comments-badging
-* /etc/community/badging/rules/forums-badging
+* /libs/settings/community/badging/rules/comments-badging
+
+* /libs/settings/community/badging/rules/forums-badging
 
 **Hinweise:**
 
@@ -395,7 +405,7 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *member-Profil
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = der Speicherort der Badge-Bilddatei im Repository, zum Beispiel: /etc/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = der Speicherort der Badge-Bilddatei im Repository, zum Beispiel: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *member-Profil-url* = Endpunkt für das Profil des Mitglieds bei der Veröffentlichung z. B. : https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
@@ -405,6 +415,7 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *member-Profil
 >
 >* Kann auf eine Autoreninstanz verweisen, wenn der [Tunneldienst](/help/communities/users.md#tunnel-service) aktiviert ist.
 >* Kann ein undurchsichtiger, zufälliger Name sein - siehe Checkliste für die [Sicherheit](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) bezüglich autorisierbarer IDs.
+
 >
 
 
@@ -414,13 +425,13 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *member-Profil
 #### Moderatorenabzeichen zuweisen {#assign-a-moderator-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 #### Sperren eines zugewiesenen Silber-Kennzeichens {#revoke-an-assigned-silver-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 >[!NOTE]
@@ -574,9 +585,9 @@ Mithilfe der Website &quot;Erste [Schritte - Tutorial](/help/communities/getting
    * **Typ**: `String`
    * Wählen Sie **Multi**
    * Auswählen **Hinzufügen**
-   * Geben Sie Folgendes ein `/etc/community/badging/rules/forums-badging`
+   * Geben Sie Folgendes ein `/libs/settings/community/badging/rules/forums-badging`
    * Wählen Sie nun eine der folgenden Optionen aus **+**
-   * Geben Sie Folgendes ein `/etc/community/badging/rules/comments-badging`
+   * Geben Sie Folgendes ein `/libs/settings/community/badging/rules/comments-badging`
    * Wählen Sie **OK** aus
 
 * Hinzufügen der Eigenschaft scoringRules:
@@ -585,9 +596,9 @@ Mithilfe der Website &quot;Erste [Schritte - Tutorial](/help/communities/getting
    * **Typ**: `String`
    * Wählen Sie **Multi**
    * Auswählen **Hinzufügen**
-   * Geben Sie Folgendes ein `/etc/community/scoring/rules/forums-scoring`
+   * Geben Sie Folgendes ein `/libs/settings/community/scoring/rules/forums-scoring`
    * Wählen Sie nun eine der folgenden Optionen aus **+**
-   * Geben Sie Folgendes ein `/etc/community/scoring/rules/comments-scoring`
+   * Geben Sie Folgendes ein `/libs/settings/community/scoring/rules/comments-scoring`
    * Wählen Sie **OK** aus
 
 * Select **Save All**.
