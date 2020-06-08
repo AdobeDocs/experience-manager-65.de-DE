@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
+source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+workflow-type: tm+mt
+source-wordcount: '2424'
+ht-degree: 58%
 
 ---
 
 
 # Erstellen von AEM-Projekten mit Apache Maven{#how-to-build-aem-projects-using-apache-maven}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 This document describes how to set up an AEM project based on [Apache Maven](https://maven.apache.org/).
 
@@ -51,16 +54,16 @@ Früher mussten Entwickler recht viele einzelne Abhängigkeiten von verschiedene
 
 Ab AEM 6.5 stellt Adobe zwei UberJars bereit: eine, die veraltete Schnittstellen enthält, und eine, die diese veralteten Schnittstellen entfernt. Wenn Kunden während der Buildzeit explizit auf einen Code verweisen, werden sie sicher verstehen, ob sie von veraltetem Code abhängig sind.
 
-Mit der zweiten Uber-Jar werden alle nicht mehr unterstützten Klassen, Methoden und Eigenschaften entfernt, damit Kunden mit ihnen kompilieren können und verstehen, ob der benutzerdefinierte Code zukünftig als Beweis dient.
+Mit der zweiten Uber-JAR-Datei werden alle nicht mehr unterstützten Klassen, Methoden und Eigenschaften entfernt, damit Kunden für sie kompilieren können und verstehen, ob es sich bei dem benutzerdefinierten Code um zukünftigen Testversand handelt.
 
 ### Welches UberJar sollte verwendet werden? {#which-uberjar-to-use}
 
 AEM 6.5 ist in zwei Varianten von Uber Jar erhältlich:
 
-1. Uber Jar - Umfasst nur die öffentlichen Schnittstellen, die nicht als veraltet markiert sind. Dies ist die **empfohlene** Verwendung von UberJar, da es die Codebasis für die Zukunft daran hindert, sich auf veraltete APIs zu verlassen.
+1. Uber Jar - Umfasst nur die öffentlichen Schnittstellen, die nicht als veraltet markiert sind. Dies ist die **empfohlene** Verwendung von UberJar, da es zukünftigen Testversänden der Codebasis hilft, sich auf veraltete APIs zu verlassen.
 1. Uber Jar mit veralteten APIs - Umfasst alle öffentlichen Schnittstellen, einschließlich derjenigen, die in einer zukünftigen Version von AEM als veraltet markiert wurden.
 
-### How to I use the UberJars? {#how-to-i-use-the-uberjars}
+### Wie verwende ich UberJars? {#how-do-i-use-the-uberjars}
 
 If you are using Apache Maven as a build system (which is the case for most AEM Java projects), you will need to add one or two elements to your *pom.xml* file. The first is a *dependency* element adding the actual dependency to your project:
 
@@ -576,7 +579,8 @@ Um die aus den JSPs kompilierten Klassen zu löschen, richten wir das Maven-Clea
 >
 >E.g. if you include `/libs/foundation/global.jsp`, you can use the following configuration for the `maven-resources-plugin` instead of the configuration above which completely skips over `/libs`.
 >
->```
+>
+```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -585,7 +589,6 @@ Um die aus den JSPs kompilierten Klassen zu löschen, richten wir das Maven-Clea
 >       </includes>  
 >   </resource>  
 >```
->
 
 ### Arbeit mit SCM-Systemen {#how-to-work-with-scm-systems}
 
