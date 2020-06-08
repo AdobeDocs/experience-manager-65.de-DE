@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 translation-type: tm+mt
-source-git-commit: a44d655871308dac34671f0af2c4a0017eba5793
+source-git-commit: d559a15e3c1c65c39e38935691835146f54a356e
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 63%
 
 ---
 
@@ -24,15 +27,15 @@ Folgendes wird unterstützt:
 * Signierung und Verschlüsselung von Nachrichten
 * Automatische Erstellung von Benutzern
 * Synchronisieren von Gruppen mit vorhandenen Gruppen in AEM
-* Vom Service Provider initiierte Authentifizierung und vom Identitätsanbieter
+* Authentifizierung durch Dienstleister und Identitätsanbieter initiiert
 
 Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerknoten (`usernode/samlResponse`), um die Kommunikation mit dritten Dienstleistern zu erleichtern.
 
 >[!NOTE]
 >
->[Hier](https://helpx.adobe.com/cq/kb/saml-demo.html) finden Sie eine Demonstration zur Integration von AEM und SAML.
+>[Hier](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html) finden Sie eine Demonstration zur Integration von AEM und SAML.
 >
->Einen End-to-End-Community-Artikel finden Sie [hier](https://helpx.adobe.com/experience-manager/using/aem63_saml.html): Integrieren von SAML mit „Adobe Experience Manager“.
+>Einen End-to-End-Community-Artikel finden Sie [hier](https://helpx.adobe.com/de/experience-manager/using/aem63_saml.html): Integrieren von SAML mit „Adobe Experience Manager“.
 
 ## Konfigurieren des SAML 2.0-Authentifizierungs-Handlers {#configuring-the-saml-authentication-handler}
 
@@ -44,6 +47,7 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >
 >* POST-URL des Identitätsanbieters
 >* Entitäts-ID des Dienstleisters
+
 >
 
 
@@ -64,13 +68,13 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >
 >Der Hostname des Identitätsanbieters muss der OSGi-Konfiguration **Apache Sling Referrer Filter** hinzugefügt werden. Weitere Informationen finden Sie im Abschnitt [Web-Konsole](/help/sites-deploying/configuring-osgi.md).
 
-**Dienstanbieter-Entitäts-ID** -ID, die diesen Dienstanbieter eindeutig mit dem Identitätsanbieter identifiziert. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
+**Dienstleister-Entitäts-ID** -ID, die diesen Dienstleister eindeutig mit dem Identitätsanbieter identifiziert. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
 
 **Standardmäßige Umleitung** Der Standardspeicherort, zu dem nach erfolgreicher Authentifizierung umgeleitet wird.
 
 >[!NOTE]
 >
->Dieser Ort wird nur verwendet, wenn das Cookie `request-path` nicht festgelegt ist. Wenn Sie eine Seite unterhalb des konfigurierten Pfads ohne gültiges Login-Token anfordern, wird der angeforderte Pfad in einem Cookie gespeichert
+>Dieser Ort wird nur verwendet, wenn das Cookie `request-path` nicht festgelegt ist. Wenn Sie eine Seite unterhalb des konfigurierten Pfades ohne gültiges Login-Token anfordern, wird der angeforderte Pfad in einem Cookie gespeichert
 >und der Browser nach erfolgreicher Authentifizierung erneut an diesen Speicherort weitergeleitet wird.
 
 **User-ID-Attribut** Der Name des Attributs mit der Benutzer-ID, mit der der Benutzer authentifiziert und im CRX-Repository erstellt wird.
@@ -87,9 +91,9 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >
 >Falls die automatische Erstellung von CRX-Benutzern deaktiviert ist, müssen die Benutzer manuell erstellt werden.
 
-**Zu Gruppen** hinzufügen, ob ein Benutzer nach erfolgreicher Authentifizierung automatisch CRX-Gruppen hinzugefügt werden soll oder nicht.
+**Hinzufügen zu Gruppen** , ob ein Benutzer nach erfolgreicher Authentifizierung automatisch CRX-Gruppen hinzugefügt werden soll oder nicht.
 
-**Gruppenmitgliedschaft** Der Name des Attributs saml:Attribute, das eine Liste der CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden sollte.
+**Gruppenmitgliedschaft** Der Name des Attributs saml:Attribute, das eine Liste von CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden sollte.
 
 ## Identitätsanbieterzertifikat zum AEM TrustStore hinzufügen {#add-the-idp-certificate-to-the-aem-truststore}
 
@@ -118,7 +122,7 @@ SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktio
 >
 >Die folgenden Schritte sind nur erforderlich, wenn der Handler Nachrichten signieren oder entschlüsseln kann.
 
-1. Laden Sie die Datei mit dem privaten Schlüssel hoch, indem Sie auf **Datei mit privatem Schlüssel auswählen** klicken. Der Schlüssel muss im PKCS#8-Format mit DER-Kodierung vorliegen.
+1. Laden Sie die Datei mit dem privaten Schlüssel hoch, indem Sie auf **Datei mit privatem Schlüssel auswählen** klicken. Der Schlüssel muss mit der DER-Kodierung im PKCS#8-Format vorliegen.
 1. Laden Sie durch Klicken auf **Zertifikatkettendateien auswählen** die Zertifikatdatei hoch.
 1. Weisen Sie ein Alias zu, wie im Folgenden gezeigt:
 
