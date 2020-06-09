@@ -1,6 +1,6 @@
 ---
-title: Einbetten des Video- oder Bild-Viewers für dynamische Medien in eine Webseite
-description: Erfahren Sie, wie Sie Videos oder Bilder mit dynamischen Medien auf einer Webseite einbetten
+title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
+description: Erfahren Sie, wie Sie Dynamic Media-Videos oder -Bilder auf einer Web-Seite einbetten.
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,20 +8,23 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 96%
 
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-Use the **[!UICONTROL Embed Code]** feature when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed Code]** dialog box.
+Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video wiedergeben oder ein Asset anzeigen möchten, das auf einer Web-Seite eingebettet wurde. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in die Web-Seiten einfügen können. Der Code kann im Dialogfeld **[!UICONTROL Einbettungs-Code]** nicht bearbeitet werden.
 
-You embed URLs only if you are _not_ using AEM as your WCM. Wenn Sie AEM als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
+Sie betten URLs nur dann ein, wenn Sie AEM _nicht_ als Ihren WCM verwenden. Wenn Sie AEM als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
 
-See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
+Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md).
 
 >[!NOTE]
 >
@@ -33,11 +36,11 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 >
 >Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-**So betten Sie das Video oder den Bild-Viewer für dynamische Medien in eine Webseite ein**
+**So betten Sie den Dynamic Media-Video- oder Bild-Viewer auf einer Web-Seite ein**
 
-1. Navigate to the *published* video or image asset whose embed code you want to copy.
+1. Navigieren Sie zum *veröffentlichten* Video- oder Bild-Asset, dessen Einbettungs-Code Sie kopieren möchten.
 
-   Denken Sie daran, dass der Einbettungscode erst kopiert werden kann, *nachdem* Sie die Assets *veröffentlicht* haben. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
+   Denken Sie daran, dass der Einbettungscode nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
 
    Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
@@ -45,11 +48,11 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. In the left rail, select the drop-down menu and tap **[!UICONTROL Viewers]**.
-1. Tippen Sie auf der linken Schiene auf einen Viewer-Vorgabennamen. Die Viewer-Vorgabe wird auf das Asset angewendet.
+1. Wählen Sie in der linken Leiste das Dropdown-Menü aus und tippen Sie auf **[!UICONTROL Viewer]**.
+1. Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Die Viewer-Vorgabe wird auf das Asset angewendet.
 1. Tippen Sie auf **[!UICONTROL Einbetten]**.
-1. In the **[!UICONTROL Embed Code]** dialog box, copy the entire code to the clipboard, and then tap **[!UICONTROL Close]**.
-1. Fügen Sie den Integrationscode in die Webseiten ein.
+1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und tippen Sie dann auf **[!UICONTROL Schließen]**.
+1. Fügen Sie den Integrations-Code in die Web-Seiten ein.
 
 ## Verwendung von HTTP/2 zur Bereitstellung von Dynamic Media-Assets {#using-http-to-deliver-your-dynamic-media-assets}
 
