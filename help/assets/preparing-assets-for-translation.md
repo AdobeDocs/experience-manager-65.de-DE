@@ -3,10 +3,10 @@ title: Vorbereiten von Assets für die Übersetzung
 description: Erstellen Sie sprachliche Stammordner, um Assets für die Übersetzung vorzubereiten und damit mehrsprachige Assets zu unterstützen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 61%
+ht-degree: 49%
 
 ---
 
@@ -19,7 +19,7 @@ In Adobe Experience Manager Assets werden mehrsprachige Assets in Ordnern enthal
 
 Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. For example, */content/dam/it* is the Italian language root for the Italian language copy. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](preparing-assets-for-translation.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
-Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die Sprach-Master-Vorlage. Die Sprach-Master-Vorlage ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
+Die Sprachkopie, für die Sie ursprünglich Assets hinzugefügt haben, ist die Hauptsprache. Die Hauptsprache ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
 ```
  /content
@@ -35,9 +35,9 @@ Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die Sprach-M
 
 Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vorzubereiten:
 
-1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
+1. Erstellen Sie den Stamm der Sprache Ihrer Primärsprache. Beispielsweise lautet der Sprachstamm der englischen Sprachkopie in der Beispielordnerhierarchie `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. Fügen Sie Assets zu Ihrer Sprach-Master-Vorlage hinzu.
+1. Hinzufügen Assets in Ihre Sprachprimärsprache.
 1. Erstellen Sie den Sprachstamm der jeweiligen Zielsprache, für die Sie eine Sprachkopie benötigen.
 
 ## Create a language root {#creating-a-language-root}
@@ -60,7 +60,7 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 
 Experience Manager interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within Assets.
 
-1. In der Konsole „Assets“ wählen Sie die Sprach-Master-Vorlage aus, für die Sie Sprachkopien erstellen möchten.
+1. Wählen Sie in der Assets-Konsole die Sprachprimärdatei aus, für die Sie Sprachkopien erstellen möchten.
 1. Click the GlobalNav icon, and choose **[!UICONTROL References]** to open the [!UICONTROL Reference] pane.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
