@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '9304'
+source-wordcount: '9303'
 ht-degree: 64%
 
 ---
@@ -63,6 +63,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    * On the toolbar, click the **[!UICONTROL Create]** icon. Klicken Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
    * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
+
    ![Option zum Hochladen von Assets erstellen](assets/create-options.png)
 
    Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
@@ -119,6 +120,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    * Der Asset-Dateiname darf nicht enthalten: `* / : [ \\ ] | # % { } ? &`
    * Der Asset-Ordnername darf nicht enthalten: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    Fügen Sie keine Sonderzeichen in die Erweiterungen der Asset-Dateinamen ein.
 
    ![Das Dialogfeld &quot;Fortschritt beim Hochladen&quot;zeigt den Status der erfolgreich hochgeladenen Dateien und Dateien an, die nicht hochgeladen werden können](assets/chlimage_1-10.png)
@@ -197,7 +199,7 @@ To cancel an upload job in progress, click **[!UICONTROL Cancel]** next to the D
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the [!UICONTROL Upload Job Options] dialog box:
 
-* Leerraum am Rand von Bildern beschneiden (siehe Beschreibung in der oben stehenden Tabelle) 
+* Beschneiden von Leerzeichen am Rand von Bildern (siehe Beschreibung in Tabelle oben).
 * Ränder von Bildern manuell beschneiden (siehe Beschreibung in der oben stehenden Tabelle)
 * Ein Farbprofil auswählen (siehe Optionsbeschreibung in der oben stehenden Tabelle)
 * Eine Maske aus einem Beschneidungspfad erstellen
@@ -350,6 +352,7 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 1. So vergrößern Sie das Asset:
    1. Verwenden Sie die `Tab` Taste, um den Fokus auf das Einzoomen-Symbol zu verschieben.
    1. Verwenden Sie die `Enter` Taste, um das Bild zu vergrößern.
+
    Zum Auszoomen verwenden Sie die `Tab` Taste, um den Fokus auf das Zoomsymbol zu verschieben, und drücken `Enter`Sie die Eingabetaste.
 
 1. Verwenden Sie `Shift` + `Tab` , um den Fokus wieder auf das Bild zu verschieben.
@@ -407,6 +410,7 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
    * Anzahl der Aufrufe oder Downloads des Assets
    * Kanäle/Geräte, über die das Asset genutzt wurde
    * Kreativlösungen, in denen das Asset kürzlich verwendet wurde
+
    Weitere Informationen finden Sie unter [Asset Insights](/help/assets/touch-ui-asset-insights.md).
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
@@ -480,6 +484,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
 
    * Click **[!UICONTROL Cancel]** to stop the move operation.
+
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
 ## Verwalten von Ausgabeformaten {#managing-renditions}
@@ -506,7 +511,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    **Eine Darstellung löschen**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Darstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Darstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
 
    ![Option zum Löschen einer Darstellung](assets/delete_renditionicon.png)
 
@@ -555,6 +560,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
       * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
       * Wenn die Seite Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **Es wird auf ein oder mehrere Asset(s) verwiesen.** Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+
    >[!NOTE]
    >
    >Zum Löschen von Assets muss ein Benutzer über die entsprechenden Berechtigungen verfügen `dam/asset`. Wenn Sie nur eine Änderungsberechtigung haben, haben Sie nur die Möglichkeit, die Asset-Metadaten zu bearbeiten und Notizen zum Asset hinzuzufügen. Sie können jedoch das Asset oder dessen Metadaten nicht löschen.
@@ -607,6 +613,7 @@ Siehe [Herunterladen von Assets aus Experience Manager](/help/assets/download-as
 
    * **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen.
    * **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht wird (sodass die Assets nicht mehr in der Veröffentlichungsumgebung verfügbar sind).
+
    >[!NOTE]
    >
    >Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen möchten, achten Sie darauf, nur die Veröffentlichung des Assets rückgängig zu machen. Machen Sie nicht die Veröffentlichung der Referenzen rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
@@ -633,7 +640,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. The folder is displayed after [!DNL Experience Manager] authenticates you.
 
-## Suchen von Assets     {#assetsearch}
+## Suchen von Assets       {#assetsearch}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
@@ -677,6 +684,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
    * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
    * Click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
    * In the asset page, click the **[!UICONTROL Edit]** icon in the toolbar.
+
    ![Symbol in der Symbolleiste bearbeiten](assets/edit_icon.png)
 
 1. To crop the image, click the **Crop** icon.
@@ -748,7 +756,8 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Click the **[!UICONTROL Annotate]** icon from one of the following:
 
    * [Schnellaktionen](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben    oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben      oder zur Asset-Seite navigiert sind
+
    ![Anmerkungssymbol](assets/chlimage_1-29.png)
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
@@ -940,6 +949,7 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
 1. Gehen Sie wie folgt vor, um zwischen zwei Versionen eines Bildes zu vergleichen:
    * Klicken Sie auf die Version, die mit der aktuellen Version verglichen werden soll.
    * Ziehen Sie den Schieberegler nach links, um diese Version über die aktuelle Version zu stellen und zu vergleichen.
+
    ![Verwenden Sie den Regler, um die ausgewählten Versionen eines Assets mit der aktuellen Version zu vergleichen.](assets/version-slider.gif)
 
    *Abbildung: Mit dem Schieberegler können Sie die ausgewählten Versionen eines Assets mühelos mit der aktuellen Version vergleichen.*
