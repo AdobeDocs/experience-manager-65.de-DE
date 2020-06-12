@@ -3,7 +3,7 @@ title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 8%
@@ -26,7 +26,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
 
    * **Entwicklungsordner**: enthält digitale Assets, an denen Sie derzeit arbeiten.
    * **Clientordner**: enthält digitale Assets, die auf Clients oder Projektnamen basieren.
-   * **Hauptordner**: enthält digitale Originalelemente aus der Quelle.
+   * **Primäre Ordner**: enthält digitale Originalelemente aus der Quelle.
    * **Ausgabeordner**: enthält Darstellungen und Kopien der digitalen Originalelemente.
    * **Dateigrößenordner**: enthält digitale Assets, die auf kleinen, mittleren oder großen Dateigrößen basieren.
    * **Staging-Ordner**: enthält digitale Assets, die live auf Ihrer Website veröffentlicht werden können.
