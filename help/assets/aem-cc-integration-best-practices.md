@@ -3,9 +3,9 @@ title: Best Practices für Adobe Creative Cloud [!DNL Adobe Experience Manager] 
 description: Best Practices zur [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] Integration, um Asset-Transfer-Workflows zu optimieren und eine hohe Inhaltsgeschwindigkeit zu erzielen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3249'
 ht-degree: 56%
 
 ---
@@ -45,7 +45,7 @@ Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte d
 
 ### Zuordnen von Nutzungsszenarien und Adobe-Lösungen   {#mapping-of-use-cases-and-adobe-solutions}
 
-| Nutzungsszenario   | [!DNL Adobe Asset Link] | [!DNL Experience Manager] Desktop-App | Anmerkungen/sonstige Lösungen |
+| Nutzungsszenario     | [!DNL Adobe Asset Link] | [!DNL Experience Manager] Desktop-App | Anmerkungen/sonstige Lösungen |
 |---|---|---|---|
 | Discover - DAM-Ordner durchsuchen | Ja | [!DNL Experience Manager] Web-Oberfläche und Desktop-Aktionen |  |
 | Discover - Zugriff auf DAM-Sammlungen | Ja | [!DNL Experience Manager] Web-Oberfläche und Desktop-Aktionen |  |
@@ -160,7 +160,7 @@ Es folgen Beispiele für Updates, die normalerweise nicht relevant sind:
 
 #### Kreative Benutzer mit direktem Zugriff auf DAM   {#creative-users-with-direct-access-to-dam}
 
-Typically, in-house creative teams or agencies/creative professionals  onboarded  to the internal network have access to the DAM instance, including [!DNL Experience Manager] login. [!DNL Experience Manager] und die Netzinfrastruktur so eingerichtet werden können, dass sie direkten Zugang zu externen Akteuren - meist vertrauenswürdigen Organisationen wie Agenturen, die für einen Kunden arbeiten - ermöglicht, z. B. über VPN oder IP-Whitelist auf [!DNL Experience Manager] das Netzwerk zuzugreifen.
+Typically, in-house creative teams or agencies/creative professionals  onboarded  to the internal network have access to the DAM instance, including [!DNL Experience Manager] login. [!DNL Experience Manager] und die Netzinfrastruktur so eingerichtet werden kann, dass sie direkten Zugang zu externen Parteien - meist vertrauenswürdigen Organisationen wie Kundenagenturen - ermöglicht, z. B. über VPN oder IP-Liste, die [!DNL Experience Manager] über ein Netzwerk zugänglich sind.
 
 In such cases, Adobe Asset Link or [!DNL Experience Manager] desktop app helps provide easy access to final/approved assets and lets you save creative-ready assets to DAM.
 
@@ -173,7 +173,7 @@ Stellen Sie mit den folgenden Strategien Zugriff auf abgeschlossene/genehmigte A
 * Verwenden des Desktop-Programms, wenn Asset Link nicht funktioniert.
 * Use [Experience Manager Assets Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html) for distributing assets securely to external partners
 * Verwenden einer benutzerdefinierten Implementierung eines Verteilungs- und Quellportals basierend auf [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
-* Use Access Control set up in [!DNL Experience Manager] and necessary network infrastructure (for example, VPN and IP whitelisting) to give external parties access to a dedicated area of content in your DAM. They can use [!DNL Experience Manager] Web UI to get assets and upload new content into your DAM.
+* Use Access Control set up in [!DNL Experience Manager] and necessary network infrastructure (for example, VPN and IP allowed list) to give external parties access to a dedicated area of content in your DAM. They can use [!DNL Experience Manager] Web UI to get assets and upload new content into your DAM.
 
 #### Laufende Arbeiten an Assets über [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
