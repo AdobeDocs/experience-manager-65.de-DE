@@ -11,7 +11,10 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 index: y
 translation-type: tm+mt
-source-git-commit: d53e72b198db91d368ddddac768d19b88ee29050
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 90%
 
 ---
 
@@ -22,13 +25,13 @@ Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Da
 
 | metadata | Funktion |
 |--- |--- |
-| solution-title | Wird in der Artikelkopfzeile als Link verwendet |
-| solution-hub-url | Öffnet die helpx-Hub-Seite |
-| solution-icon | Zeigt das Lösungssymbol neben Lösungstitel an. Noch nicht implementiert |
-| getting-started-url | Link zur helpx-Seite „Erste Schritte“ |
-| tutorials-url | Link zu Videotutorials – entweder helpx-Tutorials oder KT-Tutorials |
-| mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Standard ist 2 |
-| git-repo | Gibt den Speicherort des Master-Repo für die interne Verwendung an. |
+| solution-title | Wird in der Artikelkopfzeile als Link verwendet. |
+| solution-hub-url | Öffnet die helpx-Hub-Seite. |
+| solution-icon | Zeigt das Lösungssymbol neben Lösungstitel an. Noch nicht implementiert. |
+| getting-started-url | Link zur helpx-Seite „Erste Schritte“. |
+| tutorials-url | Link zu Videotutorials – entweder helpx-Tutorials oder KT-Tutorials. |
+| mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Standard ist 2. |
+| git-repo | Gibt den Speicherort des primären Repos für die interne Verwendung an. |
 
 In der Datei &quot;TOC.md&quot;
 
