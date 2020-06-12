@@ -3,10 +3,10 @@ title: Überlegungen und Anforderungen zum Netzwerk
 description: Erläutert Netzwerküberlegungen beim Entwerfen einer Adobe Experience Manager-Asset-Bereitstellung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 75%
+source-wordcount: '1029'
+ht-degree: 73%
 
 ---
 
@@ -58,7 +58,7 @@ Unternehmens-Firewalls und Proxys können Bandbreite zudem auf vielfältige Weis
 
 In diesem Beispiel nutzt das Unternehmen einen 10 GBit/s schnellen Uplink. Dieser sollte für mehrere Clients ausreichen. Außerdem beschränkt die Firewall die Hostgeschwindigkeit auf 10 MBit/s. Diese Beschränkung kann möglicherweise den Traffic zu einem einzelnen Host bis auf 10 MBit/s drosseln, obwohl der Uplink zum Internet auf 10 GBit/s ausgelegt ist.
 
-Dies ist der kleinste kundenorientierte Choke-Point. Sie können jedoch die für die Firewall verantwortliche Netzwerkbetriebsgruppe kontaktieren, um festzustellen, ob eine Änderung oder ein Whitelist-Eintrag in Frage kommt.
+Dies ist der kleinste kundenorientierte Choke-Point. Sie können jedoch eine Änderung vornehmen oder eine zulässige Liste mit der Netzwerkbetriebengruppe konfigurieren, die für diese Firewall zuständig ist.
 
 Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptionellen, 10 MBit/s schnellen Kanal gemeinsam nutzen. Je nach Größe der genutzten Assets reicht dies möglicherweise aus, um die Erwartungen der Benutzer zu erfüllen.
 
