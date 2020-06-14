@@ -3,9 +3,9 @@ title: Versionshinweise zu Adobe Experience Manager 6.5 Previous Service Pack
 description: Versionshinweise speziell für Adobe Experience Manager 6.5 Service Pack 3 und früher.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '8094'
+source-wordcount: '8093'
 ht-degree: 37%
 
 ---
@@ -295,10 +295,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Asset Sharing funktioniert nicht für Assets, die im Dateinamen ein Pluszeichen (`+`) enthalten (NPR-31547).
 
-* Änderungen im Standardsuchformular Assets Admin * Suchleiste funktionieren nicht wie erwartet (NPR-31502).
-
-<!-- Review: Check if this seemingly stray asterisk is needed there or not.
--->
+* Änderungen im Standardsuchformular Assets Admin Search Rail funktionieren nicht wie erwartet (NPR-31502).
 
 * Vorschläge werden nicht angezeigt, wenn Sie die Omniture-Ansicht für Assets zum Durchsuchen von Assets verwenden (NPR-31496).
 
@@ -312,7 +309,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Abschnitt &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
 
-* Assets mit einem Pluszeichen (`+`) im Dateinamen können nicht gelöscht werden (NPR-31162).
+* Assets mit Pluszeichen (`+`) im Dateinamen können nicht gelöscht werden (NPR-31162).
 
 * Dropdown-Menü erstellen, das im oberen Menü bei Auswahl eines Ordners angezeigt wird, zeigt nicht &quot;Ordner&quot; als Erstellungsoption (NPR-30877).
 
