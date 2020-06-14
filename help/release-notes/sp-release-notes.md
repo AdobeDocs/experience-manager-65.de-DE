@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 S
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb48bba01b78a0724f3a07875f601367520b2a8e
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4510'
 ht-degree: 7%
 
 ---
@@ -173,7 +173,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * [!UICONTROL Die Metadaten-Schema-Editor] -Seite und die zugehörigen Elemente sind jetzt über die Tastatur verfügbar und können mit Bildschirmlesehilfen verwendet werden (CQ-4290962, CQ-4272953).
 
-* Das `X` Symbol zum Entfernen der ausgewählten Tags wird jetzt von Bildschirmlesehilfen zusammen mit der Anzahl der ausgewählten Tags (CQ-4273017) angekündigt.
+* Der Zweck des `X` Symbols zum Entfernen der ausgewählten Tags wird jetzt von Bildschirmlesehilfen zusammen mit der Anzahl der ausgewählten Tags (CQ-4273017) angekündigt.
 
 * Um Verwirrung bei Benutzern ohne Sehbehinderung mit Bildschirmlesehilfen zu vermeiden, werden dekorative Symbole und Bilder jetzt von Bildschirmlesehilfen ignoriert (CQ-4272944).
 
@@ -257,13 +257,13 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 ### Integrationen {#integrations-6550}
 
-* Der interne Cache wird gelöscht, wenn eine Seite mit einer Adobe-Zielgruppe-Komponente veröffentlicht wird (NPR-33162).
-* Die Integration mit Adobe Zielgruppe funktioniert nicht mit [!DNL Windows Internet Explorer] 11 (NPR-33111).
-* Beim Konfigurieren von Adobe Zielgruppe werden die Felder [!UICONTROL Firma] und [!UICONTROL Report Suite] nicht angezeigt, wenn Sie eine Berichte-Quelle auswählen (NPR-32502).
-* Beim Exportieren [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie Source Product nicht in Adobe Zielgruppe (NPR-32159) exportiert.
+* Der interne Cache wird gelöscht, wenn eine Seite mit einer Adobe Target-Komponente veröffentlicht wird (NPR-33162).
+* Die Integration mit Adobe Target funktioniert nicht mit [!DNL Windows Internet Explorer] 11 (NPR-33111).
+* Beim Konfigurieren von Adobe Target werden die Felder [!UICONTROL Firma] und [!UICONTROL Report Suite] bei der Auswahl einer Berichte-Quelle (NPR-32502) nicht angezeigt.
+* Beim Exportieren [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie Source Product nicht in Adobe Target exportiert (NPR-32159).
 * Autorisierte IMS-Benutzer in der lokalen Experience Manager-Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
 * Auf der Seite &quot;Adobe Launch-Konfigurationen&quot;werden nicht alle Datensätze angezeigt (NPR-33011).
-* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können die Eigenschaften einer Adobe-Zielgruppe aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
+* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
 
 ### Übersetzungsprojekte {#translation-6550}
 
@@ -348,7 +348,7 @@ Führen Sie die folgenden Schritte aus, um das Service Pack auf einer vorhandene
 
 >[!NOTE]
 >
->Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, dass Sie auf die Stabilisierung von Fehlerprotokollen warten, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Updater-Bundles, bevor Sie sicherstellen, dass die Installation erfolgreich ist. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
+>Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, auf die Stabilisierung von Fehlerprotokollen zu warten, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Updater-Bundles, bevor Sie sicherstellen, dass die Installation erfolgreich ist. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Automatische Installation**
 
@@ -414,7 +414,7 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Der Bildschirm &quot; **[!UICONTROL AEM Cloud-Services-Teilnahme]** &quot;wird nicht mehr unterstützt. Die AEM- und Zielgruppe-Integration wurde in AEM 6.5 aktualisiert, um die Zielgruppe Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu beigetragen, dass der Assistent für die Teilnahme an einer Teilnahme an der App funktional irrelevant geworden ist. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die jeweiligen AEM-Cloud-Dienste. |
+| Integrationen | Der Bildschirm &quot; **[!UICONTROL AEM Cloud-Services-Teilnahme]** &quot;wird nicht mehr unterstützt. Die AEM- und Zielgruppe-Integration wurde in AEM 6.5 aktualisiert, um die Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu geführt, dass der Assistent für die Teilnahme an einer Teilnahme funktional irrelevant geworden ist. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die jeweiligen AEM-Cloud-Dienste. |
 
 ## Bekannte Probleme {#known-issues}
 
