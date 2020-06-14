@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 7%
@@ -56,9 +56,9 @@ In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wi
 
 * Auf viele Elemente, Steuerelemente und Eingabefelder der Benutzeroberfläche kann über die Tastatur zugegriffen werden.
 
-* Das Farb- und Kontrastverhältnis einiger Elemente der Benutzeroberfläche wird aktualisiert, sodass Benutzer mit eingeschränkter Sicht oder Benutzer ohne Farbwahrnehmung diese Elemente der Benutzeroberfläche unterscheiden können. Beispielsweise wird die Farbe der Bewertungssymbole für Sterne (z. B. im [!UICONTROL Bewertungsabschnitt] auf der Registerkarte &quot; [!UICONTROL Erweitert] &quot;in den Asset- [!UICONTROL Eigenschaften] oder in der Ansicht der Karten) für einen entsprechenden Kontrast geändert.
+* Farbe und Kontrast einiger Elemente der Benutzeroberfläche werden aktualisiert, sodass Benutzer mit eingeschränkter Sicht oder Benutzer ohne Farbwahrnehmung diese Elemente der Benutzeroberfläche unterscheiden können. Beispielsweise wird die Farbe der Bewertungssymbole für Sterne (z. B. im [!UICONTROL Bewertungsabschnitt] auf der Registerkarte &quot; [!UICONTROL Erweitert] &quot;in den Asset- [!UICONTROL Eigenschaften] oder in der Ansicht der Karten) für einen entsprechenden Kontrast geändert.
 
-   ![Bewertungssymbole mit verbessertem Kontrastverhältnis](assets/star-rating-icons.png)
+   ![Bewertungssymbole mit verbessertem Kontrast](assets/star-rating-icons.png)
 
 ### Verbesserte Ausnahmebehandlung {#exception-handling}
 
@@ -146,9 +146,10 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 * Die Kontrollkästchen für gemischten Status (bei denen, sofern Sie nicht alle verschachtelten Kontrollkästchen auswählen, vorausgesagt, dass die Kontrollkästchen der ersten Ebene nicht ausgewählt sind und durchgestrichen werden) im Bedienfeld &quot;Filter&quot;sind für Bildschirmlesehilfen lesbar.
 
-* Datums- und Uhrzeitformateinschränkungen werden in den Feldbezeichnungen der Datumsfelder bereitgestellt, damit die Benutzer das Datum mit der Tastatur im korrekten Format eingeben können. Beispiel: `On Time (MM-DD-YYYY HH:mm)`. Hier ist MM Monat im zweistelligen Format, JJJJ ist Jahr, TT ist Tag im zweistelligen Format, HH ist Stunde im 24-Stunden-Militärformat und mm ist Minute.
+* Datums- und Uhrzeitformateinschränkungen werden in den Feldbezeichnungen der Datumsfelder bereitgestellt, damit die Benutzer das Datum mit der Tastatur im korrekten Format eingeben können.
+Beispiel: `On Time (MM-DD-YYYY HH:mm)`. Hier ist MM Monat im zweistelligen Format, JJJJ ist Jahr, TT ist Tag im zweistelligen Format, HH ist Stunde im 24-Stunden-Militärformat und mm ist Minute.
 
-* Bildschirmlesehilfen geben das `X` Symbol an, um die ausgewählten Tags und die Anzahl der ausgewählten Tags zu entfernen.
+* Bildschirmlesehilfen geben jetzt das `X` Symbol zum Entfernen der ausgewählten Tags zusammen mit der Anzahl der ausgewählten Tags an.
 
 #### Visuelle Suche nach [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
