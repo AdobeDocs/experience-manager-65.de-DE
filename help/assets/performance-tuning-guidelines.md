@@ -4,10 +4,10 @@ description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfigurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: da2e435f33e8527793e009700c30e60868d196be
 workflow-type: tm+mt
-source-wordcount: '2723'
-ht-degree: 54%
+source-wordcount: '2776'
+ht-degree: 52%
 
 ---
 
@@ -300,6 +300,7 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Implementieren Sie die Bereitstellung unter Java 8.
 * Stellen Sie optimale JVM-Parameter ein..
 * Konfigurieren Sie einen Filesystem DataStore oder einen S3-Datenspeicher.
+* Deaktivieren Sie die Erzeugung von Teilassets. Ist sie aktiviert, erstellt der AEM-Arbeitsablauf für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist ein einzelnes Asset, das zusätzlichen Speicherplatz auf der Festplatte benötigt, eine Versionsverwaltung und eine zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie die Aktivitäten für die Generierung und Extraktion von Teilassets.
 * Aktivieren Sie transiente Workflows.
 * Passen Sie die Granite-Workflow-Warteschlangen an, um gleichzeitige Aufträge zu begrenzen.
 * Configure [!DNL ImageMagick] to limit resource consumption.
