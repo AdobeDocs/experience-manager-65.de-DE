@@ -1,21 +1,21 @@
 ---
-title: Importieren und Exportieren von Asset-Metadaten in Massen.
+title: Stapelweises Importieren und Exportieren von Asset-Metadaten.
 description: Massenimport und -export von Metadaten digitaler Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 9d6f9b8f8d49ae3322a6f5f677292afbd48beeda
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 51%
+source-wordcount: '808'
+ht-degree: 64%
 
 ---
 
 
 # Stapelweises Importieren und Exportieren von Asset-Metadaten  {#import-and-export-asset-metadata-in-bulk}
 
-[!DNL Adobe Experience Manager Assets]Mit können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches aufnehmen.
+[!DNL Adobe Experience Manager Assets]Mit können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
-## Importieren von Metadaten   {#import-metadata}
+## Importieren von Metadaten     {#import-metadata}
 
 Der Metadaten-Import erfolgt asynchron und beeinträchtigt nicht die Systemleistung. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während Zeiten geringer Servernutzung, damit die Leistung anderer Benutzer nicht beeinträchtigt wird.
 
@@ -40,11 +40,11 @@ Der Metadaten-Import erfolgt asynchron und beeinträchtigt nicht die Systemleist
 
 1. Um den korrekten Import zu überprüfen, navigieren Sie zur Seite &quot; [!UICONTROL Eigenschaften] &quot;eines Assets und überprüfen Sie die Werte in den Feldern.
 
-Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00` Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T`, `hh` Stunden im 24-Stunden-Format, `fff` Nanosekunden und Zeitzonenversatz getrennt `-00:00` angegeben. Zum Beispiel `2020-03-26T11:26:00.000-07:00` ist der 26. März 2020 um 11:26:00 Uhr PST-Zeit.
+Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
 
 >[!CAUTION]
 >
->Stimmt das Datumsformat nicht überein, `YYYY-MM-DDThh:mm:ss.fff-00:00`werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei haben das Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie es importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den von `fff`Ihnen angegebenen Nanosekunden-Wert hinzufügen.
+>Wenn das Datumsformat nicht mit `YYYY-MM-DDThh:mm:ss.fff-00:00` übereinstimmt, werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei entsprechen dem Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie das Datum importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den mit `fff` angegebenen Nanosekundenwert hinzufügen.
 
 ## Export metadata {#export-metadata}
 
@@ -78,8 +78,9 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 ## Best Practices, Einschränkungen und Tipps {#best-practices-limitations-tips}
 
 * Die CSV-Datei zum Importieren von Asset-Metadaten ist in einem sehr spezifischen Format verfügbar. Um Arbeitsaufwand und Zeit zu sparen und unbeabsichtigte Fehler zu vermeiden, können Sie mit dem Erstellen der CSV-Datei das Format einer exportierten CSV-Datei verwenden.
-* Beim Importieren von Metadaten mit einer CSV-Datei ist das erforderliche Datumsformat `YYYY-MM-DDThh:mm:ss.fff-00:00`erforderlich. Wenn ein anderes Format verwendet wird, werden die Datumswerte nicht festgelegt. Die Datumsformate der exportierten Metadaten-CSV-Datei haben das Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie es importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den von `fff`Ihnen angegebenen Nanosekunden-Wert hinzufügen.
+* Beim Importieren von Metadaten mit einer CSV-Datei ist das erforderliche Datumsformat `YYYY-MM-DDThh:mm:ss.fff-00:00`erforderlich. Wenn ein anderes Format verwendet wird, werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei entsprechen dem Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie das Datum importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den mit `fff` angegebenen Nanosekundenwert hinzufügen.
 * Um Metadaten in benutzerdefinierte Namespaces zu importieren, registrieren Sie zunächst die Namespaces.
+* Die Eigenschaftsauswahl zeigt Eigenschaften an, die in Schema-Editoren und Suchformularen verwendet werden. Der Eigenschaftenwähler wählt keine Metadateneigenschaften aus einem Asset aus.
 
 >[!MORELIKETHIS]
 >
