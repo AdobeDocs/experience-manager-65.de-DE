@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 77%
 
 ---
 
@@ -147,7 +150,7 @@ Nachdem sie im Designmodus zur Verfügung gestellt wurden, können Sie Komponent
 >
 >If you are creating and developing custom S7 viewers and using the Content Finder, you need to explicity add the **allowfullscreen** parameter.
 
-### Abkündigungshinweis für Flash-Viewer {#flash-viewers-end-of-life-notice}
+### Hinweis zur Einstellung von Flash-Viewer {#flash-viewers-end-of-life-notice}
 
 Mit Wirkung vom 31. Januar 2017 wird die Flash-Viewer-Plattform nicht mehr offiziell von Adobe Scene7 unterstützt.
 
@@ -218,7 +221,7 @@ In der HTML5 Flyout-Komponente wird das Asset als geteilter Bildschirm angezeig
 >
 >Wenn die Flyout-Komponente eine benutzerdefinierte Größe aufweist, wird diese benutzerdefinierte Größe verwendet und die dynamische Einrichtung der Komponente ist deaktiviert.
 >
->Wenn Ihre Flyout-Komponente die in der Designansicht festgelegte Standardgröße verwendet, wird die Standardgröße verwendet und die Komponente wird gedehnt, um die Seitenlayoutgröße mit aktivierter responsiver Einrichtung der Komponente anzupassen. Beachten Sie jedoch, dass es eine Beschränkung für das reaktionsfähige Setup der Komponente gibt. Beim Verwenden der Flyout-Komponente mit dynamischer Einrichtung sollten Sie sie nicht mit vollständiger Seitendehnung verwenden. Andernfalls kann der Flyout über den rechten Rand der Seite hinausgehen.
+>Wenn Ihre Flyout-Komponente die in der Design-Ansicht festgelegte Standardgröße verwendet, wird die Standardgröße verwendet und die Komponente wird so gedehnt, dass sie der Seitenlayoutgröße bei aktiviertem responsiven Setup der Komponente entspricht. Beachten Sie jedoch, dass es eine Beschränkung für das reaktionsfähige Setup der Komponente gibt. Beim Verwenden der Flyout-Komponente mit dynamischer Einrichtung sollten Sie sie nicht mit vollständiger Seitendehnung verwenden. Andernfalls kann der Flyout über den rechten Rand der Seite hinausgehen.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -230,15 +233,15 @@ Mit der Scene7-Bildkomponente können Sie Ihren Bildern Scene7-Funktionen hinzuf
 
 **Titel, Alt-Text** Fügen Sie auf der Registerkarte Erweitert einen Titel zum Bild und alternativer Text für die Benutzer hinzu, die Grafiken deaktiviert haben.
 
-**URL, Öffnen in** Sie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in Öffnen in an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
+**URL, Öffnen in** Sie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-**Viewer-Vorgabe** Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe Verwalten von Viewer-Vorgaben. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+**Viewer-Vorgabe** Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-**Scene7-Konfiguration** Wählen Sie die Scene7-Konfiguration aus, die Sie zum Abrufen aktiver Bildvorgaben aus dem SPS verwenden möchten.
+**Scene7-Konfiguration** Wählen Sie die Scene7-Konfiguration aus, die Sie verwenden möchten, um aktive Bildvorgaben aus dem SPS abzurufen.
 
-**Bildvorgabe** Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe Verwalten von Bildvorgaben. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+**Bildvorgabe** Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
 **Ausgabeformat** Wählen Sie das Ausgabeformat des Bilds, z. B. jpeg. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen möglicherweise zusätzliche Konfigurationsoptionen zur Verfügung. Siehe Best Practices für Bildvorgaben.
 
@@ -264,7 +267,7 @@ Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. You can conf
 
 **Titel, Alt-Text** Fügen Sie auf der Registerkarte &quot;Scene7-Bildvorlage&quot;dem Bild einen Titel und Alternativtext für Benutzer hinzu, die Grafiken deaktiviert haben.
 
-**URL, Öffnen in** Sie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in Öffnen in an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
+**URL, Öffnen in** Sie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -315,7 +318,7 @@ Weitere Informationen darüber, wie Videos mit Scene7-Integration funktionieren,
 
 ### Bekannte Einschränkungen für die Videokomponente {#known-limitations-for-the-video-component}
 
-Adobe DAM und WCM zeigen, ob ein Mastervideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
+Adobe DAM und WCM zeigen an, ob ein primäres Quellvideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
 
 * Kodierte Scene7-Ausgabeformate
 * Adaptive Scene7-Videosets
@@ -333,12 +336,14 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die 
 >* Im Ad-hoc-Ordner befindliche Assets werden im Scene7-Inhaltsbrowser nicht angezeigt.
 >* Bei [aktivierter sicherer Vorschau](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) werden die auf Scene7 veröffentlichten und nicht veröffentlichten Assets im Scene7-Inhaltsbrowser angezeigt.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+
    >
    >
 * Für Videos unterstützt der Scene7-Inhaltsbrowser Folgendes: >
    >    * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
    >    * Einzelnes MP4-Video
    >    * Einzelnes F4V-Video
+
 >
 
 
@@ -362,6 +367,7 @@ Standardmäßig werden Assets nach Dateiname angezeigt. Sie können Ergebnisse a
 >* Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
 >* Einzelnes MP4-Video
 >* Einzelnes F4V-Video
+
 >
 
 
@@ -374,7 +380,7 @@ Sie können die klassische oder Touch-optimierte Benutzeroberfläche verwenden, 
 
 Wenn Sie auf einer der Benutzeroberflächen suchen, können Sie nach den folgenden Kriterien filtern (wird hier in der Touch-optimierten Benutzeroberfläche gezeigt):
 
-**Suchbegriffe** Sie können Assets nach Namen suchen. Bei der Suche entsprechen die von Ihnen eingegebenen Keywords dem Beginn des Dateinamens. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Drücken Sie die Eingabetaste, nachdem Sie den Begriff eingegeben haben, um nach dem Asset zu suchen.
+**Suchbegriffe** Sie können Assets anhand des Namens suchen. Bei der Suche entsprechen die von Ihnen eingegebenen Keywords dem Beginn des Dateinamens. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Drücken Sie die Eingabetaste, nachdem Sie den Begriff eingegeben haben, um nach dem Asset zu suchen.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
