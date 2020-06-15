@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Aktivitäten
-seo-title: Verwalten von Aktivitäten
+title: 'Verwalten von Aktivitäten '
+seo-title: 'Verwalten von Aktivitäten '
 description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
 seo-description: Mithilfe der Aktivitätskonsole können Sie die Marketing-Aktivitäten Ihrer Marken erstellen, organisieren und verwalten
 uuid: 0aebf88e-f298-410a-8c82-4076b671624f
@@ -11,16 +11,19 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d53e72b198db91d368ddddac768d19b88ee29050
+source-git-commit: f62d2d639499c128fd4cafa5f9c39307ae9a607d
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 96%
 
 ---
 
 
-# Verwalten von Aktivitäten{#managing-activities}
+# Verwalten von Aktivitäten {#managing-activities}
 
 Mithilfe der Aktivitätskonsole können Sie die Marketing-[Aktivitäten](/help/sites-authoring/personalization.md#activities) Ihrer Marken erstellen, organisieren und verwalten:
 
-* Fügen Sie Marken hinzu.
+* Fügen Sie Marken hinzu..
 * Fügen Sie für jede Marke Aktivitäten hinzu und konfigurieren Sie diese.
 * Verwalten Sie Aktivitäten.
 
@@ -30,7 +33,7 @@ Mithilfe der Aktivitätskonsole können Sie die Marketing-[Aktivitäten](/help/s
 
 Aktivitäten lassen sich in der Aktivitätskonsole nach Marke sortieren. Verwenden Sie Marken und Ordner, um Aktivitäten zu strukturieren und organisieren. Navigieren Sie durch die Aktivitätskonsole, indem Sie auf **Personalisierung** klicken oder tippen und **Aktivitäten** auswählen.
 
-Activities are available in Targeting mode for [authoring targeted content](/help/sites-authoring/content-targeting-touch.md), where you can also create activities. Im Targeting-Modus erstellte Aktivitäten werden in der Aktivitätskonsole aufgeführt.
+Aktivitäten stehen im Targeting-Modus für das [Verfassen zielgerichteter Inhalte](/help/sites-authoring/content-targeting-touch.md) zur Verfügung, wobei Sie in diesem Modus auch Aktivitäten erstellen können. Im Targeting-Modus erstellte Aktivitäten werden in der Aktivitätskonsole aufgeführt.
 
 Aktivitäten werden mit einer Beschriftung versehen, die beschreibt, um welche Aktivitätsart es sich handelt:
 
@@ -48,7 +51,7 @@ Aktivitäten werden mit einer Beschriftung versehen, die beschreibt, um welche A
    >
 * Ist die Option **xt_only** **nicht** im Adobe Target-Mandanten (Client-Code) aktiviert, können Sie in AEM **sowohl** XT- als auch A/B-Aktivitäten erstellen.
 
-**Zusätzlicher Hinweis:** Bei der Option **xt_only** handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann nicht in AEM aktiviert oder deaktiviert werden.
+**Zusätzlicher Hinweis:** Bei der Option **xt_only** handelt es sich um eine Einstellung, die auf einen bestimmten Target-Mandanten (Clientcode) angewendet wird und nur in Adobe Target bearbeitet werden kann. Die Option kann in AEM nicht aktiviert oder deaktiviert werden.
 
 >[!CAUTION]
 Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
@@ -56,9 +59,9 @@ Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integratio
 
 ## Erstellen von Marken mithilfe der Aktivitätskonsole {#creating-a-brand-using-the-activities-console}
 
-Erstellen Sie eine Marke, deren Marketingaktivitäten Sie verwalten möchten.
+Erstellen Sie eine Marke, deren Marketing-Aktivitäten Sie verwalten möchten.
 
-When you create a brand using the Activities console, it also appears in the [Offers console](/help/sites-authoring/offerlib.md) where you can create offers for the experiences of your activities.
+Wenn Sie mithilfe der Aktivitätskonsole eine Marke erstellen, erscheint diese ebenfalls in der [Angebotskonsole](/help/sites-authoring/offerlib.md), in der Sie Angebote für die Erlebnisse Ihrer Aktivitäten erstellen können.
 
 1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung**. Klicken oder tippen Sie auf **Aktivitäten**.
 
@@ -69,29 +72,29 @@ When you create a brand using the Activities console, it also appears in the [Of
 1. Geben Sie den Namen der Marke an, der in den Konsolen „Aktivitäten“ und „Angebote“ angezeigt werden soll. Wenn gewünscht, können Sie zudem einen oder mehrere Tags auswählen, um diese mit der Marke zu verknüpfen.
 1. Klicken oder tippen Sie auf **Erstellen**. Die Marke erscheint nun in der Aktivitätskonsole.
 
-## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole {#adding-editing-an-activity-using-the-activities-console}
+## Hinzufügen/Bearbeiten von Aktivitäten mithilfe der Aktivitätskonsole   {#adding-editing-an-activity-using-the-activities-console}
 
 Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität, um Ihre Marketinganstrengungen auf bestimmte Zielgruppen abzustimmen. Beim Erstellen oder Bearbeiten von Aktivitäten werden folgende Daten festgelegt:
 
-* **Name:** der Name der Aktivität.
-* **Targeting-Engine:** Wählen Sie [AEM](/help/sites-authoring/personalization.md#aem) oder [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) als Engine für zielgerichtete Inhalte aus.
+* **Name:** Der Name der Aktivität.
+* **Targeting-Engine:** Entweder [AEM](/help/sites-authoring/personalization.md#aem) oder [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) als Engine für zielgerichtete Inhalte.
 
-* **Wählen Sie eine Target-Konfiguration aus** (nur Adobe Target): die Cloud-Konfiguration, mit deren Hilfe sich diese Aktivität mit Adobe Target verbindet. Diese Option ist nur verfügbar, wenn Adobe Target als Targeting-Engine ausgewählt wurde.
-* **Aktivitätstyp: **Der Aktivitätstyp - A/B-Test oder Erlebnis-Targeting
-* **Vorgabe** (optional): Geben Sie eine Beschreibung der Aktivität ein.
-* **Erlebnisse:** Zuordnungen der Zielgruppennamen und Marketingsegmente, die angesprochen werden sollen.
-* **** Traffic-Prozentwerte: Wenn A/B-Test ausgewählt ist, können Sie ändern, wie viel Traffic (in Prozent) zu jedem Erlebnis geleitet wird.
-* **Dauer:** Zeitraum, in dem die Aktivität aktiv ist.
-* **Priorität:** relative Wichtigkeit der Aktivität. Stellen verschiedene Aktivitäten Inhalte für die gleichen Benutzersegmente bereit, wird eine Aktivität mit höherer Priorität bevorzugt.
-* **** Zielmetrik: Wenn Adobe Target als Targeting-Engine ausgewählt ist, können Sie der Aktivität Erfolgsmetriken hinzufügen. Es muss mindestens eine Erfolgsmetrik festgelegt werden.
+* **Auswählen einer Target-Konfiguration:** (Nur Adobe Target) Die Cloud-Konfiguration, mit der diese Aktivität eine Verbindung zu Adobe Target herstellen soll. Diese Option wird nur angezeigt, wenn Adobe Target für die Targeting-Engine ausgewählt wurde.
+* **Aktivität: **Der Typ der Aktivität - A/B-Test oder Erlebnis-Targeting
+* **Zielsetzung:** (Optional) Eine Beschreibung der Aktivität.
+* **Erlebnisse:** Zuordnungen zwischen Zielgruppennamen und den Marketingsegmenten, die Sie als Ziel auswählen.
+* **Traffic-Anteile**: wurde A/B-Test ausgewählt, können Sie festlegen, welcher Anteil des Traffics (in Prozent) an die verschiedenen Erlebnisse weitergeleitet wird.
+* **Dauer:** Der Zeitraum, in dem die Aktivität angewendet wird.
+* **Priorität:** Die relative Priorität der Aktivität. Wenn Aktivitäten Inhalte für dieselben Benutzersegmente bereitstellen, hat die Aktivität mit höherer Priorität Vorrang.
+* **Zielmetrik**: wurde Adobe Target als Targeting-Engine ausgewählt, können Sie der Aktivität Erfolgsmetriken hinzufügen. Eine Erfolgsmetrik ist erforderlich.
 
 >[!NOTE]
-Neue Adobe Target-Aktivitäten müssen im Editor für zielgerichtete Inhalte ***erstellt*** werden, nicht in der Konsole **Aktivitäten**, da die Synchronisierung mit Adobe Target in diesem Fall fehlschlägt.
+Neue Adobe Target-Aktivitäten müssen im Editor für zielgerichtete Inhalte ***erstellt*** werden, nicht in der Konsole **Aktivitäten**, da die Synchronisierung mit Adobe Target fehlschlägt.
 Bestehende Adobe Target-Aktivitäten können jedoch in der Konsole bearbeitet werden.
 
 So fügen Sie eine Aktivität hinzu:
 
-1. Click or tap the brand for which you are creating the activity, and then click or tap **Create **then** Create Activity. **If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
+1. Click or tap the brand for which you are creating the activity, and then click or tap **Create **then** Create Activity. **Wenn Sie eine Aktivität bearbeiten möchten, wählen Sie sie im Master-Gebiet-Bildschirm aus und klicken oder tippen Sie auf **Aktivität bearbeiten**.
 1. Machen Sie folgende Angaben und klicken oder tippen Sie dann auf **Weiter**:
 
    * Der Name der Aktivität.
@@ -100,13 +103,14 @@ So fügen Sie eine Aktivität hinzu:
    * (Optional) Das Ziel oder die Beschreibung der Aktivität.
    * Wählen Sie den Aktivitätstyp aus.
 
-1. Fügen Sie der Aktivität eines oder mehr Erlebnisse hinzu. Klicken oder tippen Sie auf **Erlebnis hinzufügen**.
+1. Fügen Sie der Aktivität mindestens ein Erlebnis hinzu. Tippen/Klicken Sie auf **Erlebnis hinzufügen**.
 1. Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden:
 
-   1. Klicken Sie auf oder tippen Sie auf **Zielgruppe auswählen **und wählen Sie das Segment aus, das Ihr Erlebnis als Ziel hat.
+   1. Klicken Sie auf oder tippen Sie auf **Audience auswählen **und wählen Sie das Segment aus, das von Ihrem Erlebnis Zielgruppe wird.
    1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**. 
 
    1. Klicken oder tippen Sie auf **Weiter**.
+
    Wenn Sie A/B-Tests in Adobe Target verwenden:
 
    1. Klicken oder tippen Sie auf den Stift im Zielgruppenfeld, um eine Zielgruppe auszuwählen.
@@ -119,7 +123,7 @@ So fügen Sie eine Aktivität hinzu:
 1. Verwenden Sie das Dropdown-Menü **Start**, um festzulegen, wann die Aktivität beginnen soll. Wählen Sie einen der folgenden Werte aus:
 
    * **Ist diese Option aktiviert**, beginnt die Aktivität, sobald die Seite aktiviert wird, auf der sich der zielgerichtete Inhalt befindet.
-   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wurde diese Option ausgewählt, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Uhrzeit an, zu der die Aktivität online gehen soll.
+   * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, tippen/klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit an, zu der die Aktivität gestartet werden soll.
 
 1. Verwenden Sie das Dropdown-Menü „Ende“, um festzulegen, wann die Aktivität beendet werden soll. Wählen Sie einen der folgenden Werte aus:
 
@@ -127,18 +131,18 @@ So fügen Sie eine Aktivität hinzu:
    * **Angegeb. Datum und Zeit**: ein bestimmter Zeitpunkt. Wurde diese Option ausgewählt, klicken oder tippen Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Uhrzeit an, zu der die Aktivität beendet werden soll.
 
 1. Soll die Aktivität eine Priorität erhalten, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal** oder **Hoch** aus.
-1. Verwenden Sie Adobe Target als Targeting-Engine, wählen Sie aus, welche Metriken mit dieser Aktivität gemessen werden sollen. See [Configuring the Activity and Setting Goals](/help/sites-authoring/content-targeting-touch.md) for more information on the success metrics available. Sie müssen mindestens ein Ziel auswählen.
+1. Wenn Sie Adobe Target als Targeting-Engine verwenden, wählen Sie aus, was mit dieser Aktivität gemessen werden soll. Weitere Informationen zu verfügbaren Erfolgsmetriken finden Sie unter [Konfigurieren der Aktivität und Festlegen von Zielen](/help/sites-authoring/content-targeting-touch.md). Sie müssen mindestens ein Ziel auswählen.
 1. Klicken oder tippen Sie auf **Speichern**.
 
    >[!NOTE]
    Nach dem Erstellen einer Aktivität muss diese zunächst veröffentlicht werden, damit sie verfügbar ist.
 
-## Aktivitäten veröffentlichen und Veröffentlichungen rückgängig machen {#publishing-and-unpublishing-activities}
+## Veröffentlichen von Aktivitäten und Rückgängigmachen der Veröffentlichung von Aktivitäten {#publishing-and-unpublishing-activities}
 
 Sollen Aktivitäten verfügbar sein, müssen diese zunächst veröffentlicht werden. Auf der anderen Seite möchten Sie die Verfügbarkeit von Aktivitäten möglicherweise verhindern, was durch das Rückgängigmachen einer Veröffentlichung erzielt wird.
 
 >[!NOTE]
-Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen,
+Wenn Sie die Veröffentlichung einer Aktivität rückgängig machen, Der Status der Aktivität ändert sich nur, wenn Sie die Seite aktualisieren.
 
 So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückgängig:
 
@@ -149,38 +153,39 @@ So veröffentlichen Sie Aktivitäten oder machen deren Veröffentlichung rückg�
 
 1. Soll die Aktivität veröffentlicht werden, klicken oder tippen Sie auf **Veröffentlichen**. Soll die Veröffentlichung der Aktivität rückgängig gemacht werden, klicken oder tippen Sie auf **Veröffentlichung rückgängig machen**. Die jeweilige Aktion wird durchgeführt und der Status der Aktivitäten in der Aktivitätskonsole angepasst (möglicherweise muss die Seite hierzu aktualisiert werden).
 
-## Aktivitäten in den Autoren- und Veröffentlichungsinstanzen {#activities-on-author-and-publish-instances}
+## Aktivitäten in der Autoren- und Veröffentlichungsinstanz  {#activities-on-author-and-publish-instances}
 
 Wird eine Aktivität aktiviert, deren Targeting-Engine Adobe Target ist, wird in der Autoreninstanz eine zweite Aktivität erstellt:
 
 * Mit der Aktivität in der Autoreninstanz wird die Aktivität in der Autoreninstanz verfolgt, was sich für die Simulation des Besuchererlebnisses oft als sehr nützlich erweist. Die für diese Aktivität aufgezeichneten Analysedaten spiegeln lediglich wider, was in der Autoreninstanz geschieht.
 * Die Aktivität in der Veröffentlichungsinstanz spiegelt die Aktivität auf dem Veröffentlichungsserver wider und reagiert auf Serveranfragen. Hierbei handelt es sich um die Aktivität, die auf der öffentlichen Website angezeigt wird. Für die Verfolgung und Analyse der Verwendung der online befindlichen Site wird nur die Aktivität der Veröffentlichungsinstanz benötigt.
 
-## Anzeigen der Performance und Konvertieren von Gewinnererlebnissen (A/B-Tests) {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Anzeigen der Performance und Konvertieren von Gewinnererlebnissen (A/B-Tests)   {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Sie können die Leistung beliebiger Adobe Target-Aktivitäten (XT oder A/B) anzeigen. Wenn Sie A/B-Tests verwenden, können Sie zudem die Gewinnererlebnisse in Standarderlebnisse konvertieren.
 
-So sehen Sie die Leistung ein und konvertieren Gewinnererlebnisse:
+So prüfen Sie die Leistung und konvertieren Gewinnererlebnisse:
 
-1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
+1. Klicken Sie unter **Personalisierung** auf **Aktivitäten**, um zur **Aktivitätskonsole** zu navigieren.
 1. Klicken oder tippen Sie auf die Marke, deren Aktivitäten Sie anzeigen möchten.
-1. Select the activity and click or tap **View Properties** and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. Die Leistungsdaten werden nun angezeigt.
+1. Wählen Sie eine Aktivität aus, klicken oder tippen Sie auf **Eigenschaften anzeigen** und klicken Sie auf die Registerkarte **Berichte**, um die Aktivität auszuwählen, deren Leistung Sie prüfen/deren Gewinnererlebnisse Sie konvertieren möchten. Die Leistungsdaten werden nun angezeigt.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Click or tap the **Push winner** link to push that experience as the default experience.
+1. Klicken oder tippen Sie auf den Link **Gewinner pushen**, um das Erlebnis als Standarderlebnis festzulegen.
 
    Durch die Konvertierung des Gewinners geschieht Folgendes:
 
-   * Die aktuelle Aktivität wird deaktiviert
-   * Es werden alle Seiten modifiziert und zielgerichtete Inhalte durch die Inhalte des Gewinnererlebnisses ersetzt. The content of the winning experience becomes part of the normal page **without** targeting.
+   * Die aktuelle Aktivität wird deaktiviert.
+   * Es werden alle Seiten modifiziert und zielgerichtete Inhalte durch die Inhalte des Gewinnererlebnisses ersetzt. Der Inhalt des Gewinnererlebnisses wird Teil der normalen Seite **ohne** Targeting.
+
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
    Gewinnererlebnisse sind diejenigen Erlebnisse, die in den Berichten größere Steigerungen als andere erzielen. Diese Steigerungen werden aus der Konversionsrate errechnet.
 
 1. Klicken oder tippen Sie auf **Ja**, um zu bestätigen, dass das Gewinnererlebnis konvertiert werden soll. Dies führt zur Deaktivierung der aktuellen Aktivität, die durch die Inhalte des Gewinnererlebnisses ersetzt wird.
 
-## Synchronisieren von Aktivitäten mit Adobe Target {#synchronizing-activities-with-adobe-target}
+## Synchronisieren von Aktivitäten mit Adobe Target   {#synchronizing-activities-with-adobe-target}
 
 Aktivitäten, deren Targeting-Engine Adobe Target ist, werden mit Adobe Target-Kampagnen synchronisiert. Eine Aktivität wird automatisch mit Adobe Target synchronisiert, wenn folgende Bedingungen erfüllt sind:
 
@@ -193,7 +198,7 @@ Diese Bedingungen gelten für Aktivitäten in den Autoren- und Veröffentlichung
 Bei der Synchronisierung einer Aktivität wird in Adobe Target eine entsprechende Kampagne erstellt:
 
 * Aktivitäten in der Veröffentlichungsinstanz tragen den gleichen Namen wie die entsprechende Adobe Target-Kampagne.
-* Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
+* Aktivitäten in der Autoreninstanz entsprechen Target-Kampagnen mit dem gleichen Namen sowie dem Nachsatz `_author`.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -201,9 +206,9 @@ Die _author-Aktivitäten werden unmittelbar bei Bearbeitung der Aktivität synch
 
 Veröffentlichte Aktivitäten werden zum Zeitpunkt ihrer Veröffentlichung mit der AEM-Veröffentlichungsinstanz synchronisiert.
 
-## Fehlerbehebung bei der Aktivitätssynchronisierung {#troubleshooting-activity-synchronization}
+## Fehlerbehebung bei der Aktivitätssynchronisierung   {#troubleshooting-activity-synchronization}
 
-When AEM synchronizes an activity with Adobe Target, AEM includes a property of the activity named `thirdPartyId`. Der Wert dieser Eigenschaft basiert auf dem Aktivitätenpfad im AEM-Verzeichnis. In Adobe Target dürfen unterschiedliche Kampagnen für `thirdPartyId` keinesfalls den gleichen Wert aufweisen. Somit schlägt die Synchronisierung von Aktivitäten fehl, wenn eine bestehende Kampagne (mit anderem Aktivitätstyp AB, XT) in Adobe Target über den gleichen Wert für `thirdPartyId` verfügt.
+Bei der Synchronisierung von Aktivitäten mit Adobe Target durch AEM fügt AEM eine Eigenschaft mit der Bezeichnung `thirdPartyId` hinzu. Der Wert dieser Eigenschaft basiert auf dem Aktivitätenpfad im AEM-Verzeichnis. In Adobe Target dürfen unterschiedliche Kampagnen für `thirdPartyId` keinesfalls denselben Wert aufweisen. Somit schlägt die Synchronisierung von Aktivitäten fehl, wenn eine bestehende Kampagne (mit einem anderen Aktivitätstyp A/B, XT) in Adobe Target über denselben Wert für `thirdPartyId` verfügt.
 
 Dies kann unter folgenden Umständen auftreten:
 
@@ -215,10 +220,10 @@ Dies kann zudem auch unter den folgenden Umständen auftreten:
 1. Eine Aktivität wird erstellt und mit Adobe Target synchronisiert. Die Aktivität wird anschließend aus AEM gelöscht.
 1. Eine Aktivität wird in der gleichen Marke erstellt und erhält den gleichen Namen wie die gelöschte Aktivität. Wird versucht, diese Aktivität zu synchronisieren, schlägt der Vorgang fehl.
 
-Möchten Sie Probleme bei der Synchronisierung vermeiden, geben Sie Aktivitäten stets eindeutige Namen. Kann eine Aktivität nicht synchronisiert werden, löschen Sie die Kampagne in Adobe Target mit dem gleichen Namen, falls diese Kampagne nicht mehr verwendet wird.
+Möchten Sie Probleme bei der Synchronisierung vermeiden, geben Sie Aktivitäten stets eindeutige Namen. Wenn sich eine Aktivität nicht synchronisieren lässt, können Sie die Kampagne in Adobe Target löschen, die denselben Namen aufweist, sofern diese Kampagne nicht verwendet wird.
 
 >[!NOTE]
-When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Sollten Sie die Kampagne in Adobe Target löschen, wird die Eigenschaft `thirdPartyId` nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (AB, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Benennen Sie zur Vermeidung dieses Problems jede Kampagne einen eindeutigen Namen; Kampagnennamen können daher nicht in verschiedenen Kampagnentypen wiederverwendet werden.
-Sollten Sie den gleichen Namen für verschiedene Kampagnentypen verwenden, wird die bereits bestehende Kampagne überschrieben.
+When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Wenn Sie die Kampagne in Adobe Target löschen, wird `thirdPartyId` nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Möchten Sie dieses Problem umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich somit nicht für verschiedene Kampagnentypen wiederverwenden.
+Wenn Sie denselben Namen im selben Kampagnentyp verwenden, wird die vorhandene Kampagne überschrieben.
 Sollte Ihnen beim Synchronisieren die Fehlermeldung „Anforderung fehlgeschlagen. `thirdPartyId` ist bereits vorhanden“ angezeigt werden, ändern Sie den Kampagnennamen und synchronisieren Sie erneut.
 
