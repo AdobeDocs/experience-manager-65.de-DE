@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Erfahren Sie mehr über die zentralisierte Verwaltung von AEM-Assets für Video-Assets, mit denen Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt von AEM Assets aus auf Videos für dynamische Medien Classic zugreifen können. Durch die Integration von Videos aus Dynamic Media Classic wird die Reichweite optimierter Videos auf alle Bildschirme erweitert.
+description: Erfahren Sie mehr über die zentralisierten AEM Assets zur Videomanagement, mit denen Sie Videos zur automatischen Kodierung in Dynamic Media Classic hochladen und direkt von AEM Assets aus auf Dynamic Media Classic-Videos zugreifen können. Die Videointegration von Dynamic Media Classic erweitert die Reichweite optimierter Videos auf alle Bildschirme.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,16 +8,19 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 62%
 
 ---
 
 
 # Video {#video}
 
-Assets bieten eine zentralisierte Verwaltung von Video-Assets, mit der Sie Videos direkt in Assets hochladen können, um sie automatisch in Dynamic Media Classic (Scene7) zu kodieren, und mit denen Sie direkt aus Assets zum Erstellen von Seiten auf Videos aus dem Dynamischen Media Classic zugreifen können.
+Assets bieten eine zentralisierte Verwaltung von Video-Assets, mit der Sie Videos direkt in Assets hochladen können, um sie automatisch in Dynamic Media Classic (Scene7) zu kodieren, und mit denen Sie direkt aus Assets zum Erstellen von Seiten auf Dynamic Media Classic-Videos zugreifen können.
 
-Durch die Integration von Videos aus Dynamic Media Classic wird die Reichweite optimierter Videos auf alle Bildschirme (automatische Geräte- und Bandbreitenerkennung) erweitert.
+Die Videointegration von Dynamic Media Classic erweitert die Reichweite optimierter Videos auf alle Bildschirme (automatische Geräte- und Bandbreitenerkennung).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
 * Assets – Sie können adaptive Videosets statt einzelner Video-Assets verwenden. Ein adaptives Videoset ist ein Container für alle Videoausgabeformate, die zur nahtlosen Wiedergabe von Videos auf verschiedenen Bildschirmen erforderlich sind. Es umfasst Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Ein adaptives Videoset wird zusammen mit der S7-Videokomponente für adaptives Videostreaming auf mehreren Bildschirmen verwendet, einschließlich Desktopgeräten und iOS-, Android-, Blackberry- und Windows-Mobilgeräten. Weitere Informationen finden Sie in der [Scene7-Dokumentation zu adaptiven Videosets](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
@@ -29,7 +32,7 @@ Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung 
 * FFMPEG-Miniaturen
 * FFMPEG-Kodierung
 
-Beachten Sie, dass beim Aktivieren und Konfigurieren der Dynamic Media Classic-Integration diese beiden Workflow-Schritte nicht automatisch aus dem vordefinierten DAM-Erfassungsarbeitsablauf entfernt oder deaktiviert werden. Wenn Sie die FFMPEG-basierte Videokodierung in AEM bereits nutzen, ist es wahrscheinlich, dass FFMPEG in Ihren Erstellungsumgebungen bereits installiert ist. In diesem Fall würde ein neues Video, das mit DAM erfasst wird, zweimal kodiert werden: Einmal vom FFMPEG-Encoder und einmal von der Integration von Dynamic Media Classic.
+Beachten Sie, dass beim Aktivieren und Konfigurieren der Dynamic Media Classic-Integration diese beiden Arbeitsablaufschritte nicht automatisch aus dem vordefinierten DAM-Erfassungsarbeitsablauf entfernt oder deaktiviert werden. Wenn Sie die FFMPEG-basierte Videokodierung in AEM bereits nutzen, ist es wahrscheinlich, dass FFMPEG in Ihren Erstellungsumgebungen bereits installiert ist. In diesem Fall würde ein neues Video, das mit DAM erfasst wird, zweimal kodiert werden: Einmal vom FFMPEG-Encoder und einmal von der Dynamic Media Classic-Integration.
 
 Wenn Sie die FFMPEG-basierte Videokodierung in AEM konfiguriert und FFMPEG installiert haben, empfiehlt Adobe, die beiden FFMPEG-Workflows aus Ihren DAM-Aufnahme-Workflows zu entfernen.
 
@@ -94,16 +97,16 @@ Wenn Sie in AEM die Viewer- und Kodierungsvorlagen für Videos aktualisieren mü
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
+## Hochladen des primären Quellvideos von Adobe DAM zu Scene7 {#uploading-your-master-video}
 
 1. Navigieren Sie zum CQ DAM-Zielordner, in dem Sie Ihre Cloud-Konfiguration mit Scene7-Kodierungsprofilen eingerichtet haben.
-1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das Mastervideo hochzuladen. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Klicken Sie auf **[!UICONTROL Hochladen]** , um das primäre Quellvideo hochzuladen. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
    >Es kann etwas Zeit in Anspruch nehmen, bis die Videominiaturen erstellt wurden.
 
-   Wenn Sie das DAM-Mastervideo auf die Videokomponente ziehen, erfolgt ein Zugriff auf *alle* durch Scene7 kodierten Proxy-Ausgabeformate zur Bereitstellung.
+   Dragging the DAM primary source video on to the video component accesses *all* of the Scene7 encoded proxy renditions for delivery.
 
 ## Foundation-Videokomponente im Vergleich zur Scene7-Videokomponente {#foundation-video-component-versus-scene-video-component}
 
