@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ## Über ASRP {#about-asrp}
 
-Wenn AEM Communities so konfiguriert ist, dass ASRP als gemeinsamer Speicher verwendet wird, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass eine Synchronisierung oder Replikation erforderlich ist.
+Wenn AEM Communities für die Verwendung von ASRP als allgemeiner Speicher konfiguriert ist, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass eine Synchronisierung oder Replikation erforderlich ist.
 
 Siehe auch [Eigenschaften der SRP-Optionen](/help/communities/working-with-srp.md#characteristics-of-srp-options) und der [empfohlenen Topologien](/help/communities/topologies.md).
 
@@ -28,7 +31,7 @@ Siehe auch [Eigenschaften der SRP-Optionen](/help/communities/working-with-srp.m
 
 Für die Verwendung von ASRP ist eine zusätzliche Lizenz erforderlich.
 
-Wenden Sie sich an Ihren Kundenbetreuer, um Ihre AEM Communities-Site für die Verwendung von ASRP für UGC zu konfigurieren.
+Wenden Sie sich an Ihren Kundenbetreuer, um Ihre AEM Communities-Site so zu konfigurieren, dass sie ASRP für UGC verwendet:
 
 * Datenzentrum-URL (Adresse des ASRP-Endpunkts)
 * Verbraucherschlüssel
@@ -37,13 +40,13 @@ Wenden Sie sich an Ihren Kundenbetreuer, um Ihre AEM Communities-Site für die V
 
 Die Verbraucher- und geheimen Schlüssel werden für alle Report Suites für eine Firma freigegeben. Pro Mandant gibt es eine Report Suite.
 
-## Konfiguration{#configuration}
+## Konfiguration {#configuration}
 
 ### ASRP auswählen {#select-asrp}
 
 Die [Datenspeicherung Configuration Console](/help/communities/srp-config.md) ermöglicht die Auswahl der Standardkonfiguration der Datenspeicherung, die festlegt, welche SRP-Implementierung verwendet werden soll.
 
-**Auf AEM-Autoreninstanz:**
+**Bei AEM Author-Instanz:**
 
 * Navigieren Sie zur globalen Navigation zu **[!UICONTROL Extras > Communities > Datenspeicherung Configuration]** und wählen Sie **[!UICONTROL Adobe Datenspeicherung Resource Provider (ASRP)]**.
 
@@ -72,7 +75,7 @@ Nach dem Senden der Konfiguration die Verbindung testen:
 
 ### Crypto-Schlüssel replizieren {#replicate-the-crypto-key}
 
-Die Consumer key und der Geheimschlüssel sind verschlüsselt. Damit die Schlüssel richtig verschlüsselt/entschlüsselt werden können, muss der Master-Granite-Crypto-Schlüssel auf allen AEM-Instanzen gleich sein.
+Die Consumer key und der Geheimschlüssel sind verschlüsselt. Damit die Schlüssel richtig verschlüsselt/entschlüsselt werden können, muss der primäre Granite Crypto-Schlüssel auf allen AEM-Instanzen gleich sein.
 
 Befolgen Sie die Anweisungen unter Crypto-Schlüssel [replizieren](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
@@ -84,7 +87,7 @@ Stellen Sie sicher, dass es sich bei den Domänen um URLs handelt, die über die
 
 ### Zeitsynchronisierung {#time-synchronization}
 
-Damit die Authentifizierung mit dem ASRP-Endpunkt erfolgreich ist, müssen die Computer, auf denen Ihre gehosteten AEM Communities ausgeführt werden, zeitsynchronisiert sein, z. B. mit dem [Network Time Protocol (NTP)](https://www.ntp.org/).
+Damit die Authentifizierung mit dem ASRP-Endpunkt erfolgreich ist, müssen die Rechner, auf denen die gehosteten AEM Communities ausgeführt werden, zeitsynchronisiert sein, z. B. mit dem [Network Time Protocol (NTP)](https://www.ntp.org/).
 
 ### Veröffentlichen der Konfiguration {#publishing-the-configuration}
 
@@ -92,7 +95,7 @@ ASRP muss in allen Autoren- und Veröffentlichungsinstanzen als gemeinsamer Spei
 
 So stellen Sie die gleiche Konfiguration in der Umgebung &quot;Veröffentlichen&quot;zur Verfügung:
 
-Auf AEM-Autoreninstanz:
+Bei AEM Author-Instanz:
 
 * Navigieren Sie vom Hauptmenü zu **[!UICONTROL Tools > Vorgänge > Replikation]**.
 * Baumstruktur **aktivieren**
