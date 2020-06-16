@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '4989'
+ht-degree: 70%
 
 ---
 
@@ -35,24 +38,24 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 >
 >In der [Workflow-Konsole](/help/sites-administering/workflows-administering.md) finden Sie zusätzliche Workflow-Verwaltungstools und Beschreibungen von möglichen Status der Workflow-Instanzen.
 
-### Vorgänge {#operations}
+### Betrieb {#operations}
 
-**listRunningWorkflowsPerModel** Listet die Anzahl der Workflow-Instanzen auf, die für jedes Workflow-Modell ausgeführt werden.
-
-* Argumente: keine
-* Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
-
-**listCompletedWorkflowsPerModel** Listet die Anzahl der abgeschlossenen Workflow-Instanzen für jedes Workflow-Modell auf.
+**listRunningWorkflowsPerModel** Liste die Anzahl der Workflow-Instanzen, die für jedes Workflow-Modell ausgeführt werden.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
 
-**returnWorkflowQueueInfo** Listet Informationen zu verarbeiteten Workflow-Elementen auf, die zur Verarbeitung in die Warteschlange gestellt wurden.
+**listCompletedWorkflowsPerModel** Liste die Anzahl der abgeschlossenen Workflow-Instanzen für jedes Workflow-Modell.
+
+* Argumente: keine
+* Zurückgegebener Wert: Tabellendaten mit Count- und ModelId-Spalten.
+
+**returnWorkflowQueueInfo** -Listen zu verarbeiteten Workflow-Elementen, die zur Verarbeitung in die Warteschlange gestellt wurden.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
-   * Jobs
+   * Aufträge
    * Queue Name
    * Active Jobs
    * Average Processing Time
@@ -63,7 +66,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
    * Processed Jobs
    * Queued Jobs
 
-**returnWorkflowJobTopicInfo** Listet Verarbeitungsinformationen für Workflow-Aufträge nach Thema auf.
+**returnWorkflowJobTopicInfo** -Listen - Informationen zur Verarbeitung von Arbeitsablaufaufaufträgen, nach Thema geordnet.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
@@ -110,7 +113,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
    * StartComment
    * WorkflowTitle
 
-**retryFailedWorkItems** versucht, fehlgeschlagene Arbeitselementschritte auszuführen. Sie können alle fehlgeschlagenen Arbeitselemente erneut ausführen lassen oder nur die fehlgeschlagenen Arbeitselemente für ein bestimmtes Workflow-Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**retryFailedWorkItems** versucht, Schritte für Arbeitselemente auszuführen, die fehlgeschlagen sind. Sie können alle fehlgeschlagenen Arbeitselemente erneut ausführen lassen oder nur die fehlgeschlagenen Arbeitselemente für ein bestimmtes Workflow-Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -168,7 +171,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: eine Liste der Workflow-Instanzen, die neu gestartet werden.
 
-**fetchModelList** Listet alle Workflow-Modelle auf.
+**fetchModelList** Liste alle Workflow-Modelle.
 
 * Argumente: keine
 * Zurückgegebener Wert: Tabellendaten, die die Workflow-Modelle identifizieren, mit den ModelId- und ModelName-Spalten.
@@ -193,7 +196,7 @@ Vorgänge zum Verwalten von ausgeführten, abgeschlossenen, statischen und fehlg
 
 * Zurückgegebener Wert: die Anzahl an abgeschlossenen Workflow-Instanzen.
 
-**purgeComplete** Entfernt Datensätze zu abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**purgeCompleted** Entfernt Datensätze zu abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -235,7 +238,7 @@ Informationen zum CRX-Repository
 
 **MaximumNumberOfOpenFiles** Die Anzahl der Dateien, die gleichzeitig geöffnet werden können. Schreibgeschützt.
 
-**SessionTracker** Der Wert der Systemvariable crx.debug.session. true bedeutet eine Debug-Sitzung. false bedeutet eine normale Sitzung. Lese- und Schreibzugriff.
+**SessionTracker** Der Wert der Systemvariable crx.debug.session. &quot;true&quot;bedeutet eine Debug-Sitzung. false bedeutet eine normale Sitzung. Lese- und Schreibzugriff.
 
 **Deskriptoren** Eine Gruppe von Schlüssel/Wert-Paaren, die Repository-Eigenschaften darstellen. Alle Eigenschaften sind schreibgeschützt.
 
@@ -293,7 +296,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>query.jcrscore</td>
-   <td><p>"true"bedeutet, dass die pseudo-Eigenschaft "jcr:score"in XPath- und SQL-Abfragen verfügbar ist, die eine Funktion "jcrfn:contains"(in XPath) oder "CONTAINS"(in SQL) enthalten, um eine Volltextsuche durchzuführen.</p> </td>
+   <td><p>"true"bedeutet, dass die pseudo-Eigenschaft "jcr:score"in XPath- und SQL-Abfragen verfügbar ist, die die Funktion jcrfn:contains (in XPath) oder CONTAINS (in SQL) enthalten, um eine Volltextsuche durchzuführen.</p> </td>
   </tr>
   <tr>
    <td>option.simple.versioning.supported</td>
@@ -369,7 +372,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>node.type.management.inheritance</td>
-   <td><p>Gibt den Grad der Unterstützung von Knotentypen-Vererbung durch das Repository an. Die folgenden Werte sind möglich:</p> <p>node.type.management.inheritance.minimal: Es können nur die primären Knotentypen registriert werden, die nur nt:base als Supertyp aufweisen. Die Registrierung von Mixin-Knotentypen ist auf die ohne Supertyp beschränkt.</p> <p>node.type.management.inreferance.single: Die Registrierung primärer Node-Typen ist auf solche mit einem Supertyp beschränkt. Die Registrierung von Mixin-Knotentypen ist auf die mit höchstens einem Supertyp beschränkt.</p> <p><br /> node.type.management.inreferance.multiple: Primäre Node-Typen können mit einem oder mehreren Supertypen registriert werden. Es können Mixin-Knotentypen mit null oder mehr Supertypen registriert werden.</p> </td>
+   <td><p>Gibt den Grad der Unterstützung von Knotentypen-Vererbung durch das Repository an. Die folgenden Werte sind möglich:</p> <p>node.type.management.inheritance.minimal: Es können nur die primären Knotentypen registriert werden, die nur nt:base als Supertyp aufweisen. Die Registrierung von Mixin-Knotentypen ist auf die ohne Supertyp beschränkt.</p> <p>node.type.management.inreferance.single: Die Registrierung primärer Node-Typen ist auf solche mit einem Supertyp beschränkt. Die Registrierung von Mixin-Knotentypen ist auf die mit höchstens einem Supertyp beschränkt.</p> <p><br /> node.type.management.inreferance.multiple: Primär-Node-Typen können mit einem oder mehreren Supertypen registriert werden. Es können Mixin-Knotentypen mit null oder mehr Supertypen registriert werden.</p> </td>
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
@@ -389,7 +392,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>node.type.management.property.types</td>
-   <td>ein Array von javax.jcr.PropertyType-Konstanten, die die Eigenschaftstypen darstellen, die ein registrierter Knotentyp angeben kann. Ein Array der Länge null gibt an, dass registrierte Knotentypen keine Eigenschaftsdefinitionen festlegen können. Eigenschaftstypen sind STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PFAD, WEAKREFERENCE, REFERENCE und UNDEFINED (sofern unterstützt)</td>
+   <td>ein Array von javax.jcr.PropertyType-Konstanten, die die Eigenschaftstypen darstellen, die ein registrierter Knotentyp angeben kann. Ein Array der Länge null gibt an, dass registrierte Knotentypen keine Eigenschaftsdefinitionen festlegen können. Eigenschaftstypen sind STRING, URI, BOOLEAN, LONG, DUBLETTE, DECIMAL, BINARY, DATE, NAME, PFAD, WETTBEWERBSREFERENZ, REFERENZ und UNDEFINED (sofern unterstützt)</td>
   </tr>
   <tr>
    <td>node.type.management.orderable.child.nodes.supported</td>
@@ -525,7 +528,7 @@ Schreibgeschützt.
 
 **ClusterNodeId** Die Kennung dieses Knotens im Repository-Cluster. Schreibgeschützt.
 
-### Vorgänge {#operations-1}
+### Betrieb {#operations-1}
 
 **createWorkspace** Erstellt eine Arbeitsfläche in diesem Repository.
 
@@ -577,7 +580,7 @@ Schreibgeschützt.
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**startTarOptimization** Startet den TAR-Dateioptimierungsprozess mit dem Standardwert für tarOptimizationDelay.
+**startTarOptimization** Beginn den TAR-Dateioptimierungsprozess mit dem Standardwert für tarOptimizationDelay.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
@@ -595,12 +598,12 @@ Schreibgeschützt.
 
 * Zurückgegebener Wert: keiner
 
-**getClusterMaster** Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und startet neu, wodurch sich alle Slave-Knoten mit dieser Instanz verbinden.
+**getClusterMaster** Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und neu gestartet, sodass alle anderen Knoten im Cluster (d. h. die vom Master gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-**joinCluster** Fügt dieses Repository einem Cluster als Slave-Knoten hinzu. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
+**joinCluster** Fügt dieses Repository einem Cluster als Knoten hinzu, der vom Clustermaster gesteuert wird. Sie müssen für die Authentifizierung einen Benutzernamen und ein Kennwort eingeben. Die Verbindung nutzt die grundlegende Authentifizierung. Die Sicherheitsanmeldedaten werden mit Base64 verschlüsselt, bevor sie an den Server übermittelt werden.
 
 * Argumente:
 
@@ -612,7 +615,7 @@ Schreibgeschützt.
 
 **traversalCheck** Traverses und behebt optional Inkonsistenzen in einer Unterstruktur, die an einer bestimmten Node beginnt. Ausführliche Informationen hierzu finden Sie in der Dokumentation zu Persistenzmanagern.
 
-**contextCheck** Checks und optional Korrekturen der Konsistenz im Datenspeicher. Ausführliche Informationen hierzu finden Sie in der Dokumentation zum Datenspeicher.
+**contextCheck** Checks und optional Korrekturen der Konsistenz im Datastore. Ausführliche Informationen hierzu finden Sie in der Dokumentation zum Datenspeicher.
 
 ## Repository-Statistiken (TimeSeries) {#repository-statistics-timeseries}
 
@@ -663,17 +666,17 @@ Statistische Informationen zu Repository-Abfragen.
 
 ### Attribute {#attributes-2}
 
-**SlowQueries** Informationen zu den Repository-Abfragen, die die längste Zeit zum Abschluss benötigt haben. Schreibgeschützt.
+**SlowSucht** Informationen zu den Repository-Abfragen, die am längsten abgeschlossen wurden. Schreibgeschützt.
 
-**SlowQueriesQueueSize** Die maximale Anzahl von Abfragen, die in die Liste SlowQueries aufgenommen werden sollen. Lese- und Schreibzugriff.
+**SlowQueriesQueueSize** Die maximale Anzahl von Abfragen, die in die SlowQueries-Liste einbezogen werden sollen. Lese- und Schreibzugriff.
 
 **Beliebte Abfragen** Informationen zu den Repository-Abfragen, die am häufigsten aufgetreten sind. Schreibgeschützt.
 
 **PopularQueriesQueueSize** Die maximale Anzahl von Abfragen in der Liste PopularQueries. Lese- und Schreibzugriff.
 
-### Vorgänge {#operations-2}
+### Betrieb {#operations-2}
 
-**clearSlowQueriesQueue** Entfernt alle Abfragen aus der Liste SlowQueries.
+**clearSlowQueriesQueue** Entfernt alle Abfragen aus der SlowQueries-Liste.
 
 * Argumente: keine
 * Zurückgegebener Wert: keiner
@@ -687,10 +690,10 @@ Statistische Informationen zu Repository-Abfragen.
 
 Überwachen Sie die Dienste für jeden Replikationsagenten. Wenn Sie einen Replikationsagenten erstellen, wird der Dienst automatisch in der JMX-Konsole angezeigt.
 
-* **** Domäne: com.adobe.granite.Replication
-* **** Typ: agent
-* **** Name: no value
-* **** Eigenschaften: {id=&quot;*Name*&quot;}, wobei *Name* der Wert der Eigenschaft &quot;Agentenname&quot;ist.
+* **Domäne:** com.adobe.granite.Replication
+* **Typ:** agent
+* **Name:** no value
+* **Eigenschaften:** {id=&quot;*Name*&quot;}, wobei *Name* der Wert der Eigenschaft &quot;Agentenname&quot;ist.
 
 ### Attribute {#attributes-3}
 
@@ -732,7 +735,7 @@ Lese- und Schreibzugriff.
 
 **QueueLastProcessTime** Ein Datumswert, der angibt, wann der vorherige Auftrag abgeschlossen wurde. Schreibgeschützt.
 
-### Vorgänge {#operations-3}
+### Betrieb {#operations-3}
 
 **queueForceRetry** Bei blockierten Warteschlangen wird der Befehl zum Wiederholen an die Warteschlange gesendet.
 
@@ -764,7 +767,7 @@ Stellt Statistiken zu HTTP-Abfragen bereit, damit Sie die Leistung des SlingRequ
 
 **MeanRequestDurationMsec** Die mittlere für die Verarbeitung einer Anforderung erforderliche Zeit. Dieser Durchschnitt wird basierend auf allen Abfragen seit dem letzten Zurücksetzen der Statistiken ermittelt.
 
-### Vorgänge {#operations-4}
+### Betrieb {#operations-4}
 
 **resetStatistics** Legt alle Statistiken auf null fest. Setzen Sie die Statistiken zurück, wenn Sie die Abfragen-Verarbeitungsleistung innerhalb eines bestimmten Zeitrahmens analysieren müssen.
 
@@ -792,7 +795,7 @@ Informationen zum Startvorgang und zum Quickstart-Starter.
 * Domäne: com.adobe.granite.quickstart
 * Typ: Starter
 
-### Vorgänge {#operations-5}
+### Betrieb {#operations-5}
 
 **log**
 
