@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 81%
 
 ---
 
@@ -34,7 +37,7 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
 |---|---|---|
 | Ausschluss-Cookies | optout.cookies | Die Namen von Cookies, die darauf hinweisen, dass der Benutzer, wenn er auf dem Gerät des Benutzers vorhanden ist, der Verwendung von Cookies nicht zugestimmt hat. |
 | Ausschluss-HTTP-Header | optout.headers | Die Namen von HTTP-Headern, die angeben, wenn vorhanden, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
-| Cookies in der White-List | optout.whitelist.cookies | Eine Liste von Cookies, die für die Funktionsweise der Website von wesentlicher Bedeutung sind und ohne Zustimmung des Benutzers verwendet werden können. |
+| Cookies in weißer Liste | optout.whitelist.cookies | Eine Liste von Cookies, die für das Funktionieren der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
 
 ## Überprüfen der Verwendung von Cookies {#validating-cookie-usage}
 
@@ -70,7 +73,7 @@ function writeCookie(value){
 
 Gibt die Namen der Cookies zurück, die, falls vorhanden, darauf hinweisen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat.
 
-**Parameter:**
+**Parameter**
 
 Keine.
 
@@ -82,7 +85,7 @@ Eine Reihe von Cookie-Namen
 
 Gibt die Namen von Cookies zurück, die unabhängig von der Zustimmung des Benutzers verwendet werden können.
 
-**Parameter:**
+**Parameter**
 
 Keine.
 
@@ -94,7 +97,7 @@ Eine Reihe von Cookie-Namen
 
 Bestimmt, ob der Browser des Benutzers Cookies enthält, die darauf hinweisen, dass keine Zustimmung zur Verwendung von Cookies erteilt wurde.
 
-**Parameter:**
+**Parameter**
 
 Keine.
 
@@ -104,9 +107,9 @@ Einen booleschen Wert, der `true` lautet, wenn ein Cookie gefunden wird, das dar
 
 ### Funktion „maySetCookie(cookieName)“{#maysetcookie-cookiename-function}
 
-Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kann. Diese Funktion entspricht der Verwendung der Funktion `isOptedOut`, wobei zusätzlich ermittelt wird, ob das angegebene Cookie in der Liste enthalten ist, die die Funktion `getWhitelsitCookieNames` zurückgibt.
+Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kann. Diese Funktion entspricht der Verwendung der Funktion `isOptedOut`, wobei zusätzlich ermittelt wird, ob das angegebene Cookie in der Liste enthalten ist, die die Funktion `getWhitelistCookieNames` zurückgibt.
 
-**Parameter:**
+**Parameter**
 
 * cookieName: String. Der Name des Cookies.
 
