@@ -197,7 +197,7 @@ For example, enter *communities*
 
 ### Dialogfeld &quot;Analytics-Einstellungen&quot; {#analytics-settings-dialog}
 
-Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der Konfiguration und zu einem neuen Dialogfeld für die Eingabe der Analytics-Einstellungen. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer erhalten wurden.
+Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der Konfiguration und zu einem neuen Dialogfeld für die Eingabe der Analytics-Einstellungen. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer eingeholt werden.
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
