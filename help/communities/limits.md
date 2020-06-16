@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +30,7 @@ Beitragsbeschränkungen können einzeln über die [Mitgliederkonsole](members.md
 
 Mithilfe der Mitgliederkonsole können Beitragsbeschränkungen für ein Mitglied von einem Community Manager jederzeit proaktiv entfernt oder reaktiv entfernt werden, wenn ein Mitglied eine Nachricht an einen Community Manager sendet, der eine solche Anforderung sendet.
 
-## Konfiguration von benutzerdefinierten AEM Communities Content Contribution Limits {#aem-communities-user-generated-content-contribution-limits-configuration}
+## AEM Communities Benutzergenerierte Inhaltsbeitragsbeschränkungen Konfiguration {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Diese OSGi-Konfiguration:
 
@@ -50,7 +53,7 @@ So erreichen Sie diese OSGi-Konfiguration:
 
 * **[!UICONTROL Automatische Anwendung von UGC-Beitragsbeschränkungen]**
 
-   Wenn diese Option aktiviert ist, legen Sie bei der Registrierung als Community-Mitglieder automatisch Beitragsbeschränkungen für Benutzer fest. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md)aktiviert/deaktiviert werden. Neue Mitglieder mit einer E-Mail-Adresse aus einer weißen, aufgelisteten Domäne werden nie eingeschränkt.
+   Wenn diese Option aktiviert ist, legen Sie bei der Registrierung als Community-Mitglieder automatisch Beitragsbeschränkungen für Benutzer fest. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md)aktiviert/deaktiviert werden. Neue Mitglieder mit einer E-Mail-Adresse aus einer zulassungsliste von Domänen werden nie eingeschränkt.
 
    Diese Option ist standardmäßig deaktiviert.
 
@@ -68,11 +71,11 @@ So erreichen Sie diese OSGi-Konfiguration:
 
 * **[!UICONTROL Domänen]**
 
-   Eine weiße Liste einer oder mehrerer E-Mail-Domänen. Klicken Sie auf das Symbol +, um weitere Einträge einzugeben.
+   Eine zulassungsliste-Liste einer oder mehrerer E-Mail-Domänen. Klicken Sie auf das Symbol +, um weitere Einträge einzugeben.
 
-   Benutzer mit E-Mail-Adressen in den weißen aufgelisteten Domänen sind davon nicht betroffen, wenn UGC-Beitragsbeschränkungen automatisch angewendet werden. Wenn beispielsweise eine Domäne zur Liste von Domänen hinzugefügt `mycompany.com` wird, wird ein Mitglied mit E-Mail-Adresse nie vom Posten ausgeschlossen `me@mycompany.com` werden.
+   Benutzer mit E-Mail-Adressen in der zulassungsliste der Domänen des  sind nicht betroffen, wenn die UGC-Beitragsbeschränkungen automatisch angewendet werden. Wenn beispielsweise eine Domäne zur Liste von Domänen hinzugefügt `mycompany.com` wird, wird ein Mitglied mit E-Mail-Adresse nie vom Posten ausgeschlossen `me@mycompany.com` werden.
 
-   Die Standardeinstellung ist eine leere weiße Liste.
+   Der Standardwert ist ein leeres zulassungsliste.
 
 * **[!UICONTROL Messaging-Empfänger]**
 
