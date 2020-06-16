@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1890'
+ht-degree: 4%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ## Voraussetzungen {#prerequisites}
 
-* [AEM 6.5-Plattform](/help/sites-deploying/deploy.md)
+* [AEM 6.5 Platform](/help/sites-deploying/deploy.md)
 
 * AEM Communities-Lizenz
 
 * Optionale Lizenzen für:
 
-   * [Funktionen von Adobe Analytics für Communities](/help/communities/analytics.md)
+   * [Funktionen von Adobe Analytics for Communities](/help/communities/analytics.md)
    * [MongoDB für MSRP](/help/communities/msrp.md)
    * [Adobe Cloud für ASRP](/help/communities/asrp.md)
 
@@ -72,6 +75,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
          * UGC wird nie repliziert
          * UGC ist nur auf der AEM-Instanz oder dem AEM-Cluster sichtbar, in dem sie eingegeben wurde
       * Standard ist JSRP
+
    Für die **[Aktivierungsfunktion](/help/communities/overview.md#enablement-community)**
 
    * [FFmpeg installieren und konfigurieren](/help/communities/ffmpeg.md)
@@ -92,11 +96,11 @@ AEM 6.5 Communities GA wird mit Communities-Paketen geliefert. Informationen zu 
 
 Ab AEM 6.4 werden Updates für Communities als Teil von AEM Cumulative Fix Packs und Service Packs bereitgestellt.
 
-Die neuesten Updates für AEM 6.5 finden Sie unter [Adobe Experience Manager 6.4 Cumulative Fix Packs und Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Die neuesten Updates für AEM 6.5 finden Sie unter [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
 ### Version History {#version-history}
 
-Wie bei AEM 6.4 und höher sind AEM Communities-Funktionen und Hotfixes Teil der kumulativen Fix Packs und Service Packs von AEM Communities. Es gibt daher keine separaten Feature Packs.
+Wie bei AEM 6.4 und höher gehören AEM Communities-Funktionen und Hotfixes zu den AEM Communities, die kumulative Fix Packs und Service Packs erstellen. Es gibt daher keine separaten Feature Packs.
 
 ### JDBC-Treiber für MySQL {#jdbc-driver-for-mysql}
 
@@ -211,9 +215,9 @@ Lesen Sie neben der Aktualisierung der Plattform auch [Aktualisieren auf AEM Com
 
 ## Konfigurationen {#configurations}
 
-### Herausgeber {#primary-publisher}
+### Primär Publisher {#primary-publisher}
 
-Wenn es sich bei der gewählten Bereitstellung um eine [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm)handelt, muss eine AEM-Veröffentlichungsinstanz als die **`primary publisher`** für Aktivitäten identifiziert werden, die nicht in allen Instanzen auftreten sollten, z. B. Funktionen, die auf **Benachrichtigungen** oder **Adobe Analytics** basieren.
+Wenn es sich bei der gewählten Bereitstellung um eine [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm)handelt, muss eine AEM-Veröffentlichungsinstanz als die **`primary publisher`** für Aktivitäten identifiziert werden, die nicht in allen Instanzen auftreten sollten, z. B. Funktionen, die auf **Benachrichtigungen** oder **Adobe Analytics** angewiesen sind.
 
 Standardmäßig wird die `AEM Communities Publisher Configuration` OSGi-Konfiguration mit dem Kontrollkästchen **`Primary Publisher`** konfiguriert, sodass alle Instanzen im Veröffentlichungsmodus in einer Veröffentlichungsfarm sich selbst als Primär identifizieren.
 
@@ -230,7 +234,7 @@ Für alle anderen (sekundären) Veröffentlichungsinstanzen in einer Veröffentl
 
 * Suchen Sie die `AEM Communities Publisher Configuration`
 * Wählen Sie das Bearbeitungssymbol
-* Deaktivieren Sie das Kontrollkästchen **Primärherausgeber** .
+* Deaktivieren Sie das Kontrollkästchen **Primär Publisher** .
 * Wählen Sie **Speichern** aus
 
 ### Replizierungsagenten beim Autor {#replication-agents-on-author}
@@ -310,7 +314,7 @@ for example,
    * Navigieren Sie beispielsweise in den Datenordner,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Kopieren Sie die hmac- und master-Dateien
+   * Kopieren Sie die Dateien für den hmac- und den primären Knoten
 
 
 
@@ -389,9 +393,9 @@ Achten Sie insbesondere darauf, den richtigen Servernamen zu verwenden, nicht `l
 
 ### Dispatcher {#dispatcher}
 
-Wenn Sie einen Dispatcher verwenden, siehe:
+Bei Verwendung eines Dispatchers siehe:
 
-* Dokumentation zu AEM [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+* Dokumentation zu AEM- [Dispatchern](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 * [Installieren des Dispatchers](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
 * [Konfigurieren von Dispatcher für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
