@@ -1,63 +1,50 @@
 ---
-title: Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites
-description: Erfahren Sie, wie Sie den Rich-Text-Editor von AEM konfigurieren können, um barrierefreie Sites zu erstellen.
-uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
+title: Rich-Text-Editor konfigurieren, um barrierefreie Webseiten und Sites zu erstellen.
+description: Rich-Text-Editor konfigurieren, um barrierefreie Webseiten und Sites zu erstellen.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 45%
 
 ---
 
 
-# Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites {#configuring-rte-for-producing-accessible-sites}
+# RTE konfigurieren, um barrierefreie Webseiten und Websites zu erstellen {#configure-rte-for-accessibility}
 
-AEM unterstützt beides:
+Adobe Experience Manager unterstützt viele Standard-Barrierefreiheitsmerkmale in Übereinstimmung mit verschiedenen Barrierefreiheitsstandards. Darüber hinaus können Entwickler die Funktionen anpassen oder erweitern, die die Erstellung barrierefreier Inhalte mithilfe von Experience Manager-Komponenten unterstützen, die den RTE-Editor (RTE) verwenden.
 
-* Standardmäßige Funktionen zur Barrierefreiheit, einschließlich Alternativtext für Bilder
-* sowie zusätzliche Funktionen, auf die bei der Erstellung von Inhalt mit Komponenten zugegriffen werden kann, die den Rich-Text-Editor (RTE) verwenden.
+Beim Entwerfen von Webseiten und Hinzufügen von Inhalten zu den Seiten können die Inhaltsentwickler und Autoren Funktionen der RTE verwenden, um barrierefreie Informationen bereitzustellen. Fügen Sie beispielsweise Strukturinformationen über Überschriften und Absatzelemente hinzu.
 
-Inhaltsautoren können Funktionen von RTE verwenden, um beim Hinzufügen von Inhalten zu einer Seite Informationen zur Barrierefreiheit bereitzustellen. Dies kann das Hinzufügen struktureller Informationen durch Überschriften und Absatzelemente umfassen.
+Um diese Funktionen zu konfigurieren und anzupassen, [konfigurieren Sie die RTE-Zusatzmodule](#configure-the-plugin-features) für die Komponente. For example, the `paraformat` plugin lets you add additional block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2`, and `H3` provided by default.
 
-Sie können [diese Funktionen durch die Konfiguration von RTE-Plug-ins zur Komponente konfigurieren und anpassen](#configuring-the-plugin-features). For example, the `paraformat` plugin allows you to add additional block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2` and `H3` provided by default.
+Die RTE ist in verschiedenen Komponenten für die Touch-aktivierte Benutzeroberfläche und die Classic-Benutzeroberfläche verfügbar. Die primäre Komponente, die die RTE verwendet, ist jedoch die **Text** -Komponente, die für beide Schnittstellen verfügbar ist. The following images show the RTE with a range of plugins enabled, including `paraformat`:
 
-Die RTE ist in verschiedenen Komponenten der touchfähigen und der klassischen Benutzeroberfläche verfügbar. Die primäre Komponente zur Verwendung von RTE ist die **Textkomponente**.
+![Textkomponente (RTE) im Vollbildmodus in der touchfähigen Benutzeroberfläche.](assets/chlimage_1-206.png)
 
-The **Text** component in AEM is available for both the touch-enabled and the classic UIs. Auf den folgenden Bildern wird der Rich-Text-Editor mit einer Reihe von Plug-ins aktiviert, einschließlich `paraformat`:
+*Abbildung: Die Komponente &quot;Text&quot;in der Touch-fähigen Benutzeroberfläche.*
 
-* The **Text** component in the touch-enabled UI:
+![Bearbeitungsdialogfeld (RTE) der Textkomponente in der klassischen Benutzeroberfläche](assets/chlimage_1-207.png)
 
-   ![Textkomponente (RTE) im Vollbildmodus in der touchfähigen Benutzeroberfläche.](assets/chlimage_1-206.png)
+*Abbildung: Die Komponente &quot;Text&quot;in der Benutzeroberfläche &quot;Klassisch&quot;.*
 
-* Die **Textkomponente** in der klassischen Benutzeroberfläche:
+Die Unterschiede zwischen den RTE-Funktionen, die in den verschiedenen Benutzeroberflächen verfügbar sind, finden Sie unter [Plugins und deren Funktionen](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
-   ![Bearbeitungsdialogfeld (RTE) der Textkomponente in der klassischen Benutzeroberfläche](assets/chlimage_1-207.png)
+## Plug-in-Funktionen konfigurieren {#configure-the-plugin-features}
 
->[!NOTE]
->
->Es gibt Unterschiede zwischen den RTE-Funktionen der klassischen Benutzeroberfläche und der touchfähigen Benutzeroberfläche. Weitere Informationen finden Sie unter
->
->* [Plug-ins und ihre Funktionen](/help/sites-administering/rich-text-editor.md#aboutplugins)
->* [Plugins und zugehörige Funktionen - Touch-fähige Benutzeroberfläche](/help/sites-administering/rich-text-editor.md#aboutplugins)
->
+Eine vollständige Anleitung zum Konfigurieren der RTE finden Sie unter [Konfigurieren der Seite Rich Text Editor](/help/sites-administering/rich-text-editor.md) . Dies deckt alles ab, einschließlich der wichtigen Schritte:
 
+* [Plugins und die Funktionen](/help/sites-administering/rich-text-editor.md#aboutplugins).
+* [Konfigurationsspeicherorte](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+* [Aktivieren Sie ein Plugin und konfigurieren Sie die Funktionseigenschaft](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+* [Konfigurieren Sie andere Funktionen der RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 
-
-## Konfigurieren der Plug-in-Funktionen {#configuring-the-plugin-features}
-
-Die vollständigen Anweisungen zum Konfigurieren des RTE sind auf der Seite [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md) verfügbar. Dies deckt alles ab, einschließlich der wichtigen Schritte:
-
-* [Plug-ins und ihre Funktionen](/help/sites-administering/rich-text-editor.md#aboutplugins)
-* [Konfigurationsspeicherorte](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)
-* [Aktivieren eines Plug-ins und Konfigurieren der features-Eigenschaft](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
-* [Konfigurieren anderer RTE-Funktionen](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
-
-Durch das Konfigurieren eines Plug-ins innerhalb des entsprechenden `rtePlugins`-Unterzweigs in CRXDE Lite (siehe folgendes Bild) können Sie entweder alle oder spezifische Funktionen für das Plug-in aktivieren.
+By configuring a plugin within the appropriate `rtePlugins` sub-branch in CRXDE Lite, you can activate either all or specific features for that plugin.
 
 ![Beispiel für ein rtePlugin in CRXDE Lite](assets/chlimage_1-208.png)
 
-### Beispiel – Angeben von im RTE-Auswahlfeld verfügbaren Absatzformaten {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Example - specify paragraph formats available in RTE selection field {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 Es können wie folgt neue semantische Blockformate zur Auswahl bereitgestellt werden:
 
@@ -71,7 +58,7 @@ Es können wie folgt neue semantische Blockformate zur Auswahl bereitgestellt we
 
 Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, stellt AEM eine gute Grundlage für die Entwicklung barrierefreier Inhalte bereit. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen müssen sie entsprechende Strukturelemente wie Überschriften auswählen und über die Option „Arten“ ausgewählte globale Formatarten verwenden. Dies sorgt für ein sauberes Markup, mehr Optionen für Benutzer, die die Suche mit ihren eigenen Formatvorlagen durchführen, sowie korrekt strukturierte Inhalte.
 
-## Verwenden der Funktion „Quellenbearbeitung“ {#use-of-the-source-edit-feature}
+## Use of the source edit feature {#use-of-the-source-edit-feature}
 
 In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quellcode zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt ein zusätzliches Markup erfordern, um Compliance mit WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) des RTE umsetzen. You can specify the [ `sourceedit` feature on the `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
@@ -79,23 +66,40 @@ In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des 
 >
 >Use the `sourceedit` feature carefully. Tippfehler und/oder nicht unterstützte Funktionen können zusätzliche Probleme hervorrufen.
 
-## Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute {#adding-support-for-additional-html-elements-and-attributes}
+## Hinzufügen Unterstützung für weitere HTML-Elemente und -Attribute {#add-support-for-more-html-elements-and-attributes}
 
 Um die Barrierefreiheitsfunktionen von AEM weiter auszubauen, ist es möglich, die vorhandenen Komponenten basierend auf dem RTE (wie die Komponenten **Text** und **Tabelle**) um zusätzliche Elemente und Attribute zu erweitern.
 
 The following procedure illustrates how to extend the **Table** component with a **Caption** element that provides information about a data table to assistive technology users:
 
-### Beispiel – Hinzufügen der Beschriftung zum Dialogfeld „Tabelleneigenschaften“{#example-adding-the-caption-to-the-table-properties-dialog}
+### Example - add the caption to the Table Properties dialog {#example-adding-the-caption-to-the-table-properties-dialog}
 
 Fügen Sie im Konstruktor von `TablePropertiesDialog` ein zusätzliches Texteingabefeld hinzu, dass für die Bearbeitung der Beschriftung verwendet wird. Note that `itemId` must be set to `caption` (i.e. the DOM attribute’s name) to automatically handle its content.
 
-Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlegen/entfernen. Der Wert wird vom Dialogfeld im `config`-Objekt weitergegeben. Beachten Sie, dass DOM-Attribute mithilfe der entsprechenden `CQ.form.rte.Common`-Methoden (`com` ist kurz für `CQ.form.rte.Common`) festgelegt/entfernt werden sollten, um die üblichen Fallstricke bei Browserimplementierungen zu vermeiden.
+In **Table**, set explicitly set or remove the attribute to/from the DOM element. Der Wert wird vom Dialogfeld im `config`-Objekt weitergegeben. Beachten Sie, dass DOM-Attribute mithilfe der entsprechenden `CQ.form.rte.Common`-Methoden (`com` ist kurz für `CQ.form.rte.Common`) festgelegt/entfernt werden sollten, um die üblichen Fallstricke bei Browserimplementierungen zu vermeiden.
 
 >[!NOTE]
 >
->Dieses Verfahren eignet sich nur für die klassische Benutzeroberfläche.
+>Dieses Verfahren ist nur für die klassische Benutzeroberfläche geeignet.
 
-### Schritt-für-Schritt-Anweisungen {#step-by-step-instructions}
+### Beispiel: Barrierefreies HTML erstellen, wenn Hervorhebung in Text verwendet wird {#create-accessible-html-for-text}
+
+RTE kann Tags `strong` und `em` Tags anstelle von `b` und verwenden `i`. Hinzufügen Sie den folgenden Knoten als Geschwister mit den Knoten `uiSettings` und `rtePlugins` Knoten im Dialogfeld.
+
+```HTML
+<htmlRules jcr:primaryType="nt:unstructured">
+    <docType jcr:primaryType="nt:unstructured">
+        <typeConfig jcr:primaryType="nt:unstructured"
+                useSemanticMarkup="{Boolean}true">
+            <semanticMarkupMap
+                    b="strong"
+                    i="em"/>
+        </typeConfig>
+    </docType>
+</htmlRules>
+```
+
+### Schrittweise Anleitungen {#step-by-step-instructions}
 
 1. Starten Sie CRXDE Lite. Zum Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopieren:
@@ -149,9 +153,9 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
    ```
    /**
     * Adds Caption Element
-    */
-   var captionElement; 
-   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption") 
+   */
+   var captionElement;
+   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption")
    {
       captionElement = dom.firstChild;
    }
@@ -160,7 +164,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
        var captionTextNode = document.createTextNode(config.caption)
        if (captionElement)
        {
-          dom.replaceNode(captionElement.firstChild,captionTextNode); 
+          dom.replaceNode(captionElement.firstChild,captionTextNode);
        } else
        {
            captionElement = document.createElement("caption");
@@ -173,7 +177,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
               dom.appendChild(captionElement);
            }
        }
-   } else if (captionElement) 
+   } else if (captionElement)
    {
      dom.removeChild(captionElement);
    }
@@ -183,7 +187,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 
 >[!NOTE]
 >
->Ein „Nur Text“-Feld ist die einzige zulässige Eingabeart für den Wert des „caption“-Elements. Any ExtJS widget, that provides the caption’s value through its `getValue()` method, could be used.
+>Ein „Nur Text“-Feld ist die einzige zulässige Eingabeart für den Wert des „caption“-Elements. Sie können jedes beliebige ExtJS-Widget verwenden, das den Wert der Beschriftung über seine `getValue()` Methode bereitstellt.
 >
 >Um Bearbeitungsfunktionen für weitere Elemente und Attribute hinzuzufügen, stellen Sie sicher, dass sowohl:
 >
@@ -194,5 +198,5 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 >[!MORELIKETHIS]
 >
 >* [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
->* [Erstellen barrierefreier Inhalte (gemäß WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
+>* [Erstellen von barrierefreiem Inhalt (WCAG 2.0-Konformität)](/help/sites-authoring/creating-accessible-content.md)
 
