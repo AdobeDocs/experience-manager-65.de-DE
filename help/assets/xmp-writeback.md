@@ -3,10 +3,10 @@ title: XMP-Writeback in Ausgabeformaten
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 711cd438cc8962d310bb2bfbb14f079161aacce0
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 43%
+ht-degree: 41%
 
 ---
 
@@ -43,7 +43,7 @@ To let the XMP Writeback feature propagate metadata changes to select renditions
 
 Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten in die Ausgabeformat-Miniaturansichten „140.100.png“ und „319.319.png“ übertragen.
 
-1. Navigieren Sie in der Experience Manager-Oberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
+1. Navigieren Sie in der Benutzeroberfläche von Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. Öffnen Sie über die Seite „Modelle“ das Workflow-Modell **[!UICONTROL DAM-Metadaten-Writeback]**.
 1. Öffnen Sie auf der Eigenschaftsseite **[!UICONTROL DAM-Metadaten-Writeback]** den Schritt **[!UICONTROL XMP-Writeback-Vorgang]**.
 1. In the [!UICONTROL Step Properties] dialog box, click the **[!UICONTROL Process]** tab.
@@ -68,11 +68,11 @@ Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png�
 
 ## Filtern von XMP-Metadaten {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] unterstützt sowohl die blockierte Liste als auch das Filtern von Eigenschaften/Knoten für XMP-Metadaten, die aus Asset-Binärdateien gelesen und in JCR gespeichert werden, wenn Assets aufgenommen werden.
+[!DNL Experience Manager Assets] unterstützt das blockierungsliste- und zulassungsliste-Filtern von Eigenschaften/Knoten für XMP-Metadaten, die aus Asset-Binärdateien gelesen und in JCR gespeichert werden, wenn Assets aufgenommen werden.
 
-Beim Filtern mit einer gesperrten Liste können Sie alle XMP-Metadateneigenschaften mit Ausnahme der Eigenschaften importieren, die für den Ausschluss angegeben wurden. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn das Filtern mit einer blockierten Liste das Importieren einer großen Anzahl von Assets mit zahlreichen XMP-Metadaten ermöglicht, kann es zu Stabilitätsproblemen bei der AEM-Instanz/dem AEM-Cluster kommen, z. B. zu verstopften Beobachtungswarteschlangen.
+Beim Filtern mit einer blockierungsliste können Sie alle XMP-Metadateneigenschaften mit Ausnahme der Eigenschaften importieren, die für den Ausschluss angegeben wurden. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn beim Filtern mit einer blockierungsliste eine große Anzahl von Assets mit zahlreichen XMP-Metadaten importiert werden kann, kann die AEM-Instanz/der AEM-Cluster auf Stabilitätsprobleme stoßen, z. B. verstopfte Beobachtungswarteschlangen.
 
-Das Filtern von XMP-Metadaten über die zulässige Liste löst dieses Problem, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden alle anderen oder unbekannten XMP-Eigenschaften ignoriert. Zur Abwärtskompatibilität können Sie einige dieser Eigenschaften zum Filter hinzufügen, der eine gesperrte Liste verwendet.
+Das Filtern von XMP-Metadaten über zulassungsliste behebt dieses Problem, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden alle anderen oder unbekannten XMP-Eigenschaften ignoriert. Zur Abwärtskompatibilität können Sie einige dieser Eigenschaften zum Filter hinzufügen, der eine blockierungsliste verwendet.
 
 >[!NOTE]
 >
@@ -90,14 +90,14 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. Um Configuration Manager zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
+1. Um blockierte XMP-Eigenschaften nach dem Anwenden der Filterung über zulassungsliste zu filtern, geben Sie diese im Feld **[!UICONTROL Blockierte XML-Namen für die XMP-Filterung]** an.
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL Blacklist auf XMP-Eigenschaften anwenden]** ist standardmäßig ausgewählt. Mit anderen Worten, das Filtern mit einer blockierten Liste ist standardmäßig aktiviert. To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. Das heißt, das Filtern mit einer blockierungsliste ist standardmäßig aktiviert. To disable such filtering, deselect the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
 
 1. Speichern Sie die Änderungen.
