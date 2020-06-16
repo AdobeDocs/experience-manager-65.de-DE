@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Über MSRP {#about-msrp}
 
-Wenn AEM Communities so konfiguriert ist, dass MSRP als gemeinsamer Speicher verwendet wird, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass Synchronisierung oder Replikation erforderlich ist.
+Wenn AEM Communities für die Verwendung von MSRP als gemeinsamer Speicher konfiguriert ist, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass eine Synchronisierung oder Replikation erforderlich ist.
 
 Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-of-srp-options) und der [empfohlenen Topologien](topologies.md).
 
@@ -88,9 +91,11 @@ Wenn Sie Autor sind, können Sie auf die Datenspeicherung Configuration Console 
 
       * **[!UICONTROL Solr-URL]**Die URL, die für die Kommunikation mit Solr im eigenständigen Modus verwendet wird.
 Lassen Sie beim Ausführen im SolrCloud-Modus leer.
+
          *Standard*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr-Sammlung]**Der Name der Solr-Sammlung.
+
          *Standard*: collection1
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**
@@ -100,15 +105,15 @@ Lassen Sie beim Ausführen im SolrCloud-Modus leer.
 >Die mongoDB-Datenbank, die standardmäßig den Namen verwendet, `communities`sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet wird](../../help/sites-deploying/data-store-config.md). Siehe auch [Datenspeicherung-Elemente in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 
-### MongoDB Replica-Set {#mongodb-replica-set}
+### MongoDB-Replikat-Set {#mongodb-replica-set}
 
-Für die Umgebung der Produktion wird dringend empfohlen, einen Replikationssatz, einen Cluster aus MongoDB-Servern einzurichten, der Master-Slave-Replikation und automatisiertes Failover implementiert.
+Für die Umgebung der Produktion wird dringend empfohlen, einen Replikationssatz, einen Cluster aus MongoDB-Servern einzurichten, der die primäre und sekundäre Replikation und automatisiertes Failover implementiert.
 
 Weitere Informationen zu Replikationssets finden Sie in der MongoDB- [Replikationsdokumentation](https://docs.mongodb.org/manual/replication/) .
 
 Informationen zum Arbeiten mit Replikationssets und zum Definieren von Verbindungen zwischen Anwendungen und MongoDB-Instanzen finden Sie in der Dokumentation zu MongoDB [Connection String URI Format](https://docs.mongodb.org/manual/reference/connection-string/) .
 
-#### Beispiel-URL zum Herstellen einer Verbindung zu einem Repliksatz {#example-url-for-connecting-to-a-replica-set}
+#### Beispiel-URL zum Herstellen einer Verbindung zu einem Replikat-Set  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -120,7 +125,7 @@ mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mong
 
 ## Solr-Konfiguration {#solr-configuration}
 
-Eine Solr-Installation kann unter Verwendung verschiedener Sammlungen zwischen dem Node Store (Oak) und dem Common Store (MSRP) freigegeben werden.
+Eine Solr-Installation kann mithilfe verschiedener Sammlungen zwischen dem Node Store (Oak) und dem Common Store (MSRP) freigegeben werden.
 
 Wenn sowohl die Oak- als auch die MSRP-Kollektionen intensiv verwendet werden, kann aus Leistungsgründen ein zweiter Solr installiert werden.
 
@@ -186,7 +191,8 @@ cURL -u *signin* -d *data* *reindex-url*
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
-*size* = wie viele UGC-Einträge pro Operation neu indiziert werden`/content/usergenerated/asi/mongo/`
+*size* = wie viele UGC-Einträge pro Operation neu indiziert werden
+`/content/usergenerated/asi/mongo/`
 
 *path* = die Stammposition des Baums von UGC zu reindex
 
@@ -194,7 +200,8 @@ cURL -u *signin* -d *data* *reindex-url*
    `/etc/socialconfig/srpc/defaultconfiguration`
 * Um den Index auf einige UGC zu beschränken, geben Sie eine Unterstruktur von `asipath`
 
-*reindex-url* = Endpunkt für die Wiederdezierung von SRP`http://localhost:4503/services/social/datastore/mongo/reindex`
+*reindex-url* = Endpunkt für die Wiederdezierung von SRP
+`http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
@@ -226,11 +233,11 @@ Gehen Sie bei allen Autoren- und Veröffentlichungsinstanzen von AEM erneut zur 
 
 ### UGC wird nach der Aktualisierung ausgeblendet {#ugc-disappears-after-upgrade}
 
-Beim Aktualisieren von einer vorhandenen AEM Communities 6.0-Site müssen alle bereits vorhandenen UGC entsprechend der für die [SRP](srp.md) -API erforderlichen Struktur konvertiert werden, nachdem auf AEM Communities 6.3 aktualisiert wurde.
+Bei der Aktualisierung von einer vorhandenen AEM Communities 6.0-Site müssen alle bereits vorhandenen UGC-Dateien entsprechend der für die [SRP](srp.md) -API erforderlichen Struktur konvertiert werden, nachdem auf AEM Communities 6.3 aktualisiert wurde.
 
 Zu diesem Zweck steht auf GitHub ein Open-Source-Tool zur Verfügung:
 
-* [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [AEM Communities-UGC-Migrationswerkzeug](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 Das Migrationswerkzeug kann angepasst werden, um UGC aus früheren Versionen von AEM Social Communities für den Import in AEM Communities 6.1 oder höher zu exportieren.
 
