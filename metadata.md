@@ -8,13 +8,13 @@ getting-started-url: https://helpx.adobe.com/de/experience-manager/tutorials.htm
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-65.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-65.de-DE
 index: y
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: f483581a80faf0e6160d3b9cbc3fcdb8e8171dec
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 90%
+source-wordcount: '155'
+ht-degree: 74%
 
 ---
 
@@ -26,16 +26,16 @@ Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Da
 | metadata | Funktion |
 |--- |--- |
 | solution-title | Wird in der Artikelkopfzeile als Link verwendet. |
-| solution-hub-url | Öffnet die helpx-Hub-Seite. |
+| solution-hub-url | Öffnet die Hub-Seite &quot;Training und Support&quot;. |
 | solution-icon | Zeigt das Lösungssymbol neben Lösungstitel an. Noch nicht implementiert. |
-| getting-started-url | Link zur helpx-Seite „Erste Schritte“. |
-| tutorials-url | Link zu Videotutorials – entweder helpx-Tutorials oder KT-Tutorials. |
-| mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Standard ist 2. |
-| git-repo | Gibt den Speicherort des primären Repos für die interne Verwendung an. |
+| getting-started-url | Link zur Seite &quot;Erste Schritte&quot;. |
+| tutorials-url | Link zu Videolehrgängen. |
+| mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Der Standardwert ist 2.      |
+| git-repo | Gibt den Speicherort des Hauptberichts für die interne Verwendung an. |
 
 In der Datei &quot;TOC.md&quot;
 
 | metadata | Funktion |
 |--- |--- |
-| user-guide-title | Wird in der Artikelkopfzeile als Link verwendet |
-| user-guide-url | Öffnet die helpx-Hub-Seite |
+| user-guide-title | Wird in der Artikelkopfzeile als Link verwendet. |
+| user-guide-url | Öffnet die Hub-Seite &quot;Training und Support&quot;. |
