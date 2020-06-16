@@ -9,22 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3dbf4cf522441561d6ac6eeeff0e63e7bbb5e38
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 70%
 
 ---
 
 
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
 
-Der Rich-Text-Editor (RTE) ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Im Editor können die folgenden Komponenten erstellt werden:
+Der Rich-Text-Editor (RTE) ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Im Editor können verschiedene Komponenten erstellt werden., einschließlich:
 
 * Text
 * Textbild
-* Tabelle 
+* Tabelle
 
-## Bearbeitung im Kontext {#in-place-editing}
+## Bearbeiten im Kontext {#in-place-editing}
 
-Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-authoring/editing-content.md#editmovecopypastedeletetouchoptimizedui) as with any component.
+Bei der Auswahl einer textbasierten Komponente durch einfaches Tippen oder Klicken wird die [Komponenten-Symbolleiste](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) wie bei Komponenten üblich geöffnet.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -34,8 +37,8 @@ Wenn Sie nochmals darauf tippen/klicken oder gleich anfangs die Komponente mit e
 
 Diese Symbolleiste beinhaltet die folgenden Optionen:
 
-* **Format**: Auf diese Weise können Sie Fett, Kursiv und Unterstrichen einstellen.
-* **Listen**: Damit können Sie Listen mit Aufzählungszeichen oder Nummerierungen erstellen oder den Einzug einstellen.
+* **Format**: Wählen Sie die Optionen „Fett“, „Kursiv“ und „Unterstrichen“ aus.
+* **Listen**: Erstellen Sie Stichpunkt- oder Aufzählungslisten oder legen Sie einen Einzug fest.
 * **Hyperlink**
 * **Verknüpfung aufheben**
 * **Vollbild**
@@ -44,15 +47,15 @@ Diese Symbolleiste beinhaltet die folgenden Optionen:
 
 ## Bearbeiten im Vollbildmodus {#full-screen-editing}
 
-For text-based components, tapping the full screen mode from the [toolbar](#componenttoolbar) ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
 
-Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Authoring verwenden können. Die Verfügbarkeit der Optionen [hängt von der Konfiguration](/help/sites-administering/rich-text-editor.md)ab.
+Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Authoring verwenden können. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
 Zusätzliche Optionen für den Rich-Text-Editor sind:
 
-* **Verankerung**: Erstellen Sie einen Anker im Text, zu dem Sie später einen Link/Verweis erstellen können.
+* **Anker**: Erstellen Sie einen Anker im Text, zu dem Sie später eine Verknüpfung/einen Verweis herstellen können.
 * **Text links ausrichten**
 * **Text zentrieren**
 * **Text rechts ausrichten**
