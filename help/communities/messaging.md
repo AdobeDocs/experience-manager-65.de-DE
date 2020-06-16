@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Übersicht {#overview}
 
-Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern, die sich angemeldet haben, Nachrichten an andere zu senden, auf die beim Anmelden der Site zugegriffen werden kann.
+Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern mit angemeldeten Sites (Mitgliedern), Nachrichten an andere zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
 
 Die Messaging-Funktion wird für eine Community-Site aktiviert, indem während der Erstellung [](/help/communities/sites-console.md)einer Community-Site ein Kästchen markiert wird.
 
@@ -30,7 +33,7 @@ For additional information for developers, see [Messaging Essentials](/help/comm
 
 ## Messaging-Dienst {#messaging-operations-service}
 
-Der [AEM Communities Messaging Operations-Dienst](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifiziert den Endpunkt, der Messaging-bezogene Anforderungen verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden sollte, und wenn Meldungen Dateianhänge enthalten können, welche Dateitypen sind zulässig.
+Der Nachrichtendienst [&quot;Messaging Operations&quot;](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities zur Konfiguration identifiziert den Endpunkt, der mit Anfragen im Zusammenhang mit Nachrichten verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden sollte, und wenn Meldungen Dateianhänge enthalten können, welche Dateitypen sind zulässig.
 
 Für Community-Sites, die mit dem erstellt wurden, `Communities Sites console`ist bereits eine Instanz des Dienstes vorhanden, wobei der Posteingang auf `/mail/inbox`festgelegt ist.
 
@@ -44,7 +47,7 @@ Wie unten gezeigt, existiert eine Konfiguration des Dienstes für Sites, die mit
 
 Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** neben dem Dienstnamen:
 
-* **Whitelist zu Nachrichtenfeldern**
+* **Nachrichtenfelder Zulassungsliste**
 
    Gibt die Eigenschaften der Komponente &quot;Nachricht erstellen&quot;an, die Benutzer bearbeiten und beibehalten können. Wenn neue Formularelemente hinzugefügt werden, muss die Element-ID hinzugefügt werden, falls gewünscht, damit sie in SRP gespeichert werden kann. Die Standardeinstellung sind zwei Einträge: *Betreff* und *Inhalt*.
 
@@ -108,13 +111,13 @@ Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** 
 
    Wenn supportAttachments aktiviert ist, gibt dieser Wert die maximal zulässige Gesamtgröße (in Byte) aller Anlagen an. Default is *104857600* (100 MB).
 
-* **Anhang Typ schwarze Liste**
+* **blockierungsliste des Anlagentyps**
 
-   Eine schwarze Liste mit Dateinamenerweiterungen, mit dem Präfix &#39;**.**&quot;, die vom System abgelehnt werden. Ist dies nicht auf der Blacklist, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &#39;**+**&#39; und &#39;**-**&#39; hinzugefügt oder entfernt werden.
+   Eine blockierungsliste von Dateinamenerweiterungen mit dem Präfix &quot;**.**&quot;, die vom System abgelehnt werden. Wenn kein auf die Blockierungsliste gesetzt wird, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &#39;**+**&#39; und &#39;**-**&#39; hinzugefügt oder entfernt werden.
 
 * **Zulässige Anlagentypen**
 
-   **(*Aktion erforderlich*)** Eine Whitelist der Dateinamenerweiterungen, das Gegenteil der schwarzen Liste. Um alle Dateinamenerweiterungen mit Ausnahme der auf der Blacklist zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um den einzelnen leeren Eintrag zu entfernen.
+   **(*Aktion erforderlich*)** Eine zulassungsliste von Dateinamenerweiterungen im , das Gegenteil der blockierungsliste. Um alle Dateinamenerweiterungen mit Ausnahme der auf die Blockierungsliste gesetzt zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um den einzelnen leeren Eintrag zu entfernen.
 
 * **Dienstauswahl**
 
@@ -122,15 +125,15 @@ Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** 
 
    Die Standardeinstellung ist */bin/messaging* .
 
-* **Feld-Whitelist**
+* **Zulassungsliste-**
 
-   Whitelist für **Nachrichtenfelder verwenden**.
+   Verwenden Sie **die Zulassungsliste**&quot;Nachrichtenfelder&quot;.
 
 >[!CAUTION]
 >
 >Jedes Mal, wenn eine `Messaging Operations Service` Konfiguration zur Bearbeitung geöffnet wird und sie entfernt `allowedAttachmentTypes.name` wurde, wird ein leerer Eintrag erneut hinzugefügt, damit die Eigenschaft konfiguriert werden kann. Ein einzelner leerer Eintrag deaktiviert Dateianlagen effektiv.
 >
->Um alle Dateinamenerweiterungen mit Ausnahme der auf der Blacklist zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um (erneut) den einzelnen leeren Eintrag zu entfernen, bevor Sie auf **Speichern** klicken.
+>Um alle Dateinamenerweiterungen mit Ausnahme der auf die Blockierungsliste gesetzt zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um (erneut) den einzelnen leeren Eintrag zu entfernen, bevor Sie auf **Speichern** klicken.
 
 
 ## Group Messaging {#group-messaging}
