@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+workflow-type: tm+mt
+source-wordcount: '1599'
+ht-degree: 71%
 
 ---
 
@@ -88,7 +91,7 @@ Der Connector unterstützt Folgendes:
 
 Produktfeatures, Beispiele und Hotfixes werden über AEM Package Share verteilt. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Sie benötigen eine gültige Adobe-ID, die Ihre Unternehmens-E-Mail-Adresse enthält. Nach der Anmeldung bei Ihrem Konto müssen Sie außerdem Zugriff auf Package Share anfordern.
+To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Sie benötigen eine gültige Adobe ID, die Ihre Firma-E-Mail-Adresse enthält. Nach der Anmeldung bei Ihrem Konto müssen Sie außerdem Zugriff auf Package Share anfordern.
 
 #### Integrieren mit AEM {#integrating-with-aem}
 
@@ -130,14 +133,14 @@ Der Connector kann auch für mehrere Workspaces konfiguriert werden. In diesem F
 `<name>` is the name of the JCR workspace and
 `<url>` is the URL of the SharePoint server for that workspace.
 
-Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Fügen Sie das Bundle **com.day.cq.dam.cq-dam-jcr-connectors** der Whitelist hinzu.
+Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Zulassungsliste des Bundles &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Gehen Sie wie folgt vor, um Bundles in AEM der Whitelist hinzuzufügen:
+So führen Sie das zulassungsliste von Bundles in AEM durch:
 
 1. Navigieren Sie zur OSGi Management Console: http://localhost:4502/system/console/configMgr.
 1. Suchen Sie nach dem Dienst &quot;Apache Sling Login Admin Whitelist&quot;.
-1. Aktivieren Sie das Kontrollkästchen zur Umgehung der Whitelist.
-1. Add &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; in whitelist bundles default
+1. Select **Bypass the whitelist**.
+1. Add `com.day.cq.dam.cq-dam-jcr-connectors` in whitelist bundles default
 1. Klicken Sie auf Speichern.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
