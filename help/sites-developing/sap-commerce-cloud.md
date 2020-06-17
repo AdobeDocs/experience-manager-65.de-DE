@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '2331'
+ht-degree: 85%
 
 ---
 
@@ -48,7 +51,7 @@ Das eCommerce-Framework kann mit einer beliebigen eCommerce-Lösung verwendet we
 
    * Engines können anhand einer `commerceProvider`-Service-Eigenschaft identifiziert werden.
 
-* AEM unterstützt `Resource.adaptTo()` und `CommerceService``Product`
+* AEM unterstützt `Resource.adaptTo()` und `CommerceService` `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -99,7 +102,7 @@ Siehe folgendes Beispiel:
 
 ### Entwickeln für Hybris 4 {#developing-for-hybris}
 
-Die hybris Erweiterung des eCommerce-Integrationsrahmens wurde aktualisiert, um Hybris 5 zu unterstützen und gleichzeitig Abwärtskompatibilität mit Hybris 4 zu gewährleisten.
+Die hybris Erweiterung des eCommerce-Integrationsrahmens wurde aktualisiert, um Hybris 5 zu unterstützen und gleichzeitig die Abwärtskompatibilität mit Hybris 4 zu gewährleisten.
 
 Die Standardeinstellungen im Code sind auf Hybris 5 abgestimmt.
 
@@ -109,8 +112,7 @@ Für das Entwickeln mit Hybris 4 ist Folgendes erforderlich:
 
    `-P hybris4`
 
-   
-Es lädt die vorkonfigurierte Hybris 4-Distribution herunter und bettet sie in das Bundle ein:
+   Es lädt die vorkonfigurierte Hybris 4-Distribution herunter und bettet sie in das Bundle ein:
 
    ```
    cq-commerce-hybris-server
@@ -170,6 +172,7 @@ In Hybris gepflegte Produktdaten müssen in AEM verfügbar sein. Dafür wurde fo
 * Die Hybris-Erweiterung stellt ein Abruf-Importtool („Hybris-Schema“) bereit, das für das Importieren von Änderungen in AEM in bestimmten Abständen konfiguriert werden kann (z. B. alle 24 Stunden, wobei das Intervall in Sekunden angegeben wird):
 
    * 
+
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -225,6 +228,7 @@ Zwar können Produkte (im Allgemeinen) viele Variantenachsen haben, vorkonfiguri
    >
 1. plus eins mehr
    >   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
+
 >
 
 
@@ -556,9 +560,9 @@ AEM kann mit diversen eCommerce-Systemen integriert werden. Dazu ist eine Strate
 
    AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
 
-* Slave-Konten
+* Konten in Hybris
 
-   AEM erstellt für jeden Käufer ein Slave-Konto in hybris. Der Benutzername des untergeordneten Kontos ist mit dem AEM-Benutzernamen identisch. Ein kryptografisches Zufallskennwort wird automatisch in AEM erstellt und gespeichert (verschlüsselt).
+   AEM erstellt für jeden Käufer ein entsprechendes (untergeordnetes) Konto in Hybris. Der Benutzername dieses Kontos ist identisch mit dem AEM-Benutzernamen. Ein kryptografisches Zufallskennwort wird automatisch in AEM erstellt und gespeichert (verschlüsselt).
 
 #### Bereits vorhandene Benutzer {#pre-existing-users}
 
