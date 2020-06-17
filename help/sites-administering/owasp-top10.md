@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: cd7331f5f57ec90ea72d41d467891dc832347a3c
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 88%
 
 ---
 
@@ -45,7 +48,7 @@ Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und dahe
 
 Cross-Site Request Forgery (CSRF) wird durch das automatische Einsetzen eines kryptografischen Tokens in alle Formulare und AJAX-Anforderungen und die Überprüfung dieses Tokens auf dem Server für jeden POST-Test abgemildert.
 
-Darüber hinaus ist AEM mit einem Referrer-Header-basierten Filter ausgestattet, der so konfiguriert werden kann, dass er nur POST-Anforderungen von bestimmten Whitelist-Hosts zulässt.
+In addition, AEM ships with a referrer-header based filter, which can be configured to *only* allow POST requests from specific hosts (defined in a list).
 
 ## 6. Sicherheitsrelevante Fehlkonfiguration {#security-misconfiguration}
 
