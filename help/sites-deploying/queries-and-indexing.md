@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: b01f6d3726fd6aa06ffedaf10dfde9526479a2a3
+workflow-type: tm+mt
+source-wordcount: '2880'
+ht-degree: 91%
 
 ---
 
@@ -82,8 +85,9 @@ Der Eigenschaften-Index ist für Abfragen mit Eigenschaftenbeschränkungen und o
 1. Nennen Sie den Knoten **PropertyIndex** und legen Sie als Knotentyp **oak:QueryIndexDefinition** fest.
 1. Legen Sie die folgenden Eigenschaften für den neuen Knoten fest:
 
-   * **** type:  `property` (vom Typ String)
-   * **** propertyNames:  `jcr:uuid` (vom Typ Name)
+   * **type:**  `property` (vom Typ String)
+   * **propertyNames:**  `jcr:uuid` (vom Typ Name)
+
    Bei diesem Beispiel wird die Eigenschaft `jcr:uuid` indiziert, die dazu dient, die UUID (Universally Unique Identifier) des verknüpften Knotens anzuzeigen.
 
 1. Speichern Sie die Änderungen.
@@ -119,8 +123,8 @@ Sie können einen Lucene-Volltext-Index wie folgt konfigurieren:
 1. Nennen Sie den Knoten **LuceneIndex** und legen Sie als Knotentyp **oak:QueryIndexDefinition** fest.
 1. Fügen Sie dem Knoten  folgende Eigenschaften hinzu:
 
-   * **** type:  `lucene` (vom Typ String)
-   * **** async:  `async` (vom Typ String)
+   * **type:**  `lucene` (vom Typ String)
+   * **async:**  `async` (vom Typ String)
 
 1. Speichern Sie die Änderungen.
 
@@ -129,7 +133,7 @@ Für den Lucene-Index sind folgende Konfigurationsoptionen verfügbar:
 * Für die Eigenschaft **type**, die den Indextyp angibt, muss **lucene** festgelegt sein.
 * Für die Eigenschaft **async** muss **async** festgelegt sein. Dadurch wird die Index-Aktualisierung an einen Hintergrund-Thread gesendet.
 * Die Eigenschaft **includePropertyTypes**, die angibt, welche Untermenge an Eigenschaftentypen im Index enthalten sind.
-* Die Eigenschaft **excludePropertyNames**, die eine Blacklist mit Eigenschaftennamen definiert, d. h. Eigenschaften, die vom Index ausgeschlossen sein sollen.
+* The **excludePropertyNames** property which will define a list of property names - properties that should be excluded from the index.
 * Die Kennzeichnung **reindex**, die eine vollständige Neuindizierung von Inhalt auslöst, wenn für sie **true** festgelegt ist.
 
 ### Der Lucene-Eigenschaften-Index {#the-lucene-property-index}
@@ -151,7 +155,7 @@ Um einen Lucene-Eigenschaften-Index für die obige Abfrage zu definieren, könne
 
 Sobald der Knoten erstellt wurde, fügen Sie die folgenden Eigenschaften hinzu:
 
-* **Typ:**
+* **type:**
 
    ```
    lucene (of type String)
@@ -169,7 +173,7 @@ Sobald der Knoten erstellt wurde, fügen Sie die folgenden Eigenschaften hinzu:
    false (of type Boolean)
    ```
 
-* **** includePropertyNames: `["alias"] (of type String)`
+* **includePropertyNames:** `["alias"] (of type String)`
 
 >[!NOTE]
 >
@@ -208,6 +212,7 @@ Falls Sie einen vorkonfigurierten Analyzer verwenden möchten, können Sie diese
    * **Name:** `class`
    * **Typ:** `String`
    * **Wert:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+
    Der Wert ist der Name der Analyzer-Klasse, die Sie verwenden möchten.
 
    Sie können auch einen Analyzer für eine bestimmte Lucene-Version festlegen, indem Sie die optionale String-Eigenschaft `luceneMatchVersion` verwenden. Eine gültige Syntax für die Verwendung mit Lucene 4.7 sieht wie folgt aus:
@@ -215,6 +220,7 @@ Falls Sie einen vorkonfigurierten Analyzer verwenden möchten, können Sie diese
    * **Name:** `luceneMatchVersion`
    * **Typ:** `String`
    * **Wert:** `LUCENE_47`
+
    Wenn `luceneMatchVersion` nicht angegeben ist, verwendet Oak die im Lieferumfang enthaltene Version von Lucene.
 
 1. Wenn Sie eine Stoppwörter-Datei zu Analyzer-Konfigurationen hinzufügen möchten, können Sie einen neuen Knoten unter dem Knoten `default` mit folgenden Eigenschaften erstellen:
@@ -307,9 +313,9 @@ Sie können den eingebetteten Solr-Server wie folgt konfigurieren:
 1. Öffnen Sie CRXDE und melden Sie sich mit „Admin“ an.
 1. Fügen Sie einen Knoten **solrlndex** vom Typ **oak:QueryIndexDefinition** unter **oak:index** mit folgenden Eigenschaften hinzu:
 
-   * **** type: `solr`(vom Typ String)
-   * **** async: `async`(vom Typ String)
-   * **** reindex: `true`(vom Typ Boolean)
+   * **type:** `solr`(vom Typ String)
+   * **async:** `async`(vom Typ String)
+   * **reindex:** `true`(vom Typ Boolescher Wert)
 
 1. Speichern Sie die Änderungen.
 
@@ -321,9 +327,11 @@ AEM kann auch mit einer remoten Solr-Server-Instanz konfiguriert werden:
 1. Erstellen Sie zwei Solr-Shards. Erstellen Sie dazu Ordner für jedes Shard in dem Ordner, in den Solr entpackt wurde:
 
    * Erstellen Sie für das erste Shard folgenden Ordner:
+
    `<solrunpackdirectory>\aemsolr1\node1`
 
    * Erstellen Sie für das zweite Shard folgenden Ordner: 
+
    `<solrunpackdirectory>\aemsolr2\node2`
 
 1. Suchen Sie die Beispiel-Instanz im Solr-Paket. Sie befindet sich in der Regel im Ordner `example` im Stammverzeichnis des Pakets.
