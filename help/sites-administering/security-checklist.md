@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '2841'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +47,7 @@ Die Aktivierung der HTTPS-Transportschicht (Transport Layer) in den Autoren- und
 
 ### Installieren von Sicherheit-Hotfixes {#install-security-hotfixes}
 
-Stellen Sie sicher, dass die neuesten, [von Adobe bereitgestellten Sicherheits-Hotfixes](https://helpx.adobe.com/experience-manager/kb/aem63-available-hotfixes.html) installiert sind.
+Stellen Sie sicher, dass die neuesten, [von Adobe bereitgestellten Sicherheits-Hotfixes](https://helpx.adobe.com/de/experience-manager/kb/aem63-available-hotfixes.html) installiert sind.
 
 ### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -103,7 +106,7 @@ Adobe empfiehlt die Definition von benutzerdefinierten Fehler-Handler-Seiten, in
 
 >[!NOTE]
 >
->Weitere Details finden Sie im Knowledgebase-Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html).
+>Weitere Details finden Sie im Knowledgebase-Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://helpx.adobe.com/de/experience-manager/kb/CustomErrorHandling.html).
 
 ### Durchgehen der Dispatcher-Sicherheitscheckliste {#complete-dispatcher-security-checklist}
 
@@ -169,9 +172,9 @@ Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurie
 
 * Welche HTTP-Methoden gefiltert werden sollen
 * Ob eine leere Referrer-Kopfzeile zulässig ist
-* Eine Whitelist von Servern, die zusätzlich zum Serverhost zugelassen werden sollen.
+* und eine Liste von Servern, die zusätzlich zum Server-Host zulässig sind.
 
-Standardmäßig sind alle Varianten von „localhost“ und die aktuellen Hostnamen, mit denen der Server verknüpft ist, in der Whitelist enthalten.
+   Standardmäßig befinden sich alle Varianten von localhost und die aktuellen Hostnamen, an die der Server gebunden ist, in der Liste.
 
 So konfigurieren Sie den Referrer-Filterdienst:
 
@@ -260,6 +263,7 @@ Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computerressource für
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
+
    Alle gültigen Varianten (geben z. B. die Antwort `200` zurück und werden per Konfiguration zwischengespeichert) werden vom Dispatcher zwischengespeichert, was möglicherweise zu einem vollen Dateisystem führen kann, sodass kein Dienst für weitere Anfragen verfügbar ist.
 
 Es gibt viele Konfigurationspunkte zum Verhindern solcher Angriffe. In diesem Dokument gehen wir jedoch nur auf die ein, die direkt für AEM relevant sind.
@@ -315,7 +319,7 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 >
 >Diese Abmilderung sollte nur für AEM-Umgebungen durchgeführt werden, die keine Formulare verwenden.
 
-Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Form selectors can be detected by the presence of the **&amp;ast;.form.** &amp;ast; Zeichenfolge in Abfragen.
+Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Form selectors can be detected by the presence of the **&amp;ast;.form.&amp;ast;** Zeichenfolge in Abfragen.
 
 Führen Sie zum Beheben dieses Problems die folgenden Schritte aus:
 
@@ -408,6 +412,7 @@ Genauer gesagt, müssen Sie Folgendes tun:
 1. Suchen Sie im lokalen Dateisystem das Bundle com.adobe.granite.crypto.file. Es kann sich z. B. unter diesem Pfad befinden:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+
    Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
 
 1. Navigieren Sie zum Ordner „data“. Beispiel:
