@@ -3,7 +3,7 @@ title: Laden Sie digitale Assets herunter [!DNL Adobe Experience Manager].
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 527b2f50efac606a0a696c8f56b0d725f79cd692
+source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 39%
@@ -29,7 +29,7 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Gemischtes Medienset“ und
 1. Wählen Sie den Ordner oder einen oder mehrere Assets im Ordner aus.
 1. On the toolbar, tap **[!UICONTROL Download]**.
 
-   ![Verfügbare Optionen beim Herunterladen von Assets aus Experience Managern](/help/assets/assets/asset-download.png)
+   ![Verfügbare Optionen beim Herunterladen von Assets aus Experience Managern](/help/assets/assets/asset-download1.png)
 
    *Optionen des Dialogfelds &quot;Herunterladen&quot;.*
 
