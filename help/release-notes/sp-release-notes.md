@@ -1,18 +1,18 @@
 ---
-title: Versionshinweise zu Adobe Experience Manager 6.5 Service Pack
+title: Adobe Experience Manager 6.5 Service Pack - Versionshinweise
 description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 Service Pack 5.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
 workflow-type: tm+mt
-source-wordcount: '4510'
+source-wordcount: '4512'
 ht-degree: 7%
 
 ---
 
 
-# Versionshinweise zu Adobe Experience Manager 6.5 Service Pack {#aem-service-pack-release-notes}
+# Adobe Experience Manager 6.5 Service Pack - Versionshinweise {#aem-service-pack-release-notes}
 
 ## Versionsinformationen {#release-information}
 
@@ -25,13 +25,13 @@ ht-degree: 7%
 
 ## Inhalt von Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
-Adobe Experience Manager 6.5.5.0 ist ein wichtiges Update, das neue Funktionen, von Kunden angeforderte wichtige Verbesserungen sowie Verbesserungen in den Bereichen Leistung, Stabilität und Sicherheit umfasst. Diese Updates werden seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht. Es kann über Adobe Experience Manager 6.5 installiert werden.
+Adobe Experience Manager 6.5.5.0 ist ein wichtiges Update, das neue Funktionen, vom Kunden angeforderte wichtige Verbesserungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen umfasst, die seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht werden. Es kann auf Adobe Experience Manager 6.5 installiert werden.
 
 Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.5.0 eingeführt wurden, zählen:
 
-* Passen Sie die Spaltennamen an, die in Adobe Experience Manager Inbox angezeigt werden.
+* Passen Sie die Spaltennamen an, die im Adobe Experience Manager-Posteingang angezeigt werden.
 
-* Verbesserte Barrierefreiheit in verschiedenen Bereichen des Experience Manager Web-Content-Managements (WCM), wie z. B. Seiteneditor, Hauptkomponenten, RTE und Admin-Benutzeroberfläche.
+* Verbesserte Barrierefreiheit in verschiedenen Bereichen des Experience Manager Web Content-Management (WCM), z. B. im Seiteneditor, in den Hauptkomponenten, in RTE und in der Admin-Benutzeroberfläche.
 
 * Speichern Sie einen Entwurf [!DNL Interactive Communication] als Entwurf.
 
@@ -39,11 +39,11 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manage
 
 * Verbesserte Ausnahmebehandlung im [!DNL Adobe Experience Manager Assets] Benutzeroberflächenfluss.
 
-* Um die Veröffentlichungs-URL für das dynamische Media Scene7 abzurufen, `getRemoteAssetPublishURL` wird der `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` Benutzeroberfläche eine neue Methode hinzugefügt.
+* Zum Abrufen der Veröffentlichungs-URL für Dynamic Media in Scene7 `getRemoteAssetPublishURL` wird der `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` Benutzeroberfläche eine neue Methode hinzugefügt.
 
 * [Barrierefreiheitsverbesserungen](#assets-6550) in Übereinstimmung mit [!DNL Adobe Experience Manager Assets] den Web Content Accessibility Guidelines (WCAG).
 
-* Die Paketfreigabe-Integration aus Adobe Experience Manager wurde entfernt.
+* Paketfreigabe-Integration aus Adobe Experience Manager entfernt.
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.22.3 aktualisiert.
 
@@ -53,35 +53,35 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 ### [!DNL Sites] {#sites-6550}
 
-* Experience Manager-Sites bieten eine Option zum Veröffentlichen oder Rückgängigmachen der Veröffentlichung einer Seite über ihren Alias. Die Option funktioniert nicht (NPR-33415).
+* Experience Manager-Sites bieten eine Option zum Veröffentlichen oder Rückgängigmachen der Veröffentlichung einer Seite aus ihrem Alias. Die Option funktioniert nicht (NPR-33415).
 * Wenn ein Layout-Container aus einer Vorlage mit mehreren Vorlagen gelöscht wird, wird die Vorlage nicht korrekt dargestellt (NPR-33347).
 * Wenn eine Experience Manager-Siteseite Teil eines großen Inhaltssatzes mit mehreren Live-Kopien ist, kann die Vorschau des Seitenversionsverlaufs nicht geladen werden (NPR-33311).
 * Wenn Sie den Befehl &quot;Verschieben&quot;verwenden, um eine Experience Manager-Siteseite umzubenennen, wird der Seitentitel nicht aktualisiert (NPR-33264).
 * Wenn Sie Seiten durch die Ansicht verschieben, werden die Spalten ausgeblendet (NPR-33216).
 * Wenn der Name einer lokalen Komponente in einer Sprachkopie identisch mit dem Namen einer Komponente im Entwurf ist und die Komponente aus dem Entwurf herausgegeben wird, `_msm_moved` wird dem Namen der lokalen Komponente kein Begriff hinzugefügt (NPR-33208).
-* Das Seitenumleitungs-Servlet hängt .html an eine Experience Manager-Sites-URL an, bei der ResourceType nicht `cq:Page` (NPR-33176) ist.
+* Das Seitenumleitungs-Servlet hängt .html an eine Experience Manager-Sites-URL an, bei der ResourceType nicht angegeben ist `cq:Page` (NPR-33176).
 * Wenn Sie eine Unterstruktur einfügen, gibt es keine Option zu entscheiden, ob die entsprechenden Unterseiten eingefügt werden sollen oder nicht (NPR-33149).
 * Die Anzahl der Ergebnisse in Live-Verwendungen einer Komponente ist auf die Zahl 49 beschränkt (NPR-33058).
 * Wenn Sie ein Inhaltsfragment auf einem Schema basieren und es einen obligatorischen Textbereich oder ein Pfadfeld enthält, kann das Inhaltsfragment nicht gespeichert werden (NPR-33007).
-* Wenn Sie eine benutzerdefinierte Komponente mit der standardmäßigen Experience Fragment-Komponente erstellen und sie auf den Experience Manager-Sites-Seiten verwenden, zeigt Experience Manager keine Verweise (Verwendung) für die benutzerdefinierte Komponente (NPR-32852) an.
+* Wenn Sie eine benutzerdefinierte Komponente mit der Standardkomponente &quot;Erlebnisfragment&quot;erstellen und sie auf den Seiten &quot;Experience Manager-Sites&quot;verwenden, zeigt Experience Manager keine Verweise (Verwendungszwecke) für die benutzerdefinierte Komponente (NPR-32852) an.
 * Wenn Sie einen Ordner mit einer großen Anzahl von Verweisen umbenennen, werden viele Verweise auf den Ordner nicht aktualisiert (NPR-32765).
 * Wenn Sie die Quellbearbeitungsoption aktivieren, steht sie für Inline-Vollbildoptionen zur Verfügung, bleibt aber für das Bearbeiten des Dialogfelds und der Vollbildoptionen des Rich-Text-Editors (NPR-32763) nicht mehr verfügbar.
 * Wenn Sie über ein Mehrfeld verfügen und es ein erforderliches Feld (wie ein Dropdown-Feld oder ein Pfadfeld) in den Seiteneigenschaften eines Blueprints enthält, werden die Seiteneigenschaften der Live-Kopie nicht gespeichert (NPR-32751), wenn eine Seite, die ein solches Multifeld enthält, verkleinert wird.
 * Bildschirmlesehilfen können die Überschriftenstruktur nicht zum Navigieren auf einer Seite verwenden. Darüber hinaus enthält die Registerkarte Komponenten die falsche Beschriftung (NPR-32648).
 * Beim Paginieren werden nicht alle Elemente (NPR-32605) in der Erlebnisfragmentauswahl geladen.
 * Autorenberechtigungen zum Lesen, Ändern, Erstellen und Löschen von Live-Kopien werden widerrufen. Jeder Autor musste explizit Lese- und Änderungsberechtigungen zum Verschieben von Seiten in einem Blueprint (NPR-32550) bereitstellen.
-* Inhaltsersteller können Launch für eine Seite, die mit Adobe Analytics (NPR-32548) integriert ist, nicht erstellen.
+* Autoren von Inhalten können &quot;Launch&quot;nicht für eine Seite erstellen, die mit Adobe Analytics integriert ist (NPR-32548).
 * Wenn ein Benutzer die Vererbung mit der Synchronisierung fortsetzt, wird die Live-Kopie der übergeordneten Seite nicht mit dem Entwurf synchronisiert und zeigt einen falschen Status an (NPR-32500).
-* Das Laden der Seite des Experience Manager-Sites-Editors dauert mehr als 15 Sekunden (NPR-32413).
+* Das Laden der Editor-Seite für Experience Manager-Sites dauert mehr als 15 Sekunden (NPR-32413).
 * In bestimmten Feldern wird die Option Vererbung abbrechen nicht angezeigt (NPR-32362).
 * Wenn Sie einen Pfad für eine Erlebnisfragment-Komponente auswählen und das Kontrollkästchen &quot;Auswahldialogfeld öffnen&quot;aktivieren, werden Sie nicht zum ausgewählten Pfad im Pfadbrowser (NPR-32308) navigiert.
 * Wenn Sie von Experience Manager 6.2 auf Experience Manager 6.5 aktualisieren, wird die Komponente Parsys der statischen Vorlagen nicht korrekt angezeigt. Die Höhe der Komponente Parsys ist auf 0 eingestellt und die darin enthaltenen Komponenten sind nicht sichtbar (NPR-33663).
 * Wenn ein Benutzer einen Layout-Container kopiert und auf derselben Seite eingefügt hat, werden Komponenten in einem Layout-Container nicht angezeigt (NPR-33648).
-* Dispatcher Health Check zeigt eine `Invalid cookie header` Warnmeldung in den Protokolldateien an (NPR-33629).
+* Bei der Überprüfung des Dispatchers wird eine `Invalid cookie header` Warnmeldung in den Protokolldateien (NPR-33629) angezeigt.
 
 ### [!DNL Assets] {#assets-6550}
 
-**Verbesserungen der Barrierefreiheit in Experience Manager Assets**
+**Barrierefreiheitsverbesserungen in Experience Manager Assets**
 
 * Es ist jetzt möglich, den Tastaturfokus auf die Liste [!UICONTROL Kommentare] und die Option zum [!UICONTROL Erstellen] von Versionskommentaren unter Neue Version  erstellen im [!UICONTROL Timeline] -Bedienfeld von Assets (NPR-33424) zu lenken.
 
@@ -125,7 +125,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Der Zweck verschiedener Kombinationsfeldelemente (z. B. Pfadfeld und Option zum Öffnen des Auswahldialogfelds auf der Registerkarte Grundeinstellungen der Asset-Eigenschaften) wird nun von Bildschirmlesehilfen korrekt angekündigt (NPR-33235).
 
-* Die Informationen, die die Zeilen in der Tabelle &quot;Ansicht&quot;auswählen können, werden jetzt Bildschirmlesehilfen-Benutzern mitgeteilt, wenn der Tastaturfokus auf sie gelegt wird. Diese Information wird angekündigt, wenn der Mauszeiger auf die Zeilen bewegt wird (NPR-33234).
+* Die Informationen, die die Zeilen in der Tabelle &quot;Ansicht&quot;auswählen können, werden jetzt Bildschirmlesehilfen-Benutzern mitgeteilt, wenn der Tastaturfokus auf sie gelegt wird. Wenn ein Zeiger mit der Maus auf die Zeilen zeigt, geben die Bildschirmlesehilfen die Informationen an (NPR-33234).
 
 * Die Optionen (mit [!UICONTROL x]) zum Entfernen der einzelnen markierten Tags unter dem Feld &quot; [!UICONTROL Tags] &quot;auf der Registerkarte &quot; [!UICONTROL Einfach] &quot;der [!UICONTROL Eigenschaften] stehen jetzt Sprachausgabeprogrammen zur Verfügung (NPR-33206).
 
@@ -177,7 +177,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Um Verwirrung bei Benutzern ohne Sehbehinderung mit Bildschirmlesehilfen zu vermeiden, werden dekorative Symbole und Bilder jetzt von Bildschirmlesehilfen ignoriert (CQ-4272944).
 
-**Behobene Probleme in Experience Manager-Assets**
+**In Experience Manager Assets behobene Probleme**
 
 [!DNL Adobe Experience Manager] 6.5.5.0 Assets bieten Korrekturen an folgenden Problemen:
 
@@ -185,7 +185,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Wenn Sie in Metadaten-Schemas ein Kaskadenpopup verwenden, wird beim Auswählen und Speichern einer Dropdown-Option mit einem Apostroph (aus der untergeordneten Dropdown-Liste) die ausgewählte Apostroph-Option nach dem erneuten Öffnen der Asset- [!UICONTROL Eigenschaften] (NPR-32649) ausgeblendet.
 
-* [!UICONTROL Asset Insights Sync Job] stoppt und schlägt fehl, wenn ungültige Einträge (auf der Seite von Analytics) auftreten, anstatt zum nächsten Eintrag (NPR-32674) zu wechseln.
+* [!UICONTROL Asset Insights Sync Job] stoppt und schlägt fehl, wenn ungültige Einträge (auf der Analytics-Seite) auftreten, anstatt zum nächsten Eintrag (NPR-32674) zu wechseln.
 
 * Gyroscope ist nicht funktionsfähig, da Bewegungssensoren standardmäßig in mobilen Browsern im Panorama-Viewer deaktiviert sind (CQ-4272937).
 
@@ -199,7 +199,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * In Protokollen zum Öffnen einer intelligenten Sammlung mit mehr als 10.000 Assets (NPR-32980) werden seitenübergreifende Warnungen angezeigt.
 
-* Beim Verschieben von Assets aus einem Ordner in einen anderen im [!DNL Adobe Experience Manager] Modus &quot;Dynamic Media Scene7&quot;wird der Asset-Name in Kleinbuchstaben geändert (NPR-32995).
+* Beim Verschieben von Assets von einem Ordner in einen anderen im [!DNL Adobe Experience Manager] Scene7-Runmode-Modus (NPR-32995) werden die Asset-Namen in Kleinbuchstaben geändert.
 
 * Ein durchsuchtes Asset kann nicht gelöscht werden, nachdem es aus den Suchergebnissen zu seinen Eigenschaften navigiert und dann zu den Suchergebnissen zurückgekehrt ist, um es zu löschen (NPR-32998).
 
@@ -213,11 +213,11 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Ausnahmen sind in Protokollen beim Öffnen der Rail-Darstellungen für eine PDF-Datei unter einem Profil mit intelligenten Zuschnitten (CQ-4294201) zu beobachten.
 
-* Bildvorgaben werden nicht veröffentlicht, wenn der Synchronisierungsmodus [!UICONTROL für] dynamische Medien standardmäßig im Experience Manager mit dem Scene7-Modus für dynamische Medien deaktiviert ist (CQ-4294200).
+* Bildvorgaben werden nicht veröffentlicht, wenn der Synchronisierungsmodus [!UICONTROL von] Dynamic Media beim Experience Manager mit Dynamic Media im Scene7-Modus (CQ-4294200) standardmäßig deaktiviert ist.
 
 * Die Verarbeitung von Assets während des Massen-Uploads wird blockiert, und die Workflow-Instanz zeigt angehaltene Instanzen des DAM-Aktualisierungsassets (CQ-4293916).
 
-* Das Erstellen einer Konfiguration für dynamische Medien in Experience Manager funktioniert, aber auf der Benutzeroberfläche geschieht nichts bei der Auswahl von Speichern (CQ-4292442).
+* Das Erstellen einer Dynamic Media-Konfiguration auf Experience Manager funktioniert, auf der Benutzeroberfläche geschieht jedoch nichts bei der Auswahl von Speichern (CQ-4292442).
 
 * Die Vorschau von F4V-Video-Assets funktioniert bei der progressiven Wiedergabe auf Safari/Mac nicht (CQ-4289844).
 
@@ -229,23 +229,23 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Die in Version 6.5.5.0 behobenen Leistungsprobleme lauten (CQ-4279206):
 
-   * Es dauert zu lange, bis große Binärdateien auf die Server der dynamischen Medienverarbeitung hochgeladen werden.
+   * Es dauert zu lange, bis große Binärdateien auf die Image Processing-Server von Dynamic Media hochgeladen werden.
 
-   * Die Zeit für die Erstellung von Miniaturbildern in Experience Manager wird aufgrund der Architektur von Scene7 für dynamische Medien verlängert.
+   * Die Zeit zum Generieren von Miniaturbildern auf dem Experience Manager nimmt aufgrund der Dynamic Media in Scene7 zu.
 
-* Migrationsprobleme mit dynamischen Medien in Scene7 schlagen bei Kunden mit einer großen Anzahl von Assets fehl (CQ-4279206).
+* Probleme mit der Scene7-Migration bei Dynamic Media mit einer großen Anzahl von Assets sind nicht möglich (CQ-4279206).
 
 * Das Layout des 360-Grad-Viewers für Video ist beschädigt, wenn es verwendet `setVideo` wird, und das Video wechselt bei der Verwendung nach unten `video= modifier` (CQ-4263201).
 
-* Während der Installation des Experience Manager SDL-Pakets (NPR-33175) wird eine Fehlermeldung angezeigt.
+* Während der Installation des Experience Manager-SDL-Pakets (NPR-33175) wird eine Fehlermeldung angezeigt.
 
 ### Plattform {#platform-6550}
 
 * Der [!DNL Sling] Filter wird nicht aufgerufen, wenn der `sling:match` Karteneintrag unter `/etc/maps` (NPR-33362) erstellt wird.
 * Experience Manager stürzt aufgrund eines Segmentierungsfehlers ab [!DNL Apache Lucene] (NPR-32988).
-* [!DNL Jackson] Kernpaket fehlt in der Experience Manager-Datei uberjar (NPR-32848).
+* [!DNL Jackson] Kernpaket fehlt in der Datei &quot;Experience Manager uberjar&quot;(NPR-32848).
 * CRXDE Lite lädt keine Inhalte für Benutzer ohne Leseberechtigung für die `jcr:primaryType` Eigenschaft eines Knotens (NPR-32611).
-* [!DNL Granite] Die Planung der Maintenance-Aufgabe wird während der Experience Manager-Bereitstellung zu oft neu initialisiert (CQ-4294627).
+* [!DNL Granite] Die Planung der Maintenance-Aufgabe wird während der Bereitstellung des Experience Managers zu oft neu initialisiert (CQ-4294627).
 * Wenn eine SQL-Abfrage lange ausgeführt wird (z. B. 7 Stunden), reagiert Experience Manager nicht mehr (NPR-33044).
 
 ### Benutzeroberfläche {#ui-6550}
@@ -259,11 +259,11 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Der interne Cache wird gelöscht, wenn eine Seite mit einer Adobe Target-Komponente veröffentlicht wird (NPR-33162).
 * Die Integration mit Adobe Target funktioniert nicht mit [!DNL Windows Internet Explorer] 11 (NPR-33111).
-* Beim Konfigurieren von Adobe Target werden die Felder [!UICONTROL Firma] und [!UICONTROL Report Suite] bei der Auswahl einer Berichte-Quelle (NPR-32502) nicht angezeigt.
+* Beim Konfigurieren von Adobe Target werden die Felder [!UICONTROL Firma] und [!UICONTROL Report Suite] nicht angezeigt, wenn eine Berichte-Quelle ausgewählt wird (NPR-32502).
 * Beim Exportieren [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie Source Product nicht in Adobe Target exportiert (NPR-32159).
 * Autorisierte IMS-Benutzer in der lokalen Experience Manager-Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
 * Auf der Seite &quot;Adobe Launch-Konfigurationen&quot;werden nicht alle Datensätze angezeigt (NPR-33011).
-* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
+* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können die Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
 
 ### Übersetzungsprojekte {#translation-6550}
 
@@ -290,7 +290,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * Beim Zugriff auf die [!UICONTROL Aktivität Stream] -Seite (NPR-33146) tritt ein Fehler auf.
 * In der Autoreninstanz gelöschte Gruppen werden nicht aus allen Veröffentlichungsinstanzen entfernt (NPR-33199).
 * Autoren werden nach der Erstellung einer neuen Gruppe nicht in den Abschnitt [!UICONTROL Community Group] unter [!DNL Internet Explorer] 11 (NPR-33205) umgeleitet.
-* Der Zugriff auf eine Nachricht in Experience Manager-Posteingang ändert den Status der Nachricht in Lesen (NPR-32764) nicht.
+* Der Zugriff auf eine Nachricht in Experience Manager Inbox ändert den Status der Nachricht nicht in Lesen (NPR-32764).
 * Durch Bearbeiten einer [!DNL Communities] Gruppe und Ändern der Miniaturansicht wird das Gruppenminiaturbild nicht aktualisiert (NPR-32599).
 * Ein Benutzer kann keine E-Mail an einen anderen Benutzer in einer Community senden (NPR-32598).
 * Ein gesendeter Blog wird erst angezeigt, wenn der Benutzer die Seite aktualisiert (NPR-32391).
@@ -305,7 +305,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 >[!NOTE]
 >
->Das Experience Manager Service Pack enthält keine Korrekturen für [!DNL Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+>Experience Manager Service Pack enthält keine Korrekturen für [!DNL Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
 * Correspondence Management: Die Reihenfolge der Vermögenswerte in einem Zielgruppen-Bereich wird nach der Einreichung eines Schreibens (NPR-33359, NPR-33153) geändert.
 * Adaptive Formulare: Wenn ein Benutzer ein adaptives Formular bearbeitet, funktioniert die Option [!UICONTROL Beginn-Workflow] im Menü &quot; [!UICONTROL Seiteninformationen] &quot;nicht (NPR-33004).
@@ -338,7 +338,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 ### Installieren des Service Packs {#install-service-pack}
 
-Führen Sie die folgenden Schritte aus, um das Service Pack auf einer vorhandenen Adobe Experience Manager 6.5-Instanz zu installieren:
+Führen Sie die folgenden Schritte aus, um das Service Pack auf einer vorhandenen Instanz von Adobe Experience Manager 6.5 zu installieren:
 
 1. Laden Sie das Service Pack von [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.5.0-Service-Pack) oder [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)herunter.
 
@@ -372,13 +372,13 @@ B. Verwenden Sie die [HTTP-API aus Package Manager](https://helpx.adobe.com/de/e
 
 Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-### Adobe Experience Manager Forms Add-On-Paket installieren {#install-aem-forms-add-on-package}
+### Add-On-Paket für Adobe Experience Manager Forms installieren {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
 >Überspringen Sie diesen Schritt, wenn Sie AEM Forms nicht verwenden. Korrekturen in Adobe Experience Manager Forms werden über ein separates Add-On-Paket bereitgestellt.
 
-1. Vergewissern Sie sich, dass Sie das Adobe Experience Manager Service Pack installiert haben.
+1. Stellen Sie sicher, dass Sie das Adobe Experience Manager Service Pack installiert haben.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
@@ -386,7 +386,7 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 
 >[!NOTE]
 >
->Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Korrekturen in Adobe Experience Manager Forms on JEE werden über ein separates Installationsprogramm bereitgestellt.
+>Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Fehlerbehebungen in Adobe Experience Manager Forms on JEE werden über ein separates Installationsprogramm bereitgestellt.
 
 For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes for patch 0014](https://helpx.adobe.com/de/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
 
@@ -414,7 +414,7 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Der Bildschirm &quot; **[!UICONTROL AEM Cloud-Services-Teilnahme]** &quot;wird nicht mehr unterstützt. Die AEM- und Zielgruppe-Integration wurde in AEM 6.5 aktualisiert, um die Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu geführt, dass der Assistent für die Teilnahme an einer Teilnahme funktional irrelevant geworden ist. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die jeweiligen AEM-Cloud-Dienste. |
+| Integrationen | Der Bildschirm &quot;Opt-In **[!UICONTROL &quot;für]** AEM cloud services wird nicht mehr unterstützt. Die AEM- und Target-Integration wurde in AEM 6.5 aktualisiert, um die Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu geführt, dass der Opt-In-Assistent funktional irrelevant geworden ist. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die entsprechenden AEM cloud services. |
 
 ## Bekannte Probleme {#known-issues}
 
@@ -435,7 +435,7 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregat-Funktionen wie SUM, MAX und MIN verwendet werden. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Keine Wartungsfenster unter granite/operations/maintenance gefunden.
-   * Hotspot in einem interaktiven Bild für dynamische Medien ist nicht sichtbar, wenn das Asset über den Viewer für ein kaufbares Banner in der Vorschau angezeigt wird.
+   * Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn das Asset über den Viewer für ein kaufbares Banner in der Vorschau angezeigt wird.
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
