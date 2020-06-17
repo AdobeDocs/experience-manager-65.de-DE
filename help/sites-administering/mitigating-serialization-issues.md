@@ -10,24 +10,27 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3cbbad3ce9d93a353f48fc3206df989a8bf1991a
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 66%
 
 ---
 
 
 # Beheben von Serialisierungsproblemen in AEM{#mitigating-serialization-issues-in-aem}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
  Das AEM-Team von Adobe arbeitet eng mit dem Open-Source-Projekt [NotSoSerial](https://github.com/kantega/notsoserial) zusammen, um Sie bei der Behandlung der in **CVE-2015-7501** beschriebenen Sicherheitsrisiken zu unterstützen. NotSoSerial ist unter der [Apache 2-Lizenz](https://www.apache.org/licenses/LICENSE-2.0) lizenziert und beinhaltet ASM-Code, der unter der eigenen [BSD-ähnlichen Lizenz](https://asm.ow2.org/license.html) lizenziert ist.
 
 Bei der in diesem Paket enthaltenen Agent-JAR-Datei handelt es sich um die modifizierte NotSoSerial-Distribution von Adobe.
 
-NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Im Rahmen dieser Prüfung wird ein Klassenname mit einer Firewall-ähnlichen Whitelist und/oder Blacklist abgeglichen. Aufgrund der begrenzten Anzahl von Klassen in der Standard-Blacklist hat dies wahrscheinlich keinerlei Auswirkungen auf Ihre Systeme oder auf Ihren Code.
+NotSoSerial ist eine Lösung auf Java-Ebene für ein Problem auf Java-Ebene und nicht AEM-spezifisch. Sie fügt einem Deserialisierungsversuch für ein Objekt eine Preflight-Prüfung hinzu. Mit dieser Prüfung wird ein Klassenname gegen eine Firewall-ähnliche zulassungsliste und/oder blockierungsliste getestet. Aufgrund der begrenzten Anzahl von Klassen im Standard-blockierungsliste ist es unwahrscheinlich, dass sich dies auf Ihre Systeme oder Ihren Code auswirkt.
 
-Standardmäßig führt der Agent eine Blacklist-Prüfung für bekannte Klassen mit Sicherheitsrisiko durch. Diese Blacklist dient dazu, Sie vor der aktuellen Liste von Exploits zu schützen, die diese Art von Sicherheitsrisiko ausnutzen.
+Standardmäßig führt der Agent eine blockierungsliste-Prüfung für aktuelle bekannte verwundbare Klassen durch. Diese blockierungsliste soll Sie vor der aktuellen Liste von Exploits schützen, die diese Art von Verwundbarkeit nutzen.
 
-Eine Anleitung zum Konfigurieren der Blacklist und der Whitelist finden Sie im Abschnitt [Konfigurieren des Agents](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) dieses Artikels.
+The block list and allow list can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
 
 Der Agent unterstützt Sie bei der Behandlung der neuesten bekannten Klassen mit Sicherheitsrisiko. Wenn Ihr Projekt nicht vertrauenswürdige Daten deserialisiert, ist es unter Umständen weiterhin anfällig für Denial-of-Service-Angriffe, Out-of-Memory-Angriffe und bislang noch unbekannte Deserialisierungs-Exploits.
 
@@ -46,7 +49,7 @@ Adobe unterstützt offiziell Java 6, 7 und 8. Nach unserem Kenntnisstand unter
 
 ## Installieren des Agents auf Anwendungsservern {#installing-the-agent-on-application-servers}
 
-Der NotSoSerial-Agent ist nicht in der AEM-Standarddistribution für Anwendungsserver enthalten. Sie können ihn jedoch aus der AEM-JAR-Distribution extrahieren und mit Ihrer Anwendungsservereinrichtung verwenden:
+Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendungsserver enthalten. Sie können ihn jedoch aus der AEM-JAR-Distribution extrahieren und mit Ihrer Anwendungsservereinrichtung verwenden:
 
 1. Laden Sie zuerst die AEM-Schnellstartdatei herunter und extrahieren Sie sie:
 
@@ -66,7 +69,7 @@ Der NotSoSerial-Agent ist nicht in der AEM-Standarddistribution für Anwendungss
 
 ## Konfigurieren des Agents {#configuring-the-agent}
 
-Die Standardkonfiguration ist für die meisten Installationen ausreichend. Sie beinhaltet eine Blacklist mit Klassen, bei denen bekannt ist, dass sie für eine Remoteausführung anfällig sind, sowie eine Whitelist mit Paketen, mit denen die Deserialisierung vertrauenswürdiger Daten vergleichsweise sicher sein dürfte.
+Die Standardkonfiguration ist für die meisten Installationen ausreichend. Dies umfasst eine blockierungsliste von bekannten, durch entfernte Ausführung gefährdeten Klassen und eine zulassungsliste von Paketen, bei denen die Deserialisierung von vertrauenswürdigen Daten relativ sicher sein sollte.
 
 Die Firewallkonfiguration ist dynamisch und kann jederzeit wie folgt geändert werden:
 
@@ -80,15 +83,15 @@ Die Firewallkonfiguration ist dynamisch und kann jederzeit wie folgt geändert w
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Diese Konfiguration enthält die Whitelist, die Blacklist und die Protokollierung für die Deserialisierung.
+Diese Konfiguration enthält die Protokollierung von zulassungsliste, blockierungsliste und Deserialisierung.
 
-**Whitelisting**
+**Listen zulassen**
 
-Für die Klassen oder Paketpräfixe im Whitelisting-Abschnitt wird die Deserialisierung zugelassen. Wichtig: Wenn Sie eigene Klassen deserialisieren, müssen Sie dieser Whitelist entweder die Klassen oder die Pakete hinzufügen.
+Im Abschnitt Listen zulassen sind dies Klassen oder Paket-Präfixe, die zur Deserialisierung zugelassen werden. Es ist wichtig zu beachten, dass Sie, wenn Sie eigene Klassen deserialisieren, entweder die Klassen oder Pakete zu dieser zulassungsliste hinzufügen müssen.
 
-**Blacklisting**
+**Blockliste**
 
-Der Blacklisting-Abschnitt enthält Klassen, für die keine Deserialisierung zugelassen wird. Standardmäßig umfasst die Liste nur Klassen, die für Remoteausführungsangriffe anfällig sind. Die Blacklist wird vor jeglichen Whitelist-Einträgen angewendet.
+Im Abschnitt Blockauflistungen finden Sie Klassen, die niemals deserialisiert werden dürfen. Standardmäßig umfasst die Liste nur Klassen, die für Remoteausführungsangriffe anfällig sind. Die blockierungsliste wird vor allen zulässigen Einträgen angewendet.
 
 **Diagnoseprotokollierung**
 
@@ -110,7 +113,7 @@ Weitere Informationen zum Behandeln von Problemen mit dem Agent finden Sie weite
 
 >[!NOTE]
 >
->Wenn Sie `org.apache.commons.collections.functors` der Whitelist hinzufügen, tritt bei der Integritätsprüfung immer ein Fehler auf.
+>If you add `org.apache.commons.collections.functors` to the allow list, the health check will always fail.
 
 ## Behandeln von Fehlern beim dynamischen Laden des Agents {#handling-errors-with-dynamic-agent-loading}
 
@@ -139,4 +142,3 @@ Gehen Sie zum manuellen Laden des Agents wie folgt vor:
 ## Weitere Überlegungen {#other-considerations}
 
 Lesen Sie bei Verwendung einer JVM von IBM die Dokumentation zur Unterstützung der Java Attach-API. Diese finden Sie [hier](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
-
