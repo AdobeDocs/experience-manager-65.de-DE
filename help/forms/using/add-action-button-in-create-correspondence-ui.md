@@ -10,14 +10,17 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 56%
 
 ---
 
 
 # Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu {#add-custom-action-button-in-create-correspondence-ui}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen.
 
@@ -167,7 +170,7 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset C
 >
 >Möglicherweise müssen Sie die Daten im Browsercache löschen.
 
-1. Wechseln zu `https://[host]:'port'/system/console/bundles`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Rufen Sie `https://[host]:'port'/system/console/bundles` auf. Falls erforderlich, melden Sie sich als Administrator an.
 
 1. Suchen Sie das Asset Composer-Baustein-Bundle von Adobe. Starten Sie das Bundle neu: Klicken Sie auf „Anhalten“ und klicken Sie dann auf „Start“.
 
@@ -189,7 +192,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
 * Aktivieren/Deaktivieren der neu hinzugefügten Aktion: , indem die Funktion actionEnabled() außer Kraft gesetzt wird.
 * Tatsächliche Behandlung der Aktion, wenn der Benutzer auf die Schaltfläche klickt: erfolgt, indem die Implementierung der Funktion handleAction() außer Kraft gesetzt wird.
 
-1. Wechseln zu `https://'[server]:[port]'/[ContextPath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Rufen Sie `https://'[server]:[port]'/[ContextPath]/crx/de` auf. Falls erforderlich, melden Sie sich als Administrator an.
 
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen`js`   in der /apps-Verzweigung von CRX, mit einer ähnlichen Struktur des folgenden Ordners:
 
@@ -376,7 +379,7 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienst-Prozess aktiviert.
 
 1. Wählen Sie **Importieren**.
 
-#### Hinzufügen von ServiceName zur WhiteListed-Liste der Dienste {#adding-servicename-to-the-whitelisted-service-list}
+#### Adding ServiceName to the Allowlist Service list {#adding-servicename-to-the-allowlist-service-list}
 
 Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server zugreifen möchten.
 
@@ -421,11 +424,11 @@ For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/form
    >
    >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten. Informationen über das Erstellen Ihrer eigenen Livecycle-Komponente finden Sie unter [ Erweiterung der LiveCycle ES-Software durch kundenspezifische DSC-Entwicklung](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
 
-   Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
 
-Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API, um den Brief als PDF-Bytes aus XML-Daten zu rendern, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+Die Datei &quot;DSCSample.jar&quot;verwendet die renderLetter-API, um den Brief als PDF-Bytes aus XML-Daten zu rendern, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Anfang Workbench und melden Sie sich an.
 1. Select **Window > Show Views > Components**. Die Komponenten-Ansicht wird zu Workbench ES2 hinzugefügt.
