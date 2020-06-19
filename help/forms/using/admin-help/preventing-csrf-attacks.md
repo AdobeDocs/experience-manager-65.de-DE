@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a3cbffb7-c1d1-47c2-bcfd-70f1e2d81ac9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '990'
+ht-degree: 81%
 
 ---
 
@@ -25,11 +28,11 @@ Angenommen, Sie sind in einem Browser bei Administration Console angemeldet. Sie
 
 ## CSRF-verwandte Begriffe {#csrf-related-terms}
 
-**** Referrer: Die Adresse der Quellseite, von der eine Anforderung stammt. Eine Webseite auf „site1.com“ enthält beispielsweise einen Link zu „site2.com“. Beim Klicken auf den Link, wird eine Anforderung an „site2.com“ gesendet. Die Referenz dieser Anforderung ist „site1.com“, da die Anforderung von einer Seite stammt, deren Quelle „site1.com“ ist.
+**Referrer:** Die Adresse der Quellseite, von der eine Anforderung stammt. Eine Webseite auf „site1.com“ enthält beispielsweise einen Link zu „site2.com“. Beim Klicken auf den Link, wird eine Anforderung an „site2.com“ gesendet. Die Referenz dieser Anforderung ist „site1.com“, da die Anforderung von einer Seite stammt, deren Quelle „site1.com“ ist.
 
-**** Whitelist-URIs: URIs identifizieren Ressourcen auf dem Formularserver, die angefordert werden, z. B. /adminui oder /contentspace. Einige Ressourcen ermöglichen einer Anforderung möglicherweise, von einer externen Site aus auf die Anwendung zuzugreifen. Diese Ressourcen gelten als in die Positivliste eingetragenen URIs. Der Formularserver führt keine Referenzüberprüfungen von in die Positivliste eingetragenen URIs durch.
+**Auf die Zulassungsliste gesetzt URIs:** URIs identifizieren Ressourcen auf dem Formularserver, die angefordert werden, z. B. /adminui oder /contentspace. Einige Ressourcen ermöglichen einer Anforderung möglicherweise, von einer externen Site aus auf die Anwendung zuzugreifen. Diese Ressourcen werden als auf die Zulassungsliste gesetzt URIs bezeichnet. Der Formularserver führt nie eine Referrer-Prüfung von auf die Zulassungsliste gesetzt URIs durch.
 
-**** Null-Referenz: Wenn Sie ein neues Browserfenster oder eine neue Registerkarte öffnen, dann eine Adresse eingeben und die Eingabetaste drücken, ist der Verweis null. Die Anforderung ist neu und stammt nicht aus einer übergeordneten Webseite, daher gibt es keine Referenz für die Anforderung. Der Forms kann eine Null-Referenz aus folgenden Quellen erhalten:
+**Null-Referenz:** Wenn Sie ein neues Browserfenster oder eine neue Registerkarte öffnen, dann eine Adresse eingeben und die Eingabetaste drücken, ist der Verweis null. Die Anforderung ist neu und stammt nicht aus einer übergeordneten Webseite, daher gibt es keine Referenz für die Anforderung. Der Forms kann eine Null-Referenz aus folgenden Quellen erhalten:
 
 * Anforderungen, die auf SOAP- oder REST-Endpunkten von Acrobat durchgeführt werden
 * Beliebige Desktop-Clients, die eine HTTP-Anforderung an auf einem SOAP- oder REST-Endpunkt von AEM Forms durchführen
@@ -37,7 +40,7 @@ Angenommen, Sie sind in einem Browser bei Administration Console angemeldet. Sie
 
 Lassen Sie eine Null-Referenz auf SOAP- und REST-Endpunkten zu. Lassen Sie außerdem eine Null-Referenz auf allen URI-Anmeldeseiten, wie „/adminui“ und „/contentspace“, und den entsprechenden zugeordneten Ressourcen zu. Beispielsweise ist das zugeordnete Servlet für „/contentspace“ „/contentspace/faces/jsp/login.jsp“, was eine Null-Referenzausnahme darstellt. Diese Ausnahme ist nur erforderlich, wenn Sie GET-Filterung für die Webanwendung aktivieren. Die Anwendungen können angeben, ob Null-Referenzen zulässig sind. See “Protecting from Cross-Site Request Forgery attacks” in [Hardening and Security for AEM forms](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
-**** Zulässige Referrer-Ausnahme: Zulässige Referrer-Ausnahme ist eine Unterliste der Liste der zulässigen Referrer, von denen aus Anfragen blockiert werden. Zulässige Referenzauausnahmen beziehen sich insbesondere auf eine Webanwendung. Wenn eine Untergruppe der zulässigen Referenz keine bestimmte Webanwendung abrufen soll, können Sie die Referenzen über die zulässigen Referenzausnahmen auf eine Sperrliste setzen. Zulässige Referenzausnahmen werden in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen in „Härtung und Sicherheit für AEM Forms on Hilfe und Tutorials.)
+**Zulässige Referrer-Ausnahme:** Zulässige Referrer-Ausnahme ist eine Unterliste der Liste zulässiger Referrer, von der aus Anfragen blockiert werden. Zulässige Referenzauausnahmen beziehen sich insbesondere auf eine Webanwendung. Wenn eine Untergruppe der zulässigen Referrer keine bestimmte Webanwendung aufrufen darf, können Sie die Referrer über &quot;Zulässige Referrer - Ausnahmen&quot;in blockierungsliste setzen. Zulässige Referenzausnahmen werden in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen in „Härtung und Sicherheit für AEM Forms on Hilfe und Tutorials.)
 
 ## Funktionsweise von zulässigen Referenzen {#how-allowed-referers-work}
 
@@ -48,10 +51,10 @@ AEM Forms bietet Referenzfilterung, die CSRF-Angriffe verhindern kann. Im Folgen
    * Bei POST prüft der Formularserver den Referrer-Header.
    * Bei GET umgeht der Formularserver die Referrer-Prüfung, es sei denn, CSRF_CHECK_GETS ist auf „true“ festgelegt. In diesem Fall wird der Referrer-Header überprüft. CSRF_CHECK_GETS wird in der Datei „web.xml“ für Ihre Anwendung angegeben. (Siehe den Abschnitt zum Schutz vor Cross-Site Request Forgery-Angriffen[ in der Unix-Systembibliothek](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).) und Sicherheit
 
-1. Der Formularserver prüft, ob die angeforderten URI in der Positivliste eingetragen ist:
+1. Der Formularserver überprüft, ob der angeforderte URI auf die Zulassungsliste gesetzt ist:
 
-   * Wenn der URI in die Positivliste eingetragen ist, übergibt der Server die Anforderung.
-   * Wenn der angeforderte URI nicht in der Positivliste eingetragen ist, ruft der Server die Referenz der Anforderung ab.
+   * Wenn der URI auf die Zulassungsliste gesetzt ist, übergibt der Server die Anforderung.
+   * Wenn der angeforderte URI nicht auf die Zulassungsliste gesetzt ist, ruft der Server den Verweis der Anforderung ab.
 
 1. Wenn es eine Referenz in der Anforderung gibt, überprüft der Server, ob es sich um eine zugelassene Referenz handelt. Wenn sie zulässig ist, sucht der Server nach einer Referenzausnahme:
 
