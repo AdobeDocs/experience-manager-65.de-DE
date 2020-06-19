@@ -8,7 +8,10 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1700'
+ht-degree: 61%
 
 ---
 
@@ -29,23 +32,23 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Der formular
 >
 >Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Weitere Informationen zu den Unterschieden und Ähnlichkeiten in den Funktionen finden Sie in einem [Vergleich](../../forms/using/capabilities-osgi-jee-workflows.md) der formularzentrierten AEM Workflows auf OSGi und Process Management on JEE.
 >
->Nach dem Vergleich finden Sie unter &quot;Installieren oder Aktualisieren von AEM Forms on JEE&quot;ausführliche Informationen zum Installieren und Konfigurieren des JEE-Stapels und zu den Process Management-Funktionen, wenn Sie sich dafür entscheiden, die Process Management-Funktion auf dem JEE-Stapel zu installieren [](/help/forms/home.md) .
+>Nach dem Vergleich finden Sie unter Installieren oder Aktualisieren von AEM Forms auf JEE [](/help/forms/home.md) ausführliche Informationen zum Installieren und Konfigurieren von JEE-Stack und zu den Process Management-Funktionen, wenn Sie die Process Management-Funktion auf JEE-Stack installieren.
 
 ## Bereitstellungstopologie {#deployment-topology}
 
-AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens eine AEM Author- oder Verarbeitungsinstanz (Produktionsautor), um den formularzentrierten Workflow mit OSGi-Funktionalität auszuführen. A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. Führen Sie kein tatsächliches Authoring wie das Erstellen von Workflows oder adaptiven Formularen im Produktionsautor durch.
+AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens ein AEM Author oder eine Verarbeitungsinstanz (Produktionsautor), um den formularzentrierten Workflow mit OSGi-Funktionen auszuführen. A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. Führen Sie kein tatsächliches Authoring wie das Erstellen von Workflows oder adaptiven Formularen im Produktionsautor durch.
 
 Die folgende Topologie ist eine indikative Topologie zum Ausführen von AEM Forms Interactive Communications, Correspondence Management, AEM Forms-Datenerfassung und Forms-Centric-Workflow für OSGi-Funktionen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![recommendations-topology](assets/recommended-topology.png)
 
-AEM Forms-zentrierter Arbeitsablauf auf OSGi führt die Benutzeroberfläche zur Erstellung von AEM Inbox- und AEM Workflow-Modellen auf den Autoreninstanzen von AEM Forms aus.
+AEM Forms Forms-zentrierter Arbeitsablauf auf OSGi führt die Benutzeroberfläche zur Erstellung von AEM Inbox- und AEM Workflow-Modellen auf den Autoreninstanzen von AEM Forms aus.
 
 ## Systemanforderungen {#system-requirements}
 
 >[!NOTE]
 >
->Gehen Sie zum Abschnitt [Nächste Schritte](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) des Dokuments, wenn Sie AEM Forms on OSGi bereits installiert haben, wie im Artikel [Installations- und Konfigurationsfunktionen](../../forms/using/installing-configuring-aem-forms-osgi.md) beschrieben.
+>Gehen Sie zum Abschnitt [Nächste Schritte](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) des Dokuments, wenn Sie bereits AEM Forms auf OSGi installiert haben, wie im Artikel [Installations- und Konfigurationsfunktionen](../../forms/using/installing-configuring-aem-forms-osgi.md) beschrieben.
 
 Bevor Sie mit der Installation und Konfiguration des formularzentrierten Workflows auf OSGi beginnen, stellen Sie Folgendes sicher:
 
@@ -108,7 +111,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
    Wenn Sie das Paket manuell über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) angegeben ist, melden Sie sich beim Paketmanager an, klicken Sie auf **Paket hochladen**, wählen Sie das heruntergeladene Paket aus und klicken Sie auf „Hochladen“. Nachdem Sie das Paket hochgeladen haben, klicken Sie auf den Paketnamen und dann auf **Installieren.**
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;nicht mehr in der Datei &quot; [AEM-Installationsordner]/crx-quickstart/logs/error.log&quot;angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der Datei &quot; [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log&quot;nicht mehr angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-4 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -138,18 +141,18 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 
 #### Konfigurieren Sie den Serialisierungsagenten {#configure-the-serialization-agent}
 
-Führen Sie die folgenden Schritte auf allen Autor- und Veröffentlichungsinstanzen aus, um das Paket auf die Whitelist zu setzen:
+Führen Sie die folgenden Schritte für alle Instanzen im Autoren- und Veröffentlichungsmodus aus, um das Paket zum zulassungsliste hinzuzufügen:
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. The default URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Suchen und öffnen Sie die **Deserialisierungs-Firewallkonfiguration**.
-1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Whitelist** hinzu. Klicken Sie auf Speichern.
+1. Add the **sun.util.calendar** package to the **allowlist** field. Klicken Sie auf Speichern.
 1. Wiederholen Sie Schritten 1-3 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
 
 #### Konfiguration des Dispatchers {#configure-dispatcher}
 
-Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. Durch Anwendung von AEM Dispatcher können Sie auch den AEM-Server vor Angriffen schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
+Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. Durch Anwendung von AEM Dispatcher können Sie auch den AEM-Server vor Angriffen schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
 
 1. Konfigurieren des Zugriffs für AEM Forms:
 
@@ -157,7 +160,7 @@ Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich fü
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Konfigurieren des Referrer-Filterservice:
 
@@ -167,13 +170,13 @@ Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich fü
 
 Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu reduzieren, und die Geschwindigkeit von Eingabe/Ausgabe (I/A) zu verbessern. Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Die Zeit, die benötigt wird, um ein adaptives Formular oder ein Dokument auf dem Client zu rendern, wird reduziert.
 
-* Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den [AEM-Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars oder Dokuments zwischenzuspeichern.
+* Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den [AEM-Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars oder Dokuments zwischenzuspeichern.
 * Beim Entwickeln der benutzerdefinierten Komponenten muss auf dem für die Entwicklung verwendeten Server der Cache für adaptive Formulare deaktiviert bleiben.
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
 1. Go to AEM web console configuration manager at `https://'[server]:[port]'/system/console/configMgr`.
-1. Click **Adaptive Form Configuration Service** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
+1. Click **Adaptive Form Configuration Service** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100.     Klicken Sie auf **Speichern**.
 
    >[!NOTE]
    >
