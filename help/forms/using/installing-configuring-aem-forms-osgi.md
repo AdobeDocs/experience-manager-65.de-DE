@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1875'
+ht-degree: 87%
 
 ---
 
@@ -36,7 +39,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie 
 
 ## Systemanforderungen {#system-requirements}
 
-Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von AEM Forms beginnen, stellen Sie Folgendes sicher:
+Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von AEM Forms beginnen, stellen Sie sicher, dass:
 
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
@@ -95,6 +98,7 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 >
 >* Wenn OpenSSL bereits auf dem Server installiert ist, aktualisieren Sie es auf die neueste Version.
 >* Erstellen Sie die Symlinks libcurl.so, libcrypto.so und libssl.so, die auf die neueste Version der Bibliotheken libcurl, libcrypto und libssl verweisen.
+
 >
 
 
@@ -116,7 +120,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
    Wenn Sie das Paket manuell über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) angegeben ist, melden Sie sich beim Paketmanager an, klicken Sie auf **Paket hochladen**, wählen Sie das heruntergeladene Paket aus und klicken Sie auf „Hochladen“. Nachdem Sie das Paket hochgeladen haben, klicken Sie auf den Paketnamen und dann auf **Installieren.**
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Nachrichten &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` Datei nicht mehr angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` Datei nicht mehr angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-4 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -146,18 +150,18 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 
 #### Konfigurieren Sie den Serialisierungsagenten {#configure-the-serialization-agent}
 
-Führen Sie die folgenden Schritte auf allen Autor- und Veröffentlichungsinstanzen aus, um das Paket auf die Whitelist zu setzen:
+Führen Sie die folgenden Schritte für alle Instanzen im Autoren- und Veröffentlichungsmodus aus, um das Paket zum zulassungsliste hinzuzufügen:
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standardeinstellung ist `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie nach **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** und öffnen Sie die Konfiguration.
-1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Whitelist** hinzu. Klicken Sie auf **Speichern**.
+1. Add the **sun.util.calendar** package to the **allowlist** field. Klicken Sie auf **Speichern**.
 1. Wiederholen Sie Schritte 1-3 für alle Autor- und Veröffentlichungsinstanzen.
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
 
 #### Konfiguration des Dispatchers {#configure-dispatcher}
 
-Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. Durch Anwendung von AEM Dispatcher können Sie auch den AEM-Server vor Angriffen schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
+Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. Durch Anwendung von AEM Dispatcher können Sie auch den AEM-Server vor Angriffen schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
 
 1. Konfigurieren des Zugriffs für AEM Forms:
 
@@ -165,7 +169,7 @@ Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich fü
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Konfigurieren des Referrer-Filterservice:
 
@@ -175,13 +179,13 @@ Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich fü
 
 Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu reduzieren, und die Geschwindigkeit von Eingabe/Ausgabe (I/A) zu verbessern. Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Die Zeit, die benötigt wird, um ein adaptives Formular oder ein Dokument auf dem Client zu rendern, wird reduziert.
 
-* Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den [AEM-Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars oder Dokuments zwischenzuspeichern.
+* Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den [AEM-Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars oder Dokuments zwischenzuspeichern.
 * Beim Entwickeln der benutzerdefinierten Komponenten muss auf dem für die Entwicklung verwendeten Server der Cache für adaptive Formulare deaktiviert bleiben.
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
 1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100.     Klicken Sie auf **Speichern**.
 
    >[!NOTE]
    >
@@ -218,6 +222,6 @@ AEM forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert wer
 Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktionen konfiguriert. Die nächsten Schritte zur Verwendung der Funktionen, sind Folgende:
 
 * [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md)
-* [Erstellen Sie Ihr erstes PDF Formular](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Erstellen Sie Ihr erstes PDF Formular](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
 * [Einführung in HTML5-Formulare](/help/forms/using/introduction.md)
 
