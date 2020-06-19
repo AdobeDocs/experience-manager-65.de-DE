@@ -11,7 +11,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '722'
+ht-degree: 86%
 
 ---
 
@@ -37,12 +40,12 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden und es kann eine Text
    * For AEM Forms on OSGi, the bundles are listed at https://&#39;[server]:[port]&#39;/system/console/bundles.
    * For AEM Forms on JEE, the bundles are listed at https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles. Beispiel: https://localhost:8080/lc/system/console/bundles.
 
-* Setzen Sie das *sun.util.calendar*-Paket auf die Positivliste. Gehen Sie wie folgt vor, um das Paket auf die Positivliste zu setzen:
+* Add the *sun.util.calendar* package to the allowlist. So fügen Sie das Paket der zulassungsliste hinzu:
 
    1. Öffnen Sie die AEM Web-Konsole. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Suchen und öffnen Sie **Deserialisierungs-Firewallkonfiguration**. 
 
-   1. Fügen Sie das sun.util.calendar-Paket zu den Positiv-Klassen oder dem Paketpräfixfeld hinzu und klicken Sie auf **Save**.
+   1. Add the sun.util.calendar package to the Allowlisted classes or package prefixes field and click **Save**.
 
 ### Erstellen Sie eine sichere Verknüpfung zwischen AEM Forms JEE- und OSGi-Stapeln.{#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -60,11 +63,12 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
    * **Benutzername:** Geben Sie den Benutzernamen des AEM Forms on JEE-Konto an, der verwendet werden soll, um Aufrufe von AEM-Server zu initiieren. Das angegebene Konto benötigt Berechtigungen zum Starten der Document Services auf dem AEM Forms on JEE-Server.
    * **Kennwort:** Geben Sie das Kennwort für das AEM Forms on JEE-Konto an, das im Feld „Benutzername“ erwähnt ist.
+
    Klicken Sie auf **Speichern**. AEM kann durch Document Security geschützte PDF-Dokumente durchsuchen.
 
 #### Konfigurieren von Adobe LiveCycle Client SDK Bundle mit gegenseitiger Authentifizierung {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms on JEE. Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
 1. Öffnen Sie die AEM Web-Konsole. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-** Paket. Geben Sie Werte für die folgenden Eigenschaften an:
 
@@ -75,6 +79,7 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
    * **KeyStore-Kennwort**: Geben Sie das Kennwort für die KeyStore-Datei an.
    * **TrustStorePassword**: Geben Sie das Kennwort für die TrustStore-Datei an.
    * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
+
    Klicken Sie auf **Speichern**. AEM kann durch Document Security geschützte PDF-Dokumente durchsuchen.
 
 ### Indizieren eines richtliniengeschützten Beispiel-PDF-Dokuments {#index-a-sample-policy-protected-pdf-document}
