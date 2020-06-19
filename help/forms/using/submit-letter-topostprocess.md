@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 69%
 
 ---
 
@@ -25,7 +28,7 @@ Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und int
 
 Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Briefen oder interaktiver Kommunikation verknüpfen. Für abgesendete Briefe können zwei Typen von Arbeitsabläufen ausgeführt werden:
 
-1. **Arbeitsablauf für Formulare:** Dies sind die AEM Forms on JEE-Workflows zur Prozessverwaltung. Instructions for setting up [Forms Workflow](#formsworkflow).
+1. **Arbeitsablauf für Formulare:** Dies sind die AEM Forms auf JEE-Workflows für Prozessverwaltung. Instructions for setting up [Forms Workflow](#formsworkflow).
 
 1. **AEM-Workflow:** AEM Workflows kann auch als Nachbearbeitung für gesendete Briefe verwendet werden. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
@@ -43,7 +46,7 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 1. Geben Sie den Benutzernamen und das Kennwort ein.
 1. Stellen Sie sicher, dass sun.util.calendar der Deserialization Firewall-Konfiguration hinzugefügt wird.
 
-   Gehen Sie zur Deserialization Firewall Configuration und fügen Sie unter Whitelisted classes of package prefixes sun.util.calendar hinzu.
+   Gehen Sie zur Deserialisation Firewall-Konfiguration und fügen Sie unter den Auf die Zulassungsliste gesetzt Klassen von Paketpräfixen sun.util.calendar hinzu.
 
 1. Jetzt sind Ihre Server zugeordnet und die Nachbearbeitungsprozesse in AEM Forms on JEE sind in der AEM-Benutzeroberfläche beim Erstellen von Briefen verfügbar.
 
