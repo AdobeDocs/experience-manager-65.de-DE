@@ -8,7 +8,10 @@ topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1490'
+ht-degree: 79%
 
 ---
 
@@ -35,12 +38,12 @@ AEM Forms Interaktive Kommunikation führt Admin-, Autor- und Agentenbenutzerobe
 
 ## Systemanforderungen {#system-requirements}
 
-Bevor Sie mit der Installation und Konfiguration der interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen von AEM Forms beginnen, stellen Sie Folgendes sicher:
+Bevor Sie mit der Installation und Konfiguration der interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen der AEM Forms beginnen, stellen Sie Folgendes sicher:
 
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
-* Eine AEM-Instanz wird ausgeführt. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM-Instanz (Autor oder Verarbeitung), um AEM Forms-Funktionen für interaktive Kommunikation und Korrespondenzverwaltung auszuführen:
+* Eine AEM-Instanz wird ausgeführt. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM-Instanz (Autor oder Verarbeitung), um die interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen der AEM Forms auszuführen:
 
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
    * **Verarbeitung:** Eine Verarbeitungsinstanz ist eine [extrasichere Instanz von AEM Autor](/help/forms/using/hardening-securing-aem-forms-environment.md). Sie können eine Autoreninstanz einrichten und nach der Installation absichern.
@@ -85,7 +88,7 @@ Bevor Sie mit der Installation und Konfiguration der interaktiven Kommunikations
 
 ## Installieren des AEM Forms-Add-on-Pakets {#install-aem-forms-add-on-package}
 
-AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält interaktive AEM Forms-Kommunikation, Korrespondenzverwaltung und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
+AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket umfasst AEM Forms wie interaktive Kommunikation, Korrespondenzverwaltung und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
 
 1. Melden Sie sich beim [AEM-Server](https://localhost:4502) als Administrator an und öffnen Sie [Package Share](https://localhost:4502/crx/packageshare). Zum Anmelden bei der Paketfreigabe benötigen Sie eine Adobe ID.
 1. Suchen Sie in [AEM Package Share](https://localhost:4502/crx/packageshare/login.html) nach **Add-On-Pakete für AEM 6.5 Forms** oder **neueste Service Packs**, klicken Sie auf das Paket, das auf Ihr Betriebssystem zutrifft, und dann auf **Herunterladen**. Lesen und akzeptieren Sie die Lizenzvereinbarung und klicken Sie auf **OK**. Der Download wird gestartet. Nachdem der Download abgeschlossen ist, wird das Wort **Heruntergeladen** neben dem Paket angezeigt.
@@ -96,7 +99,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
    Wenn Sie das Paket manuell über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) angegeben ist, melden Sie sich beim Paketmanager an, klicken Sie auf **Paket hochladen**, wählen Sie das heruntergeladene Paket aus und klicken Sie auf „Hochladen“. Nachdem Sie das Paket hochgeladen haben, klicken Sie auf den Paketnamen und dann auf **Installieren.**
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;nicht mehr in der Datei &quot; [AEM-Installationsordner]/crx-quickstart/logs/error.log&quot;angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der Datei &quot; [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log&quot;nicht mehr angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-4 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -126,11 +129,11 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 
 #### Konfigurieren Sie den Serialisierungsagenten {#configure-the-serialization-agent}
 
-Führen Sie die folgenden Schritte auf allen Autor- und Veröffentlichungsinstanzen aus, um das Paket auf die Whitelist zu setzen:
+Führen Sie die folgenden Schritte für alle Instanzen im Autoren- und Veröffentlichungsmodus aus, um das Paket zum zulassungsliste hinzuzufügen:
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. The default URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Suchen und öffnen Sie die **Deserialisierungs-Firewallkonfiguration**.
-1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Whitelist** hinzu. Klicken Sie auf Speichern.
+1. Add the **sun.util.calendar** package to the **allowlist** field. Klicken Sie auf Speichern.
 1. Wiederholen Sie Schritten 1-3 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
@@ -148,7 +151,7 @@ Mit dem AEMFD-Kompatibilitätspaket können Sie die folgenden Assets von AEM 6.4
 
 #### Konfiguration des Dispatchers {#configure-dispatcher}
 
-Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. Durch Anwendung von AEM Dispatcher können Sie auch den AEM-Server vor Angriffen schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
+Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. Durch Anwendung von AEM Dispatcher können Sie auch den AEM-Server vor Angriffen schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
 
 1. Konfigurieren des Zugriffs für AEM Forms:
 
@@ -156,7 +159,7 @@ Dispatcher·ist ein·Tool zum Zwischenspeichern und für den Lastenausgleich fü
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Konfigurieren des Referrer-Filterservice:
 
