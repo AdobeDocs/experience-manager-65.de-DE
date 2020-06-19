@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1520'
+ht-degree: 93%
 
 ---
 
@@ -85,7 +88,7 @@ Bevor Sie den Formularserver nach einer Wiederherstellung neu starten, führen S
    1. Klicken Sie auf **Admin-Optionen**.
    1. Klicken Sie auf **Start**, um Elemente im Repository zu synchronisieren.
 
-1. In einer Clusterumgebung muss sich der Master-Knoten (in Bezug auf AEM) vor den Slave-Knoten befinden.
+1. In einer geclusterten Umgebung sollte der primäre Knoten (in Bezug auf AEM) vor den sekundären Knoten liegen.
 1. Stellen Sie sicher, dass keine Prozesse aus internen oder externen Quellen, z. B. dem Internet, SOAP oder EJB-Prozessinitiatoren, initiiert werden, bis der normale Betrieb des Systems überprüft wurde.
 
 Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die entsprechenden Installationshandbücher für Ihren Anwendungsserver, um Informationen zur Aktualisierung der Datenbankverbindungsinformationen für die AEM Forms-Datenquellen IDP_DS und EDC_DS zu finden.
