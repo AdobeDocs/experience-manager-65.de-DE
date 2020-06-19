@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '979'
+ht-degree: 71%
 
 ---
 
@@ -148,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs für Senden, Vorausfüllen und andere Funktionen auf der Dispatcher-Ebene in die Positivliste eintragen.
+>Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs &quot;Senden&quot;, &quot;Vorausfüllen&quot;und andere URLs zum zulassungsliste des auf der Dispatcher-Ebene hinzufügen.
 
 ## Best Practices {#best-practices}
 
