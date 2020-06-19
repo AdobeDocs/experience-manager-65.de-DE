@@ -10,15 +10,15 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18345e6519169cfceb01ab56821b596e284f3303
+source-git-commit: 5e932c127c74d13f6f46003b20a3ba5f68606c29
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3210'
 ht-degree: 77%
 
 ---
 
 
-# Unterstützte Plattformen für AEM Forms on JEE{#supported-platforms-for-aem-forms-on-jee}
+# Supported Platforms for AEM Forms on JEE{#supported-platforms-for-aem-forms-on-jee}
 
 ## Unterstützte Plattformen {#supported-platforms}
 
@@ -70,16 +70,15 @@ Adobe empfiehlt die folgenden Konfigurationen und bietet vollständige oder eing
 
 >[!NOTE]
 >
->Um AEM Forms-Kunden dabei zu unterstützen, die Betriebskosten zu senken, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungsstapel zu modernisieren, entfernt sich die Enterprise-Plattform von der auf Anwendungsservern basierenden Bereitstellung hin zu eigenständigen OSGi-Bereitstellungen. Adobe unterstützt weiterhin den AEM Forms JEE-Stapel mit einer reduzierten Matrix von Infrastrukturkomponenten.
+>To help AEM Forms customers reduce the cost of ownership, simplify the deployment architecture, and modernize the development stack, Adobe Experience Manager enterprise platform is moving away from application server-based deployments in favor of standalone OSGi-based deployments. Adobe continues to support the AEM Forms JEE stack with a reduced matrix of infrastructure components.
 >
 >Mit der Veröffentlichung von 6.5 werden Infrastrukturkomponenten mit der geringsten Nutzung unter unseren Kunden nicht mehr unterstützt, wie folgt:
->・ Oracle WebLogic-Anwendungsserver
 >IBM DB2-Datenbank
 >・ IBM AIX und Sun Solaris
 >
->Bei neuen Installationen wird empfohlen, AEM Forms auf dem modernen OSGi-Stapel bereitzustellen, um die neuesten Innovationen rund um adaptive Formulare für interaktive Mobilkommunikation, interaktive Kommunikation mit mehreren Kanälen und Datenintegrationen mit Backend mithilfe des Formulardatenmodells zu nutzen.
+>Bei Neuinstallationen wird empfohlen, soweit möglich AEM Forms auf dem modernen OSGi-Stapel bereitzustellen, um die neuesten Innovationen im Bereich adaptiver adaptiver Formulare für interaktive Mobilkommunikation mit mehreren Kanälen und Datenintegrationen mit Backend mithilfe des Formulardatenmodells zu nutzen.
 >
->Wir erkennen, dass bestehende Benutzer den AEM Forms on JEE-Stapel weiterhin bereitstellen müssen. In solchen Fällen erfordert Adobe die Bereitstellung von AEM Forms JEE auf der unterstützten Infrastruktur, wie in dieser Dokumentation beschrieben. Wenn Sie auf AEM 6.5 Forms aktualisieren und eine nicht unterstützte Plattform in der vorherigen Version von AEM Forms verwenden, können Sie sich an den Adobe-Support wenden, um Hilfe beim Aktualisieren auf eine unterstützte Plattform zu erhalten.
+>Wir erkennen, dass bestehende Benutzer weiterhin AEM Forms auf JEE-Stack bereitstellen müssen. In solchen Fällen erfordert Adobe die Bereitstellung von AEM Forms JEE auf unterstützter Infrastruktur, wie in dieser Dokumentation beschrieben. Wenn Sie ein Upgrade auf AEM 6.5 Forms durchführen und eine nicht unterstützte Plattform in der vorherigen AEM Forms verwenden, können Sie sich an den Adobe Support wenden, um Hilfe beim Upgrade auf eine unterstützte Plattform zu erhalten.
 
 ### Java Virtual Machines (JVM) {#java-virtual-machines-jvm}
 
@@ -182,7 +181,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 * MongoDB Sharding wird in AEM nicht unterstützt.
 * AEM Forms on JEE unterstützt MySQL für RDBMK-Persistenz.
 * Das Document Security-Modul verwendet nicht das Content Repository. Das bedeutet, wenn Sie nur Document Security und nicht HTML Workspace, HTML5 Forms und adaptive Formulare verwenden möchten, müssen Sie Content Repository nicht installieren.
-* AEM Forms on JEE unterstützt nicht die Verwendung von MySQL für die Persistenz des AEM-Repositorys (CRX-Repository).
+* AEM Forms on JEE unterstützt die Verwendung von MySQL für die Persistenz des AEM-Repositorys (CRX-Repository) nicht.
 
 
 ### Datenbanktreiber {#database-drivers}
@@ -220,6 +219,11 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p><strong> Plattform</strong></p> </td>
    <td><p><strong>Unterstützungsebene</strong></p> </td>
    <td><p><strong>Unterstützte Patch-Definitionen</strong></p> </td>
+  </tr>
+  <tr>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2)</td>
+   <td>A: Unterstützt</td>
+   <td>Service Pack und wichtige Updates</td>
   </tr>
   <tr>
    <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
@@ -260,7 +264,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
   <tr>
-   <td><p>SUSE® Linux® Enterprise Server 12 (64 Bit)</p> </td>
+   <td><p>SUSE® Linux® Enterprise Server 12 (64-bit)</p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Service Packs, kumulative Patches und wichtige Sicherheitsupdates</p> </td>
   </tr>
@@ -306,7 +310,7 @@ Beachten Sie die folgenden Ausnahmen, wenn Sie eine Plattform auswählen, auf de
 1. AEM Forms on JEE unterstützt und JBoss nicht unter SUSE Linux Enterprise Server 12. Nur IBM WebSphere wird auf SUSE Linux Enterprise Server 12 unterstützt.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit JBoss® als Oracle Java™ SE.
 1. AEM Forms on JEE unterstützt kein anderes JDK mit IBM® WebSphere® als IBM® JDK.
-1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Es können nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository vorhanden sein. Auf einer AEM Forms on JEE-Umgebung können Sie MongoMK mit dem CRX-Repository und einer unterstützten relationalen Datenbank mit dem Anwendungsserver verwenden.
+1. CRX-Repository unterstützt Persistenz des Typs TarMK, MongoDB und relationale Datenbanken (RDBMK). Es können nicht zwei verschiedene Datenbanksysteme zwischen dem Anwendungsserver und dem CRX-Repository vorhanden sein. Auf einer AEM Forms on JEE-Umgebung können Sie MongoMK mit CRX-Repository und einer unterstützten relationalen Datenbank mit Anwendungsserver verwenden.
 1. AEM Forms on JEE unterstützt keinen WebSphere-Anwendungsserver unter CentOS.
 1. AEM Forms on JEE unterstützt keine rollenbasierte Zugriffssteuerung (RBAC) für JBoss.
 
@@ -401,7 +405,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
    <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 - Klassische Verfolgung</a> der neuesten Version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version</td>
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
@@ -459,7 +463,7 @@ Die folgenden Untersysteme von AEM Forms sind nicht mit [508](https://www.sectio
 * Benutzeroberfläche für Correspondence Management Authoring
 * Administrator-Benutzeroberfläche (Benutzeroberfläche der Administration Console)
 
-## Systemanforderungen für AEM Forms on JEE {#system-requirements-for-aem-forms-on-jee}
+## System Requirements for AEM Forms on JEE {#system-requirements-for-aem-forms-on-jee}
 
 ### Mindestanforderungen an die Hardware {#minimum-hardware-requirements}
 
@@ -494,11 +498,11 @@ Die folgenden Untersysteme von AEM Forms sind nicht mit [508](https://www.sectio
 
 Für zusätzliche Anforderungen siehe:
 
-* [Systemanforderungen für eine Bereitstellung von AEM Forms on JEE auf einem Einzelserver](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
+* [Systemanforderungen für eine JEE-Bereitstellung für AEM Forms mit nur einem Server](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
 * [Systemanforderungen für eine Clusterbereitstellung von AEM Forms on JEE
    ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
-## Unterstützte Clients für AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
+## Unterstützte Clients für AEM Forms unter JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
 
@@ -672,7 +676,7 @@ Die AEM Forms-App ist für die folgenden Plattformen verfügbar:
 | **Plattform** | **Unterstützte Geräte** |
 |---|---|
 | Apple iOS | Apple iPhone, iPad, iPad Air und iPad mini mit iOS 11 und höher. |
-| Google Android | Android 5.1 und höher. Die AEM Forms-App ist für Samsung Galaxy-Tablets und beliebte Smartphones mit 7 und 10 Zoll zertifiziert. |
+| Google Android | Android 5.1 und höher. Die App für AEM Forms ist für Samsung Galaxy Tablets und beliebte Smartphones mit 7 und 10 Zoll zertifiziert. |
 | Microsoft Windows | Microsoft Surface-Geräte, Tablets, Laptops und Desktops mit Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
