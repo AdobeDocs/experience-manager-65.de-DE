@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 82%
 
 ---
 
@@ -146,7 +149,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>editProperties</td>
-   <td><p>Bearbeitet die Eigenschaften der Live Copy. Die editMap-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der editMap-Eigenschaft muss das folgende Format verwenden:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Die Elemente <code>current_value</code> und <code>new_value</code> Elemente sind reguläre Ausdrücke. <br /> </p> <p>Betrachten Sie beispielsweise den folgenden Wert für editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt:</p>
+   <td><p>Bearbeitet die Eigenschaften der Live Copy. Die editMap-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der editMap-Eigenschaft muss das folgende Format verwenden:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Die Elemente <code>current_value</code> und <code>new_value</code> Elemente sind reguläre Ausdruck. <br /> </p> <p>Betrachten Sie beispielsweise den folgenden Wert für editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt:</p>
     <ul>
      <li>The <code>sling:resourceType</code> properties that are either set to <code>contentpage</code> or to <code>homepage</code> are set to <code>mobilecontentpage.</code></li>
      <li>The <code>cq:template</code> properties that are set to <code>contentpage</code> are set to <code>mobilecontentpage.</code></li>
@@ -189,7 +192,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
    <td>target: (String) Der Pfad zum Workflow-Modell.<br /> </td>
   </tr>
   <tr>
-   <td>obligatorisch</td>
+   <td>mandatory</td>
    <td><p>Legt die Berechtigungen mehrerer ACLs auf der Live Copy-Seite für eine bestimmte Benutzergruppe auf Schreibzugriff fest. Die folgenden ACLs sind konfiguriert:</p>
     <ul>
      <li>ActionSet.ACTION_NAME_REMOVE</li>
@@ -287,15 +290,15 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
    <td>Ein regulärer Ausdruck, der mit den Knotentypen übereinstimmt, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
   </tr>
   <tr>
-   <td><p>Ausgeschlossene Absatzelemente</p> <p>cq.wcm.msm.action.excludedParagraphItems</p> </td>
-   <td>Ein regulärer Ausdruck, der mit den von der Synchronisierungsaktion auszuschließenden Absatzelementen übereinstimmt.</td>
+   <td><p>Ausgeschlossene Absatzelemente</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
+   <td>Ein regulärer Ausdruck, der mit den Absatzelementen übereinstimmt, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
   </tr>
   <tr>
    <td><p>Ausgeschlossene Seiteneigenschaften</p> <p>cq.wcm.msm.action.excludedprops</p> </td>
    <td>Ein regulärer Ausdruck, der mit den Seiteneigenschaften übereinstimmt, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
   </tr>
   <tr>
-   <td><p>Ignorierte Mixin NodeTypes</p> <p>cq.wcm.msm.action.excludedMixin</p> </td>
+   <td><p>Ignorierte Mixin-NodeTypes</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
    <td>Verfügbar nur für CQ MSM Content Update Action. Ein regulärer Ausdruck, der die Namen von Mixin-Knotentypen abgleicht, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
   </tr>
  </tbody>
@@ -323,12 +326,6 @@ Wenn Sie beispielsweise möchten, dass die Seite **Title** bei den Änderungen e
 
 `jcr:(?!(title)$).*`
 
->[!CAUTION]
->
->Vor 5.5 SP2 wurden die ausgeschlossenen Seiteneigenschaften in der System-Konsole unter **Day CQ WCM Rollout Manager** konfiguriert. Ab 5.5 SP2 werden die Einstellungen für die ausgeschlossenen Seiteneigenschaften in diesem Bereich ignoriert. Property exclusion on rollout is configured as described above, in **CQ MSM Content Update Action**.
->
->Wenn Sie diese Einstellung in einer älteren Version als 5.5 SP2 manuell angepasst haben und ein Upgrade auf 5.5 SP2 oder höher durchführen, *müssen Sie diese Einstellungen aus dem alten Konfigurationsbereich manuell in den neuen übertragen*.
-
 ### Konfigurieren der Synchronisierung für die Aktualisierung von Verweisen {#configuring-synchronization-for-updating-references}
 
 Sie können mehrere OSGi-Dienste konfigurieren, die die entsprechenden Synchronisierungsaktionen im Zusammenhang mit der Aktualisierung von Verweisen unterstützen.
@@ -345,7 +342,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für di
   </tr>
   <tr>
    <td><p>Referenz über verschachtelte LiveCopies aktualisieren</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_updateNested</p> </td>
-   <td>Nur für Aktualisierungsaktion für CQ MSM-Referenzen verfügbar. Wählen Sie diese Option (Web-Konsole) oder legen Sie für diese boolesche Eigenschaft true (Repository-Konfiguration) fest, um Verweise zu ersetzen, die auf eine Ressource abzielen, die sich in der Verzweigung der obersten LiveCopy befindet.</td>
+   <td>Nur für Aktualisierungsaktion für CQ MSM-Referenzen verfügbar. Wählen Sie diese Option (Web-Konsole) oder legen Sie für diese boolesche Eigenschaft true (Repository-Konfiguration) fest, um Verweise auf diese Zielgruppe zu ersetzen, die sich in der Verzweigung der obersten LiveCopy-Instanz befinden.</td>
   </tr>
   <tr>
    <td><p>Verweisende Seiten aktualisieren</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td>
@@ -362,8 +359,8 @@ Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigu
 
 * **[Eigenschaften der Live Copy-Seite](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):**Wenn eine Live Copy-Seite so konfiguriert ist, dass sie mindestens eine Rollout-Konfiguration verwenden soll, nutzt MSM diese Rollout-Konfigurationen.
 * **[Eigenschaften der Blueprint-Seiten](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):**Wenn eine Live Copy auf einem Blueprint basiert und die Live Copy-Seite nicht mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die mit der Blueprint-Quellseite verknüpft ist.
-* **** Eigenschaften von übergeordneter Live Copy-Seite: Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert sind, wird die Rollout-Konfiguration verwendet, die für die übergeordnete Seite der Live Copy-Seite gilt.
-* **[](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)Systemstandard **: Wenn die Rollout-Konfiguration der übergeordneten Seite der Live-Kopie nicht bestimmt werden kann, wird die standardmäßige Rollout-Konfiguration des Systems verwendet.
+* **Eigenschaften von übergeordneter Live Copy-Seite:** Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert sind, wird die Rollout-Konfiguration verwendet, die für die übergeordnete Seite der Live Copy-Seite gilt.
+* **[Systemstandard](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):**Wenn die Rollout-Konfiguration der übergeordneten Seite der Live-Kopie nicht bestimmt werden kann, wird die standardmäßige Rollout-Konfiguration des Systems verwendet.
 
 Beispielsweise nutzt ein Blueprint die We.Retail-Referenzwebsite als Quellinhalt. Aus dem Blueprint wird eine Website erstellt. Jedes Element der folgenden Liste beschreibt ein anderes Szenario hinsichtlich der Nutzung von Rollout-Konfigurationen:
 
@@ -411,11 +408,11 @@ Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfigurat
 
 Legen Sie eine Rollout-Konfiguration fest, die als Systemstandard genutzt werden soll. Um die Standardkonfiguration festzulegen, konfigurieren Sie den OSGi-Dienst:
 
-* **Day CQ WCM Live Relationship Manager**  Die Dienst-PID ist `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`.
+* **Day CQ WCM Live Relationship Manager**  Die Dienst-PID ist . `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Konfigurieren Sie den Dienst entweder über die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [Repository-Knoten](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)
 
-* In der Web-Konsole ist der Name der zu konfigurierenden Eigenschaft „Standardmäßige Rollout-Konfiguration“.
-* Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
+* Konfigurieren Sie den Dienst entweder über die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [Repository-Knoten](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+* In der Web-Konsole ist der Name der zu konfigurierenden Eigenschaft „Standardmäßige Rollout-Konfiguration“.`liverelationshipmgr.relationsconfig.default`
 
-Legen Sie diesen Eigenschaftswert auf den Pfad der Rollout-Konfiguration fest, die als Systemstandard genutzt werden soll. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.****
