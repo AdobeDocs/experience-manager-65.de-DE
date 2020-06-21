@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Durch die [Massenbearbeitung von Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten.
 
-Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften für die Massenbearbeitung nicht standardmäßig aktiviert. Sie müssen explizit in der Positivliste eingetragen sein (aktiviert). Wenn Sie die Seiteneigenschaften definieren, die für die Massenbearbeitung verfügbar sein sollen, müssen Sie bestimmte Implikationen berücksichtigen, wie zum Beispiel:
+Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften für die Massenbearbeitung nicht standardmäßig aktiviert. Sie müssen explizit zugelassen (aktiviert) werden. Wenn Sie die Seiteneigenschaften definieren, die für die Massenbearbeitung verfügbar sein sollen, müssen Sie bestimmte Implikationen berücksichtigen, wie zum Beispiel:
 
 * Bestimmte Felder sind normalerweise eindeutig; zum Beispiel ein Seitentitel. Sie müssen entscheiden, ob es sinnvoll ist, diese Felder für die Massenbearbeitung zu aktivieren, wenn ein Wert angewendet wird.
 * Bestimmte Felder können mehrere Werte haben - dies erfordert eine sinnvolle Darstellung beim Rendern.
@@ -65,7 +68,7 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
 
    >[!NOTE]
    >
-   >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 
 1. Navigate to the required field within the `cq:dialog` definition.
 1. Definieren Sie die folgende Eigenschaft auf dem Feldknoten:
@@ -83,14 +86,14 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
 
    >[!CAUTION]
    >
-   >You ***must*** not change anything in the `/libs` path.
+   >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
    >
-   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
    >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
    >    1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
-   >    1. Make any changes within `/apps`
+   >    1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
 1. Wählen Sie **Alle speichern**, um ihre Aktualisierungen beizubehalten.
