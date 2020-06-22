@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
 
-Die Funktion für die Bewertung und Abzeichen von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
+Die Funktion für die Bewertung und Kennzeichnung von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
 Die Details zur Einrichtung der Funktion finden Sie unter
 
@@ -83,7 +83,7 @@ Ausführliche Anweisungen finden Sie unter [Erstellen einer benutzerdefinierten 
 
 So richten Sie schnell eine Slinglog-Datei ein:
 
-1. Greifen Sie beispielsweise auf die **Adobe Experience Manager Web Console-Protokollunterstützung** zu.
+1. Greifen Sie beispielsweise auf die Web-Konsolenprotokoll-Unterstützung **des** Adobe Experience Managers zu
 
    * https://localhost:4502/system/console/slinglog
 
@@ -102,7 +102,7 @@ So richten Sie schnell eine Slinglog-Datei ein:
 
 
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 So zeigen Sie Protokolleinträge an:
 
@@ -118,7 +118,7 @@ So zeigen Sie Protokolleinträge an:
 
    * Beispiel: `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC für Scoring und Bading {#ugc-for-scoring-and-badging}
 
@@ -217,7 +217,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 
    Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen erhalten hat, erscheint der Benutzer mit seinem Forumseintrag so.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Auf der Guide-Site &quot;Community-Komponenten&quot;befinden sich der Benutzer u
 
 Das Ergebnis wird in der Eigenschaft gespeichert, `scoreValue_tl` die direkt einen Wert enthält oder indirekt auf einen atomicCounter verweist.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### UGC für Zugriffsabzeichen {#access-badging-ugc}
 
@@ -270,11 +270,11 @@ Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.
 
 #### Ausgezeichnetes Zeichen {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### Zugewiesenes Zeichen {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
