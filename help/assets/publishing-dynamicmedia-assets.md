@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: b8fe3267a808f1a64b78620156826e0b6e3a5676
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 76%
@@ -18,7 +18,7 @@ ht-degree: 76%
 
 # Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
 
-Sie veröffentlichen Ihre Assets für dynamische Medien, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Schnelle Veröffentlichung]** tippen. Nachdem Sie Ihre dynamischen Medien-Assets veröffentlicht haben, können Sie sie über eine URL oder durch Einbetten des Codes auf der Seite in eine Webseite einfügen.
+Sie veröffentlichen die Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf &quot; **[!UICONTROL Veröffentlichen]** &quot;oder &quot; **[!UICONTROL Schnelle Veröffentlichung&quot;tippen.]** Nachdem Sie Ihre Dynamic Media-Assets veröffentlicht haben, können Sie sie über eine URL oder durch Einbetten des Seitencodes in eine Webseite einfügen.
 
 Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. See [Configuring Dynamic Media - Scene7 mode](config-dms7.md).
 
@@ -38,6 +38,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 >
 >* Assets müssen zunächst veröffentlicht werden, bevor Sie die URL verwenden können. Wenn Assets nicht veröffentlicht sind, können Sie die URL nicht kopieren und in einen Webbrowser einfügen.
 >* Bild- und Viewer-Vorgaben müssen für die Live-Bereitstellung aktiviert und veröffentlicht sein.
+
 >
 
 
