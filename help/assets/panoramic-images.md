@@ -9,12 +9,15 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 88%
 
 ---
 
 
-# Panoramic images{#panoramic-images}
+# Panoramabilder{#panoramic-images}
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein immersives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
 
@@ -27,12 +30,12 @@ Informationen hierzu finden Sie in [Verwalten von Viewer-Vorgaben](/help/assets/
 Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Panoramabilder verwendet werden können, muss mindestens eine der beiden folgenden Eigenschaften zutreffen:
 
 * Ein Seitenverhältnis von 2.
-Sie können die Standardeinstellung für das Seitenverhältnis in CRXDE Lite wie folgt überschreiben:
+Sie können die Standardeinstellung für das Seitenverhältnis von 2 in CRXDE Lite wie folgt überschreiben:
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-* Tagged with the keywords `equirectangular`, or `spherical`and `panorama`, or `spherical` and `panoramic`. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
+* Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente `Panoramic Media`.
 
 Weitere Informationen über den Upload von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
@@ -42,11 +45,11 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
 1. [Melden Sie sich bei Ihrer Dynamic Media Classic (scene7)-Instanz an, ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) und zwar bei jedem Unternehmenskonto.
 
-1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
-1. Wählen Sie auf der Image-Server-Veröffentlichungsseite im Dropdownmenü **[!UICONTROL Veröffentlichungskontext]** oben die Option **[!UICONTROL Image-Serving]** aus.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server.]**
+1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving.]**
 
-1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute]**.
-1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes]**. Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
+1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute.]**
+1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes.]** Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
 
    Bei Dynamic Media Classic (Scene7) liegt die Obergrenze bei 25.000.000 Pixel. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
 
@@ -56,13 +59,14 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
 1. Gehen Sie unter der Überschrift „Anfrage-Attribute“ wie folgt vor:
 
-   * Legen Sie den Anfragenverschleierungsmodus auf **[!UICONTROL Deaktiviert]** fest.
-   * Legen Sie den Anfragensperrmodus auf **[!UICONTROL Deaktiviert]** fest.
+   * Set Request Obfuscation Mode to **[!UICONTROL Disabled.]**
+   * Set Request Locking Mode to **[!UICONTROL Disabled.]**
+
    These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. Klicken Sie unten links auf der Image-Server-Veröffentlichungsseite auf **[!UICONTROL Speichern]**.
+1. Klicken Sie unten links auf der Image-Server-Veröffentlichungsseite auf **[!UICONTROL Speichern.]**
 
-1. Klicken Sie rechts unten auf **[!UICONTROL Schließen]**.
+1. Klicken Sie rechts unten auf **[!UICONTROL Schließen.]**
 
 ### Fehlerbehebung in der WCM-Komponente für Panoramamedien {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -76,8 +80,8 @@ Wenn Sie ein Bild in der Panoramamedienkomponente in WCM abgelegt haben und der 
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 
-Informationen hierzu finden Sie im Abschnitt [Asset-Vorschau](/help/assets/previewing-assets.md).
+Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
