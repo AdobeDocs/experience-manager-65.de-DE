@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 46%
@@ -74,7 +74,7 @@ Wenn Sie keinen Workflow oder keine Versionierung für Ihre Assets benötigen, s
 
 **So konfigurieren Sie universelle Vorlagen**:
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit.]**
 1. Wählen Sie die Registerkarte **[!UICONTROL Video]** aus.
 
    >[!NOTE]
@@ -151,8 +151,8 @@ Die verschiedenen Videokodierungen werden entsprechend den in der Cloud-Konfigur
 >
 >Neue Videoprofile und Änderungen daran müssen für eine Veröffentlichung aktiviert werden.
 
-1. Starten Sie AEM, gehen Sie zu **[!UICONTROL Tools]** und wählen Sie **[!UICONTROL Konfigurationskonsole]** aus. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Erstellen Sie ein neues Dynamic Media Classic Video-Profil. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Starten Sie AEM, gehen Sie zu **[!UICONTROL Tools]** und wählen Sie **[!UICONTROL Konfigurationskonsole aus.]** Navigieren Sie in der Konfigurationskonsole zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video-Profil]** in der Navigationsstruktur.
+1. Erstellen Sie ein neues Dynamic Media Classic Video-Profil. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen.]**
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
