@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung in Dynamic Media – Scene7-Modus
+title: Fehlerbehebung bei Dynamic Media - Scene7-Modus
 description: Fehlerbehebung in Dynamic Media im Ausführungsmodus „Scene7“.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +31,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 
    Dieses optionale Feature Pack bietet FTP-Unterstützung und Hilfe bei der Migration von Assets aus Dynamic Media Classic (Scene7) in Dynamic Media.
 
-* Navigieren Sie zur Cloud Services-Benutzeroberfläche und vergewissern Sie sich, dass das angegebene Konto unter **[!UICONTROL Verfügbare Konfigurationen]** aufgeführt wird.
+* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **[!UICONTROL Available Configurations.]**
 * Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
 
    Diesen Replizierungsagent finden Sie unter „Agenten für Autor“.
@@ -37,38 +40,38 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Asset-Synchronisierungsstatuseigenschaften {#asset-synchronization-status-properties}
+### Asset-Synchronisierungsstatuseigenschaften   {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen AEM und Dynamic Media synchronisiert wurden:
 
 | **Eigenschaft** | **Beispiel** | **Beschreibung** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** - oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss angegeben werden, um URLs zu Remote-Assets von Dynamic Media zu generieren. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
 
 ### Protokollierung der Synchronisierung {#synchronization-logging}
 
-Synchronization errors and issues are logged in `error.log` (AEM server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
+Synchronisierungsfehler und -probleme werden in der Datei `error.log` (AEM-Server-Verzeichnis`/crx-quickstart/logs/`) protokolliert. Anhand der protokollierten Informationen lassen sich die Hauptursachen der meisten Probleme ermitteln. Sie können die Protokollierung aber auch im Paket `com.adobe.cq.dam.ips` über die Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) auf DEBUG heraufsetzen, um mehr Informationen zu erfassen.
 
 ### Verschieben, Kopieren, Löschen {#move-copy-delete}
 
 Führen Sie folgende Schritte aus, bevor Sie einen Verschiebe-, Kopier- oder Löschvorgang ausführen:
 
-* Überprüfen Sie bei Bildern und Videos, ob ein `<object_node>/jcr:content/metadata/dam:scene7ID` Wert vorhanden ist, bevor Sie Vorgänge zum Verschieben, Kopieren oder Löschen durchführen.
-* For image and viewer presets, confirm that an `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` value exists before performing move, copy, or delete operations.
-* Wenn der obige Metadatenwert fehlt, müssen Sie Assets erneut hochladen, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
+* Prüfen Sie für Bilder und Videos, ob der Wert `<object_node>/jcr:content/metadata/dam:scene7ID` vorhanden ist, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
+* Prüfen Sie für Bild- und Viewer-Vorgaben, ob der Wert `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` vorhanden ist, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
+* Wenn der obige Metadatenwert fehlt, müssen Sie Assets erneut hochladen, bevor Sie Verschiebe-, Kopier- oder Löschvorgänge ausführen.
 
 ### Versionskontrolle {#version-control}
 
 Wenn Sie ein vorhandenes Dynamic Media-Asset (gleicher Name und Speicherort) ersetzen, können Sie beide Assets beibehalten oder eine Version ersetzen/erstellen.
 
-* Durch Beibehalten beider Werte wird ein neues Asset mit einem eindeutigen Namen für die URL des veröffentlichten Assets erstellt. Beispiel: `image.jpg` das ursprüngliche Asset und `image1.jpg` das neu hochgeladene Asset.
+* Wenn Sie beide beibehalten, wird ein neues Asset mit einem eindeutigen Namen für die veröffentlichte Asset-URL erstellt. Beispiel: `image.jpg` ist das ursprüngliche Asset und `image1.jpg` ist das neu hochgeladene Asset.
 
 * Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Bereitstellung.
 
-## Bilder und Sets {#images-and-sets}
+## Bilder und Sets   {#images-and-sets}
 
 Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anleitung zur Fehlerbehebung an.
 
@@ -85,8 +88,8 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
     <ol>
      <li><p>Öffnen Sie CRX/DE:</p>
       <ul>
-       <li>Überprüfen Sie, ob die Vorgabe in der JCR- <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> Definition definiert ist. Achtung: Dieser Pfad trifft zu, wenn Sie ein Upgrade von AEM 6.x auf 6.4 durchgeführt und sich gegen die Migration entschieden haben. Andernfalls ist der Ort <code>/conf/global/settings/dam/dm/presets/viewer</code>der Ort.</li>
-       <li>Check to make sure that the asset in the JCR has <code>dam:scene7FileStatus</code><strong> </strong>under Metadata shows as <code>PublishComplete</code>.</li>
+       <li>Überprüfen Sie, ob die Vorgabe im JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definiert ist. Achtung: Dieser Pfad trifft zu, wenn Sie ein Upgrade von AEM 6.x auf 6.4 durchgeführt und sich gegen die Migration entschieden haben. Andernfalls ist der Ort <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Überprüfen Sie, ob das Asset im JCR unter „Metadaten“ für <code>dam:scene7FileStatus</code><strong></strong> den Wert <code>PublishComplete</code> aufweist.</li>
       </ul> </li>
     </ol> </td>
    <td><p>Aktualisieren Sie die Seite/navigieren Sie zu einer anderen Seite und kehren Sie dann zurück (Seitenleisten-JSPs müssen neu kompiliert werden).</p> <p>Wenn dies das Problem nicht behebt:</p>
@@ -112,23 +115,23 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
   </tr>
   <tr>
    <td>Bild wird im Viewer für dynamische Medien nicht als Vorschau angezeigt</td>
-   <td><p>Check that the asset contains <code>dam:scene7File</code> in the Metadata properties (CRXDE Lite)</p> </td>
+   <td><p>Überprüfen Sie, ob das Asset <code>dam:scene7File</code> in den Metadateneigenschaften (CRXDE Lite) enthält.</p> </td>
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
   </tr>
   <tr>
    <td>Hochgeladenes Asset wird nicht im Asset-Wähler angezeigt</td>
-   <td><p>Check asset has property <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
+   <td><p>Überprüfen Sie, ob das Asset die Eigenschaft <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite) aufweist.</p> </td>
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
   </tr>
   <tr>
    <td>Banner wird in der Kartenansicht als <strong>Neu</strong> angezeigt, wenn das Asset noch nicht gestartet wurde</td>
-   <td>Check asset <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> it was not picked up by the workflow.</td>
+   <td>Überprüfen Sie <code>jcr:content</code> &gt; <code>dam:assetState</code> für das Asset. Wenn <code>unprocessed</code>, dann wurde es nicht vom Workflow abgeholt</td>
    <td>Warten Sie, bis das Asset vom Workflow abgeholt wurde.</td>
   </tr>
   <tr>
    <td>Bilder oder Sets zeigen weder Viewer-URL noch eingebetteten Code an</td>
    <td>Prüfen Sie, ob die Viewer-Vorgabe veröffentlicht wurde.</td>
-   <td><p>Go to <strong>Tools</strong> &gt; <strong>Assets</strong> &gt; <strong>Viewer Presets</strong> and publish the viewer preset.</p> </td>
+   <td><p>Wechseln Sie zu <strong>Tools</strong> &gt; <strong>Assets</strong> &gt; <strong>Viewer-Vorgaben</strong> und veröffentlichen Sie die Viewer-Vorgabe.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -150,7 +153,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
     <ul>
      <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist (falls nicht unterstütztes Dateiformat). Falls nicht unterstützt, wird nur ein Bild angezeigt.</li>
      <li>Das Videoprofil muss mehr als eine Kodierungsvorgabe enthalten, damit ein AVS-Set generiert werden kann (einzelne Kodierungen werden als Videoinhalt für MP4-Dateien behandelt; nicht unterstützte Dateien werden wie nicht verarbeitete Dateien behandelt).</li>
-     <li>Check that the video has finished processing by confirming <code>dam:scene7FileAvs</code> of <code>dam:scene7File</code> in metadata.</li>
+     <li>Überprüfen Sie anhand von <code>dam:scene7FileAvs</code> von <code>dam:scene7File</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
     </ul> </td>
    <td>
     <ol>
@@ -180,8 +183,8 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>Die Videoverarbeitung dauert zu lang</td>
    <td><p>So prüfen Sie, ob die Videokodierung noch läuft oder ob ein Fehler aufgetreten ist:</p>
     <ul>
-     <li>Videostatus prüfen <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>Monitor the video from the workflow console <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li>
+     <li>Überprüfen Sie den Videostatus <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
+     <li>Überwachen Sie das Video in der Workflow-Konsole <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Registerkarten „Instanzen“, „Archiv“, „Fehler“.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -190,7 +193,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabeformate vorhanden sind:</p>
     <ul>
      <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist.</li>
-     <li>Check that the video has finished processing by confirming <code>dam:scene7FileAvs</code> in metadata.</li>
+     <li>Prüfen Sie anhand von <code>dam:scene7FileAvs</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
     </ul> </td>
    <td>
     <ol>
@@ -214,11 +217,11 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
   </tr>
   <tr>
    <td>Viewer-Vorgaben werden nicht veröffentlicht</td>
-   <td><p>Gehen Sie zur Diagnoseseite des Stichprobenmanagers weiter: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Überwachen Sie die berechneten Werte. Bei einem ordnungsmäßigen Betrieb wird Folgendes angezeigt:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>Wechseln Sie zur Diagnoseseite des Beispiel-Managers: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Überwachen Sie die berechneten Werte. Bei einem ordnungsmäßigen Betrieb wird Folgendes angezeigt:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Hinweis</strong>: Nach der Konfiguration der Dynamic Media-Cloud-Einstellungen kann es bis zu 10 Minuten dauern, bis die Assets im Viewer synchronisiert werden.</p> <p>Falls weiterhin nicht aktivierte Assets vorhanden sind, klicken Sie auf eine der Schaltflächen <strong>Alle nicht aktivierten Assets auflisten</strong>, um die Details anzuzeigen.</p> </td>
    <td>
     <ol>
-     <li>Navigieren Sie in den Admin Tools zur Viewer-Vorgabenliste: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
+     <li>Navigieren Sie in den Admin Tools zur Viewer-Vorgabeliste: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
      <li>Wählen Sie alle Viewer-Vorgaben aus und klicken Sie auf <strong>Veröffentlichen</strong>.</li>
      <li>Navigieren Sie zurück zum Beispiel-Manager und prüfen Sie, ob die Anzahl der nicht aktivierten Assets jetzt mit null angegeben wird.</li>
     </ol> </td>
@@ -227,9 +230,9 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
    <td>Für das Bildmaterial der Viewer-Vorgabe wird für eine Vorschau in den Asset-Details oder für „URL kopieren“/„Code einbetten“ der Code 404 zurückgegeben</td>
    <td><p>Gehen Sie in CRXDE Lite wie folgt vor:</p>
     <ol>
-     <li>Navigieren Sie zum <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> Ordner im Synchronisierungsordner für dynamische Medien (z. B. <code>/content/dam/_CSS/_OOTB</code>),</li>
+     <li>Navigieren Sie zum <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>-Ordner im Synchronisierungsordner für Dynamic Media (z. B. <code>/content/dam/_CSS/_OOTB</code>).</li>
      <li>Suchen Sie den Metadaten-Knoten des problematischen Assets (z. B. <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Check for the presence of <code>dam:scene7*</code> properties. If the asset was successfully synced and published you see the <code>dam:scene7FileStatus</code> set is to <strong>PublishComplete</strong>.</li>
+     <li>Prüfen Sie, ob die Eigenschaften <code>dam:scene7*</code> vorhanden sind. Wenn das Asset erfolgreich synchronisiert und veröffentlicht wurde, ist für <code>dam:scene7FileStatus</code> der Wert <strong>PublishComplete</strong> angegeben.</li>
      <li>Versuchen Sie, das Bildmaterial direkt aus Dynamic Media anzufordern, indem Sie die Werte der folgenden Eigenschaften und Zeichenketten verketten.
       <ul>
        <li><code>dam:scene7Domain</code></li>
@@ -243,9 +246,9 @@ Falls Sie Probleme mit einem Viewer haben, sehen Sie sich die folgende Anleitung
     <ol>
      <li>Navigieren Sie zu CRXDE Lite.
       <ul>
-       <li>Löschen <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
+       <li>Löschen Sie <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
       </ul> </li>
-     <li>Navigate to the CRX package manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Navigieren Sie zum CRX Package Manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
       <ol>
        <li>Suchen Sie das Viewer-Paket in der Liste (es beginnt mit <code>cq-dam-scene7-viewers-content</code>)</li>
        <li>Klicken Sie auf <strong>Neu installieren</strong>.</li>
