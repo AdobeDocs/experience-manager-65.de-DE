@@ -10,10 +10,10 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 92ebc8def4354d04adaa2e2c66b404a5edf9e968
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '4400'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -43,7 +43,7 @@ Weitere Informationen finden Sie unter [ Tastaturzugriff und Navigation](https:/
 
 ## Verwalten von Viewer-Vorgaben {#managing-viewer-presets-1}
 
-Sie können Viewer-Vorgaben in AEM hinzufügen, bearbeiten, löschen, veröffentlichen sowie Veröffentlichungen rückgängig machen und eine Vorschau für Viewer-Vorgaben anzeigen, indem Sie **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben]** auswählen.
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -387,7 +387,7 @@ In der folgenden Tabelle werden die Mobile Viewer-Gesten aufgeführt, die auf i
 
 ## Erhöhen der Anzahl angezeigter Viewer-Vorgaben {#increasing-the-number-of-viewer-presets-that-display}
 
-AEM zeigt verschiedene Viewer-Vorgaben an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Viewer]** anzeigen. Sie können die Anzahl der angezeigten Viewer erhöhen oder verringern.
+AEM zeigt verschiedene Viewer-Vorgaben an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Viewer anzeigen.]** Sie können die Anzahl der angezeigten Viewer erhöhen oder verringern.
 
 **So erhöhen Sie die Anzahl angezeigter Viewer-Vorgaben**
 
@@ -402,7 +402,7 @@ AEM zeigt verschiedene Viewer-Vorgaben an, wenn Sie ein Asset unter **[!UICONTRO
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. Ändern Sie in der Eigenschaft „limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
-1. Tippen Sie auf **[!UICONTROL Alle speichern]**.
+1. Tippen Sie auf **[!UICONTROL Alle speichern.]**
 
 ## Erstellen einer Viewer-Vorgabe {#creating-a-new-viewer-preset}
 
@@ -422,12 +422,12 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. Tippen Sie auf der Seite „Viewer-Vorgaben“ in der Symbolleiste auf **[!UICONTROL Erstellen]**. 
-1. Geben Sie im Dialogfeld **Neue Viewer-Vorgabe** in das Feld **[!UICONTROL Vorgabename]** den Namen der neuen Vorgabe ein. Achten Sie darauf, einen geeigneten Namen festzulegen, da dieser nach dem Tippen auf **[!UICONTROL Erstellen]** nicht mehr geändert werden kann.
+1. On the Viewer Presets page, on the toolbar, tap **[!UICONTROL Create.]**
+1. Geben Sie im Dialogfeld **Neue Viewer-Vorgabe** in das Feld **[!UICONTROL Vorgabename]** den Namen der neuen Vorgabe ein. Choose a name carefully—they are not editable after you tap **[!UICONTROL Create.]**
 
    Wenn Sie die Vorgabe an späterer Stelle in diesen Schritten speichern, wird der Name auf der Seite „Viewer-Vorgaben“ unter der Spaltenüberschrift „Vorgabentitel“ angezeigt. 
 
-1. Wählen Sie aus dem Dropdown-Menü „Rich-Media-Typ“ den Typ der zu erstellenden Viewer-Vorgabe aus und tippen Sie dann oben rechts auf der Seite auf **[!UICONTROL Erstellen]**.
+1. Wählen Sie aus dem Dropdown-Menü „Rich-Media-Typ“ den Typ der zu erstellenden Viewer-Vorgabe aus und tippen Sie dann oben rechts auf der Seite auf **[!UICONTROL Erstellen.]**
 
    Siehe [Rich-Media-Typen für Viewer-Vorgaben](#rich-media-types-for-viewer-presets).
 
@@ -469,7 +469,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    >
    >Nachdem Sie einen Wert in das Textfeld eingegeben haben, tippen Sie auf eine andere Stelle in der Benutzeroberfläche, um die Änderung weiterzuleiten und die virtuelle Tastatur zu schließen. Wenn Sie auf die Eingabetaste tippen, wird keine Aktion ausgeführt.
 
-1. Tippen Sie oben rechts auf **[!UICONTROL Speichern]**.
+1. Tippen Sie oben rechts auf **[!UICONTROL Speichern.]**
 1. Veröffentlichen Sie die neue Viewer-Vorgabe.  Sie müssen die Vorgabe veröffentlichen, um sie auf Ihrer Website verwenden zu können. 
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
@@ -501,7 +501,7 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
 
 Das automatische Bildlaufverhalten von Miniaturansichten der Viewer-Funktionen für interaktive Videos erfolgt unabhängig vom gewählten Anzeigemodus. 
 
-Wenn Sie eine interaktive Video-Viewer-Voreinstellung erstellen oder bearbeiten, können Sie über die Registerkarte „Verhalten“ auf „Auto-Bildlauf“ zugreifen. Tippen Sie auf der Registerkarte „Verhalten“ im Dropdownmenü **[!UICONTROL Ausgewählte Komponenten]** auf **[!UICONTROL InteractiveSwatches]**. Das Kontrollkästchen „Automatischer Bildlauf“ befindet sich unter dem Textfeld „IS-Befehl“. 
+Wenn Sie eine interaktive Video-Viewer-Voreinstellung erstellen oder bearbeiten, können Sie über die Registerkarte „Verhalten“ auf „Auto-Bildlauf“ zugreifen. Tippen Sie auf der Registerkarte „Verhalten“ im Dropdownmenü **[!UICONTROL Ausgewählte Komponenten]** auf **[!UICONTROL InteractiveSwatches.]** Das Kontrollkästchen „Automatischer Bildlauf“ befindet sich unter dem Textfeld „IS-Befehl“. 
 
 Wenn Sie in der Viewer-Vorgabe bei der Videowiedergabe durch den Benutzer die Option **[!UICONTROL Automatischer Bildlauf]** deaktivieren (das Kontrollkästchen abwählen), wird im Feld während der gesamten Videodauer nur das erste Miniaturbild angezeigt.  Allerdings kann der Benutzer ggf. mithilfe der Pfeilsymbole nach oben und nach unten einen manuellen Bildlauf durch die Miniaturansichten durchführen.
 
@@ -534,7 +534,7 @@ Beim Erstellen von Viewer-Vorgaben für Karussellbanner kann der Stil von Hotspo
 
 |  | **Beschreibung** | **Aktionen** |
 |---|---|---|
-| **[!UICONTROL Hotspot-Symbol]** | Ändern des für Hotspots verwendeten Symbols | Um das Bild des Hotspot-Symbols zu ändern, tippen Sie auf der Registerkarte **[!UICONTROL Erscheinungsbild]** in **[!UICONTROL Ausgewählte Komponente]** auf **[!UICONTROL ImageMapEffect]**. Wählen Sie unter **[!UICONTROL Symbol]** die Option **[!UICONTROL Hintergrund]** und navigieren Sie im Feld **[!UICONTROL Bild]** zum gewünschten Hintergrundbild. |
+| **[!UICONTROL Hotspot-Symbol]** | Ändern des für Hotspots verwendeten Symbols | Um das Bild des Hotspot-Symbols zu ändern, tippen Sie auf der Registerkarte **[!UICONTROL Erscheinungsbild]** in **[!UICONTROL Ausgewählte Komponente]** auf **[!UICONTROL ImageMapEffect.]** Wählen Sie unter **[!UICONTROL Symbol]** die Option **[!UICONTROL Hintergrund]** und navigieren Sie im Feld **[!UICONTROL Bild]** zum gewünschten Hintergrundbild. |
 
 ## Aktivieren oder Deaktivieren von Viewer-Vorgaben {#activating-or-deactivating-viewer-presets}
 
@@ -542,7 +542,7 @@ Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon 
 
 **So aktivieren oder deaktivieren Sie Viewer-Vorgaben:**
 
-1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben]**.
+1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben.]**
 1. Tippen Sie auf der Seite „Viewer-Vorgabe“ unter der Spaltenüberschrift **[!UICONTROL Status]** auf die Umschaltfläche zum Aktivieren bzw. Deaktivieren einer Viewer-Vorgabe. 
 
    Bei aktivierten Viewer-Vorgaben wird die Umschaltfläche rechts in einem blauen Feld angezeigt; bei deaktivierten Viewer-Vorgaben wird die Umschaltfläche links in einem hellgrauen Feld angezeigt. 
@@ -559,13 +559,13 @@ Siehe auch [Anzeigen von Assets in einer Vorschau](/help/assets/previewing-asset
 
 **So veröffentlichen Sie Viewer-Vorgaben:**
 
-1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben]**.
+1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben.]**
 1. Wählen Sie eine oder mehrere Viewer-Vorgaben zum Veröffentlichen aus. 
 1. Tippen Sie auf der Symbolleiste auf das Symbol **[!UICONTROL Veröffentlichen]**.
 
 ## Sortieren von Viewer-Vorgaben   {#sorting-viewer-presets}
 
-1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben]**.
+1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben.]**
 1. Klicken Sie auf **[!UICONTROL Vorgabentitel]**, **[!UICONTROL Typ]**, **[!UICONTROL Veröffentlicht]** oder **[!UICONTROL Status]**, um nach dieser Spaltenüberschrift zu sortieren. Klicken Sie beispielsweise auf **[!UICONTROL Typ]**, um die Viewer-Vorgabentypen in alphabetischer oder in umgekehrt alphabetischer Reihenfolge zu sortieren. 
 
 ## Bearbeiten von Viewer-Vorgaben {#editing-viewer-presets}
@@ -574,9 +574,9 @@ Denken Sie daran, dass die Bearbeitung von *vordefinierten, standardmäßig vorh
 
 **So bearbeiten Sie Viewer-Vorgaben**
 
-1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) **[!UICONTROL > Assets > Viewer-Vorgaben]**.
+1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) **[!UICONTROL > Assets > Viewer-Vorgaben.]**
 1. Wählen Sie eine Vorgabe aus, indem Sie das Kontrollkästchen links neben dem Viewer-Vorgabentitel aktivieren. 
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten.]**
 1. Nehmen Sie auf der Seite **[!UICONTROL Editor für Viewer-Voreinstellungen]** die gewünschten Änderungen an der Viewer-Voreinstellung vor. Verwenden Sie dazu die Optionen auf den Registerkarten **[!UICONTROL Erscheinungsbild]** und **[!UICONTROL Verhalten]**.
 
    Tippen Sie auf der Registerkarte **[!UICONTROL Erscheinungsbild]** in der oberen linken Ecke der Seite „Editor für Viewer-Voreinstellungen“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Telefon]**, um den Präsentationsmodus des Assets zu ändern.
@@ -592,9 +592,9 @@ Sie können Viewer-Vorgaben löschen, die Sie erstellt und Dynamic Media hinzuge
 
 **So löschen Sie benutzerdefinierte Viewer-Vorgaben**
 
-1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) **[!UICONTROL > Assets > Viewer-Vorgaben]**.
+1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) **[!UICONTROL > Assets > Viewer-Vorgaben.]**
 1. Wählen Sie auf der Seite „Viewer-Vorgaben“ einen Vorgabentitel aus und tippen Sie dann auf das Symbol **[!UICONTROL Papierkorb]**.
-1. Tippen Sie auf **[!UICONTROL Löschen]**. 
+1. Tap **[!UICONTROL Delete.]**
 
 ## Anwenden von Viewer-Vorgaben auf Assets {#applying-a-viewer-preset-to-an-asset}
 
@@ -602,7 +602,7 @@ Wenn Sie das Asset und den ausgewählten Viewer bereits veröffentlicht haben, w
 
 **So wenden Sie eine Viewer-Vorgabe auf ein Asset an**
 
-1. Öffnen Sie das Asset, tippen Sie in der Nähe des oberen linken Bereichs der Seite auf das Dropdown-Menü und wählen Sie **[!UICONTROL Viewer]** aus.
+1. Open the asset and near the upper-left corner of the page, tap the drop-down menu, then select **[!UICONTROL Viewers.]**
 
    >[!NOTE]
    >
