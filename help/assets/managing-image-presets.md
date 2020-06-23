@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Bildvorgaben für dynamische Medien
-description: Verstehen Sie die Bildvorgaben für dynamische Medien und erfahren Sie, wie Sie Bildvorgaben erstellen, ändern und verwalten.
+title: Verwalten von Bildvorgaben für Dynamic Media
+description: Verstehen Sie die Bildvorgaben für Dynamic Media und lernen Sie, wie Sie Bildvorgaben erstellen, ändern und verwalten.
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,7 +10,10 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '3851'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +44,7 @@ Administratoren können Bildvorgaben erstellen. Sie können völlig neue Bildvor
 
 ## Managing Dynamic Media image presets {#managing-image-presets-1}
 
-Bildvorgaben verwalten Sie in AEM, indem Sie auf das AEM-Logo tippen oder klicken, um auf die globale Navigationskonsole zuzugreifen. Tippen oder klicken Sie dann auf das Werkzeugsymbol und navigieren Sie zu **[!UICONTROL Assets > Bildvorgaben]**.
+Bildvorgaben verwalten Sie in AEM, indem Sie auf das AEM-Logo tippen oder klicken, um auf die globale Navigationskonsole zuzugreifen. Tippen oder klicken Sie dann auf das Werkzeugsymbol und navigieren Sie zu **[!UICONTROL Assets > Bildvorgaben.]**
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -68,11 +71,11 @@ Das Dateiformat von Adobe Illustrator ist eine Variante von PDF. Dies sind die w
 * Adobe Illustrator-Dokumente bestehen aus einer einzelnen Seite mit mehreren Ebenen. Jede Ebene wird als PNG-Unter-Asset unter dem Illustrator-Haupt-Asset extrahiert.
 * PDF-Dokumente bestehen aus einer oder mehreren Seiten. Jede Seite wird als einseitiges PDF-Unter-Asset unter dem mehrseitigen PDF-Hauptdokument extrahiert.
 
-Die Unter-Assets werden von der Komponente `Create Sub Asset process` im übergeordneten `DAM Update Asset`-Workflow erstellt. Um diese Prozesskomponente innerhalb des Workflows anzuzeigen, tippen Sie auf **[!UICONTROL Tools > Workflow > Modelle > DAM-Update-Asset > Bearbeiten]**.
+Die Unter-Assets werden von der Komponente `Create Sub Asset process` im übergeordneten `DAM Update Asset`-Workflow erstellt. Um diese Prozesskomponente innerhalb des Workflows anzuzeigen, tippen Sie auf **[!UICONTROL Tools > Workflow > Modelle > DAM-Update-Asset > Bearbeiten.]**
 
 Siehe auch [Seiten einer mehrseitigen Datei anzeigen](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-Sie können die Unter-Assets oder die Seiten anzeigen, wenn Sie das Asset öffnen, auf das Menü „Inhalt“ tippen und **[!UICONTROL Unter-Assets]** oder **[!UICONTROL Seiten]** auswählen. Unter-Assets sind echte Assets. Daher werden PDF-Seiten durch den Workflow `Create Sub Asset` (Unter-Asset erstellen) extrahiert. Die Seiten werden dann unter dem Haupt-Asset als `page1.pdf`, `page2.pdf` usw. gespeichert. Nach dem Speichern werden sie vom Workflow `DAM Update Asset` verarbeitet.
+Sie können die Unter-Assets oder die Seiten anzeigen, wenn Sie das Asset öffnen, auf das Menü „Inhalt“ tippen und **[!UICONTROL Unter-Assets]** oder **[!UICONTROL Seiten auswählen.]** Unter-Assets sind echte Assets. Daher werden PDF-Seiten durch den Workflow `Create Sub Asset` (Unter-Asset erstellen) extrahiert. Die Seiten werden dann unter dem Haupt-Asset als `page1.pdf`, `page2.pdf` usw. gespeichert. Nach dem Speichern werden sie vom Workflow `DAM Update Asset` verarbeitet.
 
 Um Dynamic Media zu verwenden und dynamische Ausgabeformate für AI-, EPS- oder PDF-Dateien als Vorschau anzuzeigen oder zu generieren, sind folgende Verarbeitungsschritte erforderlich:
 
@@ -93,7 +96,7 @@ Um Dynamic Media zu verwenden und dynamische Ausgabeformate für AI-, EPS- oder 
 
 Sie können `Rasterize PDF/AI Image Preview Rendition`-Prozesskomponentenoptionen über den Workflow `DAM Update Asset` aufrufen.
 
-Tippen Sie links oben auf Adobe Experience Manager und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten]**. On the [!UICONTROL DAM Update Asset] workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+Tippen Sie links oben auf Adobe Experience Manager und navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle.]** Wählen Sie auf der Seite „Workflow-Modelle“ **[!UICONTROL DAM-Update-Asset]** aus und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Bearbeiten.]**[!UICONTROL  Doppeltippen Sie auf der Seite „Workflow DAM-Update-Asset“ auf die Prozesskomponente ], um das Dialogfeld „Schritteigenschaften“ zu öffnen.`Rasterize PDF/AI Image Preview Rendition`
 
 #### PDF-/AI-Bildvorschau-Wiedergabe rastern – Optionen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -192,19 +195,20 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 >* Die Größe der Miniaturansichten für EPS-Dateien wird im Schritt **[!UICONTROL EPS-Miniaturen]** auf der Registerkarte **[!UICONTROL Argumente]** unter „Miniaturansichten“ konfiguriert.
    >
    >
-* Die Größe der Miniaturansichten für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
+* Thumbnail size for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments.]**
+
 >
 
 
 
-**So konfigurieren Sie die Größe von Miniaturansichten**::
+**So konfigurieren Sie die Größe** der Miniaturansicht:
 
-1. Tippen Sie auf **[!UICONTROL Tools > Workflow > Modelle > DAM-Update-Asset > Bearbeiten]**.
-1. Tippen Sie auf den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf **[!UICONTROL Tools > Workflow > Modelle > DAM-Update-Asset > Bearbeiten.]**
+1. Tippen Sie auf den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK.]**
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tippen Sie auf den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf den Schritt **[!UICONTROL Miniaturansichten verarbeiten]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK.]**
 
    >[!NOTE]
    >
@@ -214,9 +218,9 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 
 ### Increasing or decreasing the number of Dynamic Media image presets that display {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Erstellte Bildvorgaben sind auch als dynamische Ausgabeformate verfügbar, wenn Sie eine Vorschau von Assets anzeigen. AEM zeigt verschiedene dynamische Ausgabeformate an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Ausgabeformate]** anzeigen. Sie können die Anzahl der angezeigten Ausgabeformate erhöhen oder verringern.
+Erstellte Bildvorgaben sind auch als dynamische Ausgabeformate verfügbar, wenn Sie eine Vorschau von Assets anzeigen. AEM zeigt verschiedene dynamische Ausgabeformate an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Ausgabeformate anzeigen.]** Sie können die Anzahl der angezeigten Ausgabeformate erhöhen oder verringern.
 
-**So erhöhen oder verringern Sie die Anzahl der Bildvorgaben** für dynamische Medien:
+**So erhöhen oder verringern Sie die Anzahl der angezeigten** Bildvorgaben für Dynamic Media:
 
 1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
@@ -229,11 +233,11 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabeformate verfügbar, wenn 
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. Ändern Sie in der Eigenschaft „limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
-1. Tippen Sie auf **[!UICONTROL Alle speichern]**.
+1. Tippen Sie auf **[!UICONTROL Alle speichern.]**
 
-## Erstellen einer Bildvorgabe für dynamische Medien {#creating-image-presets}
+## Erstellen einer Bildvorgabe für Dynamic Media {#creating-image-presets}
 
-Wenn Sie eine Bildvorgabe für dynamische Medien erstellen, können Sie diese Einstellungen bei der Vorschau oder Veröffentlichung auf alle Bilder anwenden.
+Wenn Sie eine Bildvorgabe für Dynamic Media erstellen, können Sie diese Einstellungen bei der Vorschau oder Veröffentlichung auf alle Bilder anwenden.
 
 >[!NOTE]
 >
@@ -247,12 +251,12 @@ Wenn Sie INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamisc
 
 >[!NOTE]
 >
->Zum Erstellen von Bildvorgaben für dynamische Medien benötigen Sie Administratorrechte als AEM-Administrator oder Admin-Konsolenadministrator.
+>Zum Erstellen von Bildvorgaben für Dynamic Media benötigen Sie Administratorrechte als AEM-Administrator oder Admin Console-Administrator.
 
-**So erstellen Sie eine Bildvorgabe** für dynamische Medien:
+**So erstellen Sie eine Bildvorgabe** für Dynamic Media:
 
-1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Assets > Bildvorgaben]**.
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Assets > Bildvorgaben.]**
+1. Klicken Sie auf **[!UICONTROL Erstellen.]** Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -292,7 +296,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 * **[!UICONTROL Einfaches Scharfzeichnen aktivieren]**: Aktivieren Sie nicht die Option **[!UICONTROL Einfaches Scharfzeichnen aktivieren]** (dieser Scharfzeichnungsfilter bietet weniger Kontrolle als die Einstellungen für „Unschärfemaske“).
 
-* **[!UICONTROL Scharfzeichnen: Resampling-Modus]**: Wählen Sie **[!UICONTROL Bikubisch]**.
+* **[!UICONTROL Scharfzeichnen: Resampling-Modus]**: Wählen Sie **[!UICONTROL Bikubisch.]**
 
 #### Optionen auf der Registerkarte „Basis“{#basic-tab-options}
 
@@ -476,11 +480,11 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 ## Bearbeiten von Bildvorgaben {#modifying-image-presets}
 
-1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Assets > Bildvorgaben]**.
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Assets > Bildvorgaben.]**
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]**. Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
+1. Select a preset and then click **[!UICONTROL Edit.]** The **[!UICONTROL Edit Image Preset]** window opens.
 1. Nehmen Sie Änderungen vor und klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder auf **[!UICONTROL Abbrechen]**, um sie zu verwerfen.
 
 ## Publishing Dynamic Media image presets {#publishing-image-presets}
@@ -489,10 +493,10 @@ Wenn Sie den Modus „Dynamic Media –Hybrid“ ausführen, müssen Sie Bildvo
 
 (Wenn Sie den Modus „Dynamic Media – Scene7“ ausführen, werden Bildvorgaben automatisch veröffentlicht und Sie müssen diese Schritte nicht ausführen.)
 
-**So veröffentlichen Sie Bildvorgaben im dynamischen Medienmodus**:
+**So veröffentlichen Sie Bildvorgaben im Dynamic Media-Hybridmodus**:
 
-1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets]**.
-1. Wählen Sie in der Liste der Bildvorgaben eine oder mehrere Bildvorgaben aus und klicken oder tippen Sie auf **[!UICONTROL Veröffentlichen]**.
+1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets.]**
+1. Wählen Sie in der Liste der Bildvorgaben eine oder mehrere Bildvorgaben aus und klicken oder tippen Sie auf **[!UICONTROL Veröffentlichen.]**
 1. Nachdem die Bildvorgabe veröffentlicht wurde, ändert sich der Status von „Nicht veröffentlicht“ in „Veröffentlicht“.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
@@ -500,6 +504,6 @@ Wenn Sie den Modus „Dynamic Media –Hybrid“ ausführen, müssen Sie Bildvo
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
 1. Tippen oder klicken Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
-1. Tippen Sie auf das Symbol **[!UICONTROL Werkzeuge]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben]**.
+1. Tippen Sie auf das Symbol **[!UICONTROL Werkzeuge]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben.]**
 1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **Löschen**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**, um den Löschvorgang vorzunehmen, oder auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
 
