@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e6aba1f511754080305c0a97ce9bc85511f29a7
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 68%
@@ -37,7 +37,7 @@ Informationen zum Aktivieren oder Deaktivieren von Viewer-Vorgaben in der Benutz
 **So erstellen Sie eine Vorschau von Assets über die Softwareoberfläche**
 
 1. Tippen Sie in **Adobe Experience Manager** auf der Seite **Navigation** auf **[!UICONTROL Assets]** und **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
-1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Listenansicht]**.
+1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Listenansicht.]**
 1. (Optional) Sortieren Sie in der Spalte **[!UICONTROL Typ]** die Assets nach dem Typ, den Sie in einer Vorschau anzeigen möchten.
 1. Klicken Sie in der Spalte **[!UICONTROL Titel]** auf den Namen des Titels (nicht auf die Miniaturansicht) des Assets, das Sie in der Vorschau anzeigen möchten.
 1. Führen Sie je nach ausgewähltem Asset eine der folgenden Aktionen aus:
