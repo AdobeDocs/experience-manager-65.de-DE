@@ -10,10 +10,10 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '8031'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -144,7 +144,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
 
 >[!NOTE]
 >
->Durch das Aktivieren von Dynamic Media per Ausführungsmodus wird die Funktionalität in AEM 6.1 und AEM 6.0 für die Teile ersetzt, für die Sie Dynamic Media aktiviert haben, indem das Flag `dynamicMediaEnabled` auf **[!UICONTROL true]** festgelegt wird. Dieses Flag hat in AEM 6.2 und höher keine Funktion. Außerdem ist es nicht erforderlich, den Schnellstartvorgang neu zu starten, um Dynamic Media zu aktivieren.
+>Durch das Aktivieren von Dynamic Media per Ausführungsmodus wird die Funktionalität in AEM 6.1 und AEM 6.0 für die Teile ersetzt, für die Sie Dynamic Media aktiviert haben, indem das Flag `dynamicMediaEnabled` auf **[!UICONTROL true festgelegt wird.]** Dieses Flag hat in AEM 6.2 und höher keine Funktion. Außerdem ist es nicht erforderlich, den Schnellstartvorgang neu zu starten, um Dynamic Media zu aktivieren.
 
 By enabling Dynamic Media, the dynamic media features will be available in the UI and every uploaded image asset receives a *cqdam.pyramid.tiff* rendition that is used for fast delivery of dynamic image renditions. Diese PTIFF-Dateien bieten erhebliche Vorteile, beispielsweise 1) die Möglichkeit, nur ein einziges Primärquellbild zu verwalten und ohne zusätzliche Datenspeicherung unendliche Darstellungen zu erstellen und 2) interaktive Visualisierungen wie Zoomen, Schwenken, Drehen usw. zu verwenden.
 
@@ -263,12 +263,12 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 **Gehen Sie wie folgt vor, um die Authentifizierung einzurichten**
 
 1. Wenden Sie sich an die Kundenunterstützung, um Ihre KeyStore-Datei und das dazugehörige Kennwort zu erhalten (falls noch nicht vorhanden). Dies ist Teil des Bereitstellungsvorgangs und die Schlüssel werden Ihrem Konto zugeordnet.
-1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Sicherheit > Benutzer]**.
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Sicherheit > Benutzer.]**
 1. On the User Management page, navigate to the **[!UICONTROL dynamic-media-replication]** user, then tap to open.
 
    ![dm-Replikation](assets/dm-replication.png)
 
-1. Tippen Sie auf der Seite „Benutzereinstellungen für dynamic-media-replication bearbeiten“ auf die Registerkarte **[!UICONTROL Keystore]** und dann auf **[!UICONTROL KeyStore erstellen]**.
+1. Tippen Sie auf der Seite „Benutzereinstellungen für dynamic-media-replication bearbeiten“ auf die Registerkarte **[!UICONTROL Keystore]** und dann auf **[!UICONTROL KeyStore erstellen.]**
 
    ![dm-Replication-keystore](assets/dm-replication-keystore.png)
 
@@ -282,7 +282,7 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 1. Erweitern Sie auf der Seite **[!UICONTROL Benutzereinstellungen für dynamic-media-replication bearbeiten]** den Bereich **Privaten Schlüssel aus KeyStore-Datei hinzufügen** und fügen Sie Folgendes ein (siehe folgende Abbildungen):
 
    * In the **[!UICONTROL New Alias]** field, enter the name of an alias that you will later use in the replication configuration; for example, `replication`.
-   * Tippen Sie auf **[!UICONTROL KeyStore-Datei]**. Navigieren Sie zur KeyStore-Datei, die Sie von Adobe, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen]**.
+   * Tippen Sie auf **[!UICONTROL KeyStore-Datei.]** Navigieren Sie zur KeyStore-Datei, die Sie von Adobe, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen.]**
    * In the **[!UICONTROL KeyStore File Password]** field, enter the KeyStore File password. Dies ist **nicht** das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben, sondern das Kennwort für die KeyStore-Datei, das Sie in der Begrüßungs-E-Mail von Adobe während der Bereitstellung erhalten haben. Wenden Sie sich an die Kundenunterstützung von Adobe, um Ihre KeyStore-Datei und das dazugehörige Kennwort zu erhalten (falls noch nicht vorhanden).
    * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
    * In the **[!UICONTROL Private Key Alias]** field, enter the private key alias. For example, `*companyname*-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
@@ -295,28 +295,28 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 
 ### Konfigurieren des Replikationsagenten {#configuring-the-replication-agent}
 
-1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools >  Bereitstellung >  Replikation > Agenten für Autor]**.
-1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Hybride Bildreplikation für dynamische Medien (s7delivery)]**.
-1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
+1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools >  Bereitstellung >  Replikation > Agenten für Autor.]**
+1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Hybride Bildreplikation für dynamische Medien (s7delivery).]**
+1. Tippen Sie auf **[!UICONTROL Bearbeiten.]**
 1. Tap the **[!UICONTROL Settings]** tab, then enter the following:
 
    * **[!UICONTROL Aktiviert]**: Aktivieren Sie dieses Kontrollkästchen, um den Replikationsagenten zu aktivieren.
    * **[!UICONTROL Region]** - Auf die entsprechende Region eingestellt: Nordamerika, Europa oder Asien
    * **[!UICONTROL Mandant-ID]** : Dieser Wert ist der Name Ihrer Firma/des Mandanten, die/der im Replizierungsdienst veröffentlicht wird. Dieser Wert ist die Tenant-ID, die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenden Sie sich an die Kundenunterstützung von Adobe, falls Sie diese E-Mail nicht erhalten haben.
    * **[!UICONTROL Key Store-Alias]** - Dieser Wert ist identisch mit dem** New Alias**-Wert, der beim Generieren des Schlüssels unter [Einrichten der Authentifizierung](#setting-up-authentication)festgelegt wurde. zum Beispiel `replication`. (See step 7 in [Setting Up Authentication](#setting-up-authentication).)
-   * **[!UICONTROL Key Store Password]** - Dies ist das KeyStore-Kennwort, das erstellt wurde, wenn Sie auf KeyStore **[!UICONTROL erstellen tippten]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. See step 5 of [Setting up Authentication](#setting-up-authentication).
+   * **[!UICONTROL Key Store Password]** - Dies ist das KeyStore-Kennwort, das erstellt wurde, wenn Sie auf KeyStore **[!UICONTROL erstellen tippten.]** Dieses Kennwort wird nicht von Adobe bereitgestellt. See step 5 of [Setting up Authentication](#setting-up-authentication).
 
    In der folgenden Abbildung ist der Replikationsagent mit Beispieldaten dargestellt:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. Tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf **[!UICONTROL OK.]**
 
 ### Validieren des Replikationsagenten für Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
 Gehen Sie wie folgt vor, um den Replizierungsagenten für dynamische Medien zu validieren:
 
-Tippen Sie auf Verbindung **[!UICONTROL testen]**. Die Beispielausgabe lautet wie folgt:
+Tippen Sie auf Verbindung **[!UICONTROL testen.]** Die Beispielausgabe lautet wie folgt:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -451,7 +451,7 @@ Beispiel für Replikationsprotokoll:
 
 **Lösung:**
 
-1. Klicken Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite]**.
+1. Klicken Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -462,7 +462,7 @@ Beispiel für Replikationsprotokoll:
 
    `enableOauth=true`
 
-1. Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern]**.
+1. Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern.]**
 
 ### Testen Ihrer Konfiguration {#testing-your-configuration}
 
@@ -477,8 +477,8 @@ Achten Sie darauf, dass Sie vor Beginn dieses Tests Folgendes durchgeführt habe
 
 1. Laden Sie ein Bild-Asset hoch. (In Assets, tap **[!UICONTROL Create > Files]** and select the file.)
 1. Warten Sie, bis der Workflow abgeschlossen ist.
-1. Veröffentlichen Sie das Bild-Asset. (Wählen Sie das Asset aus und tippen Sie auf **[!UICONTROL Quick Publish]**.)
-1. Navigate to the renditions for that image by opening the image, and tapping **[!UICONTROL Renditions]**.
+1. Veröffentlichen Sie das Bild-Asset. (Wählen Sie das Asset aus und tippen Sie auf **[!UICONTROL Quick Publish.]**)
+1. Navigate to the renditions for that image by opening the image, and tapping **[!UICONTROL Renditions.]**
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
@@ -499,8 +499,8 @@ Stellen Sie vor dem Einrichten des Dynamic Media Cloud Service sicher, dass Sie 
 
 So konfigurieren Sie Cloud-Services für Dynamic Media:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3)]**.
-1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]**, then tap **[!UICONTROL Create]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3).]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]**, then tap **[!UICONTROL Create.]**
 1. Geben Sie im Dialogfeld **[!UICONTROL Dynamic Media-Konfiguration erstellen]** im Feld „Titel“ einen Titel ein.
 1. Wenn Sie Dynamic Media für Video konfigurieren,
 
@@ -625,7 +625,7 @@ Sie müssen Ihre eigenen Standardeinstellungen für den Katalog im Rahmen der Ei
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Replikation]**.
-1. Tippen Sie auf **[!UICONTROL Replizieren]**.
+1. Tippen Sie auf **[!UICONTROL Replizieren.]**
 
 ## Replizieren von Viewer-Vorgaben {#replicating-viewer-presets}
 
@@ -701,16 +701,16 @@ Filter gelten für MIME-Typen und können nicht pfadspezifisch sein.
 
 Wenn Sie Dynamic Media ausschließlich für Videos nutzen, können Sie mit diesen Schritten Asset-Filter für die Replikation einrichten:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish)]**.
-1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish).]**
+1. Tippen Sie auf **[!UICONTROL Bearbeiten.]**
 1. In the **[!UICONTROL Agent Settings]** dialog box, in the **[!UICONTROL Settings]** tab, check **[!UICONTROL Enabled]** to turn on the agent.
-1. Tippen Sie auf **[!UICONTROL OK]**.
-1. Tippen Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite]**.
+1. Tippen Sie auf **[!UICONTROL OK.]**
+1. Tippen Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
-1. Suchen Sie nach **[!UICONTROL filter-video]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren]**.
+1. Suchen Sie nach **[!UICONTROL filter-video]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Suchen Sie nach **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]**.
+1. Suchen Sie nach **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen.]**
 
 So wird für die AEM-Veröffentlichungsinstanz eingerichtet, dass das Video-Posterbild sowie die für die Wiedergabe erforderlichen Videometadaten bereitgestellt werden, während das Video selbst vom Dynamic Media Cloud Service bereitgestellt wird. Mit dem Filter werden auch das Originalvideo und statische Miniaturwiedergaben, die auf der Veröffentlichungsinstanz nicht benötigt werden, von der Replikation ausgeschlossen.
 
@@ -718,20 +718,20 @@ So wird für die AEM-Veröffentlichungsinstanz eingerichtet, dass das Video-Post
 
 Wenn Sie Dynamic Media für die Bilddarstellung in Bereitstellungen außerhalb der Produktion nutzen, können Sie mit diesen Schritten Asset-Filter für die Replikation einrichten:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish)]**.
-1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish).]**
+1. Tippen Sie auf **[!UICONTROL Bearbeiten.]**
 1. In the **[!UICONTROL Agent Settings]** dialog box, in the **[!UICONTROL Settings]** tab, check **[!UICONTROL Enabled]** to turn on the agent.
-1. Tippen Sie auf **[!UICONTROL OK]**.
-1. Tippen Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite]**.
+1. Tippen Sie auf **[!UICONTROL OK.]**
+1. Tippen Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. Suchen Sie nach **[!UICONTROL filter-images]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren]**.
+1. Suchen Sie nach **[!UICONTROL filter-images]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node]**. Geben Sie den Namen `damRenditionFilters` des Typs ein `nt:unstructured`.
-1. Locate `damRenditionFilters`, right-click it and select **[!UICONTROL Paste]**.
+1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create > Create Node.]** Geben Sie den Namen `damRenditionFilters` des Typs ein `nt:unstructured`.
+1. Locate `damRenditionFilters`, right-click it and select **[!UICONTROL Paste.]**
 
 Die AEM-Veröffentlichungsinstanz für die Bereitstellung der Bilder in Ihrer Umgebung, die nicht für die Produktion bestimmt ist, wird eingerichtet. Mit dem Filter werden auch das Originalbild und statische Wiedergaben, die auf der Veröffentlichungsinstanz nicht benötigt werden, von der Replikation ausgeschlossen.
 
@@ -745,14 +745,14 @@ If you are using more than one filter on a server - for example, one filter for 
 
 Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupassen:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` to review the filters.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. Zum Definieren des MIME-Typs für den Filter können Sie den MIME-Typ wie folgt ermitteln:
 
-   Erweitern Sie in der linken Leiste `content > dam > <locate_your_asset> >  jcr:content > metadata` und suchen Sie dann in der Tabelle **[!UICONTROL dc:format]**.
+   Erweitern Sie in der linken Leiste `content > dam > <locate_your_asset> >  jcr:content > metadata` und suchen Sie dann in der Tabelle **[!UICONTROL dc:format.]**
 
    Die folgende Grafik ist ein Beispiel für den Pfad eines Assets zu „dc:format“.
 
@@ -810,7 +810,7 @@ Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media
 
 So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
-1. In the upper-left corner of AEM, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap **[!UICONTROL Tools > Operations > Web Console]**.
+1. In the upper-left corner of AEM, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap **[!UICONTROL Tools > Operations > Web Console.]**
 1. On the Adobe Experience Manager Web Console Configuration page, tap **[!UICONTROL OSGi > Configuration]** to list all the bundles that are currently running within AEM.
 
    Die Dynamic Media Versand-Server befinden sich in der Liste unter den folgenden Namen:
@@ -864,7 +864,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
  </tbody>
 </table>
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**.
+1. Tippen Sie auf **[!UICONTROL Speichern.]**
 1. In the list of bundles, to the right of Adobe CQ Scene7 PlatformServer, tap the **[!UICONTROL Edit]** icon.
 1. Legen Sie im Dialogfeld für Adobe CQ Scene7 PlatformServer die folgenden Standardwerte fest:
 
@@ -890,7 +890,7 @@ Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert fü
 
 Sie können die Werte der Eigenschaften wie in der folgenden Tabelle beschrieben ändern, indem Sie neue Werte eingeben.
 
-When you are finished making changes to the default manifest, in the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+When you are finished making changes to the default manifest, in the upper-left corner of the page, tap **[!UICONTROL Save All.]**
 
 Be sure you tap the **[!UICONTROL Access Control]** tab (to the right of the Properties tab), then set the access control privileges to `jcr:read` for the everyone and dynamic-media-replication users.
 
@@ -998,7 +998,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
 
    Die Farbkorrektureigenschaften werden in der Tabelle **Farbkorrektureigenschaften** beschrieben. Werte, die Sie Farbkorrektureigenschaften zuweisen können, sind in der Tabelle **Farbprofil** angegeben.
 
-   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value]**. Then tap **[!UICONTROL Add]** and then **[!UICONTROL Save All]** to save your values.
+   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value.]** Tippen Sie dann auf **[!UICONTROL Hinzufügen]** und dann auf Alle **[!UICONTROL speichern]** , um Ihre Werte zu speichern.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1246,9 +1246,9 @@ Die folgenden Farbprofile werden installiert:
  </tbody>
 </table>
 
-1. Tippen Sie auf **[!UICONTROL Alle speichern]**.
+1. Tippen Sie auf **[!UICONTROL Alle speichern.]**
 
-For example, you could set the **[!UICONTROL iccprofilergb]** to `sRGB`, and **[!UICONTROL iccprofilecmyk]** to **[!UICONTROL WebCoated]**.
+For example, you could set the **[!UICONTROL iccprofilergb]** to `sRGB`, and **[!UICONTROL iccprofilecmyk]** to **[!UICONTROL WebCoated.]**
 
 Dies hat folgende Auswirkungen:
 
