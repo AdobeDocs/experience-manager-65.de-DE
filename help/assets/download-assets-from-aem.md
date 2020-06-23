@@ -3,7 +3,7 @@ title: Laden Sie digitale Assets herunter [!DNL Adobe Experience Manager].
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 39%
@@ -24,10 +24,10 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Gemischtes Medienset“ und
 **So laden Sie Assets herunter,**
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
+1. On the Navigation page, tap **[!UICONTROL Assets > Files.]**
 1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
 1. Wählen Sie den Ordner oder einen oder mehrere Assets im Ordner aus.
-1. On the toolbar, tap **[!UICONTROL Download]**.
+1. On the toolbar, tap **[!UICONTROL Download.]**
 
    ![Verfügbare Optionen beim Herunterladen von Assets aus Experience Managern](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Gemischtes Medienset“ und
    | **[!UICONTROL Intelligentes Zuschneiden]** | Wählen Sie diese Option, um alle Smart-Schnittdarstellungen des ausgewählten Assets aus AEM herunterzuladen. Eine ZIP-Datei mit den Smart-Zuschneidedarstellungen wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
    | **[!UICONTROL Dynamische Ausgabe(n)]** | Wählen Sie diese Option, um eine Reihe von alternativen Darstellungen in Echtzeit zu erstellen. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](image-presets.md) list. <br>Darüber hinaus können Sie die Größe und Maßeinheit, das Format, den Farbraum, die Auflösung und optionale Bildmodifikatoren wie das Invertieren des Bildes auswählen. Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
-1. Tippen Sie im Dialogfeld auf **[!UICONTROL Herunterladen]**.
+1. Tippen Sie im Dialogfeld auf **[!UICONTROL Herunterladen.]**.
 
 ## Aktivieren des Asset-Download-Servlets {#enable-asset-download-servlet}
 
