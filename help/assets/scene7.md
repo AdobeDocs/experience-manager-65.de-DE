@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '2873'
 ht-degree: 32%
@@ -87,7 +87,7 @@ Das Hinzufügen einer Dynamic Media Classic-Komponente (Scene7) zu einer Seite e
 
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media Classic-Komponente (Scene7) hinzufügen möchten.
 
-1. If no Dynamic Media Classic components are available, click **[!UICONTROL Design]** mode, tap any component with a blue border, tap the **[!UICONTROL Parent]** icon, and then the **[!UICONTROL Configuration]** icon. In **[!UICONTROL Parsys (Design)]**, select all the Dynamic Media Classic components to make them available and click **[!UICONTROL OK]**.
+1. If no Dynamic Media Classic components are available, click **[!UICONTROL Design]** mode, tap any component with a blue border, tap the **[!UICONTROL Parent]** icon, and then the **[!UICONTROL Configuration]** icon. In **[!UICONTROL Parsys (Design)]**, select all the Dynamic Media Classic components to make them available and click **[!UICONTROL OK.]**
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
@@ -210,7 +210,7 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 #### Dynamisches Ändern von Text {#changing-text-dynamically}
 
-Geben Sie zum dynamischen Ändern des Texts neuen Text in die Felder ein und klicken Sie auf **[!UICONTROL OK]**. In diesem Beispiel lautet der **[!UICONTROL Preis]** 50 $ und der Versand kostet 0,99 $.
+Geben Sie zum dynamischen Ändern des Texts neuen Text in die Felder ein und klicken Sie auf **[!UICONTROL OK.]** In diesem Beispiel lautet der **[!UICONTROL Preis]** 50 $ und der Versand kostet 0,99 $.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -220,7 +220,7 @@ Der Text im Bild ändert sich. You can reset the text back to the original value
 
 #### Ändern von Text zum Berücksichtigen des Werts eines Clientkontextwerts {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK]**. In diesem Beispiel ändert sich der Name auf Grundlage der Verknüpfung des Namens mit dem formatierten Namen im Profil.
+To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK.]** In diesem Beispiel ändert sich der Name auf Grundlage der Verknüpfung des Namens mit dem formatierten Namen im Profil.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -230,12 +230,12 @@ Der Text berücksichtigt den Namen des aktuell angemeldeten Benutzers. Sie könn
 
 #### Verknüpfen der Dynamic Media Classic-Bildvorlage {#making-the-scene-image-template-a-link}
 
-1. Tippen Sie auf der Seite mit der Komponente &quot;Dynamic Media Classic **[!UICONTROL Image Template]** &quot;auf **[!UICONTROL Bearbeiten]**.
+1. Tippen Sie auf der Seite mit der Komponente &quot;Dynamic Media Classic **[!UICONTROL Image Template]** &quot;auf **[!UICONTROL Bearbeiten.]**
 1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. Wählen Sie im Feld **[!UICONTROL Öffnen in]** aus, ob das Ziel (in einem neuen oder im selben Fenster) geöffnet werden soll.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf **[!UICONTROL OK.]**
 
 ### Komponente „Video“{#video-component}
 
@@ -343,7 +343,7 @@ Standardmäßig durchsucht AEM den ausgewählten Ordner und alle Unterordner.
 
 
 
-**[!UICONTROL Veröffentlichungsstatus]** - Sie können nach Assets basierend auf dem Veröffentlichungsstatus filtern: **[!UICONTROL Veröffentlichung rückgängig gemacht]** oder **[!UICONTROL veröffentlicht]**. If you do not select any **[!UICONTROL Publish Status]**, AEM by default searches all publish statuses.
+**[!UICONTROL Veröffentlichungsstatus]** - Sie können nach Assets basierend auf dem Veröffentlichungsstatus filtern: **[!UICONTROL Veröffentlichung rückgängig gemacht]** oder **[!UICONTROL veröffentlicht.]** Wenn Sie keinen **[!UICONTROL Veröffentlichungsstatus]** auswählen, durchsucht AEM standardmäßig alle Veröffentlichungsstatus.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
