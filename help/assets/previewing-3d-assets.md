@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eine Vorschau von 3D-Assets anzeigen können
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 91%
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 # Anzeigen einer Vorschau von 3D-Assets in AEM{#previewing-3d-assets-aem}
 
-Adobe Experience Manager unterstützt das Hochladen, den Versand und die interaktive Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
+Adobe Experience Manager unterstützt das Hochladen, den Versand und die interaktive Vorschau von 3D-Assets im Rahmen des Authoring-Prozesses.
 
 Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in AEM verfügbar. Der Viewer bietet unter anderem eine Reihe interaktiver Kamera-Steuerelemente, mit denen Sie die Kamera um das 3D-Asset drehen sowie Zoom- und Schwenkvorgänge durchführen können.
 
@@ -52,7 +52,7 @@ Wenn Sie die Kamera interaktiv bearbeiten, muss darüber hinaus die Kapazität d
 
 1. Laden Sie 3D-Assets in AEM hoch.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. Tippen Sie in AEM auf der **[!UICONTROL Navigationsseite]** auf **[!UICONTROL Assets > Dateien]**.
+1. Tippen Sie in AEM auf der **[!UICONTROL Navigationsseite]** auf **[!UICONTROL Assets > Dateien.]**
 
    ![Navigationsseite](/help/assets/assets-dm/navigation-assets.png)
 
@@ -81,4 +81,4 @@ Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-asse
    * **Zurücksetzen**: Tippen Sie unten rechts auf der Seite auf das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen.
    * **Vollbildmodus**: Um in den Vollbildmodus zu wechseln, tippen Sie unten rechts auf Seite auf das Symbol „Vollbild“.
 
-1. Tippen Sie zum Abschluss unten rechts auf der Seite auf **[!UICONTROL Schließen]**.
+1. Tippen Sie zum Abschluss unten rechts auf der Seite auf **[!UICONTROL Schließen.]**
