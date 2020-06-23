@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '3707'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -157,11 +157,11 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 
 **So erstellen Sie ein Videoprofil für adaptives Streaming**:
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile.]**
 1. Klicken oder tippen Sie auf **[!UICONTROL Erstellen]**, um ein neues Videoprofil hinzuzufügen.
 
 1. Geben Sie einen Namen und eine Beschreibung für das Profil ein.
-1. Tippen Sie auf der Seite „Videokodierungsvorgaben erstellen/bearbeiten“ auf **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
+1. Tippen Sie auf der Seite „Videokodierungsvorgaben erstellen/bearbeiten“ auf **[!UICONTROL Videokodierungsvorgabe hinzufügen.]**
 1. Legen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Video- und Audiooptionen fest.
 Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzliche Beschreibungen oder empfohlene Einstellungen auf Grundlage des ausgewählten Videoformat-Codecs anzuzeigen.
 1. Stellen Sie unter der Überschrift „Videogröße“ sicher, dass **[!UICONTROL Seitenverhältnis beibehalten]** aktiviert ist.
@@ -169,7 +169,7 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein. Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
+   * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto ein.]** Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
 
    * Tippen Sie zum Visualisieren der Größe des Videos auf das Informationssymbol (i) rechts neben **[!UICONTROL Höhe]**, um die Seite mit der Größenberechnung zu öffnen. Legen Sie mit der **[!UICONTROL Größenberechnung]** die gewünschten Abmessungen des Videos fest (durch das blaue Feld dargestellt). Tippen Sie oben rechts auf **[!UICONTROL X]**, wenn Sie fertig sind.
 
@@ -180,7 +180,7 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
    * Fahren Sie mit dem nächsten Schritt fort.
 
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
-   * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen]**.
+   * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen.]**
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -210,17 +210,17 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 
 **So erstellen Sie ein Videoprofil für progressives Streaming**:
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile.]**
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um ein neues Videoprofil hinzuzufügen.
 1. Geben Sie einen Namen und eine Beschreibung für das Profil ein.
-1. Tippen Sie auf der Seite „Videokodierungsvorgaben erstellen/bearbeiten“ auf **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
+1. Tippen Sie auf der Seite „Videokodierungsvorgaben erstellen/bearbeiten“ auf **[!UICONTROL Videokodierungsvorgabe hinzufügen.]**
 1. Legen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Video- und Audiooptionen fest.
 Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzliche Beschreibungen oder empfohlene Einstellungen auf Grundlage des ausgewählten Videoformat-Codecs anzuzeigen.
-1. (Optional) Deaktivieren Sie unter der Überschrift „Videogröße“ das Kontrollkästchen **[!UICONTROL Seitenverhältnis beibehalten]**.
+1. (Optional) Deaktivieren Sie unter der Überschrift „Videogröße“ das Kontrollkästchen **[!UICONTROL Seitenverhältnis beibehalten.]**
 1. Gehen Sie folgendermaßen vor:
    * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein.
    * Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
-Tippen Sie zur Visualisierung der Größe des Videos auf das Informationssymbol „Höhe“, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** wunschgemäß weiter an. Wenn Sie damit fertig sind, tippen Sie oben rechts im Dialogfeld auf **[!UICONTROL X]**.
+Tippen Sie zur Visualisierung der Größe des Videos auf das Informationssymbol „Höhe“, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** wunschgemäß weiter an. Wenn Sie damit fertig sind, tippen Sie oben rechts im Dialogfeld auf **[!UICONTROL X.]**
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Tippen Sie auf die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** ausgewählt ist (empfohlen).
@@ -236,7 +236,7 @@ Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzli
 
 1. (Optional) Gehen Sie wie folgt vor, um den Videos, auf die dieses Profil angewendet wird, smartes Zuschneiden hinzuzufügen:
 
-   * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen]**.
+   * Tippen Sie auf der Seite „Videoprofil bearbeiten“ rechts neben der Überschrift „Smart Crop Ratio“ auf **[!UICONTROL Neu hinzufügen.]**
    * Geben Sie im Feld „Name“ einen Namen für das Zuschnittverhältnis ein, damit Sie es leicht erkennen können.
    * Wählen Sie aus der Dropdown-Liste **[!UICONTROL Zuschnittverhältnis]** das Verhältnis aus, das Sie verwenden möchten.
 
@@ -255,7 +255,7 @@ Sie können vorhandene Videokodierungsprofile bearbeiten, um von erweiterten Par
 
 **So verwenden Sie benutzerdefinierte Videokodierungsparameter**:
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite.]**
 1. Navigieren Sie auf der Seite „CRXDE Lite“ im linken Bereich des Explorers in das folgende Verzeichnis:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -307,11 +307,11 @@ Sie können vorhandene Videokodierungsprofile bearbeiten, um von erweiterten Par
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Tippen Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Hinzufügen]**.
+1. Tippen Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Hinzufügen.]**
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wiederholen Sie die Schritte 3 und 4, um Ihrem Videokodierungsprofil einen weiteren Parameter hinzuzufügen.
-   * Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern]**.
+   * Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern.]**
 
 1. Tippen Sie in der oberen linken Ecke der Seite „CRXDE Lite“ auf das Symbol **[!UICONTROL Zurück zur Startseite]**, um zu AEM zurückzukehren.
 
@@ -327,9 +327,9 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 
 **So bearbeiten Sie ein Videoprofil**:
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile.]**
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten.]**
 1. Bearbeiten Sie den Namen und die Beschreibung nach Bedarf auf der Seite „Videokodierungsprofil“.
 1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren.
 Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Streaming anzuzeigen. (Wenn Sie ein progressives Videoprofil nicht bearbeiten möchten, aktivieren Sie dieses Kontrollkästchen nicht.)
@@ -337,13 +337,13 @@ Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Strea
 
    Tippen Sie neben den einzelnen Optionen auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** auf das Informationssymbol, um zusätzliche Beschreibungen oder empfohlene Einstellungen auf Grundlage des ausgewählten Videoformat-Codecs anzuzeigen.
 
-1. Tippen Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern]**.
+1. Tippen Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern.]**
 
 ### Kopieren eines Videoprofils {#copying-a-video-encoding-profile}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile.]**
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Kopieren.]**
 1. Geben Sie auf der Seite „Videokodierungsprofil“ einen neuen Namen für das Profil ein.
 1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Streaming anzuzeigen. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
 
@@ -352,14 +352,14 @@ Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Strea
 
    Tippen Sie neben den einzelnen Optionen in den Registerkarten „Allgemein“ und „Erweitert“ auf das Informationssymbol, um die empfohlenen Einstellungen und die Beschreibung anzuzeigen.
 
-1. Tippen Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern]**.
+1. Tippen Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern.]**
 
 ### Löschen von Videoprofilen {#deleting-a-video-encoding-profile}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile.]**
 1. Aktivieren Sie auf der Seite „Videoprofile“ mindestens einen Videoprofilnamen.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]**.
-1. Tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen.]**
+1. Tippen Sie auf **[!UICONTROL OK.]**
 
 ## Anwenden eines Videoprofils auf Ordner     {#applying-a-video-profile-to-folders}
 
@@ -377,7 +377,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 ### Anwenden eines Videoprofils auf bestimmte Ordner {#applying-video-profiles-to-specific-folders}
 
-Sie können ein Videoprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Videoprofile auf beide Arten auf Ordner anwenden.
+Sie können ein Videoprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften auf einen Ordner anwenden.]** In diesem Abschnitt wird beschrieben, wie Sie Videoprofile auf beide Arten auf Ordner anwenden.
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
@@ -385,16 +385,16 @@ Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung de
 
 #### Anwenden von Videoprofilen auf Ordner über die Benutzeroberfläche „Profile“{#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile.]**
 1. Wählen Sie ein Videoprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
-1. Tippen Sie auf **[!UICONTROL Profil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Tippen Sie dann auf **[!UICONTROL Anwenden]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird (solange Sie sich in der **[!UICONTROL Kartenansicht]** befinden).
+1. Tippen Sie auf **[!UICONTROL Profil auf Ordner anwenden]** und wählen Sie mindestens einen Ordner aus, den Sie verwenden möchten, um neu hochgeladene Assets zu empfangen. Tippen Sie dann auf **[!UICONTROL Anwenden.]** Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird (solange Sie sich in der **[!UICONTROL Kartenansicht befinden).]**
 Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
 
 #### Anwenden eines Videoprofils auf Ordner aus „Eigenschaften“ {#applying-video-profiles-to-folders-from-properties}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, auf den Sie ein Videoprofil anwenden möchten.
-1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** das Profil aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften.]**
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** das Profil aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen.]** Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
@@ -407,7 +407,7 @@ Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung de
 
 **So wenden Sie ein Videoprofil global an**:
 
-* Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` hinzu und tippen Sie auf **[!UICONTROL Alle speichern]**.
+* Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`. Fügen Sie die Eigenschaft `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` hinzu und tippen Sie auf **[!UICONTROL Alle speichern.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
@@ -422,19 +422,19 @@ In der Datei `error.log` können Sie den Fortschritt des Kodierungsauftrags eben
 
 Wenn Sie ein Videoprofil aus einem Ordner entfernen, übernehmen alle Unterordner automatisch die Entfernung des Profils vom übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
 
-Sie können ein Videoprofil aus einem Ordner im Menü **[!UICONTROL Tools]** entfernen. Wenn Sie sich im Ordner befinden, ist dies über die **[!UICONTROL Ordnereinstellungen]** möglich. In diesem Abschnitt werden die beiden Möglichkeiten beschrieben, wie Sie Videoprofile aus Ordnern entfernen können.
+You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings.]** This section describes how to remove video profiles from folders both ways.
 
 ### Entfernen von Videoprofilen aus Ordnern über die Benutzeroberfläche „Profile“{#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile]**.
+1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools ]**> **[!UICONTROL Assets ]**> **[!UICONTROL Videoprofile.]**
 1. Wählen Sie das Videoprofil, das Sie aus einem oder mehreren Ordnern entfernen möchten.
-1. Tippen Sie auf **[!UICONTROL Profil aus Ordner(n) entfernen]** und wählen Sie den Ordner oder mehrere Ordner aus, aus denen das Profil entfernt werden soll. Tippen Sie dann auf **[!UICONTROL Fertig]**.
+1. Tippen Sie auf **[!UICONTROL Profil aus Ordner(n) entfernen]** und wählen Sie den Ordner oder mehrere Ordner aus, aus denen das Profil entfernt werden soll. Tippen Sie dann auf **[!UICONTROL Fertig.]**
 
    Sie können sich vergewissern, dass das Videoprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
 ### Entfernen von Videoprofilen aus Ordnern über „Eigenschaften“{#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Videoprofil entfernen möchten.
-1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **Eigenschaften**.
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **Eigenschaften.]**
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen.]** Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
