@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Developing User Guide
+user-guide-title: AEM 6.5 Developer-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 79%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 + [Entwicklerhandbuch - Übersicht](home.md)
 + Einführung für Entwickler{#introduction}
-   + [Erste Schritte bei der Entwicklung von AEM-Websites – WKND-Tutorial](getting-started.md)
+   + [Erste Schritte bei der Entwicklung von AEM-Sites – WKND-Tutorial](getting-started.md)
    + [Grundlegende AEM-Konzepte](the-basics.md)
    + [Struktur der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-structure.md)
    + [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-concepts.md)
@@ -67,7 +70,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Entwicklung (generisch)](generic.md)
       + [Entwicklung mit SAP Commerce Cloud](sap-commerce-cloud.md)
 + Komponenten{#components}
-   + [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
    + [Stilsystem](/help/sites-authoring/style-system.md)
    + [Komponentenübersicht](components.md)
    + [AEM-Komponenten – Grundlagen](components-basics.md)
@@ -88,7 +91,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Internationalisierung von UI-Zeichenfolgen](i18n-dev.md)
       + [Verwalten von Wörterbüchern mithilfe des Übersetzers](i18n-translator.md)
       + [Extrahieren von Zeichenfolgen zur Übersetzung](i18n-extract.md)
-   + Klassische Komponenten der Benutzeroberfläche{#classic-ui-components}
+   + Classic-Komponenten der Benutzeroberfläche{#classic-ui-components}
       + [Entwickeln von AEM-Komponenten (klassische Benutzeroberfläche)](developing-components-classic.md)
       + [Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche)](widgets.md)
       + [Verwenden von xtypes (klassische Benutzeroberfläche)](xtypes.md)
@@ -113,12 +116,12 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [SPA- und serverseitiges Rendering](spa-ssr.md)
       + [JavaScript-API-Referenzen für SPAs](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
-   + [Inhaltsfragmente](/help/assets/content-fragments.md)
-   + [Erlebnisfragmente](/help/sites-authoring/experience-fragments.md)
+   + [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)
+   + [Experience Fragments](/help/sites-authoring/experience-fragments.md)
    + [Inhaltsfragmente und Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Entwicklungstools{#devtools}
    + [Entwicklungstools](dev-tools.md)
-   + [AEM-Modernisierungstools](modernization-tools.md)
+   + [AEM-Modernisierungs-Tools](modernization-tools.md)
    + [Dialogfeldeditor](dialog-editor.md)
    + [Dialogfeldkonvertierungs-Tool](dialog-conversion.md)
    + [Entwickeln mit CRXDE Lite](developing-with-crxde-lite.md)
@@ -149,9 +152,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Anpassen von Ansichten von Seiteneigenschaften](page-properties-views.md)
    + [Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften](bulk-editing.md)
    + [Anpassen und Erweitern von Inhaltsfragmenten](customizing-content-fragments.md)
-   + [Inhaltsfragmente Konfigurieren von Komponenten für die Wiedergabe](content-fragments-config-components-rendering.md)
-   + [Erlebnisfragmente](experience-fragments.md)
-   + Erweitern von Workflows{#extending-workflows}
+   + [Inhaltsfragmente, die Komponenten für die Wiedergabe konfigurieren](content-fragments-config-components-rendering.md)
+   + [Experience Fragments](experience-fragments.md)
+   + Workflows erweitern{#extending-workflows}
       + [Entwickeln und Erweitern von Workflows](workflows.md)
       + [Erstellen von Workflow-Modellen](workflows-models.md)
       + [Erweitern der Workflow-Funktionen](workflows-customizing-extending.md)
@@ -159,14 +162,14 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Referenz für Workflow-Schritte](workflows-step-ref.md)
       + [Best Practices für Workflows](workflows-best-practices.md)
       + [Referenz für Workflow-Prozesse](workflows-process-ref.md)
-      + [Variablen in AEM-Workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Variablen in AEM Workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Erweitern des Multi-Site-Managers](extending-msm.md)
-   + Verfolgung und Analyse{#extending-analytics}
+   + Tracking und Analytics{#extending-analytics}
       + [Erweitern der Ereignisverfolgung](extending-analytics.md)
       + [Hinzufügen der Adobe Analytics-Verfolgung zu Komponenten](extending-analytics-components.md)
-      + [Anpassen des Adobe Analytics-Frameworks](extending-analytics-framework.md)
+      + [Anpassen des Adobe Analytics Framework](extending-analytics-framework.md)
       + [Implementieren serverseitiger Seitennamen für Analytics](extending-analytics-pa-naming.md)
-   + Cloud-Services{#extending-cloud-services}
+   + Cloud Services{#extending-cloud-services}
       + [Cloud-Service-Konfigurationen](extending-cloud-config.md)
       + [Erstellen eines individuellen Cloud-Service](extending-cloud-config-custom-cloud.md)
    + [Erstellen benutzerspezifischer Erweiterungen](extending-campaign-extensions.md)
