@@ -12,7 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '3452'
+ht-degree: 84%
 
 ---
 
@@ -45,7 +48,7 @@ Diese Seite enthält die Referenzdokumentation (oder Links zur Referenzdokumenta
 
 ## Struktur {#structure}
 
-Die grundlegende Struktur einer Komponente wird auf der Seite [AEM Komponenten - Grundlagen](/help/sites-developing/components-basics.md#structure) beschrieben. Dieses Dokument behandelt sowohl die touchfähigen als auch die klassischen Benutzeroberflächen. Auch wenn Sie die klassischen Einstellungen in Ihrer neuen Komponente nicht verwenden müssen, kann es hilfreich sein, sie beim Erben von vorhandenen Komponenten zu beachten.
+Die grundlegende Struktur einer Komponente wird auf der Seite [AEM Komponenten - Grundlagen](/help/sites-developing/components-basics.md#structure) beschrieben. Dieses Dokument umfasst sowohl die touchfähigen als auch die klassischen Benutzeroberflächen. Auch wenn Sie die klassischen Einstellungen in Ihrer neuen Komponente nicht verwenden müssen, kann es hilfreich sein, sie beim Erben von vorhandenen Komponenten zu beachten.
 
 ## Erweiterung bestehender Komponenten und Dialogfelder {#extending-existing-components-and-dialogs}
 
@@ -79,7 +82,7 @@ Ihre Komponente wird mit [HTML](https://www.w3schools.com/htmL/html_intro.asp) g
 
 ### Verwenden der HTML-Vorlagensprache {#using-the-html-template-language}
 
-Die [HTML Vorlagensprache (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
+Die [HTML Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
 
 >[!NOTE]
 >
@@ -129,7 +132,7 @@ Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente z
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-ui-and-granite-ui}
 
-Die [Coral-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) und die [Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) definieren das moderne Erscheinungsbild von AEM.
+Die [Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) und die [Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) definieren das moderne Erscheinungsbild von AEM.
 
 [Die Granite-Benutzeroberfläche bietet einen großen Bereich der grundlegenden Komponenten (Widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html), die zum Erstellen Ihres Dialogfelds in der Autorenumgebung benötigt werden. Falls erforderlich, können Sie diese Auswahl erweitern und [Ihr eigenes Widget erstellen](#creatinganewwidget).
 
@@ -141,7 +144,7 @@ Ausführliche Informationen finden Sie hier:
 
    * Bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen
    * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite-Benutzeroberfläche
 
@@ -200,6 +203,7 @@ Beispiele finden Sie unter:
 >
 >* AEM-Gems-Session zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 >* Der zugehörige Beispielcode wird unter [Codebeispiel – So passen Sie Dialogfelder an](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields) behandelt.
+
 >
 
 
@@ -270,7 +274,7 @@ Um Logik in Ihr Feld zu injizieren, sollten Sie Folgendes beachten:
 1. Lassen Sie Ihr Feld mit einer bestimmten CSS-Klasse (dem *Hook*) markieren.
 1. Definieren Sie in Ihrer Client-Bibliothek einen JS-Listener, der mit diesem CSS-Klassennamen verknüpft ist (dadurch wird sichergestellt, dass Ihre benutzerdefinierte Logik nur für Ihr Feld gilt und andere Felder desselben Typs nicht betroffen sind).
 
-Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html). Dies ist dem Prozess sehr ähnlich, den Sie in der Vergangenheit mit ExtJS durchführen mussten: Suchen Sie die Dokumentationsseite eines bestimmten Widgets und überprüfen Sie dann die Details seiner Event-API.
+Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html). Dies ist dem Prozess sehr ähnlich, den Sie in der Vergangenheit mit ExtJS durchführen mussten: Suchen Sie die Dokumentationsseite eines bestimmten Widgets und überprüfen Sie dann die Details seiner Event-API.
 
 Ein Beispiel finden Sie unter:
 
@@ -366,6 +370,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
 1. Unter der Absatzdefinition Ihres Seitendesigns. Beispiel:
 
    * `/etc/designs/<myApp>/page/par`
+
    Erstellen Sie einen neuen Knoten:
 
    * Name: `cq:authoring`
@@ -381,6 +386,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
 
    * Name: Text, es wird empfohlen, dass der Name des Assets und den zugehörigen Komponententyp angibt; zum Beispiel, Bild
    * Typ: `nt:unstructured`
+
    Jeweils mit den folgenden Eigenschaften:
 
    * `assetGroup`:
@@ -424,7 +430,7 @@ Den Code dieser Seite finden Sie auf GitHub
 
 >[!NOTE]
 >
->The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
+>The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
 
 ## Verwenden von AEM Brackets-Erweiterungen {#using-the-aem-brackets-extension}
 
@@ -433,7 +439,7 @@ Die [AEM Brackets-Erweiterung](/help/sites-developing/aem-brackets.md) bietet ei
 Die Erweiterung:
 
 * Erleichtert die Synchronisierung (kein Maven oder File Vault erforderlich), um die Effizienz der Entwickler zu erhöhen, und hilft Front-End-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen.
-* Provides some [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) support, the template language designed to simplify component development and increase security.
+* Provides some [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) support, the template language designed to simplify component development and increase security.
 
 >[!NOTE]
 >
@@ -445,7 +451,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 
 * HTL
 
-   * Die Verwendung von [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
+   * Die Verwendung von [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
 
 * Komponenten
 
@@ -496,4 +502,4 @@ Sie müssen lediglich eine `README.md`-Datei in der Komponentenstruktur platzier
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
-The supported markdown is the same as that for [content fragments](/help/assets/content-fragments-markdown.md).
+The supported markdown is the same as that for [content fragments](/help/assets/content-fragments/content-fragments-markdown.md).
