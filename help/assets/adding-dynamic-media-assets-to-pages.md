@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
+source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
 workflow-type: tm+mt
 source-wordcount: '3095'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -37,13 +37,13 @@ Das Hinzufügen von 3D-Medien, Dynamic Media, interaktiven Medien, Panoramamedie
 
    Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
 
-   ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
+   ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
 1. Drag a **[!UICONTROL Dynamic Media]** component that you want to use and drop it in the desired location on the page.
 
 1. Bewegen Sie den Mauszeiger direkt über die Komponente. Wenn die Komponente blau hervorgehoben wird, tippen Sie einmal darauf, um die Symbolleiste der Komponente anzuzeigen. Tippen Sie auf das Symbol **[!UICONTROL Konfiguration]**(Schraubenschlüssel).
 
-   ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
+   ![6_5_360video_wcmcomponentconfigure](/help/assets/assets/6_5_360video_wcmcomponentconfigure.png)
 
 1. Je nachdem, welche Dynamic Media-Komponente Sie auf der Seite abgelegt haben, wird ein Konfigurationsdialogfeld geöffnet. [Legen Sie die Optionen der Komponente](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) wie gewünscht fest.
 
@@ -123,7 +123,6 @@ Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein
 >
 >* Mehrere Instanzen der Dynamic Media-Komponente werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
-
 >
 >
 Beachten Sie, dass Sie den einzelnen Dynamic Media-Komponenten auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
@@ -202,9 +201,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    Viewer-Modifikatoren ermöglichen z. B. Folgendes:
 
-   * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Verknüpfen einer Navigationsdatei mit einem Video: [Navigation](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
-
+   * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Verknüpfen Sie eine Navigationsdatei mit einem Video: [navigation][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 * **Titel**: Ändern Sie den Titel des Videos.
@@ -259,7 +257,6 @@ Die Komponente „Interaktive Medien“ ist eine intelligente Komponente. Je nac
 >
 >* Mehrere Instanzen der Komponente für interaktive Medien werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
-
 >
 >
 Beachten Sie, dass Sie den einzelnen Komponenten für interaktive Medien auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
@@ -301,7 +298,6 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 >
 >* Mehrere Instanzen der Komponente für **[!UICONTROL Panoramamedien]** werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
-
 >
 >
 Beachten Sie, dass Sie den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
