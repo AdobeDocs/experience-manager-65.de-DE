@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8f97f6164a5021609917b99feb0608bcea59553
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+workflow-type: tm+mt
+source-wordcount: '6662'
+ht-degree: 96%
 
 ---
 
@@ -194,7 +197,7 @@ Wenn diese Option aktiviert ist, rendert der Datenelement-Editor ein Formular mi
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Eine Liste der unterstützten Ereignisse nach Viewer-Typ finden Sie im [Dynamic Media-Viewer-Referenzhandbuch](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html). Konsultieren Sie den Abschnitt zum gewünschten Viewer und klicken Sie auf den Unterabschnitt „Support für Tracking mit Adobe Analytics“. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media-Viewer nicht dokumentiert.
+Eine Liste der unterstützten Ereignisse nach Viewer-Typ finden Sie im [Dynamic Media-Viewer-Referenzhandbuch](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html). Konsultieren Sie den Abschnitt zum gewünschten Viewer und klicken Sie auf den Unterabschnitt „Support für Tracking mit Adobe Analytics“. Derzeit sind Ereignisargumente im Referenzhandbuch für Dynamic Media-Viewer nicht dokumentiert.
 
 Betrachten wir nun den Lebenszyklus des *Datenelements* von „Dynamic Media-Viewer“. Der Wert dieses Datenelements wird ausgefüllt, nachdem das entsprechende Dynamic Media-Viewers-Ereignis auf der Seite eintritt. Wenn das Datenelement beispielsweise auf das **[!UICONTROL LOAD]**-Ereignis und dessen „asset“-Argument verweist, erhält der Wert dieses Datenelements gültige Daten, sobald der Viewer das LOAD-Ereignis zum ersten Mal ausführt. Wenn das Datenelement auf das **[!UICONTROL ZOOM]**-Ereignis und das zugehörige „scale“-Argument verweist, bleibt der Wert dieses Datenelements leer, bis der Viewer zum ersten Mal ein **[!UICONTROL ZOOM]**-Ereignis sendet.
 
@@ -526,7 +529,7 @@ Um eine Erweiterung zu installieren, klicken Sie auf **[!UICONTROL Installieren]
 
 Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguriert werden:
 
-* (Erforderlich) *Experience Cloud ID-Dienst *Erweiterung
+* (Erforderlich) *Experience Cloud-ID-Dienst *Erweiterung
 
 Es ist keine zusätzliche Konfiguration erforderlich; akzeptieren Sie die vorgeschlagenen Werte. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -653,7 +656,7 @@ Das Veröffentlichen einer Bibliothek umfasst die folgenden zwei Schritte:
 Voraussetzungen:
 
 * AEM führt sowohl die Autoren- als auch die Veröffentlichungsinstanz aus.
-* Der AEM-Autorenknoten wird im Modus &quot;Dynamische Medien - Scene7-Ausführung&quot;eingerichtet (dynamicmedia_s7)
+* Der AEM-Autorenknoten wird im Scene7-Ausführungsmodus (dynamicmedia_s7) eingerichtet.
 * WCM-Komponenten für Dynamic Media sind in AEM Sites aktiviert.
 
 Die AEM-Konfiguration besteht aus den folgenden zwei Hauptschritten:
