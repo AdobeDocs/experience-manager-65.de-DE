@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '2638'
+ht-degree: 2%
 
 ---
 
@@ -21,19 +24,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Der Entwicklungsprozess für mobile Anwendungen in AEM erkennt, dass Benutzer unterschiedlicher Expertise zur Entwicklung von mobilen Anwendungen beitragen. Die folgende Prozesszuordnung veranschaulicht die allgemeine Reihenfolge, in der Inhaltsersteller und Anwendungsentwickler Aufgaben ausführen.
+Der Entwicklungsprozess für mobile Anwendungen in AEM erkennt, dass Benutzer unterschiedlicher Expertise zur Entwicklung von mobilen Anwendungen beitragen. Die folgende Prozesszuordnung veranschaulicht die allgemeine Reihenfolge, in der Inhaltsersteller und Anwendungsentwickler Aufgaben durchführen.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
-Informationen zur Durchführung der Marketingspezialaufgaben werden auf dieser Seite angezeigt. Weitere Informationen zu den Aufgaben für Entwickler finden Sie unter Erstellen von PhoneGap-Anwendungen.
+Informationen zur Durchführung der Aufgaben von Marketer werden auf dieser Seite angezeigt. Weitere Informationen zu den Developer-Aufgaben finden Sie unter Erstellen von PhoneGap-Anwendungen.
 
 ## Die Struktur von Mobilanwendungen {#the-structure-of-mobile-applications}
 
-AEM Mobile bietet den Phonegap App-Entwurf zum Erstellen von Mobilanwendungen. Der Entwurf definiert die Struktur der von Ihnen erstellten Anwendungen. Anträge umfassen die folgenden Elemente:
+AEM Mobile bietet den Phonegap-App-Entwurf zum Erstellen von Mobilanwendungen. Der Entwurf definiert die Struktur der von Ihnen erstellten Anwendungen. Anträge umfassen die folgenden Elemente:
 
 * Die Stammseite.
 * Die Sprachvarianten der Anwendung.
-* Die Homepage der Sprachenvariante.
+* Die Startseite der Sprachvariante.
 
 ### Der Stamm einer PhoneGap-App {#the-root-of-a-phonegap-app}
 
@@ -47,38 +50,38 @@ Die Stammeseite wird unter der Eigenschaft Zielpfad der Anwendung gespeichert, d
 
 Die ersten untergeordneten Seiten der Stammseite sind die Sprachvarianten der Anwendung. Der Name jeder Seite ist die Sprache, für die die Anwendung erstellt wird. Beispielsweise ist Englisch der Name der englischen Variante des Antrags.
 
-**** Hinweis: Der standardmäßige PhoneGap-Entwurf erstellt nur eine englische Anwendung. Ihr Entwickler kann den Entwurf so ändern, dass er weitere Sprachvarianten erstellen kann.
+**Hinweis:** Der standardmäßige PhoneGap-Blueprint erstellt nur eine englische Anwendung. Ihr Entwickler kann den Entwurf so ändern, dass er weitere Sprachvarianten erstellen kann.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
 Die Sprachseite dient zwei Zwecken:
 
 * Der Seiteninhalt ist die Seite, auf der die Sprachvariation der Anwendung angezeigt wird.
-* Die Seiteneigenschaften steuern verschiedene Designaspekte der Anwendung, z. B. die URL zum Anfordern von Inhaltsaktualisierungen und Informationen zum Herstellen einer Verbindung mit dem Cloud-Build und der Adobe Analytics-Services-Integration.
+* Die Seiteneigenschaften steuern verschiedene Designaspekte der Anwendung, z. B. die URL zum Anfordern von Inhaltsaktualisierungen und Informationen zum Herstellen einer Verbindung mit dem Cloud-Build und der Adobe Analytics Services-Integration.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Die Homepage {#the-home-page}
+### Die Startseite {#the-home-page}
 
-Die Homepage oder die Seite &quot;index.html&quot;einer Sprachenvariante einer Anwendung wird angezeigt, wenn die Anwendung geöffnet wird. Die Homepage bietet Benutzern ein Menü mit Links zu verschiedenen Seiten in der Anwendung. Mit dem Absatzsystem können Sie Komponenten zur Seite hinzufügen, um Inhalte zu erstellen.
+Die Startseite oder die Seite &quot;index.html&quot;einer Sprachvariante einer Anwendung wird beim Öffnen der Anwendung angezeigt. Die Startseite bietet den Benutzern ein Menü mit Links zu verschiedenen Seiten der Anwendung. Mit dem Absatzsystem können Sie Komponenten zur Seite hinzufügen, um Inhalte zu erstellen.
 
 ## Erstellen einer Mobilanwendung {#creating-a-mobile-application}
 
 Mobile Anwendungen basieren auf einem Entwurf, der eine Seitenstruktur und Eigenschaften definiert. Sie können die folgenden Anwendungseigenschaften konfigurieren:
 
-* **** Titel: Der Titel der Anwendung.
-* **** Zielpfad: Der Speicherort im Repository, in dem die Anwendung gespeichert wird. Lassen Sie die Standardeinstellung, um einen Pfad basierend auf dem App-Namen zu erstellen.
+* **Titel:** Der Titel der Anwendung.
+* **Zielpfad:** Der Speicherort im Repository, in dem die Anwendung gespeichert wird. Lassen Sie die Standardeinstellung, um einen Pfad basierend auf dem App-Namen zu erstellen.
 
-* **** Name: Der Standardwert ist der Wert der Title-Eigenschaft, bei der Leerzeichen entfernt werden. Der Name wird in CQ verwendet, um auf die Anwendung zu verweisen, beispielsweise auf den Repository-Knoten, der die Anwendung darstellt.
-* **** Beschreibung: Eine Beschreibung des Antrags.
-* **** Server-URL: Die URL, die OTA-Inhalte (Over-the-Air) bereitstellt, wird der Anwendung aktualisiert. Der Standardwert ist die Veröffentlichungsserver-URL der Instanz, die zum Erstellen einer Anwendung verwendet wird (vom Externalisierungs-Dienst genommen). Beachten Sie, dass es sich hierbei nicht um einen Autor, sondern um eine Instanz im Veröffentlichungsserver handeln muss. Hierfür ist eine Authentifizierung erforderlich.
+* **Name:** Der Standardwert ist der Wert der Title-Eigenschaft, bei der Leerzeichen entfernt werden. Der Name wird in CQ verwendet, um auf die Anwendung zu verweisen, z. B. auf den Repository-Knoten, der die Anwendung darstellt.
+* **Beschreibung:** Eine Beschreibung des Antrags.
+* **Server-URL:** Die URL, die OTA-Inhalte (Over-the-Air) bereitstellt, wird der Anwendung aktualisiert. Der Standardwert ist die Veröffentlichungsserver-URL der Instanz, die zum Erstellen einer Anwendung verwendet wird (vom Externalisierungs-Dienst genommen). Beachten Sie, dass es sich hierbei nicht um einen Autor, sondern um eine Instanz im Veröffentlichungsserver handeln muss. Hierfür ist eine Authentifizierung erforderlich.
 
-Sie können auch eine Bilddatei zur Verwendung als Anwendungsminiaturansicht angeben, die PhoneGap Build-Konfiguration auswählen und die zu verwendende Mobile App-Analysekonfiguration auswählen. Dieses Bild wird nur als Miniaturansicht für Ihre mobile Anwendung in der Konsole der mobilen Apps in Experience Manager verwendet.
+Sie können auch eine Bilddatei zur Verwendung als Anwendungsminiaturansicht angeben, die PhoneGap Build-Konfiguration auswählen und die zu verwendende Mobile App-Analysekonfiguration auswählen. Dieses Bild wird nur als Miniaturansicht für Ihre Mobilanwendung in der App-Konsole in Experience Manager verwendet.
 
 Zusätzliche (und optionale) Registerkarten sind vorhanden, um den Cloud-Dienst zu erstellen und das Adobe Mobile Services SDK-Plug-In in Ihre App zu integrieren.
 
 * Erstellen: Klicken Sie auf Konfigurationen verwalten und richten Sie hier Ihren Build-Dienst build.phonegap.com ein. Dann können Sie aus der Dropdownliste den neu erstellten PhoneGap Build Cloud-Dienst auswählen.
-* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie Ihren [Adobe Mobile Services SDK](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) -Cloud-Dienst ein. Anschließend können Sie aus der Dropdownliste den neu erstellten Mobile Service auswählen, der in Ihre mobile App integriert werden soll.
+* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie Ihren [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) -Cloud-Dienst ein. Anschließend können Sie aus der Dropdownliste den neu erstellten Mobile Service auswählen, der in Ihre mobile App integriert werden soll.
 
 >[!NOTE]
 >
@@ -92,11 +95,11 @@ Im folgenden Verfahren wird die Touch-Benutzeroberfläche zum Erstellen einer mo
    ![](do-not-localize/chlimage_1-7.png)
 
 1. (Optional) Geben Sie auf der Registerkarte &quot;Erweitert&quot;eine Beschreibung für die Anwendung ein und ändern Sie bei Bedarf die Server-URL.
-1. (Optional) Wenn Sie die Anwendung mit PhoneGap Build kompilieren, wählen Sie auf der Registerkarte &quot;Erstellen&quot;die gewünschte Konfiguration aus.
+1. (Optional) Wenn Sie die Anwendung mit PhoneGap Build kompilieren, wählen Sie auf der Registerkarte &quot;Erstellen&quot;die zu verwendende Konfiguration aus.
 
    Um eine PhoneGap-Buildkonfiguration zu erstellen, klicken Sie auf Konfigurationen verwalten.
 
-1. (Optional) Wenn Sie SiteCatalyst zur Verfolgung der Anwendungsaktivität verwenden, wählen Sie auf der Registerkarte &quot;Analytics&quot;die zu verwendende Konfiguration aus.
+1. (Optional) Wenn Sie SiteCatalyst zur Verfolgung der Aktivität von Anwendungen verwenden, wählen Sie auf der Registerkarte &quot;Analytics&quot;die zu verwendende Konfiguration aus.
 
    Um eine Mobile App-Konfiguration zu erstellen, klicken Sie auf Konfigurationen verwalten.
 
@@ -110,7 +113,7 @@ Nachdem Sie eine Mobilanwendung erstellt haben, können Sie die Eigenschaften ä
 #### Titel, Beschreibung und Symbol ändern {#change-the-title-description-and-icon}
 
 1. Klicken Sie in der Leiste auf oder tippen Sie auf Apps.
-1. Wählen Sie die zu konfigurierende Anwendung aus und klicken Sie auf das Symbol Seiteneigenschaften anzeigen.
+1. Wählen Sie die zu konfigurierende Ansicht aus und klicken Sie auf das Symbol Seiteneigenschaften.
 
    ![](do-not-localize/chlimage_1-8.png)
 
@@ -125,7 +128,7 @@ Nachdem Sie eine Mobilanwendung erstellt haben, können Sie die Eigenschaften ä
 #### Konfigurieren einer Sprachvariation der Anwendung {#configure-a-language-variation-of-the-application}
 
 1. Klicken Sie in der Leiste auf oder tippen Sie auf Apps.
-1. Klicken Sie auf , um einen Drilldown für die mobile Anwendung durchzuführen, die Sie in der Admin-Konsole von Apps bearbeiten möchten. Wählen Sie die zu konfigurierende Sprachversion der Anwendung aus und klicken Sie auf das Symbol Anwendungseigenschaften anzeigen.
+1. Klicken Sie auf , um einen Drilldown für die mobile Anwendung durchzuführen, die Sie in der Admin-Konsole von Apps bearbeiten möchten. Wählen Sie die zu konfigurierende Sprachversion der Ansicht aus und klicken Sie auf das Symbol Anwendungseigenschaften.
 
    ![](do-not-localize/chlimage_1-11.png)
 
@@ -133,7 +136,7 @@ Nachdem Sie eine Mobilanwendung erstellt haben, können Sie die Eigenschaften ä
 
    ![](do-not-localize/chlimage_1-12.png)
 
-1. Konfigurieren Sie die Eigenschaften auf den Registerkarten &quot;Einfach&quot;, &quot;Erweitert&quot;, &quot;Erstellen&quot;und &quot;Analyse&quot;und klicken Sie dann auf das Symbol &quot;Fertig&quot;.
+1. Konfigurieren Sie die Eigenschaften auf den Registerkarten &quot;Einfach&quot;, &quot;Erweitert&quot;, &quot;Erstellen&quot;und &quot;Analytics&quot;und klicken Sie dann auf das Symbol &quot;Fertig&quot;.
 
    ![](do-not-localize/chlimage_1-13.png)
 
@@ -143,7 +146,7 @@ Nachdem Sie die Mobilanwendung erstellt haben, fügen Sie Inhalte hinzu, die als
 
 1. Klicken Sie in der Leiste auf oder tippen Sie auf Apps.
 1. Klicken Sie auf oder tippen Sie auf die Anwendung und klicken Sie dann auf oder tippen Sie auf Englisch.
-1. Bearbeiten Sie die Homepage oder fügen Sie nach Bedarf untergeordnete Seiten hinzu.
+1. Bearbeiten Sie die Startseite oder fügen Sie nach Bedarf untergeordnete Seiten hinzu.
 
 ### Verschieben von Inhalten in mobile Anwendungen {#moving-content-to-mobile-applications}
 
@@ -186,7 +189,7 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 1. Klicken Sie oben auf die Schaltfläche + Erstellen und wählen Sie App erstellen.
-1. Wählen Sie nach dem Anzeigen der Liste mit den App-Vorlagen eine der folgenden Optionen aus:
+1. Nachdem Sie die Liste der App-Vorlagen angezeigt haben, wählen Sie eine aus:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -194,11 +197,11 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 1. Geben Sie eine App-ID und einen Titel ein, Sie sollten jedoch auch einen Namen und eine Beschreibung angeben.
 
    1. Darüber hinaus können Sie ein PNG-Format (unterstütztes PhoneGap-Symbolformat) als Symbol bereitstellen, indem Sie in AEM-Assets navigieren.
-   1. Denken Sie daran, dass Sie alle diese Felder bearbeiten können, nachdem die App im Bereich &quot;App verwalten&quot;erstellt wurde. Mit Ausnahme der App-ID können Sie die App-ID nach dem Festlegen nicht mehr ändern.
+   1. Denken Sie daran, dass Sie alle diese Felder bearbeiten können, nachdem die App in der Kachel App verwalten erstellt wurde. Mit Ausnahme der App-ID können Sie die App-ID nach dem Festlegen nicht mehr ändern.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Klicken Sie auf die Schaltfläche &quot;Erstellen&quot;. Es stehen Ihnen zwei Optionen zur Verfügung: &quot;Fertig&quot;(Zurück zur App-Katalogansicht) oder &quot;App verwalten&quot;(Öffnen des App-Dashboards).
+1. Klicken Sie auf die Schaltfläche &quot;Erstellen&quot;. Es stehen Ihnen zwei Optionen zur Verfügung: &quot;Fertig&quot;(Zurück zur App-Ansicht) oder &quot;App verwalten&quot;(Öffnen des App-Dashboards).
 1. Nach der Erstellung sollte die neue App im App-Katalog aufgeführt werden:
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
@@ -209,18 +212,18 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 >
 >Wenn Sie das Geometrixx Outdoors-Referenz-App-Paket aus AEM deinstallieren und eine App basierend auf der Vorlage erstellt haben, funktioniert diese App nicht mehr. Die Geometrixx Outdoors-App kann entfernt werden. Die App-Vorlage muss jedoch erhalten bleiben, wenn sie von anderen mobilen Anwendungen verwendet wird.
 
-## Beispielanwendung Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
+## Die Beispielanwendung Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
 
 Die Geometrixx Outdoors-App ist eine Beispielanwendung für PhoneGap, die die Funktionen des standardmäßigen PhoneGap-Anwendungsblueprints und der mobilen Musterkomponenten demonstriert.
 
-Um die Anwendung zu öffnen, klicken Sie in der Leiste auf Mobile Applications und wählen Sie dann Geometrixx Outdoors App.
+Um die Anwendung zu öffnen, klicken Sie in der Leiste auf Mobile Applications und wählen Sie dann Geometrixx Outdoors-App.
 
 ### Allgemeine Seitenfunktionen - Geometrixx Mobile-App {#common-page-features-geometrixx-mobile-app}
 
 Jede Seite der mobilen App umfasst die folgenden Funktionen:
 
-* Eine Zurück-Schaltfläche zum Zurückkehren zur übergeordneten Seite. Beachten Sie, dass die Schaltfläche &quot;Zurück&quot;nicht auf der Homepage angezeigt wird.
-* Eine erweiterte Leiste mit einem Menü von Befehlen und Links:
+* Eine Zurück-Schaltfläche zum Zurückkehren zur übergeordneten Seite. Beachten Sie, dass die Schaltfläche &quot;Zurück&quot;nicht auf der Startseite angezeigt wird.
+* Eine erweiterte Leiste, die ein Menü mit Befehlen und Links Angebot:
 
    * Öffnen Sie die Seite &quot;Speicherorte&quot;.
    * Öffnen Sie den Warenkorb.
@@ -229,23 +232,23 @@ Jede Seite der mobilen App umfasst die folgenden Funktionen:
 
 * Das Absatzsystem zum Hinzufügen von Komponenten und Erstellen von Inhalten.
 
-### Homepage - Geometrixx Mobile App {#the-home-page-geometrixx-mobile-app}
+### Startseite - Geometrixx-Mobil-App {#the-home-page-geometrixx-mobile-app}
 
-Der Inhalt der Homepage umfasst die folgenden Navigationstools:
+Der Inhalt der Startseite besteht aus den folgenden Navigationswerkzeugen:
 
-* Eine Menülistenkomponente, die Links zu den untergeordneten Seiten &quot;Gear&quot;, &quot;Reviews&quot;, &quot;News&quot;und &quot;Info&quot;enthält.
+* Eine Menükomponente, die Links zu den Unterseiten &quot;Gear&quot;, &quot;Reviews&quot;, &quot;News&quot;und &quot;Über uns&quot;enthält.
 * Eine Swipe Carousel-Komponente, die die untergeordneten Seiten darstellt.
 
 ### Zahnradseite - Geometrixx-Mobil-App {#the-gear-page-geometrixx-mobile-app}
 
-Die Seite &quot;Gear&quot;bietet Benutzern Zugriff auf Produktseiten. Eine Menülistenkomponente bietet Zugriff auf die untergeordneten Seiten der Zahnradseite. Die untergeordneten Seiten sind Produktkategorien, die die Website enthält.
+Die Seite &quot;Gear&quot;bietet Benutzern Zugriff auf Produktseiten. Eine Komponente der Menu-Liste bietet Zugriff auf die untergeordneten Seiten der Zahnradseite. Die untergeordneten Seiten sind Kategorien von Produkten, die die Website enthält.
 
 * Saison
 * Bekleidung
 * Geschlecht
 * Aktivität
 
-Jede Kategorieseite verwendet dieselbe Inhaltsstruktur wie die Seite &quot;Gear&quot;. Das Karussell bietet Zugriff auf untergeordnete Seiten, die Unterkategorien von Produkten sind. Die Seiten der Unterkategorie enthalten Produktauflistungen, die Links zu Produktseiten enthalten.
+Jede Seite der Kategorie verwendet dieselbe Inhaltsstruktur wie die Seite &quot;Gear&quot;. Das Karussell bietet Zugriff auf untergeordnete Seiten, die Unterkategorien von Produkten sind. Die Seiten der Unterkategorie enthalten Produktauflistungen, die Links zu Produktseiten enthalten.
 
 ### Produktseite - Geometrixx Mobile-App {#the-products-page-geometrixx-mobile-app}
 
@@ -275,11 +278,11 @@ Wenn Sie die Anwendung verwenden, ist die Info-Seite im Karussell auf der englis
 
 Die Seite &quot;Speicherorte&quot;enthält eine Komponente &quot;Speicherorte&quot;.
 
-Bei Verwendung der Anwendung ist die Seite &quot;Speicherorte&quot;in der Menüliste auf der englischen Seite verfügbar.
+Wenn Sie die Anwendung verwenden, ist die Seite &quot;Speicherorte&quot;in der Menü-Liste auf der englischen Seite verfügbar.
 
 ## Beispiele für mobile Komponenten {#sample-mobile-components}
 
-Beim Authoring der Seiten einer mobilen Anwendung stehen in Sidekick sofort mehrere Komponenten zur Verfügung. Die Komponenten gehören zur PhoneGap-Komponentengruppe.
+Beim Authoring der Seiten einer mobilen Anwendung stehen in Sidekick sofort mehrere Komponenten zur Verfügung. Die Komponenten gehören zur Gruppe der PhoneGap-Komponenten.
 
 ### Swipe-Karussell {#swipe-carousel}
 
@@ -294,31 +297,31 @@ Beachten Sie, dass Bilder im Karussell für Seiten angezeigt werden, die auf ein
 Verhalten des Karussels konfigurieren:
 
 * Abspielgeschwindigkeit: Die Zeit in Millisekunden, die jedes Bild angezeigt wird, bevor das nächste Bild angezeigt wird.
-* Übergangszeit: Die Dauer der Animation für Bildübergänge in Millisekunden.
+* Transition: Die Dauer der Animation in Millisekunden für Transitionen.
 * Steuerelementstil: Die Art der Steuerelemente, die zum Wechseln zwischen Bildern bereitgestellt werden.
 
-**Registerkarte &quot;Listeneigenschaften&quot;**
+**Registerkarte &quot;Eigenschaften&quot;**
 
-Geben Sie an, wie die Seitenliste generiert wird:
+Geben Sie an, wie die Liste der Seite generiert wird:
 
-* Erstellen einer Liste mit: Die Methode zur Angabe der im Karussell einzuschließenden Seiten. Siehe Erstellen der Seitenliste.
-* Reihenfolge nach: Wählen Sie eine Seiteneigenschaft zum Sortieren der Seitenliste aus. Wählen Sie beispielsweise &quot;jcr:title&quot;aus, um die Seiten alphabetisch nach Titel zu sortieren.
-* Maximal: Die maximale Anzahl der einzuschließenden Seiten. Diese Eigenschaft eignet sich für suchbasierte Methoden zum Erstellen der Seitenliste.
+* Liste erstellen mit: Die Methode zur Angabe der Seiten, die in das Karussell aufgenommen werden sollen. Siehe Erstellen der Liste &quot;Seite&quot;.
+* Reihenfolge nach: Wählen Sie eine Seiteneigenschaft zum Sortieren der Liste aus. Wählen Sie beispielsweise &quot;jcr:title&quot;aus, um die Seiten alphabetisch nach Titel zu sortieren.
+* Maximal: Die maximale Anzahl der einzuschließenden Seiten. Diese Eigenschaft eignet sich für suchbasierte Methoden zum Erstellen der Liste der Seite.
 
-#### Erstellen der Seitenliste {#building-the-page-list}
+#### Erstellen der Liste der Seite {#building-the-page-list}
 
 Die Komponente &quot;Karussell blättern&quot;stellt die folgenden Werte für die Eigenschaft &quot;Liste erstellen mit&quot;bereit. Das Dialogfeld &quot;Bearbeiten&quot;ändert sich je nach ausgewähltem Wert:
 
 **Untergeordnete Seiten**
 
-Die Komponente listet alle untergeordneten Seiten einer bestimmten Seite auf. Nachdem Sie diesen Wert ausgewählt haben, wählen Sie die Seite auf der Registerkarte Untergeordnete Seiten aus oder geben Sie keinen Wert an, um die untergeordneten Elemente der aktuellen Seite aufzulisten.
+Die Komponente Liste alle untergeordneten Seiten einer bestimmten Seite. Wählen Sie nach Auswahl dieses Wertes die Seite auf der Registerkarte &quot;Untergeordnete Seiten&quot;aus oder geben Sie keinen Wert für die Liste der untergeordneten Elemente der aktuellen Seite an.
 
 **Liste fester Werte**
 
-Geben Sie eine Liste der Seiten an, die einbezogen werden sollen. Nachdem Sie diesen Wert ausgewählt haben, konfigurieren Sie die Liste auf der Registerkarte &quot;Feste Liste&quot;, die angezeigt wird, wenn Sie &quot;Feste Liste&quot;auswählen:
+Geben Sie eine Liste der Einschlussseiten an. Nachdem Sie diesen Wert ausgewählt haben, konfigurieren Sie die Liste auf der Registerkarte &quot;Feste Liste&quot;, die angezeigt wird, wenn Sie &quot;Feste Liste&quot;auswählen:
 
-* Um eine Seite hinzuzufügen, klicken Sie auf Element hinzufügen und suchen Sie dann nach der Seite.
-* Verwenden Sie die Pfeilsymbole nach oben und unten, um die Seite in der Liste zu verschieben.
+* Um eine Seite hinzuzufügen, klicken Sie auf Hinzufügen Element und suchen Sie dann nach der Seite.
+* Verwenden Sie die Pfeilsymbole nach oben und unten, um die Liste zu verschieben.
 * Klicken Sie auf die Schaltfläche &quot;Entfernen&quot;, um eine Seite aus der Liste zu entfernen.
 
 Die Eigenschaft &quot;Reihenfolge nach&quot;hat keine Auswirkungen auf die Reihenfolge der festen Listen.
@@ -327,8 +330,8 @@ Die Eigenschaft &quot;Reihenfolge nach&quot;hat keine Auswirkungen auf die Reihe
 
 Füllen Sie die Liste mit den Ergebnissen einer Suchbegriffsuche. Die Suche wird in den untergeordneten Elementen einer Seite durchgeführt, die Sie angeben:
 
-1. Um die Stammseite der Suche anzugeben, wählen Sie den Seitenpfad mit der Eigenschaft &quot;Start in&quot;aus. Geben Sie keinen Pfad für die Suche unterhalb der aktuellen Seite an.
-1. Geben Sie in der Eigenschaft Suchabfrage die Suchbegriffe ein.
+1. Um die Stammseite der Suche festzulegen, wählen Sie den Seitenpfad mit der Eigenschaft &quot;Beginn in&quot;aus. Geben Sie keinen Pfad für die Suche unterhalb der aktuellen Seite an.
+1. Geben Sie in der Eigenschaft Abfrage suchen die Suchbegriffe ein.
 
 **Erweiterte Suche**
 
@@ -336,18 +339,18 @@ Füllen Sie die Liste mit einer [Querybuilder](/help/sites-developing/querybuild
 
 ### Bild {#image}
 
-Fügen Sie dem Anwendungsinhalt ein Bild hinzu.
+Hinzufügen Sie ein Bild in Ihren Anwendungsinhalt.
 
 ### Text {#text}
 
-Fügen Sie Rich-Text zu Ihrem Anwendungsinhalt hinzu.
+Hinzufügen Rich-Text in Ihren Anwendungsinhalt.
 
 ### Filialen {#store-locations}
 
 Die Komponente &quot;Speicherorte&quot;bietet Benutzern Werkzeuge zum Suchen von Geschäftsfeldern:
 
 * Suchen
-* Listen der Speicherorte, die in der Nähe oder in der Entfernung zu den GPS-Koordinaten des Geräts liegen.
+* Listen von Positionen, die in der Nähe oder in der Entfernung zu den GPS-Koordinaten des Geräts liegen.
 
 Die Komponente erfordert, dass das Repository Informationen zum Speicherort für jeden Store enthält. Beispielspeicherorte werden unter dem Knoten /etc/commerce/locations/adobe installiert. ![chlimage_1-152](assets/chlimage_1-152.png)
 
