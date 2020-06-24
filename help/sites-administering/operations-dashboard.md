@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3dd3f700cd473570889f8d4ced09281a577e2ef8
+source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+workflow-type: tm+mt
+source-wordcount: '6229'
+ht-degree: 79%
 
 ---
 
@@ -112,6 +115,7 @@ Zum Erstellen einer individuellen Konsistenzprüfung sind zwei Schritte nötig: 
 
       * **Typ:** `String`
       * **Wert:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+
    >[!NOTE]
    >
    >The resource path above is created as follows: if the mbean name of your Health Check is &quot;test&quot;, add &quot;test&quot; to the end of the path `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
@@ -150,6 +154,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
    * **Tags (hc.tags):** Die Tags für diese Konsistenzprüfung. Wenn diese Verbund-Konsistenzprüfung Teil einer weiteren Verbund-Konsistenzprüfung sein soll (z. B. in einer Hierarchie an Konsistenzprüfungen), fügen Sie die Tags hinzu, zu denen diese Prüfung gehört.
    * **MBean-Name (hc.mbean.name):** Der Name des MBeans, das an das JMX-MBean dieser Verbund-Konsistenzprüfung übergeben wird.
    * **Filter-Tags (filter.tags):** Diese Eigenschaft ist speziell für Verbund-Konsistenzprüfung. Dies sind die Tags, die die Verbund-Zustandsprüfung aggregieren soll. Die Verbund-Konsistenzprüfung aggregiert unter ihrer Gruppe alle Konsistenzprüfungen mit Tags, die einem der Filter-Tags dieser Verbund-Konsistenzprüfung entsprechen. Beispielsweise aggregiert eine Verbund-Konsistenzprüfung mit den Filter-Tags **test** und **check** alle individuellen und Verbund-Konsistenzprüfungen, die einen der Tags **test** und **check** in ihrer tags-Eigenschaft aufweisen ( `hc.tags`).
+
    >[!NOTE]
    >
    >Ein neues JMX-MBean wird für jede neue Konfiguration des Apache Sling Composite Health Checks erstellt.**
@@ -161,6 +166,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
    * **Name:** `Composite Health Check`
 
       * **Typ:** `nt:unstructured`
+
    Mit den folgenden Eigenschaften:
 
    * **Name:** `sling:resourceType`
@@ -171,6 +177,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
 
       * **Typ:** `String`
       * **Wert:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+
    >[!NOTE]
    >
    >Wenn Sie individuelle Konsistenzprüfungen erstellen, die logisch zu einer Verbund-Konsistenzprüfung gehören, die bereits standardmäßig im Dashboard vorhanden ist, werden sie automatisch erfasst und unter der entsprechenden Verbund-Konsistenzprüfung gruppiert. Daher müssen Sie keinen neuen Konfigurationsknoten für diese Prüfungen erstellen.
@@ -240,7 +247,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
    <td>Systemwartung</td>
    <td><p>Die Systemwartung ist eine Verbund-Zustandsprüfung, die den Status „OK“ zurückgibt, wenn alle Wartungsaufgaben wie konfiguriert ausgeführt werden. Bedenken Sie Folgendes:</p>
     <ul>
-     <li>jeder Instandhaltungsaufgabe eine damit verbundene Gesundheitskontrolle</li>
+     <li>jeder Aufgabe zur Instandhaltung eine damit verbundene Gesundheitskontrolle</li>
      <li>Wenn eine Aufgabe nicht zu einem Wartungsfenster hinzugefügt wird, gibt ihre Konsistenzprüfung „Kritisch“ zurück.</li>
      <li>Sie müssen die Wartungsaufgaben „Auditprotokoll“ und „Workflow-Bereinigung“ konfigurieren oder aus den Wartungsfenstern entfernen. Wenn diese Aufgaben nicht konfiguriert sind, schlagen sie beim Ausführungsversuch fehl, sodass die Systemwartungsprüfung den Status „Kritisch“ zurückgibt.</li>
      <li><strong>In AEM 6.4</strong> gibt es auch eine Prüfung für die Aufgabe <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene Binaries Maintenance</a>.</li>
@@ -336,6 +343,7 @@ Das Konsistenzprüfungs-Dashboard ist über die Granite JMX-MBeans mit Nagios in
    1. Klicken Sie in der linken Spur unter **Erweiterte Konfiguration** auf **Core-Konfigurationsmanager**.
    1. Press the **Hosts** link under the **Monitoring** section.
    1. Fügen Sie die Hostdefinition hinzu:
+
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    Nachfolgend finden Sie ein Beispiel einer Host-Konfigurationsdatei unter Verwendung von Nagios Core:
@@ -431,7 +439,7 @@ Beispiele:
 
 >[!NOTE]
 >
->**Mit AEM 6.4** werden Wartungsaufgaben auf INFO-Ebene im Format &quot;Rich-Information&quot;abgemeldet. Dieser Ansatz ermöglicht bessere Einblicke in den Status der Wartungsaufgaben.
+>**Mit AEM 6.4** werden Aufgaben für die Wartung auf INFO-Ebene im Format &quot;Rich Information&quot;abgemeldet. Dieser Ansatz ermöglicht bessere Einblicke in den Status der Wartungsaufgaben.
 >
 >Wenn Sie Drittanbietertools (wie Splunk) verwenden, um die Wartungsaufgaben-Aktivität zu überwachen und darauf zu reagieren, können Sie die folgenden Protokollanweisungen nutzen:
 
@@ -513,7 +521,7 @@ It can also be accessed directly at this URL: `https://serveraddress:port/libs/g
 
 ### Status-ZIP herunterladen {#download-status-zip}
 
-Dies löst den Download einer ZIP-Datei aus, die nützliche Informationen zum Systemstatus und zur Systemkonfiguration enthält. Das Archiv enthält Instanzkonfigurationen, eine Liste von Bundles, OSGI, Sling-Metriken und Statistiken, was zu einer großen Datei führen kann. You can reduce the impact of large status files by using the **Download Status ZIP** window. **Das Fenster kann von folgenden Adressen aufgerufen werden: AEM > Tools > Vorgänge > Diagnose > ZIP-Datei mit dem Download-Status.**
+Dies löst den Download einer ZIP-Datei aus, die nützliche Informationen zum Systemstatus und zur Systemkonfiguration enthält. Das Archiv enthält Instanzkonfigurationen, eine Liste von Bundles, OSGI, Sling-Metriken und Statistiken, was zu einer großen Datei führen kann. You can reduce the impact of large status files by using the **Download Status ZIP** window. The window can be accessed from:**AEM > Tools > Operations > Diagnosis > Download Status ZIP.**
 
 In diesem Fenster können Sie auswählen, was exportiert werden soll (Protokolldateien oder andere Thread-Sicherheitskopien) und wie viele Tage von Protokollen im Download im Verhältnis zum aktuellen Datum enthalten sein sollen.
 
@@ -646,13 +654,13 @@ Sie können benutzerdefinierte Wartungsaufgaben als OSGi-Dienste implementieren.
   </tr>
   <tr>
    <td>granite.maintenance.title</td>
-   <td>Ein Titel für diese Aufgabe wird angezeigt</td>
-   <td>Meine besondere Wartungsaufgabe</td>
+   <td>Ein Titel, der für diese Aufgabe angezeigt wird</td>
+   <td>Meine besondere Aufgabe für die Wartung</td>
    <td>Erforderlich</td>
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Dies ist ein einzigartiges Thema der Wartungsaufgabe.<br /> Die Apache Sling-Auftragsverarbeitung startet einen Auftrag mit genau diesem Thema, um die Wartungsaufgabe auszuführen, und wenn die Aufgabe für dieses Thema registriert wird, wird sie ausgeführt.<br /> Das Thema muss mit <i>com/adobe/granite/maintenance/job/ beginnen</i></td>
+   <td>Dies ist ein einzigartiges Thema der Wartungs-Aufgabe.<br /> Die Apache Sling-Auftragsverarbeitung startet einen Auftrag mit genau diesem Thema, um die Wartungsaufgabe auszuführen, und wenn die Aufgabe für dieses Thema registriert wird, wird sie ausgeführt.<br /> Das Thema muss mit <i>com/adobe/granite/maintenance/job/ Beginn werden</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Erforderlich</td>
   </tr>
@@ -677,7 +685,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 [experiencemanager-java-maintenanceTask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
-Nach der Bereitstellung des Dienstes wird er der Benutzeroberfläche des Operations Dashboard angezeigt. Sie können ihn einem der verfügbaren Wartungspläne hinzufügen:
+Nach der Bereitstellung des Dienstes wird er der Benutzeroberfläche des Operations-Dashboards angezeigt. Sie können ihn einem der verfügbaren Wartungspläne hinzufügen:
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -695,7 +703,7 @@ The **System Overview Dashboard** displays a high-level overview of the configur
 
 To access the System Overview Dashboard, navigate to **Tools > Operations > System Overview**.
 
-![system_overview_dashboard](assets/system_overview_dashboard.png)
+![system_overview_Dashboard](assets/system_overview_dashboard.png)
 
 ### Erläuterung zum Systemübersicht-Dashboard {#system-overview-dashboard-explained}
 
@@ -827,7 +835,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
    <td>Seite „Replikation“</td>
   </tr>
   <tr>
-   <td>Workflows</td>
+   <td>Workflows  </td>
    <td>
     <ul>
      <li>Workflow-Aufträge:
@@ -837,7 +845,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
       </ul> </li>
     </ul>
     <ul>
-     <li>Workflow-Zählungen - Anzahl der Workflows in einem gegebenen Status (sofern vorhanden):
+     <li>Workflow-Zählungen - Anzahl der Workflows in einem bestimmten Status (sofern vorhanden):
       <ul>
        <li>wird ausgeführt</li>
        <li>fehlgeschlagen</li>
