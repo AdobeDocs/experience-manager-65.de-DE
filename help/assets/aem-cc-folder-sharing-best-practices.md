@@ -1,21 +1,21 @@
 ---
-title: Best Practices für den Austausch von Adobe Experience Manager in Adobe Creative Cloud-Ordner
-description: Konfigurieren Sie Adobe Experience Manager so, dass Benutzer in Experience Manager Assets Ordner mit Benutzern der Adobe Creative Cloud (CC) austauschen können.
+title: Best Practices für die Freigabe von Adobe Experience Managern in Adobe Creative Cloud
+description: Konfigurieren Sie Adobe Experience Manager so, dass Benutzer in Experience Manager Assets Ordner mit Benutzern von Adobe Creative Cloud (CC) austauschen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 35%
+source-wordcount: '1079'
+ht-degree: 34%
 
 ---
 
 
-# Freigabe von Adobe Experience Manager für Adobe Creative Cloud-Ordner {#aem-to-creative-cloud-folder-sharing-best-practices}
+# Freigeben von Adobe Experience Managern für Adobe Creative Cloud-Ordner {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
->Die Funktion &quot;Experience Manager für die Freigabe von Ordnern in Creative Cloud&quot;wird nicht mehr unterstützt. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
+>Der Experience Manager zur Funktion zur Freigabe von Ordnern in Creative Cloud ist veraltet. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager kann so konfiguriert werden, dass Benutzer in Assets Ordner für die Benutzer von Adobe Creative Cloud-Apps freigeben können, sodass sie als freigegebene Ordner im Adobe Creative Cloud Assets-Dienst verfügbar sind. Diese Funktion kann verwendet werden, um Dateien zwischen Kreativteams und  Assets-Benutzern auszutauschen, insbesondere wenn die kreativen Benutzer keinen Zugriff auf die  Assets-Instanz (d. h. keinen Zugriff auf das Unternehmensnetzwerk) haben.
 
@@ -30,7 +30,7 @@ Diese Art der Integration kann in beiden Fällen verwendet werden, insbesondere 
 
 ## Überblick {#overview}
 
-Die Freigabe von Ordnern in Experience Manager für Creative Cloud beruht auf der serverseitigen Freigabe von Ordnern und Dateien zwischen Assets und Creative Cloud-Konten. Kreativschaffende, die die Creative Cloud-Desktop-Applikation auf ihren Desktops verwenden, können die freigegebenen Ordner mithilfe der neuen CreativeSync-Technologie von Adobe direkt auf ihren Datenträgern zur Verfügung stellen.
+Die Freigabe von Experience Managern für Creative Cloud-Ordner erfolgt über die serverseitige Freigabe von Ordnern und Dateien zwischen Assets und Creative Cloud-Konten. Kreativschaffende, die die Creative Cloud-Desktop-Applikation auf ihren Desktops verwenden, können die freigegebenen Ordner mithilfe der neuen CreativeSync-Technologie von Adobe direkt auf ihren Datenträgern zur Verfügung stellen.
 
 Das folgende Diagramm bietet einen Überblick über die Integration.
 
@@ -39,7 +39,7 @@ Das folgende Diagramm bietet einen Überblick über die Integration.
 Die Integration umfasst folgende Elemente:
 
 * **Experience Manager Assets-Server** , der im Unternehmensnetzwerk bereitgestellt wird (verwaltete Dienste oder lokale Dienste): Die Freigabe von Ordnern wird hier initiiert.
-* **Adobe Marketing Cloud Assets-Hauptdienst**: fungiert als Vermittler zwischen Experience Manager und Creative Cloud-Datenspeicherung-Diensten. Die Verwaltung des Unternehmens, das die Integration nutzt, muss auf einem Vertrauensverhältnis zwischen dem Marketing Cloud-Unternehmen und der Assets-Instanz basieren. Um für zusätzliche Sicherheit zu sorgen, wird [eine Liste von zugelassenen Creative Cloud-Mitwirkenden definiert](https://marketing.adobe.com/resources/help/de_DE/mcloud/t_admin_add_cc_user.html), mit denen  Assets-Benutzer freigegebene Ordner gemeinsam nutzen können.
+* **Hauptdienst**&quot;Adobe Marketing Cloud Assets&quot;: fungiert als Vermittler zwischen Experience Manager- und Creative Cloud-Datenspeicherung-Diensten. Die Verwaltung des Unternehmens, das die Integration nutzt, muss auf einem Vertrauensverhältnis zwischen dem Marketing Cloud-Unternehmen und der Assets-Instanz basieren. Um für zusätzliche Sicherheit zu sorgen, wird [eine Liste von zugelassenen Creative Cloud-Mitwirkenden definiert](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), mit denen  Assets-Benutzer freigegebene Ordner gemeinsam nutzen können.
 
 * **Creative Cloud Assets-Webdienste** (Web-Benutzeroberfläche &quot;Datenspeicherung&quot;und &quot;Creative Cloud-Dateien&quot;): Hier können bestimmte Creative Cloud-App-Benutzer, für die ein Asset-Ordner freigegeben wurde, die Einladung annehmen und den Ordner in ihrer Creative Cloud-Konto-Datenspeicherung anzeigen.
 * **Creative Cloud-Desktop-App**: (Optional) Ermöglicht den direkten Zugriff auf freigegebene Ordner/Dateien vom Desktop des kreativen Benutzers über die Synchronisierung mit der Creative Cloud Assets-Datenspeicherung.
@@ -49,7 +49,7 @@ Die Integration umfasst folgende Elemente:
 * **Einseitige Verbreitung von Änderungen:** Dateiänderungen werden nur in eine Richtung übertragen - vom System (Experience Manager oder Creative Cloud Assets), in dem das Asset ursprünglich erstellt (hochgeladen) wurde. Die Integration bietet keine vollautomatische Zweiwegsynchronisierung zwischen beiden Systemen.
 * **Versionierung:**
 
-   * Experience Manager erstellt Versionen eines Assets nur bei Aktualisierungen, wenn die Datei aus Experience Manager stammt und dort aktualisiert wird.
+   * Experience Manager erstellt Versionen eines Assets nur bei Updates, wenn die Datei aus Experience Manager stammt und dort aktualisiert wird.
    * Creative Cloud Assets bietet eine eigene [Versionierungsfunktion](https://helpx.adobe.com/de/creative-cloud/help/versioning-faq.html), die für laufende Aktualisierungen vorgesehen ist (Aktualisierungen werden bis zu zehn Tage gespeichert).
 
 * **Platzbeschränkungen:** Dateigrößen und Dateimengen, die ausgetauscht werden, sind durch das spezifische [Creative Cloud-Asset-Kontingent](https://helpx.adobe.com/de/creative-cloud/kb/file-storage-quota.html) für kreative Benutzer (je nach Abonnement) und eine Beschränkung der Dateigröße auf 5 GB beschränkt. Darüber hinaus wird der Speicherplatz durch das Assets-Kontingent beschränkt, die das Unternehmen im zentralen Assets-Dienst von Adobe Marketing Cloud festgelegt hat.
@@ -60,9 +60,9 @@ Die Integration umfasst folgende Elemente:
 
 ## Best Practices {#best-practices}
 
-Bewährte Verfahren zur Nutzung von Experience Manager für die Freigabe von Creative Cloud-Ordnern:
+Die bewährten Verfahren zur Nutzung des Experience Managers für die Freigabe von Creative Cloud-Ordnern sind unter anderem:
 
-* **Volumenaspekte:** Mit Experience Manager/Creative Cloud-Ordnerfreigabe sollte eine kleinere Anzahl von Dateien freigegeben werden, z. B. für eine bestimmte Kampagne oder Aktivität. Verwenden Sie andere Verteilungsmethoden (z. B. Asset Brand Portal) oder die Experience Manager-Desktop-App, um größere Assets freizugeben, wie alle genehmigten Assets im Unternehmen.
+* **Volumenaspekte:** Experience Manager/Creative Cloud-Ordnerfreigabe sollte verwendet werden, um eine kleinere Anzahl von Dateien freizugeben, z. B. für eine bestimmte Kampagne oder Aktivität. Verwenden Sie andere Verteilungsmethoden (z. B. Asset Brand Portal) oder die Desktop-App Experience Manager, um größere Assets freizugeben, wie alle genehmigten Assets im Unternehmen.
 
 * **Vermeiden Sie die Freigabe von tiefen Hierarchien:** Die Freigabe funktioniert rekursiv und lässt keine selektive Freigabe zu. Normalerweise sollten nur Ordner ohne Unterordner oder mit einer sehr flachen Hierarchie, wie z. B. 1 Unterordnerebene, für die Freigabe in Betracht gezogen werden.
 * **Separate Ordner für die einmalige Freigabe:** Für die Freigabe von endgültigen Assets aus Assets in Creative Cloud-Dateien und für die Freigabe von kreativen Assets aus Creative Cloud-Dateien in Assets sollten separate Ordner verwendet werden. Zusammen mit einer guten Benennungsregel für diese Ordner wird eine verständlichere Umgebung für Assets und Creative Cloud-Benutzer erstellt.
