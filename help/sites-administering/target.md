@@ -10,14 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 95%
 
 ---
 
 
 # Integrieren mit Adobe Target{#integrating-with-adobe-target}
 
-As part of the Adobe Marketing Cloud, [Adobe Target](http://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) lets you increase content relevance through targeting and measuring across all channels. Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Onlineerlebnisse zu automatisieren. AEM hat den Targeting-Workflow übernommen, der in Adobe Target Standard verwendet wird. Wenn Sie Target verwenden, sind Sie mit der Targeting-Bearbeitungsumgebung in AEM vertraut.
+Als Teil von Adobe Marketing Cloud ermöglicht [Adobe Target](http://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) Ihnen die Steigerung der Inhaltsrelevanz durch Targeting und Messungen über alle Kanäle hinweg. Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Online-Erlebnisse zu automatisieren. AEM hat den Targeting-Workflow übernommen, der in Adobe Target Standard verwendet wird. Wenn Sie Target verwenden, sind Sie mit der Targeting-Bearbeitungsumgebung in AEM vertraut.
 
 Integrieren Sie Ihre AEM-Sites in Adobe Target, um den Inhalt auf Ihren Seiten zu personalisieren:
 
@@ -26,9 +29,9 @@ Integrieren Sie Ihre AEM-Sites in Adobe Target, um den Inhalt auf Ihren Seiten z
 * Übermitteln Sie Kontextdaten an Target, wenn Besucher mit Ihren Seiten interagieren.
 * Verfolgen Sie Konvertierungsraten nach.
 
-Führen Sie zur Integration in Target die folgenden Aufgaben durch:
+Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 
-1. [Führen Sie vorbereitende Aufgaben durch](/help/sites-administering/target-requirements.md): Registrieren Sie sich bei Adobe Target und konfigurieren Sie bestimmte Aspekte der AEM-Autoreninstanz. Ihr Adobe Target-Konto muss mindestens über **Genehmiger **Berechtigungen verfügen. Darüber hinaus müssen Sie die Aktivitätseinstellungen auf dem Veröffentlichungsknoten so sichern, dass sie für Benutzer nicht zugänglich sind.
+1. [Führen Sie vorbereitende Aufgaben durch](/help/sites-administering/target-requirements.md): Registrieren Sie sich bei Adobe Target und konfigurieren Sie bestimmte Aspekte der AEM-Autoreninstanz. Ihr Adobe Target-Konto muss mindestens über **Genehmiger **Level-Berechtigungen verfügen. Darüber hinaus müssen Sie die Aktivitätseinstellungen auf dem Veröffentlichungsknoten so sichern, dass sie für Benutzer nicht zugänglich sind.
 
 1. Führen Sie einen der folgenden Schritte durch:
 
@@ -39,14 +42,15 @@ Führen Sie zur Integration in Target die folgenden Aufgaben durch:
 
 >[!NOTE]
 >
->Siehe auch [Integrieren von AEM in Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Siehe auch [Integrieren von AEM in Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 >[!NOTE]
 >
 >Wenn Sie Target mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche Funktionen von AEM 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)  konfiguriert.
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+
 >
 
 
@@ -57,18 +61,18 @@ Führen Sie zur Integration in Target die folgenden Aufgaben durch:
 >
 >Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration in Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node).
 
-When the integration is complete, you can [author targeted content](/help/sites-authoring/content-targeting-touch.md) that sends visitor data to Adobe Target. Beachten Sie, dass Seitenkomponenten spezifischen Code benötigen, um das Content-Targeting zu aktivieren. (See [Developing for Targeted Content](/help/sites-developing/target.md).)
+Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen](/help/sites-authoring/content-targeting-touch.md), die Besucherdaten an Adobe Target senden. Beachten Sie, dass Seitenkomponenten einen spezifischen Code für die Aktivierung von Content-Targeting benötigen. (Siehe [Entwicklung im Hinblick auf gezielte Inhalte](/help/sites-developing/target.md)).)
 
 >[!NOTE]
 >
 >Wenn Sie eine Komponente in AEM Author anvisieren, führt die Komponente eine Reihe von serverseitigen Aufrufen an Adobe Target durch, um die Kampagne zu registrieren, Angebote einzurichten und Adobe Target-Segmente abzurufen (falls konfiguriert). Es werden keine serverseitigen Aufrufe von AEM Publish an Adobe Target vorgenommen.
 
-## Quellen für Hintergrundinformationen {#background-information-sources}
+## Quellen für Hintergrundinformationen     {#background-information-sources}
 
 Die Integration von AEM in Adobe Target erfordert Kenntnisse zu Adobe Target, AEM-Aktivitätenmanagement und AEM-Zielgruppenmanagement. Sie sollten mit den folgenden Informationen vertraut sein:
 
-* Adobe Target (See the [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/)).
-* AEM Activities console (See [Managing Activities](/help/sites-authoring/activitylib.md)).
+* Adobe Target (siehe [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/en/target/using/target-home.html)).
+* AEM-Aktivitätskonsole (siehe [Verwalten von Aktivitäten](/help/sites-authoring/activitylib.md)).
 * AEM-Zielgruppen (siehe [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
@@ -79,6 +83,7 @@ Die Integration von AEM in Adobe Target erfordert Kenntnisse zu Adobe Target, AE
 >* 2.000 Erlebnisse
 >* 50 Metriken
 >* 50 Berichtssegmente
+
 >
 
 
