@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 60%
+source-wordcount: '1716'
+ht-degree: 58%
 
 ---
 
@@ -95,7 +95,7 @@ Dies ist die einzig verfügbare Option beim Anzeigen von Bildsets, Rotationssets
 
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-**[!UICONTROL Bildmodifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Bildbefehle bereitstellen. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/de_DE/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL Bildmodifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Bildbefehle bereitstellen. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
@@ -141,7 +141,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 Wenn Sie in AEM 6.2 [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installieren, können Sie festlegen, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) wiedergegeben wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Webseite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP wiedergegeben, wenn die Webseite HTTP verwendet. In den meisten Fällen ist dieses Verhalten korrekt und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch außer Kraft setzen, indem Sie `VideoPlayer.ssl=on` am Ende des URL-Pfades oder zur Liste weiterer Viewer-Konfigurationsparameter in einem Embed-Code-Snippet hinzufügen, um eine sichere Videowiedergabe zu erzwingen.
 
-Weitere Informationen zur sicheren Videowiedergabe sowie zur Verwendung des Konfigurationsattributs `VideoPlayer.ssl` in Ihrem URL-Pfad finden Sie im Referenzhandbuch zu den Viewern unter [Sichere Videowiedergabe](https://marketing.adobe.com/resources/help/de_DE/s7/viewers_ref/c_html5_video_viewer_20_securevideodelivery.html). Abgesehen vom Video-Viewer ist sicherer Video-Versand für den Viewer für gemischte Medien und den Viewer für interaktive Videos verfügbar.
+Weitere Informationen zur sicheren Videowiedergabe sowie zur Verwendung des Konfigurationsattributs `VideoPlayer.ssl` in Ihrem URL-Pfad finden Sie im Referenzhandbuch zu den Viewern unter [Sichere Videowiedergabe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html). Abgesehen vom Video-Viewer ist sicherer Video-Versand für den Viewer für gemischte Medien und den Viewer für interaktive Videos verfügbar.
 
 ### Komponente für interaktive Medien {#interactive-media-component}
 
