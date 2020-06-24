@@ -12,7 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 79%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 >[!CAUTION]
 >
->Es wird nicht empfohlen, die im Fragmenteditor verwendeten Komponenten zu erweitern oder zu ändern, da sie noch geändert werden können.
+>Es wird nicht empfohlen, die tatsächlichen Komponenten, die im Fragmenteditor verwendet werden, zu erweitern oder zu ändern, da sie noch geändert werden können.
 
 See the [Content Fragment Management API - Client-Side](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
@@ -39,7 +42,7 @@ See the [Content Fragment Management API - Client-Side](/help/sites-developing/c
 >
 >Weitere Informationen finden Sie unter [Inhaltsfragmente Konfigurieren von Komponenten für die Wiedergabe](/help/sites-developing/content-fragments-config-components-rendering.md) .
 
-Adobe Experience Manager (AEM)-Inhaltsfragmente werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. [Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden](/help/sites-authoring/content-fragments.md). You can also use an existing content fragment asset by [dragging it from the asset browser to the page](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (as for other asset based components, such as the foundation component Image). Die vorkonfigurierte Inhaltsfragmentkomponente zeigt nur ein [Element](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) des referenzierten Inhaltsfragments an. Using the component dialog you can define the [element, variation and range of fragment paragraphs](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) that you want to display on the page.
+Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. [Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden](/help/sites-authoring/content-fragments.md). You can also use an existing content fragment asset by [dragging it from the asset browser to the page](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (as for other asset based components, such as the foundation component Image). Die vorkonfigurierte Inhaltsfragmentkomponente zeigt nur ein [Element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) des referenzierten Inhaltsfragments an. Using the component dialog you can define the [element, variation and range of fragment paragraphs](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) that you want to display on the page.
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Diese Bibliothek fügt dem Editor spezielle Funktionen für Inhaltsfragmente hin
 
 ### Übergangsinhalte  {#in-between-content}
 
-Mit der **Inhaltsfragmentkomponente** können Sie zusätzliche Komponenten zwischen den verschiedenen Absätzen des angezeigten [Elements](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) einfügen. Grundsätzlich besteht das angezeigte Element aus verschiedenen Absätzen (jeder Absatz ist durch einen Wagenrücklauf gekennzeichnet). Zwischen jedem dieser Absätze können Sie Inhalte mit anderen Komponenten einfügen.
+Mit der **Inhaltsfragmentkomponente** können Sie zusätzliche Komponenten zwischen den verschiedenen Absätzen des angezeigten [Elements](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) einfügen. Grundsätzlich besteht das angezeigte Element aus verschiedenen Absätzen (jeder Absatz ist durch einen Wagenrücklauf gekennzeichnet). Zwischen jedem dieser Absätze können Sie Inhalte mit anderen Komponenten einfügen.
 
 Aus technischer Sicht ist jeder Absatz des angezeigten Elements* *in seinen eigenen Parsys enthalten, und jede Komponente, die Sie dazwischen einfügen, wird (unter der Haube) in die Parsys eingefügt.
 
@@ -105,7 +108,7 @@ Um die gebrauchsfertige Inhaltsfragmentkomponente als Blueprint für die Erweite
 
    * The `afterinsert`/ `afteredit`/ `afterdelete` listeners are used to trigger JS events. Diese Ereignisse werden in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` behandelt, um den zugehörigen Inhalt im Seitenbereich anzuzeigen.
    * Die `cq:dropTargets` sind so konfiguriert, dass das Ziehen von Inhaltsfragment-Assets unterstützt wird.
-   * `cq:inplaceEditing` wurde konfiguriert, um das Erstellen eines Inhaltsfragments im Seiteneditor zu unterstützen. Der Editor für die Bearbeitung im Kontext für Fragmente ist in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` definiert und ermöglicht eine schnelle Verknüpfung zum Öffnen [des aktuellen Elements/der aktuellen Variante](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) im [Fragmenteditor](/help/assets/content-fragments-variations.md).
+   * `cq:inplaceEditing` wurde konfiguriert, um das Erstellen eines Inhaltsfragments im Seiteneditor zu unterstützen. Der Editor für die Bearbeitung im Kontext für Fragmente ist in der Client-Bibliothek `cq.authoring.editor.plugin.cfm` definiert und ermöglicht eine schnelle Verknüpfung zum Öffnen [des aktuellen Elements/der aktuellen Variante](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) im [Fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Asset-Neuschreibung vor dem Rendern {#asset-rewriting-before-rendering}
 
