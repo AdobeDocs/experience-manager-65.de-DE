@@ -11,7 +11,10 @@ topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 32%
 
 ---
 
@@ -23,13 +26,13 @@ source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 >GDPR wird als Beispiel in den folgenden Abschnitten verwendet, aber die betreffenden Details gelten für alle Datenschutz- und Datenschutzbestimmungen. wie GDPR, CCPA usw.
 
 
-AEM Communities stellt standardmäßig APIs zum Verwalten von Benutzerinhalten und zum Massenmanagement von benutzergenerierten Profilen (UGC) bereit. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzbestimmungen der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
+AEM Communities bietet APIs, die standardmäßig zur Verwaltung von Benutzerinhalten und zum Massenmanagement von benutzergenerierten Profilen (UGC) verwendet werden. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Diese APIs ermöglichen es den für die Verarbeitung und Verarbeitung von Kundendaten Verantwortlichen und Verarbeitern auch, die allgemeinen Datenschutzbestimmungen der Europäischen Vereinigung (GDPR) und andere vom GDPR inspirierte Datenschutzauflagen einzuhalten.
 
 Weitere Informationen finden Sie auf der [DSGVO-Seite im Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Wenn Sie [Adobe Analytics auf der AEM Communities](/help/communities/analytics.md) -Site konfiguriert haben, werden die erfassten Benutzerdaten an den Adobe Analytics-Server gesendet. Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, sie exportieren und löschen und GDPR einhalten können. Weitere Informationen finden Sie unter Zugriff [senden und Anforderungen](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)löschen.
+>Wenn Sie [Adobe Analytics auf der AEM Communities](/help/communities/analytics.md) -Site konfiguriert haben, werden die erfassten Benutzerdaten an den Adobe Analytics-Server gesendet. Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, sie exportieren und löschen und GDPR einhalten können. Weitere Informationen finden Sie unter Zugriff [senden und Anforderungen](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)löschen.
 
 
 To put these APIs to use, you need to enable the `/services/social/ugcmanagement` endpoint by activating the UserUgcManagement service. To activate this service, install the [sample servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) available on [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). Dann drücken Sie den Endpunkt auf der Veröffentlichungsinstanz Ihrer Communities-Site mit den entsprechenden Parametern mithilfe einer HTTP-Anforderung, ähnlich wie:
@@ -62,7 +65,7 @@ Um beispielsweise die UGC eines Benutzers mit autorisierbarer ID weston.mccall@d
 
 ### UGC aus Adobe Analytics löschen {#delete-ugc-from-adobe-analytics}
 
-Um Benutzerdaten aus Adobe Analytics zu löschen, befolgen Sie den Arbeitsablauf für [GDPR-Analysen](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/an_gdpr_workflow.html). da die API keine Benutzerdaten aus Adobe Analytics löscht.
+Um Benutzerdaten aus dem Adobe Analytics zu löschen, befolgen Sie den [GDPR Analytics-Arbeitsablauf](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html). da die API keine Benutzerdaten aus Adobe Analytics löscht.
 
 Für die von AEM Communities verwendeten Adobe Analytics-Variablenzuordnungen siehe folgende Abbildung:
 
