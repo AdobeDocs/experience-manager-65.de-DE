@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7603'
 ht-degree: 71%
 
 ---
@@ -188,7 +188,27 @@ Um den Anwendungsserver, auf dem AEM Forms on JEE bereitgestellt wird, mit einem
    * Lokale Anmeldung verweigern
    * Als Dienst anmelden (sollte bereits festgelegt sein)
 
-1. Weisen Sie dem neuen Benutzerkonto die Berechtigungen &quot;Lesen und Ausführen&quot;, &quot;Schreiben&quot;, &quot;Ändern&quot;, &quot;Ordnerinhalt für Listen&quot;und &quot;Lesen&quot;zu, um AEM Forms im JEE-Installationsordner und im Ordner &quot;Global Dokument Datenspeicherung&quot;(GDS) abzuschließen. Der Speicherort des Ordners des globalen Dokumentenspeichers wird während des Installationsprozesses der AEM Forms manuell konfiguriert. Wenn die Speicherorteinstellung während der Installation leer bleibt, wird als Speicherort standardmäßig ein Ordner unter der Anwendungsserverinstallation unter [JBoss-Stammordner]/server/[type]/svcnative/DocumentStorage verwendet.
+1. Weisen Sie dem neuen Benutzerkonto die folgenden Berechtigungen zu:
+   * **Ordner** der globalen Dokument-Datenspeicherung: Der Speicherort des Ordners des globalen Dokumentenspeichers wird während des Installationsprozesses der AEM Forms manuell konfiguriert. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository-Ordner**: Der Standardspeicherort ist `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms temporäre Ordner**:
+      * (Windows) TMP oder TEMP gemäß Einstellung in den Umgebungsvariablen
+      * (AIX, Linux oder Solaris) Basisordner des angemeldeten Benutzers
+Benutzer, die bei UNIX-basierten Systemen nicht als Root-Benutzer angemeldet sind, können den folgenden Ordner als temporären Ordner verwenden:
+      * (Linux) /var/tmp oder /usr/tmp
+      * (AIX) /tmp oder /usr/tmp
+      * (Solaris) /var/tmp oder /usr/tmp
+1. Weisen Sie dem neuen Benutzerkonto Schreibberechtigungen für die folgenden Ordner zu:
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+
+   >[!NOTE]
+   >
+   > Der Standardspeicherort für die Installation von JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/
+
 1. Starten Sie den Anwendungsserver.
 
 **Bootstrap-Servlet von Configuration Manager deaktivieren**
@@ -977,7 +997,27 @@ Bei der AEM Forms on JEE-Turnkey-Installation wird standardmäßig unter Verwend
    * Anmeldung bei locallyxx verweigern
    * Als Dienst anmelden (sollte bereits festgelegt sein)
 
-1. Weisen Sie dem neuen Benutzerkonto die Berechtigungen &quot;Lesen und Ausführen&quot;, &quot;Schreiben&quot;, &quot;Ändern&quot;, &quot;Ordnerinhalt für Listen&quot;und &quot;Lesen&quot;zu, um AEM Forms im JEE-Installationsordner und im Ordner &quot;Global Dokument Datenspeicherung&quot;(GDS) abzuschließen. Der Speicherort des Ordners des globalen Dokumentenspeichers wird während des Installationsprozesses der AEM Forms manuell konfiguriert. Wenn die Speicherorteinstellung während der Installation leer bleibt, wird als Speicherort standardmäßig ein Ordner unter der Anwendungsserverinstallation unter [JBoss-Stammordner]/server/[type]/svcnative/DocumentStorage verwendet.
+1. Weisen Sie dem neuen Benutzerkonto die folgenden Berechtigungen zu:
+   * **Ordner** der globalen Dokument-Datenspeicherung: Der Speicherort des Ordners des globalen Dokumentenspeichers wird während des Installationsprozesses der AEM Forms manuell konfiguriert. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository-Ordner**: Der Standardspeicherort ist `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms temporäre Ordner**:
+      * (Windows) TMP oder TEMP gemäß Einstellung in den Umgebungsvariablen
+      * (AIX, Linux oder Solaris) Basisordner des angemeldeten Benutzers
+Benutzer, die bei UNIX-basierten Systemen nicht als Root-Benutzer angemeldet sind, können den folgenden Ordner als temporären Ordner verwenden:
+      * (Linux) /var/tmp oder /usr/tmp
+      * (AIX) /tmp oder /usr/tmp
+      * (Solaris) /var/tmp oder /usr/tmp
+1. Weisen Sie dem neuen Benutzerkonto Schreibberechtigungen für die folgenden Ordner zu:
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+
+   >[!NOTE]
+   >
+   > Der Standardspeicherort für die Installation von JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/.
+
 
 1. Starten Sie den Application Server-Dienst.
 
