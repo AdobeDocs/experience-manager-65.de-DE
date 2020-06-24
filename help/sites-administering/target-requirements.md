@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 68%
 
 ---
 
@@ -30,8 +33,7 @@ Der Clientcode identifiziert beim Aufrufen des Adobe Target-Servers das Adobe 
 >
 >Ihr Konto muss auch vom Target-Team aktiviert werden, damit die Integration genutzt werden kann.
 >
->
->If it is not the case, please contact [Adobe Target Customer Care](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).
+>If it is not the case, please contact [Adobe Customer Care](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
@@ -52,7 +54,7 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
 
 Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
-**Der Knoten** cq:ActivitySettings`/content/campaigns/*nameofbrand*` ist in CRXDE lite unter *** unter dem Aktivitätenknoten jcr:content verfügbar. *zum Beispiel `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
+The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 
 The **cq:ActivitySettings** node under the activity&#39;s jcr:content is protected by the following ACLs:
 
@@ -68,7 +70,7 @@ Beim Bearbeiten einer Aktivität in Adobe Target verweist die URL auf **localho
 
 >[!NOTE]
 >
->Siehe auch Cloud-Konfiguration [hinzufügen](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
+>Siehe auch [Hinzufügen Cloud-Konfiguration](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
 Konfigurieren Sie den AEM-Externalizer wie folgt:
 
