@@ -10,14 +10,17 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 translation-type: tm+mt
-source-git-commit: 48fd5ddb386d69795291e560fa7b21da6edf5979
+source-git-commit: 8f1a1beb9aa64b1d2ea5eda0bec3ca6e99c2ddcc
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 86%
 
 ---
 
 
 # Erstellen von Übersetzungsprojekten für Inhaltsfragmente {#creating-translation-projects-for-content-fragments}
 
-In addition to assets, Adobe Experience Manager (AEM) Assets supports language copy workflows for [content fragments](content-fragments.md) (including variations). Um Sprachkopie-Workflows auf Inhaltsfragmenten auszuführen, ist keine zusätzliche Optimierung erforderlich. In jedem Workflow wird das gesamte Inhaltsfragment zur Übersetzung gesendet.
+In addition to assets, Adobe Experience Manager (AEM) Assets supports language copy workflows for [content fragments](/help/assets/content-fragments/content-fragments.md) (including variations). Um Sprachkopie-Workflows auf Inhaltsfragmenten auszuführen, ist keine zusätzliche Optimierung erforderlich. In jedem Workflow wird das gesamte Inhaltsfragment zur Übersetzung gesendet.
 
 Die Arten von Workflows, die Sie bei Inhaltsfragmenten ausführen können, sind den Workflow-Arten ähnlich, die Sie für Assets ausführen können. Die Optionen, die in jeder Workflow-Art verfügbar sind, stimmen mit den Optionen überein, die unter den entsprechenden Workflow-Arten für Assets verfügbar sind.
 
@@ -56,7 +59,7 @@ Wenn das Inhaltsfragment eine Sammlung umfasst, werden die darin enthaltenen Ass
 
 Um Inhaltsfragmente zu übersetzen, die gemischte Medien enthalten, bearbeiten Sie zunächst das standardmäßige Übersetzungs-Framework, um die Übersetzung von mit Inhaltsfragmenten verknüpften Inline-Assets und Sammlungen zu ermöglichen.
 
-1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud-Services]**.
+1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
 1. Locate **[!UICONTROL Translation Integration]** under **[!UICONTROL Adobe Marketing Cloud]**, and click/tap **[!UICONTROL Show Configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
@@ -149,7 +152,7 @@ Um Inhaltsfragmente zu übersetzen, die gemischte Medien enthalten, bearbeiten S
 
    Beachten Sie, dass nur die Inhalte der Sammlung übersetzt werden. Die Sammlung selbst wird nicht übersetzt.
 
-1. Navigieren Sie zum Pfad des übersetzten zugehörigen Assets. Achten Sie darauf, dass das übersetzte Asset unter dem Stamm der Zielsprache gespeichert wird.
+1. Navigieren Sie zum Pfad des übersetzten zugehörigen Assets. Achten Sie darauf, dass das übersetzte Asset im Stammverzeichnis der Zielgruppe gespeichert wird.
 
    ![chlimage_1-466](assets/chlimage_1-466.png)
 
