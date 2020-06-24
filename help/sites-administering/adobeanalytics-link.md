@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 translation-type: tm+mt
-source-git-commit: 6f49e01aa3e9841c7b2917870593452b778667d2
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +33,7 @@ Wenn Benutzer auf Links auf Seiten Ihrer Website klicken, können Sie zugehörig
 
 ## Nachverfolgen von Datei-Downloads {#tracking-file-downloads}
 
-Konfigurieren Sie das Adobe Analytics-Framework, damit Dateien, die von verknüpften Seiten heruntergeladen wurden, automatisch als Downloads in Adobe Analytics verfolgt werden. Wenn Sie die Nachverfolgung von Downloads aktivieren, werden nur die von Ihnen angegebenen Dateitypen nachverfolgt.
+Konfigurieren Sie das Adobe Analytics-Framework, damit von verknüpften Seiten heruntergeladene Dateien automatisch als Downloads in Adobe Analytics verfolgt werden. Wenn Sie die Nachverfolgung von Downloads aktivieren, werden nur die von Ihnen angegebenen Dateitypen nachverfolgt.
 
 Downloads der folgenden Dateitypen werden standardmäßig nachverfolgt:
 
@@ -114,7 +117,7 @@ So senden Sie Variablendaten bei Link-Klicks:
 
 Eigenschaften zum Senden von Variablendaten bei Link-Klicks:
 
-* **Linktracking-Ereignisse** Geben Sie die Adobe Analytics-Ereignisvariablen ein, die Sie zur Zählung von Link-Klicks verwenden möchten.
+* **Ereignisse** verknüpfen Geben Sie die Adobe Analytics-Ereignis-Variablen ein, die Sie zum Zählen von Link-Klicks verwenden möchten.
 
    Trennen Sie mehrere Variablennamen durch Kommas.
 
@@ -133,7 +136,7 @@ s.linkTrackVars= 'prop4';
 
 ## Beispielhafte Konfiguration der Link-Überwachung {#example-link-tracking-configuration}
 
-Führen Sie die folgenden Schritte aus, um das Linktracking-Verhalten der Adobe Analytics-Integration zu untersuchen. Die Vorgehensweisen enthalten Ergebnisse von [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+Führen Sie die folgenden Schritte aus, um das Linktracking-Verhalten der Adobe Analytics-Integration zu untersuchen. Die Vorgehensweisen enthalten Ergebnisse von [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
 ### Allgemeine Konfiguration {#general-configuration}
 
@@ -155,7 +158,7 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
   <tr>
    <th>CQ-Variable<br /> </th>
    <th>Eintrag im Variablenbrowser<br /> </th>
-   <th>Adobe Analytics-Variable</th>
+   <th>Adobe Analytics Variable</th>
   </tr>
   <tr>
    <td>pagedata.title</td>
@@ -177,7 +180,7 @@ Dieses Beispiel zeigt, wie die Zuordnung im Zusammenhang mit der Überwachung un
   <tr>
    <th>CQ-Variable<br /> </th>
    <th>Eintrag im Variablenbrowser</th>
-   <th>Adobe Analytics-Variable</th>
+   <th>Adobe Analytics Variable</th>
   </tr>
   <tr>
    <td>eventdata.keyword</td>
@@ -240,7 +243,7 @@ Der Abruf sieht bei der Anzeige mit Adobe Marketing Cloud Debugger wie folgt 
 1. Aktivieren Sie **Suchbegriff belassen**.
 1. Laden Sie die Seitenvorschau neu und klicken Sie auf den Link.
 
-Die im Adobe Marketing Cloud-Debugger angezeigten Details zum Aufruf sind dem folgenden Beispiel ähnlich:
+Die im Adobe Marketing Cloud-Debugger angezeigten Aufrufdetails sind dem folgenden Beispiel ähnlich:
 
 ![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
 
@@ -329,7 +332,7 @@ Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** z
 
 1. Enable **Custom Link Tracking** to override the link tracking configuration of the Adobe Analytics framework and to enable link tracking for the current link.
 
-1. (Optional) To track events with the link click, add Adobe Analytics event names in the **Include Adobe Analytics Variables** field. Trennen Sie beispielsweise mehrere Ereignisnamen durch Kommas.
+1. (Optional) To track events with the link click, add Adobe Analytics event names in the **Include Adobe Analytics Variables** field. Trennen Sie beispielsweise mehrere Ereignis durch Kommas.
 
    `event1, event22`.
 
@@ -337,10 +340,12 @@ Gehen Sie wie folgt vor, um die Link-Überwachung für eine **Textkomponente** z
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
    * *`<Variable-name>`*: *`‘CONSTANT'`*
+
    Beispiele für das jeweilige Format:
 
    * `eVar10:pagedata.title`
    * `prop1: ‘Aubergine'`
+
    Trennen Sie mehrere Werte durch Kommas.
 
 1. Wählen Sie **OK** aus.
