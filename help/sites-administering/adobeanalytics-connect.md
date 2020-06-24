@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1544'
+ht-degree: 68%
 
 ---
 
 
 # Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks {#connecting-to-adobe-analytics-and-creating-frameworks}
 
-Um Webdaten von Ihren AEM-Seiten in Adobe Analytics zu verfolgen, erstellen Sie eine Adobe Analytics Cloud Services-Konfiguration und ein Adobe Analytics-Framework:
+Um Webdaten von Ihren AEM-Seiten in Adobe Analytics zu verfolgen, erstellen Sie eine Adobe Analytics Cloud Service-Konfiguration und ein Adobe Analytics-Framework:
 
-* **Adobe Analytics-Konfiguration:** Informationen zu Ihrem Adobe Analytics-Konto. Mit der Adobe Analytics-Konfiguration kann AEM eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
+* **Adobe Analytics Configuration:** Informationen zu Ihrem Adobe Analytics-Konto. Mit der Adobe Analytics-Konfiguration kann AEM eine Verbindung zu Adobe Analytics herstellen. Erstellen Sie eine Adobe Analytics-Konfiguration für jedes Konto, das Sie verwenden.
 * **Adobe Analytics Framework:** Eine Gruppe von Zuordnungen zwischen Adobe Analytics Report Suite-Eigenschaften und CQ-Variablen. Verwenden Sie ein Framework, um zu konfigurieren, wie Ihre Websitedaten Ihre Adobe Analytics-Berichte auffüllen. Frameworks sind mit einer Adobe Analytics-Konfiguration verknüpft. Sie können mehrere Frameworks für jede Konfiguration erstellen.
 
 Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework eine Verfolgung für diese Seite und die untergeordneten Elemente dieser Seite durch. Seitenansichten können dann von Adobe Analytics abgerufen und in der Sites-Konsole angezeigt werden.
@@ -29,7 +32,7 @@ Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework ein
 
 ### Adobe Analytics-Konto {#adobe-analytics-account}
 
-Zur Verfolgung von AEM-Daten in Adobe Analytics benötigen Sie ein gültiges Adobe Marketing Cloud Adobe Analytics-Konto.
+Zur Verfolgung von AEM-Daten in Adobe Analytics benötigen Sie ein gültiges Adobe Marketing Cloud-Adobe Analytics-Konto.
 
 Das Adobe Analytics-Konto muss:
 
@@ -50,7 +53,7 @@ Bevor Sie fortfahren, stellen Sie sicher, dass Ihre Anmeldeinformationen Ihnen d
 
 ### Konfigurieren von AEM zur Verwendung Ihrer Adobe Analytics-Datenzentren {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Sie müssen AEM für die Verwendung des Rechenzentrums konfigurieren, das Ihre Adobe Analytics-Report Suite hostet. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
+Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Sie müssen AEM für die Verwendung des Rechenzentrums konfigurieren, das Ihre Adobe Analytics Report Suite hostet. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
 
 | Datenzentrum | URL |
 |---|---|
@@ -166,13 +169,13 @@ Beginnen Sie mit dem Öffnen des Bedienfelds. Klicken Sie auf den Pfeil nach unt
 
 ## Verknüpfung einer Seite mit einem Adobe Analytics-Framework {#associating-a-page-with-a-adobe-analytics-framework}
 
-Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, sendet die Seite Daten an Adobe Analytics, wenn die Seite geladen wird. Variablen, die auf der Seite eingetragen werden, werden zugeordnet und von den Adobe Analytics-Variablen im Framework abgerufen. Die Seitenansichten werden beispielsweise von Adobe Analytics abgerufen.
+Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, sendet die Seite beim Laden der Seite Daten an Adobe Analytics. Variablen, die auf der Seite eingetragen werden, werden zugeordnet und von den Adobe Analytics-Variablen im Framework abgerufen. Die Seitenansichten werden beispielsweise von Adobe Analytics abgerufen.
 
 Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework. Wenn Sie beispielsweise die Stammseite Ihrer Website mit einem Framework verknüpfen, werden alle Seiten der Website mit dem Framework verknüpft.
 
 1. Wählen Sie in der **Sites-Konsole** die Seite aus, die Sie mit diesem Tracking einrichten möchten.
 1. Öffnen Sie die **[Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)**entweder direkt über die Konsole oder über den Seiten-Editor.
-1. Öffnen Sie die Registerkarte** Cloud-Services**.
+1. Öffnen Sie die Registerkarte** Cloud Service**.
 
 1. Use the **Add Configuration** drop down to select **Adobe Analytics** from the available options. Wenn Vererbung verwendet wird, müssen Sie dies deaktivieren, bevor die Auswahl zur Verfügung gestellt wird.
 
@@ -181,12 +184,12 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 1. Wählen Sie **Speichern und schließen** aus.
 1. **[Veröffentlichen](/help/sites-authoring/publishing-pages.md)**Sie die Seite, um die Seite und alle verbundenen Konfigurationen/Dateien zu aktivieren.
 1. Der letzte Schritt ist der Besuch der Seite in der Veröffentlichungsinstanz und die Suche nach Stichwort (z. B. Aubergine) mithilfe der Komponente **Suchen**.
-1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/de_DE/sc/implement/debugger_install.html).
+1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 1. In dem genannten Beispiel sollte der Aufruf den eingegebenen Wert (d. h. Aubergine) in eVar7 enthalten und die Ereignisliste sollte „event3“ enthalten.
 
 ### Seitenansichten {#page-views}
 
-Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anzahl der Ansichten in der Liste-Ansicht der Site-Konsole angezeigt werden.
+Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anzahl der Ansichten in der Liste-Ansicht der Sites-Konsole angezeigt werden.
 
 Weitere Details finden Sie unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md).
 
