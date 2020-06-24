@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '9303'
 ht-degree: 64%
@@ -16,7 +16,7 @@ ht-degree: 64%
 
 In [!DNL Adobe Experience Manager Assets] diesem Fall können Sie mehr tun, als nur Ihre Assets zu speichern und zu steuern. [!DNL Experience Manager] Angebote zur Asset-Verwaltung auf Unternehmensebene. Sie können Assets bearbeiten und freigeben, erweiterte Suchen durchführen, mehrere Darstellungen von Dutzenden von unterstützten Dateiformaten erstellen, Versionen und digitale Rechte verwalten, die Verarbeitung von Assets automatisieren, Metadaten verwalten und steuern, mit Anmerkungen zusammenarbeiten und vieles mehr.
 
-In diesem Artikel werden die grundlegenden Aufgaben zur Asset-Verwaltung wie Erstellen oder Hochladen beschrieben. Metadaten-Aktualisierungen; Kopieren, Verschieben und Löschen; Veröffentlichen, Rückgängigmachen der Veröffentlichung und Suchen von Assets. Informationen zur Benutzeroberfläche finden Sie unter [Erste Schritte mit der Benutzeroberfläche](/help/sites-authoring/basic-handling.md)für Assets. To manage Content Fragments, see [manage Content Fragments](content-fragments-managing.md) assets.
+In diesem Artikel werden die grundlegenden Aufgaben zur Asset-Verwaltung wie Erstellen oder Hochladen beschrieben. Metadaten-Aktualisierungen; Kopieren, Verschieben und Löschen; Veröffentlichen, Rückgängigmachen der Veröffentlichung und Suchen von Assets. Informationen zur Benutzeroberfläche finden Sie unter [Erste Schritte mit der Benutzeroberfläche](/help/sites-authoring/basic-handling.md)für Assets. To manage Content Fragments, see [manage Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) assets.
 
 ## Erstellen von Ordnern {#creating-folders}
 
@@ -149,7 +149,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 >[!NOTE]
 >
->Um Assets über FTP im Scene7-Modus hochzuladen, installieren Sie Feature Pack 18912 auf den Autoreninstanzen [!DNL Experience Manager] . Contact [Adobe Customer Care](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Weitere Informationen finden Sie unter Feature Pack 18912 [installieren für die Migration](/help/assets/bulk-ingest-migrate.md)von Massenelementen.
+>Um Assets per FTP im Scene7-Modus hochzuladen, installieren Sie Feature Pack 18912 in den [!DNL Experience Manager] Autoreninstanzen. Contact [Adobe Customer Care](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Weitere Informationen finden Sie unter Feature Pack 18912 [installieren für die Migration](/help/assets/bulk-ingest-migrate.md)von Massenelementen.
 >
 >If you use FTP for uploading assets, the upload settings specified in [!DNL Experience Manager] are ignored. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
@@ -307,7 +307,7 @@ Wenn Sie viele Assets in Adobe Experience Manager hochladen, erhöhen sich die E
 
 >[!NOTE]
 >
->Das Hochladen von Streaming ist für Adobe Experience Manager deaktiviert, der auf JEE-Server mit einer Servlet-API-Version unter 3.1 ausgeführt wird.
+>Das Hochladen von Streaming ist für Adobe Experience Manager deaktiviert, die auf dem JEE-Server mit einer Servlet-API-Version unter 3.1 ausgeführt werden.
 
 ### ZIP-Archiv mit Assets extrahieren {#extractzip}
 
@@ -361,7 +361,7 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
 >[!MORELIKETHIS]
 >
->* [Vorschau dynamischer Medienelemente](/help/assets/previewing-assets.md).
+>* [Vorschau Dynamic Media Assets](/help/assets/previewing-assets.md).
 >* [Anzeigen von Unter-Assets](managing-linked-subassets.md#viewing-subassets).
 
 
@@ -571,7 +571,7 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
 ## Herunterladen von Assets {#downloading-assets}
 
-Siehe [Herunterladen von Assets aus Experience Manager](/help/assets/download-assets-from-aem.md).
+Siehe [Herunterladen von Assets von Experience Manager](/help/assets/download-assets-from-aem.md).
 
 ## Veröffentlichen von Assets {#publishing-assets}
 
@@ -740,7 +740,7 @@ In der Timeline können Sie diverse Ereignisse für ein ausgewähltes Objekt ans
 
 >[!NOTE]
 >
->Die Timeline enthält mehrere [inhaltsfragmentspezifische Optionen](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>Die Timeline enthält mehrere [inhaltsfragmentspezifische Optionen](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Anmerkungen zu Assets {#annotating}
 
@@ -750,7 +750,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 >[!NOTE]
 >
->Bei Inhaltsfragmenten werden [Anmerkungen im Fragment-Editor erstellt](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
+>Bei Inhaltsfragmenten werden [Anmerkungen im Fragment-Editor erstellt](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigieren Sie zum Speicherort des Assets, dem Sie Anmerkungen hinzufügen möchten.
 1. Click the **[!UICONTROL Annotate]** icon from one of the following:
