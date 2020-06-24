@@ -4,7 +4,10 @@ seo-title: Benutzerhandbuch zu AEM 6.5-Funktionen
 description: Überblick über die wichtigsten Funktionen von AEM 6.5
 seo-description: Überblick über die wichtigsten Funktionen von AEM 6.5
 translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 15%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## AEM Foundation {#aem-foundation}
 
-[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.5](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Bereitstellung.
+[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.5](/help/sites-deploying/home.md), einschließlich der Bereitstellung der Adobe Managed Services-Cloud.
 
 [Erfahren Sie, wie Sie ein AEM-Projekt](/help/managing/home.md)verwalten.
 
@@ -33,7 +36,7 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## AEM Screens {#aem-screens}
 
-[Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver Erlebnisse.](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
@@ -41,7 +44,7 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Geben Sie benutzerdefinierte Inhalte für AEM Livefyre frei.](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html)
+[Geben Sie benutzerdefinierte Inhalte für AEM Livefyre frei.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 
