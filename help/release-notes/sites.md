@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 64%
 
 ---
 
@@ -73,10 +76,10 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
 ## Inhaltsfragmente und Editor {#content-fragments-amp-editor}
 
-* Mit der neuen Leiste [Anmerkungen](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) im Inhaltsfragmente-Editor können Sie allgemeine Kommentare erstellen und Kommentare innerhalb des Texts anzeigen (erscheinen ebenfalls in der Leiste „Timeline“).
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
-* [Kommentare/Anmerkungen](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) können per Textauswahl in RTE (Vollbildansicht) hinzugefügt werden.
-* In der Leiste „Verweis“ können Versionen von Inhaltsfragmenten nebeneinander [verglichen](/help/assets/content-fragments-managing.md#comparing-fragment-versions) werden.
+* Mit der neuen Leiste [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) im Inhaltsfragmente-Editor können Sie allgemeine Kommentare erstellen und Kommentare innerhalb des Texts anzeigen (erscheinen ebenfalls in der Leiste „Timeline“).
+* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* [Kommentare/Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) können per Textauswahl in RTE (Vollbildansicht) hinzugefügt werden.
+* In der Leiste „Verweis“ können Versionen von Inhaltsfragmenten nebeneinander [verglichen](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) werden.
 * Der heruntergeladene Bericht eines Assets zeigt nun die entsprechenden Inhaltsfragmente an.
 * Durch /api.json kann [Unterstützung für Inhaltsfragmente zur Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) hinzugefügt werden. Es sind APIs zum Erstellen, Aktualisieren, Lesen und Löschen von Inhaltsfragmenten vorhanden.
 
@@ -108,13 +111,13 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
 * Die ContextHub-Datenebene und die clientseitige JavaScript-Regel-Engine wurden so aktualisiert, dass standardmäßig jQuery 3 verwendet wird.
 
-## AEM und Adobe Zielgruppe {#aem-amp-adobe-target}
+## AEM und Adobe Target {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
 >at.js 2.x wird zum Zeitpunkt der Veröffentlichung von AEM 6.5 nicht in AEM unterstützt. Aktualisieren Sie auf die neueste Version von at.js 1.x.
 
-* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Zielgruppe Classic HTTP API, die jetzt nicht mehr unterstützt wird.
+* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Target Classic HTTP API, die jetzt nicht mehr unterstützt wird.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
 * `at.js` Version 1.5.0 ist jetzt enthalten. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
@@ -137,4 +140,4 @@ Weitere Informationen hierzu finden Sie auf der [Seite mit Versionshinweisen fü
 * Es sind getaktete Wiedergaben in einem Sequenzkanal möglich.
 * Sie können Projektstrukturen anhand einer Quelldatei, z. B. einer Excel-Tabelle, automatisch erstellen lassen.
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html).
