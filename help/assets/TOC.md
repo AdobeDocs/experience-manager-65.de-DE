@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Benutzerhandbuch zu Experience Manager 6.5 Assets
+user-guide-title: Experience Manager 6.5 Asset-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: db60a7297defa2ed8e7f30f148d0f74a73a49893
+source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 55%
@@ -12,14 +12,14 @@ ht-degree: 55%
 ---
 
 
-# Benutzerhandbuch zu Experience Manager 6.5 Assets {#assets}
+# Experience Manager 6.5 Asset-Benutzerhandbuch {#assets}
 
 + [[!DNL Assets] Benutzerhandbuch](home.md)
 + [Versionshinweise zu AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + AEM Assets verwenden {#using}
-   + [AEM Assets-Startseite](assets-home-page.md)
+   + [Erfahrung mit AEM Assets-Startseiten](assets-home-page.md)
    + [Suchen nach Assets in AEM    ](search-assets.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
    + [Verwenden von [!DNL Adobe Stock] Assets in AEM Assets](aem-assets-adobe-stock.md)
@@ -29,7 +29,7 @@ ht-degree: 55%
    + [Prozesselemente](assets-workflow.md)
    + [Hinzufügen](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
-   + [Verbundene Assets mit AEM-Sites](use-assets-across-connected-assets-instances.md)
+   + [Verbundene Assets mit AEM Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Dynamic Media Newsletter von Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
@@ -37,7 +37,7 @@ ht-degree: 55%
    + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
    + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
    + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
-   + [Migration von dynamischen Medien - Hybridmodus zu dynamischen Medien - S7-Modus](migrate-from-hybrid-to-dms7.md)
+   + [Migration von Dynamic Media - Hybridmodus zu Dynamic Media - S7-Modus](migrate-from-hybrid-to-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Verwalten von Viewer-Vorgaben für Dynamic Media](managing-viewer-presets.md)
@@ -57,7 +57,7 @@ ht-degree: 55%
    + [Panoramabilder](panoramic-images.md)
    + [Gemischte Mediensets](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
-   + [Video in dynamischen Medien](video.md)
+   + [Video in Dynamic Media](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
@@ -82,7 +82,7 @@ ht-degree: 55%
    + [Assets in den Aktivitäten-Stream integrieren](extending-activity-stream.md)
    + [Asset-Editor erweitern](asseteditorx.md)
    + [Assets-HTTP-API](mac-api-assets.md)
-   + [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](assets-api-content-fragments.md)
+   + [Unterstützung von Inhaltsfragmenten in der HTTP-API von AEM Assets](assets-api-content-fragments.md)
    + [Asset Proxy-Entwicklung](proxy.md)
 + Assets verwalten {#administer}
    + [Unterstützte Dateiformate](assets-formats.md)
@@ -131,14 +131,14 @@ ht-degree: 55%
    + [Veröffentlichen von Ordnern in Brand Portal](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen in Brand Portal](brand-portal-publish-collection.md)
 + Inhaltsfragmente {#fragments}
-   + [Arbeiten mit Inhaltsfragmenten](content-fragments.md)
-   + [Verwalten von Inhaltsfragmenten](content-fragments-managing.md)
-   + [Inhaltsfragmentmodelle](content-fragments-models.md)
-   + [Varianten – Erstellen von Fragmentinhalten](content-fragments-variations.md)
-   + [Zugehörige Inhalte von Inhaltsfragmenten](content-fragments-assoc-content.md)
-   + [Metadaten – Fragmenteigenschaften](content-fragments-metadata.md)
-   + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments-delete.md)
-   + [Inhaltsfragmente – Markdown](content-fragments-markdown.md)
+   + [Arbeiten mit Inhaltsfragmenten](content-fragments/content-fragments.md)
+   + [Verwalten von Inhaltsfragmenten](content-fragments/content-fragments-managing.md)
+   + [Inhaltsfragmentmodelle](content-fragments/content-fragments-models.md)
+   + [Varianten – Erstellen von Fragmentinhalten](content-fragments/content-fragments-variations.md)
+   + [Zugehörige Inhalte von Inhaltsfragmenten](content-fragments/content-fragments-assoc-content.md)
+   + [Metadaten – Fragmenteigenschaften](content-fragments/content-fragments-metadata.md)
+   + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments/content-fragments-delete.md)
+   + [Inhaltsfragmente – Markdown](content-fragments/content-fragments-markdown.md)
    + [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
    + [Verwalten digitaler Assets](managing-assets-touch-ui.md)
