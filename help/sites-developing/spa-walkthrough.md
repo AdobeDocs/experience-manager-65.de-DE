@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 3%
 
 ---
 
@@ -103,6 +106,7 @@ Wenn eine SPA erstellt wurde, um den AEM SPA Editor zu nutzen, merkt der Inhalts
 >
 >* [AEM Version 6.4 mit Service Pack 2](/help/release-notes/sp-release-notes.md)
 >* [Installieren Sie hier die Beispielanwendung &quot;We.Retail&quot;, die auf GitHub verfügbar ist.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
 >
 
 
@@ -225,7 +229,7 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](/help/sites-developing/spa-w
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   Der AEM SPA Editor nutzt [AEM Content Services](/help/assets/content-fragments.md) , um den gesamten Inhalt der Seite als JSON-Modell bereitzustellen.
+   Der AEM SPA Editor nutzt [AEM Content Services](/help/assets/content-fragments/content-fragments.md) , um den gesamten Inhalt der Seite als JSON-Modell bereitzustellen.
 
    Durch die Implementierung spezifischer Schnittstellen stellen Sling-Modelle die für die SPA erforderlichen Informationen bereit. Der Versand der JSON-Daten wird nach unten auf jede Komponente (von Seite zu Absatz, zu Komponente usw.) übertragen.
 
