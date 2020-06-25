@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 26%
 
 ---
 
@@ -41,17 +44,17 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### Konfigurieren von Aktivitäts-Streams {#configuring-activity-streams}
 
 Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![chlimage_1-494](assets/chlimage_1-494.png)
 
 Auf der Registerkarte **Benutzeraktivitäten** können Sie festlegen, welche Aktivitäten angezeigt werden sollen:
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![user-Aktivitäten](assets/user-activities.png)
 
 * **Maximale Anzahl von Aktivitäten**
 
@@ -77,22 +80,22 @@ Auf der Registerkarte **Benutzeraktivitäten** können Sie festlegen, welche Akt
 
 Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [Blog](/help/communities/blog-feature.md), [Forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [Kalender](/help/communities/calendar.md), [Dateibibliothek](/help/communities/file-library.md)[](/help/communities/comments.md)undKommentare.
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![chlimage_1-5](assets/chlimage_1-5.png)
 
 Über die Schaltfläche &quot; **Folgen** &quot;können Sie Einträgen wie Aktivitäten, [Benachrichtigungen](/help/communities/notifications.md)oder [Abonnement](/help/communities/subscriptions.md)folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
 
 Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Folgendem** geändert. Aus praktischen Gründen ist es möglich, alle Methoden `Unfollow All` zu deaktivieren.
 
-Die Schaltfläche **Folgen** wird angezeigt
+Die Schaltfläche &quot; **Folgen** &quot;wird angezeigt:
 
-* beim Anzeigen des Profils eines anderen Mitglieds
-* auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs
+* Beim Anzeigen des Profils eines anderen Mitglieds.
+* Auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs.
 
-   * folgt allen Aktivitäten für diese allgemeine Funktion
+   * Folgt der gesamten Aktivität für diese allgemeine Funktion.
 
-* für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Beantwortung einer Frage oder einen Blog-Artikel
+* Für einen bestimmten Eintrag, z. B. ein Forenthema, eine Frage zur Servicequalität oder einen Blog-Artikel.
 
-   * folgt allen Aktivitäten für diesen spezifischen Eintrag
+   * Folgt der gesamten Aktivität für diesen spezifischen Eintrag.
 
 ### Zusätzliche Informationen {#additional-information}
 
