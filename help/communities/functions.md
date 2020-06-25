@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+workflow-type: tm+mt
+source-wordcount: '2458'
+ht-degree: 10%
 
 ---
 
@@ -29,27 +32,27 @@ Nachdem eine Community-Site erstellt wurde, können den resultierenden Seiten In
 
 ## Community Functions Console {#community-functions-console}
 
-In der Umgebung &quot;author&quot;zur Konsole der Community-Funktionen:
+So erreichen Sie die Community-Funktionkonsole in der Authoring-Umgebung:
 
-* Aus globaler Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community-Funktionen]**.
+* Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community-Funktionen]**.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Vordefinierte Funktionen {#pre-built-functions}
 
-Im Folgenden finden Sie eine kurze Beschreibung der Funktionen, die mit AEM Communities bereitgestellt werden. Jede Funktion umfasst eine oder mehrere AEM-Seiten, die Communities-Komponenten enthalten, die in eine Funktion verkettet sind, die leicht in eine [Community-Site-Vorlage](/help/communities/sites.md)integriert werden kann.
+Im Folgenden werden die mit AEM Communities gelieferten Funktionen kurz beschrieben. Jede Funktion umfasst eine oder mehrere AEM-Seiten, die Communities-Komponenten enthalten, die in eine Funktion verkettet sind, die leicht in eine [Community-Site-Vorlage](/help/communities/sites.md)integriert werden kann.
 
 Eine Community-Site-Vorlage bietet die Struktur für eine Community-Site, einschließlich Anmeldung, Profile, Benachrichtigungen, Nachrichten, Site-Menü, Suche, Themen und Branding-Funktionen.
 
 ### Titel- und URL-Einstellungen {#title-and-url-settings}
 
-**Titel **und **URL **sind Eigenschaften, die allen Community-Funktionen gemein sind.
+**Titel** und **URL** sind Eigenschaften, die allen Community-Funktionen gemein sind.
 
 Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder hinzugefügt wird, wenn die Struktur einer Community-Site [geändert](/help/communities/sites-console.md#modifying-site-properties) wird, wird der Dialog der Funktion geöffnet, damit Titel und URL konfiguriert werden können.
 
 #### Konfiguration der Funktionsdetails {#configuration-function-details}
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![chlimage_1-380](assets/chlimage_1-380.png)
 
 * **Titel**
 
@@ -68,7 +71,7 @@ Dann lautet die URL zur Seite https://localhost:4503/content/sites/engage/en/pag
 
 und der Menülink für die Seite wie folgt angezeigt wird:
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![chlimage_1-381](assets/chlimage_1-381.png)
 
 ### Aktivitäts-Stream-Funktion {#activity-stream-function}
 
@@ -78,7 +81,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 #### Konfiguration der Funktionsdetails {#configuration-function-details-1}
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-382](assets/chlimage_1-382.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -108,7 +111,7 @@ Die Blog-Funktion ist eine Seite mit einer [Blog-Komponente](/help/communities/b
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![chlimage_1-383](assets/chlimage_1-383.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -134,7 +137,7 @@ Die Kalenderfunktion ist eine Seite mit einer [Kalenderkomponente](/help/communi
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -199,7 +202,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 #### Konfiguration der Funktionsdetails {#configuration-function-details-2}
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -227,7 +230,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 >[!CAUTION]
 >
->Die Funktion groups darf *nicht *die *erste oder einzige* Funktion in der Struktur einer Site oder in einer Community-Site-Vorlage sein.
+>Die Funktion &quot;Gruppen&quot;darf *nicht* die *erste oder einzige* Funktion in der Struktur einer Site oder in einer Community-Site-Vorlage sein.
 >
 >Jede andere Funktion, wie die [Seitenfunktion](#page-function), muss eingeschlossen und zuerst aufgeführt werden.
 
@@ -242,7 +245,7 @@ Ab [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack)f�
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![chlimage_1-386](assets/chlimage_1-386.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -265,7 +268,7 @@ Die Ideationsfunktion ist eine Seite mit einer [Ideationskomponente](/help/commu
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in dem die standardmäßigen Titel- und URL-Namen sowie die standardmäßigen Anzeigeeinstellungen für die Vorlage festgelegt werden:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-387](assets/chlimage_1-387.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -293,7 +296,7 @@ Die Lederboard-Funktion ist eine Seite mit einer [Leaderboard-Komponente](/help/
 
 Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in dem die standardmäßigen Titel- und URL-Namen sowie die standardmäßigen Anzeigeeinstellungen für die Vorlage festgelegt werden:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-388](assets/chlimage_1-388.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -324,7 +327,7 @@ Die QnA-Funktion ist eine Seite mit einer [QnA-Komponente](/help/communities/wor
 
 Wenn eine Vorlage hinzugefügt wird, erlaubt die Konfiguration die Beschränkung auf privilegierte Mitglieder:
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Titel- und URL-Einstellungen](#title-and-url-settings)
 
@@ -352,11 +355,11 @@ Wenn eine Vorlage hinzugefügt wird, erlaubt die Konfiguration die Beschränkung
 
 Die Möglichkeit, eine Community-Funktion zu erstellen, wird durch Auswahl des `Create Community Function` Symbols oben in der Community Functions-Konsole erreicht. Mehrere Funktionen, die auf demselben AEM-Blueprint basieren, können erstellt und dann durch Öffnen im Autorenbearbeitungsmodus eindeutig angepasst werden.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![chlimage_1-390](assets/chlimage_1-390.png)
 
 ### Name der Community-Funktion {#community-function-name}
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![chlimage_1-391](assets/chlimage_1-391.png)
 
 Im Bedienfeld &quot;Community-Funktionsname&quot;werden ein Name und eine Beschreibung sowie die Konfiguration der Funktion aktiviert oder deaktiviert:
 
@@ -374,7 +377,7 @@ Im Bedienfeld &quot;Community-Funktionsname&quot;werden ein Name und eine Beschr
 
 ### AEM-Blueprint {#aem-blueprint}
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![chlimage_1-392](assets/chlimage_1-392.png)
 
 Auf dem `AEM Blueprint` Bedienfeld können Sie den Entwurf auswählen, der die zugrunde liegende Implementierung der Community-Funktion ist.
 
@@ -384,15 +387,15 @@ Da die Community-Funktion als [Live-Kopie](/help/sites-administering/msm.md#live
 
 Siehe auch [Multi-Site-Manager](/help/sites-administering/msm.md).
 
-### Miniaturansicht   {#thumbnail}
+### Miniaturansicht     {#thumbnail}
 
-![chlimage_1-120](assets/chlimage_1-120.png)
+![chlimage_1-393](assets/chlimage_1-393.png)
 
 Im Bereich &quot;Miniaturansicht&quot;kann ein Bild hochgeladen werden, um es in der Konsole &quot; [Community-Funktionen&quot;anzuzeigen](#community-functions-console).
 
 ## Community-Funktion öffnen {#open-community-function}
 
-![chlimage_1-121](assets/chlimage_1-121.png)
+![chlimage_1-394](assets/chlimage_1-394.png)
 
 Wählen Sie das `Open Community Function` Symbol aus, um zum Authoring des Seiteninhalts und zum Ändern der Konfiguration der Funktionskomponente(n) in den Bearbeitungsmodus zu wechseln.
 
@@ -408,6 +411,6 @@ Konfigurationsdetails finden Sie unter [Communities-Komponenten](/help/communiti
 
 ## Community-Funktion bearbeiten {#edit-community-function}
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![chlimage_1-395](assets/chlimage_1-395.png)
 
 Wählen Sie das `Edit Community Function` Symbol aus, um die Eigenschaften der Funktion in denselben Bedienfeldern zu bearbeiten wie beim [Erstellen einer Community-Funktion](#create-community-function), einschließlich Aktivieren oder Deaktivieren der Funktion.
