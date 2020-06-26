@@ -3,9 +3,9 @@ title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1002'
 ht-degree: 36%
 
 ---
@@ -39,7 +39,7 @@ Imaging Transcoding Library ist nur für RHEL 7- und CentOS 7-Distributionen ver
 >
 >Mac OS und andere *nix-Distributionen (z. B. Debian und Ubuntu) werden nicht unterstützt.
 
-## Nutzung {#usage}
+## Verwendung {#usage}
 
 Die Imaging Transcoding Library bietet unter anderem folgende Befehlszeilenargumente:
 
@@ -74,7 +74,7 @@ Um die ITL-Verarbeitung zu konfigurieren, erstellen Sie eine Konfigurationsdatei
 
 Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibliotheken mithilfe der folgenden Schritte anzugeben. Sie benötigen Administrator- oder Root-Berechtigungen.
 
-1. Laden Sie das Paket [Imaging Transcoding Library von Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) oder von der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) herunter und installieren Sie es mithilfe des Package Managers. Das Paket ist mit Experience Manager 6.5 kompatibel.
+1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Das Paket ist mit Experience Manager 6.5 kompatibel.
 
 1. Um eine Bündel-ID für `com.day.cq.dam.cq-dam-switchengine`zu ermitteln, melden Sie sich bei der Web-Konsole an und klicken Sie auf **[!UICONTROL OSGi > Bundles]**. Alternativ können Sie zum Öffnen der Bündelkonsole auf die `https://[aem_server:[port]/system/console/bundles/` URL zugreifen. Suchen Sie nach `com.day.cq.dam.cq-dam-switchengine` Bundle und dessen ID.
 
@@ -92,7 +92,7 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 1. Führen Sie `ldconfig` den Befehl aus, um die erforderlichen Links und den Cache zu erstellen.
 
-1. Bearbeiten Sie die `.bash_profile` Datei in dem Konto, das für Beginn Experience Manager verwendet wird. Hinzufügen `LD_LIBRARY_PATH` durch Hinzufügen folgender Elemente:
+1. Bearbeiten Sie die `.bash_profile` Datei in dem Konto, das zum Beginn von Experience Manager verwendet wird. Hinzufügen `LD_LIBRARY_PATH` durch Hinzufügen folgender Elemente:
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -105,7 +105,7 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 Aktualisieren Sie den Arbeitsablauf [!UICONTROL DAM Update Asset] , um die Bibliothek zur Bildverarbeitung zu verwenden.
 
-1. Wählen Sie in der Benutzeroberfläche von Experience Manager **[!UICONTROL Werkzeuge > Workflow > Modelle]**.
+1. Wählen Sie in der Benutzeroberfläche von Experience Manager &quot; **[!UICONTROL Werkzeuge&quot;> &quot;Arbeitsablauf&quot;> &quot;Modelle]**&quot;.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
@@ -126,6 +126,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![CHlimage](assets/chlimage_1-199.png)
 
 1. (Optional) Erstellen Sie Miniaturbilder aus einer Zwischendarstellung mit einem einzelnen Befehl. Die Zwischenausgabe dient als Quelle, um statische und Webausgaben zu generieren. Diese Methode ist schneller als die frühere Methode. Sie können mit dieser Methode jedoch keine benutzerdefinierten Parameter auf Miniaturen anwenden.
