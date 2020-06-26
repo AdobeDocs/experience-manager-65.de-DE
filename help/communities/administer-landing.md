@@ -1,8 +1,8 @@
 ---
 title: Communities Sites
 seo-title: Communities Sites
-description: Übersicht über die Dokumentation zu AEM Communities
-seo-description: Übersicht über die Dokumentation zu AEM Communities
+description: Übersicht über die AEM Communities
+seo-description: Übersicht über die AEM Communities
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2bd74d5e90aff1146de5c5a0dffd99fc7dd9031c
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +32,7 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ## Verwaltungs- und Konfigurationsthemen {#administration-and-configuration-topics}
 
-### Communities Site-Erstellung und -Verwaltung {#communities-site-creation-and-management}
+### Communities - Site-Erstellung und -Verwaltung {#communities-site-creation-and-management}
 
 * Communities [Konsolen](consoles.md)
 
@@ -54,32 +57,32 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ### Benutzergenerierte Inhalte {#user-generated-content}
 
-Eine wichtige Funktion von AEM Communities ist die Erstellung benutzergenerierter Inhalte (UGC) durch angemeldete Site-Besucher (Mitglieder). Weitere Informationen zur Arbeit mit UGC finden Sie unter:
+Eine wichtige Funktion von AEM Communities ist die Generierung benutzergenerierter Inhalte (UGC) durch angemeldete Site-Besucher (Member). Weitere Informationen zur Arbeit mit UGC finden Sie unter:
 
-* [Häufig:](working-with-srp.md)Auswahl des SRP für die gemeinsame Speicherung von UGC
+* [Häufig:](working-with-srp.md)Auswahl von SRP für die gemeinsame Datenspeicherung von UGC
 * [Moderation der Benutzerkontensteuerung](moderate-ugc.md): Vertrauenswürdige Mitglieder können UGC in loser Schüttung oder im Kontext moderieren
 * [Tagging-UGC](tag-ugc.md): Funktionen können so konfiguriert werden, dass Mitglieder Inhalte taggen können
 * [UGC](translate-ugc.md)übersetzen: kann so konfiguriert sein, dass alle UGC übersetzt werden oder dass Mitglieder ausgewählte Beiträge übersetzen können
-* [Analytics-Konfiguration](analytics.md): Aktivierung von Adobe Analytics zur Berichterstattung über verschiedene Metriken zur Mitgliederaktivität
+* [Analytics-Konfiguration](analytics.md): Aktivierung von Adobe Analytics zur Berichterstellung über verschiedene Metriken in Bezug auf die Aktivität der Mitglieder
 
 ### Community-Mitglieder {#community-members}
 
-* [Verwalten von Benutzern und Benutzergruppen](users.md): Details zu Mitgliedern und Mitgliedsgruppen der Gemeinschaft, einschließlich privilegierter Mitglieder
-* [Beitragsbeschränkungen](limits.md): Möglichkeit zur Beschränkung der Entsendung durch neue Mitglieder
-* [Tunneldienst](deploy-communities.md#tunnel-service-on-author): ermöglicht den Zugriff auf Mitglieder und Mitgliedergruppen auf Veröffentlichungsseiten aus der Autorenumgebung
-* [Mitglieder und Gruppen-Konsolen](members.md): ermöglicht das Erstellen und Verwalten von Mitgliedern und Mitgliedergruppen auf der Seite der Veröffentlichung in der Autorenumgebung
-* [Benutzersynchronisierung](sync.md): zum Synchronisieren von Mitgliedern und Mitgliedergruppen über mehrere Instanzen im Veröffentlichungsmodus
-* [Social-Anmeldung bei Facebook und Twitter](social-login.md): Fähigkeit von Site-Besuchern, mit ihren Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden
-* [Bewertung und Abzeichen](implementing-scoring.md): Fähigkeit, Abzeichen zuzuweisen, um die Rolle(en) eines Mitglieds zu identifizieren, und Abzeichen zu verdienen, durch ihre Teilnahme am Gemeinwesen
-* [Benachrichtigungen](notifications.md): Fähigkeit der Mitglieder, über die Tätigkeit, die sie verfolgen, zu informieren
-* [Abonnements](subscriptions.md): Fähigkeit von Mitgliedern, mit der Community per externer E-Mail zu interagieren
-* [Messaging](messaging.md): Fähigkeit von Mitgliedern, mit der Community mithilfe interner Nachrichten zu interagieren
+* [Verwalten von Benutzern und Benutzergruppen](users.md): Details zu Mitgliedern und Mitgliedsgruppen, einschließlich privilegierter Mitglieder.
+* [Beitragsbeschränkungen](limits.md): Möglichkeit, die Veröffentlichung durch neue Mitglieder zu beschränken.
+* [Tunneldienst](deploy-communities.md#tunnel-service-on-author): ermöglicht den Zugriff auf Mitglieder und Mitgliedergruppen auf der Veröffentlichungsseite von der Autorendatei aus.
+* [Mitglieder und Gruppen-Konsolen](members.md): ermöglicht das Erstellen und Verwalten von Mitgliedern und Mitgliedergruppen auf der Veröffentlichungsseite über die Autorenversion-Umgebung.
+* [Benutzersynchronisierung](sync.md): zum Synchronisieren von Mitgliedern und Mitgliedergruppen über mehrere Instanzen im Veröffentlichungsmodus.
+* [Social-Anmeldung bei Facebook und Twitter](social-login.md): Möglichkeit für Site-Besucher, mit ihren Facebook- oder Twitter-Anmeldeinformationen Community-Mitglied zu werden.
+* [Bewertung und Abzeichen](implementing-scoring.md): Fähigkeit, Abzeichen zuzuweisen, um die Rolle(en) eines Mitglieds zu identifizieren und Abzeichen durch seine Teilnahme an der Gemeinschaft zu verdienen.
+* [Benachrichtigungen](notifications.md): die Möglichkeit, die Mitglieder über die Aktivität zu informieren, die sie befolgen.
+* [Abonnements](subscriptions.md): Möglichkeit für Mitglieder, mit der Community per externer E-Mail zu interagieren.
+* [Messaging](messaging.md): Fähigkeit von Mitgliedern, mit der Community mithilfe interner Nachrichten zu interagieren.
 
 ### Aktivierungsfunktionen {#enablement-features}
 
-* [Aktivierung](enablement.md)konfigurieren: erforderliche Informationen zum korrekten Einrichten der Aktivierungsfunktionen
-* [Analytics-Konfiguration](analytics.md): erforderliche Informationen zur Aktivierung der Funktionen von Adobe Analytics for Communities
-* [Tagging-Aktivierungsressourcen](tag-resources.md): zum Erstellen von Erweiterungskatalogen erforderlich
+* [Aktivierung](enablement.md)konfigurieren: erforderliche Informationen zum korrekten Einrichten der Aktivierungsfunktionen.
+* [Analytics-Konfiguration](analytics.md): erforderliche Informationen zur Aktivierung der Funktionen von Adobe Analytics for Communities.
+* [Tagging-Aktivierungsressourcen](tag-resources.md): erforderlich, um Aktivierungskataloge zu erstellen.
 
 ### Bereitstellung {#deployment}
 
