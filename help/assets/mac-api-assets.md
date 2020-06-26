@@ -3,7 +3,7 @@ title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 92%
@@ -77,17 +77,17 @@ In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 
 Die Assets-HTTP-API bietet die folgenden Funktionen:
 
-* Abrufen von Ordnerauflistungen.
-* Erstellen von Ordnern.
-* Erstellen von Assets.
-* Aktualisieren der Asset-Binärdatei.
-* Aktualisieren der Asset-Metadaten.
-* Erstellen von Asset-Ausgabedarstellungen.
-* Aktualisieren von Asset-Ausgabedarstellungen.
-* Erstellen von Asset-Kommentaren.
-* Kopieren von Ordnern oder Assets.
-* Verschieben von Ordnern oder Assets.
-* Löschen von Ordnern, Assets oder Ausgabedarstellungen.
+* [Abrufen von Ordnerauflistungen](#retrieve-a-folder-listing).
+* [Erstellen eines Ordners](#create-a-folder).
+* [Erstellen von Assets](#create-an-asset).
+* [Aktualisieren der Asset-Binärdatei](#update-asset-binary).
+* [Aktualisieren der Asset-Metadaten](#update-asset-metadata).
+* [Erstellen von Asset-Ausgabedarstellungen](#create-an-asset-rendition).
+* [Aktualisieren von Asset-Ausgabedarstellungen](#update-an-asset-rendition).
+* [Erstellen von Asset-Kommentaren](#create-an-asset-comment).
+* [Kopieren von Ordnern oder Assets](#copy-a-folder-or-asset).
+* [Verschieben von Ordnern oder Assets](#move-a-folder-or-asset).
+* [Löschen von Ordnern, Assets oder Ausgabedarstellungen](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
