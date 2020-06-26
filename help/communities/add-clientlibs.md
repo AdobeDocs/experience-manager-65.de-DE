@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 8%
 
 ---
 
@@ -33,7 +36,7 @@ Der `categories`Eigenschaftswert, der dieser Client-Bibliothek gegeben wird, ist
 
 1. Klicken Sie auf **OK**
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![chlimage_1-220](assets/chlimage_1-220.png)
 
 Geben Sie auf der Registerkarte **Eigenschaften** für den neuen `clientlibs` Knoten die Eigenschaft **Kategorien** ein:
 
@@ -52,7 +55,7 @@ Hinweis: dem Wert &quot;Kategorien&quot;mit &quot;Apps&quot;voranstellen. ist ei
 1. Enter **Name:** `js.txt`
 1. Klicken Sie auf **Alle speichern**
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![chlimage_1-221](assets/chlimage_1-221.png)
 
 Die erste Zeile der Dateien &quot;css.txt&quot;und &quot;js.txt&quot;gibt den Basisspeicherort an, von dem aus die folgenden Listen zu finden sind.
 
@@ -96,15 +99,15 @@ In diesem Fall, einschließlich aller und so die einfacheren SCF clientlibs, die
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * click **OK**
+      * Klicken Sie auf **OK**
 
 * Klicken Sie auf **Alle speichern**
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 So `/etc/designs/an-scf-sandbox/clientlibs` sollte es nun im Repository angezeigt werden:
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ### Clientlibs in PlayPage-Vorlage einschließen {#include-clientlibs-in-playpage-template}
 
@@ -112,11 +115,11 @@ Ohne die `apps.an-scf-sandbox` ClientLibraryFolder-Kategorie auf der Seite einzu
 
 Beispielsweise wird die Komponente &quot;SCF-Kommentare&quot;ohne Einbeziehung der clientlibs unformatiert angezeigt:
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![chlimage_1-224](assets/chlimage_1-224.png)
 
 Sobald apps.an-scf-sandbox clientlibs enthalten ist, wird die Komponente &quot;SCF-Kommentare&quot;mit einem Stil angezeigt:
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 Die include-Anweisung gehört zum `head` Abschnitt des `html` Skripts. Die Standardeinstellung **`foundation head.jsp`** enthält ein Skript, das überlagert werden kann: **`headlibs.jsp`**.
 
@@ -147,7 +150,7 @@ Laden Sie Ihre Website in den Browser und sehen Sie, ob der Hintergrund kein Sch
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-53](assets/chlimage_1-53.png)
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### Bisher sparen Sie Ihre Arbeit {#saving-your-work-so-far}
 
