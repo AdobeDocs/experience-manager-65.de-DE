@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets im Authoring-
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2081'
-ht-degree: 92%
+source-wordcount: '2082'
+ht-degree: 91%
 
 ---
 
@@ -21,14 +21,14 @@ Benutzer können Web-Seiten in [!DNL Experience Manager Sites] erstellen. [!DNL 
 
 Beim Bearbeiten von Seiten im [!UICONTROL Seiten-Editor] können die Autoren Assets aus einer anderen [!DNL Assets]-Bereitstellung durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Sites] mit einer anderen (Remote-)Bereitstellung von [!DNL Assets].
 
-Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die [!DNL Sites]-Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren. Siehe Migrationshandbuch für [Experience Manager Assets](/help/assets/assets-migration-guide.md).
+Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die [!DNL Sites]-Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren. Siehe Migrationshandbuch für [Experience Manager-Assets](/help/assets/assets-migration-guide.md).
 
 ### Voraussetzungen und unterstützte Bereitstellungen {#prerequisites}
 
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Bereitstellung.
-* Bei Bereitstellungstypen von Adobe Experience Manager ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5 [!DNL Assets] funktioniert [!DNL Experience Manager] als Cloud-Dienst. Weitere Informationen finden Sie unter [Funktionen für verbundene Assets in Experience Manager als Cloud-Dienst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Bei Bereitstellungstypen für Adobe Experience Manager ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5 [!DNL Assets] funktioniert [!DNL Experience Manager] als Cloud Service. Weitere Informationen finden Sie unter Funktionen für [verbundene Assets in Experience Manager als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -78,6 +78,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    1. Geben Sie im Feld **[!UICONTROL Bereitstellungspunkt]** den lokalen [!DNL Experience Manager]-Pfad ein, aus dem [!DNL Experience Manager] die Assets abruft. Beispielsweise den Ordner `remoteassets`.
    1. Passen Sie die Werte für den **[!UICONTROL Schwellenwert zum Optimieren der ursprünglichen Binärübertragung]** an Ihr Netzwerk an. Eine Asset-Ausgabedarstellung, deren Größe diesen Schwellenwert überschreitet, wird asynchron übertragen.
    1. Wählen Sie **[!UICONTROL Mit Connected Assets gemeinsam verwendeter Datenspeicher]** aus, wenn Sie zum Speichern Ihrer Assets einen Datenspeicher verwenden und der Datenspeicher der gemeinsam verwendete Speicher beider Bereitstellungen ist. In diesem Fall spielt die Schwellenwertbegrenzung keine Rolle, da sich die tatsächlichen Asset-Binärdateien im Datenspeicher befinden und nicht übertragen werden.
+
    ![Eine typische Konfiguration für Connected Assets](assets/connected-assets-typical-config.png)
 
    *Abbildung: Eine typische Konfiguration für Connected Assets.*
@@ -91,6 +92,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    1. Wählen Sie den Workflow-Starter aus und klicken Sie in der Aktionsleiste auf **[!UICONTROL Eigenschaften]**.
 
    1. Ändern Sie im [!UICONTROL Eigenschaften]-Assistenten die **[!UICONTROL Pfad]**-Felder in die folgenden Zuordnungen, um ihre regulären Ausdrücke zu aktualisieren und den Bereitstellungspunkt **[!UICONTROL connectedassets]** auszuschließen.
+
    | Vorher | Nachher |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
@@ -105,7 +107,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 
    1. Melden Sie sich mit den Anmeldeinformationen des Administrators an. Suchen Sie nach `Cross-Origin`. Öffnen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 
-   1. Klicken Sie zum Erstellen einer CORS-Konfiguration für die [!DNL Sites]-Instanz auf das Symbol ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) neben der **[!UICONTROL Adobe Granite-Richtlinie für Cross-Origin Resource Sharing]**.
+   1. To create a CORS configuration for [!DNL Sites] instance, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. Geben Sie im Feld für den **[!UICONTROL zulässigen Ursprung]** die URL der lokalen [!DNL Sites] ein, z. B. `https://[local_sites]:[port]`. Speichern Sie die Konfiguration.
 
