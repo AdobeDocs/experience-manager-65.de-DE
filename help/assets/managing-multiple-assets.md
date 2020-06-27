@@ -3,10 +3,10 @@ title: Verwalten Sie Metadaten vieler Assets und Sammlungen in Adobe Enterprise 
 description: Bearbeiten Sie die Metadaten vieler Assets und Sammlungen gleichzeitig, um häufig vorkommende Metadatenänderungen schnell zu übertragen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 62%
+source-wordcount: '495'
+ht-degree: 63%
 
 ---
 
@@ -30,7 +30,7 @@ Verwenden Sie den Schema-Editor, um die Seite mit den Metadateneigenschaften, ei
 
 1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon to open the properties page for the selected assets.
+1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Verwenden Sie den Schema-Editor, um die Seite mit den Metadateneigenschaften, ei
    >* Aktivieren Sie über der Asset-Liste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Assets und dem Deaktivieren der Liste umzuschalten.
 
 
-1. To select a different metadata schema for the assets, click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
+1. To select a different metadata schema for the assets, click **[!UICONTROL Settings]** from the toolbar, and select the desired schema.
 1. Speichern Sie die Änderungen.
 1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
