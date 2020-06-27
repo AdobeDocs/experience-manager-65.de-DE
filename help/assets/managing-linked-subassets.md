@@ -3,9 +3,9 @@ title: Verwalten Sie zusammengesetzte Assets mit Verweisen und mehrseitigen Asse
 description: Hier erfahren Sie, wie Sie Verweise auf digitale Assets von innen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]aus erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1363'
 ht-degree: 17%
 
 ---
@@ -25,7 +25,7 @@ Referenzen werden auf der Grundlage von Pfad, Dokument-ID und Instanz-ID der ref
 
 You can reference existing digital assets from within an [!DNL Adobe Illustrator] file.
 
-1. Rufen Sie mithilfe der [Experience Manager-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)die digitalen Assets im lokalen Dateisystem ab. Navigieren Sie zum Dateisystemspeicherort des Assets, auf den Sie verweisen möchten.
+1. Rufen Sie mit der [Experience Manager-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)die digitalen Assets im lokalen Dateisystem ab. Navigieren Sie zum Dateisystemspeicherort des Assets, auf den Sie verweisen möchten.
 1. Ziehen Sie das Asset aus dem lokalen Ordner in die [!DNL Illustrator] Datei.
 
 1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
@@ -40,7 +40,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
 1. Click **[!UICONTROL View Properties]** from the toolbar. In the [!UICONTROL Properties] page, the list of files that reference the current asset appear under the **[!UICONTROL References]** column in the **[!UICONTROL Basic]** tab.
 
-   ![Ansicht der Verweise auf Experience Manager-Assets in der Spalte &quot;Verweise&quot;in den Asset-Details](assets/asset-references.png)
+   ![Ansicht der Verweise auf Experience Manager Assets in der Spalte &quot;Verweise&quot;in den Asset-Details](assets/asset-references.png)
 
    *Abbildung: Asset-Verweise in den Asset-Details.*
 
@@ -105,7 +105,7 @@ Führen Sie insbesondere für Microsoft Word-Dokumente den Arbeitsablauf **[!UIC
 
 ## Anzeigen von Unter-Assets {#viewing-subassets}
 
-Die Teilassets werden nur angezeigt, wenn die Teilassets generiert wurden und für das ausgewählte mehrseitige Asset verfügbar sind. Um die generierten Teilassets Ansicht, öffnen Sie das mehrseitige Asset. Klicken Sie im oberen linken Seitenbereich auf das Symbol ![für die](assets/do-not-localize/aem_leftrail_contentonly.png) linke Leiste und klicken Sie in der Liste auf &quot; **[!UICONTROL Teilassets]** &quot;. Wenn Sie **[!UICONTROL Teilassets]** aus der Liste auswählen. Alternately, use the keyboard shortcut `alt + 5`.
+Die Teilassets werden nur angezeigt, wenn die Teilassets generiert wurden und für das ausgewählte mehrseitige Asset verfügbar sind. Um die generierten Teilassets Ansicht, öffnen Sie das mehrseitige Asset. Klicken Sie im oberen linken Seitenbereich auf ![Option, um die linke Leiste](assets/do-not-localize/aem_leftrail_contentonly.png) zu öffnen, und klicken Sie in der Liste auf **[!UICONTROL Teilassets]** . Wenn Sie **[!UICONTROL Teilassets]** aus der Liste auswählen. Alternately, use the keyboard shortcut `alt + 5`.
 
 ![Ansichten-Teilassets für ein mehrseitiges Asset](assets/view_subassets_simulation.gif)
 
@@ -127,11 +127,11 @@ Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in d
 
 * **[!UICONTROL Die Option &quot;Seitenübersicht]** &quot;zeigt alle Teilassets gleichzeitig an.
 
-* **[!UICONTROL Die Option &quot;Zeitschiene]** &quot;in der linken Leiste nach dem Klicken auf das Symbol ![für die](assets/do-not-localize/aem_leftrail_contentonly.png) linke Leiste zeigt den Dateistream an.
+* **[!UICONTROL Die Option &quot;Zeitschiene]** &quot;in der linken Leiste, nachdem Sie auf ![&quot;Option&quot;geklickt haben, um die linke Leiste](assets/do-not-localize/aem_leftrail_contentonly.png) zu öffnen, zeigt den Dateistream der Aktivität an.
 
 ## Best practices and limitation {#best-practice-limitation-tips}
 
-* Die Erzeugung von Teilassets kann bei jeder Experience Manager-Bereitstellung sehr ressourcenintensiv sein. Wenn Sie beim Hochladen komplexer Assets Teilassets generieren, fügen Sie den Schritt im DAM-Arbeitsablauf zum Aktualisieren von Assets hinzu. Wenn Sie bei Bedarf Teilassets erstellen, erstellen Sie einen separaten Workflow, um Teilassets zu generieren. Ein dedizierter Arbeitsablauf ermöglicht es Ihnen, die anderen Schritte im DAM Update Asset-Arbeitsablauf zu überspringen und Rechenressourcen zu speichern.
+* Die Erzeugung von Teilassets kann bei jeder Bereitstellung von Experience Managern sehr ressourcenintensiv sein. Wenn Sie beim Hochladen komplexer Assets Teilassets generieren, fügen Sie den Schritt im DAM-Arbeitsablauf zum Aktualisieren von Assets hinzu. Wenn Sie bei Bedarf Teilassets erstellen, erstellen Sie einen separaten Workflow, um Teilassets zu generieren. Ein dedizierter Arbeitsablauf ermöglicht es Ihnen, die anderen Schritte im DAM Update Asset-Arbeitsablauf zu überspringen und Rechenressourcen zu speichern.
 
 >[!MORELIKETHIS]
 >
@@ -139,3 +139,4 @@ Die folgenden Optionen stehen in der Symbolleiste, in der linken Leiste und in d
 >* [Konfigurieren von Desktop-Aktionen in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Verknüpfte Smartobjekte in Adobe Fotoshop erstellen](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Platzieren von Grafiken in Adobe InDesign](https://helpx.adobe.com/de/indesign/using/placing-graphics.html)
+
