@@ -3,9 +3,9 @@ title: Erstellen von Übersetzungsprojekten
 description: Learn how to create translation projects in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1895'
 ht-degree: 75%
 
 ---
@@ -33,9 +33,9 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 
 * Nur Struktur erstellen.
 * Erstellen eines neuen Übersetzungsprojekts.
-* Zu vorhandenem Übersetzungsprojekt hinzufügen.
+* Hinzufügen zu einem vorhandenen Übersetzungsprojekt.
 
-### Nur Struktur erstellen  {#create-structure-only}
+### Nur Struktur erstellen    {#create-structure-only}
 
 Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
@@ -126,7 +126,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
    >
    >Diese Funktion ist sowohl für Assets als auch für Ordner verfügbar. Wenn ein Asset anstelle eines Ordners gewählt wurde, wird die gesamte Hierarchie der Ordner bis zum Sprachstamm kopiert, um eine Sprachkopie für das Asset zu erstellen.
 
-### Zu vorhandenem Übersetzungsprojekt hinzufügen {#add-to-existing-translation-project}
+### Hinzufügen zu einem vorhandenem Übersetzungsprojekt {#add-to-existing-translation-project}
 
 Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets ausgeführt, die Sie zum Quellordner hinzufügen, nachdem bereits ein Übersetzungs-Workflow ausgeführt wurde. Nur die neu hinzugefügten Assets werden in den Zielordner kopiert, der zuvor übersetzte Assets enthält. In diesem Fall wird kein neues Übersetzungsprojekt erstellt.
 
@@ -197,7 +197,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Abhängig von den gewählten Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen:
 
 * Erstellen eines neuen Übersetzungsprojekts
-* Zu vorhandenem Übersetzungsprojekt hinzufügen
+* Hinzufügen zu einem vorhandenen Übersetzungsprojekt 
 
 ### Erstellen eines neuen Übersetzungsprojekts {#create-a-new-translation-project-1}
 
@@ -250,7 +250,7 @@ Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von
 
 1. Navigieren Sie zur Benutzeroberfläche „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
-### Zu vorhandenem Übersetzungsprojekt hinzufügen {#add-to-existing-translation-project-1}
+### Hinzufügen zu einem vorhandenem Übersetzungsprojekt {#add-to-existing-translation-project-1}
 
 Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen Übersetzungsprojekt hinzugefügt, um die Sprachkopien für das von Ihnen gewählte Gebietsschema zu aktualisieren.
 
@@ -286,7 +286,7 @@ Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbe
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. From the [!DNL Assets] interface, select an asset you already translated and click the **[!UICONTROL Edit]** icon from the toolbar to open the asset in edit mode.
+1. From the [!DNL Assets] interface, select an asset you already translated and click **[!UICONTROL Edit]** from the toolbar to open the asset in edit mode.
 1. Bearbeiten Sie das Asset und speichern Sie die Änderungen.
 1. Führen Sie Schritt 2 bis 14 des Verfahrens [Zu vorhandenem Übersetzungsprojekt hinzufügen](#add-to-existing-translation-project) aus, um die Sprachkopie zu aktualisieren.
 1. Click the ellipsis at the bottom of the **[!UICONTROL Translation Job]** tile. Der Liste der Assets auf der Seite **[!UICONTROL Übersetzungsauftrag]** können Sie den temporären Speicherort der übersetzten Version des Assets entnehmen.
