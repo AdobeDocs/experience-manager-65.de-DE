@@ -3,9 +3,9 @@ title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften i
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2644'
 ht-degree: 53%
 
 ---
@@ -19,11 +19,11 @@ In [!DNL Adobe Experience Manager Assets]Schemas sind spezielle Felder enthalten
 
 Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu bearbeiten:
 
-1. Klicken Sie in der Ansicht &quot;Schnellaktionen&quot;auf das Symbol &quot; **[!UICONTROL Ansichten-Eigenschaften]** &quot;auf der Asset-Kachel in der .
+1. Klicken Sie in den Schnellaktionen auf der Asset-Kachel in der Ansicht auf die Option &quot; **[!UICONTROL Ansicht-Eigenschaften]** &quot;.
 
    ![Schnellaktionen für Asset-Kacheln](assets/chlimage_1-170.png)
 
-   Alternativ können Sie ein Asset auswählen und dann in der Symbolleiste auf das Symbol [!UICONTROL Eigenschaften] klicken.
+   Alternativ können Sie ein Asset auswählen und dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]** klicken.
 
 1. Sie können die verschiedenen Eigenschaften bearbeitbarer Metadaten unter den verfügbaren Registerkarten bearbeiten. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
@@ -68,7 +68,7 @@ Gehen Sie wie folgt vor, um ein Metadaten-Schema-Formular hinzuzufügen:
 
    >[!NOTE]
    >
-   >Bei den nicht bearbeiteten Vorlagen wird ein Sperrsymbol angezeigt. Wenn Sie eine Vorlage anpassen, wird das Schloss-Symbol nicht angezeigt.
+   >Ein Sperrsymbol wird mit den nicht bearbeiteten Vorlagen angezeigt. Wenn Sie eine Vorlage anpassen, wird sie nicht gesperrt ![und geschlossen](assets/do-not-localize/lock_closed_icon.svg).
 
 1. In the dialog, provide the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
@@ -175,7 +175,7 @@ Um ein Formular zu löschen, wählen Sie ein Formular aus und klicken Sie auf &q
 
 >[!NOTE]
 >
->* Nachdem Sie benutzerdefinierte Änderungen an einem Standardformular gelöscht haben, wird auf der Benutzeroberfläche des Metadaten-Schemas erneut das Sperrsymbol angezeigt. Es zeigt an, dass das Formular wieder in den Standardstatus zurückgesetzt wird.
+>* Nachdem Sie benutzerdefinierte Änderungen an einem Standardformular gelöscht haben, wird vor dem Formular die ![Sperre geschlossen](assets/do-not-localize/lock_closed_icon.svg) erneut angezeigt. Es zeigt an, dass das Formular wieder in den Standardstatus zurückgesetzt wird.
 >* Sie können die standardmäßigen Metadaten-Schema-Formulare in [!DNL Assets]nicht löschen.
 
 
