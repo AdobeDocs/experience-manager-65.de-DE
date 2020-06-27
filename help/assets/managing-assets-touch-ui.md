@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '9303'
-ht-degree: 64%
+source-wordcount: '9250'
+ht-degree: 63%
 
 ---
 
@@ -61,14 +61,14 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. Führen Sie einen der folgenden Schritte aus, um die Assets hochzuladen:
 
-   * On the toolbar, click the **[!UICONTROL Create]** icon. Klicken Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
+   * On the toolbar, click **[!UICONTROL Create]**. Klicken Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
    * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
 
    ![Option zum Hochladen von Assets erstellen](assets/create-options.png)
 
    Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. Bei Verwendung eines iPads können Sie jeweils nur eine Datei auswählen.
 
-   Sie können das Hochladen von großen Assets (größer als 500 MB) anhalten und später von der gleichen Seite aus fortsetzen. Click the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   Sie können das Hochladen von großen Assets (größer als 500 MB) anhalten und später von der gleichen Seite aus fortsetzen. Klicken Sie auf **[!UICONTROL Anhalten]** neben der Fortschrittsleiste, die beim Hochladen von Beginn angezeigt wird.
 
    ![Fortschrittsleiste für hochgeladene Assets](assets/chlimage_1-5.png)
 
@@ -78,9 +78,9 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
 
-   Wenn Sie auf das Symbol **[!UICONTROL Pause]** klicken, wird es zum Symbol **[!UICONTROL Wiedergabe]**. Um das Hochladen fortzusetzen, klicken Sie auf das Symbol **[!UICONTROL Wiedergabe.]**
+   Wenn Sie auf &quot; **[!UICONTROL Anhalten]**&quot;klicken, wird die Option &quot; **[!UICONTROL Abspielen]** &quot;aktiviert. Um den Upload fortzusetzen, klicken Sie auf **[!UICONTROL Abspielen]**.
 
-   ![Fortsetzen des angehaltenen Hochladevorgangs des Assets mit dem Symbol &quot;Abspielen&quot;](assets/chlimage_1-6.png)
+   ![Fortsetzen des angehaltenen Asset-Uploads](assets/chlimage_1-6.png)
 
    Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
@@ -339,7 +339,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
    Click **[!UICONTROL Reset]** to reset the view to the original size.
 
-   ![Zurücksetzen-Symbol, um den Benutzer zur ursprünglichen Ansicht zurückzubringen](assets/chlimage_1-11.png)
+   ![Zurücksetzen, um den Benutzer zur ursprünglichen Ansicht zurückzubringen](assets/chlimage_1-11.png)
 
 **Vorschau von Assets nur mit Tastatur**
 
@@ -350,10 +350,10 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 1. Drücken Sie die `Enter` Taste, um das gewünschte Asset zu öffnen. Sie können Assets im Vorschau-Modus heranzoomen.
 
 1. So vergrößern Sie das Asset:
-   1. Verwenden Sie die `Tab` Taste, um den Fokus auf das Einzoomen-Symbol zu verschieben.
+   1. Verwenden Sie die `Tab` Taste, um den Fokus auf die Option &quot;Einzoomen&quot;zu verschieben.
    1. Verwenden Sie die `Enter` Taste, um das Bild zu vergrößern.
 
-   Zum Auszoomen verwenden Sie die `Tab` Taste, um den Fokus auf das Zoomsymbol zu verschieben, und drücken `Enter`Sie die Eingabetaste.
+   Zum Auszoomen verwenden Sie die `Tab` Taste, um den Fokus auf die Zoomoption zu verschieben, und drücken Sie die Eingabetaste `Enter`.
 
 1. Verwenden Sie `Shift` + `Tab` , um den Fokus wieder auf das Bild zu verschieben.
 
@@ -428,8 +428,8 @@ Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werde
 
 Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine Teilkopie wird beim Kopieren eines Assets nicht erstellt.
 
-1. In [!DNL Assets] interface, select one or more assets and click the **[!UICONTROL Copy]** icon from the toolbar. Alternativ können Sie die Schnellaktion **[!UICONTROL Kopieren]**   auf der Asset-Karte auswählen.
-   ![Symbol kopieren in der Symbolleiste der Assets-Benutzeroberfläche](assets/copy_icon.png)
+1. Wählen Sie in der [!DNL Assets] Benutzeroberfläche ein oder mehrere Assets aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Kopieren]** &quot;. Alternativ können Sie die Schnellaktion **[!UICONTROL Kopieren]**   auf der Asset-Karte auswählen.
+   ![Option &quot;Kopieren&quot;in der Symbolleiste der Assets-Oberfläche](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -441,21 +441,21 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
-1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einfügen]**.
+1. Click the **[!UICONTROL Paste]** asset option from the toolbar.
 
-   ![Symbol in der Symbolleiste der Assets einfügen](assets/chlimage_1-14.png)
+   ![Option &quot;Einfügen&quot;in der Assets-Symbolleiste](assets/chlimage_1-14.png)
    [!DNL Assets] werden dann an diesen Speicherort kopiert.
 
    >[!NOTE]
    >
-   >Das Symbol **[!UICONTROL Einfügen]** ist in der Symbolleiste verfügbar, bis das Einfügen abgeschlossen ist.
+   >The **[!UICONTROL Paste]** option is available in the toolbar until the paste operation is completed.
 
 ### Verschieben oder Umbenennen von Assets {#moving-or-renaming-assets}
 
 1. Navigieren Sie zum Speicherort des Assets, das Sie verschieben möchten.
 
-1. Select the asset, and click the **[!UICONTROL Move]** icon from the toolbar.
-   ![Symbol verschieben in der Symbolleiste der Asset-Benutzeroberfläche](assets/move_icon.png)
+1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
+   ![Option &quot;Verschieben&quot;in der Assets-Symbolleiste](assets/move_icon.png)
 
 1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
@@ -495,7 +495,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    ![Assets-Detailseite zum Verwalten von Darstellungen](assets/chlimage_1-15.png)
 
-1. Click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
+1. Wählen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;in der Liste die Option **[!UICONTROL Darstellungen]** aus.
 
    ![Linke Leiste zum Öffnen des Menüs und Auswahl der Option &quot;Darstellungen&quot;](assets/renditions_menu.png)
 
@@ -511,19 +511,19 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    **Eine Darstellung löschen**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** option from the toolbar. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
 
    ![Option zum Löschen einer Darstellung](assets/delete_renditionicon.png)
 
    **Eine neue Darstellung hochladen**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
 
-   ![Symbol &quot;Darstellung&quot;Hinzufügen, um eine neue Darstellung hochzuladen](assets/chlimage_1-16.png)
+   ![Hinzufügen Ausgabeoption zum Hochladen einer neuen Darstellung](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >Wenn Sie ein Ausgabeformat im Bedienfeld **[!UICONTROL Ausgabeformate]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für das Ausgabeformat relevanten Aktionen angezeigt werden. Optionen wie das Symbol „Ausgabeformat hochladen“ werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
+   >Wenn Sie ein Ausgabeformat im Bedienfeld **[!UICONTROL Ausgabeformate]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für das Ausgabeformat relevanten Aktionen angezeigt werden. Options, such as the [!UICONTROL Upload Rendition] option is not displayed. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
 
    Sie können die Dimensionen für das anzuzeigende Ausgabeformat auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Based on the dimensions you specify, [!DNL Assets] displays the rendition with the exact or closest dimensions.
 
@@ -549,9 +549,9 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
 1. Navigieren Sie zum Speicherort der Assets, die Sie löschen möchten.
 
-1. Select the asset, and click the **[!UICONTROL Delete]** icon from the toolbar.
+1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
 
-   ![Symbol löschen](assets/delete_icon.png)
+   ![Option löschen](assets/delete_icon.png)
 
 1. Klicken Sie im Bestätigungsdialogfeld auf:
 
@@ -581,7 +581,7 @@ Siehe [Herunterladen von Assets von Experience Manager](/help/assets/download-as
 
 1. Navigieren Sie zum Speicherort des bzw. der Asset(s)/Ordner, den Sie veröffentlichen möchten.
 
-1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** option from the toolbar.
 1. Wenn das Asset andere Assets referenziert, werden die Verweise im Assistenten aufgelistet. Es werden nur Verweise angezeigt, die entweder unveröffentlicht sind oder seit der letzten Veröffentlichung/Aufhebung der Veröffentlichung geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
    >[!NOTE]
@@ -598,9 +598,9 @@ Siehe [Herunterladen von Assets von Experience Manager](/help/assets/download-as
 
 1. Navigieren Sie zum Speicherort des Assets/Asset-Ordners, das bzw. den Sie aus der Veröffentlichungsumgebung entfernen möchten (Veröffentlichung rückgängig machen).
 
-1. Select the asset/folder to unpublish, and click the **[!UICONTROL Manage Publication]** icon from the toolbar.
+1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** option from the toolbar.
 
-   ![Symbol &quot;Veröffentlichung verwalten&quot;](assets/manage_publication.png)
+   ![Option &quot;Veröffentlichung verwalten&quot;](assets/manage_publication.png)
 
 1. Wählen Sie die Aktion **[!UICONTROL Veröffentlichung rückgängig machen]** aus der Liste aus.
 
@@ -624,7 +624,7 @@ A closed user group (CUG) is used to limit access to specific asset folders publ
 
 CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu beschränken. Sie können auch eine Anmeldeseite für den Ordner konfigurieren.
 
-1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] icon from the toolbar to display the properties page.
+1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] option from the toolbar to display the properties page.
 1. Fügen Sie auf der Registerkarte **[!UICONTROL Berechtigungen]** unter **[!UICONTROL Geschlossene Benutzergruppe]** Mitglieder oder Gruppen hinzu.
 
    ![Hinzufügen Benutzer in geschlossenen Benutzergruppen](assets/add_user.png)
@@ -681,40 +681,33 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Führen Sie einen der folgenden Schritte aus, um ein Element im Bearbeitungsmodus zu öffnen:
 
-   * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
-   * Click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-   * In the asset page, click the **[!UICONTROL Edit]** icon in the toolbar.
+   * Select the asset and then click **[!UICONTROL Edit]** in the toolbar.
+   * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
+   * Click **[!UICONTROL Edit]** from the toolbar.
 
-   ![Symbol in der Symbolleiste bearbeiten](assets/edit_icon.png)
+   ![Option in der Symbolleiste bearbeiten](assets/edit_icon.png)
 
-1. To crop the image, click the **Crop** icon.
-
-   ![Symbol &quot;Beschneiden&quot;](assets/chlimage_1-22.png)
+1. Wenn Sie das Bild beschneiden möchten, klicken Sie auf **[!UICONTROL &quot;Beschneiden]** &quot;, um ein Bild ![](assets/chlimage_1-22.png)zu beschneiden.
 
 1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
 
-   ![Optionen für das Zuschneiden](/help/assets/assets/chlimage_1-23.png)
+   ![Optionen für das Zuschneiden](assets/chlimage_1-23.png)
 
 1. Wählen Sie den zuzuschneidenden Bereich und ändern Sie die Größe oder Position auf dem Bild.
-1. Verwenden Sie das Symbol **Fertig** (in der rechten oberen Ecke), um das Bild zu beschneiden. Durch Klicken auf **Fertigstellen** wird auch die Neuerstellung von Ausgabeformaten ausgelöst.
 
-   ![Fertigstellungssymbol](assets/chlimage_1-24.png)
+1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
 
-1. Mit den Symbolen **Rückgängig** und **Wiederherstellen** oben rechts können Sie das nicht zugeschnittene Bild wiederherstellen bzw. das zugeschnittene Bild beibehalten.
+   ![Rückgängig- und Wiederherstellungsoptionen](assets/chlimage_1-25.png)
 
-   ![Rückgängigmachen und Wiederholen von Symbolen](assets/chlimage_1-25.png)
+1. Click the appropriate **Rotate** option to rotate the image clockwise or anti-clockwise.
 
-1. Klicken Sie auf das entsprechende Drehsymbol, um das Bild im oder entgegen dem Uhrzeigersinn zu drehen.
+   ![Drehen im Uhrzeigersinn und gegen den Uhrzeigersinn](assets/chlimage_1-26.png)
 
-   ![Drehsymbole im Uhrzeigersinn und gegen den Uhrzeigersinn](assets/chlimage_1-26.png)
+1. Click the appropriate **Flip** option to flip the image horizontally or vertically.
 
-1. Klicken Sie auf das entsprechende Spiegelsymbol, um das Bild horizontal oder vertikal zu spiegeln.
+   ![Optionen zum horizontalen oder vertikalen Spiegeln eines Bildes](assets/chlimage_1-27.png)
 
-   ![Symbole zum horizontalen oder vertikalen Spiegeln des Bildes](assets/chlimage_1-27.png)
-
-1. Click the **Finish** icon to save the changes.
-
-   ![Fertigstellungssymbol](assets/chlimage_1-28.png)
+1. Klicken Sie auf **Fertig stellen** , um die Bildbearbeitung abzuschließen ![](assets/chlimage_1-24.png) . Durch Klicken auf **Fertig stellen** wird auch die Wiederherstellung der Darstellungen Beginn.
 
 >[!NOTE]
 >
@@ -753,12 +746,12 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 >Bei Inhaltsfragmenten werden [Anmerkungen im Fragment-Editor erstellt](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigieren Sie zum Speicherort des Assets, dem Sie Anmerkungen hinzufügen möchten.
-1. Click the **[!UICONTROL Annotate]** icon from one of the following:
+1. Click the **[!UICONTROL Annotate]** option from one of the following:
 
    * [Schnellaktionen](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben      oder zur Asset-Seite navigiert sind
 
-   ![Anmerkungssymbol](assets/chlimage_1-29.png)
+   ![Option &quot;Anmerkung&quot;](assets/chlimage_1-29.png)
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
@@ -781,15 +774,15 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    >Sie können mehrere Anmerkungen hinzufügen, bevor Sie diese speichern.
 
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um den Anmerkungsmodus zu verlassen.
-1. To view the notification, log in to [!DNL Assets] with Aaron MacDonald&#39;s credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. To view the notification, log in to [!DNL Assets] with Aaron MacDonald&#39;s credentials and click the **[!UICONTROL Notifications]** option to view the notification.
 
    >[!NOTE]
    >
    >Sie können Video-Assets auch Anmerkungen hinzufügen. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](/help/assets/managing-video-assets.md).
 
-1. To choose a different color so you can differentiate between users, click the Profile icon and click **[!UICONTROL My Preferences]**.
+1. To choose a different color so you can differentiate between users, click the Profile option and click **[!UICONTROL My Preferences]**.
 
-   ![Wählen Sie das Symbol &quot;Benutzereinstellungen&quot;und anschließend &quot;Meine Voreinstellungen&quot;, um die Benutzereinstellungen zu öffnen](assets/User-profile-preferences.png)
+   ![Wählen Sie die Option &quot;Benutzereinstellungen&quot;und dann &quot;Meine Voreinstellungen&quot;, um die Benutzereinstellungen zu öffnen](assets/User-profile-preferences.png)
 
    Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
@@ -803,9 +796,9 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
 
-1. Click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
+1. Wählen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;die Option &quot; **[!UICONTROL Zeitschiene]**&quot;aus.
 
-   ![Auf dem GlobalNav-Symbol verfügbare Optionen](assets/chlimage_1-35.png)
+   ![Optionen im Experience Manager](assets/chlimage_1-35.png)
 
 1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Timeline **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
 
@@ -823,7 +816,7 @@ Wenn ein Asset Anmerkungen aufweist oder einem Prüfungs-Workflow unterzogen wur
 
 Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
 
-To print the annotations and review status, click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. Das Symbol **[!UICONTROL Drucken]** erscheint nur dann in der Symbolleiste, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
+To print the annotations and review status, click **[!UICONTROL Print]** and follow the instructions in the wizard. The **[!UICONTROL Print]** option appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
 1. From the [!DNL Assets] interface, open the preview page for an asset.
 1. Führen Sie einen der folgenden Schritte aus:
@@ -839,9 +832,9 @@ To print the annotations and review status, click the **[!UICONTROL Print]** ico
 
    ![Um nur den Überprüfungsstatus der Anmerkung zu drucken, wählen Sie ihn in der Zeitleiste aus](assets/chlimage_1-39.png)
 
-1. Click the **[!UICONTROL Print]** icon from the toolbar.
+1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Drucksymbol in der Symbolleiste](assets/chlimage_1-40.png)
+   ![Druckoption in der Symbolleiste](assets/chlimage_1-40.png)
 
 1. Wählen Sie im Dialogfeld „Drucken“ die Position, deren Anmerkungen/Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen/den Status in der linken oberen Ecke der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **Oben links**. Sie ist standardmäßig aktiviert.
 
