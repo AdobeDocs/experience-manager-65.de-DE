@@ -3,10 +3,10 @@ title: Erstellen und Konfigurieren von Asset Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 76%
+source-wordcount: '2135'
+ht-degree: 73%
 
 ---
 
@@ -27,7 +27,7 @@ Dieses Dokument beschäftigt sich mit den folgenden Fragestellungen:
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Wenn Sie von einer kleinen Benutzergruppe mit professionell geschulten Benutzern - z. B. Fotografen oder Taxonomen - zu größeren und vielfältigeren Benutzergruppen (z. B. Geschäftsbenutzer, WCM-Autoren, Journalisten usw.) wechseln, kann die leistungsstarke Benutzeroberfläche von Adobe Experience Manager Assets für professionelle Anwender zu viele Informationen und Beginn für Interessengruppen bereitstellen, um bestimmte Benutzeroberflächen oder Anwendungen für den Zugriff auf die für sie relevanten digitalen Assets anzufordern.
+Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Wenn Sie von einer kleinen Benutzergruppe mit professionell geschulten Benutzern - z. B. Fotografen oder Taxonomen - zu größeren und vielfältigeren Benutzergruppen - wie z. B. Geschäftskunden, WCM-Autoren, Journalisten usw. wechseln, kann die leistungsstarke Benutzeroberfläche von Adobe Experience Manager Assets für professionelle Anwender zu viele Informationen und Beginn für Interessengruppen bereitstellen, um spezielle Benutzeroberflächen oder Anwendungen für den Zugriff auf die für sie relevanten digitalen Assets anzufordern.
 
 Diese Asset-orientierten Anwendungen können einfache Fotogalerien in einem Intranet sein, in denen Mitarbeiter Fotos von Messebesuchen oder einem Pressezentrum auf einer öffentlich zugänglichen Website hochladen können. Asset-orientierte Anwendungen können sich auch auf Komplettlösungen, einschließlich Warenkorb, Kassen- und Prüfprozessen, erstrecken.
 
@@ -203,7 +203,7 @@ Beim Erstellen von Asset-Editor-Seiten hat es sich bewährt, die Seite direkt un
 
 So erstellen Sie eine Asset-Editor-Seite:
 
-1. Navigieren Sie auf der Registerkarte **Websites** an die Stelle, an der eine Asset-Editor-Seite erstellt werden soll, und klicken Sie auf **Neu**.
+1. Navigieren Sie auf der Registerkarte **[!UICONTROL Websites]** an die Stelle, an der eine Asset-Editor-Seite erstellt werden soll, und klicken Sie auf **Neu**.
 1. Wählen Sie **Geometrixx-Asset-Editor** und klicken Sie auf **Erstellen**. Die neue Seite wird erstellt und auf der Registerkarte **Websites** aufgeführt.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -356,7 +356,7 @@ Standardmäßig liegt die Komponente im schreibgeschützten Modus vor, um eine B
 
 Wenn der Titel bearbeitbar ist, können Sie einen Titel und eine Beschreibung hinzufügen, indem Sie auf das Bleistiftsymbol klicken und so das Fenster **Asset-Eigenschaften** öffnen. Darüber hinaus ist es möglich, das Asset durch Auswahl von Datum und Uhrzeit zu aktiveren bzw. zu deaktivieren.
 
-Wenn Benutzer den Titel durch Klicken auf das Bleistiftsymbol bearbeiten, können Sie den **Titel** und die **Beschreibung** ändern und die **Einschaltzeit** sowie die **Ausschaltzeit** zum Aktivieren und Deaktivieren des Assets eingeben.
+Beim Bearbeiten des [!UICONTROL Titels]können Benutzer den **Titel** und die **Beschreibung**&#x200B;ändern und **An** - und **Ausschaltungszeiten** eingeben, um das Asset zu aktivieren bzw. zu deaktivieren.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -405,6 +405,7 @@ So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite du
 
    * Windows: `Ctrl + click` jedes Assets.
    * Mac: `Cmd + click` jedes Assets.
+
    To select a range of assets: click the first asset then `Shift + click` the last asset.
 
 1. Klicken Sie im Feld **Aktionen** auf **Metadaten bearbeiten** (linker Seitenbereich).
@@ -414,16 +415,18 @@ So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite du
    * Ein Tag, das für alle Assets gilt, wird mit einer normalen Schriftart angezeigt.
    * Andere Metadaten als Tags: Der Wert des Felds wird nur angezeigt, wenn dieser für alle ausgewählten Assets identisch ist.
 
-1. Klicken Sie auf **Herunterladen**, um eine ZIP-Datei mit den ursprünglichen Wiedergaben des Assets herunterzuladen.
-1. Klicken Sie auf das Bleistiftsymbol neben dem Feld **Tags**, um die Tags zu bearbeiten:
+1. Click **Download** to download a ZIP file containing the assets original renditions.
+1. Klicken Sie auf die Option Tags bearbeiten, die neben dem Feld **Tags** angezeigt wird.
 
    * Ein Tag, das nicht für alle Assets gilt, sondern nur für einige wenige, hat einen grauen Hintergrund.
    * Ein Tag, das für alle Assets gilt, hat einen weißen Hintergrund.
+
    Sie haben folgende Möglichkeiten:
 
-   * Klicken Sie auf das Symbol **x**, um das Tag für alle Assets zu entfernen.
-   * Klicken Sie auf das Symbol **+**, um das Tag allen Assets hinzuzufügen.
+   * Click `x` to remove the tag for all the assets.
+   * Click `+` to add the tag to all the assets.
    * Klicken Sie auf den **Pfeil** und wählen Sie ein Tag aus, um allen Assets ein neues Tag hinzuzufügen.
+
    Klicken Sie auf **OK**, um die Änderungen in das Formular zu schreiben. Das Kästchen neben dem Feld **Tags** wird automatisch aktiviert.
 
 1. Bearbeiten Sie das Feld Beschreibung. Legen Sie beispielsweise Folgendes fest:
