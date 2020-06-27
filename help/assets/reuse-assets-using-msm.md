@@ -4,9 +4,9 @@ description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus ü
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3368'
 ht-degree: 74%
 
 ---
@@ -37,7 +37,7 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 ### Glossary of MSM for [!DNL Assets] terms {#glossary}
 
-**Quelle:** Die ursprünglichen Assets oder Ordner. Primärkopie, von der Live-Kopien abgeleitet werden.
+**Quelle:** Die ursprünglichen Assets oder Ordner. Primär Kopie, von der Live-Kopien abgeleitet werden.
 
 **Live Copy:** Die Kopie der Quellelemente/Ordner, die mit der Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe „Erstellen von LCs“.
 
@@ -70,7 +70,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu ers
 
 1. Wählen Sie Quell-Assets oder -ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen > Live Copy]**.
 
-   ![Live-Kopie der Experience Manager-Oberfläche erstellen](assets/create_lc1.png)
+   ![Live-Kopie über die Benutzeroberfläche von Experience Manager erstellen](assets/create_lc1.png)
 
    *Abbildung: Erstellen Sie eine Live-Kopie über die[!DNL Experience Manager]Benutzeroberfläche.*
 
@@ -82,7 +82,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu er
 
 1. In [!DNL Experience Manager] interface, from upper-right corner, click **[!UICONTROL Create > Live Copy]**.
 
-   ![Live-Kopie der Experience Manager-Oberfläche erstellen](assets/create_lc2.png)
+   ![Live-Kopie über die Benutzeroberfläche von Experience Manager erstellen](assets/create_lc2.png)
 
    *Abbildung: Erstellen Sie eine Live-Kopie über die[!DNL Experience Manager]Benutzeroberfläche.*
 
@@ -242,7 +242,7 @@ Beziehungen von mehreren Assets in einem Live Copy-Ordner können auch schnell 
 
 Eine Live Copy ist eine Replikation der ursprünglichen Quelle zum Zeitpunkt ihrer Erstellung. Die Metadatenwerte einer Live Copy werden von der Quelle übernommen. Die Metadatenfelder halten einzeln die Vererbung mit den entsprechenden Feldern des Quell-Assets aufrecht.
 
-Sie haben jedoch die Flexibilität, lokale Änderungen an einer Live Copy vorzunehmen, um einige ausgewählte Eigenschaften zu ändern. Um lokale Änderungen vorzunehmen, brechen Sie die Vererbung der gewünschten Eigenschaft ab. Wenn die Vererbung von mindestens einem Metadatenfeld abgebrochen wird, werden Live-Beziehung des Assets und Vererbung der anderen Metadatenfelder beibehalten. Bei einer Synchronisierung oder einem Rollout werden die lokalen Änderungen nicht überschrieben. Öffnen Sie dazu die Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets und klicken Sie auf das Symbol **[!UICONTROL Vererbung abbrechen]** neben einem Metadatenfeld.
+Sie haben jedoch die Flexibilität, lokale Änderungen an einer Live Copy vorzunehmen, um einige ausgewählte Eigenschaften zu ändern. Um lokale Änderungen vorzunehmen, brechen Sie die Vererbung der gewünschten Eigenschaft ab. Wenn die Vererbung von mindestens einem Metadatenfeld abgebrochen wird, werden Live-Beziehung des Assets und Vererbung der anderen Metadatenfelder beibehalten. Bei einer Synchronisierung oder einem Rollout werden die lokalen Änderungen nicht überschrieben. To do so, open **[!UICONTROL Properties]** page of a live copy asset, click the **[!UICONTROL cancel inheritance]** option next to a metadata field.
 
 Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den Status seiner Quelle zurücksetzen. Setzen Sie die Aktion unwiderruflich zurück, überschreiben Sie sofort alle lokalen Änderungen und stellen Sie die Vererbung bei allen Metadatenfeldern wieder her. Zwecks Wiederherstellung klicken Sie auf der Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets in der Symbolleiste auf **[!UICONTROL Zurücksetzen]**.
 
