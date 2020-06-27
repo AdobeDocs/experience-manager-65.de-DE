@@ -3,9 +3,9 @@ title: Asset Insights
 description: Erfahren Sie, wie Sie mit der Funktion „Asset Insights“ Benutzerbewertungen und Nutzungsstatistiken von Bildern nachverfolgen können, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen von Adobe verwendet werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '735'
 ht-degree: 81%
 
 ---
@@ -47,7 +47,7 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
    >[!NOTE]
    >
-   >Da die Asset Insights-Funktion in der Regel die Lösungsdaten regelmäßig aus Adobe Analytics abruft, werden im Abschnitt &quot;Lösungen&quot;möglicherweise nicht die neuesten Daten angezeigt. Der Zeitraum, für den die Daten angezeigt werden, hängt vom Zeitplan des Abholvorgangs ab, mit dem Asset Insights ausgeführt wird, um Daten aus Analytics abzurufen.
+   >Da die Asset Insights-Funktion in der Regel die Lösungsdaten regelmäßig von Adobe Analytics abruft, werden im Abschnitt &quot;Lösungen&quot;möglicherweise nicht die neuesten Daten angezeigt. Der Zeitraum, für den die Daten angezeigt werden, hängt vom Zeitplan des Abholvorgangs ab, mit dem Asset Insights ausgeführt wird, um Daten aus Analytics abzurufen.
 
 1. Um Leistungsstatistiken für das Asset für einen bestimmten Zeitraum grafisch anzuzeigen, wählen Sie den gewünschten Zeitraum im Abschnitt **[!UICONTROL Leistungsstatistiken]** aus. Details wie Klicks und Impressions werden als Trend-Linien eines Diagramms angezeigt.
 
@@ -66,7 +66,7 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets in einem Ordner gleichzeitig anzeigen.
 
 1. Navigieren Sie in der Benutzeroberfläche &quot;Assets&quot;zu dem Ordner, der die Assets enthält, für die Sie Einblicke Ansicht wünschen.
-1. Click the Layout icon from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. Click Layout from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. Die Seite zeigt die Nutzungsbewertungen für die Assets an. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
 
 ## Planen von Hintergrundaufträgen {#scheduling-background-job}
