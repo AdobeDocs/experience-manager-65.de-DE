@@ -1,24 +1,23 @@
 ---
 title: Erstellen Sie einen privaten Ordner in Adobe Experience Manager und geben Sie ihn frei.
-description: Erfahren Sie, wie Sie einen privaten Ordner in den Adobe Experience Manager-Assets erstellen und ihn für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen.
+description: Erfahren Sie, wie Sie einen privaten Ordner in den Assets des Adobe Experience Managers erstellen und ihn für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 47%
+source-wordcount: '503'
+ht-degree: 45%
 
 ---
 
 
 # Freigeben privater Ordner {#private-folder-sharing}
 
-Sie können in der Benutzeroberfläche von Adobe Experience Manager Assets einen privaten Ordner erstellen, der ausschließlich für Sie verfügbar ist. Sie können diesen privaten Ordner für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
+Sie können in der Benutzeroberfläche &quot;Adobe Experience Manager Assets&quot;einen privaten Ordner erstellen, der ausschließlich für Sie verfügbar ist. Sie können diesen privaten Ordner für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
 
 >[!NOTE]
 >
 > Der private Ordner hat mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;.
-
 
 1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
@@ -32,7 +31,7 @@ Sie können in der Benutzeroberfläche von Adobe Experience Manager Assets einen
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,7 +57,7 @@ Sie können in der Benutzeroberfläche von Adobe Experience Manager Assets einen
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Klicken Sie auf das Symbol „Benachrichtigungen“, um eine Liste der Benachrichtigungen zu öffnen.
+1. Klicken Sie auf Benachrichtigungen, um die Liste der Benachrichtigungen zu öffnen.
 
    ![Liste der Meldungen](assets/Assets-Notification.png)
 
