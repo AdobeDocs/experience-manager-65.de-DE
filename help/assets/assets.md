@@ -1,11 +1,11 @@
 ---
-title: Info zu Adobe Experience Manager Assets
-description: Erfahren Sie, was die Verwaltung digitaler Assets, ihre Anwendungsfälle und das Experience Manager Asset-Angebot von Adobe sind.
+title: Informationen zu Adobe Experience Manager-Assets
+description: Erfahren Sie mehr über die Verwaltung digitaler Assets, Anwendungsfälle und das Asset-Angebot von Adobe für Experience Manager
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '879'
 ht-degree: 52%
 
 ---
@@ -28,9 +28,9 @@ Die Asset-Funktion ist gut in Experience Manager integriert und ermöglicht Ihne
 * Ausführen von Bildbearbeitungsvorgängen, beispielsweise Skalierung und Hinzufügen von Bildfiltern. Importieren und Exportieren mehrerer digitaler Assets gleichzeitig mithilfe eines WebDAV- oder CIFS-Ordners.
 * Verwenden von Workflows und Benachrichtigungen, um die gemeinsame Verarbeitung und den gemeinsamen Download mehrerer Assets zu ermöglichen und Zugriffsrechte auf Assets zu verwalten.
 
-### Experience Manager Assets ist in Experience Manager-Sites integriert {#aem-assets-fully-integrated-in-cq-wcm}
+### Experience Manager Assets sind in Experience Manager-Sites integriert. {#aem-assets-fully-integrated-in-cq-wcm}
 
-Assets sind vollständig in Sites integriert und die Funktionalität ist über das DAM-Symbol verfügbar. Die im Assets-Repository verwalteten digitalen Assets können dann über die Inhaltssuche beim Erstellen von Webseiten aufgerufen werden.
+Assets sind vollständig in Sites integriert und alle Funktionen sind nahtlos verfügbar. Die im Assets-Repository verwalteten digitalen Assets können dann über die Inhaltssuche beim Erstellen von Webseiten aufgerufen werden.
 
 Die grundlegende Benutzeroberfläche ist die gleiche wie die der Sites. Ausführliche Informationen finden Sie unter [Übersicht über die Sites](/help/sites-authoring/page-authoring.md) .
 
@@ -49,11 +49,11 @@ Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Me
 
 >[!CAUTION]
 >
->Das Hochladen und/oder Bearbeiten einer großen Menge von Assets (insbesondere Bildern) kann sich auf die Leistung Ihrer Experience Manager-Instanz auswirken.
+>Das Hochladen und/oder Bearbeiten einer großen Anzahl von Assets (insbesondere von Bildern) kann sich auf die Leistung Ihrer Experience Manager-Instanz auswirken.
 
-### Experience Manager Assets-Terminologie {#aem-assets-terminology}
+### Terminologie von Experience Manager Assets {#aem-assets-terminology}
 
-Beim Arbeiten mit digitalen Assets in Experience Manager müssen Sie die folgende Terminologie verstehen:
+Wenn Sie mit digitalen Assets in Experience Manager arbeiten, müssen Sie die folgende Terminologie verstehen:
 
 * **Sammlung** Eine Sammlung von Assets, entweder basierend auf dem physischen Speicherort (Ordner), den allgemeinen Eigenschaften (gespeicherter Suchordner) oder der Benutzerauswahl (Leuchtkasten-Ordner).
 
