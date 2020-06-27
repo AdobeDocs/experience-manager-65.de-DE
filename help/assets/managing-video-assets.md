@@ -3,9 +3,9 @@ title: Verwalten Sie Video-Assets in [!DNL Adobe Experience Manager].
 description: Hochladen, Vorschau, Anmerkungen und Veröffentlichen von Video-Assets [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46568322e75669532734dddda91a781f45a398d4
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 41%
 
 ---
@@ -29,7 +29,7 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
    Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. Die Schaltflächen [!UICONTROL Wiedergabe] und [!UICONTROL Pause] sind in der Listenansicht nicht verfügbar.
 
-1. To preview the video in the asset details page, click the **[!UICONTROL Edit]** icon on the card.
+1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card.
 
    Das Video wird im systemeigenen Video-Player des Browsers wiedergegeben. Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
 
