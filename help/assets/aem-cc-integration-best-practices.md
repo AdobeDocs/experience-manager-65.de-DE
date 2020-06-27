@@ -3,9 +3,9 @@ title: Best Practices für Adobe Creative Cloud [!DNL Adobe Experience Manager] 
 description: Best Practices zur [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] Integration, um Asset-Transfer-Workflows zu optimieren und eine hohe Inhaltsgeschwindigkeit zu erzielen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3250'
 ht-degree: 56%
 
 ---
@@ -36,12 +36,12 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 | Wertangebot für die betroffenen Benutzer | Adobe-Angebot | Betroffene Oberflächen |
 |---|---|---|
 | Creative users discover assets from [!DNL Experience Manager], open and use them, edit and upload changes to [!DNL Experience Manager], as well as upload new files into [!DNL Experience Manager], without leaving [!DNL Creative Cloud] apps. | [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], und [!DNL Adobe InDesign]. |
-| Business users simplify opening and using assets, editing and uploading changes to [!DNL Experience Manager], and uploading new files into [!DNL Experience Manager] from the desktop environment. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Applikationen, auch Adobe-fremden, zu öffnen. | [Experience Manager Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] Desktop App auf Windows- und Mac-Desktop |
+| Business users simplify opening and using assets, editing and uploading changes to [!DNL Experience Manager], and uploading new files into [!DNL Experience Manager] from the desktop environment. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Applikationen, auch Adobe-fremden, zu öffnen. | [Experience Manager-Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] Desktop App auf Windows- und Mac-Desktop |
 | Marketers and business users discover, preview, license and save, and manage the [!DNL Adobe Stock] assets from within [!DNL Experience Manager]. Licensed and saved assets provide select [!DNL Adobe Stock] metadata for better governance. | [Integration von Experience Manager und Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Weboberfläche |
 
 Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte der Zusammenarbeit. Die Verteilung und Beschaffung von Vermögenswerten im entsprechende Maß wird kurz als Verwendungsfall genannt. Für solche Lösungen sollten Sie Adobe Brand Portal oder Asset Share Commons beachten. Alternate solutions such as [Brand Portal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
 
-![Creative Cloud-Verbindungen für Experience Manager, entscheiden Sie, welche Funktion verwendet werden soll](assets/creative-connections-aem.png)
+![Creative Cloud-Verbindungen für Experience Manager entscheiden, welche Funktion verwendet werden soll](assets/creative-connections-aem.png)
 
 ### Zuordnen von Nutzungsszenarien und Adobe-Lösungen   {#mapping-of-use-cases-and-adobe-solutions}
 
@@ -66,7 +66,7 @@ Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere L
 * [Markenportal](https://helpx.adobe.com/de/experience-manager/brand-portal/user-guide.html) für ein konfigurierbares SaaS-Add-on zum Veröffentlichen von Assets [!DNL Experience Manager Assets] .
 * Benutzerdefinierte Lösungen, erstellt auf Grundlage der [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)-Codebasis
 * [!DNL Experience Manager][-Linkfreigabe](/help/assets/link-sharing.md), um Assets ad hoc mithilfe von Links freizugeben
-* [Die Experience Manager Assets-Weboberfläche](/help/assets/managing-assets-touch-ui.md) mit durch die Einrichtung der [!DNL Experience Manager] Zugriffskontrolle abgesicherten Bereichen und mit notwendigen IT-/Netzwerkkonfigurationsanpassungen, auf die diese externen Benutzer Zugriff haben, [!DNL Experience Manager].
+* [Experience Manager Assets Web-Schnittstelle](/help/assets/managing-assets-touch-ui.md) mit durch [!DNL Experience Manager] Zugriffskontrolle-Setup abgesicherten Bereichen und mit notwendigen IT-/Netzwerkkonfigurationsanpassungen, damit diese externen Benutzer Zugriff darauf haben [!DNL Experience Manager].
 
 ## Grundlegende Konzepte und Nutzungsszenarien {#key-concepts-and-use-cases}
 
@@ -99,18 +99,18 @@ This is a brief summary of best practices for [!DNL Experience Manager] and [!DN
 
 ### Zugriff auf [!DNL Adobe Stock] Assets von [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
-[Die Integration](/help/assets/aem-assets-adobe-stock.md) von Experience Manager und Adobe Stock bietet [!DNL Experience Manager] Benutzern die Möglichkeit, Assets von [!DNL Adobe Stock] in zu suchen, zu Vorschau, zu lizenzieren und zu speichern [!DNL Experience Manager]. Licensed and saved [!DNL Stock] assets have selected [!DNL Stock] metadata, which can be used to search for them with extra filters.
+[Die Integration](/help/assets/aem-assets-adobe-stock.md) von Experience Manager und Adobe Stock bietet [!DNL Experience Manager] Benutzern die Möglichkeit, Assets von [!DNL Adobe Stock] nach [!DNL Experience Manager]zu suchen, Vorschauen zu erstellen, zu lizenzieren und zu speichern. Licensed and saved [!DNL Stock] assets have selected [!DNL Stock] metadata, which can be used to search for them with extra filters.
 
 Einige wichtige Punkte zu dieser Integration:
 
 * When assets from Adobe stock are saved to [!DNL Experience Manager], they become a regular [!DNL Assets], with binary saved to the [!DNL Experience Manager] repository. Some metadata related to [!DNL Adobe Stock] are saved for the asset in [!DNL Experience Manager], otherwise the ingestion process looks the same as for any other file. Wenn beispielsweise Smart-Tags aktiv sind, werden die Tags beim Speichern diesen Assets hinzugefügt.
 * The asset saved to [!DNL Experience Manager] is a copy, not a link back into [!DNL Adobe Stock].
 
-**Arbeiten mit Assets, die von[!DNL Adobe Stock]in[!DNL Experience Manager]gespeichert wurden[!DNL Creative Cloud]**. This integration is independent of[!DNL Adobe Asset Link], but[!DNL Adobe Asset Link]recognizes these assets saved from[!DNL Stock]that way, and displays additional metadata and[!DNL Stock]icon on these assets in[!DNL Adobe Asset Link]extension UI in[!DNL Photoshop],[!DNL Illustrator], or[!DNL InDesign]. The files are available for browsing, opening, and so on - because they are regular assets when saved to[!DNL Experience Manager].
+**Arbeiten mit Assets, die von[!DNL Adobe Stock]in[!DNL Experience Manager]gespeichert wurden[!DNL Creative Cloud]**. Diese Integration ist unabhängig von[!DNL Adobe Asset Link]und[!DNL Adobe Asset Link]erkennt diese Assets, die auf diese Weise gespeichert wurden, und zeigt zusätzliche Metadaten und ein[!DNL Stock]Logo auf diesen Assets in der[!DNL Adobe Stock]Erweiterungs-Benutzeroberfläche in[!DNL Adobe Asset Link],[!DNL Photoshop]oder[!DNL Illustrator][!DNL InDesign]. The files are available for browsing, opening, and so on - because they are regular assets when saved to[!DNL Experience Manager].
 Creative users working in[!DNL Creative Cloud]apps with[!DNL Adobe Asset Link]extension present, in addition to having access to already-licensed assets from[!DNL Adobe Stock]into[!DNL Experience Manager], can also use[!DNL Creative Cloud]Libraries panel to search, preview, and license[!DNL Adobe Stock]assets.[!DNL Assets]von[!DNL Adobe Stock]lizenzierten und gespeicherten Daten[!DNL Experience Manager]zur Verfügung gestellt werden für die breiteren Teams, die auf die[!DNL Experience Manager Assets]Bereitstellung zugreifen, während kreative Elemente, die über das Bedienfeld &quot;[!DNL Adobe Stock]Bibliotheken&quot;lizenziert werden, sie für sich selbst nur standardmäßig in ihrem[!DNL Creative Cloud][!DNL Creative Cloud]Konto verfügbar machen.
 
 <!-- 
-TBD: A condensed version of the below content is better placed in the Adobe DAM article.
+TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
 -->
 
 ## Informationen zum Speichern von Assets in DAM {#about-storing-assets-in-a-dam}
@@ -160,7 +160,7 @@ Es folgen Beispiele für Updates, die normalerweise nicht relevant sind:
 
 #### Kreative Benutzer mit direktem Zugriff auf DAM   {#creative-users-with-direct-access-to-dam}
 
-Typically, in-house creative teams or agencies/creative professionals  onboarded  to the internal network have access to the DAM instance, including [!DNL Experience Manager] login. [!DNL Experience Manager] und die Netzinfrastruktur so eingerichtet werden kann, dass sie direkten Zugang zu externen Parteien - meist vertrauenswürdigen Organisationen wie Kundenagenturen - ermöglicht, z. B. über VPN oder IP-Liste, die [!DNL Experience Manager] über ein Netzwerk zugänglich sind.
+Typically, in-house creative teams or agencies/creative professionals  onboarded  to the internal network have access to the DAM instance, including [!DNL Experience Manager] login. [!DNL Experience Manager] und die Netzinfrastruktur so eingerichtet werden können, dass sie direkten Zugang zu externen Akteuren - meist vertrauenswürdigen Organisationen wie Agenturen, die für einen Kunden arbeiten - ermöglicht, z. B. über VPN oder IP-zulassungsliste. [!DNL Experience Manager]
 
 In such cases, Adobe Asset Link or [!DNL Experience Manager] desktop app helps provide easy access to final/approved assets and lets you save creative-ready assets to DAM.
 
@@ -220,7 +220,7 @@ Informationen zum Planen und Ausführen von Asset-Migrationen von vorhandenen Sy
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
->* [Best Practices für Experience Manager Desktop-Apps](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [Experience Manager-Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [Best Practices für die Desktop-App von Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
+>* [Markenportal für Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integration von Experience Manager und Adobe Stock](aem-assets-adobe-stock.md)
 
