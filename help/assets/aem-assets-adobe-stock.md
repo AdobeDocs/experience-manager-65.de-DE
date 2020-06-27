@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Assets verwalten in [!DNL Adobe Experience Manager A
 description: Suchen, Abrufen, Lizenz und [!DNL Adobe Stock] Verwalten von Assets von innen [!DNL Adobe Experience Manager]aus. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c1c845a479fcf04db1b2da8bcb9cf765fedd58b6
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1046'
 ht-degree: 25%
 
 ---
@@ -70,7 +70,7 @@ Your [!DNL Experience Manager] users, can search for assets in both, [!DNL Exper
 
 * To search for [!DNL Adobe Stock] assets, click **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Search Adobe Stock]**.
 
-* To search for assets across [!DNL Adobe Stock] and [!DNL Experience Manager Assets], click the search icon ![search_icon](assets/search_icon.png).
+* Um nach Assets zu suchen [!DNL Adobe Stock] und [!DNL Experience Manager Assets], klicken Sie auf search ![search_icon](assets/search_icon.png).
 
 Alternatively, start typing `Location: Adobe Stock` in the search bar to select [!DNL Adobe Stock] assets. [!DNL Experience Manager] bietet erweiterte Filterfunktionen, mit denen Benutzer schnell die gewünschten Assets finden können. Hierzu stehen Filter, wie z. B. unterstützte Asset-Typen, Bildausrichtung und Lizenzstatus, zur Verfügung.
 
