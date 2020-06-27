@@ -3,17 +3,17 @@ title: Suchfacetten
 description: In diesem Artikel wird das Erstellen, Ändern und Verwenden von Suchfacetten in Adobe Experience Manager beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2517'
-ht-degree: 82%
+source-wordcount: '2523'
+ht-degree: 79%
 
 ---
 
 
 # Suchfacetten {#search-facets}
 
-Eine unternehmensweite Bereitstellung von Adobe Experience Manager Assets verfügt über die Kapazität, viele Assets zu speichern. Manchmal kann es schwierig und zeitaufwendig sein, das richtige Asset zu finden, wenn Sie nur die allgemeinen Suchfunktionen von Experience Manager verwenden.
+Eine unternehmensweite Bereitstellung von Adobe Experience Manager Assets verfügt über die Kapazität, viele Assets zu speichern. Manchmal kann die Suche nach dem richtigen Asset mühsam und zeitaufwendig sein, wenn Sie nur die generischen Suchfunktionen von Experience Manager verwenden.
 
 Verwenden Sie Suchfacetten im Bedienfeld „Filter“, um Ihrer Suche ein höheres Maß an Granularität zu verleihen und die Suchfunktion effizienter und vielseitiger zu gestalten. Suchfacetten fügen mehrere Dimensionen (Prädikate) hinzu, mit denen Sie Ihre Suche genauer definieren können. Das Bedienfeld „Filter“ enthält einige standardmäßige Suchfacetten. Außerdem können Sie benutzerdefinierte Suchfacetten hinzufügen.
 
@@ -115,7 +115,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 >Das Options-Prädikat ist ein benutzerdefinierter Wrapper, der Eigenschaftsprädikate umfasst, um das beschriebene Verhalten zu erreichen. Derzeit ist kein REST-Endpunkt verfügbar, um die Funktionalität nativ zu unterstützen.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
+1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Ziehen Sie auf der Seite **[!UICONTROL Suchformular bearbeiten]** den Eintrag **[!UICONTROL Options-Eigenschaft]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Namen für die Eigenschaft ein. Beispiel: Um Assets basierend auf dem Format zu suchen, geben Sie einen aussagekräftigen Namen als Beschriftung ein, wie **[!UICONTROL Dateityp]**. Geben Sie die Eigenschaft, anhand derer die Suche durchgeführt werden soll, im Eigenschaftsfeld an, wie beispielsweise `jcr:content/metadata/dc:format.`
 1. Führen Sie einen der folgenden Schritte aus:
@@ -164,9 +164,9 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. St
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 
-   ![Von Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags](assets/chlimage_1-419.png)
+   ![Vom Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags](assets/chlimage_1-419.png)
 
-   *Abbildung: In Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags.*
+   *Abbildung: Vom Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags.*
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
@@ -193,20 +193,17 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
 
 ## Standard-Suchfacetten wiederherstellen {#restoring-default-search-facets}
 
-Standardmäßig wird vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** das Sperrsymbol angezeigt. Das Sperrsymbol wird ausgeblendet, wenn Sie dem Formular Suchfacetten hinzufügen, um anzugeben, dass das Standardformular geändert wurde.
+By default, a lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind. The icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) disappears if you add search facets to the form indicating that the default form has been modified.
 
 ![Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind.](assets/locked_admin_rail.png)
-
-Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass die Standardeinstellungen intakt und nicht angepasst sind.
 
 Führen Sie die folgenden Schritte aus, um die standardmäßige Suchfacette wiederherzustellen:
 
 1. Wählen Sie **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** aus.
-1. Click **[!UICONTROL Delete]** in the toolbar.
-   ![deletegliederung](assets/deleteoutline.png)
+1. Klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Löschen]** - ![Umriss](assets/deleteoutline.png) &quot;.
 1. In the confirmation dialog, click **[!UICONTROL Delete]** to remove the custom changes.
 
-   Nach dem Löschen der benutzerdefinierten Anpassungen der Suchfacetten wird das Sperrsymbol vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** erneut angezeigt.
+   After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
 ## Benutzerberechtigungen {#user-permissions}
 
