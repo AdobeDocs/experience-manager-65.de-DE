@@ -3,7 +3,10 @@ title: Ordner-Metadatenschema
 description: Erfahren Sie, wie Sie Metadaten-Schema für Asset-Ordner in Adobe Experience Manager Assets erstellen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 71%
 
 ---
 
@@ -16,7 +19,7 @@ Mit Adobe Experience Manager Assets können Sie Metadaten-Schema für Asset-Ordn
 
 Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata für Ordner zu erstellen und zu bearbeiten.
 
-1. Wechseln Sie in der Experience Manager-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordnermetadaten-Schema]**.
+1. Wechseln Sie in der Benutzeroberfläche von Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordnermetadaten-Schema]**.
 1. On the [!UICONTROL Folder Metadata Schema Forms] page, click **[!UICONTROL Create]**.
 1. Specify a name for the form, and click **[!UICONTROL Create]**. The new schema form is listed in the [!UICONTROL Schema Forms] page.
 
@@ -29,7 +32,7 @@ Sie können neu erstellte oder bestehende Metadatenschema-Formulare bearbeiten. 
 
 Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im CRX-Repository zuordnen bzw. dafür konfigurieren. Sie können dem Metadatenschema-Formular neue Registerkarten oder Formularelemente hinzufügen.
 
-1. In the Schema Forms page, select the form you created, and then click the **[!UICONTROL Edit]** icon from the toolbar.
+1. In the Schema Forms page, select the form you created, and then select the **[!UICONTROL Edit]** option from the toolbar.
 1. In the Folder Metadata Schema Editor page, click `+` to add a tab to the form. To rename the tab, click the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -93,7 +96,7 @@ Um zu gewährleisten, dass die Komponente ordnungsgemäß im Metadatenschema-For
 
 ## Löschen von Ordner-Metadatenschema-Formularen   {#delete-folder-metadata-schema-forms}
 
-Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadatenschema-Formulare“ löschen. Um ein Formular zu löschen, wählen Sie es aus und klicken Sie in der Symbolleiste auf das Symbol Löschen.
+Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadatenschema-Formulare“ löschen. Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie in der Symbolleiste auf die Option &quot;Löschen&quot;.
 
 ![delete_form](assets/delete_form.png)
 
@@ -105,7 +108,7 @@ Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in d
 
 ### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“   {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Wechseln Sie in der Experience Manager-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Ordnermetadaten-Schema]**.
+1. Wechseln Sie in der Benutzeroberfläche von Experience Manager zu **[!UICONTROL Extras]** > **[!UICONTROL Assets]**> **[!UICONTROL Ordnermetadaten-Schema]**.
 1. Wählen Sie auf der Seite „Ordner-Metadatenschema-Formulare“ das Schemaformular aus, das Sie auf einen Ordner anwenden möchten.
 1. From the toolbar, click **[!UICONTROL Apply to Folder(s)]**.
 
