@@ -10,13 +10,16 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 2%
 
 ---
 
 
 
-# Erstellen einer SCF-Sandbox {#create-an-scf-sandbox}
+# Erstellen einer SCF-Sandbox  {#create-an-scf-sandbox}
 
 
 Ab AEM 6.1 Communities besteht die einfachste Möglichkeit, eine Sandbox schnell zu erstellen, darin, eine Community-Site zu erstellen. See [Getting Started with AEM Communities](getting-started.md).
@@ -50,10 +53,10 @@ Bei dieser Übung wird davon ausgegangen, dass ein AEM-Autor und eine AEM-Veröf
 
 Im Folgenden finden Sie einige hilfreiche Links für Entwickler, die mit der AEM-Plattform neu arbeiten:
 
-* [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started): zum Bereitstellen von AEM-Instanzen
+* [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started): zum Bereitstellen von AEM-Instanzen.
 
-   * [Grundlagen](../../help/sites-developing/the-basics.md): für Entwickler von Websites und Funktionen
-   * [Erste Schritte für Autoren](../../help/sites-authoring/first-steps.md): zum Authoring von Seiteninhalten
+   * [Grundlagen](../../help/sites-developing/the-basics.md): für Entwickler von Websites und Funktionen.
+   * [Erste Schritte für Autoren](../../help/sites-authoring/first-steps.md): zum Authoring von Seiteninhalten.
 
 ## Verwenden der CRXDE Lite Development Umgebung {#using-crxde-lite-development-environment}
 
