@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Daher benötigt die erweiterte Scoring-Engine genügend Daten, um eine aussagekr
 
 Die Einrichtung einer erweiterten Bewertung ist praktisch identisch mit der eines Basisscorings:
 
-* Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln werden auf Inhalte [auf dieselbe Weise](/help/communities/implementing-scoring.md#apply-rules-to-content) angewendet
+* Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln werden auf Inhalte [auf dieselbe Weise](/help/communities/implementing-scoring.md#apply-rules-to-content) angewendet.
 
-   * Grundlegende und erweiterte Scoring- und Kennzeichnungsregeln können auf denselben Inhalt angewendet werden
+   * Einfache und erweiterte Scoring- und Kennzeichnungsregeln können auf denselben Inhalt angewendet werden.
 
-* [Aktivieren von Kennzeichen für Komponenten](/help/communities/implementing-scoring.md#enable-badges-for-component) ist generisch
+* [Die Aktivierung von Kennzeichen für Komponenten](/help/communities/implementing-scoring.md#enable-badges-for-component) ist generisch.
 
 Die verschiedenen Regeln für die Bewertung und Kennzeichnung unterscheiden sich:
 
@@ -45,23 +45,24 @@ Die verschiedenen Regeln für die Bewertung und Kennzeichnung unterscheiden sich
 * Erweiterte Bewertungsregeln:
 
    * `scoringType` setzen auf `advanced`
-   * requires `stopwords`
+   * Erfordert `stopwords`
 
 * Erweiterte Kennzeichnungsregeln:
 
    * `badgingType` setzen auf `advanced`
    * `badgingLevels` auf die **Anzahl der zu vergebenden Expertenstufen**
-   * erfordert `badgingPaths` ein Zeichen-Array anstelle von Schwellenwerten-Array-Zuordnungspunkten zu Zeichen
+   * Erfordert ein `badgingPaths` Array von Kennzeichen anstelle von Schwellenwerten für Array-Zuordnungspunkten zu Kennzeichen.
 
 >[!NOTE]
 >
 >Installieren Sie das [Expert Identification-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg), um erweiterte Scoring- und Auszeichnungsfunktionen zu verwenden.
 
+
 ## Konfigurierbare Scoring-Engine {#configurable-scoring-engine}
 
 Die erweiterte Scoring-Engine bietet eine OSGi-Konfiguration mit Parametern, die sich auf den erweiterten Scoring-Algorithmus auswirken.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **Gewichtungen bewerten**
 
@@ -102,7 +103,7 @@ Um die erweiterte Scoring-Engine aufzurufen, `scoringType`sollte die auf `advanc
 
 Siehe [Scoring-Unterregeln](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### Stoppwörter {#stopwords}
 
@@ -122,7 +123,7 @@ Die Eigenschaften der erweiterten Kennzeichnungsregel unterscheiden sich von den
 
 Anstatt Punkte mit einem Abzeichen zu verknüpfen, ist es nur notwendig, die Anzahl der zulässigen Experten und das zu vergebende Abbild zu identifizieren.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -164,7 +165,7 @@ In dieser Beta-Version ist ein auf Belohnung basierendes Expertenabzeichen entha
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 Damit das Expertenkennzeichen als Belohnung für die Aktivität angezeigt wird, müssen Sie sicherstellen, dass:
 
@@ -197,15 +198,15 @@ In der Beta-Version sind zwei erweiterte Bewertungsregeln für die [Forenfunktio
 
 **Hinweise:**
 
-* Sowohl `rules`als auch `sub-rules` Knoten sind vom Typ `cq:Page`
+* Sowohl `rules` als auch `sub-rules` Knoten sind vom Typ `cq:Page`.
 
-* `subRules`ist ein Attribut des Typs String[] auf der `jcr:content` Knoten der Regel
+* `subRules` ist ein Attribut des Typs String[] auf dem Knoten der Regel `jcr:content` .
 
-* `sub-rules` kann für verschiedene Bewertungsregeln freigegeben werden
+* `sub-rules` kann für verschiedene Bewertungsregeln freigegeben werden.
 
-* `rules`sollte sich in einem Repository mit Leserechte für alle befinden
+* `rules` sollte sich in einem Repository mit Leserechte für alle befinden.
 
-   * Regelnamen müssen unabhängig vom Ort eindeutig sein
+* Regelnamen müssen unabhängig vom Ort eindeutig sein.
 
 ### Einbezogene Kennzeichnungsregeln {#included-badging-rules}
 
@@ -216,8 +217,7 @@ In der Version sind zwei erweiterte Kennzeichnungsregeln enthalten, die den [erw
 
 **Hinweise:**
 
-* `rules` Nodes vom Typ cq:Page
-* `rules` sollte sich in einem Repository mit Leserechte für alle befinden
-
-   * Regelnamen müssen unabhängig vom Ort eindeutig sein
+* `rules` Knoten sind vom Typ cq:Page.
+* `rules` sollte sich in einem Repository mit Leserechte für alle befinden.
+* Regelnamen müssen unabhängig vom Ort eindeutig sein.
 
