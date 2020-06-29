@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 4%
+source-wordcount: '319'
+ht-degree: 5%
 
 ---
 
@@ -35,9 +35,9 @@ Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen 
 * [Leadership-Pinnwände](/help/communities/enabling-leaderboard.md)
 * [Ideen](/help/communities/ideation-feature.md)
 
-In der Umgebung &quot;Autor&quot;zur Konsole &quot;Badges&quot;
+Navigieren Sie in der Autorenkonsole zur Badges-Umgebung:
 
-* Navigieren Sie zur globalen Navigation zu **[!UICONTROL Tools > Communities > Abzeichen]**
+* Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Communities]** > **[!UICONTROL Abzeichen]**
 
 Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeichen hinzugefügt werden können.
 
