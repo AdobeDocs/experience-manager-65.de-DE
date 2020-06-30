@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 48%
 
 ---
 
@@ -42,9 +45,10 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
 >[!NOTE]
 >
->Die Komponenten `Journal`und `Journal Sidebar` sind mit `Blog` und `Blog Sidebar`.
+>Die Komponenten `Journal` und `Journal Sidebar` sind benannt `Blog` und `Blog Sidebar`.
 >
 >Die Blogfunktion in AEM 6.0 und älteren Versionen wurde eingestellt. Sie beruhte auf einer Vorlage und beschränkte das Verfassen von Inhalten ausschließlich auf die Autorenumgebung.
+
 
 ## Hinzufügen von Blog-Komponenten zu einer Seite {#adding-blog-components-to-a-page}
 
@@ -57,19 +61,21 @@ und ziehen Sie die Elemente an die jeweilige Position auf der Seite, auf der das
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog`component will appear :
+When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear :
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![chlimage_1-147](assets/chlimage_1-147.png)
 
 Und wie das `Blog Sidebar` aussehen wird:
 
-![chlimage_1-230](assets/chlimage_1-230.png)
+![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Konfigurieren eines Blogs {#configuring-blog}
 
 Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-231](assets/chlimage_1-231.png) ![Blog-Einstellungen](assets/blog-configure.png)
+![chlimage_1-149](assets/chlimage_1-149.png)
+
+![Blog-Einstellungen](assets/blog-configure.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
@@ -111,6 +117,7 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 >
 >Mit dem Protokoll-Titel wird automatisch eine URL für den Blog erstellt.
 >Maximal 50 Zeichen (mit 5 zusätzlichen Zeichen zur Eindeutigkeit) werden aus dem hier angegebenen Protokoll-Titel verwendet, um eine URL für den Blog zu erstellen.
+
 
 * **Journalbeschreibung**
 
@@ -162,7 +169,7 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die von ihnen veröffentlichten Kommentare und Blog-Einträge zu löschen. Der Standardwert ist** **nicht markiert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die von ihnen veröffentlichten Kommentare und Blog-Einträge zu löschen. Diese Option ist standardmäßig deaktiviert.
 
 * **Folgende zulassen**
 
@@ -208,7 +215,7 @@ Geben Sie auf der Registerkarte **Benutzermoderation** die Moderationseinstellun
 
 * **Posts kennzeichnen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Themen oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig deaktiviert**.**
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Themen oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig deaktiviert.
 
 * **Liste mit Kenn-zeichnungsgründen**
 
@@ -216,7 +223,7 @@ Geben Sie auf der Registerkarte **Benutzermoderation** die Moderationseinstellun
 
 * **Grund für benutzerdefinierte Kennzeichnung**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen einzugeben. Diese Option ist standardmäßig deaktiviert**.**
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen einzugeben. Diese Option ist standardmäßig deaktiviert.
 
 * **Schwellenwert für Moderation**
 
@@ -232,7 +239,7 @@ Auf der Registerkarte **Tag-Feld** können Sie angeben, welche Tags verwendet we
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn auf der Registerkarte **Einstellungen **geprüft `Allow Tagging` wird. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
@@ -255,6 +262,7 @@ Auf der Registerkarte **Journal-Sidebar-Einstellungen** können Sie das Datumsfo
    * MMMMM: vollständiger Monat, z. B. Juni
    * MMM: abgekürzter Monat, z. B. Jun
    * MM: Monatszahl, z. B. 06
+
    Der Standardwert ist &quot;yyyy MMMMM&quot;, der z. B. &quot;Juni 2015&quot;anzeigen würde.
 
 * **Ansichtstyp**
@@ -299,7 +307,7 @@ Die Blogartikel erscheinen auf der entsprechenden Registerkarte („Veröffentli
 
 Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er [Moderationsaufgaben](/help/communities/moderate-ugc.md) für alle Blogartikel und Komponenten des Blogs durchführen (je nach Berechtigungen durch die Konfiguration der Komponente).
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Mitglieder {#members}
 
@@ -314,13 +322,15 @@ Insbesondere können sie
 * Löschen Sie einen eigenen Blog-Artikel oder -Kommentar
 * Markieren von Blog-Artikeln oder -Kommentaren anderer Benutzer
 
-![chlimage_1-233](assets/chlimage_1-233.png) ![chlimage_1-234](assets/chlimage_1-234.png)
+![chlimage_1-153](assets/chlimage_1-153.png)
+
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 #### Anonym {#anonymous}
 
 Nicht angemeldete Besucher können veröffentlichte Blogartikel und Kommentare lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Artikel oder Kommentare hinzufügen und keine Artikel und Kommentare anderer Benutzer kennzeichnen.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-155](assets/chlimage_1-155.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
