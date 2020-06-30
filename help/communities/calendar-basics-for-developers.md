@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 3%
 
 ---
 
@@ -63,18 +66,18 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
 
 ### Kalenderfunktion {#calendar-function}
 
-Eine Community-Site-Struktur, die die [Kalenderfunktion](functions.md#calendar-function) enthält, verfügt über eine konfigurierte c- `alendar`Komponente. Die Kalenderfunktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur, die die [Kalenderfunktion](functions.md#calendar-function) enthält, verfügt über eine konfigurierte `calendar` Komponente. Die Kalenderfunktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
 
-### Zugriff auf Kalenderbeiträge {#accessing-calendar-posts-ugc}
+### Zugriff auf Kalenderbeiträge (UGC) {#accessing-calendar-posts-ugc}
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
 * [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien zum Kodieren
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
 * [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
 
