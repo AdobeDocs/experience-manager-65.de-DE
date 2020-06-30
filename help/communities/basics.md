@@ -1,8 +1,8 @@
 ---
 title: Grundlagen zu Communities-Komponenten
 seo-title: Grundlagen zu Communities-Komponenten
-description: Hinzufügen von Communities-Funktionen zu AEM-Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
-seo-description: Hinzufügen von Communities-Funktionen zu AEM-Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
+description: Funktionen von Communities auf AEM-Sites im Bearbeitungsmodus Hinzufügen und Komponenten konfigurieren
+seo-description: Funktionen von Communities auf AEM-Sites im Bearbeitungsmodus Hinzufügen und Komponenten konfigurieren
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 61%
 
 ---
 
@@ -34,6 +37,7 @@ Die verfügbaren Communities-Komponenten sind [hier](author-communities.md#avail
 >For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 >
 >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+
 
 ### Designmodus aktivieren {#entering-design-mode}
 
