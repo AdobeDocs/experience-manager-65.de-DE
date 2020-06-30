@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -41,7 +41,7 @@ Navigieren Sie in der Autorenkonsole zur Badges-Umgebung:
 
 Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeichen hinzugefügt werden können.
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![badges-homepage](assets/badges-homepage.png)
 
 ## Abzeichen erstellen {#create-badge}
 
@@ -49,7 +49,7 @@ Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen w
 
 Wenn die Umgebung zum Veröffentlichen eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](/help/communities/sync.md)konfigurieren.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![badges-1](assets/badges-1.png)
 
 * **Bild hochladen**
 
