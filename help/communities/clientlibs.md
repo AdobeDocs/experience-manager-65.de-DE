@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 2%
 
 ---
 
@@ -38,11 +41,11 @@ Wenn die erforderlichen clientlibs fehlen, kann das [Hinzufügen einer Communiti
 
 ### Beispiel: Platzierte Reviews ohne Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![chlimage_1-426](assets/chlimage_1-426.png)
 
 ### Beispiel: Platzierte Reviews mit Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-427](assets/chlimage_1-427.png)
 
 ## Identifizieren erforderlicher Clientlibs {#identifying-required-clientlibs}
 
@@ -55,7 +58,7 @@ Die erforderlichen clientlibs sind beispielsweise ganz oben auf der Seite [Revie
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-134](assets/chlimage_1-134.png)
+![chlimage_1-246](assets/chlimage_1-246.png)
 
 ## Erforderliche Clientlibs hinzufügen {#adding-required-clientlibs}
 
@@ -63,32 +66,33 @@ Wenn Sie einer Seite eine Communities-Komponente hinzufügen möchten, müssen S
 
 Verwenden Sie [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene clientlibslist für eine Community-Site-Seite zu ändern.
 
-So fügen Sie eine clientlib für eine Community-Site mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) hinzu:
+So fügen Sie eine clientlib für eine Community-Site mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)hinzu:
 
-* Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Suchen Sie die `clientlibslist` Node der Seite, auf der Sie die Komponente hinzufügen möchten
+* Gehen Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
+* Suchen Sie den `clientlibslist` Knoten für die Seite, auf der Sie die Komponente hinzufügen möchten:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Mit `clientlibslist` ausgewählter Node
+* Bei ausgewählter `clientlibslist` Node:
 
-   * Suchen Sie die String[] -Eigenschaft `scg:requiredClientLibs`
-   * Wählen Sie `Value` die Option zum Zugriff auf das Dialogfeld &quot;String-Array&quot;
+   * Suchen Sie die String[] -Eigenschaft `scg:requiredClientLibs`.
+   * Wählen Sie die Option `Value` , um auf das Dialogfeld &quot;String-Array&quot;zuzugreifen.
 
-      * Bei Bedarf scrollen
-      * Wählen Sie +, um eine neue Client-Bibliothek einzugeben
+      * Blättern Sie bei Bedarf nach unten.
+      * Wählen Sie +, um eine neue Client-Bibliothek einzugeben.
 
-         * Wiederholen, um weitere Client-Bibliotheken hinzuzufügen
-      * Wählen Sie **OK** aus
-   * Select **Save All**
+         * Wiederholen Sie diese Schritte, um weitere Client-Bibliotheken hinzuzufügen.
 
+         * Wählen Sie **OK** aus.
+   * Select **Save All**.
 
 
 >[!NOTE]
 >
 >Wenn die Site keine Community-Site ist, muss die Existenz oder der Speicherort der Client-Bibliotheken, die für die Site verwendet werden, ermittelt werden.
 
-Mithilfe des Beispiels &quot; [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) &quot;, in dem `site-name` &quot; *Interagieren*&quot;angegeben ist, wird die clientliblist wie folgt angezeigt, wenn die Komponente &quot;Reviews&quot;hinzugefügt wird:
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+Mithilfe des Beispiels [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) , wo `site-name` &quot; *Interagieren*&quot;angezeigt wird, wird die clientliblist wie folgt angezeigt, wenn die Komponente &quot;Reviews&quot;hinzugefügt wird:
+
+![chlimage_1-247](assets/chlimage_1-247.png)
 
