@@ -1,12 +1,12 @@
 ---
 title: Konfigurieren Sie das Asset-Tagging mit dem Smart Content Service.
-description: Erfahren Sie, wie Sie mit dem Smart Content Service intelligentes Tagging und verbessertes intelligentes Tagging in Adobe Experience Manager konfigurieren.
+description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3d699f35c7b1ef832a0857fa2fa41aed1fe5a4e
+source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 41%
+source-wordcount: '1118'
+ht-degree: 39%
 
 ---
 
@@ -17,10 +17,11 @@ Sie können [!DNL Adobe Experience Manager] mit der Adobe Developer Console in d
 
 Der Artikel beschreibt die folgenden Hauptaufgaben, die zum Konfigurieren des Smart Content Service erforderlich sind. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
-* Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. Erhalten Sie ein öffentliches Zertifikat für die OAuth-Integration.
-* Erstellen Sie eine Integration in Adobe Developer Console und laden Sie den generierten öffentlichen Schlüssel hoch.
-* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
-* Aktivieren Sie optional das automatische Tagging beim Hochladen eines Assets.
+1. Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. [Erhalten Sie ein öffentliches Zertifikat für die OAuth-Integration.](#obtain-public-certificate)
+1. [Erstellen Sie eine Integration in Adobe Developer Console](#create-adobe-i-o-integration) und laden Sie den generierten öffentlichen Schlüssel hoch.
+1. [Konfigurieren Sie Ihre Bereitstellung](#configure-smart-content-service) mithilfe des API-Schlüssels und anderer Anmeldedaten aus der Adobe Developer Console.
+1. [Testen Sie die Konfiguration](#validate-the-configuration).
+1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -29,11 +30,13 @@ Bevor Sie den Smart Content Service verwenden können, stellen Sie Folgendes sic
 * Es ist ein Adobe ID-Konto mit Administratorrechten für die Organisation vorhanden.
 * Der Smart Content Service ist für Ihre Organisation aktiviert.
 
+To enable Enhanced Smart Tags, in addition to the above, also install the latest [AEM service pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+
 ## Abrufen eines öffentlichen Zertifikats {#obtain-public-certificate}
 
 Mit einem öffentlichen Zertifikat können Sie Ihr Profil in der Adobe Developer Console authentifizieren.
 
-1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Extras > Cloud Service]**> **[!UICONTROL Legacy-Cloud Service]** auf.
+1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Werkzeuge]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy-Cloud Service]** auf.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel und einen Namen für die Smart-Tags-Konfiguration ein. Klicken Sie auf **[!UICONTROL Erstellen]**.
@@ -46,6 +49,10 @@ Mit einem öffentlichen Zertifikat können Sie Ihr Profil in der Adobe Developer
    Lassen Sie die anderen Felder vorerst leer (Werte werden später bereitgestellt). Klicken Sie auf **[!UICONTROL OK]**.
 
    ![Dialogfeld &quot;Experience Manager-Smart-Content-Dienst&quot;zur Bereitstellung der Content-Dienst-URL](assets/aem_scs.png)
+
+   >[!NOTE]
+   >
+   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. Die Konfiguration funktioniert mit demselben Wert des [!UICONTROL Service-URL-Parameters] . For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
 
 1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
@@ -84,7 +91,7 @@ Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in de
 
 ## Konfigurieren des Smart Content Service {#configure-smart-content-service}
 
-Verwenden Sie zum Konfigurieren der Integration die Werte der Felder Technische Konto-ID, Organisations-ID, geheimer Clientschlüssel, Autorisierungsserver und API-Schlüssel aus der Adobe Developer Console-Integration. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] instance.
+Verwenden Sie zum Konfigurieren der Integration die Werte der Felder Technische Konto-ID, Organisations-ID, geheimer Clientschlüssel, Autorisierungsserver und API-Schlüssel aus der Adobe Developer Console-Integration. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
 
 1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
 1. Öffnen Sie unter den **[!UICONTROL Smart-Tags für Assets]** die oben erstellte Konfiguration. Klicken Sie auf der Seite mit den Serviceeinstellungen auf **[!UICONTROL Bearbeiten]**.
@@ -96,7 +103,6 @@ Verwenden Sie zum Konfigurieren der Integration die Werte der Felder Technische 
 Nachdem Sie die Konfiguration abgeschlossen haben, können Sie die Konfiguration mit einem JMX MBean überprüfen. Führen Sie zum Überprüfen die folgenden Schritte aus.
 
 1. Greifen Sie auf Ihren [!DNL Experience Manager] Server unter `https://[aem_server]:[port]`.
-
 1. Öffnen Sie unter **[!UICONTROL Tools > Vorgänge > Web-Konsole]** die OSGi-Konsole. Klicken Sie auf **[!UICONTROL Haupt > JMX]**.
 1. Klicken Sie auf **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
 1. Klicken Sie auf **[!UICONTROL validateConfigs()]**. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
@@ -110,7 +116,7 @@ Nachdem Sie die Konfiguration abgeschlossen haben, können Sie die Konfiguration
 1. Click **[!UICONTROL Edit]** from the toolbar.
 1. Erweitern Sie das Seitenbedienfeld, um die Schritte anzuzeigen. Ziehen Sie den Schritt **[!UICONTROL Smart Tag-Asset]**, der im Abschnitt „DAM-Workflow“ verfügbar ist, und platzieren Sie ihn nach dem Schritt **[!UICONTROL Prozessminiaturansichten]**.
 
-   ![[!UICONTROL Schritt zum Hinzufügen von Smart Tag Assets nach dem Schritt „Miniaturansichten verarbeiten“ im Workflow „DAM-Update-Asset“]](assets/smart-tag-in-dam-update-asset-workflow.png)
+   ![Schritt zum Hinzufügen von Smart Tag Assets nach dem Schritt „Miniaturansichten verarbeiten“ im Workflow „DAM-Update-Asset“](assets/smart-tag-in-dam-update-asset-workflow.png)
 
    *Abbildung: Hinzufügen Schritt für Smart-Tag-Assets nach dem Schritt für die Prozessminiaturansicht im Arbeitsablauf für[!UICONTROL DAM-Aktualisierung des Assets].*
 
