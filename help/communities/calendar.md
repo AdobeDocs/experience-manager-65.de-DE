@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 46%
 
 ---
 
@@ -25,7 +28,7 @@ Mit der Kalenderfunktion können der Community Veranstaltungsdaten im Kalenderfo
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der Kalenderfunktion zu einer AEM-Site
-* Configuration settings for `Calendar`components
+* Configuration settings for `Calendar` components
 
 ## Hinzufügen eines Kalenders zu einer Seite {#adding-a-calendar-to-a-page}
 
@@ -39,13 +42,13 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
 
-![chlimage_1-147](assets/chlimage_1-147.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Konfigurieren eines Kalenders {#configuring-calendar}
 
-Select the placed `Calendar`component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-148](assets/chlimage_1-148.png) ![chlimage_1-149](assets/chlimage_1-149.png)
+![chlimage_1-113](assets/chlimage_1-113.png)![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
@@ -133,7 +136,7 @@ Under the **User Moderation** tab, specify how the posted topics and replies (us
 
 * **Posts kennzeichnen**
 
-   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Ereignisse oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig aktiviert**.**
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, die Ereignisse oder Kommentare anderer als unangemessen zu kennzeichnen. Diese Option ist standardmäßig aktiviert.
 
 * **Liste mit Kenn-zeichnungsgründen**
 
@@ -141,7 +144,7 @@ Under the **User Moderation** tab, specify how the posted topics and replies (us
 
 * **Grund für benutzerdefinierte Kennzeichnung**
 
-   Wenn diese Option aktiviert ist, können Sie den Mitgliedern gestatten, einen eigenen Grund für die Kennzeichnung eines Ereignisses oder Kommentars als unangemessen einzugeben. Diese Option ist standardmäßig deaktiviert**.**
+   Wenn diese Option aktiviert ist, können Sie den Mitgliedern gestatten, einen eigenen Grund für die Kennzeichnung eines Ereignisses oder Kommentars als unangemessen einzugeben. Diese Option ist standardmäßig deaktiviert.
 
 * **Schwellenwert für Moderation**
 
@@ -167,6 +170,7 @@ Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausg
 >
 >Unter [Verwalten von Tags](/help/sites-administering/tags.md) finden Sie Informationen darüber, wie Sie neue Tag-Namespaces (Taxonomie) hinzufügen können.
 
+
 #### Registerkarte &quot;Übersetzung&quot; {#translation-tab}
 
 Auf der Registerkarte **Übersetzung** können Sie festlegen, ob bei für die Community-Site aktivierten Übersetzungsoption anstatt bestimmter Einträge der gesamte Thread (Veranstaltung und Kommentare) übersetzt werden soll.
@@ -187,7 +191,7 @@ Die Verfügbarkeit weiterer Optionen hängt davon ab, ob der Site-Besucher Moder
 
 Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er [Moderationsaufgaben](/help/communities/moderate-ugc.md) für alle Kalenderereignisse und Kommentare der Veranstaltung durchführen (je nach Berechtigungen durch die Konfiguration der Komponente).
 
-![chlimage_1-150](assets/chlimage_1-150.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### Mitglieder {#members}
 
@@ -201,13 +205,15 @@ Insbesondere können sie
 * Löschen eines eigenen Ereignisses oder Kommentars
 * Ereignisse oder Kommentare anderer kennzeichnen
 
-![chlimage_1-151](assets/chlimage_1-151.png) ![chlimage_1-152](assets/chlimage_1-152.png)
+![chlimage_1-116](assets/chlimage_1-116.png)
+
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 #### Anonym {#anonymous}
 
 Nicht registrierte oder angemeldete Besucher können veröffentlichte Veranstaltungen und Kommentare lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Veranstaltungen oder Kommentare hinzufügen und keine Veranstaltungen und Kommentare anderer Benutzer kennzeichnen.
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
