@@ -10,18 +10,21 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
 
-# Clientseitige Anpassung {#client-side-customization}
+# Clientseitige Anpassung  {#client-side-customization}
 
 | **[⇐ Essentials](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
 |---|---|
 |  | **[SCF-Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
-Um das Erscheinungsbild und/oder Verhalten einer AEM Communities-Komponente clientseitig anzupassen, gibt es mehrere Ansätze.
+Zum Anpassen des Erscheinungsbilds und/oder Verhaltens einer AEM Communities-Komponente auf Clientseite gibt es mehrere Ansätze.
 
 Zwei Hauptansätze sind das Überlagern oder Erweitern einer Komponente.
 
@@ -106,17 +109,18 @@ Die benutzerdefinierten Stile überschreiben jetzt die standardmäßigen Rahmens
 >
 >Obwohl die `scf-js` Klassen keine Auswirkungen auf Stile haben, können die Klassennamen in Stylesheets mit dem Vorbehalt verwendet werden, dass, da sie die Status von Elementen steuern, es möglicherweise Nebenwirkungen geben kann.
 
+
 ## JavaScript erweitern {#extending-javascript}
 
-Um eine JavaScript-Implementierung der Komponenten zu erweitern, benötigen Sie nur
+Um eine JavaScript-Implementierung der Komponenten zu erweitern, müssen Sie:
 
-1. Erstellen Sie eine Komponente für Ihre App mit einem Wert für jcr:resourceSuperType der erweiterten Komponente jcr:resourceType, z. B. social/forum/components/hbs/forum
-1. Prüfen Sie das JavaScript der Standardkomponente der SCF, um festzustellen, welche Methoden mit SCF.registerComponent() registriert werden müssen.
-1. Kopieren Sie entweder das JavaScript oder den Beginn der erweiterten Komponente von Grund auf
-1. Methode erweitern
+1. Erstellen Sie eine Komponente für Ihre App, deren Wert &quot;jcr:resourceSuperType&quot;auf den Wert &quot;jcr:resourceType&quot;der erweiterten Komponente gesetzt ist, z. B. &quot;social/forum/components/hbs/forum&quot;.
+1. Prüfen Sie das Javascript der Standardkomponente der SCF, um zu bestimmen, welche Methoden mit SCF.registerComponent() registriert werden müssen.
+1. Kopieren Sie entweder das JavaScript oder den Beginn der erweiterten Komponente von Grund auf.
+1. Erweitern Sie die Methode.
 1. Verwenden Sie SCF.registerComponent(), um alle Methoden entweder mit den Standardwerten oder den angepassten Objekten und Ansichten zu registrieren.
 
-### forum.js: Beispielerweiterung des Forums - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Beispielerweiterung des Forums - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
