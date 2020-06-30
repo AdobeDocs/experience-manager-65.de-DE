@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 4%
 
 ---
 
@@ -27,6 +30,7 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Blog
 >[!NOTE]
 >
 >Die zugrunde liegende Infrastruktur der Blog-Funktion ist die Protokoll-Funktion.
+
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -68,10 +72,10 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 | **resourceType** | social/Protokoll/components/hbs/sidebar |
 |---|---|
 | [**einschließbar **](/help/communities/scf.md#add-or-include-a-communities-component) | Nein |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.Protokoll_sidebar |
+| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **properties** | siehe [Blog-Funktion](/help/communities/blog-feature.md) |
+| **Eigenschaften** | siehe [Blog-Funktion](/help/communities/blog-feature.md) |
 
 * [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
@@ -98,16 +102,16 @@ Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](/hel
 
 Siehe :
 
-* [Übersicht über](/help/communities/srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](/help/communities/srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](/help/communities/srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](/help/communities/srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) - Codierungsrichtlinien.
+* [SocialUtils Refactoring](/help/communities/socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
-## Herausgeber {#primary-publisher}
+## Primär Publisher {#primary-publisher}
 
 Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, müssen Sie einen primären Herausgeber identifizieren, der nach Artikeln sucht, deren Veröffentlichung geplant ist.
 
-Weitere Informationen finden Sie unter [Primärherausgeber](/help/communities/deploy-communities.md#primary-publisher) .
+Weitere Informationen finden Sie unter [Primär Publisher](/help/communities/deploy-communities.md#primary-publisher) .
 
 ## Rich Media zulassen {#allowing-rich-media}
 
@@ -119,5 +123,5 @@ Ab AEM 6.2 sind die zuvor manuell vorzunehmenden Änderungen in der standardmä�
 
 Rich-Media-Daten werden durch Auswahl des `Embed Media from External Sites` Symbols in einen Blog-Artikel eingebettet:
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![chlimage_1-471](assets/chlimage_1-471.png)
 
