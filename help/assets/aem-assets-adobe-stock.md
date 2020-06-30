@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Stock] Assets verwalten in [!DNL Adobe Experience Manager A
 description: Suchen, Abrufen, Lizenz und [!DNL Adobe Stock] Verwalten von Assets von innen [!DNL Adobe Experience Manager]aus. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
+source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 23%
+source-wordcount: '1109'
+ht-degree: 22%
 
 ---
 
@@ -31,7 +31,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 
 ### Erstellen einer IMS-Konfiguration   {#create-an-ims-configuration}
 
-1. Click on [!DNL Experience Manager] logo. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloudlösung]** > **[!UICONTROL Adobe Stock]**.
+1. Navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloudlösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Add the downloaded public key to your [!DNL Adobe Developer Console] service account. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm &quot;Konfiguration [!UICONTROL des technischen Kontos von] Adobe IMS&quot;geöffnet, um die Werte in Kürze bereitzustellen.
@@ -52,7 +52,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 
 >[!NOTE]
 >
->Wenn mehrere [!DNL Adobe Stock] Konfigurationen vorhanden sind, wählen Sie die gewünschte Konfiguration im Bedienfeld &quot; [!UICONTROL Benutzereinstellungen] &quot;aus. Klicken Sie auf das *Benutzerlogo* in der oberen rechten Ecke der [!DNL Experience Manager] Benutzeroberfläche.
+>If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in User Preferences panel (**[!UICONTROL AEM]** > **[!UICONTROL User Icon]** > **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
 
 ## Verwenden und Verwalten von [!DNL Adobe Stock] Assets in [!DNL Experience Manager] {#usemanage}
 
