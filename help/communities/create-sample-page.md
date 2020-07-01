@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 4%
 
 ---
 
@@ -33,7 +36,7 @@ Der Hauptunterschied ist, dass dieses Tutorial eine neue Community-Site-Vorlage 
 
 Erstellen Sie zunächst eine einfache [Community-Site-Vorlage](sites.md).
 
-Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Extras > Communities > Site-Vorlagen]**.
+Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Extras]** > **[!UICONTROL Communities]** > **[!UICONTROL Site-Vorlagen]**.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -78,10 +81,10 @@ Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!U
    * `Name`: Beispiel
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`: auswählen `Single Page Template`
 
+      * `Template`: auswählen `Single Page Template`
+      ![chlimage_1-86](assets/chlimage_1-86.png)
 
-![chlimage_1-86](assets/chlimage_1-86.png)
 
 * Wählen Sie nun eine der folgenden Optionen aus `Next`
 * Schritt `2 - Design`
@@ -95,7 +98,7 @@ Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!U
 
 * Wählen Sie nun eine der folgenden Optionen aus `Create`
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+   ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ## Veröffentlichen der Site {#publish-the-site}
 
