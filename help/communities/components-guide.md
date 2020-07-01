@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 3%
 
 ---
 
@@ -33,14 +36,14 @@ Die Website &quot;Community-Komponenten&quot;finden Sie unter
 
 Die Interaktionen mit den Communities-Komponenten variieren je nach:
 
-* Der Server (Autor oder Veröffentlichungsserver)
-* Ob der Site-Besucher angemeldet ist oder nicht
-* Bei Anmeldung werden die dem Mitglied zugewiesenen Rechte
-* Ob der Standard-SRP, [JSRP](jsrp.md), verwendet wird
+* Der Server (Autor oder Veröffentlichungsserver).
+* Gibt an, ob der Site-Besucher angemeldet ist.
+* Wenn Sie sich angemeldet haben, werden die dem Mitglied zugewiesenen Rechte angezeigt.
+* Gibt an, ob der Standard-SRP, [JSRP](jsrp.md), verwendet wird.
 
 Wenn Sie beim Autor in den Bearbeitungsmodus wechseln möchten, fügen Sie nach dem Servernamen entweder `editor.html` oder `cf#` als erstes Pfadsegment ein:
 
-* Standard-UI:
+* Standard-Benutzeroberfläche:
 
    [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
@@ -59,6 +62,7 @@ Wenn Sie beim Autor in den Bearbeitungsmodus wechseln möchten, fügen Sie nach 
 >For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 >
 >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+
 
 ### Startseite {#home-page}
 
@@ -107,9 +111,11 @@ Auf der Registerkarte **Vorlagen** :
    Wenn diese Option deaktiviert ist, verwendet das Komponentenleitfaden die vorhandene Ressource im Repository (einen jcr-Knoten, der einem par-Knoten untergeordnet ist).
 
    * angezeigter Text: &quot;Diese Komponente wird über ihren par-Knoten eingeschlossen.&quot;
+
    Wenn diese Option aktiviert ist, verwendet das Komponentenleitfaden sling, um dynamisch eine Komponente des resourceType des untergeordneten Knotens (nicht vorhandene Ressource) einzuschließen.
 
    * angezeigter Text: &quot;Diese Komponente wird dynamisch einbezogen.&quot;
+
    Diese Option ist standardmäßig deaktiviert.
 
 ### Veröffentlichungsinteraktionen {#publish-interactions}
