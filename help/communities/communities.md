@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 10%
 
 ---
 
 
-# Entwicklungsländer {#developing-communities}
+# Entwicklungsländer  {#developing-communities}
 
 ## Überblick {#overview}
 
@@ -30,8 +33,9 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 * [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
 
 >[!NOTE]
->
+> 
 >Es wird dringend empfohlen, über die [neuesten Versionen](deploy-communities.md#latest-releases)auf dem Laufenden zu bleiben.
+
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
@@ -40,17 +44,17 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ## Social Component Framework {#social-component-framework}
 
-* [Social-Komponenten-Framework](scf.md): Überblick über Framework und APIs
-* [SCF Handlebars Helpers](handlebars-helpers.md): Standard-Helfer und Schreiben von benutzerdefinierten Helfern
-* [Clientseitige Anpassung](client-customize.md): Anpassen von Code, der im Browser ausgeführt wird
-* [Serverseitige Anpassung](server-customize.md): Anpassen von Code, der auf dem Server ausgeführt wird
-* [Datenspeicherung Resource Provider (SRP)](srp.md): Übersicht über die Datenspeicherung von Community-Inhalten
-* [Kodierungsleitlinien](code-guide.md): Richtlinien, Tipps und Tricks
-* [Leitfaden](components-guide.md)zu Community-Komponenten: interaktives Entwicklungstool
+* [Social-Komponenten-Framework](scf.md): Überblick über Framework und APIs.
+* [SCF Handlebars Helpers](handlebars-helpers.md): Standard-Helfer und wie Sie benutzerdefinierte Helfer schreiben.
+* [Clientseitige Anpassung](client-customize.md): Anpassen von Code, der im Browser ausgeführt wird.
+* [Serverseitige Anpassung](server-customize.md): Anpassen von Code, der auf dem Server ausgeführt wird.
+* [Datenspeicherung Resource Provider (SRP)](srp.md): Überblick über die Datenspeicherung von Community-Inhalten.
+* [Kodierungsleitlinien](code-guide.md): Richtlinien, Tipps und Tricks.
+* [Leitfaden](components-guide.md)zu Community-Komponenten: interaktives Entwicklungstool.
 
 ## Komponenten, Funktionen und Funktionen {#component-function-and-feature-essentials}
 
-Die Komponenten, Funktionen und Funktionen von AEM Communities stellen die Bausteine für [Community-Sites](sites-console.md)dar.
+AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine für [Community-Sites](sites-console.md)dar.
 
 * [Komponenten, Funktionen und Funktionen](essentials.md)
 * [Clientlibs für Communities-Komponenten](clientlibs.md)
