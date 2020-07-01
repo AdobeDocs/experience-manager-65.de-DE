@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -230,6 +230,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    >
    >
 * Erstellen von eindeutigen Abzeichen-Bildern für verschiedene AEM-Sites
+
 >
 
 
@@ -264,7 +265,7 @@ Zu Ermittlungszwecken wird beispielsweise mithilfe von JSRP der Basisordner mit 
 
 * `/content/usergenerated/asi/jcr`
 
-Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.
+Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
