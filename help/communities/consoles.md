@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 2%
 
 ---
 
 
 # Communities Konsolen {#communities-consoles}
 
-Die AEM Communities-Konsolen, die in der Authoring-Umgebung im globalen Navigationsbereich verfügbar sind, bieten Zugriff auf administrative Aufgaben wie:
+Die AEM Communities-Konsolen, die in der Authoring-Umgebung über das globale Navigationsfenster verfügbar sind, bieten Zugriff auf administrative Aufgaben wie:
 
 * [Erstellen einer Community-Site](sites-console.md)
 * Hinzufügen von [verschachtelten Gruppen](groups.md) innerhalb der Site
@@ -34,6 +37,7 @@ In der Autorenversion sind die `Communities` Konsolen nach der Anmeldung mit Adm
 >[!NOTE]
 >
 >In der Umgebung &quot;Veröffentlichen&quot;zeigt eine [Community-Site](sites-console.md) ein `Administration` Menüelement an, wenn das angemeldete Mitglied über entsprechende Berechtigungen verfügt.
+
 
 ## Globaler Navigationsbereich {#global-navigation-panel}
 
@@ -64,7 +68,7 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie aus der g
 
 * [Berichte](reports.md)
 
-   In der Konsole &quot;Berichte&quot;können Berichte zu Zuweisungen, Ansichten und geposteten Inhalten generiert werden, wenn eine Community-Site Adobe Analytics [aktiviert hat](sites-console.md#analytics). Die Konsole ist nur in der Authoring-Umgebung verfügbar.
+   In der Konsole &quot;Berichte&quot;können Berichte zu Zuweisungen, Ansichten und geposteten Inhalten generiert werden, wenn eine Community-Site Adobe Analytics [](sites-console.md#analytics)aktiviert hat. Die Konsole ist nur in der Authoring-Umgebung verfügbar.
 
 * [Ressourcen](resources.md)
 
@@ -72,4 +76,4 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie aus der g
 
 ## Tools-Konsole {#tools-console}
 
-So greifen Sie über die globale Navigation auf [Communities Tools](tools.md) (früher Administration Console) zu: **[!UICONTROL Werkzeuge > Communities]**
+So greifen Sie über die globale Navigation auf [Communities Tools](tools.md) (früher Administration Console) zu: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Communities]**
