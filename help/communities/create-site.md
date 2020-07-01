@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ## Community-Site erstellen {#create-a-community-site}
 
-Verwenden Sie die Autoreninstanz, um eine Community-Site zu erstellen. Auf AEM-Autoreninstanz:
+Verwenden Sie die Autoreninstanz, um eine Community-Site zu erstellen. Bei AEM Author-Instanz:
 
 1. Melden Sie sich mit Administratorrechten an.
 1. Gehen Sie von der globalen Navigation zu **Navigation, Communities, Sites.**
@@ -29,7 +32,7 @@ Die Communities Sites-Konsole bietet einen Assistenten, der Sie durch die Schrit
 
 So erstellen Sie eine neue Community-Site:
 
-* Wählen Sie die `Create`Schaltfläche aus.
+* Wählen Sie die `Create` Schaltfläche aus.
 
 ![createcommunitysite](assets/createcommunitysite.png)
 
@@ -54,7 +57,7 @@ Geben Sie im Schritt [&quot;](/help/communities/sites-console.md#step2013asitete
 
 * **Vorlage**: nach unten ziehen `Reference Site`
 
-Wählen Sie **Weiter** aus
+* Wählen Sie **Weiter** aus.
 
 ### Schritt 2: Design {#step-design}
 
@@ -68,7 +71,9 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 (Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird an der linken Kante des Browsers zwischen dem Community-Site-Header und den Navigationslinks fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
 
-![chlimage_1-58](assets/chlimage_1-58.png) ![chlimage_1-59](assets/chlimage_1-59.png)
+![chlimage_1-284](assets/chlimage_1-284.png)
+
+![upload-image-site](assets/upload-image-site.png)
 
 Wählen Sie **Weiter** aus.
 
@@ -76,7 +81,7 @@ Wählen Sie **Weiter** aus.
 
 Beachten Sie, dass im Schritt Einstellungen vor der Auswahl `Next`sieben Abschnitte für den Zugriff auf Konfigurationen mit Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse, Übersetzung und Aktivierung zur Verfügung stehen.
 
-Besuchen Sie das Tutorial [Erste Schritte mit AEM Communities für Aktivierung](/help/communities/getting-started-enablement.md) , um sich mit den Funktionen für die Aktivierung vertraut zu machen.
+Besuchen Sie das Tutorial [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md) , um sich mit den Funktionen für die Aktivierung vertraut zu machen.
 
 #### Benutzerverwaltung {#user-management}
 
@@ -92,6 +97,7 @@ Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communitie
 >
 >Für eine Produktions-Umgebung ist es erforderlich, benutzerdefinierte Facebook- und Twitter-Anwendungen zu erstellen. Siehe [Social-Anmeldung bei Facebook und Twitter](/help/communities/social-login.md).
 
+
 ![Community-Site-Einstellungen](assets/site-settings.png)
 
 #### TAGGING {#tagging}
@@ -103,7 +109,7 @@ Die Suche nach Namensräumen ist mit der Typenvorschau einfach. Beispiel:
 * Typ `tut`
 * Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
 
-![chlimage_1-60](assets/chlimage_1-60.png)
+![chlimage_1-286](assets/chlimage_1-286.png)
 
 #### ROLES {#roles}
 
@@ -120,21 +126,22 @@ Beispiel:
 >
 >[Der Tunnel-Dienst](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungs-Umgebung vorhanden sind.
 
+
 ![Benutzerrollen in neuen Sites](assets/site-admin-1.png)
 
 #### MODERATION {#moderation}
 
 Übernehmen Sie die globalen Standardeinstellungen für die [Moderation](/help/communities/sites-console.md#moderation) benutzergenerierter Inhalte (UGC).
 
-![chlimage_1-61](assets/chlimage_1-61.png)
+![chlimage_1-287](assets/chlimage_1-287.png)
 
 #### ANALYTICS {#analytics}
 
-Wenn Adobe Analytics lizenziert ist und ein Analytics-Cloud-Dienst und -Framework konfiguriert wurden, können Sie Analytics aktivieren und das Framework auswählen.
+Wenn Adobe Analytics lizenziert ist und ein Analytics Cloud-Dienst und -Framework konfiguriert wurden, ist es möglich, Analytics zu aktivieren und das Framework auszuwählen.
 
-Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md).
+Informationen zu Communities-Funktionen finden Sie unter [Analytics-Konfiguration](/help/communities/analytics.md).
 
-![chlimage_1-62](assets/chlimage_1-62.png)
+![chlimage_1-288](assets/chlimage_1-288.png)
 
 #### TRANSLATION {#translation}
 
@@ -147,21 +154,23 @@ Die [Übersetzungseinstellungen](/help/communities/sites-console.md#translation)
 * Gesamte Seite **übersetzen auswählen**
 * Standardpersistenzoption deaktivieren
 
-![chlimage_1-63](assets/chlimage_1-63.png)
+![chlimage_1-289](assets/chlimage_1-289.png)
 
 #### ENABLEMENT {#enablement}
 
 Lassen Sie beim Erstellen einer Interaktionsgemeinschaft leer.
 
-Eine ähnliche Übung zum schnellen Erstellen einer [Aktivierungsgemeinschaft](/help/communities/overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md).
+Eine ähnliche Übung zum schnellen Erstellen einer [Aktivierungs-Community](/help/communities/overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities zur Aktivierung](/help/communities/getting-started-enablement.md).
 
 Wählen Sie **Weiter** aus.
+
+![chlimage_1-290](assets/chlimage_1-290.png)
 
 ### Schritt 4: Communities-Site erstellen {#step-create-communities-site}
 
 Wählen Sie **Erstellen.**
 
-![chlimage_1-64](assets/chlimage_1-64.png)
+![chlimage_1-291](assets/chlimage_1-291.png)
 
 Nach Abschluss des Prozesses wird der Ordner für die neue Site in der Konsole Communities - Sites angezeigt.
 
@@ -210,18 +219,16 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 >
 >Auf der Autoreninstanz über das Hauptmenü:
 >
->1. Navigieren Sie zu **[!UICONTROL Tools > Vorgänge > Replizierungsmenü]** .
+>1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > Menü **[!UICONTROL Replikation]** .
 >1. Wählen Sie **[!UICONTROL Agenten beim Autor]**.
 >1. Wählen Sie **[!UICONTROL Standardagent (publish)]**.
 >1. Wählen Sie neben **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Bearbeiten]**.
 >1. Wählen Sie im Popup-Dialogfeld für Agenteneinstellungen die Registerkarte **[!UICONTROL Transport]** .
->1. Ändern Sie in URI die Anschlussnummer 4503 in die gewünschte Anschlussnummer >
-   >    * So verwenden Sie z. B. Port 6103:
-      >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
->
-1. Wählen Sie **[!UICONTROL OK]** aus.
-1. (Optional) Wählen Sie **[!UICONTROL Löschen]** oder Wiederholen **[!UICONTROL erzwingen]** , um die Replikationswarteschlange zurückzusetzen.
+>1. Ändern Sie in URI die Anschlussnummer 4503 in die gewünschte Anschlussnummer. So verwenden Sie z. B. Port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>1. Wählen Sie **[!UICONTROL OK]** aus.
+>1. (Optional) Wählen Sie **[!UICONTROL Löschen]** oder Wiederholen **[!UICONTROL erzwingen]** , um die Replikationswarteschlange zurückzusetzen.
 
+>
 
 
 
@@ -229,11 +236,11 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
 Nachdem Sie sichergestellt haben, dass der Veröffentlichungsserver ausgeführt wird, wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen.
 
-![chlimage_1-65](assets/chlimage_1-65.png)
+![chlimage_1-292](assets/chlimage_1-292.png)
 
 Wenn die Community-Site erfolgreich veröffentlicht wurde, wird eine kurze Nachricht angezeigt:
 
-![chlimage_1-66](assets/chlimage_1-66.png)
+![chlimage_1-293](assets/chlimage_1-293.png)
 
 ### Neue Community-Benutzergruppen {#new-community-user-groups}
 
@@ -254,11 +261,11 @@ Beachten Sie, dass [Aaron McDonald](/help/communities/tutorials.md#demo-users) M
 * Community-Interaktionsmoderatoren
 * Community-Interage-Mitglieder (indirekt als Mitglied der Moderatoren-Gruppe)
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![chlimage_1-294](assets/chlimage_1-294.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 ## Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
@@ -293,7 +300,7 @@ Erste Schritte:
 
    * Hinzufügen Eigenschaft:
 
-      * **Name** sling:match
+   * **Name** sling:match
       * **Typzeichenfolge**
       * **Wert** localhost.4503/$(muss mit &#39;$&#39; char enden)
    * Hinzufügen Eigenschaft:
@@ -313,13 +320,14 @@ Erste Schritte:
 >
 >Zur Deaktivierung setzen Sie dem `sling:match` Eigenschaftswert einfach das Präfix &quot;x&quot;- `xlocalhost.4503/$` - und das Präfix **&quot;Alle** speichern&quot;.
 
-![chlimage_1-69](assets/chlimage_1-69.png)
+
+![chlimage_1-297](assets/chlimage_1-297.png)
 
 #### Fehlerbehebung: Fehler beim Speichern der Map {#troubleshooting-error-saving-map}
 
 Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen versehen ist, da es sich nicht um ein gültiges Namensraum-Präfix `localhost`handelt.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![chlimage_1-298](assets/chlimage_1-298.png)
 
 #### Fehlerbehebung: Fehler bei der Umleitung {#troubleshooting-fail-to-redirect}
 
@@ -336,4 +344,5 @@ Denken Sie nach jeder Änderung daran, die Site zu **speichern** und erneut zu *
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+
 
