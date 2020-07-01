@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
+source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7665'
 ht-degree: 71%
 
 ---
@@ -458,6 +458,16 @@ In der folgenden Tabelle werden Prüfungs- und Protokollierungsverfahren beschri
   </tr> 
  </tbody> 
 </table>
+
+### Ausführung von PDF Generator durch Benutzer ohne zulassen, die keine Administratoren sind
+
+Sie können Benutzern ohne Administratorberechtigungen die Verwendung von PDF Generator erlauben. Normalerweise können nur Benutzer mit Administratorrechten PDF Generator verwenden. Führen Sie die folgenden Schritte aus, um einem Benutzer ohne Administratorrechte die Ausführung von PDF Generator zu ermöglichen:
+
+1. Erstellen Sie den Umgebungsvariablennamen PDFG_NON_ADMIN_ENABLED.
+
+1. Legen Sie als Wert der Variablen TRUE fest.
+
+1. Starten Sie die AEM Forms-Instanz neu.
 
 ## Konfigurieren von AEM Forms on JEE für den Zugriff außerhalb des Unternehmens {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
