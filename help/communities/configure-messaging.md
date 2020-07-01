@@ -11,20 +11,35 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 13%
 
 ---
 
 
 # Messaging-Funktion {#messaging-feature}
 
-Zusätzlich zu den öffentlich sichtbaren Interaktionen, die in Foren und Kommentaren auftreten, ermöglicht die Messaging-Funktion von AEM Communities Community es Community-Mitgliedern, privat miteinander zu interagieren.
+Zusätzlich zu den öffentlich sichtbaren Interaktionen, die in Foren und Kommentaren auftreten, ermöglicht die Messaging-Funktion von AEM Communities, dass Community-Mitglieder privat miteinander interagieren können.
 
 This feature can be included when a [community site](/help/communities/overview.md#communitiessites) is created.
 
 Die Messaging-Funktion bietet folgende Funktionen:
 
-**A** - Senden Sie eine Nachricht an einen oder mehrere Community-Mitglieder **B** - senden Sie [Bulk-Direktnachrichten an Community-Mitglieder](/help/communities/messaging.md#group-messaging)C **- senden Sie eine Nachricht mit Anlagen** D **- Weiterleiten einer Nachricht** E - Antwort auf eine NachrichtFLöschen Sie eine Nachricht **E** E **E****** ENachricht - Wiederherstellen einer Nachricht
+**A** - Senden einer Nachricht an einen oder mehrere Community-Mitglieder
+
+**B** - Direktnachrichten [stapelweise an Community-Mitgliedsgruppen senden](/help/communities/messaging.md#group-messaging)
+
+**C** - Nachricht mit Anlagen senden
+
+**D** - Weiterleiten einer Nachricht
+
+**E** - Antwort auf eine Nachricht
+
+**F** - Löschen einer Nachricht
+
+**G** - gelöschte Meldung wiederherstellen
 
 ![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
 
@@ -37,6 +52,7 @@ Informationen zum Aktivieren und Ändern der Messaging-Funktion finden Sie unter
 >
 >Es wird nicht unterstützt, `Compose Message, Message, or Message List` Komponenten (in der `Communities`Komponentengruppe) einer Seite im Bearbeitungsmodus des Autors hinzuzufügen.
 
+
 ## Messaging-Komponenten konfigurieren {#configure-messaging-components}
 
 Wenn Messaging für eine Community-Site aktiviert ist, wird es ohne weitere Konfiguration eingerichtet. Die Informationen werden bereitgestellt, wenn die Standardkonfiguration geändert werden muss.
@@ -45,10 +61,10 @@ Wenn Messaging für eine Community-Site aktiviert ist, wird es ohne weitere Konf
 
 Um die Konfiguration der Liste der Nachrichten für **Posteingänge**, **Gesendete Elemente** und **Papierkorbseiten** der Nachrichtenfunktion zu ändern, öffnen Sie die Site im [Autorenbearbeitungsmodus](/help/communities/sites-console.md#authoring-site-content).
 
-1. Wählen Sie im `Preview`Modus den Link &quot; **Nachrichten** &quot;, um die Hauptnachrichtenseite zu öffnen. Wählen Sie dann entweder &quot; **Posteingang**&quot;, &quot; **Gesendete Elemente** &quot;oder &quot; **Papierkorb** &quot;, um die Liste für diese Nachricht zu konfigurieren.
+1. Wählen Sie im `Preview` Modus den Link &quot; **Nachrichten** &quot;, um die Haupt-Messaging-Seite zu öffnen. Wählen Sie dann entweder &quot; **Posteingang**&quot;, &quot; **Gesendete Elemente** &quot;oder &quot; **Papierkorb** &quot;, um die Liste für diese Nachricht zu konfigurieren.
 
 1. Wählen Sie im `Edit` Modus die Komponente auf der Seite aus.
-1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie auf das `link`Symbol klicken.
+1. Um auf das Konfigurationsdialogfeld zuzugreifen, brechen Sie die Vererbung ab, indem Sie auf das `link` Symbol klicken.
 Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot;auswählen, um das Konfigurationsdialogfeld zu öffnen.
 
 1. Nach Abschluss der Konfiguration muss die Vererbung durch Auswahl des `broken link` Symbols wiederhergestellt werden.
@@ -97,7 +113,7 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot
 
 * **Schaltfläche &quot;Löschen&quot;**
 
-   If checked, displays a `Delete`button allowing a message to be marked as read. Will duplicate the delete functionality if **`Message Options`** is also checked.
+   If checked, displays a `Delete` button allowing a message to be marked as read. Will duplicate the delete functionality if **`Message Options`** is also checked.
 
 * **Nachrichtenoptionen**
 
@@ -135,11 +151,11 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot
 
 * **Umleitungs-URL**
 
-   Geben Sie die URL der Seite ein, die nach dem Senden der Nachricht angezeigt wird. Beispiel: `../messaging.html`. 
+   Geben Sie die URL der Seite ein, die nach dem Senden der Nachricht angezeigt wird. Beispiel: `../messaging.html`.
 
 * **URL abbrechen**
 
-   Geben Sie die URL der Seite ein, die angezeigt wird, wenn der Absender die Nachricht abbricht. Beispiel: `../messaging.html`. 
+   Geben Sie die URL der Seite ein, die angezeigt wird, wenn der Absender die Nachricht abbricht. Beispiel: `../messaging.html`.
 
 * **Maximale Länge des Nachrichtenbetreffs**
 
