@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 31%
 
 ---
 
@@ -24,16 +27,17 @@ Die Kommentarfunktion ermöglicht es angemeldeten Site-Besuchern (Mitgliedern), 
 
 Das Dokument beschreibt:
 
-* Adding `Comments`to a page.
-* Configuration settings for the `Comments`component.
+* Adding `Comments` to a page.
+* Configuration settings for the `Comments` component.
 
 >[!NOTE]
 >
 >Das anonyme Posten von Kommentaren wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglieder werden) und anmelden, um Kommentare verfassen zu können.
 
+
 ### Hinzufügen von Kommentaren zu einer Seite {#adding-comments-to-a-page}
 
-To add a `Comments`component to a page in author mode, use the component browser to locate
+To add a `Comments` component to a page in author mode, use the component browser to locate
 
 * `Communities / Comments`
 
@@ -41,21 +45,24 @@ und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. in die Näh
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-comments.md#essentials-for-client-side) are included, this is how the `Comments`component appears.
+When the [required client-side libraries](/help/communities/essentials-comments.md#essentials-for-client-side) are included, this is how the `Comments` component appears.
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Only one `Comments`component may exist on a page. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, z. B. ein Blog, ein Kalender, ein Forum, eine QnA-Datei und Rezensionen.
+>Only one `Comments` component may exist on a page. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, z. B. ein Blog, ein Kalender, ein Forum, eine QnA-Datei und Rezensionen.
+
 
 ### Konfigurieren von Kommentaren {#configuring-comments}
 
 Select the placed `Comments` component to access and select the `Configure` icon which opens the edit dialog.
 
-![Symbolkommentare](assets/configure.png) ![konfigurieren](assets/commentssettings.png)
+![configure-Symbol](assets/configure.png)
 
-#### Registerkarte &quot;Kommentare&quot; {#comments-tab}
+![Kommentareinstellungen](assets/commentssettings.png)
+
+#### Comments tab {#comments-tab}
 
 Legen Sie auf der Registerkarte **Kommentare** fest, wie Benutzer Kommentare eingeben sollen.
 
@@ -157,19 +164,19 @@ Durch Änderung des Kommentarressource-Typs generiert das Kommentarsystem nicht 
 
 Once the custom resource types are known, enter [Design Mode](/help/sites-authoring/default-components-designmode.md) and double click the placed `Comments` component to open a dialog with an extra tab.
 
-Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
 
-![chlimage_1-144](assets/chlimage_1-144.png)
+![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **Kommentarressourcentyp**
 
-   Navigieren Sie zum resourceType einer erweiterten `comment`Komponente (ein einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`
+   Navigieren Sie zum resourceType einer erweiterten `comment` Komponente (ein einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`
 
    Diese Ressource identifiziert den resourceType des UGC, der erstellt wird, wenn ein Besucher einen Kommentar veröffentlicht.
 
 * **Abstimmungs-Ressourcentyp**
 
-   Navigieren Sie zum resourceType einer erweiterten `voting`Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`
+   Navigieren Sie zum resourceType einer erweiterten `voting` Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`
 
    Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wird, wenn ein Besucher eine Stimme veröffentlicht.
 
