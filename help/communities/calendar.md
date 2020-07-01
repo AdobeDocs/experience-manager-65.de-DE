@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 46%
@@ -160,7 +160,7 @@ Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausg
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn auf der Registerkarte **Einstellungen **geprüft `Allow Tagging` wird. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
