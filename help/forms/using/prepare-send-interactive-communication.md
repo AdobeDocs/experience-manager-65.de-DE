@@ -8,7 +8,10 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 4c4a5a15e9cbb5cc22bc5999fb40f1d6db3bb091
+workflow-type: tm+mt
+source-wordcount: '1641'
+ht-degree: 47%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 ## Überblick {#overview}
 
-Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die interaktive Kommunikation in der Agent-Benutzeroberfläche öffnen und eine empfängerspezifische Kopie erstellen, indem er Daten eingibt und Inhalt und Anlagen verwaltet. Schließlich kann der Agent die interaktive Kommunikation an einen Nachbearbeitungsprozess senden.
+Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die Interaktive Kommunikation in der Agent-Benutzeroberfläche öffnen und eine Empfänger-spezifische Kopie erstellen, indem er Daten eingibt und Inhalte und Anlagen verwaltet. Schließlich kann der Agent die interaktive Kommunikation an einen Nachbearbeitungsprozess senden.
 
 Während der Vorbereitung der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche verwaltet der Agent die folgenden Aspekte der interaktiven Kommunikation in der Agent-Benutzeroberfläche, bevor er sie an einen Nachbearbeitungsprozess übermittelt:
 
-* **Daten**: Die Registerkarte „Daten“ der Benutzeroberfläche für Agenten zeigt alle vom Agenten bearbeitbaren Variablen und entsperrten Datenmodelleigenschaften in der interaktiven Kommunikation an. Diese Variablen/Eigenschaften werden beim Bearbeiten oder Erstellen von Dokumentfragmenten in der interaktiven Kommunikation erstellt. Die Registerkarte „Daten“ enthält auch alle Felder, die in der XDP/Druckkanalvorlage erstellt wurden. Die Registerkarte &quot;Daten&quot;wird nur angezeigt, wenn Variablen, Formulardatenmodelleigenschaften oder Felder in der interaktiven Kommunikation vom Agenten bearbeitet werden können.
-* **Inhalt**: Auf der Registerkarte „Inhalt“ verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation. Der Agent kann die Änderungen im Dokumentfragment wie zulässig vornehmen, während die interaktive Kommunikation in den Eigenschaften dieser Dokumentfragmente erstellt wird. Der Agent kann auch ein Dokumentfragment neu anordnen, hinzufügen/entfernen und Seitenumbrüche hinzufügen, sofern dies zulässig ist.
+* **Daten**: Die Registerkarte „Daten“ der Benutzeroberfläche für Agenten zeigt alle vom Agenten bearbeitbaren Variablen und entsperrten Datenmodelleigenschaften in der interaktiven Kommunikation an. Diese Variablen/Eigenschaften werden beim Bearbeiten oder Erstellen von Dokumentfragmenten in der interaktiven Kommunikation erstellt. Die Registerkarte „Daten“ enthält auch alle Felder, die in der XDP/Druckkanalvorlage erstellt wurden. Die Registerkarte &quot;Daten&quot;wird nur angezeigt, wenn Variablen, Formulardatenmodelleigenschaften oder Felder in der interaktiven Kommunikation vorhanden sind, die vom Agenten bearbeitet werden können.
+* **Inhalt**: Auf der Registerkarte „Inhalt“ verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation. Der Agent kann die Änderungen im Dokument-Fragment wie zulässig vornehmen, während die Interaktive Kommunikation in den Eigenschaften dieser Dokument-Fragmente erstellt wird. Der Agent kann auch ein Dokumentfragment neu anordnen, hinzufügen/entfernen und Seitenumbrüche hinzufügen, sofern dies zulässig ist.
 * **Anlagen**: Die Registerkarte &quot;Anlagen&quot;wird in der Benutzeroberfläche des Agenten nur angezeigt, wenn die interaktive Kommunikation über Anlagen verfügt oder der Agent über Bibliothekszugriff verfügt. Der Agent darf die Anlagen ändern oder bearbeiten.
 
 ## Prepare Interactive Communication using the Agent UI {#prepare-interactive-communication-using-the-agent-ui}
@@ -34,7 +37,7 @@ Während der Vorbereitung der interaktiven Kommunikation mithilfe der Agent-Benu
 
    >[!NOTE]
    >
-   >Agent-Benutzeroberfläche funktioniert nur, wenn die ausgewählte interaktive Kommunikation einen Druckkanal hat.
+   >Die Benutzeroberfläche des Agenten funktioniert nur, wenn die ausgewählte Interaktive Kommunikation über einen Kanal zum Drucken verfügt.
 
    ![openagentiui](assets/openagentiui.png)
 
@@ -48,7 +51,7 @@ Während der Vorbereitung der interaktiven Kommunikation mithilfe der Agent-Benu
 
 1. Geben Sie auf der Registerkarte „Daten“ die erforderlichen Daten für Variablen, Formulardatenmodelleigenschaften und Druckvorlagenfelder (XDP) ein. Fill up all the mandatory fields marked with an asterisk (&amp;ast;) to enable the **Submit** button.
 
-   Tippen Sie in der Vorschau für interaktive Kommunikation auf einen Datenfeldwert, um das entsprechende Datenfeld auf der Registerkarte &quot;Daten&quot;zu markieren oder umgekehrt.
+   Tippen Sie auf einen Datenfeldwert in der Vorschau Interaktive Kommunikation, um das entsprechende Datenfeld auf der Registerkarte &quot;Daten&quot;zu markieren oder umgekehrt.
 
 ### Inhalt verwalten {#manage-content}
 
@@ -58,7 +61,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Bearbeiten Sie auf der Registerkarte „Inhalt“ ggf. die Dokumentfragmente. Um den Fokus auf das relevante Fragment in der Inhaltshierarchie zu legen, können Sie entweder auf die entsprechende Zeile oder den entsprechenden Absatz in der Vorschau für interaktive Kommunikation tippen oder direkt in der Inhaltshierarchie auf das Fragment tippen.
+1. Bearbeiten Sie auf der Registerkarte „Inhalt“ ggf. die Dokumentfragmente. Um den Fokus auf das relevante Fragment in der Inhaltshierarchie zu legen, können Sie entweder auf die entsprechende Zeile oder den entsprechenden Absatz in der Vorschau Interaktive Kommunikation tippen oder direkt in der Inhaltshierarchie auf das Fragment tippen.
 
    Beispielsweise wird das Dokumentfragment mit der Zeile „Jetzt online bezahlen ...“ in der Vorschau in der untenstehenden Grafik ausgewählt und das gleiche Dokumentfragment wurde auf der Registerkarte „Inhalt“ ausgewählt.
 
@@ -74,6 +77,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
       * [Teile des Textes markieren](#highlightemphasize)
    * [Sonderzeichen](#specialcharacters)
    * [Tastaturbefehle](/help/forms/using/keyboard-shortcuts.md)
+
    For more information on the actions available for various document fragments in the Agent user interface, see [Actions and info available in the Agent user interface](#actionsagentui).
 
 1. To add a page break to the print output of the Interactive Communication, place the cursor where you want to insert a page break and select Page Break Before or Page Break After ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
@@ -96,12 +100,12 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    >[!NOTE]
    >
-   >Das Symbol &quot;Bibliothekszugriff&quot;ist nur verfügbar, wenn beim Erstellen der interaktiven Kommunikation (im Druckkanal in den Eigenschaften des Dokumentbehälters) der Bibliothekszugriff aktiviert wurde.
+   >Das Symbol &quot;Bibliothekszugriff&quot;ist nur verfügbar, wenn beim Erstellen der Interaktiven Kommunikation der Bibliothekszugriff aktiviert wurde (in den Eigenschaften des Dokument-Containers des Kanals &quot;Drucken&quot;).
 
 1. Wenn die Reihenfolge der Anhänge beim Erstellen der interaktiven Kommunikation nicht gesperrt war, können Sie die Reihenfolge der Anhänge neu anordnen, indem Sie einen Anhang auswählen und auf die Pfeile nach unten oder nach oben tippen.
 1. Verwenden Sie Webvorschau und Druckvorschau, um zu sehen, ob die beiden Ausgaben Ihren Anforderungen entsprechen.
 
-   If you find the previews to be satisfactory, tap **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den vorgenommenen Änderungen zurückzukehren.
+   If you find the previews to be satisfactory, tap **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den vorzunehmenden Änderungen zurückzukehren.
 
 ## Text formatieren {#formattingtext}
 
@@ -136,7 +140,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 #### Anlagenübermittlung {#attachmentdelivery}
 
 * Wenn die interaktive Kommunikation mit serverseitigen APIs als interaktive oder nicht interaktive PDF gerendert wird, enthält die gerenderte PDF-Datei Anlagen als PDF-Anlagen.
-* Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil der Benutzeroberfläche &quot;Mit Agent senden&quot;geladen wird, werden Anlagen als Parameter &quot;List&lt;com.adobe.idp.Document> inAttachmentDocs&quot;übergeben.
+* Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil der Benutzeroberfläche &quot;Mit Agent senden&quot;geladen wird, werden Anlagen als Parameter &quot;Liste&lt;com.adobe.idp.Dokument> inAttachmentDocs&quot;übergeben.
 * Vordefinierte Übermittlungsmechanismen, wie z. B. E-Mail und Drucken, übermitteln auch Anlagen zusammen mit einer PDF-Datei der interaktiven Kommunikation.
 
 ## Aktionen und Informationen, die auf der Benutzeroberfläche für Agenten verfügbar sind {#actionsagentui}
@@ -149,7 +153,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * **Löschen**: Wenn zulässig, löschen Sie das Dokumentfragment aus der interaktiven Kommunikation.
 * **Seitenumbruch vor** (anwendbar für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch vor dem Dokumentfragment ein.
 * **Einzug:** Einzug eines Dokumentenfragments vergrößern oder verkleinern.
-* **Seitenumbruch nach** (gilt für untergeordnete Fragmente des Zielbereichs): Fügt nach dem Dokumentfragment einen Seitenumbruch ein.
+* **Seitenumbruch nach** (gilt für untergeordnete Fragmente des Bereichs Zielgruppe): Fügt nach dem Fragment des Dokuments einen Seitenumbruch ein.
 
 ![docfragoptions](assets/docfragoptions.png)
 
@@ -167,3 +171,41 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * Aufzählungszeichen/Nummerierungen überspringen: Aktivieren Sie „Aufzählungszeichen/Nummerierungen überspringen“ im Listendokumentfragment.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
+## Interaktive Kommunikation als Entwurf speichern {#save-as-draft}
+
+Sie können die Agent-Benutzeroberfläche verwenden, um einen oder mehrere Entwürfe für jede interaktive Kommunikation zu speichern und den Entwurf später abzurufen, um weiter daran zu arbeiten. Sie können für jeden Entwurf einen anderen Namen angeben, um ihn zu identifizieren.
+
+Adobe empfiehlt, diese Anweisungen nacheinander auszuführen, um eine interaktive Kommunikation erfolgreich als Entwurf zu speichern.
+
+### Aktivieren der Funktion Als Entwurf speichern {#before-save-as-draft}
+
+Die Funktion Als Entwurf speichern ist standardmäßig nicht aktiviert. Führen Sie zum Aktivieren der Funktion folgende Schritte durch:
+
+1. Implementieren Sie die [ccrDocumentInstance](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/index.html) Dienstleister-Schnittstelle (SPI). Mit der SPI können Sie die Entwurfsversion der interaktiven Kommunikation mit einer Entwurfs-ID als eindeutigen Bezeichner in der Datenbank speichern.
+1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf.
+1. Tap **[!UICONTROL Create Correspondence Configuration]**.
+1. Wählen Sie **[!UICONTROL Speichern mit CCRDocumentInstanceService]** aktivieren und tippen Sie auf **[!UICONTROL Speichern]**.
+
+### Interaktive Kommunikation als Entwurf speichern {#save-as-draft-agent-ui}
+
+Führen Sie die folgenden Schritte aus, um eine interaktive Kommunikation als Entwurf zu speichern:
+
+1. Wählen Sie eine interaktive Kommunikation in Forms Manager und tippen Sie auf **[!UICONTROL Benutzeroberfläche]**&#x200B;öffnen.
+
+1. Nehmen Sie die gewünschten Änderungen in der Benutzeroberfläche des Agenten vor und tippen Sie auf Als Entwurf **[!UICONTROL speichern]**.
+
+1. Geben Sie den Namen des Entwurfs im Feld &quot; **[!UICONTROL Name]** &quot;ein und tippen Sie auf **[!UICONTROL Fertig]**.
+
+Nachdem Sie die interaktive Kommunikation als Entwurf gespeichert haben, tippen Sie auf Änderungen **[!UICONTROL speichern]** , um weitere Änderungen am Entwurf zu speichern.
+
+### Entwurf einer interaktiven Kommunikation abrufen {#retrieve-draft}
+
+Nachdem Sie eine interaktive Kommunikation als Entwurf gespeichert haben, können Sie sie abrufen, um die Bearbeitung fortzusetzen. Rufen Sie die interaktive Kommunikation ab, indem Sie:
+
+`https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
+
+[draftid] bezieht sich auf den eindeutigen Bezeichner für die Entwurfsversion, die nach dem Speichern einer interaktiven Kommunikation als Entwurf generiert wird.
+
+>[!NOTE]
+>
+>Wenn Sie Änderungen an der interaktiven Kommunikation vornehmen, nachdem Sie sie als Entwurf gespeichert haben, kann der Entwurf nicht geöffnet werden.
