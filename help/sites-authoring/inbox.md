@@ -1,6 +1,6 @@
 ---
-title: 'Ihr Posteingang  '
-seo-title: 'Ihr Posteingang  '
+title: Ihr Posteingang
+seo-title: Ihr Posteingang
 description: Verwalten Ihrer Aufgaben mit dem Posteingang
 seo-description: Verwalten Ihrer Aufgaben mit dem Posteingang
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,15 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 83%
+source-wordcount: '1148'
+ht-degree: 78%
 
 ---
 
 
-# Ihr Posteingang  {#your-inbox}
+# Ihr Posteingang {#your-inbox}
 
 Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (darunter auch aus Workflows und Projekten), z. B. Benachrichtigungen bezüglich:
 
@@ -48,7 +48,8 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 >* [Projekte](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Formulare](/help/forms/home.md)
+
 >
 
 
@@ -61,7 +62,7 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 
 >[!NOTE]
 >
->Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource angezeigt](/help/sites-authoring/basic-handling.md#card-view).
+>Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-authoring/basic-handling.md#card-view) angezeigt.
 
 ## Standardmäßige Verwaltungsaufgaben  {#out-of-the-box-administrative-tasks}
 
@@ -72,7 +73,7 @@ AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrato
 * Aggregierte Sammlung von Nutzungsstatistiken aktivieren
 * [HTTPS konfigurieren](/help/sites-administering/ssl-by-default.md)
 
-## Öffnen des Posteingangs   {#opening-the-inbox}
+## Öffnen des Posteingangs     {#opening-the-inbox}
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
@@ -123,6 +124,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    * **Gruppieren nach**
    * **Zeitplan** oder **Ohne**
    * **Kartengröße**
+
    ![wf-92](assets/wf-92.png)
 
 * **Listenansicht**
@@ -131,35 +133,44 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
    * **Sortierfeld**
    * **Sortierreihenfolge**
+
    ![wf-83](assets/inbox-settings.png)
 
 ### Posteingang - Admin-Steuerung {#inbox-admin-control}
 
 Mit der Option &quot;Admin-Steuerung&quot;können Administratoren:
 
+* Anpassen der AEM Inbox-Spalten
+
 * Anpassen von Kopfzeilentext und Logo
 
 * Steuern der Anzeige der in der Kopfzeile verfügbaren Navigationslinks
 
-Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe &quot;Administratoren&quot;oder &quot;Workflow-Administratoren&quot;sichtbar.
+Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der `administrators` Gruppe oder `workflow-administrators` Gruppe sichtbar.
 
-![admin-control](assets/admin-control.png)
+* **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzuzeigen.
+   * **Hinzufügen Spalte**: Wählen Sie eine Spalte aus, die in AEM Inbox hinzugefügt werden soll.
+   * **Spalte** bearbeiten: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf das Symbol ![Bearbeiten](assets/edit.svg) , um einen Spaltenanzeigenamen einzugeben.
+   * **Spalte** löschen: Tippen Sie auf das Symbol zum ![Löschen](assets/delete_updated.svg) , um die Spalte aus dem AEM-Posteingang zu löschen.
+   * **Spalte** verschieben: Ziehen Sie das ![Verschieben](assets/move_updated.svg) -Symbol, um eine Spalte an eine neue Position im AEM-Posteingang zu verschieben.
+
+   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Branding-Anpassung**
 
-   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den Standardtext von **Adobe Experience Manager** zu ersetzen.
+   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den Standardtext des **Adobe Experience Managers** zu ersetzen.
 
    * **Logo anpassen:** Geben Sie das Bild an, das in der Kopfzeile als Logo angezeigt werden soll. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie auf dieses Bild im Feld.
 
 * **Benutzernavigation**
-   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Links und die Authoring-Optionen, die beim Tippen auf das Adobe Experience Manager-Logo oder -Text verfügbar sind.
+   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Links und die Authoring-Optionen, die beim Tippen auf das Logo oder den Text des Adobe Experience Managers verfügbar sind.
 * **Speichern:** Tippen/klicken Sie auf diese Option, um die Einstellungen zu speichern.
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
 >[!NOTE]
 >
->Es ist zwar möglich, mehr als ein Element auszuwählen, es können jedoch nur jeweils Aktionen für ein Element durchgeführt werden.
+>Obwohl es möglich ist, mehr als ein Element auszuwählen, können Aktionen immer nur für ein Element zur gleichen Zeit durchgeführt werden.
 
 
 1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
@@ -178,6 +189,7 @@ Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe &qu
    * **Schritt zurück** zu einem vorherigen Schritt.
    * Anzeigen der Payload eines Workflows.
    * Erstellen eines Projekts auf Basis des Elements.
+
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter:
@@ -190,6 +202,7 @@ Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe &qu
    * Ein Dialogfeld für die jeweilige Aktion wird geöffnet.
    * Ein Assistent für eine bestimmte Aktion wird gestartet.
    * Eine Dokumentationsseite wird geöffnet.
+
    Wird etwa die Aktion **Neu zuweisen** ausgeführt, öffnet sich ein Dialogfeld:
 
    ![wf-85](assets/wf-85.png)
@@ -218,11 +231,13 @@ Sie können vom Posteingang aus Aufgaben erstellen:
       * **Aufgabenpriorität**
       * **Startdatum**
       * **Fälligkeitsdatum**
+
    ![wf-86](assets/wf-86.png)
 
    * **Erweitert**
 
       * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
+
    ![wf-87](assets/wf-87.png)
 
 1. Klicken Sie auf **Übermitteln**.
