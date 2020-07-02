@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4ee3b99a3f0a5d37441eee76c3ec747afcf2e32e
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Mit Transaktionsberichten können Sie die Anzahl der gesendeten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und verfolgen. Das Ziel bei der Verfolgung dieser Transaktionen besteht darin, eine fundierte Entscheidung über die Produktverwendung zu treffen und Investitionen in Hardware und Software neu auszurichten. Weitere Informationen finden Sie unter Übersicht über [AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
 
-## Transaktionsberichte einrichten {#setting-up-transaction-reports}
+## Transaktionsberichte einrichten  {#setting-up-transaction-reports}
 
 Die Funktion &quot;Transaktionsberichte&quot;ist als Teil des Add-On-Pakets für AEM Forms verfügbar. Informationen zum Installieren des Add-On-Pakets auf allen Autoren- und Veröffentlichungsinstanzen finden Sie unter [Installieren und Konfigurieren von AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nachdem Sie das Add-On-Paket für AEM Forms installiert haben, führen Sie folgende Schritte aus:
 
@@ -32,6 +35,7 @@ Die Funktion &quot;Transaktionsberichte&quot;ist als Teil des Add-On-Pakets für
 >* AEM Forms-Transaktionsberichte unterstützen keine Topologien, die nur Instanzen im Veröffentlichungsmodus enthalten.
 >* Bevor Sie transaction Berichte verwenden, stellen Sie sicher, dass die umgekehrte Replizierung für alle Veröffentlichungsinstanzen aktiviert ist.
 >* Transaktionsdaten werden von einer Veröffentlichungsinstanz in nur die entsprechende Autoren- oder Verarbeitungsinstanz umgekehrt repliziert. Die Autor- oder Verarbeitungsinstanz kann Daten nicht weiter in eine andere Instanz replizieren.
+
 >
 
 
@@ -42,7 +46,7 @@ Transaktionsberichte verwenden die umgekehrte Replizierung, um die Anzahl der Tr
 
 ### Transaktionsberichte aktivieren {#enable-transaction-reports}
 
-Transaktionsberichte sind standardmäßig deaktiviert. Sie können die Berichte über die AEM Web Console aktivieren. Um Transaktionsberichte in einer AEM Forms-Umgebung zu aktivieren, führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinstanzen aus:
+Transaktionsberichte sind standardmäßig deaktiviert. Sie können die Berichte über die AEM Web Console aktivieren. So aktivieren Sie Transaktionsberichte in einer AEM Forms-Umgebung:
 
 1. Melden Sie sich bei einer AEM-Instanz als Administrator an. Gehen Sie zu **Werkzeuge** > **Vorgänge** > **Web-Konsole**.
 1. Suchen und öffnen Sie den **Forms Transaction Berichte** -Dienst.
@@ -58,13 +62,13 @@ Nur Mitglieder der fd-administrator-Gruppe können Transaktionsberichte Ansicht 
 
 Transaktionen werden im Arbeitsspeicher zwischengespeichert, bevor sie im Repository gespeichert werden. Standardmäßig ist die Cachedauer (Transaktions-Flush-Zeitraum) auf 60 Sekunden eingestellt. Führen Sie die folgenden Schritte aus, um die standardmäßige Cachedauer zu ändern:
 
-1. Melden Sie sich bei Autoreninstanzen als Administrator an. Gehen Sie zu **Werkzeuge** > **Vorgänge** > **Webkonsole**.
+1. Melden Sie sich bei Autoreninstanzen als Administrator an. Gehen Sie zu **Werkzeuge** > **Vorgänge** > **Web-Konsole**.
 1. Suchen und öffnen Sie den **Forms Transaction Repository Datenspeicherung Provider-Dienst** .
 1. Geben Sie die Anzahl der Sekunden im Feld **Transaktionsflush-Zeitraum** an. Klicken Sie auf **Speichern**.
 
 Reverse Replizierung kopiert Transaktionsdaten in den Standard-Postausgang der Autoreninstanzen. Sie können Transaktionsdaten in einem benutzerdefinierten Postausgang platzieren. Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Postausgang anzugeben:
 
-1. Melden Sie sich bei Autoreninstanzen als Administrator an. Gehen Sie zu **Werkzeuge** > **Vorgänge** > **Webkonsole**.
+1. Melden Sie sich bei Autoreninstanzen als Administrator an. Gehen Sie zu **Werkzeuge** > **Vorgänge** > **Web-Konsole**.
 1. Suchen und öffnen Sie den **Forms Transaction Repository Datenspeicherung Provider-Dienst** .
 1. Geben Sie den Namen des benutzerdefinierten Postausgangs im Feld **Postausgänge** an. Klicken Sie auf **Speichern**. In allen Autoreninstanzen wird ein Postausgang mit dem angegebenen Namen erstellt.
 
@@ -83,11 +87,11 @@ AEM Forms zeigt Transaktionsberichte seit dem konfigurierten Datum an, wie in ei
 
 * Verwenden Sie zum Zurücksetzen von Transaktionsdatensätzen die Optionen **Datum auf heute** zurücksetzen. Wenn Sie das Datum auf heute zurücksetzen, gehen alle vorherigen Transaktionsdatensätze verloren. Wenn Sie das Datum auf eine Autoreninstanz zurücksetzen, wirkt sich die Änderung nicht auf Transaktionsberichte in den Veröffentlichungsinstanzen und umgekehrt aus.
 * Verwenden Sie die Option &quot;Transaktionen **anzeigen&quot;nur für Veröffentlichungsinstanzen** , um alle Transaktionen Ansicht, die nur in der konfigurierten Instanz im Veröffentlichungsmodus oder in der Veröffentlichungsfarm aufgetreten sind.
-* Verwenden Sie die Kategorien: **Dokument verarbeitet**, gerenderte **Dokumente** und **Formulare gesendet** an Ansicht entsprechende Transaktionen. Informationen zum Typ der in diesen Kategorien verbuchten Transaktionen finden Sie unter APIs für [abrechnungsfähige Transaktionsberichte](../../forms/using/transaction-reports-billable-apis.md).
+* Verwenden Sie die Kategorien: **Dokument verarbeitet**, **Dokumente wiedergegeben** und **Formulare gesendet** an Ansicht entsprechenden Transaktionen. Informationen zum Typ der in diesen Kategorien verbuchten Transaktionen finden Sie unter APIs für [abrechnungsfähige Transaktionsberichte](../../forms/using/transaction-reports-billable-apis.md).
 
 ## Ansicht-Transaktions-Berichte-Protokolle {#view-transaction-reporting-logs}
 
-Mit Transaction Berichte werden alle im Bericht angezeigten Informationen und einige zusätzliche Informationen in die Protokolle eingefügt. Die Informationen in den Protokollen sind für fortgeschrittene Benutzer hilfreich. Protokolle unterteilen beispielsweise Transaktionen in mehrere granulare Kategorien im Vergleich zu drei im Bericht angezeigten konsolidierten Kategorien. Die Protokolle finden Sie unter /crx-quickstart/logs/aem-forms-transaction.log.
+Mit Transaction Berichte werden alle im Bericht angezeigten Informationen und einige zusätzliche Informationen in die Protokolle eingefügt. Die Informationen in den Protokollen sind für fortgeschrittene Benutzer hilfreich. Protokolle unterteilen beispielsweise Transaktionen in mehrere granulare Kategorien im Vergleich zu drei im Bericht angezeigten konsolidierten Kategorien. Die Protokolle sind in der `error.log` Datei im `/crx-repository/logs/` Verzeichnis verfügbar. Die Protokolle sind auch dann verfügbar, wenn Sie die Transaktionsberichte nicht über die AEM Web Console aktivieren.
 
 ## Related Articles {#related-articles}
 
