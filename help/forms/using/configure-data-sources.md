@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 9df949b0069dad7fc1627977097cec5546cd845f
+workflow-type: tm+mt
+source-wordcount: '1558'
+ht-degree: 55%
 
 ---
 
@@ -41,6 +44,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    * Java-Klassenname für den JDBC-Treiber
    * JDBC-Verbindungs-URI
    * Benutzername und Kennwort zum Herstellen der Verbindung zum JDBC-Treiber
+
    >[!NOTE] {graybox=&quot;true&quot;}
    >
    >Stellen Sie sicher, dass Sie vertrauliche Informationen wie Kennwörter verschlüsseln, bevor Sie die Datenquelle konfigurieren. Gehen Sie zum Verschlüsseln wie folgt vor:
@@ -49,6 +53,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    >    
    >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort bzw. die zu verschlüsselnde Zeichenfolge ein und klicken Sie auf **[!UICONTROL Protect]**.
+
    >    
    >    
    >    
@@ -76,6 +81,7 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE] {graybox=&quot;true&quot;}
    >
    >The ***** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
@@ -106,7 +112,7 @@ Konfigurieren des Ordners für Cloud-Dienstkonfigurationen:
 
 ## RESTful-Webdienste konfigurieren {#configure-restful-web-services}
 
-RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Um den RESTful-Webdienst in AEM Cloud-Diensten zu konfigurieren, stellen Sie sicher, dass sich die Swagger-Datei im Dateisystem oder die URL befindet, unter der die Datei gehostet wird.
+RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Um RESTful-Webdienst in AEM cloud services zu konfigurieren, stellen Sie sicher, dass die Swagger-Datei im Dateisystem oder die URL, unter der die Datei gehostet wird, vorhanden ist.
 
 Gehen Sie wie folgt vor, um RESTful-Dienste zu konfigurieren:
 
@@ -125,6 +131,7 @@ Gehen Sie wie folgt vor, um RESTful-Dienste zu konfigurieren:
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
          Bearbeiten Sie bei Bedarf die vorausgefüllten Werte für diese Felder.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung — , um auf den RESTful-Dienst zuzugreifen und dementsprechend Details zur Authentifizierung anzugeben.
+
    Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL API-Schlüssel]** &quot;auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungsheader oder als Abfrage-Parameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste &quot; **[!UICONTROL Position]** &quot;und geben Sie den Namen der Kopfzeile bzw. des Abfrage-Parameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Dienst zu erstellen.
@@ -142,7 +149,10 @@ SOAP-basierte Webdienste werden mithilfe von [WSDL-Spezifikationen (Web Services
 
    * WSDL-URL für den Webdienst.
    * Dienstendpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Dienstendpunkt zu überschreiben.
-   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung oder benutzerdefinierte Authentifizierung — , um auf den SOAP-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, benutzerdefinierte Authentifizierung oder X509-Token — , um auf den SOAP-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+
+      Wenn Sie als Authentifizierungstyp &quot;X509-Token&quot;auswählen, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Geben Sie den KeyStore-Alias für das X509-Zertifikat im Feld **[!UICONTROL Key Alias]** an. Geben Sie im Feld &quot; **[!UICONTROL Zeit bis zum Live]** &quot;die Zeit in Sekunden an, bis die Authentifizierungsanforderung gültig bleibt. Optional können Sie den Nachrichtentext oder die Zeitstempelüberschrift oder beides signieren.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den SOAP-Webdienst zu erstellen.
 
@@ -162,6 +172,7 @@ Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online
 
    * Dienststamm-URL für den zu konfigurierenden OData-Dienst.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung oder benutzerdefinierte Authentifizierung — , um auf den OData-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+
    >[!NOTE]
    Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
 
