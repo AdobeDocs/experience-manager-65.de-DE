@@ -3,10 +3,10 @@ title: Bewährte Verfahren zum Übersetzen von Assets
 description: Best Practices für die effiziente Verwaltung von Assets zur Synchronisation verschiedener übersetzter Versionen und zur Optimierung von Übersetzungs-Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 82%
+source-wordcount: '421'
+ht-degree: 80%
 
 ---
 
@@ -32,13 +32,15 @@ Mittels gewisser Änderungen an Workflows und am Framework für die Übersetzung
    * [Richten Sie einen Dateidatenspeicher ein.](/help/sites-deploying/data-store-config.md)
    * [Richten Sie einen Amazon S3-Datenspeicher ein.](/help/sites-deploying/data-store-config.md)
 
+<!--
 1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow.
 
-   Wie der Name schon sagt, werden Metadaten im Rahmen des Workflows [!UICONTROL DAM-Metadaten-Writeback] erneut in die Binärdatei geschrieben. Das sich die Metadaten nach der Übersetzung verändern, wird durch das Zurückschreiben dieser Metadaten in die Binärdatei eine andere Binärdatei für eine Sprachkopie generiert.
+   As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
 
    >[!NOTE]
    >
-   >Wird der Workflow [!UICONTROL DAM-Metadaten-Writeback] deaktiviert, wird der XMP-Metadaten-Writeback-Prozess für Asset-Binärdateien ausgeschaltet. In der Folge werden zukünftige Metadatenänderungen nicht mehr innerhalb der Assets gespeichert. Schätzen Sie die Auswirkungen ein, bevor Sie diesen Workflow deaktivieren.
+   >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+-->
 
 1. Aktivieren Sie den Workflow [!UICONTROL Letztes Änderungsdatum des Sets].
 
