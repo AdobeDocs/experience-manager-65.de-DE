@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.5 Administering User Guide
+user-guide-title: AEM 6.5 - Administrationsbenutzerhandbuch
 translation-type: tm+mt
-source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Verbesserungen an der Übersetzung](tc-enhancements.md)
    + [Best Practices für die Übersetzung](tc-bp.md)
    + [Häufig gestellte Fragen (FAQ) zu AEM](aem-faqs.md)
-+ Vorgänge {#operations}
++ Betrieb {#operations}
    + [Dashboards](dashboards.md)
    + [Vorgangs-Dashboard](operations-dashboard.md)
    + [Sichern und Wiederherstellen](backup-and-restore.md)
@@ -42,7 +45,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Konfigurieren des Rich-Text-Editors](rich-text-editor.md)
    + [Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites](rte-accessible-content.md)
    + [Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung](config-undo.md)
-   + [Konfigurieren der Rich-Text-Editor-Plug-ins](configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren der Rich-Text-Editor-Plug-ins  ](configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren der Videokomponente](config-video.md)
    + [Der Bulk Editor](bulk-editor.md)
    + [Konfigurieren von E-Mail-Benachrichtigungen](notification.md)
@@ -100,7 +103,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Integrieren von Einstiegsseiten in Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
-   + [Konzepte](concepts.md)
+   + [Konzepte ](concepts.md)
    + [Verwaltung des generischen E-Commerce](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
@@ -123,7 +126,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Integration mit Adobe Campaign Classic](campaignonpremise.md)
    + [Verwandte Community-Artikel](related-community-articles.md)
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
-   + [Abkündigungshinweis für Flash-Viewer](flash-viewers-eol.md)
+   + [Hinweis zur Einstellung von Flash-Viewer](flash-viewers-eol.md)
    + [Produkt-Feed](product-feed.md)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
@@ -142,7 +145,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Integrieren mit Adobe Marketing Cloud](marketing-cloud.md)
    + [Manuelles Konfigurieren der Integration mit Adobe Target](target-configuring.md)
    + [Voraussetzungen für die Integration mit Adobe Target](target-requirements.md)
-   + [Integration mit Adobe Target mit Adobe I/O](integration-ims-adobe-io.md)
+   + [Integration mit Adobe Target über Adobe I/O](integration-ims-adobe-io.md)
    + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
@@ -158,7 +161,6 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-commerce.md)
 + Content Management {#contentmanagement}
    + [Arbeiten mit Paketen](package-manager.md)
-   + [Offloader für Assets-Workflows](workflow-offloader.md)
    + [Verwalten von Tags](tags.md)
    + [Das Seiten-Exporttool](page-exporter.md)
    + [Tagging-Konsole der klassischen Benutzeroberfläche](classic-console.md)
