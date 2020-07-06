@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+workflow-type: tm+mt
+source-wordcount: '794'
+ht-degree: 2%
 
 ---
 
@@ -49,15 +52,15 @@ Diese Konfiguration eignet sich für *Nicht-Produktion* -Umgebung wie Entwicklun
 
 * Grundkonfiguration
 
-   * Befolgen Sie die Installationsanweisungen für MongoDB
-   * Konfigurieren für Mongod
+   * Folgen Sie den Installationsanweisungen für MongoDB.
+   * Konfigurieren für Mongod:
 
-      * Keine Konfiguration von Mongos oder Freigeben erforderlich
-   * Der installierte MongoDB-Ordner wird als &lt;mongo-install> bezeichnet
-   * Der definierte Datenordnerpfad wird als &lt;mongo-dbpath> bezeichnet
+      * Es ist nicht erforderlich, Mongos oder das Freigeben zu konfigurieren.
+   * Der installierte MongoDB-Ordner wird als &lt;mongo-install> bezeichnet.
+   * Der definierte Datenordnerpfad wird als &lt;mongo-dbpath> bezeichnet.
 
 
-* MongoDB kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden
+* MongoDB kann auf demselben Host wie AEM oder remote ausgeführt werden.
 
 ### Beginn MongoDB {#start-mongodb}
 
@@ -71,23 +74,24 @@ Dadurch wird ein MongoDB-Server mit dem Standardanschluss 27017 Beginn.
 >
 >Wenn MongoDB *nach* AEM gestartet wird, **starten** Sie alle **AEM** -Instanzen neu, damit sie ordnungsgemäß eine Verbindung zu MongoDB herstellen.
 
-### Demoproduktionsoption: Setup MongoDB Replica Set {#demo-production-option-setup-mongodb-replica-set}
+
+### Demoproduktionsoption: Setup MongoDB Replikat Set {#demo-production-option-setup-mongodb-replica-set}
 
 Die folgenden Befehle sind ein Beispiel für die Einrichtung eines Replikationssatzes mit 3 Knoten auf localhost:
 
-* bin/mongod —port 27017 —dbpath data —replSet rs0&amp;
-* bin/mongo
+* `bin/mongod --port 27017 --dbpath data --replSet rs0&`
+* `bin/mongo`
 
-   * cfg = {&quot;_id&quot;: &quot;rs0&quot;,&quot;version&quot;: 1, &quot;Mitglieder&quot;: [{&quot;_id&quot;: 0,&quot;Host&quot;: &quot;127.0.0.1:27017&quot;}]}
-   * rs.initiate(cfg)
+   * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
+   * `rs.initiate(cfg)`
 
-* bin/mongod —port 27018 —dbpath data1 —replSet rs0&amp;
-* bin/mongod —port 27019 —dbpath data2 —replSet rs0&amp;
-* bin/mongo
+* `bin/mongod --port 27018 --dbpath data1 --replSet rs0&`
+* `bin/mongod --port 27019 --dbpath data2 --replSet rs0&`
+* `bin/mongo`
 
-   * rs.add(&quot;127.0.0.1:27018&quot;)
-   * rs.add(&quot;127.0.0.1:27019&quot;)
-   * rs.status()
+   * `rs.add("127.0.0.1:27018")`
+   * `rs.add("127.0.0.1:27019")`
+   * `rs.status()`
 
 ## Solr {#solr}
 
@@ -95,22 +99,22 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung eines Replikationss
 
 * Download Solr von [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
-   * Eignet sich für jedes Betriebssystem
-   * Version 4.10 oder Version 5 verwenden
-   * Solr erfordert Java 1.7 oder höher
+   * Geeignet für jedes Betriebssystem.
+   * Verwenden Sie Version 4.10 oder Version 5.
+   * Solr erfordert Java 1.7 oder höher.
 
 * Grundkonfiguration
 
-   * Führen Sie das Setup von &#39;example&#39; Solr aus
-   * Es ist kein Dienst erforderlich
-   * Der installierte Solr-Ordner wird als &lt;solr-install> bezeichnet
+   * Folgen Sie dem Setup von &#39;example&#39; Solr.
+   * Es ist kein Dienst erforderlich.
+   * Der installierte Solr-Ordner wird als &lt;solr-install> bezeichnet.
 
-### Konfigurieren von SOL für AEM Communities {#configure-solr-for-aem-communities}
+### Konfigurieren von Solr für AEM Communities {#configure-solr-for-aem-communities}
 
 Um eine SOLR-Sammlung für MSRP für Demo zu konfigurieren, müssen zwei Entscheidungen getroffen werden (siehe die Links zur Hauptdokumentation):
 
-1. Führen Sie Solr im eigenständigen oder im [SolrCloud-Modus aus](msrp.md#solrcloudmode)
-1. Installieren von [Standard](msrp.md#installingstandardmls) - oder [erweiterten](msrp.md#installingadvancedmls) mehrsprachigen Suchvorgängen (MLS)
+1. Führen Sie Solr im eigenständigen oder im [SolrCloud-Modus](msrp.md#solrcloudmode)aus.
+1. Installieren Sie [Standard](msrp.md#installingstandardmls) - oder [erweiterte](msrp.md#installingadvancedmls) mehrsprachige Suche (MLS).
 
 ### Eigenständiger Solr {#standalone-solr}
 
@@ -130,11 +134,12 @@ Dadurch wird ein Solr-HTTP-Server mit dem Standardanschluss 8983 Beginn. Sie kö
 >Wenn Solr Console nicht verfügbar ist, überprüfen Sie die Protokolle unter &lt;solrinstall>/example/logs. Achten Sie darauf, ob SOLR versucht, sich an einen bestimmten Hostnamen zu binden, der nicht aufgelöst werden kann (z.B. &quot;user-macbook-pro&quot;).
 Wenn ja, aktualisieren Sie die Datei etc/hosts mit einem neuen Eintrag für diesen Hostnamen (z.B. 127.0.0.1 user-macbook-pro) und Solr wird ordnungsgemäß Beginn.
 
+
 ### SolrCloud {#solrcloud}
 
 Um ein sehr einfaches (nicht produktives) solrCloud-Setup auszuführen, führen Sie Beginn-Solr mit:
 
-* java -Dbootstrap_condir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar Beginn.jar
+* `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
 ## Identifizieren Sie MongoDB als gemeinsamen Store. {#identify-mongodb-as-common-store}
 
@@ -170,6 +175,7 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
    * Benutzer `core selector` auswählen `collection1`
    * Wählen Sie nun eine der folgenden Optionen aus `Query`
    * Wählen Sie nun eine der folgenden Optionen aus `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## Fehlerbehebung {#troubleshooting}
@@ -181,12 +187,13 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
 1. Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde:
 
    * Gehen Sie bei allen Autoren- und Veröffentlichungsinstanzen von AEM erneut zur [Datenspeicherung Configuration Console](srp-config.md)
-   oder überprüfen Sie das AEM-Repository:
+
+   Oder überprüfen Sie das AEM-Repository:
 
    * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-      * Enthält keinen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) -Knoten, d. h., der Datenspeicherung-Provider ist JSRP
-      * Wenn der Knoten srpc vorhanden ist und die Node- [Standardkonfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)enthält, sollten die Eigenschaften der Standardkonfiguration MSRP als Standardanbieter definieren
+   * Enthält keinen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) -Knoten, d. h., der Datenspeicherung-Provider ist JSRP
+   * Wenn der Knoten srpc vorhanden ist und die Node- [Standardkonfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)enthält, sollten die Eigenschaften der Standardkonfiguration MSRP als Standardanbieter definieren
 
 
 1. Vergewissern Sie sich, dass AEM nach Auswahl von MSRP neu gestartet wurde.
