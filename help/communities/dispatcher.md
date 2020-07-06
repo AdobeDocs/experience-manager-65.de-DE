@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 6%
 
 ---
 
@@ -19,21 +22,21 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## AEM Communities {#aem-communities}
 
-Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um das ordnungsgemäße Funktionieren von [Community-Sites](overview.md#community-sites)sicherzustellen. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie Aktivierung der Communities und Anmeldung in sozialen Netzwerken einbezogen werden.
+AEM Communities müssen den Dispatcher so konfigurieren, dass die [Community-Sites](overview.md#community-sites)ordnungsgemäß funktionieren. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie Aktivierung der Communities und Anmeldung in sozialen Netzwerken einbezogen werden.
 
 So erfahren Sie, was für Ihre spezifische Implementierung und Ihren Site-Entwurf erforderlich ist
 
-* Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+* Contact [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
-Siehe auch die wichtigste [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Weitere Informationen finden Sie in der Hauptdokumentation zu [Dispatchern](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Dispatcher Caching {#dispatcher-caching}
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
-Dispatcher-Zwischenspeicherung für AEM Communities ist die Möglichkeit für den Dispatcher, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
+Dispatcher-Caching für AEM Communities ist die Fähigkeit des Dispatchers, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
 
-Derzeit wird sie nur für anonyme Sitebesucher unterstützt, z. B. für Benutzer, die die Community-Site durchsuchen, oder für Benutzer, die infolge einer Suche auf einer Community-Seite landen, sowie für Suchmaschinen, die Seiten indizieren. Der Vorteil besteht darin, dass anonyme Benutzer und Suchmaschinen eine höhere Leistung erleben.
+Derzeit wird sie nur für anonyme Site-Besucher, wie z. B. Benutzer, die die Community-Site durchsuchen, oder für Benutzer, die infolge einer Suche auf einer Community-Seite landen, sowie für Suchmaschinen unterstützt, die Seiten indizieren. Der Vorteil besteht darin, dass anonyme Benutzer und Suchmaschinen eine höhere Leistung erleben.
 
 Bei angemeldeten Mitgliedern umgeht der Dispatcher den Cache und stellt Anforderungen direkt an den Herausgeber weiter, sodass alle Seiten dynamisch generiert und bereitgestellt werden.
 
@@ -47,7 +50,7 @@ Bei der Konfiguration zur Unterstützung der Dispatcher-Zwischenspeicherung wird
    * Version 3.3.2 oder neuer
    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi-Konfiguration
 
-### Konfiguration{#configuration}
+### Konfiguration {#configuration}
 
 Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** legt den Ablauf von zwischengespeicherten Seiten fest, die unter einem angegebenen Pfad angezeigt werden.
 
@@ -58,15 +61,17 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 * Suchen `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Klicken Sie auf das Symbol &quot;+&quot;, um eine neue Verbindungskonfiguration zu erstellen.
 
-![chlimage_1-339](assets/chlimage_1-339.png)
+   ![chlimage_1-339](assets/chlimage_1-339.png)
 
 * **Filtermuster**
-   *(erforderlich)* Ein oder mehrere Pfade zu Community-Seiten. Beispiel, `/content/sites/engage/(.*)`.
+
+   *(erforderlich)* Ein oder mehrere Pfade zu Community-Seiten. Beispiel: `/content/sites/engage/(.*)`.
 
 * **Max. Alter der Cachesteuerung**
+
    *(Erforderlich)* Das Höchstalter (in Sekunden), das dem Cache-Steuerelement-Header hinzugefügt werden soll. Der Wert muss größer als null (0) sein.
 
-## Dispatcher-Client-Header {#dispatcher-client-headers}
+## Dispatcher-Client-Kopfzeilen {#dispatcher-client-headers}
 
 Im Abschnitt /clientheaders `dispatcher.any`ist es erforderlich, wenn Sie einen bestimmten Satz von Kopfzeilen auflisten, `"CSRF-Token"` damit die [Aktivierungsfunktion](enablement.md) ordnungsgemäß funktioniert.
 
@@ -80,14 +85,15 @@ Die Namen der Filtereigenschaft entsprechen der Regel, dass eine vierstellige Za
 
 Die folgenden Beispiele verwenden Eigenschaftsnamen, die wahrscheinlich geändert werden müssen, um in eine beliebige Datei von dispatcher.any einzupassen.
 
-Siehe auch
+Siehe auch:
 
-* [Dispatcher Security Checkliste](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Checkliste für die Sicherheit von Dispatchern](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
 >**Beispiele für Eigenschaftsnamen**
 >Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollten an die vorhandene Konfigurationsdatei dispatcher.any angepasst werden.
+
 
 Die folgenden Einträge sollten am Ende des Abschnitts &quot;/filter&quot;hinzugefügt werden, besonders nach allen Einträgen, die verweigert werden.
 
@@ -188,11 +194,11 @@ Der Regelabschnitt in `dispatcher.any` definiert, welche Antworten basierend auf
 
 Eine wichtige Ursache für Probleme ist das Einfügen von Filterregeln, ohne auf die Auswirkungen älterer Regeln zu achten, insbesondere wenn eine Regel hinzugefügt wird, die den Zugriff verweigern soll.
 
-Das erste Filtermuster wird häufig verwendet, um alles zu verweigern, sodass der Zugriff durch folgende Filter kontrolliert wiederhergestellt wird. Wenn mehrere Filter auf eine Anforderung angewendet werden, ist der letzte Filter, der angewendet wird, derselbe.
+Das erste Filtermuster wird häufig verwendet, um alles zu verweigern, sodass folgende Filter den Zugriff kontrolliert wiederherstellen. Wenn mehrere Filter auf eine Anforderung angewendet werden, ist der letzte angewendete Filter derselbe.
 
 ## Beispiel für dispatcher.any {#sample-dispatcher-any}
 
-Im Folgenden finden Sie eine Beispieldatei `dispatcher.any` mit den Dateien Communities/filters und /rules.
+Im Folgenden finden Sie eine Beispieldatei `dispatcher.any` mit den Communities/Filters und /rules.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)
