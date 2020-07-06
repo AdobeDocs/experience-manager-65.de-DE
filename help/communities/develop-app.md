@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 6%
+source-wordcount: '616'
+ht-degree: 7%
 
 ---
 
@@ -32,13 +32,17 @@ Der erste Schritt besteht darin, dem `/apps/an-scf-sandbox/components/playpage` 
 
 Verwenden von CRXDE Lite:
 
-<!--Resolve steps below-->
-    Name: `sling:resourceSuperType`
-    Type: `String`
-    Value: `foundation/components/page`
+1. Wählen Sie Node `/apps/an-scf-sandbox/components/playpage`.
+1. Geben Sie auf der Registerkarte &quot;Eigenschaften&quot;eine neue Eigenschaft mit den folgenden Werten ein:
 
-1. Klicken Sie auf die grüne **[!UICONTROL [+]Hinzufügen]**
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**
+   Name: `sling:resourceSuperType`
+
+   Typ: `String`
+
+   Wert: `foundation/components/page`
+
+1. Click the green **[!UICONTROL +Add]** button.
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -89,12 +93,12 @@ Verwenden von CRXDE Lite:
 
    Um das Authoring einzurichten, überlagern Sie `body.jsp` mit einem lokalen Skript und fügen Sie ein Absatzsystem (parsys) in den Text ein:
 
-   1. Navigieren Sie zu `/apps/an-scf-sandbox/components`
-   1. Wählen Sie den `playpage`Knoten
+   1. Navigieren Sie zu `/apps/an-scf-sandbox/components`.
+   1. Select the `playpage` node.
    1. Right-click and select `Create > Create File...`
 
       * Name: **body.jsp**
-   1. Klicken Sie auf **[!UICONTROL Alle speichern]**
+   1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    Öffnen `/apps/an-scf-sandbox/components/playpage/body.jsp` und fügen Sie Folgendes ein:
 
@@ -114,7 +118,7 @@ Verwenden von CRXDE Lite:
    </body>
    ```
 
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 **Ansicht der Seite in einem Browser im Bearbeitungsmodus:**
 
