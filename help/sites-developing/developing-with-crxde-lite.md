@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 78133b41e1c99f8f86f4c0d51961287735423fe2
+source-git-commit: cb141914428f42a9755b5479ab1652c8ca51f640
+workflow-type: tm+mt
+source-wordcount: '2155'
+ht-degree: 90%
 
 ---
 
@@ -22,14 +25,14 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihre AEM-Anwendung mit CRXDE Lite 
 
 Weitere Informationen zu den verschiedenen verfügbaren Entwicklungsumgebungen finden Sie in der Übersichtsdokumentation.
 
-CRXDE Lite ist in AEM integriert und ermöglicht Ihnen die Durchführung von Standardentwicklungsaufgaben im Browser. Mit CRXDE Lite können Sie ein Projekt erstellen und Dateien (wie .jsp und .java), Ordner, Vorlagen, Komponenten, Dialogfelder, Knoten, Eigenschaften und Pakete erstellen und bearbeiten, während Sie mit SVN protokollieren und integrieren.
+CRXDE Lite ist in AEM integriert und ermöglicht Ihnen die Durchführung von Standardentwicklungsaufgaben im Browser. Mit CRXDE Lite können Sie ein Projekt erstellen, Dateien (wie .jsp und .java), Ordner, Vorlagen, Komponenten, Dialoge, Knoten, Eigenschaften und Bundles erstellen und bearbeiten, während Sie die Protokollierung durchführen.
 CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server haben, wenn Sie eine Anwendung entwickeln, indem Sie die im Lieferumfang enthaltenen Komponenten und Java-Bundle erweitern oder modifizieren, oder wenn Sie keinen dedizierten Debugger, Code-Vervollständigung und Syntaxhervorhebung benötigen.
 
 >[!NOTE]
 >
->Standardmäßig können alle AEM-Benutzer auf CRXDE Lite zugreifen. If desired, [configure ACLs](/help/sites-administering/security.md#permissions-and-acls) for the following node so that only developers can access CRX DE Lite:
->
->`/libs/granite/crxde`
+>Ab AEM 6.5.5.0 ist der anonyme Zugriff auf CRXDE Lite nicht mehr möglich.
+>Benutzer werden zum Anmeldebildschirm umgeleitet.
+
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Um mit CRXDE Lite zu beginnen, gehen Sie wie folgt vor:
 
 Die Benutzeroberfläche von CRXDE Lite sieht in Ihrem Browser wie folgt aus:
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-18](assets/crx-interface.jpg)
 
 Jetzt können Sie CRXDE Lite verwenden, um Ihre Anwendung zu entwickeln.
 
@@ -102,7 +105,7 @@ CRXDE Lite bietet folgende Funktionen:
    <td><p><strong>Alle speichern</strong>:<br /> </p> <p>Speichert alle von Ihnen vorgenommenen Änderungen. Solange Sie nicht auf „Speichern“ klicken, sind die Änderungen vorübergehend und gehen verloren, wenn Sie die Konsole verlassen.</p> <p><strong>Zurück zur letzten Version</strong>:</p> <p>Verwirft alle Änderungen, die Sie seit dem letzten Speichervorgang auf dem ausgewählten Knoten vorgenommen haben, lädt dann den aktuellen Status des Repositorys für den ausgewählten Knoten erneut.</p> <p><strong>Alle zurücksetzen</strong>:</p> <p>Verwirft alle Änderungen, die Sie seit dem letzten Speichervorgang im gesamten Repository vorgenommen haben, lädt dann den aktuellen Status des Repositorys erneut.</p> </td>
   </tr>
   <tr>
-   <td>Erstellen...<br /> </td>
+   <td>Erstellen ...<br /> </td>
    <td><p>Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:<br /> </p> <p>- <strong>Knoten</strong>: ein Knoten mit einem beliebigen Knotentyp<br /> </p> <p>- <strong>File</strong>: nt:file node and its nt:resource subnode</p> <p>- <strong>Ordner</strong>: nt:folder-Knoten</p> <p>- <strong>Vorlage</strong>: AEM-Vorlage</p> <p>- <strong>Komponente</strong>: AEM-Komponente</p> <p>- <strong>Dialog</strong>: AEM-Dialogfeld</p> </td>
   </tr>
   <tr>
@@ -118,20 +121,16 @@ CRXDE Lite bietet folgende Funktionen:
    <td>Pastes the copied node under the selected node.<br /> </td>
   </tr>
   <tr>
-   <td>Verschieben...<br /> </td>
+   <td>Verschieben ...<br /> </td>
    <td>Verschiebt den ausgewählten Knoten zu dem Knoten, der über das Dialogfeld festgelegt wurde.</td>
   </tr>
   <tr>
-   <td>Umbenennen...<br /> </td>
+   <td>Umbenennen ...<br /> </td>
    <td>Benennt den ausgewählten Knoten um.<br /> </td>
   </tr>
   <tr>
    <td>Mixins...<br /> </td>
    <td>Ermöglicht es Ihnen, dem Knotentyp Mixin-Typen hinzuzufügen. Die Mixin-Typen werden meist verwendet, um erweiterte Funktionen wie Versionierung, Zugriffssteuerung, Referenzierung und Knotensperre hinzuzufügen.</td>
-  </tr>
-  <tr>
-   <td>Team<br /> </td>
-   <td><p>Dropdown-Menü, um Standardaufgaben im Zusammenhang mit der Versionssteuerung auszuführen:</p> <p>- <strong>Aktualisieren</strong> des Repositorys vom SVN-Server</p> <p>- <strong>Bestätigen</strong> lokaler Änderungen auf dem SVN-Server </p> <p>- <strong>Status</strong> des aktuellen Knotens anzeigen</p> <p>- <strong>Rekursiven Status</strong> der Unterstruktur des aktuellen Knotens anzeigen</p> <p>- <strong>Auschecken</strong> einer Arbeitskopie vom SVN-Server</p> <p>- <strong>Exportieren</strong>eines Projekts vom SVN-Server (ohne eine Arbeitskopie zu erstellen)</p> <p>- <strong>Importieren</strong> eines Projekts aus dem Repository auf den SVN-Server<br /> </p> <p>Beachten Sie, dass Sie als Benutzer mit ausreichenden Berechtigungen angemeldet sein müssen, um einige der Aufgaben (insbesondere die, die in das lokale Repository schreiben) ausführen zu können.<br /> </p> </td>
   </tr>
   <tr>
    <td>Tools<br /> </td>
@@ -143,48 +142,6 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
  </tbody>
 </table>
-
-## Erstellen eines Projekts {#creating-a-project}
-
-Mit CRXDE Lite können Sie ein Arbeitsprojekt in drei Mausklicks erstellen. The project wizard creates a new project under `/apps`, some content under `/conten`t and a package wrapping all the project the content under `/etc/packages`. Das Projekt kann sofort verwendet werden, um eine Beispielseite mit **Hello World** zu rendern, basierend auf einem jsp-Skript, das eine Eigenschaft aus dem Repository rendert und eine Java-Klasse aufruft, um Text zu rendern.
-
-So erstellen Sie ein Projekt mit CRXDE Lite:
-
-1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im Navigationsfenster mit der rechten Maustaste auf einen Knoten, wählen Sie **Erstellen...** und dann **Projekt erstellen...**.
-Note: you can right-click any node in the tree navigation, as the new project nodes are, by design, created below `/apps,` `/content` and `/etc/packages`.
-
-1. Definieren Sie Folgendes:
-
-   * **Projektname** - Der Projektname wird verwendet, um die neuen Knoten und das Bundle, z. B. `myproject`, zu erstellen.
-
-   * **Java-Paket** - das Präfix des Java-Paketnamens, z. B. `com.mycompany`.
-
-1. Klicken Sie auf **Erstellen**.
-1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
-
-Um auf die Beispielseite zuzugreifen, die **Hello World** anzeigt, geben Sie in Ihrem Browser die folgende Adresse ein:
-
-`https://localhost:4502/content/<project-name>.html`
-
-Die Seite **Hello World** basiert auf einem Inhaltsknoten, der ein jsp-Skript durch die Eigenschaft `sling:resourceType` abruft. Das Skript liest die Eigenschaft `jcr:title` aus dem Repository und ruft den Hauptinhalt ab, indem eine Methode der SampleUtil-Klasse aufgerufen wird, die im Projektbundle verfügbar ist.
-
-Folgende Knoten werden erstellt:
-
-* `/apps/<project-name>`: dem Container der Anwendung.
-* `/apps/<project-name>/components`: der components-Container, der die html.jsp-Beispieldatei enthält, die zum Rendern einer Seite verwendet wird.
-
-* `/apps/<project-name>/src`: den Bundles-Container mit einem Beispielprojektpaket.
-
-* `/apps/<project-name>/install`: den kompilierten Bundles-Container, der das kompilierte Beispiel-Projektpaket enthält.
-* `/content/<project-name>`: den Content Container.
-* /etc/packages/&lt;Java-Suffix>/&lt;Projektname>.zip, ein Paket, das alle Projekt-Anwendungen und -Inhalte enthält. Sie können es verwenden, um das Projekt weiter zu entwickeln (z. B. in anderen Umgebungen) oder über Package Share zu teilen.
-
-Die Struktur sieht in CRXDE Lite wie folgt aus: Ein Projekt namens **myproject** und ein Java-Paketsuffix namens **mycompany**:
-
-![chlimage_1-19](assets/chlimage_1-19.png)
-
-![chlimage_1-20](assets/chlimage_1-20.png)
 
 ## Erstellen eines Ordners {#creating-a-folder}
 
@@ -305,176 +262,6 @@ So erstellen Sie ein neues Skript:
 1. Die neue Datei wird als Registerkarte im Bearbeitungsfenster geöffnet.
 1. Bearbeiten Sie die Datei.
 1. Klicken Sie auf **Alle speichern**, um die Änderungen zu speichern.
-
-## Verwalten eines Bundles {#managing-a-bundle}
-
-Mit CRXDE Lite ist es einfach, ein OSGI-Bundle zu entwerfen, ihm Java-Klassen hinzuzufügen und es zu erstellen. Das Bundle wird dann im OSGI-Container automatisch installiert und gestartet.
-
-This section describes how to create a `Test` bundle with a `HelloWorld` Java class that displays **Hello World!** anzeigt in Ihrem Browser erstellen, wenn die Ressource angefordert wird.
-
-### Erstellen eines Bundles {#creating-a-bundle}
-
-So erstellen Sie ein Testbundle mit CRXDE Lite:
-
-1. Erstellen Sie in CRXDE Lite das Projekt `myapp` mit dem [Projektassistenten](#creating-a-project). Unter anderem werden die folgenden Knoten erstellt:
-
-   * `/apps/myapp/src`
-   * `/apps/myapp/install`
-
-1. Right-click the folder `/apps/myapp/src` that will contain the `Test` bundle, select **Create ...**, then **Create Bundle ...**.
-
-1. Legen Sie die Bundleeigenschaften wie folgt fest:
-
-   * Symbolic Bundle Name: `com.mycompany.test.TestBundle`
-
-   * Bundle-Name: `Test Bundle`
-   * Bündelbeschreibung:
-
-      ```
-      This is my Test Bundle
-      ```
-
-   * Paket:
-
-      ```
-      com.mycompany.test
-      ```
-   Klicken Sie auf **OK**.
-
-1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
-
-Der Assistent erstellt die folgenden Elemente:
-
-* Der Knoten `com.mycompany.test.TestBundle` des Typs `nt:folder.` Es ist der Bundle-Container-Knoten.
-
-* Die Datei `com.mycompany.test.TestBundle.bnd`. Sie fungiert als Bereitstellungsdeskriptor für Ihr Bundle und besteht aus einer Reihe von Kopfzeilen.
-
-* Die Ordnerstrukturen:
-
-   * `src/main/java/com/mycompany/test`. Umfasst die Pakete und die Java-Klassen.
-
-   * `src/main/resources`. Enthält die Ressourcen, die innerhalb des Bundles verwendet werden.
-
-* Die `Activator.java` Datei. Dies ist die optionale Listener-Klasse, die über Start- und Stopp-Ereignisse des Bundles benachrichtigt wird.
-
-In der folgenden Tabelle sind alle Eigenschaften der.bnd-Datei, deren Werte und Beschreibungen aufgelistet:
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Eigenschaft</strong></td>
-   <td><strong>Wert (bei der Bündelung)<br /> </strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td>Exportpaket:</td>
-   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Bundles angepasst werden.</p> </td>
-   <td>Der Header "Exportpaket"definiert exportierte Pakete aus dem Bundle (kommagetrennte Liste von Paketen). The exported packages constitute the public<br /> view of the bundle.<br /> </td>
-  </tr>
-  <tr>
-   <td>Importpaket:</td>
-   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Bundles angepasst werden.</p> </td>
-   <td>Der Header "Paket importieren"definiert importierte Pakete für das Bundle (kommagetrennte Liste von Paketen)</td>
-  </tr>
-  <tr>
-   <td>Privates Paket:</td>
-   <td><p>*</p> <p>Hinweis: dieser Wert muss an die Spezifität des Bundles angepasst werden.</p> </td>
-   <td>Die Kopfzeile Private-Package definiert private Pakete für das Bundle (durch Komma getrennte Liste der Pakete). Die privaten Pakete bilden die interne Implementierung.<br /> </td>
-  </tr>
-  <tr>
-   <td>Bundle-Name:</td>
-   <td>Bündel testen</td>
-   <td>Definiert einen kurzen, für Menschen lesbaren Namen für das Bundle</td>
-  </tr>
-  <tr>
-   <td>Bundle-Beschreibung:</td>
-   <td>Dies ist mein Test Bundle</td>
-   <td>Definiert eine kurze, für Menschen lesbare Beschreibung des Bundles</td>
-  </tr>
-  <tr>
-   <td>Bundle-SymbolicName:</td>
-   <td>com.mycompany.test.TestBundle</td>
-   <td>Gibt einen eindeutigen, nicht lokalisierbaren Namen für das Bundle an</td>
-  </tr>
-  <tr>
-   <td>Bundle-Version:</td>
-   <td>1.0.0-SNAPSHOT</td>
-   <td>Gibt die Version des Bundles an</td>
-  </tr>
-  <tr>
-   <td>Bundle-Aktivator:</td>
-   <td>com.mycompany.test.Activator</td>
-   <td>Gibt den Namen der optionalen Lister-Klasse an, die über Bundle-Beginn- und stop-Ereignis benachrichtigt werden soll</td>
-  </tr>
- </tbody>
-</table>
-
-Weitere Informationen zum bnd-Format finden Sie im [bnd-Dienstprogramm](https://bndtools.org/), das von CRXDE zum Erstellen von OSGI-Bundles verwendet wird.
-
-### Erstellen einer Java-Klasse {#creating-a-java-class}
-
-So erstellen Sie die Java-Klasse `HelloWorld` innerhalb des Testbundles:
-
-1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. In the Navigation pane, right-click the node containing the `Activator.java` file ( `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java`), select **Create ...**, then **Create File ...**.
-
-1. Name the file `HelloWorld.java`. Klicken Sie auf **OK**.
-
-1. Die Datei `HelloWorld.java`-Datei wird im Bearbeitungsfenster geöffnet.
-1. Hinzufügen die folgenden Zeilen nach `HelloWorld.java`:
-
-   ```
-     package com.mycompany.test;
-   
-     public class HelloWorld {
-     public String getString(){
-     return "Hello World!";
-     }
-     }
-   ```
-
-1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
-
-### Erstellen eines Bundles {#building-a-bundle}
-
-So erstellen Sie das Testbundle:
-
-1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im Navigationsfenster mit der rechten Maustaste auf die.bnd-Datei, wählen Sie **Tools** und dann **Bundle**.
-
-Der Assistent zum Erstellen von Bundles:
-
-* Kompiliert die Java-Klassen.
-* Erstellt die .jar-Datei, die die kompilierten Java-Klassen und Ressourcen enthält, und platziert sie im Ordner `myapp/install`.
-* Installiert und startet das Bundle im OSGI-Container.
-
-Um die Wirkung des Testpakets zu sehen, erstellen Sie eine Komponente, die die Java-Methode HelloWorld.getString() und eine Ressource verwendet, die von dieser Komponente gerendert wird:
-
-1. Create the component `mycomp` under `myapp/components`.
-
-1. Bearbeiten `mycomp.jsp` und ersetzen Sie den Code durch die folgenden Zeilen:
-
-   ```
-     <%@ page import="com.mycompany.test.HelloWorld"%><%
-     %><%@ include file="/libs/foundation/global.jsp"%><%
-     %><% HelloWorld hello = new HelloWorld();%><%
-     %>
-     <html>
-     <body>
-     <b><%= hello.getString() %></b><br>
-     </body>
-     </html>
-   ```
-
-1. Create the resource `test_node` of type `nt:unstructured` under `/content`.
-
-1. For `test_node`, create the following property: Name = `sling:resourceType`, Type = `String`, Value = `myapp/components/mycomp`.
-
-1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
-
-1. Fordern Sie im Browser `test_node`Folgendes an: `https://<hostname>:<port>/content/test_node.html`.
-
-1. Eine Seite mit der Nachricht **Hello World!** wird angezeigt.
 
 ## Exportieren und Importieren von Knotentypen {#exporting-and-importing-node-types}
 
