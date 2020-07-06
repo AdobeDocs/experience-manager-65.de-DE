@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 2%
@@ -165,7 +165,7 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
 
    Hinweis: während es JCR-Knoten unter dem *asipath* auf author gibt, gelten diese für das SCF-Framework. Die eigentliche UGC ist nicht in JCR, sondern in der MongoDB.
 
-1. Ansicht des UGC in &quot;mongodb **[!UICONTROL Communities&quot;> &quot;Sammlungen&quot;> &quot;Inhalt&quot;]**
+1. Ansicht des UGC in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Sammlungen]** > **[!UICONTROL Inhalt]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
