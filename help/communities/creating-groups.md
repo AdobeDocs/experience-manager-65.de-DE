@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 41%
 
 ---
 
@@ -28,19 +31,19 @@ Beim Hinzufügen der Gruppenfunktion zur Struktur oder Vorlage einer Community-S
 
 ## Neue Gruppe erstellen {#creating-a-new-group}
 
-The ability to create a new community group relies on the existence of a community site which includes the groups function, such as one created from the ` [Reference Site Template](/help/communities/sites.md)`.
+The ability to create a new community group relies on the existence of a community site which includes the groups function, such as one created from the [Reference Site Template](/help/communities/sites.md).
 
 The examples that follow use the community site created from the `Reference Site Template` as described in the [Getting Started with AEM Communities](/help/communities/getting-started.md) tutorial.
 
 This is the page that loads on publish when the **Groups** menu item is selected:
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![chlimage_1-236](assets/chlimage_1-236.png)
 
 Wählen Sie das Symbol für **Neue Gruppe** aus, öffnet sich das Bearbeitungsdialogfeld.
 
 Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschaften der Gruppe an:
 
-![chlimage_1-86](assets/chlimage_1-86.png)
+![chlimage_1-237](assets/chlimage_1-237.png)
 
 * **Gruppenname**
 
@@ -69,21 +72,21 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 Under the **Template** tab is the ability to
 select from the list of community group templates that were specified when the groups function was included in the community site&#39;s structure or in a community site template.
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+![chlimage_1-238](assets/chlimage_1-238.png)
 
 Auf der Registerkarte **Bild** können Sie ein Bild hochladen, das auf der Seite „Gruppen“ der Community-Site angezeigt werden soll. Durch das Standard-Stylesheet wird das Bild auf eine Größe von 170 x 90 Pixeln zugeschnitten.
 
-![chlimage_1-88](assets/chlimage_1-88.png)
+![chlimage_1-239](assets/chlimage_1-239.png)
 
 Wählen Sie die Schaltfläche **Gruppe erstellen** aus, werden die Gruppenseiten basierend auf der ausgewählten Vorlage erstellt. Es wird eine Gruppe für Mitglieder erstellt und die Seite „Gruppen“ wird so aktualisiert, dass die neue Unter-Community aufgeführt wird.
 
 Die Seite „Gruppen“ mit einer neuen Unter-Community mit dem Namen „Focus Group“ (Gesprächsgruppe), für die ein Thumbnail hochgeladen wird, sieht beispielsweise wie folgt aus (der aktuelle Benutzer ist als Community-Gruppenadministrator angemeldet):
 
-![chlimage_1-89](assets/chlimage_1-89.png)
+![chlimage_1-240](assets/chlimage_1-240.png)
 
 Selecting the `Focus Group` link will open the Focus Group page in the browser, which has an initial appearance based on the chosen template, and includes a submenu underneath the main community site&#39;s menu:
 
-![chlimage_1-90](assets/chlimage_1-90.png)
+![chlimage_1-241](assets/chlimage_1-241.png)
 
 ### Komponente „Community-Gruppenmitgliederliste“{#community-group-member-list-component}
 
