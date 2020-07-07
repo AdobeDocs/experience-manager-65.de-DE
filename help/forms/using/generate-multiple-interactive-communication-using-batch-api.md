@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 6%
@@ -68,7 +68,7 @@ Sie kombinieren einen Datensatz mit einer interaktiven Kommunikationsvorlage, um
 
 ### Verwenden der Stapel-API mit überwachten Ordnern {#using-the-batch-api-watched-folders}
 
-Damit die API problemlos verwendet werden kann, stellt AEM Forms einen Dienst für überwachte Ordner bereit, der für die sofortige Verwendung der Stapel-API konfiguriert ist. Sie können über die AEM Forms-Benutzeroberfläche auf den Dienst zugreifen, um mehrere interaktive Kommunikation zu generieren. Sie können auch benutzerdefinierte Dienste entsprechend Ihren Anforderungen erstellen. Sie können die unten aufgeführten Methoden verwenden, um die Batch-API mit dem überwachten Ordner zu verwenden:
+Damit die API problemlos genutzt werden kann, stellt AEM Forms standardmäßig einen Dienst für überwachte Ordner bereit, der für die Verwendung der Stapel-API konfiguriert ist. Sie können auf den Dienst über die Benutzeroberfläche von AEM Forms zugreifen, um mehrere interaktive Kommunikationsvorgänge zu generieren. Sie können auch benutzerdefinierte Dienste entsprechend Ihren Anforderungen erstellen. Sie können die unten aufgeführten Methoden verwenden, um die Batch-API mit dem überwachten Ordner zu verwenden:
 
 * Geben Sie Eingabedaten (Datensätze) im JSON-Dateiformat an, um eine interaktive Kommunikation zu erstellen
 * Verwenden Sie Eingabedaten (Datensätze), die in einer externen Datenquelle gespeichert sind und über ein Formulardatenmodell aufgerufen werden, um eine interaktive Kommunikation zu erstellen.
@@ -345,12 +345,15 @@ Anschließend zeigt die folgende URL auf dem Veröffentlichungsknoten den Web-Ka
 Neben dem Speichern der Daten im Dateisystem speichern Sie JSON-Dateien im CRX-Repository, Dateisystem, Webserver oder können über den OSGI-Vorfülldienst auf Daten zugreifen. Syntax zum Zusammenführen von Daten mit verschiedenen Protokollen:
 
 * **CRX-Protokoll**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Dateiprotokoll**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Prefill-Dienstprotokoll**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Dienstes. Lesen Sie Erstellen und Ausführen eines Vorbefüllungs-Dienstes.
@@ -358,7 +361,9 @@ Neben dem Speichern der Daten im Dateisystem speichern Sie JSON-Dateien im CRX-R
    BEZEICHNER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Dienst erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Ein Bezeichner für den angemeldeten Benutzer ist ein Beispiel für die Metadaten, die verwendet werden könnten.
 
 * **HTTP-Protokoll**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> Standardmäßig ist nur das CRX-Protokoll aktiviert. Informationen zum Aktivieren anderer unterstützter Protokolle finden Sie unter [Konfigurieren des Vorfülldienstes mit Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>Standardmäßig ist nur das CRX-Protokoll aktiviert. Informationen zum Aktivieren anderer unterstützter Protokolle finden Sie unter [Konfigurieren des Vorfülldienstes mit Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
