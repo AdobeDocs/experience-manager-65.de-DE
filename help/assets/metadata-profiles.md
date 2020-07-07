@@ -3,7 +3,7 @@ title: Metadaten-Profil zum Anpassen der Metadatenanforderungen für Assets
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 58%
@@ -17,7 +17,7 @@ Mit einem Metadaten-Profil können Sie Standardmetadaten auf Assets in einem Ord
 
 ## Hinzufügen eines Metadatenprofils {#adding-a-metadata-profile}
 
-1. Navigieren Sie zu **[!UICONTROL Extras > Assets > Metadaten-Profil]** und klicken Sie auf **[!UICONTROL Erstellen]**.
+1. Navigieren Sie zu **[!UICONTROL Extras]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Profil]** und klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Enter a title for the Metadata Profile, for example Sample Metadata, and click **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
@@ -31,11 +31,13 @@ Mit einem Metadaten-Profil können Sie Standardmetadaten auf Assets in einem Ord
    * **[!UICONTROL Feldbeschriftung]**: Der Anzeigename der Metadateneigenschaft. Dieser dient lediglich als Referenz für den Benutzer.
 
    * **[!UICONTROL Zu Eigenschaft]** zuordnen: Der Wert dieser Eigenschaft stellt den relativen Pfad/Namen zu dem Asset-Knoten bereit, in dem er im Repository gespeichert wird. Der Wert sollte immer mit dem Beginn übereinstimmen, `./` da er angibt, dass sich der Pfad unter der Node des Assets befindet.
+
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
    Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Beispiel: Wenn Sie `/jcr:content/metadata/dc:desc` als Name der Eigenschaft &quot; **[!UICONTROL Zuordnung zu&quot;]**, speichert Assets den Wert `dc:desc` auf dem Metadaten-Knoten des Assets.
 
    * **[!UICONTROL Standardwert]**: Mit dieser Eigenschaft können Sie einen Standardwert für die Metadatenkomponente hinzufügen. Wenn Sie beispielsweise „Meine Beschreibung“ angeben, wird dieser Wert der Eigenschaft `dc:desc` im Metadatenknoten des Assets zugewiesen.
+
    ![chlimage_1-200](assets/chlimage_1-483.png)
 
    >[!NOTE]
@@ -98,7 +100,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 Sie können ein Metadatenprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten auf Ordner anwenden.
 
-Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
+Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Videoprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
@@ -106,7 +108,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 Gehen Sie wie folgt vor, um Metadaten-Profil anzuwenden:
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Extras]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Profil]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +128,7 @@ Gehen Sie wie folgt vor, um Metadaten-Profil anzuwenden:
 
 ### Globales Anwenden eines Metadatenprofils {#applying-a-metadata-profile-globally}
 
-Sie können ein Profil nicht nur auf einen Ordner anwenden, sondern auch global anwenden, sodass für alle Inhalte, die in Experience Manager-Assets in einem beliebigen Ordner hochgeladen werden, das ausgewählte Profil angewendet wird.
+Sie können ein Profil nicht nur auf einen Ordner anwenden, sondern auch global anwenden, sodass für alle Inhalte, die in Experience Manager-Assets eines Ordners hochgeladen werden, das ausgewählte Profil angewendet wird.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Metadatenprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
@@ -148,7 +150,7 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]**
 
 ### Remove metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Klicken Sie auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Extras]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Profil]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -160,7 +162,7 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]**
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus. Wählen Sie anschließend **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern]**. Ordner, denen bereits ein Profil zugewiesen wurde, sind dadurch gekennzeichnet, dass der Name des Profils direkt unterhalb des Ordnernamens angezeigt wird.
 
-## Einschränkungen und Best Practices {#limitations-best-practices-tips}
+## Limitations and best practices {#limitations-best-practices-tips}
 
 * Möglicherweise gibt es bereits vorhandene Metadaten-Profile, bevor Sie auf [!DNL Experience Manager] 6.5 aktualisieren. Wenn Sie nach der Aktualisierung ein solches Profil auf der Registerkarte &quot; [!UICONTROL Eigenschaften] von Ordnern&quot;auf die Registerkarte &quot; [!UICONTROL Metadaten-Profile] &quot;anwenden, werden die Metadatenformularfelder nicht angezeigt. Wenn Sie jedoch ein neu erstelltes Metadaten-Profil anwenden, werden die Formularfelder angezeigt, aber nicht wie erwartet verfügbar. Die Funktionen gehen nicht verloren, wenn Sie jedoch die (nicht verfügbaren) Formularfelder anzeigen möchten, bearbeiten und speichern Sie die vorhandenen Metadaten-Profil.
 
