@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ Je nach Typ der Clientanwendung können Sie das Formular in einen Client-Webbrow
 
 >[!NOTE]
 >
-> Weitere Informationen zum Erstellen einer Webanwendung, die Java-Servlets zum Aufrufen des Forms-Dienstes verwendet, finden Sie unter [Erstellen von Webanwendungen, die Forms](/help/forms/developing/creating-web-applications-renders-forms.md)rendern.
+>Weitere Informationen zum Erstellen einer Webanwendung, die Java-Servlets zum Aufrufen des Forms-Dienstes verwendet, finden Sie unter [Erstellen von Webanwendungen, die Forms](/help/forms/developing/creating-web-applications-renders-forms.md)rendern.
 
 Sie können einen Formularentwurf (eine XDP-Datei) oder ein PDF-Dokument auf zwei Arten an den Forms-Dienst übergeben:
 
@@ -41,7 +44,7 @@ Sie können einen Formularentwurf (eine XDP-Datei) oder ein PDF-Dokument auf zwe
 
 Sie können diese Aufgaben mithilfe des Forms-Dienstes ausführen:
 
-* Wiedergeben interaktiver PDF-Formulare (Siehe [Rendern von interaktiven PDF-Formularen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Interaktive PDF forms wiedergeben (Siehe [Rendern von interaktiven PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 * Wiedergabe von Formularen auf dem Client. (Siehe [Wiedergabe von Formularen auf dem Client](/help/forms/developing/rendering-forms-client.md).)
 * Wiedergabe von Formularen basierend auf Fragmenten (See [Rendering Forms Based on Fragments](/help/forms/developing/rendering-forms-based-fragments.md).)
 * Wiedergabe von Formularen mit aktivierten Verwendungsrechten. (Siehe [Wiedergabe von Formularen](/help/forms/developing/rendering-rights-enabled-forms.md)mit aktivierten Rechten.)
