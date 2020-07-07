@@ -3,7 +3,7 @@ title: 'Aktivieren von Asset Insights über DTM  '
 description: Erfahren Sie, wie Sie Asset Insights mit Adobe Dynamic Tag Management (DTM) aktivieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 41%
@@ -34,7 +34,6 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
    * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
    * Aktualisieren Sie die Felder entsprechend und klicken Sie auf Eigenschaft **[!UICONTROL erstellen]**. See [documentation](https://helpx.adobe.com/de/experience-manager/using/dtm.html).
-
    ![Webeigenschaft zum Bearbeiten](assets/Create-edit-web-property.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and click **[!UICONTROL Create New Rule]**.
@@ -45,15 +44,15 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Klicken Sie auf das Logo des Experience Managers und gehen Sie zu **[!UICONTROL Extras > Assets]**.
+1. Klicken Sie auf das Logo des Experience Managers und gehen Sie zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]**.
 1. Click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Speichern Sie die Änderungen.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` entfernt. Es wird erwartet, dass es über das Adobe Analytics-Tool von DTM verfügbar ist.
-   > * The call to `assetAnalytics.dispatcher.init`() is removed. Es wird erwartet, dass die Funktion erneut aufgerufen wird, sobald das Adobe Analytics-Tool von DTM vollständig geladen ist.
-   > * Je nachdem, wo Asset Insights-Seitenverfolgung gehostet wird (z. B. Experience Manager, CDN usw.), muss die Herkunft der Skriptquelle möglicherweise geändert werden.
-   > * Bei vom Experience Manager gehosteten Seitenaufzeichnern sollte die Quelle mit dem Hostnamen der Dispatcher-Instanz auf eine Veröffentlichungsinstanz verweisen.
+   >* `AppMeasurement.js` entfernt. Es wird erwartet, dass es über das Adobe Analytics-Tool von DTM verfügbar ist.
+   >* The call to `assetAnalytics.dispatcher.init()` is removed. Es wird erwartet, dass die Funktion erneut aufgerufen wird, sobald das Adobe Analytics-Tool von DTM vollständig geladen ist.
+   >* Je nachdem, wo Asset Insights-Seitenverfolgung gehostet wird (z. B. Experience Manager, CDN usw.), muss die Herkunft der Skriptquelle möglicherweise geändert werden.
+   >* Bei vom Experience Manager gehosteten Seitenaufzeichnern sollte die Quelle mit dem Hostnamen der Dispatcher-Instanz auf eine Veröffentlichungsinstanz verweisen.
 
 
 1. Greife Sie auf `https://dtm.adobe.com` zu. Klicken Sie in der Web-Eigenschaft auf **[!UICONTROL Übersicht]** und dann auf **[!UICONTROL Tool hinzufügen]** oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
