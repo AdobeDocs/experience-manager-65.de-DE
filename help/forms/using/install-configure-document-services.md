@@ -7,7 +7,10 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: a6afa740fa7897ef2629ca7ba07d6a1e08113957
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4353'
+ht-degree: 73%
 
 ---
 
@@ -39,9 +42,10 @@ AEM Forms bietet eine Reihe von OSGi-Diensten für verschiedene Vorgänge auf Do
    * Der AEM-Server zertifiziert ein Formular, bevor es an einen Benutzer zum Öffnen in Acrobat oder Adobe Reader gesendet wird.
    * Der AEM-Server prüft die Gültigkeit einer Signatur, die einem Formular in Acrobat oder Adobe Reader hinzugefügt wurde.
    * Der AEM-Server signiert ein Formular im Auftrag eines Beglaubigers.
+
    Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust Store gespeichert sind. For more information, see [Signature Service](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms ist eine leistungsstarke Plattform der Unternehmensklasse. Die Dokument-Services sind nur eine der Funktionen von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms ist eine leistungsstarke Plattform der Unternehmensklasse, und die Dokument Services sind nur eine der Fähigkeiten der AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Bereitstellungstopologie {#deployment-topology}
 
@@ -79,6 +83,7 @@ Bevor Sie AEM Forms Document Services installieren und konfigurieren, stellen Si
 >
 >* Unter Microsoft Windows unterstützt PDF Generator WebKit-, Acrobat WebCapture- und PhantomJS-Konvertierungswege zum Konvertieren von HTML-Dateien in PDF-Dokumente.
 >* Auf UNIX-basierten Betriebssystemen unterstützt PDF Generator WebKit- und PhantomJS-Konvertierungswege zum Konvertieren von HTML-Dateien in PDF-Dokumente.
+
 >
 
 
@@ -199,6 +204,7 @@ Wenn Sie mit dem PDF Generator-Dienst native Dateiformate wie Microsoft Word, Mi
 >* Adobe Acrobat, Microsoft Word, Excel und PowerPoint sind nur für Microsoft Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich Text-Dateien und unterstützte Microsoft Office-Dateien in PDF-Dokumente zu konvertieren.
 >* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 >* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
+
 >
 
 
@@ -251,11 +257,11 @@ Legen Sie Umgebungsvariablen für Java Development Kit (32 Bit und 64 Bit), An
 >* Die Umgebungsvariable OpenOffice_PATH wird auf den Installationsordner statt auf den Pfad der ausführbaren Datei festgelegt.
 >* Richten Sie keine Umgebung für Microsoft Office-Anwendungen wie Word, PowerPoint, Excel und Project oder für AutoCAD ein. Wenn diese Anwendungen auf dem Server installiert sind, startet der Generate PDF-Dienst sie automatisch.
 >* Installieren Sie auf UNIX-basierten Plattformen OpenOffice unter dem Benutzer /root. Wenn OpenOffice nicht unter dem Benutzer /root installiert wird, kann der PDF Generator-Dienst OpenOffice-Dokumente nicht in PDF-Dokumente konvertieren. Falls Sie OpenOffice unter einem anderen Benutzer als /root installieren und ausführen müssen, gewähren Sie dem betreffenden Benutzer sudo-Rechte.
->* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die Pfadvariable festzulegen:\
-   >  `export OpenOffice_PATH=/opt/openoffice.org4`
+>* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die Pfadvariable festzulegen:
+
 >
-
-
+>  
+`export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Nur für IBM WebSphere) IBM-SSL-Socketanbieter konfigurieren {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -350,10 +356,9 @@ Der PDF Generator-Dienst stellt WebKit-, WebCapture- und PhantomJS-Routen oder -
 
 >[!NOTE]
 >
-> Sobald Sie neue Schriftarten im Schriftartenordner installieren, starten Sie die AEM Forms-Instanz neu.
+>Sobald Sie neue Schriftarten im Schriftartenordner installieren, starten Sie die AEM Forms-Instanz neu.
 
-
-### (Nur UNIX-basierte Plattformen) Zusätzliche Konfigurationen für die Konvertierung von HTML in PDF {#extra-configurations-for-html-to-pdf-conversion}
+### (Nur UNIX-basierte Plattformen) Zusätzliche Konfigurationen für die Konvertierung von HTML in PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
 Auf UNIX-basierten Plattformen unterstützt der PDF Generator-Dienst WebKit- und PhantomJS-Routen zum Konvertieren von HTML-Dateien in PDF-Dokumente. Um die „HTML in PDF“-Konvertierung, führen Sie für Ihre bevorzugte Konvertierungsroute die folgenden Konfigurationen durch:
 
@@ -377,6 +382,7 @@ Kopieren Sie die Unicode-Schriftart in die folgenden Ordner, so wie es für Ihr 
 >* Stellen Sie sicher, dass alle Schriftarten (Unicode und Nicht-Unicode) im Ordner /usr/share/fonts or /usr/share/X11/fonts verfügbar sind.
 >* Wenn Sie den PDF Generator-Dienst unter einem anderen Benutzer als /root ausführen, gewähren Sie dem betreffenden Benutzer Lese- und Schreibzugriff auf alle Schriftartenordner.
 >* Sobald Sie neue Schriftarten im Schriftartenordner installieren, starten Sie die AEM Forms-Instanz neu.
+
 >
 
 
@@ -395,7 +401,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
    Wenn Sie das Paket manuell über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) angegeben ist, melden Sie sich beim Paketmanager an, klicken Sie auf **[!UICONTROL Paket hochladen]**, wählen Sie das heruntergeladene Paket aus und klicken Sie auf „Hochladen“. Nachdem Sie das Paket hochgeladen haben, klicken Sie auf den Paketnamen und dann auf **[!UICONTROL Installieren]**.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Nachrichten &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der Datei &quot; `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log&quot;nicht mehr angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der Datei &quot; `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log&quot;nicht mehr angezeigt werden und das Protokoll stabil ist.
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
 
