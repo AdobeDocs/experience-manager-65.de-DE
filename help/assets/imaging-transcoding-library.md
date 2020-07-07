@@ -3,7 +3,7 @@ title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 36%
@@ -76,7 +76,7 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Das Paket ist mit Experience Manager 6.5 kompatibel.
 
-1. Um eine Bündel-ID für `com.day.cq.dam.cq-dam-switchengine`zu ermitteln, melden Sie sich bei der Web-Konsole an und klicken Sie auf **[!UICONTROL OSGi > Bundles]**. Alternativ können Sie zum Öffnen der Bündelkonsole auf die `https://[aem_server:[port]/system/console/bundles/` URL zugreifen. Suchen Sie nach `com.day.cq.dam.cq-dam-switchengine` Bundle und dessen ID.
+1. Um eine Bündel-ID für `com.day.cq.dam.cq-dam-switchengine`zu ermitteln, melden Sie sich bei der Web-Konsole an und klicken Sie auf **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Alternativ können Sie zum Öffnen der Bündelkonsole auf die `https://[aem_server:[port]/system/console/bundles/` URL zugreifen. Suchen Sie nach `com.day.cq.dam.cq-dam-switchengine` Bundle und dessen ID.
 
 1. Stellen Sie sicher, dass alle erforderlichen Bibliotheken extrahiert werden, indem Sie den Ordner mit dem Befehl überprüfen, `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`wobei der Ordnername mit der Bündel-ID erstellt wird. Der Befehl lautet beispielsweise, `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` wenn die Bündel-ID `588`lautet.
 
@@ -105,7 +105,7 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 Aktualisieren Sie den Arbeitsablauf [!UICONTROL DAM Update Asset] , um die Bibliothek zur Bildverarbeitung zu verwenden.
 
-1. Wählen Sie in der Benutzeroberfläche von Experience Manager &quot; **[!UICONTROL Werkzeuge&quot;> &quot;Arbeitsablauf&quot;> &quot;Modelle]**&quot;.
+1. Wählen Sie in der Benutzeroberfläche von Experience Manager **[!UICONTROL Werkzeuge]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
