@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 94%
@@ -66,19 +66,22 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 >
 >* Für die Konvertierung von HTML in PDF müssen bestimmte Schriftarten im Schriftartensystemordner enthalten sein. Unter Linux-, Solaris- und AIX-Systemen muss der Schriftartensystemordner die Schriftart Courier enthalten. Unter Windows-Systemen muss der Schriftartensystemordner die Schriftart Times New Roman enthalten.
    >
-   > 
+   >
 * (Nur UNIX-basiertes System) Eine der folgenden japanischen Schriften sollte auf dem AEM Forms-Server verfügbar sein, um eine Webseite mit japanischer Schrift in ein PDF-Dokument zu konvertieren.
    >
-   >   
-   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Gothic Pro-VI&quot;
-   >   * &quot;Kozuka Mincho Pro-VI&quot;
-   >   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Mincho Pr6N&quot;
-   >   * &quot;Sazanami Mincho&quot;
-   >   * &quot;Adobe Heiti Std.&quot;
-   >   * &quot;Adobe Song Std&quot;
->* Verwenden Sie die Option „Datei hochladen“ auf der Seite „HTML in PDF“, um eine Datei vom lokalen Dateisystem hochzuladen.
+   >  
+* &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Gothic Pro-VI&quot;
+>  * &quot;Kozuka Mincho Pro-VI&quot;
+>  * &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Mincho Pr6N&quot;
+>  * &quot;Sazanami Mincho&quot;
+>  * &quot;Adobe Heiti Std.&quot;
+>  * &quot;Adobe Song Std&quot;
+
+   >
+   >
+* Verwenden Sie die Option „Datei hochladen“ auf der Seite „HTML in PDF“, um eine Datei vom lokalen Dateisystem hochzuladen.
 
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „HTML in PDF“.
@@ -86,6 +89,7 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 
    * Geben Sie in „Datei hochladen“ den Pfad und den Namen der HTML- oder ZIP-Datei ein oder klicken Sie auf „Durchsuchen“, um die Datei zu suchen und auszuwählen.
    * Geben Sie in das Feld „URL angeben“ die URL der zu konvertierenden Seite oder Website ein.
+
    >[!NOTE]
    >
    >Die zu konvertierende Datei muss eine der Dateinamenerweiterungen „HTML“, „HTM“ oder „ZIP“ besitzen.
