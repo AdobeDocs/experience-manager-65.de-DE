@@ -4,7 +4,10 @@ seo-title: Abwesenheitseinstellungen konfigurieren
 description: Abwesenheitseinstellungen konfigurieren
 seo-description: Abwesenheitseinstellungen konfigurieren
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 6%
 
 ---
 
@@ -23,10 +26,10 @@ Sie können die Elementübertragung auf Grundlage der Workflow-Modelle trennen. 
 
 >[!NOTE]
 >
-> * Wenn Sie die Abwesenheitseinstellung aktivieren, bleiben alle Elemente, die in Ihrem Posteingang verfügbar sind, bevor Sie die Einstellung aktivieren, im Posteingang. Nur Artikel, die nach Aktivierung der Einstellung empfangen wurden, werden delegiert.
-> * Wenn Sie die Abwesenheitseinstellung deaktivieren, werden die übertragenen Elemente nicht automatisch wieder zugewiesen. Mithilfe der Anforderungsfunktion können Sie Elemente zuweisen.
-> * Wenn Benutzer A Elemente an Benutzer B und Benutzer B weiter an Benutzer C delegiert, werden Elemente nur Benutzer C und nicht Benutzer B zugewiesen.
-> * Wenn eine Schleife in der Zuweisung vorhanden ist, bleiben die Aufgaben beim ursprünglichen Benutzer. Wenn Benutzer A beispielsweise Elemente an Benutzer B Benutzer B delegiert, an Benutzer C, Benutzer C an Benutzer D delegiert und Benutzer D an Benutzer B delegiert, wird eine Schleife erstellt. In einem solchen Fall verbleibt der Artikel beim ursprünglichen Benutzer. Benutzer A ist der ursprüngliche Benutzer im obigen Beispiel.
+>* Wenn Sie die Abwesenheitseinstellung aktivieren, bleiben alle Elemente, die in Ihrem Posteingang verfügbar sind, bevor Sie die Einstellung aktivieren, im Posteingang. Nur Artikel, die nach Aktivierung der Einstellung empfangen wurden, werden delegiert.
+>* Wenn Sie die Abwesenheitseinstellung deaktivieren, werden die übertragenen Elemente nicht automatisch wieder zugewiesen. Mithilfe der Anforderungsfunktion können Sie Elemente zuweisen.
+>* Wenn Benutzer A Elemente an Benutzer B und Benutzer B weiter an Benutzer C delegiert, werden Elemente nur Benutzer C und nicht Benutzer B zugewiesen.
+>* Wenn eine Schleife in der Zuweisung vorhanden ist, bleiben die Aufgaben beim ursprünglichen Benutzer. Wenn Benutzer A beispielsweise Elemente an Benutzer B Benutzer B delegiert, an Benutzer C, Benutzer C an Benutzer D delegiert und Benutzer D an Benutzer B delegiert, wird eine Schleife erstellt. In einem solchen Fall verbleibt der Artikel beim ursprünglichen Benutzer. Benutzer A ist der ursprüngliche Benutzer im obigen Beispiel.
 
 
 ## Abwesenheitseinstellung für Ihr Konto aktivieren {#enable-out-of-office}
