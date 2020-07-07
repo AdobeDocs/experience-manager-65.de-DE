@@ -1,9 +1,9 @@
 ---
 title: URL zu freigegebenen Assets erstellen
-description: In diesem Artikel wird beschrieben, wie Sie Assets, Ordner und Sammlungen in Experience Manager Assets als URL für externe Parteien freigeben.
+description: In diesem Artikel wird beschrieben, wie Sie Assets, Experience Manager und Sammlungen als URL für externe Parteien freigeben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 51%
@@ -40,15 +40,16 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 
    >[!NOTE]
    >
-   >If you want to share links from your Experience Manager Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Blockieren Sie andere URLs, um die Sicherheit von Experience Manager Author sicherzustellen.
+   >If you want to share links from your Experience Manager Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Sperren Sie andere URLs, um die Sicherheit von Experience Manager Author zu gewährleisten.
    >
-   >* http://&lt;aem_server>:&lt;port>/linkshare.html
-   * http://&lt;aem_server>:&lt;port>/linksharepreview.html
-   * http://&lt;aem_server>:&lt;port>/linkexpired.html
+   >* http://[aem_server]:[port]/linkshare.html
+   >* http://[aem_server]:[port]/linksharepreview.html
+   >* http://[aem_server]:[port]/linkexpired.html
 
 
    >[!NOTE]
-   Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzer frei.
+   >
+   >Wenn ein freigegebenes Asset an einen anderen Speicherort verschoben wird, funktioniert der Link zum Asset nicht mehr. Erstellen Sie den Link erneut und geben Sie ihn für die Benutzer frei.
 
 1. Rufen Sie in der Benutzeroberfläche von Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]** auf.
 
@@ -65,7 +66,8 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
    *Abbildung: Verknüpfungen zu Assets direkt über das Dialogfeld &quot;[!UICONTROL Linkfreigabe]&quot;freigeben*
 
    >[!NOTE]
-   If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
+   >
+   >If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
 
 1. In the **[!UICONTROL Subject]** field, enter a subject for the asset you want to share.
 
@@ -78,7 +80,8 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 1. Damit Benutzer das Originalbild zusammen mit den Ausgabeformaten herunterladen können, wählen Sie die Option **[!UICONTROL Download der Originaldatei zulassen]** aus.
 
    >[!NOTE]
-   Standardmäßig können Benutzer nur die Ausgabeformate des Assets herunterladen, das Sie als Link freigegeben haben.
+   >
+   >Standardmäßig können Benutzer nur die Ausgabeformate des Assets herunterladen, das Sie als Link freigegeben haben.
 
 1. Klicken Sie auf **[!UICONTROL Freigeben]**. Eine Meldung bestätigt, dass der Link per E-Mail für die jeweiligen Benutzer freigegeben wurde.
 1. Um das freigegebene Asset Ansicht, klicken Sie auf den Link in der E-Mail, die an den Benutzer gesendet wird. Das freigegebene Asset wird auf der Seite **[!UICONTROL Adobe Marketing Cloud]** angezeigt.
@@ -92,19 +95,20 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   Experience Manager unterstützt das Generieren der Vorschau von Assets dieser MIME-Typen: JPG, PNG, GIF, BMP, INDD, PDF und PPT. Für Assets anderer MIME-Typen können Sie nur die Assets herunterladen.
+   >
+   >Experience Manager unterstützt das Generieren der Vorschau von Assets dieser MIME-Typen: JPG, PNG, GIF, BMP, INDD, PDF und PPT. Für Assets anderer MIME-Typen können Sie nur die Assets herunterladen.
 
 1. To download the shared asset, click **[!UICONTROL Select]** from the toolbar, click the asset, and then click **[!UICONTROL Download]** from the toolbar.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Um die Assets, die Sie als Links freigegeben haben, Ansicht, rufen Sie die Benutzeroberfläche &quot;Assets&quot;auf und klicken Sie auf das Experience Manager-Logo. Wählen Sie in der Liste die Option **[!UICONTROL Navigation]** aus, um das Bedienfeld „Navigation“ anzuzeigen.
+1. Um die Assets, die Sie als Links freigegeben haben, Ansicht, rufen Sie die Benutzeroberfläche &quot;Assets&quot;auf und klicken Sie auf das Logo des Experience Managers. Wählen Sie in der Liste die Option **[!UICONTROL Navigation]** aus, um das Bedienfeld „Navigation“ anzuzeigen.
 1. Wählen Sie im Bedienfeld „Navigation“ die Option **[!UICONTROL Freigegebene Links]** aus, um eine Liste der freigegebenen Assets anzuzeigen.
 1. To un-share an asset, select it and click **[!UICONTROL Unshare]** from the toolbar. Es folgt eine Bestätigungsmeldung. Der Eintrag für das Asset wird aus der Liste entfernt.
 
 ## Konfigurieren des Day CQ Mail Service {#configmailservice}
 
-1. Navigieren Sie auf der Experience Manager-Startseite zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+1. Navigieren Sie auf der Startseite Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. Wählen Sie in der Liste der Dienste **[!UICONTROL Day CQ Mail Service]** aus.
 1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -112,6 +116,7 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
    * SMTP-Server-Anschluss: email server port
    * SMTP-Benutzer: email server user name
    * SMTP-Kennwort: email server password
+
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
