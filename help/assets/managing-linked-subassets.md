@@ -3,7 +3,7 @@ title: Verwalten Sie zusammengesetzte Assets mit Verweisen und mehrseitigen Asse
 description: Hier erfahren Sie, wie Sie Verweise auf digitale Assets von innen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]aus erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 17%
@@ -89,7 +89,7 @@ Für die unterstützten Assets mit mehrseitigen Formaten — PDF-Dateien, AI-Dat
 
 Die Erstellung von Unter-Assets ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um die Erzeugung von Teilassets zu aktivieren:
 
-1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Log into [!DNL Experience Manager] as an administrator. Öffnen Sie **[!UICONTROL Werkzeuge]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. Wählen Sie **[!UICONTROL DAM Update Asset]** Workflow und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Klicken Sie auf **[!UICONTROL Seitenbedienfeld]** umschalten und suchen Sie den Schritt &quot;Unterelement **[!UICONTROL erstellen&quot;]** . Hinzufügen den Schritt zum Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
 
@@ -99,7 +99,7 @@ Führen Sie zum Generieren der Teilassets einen der folgenden Schritte aus:
 * Vorhandene mehrseitige Assets: Führen Sie den Arbeitsablauf [!UICONTROL DAM Update Assets] manuell aus, indem Sie einen der folgenden Schritte ausführen:
 
    * Wählen Sie ein Asset aus und klicken Sie auf [!UICONTROL Zeitschiene] , um das linke Bedienfeld zu öffnen. Alternately, use the keyboard shortcut `alt + 3`. Klicken Sie auf [!UICONTROL Beginn Workflow], wählen Sie [!UICONTROL DAM Update Asset], klicken Sie auf [!UICONTROL Beginn]und dann auf [!UICONTROL Fortfahren].
-   * Wählen Sie ein Asset aus und klicken Sie in der Symbolleiste auf [!UICONTROL Erstellen > Workflow] . Wählen Sie im Popup-Dialogfeld [!UICONTROL DAM Update Asset] Workflow, klicken Sie auf [!UICONTROL Beginn]und dann auf [!UICONTROL Fortfahren].
+   * Wählen Sie ein Asset aus und klicken Sie in der Symbolleiste auf [!UICONTROL Erstellen] > [!UICONTROL Workflow] . Wählen Sie im Popup-Dialogfeld [!UICONTROL DAM Update Asset] Workflow, klicken Sie auf [!UICONTROL Beginn]und dann auf [!UICONTROL Fortfahren].
 
 Führen Sie insbesondere für Microsoft Word-Dokumente den Arbeitsablauf **[!UICONTROL DAM Parse Word-Dokumente]** aus. Es wird eine `cq:Page` Komponente aus dem Inhalt des Microsoft Word-Dokuments generiert. Die `cq:Page`-Komponente verweist auf die aus dem Dokument extrahierten Bilder. Diese Bilder werden auch dann extrahiert, wenn die Erstellung von Unter-Assets deaktiviert ist.
 
