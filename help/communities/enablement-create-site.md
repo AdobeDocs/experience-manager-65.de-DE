@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '1729'
+ht-degree: 4%
 
 ---
 
@@ -26,10 +29,9 @@ So erstellen Sie eine neue Community-Site:
 
 Verwenden der [Autoreninstanz](https://localhost:4502/)
 
-* Anmelden mit Administratorrechten
-* Navigieren Sie zu **[!UICONTROL Communities > Sites]**
+* Melden Sie sich mit Administratorberechtigungen an und navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
-* Wählen Sie **Erstellen**
+* Wählen Sie **Erstellen**.
 
 ### Schritt 1: Site-Vorlage {#step-site-template}
 
@@ -37,7 +39,7 @@ Verwenden der [Autoreninstanz](https://localhost:4502/)
 
 Geben Sie im Schritt **Site-Vorlage** einen Titel, eine Beschreibung und den Namen der URL ein und wählen Sie eine Community-Site-Vorlage aus, z. B.:
 
-* **Community-Site-Titel**: `Enablement Tutorial`
+* **Community-Site-Titel**: `Enablement Tutorial`.
 
 * **Community-Site-Beschreibung**: `A site for enabling the community to learn.`
 
@@ -54,7 +56,7 @@ Geben Sie im Schritt **Site-Vorlage** einen Titel, eine Beschreibung und den Nam
 
 * **Referenz-Site-Vorlage**: nach unten ziehen `Reference Structured Learning Site Template`
 
-Wählen Sie **Weiter** aus
+Wählen Sie **Weiter** aus.
 
 ### Schritt 2: Design {#step-design}
 
@@ -68,7 +70,9 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 (Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird an der linken Kante des Browsers zwischen dem Community-Site-Header und dem Menü (Navigationslinks) fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
 
-![chlimage_1-2](assets/chlimage_1-2.png) ![chlimage_1](assets/chlimage_1.jpeg)
+![chlimage_1-449](assets/chlimage_1-449.png)
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 Wählen Sie **Weiter** aus.
 
@@ -84,13 +88,13 @@ Eine Community-Site ist privat, wenn anonymen Site-Besuchern der Zugriff verweig
 
 Stellen Sie sicher, dass die meisten Kontrollkästchen für [Benutzerverwaltung](/help/communities/sites-console.md#user-management) deaktiviert sind:
 
-* Site-Besucher NICHT zur Selbstregistrierung zulassen
-* Anonyme Site-Besucher NICHT zur Ansicht der Site zulassen
-* Optional, ob Messaging unter Community-Mitgliedern zulässig ist
-* Anmeldung bei Facebook NICHT zulassen
-* Anmeldung mit Twitter NICHT zulassen
+* Site-Besucher dürfen sich NICHT selbst registrieren.
+* Die Ansicht der Site durch anonyme Site-Besucher ist NICHT zulässig.
+* Optional, ob das Messaging unter Community-Mitgliedern erlaubt werden soll oder nicht.
+* Lassen Sie die Anmeldung bei Facebook NICHT zu.
+* Anmeldung mit Twitter NICHT zulassen.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![user-mgmt](assets/user-mgmt.png)
 
 #### TAGGING {#tagging}
 
@@ -103,7 +107,7 @@ Die Suche nach Namensräumen ist mit der Typenvorschau einfach. Beispiel:
 * Typ `tut`
 * Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![enable-tagging](assets/enablement-tagging.png)
 
 ### ROLES {#roles}
 
@@ -120,13 +124,14 @@ Beispiel:
 >
 >[Der Tunnel-Dienst](/help/communities/deploy-communities.md#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungs-Umgebung vorhanden sind.
 
+
 ![Rollen aktivieren](assets/site-admin.png)
 
 #### MODERATION {#moderation}
 
 Übernehmen Sie die globalen Standardeinstellungen für die [Moderation](/help/communities/sites-console.md#moderation) benutzergenerierter Inhalte (UGC).
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-452](assets/chlimage_1-452.png)
 
 #### ANALYTICS {#analytics}
 
@@ -134,7 +139,7 @@ Wählen Sie aus der Dropdownliste das für diese Community-Site konfigurierte An
 
 Die im Screenshot angezeigte Auswahl ist `Communities`das Framework-Beispiel aus der [Konfigurationsdokumentation.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-454](assets/chlimage_1-454.png)
 
 #### TRANSLATION {#translation}
 
@@ -143,20 +148,21 @@ Die [Übersetzungseinstellungen](/help/communities/sites-console.md#translation)
 * Maschinelle Übersetzung **zulassen prüfen**
 * Standardeinstellungen verwenden
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-456](assets/chlimage_1-456.png)
 
 #### ENABLEMENT {#enablement}
 
 Für eine Aktivierungsgemeinschaft ist es erforderlich, einen oder mehrere Community-Aktivierungsmanager zu identifizieren.
 
-* **Aktivierungsmanager**(erforderlich) Mitglieder der `Community Enablement Managers` Gruppe können ausgewählt werden, um diese Community-Site zu verwalten.
+* **Aktivierungsmanager**(erforderlich) Mitglieder der 
+`Community Enablement Managers` zur Verwaltung dieser Community-Site ausgewählt werden.
 
    * Typ `s`
    * Wählen Sie nun eine der folgenden Optionen aus `Sirius Nilson`
 
 * **Marketing Cloud-Organisations-ID**(optional) Die ID für ein Adobe Analytics-Konto, die erforderlich ist, wenn [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) in den Berichte für die Aktivierung aufgenommen wird.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-457](assets/chlimage_1-457.png)
 
 Wählen Sie **Weiter** aus.
 
@@ -164,7 +170,7 @@ Wählen Sie **Weiter** aus.
 
 Wählen Sie **Erstellen.**
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-458](assets/chlimage_1-458.png)
 
 Nach Abschluss des Vorgangs wird der Ordner für die neue Site in der Konsole Communities > Sites angezeigt.
 
@@ -186,15 +192,15 @@ Von links nach rechts:
 
 * **Site öffnen**
 
-   Wählen Sie das Stiftsymbol, um die Community-Site im Autorenbearbeitungsmodus zu öffnen, um Seitenkomponenten hinzuzufügen und/oder zu konfigurieren
+   Wählen Sie das Stiftsymbol aus, um die Community-Site im Autorenbearbeitungsmodus zu öffnen, um Seitenkomponenten hinzuzufügen und/oder zu konfigurieren.
 
 * **Site bearbeiten**
 
-   Wählen Sie das Symbol Eigenschaften aus, um die Community-Site zum Ändern von Eigenschaften wie dem Titel oder zum Ändern des Designs zu öffnen
+   Wählen Sie das Symbol Eigenschaften aus, um die Community-Site zum Ändern von Eigenschaften wie dem Titel oder zum Ändern des Designs zu öffnen.
 
 * **Site veröffentlichen**
 
-   Wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen (standardmäßig auf localhost:4503)
+   Wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen (standardmäßig auf localhost:4503).
 
 * **Site exportieren**
 
@@ -205,17 +211,17 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
    Um die Community-Site zu löschen, wählen Sie das Symbol &quot;Site löschen&quot;, das angezeigt wird, wenn Sie den Mauszeiger über die Site in der Communities Site-Konsole bewegen. Durch diese Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. UGC, Benutzergruppen, Assets und Datenbankdatensätze.
 
-![enabledEvents](assets/enablesiteactions.png)
+   ![enabledEvents](assets/enablesiteactions.png)
 
 #### Wählen Sie Veröffentlichen {#select-publish}
 
 Wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen.
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![chlimage_1-465](assets/chlimage_1-465.png)
 
 Es wird ein Hinweis geben, dass die Site veröffentlicht wurde.
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-466](assets/chlimage_1-466.png)
 
 ## Community-Benutzer und -Benutzergruppen {#community-users-user-groups}
 
@@ -223,9 +229,9 @@ Es wird ein Hinweis geben, dass die Site veröffentlicht wurde.
 
 Neben der neuen Community-Site werden neue Benutzergruppen erstellt, die über die entsprechenden Berechtigungen für verschiedene Verwaltungsfunktionen verfügen. Weitere Informationen finden Sie unter [Benutzergruppen für Community-Sites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Für diese neue Community-Site werden die neuen Benutzergruppen, die in der Umgebung zum Veröffentlichen vorhanden sind, unter dem Site-Namen &quot;Aktivieren&quot;in Schritt 1 in der Konsole &quot; [Communities Mitglieder und Gruppen&quot;angezeigt](/help/communities/members.md#groups-console) :
+Für diese neue Community-Site werden die neuen Benutzergruppen, die in der Umgebung &quot;Veröffentlichen&quot;vorhanden sind, unter dem Site-Namen &quot;Aktivieren&quot;in Schritt 1 in der Konsole &quot; [Communities-Mitglieder und -Gruppen&quot;angezeigt](/help/communities/members.md#groups-console):
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![community_usergroup](assets/community_usergroup.png)
 
 ### Mitglieder zur Community-Gruppe &quot;Mitglieder aktivieren&quot;zuweisen {#assign-members-to-community-enable-members-group}
 
@@ -244,19 +250,19 @@ In diesem Beispiel `Community Ski Class` wird die Gruppe als Mitglied der Gruppe
 
 * Wählen Sie **Speichern** aus
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-418](assets/chlimage_1-418.png)
 
 ## Konfigurationen bei der Veröffentlichung {#configurations-on-publish}
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ### Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
 Nachdem eine Site konfiguriert und zur Veröffentlichung gesendet wurde, [konfigurieren Sie die Anmeldezuordnung](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldeinformationen der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut angezeigt wird.
 
-Hinzufügen `Login Page Mapping` als
+Hinzufügen `Login Page Mapping` als:
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -266,7 +272,7 @@ Wenn Sie zu Demonstrationszwecken mit der Veröffentlichungs-Site arbeiten, ist 
 
 Hierzu müssen Sie [CRX|DE](https://localhost:4503/crx/de) Lite verwenden, um die Tabelle für die [Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md) bei der Veröffentlichung zu bearbeiten.
 
-Erste Schritte
+Erste Schritte:
 
 1. Greifen Sie beim Veröffentlichen auf CRXDE zu und melden Sie sich mit Administratorberechtigungen an
 
@@ -290,6 +296,7 @@ Erste Schritte
       * **Name** sling:match
       * **Typzeichenfolge**
       * **Wert** localhost.4503/$
+
    (muss mit &#39;$&#39; Zeichen enden)
 
    * Hinzufügen
@@ -309,17 +316,18 @@ Erste Schritte
 >
 >Zur Deaktivierung müssen Sie den `sling:match` Eigenschaftswert einfach mit einem &quot;x&quot;- `xlocalhost.4503/$` - und **Save All**(Alle speichern) vorlegen.
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+
+![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Fehlerbehebung: Fehler beim Speichern der Map {#troubleshooting-error-saving-map}
 
 Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen versehen ist, da es sich nicht um ein gültiges Namensraum-Präfix `localhost` handelt.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Fehlerbehebung: Fehler bei der Umleitung {#troubleshooting-fail-to-redirect}
 
-Die **Zeichenfolge &#39;**$ `sling:match`&#39; am Ende des regulären Ausdrucks ist von entscheidender Bedeutung, sodass nur exakt `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt es fehl.
+Die Zeichenfolge &#39;**$**&#39; am Ende des regulären Ausdrucks `sling:match` ist von entscheidender Bedeutung, sodass nur exakt `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt es fehl.
 
 ## Ändern der Community-Site {#modifying-the-community-site}
 
@@ -332,6 +340,7 @@ Denken Sie nach jeder Änderung daran, die Site zu **speichern** und erneut zu *
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+
 
 ### Hinzufügen eines Katalogs {#add-a-catalog}
 
@@ -350,13 +359,14 @@ Wählen Sie das STRUKTURbedienfeld aus, um einen Katalog hinzuzufügen oder eine
 * **URL**: `catalog`
 
 * **Alle Namensraum** auswählen: als Standard beibehalten.
-* Wählen Sie **Save** aus.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+* Wählen Sie **Speichern** aus.
+
+![chlimage_1-299](assets/chlimage_1-299.png)
 
 Verwenden Sie das Positionssymbol, um die Katalogfunktion nach den Zuweisungen an die zweite Position zu verschieben.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-300](assets/chlimage_1-300.png)
 
 Wählen Sie in der oberen rechten Ecke die Option **Speichern** , um die Änderungen an der Community-Site zu speichern.
 
