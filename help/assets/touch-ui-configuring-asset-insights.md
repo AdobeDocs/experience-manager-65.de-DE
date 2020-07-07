@@ -1,9 +1,12 @@
 ---
 title: Konfigurieren Sie Asset Insights, um Analysen zur Verwendung digitaler Assets zu erhalten.
-description: Konfigurieren Sie Asset Insights in [!DNL Adobe Experience Manager Assets].
+description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 34%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
-1. Klicken Sie auf die Karte **[!UICONTROL Insight-Konfiguration]**.
+1. Klicken Sie auf die Karte **[!UICONTROL Insights-Konfiguration]**.
 1. Wählen Sie im Assistenten ein Rechenzentrum aus und geben Sie Ihre Anmeldedaten an, z. B. den Namen Ihres Unternehmens, den Benutzernamen und gemeinsamen geheimen Schlüssel.
 
    ![Adobe Analytics für Assets Insights in Experience Manager konfigurieren](assets/insights_config2.png)
