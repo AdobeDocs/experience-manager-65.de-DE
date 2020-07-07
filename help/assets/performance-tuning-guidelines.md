@@ -4,10 +4,10 @@ description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfigurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da2e435f33e8527793e009700c30e60868d196be
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '2776'
-ht-degree: 52%
+source-wordcount: '2767'
+ht-degree: 53%
 
 ---
 
@@ -28,7 +28,7 @@ In den folgenden Schlüsselbereichen sollten Sie besonders darauf achten, dass L
 
 ## Plattform {#platform}
 
-Obwohl Experience Manager auf einer Reihe von Plattformen unterstützt wird, hat Adobe die größte Unterstützung für native Werkzeuge unter Linux und Windows gefunden, was zu einer optimalen Leistung und einfachen Implementierung beiträgt. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Wie bei jeder Experience Manager-Bereitstellung sollten Sie TarMK möglichst implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
+Obwohl Experience Manager auf verschiedenen Plattformen unterstützt wird, hat Adobe die beste Unterstützung für native Tools unter Linux und Windows gefunden, was zu einer optimalen Performance und einfachen Implementierung beiträgt. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Wie bei jeder Implementierung von Experience Managern sollten Sie TarMK so weit wie möglich implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
 
 ### Temporärer Ordner {#temp-folder}
 
@@ -55,9 +55,8 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 Adobe empfiehlt die Bereitstellung [!DNL Experience Manager Assets] auf Java 8 für eine optimale Leistung.
 
->[!NOTE]
->
->Oracle hat die Veröffentlichung von Updates für Java 7 ab April 2015 eingestellt.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### JVM-Parameter   {#jvm-parameters}
 
