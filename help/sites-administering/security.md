@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 80%
@@ -457,9 +457,11 @@ So erstellen Sie einen neuen Benutzer oder eine neue Gruppe:
 1. Geben Sie jeweils die zum Erstellen eines Benutzers oder einer Gruppe erforderlichen Details ein.
 
    * Bei Auswahl von **Benutzer erstellen** geben Sie die Anmeldungskennung, den Vor- und Nachnamen, die E-Mail-Adresse und ein Kennwort ein. Standardmäßig erstellt AEM einen Pfad basierend auf dem ersten Buchstaben des Nachnamens. Sie können aber auch einen anderen Pfad festlegen.
+
    ![createuserdialog](assets/createuserdialog.png)
 
    * Bei Auswahl von **Gruppe erstellen** geben Sie eine Gruppenkennung und eine optionale Beschreibung ein.
+
    ![creategroupdialog](assets/creategroupdialog.png)
 
 1. Klicken Sie auf **Erstellen**. Der von Ihnen erstellte Benutzer bzw. die von Ihnen erstellte Gruppe wird in der Strukturliste angezeigt.
@@ -493,11 +495,11 @@ Gehen Sie wie folgt vor, um das Kennwort eines Benutzers zu ändern.
 >[!NOTE]
 >
 >Sie können das Administratorkennwort nicht mit der Sicherheitskonsole ändern. Um das Kennwort für das Admin-Konto zu ändern, verwenden Sie die unter „Granite-Vorgänge“ bereitgestellte [Benutzerkonsole.](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user)
-> Wenn Sie AEM Forms on JEE verwenden, verwenden Sie keine der folgenden Anweisungen zum Ändern des Kennworts, sondern verwenden Sie AEM Forms on JEE Admin Console (/adminui), um das Kennwort zu ändern.
+>
+>Wenn Sie AEM Forms unter JEE verwenden, verwenden Sie nicht die unten stehenden Anweisungen zum Ändern des Kennworts, sondern verwenden Sie AEM Forms in der JEE Admin Console (/adminui), um das Kennwort zu ändern.
 
 1. Doppelklicken Sie in der **Sicherheitskonsole** auf den Namen des Benutzers, dessen Kennwort geändert werden soll.
 1. Klicken Sie auf die Registerkarte **Eigenschaften** (sofern noch nicht aktiv).
-
 1. Klicken Sie auf **Kennwort festlegen**. Daraufhin wird das Fenster „Kennwort festlegen“ geöffnet, in dem Sie das Kennwort ändern können.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
@@ -638,6 +640,7 @@ Die Replikationsberechtigung bezeichnet das Recht zur Veröffentlichung von Inha
 >* Alle auf eine Gruppe angewendeten Replikationsrechte gelten für alle Benutzer in dieser Gruppe.
 >* Die Replikationsberechtigungen eines Benutzers ersetzen die Replikationsberechtigungen einer Gruppe.
 >* Die Replikationsrechte „Zulassen“ haben Vorrang vor den Replikationsrechten „Ablehnen“. See [Permissions in AEM](#permissions-in-aem) for more information.
+
 >
 
 
