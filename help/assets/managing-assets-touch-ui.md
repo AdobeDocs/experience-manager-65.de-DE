@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '9250'
 ht-degree: 63%
@@ -141,7 +141,7 @@ Der serielle Upload von Assets ist standardmäßig aktiviert. To disable the fea
 
 ### Upload assets using FTP {#uploading-assets-using-ftp}
 
-Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server. Wenn Sie große Assets (> 1 GB) hochladen oder ganze Ordner und Unterordner hochladen möchten, sollten Sie FTP verwenden. Sie können das Hochladen per FTP auch einrichten, um Uploads regelmäßig und nach Plan durchzuführen.
+Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server. Wenn Sie große Assets (>1 GB) hochladen oder ganze Ordner und Unterordner hochladen möchten, sollten Sie FTP verwenden. Sie können das Hochladen per FTP auch einrichten, um Uploads regelmäßig und nach Plan durchzuführen.
 
 >[!NOTE]
 >
@@ -640,7 +640,7 @@ CUGs stellen eine zusätzliche Möglichkeit dar, den Zugang zu Ihren Assets zu b
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
 1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. The folder is displayed after [!DNL Experience Manager] authenticates you.
 
-## Suchen von Assets       {#assetsearch}
+## Suchen von Assets         {#assetsearch}
 
 Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren.
 
@@ -683,7 +683,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
    * Select the asset and then click **[!UICONTROL Edit]** in the toolbar.
    * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
-   * Click **[!UICONTROL Edit]** from the toolbar.
+   * Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
    ![Option in der Symbolleiste bearbeiten](assets/edit_icon.png)
 
@@ -749,7 +749,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Click the **[!UICONTROL Annotate]** option from one of the following:
 
    * [Schnellaktionen](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben      oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben        oder zur Asset-Seite navigiert sind
 
    ![Option &quot;Anmerkung&quot;](assets/chlimage_1-29.png)
 
