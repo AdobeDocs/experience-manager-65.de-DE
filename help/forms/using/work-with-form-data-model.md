@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4102'
+ht-degree: 61%
 
 ---
 
@@ -54,7 +57,7 @@ So fügen Sie Datenmodellobjekte und -dienste hinzu:
 
    Registerkarte „Modell“ mit hinzugefügten Datenmodellobjekten
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Sie können die Datenmodellobjekt-Boxen durch Ziehen im Inhaltsbereich anordnen. Alle im Formulardatenmodell hinzugefügten Datenmodellobjekte werden im Bereich „Datenquellen“ ausgegraut.
 
@@ -70,7 +73,7 @@ So fügen Sie Datenmodellobjekte und -dienste hinzu:
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um das Formularmodellobjekt zu speichern.
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Sie können die auf der Registerkarte „Dienste“ eines Formulardatenmodells konfigurierten Dienste mithilfe von Regeln für adaptive Formulare aufrufen. Die konfigurierten Dienste sind in der Aktion zum Aufrufen von Diensten im Regeleditor verfügbar. Weitere Informationen zum Verwenden dieser Dienste in Regeln für adaptive Formulare finden Sie unter „Aufrufen von Diensten und Festlegen von Werten für Regeln“ unter [Regeleditor](/help/forms/using/rule-editor.md).
 
@@ -213,7 +216,7 @@ In der Regel werden Verknüpfungen zwischen Datenmodellobjekten in einer Datenqu
 
 Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle zu einem Formulardatenmodell hinzufügen, werden deren Verknüpfungen beibehalten und als durch Pfeilzeilen verbundene Elemente angezeigt. Sie können in einem Formulardatenmodell Verknüpfungen zwischen Datenmodellobjekten über unterschiedliche Datenquellen hinweg hinzufügen.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Vordefinierte Verknüpfungen in einer JDBC-Datenquelle werden nicht im Formulardatenmodell beibehalten. Sie müssen sie manuell erstellen.
 
@@ -239,6 +242,7 @@ So fügen Sie eine Verknüpfung hinzu:
    * Wählen Sie den Assoziierungstyp aus — Ein zu eins oder eins zu viele.
    * Wählen Sie das Datenmodellobjekt aus, zu dem Sie die Verknüpfung erstellen möchten.
    * Wählen Sie den Lesedienst, der die Daten aus dem ausgewählten Modellobjekt lesen soll. Das Argument für den Lesedienst wird angezeigt. Bearbeiten Sie das Argument gegebenenfalls mit den nötigen Änderungen, und binden Sie es an die Eigenschaft des zu verknüpfenden Datenmodellobjekts.
+
    Im folgenden Beispiel ist `dependentid`das Standardargument für den Lesedienst des Datenmodellobjekts „Angehörige“.
 
    ![add-associated-example](assets/add-association-example.png)
@@ -256,7 +260,7 @@ So fügen Sie eine Verknüpfung hinzu:
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Verknüpfung zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern.
 1. Wiederholen Sie diese Schritte, um nach Bedarf weitere Verknüpfungen zu erstellen.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Die hinzugefügte Verknüpfung wird der Box für das Datenmodellobjekt mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
@@ -276,6 +280,7 @@ Eigenschaften bearbeiten
    * **Datenmodellobjekt**: Geben Sie die Lese- und Schreibdienste an und bearbeiten Sie Argumente.
    * **Eigenschaft**: Geben Sie den Typ, den Untertyp und das Format für die Eigenschaft an. Sie können außerdem angeben, ob die ausgewählte Eigenschaft der Primärschlüssel für das Datenmodellobjekt ist.
    * **Dienst**: Geben Sie das Eingabemodellobjekt, den Ausgabetyp und Argumente für den Dienst an. Bei einem Get-Dienst können Sie angeben, ob ein Array als Rückgabe erwartet wird.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Dialogfeld „Eigenschaften bearbeiten“ für einen Get-Dienst
@@ -491,12 +496,12 @@ In der folgenden Tabelle werden die Einschränkungen für Eingabedaten basierend
    <td>Swagger</td> 
   </tr> 
   <tr> 
-   <td>enum (Zeichenfolge)<br /><br /> </td> 
+   <td>enum (Zeichenfolge)<br /> <br /> </td> 
    <td>Beschränkt den Wert eines Parameters in den Eingabedaten auf einen festen Satz von Zeichenfolgenwerten. Es muss sich um ein Array mit mindestens einem Element handeln, wobei jedes Element eindeutig ist.</td> 
    <td>Swagger, WSDL und Odata</td> 
   </tr> 
   <tr> 
-   <td>enum (number)<br /><br /> </td> 
+   <td>enum (Nummer)<br /> <br /> </td> 
    <td>Beschränkt den Wert eines Parameters in den Eingabedaten auf einen festen Satz numerischer Werte. Es muss sich um ein Array mit mindestens einem Element handeln, wobei jedes Element eindeutig ist.</td> 
    <td>WSDL</td> 
   </tr> 
