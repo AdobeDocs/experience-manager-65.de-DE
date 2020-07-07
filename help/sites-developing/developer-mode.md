@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 88%
 
 ---
 
@@ -36,7 +39,10 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* Der Modus ist nur in der Touch-optimierten Oberfläche (beim Bearbeiten von Seiten) verfügbar.
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
-   >   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
+
+   >
+   >   
+   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
 >* Steht nur Benutzern zur Verfügung, die Mitglieder der `administrators` Gruppe sind.
 
 
@@ -48,6 +54,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* auf einer Autoreninstanz mit dem Ausführungsmodus nosampleContent
 >* auf einer Veröffentlichungsinstanz
+
 >
 >
 Der Modus sollte nach der Verwendung wieder deaktiviert werden.
@@ -58,6 +65,7 @@ Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 >
 >* im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 >* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+
 >
 
 
@@ -103,6 +111,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
    * Alle zum Rendern der Komponente verwendeten Komponentenskripte
    * Den Repository-Inhaltspfad für diese spezifische Komponente
+
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Skript bearbeiten**: ein Link, der:
@@ -113,6 +122,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
    * Die Hierarchie innerhalb der ausgewählten Komponente.
    * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt. 
+
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
