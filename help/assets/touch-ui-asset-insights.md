@@ -3,7 +3,7 @@ title: Asset Insights
 description: Erfahren Sie, wie Sie mit der Funktion „Asset Insights“ Benutzerbewertungen und Nutzungsstatistiken von Bildern nachverfolgen können, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen von Adobe verwendet werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 81%
@@ -43,6 +43,7 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
    * **Web und Mobile**: Wie oft wurde das Asset in Websites und Apps verwendet
    * **Social**: Wie oft wurde das Asset in Lösungen wie Adobe Social und Adobe Campaign verwendet
    * **E-Mail**: Wie oft wurde das Asset in E-Mail-Kampagnen verwendet
+
    ![Nutzungsstatistiken](assets/usage_statistics.png)
 
    >[!NOTE]
