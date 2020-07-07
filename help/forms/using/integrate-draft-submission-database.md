@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +29,7 @@ Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung benutz
 >
 >* Die Beispiele und Konfigurationen in diesem Dokument entsprechen MySQL 5.6.24 und Sie müssen sie für Ihr Datenbanksystem anpassen.
 >* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms Freigabe](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
-> * Das Musterpaket funktioniert nur mit Übermittlungsaktionen für adaptive Formulare.
+>* Das Musterpaket funktioniert nur mit Übermittlungsaktionen für adaptive Formulare.
 
 
 ## Beispiel installieren und konfigurieren {#set-up-and-configure-the-sample}
@@ -75,6 +78,7 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    Angeben eines anderen Namens für die Metadatentabelle:
 
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Metadatenservice. Sie können die Werte der Datenquelle, Metadaten/zusätzlichen Metadatentabellennamen ändern.
+
    Angeben eines anderen Namens für die Datentabelle:
 
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Datenservice. Sie können die Werte der Datenquelle und Datentabellennamen ändern.
@@ -160,6 +164,7 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
 >
 > * Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungspool zu konfigurieren.
 > * Zeigen Sie mit Ihren Autor- und Veröffentlichungsinstanzen, um dieselbe Datenbank zu verwenden. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
+
 >
 
 
