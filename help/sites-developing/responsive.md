@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '5339'
+ht-degree: 68%
 
 ---
 
@@ -89,7 +92,7 @@ In der folgenden Tabelle werden die Dateien im untergeordneten css-Ordner aufgef
   <tr>
    <th>Dateiname</th>
    <th>Beschreibung</th>
-   <th>Medienabfrage</th>
+   <th>Media-Abfrage</th>
   </tr>
   <tr>
    <td>style.css</td>
@@ -98,33 +101,33 @@ In der folgenden Tabelle werden die Dateien im untergeordneten css-Ordner aufgef
   </tr>
   <tr>
    <td>bootstrap.css</td>
-   <td>Allgemeine Stile, definiert durch Twitter Bootstrap.</td>
+   <td>Allgemeine Stile, die vom Twitter-Bootstrap definiert werden.</td>
    <td>Nicht zutreffend</td>
   </tr>
   <tr>
    <td>responsive-1200px.css</td>
    <td>Stile für alle Medien mit einer Breite von 1200 Pixeln oder einer Breite.</td>
-   <td><p><br /> @media (min-width: 1200px) {<br /> ..}</p> </td>
+   <td><p>@media (min-width: 1200px) {<br /> ..<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-980px-1199px.css</td>
    <td>Stile für Medien mit einer Breite zwischen 980 und 1199 Pixeln.</td>
-   <td><p><br /> @media (min-width: 980 px) und (max-width: 1199px) {<br /> ...}</p> </td>
+   <td><p>@media (min-width: 980 px) und (max-width: 1199px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-768px-979px.css</td>
    <td>Stile für Medien mit einer Breite zwischen 768 und 979 Pixeln. </td>
-   <td><p><br /> @media (min-width: 768 px) und (max-width: 979px) {<br /> ...}</p> </td>
+   <td><p>@media (min-width: 768 px) und (max-width: 979px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-767px-max.css</td>
    <td>Stile für alle Medien mit einer Breite von weniger als 768 Pixeln.</td>
-   <td><p><br /> @media (max-width: 767 px) {<br /> ...}</p> </td>
+   <td><p>@media (max-width: 767 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-480px.css</td>
    <td>Stile für alle Medien mit einer Breite von weniger als 481 Pixeln.</td>
-   <td><br /> @media (max-width: 480) {<br /> ...}</td>
+   <td>@media (max-width: 480) {<br /> ...<br /> }</td>
   </tr>
  </tbody>
 </table>
@@ -157,8 +160,8 @@ Binden Sie den Client-Bibliotheksordner in das JSP-Skript Ihrer Seitenkomponente
 ```
 
 >[!NOTE]
-> The `apps.weretail.all` client library folder embeds the clientlibs library.
-
+>
+>The `apps.weretail.all` client library folder embeds the clientlibs library.
 
 Das JSP-Skript generiert den folgenden HTML-Code, der auf die Stylesheets verweist:
 
@@ -256,7 +259,7 @@ Implementations of the [MediaQueryList interface](https://dev.w3.org/csswg/cssom
 
 #### Selecting media-specific resources {#selecting-media-specific-resources}
 
-Das von W3C-vorgeschlagene [Bildelement](https://picture.responsiveimages.org/) verwendet Medienabfragen, um die für Bildelemente zu verwendende Quelle zu ermitteln. Das picture-Element verwendet Elementattribute, um Medienabfragen mit Bildpfaden zu verknüpfen.
+Das von W3C-vorgeschlagene [Bildelement](https://picture.responsiveimages.org/) verwendet Medienabfragen, um die für Bildelemente zu verwendende Quelle zu ermitteln. Das Bildelement verwendet Elementattribute, um Medienpfade mit Bildpfaden zu verknüpfen.
 
 The freely-available [picturefill.js library](https://github.com/scottjehl/picturefill) provides similar functionality as the proposed `picture` element, and uses a similar strategy. Die picturefill.js-Bibliothek ruft `window.matchMedia` auf, um die Medienabfragen zu prüfen, die für einen Satz von `div`-Elementen definiert sind. Alle `div`-Elemente geben auch eine Bildquelle an. Die Quelle wird verwendet, wenn die Medienabfrage des `div`-Elements `true` zurückgibt.
 
@@ -295,10 +298,10 @@ Beziehen Sie die folgenden JavaScript-Bibliotheken und fügen Sie sie in einen C
 
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) (für Browser, die die MediaQueryList-Schnittstelle nicht implementieren)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
-* jquery.js (verfügbar über den `/etc/clientlibs/granite/jquery` Client-Bibliotheksordner (category = jquery)
+* jquery.js (verfügbar über den `/etc/clientlibs/granite/jquery` Client-Bibliotheksordner (Kategorie = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (ein jquery-Ereignis, das auftritt, nachdem die Größe des Fensters verändert wurde)
 
-**** Tipp: Sie können mehrere Clientbibliotheksordner automatisch durch [Einbetten](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)verketten.
+**Tipp:** Sie können mehrere Clientbibliotheksordner automatisch durch [Einbetten](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)verketten.
 
 **HTML**
 
@@ -320,6 +323,7 @@ Im folgenden HTML-Codebeispiel wird aus 2 DAM-Darstellungen desselben Bilds aus
 >
 >* Client-Bibliotheksordner: `/libs/foundation/components/adaptiveimage/clientlibs`
 >* Skript, das HTML generiert: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
+
 >
 >
 Der folgende Abschnitt enthält Details zu dieser Komponente.
@@ -327,7 +331,7 @@ Der folgende Abschnitt enthält Details zu dieser Komponente.
 
 ### Understanding image rendering in AEM {#understanding-image-rendering-in-aem}
 
-Sie müssen die standardmäßige AEM-Implementierung des Renderings für statische Bilder verstehen, um das Bild-Rendering anzupassen. AEM stellt die Bildkomponente und ein Bild-Render-Servlet zur Verfügung, die zusammenarbeiten, um Bilder für Webseiten zu rendern. Die folgende Ereignissequenz tritt auf, wenn die Image-Komponente im Absatzsystem der Seite enthalten ist:
+Sie müssen die standardmäßige AEM-Implementierung des Renderings für statische Bilder verstehen, um das Bild-Rendering anzupassen. AEM stellt die Bildkomponente und ein Bild-Render-Servlet zur Verfügung, die zusammenarbeiten, um Bilder für Webseiten zu rendern. Die folgende Reihenfolge von Ereignissen tritt auf, wenn die Bildkomponente im Absatzsystem der Seite enthalten ist:
 
 1. Bearbeiten: Autoren bearbeiten die Bildkomponente so, dass die Bilddatei angegeben wird, die in einer HTML-Seite enthalten sein soll. Der Dateipfad wird als Eigenschaftswert des Bildkomponentenknotens gespeichert.
 1. Seitenanforderung: Das JSP der Seitenkomponente generiert den HTML-Code. Das JSP der Bildkomponente generiert ein img-Element und fügt es auf der Seite ein.
@@ -577,7 +581,7 @@ Die folgenden Werte werden standardmäßig unterstützt (Breite x Höhe):
 * 770x360
 * 620x290
 * 480x225
-* 320x150
+* 320 x 150
 * 375x175
 * 303x142
 * 1170x400
@@ -941,7 +945,7 @@ Verwenden Sie den folgenden Algorithmus als Ausgangspunkt für die Entwicklung d
 
    1. Legen Sie für die Breite von `content`-Selektoren die absolute Größe der Seite fest, z. B. `width:480px`.
    1. Legen Sie für die Breite aller row-fluid-Selektoren 100 % fest.
-   1. Legen Sie für die Breite aller span-Selektoren die absolute Breite des Inhaltsblocks fest. Ein triviales Raster verwendet gleichmäßig verteilte Spalten gleicher Breite: `(absolute width of page)/(number of columns)`.
+   1. Legen Sie für die Breite aller span-Selektoren die absolute Breite des Inhaltsblocks fest. Ein triviales Raster verwendet gleichmäßig verteilte Spalten mit derselben Breite: `(absolute width of page)/(number of columns)`.
    1. Set the width of the `.row-fluid .span` selectors as a percentage of the total width. Berechnen Sie diese Breite mithilfe der `(absolute span width)/(absolute page width)*100` Formel.
 
 #### Positionieren von Inhaltsblöcken in Zeilen {#positioning-content-blocks-in-rows}
