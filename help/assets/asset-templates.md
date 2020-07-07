@@ -3,10 +3,10 @@ title: Asset-Vorlagen in [!DNL Adobe Experience Manager Assets].
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1553'
-ht-degree: 35%
+ht-degree: 33%
 
 ---
 
@@ -79,6 +79,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
    * From the Templates page, navigate to a folder where you created the collateral, and click the [!UICONTROL Edit] quick action on the thumbnail of a collateral.
    * In the asset page for the collateral, click **[!UICONTROL Edit]** from the toolbar.
    * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    Links auf der Seite werden die Asset-Suche und der Text-Editor angezeigt. Der Text-Editor ist standardmäßig geöffnet.
@@ -95,7 +96,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Weitere Informationen finden Sie unter [Integration von Experience Manager-Assets in InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Weitere Informationen finden Sie unter [Integrieren von Experience Manager-Assets in InDesign Server](/help/assets/indesign.md).
 
 1. Um den Text in einem bearbeitbaren Feld zu ändern, klicken Sie in der Liste der bearbeitbaren Felder auf das Textfeld und bearbeiten Sie den Text im Feld.
 
@@ -127,21 +128,23 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    ![chlimage_1-117](assets/chlimage_1-322.png)
 
-1. Click **[!UICONTROL Preview]**  on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
+1. Click **[!UICONTROL Preview]** on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
 
    >[!NOTE]
    >
-   >Die Symbole „Vorschau“ und „Fertig“ sind nur aktiviert, wenn die bearbeitbaren Bildfelder im Material keine fehlenden Symbole aufweisen. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
+   >Die Optionen &quot;Vorschau&quot;und &quot;Fertig&quot;sind nur aktiviert, wenn die bearbeitbaren Bildfelder in den Zusätzen keine fehlenden Symbole aufweisen. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
    >
-   >    * Images are not embedded in the underlying [!DNL InDesign] template.
-   >    * Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem.
+   >* Images are not embedded in the underlying [!DNL InDesign] template.
+   >* Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem.
+
    >
    >To enable [!DNL Experience Manager] to resolve images, do the following:
    >
-   >    * Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
-   >    * Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
+   >* Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
+   >* Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
+
    >
-   >For more information around working with [!DNL InDesign] documents, see [Best Practices for Working with InDesign Documents in Experience Manager](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Weitere Informationen zum Arbeiten mit [!DNL InDesign] Dokumenten finden Sie unter [Best Practices für die Arbeit mit InDesign-Dokumenten in Experience Manager](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Wählen Sie zum Generieren einer PDF-Ausgabe für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 1. Das Marketingmaterial wird in dem Ordner erstellt, in dem Sie den Vorgang begonnen haben. Öffnen Sie das Marketingmaterialelement und wählen Sie in der GlobalNav-Liste die Option **[!UICONTROL Ausgabeformate]**, um die Ausgabeformate anzuzeigen.
@@ -197,6 +200,6 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
    >
    >Es ist nicht möglich, zusammengeführtes Material später zu ändern oder zum Erstellen von anderem Material zu verwenden.
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
 * Der [!DNL InDesign] Editor in [!DNL Experience Manager] funktioniert auf Tag-Ebene, und der gesamte Text unter einem einzelnen Tag wird als einzelne Entität betrachtet. Um Textformatierung und -stile bei der Bearbeitung beizubehalten, müssen Sie jeden Absatz (oder Text mit einem anderen Stil) separat taggen.
