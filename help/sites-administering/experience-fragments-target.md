@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6723b12bebba2f239c0886e5f378f1dc70e5e247
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 48%
 
 ---
 
@@ -30,12 +33,15 @@ source-git-commit: 6723b12bebba2f239c0886e5f378f1dc70e5e247
 6.5.2.0:
 >
 >* Erlebnisfragmente können in Folgendes exportiert werden:
-   >   * der Standardarbeitsbereich.
+   >
+   >   
+   * der Standardarbeitsbereich.
    >   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
->* AEM muss mit Adobe I/O[in Adobe Target ](/help/sites-administering/integration-ims-adobe-io.md)integriert werden.
+>* AEM muss mit Adobe I/O [in Adobe Target](/help/sites-administering/integration-ims-adobe-io.md)integriert werden.
+
 >
 >
-AEM 6.5.0.0 und 6.5.1.0:
+AEM 6.5.0.0 und 6.5.1.0:
 >
 >* Die AEM Experience Fragments werden in den Standardarbeitsbereich von Adobe Target exportiert.
 >* AEM muss gemäß den Anweisungen unter [Integration mit Adobe Target](/help/sites-administering/target.md)in Adobe Target integriert werden.
@@ -45,26 +51,27 @@ You can export [Experience Fragments](/help/sites-authoring/experience-fragments
 
 Es gibt drei Formatoptionen für den Export eines Experience Fragments in Adobe Target:
 
-* HTML (Standard): Unterstützung für die Bereitstellung von Web- und Hybridinhalten
-* JSON: Unterstützung für die Bereitstellung kostenloser Inhalte
+* HTML (Standard): Unterstützung für Web- und Hybrid-Content-Versand
+* JSON: Unterstützung für Versand ohne Inhalt
 * HTML und JSON
 
-AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies erfolgt über Adobe I/O, für die AEM mit Adobe I/O[in Adobe Target ](/help/sites-administering/integration-ims-adobe-io.md)integriert werden muss.
+AEM Experience Fragments können zum Adobe Target in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche exportiert werden. Dies erfolgt über Adobe I/O, für die AEM mit Adobe I/O [in Adobe Target](/help/sites-administering/integration-ims-adobe-io.md)integriert werden muss.
 
 >[!NOTE]
 >
->Die Adobe Target-Arbeitsbereiche sind in Adobe Target selbst nicht vorhanden. Sie werden in Adobe IMS (Identitätsverwaltungssystem) definiert und verwaltet und anschließend für die Verwendung in verschiedenen Lösungen mithilfe von Adobe-I/O-Integrationen ausgewählt.
+>Die Adobe Target-Arbeitsbereiche existieren nicht im Adobe Target selbst. Sie werden in Adobe IMS (Identity Management System) definiert und verwaltet und dann für die Verwendung in verschiedenen Lösungen mithilfe von Adobe-I/O-Integrationen ausgewählt.
 
 >[!NOTE]
 >
->Adobe Target-Arbeitsbereiche können verwendet werden, um Mitgliedern einer Organisation (Gruppe) zu ermöglichen, Angebote und Aktivitäten nur für diese Organisation zu erstellen und zu verwalten. ohne Zugriff auf andere Benutzer. Zum Beispiel länderspezifische Organisationen innerhalb eines globalen Konzerns.
+>Adobe Target-Arbeitsbereiche können verwendet werden, damit die Mitglieder einer Organisation (Gruppe) nur Angebote und Aktivitäten für diese Organisation erstellen und verwalten können. ohne Zugriff auf andere Benutzer. Zum Beispiel länderspezifische Organisationen innerhalb eines globalen Konzerns.
 
 >[!NOTE]
 >
 >Weitere Informationen unter:
 >
->* [Adobe Target-Entwicklung](https://www.adobe.io/apis/experiencecloud/target.html)
+>* [Entwicklung von Adobe Targets](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Hauptkomponenten - Erlebnisfragmente](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+
 >
 
 
@@ -78,18 +85,18 @@ AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target o
 Verschiedene Aktionen sind erforderlich:
 
 1. Sie müssen AEM mit Adobe Target [integrieren, indem Sie Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md)verwenden.
-2. Erlebnisfragmente werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie den AEM Link Externalizer[ auf der Autoreninstanz ](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)konfigurieren, um sicherzustellen, dass alle Verweise im Experience Fragment für die Web-Bereitstellung extern zugeordnet werden.
+2. Erlebnisfragmente werden aus der AEM-Autoreninstanz exportiert. Daher müssen Sie den AEM Link Externalizer [auf der Autoreninstanz](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) konfigurieren, um sicherzustellen, dass alle Verweise im Erlebnisfragment für den Web-Versand extern zugeordnet werden.
 
    >[!NOTE]
    >
    >Für das Neuschreiben von Links, das nicht standardmäßig erfolgt, ist der [Experience Fragment Link Rewriter Provider](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) verfügbar. Damit können benutzerspezifische Regeln für Ihre Instanz entwickelt werden.
 
-## Cloud-Konfiguration hinzufügen {#add-the-cloud-configuration}
+## Hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
 
 Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für **Adobe Target** zum Fragment oder Ordner hinzufügen. Dies ermöglicht Ihnen auch Folgendes:
 
 * die für den Export zu verwendenden Formatoptionen angeben
-* Target Workspace als Ziel auswählen
+* Target-Arbeitsbereich als Ziel auswählen
 * Auswählen einer Externalisiererdomäne zum Umschreiben von Verweisen im Erlebnisfragment (optional)
 
 Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderlichen Ordners bzw. Fragments ausgewählt werden. Die Spezifikation wird nach Bedarf vererbt.
@@ -122,15 +129,16 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 
    * die entsprechende Konfiguration
    * die erforderliche Formatoption
-   * einen Adobe Target-Arbeitsbereich
+   * Adobe Target-Arbeitsbereich
    * falls erforderlich - die Externalizer-Domäne
+
    >[!CAUTION]
    >
    >Die Externalizer-Domäne ist optional. Ein AEM-Externalisierer wird konfiguriert, wenn der exportierte Inhalt auf eine bestimmte *Veröffentlichungsdomäne* verweisen soll. Weitere Informationen finden Sie unter AEM Link Externalizer [konfigurieren](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
 
    Beispiel für einen Ordner:
 
-   ![Ordner - Cloud-](assets/xf-target-integration-01.png "DiensteOrdner - Cloud-Dienste")
+   ![Ordner - Cloud-](assets/xf-target-integration-01.png "DiensteOrdner - Cloud Service")
 
 1. Klicken Sie auf **Speichern und schließen**.
 
@@ -181,7 +189,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
 
 ## Using your Experience Fragments in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Nach Ausführung der vorherigen Aufgaben wird das Erlebnisfragment auf der Seite &quot;Angebote&quot;in Target angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
+Nach Durchführung der vorherigen Aufgaben wird das Erlebnisfragment auf der Seite &quot;Angebot&quot;in Target angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
 
 >[!NOTE]
 >
@@ -198,8 +206,8 @@ So vermeiden Sie solche Situationen:
 
    Die Fehlermeldung in AEM verbietet dem Benutzer nicht das (erzwungene) Löschen des Experience Fragments. Wenn das Erlebnisfragment gelöscht wird:
 
-   * Das Target-Angebot mit AEM Experience Fragment zeigt möglicherweise unerwünschtes Verhalten an
+   * Das Target-Angebot mit AEM Experience Fragment zeigt möglicherweise unerwünschtes Verhalten
 
-      * Das Angebot wird wahrscheinlich weiterhin gerendert, da die HTML des Erlebnisfragments an Target gesendet wurde
+      * Das Angebot wird wahrscheinlich weiterhin gerendert, da der Erlebnisfragment-HTML in Target gesendet wurde
       * Verweise im Erlebnisfragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
    * Natürlich sind keine weiteren Änderungen am Erlebnisfragment möglich, da das Erlebnisfragment nicht mehr in AEM existiert.
