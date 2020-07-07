@@ -1,6 +1,6 @@
 ---
-title: Konzepte
-seo-title: Konzepte
+title: 'Konzepte '
+seo-title: 'Konzepte '
 description: Allgemeine eCommerce-Konzepte in AEM
 seo-description: Allgemeine eCommerce-Konzepte in AEM
 uuid: 9a4cc154-d82b-43e0-a66c-3edf059e8b75
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 6d595c46-b04e-400b-a014-fbecd2010f5f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4532'
+ht-degree: 81%
 
 ---
 
 
-# Konzepte{#concepts}
+# Konzepte {#concepts}
 
 Das Integrationsframework stellt Mechanismen und Komponenten für die folgenden Aufgaben bereit:
 
@@ -39,6 +42,7 @@ Das heißt:
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 >* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+
 >
 
 
@@ -65,7 +69,7 @@ Um den Betrieb zu optimieren, konzentrieren sich AEM und die eCommerce-Engine au
 
 * AEM kann:
 
-   * anfordern:
+   * Anforderung:
 
       * Produktdaten von der eCommerce-Engine
    * Geben Sie Folgendes an:
@@ -132,10 +136,9 @@ AEM eCommerce wird mit einer eCommerce-Engine implementiert:
 >AEM eCommerce, implementiert in AEM, mit generischer Entwicklung basierend auf JCR, ist:
 >
 >* Ein eigenständiges, AEM-natives eCommerce-Beispiel, um die Nutzung der API zu veranschaulichen. Sie können damit in Verbindung mit den vorhandenen Datenanzeigen und Marketingkampagnen Produktdaten, Warenkörbe und Bezahlungen kontrollieren. In diesem Fall ist die Produktdatenbank im nativen Repository von AEM gespeichert (die [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)-Implementierung von Adobe).
-   >  Die standardmäßige AEM-Installation enthält die Grundlagen der [generischen eCommerce-Implementierung](/help/sites-administering/generic.md).
 >
-
-
+>  
+Die standardmäßige AEM-Installation enthält die Grundlagen der [generischen eCommerce-Implementierung](/help/sites-administering/generic.md).
 
 ### Commerce-Anbieter {#commerce-providers}
 
@@ -201,7 +204,7 @@ Der tatsächliche Ort kann je nach Implementierung unterschiedlich ausfallen (z.
 
 ## Produkte {#products}
 
-### Produktdaten und Marketingdaten {#product-data-versus-marketing-data}
+### Produkt Data versus Marketing Data {#product-data-versus-marketing-data}
 
 #### Strukturelle Kategorien und Marketingkategorien {#structural-versus-marketing-categories}
 
@@ -209,13 +212,13 @@ Durch die Unterscheidung der folgenden beiden Kategorien können Sie deutliche U
 
 * *Struktur *Kategorien
 
-   die Kategoriestruktur, in der *das Produkt* definiert wird; Beispiel:
+   der Baum der Kategorie, der *das Erzeugnis* definiert; Beispiel:
 
    `/products/mens/shoes/sneakers`
 
 * *Marketing* -Kategorien
 
-   Alle anderen Kategorien, zu denen ein *Produkt gehören* kann; Beispiel:
+   Alle anderen Kategorien, denen ein *Erzeugnis angehören* kann; Beispiel:
 
    `/special-offers/christmas/shoes`)
 
@@ -266,7 +269,7 @@ Welche individuellen Attribute zu jedem Produkt gespeichert werden, hängt mögl
 
 * **Standard-Asset-Kategorie**
 
-   Eine Standardkategorie für Assets.
+   Eine Standard-Kategorie für Assets.
 
 * **ERP-Daten**
 
@@ -365,7 +368,7 @@ Diese Buckets werden in Form von Phantomordnern in die Katalogstruktur eingefüh
 
 Dieses Szenario sieht vor, dass zwei Autoreninstanzen eingerichtet werden:
 
-1. Master-Autoreninstanz
+1. Autoreninstanz des Masters
 
    Importiert Produktdaten von PIM, bei denen die Nachbearbeitung für die Asset-Pfade deaktiviert ist.
 
@@ -390,11 +393,11 @@ Wenn Produkte keine Assets (Bilder) enthalten, die importiert werden müssen, k�
 
 Leistungstests müssen bei AEM eCommerce-Implementierungen in Erwägung gezogen werden:
 
-* Autorenumgebung:
+* Autor-Umgebung:
 
-   Hintergrundaktivität (z. B. Import) kann gleichzeitig mit normaler Benutzeraktivität (z. B. Seitenbearbeitung) auftreten, und selbst wenn die Front-End-Leistung (im Allgemeinen) eine höhere Priorität erhält, kann eine schlechte Leistung, die von Online-Autoren gesehen wird, zu Frustration führen, die eine Go-Live-Entscheidung blockieren kann.
+   Die Aktivität im Hintergrund (z. B. beim Import) kann gleichzeitig mit der normalen Aktivität des Benutzers (z. B. bei der Seitenbearbeitung) erfolgen. Selbst wenn die Front-End-Leistung (im Allgemeinen) eine höhere Priorität erhält, kann eine schlechte Leistung, die von Online-Autoren erkannt wird, zu Frustration führen, die eine Go-Live-Entscheidung blockieren kann.
 
-* Veröffentlichungsumgebung:
+* Umgebung der Veröffentlichung:
 
    Die Replikation ist ein entscheidender Prozess, um sicherzustellen, dass die Inhalte schnell und zuverlässig veröffentlicht werden. Dies kann dadurch beeinflusst werden, wie der Autor die Inhalte gruppiert, die veröffentlicht werden sollen.
 
@@ -585,7 +588,7 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne erfas
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   außerhalb eines Erlebnisses liegt und daher nie automatisch ausgelöst wird (d. h.: basierend auf der Segmentierung). Sie wird jedoch von den Gutscheinen referenziert, die in mehreren Erlebnissen innerhalb der Artikelkampagne enthalten sind. Die Eingabe dieser Gutscheincodes in den Warenkorb führt zu einer Promotion-Auslösung.
+   außerhalb eines Erlebnisses liegt und daher nie automatisch ausgelöst wird (d. h.: basierend auf der Segmentierung). Sie wird jedoch von den Gutscheinen referenziert, die in mehreren Erlebnissen innerhalb der Kampagne des Artikels enthalten sind. Die Eingabe dieser Gutscheincodes in den Warenkorb führt zu einer Promotion-Auslösung.
 
 >[!NOTE]
 >
@@ -677,7 +680,7 @@ Das Adressbuch kommt zum Einsatz, wenn Sie den Warenkorb bezahlen:
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
 Addresses are persisted below `user_home/profile/addresses`.
-Für Alison Parker wäre es beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/profile/address
+Für Alison Parker wäre es beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/Profil/address
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. The profile property `address.default` is set with the path of the selected address for value.
 
@@ -808,7 +811,7 @@ Es werden unterschiedliche Daten gespeichert, beispielsweise:
 
 * **Lieferadresse**
 
-   Anschrift, an die die Waren versandt werden sollen.
+   Die Anschrift, an die die Waren versandt werden sollen.
 
 * **Versandart**
 
@@ -816,7 +819,7 @@ Es werden unterschiedliche Daten gespeichert, beispielsweise:
 
 * **Nachverfolgungsnummer**
 
-   Eine von der Reederei verwendete Rückverfolgungsnummer.
+   Eine beliebige von der Firma verwendete Verfolgungsnummer.
 
 * **Nachverfolgungslink**
 
@@ -866,7 +869,7 @@ Die Compliance mit der Zahlungskartenbranche (PCI) kann erreicht werden.
 
 Die Bestellung wird auf dem Bildschirm bestätigt und lässt sich mit der [Bestellungsnachverfolgung](#order-tracking) nachverfolgen.
 
-## Suche{#search-features}
+## Suche {#search-features}
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
