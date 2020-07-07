@@ -2,33 +2,33 @@
 title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu WCAG 2.1
 translation-type: tm+mt
-source-git-commit: a8e7fe89376b30df0b1c5403aabea6862cef09fc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1770'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
 
 # Kurzanleitung zu WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) wurde entwickelt, um die Einhaltung der Richtlinien zur Barrierefreiheit für Webinhalte zu maximieren.
+Adobe Experience Manager (AEM) wurde entwickelt, um die Einhaltung der Web Content Accessibility Guidelines zu maximieren.
 
-The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
-
->[!NOTE]
-> 
-> WCAG 2.1 aktualisiert ab 2008 die vorherige Version WCAG 2.0. Siehe [WCAG 2.1 – Vergleich mit WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+Die [Web Content Accessibility Guidelines (WCAG), Version 2.1](https://www.w3.org/TR/WCAG/) sind eine vom [World Wide Web Consortium (W3C)](https://www.w3.org/) im Rahmen seiner [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) entwickelte Zusammenstellung international anerkannter Richtlinien.
 
 >[!NOTE]
-> 
+>
+>WCAG 2.1 aktualisiert die vorherige Version WCAG 2.0 von 2008. Siehe [WCAG 2.1 – Vergleich mit WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+
+>[!NOTE]
+>
 >Eine [aktualisierte Version der Richtlinien (WCAG 2.2)](https://www.w3.org/TR/WCAG22/) befindet sich derzeit in der Entwicklung, wird aber noch nicht berücksichtigt.
 
 WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autoren, Designer und Entwickler von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Hörverlust, Lernschwächen, altersbedingte Einschränkungen u. Ä.
 
 Die Beschreibung eines Bildes (oder anderer Nicht-Text-Inhalte) mithilfe des `alt`-Attributs in HTML ist zum Beispiel für Blinde und Sehbehinderte von großem Nutzen. Die textliche Beschreibung im `alt`-Attribut kann entweder in eine Sprachausgabe umgewandelt oder an elektronisch aktualisierbare Braillezeilen übertragen werden.
 
-Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. Also Personen, die aufgrund von Faktoren wie Browser-Technologie, Geschwindigkeit der Netzwerkverbindung oder Browser-Umgebung auf ähnliche Hindernisse stoßen können wie Menschen mit Behinderungen.
+Darüber hinaus kann WCAG 2.1 Vorteile für andere Bedürftige bringen, so z. B. für Personen, die ggf. als *situationsabhängig* behindert gelten. Also Personen, die aufgrund von Faktoren wie Browser-Technologie, Geschwindigkeit der Netzwerkverbindung oder Browser-Umgebung auf ähnliche Hindernisse stoßen können wie Menschen mit Behinderungen.
 
 Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber Web-Inhalte erstellen, die den Erfolgskriterien der WCAG 2.1 Level A und Level AA entsprechen.
 
@@ -40,8 +40,8 @@ Absicht von WCAG 2.1 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen
 
 * **Testfähig:** Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
 
-* Support **prioritized and contextual implementation:**
-WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Außerdem wird das Konzept *Barrierefreiheit unterstützend* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Webtechnologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. Von Anwendern verlangen, dass sie über spezielle assistierenden Techniken und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
+* Unterstützung einer **priorisierten und kontextbezogenen Implementierung:**
+Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Außerdem wird das Konzept *Barrierefreiheit unterstützend* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Webtechnologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. Von Anwendern verlangen, dass sie über spezielle assistierenden Techniken und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.1 wesentlich beeinflusst.
 
@@ -68,14 +68,14 @@ Zur Erklärung:
 * Jede Richtlinie besteht aus einem oder mehreren **Erfolgskriterien**.
 * Erfolgskriterien werden als Aussagen geschrieben, die für eine bestimmte Web-Seite entweder `True` oder `False` sind.
 * Erfolgskriterien können Entweder/Oder-Entscheidungen oder Ausnahmen vorsehen, d. h. Situationen, in denen die Erfolgskriterien nicht erfüllt sein müssen.
-* Erfolgskriterien sind gemäß der übergeordneten Richtlinie und dem Prinzip von 1.1.1 bis 4.1.1 nummeriert. Sie haben auch einen Kurznamen, der zur besseren Orientierung die Absicht des Kriteriums zusammenfasst. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
+* Erfolgskriterien sind gemäß der übergeordneten Richtlinie und dem Prinzip von 1.1.1 bis 4.1.1 nummeriert. Sie haben auch einen Kurznamen, der zur besseren Orientierung die Absicht des Kriteriums zusammenfasst. Beispielsweise heißt das Erfolgskriterium [1.1.1 Nichttextlicher Inhalt](https://www.w3.org/TR/WCAG/#non-text-content).
 * Zu den Erfolgskriterien gehört eine Liste zugehöriger **Techniken** (siehe unten).
 
 ## Unterstützende Ressourcen {#supporting-resources}
 
 Zusätzlich zu den WCAG 2.1-Hauptkomponenten (Prinzipien, Richtlinien und Erfolgskriterien) gibt es eine Reihe unterstützender Dokumente. Einige davon bieten spezifische Ratschläge dazu, wie Aspekte der Richtlinien erfüllt werden können. Andere sind allgemeinere Hinweise, die Web-Autoren, -Designern und -Entwicklern aller Fachrichtungen helfen, WCAG 2.1 so effektiv wie möglich zu verstehen und zu nutzen.
 
-WCAG 2.1 selbst ist ein stabiles Dokument und wird sich nicht ändern, aber die meisten dieser Hilfsmittel sind dynamische Dokumente. Sie werden sich mit der Zeit verändern und wachsen, wenn neue Technologien entstehen, und es werden neue Beispiele dafür gefunden, wie die Zugänglichkeit von Websites erreicht werden kann.
+Während WCAG 2.1 selbst ein statisches Dokument ist und sich nicht ändern wird, sind die meisten dieser unterstützenden Ressourcen dynamisch. Sie werden sich im Laufe der Zeit ändern und umfassender werden, sobald neue Technologien auftauchen und neue Beispiele dafür gefunden werden, wie Barrierefreiheit im Internet erreicht werden kann.
 
 ### WCAG 2.1-Ressourcen {#wcag-resources}
 
@@ -90,9 +90,9 @@ Diese Liste erhebt keinen Anspruch auf Vollständigkeit, sondern bietet eine Ein
 
 ### Neue Funktionen in WCAG 2.1 {#what-is-new}
 
-Die Leitlinien enthalten Informationen zu den neuen Funktionen in WCAG 2.1:
+Die Richtlinien enthalten Informationen zu den neuen Funktionen in WCAG 2.1:
 
-* [Was ist neu in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) bietet wertvolle Informationen über das Delta zwischen WCAG 2.0 und WCAG 2.1.
+* [Neue Funktionen in WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) bietet wertvolle Informationen über die Unterschiede zwischen WCAG 2.0 und WCAG 2.1.
 
 * In den Abschnitten [WCAG 2.0 und 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) wird der Status ihrer Beziehungen näher erläutert.
 
@@ -109,7 +109,7 @@ So kann auf Techniken zugegriffen werden:
 * Nach Sammlung (Techniken können allgemein sein oder sich auf eine bestimmte Technologie oder ein bestimmtes Format beziehen – wie HTML, Cascading Style Sheets oder Client-seitiges Scripting) oder
 * Anhand zugehöriger Erfolgskriterien. Techniken können für mehr als ein Erfolgskriterium gelten.
 
-Jede Technik hat eine eindeutige Zahl, die auf ihre Sammlung verweist. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
+Jede Technik hat eine eindeutige Zahl, die auf ihre Sammlung verweist. Eine der ARIA-Techniken ist beispielsweise die [Technik ARIA2: Identifizieren eines Pflichtfelds mit der Eigenschaft „aria-erforderlich“](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 Techniken können „ausreichend“, „empfohlen“ oder ein Fehler sein:
 
@@ -143,7 +143,7 @@ Ein Beispiel finden Sie unter: [Erfolgskriterium 1.1.1 verstehen (Nichttextliche
 
 ### Erfüllen von WCAG 2.1 {#how-to-meet-wcag}
 
-Der Abschnitt „Erfüllen von“ befindet sich auf der Seite [Erfüllen von WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Dieser Abschnitt bietet eine alternative Präsentation der WCAG, die es Lesern ermöglicht, den Inhalt der Richtlinien auf diejenigen zu verfeinern, die für ihre eigenen Interessen und/oder Umstände am relevantesten sind. Leser können die Erfolgskriterien filtern, die sie einsehen möchten, indem sie bestimmte Webinhaltstechnologien wie Cascading Style Sheets oder Skripts oder bestimmte Prioritätsstufen angeben.
+Der Abschnitt „Erfüllen von“ befindet sich auf der Seite [Erfüllen von WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Dieser Abschnitt bietet eine alternative Darstellung der WCAG, die es Lesern erlaubt, den Inhalt der Richtlinien auf die für die eigenen Interessen bzw. Gegebenheiten relevantesten zu präzisieren. Leser können die Erfolgskriterien filtern, die sie einsehen möchten, indem sie bestimmte Webinhaltstechnologien wie Cascading Style Sheets oder Skripts oder bestimmte Prioritätsstufen angeben.
 
 Ohne Filterung liefert diese Ressource alle Erfolgskriterien, nach Richtlinien gruppiert. Für jedes Erfolgskriterium wird Folgendes angegeben:
 
