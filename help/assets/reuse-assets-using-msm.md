@@ -4,10 +4,10 @@ description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus ü
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '3368'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -61,14 +61,14 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 Führen Sie einen der folgenden Schritte aus, um eine Live Copy aus einem oder mehreren Quell-Assets oder -Ordnern zu erstellen:
 
-* Methode 1: Wählen Sie die Quell-Assets aus und klicken Sie oben in der Symbolleiste auf **[!UICONTROL Erstellen > Live Copy]**.
-* Method 2: In [!DNL Experience Manager] user interface, click **[!UICONTROL Create > Live Copy]** from upper-right corner of the interface.
+* Method 1: Select the source assets and click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from toolbar at the top.
+* Method 2: In [!DNL Experience Manager] user interface, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** from upper-right corner of the interface.
 
 Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copies erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist. Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie versuchen, deren Live Copies zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind eine Momentaufnahme und werden nicht zusammen mit den ursprünglichen Inhaltsfragmenten aktualisiert.
 
 Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu erstellen:
 
-1. Wählen Sie Quell-Assets oder -ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen > Live Copy]**.
+1. Wählen Sie Quell-Assets oder -ordner aus. From the toolbar, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
    ![Live-Kopie über die Benutzeroberfläche von Experience Manager erstellen](assets/create_lc1.png)
 
@@ -80,7 +80,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu ers
 
 Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu erstellen:
 
-1. In [!DNL Experience Manager] interface, from upper-right corner, click **[!UICONTROL Create > Live Copy]**.
+1. In [!DNL Experience Manager] interface, from upper-right corner, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
    ![Live-Kopie über die Benutzeroberfläche von Experience Manager erstellen](assets/create_lc2.png)
 
