@@ -1,12 +1,12 @@
 ---
-title: Erweiterung der Suchfunktion von Adobe Experience Manager Assets
+title: Erweiterte Suchfunktion von Adobe Experience Manager Assets
 description: Erweitern Sie die Suchfunktionen von Adobe Experience Manager Assets über die Standardwerte hinaus.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 75%
+source-wordcount: '857'
+ht-degree: 74%
 
 ---
 
@@ -31,7 +31,7 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 
 >[!NOTE]
 >
->Standardmäßig ist die Verzeichnisstruktur unter /`apps` nicht vorhanden und muss erstellt werden. Stellen Sie sicher, dass die Knotentypen den Typen unter /`libs` entsprechen.
+>Standardmäßig ist die Ordnerstruktur unter `/apps` nicht vorhanden. Erstellen Sie sie daher. Stellen Sie sicher, dass die Knotentypen den Typen unter `/libs` entsprechen.
 
 ## Hinzufügen von Registerkarten {#adding-tabs}
 
@@ -298,4 +298,4 @@ Die folgenden Prognosen sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. Experience Manager Assets verfügt über eine Reihe vordefinierter Objektive, die zum Anpassen einer Seite zum Teilen von Assets verwendet werden können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
-Zusätzlich zur Verwendung bereits vorhandener Objektive können Experience Manager-Entwickler auch eigene Objektive erstellen.
+Neben der Verwendung bereits vorhandener Objektive können Experience Manager-Entwickler auch eigene Objektive erstellen.
