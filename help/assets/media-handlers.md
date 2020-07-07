@@ -3,10 +3,10 @@ title: Process assets using media handlers and workflows in [!DNL Adobe Experien
 description: Erfahren Sie mehr über die Media-Handler und wie Sie Workflows verwenden, um Aufgaben an Ihren digitalen Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 52%
+source-wordcount: '2109'
+ht-degree: 50%
 
 ---
 
@@ -21,15 +21,13 @@ Media handlers are services in [!DNL Assets] that perform specific actions on as
 
 >[!NOTE]
 >
->Eine Beschreibung aller Formate, die von unterstützt werden, sowie Funktionen, die für jedes Format unterstützt werden, finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).[!DNL Assets]
+>See the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] as well as features supported for each format.
 
 ## Default media handlers {#default-media-handlers}
 
 The following media handlers are available within [!DNL Assets] and handle the most common MIME types:
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | Handler-Name | Dienstname (in der Systemkonsole) | Unterstützte MIME-Typen |
@@ -140,7 +138,7 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
 
 1. Erstellen Sie in Eclipse `myBundle` ein [!DNL Maven] Projekt:
 
-   1. In the Menu bar, click **[!UICONTROL File > New > Other]**.
+   1. In the Menu bar, click **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Other]**.
    1. In the dialog, expand the [!DNL Maven] folder, select [!DNL Maven] project and click **[!UICONTROL Next]**.
    1. Check the Create a simple project box and the Use default Workspace locations box, then click **[!UICONTROL Next]**.
    1. Definieren eines [!DNL Maven] Projekts:
@@ -505,7 +503,7 @@ Trennen Sie die Werte der [!UICONTROL Prozessargumente] durch Kommas und verwend
 |---|---|
 | mime:&lt;MIME-Typ> | Optionales Argument. Der Prozess wird angewendet, wenn das Asset denselben MIME-Typ wie das Argument hat. <br>Es können mehrere MIME-Typen definiert werden. |
 | tn:&lt;Breite>:&lt;Höhe> | Optionales Argument. Der Prozess erstellt ein Miniaturbild mit den Abmessungen, die im Argument definiert sind. <br>Es können mehrere Miniaturbilder definiert werden. |
-| cmd: &lt;Befehl> | Definiert den auszuführenden Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. Original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. JPG. |
+| cmd: &lt;Befehl> | Definiert den ausgeführten Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: Vollständiger Pfadname der Eingabedatei, z. B. `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. `/tmp/cqdam0816.tmp`<br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. Original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. JPG. |
 
 For example, if [!DNL ImageMagick] is installed on the disk hosting the [!DNL Experience Manager] server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
 
