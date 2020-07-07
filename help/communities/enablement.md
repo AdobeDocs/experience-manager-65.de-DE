@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 4%
 
 ---
 
 
 # Konfiguration von Aktivierungsfunktionen {#configuring-enablement-features}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Aktivierungsfunktionen bieten die Möglichkeit, [Aktivierungsgemeinschaften](overview.md#enablement-community)zu erstellen.
 
@@ -49,7 +52,7 @@ Optionale Konfiguration von:
 
 * **Adobe Analytics**
 
-   Die Integration mit Adobe Analytics bietet umfassende Funktionen zum Berichte und unterstützt die Video Heartbeat-Erweiterung zu Analytics.
+   Die Integration mit Adobe Analytics bietet umfassende Berichte-Funktionen und unterstützt die Video Heartbeat-Erweiterung zu Analytics.
 
 * **Dispatcher**
 
@@ -63,9 +66,14 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
 1. **[JDBC-Treiber für MySQL installieren](deploy-communities.md#jdbc-driver-for-mysql)**
 
-   Web-Konsole verwenden (Pakete): *http://localhost:4502/system/console/bundles* Installieren *vor* der Installation des SCORM-Pakets
+   Web-Konsole verwenden (Pakete): *http://localhost:4502/system/console/bundles*
 
-1. **[SCORM-Paket](deploy-communities.md#scorm-package)**mit Package Manager installieren:*http://localhost:4502/crx/packmgr/*
+   Installieren Sie *vor* der Installation des SCORM-Pakets
+
+1. **[SCORM-Paket installieren](deploy-communities.md#scorm-package)**
+
+
+   Package Manager verwenden: *http://localhost:4502/crx/packmgr/*
 
 **Auf jedem Server:**
 
@@ -73,7 +81,9 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
 1. **[MySQL-Datenbanken installieren](mysql.md#database-setup)**
 
-   SQL-Skripten ausführen, die von der Autoreninstanz heruntergeladen wurdenMySQL Workbench verwenden
+   SQL-Skripten ausführen, die von der Autoreninstanz heruntergeladen wurden
+
+   MySQL Workbench verwenden
 
 **Auf demselben Server, auf dem die Autoreninstanz gehostet wird:**
 
@@ -97,7 +107,7 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
 1. (*Optional*) Analytics-Dienst **[konfigurieren](analytics.md)**
 
-   Verwenden Sie Tools, Bereitstellung, Cloud Services-Konsole: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Verwenden Sie Tools, Bereitstellung, Cloud Service-Konsole: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[FFmpeg konfigurieren](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -109,7 +119,9 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
 1. **[Community-Administratoren erstellen](users.md#creating-community-members)**
 
-   Für die Umgebung von Autoren verwenden Sie die klassische Sicherheitskonsole der Benutzeroberfläche: http://localhost:4502/useradmin ** erstellen Sie Benutzer mit dem Pfad = /home/users/community
+   Für die Umgebung von Autoren verwenden Sie die klassische Sicherheitskonsole der Benutzeroberfläche: *http://localhost:4502/useradmin*
+
+   Benutzer mit Pfad erstellen = /home/users/community
 
    * Hinzufügen Mitglieder zu folgenden Gruppen:
 
@@ -118,4 +130,4 @@ Jeder Schritt ist mit der Dokumentation verknüpft, die die erforderlichen Detai
 
 ## Dispatcher {#dispatcher}
 
-Wenn die Bereitstellung [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)enthält, müssen die Abschnitte `clientheader` `filter` und Abschnitte geändert werden, damit die Aktivierungsfunktionen ordnungsgemäß funktionieren. Siehe [Konfigurieren von Dispatcher für Communities](dispatcher.md#enablement).
+Wenn die Bereitstellung den [AEM-Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)enthält, müssen die Aktivierungsfunktionen `clientheader` und - `filter` abschnitte geändert werden, damit die Funktionen ordnungsgemäß funktionieren. Siehe [Konfigurieren von Dispatcher für Communities](dispatcher.md#enablement).
