@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 translation-type: tm+mt
-source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 84%
 
 ---
 
@@ -42,7 +45,7 @@ Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden, die v
 
    * Engines können anhand einer `commerceProvider`-Service-Eigenschaft identifiziert werden.
 
-* AEM unterstützt `Resource.adaptTo()` und `CommerceService``Product`
+* AEM unterstützt `Resource.adaptTo()` und `CommerceService` `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -91,7 +94,7 @@ Eine Sitzung zum Speichern von Informationen über den Warenkorb des Kunden.
 
 Die **CommerceSession**:
 
-* Der **Warenkorb**
+* Führt den **Warenkorb**
 
    * Sie führt Hinzufügen/Entfernen-Aktionen aus.
    * führt die verschiedenen Berechnungen im Warenkorb durch;
@@ -128,13 +131,11 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 Zwar können Produkte (im Allgemeinen) viele Variantenachsen haben, vorkonfigurierte Produktkomponenten jedoch nur zwei:
 >
 >1. `size`
-   >
-   >
-1. plus eins mehr
-   >   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
+>1. plus eins mehr
+
 >
-
-
+>   
+This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Produktreferenzen und PIM-Daten {#product-references-and-pim-data}
 
@@ -525,7 +526,7 @@ Die bereitgestellte `AbstractJcrCommerceSession` kann Gutscheine beantragen. The
 
 * `jcr:title` (Zeichenfolge) - für die Beschreibung des Gutscheins
 * `code` (String) - der Code, den der Benutzer eingeben muss, um den Gutschein anwenden
-* `promotion` (Zeichenfolge) - die anzuwendende Promotion;z. B. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (Zeichenfolge) - die anzuwendende Promotion; z. B. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Promotion-Handler sind OSGi-Dienste, die den Warenkorb verändern. Der Warenkorb unterstützt mehrere Hooks, die in der `PromotionHandler`-Schnittstelle definiert werden.
 
@@ -579,5 +580,5 @@ Drei Promotion-Handler stehen zur Verfügung:
 
 * `DiscountPromotionHandler` wendet einen absoluten oder prozentualen Rabatt auf den gesamten Warenkorb an
 * `PerfectPartnerPromotionHandler` wendet einen absoluten oder prozentualen Rabatt auf ein Produkt an, wenn sich das Partnerprodukt ebenfalls im Warenkorb befindet
-* `FreeShippingPromotionHandler` kostenlose Lieferung
+* `FreeShippingPromotionHandler` kostenloser Versand
 
