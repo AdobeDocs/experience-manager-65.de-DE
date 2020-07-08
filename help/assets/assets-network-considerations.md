@@ -3,7 +3,7 @@ title: Überlegungen und Anforderungen zum Netzwerk
 description: Erläutert Netzwerküberlegungen beim Entwerfen einer Adobe Experience Manager-Asset-Bereitstellung.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 73%
@@ -13,16 +13,16 @@ ht-degree: 73%
 
 # Überlegungen zum Assets-Netzwerk {#assets-network-considerations}
 
-Das Verstehen Ihres Netzwerks ist ebenso wichtig wie das Verstehen der Adobe Experience Manager-Assets. Das Netzwerk kann Uploads, Downloads und Benutzererlebnisse beeinflussen. Eine grafische Darstellung Ihrer Netzwerktopologie hilft bei der Erkennung von Engpässen und unzureichend optimierten Bereichen im Netzwerk, die Sie beseitigen bzw. korrigieren müssen, um die Netzwerkleistung und das Benutzererlebnis zu verbessern.
+Das Verständnis Ihres Netzwerks ist ebenso wichtig wie das Verstehen von Adobe Experience Manager Assets. Das Netzwerk kann Uploads, Downloads und Benutzererlebnisse beeinflussen. Eine grafische Darstellung Ihrer Netzwerktopologie hilft bei der Erkennung von Engpässen und unzureichend optimierten Bereichen im Netzwerk, die Sie beseitigen bzw. korrigieren müssen, um die Netzwerkleistung und das Benutzererlebnis zu verbessern.
 
 Stellen Sie sicher, dass Sie Folgendes in Ihre Netzwerkgrafik einbeziehen:
 
-* Möglichkeit der Verbindung des Client-Geräts (z. B. Computer, Mobilgerät oder Tablet) mit dem Netzwerk
-* Topologie des Unternehmensnetzwerks
-* Internetverbindung über das Unternehmensnetzwerk und die Experience Manager-Umgebung
-* Topologie der Experience Manager-Umgebung
-* Definieren von gleichzeitigen Benutzern der Experience Manager-Netzwerkschnittstelle
-* Definierte Workflows der Experience Manager-Instanz
+* Möglichkeit der Verbindung des Client-Geräts (z. B. Computer, Mobilgerät oder Tablet) mit dem Netzwerk.
+* Topologie des Unternehmensnetzwerks.
+* Uplink zum Internet vom Firmennetzwerk und der Experience Manager Umgebung.
+* Topologie der Umgebung des Experience Managers.
+* Definieren Sie gleichzeitige Konsumenten der Experience Manager-Netzwerkschnittstelle.
+* Definierte Workflows der Bereitstellung des Experience Managers.
 
 ## Möglichkeit der Verbindung des Client-Geräts mit dem Unternehmensnetzwerk {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -52,31 +52,31 @@ Das Diagramm zeigt höhere Uplinkgeschwindigkeiten innerhalb des Unternehmensnet
 
 Es ist wichtig, unbekannte Faktoren des Internets und der VPC-Verbindung zu berücksichtigen, da die Bandbreite im Internet durch Spitzenlasten oder umfangreiche Anbieterausfälle verringert werden kann. Im Allgemeinen ist eine Internetverbindung zuverlässig. Manchmal kann es allerdings zu Engpässen kommen.
 
-Am Uplink von einem Unternehmensnetzwerk zum Internet können andere Dienste die Bandbreite nutzen. Es ist wichtig, zu verstehen, wie viel Bandbreite für Assets bereitgestellt oder priorisiert werden kann. Wenn beispielsweise ein Link mit 1 Gbit/s bereits zu 80 % genutzt wird, können Sie für Experience Manager Assets nur maximal 20 % der Bandbreite zuweisen.
+Am Uplink von einem Unternehmensnetzwerk zum Internet können andere Dienste die Bandbreite nutzen. Es ist wichtig, zu verstehen, wie viel Bandbreite für Assets bereitgestellt oder priorisiert werden kann. Wenn beispielsweise ein Link mit 1 Gbit/s bereits zu 80 % genutzt wird, können Sie nur maximal 20 % der Bandbreite für Experience Manager Assets zuweisen.
 
 Unternehmens-Firewalls und Proxys können Bandbreite zudem auf vielfältige Weise anpassen. Diese Geräteart kann Bandbreite mithilfe der Dienstgüte, der Bandbreitenbeschränkungen pro Benutzer oder der Bitratenbeschränkungen pro Host priorisieren. Dies sind wichtige Engpässe, die zu untersuchen sind, da sie das Assets-Benutzererlebnis erheblich beeinträchtigen können.
 
 In diesem Beispiel nutzt das Unternehmen einen 10 GBit/s schnellen Uplink. Dieser sollte für mehrere Clients ausreichen. Außerdem beschränkt die Firewall die Hostgeschwindigkeit auf 10 MBit/s. Diese Beschränkung kann möglicherweise den Traffic zu einem einzelnen Host bis auf 10 MBit/s drosseln, obwohl der Uplink zum Internet auf 10 GBit/s ausgelegt ist.
 
-Dies ist der kleinste kundenorientierte Choke-Point. Sie können jedoch eine Änderung vornehmen oder eine zulässige Liste mit der Netzwerkbetriebengruppe konfigurieren, die für diese Firewall zuständig ist.
+Dies ist der kleinste kundenorientierte Choke-Point. Sie können jedoch mit der Netzwerkbetriebengruppe, die für diese Firewall zuständig ist, eine Änderung auswerten oder eine zulassungsliste konfigurieren.
 
 Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptionellen, 10 MBit/s schnellen Kanal gemeinsam nutzen. Je nach Größe der genutzten Assets reicht dies möglicherweise aus, um die Erwartungen der Benutzer zu erfüllen.
 
-## Topologie der Experience Manager-Umgebung {#topology-of-the-aem-environment}
+## Topologie der Umgebung des Experience Managers {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Die Erstellung der Topologie der Experience Manager-Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration und der Netzwerkverbindung innerhalb der Umgebung.
+Die Entwicklung der Topologie der Experience Manager-Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration und der Netzwerkverbindung innerhalb der User-Umgebung.
 
-Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen S3-Binärspeicher und dynamische Medien, die konfiguriert sind.
+Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen S3-Binärspeicher und konfigurierte Dynamic Media.
 
-Der Dispatcher weist seine 100-Mbit/s-Verbindung mit zwei Entitäten, der Außenwelt und der Experience Manager-Instanz, auf. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
+Der Dispatcher teilt seine 100 Mbit/s Verbindung mit zwei Entitäten, der Außenwelt und dem Experience Manager-Einsatz. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
 
-Die Experience Manager-Instanz verfügt über eine 1 Gbit/s-Verbindung mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
+Die Experience Manager-Bereitstellung verfügt über eine 1 Gbit/s-Verbindung mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
 
-Bei der Überprüfung des Netzwerks vom Client-Gerät zur Experience Manager-Instanz scheint der kleinste Choke-Point die 10-Mbit-Firewall-Drosselklappe zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
+Wenn Sie das Netzwerk vom Client-Gerät bis zur Bereitstellung des Experience Managers überprüfen, scheint der kleinste Choke-Point die 10-Mbit-Firewall-Drosselklappe des Unternehmens zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
 
-## Definierte Workflows der Experience Manager-Instanz {#defined-workflows-of-the-aem-instance}
+## Definierte Workflows der Bereitstellung des Experience Managers {#defined-workflows-of-the-aem-deployment}
 
 Bei Überlegungen zur Netzwerkleistung ist es möglicherweise wichtig, die Workflows und die im System stattfindenden Veröffentlichungen zu berücksichtigen. Außerdem beanspruchen S3 oder Speicher, der im Netzwerk zugeteilt ist und von Ihnen verwendet wird, und I/O-Anforderungen Netzwerkbandbreite. Daher wird die Leistung selbst in einem voll optimierten Netzwerk durch die Anzahl der Datenträger-I/O beschränkt.
 
