@@ -3,7 +3,7 @@ title: Aktivitäts-Stream in der Timeline
 description: Dieser Artikel beschreibt, wie Sie Aktivitätsprotokolle für Assets in der Timeline anzeigen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 73%
@@ -20,7 +20,7 @@ Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 * Erstellen
 * Löschen
 * Download (einschließlich Wiedergaben)
-* Veröffentlichen
+* Veröffentlichen  
 * Veröffentlichung rückgängig machen
 * Genehmigen
 * Ablehnen
