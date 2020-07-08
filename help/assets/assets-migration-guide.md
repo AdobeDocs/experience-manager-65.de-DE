@@ -3,7 +3,7 @@ title: Migrieren von Assets [!DNL Adobe Experience Manager Assets] zusammen.
 description: Describes how to bring assets into [!DNL Adobe Experience Manager], apply metadata, generate renditions, and activate them to publish instances.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 66%
@@ -28,6 +28,7 @@ Before actually performing any of the steps in this methodology, please review a
 >* Bulk Workflow Manager von ACS Commons
 >* Fast Action Manager von ACS Commons
 >* Synthetic Workflow
+
 >
 >
 Hierbei handelt es sich um eine Open-Source-Software. Sie wird mit der [Apache v2-Lizenz](https://adobe-consulting-services.github.io/pages/license.html) abgedeckt. Um eine Frage zu stellen oder ein Problem zu melden, besuchen Sie den Bereich für die entsprechenden [GitHub-Probleme für ACS AEM-Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) und [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
@@ -36,16 +37,16 @@ Hierbei handelt es sich um eine Open-Source-Software. Sie wird mit der [Apache v
 
 Migrating assets to [!DNL Experience Manager] requires several steps and should be viewed as a phased process. Die Migrationsphasen lauten wie folgt:
 
-1. Workflows deaktivieren
+1. Deaktivieren von Workflows.
 1. Laden von Tags.
 1. Aufnehmen von Assets.
-1. Verarbeiten von Wiedergaben
+1. Verarbeiten von Wiedergaben.
 1. Aktivieren von Assets.
-1. Workflows aktivieren
+1. Aktivieren von Workflows.
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Disable workflows {#disabling-workflows}
+### Deaktivieren von Workflows {#disabling-workflows}
 
 Before starting your migration, disable your launchers for the [!UICONTROL DAM Update Asset] workflow. Am besten nehmen Sie zunächst alle Assets in das System auf und führen dann die Workflows stapelweise aus. Wenn Ihr System bereits „live“ ist, während die Migration durchgeführt wird, können Sie diese Aktivitäten so planen, dass sie außerhalb der Arbeitszeiten ausgeführt werden.
 
@@ -61,7 +62,7 @@ Es gibt zwei Herangehensweisen zum Laden von Assets in das System: ein Push-basi
 
 #### Senden über HTTP {#pushing-through-http}
 
-Das Managed Services-Team von Adobe lädt Daten mit einem Tool namens Glutton in Kundenumgebungen. Glutton is a small Java application that loads all assets from one directory into another directory on an [!DNL Experience Manager] instance. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
+Das Managed Services-Team von Adobe lädt Daten mit einem Tool namens Glutton in Kundenumgebungen. Glutton is a small Java application that loads all assets from one directory into another directory on an [!DNL Experience Manager] deployment. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
 
 Der Push-basierte Ansatz mit HTTP hat zwei wesentliche Nachteile:
 
@@ -111,21 +112,21 @@ Nach Aktivierung der Assets können Sie Ihre Veröffentlichungsinstanz klonen, u
 1. Starten Sie die Umgebung.
 1. Aktualisieren Sie die Konfiguration aller Replikationsagenten auf Autorseite so, dass auf die korrekten Veröffentlichungsinstanzen verwiesen wird, bzw. die Agenten „Dispatcher leeren“ der neuen Instanz so, dass auf die korrekten Dispatcher für die neue Umgebung verwiesen wird.
 
-### Enable workflows {#enabling-workflows}
+### Aktivieren von Workflows {#enabling-workflows}
 
 Once we have completed migration, the launchers for the [!UICONTROL DAM Update Asset] workflows should be re-enabled to support rendition generation and metadata extraction for ongoing day-to-day system usage.
 
 ## Migrieren zwischen [!DNL Experience Manager] Bereitstellungen {#migrating-between-aem-instances}
 
-While not nearly as common, sometimes you need to migrate large amounts of data from one [!DNL Experience Manager] instance to another; for example, when you perform an [!DNL Experience Manager] upgrade, upgrade your hardware, or migrate to a new datacenter, such as with an AMS migration.
+While not nearly as common, sometimes you need to migrate large amounts of data from one [!DNL Experience Manager] deployment to another; for example, when you perform an [!DNL Experience Manager] upgrade, upgrade your hardware, or migrate to a new datacenter, such as with an AMS migration.
 
-In diesem Fall sind die Assets schon mit Metadaten aufgefüllt und Wiedergaben sind bereits generiert. Sie können sich einfach darauf konzentrieren, Assets zwischen Instanzen zu verschieben. When migrating between [!DNL Experience Manager] instances, you perform the following steps:
+In diesem Fall sind die Assets schon mit Metadaten aufgefüllt und Wiedergaben sind bereits generiert. Sie können sich einfach darauf konzentrieren, Assets zwischen Instanzen zu verschieben. When migrating between [!DNL Experience Manager] deployment, you perform the following steps:
 
 1. Disable workflows: Because you are migrating renditions along with our assets, you want to disable the workflow launchers for [!UICONTROL DAM Update Asset] workflow.
 
-1. Migrate tags: Because you already have tags loaded in the source [!DNL Experience Manager] instance, you can build them in a content package and install the package on the target instance.
+1. Migrate tags: Because you already have tags loaded in the source [!DNL Experience Manager] deployment, you can build them in a content package and install the package on the target instance.
 
-1. Migrate assets: There are two tools that are recommended for moving assets from one [!DNL Experience Manager] instance to another:
+1. Migrate assets: There are two tools that are recommended for moving assets from one [!DNL Experience Manager] deployment to another:
 
    * **Vault Remote Copy** oder vlt rcp ermöglicht die Verwendung von vlt über ein Netzwerk. Nach Angabe eines Quell- und Zielverzeichnisses lädt vlt alle Repositorydaten von einer Instanz herunter und lädt diese in die andere Instanz. Die Dokumentation zum vlt rcp-Tool finden Sie unter [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** ist ein Open-Source-Tool zur Synchronisierung von Inhalten, das von Time Warner Cable für ihre [!DNL Experience Manager] Implementierung entwickelt wurde. Durch die Nutzung kontinuierlicher Datenströme weist das Tool im Vergleich zu vlt rcp eine geringere Latenz auf. Darüber hinaus soll es zwei- bis zehnmal schneller sein als vlt rcp. Grabbit unterstützt zudem die alleinige Synchronisierung von Delta-Inhalten, sodass Änderungen nach erfolgreich abgeschlossener Erstmigration synchronisiert werden.
