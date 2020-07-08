@@ -3,7 +3,7 @@ title: Asset-Vorlagen in [!DNL Adobe Experience Manager Assets].
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 33%
@@ -96,7 +96,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Weitere Informationen finden Sie unter [Integrieren von Experience Manager-Assets in InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Weitere Informationen finden Sie unter [Integrieren von Experience Manager-Assets in InDesign Server](/help/assets/indesign.md).
 
 1. Um den Text in einem bearbeitbaren Feld zu ändern, klicken Sie in der Liste der bearbeitbaren Felder auf das Textfeld und bearbeiten Sie den Text im Feld.
 
