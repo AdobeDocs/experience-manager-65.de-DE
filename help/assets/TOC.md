@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 Asset-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
+source-git-commit: 9f1548785283ffba119d8404e328f513012a082c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 56%
@@ -151,7 +151,7 @@ ht-degree: 56%
    + [Erstellen von Übersetzungsprojekten](translation-projects.md)
    + [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
    + [Herunterladen von Assets aus AEM](download-assets-from-aem.md)
-   + [Asynchrone Vorgänge](/help/sites-administering/asynchronous-jobs.md)
+   + [Asynchrone Aufträge](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Asset-Einblicke](touch-ui-asset-insights.md)
    + [Asset-Einblicke über Adobe Launch aktivieren](touch-ui-using-dtm-for-asset-insights.md)
