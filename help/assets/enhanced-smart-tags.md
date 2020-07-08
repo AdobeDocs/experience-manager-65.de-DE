@@ -3,7 +3,7 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 75%
@@ -27,7 +27,7 @@ Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über 
 
 Im Hintergrund verwendet der Smart Content Service das Adobe Sensei AI-Framework, um seinen Bilderkennungsalgorithmus in Ihrer Tag-Struktur und Ihrer Geschäftstaxonomie zu schulen. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
-Der Smart Content Service ist ein Cloud-Dienst, der auf Adobe I/O gehostet wird. Um es in Adobe Experience Manager zu verwenden, muss der Systemadministrator Ihre Experience Manager-Instanz mit der Adobe-ID/O integrieren.
+Der Smart Content Service ist ein Cloud-Dienst, der auf Adobe I/O gehostet wird. Um ihn in Adobe Experience Manager zu verwenden, muss der Systemadministrator Ihre Experience Manager-Bereitstellung mit der Adobe-ID/O integrieren.
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
