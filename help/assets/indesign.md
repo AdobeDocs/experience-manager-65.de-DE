@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrieren mit [!DNL Adobe InDe
 description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 36%
+source-wordcount: '1559'
+ht-degree: 37%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 36%
 * Einen Proxy Worker zum Definieren und Verwalten einer bestimmten Aufgabe.
 These can cover a wide variety of tasks; for example, using an [!DNL InDesign Server] to process files.
 
-To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instance(s) in a cloud configuration.
+To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instances in a cloud configuration.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
    * The extracted text and files are stored in [!DNL Experience Manager Assets].
    * All renditions are stored in [!DNL Experience Manager Assets], in the asset itself.
 
-## Integration von [!DNL InDesign Server] Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integrieren des [!DNL InDesign Server] mit Experience Manager {#integrating-the-indesign-server-with-aem}
 
 To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager Assets] and after configuring your proxy, you need to:
 
@@ -201,13 +201,13 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die blockierte Liste von IDS-Mitarbeitern aktivieren.
+>Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die blockierungsliste von IDS-Mitarbeitern aktivieren.
 >
 >To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
 >
 >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list.
 >
->By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Wenn der Mitarbeiter online gefunden wird, wird er aus der blockierten Liste entfernt.
+>By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
 ## Unterstützung für [!DNL InDesign Server] 10.0 oder höher aktivieren {#enabling-support-for-indesign-server-or-later}
 
@@ -223,7 +223,7 @@ For [!DNL InDesign Server] 10.0 or higher, perform the following steps to enable
 
 ## Konfigurieren von [!DNL Experience Manager] Berechtigungen {#configure-aem-credentials}
 
-You can change the default administrator credentials (user name and password) for accessing the [!DNL InDesign Server] from your [!DNL Experience Manager] instance without breaking the integration with the [!DNL InDesign Server].
+You can change the default administrator credentials (user name and password) for accessing the [!DNL InDesign Server] from your [!DNL Experience Manager] deployment without breaking the integration with the [!DNL InDesign Server].
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
 1. Geben Sie in diesem Dialogfeld den neuen Benutzernamen und das Kennwort ein.
