@@ -3,7 +3,10 @@ title: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dat
 description: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateitypen mit [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 46%
 
 ---
 
@@ -40,7 +43,7 @@ Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, habe
 
 Adobe empfiehlt, dass Sie [!DNL Adobe InDesign Server] zum Extrahieren [!DNL Adobe InDesign]spezifischer Darstellungen wie IDML und HTML verwenden. For more information, see [Adding Experience Manager assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
-## [!DNL Dynamic Media]  {#dynamic-media}
+## [!DNL Dynamic Media] {#dynamic-media}
 
 [!DNL Dynamic Media] generiert und stellt mehrere Varianten von anspruchsvollem Inhalt über sein globales, skalierbares und leistungsoptimiertes Netzwerk bereit. Es dient der Bereitstellung interaktiver Erlebnisse und optimiert die Verwaltung digitaler Kampagnen. For details around enabling [!DNL Dynamic Media], see [Configuring Dynamic Media](/help/assets/config-dynamic.md).
 
