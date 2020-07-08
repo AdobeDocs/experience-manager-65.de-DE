@@ -4,10 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 Asset-Benutzerhandbuch
 translation-type: tm+mt
-source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 55%
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + AEM Assets verwenden {#using}
    + [Erfahrung mit AEM Assets-Startseiten](assets-home-page.md)
-   + [Suchen nach Assets in AEM    ](search-assets.md)
+   + [Suchen nach Assets in AEM      ](search-assets.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
    + [Verwenden von [!DNL Adobe Stock] Assets in AEM Assets](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
@@ -53,10 +53,10 @@ ht-degree: 55%
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
    + [3D-Unterstützung](/help/assets/assets-3d.md)
-   + [Bildsets](image-sets.md)
+   + [Bild-Sets](image-sets.md)
    + [Panoramabilder](panoramic-images.md)
-   + [Gemischte Mediensets](mixed-media-sets.md)
-   + [Rotationssets](spin-sets.md)
+   + [Sets für gemischte Medien](mixed-media-sets.md)
+   + [Rotations-Sets](spin-sets.md)
    + [Video in Dynamic Media](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
@@ -151,7 +151,7 @@ ht-degree: 55%
    + [Erstellen von Übersetzungsprojekten](translation-projects.md)
    + [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
    + [Herunterladen von Assets aus AEM](download-assets-from-aem.md)
-   + [Asynchrone Vorgänge](asynchronous-jobs.md)
+   + [Asynchrone Vorgänge](/help/sites-administering/asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Asset-Einblicke](touch-ui-asset-insights.md)
    + [Asset-Einblicke über Adobe Launch aktivieren](touch-ui-using-dtm-for-asset-insights.md)
