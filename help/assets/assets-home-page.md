@@ -3,7 +3,7 @@ title: Adobe Experience Manager Assets Startseite Experience
 description: Personalisieren Sie die Experience Manager Assets-Startseite, um eine umfassende Bildschirmdarstellung zu erhalten, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 35%
@@ -13,7 +13,7 @@ ht-degree: 35%
 
 # Adobe Experience Manager Assets Startseite Experience {#aem-assets-home-page-experience}
 
-Personalisieren Sie die Adobe Experience Manager Assets-Startseite, um eine umfassende Bildschirmdarstellung zu erhalten, einschließlich einer Momentaufnahme der neuesten Aktivitäten rund um Assets.
+Personalisieren Sie die Adobe Experience Manager Assets-Startseite, um eine umfassende Bildschirmdarstellung zu erhalten, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
 
 Die Assets-Startseite bietet eine umfassende und personalisierte Benutzeroberfläche für den Begrüßungsbildschirm, die eine Momentaufnahme der letzten Aktivitäten enthält, z. B. Assets, die kürzlich angezeigt oder hochgeladen wurden.
 
@@ -69,7 +69,7 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 
 **Zuletzt**: Das **[!UICONTROL kürzlich angezeigte]** Widget unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten des angemeldeten Benutzers an, einschließlich Ordner, Sammlungen und Projekte.
 
-**Discover**: Das **[!UICONTROL neue]** Widget unter diesem Abschnitt zeigt die Assets und Darstellungen an, die kürzlich in die Assets-Instanz hochgeladen wurden.
+**Discover**: Das **[!UICONTROL neue]** Widget unter diesem Abschnitt zeigt die Assets und Darstellungen an, die kürzlich in die Asset-Bereitstellung hochgeladen wurden.
 
 To enable purging of user activity data, enable the **[!UICONTROL DAM Event Purge Service]** from Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
