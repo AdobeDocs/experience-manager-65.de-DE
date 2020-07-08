@@ -1,10 +1,10 @@
 ---
-title: Asynchrone Vorgänge
+title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 translation-type: tm+mt
-source-git-commit: 69b90432ac6028a64f36300819e1bead1ae8d671
+source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '892'
 ht-degree: 27%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 27%
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Um negative Auswirkungen auf die Leistung zu reduzieren, verarbeitet Adobe Experience Manager bestimmte langjährige und ressourcenintensive Vorgänge asynchron.
+Um negative Auswirkungen auf die Leistung zu reduzieren, verarbeitet Adobe Experience Manager bestimmte langjährige und ressourcenintensive Vorgänge asynchron. Bei der asynchronen Verarbeitung werden mehrere Aufträge in die Warteschlange gestellt und in einer seriellen Ausführung ausgeführt, sofern Systemressourcen zur Verfügung stehen.
 
 Zu diesen Vorgängen gehören u. a.:
 
@@ -22,8 +22,6 @@ Zu diesen Vorgängen gehören u. a.:
 * Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, von einer Remote-Experience Manager-Bereitstellung
 * Verschieben von Seiten
 * Live Copies herausrollen
-
-Bei der asynchronen Verarbeitung werden mehrere Aufträge in die Warteschlange gestellt und in einer seriellen Ausführung ausgeführt, sofern Systemressourcen zur Verfügung stehen.
 
 Sie können den Status asynchroner Aufträge über das Dashboard **[!UICONTROL Async-Auftragsstatus]** unter **Global Navigation** -> **Tools** -> **Vorgänge** -> **Aufträge** Ansicht haben.
 
@@ -35,7 +33,7 @@ Sie können den Status asynchroner Aufträge über das Dashboard **[!UICONTROL A
 
 ## Monitor the Status of Asynchronous Operations {#monitor-the-status-of-asynchronous-operations}
 
-Wenn AEM einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung im Posteingang und per E-Mail (falls aktiviert).
+Wenn AEM einen Vorgang asynchron verarbeitet, erhalten Sie eine Benachrichtigung im [Posteingang](/help/sites-authoring/inbox.md) und per E-Mail (falls aktiviert).
 
 Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie zur Seite **[!UICONTROL Async-Auftragsstatus]**.
 
@@ -142,3 +140,12 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) die Schwellenz
    ![MSM-Konfiguration](assets/async-msm.png)
 
 1. Speichern Sie die Änderungen.
+
+>[!MORELIKETHIS]
+>
+>* [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md)
+>* [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Konfigurieren Sie E-Mail in Experience Manager](/help/sites-administering/notification.md).
+>* [Stapelweises Importieren und Exportieren von Asset-Metadaten](/help/assets/metadata-import-export.md).
+>* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Bereitstellungen](/help/assets/use-assets-across-connected-assets-instances.md)freizugeben.
+
