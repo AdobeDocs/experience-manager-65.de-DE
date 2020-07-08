@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets im Authoring-
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2082'
-ht-degree: 91%
+ht-degree: 87%
 
 ---
 
@@ -78,6 +78,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    1. Geben Sie im Feld **[!UICONTROL Bereitstellungspunkt]** den lokalen [!DNL Experience Manager]-Pfad ein, aus dem [!DNL Experience Manager] die Assets abruft. Beispielsweise den Ordner `remoteassets`.
    1. Passen Sie die Werte für den **[!UICONTROL Schwellenwert zum Optimieren der ursprünglichen Binärübertragung]** an Ihr Netzwerk an. Eine Asset-Ausgabedarstellung, deren Größe diesen Schwellenwert überschreitet, wird asynchron übertragen.
    1. Wählen Sie **[!UICONTROL Mit Connected Assets gemeinsam verwendeter Datenspeicher]** aus, wenn Sie zum Speichern Ihrer Assets einen Datenspeicher verwenden und der Datenspeicher der gemeinsam verwendete Speicher beider Bereitstellungen ist. In diesem Fall spielt die Schwellenwertbegrenzung keine Rolle, da sich die tatsächlichen Asset-Binärdateien im Datenspeicher befinden und nicht übertragen werden.
+
    ![Eine typische Konfiguration für Connected Assets](assets/connected-assets-typical-config.png)
 
    *Abbildung: Eine typische Konfiguration für Connected Assets.*
@@ -91,6 +92,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    1. Wählen Sie den Workflow-Starter aus und klicken Sie in der Aktionsleiste auf **[!UICONTROL Eigenschaften]**.
 
    1. Ändern Sie im [!UICONTROL Eigenschaften]-Assistenten die **[!UICONTROL Pfad]**-Felder in die folgenden Zuordnungen, um ihre regulären Ausdrücke zu aktualisieren und den Bereitstellungspunkt **[!UICONTROL connectedassets]** auszuschließen.
+
    | Vorher | Nachher |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
@@ -101,28 +103,28 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    >
    >Wenn Autoren ein Asset abrufen, werden alle in der Remote-Bereitstellung verfügbaren Ausgabedarstellungen abgerufen. Überspringen Sie diesen Konfigurationsschritt, wenn Sie mehr Ausgabedarstellungen eines abgerufenen Assets erstellen möchten. Der Workflow [!UICONTROL DAM-Update-Asset] wird gestartet und es werden mehr Ausgabedarstellungen erstellt. Diese Ausgabedarstellungen sind nur für die lokale [!DNL Sites]-Bereitstellung verfügbar und nicht für die Remote-DAM-Bereitstellung.
 
-1. Fügen Sie die [!DNL Sites]-Instanz als **[!UICONTROL zulässigen Ursprung]** in der Remote-CORS-Konfiguration von [!DNL Assets'] hinzu.
+1. Add the [!DNL Sites] deployment as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
 
    1. Melden Sie sich mit den Anmeldeinformationen des Administrators an. Suchen Sie nach `Cross-Origin`. Öffnen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 
-   1. To create a CORS configuration for [!DNL Sites] instance, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. Geben Sie im Feld für den **[!UICONTROL zulässigen Ursprung]** die URL der lokalen [!DNL Sites] ein, z. B. `https://[local_sites]:[port]`. Speichern Sie die Konfiguration.
 
 ## Verwenden von Remote-Assets     {#use-remote-assets}
 
-Die Website-Autoren verwenden Content Finder zum Verbinden mit der DAM-Instanz. Die Autoren können die Remote-Assets durchsuchen und in eine Komponente ziehen. Halten Sie zum Authentifizieren beim Remote-DAM die von Ihrem Administrator bereitgestellten Anmeldeinformationen des DAM-Benutzers bereit.
+Die Website-Autoren verwenden Content Finder, um eine Verbindung zur DAM-Bereitstellung herzustellen. Die Autoren können die Remote-Assets durchsuchen und in eine Komponente ziehen. Halten Sie zum Authentifizieren beim Remote-DAM die von Ihrem Administrator bereitgestellten Anmeldeinformationen des DAM-Benutzers bereit.
 
-Autoren können in lokalen und Remote-DAM-Instanzen verfügbare Assets in derselben Web-Seite nutzen. Verwenden Sie Content Finder, um zwischen der Suche im lokalen und im Remote-DAM zu wechseln.
+Autoren können die Assets, die auf dem lokalen DAM und der Remote-DAM-Bereitstellung verfügbar sind, auf einer einzigen Webseite verwenden. Verwenden Sie Content Finder, um zwischen der Suche im lokalen und im Remote-DAM zu wechseln.
 
-Es werden nur die Tags von Remote-Assets abgerufen, die über ein exakt entsprechendes Tag – mit derselben Taxonomie-Hierarchie – verfügen, das in der lokalen [!DNL Sites]-Instanz verfügbar ist. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-[!DNL Experience Manager]-Bereitstellung nach Remote-Assets suchen, da eine Volltextsuche verfügbar ist.
+Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] deployment. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-[!DNL Experience Manager]-Bereitstellung nach Remote-Assets suchen, da eine Volltextsuche verfügbar ist.
 
 ### Beispiel für die Verwendung {#walk-through-of-usage}
 
 Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Funktionen im Authoring-Erlebnis zu überprüfen. Verwenden Sie Dokumente oder Bilder Ihrer Wahl in der Remote-DAM-Bereitstellung.
 
 1. Navigieren Sie zur [!DNL Assets]-Benutzeroberfläche in der Remote-Bereitstellung, indem Sie im [!DNL Experience Manager]-Arbeitsbereich auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** zugreifen. Sie können `https://[assets_servername_ams]:[port]/assets.html/content/dam` auch in einem Browser aufrufen. Laden Sie die Assets Ihrer Wahl hoch.
-1. Klicken Sie in der [!DNL Sites]-Instanz in der Profilaktivierung oben rechts auf **[!UICONTROL Identität annehmen als]**. Geben Sie `ksaner` als Benutzernamen ein, wählen Sie die bereitgestellte Option und klicken Sie auf **[!UICONTROL OK]**.
+1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Geben Sie `ksaner` als Benutzernamen ein, wählen Sie die bereitgestellte Option und klicken Sie auf **[!UICONTROL OK]**.
 1. Öffnen Sie eine We.Retail-Webseite unter **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bearbeiten Sie die Seite. Sie können `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` auch in einem Browser aufrufen, um die Seite zu bearbeiten.
 
    Klicken Sie oben links auf der Seite auf **[!UICONTROL Seitliches Bedienfeld ein/aus]**.
