@@ -4,7 +4,7 @@ description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfigurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2767'
 ht-degree: 53%
@@ -128,7 +128,7 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. Die Einstellung trägt zu einer erheblichen Reduzierung des Overheads bei, der für die Verarbeitung der Workflows benötigt wird, da die Workflows in diesem Fall nicht die normalen Tracking- und Archivierungsprozesse durchlaufen.
 
-1. Navigieren Sie zu `/miscadmin` der [!DNLEExperience Manager] -Instanz unter `https://[aem_server]:[port]/miscadmin`.
+1. Navigieren Sie zu `/miscadmin` der Experience [!DNLEManager] -Bereitstellung unter `https://[aem_server]:[port]/miscadmin`.
 
 1. Erweitern Sie **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL dam]**.
 
@@ -285,11 +285,11 @@ Führen Sie für alle Aspekte, die die für Kunden relevante Netzwerkleistung be
 * Testen Sie unter Verwendung eines Benchmark-Tools für Netzwerke.
 * Testen Sie mit dem Dispatcher.
 
-### [!DNL Experience Manager] Instanztest {#aem-instance-testing}
+### [!DNL Experience Manager] Bereitstellungstests {#aem-deployment-testing}
 
-To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] instance regularly. Führen Sie insbesondere die folgenden Aufgaben aus:
+To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] deployment regularly. Führen Sie insbesondere die folgenden Aufgaben aus:
 
-* Run load tests against the [!DNL Experience Manager] instance.
+* Führen Sie Lastentests für die [!DNL Experience Manager] Bereitstellung durch.
 * Überwachen Sie die Upload-Leistung und die Reaktionsgeschwindigkeit der Benutzeroberfläche.
 
 ## [!DNL Experience Manager Assets] Leistungs-Checkliste und Auswirkungen der Asset-Management-Aufgaben {#checklist}
