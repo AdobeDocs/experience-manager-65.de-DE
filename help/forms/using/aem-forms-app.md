@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+workflow-type: tm+mt
+source-wordcount: '2418'
+ht-degree: 77%
 
 ---
 
 
 # Introduction to AEM Forms app {#aem-forms-app}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die AEM Forms-App ermöglicht die Synchronisierung adaptiver Formulare sowie von Formularen auf Mobilgeräten und Formularsätzen auf Mobilgeräten basierend auf Ihrem Server. Sie können Workflows definieren, die [formularzentrierte Workflows auf OSGi ](/help/forms/using/aem-forms-workflow.md) oder [ Formular-Workflows auf JEE ](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application) sind. Angenommen, Sie leiten ein Bankgeschäft und nutzen AEM Forms für die Verwaltung von Kundenanträgen und - mitteilungen. Ihre Kunden füllen ein Formular aus und übermitteln es zur Prüfung. Wenn Sie das Formular auf Mobilgeräten aktivieren, können Ihre Kunden es in der AEM Forms-App ausfüllen. Sie können darüber hinaus den Arbeitsablauf für die Prüfung verwalten, indem Sie das Überprüfungsformular auf Mobilgeräten aktivieren. Ihr Außendienstmitarbeiter kann ein Mobilgerät zum Kundenstandort mitnehmen, die Details überprüfen und das Formular senden. Die AEM Forms-App wird mit dem AEM Forms-Server synchronisiert und ruft die Formulare ab, die für Mobilgeräte aktiviert wurden. Wenn die App offline ist, speichert sie die Daten lokal.
 
@@ -70,7 +73,7 @@ Weitere Informationen finden Sie unter [AEM Forms-App (vorher bekannt als Mobile
 
 Sie können Ihre App mit dem AEM Forms-Server synchronisieren und auf Ihrem Mobilgerät Formulare bearbeiten.
 
-Auf einem AEM Forms-Server können Sie ein Formular einem Startpunkt in einem Workbench-Vorgang und einer AEM Inbox-Anwendung zuordnen. Einer AEM Inbox-Anwendung kann ein adaptives Formular zugeordnet werden. Einem Startpunkt kann ein adaptives Formular, ein HTML5-Formular oder ein Formularsatz zugeordnet werden. Es ist möglich, einen Startpunkt als Aufgabe zu senden oder die Aufgabe als Entwurf zu speichern. Weitere Informationen zu den Unterschieden zwischen einer AEM Inbox-Anwendung und einem Startpunkt finden Sie unter [Aktionen und Funktionen formularzentrierter AEM-Workflows auf OSGi- und AEM Forms-JEE-Workflows](/help/forms/using/capabilities-osgi-jee-workflows.md).
+Auf einem AEM Forms-Server können Sie ein Formular einem Startpunkt in einem Workbench-Vorgang und einer AEM Inbox-Anwendung zuordnen. Einer AEM Inbox-Anwendung kann ein adaptives Formular zugeordnet werden. Einem Startpunkt kann ein adaptives Formular, ein HTML5-Formular oder ein Formularsatz zugeordnet werden. Es ist möglich, einen Startpunkt als Aufgabe zu senden oder die Aufgabe als Entwurf zu speichern. Weitere Informationen zu den Unterschieden zwischen einer AEM Inbox-Anwendung und einem Startpunkt finden Sie unter [Aktionen und Funktionen formularzentrierter AEM-Workflows auf OSGi- und AEM Forms-JEE-Workflows](capabilities-osgi-jee-workflows.md).
 
 Bei AEM Forms-Servern ohne AEM Forms-Arbeitsablauf werden Formulare, für die die Synchronisierung in der App aktiviert ist, in der AEM Forms-App wiedergegeben. Formulare sind auf der Registerkarte „Formulare“ der App verfügbar und können gesendet oder als Entwurf gespeichert werden. Adaptive Formulare und Formulare für Mobilgeräte werden in der App unterstützt.
 
@@ -90,7 +93,7 @@ Bei AEM Forms-Servern ohne AEM Forms-Arbeitsablauf werden Formulare, für die di
 
 Sie können Ihre App mit dem AEM Forms Workflow-Server synchronisieren und auf Ihrem Mobilgerät an Aufgaben und Formularen arbeiten.
 
-A task on the mobile device contains an adaptive form, HTML5 form, or a form set and can also contain attachments and [summary URL](/help/forms/using/getting-task-variables-summary-url.md). Standardmäßig werden die Ihnen zugewiesenen Aufgaben im Ordner **[!UICONTROL Tasks]** platziert. Beim Bearbeiten einer Aufgabe können Sie die Aufgabe ändern und eine Kopie des Entwurfs auf dem AEM Forms-Server speichern.
+A task on the mobile device contains an adaptive form, HTML5 form, or a form set and can also contain attachments and [summary URL](/help/forms/using/getting-task-variables-summary-url.md). Standardmäßig werden die Ihnen zugewiesenen Aufgaben im Ordner **[!UICONTROL Tasks]** platziert. Bei der Arbeit an einer Aufgabe können Sie die Aufgabe ändern und einen Entwurf der Aufgabe auf dem AEM Forms-Server speichern.
 
 Ein Formular auf einem Mobilgerät kann ein adaptives Formular oder ein Formular für ein Mobilgerät sein. Die für die Synchronisierung aktivierten Formulare in der Forms-App stehen im Ordner „Formulare“ zur Verfügung. Es ist möglich, Formulare zu synchronisieren, die auf dem AEM Forms-Server ohne AEM Form-Arbeitsablauf (AEM Forms on OSGi) aktiviert sind.
 
@@ -111,7 +114,7 @@ Sie können Formularen auf Ihrem Gerät die folgenden Anhänge hinzufügen
 
 * **Notizen**: Mit der Funktion &quot;Notizen&quot;können Sie ein Freihand-Scribble oder eine Textanmerkung in Ihr Formular einfügen. Weitere Informationen finden Sie unter [ Notizen hinzufügen](/help/forms/using/add-attachments.md#adding-a-note).
 
-* **Abbildung**: Die AEM Forms-App enthält eine Funktion, die die Kamerafunktion oder die Galerie Ihres Mobilgeräts verwendet. Mit dem Fotoanhang können Sie dem zugehörigen Formular ein Foto hinzufügen. Weitere Informationenfinden Sie unter [Hinzufügen eines Fotos](/help/forms/using/add-attachments.md#adding-a-photograph).
+* **Bild**: Die AEM Forms-App enthält eine Funktion, die die Kamerafunktion oder die Galerie Ihres Mobilgeräts verwendet. Mit dem Fotoanhang können Sie dem zugehörigen Formular ein Foto hinzufügen. Weitere Informationenfinden Sie unter [Hinzufügen eines Fotos](/help/forms/using/add-attachments.md#adding-a-photograph).
 
 ### Automatisch speichern {#autosave}
 
@@ -121,7 +124,7 @@ Weitere Informationen finden Sie unter [ Verwenden der automatischen Speicherung
 
 ## Unterschiede zwischen den Funktionen von AEM Inbox und AEM Forms-App {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Two of the prominent ways to launch a Forms-centric workflow are using [AEM Inbox](/help/forms/using/manage-applications-inbox.md) and AEM Forms app. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. AEM Inbox works only with [Forms-centric workflows](/help/forms/using/aem-forms-workflow.md) while the AEM Forms app works with both Forms-centric workflows as well as process management. For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](/help/forms/using/capabilities-osgi-jee-workflows.md).
+Two of the prominent ways to launch a Forms-centric workflow are using [AEM Inbox](/help/forms/using/manage-applications-inbox.md) and AEM Forms app. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. AEM Inbox works only with [Forms-centric workflows](/help/forms/using/aem-forms-workflow.md) while the AEM Forms app works with both Forms-centric workflows as well as process management. For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).
 
 ## Unterstützte Formulare {#supported-forms}
 
@@ -145,7 +148,7 @@ Mit Formularsätzen können mehrere zu einem Dienst oder Prozess gehörige Formu
 
 ## Funktionsweise der AEM Forms-App {#how-aem-forms-app-works}
 
-Die AEM Forms-App bietet eine mobile Lösung, mit der Außendienstmitarbeiter mit ihnen zugewiesenen Formularen arbeiten können. Die Anwendung speichert alle Daten vom Server zwischen und bietet einen effizienten Arbeitsablauf, da die gesamte Arbeit lokal gespeichert wird. Diese Daten werden über regelmäßige Synchronisierungsupdates an den Server gesendet.
+Die App &quot;AEM Forms&quot;bietet eine mobile Lösung für Außendienstmitarbeiter, mit denen sie an ihnen zugewiesenen Formularen arbeiten können. Die Anwendung speichert alle Daten vom Server zwischen und bietet einen effizienten Arbeitsablauf, da die gesamte Arbeit lokal gespeichert wird. Diese Daten werden über regelmäßige Synchronisierungsupdates an den Server gesendet.
 
 Die AEM Forms-App ist eine PhoneGap 5.0-basierte Anwendung, in der das Backbone-Modell effizient verwendet wird, um in den Modellen gespeicherte Daten über Ansichten darzustellen. Alle nativen Vorgänge werden durch PhoneGap-Plug-Ins ausgeführt.
 
@@ -155,7 +158,7 @@ Die AEM Forms-App ist eine PhoneGap 5.0-basierte Anwendung, in der das Backbone-
 >
 >Gilt nur, wenn Sie AEM Forms-App-Quellcode zum Erstellen der App verwenden.
 
-Die AEM Forms-App lässt sich ganz einfach an unternehmensspezifische Anforderungen anpassen. Der Quellcode für die Anwendung wird zusammen mit AEM Forms bereitgestellt. Sie können Änderungen am Quellcode vornehmen und Ihre eigene benutzerdefinierte Mobile Workspace-Lösung erstellen. Sie können die App auch mit Ihrem eigenen Unternehmensschlüssel signieren.
+Die AEM Forms-App lässt sich ganz einfach an die Bedürfnisse Ihres Unternehmens anpassen. Der Quellcode für die Anwendung wird zusammen mit AEM Forms bereitgestellt. Sie können Änderungen am Quellcode vornehmen und Ihre eigene benutzerdefinierte Mobile Workspace-Lösung erstellen. Sie können die App auch mit Ihrem eigenen Unternehmensschlüssel signieren.
 
 ### Anpassen {#customize}
 
@@ -163,9 +166,9 @@ Sie können Ihre App anpassen:
 
 **Branding**: Ändern Sie das App-Symbol, den App-Namen, Startbilder und Seiten in der AEM Forms-App. Außerdem können Sie Text ändern, um die App für eine bestimmte Region zu lokalisieren. Weitere Informationen zum Branding der AEM Forms-App finden Sie unter [Branding-Anpassung](/help/forms/using/branding-customization.md).
 
-**Thema**: Ändern Sie Stile wie Farben, Schriftarten und Abstände in der Benutzeroberfläche der AEM Forms-App. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/theme-customization.md).
+**Thema**: Ändern Sie Stile wie Farben, Schriftarten und Abstände in der Benutzeroberfläche der AEM Forms App. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/theme-customization.md).
 
-**Geste**: Ändern Sie Gesten wie das Wischen nach rechts und links in der Benutzeroberfläche der AEM Forms-App. Weitere Informationen finden Sie unter [Gestenanpassung](/help/forms/using/gesture-customization.md).
+**Geste**: Ändern Sie Gesten wie das Wischen nach rechts und links in der Benutzeroberfläche der AEM Forms App. Weitere Informationen finden Sie unter [Gestenanpassung](/help/forms/using/gesture-customization.md).
 
 Weitere Informationen zum Einrichten eines AEM Forms-App-Projekts zur Anpassung finden Sie unter:
 
@@ -176,7 +179,7 @@ Weitere Informationen zum Einrichten eines AEM Forms-App-Projekts zur Anpassung 
 
 ### Pakete erstellen und bereitstellen {#build-and-distribute}
 
-Der Quellcode für die AEM Forms-App kann aus der Datei &quot;adobe-lc-mobileworkspace-src.zip&quot;extrahiert werden, die als Teil des AEM Forms-App-Quellpakets auf Package Share verfügbar ist.
+Der Quellcode für die AEM Forms-App kann aus der Datei &quot;adobe-lc-mobileworkspace-src.zip&quot;extrahiert werden, die als Teil des AEM Forms-App-Quellpakets für Package Share verfügbar ist.
 
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
@@ -185,7 +188,7 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
    URL: `https://<server>:<port>/crx/packageshare`.
 
 1. Laden Sie das Quellpaket herunter. Wenn Sie das Paket herunterladen, wird es in Ihrem AEM Forms Package Manager hinzugefügt.
-1. Nach dem Herunterladen navigieren Sie zu: und `https://<server>:<port>/crx/packmgr/index.jsp`installieren `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. Nach dem Herunterladen navigieren Sie zu: `https://<server>:<port>/crx/packmgr/index.jsp`und installieren `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 1. Um das Paket herunterzuladen, öffnen Sie es `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser.
 
