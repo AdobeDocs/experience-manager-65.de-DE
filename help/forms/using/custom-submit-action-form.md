@@ -10,14 +10,17 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: a399b2cb2e0ae4f045f7e0fddf378fdcd80bb848
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 52%
 
 ---
 
 
 # Schreiben benutzerdefinierter Übermittlungsaktionen für adaptive Formulare{#writing-custom-submit-action-for-adaptive-forms}
 
-Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe, die für die Daten ausgeführt wird, die Sie mit einem adaptiven Formular senden. Adobe Experience Manager (AEM) includes [OOTB Submit actions](../../forms/using/configuring-submit-actions.md) that demonstrate custom tasks you can perform using the user-submitted data. Sie können beispielsweise Aufgaben wie das Senden von E-Mails oder das Speichern von Daten durchführen.
+Adaptive Formulare erfordern Übermittlungsaktionen, um benutzerdefinierte Daten zu verarbeiten. Eine Übermittlungsaktion bestimmt die Aufgabe der Daten, die Sie mit einem adaptiven Formular senden. Adobe Experience Manager (AEM) includes [OOTB Submit actions](../../forms/using/configuring-submit-actions.md) that demonstrate custom tasks you can perform using the user-submitted data. Sie können beispielsweise Aufgaben wie das Senden von E-Mails oder das Speichern von Daten durchführen.
 
 ## Workflow für eine Übermittlungsaktion {#workflow-for-a-submit-action}
 
@@ -51,7 +54,7 @@ The XML data is sent to the servlet using the **`jcr:data`** request parameter. 
 
 ### Aktionsfelder {#action-fields}
 
-A Submit action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. Diese ausgeblendeten Felder können Werte enthalten, die beim Verarbeiten der Formularübermittlung benötigt werden. Beim Senden des Formulars werden diese Feldwerte als Anforderungsparameter zurückgesendet, die die Übermittlungsaktion während der Übermittlungsverarbeitung verwenden kann. Die Eingabefelder werden als Aktionsfelder bezeichnet.
+A Submit action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/de/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. Diese ausgeblendeten Felder können Werte enthalten, die beim Verarbeiten der Formularübermittlung benötigt werden. Beim Senden des Formulars werden diese Feldwerte als Anforderungsparameter zurückgesendet, die die Übermittlungsaktion während der Übermittlungsverarbeitung verwenden kann. Die Eingabefelder werden als Aktionsfelder bezeichnet.
 
 For example, a Submit action that also captures the time taken to fill a form can add the hidden input fields `startTime` and `endTime`.
 
@@ -61,7 +64,7 @@ Ein Skript kann die Werte der Felder `startTime` und `endTime` bereitstellen, we
 
 Übermittlungsaktionen können auch die Dateianlagen verwenden, die Sie mit der Dateianlagenkomponente hochladen. Skripts für Übermittlungsaktionen können auf diese Dateien mit dem Sling [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html) zugreifen. The [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) method of the API helps identify whether the request parameter is a file or a form field. Sie können die Abfrageparameter in einer Übermittlungsaktion wiederholen, um die Dateianlagenparameter zu identifizieren.
 
-Der folgende Beispielcode identifiziert die Dateianlagen in der Abfrage. Next, it reads the data into the file using the [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Schließlich wird mit den Daten ein Dokumentobjekt erstellt und an eine Liste angehängt.
+Der folgende Beispielcode identifiziert die Dateianlagen in der Abfrage. Next, it reads the data into the file using the [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Schließlich wird mit den Daten ein Dokument-Objekt erstellt und an eine Liste angehängt.
 
 ```java
 RequestParameterMap requestParameterMap = slingRequest.getRequestParameterMap();
@@ -108,7 +111,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlung
 
 1. **Füllen Sie die erforderlichen Konfigurationsfelder aus.**
 
-   Fügen Sie die Konfiguration hinzu, die für die Store-Aktion erforderlich ist. Kopieren Sie den Knoten **cq:dialog** der Store-Aktion aus dem Ordner /libs/fd/af/components/guidesubmittype/store in den Ordner „action“ unter /apps/custom_submit_action/store_and_email.
+   Hinzufügen die Konfiguration, die für die Aktion &quot;Store&quot;erforderlich ist. Kopieren Sie den Knoten **cq:dialog** der Store-Aktion aus dem Ordner /libs/fd/af/components/guidesubmittype/store in den Ordner „action“ unter /apps/custom_submit_action/store_and_email.
 
    ![Screenshot zum Kopieren des Knotens „dialog“ in den Ordner „action“](assets/step2.png)
 
