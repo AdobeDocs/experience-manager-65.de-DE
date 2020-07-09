@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+source-git-commit: 0a55ed44cb7fe3320b2196df38fe8492ee03912d
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 59%
+source-wordcount: '586'
+ht-degree: 56%
 
 ---
 
@@ -69,6 +69,8 @@ So beheben Sie diesen Fehler:
 * (Nur JBoss 7) Wenn Sie ein Upgrade von einer früheren Version auf AEM 6.5 Forms durchführen und in der vorherigen Version Prozesse (.lca) vorhanden waren, die eine Kopie des standardmäßigen Sende- oder Standard-Renderprozesses erstellt und verwendet haben, können HTML5-Formulare, die solche Prozesse (.lca) verwenden, die erforderlichen Aktionen nicht ausführen. (CQ-4243928)
 * Wenn in einem adaptiven Formular ein Formulardatenmodell-Service vom Regel-Editor aufgerufen wird, um die Werte der Bildauswahlkomponente dynamisch zu aktualisieren, werden die Werte der Bildauswahlkomponente nicht aktualisiert (CQ-4254754)
 * AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/de-de/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/de-de/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind (CQ-4265668)
+
+* PDF Generator unterstützt keine intelligente kartenbasierte Authentifizierung.  Wenn ein Administrator die Gruppenrichtlinie `Interactive Logon: Require Smart card` auf einem Windows-Server aktiviert, werden alle vorhandenen PDF Generator-Benutzer ungültig.
 
 * Wenn ein adaptives Formular so konfiguriert ist, dass die Werte einer Komponente dynamisch aktualisiert werden, und auf die Veröffentlichungsinstanz, die das Formular hostet, über den Dispatcher zugegriffen wird, kann die Funktion zum dynamischen Aktualisieren von Feldwerten nicht mehr verwendet werden. Um das Problem zu lösen, öffnen Sie CRXDE in der Veröffentlichungsinstanz, navigieren Sie zu /libs/fd/af/runtime/clientlibs/guideChartReducer und erstellen Sie die unten aufgeführte Eigenschaft.
 
