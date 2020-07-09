@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 3%
 
 ---
 
@@ -49,13 +52,14 @@ Beachten Sie, dass diese Startseite vier Menüelemente enthält: `Assignments, S
 >Es ist möglich, anonymen Zugriff auf eine Aktivierungs-Site zu gewähren, ohne dass Site-Besucher sich selbst registrieren können.
 >Wenn eine Aktivierungsressource auf `show in catalog` `allow anonymous access`und festgelegt ist, können anonyme Site-Besucher Ansichten im Katalog ausführen.
 
+
 ### Anonymen Zugriff auf JCR verhindern {#prevent-anonymous-access-on-jcr}
 
 Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen Besuchern durch jcr-Inhalte und json zugänglich gemacht, obwohl der anonyme Zugriff **[!UICONTROL für den Site-Inhalt deaktiviert]** ist. Dieses Verhalten kann jedoch mithilfe von Sling-Beschränkungen als Behelfslösung gesteuert werden.
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer durch jcr-Inhalte und json zu schützen:
 
-1. Wechseln Sie in der AEM-Autoreninstanz zu https://&lt;Host>:&lt;Port>/editor.html/content/site/&lt;sitename>.html.
+1. Wechseln Sie in der AEM Author-Instanz zu https://&lt;Host>:&lt;Port>/editor.html/content/site/&lt;Site-Name>.html.
 
    >[!NOTE]
    >
@@ -63,14 +67,14 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
 1. Gehen Sie zu **[!UICONTROL Seiteneigenschaften]**.
 
-   ![page-properties-1](assets/page-properties-1.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Navigieren Sie zur Registerkarte **[!UICONTROL Erweitert]**.
 1. Enable **[!UICONTROL Authentication Requirement]**.
 
    ![site-authentication-1](assets/site-authentication-1.png)
 
-1. Hinzufügen den Pfad der Anmeldeseite. Beispiel: `/content/......./GetStarted`. 
+1. Hinzufügen den Pfad der Anmeldeseite. Beispiel: `/content/......./GetStarted`.
 1. Veröffentlichen Sie die Seite.
 
 ## Eingeschriebenes Mitglied {#enrolled-member}
@@ -92,7 +96,7 @@ Wenn sich das Mitglied das nächste Mal anmeldet, wird die durch das erste Menü
 
 Auf der Seite &quot;Zuweisungen&quot;werden dem Mitglied alle Lernpfade und Aktivierungsressourcen angezeigt, die ihm speziell zugewiesen wurden.
 
-Jede Zuweisung bietet grundlegende Informationen zu
+Jede Zuweisung bietet grundlegende Informationen zu:
 
 * Der Typ der Zuweisung
 * Ob es sich um eine neue Zuweisung handelt
@@ -206,7 +210,7 @@ Mit ein wenig Aktivität und Interaktion mit den Ressourcen bei der Veröffentli
 * Wählen Sie das `Report` Symbol für eine Zusammenfassung aller Ressourcen aus.
 * Wählen Sie eine Ressource und dann das `Report` Symbol für einen Bericht in dieser Ressource aus
 
-Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anzuzeigen, was bis zum Auftreten von Daten zwischen 1 und 12 Stunden dauern kann. Es ist jedoch bereits ein einfacher SCORM-Berichte verfügbar.
+Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anzuzeigen, die bis zu 12 Stunden dauern können. Es ist jedoch bereits ein einfacher SCORM-Berichte verfügbar.
 
 #### Bericht über die Ressourcen für Skifahrten {#ski-lessons-resource-report}
 
@@ -234,7 +238,7 @@ Für Zuweisungsberichte:
 
 * Autor
 * Anmelden mit Administratorrechten
-* Navigieren Sie zu **[!UICONTROL Communities > Berichte > Zuweisungsbericht]**
+* Navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Berichte]** > **[!UICONTROL Zuweisungsbericht]**
 * Wählen Sie eine **[!UICONTROL Site]** aus dem Pulldown-Menü aus (wählen Sie `Enablement Tutorial`)
 
 * Gruppe **[!UICONTROL auswählen]** (auswählen `Community Ski Class`)
@@ -247,9 +251,8 @@ Für Zuweisungsberichte:
 
 Für Berichte zu Ansichten:
 
-* Autor
-* Anmelden mit Administratorrechten
-* Navigieren Sie zum Bericht **[!UICONTROL Communities > Berichte > Ansichten]**
+* Melden Sie sich beim Autor mit Administratorrechten an
+* Navigieren Sie zum Bericht **[!UICONTROL Communities]** > **[!UICONTROL Berichte]** > **[!UICONTROL Ansichten]**
 * Wählen Sie eine **Site **aus dem Pulldown-Menü aus (wählen Sie`Enablement Tutorial`)
 
 * Content- **[!UICONTROL Typ]** auswählen (wählen Sie `all`)
