@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -115,34 +115,6 @@ Auf diese Weise können Sie Status und Aktionen verfolgen, z. B., zu welchen Sei
 Als Referenz können Sie sich den Code in der Geometrixx Outdoors-App ansehen. In der Geometrixx Outdoors-App werden alle Seitennavigationen mit der ADB.trackState()-Methode verfolgt. Weitere Informationen finden Sie im Quellcode unter /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 Indem Sie Ihren Quellcode mit diesen Methodenaufrufen instrumentieren, können Sie vollständige Metriken für Ihre Anwendung erfassen.
-
-### Testen der Analytics-Verfolgung mit Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-<!--NOTE TO WRITER: Bloodhound is no longer available.-->
-
-Optional können Sie vor der Bereitstellung für die Produktion das Adobe-Tool [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) zum Testen Ihrer Analytics-Konfiguration verwenden. Um Ihre Analytics-Konfiguration zu testen, müssen Sie Ihre Datei &quot;ADBMobileConfig.json&quot;so bearbeiten, dass sie auf den Server verweist, auf dem Bloodhound ausgeführt wird, und nicht auf den eigentlichen Analytics-Server. Um diese Änderung vorzunehmen, ändern Sie von Ihrem ADBMobileConfig.json den folgenden Eintrag.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Passend zu diesem Eintrag ändern:
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-Dadurch werden alle vom AMS-Plugin erfassten Daten an Bloodhound weitergeleitet, damit Sie die Ergebnisse Ansicht haben.
 
 #### Eigenschaften für die Verbindung mit AMS {#properties-for-connecting-to-ams}
 
