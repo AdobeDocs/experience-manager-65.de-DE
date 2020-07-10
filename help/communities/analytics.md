@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 5%
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 # Analytics Configuration for Communities - Funktionen {#analytics-configuration-for-communities-features}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen von Adobe Marketing Cloud.
 
@@ -103,14 +103,11 @@ Durch die Anmeldung bei [Adobe Experience Cloud](https://docs.adobe.com/content/
 
    * **`event1`** durch **`event7`** Aktivierung
 
-   * type **`Counter`**
+   * Typ **`Counter`**
 
       * not **`Counter (no subrelations)`**
    * Kann vorhandene Ereignis wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
 
-   <!--
-    NOTE TO WRITER: The following link was broken, so I replaced it. Check for accuracy https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html 
-    -->
 
 * [Videomanagement](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
@@ -200,7 +197,7 @@ For example, enter *communities*
 
 ### Dialogfeld &quot;Analytics-Einstellungen&quot; {#analytics-settings-dialog}
 
-Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der Konfiguration und zu einem neuen Dialogfeld für die Eingabe der Analytics-Einstellungen. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer eingeholt werden.
+Die erste Erstellung einer neuen Analytics-Konfiguration führt zur Anzeige der Konfiguration und zu einem neuen Dialogfeld für die Eingabe der Analytics-Einstellungen. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer erhalten wurden.
 
 ![chlimage_1-267](assets/chlimage_1-267.png)
 
@@ -533,12 +530,14 @@ Im Folgenden finden Sie ein Beispiel für Standardzuordnungen nach dem [Einstieg
 * *UGC-Komponententitel*: Wanderthemen
 * *login (authorizedId)*: `aaron.mcdonald@mailinator.com`
 * *SRP-Pfad zu UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-oder *der Pfad der Komponente, der folgen* soll: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
-*Pfad zum Inhalt* der Community-Site: `/content/sites/<site name>/en`
+oder 
+*Komponentenpfad*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
-* Analytics-Variablenzuordnung ändern {#modifying-analytics-variable-mapping}*`/content/sites/<site name>/en`
+* *Pfad zum Inhalt* der Community-Site: `/content/sites/<site name>/en`
 
-### Die Zuordnung von Analytics eVars und Ereignissen zu AEM-Variablen ist in der Framework-Konfiguration sichtbar, nachdem Analytics für eine Community-Site aktiviert wurde.{#modifying-analytics-variable-mapping}
+### Analytics-Variablenzuordnung ändern {#modifying-analytics-variable-mapping}
+
+Die Zuordnung von Analytics eVars und Ereignissen zu AEM-Variablen ist in der Framework-Konfiguration sichtbar, nachdem Analytics für eine Community-Site aktiviert wurde.
 
 Nachdem Analytics aktiviert wurde und bevor die Community-Site veröffentlicht wird, kann die Zuordnung im Framework geändert werden, indem die gewünschte Analytics-eVar oder das gewünschte Ereignis aus der linken Leiste gezogen und in die entsprechende Zeile in der Zuordnungstabelle eingefügt wird.
 
@@ -546,127 +545,126 @@ Um Duplikat-Zuordnungen zu vermeiden, müssen Sie die ersetzte Analytics-eVar od
 
 Wenn Communities-eVars und -Ereignis Zuordnungen überschreiben, die bereits in der Report Suite vorhanden waren, weisen Sie zur Vermeidung von Datenverlusten die AEM-Variablen für Communities-Funktionen anderen Analytics-eVars oder -Ereignissen zu und stellen Sie die ursprünglichen Zuordnungen wieder her.
 
-[!CAUTION]
-
->Es ist wichtig zu bleiben, bevor die Community-Site mit aktiviertem Analytics [veröffentlicht](#publishing-the-community-site) wird, da sonst das Risiko des Datenverlusts besteht.
+>[!CAUTION]
 >
->Beispiel Schritt 1: Ziehen von Analytics evar14 in die Zuordnungstabelle {#example-step-dragging-analytics-evar-into-mapping-table}](#publishing-the-community-site)
+>Es ist wichtig zu bleiben, bevor die Community-Site mit aktiviertem Analytics [veröffentlicht](#publishing-the-community-site) wird, da sonst das Risiko des Datenverlusts besteht.
 
-#### ![chlimage_1-275](assets/chlimage_1-275.png)
+#### Beispiel Schritt 1: Ziehen von Analytics evar14 in die Zuordnungstabelle {#example-step-dragging-analytics-evar-into-mapping-table}
 
-Beispiel Schritt 2: Auswahl von &quot;x&quot; zum Entfernen der ersetzten evar11 {#example-step-selecting-x-to-remove-replaced-evar}](assets/chlimage_1-275.png)
+![chlimage_1-275](assets/chlimage_1-275.png)
 
-#### ![chlimage_1-276](assets/chlimage_1-276.png)
+#### Beispiel Schritt 2: Auswahl von &quot;x&quot; zum Entfernen der ersetzten evar11 {#example-step-selecting-x-to-remove-replaced-evar}
 
-Beispiel Schritt 3: AEM var eventData.siteId wurde der Analytics evar14 zugeordnet {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}](assets/chlimage_1-276.png)
+![chlimage_1-276](assets/chlimage_1-276.png)
 
-#### ![chlimage_1-277](assets/chlimage_1-277.png)
+#### Beispiel Schritt 3: AEM var eventData.siteId wurde der Analytics evar14 zugeordnet {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
-Veröffentlichen der Community-Site {#publishing-the-community-site}](assets/chlimage_1-277.png)
+![chlimage_1-277](assets/chlimage_1-277.png)
 
-## Analytics zu AEM-Variablenzuordnung überprüfen {#verify-analytics-to-aem-variable-mapping}
+## Veröffentlichen der Community-Site {#publishing-the-community-site}
 
-### Es ist sinnvoll, die Variablenzuordnung zu überprüfen, bevor die Community-Site veröffentlicht wird, auf der auch der Analytics Cloud-Dienst und das Framework veröffentlicht werden.{#verify-analytics-to-aem-variable-mapping}
+### Analytics zu AEM-Variablenzuordnung überprüfen {#verify-analytics-to-aem-variable-mapping}
+
+Es ist sinnvoll, die Variablenzuordnung zu überprüfen, bevor die Community-Site veröffentlicht wird, auf der auch der Analytics Cloud-Dienst und das Framework veröffentlicht werden.
 
 Siehe Abschnitte:
 
-[Analytics zu AEM-Variablen zugeordnet](#mapped-analytics-to-aem-variables)
-
+* [Analytics zu AEM-Variablen zugeordnet](#mapped-analytics-to-aem-variables)
 * [Analytics-Variablenzuordnung ändern](#modifying-analytics-variable-mapping)
-* [!CAUTION]](#modifying-analytics-variable-mapping)
 
+>[!CAUTION]
+>
 >**Wenn Sie eine vorhandene Report Suite verwenden, die bereits Variablen in**
 >
->**`evar1`** bis **`evar11`****
->
->* **`event1`** bis **`event7`**
+>* **`evar1`** bis **`evar11`**
    >
    >
-* **Bevor die Community-Site veröffentlicht wird,** müssen Sie die bereits vorhandene Zuordnung wiederherstellen und die AEM-Variablen für Communities, die automatisch zugeordnet wurden (als Analytics für die Community-Site aktiviert wurde), an andere Analytics-Variablen verschieben. Diese Neuzuordnung sollte für alle Communities-Komponenten einheitlich sein.**`event7`**
+* **`event1`** bis **`event7`**
 >
 >
-**Andernfalls kann es zu nicht wiederherstellbaren Datenverlusten kommen.**
+**Bevor die Community-Site veröffentlicht wird,** müssen Sie die bereits vorhandene Zuordnung wiederherstellen und die AEM-Variablen für Communities, die automatisch zugeordnet wurden (als Analytics für die Community-Site aktiviert wurde), an andere Analytics-Variablen verschieben. Diese Neuzuordnung sollte für alle Communities-Komponenten einheitlich sein.
 >
->Primär Publisher {#primary-publisher}
+>Andernfalls kann es zu nicht wiederherstellbaren Datenverlusten kommen.
 
-### Wenn es sich bei der gewählten Bereitstellung um eine [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm)handelt, muss eine AEM-Veröffentlichungsinstanz als primärer Herausgeber für die Abfrage von Adobe Analytics für Berichtsdaten identifiziert werden, die in [SRP](/help/communities/working-with-srp.md)geschrieben werden sollen.
+### Primär Publisher {#primary-publisher}
 
-Standardmäßig identifiziert die `AEM Communities Publisher Configuration` OSGi-Konfiguration die Veröffentlichungsinstanz als primären Herausgeber, sodass sich alle Instanzen im Veröffentlichungsmodus in einer Veröffentlichungsfarm selbst als Primär identifizieren.](/help/communities/topologies.md#tarmk-publish-farm)[](/help/communities/working-with-srp.md)
+Wenn es sich bei der gewählten Bereitstellung um eine [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm)handelt, muss eine AEM-Veröffentlichungsinstanz als primärer Herausgeber für die Abfrage von Adobe Analytics für Berichtsdaten identifiziert werden, die in [SRP](/help/communities/working-with-srp.md)geschrieben werden sollen.
+
+Standardmäßig identifiziert die `AEM Communities Publisher Configuration` OSGi-Konfiguration die Veröffentlichungsinstanz als primären Herausgeber, sodass sich alle Instanzen im Veröffentlichungsmodus in einer Veröffentlichungsfarm selbst als Primär identifizieren.
 
 Daher müssen Sie die Konfiguration in allen sekundären Instanzen im Veröffentlichungsmodus bearbeiten, um das Kontrollkästchen **Primär Publisher** deaktivieren zu können.
 
 Spezifische Anweisungen finden Sie im Abschnitt zum primären Herausgeber unter [Bereitstellen von Communities](/help/communities/deploy-communities.md#primary-publisher).
 
-[!CAUTION]](/help/communities/deploy-communities.md#primary-publisher)
-
->[!CAUTION]Es ist wichtig, dass der primäre Herausgeber so konfiguriert ist, dass keine Abfrage von mehreren Instanzen im Veröffentlichungsmodus durchgeführt wird.
+>[!CAUTION]
 >
->Crypto-Schlüssel replizieren {#replicate-the-crypto-key}
+>Es ist wichtig, dass der primäre Herausgeber so konfiguriert ist, dass keine Abfrage von mehreren Instanzen im Veröffentlichungsmodus durchgeführt wird.
 
-### Die Adobe Analytics-Anmeldeinformationen werden verschlüsselt. Um die Replizierung oder Übertragung verschlüsselter Analysedaten zwischen Autoren und Herausgebern zu erleichtern, müssen alle AEM-Instanzen denselben primären Verschlüsselungsschlüssel verwenden.{#replicate-the-crypto-key}
+### Crypto-Schlüssel replizieren {#replicate-the-crypto-key}
+
+Die Adobe Analytics-Anmeldeinformationen werden verschlüsselt. Um die Replizierung oder Übertragung verschlüsselter Analysedaten zwischen Autoren und Herausgebern zu erleichtern, müssen alle AEM-Instanzen denselben primären Verschlüsselungsschlüssel verwenden.
 
 Befolgen Sie dazu die Anweisungen unter Crypto-Schlüssel [replizieren](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
-Veröffentlichen der Community-Site und des Analytics-Cloud Service {#publish-community-site-and-analytics-cloud-service}](/help/communities/deploy-communities.md#replicate-the-crypto-key)
+### Veröffentlichen der Community-Site und des Analytics-Cloud Service {#publish-community-site-and-analytics-cloud-service}
 
-### Sobald der Analytics Cloud-Dienst für eine Community-Site aktiviert wurde und die [Zuordnung von Analytics zu AEM-Variablen erforderlichenfalls angepasst](#mapped-analytics-to-aem-variables)wurde, muss die Konfiguration der Veröffentlichungskonfiguration repliziert werden, indem die Community-Site [veröffentlicht](/help/communities/sites-console.md#publishing-the-site)(erneut)wird.
+Sobald der Analytics Cloud-Dienst für eine Community-Site aktiviert wurde und die [Zuordnung von Analytics zu AEM-Variablen erforderlichenfalls angepasst](#mapped-analytics-to-aem-variables)wurde, muss die Konfiguration der Veröffentlichungskonfiguration repliziert werden, indem die Community-Site [veröffentlicht](/help/communities/sites-console.md#publishing-the-site)(erneut)wird.
 
-Berichte von Analytics abrufen {#obtaining-reports-from-analytics}](#mapped-analytics-to-aem-variables)[](/help/communities/sites-console.md#publishing-the-site)
+## Berichte von Analytics abrufen {#obtaining-reports-from-analytics}
 
-## Berichtsverwaltung {#report-management}
+### Berichtsverwaltung {#report-management}
 
-### Die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)des Autors und des primären Herausgebers `AEM Communities Analytics Report Management`wird zur Abfrage von Analytics verwendet.
+Die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)des Autors und des primären Herausgebers `AEM Communities Analytics Report Management`wird zur Abfrage von Analytics verwendet.
 
-Beim Autor werden die Abfragen für Echtzeitberichte verwendet.[](/help/sites-deploying/configuring-osgi.md)`AEM Communities Analytics Report Management`
+Beim Autor werden die Abfragen für Echtzeitberichte verwendet.
 
 Beim primären Herausgeber werden die Abfragen verwendet, um Informationen zur Vorbereitung des Analytics-Datenimports des Berichts bereitzustellen.
 
 Das Zeitintervall der Abfrage ist standardmäßig auf 10 Sekunden eingestellt.
 
-Report Importer {#report-importer}
+### Report Importer {#report-importer}
 
-### Sobald eine Analytics-aktivierte Community-Site veröffentlicht wurde, kann die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)des primären Herausgebers konfiguriert werden, `AEM Communities Analytics Report Importer`um das Standard-Abfrageintervall für die Konfigurationen festzulegen, die in CRXDE nicht einzeln konfiguriert sind.
+Sobald eine Analytics-aktivierte Community-Site veröffentlicht wurde, kann die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)des primären Herausgebers konfiguriert werden, `AEM Communities Analytics Report Importer`um das Standard-Abfrageintervall für die Konfigurationen festzulegen, die in CRXDE nicht einzeln konfiguriert sind.
 
-Das Abfrageintervall steuert die Häufigkeit von Anfragen an Adobe Analytics, die in [SRP](/help/communities/working-with-srp.md)abgerufen und gespeichert werden sollen.`AEM Communities Analytics Report Importer`
+Das Abfrageintervall steuert die Häufigkeit von Anfragen an Adobe Analytics, die in [SRP](/help/communities/working-with-srp.md)abgerufen und gespeichert werden sollen.
 
-Wenn die Daten als &quot;Big Data&quot;kategorisiert werden können, kann eine häufigere Abfrage zu einer hohen Belastung der Community-Site führen.[](/help/communities/working-with-srp.md)
+Wenn die Daten als &quot;Big Data&quot;kategorisiert werden können, kann eine häufigere Abfrage zu einer hohen Belastung der Community-Site führen.
 
 Das **Importintervall** für die Standardabfrage ist auf 12 Stunden eingestellt.
 
 ![chlimage_1-278](assets/chlimage_1-278.png)
 
-Komponentenberichtsanpassung {#component-report-customization}](assets/chlimage_1-278.png)
+### Komponentenberichtsanpassung {#component-report-customization}
 
-### Zur Anpassung der zu verfolgenden Metriken werden derzeit Knoten im Repository erstellt, die Zeiträume definieren, für die ein Bericht zu dieser Metrik erstellt werden soll.{#component-report-customization}
+Zur Anpassung der zu verfolgenden Metriken werden derzeit Knoten im Repository erstellt, die Zeiträume definieren, für die ein Bericht zu dieser Metrik erstellt werden soll.
 
 Das Forumthema ist derzeit das einzige Beispiel für diese Anpassung:
 
-Melden Sie sich beim primären Herausgeber mit Administratorrechten an.
+* Melden Sie sich beim primären Herausgeber mit Administratorrechten an.
+* Navigate to [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). For example, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
-* Navigate to [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). For example, [https://localhost:4503/crx/de[#$tu263].
-* 
+* Navigieren Sie unter dem Knoten jcr:content im Sprachstamm (z. B. `/content/sites/engage/en/jcr:content),`zu der für Analytics Berichte konfigurierten Komponente).
+Beispiel: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
-* Beachten Sie die erstellten Zeiträume:`/content/sites/engage/en/jcr:content),`**`analytics/reportConfigs/social_forum_components_hbs_topic`**
+* Beachten Sie die erstellten Zeiträume:
 
-* `last30Days`
-
+   * `last30Days`
    * `last90Days`
    * `thisYear`
-   * Beachten Sie die `total`Node.
 
-* Das Ändern der **`interval`** Eigenschaft setzt das Report Importer-Intervall außer Kraft.
+* Beachten Sie die `total`Node.
 
-   * Der Wert wird in Sekunden und auf 4 Stunden (14400 Sekunden) festgelegt.**`interval`**
-   * ![chlimage_1-279](assets/chlimage_1-279.png)
+   * Das Ändern der **`interval`** Eigenschaft setzt das Report Importer-Intervall außer Kraft.
+   * Der Wert wird in Sekunden und auf 4 Stunden (14400 Sekunden) festgelegt.
 
-Benutzerdaten in Analytics verwalten {#manage-user-data-in-analytics}](assets/chlimage_1-279.png)
+![chlimage_1-279](assets/chlimage_1-279.png)
 
-## Adobe Analytics stellt APIs bereit, mit denen Sie auf Benutzerdaten zugreifen, sie exportieren und löschen können. Weitere Informationen finden Sie unter Zugriff [senden und Anforderungen[#$tu275]löschen.
+## Benutzerdaten in Analytics verwalten {#manage-user-data-in-analytics}
 
+Adobe Analytics stellt APIs bereit, mit denen Sie auf Benutzerdaten zugreifen, sie exportieren und löschen können. Weitere Informationen finden Sie unter Zugriff [senden und Anforderungen](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)löschen.
 
+## Ressourcen {#resources}
 
-## Adobe Experience Cloud: [Hilfe und Referenz zu Analytics[#$tu278]
-
-* 
-* AEM: [Analytics with External Providers](/help/sites-administering/external-providers.md)
+* Adobe Experience Cloud: [Hilfe und Referenz zu Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+* AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics with External Providers](/help/sites-administering/external-providers.md)
