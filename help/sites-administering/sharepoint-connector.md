@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 71%
@@ -74,7 +74,7 @@ Der Connector unterstützt Folgendes:
 
 * AEM-Versionen:
 
-   * AEM 6.5, 6.4, 6.3
+   * AEM 6.4, 6.3
 
 * Microsoft SharePoint-Versionen:
 
@@ -135,7 +135,7 @@ Der Connector kann auch für mehrere Workspaces konfiguriert werden. In diesem F
 
 Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Zulassungsliste des Bundles &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-So führen Sie das zulassungsliste von Bundles in AEM durch:
+So führen Sie die folgenden Zulassungslisten durch:
 
 1. Navigieren Sie zur OSGi Management Console: http://localhost:4502/system/console/configMgr.
 1. Suchen Sie nach dem Dienst &quot;Apache Sling Login Admin Whitelist&quot;.
