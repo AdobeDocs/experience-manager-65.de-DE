@@ -4,10 +4,10 @@ description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 S
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
-source-wordcount: '4512'
-ht-degree: 7%
+source-wordcount: '4529'
+ht-degree: 8%
 
 ---
 
@@ -95,7 +95,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Funktionen (oder Aktionszweck) von Insight-Symbolen (für die Verwendung, Impressionen und Klicks) in der [!UICONTROL Insight-Ansicht] werden jetzt von Bildschirmlesehilfen korrekt angekündigt (NPR-33513).
 
-* Schreibgeschützte Formularfelder (z. B. deaktivierte Felder auf der Registerkarte [!UICONTROL &quot;] Einfach&quot;von Asset- [!UICONTROL Eigenschaften]) können jetzt über die Tastatur fokussiert werden (NPR-33493, CQ-4273031).
+* Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard (NPR-33493, CQ-4273031).
 
 * Bezeichnungen in verschiedenen Eingabefeldern sind nun dauerhafte Bezeichnungen (also barrierefrei) und nicht nur Platzhalterbeschriftungen, die bei der Texteingabe verschwanden (NPR-33475).
 
@@ -111,7 +111,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Die erweiterten und reduzierten Zustände des Dialogfelds [!UICONTROL Tags] über Asset- [!UICONTROL Eigenschaften] und linke Schienennavigation (in der Assets-Benutzeroberfläche) werden jetzt von Bildschirmlesehilfen korrekt angekündigt (NPR-33396).
 
-* Die Titel aller durchsuchten Seiten auf [!DNL Adobe Experience Manager] Assets sind jetzt eindeutig (NPR-33343).
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique (NPR-33343).
 
 * Beim Navigieren in der Baumstruktur werden jetzt verschiedene Elemente der Baumstruktur-Ansicht-Steuerung von Bildschirmlesehilfen korrekt angekündigt (NPR-33304).
 
@@ -127,7 +127,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Die Informationen, die die Zeilen in der Tabelle &quot;Ansicht&quot;auswählen können, werden jetzt Bildschirmlesehilfen-Benutzern mitgeteilt, wenn der Tastaturfokus auf sie gelegt wird. Wenn ein Zeiger mit der Maus auf die Zeilen zeigt, geben die Bildschirmlesehilfen die Informationen an (NPR-33234).
 
-* Die Optionen (mit [!UICONTROL x]) zum Entfernen der einzelnen markierten Tags unter dem Feld &quot; [!UICONTROL Tags] &quot;auf der Registerkarte &quot; [!UICONTROL Einfach] &quot;der [!UICONTROL Eigenschaften] stehen jetzt Sprachausgabeprogrammen zur Verfügung (NPR-33206).
+* Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers (NPR-33206).
 
 * Die Kalenderdatumsauswahl kann jetzt mithilfe der Tastatur nach Bildschirmlesehilfen-Benutzern und sichtbaren Keyboard-Benutzern fokussiert werden (NPR-33200).
 
@@ -348,7 +348,7 @@ Führen Sie die folgenden Schritte aus, um das Service Pack auf einer vorhandene
 
 >[!NOTE]
 >
->Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, auf die Stabilisierung von Fehlerprotokollen zu warten, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Updater-Bundles, bevor Sie sicherstellen, dass die Installation erfolgreich ist. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
+>Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, dass Sie auf die Stabilisierung von Fehlerprotokollen warten, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Updater-Bundles, bevor Sie sicherstellen, dass die Installation erfolgreich ist. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Automatische Installation**
 
@@ -414,7 +414,8 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Der Bildschirm &quot;Opt-In **[!UICONTROL &quot;für]** AEM cloud services wird nicht mehr unterstützt. Die AEM- und Target-Integration wurde in AEM 6.5 aktualisiert, um die Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu geführt, dass der Opt-In-Assistent funktional irrelevant geworden ist. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die entsprechenden AEM cloud services. |
+| Integrationen | Der Bildschirm &quot;Opt-In **[!UICONTROL &quot;für]** AEM cloud services wird nicht mehr unterstützt. Die AEM- und Zielgruppe-Integration wurde in AEM 6.5 aktualisiert, um die Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu beigetragen, dass der Assistent für die Teilnahme an einer Teilnahme funktional irrelevant geworden ist. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die entsprechenden AEM cloud services. |
+| Connectoren | Adobe JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013 werden für AEM 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
 
