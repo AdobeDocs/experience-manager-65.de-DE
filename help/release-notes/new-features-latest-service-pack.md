@@ -4,19 +4,19 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 7%
+source-wordcount: '1873'
+ht-degree: 8%
 
 ---
 
 
 # Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 5 {#aem-whats-new-service-pack-5}
 
-Adobe Experience Manager 6.5 Service Packs bieten in vierteljährlichen Abständen neue Funktionen, kundenspezifische Verbesserungen sowie Verbesserungen in den Bereichen Leistung, Stabilität und Sicherheit. Die vierteljährliche Verfügbarkeit erleichtert den Zugriff auf neue Funktionen und Innovationen.
+Adobe Experience Manager 6.5 Service Packs bieten in vierteljährlichen Abständen neue Funktionen, kundenspezifische Verbesserungen sowie Performance-, Stabilitäts- und Sicherheitsverbesserungen. Die vierteljährliche Verfügbarkeit erleichtert den Zugriff auf neue Funktionen und Innovationen.
 
-In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wichtigsten Funktionen der vorherigen 6.5 Service Packs](#key-features-previous-service-packs)und einige der [wichtigsten Versionen seit Experience Manager 6.5.4.0](#key-releases-since-last-sp) vorgestellt.
+In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wichtigsten Funktionen der vorherigen 6.5 Service Packs](#key-features-previous-service-packs)und einige der [wichtigsten Versionen seit Experience Manager 6.5.4.0](#key-releases-since-last-sp) erläutert.
 
 ## Adobe Experience Manager-Sites {#aem-sites}
 
@@ -76,21 +76,21 @@ Die Unterstützung für 3D-Bilder in [!DNL Dynamic Media] ermöglicht es Kunden,
 
 ## Adobe Experience Manager Forms {#aem-forms}
 
-### Anpassen der Inbox-Spalten in Adobe Experience Manager {#customize-aem-inbox-columns}
+### Anpassen der Adobe Experience Manager-Posteingangsspalten {#customize-aem-inbox-columns}
 
-Sie können einen [!DNL Experience Manager] Posteingang anpassen, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzuzeigen. Mitglieder `administrators` oder `workflow-administrators` Gruppen können die Spalten anpassen.
+Sie können einen [!DNL Experience Manager] Posteingang anpassen, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzuzeigen. Mitglieder `administrators` oder `workflow-administrators` Gruppen können die Spalten anpassen. Weitere Informationen finden Sie unter [Admin-Steuerung](../sites-authoring/inbox.md#inbox-admin-control).
 
-![Anpassen der Inbox-Spalten in Experience Manager](assets/customize-columns.gif)
+![Anpassen der Experience Manager-Posteingangsspalten](assets/customize-columns.gif)
 
 ### Interaktive Kommunikation als Entwurf speichern {#save-as-draft}
 
-Sie können die Agent-Benutzeroberfläche verwenden, um einen oder mehrere Entwürfe für jede interaktive Kommunikation zu speichern und den Entwurf später abzurufen, um weiter daran zu arbeiten. Sie können für jeden Entwurf einen anderen Namen angeben, um ihn zu identifizieren.
+Sie können die Agent-Benutzeroberfläche verwenden, um einen oder mehrere Entwürfe für jede interaktive Kommunikation zu speichern und den Entwurf später abzurufen, um weiter daran zu arbeiten. Sie können für jeden Entwurf einen anderen Namen angeben, um ihn zu identifizieren. Weitere Informationen finden Sie unter Interaktive Kommunikation als Entwurf [speichern](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Als Entwurf speichern](assets/save-as-draft.gif)
 
 ### [!DNL Oracle WebLogic] Anwendungsserverunterstützung {#weblogic-support}
 
-Adobe Experience Manager Forms bietet jetzt Unterstützung für [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms on JEE. Sie können von einer früheren Version aktualisieren oder einen neuen Experience Manager 6.5 Forms on JEE-Server auf [!DNL Oracle WebLogic] 12.2.1.4 und höher einrichten. Später entspricht den Änderungen der kleineren Version, wobei x in 12.2.1.x durch eine Versionsnummer ersetzt wird.
+Adobe Experience Manager Forms unterstützt jetzt [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms on JEE. Sie können von einer früheren Version aktualisieren oder einen neuen Experience Manager 6.5 Forms on JEE-Server auf [!DNL Oracle WebLogic] 12.2.1.4 und höher einrichten. Später entspricht den Änderungen der kleineren Version, wobei x in 12.2.1.x durch eine Versionsnummer ersetzt wird.
 
 ### Verbesserungen der Zugänglichkeit {#accessibility-improvements}
 
@@ -104,7 +104,7 @@ Adobe Experience Manager Forms umfasst die folgenden Verbesserungen der Barriere
 
 ### X-509-Zertifikatbasierte Authentifizierung für SOAP-basierte Webdienste im Formulardatenmodell {#x509-based-authentication-soap}
 
-Das Formulardatenmodell unterstützt jetzt die zertifikatbasierte X-509-Authentifizierung bei Verwendung von SOAP-Webdiensten als Datenquelle.
+Das Formulardatenmodell unterstützt jetzt die zertifikatbasierte X-509-Authentifizierung bei Verwendung von SOAP-Webdiensten als Datenquelle. Weitere Informationen finden Sie unter SOAP-Webdienste [konfigurieren](../forms/using/configure-data-sources.md#configure-soap-web-services).
 
 ### Weitere wichtige Verbesserungen {#other-improvements}
 
@@ -112,7 +112,7 @@ Das Formulardatenmodell unterstützt jetzt die zertifikatbasierte X-509-Authenti
 
 * Unterstützung für [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
-## Wichtige Funktionen in früheren Experience Manager 6.5-Service-Paketen {#key-features-previous-service-packs}
+## Wichtige Funktionen in vorherigen Experience Manager 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### Experience Manager Sites {#aem-sites-previous-service-packs}
 
@@ -153,15 +153,15 @@ Beispiel: `On Time (MM-DD-YYYY HH:mm)`. Hier ist MM Monat im zweistelligen Forma
 
 #### Visuelle Suche nach [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
-[!DNL Assets] Benutzer können visuell ähnliche Bilder suchen. Experience Manager zeigt die Bilder mit intelligenten Tags aus dem DAM-Repository an, die einem vom Benutzer ausgewählten Bild ähnlich sind. See [Visual search](../assets/search-assets.md).
+[!DNL Assets] Benutzer können visuell ähnliche Bilder suchen. Experience Manager zeigt die intelligenten getaggten Bilder aus dem DAM-Repository an, die einem vom Benutzer ausgewählten Bild ähnlich sind. See [Visual search](../assets/search-assets.md).
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
-#### Smart Imaging für dynamische Medien {#smart-imaging}
+#### Smart Imaging für Dynamic Media {#smart-imaging}
 
 Die intelligente Bildbearbeitung nutzt die einzigartigen Ansichtsmerkmale der einzelnen Benutzer, um automatisch die richtigen Bilder bereitzustellen, die für ihr Erlebnis optimiert wurden, was zu einer besseren Leistung und Interaktion führt. Die intelligente Bildbearbeitung arbeitet mit bestehenden Bildvorgaben und reduziert im letzten Moment abhängig vom Browser oder der Geschwindigkeit der Netzverbindung die Größe der Bilddatei intelligent noch weiter. Siehe [Smart Imaging](../assets/imaging-faq.md).
 
-#### Smart-Zuschneiden in Video-Profilen für dynamische Medien (6.5.3.0) {#smart-crop-video}
+#### Intelligente Beschneidung in Video-Profilen für Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 Smartes Zuschneiden für Video – eine optionale Funktion, die in Videoprofilen verfügbar ist – ist ein Tool, das die Leistung von künstlicher Intelligenz in Adobe Sensei nutzt, um den Fokuspunkt in adaptiven oder progressiven Videos, die Sie hochgeladen haben, unabhängig von der Größe automatisch zu erkennen und zu beschneiden. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
@@ -179,7 +179,7 @@ Sie können jetzt die Anzahl der Spalten für ein Bedienfeld in adaptiven Formul
 
 ![Mehrspaltiges Layout](assets/multi-column-layout.gif)
 
-#### Experience Manager-Inbox-Anpassungen (6.5.4.0) {#aem-inbox}
+#### Experience Manager-Posteingangsanpassungen (6.5.4.0) {#aem-inbox}
 
 Die neue Option &quot;Admin-Steuerung&quot;ermöglicht den Administratoren Folgendes:
 
@@ -201,7 +201,7 @@ Experience Manager Forms umfasst die folgenden Verbesserungen der Barrierefreihe
 
 * Jede Seite eines adaptiven Formulars enthält jetzt einen Titel und eine Hauptmarkenbeschriftung.
 
-#### Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Experience Manager Forms-Benutzers (6.5.3.0) {#share-request-access}
+#### Freigeben und Anfordern von Inbox-Elementen eines Experience Manager Forms-Benutzers (6.5.3.0) {#share-request-access}
 
 Sie können Ihre Inbox-Elemente für andere Benutzer freigeben. Sobald ein anderer Benutzer Zugriff auf Ihre Posteingangselemente erhält, kann der Benutzer für freigegebene Elemente entsprechende Aktionen anfordern. Ebenso können Sie von anderen Benutzern den Zugriff auf Posteingangselemente anfordern. Siehe [Freigeben und Anfordern des Zugriffs auf Posteingangselemente eines Benutzers](../forms/using/configure-shared-queues-osgi.md).
 
@@ -214,7 +214,7 @@ Sie haben die Möglichkeit, ein Anfangs- und Enddatum sowie eine Anfangs- und En
 
 Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus einer Vorlage zu erstellen. Die Vorlage ist eine interaktive Kommunikation ohne Daten. Die Stapel-API kombiniert Daten mit einer Vorlage, um eine interaktive Kommunikation zu erzeugen. Die API ist bei der Massenproduktion interaktiver Kommunikation nützlich. Zum Beispiel Telefonrechnungen, Kreditkartenauszüge für mehrere Kunden. Siehe [Generieren mehrerer interaktiver Kommunikation mit der Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Wichtige Veröffentlichungen seit Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
+## Wichtigste Veröffentlichungen seit Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
 
 Zwischen dem 05. März 2020 und dem 04. Juni 2020 hat Adobe zusätzlich zu den Service Packs und kumulativen Fix Packs die folgenden Produkte veröffentlicht:
 
@@ -222,7 +222,7 @@ Zwischen dem 05. März 2020 und dem 04. Juni 2020 hat Adobe zusätzlich zu den S
 
 * [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)und [2020.5.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
 
-* [Experience Manager Desktop-App 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+* [Experience Manager-Desktop-App 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 * [Experience Manager-Bildschirme: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
@@ -230,5 +230,5 @@ Zwischen dem 05. März 2020 und dem 04. Juni 2020 hat Adobe zusätzlich zu den S
 >
 >* [Dokumentation zu Adobe Experience Manager 6.5](../user-guide/home.md)
 >* [Allgemeine Versionshinweise zu Adobe Experience Manager 6.5](release-notes.md)
->* [Versionshinweise zu Service Pack für Adobe Experience Manager 6.5](sp-release-notes.md)
+>* [Versionshinweise zu Service Packs für Adobe Experience Manager 6.5](sp-release-notes.md)
 
