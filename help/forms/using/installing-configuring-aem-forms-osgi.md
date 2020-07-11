@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 87%
+source-wordcount: '1817'
+ht-degree: 81%
 
 ---
 
@@ -111,15 +111,16 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält AEM bildet Datenerfassung und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
 
-1. Melden Sie sich beim [AEM-Server](https://localhost:4502) als Administrator an und öffnen Sie [Package Share](https://localhost:4502/crx/packageshare). Zum Anmelden bei der Paketfreigabe benötigen Sie eine Adobe ID.
-1. Suchen Sie in [AEM Package Share](https://localhost:4502/crx/packageshare/login.html) nach **Add-On-Pakete für AEM 6.5 Forms** und klicken Sie auf das Paket, das auf Ihr Betriebssystem zutrifft, und dann auf **Herunterladen**. Lesen und akzeptieren Sie die Lizenzvereinbarung und klicken Sie auf **OK**. Der Download wird gestartet. Nachdem der Download abgeschlossen ist, wird das Wort **Heruntergeladen** neben dem Paket angezeigt.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. In the **[!UICONTROL Filters]** section:
+   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
+1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
+1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   Sie können auch die Versionsnummer verwenden, um nach einem Add-On-Paket zu suchen. Die Versionsnummer für das neueste Paket finden Sie im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
-
-1. Nachdem der Download abgeschlossen ist, klicken Sie auf **Heruntergeladen**. Sie werden zum Paketmanager weitergeleitet. Suchen Sie im Paketmanager das heruntergeladene Paket und klicken Sie auf **Installieren**.
-
-   Wenn Sie das Paket manuell über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) angegeben ist, melden Sie sich beim Paketmanager an, klicken Sie auf **Paket hochladen**, wählen Sie das heruntergeladene Paket aus und klicken Sie auf „Hochladen“. Nachdem Sie das Paket hochgeladen haben, klicken Sie auf den Paketnamen und dann auf **Installieren.**
-
+   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
 1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` Datei nicht mehr angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-4 für alle Autor- und Veröffentlichungsinstanzen.  
 
@@ -150,7 +151,7 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
 
 #### Konfigurieren Sie den Serialisierungsagenten {#configure-the-serialization-agent}
 
-Führen Sie die folgenden Schritte für alle Instanzen im Autoren- und Veröffentlichungsmodus aus, um das Paket zum zulassungsliste hinzuzufügen:
+Führen Sie die folgenden Schritte für alle Instanzen im Autoren- und Veröffentlichungsmodus aus, um das Paket der Zulassungsliste &quot;&quot;hinzuzufügen:
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standardeinstellung ist `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie nach **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** und öffnen Sie die Konfiguration.
@@ -185,7 +186,7 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
 1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100.     Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiver Kommunikationswebkanal**, um die Konfigurationswerte zu bearbeiten. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. Der Standardwert ist 100.       Klicken Sie auf **Speichern**.
 
    >[!NOTE]
    >
