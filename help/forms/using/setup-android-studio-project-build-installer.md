@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 55%
 
 ---
 
@@ -18,20 +21,18 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Dieser Artikel gilt für das Erstellen der AEM Forms App 6.3.1.1 und höheren Versionen. For building an app from source code of source code of the AEM Forms App 6.3, see [Set up the Eclipse project and build the Android™ app](/help/forms/using/setup-eclipse-project-build-installer.md).
 
-In AEM Forms wird der vollständige Quellcode der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip` is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on package share.
+In AEM Forms wird der vollständige Quellcode der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. Das Quellcode-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Teil des `adobe-aemfd-forms-app-src-pkg-<version>.zip` Pakets zur Softwareverteilung.
 
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
-1. Zu Package Share navigieren
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Laden Sie das Quellpaket herunter. Wenn Sie das Paket herunterladen, wird es in Ihrem AEM Forms Package Manager hinzugefügt.
-1. Nach dem Herunterladen navigieren Sie zu: und `https://<server>:<port>/crx/packmgr/index.jsp`installieren `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Um das Quellcode-Archiv herunterzuladen, öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` den Browser.
-
-   Das Quellpaket wird auf Ihr Gerät heruntergeladen.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. In the **[!UICONTROL Filters]** section:
+   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
+1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
+1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
+1. Select the package and click **[!UICONTROL Install]**.
 
 The following image displays the extracted contents of the `adobe-lc-mobileworkspace-src-<version>.zip`.
 
@@ -82,7 +83,7 @@ The following image displays the directory structure of the `android`folder in t
 1. Wählen Sie in Android™ Studio **[!UICONTROL Projekt importieren (Eclipse ADT, Gradle, etc.)]**.
 1. In the project explorer, select the root directory of the project that you want to build in the **Root Directory** text box:
 
-   **Mac-Benutzer:** [Benutzerstammordner]/Projekte/MobileWorkspace/src/android
+   **Mac-Benutzer:** [User_Home]/Projects/MobileWorkspace/src/android
 
    **Für Windows®-Nutzer:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
