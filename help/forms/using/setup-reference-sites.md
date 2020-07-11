@@ -10,7 +10,10 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 48%
 
 ---
 
@@ -49,7 +52,7 @@ Bevor Sie die Referenz-Website einrichten, stellen Sie Folgendes sicher:
 
 * **Adobe Sign-Entwicklerkonto und Adobe Sign API-Anwendung** Um digitale Signatur-Funktionen zu verwenden, ist ein Adobe Sign-Entwicklerkonto erforderlich. Siehe[ Adobe Sign](https://acrobat.adobe.com/de/de/why-adobe/developer-form.html).
 
-* Eine laufende Instanz von Microsoft Dynamics 365 zur Integration in AEM Forms. Um die Referenz-Website auszuführen, importieren Sie die Beispieldaten in die Microsoft Dynamics-Instanz, um die interaktive Kommunikation, die auf der Referenz-Website verwendet wird, im Voraus auszufüllen.
+* Eine laufende Instanz von Microsoft Dynamics 365 zur Integration mit AEM Forms. Um die Referenz-Website auszuführen, importieren Sie die Beispieldaten in die Microsoft Dynamics-Instanz, um die interaktive Kommunikation, die auf der Referenz-Website verwendet wird, im Voraus auszufüllen.
 * Eine ausgeführte Instanz von AEM mit Add-On-Paket für Forms. Weitere Informationen finden Sie unter [Installation und Konfiguration von AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Referenz-Sites einzurichten und konfigurieren.
@@ -83,7 +86,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
   </tr>
   <tr>
    <td><a href="#xss">Außerkraftsetzen der standardmäßigen XSS-Konfiguration</a></td>
-   <td>Veröffentlichen</td>
+   <td>Veröffentlichen  </td>
    <td>Wird verwendet, um $-, {- und }-Zeichen zu überschreiben, die von xss security blockiert werden.</td>
   </tr>
   <tr>
@@ -104,7 +107,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
   <tr>
    <td><a href="../../forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Konfigurieren des OAuth-Cloud-Dienst für Microsoft Dynamics</a></td>
    <td>Authoring und Veröffentlichen</td>
-   <td>Konfigurieren Sie den OAuth-Cloud-Dienst in AEM Forms, um die Kommunikation zwischen AEM Forms und Microsoft Dynamics zu aktivieren. </td>
+   <td>Konfigurieren Sie den OAuth-Cloud-Dienst in AEM Forms, um die Kommunikation zwischen AEM Forms und Microsoft Dynamics zu ermöglichen. </td>
   </tr>
   <tr>
    <td><a href="#scheduler">Adobe Sign Scheduler konfigurieren</a></td>
@@ -118,7 +121,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
   </tr>
   <tr>
    <td><a href="#anonymous">Allgemeinen Forms-Konfigurationsdienst für anonyme Benutzer konfigurieren</a></td>
-   <td>Veröffentlichen</td>
+   <td>Veröffentlichen  </td>
    <td>Die Konfiguration ermöglicht das Senden, Signieren und Dokument der Datensatzgenerierung für anonyme Benutzer.</td>
   </tr>
   <tr>
@@ -203,7 +206,7 @@ Nach dem Konfigurieren des SMTP-Servers, versuchen Sie, ein Formular nach dem Sa
 
 Die Einstellungen des AEM DS-Dienstes sind auf der Veröffentlichungsinstanz für die E-Mail-Kommunikation in den Anwendungsfällen der Referenz-Website erforderlich. Ausführliche Anweisungen zum Konfigurieren des AEM DS-Diensts für die Veröffentlichungsinstanz finden Sie unter AEM DS-Einstellungen [konfigurieren](../../forms/using/configuring-the-processing-server-url-.md).
 
-Geben Sie für AEM Forms-Referenzseiten im AEM DS-Einstellungsdienst die URL des Servers für die Veröffentlichung anstelle der URL des Verarbeitungsservers an.
+Geben Sie für AEM Forms-Referenz-Sites im AEM DS-Einstellungsdienst die URL des Veröffentlichungsservers anstelle der URL des Verarbeitungsservers an.
 
 >[!CAUTION]
 >
@@ -211,12 +214,12 @@ Geben Sie für AEM Forms-Referenzseiten im AEM DS-Einstellungsdienst die URL des
 
 ## Referenz-Site-Pakete bereitstellen {#refsite}
 
-Installieren Sie die Referenz-Sitepakete mit Package Share.
+Installieren Sie die Referenz-Sitepakete mithilfe der [Softwareverteilung](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
-* [AEM Forms FSI-Referenzseitenpaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-FSI-REF-SITE)
-* [AEM Forms Gov Referenz-Website-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-GOV-REF-SITE)
+* [AEM Forms FSI-Referenz-Website-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-FSI-REF-SITE)
+* [AEM Forms Gov Reference Site Package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-GOV-REF-SITE)
 
-To learn more about how to use packages and package share, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+To learn more about how to use packages , see [How to Work With Packages](/help/sites-administering/package-manager.md).
 
 Nachdem Sie die Pakete installiert und den Autoren- und Veröffentlichungsmodus begonnen haben, besuchen Sie die folgenden URLs in Ihrem Browser:
 
@@ -258,12 +261,12 @@ Importieren der Kunden- und Versicherungspolice-Datensätze:
 
 ## Konfigurieren des OAuth-Cloud-Dienst für Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
-Konfigurieren Sie den OAuth-Cloud-Dienst in AEM Forms, um die Kommunikation zwischen AEM Forms und Microsoft Dynamics zu aktivieren. Führen Sie die folgenden Schritte aus, um den OAuth Cloud-Dienst für Autoren- und Veröffentlichungsinstanzen von AEM zu konfigurieren:
+Konfigurieren Sie den OAuth-Cloud-Dienst in AEM Forms, um die Kommunikation zwischen AEM Forms und Microsoft Dynamics zu ermöglichen. Führen Sie die folgenden Schritte aus, um den OAuth-Cloud Service in AEM-Autor- und Veröffentlichungsinstanzen zu konfigurieren:
 
 1. On AEM author instance, go to **Tools** > **Cloud Services** > **Data Sources** > **global**. Tippen Sie auf das Symbol **Refsite Dynamics Integration** und dann auf Eigenschaften.
 1. Navigieren Sie zum Microsoft Azure Active Directory-Konto. Fügen Sie die kopierte URL der Cloud-Dienstkonfiguration in der Einstellung **Antwort-URL** URL-Einstellung für Ihre registrierte Anwendung hinzu. Speichern Sie die Konfiguration.
 1. In the Authentication Settings tab, specify **Service Root**, **Client Id**, **Client Secret**, and **Resource URL** for your Microsoft Dynamics instance. Click **Connect to OAuth** that redirects to the Microsoft Dynamics login page.
-1. Geben Sie Ihre Anmeldedaten ein. Nach der Anmeldung werden Sie zur Konfigurationsseite des AEM Forms-Cloud-Dienstes weitergeleitet. Klicken Sie auf **Speichern und schließen**. Die Cloud-Dienstkonfiguration wird gespeichert.
+1. Geben Sie Ihre Anmeldedaten ein. Nach der Anmeldung werden Sie zur Konfigurationsseite des AEM Forms Cloud-Dienstes weitergeleitet. Klicken Sie auf **Speichern und schließen**. Die Cloud-Dienstkonfiguration wird gespeichert.
 1. Go to **Forms** > **Data Integrations** > **We.Finance**. Wählen Sie Auto Insurance (Dynamics) und klicken Sie auf Edit. Microsoft Dynamics-Entitäten werden unter der Registerkarte Data Sources aufgeführt. Warten Sie, bis alle Entitäten von Microsoft Dynamics abgerufen und unter der Registerkarte &quot;Datenquellen&quot;aufgelistet wurden.
 1. Select the **AutoInsuranceRenewal entity** and click **Test Model Object**. In the input request section, specify the value for customer ID as “900001” and click **Test**. Im Bereich &quot;Ausgabe&quot;werden die Datensätze angezeigt, die von Microsoft Dynamics für die Kunden-ID 900001 abgerufen wurden.
 1. In the input request section, specify the value for customer ID as “900001” and click **Test**. Im Bereich &quot;Ausgabe&quot;werden die Datensätze angezeigt, die von Microsoft Dynamics für die Kunden-ID 900001 abgerufen wurden.
@@ -287,7 +290,7 @@ Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Ve
 
 Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Veröffentlichungsinstanz aus:
 
-1. Go to **Tools** > **Cloud Services** > **Adobe Sign** > **global**. Wählen Sie **AEM Forms Reference Site Sign** und tippen Sie auf Eigenschaften.
+1. Go to **Tools** > **Cloud Services** > **Adobe Sign** > **global**. Wählen Sie &quot; **AEM Forms - Referenz-Site-Signatur** &quot;und tippen Sie auf Eigenschaften.
 
    >[!CAUTION]
    >
@@ -314,13 +317,13 @@ Führen Sie die folgenden Schritte sowohl auf der Authoring- als auch auf der Ve
 1. Navigieren Sie zu **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** und öffnen Sie die Swagger-Datei.
 1. Aktualisieren Sie die Host- und Anschlusseinstellungen gemäß Ihrer Umgebung.
 1. Speichern Sie die Einstellungen.
-1. (Nur **Autoreninstanz**) Gehen Sie zu **Werkzeuge** > **Cloud-Dienste** > **Datenquellen** > **global**. Wählen Sie &quot; **roi-rest** &quot;aus und tippen Sie auf **Eigenschaften**.Tippen Sie auf **Authentifizierungseinstellungen** und legen Sie den **Authentifizierungstyp** auf **Grundlegende Authentifizierung** fest. Geben Sie `admin`/ `admin`als Benutzernamen/Kennwort für den Zugriff auf den Dienst an. Tippen Sie auf **Speichern und Schließen**.
+1. (Nur **Autoreninstanz**) Gehen Sie zu **Werkzeuge** > **Cloud Service** > **Datenquellen** > **global**. Wählen Sie &quot; **roi-rest** &quot;aus und tippen Sie auf **Eigenschaften**.Tippen Sie auf **Authentifizierungseinstellungen** und legen Sie den **Authentifizierungstyp** auf **Grundlegende Authentifizierung** fest. Geben Sie `admin`/ `admin`als Benutzernamen/Kennwort für den Zugriff auf den Dienst an. Tippen Sie auf **Speichern und Schließen**.
 
 ## Integration in Marketing Cloud {#integrate-with-marketing-cloud}
 
-Sie können AEM Forms in Adobe Analytics und Adobe Zielgruppe integrieren. Während Adobe Analytics Ihnen dabei hilft, Berichte zu erstellen und die Leistung adaptiver Formulare zu analysieren, hilft Ihnen Adobe Zielgruppe bei der Bereitstellung personalisierter Erlebnisse und der Durchführung von A/B-Tests für adaptive Formulare.
+Sie können die AEM Forms in Adobe Analytics und Adobe Target integrieren. Während Adobe Analytics Ihnen dabei hilft, Berichte zu erstellen und die Leistung adaptiver Formulare zu analysieren, hilft Ihnen Adobe Target dabei, personalisierte Erlebnisse bereitzustellen und A/B-Tests für adaptive Formulare durchzuführen.
 
-Führen Sie die folgenden Schritte aus, um Adobe Analytics und Adobe Zielgruppe in AEM Forms zu konfigurieren.
+Führen Sie die folgenden Schritte aus, um Adobe Analytics und Adobe Target in AEM Forms zu konfigurieren.
 
 ### Konfigurieren Sie Analytics {#configureanalytics}
 
@@ -330,22 +333,23 @@ Um diese Funktion auf der Referenz-Website zu nutzen, konfigurieren Sie Ihr Anal
 
 Zur Erstellung eines Berichts werden Seed-Daten mit den Referenz-Sites gebündelt. Bevor Sie Seed-Daten verwenden, führen Sie die folgenden Schritte aus:
 
-1. Stellen Sie sicher, dass die Analytics-Konfigurationen für Web.Finance in den AEM Cloud-Services verfügbar sind. Sie können Cloud-Dienste auf eine der folgenden Arten finden:
+1. Stellen Sie sicher, dass die Analytics-Konfigurationen von Web.Finance in den AEM cloud services verfügbar sind. Sie können Cloud-Dienste auf eine der folgenden Arten finden:
 
-   * Navigieren Sie zu **[!UICONTROL Tools > Cloud-Dienste > Legacy-Cloud-Dienste]** oder navigieren Sie zu https://&lt;Host>:&lt;Port>/libs/cq/core/content/tools/cloudservices.html.
-   * In the **[!UICONTROL Cloud Services]** page, under **[!UICONTROL Adobe Analytics]** section, click `Show Configurations`. Sie können die verfügbaren We.Finance-Konfigurationen sehen. Klicken Sie auf „Öffnen“, um die Konfiguration zu öffnen. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Bearbeiten]**. Geben Sie gültige Firma, Benutzernamen, Shared Secret (Kennwort) und Rechenzentrum ein und klicken Sie auf **[!UICONTROL Verbindung zu Analytics]** herstellen. Nachdem Sie das Dialogfeld Verbindung erfolgreich abgeschlossen haben, klicken Sie im Konfigurationsdialogfeld auf **[!UICONTROL OK]** . Konfigurieren Sie das Framework unter der Analytics-Konfiguration, wie in [Konfigurieren von Analytics und Berichten](../../forms/using/configure-analytics-forms-documents.md)beschrieben.
+   * Navigieren Sie zu **[!UICONTROL Extras > Cloud Service > Ältere Cloud Service]** oder navigieren Sie zu https://&lt;Host>:&lt;Port>/libs/cq/core/content/tools/cloudservices.html.
+   * In the **[!UICONTROL Cloud Services]** page, under **[!UICONTROL Adobe Analytics]** section, click `Show Configurations`. Sie können die verfügbaren We.Finance-Konfigurationen sehen. Klicken Sie auf „Öffnen“, um die Konfiguration zu öffnen. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Bearbeiten]**. Geben Sie eine gültige Firma, Benutzername, Shared Secret (Kennwort) und Rechenzentrum ein und klicken Sie auf **[!UICONTROL Mit Analytics]** verbinden. Nachdem Sie das Dialogfeld Verbindung erfolgreich abgeschlossen haben, klicken Sie im Konfigurationsdialogfeld auf **[!UICONTROL OK]** . Konfigurieren Sie das Framework unter der Analytics-Konfiguration, wie unter Analytics und Berichte [konfigurieren](../../forms/using/configure-analytics-forms-documents.md)beschrieben.
 
 1. Navigieren Sie zu https://&lt;*Host*>:&lt;*Anschluss*>/system/console/configMgr und führen Sie folgende Schritte aus:
 
    * In the **[!UICONTROL Web Console Configuration]** page, find and click **[!UICONTROL AEM Forms Analytics Configuration]**.
 
-   * Wählen Sie im Dialogfeld &quot;Analytics-Konfiguration von AEM Forms&quot;im **[!UICONTROL SiteCatalyst-Framework]** die Option we-finance(we-finance) oder we-gov(we-gov).
+   * Wählen Sie im **[!UICONTROL SiteCatalyst-Framework]** des Dialogfelds &quot;Analytics-Konfiguration&quot;die Option we-finance(we-finance) oder we-gov(we-gov).
    * Klicken Sie auf **[!UICONTROL Speichern]** und aktualisieren Sie die Seite.
 
 1. Navigieren Sie zum Forms Manager unter https://&lt;Host>:&lt;Anschluss>/aem/forms und führen Sie die folgenden Schritte aus:
 
    * Öffnen Sie den Ordner &quot;We.Finance&quot;und wählen Sie das Formular aus, für das Sie den Bericht anzeigen möchten.
    * Klicken Sie in der Aktions-Symbolleiste auf Analyse aktivieren. Nachdem Sie die Analyse für das Formular aktiviert haben, klicken Sie auf Analysebericht. Sie können sehen, dass ein leerer Bericht generiert wurde. Nachdem ein leerer Bericht generiert wurde, müssen Sie Seed-Daten bereitstellen, die mit refsite-Paket versandt wurden, um einen Analysebericht für Demozwecke zu erstellen.
+
    Referenz-Websites bieten dem Analytics-Berichte Startdaten für Kreditkarten-, Hypotheken- und Kindergeld-Anwendungsfälle.
 
 ### Target konfigurieren {#configure-target}
@@ -368,7 +372,7 @@ Um die Integration auf der Referenz-Website zu testen, führen Sie folgende Schr
 1. Geben Sie Ihren Client-Code, die E-Mail und das Kennwort an, die mit Ihrem Target-Konto verknüpft sind. Wählen Sie den API-Typ als **[!UICONTROL REST]**.
 1. Klicken Sie auf **[!UICONTROL Verbindung mit Adobe-Target herstellen]**. Klicken Sie nach erfolgreicher Konfiguration des Kontos auf **[!UICONTROL OK]**. Sie können sehen, dass die gepackte Konfiguration über ein Zielgruppe Framework verfügt.
 
-1. Wechseln zu `https://<hostname>:<port>/system/console/configMgr`.
+1. Rufen Sie `https://<hostname>:<port>/system/console/configMgr` auf.
 
 1. Klicken Sie auf **[!UICONTROL AEM Forms Target-Konfiguration]**.
 1. Wählen Sie ein Zielgruppe-Framework.
