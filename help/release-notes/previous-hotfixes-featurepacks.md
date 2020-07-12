@@ -1,11 +1,11 @@
 ---
-title: Versionshinweise zu Adobe Experience Manager 6.5 Previous Service Pack
+title: Adobe Experience Manager 6.5 Versionshinweise zu früheren Service Packs
 description: Versionshinweise speziell für Adobe Experience Manager 6.5 Service Pack 3 und früher.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
 workflow-type: tm+mt
-source-wordcount: '8093'
+source-wordcount: '8102'
 ht-degree: 37%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 37%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Verbesserungen sowie Leistung, Stabilität und Sicherheitsverbesserungen umfasst. Dieses Update wurde seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht. Es kann über Adobe Experience Manager 6.5 installiert werden.
+Adobe Experience Manager 6.5.4.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Verbesserungen und Leistung, Stabilität und Sicherheitsverbesserungen umfasst. Dieses Update wurde seit der Veröffentlichung der Version 6.5 im **April 2019** veröffentlicht. Es kann auf Adobe Experience Manager 6.5 installiert werden.
 
 Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.4.0 eingeführt wurden, zählen:
 
-* Adobe Experience Manager-Assets werden jetzt über die Adobe I/O-Konsole mit dem Markenportal konfiguriert.
+* Adobe Experience Manager Assets werden jetzt über die Adobe I/O-Konsole mit dem Markenportal konfiguriert.
 
-* Für Adobe Experience Manager Forms Workflows steht jetzt ein neuer Schritt zum [Generieren druckbarer Ausgabe](../forms/using/aem-forms-workflow-step-reference.md) zur Verfügung.
+* Für Adobe Experience Manager Forms Workflows steht jetzt ein neuer [Druckausgabe](../forms/using/aem-forms-workflow-step-reference.md) -Schritt zum Generieren zur Verfügung.
 
 * [Mehrspaltige Unterstützung](../forms/using/resize-using-layout-mode.md) für den Layoutmodus für adaptive Formulare und interaktive Kommunikation.
 
@@ -31,19 +31,19 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manage
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.8 aktualisiert.
 
-* Sie können jetzt ausgewählte Inhaltsunterbauten mit *dynamischen Medien - Scene7-Modus* und nicht mit allen verfügbaren Elementen synchronisieren `content/dam`.
+* Sie können jetzt selektive Inhaltsunterbauten mit *Dynamic Media synchronisieren - Scene7-Modus* anstelle aller verfügbaren Elemente unter `content/dam`.
 
 * Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
 * SOAP-Eingabe- oder -Ausgabe und komplexe Datenstrukturen unterstützen jetzt die dynamische Gruppenersetzung.
 
-Eine vollständige Liste der Funktionen und wichtigen Highlights, die mit den neuesten Service Packs eingeführt wurden, finden Sie unter [Neue Funktionen in Adobe Experience Manager 6.5 Service Packs](new-features-latest-service-pack.md).
+Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktionen und wichtigen Highlights finden Sie unter [Neue Funktionen in Adobe Experience Manager 6.5 Service Packs](new-features-latest-service-pack.md).
 
 ### Sites {#sites-fixes}
 
-* Wenn eine URL einer Seite mit Adobe Experience Manager-Sites einen Doppelpunkt (`:`) oder ein Prozentsymbol (`%`) enthält, reagiert der Browser nicht mehr und die CPU-Auslastung steigt an (NPR-32369, NPR-31918).
+* Wenn eine URL einer Adobe Experience Manager-Siteseite einen Doppelpunkt (`:`) oder ein Prozentsymbol (`%`) enthält, reagiert der Browser nicht mehr und die CPU-Auslastung steigt (NPR-32369, NPR-31918).
 
-* Wenn eine Experience Manager-Siteseite zur Bearbeitung geöffnet und eine Komponente kopiert wird, bleibt die Einfügeaktion für einige Platzhalter nicht verfügbar (NPR-32317).
+* Wenn eine Experience Manager-Siteseite zur Bearbeitung geöffnet und eine Komponente kopiert wird, steht die Einfügeaktion für einige Platzhalter nicht zur Verfügung (NPR-32317).
 
 * Wenn der Assistent zum Verwalten von Veröffentlichungen geöffnet wird, wird ein Erlebnisfragment, das mit einer Kernkomponente verknüpft ist, nicht in den Listen veröffentlichter Verweise (NPR-32233) angezeigt.
 
@@ -87,7 +87,7 @@ Eine vollständige Liste der Funktionen und wichtigen Highlights, die mit den ne
 
 * Die Schaltfläche zum Auslösen des Workflows auf der Seite zur Asset-Sammlung ist deaktiviert (NPR-32471).
 
-* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit dynamischer Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
+* Ein Ordner ohne Namen wird im SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Scene7-Dynamic Media (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
 * Die Aktion zum Verschieben aller Assets (mit &quot;Alle auswählen&quot;und dann &quot;Verschieben&quot;) in einen Ordner mit veröffentlichten Assets schlägt fehl (NPR-32366).
 
@@ -105,7 +105,7 @@ Eine vollständige Liste der Funktionen und wichtigen Highlights, die mit den ne
 
 * Mehrere Abfragen der Suche werden ausgelöst, wenn mehrere Tags aus dem Suchfilter ausgewählt werden (NPR-32143).
 
-* In der Benutzeroberfläche von Experience Manager Assets werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
+* In der Benutzeroberfläche &quot;Experience Manager Assets&quot;werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
 * Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen in Adobe Stock auf Stufe zwei markiert wurden (NPR-31919).
 
@@ -119,11 +119,11 @@ Eine vollständige Liste der Funktionen und wichtigen Highlights, die mit den ne
 
 * Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
 
-* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, mit Ausnahme der Schaltflächen &quot;Zur Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, der im dynamischen Media Scene7-Ausführungsmodus ausgeführt wird (CQ-4286705).
+* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, außer den Schaltflächen &quot;An Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, die im Scene7-Ausführungsmodus ausgeführt werden (CQ-4286705).
 
 * Die Verarbeitung von Assets durch den Batch-Upload von Scene7 (CQ-4286445) dauert zu lange.
 
-* Die Schaltfläche &quot;Speichern&quot;importiert kein Remote-Set, wenn der Benutzer im Set-Editor im Dynamic Media Client keine Änderungen vorgenommen hat (CQ-4285690).
+* Die Schaltfläche &quot;Speichern&quot;importiert kein Remote-Set, wenn der Benutzer im Set-Editor im Dynamic Media-Client keine Änderungen vorgenommen hat (CQ-4285690).
 
 * Die Miniaturansicht von 3D-Assets ist nicht informativ, wenn ein unterstütztes 3D-Modell in Experience Manager integriert wird (CQ-4283701).
 
@@ -131,11 +131,11 @@ Eine vollständige Liste der Funktionen und wichtigen Highlights, die mit den ne
 
 * Auf der Detailseite des Assets (CQ-4283309) wird eine falsche Höhe des Containers eines hochgeladenen 3D-Modells, das in der Vorschau im 3D-Viewer angezeigt wird, festgestellt.
 
-* Karussell-Editor wird in IE 11 im dynamischen Medienmodus von Experience Manager (CQ-4255590) nicht geöffnet.
+* Karussell-Editor in IE 11 im Experience Manager-Dynamic Media-Hybridmodus (CQ-4255590) nicht geöffnet.
 
 * Der Tastaturfokus wird in der Dropdown-Liste &quot;E-Mail&quot;im Dialogfeld &quot;Herunterladen&quot;in Chrome und Safari-Browsern (NPR-32067) angehalten.
 
-* Das Kontrollkästchen &quot;Alle Inhalte synchronisieren&quot;ist nicht standardmäßig aktiviert, wenn versucht wird, eine DM-Cloud-Konfiguration in Experience Manager hinzuzufügen (CQ-4288533).
+* Das Kontrollkästchen &quot;Alle Inhalte synchronisieren&quot;ist beim Hinzufügen der DM Cloud-Konfiguration auf dem Experience Manager nicht standardmäßig aktiviert (CQ-4288533).
 
 ### Foundation-Benutzeroberfläche {#foundation-ui-6540}
 
@@ -203,7 +203,7 @@ Eine vollständige Liste der Funktionen und wichtigen Highlights, die mit den ne
 
 * Das Formular &quot;Create Member&quot;wird als leere Seite angezeigt (NPR-31997).
 
-* Der Benutzer kann den Analytics-Bericht nicht in der Autoreninstanz (NPR-30913) Ansicht werden.
+* Der Benutzer kann den Analytics-Bericht zum Autorenmodus (NPR-30913) nicht Ansicht werden.
 
 ### Eichen- Indizierung und Abfragen {#oak-indexing-6540}
 
@@ -241,7 +241,7 @@ Eine vollständige Liste der Funktionen und wichtigen Highlights, die mit den ne
 
 * Designer: Wenn eine Tabelle zusammengeführte Zellen enthält, schlägt der Barrierefreiheitstest für die Ausgabe-PDF-Datei fehl, die mithilfe des Ausgabediensts (CQ-4285372) aus einem XDP-Formular konvertiert wurde.
 
-* Foundation JEE: Wenn ein Experience Manager Forms-Server von einem Cluster getrennt ist, verhindern Cache-Probleme die erneute Verbindung zum Server (NPR-32412).
+* Foundation JEE: Wenn ein Experience Manager Forms-Server von einem Cluster getrennt ist, verhindern Cache-Probleme die erneute Serververbindung (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -337,7 +337,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Dynamische Darstellungen, die von [!DNL Experience Manager] im [!DNL Dynamic Media]-Hybrid-Modus heruntergeladen wurden, sind beschädigt (sie sind vom Texttyp mit Inhalt &quot;Bild kann nicht gefunden werden&quot; anstelle des Bildinhaltstyps) (NPR-30876).
 
-* [!DNL Dynamic Media] Der Arbeitsablauf für die Kodierung von Videos kann keine Miniaturansicht für das Video generieren, das in Adobe Experience Manager (CQ-4282011) vom Modus [!DNL Dynamic Media Classic] [!DNL Dynamic Media]Scene7 migriert wird.
+* [!DNL Dynamic Media] Der Arbeitsablauf zum Kodieren von Videos kann keine Miniaturansicht für das Video generieren, das beim Adobe Experience Manager vom [!DNL Dynamic Media Classic] zum [!DNL Dynamic Media]Scene7-Modus migriert wird (CQ-4282011).
 
 * Bei der Migration von Assets von einer Instanz zu einer anderen mit unterschiedlichen Scene7-Firmen-IDs (CQ-4280548) wurde eine IpsApiException-Ausnahme beobachtet.
 
@@ -449,7 +449,7 @@ Remove one mention of this fix.
 * Beim Erstellen eines neuen Beitragsordners werden ein oder beide Unterordner (NEU und FREIGEGEBEN) nicht im Beitragsordner (CQ-4282424) angezeigt.
 * Das System gibt eine Ausnahme aus, wenn der Benutzer versucht, den Beitragsordner von [!DNL Experience Manager] zu [!DNL Brand Portal] [!DNL Brand Portal] veröffentlichen, nachdem er neue Assets aus dem Beitragsordner erhalten hat (CQ-4279740).
 * Das Erstellen eines Beitragsordners in einem Beitragsordner (verschachtelter Ordner) ist verboten, um Komplexität zu vermeiden (CQ-4278391).
-* Das System gibt beim Hochladen der aus der [!DNL Brand Portal] Admin-Konsole importierten Liste (.csv) eine Ausnahme aus [!DNL Experience Manager] . Nur die Felder &quot;E-Mail&quot;, &quot;Vorname&quot;und &quot;Nachname&quot;in der .csv-Datei sind obligatorisch (CQ-4278390).
+* Das System gibt beim Hochladen der aus der [!DNL Brand Portal] Admin Console importierten Benutzerdatei (.csv-Liste) eine Ausnahme aus [!DNL Experience Manager] . Nur die Felder &quot;E-Mail&quot;, &quot;Vorname&quot;und &quot;Nachname&quot;in der .csv-Datei sind obligatorisch (CQ-4278390).
 
 ### Communities {#communities-6530}
 
@@ -505,6 +505,8 @@ Remove one mention of this fix.
 **Forms - Document Services**
 
 * Der SOAP-Webdienst, der MTOM in einem .NET-Projekt verwendet, zeigt Ausnahmen für AssemblerServiceClient-Aufrufe und HtmlToPDF2-Methoden (NPR-4281771) an.
+
+* Die Axis-JAR-Versionen 1.4 und 1.4.1 enthalten eine Sicherheitslücke (NPR-31015).
 
 **Foundation JEE**
 
