@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 3%
@@ -59,7 +59,7 @@ Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen B
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer durch jcr-Inhalte und json zu schützen:
 
-1. Wechseln Sie in der AEM Author-Instanz zu https://&lt;Host>:&lt;Port>/editor.html/content/site/&lt;Site-Name>.html.
+1. Wechseln Sie in der AEM-Autoreninstanz zu https://&lt;Host>:&lt;Port>/editor.html/content/site/&lt;Site-Name>.html.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ Navigieren Sie beim Autor zur **Communities, zur[Ressourcenkonsole](resources.md
 * Alle Aktivierungsressourcen und Lernpfade
 * Eine spezifische Aktivierungsressource oder ein Lernpfad
 
-Navigieren Sie zur **Communities-,[Reports-Konsole](reports.md)**und erstellen Sie Berichte gemäß
+Navigieren Sie zur **Communities-,[Reports-Konsole](reports.md)**und generieren Sie Berichte wie folgt:
 
 * Zuweisung zu aktivierenden Ressourcen und Lernpfaden
 * Beiträge zu einer Community-Site über einen bestimmten Zeitraum
@@ -203,12 +203,11 @@ Navigieren Sie zur **Communities-,[Reports-Konsole](reports.md)**und erstellen S
 
 Mit ein wenig Aktivität und Interaktion mit den Ressourcen bei der Veröffentlichung lohnt es sich, die Berichte zum Autor anzuzeigen.
 
-* Autor
-* Anmelden mit Administratorrechten
-* Navigieren Sie vom Hauptmenü zu **[!UICONTROL Communities > Ressourcen]**
-* Wählen Sie die `Enablement Tutorial` Site
-* Wählen Sie das `Report` Symbol für eine Zusammenfassung aller Ressourcen aus.
-* Wählen Sie eine Ressource und dann das `Report` Symbol für einen Bericht in dieser Ressource aus
+* Melden Sie sich beim Autor mit Administratorrechten an.
+* Navigieren Sie vom Hauptmenü zu **[!UICONTROL Communities]** > **[!UICONTROL Resources]**.
+* Wählen Sie die `Enablement Tutorial` Site aus.
+* Klicken Sie auf das `Report` Symbol für eine Zusammenfassung aller Ressourcen.
+* Wählen Sie eine Ressource und dann das `Report` Symbol für einen Bericht in dieser Ressource aus.
 
 Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anzuzeigen, die bis zu 12 Stunden dauern können. Es ist jedoch bereits ein einfacher SCORM-Berichte verfügbar.
 
@@ -236,10 +235,9 @@ Die Konsole &quot;Berichte&quot;ermöglicht die Erstellung von Berichten über
 
 Für Zuweisungsberichte:
 
-* Autor
-* Anmelden mit Administratorrechten
-* Navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Berichte]** > **[!UICONTROL Zuweisungsbericht]**
-* Wählen Sie eine **[!UICONTROL Site]** aus dem Pulldown-Menü aus (wählen Sie `Enablement Tutorial`)
+* Melden Sie sich beim Autor mit Administratorrechten an.
+* Navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Berichte]** > **[!UICONTROL Zuweisungsbericht]**.
+* Wählen Sie eine **[!UICONTROL Site]** aus dem Pulldown-Menü aus (wählen Sie `Enablement Tutorial`).
 
 * Gruppe **[!UICONTROL auswählen]** (auswählen `Community Ski Class`)
 
@@ -251,15 +249,15 @@ Für Zuweisungsberichte:
 
 Für Berichte zu Ansichten:
 
-* Melden Sie sich beim Autor mit Administratorrechten an
-* Navigieren Sie zum Bericht **[!UICONTROL Communities]** > **[!UICONTROL Berichte]** > **[!UICONTROL Ansichten]**
-* Wählen Sie eine **Site **aus dem Pulldown-Menü aus (wählen Sie`Enablement Tutorial`)
+* Melden Sie sich beim Autor mit Administratorrechten an.
+* Navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Berichte]** > **[!UICONTROL Ansichten-Bericht]**.
+* Wählen Sie eine **Site **aus dem Pulldown-Menü aus (wählen Sie`Enablement Tutorial`).
 
-* Content- **[!UICONTROL Typ]** auswählen (wählen Sie `all`)
+* Wählen Sie **[!UICONTROL Inhaltstyp]** (wählen Sie `all`).
 
-* Wählen Sie einen **[!UICONTROL Datumsbereich]** aus (wählen Sie `Last 7 days`)
+* Wählen Sie einen **[!UICONTROL Datumsbereich]** aus (wählen Sie `Last 7 days`).
 
-* Wählen Sie **[!UICONTROL Generieren]**
+* Wählen Sie **[!UICONTROL Generieren]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
