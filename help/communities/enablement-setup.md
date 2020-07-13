@@ -10,14 +10,17 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 3%
 
 ---
 
 
-# Ersteinrichtung für Aktivierung {#initial-setup-for-enablement}
+# Ersteinrichtung für Aktivierung  {#initial-setup-for-enablement}
 
-## Start Author and Publish Instances {#start-author-and-publish-instances}
+## Instanzen für Autoren- und Veröffentlichungsinstanzen in Beginn {#start-author-and-publish-instances}
 
 Aus Entwicklungs- und Demonstrationsgründen müssen ein Autor und eine Instanz im Veröffentlichungsmodus ausgeführt werden.
 
@@ -28,22 +31,23 @@ Befolgen Sie die grundlegenden AEM- [Erste](../../help/sites-deploying/deploy.md
 
 Für AEM Communities
 
-* Die Umgebung des Verfassers ist für
+* Die Umgebung des Verfassers dient:
 
-   * Entwicklung von Sites, Vorlagen, Komponenten, Ressourcen für die Aktivierung und Lernpfade
-   * Zuweisung von Mitgliedern und Gruppen von Mitgliedern zur Aktivierung von Ressourcen und Lernpfaden
-   * Erstellen von Berichten zu Zuweisungen, Ansichten und Beiträgen
-   * Verwaltungs- und Konfigurationseinstellungen
+   * Entwicklung von Sites, Vorlagen, Komponenten, Ressourcen für die Aktivierung und Lernpfade.
+   * Zuweisung von Mitgliedern und Gruppen von Mitgliedern zur Aktivierung von Ressourcen und Lernpfaden.
+   * Erstellen von Berichten zu Zuweisungen, Ansichten und Beiträgen.
+   * Verwaltungs- und Konfigurationseinstellungen.
 
-* Die Umgebung zum Veröffentlichen ist
+* Die Umgebung zur Veröffentlichung ist für folgende Zwecke gedacht:
 
-   * Lernen/Training auf der Grundlage von Themen, die vom Aktivierungsmanager verwaltet werden
-   * Kommentieren und Auswerten von Ressourcen und Lernpfaden
-   * Kontakt mit den Ressourcenkontakten
+   * Schulung/Schulung auf der Grundlage von Themen, die vom Aktivierungsmanager verwaltet werden.
+   * Ressourcen und Lernpfade für die Aktivierung und Bewertung kommentieren.
+   * Kontakt mit den Ansprechpartnern für Ressourcen.
 
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+
 
 ## Neueste Communities-Version installieren {#install-latest-communities-release}
 
@@ -51,7 +55,7 @@ Dieses Lernprogramm erstellt eine [Community-Site](overview.md#enablement-commun
 
 * [Neueste Versionen](deploy-communities.md#latest-releases)
 
-Ein Tutorial zum Erstellen einer [Interaktionssite](overview.md#engagement-community)finden Sie unter [Erste Schritte mit AEM Communities](getting-started.md).
+Eine Übung, die eine [Interaktionssite](overview.md#engagement-community)erstellt, finden Sie unter [Erste Schritte mit AEM Communities](getting-started.md).
 
 ## Aktivierungsfunktionen konfigurieren {#configure-enablement-features}
 
@@ -92,12 +96,12 @@ Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#taggi
 
 ![chlimage_1-417](assets/chlimage_1-417.png)
 
-Folgen Sie dann den Anweisungen zum
+Folgen Sie dann den Anweisungen:
 
 1. [Festlegen der Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Veröffentlichen der Tags](../../help/sites-administering/tags.md#publishing-tags)
 
-Beispielpaket mit Tags, die für die Erste Schritte-Tutorials in AEM Communities erstellt wurden
+Beispielpaket mit Tags, die für die Lernprogramme für AEM Communities erstellt wurden
 
 [Datei laden](assets/communities_tutorialtags-10.zip)
 
@@ -118,6 +122,7 @@ Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die 
 >Wenn sie danach erstellt wurden, könnten sie während der Mitgliedererstellung als Mitglieder der Gruppe *der* Übungsmitglieder hinzugefügt werden.
 >
 >Stattdessen werden sie später der Mitgliedergruppe [zugewiesen](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
+
 
 ### Riley Taylor - Kursteilnehmer {#riley-taylor-enrollee}
 
@@ -164,7 +169,7 @@ Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die 
    * Riley
    * sidney
 
-* Wählen Sie **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ### Community-Ski-Klasseneigenschaften {#community-ski-class-properties}
 
@@ -173,6 +178,7 @@ Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die 
 >[!NOTE]
 >
 >Während der Erstellung der Community-Site können bestehende Mitglieder und Gruppen zur Mitgliedergruppe der Community-Site hinzugefügt werden.
+
 
 ## Community-Administratorrolle {#community-administrator-role}
 
@@ -190,10 +196,10 @@ Erstellen Sie einen Benutzer beim *Autor*, dem die Rolle des Community-Administr
 
    * Beispiel: Benutzername &quot;admin&quot;/ Kennwort &quot;admin&quot;
 
-* Navigieren Sie in der Hauptkonsole zu **[!UICONTROL Tools, Vorgänge > Sicherheit > Benutzer]**
-* Wählen Sie im Menü **[!UICONTROL Bearbeiten]** die Option **[!UICONTROL Hinzufügen Benutzer]**
+* Navigieren Sie in der Hauptkonsole zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
+* Wählen Sie im Menü **[!UICONTROL Bearbeiten]** die Option **[!UICONTROL Hinzufügen Benutzer]**.
 
-* Geben Sie im `Create New User` Dialogfeld
+* Geben Sie im `Create New User` Dialogfeld Folgendes ein:
 
    * **ID&amp;ast;**: Sirius
    * **E-Mail-Adresse**: sirius.nilson@mailinator.com
@@ -211,7 +217,7 @@ Blättern Sie nach unten zu `Add User to Groups`:
    * Wählen Sie nun eine der folgenden Optionen aus `Community Administrators`
    * Wählen Sie nun eine der folgenden Optionen aus `Community Enablement Managers`
 
-* Wählen Sie **[!UICONTROL Speichern]**
+* Wählen Sie **[!UICONTROL Speichern]** aus
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
 
