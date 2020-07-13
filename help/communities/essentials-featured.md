@@ -10,16 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 7%
 
 ---
 
 
-# Essentials zu speziellen Inhalten {#featured-content-essentials}
+# Essentials zu speziellen Inhalten  {#featured-content-essentials}
 
 Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit speziellen Inhalten.
 
 Im Gegensatz zum Veröffentlichen eines Beitrags am Anfang eines Forums ermöglicht diese Funktion, dass Inhalte überall auf der Community-Site hervorgehoben werden.
+
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
