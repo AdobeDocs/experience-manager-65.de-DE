@@ -10,14 +10,17 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 18%
 
 ---
 
 
-# Komponenten, Funktionen und Funktionen {#component-function-and-feature-essentials}
+# Komponenten, Funktionen und Funktionen  {#component-function-and-feature-essentials}
 
-Die Funktionen von AEM Communities erfordern, dass Site-Besucher Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden müssen, bevor sie Inhalte veröffentlichen können. Daher sind [Community-Site-Vorlagen](sites.md), aus denen eine Community-Site [erstellt](sites-console.md)wird, so konzipiert, dass sie eine Anmeldefunktion sowie Profil, Nachrichten, Suchen, Moderation und Übersetzung enthalten.
+AEM Communities-Funktionen erfordern, dass Site-Besucher Mitglieder werden und sich auf der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher sind [Community-Site-Vorlagen](sites.md), aus denen eine Community-Site [erstellt](sites-console.md)wird, so konzipiert, dass sie eine Anmeldefunktion sowie Profil, Nachrichten, Suchen, Moderation und Übersetzung enthalten.
 
 Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die [Community-Gruppen-Funktion](functions.md#groups-function) in der ausgewählten Community-Site-Vorlage enthalten ist.
 
@@ -61,7 +64,7 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities Komponen
 * [Bewertung und Abzeichen](configure-scoring.md)
 * [Suchen](search-implementation.md)
 * [Sozialdiagramm](essentials-socialgraph.md)
-* [Datenspeicherung Resource Provider](srp-and-ugc.md)`(SRP)`
+* [Datenspeicherung Resource Provider](srp-and-ugc.md) `(SRP)`
 
 * [Tagging](tag.md)
 
