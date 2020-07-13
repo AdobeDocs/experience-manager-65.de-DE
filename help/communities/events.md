@@ -10,20 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 5%
 
 ---
 
 
-# OSGi-Ereignis für Communities-Komponenten {#osgi-events-for-communities-components}
+# OSGi-Ereignis für Communities-Komponenten  {#osgi-events-for-communities-components}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen oder Gamification (Scoring und Abzeichen).
 
 Die [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) -Instanz einer Komponente zeichnet die Ereignis auf, die für eine `actions` `topic`Komponente auftreten. Das SocialEvent enthält eine Methode, um eine mit der Aktion `verb` verknüpfte Aktion zurückzugeben. Es gibt eine *n-1* Beziehung zwischen `actions` und `verbs`.
 
-Die folgenden Tabellen beschreiben die für die in der Version bereitgestellten Communities-Komponenten `verbs` , die für die einzelnen `topic` verfügbaren Komponenten definiert sind.
+Die folgenden Tabellen beschreiben die `verbs` Definition der in der Version bereitgestellten Communities-Komponenten für jede `topic` verfügbare Komponente.
 
 ## Themen und Verben {#topics-and-verbs}
 
@@ -32,18 +35,18 @@ Die folgenden Tabellen beschreiben die für die in der Version bereitgestellten 
 | **Verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt ein Ereignis im Kalender |
-| HINZUFÜGEN | Mitgliederkommentare für ein Kalendertool |
+| HINZUFÜGEN | Anmerkungen zu einem Ereignis |
 | UPDATE | Ereignis oder Kommentar des Mitglieds wird bearbeitet |
-| DELETE | Ereignis oder Kommentar des Mitglieds wird gelöscht |
+| DELETE | Ereignis oder Kommentar des Mitglieds wird gestrichen |
 
 [Kommentarkomponente](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt einen Kommentar |
-| HINZUFÜGEN | Antworten des Mitglieds auf Kommentar |
+| HINZUFÜGEN | Antworten des Mitglieds auf Bemerkungen |
 | UPDATE | Kommentar des Mitglieds wird bearbeitet |
-| DELETE | Kommentar des Mitglieds wird gelöscht |
+| DELETE | Anmerkung des Mitglieds wird gestrichen |
 
 [File Library Component](essentials-file-library.md)SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
@@ -52,14 +55,14 @@ Die folgenden Tabellen beschreiben die für die in der Version bereitgestellten 
 | POST | Mitglied erstellt einen Ordner |
 | ANLAGE | Mitglied lädt eine Datei hoch |
 | UPDATE | Mitglied aktualisiert einen Ordner oder eine Datei |
-| DELETE | löscht einen Ordner oder eine Datei |
+| DELETE | Mitglied löscht Ordner oder Dateien |
 
 [Forum Component](essentials-forum.md)SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt Forumthema |
-| HINZUFÜGEN | Mitgliederantworten zum Forenthema |
+| HINZUFÜGEN | Antworten der Mitglieder auf das Forenthema |
 | UPDATE | Forenthema oder Antwort des Mitglieds wird bearbeitet |
 | DELETE | Forenthema oder Antwort des Mitglieds wird gelöscht |
 
@@ -68,7 +71,7 @@ Die folgenden Tabellen beschreiben die für die in der Version bereitgestellten 
 | **Verb** | **Beschreibung** |
 |---|---|
 | POST | Mitglied erstellt einen Blog-Artikel |
-| HINZUFÜGEN | Kommentare zu einem Blog-Artikel |
+| HINZUFÜGEN | Kommentare zu Mitgliedern in einem Blog-Artikel |
 | UPDATE | Blog-Artikel oder Kommentar des Mitglieds wird bearbeitet |
 | DELETE | Blog-Artikel oder Kommentar des Mitglieds wird gelöscht |
 
@@ -76,41 +79,41 @@ Die folgenden Tabellen beschreiben die für die in der Version bereitgestellten 
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| POST | Mitglied erstellt eine QnA-Frage |
+| POST | Mitglied erstellt eine Frage zur QnA |
 | HINZUFÜGEN | Mitglied erstellt eine QnA-Antwort |
-| UPDATE | Frage oder Antwort des Mitglieds zur Servicequalität des Mitglieds wird bearbeitet |
+| UPDATE | Die Frage oder Antwort des Mitglieds zur Servicequalität wird bearbeitet |
 | SELECT | Antwort des Mitglieds ausgewählt |
-| AUSWAHL aufheben | Die Antwort des Mitglieds wird deaktiviert |
-| DELETE | Frage oder Antwort des Mitglieds zur Servicequalitätsprüfung wird gelöscht |
+| AUSWAHL aufheben | Antwort des Mitglieds wird deaktiviert |
+| DELETE | Frage oder Antwort des Mitglieds zur Servicequalität wird gelöscht |
 
 [Reviews Component](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| POST | Mitglied erstellt Review |
-| UPDATE | Überprüfung des Mitglieds wird bearbeitet |
-| DELETE | Überprüfung des Mitglieds wird gelöscht |
+| POST | Mitglied prüft |
+| UPDATE | Überprüfung durch die Mitglieder wird bearbeitet |
+| DELETE | Überprüfung durch das Mitglied wird gestrichen |
 
 [Bewertungskomponente](rating-basics.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |
 |---|---|
 | HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
-| RATING ENTFERNEN | der Inhalt des Mitglieds wurde heruntergesetzt |
+| RATING ENTFERNEN | Der Inhalt des Mitglieds wurde herabgesetzt |
 
 [Komponente](essentials-voting.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| HINZUFÜGEN ABSTIMMUNG | Der Inhalt des Mitglieds wurde abgestimmt |
-| ABSTIMMUNG ENTFERNEN | Inhalt des Mitglieds wurde abgelehnt |
+| HINZUFÜGEN ABSTIMMUNG | Der Inhalt des Mitglieds wurde zur Abstimmung gestellt |
+| ABSTIMMUNG ENTFERNEN | Der Inhalt des Mitglieds wurde abgelehnt |
 
 **Moderationsaktivierte Komponenten** SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** | **Beschreibung** |
 |---|---|
 | DENY | Inhalt des Mitglieds wird verweigert |
-| FLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds wird markiert |
+| FLAG-AS-INAPPROPRIATE | Der Inhalt des Mitglieds wird markiert |
 | UNFLAG-AS-INAPPROPRIATE | Der Inhalt des Mitglieds ist unmarkiert |
 | AKZEPT | Der Inhalt des Mitglieds wird vom Moderator genehmigt |
 | SCHLIESSEN | Mitglied schließt Kommentar zu Bearbeitungen und Antworten |
@@ -125,6 +128,7 @@ Das benutzerdefinierte Ereignis setzt die Methode außer Kraft, `getVerb()` soda
 >[!NOTE]
 >
 >Stellen Sie sicher, dass eine benutzerdefinierte Erweiterung mit einer niedrigeren Rangfolge registriert ist als jede vorhandene Implementierung im Produkt.
+
 
 ### Pseudo-Code für Ereignis einer benutzerdefinierten Komponente {#pseudo-code-for-custom-component-event}
 
