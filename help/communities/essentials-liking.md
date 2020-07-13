@@ -1,6 +1,6 @@
 ---
-title: Gefällt mir-Essentials
-seo-title: Gefällt mir-Essentials
+title: '"Gefällt mir"-Essentials'
+seo-title: '"Gefällt mir"-Essentials'
 description: Übersicht über Link-Komponenten
 seo-description: Übersicht über Link-Komponenten
 uuid: 89f16859-c901-4090-8e16-363b95c508de
@@ -11,18 +11,21 @@ content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 2%
 
 ---
 
 
-# Gefällt mir-Essentials {#liking-essentials}
+# &quot;Gefällt mir&quot;-Essentials {#liking-essentials}
 
 Die &quot;Gefällt mir&quot;-Komponente, eine [tally](tally.md) -Unterklasse, ist ein nützliches Werkzeug, mit dem Mitglieder eine positive Meinung zu einem bestimmten Inhalt äußern können, indem sie einfach das Herzsymbol auswählen.
 
 Das Platzieren mehrerer Instanzen einer &quot;Gefällt mir&quot;-Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` Eigenschaft konfiguriert werden.
 
-Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt. Site-Besucher müssen sich registrieren und sich anmelden, um an &quot;Gefällt mir&quot;teilzunehmen. Der angemeldete Besucher (Mitglied) kann jederzeit ein- und ausschalten.
+Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt. Site-Besucher müssen sich registrieren und sich anmelden, um an &quot;Gefällt mir&quot;teilzunehmen. Der angemeldete Besucher (Member) kann jederzeit ein- und ausgeschaltet werden.
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -38,7 +41,7 @@ Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterst
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td> cq.social.hbs.liken</td>
+   <td> cq.social.hbs.liking</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -65,19 +68,19 @@ Anonyme Veröffentlichung von &quot;Gefällt mir&quot;-Klicks wird nicht unterst
 
 * [Serverseitige Anpassungen](server-customize.md)
 
-### Zugriff auf gepostete Abstimmungen {#accessing-posted-voting-ugc}
+### Zugreifen auf gepostete Abstimmungen {#accessing-posted-voting-ugc}
 
-UGC sollte mit einer der Standardmethoden für Moderation moderiert werden.
+UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien zum Kodieren
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
+* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
