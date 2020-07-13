@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 20%
+ht-degree: 19%
 
 ---
 
@@ -27,10 +27,10 @@ Die `Leaderboard` Komponente bietet die Möglichkeit, einen Eindruck davon zu er
 
 Bevor Sie die Komponente &quot;Lederboard&quot;auf eine Seite einfügen, müssen Sie die Bewertung und Abzeichen der [Communities konfigurieren](/help/communities/implementing-scoring.md).
 
-In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
+Dieser Abschnitt der Dokumentation beschreibt:
 
-* Hinzufügen der `Leaderboard` Komponente zu einer [Community-Site](/help/communities/overview.md#community-sites)
-* Configuration settings for the `Leaderboard` component
+* Hinzufügen der `Leaderboard` Komponente zu einer [Community-Site](/help/communities/overview.md#community-sites).
+* Configuration settings for the `Leaderboard` component.
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -44,17 +44,19 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Leaderboard konfigurieren {#configuring-leaderboard}
 
 Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-20](assets/chlimage_1-20.png) ![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
-Geben Sie auf der Registerkarte &quot; **Einstellungen** &quot;an, welche Informationen zum Mitglied angezeigt werden sollen:
+Geben Sie auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &quot;an, welche Informationen zum Mitglied angezeigt werden sollen:
 
 * **Anzeigename**
 
@@ -100,7 +102,7 @@ Auf der Registerkarte &quot; **Regeln** &quot;finden Sie die Community-Site und 
 
 Dieser Bericht des Lederboards beruht auf der Anwendung grundlegender Bewertungsregeln.
 
-Konfiguration der Leaderboard-Komponenten:
+Konfiguration der Leaderboard-Komponente:
 
 * Registerkarte &quot;Einstellungen&quot;:
 
@@ -118,13 +120,13 @@ Konfiguration der Leaderboard-Komponenten:
    * Abzeichenregel = `/libs/settings/community/badging/rules//reference-badging`
    * Anzeigelimit = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Beispiel: Expert Leaderboard {#example-experts-leaderboard}
 
 Dieser Bericht des Lederboards ist das Ergebnis der Anwendung erweiterter Bewertungsregeln.
 
-Konfiguration der Leaderboard-Komponenten:
+Konfiguration der Leaderboard-Komponente:
 
 * Registerkarte &quot;Einstellungen&quot;:
 
@@ -141,7 +143,7 @@ Konfiguration der Leaderboard-Komponenten:
    * Abzeichenregel = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Anzeigelimit = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Zusätzliche Informationen {#additional-information}
 
