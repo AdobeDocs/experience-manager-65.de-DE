@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 3%
 
 ---
 
@@ -66,17 +69,17 @@ Eine Community-Site-Struktur, die die [Dateibibliotheksfunktion](functions.md#fi
 
 ### Zugriff auf für Dateibibliotheken gepostete Kommentare {#accessing-comments-posted-for-file-libraries-ugc}
 
-UGC sollte mit einer der Standardmethoden für Moderation moderiert werden.
+UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Speicherressourcen-Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien zum Kodieren
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
+* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
