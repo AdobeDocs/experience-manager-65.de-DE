@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 14%
 
 ---
 
@@ -48,7 +51,7 @@ Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe, <a href="/help/communities/assignments.md">Zuweisungsfunktion</a></td>
+   <td>Siehe <a href="/help/communities/assignments.md">Zuweisungsfunktion</a></td>
   </tr>
  </tbody>
 </table>
@@ -91,5 +94,5 @@ Eine Community-Site-Struktur, die die [Zuweisungsfunktion](/help/communities/fun
 
 * [Berichte-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Berichte Analytics-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Berichte Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 
