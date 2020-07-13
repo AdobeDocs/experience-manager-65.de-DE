@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
 
-# Community-Gruppengrundlagen {#community-group-essentials}
+# Community-Gruppengrundlagen  {#community-group-essentials}
 
 Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern aus der Umgebung &quot;Veröffentlichen&quot;und &quot;Autor&quot;erstellt zu werden.
 
@@ -33,7 +36,7 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack)können 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.communityGroups</td>
+   <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -60,7 +63,7 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack)können 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.communityGroups</td>
+   <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -95,10 +98,11 @@ Die Einbeziehung mehrerer Community-Gruppenvorlagen führt dazu, dass dem autori
 
 Ab Communities [FP1](deploy-communities.md#latestfeaturepack)ist es möglich, eine Funktion &quot;Gruppen&quot;in eine Gruppenvorlage einzubinden und somit verschachtelte Gruppen (Untergruppen) zu ermöglichen.
 
-Wenn eine Community-Site oder Gruppenvorlage die Funktion Gruppen enthält, können Sie
+Wenn eine Community-Site oder Gruppenvorlage die Funktion Gruppen enthält, können Sie Folgendes tun:
 
-* Erstellen einer Unter-Community in der Autorenversion-Umgebung
-* Erstellen Sie eine Gruppe in der Umgebung &quot;Veröffentlichen&quot;, wenn diese für die
+* Erstellen Sie eine Untergemeinschaft in der Autorenversion-Umgebung.
+
+* Erstellen Sie in der Umgebung &quot;Veröffentlichen&quot;eine Gruppe, wenn diese für deren Zulassen konfiguriert ist.
 
 Wenn Sie eine Gruppe in der Autorengruppe erstellen, müssen Sie zuerst die Community-Umgebung veröffentlichen und dann die Gruppe veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Untergruppen der Community erstellt werden, in denen die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
 
