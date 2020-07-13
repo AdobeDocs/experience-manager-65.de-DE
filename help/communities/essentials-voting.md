@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +40,7 @@ Anonyme Entsendung einer Stimme wird nicht unterstützt. Site-Besucher müssen s
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td> cq.social.hbs.stimmte</td>
+   <td> cq.social.hbs.voting</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -49,7 +52,7 @@ Anonyme Entsendung einer Stimme wird nicht unterstützt. Site-Besucher müssen s
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td><p>Siehe, <a href="voting.md">Abstimmungen</a></p> </td>
+   <td><p>Siehe <a href="voting.md">Verwenden der Stimme</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -75,8 +78,8 @@ Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](work
 
 Siehe:
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
+* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
