@@ -221,7 +221,7 @@ Ziehen Sie die **[!UICONTROL 3D-Medienkomponente]** aus der Liste &quot; **[!UIC
 
 Sie können der Komponente jetzt ein 3D-Asset zuweisen.[](#assigning-a-three-d-asset-to-the-component)
 
-### Siehe [Zuweisen eines 3D-Assets zu einer 3D-Medienkomponente.](#assigning-a-three-d-asset-to-the-component)
+### Siehe Zuweisen eines 3D-Assets zu einer 3D-Medienkomponente.(#assigning-a-three-d-asset-to-the-component)
 
 1. Optional - Konfigurieren der 3D-Medienkomponente {#configuring-the-three-d-component}]**
 1. In the AEM Sites page editor, select the **[!UICONTROL 3D Media Viewer]** component that you previously added to the page.
