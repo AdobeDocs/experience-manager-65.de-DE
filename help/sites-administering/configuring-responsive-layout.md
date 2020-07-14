@@ -59,33 +59,33 @@ Haltepunkte (die eine Gerätegruppierung anzeigen), um unterschiedliches Verhalt
 * Ausblenden von Komponenten basierend auf der Gerätegruppe (definieren Sie, an welchem Haltepunkt eine Komponente ausgeblendet werden soll)
 * Horizontale Ausrichtung am Raster (platzieren Sie Komponenten im Raster, passen Sie die Größe an, definieren Sie, wann ein Reduzieren/Umfließen daneben oder drüber/darunter stattfinden soll).
 * Realisieren einer Spaltensteuerung.
-* [!NOTE]
-
->Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. Sie müssen [die Layout-Container-Komponente für andere Seiten nach wie vor aktivieren](#enable-the-layout-container-component-for-page).
+> [!NOTE]
 >
->Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}](/help/sites-developing/we-retail.md)[](#enable-the-layout-container-component-for-page)
+>Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. Sie müssen [die Layout-Container-Komponente für andere Seiten nach wie vor aktivieren](#enable-the-layout-container-component-for-page).
 
-## Mit diesen Aufgaben können Sie den responsiven **Emulator** auf Ihrer Website anzeigen.
+## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}](/help/sites-developing/we-retail.md)[](#enable-the-layout-container-component-for-page)
 
-Registrieren der Seitenkomponenten für die Emulation {#register-your-page-components-for-emulation}**
+ Mit diesen Aufgaben können Sie den responsiven **Emulator** auf Ihrer Website anzeigen.
 
-### Um die Emulator-Unterstützung für Ihre Seiten zu aktivieren, müssen Sie die Seitenkomponenten registrieren. Weitere Informationen finden Sie unter [Registrieren von Seitenkomponenten für die Simulation](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+### Registrieren der Seitenkomponenten für die Emulation {#register-your-page-components-for-emulation}**
 
-Festlegen der Gerätegruppen {#specify-the-device-groups}](/help/sites-developing/responsive.md#registering-page-components-for-simulation)
+Um die Emulator-Unterstützung für Ihre Seiten zu aktivieren, müssen Sie die Seitenkomponenten registrieren. Weitere Informationen finden Sie unter [Registrieren von Seitenkomponenten für die Simulation](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
 
-### Informationen dazu, wie Sie die Gerätegruppen festlegen, die in der Geräteliste des Emulators angezeigt werden, finden Sie unter [Festlegen der Gerätegruppen](/help/sites-developing/responsive.md#specifying-the-device-groups).
+### Festlegen der Gerätegruppen {#specify-the-device-groups}](/help/sites-developing/responsive.md#registering-page-components-for-simulation)
 
-Verknüpfen der Website mit den festgelegten Gerätegruppen {#link-your-site-to-the-specified-device-groups}](/help/sites-developing/responsive.md#specifying-the-device-groups)
+Informationen dazu, wie Sie die Gerätegruppen festlegen, die in der Geräteliste des Emulators angezeigt werden, finden Sie unter [Festlegen der Gerätegruppen](/help/sites-developing/responsive.md#specifying-the-device-groups).
 
-### Um den Emulator einzubinden, müssen Sie die Website mit den Gerätegruppen verknüpfen. See [Adding the Devices List](/help/sites-developing/responsive.md#adding-the-devices-list) (for both the classic and touch-optimized UI).
+### Verknüpfen der Website mit den festgelegten Gerätegruppen {#link-your-site-to-the-specified-device-groups}](/help/sites-developing/responsive.md#specifying-the-device-groups)
 
-Aktivieren des Layout-Modus für die Website {#activate-layout-mode-for-your-site}](/help/sites-developing/responsive.md#adding-the-devices-list)
+Um den Emulator einzubinden, müssen Sie die Website mit den Gerätegruppen verknüpfen. See [Adding the Devices List](/help/sites-developing/responsive.md#adding-the-devices-list) (for both the classic and touch-optimized UI).
 
-## These procedures are used to enable the **Layout** mode on your site.
+## Aktivieren des Layout-Modus für die Website {#activate-layout-mode-for-your-site}](/help/sites-developing/responsive.md#adding-the-devices-list)
 
-Konfigurieren der Haltepunkte {#configure-the-breakpoints}**
+These procedures are used to enable the **Layout** mode on your site.
 
-### [Haltepunkte](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate):
+### Konfigurieren der Haltepunkte {#configure-the-breakpoints}**
+
+[Haltepunkte](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate):
 
 [werden bei responsiven Designs genutzt](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 
