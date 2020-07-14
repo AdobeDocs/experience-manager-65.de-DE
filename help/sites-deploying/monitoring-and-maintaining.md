@@ -214,17 +214,17 @@ Enthält Protokollmeldungen, die auf Ereignisse beim Starten verweisen.`WARN`
 Stellt ein Protokoll aller Aktualisierungsvorgänge bereit, die von den Paketen `com.day.compat.codeupgrade` und `com.adobe.cq.upgradesexecutor` ausgeführt werden.
 
    * `<*cq-installation-dir*>/crx-quickstart/repository`
-`revision.log`
+* `revision.log`
 Überarbeitung der Journalinformationen.`com.adobe.cq.upgradesexecutor`
 
-* [!NOTE]
+>[!NOTE]
+>
+>Die ImageServer- und s7access-Protokolle sind nicht im **Download Full **Package enthalten, das aus der **system/console/status-bundlelist **Seite generiert wurde. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
 
-   * Die ImageServer- und s7access-Protokolle sind nicht im **Download Full **Package enthalten, das aus der **system/console/status-bundlelist **Seite generiert wurde. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
-
->Aktivieren der DEBUG-Protokollebene {#activating-the-debug-log-level}
+### Aktivieren der DEBUG-Protokollebene {#activating-the-debug-log-level}
 Die Standard-Protokollebene ([Apache Sling-Protokollierungskonfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) ist „Information“, d. h. es werden keine Debugging-Meldungen protokolliert.
 
-### Um die Debugging-Protokollebene für eine Protokollierung zu aktivieren, müssen Sie für die Eigenschaften `org.apache.sling.commons.log.level` im Repository den Wert „debug“ festlegen. For example, on `/libs/sling/config/org.apache.sling.commons.log.LogManager` to configure the [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
+Um die Debugging-Protokollebene für eine Protokollierung zu aktivieren, müssen Sie für die Eigenschaften `org.apache.sling.commons.log.level` im Repository den Wert „debug“ festlegen. For example, on `/libs/sling/config/org.apache.sling.commons.log.LogManager` to configure the [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 [!CAUTION]](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
 
@@ -245,11 +245,15 @@ Schwerwiegender Fehler
 |---|---|---|
 | Die Aktion ist fehlgeschlagen. Die Installation wird fortgesetzt, ein Teil des AEM WCM-Systems wird jedoch nicht richtig installiert und funktioniert nicht. | 2 | Warnung |
 | Die Aktion war erfolgreich, stieß aber auf Probleme. Das AEM WCM-System funktioniert möglicherweise nicht ordnungsgemäß. | 3 | Informationen |
-| Die Aktion war erfolgreich. | Erstellen einer benutzerdefinierten Protokolldatei {#create-a-custom-log-file} | [!NOTE] |
+| Die Aktion war erfolgreich. | 
 
-### Beim Arbeiten mit Adobe Experience Manager haben Sie mehrere Möglichkeiten, die Konfigurationseinstellungen für Dienste zu verwalten. Einzelheiten und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+### Erstellen einer benutzerdefinierten Protokolldatei {#create-a-custom-log-file}
 
->[!NOTE]Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte Protokolldatei mit einer anderen Protokollebene erstellen. Gehen Sie dazu im Repository wie folgt vor:
+>[!NOTE]
+>
+>Beim Arbeiten mit Adobe Experience Manager haben Sie mehrere Möglichkeiten, die Konfigurationseinstellungen für Dienste zu verwalten. Einzelheiten und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+
+Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte Protokolldatei mit einer anderen Protokollebene erstellen. Gehen Sie dazu im Repository wie folgt vor:
 Erstellen Sie, falls nicht bereits vorhanden, einen neuen Konfigurationsordner (`sling:Folder`) für das Projekt `/apps/<*project-name*>/config`.
 
 Erstellen Sie unter `/apps/<*project-name*>/config`[ einen Knoten für die neue Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
@@ -600,7 +604,9 @@ Sammeln Sie so viele Informationen wie möglich, um sich ein gutes Bild des Syst
  </tbody>
 </table>
 
-### `request.log` ist eine integrierte Möglichkeit, herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, den Befehl `tail -f` auf `request.log` anzuwenden und nach langen Systemreaktionen zu suchen. Für das Analysieren einer größeren `request.log` empfiehlt sich die [Verwendung von `rlog.jar`, damit Sie nach Systemreaktionszeiten filtern und diese sortieren können](#using-rlog-jar-to-find-requests-with-long-duration-times).
+### request.log {#interpreting-the-request-log}
+
+`request.log` ist eine integrierte Möglichkeit, herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, den Befehl `tail -f` auf `request.log` anzuwenden und nach langen Systemreaktionen zu suchen. Für das Analysieren einer größeren `request.log` empfiehlt sich die [Verwendung von `rlog.jar`, damit Sie nach Systemreaktionszeiten filtern und diese sortieren können](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
 Es wird empfohlen, „langsame“ Seiten aus `request.log` zu isolieren und einzeln für eine bessere Leistung zu optimieren. Dazu können Sie Leistungsmetriken pro Komponente oder ein Leistungprofil-Tool wie ` [yourkit](https://www.yourkit.com/)` verwenden. 
 
@@ -734,9 +740,7 @@ $ java -jar ../opt/helpers/rlog.jar -n 10 request.log
 
 Um die Auswirkungen von Sonderfällen (z. B. Bereinigung usw.) zu minimieren, wird empfohlen, ein Tool wie `apachebench` zu verwenden (siehe z. B. die [ab[#$tu387]-Dokumentation), um Speicherlecks zu identifizieren und Antwortzeiten selektiv zu analysieren.
 
-### 
-
-
+### Apache Bench {#apache-bench}
 
 `apachebench` zeigt auch die Zeit pro Anforderung als Mittelwert für alle gleichzeitigen Anforderungen an; siehe `Time per request: 54.595 [ms]` (Mittelwert für alle gleichzeitigen Anforderungen). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
 
