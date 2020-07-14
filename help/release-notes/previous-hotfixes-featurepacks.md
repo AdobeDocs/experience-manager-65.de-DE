@@ -3,9 +3,9 @@ title: Adobe Experience Manager 6.5 Versionshinweise zu früheren Service Packs
 description: Versionshinweise speziell für Adobe Experience Manager 6.5 Service Pack 3 und früher.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '8102'
+source-wordcount: '8108'
 ht-degree: 37%
 
 ---
@@ -506,7 +506,7 @@ Remove one mention of this fix.
 
 * Der SOAP-Webdienst, der MTOM in einem .NET-Projekt verwendet, zeigt Ausnahmen für AssemblerServiceClient-Aufrufe und HtmlToPDF2-Methoden (NPR-4281771) an.
 
-* Die Axis-JAR-Versionen 1.4 und 1.4.1 enthalten eine Sicherheitslücke (NPR-31015).
+* [Die Axis-JAR-Versionen 1.4 und 1.4.1](https://helpx.adobe.com/de/aem-forms/quick-fixes/6-5/jee-patch-0014.html) enthalten eine Sicherheitslücke (NPR-31015).
 
 **Foundation JEE**
 
