@@ -63,7 +63,7 @@ Haltepunkte (die eine Gerätegruppierung anzeigen), um unterschiedliches Verhalt
 >
 >Bei einer vorab konfigurierten Installation wurde das responsive Layout für die [We.Retail-Referenzwebsite](/help/sites-developing/we-retail.md) konfiguriert. Sie müssen [die Layout-Container-Komponente für andere Seiten nach wie vor aktivieren](#enable-the-layout-container-component-for-page).
 
-## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}](/help/sites-developing/we-retail.md)[](#enable-the-layout-container-component-for-page)
+## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}
 
  Mit diesen Aufgaben können Sie den responsiven **Emulator** auf Ihrer Website anzeigen.
 
