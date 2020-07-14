@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+source-git-commit: d621a612556f0bea032444c2e07be101868b1905
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3371'
 ht-degree: 76%
 
 ---
@@ -68,11 +68,11 @@ See [Discover Sling in 15 minutes](https://sling.apache.org/documentation/gettin
 
 Das folgende Diagramm erläutert die Sling-Skriptauflösung: Es wird gezeigt, wie Sie von der HTTP-Anforderung zum Inhaltsknoten, vom Inhaltsknoten zum Ressourcentyp, vom Ressourcentyp zum Skript gelangen und welche Skriptvariablen verfügbar sind.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
+![Die Auflösung des Apache Sling-Skripts](assets/sling-cheatsheet-01.png)
 
 Das folgende Diagramm erläutert alle ausgeblendeten, aber leistungsfähigen Anforderungsparameter, die Sie beim Umgang mit dem SlingPostServlet verwenden können, dem Standardhandler für alle POST-Anforderungen, der Ihnen endlose Optionen zum Erstellen, Ändern, Löschen, Kopieren und Verschieben von Knoten im Repository bietet.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![Verwenden des SlingPostServlet](assets/sling-cheatsheet-02.png)
 
 ### Sling ist inhaltszentriert {#sling-is-content-centric}
 
