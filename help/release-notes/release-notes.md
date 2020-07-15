@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 7d3ceccb-4f00-4e11-9c9f-6de46a455e02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 23dfcc944a83dd683078cfe00f85c4cc734e7752
+workflow-type: tm+mt
+source-wordcount: '2182'
+ht-degree: 82%
 
 ---
 
@@ -53,7 +56,7 @@ Adobe Experience Manager 6.5 ist seit dem 8. April 2019 allgemein verfügbar.
 
 Adobe Experience Manager 6.5 ist eine Upgradeversion für die Codebasis von Adobe Experience Manager 6.4. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Darüber hinaus enthält Adobe Experience Manager 6.4 Service Pack-Versionen bis SP4.
 
-Die nachstehende Liste bietet eine Übersicht - während die nachfolgenden Seiten die vollständigen Details auflisten.
+Die nachstehende Liste gibt einen Überblick - während die nachfolgenden Seiten die vollständigen Details Liste.
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
@@ -77,7 +80,7 @@ Quickstart verwendet Eclipse Jetty 9.4.15 als Servlet-Engine.
 
 Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundlicher zu gestalten.
 
-* Neue Benutzeroberfläche zur Verwaltung von Berechtigungen für Benutzer und Gruppen
+* Neue Benutzeroberfläche für die Berechtigungsverwaltung für Benutzer und Gruppen
 * In Spaltenansichten werden nun auch nur noch die Einträge geladen, die auf dem Bildschirm sichtbar sind. Weitere Einträge werden lediglich geladen, wenn der Anwender einen Bildlauf durchführt. In der Listen- und Kartenansicht wurde so bereits seit Version 6.0 verfahren (verbessert in Version 6.4).
 * Spaltenansichten enthalten nun ggf. den Workflowstatus für Seiten/Assets.
 * Die Aktion [Alle auswählen](/help/sites-authoring/basic-handling.md#select-all) ist eine schnelle Möglichkeit, eine Aktion mit allen Seiten/Assets im selben Ordner auszuführen.
@@ -89,7 +92,7 @@ Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundl
 
 #### Suche und Indizierung {#search-indexing}
 
-* Die Suche in Oak unterstützt jetzt dynamische Facetten. Beispielsweise zeigt die Filterleiste in der Elementsuche die geschätzte Ergebnismenge an.
+* Die Suche in Oak unterstützt jetzt dynamische Facetten. Beispielsweise zeigt die Filterleiste in der Asset-Suche die geschätzte Ergebnismenge an.
 * QueryBuilder wurde erweitert und liefert nun Ergebnisse mit dynamischen Facetten.
 
 #### Aktualisierung {#upgrade}
@@ -142,7 +145,7 @@ Sie können Erlebnisse effizient entwickeln, bereitstellen und optimieren, und z
 * Ortsbezogene Personalisierung oder Konfiguration von datenbasierten Inhalten durch Nutzung dynamischer Platzhalter
 * Einheitliche Einblicke durch die Adobe Analytics-Integration in AEM Screens Player
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Assets {#experience-manager-assets}
 
@@ -152,7 +155,7 @@ AEM 6.5 beinhaltet die folgenden neuen Funktionen und Erweiterungen mit denen A
 
 #### Integrieren in Adobe Creative Cloud {#integration-with-adobe-creative-cloud}
 
-Neu hinzugekommen ist [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html). Damit profitieren kreative Anwender, die mit Adobe Creative Cloud-Anwendungen wie Photoshop, Illustrator und InDesign arbeiten, von In-App-Erlebnissen – für eine optimierte Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Die AEM-Desktop-App unterstützt weiterhin die Anforderungen von Benutzern, die mit Assets von AEM auf dem Desktop arbeiten und dabei beliebige Dateitypen und Desktopanwendungen verwenden.
+Neu hinzugekommen ist [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html). Damit profitieren kreative Anwender, die mit Adobe Creative Cloud-Anwendungen wie Photoshop, Illustrator und InDesign arbeiten, von In-App-Erlebnissen – für eine optimierte Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Die AEM-Desktop-App unterstützt weiterhin die Anforderungen von Benutzern, die mit Assets von AEM auf dem Desktop arbeiten und dabei beliebige Dateitypen und Desktopanwendungen verwenden.
 
 Darüber hinaus ist AEM in Adobe Stock integriert und ermöglicht so die Suche, Vorschau, Lizenzierung und Speicherung von Adobe Stock-Assets direkt über die AEM-Web-UI.
 
@@ -160,7 +163,7 @@ Darüber hinaus ist AEM in Adobe Stock integriert und ermöglicht so die Suche, 
 
 #### Connected Assets {#connected-assets}
 
-Die Funktion &quot;Connected Assets&quot;ist auf größere Bereitstellungen mit einer Reihe von AEM-Sites ausgerichtet, bei denen Assets von einer zentralen AEM Assets DAM-Bereitstellung genutzt werden müssen. Dadurch wird nicht nur die Governance im Zusammenhang mit zentral verwalteten Assets verbessert, sondern auch eine hocheffiziente Bereitstellung von Assets für verschiedene Sites-Implementierungen ermöglicht.
+Die Funktion &quot;Connected Assets&quot;ist auf größere Bereitstellungen mit einer Reihe von AEM Sites ausgerichtet, die Assets aus einer DAM-Bereitstellung für zentrale AEM Assets nutzen müssen. Dadurch wird nicht nur die Governance im Zusammenhang mit zentral verwalteten Assets verbessert, sondern auch eine hocheffiziente Bereitstellung von Assets für verschiedene Sites-Implementierungen ermöglicht.
 
 ### Dynamic Media {#dynamic-media}
 
@@ -217,7 +220,7 @@ Livefyre lässt sich in AEM 6.5-Instanzen integrieren. Weitere Informationen zu
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation bis zur Entwicklung und zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
-Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungs- und Verbesserungsanforderungsentwicklung zu ermöglichen. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kundendienst identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Berichterstellungszwecken verwendet. Bei der Entwicklung haben bezahlte Support- und Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
+Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungs- und Verbesserungsanforderungsentwicklung zu ermöglichen. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kundendienst identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Berichterstellungszwecken verwendet. Bei der Entwicklung haben bezahlte Support- und Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
 
 Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
 
@@ -227,7 +230,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderu
 
 * Standalone-Quickstart: cq-quickstart-6.5.0.jar
 * Anwendungsserver-Schnellstart: cq-quickstart-6.5.0.war
-* Dispatcher 4.3.2 oder höher für verschiedene Webserver und Plattformen ([Downloadlink](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
+* Dispatcher 4.3.2 oder höher für verschiedene Webserver und Plattformen ([Downloadlink](https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html))
 * Plug-in für Eclipse IDE ([weitere Informationen und Download](/help/sites-developing/aem-eclipse.md))
 
 * Erweiterung für Brackets-Code-Editor ([weitere Informationen und Download](/help/sites-developing/aem-brackets.md))
@@ -246,10 +249,10 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderu
 
 * Smart Content-Sprachmodelle. Englisch ist vorinstalliert, weitere Sprachen können heruntergeladen werden.
 
-   * [Deutsch](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [Spanisch](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [Italienisch](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [Französisch](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [Deutsch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+   * [Spanisch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+   * [Italienisch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+   * [Französisch](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM Modernize Tools Suite, z. B. Dialog Conversion Tool (Dialogfeldkonvertierungs-Tool) ([GitHub-Projekt](https://github.com/adobe/aem-modernize-tools))
 
@@ -258,7 +261,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderu
 * Paket zum Hinzufügen der erweiterten PDF Rasterizer-Bibliothek ([weitere Informationen](/help/assets/aem-pdf-rasterizer.md))
 * Paket zum Hinzufügen von erweiterter Rohbildunterstützung ([weitere Informationen](/help/assets/camera-raw.md))
 
-**Forms**
+**Formulare**
 
 * [Pakete für AEM Forms-Funktionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 * [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
@@ -272,7 +275,7 @@ Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
 * Französisch
 * Spanisch
 * Italienisch
-* Brasilianisches Portugiesisch
+* Brasilianisches       Portugiesisch
 * Japanisch
 * Vereinfachtes Chinesisch
 * Traditionelles Chinesisch (begrenzte Unterstützung)
