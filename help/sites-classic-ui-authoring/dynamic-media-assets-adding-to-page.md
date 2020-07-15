@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 23dfcc944a83dd683078cfe00f85c4cc734e7752
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 58%
+source-wordcount: '1723'
+ht-degree: 57%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können dynamische Medienelemente direkt zur Seite hinzufügen, wenn Sie AEM
 >
 >Imagemaps sind für Karussellbanner umgehend verfügbar.
 
-## Hinzufügen einer Dynamic Media-Komponente zu einer Seite       {#adding-a-dynamic-media-component-to-a-page}
+## Hinzufügen einer Dynamic Media-Komponente zu einer Seite         {#adding-a-dynamic-media-component-to-a-page}
 
 Adding the [!UICONTROL Dynamic Media] or [!UICONTROL Interactive Media] component to a page is the same as adding a component to any page. The [!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] components are described in detail in the following sections.
 
@@ -58,7 +58,7 @@ So fügen Sie einer Seite eine Komponente bzw. einen Viewer vom Typ „Dynamisch
 
 ### Komponente „Dynamische Medien“{#dynamic-media-component}
 
-Die Komponente &quot;Dynamic Media&quot;ist intelligent. Je nachdem, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, gemischte Mediensets und Videos. Darüber hinaus reagiert der Viewer. Das heißt, die Bildschirmgröße ändert sich automatisch je nach Bildschirmgröße. Alle Viewer sind HTML5-basierte Viewer.
+Die Komponente &quot;Dynamic Media&quot;ist intelligent. Je nachdem, ob Sie ein Bild oder ein Video hinzufügen, stehen Ihnen verschiedene Optionen zur Verfügung. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bild-Sets sowie Rotations-Sets, Sets für gemischte Medien und Videos. Darüber hinaus reagiert der Viewer. Das heißt, die Bildschirmgröße ändert sich automatisch je nach Bildschirmgröße. Alle Viewer sind HTML5-basierte Viewer.
 
 >[!NOTE]
 >
@@ -71,9 +71,9 @@ Die Komponente &quot;Dynamic Media&quot;ist intelligent. Je nachdem, ob Sie ein 
 
 
 
-#### Arbeiten mit Bildern       {#when-working-with-images}
+#### Arbeiten mit Bildern         {#when-working-with-images}
 
-The [!UICONTROL Dynamic Media] component lets you add dynamic images, including image sets, spin sets, and mixed media sets. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
+The [!UICONTROL Dynamic Media] component lets you add dynamic images, including image sets, spin sets, and mixed media sets. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotations-Set drehen oder ein Bild aus einem anderen Set auswählen.
 
 Sie können zudem die Viewer-Vorgabe, Bildvorgabe oder das Bildformat direkt in der Komponente konfigurieren. Um ein Bild dynamisch zu machen, können Sie die Haltepunkte festlegen oder eine dynamische Bildvorgabe anwenden.
 
@@ -89,19 +89,19 @@ You can edit the following Dynamic Media settings by clicking **[!UICONTROL Edit
 
 **[!UICONTROL Viewer-Vorgabe]** : Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-Dies ist die einzig verfügbare Option beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent - es werden nur relevante Viewer-Vorgaben angezeigt.
+Dies ist die einzig verfügbare Option beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent - es werden nur relevante Viewer-Vorgaben angezeigt.
 
 **[!UICONTROL Bildvorgabe]** : Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 **[!UICONTROL Bildmodifikatoren]** : Sie können Bildeffekte ändern, indem Sie zusätzliche Bildbefehle bereitstellen. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
-Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 **[!UICONTROL Haltepunkte]** : Wenn Sie dieses Asset auf einer responsive Site verwenden, müssen Sie die Seitenumbruchpunkte hinzufügen. Bildhaltepunkte müssen durch Kommas (,) voneinander getrennt werden. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
 
-Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
 
@@ -109,11 +109,11 @@ You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONT
 
 **[!UICONTROL Alt-Text]** - Hinzufügen ein Titel für die Benutzer, die Grafiken deaktiviert haben.
 
-Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 **[!UICONTROL URL, Öffnen in]** - Sie können ein Asset vom zum Öffnen eines Links festlegen. Set the **[!UICONTROL URL]** and **[!UICONTROL Open in]** to indicate whether you want it to open in the same window or a new window.
 
-Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 **[!UICONTROL Breite und Höhe]** - Geben Sie den Wert in Pixel ein, wenn das Bild eine feste Größe haben soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
@@ -139,7 +139,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 #### Sichere Videowiedergabe {#how-to-delivery-secure-video}
 
-Wenn Sie in AEM 6.2 [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installieren, können Sie festlegen, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) wiedergegeben wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Webseite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP wiedergegeben, wenn die Webseite HTTP verwendet. In den meisten Fällen ist dieses Verhalten korrekt und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch außer Kraft setzen, indem Sie `VideoPlayer.ssl=on` am Ende des URL-Pfades oder zur Liste weiterer Viewer-Konfigurationsparameter in einem Embed-Code-Snippet hinzufügen, um eine sichere Videowiedergabe zu erzwingen.
+Wenn Sie in AEM 6.2 [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480) installieren, können Sie festlegen, ob ein Video über eine sichere SSL-Verbindung (HTTPS) oder eine unsichere Verbindung (HTTP) wiedergegeben wird. Standardmäßig wird automatisch das Videowiedergabeprotokoll der Webseite übernommen, in die das Video eingebettet wird. Wenn die Webseite über HTTPS geladen wird, wird das Video ebenfalls über HTTPS wiedergegeben. Umgekehrt wird das Video über HTTP wiedergegeben, wenn die Webseite HTTP verwendet. In den meisten Fällen ist dieses Verhalten korrekt und es müssen keine Konfigurationsänderungen vorgenommen werden. Sie können dieses Standardverhalten jedoch außer Kraft setzen, indem Sie `VideoPlayer.ssl=on` am Ende des URL-Pfades oder zur Liste weiterer Viewer-Konfigurationsparameter in einem Embed-Code-Snippet hinzufügen, um eine sichere Videowiedergabe zu erzwingen.
 
 Weitere Informationen zur sicheren Videowiedergabe sowie zur Verwendung des Konfigurationsattributs `VideoPlayer.ssl` in Ihrem URL-Pfad finden Sie im Referenzhandbuch zu den Viewern unter [Sichere Videowiedergabe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html). Abgesehen vom Video-Viewer ist sicherer Video-Versand für den Viewer für gemischte Medien und den Viewer für interaktive Videos verfügbar.
 
