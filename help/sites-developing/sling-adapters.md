@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
+source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
 workflow-type: tm+mt
 source-wordcount: '2100'
-ht-degree: 42%
+ht-degree: 44%
 
 ---
 
@@ -34,7 +34,7 @@ Es gibt die folgenden Nutzungsszenarien:
 
 * Rufen Sie spezifische Objekte für die Implementierung ab.
 
-   For example, a JCR-based implementation of the generic [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interface provides access to the underlying JCR [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).`
+    Eine JCR-basierte Implementierung der generischen [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html)-Schnittstelle ermöglicht beispielsweise Zugriff auf das zugrunde liegende JCR-[`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)-Element.
 
 * Erstellung von direkten Verknüpfungen für Objekte, für die interne Kontextobjekte übergeben werden müssen.
 
@@ -70,7 +70,7 @@ Es gibt aber keine allgemeine Regel. Bei dem Objekt kann es sich entweder um ein
 There are various ways that `Adaptable.adaptTo()` can be implemented:
 
 * Über das Objekt selbst. Die eigentliche Methode wird implementiert und dann erfolgt die Zuordnung zu bestimmten Objekten.
-* By an [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)`, which can map arbitrary objects.
+* Über ein [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)-Element, mit dem zufällige Objekte zugeordnet werden können.
 
     Die Objekte müssen trotzdem noch die `Adaptable`-Schnittstelle implementieren und [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (übergibt den `adaptTo`-Aufruf an einen zentralen Adapter-Manager) erweitern.
 
