@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29b1a151a6c284fcb0bf01de425dfba79f5943c2
+source-git-commit: f4dcf58d70ea5a17617ef1e80942de7db3233031
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2464'
 ht-degree: 2%
 
 ---
@@ -102,7 +102,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
 ## Automatisierte Formularkonvertierung (Camila) {#automated-forms-conversion}
 
-**Dieser Abschnitt**: Camila der CX Lead verfügt über ein älteres PDF-basiertes Formular, das als Teil eines papierbasierten Prozesses verwendet wurde. Im Rahmen der Modernisierung möchte sie dieses PDF-Formular verwenden, um automatisch neue adaptive Formulare zu erstellen.
+**Dieser Abschnitt**: Camila the CX Lead verfügt über ein PDF-basiertes Formular, das als Teil eines papierbasierten Prozesses verwendet wurde. Im Rahmen der Modernisierung möchte sie dieses PDF-Formular verwenden, um automatisch neue adaptive Formulare zu erstellen.
 
 ### Automatisierte Formularkonvertierung - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -116,7 +116,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
    ![Formular hochladen](assets/aftia-upload-form.jpg)
 
-1. Camilla wählt dann eine Aufgabe zur automatisierten Formularkonvertierung aus
+1. Camilla wählt dann das PDF-Formular aus und klickt auf **Beginn Automatisierte Konvertierung** , um den Konvertierungsprozess Beginn. Wenn Sie das Formular konvertiert haben, müssen Sie möglicherweise auf Konvertierung **** überschreiben klicken.
 
    >[!NOTE]
    >
@@ -124,9 +124,11 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
    * **Optional**: Wenn Sie das Design Accessible Ultramarine verwenden möchten, klicken Sie einfach auf das Design Adaptives Formular angeben und wählen Sie das Thema Accessible-Ultramarine aus, das in der Liste der Optionen angezeigt wird.
 
+   ![Beginn-Umrechnung](assets/aftia-start-conversion.jpg)
+
    ![Ultramarine-Design](assets/aftia-upload-conversion-settings.jpg)
 
-   ![Beginn-Umrechnung](assets/aftia-start-conversion.jpg)
+   Der Status &quot;Prozentsatz abgeschlossen&quot;wird während der Konvertierung angezeigt. Sobald der Status &quot; **Konvertiert**&quot;angezeigt wird, klicken Sie auf den **Ausgabeordner** , wählen Sie das adaptive Formular aus und klicken Sie auf &quot; **Bearbeiten** &quot;, um das konvertierte Formular zu öffnen.
 
 1. Camilla prüft dann das Formular und stellt sicher, dass alle Felder vorhanden sind
 
@@ -156,7 +158,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
 Camila überprüft auch, ob die erstellten Inhalte korrekt und vollständig zugänglich gemäß den Unternehmensstandards erstellt wurden.
 
-1. Camila öffnet das ausgefüllte Formular We.Gov.
+1. Camila klickt auf den **Ausgabeordner** , wählt das adaptive Formular aus und klickt auf **Vorschau** , um das ausgefüllte We.Gov-Formular zu öffnen.
 
 1. Öffnet die Registerkarte &quot;Prüfung&quot;im Chrome Developer Tool.
 
@@ -214,24 +216,9 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie die Serviceanfrage ab
    1. Grundlegende Informationen
 
       1. Vorname
-      1. Weitere Vornamen
       1. Nachname
-      1. Bevorzugter Name
       1. DOB
-      1. Geschlecht
-   1. Kontaktangaben
-
-      1. Straße &amp; Hausnr. 
-      1. Ort
-      1. Telefonnummer
-      1. Postleitzahl
       1. E-Mail
-      1. Bundesland/Kanton
-   1. Kampfstatus
-
-      1. Familienstand
-
-
 
 1. Verwenden Sie die folgende **dynamische Logik** , um dynamische Funktionen mithilfe der Dropdownliste **Familienstand** zu demonstrieren:
 
