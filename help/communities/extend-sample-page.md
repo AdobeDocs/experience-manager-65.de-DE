@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
 
-# Hinzufügen auf Beispielseite {#add-comment-to-sample-page}
+# Hinzufügen auf Beispielseite  {#add-comment-to-sample-page}
 
 Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsordner (/apps) vorhanden sind, ist es möglich, die erweiterte Komponente zu verwenden. Die Instanz des Kommentarsystems auf einer Website, die betroffen sein soll, muss ihren resourceType als benutzerdefiniertes Kommentarsystem festlegen und alle erforderlichen Client-Bibliotheken einschließen.
 
@@ -30,7 +33,7 @@ Das Handbuch [zu](/help/communities/components-guide.md) Community-Komponenten i
 
 Beachten Sie die drei Clientbibliotheken, die für die ordnungsgemäße Wiedergabe und Funktionsweise von Kommentaren erforderlich sind. Diese müssen eingeschlossen werden, wenn auf die erweiterten Kommentare verwiesen wird, und die Client-Bibliothek [der](/help/communities/extend-create-components.md#create-a-client-library-folder) erweiterten Kommentare ( `apps.custom.comments`).
 
-![chlimage_1-79](assets/chlimage_1-79.png)
+![chlimage_1-47](assets/chlimage_1-47.png)
 
 ### Hinzufügen benutzerdefinierter Kommentare auf einer Seite {#add-custom-comments-to-a-page}
 
@@ -42,17 +45,17 @@ Damit der Kommentar korrekt angezeigt und funktioniert, müssen die Client-Bibli
 
 #### Kommentare zu Clientlibs auf der Beispielseite {#comments-clientlibs-on-sample-page}
 
-![Kommentare zu Clientlibs auf der Beispielseite](assets/chlimage_1-80.png)
+![chlimage_1-48](assets/chlimage_1-48.png)
 
 #### Autor: Alt-Kommentar auf Beispielseite {#author-alt-comment-on-sample-page}
 
-![Alt-Kommentar auf Beispielseite](assets/chlimage_1-81.png)
+![chlimage_1-49](assets/chlimage_1-49.png)
 
 #### Autor: Beispielknoten für Seitenkommentare {#author-sample-page-comments-node}
 
 Sie können resourceType in CRXDE überprüfen, indem Sie die Eigenschaften des Knotens &quot;comments&quot;für die Beispielseite unter `/content/sites/sample/en/jcr:content/content/primary/comments`.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![chlimage_1-50](assets/chlimage_1-50.png)
 
 #### Beispielseite veröffentlichen {#publish-sample-page}
 
@@ -64,6 +67,8 @@ Nach dem Veröffentlichen der benutzerdefinierten Anwendung und der Beispielseit
 
 Hier finden Sie aaron.mcdonald@mailinator.com zum Posten eines Kommentars:
 
-![chlimage_1-83](assets/chlimage_1-83.png) ![chlimage_1-84](assets/chlimage_1-84.png)
+![chlimage_1-51](assets/chlimage_1-51.png)
+
+![chlimage_1-52](assets/chlimage_1-52.png)
 
 Nun, da es so aussieht, als ob die erweiterte Komponente mit dem Standardaussehen korrekt funktioniert, ist es an der Zeit, das Erscheinungsbild zu ändern.
