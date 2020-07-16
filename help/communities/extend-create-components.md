@@ -10,17 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 6%
 
 ---
 
 
-# Komponenten erstellen {#create-the-components}
+# Komponenten erstellen  {#create-the-components}
 
 Das Beispiel zum Erweitern von Komponenten verwendet das Kommentarsystem, das eigentlich aus zwei Komponenten besteht
 
-* Kommentare - Das umgehende Kommentarsystem, bei dem es sich um die auf einer Seite platzierte Komponente handelt
-* Kommentar - Die Komponente, die eine Instanz eines veröffentlichten Kommentars erfasst
+* Kommentare - Das umfassende Kommentarsystem, bei dem es sich um die auf einer Seite platzierte Komponente handelt.
+* Kommentar: Die Komponente, die eine Instanz eines geposteten Kommentars erfasst.
 
 Beide Komponenten müssen eingerichtet werden, insbesondere wenn das Erscheinungsbild eines geposteten Kommentars angepasst werden soll.
 
@@ -29,6 +32,7 @@ Beide Komponenten müssen eingerichtet werden, insbesondere wenn das Erscheinung
 >Pro Site-Seite ist nur ein Kommentarsystem zulässig.
 >
 >Viele Communities-Funktionen beinhalten bereits ein Kommentarsystem, dessen resourceType geändert werden kann, um auf das erweiterte Kommentarsystem zu verweisen.
+
 
 ## Create the Comments Component {#create-the-comments-component}
 
@@ -53,13 +57,13 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
    * **[!UICONTROL Erstellen > Komponente...]**
 
       * **Beschriftung**: *Kommentare*
-      * **Titel**: Alt- *Kommentare*
-      * **Beschreibung**: Stil *für alternative Kommentare*
+      * **Titel**: *Alt-Kommentare*
+      * **Beschreibung**: *Alternativkommentar*
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Gruppe**: *Benutzerdefiniert*
-   * Wählen Sie **[!UICONTROL Weiter]**
-   * Wählen Sie **[!UICONTROL Weiter]**
-   * Wählen Sie **[!UICONTROL Weiter]**
+   * Wählen Sie **[!UICONTROL Weiter]** aus
+   * Wählen Sie **[!UICONTROL Weiter]** aus
+   * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL OK]** aus
 
 
@@ -80,16 +84,16 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 1. Navigate to the `/apps/custom/components/comments` node
 1. Klicken Sie mit der rechten Maustaste auf den Knoten
 
-   * Wählen Sie **[!UICONTROL Erstellen > Komponente...]**
+   * Wählen Sie **[!UICONTROL Erstellen] > **[!UICONTROL Komponente...]**
 
       * **Beschriftung**: *Kommentar*
-      * **Titel**: Kommentar *Alt*
+      * **Titel**: *Alt-Kommentar*
       * **Beschreibung**: *Alternativer Kommentarstil*
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Gruppe**: `*.hidden*`
-   * Wählen Sie **[!UICONTROL Weiter]**
-   * Wählen Sie **[!UICONTROL Weiter]**
-   * Wählen Sie **[!UICONTROL Weiter]**
+   * Wählen Sie **[!UICONTROL Weiter]** aus
+   * Wählen Sie **[!UICONTROL Weiter]** aus
+   * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL OK]** aus
 
 
@@ -99,7 +103,9 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt, weil stattdessen die 
 1. Löschen **[!UICONTROL auswählen]**
 1. Select **[!UICONTROL Save All]**
 
-![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
+![chlimage_1-71](assets/chlimage_1-71.png)
+
+![chlimage_1-72](assets/chlimage_1-72.png)
 
 ### Kopieren und Ändern der Standard-HBS-Skripten {#copy-and-modify-the-default-hbs-scripts}
 
@@ -150,8 +156,8 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * **Typ**: `cq:ClientLibraryFolder`
    * Registerkarte &quot; **[!UICONTROL Eigenschaften]** &quot;Hinzufügen:
 
-      * **Name** `categories` Typ ****`String` Wert **** `cq.social.author.hbs.comments``Multi`
-      * **Name** `dependencies` Typ ****`String` Wert **** `cq.social.scf``Multi`
+      * **Name** `categories`**Type** - `String`**Wert** `cq.social.author.hbs.comments` `Multi`
+      * **Name** `dependencies`**Type** - `String`**Wert** `cq.social.scf` `Multi`
 
 * Select **[!UICONTROL Save All]**
 * Erstellen Sie `/apps/custom/components/comments/clientlib`bei ausgewählter Node 3 Dateien:
@@ -199,9 +205,9 @@ Eine Möglichkeit dazu ist
 
 * Aus globaler Navigation
 
-   * Wählen Sie **[!UICONTROL Werkzeuge > Bereitstellung > Replikation]**
-   * Wählen Sie nun eine der folgenden Optionen aus `Activate Tree`
-   * Festlegen `Start Path`: nach `/apps/custom`
-   * Deaktivieren `Only Modified`
-   * Schaltfläche `Activate`&quot;Auswählen&quot;
+   * Select **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
+   * Baumstruktur **[!UICONTROL aktivieren]**
+   * Setzen Sie `Start Path` auf `/apps/custom`
+   * Deaktivieren **[!UICONTROL nur geändert]**
+   * Schaltfläche &quot; **[!UICONTROL Aktivieren]** &quot;auswählen
 
