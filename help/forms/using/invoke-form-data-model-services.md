@@ -8,14 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 35%
 
 ---
 
 
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. To invoke a data model service, you can either create a rule in the visual editor or specify a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API in the code editor of the [rule editor](/help/forms/using/rule-editor.md).
 
@@ -28,14 +31,6 @@ The `guidelib.dataIntegrationUtils.executeOperation` API invokes a service from 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
-
-Für die API sind die folgenden Parameter erforderlich.
-
-| Parameter | Beschreibung |
-|---|---|
-| `operationInfo` | Struktur zur Angabe von Formulardatenmodellkennung, Operationstitel und Operationsname |
-| `inputs` | Struktur zum Festlegen von Formularobjekten, deren Werte für den Dienstvorgang eingegeben werden |
-| `outputs` | Struktur zur Angabe von Formularobjekten, die mit den vom Dienstvorgang zurückgegebenen Werten gefüllt werden |
 
 The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. Die Struktur weist die folgende Syntax auf.
 
@@ -64,20 +59,32 @@ Die API-Struktur gibt die folgenden Informationen zum Webdienst-Vorgang an.
    <th>Beschreibung</th>
   </tr>
   <tr>
-   <td><code>forDataModelId</code></td>
-   <td>Geben Sie den Repository-Pfad zum Formulardatenmodell an, einschließlich Name</td>
+   <td><code>operationInfo</code></td>
+   <td>Struktur zur Angabe von Formulardatenmodellkennung, Operationstitel und Operationsname</td>
+  </tr>
+  <tr>
+   <td><code>formDataModelId</code></td>
+   <td>Gibt den Repository-Pfad zum Formulardatenmodell einschließlich seines Namens an</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
-   <td>Geben Sie den Namen des Dienstvorgangs an, um</td>
+   <td>Gibt den Namen des auszuführenden Dienstvorgangs an</td>
   </tr>
   <tr>
-   <td><code>input</code></td>
-   <td>Ordnen Sie ein oder mehrere Formularobjekte den Eingabeargumenten für den Dienstvorgang zu.</td>
+   <td><code>inputs</code></td>
+   <td>Ordnet ein oder mehrere Formularobjekte den Eingabeargumenten für den Dienstvorgang zu</td>
   </tr>
   <tr>
-   <td>Ausgabe</td>
-   <td>Ordnen Sie ein oder mehrere Formularobjekte Ausgabewerte aus dem Dienstvorgang zu, um Formularfelder zu füllen.<br />  </td>
+   <td><code>Outputs</code></td>
+   <td>Maps one or more form objects to output values from the service operation to populate form fields<br /> </td>
+  </tr>
+  <tr>
+   <td><code>success</code></td>
+   <td>Gibt Werte basierend auf den Eingabeargumenten für den Dienstvorgang zurück. Es handelt sich um einen optionalen Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>failure</code></td>
+   <td>Zeigt eine Fehlermeldung an, wenn die Rückruffunktion success die Ausgabenwerte basierend auf den Eingabeargumenten nicht anzeigen kann. Es handelt sich um einen optionalen Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -104,3 +111,41 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
+## Verwenden der API mit der Rückruffunktion {#using-the-api-callback}
+
+Sie können den Formulardatenmodelldienst auch über die `guidelib.dataIntegrationUtils.executeOperation` API mit einer Rückruffunktion aufrufen. Für die API gilt die folgende Syntax:
+
+```
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
+```
+
+Die Rückruffunktion kann über Rückruffunktionen `success` und `failure` Rückruffunktionen verfügen.
+
+### Beispielskript mit Rückruffunktionen bei Erfolg und Fehler {#callback-function-success-failure}
+
+The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model.
+
+Der `GETOrder` Vorgang nimmt den Wert im `Order ID` Formularfeld als Eingabe für das `orderId` Argument und gibt den Wert für die Bestellmenge in der `success` Rückruffunktion zurück.  Wenn die `success` Rückruffunktion nicht die Bestellmenge zurückgibt, zeigt die `failure` Rückruffunktion die `Error occured` Meldung an.
+
+>[!NOTE]
+>
+> Wenn Sie die `success` Rückruffunktion verwenden, werden die Ausgabewerte nicht in die angegebenen Formularfelder eingefügt.
+
+```
+var operationInfo = {
+    "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
+    "operationTitle": "GETOrder",
+    "operationName": "GETOrder"
+};
+var inputs = {
+    "orderId" : Order ID
+};
+var outputs = {};
+var success = function (wsdlOutput, textStatus, jqXHR) {
+order_quantity.value = JSON.parse(wsdlOutput).quantity;
+ };
+var failure = function(){
+alert('Error occured');
+};
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, success, failure);
+```
