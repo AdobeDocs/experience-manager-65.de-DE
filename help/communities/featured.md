@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ## Einführung {#introduction}
 
-Die Funktion für speziellen Inhalt bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Umgebung &quot;Veröffentlichen&quot;, um Inhalte für
+Die Funktion für speziellen Inhalt bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Umgebung zum Veröffentlichen, in dem Sie Inhalte hervorheben können für:
 
 * [Blogs](blog-feature.md)
 * [Kalender](calendar.md)
@@ -33,8 +36,8 @@ Die Funktion zum Feature von Inhalten kann pro Komponente zugelassen oder deakti
 
 Dieser Abschnitt der Dokumentation beschreibt:
 
-* Hinzufügen von speziellen Inhalten zu einer Community-Site
-* Configuration settings for the `Featured Content` component
+* Hinzufügen von speziellen Inhalten zu einer Community-Site.
+* Configuration settings for the `Featured Content` component.
 
 ## Hinzufügen von speziellen Inhalten zu einer Seite {#adding-featured-content-to-a-page}
 
@@ -54,18 +57,25 @@ When the [required client-side libraries](essentials-featured.md#essentials-for-
 
 Select the placed `Featured Content` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
+
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### Registerkarte „Settings“{#settings-tab}
 
 Identifizieren Sie auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &quot;den zu verwendenden Inhalt:
 
-* **[!UICONTROL Anzeigename]** Der Titel für die Liste von speziellen Inhalten. For example `Featured Questions` or `Featured Ideas`. Die Standardeinstellung ist `Featured Content` bei leerem Feld.
+* **[!UICONTROL Anzeigename]**
+
+   Der Titel für die Liste von speziellen Inhalten. For example `Featured Questions` or `Featured Ideas`. Die Standardeinstellung ist `Featured Content` bei leerem Feld.
 
 * **[!UICONTROL Position des präsentierten Inhalts]**
-   *(Erforderlich)* Navigieren Sie zu der Seite, die den Inhalt enthält, der möglicherweise Funktion ist (Komponenten dieser Seite müssen so konfiguriert sein, dass spezielle Inhalte zulässig sind). Beispiel: `/content/sites/engage/en/forum`
 
-* **[!UICONTROL Anzeigebeschränkung]** Die maximale Anzahl anzuzeigender spezieller Inhalte. Der Standardwert ist 5.
+   *(Erforderlich)* Navigieren Sie zu der Seite, die den Inhalt enthält, der möglicherweise Funktion ist (Komponenten dieser Seite müssen so konfiguriert sein, dass spezielle Inhalte zulässig sind). Beispiel: `/content/sites/engage/en/forum`.
+
+* **[!UICONTROL Anzeigelimit]**
+
+   Die maximale Anzahl der anzuzeigenden speziellen Inhalte. Der Standardwert ist 5.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
