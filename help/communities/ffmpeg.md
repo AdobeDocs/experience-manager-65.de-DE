@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
 
 ## Übersicht {#overview}
 
-FFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird, falls installiert, für die ordnungsgemäße Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) sowie für die Funktion zur Aktivierung von AEM Communities verwendet.
+FFmpeg ist eine Lösung zum Konvertieren und Streaming von Audio und Video und wird, falls installiert, für die ordnungsgemäße Transkodierung von [Video-Assets](../../help/sites-authoring/default-components-foundation.md#video) sowie für die AEM Communities-Aktivierung verwendet.
 
 FFmpeg wird in der Authoring-Umgebung verwendet, um Metadaten für hochgeladene Aktivierungsressourcen abzurufen und eine Miniaturansicht zu erstellen, die bei der Auflistung der Aktivierungsressource angezeigt wird.
 
@@ -60,7 +63,7 @@ So ändern Sie den Arbeitsablauf zum [!UICONTROL DAM-Aktualisieren von Assets] u
 
    * **[!UICONTROL Anpassungen]**: Löschen Sie alle Einträge, um die Transkodierung von Standardwerten zu deaktivieren: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
-![chlimage_1-372](assets/chlimage_1-372.png)
+   ![chlimage_1-372](assets/chlimage_1-372.png)
 
 * Select **[!UICONTROL OK]** to close the `Step Properties` dialog.
 
