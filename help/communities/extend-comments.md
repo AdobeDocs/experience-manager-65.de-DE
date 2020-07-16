@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
 
-# Komponente &quot;Kommentare erweitern&quot; {#extend-comments-component}
+# Komponente &quot;Kommentare erweitern&quot;  {#extend-comments-component}
 
 Die Absicht, eine Standardkomponente zu [erweitern](client-customize.md#extensions) , besteht darin, das Aussehen oder Verhalten einer Komponente für bestimmte Zwecke zu ändern.
 
@@ -24,6 +27,7 @@ Der Pfad zur Komponente ist eindeutig und verweist auf die Standardkomponente al
 >[!NOTE]
 >
 >Das Erweitern einer [überlagerten](client-customize.md#overlays) Komponente wird nicht unterstützt.
+
 
 ## Beispiel {#example}
 
