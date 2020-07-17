@@ -8,14 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: d5efcec4a0397d99c899643ff13a883a0ed02c81
+workflow-type: tm+mt
+source-wordcount: '4249'
+ht-degree: 81%
 
 ---
 
 
 # Best Practices für die Arbeit mit adaptiven Formularen {#best-practices-for-working-with-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Allerdings bedarf es gemeinsamer Anstrengungen, ein effizientes und produktives AEM Forms-System zu implementieren, zu erstellen, auszuführen und zu warten.
 
@@ -44,6 +47,16 @@ Weitere Informationen finden Sie unter[ Erstellen von AEM-Projekten mit Apache M
 * Mit dem FileVault-Werkzeug oder VLT können Sie den Inhalt einer CRX- oder AEM-Instanz auf Ihr Dateisystem zuordnen. Es bietet Änderungskontrollmanagementvorgänge, wie z. B. das Einchecken und Auschecken des AEM-Projektinhalts. See [How to use the VLT Tool](/help/sites-developing/ht-vlttool.md).
 
 * Wenn Sie die Eclipse-integrierte Entwicklungsumgebung für Eclipse verwenden, können Sie AEM-Developer Tools für eine nahtlose Integration der Eclipse IDE mit AEM-Instanzen verwenden und AEM-Apps erstellen. Weitere Informationen finden Sie unter[ AEM-Developer Tools für Eclipse](/help/sites-developing/aem-eclipse.md).
+
+* Speichern Sie keine Inhalte und nehmen Sie keine Änderungen im Ordner /libs vor. Erstellen Sie Überlagerungen in /app-Ordnern, um Standardfunktionen zu erweitern oder zu überschreiben.
+
+* Wenn Sie Pakete zum Verschieben von Inhalten erstellen, stellen Sie sicher, dass Paketfilterpfade korrekt sind und nur erforderliche Pfade erwähnt werden.
+
+* Speichern Sie keine Inhalte und nehmen Sie keine Änderungen im Ordner /libs vor. Erstellen Sie Überlagerungen in /app-Ordnern, um Standardfunktionen zu erweitern oder zu überschreiben.
+
+* Definieren Sie die richtigen Abhängigkeiten für die Pakete, um eine vorab festgelegte Installationsreihenfolge zu erzwingen.
+
+* Erstellen Sie keinen referenzierbaren Knoten in /libs oder /apps.
 
 ### Planen der Authoring-Umgebung {#planning-for-authoring-environment}
 
@@ -102,11 +115,11 @@ AEM Forms bietet einen [Regeleditor](/help/forms/using/rule-editor.md), der es I
 Der Regeleditor bietet einen visuellen Editor und einen Code-Editor für Schreibregeln. Achten Sie auf Folgendes, wenn Sie Schreibregeln mit dem Code-Editormodus verwenden:
 
 * Verwenden Sie eindeutige Namen aussagekräftig und Formularfelder und Komponenten, damit alle möglichen Konflikten während Schreibregeln vermeiden.
-* Use `this` operator for a component to refer to itself in a rule expression. Es wird sichergestellt, dass die Regel gültig bleibt, selbst wenn sich der Komponentenname ändert. Beispiel: `field1.valueCommit script: this.value > 10`. 
+* Use `this` operator for a component to refer to itself in a rule expression. Es wird sichergestellt, dass die Regel gültig bleibt, selbst wenn sich der Komponentenname ändert. Beispiel: `field1.valueCommit script: this.value > 10`.
 
-* Verwenden Sie Komponentennamen, wenn Sie auf verschiedene Formularkomponenten verweisen. Use the `value` property to fetch the value of a field or component. Beispiel: `field1.value`. 
+* Verwenden Sie Komponentennamen, wenn Sie auf verschiedene Formularkomponenten verweisen. Use the `value` property to fetch the value of a field or component. Beispiel: `field1.value`.
 
-* Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel: `parentName.fieldName`. 
+* Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel: `parentName.fieldName`.
 
 * Wenn Sie komplexe oder häufig verwendete Regeln bearbeiten, sollten Sie die Geschäftslogik als Funktionen in einer separaten Client-Bibliothek schreiben, die Sie für adaptive Formulare angeben und wiederverwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. You can also use the client library to enforce [server-side revalidation](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) of submitted form data.
 * Adaptive Formulare bieten eine Reihe von APIs, die Sie verwenden können, um zu kommunizieren und Aktionen auf adaptiven Formularen anzuzeigen. Einige Schlüssel-APIs lauten wie folgt: Weitere Informationen finden Sie unter[ JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://adobe.com/go/learn_aemforms_documentation_63).
@@ -168,7 +181,7 @@ Sie können adaptive Formularfelder mit Daten aus dem Backend vorbefüllen, um B
 * Die Prefill-Daten XML muss mit dem Schema des Formularmodells, das mit dem adaptiven Formular verknüpft ist, konform sein.
 * Schließen Sie die Abschnitte`afBoundedData`   und`afUnBoundedData`   in die Prefill-XML zum Vorbefüllen von gebundenen und ungebundenen Feldern in einem adaptiven Formular ein.
 
-* Für adaptive Formulare, die auf dem Formulardatenmodell basieren, stellt AEM Forms den vordefinierten Formulardatenmodellvorfülldienst bereit. Der Prefill-Dienst fragt nach Datenquellen für Datenmodellobjekte im adaptiven Formular und befüllt Feldwerte beim Rendern des Formulars.
+* Für adaptive Formulare, die auf dem Formulardatenmodell basieren, bietet AEM Forms den vordefinierten Formulardatenmodellvorfülldienst. Der Prefill-Dienst fragt nach Datenquellen für Datenmodellobjekte im adaptiven Formular und befüllt Feldwerte beim Rendern des Formulars.
 * Sie können auch die Protokolle file, crx, service oder http verwenden, um adaptive Formulare vorzubefüllen.
 * AEM Forms unterstützt benutzerdefinierte Prefill-Dienste, die Sie als OSGi-Dienst einbinden können, um adaptive Formulare vorzubefüllen.
 
@@ -215,7 +228,7 @@ Das [AEM Chrome Plugin](https://adobe-consulting-services.github.io/acs-aem-tool
 
 For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
 
-Calvin SDK ist eine Dienstprogramm-API für Entwickler von adaptiven Formularen zum Testen von adaptiven Formularen. Calvin SDK is built on top of the [Hobbes.js testing framework](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). Sie können den Rahmen verwenden, um Folgendes zu testen:
+Calvin SDK ist eine Dienstprogramm-API für Entwickler von adaptiven Formularen zum Testen von adaptiven Formularen. Calvin SDK is built on top of the [Hobbes.js testing framework](https://docs.adobe.com/docs/de/aem/6-3/develop/ref/test-api/index.html). Sie können den Rahmen verwenden, um Folgendes zu testen:
 
 * Wiedergabefunktionen eines adaptiven Formulars
 * Befüllen eines adaptiven Formulars
@@ -265,6 +278,7 @@ Oft müssen Sie AEM-Projekte aus einer Umgebung in eine andere verschieben. Eini
 * Stellen Sie projektspezifische Codepakete und Bundles manuell und als separates Paket oder Bundle auf dem neuen AEM-Server bereit.
 * (*AEM Forms on JEE only*) Deploy LCAs and DSCs manually on Forms Workflow server.
 * Verwenden Sie[ Export-Import](/help/forms/using/import-export-forms-templates.md)-Funktionen, um Elemente in die neue Umgebung zu verschieben. Sie können auch den Replizierungsagenten konfigurieren und Assets veröffentlichen.
+* Ersetzen Sie beim Upgrade alle nicht mehr unterstützten APIs und Funktionen durch neue APIs und Funktionen.
 
 ### Konfigurieren von AEM {#configuring-aem}
 
