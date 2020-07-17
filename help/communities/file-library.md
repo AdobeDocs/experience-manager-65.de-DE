@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '753'
+ht-degree: 39%
 
 ---
 
@@ -29,7 +32,7 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
 ### Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
 
-To add a `File Library` component to a page in author mode, locate the component
+To add a `File Library` component to a page in author mode, locate the component:
 
 * `Communities / File Library`
 
@@ -39,13 +42,15 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-file-library.md#essentials-for-client-side) are included, this is how the `File Library` component will appear:
 
-![chlimage_1-145](assets/chlimage_1-145.png)
+![chlimage_1-430](assets/chlimage_1-430.png)
 
 ### Konfigurieren der Dateibibliothek {#configuring-file-library}
 
 Select the placed `File Library` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-146](assets/chlimage_1-146.png) ![forum-config-1](assets/forum-config-1.png)
+![chlimage_1-431](assets/chlimage_1-431.png)
+
+![chlimage_1-432](assets/chlimage_1-432.png)
 
 #### Comments tab {#comments-tab}
 
