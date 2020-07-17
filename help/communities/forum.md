@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 38%
 
 ---
 
@@ -32,7 +35,7 @@ Die Forumsfunktion bietet einen Bereich, in dem angemeldete Besucher (Community-
 Dieser Abschnitt der Dokumentation beschreibt:
 
 * Hinzufügen der Forumsfunktion zu einer AEM-Site.
-* Configuration settings for the `Forum`component.
+* Configuration settings for the `Forum` component.
 
 ### Hinzufügen eines Forums zu einer Seite {#adding-a-forum-to-a-page}
 
@@ -44,15 +47,17 @@ und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite, auf der d
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum`component will appear :
+When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum` component will appear:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Konfigurieren eines Forums {#configuring-a-forum}
 
 Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
+
+![forum-config](assets/forum-config.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
@@ -240,7 +245,9 @@ Geben Sie auf der Registerkarte &quot; **Sortiereinstellungen** &quot;an, wie di
 
 * **Zeitoptionen für Analytics-Sortierung auswählen**
 
-   Ziehen Sie nach unten, um einen von `All, Last 24 Hours, Last 7 Days, Last 30 Days`auszuwählen. Der Standardwert ist `All`.
+   Ziehen Sie nach unten, um eine der folgenden Optionen auszuwählen: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+
+   Der Standardwert ist `All`.
 
 ### Zusätzliche Informationen {#additional-information}
 
