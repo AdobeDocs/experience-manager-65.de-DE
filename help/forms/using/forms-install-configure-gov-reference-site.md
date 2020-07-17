@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
 workflow-type: tm+mt
-source-wordcount: '4685'
+source-wordcount: '5004'
 ht-degree: 3%
 
 ---
@@ -222,6 +222,48 @@ Dieser Abschnitt enthält Details und Anweisungen zur Adobe Sign Cloud-Konfigura
 1. Geben Sie die konfigurierte Client-ID und den geheimen Clientschlüssel aus der konfigurierten Adobe-Signaturinstanz ein.
 1. Klicken Sie auf &quot;Mit Adobe Sign verbinden&quot;.
 1. Klicken Sie nach erfolgreicher Verbindung auf &quot;Speichern &amp; Schließen&quot;, um die Integration abzuschließen.
+
+### Mehrere Formulare ausfüllen und signieren {#fill-sign-multiple-forms}
+
+In diesem Dokument werden die Schritte erläutert, die zum Einrichten der Fähigkeit zum Ausfüllen und Signieren mehrerer Formulare erforderlich sind. Sie können hier auch die [gleiche Funktion testen](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Dieses Beispiel speichert die erforderlichen Daten für dieses Beispiel im AME-Repository. Dies geschieht, um sicherzustellen, dass die Bereitstellung von Demoelementen auf dem lokalen Server reibungslos abläuft. Im realen Leben werden wir die gleichen Informationen in RDMS Ihrer Wahl speichern.
+
+#### Voraussetzungen {#pre-requisites-fill-sign-multiple-forms}
+
+* [Konfigurieren des Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
+
+* [AEM Forms mit Adobe Sign konfigurieren](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
+
+#### Beispiel auf dem lokalen Server einrichten {#setup-sample-local-server}
+
+Führen Sie die folgenden Schritte aus, um das Beispiel auf dem lokalen Server einzurichten:
+
+1. Installieren Sie das Paket. Dieses Paket enthält Folgendes:
+   * Adaptive Formulare. Die Formulare befinden sich im Ordner &quot; **formsandsigndemo** &quot;
+   * Benutzerdefinierte OSGI-Pakete
+   * Workflows  
+1. Konfigurieren Sie das [Einwilligungsformular](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) für die Verwendung Ihrer Adobe-Signaturkonfiguration.
+1. Konfigurieren Sie das [Interessenssperrformular](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) für mehrere Status, um Ihre Adobe-Signaturkonfiguration zu verwenden.
+1. Öffnen Sie das [FormSandsigning](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) -Demo-Workflow-Modell:
+   1. Öffnen Sie den Schritt Formulare in CRX speichern.
+   1. Ändern Sie den localhost in die IP-Adresse Ihres AEM-Servers.
+   1. Speichern Sie Ihre Änderungen.
+   1. Synchronisieren Sie den Workflow, um das Laufzeitmodell zu erstellen.
+
+      ![Mehrere Formulare signieren](assets/sign-multiple-forms.jpg)
+
+   1. Öffnen Sie das [Refinanzierungsformular](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+   1. Füllen Sie die erforderlichen Felder aus. Stellen Sie sicher, dass Sie eine gültige E-Mail-Adresse angeben und ein oder mehrere Formulare auswählen, um das Formular zu signieren und zu senden.
+Sie erhalten eine E-Mail mit einem Link zum Ausfüllen und Unterschreiben der Formulare.
+
+#### Fehlerbehebung {#troubleshoot-sign-multiple-forms}
+
+* Die Debug-Protokolle werden in eine `signingmultipleforms.log` Datei im Protokollordner Ihres Servers geschrieben.
+
+* Die zu signierenden Formulare werden unter `/content/formsforsigning`gespeichert.
+
+* Vergewissern Sie sich, dass alle Pakete im aktiven Status sind.
+
+* Überprüfen Sie Ihre E-Mail-Serverkonfiguration.
 
 ### (Optional) MS Dynamics Cloud-Konfiguration {#ms-dynamics-cloud-configuration}
 
