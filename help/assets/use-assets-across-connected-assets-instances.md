@@ -3,9 +3,9 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets im Authoring-
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7d001ce126e72663bf8ad0722cf59c1cb7239ae0
+source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2105'
 ht-degree: 77%
 
 ---
@@ -27,8 +27,8 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
-* Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Bereitstellung.
-* Bei Bereitstellungstypen für Adobe Experience Manager ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5 [!DNL Assets] funktioniert [!DNL Experience Manager] als Cloud Service. Weitere Informationen finden Sie unter Funktionen für [verbundene Assets in Experience Manager als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Die Benutzer gehören bei jeder Bereitstellung zu den entsprechenden Benutzergruppen.
+* Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5 [!DNL Assets] funktioniert [!DNL Experience Manager] als Cloud Service. Weitere Informationen finden Sie unter Funktionen für [verbundene Assets in Experience Manager als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -41,7 +41,7 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
 Autoren suchen in der Inhaltssuche nach Bildern und den folgenden Dokumenten und verwenden die gesuchten Assets im Seiteneditor. Dokumente werden der `Download` Komponente und Bilder zur `Image` Komponente hinzugefügt. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Folgende Formate werden unterstützt:
 
 * **Bildformate**: Die Formate, die von der [Bildkomponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) unterstützt werden. [!DNL Dynamic Media]-Bilder werden nicht unterstützt.
-* **Dokument-Formate**: Weitere Informationen finden Sie [in den von Connected Assets](assets-formats.md#supported-document-formats)unterstützten Videoformaten.
+* **Dokument-Formate**: Siehe [Unterstützte Dokument-Formate](assets-formats.md#supported-document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
@@ -96,8 +96,8 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    | Vorher | Nachher |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
@@ -182,11 +182,12 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 
 * Benutzer können beim Authoring nach Remote-Assets suchen und diese auf die lokale Seite ziehen. Es werden keine anderen Funktionen unterstützt.
 * Nach 5 Sekunden tritt bei Abrufvorgängen ein Timeout auf. Autoren können beispielsweise bei Netzwerkproblemen Probleme beim Abrufen von Assets haben. Autoren können es erneut versuchen, indem sie das Remote-Asset aus [!UICONTROL Content Finder] in den [!UICONTROL Seiten-Editor] ziehen.
-* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. Assets sind schreibgeschützt.
+* An abgerufenen Assets können einfache, zerstörungsfreie Änderungen sowie Änderungen, die von der `Image`-Komponente unterstützt werden, vorgenommen werden. Assets sind schreibgeschützt.
+* Die einzige Methode zum erneuten Abrufen des Assets besteht darin, es auf eine Seite zu ziehen. Es gibt keine API-Unterstützung oder andere Methoden zum erneuten Abrufen eines Assets, um es zu aktualisieren.
 
 ## Fehlerbehebung bei Problemen     {#troubleshoot}
 
 Gehen Sie wie folgt vor, um eine Fehlerbehebung für das allgemeine Fehlerszenario durchzuführen:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
-* Ein aus dem Remote-Damm abgerufenes Asset kann aus einem oder mehreren Gründen nicht auf einer Webseite veröffentlicht werden. Es existiert nicht auf einem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler kann die Ursache sein. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass entsprechende Berechtigungen vorhanden sind und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie es erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
+* Ein aus dem Remote-Damm abgerufenes Asset kann aus einem oder mehreren Gründen nicht auf einer Webseite veröffentlicht werden. Es existiert nicht auf einem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler kann die Ursache sein. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen vorhanden sind und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie es erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
