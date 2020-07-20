@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '2749'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
@@ -50,6 +50,7 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * Ein Fragment verweist auf das Modell. Änderungen am Modell können sich daher auf alle abhängigen Fragmente auswirken.
    * Modelle werden anhand von Datentypen erstellt.
    * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
+
    >[!CAUTION]
    >
    >Alle Änderungen an einem vorhandenen Inhaltsfragmentmodell können sich auf abhängige Fragmente auswirken. Daher kann es zu verwaisten Eigenschaften in diesen Fragmenten kommen.
@@ -87,7 +88,8 @@ z. B. `jcr:content/data/myvariation`
 
    * Die Daten der einzelnen Elemente werden im entsprechenden Unterknoten als Eigenschaft mit dem Elementnamen gespeichert: Das Inhaltselement `text` wird beispielsweise mit der Eigenschaft `text` in `jcr:content/data/master` gespeichert.
 
-* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und in `jcr:content` gespeichert werden.
+* Metadaten und verknüpfte Inhalte werden unter `jcr:content/metadata` gespeichert. Eine Ausnahme bilden der Titel und die Beschreibung, die nicht als Metadaten im herkömmlichen Sinne gelten und hier gespeichert werden: 
+`jcr:content`
 
 #### Zuordnen von einfachen Inhaltsfragmenten zu Assets {#mapping-simple-content-fragments-to-assets}
 
@@ -157,7 +159,8 @@ Die Back-End-Implementierung von Inhaltsfragmenten ist beispielsweise dafür ver
 
 The parameters for this can be configured in the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), for the OSGi bundle **Content Fragment Component Configuration**.
 
-* **Ressourcentypen** Eine Liste der `sling:resourceTypes` kann angegeben werden, um zu definieren, welche Komponenten zum Rendern der Inhaltsfragmente verwendet werden sollen und worauf die Hintergrundverarbeitung angewendet werden soll.
+* **Ressourcentypen** Eine Liste von 
+`sling:resourceTypes` kann bereitgestellt werden, um Komponenten zu definieren, die für die Wiedergabe von Inhaltsfragmenten verwendet werden und auf die die Hintergrundverarbeitung angewendet werden soll.
 
 * **Verweiseigenschaften** Eine Liste der konfigurierbaren Eigenschaften, die angeben, wo der Verweis auf das Fragment für die entsprechende Komponente gespeichert werden soll.
 
@@ -233,7 +236,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * Das entsprechende Schemaformular ist mit dem Fragment-Editor integriert.
 
-## Server-seitige API für die Inhaltsfragmentverwaltung     {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung       {#the-content-fragment-management-api-server-side}
 
 Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
@@ -243,7 +246,7 @@ Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwende
 >
 >Es wird dringend empfohlen, die serverseitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen     {#key-interfaces}
+### Hauptschnittstellen       {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
@@ -261,6 +264,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
    * ein Inhaltsfragmentmodell oder eine Inhaltsfragmentvorlage, aus dem bzw. der Sie ein Inhaltsfragment erstellen können,
    * und (nach der Erstellung) die Strukturinformationen dieses Fragments
+
    Diese Daten können Folgendes beinhalten:
 
    * Zugriff auf grundlegende Daten (Titel, Beschreibung)
@@ -275,6 +279,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Strukturinformationen für eine bestimmte Variante abrufen
       * Zugriff auf die Variantenvorlage (siehe `VariationTemplate`)
    * Abrufen anfänglich zugeordneter Inhalte
+
    Schnittstellen, die für wichtige Daten stehen:
 
    * `ElementTemplate`
@@ -316,7 +321,8 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Auflisten von Sammlungen
       * Hinzufügen von Sammlungen
       * Entfernen von Sammlungen
-   * Zugriff auf das Modell oder die Vorlage des Fragments
+   * Zugreifen auf das Fragmentmodell oder Vorlage
+
    Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
    * **Inhaltselement** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
@@ -336,6 +342,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
       * Einfache Synchronisierung basierend auf den zuletzt geänderten Informationen
+
    Alle drei Schnittstellen (`ContentFragment`, `ContentElement`, `ContentVariation`) erweitern die `Versionable`-Schnittstelle durch zusätzliche, für Inhaltsfragmente erforderliche Versionierungsfunktionen:
 
    * Erstellen neuer Versionen des Elements
@@ -348,7 +355,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo()     {#adapting-using-adaptto}
+### Anpassen mit adaptTo()       {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
@@ -442,7 +449,7 @@ Folgende Prozesse sind involviert:
    * Alle Änderungen (die automatische Speicherung eingeschlossen) werden am aktiven Inhaltsfragment vorgenommen, nicht in einem separaten, geschützten Bereich.
    * Daher werden diese Änderungen sofort auf den AEM-Seiten übernommen, die auf das entsprechende Inhaltsfragment verweisen.
 
-#### Aktionen  {#actions}
+#### Aktionen    {#actions}
 
 Folgende Aktionen sind möglich:
 
@@ -487,7 +494,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments     {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments       {#example-creating-a-new-content-fragment}
 
 Um ein neues Inhaltsfragment zu programmieren, verwenden Sie:
 
@@ -501,7 +508,7 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern     {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern       {#example-specifying-the-auto-save-interval}
 
 Das Intervall für das automatische Speichern (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
