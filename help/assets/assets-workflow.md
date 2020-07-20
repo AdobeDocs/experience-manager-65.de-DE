@@ -3,10 +3,10 @@ title: Verarbeiten Sie Assets, um Geschäftsprozesse durchzuführen, Prüfungen 
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 21%
+source-wordcount: '978'
+ht-degree: 29%
 
 ---
 
@@ -100,9 +100,10 @@ Für ein Workflow-Modell können Benutzer einen Workflow-Starter erstellen, der 
 * Erstellen Sie eine Kopie des [!UICONTROL DAM Update Asset] -Workflows und ändern Sie ihn, um ihn in einer bestimmten Ordnerhierarchie auszuführen. Dieser Ansatz ist für einige Ordner nützlich.
 * Die zusätzlichen Verarbeitungsschritte können mit einer [ODER-Teilung](/help/sites-developing/workflows-step-ref.md#or-split) hinzugefügt werden, die je nach Bedarf für so viele Ordner gilt.
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
-* Berücksichtigen Sie beim Entwerfen von Workflows Ihre Anforderungen für alle Darstellungsarten. Wenn Sie nicht vorhersehen, dass eine Darstellung in Zukunft erforderlich sein soll, entfernen Sie den Erstellungsschritt aus dem Workflow. Darstellungen können danach nicht mehr stapelweise gelöscht werden. Unerwünschte Darstellungen können nach längerer Nutzung von [!DNL Experience Manager]Daten viel Datenspeicherung in Anspruch nehmen. Bei einzelnen Assets können Sie Darstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie entweder anpassen, [!DNL Experience Manager] um bestimmte Darstellungen zu löschen, oder die Assets löschen und erneut hochladen.
+* Berücksichtigen Sie beim Entwickeln von Workflows Ihre Anforderungen für alle Arten von Ausgabedarstellungen. Wenn Sie der Meinung sind, dass eine Ausgabedarstellung in Zukunft nicht erforderlich sein wird, entfernen Sie den Erstellungsschritt aus dem Workflow. Ausgabedarstellungen können später nicht mehr stapelweise gelöscht werden. Unerwünschte Ausgabedarstellungen können nach längerer Nutzung von [!DNL Experience Manager] viel Speicherplatz beanspruchen. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie [!DNL Experience Manager] so anpassen, dass entweder bestimmte Ausgabedarstellungen gelöscht oder die Assets gelöscht und die gelöschten Assets erneut hochgeladen werden.
+* Der Arbeitsablauf für [!UICONTROL DAM-Aktualisierung von Assets] umfasst standardmäßig einige Schritte zum Erstellen von Miniaturbildern und Webdarstellungen. Wenn Standarddarstellungen aus dem Workflow entfernt werden, wird die Benutzeroberfläche von [!DNL Assets] nicht richtig dargestellt.
 
 >[!MORELIKETHIS]
 >
