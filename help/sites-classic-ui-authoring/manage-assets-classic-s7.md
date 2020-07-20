@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 77%
@@ -291,7 +291,7 @@ To link a field to a client context value, click **Select** to open the client-c
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-Der Text berücksichtigt den Namen des aktuell angemeldeten Benutzers. Sie können den Text wieder auf den ursprünglichen Wert zurücksetzen, indem Sie neben dem Feld auf **Zurücksetzen **klicken.
+Der Text berücksichtigt den Namen des aktuell angemeldeten Benutzers. Sie können den Text auf den ursprünglichen Wert zurücksetzen, indem Sie neben dem Feld auf **Zurücksetzen** klicken.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -336,12 +336,15 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die 
 >* Im Ad-hoc-Ordner befindliche Assets werden im Scene7-Inhaltsbrowser nicht angezeigt.
 >* Bei [aktivierter sicherer Vorschau](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) werden die auf Scene7 veröffentlichten und nicht veröffentlichten Assets im Scene7-Inhaltsbrowser angezeigt.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
->
->* Für Videos unterstützt der Scene7-Inhaltsbrowser Folgendes:
->
->  * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
->  * Einzelnes MP4-Video
->  * Einzelnes F4V-Video
+
+   >
+   >
+* Für Videos unterstützt der Scene7-Inhaltsbrowser Folgendes:
+   >
+   >   
+   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
+   >   * Einzelnes MP4-Video
+   >   * Einzelnes F4V-Video
 
 
 ### Durchsuchen von Inhalten {#browsing-content-in-the-classic-ui}
