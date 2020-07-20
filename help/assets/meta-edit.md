@@ -3,19 +3,19 @@ title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
 description: Learn about asset metadata in [!DNL Adobe Experience Manager Assets] an various ways by which you can edit asset metadata.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 33%
+source-wordcount: '436'
+ht-degree: 22%
 
 ---
 
 
 # Anleitung zum Bearbeiten oder Hinzufügen von Metadaten{#how-to-edit-or-add-metadata}
 
-Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder vorhandenen Feldern neue Metadateneigenschaften hinzufügen (etwa wenn ein Metadatenfeld leer ist).
+Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder neue Metadateneigenschaften zu einem vorhandenen Feld hinzufügen, z. B. wenn ein Metadatenfeld leer ist.
 
-Because organizations need controlled and reliable metadata vocabularies, [!DNL Experience Manager Assets] does not allow for on demand adding of new metadata properties. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Siehe [Erstellen der Metadateneigenschaft für Assets](meta-edit.md#editing-metadata-schema).
+Organisationen benötigen kontrollierte und zuverlässige Metadaten-Vokabeln. Daher ist es [!DNL Experience Manager Assets] nicht möglich, bei Bedarf neue Metadateneigenschaften hinzuzufügen. Entwickler und nicht Autoren können neue Metadatenfelder für Assets hinzufügen. Siehe [Erstellen der Metadateneigenschaft für Assets](meta-edit.md#editing-metadata-schema).
 
 ## Edit metadata for an asset {#editing-metadata-for-an-asset}
 
@@ -25,10 +25,11 @@ Gehen Sie wie folgt vor, um Metadaten zu bearbeiten:
 
    * Wählen Sie in der [!DNL Assets] Benutzeroberfläche das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Ansichten-Eigenschaften]** .
    * Wählen Sie die Schnellaktion **[!UICONTROL Eigenschaften anzeigen]** aus der Miniaturansicht des Assets aus.
-   * From the asset page, click **[!UICONTROL View Properties]** ![chlimage_1-168](assets/chlimage_1-168.png) from the toolbar.
+   * Klicken Sie auf der Seite &quot;Asset&quot;in der Symbolleiste auf das Symbol für die **[!UICONTROL Ansicht Eigenschaften]** ![Assets](assets/do-not-localize/info-circle-icon.png) .
+
    Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Die Metadaten werden extrahiert, wenn das Asset hochgeladen (aufgenommen) wird [!DNL Experience Manager].
 
-   ![Asset-Eigenschaften für Ansicht-Metadaten auswählen](assets/asset-metadata.png)
+   ![Eigenschaften eines Assets auswählen, um die Metadaten Ansicht](assets/asset-metadata.png)
 
    *Abbildung: Bearbeiten oder Hinzufügen von Metadaten auf der Seite[!UICONTROL &quot;Asset-Eigenschaften&quot;].*
 
@@ -50,8 +51,14 @@ Weitere Informationen finden Sie unter [Bearbeiten von Metadaten-Schema-Formular
 
 You can add your own namespaces within [!DNL Experience Manager]. Just as there are predefined namespaces such as `cq`, `jcr`, and `sling`, you can have a namespace for your repository metadata and XML processing.
 
-1. Go to the node type administration page `https:[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. Click **[!UICONTROL Namespaces]** at the top of the page. Die Seite zur Namespace-Verwaltung wird in einem Fenster angezeigt.
-
-1. To add a namespace, click **[!UICONTROL New]** at the bottom.
+1. Greifen Sie auf die Knotentyp-Verwaltungsseite zu `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
+1. Klicken Sie auf **[!UICONTROL Namensraum]** oben auf der Seite, um auf die Seite &quot;Namensraum-Administration&quot;zuzugreifen.
+1. Klicken Sie zum Hinzufügen eines Namensraums unten auf der Seite auf **[!UICONTROL Neu]** .
 1. Geben Sie einen benutzerdefinierten Namensraum in der XML-Namensraum-Konvention an. Geben Sie die ID in Form eines URI und eines zugehörigen Präfix für die ID an. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+>[!MORELIKETHIS]
+>
+>* [Informationen zu Metadaten und deren Bedarf in Assets](metadata.md)
+>* [XMP-Metadaten](xmp.md)
+>* [Metadaten-Schemareferenz](meta-ref.md)
+
