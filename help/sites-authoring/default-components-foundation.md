@@ -123,7 +123,7 @@ Wenn es sich bei dem Bild um ein JPEG-Bild handelt, kann die Anzeigegröße sich
 
 Das Dialogfeld erlaubt das Bearbeiten der Eigenschaften Ihrer Instanz der adaptiven Bildkomponente, von denen viele mit denen der Bild-Komponente übereinstimmen, auf der sie basieren. Die Eigenschaften werden auf zwei Registerkarten angezeigt:
 
-* **Image**
+* **Bild**
 
    * **Bild**
 Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um ein Browserfenster zu öffnen, in dem Sie ein Bild laden können. Nachdem das Bild geladen wurde, können Sie es beschneiden, drehen oder löschen. Verwenden Sie den Regler unter dem Bild (und über den Schaltflächen „OK“ und „Abbrechen“), um das Bild ein- und auszuzoomen.
@@ -159,7 +159,7 @@ Informationen zum Anpassen der Adaptive Image-Komponente finden Sie unter [Die A
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/carousel.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html). 
 
 Mit der Karussell-Komponente können Sie Bilder anzeigen, die einzelnen Seiten zugeordnet sind:
 
@@ -199,7 +199,8 @@ Abhängig von dem von Ihnen ausgewählten Element wird ein neues Fenster geöffn
 Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * **Seiten** Wählen Sie eine Liste von Seiten aus. Verwenden Sie `+` zum Hinzufügen weiterer Einträge und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+         * **Seiten** Wählen Sie eine Liste von Seiten aus. Verwendung 
+`+` , um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -212,7 +213,8 @@ Sie können eine Textsuchanfrage eingeben.
          * **Querybuilder-Eigenschafts-Notation**
 Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 Unter [QueryBuilder API](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
-   * **Ordnen nach** Auswahl `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü.
+   * **Reihenfolge nach** Auswahl 
+`jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü.
 
    * **Begrenzung**
 Die maximale Anzahl der Elemente, die Sie im Karussell verwenden möchten (optional).
@@ -709,7 +711,7 @@ Sie können bei Bedarf Folgendes konfigurieren:
 ### Diashow {#slideshow}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/carousel.html). 
+Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html). 
 
 Mit dieser Komponente können Sie mehrere Fotos laden, sodass sie als Diashow auf Ihrer Seite angezeigt werden. Sie können Bilder hinzufügen oder entfernen und jedem einen Titel zuweisen. Unter „Erweitert“ können Sie auch die Größe des Anzeigebereichs festlegen.
 
@@ -738,7 +740,7 @@ Die Bildschirmpräsentation-Komponente zeigt dann wiederholt die einzelnen Fotos
 ### Tabelle {#table}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/text.html). 
+Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html). 
 
 >[!NOTE]
 Die Foundation-Komponente **Tabelle** basiert auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) - genau wie die Foundation-Komponente **[Text](#text)**.
@@ -785,7 +787,7 @@ Weitere Informationen zur Verwendung von Tags finden Sie im Beitrag zum [Verwend
 ### Text {#text}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/text.html). 
+Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html). 
 
 >[!NOTE]
 Die Foundation-Komponente **Text** basiert auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) - genau wie die Foundation-Komponente **Tabelle**.
@@ -812,7 +814,7 @@ Zusätzlich zu der Bearbeitung in Dialogfeldern durch den Rich-Text-Editor biete
 ### Text und Bild {#text-image}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) und [„Text“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/text.html).
+Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) und [„Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html).
 
 Mit der Komponente „Text und Bild“ werden ein Textblock und ein Bild hinzugefügt. Außerdem können Sie Text und Bilder separat hinzufügen und bearbeiten. Einzelheiten hierzu finden Sie in den Beiträgen zu den Komponenten [Text](#text) und [Bild](#image).
 
