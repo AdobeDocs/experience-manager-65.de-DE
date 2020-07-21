@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
+source-git-commit: 9bd71115dac8109c9a47155ab60ac7573d88014c
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 77%
@@ -340,9 +340,7 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die 
    >
    >
 * Für Videos unterstützt der Scene7-Inhaltsbrowser Folgendes:
-   >
-   >   
-   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
+   >   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
    >   * Einzelnes MP4-Video
    >   * Einzelnes F4V-Video
 
