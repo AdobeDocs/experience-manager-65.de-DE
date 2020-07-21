@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
+source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '5035'
 ht-degree: 3%
 
 ---
@@ -81,19 +81,16 @@ Zu den in diesem Paket enthaltenen Assets gehören:
 
 Dieser Abschnitt enthält Informationen zum Installieren des Demopakets.
 
-### From package share {#from-package-share}
+### Von der Softwareverteilung {#from-software-distribution}
 
-1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/crx/packageshare/*
-
-   Oder klicken Sie in AEM auf &quot;Bereitstellung&quot;und navigieren Sie zum Symbol für die Paketfreigabe.
-
-   ![Symbol zum Teilen von Paketen](assets/package_share_icon.jpg)
-
-1. Melden Sie sich mit Ihrer Adobe ID an.
-1. Suchen Sie das **Paket we-gov-forms.pkg.all-&lt;version>** und suchen Sie es.
-1. Wählen Sie die Option &quot;Herunterladen&quot;und akzeptieren Sie die Geschäftsbedingungen.
-1. Wählen Sie nach dem Herunterladen die Option &quot;Heruntergeladen&quot;, um das Paket im Package Manager zu suchen.
-1. Wählen Sie die Option &quot;Installieren&quot;, um das Paket zu installieren.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
+1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
+1. In the **[!UICONTROL Filters]** section:
+   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
+1. Tippen Sie auf den Paketnamen **we-gov-forms.pkg.all-&lt;version>.zip** , wählen Sie EULA-Bedingungen **** akzeptieren und klicken Sie auf **[!UICONTROL Herunterladen]**.
+1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
+1. Select the package and click **[!UICONTROL Install]**.
 
    ![wir gov Forms-Paket](assets/wegov_forms_package.jpg)
 
