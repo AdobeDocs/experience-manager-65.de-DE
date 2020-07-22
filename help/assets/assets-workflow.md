@@ -3,9 +3,9 @@ title: Verarbeiten Sie Assets, um Geschäftsprozesse durchzuführen, Prüfungen 
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '979'
 ht-degree: 29%
 
 ---
@@ -72,10 +72,7 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Klicken Sie unten auf **[!UICONTROL Aktionen]** .
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Klicken Sie unten auf **[!UICONTROL Aktionen]** ![Chevron](assets/do-not-localize/chevron-up-icon.png) .
 1. Klicken Sie auf **[!UICONTROL Workflow starten]**. Wählen Sie im Dialogfeld **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
