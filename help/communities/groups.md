@@ -12,7 +12,10 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ee0d4aa07db6f00409cace8664d02c545e7d6550
+workflow-type: tm+mt
+source-wordcount: '1678'
+ht-degree: 2%
 
 ---
 
@@ -57,13 +60,15 @@ So greifen Sie auf die Konsole &quot;Gruppen&quot;zu:
    * Die Struktur der Community-Site muss eine Gruppenfunktion enthalten.
    * Diese Screenshots stammen aus dem Tutorial &quot;Erste Schritte&quot;nach dem [Erstellen von Gruppen im Veröffentlichungsmodus](/help/communities/published-site.md).
 
+   ![create-group](assets/create-group.png)
+
 * Wählen Sie den Ordner &quot; **Gruppen&quot;** , um ihn zu öffnen.
 
    Beim Öffnen werden alle vorhandenen Gruppen angezeigt, unabhängig davon, ob sie beim Autor oder beim Veröffentlichen erstellt wurden.
 
    In dieser Konsole &quot;Gruppen&quot;können neue Gruppen erstellt werden.
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![create-new-group](assets/create-new-group.png)
 
 * Klicken Sie auf die Schaltfläche &quot;Gruppe **erstellen** &quot;.
 
@@ -106,7 +111,9 @@ Der Standardstamm ist die übergeordnete Site, der Stammordner kann jedoch an ei
 
 ### COMMUNITY GROUP THEME {#community-group-theme}
 
-Das Framework verwendet [Twitter Bootstrap](https://twitterbootstrap.org/) , um ein reaktionsfähiges, flexibles Design auf die Site zu bringen. Eines der vielen vorgeladenen Bootstrap-Themen kann ausgewählt werden, um die ausgewählte Community-Gruppenvorlage zu gestalten, oder ein Bootstrap-Design kann hochgeladen werden.
+![communityGrouptheme](assets/communitygrouptheme.png)
+
+Das Framework verwendet [Twitter-Bootstrap](https://twitterbootstrap.org/) , um ein reaktionsfähiges, flexibles Design auf die Site zu bringen. Eines der vielen vorab geladenen Bootstrap-Themen kann ausgewählt werden, um die ausgewählte Community-Gruppenvorlage zu gestalten, oder ein Bootstrap-Design kann hochgeladen werden.
 
 Wenn diese Option aktiviert ist, wird das Design mit einem undurchsichtigen blauen Häkchen überlagert.
 
@@ -116,7 +123,7 @@ Nachdem die Community-Site veröffentlicht wurde, können Sie die Eigenschaften 
 
 ### COMMUNITY GROUP BRANDING {#community-group-branding}
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![community-group-branding](assets/community-group-branding.png)
 
 Das Branding einer Community-Site ist ein Bild, das als Kopfzeile am oberen Rand jeder Seite angezeigt wird. Es ist möglich, ein Banner für die Gruppe anzuzeigen, das sich von anderen Seiten der Site unterscheidet.
 
@@ -155,7 +162,7 @@ Ein Benutzer U1 kann daher Administrator in einer Gruppe G1 und ein regulärer B
 
 Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichkeiten, eine Community-Gruppe zu sichern.
 
-![chlimage_1-202](assets/chlimage_1-202.png)
+![community-group-mitgliedschaft](assets/community-group-membership.png)
 
 * **Optionale Mitgliedschaft**
 
@@ -171,7 +178,7 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
 
 **MINIATUR**
 
-![chlimage_1-203](assets/chlimage_1-203.png)
+![community-group-thumbnail](assets/community-group-thumbnail.png)
 
 Die Miniaturansicht ist ein Bild, das bei Autor und Veröffentlichung für die Gruppe angezeigt wird.
 
@@ -179,13 +186,13 @@ Die optimale Größe für ein Gruppenbild beträgt 170 x 90 Pixel in einem unter
 
 Wenn kein Bild hinzugefügt wird, wird ein Standardbild angezeigt.
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![thumbnail-image](assets/thumbnail-image.png)
 
 ### Schritt 4: Gruppe erstellen {#step-create-group}
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![community-create-group](assets/community-create-group.png)
 
-Falls Anpassungen erforderlich sind, verwenden Sie die Schaltfläche **Zurück **um sie vorzunehmen.
+Falls Anpassungen erforderlich sind, verwenden Sie die Schaltfläche &quot; **Zurück** &quot;, um sie vorzunehmen.
 
 Nachdem **Erstellen** ausgewählt und gestartet wurde, kann der Vorgang zum Erstellen der Gruppe nicht unterbrochen werden.
 
@@ -200,7 +207,7 @@ Nach Abschluss des Vorgangs wird die Karte für die neue Subcommunity-Site (Grup
 
 ## Inhalt der Autorengruppe {#author-group-content}
 
-![chlimage_1-206](assets/chlimage_1-206.png)
+![open-site](assets/open-site.png)
 
 Der Seiteninhalt einer Gruppe kann mit denselben Werkzeugen wie jede andere AEM-Seite erstellt werden. Um die Gruppe zum Authoring zu öffnen, wählen Sie das Symbol &quot;Site öffnen&quot;, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen.
 
@@ -208,11 +215,11 @@ Der Seiteninhalt einer Gruppe kann mit denselben Werkzeugen wie jede andere AEM-
 
 Die Eigenschaften einer bestehenden Subcommunity-Site, die während des Community-Gruppenerstellungsprozesses angegeben wurde, können durch Auswahl des Symbols &quot;Site bearbeiten&quot;geändert werden, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen:
 
-![chlimage_1-207](assets/chlimage_1-207.png)
+![edit-site](assets/edit-site.png)
 
 Die Details der folgenden Eigenschaften stimmen mit den Beschreibungen im Abschnitt [Gruppenerstellung](#group-creation) überein. Verschachtelte Gruppen können bearbeitet werden, unabhängig davon, ob sie in der Umgebung &quot;Veröffentlichen&quot;oder in der Umgebung &quot;Autor&quot;erstellt wurden.
 
-![chlimage_1-208](assets/chlimage_1-208.png)
+![community-group-basic](assets/community-group-basic.png)
 
 ### Basic ändern {#modify-basic}
 
@@ -235,7 +242,7 @@ Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich
 * Auf einer Instanz einer Community-Funktion in der Site-Struktur:
 
    * **`Gear icon`**
-Bearbeiten Sie Einstellungen, einschließlich des Anzeigentitels und des URL-Namens*und der [privilegierten Mitgliedergruppen](/help/communities/users.md#privilegedmembersgroups).
+Bearbeiten Sie Einstellungen, einschließlich Anzeigentitel, URL und [privilegierte Mitgliedergruppen](/help/communities/users.md#privilegedmembersgroups).
 
    * **`Trashcan icon`**
 Entfernen (Löschen) von Funktionen aus der Site-Struktur.
@@ -259,7 +266,7 @@ Entfernen (Löschen) von Funktionen aus der Site-Struktur.
 
 **Beispiel: Hinzufügen einer Kalenderfunktion zu einer UnterCommunity-(Gruppen-)Struktur**
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![community-group-add-calendar](assets/community-group-add-calendar.png)
 
 ### Design ändern {#modify-design}
 
@@ -284,13 +291,13 @@ Das [THUMBNAIL](#thumbnail) -Bedienfeld ermöglicht es, ein Bild hochzuladen, da
 
 ## Veröffentlichen der Gruppe {#publish-the-group}
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![publish-site](assets/publish-site.png)
 
 Nachdem eine Community-Gruppe neu erstellt oder geändert wurde, kann die Gruppe durch Auswahl des `Publish Site` Symbols veröffentlicht (aktiviert) werden.
 
 Nachdem die Gruppe erfolgreich veröffentlicht wurde, wird eine Meldung angezeigt:
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![group-published](assets/group-published.png)
 
 >[!CAUTION]
 >
@@ -301,7 +308,7 @@ Nachdem die Gruppe erfolgreich veröffentlicht wurde, wird eine Meldung angezeig
 
 ## Gruppe löschen {#delete-the-group}
 
-![delete-Symbol]()
+![Löschsymbol](assets/deleteicon.png)
 
 Löschen Sie eine Gruppe aus der Community-Gruppenkonsole, indem Sie auf das Symbol &quot;Gruppe löschen&quot;klicken, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppe halten.
 
