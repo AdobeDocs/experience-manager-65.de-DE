@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '9250'
+source-wordcount: '9245'
 ht-degree: 63%
 
 ---
@@ -236,9 +236,9 @@ Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können 
 |  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
 |  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
 
-#### Festlegen von Upload-Optionen für Fotoshop {#setting-photoshop-upload-options}
+#### Festlegen von Photoshop-Upload-Optionen {#setting-photoshop-upload-options}
 
-Fotoshop Dokument-(PSD-)Dateien werden meist zum Erstellen von Bildvorlagen verwendet. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
+Photoshop Dokument-(PSD-)Dateien werden meist zum Erstellen von Bildvorlagen verwendet. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
 
 Dynamic Media erstellt mehrere Bilder aus einer PSD-Datei mit Ebenen, wenn Sie die Datei zum Erstellen einer Vorlage verwenden. Für jede Ebene wird ein Bild erstellt.
 
@@ -335,11 +335,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset anzuzeigen.
 
 1. Im Vorschaumodus ist eine Zoom-Funktion für [unterstützte Bildtypen](/help/assets/assets-formats.md#supported-raster-image-formats) verfügbar (mit interaktiver Bearbeitung).
 
-   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil „Zoom zurücksetzen“ gelangen Sie zurück zur Originalansicht.
-
-   Click **[!UICONTROL Reset]** to reset the view to the original size.
-
-   ![Zurücksetzen, um den Benutzer zur ursprünglichen Ansicht zurückzubringen](assets/chlimage_1-11.png)
+   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil „Zoom zurücksetzen“ gelangen Sie zurück zur Originalansicht. Um die Ansicht auf die Originalgröße zurückzusetzen, klicken Sie auf &quot; **[!UICONTROL Zurücksetzen]** der ![Ansicht](assets/do-not-localize/revert.png)&quot;.
 
 **Vorschau von Assets nur mit Tastatur**
 
@@ -428,8 +424,7 @@ Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werde
 
 Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine Teilkopie wird beim Kopieren eines Assets nicht erstellt.
 
-1. Wählen Sie in der [!DNL Assets] Benutzeroberfläche ein oder mehrere Assets aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Kopieren]** &quot;. Alternativ können Sie die Schnellaktion **[!UICONTROL Kopieren]**   auf der Asset-Karte auswählen.
-   ![Option &quot;Kopieren&quot;in der Symbolleiste der Assets-Oberfläche](assets/copy_icon.png)
+1. Wählen Sie in der [!DNL Assets] Benutzeroberfläche ein oder mehrere Assets aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Kopieren]** &quot;. Alternativ können Sie die Option &quot; **[!UICONTROL Kopieren]** &quot;in der Symbolleiste der Assets-Oberfläche ![](assets/do-not-localize/copy_icon.png) für Schnellaktionen auf der Asset-Karte aktivieren.
 
    >[!NOTE]
    >
@@ -441,10 +436,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
    >
    >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
-1. Click the **[!UICONTROL Paste]** asset option from the toolbar.
-
-   ![Option &quot;Einfügen&quot;in der Assets-Symbolleiste](assets/chlimage_1-14.png)
-   [!DNL Assets] werden dann an diesen Speicherort kopiert.
+1. Klicken Sie in der Symbolleiste auf die Option Asset **[!UICONTROL Einfügen]** ![in der Asset-Symbolleiste](assets/do-not-localize/paste.png) . Assets werden dann an diesen Speicherort kopiert.
 
    >[!NOTE]
    >
@@ -455,7 +447,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 1. Navigieren Sie zum Speicherort des Assets, das Sie verschieben möchten.
 
 1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
-   ![Option &quot;Verschieben&quot;in der Assets-Symbolleiste](assets/move_icon.png)
+   ![Option &quot;Verschieben&quot;in der Assets-Symbolleiste](assets/do-not-localize/move.png)
 
 1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
@@ -685,9 +677,9 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
    * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
    * Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
-   ![Option in der Symbolleiste bearbeiten](assets/edit_icon.png)
+   ![Option in der Symbolleiste bearbeiten](assets/do-not-localize/edit_icon.png)
 
-1. Wenn Sie das Bild beschneiden möchten, klicken Sie auf **[!UICONTROL &quot;Beschneiden]** &quot;, um ein Bild ![](assets/chlimage_1-22.png)zu beschneiden.
+1. Wenn Sie das Bild beschneiden möchten, klicken Sie auf **[!UICONTROL &quot;Beschneiden]** &quot;, um ein Bild ![](assets/do-not-localize/crop.png)zu beschneiden.
 
 1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
 
@@ -695,19 +687,19 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Wählen Sie den zuzuschneidenden Bereich und ändern Sie die Größe oder Position auf dem Bild.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
 
    ![Rückgängig- und Wiederherstellungsoptionen](assets/chlimage_1-25.png)
 
-1. Click the appropriate **Rotate** option to rotate the image clockwise or anti-clockwise.
+1. Click the appropriate **[!UICONTROL Rotate]** option to rotate the image clockwise or anti-clockwise.
 
    ![Drehen im Uhrzeigersinn und gegen den Uhrzeigersinn](assets/chlimage_1-26.png)
 
-1. Click the appropriate **Flip** option to flip the image horizontally or vertically.
+1. Click the appropriate **[!UICONTROL Flip]** option to flip the image horizontally or vertically.
 
    ![Optionen zum horizontalen oder vertikalen Spiegeln eines Bildes](assets/chlimage_1-27.png)
 
-1. Klicken Sie auf **Fertig stellen** , um die Bildbearbeitung abzuschließen ![](assets/chlimage_1-24.png) . Durch Klicken auf **Fertig stellen** wird auch die Wiederherstellung der Darstellungen Beginn.
+1. Um die Bildbearbeitung abzuschließen, klicken Sie auf &quot; **[!UICONTROL Fertig stellen]** &quot; ![](assets/do-not-localize/check-ok-done-icon.png). Durch Klicken auf **Fertig stellen** wird auch die Wiederherstellung der Darstellungen Beginn.
 
 >[!NOTE]
 >
@@ -834,7 +826,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Druckoption in der Symbolleiste](assets/chlimage_1-40.png)
+   ![Druckoption in der Symbolleiste](assets/do-not-localize/print.png)
 
 1. Wählen Sie im Dialogfeld „Drucken“ die Position, deren Anmerkungen/Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen/den Status in der linken oberen Ecke der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **Oben links**. Sie ist standardmäßig aktiviert.
 
