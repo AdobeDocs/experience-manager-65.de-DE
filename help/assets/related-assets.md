@@ -3,9 +3,9 @@ title: Zugehörige Assets
 description: Erfahren Sie, wie digitale Assets, die einige allgemeine Attribute gemeinsam haben, miteinander verknüpft werden. Erstellen Sie auch Quell-abgeleitete Beziehungen zwischen digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 50%
 
 ---
@@ -37,10 +37,7 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** from the toolbar.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** ![relate assets](assets/do-not-localize/link-relate.png) from the toolbar.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um die Quelldatei des Elements zuzuordnen, wählen Sie **[!UICONTROL Quelle]** aus der Liste aus.
@@ -60,7 +57,7 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
 1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfung aufheben]** .
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![nicht verknüpfte Vermögenswerte](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
