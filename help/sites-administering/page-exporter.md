@@ -2,7 +2,7 @@
 title: Das Seiten-Exporttool
 description: Erfahren Sie, wie Sie das AEM-Seiten-Exporttool verwenden.
 translation-type: tm+mt
-source-git-commit: b0126894dec33648a24c0308972aa5b47d7e4b84
+source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 25%
@@ -16,10 +16,11 @@ AEM allows you to export a page as a complete web page including images, `.js` a
 
 Nach der Konfiguration fordern Sie einen Seitenexport aus Ihrem Browser an, indem Sie `html` durch `export.zip` in der URL ersetzen. Dadurch wird eine ZIP-Datei generiert, die die gerenderte Seite im HTML-Format sowie die referenzierten Assets enthält. Alle Pfade auf der Seite (z. B. Pfade zu Bildern) werden umgeschrieben, um entweder auf die im Archiv enthaltenen Dateien oder auf die Ressourcen auf dem Server zu verweisen. Die ZIP-Datei kann dann von Ihrem Browser heruntergeladen werden.
 
->!![NOTE]
-Je nach Browser und Einstellungen wird der Download wie folgt ausgeführt:
-* eine Archivdatei (`<page-name>.export.zip`)
-* Ordner (`<page-name>`); effektiv die Archivdatei, die bereits erweitert wurde
+>[!NOTE]
+>
+>Je nach Browser und Einstellungen wird der Download wie folgt ausgeführt:
+>* eine Archivdatei (`<page-name>.export.zip`)
+>* Ordner (`<page-name>`); effektiv die Archivdatei, die bereits erweitert wurde
 
 
 ## Exportieren einer Seite {#exporting-a-page}
