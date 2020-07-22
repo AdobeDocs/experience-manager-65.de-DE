@@ -3,10 +3,10 @@ title: Hinzufügen von Imagemaps mit Hyperlinks zu digitalen Bildern
 description: Erfahren Sie, wie Sie einem Bild Imagemap mit Hyperlinks hinzufügen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 14%
+source-wordcount: '271'
+ht-degree: 13%
 
 ---
 
@@ -26,12 +26,9 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
    * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and click **[!UICONTROL Edit]** on the toolbar.
    * Click **[!UICONTROL Edit]** from the asset page.
 
-      ![chlimage_1-420](assets/chlimage_1-420.png)
+      ![Bearbeitungsoption](assets/do-not-localize/edit_icon.png)
 
-1. To insert an image map, click **[!UICONTROL Launch Map]** from the toolbar.
-
-   ![chlimage_1-421](assets/chlimage_1-421.png)
-
+1. Um eine Imagemap einzufügen, klicken Sie in der Symbolleiste auf &quot;Imagemap **[!UICONTROL starten]** &quot; ![Imagemap](assets/do-not-localize/image-map-icon.png) .
 1. Wählen Sie die Form der Imagemap aus. Der Hotspot der ausgewählten Form wird auf das Bild gelegt.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
@@ -40,13 +37,9 @@ Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die 
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Klicken Sie auf **[!UICONTROL Bestätigen]** und dann in der Symbolleiste auf **[!UICONTROL Fertig stellen]** , um die Änderungen zu speichern.
+1. Klicken Sie auf **[!UICONTROL Bestätigen]** und dann auf **[!UICONTROL Fertig stellen]** , um die Änderungen zu speichern, und ![wählen Sie Prüfung](assets/do-not-localize/check-ok-done-icon.png) aus der Symbolleiste aus.
 
-   ![chlimage_1-424](assets/chlimage_1-424.png)
-
-   To delete the image map, click the hot-spot and click **[!UICONTROL Delete]**.
-
-   ![chlimage_1-425](assets/chlimage_1-425.png)
+   To delete the image map, click the hot-spot and click **[!UICONTROL Delete]** ![delete](assets/do-not-localize/delete-solid-line.png).
 
 1. Um die Imagemap Ansicht, navigieren Sie zur Seite mit den Asset-Details und bewegen Sie den Cursor über das Bild.
 
