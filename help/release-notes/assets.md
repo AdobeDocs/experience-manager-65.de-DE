@@ -2,14 +2,17 @@
 title: Versionshinweise zu Adobe Experience Manager Assets
 description: Die neuen Funktionen und Erweiterungen für Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 41%
 
 ---
 
 
 # Versionshinweise zu Adobe Experience Manager Assets {#aem-assets-release-notes}
 
-Im Folgenden finden Sie die wichtigsten Funktionen und Highlights der Version Adobe Experience Manager 6.5 Assets.
+Im Folgenden finden Sie die wichtigsten Funktionen und Highlights der Asset-Version von Adobe Experience Manager 6.5.
 
 ## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -21,9 +24,9 @@ Read on to know the specific capabilities and integrations of [!DNL Experience M
 
 [!DNL Adobe Asset Link] stärkt die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Inhaltserstellung. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] ist Teil der [Creative Cloud für Unternehmen](https://www.adobe.com/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] ist Teil der [Creative Cloud für Unternehmen](https://www.adobe.com/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html).
 
-![Suchen von Assets in Adobe Fotoshop](assets/asset_search_photoshop.png)
+![Assets in Adobe Photoshop suchen](assets/asset_search_photoshop.png)
 
 ### [!DNL Adobe Stock] integration {#stock}
 
@@ -31,13 +34,13 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock] Der Dienst bietet Designern und Unternehmen Zugriff auf Millionen von hochwertigen, kuratierten, gebührenfreien Fotos, Vektoren, Illustrationen, Videos, Vorlagen und 3D-Assets für all ihre kreativen Projekte.
 
-For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Vorschau des Adobe Stock-Images und der Lizenz aus Experience Manager Assets](assets/stock_image_preview_license_options.png)
+![Vorschau von Adobe Stock Image und Lizenz aus Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
 *Abbildung: Vorschau[!DNL Adobe Stock]Image und Lizenz von innen[!DNL Experience Manager Assets].*
 
-![Suchen und Filtern der lizenzierten Adobe Stock-Bilder in Experience Manager](assets/aem-search-filters2.jpg)
+![Suchen und filtern Sie die lizenzierten Adobe Stock Images in Experience Manager](assets/aem-search-filters2.jpg)
 
 *Abbildung: Suchen und filtern Sie die lizenzierten[!DNL Adobe Stock]Bilder in[!DNL Experience Manager].*
 
@@ -55,7 +58,7 @@ Weitere Informationen finden Sie unter [Neue Funktionen in AEM Assets Brand Por
 
 In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infrastruktur verteilt werden. Manchmal befinden sich die Funktionen zur Website-Erstellung und die hierfür benötigten digitalen Assets in unterschiedlichen Silos.
 
-[!DNL Experience Manager Sites] bietet Funktionen zum Erstellen von Webseiten, während das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. [!DNL Experience Manager Assets] [!DNL Experience Manager] unterstützt nun den oben genannten Anwendungsfall durch Integration [!DNL Sites] und [!DNL Assets]. Siehe [Konfigurieren und Verwenden der Funktion](/help/assets/use-assets-across-connected-assets-instances.md)&quot;Connected Assets&quot;.
+[!DNL Experience Manager Sites] bietet Funktionen zum Erstellen von Webseiten, während das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. [!DNL Experience Manager Assets] [!DNL Experience Manager] unterstützt nun dank Integration von [!DNL Sites] und [!DNL Assets] das obige Nutzungsszenario. Siehe [Konfigurieren und Verwenden der Funktion](/help/assets/use-assets-across-connected-assets-instances.md)&quot;Connected Assets&quot;.
 
 ![Ziehen eines Assets aus einer [!DNL Experience Manager] Bereitstellung auf einer [!DNL Sites] Seite einer anderen [!DNL Experience Manager] Bereitstellung](assets/connected-assets-drag-and-drop-only.gif)
 
@@ -63,7 +66,7 @@ In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infras
 
 ## Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] bietet erweiterte Rich-Media-Authoring- und Versände, [!DNL Experience Manager Assets] um innovative und personalisierte Erlebnisse zu fördern. Durch das Hochladen eines einzelnen hochwertigen Master-Assets und die Verwendung unseres erweiterten Cloud-Renderings und der Viewer können Sie jede beliebige Kombination von Darstellungen spontan bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
+[!DNL Dynamic Media] bietet erweiterte Rich-Media-Authoring- und Versände, [!DNL Experience Manager Assets] um innovative und personalisierte Erlebnisse zu fördern. Durch das Hochladen eines einzigen hochwertigen Übergeordnet-Assets und die Verwendung unseres erweiterten Cloud-Renderings und der Viewer können Sie jederzeit eine beliebige Kombination von Darstellungen bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
 
 For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
