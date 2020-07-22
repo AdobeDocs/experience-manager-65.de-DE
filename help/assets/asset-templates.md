@@ -3,9 +3,9 @@ title: Asset-Vorlagen in [!DNL Adobe Experience Manager Assets].
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1554'
 ht-degree: 33%
 
 ---
@@ -165,9 +165,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Klicken Sie auf der Seite [!UICONTROL Vorlagenzusammenführung] auf **[!UICONTROL Zusammenführen]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. Klicken Sie auf der Seite &quot; [!UICONTROL Vorlagenzusammenführung] &quot;auf **[!UICONTROL Zusammenführen]** , um Elemente ![](assets/do-not-localize/assets_add_icon.png)hinzuzufügen.
 
 1. Navigieren Sie zum Speicherort der zusammenzuführenden Sicherheiten und klicken Sie auf die Miniaturansichten der zusammenzuführenden Sicherheiten, um sie auszuwählen.
 
