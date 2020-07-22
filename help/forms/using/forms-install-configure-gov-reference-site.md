@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
+source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
 workflow-type: tm+mt
 source-wordcount: '5035'
 ht-degree: 3%
@@ -222,7 +222,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur Adobe Sign Cloud-Konfigura
 
 ### Mehrere Formulare ausfüllen und signieren {#fill-sign-multiple-forms}
 
-In diesem Dokument werden die Schritte erläutert, die zum Einrichten der Fähigkeit zum Ausfüllen und Signieren mehrerer Formulare erforderlich sind. Sie können hier auch die [gleiche Funktion testen](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Dieses Beispiel speichert die erforderlichen Daten für dieses Beispiel im AME-Repository. Dies geschieht, um sicherzustellen, dass die Bereitstellung von Demoelementen auf dem lokalen Server reibungslos abläuft. Im realen Leben werden wir die gleichen Informationen in RDMS Ihrer Wahl speichern.
+In diesem Dokument werden die Schritte erläutert, die zum Einrichten der Fähigkeit zum Ausfüllen und Signieren mehrerer Formulare erforderlich sind. Sie können hier auch die [gleiche Funktion testen](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). In diesem Beispiel werden die für dieses Beispiel erforderlichen Daten im AEM-Repository gespeichert. Dies geschieht, um sicherzustellen, dass die Bereitstellung von Demoelementen auf dem lokalen Server reibungslos abläuft. Im realen Leben werden wir die gleichen Informationen in RDMS Ihrer Wahl speichern.
 
 #### Voraussetzungen {#pre-requisites-fill-sign-multiple-forms}
 
