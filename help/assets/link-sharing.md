@@ -3,9 +3,9 @@ title: URL zu freigegebenen Assets erstellen
 description: In diesem Artikel wird beschrieben, wie Sie Assets, Experience Manager und Sammlungen als URL für externe Parteien freigeben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1229'
 ht-degree: 51%
 
 ---
@@ -28,7 +28,7 @@ Die URL für Assets, die Sie für Benutzer freigeben möchten, generieren Sie im
 >Bevor Sie einen Link für andere Benutzer freigeben, stellen Sie sicher, dass Day CQ Mail Service konfiguriert ist. Wenn Sie [Day CQ Mail Service](/help/assets/link-sharing.md#configmailservice) vor dem Freigeben eines Links nicht konfigurieren, tritt ein Fehler auf.
 
 1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das als Link freigegeben werden soll.
-1. From the toolbar, click the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
+1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png).
 
    Im Feld **[!UICONTROL Link freigeben]** wird automatisch ein Asset-Link erstellt. Sie können diesen Link kopieren und für andere Benutzer freigeben. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
 
