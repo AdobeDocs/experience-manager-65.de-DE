@@ -3,7 +3,7 @@ title: Erstellen und Konfigurieren von Asset Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 73%
@@ -290,7 +290,7 @@ See [Customizing and Extending Assets](/help/assets/extending-assets.md) for inf
 
 Es folgt ein Beispiel für ein Metadatenformular mit verschiedenen Feldern:
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![Metadaten](assets/chlimage_1-390.png)
 
 Auf der Asset-Editor-Seite können Benutzer dann Werte in die Metadatenfelder eingeben (sofern diese bearbeitbar sind) und die Endaktion ausführen (etwa Änderungen übermitteln).
 
@@ -330,7 +330,7 @@ Es folgt ein Beispiel für eine ausgefüllte Komponente „Tags“:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniaturansicht     {#thumbnail}
+#### Miniaturansicht       {#thumbnail}
 
 In der Komponente „Miniatur“ zeigt das Asset die ausgewählte Miniatur an (für eine Vielzahl der Formate wird die Miniatur automatisch extrahiert). Außerdem präsentiert die Komponente den Dateinamen und [von Ihnen veränderbare Aktionen](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
