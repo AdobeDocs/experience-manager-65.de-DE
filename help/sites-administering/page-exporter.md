@@ -2,10 +2,10 @@
 title: Das Seiten-Exporttool
 description: Erfahren Sie, wie Sie das AEM-Seiten-Exporttool verwenden.
 translation-type: tm+mt
-source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
+source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 25%
+source-wordcount: '1065'
+ht-degree: 24%
 
 ---
 
@@ -98,7 +98,7 @@ So erstellen Sie eine komplett neue Vorlage:
 
 Sobald die Vorlage konfiguriert wurde, müssen Sie sie verfügbar machen:
 
-1. Navigieren Sie in CRXDE zur gewünschten Seite in der `/content` Verzweigung.
+1. Navigieren Sie in CRXDE zur gewünschten Seite in der `/content` Verzweigung. Dabei kann es sich um eine einzelne Seite oder um die Stamm-Seite eines Unterbaums handeln.
 
 1. Erstellen Sie auf dem `jcr:content` Knoten der Seite die Eigenschaft:
    * `Name`: `cq:exportTemplate`
