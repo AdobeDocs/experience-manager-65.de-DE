@@ -2,9 +2,9 @@
 title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren können.
 translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
 workflow-type: tm+mt
-source-wordcount: '4116'
+source-wordcount: '4115'
 ht-degree: 85%
 
 ---
@@ -86,7 +86,7 @@ Sie können eine Live Copy einer Seite oder eines Zweigs erstellen. Beim Erstel
 
 Sie können Live Copies für beliebige Seite erstellen:
 
-* Seiten, auf die eine [Blueprint-Konfiguration](#creating-a-blueprint-configuration) verweist;
+* Pages that are referenced by a [blueprint configuration](#creating-a-blueprint-configuration).
 * Seiten ohne verbundene Konfiguration.
 * AEM unterstützt zudem die Erstellung einer Live Copy innerhalb der Seiten einer anderen Live Copy.
 
