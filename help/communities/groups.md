@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: ee0d4aa07db6f00409cace8664d02c545e7d6550
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -259,7 +259,7 @@ Entfernen (Löschen) von Funktionen aus der Site-Struktur.
 
 >[!CAUTION]
 >
->Die Funktion groups darf *nicht *die *erste oder einzige* Funktion in der Site-Struktur sein.
+>Die Funktion groups darf *nicht* die *erste oder einzige* Funktion in der Site-Struktur sein.
 >
 >Jede andere Funktion, wie die [Seitenfunktion](/help/communities/functions.md#page-function), muss eingeschlossen und zuerst aufgeführt werden.
 
