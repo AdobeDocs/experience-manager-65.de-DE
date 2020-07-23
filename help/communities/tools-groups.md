@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +38,7 @@ Sobald eine Aktion durchgeführt wird, um eine neue Community-Gruppe zu erstelle
 
 So erreichen Sie die Gruppenvorlagen-Konsole in der AEM Author-Umgebung:
 
-* Auswählen **von Tools| Communities| Gruppenvorlagen,** aus der globalen Navigation.
+* Auswählen **von Tools | Communities | Gruppenvorlagen,** aus der globalen Navigation.
 
 Diese Konsole zeigt die Vorlagen an, aus denen eine [Community-Site](/help/communities/sites-console.md) erstellt werden kann, und ermöglicht die Erstellung neuer Gruppenvorlagen.
 
@@ -49,7 +52,7 @@ Dadurch wird der Site-Editor-Bereich angezeigt, der drei Unterbereiche enthält:
 
 ### Grundlegende Informationen {#basic-info}
 
-![chlimage_1-137](assets/chlimage_1-137.png)
+![site-basic-info](assets/site-basic-info.png)
 
 Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschreibung und die Konfiguration der Vorlage, ob sie aktiviert oder deaktiviert ist, wie folgt konfiguriert:
 
@@ -65,9 +68,9 @@ Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschr
 
    Ein Umschalter steuert, ob die Vorlage referenzierbar ist.
 
-#### Miniaturansicht   {#thumbnail}
+#### Miniaturansicht       {#thumbnail}
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![site-thumbnail](assets/site-thumbnail.png)
 
 (Optional) Wählen Sie das Symbol Bild hochladen, um eine Miniaturansicht mit dem Namen und der Beschreibung für die Ersteller von Community-Sites anzuzeigen.
 
