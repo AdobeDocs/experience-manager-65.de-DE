@@ -10,10 +10,10 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '4361'
-ht-degree: 96%
+source-wordcount: '4360'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet u
 >
 >Denken Sie daran, dass die Bearbeitung von *vordefinierten, standardmäßig vorhandenen Viewer-Vorgaben* als Szenario nicht unterstützt wird.  Wenn Sie versuchen, eine standardmäßig vorhandene Viewer-Vorgabe zu bearbeiten, werden Sie aufgefordert, die Viewer-Vorgabe unter einem neuen Namen zu speichern. 
 
-## Möglichkeit des Zugriffs auf die Tastatur im Viewer     {#keyboard-accessibility-for-viewers}
+## Möglichkeit des Zugriffs auf die Tastatur im Viewer       {#keyboard-accessibility-for-viewers}
 
 Alle standardmäßigen Viewer unterstützen den Zugriff auf die Tastatur.
 
@@ -51,7 +51,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 >
 >Standardmäßig zeigt das System 15 Viewer-Vorgaben, wenn Sie in einer Detailansicht eines Assets „Viewer“ auswählen.  Sie können diese Grenze erhöhen. Siehe [Erhöhen der Anzahl angezeigter Viewer-Vorgaben](#increasing-the-number-of-viewer-presets-that-display).
 
-### Viewer-Unterstützung für Web-Seiten mit responsivem Design      {#viewer-support-for-responsive-designed-web-pages}
+### Viewer-Unterstützung für Web-Seiten mit responsivem Design        {#viewer-support-for-responsive-designed-web-pages}
 
 Unterschiedliche Webseiten haben unterschiedliche Anforderungen.  Mitunter möchten Sie vielleicht, dass eine Webseite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browserfenster öffnet.  In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Hostseite einzubetten. In letzterem Fall kann die Webseite ein statisches Layout aufweisen.  Oder sie kann „responsiv“ sein und auf verschiedenen Geräten oder bei verschieden großen Browserfenstern anders angezeigt werden.  Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Webseiten. 
 
@@ -423,7 +423,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. On the Viewer Presets page, on the toolbar, tap **[!UICONTROL Create.]**
-1. Geben Sie im Dialogfeld **Neue Viewer-Vorgabe** in das Feld **[!UICONTROL Vorgabename]** den Namen der neuen Vorgabe ein. Choose a name carefully—they are not editable after you tap **[!UICONTROL Create.]**
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully—they are not editable after you tap **[!UICONTROL Create.]**
 
    Wenn Sie die Vorgabe an späterer Stelle in diesen Schritten speichern, wird der Name auf der Seite „Viewer-Vorgaben“ unter der Spaltenüberschrift „Vorgabentitel“ angezeigt. 
 
@@ -474,7 +474,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
-### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos      {#special-considerations-for-creating-an-interactive-viewer-preset}
+### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos        {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **Wissenswertes über Anzeigemodi für Bildminiaturansichten im Anzeigefeld** 
 
@@ -547,7 +547,7 @@ Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon 
 
    Bei aktivierten Viewer-Vorgaben wird die Umschaltfläche rechts in einem blauen Feld angezeigt; bei deaktivierten Viewer-Vorgaben wird die Umschaltfläche links in einem hellgrauen Feld angezeigt. 
 
-## Veröffentlichen von Viewer-Vorgaben      {#publishing-viewer-presets}
+## Veröffentlichen von Viewer-Vorgaben        {#publishing-viewer-presets}
 
 Wird der Status einer Viewer-Vorgabe aktiviert (auf „Ein“ gestellt), bedeutet dies, dass sie in der Dynamic Media-Komponente, in der Komponente für interaktive Medien und bei jeder Anzeige eines Assets sichtbar ist.
 
@@ -563,7 +563,7 @@ Siehe auch [Anzeigen von Assets in einer Vorschau](/help/assets/previewing-asset
 1. Wählen Sie eine oder mehrere Viewer-Vorgaben zum Veröffentlichen aus. 
 1. Tippen Sie auf der Symbolleiste auf das Symbol **[!UICONTROL Veröffentlichen]**.
 
-## Sortieren von Viewer-Vorgaben     {#sorting-viewer-presets}
+## Sortieren von Viewer-Vorgaben       {#sorting-viewer-presets}
 
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **Tools** (Hammersymbol) > **[!UICONTROL Assets > Viewer-Vorgaben.]**
 1. Klicken Sie auf **[!UICONTROL Vorgabentitel]**, **[!UICONTROL Typ]**, **[!UICONTROL Veröffentlicht]** oder **[!UICONTROL Status]**, um nach dieser Spaltenüberschrift zu sortieren. Klicken Sie beispielsweise auf **[!UICONTROL Typ]**, um die Viewer-Vorgabentypen in alphabetischer oder in umgekehrt alphabetischer Reihenfolge zu sortieren. 
