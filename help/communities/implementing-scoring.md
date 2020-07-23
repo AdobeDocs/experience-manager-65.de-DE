@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '2897'
 ht-degree: 3%
@@ -60,7 +60,7 @@ Die Communities [Badges-Konsole](/help/communities/badges.md) bietet die Möglic
 
 Rollenbasierte Abzeichen werden von einem Administrator entsprechend ihrer Rolle in der Community Mitgliedern zugewiesen.
 
-Zugewiesene (und gedachte) Abzeichen werden im ausgewählten [SRP](/help/communities/srp.md) gespeichert und sind nicht direkt zugänglich. Solange keine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur mit Code oder cURL zugewiesen werden. Anweisungen zu cURL finden Sie im Abschnitt [Zuweisen und Sperren von Kennzeichen](#assign-and-revoke-badges).
+Zugewiesene (und gewarnte) Abzeichen werden im ausgewählten [SRP](/help/communities/srp.md) gespeichert und sind nicht direkt zugänglich. Solange keine grafische Benutzeroberfläche verfügbar ist, können rollenbasierte Abzeichen nur mit Code oder cURL zugewiesen werden. Anweisungen zu cURL finden Sie im Abschnitt [Zuweisen und Sperren von Kennzeichen](#assign-and-revoke-badges).
 
 In der Version sind drei rollenbasierte Abzeichen enthalten:
 
@@ -221,7 +221,7 @@ Unter-Regeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:conte
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th> Wertbeschreibung</th>
+   <th> Wert Beschreibung</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -254,7 +254,7 @@ Unter-Regeln sind Nodes vom Typ `cq:Page` mit Eigenschaften auf ihrem `jcr:conte
    <td>
     <ul>
      <li>optional; nicht relevant, wenn ein Mitglied mit Inhalten handelt, die ihm gehören</li>
-     <li>Wenn "true", wird das Ergebnis auf den Eigentümer des Inhalts angewendet, auf den reagiert wird</li>
+     <li>Wenn "true", wird das Ergebnis auf den Eigentümer des Inhalts angewendet, auf den die Aktion angewendet wird</li>
      <li>Wenn false, Punktzahl auf die Aktion des Mitglieds anwenden</li>
      <li>default ist false</li>
     </ul> </td>
@@ -345,7 +345,7 @@ Die `scoringRules` Eigenschaft einer Kennzeichnungsregel schränkt lediglich ein
   <tr>
    <th>Eigenschaft</th>
    <th>Typ</th>
-   <th>Wertbeschreibung</th>
+   <th>Wert Beschreibung</th>
   </tr>
   <tr>
    <td>Schwellenwerte</td>
@@ -436,7 +436,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 >[!NOTE]
 >
->Die Verwendung von cURL zum Zuweisen und Sperren von Abzeichen funktioniert für jedes Abzeichen-Bild, aber wenn sie anstelle von &quot;verdient&quot;zugewiesen werden, werden sie als zugewiesene Abzeichen markiert und entsprechend behandelt.
+>Die Verwendung von cURL zum Zuweisen und Sperren von Abzeichen funktioniert für jedes Abzeichen-Bild, aber wenn sie anstelle von verdient zugewiesen werden, werden sie als zugewiesene Abzeichen markiert und entsprechend behandelt.
 
 ## Bewertung und Abzeichen für benutzerdefinierte Komponenten {#scoring-and-badges-for-custom-components}
 
