@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
+source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7698'
 ht-degree: 71%
 
 ---
@@ -687,10 +687,10 @@ Der Werber-Filterprozess kann wie folgt beschrieben werden:
    1. Bei POST prüft der Formularserver den Werber-Header.
    1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. *CSRF_CHECK_GETS* ist in der Datei *web.xml* für Ihre Anwendung festgelegt.
 
-1. Der Formularserver prüft, ob der angeforderte URI in zulassungsliste vorhanden ist:
+1. Der Formularserver prüft, ob der angeforderte URI in der Zulassungsliste vorhanden ist:
 
    1. Wenn der URI auf die Zulassungsliste gesetzt ist, akzeptiert der Server die Anforderung.
-   1. Wenn der angeforderte URI nicht auf die Zulassungsliste gesetzt ist, ruft der Server den Werber der Anforderung ab.
+   1. Wenn der angeforderte URI nicht auf die Zulassungsliste gesetzt wird, ruft der Server den Werber der Anforderung ab.
 
 1. Wenn die Anforderung einen Werber enthält, prüft der Server, ob es sich um einen zulässigen Werber handelt. Ist dies zulässig, sucht der Server nach einer Werber-Ausnahme:
 
@@ -706,7 +706,7 @@ Der Werber-Filterprozess kann wie folgt beschrieben werden:
 
 AEM Forms on JEE bietet einen Werber-Filter, um Werber anzugeben, denen der Zugriff auf Serverressourcen erlaubt ist. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. Wenn die Anschlussnummer für den Eintrag für einen zulässigen Werber auf 0 eingestellt ist, lassen AEM Forms auf JEE alle Anforderungen mit Werber von diesem Host unabhängig von der Anschlussnummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Werber-Filterung ist deaktiviert, wenn alle Einträge in der Liste &quot;Zulässige Werber&quot;gelöscht werden.
 
-Wenn Sie Dokument Services zum ersten Mal installieren, wird die Liste &quot;Zulässiger Werber&quot;mit der Adresse des Servers aktualisiert, auf dem Dokument Services installiert ist. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die der Liste für zulässige Werber hinzugefügt werden, werden vom Host-Betriebssystem zurückgegeben. Ein Server mit einer IP-Adresse von 10.40.54.187 enthält beispielsweise die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für alle nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben werden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domänennamen haben), wird die zulassungsliste &quot;&quot;nicht aktualisiert. Ändern Sie die Liste für zulässige Werber entsprechend Ihrer geschäftlichen Umgebung. Stellen Sie den Formularserver nicht mit der standardmäßigen Liste für zulässigen Werber in der Produktions-Umgebung bereit. Nachdem Sie einen der zulässigen Werber, Werber-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
+Wenn Sie Dokument Services zum ersten Mal installieren, wird die Liste &quot;Zulässiger Werber&quot;mit der Adresse des Servers aktualisiert, auf dem Dokument Services installiert ist. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die der Liste für zulässige Werber hinzugefügt werden, werden vom Host-Betriebssystem zurückgegeben. Ein Server mit einer IP-Adresse von 10.40.54.187 enthält beispielsweise die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für alle vom Host-Betriebssystem zurückgegebenen unqualifizierten Namen (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierte Domänennamen haben) wird die Zulassungsliste nicht aktualisiert. Ändern Sie die Liste für zulässige Werber entsprechend Ihrer geschäftlichen Umgebung. Stellen Sie den Formularserver nicht mit der standardmäßigen Liste für zulässigen Werber in der Produktions-Umgebung bereit. Nachdem Sie einen der zulässigen Werber, Werber-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
 
 **Verwalten der Liste für zulässige Werber**
 
@@ -956,6 +956,8 @@ Informationen zu WebSphere-Anschlüssen, die für AEM Forms auf JEE erforderlich
 Referring to the physical architecture that is described in the section [AEM Forms on JEE physical architecture](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), you should configure SSL for all of the connections that you plan to use. Besonders alle SOAP-Verbindungen müssen über SSL erfolgen, um die Offenlegung von Benutzerberechtigungen im Netzwerk zu verhindern.
 
 Anleitungen für die Konfiguration von SSL unter JBoss, WebLogic und WebSphere finden Sie unter „Konfigurieren von SSL“ in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_64).
+
+Anweisungen zum Importieren von Zertifikaten in JVM (Java Virtual Machine), die für einen AEM Forms-Server konfiguriert sind, finden Sie im Abschnitt &quot;Gegenseitige Authentifizierung&quot;in der Hilfe zu [AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### SSL-Umleitung konfigurieren {#configuring-ssl-redirect}
 
