@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 30%
 
 ---
 
@@ -32,7 +35,7 @@ Das Dokument beschreibt:
 
 Daten für die `Community Activity List` sind nur verfügbar, wenn Adobe Analytics für die Community-Site lizenziert und konfiguriert ist.
 
-Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md).
+Informationen zu Communities-Funktionen finden Sie unter [Analytics-Konfiguration](/help/communities/analytics.md).
 
 ### Adding a Community Activity List to a Page {#adding-a-community-activity-list-to-a-page}
 
@@ -46,9 +49,9 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
-![chlimage_1-54](assets/chlimage_1-54.png)
+![community-Aktivität](assets/community-activity.png)
 
-### Liste der Community-Aktivität konfigurieren {#configuring-community-activity-list}
+### Liste der Community-Aktivität konfigurieren  {#configuring-community-activity-list}
 
 Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
 
@@ -66,6 +69,7 @@ Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu ho
 
    * `Members`
    * `Content`
+
    Der Standardwert ist `Members`.
 
 * **Anzeigetitel**
@@ -86,6 +90,7 @@ Der Standardwert ist 10.
    * `Posts`(Erstellen von UGC)
    * `Follows`
    * `Likes`
+
    Die Standardeinstellung lautet „Ansichten“.
 
 * **Zeitraum**
@@ -98,6 +103,7 @@ Der Standardwert ist 10.
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    Der Standardwert ist `Total`.
 
 * **Kontextpfad**
