@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 32%
 
 ---
 
@@ -44,13 +47,15 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation` component will appear:
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![Idee](assets/ideation.png)
 
 ### Konfigurieren einer Idee {#configuring-an-ideation}
 
 Select the placed `Ideation` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![ideation-settings](assets/ideation-settings.png)
+![configure-new](assets/configure-new.png)
+
+![ideation-settings](assets/ideation-settings.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
@@ -212,23 +217,23 @@ Wie bei allen Community-Funktionen, wenn nicht angemeldet, kann ein Site-Besuche
 
 Nach der Anmeldung kann ein Mitglied eine neue Idee erstellen.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![create-new-concept](assets/create-new-idea.png)
 
 Bevor Sie die Idee einreichen, kann das Mitglied einen Entwurf speichern.
 
 Durch Auswahl der `Save as Draft` Schaltfläche wird ein Entwurf gespeichert.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![save-concept](assets/save-idea.png)
 
 Wenn Sie gespeicherte Entwürfe auf der `My Drafts` Registerkarte anzeigen, wählen Sie `Read More` die Option, um wieder in den Bearbeitungsmodus zu wechseln:
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![edit-concept](assets/edit-idea.png)
 
 #### Feedback bereitstellen {#providing-feedback}
 
 Sobald die Idee veröffentlicht ist, können sich andere Mitglieder anmelden, die Idee ( `Read More`) öffnen und die Idee mögen, um so zur Stimmenauszählung hinzuzufügen und Kommentare.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![Feedback,](assets/feedback-idea.png)
 
 ### Zusätzliche Informationen {#additional-information}
 
