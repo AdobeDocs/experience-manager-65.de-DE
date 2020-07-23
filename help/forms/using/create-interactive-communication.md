@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+workflow-type: tm+mt
+source-wordcount: '6107'
+ht-degree: 26%
 
 ---
 
@@ -61,11 +64,12 @@ Die folgenden Voraussetzungen sind Voraussetzung für die Erstellung einer inter
    * **[!UICONTROL Interaktive Kommunikationswebvorlage]**: Suchen und wählen Sie die Webvorlage aus.
    * **[!UICONTROL Design]** und **[!UICONTROL Design]** auswählen: Navigieren Sie zu dem Thema und wählen Sie es aus, um den Web-Kanal der interaktiven Kommunikation zu gestalten. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Als Master für Web-Kanal]** drucken: Wählen Sie diese Option, um den Web-Kanal synchron mit dem print-Kanal zu erstellen. Die Verwendung des Druckkanals als Master für den Webkanal stellt sicher, dass der Inhalt und die Datenbindung des Webkanals aus dem Druckkanal abgeleitet werden und dass die im Druckkanal vorgenommenen Änderungen im Webkanal widergespiegelt werden können, wenn Sie auf „Synchronisieren“ tippen. Die Autoren dürfen jedoch ggf. die Vererbung für bestimmte Komponenten im Webkanal aufheben. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals mit dem Druckkanal](../../forms/using/create-interactive-communication.md#synchronize).
-Wenn Sie die Option &quot;Als Master für Web-Kanal **** drucken&quot;auswählen, können Sie einen der folgenden Modi zum Generieren von Web-Kanal auswählen:
+   * **[!UICONTROL Verwenden Sie &quot;Drucken wie Übergeordnet&quot;für Web Kanal]**: Wählen Sie diese Option, um den Web-Kanal synchron mit dem print-Kanal zu erstellen. Die Verwendung des Druckkanals als Master für den Webkanal stellt sicher, dass der Inhalt und die Datenbindung des Webkanals aus dem Druckkanal abgeleitet werden und dass die im Druckkanal vorgenommenen Änderungen im Webkanal widergespiegelt werden können, wenn Sie auf „Synchronisieren“ tippen. Die Autoren dürfen jedoch ggf. die Vererbung für bestimmte Komponenten im Webkanal aufheben. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals mit dem Druckkanal](../../forms/using/create-interactive-communication.md#synchronize).
+Wenn Sie die Option &quot;Drucken als Übergeordnet für Web Kanal **** verwenden&quot;auswählen, können Sie einen der folgenden Modi zum Generieren von Web Kanal auswählen:
 
       * **[!UICONTROL Automatisches Layout]**: Wählen Sie diesen Modus aus, um automatisch Platzhalter, Inhalte und Datenbindung für Web Kanal aus dem Print Kanal zu generieren.
-      * **[!UICONTROL Manuell organisieren**: Wählen Sie diesen Modus aus, um unter Verwendung des auf der Registerkarte &quot; **[!UICONTROL Datenquellen]** &quot;verfügbaren Hauptinhalts die Elemente &quot;Kanal drucken&quot;manuell auszuwählen und dem Web-Kanal hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken aus, um Webinhalte](#selectprintchannelelements)zu erstellen.
+      * **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um unter Verwendung des Übergeordnet verfügbaren Inhalts auf der Registerkarte &quot; **[!UICONTROL Datenquellen]** &quot;die Elemente &quot;Kanal drucken&quot;manuell auszuwählen und dem Web-Kanal hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken aus, um Webinhalte](#selectprintchannelelements)zu erstellen.
+
    For more information on print channel and web channel, see [Print channel and web channel](/help/forms/using/web-channel-print-channel.md).
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**. Die interaktive Kommunikation wird erstellt und ein Warndialog wird angezeigt. Tap **[!UICONTROL Edit]** to start building the contents of the Interactive Communication as explained in [Add contents using Interactive Communication authoring user interface](#step2). Alternatively, you can tap **[!UICONTROL Done]** and choose to edit the Interactive Communication later.
@@ -150,6 +154,7 @@ Tippen Sie auf das Fragment Dokument, dann auf ![configure_icon](assets/configur
    * **Datenmodellobjekt**: Wählen Sie eine Formulardatenmodell-Eigenschaft aus, deren Wert in das Feld gefüllt wird.
    * **Standardwert:** In diesem Feld können Sie einen Standardwert für die Variable definieren. Der Wert wird angezeigt, wenn Sie die Interaktive Kommunikation oder die Agent-Benutzeroberfläche Vorschau haben.
    * **Anzeigemuster:** Sie können auch ein Anzeigeformat für eine Variable definieren. Wählen Sie eine der vordefinierten Optionen aus der Dropdown-Liste &quot; **Typ** &quot;aus, um ein Anzeigeformat auf eine Variable anzuwenden. Wählen Sie **Benutzerdefiniert** , um ein Anzeigemuster zu definieren, das in der Liste nicht verfügbar ist. Weitere Informationen finden Sie unter [Datenanzeigemuster](../../forms/using/create-interactive-communication.md#datadisplaypatterns).
+
    Navigieren Sie zu [Variablen und Datenmodellobjekte](../../forms/using/create-interactive-communication.md#hiddenvariables) , um die Bindung ausgeblendeter Variablen im Dokument-Fragment einzurichten.
 
    Sie können auch Datenquellenelemente oder Textvariablen per Drag &amp; Drop verschieben, um die Variablenbindung einzurichten.  Um eine Bindung mit einem der Datenquellenelemente zu erstellen, wählen Sie die Registerkarte &quot; **Datenquellen** &quot;und ziehen Sie das Element in den Variablennamen. Das Datenquellenelement und die Variable müssen vom gleichen Typ sein, damit die Bindung erfolgreich eingerichtet werden kann. Wenn Sie ein Datenquellenelement auf eine bereits gebundene Variable ziehen und dort ablegen, ersetzt das neue Element das vorherige, um eine neue Bindung mit der Variablen zu erstellen. Wählen Sie auf ähnliche Weise die Registerkarte &quot; **Assets** &quot;und ziehen Sie das Textfragment &quot;Dokument&quot;in den Variablennamen, um die Bindung zwischen ihnen einzurichten. Das Textvariablen-Dokument-Fragment darf keine Variablen enthalten.
@@ -241,6 +246,7 @@ Im Druckkanal können Sie die Anhänge und den Bibliothekszugriff so konfigurier
 
       * **[!UICONTROL Diese Datei standardmäßig an das Dokument anhängen]**: Sie können diese Option ändern, wenn nur der Anhang nicht zwingend ist.
       * **[!UICONTROL Obligatorisch:]** Der Agent kann den Anhang nicht in der Benutzeroberfläche für Agenten entfernen.
+
    ![Anlagen](assets/attachfiles.png)
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**.
@@ -433,6 +439,7 @@ So aktivieren Sie die Sortierung:
 
    * -Tabelle wird basierend auf dieser Spalte sortiert.
    * Werte in der Spalte werden in aufsteigender Reihenfolge angezeigt.
+
    ![Aufsteigende Sortierung](assets/sorting_ascending_new-1.png)
 
    Gleichermaßen stellt eine Spaltenüberschrift mit einem Pfeil nach unten dar, dass die Werte in der Spalte in absteigender Reihenfolge angezeigt werden.
@@ -460,7 +467,7 @@ Führen Sie die folgenden Schritte aus, um den Web-Kanal für eine vorhandene in
 
 1. Wählen Sie auf der Seite &quot; **Eigenschaften** &quot;die Registerkarte &quot; **Kanal** &quot;aus.
 1. Aktivieren Sie das Kontrollkästchen &quot; **Web** &quot;und wählen Sie eine Vorlage für den Web-Kanal aus.
-1. Wählen Sie &quot;Als Master für Web-Kanal **drucken&quot;** verwenden, um die Synchronisierung zwischen dem Web-Kanal und dem Print-Kanal zu aktivieren.
+1. Wählen Sie &quot;Drucken für Web-Kanal **als Übergeordnet** verwenden&quot;, um die Synchronisierung zwischen dem Web-Kanal und dem Print-Kanal zu aktivieren.
 1. Tap **Save &amp; Close** to save the changes.
 
    Ebenso können Sie auf der Registerkarte &quot; **Kanal** &quot;auf das Kontrollkästchen &quot; **Web** &quot;tippen, um den Web-Kanal aus der interaktiven Kommunikation zu löschen.
@@ -481,6 +488,7 @@ So fügen Sie eine Schaltfläche hinzu und definieren Regeln dafür:
    1. Geben Sie die URL der interaktiven Kommunikation, des adaptiven Formulars, eines Assets oder einer Webseite an. Geben Sie beispielsweise die URL im folgenden Format an, um zu einer anderen interaktiven Kommunikation zu navigieren: https://&lt;Servername>:&lt;Anschluss>/editor.html/content/forms/af/&lt;Name der interaktiven Kommunikation>/Kanal/&lt;Name des Kanals - print oder web>.html
    1. Geben Sie die Option an, um das Asset auf derselben Registerkarte, in einer neuen Registerkarte oder in einem neuen Fenster zu öffnen.
    1. Tap **Done** and then tap **Close** to save the rule.
+
    Ebenso können Sie andere verfügbare Optionen aus der Dropdown-Liste &quot;Aktionstyp&quot;auswählen, z. B. &quot;Dienst aufrufen&quot;und &quot;Formular senden&quot;. For more information, see [rule editor](../../forms/using/rule-editor.md).
 
 1. Vorschau der interaktiven Kommunikation und Tippen Sie auf die Schaltfläche, um die interaktive Kommunikation, das adaptive Formular, ein Asset oder eine Webseite gemäß Schritt 4 Buchstabe b Ansicht.
@@ -505,18 +513,18 @@ Führen Sie die folgenden Schritte aus, um dem Web Kanal eine Bereichskomponente
 
 ## Synchronisierung des Webkanals mit dem Druckkanal.{#synchronize}
 
-Wenn Sie beim Erstellen einer interaktiven Kommunikation &quot;Als Master für Web-Kanal drucken&quot;auswählen, wird der Web-Kanal synchron mit dem Print-Kanal erstellt und die Inhalts- und Datenbindung des Web-Kanals wird vom Print-Kanal abgeleitet. Die im Print-Kanal vorgenommenen Änderungen können im Web-Kanal übernommen werden, wenn Sie auf Synchronisieren tippen.
+Wenn Sie beim Erstellen einer interaktiven Kommunikation &quot;Als Übergeordnet für Web Kanal drucken&quot;auswählen, wird der Web-Kanal synchron mit dem Print-Kanal erstellt und die Inhalts- und Datenbindung des Web-Kanals wird vom Print-Kanal abgeleitet. Die im Print-Kanal vorgenommenen Änderungen können im Web-Kanal übernommen werden, wenn Sie auf Synchronisieren tippen.
 
 Die Autoren dürfen jedoch ggf. die Vererbung für Komponenten im Webkanal aufheben.
 
-![Erstellen von Print Master](assets/create_ic_print_master_new-1.png) ![Print Master Web](assets/create_ic_print_master_web_new-1.png)
+![Übergeordnet](assets/create_ic_print_master_new-1.png) drucken Übergeordnet ![Web erstellen](assets/create_ic_print_master_web_new-1.png)
 
 ### Autom. Synchronisierung {#autosync}
 
-Wenn Sie die Option &quot;Als Master für Web-Kanal **** drucken&quot;auswählen, können Sie einen der folgenden Modi zum Generieren von Web-Kanal auswählen:
+Wenn Sie die Option &quot;Drucken als Übergeordnet für Web Kanal **** verwenden&quot;auswählen, können Sie einen der folgenden Modi zum Generieren von Web Kanal auswählen:
 
 * **[!UICONTROL Automatisches Layout]**: Wählen Sie diesen Modus aus, um automatisch Platzhalter, Inhalte und Datenbindung für Web Kanal aus dem Print Kanal zu generieren.
-* **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um unter Verwendung des auf der Registerkarte &quot;Datenquellen&quot;verfügbaren Hauptinhalts die Elemente &quot;Kanal drucken&quot;manuell auszuwählen und dem Web-Kanal hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken aus, um Webinhalte](#selectprintchannelelements)zu erstellen.
+* **[!UICONTROL Manuelles Organisieren]**: Wählen Sie diesen Modus aus, um unter Verwendung des Übergeordnet verfügbaren Inhalts auf der Registerkarte &quot;Datenquellen&quot;die Elemente &quot;Kanal drucken&quot;manuell auszuwählen und dem Web-Kanal hinzuzufügen. Weitere Informationen finden Sie unter [Wählen Sie Kanal drucken aus, um Webinhalte](#selectprintchannelelements)zu erstellen.
 
 ![IC-Optionen erstellen](assets/create_ic_options_updated_new.png)
 
@@ -526,11 +534,11 @@ Wenn Sie die Option &quot;Als Master für Web-Kanal **** drucken&quot;auswählen
 
 ### Wählen Sie Kanal drucken, um Web-Kanal-Inhalte zu erstellen {#selectprintchannelelements}
 
-Wenn Sie beim Erstellen der interaktiven Kommunikation &quot;Als Master drucken&quot;auswählen und nicht die Option für die automatische Synchronisierung wählen, können Sie auch Print-Kanal-Elemente in die Authoring-Oberfläche von Web Kanal ziehen und dort ablegen.
+Wenn Sie beim Erstellen der interaktiven Kommunikation die Option &quot;Drucken&quot;als Übergeordnet auswählen und nicht die Option für die automatische Synchronisierung wählen, können Sie auch die Elemente &quot;Kanal drucken&quot;per Drag &amp; Drop in die Authoring-Oberfläche von Web Kanal verschieben.
 
-Navigieren Sie zu **Datenquellen** > **Hauptinhalt** , um die Kanal-Elemente drucken Ansicht. Ziehen Sie die Zielgruppen, Felder oder Tabellen per Drag &amp; Drop in die Authoring-Oberfläche von Web Kanal. Ein blaues Kreissymbol neben dem Elementnamen gibt an, dass das Element Kanal drucken bereits im Web Kanal enthalten ist.
+Navigieren Sie zu **Data Sources** > **Übergeordnet Content** , um die Kanal zum Drucken Ansicht. Ziehen Sie die Zielgruppen, Felder oder Tabellen per Drag &amp; Drop in die Authoring-Oberfläche von Web Kanal. Ein blaues Kreissymbol neben dem Elementnamen gibt an, dass das Element Kanal drucken bereits im Web Kanal enthalten ist.
 
-![Masterinhalt](assets/master_content.png)
+![Übergeordnet](assets/master_content.png)
 
 ### Vererbung abbrechen {#cancelinheritance}
 
@@ -554,7 +562,7 @@ Tippen Sie auf **[!UICONTROL Ja]**.
 
 ### Synchronisieren {#synchronize-1}
 
-Wenn Sie &quot;Als Master für Web Kanal drucken&quot;verwenden und Änderungen am Kanal &quot;Drucken&quot;vornehmen, können Sie die Inhalte synchronisieren, um die neu vorgenommenen Änderungen an den Web-Kanal zu übertragen.
+Wenn Sie &quot;Drucken&quot;als Übergeordnet für Web Kanal verwenden und Änderungen am Print-Kanal vornehmen, können Sie die Inhalte synchronisieren, um die neu vorgenommenen Änderungen an den Web-Kanal zu übertragen.
 
 1. Um den Web-Kanal mit dem Kanal &quot;Drucken&quot;zu synchronisieren, wechseln Sie zum Web-Kanal und tippen Sie auf das Symbol &quot;Mehr Optionen&quot;.
 
@@ -583,7 +591,7 @@ Tippen Sie auf die Komponente, um die folgenden Optionen Ansicht:
 
 * **Gruppenobjekte im Bedienfeld:** Gruppieren Sie die Komponenten in einem Bereich, um Vorgänge an diesen Komponenten gleichzeitig durchführen zu können. Weitere Informationen finden Sie unter [Objekte in Bedienfeld](#groupobjectspanel)gruppieren.
 
-* **Vererbung abbrechen:** Die [Vererbung](#cancelinheritance) der Komponenten im Bereich &quot;Zielgruppe&quot;abbrechen, um sie zu bearbeiten.
+* **Vererbung abbrechen:** [Brechen Sie die Vererbung](#cancelinheritance) der Komponenten im Komponentenbereich ab, um sie zu bearbeiten.
 
 ### Group objects in Panel {#groupobjectspanel}
 
