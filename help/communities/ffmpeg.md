@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: 299c4cb377c65e49b94383704a906fdd0bb38d06
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -61,7 +61,7 @@ So ändern Sie den Arbeitsablauf zum [!UICONTROL DAM-Aktualisieren von Assets] u
 * Klicken Sie mit der Dublette auf den **[!UICONTROL FFmpeg-Transkodierungsschritt]** , um das Dialogfeld &quot;Schritt-Eigenschaften&quot;aufzurufen.
 * Under the **[!UICONTROL Process]** tab:
 
-   * **[!UICONTROL Anpassungen]**: Löschen Sie alle Einträge, um die Transkodierung von Standardwerten zu deaktivieren: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Anpassungen]**: Löschen Sie alle Einträge, um die Transkodierung von Standardwerten zu deaktivieren: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
