@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -38,13 +38,13 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
 
    Um zur klassischen Benutzeroberfläche zu wechseln, wählen Sie &quot;Globale Navigation&quot;und halten Sie den Mauszeiger über die rechte Seite des Projektsymbols. Wählen Sie das Symbol *Zu klassischer Benutzeroberfläche* wechseln aus, das angezeigt wird:
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    Die Möglichkeit, zur klassischen Benutzeroberfläche zu wechseln, muss von einem Administrator [aktiviert werden](../../help/sites-administering/enable-classic-ui.md).
 
 1. Wählen Sie auf der [klassischen Begrüßungsseite](http://localhost:4502/welcome.html)der Benutzeroberfläche die Option **[!UICONTROL Websites]**.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    Alternativ können Sie die klassische Benutzeroberfläche für Websites direkt aufrufen, indem Sie zu [/siteadmin navigieren.](http://localhost:4502/siteadmin)
 
@@ -57,7 +57,7 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
    * Wählen Sie **[!UICONTROL eine SCF-Sandbox-Abspielvorlage]**
    * Klicken Sie auf **[!UICONTROL Erstellen]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**:
 
@@ -75,11 +75,11 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
 
 1. So wird die Website jetzt in der Websites-Konsole angezeigt. Beachten Sie, dass untergeordnete Seiten des im Explorer-Bereich ausgewählten Elements im rechten Bereich angezeigt werden, wo sie verwaltet werden können.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    Dies ist die Repository-Ansicht, die mit dem Website-Tool und der Vorlage erstellt wurde:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-Ansicht](assets/classic-ui-repository-view.png)
 
 ## Hinzufügen des Entwurfspfads {#add-the-design-path}
 
@@ -100,7 +100,7 @@ definiert wurde, was die optionale Möglichkeit bietet, in einem Skript auf Desi
 
 Der Befund sollte wie folgt aussehen:
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
