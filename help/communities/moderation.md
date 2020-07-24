@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '2110'
+ht-degree: 5%
 
 ---
 
 
 # Moderation Console {#moderation-console}
 
-In AEM Communities ist eine Massenmoderation von [Community-Inhalten](/help/communities/moderate-ugc.md) sowohl von der Autor- als auch von der Veröffentlichungs-Umgebung durch Administratoren und Community-Moderatoren (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind) möglich.
+In AEM Communities ist eine Massenmoderation von [Community-Inhalten](/help/communities/moderate-ugc.md) sowohl aus der Autor- als auch aus der Veröffentlichungs-Umgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).
 
 Administratoren und Community-Moderatoren können auch [kontextbezogene Moderationen](/help/communities/in-context.md) in der Veröffentlichungs-Umgebung durchführen.
 
@@ -45,7 +48,7 @@ Der Zugriff auf die Moderationskonsole von einer veröffentlichten Community-Sit
 
 Über den Link &quot;Administration&quot;wird die Moderationskonsole angezeigt:
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ## Zugriff auf Authoring-Umgebung {#author-environment-access}
 
@@ -243,9 +246,9 @@ Das [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-e
 
 So installieren Sie das Beispiel für den Filter &quot;Tags&quot;:
 
-1. Öffnen Sie den Paketmanager in der AEM Author-Instanz ([https://[AEM-Autor]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) und in der AEM Publish-Instanz ([https://[AEM-Veröffentlichungsmodus]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Öffnen Sie den Package Manager in der Instanz &quot;AEM Author&quot;([https://[AEM-Autor]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) und &quot;AEM Publish&quot;([https://[AEM-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Erstellen Sie das Paket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` aus dem Github-Code und installieren und aktivieren Sie dasselbe.
-1. Öffnen Sie die Bundles-Konsole auf der AEM Author-Instanz ( `https://[aem-author]:4502/system/console/bundles`) und der AEM Publish-Instanz ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Öffnen Sie die Bundles-Konsole in der AEM Author- ( `https://[aem-author]:4502/system/console/bundles`) und AEM Publish-Instanz ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Erstellen Sie das Paket ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` von Github und installieren und aktivieren Sie dasselbe.
 1. Wechseln Sie zum Knoten **/apps/social/moderation/facets** auf AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) und AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Hinzufügen einem technischen Benutzer **community-utility-reader** mit `jcr:read` Berechtigungen.
@@ -260,7 +263,7 @@ So machen Sie die benutzerdefinierten Filter auf bestehenden Websites der Gemein
 
    * Auf neue Komponente einstellen `sling:resourceType = social/moderation/v2/filters.`
 
-1. Wechseln zu `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
+1. Rufen Sie `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer` auf.
 
    * Auf neue Komponente einstellen `sling:resourceType = social/moderation/v2/modcontainer`.
 
@@ -270,7 +273,7 @@ So machen Sie die benutzerdefinierten Filter auf bestehenden Websites der Gemein
 
 Wenn Sie die Beiträge stapelweise moderieren möchten, klicken Sie im Inhaltsbereich auf das Symbol Auswählen ( ![Auswahl](assets/selecticon.png)) eines Beitrags, das angezeigt wird, wenn Sie mit der Maus (Desktop) darauf zeigen oder einen Finger auf dem Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und die nachfolgenden Beiträge auswählen, die per Mausklick gepostet werden sollen. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen an den ausgewählten Beiträgen durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
 
-Um einen einzelnen Beitrag im Inhaltsbereich zu moderieren, halten Sie den Mauszeiger über ihn (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
+Wenn Sie einen einzelnen Beitrag im Inhaltsbereich moderieren möchten, halten Sie den Mauszeiger über den Beitrag (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass die Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
 
 ### Moderieren mehrerer Beiträge {#moderating-multiple-posts}
 
@@ -337,7 +340,7 @@ Moderierte Inhalte werden zunächst in den Status &quot;Ausstehend&quot;versetzt
 
 Inhalt, der den Status &quot;Ausstehend&quot;verlässt, kann nie in den Status &quot;Ausstehend&quot;zurückkehren. Inhalte, die als genehmigt oder verweigert markiert sind, können jederzeit in einen anderen Status geändert werden.
 
-#### Löschen Sie {#delete}
+#### Löschen {#delete}
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
