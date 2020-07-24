@@ -3,9 +3,9 @@ title: Best Practices für die Freigabe von Adobe Experience Managern in Adobe C
 description: Konfigurieren Sie Adobe Experience Manager so, dass Benutzer in Experience Manager Assets Ordner mit Benutzern von Adobe Creative Cloud (CC) austauschen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1082'
 ht-degree: 29%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 29%
 
 >[!CAUTION]
 >
->Der Experience Manager zur Funktion zur Freigabe von Ordnern in Creative Cloud ist veraltet. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
+>Der Experience Manager zur Funktion zur Freigabe von Ordnern in Creative Cloud ist veraltet. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager kann so konfiguriert werden, dass Benutzer in Assets Ordner für die Benutzer von Adobe Creative Cloud-Apps freigeben können, sodass sie als freigegebene Ordner im Adobe Creative Cloud Assets-Dienst verfügbar sind. Mit dieser Funktion können Dateien zwischen Kreativteams und Assets-Benutzern ausgetauscht werden, insbesondere dann, wenn die Kreativbenutzer keinen Zugriff auf die Assets-Bereitstellung haben (sie befinden sich nicht im Unternehmensnetzwerk).
 
