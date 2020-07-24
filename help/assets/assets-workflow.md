@@ -3,9 +3,9 @@ title: Verarbeiten Sie Assets, um Geschäftsprozesse durchzuführen, Prüfungen 
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '986'
 ht-degree: 29%
 
 ---
@@ -56,11 +56,9 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
 1. Wählen Sie im Dialogfeld **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (Optional) Geben Sie einen Titel für den Workflow an, der verwendet werden kann, um auf die Instanz des Workflows zu verweisen.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![Workflow auswählen, Titel angeben und auf Beginn klicken](assets/start-workflow.png)
 
 1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Proceed]**. Jeder Schritt des Workflows wird in der Timeline als ein Ereignis angezeigt.
 
@@ -75,7 +73,7 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 1. Klicken Sie unten auf **[!UICONTROL Aktionen]** ![Chevron](assets/do-not-localize/chevron-up-icon.png) .
 1. Klicken Sie auf **[!UICONTROL Workflow starten]**. Wählen Sie im Dialogfeld **[!UICONTROL Workflow starten]** ein Workflow-Modell aus der Liste.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![Arbeitsablauf für Beginn](assets/start-workflow.png)
 
 1. (Optional) Geben Sie einen Titel für den Workflow an, der für den Verweis auf die Workflow-Instanz verwendet werden kann.
 1. Klicken Sie auf **[!UICONTROL Starten]** und anschließend im Dialogfeld auf **[!UICONTROL Bestätigen]**. Der Workflow wird für alle Assets ausgeführt, die Sie ausgewählt haben.
