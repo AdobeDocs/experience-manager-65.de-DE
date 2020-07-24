@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 2%
 
 ---
 
@@ -54,7 +57,7 @@ Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen B
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer durch jcr-Inhalte und json zu schützen:
 
-1. Wechseln Sie auf der AEM Author-Instanz zu https:// Hostname:port/editor.html/content/site/sitename.html.
+1. Wechseln Sie auf der Instanz im AEM Author zu https:// Hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -89,7 +92,7 @@ Nachdem Sie sich als registriertes Community-Mitglied angemeldet haben, beachten
    1. Erstellen Sie neue Direktnachrichten, die an Personen und Gruppen gesendet werden.
 
 * [Die Option &quot;Benachrichtigungen](/help/communities/notifications.md) &quot;leitet Sie zum Benachrichtigungsabschnitt weiter, in dem Sie Ihre interessanten Ereignis Ansicht und die Benachrichtigungseinstellungen bearbeiten können.
-* [Administration](/help/communities/published-site.md#moderationlink) leitet Sie, sofern Sie über Moderationsberechtigungen verfügen, zur AEM Communities-Moderationsseite weiter.
+* [Wenn Sie über Moderationsberechtigungen verfügen, führt Administration](/help/communities/published-site.md#moderationlink) Sie zur Seite &quot;AEM Communities-Moderation&quot;.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -103,6 +106,7 @@ Beachten Sie, dass die Kalenderseite die Startseite ist, da die gewählte Refere
 >
 >* [Communities-Komponenten](/help/communities/author-communities.md) (für Autoren)
 >* [Komponenten-, Funktionen- und Funktionsgrundlagen](/help/communities/essentials.md) (für Entwickler)
+
 >
 
 
@@ -125,7 +129,7 @@ Dies ist ein Beispiel, bei dem eine Gruppe in der Umgebung zum Veröffentlichen 
 
 Gruppen können auch in der Autorengruppe erstellt und innerhalb der Community-Site in der Autorenkonsole ([Community-Gruppenkonsole](/help/communities/groups.md)) verwaltet werden. Die Erfahrung mit dem [Erstellen von Gruppen unter Autor](/help/communities/nested-groups.md) ist als Nächstes in dieser Übung.
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![classic-ui](assets/classic-ui.png)
 
 Erstellen einer Referenzgruppe:
 
@@ -143,11 +147,11 @@ Erstellen einer Referenzgruppe:
 
 1. Gruppe **erstellen auswählen**
 
-![chlimage_1-37](assets/chlimage_1-37.png)
+![classic-ui-website](assets/classic-ui-website.png)
 
 Nachdem eine neue Gruppe erstellt wurde, **wählen Sie die neue Sportgruppe** aus, um zwei Gruppen (verschachtelt) darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, muss nach dem Öffnen der Gruppe &quot;Sport&quot;der Link &quot;Gruppen&quot;ausgewählt werden:
 
-![chlimage_1-38](assets/chlimage_1-38.png)
+![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 Der zweite Satz von Links, beginnend mit `Blog`, gehört zur aktuell ausgewählten Gruppe, der `Sports` Gruppe. Durch Auswahl des `Groups` Links &quot;Sport&quot;können zwei Gruppen innerhalb der Gruppe &quot;Sport&quot;verschachtelt werden.
 
@@ -175,7 +179,7 @@ Nachdem beide Gruppen erstellt wurden, wählen Sie die Baseball-Gruppe, eine off
 
 Die Links der Gruppe werden unterhalb der Links der Haupt-Site angezeigt und führen zur folgenden Anzeige:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![classic-ui-website-page](assets/classic-ui-website-page.png)
 
 Unter &quot;Autor&quot;- mit Administratorrechten navigieren Sie zur [Communities Groups-Konsole](/help/communities/members.md) und fügen Sie der `Community Engage Gymnastics <uid> Members` Gruppe Weston McCall hinzu.
 
@@ -190,7 +194,7 @@ Nur die Baseballgruppe wird angezeigt.
 
 Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum gleichen Speicherort. Beachten Sie, dass Weston in der Lage ist, `Join` die offene `Baseball` Gruppe und entweder `enter or Leave` die private `Gymnastics` Gruppe.
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+![classic-ui-repository-Ansicht](assets/classic-ui-repository-view.png)
 
 ### Webseitenlink {#web-page-link}
 
@@ -198,7 +202,7 @@ Ansicht der grundlegenden Webseite, die in der Site enthalten ist, durch Auswahl
 
 Rufen Sie beispielsweise die **Autoreninstanz** auf, öffnen Sie den `engage` Ordner in der Konsole [&quot;](/help/communities/sites-console.md)Communities Sites&quot;und klicken Sie auf das Symbol zum **Öffnen der Site** , um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Modus &quot;Vorschau&quot;aus, um den `Web Page` Link auszuwählen, und wählen Sie dann den Bearbeitungsmodus, um Titel- und Textkomponenten hinzuzufügen. Als letztes veröffentlichen Sie entweder nur die Seite oder die gesamte Site erneut.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 ### Moderationslink {#moderationlink}
 
