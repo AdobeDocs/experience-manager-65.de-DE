@@ -4,10 +4,10 @@ seo-title: Adobe Experience Manager 6.5 Asset-Benutzerhandbuch
 description: In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 seo-description: Behandelt alle Asset-Aufgaben des Experience Managers, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -17,6 +17,9 @@ ht-degree: 17%
 In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 
 ## Artikel zu wichtigen Experience Managern
+
+<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
+-->
 
 * [Erste Schritte mit Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Experience Manager 6.5 - Versionshinweise](/help/release-notes/home.md)
