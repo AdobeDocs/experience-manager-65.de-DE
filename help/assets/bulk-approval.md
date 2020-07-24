@@ -3,10 +3,10 @@ title: Überprüfen von Ordner-Assets und Sammlungen
 description: Richten Sie Prüfungs-Workflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 63%
+source-wordcount: '794'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 63%
 
 Richten Sie Prüfungs-Workflows für Assets innerhalb eines Ordners oder einer Sammlung ein und geben Sie diese für Prüfer oder kreative Partner frei, um Feedback zu erhalten.
 
-Mit Adobe Experience Manager Assets können Sie einen Ad-hoc-Review-Arbeitsablauf für Assets in einem Ordner oder einer Sammlung einrichten und diese dann für Reviewer oder Kreativpartner freigeben, um Feedback einzuholen.
+Mit Adobe Experience Manager Assets können Sie einen Ad-hoc-Review-Arbeitsablauf für Assets in einem Ordner oder einer Sammlung einrichten und diese für Reviewer oder Kreativpartner freigeben, um Feedback einzuholen.
 
 Sie können den Prüfungs-Workflow entweder mit einem Projekt verbinden oder eine eigenständige Prüfungsaufgabe erstellen.
 
@@ -26,9 +26,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 ## Create a review task for folders {#creating-a-review-task-for-folders}
 
 1. Wählen Sie in der Assets-Benutzeroberfläche den Ordner aus, für den Sie eine Prüfungsaufgabe erstellen möchten.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. Klicken Sie in der Symbolleiste auf Aufgabe **[!UICONTROL zum]** Erstellen einer Review-Aufgabe ![](assets/do-not-localize/create-review-task.png) erstellen, um die Seite zur **[!UICONTROL Review-Aufgabe]** zu öffnen. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optional) Wählen Sie in der Liste **[!UICONTROL Projekt]** das Projekt aus, mit dem Sie die Prüfungsaufgabe verbinden möchten. Standardmäßig ist die Option **[!UICONTROL Ohne]** ausgewählt. Wenn Sie kein Projekt mit der Prüfungsaufgabe verbinden möchten, behalten Sie diese Auswahl bei.
 
@@ -74,9 +72,7 @@ Nachdem der Prüfer die Prüfung abgeschlossen hat (Assets genehmigt oder ablehn
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
 1. Wählen Sie auf der Seite „Sammlungen“ die Sammlung aus, für die Sie eine Prüfungsaufgabe erstellen möchten.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. Klicken Sie in der Symbolleiste auf Aufgabe **[!UICONTROL zum]** Erstellen einer Review-Aufgabe ![](assets/do-not-localize/create-review-task.png) erstellen, um die Seite zur **[!UICONTROL Review-Aufgabe]** zu öffnen. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optional) Wählen Sie in der Liste **[!UICONTROL Projekt]** das Projekt aus, mit dem Sie die Prüfungsaufgabe verbinden möchten. Standardmäßig ist die Option **[!UICONTROL Ohne]** ausgewählt. Wenn Sie kein Projekt mit der Prüfungsaufgabe verbinden möchten, behalten Sie diese Auswahl bei.
 
