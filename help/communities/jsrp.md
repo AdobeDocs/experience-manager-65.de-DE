@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -44,20 +44,18 @@ In der Umgebung &quot;author&quot;zur Datenspeicherung Configuration Console
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 ### Veröffentlichen der Konfiguration {#publishing-the-configuration}
 
 Während JSRP die Standardkonfiguration ist, stellen Sie sicher, dass die gleiche Konfiguration in der Umgebung &quot;Veröffentlichen&quot;festgelegt ist:
 
-* Beim Autor:
+* Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**
+* Wählen Sie **[!UICONTROL Baum]** aktivieren > **[!UICONTROL Beginn-Pfad]**:
 
-   * Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**
-   * Wählen Sie **[!UICONTROL Baum]** aktivieren > **[!UICONTROL Beginn-Pfad]**:
+   * Navigieren zu `/conf/global/settings/community/srpc/`
 
-      * Navigieren zu `/conf/global/settings/community/srpc/`
-   * Aktivieren **[!UICONTROL auswählen]**
-
+* Aktivieren **[!UICONTROL auswählen]**
 
 ## Verwalten von Benutzerdaten {#managing-user-data}
 
