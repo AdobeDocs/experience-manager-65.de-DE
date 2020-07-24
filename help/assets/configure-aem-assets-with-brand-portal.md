@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 62%
+source-wordcount: '2051'
+ht-degree: 61%
 
 ---
 
@@ -70,13 +70,13 @@ Es wird empfohlen, AEM 6.5 zum Einrichten einer AEM-Autoreninstanz zu verwenden.
 
 * If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
 
-Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://helpx.adobe.com/de/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
 
 ### Herunterladen und Installieren des neuesten AEM Service Packs{#servicepack}
 
 Ausführliche Anweisungen finden Sie unter
 
-* [Versionshinweise zum AEM 6.5 Service Pack](https://helpx.adobe.com/de/experience-manager/6-5/release-notes/sp-release-notes.html)
+* [Versionshinweise zum AEM 6.5 Service Pack](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 **Wenden Sie sich an den Kundendienst** , wenn Sie das neueste AEM-Paket oder Service Pack nicht finden können.
 
