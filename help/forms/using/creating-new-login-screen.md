@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+source-git-commit: 81249e13db9bd173d4251683ccaacbb7f71b3209
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 60%
@@ -27,9 +27,15 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 1. Log in at `/lc/crx/de` with Administrator permissions.
 1. Führen Sie die folgenden Aktionen durch:
 
-   1. Replizieren Sie die hierarchische Struktur: von `/libs/livecycle/core/content` at `/apps/livecycle/core/content`. Behalten Sie die Eigenschaften (Knoten/Ordner) und Zugriffssteuerung bei.
+   1. Replizieren Sie die hierarchische Struktur: von `/libs/livecycle/core/content` at `/apps/livecycle/core/content`.
 
-   1. Copy the content folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.
+      Behalten Sie die Eigenschaften (Knoten/Ordner) und Zugriffssteuerung bei.
+
+   1. Kopieren Sie den Inhaltsordner:
+
+      von: `/libs/livecycle/core`
+
+      in: `/apps/livecycle/core`.
 
    1. Delete the contents of `/apps/livecycle/core` folder.
 
@@ -244,6 +250,7 @@ String browserLocale = "en";
 
       * in `/apps/livecycle/core/components/login`
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added styles.
+
 
 
 Beispiel:
