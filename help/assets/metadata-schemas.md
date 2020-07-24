@@ -3,9 +3,9 @@ title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften i
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04babc1ec79a0816e1cb9f97e2711fe212f51387
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2667'
 ht-degree: 53%
 
 ---
@@ -19,11 +19,7 @@ In [!DNL Adobe Experience Manager Assets]Schemas sind spezielle Felder enthalten
 
 Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu bearbeiten:
 
-1. Klicken Sie in den Schnellaktionen auf der Asset-Kachel in der Ansicht auf die Option &quot; **[!UICONTROL Ansicht-Eigenschaften]** &quot;.
-
-   ![Schnellaktionen für Asset-Kacheln](assets/chlimage_1-170.png)
-
-   Alternativ können Sie ein Asset auswählen und dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]** klicken.
+1. Klicken Sie in den Schnellaktionen auf der Asset-Kachel in der Ansicht auf die Option &quot; **[!UICONTROL Ansicht-Eigenschaften]** &quot;. Alternativ können Sie ein Asset auswählen und dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]** - ![Ansichten](assets/do-not-localize/info-circle-icon.png) klicken.
 
 1. Sie können die verschiedenen Eigenschaften bearbeitbarer Metadaten unter den verfügbaren Registerkarten bearbeiten. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
