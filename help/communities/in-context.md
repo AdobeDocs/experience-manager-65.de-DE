@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 917fceffb58883df83e96f60da4769046a18f3c0
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
 
 # Kontextbezogene Moderation {#in-context-moderation}
 
-Bei AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite durchgeführt werden, auf der die Community-Inhalte veröffentlicht wurden.
+Bei AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite, auf der die Community-Inhalte veröffentlicht wurden, durchgeführt werden.
 
 Bei Verwendung einer [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die beim Moderieren im Kontext verfügbar sind.
 
@@ -37,7 +40,7 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz ang
 
 ## Beispiel {#example}
 
-Mithilfe der beim [Einstieg in AEM Communities](http://localhost:4503/content/sites/engage/en.html) erstellten [Geometrixx-Engage](getting-started.md)-Website können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Umgebung &quot;Veröffentlichen&quot;erleben können, wie unten dargestellt.
+Mithilfe der [Geometrixx-Engage](http://localhost:4503/content/sites/engage/en.html) -Website, die beim [Einstieg in AEM Communities](getting-started.md)erstellt wurde, können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Umgebung &quot;Veröffentlichen&quot;erleben können, wie unten dargestellt.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Site zur Community-Interaktions-Moderatorengruppe hinzufügte.
 
@@ -58,6 +61,7 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
    * Textkörper eingeben
 
       Ich hatte nicht viel Erfolg, als ich jedes Jahr eine Kolibris-Feeder aufhängte. Es scheint, sie kommen ein oder zwei Tage, dann ist es. Ich ändere es einmal in der Woche ist das zu lang? Muss ich es früher ändern?
+
    * Beitrag auswählen
    * Abmelden auswählen
 
@@ -89,7 +93,7 @@ Im Folgenden finden Sie eine Ansicht des Forums, das von einem Site-Besucher ges
 
 Ein anonymer Site-Besucher kann nur die Ansicht des Forums durchführen, darf jedoch keine Inhalte veröffentlichen und keine Moderationsaktionen durchführen.
 
-![chlimage_1](assets/chlimage_1.png)
+![community-forum-Besucher](assets/community-forum-visitor.png)
 
 ### Neues Mitglied (#4) {#new-member}
 
@@ -107,7 +111,7 @@ Lassen Sie Boyd &quot;Flag&quot;auswählen, um die von Andrew veröffentlichten 
 
 Abmelden
 
-![chlimage_1-1](assets/chlimage_1-1.png)
+![community-forum-member](assets/community-forum-member.png)
 
 ### Administrator (#3) {#administrator}
 
@@ -118,7 +122,7 @@ Hinweis:
 * Admin kann Flag, Löschen, Bearbeiten, Ablehnen, Ausschneiden, Schließen, Stecken, Funktion.
 * Admin kann Administration auswählen, um auf die Moderationskonsole zuzugreifen.
 
-![community-admin-forum](assets/communityadmin-forum.png)
+![community-admin-forum](assets/community-admin-forum.png)
 
 Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
 
@@ -128,7 +132,7 @@ Der Suchfilter ist ein Sidepanel, das geöffnet oder geschlossen wird.
 
 Abmelden.
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ### Community-Moderator (#2) {#community-moderator}
 
@@ -141,7 +145,7 @@ Hinweis:
 * Aaron kann das Forenthema ausschneiden, um es in ein anderes Forum zu verschieben, für das er moderiert.
 * Aaron kann Administration auswählen, um auf die Moderationskonsole zuzugreifen.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![community-forum-moderator](assets/community-forum-moderator.png)
 
 Wählen Sie im Menü &quot;Administration&quot;die Option zum Zugriff auf die [Moderationskonsole](moderation.md) in der Umgebung &quot;Veröffentlichen&quot;.
 
@@ -151,7 +155,7 @@ Beachten Sie, dass der Community-Moderator dieselben Optionen wie der Administra
 
 Abmelden.
 
-![moderatoraccess](assets/moderatoraccess.png)
+![moderator-access](assets/moderator-access.png)
 
 ### Content Author (#1) {#content-author}
 
@@ -163,5 +167,5 @@ Hinweis:
 * Rebekah kann auch andere Inhalte beantworten oder kennzeichnen.
 * Rebekah kann nicht auf die Moderationskonsole zugreifen.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![community-forum-author](assets/community-forum-author.png)
 
