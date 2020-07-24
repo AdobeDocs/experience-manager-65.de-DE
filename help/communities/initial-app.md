@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 12%
 
 ---
 
@@ -35,18 +38,19 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
 1. Geben Sie im Dialogfeld „Vorlage erstellen“ die folgenden Werte ein und klicken Sie anschließend auf **[!UICONTROL Weiter]**:
 
-   * Etikett: `playpage`
+   * Bezeichnung: `playpage`
    * Titel: `An SCF Sandbox Play Template`
    * Beschreibung: `An SCF Sandbox template for play pages`
    * Ressourcentyp: `an-scf-sandbox/components/playpage`
    * Rangansicht: &lt;Als Standard beibehalten>
+
    Die Beschriftung wird für den Knotennamen verwendet.
 
    Der Ressourcentyp wird auf dem Knoten &quot;jcr:content&quot;des `playpage`Benutzers als Eigenschaft angezeigt `sling:resourceType`. Er identifiziert die Komponente (Ressource), die den Inhalt auf Anforderung eines Browsers rendert.
 
    In this case, all pages created using the `playpage` template are rendered by the `an-scf-sandbox/components/playpage` component. Standardmäßig ist der Pfad zur Komponente relativ, sodass Sling die Ressource zuerst im `/apps` Ordner und, falls nicht gefunden, im `/libs` Ordner suchen kann.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
+   ![create-content-template](assets/create-content-template-1.png)
 
 1. Stellen Sie bei Verwendung von &quot;Kopieren/Einfügen&quot;sicher, dass der Wert &quot;Ressourcentyp&quot;keine Leerzeichen am Anfang oder Ende enthält.
 
@@ -56,7 +60,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    Um einen Pfad hinzuzufügen, klicken Sie auf die Plusschaltfläche `+` und geben Sie `/content(/.&ast;)?` in das angezeigte Textfeld ein. Wenn Sie Kopieren/Einfügen verwenden, stellen Sie sicher, dass keine Leerzeichen am Anfang oder am Ende vorhanden sind.
 
-   Note: The value of the allowed path property is a *regular expression.* Inhaltsseiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In this case, the regular expression matches the path of the **/content** folder and all its subpages.
+   Note: The value of the allowed path property is a *regular expression*. Inhaltsseiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In this case, the regular expression matches the path of the **/content** folder and all its subpages.
 
    Wenn ein Autor eine Seite unterhalb `/content`erstellt, wird die `playpage` Vorlage &quot;Eine SCF-Sandbox-Seitenvorlage&quot;in einer Liste der verfügbaren Vorlagen angezeigt.
 
@@ -64,7 +68,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![configure-template-path](assets/configure-template-path.png)
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -78,7 +82,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    Klicken Sie auf Alle **[!UICONTROL speichern]** , um die neue Vorlage im Repository zu speichern.
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+   ![verify-content-template](assets/verify-content-template.png)
 
 ### Erstellen der Renderingkomponente der Vorlage {#create-the-template-s-rendering-component}
 
@@ -93,17 +97,18 @@ Erstellen Sie die *Komponente* , die den Inhalt definiert und alle Seiten wieder
 
    Geben Sie im Dialogfeld **[!UICONTROL Komponente erstellen]** die folgenden Eigenschaftswerte ein:
 
-   * Beschriftung: **Playpage**
+   * Beschriftung: **playpage**
    * Titel: **Eine SCF-Sandbox-Wiedergabekomponente**
    * Beschreibung: **Diese Komponente rendert Inhalte für eine SCF-Sandbox-Seite.**
    * Super Type: *&lt;leer lassen>*
-   * Gruppe:
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   * Group: *&lt;leave blank>*
+
+   ![create-template-component](assets/create-template-component.png)
 
 1. Click **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel of the dialog appears:
 
-   * Klicken Sie auf **[!UICONTROL OK]**
-   * Klicken Sie auf **[!UICONTROL Alle speichern]**
+   * Klicken Sie auf **[!UICONTROL OK]**.
+   * Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Überprüfen Sie, ob der Pfad zur Komponente und der resourceType der Vorlage übereinstimmen.
 
@@ -111,4 +116,4 @@ Erstellen Sie die *Komponente* , die den Inhalt definiert und alle Seiten wieder
    >
    >Die Korrespondenz zwischen dem Pfad zur PayPal-Komponente und der sling:resourceType-Eigenschaft der PayPal-Vorlage ist für das ordnungsgemäße Funktionieren der Website von entscheidender Bedeutung.
 
-   ![chlimage_1-79](assets/chlimage_1-79.png)
+   ![verify-template-component](assets/verify-template-component.png)
