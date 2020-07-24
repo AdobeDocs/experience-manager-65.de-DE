@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ Wählen Sie in der globalen Navigation &quot; **[!UICONTROL Werkzeuge]** &quot;>
 
 Geben Sie für den Beginn Pfad ein `/apps/social/commons` und wählen Sie **[!UICONTROL Aktivieren]**.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+![verify-content-template](assets/verify-content-template.png)
 
 ### Ansichten {#view-results}
 
@@ -72,5 +75,5 @@ Wenn Sie sich als Administrator bei der Veröffentlichungsinstanz anmelden, z. B
 
 Wenn Sie sich abmelden, sich erneut anmelden `aaron.mcdonald@mailinator.com/password` und die Seite aktualisieren, werden Sie feststellen, dass der gepostete Kommentar nicht mehr mit einem Avatar angezeigt wird, sondern eine einfache &quot;xxx&quot;.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![create-template-component](assets/create-template-component.png)
 
