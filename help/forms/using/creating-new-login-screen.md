@@ -10,7 +10,10 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 60%
 
 ---
 
@@ -42,13 +45,15 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 1. Kopieren Sie den `i18n` Ordner:
 
-   * from `/libs/livecycle/core/components/login`
+   * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
 1. Delete all the folders inside `i18n` except one, say `en`.
+
 1. Mit dem Ordner `en` führen Sie diese Schritte durch:
 
    1. Benennen Sie den Ordner nach dem Gebietsschema, das unterstützt werden soll. Beispiel: `ar`.
+
    1. Change the property `jcr:language` value to `ar`(for the `ar` folder).
    >[!NOTE]
    >
@@ -56,15 +61,15 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 1. Kopieren `login.jsp`:
 
-   * from `/libs/livecycle/core/components/login`
+   * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
 1. Modify the following snippet of code for `/apps/livecycle/core/components/login/login.jsp`:
 
-   ***Gebietsschema ist Sprachcode***
+***Gebietsschema ist Sprachcode***
 
-   ```
-   String browserLocale = "en";
+```
+String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -85,9 +90,9 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -113,12 +118,13 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
                break;
            }
        }
-   ```
+```
 
-   ***Gebietsschema ist Sprach- und Ländercode***
 
-   ```
-   String browserLocale = "en";
+***Gebietsschema ist Sprach- und Ländercode***
+
+```
+String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -139,9 +145,9 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -167,61 +173,64 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
                break;
            }
        }
-   ```
+```
 
-   ***Standardgebietsschema ändern***
+***Standardgebietsschema ändern***
 
-   ```
-   String browserLocale = "en";
+```
+String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
-   
+
    To
-   
+
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
-   ```
+```
 
 ### Hinzufügen von neuem Text oder Ändern des vorhandenen Texts {#adding-new-text-or-modifying-existing-text}
 
 1. Ordner `i18n` kopieren:
 
-   * from `/libs/livecycle/core/components/login`
+   * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
 1. Ändern Sie nun den Wert der Eigenschaft `sling:message` des Knotens (unter dem Codeordner des gewünschten Gebietsschemas) für den Sie den Text ändern möchten. Die Übersetzung wird mit dem Schlüssel durchgeführt, der im Wert der Eigenschaft `sling:key` des Knotens aufgeführt ist.
+
 1. Zum Hinzufügen des neuen Schlüssel-Wert-Paars führen Sie die folgenden Schritte aus. Überprüfen Sie ein Beispiel auf dem darauffolgenden Screenshot.
 
    1. Erstellen Sie unter den Gebietsschemaordnern einen Knoten vom Typ `sling:MessageEntry` oder kopieren Sie einen vorhandenen Knoten und benennen Sie ihn um.
    1. Kopieren `login.jsp` :
 
-      * from `/libs/livecycle/core/components/login`
+      * von `/libs/livecycle/core/components/login`
 
       * in `/apps/livecycle/core/components/login`
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added text.
+
    ![Hinzufügen neues Schlüsselwertpaar](assets/capture_new.png)
 
-   ```
-   div class="loginContent">
+
+```
+<div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-   
+
    To
-   
-   div class="loginContent">
+
+   <div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-   ```
+```
 
 ### Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
 
-   * from `/libs/livecycle/core/content`
+   * von `/libs/livecycle/core/content`
    * in `/apps/livecycle/core/content`
 
 1. Löschen von Dateien `login.js` und `jquery-1.8.0.min.js`von der Node `/apps/livecycle/core/content/login.`
@@ -231,36 +240,37 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
    1. Neue Stile Hinzufügen `/apps/livecycle/core/content/login/login.css`
    1. Kopieren `login.jsp`
 
-      * from `/libs/livecycle/core/components/login`
+      * von `/libs/livecycle/core/components/login`
 
       * in `/apps/livecycle/core/components/login`
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added styles.
 
 
-1. Beispiel:
+Beispiel:
 
-   * Add the following to `/apps/livecycle/core/content/login/login.css`.
+* Add the following to `/apps/livecycle/core/content/login/login.css`.
 
-   ```css
-   .newLoginContentArea {
+```
+css.newLoginContentArea {
     width: 700px;
     padding: 100px 0px 0px 100px;
    }
-   ```
+```
 
-   * Ändern Sie Folgendes in /apps/livecycle/core/components/login.jsp.
+* Ändern Sie Folgendes in `/apps/livecycle/core/components/login.jsp`.
 
-   ```
-   <div class="loginContentArea">
-   
+```
+<div class="loginContentArea">
+
    To
-   
+
    <div class="newLoginContentArea">
-   ```
+```
 
 >[!NOTE]
 >
 >If the existing images in `/apps/livecycle/core/content/login` (copied from `/libs/livecycle/core/content/login`) are removed, then remove the corresponding references in CSS.
+
 
 ### Fügen Sie neue Bilder hinzu {#add-new-images}
 
@@ -274,25 +284,27 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 1. Hinzufügen neue Stile in `/apps/livecycle/core/content/login/login.css,` Übereinstimmung mit neuen Bildern hinzugefügt in `/apps/livecycle/core/content/login`.
 1. Use the new styles in `login.jsp` at `/apps/livecycle/core/components`.
-1. Beispiel:
 
-   * Add the following to `/apps/livecycle/core/content/login/login.css`
+Beispiel:
 
-   ```css
-   .newLoginContainerBkg {
+* Add the following to `/apps/livecycle/core/content/login/login.css`
+
+```
+css.newLoginContainerBkg {
     background-image: url(my_Bg.gif);
     background-repeat: no-repeat;
     background-position: left top;
     width: 727px;
    }
-   ```
+```
 
-   * Ändern Sie Folgendes in /apps/livecycle/core/components/login.jsp.
+* Ändern Sie Folgendes in `/apps/livecycle/core/components/login.jsp`.
 
-   ```
-   <div class="loginContainerBkg">
-   
+```
+<div class="loginContainerBkg">
+
    To
-   
+
    <div class="newLginContainerBkg">
-   ```
+```
+
