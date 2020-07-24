@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 1%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ## Informationen zu JSRP {#about-jsrp}
 
-Wenn AEM Communities JSRP als Standardeinstellung für die Datenspeicherung verwendet, werden Community-Inhalte in JCR gespeichert und benutzerdefinierte Inhalte (UGC) können nur von der Autor- oder Veröffentlichungsinstanz aus aufgerufen werden, in der sie veröffentlicht wurden.
+Wenn AEM Communities JSRP als Standardoption für die Datenspeicherung verwenden, werden Community-Inhalte in JCR gespeichert und benutzerdefinierte Inhalte (UGC) können nur von der Autor- oder Veröffentlichungsinstanz aus aufgerufen werden, in der sie veröffentlicht wurden.
 
 Aufgrund der einfachen Bereitstellung ist JSRP im Allgemeinen am besten für Demonstrations- oder Entwicklungs-Umgebung einer Veröffentlichungsinstanz und einer Autoreninstanz geeignet.
 
 Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-of-srp-options) und der [empfohlenen Topologien](topologies.md).
 
-## Konfiguration{#configuration}
+## Konfiguration {#configuration}
 
 ### JSRP auswählen {#select-jsrp}
 
@@ -35,12 +38,13 @@ Die [Datenspeicherung Configuration Console](srp-config.md) ermöglicht die Ausw
 
 In der Umgebung &quot;author&quot;zur Datenspeicherung Configuration Console
 
-* Aus globaler Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Datenspeicherung-Konfiguration]**
-
-![chlimage_1-234](assets/chlimage_1-234.png)
+* Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Communities]** > Konfiguration der **[!UICONTROL Datenspeicherung]**
 
 * Select **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+
 * Klicken Sie auf **[!UICONTROL Übermitteln]**
+
+![chlimage_1-234](assets/chlimage_1-234.png)
 
 ### Veröffentlichen der Konfiguration {#publishing-the-configuration}
 
@@ -48,7 +52,7 @@ Während JSRP die Standardkonfiguration ist, stellen Sie sicher, dass die gleich
 
 * Beim Autor:
 
-   * Aus globaler Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**
+   * Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**
    * Wählen Sie **[!UICONTROL Baum]** aktivieren > **[!UICONTROL Beginn-Pfad]**:
 
       * Navigieren zu `/conf/global/settings/community/srpc/`
