@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '9245'
+source-wordcount: '9234'
 ht-degree: 63%
 
 ---
@@ -377,15 +377,11 @@ Gehen Sie wie folgt vor, um ein Asset mit der Tastatur Vorschau:
 
 1. Um ein bestimmtes Datum/eine Zeit für die Aktivierung der Assets einzustellen, verwenden Sie die Datumsauswahl neben dem Feld **[!UICONTROL Einschaltzeit]**.
 
-   ![Datums- und Zeitauswahl oder Verwendung von Tastaturbefehlen im Feld &quot;Uhrzeit&quot;, um Datum und Uhrzeit für die Aktivierung des Assets hinzuzufügen](assets/schedule-activation.png)
+   ![Datums- und Zeitauswahl oder Verwendung von Tastaturbefehlen im Feld &quot;Uhrzeit&quot;, um Datum und Uhrzeit für die Aktivierung des Assets hinzuzufügen](assets/datepicker.png)
 
-   *Abbildung: Planen der Asset-Aktivierung.*
+   *Abbildung: Verwenden Sie die Datumsauswahl, um die Aktivierung des Assets zu planen.*
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the [!DNL Assets] web interface or through the HTTP API.
-
-   ![Datumszeitauswahl oder Verwendung von Tasten im Feld &quot;außerhalb der Zeit&quot;, um Datum und Uhrzeit für die Asset-Aktivierung hinzuzufügen](assets/schedule-deactivation.png)
-
-   *Abbildung: Planen Sie die Deaktivierung des Assets.*
 
 1. Wählen Sie im Feld **[!UICONTROL Tags]** ein oder mehrere Tags aus. Um ein benutzerdefiniertes Tag hinzuzufügen, geben Sie den Namen des Tags in das Feld ein. Anschließend drücken Sie die Eingabetaste. The new tag is saved in [!DNL Experience Manager]. [!DNL YouTube] erfordert Tags zum Veröffentlichen. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
@@ -503,15 +499,11 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    **Eine Darstellung löschen**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** option from the toolbar. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
-
-   ![Option zum Löschen einer Darstellung](assets/delete_renditionicon.png)
+   Wählen Sie eine Darstellung aus dem **[!UICONTROL Bedienfeld &quot;Ausgabeformate]** &quot;und klicken Sie dann auf die **[!UICONTROL Option &quot;Darstellung]** löschen&quot;, um eine Ausgabeoption ![](assets/do-not-localize/deleteoutline.png) aus der Symbolleiste zu löschen. Ausgabedarstellungen können nach Abschluss der Asset-Verarbeitung nicht mehr stapelweise gelöscht werden. Bei einzelnen Assets können Sie Ausgabedarstellungen manuell aus der Benutzeroberfläche entfernen. Bei mehreren Assets können Sie Experience Manager anpassen, um bestimmte Darstellungen zu löschen oder die Assets zu löschen und die gelöschten Assets erneut hochzuladen.
 
    **Eine neue Darstellung hochladen**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
-
-   ![Hinzufügen Ausgabeoption zum Hochladen einer neuen Darstellung](assets/chlimage_1-16.png)
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** ![Add rendition option to upload new rendition](assets/do-not-localize/add.png) option in the toolbar to upload a new rendition for the asset.
 
    >[!NOTE]
    >
@@ -541,11 +533,9 @@ Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe e
 
 1. Navigieren Sie zum Speicherort der Assets, die Sie löschen möchten.
 
-1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
+1. Select the asset, and click **[!UICONTROL Delete]** ![Delete option](assets/do-not-localize/deleteoutline.png) from the toolbar.
 
-   ![Option löschen](assets/delete_icon.png)
-
-1. Klicken Sie im Bestätigungsdialogfeld auf:
+1. Wählen Sie im Bestätigungsdialogfeld eine der folgenden Optionen aus:
 
    * **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen.
    * **[!UICONTROL Löschen]**, um die Aktion zu bestätigen:
@@ -590,9 +580,7 @@ Siehe [Herunterladen von Assets von Experience Manager](/help/assets/download-as
 
 1. Navigieren Sie zum Speicherort des Assets/Asset-Ordners, das bzw. den Sie aus der Veröffentlichungsumgebung entfernen möchten (Veröffentlichung rückgängig machen).
 
-1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** option from the toolbar.
-
-   ![Option &quot;Veröffentlichung verwalten&quot;](assets/manage_publication.png)
+1. Wählen Sie das Asset/den Ordner aus, dessen Veröffentlichung rückgängig gemacht werden soll, und klicken Sie in der Symbolleiste auf die Option **[!UICONTROL &quot;Veröffentlichung]** verwalten&quot; ![](assets/do-not-localize/globe-publication.png) .
 
 1. Wählen Sie die Aktion **[!UICONTROL Veröffentlichung rückgängig machen]** aus der Liste aus.
 
@@ -842,9 +830,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    ![Anmerkungs- und Überprüfungsstatus in der erstellten PDF](assets/chlimage_1-42.png)
 
-1. Laden Sie die PDF-Datei herunter oder drucken Sie sie mithilfe der Optionen in der rechten oberen Ecke.
-
-   ![Download- und Druckoptionen für PDF](assets/chlimage_1-43.png)
+1. Download- ![Download-Option für PDF](assets/do-not-localize/download.png) oder ![Druckoptionen für PDF](assets/do-not-localize/print.png) im PDF mit den Optionen oben rechts.
 
    >[!NOTE]
    >
