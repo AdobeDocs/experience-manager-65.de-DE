@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2200'
-ht-degree: 66%
+source-wordcount: '2203'
+ht-degree: 65%
 
 ---
 
@@ -102,19 +102,14 @@ Gehen Sie wie folgt vor, um eine intelligente Sammlung zu erstellen:
 
    ![collection_listing](assets/collection_listing.png)
 
-   Die Bezeichnung der Schaltfläche **[!UICONTROL Smart-Sammlung erstellen]** wird in **[!UICONTROL Smart-Sammlung bearbeiten]** geändert. Um die Einstellungen der Smart-Sammlung zu bearbeiten, wählen Sie **[!UICONTROL Dateien]** aus der Liste **[!UICONTROL Dateien und Ordner]** aus. Then, Click the **[!UICONTROL Edit Smart Selection]** button.
-
-   ![chlimage_1-7](assets/chlimage_1-112.png)
+   The label of the **[!UICONTROL Create Smart Selection]** option changes to **[!UICONTROL Edit Smart Selection]**. Um die Einstellungen der Smart-Sammlung zu bearbeiten, wählen Sie **[!UICONTROL Dateien]** aus der Liste **[!UICONTROL Dateien und Ordner]** aus. Klicken Sie auf die Option &quot;Intelligente Auswahl **** bearbeiten&quot; ![und wählen Sie die Option &quot;Intelligente Sammlung](assets/do-not-localize/edit-smart-collection.png) bearbeiten&quot;.
 
 ## Hinzufügen von Assets zu einer Sammlung {#adding-assets-to-a-collection}
 
 Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen füllen Assets anhand einer Suchabfrage. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
 
-1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL In Sammlung]** .
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
-   Alternativ können Sie das Asset in den Bereich &quot;In Sammlung **[!UICONTROL ablegen]** &quot;auf der Benutzeroberfläche ziehen. Hinzufügen die Assets, wenn die Beschriftung des Bereichs in **[!UICONTROL Ablegen in Hinzufügen]** geändert wird.
+1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL In Sammlung]** ![hinzufügen](assets/do-not-localize/add-to-collection.png) .
+Alternativ können Sie das Asset in den Bereich &quot;In Sammlung **[!UICONTROL ablegen]** &quot;auf der Benutzeroberfläche ziehen. Hinzufügen die Assets, wenn die Beschriftung des Bereichs in **[!UICONTROL Ablegen in Hinzufügen]** geändert wird.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** die Sammlung aus, der Sie das Asset hinzufügen möchten.
 
