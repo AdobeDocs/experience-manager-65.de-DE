@@ -3,10 +3,10 @@ title: Erstellen Sie einen privaten Ordner in Adobe Experience Manager und geben
 description: Erfahren Sie, wie Sie einen privaten Ordner in den Assets des Adobe Experience Managers erstellen und ihn für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 45%
+source-wordcount: '494'
+ht-degree: 44%
 
 ---
 
@@ -23,11 +23,9 @@ Sie können in der Benutzeroberfläche &quot;Adobe Experience Manager Assets&quo
 
    ![Asset-Ordner erstellen](assets/Create-folder.png)
 
-1. In the **[!UICONTROL Create Folder]** dialog, enter a title and name (optional) for the folder, and select **[!UICONTROL Private]**.
+1. In the **[!UICONTROL Create Folder]** dialog, enter a title and name (optional) for the folder, and select **[!UICONTROL Private]** option.
 
-   ![Aktivieren Sie das Kontrollkästchen &quot;Privat&quot;, um den Ordner privat zu machen](assets/private-folder.png)
-
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. Ein privater Ordner wird auf der Assets-Benutzeroberfläche erstellt.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. Ein privater Ordner wird erstellt.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
