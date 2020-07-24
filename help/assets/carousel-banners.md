@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '4811'
+source-wordcount: '4814'
 ht-degree: 98%
 
 ---
@@ -94,7 +94,7 @@ So schaffen Sie einen schnellen Einstieg:
       ](/help/assets/adding-dynamic-media-assets-to-pages.md)Wenn Sie AEM Sites-Kunde sind, können Sie das Karussell-Set direkt zur Seite in AEM hinzufügen, indem Sie die Komponente für interaktive Medien verwenden.
 
 
-Wenn Sie Karussell-Sets bearbeiten müssen, finden Sie weitere Informationen unter [Bearbeiten von Karussell-Sets](#editing-carousel-sets). Darüber hinaus können Sie [Eigenschaften von Karussell-Sets](https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.md#editingproperties) anzeigen und bearbeiten.
+Wenn Sie Karussell-Sets bearbeiten müssen, finden Sie weitere Informationen unter [Bearbeiten von Karussell-Sets](#editing-carousel-sets). Darüber hinaus können Sie [Eigenschaften von Karussell-Sets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties) anzeigen und bearbeiten.
 
 ## Ermitteln von Hotspot- und Imagemap-Variablen {#identifying-hotspot-and-image-map-variables}
 
