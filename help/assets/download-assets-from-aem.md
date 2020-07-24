@@ -3,10 +3,10 @@ title: Laden Sie digitale Assets herunter [!DNL Adobe Experience Manager].
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3602a39e03536696911b39cceb20f10dfd3a9347
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 75%
+source-wordcount: '852'
+ht-degree: 74%
 
 ---
 
@@ -74,6 +74,6 @@ The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Pub
 >[!MORELIKETHIS]
 >
 >* [Herunterladen von DRM-geschützten Assets](drm.md).
->* [Herunterladen von Assets mit der Experience Manager-Desktop-App auf einem Win- oder Mac-Desktop](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html).
+>* [Herunterladen von Assets mit der Experience Manager-Desktop-App auf einem Win- oder Mac-Desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Herunterladen von Assets mit Adobe Assets Link aus den unterstützten Adobe Creative Cloud-Programmen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html).
 
