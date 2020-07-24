@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Assets verwalten in [!DNL Adobe Experience Manager A
 description: Suchen, Abrufen, Lizenz und [!DNL Adobe Stock] Verwalten von Assets von innen [!DNL Adobe Experience Manager]aus. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1099'
 ht-degree: 21%
 
 ---
@@ -122,7 +122,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 >[!MORELIKETHIS]
 >
->* [Videoschulung zur Verwendung von Adobe Stock-Assets mit Experience Manager Assets](https://helpx.adobe.com/de/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Videoschulung zur Verwendung von Adobe Stock-Assets mit Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Hilfe zum Adobe Stock-Unternehmensplan](https://helpx.adobe.com/de/enterprise/using/adobe-stock-enterprise.html)
 >* [Häufig gestellte Fragen zu Adobe Stock](https://helpx.adobe.com/de/stock/faq.html)
 
