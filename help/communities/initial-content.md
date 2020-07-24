@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +26,7 @@ In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorl
 
    * SCF Sandbox - Die Hauptseite für die englische Version der Site.
 
-      * SCF Play - Untergeordnetes Element der Hauptseite, auf der abgespielt werden soll.
+   * SCF Play - Untergeordnetes Element der Hauptseite, auf der abgespielt werden soll.
 
 Obwohl dieses Lernprogramm keine [Sprachkopien](../../help/sites-administering/tc-prep.md)enthält, wurde es so konzipiert, dass die Stammeseite die Erkennung der bevorzugten Sprache für den Benutzer über die HTML-Kopfzeile implementieren und zur entsprechenden Hauptseite für die Sprache umleiten kann. Die Regel besteht darin, den aus zwei Buchstaben bestehenden Ländercode für den Knotennamen der Seite zu verwenden, z. B. &quot;en&quot;für Englisch, &quot;fr&quot;für Französisch usw.
 
@@ -53,14 +56,15 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
    * Name: `an-scf-sandbox`
    * Wählen Sie **[!UICONTROL eine SCF-Sandbox-Abspielvorlage]**
    * Klicken Sie auf **[!UICONTROL Erstellen]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**:
 
    * Titel: `SCF Sandbox`
    * Name: `en`
-   * Wählen Sie **eine SCF-Sandbox-Abspielvorlage **
-   * Klicken Sie auf **Erstellen **
+   * Wählen Sie **[!UICONTROL eine SCF-Sandbox-Abspielvorlage]**
+   * Klicken Sie auf **[!UICONTROL Erstellen]**
 
 1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus `/Websites/SCF Sandbox Site/SCF Sandbox`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**
 
@@ -85,7 +89,7 @@ Wenn ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesig
 
 definiert wurde, was die optionale Möglichkeit bietet, in einem Skript auf Designelemente zu verweisen, `currentDesign.getPath()`. Beispiel
 
-* &lt;% String favIcon = currentDesign.getPath() + &quot;/favicon.ico&quot;; %>
+* `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
    * Name: `cq:designPath`
@@ -100,10 +104,10 @@ Der Befund sollte wie folgt aussehen:
 
 * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
-[ Probleme beim Sparen? Melden Sie sich erneut an! ]
+Bei Problemen beim Speichern der Konfiguration müssen Sie sich erneut anmelden und konfigurieren.
 
 >[!NOTE]
 >
->Die Verwendung von cq:designPath ist optional und steht in keinem Zusammenhang mit der [Verwendung von clientlibs](develop-app.md#includeclientlibsintemplate), die im Wesentlichen erforderlich sind, da die SCF-Komponenten [clientlibs](client-customize.md#clientlibs-for-scf) zur Verwaltung ihrer JS und CSS verwenden.
+>Die Verwendung von `cq:designPath` ist optional und steht in keinem Zusammenhang mit der [Verwendung von clientlibs](develop-app.md#includeclientlibsintemplate), die im Wesentlichen erforderlich sind, da die SCF-Komponenten [clientlibs](client-customize.md#clientlibs-for-scf) zur Verwaltung ihrer JS und CSS verwenden.
 
 
