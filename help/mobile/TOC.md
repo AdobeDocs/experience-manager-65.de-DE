@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Mobile User Guide
+user-guide-title: AEM 6.5 Mobile Benutzerhandbuch
+user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 26%
 
 ---
 
@@ -28,19 +32,19 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Verwalten von Artikeln](mobile-on-demand-managing-articles.md)
    + [Hochladen freigegebener Ressourcen](mobile-on-demand-shared-resources.md)
    + [Cloud-Konfiguration](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
-   + [Banner verwalten](mobile-on-demand-managing-banners.md)
-+ Entwicklung der On-Demand Services-App {#developing}
+   + [Verwalten von Bannern](mobile-on-demand-managing-banners.md)
++ Entwickeln der On-Demand Services-App {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [App-Vorlagen und Komponenten](app-templates-and-components1.md)
    + [Inhaltseigenschaften und Knoten](content-properties.md)
-   + [Exportkonfiguration für gemeinsame Ressourcen](creating-shared-resources-export-configuration.md)
+   + [Erstellen der Exportkonfiguration für gemeinsame Ressourcen](creating-shared-resources-export-configuration.md)
    + [Erstellen und Hinzufügen von Vorlagen und Komponenten](mobile-ondemand-app-templates.md)
    + [Best Practices](best-practices-aem-mobile.md)
    + [Artikelexportkonfiguration erstellen](creating-article-export-configuration.md)
    + [Mobil mit Inhaltssynchronisierung](mobile-ondemand-contentsync.md)
    + [Seitenvorlagen für mobile Apps](apps-architecture.md)
-   + [Inhaltseigenschaften zum Exportieren von Inhalten verwenden](on-demand-content-properties-exporting.md)
-   + [Wiedergabe und Bereitstellung](rendering-and-delivery.md)
+   + [Verwenden von Inhaltseigenschaften zum Exportieren von Inhalten](on-demand-content-properties-exporting.md)
+   + [Rendern und Versand](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [Inhaltsbereitstellung](develop-content-as-a-service.md)
 + Verwaltung der On-Demand Services-App {#administering}
@@ -73,9 +77,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Erstellen und Bearbeiten von Apps mit der Apps-Konsole](phonegap-apps-console.md)
    + [Ist Ihre Hybrid-App für AEM Mobile bereit?](phonegap-adding-content-to-imported-app.md)
    + [Gerätefunktionen aufrufen](phonegap-access-device-features.md)
-   + [Adobe Analytics zu Ihrer mobilen Anwendung hinzufügen](phonegap-add-analytics-to-apps.md)
+   + [Hinzufügen von Adobe Analytics zur Mobilanwendung](phonegap-add-analytics-to-apps.md)
    + [Seitenvorlagen für mobile Apps](phonegap-apps-arch-page-templates.md)
-   + [Adobe Target Cloud-Dienst konfigurieren](aem-mobile-configuring-cloud-service.md)
+   + [Konfigurieren von Adobe Target Cloud Service](aem-mobile-configuring-cloud-service.md)
    + [Einzelseiten-Webanwendungen](phonegap-single-page-applications.md)
    + [Modelle im Repository](administer-mobile-apps.md)
    + [Starten von AEM PhoneGap](starting-aem-phonegap-app.md)
