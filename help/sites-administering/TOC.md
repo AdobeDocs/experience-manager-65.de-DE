@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 - Administrationsbenutzerhandbuch
+user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 8d000088f4fd0ff1f85f11818d4e72337da5a280
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 96%
@@ -46,7 +47,7 @@ ht-degree: 96%
    + [Konfigurieren des Rich-Text-Editors](rich-text-editor.md)
    + [Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites](rte-accessible-content.md)
    + [Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung](config-undo.md)
-   + [Konfigurieren der Rich-Text-Editor-Plug-ins  ](configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren der Rich-Text-Editor-Plug-ins    ](configure-rich-text-editor-plug-ins.md)
    + [Konfigurieren der Videokomponente](config-video.md)
    + [Der Bulk Editor](bulk-editor.md)
    + [Konfigurieren von E-Mail-Benachrichtigungen](notification.md)
@@ -93,8 +94,8 @@ ht-degree: 96%
    + [Prinzipalansicht für die Berechtigungsverwaltung](touch-ui-principal-view.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
-+ Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
++ Personalisierung      {#personalization}
+   + [Personalisierung     ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -113,7 +114,7 @@ ht-degree: 96%
 + Integrationen {#integration}
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
-   + [Integration mit Adobe Target](target.md)
+   + [Integrieren mit Adobe Target](target.md)
    + [Integrieren mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
    + [Konfigurieren der Link-Überwachung für Adobe Analytics](adobeanalytics-link.md)
