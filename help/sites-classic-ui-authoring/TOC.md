@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-title: AEM 6.5 Classic UI Authoring-Benutzerhandbuch
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 89%
 
 ---
 
@@ -31,8 +35,8 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Veröffentlichen von Seiten](classic-page-author-publish-pages.md)
    + [Bearbeiten der Seiteneigenschaften](classic-page-author-edit-page-properties.md)
    + [Anmerkungen beim Bearbeiten einer Seite](classic-page-author-annotations.md)
-   + [Fehlerbehebung in AEM bei der Bearbeitung](classic-page-author-troubleshooting.md)
-   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](classic-page-author-accessible-content.md)
+   + [Fehlerbehebung in AEM beim Authoring](classic-page-author-troubleshooting.md)
+   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien) ](classic-page-author-accessible-content.md)
    + [Verfassen einer Seite für Mobilgeräte](classic-feature-mobile.md)
    + [Komponenten für die Seitenbearbeitung](classic-page-author-edit-mode.md)
    + [Tastaturbefehle für die Seitenbearbeitung](classic-page-author-keyboard-shortcuts.md)
@@ -48,13 +52,13 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 + Workflows {#workflows}
    + [Teilnehmen an Workflows](classic-workflows-participating.md)
    + [Arbeiten mit Workflows](classic-workflows.md)
-   + [Anwenden von Workflows auf Seiten](classic-workflows-applying.md)
+   + [Anwenden von Workflows auf Seiten ](classic-workflows-applying.md)
 + Launches {#launches}
    + [Launches](classic-launches.md)
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung     {#personalization}
++ Personalisierung      {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
@@ -77,8 +81,8 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Erstellen von Adobe Campaign-Formularen in AEM](classic-personalization-ac-forms.md)
 + Assets-Authoring in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](classicui-assets.md)
-   + [Bereitstellen von Dynamic Media Assets](dynamic-media-assets-delivering.md)
-   + [Hinzufügen von Assets mit dynamischen Medien zu Seiten](dynamic-media-assets-adding-to-page.md)
+   + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
+   + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Scene7-Features zu Ihrer Seite](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
