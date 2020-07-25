@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 - Verwalten des Benutzerhandbuchs
+user-guide-description: Learn how to manage an AEM project.
 translation-type: tm+mt
-source-git-commit: cb7df7301364eb1ce3a1ca376256d2cd5afcb2c8
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 79%
@@ -24,7 +25,7 @@ ht-degree: 79%
    + [Hardware-Skalierungsrichtlinien](hardware-sizing-guidelines.md)
    + [DevOp-Strategien für Unternehmen](enterprise-devops.md)
    + [Best Practices für SEO und URL-Verwaltung](seo-and-url-management.md)
-+ Erreichbarkeit {#accessibility}
++ Barrierefreiheit {#accessibility}
    + [AEM und Richtlinien für barrierefreien Webzugang](web-accessibility.md)
    + [Kurzanleitung zu WCAG 2.1](qg-wcag.md)
 + Datenschutz {#data-protection}
