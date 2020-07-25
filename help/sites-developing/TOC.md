@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Developer-Benutzerhandbuch
+user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 79%
@@ -42,7 +43,7 @@ ht-degree: 79%
       + [Seitenvorlagen - statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM  ](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
@@ -134,7 +135,7 @@ ht-degree: 79%
    + [AEM Brackets-Erweiterung](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ Personalisierung {#personlization}
++ Personalisierung     {#personlization}
    + [ContextHub](contexthub.md)
    + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
    + [Erweitern von ContextHub](ch-extend.md)
@@ -170,7 +171,7 @@ ht-degree: 79%
       + [Anpassen des Adobe Analytics Framework](extending-analytics-framework.md)
       + [Implementieren serverseitiger Seitennamen für Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Cloud-Service-Konfigurationen](extending-cloud-config.md)
+      + [Cloud Service-Konfigurationen](extending-cloud-config.md)
       + [Erstellen eines individuellen Cloud-Service](extending-cloud-config-custom-cloud.md)
    + [Erstellen benutzerspezifischer Erweiterungen](extending-campaign-extensions.md)
    + Formulare{#extending-forms}
