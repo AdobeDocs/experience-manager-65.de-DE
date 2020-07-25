@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 Asset-Benutzerhandbuch
+user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9f1548785283ffba119d8404e328f513012a082c
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 56%
@@ -63,7 +64,7 @@ ht-degree: 56%
    + [Interaktive Videos](interactive-videos.md)
    + [360-Grad-VR-Video](/help/assets/360-video.md)
    + [Integrieren von Dynamic Media-Viewern mit Adobe Analytics und Adobe Launch](/help/assets/launch.md)
-   + [Verwenden von Schnellansichten zum Erstellen von benutzerdefinierten Popups](custom-pop-ups.md)
+   + [Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups](custom-pop-ups.md)
    + [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
    + [Anzeigen einer Vorschau von Dynamic Media-Assets](previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md)
