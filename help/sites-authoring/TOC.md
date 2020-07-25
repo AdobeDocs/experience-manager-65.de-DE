@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring-Benutzerhandbuch
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 89%
@@ -78,10 +79,10 @@ ht-degree: 89%
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung    {#personalization}
-   + [Personalisierung   ](personalization.md)
++ Personalisierung      {#personalization}
+   + [Personalisierung     ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten ](ch-previewing.md)
-   + [Verfassen zielgerichteter Inhalte im Targeting-Modus ](content-targeting-touch.md)
+   + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
    + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](technical-multisite-targeted.md)
    + [Verwalten von Aktivitäten](activitylib.md)
