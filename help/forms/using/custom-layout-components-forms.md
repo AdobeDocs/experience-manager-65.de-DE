@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f470768fd3368e3b2118333b8a84f8331e7fa2e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 63%
 
 ---
 
@@ -88,7 +91,7 @@ qtip
    }
    ```
 
-   ```
+   ```javascript
    /** function for toggling the navigators **/
    var toggleNav = function () {
    
@@ -116,7 +119,7 @@ qtip
 
    Aktualisieren Sie außerdem die Pfade der in .jsp-Dateien eingeschlossenen Skripts. For example, update the `customPanelLayout.jsp` file as follows:
 
-   ```
+   ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -145,7 +148,7 @@ qtip
 
    Die `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` Datei:
 
-   ```
+   ```html
    <%-- jsp governing the navigation part --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -174,7 +177,7 @@ qtip
 
    Die Aktualisierung `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
-   ```
+   ```html
    <%-- jsp governing the panel content --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -201,7 +204,7 @@ qtip
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeldlayout, das Sie definiert haben, wird der Liste zur Konfiguration der Bereichslayouts hinzugefügt.
 
-   ![Das benutzerdefinierte Bedienfeldlayout wird in der Liste](assets/auth-layt.png) des Bedienfeldlayouts des adaptiven Formulars im ![Screenshot des benutzerdefinierten Bedienfeldlayouts](assets/s1.png) angezeigt. In diesem Screenshot wird die Funktion des benutzerdefinierten Layouts ![zum Umschalten dargestellt](assets/s2.png)
+   ![Das benutzerdefinierte Bedienfeldlayout wird in der Liste](assets/auth-layt.png) des Bedienfeldlayouts des adaptiven Formulars im ![Screenshot angezeigt, in der das benutzerdefinierte Bedienfeldlayout](assets/s1.png) verwendet wird. In diesem Screenshot wird die Funktion des benutzerdefinierten Layouts ![zum Umschalten dargestellt](assets/s2.png)
 
 Beispiel-ZIP-Datei für ein benutzerdefiniertes Bedienfeldlayout und ein adaptives Formular, das dieses verwendet.
 
