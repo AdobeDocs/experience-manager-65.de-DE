@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2646'
+ht-degree: 25%
 
 ---
 
@@ -157,22 +160,22 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanal die fo
    <td>Diagrammspezifische Konfigurationen</td>
    <td><p>Neben den allgemeinen Konfigurationen sind die folgenden spezifischen Diagrammkonfiguration verfügbar:</p>
     <ul>
-     <li><strong>Legende anzeigen: Zeigt eine Legende für das Kreisdiagramm oder Ringdiagramm </strong>an, wenn diese aktiviert ist.</li>
+     <li><strong>Legende anzeigen: </strong>Zeigt eine Legende für das Kreisdiagramm oder Ringdiagramm an, wenn diese aktiviert ist.</li>
      <li><strong>Legendenposition: </strong>Gibt die Position der Legende in Bezug auf das Diagramm an. Die verfügbaren Optionen sind rechts, links, oben und unten. Es wird empfohlen, die rechte Legende im Kanal zu verwenden.</li>
      <li><strong>Innerer Radius</strong>: Verfügbar für Ringdiagramme, um den Radius (in Pixel) des inneren Kreises im Diagramm anzugeben.</li>
      <li><strong>Linienfarbe</strong>: Verfügbar für Linien-, Linien- und Punktdiagramme sowie Flächendiagramme, um die Farbe für die Linie im Diagramm anzugeben.</li>
      <li><strong>Punktfarbe</strong>: Verfügbar für Punkt- und Linien- und Punktdiagramme, um die Farbe für die Punkte im Diagramm anzugeben.<br /> </li>
      <li><strong>Bereichsfarbe</strong>: Verfügbar für Flächendiagramme, um die Farbe für den Bereich unter der Linie im Diagramm anzugeben.</li>
-     <li><strong>Referenzpunkt &gt; Bindungstyp: Für Quadrantendiagramme </strong>verfügbar, um den Bindungstyp für den Referenzpunkt<strong> </strong>anzugeben. Verwenden Sie die Objekteigenschaft für statischen Text oder Datenmodell, um den Wert für den Referenzpunkt zu definieren.</li>
-     <li><strong>Bezugspunkt &gt; X-Achse: Für Quadrantendiagramme </strong>verfügbar, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Statisch</code> "auswählen, um den X-Achsen-Wert für den Referenzpunkt anzugeben.</code></li>
-     <li><strong>Bezugspunkt &gt; Y-Achse: Für Quadrantendiagramme </strong>verfügbar, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Statisch</code> "auswählen, um den Y-Achsenwert für den Referenzpunkt anzugeben.</code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serie: Für mehrere Serien </strong>verfügbare Quadrant-Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Definieren Sie die Formulareigenschaft des Formdatenmodells, um die Serie für den Referenzpunkt zu identifizieren. </code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Serie: Für mehrere Serien </strong>verfügbare Quadrant-Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für Reihen und den in diesem Feld definierten Wert, um die Reihe für den Referenzpunkt zu identifizieren.</code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Referenzpunkt: Für Quadrantendiagramme </strong>verfügbar, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Definieren Sie eine Objekteigenschaft des Formulardatenmodells, die den auf der X- und Y-Achse dargestellten Eigenschaften gleicht. Definieren Sie außerdem für mehrere Reihen eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Referenzpunkt: Für Quadrantendiagramme </strong>verfügbar, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrante Beschriftungen &gt; Oben links:</strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben links anzugeben.</code></li>
+     <li><strong>Referenzpunkt &gt; Bindungstyp: </strong>Verfügbar für Quadrantendiagramme, um den<strong> Bindungstyp für den Referenzpunkt </strong>anzugeben. Verwenden Sie die Objekteigenschaft für statischen Text oder Datenmodell, um den Wert für den Referenzpunkt zu definieren.</li>
+     <li><strong>Bezugspunkt &gt; X-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Statisch</code> "wählen, um den X-Achsen-Wert für den Referenzpunkt anzugeben.</code></li>
+     <li><strong>Bezugspunkt &gt; Y-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Statisch</code> "wählen, um den Y-Achsenwert für den Referenzpunkt anzugeben.</code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serie: </strong>Verfügbar für mehrere Reihen Quadrante Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Definieren Sie die Formulareigenschaft des Formdatenmodells, um die Serie für den Referenzpunkt zu identifizieren. </code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Serie: </strong>Verfügbar für mehrere Reihen Quadrante Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für Reihen und den in diesem Feld definierten Wert, um die Reihe für den Referenzpunkt zu identifizieren.</code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Definieren Sie eine Objekteigenschaft des Formulardatenmodells, die den auf der X- und Y-Achse dargestellten Eigenschaften gleicht. Definieren Sie außerdem für mehrere Reihen eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrante Beschriftungen &gt; Oben links:</strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben links anzugeben.</code></li>
      <li><strong>Quadrante Beschriftungen &gt; Oben rechts:</strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten rechts oben anzugeben.</li>
-     <li><strong>Quadrante Beschriftungen &gt; Unten rechts: Für Quadrantendiagramme </strong>verfügbar, um den Namen für den Quadranten unten rechts anzugeben.</li>
-     <li><strong>Quadrante Beschriftungen &gt; Unten links: Für Quadrantendiagramme </strong>verfügbar, um den Namen für den Quadranten unten links anzugeben.</li>
+     <li><strong>Quadrante Beschriftungen &gt; Unten rechts: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten rechts anzugeben.</li>
+     <li><strong>Quadrante Beschriftungen &gt; Unten links: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten links anzugeben.</li>
     </ul> </td>
    <td>Druck und Web</td>
   </tr>
@@ -213,7 +216,7 @@ Neben der Verwendung der Standardfunktionen in Diagrammen können Sie benutzerde
 
 Eine Funktion akzeptiert ein Array oder Werte und einen Kategorienamen als Eingabe und gibt einen Wert zurück. Beispiel:
 
-```
+```javascript
 Multiply(valueArray, category) {
  var val = 1;
  _.each(valueArray, function(value) {
