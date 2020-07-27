@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 95%
 
 ---
 
@@ -27,11 +30,11 @@ So funktioniert die herkömmliche Authentifizierung:
 1. Der Authentifizierungsanbieter überprüft die Anmeldeinformationen.
 1. Der Authentifizierungsanbieter prüft anschließend, ob der Benutzer in der User Management-Datenbank vorhanden ist. Die folgenden Ergebnisse sind möglich:
 
-   **** Vorhanden: Wenn der Benutzer aktuell und entsperrt ist, gibt User Management den Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
+   **Vorhanden:** Wenn der Benutzer aktuell und entsperrt ist, gibt User Management den Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
 
-   **** Nicht vorhanden: User Management gibt einen Authentifizierungsfehler zurück.
+   **Nicht vorhanden:** User Management gibt einen Authentifizierungsfehler zurück.
 
-   **** Ungültig: User Management gibt einen Authentifizierungsfehler zurück.
+   **Ungültig:** User Management gibt einen Authentifizierungsfehler zurück.
 
 1. Das vom Authentifizierungsanbieter zurückgegebene Ergebnis wird ausgewertet. Wenn der Authentifizierungsanbieter angibt, dass die Authentifizierung erfolgreich war, kann sich der Benutzer anmelden. Andernfalls nimmt User Management mit dem nächsten Authentifizierungsanbieter eine Überprüfung vor (Schritte 2 bis 3).
 1. Die Authentifizierung war nicht erfolgreich, wenn kein verfügbarer Authentifizierungsanbieter die Anmeldeinformationen des Benutzers überprüft.
@@ -44,7 +47,7 @@ Wenn Just-in-time-Bereitstellung implementiert ist, werden neue Benutzer dynamis
 
 AEM Forms bietet die folgenden APIs für die Just-in-time-Bereitstellung:
 
-```as3
+```java
 package com.adobe.idp.um.spi.authentication  ;
 publ ic interface IdentityCreator {
 /**
