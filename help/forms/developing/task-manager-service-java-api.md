@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ Die folgenden Quick-Beginn sind für den Aufgabe Manager-Dienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Abrufen von Informationen zur Aufgabe mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Im folgenden Java-Codebeispiel wird einem Benutzer mit dem Namen Tony Blue eine Aufgabe zugewiesen.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -180,7 +183,7 @@ Im folgenden Java-Codebeispiel wird einem Benutzer mit dem Namen Tony Blue eine 
 
 Im folgenden Java-Codebeispiel wird eine Aufgabe gesperrt, die dem Aufgaben-ID-Wert 2 entspricht.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -269,7 +272,7 @@ Im folgenden Java-Codebeispiel wird eine Aufgabe gesperrt, die dem Aufgaben-ID-W
 
 Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die einem Benutzer mit dem Namen *tony blue* zugewiesen sind. Beachten Sie, dass dieser Benutzer in den Verbindungseigenschaften angegeben ist. Es werden Informationen zu zurückgegebenen Aufgaben, z. B. deren Bezeichnerwert und Beschreibung, angezeigt.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -395,7 +398,7 @@ Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die einem Benutze
 
 Im folgenden Java-Codebeispiel werden Formulardaten aus einer Aufgabe mit dem Bezeichnerwert 304 abgerufen. Formulardaten werden in eine XML-Datei mit dem Namen *FormData.xml* unter C:\Adobe geschrieben.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -501,7 +504,7 @@ Im folgenden Java-Codebeispiel werden Formulardaten aus einer Aufgabe mit dem Be
 
 Im folgenden Java-Codebeispiel wird ein Formular mit Daten aktualisiert, die sich in der Datei *FormData.xml* befinden.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -611,7 +614,7 @@ Im folgenden Java-Codebeispiel wird ein Formular mit Daten aktualisiert, die sic
 
 Im folgenden Java-Codebeispiel werden Dateianlagen abgerufen. Jede Dateianlage wird als TXT-Datei gespeichert.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -715,7 +718,7 @@ Im folgenden Java-Codebeispiel werden Dateianlagen abgerufen. Jede Dateianlage w
 
 Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die auf einem Prozess mit dem Namen *MortgageLoan - Prebuild* basieren. Der Status jeder zurückgegebenen Aufgabe wird überprüft, um sicherzustellen, dass es sich um eine abgeschlossene Aufgabe handelt. Informationen wie der Name des Benutzers, der die Aufgabe abgeschlossen hat, und das Datum, an dem die Aufgabe abgeschlossen wurde, werden abgerufen und angezeigt.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
