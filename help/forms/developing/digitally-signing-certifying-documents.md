@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '16977'
 ht-degree: 8%
@@ -589,8 +589,8 @@ Bei Verwendung einer OpenShield-HSM-Berechtigung zum Signieren oder Zertifiziere
 
 Sie können den folgenden Konfigurationswert in der Datei &quot;cknfastrc&quot;hinzufügen, die sich unter &quot;/opt/nfast/cknfastrc&quot;(oder &quot;c:\nfast\cknfastrc&quot;) befindet:
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Nachdem Sie diesen Konfigurationswert zur cknfastrc-Datei hinzugefügt haben, können Sie die neue Berechtigung verwenden, ohne den J2EE-Anwendungsserver neu zu starten.
@@ -1077,8 +1077,8 @@ Sie können PDF-Dokumente programmgesteuert mit der Signature-Dienst-Java-API od
 
 Sie können den folgenden Konfigurationswert in der Datei &quot;cknfastrc&quot;hinzufügen, die sich unter &quot;/opt/nfast/cknfastrc&quot;(oder &quot;c:\nfast\cknfastrc&quot;) befindet:
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Nachdem Sie diesen Konfigurationswert zur cknfastrc-Datei hinzugefügt haben, können Sie die neue Berechtigung verwenden, ohne den J2EE-Anwendungsserver neu zu starten.
@@ -1341,7 +1341,7 @@ Während Sie diese Optionen einstellen, können Sie die Überprüfungszeit angeb
 
 Sie können auch angeben, ob die Sperrüberprüfung im Rahmen des Überprüfungsprozesses durchgeführt werden soll. Sie können beispielsweise eine Sperrüberprüfung durchführen, um zu ermitteln, ob das Zertifikat gesperrt wurde. Informationen zu den Optionen für die Prüfung von Sperren finden Sie im Abschnitt zum Wert `RevocationCheckStyle` Auflistung in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Um eine Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie mithilfe eines `CRLOptionSpec` Objekts eine URL zu einem Zertifikatsperrlisten-Liste (CRL) an. Wenn Sie jedoch keine URL für den Zertifikatsperrlisten-Server angeben, ruft der Signature-Dienst die URL aus dem Zertifikat ab.
+Um eine Sperrüberprüfung für ein Zertifikat durchzuführen, geben Sie mithilfe eines `CRLOptionSpec` Objekts eine URL zu einem Zertifikatsperrlisten-Liste (CRL) an. Wenn Sie jedoch keine URL für den CRL-Server angeben, ruft der Signature-Dienst die URL aus dem Zertifikat ab.
 
 Statt einen CRL-Server zu verwenden, können Sie einen OCSP-Server (Online Certificate Status Protocol) verwenden, wenn Sie die Sperrüberprüfung durchführen. Normalerweise wird die Sperrüberprüfung bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server schneller durchgeführt. (See [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
@@ -1712,7 +1712,7 @@ Mehrere digitale Signaturen mithilfe der Signature Service API (Webdienst) über
 1. Durchsuchen aller Unterschriften
 
    * Durchlaufen Sie alle Unterschriften, indem Sie den `PDFDocumentVerificationInfo` Datenmember des Objekts `verificationInfos` abrufen. Dieser Datenmember gibt ein `Object` Array zurück, bei dem jedes Element ein `PDFSignatureVerificationInfo` Objekt ist.
-   * Mithilfe des `PDFSignatureVerificationInfo` Objekts können Sie Aufgaben wie das Festlegen des Unterschriftsstatus durchführen, indem Sie den `PDFSignatureVerificationInfo` Datenmember des Objekts abrufen `status` . Dieser Datenmember gibt ein `SignatureStatus` Objekt zurück, dessen statisches Datenelement Sie über den Status der Signatur informiert. Wenn die Signatur beispielsweise unbekannt ist, gibt diese Methode `SignatureStatus.DocumentSignatureUnknown`zurück.
+   * Mithilfe des `PDFSignatureVerificationInfo` Objekts können Sie Aufgaben wie die Bestimmung des Unterschriftsstatus durchführen, indem Sie den `PDFSignatureVerificationInfo` Datenmember des Objekts abrufen `status` . Dieser Datenmember gibt ein `SignatureStatus` Objekt zurück, dessen statisches Datenelement Sie über den Status der Signatur informiert. Wenn die Signatur beispielsweise unbekannt ist, gibt diese Methode `SignatureStatus.DocumentSignatureUnknown`zurück.
 
 **Siehe auch**
 
