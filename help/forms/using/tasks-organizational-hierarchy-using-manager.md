@@ -11,7 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 79%
 
 ---
 
@@ -33,7 +36,7 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
 1. Erstellen Sie ein DSC. For more information, see &#39;Developing Components for AEM Forms&#39; topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
 1. Definieren Sie in dem DSC eine neue SPI für das Hierarchiemanagement, um direkt unterstellte Mitarbeiter und Hierarchie unter den AEM Forms-Benutzern zu definieren. Im Folgenden finden Sie ein Java™-Beispielcodefragment.
 
-   ```as3
+   ```java
    public class MyHierarchyMgmtService
    {
         /*
@@ -68,7 +71,7 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
 
 1. Erstellen Sie die Datei component.xml. Stellen Sie sicher, dass spec-id mit dem unten angegebenen Codefragment bereinstimmt. Im Folgenden finden Sie ein Beispielcodefragment, das Sie für Ihre Zwecke anpassen können.
 
-   ```as3
+   ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
        <component-id>com.adobe.sample.SampleDSC</component-id>
        <version>1.1</version>
