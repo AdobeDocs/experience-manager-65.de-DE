@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: e103640784f9d5b00a2a78cead6e904017ad7a53
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ Die folgenden Quick-Beginn stehen für die Convert PDF-Dienst-API zur Verfügung
 
 [Quick Beginn (SOAP-Modus): Konvertieren eines PDF-Dokuments in JPEG-Dateien mit der Java-API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein PostScript-Dokument mit dem Namen *Loan.ps* konvertiert. (Siehe PDF-Dokumente [in PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)konvertieren.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein 
 
 Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in einen Satz von JPEG-Dateien konvertiert und im Ordner C:\Adobe directory gespeichert. Jede Datei wird benannt `tempFile[index].jpg`, wobei die erste Bilddatei den Namen *tempFile0.jpg* erhält. (Siehe [Konvertieren von PDF-Dokumenten in Bildformate](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
