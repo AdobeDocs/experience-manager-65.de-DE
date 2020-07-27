@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Java API Quick Beginn (SOAP) ist für den Barcoded Forms-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Dekodieren von Formulardaten mit Strichcode mithilfe der Java-API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -31,7 +34,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Der folgende Java-Code dekodiert Formulardaten, die sich in einem PDF-Formular befinden, das als &quot;Loan.pdf&quot;gespeichert wird. Die dekodierten Daten werden als XML-Datei mit dem Namen extracData.xml gespeichert. In diesem Codebeispiel wird ein `org.w3c.dom.Document` Objekt in ein `com.adobe.idp.Document` Objekt konvertiert. (Siehe [Dekodieren von Formulardaten](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)mit Strichcode.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
