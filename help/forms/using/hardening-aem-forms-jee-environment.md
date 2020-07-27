@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7698'
 ht-degree: 71%
@@ -219,7 +219,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Öffnen Sie die Datei „META-INF/application.xml“.
 1. Suchen Sie den Abschnitt „adobe-bootstrapper.war“:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <module id="WebApp_adobe_bootstrapper"> 
        <web> 
@@ -239,7 +239,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Beenden Sie den AEM-Server.
 1. Deaktivieren Sie die Module „adobe-bootstrapper.war“ und „adobe-lcm-bootstrapper-redirector.war“ wie folgt durch Kommentarzeichen:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <!-- 
    <module id="WebApp_adobe_bootstrapper"> 
@@ -281,7 +281,7 @@ Beim Installieren von AEM Forms on JEE wird ein Standardbenutzerkonto für den B
 
 1. Geben Sie in einem Webbrowser die folgende URL ein:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -314,7 +314,7 @@ Die WSDL-Generierung (Web Service Definition Language) sollte nur in Entwicklung
 
 1. Geben Sie in einem Webbrowser die folgende URL ein:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -358,7 +358,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 
 1. Ändern Sie [JBOSS_HOME]`integratedSecurity=true` \\standalone\configuration\lc_{datasource.xml}, um der Verbindungs-URL hinzuzufügen, wie im folgenden Beispiel gezeigt:
 
-   ```as3
+   ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
@@ -370,7 +370,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 
 1. Beginn Sie WebLogic Server Administration Console, indem Sie die folgende URL in die Adresszeile eines Webbrowsers eingeben:
 
-   ```as3
+   ```java
    https://[host name]:7001/console
    ```
 
@@ -731,7 +731,7 @@ Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exce
 
 Die Listen-ID ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTIONS*** wird als Konstante in der Klasse `UMConstants` des Namespace `com.adobe.idp.um.api` definiert, der in `adobe-usermanager-client.jar` zu finden ist. Sie können die AEM Forms-APIs zum Erstellen, Ändern oder Bearbeiten dieser Liste verwenden. Verwenden Sie zum Erstellen der Liste für die  für globale zulässige Werber Ausnahmen beispielsweise Folgendes:
 
-```as3
+```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
@@ -759,7 +759,7 @@ Möglicherweise haben Sie benutzerdefinierte WAR-Dateien für die Verwendung mit
 
 Im Folgenden finden Sie ein Beispiel für den Filtereintrag in der Datei *web.xml* für die WAR-Datei ***SAMPLE***:
 
-```as3
+```java
 <filter> 
        <filter-name> filter-name </filter-name> 
        <filter-class> com.adobe.idp.um.auth.filter.RemoteCSRFFilter </filter-class> 
@@ -977,7 +977,7 @@ Informationen zum Konfigurieren der SSL-Umleitung für WebSphere oder WebLogic f
 
 1. Hinzufügen Sie den folgenden Code im Element https connector:
 
-   ```
+   ```xml
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
     <ssl name="jboss7_ssl" key-alias="jboss71" password="Tibco321" certificate-key-file="../standalone/configuration/server.keystore" protocol="TLSv1"/> 
     </connector>
@@ -1055,7 +1055,7 @@ Wenn Sie AEM Forms mit der Turnkey-Installationsmethode unter JBoss installieren
 
 Nach der Anmeldung bei Administration Console können Sie die Ordnerliste der Konsole durchsuchen, indem Sie die URL ändern. Wenn Sie beispielsweise die URL in eine der folgenden URLs ändern, wird eine Liste angezeigt:
 
-```as3
+```java
 https://<servername>:8080/adminui/secured/ 
 https://<servername>:8080/um/
 ```
@@ -1068,7 +1068,7 @@ Dieser Abschnitt enthält Empfehlungen für die Anwendungsserverkonfiguration zu
 
 Stellen Sie in der Datei „weblogic.xml“ die Eigenschaften zu „index-directories“ auf `false` ein, wie im folgenden Beispiel gezeigt:
 
-```as3
+```xml
 <container-descriptor> 
     <index-directory-enabled>false 
     </index-directory-enabled> 
