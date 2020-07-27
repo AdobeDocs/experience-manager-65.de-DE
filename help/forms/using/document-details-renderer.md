@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 56%
 
 ---
 
@@ -29,7 +32,7 @@ In diesem Dokument wird die Verwendung dieser Renderer aus der Perspektive der s
 
 ## PDF-Formulare {#pdf-forms}
 
-PDF-Formulare werden wiedergegeben von `PdfTaskForm View`.
+PDF forms werden von `PdfTaskForm View`.
 
 Wenn ein XDP-Formular als PDF-Datei gerendert wird, wird ein `FormBridge` JavaScript™ vom FormsAugmenter-Dienst hinzugefügt. Dieses JavaScript™ (innerhalb des PDF-Formulars) hilft bei Aktionen wie dem Senden und Speichern von Formularen oder dem Offlineschalten des Formulars.
 
@@ -45,7 +48,7 @@ Diese Methode ist das Standardverfahren zur Kommunikation zwischen einem überge
 
 Kommunikation mit `pdfObject.postMessage` / `pdfObject.messageHandler`
 
-Diese Methode ist das Standardverfahren zur Kommunikation aus HTML mit einem PDF-Javascript. Die PdfTaskForm-Ansicht behandelt auch flaches PDF und rendert es einfach.
+Diese Methode ist die Standardmethode zur Kommunikation mit einem PDFJavaScript aus einem HTML-Code. Die PdfTaskForm-Ansicht behandelt auch flaches PDF und rendert es einfach.
 
 >[!NOTE]
 >
@@ -55,9 +58,9 @@ Diese Methode ist das Standardverfahren zur Kommunikation aus HTML mit einem PDF
 
 Neue HTML-Formulare werden durch die NewHTMLTaskForm-Ansicht gerendert.
 
-Wenn ein XDP-Formular mit dem in CRX bereitgestellten Mobile Forms-Paket als HTML gerendert wird, wird dem Formular auch zusätzliches `FormBridge`-Javascript hinzugefügt, das verschiedene Methoden für das Speichern und Senden von Formulardaten verfügbar macht.
+When an XDP Form is rendered as HTML using the mobile forms package deployed on CRX, it also adds additional `FormBridge`JavaScript to the form, which exposes different methods for saving and submitting form data.
 
-Dieses Javascript unterscheidet sich von dem, auf das oben unter „PDF-Formulare“ verwiesen wird, erfüllt jedoch einen ähnlichen Zweck.
+Dieses JavaScript unterscheidet sich von dem oben genannten, dient jedoch einem ähnlichen Zweck.
 
 >[!NOTE]
 >
@@ -81,13 +84,13 @@ Dieses Protokoll wird durch `WsNextAdapter.swf` definiert. Die vorhandenen `flex
 
 Drittanbieteranwendungen werden mithilfe der ExtAppTaskForm-Ansicht gerendert.
 
-**Kommunikation von Drittanbieteranwendungen mit AEM Forms Workspace**
+**Kommunikation zwischen Drittanbieteranwendungen und AEM Forms Workspace**
 
 AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
-[Die Meldung] kann eine Zeichenfolge sein, die als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`im `runtimeMap`. Anwendungen von Drittanbietern müssen diese Schnittstelle verwenden, um AEM Forms Workspace nach Bedarf zu benachrichtigen. Die Verwendung dieser Schnittstelle ist obligatorisch, da AEM Forms Workspace wissen muss, dass die Aufgabe gesendet wird, damit das Fenster &quot;Aufgabe&quot;bereinigt werden kann.
+[Die Meldung] kann eine Zeichenfolge sein, die als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`im `runtimeMap`. Drittanbieteranwendungen müssen diese Schnittstelle verwenden, um AEM Forms Workspace bei Bedarf zu benachrichtigen. Die Verwendung dieser Schnittstelle ist obligatorisch, da der Arbeitsbereich AEM Forms wissen muss, dass die Aufgabe gesendet wird, damit das Fenster Aufgabe bereinigt werden kann.
 
-**Kommunikation zwischen AEM Forms Workspace und Anwendungen von Drittanbietern**
+**Kommunikation zwischen AEM Forms und Drittanbieteranwendungen**
 
 Wenn die Schaltflächen für die direkte Aktion von AEM Forms Workspace sichtbar sind, wird `window.[External-App-Name].getMessage([Action])`aufgerufen, wobei [ `Action]` vom `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
 
