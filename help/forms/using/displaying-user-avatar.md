@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +29,7 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
 1. Erstellen Sie ein DSC mithilfe der Informationen, die im nächsten Schritt angegeben werden. For more information, see &#39;Developing Components for AEM Forms&#39; topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
 1. Definieren Sie im DSC eine neue SPI, die mithilfe der Methoden getCurrentUserImageUrl und getUserImageUrl eine Bild-URL für einen AEM Forms-Benutzer abruft. Im Folgenden finden Sie ein Java™-Beispielcodefragment:
 
-   ```as3
+   ```java
    public class DemoUserImageURLProviderService {
      public String getCurrentUserImageUrl()
      {
@@ -43,7 +46,7 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
 
    Das folgende Codefragment ist ein Beispiel. Passen Sie es an Ihre spezifischen Anforderungen an.
 
-   ```as3
+   ```java
    <component xmlns="https://adobe.com/idp/dsc/component/document">
        <component-id>com.adobe.sample.DemoUsersComponent</component-id>
        <version>1.1</version>
