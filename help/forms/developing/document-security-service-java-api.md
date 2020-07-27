@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Der Java API Quick Beginn (SOAP) ist für den Rights Management-Dienst verfügba
 
 [Quick Beginn (SOAP-Modus): Entfernen einer Richtlinie aus einem Word-Dokument mithilfe der Java-API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -53,7 +56,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Im folgenden Java-Codebeispiel wird eine neue Richtlinie mit dem Namen *Allow Copy* erstellt. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, trägt den Namen *Globaler Richtliniensatz*. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe [Richtlinien](/help/forms/developing/protecting-documents-policies.md#creating-policies)erstellen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -182,7 +185,7 @@ Im folgenden Java-Codebeispiel wird eine neue Richtlinie mit dem Namen *Allow Co
 
 Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Allow Copy* geändert, indem die Offline-Nutzungsdauer auf 40 Tage eingestellt wird. (Siehe Richtlinien [ändern](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -283,7 +286,7 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Allow Copy* g
 
 Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen &quot;Kopieren *zulassen&quot;gelöscht*. (Siehe Richtlinien [löschen](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -375,7 +378,7 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen &quot;Kopieren
 
 Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Allow Copy* in ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, trägt den Namen *Globaler Richtliniensatz*. Das richtliniengeschützte Dokument wird als PDF-Datei mit dem Namen *PolicyProtectedLoanDoc.pdf gespeichert. *(Siehe Richtlinien [auf PDF-Dokumente](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)anwenden.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -481,7 +484,7 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Allow Copy* i
 
 Im folgenden Codebeispiel wird eine Richtlinie aus einem PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf* entfernt. Das ungesicherte PDF-Dokument wird als *unProtectedLoan.pdf* gespeichert. (Siehe Richtlinien [aus PDF-Dokumenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)entfernen.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -588,7 +591,7 @@ Im folgenden Codebeispiel wird eine Richtlinie aus einem PDF-Dokument mit dem Na
 
 Im folgenden Java-Codebeispiel wird ein richtliniengeschütztes Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf* gesperrt. Ein überarbeitetes PDF-Dokument befindet sich am folgenden URL-Speicherort `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Siehe Zugriff [auf Dokumente](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)sperren.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -702,7 +705,7 @@ Im folgenden Java-Codebeispiel wird ein richtliniengeschütztes Dokument mit dem
 
 Im folgenden Java-Codebeispiel wird ein richtliniengeschütztes PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.* pdf geprüft. (Siehe [Richtliniengeschützte PDF-Dokumente](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)überprüfen.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -820,7 +823,7 @@ Im folgenden Java-Codebeispiel wird ein richtliniengeschütztes PDF-Dokument mit
 
 Im folgenden Java-Codebeispiel wird der Zugriff auf ein gesperrtes PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf* reaktiviert. (Siehe Zugriff [auf zurückgerufene Dokumente](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)erneut aktivieren.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -926,7 +929,7 @@ Im folgenden Java-Codebeispiel wird der Zugriff auf ein gesperrtes PDF-Dokument 
 
 Im folgenden Java-Codebeispiel wird ein neues PDF-Wasserzeichen mit dem Namen &quot;Beispiel-PDF-Wasserzeichen&quot;erstellt. Dieses Wasserzeichen enthält ein einzelnes Element (siehe [Erstellen von Wasserzeichen](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1059,7 +1062,7 @@ public class PDFWatermarksSOAPMode {
 
 Im folgenden Java-Codebeispiel wird ein neues Wasserzeichen &quot;Text&quot;mit dem Namen &quot; *Beispieltext-Wasserzeichen*&quot;erstellt. Dieses Wasserzeichen enthält ein einzelnes Element.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1208,7 +1211,7 @@ public class TextWatermarks {
 
 Im folgenden Java-Codebeispiel wird ein Wasserzeichen mit dem Namen &quot;Beispieltext-Wasserzeichen&quot;geändert und die Deckkraft des ersten Elements auf 100 eingestellt.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1320,7 +1323,7 @@ public class ModifyWatermarks {
 
 Im folgenden Java-Codebeispiel wird ein Wasserzeichen mit dem Namen *Vertraulich* geändert, indem der Wert des `opacity` Attributs auf 80 geändert wird.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1418,7 +1421,7 @@ Im folgenden Java-Codebeispiel wird ein Wasserzeichen mit dem Namen *Vertraulich
 
 Im folgenden Java-Codebeispiel wird nach dem Ereignis zum Erstellen von Richtlinien gesucht.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1531,7 +1534,7 @@ Im folgenden Java-Codebeispiel wird nach dem Ereignis zum Erstellen von Richtlin
 
 Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Allow Copy* in ein Word-Dokument mit dem Namen *Loan.doc* angewendet. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, trägt den Namen *Globaler Richtliniensatz*. Das richtliniengeschützte Dokument wird als DOC-Datei mit dem Namen *PolicyProtectedLoanDoc.doc gespeichert. *(Siehe Richtlinien [auf PDF-Dokumente](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)anwenden.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1646,7 +1649,7 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Allow Copy* i
 
 Im folgenden Codebeispiel wird eine Richtlinie aus einem Word-Dokument namens *PolicyProtectedLoanDoc.doc* entfernt. Das ungesicherte Word-Dokument wird als *unProtectedLoan.doc* gespeichert. (Siehe Richtlinien [aus Word-Dokumenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)entfernen.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1754,7 +1757,7 @@ Im folgenden Codebeispiel wird eine Richtlinie aus einem Word-Dokument namens *P
 
 Im folgenden Java-Codebeispiel wird eine neue abstrakte Richtlinie mit dem Namen AllowCopy erstellt. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt &quot;Globaler Richtliniensatz&quot;. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe Richtlinien erstellen.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1871,7 +1874,7 @@ public class CreateAbstractPolicySoap {
 
 Im folgenden Java-Codebeispiel wird eine abstrakte Richtlinie namens AllowCopy geändert. Der Richtliniensatz, in dem die Richtlinie geändert wird, heißt &quot;Globaler Richtliniensatz&quot;. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe Richtlinien erstellen.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1970,7 +1973,7 @@ public class ModifyingAbstractPolicySoap {
 
 Im folgenden Java-Codebeispiel wird eine abstrakte Richtlinie mit dem Namen AllowCopy gelöscht. Der Richtliniensatz, aus dem die Richtlinie gelöscht wird, heißt &quot;Globaler Richtliniensatz&quot;. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe Richtlinien erstellen.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2057,7 +2060,7 @@ public class DeleteAbstractPolicySoap {
 
 Im folgenden Java-Codebeispiel wird die Methode zum Schutz eines Dokuments im Anweisungsarbeitsablauf für einen vorhandenen Benutzer veranschaulicht.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2168,7 +2171,7 @@ Das folgende Java-Codebeispiel zeigt, wie Sie ein Dokument im Anweisungsarbeitsa
 * Ein neuer Benutzer, eine neue Lizenz und eine neue Richtlinie werden erstellt.
 * Der Benutzer ist mit der Lizenz und der Richtlinie verknüpft und das Dokument ist geschützt.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
