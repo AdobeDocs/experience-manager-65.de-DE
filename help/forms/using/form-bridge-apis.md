@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 42%
 
 ---
 
@@ -22,7 +25,7 @@ Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine 
 
 Sie können den folgenden Beispielcode verwenden, um die Verbindung zu erstellen.
 
-```
+```javascript
 // Example showing how to connect to FormBridge
 window.addEventListener("FormBridgeInitialized",
                                 function(event) {
@@ -50,7 +53,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 **isConnected()** Überprüft, ob der Formularstatus initialisiert wurde
 
 * **Eingabe:** keine
-* **Ausgabe**: &quot; **True** &quot;, wenn der XFA-Formularstatus initialisiert wurde
+* **Ausgabe**: **True** , wenn der XFA-Formularstatus initialisiert wurde
 
 * **Fehler:** keine
 
@@ -95,7 +98,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
       * **LoggingConfig:** Ermöglicht dem Benutzer, die Protokollierungsstufe zu überschreiben, die Protokollierung für eine Kategorie zu deaktivieren oder festzulegen, ob die Protokollkonsole angezeigt oder an den Server gesendet werden soll. Die Konfiguration kann überschrieben werden wie folgt:
 
-      ```JavaScript
+      ```javascript
       formBridge.registerConfig{
         "LoggerConfig" : {
       {
@@ -109,7 +112,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
       * **SubmitServiceProxyConfig:** Erlauben Sie den Benutzern, die Proxy-Dienste für Übermittlung und Protokollierung zu registrieren.
 
-         ```JavaScript
+         ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
          {
          "submitServiceProxy" : "`<submitServiceProxy>`",
