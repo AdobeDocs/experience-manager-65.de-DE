@@ -1,6 +1,6 @@
 ---
-title: Wiedergeben interaktiver PDF-Formulare
-seo-title: Wiedergeben interaktiver PDF-Formulare
+title: Interaktive PDF forms wiedergeben
+seo-title: Interaktive PDF forms wiedergeben
 description: 'null'
 seo-description: 'null'
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
@@ -11,18 +11,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2442'
+ht-degree: 0%
 
 ---
 
 
-# Wiedergeben interaktiver PDF-Formulare {#rendering-interactive-pdf-forms}
+# Interaktive PDF forms wiedergeben {#rendering-interactive-pdf-forms}
 
-Der Forms-Dienst rendert interaktive PDF-Formulare auf Client-Geräte (in der Regel Webbrowser), um Informationen von Benutzern zu erfassen. Nach der Wiedergabe eines interaktiven Formulars kann ein Benutzer Daten in Formularfelder eingeben und auf eine Senden-Schaltfläche im Formular klicken, um Informationen an den Forms-Dienst zurückzusenden. Adobe Reader oder Acrobat muss auf dem Computer installiert sein, auf dem der Client-Webbrowser ausgeführt wird, damit ein interaktives PDF-Formular sichtbar ist.
+Der Forms-Dienst rendert interaktive PDF forms an Clientgeräte, üblicherweise Webbrowser, um Benutzerdaten zu erfassen. Nach der Wiedergabe eines interaktiven Formulars kann ein Benutzer Daten in Formularfelder eingeben und auf eine Senden-Schaltfläche im Formular klicken, um Informationen an den Forms-Dienst zurückzusenden. Adobe Reader oder Acrobat muss auf dem Computer installiert sein, auf dem der Client-Webbrowser ausgeführt wird, damit ein interaktives PDF-Formular sichtbar ist.
 
 >[!NOTE]
 >
->Bevor Sie ein Formular mit dem Forms-Dienst wiedergeben können, erstellen Sie einen Formularentwurf. Normalerweise wird ein Formularentwurf in Designer erstellt und als XDP-Datei gespeichert. Informationen zum Erstellen eines Formularentwurfs finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Bevor Sie ein Formular mit dem Forms-Dienst wiedergeben können, erstellen Sie einen Formularentwurf. In der Regel wird ein Formularentwurf in Designer erstellt und als XDP-Datei gespeichert. Informationen zum Erstellen eines Formularentwurfs finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **Beispiel für einen Kreditantrag**
 
@@ -79,11 +82,11 @@ Das `HandleData` Java-Servlet füllt dieses Formular mit dem Vor- und Nachnamen 
 
 **Java-Servlets**
 
-Der Beispielleihantrag ist ein Beispiel für eine Forms-Dienstanwendung, die als Java-Servlet existiert. Ein Java-Servlet ist ein Java-Programm, das auf einem J2EE-Anwendungsserver wie WebSphere ausgeführt wird und den Forms-Dienst Client-API-Code enthält.
+Der Beispielleihantrag ist ein Beispiel für eine Forms-Dienstanwendung, die als Java-Servlet existiert. Ein Java-Servlet ist ein Java-Programm, das auf einem J2EE-Anwendungsserver wie WebSphere ausgeführt wird und den Forms-Dienst-Client-API-Code enthält.
 
-Der folgende Code zeigt die Syntax eines Java-Servlets namens GetLoanForm:
+Der folgende Code zeigt die Syntax eines Java-Servlets mit dem Namen GetLoanForm:
 
-```as3
+```java
      public class GetLoanForm extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -142,12 +145,12 @@ Die folgenden Werte zeigen einige Beispiele für URI-Werte:
 * Applications/AnotherApp/1.1/Assets/picture.jpg
 * Applications/SomeApp/2.0/Resources/Data/XSDs/MyData.xsd
 
-Beim Rendern eines interaktiven Formulars können Sie URI-Werte wie die Ziel-URL definieren, an die Formulardaten gesendet werden. Die Ziel-URL kann auf eine der folgenden Arten definiert werden:
+Beim Wiedergeben eines interaktiven Formulars können Sie URI-Werte wie die URL der Zielgruppe definieren, an die die Formulardaten gesendet werden. Die Zielgruppen-URL kann auf eine der folgenden Arten definiert werden:
 
 * Klicken Sie beim Entwerfen des Formularentwurfs in Designer auf die Schaltfläche &quot;Senden&quot;
 * Verwenden der Forms-Dienst-Client-API
 
-Wenn die Ziel-URL im Formularentwurf definiert ist, überschreiben Sie sie nicht mit der Forms-Dienst-Client-API. Wenn Sie also die Ziel-URL mit der Forms-API festlegen, wird die angegebene URL im Formularentwurf auf die mit der API angegebene URL zurückgesetzt. Wenn Sie das PDF-Formular an die im Formularentwurf angegebene Ziel-URL senden möchten, setzen Sie die Ziel-URL programmatisch auf eine leere Zeichenfolge.
+Wenn die Zielgruppen-URL im Formularentwurf definiert ist, überschreiben Sie sie nicht mit der Forms-Dienst-Client-API. Wenn Sie also die Zielgruppen-URL mit der Forms-API festlegen, wird die angegebene URL im Formularentwurf auf die mit der API angegebene URL zurückgesetzt. Wenn Sie das PDF-Formular an die im Formularentwurf angegebene Zielgruppen-URL senden möchten, setzen Sie die Zielgruppen-URL programmgesteuert auf eine leere Zeichenfolge.
 
 Wenn Sie über ein Formular mit einer Senden- und einer Berechnungsschaltfläche verfügen (mit einem entsprechenden Skript, das auf dem Server ausgeführt wird), können Sie programmgesteuert die URL definieren, an die das Formular gesendet wird, um das Skript auszuführen. Verwenden Sie die Senden-Schaltfläche im Formularentwurf, um die URL anzugeben, an die die Formulardaten gesendet werden. (Siehe [Berechnen von Formulardaten](/help/forms/developing/calculating-form-data.md).)
 
@@ -173,7 +176,7 @@ Die `renderPDFForm2` Methode akzeptiert eine `com.adobe.idp.Document` Instanz, d
 
 >[!NOTE]
 >
->Die Laufzeitoption für PDF-Dateien mit Tags kann nicht eingestellt werden, wenn das Eingabedokument ein PDF-Dokument ist. Wenn es sich bei der Eingabedatei um eine XDP-Datei handelt, kann die PDF-Option mit Tags festgelegt werden.
+>Die Laufzeitoption für PDF-Dateien mit Tags kann nicht eingestellt werden, wenn das Eingabedateien ein PDF-Dokument ist. Wenn es sich bei der Eingabedatei um eine XDP-Datei handelt, kann die PDF-Option mit Tags festgelegt werden.
 
 ## Interaktives PDF-Formular mit der Java-API wiedergeben {#render-an-interactive-pdf-form-using-the-java-api}
 
@@ -193,7 +196,7 @@ Rendern Sie ein interaktives PDF-Formular mithilfe der Forms API (Java):
    * Erstellen Sie ein `URLSpec` Objekt, das URI-Werte mithilfe des Konstruktors speichert.
    * Rufen Sie die `URLSpec` Methode des `setApplicationWebRoot` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Webstamm der Anwendung darstellt.
    * Rufen Sie die `URLSpec` Methode des `setContentRootURI` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls gibt der Forms-Dienst eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///`an.
-   * Rufen Sie die `URLSpec` Methode des `setTargetURL` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Rufen Sie die `URLSpec` `setTargetURL` Objektmethode auf und übergeben Sie einen Zeichenfolgenwert, der den Zielgruppen-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Zielgruppen-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
 
 1. Anhängen von Dateien an das Formular
 
@@ -202,6 +205,7 @@ Rendern Sie ein interaktives PDF-Formular mithilfe der Forms API (Java):
 
       * Ein Zeichenfolgenwert, der den Namen der Dateianlage einschließlich der Dateinamenerweiterung angibt.
    * Ein `com.adobe.idp.Document` Objekt, das die Dateianlage enthält.
+
    >[!NOTE]
    >
    >Wiederholen Sie diesen Schritt für jede Datei, die an das Formular angehängt werden soll. Dieser Schritt ist optional und Sie können ihn übergeben, `null` wenn Sie keine Dateianlagen senden möchten.
@@ -212,9 +216,10 @@ Rendern Sie ein interaktives PDF-Formular mithilfe der Forms API (Java):
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document` Objekt.
-   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen angeben möchten.
+   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen festlegen möchten.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
+
    Die `renderPDFForm` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
@@ -245,7 +250,7 @@ Rendern Sie ein interaktives PDF-Formular mithilfe der Forms API (Webdienst):
    * Erstellen Sie ein `URLSpec` Objekt, das URI-Werte mithilfe des Konstruktors speichert.
    * Rufen Sie die `URLSpec` Methode des `setApplicationWebRoot` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Webstamm der Anwendung darstellt.
    * Rufen Sie die `URLSpec` Methode des `setContentRootURI` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls gibt der Forms-Dienst eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///`an.
-   * Rufen Sie die `URLSpec` Methode des `setTargetURL` Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Rufen Sie die `URLSpec` `setTargetURL` Objektmethode auf und übergeben Sie einen Zeichenfolgenwert, der den Zielgruppen-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Zielgruppen-URL im Formularentwurf definieren, können Sie eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
 
 1. Anhängen von Dateien an das Formular
 
@@ -254,6 +259,7 @@ Rendern Sie ein interaktives PDF-Formular mithilfe der Forms API (Webdienst):
 
       * Ein Zeichenfolgenwert, der den Namen der Dateianlage einschließlich der Dateinamenerweiterung angibt
    * Ein `BLOB` Objekt, das den Dateianhang enthält
+
    >[!NOTE]
    >
    >Wiederholen Sie diesen Schritt für jede Datei, die an das Formular angehängt werden soll.
@@ -264,13 +270,14 @@ Rendern Sie ein interaktives PDF-Formular mithilfe der Forms API (Webdienst):
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `BLOB` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
-   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen angeben möchten.
+   * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Laufzeitoptionen festlegen möchten.
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst benötigt werden.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder` Objekt, das von der Methode gefüllt wird. Auf diese Weise wird das gerenderte PDF-Formular gespeichert.
    * Ein leeres `javax.xml.rpc.holders.LongHolder` Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
    * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert den Gebietsschemawert.)
    * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das die Ergebnisse dieses Vorgangs enthält.
+
    Die `renderPDFForm` Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
