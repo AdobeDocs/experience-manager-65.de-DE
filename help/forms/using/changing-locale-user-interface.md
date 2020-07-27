@@ -11,16 +11,19 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 63%
 
 ---
 
 
 # Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-AEM Forms Workspace bietet standardmäßig Unterstützung für Englisch, Französisch, Deutsch und Japanisch. Darüber hinaus können Sie die Benutzeroberfläche von AEM Forms Workspace in jeder anderen Sprache lokalisieren.
+AEM Forms Workspace bietet standardmäßig Unterstützung für Englisch, Französisch, Deutsch und Japanisch. Es bietet außerdem die Möglichkeit, die Benutzeroberfläche von AEM Forms Workspace in jeder anderen Sprache zu lokalisieren.
 
-So lokalisieren Sie die Benutzeroberfläche von AEM Forms Workspace in eine Sprache Ihrer Wahl:
+So lokalisieren Sie die Benutzeroberfläche von AEM Forms Workspace in die gewünschte Sprache:
 
 * Lokalisieren des Texts von AEM Forms Workspace
 * Lokalisieren von ausgeblendeten Kategorien, Warteschlangen und Prozessen
@@ -63,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um die Bilder zu lokalisieren:
 1. Mit einem WebDAV-Client platzieren Sie die Bilddateien im Ordner */apps/ws/images*.
 1. Navigieren Sie zu */apps/ws/css*. Öffnen Sie *newStyle.css* zur Bearbeitung und fügen Sie die folgenden Einträge hinzu:
 
-   ```
+   ```css
    #categoryListBar .content.nw {
         background: #3e3e3e url(../images/Categories_nw.png) no-repeat 10px 10px;
     }
@@ -81,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um die Bilder zu lokalisieren:
 1. Navigieren Sie zum Ordner */js/runtime/utility* und öffnen Sie die Datei *usersession.js* zur Bearbeitung.
 1. Suchen Sie den Code, der im ursprünglichen Codeblock aufgeführt ist und fügen Sie die folgende Bedingung hinzu: *lang !== &#39;nw&#39;* to the if statement:
 
-   ```
+   ```javascript
    // Orignal code
    setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -93,7 +96,7 @@ Führen Sie die folgenden Schritte aus, um die Bilder zu lokalisieren:
        }
    ```
 
-   ```
+   ```javascript
    //new code
     setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -114,7 +117,7 @@ Sie benötigen das Entwicklungspaket, um die *Datumsauswahl*-API zu lokalisieren
 1. Navigate to `apps/ws/js` and open the `jquery.ui.datepicker-nw.js` file for editing.
 1. Erstellen Sie in der Datei &quot;main.js&quot;einen Alias für `jquery.ui.datepicker-nw.js.` Der Code zum Erstellen eines Alias für die `jquery.ui.datepicker-nw.js` Datei lautet:
 
-   ```
+   ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
@@ -122,9 +125,10 @@ Sie benötigen das Entwicklungspaket, um die *Datumsauswahl*-API zu lokalisieren
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
+
    Der Beispielcode unten zeigt, wie Sie den Eintrag aus „jquery.ui.datepicker-nw.js“ hinzufügen:
 
-   ```
+   ```json
    //Original Code
    define([
        'jquery',
@@ -141,7 +145,7 @@ Sie benötigen das Entwicklungspaket, um die *Datumsauswahl*-API zu lokalisieren
    ], function ($, _, Backbone, jQueryUI, jQueryUIDatePickerJA, jQueryUIDatePickerDE, jQueryUIDatePickerFR, slimScroll, UserSearch, LogManager, Logger) {
    ```
 
-   ```
+   ```json
    // Code with Date Picker alias for new language
    define([
        'jquery',
@@ -163,9 +167,10 @@ Sie benötigen das Entwicklungspaket, um die *Datumsauswahl*-API zu lokalisieren
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
+
    Ändern Sie den folgenden Code, um das neue Gebietsschema hinzuzufügen:
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
       $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {
@@ -177,7 +182,7 @@ Sie benötigen das Entwicklungspaket, um die *Datumsauswahl*-API zu lokalisieren
    }
    ```
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
        $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {
