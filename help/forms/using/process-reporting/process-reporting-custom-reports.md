@@ -10,7 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -45,20 +48,20 @@ Die REST-Schnittstelle CRX QueryBuilder stellt die Funktionalität des Asset Sha
    >
    >In jeder Abfrage verweist der Pfadparameter auf die Position der crx-Datenspeicherung und die Zeichen werden gemäß dem URL-Standard mit Escape-Zeichen versehen.
 
-## Erstellen eines Dienstes mit der Abfrage Builder-API {#creating-a-service-using-query-builder-api-nbsp}
+## Erstellen eines Dienstes mit der Abfrage Builder-API  {#creating-a-service-using-query-builder-api-nbsp}
 
 Voraussetzung für das Erstellen eines Dienstes mit der Abfrage Builder-API ist das [Erstellen und Bereitstellen des CQ OSGI-Bundles](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) und die [Verwendung der Abfrage Builder-API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Erstellen Sie einen OSGi-Dienst mit entsprechenden Anmerkungen. Verwenden Sie zum Zugriff auf den QueryBuilder Folgendes:
 
-   ```
+   ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
 1. Erstellen Sie eine Vorhersagegruppe. Code zum Erstellen einer Vorhersagegruppe:
 
-   ```
+   ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
@@ -340,7 +343,7 @@ public class PeriodicProcessVolume {
 
 Die `pom.xml`Beispieldatei, die über dem Dienst erstellt werden soll, lautet:
 
-```java
+```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -420,7 +423,7 @@ Die `pom.xml`Beispieldatei, die über dem Dienst erstellt werden soll, lautet:
 </project>
 ```
 
-## Erstellen einer separaten Benutzeroberfläche {#creating-a-separate-ui-nbsp}
+## Erstellen einer separaten Benutzeroberfläche  {#creating-a-separate-ui-nbsp}
 
 Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige der Ergebnisse sind die [Grundlagen](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html)zum Sling, das [Erstellen eines CRX-Knotens](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) und das Bereitstellen entsprechender [Zugriffsberechtigungen](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -432,7 +435,7 @@ Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige
 
    Ein Beispielknoten mit JSP- und CSS-Dateien
 
-1. Hinzufügen JavaScript-Code, um einen Ajax-Aufruf an die Abfragebuilder REST API oder Ihren Dienst zu Beginn. Fügen Sie außerdem geeignete Argumente hinzu.
+1. Fügen Sie JavaScript-Code zum Beginn eines Ajax-Aufrufs an die Abfragebuilder REST API oder Ihren Dienst hinzu. Fügen Sie außerdem geeignete Argumente hinzu.
 
 1. Hinzufügen Sie einen entsprechenden Erfolgshandler zum Ajax-Aufruf, um das Ergebnis zu analysieren und anzuzeigen. Sie können das Ergebnis in mehreren Formaten (json/csv/user defined) analysieren und in einer Tabelle oder in anderen Formularen anzeigen.
 
@@ -440,7 +443,7 @@ Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige
 
 Ein Beispiel für einen JSP-Code, der sowohl OSGi Service- als auch QueryBuilder API verwendet, lautet:
 
-```
+```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integrieren der Berichtsbenutzeroberfläche in die vorhandene Benutzeroberfläche von Process Berichte {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integrieren der Berichtsbenutzeroberfläche in die vorhandene Benutzeroberfläche von Process Berichte  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige der Ergebnisse sind die [Grundlagen](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html)zum Sling, das [Erstellen eines CRX-Knotens](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) und das Bereitstellen entsprechender [Zugriffsberechtigungen](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -640,6 +643,7 @@ Voraussetzung für das Erstellen einer separaten Benutzeroberfläche zur Anzeige
    * **link**- Gibt den relativen Link zum Renderer der separaten Benutzeroberfläche an. Der Link wird in Schritt 1 erstellt.
    * **description**- Gibt die einzeilige Beschreibung des Berichts an. Sie können das Beschreibungsfeld leer lassen.
    * **icon**- Gibt das Bild an, das den Bericht bildlich darstellen soll. Sie können das Symbolfeld leer lassen.
+
    ![Knoteneigenschaften ](assets/node_properties_new.png)
 
    Knoteneigenschaften
