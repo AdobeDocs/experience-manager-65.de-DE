@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 55c12683ba66b3aace07ea83931c9c32ea65663e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 76%
 
 ---
 
@@ -35,7 +38,7 @@ Bearbeiten des Metadatenschemas:
 
    Die URL der Seite lautet:
 
-   ```
+   ```html
    https://<hostname>:<port>/mnt/overlay/dam/gui/content/metadataschemaeditor/
     schemalist.html/forms/aem-authored
    ```
@@ -58,7 +61,7 @@ Bevor Sie die folgenden Schritte ausführen, lesen Sie die [ Voraussetzungen](..
 
 To create a group and add members to it, navigate to **Tools** > **Operations** > **Security** > **Groups**.
 For more information, see [User Administration and Services](/help/sites-administering/security.md).
-Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Diese Benutzergruppe wird mit AEM Forms ausgeliefert und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
+Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Diese Benutzergruppe wird mit AEM Forms geliefert und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
 
 Verknüpfen von Benutzergruppen mit einem adaptiven Formular:
 
