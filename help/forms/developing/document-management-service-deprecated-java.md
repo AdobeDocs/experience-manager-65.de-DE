@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Die folgenden Quick-Beginn sind für den Dokument Management-Dienst (nicht mehr 
 
 [Quick Beginn (SOAP-Modus): Content Services-Berechtigungen mithilfe der Java-API festlegen](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 
@@ -49,7 +52,7 @@ Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms-Serve
 
 Im folgenden Java-Codebeispiel wird ein neuer Bereich mit dem Namen *Testverzeichnis* in der Firma Home erstellt. Der Identifizierungswert des neuen Raums wird in die Konsole geschrieben.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -145,7 +148,7 @@ Im folgenden Java-Codebeispiel wird ein neuer Bereich mit dem Namen *Testverzeic
 
 Im folgenden Java-Codebeispiel wird ein Leerzeichen mit dem Namen /Firma Home/Test Directory gelöscht.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -245,7 +248,7 @@ Im folgenden Java-Codebeispiel wird ein Leerzeichen mit dem Namen /Firma Home/Te
 
 Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* zu einem Ordner mit dem Namen /Firma Home/Test Directory hinzugefügt. Die Attribute für Ersteller und Beschreibung werden eingestellt. Der Identifizierungswert des neuen Inhalts wird in die Konsole geschrieben.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -368,7 +371,7 @@ Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.p
 
 Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* von /Firma Home abgerufen. Die PDF-Datei wird im lokalen Dateisystem gespeichert und erhält den Namen *UpdatedMortgageForm.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -474,7 +477,7 @@ Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.p
 
 Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* aus dem Verzeichnis /Firma Home/Test nach /Firma Home verschoben. Der Identifizierungswert des verschobenen Inhalts wird in die Konsole geschrieben.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -575,7 +578,7 @@ Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.p
 
 Im folgenden Java-Codebeispiel wird der Inhalt in /Firma Home Liste. Jeder Knotentyp und jeder Knotenname werden angezeigt.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -688,7 +691,7 @@ Im folgenden Java-Codebeispiel wird der Inhalt in /Firma Home Liste. Jeder Knote
 
 Der folgende Java-Code sucht /Firma Home nach einem Dokument, das den Text MortgageForm enthält. Die Unterordner werden ebenfalls durchsucht.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -798,7 +801,7 @@ Der folgende Java-Code sucht /Firma Home nach einem Dokument, das den Text Mortg
 
 Im folgenden Java-Codebeispiel wird eine Berechtigung für einen Benutzer mit dem Namen tony blue festgelegt. Die angegebene Domäne ist die Standarddomäne. Die Berechtigung &quot;Consumer&quot;wird angegeben und der Knoten ist `/Company Home/Test Directory`vorhanden.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -908,7 +911,7 @@ Im folgenden Java-Codebeispiel wird eine Berechtigung für einen Benutzer mit de
 
 Der folgende Java-Code erstellt eine Verknüpfung zu einer XML-Datendatei und einem PDF-Formular. Dieser Zuordnungstyp trägt den Namen LinkedBy. Auf das PDF-Dokument muss das Seitenverhältnis verknüpft werden können.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
