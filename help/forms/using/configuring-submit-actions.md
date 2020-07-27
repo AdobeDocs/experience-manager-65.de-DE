@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 81%
 
 ---
 
@@ -133,7 +136,7 @@ Vor der Verwendung von **AEM-Workflow aufrufen** [konfigurieren Sie die AEM-DS-E
 
 ## Serverseitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 
-Normalerweise platzieren Entwickler in jedem Onlinedatenerfassungssystem einige Javascript-Validierungen auf der Clientseite, um Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Diese Techniken sind auch für adaptive Formulare gültig. Ein Formularentwickler kann verschiedene Validierungslogiken erstellen, aber Endbenutzer können diese Validierungslogiken technisch umgehen und ungültige Daten an den Server leiten. Ungültige Daten verstoßen gegen die Geschäftsregeln, die der Formularautor durchgesetzt hat.
+Normalerweise platzieren Entwickler in jedem Online-Datenerfassungssystem einige JavaScript-Überprüfungen auf Clientseite, um einige Geschäftsregeln durchzusetzen. Moderne Browser bieten Endbenutzern Möglichkeiten, diese Validierungen zu umgehen und Übermittlungen mithilfe verschiedener Techniken wie beispielsweise die Web Browser DevTools-Konsole manuell durchzuführen. Diese Techniken sind auch für adaptive Formulare gültig. Ein Formularentwickler kann verschiedene Validierungslogiken erstellen, aber Endbenutzer können diese Validierungslogiken technisch umgehen und ungültige Daten an den Server leiten. Ungültige Daten verstoßen gegen die Geschäftsregeln, die der Formularautor durchgesetzt hat.
 
 Die Funktion für erneute serverseitige Überprüfung enthält die Möglichkeit, auch Validierungen durchzuführen, die von einem Autor für adaptive Formulare beim Entwerfen eines adaptiven Formulars auf dem Server bereitgestellt wurden. Sie verhindert jede mögliche Beeinträchtigung von Datenübertragungen und Verstöße gegen Geschäftsregeln, die in Form von Formularvalidierungen auftreten können.
 
@@ -163,7 +166,7 @@ Bisweilen befindet sich bei komplexen **Validierungsregeln** das exakte Validier
 
 Unterstützende benutzerdefinierte Funktionen in Überprüfungsausdrücken
 
-Autor kann benutzerdefinierte JavaScript-Bibliothek pro adaptivem Formular konfigurieren. Bewahren Sie in der Bibliothek nur die wiederverwendbaren Funktionen, die von den Drittanbieter-Bibliotheken „jquery“ und „underscore“ abhängen.
+Autor kann benutzerdefinierte JavaScript-Bibliothek pro adaptives Formular konfigurieren. Bewahren Sie in der Bibliothek nur die wiederverwendbaren Funktionen, die von den Drittanbieter-Bibliotheken „jquery“ und „underscore“ abhängen.
 
 ## Verhalten bei fehlerhaften Übermittlungsaktionen {#error-handling-on-submit-action}
 
