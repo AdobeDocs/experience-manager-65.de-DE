@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Sie kombinieren einen Datensatz mit einer interaktiven Kommunikationsvorlage, um
 
 **Ein einzelner Datensatz in einer JSON-Datei**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -41,7 +41,7 @@ Sie kombinieren einen Datensatz mit einer interaktiven Kommunikationsvorlage, um
 
 **Mehrere Datensätze in einer JSON-Datei**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -179,7 +179,7 @@ Bevor Sie das Java-Servlet bereitstellen, stellen Sie sicher, dass Sie über ein
 1. [Erstellen und Bereitstellen eines AEM-Projekts mit Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) auf Ihrer AEM-Instanz.
 1. Hinzufügen [AEM Forms Client SDK Version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) oder höher in Abhängigkeiten Liste der POM-Datei Ihres AEM-Projekts. Beispiel:
 
-   ```XML
+   ```xml
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
