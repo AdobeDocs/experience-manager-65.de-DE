@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 2%
 
 ---
 
@@ -77,7 +80,7 @@ Um die Verwendung eines Formularentwurfsskripts zu veranschaulichen, wird in die
 
 Die Syntax des Skripts in diesem Formularentwurf lautet wie folgt:
 
-```as3
+```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
@@ -121,7 +124,7 @@ Nachdem Sie überprüft haben, ob der Verarbeitungsstatus, der mit einem gesende
 **Siehe auch**
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-Formulardaten[mithilfe der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Berechnen von Formulardaten mithilfe der Web-Service-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)Festlegen der Verbindungseigenschaften[](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)Forms-Dienst-API Schnellaktionen[Anzeigen interaktiver PDF-Formulare](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Formulardaten mithilfe der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Berechnen von Formulardaten mithilfe der Web-Service-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)Festlegen der Verbindungseigenschaften[](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)Forms-Dienst-API Schnellläufer-Beginn[Wiedergeben interaktiver PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Erstellen[](/help/forms/developing/rendering-interactive-pdf-forms.md)[von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Formulardaten mit der Java-API berechnen {#calculate-form-data-using-the-java-api}
 
@@ -145,6 +148,7 @@ Berechnen von Formulardaten mithilfe der Forms API (Java):
       * Ein Zeichenfolgenwert, der die Umgebung einschließlich aller relevanten HTTP-Header angibt. Sie müssen den zu verarbeitenden Inhaltstyp angeben, indem Sie einen oder mehrere Werte für die Variable &quot; `CONTENT_TYPE` Umgebung&quot;angeben. Um beispielsweise XML- und PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt; zum Beispiel `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec` Objekt, das Laufzeitoptionen speichert.
+
       Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Vergewissern Sie sich, dass der Verarbeitungsstatus, der mit einem gesendeten Formular verknüpft ist, `1` durch Aufrufen der `FormsResult` Objektmethode `getAction` erreicht wird. Wenn diese Methode den Wert zurückgibt, `1`wurde die Berechnung durchgeführt und die Daten können an den Client-Webbrowser zurückgeschrieben werden.
@@ -199,6 +203,7 @@ Berechnen von Formulardaten mithilfe der Forms API (Webdienst):
       * Ein leeres `javax.xml.rpc.holders.ShortHolder` Objekt, das von der Methode gefüllt wird.
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder` Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianlagen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder` Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
+
       Die `processFormSubmission` Methode füllt den `FormsResultHolder` Parameter mit den Ergebnissen der Formularübermittlung. Die `processFormSubmission` Methode gibt ein `FormsResult` Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
 
    * Vergewissern Sie sich, dass der Verarbeitungsstatus, der mit einem gesendeten Formular verknüpft ist, `1` durch Aufrufen der `FormsResult` Objektmethode `getAction` erreicht wird. Wenn diese Methode den Wert zurückgibt, `1`wurde die Berechnung durchgeführt und die Daten können an den Client-Webbrowser zurückgeschrieben werden.
@@ -211,4 +216,4 @@ Berechnen von Formulardaten mithilfe der Forms API (Webdienst):
    * Erstellen Sie ein Bytearray und füllen Sie es durch Aufrufen der `BLOB` Objektmethode `getBinaryData` . Diese Aufgabe weist den Inhalt des `FormsResult` Objekts dem Bytearray zu.
    * Rufen Sie die `javax.servlet.http.HttpServletResponse` Methode des `write` Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Bytearray an die `write` Methode.
 
-**Siehe auch** Aufrufen[von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Siehe auch** Aufrufen[von AEM Forms mit der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
