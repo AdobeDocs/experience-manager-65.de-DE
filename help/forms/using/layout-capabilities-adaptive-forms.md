@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 82%
 
 ---
 
@@ -76,7 +79,7 @@ Verwenden Sie dieses Bedienfeldlayout, um in einem Formular eine geführte Navig
 
 Use the `Panel adaptive form` component to provide step-by-step navigation inside a panel. Wenn Sie dieses Layout verwenden, gehen Benutzer erst dann zum nächsten Schritt über, wenn der aktuelle Schritt abgeschlossen ist.
 
-```
+```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
