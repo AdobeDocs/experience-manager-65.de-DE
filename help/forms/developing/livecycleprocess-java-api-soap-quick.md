@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +34,7 @@ Der Java API(SOAP) Quick-Beginn ist für Prozesse verfügbar. Eine *Prozessinsta
 
 [Quick Beginn (SOAP-Modus): Abrufen des Status eines Auftrags mit der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -41,7 +44,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem *MortgageLoan - Prebuild* -Prozess basieren.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -159,7 +162,7 @@ Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem *
 
 Im folgenden Java-Codebeispiel wird eine Prozessinstanz ausgesetzt. Um eine Prozessinstanz erfolgreich aussetzen zu können, benötigen Sie die Prozessaufrufkennung, die beim Aufrufen eines Prozesses mit langer Lebensdauer mithilfe der Aufrufungs-API abgerufen werden kann.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -251,7 +254,7 @@ Im folgenden Java-Codebeispiel wird eine Prozessinstanz ausgesetzt. Um eine Proz
 
 Im folgenden Java-Codebeispiel wird eine ausgesetzte Prozessinstanz Beginn.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -339,7 +342,7 @@ Im folgenden Java-Codebeispiel wird eine ausgesetzte Prozessinstanz Beginn.
 
 Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Bezeichnerwert 756c22860a242fb101ec7a5bc0977fd6 beendet.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -430,7 +433,7 @@ Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Bezeichnerwert 7
 
 Der folgende Java-Code entfernt Daten aus einem Prozess namens *SecureDocument*. Ein Filter wird verwendet, der angibt, Daten für jene Prozessinstanzen zu bereinigen, bei denen die Prozessvariable *inValue* größer als 200 ist.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -537,7 +540,7 @@ Der folgende Java-Code entfernt Daten aus einem Prozess namens *SecureDocument*.
 
 Im folgenden Codebeispiel wird der Status von 10 AEM Forms-Aufträgen abgerufen.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
