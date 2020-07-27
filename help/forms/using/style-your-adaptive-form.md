@@ -8,7 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2079'
+ht-degree: 71%
 
 ---
 
@@ -61,7 +64,7 @@ Der Adaptive Forms Editor bietet mehrere Standarddesigns. Wenn Sie beabsichtigen
 
 ![Adaptives Formular mit dem Umfragedesign](assets/adaptive-form-with-survey-theme.png)
 
-**Abbildung:** *Adaptives Formular mit dem Thema &quot;Umfrage&quot;*
+**Abbildung:** *Adaptives Formular mit dem Thema Umfrage*
 
 ## Schritt 2: Aktualisieren Sie Ihr adaptives Formular {#step-update-your-adaptive-form}
 
@@ -76,6 +79,7 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
    1. Tap logo image in the header component and tap ![cmppr](assets/cmppr.png) properties. Tippen Sie in der Bildeigenschaft auf X, um das vorhandene Logobild zu entfernen.
    1. Tap upload, select the logo.png, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) to save the changes. The image was downloaded in the [Before you start](/help/forms/using/style-your-adaptive-form.md#before-you-start) section.
    1. Tippen Sie auf Kopfzeilentext `We.Retail`und dann auf ![aem_6_3_edit](assets/aem_6_3_edit.png) , **edit**. Ändern Sie den Kopfzeilentext in `we retail`. Wenden Sie fett formatierte Formatierungen nur `we`in an `we retail`.
+
    ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Entfernen Sie Titel und fügen Sie Platzhaltertext hinzu:
@@ -84,6 +88,7 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
    1. Kopieren Sie den Inhalt des Felds **Titel** in das Feld **Platzhaltertext**.
    1. Löschen Sie den Inhalt des Felds **Titel** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Wiederholen Sie die vorherigen drei Schritte für alle Textfelder, das numerische Feld und das E-Mail-Feld im Formular.
+
    ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
 ## Schritt 3: Erstellen Sie ein benutzerdefiniertes Design für Ihr adaptives Formular {#step-create-a-custom-theme-for-your-adaptive-form}
@@ -120,7 +125,7 @@ In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Kompone
 
 Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwechselbares Aussehen. Im Allgemeinen enthält die Kopfzeile das Logo und den Namen der Organisation. Die Fußzeile enthält Copyright-Informationen, die in allen Formularen einer Organisation identisch bleiben. So formatieren Sie Kopf- und Fußzeile des adaptiven Formulars „shipping-address-add-update-form adaptive form“:
 
-1. Navigieren Sie im Bereich „Auswahl“ zur Option **Kopfzeile** > **Text**. Der Bereich „Auswahl“ befindet sich auf der linken Seite des Design-Editors. Wenn das Feld nicht sichtbar ist, tippen Sie auf ![](assets/toggle-side-panel.png)Seitliches Bedienfeld ein/aus.
+1. Navigieren Sie im Bereich „Auswahl“ zur Option **Kopfzeile** > **Text**. Der Bereich „Auswahl“ befindet sich auf der linken Seite des Design-Editors. If the panel is not visible, tap ![toggle-side-panel](assets/toggle-side-panel.png) Toggle Side Panel.
 
 1. Set the following properties in the **Text** accordion and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -176,7 +181,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
@@ -240,7 +245,7 @@ You can use a custom theme to apply an identical style to all the buttons of the
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
@@ -308,7 +313,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
@@ -397,7 +402,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
 <table> 
  <tbody> 
   <tr> 
-   <td>Akkordeon</td> 
+   <td>Accordion</td> 
    <td>Eigenschaft</td> 
    <td>Wert</td> 
   </tr> 
