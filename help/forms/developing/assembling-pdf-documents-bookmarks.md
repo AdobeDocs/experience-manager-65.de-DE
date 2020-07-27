@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: e3f700b52446505224fa4b4688d439750a66f471
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2526'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +30,7 @@ Lesezeichen enthalten die folgenden Eigenschaften:
 
 Für diese Diskussion nehmen Sie an, dass das folgende DDX-Dokument verwendet wird.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
        <PDF result="FinalDoc.pdf">
@@ -44,7 +47,7 @@ In diesem DDX-Dokument gibt das `Bookmarks` Element `doc2` als Wert an. Dieser W
 
 In diesem Thema wird die folgende Sprache für XML-Lesezeichen verwendet, um ein PDF-Dokument mit Lesezeichen zusammenzustellen.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <Bookmarks xmlns="https://ns.adobe.com/pdf/bookmarks" version="1.0">
        <Bookmark>
@@ -113,10 +116,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
 
-Wenn AEM Forms auf einem anderen unterstützten J2EE-Anwendungsserver als JBoss bereitgestellt wird, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Wenn AEM Forms auf einem anderen unterstützten J2EE-Anwendungsserver als JBoss bereitgestellt werden, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt werden. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **PDF Assembler-Client erstellen**
 
@@ -130,7 +133,7 @@ Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werd
 
 Verweisen Sie auf ein PDF-Dokument, dem Lesezeichen hinzugefügt werden. Es spielt keine Rolle, ob das referenzierte PDF-Dokument bereits Lesezeichen enthält. Wenn das `Bookmarks` Element ein untergeordnetes Element des PDF-Quellelements ist, ersetzen die Lesezeichen die bereits in der PDF-Quelle vorhandenen Elemente. Wenn Sie jedoch die vorhandenen Lesezeichen beibehalten möchten, stellen Sie sicher, dass das PDF-Quellelement gleichrangig `Bookmarks` ist. Beispiel:
 
-```as3
+```xml
  <PDF result="foo">
       <PDF source="inDoc"/>
       <Bookmarks source="doc2"/>
@@ -151,7 +154,7 @@ Sie müssen sowohl das PDF-Dokument, dem Lesezeichen hinzugefügt werden, als au
 
 **Festlegen von Laufzeitoptionen**
 
-Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, bei Auftreten eines Fehlers mit der Verarbeitung eines Auftrags fortzufahren. Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec` Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, bei Auftreten eines Fehlers mit der Verarbeitung eines Auftrags fortzufahren. Informationen zu den Laufzeitoptionen, die Sie einstellen können, finden Sie in der `AssemblerOptionSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Zusammenstellen des PDF-Dokuments**
 
@@ -222,6 +225,7 @@ Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler Service 
    * Ein `com.adobe.idp.Document` Objekt, das das zu verwendende DDX-Dokument darstellt
    * Ein `java.util.Map` Objekt, das sowohl das PDF-Dokument als auch das XML-Dokument für das Lesezeichen enthält.
    * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` Objekt, das die Laufzeitoptionen angibt, einschließlich der standardmäßigen Schriftart- und Auftragsprotokollebene
+
    Die `invokeDDX` Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult` Objekt zurück, das die Ergebnisse des Auftrags und alle aufgetretenen Ausnahmen enthält.
 
 1. Speichern Sie das PDF-Dokument mit Lesezeichen.
@@ -250,12 +254,12 @@ Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler-Dienst-A
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` dies durch die IP-Adresse des Hosting-AEM Forms.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
    * Erstellen Sie ein `AssemblerServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -309,6 +313,7 @@ Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler-Dienst-A
    * Ein `BLOB` Objekt, das das DDX-Dokument darstellt
    * Das `MyMapOf_xsd_string_To_xsd_anyType` Array mit den Eingabe-Dokumenten
    * Ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen angibt
+
    Die `invokeDDX` Methode gibt ein `AssemblerResult` Objekt zurück, das die Ergebnisse des Auftrags sowie eventuell auftretende Ausnahmen enthält.
 
 1. Speichern Sie das PDF-Dokument mit Lesezeichen.
@@ -321,4 +326,4 @@ Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler-Dienst-A
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
