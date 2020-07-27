@@ -10,7 +10,10 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '6067'
+ht-degree: 78%
 
 ---
 
@@ -247,7 +250,7 @@ Zu den gebrauchsfertigen Bereichen gehören:
 
 * Registerkarten links
 * Registerkarten oben
-* Akkordeon
+* Accordion
 * Responsiv
 * Assistent
 * Layout für Mobilgeräte
@@ -296,7 +299,7 @@ Mit der Plus-Schaltfläche in der Asset-Bibliothek können Sie den Stil dauerhaf
 
 Wenn Sie einen benutzerdefinierten Namen für einen Stil angeben, ist der Stil an ein Design gebunden und steht nicht mehr für andere Designs zur Verfügung. Löschen eines gespeicherten Stils:
 
-1. On the CANVAS toolbar, click **Theme Options** ![](assets/theme-options.png) > **Manage Styles**.
+1. On the CANVAS toolbar, click **Theme Options** ![theme-options](assets/theme-options.png) > **Manage Styles**.
 1. Wählen Sie im Dialogfeld „Stile verwalten“ einen gespeicherten Stil, klicken Sie auf **Löschen**.
 
    ![Löschen Sie den gespeicherten Stil](assets/manage-styles.png)
@@ -391,8 +394,8 @@ Die Optionen für die Anpassung der Statusstile variieren je nach Komponente.
 <table>
  <tbody>
   <tr>
-   <td><strong>Eigenschaft</strong></td>
-   <td><strong>Verwenden Sie</strong></td>
+   <td><strong>Property</strong></td>
+   <td><strong>Verwenden</strong></td>
   </tr>
   <tr>
    <td><p>Abmessungen und Position</p> </td>
@@ -639,6 +642,7 @@ Zum Anzeigen des generierten CSS stehen die folgenden Optionen zur Verfügung:
       1. Klicken Sie auf der Eigenschaftenseite auf **Erweitert**.
       1. Wählen Sie auf der Registerkarte „Erweitert“ im Clientlib-Feld die Client-Bibliothek aus, die Sie verwenden möchten.
       1. Klicken Sie auf **Speichern**.
+
       Die Formatierung, die Sie in der Client-Library angeben, wird in das Design importiert, das sie verwendet. Beispiel: Geben Sie die Formatierung für das Textfeld, das numerische Feld ein, und wechseln Sie zur Client-Bibliothek. Wenn Sie die Client-Bibliothek im Design importieren, wird die Formatierung für das Textfeld, das numerische Feld und den Schalter importiert. Sie können dann andere Komponenten mithilfe des Design-Editors formatieren.
 Sie können auch ein Design erstellen, Kopien davon erstellen und dann die Formatierung in den kopierten Themen für ähnliche Anwendungsfälle ändern.
 Siehe [Kreieren eines bestimmten Looks mithilfe von Designs](#specific-af-appearance)
