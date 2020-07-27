@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +28,7 @@ Um Zugänglichkeitsprobleme mit Bildschirmlesehilfen zu vermeiden, die die ARIA-
 
 Um das neue Format in HTML5-Forms zu verwenden, markieren Sie die Tabelle als komplex. Um die Tabelle als komplex zu markieren, fügen Sie den `extras`-Tag in die XML-Quelle des Tabellenteilformulars wie folgt hinzu: 
 
-```
+```xml
 </extras>
  <text name="complexTable">1</text>
  </extras>
