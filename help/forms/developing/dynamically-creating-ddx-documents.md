@@ -1,6 +1,6 @@
 ---
-title: Dynamisches Erstellen von DDX-Dokumenten
-seo-title: Dynamisches Erstellen von DDX-Dokumenten
+title: DDDX-Dokumente dynamisch erstellen
+seo-title: DDDX-Dokumente dynamisch erstellen
 description: 'null'
 seo-description: 'null'
 uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
@@ -11,20 +11,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2123'
+ht-degree: 4%
 
 ---
 
 
-# Dynamisches Erstellen von DDX-Dokumenten {#dynamically-creating-ddx-documents}
+# DDDX-Dokumente dynamisch erstellen {#dynamically-creating-ddx-documents}
 
-Sie können ein DDX-Dokument dynamisch erstellen, das zur Durchführung eines Assembler-Vorgangs verwendet werden kann. Durch das dynamische Erstellen eines DDX-Dokuments können Sie Werte im DDX-Dokument verwenden, die während der Laufzeit abgerufen werden. Um ein DDX-Dokument dynamisch zu erstellen, verwenden Sie Klassen, die zur verwendeten Programmiersprache gehören. Wenn Sie beispielsweise Ihre Clientanwendung mit Java entwickeln, verwenden Sie Klassen, die zum `org.w3c.dom.*`Paket gehören. Wenn Sie Microsoft .NET verwenden, verwenden Sie auch Klassen, die zum `System.Xml` Namespace gehören.
+Sie können ein DDX-Dokument dynamisch erstellen, das zur Durchführung eines Assembler-Vorgangs verwendet werden kann. Durch das dynamische Erstellen eines DDX-Dokuments können Sie Werte im DDX-Dokument verwenden, die während der Laufzeit abgerufen werden. Um ein DDX-Dokument dynamisch zu erstellen, verwenden Sie Klassen, die zur verwendeten Programmiersprache gehören. Wenn Sie beispielsweise Ihre Clientanwendung mit Java entwickeln, verwenden Sie Klassen, die zum `org.w3c.dom.*`Paket gehören. Wenn Sie Microsoft .NET verwenden, verwenden Sie ebenfalls Klassen, die zum `System.Xml` Namensraum gehören.
 
-Konvertieren Sie die XML-Datei, bevor Sie das DDX-Dokument an den Assembler-Dienst übergeben können, von einer `org.w3c.dom.Document` Instanz in eine `com.adobe.idp.Document` Instanz. Wenn Sie Webdienste verwenden, konvertieren Sie die XML aus dem Datentyp, der zum Erstellen der XML verwendet wird (z. B. `XmlDocument`), in eine `BLOB` Instanz.
+Bevor Sie das DDX-Dokument an den Assembler-Dienst übergeben können, konvertieren Sie die XML von einer `org.w3c.dom.Document` Instanz in eine `com.adobe.idp.Document` Instanz. Wenn Sie Webdienste verwenden, konvertieren Sie die XML aus dem Datentyp, der zum Erstellen der XML verwendet wird (z. B. `XmlDocument`), in eine `BLOB` Instanz.
 
-Bei dieser Diskussion nehmen Sie an, dass das folgende DDX-Dokument dynamisch erstellt wurde.
+Angenommen, das folgende DDX-Dokument wird dynamisch erstellt.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
       <PDFsFromBookmarks prefix="stmt">
@@ -45,14 +48,14 @@ Dieses DDX-Dokument demontiert ein PDF-Dokument. Es wird empfohlen, sich mit der
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
-So zerlegen Sie ein PDF-Dokument mithilfe eines dynamisch erstellten DDX-Dokuments:
+So zerlegen Sie ein PDF-Dokument mit einem dynamisch erstellten DDX-Dokument:
 
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie einen PDF Assembler-Client.
 1. Erstellen Sie das DDX-Dokument.
 1. Konvertieren Sie das DDX-Dokument.
 1. Legen Sie Laufzeitoptionen fest.
-1. Auflösung des PDF-Dokuments.
+1. Disassemblieren des PDF-Dokuments.
 1. Speichern Sie die zerlegten PDF-Dokumente.
 
 **Projektdateien einschließen**
@@ -64,8 +67,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
 
 **PDF Assembler-Client erstellen**
 
@@ -79,7 +82,7 @@ Erstellen Sie ein DDX-Dokument mit der verwendeten Programmiersprache. Um ein DD
 
 Ein DDX-Dokument, das mithilfe von `org.w3c.dom` Klassen erstellt wird, muss in ein `com.adobe.idp.Document` Objekt konvertiert werden. Um diese Aufgabe bei Verwendung der Java-API auszuführen, verwenden Sie Java XML-Transformationsklassen. Wenn Sie Webdienste verwenden, konvertieren Sie das DDX-Dokument in ein `BLOB` Objekt.
 
-**Zu zerlegendes PDF-Dokument referenzieren**
+**Referenzieren eines zu trennenden PDF-Dokuments**
 
 Um ein PDF-Dokument zu zerlegen, verweisen Sie auf eine PDF-Datei, die das zu zerlegende PDF-Dokument darstellt. Beim Übermitteln an den Assembler-Dienst wird für jedes Lesezeichen der Stufe 1 im Dokument ein separates PDF-Dokument zurückgegeben.
 
@@ -91,13 +94,13 @@ Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes
 
 Disassemblieren Sie das PDF-Dokument, indem Sie den `invokeDDX` Vorgang aufrufen. Übergeben Sie das dynamisch erstellte DDX-Dokument. Der Assembler-Dienst gibt nicht zusammengesetzte PDF-Dokumente innerhalb eines Collection-Objekts zurück.
 
-**Speichern der demontierten PDF-Dokumente**
+**Speichern Sie die zerlegten PDF-Dokumente**
 
-Alle demontierten PDF-Dokumente werden innerhalb eines Collection-Objekts zurückgegeben. Durchsuchen Sie das Sammlungsobjekt und speichern Sie jedes PDF-Dokument als PDF-Datei.
+Alle zerlegten PDF-Dokumente werden innerhalb eines Collection-Objekts zurückgegeben. Durchsuchen Sie das Sammlungsobjekt und speichern Sie jedes PDF-Dokument als PDF-Datei.
 
 **Siehe auch**
 
-[Dynamisches Erstellen eines DDX-Dokuments mit der Java API](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-java-api)
+[Dynamisches Erstellen eines DDX-Dokuments mit der Java-API](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-java-api)
 
 [Dynamisches Erstellen eines DDX-Dokuments mit der Webdienst-API](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
 
@@ -105,9 +108,9 @@ Alle demontierten PDF-Dokumente werden innerhalb eines Collection-Objekts zurüc
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Programmgesteuertes Disassemblieren von PDF-Dokumenten](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
+[Programmatische Demontage von PDF-Dokumenten](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
 
-## Dynamisches Erstellen eines DDX-Dokuments mit der Java API {#dynamically-create-a-ddx-document-using-the-java-api}
+## Dynamisches Erstellen eines DDX-Dokuments mit der Java-API {#dynamically-create-a-ddx-document-using-the-java-api}
 
 Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithilfe der Assembler Service API (Java):
 
@@ -148,14 +151,14 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
    * Füllen Sie das Bytearray, indem Sie die `ByteArrayOutputStream` Objektmethode `toByteArray` aufrufen.
    * Create a `com.adobe.idp.Document` object by using its constructor and passing the byte array.
 
-1. Referenzieren eines zu zerlegenden PDF-Dokuments
+1. Verweisen Sie auf ein zu zerlegendes PDF-Dokument.
 
    * Erstellen Sie ein `java.util.Map` Objekt, das zum Speichern von PDF-Eingabedokumenten mithilfe eines `HashMap` Konstruktors verwendet wird.
    * Erstellen Sie ein `java.io.FileInputStream` Objekt, indem Sie dessen Konstruktor verwenden und die Position des PDF-Dokuments zur Auflösung übergeben.
    * Create a `com.adobe.idp.Document` object. Übergeben Sie das `java.io.FileInputStream` Objekt, das das PDF-Dokument enthält, zur Auflösung.
-   * Fügen Sie dem `java.util.Map` Objekt einen Eintrag hinzu, indem Sie dessen `put` Methode aufrufen und die folgenden Argumente übergeben:
+   * Hinzufügen Sie einen Eintrag zum `java.util.Map` Objekt, indem Sie dessen `put` Methode aufrufen und die folgenden Argumente übergeben:
 
-      * Ein Zeichenfolgenwert, der den Schlüsselnamen darstellt. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen. (Im dynamisch erstellten DDX-Dokument wird der Wert `AssemblerResultPDF.pdf`verwendet.)
+      * Ein Zeichenfolgenwert, der den Schlüsselnamen darstellt. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen. (Im DDX-Dokument, das dynamisch erstellt wird, wird der Wert `AssemblerResultPDF.pdf`verwendet.)
       * Ein `com.adobe.idp.Document` Objekt, das das zu zerlegende PDF-Dokument enthält.
 
 1. Legen Sie Laufzeitoptionen fest.
@@ -163,26 +166,27 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
    * Erstellen Sie ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
    * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec` Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `AssemblerOptionSpec` Methode des `setFailOnError` Objekts auf und übergeben Sie sie `false`.
 
-1. Auflösung des PDF-Dokuments.
+1. Disassemblieren des PDF-Dokuments.
 
    Rufen Sie die `AssemblerServiceClient` Objektmethode `invokeDDX` auf und übergeben Sie die folgenden Werte:
 
    * Ein `com.adobe.idp.Document` Objekt, das das dynamisch erstellte DDX-Dokument darstellt
-   * Ein `java.util.Map` Objekt, das das zu zerlegende PDF-Dokument enthält
-   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` Objekt, das die Laufzeitoptionen angibt, einschließlich der Standardschrift und der Auftragsprotokollebene
+   * Ein `java.util.Map` Objekt, das das zu zerassassemblierende PDF-Dokument enthält
+   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` Objekt, das die Laufzeitoptionen angibt, einschließlich der Standardschriftart und der Auftragsprotokollebene
+
    Die `invokeDDX` Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult` Objekt zurück, das die deassemblierten PDF-Dokumente und alle aufgetretenen Ausnahmen enthält.
 
 1. Speichern Sie die zerlegten PDF-Dokumente.
 
-   Führen Sie zum Abrufen der demontierten PDF-Dokumente die folgenden Schritte aus:
+   So rufen Sie die zerlegten PDF-Dokumente ab:
 
    * Rufen Sie die `AssemblerResult` Methode des `getDocuments` Objekts auf. Diese Methode gibt ein `java.util.Map` Objekt zurück.
-   * Durchlaufen des `java.util.Map` Objekts, bis Sie das resultierende `com.adobe.idp.Document` Objekt gefunden haben.
-   * Rufen Sie die `com.adobe.idp.Document` Methode des `copyToFile` Objekts auf, um das PDF-Dokument zu extrahieren.
+   * Durchlaufen Sie das `java.util.Map` Objekt, bis Sie das resultierende `com.adobe.idp.Document` Objekt gefunden haben.
+   * Rufen Sie die `com.adobe.idp.Document` `copyToFile` Objektmethode auf, um das PDF-Dokument zu extrahieren.
 
 **Siehe auch**
 
-[Kurzanleitung (SOAP-Modus): Dynamisches Erstellen eines DDX-Dokuments mit der Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Dynamisches Erstellen eines DDX-Dokuments mit der Java-API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -190,7 +194,7 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
 
 ## Dynamisches Erstellen eines DDX-Dokuments mit der Webdienst-API {#dynamically-create-a-ddx-document-using-the-web-service-api}
 
-Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithilfe der Assembler Service API (Webdienst):
+Dynamisches Erstellen eines DDX-Dokuments und Aufteilen eines PDF-Dokuments mithilfe der Assembler Service API (Webdienst):
 
 1. Schließen Sie Projektdateien ein.
 
@@ -198,12 +202,12 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` dies durch die IP-Adresse des Hosting-AEM Forms.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
    * Erstellen Sie ein `AssemblerServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -238,10 +242,10 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
 
    * Create a `BLOB` object. Weisen Sie das Byte-Array dem `BLOB` Objektfeld `MTOM` zu.
 
-1. Referenzieren eines zu zerlegenden PDF-Dokuments
+1. Verweisen Sie auf ein zu zerlegendes PDF-Dokument.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB` Objekt wird zum Speichern des PDF-Eingabedokuments verwendet. Dieses `BLOB` Objekt wird als `invokeOneDocument` Argument an das Objekt übergeben.
-   * Create a `System.IO.FileStream` object by invoking its constructor. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Eingabedokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
+   * Create a `System.IO.FileStream` object by invoking its constructor. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Eingabedatums und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Bytearray, das den Inhalt des `System.IO.FileStream` Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` Objekteigenschaft `Length` abrufen.
    * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream` Objektmethode aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben `Read` .
    * Füllen Sie das `BLOB` Objekt, indem Sie dessen `MTOM` Eigenschaft den Inhalt des Byte-Arrays zuweisen.
@@ -249,27 +253,28 @@ Dynamisches Erstellen eines DDX-Dokuments und Zerlegen eines PDF-Dokuments mithi
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem zum `AssemblerOptionSpec` Objekt gehörenden Datenmember einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, weisen Sie ihn `false` dem `AssemblerOptionSpec` Datenmember des `failOnError` Objekts zu.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenmember, der zum `AssemblerOptionSpec` Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, weisen Sie ihn `false` dem `AssemblerOptionSpec` Datenmember des `failOnError` Objekts zu.
 
-1. Auflösung des PDF-Dokuments.
+1. Disassemblieren des PDF-Dokuments.
 
    Rufen Sie die `AssemblerServiceClient` Objektmethode `invokeDDX` auf und übergeben Sie die folgenden Werte:
 
    * Ein `BLOB` Objekt, das das dynamisch erstellte DDX-Dokument darstellt
-   * Das `mapItem` Array, das das PDF-Eingabedokument enthält
+   * Das `mapItem` Array, das das PDF-Dokument für die Eingabe enthält
    * Ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen angibt
+
    Die `invokeDDX` Methode gibt ein `AssemblerResult` Objekt zurück, das die Ergebnisse des Auftrags und alle aufgetretenen Ausnahmen enthält.
 
 1. Speichern Sie die zerlegten PDF-Dokumente.
 
    So rufen Sie die neu erstellten PDF-Dokumente ab:
 
-   * Greifen Sie auf das `AssemblerResult` Feld des `documents` Objekts zu, bei dem es sich um ein `Map` Objekt mit den zerlegten PDF-Dokumenten handelt.
-   * Durchlaufen Sie das `Map` Objekt, um jedes Zieldokument abzurufen. Anschließend können Sie das Array-Element `value` in eine `BLOB`umwandeln.
+   * Greifen Sie auf das `AssemblerResult` Objektfeld `documents` zu, bei dem es sich um ein `Map` Objekt mit den zerlegten PDF-Dokumenten handelt.
+   * Durchlaufen Sie das `Map` Objekt, um jedes resultierende Dokument abzurufen. Anschließend können Sie das Array-Element `value` in eine `BLOB`umwandeln.
    * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `BLOB` Objekteigenschaft `MTOM` zugreifen. Dadurch wird ein Bytearray zurückgegeben, das Sie in eine PDF-Datei schreiben können.
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aufrufen mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
