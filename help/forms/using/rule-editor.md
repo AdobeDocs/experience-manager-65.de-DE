@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6822'
+ht-degree: 76%
 
 ---
 
@@ -472,6 +475,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
    * Wählen Sie **Plus** aus dem Feld **Operator wählen**.
 
    * Select or drag-drop from the Forms Object tab the **Spouse Salary** field in the other **Drop object or select here** field.
+
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
 1. Next, tap in the highlighted area around the expression field and tap **Extend Expression**.
@@ -499,6 +503,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
    * Wählen Sie **Ist gleich** aus dem Feld **Operator wählen**.
 
    * Select String in the other **Drop object or select here** field and specify **Married** in the **Enter a String** field.
+
    Die Regel wird schließlich wie folgt im Regeleditor angezeigt.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Tippen Sie auf **Fertig**, um die Regel zu speichern.
@@ -545,30 +550,40 @@ Weitere Informationen finden Sie unter [usejsdoc.org](https://usejsdoc.org/).
 
 Unterstützte `jsdoc` Tags:
 
-* **Private** Syntax: Eine `@private`private Funktion ist nicht als benutzerdefinierte Funktion enthalten.
+* **Private**Syntax: 
+Eine private Funktion ist nicht als benutzerdefinierte Funktion enthalten.`@private`
+Eine private Funktion ist nicht als benutzerdefinierte Funktion enthalten.
 
-* **Namenssyntax**: Sie können `@name funcName <Function Name>`alternativ `,` Folgendes verwenden: `@function funcName <Function Name>` oder **** `@func` `funcName <Function Name>`.
+* **Namenssyntax**: 
+Alternativ `@name funcName <Function Name>`können `,` Sie Folgendes verwenden: `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>`.
    `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
    `<Function Name>` ist der Anzeigename der Funktion.
 
-* **Mitgliedersyntax**: Fügt der Funktion einen Namensraum `@memberof namespace`hinzu.
+* **Mitgliedersyntax**: 
+Fügt der Funktion einen Namensraum hinzu.`@memberof namespace`
+Fügt der Funktion einen Namensraum hinzu.
 
-* **Parametersyntax**: `@param {type} name <Parameter Description>`Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` oder **** `@arg``{type}` `name <Parameter Description>`.
+* **Parametersyntax**: 
+Alternativ können Sie Folgendes verwenden: `@param {type} name <Parameter Description>`
+Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` **las** `@arg` . `{type}` `name <Parameter Description>`.
 Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens). 
    `{type}` stellt den Parametertyp dar. Zugelassene Parametertypen sind: 
 
    1. Zeichenfolge
    1. number
    1. Boolesch
+
    Alle anderen Parametertypen fallen in eine der oben genannten Kategorien.  „None“ wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Für die Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Syntax des Rückgabetyps**: `@return {type}`Alternativ können Sie auch `@returns {type}`verwenden.
+* **Syntax des Rückgabetyps**: 
+Alternativ können Sie auch `@return {type}`Alternativ verwenden `@returns {type}`.
 Fügt Informationen zur Funktion hinzu, z. B. ihren Zweck.
 {type} steht für den Rückgabetyp der Funktion. Zugelassene Rückgabetypen sind: 
 
    1. Zeichenfolge
    1. number
    1. Boolesch
+
    Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien.  „None“ wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Für Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
 >[!NOTE]
@@ -605,7 +620,7 @@ To open a form in edit mode, select a form and tap **Open**.
 
 **Funktionsanweisung**
 
-```
+```javascript
 function area(len) {
     return len*len;
 }
@@ -615,7 +630,7 @@ Diese Funktion wird ohne `jsdoc`-Kommentare einbezogen.
 
 **Funktionsausdruck**
 
-```
+```javascript
 var area;
 //Some codes later
 /** */
