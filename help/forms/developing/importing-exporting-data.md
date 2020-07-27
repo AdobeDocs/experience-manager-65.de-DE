@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2742'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Info zum Formulardatenintegrationsdienst {#about-the-form-data-integration-service}
 
-Der Forms Data Integration-Dienst kann Daten in ein PDF-Formular importieren und Daten aus einem PDF-Formular exportieren. Der Import- und Exportvorgang unterstützt zwei Arten von PDF-Formularen:
+Der Forms Data Integration-Dienst kann Daten in ein PDF-Formular importieren und Daten aus einem PDF-Formular exportieren. Die Ein- und Ausfuhrvorgänge unterstützen zwei Arten von PDF forms:
 
 * Ein Acrobat-Formular (in Acrobat erstellt) ist ein PDF-Dokument, das Formularfelder enthält.
 * Ein (in Designer erstelltes) Adobe XML-Formular ist ein PDF-Dokument, das der XML-Formulararchitektur (XFA) entspricht.
@@ -31,8 +34,8 @@ Formulardaten können je nach Typ des PDF-Formulars in einem der folgenden Forma
 
 Sie können diese Aufgaben mithilfe des Formulardatenintegrationsdiensts ausführen:
 
-* Daten in PDF-Formulare importieren Weitere Informationen finden Sie unter [Formulardaten](importing-exporting-data.md#importing-form-data)importieren.
-* Daten aus PDF-Formularen exportieren Weitere Informationen finden Sie unter [Exportieren von Formulardaten](importing-exporting-data.md#exporting-form-data).
+* Daten in PDF forms importieren. Weitere Informationen finden Sie unter [Importieren von Formulardaten](importing-exporting-data.md#importing-form-data).
+* Exportieren Sie Daten von PDF forms. Weitere Informationen finden Sie unter [Exportieren von Formulardaten](importing-exporting-data.md#exporting-form-data).
 
 >[!NOTE]
 >
@@ -40,15 +43,15 @@ Sie können diese Aufgaben mithilfe des Formulardatenintegrationsdiensts ausfüh
 
 ## Formulardaten importieren {#importing-form-data}
 
-Sie können Formulardaten mithilfe des Dienstes &quot;Formulardatenintegration&quot;in interaktive PDF-Formulare importieren. Ein interaktives PDF-Formular ist ein PDF-Dokument, das ein oder mehrere Felder zum Erfassen von Informationen eines Benutzers oder zum Anzeigen benutzerdefinierter Informationen enthält. Der Formulardatenintegrationsdienst unterstützt keine Formularberechnungen, Überprüfungen oder Skripten.
+Sie können Formulardaten mithilfe des Formulardatenintegrationsdiensts in interaktive PDF forms importieren. Ein interaktives PDF-Formular ist ein PDF-Dokument, das ein oder mehrere Felder zum Erfassen von Informationen eines Benutzers oder zum Anzeigen benutzerdefinierter Informationen enthält. Der Formulardatenintegrationsdienst unterstützt keine Formularberechnungen, Überprüfungen oder Skripten.
 
-Um Daten in ein in Designer erstelltes Formular zu importieren, müssen Sie auf eine gültige XDP-XML-Datenquelle verweisen. Betrachten Sie das folgende Beispiel für einen Hypothekenantrag.
+Um Daten in ein in Designer erstelltes Formular zu importieren, müssen Sie auf eine gültige XDP-XML-Datenquelle verweisen. Betrachten Sie das folgende Beispiel für ein Hypothekenantragsformular.
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Um Datenwerte in dieses Formular zu importieren, müssen Sie über eine gültige XDP-XML-Datenquelle verfügen, die dem Formular entspricht. Sie können keine beliebige XML-Datenquelle verwenden, um Daten mit dem Formulardatenintegrationsdienst in ein Formular zu importieren. Der Unterschied zwischen einer beliebigen XML-Datenquelle und einer XDP-XML-Datenquelle besteht darin, dass eine XDP-Datenquelle der XML Forms Architecture (XFA) entspricht. Die folgende XML stellt eine XDP-XML-Datenquelle dar, die dem Musterhypothekenantragsformular entspricht.
+Um Datenwerte in dieses Formular zu importieren, müssen Sie über eine gültige XDP-XML-Datenquelle verfügen, die dem Formular entspricht. Sie können keine beliebige XML-Datenquelle verwenden, um Daten mit dem Formulardatenintegrationsdienst in ein Formular zu importieren. Der Unterschied zwischen einer beliebigen XML-Datenquelle und einer XDP-XML-Datenquelle besteht darin, dass eine XDP-Datenquelle der XML Forms Architecture (XFA) entspricht. Die folgende XML-Datei stellt eine XDP-XML-Datenquelle dar, die dem Musterhypothekenantragsformular entspricht.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" ?>
  - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
  - <xfa:data>
@@ -90,7 +93,7 @@ So importieren Sie Formulardaten in ein PDF-Formular:
 1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie einen Client des Service für die Formulardatenintegration.
 1. Verweisen Sie auf ein PDF-Formular.
-1. Referenzieren einer XML-Datenquelle.
+1. Verweisen Sie auf eine XML-Datenquelle.
 1. Daten in das PDF-Formular importieren.
 1. Speichern Sie das PDF-Formular als PDF-Datei.
 
@@ -103,8 +106,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -112,7 +115,7 @@ For information about the location of these JAR files, see [Including AEM Forms 
 
 Bevor Sie Daten programmgesteuert in eine PDF-Formular-Client-API importieren können, müssen Sie einen Data Integration-Dienstclient erstellen. Beim Erstellen eines Dienstclients definieren Sie Verbindungseinstellungen, die zum Aufrufen eines Dienstes erforderlich sind. Weitere Informationen finden Sie unter [Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)festlegen.
 
-**PDF-Formular referenzieren**
+**Referenzieren eines PDF-Formulars**
 
 Um Daten in ein PDF-Formular zu importieren, müssen Sie entweder auf ein XML-Formular verweisen, das in Designer erstellt wurde, oder auf ein Acrobat-Formular, das in Acrobat erstellt wurde.
 
@@ -138,7 +141,7 @@ Nachdem Sie Daten in ein Formular importiert haben, können Sie das Formular als
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API für den Formulardatenintegrationsdienst - Kurzanleitungen](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
+[Beginn zur Forms Data Integration Service API](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
 
 [Exportieren von Formulardaten](importing-exporting-data.md#exporting-form-data)
 
@@ -148,7 +151,7 @@ Importieren Sie Formulardaten mit der Formular-Datenintegration-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Schließen Sie Client-JAR-Dateien wie &quot;adobe-formdataintegration-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie &quot;adobe-formdataintegration-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen Client des Service für die Formulardatenintegration.
 
@@ -160,7 +163,7 @@ Importieren Sie Formulardaten mit der Formular-Datenintegration-API (Java):
    * Erstellen Sie ein Objekt `java.io.FileInputStream`, indem Sie den Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Formulars angibt.
    * Erstellen Sie ein `com.adobe.idp.Document` Objekt, in dem das PDF-Formular mithilfe des `com.adobe.idp.Document` Konstruktors gespeichert wird. Übergeben Sie das `java.io.FileInputStream` Objekt, das das PDF-Formular enthält, an den Konstruktor.
 
-1. Referenzieren einer XML-Datenquelle.
+1. Verweisen Sie auf eine XML-Datenquelle.
 
    * Erstellen Sie ein `java.io.FileInputStream` Objekt mithilfe des Konstruktors und übergeben Sie einen Zeichenfolgenwert, der den Speicherort der XML-Datei angibt, die die in das Formular zu importierenden Daten enthält.
    * Erstellen Sie ein `com.adobe.idp.Document` Objekt, das Formulardaten mithilfe des `com.adobe.idp.Document` Konstruktors speichert. Übergeben Sie das `java.io.FileInputStream` Objekt, das Formulardaten enthält, an den Konstruktor.
@@ -171,6 +174,7 @@ Importieren Sie Formulardaten mit der Formular-Datenintegration-API (Java):
 
    * Das `com.adobe.idp.Document` Objekt, in dem das PDF-Formular gespeichert wird.
    * Das `com.adobe.idp.Document` Objekt, in dem Formulardaten gespeichert werden.
+
    Die `importData` Methode gibt ein `com.adobe.idp.Document` Objekt zurück, das ein PDF-Formular speichert, das die Daten in der XML-Datenquelle enthält.
 
 1. Speichern Sie das PDF-Formular als PDF-Datei.
@@ -182,7 +186,7 @@ Importieren Sie Formulardaten mit der Formular-Datenintegration-API (Java):
 
 [Zusammenfassung der Schritte](importing-exporting-data.md#summary-of-steps)
 
-[Kurzanleitung (SOAP-Modus): Formulardaten mit der Java-API importieren](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Formulardaten mit der Java-API importieren](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -198,12 +202,12 @@ Importieren Sie Formulardaten mit der Formulardatenintegration-API (Webdienst):
 
    >[!NOTE]
    >
-   >Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` dies durch die IP-Adresse des Hosting-AEM Forms.
 
 1. Erstellen Sie einen Client des Service für die Formulardatenintegration.
 
    * Create a `FormDataIntegrationClient` object by using its default constructor.
-   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `FormDataIntegrationClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -216,12 +220,12 @@ Importieren Sie Formulardaten mit der Formulardatenintegration-API (Webdienst):
 1. Verweisen Sie auf ein PDF-Formular.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Dieses `BLOB` Objekt wird zum Speichern des PDF-Formulars verwendet.
-   * Create a `System.IO.FileStream` object by invoking its constructor. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Formulars und den Modus angibt, in dem die Datei geöffnet werden soll.
+   * Create a `System.IO.FileStream` object by invoking its constructor. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Formulars und den Modus, in dem die Datei geöffnet werden soll, angibt.
    * Erstellen Sie ein Bytearray, das den Inhalt des `System.IO.FileStream` Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` Objekteigenschaft `Length` abrufen.
    * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream` Objektmethode `Read` aufrufen. Übergeben Sie das Bytearray, die Startposition und die zu lesende Stream-Länge.
    * Füllen Sie das `BLOB` Objekt, indem Sie seinem `MTOM` Feld den Inhalt des Byte-Arrays zuweisen.
 
-1. Referenzieren einer XML-Datenquelle.
+1. Verweisen Sie auf eine XML-Datenquelle.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Dieses `BLOB` Objekt dient zum Speichern der in das Formular importierten Daten.
    * Create a `System.IO.FileStream` object by invoking its constructor. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort der XML-Datei angibt, die zu importierende Daten enthält, und den Modus, in dem die Datei geöffnet werden soll.
@@ -235,12 +239,13 @@ Importieren Sie Formulardaten mit der Formulardatenintegration-API (Webdienst):
 
    * Das `BLOB` Objekt, in dem das PDF-Formular gespeichert wird.
    * Das `BLOB` Objekt, in dem Formulardaten gespeichert werden.
+
    Die `importData` Methode gibt ein `BLOB` Objekt zurück, das ein PDF-Formular speichert, das die Daten in der XML-Datenquelle enthält.
 
 1. Speichern Sie das PDF-Formular als PDF-Datei.
 
    * Erstellen Sie ein `System.IO.FileStream` Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort der PDF-Datei darstellt.
-   * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB` Objekts speichert, das von der `importData` Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB` Objektfelds abrufen `MTOM` .
+   * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB` Objekts speichert, das von der `importData` Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB` Objektfelds `MTOM` abrufen.
    * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` Objektmethode aufrufen und das Bytearray `Write` übergeben.
 
@@ -248,7 +253,7 @@ Importieren Sie Formulardaten mit der Formulardatenintegration-API (Webdienst):
 
 [Zusammenfassung der Schritte](importing-exporting-data.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Exportieren von Formulardaten {#exporting-form-data}
 
@@ -277,14 +282,14 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
-* jbossall-client.jar (Erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
+* adobe-utilities.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
+* jbossall-client.jar (Erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
 
 **Client des Dienstes &quot;Formulardatenintegration&quot;erstellen**
 
 Bevor Sie Daten programmgesteuert in eine PDF formClient-API importieren können, müssen Sie einen Data Integration-Dienstclient erstellen. Beim Erstellen eines Dienstclients definieren Sie Verbindungseinstellungen, die zum Aufrufen eines Dienstes erforderlich sind. Weitere Informationen finden Sie unter [Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)festlegen.
 
-**PDF-Formular referenzieren**
+**Referenzieren eines PDF-Formulars**
 
 Um Daten aus einem PDF-Formular zu exportieren, müssen Sie auf ein PDF-Formular verweisen, das in Designer oder Acrobat erstellt wurde und Formulardaten enthält. Wenn Sie versuchen, Daten aus einem leeren PDF-Formular zu exportieren, erhalten Sie ein leeres XML-Schema.
 
@@ -294,7 +299,7 @@ Nachdem Sie auf ein PDF-Formular mit Formulardaten verwiesen haben, können Sie 
 
 **Formulardaten als XML-Datei speichern**
 
-Nach dem Exportieren der Formulardaten können Sie die Daten als XML-Datei speichern. Nach dem Speichern als XML-Datei können Sie die XML-Datei in einem XML-Viewer öffnen, um die Formulardaten anzuzeigen.
+Nach dem Exportieren der Formulardaten können Sie die Daten als XML-Datei speichern. Nach dem Speichern als XML-Datei können Sie die XML-Datei in einem XML-Viewer öffnen, um die Formulardaten Ansicht.
 
 **Siehe auch**
 
@@ -306,7 +311,7 @@ Nach dem Exportieren der Formulardaten können Sie die Daten als XML-Datei speic
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API für den Formulardatenintegrationsdienst - Kurzanleitungen](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
+[Beginn zur Forms Data Integration Service API](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
 
 [Formulardaten importieren](importing-exporting-data.md#importing-form-data)
 
@@ -316,7 +321,7 @@ Exportieren Sie Formulardaten mithilfe der Formular-Datenintegration-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Schließen Sie Client-JAR-Dateien wie &quot;adobe-formdataintegration-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie &quot;adobe-formdataintegration-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen Client des Service für die Formulardatenintegration.
 
@@ -341,7 +346,7 @@ Exportieren Sie Formulardaten mithilfe der Formular-Datenintegration-API (Java):
 
 [Zusammenfassung der Schritte](importing-exporting-data.md#summary-of-steps)
 
-[Kurzanleitung (SOAP-Modus): Exportieren von Formulardaten mit der Java-API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Exportieren von Formulardaten mit der Java-API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -355,12 +360,12 @@ Exportieren Sie Formulardaten mithilfe der Formulardatenintegration-API (Webdien
 
    Erstellen Sie ein Microsoft .NET-Projekt, das MTOM verwendet. Stellen Sie sicher, dass Sie die folgende WSDL-Definition verwenden: `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
 
-   * Ersetzen Sie dies `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   * Ersetzen Sie `localhost` dies durch die IP-Adresse des Hosting-AEM Forms.
 
 1. Erstellen Sie einen Client des Service für die Formulardatenintegration.
 
    * Create a `FormDataIntegrationClient` object by using its default constructor.
-   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL angibt, an den AEM Forms-Dienst (z. B. `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
+   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen. Geben Sie jedoch `?blob=mtom` die Verwendung von MTOM an.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `FormDataIntegrationClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
@@ -373,7 +378,7 @@ Exportieren Sie Formulardaten mithilfe der Formulardatenintegration-API (Webdien
 1. Verweisen Sie auf ein PDF-Formular.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Dieses `BLOB` Objekt dient zum Speichern des PDF-Formulars, aus dem Daten exportiert werden.
-   * Create a `System.IO.FileStream` object by invoking its constructor. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Formulars und den Modus angibt, in dem die Datei geöffnet werden soll.
+   * Create a `System.IO.FileStream` object by invoking its constructor. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Formulars und den Modus, in dem die Datei geöffnet werden soll, angibt.
    * Erstellen Sie ein Bytearray, das den Inhalt des `System.IO.FileStream` Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` Objekteigenschaft `Length` abrufen.
    * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream` Objektmethode aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben `Read` .
    * Füllen Sie das `BLOB` Objekt, indem Sie seinem `MTOM` Feld den Inhalt des Byte-Arrays zuweisen.
@@ -385,7 +390,7 @@ Exportieren Sie Formulardaten mithilfe der Formulardatenintegration-API (Webdien
 1. Speichern Sie das PDF-Formular als PDF-Datei.
 
    * Erstellen Sie ein `System.IO.FileStream` Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Speicherort der XML-Datei darstellt.
-   * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB` Objekts speichert, das von der `exportData` Methode zurückgegeben wurde. Füllen Sie das Bytearray, indem Sie den Wert des `BLOB` Objektfelds abrufen `MTOM` .
+   * Erstellen Sie ein Bytearray, das den Dateninhalt des `BLOB` Objekts speichert, das von der `exportData` Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB` Objektfelds `MTOM` abrufen.
    * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine XML-Datei, indem Sie die `System.IO.BinaryWriter` Objektmethode aufrufen und das Bytearray `Write` übergeben.
 
@@ -393,6 +398,6 @@ Exportieren Sie Formulardaten mithilfe der Formulardatenintegration-API (Webdien
 
 [Zusammenfassung der Schritte](importing-exporting-data.md#summary-of-steps)
 
-[Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aufrufen mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
