@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 75%
 
 ---
 
@@ -27,7 +30,7 @@ Um Adobe Sign mit AEM Forms zu verwenden, konfigurieren Sie Adobe Sign in AEM Cl
 
 Um Adobe Sign mit AEM Forms zu integrieren, benötigen Sie Folgendes:
 
-* Ein gültiges[ Adobe Sign-Entwicklerkonto.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html) 
+* Ein gültiges[ Adobe Sign-Entwicklerkonto.](https://acrobat.adobe.com/de/de/why-adobe/developer-form.html) 
 * Einen[ SSL aktivierten](/help/sites-administering/ssl-by-default.md) AEM Forms-Server.
 * Eine[ Adobe Sign API-Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Anmeldeinformationen (Client-ID und Client Secret) der Adobe Sign API-Anwendung.
@@ -36,10 +39,10 @@ Um Adobe Sign mit AEM Forms zu integrieren, benötigen Sie Folgendes:
 
 Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus, um Adobe Sign mit AEM Forms in der Autoreninstanz zu konfigurieren:
 
-1. On AEM Forms author instance, navigate to **Tools** ![](assets/hammer.png) > **General** > **Configuration Browser**.
+1. On AEM Forms author instance, navigate to **Tools** ![hammer](assets/hammer.png) > **General** > **Configuration Browser**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. Es wird ein Konfigurationscontainer für Cloud-Dienste erstellt.
-1. Navigate to **Tools** ![](assets/hammer.png) > **Cloud Services** > **Adobe Sign** and select the configuration container you created in the above step.
+1. Navigate to **Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign** and select the configuration container you created in the above step.
 
    >[!NOTE]
    >
@@ -61,6 +64,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    * aggrement_send
    * widget_write
    * workflow_read
+
    Schritt-für-Schritt-Anleitungen zum Konfigurieren der OAuth-Einstellungen für eine Adobe Sign-Anwendung und zum Abrufen der Schlüssel finden Sie in der Entwicklerdokumentation [Konfigurieren von oAuth-Einstellungen für die Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md).
 
    ![OAuth Config](assets/oauthconfig_new.png)
