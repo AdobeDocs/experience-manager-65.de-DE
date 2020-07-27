@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 51%
@@ -81,7 +81,7 @@ In diesem Verfahren gilt:
    `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Type `changeit` as the password. Dieses Kennwort ist das Standardkennwort für Java-Installationen. Eventuell wurde es von Ihrem Systemadministrator geändert.
-1. When prompted for `Trust this certificate? [no]`:, type `yes`. Daraufhin wird die Bestätigung „Certificate was added to keystore“ angezeigt.
+1. Geben Sie bei Aufforderung `Trust this certificate? [no]`: `yes`ein. Daraufhin wird die Bestätigung „Certificate was added to keystore“ angezeigt.
 1. Wenn Sie die Verbindung über SSL von Workbench aus herstellen, müssen Sie das Zertifikat auf dem Workbench-Computer installieren.
 1. Öffnen Sie in einem Texteditor die folgende Dateien zur Bearbeitung:
 
@@ -94,7 +94,7 @@ In diesem Verfahren gilt:
 1. 
    * **Für Einzelserver** Fügen Sie in der Datei „lc_&lt;dbaname/tunkey>.xml“ Folgendes nach dem Abschnitt „&lt;security-realms>“ ein:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -110,13 +110,13 @@ In diesem Verfahren gilt:
 
    Fügen Sie Folgendes dem &lt;server>-Abschnitt hinzu, der nach dem obigen Code steht:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
    * **Fügen Sie für Servercluster** im [Anwendungsserver-Stammordner]\domain\configuration\host.xml auf allen Knoten den folgenden Abschnitt hinzu:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -132,7 +132,7 @@ In diesem Verfahren gilt:
 
    Fügen Sie Folgendes dem &lt;server>-Abschnitt hinzu, der nach dem obigen Code steht:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
