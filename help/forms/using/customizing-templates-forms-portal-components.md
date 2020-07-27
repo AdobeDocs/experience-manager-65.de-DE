@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 71%
 
 ---
 
@@ -43,6 +46,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für 
       * Bereich „Drafts“: /libs/fd/fp/draftsTemplate
       * Bereich „Submissions“: /libs/fd/fp/submissionsTemplate
    * Komponente „Link“: /libs/fd/fp/linkTemplate
+
    Fügen Sie einen Titel hinzu, der während der Auswahl der Layoutvorlagen angezeigt werden soll.
 
    >[!NOTE]
@@ -59,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für 
 
 Beim Folgenden Beispiel handelt es sich um eine Implementierung einer benutzerdefinierten Vorlage, bei der Forms Portal ein benutzerdefiniertes Geometrixx Gov Card-Layout von der Komponente „Search &amp; Lister“ abruft.
 
-```mxml
+```xml
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
