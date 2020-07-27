@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ Java API Quick Beginn (SOAP) sind für die Sicherungs- und Wiederherstellungs-Di
 
 [Quick Beginn: Sicherungsmodus mithilfe der Java-API(SOAP) verlassen](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Das folgende Java-Codebeispiel tritt zwei Stunden lang mit einer eindeutigen Beschriftung in den Sicherungsmodus ein. Nach Ablauf der Sicherungszeit oder beim expliziten Beenden des Sicherungsmodus kehrt der Formularserver zum Bereinigen der Dateien aus der Datenspeicherung des globalen Dokuments zurück. (Siehe [Eingeben des Sicherungsmodus auf dem Formularserver](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ Das folgende Java-Codebeispiel tritt zwei Stunden lang mit einer eindeutigen Bes
 
 Im folgenden Java-Codebeispiel wird Forms Server explizit dazu veranlasst, den Sicherungsmodus zu deaktivieren und zu den Bereinigungsdateien aus der Datenspeicherung des globalen Dokuments zurückzukehren. (Siehe Sicherungsmodus [auf dem Formularserver](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)verlassen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
