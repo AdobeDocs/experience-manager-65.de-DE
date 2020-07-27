@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '3909'
+ht-degree: 98%
 
 ---
 
@@ -732,7 +735,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td>Die Festlegung des Werts zur Laufzeit wird nicht unterstützt</td>
   </tr>
   <tr>
-   <td>value</td>
+   <td>Wert</td>
    <td>Das value-Objekt umfasst eine Dateninhaltseinheit.<br /> </td>
    <td> </td>
   </tr>
@@ -1259,7 +1262,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Diese Acrobat-API sendet eine Warnmeldung als JavaScript-Popup.</td>
+   <td>Diese Acrobat-API sendet eine Warnmeldung über das JavaScript-Popup.</td>
    <td> </td>
   </tr>
   <tr>
