@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2304'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +27,9 @@ Mit dem Forms-Dienst können Sie eine Symbolleiste anpassen, die mit einem HTML-
 
 >[!NOTE]
 >
->Dieser URI-Speicherort befindet sich in der Datei &quot;adobe-forms-core.jar&quot;, die sich in der Datei &quot;adobe-forms-dsc.jar&quot;befindet. Die Datei &quot;adobe-forms-dsc.jar&quot;befindet sich unter C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). Sie können ein Dateiextrahierungstool wie Win RAR verwenden, um das adobe zu öffnen.
+>Dieser URI-Speicherort befindet sich in der Datei &quot;adobe-forms-core.jar&quot;, die sich in der Datei &quot;adobe-forms-dsc.jar&quot;befindet. Die Datei &quot;adobe-forms-dsc.jar&quot;befindet sich unter C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). Sie können ein Dateiwerkzeug wie Win RAR verwenden, um das adobe zu öffnen.
 
-Sie können die Datei &quot;fscmenu.xml&quot;von dieser Position aus kopieren, sie an Ihre Anforderungen anpassen und sie dann an einem benutzerdefinierten URI-Speicherort ablegen. Legen Sie dann mithilfe der Forms Service API Laufzeitoptionen fest, die dazu führen, dass der Forms-Dienst die Datei &quot;fscmenu.xml&quot;vom angegebenen Speicherort aus verwendet. Diese Aktionen führen dazu, dass der Forms-Dienst ein HTML-Formular mit einer benutzerdefinierten Symbolleiste wiedergibt.
+Sie können die Datei &quot;fscmenu.xml&quot;von dieser Position aus kopieren, sie an Ihre Anforderungen anpassen und sie dann an einem benutzerdefinierten URI-Speicherort ablegen. Legen Sie dann mithilfe der Forms-Dienst-API Laufzeitoptionen fest, die dazu führen, dass der Forms-Dienst die Datei &quot;fscmenu.xml&quot;vom angegebenen Speicherort aus verwendet. Diese Aktionen führen dazu, dass der Forms-Dienst ein HTML-Formular mit einer benutzerdefinierten Symbolleiste wiedergibt.
 
 Zusätzlich zur Datei &quot;fscmenu.xml&quot;müssen Sie auch die folgenden Dateien abrufen:
 
@@ -41,7 +44,7 @@ fscJS ist das Java-Skript, das jedem Knoten zugeordnet ist. Es ist erforderlich,
 
 fscCSS ist ein Stylesheet, das mit einem bestimmten Knoten verknüpft ist. Die Stile in den CSS-Dateien geben das Erscheinungsbild der Symbolleiste an. *fscVCSS* ist ein Stylesheet für eine vertikale Symbolleiste, die links neben dem wiedergegebenen HTML-Formular angezeigt wird. *fscIECSS* ist ein Stylesheet, das für HTML-Formulare verwendet wird, die in Internet Explorer wiedergegeben werden.
 
-Stellen Sie sicher, dass in der Datei &quot;fscmenu.xml&quot;auf alle oben genannten Dateien verwiesen wird. Das heißt, in der Datei &quot;fscmenu.xml&quot;geben Sie URI-Speicherorte an, die auf diese Dateien verweisen, damit der Forms-Dienst sie finden kann. Standardmäßig sind diese Dateien an URI-Positionen verfügbar, beginnend mit internen Suchbegriffen `FSWebRoot` oder `ApplicationWebRoot`.
+Vergewissern Sie sich, dass in der Datei &quot;fscmenu.xml&quot;auf alle oben genannten Dateien verwiesen wird. Das heißt, in der Datei &quot;fscmenu.xml&quot;geben Sie URI-Speicherorte an, die auf diese Dateien verweisen, damit der Forms-Dienst sie finden kann. Standardmäßig sind diese Dateien an URI-Positionen verfügbar, beginnend mit internen Suchbegriffen `FSWebRoot` oder `ApplicationWebRoot`.
 
 Um die Symbolleiste anzupassen, ersetzen Sie die Suchbegriffe mit dem externen Suchbegriff `FSToolBarURI`. Dieser Suchbegriff stellt den URI dar, der zur Laufzeit an den Forms-Dienst übergeben wird (dieser Ansatz wird weiter unten in diesem Abschnitt gezeigt).
 
@@ -49,13 +52,13 @@ Sie können auch die absoluten Speicherorte dieser JS- und CSS-Dateien angeben, 
 
 >[!NOTE]
 >
->Es wird nicht empfohlen, die Arten zu mischen, auf die diese Dateien verwiesen werden. Das heißt, alle URIs sollten entweder mit dem `FSToolBarURI` Suchbegriff oder einem absoluten Speicherort referenziert werden.
+>Es wird nicht empfohlen, die Arten, auf die diese Dateien verwiesen werden, miteinander zu kombinieren. Das heißt, alle URIs sollten entweder mit dem `FSToolBarURI` Suchbegriff oder einem absoluten Speicherort referenziert werden.
 
-Sie können die JS- und CSS-Dateien abrufen, indem Sie die Datei &quot;adobe-forms-.ear&quot;öffnen. Öffnen Sie in dieser Datei adobe-forms-res.war. Alle diese Dateien befinden sich in der WAR-Datei. Die Datei &quot;adobe-forms-&lt;Anwendungsserver>.ear&quot;befindet sich im AEM Forms-Installationsordner (C:\ is the installation directory). Sie können die Datei &quot;adobe-forms-&lt;Anwendungsserver>.ear&quot;mit einem Dateiextraktionstool wie WinRAR öffnen.
+Sie können die JS- und CSS-Dateien abrufen, indem Sie die Datei &quot;adobe-forms-.ear&quot;öffnen. Öffnen Sie in dieser Datei &quot;adobe-forms-res.war&quot;. Alle diese Dateien befinden sich in der WAR-Datei. Die Datei &quot;adobe-forms-&lt;Anwendungsserver>.ear&quot;befindet sich im AEM Forms-Installationsordner (C:\ is the installation directory). Sie können die Datei &quot;adobe-forms-&lt;Anwendungsserver>.ear&quot;mit einem Extraktion-Tool wie WinRAR öffnen.
 
 Die folgende XML-Syntax zeigt eine Beispieldatei &quot;fscmenu.xml&quot;.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -96,8 +99,8 @@ Die folgenden Elemente beschreiben, wie Sie eine Symbolleiste anpassen können:
 
 * Ändern Sie die Werte von `fscJS`, `fscCSS``fscVCSS`und `fscIECSS` Attributen (in der Datei &quot;fscmenu.xml&quot;), um die benutzerdefinierten Speicherorte der referenzierten Dateien anzuzeigen, indem Sie eine der in diesem Abschnitt beschriebenen Methoden verwenden (z. B. `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
 * Alle CSS- und JS-Dateien müssen angegeben werden. Wenn keine der Dateien geändert wurde, geben Sie die Standarddatei am benutzerdefinierten Speicherort an. Sie können die Standarddateien abrufen, indem Sie verschiedene Dateien öffnen, wie in diesem Abschnitt beschrieben.
-* Die Angabe eines absoluten Verweises (z. B. https://www.example.com/scripts/custom-vertical-fscmenu.css) für jede Datei ist zulässig.
-* Die JS- und CSS-Dateien, die der `div#fscmenu` Knoten benötigt, sind unverzichtbar für die Symbolleistenfunktion. Einzelne `ul#fscmenuItem` Knoten können JS- oder CSS-Dateien unterstützen oder nicht.
+* Die Angabe eines absoluten Verweises (z. B. https://www.example.com/scripts/custom-vertical-fscmenu.css) für eine beliebige Datei ist zulässig.
+* Die JS- und CSS-Dateien, die der `div#fscmenu` Knoten benötigt, sind unverzichtbar für die Symbolleistenfunktion. Einzelne `ul#fscmenuItem` Knoten verfügen möglicherweise über unterstützende JS- oder CSS-Dateien.
 
 **Ändern des lokalen Werts**
 
@@ -109,7 +112,7 @@ Beim Anpassen einer Symbolleiste können Sie den Gebietsschemawert der Symbollei
 
 Um den Gebietsschemawert einer Symbolleiste zu ändern, stellen Sie sicher, dass die Datei &quot;fscmenu.xml&quot;die anzuzeigende Sprache enthält. Die folgende XML-Syntax zeigt die Datei &quot;fscmenu.xml&quot;, mit der eine französische Symbolleiste angezeigt wird.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -144,7 +147,7 @@ Um den Gebietsschemawert einer Symbolleiste zu ändern, stellen Sie sicher, dass
 
 >[!NOTE]
 >
->Die mit diesem Abschnitt verknüpften Kurzanleitungen verwenden diese XML-Datei, um eine benutzerdefinierte französische Symbolleiste anzuzeigen, wie in der vorherigen Abbildung gezeigt.
+>Die mit diesem Abschnitt verknüpften Quick-Beginn verwenden diese XML-Datei, um eine benutzerdefinierte französische Symbolleiste anzuzeigen, wie in der vorherigen Abbildung gezeigt.
 
 Geben Sie außerdem einen gültigen Gebietsschemawert an, indem Sie die `HTMLRenderSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschemawert angibt. `setLocale` Geben Sie beispielsweise Französisch `fr_FR` an. Der Forms-Dienst ist mit lokalisierten Symbolleisten gebündelt.
 
@@ -196,9 +199,9 @@ Wenn der Forms-Dienst ein HTML-Formular wiedergibt, wird ein Formulardatenstream
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Schnellstarts zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interaktive PDF forms wiedergeben](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Wiedergabe von Formularen als HTML](/help/forms/developing/rendering-forms-html.md)
 
@@ -223,21 +226,23 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
    * Um ein HTML-Formular mit einer Symbolleiste wiederzugeben, rufen Sie die `HTMLRenderSpec` Methode des `setHTMLToolbar` Objekts auf und übergeben Sie einen `HTMLToolbar` Enum-Wert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
    * Geben Sie den Speicherort der XML-Datei &quot;fscmenu&quot;an, indem Sie die `HTMLRenderSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt `setToolbarURI` .
    * Legen Sie ggf. den Wert für das Gebietsschema fest, indem Sie die `HTMLRenderSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschemawert angibt, `setLocale` um ihn zu übergeben. Der Standardwert ist Englisch.
+
    >[!NOTE]
    >
-   >Die mit diesem Abschnitt verknüpften Schnellstarts setzen diesen Wert auf `fr_FR`*.*
+   >Die mit diesem Abschnitt verknüpften Quick-Beginn setzen diesen Wert auf `fr_FR`*.*
 
 1. HTML-Formular wiedergeben
 
    Rufen Sie die `FormsServiceClient` Objektmethode `renderHTMLForm` auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo` Enum-Wert, der den HTML-Präferenztyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML`an.
+   * Ein `TransformTo` Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML`an.
    * Ein `com.adobe.idp.Document` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document` Objekt.
    * Das `HTMLRenderSpec` Objekt, in dem HTML-Laufzeitoptionen gespeichert werden.
    * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Ein `URLSpec` Objekt, das URI-Werte speichert, die zum Rendern eines HTML-Formulars erforderlich sind.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
+
    Die `renderHTMLForm` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
@@ -252,7 +257,7 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
 
 **Siehe auch**
 
-[Kurzanleitung (SOAP-Modus): Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -277,16 +282,17 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
    * Um ein HTML-Formular mit einer Symbolleiste wiederzugeben, rufen Sie die `HTMLRenderSpec` Methode des `setHTMLToolbar` Objekts auf und übergeben Sie einen `HTMLToolbar` Enum-Wert. Um beispielsweise eine vertikale HTML-Symbolleiste anzuzeigen, übergeben Sie `HTMLToolbar.Vertical`.
    * Geben Sie den Speicherort der XML-Datei &quot;fscmenu&quot;an, indem Sie die `HTMLRenderSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den URI-Speicherort der XML-Datei angibt `setToolbarURI` .
    * Legen Sie ggf. den Wert für das Gebietsschema fest, indem Sie die `HTMLRenderSpec` Objektmethode aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschemawert angibt, `setLocale` um ihn zu übergeben. Der Standardwert ist Englisch.
+
    >[!NOTE]
    >
-   >Die mit diesem Abschnitt verknüpften Schnellstarts setzen diesen Wert auf `fr_FR`*.*
+   >Die mit diesem Abschnitt verknüpften Quick-Beginn setzen diesen Wert auf `fr_FR`*.*
 
 1. HTML-Formular wiedergeben
 
    Rufen Sie die `FormsService` Objektmethode `renderHTMLForm` auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo` Enum-Wert, der den HTML-Präferenztyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML`an.
+   * Ein `TransformTo` Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML`an.
    * Ein `BLOB` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
    * Das `HTMLRenderSpec` Objekt, in dem HTML-Laufzeitoptionen gespeichert werden.
    * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Sie können eine leere Zeichenfolge übergeben, wenn Sie diesen Wert nicht festlegen möchten.
@@ -298,6 +304,7 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
    * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das durch die `renderHTMLForm` Methode gefüllt wird. Dieses Argument speichert den Gebietsschemawert.
    * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das durch die `renderHTMLForm` Methode gefüllt wird. Dieses Argument speichert den verwendeten HTML-Renderwert.
    * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das die Ergebnisse dieses Vorgangs enthält.
+
    Die `renderHTMLForm` Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
@@ -312,4 +319,4 @@ Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithi
 
 **Siehe auch**
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
