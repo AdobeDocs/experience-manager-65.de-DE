@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Maven für Communities
 seo-title: Verwenden von Maven für Communities
-description: AEM Communities API JAR und AEM Uber API JAR
-seo-description: AEM Communities API JAR und AEM Uber API JAR
+description: AEM Communities API-JAR und AEM Uber API-JAR
+seo-description: AEM Communities API-JAR und AEM Uber API-JAR
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Übersicht {#overview}
 
-Dieser Abschnitt der Dokumentation zu AEM Communities ergänzt:
+Dieser Abschnitt der Dokumentation zu den AEM Communities ergänzt:
 
 * [Erstellen von AEM-Projekten mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
@@ -30,7 +33,7 @@ Es gibt jetzt zwei &quot;Uber&quot;-Artefakte, die einzelne Artefakte ersetzen:
 
 ## Communities API JAR Artefakt {#communities-api-jar-artifact}
 
-Im Folgenden finden Sie ein Beispiel für eine GAV für die AEM Communities API-JAR:
+Im Folgenden finden Sie ein Beispiel für eine GAV-Datei für die AEM Communities API-JAR:
 
 ```xml
 <dependency>
@@ -46,7 +49,7 @@ Stellen Sie sicher, dass die angegebene Version der Communities-Paketversion ent
 1. Melden Sie sich mit Administratorrechten an.
 1. Navigieren Sie zu [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-1. Suchen Sie das Paket *cq-socialgroups-pkg-1.x.xxx*
+1. Suchen Sie das Paket: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extrahieren Sie die Version aus dem Paketnamen:
    * Die erste Version von AEM 6.3 ist Version 1.11.170.
    * Feature Packs sind die Versionen 1.12.xxx.
