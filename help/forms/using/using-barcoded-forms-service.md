@@ -10,14 +10,17 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 93%
 
 ---
 
 
 # Barcoded Forms-Dienst{#barcoded-forms-service}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der Barcoded Forms-Dienst extrahiert Daten aus elektronischen Abbildungen von Strichcodes. Der Dienst akzeptiert TIFF- und PDF-Dateien mit einem oder mehreren Strichcodes als Eingabe und extrahiert die Strichcodedaten. Strichcodedaten können verschiedene Formate haben, so z. B. XML, durch ein Zeichen getrennte Zeichenfolgen oder mit JavaScript erstellte benutzerdefinierte Formate.
 
@@ -42,7 +45,7 @@ Mit dem Barcoded Forms-Dienst können Sie die folgenden Aufgaben ausführen:
 
 Der Barcoded Forms-Dienst sucht in einer Grafik den Strichcode, dekodiert diesen und extrahiert die Daten. Der Dienst gibt die Strichcodedaten (bei Bedarf mithilfe der Entitätenkodierung) in einem Element vom Typ content eines XML-Dokuments zurück. Die folgende gescannte TIFF-Grafik eines Formulars enthält beispielsweise zwei Strichcodes:
 
-![example](assets/example.png)
+![Beispiel](assets/example.png)
 
 Der Barcoded Forms-Dienst gibt nach Dekodierung der Strichcodes das folgende XML-Dokument zurück:
 
@@ -136,15 +139,15 @@ Sie können den Dienst **AEMFD Barcoded Forms-Dienst** in AEM-Konsole verwenden,
 
 Der Barcoded Forms-Dienst stellt die folgenden zwei APIs zur Verfügung:
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Dekodiert alle Barcodes, die in einem PDF-Eingabedokument oder in einem TIFF-Bild verfügbar sind. Es wird ein XML-Dokument mit den Daten zurückgegeben, die von allen Barcodes abgerufen wurden, welche im Eingabedokument oder im Bild verfügbar sind.
+* **[decode](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Dekodiert alle Barcodes, die in einem PDF-Eingabedokument oder in einem TIFF-Bild verfügbar sind. Es wird ein XML-Dokument mit den Daten zurückgegeben, die von allen Barcodes abgerufen wurden, welche im Eingabedokument oder im Bild verfügbar sind.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Konvertiert Daten, die mit der Dekodier-API für XML-Daten dekodiert wurden. Diese XML-Daten können mit einem XFA-Formular zusammengeführt werden. Es wird eine Liste von XML-Dokumenten, eines je Barcode, zurückgegeben.
+* **[extractToXML](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Konvertiert Daten, die mit der Dekodier-API für XML-Daten dekodiert wurden. Diese XML-Daten können mit einem XFA-Formular zusammengeführt werden. Es wird eine Liste von XML-Dokumenten, eines je Barcode, zurückgegeben.
 
 ### Verwenden des BCF-Dienstes mit JSPs oder Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
 Der folgende Beispielcode dekodiert einen Barcode in einem Dokument und speichert die Ausgabe-XML auf der Festplatte.
 
-```java
+```jsp
 <%@ page import="java.util.List,
                 com.adobe.fd.bcf.api.BarcodedFormsService,
                 com.adobe.fd.bcf.api.CharSet,
