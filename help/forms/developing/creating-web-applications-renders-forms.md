@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1831'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +59,7 @@ wobei &lt;*Installationsordner*> der Installationspfad ist. Für die Zwecke der 
 
 Um auf den Formularentwurf &quot;Purchase Order Dynamic.xdp&quot;zuzugreifen, geben Sie `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` als Formularname (der erste Parameter, der an die `renderPDFForm` Methode übergeben wird) und `repository:///` als Inhaltsstamm-URI-Wert an.
 
-Die von der Webanwendung verwendeten XML-Datendateien wurden aus dem Ordner &quot;Data&quot;in `C:\Adobe`(das Dateisystem, das zum J2EE-Anwendungsserver gehört, auf dem AEM Forms gehostet wird) verschoben. Die Dateinamen sind &quot;Purchase Order *Canada.xml* &quot;und &quot;Purchase Order *US.xml&quot;*.
+Die von der Webanwendung verwendeten XML-Datendateien wurden aus dem Ordner &quot;Data&quot;in `C:\Adobe`(das Dateisystem, das zu den Hosting-AEM Forms des J2EE-Anwendungsservers gehört) verschoben. Die Dateinamen sind &quot;Purchase Order *Canada.xml* &quot;und &quot;Purchase Order *US.xml&quot;*.
 
 >[!NOTE]
 >
@@ -75,7 +78,7 @@ So erstellen Sie webbasierte Anwendungen, die Formulare basierend auf Fragmenten
 
 >[!NOTE]
 >
->Einige dieser Schritte hängen von der J2EE-Anwendung ab, auf der AEM Forms bereitgestellt wird. Die Methode zum Bereitstellen einer WAR-Datei hängt beispielsweise vom J2EE-Anwendungsserver ab, den Sie verwenden. In diesem Abschnitt wird davon ausgegangen, dass AEM Forms auf JBoss® bereitgestellt wird.
+>Einige dieser Schritte hängen von der J2EE-Anwendung ab, auf der AEM Forms bereitgestellt werden. Die Methode zum Bereitstellen einer WAR-Datei hängt beispielsweise vom J2EE-Anwendungsserver ab, den Sie verwenden. In diesem Abschnitt wird davon ausgegangen, dass AEM Forms unter JBoss® bereitgestellt werden.
 
 ### Creating a web project {#creating-a-web-project}
 
@@ -122,7 +125,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 Sie erstellen eine Java-Anwendungslogik, die den Forms-Dienst vom Java-Servlet aus aufruft. Der folgende Code zeigt die Syntax des `RenderFormFragment` Java-Servlets:
 
-```as3
+```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -154,6 +157,7 @@ So rendern Sie ein Formular basierend auf Fragmenten mithilfe der Forms-Dienst-A
    * Ein `PDFFormRenderSpec` Objekt, das Laufzeitoptionen speichert. For more information, see [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `URLSpec` Objekt, das URI-Werte enthält, die vom Forms-Dienst zum Wiedergeben eines Formulars basierend auf Fragmenten erforderlich sind.
    * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
+
    Die `renderPDFForm` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Erstellen Sie ein `com.adobe.idp.Document` Objekt, indem Sie die `FormsResult` &quot;s&quot;- `getOutputContent` Methode des Objekts aufrufen.
@@ -166,7 +170,7 @@ So rendern Sie ein Formular basierend auf Fragmenten mithilfe der Forms-Dienst-A
 
 Das folgende Codebeispiel stellt das Java-Servlet dar, das den Forms-Dienst aufruft und ein Formular basierend auf Fragmenten rendert.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -307,7 +311,7 @@ Die Webseite &quot;index.html&quot;bietet einen Einstiegspunkt zum Java-Servlet 
 
 Das Java-Servlet erfasst die Daten, die von der HTML-Seite veröffentlicht werden, unter Verwendung des folgenden Java-Codes:
 
-```as3
+```java
              Document oInputData = null;
  
              //Get the value of selected radio button
@@ -327,7 +331,7 @@ Das Java-Servlet erfasst die Daten, die von der HTML-Seite veröffentlicht werde
 
 Der folgende HTML-Code befindet sich in der Datei &quot;index.html&quot;, die während der Einrichtung der Development-Umgebung erstellt wurde. (See [Creating a web project](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
-```as3
+```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="https://www.w3.org/1999/xhtml">
  <head>
@@ -379,7 +383,7 @@ Um das Java-Servlet bereitzustellen, das den Forms-Dienst aufruft, verpacken Sie
 
 ### Bereitstellen der WAR-Datei auf dem J2EE-Anwendungsserver {#deploying-the-war-file-to-the-j2ee-application-server}
 
-Sie können die WAR-Datei auf dem J2EE-Anwendungsserver bereitstellen, auf dem AEM Forms bereitgestellt wird. Nach der Bereitstellung der WAR-Datei können Sie über einen Webbrowser auf die HTML-Webseite zugreifen.
+Sie können die WAR-Datei auf dem J2EE-Anwendungsserver bereitstellen, auf dem die AEM Forms bereitgestellt werden. Nach der Bereitstellung der WAR-Datei können Sie über einen Webbrowser auf die HTML-Webseite zugreifen.
 
 **So stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit:**
 
