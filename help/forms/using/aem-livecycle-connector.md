@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 94%
@@ -33,7 +33,7 @@ Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigs
 
 * **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, Beginn AEM mit der folgenden JVM
 
-   ```
+   ```java
    argument
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
@@ -118,7 +118,7 @@ Um einen angezeigten Dienst aus AEM zu starten, führen Sie folgende Schritte au
 
    Im obigen Code-Fragment wird die createPDF-API von GeneratePdfServiceClient gestartet, um ein Dokument das PDF-Format zu konvertieren. Auf einer JSP-Seite können Sie einen ähnlichen Aufruf mithilfe des folgenden Codes durchführen. Der Hauptunterschied ist der folgende Code, der Sling ScriptHelper verwendet, um auf GeneratePdfServiceClient zuzugreifen.
 
-   ```java
+   ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>
    <%@ page import="com.adobe.idp.Document" %>
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Für nahezu jeden Document Service in LiveCycle ist eine Authentifizierung erforderlich. Sie können eine der folgenden Optionen verwenden, um diese Dienste zu starten, ohne explizit Anmeldedaten im Code anzugeben:
 
-### Zulassungsliste-Konfiguration {#allowlist-configuration}
+### Konfiguration der Zulassungsliste {#allowlist-configuration}
 
 Die LiveCycle Client SDK-Konfiguration enthält eine Einstellung für Dienstnamen. Diese Konfiguration ist eine Liste der Dienste, für die die Aufruflogik Administratorberechtigungen für den sofortigen Einsatz verwendet. Wenn Sie beispielsweise DirectoryManager-Dienste (Teil der User Management-API) zur Liste hinzufügen, kann jeder Client-Code den Dienst direkt verwenden und die Aufrufebene gibt die konfigurierten Benutzerdaten automatisch im Rahmen der an den LiveCycle-Server gesendeten Anfrage weiter.
 
