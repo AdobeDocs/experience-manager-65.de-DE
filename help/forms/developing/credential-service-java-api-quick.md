@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ Java API Quick Beginn (SOAP) ist für den Berechtigungsdienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Löschen von Berechtigungen mit der Java-API](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei mit dem Namen *cred.p12* importiert. Der Aliaswert, der zum Importieren der Berechtigung verwendet wird, ist `Secure`. (Siehe [Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)importieren.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -138,7 +141,7 @@ Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei mit d
 
 Im folgenden Codebeispiel wird eine Berechtigung basierend auf einem Aliaswert *secure* gelöscht. (Siehe [Löschen von Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
