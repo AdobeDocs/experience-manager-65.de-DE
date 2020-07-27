@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 88%
 
 ---
 
@@ -58,7 +61,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
    Der folgende Text enthält Formatierungszeichen für Zeilenwechsel. Wenn dieser Text an eine Stelle außerhalb dieses Dokuments kopiert wird, kopieren Sie die Teile einzeln nacheinander und entfernen Sie die Formatierungszeichen, wenn der Text an der neuen Stelle eingefügt wird.
 
-   ```as3
+   ```shell
     ################################################
     # NetWorker Module for Documentum v1.2 nsrnmd_win.cfg D5.3+ example with
     # typical set of working parameters.  THIS FILE MUST BE SITE-CUSTOMISED.
@@ -200,11 +203,11 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
    * Inkrementelle Datenbanksicherung (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker-Servername>*`-U``[username]``-P``[password]``-l 1 -R`**
+      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker-Servername>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;Datenbankname>*
 
    * Datenbankprotokollsicherung (nsrnmddbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` &lt;Datenbankname> `-l incr -R`**
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;Datenbankname>*
 
       wobei:
 
@@ -225,7 +228,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
    **Name:** Der vollständige Pfad des freigegebenen Ordners
 
-   **** Medientyp: `File`
+   **Medientyp:** `File`
 
 1. Klicken Sie mit der rechten Maustaste auf das neue Gerät und wählen Sie Operations aus.
 1. Klicken Sie auf „Label“, geben Sie einen Namen ein, klicken Sie auf „OK“ und klicken Sie dann auf „Mount“.
@@ -243,7 +246,7 @@ Führen Sie die folgenden Schritte aus, nachdem Sie eine vollständige Sicherung
 1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu `[NetWorker_root]\Legato\nsr\bin`.
 1. Führen Sie folgenden Befehl aus:
 
-   ```as3
+   ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
@@ -263,6 +266,6 @@ Führen Sie vor der Wiederherstellung der AEM Forms-Daten die folgenden Aufgaben
 1. Open a command prompt and change to *[NetWorker_root]*\Legato\nsr\bin
 1. Führen Sie folgenden Befehl aus:
 
-   ```as3
+   ```shell
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
