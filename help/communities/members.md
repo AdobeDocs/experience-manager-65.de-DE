@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Übersicht {#overview}
 
-AEM Communities-Funktionen erfordern häufig, dass Site-Besucher registriert und angemeldet sind, bevor sie an einer Community in der Umgebung zur Veröffentlichung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungs-Umgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von den in der Autorenversion registrierten *Benutzern* zu unterscheiden.
+AEM Communities-Funktionen erfordern häufig, dass Site-Besucher registriert und angemeldet sind, bevor sie an einer Community in der Umgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungs-Umgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von den in der Autorenversion registrierten *Benutzern* zu unterscheiden.
 
 ### Mitglieder (Benutzer) bei der Veröffentlichung {#members-users-on-publish}
 
@@ -48,19 +51,22 @@ In der Umgebung &quot;Autor&quot;erreichen Sie die Mitgliederkonsole, um in der 
 >Die Mitgliederkonsole kann nicht verwendet werden, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
 
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![member-console1](assets/member-console1.png)
 
 ### Suche {#search-features}
 
 Klicken Sie auf das Symbol für das Seitenbedienfeld auf der linken Seite der `Members` Kopfzeile, um das Suchseitenbedienfeld zu öffnen.
 
-![chlimage_1-120](assets/chlimage_1-120.png) ![chlimage_1-121](assets/chlimage_1-121.png)
+![](assets/leftpanel-icon.png)
+
+
+![member-console2](assets/member-console2.png)
 
 Klicken Sie auf das Suchsymbol auf der linken Seite der `Members` Kopfzeile, um das Suchseitenbedienfeld zu schließen.
 
 ### Mitgliederstatistiken {#member-statistics}
 
-Die Spalten, die angezeigt, `Views``Posts`und `Follows` aktualisiert werden, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites ist, auf denen Adobe Analytics `Likes` aktiviert [](sites-console.md#analytics)ist.
+Die Spalten `Views`, `Posts`und `Follows` werden aktualisiert, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites ist, auf denen Adobe Analytics `Likes` aktiviert [](sites-console.md#analytics)ist.
 
 ### CSV exportieren {#export-csv}
 
@@ -74,7 +80,7 @@ Die Spaltenüberschriften sind
 
 Wählen Sie diese Option, `Create Member` um einen Benutzer in der Umgebung &quot;Veröffentlichen&quot;zu erstellen.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![create-member1](assets/create-member1.png)
 
 ### ALLGEMEINE - Mitgliederdetails {#general-member-details}
 
@@ -117,6 +123,7 @@ Unter &quot;Kontoeinstellungen&quot;kann ein Community-Administrator:
    * Verbotene Benutzer Ein Mitglied kann sich nicht anmelden, was verhindert, dass es Seiten anzeigt oder an Aktivitäten teilnimmt, für die eine Anmeldung erforderlich ist. Sie können immer noch anonym eine offene Community-Site besuchen.
 
    * Nicht verbotenEin Mitglied hat vollen Zugriff auf die Community-Site.
+
    Der Standardwert ist `Not Banned`.
 
 * **[!UICONTROL Anteilslimits]**
@@ -147,7 +154,7 @@ Das `BADGES` Bedienfeld bietet die Möglichkeit, Kennzeichen manuell zuzuweisen 
 
 Siehe auch [Scoring und Badges](implementing-scoring.md).
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![create-member2](assets/create-member2.png)
 
 * **[!UICONTROL Hinzufügen]**
    * Geben Sie mit der Eingabe an, um aus den [verfügbaren Abzeichen](badges.md)auszuwählen. Wählen Sie nach Auswahl eines Kennzeichens jede Website oder alle Sites aus, auf denen das Kennzeichen zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
@@ -173,7 +180,7 @@ So greifen Sie auf die Konsole &quot;Gruppen&quot;zu:
 
 Wählen Sie diese Option, `Add Group` um eine Gruppe in der Umgebung &quot;Veröffentlichen&quot;zu erstellen.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![group-console1](assets/group-console1.png)
 
 Die folgenden Felder sind zum Erstellen einer neuen Gruppe von Mitgliedern auf der Seite der Veröffentlichung erforderlich:
 
