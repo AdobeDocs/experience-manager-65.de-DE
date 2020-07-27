@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 0%
 
 ---
 
@@ -37,17 +40,17 @@ Der Java API Quick Beginn (SOAP) ist für den Signature-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Entfernen einer digitalen Signatur mit der Java-API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Der unter &quot;Programmieren mit AEM Forms&quot;befindliche Quick Beginn basiert auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Signaturfeld zu einem PDF-Dokument mithilfe der Java-API hinzufügen {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen *SignatureField1* zu einem PDF-Dokument hinzugefügt, das auf einer PDF-Datei *mit dem NamenLoan.pdf* basiert. Das PDF-Dokument, das das neue Unterschriftsfeld enthält, wird als PDF-Datei mit dem Namen *LoanSig.pdf* gespeichert. (Siehe [Hinzufügen von Unterschriftsfeldern](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -163,7 +166,7 @@ Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen *SignatureFie
 
 The following Java code example retrieves the names of signature fields located in a PDF document named *LoanSig.pdf*. (Siehe [Abrufen von Signaturfeldnamen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -269,7 +272,7 @@ The following Java code example retrieves the names of signature fields located 
 
 Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen SignatureField1 geändert, indem alle Felder im Formular gesperrt werden, wenn eine Signatur auf das Signaturfeld angewendet wird, und sichergestellt wird, dass keine Änderungen zulässig sind. Nachdem der Signature-Dienst das PDF-Dokument zurückgegeben hat, das das geänderte Signaturfeld enthält, wird das PDF-Dokument als PDF-Datei mit dem Namen &quot;LoanSig.pdf&quot;gespeichert. (In diesem Beispiel wird die an den Signature-Dienst weitergeleitete PDF-Datei überschrieben.) (Siehe [Unterschriftsfelder](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)ändern.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -397,7 +400,7 @@ Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen SignatureFiel
 
 Im folgenden Java-Codebeispiel wird ein PDF-Dokument digital signiert, das auf einer PDF-Datei mit dem Namen *LoanSig.pdf* basiert. Der für die Sicherheitsberechtigung angegebene Alias ist sicher und die Sperrüberprüfung wird durchgeführt. Da keine Zertifikatsperrliste oder OCSP-Serverinformationen angegeben sind, werden die Serverinformationen aus dem zum digitalen Signieren des PDF-Dokuments verwendeten Zertifikat abgerufen. Das signierte Dokument wird als PDF-Datei mit dem Namen *LoanSigned.pdf* gespeichert. (See [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -546,7 +549,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument digital signiert, das auf e
 
 Im folgenden Java-Codebeispiel wird ein interaktives Formular signiert, das vom Forms-Dienst wiedergegeben wird. Die vom Forms-Dienst zurückgegebene `com.adobe.idp.Document` Instanz wird an den Signature-Dienst übergeben. Das signierte interaktive Formular wird als PDF-Datei mit dem Namen *LoanXFASigned.pdf* gespeichert.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -758,7 +761,7 @@ Im folgenden Java-Codebeispiel wird ein interaktives Formular signiert, das vom 
 
 The following Java code example certifies a PDF document that is based on a PDF file named *LoanSig.pdf*. Der für die Sicherheitsberechtigung angegebene Alias ist sicher und die Sperrüberprüfung wird nicht durchgeführt. Das zertifizierte Dokument wird als PDF-Datei mit dem Namen *LoanCertified.pdf* gespeichert. (See [Certifying PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -907,7 +910,7 @@ The following Java code example certifies a PDF document that is based on a PDF 
 
 Im folgenden Java-Codebeispiel wird eine Digitalsignatur überprüft, die sich in einem signierten PDF-Dokument befindet, das auf einer PDF-Datei mit dem Namen LoanSigned.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt, und die Option zur Prüfung der Sperrung ist nach besten Kräften eingestellt. (Siehe [Digitale Signaturen](#verifying-digital-signatures)überprüfen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-signatures-client.jar
@@ -1071,7 +1074,7 @@ Im folgenden Java-Codebeispiel wird eine Digitalsignatur überprüft, die sich i
 
 Im folgenden Java-Codebeispiel werden mehrere digitale Signaturen überprüft, die sich in einem signierten PDF-Dokument befinden, das auf einer PDF-Datei mit dem Namen LoanAllSigs.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt, und die Option zur Prüfung der Sperrung ist nach besten Kräften eingestellt. (See [Verifying Multiple Digital Signatures](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1233,7 +1236,7 @@ Im folgenden Java-Codebeispiel werden mehrere digitale Signaturen überprüft, d
 
 The following Java code example removes a digital signature from a signature field named *SignatureField1*. Der Name der PDF-Datei, die das Unterschriftsfeld enthält, lautet *LoanSigned.pdf*. (Siehe [Digitale Signaturen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures)entfernen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
