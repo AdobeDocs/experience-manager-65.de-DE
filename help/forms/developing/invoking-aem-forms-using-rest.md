@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2492'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +32,7 @@ Um einen Forms-Dienst aufzurufen (ein Prozess wird bei Aktivierung des Prozesses
 
 Nachdem ein REST-Endpunkt konfiguriert wurde, können Sie einen Forms-Dienst mit einer HTTP GET-Methode oder einer POST-Methode aufrufen.
 
-```as3
+```java
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
@@ -57,7 +60,7 @@ Die folgenden Datentypen werden beim Aufrufen von AEM Forms-Diensten mithilfe vo
 
    Wenn für einen Forms-Dienst ein `com.adobe.idp.Document` Parameter erforderlich ist, kann der Dienst nur mit der HTTP POST-Methode aufgerufen werden. Wenn für den Dienst ein `com.adobe.idp.Document` Parameter erforderlich ist, wird der Hauptteil der HTTP-Anforderung zum Inhalt des Dokument-Eingabeobjekts.
 
-   Wenn ein AEM Forms-Dienst mehrere Eingabeparameter erfordert, muss der HTTP-Anforderungstext eine mehrteilige MIME-Meldung gemäß RFC 1867 sein. (RFC 1867 ist ein Standard, der von Webbrowsern zum Hochladen von Dateien auf Websites verwendet wird.) Jeder Eingabeparameter muss als separater Teil der mehrteiligen Meldung gesendet und im `multipart/form-data` Format kodiert werden. Der Name der einzelnen Teile muss mit dem Namen des Parameters übereinstimmen.
+   Wenn ein AEM Forms-Dienst mehrere Eingabeparameter erfordert, muss der HTTP-Anforderungskörper eine mehrteilige MIME-Meldung gemäß RFC 1867 sein. (RFC 1867 ist ein Standard, der von Webbrowsern zum Hochladen von Dateien auf Websites verwendet wird.) Jeder Eingabeparameter muss als separater Teil der mehrteiligen Meldung gesendet und im `multipart/form-data` Format kodiert werden. Der Name der einzelnen Teile muss mit dem Namen des Parameters übereinstimmen.
 
    Listen und Maps werden auch als Eingabewerte für in Workbench erstellte AEM Forms-Prozesse verwendet. Daher können Sie diese Datentypen bei der Verwendung einer REST-Anforderung verwenden. Java-Arrays werden nicht unterstützt, da sie nicht als Eingabewert für einen AEM Forms-Prozess verwendet werden.
 
@@ -86,11 +89,11 @@ Die folgenden Datentypen werden beim Aufrufen von AEM Forms-Diensten mithilfe vo
 
 ## Asynchrone Aufrufe {#asynchronous-invocations}
 
-Einige AEM Forms-Dienste, z. B. menschenorientierte Prozesse mit langer Lebensdauer, benötigen eine lange Zeit, um abgeschlossen zu werden. Diese Dienste können asynchron ohne Blockierung aufgerufen werden. (Siehe [An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+Einige AEM Forms-Services, wie zum Beispiel menschenorientierte Prozesse mit langer Lebensdauer, erfordern eine lange Zeit zum Abschluss. Diese Dienste können asynchron ohne Blockierung aufgerufen werden. (Siehe [An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
 Ein AEM Forms-Dienst kann asynchron aufgerufen werden, indem er `services` durch `async_invoke` die Aufruf-URL ersetzt wird, wie im folgenden Beispiel gezeigt.
 
-```as3
+```java
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
@@ -98,7 +101,7 @@ Diese URL gibt den Bezeichnerwert (im Format &quot;text/plain&quot;) des Auftrag
 
 Der Status des asynchronen Aufrufs kann mithilfe einer URL abgerufen werden, die durch eine `services` ersetzte URL ersetzt wird `async_status`. Die URL muss einen `job_id` Parameter enthalten, der den Bezeichnerwert des mit diesem Aufruf verknüpften Auftrags angibt. Beispiel:
 
-```as3
+```java
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -108,7 +111,7 @@ Wenn der Auftrag abgeschlossen ist, gibt die URL dasselbe Ergebnis zurück, als 
 
 Nachdem der Auftrag abgeschlossen und das Ergebnis abgerufen wurde, kann der Auftrag mithilfe einer Aufruf-URL entsorgt werden, die durch ersetzt `services` wird `async_dispose`. Die URL sollte auch einen `job_id` Parameter enthalten, der den Bezeichnerwert des Auftrags angibt. Beispiel:
 
-```as3
+```java
  http://localhost:8080/rest/async_dispose/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -120,7 +123,7 @@ Wenn eine synchrone oder asynchrone Aufrufanforderung aufgrund einer auf dem Ser
 
 Wenn die Aufrufungs-URL (oder die `async_result` -URL bei einem asynchronen Aufruf) das Suffix .xml enthält, gibt der REST-Provider den HTTP-Code zurück, `200 OK`gefolgt von einem XML-Dokument, das die Ausnahme im folgenden Format beschreibt.
 
-```as3
+```xml
  <exception>
        <exception_class_name>[
        <DSCError>
@@ -142,7 +145,7 @@ Das `DSCError` Element ist optional und nur vorhanden, wenn die Ausnahme eine In
 
 ## Sicherheit und Authentifizierung {#security-and-authentication}
 
-Um REST-Aufrufe mit einem sicheren Transport bereitzustellen, kann ein AEM Forms-Administrator das HTTPS-Protokoll auf dem J2EE-Anwendungsserver aktivieren, auf dem AEM Forms gehostet wird. Diese Konfiguration ist spezifisch für den J2EE-Anwendungsserver. Es ist nicht Teil der Formularserverkonfiguration.
+Um REST-Aufrufe mit einem sicheren Transport bereitzustellen, kann ein AEM Forms-Administrator das HTTPS-Protokoll auf dem J2EE-Anwendungsserver aktivieren, der als Host für AEM Forms dient. Diese Konfiguration ist spezifisch für den J2EE-Anwendungsserver. Es ist nicht Teil der Formularserverkonfiguration.
 
 >[!NOTE]
 >
@@ -174,7 +177,7 @@ Die folgenden REST-Aufrufbeispiele sind verfügbar:
 * Übergeben von Datumswerten an einen AEM Forms-Prozess
 * Übergeben von Dokumenten an einen AEM Forms-Prozess
 * Übergeben von Dokument- und Textwerten an einen AEM Forms-Prozess
-* Übergeben von Auflistungen an einen AEM Forms-Prozess
+* Übergeben von Auflistung-Werten an einen AEM Forms-Prozess
 * Aufrufen des MyApplication/EncryptDocument-Prozesses mithilfe von REST
 * MyApplication/EncryptDocument-Prozess aus Acrobat aufrufen
 
@@ -184,7 +187,7 @@ Die folgenden REST-Aufrufbeispiele sind verfügbar:
 
 Im folgenden HTML-Beispiel werden zwei `Boolean` Werte an einen AEM Forms-Prozess mit dem Namen `RestTest2`übergeben. Der Name der Aufrufmethode lautet `invoke` und die Version 1.0. Beachten Sie, dass die HTML Post-Methode verwendet wird.
 
-```as3
+```html
  <html>
  <body>
  
@@ -204,7 +207,7 @@ Im folgenden HTML-Beispiel werden zwei `Boolean` Werte an einen AEM Forms-Prozes
 
 Im folgenden HTML-Beispiel wird ein Datumswert an einen AEM Forms-Prozess mit dem Namen `SOAPEchoService`übergeben. Der Name der Aufrufmethode lautet `echoCalendar`. Beachten Sie, dass die HTML- `Post` Methode verwendet wird.
 
-```as3
+```html
  <html>
  <body>
  
@@ -221,9 +224,9 @@ Im folgenden HTML-Beispiel wird ein Datumswert an einen AEM Forms-Prozess mit de
 
 **Übergeben von Dokumenten an einen Prozess**
 
-Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `MyApplication/EncryptDocument` aufgerufen, für den ein PDF-Dokument erforderlich ist. Weitere Informationen zu diesem Vorgang finden Sie unter [Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+Im folgenden HTML-Beispiel wird ein AEM Forms-Vorgang mit dem Namen `MyApplication/EncryptDocument` aufgerufen, für den ein PDF-Dokument erforderlich ist. Weitere Informationen zu diesem Vorgang finden Sie unter [Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
-```as3
+```html
  <html>
  <body>
  
@@ -243,7 +246,7 @@ Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `MyApplicati
 
 Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `RestTest3` aufgerufen, für den ein Dokument und zwei Textwerte erforderlich sind. Beachten Sie, dass die HTML Post-Methode verwendet wird.
 
-```as3
+```html
  <html>
  <body>
  
@@ -263,9 +266,9 @@ Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `RestTest3` 
 
 **Übergeben von Auflistung-Werten an einen Prozess**
 
-Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `SOAPEchoService` aufgerufen, für den ein Wert für die Auflistung erforderlich ist. Beachten Sie, dass die HTML Post-Methode verwendet wird.
+Im folgenden HTML-Beispiel wird ein AEM Forms-Vorgang mit dem Namen `SOAPEchoService` aufgerufen, für den ein Auflistung-Wert erforderlich ist. Beachten Sie, dass die HTML Post-Methode verwendet wird.
 
-```as3
+```html
  <html>
  <body>
  
@@ -282,7 +285,7 @@ Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `SOAPEchoSer
 
 **Aufrufen des MyApplication/EncryptDocument-Prozesses mithilfe von REST**
 
-Sie können einen kurzlebigen AEM Forms-Prozess mit dem Namen *MyApplication/EncryptDocument* mithilfe von REST aufrufen.
+Sie können einen AEM Forms-Prozess mit kurzer Lebensdauer mit dem Namen *MyApplication/EncryptDocument* mithilfe von REST aufrufen.
 
 >[!NOTE]
 >
@@ -295,7 +298,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
    Wenn dieser Vorgang mit einer REST-Anforderung aufgerufen wird, wird das verschlüsselte PDF-Dokument im Webbrowser angezeigt. Geben Sie vor der Ansicht des PDF-Dokuments das Kennwort an (es sei denn, die Sicherheit ist deaktiviert). Der folgende HTML-Code stellt eine REST-Aufrufanforderung für den `MyApplication/EncryptDocument` Prozess dar.
 
-   ```as3
+   ```html
     <html>
     <body>
     <form action="https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument" method="post" enctype="multipart/form-data">
@@ -310,7 +313,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
     </body>
    ```
 
-**MyApplication/EncryptDocument-Prozess aus Acrobat** aufrufen {#invoke-process-acrobat}
+**MyApplication/EncryptDocument-Prozess aus Acrobat aufrufen** {#invoke-process-acrobat}
 
 Sie können einen Formularprozess in Acrobat über eine REST-Anforderung aufrufen. Sie können beispielsweise den *MyApplication/EncryptDocument* -Prozess aufrufen. Um einen Formularprozess aus Acrobat aufzurufen, platzieren Sie eine Senden-Schaltfläche in einer XDP-Datei in Designer. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
