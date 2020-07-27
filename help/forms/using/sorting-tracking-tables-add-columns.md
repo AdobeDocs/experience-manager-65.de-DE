@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 79%
 
 ---
 
 
 # Anpassen von Verfolgungstabellen{#customize-tracking-tables}
 
-Auf der Registerkarte &quot;Verfolgung&quot;in AEM Forms Workspace werden die Details der Prozessinstanzen angezeigt, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
+Auf der Registerkarte &quot;Verfolgung&quot;im Arbeitsbereich &quot;AEM Forms&quot;werden die Details der Prozessinstanzen angezeigt, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
 
 * ID ( `taskId`)
 * Name ( `stepName`)
@@ -119,7 +122,7 @@ Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Ä
 
 1. Um die in der Tabelle angezeigten Aufgabenattribute und ihre Reihenfolge zu ändern, konfigurieren Sie die Datei /ws/js/runtime/templates/processinstancehistory.html:
 
-   ```as3
+   ```html
    <table>
        <thead>
            <tr>
@@ -134,7 +137,7 @@ Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Ä
    </table>
    ```
 
-   ```as3
+   ```html
    <table>
        <tbody>
            <%_.each(obj, function(task){%>
@@ -157,7 +160,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
 
 1. Register a click handler for `.fixedTaskTableHeader th` in the file `js/runtime/views/processinstancehistory.js`.
 
-   ```as3
+   ```javascript
    events: {
        //other handlers
        "click .fixedTaskTableHeader th": "onTaskTableHeaderClick",
@@ -167,7 +170,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
 
    In the handler, invoke the `onTaskTableHeaderClick` function of `js/runtime/util/history.js`.
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick: function (event) {
            history.onTaskTableHeaderClick(event);
    }
@@ -179,7 +182,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
 
    Die Sortierung erfolgt mit der Backbone-Sortierfunktion auf der tasklist-Sammlung, indem eine Komparator-Funktion bereitgestellt wird.
 
-   ```as3
+   ```javascript
        return {
            //other methods
            onTaskTableHeaderClick  : onTaskTableHeaderClick,
@@ -187,7 +190,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
        };
    ```
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick = function (event) {
            var target = $(event.target),
             comparator,
