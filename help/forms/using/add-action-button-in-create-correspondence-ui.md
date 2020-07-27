@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 56%
@@ -226,7 +226,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
    1. Doppelklicken Sie auf die ccrcustomization.js-Datei, um sie in CRX zu öffnen.
    1. Fügen Sie in die Datei den folgenden Code und klicken Sie auf **Alle speichern**:
 
-      ```
+      ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
         * One instance of handler will be created for each action.
         * CM.domain.CCRCustomActionHandler is actionHandler class.
@@ -349,6 +349,7 @@ Der LCA-Vorgang wird auf dem LiveCycle-Server ausgeführt und erfordert die Serv
    * **Server-URL**: URL des LC-Servers, dessen Dienst &quot;Zur Überprüfung senden&quot;der Aktionshandler-Code verwendet.
    * **Benutzername**: Administratorbenutzername des LC-Servers
    * **Kennwort:** Kennwort des Adminbenutzernamens 
+
    ![Adobe LiveCycle Client SDK-Konfiguration](assets/3_clientsdkconfiguration.png)
 
 #### Installieren des LiveCycle Archivs (LCA) {#install-livecycle-archive-lca}
@@ -420,6 +421,7 @@ For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/form
    * **crx.username** = AEM-Benutzername
    * **crx.password**= AEM-Kennwort
    * **crx.appRoot** = /content/apps/cm
+
    >[!NOTE]
    >
    >Jedes Mal, wenn Sie Änderungen auf Serverseite vornehmen, müssen Sie den LiveCycle-Server neu starten. Informationen über das Erstellen Ihrer eigenen Livecycle-Komponente finden Sie unter [ Erweiterung der LiveCycle ES-Software durch kundenspezifische DSC-Entwicklung](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
