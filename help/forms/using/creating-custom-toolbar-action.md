@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
 translation-type: tm+mt
-source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 84%
 
 ---
 
@@ -41,7 +44,7 @@ Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenakti
 
    ![Hierarchie der Knoten zur Anpassung der Symbolleiste](assets/action3.png)
 
-1. Wählen Sie `cq:template` Knoten in `reviewbeforesubmit` Knoten. Ensure that the value of `guideNodeClass` property is `guideButton` and change `jcr:title` property accordingly.
+1. Wählen Sie `cq:template` Knoten in `reviewbeforesubmit` Knoten aus. Ensure that the value of `guideNodeClass` property is `guideButton` and change `jcr:title` property accordingly.
 1. Change the type property in the `cq:Template` node. Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
 
    Der Typwert wird als CSS-Klasse in der generierten HTML für die Komponente hinzugefügt. Benutzer können diese CSS-Klasse verwenden, um ihre Aktionen zu formatieren. Die Standardstile für mobile und Desktopgeräte werden für die Typwerte „button“, „submit“, „reset“ und „save“ bereitgestellt.
@@ -54,7 +57,7 @@ Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenakti
 
    Fügen Sie den folgenden Code in `init.jsp` hinzu.
 
-   ```
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <guide:initializeBean name="guideField" className="com.adobe.aemds.guide.common.GuideButton"/>
    
@@ -112,7 +115,7 @@ Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenakti
 
    Fügen Sie den folgenden Code in der Datei `ReviewBeforeSubmit.js` hinzu.
 
-   ```
+   ```javascript
    /*anonymous function to handle show of review before submit view */
    $(function () {
        if($("div.reviewbeforesubmit button[id*=reviewbeforesubmit]").length > 0) {
