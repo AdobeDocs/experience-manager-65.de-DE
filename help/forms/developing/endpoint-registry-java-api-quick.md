@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ Java API Quick Beginn (SOAP) ist für die Endpunktregistrierung verfügbar.
 
 [QuickStart: Abrufen von Endpunktschnittstellenverbindungsinformationen mit der Java-API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein EJB-Endpunkt hinzugefügt. (Siehe [Hinzufügen von EJB-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -150,7 +153,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein SOAP-Endpunkt hinzugefügt. (Siehe [Hinzufügen von SOAP-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -254,7 +257,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 >
 >Sie müssen die Datei &quot;watchedFolderEndpointConfigConstants.java&quot;in Ihr Projekt einschließen, um den folgenden Quick-Beginn zu kompilieren und auszuführen. (Siehe [Konfigurationswerte der Konstanten Datei](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)für überwachte Ordner.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -389,7 +392,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/* 
 >
 >Sie müssen die Datei &quot;EmailEndpointConfigConstants.java&quot;in Ihr Projekt einschließen, um den folgenden Quick Beginn zu kompilieren und auszuführen. (Siehe Konstante Datei [E-Mail-Konfigurationswerte](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -528,7 +531,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/* 
 
 Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein Remoting-Endpunkt hinzugefügt. (Siehe [Hinzufügen von Remoting-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -633,7 +636,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein TaskManager-Endpunkt hinzugefügt. Beachten Sie, dass der Name der Kategorie *EncryptProcess* lautet. (Siehe TaskManager-Endpunkte [hinzufügen](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -742,7 +745,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 Im folgenden Java-Codebeispiel wird ein Endpunkt des Typs &quot;Überwachter Ordner&quot;geändert. Der Endpunkt ist für den *MyApplication/EncryptDocument* -Prozess vorgesehen. Der überwachte Ordner wird in `C:\NewWatchedFolder`geändert. (Siehe Endpunkte [ändern](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -892,7 +895,7 @@ Im folgenden Java-Codebeispiel wird ein Endpunkt des Typs &quot;Überwachter Ord
 
 Der folgende Java-Code entfernt einen EJB-Endpunkt aus einem Dienst mit dem Namen *MyApplication/EncryptDocument*. (Siehe [Entfernen von Endpunkten](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -1011,7 +1014,7 @@ Der folgende Java-Code entfernt einen EJB-Endpunkt aus einem Dienst mit dem Name
 
 Der folgende Java-Code ruft Informationen zu einem Endpunkt des Typs &quot;Überwachter Ordner&quot;ab. Informationen zu den einzelnen Konfigurationswerten werden abgerufen und angezeigt. Diese Code-Liste gibt an, ob jeder Konfigurationswert erforderlich oder optional ist. Darüber hinaus werden Name und Wert für jeden Konfigurationswert angezeigt. (Siehe [Abrufen von Endpunkt-Connector-Informationen](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
