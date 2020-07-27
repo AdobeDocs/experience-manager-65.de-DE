@@ -11,10 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
 workflow-type: tm+mt
 source-wordcount: '1970'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -43,7 +43,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    1. Verwenden Sie das initialize-Ereignis des Formulars, um die primäre Instanz des Teilformulars auszublenden. Der folgende Code beispielsweise blendet die primäre Instanz des Teilformulars bei der Formularinitialisierung aus. Außerdem überprüft es den App-Typ, um sicherzustellen, dass das Skript nur auf der Clientseite ausgeführt wird: 
 
-      ```
+      ```javascript
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
       RepeatSubform.presence = "hidden";
       }
@@ -53,7 +53,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
       Der folgende Code überprüft die ausgeblendete Instanz des Teilformulars. Wenn die ausgeblendete Instanz des Teilformulars gefunden wird, löschen Sie die ausgeblendete Instanz des Teilformulars, und fügen Sie eine neue Instanz ein. Wenn die ausgeblendete Instanz des Teilformulars nicht gefunden wird, fügen Sie einfach eine neue Instanz des Teilformulars ein.
 
-      ```
+      ```javascript
       if (RepeatSubform.presence == "hidden")
       {
       RepeatSubform.instanceManager.insertInstance(0);
@@ -69,7 +69,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
       Der Code überprüft die Anzahl der Teilformulare. Wenn die Anzahl der Teilformulare 1 erreicht, blendet der Code das Teilformular aus, anstatt es zu löschen.
 
-      ```
+      ```javascript
       if (RepeatSubform.instanceManager.count == 1) {
       RepeatSubform.presence = "hidden";
       } else {
@@ -79,7 +79,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    1. Öffnen Sie das presubmit-Ereignis des Formulars zum Bearbeiten. Fügen Sie dem Ereignis das folgende Skript hinzu, um die ausgeblendete Instanz des Skripts vor der Bearbeitung zu entfernen. Es verhindert das Senden von Daten des ausgeblendeten Teilformulars bei der Übermittlung.
 
-      ```
+      ```javascript
       if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
       RepeatSubform.instanceManager.removeInstance(0);
       }
@@ -95,7 +95,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Ich habe beim Layout Probleme mit fehlenden oder überlagerten Inhalten. Was ist der Grund dafür?
 
-   Antwort: Wenn sich an der gleichen Position ein Element zum Zeichnen von Text oder ein Bild mit einem anderen überlappenden Element befindet (z. B. ein Rechteck), ist der Inhalt zum Zeichnen von Text nicht sichtbar, wenn er später in der Reihenfolge des Dokuments (in der Ansicht zur Hierarchie von AEM Forms Designer) erscheint. PDF unterstützt eine transparente Überlagerung, HTML/Browser unterstützen jedoch keine transparente Überlagerung.
+   Antwort: Wenn sich an derselben Position ein Element zum Zeichnen von Text oder ein Bild mit einem anderen überlappenden Element befindet (z. B. ein Rechteck), ist der Inhalt zum Zeichnen von Text nicht sichtbar, wenn er später in der Dokument-Reihenfolge (in der Ansicht &quot;AEM Forms Designer-Hierarchie&quot;) erscheint. PDF unterstützt eine transparente Überlagerung, HTML/Browser unterstützen jedoch keine transparente Überlagerung.
 
 1. Warum werden einige Schriften im HTML-Formular in anderer Form angezeigt als beim Entwerfen des Formulars?
 
@@ -119,7 +119,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Für PDF-Formulare verfügt Adobe Acrobat über eine integrierte XTG-Engine zum Erstellen von Daten-Zwischenstrukturen und Objekten. Acrobat übernimmt auch Layout und Skripte.
 
-   Für HTML5-Formulare verfügen Browser nicht über eine integrierte XTG-Engine zum Erstellen von Daten-Zwischenstrukturen und Objekten aus rohen XDP-Byte. D. h. für HTML5-Formulare werden Zwischenstrukturen auf dem Server generiert und an den Client gesendet. Auf dem Client verwenden ein Javascript-basiertes Skript und die Layout-Engine diese Zwischenstrukturen.
+   Für HTML5-Formulare verfügen Browser nicht über eine integrierte XTG-Engine zum Erstellen von Daten-Zwischenstrukturen und Objekten aus rohen XDP-Byte. D. h. für HTML5-Formulare werden Zwischenstrukturen auf dem Server generiert und an den Client gesendet. Auf dem Client verwenden JavaScript-basierte Skript- und Layout-Engine diese Zwischenstrukturen.
 
    Die Größe der Zwischenstruktur hängt von der Größe der Original-XDP und der mit der XDP zusammengeführten Daten ab.
 
