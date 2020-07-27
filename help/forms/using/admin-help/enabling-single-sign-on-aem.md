@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1538'
+ht-degree: 95%
 
 ---
 
@@ -113,18 +116,19 @@ Sie können die einmalige Anmeldung auch über HTTP-Kopfzeilen aktivieren. (Sieh
 
    * Klicken Sie mit der rechten Maustaste auf „Arbeitsplatz“ und wählen Sie „Eigenschaften“.
    * Klicken Sie auf die Registerkarte „Computername“. Der  Wert von „Domänenname“ ist der Bereichsname.
+
    **Benutzer:** Der Anmeldename des in der vorherigen Aufgabe erstellten Benutzerkontos. In diesem Beispiel ist er auf „spnegodemo“ festgelegt.
 
 Wenn dieser Fehler auftritt:
 
-```as3
+```java
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 Versuchen Sie, den Benutzer als „spnegodemo@um.lc.com“ anzugeben:
 
-```as3
+```java
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
@@ -141,7 +145,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domäne gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Clientbrowser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
 
-Wenn der Zugriff auf den Server über den Computernamen wie https://lcserver:8080 erfolgt, sind keine Einstellungen für Internet Explorer erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranetsite behandelt. Bei Verwendung eines voll qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
+Wenn der Zugriff auf den Server über den Computernamen, z. B. https://lcserver:8080, erfolgt, sind keine Einstellungen für Internet Explorer erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranetsite behandelt. Bei Verwendung eines voll qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
 
 **Internet Explorer 6.x konfigurieren**
 
@@ -149,7 +153,7 @@ Wenn der Zugriff auf den Server über den Computernamen wie https://lcserver:808
 1. Klicken Sie auf das Symbol „Lokales Intranet“ und klicken Sie auf „Websites“.
 1. Klicken Sie auf „Erweitert“ und geben Sie in das Feld „Diese Website zur Zone hinzufügen“ die URL Ihres Formularservers ein. Geben Sie beispielsweise `https://lcserver.um.lc.com`
 1. Klicken Sie wiederholt auf „OK“, bis alle Dialogfelder geschlossen sind.
-1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld Browser-URL `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM Forms-Servers. Geben Sie beispielsweise in das Feld &quot;Browser-URL&quot;Folgendes ein: `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Mozilla Firefox konfigurieren**
 
