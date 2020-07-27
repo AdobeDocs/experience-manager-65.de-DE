@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 74%
 
 ---
 
@@ -23,13 +26,13 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
 1. Erstellen Sie einen Pfad `/apps/sampleApplication/wscomponents`.
 1. Kopieren Sie CSS, Bilder, js/libs, js/runtime und js/registry.js
 
-   * from `/libs/ws`
+   * von `/libs/ws`
    * in `/apps/sampleApplication/wscomponents`.
 
 1. Erstellen Sie im Ordner /apps/sampleApplication/wscomponents/js eine Datei mit dem Namen demomain.js. Kopieren Sie Code aus /libs/ws/js/main.js in demomain.js.
 1. Entfernen Sie in demomain.js den Code zum Initialisieren des Routers und fügen Sie folgenden Code hinzu:
 
-   ```
+   ```javascript
    require(['initializer','runtime/util/usersession'],
        function(initializer, UserSession) {
            UserSession.initialize(
@@ -44,7 +47,7 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
 1. Aktualisieren Sie `/apps/sampleApplication/wscomponents/js/registry.js` die Pfade von `/lc/libs/ws/` zu `/lc/apps/sampleApplication/wscomponents/` für Vorlagenwerte.
 1. In your portal home page JSP file at `/apps/sampleApplication/GET.jsp`, add the following code to include the required components inside the portal.
 
-   ```as3
+   ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
    <div class="UserInfoView gcomponent" data-name="userinfo"></div>
    <div class="filterListView gcomponent" data-name="filterlist"></div>
@@ -59,7 +62,7 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
 
 1. Um die Komponenten anzupassen, können Sie die vorhandenen Ansichten für die erforderliche Komponente wie folgt erweitern:
 
-   ```as3
+   ```javascript
    define([
        ‘jquery’,
        ‘underscore’,
@@ -81,7 +84,7 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
 
 1. Ändern Sie das Portal-CSS, um das Layout, die Positionierung und den Stil der erforderlichen Komponenten im Portal zu konfigurieren. Beispiel: Sie möchten die Hintergrundfarbe Schwarz in diesem Portal behalten, um die Komponente userInfo gut sichtbar darzustellen. You can do this by changing background color in `/apps/sampleApplication/wscomponents/css/style.css` as follows:
 
-   ```as3
+   ```css
    body {
        font-family: "Myriad pro", Arial;
        background: #000;    //This was origianlly #CCC
