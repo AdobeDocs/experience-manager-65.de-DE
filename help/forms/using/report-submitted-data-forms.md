@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +37,7 @@ Für diese API sind keine zusätzlichen Parameter erforderlich.
 
 Das Antwortobjekt enthält ein JSON-Array mit den Namen der Formulare und ihrem Repository-Pfad. Die Antwort weist die folgende Struktur auf:
 
-```
+```json
 [
  {formName: "<form name>",
  formPath: "<path to the form>" },
@@ -46,13 +49,13 @@ Das Antwortobjekt enthält ein JSON-Array mit den Namen der Formulare und ihrem 
 
 **URL-Anforderung**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
 ```
 
 **Antwort**
 
-```java
+```json
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
@@ -105,7 +108,7 @@ Geben Sie die folgenden Parameter in der Anforderungs-URL an:
 
 Das Antwortobjekt enthält ein JSON-Array mit Details zu den angegebenen Formularen. Die Antwort weist die folgende Struktur auf:
 
-```
+```json
 {
  total: "<total number of submissions>",
  items: [{ formName: "<name of the form>", formPath: "<path to the form>", owner: "<owner of the form>"},
@@ -116,13 +119,13 @@ Das Antwortobjekt enthält ein JSON-Array mit Details zu den angegebenen Formula
 
 **URL-Anforderung**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
 ```
 
 **Antwort**
 
-```java
+```json
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
@@ -147,7 +150,7 @@ Gibt bei erfolgreicher Veröffentlichung des Kommentars eine Kommentar-ID zurüc
 
 **URL-Anforderung**
 
-```
+```http
 https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
@@ -173,7 +176,7 @@ Geben Sie den folgenden Parameter in der Anforderungs-URL an:
 
 Das Antwortobjekt enthält ein JSON-Array mit allen mit der angegebenen Sende-ID verknüpften Kommentaren. Die Antwort weist die folgende Struktur auf:
 
-```
+```json
 [{
  owner: "<name of the commenter>",
  comment: "<comment text>",
@@ -185,7 +188,7 @@ Das Antwortobjekt enthält ein JSON-Array mit allen mit der angegebenen Sende-ID
 
 **URL-Anforderung**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
@@ -217,13 +220,13 @@ Gibt ein JSON-Objekt mit Informationen zum veröffentlichten Update zurück.
 
 **URL-Anforderung**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
 **Antwort**
 
-```java
+```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
 
