@@ -8,7 +8,10 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +26,7 @@ Sie können Metadaten in einer E-Mail-Vorlage verwenden, um Informationen in ein
 
 Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben und er wird zur Laufzeit durch einen Wert ersetzt (wenn eine E-Mail-Benachrichtigung erstellt wird). Im folgenden Codebeispiel ist beispielsweise &quot;$ {workitem_title}&quot; ein Schlüssel. Er wird zur Laufzeit durch den Wert „Loan-Request“ ersetzt.
 
-```xml
+```html
 subject=Task Assigned - ${workitem_title}
 
 message=<html><body>\n\
@@ -153,7 +156,7 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
 ### Verwenden von ECMAScript zum Hinzufügen benutzerdefinierter Metadaten  {#use-ecmascript-to-add-custom-metadata}
 
-[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) ist eine Skriptsprache. Sie wird für clientseitige Skript- und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um ECMAScript zum Hinzufügen benutzerdefinierter Metadaten für eine E-Mail-Vorlage zu verwenden:
+[ECMAScript](https://de.wikipedia.org/wiki/ECMAScript) ist eine Skriptsprache. Sie wird für clientseitige Skript- und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um ECMAScript zum Hinzufügen benutzerdefinierter Metadaten für eine E-Mail-Vorlage zu verwenden:
 
 1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. The URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
@@ -163,7 +166,7 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
 1. Fügen Sie der .ecma-Datei Code mit einer Logik zum Generieren benutzerdefinierter Metadaten in Schlüssel-Wert-Paaren hinzu. Beispielsweise generiert der folgende ECMAScript-Code benutzerdefinierte Metadaten für eine Versicherungsrichtlinie:
 
-   ```
+   ```javascript
    function getUserMetaData()  {
        //Commented lines below provide an overview on how to set user metadata in map and return it.
        var HashMap = Packages.java.util.HashMap;
@@ -205,10 +208,6 @@ Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Bund
 1. Behalten Sie im Feld „New Maven Project“ die Standardeinstellungen bei und klicken Sie auf „Next“. Wählen Sie einen Archetyp aus und klicken Sie auf „Next“. Beispiel: maven-archetype-quickstart. Geben Sie „Group Id“, „Artifact Id“, „version“ und „package“ für das Projekt an und klicken Sie auf „Finish“. Das Projekt wird erstellt.
 
 1. Öffnen Sie die Datei „pom.xml“ zur Bearbeitung und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Text:
-
-   ```
-   
-   ```
 
 1. Fügen Sie Quellcode hinzu, der die Java-Schnittstelle „WorkitemUserMetadataService“ zum Hinzufügen benutzerdefinierter Metadaten für E-Mail-Vorlagen verwendet. Ein Beispielcode wird unten angezeigt:
 
