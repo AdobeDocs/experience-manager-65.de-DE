@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 94%
 
 ---
 
 
 # ConvertPDF-Dienst {#convertpdf-service}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der Convert PDF-Dienst konvertiert PDF-Dokumente in PostScript oder Bilddateien (JPEG, JPEG 2000, PNG und TIFF). Das Konvertieren eines PDF-Dokuments in PostScript ist nützlich für die unbeaufsichtigte serverbasierte Druckausgabe auf PostScript-Druckern. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist beim Archivieren von Dokumenten in Content Management-Systemen praktisch, die PDF-Dokumente nicht unterstützen.
 
@@ -33,13 +36,13 @@ Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigensc
 
 Der ConvertPDF-Dienst stellt die folgenden APIs bereit:
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Konvertiert ein PDF-Dokument in eine PostScript-Datei.
+* **[toPS](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Konvertiert ein PDF-Dokument in eine PostScript-Datei.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Konvertiert ein PDF-Dokument in eine Bilddatei. Unterstützte Bildformate sind JPEG, JPEG2000, PNG und TIFF.
+* **[toImage](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Konvertiert ein PDF-Dokument in eine Bilddatei. Unterstützte Bildformate sind JPEG, JPEG2000, PNG und TIFF.
 
 ### Verwenden der toPS-API mit JSP oder Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -83,7 +86,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 ### Verwenden der toImage-API mit JSPs oder Servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -136,7 +139,7 @@ Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt dar
 
 Der folgende Beispielworkflow-Prozess konvertiert das Eingabedokument in ein PostScript-Dokument. Der Code ist in ECMAScript geschrieben und das Dokument wird als Workflow-Nutzlast übergeben:
 
-```
+```javascript
 /*
  * Imports
  */
