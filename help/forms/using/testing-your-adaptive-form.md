@@ -8,7 +8,10 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '966'
+ht-degree: 12%
 
 ---
 
@@ -21,7 +24,7 @@ Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives 
 
 Nachdem das adaptive Formular fertig ist, müssen Sie das adaptive Formular testen, bevor Sie es an die Endbenutzer übertragen. Sie können jedes Feld manuell testen (funktionelle Tests) oder das Testen des adaptiven Formulars automatisieren. Wenn Sie mehrere adaptive Formulare haben, wird das manuelle Testen aller Felder der adaptiven Formulare zu einer beängstigenden Aufgabe.
 
-AEM Forms bietet ein Testframework, Calvin, um das Testen Ihrer adaptiven Formulare zu automatisieren. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt JavaScript-APIs zum Erstellen von Tests bereit. Mit dem automatisierten Test können Sie das Erlebnis zum Vorausfüllen eines adaptiven Formulars testen, die Sendeerfahrung eines adaptiven Formulars, die Regeln für den Ausdruck von Überprüfungen, verzögertes Laden und Benutzeroberflächeninteraktionen testen. Dieses Lernprogramm führt Sie durch die Schritte zum Erstellen und Ausführen automatisierter Tests für ein adaptives Formular. Am Ende dieser Schulung können Sie Folgendes:
+AEM Forms bieten ein Testframework, Calvin, um das Testen Ihrer adaptiven Formulare zu automatisieren. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt JavaScript-APIs zum Erstellen von Tests bereit. Mit dem automatisierten Test können Sie das Erlebnis zum Vorausfüllen eines adaptiven Formulars testen, die Sendeerfahrung eines adaptiven Formulars, die Regeln für den Ausdruck von Überprüfungen, verzögertes Laden und Benutzeroberflächeninteraktionen testen. Dieses Lernprogramm führt Sie durch die Schritte zum Erstellen und Ausführen automatisierter Tests für ein adaptives Formular. Am Ende dieser Schulung können Sie Folgendes:
 
 * [Testsuite für Ihr adaptives Formular erstellen](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Erstellen von Tests für Ihr adaptives Formular](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -75,14 +78,14 @@ Stellen Sie sicher, dass jede Eigenschaft wie unten dargestellt einem separaten 
 1. Right-click the **[!UICONTROL WeRetailFormTestCases]** node click **Create** > **Create File**. In the Name field, type `js.txt` and click **OK**.
 1. Öffnen Sie die Datei &quot;js.txt&quot;zur Bearbeitung, fügen Sie den folgenden Code hinzu und speichern Sie die Datei:
 
-   ```
+   ```text
    #base=.
     init.js
    ```
 
 1. Erstellen Sie eine Datei, init.js, im `WeRetailFormTestCases`Knoten. Hinzufügen Sie den folgenden Code in die Datei und tippen Sie auf Alle **[!UICONTROL speichern]**.
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -218,6 +221,7 @@ Eine Testsuite kann mehrere Testfälle aufweisen. Sie können alle Testfälle in
 
    1. Tippen Sie im Fenster Tests auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
    1. Tippen Sie auf die Schaltfläche Tests **[!UICONTROL ausführen]** . Der leere Bereich auf der rechten Seite des Bildschirms wird durch ein adaptives Formular ersetzt, während der Test ausgeführt wird.
+
    ![all-test](assets/run-all-test.png)
 
 1. So führen Sie einen einzelnen Test aus der Test Suite aus:
