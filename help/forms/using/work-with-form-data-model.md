@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '4102'
 ht-degree: 61%
@@ -200,7 +200,7 @@ Verwenden Sie das Anforderungsattribut, um die zugehörigen Eigenschaften aus de
 
 1. Fügen Sie den folgenden Text in die Datei head.jsp ein:
 
-   ```
+   ```jsp
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
     request.setAttribute("paramMap",paraMap);%>
@@ -510,24 +510,24 @@ In der folgenden Tabelle werden die Einschränkungen für Eingabedaten basierend
 
 In diesem Beispiel werden die Eingabedaten anhand der in der Swagger-Datei definierten Beschränkungen &quot;maximum&quot;, &quot;minimum&quot;und &quot;required&quot;validiert. Die Eingabedaten erfüllen die Validierungskriterien nur, wenn die Bestell-ID vorhanden ist und ihr Wert zwischen 1 und 10 liegt.
 
-```xml
-parameters: [
-{
-name: "orderId",
-in: "path",
-description: "ID of pet that needs to be fetched",
-required: true,
-type: "integer",
-maximum: 10,
-minimum: 1,
-format: "int64"
-}
-]
+```json
+   parameters: [
+   {
+   name: "orderId",
+   in: "path",
+   description: "ID of pet that needs to be fetched",
+   required: true,
+   type: "integer",
+   maximum: 10,
+   minimum: 1,
+   format: "int64"
+   }
+   ]
 ```
 
 Eine Ausnahme wird angezeigt, wenn die Eingabedaten die Überprüfungskriterien nicht erfüllen. Wenn die Protokollebene auf &quot; **Debug**&quot;festgelegt ist, wird ein Fehler bei der Datei &quot; **error.log** &quot;protokolliert. Beispiel:
 
-```java
+```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
 ```
 
