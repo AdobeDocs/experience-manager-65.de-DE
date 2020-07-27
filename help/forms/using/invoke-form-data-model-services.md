@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 35%
@@ -28,13 +28,13 @@ In diesem Dokument wird das Schreiben von JavaScript im API`guidelib.dataIntegra
 
 The `guidelib.dataIntegrationUtils.executeOperation` API invokes a service from within an adaptive form field. Für die API gilt die folgende Syntax:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
 The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. Die Struktur weist die folgende Syntax auf.
 
-```
+```javascript
 var operationInfo = {
 formDataModelId,
 operationTitle,
@@ -95,7 +95,7 @@ The following sample script uses the `guidelib.dataIntegrationUtils.executeOpera
 
 The `getAccountById` operation takes the value in the `employeeID` form field as input for the `empId` argument and returns employee name, account number, and account balance for the corresponding employee. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. For example, the value in `name` argument is populated in the `fullName` form element and value for `accountNumber` argument in `account` form element.
 
-```
+```javascript
 var operationInfo = {
 "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeAccount",
 "operationName": "getAccountDetails"
@@ -115,7 +115,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 Sie können den Formulardatenmodelldienst auch über die `guidelib.dataIntegrationUtils.executeOperation` API mit einer Rückruffunktion aufrufen. Für die API gilt die folgende Syntax:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
@@ -131,7 +131,7 @@ Der `GETOrder` Vorgang nimmt den Wert im `Order ID` Formularfeld als Eingabe fü
 >
 > Wenn Sie die `success` Rückruffunktion verwenden, werden die Ausgabewerte nicht in die angegebenen Formularfelder eingefügt.
 
-```
+```javascript
 var operationInfo = {
     "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
     "operationTitle": "GETOrder",
