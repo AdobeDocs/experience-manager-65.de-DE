@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ## Erstellen von Gruppen beim Autor {#creating-groups-on-author}
 
-Bei AEM-Autoreninstanz aus der globalen Navigation:
+Bei AEM Author-Instanz über die globale Navigation:
 
 * Wählen Sie **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
 * Wählen Sie **[!UICONTROL Ordner]** für Interaktion aus, um ihn zu öffnen.
@@ -49,7 +52,7 @@ Diese Konsolen ähneln der Communities Sites-Konsole.
 
    * **[!UICONTROL Community-Gruppentitel]**: Kunst.
    * **[!UICONTROL Community-Gruppenbeschreibung]**: Eine übergeordnete Gruppe für verschiedene Kunstgruppen.
-   * **[!UICONTROL Community-Gruppenstamm]**: Als Standard *beibehalten*.
+   * **[!UICONTROL Community-Gruppenstamm]**: *als Standard* beibehalten.
    * **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprache(n)]**: Verwenden Sie das Dropdownmenü, um die verfügbaren Gemeinschaftsgruppensprachen auszuwählen. Das Menü zeigt alle Sprachen an, in denen die übergeordnete Community-Site erstellt wurde. Benutzer können in diesem Schritt eine der folgenden Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Konsole &quot;Gruppen&quot;der jeweiligen Community-Sites erstellt.
    * **[!UICONTROL Community-Gruppenname]**: Kunst.
    * **[!UICONTROL Vorlage]**: Dropdown-Liste `Reference Group.`
@@ -91,7 +94,7 @@ Der `groups` Ordner enthält jetzt zwei Gruppen (aktualisieren Sie die Seite).
 
 Bewegen Sie den Mauszeiger vor dem Erstellen von Gruppen, die innerhalb der `arts` Gruppe verschachtelt sind, über die `arts` Karte und wählen Sie das Symbol &quot;Veröffentlichen&quot;aus, um sie zu veröffentlichen.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![liking-component](assets/liking-component.png)
 
 Warten Sie auf die Bestätigung, dass die Gruppe veröffentlicht wurde.
 
@@ -130,7 +133,7 @@ So navigieren Sie von der Konsole Communities Sites zu den verschachtelten Grupp
 * Karte **[!UICONTROL für Kunst auswählen]**
 * Ordner &quot; **[!UICONTROL Gruppen]** &quot;auswählen
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configure-like](assets/configure-liking.png)
 
 ## Veröffentlichungsgruppen {#publishing-groups}
 
