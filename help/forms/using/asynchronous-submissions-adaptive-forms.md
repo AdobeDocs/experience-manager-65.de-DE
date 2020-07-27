@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 67%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
 
 Webformulare werden herkömmlicherweise für die synchrone Übermittlung konfiguriert. Wenn Benutzer ein Formular synchron senden, werden sie zu einer Bestätigungsseite, zu einer Danksagungsseite oder bei fehlgeschlagener Übermittlung zu einer Fehlerseite umgeleitet. Allerdings sind moderne Webabläufe wie Einzelseitenanwendungen zunehmend beliebt. Dabei bleibt die Webseite unverändert, während die Client-Server-Interaktion im Hintergrund abläuft. Sie können diese Erfahrung jetzt in adaptiven Formularen bieten, indem Sie die asynchrone Übermittlung konfigurieren.
 
-Bei asynchroner Übermittlung fügt der Formularentwickler ein separates Erlebnis ein, z. B. beim Weiterleiten zu einem anderen Formular oder einem separaten Abschnitt der Website. Der Autor kann auch separate Dienste wie das Senden von Daten an einen anderen Datenspeicher oder eine benutzerdefinierte Analytics-Engine hinzufügen. Bei asynchroner Übermittlung verhält sich ein adaptives Formular wie eine Einzelseitenanwendung, da das Formular nicht erneut geladen wird oder sich seine URL nicht ändert, wenn die gesendeten Formulardaten auf dem Server validiert werden.
+Bei asynchroner Übermittlung fügt der Formularentwickler ein separates Erlebnis ein, z. B. beim Weiterleiten zu einem anderen Formular oder einem separaten Abschnitt der Website. Der Autor kann auch separate Dienste wie das Senden von Daten an einen anderen Datenspeicher oder eine benutzerdefinierte Analytics-Engine hinzufügen. Bei asynchroner Übermittlung verhält sich ein adaptives Formular wie eine Einzelseitenanwendung, da das Formular nicht erneut geladen wird oder sich die URL nicht ändert, wenn die gesendeten Formulardaten auf dem Server validiert werden.
 
 Im Folgenden finden Sie Details zu asynchronen Übermittlung in adaptiven Formularen.
 
@@ -48,7 +51,7 @@ Im Folgenden wird zunächst die Serverantwort für Erfolgs- und Fehlerereignisse
 
 Die Serverantwort für Erfolgsereignis bei Übermittlung weist folgende Struktur auf:
 
-```
+```json
 {
   contentType : "<xmlschema or jsonschema>",
   data : "<dataXML or dataJson>" ,
@@ -70,7 +73,7 @@ Der Erfolgs-Handler liest die Serverantwort und leitet dementsprechend zur konfi
 
 Die Serverantwort für Fehlerereignis bei Übermittlung weist folgende Struktur auf:
 
-```
+```json
 {
    errorCausedBy : "<CAPTCHA_VALIDATION or SERVER_SIDE_VALIDATION>",
 
