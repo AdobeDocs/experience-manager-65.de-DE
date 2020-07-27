@@ -8,10 +8,10 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 12%
+source-wordcount: '969'
+ht-degree: 10%
 
 ---
 
@@ -213,8 +213,8 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
 
 Eine Testsuite kann mehrere Testfälle aufweisen. Sie können alle Testfälle in einer Testsuite auf einmal oder einzeln ausführen. Wenn Sie einen Test durchführen, werden die Ergebnisse durch die Symbole angezeigt:
 
-* Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: ![](assets/save_icon.svg)
-* Das X-Symbol steht für einen gescheiterten Test: ![](assets/close-icon.svg)
+* A checkmark icon indicates a passed test: ![save_icon](assets/save_icon.svg)
+* An &quot;X&quot; icon indicates a failed test: ![close-icon](assets/close-icon.svg)
 
 1. Navigieren Sie zu AEM-Symbol > **[!UICONTROL Werkzeuge]**> **[!UICONTROL Vorgänge]**> **[!UICONTROL Tests]**
 1. So führen Sie alle Tests der Test Suite aus:
