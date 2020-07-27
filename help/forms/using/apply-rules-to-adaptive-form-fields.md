@@ -8,7 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 67%
 
 ---
 
@@ -88,7 +91,7 @@ Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Lief
 
 1. ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Ziehen Sie die Felder **[!UICONTROL Lieferadresse, Bundesland und Postleitzahl]** aus der Registerkarte &quot;Formularobjekte&quot;in die entsprechende Tabelleneigenschaft &quot;.property&quot;(z. B. customerdetails .shippingAddress) des **[!UICONTROL Drop-Objekts oder wählen Sie hier]** im Feld &quot; **[!UICONTROL INPUT]** &quot;aus. Alle Felder mit dem Präfix tableName (in diesem Anwendungsfall beispielsweise Kundendetails) dienen als Eingabedaten für den Updateservice. Der gesamte Inhalt in diesen Feldern wird in der Datenquelle aktualisiert.
+   Ziehen Sie die Felder **[!UICONTROL Lieferadresse, Bundesland und Postleitzahl]** aus der Registerkarte &quot;Formularobjekte&quot;in die entsprechende Tabelleneigenschaft &quot;.property&quot;(z. B. customerdetails .shippingAddress) des **[!UICONTROL Drop-Objekts oder wählen Sie hier]** im Feld &quot; **[!UICONTROL INPUT]** &quot;aus. Alle Felder mit dem Präfix tableName (in diesem Anwendungsfall z. B. Kundendetails) dienen als Eingabedaten für den Updateservice. Der gesamte Inhalt in diesen Feldern wird in der Datenquelle aktualisiert.
 
    >[!NOTE]
    >
@@ -123,7 +126,7 @@ Das folgende Verfahren zeigt, wie eine Regel erstellt wird, die eine Fehlermeldu
 
 1. Ersetzen Sie den Eingabevariablenabschnitt durch den folgenden Code:
 
-   ```
+   ```javascript
    var inputs = {
        "id" : this
    };
@@ -131,7 +134,7 @@ Das folgende Verfahren zeigt, wie eine Regel erstellt wird, die eine Fehlermeldu
 
 1. Ersetzen Sie den Abschnitt guidelib.dataIntegrationUtils.executeOperation (operationInfo, Eingaben, Ausgaben) durch den folgenden Code:
 
-   ```
+   ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
      if (result) {
          result = JSON.parse(result);
