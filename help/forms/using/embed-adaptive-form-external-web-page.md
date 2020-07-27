@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 71%
@@ -120,14 +120,14 @@ Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server o
 
 1. Öffnen Sie die Konfigurationsdatei `httpd.conf` und heben Sie den Kommentar für die folgenden Codezeilen auf. Alternativ können Sie die folgenden Codezeilen in die Datei einfügen.
 
-   ```
+   ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. Richten Sie Proxy-Regeln ein, indem Sie die folgenden Codezeilen in der Konfigurationsdatei `httpd-proxy.conf` hinzufügen.
 
-   ```
+   ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
@@ -136,7 +136,7 @@ Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server o
 
 Wenn Sie den AEM-Server nicht auf einem Kontextpfad bereitstellen, lauten die Proxyregeln auf der Apache-Ebene wie folgt:
 
-```java
+```text
 ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
@@ -151,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie die URLs &quot;Senden&quot;, &quot;Vorausfüllen&quot;und andere URLs zum zulassungsliste des auf der Dispatcher-Ebene hinzufügen.
+>Wenn Sie eine andere Topologie einrichten, stellen Sie sicher, dass Sie der Zulassungsliste auf der Dispatcher-Ebene die URLs &quot;Senden&quot;, &quot;Vorausfüllen&quot;und andere URLs hinzufügen.
 
 ## Best Practices {#best-practices}
 
