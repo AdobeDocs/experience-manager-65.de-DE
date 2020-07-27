@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1894'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 ## Voraussetzungen {#prerequisites}
 
-* [AEM 6.5 Platform](/help/sites-deploying/deploy.md)
+* [AEM 6.5-Plattform](/help/sites-deploying/deploy.md)
 
 * AEM Communities-Lizenz
 
@@ -138,7 +138,7 @@ Weitere Informationen zum Installieren von Bundles finden Sie auf der Seite [Web
 
 #### Beispiel: Installiertes MySQL Connector-Bundle {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### SCORM-Paket {#scorm-package}
 
@@ -222,7 +222,7 @@ Standardmäßig wird die `AEM Communities Publisher Configuration` OSGi-Konfigur
 
 Daher müssen Sie die Konfiguration für alle sekundären Veröffentlichungsinstanzen **bearbeiten, um das Kontrollkästchen zu deaktivieren** . **`Primary Publisher`**
 
-![](/help/communities/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 Für alle anderen (sekundären) Veröffentlichungsinstanzen in einer Veröffentlichungsfarm:
 
@@ -266,11 +266,11 @@ Die folgenden Abbildungen zeigen die Ergebnisse einer Änderung des Anschlusses 
 
 #### Standardagent (veröffentlichen) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configure-limits](../assets/configure-limits.png)
 
 #### Agenten für Rückwärtsreplikation (Rückwärtsveröffentlichen) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### Tunneldienst beim Autor {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ So aktivieren Sie den Tunneldienst:
 * Kontrollkästchen **Aktivieren **Kontrollkästchen
 * Wählen Sie **Save** aus.
 
-![](/help/communities/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### Crypto-Schlüssel replizieren {#replicate-the-crypto-key}
 
@@ -351,7 +351,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Granite Crypto-Bundle aktualisieren](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### Granite Crypto-Bundle aktualisieren {#refresh-the-granite-crypto-bundle}
 
@@ -362,7 +362,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * find `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * auswählen **Aktualisieren**
 
-![](/help/communities/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * Nach einem Augenblick sollte ein **Erfolgsdialog angezeigt werden:
    `Operation completed successfully.`
