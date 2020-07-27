@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 88%
@@ -338,7 +338,7 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL Neue Datei erstellen]** und legen Sie eine Datei mit der Erweiterung .txt an. Beispiel: `js.txt` Fügen Sie den folgenden Code zur neu erstellten .txt-Datei hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -349,7 +349,7 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
 1. Fügen Sie der Datei „POST.jsp“ folgenden Code hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**. Der Code validiert die Länge des Dateinamens.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________
