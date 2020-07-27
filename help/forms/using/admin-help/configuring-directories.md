@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3246'
+ht-degree: 78%
 
 ---
 
@@ -144,9 +147,9 @@ Obwohl „Basis-DN“ eine obligatorische Einstellung in Administration Console 
 
 **Einrichtung:** Schema-Attribut für den Namen der Organisation, der der Benutzer angehört.
 
-**Primäre E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse des Benutzers.
+**Primär-E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse des Benutzers.
 
-**Sekundäre E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse des Benutzers.
+**Sekundär-E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse des Benutzers.
 
 **Telefon:** Schema-Attribut für die Telefonnummer des Benutzers.
 
@@ -192,9 +195,9 @@ Wird der DN als eindeutiger Bezeichner angegeben, muss „Eindeutiger Bezeichner
 
 **Einrichtung:** Schema-Attribut für den Namen der Organisation, zu der die Gruppe gehört
 
-**Primäre E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse der Gruppe
+**Primär-E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse der Gruppe
 
-**Sekundäre E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse der Gruppe
+**Sekundär-E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse der Gruppe
 
 **Zeitstempel ändern:** Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert fest, um TimeStamp zu ändern. (Siehe Delta-Ordnersynchronisierung aktivieren.)
 
@@ -240,7 +243,7 @@ Zum Erstellen einer virtuellen Listenansicht muss ein Paar von Einträgen vorhan
 
 Im Folgenden finden Sie eine Beispielskript-LDIF für VLV-Einträge für Benutzer:
 
-```as3
+```text
  dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
  objectclass: top
  objectclass: vlvSearch
@@ -290,11 +293,11 @@ Beenden Sie nach dem Konfigurieren der Ordnereinstellungen und dem Erstellen der
 1. Im Anschluss an das Erstellen der Objekteinträge beenden Sie den Sun ONE Server.
 1. Generieren Sie mit dem Tool „vlvindex“ den Index durch Eingabe des folgenden Textes:
 
-   *Ordnerserverinstanz*`\vlvindex.bat -n userRoot -T lcuser`
+   *Ordnerserverinstanz* `\vlvindex.bat -n userRoot -T lcuser`
 
    Folgende Ausgabe wird erzeugt:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle
     [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle
     [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%).
@@ -309,11 +312,11 @@ Beenden Sie nach dem Konfigurieren der Ordnereinstellungen und dem Erstellen der
 
 1. Wenn die virtuelle Listenansicht für Gruppen aktiviert ist, muss auch der entsprechende Index für die Gruppen erstellt werden. Sie können dann überprüfen, ob die Indizes erstellt wurden, indem Sie folgenden Befehl ausführen:
 
-   *sun one server directory* `\shared\bin>ldapsearch -h`*hostname *`-p`*port nr*`-s base -b "" objectclass=*`
+   *Sun one server directory* `\shared\bin>ldapsearch -h`*hostname *`-p`*port* `-s base -b "" objectclass=*`
 
    Folgende Ausgabe wird erzeugt (Beispieldaten):
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*
     ldapsearch.exe: started Tue Nov 27 16:34:20 2007
     version: 1
