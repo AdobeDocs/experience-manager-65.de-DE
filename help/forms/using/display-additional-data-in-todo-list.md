@@ -10,7 +10,10 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 90%
 
 ---
 
@@ -36,7 +39,7 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
 
    Ändern Sie beispielsweise `/apps/ws/locales/en-US/translation.json` für Englisch:
 
-   ```
+   ```json
    "task" : {
            "reminder" : {
                "value" : "Reminder",
@@ -112,7 +115,7 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
 
 1. Fügen Sie beispielsweise Informationen im Aufgabenblock hinzu:
 
-   ```
+   ```json
    "stepname" : {
                "value" : "Step Name",
                "tooltip" : "This task belongs to __stepName__ step"
@@ -139,13 +142,13 @@ Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen 
 
 1. Kopieren `task.html`:
 
-   * from: `/libs/ws/js/runtime/templates/`
+   * von: `/libs/ws/js/runtime/templates/`
    * in: `/apps/ws/js/runtime/templates/`
 
 1. Hinzufügen die neuen Informationen an `/apps/ws/js/runtime/templates/task.html`.
 
    Fügen Sie beispielsweise Folgendes hinzu `div class="taskProperties"`:
 
-   ```
+   ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
