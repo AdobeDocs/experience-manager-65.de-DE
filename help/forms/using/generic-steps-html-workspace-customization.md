@@ -11,7 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 52%
 
 ---
 
@@ -34,7 +37,7 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 1. Kopieren Sie den `/libs/ws/locales` Ordner im `/apps/ws` Ordner. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Update the references and relative paths in the `GET.jsp` file, as shown below, and click **[!UICONTROL Save all]**.
 
-   ```
+   ```jsp
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
    ```
 
@@ -83,7 +86,7 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
    1. Erstellen Sie einen Ordner mit dem Namen `jqueryui`at `/apps/ws/js/libs`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   1. Kopieren `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` nach `/apps/ws/js/libs/jqueryui`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Kopieren Sie `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` nach `/apps/ws/js/libs/jqueryui`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Führen Sie die folgenden Schritte für HTML-Anpassungen aus:
 
@@ -91,7 +94,7 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
    1. Erstellen Sie `/apps/ws/js/runtime`unter einen Ordner mit dem Namen `templates`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   1. Kopieren `/libs/ws/js/main.js` nach `/apps/ws/js/main.js`.
+   1. Kopieren Sie `/libs/ws/js/main.js` nach `/apps/ws/js/main.js`.
 
    1. Copy /libs/ws/js/registry.js to `/apps/ws/js/registry.js`.
 
