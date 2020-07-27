@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 70%
 
 ---
 
@@ -29,7 +32,7 @@ Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
 1. Kopieren Sie den Ordner „ws“ unter „/libs“ und fügen Sie ihn unter „/apps “ein. Benennen Sie den Ordner in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. In `GET.jsp` at `/apps/ws2`, make the following code changes. Ersetzen Sie den Code
 
-   ```
+   ```html
    <html lang="en">
    <head>
        <meta charset="utf-8">
@@ -43,7 +46,7 @@ Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
    durch den folgenden Code
 
-   ```
+   ```html
    <html lang="en">
    <head>
        <meta charset="utf-8">
