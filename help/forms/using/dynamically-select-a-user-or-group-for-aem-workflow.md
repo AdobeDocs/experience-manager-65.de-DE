@@ -8,7 +8,10 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 997a35b331385738a8d4a3fcab89c950ed4b7d33
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '947'
+ht-degree: 95%
 
 ---
 
@@ -53,7 +56,7 @@ ECMAScript ist eine Skriptsprache. Sie wird für die clientseitige Skripterstell
 
 Im folgenden Beispiel wählt das ECMAScript dynamisch einen Verantwortlichen für den Schritt „Aufgabe zuweisen“ aus. In diesem Skript wird ein Benutzer basierend auf dem Pfad der Nutzlast ausgewählt. Vor der Verwendung dieses Skripts müssen Sie sicherstellen, dass alle Benutzer, die im Skript angegeben sind, in AEM vorhanden sind. Wenn die im Skript enthaltenen Benutzer nicht in AEM existieren, schlägt der entsprechende Prozess möglicherweise fehl.
 
-```
+```javascript
 function getParticipant() {
 
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -77,7 +80,7 @@ Im folgenden Beispiel wählt das ECMAScript dynamisch einen Verantwortlichen fü
 >
 >Bei der Verwendung von ECMAScript für Adobe Sign muss sich das Skript im CRX-Repository unter /apps/fd/workflow/scripts/adobesign/ befinden und es sollte über eine Funktion namens getAdobeSignRecipients verfügen, die eine Liste der Benutzer zurückgibt.
 
-```
+```javascript
 function getAdobeSignRecipients() {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();
@@ -114,7 +117,7 @@ function getAdobeSignRecipients() {
 
 ## Verwenden der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder eine Gruppe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Sie können die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwenden, um einen Benutzer oder eine Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuzuweisen“ dynamisch auszuwählen. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch ist die Option zur Auswahl in den Komponenten „Aufgabe zuweisen“ und „Adobe Sign“ im AEM-Arbeitsablauf verfügbar.
+Sie können die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwenden, um einen Benutzer oder eine Gruppe für die Schritte „Adobe Sign“ und „Aufgabe zuzuweisen“ dynamisch auszuwählen. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch ist die Option zur Auswahl in den Komponenten „Aufgabe zuweisen“ und „Adobe Sign“ im AEM-Arbeitsablauf verfügbar.
 
 Sie benötigen die [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)-JAR und die [granite-JAR](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Codebeispiele zu kompilieren. Fügen Sie diese JAR-Dateien dem OSGi-Bundle-Projekt als externe Abhängigkeiten hinzu. Sie können eine beliebigen Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
 
@@ -223,7 +226,7 @@ Sie benötigen die [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/a
    </project>
    ```
 
-1. Fügen Sie Quellcode hinzu, der die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, um einen Benutzer oder eine Gruppe für den Schritt „Aufgabe zuweisen“ dynamisch zuzuweisen. Unter [Beispiel für die dynamische Auswahl eines Benutzers oder einer Gruppe mithilfe einer Java-Schnittstelle](#-sample-scripts-for) finden Sie einen Beispielcode.
+1. Fügen Sie Quellcode hinzu, der die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, um einen Benutzer oder eine Gruppe für den Schritt „Aufgabe zuweisen“ dynamisch zuzuweisen. Unter [Beispiel für die dynamische Auswahl eines Benutzers oder einer Gruppe mithilfe einer Java-Schnittstelle](#-sample-scripts-for) finden Sie einen Beispielcode.
 1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Bundle-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Paket zu erstellen:
 
    `mvn clean install`
