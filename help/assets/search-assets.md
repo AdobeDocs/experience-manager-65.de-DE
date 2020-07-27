@@ -4,9 +4,9 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 8f8134d6c4fcc0ef54f9cc8298936c5c7d746c09
 workflow-type: tm+mt
-source-wordcount: '5830'
+source-wordcount: '5860'
 ht-degree: 54%
 
 ---
@@ -325,6 +325,8 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 Die Ermittlung von Assets beruht auf der Indexierung von DAM-Inhalten, einschließlich der Metadaten. Die schnellere und genaue Erkennung von Assets beruht auf optimierter Indexierung und geeigneten Konfigurationen. Siehe [Suchindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [Eichen-Abfragen und Indexierung](/help/sites-deploying/queries-and-indexing.md)und [Best Practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
+Um bestimmte Assets aus den Suchergebnissen auszuschließen, verwenden Sie die `excludedPath` Eigenschaft im Lucene-Index.
+
 ### Visuelle Suche oder Ähnlichkeitssuche {#configvisualsearch}
 
 Die visuelle Suche verwendet intelligentes Tagging und erfordert [!DNL Experience Manager] 6.5.2.0 oder höher. Führen Sie nach der Konfiguration der Funktion für intelligentes Tagging die folgenden Schritte aus:
@@ -364,6 +366,8 @@ Um die Suchgeschwindigkeit zu erhöhen, suchen Sie [!DNL Experience Manager Asse
 ### Text beim Hochladen von Assets extrahieren {#extracttextupload}
 
 Sie können konfigurieren, [!DNL Experience Manager] dass Text aus den Assets extrahiert wird, wenn Benutzer Assets wie PSD- oder PDF-Dateien hochladen. [!DNL Experience Manager] indiziert den extrahierten Text und hilft Benutzern, diese Assets anhand des extrahierten Textes zu suchen. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+
+Wenn die Extraktion von Text für Ihre Bereitstellung zu ressourcenintensiv ist, sollten Sie die Extraktion [von Text](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)deaktivieren.
 
 ### Benutzerdefinierte Vorhersagen zum Filtern von Suchergebnissen {#custompredicates}
 
