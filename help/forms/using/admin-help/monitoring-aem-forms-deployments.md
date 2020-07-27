@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 76%
 
 ---
 
@@ -32,7 +35,7 @@ AEM Forms stellt zwei registrierte MBeans bereit, die Informationen zur Navigati
 
 Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
 
-```as3
+```java
  public String getServiceId();
  public int getMajorVersion();
  public int getMinorVersion();
@@ -42,7 +45,7 @@ Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken
 
 Auf diese öffentlichen OperationStatistic MBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
 
-```as3
+```java
  // InvocationCount: The number of times the method is invoked.
  public long getInvocationCount();
  // InvocationStartTime: The time at which the method started to execute.
@@ -72,33 +75,33 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **MBean-Struktur**
 
-**** Adobe-Domänenname: Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
+**Adobe-Domänenname:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
 
-**** ServiceType: AdobeService ist der Name, mit dem alle Dienste aufgelistet werden.
+**ServiceType:** AdobeService ist der Name, der zur Liste aller Dienste verwendet wird.
 
-**** AdobeServiceName: Dienstname oder Dienst-ID.
+**AdobeServiceName:** Dienstname oder Dienst-ID.
 
-**** Version: Version des Dienstes.
+**Version:** Version des Dienstes.
 
 **Vorgangsstatistiken**
 
-**** Aufrufzeit: Zeit für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
+**Aufrufzeit:** Zeit für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
 
-**** Anzahl der Aufrufe: Die Häufigkeit, mit der der Dienst aufgerufen wird.
+**Anzahl der Aufrufe:** Die Häufigkeit, mit der der Dienst aufgerufen wird.
 
-**** Durchschnittliche Aufrufzeit: Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
+**Durchschnittliche Aufrufzeit:** Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
 
-**** Max. Aufrufzeit: Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
+**Max. Aufrufzeit:** Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**** Min. Aufrufzeit: Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
+**Min. Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**** Ausnahmeanzahl: Anzahl der Aufrufe, die zu Fehlern führten.
+**Ausnahmeanzahl:** Anzahl der Aufrufe, die zu Fehlern führten.
 
-**** Ausnahmemeldung: Die Fehlermeldung der letzten aufgetretenen Ausnahme.
+**Ausnahmemeldung:** Die Fehlermeldung der letzten aufgetretenen Ausnahme.
 
-**** Datum der letzten Probenahme: Das Datum des letzten Aufrufs.
+**Datum der letzten Probenahme:** Das Datum des letzten Aufrufs.
 
-**** Zeiteinheit: Der Standardwert ist Millisekunde.
+**Zeiteinheit:** Der Standardwert ist Millisekunde.
 
 Zum Aktivieren der JMX-Überwachung müssen Anwendungsserver in der Regel konfiguriert werden. Weitere Informationen dazu erhalten Sie in der Dokumentation für Ihren Anwendungsserver.
 
@@ -111,7 +114,7 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
 1. Bearbeiten Sie die Datei „run.bat/sh“, die sich unter „InstallJBoss/bin“ befindet.
 1. Suchen Sie die Zeile JAVA_OPTS und fügen Sie Folgendes hinzu:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -120,7 +123,7 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
 1. Edit the startWebLogic.bat file that is located under `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Suchen Sie die Zeile JAVA_OPTS und fügen Sie Folgendes hinzu:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -139,13 +142,13 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
 
 1. Fügen Sie in der Verwaltungskonsole („Application server“ > „server1“ > „Process Definition“ > „JVM“) die folgende Zeile in das Feld „Generic JVM Argument“ ein:
 
-   ```as3
+   ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
 1. Fügen Sie die folgenden drei Zeilen in der Datei „/opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties“ (oder &lt;Your Websphere JRE>/ lib/management/management.properties) hinzu oder heben Sie den Kommentar auf:
 
-   ```as3
+   ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect
     com.sun.management.jmxremote.authenticate=false
     com.sun.management.jmxremote.ssl=false
