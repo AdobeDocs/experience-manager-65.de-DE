@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6120'
 ht-degree: 26%
 
 ---
@@ -187,7 +187,7 @@ Tippen Sie auf das Fragment Dokument, dann auf ![configure_icon](assets/configur
 
    ![webchannelAssets](assets/webchannelassets.png)
 
-   Tippen Sie auf das Fragment Dokument, dann auf ![configure_icon](assets/configure_icon.png) (Konfigurieren) und dann auf **[!UICONTROL Eigenschaften]** im Sidekick der interaktiven Kommunikation. Im Abschnitt &quot; **[!UICONTROL Variablen und Datenmodellobjekte]** &quot;werden die Variablen, einschließlich der ausgeblendeten Variablen, und die Datenmodellobjekte, die in den Dokument-Fragmenten verwendet werden, Liste. Verwenden Sie das Symbol zum ![Bearbeiten](assets/edit.svg) (Bearbeiten) neben jedem Datenmodellobjekt oder jeder Datenvariablen, um die Eigenschaften zu bearbeiten. Darüber hinaus können Sie für Dokument-Fragmente, die mit Print Kanal in Web Kanal [automatisch generiert](#synchronize) wurden, neben jedem Datenmodellobjekt und jeder Datenvariable das Symbol ![](assets/cancelinheritance.png) (Vererbung abbrechen) verwenden, um die Vererbung zu [beenden und zu bearbeiten](#cancelinheritance) .
+   Tippen Sie auf das Fragment Dokument, dann auf ![configure_icon](assets/configure_icon.png) (Konfigurieren) und dann auf **[!UICONTROL Eigenschaften]** im Sidekick der interaktiven Kommunikation. Im Abschnitt &quot; **[!UICONTROL Variablen und Datenmodellobjekte]** &quot;werden die Variablen, einschließlich der ausgeblendeten Variablen, und die Datenmodellobjekte, die in den Dokument-Fragmenten verwendet werden, Liste. Verwenden Sie das Symbol zum ![Bearbeiten](assets/edit.svg) (Bearbeiten) neben jedem Datenmodellobjekt oder jeder Datenvariablen, um die Eigenschaften zu bearbeiten. Darüber hinaus verwenden Sie für Dokument-Fragmente, die mit Print Kanal [automatisch in Web Kanal generiert](#synchronize) wurden, neben jedem Datenmodellobjekt und jeder Datenvariable das Symbol &quot; ![cancelinerbance](assets/cancelinheritance.png) &quot;(Vererbung abbrechen), um die Vererbung [zu](#cancelinheritance) beenden und zu bearbeiten.
 
 1. Um weitere Komponenten im Webkanal hinzuzufügen, tippen Sie bei dem ausgewählten Webkanal auf **[!UICONTROL Komponenten]**. Ziehen Sie Komponenten nach Bedarf per Drag &amp; Drop in den Web-Kanal Ihrer interaktiven Kommunikation und konfigurieren Sie sie.
 
@@ -386,12 +386,12 @@ Tippen Sie auf das Stammbedienfeld in der Webvorlage und dann auf **+** , um der
 
 #### Hinzufügen oder Bearbeiten von Text in Tabellenzellen {#addedittexttable}
 
-1. Wählen Sie das Standardtextfeld in der Tabellenzelle aus und tippen Sie auf ![](assets/edit.png) (Bearbeiten).
-1. Geben Sie den Text in die Tabellenzelle ein und tippen Sie auf , ![](assets/done_icon.png) um ihn zu speichern.
+1. Wählen Sie das Standardtextfeld in der Tabellenzelle aus und tippen Sie auf ![Bearbeiten](assets/edit.png) (Bearbeiten).
+1. Geben Sie den Text in die Tabellenzelle ein und tippen Sie auf ![done_icon](assets/done_icon.png) , um ihn zu speichern.
 
 #### Erstellen von Bindungen zwischen Tabellenzellen und Datenmodellobjektelementen {#createbindingtablecells}
 
-1. Wählen Sie das Standardtextfeld in der Tabellenzeile aus und tippen Sie auf ![](assets/edit.png) (Bearbeiten).
+1. Wählen Sie das Standardtextfeld in der Tabellenzeile aus und tippen Sie auf ![Bearbeiten](assets/edit.png) (Bearbeiten).
 1. Tippen Sie auf die Dropdown-Liste &quot;Datenmodellobjekte&quot;und wählen Sie die Eigenschaft aus.
 1. Tippen Sie auf , um eine Bindung zwischen der Tabellenzelle und der Objekteigenschaft des Datenmodells zu speichern und zu erstellen.
 
@@ -399,10 +399,10 @@ Tippen Sie auf das Stammbedienfeld in der Webvorlage und dann auf **+** , um der
 
 #### Erstellen eines Hyperlinks für Text in der Tabellenzelle {#createhyperlinktable}
 
-1. Wählen Sie das Standardtextfeld in der Tabellenzelle aus und tippen Sie auf ![](assets/edit.svg) (Bearbeiten).
+1. Wählen Sie das Standardtextfeld in der Tabellenzelle aus und tippen Sie auf ![Bearbeiten](assets/edit.svg) (Bearbeiten).
 1. Wählen Sie den Text in der Tabellenzelle aus und tippen Sie auf das Hyperlink-Symbol.
 1. Specify the URL in the **Path** field.
-1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
+1. Tap ![done_icon](assets/done_icon.png) to save the hyperlink properties.
 
 ![Hyperlink erstellen](assets/create_hyperlink_table_new.png)
 
@@ -426,9 +426,9 @@ Die Sortierung kann auf Tabellenspalten mit folgenden Elementen angewendet werde
 
 So aktivieren Sie die Sortierung:
 
-1. Select the table and tap ![](assets/configure_icon.png) (Configure). Sie können die Tabelle auch über den Browser &quot; **Inhalt** &quot;im Sidekick der interaktiven Kommunikation auswählen.
+1. Wählen Sie die Tabelle aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch über den Browser &quot; **Inhalt** &quot;im Sidekick der interaktiven Kommunikation auswählen.
 1. Wählen Sie Sortierung **aktivieren.**
-1. Tap ![](assets/done_icon.png) to save the table properties. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
+1. Tap ![done_icon](assets/done_icon.png) to save the table properties. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
 
    ![Sortieren aktivieren](assets/enable_sorting_new-1.png)
 
@@ -479,7 +479,7 @@ Sie können die Schaltfläche als Komponente zum Web-Kanal der interaktiven Komm
 So fügen Sie eine Schaltfläche hinzu und definieren Regeln dafür:
 
 1. Tippen Sie auf das Stammbedienfeld in der Webvorlage und dann auf **+** , um die Komponente &quot; **Schaltfläche** &quot;zur interaktiven Kommunikation hinzuzufügen.
-1. Tippen Sie auf die Schaltflächenkomponente und dann auf , ![](assets/edit-rules.png) um Regeln für das Tippen auf die Schaltfläche zu definieren.
+1. Tippen Sie auf die Schaltflächenkomponente und dann auf ![Bearbeitungsregeln](assets/edit-rules.png) , um Regeln zu definieren, die durch Tippen auf die Schaltfläche definiert werden.
 1. Wählen Sie im Abschnitt **Wenn** im Status der Dropdown-Liste &quot;Schaltfläche&quot;die Option **Klicken** aus.
 1. In the **Then** section:
 
