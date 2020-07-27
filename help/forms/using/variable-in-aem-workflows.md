@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2113'
 ht-degree: 5%
 
 ---
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
    * Formulardatenmodell: Geben Sie einen Pfad für ein Formulardatenmodell an.
    * ArrayList - Geben Sie einen Untertyp für die Sammlung an.
 
-1. Geben Sie eine optionale Beschreibung für die Variable ein und tippen Sie auf , ![](assets/done_icon.png) um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
+1. Geben Sie eine optionale Beschreibung für die Variable ein und tippen Sie auf ![done_icon](assets/done_icon.png) , um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
 
 Berücksichtigen Sie beim Erstellen von Variablen die folgenden Vorgehensweisen:
 
@@ -97,10 +97,10 @@ Sie können auch bestimmte Elemente einer JSON- oder XML-Typvariablen mithilfe d
 Führen Sie die folgenden Schritte aus, um die Zuordnung zwischen Variablen hinzuzufügen:
 
 1. Tippen Sie auf der Seite zum Bearbeiten des Workflows auf das Symbol Schritte, das im Sidekick des Workflow-Modells verfügbar ist.
-1. Ziehen Sie den Schritt **Variable** festlegen in den Workflow-Editor, tippen Sie auf den Schritt und wählen Sie ![](assets/configure_icon.png) (Konfigurieren).
+1. Ziehen Sie den Schritt **Variable** festlegen in den Workflow-Editor, tippen Sie auf den Schritt und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren).
 1. Wählen Sie im Dialogfeld &quot;Variable festlegen&quot; **[!UICONTROL Zuordnung]** > **[!UICONTROL Hinzufügen Zuordnung]**.
 1. Wählen Sie im Abschnitt **Zuordnungsvariable** die zu speichernde Variable aus, wählen Sie den Zuordnungsmodus und geben Sie einen Wert an, der in der Variablen gespeichert werden soll. Die Zuordnungsmodi variieren je nach Variablentyp.
-1. Ordnen Sie weitere Variablen zu, um einen aussagekräftigen Ausdruck zu erstellen. Tap ![](assets/done_icon.png) to save the changes.
+1. Ordnen Sie weitere Variablen zu, um einen aussagekräftigen Ausdruck zu erstellen. Tap ![done_icon](assets/done_icon.png) to save the changes.
 
 ### Beispiel 1: Abfrage einer XML-Variable zum Festlegen eines Werts für eine Zeichenfolgenvariable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -273,8 +273,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Bearbeiten einer Variablen {#edit-a-variable}
 
 1. Tippen Sie auf der Seite &quot;Workflow bearbeiten&quot;auf das Symbol &quot;Variablen&quot;im Sidekick des Workflow-Modells. Im Abschnitt &quot;Variablen&quot;im linken Bereich werden alle vorhandenen Variablen angezeigt.
-1. Tippen Sie auf das Symbol ![](assets/edit.png) (Bearbeiten) neben dem Variablennamen, den Sie bearbeiten möchten.
-1. Bearbeiten Sie die Variableninformationen und tippen Sie auf , ![](assets/done_icon.png) um die Änderungen zu speichern. Sie können die Felder **[!UICONTROL &quot;Name]** &quot;und &quot; **[!UICONTROL Typ]** &quot;für eine Variable nicht bearbeiten.
+1. Tippen Sie auf das Symbol zum ![Bearbeiten](assets/edit.png) (Bearbeiten) neben dem Variablennamen, den Sie bearbeiten möchten.
+1. Bearbeiten Sie die Variableninformationen und tippen Sie auf ![done_icon](assets/done_icon.png) , um die Änderungen zu speichern. Sie können die Felder **[!UICONTROL &quot;Name]** &quot;und &quot; **[!UICONTROL Typ]** &quot;für eine Variable nicht bearbeiten.
 
 ## Löschen einer Variablen {#delete-a-variable}
 
@@ -284,7 +284,7 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu löschen:
 
 1. Tippen Sie auf der Seite &quot;Workflow bearbeiten&quot;auf das Symbol &quot;Variablen&quot;im Sidekick des Workflow-Modells. Im Abschnitt &quot;Variablen&quot;im linken Bereich werden alle vorhandenen Variablen angezeigt.
 1. Tippen Sie auf das Symbol Löschen neben dem Variablennamen, den Sie löschen möchten.
-1. Tippen Sie ![](assets/done_icon.png) auf , um die Variable zu bestätigen und zu löschen.
+1. Tippen Sie auf ![done_icon](assets/done_icon.png) , um die Variable zu bestätigen und zu löschen.
 
 ## Verweise {#references}
 
