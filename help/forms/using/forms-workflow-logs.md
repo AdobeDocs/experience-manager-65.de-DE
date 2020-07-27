@@ -1,8 +1,8 @@
 ---
-title: Anmelden bei AEM Forms Workflows
-seo-title: Anmelden bei AEM Forms Workflows
-description: Verwenden Sie Protokolle, um AEM Forms-Workflow-Probleme zu debuggen.
-seo-description: Verwenden Sie Protokolle, um AEM Forms-Workflow-Probleme zu debuggen.
+title: Anmelden von AEM Forms Workflows
+seo-title: Anmelden von AEM Forms Workflows
+description: Verwenden Sie Protokolle, um Probleme mit dem Arbeitsablauf für AEM Forms zu debuggen.
+seo-description: Verwenden Sie Protokolle, um Probleme mit dem Arbeitsablauf für AEM Forms zu debuggen.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,15 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 5%
 
 ---
 
 
-# Anmelden bei AEM Forms Workflows{#logging-in-aem-forms-workflows}
+# Anmelden von AEM Forms Workflows{#logging-in-aem-forms-workflows}
 
 Schritte zum Arbeitsablauf für Formulare bieten detaillierte Protokolle zum bequemen Debuggen von Problemen mit dem Arbeitsablauf. Aktivieren Sie die Debug-Protokollierung für AEM Forms Workflows, um die Protokolle Ansicht.
 
@@ -40,7 +43,7 @@ Die Debug-Protokolle für Formulare Workflows:
 
 * Variablen, die im JCR-Repository geschrieben wurden. Beispiel:
 
-   ```
+   ```verilog
       [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
    ```
 
@@ -49,14 +52,14 @@ Die Debug-Protokolle für Formulare Workflows:
 
 * Parameter für dynamische Step-Metadaten. Beispiel:
 
-   ```
+   ```verilog
    [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
     [DEBUG] Locale to be used for Document of Record is <locale>
    ```
 
 Im folgenden Beispiel werden die Protokolle für den Schritt &quot;Dokument signieren&quot;veranschaulicht:
 
-```xml
+```verilog
 [DEBUG] Executing sign document step.
 [DEBUG] Using adobe sign configuration: <path of adobe sign configuration>
 [DEBUG] Invoking Adobe Sign Service for creating agreement
@@ -74,9 +77,9 @@ Verwenden Sie die Protokolle, um Folgendes zu bewerten:
 
 Wenn eine Ausnahme vorliegt, können Sie die gesamte Stapelablaufverfolgung zur Auswertung der Fehlerursache Ansicht haben.
 
-## Aktivieren der Debug-Protokollierung für AEM Forms Workflows {#enable-debug-logging-for-aem-forms-workflows}
+## Debugging-Protokollierung für AEM Forms-Workflows aktivieren {#enable-debug-logging-for-aem-forms-workflows}
 
-Führen Sie die folgenden Schritte aus, um die Debug-Protokollierung für AEM Forms Workflows zu aktivieren:
+Führen Sie die folgenden Schritte aus, um die Debug-Protokollierung für AEM Forms-Workflows zu aktivieren:
 
 1. Gehen Sie zu AEM Web Console Configuration Manager unter:
 
