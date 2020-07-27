@@ -9,7 +9,10 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '650'
+ht-degree: 84%
 
 ---
 
@@ -24,7 +27,7 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Beginn durch Erstellen einer Beispielvorlage für Correspondence Management, die in AEM Forms Workspace wiedergegeben wird. For more details, see [Create a letter template](../../forms/using/create-letter.md).
+Beginn durch Erstellen einer Beispielvorlage für Correspondence Management, die im Arbeitsbereich &quot;AEM Forms&quot;wiedergegeben wird. For more details, see [Create a letter template](../../forms/using/create-letter.md).
 
 Greifen Sie auf die Correspondence Management-Vorlage unter der URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf wie `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
@@ -64,7 +67,7 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
 
    Ein benutzerdefinierte Beispielwrapper Wrapper wird nachfolgend aufgeführt:
 
-   ```java
+   ```javascript
    public LetterInstanceInfo getLetterInstanceInfo(Document dataXML) throws Exception {
    try {
    if(dataXML == null)
