@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3669'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 Sie können in Workbench erstellte Prozesse mit einer hohen Lebensdauer programmgesteuert aufrufen, indem Sie folgende Clientanwendungen verwenden:
 
-* Eine webbasierte Java-Clientanwendung, die die Aufrufungs-API verwendet. (Siehe [Aufrufen von AEM Forms mithilfe der Java-API](/help/forms/developing/invoking-aem-forms-using-java.md)(/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
+* Eine webbasierte Java-Clientanwendung, die die Aufrufungs-API verwendet. (Siehe [Aufrufen von AEM Forms mit der Java-API](/help/forms/developing/invoking-aem-forms-using-java.md)(/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
 * Eine ASP.NET-Anwendung, die Webdienste verwendet. (See [Invoking AEM Forms Using Web Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 * Eine Clientanwendung, die mit Flex erstellt wurde und Remoting verwendet. (Siehe [Aufrufen von AEM Forms mithilfe von (für AEM Forms nicht mehr unterstützt) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Der Prozess mit langer Lebensdauer, der aufgerufen wird, heißt *FirstAppSolution/PreLoanProcess*. Sie können diesen Prozess erstellen, indem Sie der unter [Erstellen der ersten AEM Forms-Anwendung](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)angegebenen Übung folgen.
+Der Prozess mit langer Lebensdauer, der aufgerufen wird, heißt *FirstAppSolution/PreLoanProcess*. Sie können diesen Vorgang gemäß dem unter &quot; [Erstellen Ihrer ersten AEM Forms-Anwendung](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)&quot;angegebenen Lernprogramm erstellen.
 
 Ein menschlich orientierter Prozess umfasst eine Aufgabe, auf die ein Benutzer mithilfe von Workspace reagieren kann. Beispielsweise können Sie mit Workbench einen Prozess erstellen, mit dem ein Bankmanager einen Kreditantrag genehmigen oder ablehnen kann. Die folgende Abbildung zeigt den Prozess *FirstAppSolution/PreLoanProcess*.
 
@@ -43,7 +46,7 @@ Wenn ein Prozess mit langer Lebensdauer aufgerufen wird, erstellt AEM Forms beim
 
 Der `FirstAppSolution/PreLoanProcess` Prozess wird aufgerufen, wenn ein Antragsteller eine Anwendung einreicht, die als XML-Daten dargestellt wird. Der Name der Eingabeprozessvariablen ist `formData` und der Datentyp ist XML. Für diese Diskussion nehmen Sie an, dass die folgenden XML-Daten als Eingabe für den `FirstAppSolution/PreLoanProcess` Prozess verwendet werden.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <LoanApp>
  <Name>Sam White</Name>
@@ -75,7 +78,7 @@ Das Java-Servlet führt die folgenden Aufgaben aus:
 
 * Ruft die Werte ab, die von der HTML-Seite zum Java-Servlet veröffentlicht werden.
 * Dynamisches Erstellen einer XML-Datenquelle, die an den *FirstAppSolution/PreLoanProcess* -Prozess übergeben wird. Die Werte für Name, Telefon (oder E-Mail) und Betrag werden in der XML-Datenquelle angegeben.
-* Ruft den *FirstAppSolution/PreLoanProcess* -Prozess mithilfe der AEM Forms-AufrufAPI auf.
+* Ruft den *FirstAppSolution/PreLoanProcess* -Prozess mithilfe der AEM Forms Invocation API auf.
 * Gibt den Wert für die Aufrufkennung an den Client-Webbrowser zurück.
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
@@ -86,12 +89,12 @@ So erstellen Sie eine webbasierte Java-Anwendung, die den `FirstAppSolution/PreL
 1. [Erstellen Sie Java-Anwendungslogik für das Servlet](invoking-human-centric-long-lived.md#create-java-application-logic-for-the-servlet).
 1. [Erstellen der Webseite für die Webanwendung](invoking-human-centric-long-lived.md#create-the-web-page-for-the-web-application)
 1. [Verpacken Sie die Webanwendung in eine WAR-Datei](invoking-human-centric-long-lived.md#package-the-web-application-to-a-war-file).
-1. [Stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit, auf dem AEM Forms](invoking-human-centric-long-lived.md#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms)gehostet wird.
+1. [Stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit, auf dem sich AEM Forms befinden](invoking-human-centric-long-lived.md#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms).
 1. [Testen Sie Ihre Webanwendung](invoking-human-centric-long-lived.md#test-your-web-application).
 
 >[!NOTE]
 >
->Einige dieser Schritte hängen von der J2EE-Anwendung ab, auf der AEM Forms bereitgestellt wird. Die Methode zum Bereitstellen einer WAR-Datei hängt beispielsweise vom J2EE-Anwendungsserver ab, den Sie verwenden. Es wird davon ausgegangen, dass AEM Forms auf JBoss® bereitgestellt wird.
+>Einige dieser Schritte hängen von der J2EE-Anwendung ab, auf der AEM Forms bereitgestellt werden. Die Methode zum Bereitstellen einer WAR-Datei hängt beispielsweise vom J2EE-Anwendungsserver ab, den Sie verwenden. Es wird davon ausgegangen, dass AEM Forms unter JBoss® bereitgestellt werden.
 
 ### Webprojekt erstellen {#create-a-web-project}
 
@@ -107,7 +110,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 >[!NOTE]
 >
->Die Datei J2EE.jar definiert Datentypen, die von einem Java-Servlet verwendet werden. Sie können diese JAR-Datei vom J2EE-Anwendungsserver abrufen, auf dem AEM Forms bereitgestellt wird.
+>Die Datei J2EE.jar definiert Datentypen, die von einem Java-Servlet verwendet werden. Sie können diese JAR-Datei vom J2EE-Anwendungsserver abrufen, auf dem AEM Forms bereitgestellt werden.
 
 **Webprojekt erstellen**
 
@@ -141,7 +144,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 Erstellen Sie eine Java-Anwendungslogik, die den `FirstAppSolution/PreLoanProcess` Prozess aus dem Java-Servlet heraus aufruft. Der folgende Code zeigt die Syntax des `SubmitXML` Java-Servlets:
 
-```as3
+```java
      public class SubmitXML extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -154,7 +157,7 @@ Erstellen Sie eine Java-Anwendungslogik, die den `FirstAppSolution/PreLoanProces
              }
 ```
 
-Normalerweise platzieren Sie keinen Clientcode innerhalb einer Java-Servlet-Methode `doGet` oder - `doPost` Methode. Eine bessere Programmierpraxis besteht darin, diesen Code in einer separaten Klasse zu platzieren. Instanziieren Sie dann die Klasse innerhalb der `doPost` Methode (oder `doGet` -Methode) und rufen Sie die entsprechenden Methoden auf. Codebeispiele werden jedoch für eine kürzere Code-Länge auf ein Minimum beschränkt und in die `doPost` Methode eingefügt.
+Normalerweise platzieren Sie keinen Clientcode innerhalb einer Java-Servlet-Methode `doGet` oder - `doPost` Methode. Eine bessere Programmierpraxis besteht darin, diesen Code in einer separaten Klasse zu platzieren. Instanziieren Sie dann die Klasse innerhalb der `doPost` Methode (oder `doGet` -Methode) und rufen Sie die entsprechenden Methoden auf. Codebeispiele werden jedoch für eine kürzere Codeausführung auf ein Minimum beschränkt und in die `doPost` Methode eingefügt.
 
 So rufen Sie den `FirstAppSolution/PreLoanProcess` Prozess mit der Aufrufungs-API auf:
 
@@ -165,7 +168,7 @@ So rufen Sie den `FirstAppSolution/PreLoanProcess` Prozess mit der Aufrufungs-AP
 1. Erstellen Sie ein Objekt `java.util.HashMap`, indem Sie den Konstruktor verwenden.
 1. Rufen Sie die Methode `java.util.HashMap` des `put`-Objekts für jeden Eingabeparameter auf, der an den langlebigen Prozess übergeben erden soll. Stellen Sie sicher, dass Sie den Namen der Eingabeparameter des Prozesses angeben. Da für den `FirstAppSolution/PreLoanProcess` Prozess ein Eingabeparameter des Typs `XML` (benannt `formData`) erforderlich ist, müssen Sie die `put` Methode nur einmal aufrufen.
 
-   ```as3
+   ```java
     //Get the XML to pass to the FirstAppSolution/PreLoanProcess process
     org.w3c.dom.Document inXML = GetDataSource(name,phone,amount);
     
@@ -180,6 +183,7 @@ So rufen Sie den `FirstAppSolution/PreLoanProcess` Prozess mit der Aufrufungs-AP
    * Ein string-Wert, der den Prozessvorgangsnamen darstellt. Der Name des Prozesses mit langer Lebensdauer lautet `invoke`.
    * Das `java.util.HashMap`-Objekt, das die Parameterwerte enthält, die für den Dienstvorgang erforderlich sind.
    * A Boolean value that specifies `false`, which creates an asynchronous request (this value is applicable to invoke a long-lived process).
+
    >[!NOTE]
    >
    >*Ein Prozess mit kurzer Lebensdauer kann aufgerufen werden, indem der Wert true als vierter Parameter der createInvocationRequest-Methode übergeben wird. Durch Übergeben des Werts &quot;true&quot;wird eine synchrone Anforderung erstellt.*
@@ -187,7 +191,7 @@ So rufen Sie den `FirstAppSolution/PreLoanProcess` Prozess mit der Aufrufungs-AP
 1. Send the invocation request to AEM Forms by invoking the `ServiceClient` object’s `invoke` method and passing the `InvocationRequest` object. The `invoke` method returns an `InvocationReponse` object.
 1. Ein Prozess mit langer Lebensdauer gibt einen Zeichenfolgenwert zurück, der einen Aufrufidentifizierungswert darstellt. Rufen Sie diesen Wert ab, indem Sie die `InvocationReponse` Objektmethode `getInvocationId` aufrufen.
 
-   ```as3
+   ```java
     //Send the invocation request to the long-lived process and
     //get back an invocation response object
     InvocationResponse lcResponse = myServiceClient.invoke(lcRequest);
@@ -200,7 +204,7 @@ So rufen Sie den `FirstAppSolution/PreLoanProcess` Prozess mit der Aufrufungs-AP
 
 Das folgende Java-Codebeispiel stellt das Java-Servlet dar, das den `FirstAppSolution/PreLoanProcess` Prozess aufruft.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -359,7 +363,7 @@ Die *Webseite &quot;index.html* &quot;bietet einen Einstiegspunkt zum Java-Servl
 
 Das Java-Servlet erfasst die Daten, die von der HTML-Seite veröffentlicht werden, unter Verwendung des folgenden Java-Codes:
 
-```as3
+```java
  //Get the values that are passed from the Loan HTML page
  String name = request.getParameter("name");
  String phone = request.getParameter("phone");
@@ -368,7 +372,7 @@ Das Java-Servlet erfasst die Daten, die von der HTML-Seite veröffentlicht werde
 
 Der folgende HTML-Code stellt die Datei &quot;index.html&quot;dar, die beim Einrichten der Development-Umgebung erstellt wurde. (Siehe Webprojekt [erstellen](invoking-human-centric-long-lived.md#create-a-web-project).)
 
-```as3
+```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
  <html>
  <head>
@@ -429,13 +433,13 @@ Die folgende Abbildung zeigt den Inhalt des Eclipse-Projekts, der in eine WAR-Da
 1. Geben Sie in das Textfeld **Webmodul** den Namen `InvokePreLoanProcess` des Java-Projekts ein.
 1. Geben Sie im Textfeld **Ziel** den Dateinamen `PreLoanProcess.war`**ein, geben Sie den Speicherort für die WAR-Datei an und klicken Sie auf Fertig stellen.**Geben Sie dann den gewünschten Speicherort an.
 
-### Stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit, auf dem AEM Forms gehostet wird. {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}
+### Stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit, auf dem AEM Forms gehostet werden {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}
 
-Stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit, auf dem AEM Forms bereitgestellt wird. Um die WAR-Datei auf dem J2EE-Anwendungsserver bereitzustellen, kopieren Sie die WAR-Datei aus dem Exportpfad in `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`.
+Stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit, auf dem die AEM Forms bereitgestellt werden. Um die WAR-Datei auf dem J2EE-Anwendungsserver bereitzustellen, kopieren Sie die WAR-Datei aus dem Exportpfad in `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`.
 
 >[!NOTE]
 >
->Wenn AEM Forms nicht auf JBoss bereitgestellt wird, müssen Sie die WAR-Datei gemäß dem J2EE-Anwendungsserver bereitstellen, auf dem AEM Forms gehostet wird.
+>Wenn AEM Forms nicht auf JBoss bereitgestellt ist, müssen Sie die WAR-Datei gemäß den AEM Forms bereitstellen, auf denen der J2EE-Anwendungsserver als Host für JBoss ausgeführt wird.
 
 ### Webanwendung testen {#test-your-web-application}
 
@@ -476,7 +480,7 @@ So erstellen Sie eine ASP.NET-Anwendung, die den FirstAppSolution/PreLoanProcess
 
 Erstellen Sie eine Microsoft .NET C# ASP.NET-Webanwendung. Die folgende Abbildung zeigt den Inhalt des ASP.NET-Projekts *InvokePreLoanProcess*.
 
-Unter &quot;Dienstverweise&quot;werden zwei Elemente angezeigt. Das erste Element trägt den Namen* JobManager*. Mit dieser Referenz kann die ASP.NET-Anwendung den Job Manager-Dienst aufrufen. Dieser Dienst gibt Informationen zum Status eines Prozesses mit langer Lebensdauer zurück. Wenn der Prozess beispielsweise derzeit ausgeführt wird, gibt dieser Dienst einen numerischen Wert zurück, der angibt, dass der Prozess gerade ausgeführt wird. Der zweite Verweis heißt *PreLoanProcess*. Diese Dienstreferenz stellt den Verweis auf den* FirstAppSolution/PreLoanProcess *Prozess dar. Nachdem Sie eine Dienstreferenz erstellt haben, stehen mit dem AEM Forms-Dienst verknüpfte Datentypen zur Verwendung in Ihrem .NET-Projekt zur Verfügung.
+Unter &quot;Dienstverweise&quot;werden zwei Elemente angezeigt. Das erste Element trägt den Namen* JobManager*. Mit dieser Referenz kann die ASP.NET-Anwendung den Job Manager-Dienst aufrufen. Dieser Dienst gibt Informationen zum Status eines Prozesses mit langer Lebensdauer zurück. Wenn der Prozess beispielsweise derzeit ausgeführt wird, gibt dieser Dienst einen numerischen Wert zurück, der angibt, dass der Prozess gerade ausgeführt wird. Der zweite Verweis heißt *PreLoanProcess*. Diese Dienstreferenz stellt den Verweis auf den* FirstAppSolution/PreLoanProcess *Prozess dar. Nachdem Sie eine Dienstreferenz erstellt haben, stehen mit dem AEM Forms verknüpfte Datentypen für die Verwendung in Ihrem .NET-Projekt zur Verfügung.
 
 **Erstellen eines ASP.NET-Projekts:**
 
@@ -492,7 +496,7 @@ Unter &quot;Dienstverweise&quot;werden zwei Elemente angezeigt. Das erste Elemen
 1. Wählen Sie im Menü Projekt die Option **Hinzufügen Service Reference**.
 1. Geben Sie im Dialogfeld &quot; **Adresse** &quot;die WSDL für den Job Manager-Dienst an.
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/JobManager?WSDL&lc_version=9.0.1
    ```
 
@@ -501,7 +505,7 @@ Unter &quot;Dienstverweise&quot;werden zwei Elemente angezeigt. Das erste Elemen
 1. Wählen Sie im Menü **Projekt** die Option **Hinzufügen Dienstreferenz**.
 1. Geben Sie im Dialogfeld &quot; **Adresse** &quot;die WSDL zum Prozess &quot;FirstAppSolution/PreLoanProcess&quot;an.
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?WSDL&lc_version=9.0.1
    ```
 
@@ -510,7 +514,7 @@ Unter &quot;Dienstverweise&quot;werden zwei Elemente angezeigt. Das erste Elemen
 
 >[!NOTE]
 >
->Ersetzen Sie `hiro-xp` dies durch die IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird. Die `lc_version` Option stellt sicher, dass AEM Forms-Funktionen wie MTOM verfügbar sind. Ohne Angabe der `lc_version`Option können Sie AEM Forms nicht mit MTOM aufrufen. (Siehe [Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
+>Ersetzen Sie `hiro-xp` dies durch die IP-Adresse der J2EE-Anwendungsserver-Hosting-AEM Forms. Die `lc_version` Option stellt sicher, dass AEM Forms-Funktionen wie MTOM verfügbar sind. Ohne Angabe der `lc_version`Option können Sie AEM Forms nicht mit MTOM aufrufen. (Siehe AEM Forms [aufrufen mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
 
 ### Erstellen einer ASP-Seite, die FirstAppSolution/PreLoanProcess aufruft {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
@@ -559,7 +563,7 @@ Die Anwendungslogik, die Teil der ASP.NET-Anwendung ist, muss dynamisch eine XML
 
 Beim Aufrufen eines Prozesses, der XML-Daten aus einer ASP.NET-Anwendung erfordert, steht Ihnen ein XML-Datentyp zur Verfügung. Das heißt, Sie können eine `System.Xml.XmlDocument` Instanz nicht an den Prozess übergeben. Der vollständig qualifizierte Name dieser XML-Instanz, die an den Prozess übergeben werden soll, ist `InvokePreLoanProcess.PreLoanProcess.XML`vorhanden. Konvertieren Sie die `System.Xml.XmlDocument` Instanz in `InvokePreLoanProcess.PreLoanProcess.XML`. Sie können diese Aufgabe mithilfe des folgenden Codes durchführen.
 
-```as3
+```java
  //Create the XML to pass to the FirstAppSolution/PreLoanProcess process
  XmlDocument myXML = CreateXML(userName, phone, amount);
  
@@ -575,9 +579,9 @@ Beim Aufrufen eines Prozesses, der XML-Daten aus einer ASP.NET-Anwendung erforde
 Um eine ASP-Seite zu erstellen, die den `FirstAppSolution/PreLoanProcess` Prozess aufruft, führen Sie die folgenden Aufgaben in der `Button1_Click` Methode aus:
 
 1. Create a `FirstAppSolution_PreLoanProcessClient` object by using its default constructor.
-1. Create a `FirstAppSolution_PreLoanProcessClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der die WSDL an den AEM Forms-Dienst und den Kodierungstyp angibt:
+1. Create a `FirstAppSolution_PreLoanProcessClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Dienst und den Kodierungstyp angibt:
 
-   ```as3
+   ```java
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?blob=mtom
    ```
 
@@ -585,7 +589,7 @@ Um eine ASP-Seite zu erstellen, die den `FirstAppSolution/PreLoanProcess` Prozes
 
    >[!NOTE]
    >
-   >Ersetzen Sie `hiro-xp`* durch die IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird. *
+   >Ersetzen Sie `hiro-xp`* durch die IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet werden. *
 
 1. Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `FirstAppSolution_PreLoanProcessClient.Endpoint.Binding` Datenelements abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
 1. Stellen Sie den `System.ServiceModel.BasicHttpBinding` Datenmember des `MessageEncoding` Objekts auf `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
@@ -595,6 +599,7 @@ Um eine ASP-Seite zu erstellen, die den `FirstAppSolution/PreLoanProcess` Prozes
    * Weisen Sie dem Datenmember den entsprechenden Kennwortwert zu `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.Password`.
    * Weisen Sie den Konstantenwert `HttpClientCredentialType.Basic` dem Datenmember zu `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` dem Datenmember zu `BasicHttpBindingSecurity.Security.Mode`.
+
    Das folgende Codebeispiel zeigt diese Aufgaben.
 
    ```as3
@@ -627,7 +632,7 @@ Um eine ASP-Seite zu erstellen, die den `FirstAppSolution/PreLoanProcess` Prozes
 
 Im folgenden C#-Codebeispiel wird der `FirstAppSolution/PreLoanProcess`Prozess aufgerufen.
 
-```as3
+```csharp
  ???/**
      * Ensure that you create a .NET project that uses
      * MS Visual Studio 2008 and version 3.5 of the .NET
@@ -844,14 +849,14 @@ Die mit Flex erstellte Clientanwendung führt die folgenden Aufgaben aus:
 So erstellen Sie eine Client-Anwendung, die mit Flex erstellt wurde und den FirstAppSolution/PreLoanProcess-Prozess aufrufen kann:
 
 1. Beginn eines neuen Flex-Projekts.
-1. Schließen Sie die Datei &quot;adobe-remoting-provider.swc&quot;in den Klassenpfad Ihres Projekts ein. (Siehe [Einschließen der AEM Forms Flex-Bibliotheksdatei](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+1. Schließen Sie die Datei &quot;adobe-remoting-provider.swc&quot;in den Klassenpfad Ihres Projekts ein. (Siehe [Einschließen der Flex-Bibliotheksdatei](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)für AEM Forms.)
 1. Erstellen Sie eine `mx:RemoteObject` Instanz entweder mit ActionScript oder MXML. (Siehe [Erstellen einer mx:RemoteObject-Instanz](/help/forms/developing/invoking-aem-forms-using-remoting.md))
-1. Richten Sie eine `ChannelSet` Instanz für die Kommunikation mit AEM Forms ein und verknüpfen Sie sie mit der `mx:RemoteObject` Instanz. (Siehe [Erstellen eines Kanals für AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
+1. Richten Sie eine `ChannelSet` Instanz für die Kommunikation mit AEM Forms ein und verknüpfen Sie sie mit der `mx:RemoteObject` Instanz. (Siehe Kanal für AEM Forms [erstellen](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
 1. Rufen Sie die `login` Methode des ChannelSet oder die `setCredentials` Methode des Dienstes auf, um den Wert und das Kennwort des Benutzers anzugeben. (Siehe Single Sign-On [verwenden](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Erstellen Sie die XML-Datenquelle, die an den `FirstAppSolution/PreLoanProcess` Prozess übergeben wird, indem Sie eine XML-Instanz erstellen. (Diese Anwendungslogik wird im folgenden Codebeispiel gezeigt.)
 1. Erstellen Sie ein Objekt des Typs &quot;Object&quot;mit dem Konstruktor. Weisen Sie dem Objekt die XML zu, indem Sie den Namen des Eingabeparameters des Prozesses angeben, wie im folgenden Code gezeigt:
 
-   ```as3
+   ```csharp
     //Get the XML data to pass to the AEM Forms process
     var xml:XML = createXML();
     var params:Object = new Object();
@@ -861,7 +866,7 @@ So erstellen Sie eine Client-Anwendung, die mit Flex erstellt wurde und den Firs
 1. Rufen Sie den `FirstAppSolution/PreLoanProcess` Prozess durch Aufruf der `mx:RemoteObject` Instanzmethode `invoke_Async` auf. Übergeben Sie die `Object` , die den Eingabeparameter enthält. (Siehe [Übergeben von Eingabewerten](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
 1. Rufen Sie den Aufrufidentifizierungswert ab, der von einem Prozess mit langer Lebensdauer zurückgegeben wird, wie im folgenden Code gezeigt:
 
-   ```as3
+   ```csharp
     // Handles async call that invokes the long-lived process
     private function resultHandler(event:ResultEvent):void
     {
@@ -874,7 +879,7 @@ So erstellen Sie eine Client-Anwendung, die mit Flex erstellt wurde und den Firs
 
 Das folgende Flex-Codebeispiel ruft den `FirstAppSolution/PreLoanProcess` Prozess auf.
 
-```as3
+```java
  <?xml version="1.0" encoding="utf-8"?>
  
  <mx:Application  xmlns="*" backgroundColor="#FFFFFF"
