@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1728'
+ht-degree: 74%
 
 ---
 
@@ -125,17 +128,17 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Zum Beispiel <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>und <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td>
+   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. For example, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
    <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Dieses Beispiel zeigt, dass es sich <code>blur</code> um ein HTML-Ereignis handelt und dass es sich um das entsprechende XFA-Ereignis <code>XFA_EXIT_EVENT</code> handelt. </td>
+      }</code><br /> Dieses Beispiel zeigt, dass <code>blur</code> es sich um ein HTML-Ereignis handelt und <code>XFA_EXIT_EVENT</code> das entsprechende XFA-Ereignis ist. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
-   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann. Die Schlüssel sind die Optionen, die dem Widget zur Verfügung gestellt werden, und die Werte sind Funktionen, die aufgerufen werden, wenn eine Änderung der Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer <code>value</code> und <code>displayValue</code>).</td>
+   <td>Gibt eine Zuordnung mit detaillierten Informationen zurück, wie eine Option geändert werden kann. Die Schlüssel sind die Optionen, die dem Widget zur Verfügung gestellt werden, und die Werte sind Funktionen, die aufgerufen werden, wenn eine Änderung in der Option erkannt wird. Das Widget verfügt über Handler für alle allgemeinen Optionen (außer <code>value</code> und <code>displayValue</code>).</td>
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
@@ -246,7 +249,7 @@ Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erschein
 1. Ersetzen Sie den Inhalt des `bootstrap-number-input.js` (jQuery-Plugin) mit dem Inhalt der `numericStepper-plugin.js`-Datei.
 1. In the `numericStepper-widget.js` file, add the following code to override the render method to invoke the plugin and return the `$userControl` object:
 
-   ```java
+   ```javascript
    render : function() {
         var control = $.xfaWidget.numericInput.prototype.render.apply(this, arguments);
         var $control = $(control);
@@ -266,7 +269,7 @@ Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erschein
 
 1. In the `numericStepper-widget.js` file, override the `getOptionsMap` property to override the access option, and hide the + and - buttons in disabled mode.
 
-   ```java
+   ```javascript
    getOptionsMap: function(){
        var parentOptionsMap = $.xfaWidget.numericInput.prototype.getOptionsMap.apply(this,arguments),
    
