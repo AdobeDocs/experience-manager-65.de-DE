@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '7077'
+ht-degree: 51%
 
 ---
 
@@ -206,26 +209,26 @@ Um die Eingaben für Felder des Schritts zu erläutern, werden die folgende Date
 
 **JSON-Beispieldatei**
 
-```
-{ 
-  customer: { 
-   firstName: "Sarah", 
-   lastName:"Rose", 
-   customerId: "1", 
-   emailAddress:"srose@we.info" 
- }, 
-  insurance: {
-   customerId: "1", 
-  policyType: "Premium,
-  policyNumber: "Premium-521499",
-  customerDetails: { 
-   firstName: "Sarah",
-   lastName: "Rose",
-   customerId: "1",
-   emailAddress: "srose@we.info" 
-  }
- }
-}
+```json
+  { 
+    customer: { 
+     firstName: "Sarah", 
+     lastName:"Rose", 
+     customerId: "1", 
+     emailAddress:"srose@we.info" 
+   }, 
+    insurance: {
+     customerId: "1", 
+    policyType: "Premium,
+    policyNumber: "Premium-521499",
+    customerDetails: { 
+     firstName: "Sarah",
+     lastName: "Rose",
+     customerId: "1",
+     emailAddress: "srose@we.info" 
+    }
+   }
+  }
 ```
 
 Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Felder, um Formulardatenmodellvorgänge zu vereinfachen:
@@ -276,9 +279,9 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 
 ## Schritt „Document Services“{#document-services-steps}
 
-Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. AEM Forms bietet einen separaten AEM-Workflow-Schritt für jeden Dokument-Dienst.
+Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. AEM Forms stellt einen separaten AEM-Workflow-Schritt für jeden Dokument-Dienst bereit.
 
-Ähnlich wie bei anderen Arbeitsablaufschritten in AEM Forms, wie &quot;Aufgabe zuweisen&quot;, &quot;E-Mail senden&quot;und &quot;Dokument unterschreiben&quot;, können Sie Variablen in allen AEM Dokument-Dienstschritten verwenden. Weitere Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
+Ähnlich wie andere Arbeitsablaufschritte wie &quot;Aufgabe zuweisen&quot;, &quot;E-Mail senden&quot;und &quot;Dokument unterschreiben&quot;können Sie Variablen in allen AEM Dokument-Dienstschritten verwenden. Weitere Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
 
 ### Schritt „Dokumentzeitstempel einfügen“{#apply-document-time-stamp-step}
 
@@ -416,12 +419,12 @@ Der Schritt &quot;Drucken generieren&quot;verfügt über die folgenden Eigenscha
 
 * **[!UICONTROL Gebietsschema]**: Gibt die Sprache an, in der das PDF-Dokument generiert wird. Wenn Sie einen Literalwert angeben, wählen Sie eine Sprache aus der Liste oder einen der folgenden Werte:
    * **So verwenden Sie den Serverstandard**:
-(Standard) Verwenden Sie die auf dem AEM Forms-Server konfigurierte Spracheinstellung. Die Spracheinstellung wird mithilfe von Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](http://www.adobe.com/go/learn_aemforms_designer_65).)
+(Standard) Verwenden Sie die auf dem AEM Forms-Server konfigurierte Spracheinstellung. Die Spracheinstellung wird mithilfe von Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](http://www.adobe.com/go/learn_aemforms_designer_65_de).)
 
    * **So verwenden Sie einen benutzerspezifischen Wert**:
 Geben Sie den Gebietsschema-Code in das Feld &quot;Literal&quot;ein oder wählen Sie eine Zeichenfolgenvariable mit dem Gebietsschema-Code. Eine vollständige Liste der unterstützten Gebietsschemas finden Sie unter http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
-* **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Exemplare angibt, die für die Ausgabe generiert werden sollen. Der Standardwert ist 1.
+* **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Exemplare angibt, die für die Ausgabe generiert werden sollen. Der Standardwert ist 1.         
 
 * **[!UICONTROL Duplexdruck]**:  Ein Seitenumbruchwert, der angibt, ob der zweiseitige oder einseitige Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
    * **[!UICONTROL Duplex, lange Kante]**: Verwenden Sie den zweiseitigen Druck und den zweiseitigen Druck unter Verwendung von Seitenumbrüchen.
