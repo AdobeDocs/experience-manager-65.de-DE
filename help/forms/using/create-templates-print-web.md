@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 67%
 
 ---
 
@@ -70,6 +73,7 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
    1. Specify **BillDetails** in the **Name** field.
 
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
+
    ![Designer-Teilformular](assets/forms_designer_subform_new.png)
 
 1. Similarly, select the root subform, select the **Subform** tab, and select **Flowed** from the **Content** drop-down list. Führen Sie auf der Registerkarte **Bindungen** folgende Schritte aus:
@@ -77,6 +81,7 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
    1. Specify **TelecaBill** in the **Name** field.
 
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
+
    ![Teilformular für Druckvorlage](assets/root_subform_print_template_new.png)
 
 1. Wiederholen Sie die Schritte 2 bis 5, um die folgenden Teilformulare zu erstellen:
@@ -91,6 +96,7 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
    * ItemisedCalls
    * PayNow
    * Mehrwert - Service
+
    Um Zeit zu sparen, können Sie auch vorhandene Teilformulare kopieren und einfügen, um neue Teilformulare zu erstellen.
 
    To shift the **Charts** subform to the right of the Charges subform, select the **Charts** subform from the left pane, select the **Layout** tab, and specify a value for **AnchorX** field. Der Wert muss größer als der Wert für das Feld **Breite** für das Teilformular **Gebühren** sein. Wählen Sie das Teilformular **Gebühren** und wählen Sie die Registerkarte **Layout**, um den Wert des Felds **Breite** anzuzeigen.
@@ -173,7 +179,7 @@ Um eine Webkanal-Vorlage zu erstellen, definieren Sie einen Ordner, in dem Sie d
 
 Führen Sie die folgenden Schritte aus, um einen Ordner für die bearbeitbaren Vorlagen zu erstellen:
 
-1. Tap **Tools** ![](assets/hammer-icon.svg) > **Configuration Browser**.
+1. Tap **Tools** ![hammer-icon](assets/hammer-icon.svg) > **Configuration Browser**.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
@@ -217,7 +223,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im Ord
 
    ![Inhaltsstruktur](assets/content_tree_root_panel_new.png)
 
-1. Select the panel and tap ![](assets/configure_icon.png) (Configure).
+1. Wählen Sie den Bereich aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren).
 1. Im Bereich „Eigenschaften“:
 
    1. Geben Sie in das Feld „Name“ **BillDetails** ein.
@@ -225,6 +231,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im Ord
    1. Wählen Sie **1** aus der Dropdown-Liste **Anzahl der Spalten**.
 
    1. Tap ![](/help/forms/using/assets/done_icon.png) to save the properties.
+
    Der Name des Bereichs wird in der Inhaltsstruktur auf **Rechnungsdetails** aktualisiert.
 
 1. Wiederholen Sie die Schritte 7 bis 11, um der Vorlage Bereiche mit den folgenden Eigenschaften hinzuzufügen:
@@ -248,7 +255,7 @@ Nachdem Sie die Webvorlage erstellt haben, müssen Sie sie zur Erstellung der in
 
 Führen Sie die folgenden Schritte aus, um die Webvorlage zu aktivieren:
 
-1. Tap **Tools** ![](assets/hammer-icon.svg) > **Templates**.
+1. Tap **Tools** ![hammer-icon](assets/hammer-icon.svg) > **Templates**.
 1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
 1. Registerkarte **Aktivieren** erneut zur Bestätigung.
 
@@ -265,6 +272,6 @@ Basierend auf den Anwendungsfall müssen Sie die Schaltflächen **Jetzt bezahlen
 
 1. Wählen Sie auf der Registerkarte **Zugelassene Komponenten** im Abschnitt **Eigenschaften** die Option **Schaltfläche** aus den Komponenten **Adaptives Formular**.
 
-   ![Zulässige Komponenten](assets/allowed_components_af_new.png)
+   ![Zugelassene Komponenten](assets/allowed_components_af_new.png)
 
-1. Tap ![](assets/done_icon.png) to save the properties.
+1. Tap ![done_icon](assets/done_icon.png) to save the properties.
