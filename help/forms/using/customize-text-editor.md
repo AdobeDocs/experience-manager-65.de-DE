@@ -10,14 +10,17 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 63%
 
 ---
 
 
 # Texteditor anpassen{#customize-text-editor}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können den Texteditor in der Benutzeroberfläche „Assets verwalten und Korrespondenz erstellen“ anpassen, um weitere Schriftarten und Schriftgrade hinzuzufügen. Diese Schriftarten enthalten englische und nicht-englische Schriftarten wie Japanisch.
 
@@ -164,6 +167,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
       * Eigenschaften wie Höhe und Zeichenabstand
       * Standardwerte von Schriftfamilie und -grad, Höhe, Zeichenabstand und Datumsformat
       * Einzüge für Aufzählungszeichen 
+
       Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes eintragen in der  XML-Datei: `<font>Sazanami Mincho Medium</font>`. Sie müssen diese Schriftart auch auf dem Clientcomputer installieren, der zum Zugriff auf die Schriftartanpassung und zum Arbeiten mit ihr verwendet wird. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
 
       Sie können auch die Standardeinstellungen für verschiedene Aspekte des Textes ändern und durch Entfernen der Einträge die Schriftarten aus dem Texteditor entfernen.
@@ -178,7 +182,7 @@ Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, 
 Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
 * [Installieren oder Deinstallieren von Schriftarten unter Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts) 
-* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/en-us/HT201749) 
+* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/de-de/HT201749) 
 
 ## Zugriff auf Schriftartanpassungen {#access-font-customizations}
 
