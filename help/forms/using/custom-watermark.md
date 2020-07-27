@@ -10,14 +10,17 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 57%
 
 ---
 
 
 # Wasserzeichen in der PDF-Briefvorschau{#custom-watermark-in-letter-pdf-preview}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. für E-Mails oder zum Drucken.
 
@@ -64,7 +67,7 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 1. Copy and paste the ddx file from &quot;/libs/fd/cm/configFiles/previewwatermark&quot; folder to &quot;/apps/fd/cm/configFiles/previewwatermark&quot; folder and click **[!UICONTROL Save All]**.
 1. Nehmen Sie in der ddx-Datei unter „/apps/fd/cm/configFiles/previewwatermark/“ die gewünschten Änderungen vor.
 
-   ```
+   ```xml
    <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
     <PDF result="output.pdf">
      <PDF source="input.pdf"/>
