@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10273'
+ht-degree: 85%
 
 ---
 
@@ -116,7 +119,7 @@ Wenn die erweiterte Authentifizierung aktiviert ist, wird beim Öffnen eines ric
 1. Öffnen Sie die Datei in einem Editor und suchen Sie den Knoten „AllowedUrls“.
 1. Fügen Sie im `AllowedUrls`-Knoten die folgenden Zeilen hinzu: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
-   ```as3
+   ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
    <entry key="sso-s" value="/ssoexample"/>
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
@@ -819,7 +822,7 @@ Acrobat Reader DC Extensions für Microsoft Office ist ein Plug-In, das mit den 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `PolicyServer`. Fügen Sie einen `ClientVersionRules`-Knoten als unmittelbar untergeordneten Knoten des `PolicyServer`-Knotens hinzu, wenn noch kein solcher Knoten vorhanden ist.
 
-   ```as3
+   ```java
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -855,6 +858,7 @@ Acrobat Reader DC Extensions für Microsoft Office ist ein Plug-In, das mit den 
    * Apple OS X
    * Sun Solaris
    * HP-UX
+
    `SDKVersions` gibt die Version der Document Security C++ Client-API an, die von der Clientanwendung verwendet wird. Beispiel: `"8.2"`.
 
    `APPFamilies` ist durch die Client-API definiert.
@@ -875,7 +879,7 @@ Acrobat Reader DC Extensions für Microsoft Office ist ein Plug-In, das mit den 
 
 In diesem Beispiel wird allen Windows Clients der Zugriff verweigert.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -893,7 +897,7 @@ In diesem Beispiel wird allen Windows Clients der Zugriff verweigert.
 
 In diesem Beispiel wird „Meine Anwendung Version 3.0“ und „Meine andere Anwendung Version 2.0“ der Zugriff verweigert. Dieselbe URL für die Verweigerungsinformationen wird unabhängig vom Grund für die Verweigerung verwendet.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -918,7 +922,7 @@ In diesem Beispiel wird „Meine Anwendung Version 3.0“ und „Meine andere An
 
 In diesem Beispiel werden alle Anforderungen von einer Microsoft PowerPoint 2007- oder Microsoft PowerPoint 2010-Installation von Acrobat Reader DC Extensions für Microsoft Office abgelehnt.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -951,7 +955,7 @@ Standardmäßig können Sie maximal fünf Elemente in einem Wasserzeichen angebe
 
    Der zweite Eintrag *max elements* ist die Maximalanzahl von Elementen für ein Wasserzeichen. Der Standardwert ist 5.
 
-   ```as3
+   ```java
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -971,7 +975,7 @@ Die folgenden Änderungen an der Datei „config.xml“ deaktivieren alle extern
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `DisplaySettings`.
 1. Um alle externen Verknüpfungen zu deaktivieren, fügen Sie im Knoten `DisplaySettings` den folgenden Eintrag hinzu und speichern Sie anschließend die Datei: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```as3
+   ```java
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -985,13 +989,13 @@ Die folgenden Änderungen in „config.xml“ ermöglichen die TLS-Unterstützun
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `DisplaySettings`.
 1. Suchen Sie den folgenden Knoten: `<node name="ExternalUser">`
 
-   ```as3
+   ```java
    <node name="ExternalUser">
    ```
 
 1. Legen Sie für den Schlüssel `SmtpUseTls` unter dem Knoten `ExternalUser` den Wert **true** fest.
 1. Legen Sie für den Schlüssel `SmtpUseSsl` unter dem Knoten `ExternalUser` den Wert **false** fest.
-1. Save the `config.xml`.
+1. Speichern Sie die `config.xml`.
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### SOAP-Endpunkte für Document Security-Dokumente deaktivieren {#disable-soap-endpoints-for-document-security-documents}
@@ -1001,7 +1005,7 @@ Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den folgenden Knoten: `<node name="DRM">`
 
-   ```as3
+   ```java
    <node name="DRM">
    ```
 
@@ -1011,7 +1015,7 @@ Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte 
 
 1. Um SOAP-Endpunkte für Document Security-Dokumente zu deaktivieren, ändern Sie den Wert des Attributs „value“ in **false**.
 
-   ```as3
+   ```java
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
@@ -1019,7 +1023,7 @@ Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte 
    </node>
    ```
 
-1. Save the `config.xml`.
+1. Speichern Sie die `config.xml`.
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### Erhöhen der Skalierbarkeit des Document Security-Servers {#increasingscalability}
