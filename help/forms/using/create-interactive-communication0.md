@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 60%
 
 ---
 
@@ -56,6 +59,7 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
 
    1. Tippen Sie auf **Erstellen**.
+
    Eine Bestätigungsmeldung wird angezeigt, dass die interaktive Kommunikation erfolgreich erstellt wurde.
 
 1. Tippen Sie auf **Bearbeiten**, um die interaktive Kommunikation im rechten Bereich zu öffnen.
@@ -72,27 +76,27 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    ![Fragmente von Dokumenten für interaktive Kommunikation](assets/create_first_ic_doc_fragments_new.png)
 
 1. Tippen Sie auf den Zielbereich **Diagramme** und anschließend auf **+**, um eine Komponente **Diagramm** hinzuzufügen.
-1. Tap the Chart component and select ![](assets/configure_icon.png) (Configure). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
+1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie einen Namen für das Diagramm an.
    1. Wählen Sie **Kreis** aus der Dropdownliste **Diagrammtyp**.
-   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen ![](assets/done_icon.png).
+   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen Sie auf ![done_icon](assets/done_icon.png).
    1. Wählen Sie **Frequenz** aus der Dropdown-Liste **Funktion**.
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen ![](assets/done_icon.png).
-   1. Tap ![](assets/done_icon.png) to save the chart properties.
+   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen Sie auf ![done_icon](assets/done_icon.png).
+   1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
 
 1. Go to the **Assets** tab and apply the filter to display only the layout fragments in the left pane. Ziehen Sie das Layout **table_lf** per Drag-and-Drop in den Zielbereich **Einzeln aufgeführte Anrufe**.
-1. Select the Text Field in the **Date** column and tap ![](assets/configure_icon.png) (Configure).
-1. Wählen Sie **Datenmodellobjekt** aus der Dropdown-Liste **Bindungstyp** und wählen Sie **calls** > **calldate**. Tap ![](assets/done_icon.png) twice to save the properties.
+1. Select the Text Field in the **Date** column and tap ![configure_icon](assets/configure_icon.png) (Configure).
+1. Wählen Sie **Datenmodellobjekt** aus der Dropdown-Liste **Bindungstyp** und wählen Sie **calls** > **calldate**. Tap ![done_icon](assets/done_icon.png) twice to save the properties.
 
    Erstellen Sie eine Bindung mit **calltime**, **callnumber**, **callduration** und **callcharges** für Textfelder in den Spalten **Zeit**, **Anzahl**, **Dauer** und **Kosten**.
 
 1. Tap **PayNow** target area, and tap **+** to add an **Image** component.
-1. Tap the Image component and select ![](assets/configure_icon.png) (Configure). Die Bildeigenschaften werden im linken Bereich angezeigt:
+1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Bildeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie **PayNow** als Namen des Bildes im Feld **Name** ein.
    1. Tippen Sie auf **Hochladen**, wählen Sie das im lokalen Dateisystem gespeicherte Bild aus und tippen Sie auf **Öffnen**.
-   1. Tap ![](assets/done_icon.png) to save the image properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the image properties.
 
 1. Repeat steps 13 and 14 to add **ValueAddedServices** image to the **ValueAddedServices** target area.
 
@@ -118,6 +122,7 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
 
    1. Tippen Sie auf **Erstellen**.
+
    Eine Bestätigungsmeldung wird angezeigt, dass die interaktive Kommunikation erfolgreich erstellt wurde.
 
 1. Tippen Sie auf **Bearbeiten**, um die interaktive Kommunikation im rechten Bereich zu öffnen.
@@ -133,18 +138,18 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    | summary_charges_first_interactive_communication | Gebühren |
 
 1. Tap **Summary of Charges** target area, and tap **+** to add a **Chart** component.
-1. Tap the Chart component and select ![](assets/configure_icon.png) (Configure). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
+1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Diagrammeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie einen Namen für das Diagramm an.
    1. Wählen Sie **Kreis** aus der Dropdownliste **Diagrammtyp**.
 
-   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen ![](assets/done_icon.png).
+   1. Wählen Sie die Eigenschaft **calltype** aus dem Datenmodellobjekt **calls** im Abschnitt **X-Achse** Tippen Sie auf ![done_icon](assets/done_icon.png).
 
    1. Wählen Sie **Frequenz** aus der Dropdown-Liste **Funktion**.
 
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen ![](assets/done_icon.png).
+   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Tippen Sie auf ![done_icon](assets/done_icon.png).
 
-   1. Tap ![](assets/done_icon.png) to save the chart properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
 
 1. Wählen Sie die Registerkarte **Datenquellen** aus dem linken Bereich und ziehen Sie das Datenmodellobjekt **calls** in den Zielbereich **Einzeln aufgeführte Anrufe**. All properties in the **calls** data model object are displayed as table columns in the **Itemised Calls** target area in the right pane.
 
@@ -164,7 +169,7 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
    1. Geben Sie die Zahlungs-URL in das Feld **Pfad** ein.
    1. Wählen Sie **Neue Registerkarte** aus der Dropdown-Liste **Ziel**.
 
-   1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the hyperlink properties.
 
 1. Wählen Sie **Style** aus der Dropdown-Liste neben der Option **Vorschau**.
 
@@ -177,16 +182,17 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 
    1. Wählen Sie Rot als Hintergrundfarbe für die Schaltfläche im Abschnitt **Hintergrund**.
    1. Im Feld **Rand** für **Abmessungen und Position**, tippen Sie auf das Symbol **Gleichzeitig bearbeiten**, und setzen Sie den **rechten** Rand auf **450px**. Die Felder Oben, Unten und Links werden leer gelassen.
+
    ![Hyperlink in interaktive Kommunikation einfügen](assets/ic_web_hyperlink_new.png)
 
 1. Tap **Pay Now** target area, and tap **+** to add an **Image** component.
-1. Tap the Image component and select ![](assets/configure_icon.png) (Configure). Die Bildeigenschaften werden im linken Bereich angezeigt:
+1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). Die Bildeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie **PayNow** als Namen des Bildes im Feld **Name** ein.
 
    1. Tap **Upload**, select the **PayNowWeb** image saved on the local file system, and tap **Open**.
 
-   1. Tap ![](assets/done_icon.png) to save the image properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the image properties.
 
 1. Based on the use case, insert a **Subscribe** button in the Interactive Communication that provides the user an option to subscribe to the value added services by clicking the button.
 
@@ -209,6 +215,7 @@ Führen Sie die folgenden Schritte aus, um den Webkanal-Inhalt mithilfe des Druc
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
 
    1. Tippen Sie auf **Erstellen**.
+
    Eine Bestätigungsmeldung wird angezeigt, dass die interaktive Kommunikation erfolgreich erstellt wurde.
 
 1. Tippen Sie auf **Bearbeiten**, um die interaktive Kommunikation im rechten Bereich zu öffnen.
@@ -232,6 +239,7 @@ Führen Sie die folgenden Schritte aus, um den Webkanal-Inhalt mithilfe des Druc
    * Komponente „Rechnungszusammenfassung“ im Bereich „Rechnungszusammenfassung“
    * Komponente „Zusammenfassung der Gebühren“ im Bereich „Zusammenfassung der Gebühren“
    * Layoutfragment (Tabelle) für den Bereich „Einzeln aufgeführte Anrufe“
+
    ![Webinhalt-Struktur](assets/ic_web_content_tree_new.png)
 
 1. Wiederholen Sie die Schritte 13 - 18 von [Interaktive Kommunikation für Webkanal erstellen](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel), um die Hyperlinks **Jetzt bezahlen** und **Abonnieren** in den Webkanal der interaktiven Kommunikation einzufügen.
