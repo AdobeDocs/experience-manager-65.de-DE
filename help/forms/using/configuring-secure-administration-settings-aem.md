@@ -1,22 +1,25 @@
 ---
-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-seo-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
-seo-description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms auf JEE
+seo-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms auf JEE
+description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten können, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, aber in einer Umgebung von AEM Forms-on-JEE nicht erforderlich sind.
+seo-description: Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten können, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, aber in einer Umgebung von AEM Forms-on-JEE nicht erforderlich sind.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 
-# Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms auf JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, in einer Umgebung von AEM Forms on JEE jedoch nicht erforderlich sind.
+Erfahren Sie, wie Sie Benutzerkonten und -dienste verwalten können, die zwar in einer privaten Entwicklungs-Umgebung erforderlich sind, aber in einer Umgebung von AEM Forms-on-JEE nicht erforderlich sind.
 
 Im Allgemeinen verwenden Entwickler nicht die -Produktionsumgebung zum Erstellen und Testen ihrer Anwendungen. Sie müssen daher Benutzerkonten und -dienste verwalten, die, obwohl sie in einer privaten Entwicklungsumgebung benötigt werden, in einer Produktionsumgebung nicht erforderlich sind.
 
@@ -34,7 +37,7 @@ Führen Sie dieses Verfahren mithilfe der Webseite &quot;Anwendungen und Dienste
 
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -69,7 +72,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -99,6 +102,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
    * WorkspacePropertyService
    * OutputService
    * FormsService
+
    Wenn Sie vorhaben, alle oder einiger dieser Dienste für den Remote-Aufruf verfügbar zu machen, sollten Sie auch überlegen, ob Sie nicht den anonymen Zugriff für diese Dienste deaktivieren. Ansonsten kann jeder Aufrufer mit Netzwerkzugriff auf diesen Dienst den Dienst ohne Übergabe gültiger Berechtigungen aufrufen.
 
    Der anonyme Zugriff sollte für alle nicht erforderlichen Dienste deaktiviert werden. Für viele interne Dienste muss die anonyme Authentifizierung aktiviert sein, da sie möglicherweise von jedem beliebigen Benutzer im System ohne vorherige Authentifizierung aufgerufen werden müssen.
@@ -111,7 +115,7 @@ Endbenutzer können sich über Workbench, AEM Forms-Webanwendungen oder benutzer
 
 1. Melden Sie sich bei Administration Console an, indem Sie die folgende URL in einen Webbrowser eingeben:
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
