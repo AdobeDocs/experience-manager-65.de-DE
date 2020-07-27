@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +26,9 @@ Obwohl die Clientanwendung die erforderliche Anwendungslogik für die SSO-Authen
 
 >[!NOTE]
 >
->Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit dem Aufrufen von AEM Forms mithilfe von Remoting vertraut machen. (Siehe [Aufrufen von AEM Forms mithilfe von AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+>Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit Invoking AEM Forms using Remoting vertraut machen. (Siehe AEM Forms [aufrufen mit AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Der folgende AEM Forms-Prozess mit kurzer Lebensdauer `MyApplication/EncryptDocument`wird aufgerufen, nachdem ein Benutzer mithilfe der einmaligen Anmeldung authentifiziert wurde. (Weitere Informationen zu diesem Prozess, z. B. zu Eingabe- und Ausgabewerten, finden Sie im Beispiel [zum Prozess mit](/help/forms/developing/aem-forms-processes.md)kurzer Lebensdauer.)
+Die folgenden AEM Forms mit kurzer Lebensdauer, genannt `MyApplication/EncryptDocument`, werden aufgerufen, nachdem ein Benutzer mithilfe der einmaligen Anmeldung authentifiziert wurde. (Weitere Informationen zu diesem Prozess, z. B. zu Eingabe- und Ausgabewerten, finden Sie im Beispiel [zum Prozess mit](/help/forms/developing/aem-forms-processes.md)kurzer Lebensdauer.)
 
 ![cf_cf_encryptdocumentprocess2](assets/cf_cf_encryptdocumentprocess2.png)
 
@@ -101,7 +104,7 @@ In der vorherigen Abbildung wird der Anwendungsfluss beschrieben, der beim Begin
 
 1. Die Clientanwendung löst das `applicationComplete` Ereignis aus.
 1. Der Anruf `ISSOManager.singleSignOn` erfolgt. Die Clientanwendung sendet eine Anforderung an das User Manager-Sicherheitsservlet.
-1. Wenn das Sicherheits-Servlet den Benutzer authentifiziert, wird `ISSOManager` dies ausgelöst `SSOEvent.AUTHENTICATION_SUCCESS`. Als Antwort zeigt die Client-Anwendung die Hauptseite an. In diesem Beispiel ruft die Hauptseite den kurzlebigen AEM Forms-Prozess mit dem Namen MyApplication/EncryptDocument auf.
+1. Wenn das Sicherheits-Servlet den Benutzer authentifiziert, wird `ISSOManager` dies ausgelöst `SSOEvent.AUTHENTICATION_SUCCESS`. Als Antwort zeigt die Client-Anwendung die Hauptseite an. In diesem Beispiel ruft die Hauptseite den AEM Forms-Prozess mit kurzer Lebensdauer mit dem Namen MyApplication/EncryptDocument auf.
 1. Wenn das Sicherheits-Servlet nicht ermitteln kann, ob der Benutzer gültig ist, fordert die Anwendung erneut Benutzeranmeldeinformationen an. Die `ISSOManager` Klasse löst das `SSOEvent.AUTHENTICATION_REQUIRED` Ereignis aus. Die Clientanwendung zeigt die Anmeldeseite an.
 1. Die auf der Anmeldeseite angegebenen Anmeldeinformationen werden an die `ISSOManager.login` Methode gesendet. Ist die Authentifizierung erfolgreich, führt sie zu Schritt 3. Andernfalls wird das `SSOEvent.AUTHENTICATION_FAILED` Ereignis ausgelöst. Die Clientanwendung zeigt die Anmeldeseite und eine entsprechende Fehlermeldung an.
 
@@ -117,7 +120,7 @@ Die Clientanwendung besteht aus den folgenden Dateien:
 * `views/login.mxml`: Stellt den Anmeldebildschirm dar. (Siehe [Erstellen der Datei &quot;login.mxml&quot;](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file).)
 * `views/logout.mxml`: Stellt den Abmeldebildschirm dar. (Siehe [Erstellen der Datei &quot;logout.mxml&quot;](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file).)
 * `views/progress.mxml`: Stellt eine Ansicht zum Fortschritt dar. (Siehe [Erstellen der Datei &quot;progress.mxml&quot;](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file).)
-* `views/remoting.mxml`: Stellt die Ansicht dar, die den AEM Forms-Prozess mit kurzer Lebensdauer namens MyApplication/EncryptDocument mithilfe von Remoting aufruft. (Siehe [Erstellen der Datei](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)&quot;remoting.mxml&quot;.)
+* `views/remoting.mxml`: Stellt die Ansicht dar, die einen kurzlebigen Prozess namens MyApplication/EncryptDocument mit Remoting aufruft. (Siehe [Erstellen der Datei](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)&quot;remoting.mxml&quot;.)
 
 Die folgende Abbildung zeigt eine visuelle Darstellung der Clientanwendung.
 
@@ -125,13 +128,13 @@ Die folgende Abbildung zeigt eine visuelle Darstellung der Clientanwendung.
 
 >[!NOTE]
 >
->Beachten Sie, dass es zwei Pakete mit dem Namen um und Ansichten gibt. Stellen Sie beim Erstellen der Clientanwendung sicher, dass Sie die Dateien in den entsprechenden Paketen ablegen. Achten Sie außerdem darauf, die Datei &quot;adobe-remoting-provider.swc&quot;dem Klassenpfad Ihres Projekts hinzuzufügen. (Siehe [Einschließen der AEM Forms Flex-Bibliotheksdatei](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+>Beachten Sie, dass es zwei Pakete mit dem Namen um und Ansichten gibt. Stellen Sie beim Erstellen der Clientanwendung sicher, dass Sie die Dateien in den entsprechenden Paketen ablegen. Achten Sie außerdem darauf, die Datei &quot;adobe-remoting-provider.swc&quot;dem Klassenpfad Ihres Projekts hinzuzufügen. (Siehe [Einschließen der Flex-Bibliotheksdatei](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)für AEM Forms.)
 
 ### Erstellen der Datei &quot;SSOStandalone.mxml&quot; {#creating-the-ssostandalone-mxml-file}
 
 Der folgende Code stellt die Datei SSOStandalone.mxml dar.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Application
                  layout="absolute"
@@ -248,7 +251,7 @@ Der folgende Code stellt die Datei SSOStandalone.mxml dar.
 
 Der folgende Code stellt die Datei ISSOManager.as dar.
 
-```as3
+```java
  package um
  {
      import flash.events.IEventDispatcher;
@@ -299,7 +302,7 @@ Der folgende Code stellt die Datei ISSOManager.as dar.
 
 Der folgende Code stellt die Datei SSOEvent.as dar.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -371,7 +374,7 @@ Der folgende Code stellt die Datei SSOEvent.as dar.
 
 Der folgende Code stellt die Datei SSOManager.as dar.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -535,7 +538,7 @@ Der folgende Code stellt die Datei SSOManager.as dar.
 
 Der folgende Code stellt die Datei UserManager.as dar.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -601,7 +604,7 @@ Der folgende Code stellt die Datei UserManager.as dar.
 
 Der folgende Code stellt die Datei &quot;login.mxml&quot;dar.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Script>
@@ -644,7 +647,7 @@ Der folgende Code stellt die Datei &quot;login.mxml&quot;dar.
 
 Der folgende Code stellt die Datei &quot;logout.mxml&quot;dar.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Label x="97" y="188" text="You have successfully logged out from the application"/>
@@ -657,7 +660,7 @@ Der folgende Code stellt die Datei &quot;logout.mxml&quot;dar.
 
 Der folgende Code stellt die Datei &quot;progress.mxml&quot;dar.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas >
      <mx:Label x="151" y="141" text="Wait...."/>
@@ -667,9 +670,9 @@ Der folgende Code stellt die Datei &quot;progress.mxml&quot;dar.
 
 ### Erstellen der Datei &quot;remoting.mxml&quot; {#creating-the-remoting-mxml-file}
 
-Der folgende Code stellt die Datei &quot;remoting.mxml&quot;dar, die den `MyApplication/EncryptDocument` Prozess aufruft. Da ein Dokument an den Prozess übergeben wird, befindet sich in dieser Datei die Anwendungslogik, die für die Übergabe eines sicheren Dokuments an AEM Forms verantwortlich ist. (Siehe [Übergeben sicherer Dokumente zum Aufrufen von Prozessen mit Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+Der folgende Code stellt die Datei &quot;remoting.mxml&quot;dar, die den `MyApplication/EncryptDocument` Prozess aufruft. Da ein Dokument an den Prozess übergeben wird, befindet sich in dieser Datei die Anwendungslogik, die für die Weitergabe eines sicheren Dokuments an AEM Forms verantwortlich ist. (Siehe [Übergeben sicherer Dokumente zum Aufrufen von Prozessen mit Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="664" height="400" creationComplete="initializeChannelSet()" xmlns:views="views.*">
      <mx:Script>
@@ -869,7 +872,7 @@ Die folgenden Abschnitte enthalten zusätzliche Details, die die Kommunikation z
 
 ### Eine neue Authentifizierung erfolgt {#a-new-authentication-occurs}
 
-In diesem Fall versucht der Benutzer, sich zum ersten Mal von einer Clientanwendung bei AEM Forms anzumelden. (Es gibt keine vorherige Sitzung, an der der Benutzer beteiligt war.) Im `applicationComplete` Ereignis wird die `SSOManager.singleSignOn` Methode aufgerufen, die eine Anforderung an den User Manager sendet.
+In diesem Fall versucht der Benutzer zum ersten Mal, sich von einer Clientanwendung bei AEM Forms anzumelden. (Es gibt keine vorherige Sitzung, an der der Benutzer beteiligt war.) Im `applicationComplete` Ereignis wird die `SSOManager.singleSignOn` Methode aufgerufen, die eine Anforderung an den User Manager sendet.
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 
@@ -885,7 +888,7 @@ Als Reaktion auf diesen Wert wird ein `SSOEvent.AUTHENTICATION_REQUIRED` Wert ge
 
 Das User Manager-Sicherheits-Servlet antwortet mit dem folgenden Wert:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
  Set-Cookie: lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A; Path=/
  authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
@@ -897,14 +900,14 @@ Das Ergebnis ist, `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` dass 
 
 In diesem Fall hat sich der Benutzer bereits bei AEM Forms angemeldet und navigiert dann zur Clientanwendung. Die Clientanwendung stellt während des Starts eine Verbindung zum User Manager-Sicherheits-Servlet her.
 
-```as3
+```verilog
  GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
 Da der Benutzer bereits authentifiziert ist, ist das User Manager-Cookie vorhanden und wird an das User Manager-Sicherheits-Servlet gesendet. Das Servlet ruft dann den `assertionId` Wert ab und prüft, ob er gültig ist. Wenn es gültig ist, wird es zurückgegeben `authstate=COMPLETE` . Andernfalls `authstate=CREDENTIAL_CHALLENGE` wird zurückgegeben. Die folgende Antwort ist typisch:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
         authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
