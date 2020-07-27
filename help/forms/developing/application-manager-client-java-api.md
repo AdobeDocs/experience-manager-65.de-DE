@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 1%
 
 ---
 
@@ -33,19 +36,19 @@ Der folgende Java API Quick Beginn (SOAP) ist für den Application Manager-Clien
 
 [Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Löschen des AEM Forms-Anwendungsarchivs mit der Java-API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Quick Beginn (SOAP-Modus):AEM Forms-Anwendungsarchiv mit der Java-API löschen](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Quick Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Erstellen der Anwendungsversion mit der Java-API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API erstellt.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -144,7 +147,7 @@ public class CreateApplicationVersion_SOAP {
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API exportiert.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -251,7 +254,7 @@ Im folgenden Java-Codebeispiel wird eine Anwendung mit der JAVA-API importiert.
 >
 >Die Java-API importApplication() ersetzt vorhandene Anwendungen mit demselben Namen durch eine neuere Anwendung. Um eine vorhandene Anwendung zu aktualisieren, verwenden Sie API importApplication() anstelle von API updateApplication().
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -334,7 +337,7 @@ public class ImportLCA_SOAP {
 
 Im folgenden Java-Codebeispiel wird eine Anwendung mit der Java-API abgerufen.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -441,9 +444,9 @@ public class GetApplication_SOAP {
 
 Im folgenden Java-Codebeispiel werden die Anwendungen mit der Java-API abgerufen.
 
-**Hinweis**: Beim Abrufen der AEM Forms-Anwendungs-API getApplications() werden nur bereitgestellte Anwendungen zurückgegeben.
+**Hinweis**: getAEM Forms Application API, getApplications(), gibt nur bereitgestellte Anwendungen zurück.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -538,7 +541,7 @@ public class GetApplications_SOAP {
 
 ## Quick Beginn (SOAP-Modus): Abrufen des Anwendungsstatus mit der Java-API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -643,9 +646,9 @@ public class GetApplicationStatus_SOAP {
 
 ## Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des LiveCycle ES2-Anwendungsarchivs und höher mit der Java-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird die Vorschau von AEM Forms und späteren Anwendungsarchiven mit der Java-API gezeigt.
+Im folgenden Java-Codebeispiel wird die Vorschau von AEM Forms und späteren Anwendungsarchiven mithilfe der Java-API veranschaulicht.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -724,7 +727,7 @@ public class PreviewLCA_SOAP {
 
 Das folgende Java-Codebeispiel dient zum Löschen eines Anwendungsarchivs.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
