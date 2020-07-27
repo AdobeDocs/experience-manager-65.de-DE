@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 67%
 
 ---
 
@@ -29,8 +32,8 @@ Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietssche
 
 Wenn ein adaptives Formular wiedergegeben wird, identifiziert es das angeforderte Gebietsschema, indem es folgende Parameter in der angegebenen Reihenfolge durchsucht:
 
-* Request parameter `afAcceptLang`
-To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. Beispielsweise erzwingt die folgende URL die Wiedergabe des Formulars im japanischen Gebietsschema:
+* Abfrageparameter `afAcceptLang`Um das Browser-Gebietsschema der Benutzer zu überschreiben, können Sie die Variable 
+`afAcceptLang` -Abfrageparameter, um das Gebietsschema zu erzwingen. Beispielsweise erzwingt die folgende URL die Wiedergabe des Formulars im japanischen Gebietsschema:
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * Das für den Benutzer festgelegte Browser-Gebietsschema, das in der Abfrage mit dem `Accept-Language`-Header angegeben ist.
@@ -57,7 +60,7 @@ So fügen Sie Unterstützung für ein neues Gebietsschema während der Laufzeit 
 
 ### Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Wechseln zu `https://'[server]:[port]'/system/console/configMgr`.
+1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf.
 1. Klicken Sie, um die Komponente **Handbuch-Lokalisierungsdienst** zu bearbeiten.
 1. Fügen Sie der Liste der unterstützen Gebietsschemata das gewünschte Gebietsschema hinzu.
 
@@ -71,7 +74,7 @@ Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `etc/<folderH
 
 * **js.txt**, die Folgendes enthält:
 
-```
+```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
@@ -83,11 +86,11 @@ Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `etc/<folderH
 
 Fügen Sie der Clientbibliothek folgende Dateien hinzu:
 
-* **i18n.js** definieren `guidelib.i18n`, mit Mustern von &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` für die `<locale>` [](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)gemäß den XFA-Spezifikationen, die unterLocale Set Specification beschrieben werden. You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **i18n.js** definieren `guidelib.i18n`, mit Mustern von &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` für die `<locale>` [](https://helpx.adobe.com/content/dam/de/Adobe/specs/xfa_spec_3_3.pdf)gemäß den XFA-Spezifikationen, die unterLocale Set Specification beschrieben werden. You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 * **LogMessages.js** definieren `guidelib.i18n.strings` und `guidelib.i18n.LogMessages` für die `<locale>` , wie in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.txt**, die Folgendes enthält:
 
-```
+```text
 i18n.js
 LogMessages.js
 ```
