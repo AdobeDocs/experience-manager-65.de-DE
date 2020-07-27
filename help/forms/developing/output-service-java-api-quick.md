@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ Java API Quick Beginn (SOAP) ist für den Output-Dienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Transformieren eines PDF-Dokuments mit der Java-API](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* erstellt. Dieses PDF-Dokument basiert auf einem Formularentwurf mit dem Namen *Loan.xdp* und einer XML-Datendatei mit dem Namen *Loan.xml*. Die Datei &quot; *Loan.pdf* &quot;wird in den Ordner &quot;C:\Adobe folder located on the J2EE application server hosting AEM Forms&quot;geschrieben, nicht auf den Clientcomputer. (Siehe [Erstellen von PDF-Dokumenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -171,9 +174,9 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* er
 
 >[!NOTE]
 >
->Bevor Sie diesen Beginn ausführen, stellen Sie sicher, dass Sie eine AEM Forms-Anwendung mit dem Namen &quot;Anwendungen/FormsApplication&quot;erstellen. Erstellen Sie einen Ordner in der Anwendung mit dem Namen FormsFolder und legen Sie die XDP-Datei im Ordner ab. Weitere Informationen finden Sie unter PDF-Dokument [erstellen](/help/forms/developing/creating-document-output-streams.md)*.*
+>Bevor Sie diesen Beginn ausführen, stellen Sie sicher, dass Sie eine AEM Forms-Anwendung mit dem Namen Applications/FormsApplication erstellen. Erstellen Sie einen Ordner in der Anwendung mit dem Namen FormsFolder und legen Sie die XDP-Datei im Ordner ab. Weitere Informationen finden Sie unter PDF-Dokument [erstellen](/help/forms/developing/creating-document-output-streams.md)*.*
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -306,9 +309,9 @@ Die *Datei &quot;Loan.pdf* &quot;wurde an die Adresse C:\Adobe folder located on
 
 >[!NOTE]
 >
->Bevor Sie diesen Beginn ausführen, stellen Sie sicher, dass Sie eine AEM Forms-Anwendung mit dem Namen &quot;Anwendungen/FormsApplication&quot;erstellen. Erstellen Sie einen Ordner in der Anwendung mit dem Namen FormsFolder und legen Sie die XDP-Datei im Ordner ab.
+>Bevor Sie diesen Beginn ausführen, stellen Sie sicher, dass Sie eine AEM Forms-Anwendung mit dem Namen Applications/FormsApplication erstellen. Erstellen Sie einen Ordner in der Anwendung mit dem Namen FormsFolder und legen Sie die XDP-Datei im Ordner ab.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -444,7 +447,7 @@ Die *Datei &quot;Loan.pdf* &quot;wurde an die Adresse C:\Adobe folder located on
 
 Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* erstellt. Dieses PDF-Dokument basiert auf einem Formularentwurf mit dem Namen *Loan.xdp* und einer XML-Datendatei mit dem Namen *Loan.xml*. Die Datei &quot; *Loan.pdf* &quot;wird in den Ordner &quot;C:\Adobe folder located on the J2EE application server hosting AEM Forms&quot;geschrieben, nicht auf den Clientcomputer. (Siehe [Erstellen von PDF-Dokumenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -554,7 +557,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* er
 
 Im folgenden Java-Codebeispiel wird ein PDF/A-Dokument mit dem Namen *LoanArchive.pdf* erstellt. Dieses PDF-Dokument basiert auf einem Formularentwurf mit dem Namen *Loan.xdp* und einer XML-Datendatei mit dem Namen *Loan.xml*. Die Datei *LoanArchive.pdf* wird in den Ordner C:\Adobe folder located on the J2EE application server hosting AEM Forms geschrieben, nicht auf den Clientcomputer. (Siehe PDF/A-Dokumente [erstellen](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -670,9 +673,9 @@ Im folgenden Java-Codebeispiel wird ein PDF/A-Dokument mit dem Namen *LoanArchiv
 
 ## Quick Beginn (SOAP-Modus): Übergeben von Dokumenten an den Output-Dienst mit der Java-API {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-Mit dem folgenden Java-Quick-Beginn wird die Datei *Loan.xdp* aus Content Services abgerufen. Diese XDP-Datei befindet sich im `space /Company Home/Form Designs`. Die XDP-Datei wird in einer `com.adobe.idp.Document` Instanz zurückgegeben. Die `com.adobe.idp.Document` Instanz wird an den Output-Dienst übergeben. Das nicht interaktive Formular wird als PDF-Datei mit dem Namen *Loan.pdf *auf dem Clientcomputer gespeichert. Da die Option &quot;Datei-URI&quot;festgelegt ist, wird die PDF-Datei *Loan.pdf *auch auf dem J2EE-Anwendungsserver gespeichert, auf dem AEM Forms gehostet wird. (Siehe [Übergeben von Dokumenten in Content Services ES2 an den Output-Dienst](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+Mit dem folgenden Java-Quick-Beginn wird die Datei *Loan.xdp* aus Content Services abgerufen. Diese XDP-Datei befindet sich im `space /Company Home/Form Designs`. Die XDP-Datei wird in einer `com.adobe.idp.Document` Instanz zurückgegeben. Die `com.adobe.idp.Document` Instanz wird an den Output-Dienst übergeben. Das nicht interaktive Formular wird als PDF-Datei mit dem Namen *Loan.pdf *auf dem Clientcomputer gespeichert. Da die Option &quot;Datei-URI&quot;festgelegt ist, wird die PDF-Datei *Loan.pdf *auch auf dem J2EE-Anwendungsserver gespeichert, auf dem AEM Forms gehostet werden. (Siehe [Übergeben von Dokumenten in Content Services ES2 an den Output-Dienst](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -811,7 +814,7 @@ Mit dem folgenden Java-Quick-Beginn wird die Datei *Loan.xdp* aus Content Servic
 
 Im folgenden Java-Codebeispiel wird ein PDF-Dokument erstellt, das auf einem Formularentwurf basiert, der vom Assembler-Dienst assembliert wurde. Der Assembler-Dienst assembliert Fragmente, die sich in mehreren XDP-Dateien befinden, zu einem einzigen Formularentwurf. Anwendungslogik, die den Assembler-Dienst aufruft, befindet sich in einer benutzerdefinierten Methode mit dem Namen `GetFormDesign`. Das nicht interaktive Formular wird als PDF-Datei mit dem Namen *Loan.pdf *auf dem Clientcomputer gespeichert. (Siehe [Erstellen von PDF-Dokumenten mit Fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1019,7 +1022,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument erstellt, das auf einem For
 
 Im folgenden Java-Codebeispiel wird ein Ausgabestream in eine PostScript-Datei mit dem Namen *MortgageForm.ps* gedruckt. (Siehe [Drucken in Dateien](/help/forms/developing/creating-document-output-streams.md#printing-to-files).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1131,7 +1134,7 @@ Im folgenden Java-Codebeispiel wird ein Ausgabestream in eine PostScript-Datei m
 
 Im folgenden Java-Codebeispiel wird ein PostScript-Druckstream an einen Netzwerkdrucker mit dem Namen *\\Printer1\Printer* gesendet. Zwei Kopien werden an den Drucker gesendet. (Siehe [Senden von Druckströmen an Drucker](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1256,7 +1259,7 @@ Im folgenden Java-Codebeispiel wird ein PostScript-Druckstream an einen Netzwerk
 
 Der folgende Java-Code erstellt mehrere PDF-Dateien für jeden Datensatz, der sich in einer XML-Datendatei mit dem Namen *Loan_data_batch.xml* befindet. Die Dateien werden in den Ordner C:\Adobe directory geschrieben. Die PDF-Dateien werden in den Ordner &quot;C:\Adobe folder located on the J2EE application server hosting AEM Forms&quot;geschrieben, nicht auf den Clientcomputer. (Siehe [Erstellen mehrerer Ausgabedateien](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1377,7 +1380,7 @@ Der folgende Java-Code erstellt mehrere PDF-Dateien für jeden Datensatz, der si
 
 Im folgenden Java-Codebeispiel werden zwei Textmuster erstellt, nach denen der Output-Dienst sucht. Das erste Textmuster ist Hypothek. Wenn der Output-Dienst gefunden wird, verwendet er den Formularentwurf *Mortgage.xdp*. Das zweite Textmuster ist Automobil. Wenn der Output-Dienst gefunden wird, verwendet er den Formularentwurf *AutomobileLoan.xdp*. Wenn sich kein Textmuster befindet, verwendet der Output-Dienst den Standardformularentwurf* Loan.xdp. *(Siehe [Erstellen von Suchregeln](/help/forms/developing/creating-document-output-streams.md#creating-search-rules).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1509,7 +1512,7 @@ Im folgenden Java-Codebeispiel werden zwei Textmuster erstellt, nach denen der O
 
 Im folgenden Java-Codebeispiel wird ein interaktives PDF-Dokument mit dem Namen *Loan.pdf* in ein nicht interaktives PDF-Dokument mit dem Namen *NonInteractiveLoan.pdf* umgewandelt. (Siehe [Reduzieren von PDF-Dokumenten](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
