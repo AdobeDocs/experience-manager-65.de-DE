@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '927'
+ht-degree: 79%
 
 ---
 
@@ -48,7 +51,7 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 
 For optimal performance, it is recomended to use the following JVM `init` arguments to configure the `Java heap` and `PermGen`.
 
-```java
+```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xmx8192m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
@@ -81,7 +84,7 @@ Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfiguration
 
 1. Uncomment the following module configurations in `APACHE_HOME/conf/httpd.conf` file.
 
-   ```java
+   ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
    LoadModule proxy_balancer_module modules/mod_proxy_http.so
    LoadModule deflate_module modules/mod_deflate.so
@@ -94,7 +97,7 @@ Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfiguration
 1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
 Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
 
-   ```java
+   ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
@@ -103,7 +106,7 @@ Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
 
    **Für HTML5-Formulare**
 
-   ```java
+   ```xml
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
@@ -120,7 +123,7 @@ Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
 
    **Bei adaptiven Formularen**
 
-   ```java
+   ```xml
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
