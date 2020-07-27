@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10781'
+ht-degree: 6%
 
 ---
 
@@ -52,7 +55,7 @@ Sie können diese Aufgaben mithilfe des Endpunktregistrierungsdiensts ausführen
 
 ## Hinzufügen von EJB-Endpunkten {#adding-ejb-endpoints}
 
-Sie können einem Dienst programmgesteuert einen EJB-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Indem Sie einem Dienst einen EJB-Endpunkt hinzufügen, aktivieren Sie eine Clientanwendung, um den Dienst mithilfe des EJB-Modus aufzurufen. Das heißt, beim Festlegen der Verbindungseigenschaften, die zum Aufrufen von AEM Forms erforderlich sind, können Sie den EJB-Modus auswählen. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+Sie können einem Dienst programmgesteuert einen EJB-Endpunkt hinzufügen, indem Sie die AEM Forms Java-API verwenden. Indem Sie einem Dienst einen EJB-Endpunkt hinzufügen, aktivieren Sie eine Clientanwendung, um den Dienst mithilfe des EJB-Modus aufzurufen. Das heißt, beim Einstellen der Verbindungseigenschaften, die zum Aufrufen von AEM Forms erforderlich sind, können Sie den EJB-Modus auswählen. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -78,8 +81,8 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Die fo
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -155,7 +158,7 @@ Hinzufügen eines EJB-Endpunkts mithilfe der Java-API:
 
 ## Hinzufügen von SOAP-Endpunkten {#adding-soap-endpoints}
 
-Sie können einem Dienst programmgesteuert einen SOAP-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines SOAP-Endpunkts aktivieren Sie eine Clientanwendung, um den Dienst im SOAP-Modus aufzurufen. Das heißt, beim Festlegen der Verbindungseigenschaften, die zum Aufrufen von AEM Forms erforderlich sind, können Sie den SOAP-Modus auswählen.
+Sie können einem Dienst programmgesteuert einen SOAP-Endpunkt hinzufügen, indem Sie die Java-API der AEM Forms verwenden. Durch Hinzufügen eines SOAP-Endpunkts aktivieren Sie eine Clientanwendung, um den Dienst im SOAP-Modus aufzurufen. Das heißt, beim Festlegen der Verbindungseigenschaften, die zum Aufrufen von AEM Forms erforderlich sind, können Sie den SOAP-Modus auswählen.
 
 >[!NOTE]
 >
@@ -183,10 +186,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
-Diese JAR-Dateien sind erforderlich, um einen SOAP-Endpunkt zu erstellen. Sie benötigen jedoch zusätzliche JAR-Dateien, wenn Sie den SOAP-Endpunkt zum Aufrufen des Dienstes verwenden. Weitere Informationen zu AEM Forms-JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Diese JAR-Dateien sind erforderlich, um einen SOAP-Endpunkt zu erstellen. Sie benötigen jedoch zusätzliche JAR-Dateien, wenn Sie den SOAP-Endpunkt zum Aufrufen des Dienstes verwenden. Weitere Informationen zu AEM Forms-JAR-Dateien finden Sie unter Java-Bibliotheksdateien für [AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)einschließen.
 
 **EndpointRegistry Client-Objekt erstellen**
 
@@ -260,9 +263,9 @@ Hinzufügen eines SOAP-Endpunkts zu einem Dienst mithilfe der Java-API:
 
 ## Endpunkte für überwachte Ordner hinzufügen {#adding-watched-folder-endpoints}
 
-Sie können einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines Endpunkts für den überwachten Ordner können Sie Benutzern das Platzieren einer Datei (z. B. einer PDF-Datei) in einem Ordner ermöglichen. Wenn die Datei im Ordner abgelegt wird, wird der konfigurierte Dienst aufgerufen und verarbeitet die Datei. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei in einem angegebenen Ausgabeordner gespeichert. Ein überwachter Ordner ist so konfiguriert, dass er in einem bestimmten Zeitintervall oder mit einem Cron-Zeitplan gescannt wird, z. B. jeden Montag, Mittwoch und Freitag um 12 Uhr.
+Sie können einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzufügen, indem Sie die Java-API der AEM Forms verwenden. Durch Hinzufügen eines Endpunkts für den überwachten Ordner können Sie Benutzern das Platzieren einer Datei (z. B. einer PDF-Datei) in einem Ordner ermöglichen. Wenn die Datei im Ordner abgelegt wird, wird der konfigurierte Dienst aufgerufen und verarbeitet die Datei. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei in einem angegebenen Ausgabeordner gespeichert. Ein überwachter Ordner ist so konfiguriert, dass er in einem bestimmten Zeitintervall oder mit einem Cron-Zeitplan gescannt wird, z. B. jeden Montag, Mittwoch und Freitag um 12 Uhr.
 
-Um einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzuzufügen, beachten Sie den folgenden Prozess mit kurzer Lebensdauer namens *EncryptDocument*. (Siehe [AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
+Um einem Dienst programmgesteuert einen Endpunkt des Typs &quot;Überwachter Ordner&quot;hinzuzufügen, beachten Sie den folgenden Prozess mit kurzer Lebensdauer namens *EncryptDocument*. (Siehe [Verstehen der AEM Forms-Vorgänge](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -293,8 +296,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -322,12 +325,12 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **asynchron**: Identifiziert den Aufruftyp als asynchron oder synchron. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet true. Asynchron wird empfohlen.
 * **cronExpression**: Wird von Quarz verwendet, um die Abfrage des Eingabeordners zu planen. Weitere Informationen zum Konfigurieren des Cron-Ausdrucks finden Sie unter [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
 * **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll ist. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
-* **repeatInterval**: Das Intervall (in Sekunden), in dem der überwachte Ordner auf Eingabe überprüft wird. Sofern die Einschränkungen nicht aktiviert sind, sollte dieser Wert länger als die Verarbeitungszeit für einen durchschnittlichen Auftrag sein. Andernfalls kann das System überlastet werden. Der Standardwert ist 5.
+* **repeatInterval**: Das Intervall (in Sekunden), in dem der überwachte Ordner auf Eingabe überprüft wird. Sofern die Einschränkungen nicht aktiviert sind, sollte dieser Wert länger als die Verarbeitungszeit für einen durchschnittlichen Auftrag sein. Andernfalls kann das System überlastet werden. Der Standardwert ist 5.         
 * **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder Ordner überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
 * **throttleOn**: Begrenzt die Anzahl der Aufträge für überwachte Ordner, die jederzeit verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert batchSize bestimmt.
 * **userName**: Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus dem überwachten Ordner verwendet wird. Dieser Wert ist erforderlich. Der Standardwert ist „SuperAdmin“.
 * **domainName**: Die Domäne des Benutzers. Dieser Wert ist erforderlich. Der Standardwert ist „DefaultDom“.
-* **batchSize**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Verwenden Sie diesen Wert, um eine Überlastung des Systems zu vermeiden. Das gleichzeitige Scannen zu vieler Dateien kann zu einem Absturz führen. Der Standardwert ist 2.
+* **batchSize**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Verwenden Sie diesen Wert, um eine Überlastung des Systems zu vermeiden. Das gleichzeitige Scannen zu vieler Dateien kann zu einem Absturz führen. Der Standardwert ist 2.         
 * **waitTime**: Die Zeit in Millisekunden, die nach der Erstellung gewartet wird, bevor ein Ordner oder eine Datei überprüft wird. Wenn die Wartezeit beispielsweise 36.000.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von 59 oder mehr Minuten aufgenommen. Dieses Attribut ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Diese Einstellung verhindert, dass der überwachte Ordner die Datei überprüft, wenn sie zehn Minuten lang nicht gewartet hat. Der Standardwert ist 0.
 * **excludeFilePattern**: Das Muster, mit dem ein überwachter Ordner ermittelt, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Dateien oder Ordner mit diesem Muster werden nicht zur Verarbeitung überprüft. Diese Einstellung ist nützlich, wenn die Eingabe ein Ordner ist, der mehrere Dateien enthält. Der Inhalt des Ordners kann in einen Ordner kopiert werden, der einen Namen hat, der vom überwachten Ordner aufgenommen wird. Dieser Schritt verhindert, dass der überwachte Ordner einen Ordner zur Verarbeitung aufnimmt, bevor der Ordner vollständig in den Eingabeordner kopiert wird. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ausdruck ändert den regulären Ordner, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von normalen Ausdrücken nicht unterstützt.
 * **includeFilePattern**: Das Muster, mit dem der überwachte Ordner ermittelt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. Der Standardwert ist `*`. Dieser Wert gibt alle Dateien und Ordner an. Zusätzlich kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ausdruck ändert den regulären Ordner, um Platzhaltermuster wie `*.*` und `*.pdf`zu unterstützen. Diese Platzhaltermuster werden von normalen Ausdrücken nicht unterstützt. Dieser Wert ist ein obligatorischer Wert.
@@ -388,7 +391,7 @@ Nachdem Sie einen Endpunkt des Typs &quot;Überwachter Ordner&quot;erstellt habe
 
 ### Hinzufügen eines Endpunkts für einen überwachten Ordner mit der Java-API {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms Java API:
+Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der Java-API der AEM Forms:
 
 1. Schließen Sie Projektdateien ein.
 
@@ -414,6 +417,7 @@ Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms 
 
    * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Geben Sie beim Festlegen des `url` Konfigurationswerts `url`an.
    * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Geben Sie beim Festlegen des `url` Konfigurationswerts den Speicherort des überwachten Ordners an.
+
    >[!NOTE]
    >
    >Informationen zu allen für den EncryptDocument-Dienst festgelegten Konfigurationswerten finden Sie im Java-Codebeispiel unter [QuickStart: Hinzufügen eines Endpunkts für überwachte Ordner mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
@@ -426,6 +430,7 @@ Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms 
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des `InDoc` Eingabeparameters lautet beispielsweise `com.adobe.idp.Document`.
    * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. For example, you can specify `variable`.
    * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Sie können beispielsweise &amp;ast;.pdf als Dateimuster angeben.
+
    >[!NOTE]
    >
    >Rufen Sie die `setInputParameterMapping` Methode für jeden zu definierenden Eingabeparameterwert auf. Da der EncryptDocument-Prozess nur einen Eingabeparameter hat, müssen Sie diese Methode einmal aufrufen.
@@ -458,9 +463,9 @@ Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der AEM Forms 
 
 ### Konfigurationswerte für überwachte Ordner - Konstante Datei {#watched-folder-configuration-values-constant-file}
 
-Der [Schnellstart: Beim Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die Teil Ihres Java-Projekts sein muss, um den schnellen Beginn zu kompilieren. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines Endpunkts für den überwachten Ordner festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
+Der [Schnellstart: Beim Hinzufügen eines Endpunkts für den überwachten Ordner mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die Teil Ihres Java-Projekts sein muss, um den schnellen Beginn kompilieren zu können. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines Endpunkts für den überwachten Ordner festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
 
-```as3
+```java
  /**
      * This class contains constants that can be used when setting Watched Folder
      * configuration values
@@ -491,9 +496,9 @@ Der [Schnellstart: Beim Hinzufügen eines Endpunkts für den überwachten Ordner
 
 ## Hinzufügen von E-Mail-Endpunkten {#adding-email-endpoints}
 
-Sie können einem Dienst programmgesteuert einen E-Mail-Endpunkt hinzufügen, indem Sie die AEM Forms Java-API verwenden. Durch Hinzufügen eines E-Mail-Endpunkts können Sie Benutzern das Senden einer E-Mail mit einer oder mehreren Dateianlagen an ein angegebenes E-Mail-Konto ermöglichen. Anschließend wird der Konfigurationsdienst aufgerufen und die Dateien werden verarbeitet. Nachdem der Dienst den angegebenen Vorgang ausgeführt hat, wird eine E-Mail-Nachricht mit den geänderten Dateien als Dateianlagen an den Absender gesendet.
+Sie können einem Dienst programmgesteuert einen E-Mail-Endpunkt hinzufügen, indem Sie die Java-API der AEM Forms verwenden. Durch Hinzufügen eines E-Mail-Endpunkts können Sie Benutzern das Senden einer E-Mail mit einer oder mehreren Dateianlagen an ein angegebenes E-Mail-Konto ermöglichen. Anschließend wird der Konfigurationsdienst aufgerufen und die Dateien werden verarbeitet. Nachdem der Dienst den angegebenen Vorgang ausgeführt hat, wird eine E-Mail-Nachricht mit den geänderten Dateien als Dateianlagen an den Absender gesendet.
 
-Zum programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *MyApplication\EncryptDocument* in Betracht ziehen. Weitere Informationen zu Prozessen mit kurzer Lebensdauer finden Sie unter [AEM Forms-Prozesse](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
+Zum programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *MyApplication\EncryptDocument* in Betracht ziehen. Weitere Informationen zu Prozessen mit kurzer Lebensdauer finden Sie unter [Verstehen von Prozessen](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)in AEM Forms.
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -524,8 +529,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -555,9 +560,9 @@ Die folgenden Konfigurationswerte werden festgelegt, wenn einem Dienst programmg
 
 * **cronExpression**: Ein Cron-Ausdruck, wenn die E-Mail mithilfe eines Cron-Ausdrucks geplant werden muss.
 * **repeatCount**: Gibt an, wie oft der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
-* **repeatInterval**: Die Abtastrate in Sekunden, die der Empfänger zum Prüfen auf eingehende E-Mails verwendet. Der Standardwert ist 10.
+* **repeatInterval**: Die Abtastrate in Sekunden, die der Empfänger zum Prüfen auf eingehende E-Mails verwendet. Der Standardwert ist 10.         
 * **startDelay**: Die Wartezeit bis zum Scannen nach den Beginn der Planung. Die Standardzeit ist 0.
-* **batchSize**: Die Anzahl der E-Mail-Nachrichten, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+* **batchSize**: Die Anzahl der E-Mail-Nachrichten, die der Empfänger pro Überprüfung verarbeitet, um eine optimale Leistung zu erzielen. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.         
 * **userName**: Der Benutzername, der beim Aufrufen eines Zielgruppe-Dienstes aus E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domänenmuster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. For example, if `adobe.com` is used, only email from adobe.com is processed, email from other domains is ignored.
@@ -567,7 +572,7 @@ Die folgenden Konfigurationswerte werden festgelegt, wenn einem Dienst programmg
 * **inboxHost**: Der Hostname oder die IP-Adresse des Posteingangs, die vom E-Mail-Anbieter überprüft werden soll.
 * **inboxPort**: Der Anschluss, den der E-Mail-Server verwendet. Der Standardwert ist für POP3 „110“ und für IMAP „143“. Ist SSL aktiviert, ist der Standardwert für POP3 „995“ und für IMAP „993“.
 * **inboxProtocol**: Das E-Mail-Protokoll für den E-Mail-Endpunkt, der zum Überprüfen des Posteingangs verwendet wird. Die Optionen sind `IMAP` oder `POP3`. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
-* **inboxTimeOut**: Zeitüberschreitung in Sekunden, bis der E-Mail-Anbieter auf Posteingangsantworten wartet. Der Standardwert ist 60.
+* **inboxTimeOut**: Zeitüberschreitung in Sekunden, bis der E-Mail-Anbieter auf Posteingangsantworten wartet. Der Standardwert ist 60.         
 * **inboxUser**: Der Benutzername, der zum Anmelden beim E-Mail-Konto erforderlich ist. Je nach E-Mail-Server und Konfiguration kann dies nur der Benutzernamenteil der E-Mail-Adresse oder die vollständige E-Mail-Adresse sein.
 * **inboxPassword**: Das Kennwort für den Posteingangsbenutzer.
 * **inboxSSLEnabled**: Legen Sie diesen Wert fest, um den E-Mail-Anbieter zu zwingen, SSL zu verwenden, wenn Benachrichtigungen über Ergebnisse oder Fehler gesendet werden. Stellen Sie sicher, dass der IMAP- oder POP3-Host SSL unterstützt.
@@ -657,6 +662,7 @@ Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API:
 
    * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Geben Sie beim Festlegen des `smtpHost` Konfigurationswerts `smtpHost`an.
    * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Geben Sie beim Festlegen des `smtpHost` Konfigurationswerts einen Zeichenfolgenwert an, der den Namen des SMTP-Servers angibt.
+
    >[!NOTE]
    >
    >Informationen zu allen in diesem Abschnitt eingeführten Konfigurationswerten für den EncryptDocument-Dienst finden Sie im Java-Codebeispiel unter [QuickStart: Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
@@ -669,6 +675,7 @@ Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API:
    * Ein Zeichenfolgenwert, der den Datentyp des Eingabeparameters angibt. Der Datentyp des `InDoc` Eingabeparameters lautet beispielsweise `com.adobe.idp.Document`.
    * Ein Zeichenfolgenwert, der den Zuordnungstyp angibt. For example, you can specify `variable`.
    * Ein Zeichenfolgenwert, der den Wert des Zuordnungstyps angibt. Sie können beispielsweise &amp;ast;.pdf als Dateimuster angeben.
+
    >[!NOTE]
    >
    >Rufen Sie die `setInputParameterMapping` Methode für jeden zu definierenden Eingabeparameterwert auf. Da der EncryptDocument-Prozess nur einen Eingabeparameter hat, müssen Sie diese Methode einmal aufrufen.
@@ -703,7 +710,7 @@ Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API:
 
 Der [Schnellstart: Beim Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) wird eine Konstantendatei verwendet, die zum Kompilieren des schnellen Beginns in Ihrem Java-Projekt enthalten sein muss. Diese Konstantendatei stellt Konfigurationswerte dar, die beim Hinzufügen eines E-Mail-Endpunkts festgelegt werden müssen. Der folgende Java-Code stellt die Konstantendatei dar.
 
-```as3
+```java
  /**
      * This class contains constants that can be used when setting email endpoint
      * configuration values
@@ -745,7 +752,7 @@ Der [Schnellstart: Beim Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/he
 >
 >LiveCycle Remoting APIs für AEM Forms on JEE nicht mehr unterstützt.
 
-Sie können einem Dienst programmgesteuert einen Remoting-Endpunkt hinzufügen, indem Sie die AEM Forms Java API verwenden. Durch Hinzufügen eines Remoting-Endpunkts aktivieren Sie eine Flex-Anwendung, um den Dienst mithilfe von Remoting aufzurufen. (Siehe [Aufrufen von AEM Forms mithilfe von (für AEM Forms nicht mehr unterstützt) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Sie können einem Dienst programmgesteuert einen Remoting-Endpunkt hinzufügen, indem Sie die Java-API der AEM Forms verwenden. Durch Hinzufügen eines Remoting-Endpunkts aktivieren Sie eine Flex-Anwendung, um den Dienst mithilfe von Remoting aufzurufen. (Siehe [Aufrufen von AEM Forms mithilfe von (für AEM Forms nicht mehr unterstützt) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Zum programmgesteuerten Hinzufügen eines Remoting-Endpunkts zu einem Dienst sollten Sie den folgenden Prozess mit kurzer Lebensdauer mit dem Namen *EncryptDocument* in Betracht ziehen.
 
@@ -777,8 +784,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -854,7 +861,7 @@ Hinzufügen eines Remoting-Endpunkts mithilfe der Java-API:
 
 ## Hinzufügen von TaskManager-Endpunkten {#adding-taskmanager-endpoints}
 
-Sie können einem Dienst programmgesteuert einen TaskManager-Endpunkt hinzufügen, indem Sie die AEM Forms Java-API verwenden. Indem Sie einem Dienst einen TaskManager-Endpunkt hinzufügen, aktivieren Sie einen Workspace-Benutzer, um den Dienst aufzurufen. Das heißt, ein in Workspace arbeitender Benutzer kann einen Prozess aufrufen, der über einen entsprechenden TaskManager-Endpunkt verfügt.
+Sie können einem Dienst programmgesteuert einen TaskManager-Endpunkt hinzufügen, indem Sie die Java-API der AEM Forms verwenden. Indem Sie einem Dienst einen TaskManager-Endpunkt hinzufügen, aktivieren Sie einen Workspace-Benutzer, um den Dienst aufzurufen. Das heißt, ein in Workspace arbeitender Benutzer kann einen Prozess aufrufen, der über einen entsprechenden TaskManager-Endpunkt verfügt.
 
 >[!NOTE]
 >
@@ -879,8 +886,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -975,7 +982,7 @@ Hinzufügen eines TaskManager-Endpunkts mithilfe der Java-API:
 
 ## Ändern von Endpunkten {#modifying-endpoints}
 
-Sie können einen vorhandenen Endpunkt programmgesteuert mithilfe der AEM Forms Java API ändern. Durch Ändern eines Endpunkts können Sie das Verhalten des Endpunkts ändern. Betrachten Sie beispielsweise einen Endpunkt des Typs &quot;Überwachter Ordner&quot;, der einen Ordner angibt, der als überwachter Ordner verwendet wird. Sie können Konfigurationswerte, die zum Endpunkt des Typs &quot;Überwachter Ordner&quot;gehören, programmgesteuert ändern, sodass ein anderer Ordner als überwachter Ordner funktioniert. Weitere Informationen zu Konfigurationswerten, die zu einem Endpunkt des Typs &quot;Überwachter Ordner&quot;gehören, finden Sie unter [Hinzufügen von Endpunkten](programmatically-endpoints.md#adding-watched-folder-endpoints)für überwachte Ordner.
+Sie können einen vorhandenen Endpunkt programmgesteuert mithilfe der Java-API von AEM Forms ändern. Durch Ändern eines Endpunkts können Sie das Verhalten des Endpunkts ändern. Betrachten Sie beispielsweise einen Endpunkt des Typs &quot;Überwachter Ordner&quot;, der einen Ordner angibt, der als überwachter Ordner verwendet wird. Sie können Konfigurationswerte, die zum Endpunkt des Typs &quot;Überwachter Ordner&quot;gehören, programmgesteuert ändern, sodass ein anderer Ordner als überwachter Ordner funktioniert. Weitere Informationen zu Konfigurationswerten, die zu einem Endpunkt des Typs &quot;Überwachter Ordner&quot;gehören, finden Sie unter [Hinzufügen von Endpunkten](programmatically-endpoints.md#adding-watched-folder-endpoints)für überwachte Ordner.
 
 Um zu zeigen, wie ein Endpunkt geändert wird, ändert dieser Abschnitt einen Endpunkt des Typs &quot;Überwachter Ordner&quot;, indem der Ordner geändert wird, der sich wie der überwachte Ordner verhält.
 
@@ -1000,8 +1007,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1050,7 +1057,7 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 1. Rufen Sie den zu ändernden Endpunkt ab.
 
-   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein als Filter fungierendes `getEndpoints` `PagingFilter` Objekt übergeben. Sie können einen `(PagingFilter)null` Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist. Weitere Informationen zu einem `PagingFilter` Objekt finden Sie unter [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Rufen Sie eine Liste aller Endpunkte ab, auf die der aktuelle Benutzer (in den Verbindungseigenschaften angegeben) zugreifen kann, indem Sie die `EndpointRegistryClient` Objektmethode aufrufen und ein als Filter fungierendes `getEndpoints` `PagingFilter` Objekt übergeben. Sie können einen `(PagingFilter)null` Wert übergeben, um alle Endpunkte zurückzugeben. Diese Methode gibt ein `java.util.List` Objekt zurück, bei dem jedes Element ein `Endpoint` Objekt ist. Weitere Informationen zu einem `PagingFilter` Objekt finden Sie unter API-Referenz zu [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Durchlaufen Sie das `java.util.List` Objekt, um zu ermitteln, ob es Endpunkte enthält. Wenn Endpunkte vorhanden sind, ist jedes Element eine `EndPoint` Instanz.
    * Stellen Sie den Dienst fest, der einem Endpunkt entspricht, indem Sie die `EndPoint` Objektmethode `getServiceId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Dienstnamen angibt.
    * Bestimmen Sie den Endpunkttyp, indem Sie die `EndPoint` Objektmethode `getConnectorId` aufrufen. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Typ des Endpunkts angibt. Wenn der Endpunkt beispielsweise ein Endpunkt des Typs &quot;Überwachter Ordner&quot;ist, gibt diese Methode `WatchedFolder`zurück.
@@ -1077,7 +1084,7 @@ Geben Sie beim Ändern eines Endpunkts neue Konfigurationswerte an. Um beispiels
 
 ## Entfernen von Endpunkten {#removing-endpoints}
 
-Sie können einen Endpunkt programmgesteuert aus einem Dienst entfernen, indem Sie die AEM Forms Java API verwenden. Nachdem Sie einen Endpunkt entfernt haben, kann der Dienst nicht mit der vom Endpunkt aktivierten Aufrufmethode aufgerufen werden. Wenn Sie beispielsweise einen SOAP-Endpunkt aus einem Dienst entfernen, können Sie den Dienst nicht im SOAP-Modus aufrufen.
+Sie können einen Endpunkt programmgesteuert aus einem Dienst entfernen, indem Sie die Java-API der AEM Forms verwenden. Nachdem Sie einen Endpunkt entfernt haben, kann der Dienst nicht mit der vom Endpunkt aktivierten Aufrufmethode aufgerufen werden. Wenn Sie beispielsweise einen SOAP-Endpunkt aus einem Dienst entfernen, können Sie den Dienst nicht im SOAP-Modus aufrufen.
 
 Um zu zeigen, wie ein Endpunkt aus einem Dienst entfernt wird, entfernt dieser Abschnitt einen EJB-Endpunkt aus einem Dienst mit dem Namen *EncryptDocument*.
 
@@ -1102,8 +1109,8 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1165,7 +1172,7 @@ Entfernen Sie einen Endpunkt mithilfe der Java-API:
 
 ## Abrufen von Endpunkt-Connector-Informationen {#retrieving-endpoint-connector-information}
 
-Mit der AEM Forms-API können Sie programmgesteuert Informationen zu Endpunktschnittstellen abrufen. Ein Connector ermöglicht es einem Endpunkt, einen Dienst mit verschiedenen Aufrufmethoden aufzurufen. Ein Connector für überwachte Ordner ermöglicht es beispielsweise einem Endpunkt, einen Dienst mit überwachten Ordnern aufzurufen. Durch programmgesteuertes Abrufen von Informationen zu Endpunktschnittstellen können Sie Konfigurationswerte abrufen, die mit einem Connector verknüpft sind, z. B. welche Konfigurationswerte erforderlich sind und welche optional sind.
+Mit der AEM Forms API können Sie programmgesteuert Informationen zu Endpunktschnittstellen abrufen. Ein Connector ermöglicht es einem Endpunkt, einen Dienst mit verschiedenen Aufrufmethoden aufzurufen. Ein Connector für überwachte Ordner ermöglicht es beispielsweise einem Endpunkt, einen Dienst mit überwachten Ordnern aufzurufen. Durch programmgesteuertes Abrufen von Informationen zu Endpunktschnittstellen können Sie Konfigurationswerte abrufen, die mit einem Connector verknüpft sind, z. B. welche Konfigurationswerte erforderlich sind und welche optional sind.
 
 In diesem Abschnitt wird veranschaulicht, wie Informationen zu Endpunktschnittstellen abgerufen werden, und es werden Informationen zu einem Connector für überwachte Ordner abgerufen. (See [Adding Watched Folder Endpoints](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
@@ -1175,7 +1182,7 @@ In diesem Abschnitt wird veranschaulicht, wie Informationen zu Endpunktschnittst
 
 >[!NOTE]
 >
->In diesem Thema wird die `ConnectorRegistryClient` API zum Abrufen von Informationen zu Endpunktschnittstellen verwendet. (Siehe [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+>In diesem Thema wird die `ConnectorRegistryClient` API zum Abrufen von Informationen zu Endpunktschnittstellen verwendet. (Siehe API-Referenz zu [AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 ### Zusammenfassung der Schritte {#summary_of_steps-8}
 
@@ -1194,10 +1201,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
-* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
+* jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt werden)
 
-Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt wird, der nicht JBoss ist, ersetzen Sie adobe-utilities.jar und jbossall-client.jar durch JAR-Dateien, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Wenn AEM Forms auf einem unterstützten J2EE-Anwendungsserver bereitgestellt werden, der nicht JBoss ist, ersetzen Sie adobe-utilities.jar und jbossall-client.jar durch JAR-Dateien, die für den J2EE-Anwendungsserver spezifisch sind, auf dem die AEM Forms bereitgestellt werden. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **ConnectorRegistry-Client-Objekt erstellen**
 
