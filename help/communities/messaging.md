@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Wie unten gezeigt, existiert eine Konfiguration des Dienstes für Sites, die mit
 
 Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** neben dem Dienstnamen:
 
-* **Nachrichtenfelder Zulassungsliste**
+* **Zulassungsliste der Nachrichtenfelder**
 
    Gibt die Eigenschaften der Komponente &quot;Nachricht erstellen&quot;an, die Benutzer bearbeiten und beibehalten können. Wenn neue Formularelemente hinzugefügt werden, muss die Element-ID hinzugefügt werden, falls gewünscht, damit sie in SRP gespeichert werden kann. Die Standardeinstellung sind zwei Einträge: *Betreff* und *Inhalt*.
 
@@ -85,11 +85,11 @@ Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** 
 
 * **Posteingangspfad**
 
-   (*Erforderlich*) Der Pfad relativ zum Knoten des Benutzers (/home/users/*username*), der für den **`inbox`** Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/inbox*.
+   (*Erforderlich*) Der Pfad relativ zum Knoten des Benutzers (/home/users/*username*), der für den `inbox` Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/inbox*.
 
 * **Pfad zu gesendeten Elementen**
 
-   (*Erforderlich*) Der Pfad relativ zum Knoten des Benutzers (/home/users/*username*), der für den **`send items`** Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/sentitems* .
+   (*Erforderlich*) Der Pfad relativ zum Knoten des Benutzers (/home/users/*username*), der für den `sent items` Ordner verwendet werden soll. Der Pfad darf NICHT mit einem nachfolgenden Schrägstrich (/) enden. Der Standardwert ist */mail/sentitems* .
 
 * **Unterstützungsanlagen**
 
@@ -111,13 +111,13 @@ Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** 
 
    Wenn supportAttachments aktiviert ist, gibt dieser Wert die maximal zulässige Gesamtgröße (in Byte) aller Anlagen an. Default is *104857600* (100 MB).
 
-* **blockierungsliste des Anlagentyps**
+* **Blockierungsliste zum Anlagentyp**
 
-   Eine blockierungsliste von Dateinamenerweiterungen mit dem Präfix &quot;**.**&quot;, die vom System abgelehnt werden. Wenn kein auf die Blockierungsliste gesetzt wird, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &#39;**+**&#39; und &#39;**-**&#39; hinzugefügt oder entfernt werden.
+   Eine Blockierungsliste von Dateinamenerweiterungen mit dem Präfix &#39;**.**&quot;, die vom System abgelehnt werden. Wenn sie nicht auf die Blockierungsliste gesetzt wird, ist die Erweiterung zulässig. Erweiterungen können mit den Symbolen &#39;**+**&#39; und &#39;**-**&#39; hinzugefügt oder entfernt werden.
 
 * **Zulässige Anlagentypen**
 
-   **(*Aktion erforderlich*)** Eine zulassungsliste von Dateinamenerweiterungen im , das Gegenteil der blockierungsliste. Um alle Dateinamenerweiterungen mit Ausnahme der auf die Blockierungsliste gesetzt zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um den einzelnen leeren Eintrag zu entfernen.
+   **(*Aktion erforderlich*)** Eine Zulassungsliste von Dateinamenerweiterungen, die der Blockierungsliste entgegengesetzt ist. Um alle Dateinamenerweiterungen mit Ausnahme der auf die Blockierungsliste gesetzt zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um den einzelnen leeren Eintrag zu entfernen.
 
 * **Dienstauswahl**
 
@@ -125,9 +125,9 @@ Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** 
 
    Die Standardeinstellung ist */bin/messaging* .
 
-* **Zulassungsliste-**
+* **Feld-Zulassungslisten**
 
-   Verwenden Sie **die Zulassungsliste**&quot;Nachrichtenfelder&quot;.
+   Verwenden Sie die Zulassungsliste **&quot;Nachrichtenfelder&quot;**.
 
 >[!CAUTION]
 >
