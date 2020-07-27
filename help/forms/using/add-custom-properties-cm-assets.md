@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '4460'
+ht-degree: 72%
 
 ---
 
 
 # Fügen Sie benutzerdefinierte Eigenschaften den Correspondence Management-Assets hinzu{#add-custom-properties-to-correspondence-management-assets}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können die Correspondence Management-Benutzeroberfläche anpassen und Benutzern ein angepasstes Set an Eigenschaften und Registerkarten bieten. Diese Anpassung umfasst das Hinzufügen benutzerdefinierter Felder/Eigenschaften und Registerkarten zu bestimmten Asset-Typen/Briefen oder allen Asset-Typen und Briefen.
 
@@ -87,7 +90,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Eigenschaft z
       |---|---|---|
       | fieldLabel | Zeichenfolge | Der Name, den Sie dem Feld/der Eigenschaft geben möchten. (Hier: Ort des Empfängers) |
       | name | Zeichenfolge | `./extendedproperties/GeoLocation` (Beibehalten des Werts mit dem Feldnamen, den Sie unter dem Elementknoten erstellt haben) |
-      | renderReadOnly | Boolesch  | true |
+      | renderReadOnly | Boolesch | true |
       | sling:resourceType | Zeichenfolge | `granite/ui/components/coral/foundation/form/textfield` |
 
    1. Klicken Sie auf **Alle speichern**.
@@ -135,7 +138,7 @@ Create a node for each of the properties (fields) for which you need to create a
    </tr>
    <tr>
       <td>renderReadOnly</td>
-      <td>Boolesch </td>
+      <td>Boolesch</td>
       <td>true</td>
    </tr>
    <tr>
@@ -165,7 +168,7 @@ Create a node for each of the properties (fields) for which you need to create a
           <td>Dies ist der Wert der Dropdown-Menüoption, die für den Benutzer sichtbar ist. Lassen Sie das Feld leer für den (Standard-)Wert oder geben Sie den Wert ein, z. B. <strong>International</strong> oder<strong> Innerhalb der USA</strong>.<br /> </td>
          </tr>
          <tr>
-          <td>value</td>
+          <td>Wert</td>
           <td>Zeichenfolge</td>
           <td>In CRXDE gespeicherter Wert für den Text. Enter any unique keyword. <br /> </td>
          </tr>
@@ -309,7 +312,7 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
       |---|---|---|
       | fieldLabel | Zeichenfolge | Ort der Empfänger (oder der Name, den Sie dem Feld geben möchten.) |
       | name | Zeichenfolge | ./extendedproperties/GeographicalLocation |
-      | renderReadOnly | Boolesch  | true |
+      | renderReadOnly | Boolesch | true |
       | sling:resourceType | Zeichenfolge | `/libs/granite/ui/components/coral/foundation/form/textfield` |
 
 1. Um diese Registerkarte für Briefe hinzuzufügen, erstellen Sie einen Überlagerungsordner mit dem Pfad/der Struktur ähnlich dem folgenden items-Ordner unter folgendem Pfad:
@@ -504,7 +507,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
       |---|---|---|
       | fieldLabel | Zeichenfolge | Ort der Empfänger (oder der Name, den Sie dem Feld geben möchten.) |
       | name | Zeichenfolge | `./extendedproperties/GeoLocation` |
-      | renderReadOnly | Boolesch  | true |
+      | renderReadOnly | Boolesch | true |
       | sling:resourceType | Zeichenfolge | granite/ui/components/coral/foundation/form/textfield |
 
 1. Um Ihre Anpassungen anzuzeigen, bewegen Sie den Mauszeiger über das entsprechende Asset (hier: ein Text), klicken Sie auf „Eigenschaften anzeigen“ und klicken Sie auf **Bearbeiten**. Die neue Registerkarte und das Feld (Ort der Empfänger) werden auf der Benutzeroberfläche angezeigt.
@@ -638,7 +641,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
          </tr>
          <tr>
            <td>sortable</td>
-           <td>Boolesch </td>
+           <td>Boolesch</td>
            <td><p>true</p> <p>Der Wert „true“ zeigt an, dass der Benutzer die Werte in der Spalte sortieren kann. </p> </td>
          </tr>
          </tbody>
@@ -678,13 +681,13 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
 
    1. Fügen Sie Folgendes zu Zeile 19 der Datei hinzu (folgen Sie der Copyright-Aussage).
 
-      ```
+      ```jsp
       <%@page import="java.util.Map"%>
       ```
 
    1. Fügen Sie am Ende der Datei den folgenden Code der Funktion hinzu, die den Wert für jede benutzerdefinierte Eigenschaft erhält:
 
-      ```
+      ```jsp
       <%!
           private String getCustomPropertyValue(Map<String, Object> extendedProperties, String propertyName) {
       
@@ -700,7 +703,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
 
    1. Hinzufügen Sie Folgendes vor dem Start des &lt;tr>-Tags (&lt;tr &lt;%= attrs.build() %>):
 
-      ```
+      ```jsp
       <%
           String GeoLocation = "";
           if (asset != null) {
@@ -716,7 +719,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
 
    1. Zum Anzeigen der neuen Eigenschaft auf der Benutzeroberfläche fügen Sie einen TD-Tag vor dem schließenden tr(&lt;/tr>)-Tag hinzu:
 
-      ```
+      ```jsp
       <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
       ```
 
@@ -828,8 +831,8 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
       |---|---|---|
       | analyzed | Zeichenfolge | true |
       | name | Zeichenfolge | extendedProperties/location (oder der Name der Eigenschaft, die Sie zur Suche hinzufügen möchten) |
-      | propertyIndex | Boolesch  | true |
-      | useInSuggest | Boolesch  | true |
+      | propertyIndex | Boolesch | true |
+      | useInSuggest | Boolesch | true |
 
    1. Klicken Sie auf **Alle speichern**.
 
@@ -960,7 +963,7 @@ Um die benutzerdefinierten Eigenschaften ein- bzw. auszublenden, führen Sie die
    </tr>
    <tr>
       <td>hideOnCreate<br /> </td>
-      <td>Boolesch </td>
+      <td>Boolesch</td>
       <td>true<br /> </td>
    </tr>
    </tbody>
@@ -977,7 +980,7 @@ Um die benutzerdefinierten Eigenschaften ein- bzw. auszublenden, führen Sie die
    </tr>
    <tr>
       <td>hideOnEdit<br /> </td>
-      <td>Boolesch </td>
+      <td>Boolesch</td>
       <td>true<br /> </td>
    </tr>
    </tbody>
