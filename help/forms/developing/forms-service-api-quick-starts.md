@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ Die folgenden Quick-Beginn sind für den Forms-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Umgang mit PDF-Formularen, die als XML mit der Java-API gesendet werden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als XML mit der Java-API gesendet werden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Umgang mit PDF-Formularen, die als PDF mit der Java-API gesendet werden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als PDF mit der Java-API gesendet wurden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML gesendet werden, mit der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML mit der Java-API gesendet werden](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
 [Quick Beginn (SOAP-Modus): Erstellen von PDF-Dokumenten mit gesendeten XML-Daten mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
@@ -49,7 +52,7 @@ Die folgenden Quick-Beginn sind für den Forms-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Übergeben von Dokumenten an den Forms-Dienst mithilfe der Java-API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Anwendungslogik, die die Forms-Dienst-API verwendet, wird als Java-Servlets implementiert. AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+Anwendungslogik, die die Forms-Dienst-API verwendet, wird als Java-Servlets implementiert. AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -59,9 +62,9 @@ Anwendungslogik, die die Forms-Dienst-API verwendet, wird als Java-Servlets impl
 
 ## Quick Beginn (SOAP-Modus): Wiedergeben eines interaktiven PDF-Formulars mit der Java-API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein interaktives PDF-Formular mit dem Namen *Loan.xdp* an einen Client-Webbrowser gerendert. Eine Datei wird an das Formular angehängt. Beachten Sie, dass der Formularentwurf Teil einer Anwendung ist und mithilfe des Inhaltsstamm-URI-Werts referenziert wird `repository:///`. (Siehe [Rendern von interaktiven PDF-Formularen](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+Im folgenden Codebeispiel wird ein interaktives PDF-Formular mit dem Namen *Loan.xdp* an einen Client-Webbrowser gerendert. Eine Datei wird an das Formular angehängt. Beachten Sie, dass der Formularentwurf Teil einer Anwendung ist und mithilfe des Inhaltsstamm-URI-Werts referenziert wird `repository:///`. (Siehe [Rendern von interaktiven PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -203,7 +206,7 @@ Im folgenden Codebeispiel wird ein interaktives PDF-Formular mit dem Namen *Loan
 
 Im folgenden Codebeispiel wird ein Formular mit dem Namen *Loan.xdp* auf dem Client mithilfe der Java-API des Forms-Dienstes gerendert. Beachten Sie, dass der Formularentwurf Teil einer Anwendung ist und mithilfe des Inhaltsstamm-URI-Werts referenziert wird `repository:///`. (Siehe [Wiedergabe von Formularen auf dem Client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -336,7 +339,7 @@ Im folgenden Codebeispiel wird ein Formular mit dem Namen *Loan.xdp* auf dem Cli
 
 Im folgenden Codebeispiel wird ein Guide (nicht mehr unterstützt) mit dem Namen *TLALifeClaim.xdp* an einen Client-Webbrowser gerendert.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -472,7 +475,7 @@ Im folgenden Codebeispiel wird ein Guide (nicht mehr unterstützt) mit dem Namen
 
 Im folgenden Codebeispiel wird ein Formular wiedergegeben, das auf Fragmenten basiert. Der Name des Formularentwurfs lautet *PurchaseOrderDynamic.xdp* und befindet sich im AEM Forms-Repository (die XDP-Datei wird in einem Ordner mit dem Namen FormsFolder im Repository gespeichert). Auch die Fragmente, auf die das POFragment-Formular verweist, müssen sich im Repository befinden. (See [Rendering Forms Based on Fragments](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -605,7 +608,7 @@ Im folgenden Codebeispiel wird ein Formular wiedergegeben, das auf Fragmenten ba
 
 Im folgenden Codebeispiel wird ein Formular mit aktivierten Rechten an einen Client-Webbrowser gerendert. Die in diesem Codebeispiel festgelegten Verwendungsrechte ermöglichen es dem Benutzer, Kommentare zum Formular hinzuzufügen und Formulardaten zu speichern. (Siehe [Wiedergabe von Formularen](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms)mit aktivierten Rechten.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -742,7 +745,7 @@ Im folgenden Codebeispiel wird ein Formular mit aktivierten Rechten an einen Cli
 
 Im folgenden Codebeispiel wird ein HTML-Formular mit der Java-API des Forms-Dienstes gerendert. Dem HTML-Formular sowie zwei Dateianlagen werden eine Symbolleiste hinzugefügt. Darüber hinaus wird der Benutzeragenten-Wert vom `HttpServletRequest` Objekt abgerufen. (Siehe [Wiedergabe von Formularen als HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -903,7 +906,7 @@ Im folgenden Codebeispiel wird ein HTML-Formular mit der Java-API des Forms-Dien
 
 Im folgenden Codebeispiel wird ein HTML-Formular mit der Forms-Dienst-Client-API wiedergegeben. Der Name der benutzerdefinierten CSS-Datei, auf die verwiesen wird, lautet *custom.css*. (Siehe [Wiedergabe von HTML-Formularen mit benutzerdefinierten CSS-Dateien](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1056,9 +1059,9 @@ Im folgenden Codebeispiel wird ein HTML-Formular mit der Forms-Dienst-Client-API
 
 ## Quick Beginn (SOAP-Modus): Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste mithilfe der Java-API {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein HTML-Formular mit einer Symbolleiste wiedergegeben, die auf Französisch angezeigt wird. Der Speicherort von &quot;fscmenu.xml&quot;ist C:\Adobe (dieser Ordner muss sich auf dem Server befinden, auf dem AEM Forms gehostet wird). Beachten Sie, dass der Gebietsschemawert `fr_FR`ist. Der Abschnitt, in dem die Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste beschrieben wird, zeigt die Syntax der Datei &quot;fscmenu.xml&quot;in diesem Quick Beginn. (Siehe [Wiedergabe von HTML-Formularen mit benutzerdefinierten Symbolleisten](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
+Im folgenden Codebeispiel wird ein HTML-Formular mit einer Symbolleiste wiedergegeben, die auf Französisch angezeigt wird. Der Speicherort von &quot;fscmenu.xml&quot;ist &quot;C:\Adobe &quot;(dieser Ordner muss sich auf dem Server befinden, auf dem die AEM Forms gehostet werden). Beachten Sie, dass der Gebietsschemawert `fr_FR`ist. Der Abschnitt, in dem die Wiedergabe eines HTML-Formulars mit einer benutzerdefinierten Symbolleiste beschrieben wird, zeigt die Syntax der Datei &quot;fscmenu.xml&quot;in diesem Quick Beginn. (Siehe [Wiedergabe von HTML-Formularen mit benutzerdefinierten Symbolleisten](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1210,11 +1213,11 @@ Im folgenden Codebeispiel wird ein HTML-Formular mit einer Symbolleiste wiederge
  
 ```
 
-## Quick Beginn (SOAP-Modus): Umgang mit PDF-Formularen, die als XML mit der Java-API gesendet werden {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als XML mit der Java-API gesendet werden {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
 Im folgenden Codebeispiel wird ein Formular verarbeitet, das als XML gesendet wird. Der an die `processFormSubmission` Methode übergebene Inhaltstypwert ist `CONTENT_TYPE=text/xml`. Die Werte, die den Feldern mit den Namen `mortgageAmount`, `lastName`und `firstName` werden angezeigt. In diesem Beginn `getNodeText` wird eine benutzerdefinierte Methode verwendet. Es akzeptiert eine `org.w3c.dom.Document` Instanz und einen Zeichenfolgenwert, der den Knotennamen angibt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Node darstellt. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1379,11 +1382,11 @@ Im folgenden Codebeispiel wird ein Formular verarbeitet, das als XML gesendet wi
 >
 >Wenn Sie ein `com.adobe.idp.Document` Objekt und eine `org.w3c.dom.Document` in derselben Anwendung verwenden, müssen Sie die Kriterien vollständig erfüllen `org.w3c.dom.Document`.
 
-## Quick Beginn (SOAP-Modus): Umgang mit PDF-Formularen, die als PDF mit der Java-API gesendet werden {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Umgang mit PDF forms, die als PDF mit der Java-API gesendet wurden {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 Im folgenden Codebeispiel wird ein Formular behandelt, das als PDF-Daten gesendet wird. Der an die `processFormSubmission` Methode übergebene Inhaltstypwert ist `CONTENT_TYPE=application/pdf`. Das gesendete Formular wird als PDF-Datei mit dem Namen *tempPDF.pdf* gespeichert. Da das Formular als PDF gesendet wird, können auch Dateianlagen abgerufen werden. Alle Dateianlagen werden als JPEG-Dateien gespeichert. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1529,11 +1532,11 @@ Im folgenden Codebeispiel wird ein Formular behandelt, das als PDF-Daten gesende
  
 ```
 
-## Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML gesendet werden, mit der Java-API {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Verarbeiten von HTML-Formularen, die als XML mit der Java-API gesendet werden {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
 Im folgenden Codebeispiel wird ein HTML-Formular verarbeitet, das als XML-Daten gesendet wird. Der an die `processFormSubmission` Methode übergebene Wert für den Inhaltstyp ist `CONTENT_TYPE=application/x-www-form-urlencoded`.Die Werte, die den Feldern mit den Namen `mortgageAmount`, `lastName`und `firstName` werden angezeigt. In diesem Beginn `getNodeText` wird eine benutzerdefinierte Methode verwendet. Es akzeptiert eine `org.w3c.dom.Document` Instanz und einen Zeichenfolgenwert, der den Knotennamen angibt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Node darstellt. (Siehe [Verarbeiten gesendeter Formulare](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1693,7 +1696,7 @@ Im folgenden Codebeispiel wird ein HTML-Formular verarbeitet, das als XML-Daten 
 
 Im folgenden Java-Codebeispiel werden Formulardaten behandelt, die als XML gesendet werden. Formulardaten werden aus der Formularübermittlung mithilfe der Forms-API abgerufen und an den Output-Dienst gesendet. Die Formulardaten und ein Formularentwurf werden verwendet, um ein nicht interaktives PDF-Dokument zu erstellen. Das nicht interaktive PDF-Dokument wird in einem Content Services-Knoten (nicht mehr unterstützt) mit dem Namen `/Company Home/Test Directory`gespeichert. Der Name des Formulars wird dynamisch erstellt. Das heißt, der Vor- und Nachname des Benutzers werden zum Benennen der PDF-Datei verwendet. Die Ressourcenkennung des neuen Inhalts wird an den Client-Webbrowser gesendet. (Siehe [Erstellen von PDF-Dokumenten mit gesendeten XML-Daten](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2250,7 +2253,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 
 Im folgenden Codebeispiel wird ein Formular verarbeitet, das ein Berechnungsskript enthält, und die Ergebnisse werden zurück in den Client-Webbrowser geschrieben. (Siehe [Berechnen von Formulardaten](/help/forms/developing/rendering-forms.md#calculating-form-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2368,7 +2371,7 @@ Im folgenden Codebeispiel wird ein Formular verarbeitet, das ein Berechnungsskri
 
 Im folgenden Codebeispiel wird die Leistung durch Festlegen der Optionen für Zwischenspeicherung, Standalone und Linearisierung optimiert. Eine linearisierte Datei ist für den Versand im Web optimiert. (Siehe [Optimieren der Leistung des Forms-Dienstes](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2496,7 +2499,7 @@ Im folgenden Codebeispiel wird die Leistung durch Festlegen der Optionen für Zw
 
 Im folgenden Java Quick Beginn wird ein interaktives PDF-Formular wiedergegeben, das auf einem Formularentwurf mit dem Namen *Loan.xdp* basiert. Beachten Sie, dass der Formularentwurf zum Füllen eines `com.adobe.idp.Document` Objekts mit dem Namen *inputXDP* verwendet wird. (Siehe [Rendern von Formularen nach Wert](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2623,7 +2626,7 @@ Im folgenden Java Quick Beginn wird ein interaktives PDF-Formular wiedergegeben,
 
 Mit dem folgenden Java-Quick-Beginn wird die Datei &quot;Loan.xdp&quot;aus Content Services (nicht mehr unterstützt) abgerufen. Diese XDP-Datei befindet sich im Bereich `/Company Home/Form Designs`. Die XDP-Datei wird in einer `com.adobe.idp.Document` Instanz zurückgegeben. Die `com.adobe.idp.Document` Instanz wird an den Forms-Dienst übergeben. Das interaktive Formular wird in einen Client-Webbrowser geschrieben. (Siehe [Übergeben von Dokumenten an den Forms-Dienst](/help/forms/developing/passing-documents-forms-service.md).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
