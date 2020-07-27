@@ -10,7 +10,10 @@ topic-tags: interactive-communications
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +38,7 @@ Um einen Satz, einen Absatz oder eine Textzeichenfolge in einer interaktiven Kom
 
 For more information, see Create rule in text in [Texts in Interactive Communications](../../forms/using/texts-interactive-communications.md).
 
-Wenn Sie das Textfragment in eine interaktive Kommunikation einbeziehen und Agent die Agent-Benutzeroberfläche zur Erstellung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
+Wenn Sie das Textfragment in eine interaktive Kommunikation einbeziehen und der Agent die Agent-Benutzeroberfläche zur Erstellung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
 
 ### Beispiel: Wenn die Inline-Bedingung in einem Brief verwendet wird, um die entsprechende Adresse zu rendern  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
@@ -61,7 +64,7 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
    Doppeltippen Sie auf ein DD-Element, um es in die Bedingung einzufügen. Fügen Sie den entsprechenden Operator ein und erstellen Sie die folgende Bedingung im Dialogfeld.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender=="Male"}
    ```
 
@@ -73,7 +76,7 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
 1. Insert similar condition by selecting the text `Ma'am`.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender == "Female"}
    ```
 
@@ -81,6 +84,7 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
    * Eine XML-Beispieldatendatei, die basierend auf dem relevanten Datenwörterbuch erstellt wurde, während der Brief mit Beispieldaten in der Vorschau angezeigt wird.
    * Eine XML-Datendatei, am relevanten Datenwörterbuch angehängt ist.
+
    Weitere Informationen finden Sie unter [Datenwörterbuch](../../forms/using/data-dictionary.md).
 
    ![5_letteroutput](assets/5_letteroutput.png)
@@ -141,7 +145,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
 1. Öffnen Sie (bei der Bearbeitung oder Erstellung) ein Textmodul, das DD-Elemente enthält, die die Wiederholungs-/dynamischen Daten rendern und den erforderlichen Text und die DD-Elemente einbetten. Beispielsweise hat ein Textmodul die folgenden DD-Elemente, um eine Umsatzabrechnung auf einer Kreditkarte zu erstellen:
 
-   ```
+   ```javascript
    {^DD_creditcard_TransactionDate^} {^DD_creditcard_TransactionAmount^}
    {^DD_creditcard_TransactionType^}
    ```
@@ -154,7 +158,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
    ![1_repeat](assets/1_repeat.png)
 
-   ```
+   ```javascript
    Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
    ```
 
@@ -174,7 +178,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
 1. Falls erforderlich, fügen Sie eine Bedingung ein, um die Transaktionen zu rendern, wie zum Beispiel um Transaktionsbeträge größer als 50 Cent zu rendern:
 
-   ```
+   ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
@@ -184,6 +188,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
    * **Zeilenumbruch:** Einfügen eines Zeilenumbruchs nach jedem Transaktionseintrag im Ausgabebrief.
    * **Text:** Fügt das angegebene Textzeichen nach jedem Transaktionseintrag in den Ausgabebrief ein.
+
    Nachdem Sie die Bedingung eingefügt haben, wird der Text mit Wiederholung rot hervorgehoben und ein Ziehgriff wird auf der linken Seite angezeigt. Sie können die Maus über dem Ziehgriff auf der linken Seite der Wiederholung bewegen, um das Wiederholungskonstrukt anzuzeigen.
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
@@ -196,6 +201,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
 
    * Eine XML-Beispieldatendatei, die basierend auf dem relevanten Datenwörterbuch erstellt wurde, während der Brief mit Beispieldaten in der Vorschau angezeigt wird
    * Eine XML-Datendatei, am relevanten Datenwörterbuch angehängt ist.
+
    Weitere Informationen finden Sie unter [Datenwörterbuch](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
