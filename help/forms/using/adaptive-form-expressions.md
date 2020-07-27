@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2766'
+ht-degree: 77%
 
 ---
 
@@ -85,7 +88,7 @@ Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken a
 
 **Rückgabetyp:** Der Ausdruck für ein Klickereignis gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Wenn Sie ein Textfeld **textbox1** auf eine Schaltfläche mit dem Wert **AEM Forms** füllen möchten, lautet der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"`
+**Beispiel**: Wenn Sie ein Textfeld **textbox1** mit dem Wert **AEM Forms** auf eine Schaltfläche klicken, wird der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"`
 
 ### Initialisierungsskript {#initialization-script}
 
@@ -230,7 +233,7 @@ Sie können die GuideBridge-APIs auch außerhalb von Ausdrücken verwenden. Sie 
 
 Zum Verwenden der GuideBridge-API im oben erwähnten Beispiel erfassen Sie eine Instanz von GuideBridge. To capture the instance, listen to `bridgeInitializeStart`event of a `window`object:
 
-```
+```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      // get hold of the guideBridge object
@@ -260,7 +263,7 @@ GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite,
 
 Verwenden Sie folgenden Code zum Registrieren von Handlern:
 
-```
+```javascript
 guideBridge.on("elementValueChanged", function (event, data)  {
 
       // execute some logic when value of a field is changed
