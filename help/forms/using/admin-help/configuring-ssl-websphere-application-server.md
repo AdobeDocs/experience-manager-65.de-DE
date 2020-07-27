@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +73,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie unter „Administrative security“ **Administrative user roles**.
 1. Klicken Sie auf „Add“ und führen Sie folgende Schritte aus:
 
-   1. **Typ**&amp;ast; im Suchfeld und klicken Sie auf Suchen.
+   1. Type **&amp;ast;** in the search box and click search.
    1. Klicken Sie unter „Roles“ auf **Administrator**.
    1. Fügen Sie den neu erstellten Benutzer zu „Mapped to role“ hinzu und ordnen Sie ihn zu „Administrator“ zu.
 
@@ -156,7 +159,7 @@ Die Konvertierung von HTML in PDF von der Site, deren Zertifikat hinzugefügt wu
 
 ## Konfigurieren von dynamischen Ports {#configuring-dynamic-ports}
 
-IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können die dauerhafte Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 lesen.
+IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können sich über die dauerhafte Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 informieren.
 
 Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen und das Problem zu lösen:
 
@@ -175,7 +178,7 @@ Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen un
 1. Open `[aem-forms_root]`\crx-repository\launchpad\sling.properties file for editing.
 1. Suchen Sie die `sling.bootdelegation.ibm` Eigenschaft und fügen Sie sie `com.ibm.websphere.ssl.*`zum Wertefeld hinzu. Das aktualisierte Feld sieht wie folgt aus:
 
-   ```as3
+   ```java
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
