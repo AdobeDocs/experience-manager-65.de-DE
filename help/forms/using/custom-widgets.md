@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 69%
 
 ---
 
@@ -69,7 +72,7 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, das erweitert
 
 Um ein eigenes Widget im oben erstellen Profil zu erstellen, müssen Sie die Verweise der JavaScript-Datei einschließen, die die überschriebenen und neu hinzugefügten Funktionen enthält. For example, the *sliderNumericFieldWidget* is a widget for numeric Fields. Um das Widget in Ihrem Profil in der Kopfzeile zu verwenden, fügen Sie die folgende Zeile hinzu:
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
@@ -77,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 When the custom widget code is ready, register the widget with the scripting engine by using `registerConfig`API for [Form Bridge](/help/forms/using/form-bridge-apis.md). Als Eingabe ist „widgetConfigObject“ erforderlich.
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig",
         {
         ".<field-identifier>":"<name-of-the-widget>"
