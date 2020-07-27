@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +27,7 @@ Die folgenden Quick-Beginn sind für den Acrobat Reader DC Extensions-Dienst ver
 
 [Quick Beginn (SOAP-Modus): Abrufen von Anmeldeinformationen mit der Java-API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden. Der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Das PDF-Dokument mit aktivierten Benutzerrechten wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf* gespeichert. Für dieses PDF-Dokument gelten die folgenden Verwendungsrechte: `enabledComments`, `enabledFormFillIn`und `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
 
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -147,7 +150,7 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mi
 
 Im folgenden Java-Codebeispiel werden Verwendungsrechte aus einem PDF-Dokument mit aktivierten Verwendungsrechten mit dem Namen *LoanUsageRights.pdf* entfernt. (Siehe [Entfernen von Verwendungsrechten aus PDF-Dokumenten](/help/forms/developing/assigning-usage-rights.md).)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -247,7 +250,7 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte aus einem PDF-Dokument m
 
 Im folgenden Java-Codebeispiel werden Informationen über die Berechtigung abgerufen, mit der Verwendungsrechte auf ein PDF-Dokument mit aktivierten Verwendungsrechten mit dem Namen *LoanUsageRights.pdf* angewendet werden. (Siehe [Abrufen von Berechtigungsinformationen](/help/forms/developing/assigning-usage-rights.md).)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
