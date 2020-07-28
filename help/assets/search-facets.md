@@ -3,10 +3,10 @@ title: Suchfacetten.
 description: Erstellen, Ändern und Verwenden von Suchfacetten in Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2525'
-ht-degree: 78%
+source-wordcount: '2515'
+ht-degree: 77%
 
 ---
 
@@ -28,11 +28,9 @@ Die Suchfacetten, die im Bedienfeld „Filter“ angezeigt werden, werden im zug
 For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Mit dem Eigenschaftsprädikat können Sie nach Assets suchen, die mit einer einzelnen von Ihnen angegebenen Eigenschaft übereinstimmen. Mit dem Options-Prädikat können Sie nach Assets suchen, die mit einem oder mehreren Werten für eine bestimmte Eigenschaft übereinstimmen. Fügen Sie das Datumsbereichs-Prädikat hinzu, um nach Assets zu suchen, die innerhalb eines bestimmten Datumsbereichs erstellt wurden.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![edit icon](assets/do-not-localize/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    ![Suchen und Auswählen der Asset-Admin-Suchschiene](assets/assets_admin_searchrail.png)
-
-   Suchen und Auswählen der Asset-Admin-Suchschiene
 
    >[!NOTE]
    >
@@ -76,7 +74,7 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Mit
 1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close.png) on the upper-right corner of the preview.
 1. Klicken Sie auf **[!UICONTROL Fertig]**, um die Einstellungen zu speichern.
 1. Navigieren Sie in der Assets-Benutzeroberfläche zum Suchbereich. Das Prädikat „Eigenschaft“ wird dem Bereich hinzugefügt.
-1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. Geben Sie beispielsweise „Adobe“ ein. Wenn Sie eine Suche durchführen, werden Assets mit der Beschreibung „Adobe“ in den Suchergebnissen aufgelistet.
+1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. For example, enter `Adobe`. When you perform a search, assets with description matching `Adobe` are listed in the search results.
 
 ## Hinzufügen eines Options-Prädikats {#adding-an-options-predicate}
 
@@ -90,13 +88,13 @@ Wenn Sie eine Option auswählen, wird die Suche basierend auf der Eigenschaft `v
 
 Beispiel: Wenn Sie „Bilder“ als Dateityp auswählen, wird die Suchabfrage für die Assets gebildet, indem die Eigenschaft `value` anhand eines ODER-Vorgangs kombiniert wird. Beispiel: Die Suchabfrage für Bilder wird erstellt, indem die Ergebnisse für *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* und *image/tiff* für die Eigenschaft `jcr:content/metadata/dc:format` anhand eines ODER-Vorgangs kombiniert werden.
 
-![Die Werteigenschaft eines Dateityps, wie in CRXDE dargestellt, wird für funktionierende Suchabfragen verwendet.](assets/chlimage_1-418.png)
+![Die Werteigenschaft eines Dateityps, wie in CRXDE dargestellt, wird für funktionierende Suchabfragen verwendet.](assets/filetype-value-property.png)
 
 Die Werteigenschaft eines Dateityps, wie in CRXDE dargestellt, wird für funktionierende Suchabfragen verwendet.
 
 Statt manuell eine Knotenstruktur für die Optionen im CRXDE-Repository zu erstellen, können Sie die Optionen in einer JSON-Datei definieren, indem Sie entsprechende Schlüssel-Wert-Paare angeben. Geben Sie den Pfad der JSON-Datei im Feld **[!UICONTROL Eigenschaftsname]** an. Sie können z. B. die Schlüssel-Wert-Paare `image/bmp`, `image/gif`, `image/jpeg` und `image/png` definieren und die Werte wie im folgenden Beispiel in einer JSON-Datei angeben. In the **[!UICONTROL Property Name]** field, you can specify the CRXDE path for this file.
 
-```JSON
+```json
 {
     "options" :
  [
@@ -164,7 +162,7 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. St
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
 
-   ![Vom Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags](assets/chlimage_1-419.png)
+   ![Vom Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags](assets/tag-suggestion.png)
 
    *Abbildung: Vom Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags.*
 
