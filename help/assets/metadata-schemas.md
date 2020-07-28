@@ -3,9 +3,9 @@ title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften i
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2667'
+source-wordcount: '2666'
 ht-degree: 53%
 
 ---
@@ -68,7 +68,7 @@ Gehen Sie wie folgt vor, um ein Metadaten-Schema-Formular hinzuzufügen:
 
 Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bearbeiten. Das Metadaten-Schema-Formular enthält Registerkarten und Formularelemente in Registerkarten. Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im CRX-Repository zuordnen bzw. dafür konfigurieren. Sie können dem Metadaten-Schema-Formular Registerkarten oder Formularelemente hinzufügen. Die vom übergeordneten Objekt abgeleiteten Registerkarten und Formularelemente sind gesperrt. Sie können auf untergeordneter Ebene nicht geändert werden.
 
-1. Wählen Sie auf der Seite &quot; [!UICONTROL Metadata Schema Forms] &quot;ein Formular aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]** .
+1. Wählen Sie auf der Forms [!UICONTROL -Seite &quot;] Metadaten-Schema&quot;ein Formular aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Bearbeiten]** &quot;.
 
 1. Passen Sie auf der Seite &quot; **[!UICONTROL Metadata Schema Form Editor]** &quot;das Metadatenformular an. Ziehen Sie die erforderlichen Komponenten aus der Registerkarte &quot;Formular **[!UICONTROL erstellen]** &quot;auf eine der Registerkarten.
 
@@ -131,15 +131,15 @@ Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt ange
 
 Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bedienfeld **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadatenvalidierung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. Die Suchergebnisse zeigen Assets an, denen erforderliche Metadaten fehlen, die Sie über das Schemaformular konfiguriert haben.
 
-![Ungültige Option im Bereich &quot;Metadaten-Validierung - Vorhersage für Filter&quot;ausgewählt ](assets/chlimage_1-178.png)
+![Option im Bereich &quot;Metadaten-Validierung - Vorhersage für Filter&quot;](assets/invalid-metadata-predicate.png)
 
 Wenn Sie die Komponente „Kontextuelle Metadaten“ in eine beliebige Registerkarte eines Schemaformulars einfügen, wird sie in der Eigenschaftenseite der Assets als Liste angezeigt, auf die das bestimmte      Schema angewendet wird. Die Liste enthält alle anderen Registerkarten außer der Registerkarte, auf die Sie die Komponente „Kontextuelle Metadaten“ angewendet haben. Derzeit bietet diese Funktion grundlegende Funktionalität zur Steuerung der Anzeige von Metadaten, die auf dem Kontext basieren.
 
-![Komponentenliste für kontextbezogene Metadaten, Registerkarten mit Asset-Eigenschaften](assets/chlimage_1-179.png)
+![Registerkarten der Asset-Eigenschaften mit Kontextmetadatenkomponenten](assets/metadata-contextual-component-list.png)
 
 Um neben der Registerkarte, auf die die Komponente &quot;Kontextuelle Metadaten&quot;angewendet wird, eine beliebige Registerkarte auf der Seite &quot;Eigenschaften&quot;anzuzeigen, wählen Sie die Registerkarte in der Liste aus. Die Registerkarte wird der Eigenschaftenseite hinzugefügt.
 
-![Die in der Liste &quot;Kontextuelle Metadaten&quot;ausgewählte Registerkarte wird auf der Seite &quot;Asset-Eigenschaften&quot;angezeigt](assets/contextual-metadata-asset-properties.png)
+![Die auf der Liste der Kontextmetadaten ausgewählte Registerkarte wird auf der Seite mit den Asset-Eigenschaften angezeigt](assets/contextual-metadata-asset-properties.png)
 
 *Abbildung: Kontextbezogene Metadaten auf der Seite mit den Asset-Eigenschaften.*
 
@@ -151,13 +151,11 @@ Anstatt die Eigenschaften für die Optionen auf der Registerkarte **[!UICONTROL 
 
 Mit dem Schema-Editor können Sie Registerkarten hinzufügen oder löschen. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
 
-![Standardregisterkarten im Metadaten-Schema-Formular](assets/chlimage_1-181.png)
+![Standardregisterkarten im Metadaten-Schema-Formular](assets/metadata-schema-form-tabs.png)
 
-Click `+` to add a tab on a schema form. By default, the new tab has the name `Unnamed-1`. Sie können den Namen auf der Registerkarte **[!UICONTROL Einstellungen]** ändern.
+Click `+` to add a tab on a schema form. By default, the new tab has the name `Unnamed-1`. Sie können den Namen auf der Registerkarte **[!UICONTROL Einstellungen]** ändern. Klicken Sie auf `X`, um eine Registerkarte zu löschen.
 
-Klicken Sie auf `X`, um eine Registerkarte zu löschen.
-
-![Hinzufügen oder Löschen einer Registerkarte mit dem Metadaten-Schema-Editor](assets/chlimage_1-182.png)
+![Hinzufügen oder Löschen einer Registerkarte mit dem Metadaten-Schema-Editor](assets/metadata-schema-form-new-tab.png)
 
 ## Löschen von Metadatenschema-Formularen {#delete-metadata-schema-forms}
 
@@ -238,7 +236,7 @@ Sie können ein anderes Schema auf den Unterordner anwenden. Die Assets in einem
 
 1. Select the folder on which to apply the modified schema and then click **[!UICONTROL Apply]**.
 
-   ![Ordner zum Anwenden des Metadaten-Schemas auswählen](assets/chlimage_1-188.png)
+   ![Ordner zum Anwenden des Metadaten-Schemas auswählen](assets/metadata-schema-select-folder.png)
 
 1. Wurde das andere Metadatenschema auf den Ordner angewendet, erhalten Sie eine Meldung mit der Warnung, dass Sie im Begriff sind, das vorhandene Metadatenschema zu überschreiben. Klicken Sie auf **Überschreiben**.
 1. Klicken Sie auf **OK**, um die Erfolgsmeldung zu schließen.
@@ -265,7 +263,7 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
 1. Navigieren Sie zum Ordner und laden Sie einige Assets mit fehlenden Metadaten für das Pflichtfeld, das Sie dem benutzerdefinierten Formular hinzugefügt haben. Auf der Ansicht des Assets wird eine Meldung zu den fehlenden Metadaten für das Pflichtfeld angezeigt.
 
-   ![Meldung für fehlende erforderliche Metadaten bei der Ansicht der Asset-Karte beim Hochladen von Assets in den Ordner](assets/chlimage_1-192.png)
+   ![Meldung für fehlende erforderliche Metadaten bei der Ansicht der Asset-Karte beim Hochladen von Assets in den Ordner](assets/metadata-missing-info-card-view.png)
 
 1. (Optional) Rufen Sie `https://[aem_server]:[port]/system/console/components/` auf. Konfigurieren und aktivieren Sie die Komponente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob`, die standardmäßig deaktiviert ist. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu `jcr:content` in Assets hinzu. [!DNL Experience Manager] verwendet diese Eigenschaft, um die ungültigen Assets in einem Suchergebnis zu filtern. Wenn Sie ein Asset nach einer Prüfung hinzufügen, wird das Asset erst nach der nächsten geplanten Prüfung markiert `hasValidMetadata` . Daher werden die Assets erst nach der nächsten geplanten Prüfung in den Filtern für ungültige Metadaten angezeigt.
 
