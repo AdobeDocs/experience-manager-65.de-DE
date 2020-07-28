@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '9234'
+source-wordcount: '9216'
 ht-degree: 63%
 
 ---
@@ -70,7 +70,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Sie können das Hochladen von großen Assets (größer als 500 MB) anhalten und später von der gleichen Seite aus fortsetzen. Klicken Sie auf **[!UICONTROL Anhalten]** neben der Fortschrittsleiste, die beim Hochladen von Beginn angezeigt wird.
 
-   ![Fortschrittsleiste für hochgeladene Assets](assets/chlimage_1-5.png)
+   ![Fortschrittsleiste für hochgeladene Assets](assets/upload-progress-bar.png)
 
    Die Größe, ab der ein Asset als großes Asset gilt, lässt sich konfigurieren. Sie können das System beispielsweise so konfigurieren, dass Assets über 1000 MB (anstatt 500 MB) als große Assets angesehen werden. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -80,7 +80,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Wenn Sie auf &quot; **[!UICONTROL Anhalten]**&quot;klicken, wird die Option &quot; **[!UICONTROL Abspielen]** &quot;aktiviert. Um den Upload fortzusetzen, klicken Sie auf **[!UICONTROL Abspielen]**.
 
-   ![Fortsetzen des angehaltenen Asset-Uploads](assets/chlimage_1-6.png)
+   ![Fortsetzen des angehaltenen Asset-Uploads](assets/resume-paused-upload.png)
 
    Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
@@ -94,7 +94,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erstellt oder beide Assets beibehalten werden sollen, indem Sie das neue hochgeladene Asset umbenennen. Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset sowie alle zuvor vorgenommenen Änderungen (z. B. Anmerkungen oder Zuschneiden) gelöscht. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![Dialogfeld &quot;Konflikt benennen&quot;, um den Konflikt mit dem Asset-Namen zu lösen](assets/chlimage_1-7.png)
+   ![Dialogfeld &quot;Konflikt benennen&quot;, um den Konflikt mit dem Asset-Namen zu lösen](assets/resolve-naming-conflict.png)
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![Dialogfeld &quot;Duplikat-Asset erkannt&quot;](assets/chlimage_1-8.png)
+   ![Dialogfeld &quot;Duplikat-Asset erkannt&quot;](assets/duplicate-asset-detected.png)
 
    Um das Duplikat-Asset beizubehalten, [!DNL Assets]klicken Sie auf **[!UICONTROL Behalten]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
@@ -123,7 +123,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Fügen Sie keine Sonderzeichen in die Erweiterungen der Asset-Dateinamen ein.
 
-   ![Das Dialogfeld &quot;Fortschritt beim Hochladen&quot;zeigt den Status der erfolgreich hochgeladenen Dateien und Dateien an, die nicht hochgeladen werden können](assets/chlimage_1-10.png)
+   ![Das Dialogfeld &quot;Fortschritt beim Hochladen&quot;zeigt den Status der erfolgreich hochgeladenen Dateien und Dateien an, die nicht hochgeladen werden können](assets/bulk-upload-progress.png)
 
    In addition, the [!DNL Assets] user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -149,7 +149,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 >[!NOTE]
 >
->Um Assets per FTP im Scene7-Modus hochzuladen, installieren Sie Feature Pack 18912 in den [!DNL Experience Manager] Autoreninstanzen. Contact [Adobe Customer Care](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Weitere Informationen finden Sie unter Feature Pack 18912 [installieren für die Migration](/help/assets/bulk-ingest-migrate.md)von Massenelementen.
+>Um Assets per FTP im Scene7-Modus hochzuladen, installieren Sie Feature Pack 18912 auf den Autoreninstanzen [!DNL Experience Manager] . Contact [Adobe Customer Care](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Weitere Informationen finden Sie unter Feature Pack 18912 [installieren für die Migration](/help/assets/bulk-ingest-migrate.md)von Massenelementen.
 >
 >If you use FTP for uploading assets, the upload settings specified in [!DNL Experience Manager] are ignored. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
@@ -479,10 +479,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
 1. Sie können Ausgabeformate für ein Asset hinzufügen oder entfernen, mit Ausnahme des Originals. Navigieren Sie zum Speicherort des Assets, für das Sie Ausgabeformate hinzufügen oder entfernen möchten.
 
-1. Klicken Sie auf das Asset, um seine Asset-Seite zu öffnen.
-
-   ![Assets-Detailseite zum Verwalten von Darstellungen](assets/chlimage_1-15.png)
-
+1. Klicken Sie auf das Asset, um seine Seite zu öffnen.
 1. Wählen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;in der Liste die Option **[!UICONTROL Darstellungen]** aus.
 
    ![Linke Leiste zum Öffnen des Menüs und Auswahl der Option &quot;Darstellungen&quot;](assets/renditions_menu.png)
@@ -515,7 +512,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    Ebenso können Sie das Bild der Anmerkungsseite durch Überlagern von `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` anpassen.
 
-   ![Overlay RenderingPicker-Knoten in CRXDE zum Anpassen des Bilds der Anmerkungsseite](assets/chlimage_1-17.png)
+   ![Overlay RenderingPicker-Knoten in CRXDE zum Anpassen des Bilds der Anmerkungsseite](assets/renditionpicker-node-crxde.png)
 
    Navigieren Sie zur Konfiguration der Ausgabeformatabmessungen für ein Video-Asset zum Knoten `videopicker` im CRX-Repository am Speicherort `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, überlagern Sie den Knoten und bearbeiten Sie dann die entsprechende Eigenschaft.
 
@@ -671,21 +668,16 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
 
-   ![Optionen für das Zuschneiden](assets/chlimage_1-23.png)
+   ![Optionen für das Zuschneiden](assets/crop-options.png)
 
 1. Wählen Sie den zuzuschneidenden Bereich und ändern Sie die Größe oder Position auf dem Bild.
 
-1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
-
-   ![Rückgängig- und Wiederherstellungsoptionen](assets/chlimage_1-25.png)
-
+1. Verwenden Sie die Optionen **[!UICONTROL &quot;]** Rückgängig ![:](assets/do-not-localize/undo.png) Rückgängig&quot;und &quot; **[!UICONTROL Wiederholen]** &quot;der Symbolleistenoptionen ![](assets/do-not-localize/redo.png) , um zum nicht beschnittenen Bild zurückzukehren oder das zugeschnittene Bild beizubehalten.
 1. Click the appropriate **[!UICONTROL Rotate]** option to rotate the image clockwise or anti-clockwise.
 
-   ![Drehen im Uhrzeigersinn und gegen den Uhrzeigersinn](assets/chlimage_1-26.png)
+   ![Drehen im Uhrzeigersinn und gegen den Uhrzeigersinn](assets/do-not-localize/rotate-options.png)
 
-1. Click the appropriate **[!UICONTROL Flip]** option to flip the image horizontally or vertically.
-
-   ![Optionen zum horizontalen oder vertikalen Spiegeln eines Bildes](assets/chlimage_1-27.png)
+1. Klicken Sie auf die entsprechenden **[!UICONTROL Flip]** -Optionen, um das Bild horizontal ![um die horizontale Option](assets/do-not-localize/flip-horizontal.png) oder vertikal um die vertikale Option ![](assets/do-not-localize/flip-vertical.png)zu drehen.
 
 1. Um die Bildbearbeitung abzuschließen, klicken Sie auf &quot; **[!UICONTROL Fertig stellen]** &quot; ![](assets/do-not-localize/check-ok-done-icon.png). Durch Klicken auf **Fertig stellen** wird auch die Wiederherstellung der Darstellungen Beginn.
 
@@ -731,23 +723,23 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    * [Schnellaktionen](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben        oder zur Asset-Seite navigiert sind
 
-   ![Option &quot;Anmerkung&quot;](assets/chlimage_1-29.png)
+   ![Option &quot;Anmerkung&quot;](assets/annotate-option.png)
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
-   ![Kommentarfeld im Dialogfeld &quot;Hinzufügen Anmerkung&quot;](assets/chlimage_1-30.png)
+   ![Kommentarfeld im Dialogfeld &quot;Hinzufügen Anmerkung&quot;](assets/annotation-comment-box.png)
 
 1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Beispiel: Um Aaron MacDonald über eine Anmerkung zu benachrichtigen, geben Sie „@aa“ ein. Vorschläge für alle übereinstimmenden Benutzer werden in einer Liste angezeigt. Wählen Sie die E-Mail-Adresse von Aaron in der Liste aus, um ihn über den Kommentar zu informieren. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
 
+   ![E-Mail-Adresse des Benutzers angeben und Kommentar hinzufügen, um den Benutzer zu benachrichtigen](assets/annotation-add-user-email.png)
+
    >[!NOTE]
    >
-   >Für einen Benutzer ohne Administratorberechtigung sind Vorschläge nur dann sichtbar, wenn er über eine Leseberechtigung in */home* in Crx-de verfügt.
-
-   ![E-Mail-Adresse des Benutzers angeben und Kommentar hinzufügen, um den Benutzer zu benachrichtigen](assets/chlimage_1-31.png)
+   >For a non-administrator user, the suggestions appear only if the user has read permissions at `/home` path in CRXDE.
 
 1. Nachdem Sie die Anmerkung hinzugefügt haben, klicken Sie auf **[!UICONTROL Hinzufügen]**, um sie zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
 
-   ![Schaltfläche &quot;Hinzufügen&quot;zum Speichern einer Anmerkung](assets/chlimage_1-32.png)
+   ![Schaltfläche &quot;Hinzufügen&quot;zum Speichern einer Anmerkung](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -778,15 +770,15 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 
 1. Wählen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;die Option &quot; **[!UICONTROL Zeitschiene]**&quot;aus.
 
-   ![Optionen im Experience Manager](assets/chlimage_1-35.png)
+   ![Zeitschiene im Experience Manager verfügbar](assets/view-timeline.png)
 
 1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Timeline **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
 
-   ![Alle Listen in der Zeitschiene anzeigen](assets/chlimage_1-36.png)
+   ![Alle Listen in der Zeitschiene anzeigen](assets/timeline-show-all-option.png)
 
    Klicken Sie im Bedienfeld **[!UICONTROL Timeline]** auf einen Kommentar, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
-   ![Zeitschienenbedienfeld zur Ansicht Anmerkung zum Bild](assets/chlimage_1-37.png)
+   ![Zeitschienenbedienfeld zur Ansicht Anmerkung zum Bild](assets/timeline-view-annotations.png)
 
    Klicken Sie auf **[!UICONTROL Löschen]**, um einen bestimmten Kommentar zu löschen.
 
@@ -806,11 +798,9 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Zum Drucken bestimmter Anmerkungen wählen Sie die Anmerkungen aus der Timeline aus.
 
-   ![Wählen Sie eine Anmerkung in der Zeitleiste aus, um sie zu drucken](assets/chlimage_1-38.png)
+   ![Wählen Sie eine Anmerkung in der Zeitleiste aus, um sie zu drucken](assets/timeline-select-annotations.png)
 
    Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Timeline aus.
-
-   ![Um nur den Überprüfungsstatus der Anmerkung zu drucken, wählen Sie ihn in der Zeitleiste aus](assets/chlimage_1-39.png)
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
@@ -828,7 +818,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Klicken Sie auf **[!UICONTROL Drucken]**. Je nach der Option, die Sie in Schritt 2 wählen, zeigt die erstellte PDF-Datei die Anmerkungen/den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **Oben links** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
-   ![Anmerkungs- und Überprüfungsstatus in der erstellten PDF](assets/chlimage_1-42.png)
+   ![Anmerkungs- und Überprüfungsstatus in der erstellten PDF](assets/annotation-status-pdf.png)
 
 1. Download- ![Download-Option für PDF](assets/do-not-localize/download.png) oder ![Druckoptionen für PDF](assets/do-not-localize/print.png) im PDF mit den Optionen oben rechts.
 
@@ -838,7 +828,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern (z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status), öffnen Sie in Configuration Manager die **[!UICONTROL Konfiguration für PDF-Anmerkungen]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farbcode. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![Konfiguration zum Drucken von Asset-Anmerkungen im PDF-Dokument](assets/chlimage_1-44.png)
+   ![Konfiguration zum Drucken der Asset-Anmerkung im PDF-Dokument](assets/annotation-print-pdf-config.png)
 
    Kehren Sie zu der gerenderten PDF-Datei zurück und aktualisieren Sie sie. Der aktualisierte PDF-Datei spiegelt die von Ihnen vorgenommenen Änderungen wider.
 
