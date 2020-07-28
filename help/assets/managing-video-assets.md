@@ -3,10 +3,10 @@ title: Verwalten Sie Video-Assets in [!DNL Adobe Experience Manager].
 description: Hochladen, Vorschau, Anmerkungen und Veröffentlichen von Video-Assets [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 41%
+source-wordcount: '816'
+ht-degree: 39%
 
 ---
 
@@ -23,17 +23,11 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 1. Navigieren Sie im Ordner „Digitale Assets“ (oder dessen Unterordnern) zum Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternativ können Sie sie direkt in den Assets-Bereich ziehen. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
-1. To preview a video in the Card view, click the **[!UICONTROL Play]** button on the video asset.
+1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
-   ![chlimage_1-65](assets/chlimage_1-201.png)
+1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. Das Video wird im systemeigenen Video-Player des Browsers wiedergegeben. Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
 
-   Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. Die Schaltflächen [!UICONTROL Wiedergabe] und [!UICONTROL Pause] sind in der Listenansicht nicht verfügbar.
-
-1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card.
-
-   Das Video wird im systemeigenen Video-Player des Browsers wiedergegeben. Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
-
-   ![chlimage_1-66](assets/chlimage_1-202.png)
+   ![Steuerelemente für die Videowiedergabe](assets/video-playback-controls.png)
 
 ## Konfiguration zum Hochladen von Assets, die größer als 2 GB sind {#configuration-to-upload-assets-that-are-larger-than-gb}
 
