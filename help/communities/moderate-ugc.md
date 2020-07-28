@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 3%
 
 ---
 
@@ -154,11 +157,15 @@ Administratoren oder Community-Moderatoren können ein oder mehrere Foren- oder 
 
 Durch Auswahl der Aktion &quot;Ausschneiden&quot;wird der Inhalt in die Zwischenablage kopiert. Es können mehrere Beiträge kopiert und als Gruppe an den neuen Speicherort verschoben werden.
 
-![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
+![cutugc](assets/cutugc.png)
+
+![putbackugc](assets/putbackugc.png)
 
 Wenn an der anderen Stelle Inhalte in der Zwischenablage vorhanden sind, wird neben &quot;Neuer Beitrag&quot;eine Schaltfläche &quot;Einfügen&quot;angezeigt, mit der die Anzahl der eingefügten Beiträge angegeben wird. Die Schaltfläche &quot;Einfügen&quot;enthält eine Option zum Löschen der Zwischenablage, anstatt sie einzufügen.
 
-![chlimage_1-28](assets/chlimage_1-28.png) ![chlimage_1-29](assets/chlimage_1-29.png)
+![pasteugc](assets/pasteugc.png)
+
+![pasteugc1](assets/pasteugc1.png)
 
 ### Ablehnen {#deny}
 
@@ -214,7 +221,7 @@ Gehen Sie wie folgt vor, um die Spam-Erkennungs-Engine zu aktivieren:
 
 1. Öffnen Sie [Web Console](https://localhost:4502/system/console/configMgr), indem Sie zu `/system/console/configMgr`.
 
-1. Suchen Sie die Konfiguration für die automatische Moderation **in** AEM Communities und bearbeiten Sie sie.
+1. Suchen Sie die Konfiguration für die automatische Moderation **von** AEM Communities und bearbeiten Sie sie.
 1. Hinzufügen den Eintrag **[!UICONTROL SpamProcess]** .
 
 ![spamprocess](assets/spamprocess.png)
@@ -247,7 +254,7 @@ In der [Massen-Moderationskonsole](/help/communities/moderation.md)ist es mögli
 
 #### Watchwords {#watchwords}
 
-AEM Communities bietet einen *Watchword-Analyzer* als Schritt zur Bewertung des [Sentiments](#sentiment). Der Beitrag zum Sentimentwert der Watchwords beruht auf einem Vergleich von negativen und positiven Watchwords, die im veröffentlichten Inhalt verwendet werden, sowie verbotenen Wörtern.
+AEM Communities bieten einen *Watchword-Analyzer* als Schritt zur Bewertung des [Sentiments](#sentiment). Der Beitrag zum Sentimentwert der Watchwords beruht auf einem Vergleich von negativen und positiven Watchwords, die im veröffentlichten Inhalt verwendet werden, sowie verbotenen Wörtern.
 
 #### Sentiment und Watchwords konfigurieren {#configure-sentiment-and-watchwords}
 
