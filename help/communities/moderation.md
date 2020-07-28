@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
 workflow-type: tm+mt
 source-wordcount: '2110'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -112,7 +112,7 @@ Der Inhaltsbereich enthält Informationen für veröffentlichte UGC:
 
 ### Filterleiste {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![open-filterrail](assets/open-filterrail.png)
 
 Das Seitensymbol öffnet die Filterleiste. Die Filterleiste, die links neben dem Inhaltsbereich angezeigt wird, bietet verschiedene Filter, von denen jede unmittelbar auf das referenzierte UGC im Inhaltsbereich wirkt.
 
@@ -141,17 +141,17 @@ Der Inhaltspfad beschränkt die Anzeige des Referenz-UGC auf die im angegebenen 
 
 Die Textsuche beschränkt die angezeigte UGC auf Beiträge, die den eingegebenen Text enthalten.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![text-search](assets/text-search.png)
 
 #### Website {#site}
 
 Site beschränkt die referenzierte UGC auf Beiträge auf ausgewählte Community-Sites. Wenn keine Sites markiert sind, werden alle Verweise auf UGC angezeigt.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![site-panel](assets/site-panel.png)
 
 >[!NOTE]
 >
->Wenn ein Administrator auf die Massenmoderationskonsole zugreift, werden alle Verweise auf UGC angezeigt, einschließlich Sites, die nicht mit dem [Site-Erstellungsassistenten](/help/communities/sites-console.md)erstellt wurden, wie z. B. die Geometrixx-Beispiele.
+>Wenn ein Administrator auf die Massen-Moderationskonsole zugreift, werden alle Verweise auf UGC angezeigt, einschließlich Sites, die nicht mit dem [Site-Erstellungsassistenten](/help/communities/sites-console.md)erstellt wurden, wie z. B. die Geometrixx.
 >
 >Wenn ein Mitglied einer vertrauenswürdigen Community auf die Massenmoderationskonsole zugreift, werden nur Verweise auf UGC angezeigt, die für Community-Sites erstellt wurden, die das Mitglied moderieren darf, und können mit dem Site-Filter gefiltert werden.
 
@@ -189,8 +189,7 @@ So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
    * Geben Sie zum Beispiel Folgendes ein, um nach eingeschlossenen Abstimmungskomponenten zu filtern:
 
       `Voting=social/tally/components/hbs/voting`
-
-![chlimage_1-215](assets/chlimage_1-215.png)
+   ![additional-contenttype](assets/additional-contenttype.png)
 
 * Wählen Sie Speichern aus.
 * Aktualisieren Sie die Communities - Moderationskonsole.
@@ -216,25 +215,25 @@ Durch die Kennzeichnung wird die Anzeige des referenzierten UGC auf Beiträge be
 
 Sobald ein Inhaltselement markiert ist, bleibt es gekennzeichnet, bis Sie die Markierung für dieses Inhaltselement aufheben, indem Sie erneut auf die Schaltfläche &quot; **Flag** &quot;klicken. Beachten Sie, dass es keine Kennzeichnungsebenen gibt, wie z. B. wichtig oder nachfolgende.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![flagging](assets/flagging.png)
 
 #### Mitglieder {#members}
 
 Mitglieder beschränken die referenzierte UGC, die für UGC angezeigt wird, gepostet durch den angegebenen Mitgliedsnamen.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![members](assets/members.png)
 
 #### Veröffentlichungszeitraum {#posted-in-the-last}
 
 &quot;Gepostet in der letzten&quot;beschränkt die referenzierte Benutzerkontensteuerung auf Beiträge, die in der letzten Stunde, dem letzten Tag, der letzten Woche, dem letzten Monat oder dem letzten Jahr erstellt wurden.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![shed-last](assets/posted-last.png)
 
 #### Empfindung {#sentiment}
 
 [Das Sentiment](/help/communities/moderate-ugc.md#sentiment) beschränkt die referenzierte UGC auf Beiträge mit einem Sentimentwert, der entweder positiv, negativ oder neutral ist.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![sentiment](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
@@ -271,9 +270,9 @@ So machen Sie die benutzerdefinierten Filter auf bestehenden Websites der Gemein
 
 [Moderationsaktionen](/help/communities/moderate-ugc.md#moderation-actions) können für eine oder mehrere Auswahlen im Inhaltsbereich oder beim Anzeigen von Inhaltsdetails durchgeführt werden.
 
-Wenn Sie die Beiträge stapelweise moderieren möchten, klicken Sie im Inhaltsbereich auf das Symbol Auswählen ( ![Auswahl](assets/selecticon.png)) eines Beitrags, das angezeigt wird, wenn Sie mit der Maus (Desktop) darauf zeigen oder einen Finger auf dem Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und die nachfolgenden Beiträge auswählen, die per Mausklick gepostet werden sollen. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen an den ausgewählten Beiträgen durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
+Wenn Sie die Beiträge stapelweise moderieren möchten, klicken Sie im Inhaltsbereich auf das Symbol Auswählen (![Auswahl](assets/selecticon.png)) eines Beitrags, das angezeigt wird, wenn Sie den Mauszeiger über diesen Beitrag bewegen (Desktop) oder indem Sie mit dem Finger auf den Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und die nachfolgenden Beiträge auswählen, die per Mausklick gepostet werden sollen. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen an den ausgewählten Beiträgen durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
 
-Wenn Sie einen einzelnen Beitrag im Inhaltsbereich moderieren möchten, halten Sie den Mauszeiger über den Beitrag (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass die Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
+Um einen einzelnen Beitrag im Inhaltsbereich zu moderieren, halten Sie den Mauszeiger über ihn (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
 
 ### Moderieren mehrerer Beiträge {#moderating-multiple-posts}
 
@@ -318,19 +317,19 @@ Auf der Ansicht der Karte über den Symbolen der Moderationsaktion befindet sich
 
 #### Antwort {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![antworten](assets/reply.png)
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, wird ein Symbol zum Antworten angezeigt, wenn der UGC-Typ Antworten unterstützt und so konfiguriert ist, dass Antworten zulässig sind.
 
 #### Gastzugang {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![zulassen](assets/allow.png)
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, wird das Symbol Zulassen angezeigt, wenn der Beitrag markiert oder verweigert wurde. Wenn die Option &quot;Zulassen&quot;markiert ist, werden alle Flags gelöscht.
 
 #### Ablehnen {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![ablehnen](assets/deny.png)
 
 Die Aktion &quot;Moderation **verweigern** &quot;steht nur für moderierte Inhalte zur Verfügung und wird nur im Mehrfachauswahlmodus bei nicht moderierten Inhalten angezeigt.
 
@@ -342,31 +341,31 @@ Inhalt, der den Status &quot;Ausstehend&quot;verlässt, kann nie in den Status &
 
 #### Löschen {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![Löschen Sie](assets/delete.png)
 
 In einem Auswahl- oder Massenmodus können Sie Elemente auswählen und löschen. Die Löschaktion führt zu einem Bestätigungsdialogfeld. Nach dem Löschen verschwinden diese Elemente sofort aus dem Inhaltsbereich. **Sobald UGC gelöscht wurde, wird es dauerhaft aus dem Repository entfernt und kann später nicht mehr abgerufen** werden.
 
 #### Schließen {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![close](assets/close.png)
 
 Beim Arbeiten mit einem einzelnen Beitrag wird ein Schließen-Symbol angezeigt, wenn der UGC-Typ die Möglichkeit unterstützt, weitere Beiträge für diese Ressource zu verhindern.
 
 #### Moderationsverlauf {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![Moderation](assets/moderation.png)
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, wird ein Symbol für den Moderationsverlauf angezeigt, wenn Sie den Mauszeiger darüber halten. Wenn Sie das Symbol auswählen, wird ein Fenster mit einem Verlauf der Aktionen angezeigt, die in Bezug auf den UGC-Beitrag durchgeführt wurden.
 
 Um zur Inhaltsbereichsanzeige mehrerer UGC-Beiträge zurückzukehren, wählen Sie das X oben rechts im Detailbereich &quot;Ansicht&quot;aus.
 
-Beispiel :
+Beispiel:
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![moderation-history](assets/moderation-history.png)
 
 #### Details anzeigen {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![Ansicht](assets/view.png)
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, können Sie weitere Details anzeigen, indem Sie das UGC im Detailmodus öffnen.
 
@@ -374,7 +373,7 @@ Bewegen Sie dazu den Mauszeiger über den Beitrag, um das Symbol anzuzeigen, und
 
 Um zur Inhaltsbereichsanzeige mehrerer UGC-Beiträge zurückzukehren, wählen Sie das X oben rechts im Detailbereich &quot;Ansicht&quot;aus.
 
-Beispiel :
+Beispiel:
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 
