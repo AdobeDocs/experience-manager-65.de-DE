@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2187'
 ht-degree: 89%
 
 ---
@@ -131,7 +131,7 @@ SQL Server bietet auch zwei Sicherungs- und Wiederherstellungswerkzeuge:
 * SQL Server Management Studio (grafische Benutzeroberfläche)
 * T-SQL (Befehlszeile)
 
-Siehe [Sicherungsstrategien](https://articles.techrepublic.com.com/5100-1035_61-1043671.md) und [Sichern und Wiederherstellen](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
