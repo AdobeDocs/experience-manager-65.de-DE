@@ -11,7 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 080885a4fddbbce52968d3c324d6499ff1036de2
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 ## Voraussetzungen {#pre-requisites}
 
-AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind 
+AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/de-de/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/de-de/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind 
 
 ## Installieren von Designer {#install-designer}
 
@@ -38,4 +41,3 @@ Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBe
 1. (Optional) Ändern Sie den Standardinstallationspfad, wenn Sie Designer an einem anderen Speicherort installieren möchten. Klicken Sie auf Weiter.
 1. Klicken Sie auf „Zurück“, um gegebenenfalls die Voreinstellungen zu ändern. Um Designer zu installieren, klicken Sie auf „Installieren“.
 1. Klicken Sie auf „Fertig stellen“, wenn die Installation abgeschlossen ist.
-
