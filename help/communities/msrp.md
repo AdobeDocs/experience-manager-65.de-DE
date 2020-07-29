@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 3%
@@ -33,7 +33,7 @@ Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-
    * Version 2.6 oder höher
    * Keine Konfiguration von Mongos oder Freigeben erforderlich
    * Die Verwendung eines [Replikatsatzes wird dringend empfohlen](#mongoreplicaset)
-   * Kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden
+   * Kann auf demselben Host ausgeführt werden wie AEM oder remote ausgeführt werden
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -43,7 +43,7 @@ Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-
    * Auswahl der Ausführungsmodi:
       * Standalone-Modus
       * [SolrCloud-Modus](solr.md#solrcloud-mode) (empfohlen für Produktionsumgebungen)
-   * Auswahl der mehrsprachigen Suche (MLS)
+   * Auswahl der mehrsprachigen Suche (MLS):
       * [Installieren von Standard MLS](solr.md#installing-standard-mls)
       * [Installieren von erweiterten MLS](solr.md#installing-advanced-mls)
 
@@ -102,7 +102,7 @@ Lassen Sie beim Ausführen im SolrCloud-Modus leer.
 
 >[!NOTE]
 >
->Die mongoDB-Datenbank, die standardmäßig den Namen verwendet, `communities`sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet wird](../../help/sites-deploying/data-store-config.md). Siehe auch [Datenspeicherung-Elemente in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>Die mongoDB-Datenbank, die standardmäßig den Namen verwendet, `communities`sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet wird](../../help/sites-deploying/data-store-config.md). Siehe auch [Datenspeicherung in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 
 ### MongoDB-Replikat-Set {#mongodb-replica-set}
@@ -224,7 +224,7 @@ Informationen zum Einrichten von MSRP für eine Demo- oder Entwicklungs-Umgebung
 
 Vergewissern Sie sich, dass MSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfigurationsoption der Datenspeicherung überprüfen. Standardmäßig ist der Datenspeicherung Resource Provider JSRP.
 
-Gehen Sie bei allen Autoren- und Veröffentlichungsinstanzen von AEM erneut zur [Datenspeicherung Configuration Console](srp-config.md) oder überprüfen Sie das AEM-Repository:
+Rufen Sie auf allen Instanzen im Autorenmodus AEM Veröffentlichungsmodus erneut die [Datenspeicherung Configuration Console](srp-config.md) auf oder überprüfen Sie das AEM Repository:
 
 * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -239,7 +239,7 @@ Zu diesem Zweck steht auf GitHub ein Open-Source-Tool zur Verfügung:
 
 * [AEM Communities-UGC-Migrationswerkzeug](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Das Migrationswerkzeug kann angepasst werden, um UGC aus früheren Versionen von AEM Social Communities für den Import in AEM Communities 6.1 oder höher zu exportieren.
+Das Migrationswerkzeug kann angepasst werden, um UGC aus früheren Versionen AEM Social Communities für den Import in AEM Communities 6.1 oder höher zu exportieren.
 
 ### Fehler - nicht definiertes Feld provider_id {#error-undefined-field-provider-id}
 
@@ -265,7 +265,7 @@ Um den Fehler zu beheben, stellen Sie bei Befolgen der Anweisungen zur [Installa
 Wenn ein Versuch, eine gesicherte Verbindung zum MongoDB-Server herzustellen aufgrund einer fehlenden Klassendefinition fehlschlägt, ist es notwendig, das MongoDB-Treiberpaket zu aktualisieren, das über das öffentliche Repository verfügbar `mongo-java-driver`ist.
 
 1. Laden Sie den Treiber von [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (Version 2.13.2 oder höher) herunter.
-1. Kopieren Sie das Bundle in den Ordner &quot;crx-quickstart/install&quot;für eine AEM-Instanz.
+1. Kopieren Sie das Bundle für eine AEM Instanz in den Ordner &quot;crx-quickstart/install&quot;.
 1. Starten Sie die AEM-Instanz neu.
 
 ## Ressourcen {#resources}
