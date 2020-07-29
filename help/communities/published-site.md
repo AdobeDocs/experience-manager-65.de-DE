@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Neue Site bei der Veröffentlichung suchen {#browse-to-new-site-on-publish}
 
-Nachdem die neu erstellte Communities-Site veröffentlicht wurde, navigieren Sie zur URL, die beim Erstellen der Site angezeigt wird, jedoch auf dem Veröffentlichungsserver, z.
+Nachdem die neu erstellte Communities-Site veröffentlicht wurde, navigieren Sie zur URL, die beim Erstellen der Site angezeigt wird, jedoch auf dem Veröffentlichungsserver, z. B.:
 
 * Autor-URL = https://localhost:4502/content/sites/engage/en.html
 * Veröffentlichungs-URL = https://localhost:4503/content/sites/engage/en.html
@@ -65,13 +65,14 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
 1. Gehen Sie zu **Seiteneigenschaften**.
 
-   ![site-authentication](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Navigieren Sie zur Registerkarte **Erweitert**.
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![site-authentication](assets/site-authentication.png)
+
 1. Hinzufügen den Pfad der Anmeldeseite. For example, **/content/......./GetStarted**.
 1. Veröffentlichen Sie die Seite.
 
@@ -198,7 +199,7 @@ Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und n
 
 ### Webseitenlink {#web-page-link}
 
-Ansicht der grundlegenden Webseite, die in der Site enthalten ist, durch Auswahl des Links &quot;Webseite&quot;. Die Standard-AEM-Authoring-Werkzeuge können verwendet werden, um Inhalte zu dieser Umgebung in der Autorendatei hinzuzufügen.
+Ansicht der grundlegenden Webseite, die in der Site enthalten ist, durch Auswahl des Links &quot;Webseite&quot;. Die standardmäßigen AEM Authoring-Werkzeuge können verwendet werden, um dieser Umgebung Inhalte hinzuzufügen.
 
 Rufen Sie beispielsweise die **Autoreninstanz** auf, öffnen Sie den `engage` Ordner in der Konsole [&quot;](/help/communities/sites-console.md)Communities Sites&quot;und klicken Sie auf das Symbol zum **Öffnen der Site** , um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Modus &quot;Vorschau&quot;aus, um den `Web Page` Link auszuwählen, und wählen Sie dann den Bearbeitungsmodus, um Titel- und Textkomponenten hinzuzufügen. Als letztes veröffentlichen Sie entweder nur die Seite oder die gesamte Site erneut.
 
