@@ -3,10 +3,10 @@ title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
+source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 92%
+source-wordcount: '1580'
+ht-degree: 91%
 
 ---
 
@@ -253,6 +253,9 @@ Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel
 * `X-Overwrite` Verwenden Sie entweder `T`, um das Löschen einer vorhandenen Ressource zu erzwingen, oder `F`, um das Überschreiben einer vorhandenen Ressource zu verhindern.
 
 **Anforderung**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+
+Verwenden Sie nicht `/content/dam` in der URL. Ein Beispielbefehl zum Verschieben während des Überschreibens:
+`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
