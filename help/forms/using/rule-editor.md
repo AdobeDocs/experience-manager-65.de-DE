@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '6822'
 ht-degree: 76%
@@ -138,7 +138,7 @@ Zusätzlich zum Formulardatenmodelldienst können Sie eine direkte WSDL-URL ange
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-**Legen Sie den Wert** &quot;Berechnet&quot;fest und legen Sie den Wert des angegebenen Objekts fest. Sie können den Objektwert auf eine Zeichenfolge, den Wert eines anderen Objekts, den berechneten Ausdruck mit mathematischem  oder einer Funktion, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodelldiensts festlegen. Wenn Sie die Option &quot;Webdienst&quot;wählen, werden alle Dienste angezeigt, die in allen Formulardatenmodellen auf Ihrer AEM-Instanz konfiguriert sind. Bei der Auswahl eines Formulardatenmodell-Diensts erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen dienst zuordnen können.
+**Legen Sie den Wert** &quot;Berechnet&quot;fest und legen Sie den Wert des angegebenen Objekts fest. Sie können den Objektwert auf eine Zeichenfolge, den Wert eines anderen Objekts, den berechneten Ausdruck mit mathematischem  oder einer Funktion, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodelldiensts festlegen. Wenn Sie die Option &quot;Webdienst&quot;wählen, werden alle Dienste angezeigt, die in allen Formulardatenmodellen auf Ihrer AEM konfiguriert sind. Bei der Auswahl eines Formulardatenmodell-Diensts erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen dienst zuordnen können.
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
@@ -164,7 +164,7 @@ Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Ko
 
 **Formular speichern** Speichert das Formular.
 
-**Formulare** senden Sendet das Formular.
+**Senden von Forms** Sendet das Formular.
 
 **Formular zurücksetzen** Setzt das Formular zurück.
 
@@ -641,7 +641,7 @@ area = function(len) {
 
 **Funktionsausdruck und -anweisung**
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -651,7 +651,7 @@ b.area = function(len) {
 
 **Funktionsdeklaration als Variable**
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -664,7 +664,7 @@ Einschränkung: Die benutzerdefinierte Funktion wählt nur die erste Funktionsde
 
 **Funktionsdeklaration als Objekt**
 
-```
+```javascript
 var c = {
     b : {
         /** */
