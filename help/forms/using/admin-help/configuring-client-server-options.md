@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '10273'
 ht-degree: 85%
@@ -43,7 +43,7 @@ Weitere Informationen zur Funktionsweise der Offline-Nutzung und Synchronisation
 
 **Zugriff auf anonyme Benutzer zulassen:** Wählen Sie diese Option, um freigegebene und persönliche Richtlinien zu erstellen, die es anonymen Benutzern ermöglichen, richtliniengeschützte Dokumente zu öffnen. (Benutzer ohne Konto können auf das Dokument zugreifen, sich jedoch nicht bei Document Security anmelden oder andere richtliniengeschützte Dokumente nutzen.)
 
-**Zugriff auf Version 7-Clients deaktivieren:** Gibt an, ob Benutzer Acrobat oder Reader 7.0 verwenden können, um eine Verbindung zum Server herzustellen. Ist diese Option aktiviert, müssen Benutzer Acrobat oder Reader 8.0 oder höher verwenden, um Document Security-Vorgänge für PDF-Dokumente durchzuführen. Falls Richtlinien erfordern, dass Acrobat oder Reader 8.0 oder höher zum Öffnen richtliniengeschützter Dokumente im zertifizierten Modus ausgeführt werden muss, müssen Sie den Zugriff auf Acobat oder Reader 7 deaktivieren. (Siehe Die Dokumentberechtigungen für Benutzer und Gruppen angeben.)
+**Zugriff auf Version 7-Clients deaktivieren:** Gibt an, ob Benutzer mit Acrobat oder Reader 7.0 eine Verbindung zum Server herstellen können. Ist diese Option aktiviert, müssen Benutzer Acrobat oder Reader 8.0 oder höher verwenden, um Document Security-Vorgänge für PDF-Dokumente durchzuführen. Falls Richtlinien erfordern, dass Acrobat oder Reader 8.0 oder höher zum Öffnen richtliniengeschützter Dokumente im zertifizierten Modus ausgeführt werden muss, müssen Sie den Zugriff auf Acobat oder Reader 7 deaktivieren. (Siehe Die Dokumentberechtigungen für Benutzer und Gruppen angeben.)
 
 **Offline-Zugriff pro Dokument** zulassen Wählen Sie diese Option, um den Offline-Zugriff pro Dokument festzulegen. Wenn diese Einstellung aktiviert ist, kann der Benutzer nur auf die Dokumente offline zugreifen, die er mindestens einmal online geöffnet hat.
 
@@ -59,7 +59,7 @@ Durch Auswahl dieser Option werden Clientanwendungen für die Verwendung der erw
 
 ***Hinweis **: Erweiterte Authentifizierung wird auf Apple Mac OS X mit Adobe Acrobat ab Version 11.0.6 unterstützt.*
 
-**Bevorzugte Breite des HTML-Steuerelements für erweiterte Authentifizierung** Geben Sie die Breite des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
+**Bevorzugte HTML-Steuerelementbreite für erweiterte Authentifizierung** Geben Sie die Breite des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
 **Bevorzugte Höhe des HTML-Steuerelements für erweiterte Authentifizierung** Geben Sie die Höhe des Dialogfelds für erweiterte Authentifizierung an, das in Acrobat zur Eingabe von Benutzeranmeldeinformationen geöffnet wird.
 
@@ -365,7 +365,7 @@ Sie können die Ereignisprüfung aktivieren und deaktivieren und die zu prüfend
 
 **Die synchronisierte Client** -Client-Anwendung muss Informationen mit dem Server synchronisieren, um den Offline-Zugriff zu ermöglichen.
 
-**Versionskonflikt:** Eine Version des AEM Forms-SDK, die nicht mit dem Server kompatibel ist, versuchte, eine Verbindung zum Server herzustellen.
+**Versionskonflikt:** Eine Version des AEM Forms SDK, die nicht mit dem Server kompatibel ist, versuchte, eine Verbindung zum Server herzustellen.
 
 **Informationen zur Ordnersynchronisierung:** Diese Informationen stehen auf der Seite &quot;Ereignisse&quot;nicht zur Verfügung. Die aktuellen Informationen zur Ordnersynchronisierung, einschließlich des aktuellen Synchronisierungszustands und des Zeitpunktes der letzten Synchronisierung, werden auf der Seite „Domänenverwaltung“ angezeigt. Um Zugriff auf die Domänenverwaltung zu erhalten, klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 
@@ -420,7 +420,7 @@ Diese Einstellungen steuern den im Dialogfeld für die Zertifikatauthentifizieru
 
 **Client-Zertifikatanzeige anpassen**
 
-**Nur Herausgeber von vertrauenswürdigen Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, stellt die Clientanwendung dem Benutzer nur Zertifikate von Zertifizierungsstellen zur Verfügung, denen AEM Forms vertraut (siehe Verwalten von Zertifikaten und Berechtigungen). Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate, die sich auf dem System des Benutzers befinden, vorgelegt.
+**Nur Herausgeber von vertrauenswürdigen Berechtigungen anzeigen:** Wenn diese Option aktiviert ist, stellt die Clientanwendung dem Benutzer nur Zertifikate von Ausstellern zur Verfügung, denen AEM Formulare für die Vertrauenswürdigkeit konfiguriert sind (siehe Verwalten von Zertifikaten und Berechtigungen.) Wenn diese Option nicht ausgewählt ist, wird dem Benutzer eine Liste aller Zertifikate, die sich auf dem System des Benutzers befinden, vorgelegt.
 
 ## Dynamische Wasserzeichen konfigurieren {#configure-dynamic-watermarks}
 
@@ -822,7 +822,7 @@ Acrobat Reader DC Extensions für Microsoft Office ist ein Plug-In, das mit den 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `PolicyServer`. Fügen Sie einen `ClientVersionRules`-Knoten als unmittelbar untergeordneten Knoten des `PolicyServer`-Knotens hinzu, wenn noch kein solcher Knoten vorhanden ist.
 
-   ```java
+   ```xml
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -879,7 +879,7 @@ Acrobat Reader DC Extensions für Microsoft Office ist ein Plug-In, das mit den 
 
 In diesem Beispiel wird allen Windows Clients der Zugriff verweigert.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -897,7 +897,7 @@ In diesem Beispiel wird allen Windows Clients der Zugriff verweigert.
 
 In diesem Beispiel wird „Meine Anwendung Version 3.0“ und „Meine andere Anwendung Version 2.0“ der Zugriff verweigert. Dieselbe URL für die Verweigerungsinformationen wird unabhängig vom Grund für die Verweigerung verwendet.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -922,7 +922,7 @@ In diesem Beispiel wird „Meine Anwendung Version 3.0“ und „Meine andere An
 
 In diesem Beispiel werden alle Anforderungen von einer Microsoft PowerPoint 2007- oder Microsoft PowerPoint 2010-Installation von Acrobat Reader DC Extensions für Microsoft Office abgelehnt.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -955,7 +955,7 @@ Standardmäßig können Sie maximal fünf Elemente in einem Wasserzeichen angebe
 
    Der zweite Eintrag *max elements* ist die Maximalanzahl von Elementen für ein Wasserzeichen. Der Standardwert ist 5.
 
-   ```java
+   ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -975,7 +975,7 @@ Die folgenden Änderungen an der Datei „config.xml“ deaktivieren alle extern
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `DisplaySettings`.
 1. Um alle externen Verknüpfungen zu deaktivieren, fügen Sie im Knoten `DisplaySettings` den folgenden Eintrag hinzu und speichern Sie anschließend die Datei: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```java
+   ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -989,7 +989,7 @@ Die folgenden Änderungen in „config.xml“ ermöglichen die TLS-Unterstützun
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den Knoten `DisplaySettings`.
 1. Suchen Sie den folgenden Knoten: `<node name="ExternalUser">`
 
-   ```java
+   ```xml
    <node name="ExternalUser">
    ```
 
@@ -1005,7 +1005,7 @@ Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte 
 1. Exportieren Sie die Document Security-Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Öffnen Sie die Konfigurationsdatei in einem Editor und suchen Sie den folgenden Knoten: `<node name="DRM">`
 
-   ```java
+   ```xml
    <node name="DRM">
    ```
 
@@ -1015,7 +1015,7 @@ Nehmen Sie die folgenden Änderungen in „config.xml“ vor, um SOAP-Endpunkte 
 
 1. Um SOAP-Endpunkte für Document Security-Dokumente zu deaktivieren, ändern Sie den Wert des Attributs „value“ in **false**.
 
-   ```java
+   ```xml
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
