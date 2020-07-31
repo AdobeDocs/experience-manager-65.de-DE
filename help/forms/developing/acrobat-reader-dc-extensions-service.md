@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 2%
@@ -31,7 +31,7 @@ AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgefü
 
 >[!NOTE]
 >
->Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellere Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Serverbetriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus):Verwendungsrechte mithilfe der Java-API anwenden {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
@@ -143,7 +143,6 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mi
  } 
   
   
- 
 ```
 
 ## Quick Beginn (SOAP-Modus): Entfernen von Verwendungsrechten aus einem PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
