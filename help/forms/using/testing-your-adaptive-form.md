@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
+source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 10%
@@ -34,9 +34,9 @@ AEM Forms bieten ein Testframework, Calvin, um das Testen Ihrer adaptiven Formul
 
 Test Suites verfügen über eine Reihe von Testfällen. Sie können über mehrere Testsuiten verfügen. Es wird empfohlen, für jedes Formular eine separate Testsuite zu verwenden. So erstellen Sie eine Test-Suite:
 
-1. Melden Sie sich bei der Autoreninstanz von AEM Forms als Administrator an. Öffnen Sie CRXDE Lite. Sie können auf AEM Logo > **Tools** > **Allgemein** > **CRXDE Lite** tippen oder die URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in einem Browser öffnen, um CRXDE Lite zu öffnen.
+1. Melden Sie sich bei der Autoreninstanz von AEM Forms als Administrator an. Öffnen Sie CRXDE Lite. Sie können auf AEM Logo > **Tools** > **Allgemein** > **CRXDE Lite** tippen oder die URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in einem Browser öffnen, um die CRXDE Lite zu öffnen.
 
-1. Navigieren Sie zu /etc/clientlibs in CRXDE Lite. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **Erstellen** > **Knoten erstellen.** Geben Sie im Feld Name den Wert **WeRetailFormTestCases** ein. Wählen Sie den Typ **cq:ClientLibraryFolder** und klicken Sie auf **OK**. Es wird eine Node erstellt. Sie können jeden beliebigen Namen anstelle von WeRetailFormTestCases verwenden.
+1. Navigieren Sie in der CRXDE Lite zu /etc/clientlibs. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **Erstellen** > **Knoten erstellen.** Geben Sie im Feld Name den Wert **WeRetailFormTestCases** ein. Wählen Sie den Typ **cq:ClientLibraryFolder** und klicken Sie auf **OK**. Es wird eine Node erstellt. Sie können jeden beliebigen Namen anstelle von WeRetailFormTestCases verwenden.
 1. Add the following properties to the WeRetailFormTestCases node and tap **Save ALL**.
 
 <table>
@@ -101,7 +101,7 @@ Stellen Sie sicher, dass jede Eigenschaft wie unten dargestellt einem separaten 
 
    Mit dem obigen Code wird eine Testsuite mit dem Namen **We retail - Tests** erstellt.
 
-1. Öffnen Sie die AEM-Testbenutzeroberfläche (AEM > Werkzeuge > Vorgänge > Tests). Die Testsuite - **Wir für den Handel - Tests** - wird in der Benutzeroberfläche aufgelistet.
+1. Öffnen Sie AEM Benutzeroberfläche für Tests (AEM > Werkzeuge > Vorgänge > Tests). Die Testsuite - **Wir für den Handel - Tests** - wird in der Benutzeroberfläche aufgelistet.
 
    ![we-retail-test-suite](assets/we-retail-test-suite.png)
 
@@ -177,7 +177,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
 
 1. Erstellen Sie eine Datei `prefillTest.js`im Knoten **[!UICONTROL WeRetailFormTests]** . Hinzufügen Sie den unten stehenden Code in die Datei ein. Der Code erstellt einen Testfall. Der TestCase füllt alle Felder eines Formulars im Voraus aus und überprüft einige Felder, um sicherzustellen, dass korrekte Werte eingegeben werden.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
    
@@ -216,7 +216,7 @@ Eine Testsuite kann mehrere Testfälle aufweisen. Sie können alle Testfälle in
 * A checkmark icon indicates a passed test: ![save_icon](assets/save_icon.svg)
 * An &quot;X&quot; icon indicates a failed test: ![close-icon](assets/close-icon.svg)
 
-1. Navigieren Sie zu AEM-Symbol > **[!UICONTROL Werkzeuge]**> **[!UICONTROL Vorgänge]**> **[!UICONTROL Tests]**
+1. Navigieren Sie zu AEM Symbol > **[!UICONTROL Werkzeuge]**> **[!UICONTROL Vorgänge]**> **[!UICONTROL Tests]**
 1. So führen Sie alle Tests der Test Suite aus:
 
    1. Tippen Sie im Fenster Tests auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
