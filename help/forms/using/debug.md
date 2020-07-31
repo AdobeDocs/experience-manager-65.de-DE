@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 71%
 
 ---
 
@@ -65,12 +68,15 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
     Stellen Sie sicher, dass der Status der folgenden Pakete „aktiv“ ist:
 
    * scala-lang.bundle [osgi]
+
    (com.adobe.livecyclescala-lang.bundle)
 
    * Adobe XFA Forms Renderer
+
    (com.adobe.livecycle.adobe-lc-forms-core)
 
    * Adobe XFA Forms LC Connector
+
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
 ## Problem: Formular rendert ohne Stile {#problem-form-renders-without-styles}
@@ -134,7 +140,7 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 1. Überprüfen Sie den Inhalt von js.txt und stellen Sie sicher, dass die folgenden Einträge vorhanden sind.
 
-   ```
+   ```javascript
    ../Namespace.js
    I18N.js
    ../LogMessages.js
