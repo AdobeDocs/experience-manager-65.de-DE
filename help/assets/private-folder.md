@@ -1,25 +1,25 @@
 ---
-title: Erstellen Sie einen privaten Ordner in Adobe Experience Manager und geben Sie ihn frei.
-description: Erfahren Sie, wie Sie einen privaten Ordner in den Assets des Adobe Experience Managers erstellen und ihn für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen.
+title: Erstellen Sie einen privaten Ordner und geben Sie ihn frei [!DNL Adobe Experience Manager].
+description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 44%
+source-wordcount: '480'
+ht-degree: 37%
 
 ---
 
 
 # Freigeben privater Ordner {#private-folder-sharing}
 
-Sie können in der Benutzeroberfläche &quot;Adobe Experience Manager Assets&quot;einen privaten Ordner erstellen, der ausschließlich für Sie verfügbar ist. Sie können diesen privaten Ordner für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
+You can create a private folder in the [!DNL Adobe Experience Manager Assets] user interface that is available exclusively to you. Sie können diesen privaten Ordner für andere Benutzer freigeben und ihnen verschiedene Berechtigungen zuweisen. Je nach der zugewiesenen Berechtigungsstufe können Benutzer verschiedene Aufgaben mit dem Ordner ausführen, wie das Anzeigen oder Bearbeiten von Assets im Ordner.
 
 >[!NOTE]
 >
 >Der private Ordner hat mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;.
 
-1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
+1. In the [!DNL Assets] console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
    ![Asset-Ordner erstellen](assets/Create-folder.png)
 
@@ -49,9 +49,9 @@ Sie können in der Benutzeroberfläche &quot;Adobe Experience Manager Assets&quo
    >
    >Der private Ordner hat mindestens ein Mitglied mit der Rolle &quot;Inhaber&quot;. Daher kann der Administrator nicht alle Inhaber-Mitglieder aus einem privaten Ordner entfernen. Um jedoch vorhandene Inhaber (und den Administrator selbst) aus dem privaten Ordner zu entfernen, muss der Administrator einen anderen Benutzer als Inhaber hinzufügen.
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Je nach der zugewiesenen Rolle erhält der Benutzer einen Satz Berechtigungen für den privaten Ordner, wenn er sich bei  Assets anmeldet.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Depending on the role you assign, the user is assigned a set of privileges on your private folder when the user logs in to [!DNL Assets].
 1. Klicken Sie auf **[!UICONTROL OK]** zum Schließen der Bestätigungsmeldung.
-1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Melden Sie sich bei Assets mit den Anmeldedaten des Benutzers an, um die Benachrichtigungen anzuzeigen.
+1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Log in to [!DNL Assets] with the credentials of the user to view the notification.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
