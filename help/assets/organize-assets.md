@@ -3,9 +3,9 @@ title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '780'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht weitreichende Filtermöglichkeiten für Assets und hält dabei vollständig die korrekten Berechtigungen ein. Metadaten werden in den Metadaten in Digital Asset Management ausführlich behandelt.
 
-Experience Manager Assets unterstützt mehrere Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch organisieren, indem Sie Ordner verwenden oder sie auf ungeordnete, Ad-hoc-Weise organisieren, z. B. mithilfe von Tags. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
+[!DNL Experience Manager Assets] unterstützt mehrere Möglichkeiten zum Organisieren von Inhalten. Sie können sie hierarchisch organisieren, indem Sie Ordner verwenden oder sie auf ungeordnete, Ad-hoc-Weise organisieren, z. B. mithilfe von Tags. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
 
 ## Assets in Ordnern organisieren {#organize-using-folders}
 
@@ -26,7 +26,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
 
    * **Entwicklungsordner**: enthält digitale Assets, an denen Sie derzeit arbeiten.
    * **Clientordner**: enthält digitale Assets, die auf Clients oder Projektnamen basieren.
-   * **Primäre Ordner**: enthält digitale Originalelemente aus der Quelle.
+   * **Primär Ordner**: enthält digitale Originalelemente aus der Quelle.
    * **Ausgabeordner**: enthält Darstellungen und Kopien der digitalen Originalelemente.
    * **Dateigrößenordner**: enthält digitale Assets, die auf kleinen, mittleren oder großen Dateigrößen basieren.
    * **Staging-Ordner**: enthält digitale Assets, die live auf Ihrer Website veröffentlicht werden können.
@@ -35,23 +35,23 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
    * **Datumsbasierte Ordner**: enthält digitale Assets, die auf einem Erstellungsdatum oder einem Datum der letzten Änderung basieren.
 
 * Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern, sodass Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Profil weiterhin.
-* Wenn ein Asset bereits veröffentlicht wurde, dann verwenden Sie Experience Manager, um das Asset in einen anderen Ordner zu verschieben und erneut zu veröffentlichen, ist der ursprüngliche Speicherort des veröffentlichten Assets zusammen mit dem neu veröffentlichten Asset weiterhin verfügbar. The original published asset, however, is *lost* to Experience Manager and cannot be unpublished. Als Best Practice sollten Sie daher zunächst die Veröffentlichung eines Assets rückgängig machen und es dann in einen anderen Ordner verschieben.
+* If an asset is already published, then you use [!DNL Experience Manager] to move the asset to another folder, and re-publish from its new location, the original published asset location is still available, along with the newly re-published asset. The original published asset, however, is *lost* to [!DNL Experience Manager] and cannot be unpublished. Als Best Practice sollten Sie daher zunächst die Veröffentlichung eines Assets rückgängig machen und es dann in einen anderen Ordner verschieben.
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 
-Mithilfe von Tags als Metadaten können Sie Assets mühelos suchen, Sammlungen mit den Suchergebnissen erstellen, die Suchrangliste für einige Assets verbessern und AI-Algorithmen von Adobe Sensei zur Ermittlung von Assets nutzen.
+Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen mit den Suchergebnissen erstellen, die Suchrangliste für einige Assets verbessern und AI-Algorithmen von Adobe Sensei zur Ermittlung von Assets nutzen.
 
-Adobe Experience Manager Assets verwendet einen Selbstlernalgorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset in nur wenigen Klicks finden können. Beim intelligenten Tagging wird Adobe Sensei verwendet, unser Framework für künstliche Intelligenz und maschinelles Lernen, mit dem Standard- und unternehmensspezifische Tags erkannt und auf Bilder angewendet werden können. Intelligente Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden
+[!DNL Adobe Experience Manager Assets] verwendet einen Selbstlernalgorithmus, um hochgradig beschreibende Tags zu erstellen, mit denen Sie das richtige Asset in nur wenigen Klicks finden können. Beim intelligenten Tagging werden Adobe Sensei, unser künstliches Intelligenz- und maschinelles Lernen-Framework, eingesetzt, das sowohl Standard- als auch unternehmensspezifische Tags erkennen und auf Bilder anwenden kann. Intelligente Tags können auch Inhalte, einzelne Wörter oder Ausdrücke identifizieren und automatisch beschreibende Tags auf Assets anwenden
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
-* [Tags in Experience Manager](/help/sites-authoring/tags.md)
+* [Tags im Experience Manager](/help/sites-authoring/tags.md)
 * [Bearbeiten von Asset-Metadaten](meta-edit.md)
 * [Verbesserte intelligente Tags in Assets](enhanced-smart-tags.md)
 
 ## Als Sammlungen organisieren {#organize-as-collections}
 
-Mit Asset-Sammlungen in Experience Manager Assets können Sie die Erstellung, Bearbeitung und Freigabe von Assets zwischen Benutzern optimieren. Erstellen Sie verschiedene Arten von Sammlungen basierend auf der Art und Weise, wie Sie sie verwenden, einschließlich Sammlungen, die eine statische Referenz-Liste von Assets, Ordnern und Sammlungen enthalten, sowie Sammlungen, die Assets basierend auf Suchkriterien abrufen.  Sie können auch Sammlungen mit Assets von verschiedenen Orten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
+Mit den Asset-Sammlungen in [!DNL Experience Manager Assets]können Sie die Erstellung, Bearbeitung und Freigabe von Assets zwischen Benutzern optimieren. Erstellen Sie verschiedene Arten von Sammlungen basierend auf der Art und Weise, wie Sie sie verwenden, einschließlich Sammlungen, die eine statische Referenz-Liste von Assets, Ordnern und Sammlungen enthalten, sowie Sammlungen, die Assets basierend auf Suchkriterien abrufen.  Sie können auch Sammlungen mit Assets von verschiedenen Orten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
 
 For more information, see [manage collections](managing-collections-touch-ui.md)
 
@@ -62,13 +62,14 @@ Add back links to blog posts by marketing?
 
 ## Organisieren Sie Ihre Assets für die Verwendung von Profilen {#organize-to-use-profiles}
 
-Ein verarbeitendes Profil enthält Verarbeitungsbefehle für Assets, die für Assets gelten, die in vordefinierte  hochgeladen werden. Mit Profilen wird die Verarbeitung von Ordnerinhalten oder neu hochgeladenen Assets automatisiert. Sie können Profil nutzen, um Ihre Assets besser zu organisieren.
+Ein verarbeitendes Profil enthält [!DNL Assets] Verarbeitungsbefehle, die für Assets gelten, die in vordefinierte  hochgeladen werden. Mit Profilen wird die Verarbeitung von Ordnerinhalten oder neu hochgeladenen Assets automatisiert. Sie können Profil nutzen, um Ihre Assets besser zu organisieren.
 
 Durch die Standardisierung der Metadaten-Nutzung, Dateibenennung und Ordnerstruktur wird sichergestellt, dass Sie mit zunehmender Anzahl digitaler Assets verarbeitende Profil präziser und konsistenter auf Ordner anwenden können.
 
-Weitere Informationen zu den verschiedenen Profilen, die Sie zur Verarbeitung von Assets erstellen und verwalten können, finden Sie unter
+>[!MORELIKETHIS]
+>
+>* [Profile zum Verarbeiten von Metadaten, Bildern und Videos](processing-profiles.md).
+>* [Metadatenprofile](metadata-profiles.md).
+>* [Videoprofile](video-profiles.md).
+>* [Dynamic Media Image-Profil](image-profiles.md).
 
-* [Profile zur Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md)
-* [Metadatenprofile](metadata-profiles.md)
-* [Videoprofile](video-profiles.md)
-* [Profile für dynamische Medienbilder](image-profiles.md)
