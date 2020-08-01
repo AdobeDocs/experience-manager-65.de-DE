@@ -1,19 +1,19 @@
 ---
-title: Aktivitäts-Stream in der Timeline
+title: Aktivität von digitalen Assets in der Zeitschiene Ansicht von [!DNL Experience Manager].
 description: Dieser Artikel beschreibt, wie Sie Aktivitätsprotokolle für Assets in der Timeline anzeigen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 73%
+source-wordcount: '216'
+ht-degree: 72%
 
 ---
 
 
 # Aktivitäts-Stream in der Timeline {#activity-stream-in-timeline}
 
-Diese Funktion zeigt Aktivitätsprotokolle für Assets in der Timeline an. Wenn Sie einen der folgenden Asset-bezogenen Vorgänge in Adobe Experience Manager Assets ausführen, wird die Zeitschiene mit der Stream-Funktion der Aktivität aktualisiert, um die Aktivität widerzuspiegeln.
+Diese Funktion zeigt Aktivitätsprotokolle für Assets in der Timeline an. If you perform any of the following asset-related operations in [!DNL Adobe Experience Manager Assets], the activity stream feature updates the timeline to reflect the activity.
 
 Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 
@@ -26,7 +26,7 @@ Folgende Vorgänge werden im Aktivitäts-Stream protokolliert:
 * Ablehnen
 * Verschieben
 
-Die in der Timeline angezeigten Aktivitätsprotokolle werden aus dem Ordner `/var/audit/com.day.cq.dam/content/dam` in CRX abgerufen, in dem Protokolldateien gespeichert werden. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into Experience Manager via [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+Die in der Timeline angezeigten Aktivitätsprotokolle werden aus dem Ordner `/var/audit/com.day.cq.dam/content/dam` in CRX abgerufen, in dem Protokolldateien gespeichert werden. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into [!DNL Experience Manager] via [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
