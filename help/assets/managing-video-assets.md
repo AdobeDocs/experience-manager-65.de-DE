@@ -3,10 +3,10 @@ title: Verwalten Sie Video-Assets in [!DNL Adobe Experience Manager].
 description: Hochladen, Vorschau, Anmerkungen und Veröffentlichen von Video-Assets [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 39%
+source-wordcount: '814'
+ht-degree: 37%
 
 ---
 
@@ -19,9 +19,9 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn das Asset nicht im MP4-Format vorliegt, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videodarstellungen vom Typ OGG und MP4. Sie können die Darstellungen in der Benutzeroberfläche &quot;Assets&quot;Vorschau haben.
+[!DNL Adobe Experience Manager Assets] generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn das Asset nicht im MP4-Format vorliegt, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videodarstellungen vom Typ OGG und MP4. You can preview the renditions in the [!DNL Assets] user interface.
 
-1. Navigieren Sie im Ordner „Digitale Assets“ (oder dessen Unterordnern) zum Speicherort, an dem Sie digitale Assets hinzufügen möchten.
+1. Navigieren Sie im Ordner oder in den Unterordnern für digitale Assets zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternativ können Sie sie direkt in den Assets-Bereich ziehen. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
@@ -71,7 +71,7 @@ Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Webseite
 
 ## Hinzufügen von Anmerkungen zu Video-Assets {#annotate-video-assets}
 
-1. From the Assets console, click [!UICONTROL Edit] on the asset card to display the asset details page.
+1. From the [!DNL Assets] console, click [!UICONTROL Edit] on the asset card to display the asset details page.
 1. Um das Video abzuspielen, klicken Sie auf [!UICONTROL Vorschau].
 1. Um das Video zu kommentieren, klicken Sie auf die Schaltfläche **[!UICONTROL Kommentieren]**. Eine Anmerkung wird zur bestimmten Zeit (Frame) im Video hinzugefügt. Beim Hinzufügen von Anmerkungen können Sie auf der Arbeitsfläche zeichnen und einen Kommentar zur Zeichnung aufnehmen. Kommentare werden automatisch gespeichert.
 
