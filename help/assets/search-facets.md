@@ -1,19 +1,19 @@
 ---
 title: Suchfacetten.
-description: Erstellen, Ändern und Verwenden von Suchfacetten in Adobe Experience Manager.
+description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2515'
-ht-degree: 77%
+source-wordcount: '2488'
+ht-degree: 76%
 
 ---
 
 
 # Suchfacetten {#search-facets}
 
-Eine unternehmensweite Bereitstellung von Adobe Experience Manager Assets verfügt über die Kapazität, viele Assets zu speichern. Manchmal kann die Suche nach dem richtigen Asset mühsam und zeitaufwendig sein, wenn Sie nur die generischen Suchfunktionen von Experience Manager verwenden.
+An enterprise-wide deployment of [!DNL Adobe Experience Manager Assets] has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of [!DNL Experience Manager].
 
 Verwenden Sie Suchfacetten im Bedienfeld „Filter“, um Ihrer Suche ein höheres Maß an Granularität zu verleihen und die Suchfunktion effizienter und vielseitiger zu gestalten. Suchfacetten fügen mehrere Dimensionen (Prädikate) hinzu, mit denen Sie Ihre Suche genauer definieren können. Das Bedienfeld „Filter“ enthält einige standardmäßige Suchfacetten. Außerdem können Sie benutzerdefinierte Suchfacetten hinzufügen.
 
@@ -27,16 +27,16 @@ Die Suchfacetten, die im Bedienfeld „Filter“ angezeigt werden, werden im zug
 
 For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Mit dem Eigenschaftsprädikat können Sie nach Assets suchen, die mit einer einzelnen von Ihnen angegebenen Eigenschaft übereinstimmen. Mit dem Options-Prädikat können Sie nach Assets suchen, die mit einem oder mehreren Werten für eine bestimmte Eigenschaft übereinstimmen. Fügen Sie das Datumsbereichs-Prädikat hinzu, um nach Assets zu suchen, die innerhalb eines bestimmten Datumsbereichs erstellt wurden.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
-   ![Suchen und Auswählen der Asset-Admin-Suchschiene](assets/assets_admin_searchrail.png)
+   ![Suchen und wählen Sie die Assets oder die Admin-Suchleiste aus.](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
    >So verwenden Sie die Ordnersuchfunktion aus der vorkonfigurierten **Assets Admin Search Leiste** aus einer früheren Version:
    >
-   >1. Navigieren Sie zu */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRXDE.
+   >1. Navigieren Sie `/conf/global/settings/dam/search/facets/assets/jcr:content/items` in CRXDE.
    >1. Löschen Sie die **Typknoten** .
    >1. Kopieren Sie aus dem Pfad */libs/settings/dam/search/facets/assets/jcr:content/items* die Knoten **asset, directory, typeor, excludepaths** und **searchtype** in den in Schritt 1 erwähnten Pfad.
    >1. Speichern Sie die Änderungen.
@@ -73,7 +73,7 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Mit
 
 1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close.png) on the upper-right corner of the preview.
 1. Klicken Sie auf **[!UICONTROL Fertig]**, um die Einstellungen zu speichern.
-1. Navigieren Sie in der Assets-Benutzeroberfläche zum Suchbereich. Das Prädikat „Eigenschaft“ wird dem Bereich hinzugefügt.
+1. Navigieren Sie in der [!DNL Assets]-Benutzeroberfläche zum Suchbereich. Das Prädikat Eigenschaft wird dem Bereich hinzugefügt.
 1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. For example, enter `Adobe`. When you perform a search, assets with description matching `Adobe` are listed in the search results.
 
 ## Hinzufügen eines Options-Prädikats {#adding-an-options-predicate}
@@ -112,7 +112,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 >
 >Das Options-Prädikat ist ein benutzerdefinierter Wrapper, der Eigenschaftsprädikate umfasst, um das beschriebene Verhalten zu erreichen. Derzeit ist kein REST-Endpunkt verfügbar, um die Funktionalität nativ zu unterstützen.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Ziehen Sie auf der Seite **[!UICONTROL Suchformular bearbeiten]** den Eintrag **[!UICONTROL Options-Eigenschaft]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Namen für die Eigenschaft ein. Beispiel: Um Assets basierend auf dem Format zu suchen, geben Sie einen aussagekräftigen Namen als Beschriftung ein, wie **[!UICONTROL Dateityp]**. Geben Sie die Eigenschaft, anhand derer die Suche durchgeführt werden soll, im Eigenschaftsfeld an, wie beispielsweise `jcr:content/metadata/dc:format.`
@@ -132,22 +132,22 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 
 ## Hinzufügen einer Eigenschaft mit mehreren Werten {#adding-a-multi-value-property-predicate}
 
-Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Angenommen, Sie haben in Assets Bilder mehrerer Produkte, deren Metadaten die zum Produkt gehörende Artikelnummer enthalten. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
+Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Consider a scenario where you have images of multiple products in [!DNL Assets] and the metadata for each image includes an SKU number associated with the product. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. On the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, the click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Mehrwert-Eigenschaftsprädikat]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise `jcr:content/metadata/dc:value`. Sie können auch das Auswahl-Dialogfeld verwenden, um einen Knoten auszuwählen.
 1. Stellen Sie sicher, dass die **[!UICONTROL Trennzeichen-Unterstützung]** aktiviert ist. Geben Sie im Feld **[!UICONTROL Eingabe-Trennzeichen]** bestimmte Trennzeichen an, um einzelne Werte voneinander zu trennen. Standardmäßig sind Kommata als Trennzeichen angegeben. Sie können auch ein anderes Trennzeichen festlegen.
 1. Geben Sie eine optionale Beschreibung in das Feld **Beschreibung** ein und klicken Sie auf **[!UICONTROL Fertig]**.
-1. Navigieren Sie in der Assets-Benutzeroberfläche zum Bedienfeld „Filter“. Das Prädikat **[!UICONTROL Mehrwert-Eigenschaft]** wird zum Bereich hinzugefügt.
+1. Navigate to the Filters panel in the [!DNL Assets] user interface. Das Prädikat **[!UICONTROL Mehrwert-Eigenschaft]** wird zum Bereich hinzugefügt.
 1. Geben Sie im Feld „Mehrwert“ mehrere durch Trennzeichen getrennte Werte ein und führen Sie die Suche aus. Die Eigenschaft sucht für die eingegebenen Werte nach genau übereinstimmenden Texten.
 
 ## Hinzufügen von Tag-Prädikaten {#adding-a-tags-predicate}
 
-Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. Standardmäßig sucht Assets Assets anhand der von Ihnen angegebenen Tags nach einer oder mehreren Tags. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
+Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. By default, [!DNL Assets] searches assets for one or more tags matches based on the tags you specify. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Tag-Eigenschaft]** von der Registerkarte „Eigenschaft auswählen“ in den Hauptbereich.
 1. Geben Sie auf der Registerkarte „Einstellungen“ einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise *jcr:content/metadata/cq:tags*. Alternativ können Sie einen Knoten in CRXDE aus dem Auswahldialogfeld auswählen.
