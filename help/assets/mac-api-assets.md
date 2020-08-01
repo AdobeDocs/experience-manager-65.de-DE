@@ -1,26 +1,26 @@
 ---
-title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
+title: '[!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].'
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 91%
+source-wordcount: '1579'
+ht-degree: 87%
 
 ---
 
 
-# Assets-HTTP-API {#assets-http-api}
+# [!DNL Assets] HTTP-API {#assets-http-api}
 
 ## Übersicht {#overview}
 
-Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
+The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
 1. Öffnen Sie das Dokument zum API-Dienst unter `https://[hostname]:[port]/api.json`.
-1. Folgen Sie dem Link zum Assets-Dienst, der zu `https://[hostname]:[server]/api/assets.json` führt.
+1. Follow the [!DNL Assets] service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwortcode für weitere Analysen oder Aktionen.
 
@@ -34,7 +34,7 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 
 ## Datenmodell {#data-model}
 
-Die Assets-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets).
+The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets).
 
 Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/assets-api-content-fragments.md#content-fragments).
 
@@ -75,7 +75,7 @@ In [!DNL Experience Manager] enthält ein Ordner die folgenden Komponenten:
 * Eigenschaften.
 * Links.
 
-Die Assets-HTTP-API bietet die folgenden Funktionen:
+The [!DNL Assets] HTTP API includes the following features:
 
 * [Abrufen von Ordnerauflistungen](#retrieve-a-folder-listing).
 * [Erstellen eines Ordners](#create-a-folder).
