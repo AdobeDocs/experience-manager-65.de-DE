@@ -3,17 +3,17 @@ title: XMP-Writeback in Ausgabeformaten
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 56%
+source-wordcount: '791'
+ht-degree: 57%
 
 ---
 
 
 # XMP-Writeback in Ausgabeformaten {#xmp-writeback-to-renditions}
 
-The XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates asset metadata changes to the renditions of the asset. When you change the metadata for an asset from within [!DNL Experience Manager Assets] or while uploading the asset, changes are initially stored within the asset node in CRXDe. Die XMP-Funktion zum Speichern von Schriftstücken propagiert die Änderungen der Metadaten an alle oder bestimmte Darstellungen des Assets.
+The XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates asset metadata changes to the renditions of the asset. When you change the metadata for an asset from within [!DNL Experience Manager Assets] or while uploading the asset, changes are initially stored within the asset node in CRXDe. Die XMP Funktion zum Schreiben von Dateien leitet die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiter.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
@@ -25,7 +25,7 @@ In this case, the [!DNL Experience Manager Assets] saves the changes to the **[!
 
 However, [!DNL Experience Manager Assets] does not automatically propagate any metadata changes to the renditions of an asset.
 
-Mit der XMP-Funktion &quot;Schriftarterfassung&quot;können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
+Mit der Funktion zum XMP Schriftwechsel können Sie die Metadatenänderungen an alle oder bestimmte Darstellungen des Assets weiterleiten. Die Änderungen werden allerdings nicht unter dem Metadatenknoten in der Asset-Hierarchie gespeichert. Stattdessen werden die Änderungen mit dieser Funktion in die Binärdateien für die Ausgabeformate eingebettet.
 
 ## Aktivieren von XMP-Writeback {#enabling-xmp-writeback}
 
@@ -33,7 +33,7 @@ Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propa
 
 1. Um Configuration Manager zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM Rendition Maker]**.
-1. Wählen Sie die Option **[!UICONTROL Propagate XMP[!UICONTROL **, und speichern Sie die Änderungen.
+1. Wählen Sie die Option **[!UICONTROL Propagate XMP[!UICONTROL *** und speichern Sie die Änderungen.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
@@ -64,13 +64,13 @@ Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png�
 >
 >For XMP writeback issues in 64 bit Linux, see [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->Informationen zu den unterstützten Plattformen finden Sie unter [XMP-Metadaten - Rückgabevoraussetzungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>Informationen zu den unterstützten Plattformen finden Sie unter [XMP Voraussetzungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)für die Rückgabe von Metadaten.
 
 ## Filtern von XMP-Metadaten {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] unterstützt das blockierungsliste- und zulassungsliste-Filtern von Eigenschaften/Knoten für XMP-Metadaten, die aus Asset-Binärdateien gelesen und in JCR gespeichert werden, wenn Assets aufgenommen werden.
+[!DNL Experience Manager Assets] unterstützt das Filtern von Eigenschaften/Knoten in Blockierungsliste und Zulassungsliste für XMP Metadaten, die aus Asset-Binärdateien gelesen und bei der Erfassung von Assets in JCR gespeichert werden.
 
-Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn beim Filtern mit einer blockierungsliste eine große Anzahl von Assets mit zahlreichen XMP-Metadaten importiert werden kann, kann die AEM-Bereitstellung auf Stabilitätsprobleme stoßen, z. B. verstopfte Beobachtungswarteschlangen.
+Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the [!DNL Experience Manager] deployment can encounter stability issues, for example clogged observation queues.
 
 Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem behoben, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden andere/unbekannte XMP-Eigenschaften ignoriert. Aus Gründen der Abwärtskompatibilität können Sie einige dieser Eigenschaften dem Filter hinzufügen, der eine Blockierungsliste verwendet.
 
