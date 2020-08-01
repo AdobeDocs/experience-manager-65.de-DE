@@ -1,23 +1,23 @@
 ---
-title: Assets mit Aktivitäten-Stream integrieren
-description: Beschreibt die Aufzeichnungsfunktionen von Experience Manager und die Konfiguration, um bestimmte Ereignis aufzuzeichnen.
+title: In Aktivität-Stream [!DNL Assets] integrieren.
+description: Describes the recording capabilities of [!DNL Experience Manager] and how to configure it to record specific events.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 51%
+source-wordcount: '267'
+ht-degree: 53%
 
 ---
 
 
-# Integrate Assets with activity stream {#integrating-assets-with-activity-stream}
+# Integration [!DNL Assets] in Aktivität-Stream {#integrating-assets-with-activity-stream}
 
-Adobe Experience Manager Assets-Benutzer führen zahlreiche Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. In diesem Abschnitt werden die Aufzeichnungsfunktionen von Experience Manager und die Konfiguration von Experience Manager zur Aufzeichnung bestimmter Ereignis beschrieben.
+[!DNL Adobe Experience Manager Assets] Benutzer führen zahlreiche Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. This section describes the recording capabilities of [!DNL Experience Manager] and how to configure [!DNL Experience Manager] in order to record specific events.
 
 ## Performance considerations and default behavior {#performance-considerations-and-default-behavior}
 
-Diese Integration kann CPU- und Speicherplatz-intensiv sein, beispielsweise beim Massenimport. Aus diesen Gründen ist die Asset-Integration mit dem Aktivität Stream standardmäßig deaktiviert.
+Diese Integration kann CPU- und Speicherplatz-intensiv sein, beispielsweise beim Massenimport. For these reasons the [!DNL Assets] integration with the Activity Stream is disabled by default.
 
 ## Supported action events {#supported-action-events}
 
@@ -39,7 +39,7 @@ Die folgenden Ereignisse können zur Aufzeichnung konfiguriert werden:
 * Unter-Asset aktualisiert (SUBASSET_UPDATED)
 * Unter-Asset entfernt (SUBASSET_REMOVED)
 
-## Assets-Ereignis konfigurieren - Aufzeichnung {#configuring-aem-assets-events-recording}
+## Aufzeichnung von [!DNL Assets] Ereignissen konfigurieren {#configuring-aem-assets-events-recording}
 
 The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the Assets Event Recorder tuning. Gehen Sie wie folgt vor, um den Asset-Ereignis-Recorder zu konfigurieren:
 
