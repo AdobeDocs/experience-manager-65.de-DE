@@ -3,23 +3,23 @@ title: Ordner-Metadatenschema
 description: Erfahren Sie, wie Sie Metadaten-Schema für Asset-Ordner in Adobe Experience Manager Assets erstellen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 71%
+source-wordcount: '1016'
+ht-degree: 74%
 
 ---
 
 
 # Ordner-Metadatenschema {#folder-metadata-schema}
 
-Mit Adobe Experience Manager Assets können Sie Metadaten-Schema für Asset-Ordner erstellen, die das Layout und die Metadaten definieren, die auf den Seiten mit den Ordnereigenschaften angezeigt werden.
+[!DNL Adobe Experience Manager Assets]Mit können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Ordnereigenschaften-Seiten angezeigten Layouts und Metadaten definieren. 
 
 ## Hinzufügen von Ordner-Metadatenschema-Formularen     {#add-a-folder-metadata-schema-form}
 
 Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata für Ordner zu erstellen und zu bearbeiten.
 
-1. Wechseln Sie in der Benutzeroberfläche von Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordnermetadaten-Schema]**.
+1. Wechseln Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordnermetadaten-Schema]**.
 1. On the [!UICONTROL Folder Metadata Schema Forms] page, click **[!UICONTROL Create]**.
 1. Specify a name for the form, and click **[!UICONTROL Create]**. The new schema form is listed in the [!UICONTROL Schema Forms] page.
 
@@ -108,7 +108,7 @@ Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in d
 
 ### Zuweisen eines Schemas über die Seite „Ordner-Metadatenschema“     {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Wechseln Sie in der Benutzeroberfläche von Experience Manager zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordnermetadaten-Schema]**.
+1. Wechseln Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordnermetadaten-Schema]**.
 1. Wählen Sie auf der Seite „Ordner-Metadatenschema-Formulare“ das Schemaformular aus, das Sie auf einen Ordner anwenden möchten.
 1. From the toolbar, click **[!UICONTROL Apply to Folder(s)]**.
 
