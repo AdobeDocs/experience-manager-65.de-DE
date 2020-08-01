@@ -3,10 +3,10 @@ title: Verarbeiten Sie Assets, um Geschäftsprozesse durchzuführen, Prüfungen 
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 29%
+source-wordcount: '985'
+ht-degree: 26%
 
 ---
 
@@ -66,7 +66,7 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
 ## Anwenden eines Workflows auf mehrere Assets {#applying-a-workflow-to-multiple-assets}
 
-1. Navigieren Sie in der Assets-Konsole zum Verzeichnis der Assets, für die Sie einen Workflow starten möchten, und wählen Sie die Assets aus. Wählen Sie im Menü die Option **[!UICONTROL Zeitschiene]** aus, um die Zeitschiene anzuzeigen.
+1. From the [!DNL Assets] console, navigate to the location of the assets for which you want to start a workflow, and select the assets. Wählen Sie im Menü die Option **[!UICONTROL Zeitschiene]** aus, um die Zeitschiene anzuzeigen.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
