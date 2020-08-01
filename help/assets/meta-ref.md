@@ -3,10 +3,10 @@ title: Metadaten-Schemareferenz
 description: 'Erfahren Sie mehr über die Standard-Konventionen für das Beschreiben von Asset-Metadaten, darunter Dublin Core, IPTC und weitere Metadatenschemen. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 89%
+source-wordcount: '390'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Die folgende Referenz enthält Informationen zu bestimmten Metadatenschemata (in
 
 ## Dublin Core {#dublin-core}
 
-Dublin Core-Metadaten bieten ein standardisiertes Set aus Konventionen für die Beschreibung von Assets, um die Suche nach ihnen zu erleichtern. In  Assets beschreibt Dublin Core digitale Assets wie Videos, Audio, Bilder und Dokumente.
+Dublin Core-Metadaten bieten ein standardisiertes Set aus Konventionen für die Beschreibung von Assets, um die Suche nach ihnen zu erleichtern. In [!DNL Assets], the Dublin Core describes digital assets including video, sound, images, and documents.
 
 Das einfache Dublin Core Metadata Element Set (DCMES) enthält 15 Metadatenelemente, die in der folgenden Tabelle aufgeführt werden. Jedes Dublin Core-Element ist optional und kann wiederholt werden. Sie können Dublin Core-Metadateninformationen genauso wie solche für medientypspezifische Metadaten hinzufügen oder löschen.
 
@@ -30,7 +30,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
 | creator | Die Personen oder das Unternehmen, die dafür verantwortlich sind, den Inhalt zu erstellen. |
 | date | Datum oder Zeitraum, mit dem das Asset verknüpft ist. |
 | description | Weitere Informationen zum Asset. |
-| format | Das Dateiformat, das physische Medium oder die Dimensionen des Assets. Experience Manager uses `dc:format` to denote the MIME type of the asset. |
+| format | Das Dateiformat, das physische Medium oder die Dimensionen des Assets. [!DNL Experience Manager] verwendet `dc:format`, um den MIME-Typ des Assets zu kennzeichnen. |
 | identifier | Eine eindeutige Referenz zum Asset. |
 | language | Die Sprache des Assets (z. B. „en“ für Englisch). |
 | publisher | Die Personen oder das Unternehmen, die dafür verantwortlich sind, das Asset verfügbar zu machen. |
