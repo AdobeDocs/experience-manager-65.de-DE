@@ -1,19 +1,19 @@
 ---
-title: Verwalten Sie Metadaten vieler Assets und Sammlungen in Adobe Enterprise Manager.
+title: Verwalten Sie Metadaten vieler Assets und Sammlungen in [!DNL Adobe Enterprise Manager].
 description: Bearbeiten Sie die Metadaten vieler Assets und Sammlungen gleichzeitig, um häufig vorkommende Metadatenänderungen schnell zu übertragen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 63%
+source-wordcount: '487'
+ht-degree: 65%
 
 ---
 
 
 # Verwalten von Assets und Sammlungen {#managing-multiple-assets-and-collections}
 
-Mit Adobe Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, um häufig vorkommende Änderungen an Metadaten schnell und stapelweise an Assets weitergeben zu können. Sie können die Metadaten für mehrere Sammlungen zusammen bearbeiten.
+[!DNL Adobe Enterprise Manager Assets]Mit können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, sodass Sie allgemeine Metadatenänderungen an Assets zusammen vornehmen können. Sie können die Metadaten für mehrere Sammlungen zusammen bearbeiten.
 
 Verwenden Sie die Seite „Eigenschaften“, um Metadatenänderungen für mehrere Assets oder Sammlungen durchzuführen:
 
@@ -28,7 +28,7 @@ Verwenden Sie den Schema-Editor, um die Seite mit den Metadateneigenschaften, ei
 
 ## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
 
-1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort der Assets, die Sie bearbeiten möchten.
+1. In the [!DNL Assets] user interface, navigate to the location of the assets you want to edit.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
 1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
