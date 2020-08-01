@@ -3,9 +3,9 @@ title: Hinzufügen von Wasserzeichen zu digitalen Assets.
 description: Erfahren Sie, wie Sie die Funktion verwenden können, um Assets digitale Wasserzeichen hinzuzufügen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5035d3457187f4d5fe5c2af255a1a886df7291b4
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 35%
 
 ---
@@ -39,4 +39,4 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. From the [!DNL Assets] user interface, upload a sample asset. Das Wasserzeichen wird mit den Werten für Schriftgröße, Farbe usw. an der in den obigen Schritten konfigurierten Position angezeigt.
 
-Um PDF-Dokumente programmgesteuert oder mit dynamischen Informationen zu versehen, sollten Sie das [AEM Dokument Services](/help/forms/using/overview-aem-document-services.md) -Angebot in Erwägung ziehen.
+Um PDF-Dokumente programmgesteuert oder mit dynamischen Informationen zu versehen, sollten Sie das [Experience Manager Dokument Services](/help/forms/using/overview-aem-document-services.md) -Angebot in Betracht ziehen.
