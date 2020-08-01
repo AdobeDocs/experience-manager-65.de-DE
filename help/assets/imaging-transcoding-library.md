@@ -3,10 +3,10 @@ title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 36%
+source-wordcount: '992'
+ht-degree: 38%
 
 ---
 
@@ -55,7 +55,7 @@ Die Imaging Transcoding Library bietet unter anderem folgende Befehlszeilenargum
 
 You can configure the following options for the `-resize` parameter:
 
-* `X`: Funktioniert ähnlich wie Experience Manager. Beispiel: -resize 319.
+* `X`: Funktioniert ähnlich wie [!DNL Experience Manager]. Beispiel: -resize 319.
 * `WxH`: Das Seitenverhältnis wird beispielsweise nicht beibehalten `-resize 319x319`.
 * `Wx`: Legt die Breite fest und berechnet die Höhe mit Beibehaltung des Seitenverhältnisses. Beispiel `-resize 319x`.
 * `xH`: Legt die Höhe fest und berechnet die Breite mit Beibehaltung des Seitenverhältnisses. Beispiel `-resize x319`.
@@ -72,9 +72,9 @@ Um die ITL-Verarbeitung zu konfigurieren, erstellen Sie eine Konfigurationsdatei
 
 ### Konfigurationsdatei für extrahiertes Bundle erstellen {#create-conf-file}
 
-Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibliotheken mithilfe der folgenden Schritte anzugeben. Sie benötigen Administrator- oder Root-Berechtigungen.
+Um die Bibliothek zu konfigurieren, erstellen Sie eine CONF-Datei, um die Bibliotheken mit den folgenden Schritten anzuzeigen. Sie benötigen Administrator- oder Root-Berechtigungen.
 
-1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Das Paket ist mit Experience Manager 6.5 kompatibel.
+1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Das Paket ist mit [!DNL Experience Manager] 6.5 kompatibel.
 
 1. Um eine Bündel-ID für `com.day.cq.dam.cq-dam-switchengine`zu ermitteln, melden Sie sich bei der Web-Konsole an und klicken Sie auf **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Alternativ können Sie zum Öffnen der Bündelkonsole auf die `https://[aem_server:[port]/system/console/bundles/` URL zugreifen. Suchen Sie nach `com.day.cq.dam.cq-dam-switchengine` Bundle und dessen ID.
 
@@ -92,7 +92,7 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 1. Führen Sie `ldconfig` den Befehl aus, um die erforderlichen Links und den Cache zu erstellen.
 
-1. Bearbeiten Sie die `.bash_profile` Datei in dem Konto, das zum Beginn von Experience Manager verwendet wird. Hinzufügen `LD_LIBRARY_PATH` durch Hinzufügen folgender Elemente:
+1. Bearbeiten Sie die Datei in dem Konto, das zum Beginn verwendet wird [!DNL Experience Manager]`.bash_profile` . Hinzufügen `LD_LIBRARY_PATH` durch Hinzufügen folgender Elemente:
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -105,7 +105,7 @@ Um die Bibliothek zu konfigurieren, erstellen Sie eine .conf-Datei, um die Bibli
 
 Aktualisieren Sie den Arbeitsablauf [!UICONTROL DAM Update Asset] , um die Bibliothek zur Bildverarbeitung zu verwenden.
 
-1. Wählen Sie in der Benutzeroberfläche von Experience Manager **[!UICONTROL Werkzeuge]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
+1. Wählen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Werkzeuge]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
@@ -137,7 +137,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
 1. Sync the updated [!UICONTROL DAM Update Asset] workflow model. Speichern Sie den Workflow.
 
-Überprüfen Sie die Konfiguration, laden Sie ein TIFF-Bild hoch und überwachen Sie die Datei &quot;error.log&quot;. Sie werden `INFO` Nachrichten mit Erwähnungen von bemerken `SwitchEngineHandlingProcess execute: executing command line`. In den Protokollen werden die generierten Darstellungen aufgeführt. Nach Abschluss des Workflows können Sie die neuen Darstellungen in Experience Manager Ansicht haben.
+Überprüfen Sie die Konfiguration, laden Sie ein TIFF-Bild hoch und überwachen Sie die Datei &quot;error.log&quot;. Sie werden `INFO` Nachrichten mit Erwähnungen von bemerken `SwitchEngineHandlingProcess execute: executing command line`. In den Protokollen werden die generierten Darstellungen aufgeführt. Nach Abschluss des Workflows können Sie die neuen Darstellungen in [!DNL Experience Manager]bearbeiten.
 
 >[!MORELIKETHIS]
 >
