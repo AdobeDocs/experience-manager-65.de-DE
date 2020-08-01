@@ -1,21 +1,21 @@
 ---
-title: Adobe Experience Manager-Assets anpassen und erweitern
+title: Anpassen und Erweitern [!DNL Adobe Experience Manager Assets].
 description: Informieren Sie sich, wie Sie die Asset-Freigabe und den Asset-Editor anpassen und erweitern können, um Benutzern eine maßgeschneiderte Oberfläche und passende Funktionen zur Verfügung zu stellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 55%
+source-wordcount: '253'
+ht-degree: 57%
 
 ---
 
 
-# Anpassen und Erweitern von Assets {#customizing-and-extending-assets}
+# Anpassen und Erweitern [!DNL Assets] {#customizing-and-extending-assets}
 
-Der Asset-Editor ist der Hauptzugriff, den Benutzer einer Adobe Enterprise Manager-Website verwenden, um die digitalen Assets in Ihrem Repository zu finden, zu Ansicht und zu manipulieren.
+Der Asset-Editor ist der Hauptzugriff, den Benutzer einer Adobe Enterprise Manager-Website zum Suchen, Ansichten und Manipulieren der digitalen Assets in Ihrem Repository verwenden.
 
-Als Experience Manager-Entwickler können Sie den Asset-Editor auf verschiedene Weise anpassen und erweitern und Benutzern eine speziell angepasste Oberfläche und eine Reihe von Funktionen bieten.
+As an [!DNL Experience Manager] developer, you can customize and extend the Asset Editor in a number of ways, presenting users with a specifically tailored interface and set of functionality.
 
 Die folgenden Funktionen können angepasst bzw. verbessert werden:
 
@@ -36,6 +36,6 @@ Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 
 ## Darstellungen anpassen {#customizing-renditions}
 
-In der Experience Manager Assets-Terminologie ist eine Darstellung das Formular, in dem ein Asset angezeigt wird. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
+In [!DNL Experience Manager Assets] terminology a rendition is the form in which an asset is presented. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
 
 Die Ausgabeformate, in denen ein bestimmtes Asset verfügbar ist, können angepasst werden und es können neue Ausgaben erstellt haben.
