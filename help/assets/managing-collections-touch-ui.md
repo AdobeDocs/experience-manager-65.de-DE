@@ -4,17 +4,17 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 65%
+source-wordcount: '2178'
+ht-degree: 63%
 
 ---
 
 
 # Verwalten von Sammlungen {#managing-collections}
 
-Eine Sammlung ist ein Satz von Assets innerhalb von Adobe Experience Manager Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Der Satz kann eine statische Sammlung oder eine dynamische Sammlung sein, die auf Suchergebnissen basiert.
+A collection is a set of assets within [!DNL Adobe Experience Manager Assets]. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Der Satz kann eine statische Sammlung oder eine dynamische Sammlung sein, die auf Suchergebnissen basiert.
 
 Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können Sammlungen für mehrere Benutzer mit unterschiedlichen Berechtigungsstufen, wie Anzeigen, Bearbeiten usw., freigeben.
 
@@ -28,7 +28,7 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 
 ## Aufrufen der Konsole „Sammlungen“ {#navigating-the-collections-console}
 
-Um die **[!UICONTROL Sammlungen]** zu öffnen, wechseln Sie in der Benutzeroberfläche &quot;Experience Manager&quot;zu &quot; **[!UICONTROL Assets]** &quot;> &quot; **[!UICONTROL Sammlungen]**&quot;.
+Um die **[!UICONTROL Sammlungen]** zu öffnen, gehen Sie auf der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**.
 
 ## Erstellen von Sammlungen {#creating-a-collection}
 
@@ -52,15 +52,15 @@ Sie können eine Sammlung mit statischen Referenzen erstellen, wie eine Sammlung
 
    >[!NOTE]
    >
-   >Mit Experience Manager Assets können Sie Prüfungsaufgaben für eine Sammlung auf ähnliche Weise wie Prüfungsaufgaben für einen Assets-Ordner erstellen.
+   >[!DNL Experience Manager Assets]Mit können Sie Prüfungsaufgaben für eine Sammlung auf ähnliche Weise wie Prüfungsaufgaben für einen Assets-Ordner erstellen.
 
-   Um Assets zur Sammlung hinzuzufügen, navigieren Sie zur Assets-Benutzeroberfläche. Weitere Informationen finden Sie unter [Hinzufügen von Assets zu einer Sammlung](#adding-assets-to-a-collection).
+   To add assets to the collection, navigate to the [!DNL Assets] user interface. Weitere Informationen finden Sie unter [Hinzufügen von Assets zu einer Sammlung](#adding-assets-to-a-collection).
 
 ### Erstellen von Sammlungen mithilfe der Dropzone {#create-collections-using-dropzone}
 
-Sie können Assets aus der Assets-Benutzeroberfläche ziehen und in einer Sammlung ablegen. Sie können auch eine Kopie einer Sammlung erstellen und Assets dort hinziehen.
+You can drag assets from the [!DNL Assets] user interface to a collection. Sie können auch eine Kopie einer Sammlung erstellen und Assets dort hinziehen.
 
-1. Wählen Sie in der Assets-Benutzeroberfläche die Assets aus, die Sie zu einer Sammlung hinzufügen möchten.
+1. From the [!DNL Assets] user interface, select the assets you want to add to a collection.
 1. Ziehen Sie die Assets in den Bereich **[!UICONTROL In Sammlung ablegen]**. Alternativ können Sie in der Symbolleiste auf &quot; **[!UICONTROL Zur Sammlung]** &quot;klicken.
 
    ![drop_in_collection](assets/drop_in_collection.png)
@@ -78,7 +78,7 @@ Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie
 
 Gehen Sie wie folgt vor, um eine intelligente Sammlung zu erstellen:
 
-1. Navigieren Sie zur Benutzeroberfläche &quot;Assets&quot;und klicken Sie auf Suchen.
+1. Navigieren Sie zur [!DNL Assets] Benutzeroberfläche und klicken Sie auf Suchen.
 
 1. Geben Sie den Suchbegriff in das Feld Omniture Search ein und drücken Sie `Enter`. Öffnen Sie das Bedienfeld &quot;Filter&quot;und wenden Sie einen Suchfilter an.
 
@@ -108,7 +108,7 @@ Gehen Sie wie folgt vor, um eine intelligente Sammlung zu erstellen:
 
 Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen füllen Assets anhand einer Suchabfrage. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
 
-1. Wählen Sie in der Benutzeroberfläche &quot;Assets&quot;das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL In Sammlung]** ![hinzufügen](assets/do-not-localize/add-to-collection.png) .
+1. Wählen Sie in der Benutzeroberfläche &quot; [!DNL A]Assets&quot;das Asset aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Zu Sammlung]** hinzufügen&quot; ![](assets/do-not-localize/add-to-collection.png) .
 Alternativ können Sie das Asset in den Bereich &quot;In Sammlung **[!UICONTROL ablegen]** &quot;auf der Benutzeroberfläche ziehen. Hinzufügen die Assets, wenn die Beschriftung des Bereichs in **[!UICONTROL Ablegen in Hinzufügen]** geändert wird.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** die Sammlung aus, der Sie das Asset hinzufügen möchten.
@@ -119,9 +119,9 @@ Alternativ können Sie das Asset in den Bereich &quot;In Sammlung **[!UICONTROL 
 
 Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt, Sie können den Inhalt ändern, indem Sie die Suchparameter der [gespeicherten Suche](#saved-searches) ändern.
 
-1. Klicken Sie in der Benutzeroberfläche &quot;Assets&quot;in der Symbolleiste auf die ![Suchoption](assets/do-not-localize/search_icon.png) .
+1. Klicken Sie in der [!DNL Assets] Benutzeroberfläche in der Symbolleiste auf die ![Suchoption](assets/do-not-localize/search_icon.png) .
 1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die Eingabetaste.
-1. Öffnen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;das Bedienfeld &quot;Filter&quot;.
+1. Öffnen Sie auf der [!DNL Experience Manager] Benutzeroberfläche das Bedienfeld &quot;Filter&quot;.
 1. Wählen Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** die Smart-Sammlung aus, die Sie ändern möchten. Im Suchbereich werden die für die gespeicherte Suche konfigurierten Filter angezeigt.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -156,7 +156,7 @@ Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit d
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. Experience Manager aktualisiert die Metadaten der Sammlungen, die Sie entfernen, nicht.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. In der Sammlungsliste sind alle Sammlungen standardmäßig ausgewählt. [!DNL Experience Manager] aktualisiert nicht die Metadaten der Sammlungen, die Sie entfernen.
    >* Aktivieren Sie über der Sammlungsliste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Sammlungen und dem Deaktivieren der Liste umzuschalten.
 
 
@@ -175,15 +175,15 @@ Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Meta
 
 ## Suchen nach Sammlungen {#searching-collections}
 
-Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie mit Suchbegriffen im Feld &quot;Omniture&quot;suchen, sucht Assets nach Sammlungsnamen, Metadaten und den Tags, die den Sammlungen hinzugefügt wurden.
+Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. When you search with keywords in the Omnisearch box, [!DNL Assets] searches for collection names, metadata, and the tags added to the collections.
 
-Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
+Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. [!DNL Assets] oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
 ## Search within collections {#searching-within-collections}
 
 Klicken Sie in der Sammlungskonsole auf eine Sammlung, um sie zu öffnen.
 
-Innerhalb einer Sammlung ist die Suche nach Experience Managern auf Assets (und deren Tags und Metadaten) innerhalb der von Ihnen angezeigten Sammlung beschränkt. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
+Within a collection, [!DNL Experience Manager] search is restricted to assets (and their tags and metadata) within the collection that you are viewing. Wenn Sie in einem Ordner suchen, werden alle passenden Assets und untergeordneten Ordner innerhalb des aktuellen Ordners zurückgegeben. Wenn Sie in einer Sammlung suchen, werden nur übereinstimmende Assets, Ordner und andere Sammlungen zurückgegeben, die direkt zur Sammlung gehören.
 
 ## Bearbeiten von Sammlungseinstellungen {#editing-collection-settings}
 
@@ -232,13 +232,13 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
 >
 >Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
 
-## Gespeicherte Suchvorgänge     {#saved-searches}
+## Gespeicherte Suchvorgänge       {#saved-searches}
 
-In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Regeln, Suchkriterien oder benutzerdefinierten Suchfacetten durchsuchen oder filtern. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
+In the [!DNL Assets] user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. Wenn Sie diese Einstellungen als **[!UICONTROL Gespeicherte Suchen]** speichern, können Sie später in der Liste **[!UICONTROL Gespeicherte Suchen]** im Filterbereich darauf zugreifen. Beim Erstellen einer gespeicherten Suche wird auch eine Smart-Sammlung erstellt.
 
 ![saved_searches_Liste](assets/saved_searches_list.png)
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. The [!UICONTROL Saved Searches] query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. Die Suchvorgänge, die Sie speichern können, und die gespeicherten Suchvorgänge, die in der Liste angezeigt werden, sind unbegrenzt.
+Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. The [!UICONTROL Saved Searches] query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt. 
 
 >[!NOTE]
 >
@@ -248,9 +248,9 @@ Gespeicherte Suchen werden genauso wie Smart-Sammlungen bearbeitet. For details,
 
 Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
-1. Klicken Sie in der Benutzeroberfläche &quot;Assets&quot;auf die ![Suchoption](assets/do-not-localize/search_icon.png).
+1. Klicken Sie in der [!DNL Assets] Benutzeroberfläche auf ![Suchoption](assets/do-not-localize/search_icon.png).
 1. Drücken Sie mit dem Cursor im Feld Omniture die Eingabetaste.
-1. Öffnen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;das Bedienfeld &quot;Filter&quot;.
+1. Öffnen Sie auf der [!DNL Experience Manager] Benutzeroberfläche das Bedienfeld &quot;Filter&quot;.
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
