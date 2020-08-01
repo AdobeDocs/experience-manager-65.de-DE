@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Experience Manager 6.5 Asset-Benutzerhandbuch
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 56%
+source-wordcount: '630'
+ht-degree: 53%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 56%
 # Experience Manager 6.5 Asset-Benutzerhandbuch {#assets}
 
 + [[!DNL Assets] Benutzerhandbuch](home.md)
-+ [Versionshinweise zu AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [Experience Manager 6.5 Versionshinweise zu Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
-+ AEM Assets verwenden {#using}
-   + [Erfahrung mit AEM Assets-Startseiten](assets-home-page.md)
-   + [Suchen nach Assets in AEM      ](search-assets.md)
++ Experience Manager-Assets verwenden {#using}
+   + [Startseite der Assets](assets-home-page.md)
+   + [Suchen nach digitalen Assets](search-assets.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
-   + [Verwenden von [!DNL Adobe Stock] Assets in AEM Assets](aem-assets-adobe-stock.md)
+   + [Assets [!DNL Adobe Stock] verwenden](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Aktivitäts-Stream in der Timeline](activity-stream.md)
    + [Prozesselemente](assets-workflow.md)
    + [Hinzufügen](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
-   + [Verbundene Assets mit AEM Sites](use-assets-across-connected-assets-instances.md)
+   + [Verbundene Assets mit Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Dynamic Media Newsletter von Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
@@ -76,14 +76,14 @@ ht-degree: 56%
    + [Installieren von Feature Pack 18912 für die Migration von Massenelementen](bulk-ingest-migrate.md)
    + [Arbeiten mit Selektoren](working-with-selectors.md)
 + Assets erweitern {#extending}
-   + [Anpassen und Erweitern von AEM Assets](extending-assets.md)
+   + [Anpassen und Erweitern von Assets](extending-assets.md)
    + [Verarbeiten von Assets mit Media Handlern und Workflows](media-handlers.md)
    + [Suchfunktion erweitern](searchx.md)
-   + [ [!DNL ImageMagick] Installieren und konfigurieren Sie , um mit AEM Assets arbeiten zu können.](best-practices-for-imagemagick.md)
+   + [Installieren und [!DNL ImageMagick] Konfigurieren von Assets](best-practices-for-imagemagick.md)
    + [Assets in den Aktivitäten-Stream integrieren](extending-activity-stream.md)
    + [Asset-Editor erweitern](asseteditorx.md)
    + [Assets-HTTP-API](mac-api-assets.md)
-   + [Unterstützung von Inhaltsfragmenten in der HTTP-API von AEM Assets](assets-api-content-fragments.md)
+   + [Unterstützung von Inhaltsfragmenten in der Asset-HTTP-API](assets-api-content-fragments.md)
    + [Asset Proxy-Entwicklung](proxy.md)
 + Assets verwalten {#administer}
    + [Unterstützte Dateiformate](assets-formats.md)
@@ -104,11 +104,11 @@ ht-degree: 56%
    + [Handbuch zur Asset-Migration](assets-migration-guide.md)
    + [XMP-Metadaten](xmp.md)
    + [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md)
-   + [AEM Assets und AEM MediaLibrary](medialibrary.md)
+   + [Assets und MediaLibrary](medialibrary.md)
    + [PDF-Rasterfunktion verwenden](aem-pdf-rasterizer.md)
    + [Upload-Beschränkungen konfigurieren](configuring-asset-upload-restrictions.md)
-   + [Best Practices für die Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integration mit InDesign Server](indesign.md)
+   + [Integration von Experience Manager und Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Mit InDesign Server integrieren](indesign.md)
    + [Metadatenprofile](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](touch-ui-using-demo-package-for-asset-insights.md)
@@ -127,7 +127,7 @@ ht-degree: 56%
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Verwaltung intelligenter Tags](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Konfigurieren von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Konfigurieren von Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets in Brand Portal](brand-portal-publish-assets.md)
    + [Veröffentlichen von Ordnern in Brand Portal](brand-portal-publish-folder.md)
    + [Veröffentlichen von Sammlungen in Brand Portal](brand-portal-publish-collection.md)
@@ -151,11 +151,11 @@ ht-degree: 56%
    + [Verwalten von Video-Assets](managing-video-assets.md)
    + [Erstellen von Übersetzungsprojekten](translation-projects.md)
    + [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
-   + [Herunterladen von Assets aus AEM](download-assets-from-aem.md)
+   + [Herunterladen von Assets von Experience Manager](download-assets-from-aem.md)
    + [Asynchrone Aufträge](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Asset-Einblicke](touch-ui-asset-insights.md)
-   + [Asset-Einblicke über Adobe Launch aktivieren](touch-ui-using-dtm-for-asset-insights.md)
+   + [Asset-Einblicke über den Start der Adobe aktivieren](touch-ui-using-dtm-for-asset-insights.md)
    + [Asset-Einblicke konfigurieren](touch-ui-configuring-asset-insights.md)
    + [Assets ein- und auschecken](check-out-and-submit-assets.md)
    + [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
