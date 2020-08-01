@@ -3,10 +3,10 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 75%
+source-wordcount: '1536'
+ht-degree: 74%
 
 ---
 
@@ -25,9 +25,9 @@ Damit der Smart Content Service die richtigen Tags anwendet, müssen Sie ihn dar
 
 Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über einen Tagging-Workflow auf Assets anwenden.
 
-Im Hintergrund verwendet der Smart Content Service das Adobe Sensei AI-Framework, um seinen Bilderkennungsalgorithmus in Ihrer Tag-Struktur und Ihrer Geschäftstaxonomie zu schulen. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwendet der Smart Content Service das Adobe Sensei AI-Framework, um seinen Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Geschäftstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
-Der Smart Content Service ist ein Cloud-Dienst, der auf Adobe I/O gehostet wird. Um ihn in Adobe Experience Manager zu verwenden, muss der Systemadministrator Ihre Experience Manager-Bereitstellung mit der Adobe-ID/O integrieren.
+Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with Adobe I/O.
 
 Die wichtigsten Schritte beim Verwenden des Smart Content Service sind:
 
@@ -47,15 +47,15 @@ Stellen Sie vor der Verwendung des Smart Content Service Folgendes sicher, um ei
 
 ## Einstieg {#onboarding}
 
-Smart Content Service kann als Add-on zu Experience Manager erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zur Adobe-ID/O an den Administrator Ihres Unternehmens gesendet.
+The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. Nach dem Kauf wird eine E-Mail mit einem Link zur Adobe-E/A an den Administrator Ihres Unternehmens gesendet.
 
-Der Administrator kann auf den Link klicken, um den Smart Content Service in Experience Manager zu integrieren. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
+The administrator can follow the link to integrate the Smart Content Service with [!DNL Experience Manager]. To integrate the service with [!DNL Experience Manager Assets], see [Configure Smart Tags](config-smart-tagging.md).
 
-Der Onboarding-Vorgang ist abgeschlossen, wenn der Administrator den Dienst konfiguriert und Benutzer in Experience Manager hinzufügt.
+The onboarding process is complete when the administrator configures the service and adds users in [!DNL Experience Manager].
 
 >[!NOTE]
 >
->Wenn Sie Experience Manager 6.3 oder eine frühere Version verwenden und einen Tagging-Dienst für Ihre Assets benötigen, finden Sie weitere Informationen unter [Smart-Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Intelligente Tags verwenden nicht die neuesten AI-Funktionen und sind daher weniger genau als der erweiterte Dienst für intelligentes Tagging.
+>Wenn Sie [!DNL Experience Manager] 6.3 oder eine frühere Version verwenden und einen Tagging-Dienst für Ihre Assets benötigen, finden Sie weitere Informationen unter [Smart-Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Intelligente Tags verwenden nicht die neuesten AI-Funktionen und sind daher weniger genau als der erweiterte Dienst für intelligentes Tagging.
 
 ## Überprüfen von Assets und Tags {#reviewing-assets-and-tags}
 
@@ -90,13 +90,13 @@ Sie können festlegen, dass der Smart Content Service regelmäßig mit den Asset
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Wenn diese Option für einen Ordner ausgewählt ist, führt Experience Manager automatisch einen Schulungsablauf aus, um den Smart Content Service für die Ordnerelemente und deren Tags auszubilden. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
+Once this option is selected for a folder, [!DNL Experience Manager] runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
 
 ### Training bei Bedarf {#on-demand-training}
 
 Sie können den Smart Content Service über die Workflow-Konsole trainieren, wann immer es erforderlich ist.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. Suchen Sie im Dialogfeld **[!UICONTROL Workflow ausführen]** nach dem Payload-Ordner, der die mit Tags versehenen Assets für das Trainieren des Diensts enthält.
 1. Geben Sie einen Titel für den Workflow ein und fügen Sie einen Kommentar hinzu. Then, click **[!UICONTROL Run]**. Die Assets und Tags werden für das Training übermittelt.
@@ -111,7 +111,7 @@ Sie können den Smart Content Service über die Workflow-Konsole trainieren, wan
 
 Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Trainingssatz trainiert ist, überprüfen Sie den Bericht zum Trainings-Workflow über die Berichte-Konsole.
 
-1. Gehen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. Klicken Sie auf der Seite **[!UICONTROL Asset-Berichte]** auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie den Bericht **[!UICONTROL Smart-Tags-Training]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und eine Beschreibung für den Bericht an. Lassen Sie unter **[!UICONTROL Berichtplanen]** die Option **[!UICONTROL Jetzt]** aktiviert. Wenn Sie den Bericht für einen späteren Zeitpunkt planen möchten, wählen Sie **[!UICONTROL Später]** und geben Sie ein Datum und eine Uhrzeit an. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Erstellen]**.
@@ -153,7 +153,7 @@ Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit
 
 #### Tagging von Assets über die Workflow-Konsole {#tagging-assets-from-the-workflow-console}
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Workflow-Modelle]** den Workflow **[!UICONTROL DAM Smart Tags Assets]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Workflow starten]**.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -167,7 +167,7 @@ Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit
 
 #### Tagging von Assets über die Timeline {#tagging-assets-from-the-timeline}
 
-1. Wählen Sie über die Assets-Benutzeroberfläche den Ordner mit Assets bzw. bestimmte Assets aus, auf die Sie Smart-Tags anwenden möchten.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
 1. Öffnen Sie die **[!UICONTROL Timeline]** oben links.
 1. Öffnen Sie die Aktionen unten in der linken Seitenleiste und klicken Sie auf **[!UICONTROL Workflow starten]**.
 
