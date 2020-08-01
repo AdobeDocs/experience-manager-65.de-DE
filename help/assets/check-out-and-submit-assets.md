@@ -1,19 +1,19 @@
 ---
-title: Einchecken und Auschecken Ihrer digitalen Assets zur Bearbeitung
+title: Checken Sie Ihre digitalen Assets ein und checken Sie sie zur Bearbeitung aus.
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 60%
+source-wordcount: '408'
+ht-degree: 53%
 
 ---
 
 
-# Checkin- und Checkout-Dateien in Experience Manager DAM {#check-in-and-check-out-files-in-assets}
+# Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Mit Adobe Experience Manager Assets können Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen erneut einchecken. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
+[!DNL Adobe Experience Manager Assets]Mit können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Other users cannot perform any of these operations on the asset until you check the asset back in to [!DNL Assets]. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
 Um Assets aus-/einchecken zu können, benötigen Sie entsprechenden Schreibzugriff.
 
@@ -21,7 +21,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
 ## Assets überprüfen {#checking-out-assets}
 
-1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus, das ausgecheckt werden soll. Sie können auch mehrere Assets zum Auschecken auswählen.
+1. From the [!DNL Assets] user interface, select the asset you want to check out. Sie können auch mehrere Assets zum Auschecken auswählen.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Checkout]**.
 Die **[!UICONTROL Checkout]** -Option wechselt zum **[!UICONTROL Checkin]**.
 Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Auf der Miniaturansicht des Assets, das Sie ausgecheckt haben, wird ein Sperrsymbol angezeigt.
@@ -44,14 +44,14 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
    Sie können das Asset auch mit Anmerkungen versehen oder es veröffentlichen.
 
-1. Wählen Sie das bearbeitete Asset in der [!DNL Assets] Benutzeroberfläche aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Checkin]** . Das geänderte Asset wird in Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+1. Wählen Sie das bearbeitete Asset in der [!DNL Assets] Benutzeroberfläche aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Checkin]** . The modified asset is checked in to [!DNL Assets] and is available to other users for editing.
 
 ## Forced check in {#forced-check-in}
 
 Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 
-1. Melden Sie sich bei Assets als Administrator an.
-1. Wählen Sie in der Assets-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
+1. Log in to [!DNL Assets] as an administrator.
+1. From the [!DNL Assets] user interface select one or more assets that have been checked out by other users.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
