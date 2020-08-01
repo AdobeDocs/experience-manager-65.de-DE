@@ -3,10 +3,10 @@ title: Zugehörige Assets
 description: Erfahren Sie, wie digitale Assets, die einige allgemeine Attribute gemeinsam haben, miteinander verknüpft werden. Erstellen Sie auch Quell-abgeleitete Beziehungen zwischen digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 50%
+source-wordcount: '636'
+ht-degree: 47%
 
 ---
 
@@ -23,7 +23,7 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
 ## Zuordnen von Assets {#relating-assets}
 
-1. From the Experience Manager interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. From the [!DNL Experience Manager] interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
    ![Öffnen der Seite &quot;Eigenschaften&quot;eines Assets, um das Asset zu verknüpfen](assets/asset-properties-relate-assets.png)
 
@@ -65,9 +65,9 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
 1. Click **[!UICONTROL OK]** to close the dialog. Die Assets, für die Sie Verbindungen entfernt haben, werden aus der Liste der zugeordneten Assets im Abschnitt **[!UICONTROL Zugehörig]** gelöscht.
 
-## Übersetzen von zugehörigen Assets {#translating-related-assets}
+## Übersetzen zugehöriger Assets {#translating-related-assets}
 
-Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen/abgeleiteten Beziehungen zwischen Assets mit der Funktion „Zugehörige Assets“ nützlich. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
+Das Erstellen von Quell-/abgeleiteten Beziehungen zwischen Assets mithilfe der entsprechenden Asset-Funktion ist auch bei der Workflows hilfreich. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
