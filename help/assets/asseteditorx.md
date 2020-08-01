@@ -3,10 +3,10 @@ title: Asset-Editor erweitern
 description: Erfahren Sie, wie sich die Funktionen des Asset-Editors mithilfe von benutzerdefinierten Komponenten erweitern lassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 91%
+source-wordcount: '688'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein
 
 Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wird in [Erstellen und Konfigurieren einer Asset-Editor-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page) behandelt.
 
-Adobe Experience Manager-Entwickler können nicht nur bereits vorhandene Editorkomponenten verwenden, sondern auch eigene Komponenten erstellen.
+In addition to using pre-existing editor components, [!DNL Adobe Experience Manager] developers can also create their own components.
 
 ## Create an Asset Editor template {#creating-an-asset-editor-template}
 
@@ -29,9 +29,9 @@ Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
 ### Clientlib konfigurieren {#configuring-clientlib}
 
- Assets-Komponenten verwenden eine Erweiterung der WCM-clientlib zur Bearbeitung. Die clientlibs werden normalerweise in `init.jsp` geladen.
+[!DNL Assets] Komponenten verwenden eine Erweiterung des WCM-Bearbeitungsclientlib. Die clientlibs werden normalerweise in `init.jsp` geladen.
 
-Anders als beim Laden der Standard-clientlib (in `init.jsp` des Kerns) muss eine Assets-Vorlage Folgendes enthalten:
+Compared to the default clientlib loading (in core&#39;s `init.jsp`), an [!DNL Assets] template must have the following:
 
 * Die Vorlage muss die clientlib `cq.dam.edit` (anstelle von `cq.wcm.edit`) enthalten.
 
@@ -41,23 +41,23 @@ In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorha
 
 ### JS-Aktionen konfigurieren {#configuring-js-actions}
 
-Einige der  Assets-Komponenten erfordern, dass JS-Funktionen in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
+Some of the [!DNL Assets] components require JS functions defined in `component.js`. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Additional style sheets {#additional-style-sheets}
 
-Einige der Assets-Komponenten verwenden die Widgets-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Some of the [!DNL Assets] components use the widgets library. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx-Stylesheet   {#geometrixx-style-sheet}
+### Geometrixx-Stylesheet     {#geometrixx-style-sheet}
 
 Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.asseteditor` von `static.css` (`/etc/designs/geometrixx/static.css`) beginnen. Best Practice: Kopieren Sie alle `.asseteditor`-Selektoren in Ihr Stylesheet und passen Sie bei Bedarf die Regeln an.
 
