@@ -3,17 +3,17 @@ title: Verwenden von Seiten-Tracker und Einbettungscode in Webseiten
 description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 68%
+source-wordcount: '176'
+ht-degree: 70%
 
 ---
 
 
 # Use page tracker and embed code in web pages {#using-page-tracker-and-embed-code-in-web-pages}
 
-Der Seitentracker ist ein Teil des JavaScript-Codes, den Sie in den Code von Drittanbieter-Websites aufnehmen, damit Adobe Analytics Nutzungsdaten zu Adobe Experience Manager Assets auf diesen Websites erfassen kann.
+Page Tracker is a piece of JavaScript code that you include in third-party websites&#39; code to enable Adobe Analytics to capture usage data around [!DNL Adobe Experience Manager Assets] on these websites.
 
 Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungscode in den Code der Websites von Drittanbietern ein.
 
