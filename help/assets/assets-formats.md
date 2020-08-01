@@ -3,10 +3,10 @@ title: Unterstützte Dateiformate zur Verarbeitung in [!DNL Adobe Experience Man
 description: Dateiformate und MIME-Typen, die [!DNL Assets] and [!DNL Dynamic Media] von und die für die einzelnen Formate unterstützten Funktionen unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 58%
+source-wordcount: '1636'
+ht-degree: 60%
 
 ---
 
@@ -27,7 +27,7 @@ Die Legende gibt den Grad der Unterstützung an.
 
 Folgende Rasterbildformate werden unterstützt [!DNL Assets] :
 
-| Format | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Bearbeiten | Metadaten-Writeback | Insights |
+| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Bearbeiten | Metadaten-Writeback | Insights |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -72,11 +72,11 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 ## Supported 3D formats {#support-3d-formats}
 
-Die folgende Liste von 3D-Formaten wird unterstützt.
+Die folgende Liste von 3D-Formaten wird unterstützt:
 
-Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media.](/help/assets/assets-3d.md)
+Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 
-| Format | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffskontrolle | Miniaturansicht, Vorschau | 3D-Vorschau | Dynamic Media Versand |
+| Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniaturansicht, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -136,13 +136,13 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Supported camera raw {#supported-camera-raw}
 
-Die Adobe Camera Raw-Bibliothek aktiviert Assets für die Aufnahme von Rohbildern. See [Camera Raw support](camera-raw.md).
+Die [!DNL Adobe Camera Raw] Bibliothek ermöglicht [!DNL Assets] das Erfassen von Rohbildern. See [Camera Raw support](camera-raw.md).
 
-## Supported Assets document formats {#supported-document-formats}
+## Supported [!DNL Assets] document formats {#supported-document-formats}
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
-| Format | Speicher | [Metadatenverwaltung](metadata.md) | Extraktion im Volltext<br> | [Metadatenextraktion](metadata.md) | Thumbnail<br> generation | [Subasset-Extraktion](managing-linked-subassets.md) | [Metadaten-Writeback](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Format | Speicherung | [Metadatenverwaltung](metadata.md) | Extraktion im Volltext<br> | [Metadatenextraktion](metadata.md) | Thumbnail<br> generation | [Subasset-Extraktion](managing-linked-subassets.md) | [Metadaten-Writeback](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
@@ -227,7 +227,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows werden in der folgenden Tabelle behandelt.
 
-| Formate | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
+| Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -239,7 +239,7 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 
 Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wird in der folgenden Tabelle beschrieben. Die üblichen DAM-Funktionen wie Datenspeicherung, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung, mit Ausnahme von Dynamic Media Versand, werden für alle Dateien unterstützt.
 
-| Formate | Speicher | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
+| Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -249,9 +249,9 @@ Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wir
 
 ## Unterstützt MIME-Typen {#supported-mime-types}
 
-Standardmäßig erkennt Experience Manager den Dateityp mit der Dateierweiterung. Experience Manager kann ihn anhand der Dateiinhalte erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the Experience Manager Web Console.
+Erkennt den Dateityp standardmäßig mithilfe der Dateierweiterung [!DNL Experience Manager] . [!DNL Experience Manager] kann es aus dem Inhalt der Dateien erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
 
-Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`verfügbar.
 
 | Dateierweiterung | MIME-Typ/Internetmedientyp | Standardmäßiger jobParam-Wert | Zulässiger jobParam-Wert |
 |---|---|---|---|
