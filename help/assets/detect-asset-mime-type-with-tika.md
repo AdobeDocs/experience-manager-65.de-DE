@@ -1,27 +1,27 @@
 ---
 title: MIME-Typ von Assets mithilfe von Apache Tika erkennen
-description: Aktivieren Sie Apache Tika, damit Experience Manager Assets den MIME-Typ von Assets aus dem Inhaltsstream während des Upload-Vorgangs und nicht die Dateierweiterung erkennen kann.
+description: Enable Apache Tika to help [!DNL Experience Manager Assets] detect the MIME type of assets from the content stream during the upload operation instead of the file extension.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 10%
+source-wordcount: '165'
+ht-degree: 11%
 
 ---
 
 
-# Detect MIME type of assets using Apache Tika {#detecting-mime-type-of-assets-using-apache-tika}
+# MIME-Typ von Assets erkennen mit [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-In der Regel erkennt Adobe Experience Manager Assets den MIME-Typ von Assets, die Sie von ihrer Dateierweiterung hochladen.
+Normally, [!DNL Adobe Experience Manager Assets] detects the MIME type of assets that you upload from their file extension.
 
-Wenn Sie Apache Tika verwenden, um Assets hochzuladen, erkennt Assets den MIME-Typ, den sie während des Upload-Vorgangs vom Inhaltsstream und nicht von der Dateierweiterung unterscheiden.
+If you use [!DNL Apache Tika] to upload assets, [!DNL Assets] detects their MIME type from the content stream during the upload operation instead of the file extension.
 
 Diese Funktion ist standardmäßig deaktiviert.  To enable the feature, configure the **[!UICONTROL Day CQ DAM Mime Type]** service from [!UICONTROL Configuration Manager].
 
 >[!NOTE]
 >
->Die MIME-Typerkennung mit der Apache Tika-Bibliothek ist ein ressourcenintensiver Vorgang.
+>MIME type detection using the [!DNL Apache Tika] library is a resource-intensive operation.
 
 1. Um die Configuration Manager-Webkonsole zu öffnen, öffnen Sie `https://[aem_server]:[port]/system/console/configMgr`.
 
