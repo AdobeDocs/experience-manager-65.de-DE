@@ -3,10 +3,10 @@ title: Vorbereiten von Assets für die Übersetzung
 description: Erstellen Sie sprachliche Stammordner, um Assets für die Übersetzung vorzubereiten und damit mehrsprachige Assets zu unterstützen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 61%
+source-wordcount: '440'
+ht-degree: 57%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 61%
 
 Bei mehrsprachigen Assets handelt es sich um Assets mit Binärdateien, Metadaten und Tags in verschiedenen Sprachen. Im Allgemeinen liegen Binärdateien, Metadaten und Tags für Assets in einer Sprache vor, die dann für die Verwendung in mehrsprachigen Projekten in andere Sprachen übersetzt wird.
 
-In Adobe Experience Manager Assets sind mehrsprachige Assets in Ordnern enthalten, in denen die Assets in einer anderen Sprache vorliegen.
+In [!DNL Adobe Experience Manager Assets], multilingual assets are included in folders, where each folder contains the assets in a different language.
 
 Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. For example, */content/dam/it* is the Italian language root for the Italian language copy. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](preparing-assets-for-translation.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von Quell-Assets durchgeführt werden.
 
@@ -46,7 +46,7 @@ Um den Sprachstamm zu erstellen, erstellen Sie einen Ordner und verwenden Sie ei
 
 Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beispielhierarchie über `it` als Eigenschaft „Name“. The Name property is used as the name of the asset node in the repository, and therefore determines the path of the assets. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
-1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
+1. From the [!DNL Assets] console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Ordner erstellen](assets/Create-folder.png)
 
@@ -54,13 +54,13 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 
    ![Hinzufügen Sprachencode im Ordner](assets/Add-language-code-in-folder.png)
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. Der Sprachstamm wird in der Konsole „Assets“ erstellt. 
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. The language root is created in the [!DNL Assets] console.
 
 ## Anzeigen von Sprachstämmen {#viewing-language-roots}
 
-Experience Manager interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within Assets.
+[!DNL Experience Manager] verfügt über ein **[!UICONTROL Referenzen]** -Bedienfeld, in dem eine Liste der Sprachenwurzeln angezeigt wird, die in [!DNL Assets]der Benutzeroberfläche erstellt wurden.
 
-1. In der Konsole „Assets“ wählen Sie die primäre Sprachinstanz aus, für die Sie Sprachkopien erstellen möchten.
+1. In the [!DNL Assets] console, select the language primary for which you want to create language copies.
 1. Wählen Sie in der linken Leiste die Option &quot; **[!UICONTROL Referenzen]** &quot;, um den [!UICONTROL Referenzbereich] zu öffnen.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
