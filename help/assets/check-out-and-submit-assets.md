@@ -3,10 +3,10 @@ title: Checken Sie Ihre digitalen Assets ein und checken Sie sie zur Bearbeitung
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 53%
+source-wordcount: '437'
+ht-degree: 51%
 
 ---
 
@@ -56,6 +56,10 @@ Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Sperren]**. Das Asset wird wieder eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+
+## Best Practices und Einschränkungen {#tips-limitations}
+
+* Es ist möglich, einen *Ordner* zu löschen, der ausgecheckte Asset-Dateien enthält. Bevor Sie einen Ordner löschen, stellen Sie sicher, dass keine digitalen Assets von Benutzern ausgecheckt werden.
 
 >[!MORELIKETHIS]
 >
