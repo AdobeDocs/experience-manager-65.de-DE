@@ -3,7 +3,7 @@ title: Adobe Experience Manager 6.5 Versionshinweise zu früheren Service Packs
 description: Versionshinweise speziell für Adobe Experience Manager 6.5 Service Pack 3 und früher.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '8108'
 ht-degree: 37%
@@ -19,9 +19,9 @@ Adobe Experience Manager 6.5.4.0 ist ein wichtiges Update, das neue Funktionen, 
 
 Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.4.0 eingeführt wurden, zählen:
 
-* Adobe Experience Manager Assets werden jetzt über die Adobe I/O-Konsole mit dem Markenportal konfiguriert.
+* Adobe Experience Manager Assets werden jetzt über die Adobe-E/A-Konsole mit dem Markenportal konfiguriert.
 
-* Für Adobe Experience Manager Forms Workflows steht jetzt ein neuer [Druckausgabe](../forms/using/aem-forms-workflow-step-reference.md) -Schritt zum Generieren zur Verfügung.
+* Für Adobe Experience Manager Forms Workflows ist jetzt ein neuer [Druckausgabe](../forms/using/aem-forms-workflow-step-reference.md) -Schritt Generieren verfügbar.
 
 * [Mehrspaltige Unterstützung](../forms/using/resize-using-layout-mode.md) für den Layoutmodus für adaptive Formulare und interaktive Kommunikation.
 
@@ -31,7 +31,7 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manage
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.8 aktualisiert.
 
-* Sie können jetzt selektive Inhaltsunterbauten mit *Dynamic Media synchronisieren - Scene7-Modus* anstelle aller verfügbaren Elemente unter `content/dam`.
+* Sie können jetzt selektive Inhaltsunterbauten mit *Dynamic Media synchronisieren - Scene7-Modus* anstelle aller verfügbaren unter `content/dam`.
 
 * Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
@@ -41,7 +41,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 ### Sites {#sites-fixes}
 
-* Wenn eine URL einer Adobe Experience Manager-Siteseite einen Doppelpunkt (`:`) oder ein Prozentsymbol (`%`) enthält, reagiert der Browser nicht mehr und die CPU-Auslastung steigt (NPR-32369, NPR-31918).
+* Wenn eine URL einer Adobe Experience Manager Sites-Seite einen Doppelpunkt (`:`) oder ein Prozentsymbol (`%`) enthält, reagiert der Browser nicht mehr und die CPU-Auslastung steigt an (NPR-32369, NPR-31918).
 
 * Wenn eine Experience Manager-Siteseite zur Bearbeitung geöffnet und eine Komponente kopiert wird, steht die Einfügeaktion für einige Platzhalter nicht zur Verfügung (NPR-32317).
 
@@ -63,7 +63,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Wenn Erlebnisfragmente gezogen werden, wird eine hohe Reaktionszeit beobachtet (NPR-31878).
 
-* Wenn Sie die Option Komponente hierher ziehen im Platzhalter eines interaktiven Rasters auswählen, wird eine GET-Anforderung gesendet und die Anforderung führt zum HTTP-403-Fehler (NPR-31845).
+* Wenn Sie die Option Komponente hierher ziehen im Platzhalter eines interaktiven Rasters auswählen, wird eine GET gesendet und die Anforderung führt zum HTTP-403-Fehler (NPR-31845).
 
 * Wenn Sie den Inhalt innerhalb desselben Ordners verschieben, ist die Option zum Verschieben der Seite deaktiviert (NPR-31840).
 
@@ -73,7 +73,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Wenn ein Benutzer auf die Schaltfläche Erstellen klickt, ist die Seitenoption nicht verfügbar (NPR-31756).
 
-* Die Kampagne in der Adobe-Kampagne mit OOTB (Out-of-the-Box)-Design-Importer-Komponente (NPR-31728) kann nicht synchronisiert werden.
+* Die Kampagne in der Adobe-Kampagne mit OOTB (Out-of-the-Box)-Designimportkomponente (NPR-31728) kann nicht synchronisiert werden.
 
 * Wenn Sie versuchen, eine Aufzählungszeichen-Liste in eine nummerierte Liste zu ändern, werden nur die ersten beiden Elemente der Liste geändert (NPR-31636).
 
@@ -87,7 +87,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Die Schaltfläche zum Auslösen des Workflows auf der Seite zur Asset-Sammlung ist deaktiviert (NPR-32471).
 
-* Ein Ordner ohne Namen wird im SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Scene7-Dynamic Media (NPR-32440) von einem Ordner in einen anderen verschoben wird.
+* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Dynamic Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
 * Die Aktion zum Verschieben aller Assets (mit &quot;Alle auswählen&quot;und dann &quot;Verschieben&quot;) in einen Ordner mit veröffentlichten Assets schlägt fehl (NPR-32366).
 
@@ -107,7 +107,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * In der Benutzeroberfläche &quot;Experience Manager Assets&quot;werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
-* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen deaktiviert werden, wenn die Kontrollkästchen in Adobe Stock auf Stufe zwei markiert wurden (NPR-31919).
+* Alle Kontrollkästchen im Filterbedienfeld werden gelöscht, wenn das erste und das zweite Kontrollkästchen geleert werden, wenn in Adobe Stock die Kontrollkästchen der Stufe 2 aktiviert wurden (NPR-31919).
 
 * Die Datei- und Ordnersuche mit Omniture-Facetten bildet eine Ausnahme (NPR-31872).
 
@@ -119,7 +119,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
 
-* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, außer den Schaltflächen &quot;An Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, die im Scene7-Ausführungsmodus ausgeführt werden (CQ-4286705).
+* Die Detailseite &quot;Assets&quot;von PDF-Assets zeigt keine Aktionsschaltflächen an, außer den Schaltflächen &quot;An Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, der im Scene7-Ausführungsmodus von Dynamic Media ausgeführt wird (CQ-4286705).
 
 * Die Verarbeitung von Assets durch den Batch-Upload von Scene7 (CQ-4286445) dauert zu lange.
 
@@ -213,7 +213,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 >[!NOTE]
 >
->Experience Manager Service Pack enthält keine Korrekturen für Experience Manager Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Darüber hinaus wird ein kumulatives Installationsprogramm veröffentlicht, das Fehlerbehebungen für Adobe Experience Manager Forms on JEE enthält. Weitere Informationen finden Sie unter [Installieren des Experience Manager Forms-Add-ons](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Installieren von Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>Experience Manager Service Pack enthält keine Fehlerbehebungen für Experience Manager Forms. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Darüber hinaus wird ein kumulatives Installationsprogramm veröffentlicht, das Korrekturen für Adobe Experience Manager Forms on JEE enthält. Weitere Informationen finden Sie unter [Installieren des Experience Manager Forms-Add-ons](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Installieren von Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Correspondence Management: Briefe zeigen zusätzliche Zeichen nach der Übermittlung an die Workflows an (NPR-32626).
 
@@ -227,11 +227,11 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Dokument-Dienste: Wenn die Anzahl der Transaktionen auf einem Server eine bestimmte Grenze überschreitet, schlägt die Konvertierung von HTML in PDF fehl und die Dateitypeinstellungen werden vom [!DNL Forms] Server entfernt (NPR-32204).
 
-* Adaptive Formulare: Das Tool zur Barrierefreiheit des Browsers meldet Fehler in adaptiven Formularen gemäß den Richtlinien für WCAG2 Level AA (NPR-32312, NPR-32309, CQ-4285439).
+* Adaptives Forms: Das Tool zur Barrierefreiheit des Browsers meldet Fehler in adaptiven Formularen gemäß den Richtlinien für WCAG2 Level AA (NPR-32312, NPR-32309, CQ-4285439).
 
-* Adaptive Formulare: Chrome-Browser-Barrierefreiheitstool berichtet über einen Best Practice-Fehler (NPR-32310).
+* Adaptives Forms: Chrome-Browser-Barrierefreiheitstool berichtet über einen Best Practice-Fehler (NPR-32310).
 
-* Adaptive Formulare: Übersetzungsprobleme beim Konfigurieren eines adaptiven Formulars, das in eine Experience Manager-Siteseite eingebettet ist (NPR-32168).
+* Adaptives Forms: Übersetzungsprobleme beim Konfigurieren eines adaptiven Formulars, das in eine Experience Manager-Siteseite eingebettet ist (NPR-32168).
 
 * Workbench: Beim Verwenden des Vorgangs &quot;PDF-Eigenschaften abrufen&quot;für den PDF Utilities-Dienst (NPR-32150) wird eine Fehlermeldung angezeigt.
 
@@ -241,7 +241,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Designer: Wenn eine Tabelle zusammengeführte Zellen enthält, schlägt der Barrierefreiheitstest für die Ausgabe-PDF-Datei fehl, die mithilfe des Ausgabediensts (CQ-4285372) aus einem XDP-Formular konvertiert wurde.
 
-* Foundation JEE: Wenn ein Experience Manager Forms-Server von einem Cluster getrennt ist, verhindern Cache-Probleme die erneute Serververbindung (NPR-32412).
+* Foundation JEE: Wenn ein Experience Manager-Forms-Server von einem Cluster getrennt ist, verhindern Cache-Probleme, dass er eine erneute Serververbindung herstellt (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -321,25 +321,25 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Massenbewegung von Assets schlägt fehl und es wird eine Warnmeldung angezeigt (NPR-30610).
 
-* Beim Verschieben von Assets von einem Ordner in einen anderen im [!DNL Experience Manager] [!DNL Dynamic Media]Scene7-Modus (NPR-31630) wird die Schreibweise für Asset-Namen in Kleinbuchstaben geändert.
+* Beim Verschieben von Assets von einem Ordner in einen anderen im [!DNL Experience Manager] [!DNL Dynamic Media]Scene7-Modus (NPR-31630) werden die Asset-Namen in Kleinbuchstaben geändert.
 
-* Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler behoben, der dafür sorgt, dass sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31340).
+* Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler behoben, da sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31340).
 
 * [!DNL Dynamic Media] Assets, die Verweise enthalten, werden nicht veröffentlicht (NPR-31180).
 
-* Uploads vom [!DNL Dynamic Media]7-Scene7-Modus in den [!DNL Dynamic Media Classic] Vorgang nehmen zu lange in Anspruch (NPR-31048).
+* Uploads vom [!DNL Dynamic Media]7-Scene7-Modus zum [!DNL Dynamic Media Classic] Ausführen dauern zu lange (NPR-31048).
 
 * Hotspot, der zu einem Bild-Asset hinzugefügt wurde, ist auf der Seite mit den Asset-Details nicht über den interaktiven Bild-Viewer sichtbar (NPR-30979).
 
 * Es werden enorme Sling-Aufträge erstellt und das Verarbeitungsbanner wird erneut angezeigt, wenn Aktionen, die in Assets ausgeführt werden, an Scene7 weitergeleitet [!DNL Experience manager Assets] werden (NPR-30947).
 
-* Beim Erstellen der Sprachkopie von Assets treten Konflikte auf, und Assets werden nicht zu Scene7 hochgeladen (NPR-30932).
+* Beim Erstellen der Sprachkopie von Assets treten Konflikte auf, und Assets werden nicht nach Scene7 hochgeladen (NPR-30932).
 
 * Dynamische Darstellungen, die von [!DNL Experience Manager] im [!DNL Dynamic Media]-Hybrid-Modus heruntergeladen wurden, sind beschädigt (sie sind vom Texttyp mit Inhalt &quot;Bild kann nicht gefunden werden&quot; anstelle des Bildinhaltstyps) (NPR-30876).
 
-* [!DNL Dynamic Media] Der Arbeitsablauf zum Kodieren von Videos kann keine Miniaturansicht für das Video generieren, das beim Adobe Experience Manager vom [!DNL Dynamic Media Classic] zum [!DNL Dynamic Media]Scene7-Modus migriert wird (CQ-4282011).
+* [!DNL Dynamic Media] Der Arbeitsablauf für die Videokodierung kann keine Miniaturansicht für das Video generieren, das auf dem Adobe Experience Manager vom [!DNL Dynamic Media Classic] zum [!DNL Dynamic Media]-Scene7-Modus migriert wird (CQ-4282011).
 
-* Bei der Migration von Assets von einer Instanz zu einer anderen mit unterschiedlichen Scene7-Firmen-IDs (CQ-4280548) wurde eine IpsApiException-Ausnahme beobachtet.
+* IpsApiException wurde beobachtet, während Assets mithilfe unterschiedlicher Scene7-Firmen-IDs von einer Instanz in eine andere migriert wurden (CQ-4280548).
 
 * Die 3D-Asset-Miniaturansicht ist nicht informativ, wenn ein unterstütztes 3D-Modell in integriert wird [!DNL Experience Manager] (CQ-4283701).
 
@@ -355,9 +355,9 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Neuaufgenommene Videos in Ordnern mit Video-Profil bleiben auch nach Abschluss der Kodierung auf 100 % im Verarbeitungszustand (CQ-4279389).
 
-* Durch das Verschieben von Assets aus einem Ordner werden zahlreiche Sling-Aufträge (Scene7-API-Aufrufe) generiert, die im Idealfall erforderlich sind (CQ-4278664).
+* Durch das Verschieben von Assets aus einem Ordner wird eine große Anzahl von Sling-Aufträgen (Scene7 API-Aufrufe) erzeugt, die nicht unbedingt erforderlich sind (CQ-4278664).
 
-* Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn der Bildsatz (oder Mediaset) erstellt und mit der entsprechenden Benennungskonvention in DAM (CQ-4281112) benannt wird.
+* Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn in DAM (CQ-4281112) Bildsatz (oder Mediaset) erstellt und mit der entsprechenden Benennungskonvention benannt wird.
 
 * Scene7 Migrator stellt den Veröffentlichungsstatus falsch ein (CQ-4263492).
 
@@ -399,7 +399,7 @@ Remove one mention of this fix.
 * Wenn eine Seite mit Erlebnisfragmenten im Nicht-Editor-Modus geöffnet wird (entweder im Autorenmodus ohne das `editor.html` Präfix und `wcmmode=disabled`im Publisher). endet die Anforderung im HTTP-Status-Fehlercode `500` (NPR-30743).
 * Benutzer können ihr Kennwort nicht ändern und nicht auf ihre Profil-Seite zugreifen (NPR-31161).
 
-### Suchen und Benutzeroberfläche {#search-ui-interface}
+### Suchen und Benutzeroberfläche {#ui-interface-and-search}
 
 * Wenn auf einer Suchergebnisseite von der Kartenseite zur Liste-Ansicht gewechselt wird, ist ein Bildlauf erst möglich (NPR-31286).
 
@@ -488,7 +488,7 @@ Remove one mention of this fix.
 
 **Korrespondenzverwaltung**
 
-* Beschriftungen und QuickInfos werden beim Migrieren von Briefen aus LiveCycle ES4SP1 auf [!DNL Experience Manager] 6.5 (NPR-31615) nicht angezeigt.
+* Beschriftungen und QuickInfos werden beim Migrieren von Briefen von LiveCycle ES4SP1 auf [!DNL Experience Manager] 6.5 (NPR-31615) nicht angezeigt.
 
 * **Textflussformatierung wird beim Speichern von Briefen als Entwürfe nicht mehr unterstützt** (NPR-30463).
 
@@ -510,7 +510,7 @@ Remove one mention of this fix.
 
 **Foundation JEE**
 
-* Die Aktionskonfiguration lädt die Prozessnamen für Übermittlungsaktion &quot;Aufrufen eines Formulararbeitsablaufs&quot;(NPR-31478) nicht.
+* Die Aktionskonfiguration lädt die Prozessnamen für Übermittlungsaktion zum Aufrufen eines Forms Workflows nicht (NPR-31478).
 
 ### Enthaltene Feature Packs {#feature-packs-included-6530}
 
@@ -955,7 +955,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Forms – Dokumentendienste - Einbezogen
 
-* Nur OSGi: Es wurde ein neues Attribut PAGECOUNT im Output- und Forms-Dienst hinzugefügt. NPR-28922: Hotfix für CQ-4270870
+* Nur OSGi: Es wurde ein neues Attribut PAGECOUNT in Output und Forms Service hinzugefügt. NPR-28922: Hotfix für CQ-4270870
 * Nur OSGi: Unterstützung zum Erstellen von statischen PDF-Dateien mit dem Forms-Dienst aktiviert. NPR-28572: Hotfix für CQ-4270869
 * Für Administratoren und Root-Benutzer wurden Berechtigungen für XMLForm.exe aktiviert. NPR-29237: Hotfix für CQ-4267080
 
