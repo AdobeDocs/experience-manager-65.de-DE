@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 68%
 
 ---
 
@@ -46,11 +49,11 @@ AEM wird als eine einzelne bereitzustellende WAR-Datei geliefert.
 Nach der Bereitstellung erfolgt standardmäßig Folgendes:
 
 * the run mode is `author`
-* die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) in `${user.dir}/crx-quickstart`dem `${user.dir}` aktuellen Arbeitsverzeichnis installiert ist, wird dieser Pfad zu crx-quickstart aufgerufen `sling.home`
+* die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) installiert ist, `${user.dir}/crx-quickstart`wobei `${user.dir}` der aktuelle Arbeitsordner ist, wird dieser Pfad zu crx-quickstart aufgerufen `sling.home`
 
 * the context root is the war file name e.g : `aem-6`
 
-#### Konfiguration{#configuration}
+#### Konfiguration {#configuration}
 
 Sie können das Standardverhalten wie folgt ändern:
 
@@ -81,12 +84,12 @@ Um zu überprüfen, ob alles installiert ist, haben Sie folgende Möglichkeiten:
 Zu Demonstrationszwecken kann es angemessen sein, die Erstellungs- und Veröffentlichungsinstanzen auf einem Anwendungsserver zu installieren. Dafür müssen Sie wie folgt vorgehen:
 
 1. Ändern Sie die Variablen &quot;sling.home&quot;und &quot;sling.run.models&quot;der Veröffentlichungsinstanz.
-1. Entpacken Sie die Datei WEB-INF/web.xml aus der AEM-Kriegsdatei.
+1. Entpacken Sie die Datei WEB-INF/web.xml aus der AEM Kriegsdatei.
 1. Ändern Sie den Parameter „sling.home“ in einen anderen Pfad (absolute und relative Pfade sind möglich).
 1. Ändern Sie sling.run.models in die Veröffentlichungsinstanz.
 1. Replizieren Sie die Datei &quot;web.xml&quot;.
-1. Benennen Sie die Kriegsdateien um, sodass sie unterschiedliche Namen haben: z. B. einen Namen in aemauthor.war und den anderen in aempublish.war.
-1. Verwenden Sie höhere Speichereinstellungen, z. B. für AEM-Standardinstanzen, z. B.: -Xmx3072m
+1. Benennen Sie die Kriegsdateien um, sodass sie unterschiedliche Namen haben: z. B. einen Namen in aemauthor.war und den anderen in aempublish.war umbenannt.
+1. Verwenden Sie höhere Speichereinstellungen, z. B. für AEM Standardinstanzen, z. B.: -Xmx3072m
 1. Stellen Sie die beiden Webanwendungen bereit.
 1. Halten Sie nach der Bereitstellung die zwei Webanwendungen an.
 1. Sowohl in der Autor- als auch in der Veröffentlichungsinstanz wird sichergestellt, dass die Eigenschaft felix.service.urlhandlers=false in den Dateien sling.properties auf false festgelegt ist (standardmäßig ist true festgelegt).
@@ -169,7 +172,7 @@ Hierbei wird ein einfaches Serverlayout mit nur einem Administratorserver verwen
 **Bereitstellung der AEM-Webanwendung**
 
 * Laden Sie die AEM-WAR-Datei herunter.
-* Legen Sie die AEM-Kriegsdatei in den Ordner &quot;${myDomain}/packages/cq&quot;ab
+* Legen Sie die AEM Kriegsdatei in den Ordner &quot;${myDomain}/packages/cq&quot;ab
 * Make your configurations In `WEB-INF/web.xml` if needed (see above in the General Description)
 
    * Entpacken `WEB-INF/web.xml`der Datei
@@ -195,20 +198,20 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
    * Tomcat ermöglicht weder dem Administrator noch dem Manager bei der Installation den Zugriff. Daher müssen Sie `tomcat-users.xml` manuell bearbeiten, um den Zugriff für diese Konten zuzulassen:
 
       * Bearbeiten Sie `tomcat-users.xml`, um den Zugriff für Administrator und Manager einzuschließen. Die Konfiguration sollte dem folgenden Beispiel ähneln:
-      * 
-         ```
+
+         ```xml
          <?xml version='1.0' encoding='utf-8'?>
-          <tomcat-users>
-          <role rolename="manager"/>
-          <role rolename="tomcat"/>
-          <role rolename="admin"/>
-          <role rolename="role1"/>
-          <role rolename="manager-gui"/>
-          <user username="both" password="tomcat" roles="tomcat,role1"/>
-          <user username="tomcat" password="tomcat" roles="tomcat"/>
-          <user username="admin" password="admin" roles="admin,manager-gui"/>
-          <user username="role1" password="tomcat" roles="role1"/>
-          </tomcat-users>
+         <tomcat-users>
+         role rolename="manager"/>
+         role rolename="tomcat"/>
+         <role rolename="admin"/>
+         <role rolename="role1"/>
+         <role rolename="manager-gui"/>
+         <user username="both" password="tomcat" roles="tomcat,role1"/>
+         <user username="tomcat" password="tomcat" roles="tomcat"/>
+         <user username="admin" password="admin" roles="admin,manager-gui"/>
+         <user username="role1" password="tomcat" roles="role1"/>
+         </tomcat-users>
          ```
    * Wenn Sie AEM mit dem Kontextstamm „/“ bereitstellen möchten, müssen Sie den Kontextstamm der vorhandenen „ROOT webapp“ ändern:
 
@@ -219,15 +222,15 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
       `webapps/manager/WEB-INF/web.xml`
 
-      und erhöhen Sie „max-file-size“ und „max-request-size“ auf mindestens „500 MB“. Im folgenden `multipart-config`-Beispiel finden Sie eine derartige `web.xml`-Datei:
+      und erhöhen Sie „max-file-size“ und „max-request-size“ auf mindestens „500 MB“. Im folgenden `multipart-config`-Beispiel finden Sie eine derartige `web.xml`-Datei.
 
-      ```
-        <multipart-config>
-         <!-- 500MB max -->
-         <max-file-size>524288000</max-file-size>
-         <max-request-size>524288000</max-request-size>
-         <file-size-threshold>0</file-size-threshold>
-         </multipart-config>
+      ```xml
+      <multipart-config>
+      <!-- 500MB max -->
+      <max-file-size>524288000</max-file-size>
+      <max-request-size>524288000</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
+      </multipart-config>
       ```
 
 
@@ -252,4 +255,3 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 Informationen zur Behebung von Problemen, die bei der Installation möglicherweise auftreten, finden Sie unter:
 
 * [Fehlerbehebung](/help/sites-deploying/troubleshooting.md)
-
