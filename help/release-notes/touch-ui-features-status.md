@@ -1,44 +1,38 @@
 ---
 title: Status der Funktionen der Touch-optimierten Benutzeroberfläche
-description: Versionshinweise speziell für die Touch-aktivierte Benutzeroberfläche von Adobe Experience Manager.
-uuid: ceb081cc-7c33-4408-8032-3ac83d461268
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: f736581d-e6ea-4ec8-bfc7-16b9aa592097
-docset: aem65
+description: Spezifische Versionshinweise [!DNL Adobe Experience Manager] zur Touch-Enabled-Benutzeroberfläche.
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 49%
 
 ---
 
 
-# Status der Funktionen der Touch-optimierten Benutzeroberfläche{#touch-ui-feature-status}
+# Status der Funktionen der Touch-optimierten Benutzeroberfläche {#touch-ui-feature-status}
 
->[!CAUTION]
->
->[Die klassische Benutzeroberfläche wurde seit AEM 6.4 nicht mehr unterstützt](../release-notes/deprecated-removed-features.md) . Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche, und Benutzer sollten die leistungsstarken neuen Funktionen nutzen, die in der touchfähigen Benutzeroberfläche verfügbar sind.
+Ab AEM 6.4 wird die [klassische Benutzeroberfläche nicht mehr unterstützt](../release-notes/deprecated-removed-features.md). Die Benutzeroberfläche von Classic wird durch Adobe nicht weiter verbessert, und Benutzer sollten die leistungsstarken neuen Funktionen der touchfähigen Benutzeroberfläche nutzen.
 
-Seit Einführung von Version 6.0 verfügt AEM über eine neue, Touch-optimierte Benutzeroberfläche, die auf Adobe Marketing Cloud und die allgemeinen Richtlinien für Adobe-Benutzeroberflächen abgestimmt ist. Da sich die Funktionalitäten der beiden Benutzeroberflächen inzwischen nahezu entsprechen, ist dies nun die Standardbenutzeroberfläche von AEM. Die alte, Desktop-artige Benutzeroberfläche wird hingegen als „klassische Benutzeroberfläche“ bezeichnet.
+Starting with version 6.0, AEM introduced a new user interface referred as the &quot;touch-enabled UI&quot; (simply called &quot;Touch UI&quot;) that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. Da die Funktionsparität nahezu erreicht ist, wurde diese zur Standard-Benutzeroberfläche in AEM mit der alten, Desktop-orientierten Oberfläche, die als &quot;klassische Benutzeroberfläche&quot;bezeichnet wird.
 
 Die meisten Funktionen sind zwar in der Touch-optimierten Benutzeroberfläche vorhanden, allerdings ist die Entwicklung einiger Funktionen noch nicht abgeschlossen. Diese werden dann in künftigen Versionen hinzugefügt.
 
 Die folgende Liste zeigt den aktuellen Status der in AEM 6.5 implementierten Funktionen.
 
-For recommendations for customers that upgrade to AEM 6.5, please see [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) for details.
+For recommendations for customers that upgrade to AEM 6.5, see [User interface recommendations for customers](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
->Beachten Sie, dass auf dieser Seite nur auf die Entsprechungen der Funktionen der klassischen Benutzeroberfläche eingegangen wird.
->
->Zusätzliche spezifische Funktionen der Touch-optimierten Benutzeroberfläche, die nicht in der klassischen Benutzeroberfläche verfügbar sind, werden hier nicht aufgeführt.
+>Diese Seite behandelt nur die Funktionsparität mit der klassischen Benutzeroberfläche. Funktionen, die der Touch-fähigen Benutzeroberfläche hinzugefügt wurden und die in der klassischen Benutzeroberfläche nicht vorhanden sind, werden nicht aufgeführt.
 
 >[!NOTE]
 >
->Diese Liste erhebt keinen Anspruch auf Vollständigkeit.
+>Diese Liste ist vollständig, aber nicht erschöpfend.
 
 ## Legende {#legend}
 
-* **Umfassend**: Die Funktion ist in vollem Umfang in der Touch-optimierten Benutzeroberfläche verfügbar.
+* **Abgeschlossen**: Die Funktion ist in der touchfähigen Benutzeroberfläche vollständig verfügbar.
 * **Meistens**: Die Funktion ist hauptsächlich in der touchfähigen Benutzeroberfläche verfügbar.
 * **Fehlt**: Die Funktion ist nicht in der Touch-optimierten Benutzeroberfläche verfügbar. Um die entsprechende Aktion durchzuführen, müssen Sie die klassische Benutzeroberfläche verwenden.
 * **Ersetzt**: Diese Funktion wurde durch eine neue Implementierung ersetzt, die anders funktioniert.
@@ -46,617 +40,140 @@ For recommendations for customers that upgrade to AEM 6.5, please see [User Inte
 
 ## Funktionsstatus: Sites Admin {#feature-status-sites-admin}
 
-This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and the status in the touch-enabled UI ( `/sites.html`).
+This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and the status in the touch-enabled UI (`/sites.html`).
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Funktion<br /> </strong></td>
-   <td><strong>Status<br /> </strong></td>
-   <td><strong>Kommentar</strong></td>
-  </tr>
-  <tr>
-   <td>Site-Hierarchie navigieren</td>
-   <td>Umfassend<br /> </td>
-   <td>AEM 6.4 hat eine <a href="/help/sites-authoring/basic-handling.md#content-tree">Inhaltsbaumansicht</a>eingeführt.</td>
-  </tr>
-  <tr>
-   <td>Workflow starten</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Neue Seite erstellen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Neue Site erstellen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Neuen Launch erstellen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Neue Live Copy erstellen <br /> </td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Ordner erstellen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Veröffentlichungsstatus anzeigen</td>
-   <td>Fertig stellen</td>
-   <td>Starten von AEM 6.5 wird der Workflow-Status in der Listenansicht angezeigt</td>
-  </tr>
-  <tr>
-   <td>Suchen</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Seite kopieren/einfügen (Duplikat)</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Seite(n) verschieben</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Seite(n) veröffentlichen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Seite(n) ohne Replikationsberechtigung veröffentlichen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Später veröffentlichen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Struktur veröffentlichen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Veröffentlichung der Seite(n) rückgängig machen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Veröffentlichung der Seite(n) ohne Replikationsberechtigungen rückgängig machen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Veröffentlichung später rückgängig machen</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Löschen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Sperren/Entsperren</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Eigenschaften anzeigen/bearbeiten</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Berechtigungen für Seite(n) festlegen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Versionsverlauf</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Version wiederherstellen</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Baum wiederherstellen und gelöschte Seiten wiederherstellen</td>
-   <td>Fehlt</td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.</td>
-  </tr>
-  <tr>
-   <td>Unterschied zwischen vorheriger und aktueller Version anzeigen<br /> </td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Live Copy-Aktionen (Rollout)</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Sprachkopien anzeigen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Suchen und Ersetzen</td>
-   <td>Fehlt<br /> </td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.</td>
-  </tr>
-  <tr>
-   <td>Benachrichtigungs-Posteingang (JCR-Ereignisse)</td>
-   <td>Fehlt</td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche. Wird durch andere Implementierung ersetzt.</td>
-  </tr>
-  <tr>
-   <td>Verweise</td>
-   <td>Fertig stellen</td>
-   <td>Anzeige von Links zu eingehenden Seiten, die zu AEM 6.5 hinzugefügt wurden.<br /> </td>
-  </tr>
- </tbody>
-</table>
+| Funktion | Status | Kommentar |
+|--- |--- |--- |
+| Site-Hierarchie navigieren | Fertig stellen | AEM 6.4 wurde eine [Content-Tree-Ansicht](/help/sites-authoring/basic-handling.md#content-tree)eingeführt. |
+| Workflow starten | Fertig stellen |  |
+| Neue Seite erstellen | Umfassend |  |
+| Neue Site erstellen | Umfassend |  |
+| Neuen Launch erstellen | Umfassend |  |
+| Neue Live Copy erstellen | Fertig stellen |  |
+| Ordner erstellen | Umfassend |  |
+| Veröffentlichungsstatus anzeigen | Fertig stellen | Ab AEM 6.5 wird der Workflow-Status in der Ansicht Liste angezeigt. |
+| Suchen | Fertig stellen |  |
+| Seite kopieren und einfügen (Duplikat) | Fertig stellen |  |
+| Seite(n) verschieben | Umfassend |  |
+| Seite(n) veröffentlichen | Umfassend |  |
+| Seite(n) ohne Replikationsberechtigung veröffentlichen | Umfassend |  |
+| Später veröffentlichen | Umfassend |  |
+| Struktur veröffentlichen | Umfassend |  |
+| Veröffentlichung der Seite(n) rückgängig machen | Umfassend |  |
+| Veröffentlichung der Seite(n) ohne Replikationsberechtigungen rückgängig machen | Umfassend |  |
+| Veröffentlichung später rückgängig machen | Fertig stellen |  |
+| Löschen | Umfassend |  |
+| Sperren/Entsperren | Umfassend |  |
+| Eigenschaften anzeigen/bearbeiten | Umfassend |  |
+| Berechtigungen für Seite(n) festlegen | Umfassend |  |
+| Versionsverlauf | Umfassend |  |
+| Version wiederherstellen | Fertig stellen |  |
+| Baum wiederherstellen und gelöschte Seiten wiederherstellen | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Unterschied zwischen vorheriger und aktueller Version anzeigen | Fertig stellen |  |
+| Live Copy-Aktionen (Rollout) | Umfassend |  |
+| Sprachkopien anzeigen | Umfassend |  |
+| Suchen und Ersetzen | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Benachrichtigungs-Posteingang (JCR-Ereignisse) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. Wird durch andere Implementierung ersetzt. |
+| Verweise | Fertig stellen | Anzeige von Links zu eingehenden Seiten, die AEM 6.5 hinzugefügt wurden. |
 
 ## Funktionsstatus: Seiten-Editor {#feature-status-page-editor}
 
-This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the status in the touch-enabled ( `/editor.html`).
+This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the status in the touch-enabled (`/editor.html`).
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Funktion</strong></td>
-   <td><strong>Status</strong></td>
-   <td><strong>Kommentar</strong></td>
-  </tr>
-  <tr>
-   <td>Webseiten bearbeiten</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Mobile Webseiten bearbeiten<br /> </td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Per Design-Importtool importierte Inhalte bearbeiten<br /> </td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>E-Mails bearbeiten</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Bearbeiten von Hybrid-Mobil-Apps</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Formulare bearbeiten</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Angebote bearbeiten</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Workflow-Modelle bearbeiten<br /> </td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Code: Bearbeiten und Vorschau</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Responsive Preview<br /> </td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modus: Entwurf bearbeiten</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modus: Strukturvorlagen-Modus</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modus: Live Copy-Status<br /> </td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Anmerkungen hinzufügen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Eigenschaften bearbeiten<br /> </td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Seiten-Rollout</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Workflow starten und anzeigen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Workflow-Paket-Handling</td>
-   <td>Nahezu umfassend</td>
-   <td>Vollständig verfügbar in der touchfähigen Benutzeroberfläche. Mehrere Workflow-Nutzdaten werden weiterhin in der klassischen Benutzeroberfläche angezeigt.<br /> </td>
-  </tr>
-  <tr>
-   <td>Seite sperren/entsperren</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Seite veröffentlichen <br /> </td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Veröffentlichen einer Seite rückgängig machen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Seite kopieren</td>
-   <td>Entfernt<br /> </td>
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">Seiten zu kopieren</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Seite verschieben</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">Seiten zu verschieben</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Seite löschen</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">Seiten zu löschen</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Verweise einblenden</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin, um die <a href="/help/sites-authoring/author-environment-tools.md#references">detaillierte Verweisliste anzuzeigen</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Auditprotokoll</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin und <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">öffnen Sie die Aktivitätsschiene</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Version erstellen</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">neue Versionen zu erstellen</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Version wiederherstellen</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">Versionen wiederherzustellen</a>.</td>
-  </tr>
-  <tr>
-   <td>Zwischen Launches wechseln</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/launches-promoting.md">zwischen Launches zu wechseln</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Seite übersetzen</td>
-   <td>Entfernt</td>
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-administering/tc-manage.md">Seiten zu Übersetzungsprojekten hinzufügen</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Timewarp (Zeit auswählen und Site in vorherigem Zustand durchsuchen)<br /> </td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Berechtigungen festlegen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>ClientContext-Benutzeroberfläche<br /> </td>
-   <td>Ersetzt</td>
-   <td>Verwenden Sie künftig die <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a>-Benutzeroberfläche.</td>
-  </tr>
-  <tr>
-   <td>Inhaltssuche für die unterschiedlichen Medientypen<br /> </td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Komponentenliste</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Komponenten kopieren und einfügen<br /> </td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Komponentenliste in Zwischenablage kopieren</td>
-   <td>Fehlt</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Rückgängig/Wiederholen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Inhalte per Drag-and-Drop in den Komponentenplatzhalter einfügen</td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Inhalte mit der automatischen Komponentenerstellung direkt per Drag-and-Drop in den ParSys-Platzhalter einfügen<br /> </td>
-   <td>Umfassend</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
+| Funktion | Status | Kommentar |
+|--- |--- |--- |
+| Webseiten bearbeiten | Umfassend |  |
+| Mobile Webseiten bearbeiten | Fertig stellen |  |
+| Per Design-Importtool importierte Inhalte bearbeiten | Fertig stellen |  |
+| E-Mails bearbeiten | Umfassend |  |
+| Bearbeiten von Hybrid-Mobil-Apps | Fertig stellen |  |
+| Formulare bearbeiten | Fertig stellen |  |
+| Angebote bearbeiten | Fertig stellen |  |
+| Workflow-Modelle bearbeiten | Fertig stellen |  |
+| Modus: Bearbeiten und Vorschau | Fertig stellen |  |
+| Responsive Vorschau | Fertig stellen |  |
+| Modus: Entwurf bearbeiten | Umfassend |  |
+| Modus: Strukturvorlagen-Modus | Umfassend |  |
+| Modus: Live Copy-Status | Fertig stellen |  |
+| Anmerkungen hinzufügen | Umfassend |  |
+| Eigenschaften bearbeiten | Fertig stellen |  |
+| Roll-out-Seite | Fertig stellen |  |
+| Arbeitsablauf für Beginn und Anzeige | Fertig stellen |  |
+| Handling von Workflow-Paketen | Nahezu umfassend | Vollständig verfügbar in der touchfähigen Benutzeroberfläche. Mehrere Workflow-Nutzdaten werden weiterhin in der klassischen Benutzeroberfläche angezeigt. |
+| Seite sperren/entsperren | Umfassend |  |
+| Seite veröffentlichen | Fertig stellen |  |
+| Veröffentlichen einer Seite rückgängig machen | Umfassend |  |
+| Kopieren einer Seite | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu kopieren](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
+| Seite verschieben | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu verschieben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
+| Seite löschen | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu löschen](/help/sites-authoring/managing-pages.md#deleting-a-page). |
+| Verweise einblenden | Entfernt | Use Site Admin to see the [detailed reference list](/help/sites-authoring/author-environment-tools.md#references). |
+| Auditprotokoll | Entfernt | Verwenden Sie Sites Admin und [öffnen Sie die Aktivitätsschiene](/help/sites-authoring/author-environment-tools.md#events-timeline). |
+| Version erstellen | Entfernt | Verwenden Sie Sites Admin, um [neue Versionen zu erstellen](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
+| Version wiederherstellen | Entfernt | Verwenden Sie Sites Admin, um [Versionen wiederherzustellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
+| Zwischen Launches wechseln | Entfernt | Verwenden Sie Sites Admin, um [zwischen Launches zu wechseln](/help/sites-authoring/launches-promoting.md). |
+| Seite übersetzen | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu Übersetzungsprojekten hinzufügen](/help/sites-administering/tc-manage.md). |
+| Timewarp (Zeit auswählen und Site in vorherigem Zustand durchsuchen) | Fertig stellen |  |
+| Berechtigungen festlegen | Umfassend |  |
+| ClientContext-Benutzeroberfläche | Ersetzt | Verwenden Sie künftig die [ContextHub](/help/sites-authoring/ch-previewing.md)-Benutzeroberfläche. |
+| Inhaltssuche für die unterschiedlichen Medientypen | Fertig stellen |  |
+| Komponentenliste | Fertig stellen |  |
+| Kopieren und Einfügen von Komponenten | Fertig stellen |  |
+| Komponentenliste in Zwischenablage kopieren | Fehlt |  |
+| Rückgängig/Wiederholen | Umfassend |  |
+| Ziehen von Inhalten in Platzhalter für Komponenten | Fertig stellen |  |
+| Ziehen Sie Inhalte direkt in den Platzhalter parsys mit automatischer Komponentenerstellung | Fertig stellen |  |
 
 ## Funktionsstatus: Text-, Tabellen- und Bild-Editoren {#feature-status-text-table-and-image-editors}
 
-Dies ist eine Liste der Funktionen, die die klassische Benutzeroberfläche &quot;Text&quot;, &quot;Tabelle&quot;und &quot;Bild-Editor&quot;haben, sowie der Status in der touchfähigen Benutzeroberfläche.
+Dies ist eine Liste von Funktionen, die die klassischen Benutzeroberflächentext-, Tabellen- und Bild-Editor haben und den Status in der touchfähigen Benutzeroberfläche.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Funktion</strong></td>
-   <td><strong>Status </strong></td>
-   <td><strong>Kommentar<br /> </strong></td>
-  </tr>
-  <tr>
-   <td>Rich-Text-Editor</td>
-   <td>Fertig stellen</td>
-   <td>Einsetzbar, im Dialog und im Vollbildmodus.</td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-ins aktivieren/deaktivieren</td>
-   <td>Umfassend<br /> </td>
-   <td>Kann mit dem <a href="/help/sites-authoring/templates.md">Vorlageneditor</a>ausgeführt werden.</td>
-  </tr>
-  <tr>
-   <td>RTE für Text verwenden</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Links und Anker</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Zeichenzuordnung</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Kopieren/Einfügen</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Aus Microsoft Word einfügen<br /> </td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Suchen &amp; Ersetzen</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Textformate (fett, ...)</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Hochgestellt</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Blocksatz</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Listen (Aufzählungszeichen/Nummern)</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Absatzformat</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Textstile</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Quell-Editor (HTML bearbeiten)<br /> </td>
-   <td>Umfassend<br /> </td>
-   <td>Nur im Dialog und Vollbild verfügbar.<br /> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in:Rechtschreibprüfung</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Tabelle (eingebetteter Tabelleneditor)</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-in: Rückgängig/Wiederholen<br /> </td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>RTE-Plug-In: Inline-Bilder zulassen</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Tabelleneditor</td>
-   <td>Fertig stellen</td>
-   <td>Einsetzbar, im Dialog und im Vollbildmodus.<br /> </td>
-  </tr>
-  <tr>
-   <td>Bild in Tabellenzelle ziehen und ablegen<br /> </td>
-   <td>Fertig stellen</td>
-   <td>In-line-fähig</td>
-  </tr>
-  <tr>
-   <td>Bild-Editor<br /> </td>
-   <td>Fertig stellen</td>
-   <td>Einsetzbar, im Dialog und im Vollbildmodus.<br /> </td>
-  </tr>
-  <tr>
-   <td>IPE-Plug-ins aktivieren/deaktivieren</td>
-   <td>Fertig stellen</td>
-   <td>AEM 6.3 hat eine Benutzeroberfläche im <a href="/help/sites-authoring/templates.md">Vorlageneditor</a>eingeführt.</td>
-  </tr>
-  <tr>
-   <td>IPE-Plug-in: Beschneiden</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>IPE-Plug-in: Spiegeln</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>IPE-Plug-in: Rückgängig/Wiederholen</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>IPE-Plug-in: Imagemap</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>IPE-Plug-in: Drehen</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>IPE-Plug-in:Zoom</td>
-   <td>Umfassend<br /> </td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
+| Funktion | Status | Kommentar |
+|--- |--- |--- |
+| Rich-Text-Editor | Fertig stellen | Einsetzbar, im Dialog und im Vollbildmodus. |
+| RTE-Plug-ins aktivieren/deaktivieren | Fertig stellen | Kann mit dem [Vorlageneditor](/help/sites-authoring/templates.md)ausgeführt werden. |
+| RTE für Text verwenden | Fertig stellen |  |
+| RTE-Plug-in: Links und Anker | Fertig stellen |  |
+| RTE-Plug-in: Zeichenzuordnung | Fertig stellen |  |
+| RTE-Plug-in: Kopieren/Einfügen | Fertig stellen |  |
+| RTE-Plug-in: Aus Microsoft Word einfügen | Fertig stellen |  |
+| RTE-Plug-in: Suchen und ersetzen | Fertig stellen |  |
+| RTE-Plug-in: Textformate (fett, ...) | Fertig stellen |  |
+| RTE-Plug-in: Tiefgestellt | Fertig stellen |  |
+| RTE-Plug-in: Blocksatz | Fertig stellen |  |
+| RTE-Plug-in: Listen (Aufzählungszeichen/Nummern) | Fertig stellen |  |
+| RTE-Plug-in: Absatzformat | Fertig stellen |  |
+| RTE-Plug-in: Textstile | Fertig stellen |  |
+| RTE-Plug-in: Quell-Editor (HTML bearbeiten) | Fertig stellen | Nur im Dialog und Vollbild verfügbar. |
+| RTE-Plug-in: Rechtschreibprüfung | Fertig stellen |  |
+| RTE-Plug-in: Tabelle (eingebetteter Tabelleneditor) | Fertig stellen |  |
+| RTE-Plug-in: Rückgängig/Wiederholen | Fertig stellen |  |
+| RTE-Plug-In: Inline-Bilder zulassen | Fertig stellen |  |
+| Tabelleneditor | Fertig stellen | Einsetzbar, im Dialog und im Vollbildmodus. |
+| Bild in Tabellenzelle ziehen | Fertig stellen | In-line-fähig |
+| Bild-Editor | Fertig stellen | Einsetzbar, im Dialog und im Vollbildmodus. |
+| IPE-Plug-ins aktivieren/deaktivieren | Fertig stellen | In AEM 6.3 wurde eine Benutzeroberfläche im [Vorlageneditor](/help/sites-authoring/templates.md)eingeführt. |
+| IPE-Plug-in: Beschneiden | Fertig stellen |  |
+| IPE-Plug-in: Spiegeln | Fertig stellen |  |
+| IPE-Plug-in: Rückgängig/Wiederholen | Fertig stellen |  |
+| IPE-Plug-in: Imagemap | Fertig stellen |  |
+| IPE-Plug-in: Drehen | Fertig stellen |  |
+| IPE-Plug-in: Zoom | Fertig stellen |  |
 
 ## Funktionsstatus: Werkzeuge {#feature-status-tools}
 
 Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberfläche sowie deren Status in der Touch-optimierten Benutzeroberfläche.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Funktion<br /> </strong></td>
-   <td><strong>Status<br /> </strong></td>
-   <td><strong>Kommentar</strong></td>
-  </tr>
-  <tr>
-   <td>Aufgabenverwaltung</td>
-   <td>Ersetzt</td>
-   <td>6.0 Einführung in <a href="/help/sites-authoring/projects.md">Projekte und Aufgaben</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Workflow-Posteingang<br /> </td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Konfiguration von Workflow zu Seitenvorlage (<code>/etc/workflow/wcm/templates.html</code>)</td>
-   <td>Fehlt<br /> </td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.</td>
-  </tr>
-  <tr>
-   <td>Tagging-Admin-Benutzeroberfläche<br /> </td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>MSM/Blueprint Control Center</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Blueprint Manager-Benutzeroberfläche</td>
-   <td>Fertig stellen</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Benutzeroberfläche der Roll-out-Konfiguration</td>
-   <td>Fehlt</td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.</td>
-  </tr>
-  <tr>
-   <td>Benutzeroberfläche "Benutzer, Gruppen und Berechtigungen"<br /> </td>
-   <td>Meist abgeschlossen<br /> </td>
-   <td>Für erweiterte Bearbeitung von Berechtigungen verwenden Sie die klassische Benutzeroberfläche.<br /> </td>
-  </tr>
-  <tr>
-   <td>Versionen bereinigen (<code>/etc/versioning/purge.html</code>)</td>
-   <td>Fehlt</td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.</td>
-  </tr>
-  <tr>
-   <td>Prüfer für externe Links (<code>/etc/linkchecker.html</code>)</td>
-   <td>Fehlt</td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.<br /> </td>
-  </tr>
-  <tr>
-   <td>Masseneditor (<code>/etc/importers/bulkeditor.html</code>)</td>
-   <td>Fehlt<br /> </td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.</td>
-  </tr>
-  <tr>
-   <td>Hochladen von Miniaturbildern zum Hinzufügen oder Überschreiben dieser<br /> </td>
-   <td>Fehlt</td>
-   <td>Verwenden Sie die klassische Benutzeroberfläche.</td>
-  </tr>
- </tbody>
-</table>
-
+| Funktion | Status | Kommentar |
+|--- |--- |--- |
+| Aufgabenverwaltung | Ersetzt | 6.0 Einführung von Projekten und Aufgaben. |
+| Workflow-Posteingang | Fertig stellen |  |
+| Konfiguration von Workflow zu Seitenvorlage (`/etc/workflow/wcm/templates.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Tagging-Admin-Benutzeroberfläche | Fertig stellen |  |
+| MSM/Blueprint Control Center | Fertig stellen |  |
+| Blueprint Manager-Benutzeroberfläche | Fertig stellen |  |
+| Benutzeroberfläche der Roll-out-Konfiguration | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Benutzeroberfläche &quot;Benutzer, Gruppen und Berechtigungen&quot; | Meist abgeschlossen | Für erweiterte Bearbeitung von Berechtigungen verwenden Sie die klassische Benutzeroberfläche. |
+| Versionen bereinigen (`/etc/versioning/purge.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Prüfer für externe Links (`/etc/linkchecker.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Masseneditor (`/etc/importers/bulkeditor.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Miniaturansichten hochladen, um diese hinzuzufügen oder zu überschreiben | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
