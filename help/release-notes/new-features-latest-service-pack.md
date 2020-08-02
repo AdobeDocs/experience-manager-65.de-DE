@@ -4,10 +4,10 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager 6.5 Service Packs bieten in vierteljährlichen Abständ
 
 In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wichtigsten Funktionen der vorherigen 6.5 Service Packs](#key-features-previous-service-packs)und einige der [wichtigsten Versionen seit Experience Manager 6.5.4.0](#key-releases-since-last-sp) erläutert.
 
-## Adobe Experience Manager-Sites {#aem-sites}
+## Adobe Experience Manager Sites {#aem-sites}
 
 ### Verbesserungen der Zugänglichkeit {#accessibility-sites}
 
@@ -56,7 +56,7 @@ In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wi
 
 * Auf viele Elemente, Steuerelemente und Eingabefelder der Benutzeroberfläche kann über die Tastatur zugegriffen werden.
 
-* Farbe und Kontrast einiger Elemente der Benutzeroberfläche werden aktualisiert, sodass Benutzer mit eingeschränkter Sicht oder Benutzer ohne Farbwahrnehmung diese Elemente der Benutzeroberfläche unterscheiden können. Beispielsweise wird die Farbe der Bewertungssymbole für Sterne (z. B. im [!UICONTROL Bewertungsabschnitt] auf der Registerkarte &quot; [!UICONTROL Erweitert] &quot;in den Asset- [!UICONTROL Eigenschaften] oder in der Ansicht der Karten) für einen entsprechenden Kontrast geändert.
+* Farbe und Kontrast einiger Elemente der Benutzeroberfläche werden aktualisiert, sodass Benutzer mit eingeschränkter Sehkraft oder Benutzer ohne Farbwahrnehmung diese Elemente der Benutzeroberfläche unterscheiden können. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
 
    ![Bewertungssymbole mit verbessertem Kontrast](assets/star-rating-icons.png)
 
@@ -90,7 +90,7 @@ Sie können die Agent-Benutzeroberfläche verwenden, um einen oder mehrere Entw�
 
 ### [!DNL Oracle WebLogic] Anwendungsserverunterstützung {#weblogic-support}
 
-Adobe Experience Manager Forms unterstützt jetzt [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms on JEE. Sie können von einer früheren Version aktualisieren oder einen neuen Experience Manager 6.5 Forms on JEE-Server auf [!DNL Oracle WebLogic] 12.2.1.4 und höher einrichten. Später entspricht den Änderungen der kleineren Version, wobei x in 12.2.1.x durch eine Versionsnummer ersetzt wird.
+Adobe Experience Manager Forms hat Unterstützung [!DNL Oracle WebLogic 12] für Adobe Experience Manager Forms on JEE hinzugefügt. Sie können von einer früheren Version aktualisieren oder ein neues Experience Manager 6.5 Forms auf dem JEE-Server auf [!DNL Oracle WebLogic] 12.2.1.4 und höher einrichten. Später entspricht den Änderungen der kleineren Version, wobei x in 12.2.1.x durch eine Versionsnummer ersetzt wird.
 
 ### Verbesserungen der Zugänglichkeit {#accessibility-improvements}
 
@@ -134,7 +134,7 @@ Sie können jetzt Stile im Komponentendialogfeld mit dem erweiterten Stilsystem 
 
 #### Konfigurieren [!DNL Experience Manager Assets] mit [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Der Kanal für die Autorisierung zwischen [!DNL Experience Manager Assets] und [!DNL Brand Portal] wird geändert. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] ist jetzt mit [!DNL Brand Portal] Adobe I/O konfiguriert, das ein IMS-Token zur Autorisierung Ihres [!DNL Brand Portal] Mieters abruft.
+Der Kanal für die Autorisierung zwischen [!DNL Experience Manager Assets] und [!DNL Brand Portal] wird geändert. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] ist jetzt mit [!DNL Brand Portal] der Adobe I/O konfiguriert, die ein IMS-Token für die Autorisierung Ihres [!DNL Brand Portal] Mieters abruft.
 
 The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. See [Configure Experience Manager Assets with Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
@@ -167,7 +167,7 @@ Smartes Zuschneiden für Video – eine optionale Funktion, die in Videoprofilen
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Generieren einer druckbaren Ausgabe in Experience Manager Forms Workflows (6.5.4.0) {#generate-printable-output}
+#### Druckbare Ausgabe in Experience Manager Forms Workflows (6.5.4.0) generieren {#generate-printable-output}
 
 Mit dem Arbeitsablaufschritt &quot;Druckbare Ausgabe generieren&quot;können Sie eine Quellvorlagendatei in eine Datendatei integrieren. Mit dieser Integration können Sie verschiedene Kopien der Vorlagendatei drucken oder speichern. Der Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe. Weitere Informationen zu dieser Funktion finden Sie unter [Forms-zentrierter Arbeitsablauf auf OSGi - Schritt-Referenz](../forms/using/aem-forms-workflow-step-reference.md).
 
@@ -216,7 +216,7 @@ Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus ei
 
 ## Wichtigste Veröffentlichungen seit Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
 
-Zwischen dem 05. März 2020 und dem 04. Juni 2020 hat Adobe zusätzlich zu den Service Packs und kumulativen Fix Packs die folgenden Produkte veröffentlicht:
+Zwischen dem 05. März 2020 und dem 04. Juni 2020 veröffentlichte die Adobe zusätzlich zu den Service Packs und kumulativen Fix Packs die folgenden Inhalte:
 
 * [Das Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) steht zum Herunterladen von Experience Manager Service Packs, kumulativen Fix Packs, Hotfixes und Feature Packs zur Verfügung.
 
@@ -224,7 +224,7 @@ Zwischen dem 05. März 2020 und dem 04. Juni 2020 hat Adobe zusätzlich zu den S
 
 * [Experience Manager-Desktop-App 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager-Bildschirme: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experience Manager Screens: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
