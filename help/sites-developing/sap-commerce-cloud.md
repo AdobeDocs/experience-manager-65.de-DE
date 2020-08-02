@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 85%
@@ -35,7 +35,7 @@ Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dadurc
 >
 >[API-Dokumentation](/help/sites-developing/ecommerce.md#api-documentation) ist ebenfalls verfügbar.
 
-Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM-Komponenten zur Verfügung. Derzeit sind folgende Komponenten verfügbar:
+Zur Verwendung der Integrationsebene stehen eine Reihe vordefinierter AEM zur Verfügung. Derzeit sind folgende Komponenten verfügbar:
 
 * Produktanzeige
 * Warenkorb
@@ -51,7 +51,7 @@ Das eCommerce-Framework kann mit einer beliebigen eCommerce-Lösung verwendet we
 
    * Engines können anhand einer `commerceProvider`-Service-Eigenschaft identifiziert werden.
 
-* AEM unterstützt `Resource.adaptTo()` und `CommerceService` `Product`
+* AEM unterstützt `Resource.adaptTo()` für `CommerceService` und `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -68,7 +68,7 @@ Das eCommerce-Framework kann mit einer beliebigen eCommerce-Lösung verwendet we
 
 Siehe folgendes Beispiel:
 
-| `cq:commerceProvider = geometrixx` | Bei einer standardmäßigen AEM-Installation ist eine spezifische Implementierung erforderlich. zum Beispiel das Beispiel geometrixx, das minimale Erweiterungen der generischen API enthält |
+| `cq:commerceProvider = geometrixx` | in einer AEM-Standardinstallation eine spezifische Implementierung erforderlich ist; zum Beispiel das Beispiel geometrixx, das minimale Erweiterungen der generischen API enthält |
 |---|---|
 | `cq:commerceProvider = hybris` | Hybridimplementierung |
 
@@ -112,11 +112,7 @@ Für das Entwickeln mit Hybris 4 ist Folgendes erforderlich:
 
    `-P hybris4`
 
-   Es lädt die vorkonfigurierte Hybris 4-Distribution herunter und bettet sie in das Bundle ein:
-
-   ```
-   cq-commerce-hybris-server
-   ```
+   Es lädt die vorkonfigurierte Hybris 4 Distribution herunter und bettet sie in das Bundle ein `cq-commerce-hybris-server`.
 
 * Nehmen Sie im OSGi-Konfigurations-Manager folgende Einstellungen vor:
 
@@ -173,7 +169,7 @@ In Hybris gepflegte Produktdaten müssen in AEM verfügbar sein. Dafür wurde fo
 
    * 
 
-      ```
+      ```js
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -241,25 +237,25 @@ Im Allgemeinen:
 
 Die Knoten für die Produktvarianten und Produktdaten müssen 1:1 zugeordnet sein.
 
-Produktverweise müssen außerdem einen Knoten für jede präsentierte Variante haben, es müssen jedoch nicht alle Varianten präsentiert werden. Wenn ein Produkt beispielsweise die Varianten S, M und L hat, können die Produktdaten wie folgt aussehen:
+Produktverweise müssen außerdem einen Knoten für jede präsentierte Variante haben, es müssen jedoch nicht alle Varianten präsentiert werden. Wenn ein Produkt beispielsweise die Varianten S, M und L hat, können die Produktdaten wie folgt aussehen.
 
 ```shell
 etc
-  commerce
-    products
-      shirt
-        shirt-s
-        shirt-m
-        shirt-l
+|──commerce
+|  |──products
+|     |──shirt
+|       |──shirt-s
+|       |──shirt-m
+|       |──shirt-l
 ```
 
-Im Katalog „big-and-tall“ sind möglicherweise nur diese Daten enthalten:
+Im Katalog „big-and-tall“ sind möglicherweise nur diese Daten enthalten.
 
 ```shell
 content
-  big-and-tall
-    shirt
-      shirt-l
+|──big-and-tall
+|  |──shirt
+|     |──shirt-l
 ```
 
 Es ist nicht zwingend erforderlich, Produktdaten zu verwenden. Sie können alle Produktdaten unter den Verweisen im Katalog speichern. Allerdings müssen Sie dann alle Produktdaten duplizieren, wenn Sie mehrere Kataloge verwenden möchten.
@@ -426,7 +422,7 @@ public class AxisFilter implements VariantFilter {
 
 **Speicher**
 
-* Speicher
+* Speicherung
 
    * Bei Hybris steuert der Hybris-Server den Warenkorb.
    * Bei AEM werden Warenkörbe im Allgemeinen in [ClientContext](/help/sites-administering/client-context.md) gespeichert.
@@ -457,9 +453,9 @@ Die `CommerceSession` steuert die drei folgenden Elemente:
    Das Inhaltsschema des Warenkorbs wird von der API festgelegt:
 
    ```java
-       public void addCartEntry(Product product, int quantity);
-       public void modifyCartEntry(int entryNumber, int quantity);
-       public void deleteCartEntry(int entryNumber);
+   public void addCartEntry(Product product, int quantity);
+   public void modifyCartEntry(int entryNumber, int quantity);
+   public void deleteCartEntry(int entryNumber);
    ```
 
 1. **Preise**
@@ -467,12 +463,12 @@ Die `CommerceSession` steuert die drei folgenden Elemente:
    Das Preisschema wird ebenfalls von der API festgelegt:
 
    ```java
-       public String getCartPreTaxPrice();
-       public String getCartTax();
-       public String getCartTotalPrice();
-       public String getOrderShipping();
-       public String getOrderTotalTax();
-       public String getOrderTotalPrice();
+   public String getCartPreTaxPrice();
+   public String getCartTax();
+   public String getCartTotalPrice();
+   public String getOrderShipping();
+   public String getOrderTotalTax();
+   public String getOrderTotalPrice();
    ```
 
 1. **Auftragsdetails**
@@ -480,9 +476,9 @@ Die `CommerceSession` steuert die drei folgenden Elemente:
    Die Auftragsdetails werden jedoch *nicht* von der API festgelegt:
 
    ```java
-       public void updateOrderDetails(Map<String, String> orderDetails);
-       public Map<String, String> getOrderDetails();
-       public void submitOrder();
+   public void updateOrderDetails(Map<String, String> orderDetails);
+   public Map<String, String> getOrderDetails();
+   public void submitOrder();
    ```
 
 **Versandberechnungen**
@@ -560,7 +556,7 @@ AEM kann mit diversen eCommerce-Systemen integriert werden. Dazu ist eine Strate
 
 * Konten in Hybris
 
-   AEM erstellt für jeden Käufer ein entsprechendes (untergeordnetes) Konto in Hybris. Der Benutzername dieses Kontos ist identisch mit dem AEM-Benutzernamen. Ein kryptografisches Zufallskennwort wird automatisch in AEM erstellt und gespeichert (verschlüsselt).
+   AEM erstellt für jeden Käufer ein entsprechendes (Untergeordnet-)Konto in hybris. Der Benutzername dieses Kontos ist mit dem AEM Benutzernamen identisch. Ein kryptografisches Zufallskennwort wird automatisch in AEM erstellt und gespeichert (verschlüsselt).
 
 #### Bereits vorhandene Benutzer {#pre-existing-users}
 
@@ -592,7 +588,7 @@ Um vorhandene Funktionalität nutzen zu können, gilt Folgendes für den benutze
 
 * has to implement the `ImportHandler` interface
 
-* can extend the `DefaultImportHandler`
+* can extend the `DefaultImportHandler`.
 
 ```java
 /**
@@ -602,66 +598,66 @@ Um vorhandene Funktionalität nutzen zu können, gilt Folgendes für den benutze
  */
 public interface ImportHandler {
 
-    /**
-     * Not used.
-     */
-    public void createTaxonomie(ImporterContext ctx);
+  /**
+  * Not used.
+  */
+  public void createTaxonomie(ImporterContext ctx);
 
-    /**
-     * Creates a catalog with the given name.
-     * @param ctx   The importer context
-     * @param name  The catalog's name
-     * @return Path of created catalog
-     */
-    public String createCatalog(ImporterContext ctx, String name) throws Exception;
+  /**
+  * Creates a catalog with the given name.
+  * @param ctx   The importer context
+  * @param name  The catalog's name
+  * @return Path of created catalog
+  */
+  public String createCatalog(ImporterContext ctx, String name) throws Exception;
 
-    /**
-     * Creates a product from the given values.
-     * @param ctx                The importer context
-     * @param values             The product's properties
-     * @param parentCategoryPath The containing category's path
-     * @return Path of created product
-     */
-    public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a product from the given values.
+  * @param ctx                The importer context
+  * @param values             The product's properties
+  * @param parentCategoryPath The containing category's path
+  * @return Path of created product
+  */
+  public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 
-    /**
-     * Creates a variant product from the given values.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The base product's path
-     * @return Path of created product
-     */
-    public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
+  /**
+  * Creates a variant product from the given values.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The base product's path
+  * @return Path of created product
+  */
+  public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
 
-    /**
-     * Creates an asset for a product. This is usually a product
-     * image.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The product's path
-     * @return Path of created asset
-     */
-    public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
+  /**
+  * Creates an asset for a product. This is usually a product
+  * image.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The product's path
+  * @return Path of created asset
+  */
+  public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
 
-    /**
-     * Creates a category from the given values.
-     * @param ctx           The importer context
-     * @param values        The category's properties
-     * @param parentPath    Path of parent category or base path of import in case of root category
-     * @return Path of created category
-     */
-    public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a category from the given values.
+  * @param ctx           The importer context
+  * @param values        The category's properties
+  * @param parentPath    Path of parent category or base path of import in case of root category
+  * @return Path of created category
+  */
+  public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 }
 ```
 
-Damit der benutzerdefinierte Handler vom Importtool erkannt wird, muss die `service.ranking`- -Eigenschaft einen Wert über 0 aufweisen, zum Beispiel:
+Damit der benutzerdefinierte Handler vom Importtool erkannt wird, muss die `service.ranking`- -Eigenschaft einen Wert über 0 aufweisen, zum Beispiel.
 
 ```java
 @Component
 @Service
 @Property(name = "service.ranking", value = 100)
-public class MyImportHandler extends DefaultImportHandler {
-    ...
+public class MyImportHandler extends DefaultImportHandler
+{
+...
 }
 ```
-
