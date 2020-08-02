@@ -4,7 +4,7 @@ description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 S
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a599a1c75a1933d6b21e60e96485f43a0aedd679
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '4496'
 ht-degree: 7%
@@ -20,7 +20,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | Version | 6.5.5.0 |
 | Typ | Service Pack-Version |
-| Datum | 04. Juni 2020 |
+| Datum           | 04. Juni 2020 |
 | Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
 ## Inhalt von Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
@@ -35,11 +35,11 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manage
 
 * Speichern Sie einen Entwurf [!DNL Interactive Communication] als Entwurf.
 
-* Unterstützung [!DNL Oracle WebLogic 12] für Experience Manager Forms on JEE.
+* Unterstützung für [!DNL Oracle WebLogic 12] Experience Manager Forms on JEE.
 
 * Verbesserte Ausnahmebehandlung im [!DNL Adobe Experience Manager Assets] Benutzeroberflächenfluss.
 
-* Zum Abrufen der Veröffentlichungs-URL für Dynamic Media in Scene7 `getRemoteAssetPublishURL` wird der `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` Benutzeroberfläche eine neue Methode hinzugefügt.
+* Um die Veröffentlichungs-URL für Dynamic Media Scene7 abzurufen, `getRemoteAssetPublishURL` wird der `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` Benutzeroberfläche eine neue Methode hinzugefügt.
 
 * [Barrierefreiheitsverbesserungen](#assets-6550) in Übereinstimmung mit [!DNL Adobe Experience Manager Assets] den Web Content Accessibility Guidelines (WCAG).
 
@@ -191,7 +191,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * [!UICONTROL Der Assistent zur Konfiguration] von verbundenen Assets funktioniert mit dem Fehler 404 nicht, wenn 6.5.3 unter 6.5.1 (NPR-32730) installiert wird.
 
-* Während des XMP-Schreibvorgangs ändern alle benutzerdefinierten Metadateneigenschaften des Namensraums das benutzerdefinierte Präfix des Namensraums in &quot;ns2&quot;anstelle des konfigurierten Namensraums (NPR-32748).
+* Während des XMP Schreibvorgangs ändern alle benutzerdefinierten Metadateneigenschaften des Namensraums das benutzerdefinierte Präfix des Namensraums in &quot;ns2&quot;anstelle des konfigurierten Namensraums (NPR-32748).
 
 * Verzögertes Laden wird nicht ausgelöst und es werden nur 100 Assets angezeigt, die ausgewählt werden, um die Aufgaben aus dem Benachrichtigungs-Posteingang zu überprüfen (NPR-32750).
 
@@ -199,7 +199,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * In Protokollen zum Öffnen einer intelligenten Sammlung mit mehr als 10.000 Assets (NPR-32980) werden seitenübergreifende Warnungen angezeigt.
 
-* Beim Verschieben von Assets von einem Ordner in einen anderen im [!DNL Adobe Experience Manager] Scene7-Runmode-Modus (NPR-32995) werden die Asset-Namen in Kleinbuchstaben geändert.
+* Asset-Namen werden in Kleinbuchstaben geändert, wenn Assets von einem Ordner in einen anderen verschoben werden, während sie im Dynamic Media Scene7 Runmode (NPR-32995) [!DNL Adobe Experience Manager] arbeiten.
 
 * Ein durchsuchtes Asset kann nicht gelöscht werden, nachdem es aus den Suchergebnissen zu seinen Eigenschaften navigiert und dann zu den Suchergebnissen zurückgekehrt ist, um es zu löschen (NPR-32998).
 
@@ -207,13 +207,13 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * [!UICONTROL Die nächste] Option ist nicht aktiviert, wenn der übergeordnete Knoten ausgewählt (wobei ein einzelner untergeordneter Ordner sichtbar ist) und anschließend der untergeordnete Ordner ausgewählt wird (NPR-33275).
 
-* Berechtigungen zum Ein- und Auschecken sind für Benutzer mit Berechtigung zum Löschen auf Adobe Asset Link (AAL) deaktiviert, auch wenn andere Berechtigungen wie Lesen, Erstellen oder Ändern gewährt werden (NPR-33272).
+* Berechtigungen zum Ein- und Auschecken sind auf Adobe Asset Link (AAL) für Benutzer mit Berechtigung zum Löschen deaktiviert, auch wenn andere Berechtigungen wie Lesen, Erstellen oder Ändern gewährt werden (NPR-33272).
 
 * Im Dialogfeld zum Herunterladen von Assets (NPR-33167) sind keine Smart-Zuschneiden-Darstellungen verfügbar.
 
 * Ausnahmen sind in Protokollen beim Öffnen der Rail-Darstellungen für eine PDF-Datei unter einem Profil mit intelligenten Zuschnitten (CQ-4294201) zu beobachten.
 
-* Bildvorgaben werden nicht veröffentlicht, wenn der Synchronisierungsmodus [!UICONTROL von] Dynamic Media beim Experience Manager mit Dynamic Media im Scene7-Modus (CQ-4294200) standardmäßig deaktiviert ist.
+* Bildvorgaben werden nicht veröffentlicht, wenn der Synchronisierungsmodus [!UICONTROL von] Dynamic Media beim Experience Manager mit Dynamic Media Scene7 Runmode (CQ-4294200) standardmäßig deaktiviert ist.
 
 * Die Verarbeitung von Assets während des Massen-Uploads wird blockiert, und die Workflow-Instanz zeigt angehaltene Instanzen des DAM-Aktualisierungsassets (CQ-4293916).
 
@@ -231,7 +231,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
    * Es dauert zu lange, bis große Binärdateien auf die Image Processing-Server von Dynamic Media hochgeladen werden.
 
-   * Die Zeit zum Generieren von Miniaturbildern auf dem Experience Manager nimmt aufgrund der Dynamic Media in Scene7 zu.
+   * Die Zeit für die Erstellung von Miniaturbildern auf dem Experience Manager nimmt aufgrund der Dynamic Media der Scene7-Architektur zu.
 
 * Probleme mit der Scene7-Migration bei Dynamic Media mit einer großen Anzahl von Assets sind nicht möglich (CQ-4279206).
 
@@ -260,9 +260,9 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * Der interne Cache wird gelöscht, wenn eine Seite mit einer Adobe Target-Komponente veröffentlicht wird (NPR-33162).
 * Die Integration mit Adobe Target funktioniert nicht mit [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Beim Konfigurieren von Adobe Target werden die Felder [!UICONTROL Firma] und [!UICONTROL Report Suite] nicht angezeigt, wenn eine Berichte-Quelle ausgewählt wird (NPR-32502).
-* Beim Exportieren [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie Source Product nicht in Adobe Target exportiert (NPR-32159).
-* Autorisierte IMS-Benutzer in der lokalen Experience Manager-Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
-* Auf der Seite &quot;Adobe Launch-Konfigurationen&quot;werden nicht alle Datensätze angezeigt (NPR-33011).
+* Beim Exportieren [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie &quot;Quellprodukt&quot;nicht in Adobe Target exportiert (NPR-32159).
+* Autorisierte IMS-Experience Manager in der lokalen Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
+* Adobe Startkonfigurationsseite zeigt nicht alle Datensätze an (NPR-33011).
 * Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können die Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
 
 ### Übersetzungsprojekte {#translation-6550}
@@ -308,13 +308,13 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 >Experience Manager Service Pack enthält keine Korrekturen für [!DNL Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. Außerdem wird ein kumulatives Installationsprogramm herausgegeben, das Fehlerbehebungen für AEM Forms JEE enthält. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
 * Correspondence Management: Die Reihenfolge der Vermögenswerte in einem Zielgruppen-Bereich wird nach der Einreichung eines Schreibens (NPR-33359, NPR-33153) geändert.
-* Adaptive Formulare: Wenn ein Benutzer ein adaptives Formular bearbeitet, funktioniert die Option [!UICONTROL Beginn-Workflow] im Menü &quot; [!UICONTROL Seiteninformationen] &quot;nicht (NPR-33004).
-* Adaptive Formulare: Der Benutzer kann ein adaptives Formular nicht mit mehr als einer Anlage speichern (NPR-32997).
-* Adaptive Formulare: Das Ändern des Bedienfeldlayouts in einem adaptiven Formular führt zu einem Fehler (CQ-4293880).
-* Adaptive Formulare: Eine neue Zeile zu einer Zeichenfolge in einem Wörterbuch für adaptive Formulare fügt dem Wörterbuch Zeichen hinzu (NPR-33266). `&#xa;`
-* Barrierefreiheit adaptiver Formulare: Wenn ein Benutzer ein adaptives Formular als HTML-Formular Vorschau, kann das [!UICONTROL Scribble-Signatur] -Feld den Tabstopp nicht beibehalten (NPR-33159).
-* Barrierefreiheit adaptiver Formulare: Die Fehlermeldungen, die beim Senden eines adaptiven Formulars angezeigt werden, sind nicht mit einem `aria-describedBy` Attribut verknüpft (NPR-33071).
-* Barrierefreiheit adaptiver Formulare: Felder, die in einem adaptiven Formular als Pflichtfelder markiert sind, haben im ARIA-Schema (NPR-33070) nicht das obligatorische Attribut &quot;True&quot;.
+* Adaptives Forms: Wenn ein Benutzer ein adaptives Formular bearbeitet, funktioniert die Option [!UICONTROL Beginn-Workflow] im Menü &quot; [!UICONTROL Seiteninformationen] &quot;nicht (NPR-33004).
+* Adaptives Forms: Der Benutzer kann ein adaptives Formular nicht mit mehr als einer Anlage speichern (NPR-32997).
+* Adaptives Forms: Das Ändern des Bedienfeldlayouts in einem adaptiven Formular führt zu einem Fehler (CQ-4293880).
+* Adaptives Forms: Eine neue Zeile zu einer Zeichenfolge in einem Wörterbuch für adaptive Formulare fügt dem Wörterbuch Zeichen hinzu (NPR-33266). `&#xa;`
+* Adaptive Forms-Barrierefreiheit: Wenn ein Benutzer ein adaptives Formular als HTML-Formular Vorschau, kann das [!UICONTROL Scribble-Signatur] -Feld den Tabstopp nicht beibehalten (NPR-33159).
+* Adaptive Forms-Barrierefreiheit: Die Fehlermeldungen, die beim Senden eines adaptiven Formulars angezeigt werden, sind nicht mit einem `aria-describedBy` Attribut verknüpft (NPR-33071).
+* Adaptive Forms-Barrierefreiheit: Felder, die in einem adaptiven Formular als Pflichtfelder markiert sind, haben im ARIA-Schema (NPR-33070) nicht das obligatorische Attribut &quot;True&quot;.
 * PDFG-Dienst: Wenn ein Benutzer eine Textdatei in eine PDF-Datei konvertiert, werden japanische Zeichen nicht korrekt dargestellt (NPR-33238).
 * PDFG-Dienst: `CreatePDF` Vorgang kann eine PDF-Datei nicht in das PDF OCR-Format konvertieren (NPR-32994).
 * PDFG-Dienst: Die PDF-Konvertierung schlägt bei der 200. Instanz eines [!DNL OpenOffice] Dokuments fehl (NPR-32766).
@@ -327,14 +327,14 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 **Einrichtungsvoraussetzungen**
 
 * AEM 6.5.5.0 requires AEM 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
-* Der Service Pack-Download ist unter Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)verfügbar.
+* Der Service Pack-Download ist auf Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)verfügbar.
 * Installieren Sie bei einer Implementierung mit MongoDB und mehreren Instanzen AEM 6.5.5.0 mithilfe von Package Manager auf einer der Autoreninstanzen.
-* Erstellen Sie vor der Installation einen Schnappschuss oder eine neue Sicherung Ihrer AEM-Instanz.
+* Erstellen Sie vor der Installation einen Schnappschuss oder eine neue Sicherung Ihrer AEM.
 * Starten Sie die Instanz vor der Installation neu. Dies ist zwar nur dann erforderlich, wenn sich die Instanz noch im Aktualisierungsmodus befindet (und dies ist der Fall, wenn die Instanz von einer früheren Version aktualisiert wurde). Dennoch wird dies empfohlen, wenn die Instanz über einen längeren Zeitraum ausgeführt wurde.
 
 >[!NOTE]
 >
->Adobe empfiehlt nicht, das Adobe Experience Manager 6.5.5.0-Paket zu entfernen oder zu deinstallieren.
+>Es wird nicht empfohlen, das Adobe Experience Manager 6.5.5.0-Paket zu entfernen oder zu deinstallieren.
 
 ### Installieren des Service Packs {#install-service-pack}
 
@@ -348,7 +348,7 @@ Führen Sie die folgenden Schritte aus, um das Service Pack auf einer vorhandene
 
 >[!NOTE]
 >
->Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, dass Sie auf die Stabilisierung von Fehlerprotokollen warten, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Updater-Bundles, bevor Sie sicherstellen, dass die Installation erfolgreich ist. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
+>Das Dialogfeld auf der Benutzeroberfläche von Package Manager wird manchmal während der Installation des Service Packs beendet. Adobe empfiehlt, dass Sie auf die Stabilisierung der Fehlerprotokolle warten, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Updater-Bundles, bevor Sie sicherstellen, dass die Installation erfolgreich ist. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Automatische Installation**
 
@@ -372,11 +372,11 @@ B. Verwenden Sie die [HTTP-API aus Package Manager](https://helpx.adobe.com/de/e
 
 Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-### Add-On-Paket für Adobe Experience Manager Forms installieren {#install-aem-forms-add-on-package}
+### Adobe Experience Manager Forms Add-On-Paket installieren {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Überspringen Sie diesen Schritt, wenn Sie AEM Forms nicht verwenden. Korrekturen in Adobe Experience Manager Forms werden über ein separates Add-On-Paket bereitgestellt.
+>Überspringen Sie diesen Schritt, wenn Sie AEM Forms nicht verwenden. Fehlerbehebungen in Adobe Experience Manager Forms werden über ein separates Add-On-Paket bereitgestellt.
 
 1. Stellen Sie sicher, dass Sie das Adobe Experience Manager Service Pack installiert haben.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
@@ -392,7 +392,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-UberJar für Experience Manager 6.5.5.0 ist im [Adobe Public Maven-Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/)verfügbar.
+Das UberJar für Experience Manager 6.5.5.0 ist im Repository [Adobe Public Maven verfügbar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
 
 Um UberJar in einem Maven-Projekt zu verwenden, [verwenden Sie UberJar](/help/sites-developing/ht-projects-maven.md) und fügen Sie die folgende Abhängigkeit in Ihr Projekt-POM ein:
 
@@ -414,8 +414,8 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Der Bildschirm &quot;Opt-In **[!UICONTROL &quot;für]** AEM cloud services wird nicht mehr unterstützt. Die AEM- und Zielgruppe-Integration wurde in AEM 6.5 aktualisiert, um die Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle von Adobe Launch bei der Instrumentierung von AEM-Seiten für Analyse und Personalisierung hat dazu beigetragen, dass der Assistent für die Teilnahme an einer Teilnahme funktional irrelevant geworden ist. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die entsprechenden AEM cloud services. |
-| Connectoren | Adobe JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013 werden für AEM 6.5 nicht mehr unterstützt. | Nicht zutreffend |
+| Integrationen | Der Bildschirm &quot;Opt-In **[!UICONTROL &quot;für]** AEM cloud services wird nicht mehr unterstützt. Die AEM- und Zielgruppe-Integration wurde in AEM 6.5 aktualisiert, um die Target Standard-API zu unterstützen, die die Authentifizierung über Adobe IMS und I/O verwendet, und die wachsende Rolle des Adobe Launch für die Instrumentierung AEM Seiten für Analyse und Personalisierung hat den Opt-In-Assistenten zur Funktionsstörung entwickelt. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe-I/O-Integrationen über die jeweiligen AEM cloud services. |
+| Connectoren | Die Adobe JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013 wird für AEM 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
 
@@ -423,15 +423,15 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 * If a folder in the hierarchy is renamed in [!DNL Experience Manager Assets] and the nested folder containing an asset is published to [!DNL Brand Portal], the title of the folder is not updated in [!DNL Brand Portal] until the root folder is published again.
 
-* Bei der Installation von AEM 6.5.5.0 verursacht die Aktualisierung von [!DNL Chrome] Version 83 ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Firefox]andere Installationsoptionen für AEM-Standardpakete, um das Problem zu beheben. Das Problem wird nach der Installation von AEM 6.5.5.0 behoben.
+* Bei der Installation von AEM 6.5.5.0 verursacht das Update von [!DNL Chrome] Version 83 ein Problem beim Erstellen von Paketen. Verwenden Sie andere verfügbare Browser, z. B. [!DNL Internet Explorer] und [!DNL Firefox]andere Standardinstallationsoptionen AEM Pakets, um das Problem zu beheben. Das Problem wird nach der Installation von AEM 6.5.5.0 behoben.
 
-* Es kann keine E-Mail mit dem AEM-Standard-E-Mail-Sender an den Remote-SMTP-Server gesendet werden, da nur die Kommunikation mit TLS v1.2 möglich ist. Entfernen Sie das Bundle `javax.mail:mail:1.5.0-b01` aus `system/console` und aktualisieren Sie die Bundles, um das Problem zu beheben.
+* Es kann keine E-Mail mit dem Standard-E-Mail-Sender an den Remote-SMTP-Server gesendet werden, da nur die Kommunikation mit TLS v1.2 möglich ist. Entfernen Sie das Bundle `javax.mail:mail:1.5.0-b01` aus `system/console` und aktualisieren Sie die Bundles, um das Problem zu beheben.
 
 * Wenn ein Benutzer ein Feld zum ersten Mal in einem adaptiven Formular konfigurieren möchte, wird die Option zum Speichern einer Konfiguration nicht im Eigenschaftenbrowser angezeigt. Wenn Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren, wird das Problem behoben.
 
 * Wenn der Konfigurationsassistent für [!UICONTROL verbundene Assets nach der Installation die Fehlermeldung 404 zurückgibt, müssen Sie die Pakete] und `cq-remotedam-client-ui-content` `cq-remotedam-client-ui-components` Pakete manuell mit dem Package Manager neu installieren.
 
-* Die folgenden Fehler- und Warnmeldungen können während der Installation von AEM 6.5.x.x angezeigt werden:
+* Die folgenden Fehler und Warnmeldungen können während der Installation von AEM 6.5.x.x angezeigt werden:
    * „Wenn die Target-Integration mit der Target Standard-API (IMS-Authentifizierung) in AEM konfiguriert wird, führt der Export von Experience Fragments nach Target dazu, dass falsche Angebotstypen erstellt werden. Anstelle des Typs „Experience Fragment“/der Quelle „Adobe Experience Manager“ erstellt Target mehrere Angebote mit dem Typ „HTML“/der Quelle „Adobe Target Classic“.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Keine Wartungsfenster unter granite/operations/maintenance gefunden.
    * Die serverseitige Validierung des adaptiven Formulars schlägt fehl, wenn Aggregat-Funktionen wie SUM, MAX und MIN verwendet werden. CQ-4274424
@@ -440,7 +440,7 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-Die folgenden Dokumente Liste der OSGi-Pakete und Inhaltspakete in AEM 6.5.5.0:
+Die folgenden Dokumente Liste der OSGi-Pakete und Content Packages in AEM 6.5.5.0:
 
 * [Liste der in AEM 6.5.5.0 enthaltenen OSGi-Bundles](assets/6550_bundles.txt)
 
@@ -456,7 +456,7 @@ Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff ben
 >[!MORELIKETHIS]
 >
 >* [Versionshinweise zu AEM 6.5](/help/release-notes/release-notes.md)
->* [AEM-Produktseite](https://www.adobe.com/solutions/web-experience-management.html)
+>* [AEM-Produktseite](https://www.adobe.com/de/marketing/experience-manager.html)
 >* [Dokumentation zu AEM 6.5](https://helpx.adobe.com/de/support/experience-manager/6-5.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
