@@ -1,13 +1,8 @@
 ---
 title: Versionshinweise zu AEM Sites
 description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 Sites
-uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
-docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 64%
@@ -15,7 +10,7 @@ ht-degree: 64%
 ---
 
 
-# Versionshinweise zu AEM Sites{#aem-sites-release-notes}
+# Versionshinweise zu AEM Sites {#aem-sites-release-notes}
 
 Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
@@ -27,10 +22,10 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
    * &quot;in&quot;-Operator für Zeichenfolgen, Arrays und Objekte:
 
-      ```
+      ```html
       ${'a' in 'abc’}
-       ${100 in myArray}
-       ${'a' in myObject}
+      ${100 in myArray}
+      ${'a' in myObject}
       ```
 
    * Variablendeklarationen mit Datensatz:
@@ -41,10 +36,10 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 
    * Bezeichner für die datenbasierte Aufhebung:
 
-      ```
+      ```html
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-       text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-       </div>
+      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+      </div>
       ```
 
    * Unterstützung negativer Zahlen
@@ -117,16 +112,16 @@ Im Folgenden sind die Verbesserungen für AEM Sites 6.5 aufgeführt:
 >
 >at.js 2.x wird zum Zeitpunkt der Veröffentlichung von AEM 6.5 nicht in AEM unterstützt. Aktualisieren Sie auf die neueste Version von at.js 1.x.
 
-* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Target Classic HTTP API, die jetzt nicht mehr unterstützt wird.
+* Zur Adobe Target-Integration kann nun die Target Standard-API verwendet werden. Frühere Versionen von AEM verwenden die Zielgruppe Classic HTTP API, die jetzt nicht mehr unterstützt wird.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
 * `at.js` Version 1.5.0 ist jetzt enthalten. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
 ## AEM und Adobe Analytics {#aem-amp-adobe-analytics}
 
-* `s_code.js` H.27.5 ist enthalten. Adobe empfiehlt, dass Sie die Implementierung auf `AppMeasurement.js`
+* `s_code.js` H.27.5 ist enthalten. Adobe empfiehlt, dass Sie zu Implementierung wechseln `AppMeasurement.js`
 * `AppMeasurement.js` Version 1.8.0 ist enthalten. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
 
-## AEM und Commerce {#aem-commerce}
+## AEM und Handel {#aem-commerce}
 
 Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
