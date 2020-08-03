@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 >Der Inhalt des Ordners &quot;/libs&quot;wird nie bearbeitet, da bei einer Neuinstallation oder Aktualisierung der Ordner &quot;/libs&quot;gelöscht oder ersetzt werden kann, während der Inhalt des Ordners &quot;/apps&quot;unverändert bleibt.
 
 
-Wenn Sie [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz verwenden, erstellen Sie zunächst einen Pfad im Ordner &quot;/apps&quot;, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs&quot;identisch ist.
+Erstellen Sie zunächst mit der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz einen Pfad im Ordner &quot;/apps&quot;, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs&quot;identisch ist.
 
 Der zu duplizierende Pfad lautet:
 
@@ -56,7 +59,7 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
       * Klicken Sie auf **[!UICONTROL Weiter]** , bis **[!UICONTROL OK]**
 1. Knoten `comments` auswählen
 
-   * **[!UICONTROL Erstellen > Komponente erstellen...]**
+   * **[!UICONTROL Erstellen]** > Komponente **[!UICONTROL erstellen...]**
 
       * Beschriftung eingeben: `comment`
       * Enter Title: `Comment`
@@ -79,6 +82,7 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
@@ -95,5 +99,5 @@ Die eigene Eigenschaft `Type`(Eigenschaft `sling:resourceType`) der Überlagerun
 1. Grün auswählen `[+] Add`
    * Select **[!UICONTROL Save All]**
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![create-nodes](assets/create-nodes.png)
 
