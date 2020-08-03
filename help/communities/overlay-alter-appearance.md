@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -30,9 +30,9 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 1. Kopieren `comment.hbs`von `libs`nach `apps`
 
    1. Wählen Sie nun eine der folgenden Optionen aus `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Auswahl **kopieren**
+   1. Auswahl **[!UICONTROL kopieren]**
    1. Wählen Sie nun eine der folgenden Optionen aus `/apps/social/commons/components/hbs/comments/comment`
-   1. Einfügen **auswählen**
+   1. Einfügen **[!UICONTROL auswählen]**
 
 1. Öffnen Sie die Überlagerung `comment.hbs`
 
