@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 5%
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 Bei AEM Author-Instanz über die globale Navigation:
 
-* Wählen Sie **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
+* Wählen Sie **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 * Wählen Sie **[!UICONTROL Ordner]** für Interaktion aus, um ihn zu öffnen.
 * Wählen Sie die Karte für die Seite &quot; **[!UICONTROL Erste Schritte - Tutorial]** Englisch&quot;.
 
@@ -34,11 +34,11 @@ Bei AEM Author-Instanz über die globale Navigation:
 
 Das Ergebnis ist, die [Gruppenkonsole](/help/communities/groups.md)zu erreichen:
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![create-group](assets/create-group.png)
 
 Die Funktion &quot;Gruppen&quot;wird als Ordner angezeigt, in dem Instanzen von Gruppen erstellt werden. Wählen Sie den Ordner &quot;Gruppen&quot;, um ihn zu öffnen. Die bei der Veröffentlichung erstellte Gruppe ist sichtbar.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## Hauptkunstgruppe erstellen {#create-main-arts-group}
 
@@ -94,11 +94,11 @@ Der `groups` Ordner enthält jetzt zwei Gruppen (aktualisieren Sie die Seite).
 
 Bewegen Sie den Mauszeiger vor dem Erstellen von Gruppen, die innerhalb der `arts` Gruppe verschachtelt sind, über die `arts` Karte und wählen Sie das Symbol &quot;Veröffentlichen&quot;aus, um sie zu veröffentlichen.
 
-![liking-component](assets/liking-component.png)
+![publish-site](assets/publish-site.png)
 
 Warten Sie auf die Bestätigung, dass die Gruppe veröffentlicht wurde.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![group-published](assets/group-published.png)
 
 Die `arts` Gruppe sollte auch einen `groups` Ordner enthalten, der jedoch leer ist und in dem neue Gruppen erstellt werden können. Navigieren Sie zum Ordner &quot;art group&quot;und erstellen Sie 3 verschachtelte Gruppen mit jeweils unterschiedlichen Mitgliedseinstellungen:
 
@@ -133,11 +133,11 @@ So navigieren Sie von der Konsole Communities Sites zu den verschachtelten Grupp
 * Karte **[!UICONTROL für Kunst auswählen]**
 * Ordner &quot; **[!UICONTROL Gruppen]** &quot;auswählen
 
-![configure-like](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## Veröffentlichungsgruppen {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![publish-site](assets/publish-site.png)
 
 Nach der Veröffentlichung der Haupt-Community-Site:
 
@@ -149,7 +149,7 @@ Nach der Veröffentlichung der Haupt-Community-Site:
 
    * Alle Gruppen müssen von oben nach unten veröffentlicht werden.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![group-published](assets/group-published.png)
 
 ## Erlebnis bei Veröffentlichung {#experience-on-publish}
 
