@@ -1,8 +1,8 @@
 ---
 title: Übersicht über AEM Communities
 seo-title: Übersicht über AEM Communities
-description: Überblick über die Funktionen und Einrichtung von AEM Communities
-seo-description: Überblick über die Funktionen und Einrichtung von AEM Communities
+description: Eine Übersicht über die Funktionen und das Setup von AEM Communities
+seo-description: Eine Übersicht über die Funktionen und das Setup von AEM Communities
 uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+workflow-type: tm+mt
+source-wordcount: '1468'
+ht-degree: 5%
 
 ---
 
@@ -20,11 +23,11 @@ source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 Mit Adobe Experience Manager (AEM) Communities lässt sich leicht eine interne Communitysite erstellen, die verbesserte Leistung und optimierte Siteverwaltung bietet und aus Besuchern wertvolle Communitymitglieder macht.
 
-Wenden Sie sich an Ihren Kundenbetreuer, um Informationen zur Lizenzierung von AEM Communities sowie zu zusätzlichen Lizenzierungen für Aktivierungsfunktionen und Adobe Analytics zu erhalten.
+Wenden Sie sich an Ihren Kundenbetreuer, um Informationen über die Lizenzierung von AEM Communities sowie zusätzliche Lizenzierungen für Aktivierungsfunktionen und Adobe Analytics zu erhalten.
 
 ## Communities - Funktionen {#communities-features}
 
-AEM Communities ermöglicht die Entwicklung einer Beziehung zu Site-Besuchern, die:
+AEM Communities ermöglichen die Entwicklung einer Beziehung zu Site-Besuchern, die:
 
 * **Informationen** über Blogs, Fragen und Antworten und Ereignis-Kalender,
 * Beim **Sammeln von Einblicken** durch Foren, Kommentare und andere Community-Inhalte, die häufig als benutzergenerierte Inhalte (UGC) bezeichnet werden.
@@ -38,11 +41,11 @@ AEM Communities ermöglicht die Entwicklung einer Beziehung zu Site-Besuchern, d
 * Ermöglicht das **Taggen** (@Erwähnung) anderer registrierter Mitglieder in &quot;Benutzergenerierter Inhalt&quot;, um deren Aufmerksamkeit zu erregen.
 * Unterstützung der **Tastaturnavigation** für Aktivierungskomponenten (z. B. Katalogwiedergabe und Kurswiedergabe, Zuweisungen, Dateibibliothek).
 
-Communities-Funktionen können mithilfe der [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) , die auf GitHub.com öffentlich verfügbar ist, oder mit der neuen We.Retail-Referenzimplementierung demonstriert werden.
+Communities Features können mithilfe der [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) , die öffentlich auf GitHub.com verfügbar ist, oder mit der neuen We.Retail Referenzimplementierung demonstriert werden.
 
 ## Community-Sites {#community-sites}
 
-Eine Community-Site ist eine AEM-Site, die mit einem einfachen Assistenten erstellt wurde und zu einer Website mit vielen häufig verwendeten Funktionen führt, die vorab mit der Site verkabelt wurden.
+Eine Community-Site ist eine AEM Site, die mit einem einfachen Assistenten erstellt wurde, der zu einer Website mit vielen allgemeinen Funktionen führt, die bereits mit der Site verkabelt sind.
 
 Der [Site-Erstellungsassistent](/help/communities/sites-console.md):
 
@@ -75,13 +78,13 @@ Der [Site-Erstellungsassistent](/help/communities/sites-console.md):
 * Dadurch werden viele Authoring-Schritte auf Seitenebene vermieden:
 
    * Branding: optionales Hochladen eines Bannerbilds zur Anzeige auf allen Seiten der Community-Site
-      * Navigationsmenü: Navigationslinks werden für die Funktionen bereitgestellt, die in der Community-Site-Vorlage enthalten sind.
+   * Navigationsmenü: Navigationslinks werden für die Funktionen bereitgestellt, die in der Community-Site-Vorlage enthalten sind.
 
-Informationen zum schnellen Erstellen einer neuen Community-Site finden Sie unter [Erste Schritte mit AEM Communities](/help/communities/getting-started.md).
+Um eine neue Community-Site schnell zu erstellen, besuchen Sie [Erste Schritte mit AEM Communities](/help/communities/getting-started.md).
 
 ## Persistenz von Gemeinschaftsinhalten {#community-content-persistence}
 
-Um die Leistung und Synchronisierung von Community-Inhalten zu verbessern, erfordert AEM Communities einen gemeinsamen Store speziell für benutzerdefinierte Inhalte (UGC), die von allen AEM-Instanzen (Autoren- und Veröffentlichungsinstanzen) freigegeben werden.
+Um die Leistung und Synchronisierung von Community-Inhalten zu verbessern, benötigen AEM Communities einen gemeinsamen Store speziell für benutzergenerierte Inhalte (UGC), die von allen AEM (Autor- und Veröffentlichungsinstanzen) freigegeben werden.
 
 Der Zugriff auf Community-Inhalte erfolgt über den Datenspeicherung Resource Provider (SRP), eine Ebene, die den Zugriff von der zugrunde liegenden Topologie trennt und einen gemeinsamen Speicher für UGC unterstützt.
 
@@ -89,7 +92,7 @@ Weitere Informationen über die Persistenz von Community-Inhalten und empfohlene
 
 * [Community Content Datenspeicherung](/help/communities/working-with-srp.md), in der die verfügbaren SRP-Datenspeicherung für UGC diskutiert werden.
 * [Empfohlene Topologien](/help/communities/topologies.md), die Topologien auf Basis von Anwendungsfällen und SRP-Auswahl behandeln.
-* [Aktualisierung auf AEM 6.5 Communities](/help/communities/upgrade.md), das nützliche Informationen zu UGC beim Wechsel zu AEM 6.5 bietet.
+* [Upgrade auf AEM 6.5 Communities](/help/communities/upgrade.md), die nützliche Informationen über UGC beim Wechsel zu AEM 6.5 bietet.
 
 ## Communities Konsolen {#communities-consoles}
 
@@ -154,9 +157,9 @@ Siehe [Site-Vorlagenkonsole](/help/communities/sites.md).
 
 ## Community-Funktionen {#community-functions}
 
-Die zu erwartenden Merkmale einer Community-Erfahrung sind bekannt. Bei AEM Communities sind diese Funktionen als Bausteine, auch als Community-Funktionen bezeichnet, verfügbar.
+Die zu erwartenden Merkmale einer Community-Erfahrung sind bekannt. Bei AEM Communities sind diese Funktionen als Bausteine verfügbar, auch als Community-Funktionen bezeichnet.
 
-Community-Funktionen sind normale AEM-Seiten enthalten Komponenten, die zu einer Funktion verdrahtet sind, die leicht in eine Community-Site-Vorlage integriert werden kann.
+Community-Funktionen sind normale AEM Seiten enthalten Komponenten, die zu einer Funktion verdrahtet sind, die leicht in eine Community-Site-Vorlage integriert werden kann.
 
 See the [Community Functions console](/help/communities/functions.md).
 
@@ -172,11 +175,11 @@ Siehe auch:
 
 * [Site-Gruppenkonsole](/help/communities/groups.md) zum Erstellen von Unter-Communities in der Authoring-Umgebung.
 * [Gruppenvorlagen-Konsole](/help/communities/tools-groups.md) zum Erstellen der Sitestruktur für Gruppen.
-* [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) für ein Tutorial zum schnellen Erstellen einer Community-Site mit verschachtelten Gruppen.
+* [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) für ein Tutorial zur schnellen Erstellung einer Community-Site mit verschachtelten Gruppen.
 
 ## Community-Komponenten {#community-components}
 
-Die [Community-Komponenten](/help/communities/author-communities.md) , aus denen eine Community-Site erstellt wird, können verwendet werden, um Communities-Funktionen zu jeder AEM-Site hinzuzufügen.
+Die [Community-Komponenten](/help/communities/author-communities.md) , aus denen eine Community-Site erstellt wird, können verwendet werden, um Communities-Funktionen zu jeder AEM Site hinzuzufügen.
 
 Der Leitfaden [zu](/help/communities/components-guide.md) Community-Komponenten steht zur interaktiven Erforschung der Komponenten zur Verfügung.
 
@@ -202,9 +205,9 @@ Zu den Funktionen einer Interaktionsgemeinschaft zählen:
 * Moderation
 * Benachrichtigungen
 * Bewertung und Abzeichen
-* Analytics-Berichte
+* Analytics Berichte
 
-Informationen zum schnellen Erstellen einer neuen Interaktionsgemeinschaft finden Sie unter [Erste Schritte mit AEM Communities](/help/communities/getting-started.md).
+Besuchen Sie [Erste Schritte mit AEM Communities](/help/communities/getting-started.md), um schnell eine neue Interaktionsgemeinschaft zu erstellen.
 
 ### Aktivierungsgemeinschaft {#enablement-community}
 
@@ -221,13 +224,13 @@ Zu den Funktionen einer Community für die Aktivierung gehören:
 
 Wenn das [Enablement-Add-on konfiguriert](/help/communities/enablement.md)ist, kann eine Community für die Aktivierung erstellt werden. Dies erfordert zusätzliche Lizenzen für die Verwendung in einer Produktions-Umgebung. Eine Community-Site für die Aktivierung enthält die [Zuweisungsfunktion](#community-functions).
 
-Um die Erstellung einer neuen Community für die Aktivierung zu vereinfachen, besuchen Sie [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md).
+Um die Erstellung einer neuen Community für die Aktivierung zu vereinfachen, besuchen Sie [Erste Schritte mit AEM Communities zur Aktivierung](/help/communities/getting-started-enablement.md).
 
-## AEM-Democomputer {#aem-demo-machine}
+## AEM {#aem-demo-machine}
 
-Die [AEM-Demomaschine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) verwaltet und führt Demos für AEM- [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) [](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)undFormsaus, die häufig mehr Setup erfordern, als eine QuickStart-Instanz zu starten. Die AEM Demo Machine richtet zusätzliche [Infrastruktur](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) wie MongoDB, Solr, MySQL, FFmpeg und E-Mail-Server ein.
+Die [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) verwaltet und führt Demos für AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) [](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)undFormsaus, die häufig mehr Setup erfordern als das Starten einer QuickStart-Instanz. Die AEM Demo Machine richtet zusätzliche [Infrastruktur](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) wie MongoDB, Solr, MySQL, FFmpeg und E-Mail-Server ein.
 
-Der AEM-Democomputer umfasst:
+Die AEM Demo-Maschine umfasst:
 
 * Eine [grafische Benutzeroberfläche](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface).
 * Apache ANT-Skripten mit konfigurierbaren [Eigenschaften](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) und [Zielgruppen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line).
@@ -236,14 +239,14 @@ Der AEM-Democomputer umfasst:
 
 Die AEM Demo Machine wurde erfolgreich mit CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 und AEM 6.4 unter Windows, MacOS und Linux getestet.
 
-Für AEM Demo Machine ist eine gültige AEM-Lizenz erforderlich.
+Für AEM Demo Machine ist eine gültige AEM Lizenz erforderlich.
 
 >[!NOTE]
 >
->Ansicht einer [Videovorstellung](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) zur AEM Demo Machine (13:26).
+>Ansicht einer [Videovorstellung](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) zur AEM Demomaschine (13:26).
 
 
-## Dokumentation zu AEM Communities {#aem-communities-documentation}
+## AEM Communities {#aem-communities-documentation}
 
 * Visit [Deploying Communities](deploy-communities.md) to learn about recommended deployments.
 * Besuchen Sie [Administering Communities Sites](administer-landing.md) , um mehr über das Erstellen einer Community-Site, das Hinzufügen von Community-Gruppen, das Konfigurieren von Community-Site-Vorlagen, das Moderieren von Community-Inhalten, das Verwalten von Mitgliedern, das Tagging, Benachrichtigungen, das Scoring und Abzeichen zu erfahren.
