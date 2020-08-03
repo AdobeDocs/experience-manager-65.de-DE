@@ -1,8 +1,8 @@
 ---
 title: Communities-Benachrichtigungen
 seo-title: Communities-Benachrichtigungen
-description: AEM Communities verfügt über Benachrichtigungen, die Ereignisse anzeigen, die für das angemeldete Community-Mitglied von Interesse sind
-seo-description: AEM Communities verfügt über Benachrichtigungen, die Ereignisse anzeigen, die für das angemeldete Community-Mitglied von Interesse sind
+description: AEM Communities verfügen über Benachrichtigungen, die Ereignisse anzeigen, die für das angemeldete Community-Mitglied von Interesse sind
+seo-description: AEM Communities verfügen über Benachrichtigungen, die Ereignisse anzeigen, die für das angemeldete Community-Mitglied von Interesse sind
 uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
@@ -68,7 +71,7 @@ Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Fu
 
 ## Benachrichtigungen von {#notifications-from-following}
 
-![chlimage_1-243](assets/chlimage_1-243.png)
+![Benachrichtigungen](assets/notifications.png)
 
 Über die Schaltfläche **[!UICONTROL Folgen]** können Sie Einsendungen als Aktivitäten, Abonnements und/oder Benachrichtigungen folgen. Bei jeder Auswahl der Schaltfläche &quot; **[!UICONTROL Folgen]** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
 
@@ -91,17 +94,17 @@ Wenn Sie auf der Seite &quot;Benachrichtigungen&quot;den Link &quot;Benachrichti
 
 Der Web-Kanal ist immer aktiviert.
 
-![chlimage_1-244](assets/chlimage_1-244.png)
+![notifications14](assets/notifications1.png)
 
 Der E-Mail-Kanal, der auf einer ordnungsgemäßen [E-Mail](/help/communities/email.md)-Konfiguration basiert, stellt dieselben Einstellungen wie für den Web-Kanal bereit.
 
 Der E-Mail-Kanal ist standardmäßig deaktiviert.
 
-![chlimage_1-245](assets/chlimage_1-245.png)
+![notifications2](assets/notifications2.png)
 
 Es kann von einem Mitglied aktiviert werden, hängt aber dennoch von der Konfiguration der E-Mail ab.
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![notifications3](assets/notifications3.png)
 
 ## Ansehen der Benachrichtigungen {#viewing-notifications}
 
@@ -111,13 +114,13 @@ Ein [Assistent, der eine Community-Site](/help/communities/sites-console.md) ers
 
 Wenn Sie die veröffentlichte Site besuchen, werden bei Auswahl des `Notifications` Links alle Benachrichtigungen für das Mitglied angezeigt.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![notifications4](assets/notifications4.png)
 
 ### E-Mail-Benachrichtigungen {#email-notifications}
 
 Wenn der E-Mail-Kanal aktiviert ist, erhält das Mitglied eine E-Mail mit einer Verknüpfung zum Inhalt im Web.
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![notifications5](assets/notifications5.png)
 
 ## E-Mail-Benachrichtigungen anpassen {#customize-email-notifications}
 
