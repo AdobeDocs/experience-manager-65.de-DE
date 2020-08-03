@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
+source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Bei der ersten Ankunft auf der veröffentlichten Site wäre der Site-Besucher no
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![herausgegeben](assets/authorpublished.png)
 
 ## Anonymer Site-Besucher {#anonymous-site-visitor}
 
@@ -82,7 +82,7 @@ Diese Erfahrung setzt voraus, dass [Aaron McDonald](/help/communities/tutorials.
 
 Wählen Sie in der oberen rechten Ecke Benutzername (aaron.mcdonald@mailinator.com) `Log in`und Kennwort (Kennwort) aus und melden Sie sich an. Beachten Sie die Möglichkeit, sich mit Twitter- oder Facebook-Anmeldedaten anzumelden.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![anmelden](assets/login.png)
 
 Nachdem Sie sich als registriertes Community-Mitglied angemeldet haben, beachten Sie die folgenden Menüpunkte, um auf Ihre Community-Site zu klicken und sie zu erkunden:
 
@@ -95,11 +95,11 @@ Nachdem Sie sich als registriertes Community-Mitglied angemeldet haben, beachten
 * [Die Option &quot;Benachrichtigungen](/help/communities/notifications.md) &quot;leitet Sie zum Benachrichtigungsabschnitt weiter, in dem Sie Ihre interessanten Ereignis Ansicht und die Benachrichtigungseinstellungen bearbeiten können.
 * [Wenn Sie über Moderationsberechtigungen verfügen, führt Administration](/help/communities/published-site.md#moderationlink) Sie zur Seite &quot;AEM Communities-Moderation&quot;.
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![adminscreen](assets/adminscreen.png)
 
 Beachten Sie, dass die Kalenderseite die Startseite ist, da die gewählte Referenz-Site-Vorlage zuerst die Kalenderfunktion enthielt, gefolgt von der Aktivität-Stream-Funktion, der Forumsfunktion usw. Diese Struktur ist in der Konsole [Site-Vorlage](/help/communities/sites.md#edit-site-template) oder beim Ändern der Site-Eigenschaften in der Authoring-Umgebung sichtbar:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![sitetemplate](assets/sitetemplate.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Mitglieder können ein neues Thema posten oder einem Thema folgen.
 
 Site-Besucher können Beiträge auf verschiedene Weise Ansicht leisten und sortieren.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![forumlink](assets/forumlink.png)
 
 ### Gruppen-Link {#groups-link}
 
@@ -130,7 +130,7 @@ Dies ist ein Beispiel, bei dem eine Gruppe in der Umgebung zum Veröffentlichen 
 
 Gruppen können auch in der Autorengruppe erstellt und innerhalb der Community-Site in der Autorenkonsole ([Community-Gruppenkonsole](/help/communities/groups.md)) verwaltet werden. Die Erfahrung mit dem [Erstellen von Gruppen unter Autor](/help/communities/nested-groups.md) ist als Nächstes in dieser Übung.
 
-![classic-ui](assets/classic-ui.png)
+![Grouplink](assets/grouplink.png)
 
 Erstellen einer Referenzgruppe:
 
@@ -148,11 +148,11 @@ Erstellen einer Referenzgruppe:
 
 1. Gruppe **erstellen auswählen**
 
-![classic-ui-website](assets/classic-ui-website.png)
+   ![creategroup](assets/creategroup.png)
 
 Nachdem eine neue Gruppe erstellt wurde, **wählen Sie die neue Sportgruppe** aus, um zwei Gruppen (verschachtelt) darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, muss nach dem Öffnen der Gruppe &quot;Sport&quot;der Link &quot;Gruppen&quot;ausgewählt werden:
 
-![classic-ui-create-page](assets/classic-ui-create-page.png)
+![grouplink1](assets/grouplink1.png)
 
 Der zweite Satz von Links, beginnend mit `Blog`, gehört zur aktuell ausgewählten Gruppe, der `Sports` Gruppe. Durch Auswahl des `Groups` Links &quot;Sport&quot;können zwei Gruppen innerhalb der Gruppe &quot;Sport&quot;verschachtelt werden.
 
@@ -180,7 +180,7 @@ Nachdem beide Gruppen erstellt wurden, wählen Sie die Baseball-Gruppe, eine off
 
 Die Links der Gruppe werden unterhalb der Links der Haupt-Site angezeigt und führen zur folgenden Anzeige:
 
-![classic-ui-website-page](assets/classic-ui-website-page.png)
+![grouplink2](assets/grouplink2.png)
 
 Unter &quot;Autor&quot;- mit Administratorrechten navigieren Sie zur [Communities Groups-Konsole](/help/communities/members.md) und fügen Sie der `Community Engage Gymnastics <uid> Members` Gruppe Weston McCall hinzu.
 
@@ -195,7 +195,7 @@ Nur die Baseballgruppe wird angezeigt.
 
 Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum gleichen Speicherort. Beachten Sie, dass Weston in der Lage ist, `Join` die offene `Baseball` Gruppe und entweder `enter or Leave` die private `Gymnastics` Gruppe.
 
-![classic-ui-repository-Ansicht](assets/classic-ui-repository-view.png)
+![grouplink3](assets/grouplink3.png)
 
 ### Webseitenlink {#web-page-link}
 
@@ -203,7 +203,7 @@ Ansicht der grundlegenden Webseite, die in der Site enthalten ist, durch Auswahl
 
 Rufen Sie beispielsweise die **Autoreninstanz** auf, öffnen Sie den `engage` Ordner in der Konsole [&quot;](/help/communities/sites-console.md)Communities Sites&quot;und klicken Sie auf das Symbol zum **Öffnen der Site** , um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Modus &quot;Vorschau&quot;aus, um den `Web Page` Link auszuwählen, und wählen Sie dann den Bearbeitungsmodus, um Titel- und Textkomponenten hinzuzufügen. Als letztes veröffentlichen Sie entweder nur die Seite oder die gesamte Site erneut.
 
-![classic-ui-repository-path](assets/classic-ui-repository-path.png)
+![webpagelink](assets/webpagelink.png)
 
 ### Moderationslink {#moderationlink}
 
@@ -211,7 +211,7 @@ Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, wird der L
 
 Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen sind in der Umgebung &quot;Veröffentlichen&quot;nicht über die globale Navigation zugänglich. [](/help/communities/moderate-ugc.md)
 
-![chlimage_1-42](assets/chlimage_1-42.png)
+![moderationlink](assets/moderationlink.png)
 
 ## Selbstregistrierung {#self-registration}
 
@@ -220,7 +220,9 @@ Nach dem Abmelden ist es möglich, eine neue Benutzerregistrierung zu erstellen.
 * Wählen Sie nun eine der folgenden Optionen aus `Log In`
 * Wählen Sie nun eine der folgenden Optionen aus `Sign up for a new account`
 
-![chlimage_1-43](assets/chlimage_1-43.png) ![chlimage_1-44](assets/chlimage_1-44.png)
+![registrierung](assets/registration.png)
+
+![anmelden](assets/signup.png)
 
 Standardmäßig ist die E-Mail-Adresse die Anmelde-ID. Wenn diese Option deaktiviert ist, kann der Besucher seine eigene Anmelde-ID (Benutzername) eingeben. Der Benutzername muss in der Umgebung zum Veröffentlichen eindeutig sein.
 
@@ -228,9 +230,9 @@ Nachdem Sie den Namen, die E-Mail-Adresse und das Kennwort des Benutzers angegeb
 
 Nach dem Anmelden ist die erste angezeigte Seite ihre `Profile` Seite, die sie personalisieren können.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![Profil](assets/profile.png)
 
 Wenn das Mitglied seine Anmelde-ID vergisst, ist es möglich, wiederherzustellen, wenn ihre E-Mail-Adresse verwendet wird.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![forgotusername](assets/forgotusername.png)
 
