@@ -4,9 +4,9 @@ description: Spezifische Versionshinweise für Adobe Experience Manager 6.5 S
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4522'
 ht-degree: 7%
 
 ---
@@ -78,6 +78,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * Wenn Sie von Experience Manager 6.2 auf Experience Manager 6.5 aktualisieren, wird die Komponente Parsys der statischen Vorlagen nicht korrekt angezeigt. Die Höhe der Komponente Parsys ist auf 0 eingestellt und die darin enthaltenen Komponenten sind nicht sichtbar (NPR-33663).
 * Wenn ein Benutzer einen Layout-Container kopiert und auf derselben Seite eingefügt hat, werden Komponenten in einem Layout-Container nicht angezeigt (NPR-33648).
 * Bei der Überprüfung des Dispatchers wird eine `Invalid cookie header` Warnmeldung in den Protokolldateien (NPR-33629) angezeigt.
+* XSS in PreferencesServlet (NPR-33438) reflektiert.
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -239,6 +240,8 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Während der Installation des Experience Manager-SDL-Pakets (NPR-33175) wird eine Fehlermeldung angezeigt.
 
+* Anfälligkeit für SSRF in Experience Manager (NPR-33435).
+
 ### Plattform {#platform-6550}
 
 * Der [!DNL Sling] Filter wird nicht aufgerufen, wenn der `sling:match` Karteneintrag unter `/etc/maps` (NPR-33362) erstellt wird.
@@ -261,9 +264,10 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * Die Integration mit Adobe Target funktioniert nicht mit [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Beim Konfigurieren von Adobe Target werden die Felder [!UICONTROL Firma] und [!UICONTROL Report Suite] nicht angezeigt, wenn eine Berichte-Quelle ausgewählt wird (NPR-32502).
 * Beim Exportieren [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie &quot;Quellprodukt&quot;nicht in Adobe Target exportiert (NPR-32159).
-* Autorisierte IMS-Experience Manager in der lokalen Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
+* Autorisierte IMS-Benutzer in der lokalen Experience Manager-Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
 * Adobe Startkonfigurationsseite zeigt nicht alle Datensätze an (NPR-33011).
 * Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können die Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
+* Site-übergreifende Skripterstellung für JSON (NPR-32744).
 
 ### Übersetzungsprojekte {#translation-6550}
 
@@ -295,6 +299,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * Ein Benutzer kann keine E-Mail an einen anderen Benutzer in einer Community senden (NPR-32598).
 * Ein gesendeter Blog wird erst angezeigt, wenn der Benutzer die Seite aktualisiert (NPR-32391).
 * Beim Erstellen einer Version von Benachrichtigungen und Abonnements von User Generated Content (UGC) wird eine falsche ID der Quellseite gespeichert (CQ-4279355, CQ-4289703).
+* Site-übergreifendes Skriptproblem (NPR-33203).
 
 ### Workflow {#workflow-6550}
 
@@ -321,6 +326,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * BackendIntegration: Formulardatenmodellanforderungen schlagen fehl, da der Aktualisierungstoken aufgrund eines inaktiven Status (NPR-33169) abläuft.
 * Designer: Bildschirmlesehilfen führen die Tab-Reihenfolge basierend auf der geografischen Standardreihenfolge statt der benutzerdefinierten Tab-Reihenfolge aus, die in der XDP-Datei (NPR-32160) definiert ist.
 * Designer: Wenn die Tagging-Option aktiviert ist, wird der Rand des Teilformulars in der generierten PDF-Ausgabe (NPR-32778) ausgeblendet.
+* XSS mit GuideSOMProviderServlet (NPR-32700) gespeichert.
 
 ## Install 6.5.5.0 {#install}
 
