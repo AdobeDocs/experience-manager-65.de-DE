@@ -11,7 +11,10 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
+source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+workflow-type: tm+mt
+source-wordcount: '1275'
+ht-degree: 81%
 
 ---
 
@@ -25,6 +28,8 @@ source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
 ## Vorbereitung des Upgrades {#pre-upgrade-steps}
 
 Vor der Durchführung eines Upgrades müssen einige Schritte ausgeführt werden. Weitere Informationen erhalten Sie unter [Aktualisieren von Codes und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) sowie [Wartungsmaßnahmen vor dem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Achten Sie außerdem darauf, dass Ihr System die Anforderungen für die aktuelle Version von AEM erfüllt. Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität Ihres Upgrades abschätzen können. Weitere Informationen finden Sie auch im Abschnitt „Aktualisierungsumfang und -anforderungen“ unter [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md).
+
+Beachten Sie schließlich, dass die Ausfallzeiten während der Aktualisierung erheblich verringert werden können, indem Sie das Repository indizieren, **bevor** Sie die Aktualisierung durchführen. Weitere Informationen finden Sie unter [Verwenden der Offline-Neudexprimierung zur Reduzierung der Ausfallzeiten während einer Aktualisierung](/help/sites-deploying/upgrade-offline-reindexing.md)
 
 ## Voraussetzungen für die Migration {#migration-prerequisites}
 
@@ -55,6 +60,7 @@ The actual migration is performed using the standard AEM quickstart jar file, ex
 >Wenn Sie die Migration von TarMK-Repository-Inhalten mit der CRX2Oak-Schnellstarterweiterung durchführen, können Sie den Betriebsmodus **samplecontent** entfernen, indem Sie das Folgende zu der Migrations-Befehlszeile hinzufügen:
 >
 >* `--promote-runmode nosamplecontent`
+
 >
 
 
@@ -72,7 +78,7 @@ Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profil
   <tr>
    <td><strong>Quell-Repository </strong></td>
    <td><strong>Ziel-Repository </strong></td>
-   <td><strong>Profile</strong></td>
+   <td><strong>Profil</strong></td>
    <td><strong>Zusätzliche Flags</strong><br /> </td>
   </tr>
   <tr>
@@ -178,7 +184,7 @@ Beachten Sie, dass beim Starten von AEM mit dem Start-Skript das Upgrade nicht g
    ps -ef | grep java
    ```
 
-1. Suchen Sie nach dem AEM-Prozess. Es sieht ungefähr so aus:
+1. Suchen Sie nach dem AEM-Prozess. Es sieht in etwa so aus:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
