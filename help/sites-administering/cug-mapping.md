@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 74%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
   <tr>
    <td><strong>Ältere AEM-Versionen</strong></td>
    <td><strong>AEM 6.5</strong></td>
-   <td><strong>Comments</strong></td>
+   <td><strong>Kommentare</strong></td>
   </tr>
   <tr>
    <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
@@ -82,9 +85,11 @@ Name: com.day.cq.auth.impl.CugSupportImpl
 **Kommentare**
 
 * Konfiguration der CUG-Autorisierung und Aktivieren/Deaktivieren der Bewertung.
-Dienst zum Konfigurieren der Ausschlussliste von Prinzipalen, die von der CUG-Genehmigung nicht betroffen sein sollten.
+Dienst zum Konfigurieren der Liste von Prinzipalen, die von der CUG-Genehmigung nicht betroffen sein sollten.
 
-   >[!NOTE] Wenn CugExcludeImpl nicht konfiguriert ist, wird die CugConfiguration auf den Standardwert zurückgesetzt.
+   >[!NOTE]
+   > 
+   >Wenn die Variable nicht konfiguriert `CugExcludeImpl` ist, wird `CugConfiguration` die Standardeinstellung zurückgesetzt.
 
    Es ist möglich, bei besonderen Anforderungen eine benutzerdefinierte CugExclude-Implementierung zu verbinden.
 
