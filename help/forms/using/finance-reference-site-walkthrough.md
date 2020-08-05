@@ -10,7 +10,10 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+workflow-type: tm+mt
+source-wordcount: '9064'
+ht-degree: 65%
 
 ---
 
@@ -163,7 +166,7 @@ Die folgende Abbildung zeigt den AEM-Workflow, der den Kreditkartenantrag verarb
 
 #### Sehen Sie selbst{#see-it-yourself-2} 
 
-Sie können auf den AEM-Posteingang für die Website we.finance unter https://&lt;*Hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html zugreifen. Tippen Sie auf der Seite auf **Anmelden**, aktivieren Sie das Kontrollkästchen **Als repräsentativ** anmelden, melden Sie sich beim AEM-Posteingang mit `grios/password` dem Benutzernamen/Kennwort für Gloria Rios an und genehmigen Sie den Kreditkartenantrag. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](../../forms/using/manage-applications-inbox.md).
+Sie können AEM Posteingang für die Website we.finance unter https://&lt;*Hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html aufrufen. Tippen Sie auf der Seite auf **Anmelden**, aktivieren Sie das Kontrollkästchen **Als repräsentativ** `grios/password` anmelden, melden Sie sich mit dem Benutzernamen/Kennwort für Gloria Rios beim AEM an und genehmigen Sie den Kreditkartenantrag. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](../../forms/using/manage-applications-inbox.md).
 
 ![inbox-1](assets/inbox-1.png)
 
@@ -235,7 +238,7 @@ https://&lt;*Hostname*>:&lt;*Anschluss*>/content/aemforms-refsite/doclink.html?D
 
 Sie können auf sie in den Autor- und Veröffentlichungsinstanzen zugreifen.
 
-Der Kreditkartenauszug zeigt Promo-Angebote gegen Ende des Auszugs an. Sie können Adobe-Zielgruppen in die interaktive AEM Forms-Kommunikation integrieren, um zielgerichtete Angebot für Werbezwecke basierend auf bestimmten Kundensegmenten bereitzustellen. Informationen zum Konfigurieren Ihrer interaktiven Kommunikation für die Verwendung der Adobe-Zielgruppe für benutzerdefinierte und zielgerichtete Angebot finden Sie unter [Erstellen zielgerichteter Erlebnisse](/help/forms/using/experience-targeting-forms.md).
+Der Kreditkartenauszug zeigt Promo-Angebote gegen Ende des Auszugs an. Sie können Adobe Target in die interaktive AEM Forms-Kommunikation integrieren, um zielgerichtete Angebot für Werbezwecke basierend auf bestimmten Kundensegmenten bereitzustellen. Informationen zum Konfigurieren Ihrer interaktiven Kommunikation für die Verwendung von Adobe Target für benutzerdefinierte und zielgerichtete Angebot finden Sie unter [Erstellen zielgerichteter Erlebnisse](/help/forms/using/experience-targeting-forms.md).
 
 ![](do-not-localize/offers.png)
 
@@ -300,7 +303,9 @@ Führen Sie folgende Schritte aus, um die Erstellung eines A/B-Tests für das We
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Entfernen Sie das Cookie mit dem Namen **mbox** aus der Cookiepersistenz des Browsers, bevor Sie das Formular das nächste Mal öffnen. Sie sehen dann das Erlebnis A und B des Formulars in zufälliger Ordnung.
+   >[!NOTE]
+   > 
+   >Entfernen Sie das Cookie mit dem Namen **mbox** aus der Cookiepersistenz des Browsers, bevor Sie das Formular das nächste Mal öffnen. Sie sehen dann das Erlebnis A und B des Formulars in zufälliger Ordnung.
 
 1. Wählen Sie das Formular aus, klicken Sie auf **Mehr**, und klicken Sie dann auf **A/B-Testbericht**. Sie werden nicht viele Daten im Bericht finden, da Sie gerade erst mit dem Testen begonnen haben. Jetzt werden wir einige Seed-Daten bereitstellen, um zu sehen, wie der A/B-Testbericht aussehen wird. 
 1. Öffnen Sie CRXDE Lite und erstellen Sie eine Sicherungskopie der folgenden Datei: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -736,7 +741,7 @@ Sarah erhält eine E-Mail mit einem Link zum Vertrag mit der Hausversicherung zu
 
 #### Funktionsweise {#how-it-works-16}
 
-Wenn Sarah den Hausversicherungsantrag einreicht, wird ein Formular-Workflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt. Wenn Gloria den Antrag prüft und genehmigt, wird die Aufgabe Frank De Costa zugewiesen. Der Fluss der Aufgaben von einer Person zur anderen wird im AEM-Arbeitsablauf definiert, der mit der Versicherungsanwendung verknüpft ist. For more information about workflows, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md).
+Wenn Sarah den Hausversicherungsantrag einreicht, wird ein Formular-Workflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt. Wenn Gloria den Antrag prüft und genehmigt, wird die Aufgabe Frank De Costa zugewiesen. Der Fluss der Aufgaben von einer Person zur anderen wird im AEM Arbeitsablauf definiert, der mit der Versicherungsanwendung verknüpft ist. For more information about workflows, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md).
 
 Das folgende Bild zeigt den AEM-Workflow, der mit dem Hausversicherungsantrag verknüpft ist.
 
@@ -802,7 +807,7 @@ Gehen Sie zum Web.Finance-Portal unter `https://[publishHost]:[publishPort]/wefi
 
 ### Sarah erkundet den Prospekt des Blue Chip Growth Fund, um mehr über den Fonds zu erfahren {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
-Sarah untersucht die Registerkarten Überblick, Preis und Leistung, Portfoliomanagement, Gebühren und Minimum sowie Steuern und Zahlungen des Prospekts, um aktuelle und historische Preise, historisches Wachstum, Vergleich mit S&amp;P 500 Index, sektorbezogene Diversifizierung, Fondsverwalter und mit dem Fonds verbundene Ausgaben zu erlernen. Die zugehörigen Informationen sind in verschiedene Registerkarten unterteilt. Der Prospekt ist eine interaktive Kommunikation. Die interaktiven Kommunikationen haben ein reaktionsfähiges Design. Sie kann die interaktive Kommunikation auf einem Gerät beliebiger Bildschirmgröße öffnen und die interaktive Kommunikation passt sich an das zugrunde liegende Gerät an.
+Sarah erkundet die Registerkarten Überblick, Preis und Leistung, Portfolio-Management, Gebühren und Minimum sowie Steuern und Zahlungen des Prospekts, um aktuelle und historische Preise, historisches Wachstum, Vergleich mit S&amp;P 500 Index, sektorbezogene Diversifizierung, Fondsverwalter und Fondskosten zu erfassen. Die zugehörigen Informationen sind in verschiedene Registerkarten unterteilt. Der Prospekt ist eine interaktive Kommunikation. Die interaktiven Kommunikationen haben ein reaktionsfähiges Design. Sie kann die interaktive Kommunikation auf einem Gerät beliebiger Bildschirmgröße öffnen und die interaktive Kommunikation passt sich an das zugrunde liegende Gerät an.
 
 ![Slide1-1](assets/slide1-1.png)
 
@@ -843,17 +848,17 @@ Das Szenario der automatischen Versicherungsanwendung für We.Finance umfasst di
 
 Sarah Rose ist bereits We.Finance-Kundin und hat eine Kfz-Versicherungspolice erworben. Jetzt wird es Zeit für die Erneuerung ihrer Versicherungspolice. Conrad Simms, Versicherungs-Agent, We.Finance sendet eine Erinnerung an Sarah über ihre Verlängerung ihrer Politik. Die E-Mail-Erinnerung enthält eine PDF-Datei mit Details zur Richtlinienverlängerung und einen Link zur Webversion der interaktiven Kommunikation. Die interaktive Kommunikation hat ein mobiles, benutzerfreundliches und reaktionsfähiges Design. Sie kann die interaktive Kommunikation auf jedem Gerät öffnen und die interaktive Kommunikation wird an die Bildschirmgröße des zugrunde liegenden Geräts angepasst. Die PDF-Version der interaktiven Kommunikation, die an E-Mail angehängt ist, ist beim Offline-Lesen hilfreich.
 
-Sarah befolgt die Anweisungen in der E-Mail und erneuert den Prozess erfolgreich. Die folgende Abbildung zeigt den Arbeitsablauf der exemplarischen Vorgehensweise der Anwendung für die automatische Versicherung:  Anleitung ![zur automatischen Versicherung](assets/auto-insurance-application-walkthrough.png)
+Sarah befolgt die Anweisungen in der E-Mail und erneuert den Prozess erfolgreich. Die folgende Abbildung zeigt den Arbeitsablauf der exemplarischen Vorgehensweise der Anwendung für die automatische Versicherung:  ![autoversicherung-application-walkthrough](assets/auto-insurance-application-walkthrough.png)
 
 ### Conrad sends an insurance policy renewal communication from We.Finance {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Conrad meldet sich bei der AEM-Instanz an, öffnet das Auto Insurance-Dashboard, gibt Sarahs **Kunden-ID** an und klickt auf **Erneuerungsrichtlinie**. Die **Agent-Benutzeroberfläche** wird mit den Richtliniendetails von Sarah Rose geöffnet, die bereits ausgefüllt sind. Conrad hat die E-Mail-Adresse von Sarah angegeben und klickt auf **Senden**. Sarah receives an email with the subject **Your Auto Insurance Renewal**.
+Conrad meldet sich bei AEM Instanz an, öffnet das Auto Insurance-Dashboard, gibt Sarahs **Kunden-ID** an und klickt auf **Verlängerungsrichtlinien**. Die **Agent-Benutzeroberfläche** wird mit den Richtliniendetails von Sarah Rose geöffnet, die bereits ausgefüllt sind. Conrad hat die E-Mail-Adresse von Sarah angegeben und klickt auf **Senden**. Sarah receives an email with the subject **Your Auto Insurance Renewal**.
 
 ![cc-Dashboard](assets/cc-dashboard.png)
 
 #### Funktionsweise {#how-it-works-20}
 
-Die Kommunikation zur Erneuerung der Versicherungspolice ist eine interaktive Kommunikation. Conrad Simms verwendet die Agent-Benutzeroberfläche, um die Mitteilung zur Verlängerung der Versicherungspolice an Sarah zu senden. Die Kommunikation beinhaltet Print (PDF) und einen Link zum Web-Kanal der interaktiven Kommunikation. Die interaktive Kommunikation verwendet AEM Workflow, um die E-Mail zu senden. Sie können den Workflow unter `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
+Die Kommunikation zur Erneuerung der Versicherungspolice ist eine interaktive Kommunikation. Conrad Simms verwendet die Agent-Benutzeroberfläche, um die Mitteilung zur Verlängerung der Versicherungspolice an Sarah zu senden. Die Kommunikation beinhaltet Print (PDF) und einen Link zum Web-Kanal der interaktiven Kommunikation. Die interaktive Kommunikation verwendet AEM Arbeitsablauf, um die E-Mail zu senden. Sie können den Workflow unter `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
 
 ![Arbeitsablauf für automatische Versicherung](assets/auto-insurance-workflow.png)
 
