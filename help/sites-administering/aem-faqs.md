@@ -8,7 +8,10 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc042696506bf1691c2eeffc6ab941be85fa274c
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 82%
 
 ---
 
@@ -47,7 +50,7 @@ If one requires the authors to manage projects as well, then the workaround is t
 Vor dem Erstellen eines Übersetzungsprojekts müssen Sie einen Sprach-Stamm und eine Sprachkopie innerhalb des Stamms erstellen.
 
 For example,
-Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Erstellen Sie anschließend eine Sprachkopie der Seite aus dem Referenzen-Bedienfeld und navigieren Sie zur `Create structure only` Option in `Create & Translate`. Erstellen Sie abschließend ein Übersetzungsprojekt und fügen Sie dann die Sprachkopie zum Übersetzungsauftrag hinzu.
+Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Erstellen Sie anschließend eine Sprachkopie der Seite aus dem Referenzen-Bedienfeld und navigieren Sie zu der `Create structure only` Option in `Create & Translate`. Erstellen Sie abschließend ein Übersetzungsprojekt und fügen Sie dann die Sprachkopie zum Übersetzungsauftrag hinzu.
 
 Weitere Informationen dazu finden Sie in den nachfolgenden Ressourcen:
 
@@ -67,15 +70,15 @@ Informationen dazu, wie Sie SSL standardmäßig aktivieren können, finden Sie u
 
 #### Welche Architektur empfiehlt sich bei der Nutzung der AEM Content Services über eine mobilen App, idealerweise React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
-Die Content Services basieren auf den Sling-Modellen, und die AEM-Entwickler müssen für jede Komponente, die exportiert wird, ein Sling-Modell-Pojo bereitstellen.
+Die Content Services basieren auf den Sling-Modellen, und die AEM Entwickler müssen für jede Komponente, die exportiert wird, ein Sling Model pojo bereitstellen.
 
-Erläuterungen dazu, wie AEM Content Services von einer React-Anwendung genutzt werden, erhalten Sie im Tutorial [Erste Schritte mit AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Erläuterungen dazu, wie AEM Content Services von einer React-Anwendung genutzt werden, erhalten Sie im Tutorial [Erste Schritte mit AEM Content Services](https://helpx.adobe.com/de/experience-manager/kt/sites/using/content-services-tutorial-use.html).
 
 Also, if the developers want to export a tree of components they can also implement the `ComponentExporter` and `ContainerExporter` interfaces as well as use the `ModelFactory` to iterate over the child components and return their model representation. Weitere Informationen dazu finden Sie in den nachfolgenden Ressourcen:
 
-[1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
+[1] - [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling:Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling: Sling-Modelle](https://sling.apache.org/documentation/bundles/models.html)
 
 #### Wie lässt sich das AEM 6.4-Umfrage-Popup deaktivieren? {#how-to-disable-aem-survey-pop-up}
 
@@ -124,9 +127,9 @@ AEM bietet verschiedene Mechanismen, mit denen Sie die Konsolen und die Seitener
 
 #### Was ist der Unterschied zwischen CoralUI 2- und CoralUI 3-basierten Komponenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) befinden. Es gibt einen Satz von CoralUI 2-basierten Komponenten und einen Satz von CoralUI 3-basierten Komponenten. Bei dem neuen Satz handelt es sich nicht um eine bloße Kopie des alten Satzes, sondern um eine bereinigte Version (u. .a optimiert und ohne veraltete Funktionen). Entsprechend empfiehlt es sich, dass eine Seite entweder ausschließlich den CoralUI 3-basierten oder aber den CoralUI 2-basierten Satz verwendet.
+A new set of Sling components of Granite UI Foundation is created for Coral3 and is located under [/libs/granite/ui/components/coral/foundation.](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) befinden. Es gibt einen Satz von CoralUI 2-basierten Komponenten und einen Satz von CoralUI 3-basierten Komponenten. Bei dem neuen Satz handelt es sich nicht um eine bloße Kopie des alten Satzes, sondern um eine bereinigte Version (u. .a optimiert und ohne veraltete Funktionen). Entsprechend empfiehlt es sich, dass eine Seite entweder ausschließlich den CoralUI 3-basierten oder aber den CoralUI 2-basierten Satz verwendet.
 
-Weitere Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Weitere Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### Wie lässt sich die Suchkomponente in AEM Assets anpassen? {#how-to-customize-the-search-component-in-aem-assets}
 
@@ -144,7 +147,7 @@ Weitere Informationen finden Sie unter [AEM Assets und AEM Media Library](/he
 
 Ja, WordPress-Kunden können mithilfe der Asset-Auswahl von Adobe Bilder von ihrem AEM Assets-Server auszuwählen, um sie zu Beiträgen auf ihrer WordPress-Site hinzuzufügen.
 
-Weitere Informationen finden Sie unter [Asset-Wähler](../assets/search-assets.md#assetselector).
+Weitere Informationen finden Sie unter [Asset-Wähler](../assets/search-assets.md#assetpicker).
 
 #### Ist es möglich, die Suchfacetten in AEM Assets zu erweitern, um zusätzliche Prädikate hinzuzufügen? {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
 
