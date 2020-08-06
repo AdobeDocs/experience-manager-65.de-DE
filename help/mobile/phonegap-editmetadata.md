@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 translation-type: tm+mt
-source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 26%
 
 ---
 
@@ -31,9 +34,9 @@ So bearbeiten Sie die Metadaten der App:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Um Details anzuzeigen oder zu bearbeiten, klicken Sie auf &quot;...&quot; in der unteren rechten Ecke der Kachel App **verwalten** .
+1. Um Details durch Klicken auf das Symbol &quot;...&quot;Ansicht oder zu bearbeiten. in der unteren rechten Ecke der Kachel App **verwalten** .
 
-1. Geben Sie die Details in die fünf verfügbaren Registerkarten ein oder zeigen Sie sie an (siehe Abbildung unten).
+1. Geben Sie die Details in eine der fünf Registerkarten ein oder legen Sie sie in der Ansicht nach unten fest.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -42,13 +45,13 @@ So bearbeiten Sie die Metadaten der App:
 Sie können die allgemeinen und IOS-Metadaten bearbeiten:
 
 * Wählen Sie auf der Seite &quot;App-Beschreibung&quot;die Registerkarte &quot; **Erweitert** &quot;aus.
-* Bearbeiten oder Anzeigen der allgemeinen und IOS-Metadaten. Nähere Informationen finden Sie in den nachstehenden Zahlen.
+* Bearbeiten oder Ansicht der häufig verwendeten und IOS-Metadaten. Nähere Informationen finden Sie in den unten stehenden Zahlen.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
 
-## Screenshots hinzufügen und entfernen {#add-and-remove-screenshots}
+## Screenshots Hinzufügen und entfernen {#add-and-remove-screenshots}
 
-Sie können App-Screenshots in das Metadaten-Rollup einbeziehen. Einige Anbieter benötigen präzise Screenshots, wenn Sie eine App an den App Store senden. Diese Bilder müssen bereits in Assets vorhanden sein. Informationen zum Hochladen Ihrer Screenshots finden Sie unter [Asset-Auswahl](../assets/search-assets.md#assetselector).
+Sie können App-Screenshots in das Metadaten-Rollup einbeziehen. Einige Anbieter benötigen präzise Screenshots, wenn Sie eine App an den App Store senden. Diese Bilder müssen bereits in Assets vorhanden sein. Informationen zum Hochladen Ihrer Screenshots finden Sie unter [Asset-Auswahl](../assets/search-assets.md#assetpicker).
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -65,7 +68,7 @@ So fügen Sie ein Asset als Screenshot hinzu:
 
 >[!NOTE]
 >
->Der Screenshot muss mit der Bildschirmauflösung des Zielgeräts übereinstimmen.
+>Der Screenshot muss mit der Bildschirmauflösung des Zielgruppe-Geräts übereinstimmen.
 
 ### Löschen von Screenshots {#delete-screenshots}
 
@@ -77,7 +80,7 @@ Klicken Sie auf den Löschvorgang für das Asset.
 
 ## Die nächsten Schritte {#the-next-steps}
 
-Weitere Informationen zu anderen Autorenrollen finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu anderen Authoring-Rollen finden Sie in den folgenden Ressourcen:
 
 * [Bereich „App verwalten“](/help/mobile/phonegap-app-details-tile.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
