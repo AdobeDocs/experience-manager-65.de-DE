@@ -11,10 +11,10 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 81%
+source-wordcount: '1242'
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 81%
 
 Vor der Durchführung eines Upgrades müssen einige Schritte ausgeführt werden. Weitere Informationen erhalten Sie unter [Aktualisieren von Codes und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) sowie [Wartungsmaßnahmen vor dem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Achten Sie außerdem darauf, dass Ihr System die Anforderungen für die aktuelle Version von AEM erfüllt. Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität Ihres Upgrades abschätzen können. Weitere Informationen finden Sie auch im Abschnitt „Aktualisierungsumfang und -anforderungen“ unter [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md).
 
-Beachten Sie schließlich, dass die Ausfallzeiten während der Aktualisierung erheblich verringert werden können, indem Sie das Repository indizieren, **bevor** Sie die Aktualisierung durchführen. Weitere Informationen finden Sie unter [Verwenden der Offline-Neudexprimierung zur Reduzierung der Ausfallzeiten während einer Aktualisierung](/help/sites-deploying/upgrade-offline-reindexing.md)
+<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Voraussetzungen für die Migration {#migration-prerequisites}
 
