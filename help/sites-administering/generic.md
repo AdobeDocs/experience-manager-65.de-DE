@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 95d9ed8a0ccfa7651b83058d337511dd6b15665f
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '3008'
+ht-degree: 87%
 
 ---
 
@@ -142,6 +145,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    * **Produkt erstellen**
    * **Produktvariante erstellen**
+
    ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
 
 1. Der Assistent wird geöffnet. Verwenden Sie die Registerkarten **Allgemein** und **Produkt**, um die [Produktattribute](/help/sites-administering/concepts.md#product-attributes) für das neue Produkt bzw. die Produktvariante einzugeben.
@@ -166,7 +170,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 >
 >`/etc/commerce/products/...`
 >
->Dies bedeutet, dass sie standardmäßig vom [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) blockiert werden. Konfigurieren Sie dies also je nach Bedarf.
+>Dies bedeutet, dass sie standardmäßig vom [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) blockiert werden. Konfigurieren Sie dies also je nach Bedarf.
 
 #### Bearbeiten von Produktinformationen – Touch-optimierte Benutzeroberfläche {#editing-product-information-touch-optimized-ui}
 
@@ -175,6 +179,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Wählen Sie das Symbol **Produktdaten anzeigen**:
 
    ![chlimage_1-3](do-not-localize/chlimage_1-15.png)
@@ -199,6 +204,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    * Zu Produktseite navigieren
    * Produktseite bearbeiten
+
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
 ### Nach Produkten suchen {#search-for-products}
@@ -302,7 +308,7 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 
 1. Navigieren Sie zu Ihrem Katalog.
 1. Klicken oder tippen Sie auf **Eigenschaften anzeigen**.
-1. Klicken oder tippen Sie auf **Bearbeiten**.
+1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Tap/click the **Assets** tab.
 1. Geben Sie die gewünschte **Produkt-Asset-Kategorie** ein.
 1. Klicken oder tippen Sie auf **Fertig**.
@@ -312,7 +318,7 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 
 1. Using the **Products** console, navigate to the required Product.
 1. Tap/click **View Product Data**.
-1. Klicken oder tippen Sie auf **Bearbeiten**.
+1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Geben Sie eine **Standard-Asset-Kategorie** ein.
 1. Klicken oder tippen Sie auf **Fertig**.
 1. Führen Sie für Ihre Änderungen den [Rollout](#rolling-out-a-catalog) durch.
@@ -323,7 +329,7 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 
 >[!NOTE]
 >
->Häufig werden Produktinformationen über die Seiten veröffentlicht, die darauf verweisen. Wenn Sie beispielsweise Seite X veröffentlichen, die auf Produkt Y verweist, fragt AEM, ob Sie auch Produkt Y veröffentlichen möchten.
+>Häufig werden Produktinformationen über die Seiten veröffentlicht, die darauf verweisen. Wenn Sie z. B. Seite X veröffentlichen, die auf Produkt Y verweist, werden AEM fragen, ob Sie auch Produkt Y veröffentlichen möchten.
 >
 >In besonderen Fällen unterstützt AEM auch die Veröffentlichung direkt aus den Produktdaten.
 
@@ -332,6 +338,7 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Wählen Sie je nach Bedarf das Symbol **Veröffentlichen** oder **Veröffentlichung rückgängig machen**:
 
    ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
@@ -379,7 +386,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
 1. Navigieren Sie zu der Seite, auf der Sie die Komponente hinzufügen möchten.
 1. Ziehen Sie die Komponente auf die Seite und legen Sie sie ab.
 1. Ziehen Sie ein Bild aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) und legen Sie es in der Komponente ab.
-1. Wählen Sie eine der folgenden Möglichkeiten:
+1. Wählen Sie eine der folgenden Möglichkeiten aus:
 
    * Klicken Sie auf die Komponente und dann auf das Symbol Bearbeiten
    * Führen Sie einen langsamen Doppelklick aus.
@@ -398,7 +405,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
 
 1. Ändern und verschieben Sie die Form wie gewünscht.
 1. Klicken Sie auf die Form.
-1. Wenn Sie auf das Symbol „Durchsuchen“ klicken, wird der [Asset-Wähler](../assets/search-assets.md#assetselector) geöffnet.
+1. Wenn Sie auf das Symbol „Durchsuchen“ klicken, wird der [Asset-Wähler](../assets/search-assets.md#assetpicker) geöffnet.
 
    >[!NOTE]
    >
@@ -489,7 +496,7 @@ Generieren Sie wie folgt einen Katalog:
 
 1. Erstellen Sie mit der Vorlage **Bereichs-Blueprint** eine neue Seite.
 
-   Beispiel, `Swimwear`.
+   Beispiel: `Swimwear`.
 
 1. Öffnen Sie die neue Seite `Swimwear` und klicken Sie dann auf **Blueprint bearbeiten**, um das Dialogfeld **Eigenschaften** zu öffnen, in dem Sie die Auswahl **Produkte** einrichten können.
 
@@ -517,6 +524,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Wählen Sie das Symbol **Rollout-Änderungen**:
 
    ![](do-not-localize/chlimage_1-24.png)
@@ -587,6 +595,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    * Öffnen Sie die Seite und klicken Sie dann auf die Schaltfläche „Bearbeiten“, um das Dialogfeld „Eigenschaften“ zu öffnen.
    * Wählen Sie die Seite in der Websites-Konsole aus, wählen Sie über das Kontextmenü (normalerweise mit der rechten Maustaste) die Option **Eigenschaften...** und öffnen Sie das Dialogfeld „Eigenschaften“.
+
    Geben Sie je nach Bedarf Werte für **Promotion-Typ**, **Rabatttyp**, **Rabattwert** und alle anderen gewünschten Felder an.
 
 1. Klicken Sie zum Speichern auf **OK**.
@@ -638,7 +647,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 >
 >Beachten Sie Folgendes: Im Lieferzustand verfügt AEM nicht über Aktionen, die für standardmäßige Funktionen für Bestellungen erforderlich sind, z. B. Warenrückgabe, Aktualisierung des Bestellstatus, Bestellabwicklung, Generierung von Lieferscheinen. Der Hauptzweck ist die Technologievorschau.
 >
->Die allgemeine Auftragsverwaltung in AEM wurde grundlegend beibehalten. Die im Assistenten verfügbaren Felder hängen von der Gerüste ab:
+>Die generische Auftragsverwaltung in AEM wurde grundsätzlich beibehalten. Die im Assistenten verfügbaren Felder hängen von der Gerüste ab:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Wenn Sie eine angepasste Strukturvorlage erstellen, können Sie mehr Bestellinformationen speichern.
@@ -671,6 +680,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Wählen Sie das Symbol **Auftragsdaten anzeigen**:
 
    ![](do-not-localize/chlimage_1-15.png)
