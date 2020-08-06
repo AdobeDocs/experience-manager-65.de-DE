@@ -3,10 +3,10 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 74%
+source-wordcount: '1533'
+ht-degree: 75%
 
 ---
 
@@ -68,7 +68,7 @@ Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigen
 >[!NOTE]
 >
 >1. Das Training ist ein unwiderruflicher Vorgang. Adobe empfiehlt Ihnen, die Tags im Asset-Satz zu überprüfen, bevor Sie den Smart Content Service mit den Tags trainieren.
->1. Please do read [Smart Content Service training guidelines](smart-tags-training-guidelines.md) before starting training for any tag.
+>1. Bevor Sie eine Schulung für ein Tag durchführen, lesen Sie die Schulungsrichtlinien für [Smart Content Service](smart-tags-training-guidelines.md).
 >1. Adobe empfiehlt Ihnen, mindestens zwei unterschiedliche Tags zu verwenden, wenn Sie den Smart Content Service zum ersten Mal trainieren.
 
 
