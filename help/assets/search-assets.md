@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8f8134d6c4fcc0ef54f9cc8298936c5c7d746c09
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
 workflow-type: tm+mt
 source-wordcount: '5860'
 ht-degree: 54%
@@ -27,7 +27,7 @@ ht-degree: 54%
 | [Such-Ranking und -Optimierung](#searchrank) | [Textextraktion](#extracttextupload) | [Smart-Sammlungen](#collections) |
 | [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Unerwartete Ergebnisse und Fehlerbehebung](#troubleshoot-unexpected-search-results-and-issues) |
 | [Suchen Sie nach anderen Lösungen und Apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-Desktop-App](#desktopapp)</li><li>[Adobe Stock-Fotos](#adobestock)</li><li>[Dynamic Media-Assets](#dynamicmedia)</li></ul> |  |  |
-| [Asset-Auswahl](#assetselector) |  |  |
+| [Asset-Auswahl](#assetpicker) |  |  |
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
 
@@ -226,7 +226,7 @@ Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Asse
 
 [!DNL Experience Manager] Suchfunktion unterstützt die Suche nach Sammlungen und die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/managing-collections-touch-ui.md).
 
-## Asset-Auswahl {#assetselector}
+## Asset-Auswahl {#assetpicker}
 
 Mit der Asset-Auswahl können Sie die DAM-Assets auf besondere Weise suchen, filtern und durchsuchen. Asset Picker is available at `https://[aem-server]:[port]/aem/assetpicker.html`. Mit dieser Funktion können Sie die Metadaten der ausgewählten Assets abrufen. Sie können ihn mit unterstützten Anfrageparametern wie dem Asset-Typ (Bild, Video, Text) und dem Auswahlmodus (eine oder mehrere Auswahlen) starten. Diese Parameter legen den Kontext der Asset-Auswahl für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt.
 
@@ -444,7 +444,7 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
-| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
+| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nachdem die Metadaten aktualisiert wurden, muss der Asset-Metadatenstatus neu deklariert werden. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
 | Zu viele Suchergebnisse. | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht verwandte oder teilweise verwandte Suchergebnisse. | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
 | Keine Vorschläge für Assets automatisch ausfüllen. | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | [!DNL Assets] erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
