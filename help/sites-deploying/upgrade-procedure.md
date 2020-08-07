@@ -12,10 +12,10 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 5f8198f0fd6c335708f2b771848b2e66dfc242b3
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 91%
+source-wordcount: '835'
+ht-degree: 94%
 
 ---
 
@@ -28,9 +28,12 @@ ht-degree: 91%
 
 Wenn Sie die AEM-Umgebungen aktualisieren, müssen Sie sich die Unterschiede beim Aktualisieren von Autorenumgebungen und Veröffentlichungsumgebungen bewusst machen, um Ausfallzeiten für Autoren und Endbenutzer zu minimieren. Auf dieser Seite finden Sie einen Überblick über die Aktualisierung einer AEM-Topologie, die auf einer AEM 6.x-Version ausgeführt wird. Da sich der Vorgang für die Autoren- und Veröffentlichungsschicht und ebenfalls für Bereitstellungen mit Mongo und TarMK unterscheidet, werden die einzelnen Schichten und Mikrokernel in separaten Abschnitten behandelt. Beim Ausführen der Bereitstellung wird empfohlen, zuerst die Autorenumgebung zu aktualisieren und, wenn dies erfolgreich war, mit den Veröffentlichungsumgebungen fortzufahren.
 
-<!-->>[!IMPORTANT]
->Die Ausfallzeiten während der Aktualisierung können erheblich verringert werden, indem das Repository vor der Aktualisierung indiziert wird. Weitere Informationen finden Sie unter [Verwenden der Offline-Neudexprimierung zur Reduzierung der Ausfallzeiten während eines Upgrades](/help/sites-deploying/upgrade-offline-reindexing.md)—>
+<!--
+>[!IMPORTANT]
 >
+>The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
+-->
+
 ## Autorenschicht auf TarMK {#tarmk-author-tier}
 
 ### Starten der Topologie {#starting-topology}
