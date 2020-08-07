@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager 6.5 Versionshinweise zu früheren Service Packs
+title: Adobe Experience Manager 6.5 Previous Service Pack Release Notes
 description: Versionshinweise speziell für Adobe Experience Manager 6.5 Service Pack 3 und früher.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '8108'
 ht-degree: 37%
@@ -15,15 +15,15 @@ ht-degree: 37%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Verbesserungen und Leistung, Stabilität und Sicherheitsverbesserungen umfasst. Dieses Update wurde seit der Veröffentlichung der Version 6.5 im **April 2019** veröffentlicht. Es kann auf Adobe Experience Manager 6.5 installiert werden.
+Adobe Experience Manager 6.5.4.0 is an important update that includes new features, key customer requested enhancements and performance, stability, security improvements, released since the general availability of 6.5 release in **April 2019**. It can be installed on top of Adobe Experience Manager 6.5.
 
-Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.4.0 eingeführt wurden, zählen:
+Some key features and enhancements introduced in Adobe Experience Manager 6.5.4.0 include:
 
-* Adobe Experience Manager Assets werden jetzt über die Adobe-E/A-Konsole mit dem Markenportal konfiguriert.
+* Adobe Experience Manager Assets is now configured with Brand Portal through Adobe I/O Console.
 
 * Für Adobe Experience Manager Forms Workflows ist jetzt ein neuer [Druckausgabe](../forms/using/aem-forms-workflow-step-reference.md) -Schritt Generieren verfügbar.
 
-* [Mehrspaltige Unterstützung](../forms/using/resize-using-layout-mode.md) für den Layoutmodus für adaptive Formulare und interaktive Kommunikation.
+* [Multi-column support](../forms/using/resize-using-layout-mode.md) for layout mode for adaptive forms and Interactive Communications.
 
 * Unterstützung für [Rich Text](../forms/using/designing-form-template.md) in HTML5-Formularen.
 
@@ -31,11 +31,11 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manage
 
 * Das integrierte Repository (Apache Jackrabbit Oak) wird auf Version 1.10.8 aktualisiert.
 
-* Sie können jetzt selektive Inhaltsunterbauten mit *Dynamic Media synchronisieren - Scene7-Modus* anstelle aller verfügbaren unter `content/dam`.
+* You can now sync selective content subtrees to *Dynamic Media - Scene7 mode* instead of all available at `content/dam`.
 
 * Die Integration des Formulardatenmodells mit dem SOAP-Webdienst unterstützt jetzt Auswahlgruppen oder Attribute für Elemente.
 
-* SOAP-Eingabe- oder -Ausgabe und komplexe Datenstrukturen unterstützen jetzt die dynamische Gruppenersetzung.
+* SOAP input or output and complex data structures now support Dynamic Group Substitution.
 
 Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktionen und wichtigen Highlights finden Sie unter [Neue Funktionen in Adobe Experience Manager 6.5 Service Packs](new-features-latest-service-pack.md).
 
@@ -57,9 +57,9 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Benutzer dürfen ein Inhaltsfragment speichern, ohne in den erforderlichen Feldern Informationen anzugeben (NPR-31988).
 
-* kernel.js und ui.js sind nicht vorab erfüllt oder zwischengespeichert. Dies führt zu zusätzlicher Zeit beim Rendern von Seiten (NPR-31891).
+* kernel.js and ui.js are not pre-complied or cached. Dies führt zu zusätzlicher Zeit beim Rendern von Seiten (NPR-31891).
 
-* Wenn PageEventAuditListener aktiviert ist, wird die Länge der Warteschlange zum Übernehmen verlängert. Es wirkt sich auf die Leistung vieler Vorgänge wie Massenveröffentlichung, Navigation, Massenbewegung von Assets aus (NPR-31890).
+* Wenn PageEventAuditListener aktiviert ist, wird die Länge der Warteschlange zum Übernehmen verlängert. It impacts the performance of many operations such as bulk publishing, navigation, bulk asset movement (NPR-31890).
 
 * Wenn Erlebnisfragmente gezogen werden, wird eine hohe Reaktionszeit beobachtet (NPR-31878).
 
@@ -87,7 +87,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Die Schaltfläche zum Auslösen des Workflows auf der Seite zur Asset-Sammlung ist deaktiviert (NPR-32471).
 
-* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit Dynamic Media Scene7-Konfiguration (NPR-32440) von einem Ordner in einen anderen verschoben wird.
+* Ein Ordner ohne Namen wird in SPS (Scene7 Publishing System) erstellt, während ein Asset in Experience Manager mit der Scene7-Konfiguration für dynamische Medien (NPR-32440) von einem Ordner in einen anderen verschoben wird.
 
 * Die Aktion zum Verschieben aller Assets (mit &quot;Alle auswählen&quot;und dann &quot;Verschieben&quot;) in einen Ordner mit veröffentlichten Assets schlägt fehl (NPR-32366).
 
@@ -101,9 +101,9 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Das Kalendersymbol für geplante Aktivierungen wird nicht in der Statusspalte (in der Classic UI der DAM-Asset-Auflistung) für Assets angezeigt, deren Aktivierung für ein späteres Datum und eine spätere Uhrzeit geplant ist (NPR-32291).
 
-* Die Erstellung von Snippets mithilfe von Snippet-Vorlagen gibt beim Erstellen von Snippets (NPR-32290) Fehler beim Suchen nach Sammlungen.
+* Snippet creation using snippet templates gives error on searching for collections during the snippet creation process (NPR-32290).
 
-* Mehrere Abfragen der Suche werden ausgelöst, wenn mehrere Tags aus dem Suchfilter ausgewählt werden (NPR-32143).
+* Multiple search queries get fired when multiple tags are selected from search filter (NPR-32143).
 
 * In der Benutzeroberfläche &quot;Experience Manager Assets&quot;werden abgeschnittene Dateinamen angezeigt, wenn Assets mit mehr als 50 Zeichen im Dateinamen hochgeladen werden (NPR-32054).
 
@@ -119,29 +119,29 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
 
-* Die Detailseite &quot;Assets&quot;von PDF-Assets zeigt keine Aktionsschaltflächen an, außer den Schaltflächen &quot;An Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, der im Scene7-Ausführungsmodus von Dynamic Media ausgeführt wird (CQ-4286705).
+* Auf der Seite &quot;Assets-Detail&quot;von PDF-Assets werden keine Aktionsschaltflächen angezeigt, außer den Schaltflächen &quot;An Sammlung&quot;und &quot;Hinzufügen Darstellung&quot;in Experience Manager, der im Scene7-Ausführungsmodus für dynamische Medien ausgeführt wird (CQ-4286705).
 
 * Die Verarbeitung von Assets durch den Batch-Upload von Scene7 (CQ-4286445) dauert zu lange.
 
-* Die Schaltfläche &quot;Speichern&quot;importiert kein Remote-Set, wenn der Benutzer im Set-Editor im Dynamic Media-Client keine Änderungen vorgenommen hat (CQ-4285690).
+* Save button does not import Remote Set when user has not made any changes in Set Editor in Dynamic Media Client (CQ-4285690).
 
 * Die Miniaturansicht von 3D-Assets ist nicht informativ, wenn ein unterstütztes 3D-Modell in Experience Manager integriert wird (CQ-4283701).
 
-* Der unverarbeitete Status der Viewer-Vorgabe für intelligente Beschneidung wird zweimal neben dem Vorgabennamen auf dem Bannertext angezeigt (CQ-4283517).
+* The unprocessed status of smart crop video viewer preset appears twice on the banner text alongside the preset name (CQ-4283517).
 
-* Auf der Detailseite des Assets (CQ-4283309) wird eine falsche Höhe des Containers eines hochgeladenen 3D-Modells, das in der Vorschau im 3D-Viewer angezeigt wird, festgestellt.
+* Incorrect container height of an uploaded 3D model previewed in 3D viewer is observed on asset’s details page (CQ-4283309).
 
-* Karussell-Editor in IE 11 im Experience Manager-Dynamic Media-Hybridmodus (CQ-4255590) nicht geöffnet.
+* Carousel Editor does not open in IE 11 on Experience Manager Dynamic Media Hybrid mode (CQ-4255590).
 
-* Der Tastaturfokus wird in der Dropdown-Liste &quot;E-Mail&quot;im Dialogfeld &quot;Herunterladen&quot;in Chrome und Safari-Browsern (NPR-32067) angehalten.
+* Keyboard focus gets stuck in Email drop-down in Download dialog, in Chrome and Safari browsers (NPR-32067).
 
-* Das Kontrollkästchen &quot;Alle Inhalte synchronisieren&quot;ist beim Hinzufügen der DM Cloud-Konfiguration auf dem Experience Manager nicht standardmäßig aktiviert (CQ-4288533).
+* Sync all content checkbox is not enabled by default while trying to add DM cloud config on Experience Manager (CQ-4288533).
 
-### Foundation-Benutzeroberfläche {#foundation-ui-6540}
+### Foundation UI {#foundation-ui-6540}
 
-* Die Maussteuerung wechselt zum vorherigen Filterfeld, anstatt im vorhandenen Filterfeld zu bleiben, während Assets mit dem Filterbedienfeld (NPR-32538) gesucht werden.
+* Mouse control shifts to previous filter field instead of staying in the existing filter field while searching assets using Filter panel (NPR-32538).
 
-* Plattform-Tagging: Die Suche nach Tags durch Eingabe in die Tag-Felder zeigt Tags außerhalb der Root-Grenzen an und berücksichtigt nicht die `rootPath` Eigenschaft von Tag-Feldern (NPR-31895).
+* Platform Tagging: Search for tags by typing in the tag fields shows tags outside the root boundaries and does not respect the `rootPath` property of tag fields (NPR-31895).
 
 * Plattform-Benutzeroberfläche: Pfadbrowser wird umgebrochen, wenn im Textfeld ein ungültiger Pfad hinzugefügt wird (NPR-31884).
 
@@ -155,9 +155,9 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Schaltfläche &quot;Erstellen&quot;ist für den Benutzer nicht sichtbar, auch wenn der Benutzer berechtigt ist, ein Projekt im Unterordner zu erstellen (NPR-31832).
 
-### Projektübersetzung {#projects-translation-6540}
+### Projects Translation {#projects-translation-6540}
 
-* Bei der Erstellung von Übersetzungsprojekten wird die Benutzeroberfläche unterbrochen, wenn die Option &quot;Beschneidungsbereiche&quot;in `Apache Sling JSP Script Handler` (NPR-32154) aktiviert ist.
+* Translation project creation breaks the UI when the Trim Spaces option is activated in `Apache Sling JSP Script Handler` (NPR-32154).
 
 * Fehler in UI- und Null-Punkt-Ausnahme in Fehlerprotokollen werden beobachtet, wenn ein zu übersetzendes Tag einem Übersetzungsprojekt hinzugefügt wird (NPR-31896).
 
@@ -191,9 +191,9 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Beim Rückgängigmachen der Veröffentlichung des Metadatenschemas wird eine Fehlermeldung angezeigt, obwohl das Schema im Backend entfernt wurde.
 
-* Für ein veröffentlichtes Asset wird kein Bild für die Vorschau angezeigt (CQ-4285886).
+* Preview image do not display for a published asset (CQ-4285886).
 
-* Benutzer kann Assets, die ein einzelnes Anführungszeichen im Namen enthalten (CQ-4272686), nicht veröffentlichen oder die Veröffentlichung rückgängig machen.
+* User is unable to publish or unpublish assets containing single quote in the name (CQ-4272686).
 
 * Die Geschäftsbedingungen werden beim Herunterladen mehrerer Assets nicht angezeigt (CQ-4281224).
 
@@ -203,11 +203,11 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Das Formular &quot;Create Member&quot;wird als leere Seite angezeigt (NPR-31997).
 
-* Der Benutzer kann den Analytics-Bericht zum Autorenmodus (NPR-30913) nicht Ansicht werden.
+* Der Benutzer kann den Analytics-Bericht nicht in der Autoreninstanz (NPR-30913) Ansicht werden.
 
-### Eichen- Indizierung und Abfragen {#oak-indexing-6540}
+### Oak- Indexing and Queries {#oak-indexing-6540}
 
-* MS Word- und MS Excel-Dokumente, die JPEG-Image enthalten, wenn mit Tika Parser analysiert werden kann, und der Fehler class not found (Klasse nicht gefunden) wird beobachtet (NPR-31952).
+* MS Word and MS Excel documents, containing JPEG image, when parsed with Tika parser fail to parse and class not found error is observed (NPR-31952).
 
 ### Formulare {#forms-6540}
 
@@ -259,11 +259,11 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * [!DNL Dynamic Media] unterstützt jetzt Smart Crop-Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen.
 
-* [!DNL Dynamic Media] unterstützt Smart Imaging.
+* [!DNL Dynamic Media] supports Smart Imaging.
 
 * Möglichkeit zur [Festlegung von Abwesenheitseinstellungen](../forms/using/configure-out-of-office-settings.md) in [!DNL Experience Manager] Workflows.
 
-* Möglichkeit zur [Freigabe von Inbox- oder Inbox-Elementen](../forms/using/configure-shared-queues-osgi.md) für andere Benutzer in [!DNL Experience Manager] Workflows.
+* Ability to [share Inbox or Inbox items](../forms/using/configure-shared-queues-osgi.md) with other users in [!DNL Experience Manager] workflows.
 
 * Möglichkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
@@ -281,33 +281,33 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Die Dateien GLB, GLTF, OBJ und STL können in DAM (CQ-4282277) auf der Seite &quot; [!UICONTROL Asset-Details] &quot;in der Vorschau angezeigt werden.
 
-* `ReplicationOnModifyListener` Ereignis wird beim Hochladen von Chunk-Knoten in ausgelöst [!DNL Dynamic Media] (CQ-4281279).
+* `ReplicationOnModifyListener` ereignis wird beim Hochladen von Chunk-Knoten in ausgelöst [!DNL Dynamic Media] (CQ-4281279).
 
 * [!DNL Dynamic Media] unterstützt jetzt Smart Crop-Video-Assets. Smart Crop ist eine maschinelle lerngesteuerte Funktion, die ein Video beim Verschieben des Rahmens neu beschneidet, um dem Brennpunkt der Szene zu folgen (CQ-4278995).
 
-* [!DNL Dynamic Media] unterstützt Smart Imaging (CQ-4222249).
+* [!DNL Dynamic Media] supports Smart Imaging (CQ-4222249).
 
-* Die Ansicht &quot;Suchen&quot;oder &quot;Durchsuchen&quot;wird in der Foundation-Auswahl als Standard-Ansicht festgelegt, wenn in der Anfrage Abfrage-Parameter übergeben werden (NPR-31601).
+* Search or browse view is set as the default view in Foundation picker if query parameters are passed in request (NPR-31601).
 
 **Fehlerkorrekturen**
 
-* Metadaten für einige PDF-Dokumente werden beim Ändern des Titels (NPR-31629) nicht aktualisiert und im PDF-Format gespeichert.
+* Metadata for some PDF documents is not updated and saved to the PDF when its title is modified (NPR-31629).
 
-* Asset Sharing funktioniert nicht für Assets, die im Dateinamen ein Pluszeichen (`+`) enthalten (NPR-31547).
+* Asset sharing does not work for an asset that has plus character (`+`) in the file name (NPR-31547).
 
-* Änderungen im Standardsuchformular Assets Admin Search Rail funktionieren nicht wie erwartet (NPR-31502).
+* Edits in the default search form Assets Admin Search Rail do not work as expected (NPR-31502).
 
-* Vorschläge werden nicht angezeigt, wenn Sie die Omniture-Ansicht für Assets zum Durchsuchen von Assets verwenden (NPR-31496).
+* Suggestions are not displayed when using Omnisearch on assets view for searching assets (NPR-31496).
 
-* Asset-Verweise in Sammlungen werden nicht aktualisiert, wenn die referenzierten Assets an einen anderen Speicherort verschoben werden, sofern dieselben Assets von verschiedenen Benutzern durch unterschiedliche Sammlungen referenziert werden (NPR-31486).
+* Asset references within collections are not updated when the referenced assets are moved to another location, in cases where the same assets are referenced by different collection by different users (NPR-31486).
 
-* Duplikat-IPTC-Tags werden Asset-Metadaten hinzugefügt (NPR-31328).
+* Duplicate IPTC tags are added to asset metadata (NPR-31328).
 
-* Die Anzahl der Suchergebnisse wird nicht genau aktualisiert, wenn eine Suche über die Filterleiste ausgelöst wird (NPR-31316).
+* The search result count does not update accurately when a search is triggered from the filter rail (NPR-31316).
 
-* Alle Kontrollkästchen werden deaktiviert, wenn die Kontrollkästchen der zweiten Ebene im Filter &quot;Dateityp&quot;deaktiviert werden, und der Text in der Suchleiste stimmt nicht mit den ausgewählten oder nicht ausgewählten Eigenschaften überein (NPR-31287).
+* All the check boxes are cleared on deselecting the second-level check boxes in the File Type filter, and text in the search bar is not in sync with the selected or deselected properties (NPR-31287).
 
-* Alle Mitglieder (Benutzer/Gruppen) können nicht aus dem Abschnitt &quot;Mitglieder&quot;eines Ordners entfernt werden. beim Versuch, alle Benutzer zu entfernen, wird der angemeldete Benutzer zur Liste hinzugefügt (NPR-31171).
+* All the members (users/ groups) cannot be removed from the Members section of a folder; on attempting to remove all the users, logged in user gets added to the list (NPR-31171).
 
 * Assets mit Pluszeichen (`+`) im Dateinamen können nicht gelöscht werden (NPR-31162).
 
@@ -315,9 +315,9 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Ordnerauswahl &quot;Erstellen&quot;> &quot;DateiUpload&quot;-Aktionselement fehlt, wenn ACL für Verweigern `jcr:removeChildNodes` und `jcr:removeNode` auf Pfad für einen Benutzer angewendet werden (NPR-30840).
 
-* DAM Workflows beim Hochladen bestimmter MP4-Assets in den Status &quot;statisch&quot;wechseln, wodurch alle verbleibenden Workflows in den Status &quot;statisch&quot;wechseln (NPR-30662).
+* DAM workflows go into stale state when certain mp4 assets are uploaded, causing all the remaining workflows to go into stale state (NPR-30662).
 
-* Fehler wegen ungenügenden Speicherplatzes werden beobachtet, wenn große PDF-Dateien (mit mehreren Gigabytes) zu DAM hochgeladen und deren Teilassets verarbeitet werden (NPR-30614).
+* Out of Memory Error is observed when a large PDF files (of several Gigabytes) is uploaded to DAM and its sub-assets are processed (NPR-30614).
 
 * Die Massenbewegung von Assets schlägt fehl und es wird eine Warnmeldung angezeigt (NPR-30610).
 
@@ -325,35 +325,35 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Beim Bearbeiten eines Remote-Bildsatzes wird ein Fehler behoben, da sich das Bild im Ordner befindet, der dem Namen der Scene7-Firma entspricht (NPR-31340).
 
-* [!DNL Dynamic Media] Assets, die Verweise enthalten, werden nicht veröffentlicht (NPR-31180).
+* [!DNL Dynamic Media] assets containing references are not getting published (NPR-31180).
 
 * Uploads vom [!DNL Dynamic Media]7-Scene7-Modus zum [!DNL Dynamic Media Classic] Ausführen dauern zu lange (NPR-31048).
 
 * Hotspot, der zu einem Bild-Asset hinzugefügt wurde, ist auf der Seite mit den Asset-Details nicht über den interaktiven Bild-Viewer sichtbar (NPR-30979).
 
-* Es werden enorme Sling-Aufträge erstellt und das Verarbeitungsbanner wird erneut angezeigt, wenn Aktionen, die in Assets ausgeführt werden, an Scene7 weitergeleitet [!DNL Experience manager Assets] werden (NPR-30947).
+* Huge sling jobs are created and Processing banner re-appears when actions done on assets in [!DNL Experience manager Assets] are passed to Scene7 (NPR-30947).
 
-* Beim Erstellen der Sprachkopie von Assets treten Konflikte auf, und Assets werden nicht nach Scene7 hochgeladen (NPR-30932).
+* Conflict occurs on creating Language Copy of assets and assets are not uploaded to Scene7 (NPR-30932).
 
-* Dynamische Darstellungen, die von [!DNL Experience Manager] im [!DNL Dynamic Media]-Hybrid-Modus heruntergeladen wurden, sind beschädigt (sie sind vom Texttyp mit Inhalt &quot;Bild kann nicht gefunden werden&quot; anstelle des Bildinhaltstyps) (NPR-30876).
+* Dynamic renditions downloaded from [!DNL Experience Manager] running in [!DNL Dynamic Media]–Hybrid mode are broken (they are of text type with content &#39;unable to find image&#39; instead of image content type) (NPR-30876).
 
-* [!DNL Dynamic Media] Der Arbeitsablauf für die Videokodierung kann keine Miniaturansicht für das Video generieren, das auf dem Adobe Experience Manager vom [!DNL Dynamic Media Classic] zum [!DNL Dynamic Media]-Scene7-Modus migriert wird (CQ-4282011).
+* [!DNL Dynamic Media] Encode Video workflow is failing to generate thumbnail for the video that is migrated from [!DNL Dynamic Media Classic] to [!DNL Dynamic Media]–Scene7 mode on Adobe Experience Manager (CQ-4282011).
 
-* IpsApiException wurde beobachtet, während Assets mithilfe unterschiedlicher Scene7-Firmen-IDs von einer Instanz in eine andere migriert wurden (CQ-4280548).
+* IpsApiException observed while migrating assets from one instance to another using different Scene7 company IDs (CQ-4280548).
 
-* Die 3D-Asset-Miniaturansicht ist nicht informativ, wenn ein unterstütztes 3D-Modell in integriert wird [!DNL Experience Manager] (CQ-4283701).
+* 3D Asset thumbnail is not informative, when a supported 3D model is ingested into [!DNL Experience Manager] (CQ-4283701).
 
-* Bildlaufschaltflächen werden im Viewer angezeigt, wenn ein 3D-Asset nur über wenige Ansichten verfügt (CQ-4283322).
+* Scroll buttons are displayed in viewer, if a 3D asset has few camera views (CQ-4283322).
 
-* Falsche Höhe des Containers eines hochgeladenen 3D-Modells, das auf der Seite &quot;Asset-Details&quot;in der Vorschau in DimensionalViewer angezeigt wird (CQ-4283309).
+* Incorrect container height of an uploaded 3D model previewed in DimensionalViewer on Asset Details page (CQ-4283309).
 
-* Videos können nicht mit SmartCropVideoViewer in Internet Explorer 11 und Safari wiedergegeben werden (CQ-4281422).
+* Videos cannot be played with SmartCropVideoViewer on Internet Explorer 11 and Safari (CQ-4281422).
 
-* Die Verwendung der Schaltfläche &quot;Verschieben&quot;zum Verschieben mehrerer Assets von einem Ordner in einen anderen schlägt bei der [!DNL Experience Manager] Ausführung des [!DNL Dynamic Media]Scene7-Ausführungsmodus fehl (CQ-4280384).
+* Use of move button to move multiple assets, from one folder to another, fails in [!DNL Experience Manager] running on [!DNL Dynamic Media]–Scene7 runmode (CQ-4280384).
 
-* Verzerrtes Video wird in Asset-Details angezeigt, wenn der MIME-Typ nicht MP4 ist (CQ-4279704).
+* Distorted video is seen on asset details when MIME type is other than MP4 (CQ-4279704).
 
-* Neuaufgenommene Videos in Ordnern mit Video-Profil bleiben auch nach Abschluss der Kodierung auf 100 % im Verarbeitungszustand (CQ-4279389).
+* Videos newly ingested in folders with video profile remain in processing state even after encode percentage completes to 100% (CQ-4279389).
 
 * Durch das Verschieben von Assets aus einem Ordner wird eine große Anzahl von Sling-Aufträgen (Scene7 API-Aufrufe) erzeugt, die nicht unbedingt erforderlich sind (CQ-4278664).
 
@@ -361,156 +361,156 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Scene7 Migrator stellt den Veröffentlichungsstatus falsch ein (CQ-4263492).
 
-* Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers in Inhaltsfragmenten (CQ-4282898).
+* Touch UI search (done through Omnisearch) results page automatically scrolls up and loses user&#39;s scroll position in Content Fragments (CQ-4282898).
 
-* PDF-Dateien werden nicht indiziert und der Inhalt in ist nicht durchsuchbar (CQ-4278916).
+* PDF files are not indexed and content within is not searchable (CQ-4278916).
 
 * Fehler &quot;Gruppe nicht nach Benutzerauswahl aufgeführt: &quot;false to equal true&quot;wird beim Hinzufügen von &quot;Closed User Group&quot;mit &quot;different&quot; `principalName` und `authorizableId` (CQ-4278177) beobachtet.
 
 * Die Ansicht &quot;Assets UI Column&quot;zeigt alle Pfade unabhängig vom Stammpfad des jeweiligen Mandanten an (CQ-4278175).
 
-* Die Suche des Asset-Selektors funktioniert nicht wie erwartet (CQ-4275886).
+* Asset selector’s search is not working as expected (CQ-4275886).
 
 * Die Workflows sind fehlgeschlagen (CQ-4271928).
 
 * DAM Ereignis Purge löscht die neuesten (`maxSavedActivities`) Ereignis-Daten und speichert die zuvor erstellten Daten (NPR-31336).
 
-* Die Suchergebnisseite der Touch-Benutzeroberfläche (über Omniture) scrollt automatisch nach oben und verliert die Bildlaufposition des Benutzers (NPR-31307).
+* Touch UI search (done through Omnisearch) results page automatically scrolls up and loses user&#39;s scroll position (NPR-31307).
 
-* Die Aktionsleiste und die Asset-Anzahl werden nicht aktualisiert, wenn Sie alle Elemente auswählen und dann die Auswahl einiger Elemente (Ordner/einzelne Assets) in der Touch-Benutzeroberfläche (NPR-31118) aufheben.
+* The action bar and asset count are not updating on selecting all and then deselecting some items (folders/individual assets) in Touch UI (NPR-31118).
 
-* Bei der [!DNL Experience Manager] Abfrage nach Auftragsdetails eines Assets wird eine Ausnahme angezeigt (CQ-4283569).
+* An exception displays in [!DNL Experience Manager] while polling for job details of an Asset (CQ-4283569).
 
 ### Sites {#sites}
 
-* Wenn die LiveCopy-Vererbung beschädigt ist, werden auf Live-Kopierseiten anstelle von LiveCopy-Links Sprachkopie-Links angezeigt (NPR-30980).
-* Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint zeigt leere Zeilen für die übrigen Datensätze an (NPR-31182).
-* Wenn ein Benutzer japanische oder koreanische Zeichen in die Eigenschaft description eines Menüs einfügt, werden im Menü verzerrte Zeichen für japanischen und koreanischen Text angezeigt (NPR-31331).
+* If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links (NPR-30980).
+* Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint displays blank lines for the rest of the records (NPR-31182).
+* When a user adds Japanese or Korean characters in the description property of a menu, the menu displays distorted characters for Japanese and Korean language text (NPR-31331).
 * Rich Text Editor (RTE) erlaubt nicht, eine eingebettete Liste als Element einzufügen (NPR-30879).
-* Standardmäßig wird der RTE-Editor (RTE) mit Gerüsten versehen. wendet die Inline-Schriftgröße unerwartet auf Elemente an (NPR-31284).
+* Standardmäßig wird der RTE-Editor (RTE) mit Gerüsten versehen. applies inline font-size to elements, unexpectedly (NPR-31284).
 * Wenn ein Benutzer sich auf Felder in der linken Schiene konzentriert und zum Einfügen von Inhalten einen Tastaturbefehl verwendet, wird der Inhalt der Zwischenablage des Seiteneditors anstelle des Inhalts eingefügt, der aus den Feldern der linken Schiene kopiert wurde (NPR-31172).
-* Wenn ein Benutzer ein Feld zum Hochladen von Dateien zu einem Multifeld hinzufügt, wird der Bildpfad im Komponentenknoten und nicht im Multifield-Knoten (NPR-30882) gespeichert.
-* Die `ResponsiveGridExporter` API gibt keine `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` Schnittstelle zurück. Das `com.day.cq.wcm.foundation.model.impl` Paket wird als privates Paket erklärt (NPR-31398).
+* When a user adds a File Upload field to a multi-field, the image path is stored in the component node instead of the multi-field node (NPR-30882).
+* The `ResponsiveGridExporter` API does not return `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` interface. The `com.day.cq.wcm.foundation.model.impl` package is declared as a private package (NPR-31398).
 
 <!-- Review: NPR-31398 has fixVersion as 6530. However, it is mentioned twice in 6530 and 6520 as fixed. 
 Remove one mention of this fix.
 -->
 
-* Wenn eine Seite mit Erlebnisfragmenten im Nicht-Editor-Modus geöffnet wird (entweder im Autorenmodus ohne das `editor.html` Präfix und `wcmmode=disabled`im Publisher). endet die Anforderung im HTTP-Status-Fehlercode `500` (NPR-30743).
+* When a page containing some Experience Fragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code `500` (NPR-30743).
 * Benutzer können ihr Kennwort nicht ändern und nicht auf ihre Profil-Seite zugreifen (NPR-31161).
 
-### Suchen und Benutzeroberfläche {#ui-interface-and-search}
+### Search and user interface {#ui-interface-and-search}
 
-* Wenn auf einer Suchergebnisseite von der Kartenseite zur Liste-Ansicht gewechselt wird, ist ein Bildlauf erst möglich (NPR-31286).
+* When switching from the card view to the list view on a search results page, there is a lag before the page can be scrolled (NPR-31286).
 
-* Das Kontrollkästchen &quot;Alle  auswählen&quot;wird in der Ansicht &quot;Liste&quot;auf der [!DNL Sites] Benutzeroberfläche (NPR-31614) ausgeblendet.
+* The [!UICONTROL Select All] checkbox is hidden in the list view on [!DNL Sites] user interface (NPR-31614).
 
-* Die [!UICONTROL Zählung &quot;Alle] auswählen&quot;auf einer Suchergebnisseite ist nicht korrekt (NPR-31120).
+* The [!UICONTROL Select All] count on a search result page is incorrect (NPR-31120).
 
-* Der Metadaten-Editor zeigt Tags an, die nicht vorhanden sind (NPR-31119).
+* The metadata editor displays tags that do not exist (NPR-31119).
 
 ### Übersetzung {#translation}
 
-* Bei Auswahl der Option &quot;Fälliges Datum&quot;in einem Übersetzungsauftrag (NPR-31270) werden zwei Kalender-Popups angezeigt.
+* Two calendar pop-ups appear on selecting the Due Date option in a Translation Job (NPR-31270).
 
 ### Plattform {#platform}
 
-* Die Option &quot;Mime-Typ&quot;in der Webkonsole funktioniert nicht (NPR-31108).
+* The Mime type option in the Web console does not work (NPR-31108).
 
-* Das Clientzertifikat wird beim Konfigurieren des Single Sign-On (NPR-31165) nicht akzeptiert.
+* Client certificate is not accepted when configuring single sign-on (NPR-31165).
 
 * Aktualisierungen der Puffergrößenkonfiguration für den Jetty-basierten HTTP-Dienst werden nicht gespeichert (NPR-30925).
 
-* QueryBuilder unterstützt jetzt orderby ``fn:name()`` in xpath-Abfragen (NPR-31322).
+* QueryBuilder now supports orderby `fn:name()` in xpath queries (NPR-31322).
 
-* Duplikat Aktivierung Baum wird bei der Aktualisierung von [!DNL Experience Manager] 6.3 (NPR-31513) erstellt.
+* Duplicate activation tree is created on upgrading from [!DNL Experience Manager] 6.3 (NPR-31513).
 
-* Bei weitergeleiteten Anforderungen werden keine Antwortheader beibehalten, die während der Sling-Authentifizierung festgelegt werden (NPR-30013).
+* Forwarded requests do not preserve response headers that are set during sling authentication (NPR-30013).
 
-* Die Suche innerhalb der Picker-Komponenten funktioniert nicht (NPR-31692).
+* Search within the picker components does not work (NPR-31692).
 
-* Beim Anhängen einer ZIP-Datei an einen [!DNL Experience Manager Communities] Beitrag wird aufgrund verschiedener Versionen von Apache POI und Apache Tika Bundle (NPR-31018) ein Fehler angezeigt.
+* An error is displayed when attaching a ZIP file to an [!DNL Experience Manager Communities] post due to different versions of Apache POI and Apache Tika bundle (NPR-31018).
 
-* Das ``org.apache.sling.distribution.api`` Bundle ist im Konfigurationsmanager ausgeblendet und steht daher nicht für benutzerdefinierte Bundles (NPR-31720) zur Verfügung.
+* The `org.apache.sling.distribution.api` bundle is hidden in the configuration manager and therefore not available to custom bundles (NPR-31720).
 
 ### Projekte {#projects}
 
-* Das Wechseln von Kalendereinstellungen funktioniert nicht (NPR-31271).
+* Switching calendar views does not work (NPR-31271).
 
 ### Brand Portal {#assets-brand-portal-6530}
 
 **Produktverbesserungen**
 
-* Der Workflow zum Importieren von Assets in [!DNL Experience Manager Assets] wird geändert, um nur die neu erstellten Assets von [!DNL Brand Portal] zu abzurufen [!DNL Experience Manager]und die bereits im Ordner &quot;NEW&quot;vorhandenen Assets zu überspringen, um eine Replizierung zu vermeiden (CQ-4278527).
+* Asset Sourcing import workflow in [!DNL Experience Manager Assets] is modified to fetch only the newly created assets from [!DNL Brand Portal] to [!DNL Experience Manager], and skip the assets that already exist in the NEW folder to avoid replication (CQ-4278527).
 
 **Fehlerkorrekturen**
 
-* Beim Erstellen eines neuen Beitragsordners in der Asset-Sourcing-Funktion (CQ-4282825) wird ein falsches Symbol angezeigt.
-* Beim Erstellen eines neuen Beitragsordners werden ein oder beide Unterordner (NEU und FREIGEGEBEN) nicht im Beitragsordner (CQ-4282424) angezeigt.
-* Das System gibt eine Ausnahme aus, wenn der Benutzer versucht, den Beitragsordner von [!DNL Experience Manager] zu [!DNL Brand Portal] [!DNL Brand Portal] veröffentlichen, nachdem er neue Assets aus dem Beitragsordner erhalten hat (CQ-4279740).
-* Das Erstellen eines Beitragsordners in einem Beitragsordner (verschachtelter Ordner) ist verboten, um Komplexität zu vermeiden (CQ-4278391).
-* Das System gibt beim Hochladen der aus der [!DNL Brand Portal] Admin Console importierten Benutzerdatei (.csv-Liste) eine Ausnahme aus [!DNL Experience Manager] . Nur die Felder &quot;E-Mail&quot;, &quot;Vorname&quot;und &quot;Nachname&quot;in der .csv-Datei sind obligatorisch (CQ-4278390).
+* Incorrect icon appears on creating a new Contribution folder in Asset Sourcing feature (CQ-4282825).
+* On creating a new Contribution folder, one or both subfolders (NEW and SHARED) does not appear inside the Contribution folder (CQ-4282424).
+* System throws an exception if the user tries to republish Contribution folder from [!DNL Experience Manager] to [!DNL Brand Portal] after receiving new assets in the Contribution folder from [!DNL Brand Portal] end (CQ-4279740).
+* Creation of Contribution folder within a Contribution folder (nested folder) is prohibited to avoid complexity (CQ-4278391).
+* System throws an exception on uploading the [!DNL Brand Portal] user list (.csv file) imported from [!DNL Experience Manager] Admin Console. Only Email, FirstName, and LastName fields in the .csv file are mandatory (CQ-4278390).
 
 ### Communities {#communities-6530}
 
 **Fehlerkorrekturen**
 
-* Schnelllinks zum Verwalten von Gruppen (Gruppen öffnen/bearbeiten/Veröffentlichen/Löschen) sind für Community-Administratoren nicht sichtbar (Gruppenadministrator/Site-Administrator) (NPR-31627).
-* Ein gesendeter Blog wird nur angezeigt, wenn die Seite manuell aktualisiert/neu geladen wird (NPR-31599).
-* Bei der von der Funktion &quot;Erwähnungen&quot;verwendeten JCR-Abfrage wird zwischen Groß- und Kleinschreibung unterschieden. Die Rückgabe der Ergebnisse dauert zu lange (NPR-31475).
-* [!DNL Experience Manager] 6.5 UberJar-Datei löst Ausnahme aus, `cq-social-translation` Bundle fehlt in [!DNL Experience Manager] 6.5 UberJar-Datei (NPR-31186).
-* Jackson Databind-Bibliotheken wurden auf Version 2.9.9.3 aktualisiert, um neue Schwachstellen zu beheben (NPR-30967).
+* Quick links to manage groups (Open/Edit/Publish/Delete Groups) are not visible to the Community administrators (Group admin/Site admin) (NPR-31627).
+* A submitted blog is not displayed unless the page is manually refreshed/reload (NPR-31599).
+* The JCR query used by the &quot;Mentions&quot; feature is case sensitive and takes too long to return results (NPR-31475).
+* [!DNL Experience Manager] 6.5 UberJar file throws exception, `cq-social-translation` bundle missing from [!DNL Experience Manager] 6.5 UberJar file (NPR-31186).
+* Jackson Databind libraries updated to version 2.9.9.3 to address new vulnerabilities (NPR-30967).
 * Die Titel der Aktivitäten und Benachrichtigungen sind inkonsistent (NPR-30941).
 * Pagination is not working properly in [!DNL Communities] Blogs (NPR-30914).
 * Analytics reports are not populated in [!DNL Experience Manager] author environment, blank page appears (NPR-30913).
 
 ### Oak {#oak}
 
-* Aktualisierungen des Lucene-Indexes, die dazu führen, dass der Autorenserver langsamer wird (NPR-31548).
+* Lucene index updates causing author server to slow down (NPR-31548).
 
 ### Formulare {#forms-6530}
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack enthält keine Korrekturen für [!DNL Experience Manager Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. Weitere Informationen finden Sie unter [Installieren des Experience Manager Forms-Add-ons](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) und [Installieren von Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack enthält keine Korrekturen für [!DNL Experience Manager Forms]. Diese werden im Rahmen eines separaten Add-on-Pakets für Forms bereitgestellt. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 #### Forms-Add-on-Paket {#forms-add-on-package-6530}
 
 **Adaptive Formulare**
 
-* Zeichenfolgen enthalten den Wörterbuchschlüssel beim Lokalisieren von adaptiven Formularen (NPR-31110).
+* Strings contain the dictionary key while localizing adaptive forms (NPR-31110).
 
 **Interaktive Kommunikation**
 
 * **MissingNode.toString()** gibt nach der Aktualisierung der Jackson-Bibliotheken auf 2.10.0 (NPR-31549) falsche Ergebnisse zurück.
 
-* Der Texteditor entfernt nach dem Zufallsprinzip Leerzeichen aus dem aus Microsoft Word kopierten Text (NPR-31113).
+* Text editor randomly removes space characters from the text copied from Microsoft Word (NPR-31113).
 
 **Korrespondenzverwaltung**
 
-* Beschriftungen und QuickInfos werden beim Migrieren von Briefen von LiveCycle ES4SP1 auf [!DNL Experience Manager] 6.5 (NPR-31615) nicht angezeigt.
+* Captions and tooltips do not display while migrating letters from LiveCycle ES4SP1 to [!DNL Experience Manager] 6.5 (NPR-31615).
 
-* **Textflussformatierung wird beim Speichern von Briefen als Entwürfe nicht mehr unterstützt** (NPR-30463).
+* **Textflow formatting is no more supported** error message displays while saving letters as drafts (NPR-30463).
 
 **Arbeitsablauf**
 
-* OSGi-Arbeitsablauf schlägt aufgrund der 100%igen CPU-Auslastung (NPR-31233) fehl.
+* OSGi workflow fails due to 100% CPU utilization (NPR-31233).
 
 **HTML5-Formulare**
 
 * Beim Generieren einer HTML5-Vorschau eines XDP-Formulars tritt Flackern auf, während Instanzen eines Teilformulars hinzugefügt werden (NPR-30909).
 
-#### Forms on JEE-Installationsprogramm {#forms-jee-installer-6530}
+#### Forms on JEE installer {#forms-jee-installer-6530}
 
 **Forms - Document Services**
 
-* Der SOAP-Webdienst, der MTOM in einem .NET-Projekt verwendet, zeigt Ausnahmen für AssemblerServiceClient-Aufrufe und HtmlToPDF2-Methoden (NPR-4281771) an.
+* SOAP web service using MTOM in a .NET project displays exceptions for AssemblerServiceClient invoke and HtmlToPDF2 methods (NPR-4281771).
 
-* [Die Axis-JAR-Versionen 1.4 und 1.4.1](https://helpx.adobe.com/de/aem-forms/quick-fixes/6-5/jee-patch-0014.html) enthalten eine Sicherheitslücke (NPR-31015).
+* [Axis jar versions 1.4 and 1.4.1](https://helpx.adobe.com/de/aem-forms/quick-fixes/6-5/jee-patch-0014.html) include a security vulnerability (NPR-31015).
 
 **Foundation JEE**
 
-* Die Aktionskonfiguration lädt die Prozessnamen für Übermittlungsaktion zum Aufrufen eines Forms Workflows nicht (NPR-31478).
+* Action configuration does not load the process names for Invoke a Forms Workflow submit action (NPR-31478).
 
 ### Enthaltene Feature Packs {#feature-packs-included-6530}
 
@@ -520,11 +520,11 @@ Remove one mention of this fix.
 
 #### Forms – Foundation JEE {#forms-foundation-jee-feature}
 
-* [!DNL Experience Manager] Forms-Unterstützung für Oracle 18c (NPR-29155).
+* [!DNL Experience Manager] Forms support for Oracle 18c (NPR-29155).
 
 ## Adobe Experience Manager 6.5.2.0 {#experience-manager-6520}
 
-[!DNL Adobe Experience Manager] 6.5.2.0 ist eine wichtige Version, die Leistungsverbesserungen, Stabilität, Sicherheit und wichtige Fehlerbehebungen und Erweiterungen von Kunden umfasst, die seit der allgemeinen Verfügbarkeit von [!DNL Adobe Experience Manager] 6.5 im **April 2019** veröffentlicht wurden. It can be installed on top of [!DNL Experience Manager] 6.5.
+[!DNL Adobe Experience Manager] 6.5.2.0 is an important release that includes performance, stability, security, and key customer fixes and enhancements released since the general availability of [!DNL Adobe Experience Manager] 6.5 in **April 2019**. It can be installed on top of [!DNL Experience Manager] 6.5.
 
 Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
@@ -536,7 +536,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * EnhanceDokumenttyp-Filter mit mehr MIME-Typen zur Unterstützung von Optionen mit mehreren Werten.
 * Ein Workflow zur erneuten, externen Verarbeitung wurde zur Unterstützung für mehrere Ressourcen eingeführt.
-* Optimierte [!DNL Dynamic Media] Leistung durch Verwendung von standardmäßigen Asset-Filtern für die Replikation.
+* Optimized [!DNL Dynamic Media] performance by using default asset filters for replication.
 * Für den Dynamic Media Scene 7-Modus (DMS7) wurden die Optionen zum Zuschneiden/Drehen von Assets wiederhergestellt.
 * Es wurde eine Option zum Stummschalten von Videos beim Laden in VideoPlayer implementiert.
 * Fehlerkorrektur – In der Spaltenansicht der Asset-Benutzeroberfläche werden jetzt nur noch mandantenspezifische Inhalte angezeigt.
@@ -560,7 +560,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Fehler beim Erstellen von Sammlungen auf mandantenbasiertem System. NPR-30114: Hotfix für CQ-4272948
 * Die Spaltenansicht der Assets-Benutzeroberfläche berücksichtigt nicht den Stammpfad des aktuellen Mandanten, sondern greift auf die DAM-Pfade aller Mandanten zu. NPR-30636: Hotfix für CQ-4275481
 * Cross-Site-Scripting-Angriff (XSS) über das Fenster für die Warnmeldung zu eingeschränktem Dateizugriff möglich, da das injizierte Bild sichtbar ist. NPR-30617: Hotfix für CQ-4270133
-* MultiTenant: Mandanten, die Ordnereigenschaften speichern, beachten sowohl die Erfolgsaufforderung als auch die Fehlermeldung, dass die Aktion nicht erfolgreich war: &quot;Eigenschaften können nicht bearbeitet werden. unzureichenden Berechtigungen nicht geändert werden konnten, was für Verwirrung sorgt. NPR-30545: Hotfix für CQ-4275333
+* MultiTenant: Tenants saving folder properties observe both success prompt and error message describing action was not successful, &quot;Unable to edit properties. unzureichenden Berechtigungen nicht geändert werden konnten, was für Verwirrung sorgt. NPR-30545: Hotfix für CQ-4275333
 * Im Asset-Auswahldialog lässt sich keine Asset auswählen und somit auch nicht die Funktion zum Ersetzen der zugehörigen Quelle verwenden, um die Quelle zu aktualisieren. NPR-30502: Hotfix für CQ-4275029
 * [!UICONTROL DAM Update Asset] Workflow - Im statischen Zustand beim Hochladen großer MP4-Dateien. NPR-30480: Hotfix für CQ-4271352
 * Die Funktion zum Erstellen von Prüfungsaufgaben schlägt aufgrund nicht vorhandener Nutzdaten fehl, was entsprechend auch alle nachfolgenden Aktionen im Zusammenhang mit Prüfungsaufgaben fehlschlagen lässt. NPR-30468: Hotfix für CQ-4274263
@@ -602,7 +602,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 ### Sites {#sites-6520}
 
-* Wenn die LiveCopy-Vererbung beschädigt ist, werden auf Live-Kopierseiten anstelle von LiveCopy-Links Sprachkopie-Links angezeigt (NPR-30980).
+* If the LiveCopy inheritance is broken, live copy pages display language copy links instead of LiveCopy links (NPR-30980).
 * Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint zeigt leere Zeilen für die übrigen Datensätze an (NPR-31182).
 * Rich Text Editor (RTE)-Plug-In der Textkomponente zeigt verzerrte Zeichen für japanischen und koreanischen Text an (NPR-31331).
 * Rich Text Editor (RTE) erlaubt nicht, eine eingebettete Liste als Element einzufügen (NPR-30879).
@@ -616,7 +616,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 **Produktverbesserungen**
 
-* EnhanceDokumenttyp-Filter mit mehr MIME-Typen zur Unterstützung von Optionen mit mehreren Werten. Hotfix für CQ-4270694
+* EnhanceDocument type filters with more MIME Types to support multi valued options. Hotfix für CQ-4270694
 
 ### Verwaltung von Inhaltsfragmenten {#content-fragment-management-6520}
 
@@ -743,8 +743,8 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Implemented the ability to upload and play 360 spherical videos in [!DNL Experience Manager] DM-Scene7 mode. Hotfix für CQ-4265131
 * Wird bei einer Live Copy die Quelle bearbeitet, wird der falsche Status abgerufen. Hotfix für CQ-4265451
 * Multi-Site-Manager bietet jetzt Unterstützung für [!DNL Experience Manager Assets]. Hotfix für CQ-4271453, CQ-4268621, CQ-4257491
-* [!DNL Experience Manager] -Schnittstelle sollte einen zusätzlichen Eintrag für die aktuelle Version des Assets im Zeitschienenverlauf anzeigen, in dem der neueste Eincheckkommentar angezeigt wird [!DNL Adobe Asset Link]. Hotfix für CQ-4262864
-* In der Zeitleiste des Inhaltsfragments wird eine Fehlermeldung angezeigt, wenn Eigenschaften fehlen. Hotfix für CQ-4272560
+* [!DNL Experience Manager] interface should display an additional entry for the current version of the asset in the timeline history, displaying the latest check-in comment from [!DNL Adobe Asset Link]. Hotfix für CQ-4262864
+* Content Fragment Timeline displays an error message when properties are missing. Hotfix für CQ-4272560
 * Problem mit dem Scene7-Videoplayer, wenn er auf den Vollbildmodus erweitert wird. Hotfix für CQ-4266700
 * Viewer für vertikalen Zoom: Die Schwenken-Schaltflächen sollten nicht angezeigt werden, wenn ein einzelnes Bild-Asset verwendet wird. Hotfix für CQ-4264795
 * Durch das Löschen eines untergeordneten Knotens in einer Live Copy sollte die LiveRelationship getrennt werden. Hotfix für CQ-4270395
@@ -757,7 +757,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * CoralUI, when used with `Multifield`, stores the `fileReferenceParameter` at the component level instead of multifield level. NPR-29537: Hotfix für CQ-4266129
 * Enhancement of [!DNL Experience Manager] text component and Text Editor to Japanese. NPR-29785: Hotfix für CQ-4265090
 * Eine mithilfe von Timewarp wiederhergestellte Seite sollte zum Zeitpunkt der Versionierung auf das korrekte Bild verweisen. NPR-29431: Hotfix für CQ-4262638
-* Ein Problem mit der Vererbung von Style System-Knoten von übergeordneter zu untergeordneter Ebene. NPR-29516: Hotfix für CQ-4270330
+* An issue with the inheritance of Style System nodes from parent to child. NPR-29516: Hotfix für CQ-4270330
 * An error message while setting up the social posting to [!DNL Facebook] authentication. NPR-29211: Hotfix für CQ-4266630
 * Die gerenderte Miniaturansicht im Inhaltsfragment zeigt eine interne Kalenderdarstellung für das Datums- und Uhrzeitfeld an. NPR-29531: Hotfix für CQ-4269362
 * In der Coral2-Implementierung werden beim Öffnen der Registerkarte „Berechtigungen“ die Schaltflächen nicht angezeigt. Hotfix für CQ-4269419
@@ -773,7 +773,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 ### Experience Fragments
 
 * Exportieren Sie [!DNL Experience Manager] Erlebnisfragmente in [!DNL Adobe Target]. Hotfix für CQ-4265469
-* Der Export von Erlebnisfragmenten in die Zielgruppe schlägt mit dem intelligenten Bild fehl. Hotfix für CQ-4269606
+* Experience Fragments export to target fails with smart image. Hotfix für CQ-4269606
 
 * Der Versuch, mithilfe von Omnisearch Experience Fragments in der Kartenansicht zu verschieben, führt nicht ans Ziel. Hotfix für CQ-4263848
 
@@ -852,7 +852,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 * When [!DNL Experience Manager Forms] is installed on IBM WebSphere, creating a form data model based on SOAP fails. Hotfix für CQ-4251134
 * Für die On-Premise-Integration von Microsoft Dynamics wurde Unterstützung für ADFS (Active Directory Federation Services) 3.0 ergänzt. Hotfix für CQ-4270586
 * Wenn der Titel einer Datenquelle geändert wird, zeigt das Formulardatenmodell den aktualisierten Titel nicht an. Hotfix für CQ-4265599
-* Wenn der Name einer Entität oder eines Attributs Bindestriche oder Leerzeichen enthält, können Ausdruck diese Entitäten und Attribute nicht auswerten. Hotfix für CQ-4225129
+* If name of an entity or attribute contains hyphen or space, expressions fail to evaluate such entities and attributes. Hotfix für CQ-4225129
 
 * Falsche Ausgabe wird beobachtet, wenn ein Doppelpunkt in der Ausgabe der Primitive-Zeichenfolge vorhanden ist. Hotfix für CQ-4260825
 
@@ -877,7 +877,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 * Die Vorlage für interaktive Kommunikation führt in der Liste der zulässigen Komponenten keine Kopf- und Fußzeilenkomponenten auf. Hotfix für CQ-4237895
 * Wird eine Druckvorlage für interaktive Kommunikation erstellt, die ein Bildfeld enthält, wird für den Titel des Diagramms „leer“ festgelegt. Hotfix für CQ-4264772
 * Für die Linienfarbe eines Diagramms wird beim Löschen „nicht definiert“ festgelegt. Hotfix für CQ-4264762
-* Änderungen an der Layoutebene, die am Dokument-Fragment vorgenommen wurden, werden bei der Synchronisierung der Änderungen nicht mehr angezeigt. Hotfix für CQ-4266054
+* Layout layer changes made on Document Fragment disappear on performing keep changes sync. Hotfix für CQ-4266054
 * Ein innerhalb eines Dokumentfragments an ein Textfeld gebundenes Formulardatenmodellelement zeigt kein Vererbungssymbol an, und es kann verknüpft werden. Hotfix für CQ-4261089
 * Die API zum Rendern von Druckkanälen verfügt nicht über die Option zum Übergeben von Daten als Parameter in der API. Hotfix für CQ-4263540
 * Agent-Einstellungen sind nicht sichtbar, da das Kontrollkästchen Bearbeitbar nach Agent deaktiviert wird, wenn der Bindungstyp von Textfragment in Keine/Datenmodellobjekt für das String-Feld/die String-Variable geändert wird. Hotfix für CQ-4261953
@@ -904,7 +904,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 **Forms – Correspondence Management**
 
-* [!DNL Experience Manager Forms] 6.5 Die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;(CCR-Benutzeroberfläche) kann Korrespondenz, die mit [!DNL Experience Manager Forms] 6.3 erstellt wurde, nicht öffnen. Hotfix für CQ-4266392
+* [!DNL Experience Manager Forms] 6.5 Create Correspondence UI (CCR UI) fails to open correspondence created with [!DNL Experience Manager Forms] 6.3. Hotfix for CQ-4266392
 * Die Summenfunktion in XDP funktioniert nicht, wenn die Datenwörterbuchelemente Daten vom Typ „Zahl“ enthalten. Hotfix für CQ-4227403
 * Die Invalidierungslogik des Arbeitsspeichercaches für Briefe muss aktualisiert werden, da beim Veröffentlichen eines Assets die Zeit seiner letzten Änderung nicht aktualisiert wird. Hotfix für CQ-4250465
 * Dokumentfragment, Datenwörterbuch und Briefe können nicht veröffentlicht werden. Hotfix für CQ-4272893
@@ -945,17 +945,17 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 ### Enthaltende Feature Packs
 
-#### Assets - einschließlich
+#### Assets - Included
 
 * Multi-Site-Manager bietet jetzt Unterstützung für [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: Hotfix für CQ-4259922
 
-#### Sites - Einbezogen
+#### Sites - Included
 
-* Exportieren Sie [!DNL Experience Manager] Erlebnisfragmente in [!DNL Adobe Target]. For more details, see [The Experience Fragment Link Rewriter Provider - HTML](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML). Hotfix für CQ-4265469
+* Export [!DNL Experience Manager] Experience Fragments to [!DNL Adobe Target]. For more details, see [The Experience Fragment Link Rewriter Provider - HTML](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML). Hotfix für CQ-4265469
 
-#### Forms – Dokumentendienste - Einbezogen
+#### Forms – Dokumentendienste - Included
 
-* Nur OSGi: Es wurde ein neues Attribut PAGECOUNT in Output und Forms Service hinzugefügt. NPR-28922: Hotfix für CQ-4270870
+* OSGi only: Added a new attribute PAGECOUNT in Output and Forms Service.. NPR-28922: Hotfix für CQ-4270870
 * Nur OSGi: Unterstützung zum Erstellen von statischen PDF-Dateien mit dem Forms-Dienst aktiviert. NPR-28572: Hotfix für CQ-4270869
 * Für Administratoren und Root-Benutzer wurden Berechtigungen für XMLForm.exe aktiviert. NPR-29237: Hotfix für CQ-4267080
 
