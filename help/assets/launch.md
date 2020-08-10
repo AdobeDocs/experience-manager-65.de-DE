@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
 workflow-type: tm+mt
 source-wordcount: '6623'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -450,7 +450,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://docs.adobe.com/content/h
 
    Wenn keine Report Suite verfügbar ist, müssen Sie oder Ihr Adobe Analytics-Administrator eine erstellen, bevor Sie mit der Konfiguration fortfahren können.
 
-   Siehe [Berichte und Report Suites](https://docs.adobe.com/content/help/de-DE/analytics/implementation/analytics-basics/ref-reports-report-suites.html) und [Report Suite erstellen](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-console/create-report-suite.html).
+   Siehe [Berichte und Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) und [Report Suite erstellen](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-console/create-report-suite.html).
 
    In Adobe Analytics werden Report Suites unter **[!UICONTROL Admin > Report Suites]** verwaltet.
 
@@ -464,7 +464,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://docs.adobe.com/content/h
 
    Es lassen sich beliebige Variablentypen verwenden, die von Adobe Analytics unterstützt werden. Die Entscheidung über den Variablentyp (z. B. Custom Traffic [props] und Konversion [eVar]) sollte von spezifischen Anforderungen Ihrer Analytics-Implementierung abhängen.
 
-   Siehe [Übersicht über props und eVars](https://docs.adobe.com/content/help/de-DE/analytics/implementation/analytics-basics/traffic-props-evars/props-evars.html).
+   Siehe [Übersicht über props und eVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html).
 
    Für die Zwecke dieser Dokumentation wird nur eine Variable „Custom Traffic (props)“ verwendet, da diese in einem Analytics-Bericht innerhalb weniger Minuten nach dem Ausführen einer Aktion auf einer Web-Seite verfügbar ist.
 
@@ -533,7 +533,7 @@ Um eine Erweiterung zu installieren, klicken Sie auf **[!UICONTROL Installieren]
 
 Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguriert werden:
 
-* (Erforderlich) *Experience Cloud-ID-Dienst *Erweiterung
+* (Required) *Experience Cloud ID Service *extension
 
 Es ist keine zusätzliche Konfiguration erforderlich; akzeptieren Sie die vorgeschlagenen Werte. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -660,7 +660,7 @@ Das Veröffentlichen einer Bibliothek umfasst die folgenden zwei Schritte:
 Voraussetzungen:
 
 * AEM führt sowohl die Autoren- als auch die Veröffentlichungsinstanz aus.
-* Der AEM-Autorenknoten wird im Scene7-Ausführungsmodus (dynamicmedia_s7) eingerichtet.
+* AEM Autorenknoten wird im Scene7-Ausführungsmodus (dynamicmedia_s7) eingerichtet
 * WCM-Komponenten für Dynamic Media sind in AEM Sites aktiviert.
 
 Die AEM-Konfiguration besteht aus den folgenden zwei Hauptschritten:
