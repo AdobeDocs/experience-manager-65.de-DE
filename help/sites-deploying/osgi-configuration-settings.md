@@ -39,7 +39,7 @@ Die folgenden OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) sind f�
 
 >[!NOTE]
 >
->Das OSGi Configuration Diff-Tool, das Teil der [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)ist, kann zur Liste der standardmäßigen OSGi-Konfigurationen verwendet werden.
+>Das OSGi Configuration Diff Tool, Teil der [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html), kann zur Liste der standardmäßigen OSGi-Konfigurationen verwendet werden.
 
 >[!NOTE]
 >
@@ -84,16 +84,16 @@ Dieser ist gepaart mit dem [Apache Sling Request Logger](#apacheslingrequestlogg
 
 Weitere Informationen finden Sie unter [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sling-Protokollierung](https://sling.apache.org/site/logging.html).
 
-**Apache Sling Eventing Thread Pool** konfigurieren:
+**Apache Sling Eventing Thread Pool** Configure:
 
-* **Min. Poolgröße** und **Max. Poolgröße**, die Poolgröße, die zum Speichern von Ereignis-Threads verwendet wird.
+* **Min Pool Size** and **Max Pool Size**, the size of the pool used to hold event threads.
 
-* **Warteschlangengröße**, die maximale Größe der Threadwarteschlange, wenn der Pool erschöpft ist.
-Der empfohlene Wert lautet `-1` wie folgt: Hiermit wird die Warteschlange auf unbegrenzt eingestellt. Wenn eine Begrenzung festgelegt ist, können bei Überschreitung Verluste auftreten.
+* **Queue Size**, the maximum size of the thread queue if the pool is exhausted.
+The recommended value is `-1` as this sets the queue to unlimited; if a limit is set then losses might occur when it is exceeded.
 
-* Eine Änderung dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Ereignissen verbessern. z. B. starke Verwendung von AEM DAM oder Workflow.
+* Changing these settings can help performance in scenarios with a high number of events; for example, heavy AEM DAM or Workflow usage.
 * Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
-* Diese Einstellungen können sich auf die Leistung Ihrer Instanz auswirken. Ändern Sie sie daher nicht ohne Grund und unter gebührender Berücksichtigung.
+* These settings can affect the performance of your instance, so do not change them without reason and due consideration.
 
 **Apache Sling GET Servlet** Konfigurieren Sie einige Aspekte des Renderings:
 
@@ -105,7 +105,7 @@ Sie sollten JSON nicht deaktivieren.
 >
 >Diese Einstellung wird für Produktionsinstanzen automatisch konfiguriert, wenn Sie AEM im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausführen.
 
-**Apache Sling Java Script Handler** Konfigurieren Sie die Einstellungen für die Kompilierung von .java-Dateien als Skripten (Servlets).
+**Apache Sling Java Script Handler** Configure settings for the compilation of .java files as scripts (servlets).
 
 Bestimmte Einstellungen können die Leistung beeinträchtigen. Deaktivieren Sie diese, falls möglich, insbesondere für Produktionsinstanzen.
 
@@ -126,7 +126,7 @@ Bestimmte Einstellungen können die Leistung beeinträchtigen. Deaktivieren Sie 
 * **Wiederholungsintervall**, **Maximale Weitere Zustellversuche**, **maximale Anzahl paralleler Aufträge**, **Anerkennungswartezeit** u. a.
 
 * Eine Änderung dieser Einstellungen kann die Leistung in Szenarien mit einer hohen Anzahl von Aufträgen verbessern. z. B. starke Nutzung von AEM DAM und Workflows.
-* Für Ihr Szenario spezifische Werte sollten mithilfe von Tests festgelegt werden.
+* Values specific to your scenario should be established using tests.
 * Ändern Sie diese Einstellungen nicht ohne Grund, sondern nur nach gebührender Berücksichtigung.
 
 **Apache Sling JSP Script Handler** Konfigurieren Sie leistungsrelevante Einstellungen für den JSP-Skript-Handler. Um die Leistung zu verbessern, sollten Sie so viele Parameter wie möglich deaktivieren.
@@ -198,7 +198,7 @@ Weitere Informationen finden Sie unter [Sicherheitsprüfliste – Probleme mit S
 >
 >Für den Apache Sling Referrer-Filter muss ein Quick Fix-Paket installiert werden.
 
-**Apache Sling Request Logger** konfigurieren:
+**Apache Sling Request Logger** Configure:
 
 * unterschiedliche Parameter, die festlegen, wie Anforderungen zugeordnet werden.
 * **Enable Request Log** zum Aktivieren oder Deaktivieren.
@@ -274,7 +274,7 @@ When creating a new configuration, do not make changes to the factory configurat
    * Deaktivieren Sie **Debug**.
    * Deaktivieren Sie **Timing**.
 
-* Für die JS-Entwicklung (insbesondere beim Firebugging/Debugging:
+* Für die JS-Entwicklung (insbesondere beim Firebugging/Debugging):
 
    * Deaktivieren Sie **Minify**.
    * Aktivieren Sie **Debug**, um die Dateien für das Debuggen und für die Verwendung mit Firebug zu trennen.
@@ -315,7 +315,7 @@ Wenn Sie [geschlossene Benutzergruppen](/help/sites-administering/cug.md) verwen
 
 **Tag-CQ-Stammzuordnung** konfigurieren:
 
-* **Target Path** , um festzulegen, an welche Stelle eine Anforderung an &quot; `/`&quot;umgeleitet wird.
+* **Target Path** to define where a request to &quot; `/`&quot; will be redirected to.
 
 In AEM sind zwei Benutzeroberflächen verfügbar:
 
@@ -340,7 +340,7 @@ Mit AEM Root Mapping können Sie die Benutzeroberfläche konfigurieren, die Sie 
 >
 >Nach einer Standardinstallation wird die Touch-optimierte Benutzeroberfläche zur Standardbenutzeroberfläche.
 
-**Adobe Granite SSO Authentication Handler** Konfigurieren der Details zum Single-Sign-On (SSO); Diese werden häufig in Unternehmensautorenkonfigurationen benötigt, häufig in Verbindung mit LDAP.
+**Adobe Granite SSO Authentication Handler** Configure Single Sign On (SSO) details; these are often needed in enterprise author setups, often in conjunction with LDAP.
 
 Verschiedene Eigenschaften können konfiguriert werden: 
 
@@ -400,7 +400,7 @@ The other modes can be accessed from the sidekick, or the suffix `?wcmmode=disab
 >
 >Weitere Informationen finden Sie unter [Seitenimpressionen](/help/sites-deploying/configuring.md#enabling-page-impressions).
 
-**Day CQ WCM-Seitenstatistiken** Eine Veröffentlichungsinstanz konfigurieren:
+**Day CQ WCM Page Statistics** For a publish instance configure:
 
 * **URL to send data**: konfiguriert die zum Nachverfolgen der Seitenstatistiken verwendete URL (wichtig, falls eine Nachverfolgungsanforderung über den Dispatcher geleitet wird); der Standardwert lautet beispielsweise `https://localhost:4502/libs/wcm/stats/tracker`.
 
@@ -424,15 +424,15 @@ The other modes can be accessed from the sidekick, or the suffix `?wcmmode=disab
 
 Weitere Informationen finden Sie unter [Löschen von Versionen](/help/sites-deploying/version-purging.md).
 
-**Day CQ Workflow E-Mail-Benachrichtigungsdienst** Konfigurieren Sie die E-Mail-Einstellungen für Benachrichtigungen, die von einem Workflow gesendet werden.
+**Day CQ Workflow Email Notification Service** Configure the email settings for notifications sent by a workflow.
 
 **Day CQSE HTTP Service** Control CQ Servlet Engine:
 
 * **NIO für HTTP, **Ob NIO für HTTP verwendet werden soll oder nicht. Standardwert ist „true“. Wird nur verwendet, wenn HTTP aktiviert ist.
-* **Connection Timeout, **Connection timeout in Millisekunden. Diese Eigenschaft gilt für HTTP- und HTTPS-Verbindungen. Der Standardwert ist 60 Sekunden.
+* **Connection Timeout, **Connection timeout in Millisekunden. Diese Eigenschaft gilt für HTTP- und HTTPS-Verbindungen. Defaults to 60 seconds.
 
-* **Aktivieren Sie HTTPS,** unabhängig davon, ob HTTPS aktiviert ist. Der Standardwert ist false.
-* **Sitzungs-Timeout**, Standardlebensdauer einer HTTP-Sitzung in Minuten angegeben. Wenn der Timeout 0 oder kleiner ist, erfolgt kein Timeout für Sitzungen. Der Standardwert ist 10 Minuten.
+* **Enable HTTPS,** Whether or not HTTPS is enabled. Der Standardwert ist false.
+* **Session Timeout**, Default lifetime of an HTTP session specified in minutes. If the timeout is 0 or less, sessions will never timeout. Defaults to 10 minutes.
 * **Debug-Protokollierung**, ob Meldungen auf DEBUG-Ebene geschrieben werden sollen oder nicht. Der Standardwert ist false.
 * **Anforderungs-Puffergröße**, Größe des Puffers für Anforderungen in Byte. Der Standardwert ist 8 KB.
 * **Maximale Anzahl an Threads**, maximale Anzahl an Threads, die zur Bearbeitung von Anforderungen verwendet werden. Der Standardwert ist 200.
@@ -454,17 +454,17 @@ Einzelheiten zu den SSL-bezogenen Optionen und eine vollständige Beschreibung z
 Steuert den HTML-Parser für den CQ-Rewriter.
 
 * **Additional Tags to Process**: Sie können HTML-Tags, die vom Parser verarbeitet werden sollen, hinzufügen oder entfernen. Standardmäßig werden die folgenden Tags verarbeitet: A, IMG, AREA, FORM, BASE, LINK, SCRIPT, BODY, HEAD.
-* **Groß-/Kleinschreibung** beibehalten: Standardmäßig konvertiert der HTML-Parser Attribute in Kamelschreibung (z. B. eBay) in Kleinschreibung (z. B. ebay). Sie können dies jedoch deaktivieren, um die gemischte Groß-/Kleinschreibung von Attributen beizubehalten. Dies ist hilfreich, wenn Sie Frontend-Frameworks wie Angular 2 verwenden.
+* **Preserve Camel Case** - By default, the HTML parser converts attributes in camel case (e.g. eBay) to lower case (e.g. ebay). Sie können dies jedoch deaktivieren, um die gemischte Groß-/Kleinschreibung von Attributen beizubehalten. Dies ist hilfreich, wenn Sie Frontend-Frameworks wie Angular 2 verwenden.
 
 **Day Commons JDBC Connections Pool** Konfigurieren Sie den Zugriff auf eine externe Datenbank, die als Quelle für Inhalte verwendet wird.
 
 Dies ist eine Factory-Konfiguration, sodass mehrere Instanzen konfiguriert werden. 
 
-**Adobe CQ Media DPS Sessions Service** Verwalten von DPS-Sitzungen für die Verwendung mit Veröffentlichungen.
+**Adobe CQ Media DPS Sessions Service** Manage DPS Sessions for use with Publications.
 
 Insbesondere können Sie `dps.session.service.url.name` konfigurieren. Die Standardeinstellung ist [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**Die CDN-Rewriter** -Kommunikation zwischen AEM und einem CDN muss sichergestellt sein, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer gesendet werden. Dies beinhaltet zwei Aufgaben:
+**Die Kommunikation zwischen AEM und einem CDN mit dem CDN-Rewriter** muss sichergestellt werden, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer gesendet werden. Dies beinhaltet zwei Aufgaben:
 
 * Den Zugriff auf die Ressource von AEM aus über das CDN beim ersten Versuch (oder wenn sich die Ressource nicht mehr im Zwischenspeicher befindet).
 * Den sicheren Zugriff auf die im CDN zwischengespeicherte Ressource, denn sobald die Ressource im CDN zwischengespeichert ist, wird die Anforderung nicht an AEM gerichtet, sondern alle Benutzer mit Zugriff auf die Ressource werden vom CDN bedient.
@@ -474,8 +474,8 @@ AEM stellt einen Rewriter für das Neuschreiben interner Asset-URLs als externe 
 Der Gesamtablauf sieht wie folgt aus:
 
 1. Der Benutzer authentifiziert sich bei AEM und fordert eine Seite mit Assets an.
-1. Die angeforderte Seite enthält ein Asset, das dem `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
-1. Rewriter transformiert den Link zu einer CDN-URL, die eine JWS-Signatur enthält:
+1. Requested page contains an asset similar to `/content/dam/geometrixx-media/articles/paladin_trailer.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png`
+1. Rewriter transforms the link to a CDN URL containing a JWS Signature:
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
 1. Der Browser des Benutzers leitet die Asset-Anforderung an den CDN-Server weiter.
@@ -490,7 +490,7 @@ Der Fluss zwischen dem Browser des Benutzers, dem CDN und AEM sieht wie folgt au
 >
 >Diese Funktion ist derzeit nur für AEM-Autoreninstanzen aktiviert.
 
-**CDNConfigServiceImpl** stellt CDN-Konfigurationen bereit
+**CDNConfigServiceImpl** Provides CDN configurations
 
 The CDN rewriting feature can be enabled by providing **CDN distribution domain name** in the configuration for com.adobe.cq.cdn.rewriter.impl.CDNConfigServiceImpl.
 
