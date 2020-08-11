@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Bewertungen
 seo-title: Verwenden von Bewertungen
-description: Hinzufügen einer Bewertungskomponente zu einer Seite
-seo-description: Hinzufügen einer Bewertungskomponente zu einer Seite
+description: Adding a Rating component to a page
+seo-description: Adding a Rating component to a page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 37%
 
 ---
 
@@ -27,19 +30,19 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](rating-basics.md#essentials-for-client-side) are included, this is how the `Rating` component will appear.
 
-![chlimage_1-493](assets/chlimage_1-493.png)
+![Bewertung](assets/rating.png)
 
 ## Konfigurieren einer Bewertung {#configuring-rating}
 
 Select the placed `Rating` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure-new](assets/configure-new.png)
 
 Legen Sie auf der Registerkarte **[!UICONTROL Texte &amp; Beschriftungen]** die interne ID der Bewertung fest.
 
-![chlimage_1-495](assets/chlimage_1-495.png)
+![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Tally Name]**(*Erforderlich*) Ein einfacher Name für die Instanz, `Rating`die diese Instanz eindeutig identifiziert. Es muss sich um einen gültigen Knotennamen des Verzeichnisses handeln.
+**[!UICONTROL Tally Name]**(*Erforderlich*) Ein einfacher Name für die Instanz, `Rating` die diese eindeutig identifiziert. Es muss sich um einen gültigen Knotennamen des Verzeichnisses handeln.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
