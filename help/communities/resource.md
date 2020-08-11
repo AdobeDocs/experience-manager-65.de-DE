@@ -1,8 +1,8 @@
 ---
 title: Einrichten und Zuweisen von Aktivierungsressourcen
 seo-title: Einrichten und Zuweisen von Aktivierungsressourcen
-description: Hinzufügen
-seo-description: Hinzufügen
+description: hinzufügen
+seo-description: hinzufügen
 uuid: da940242-0c9b-4ad8-8880-61fd41461c3b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,17 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 7%
 
 ---
 
 
 # Einrichten und Zuweisen von Aktivierungsressourcen {#create-and-assign-enablement-resources}
 
-## Hinzufügen einer Aktivierungsressource {#add-an-enablement-resource}
+## hinzufügen einer Aktivierungsressource {#add-an-enablement-resource}
 
 So fügen Sie der neuen Community-Site eine Aktivierungsressource hinzu:
 
@@ -25,31 +28,31 @@ So fügen Sie der neuen Community-Site eine Aktivierungsressource hinzu:
    * For example, [http://localhost:4502/](http://localhost:4503/)
 * Wählen Sie in der globalen Navigation **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
-   ![chlimage_1-199](assets/chlimage_1-199.png)
+   ![resources](assets/resources.png)
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![enable-resource](assets/enablement-resource.png)
 * Wählen Sie die Community-Site aus, der die Aktivierungsressourcen hinzugefügt werden:
    * Wählen Sie &quot; **[!UICONTROL Aktivierungslehrgang&quot;]**.
 * From the menu, select **[!UICONTROL Create]**.
-* Wählen Sie **[!UICONTROL Ressource]**.
+* Select **[!UICONTROL Resource]**.
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![create-resource](assets/create-enablement-resource.png)
 
 ### Grundlegende Informationen {#basic-info}
 
-Füllen Sie die grundlegenden Informationen für die Ressource aus:
+Fill in the basic information for the Resource:
 
 * **[!UICONTROL Site-Name]**
 
-   Auf den Namen der ausgewählten Community-Site setzen: Übungen zur Aktivierung
+   Set to the name of the selected community site: Enablement Tutorial
 
-* **[!UICONTROL Ressourcenname&amp;ast;]**
+* **[!UICONTROL Resource Name&amp;ast;]**
 
    Skiunterricht 1
 
 * **[!UICONTROL Tags]**
 
-   Übung: Sport/Skifahren
+   Tutorial: Sports / Skiing
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
@@ -57,27 +60,29 @@ Füllen Sie die grundlegenden Informationen für die Ressource aus:
 
 * **[!UICONTROL Beschreibung]**
 
-   Schneeschlitten für Anfänger.
+   Sliding on snow for beginners.
 
 * **[!UICONTROL Bild hinzufügen]**
 
-   Hinzufügen Sie ein Bild, das die Ressource für das Mitglied in der Ansicht &quot;Zuweisungen&quot;darstellt.
+   hinzufügen Sie ein Bild, das die Ressource für das Mitglied in der Ansicht &quot;Zuweisungen&quot;darstellt.
 
-   ![chlimage_1-202](assets/chlimage_1-202.png)
+   ![basic-info](assets/basic-info.png)
 
 * Wählen Sie **[!UICONTROL Weiter]** aus
 
 ### Inhalt hinzufügen {#add-content}
 
-Es wird zwar so angezeigt, als ob mehrere Ressourcen ausgewählt wären, es ist jedoch nur eine zulässig.
+While it appears as if multiple Resources might be selected, only one is allowed.
 
 Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quelle zu beginnen.
 
-![chlimage_1-203](assets/chlimage_1-203.png) ![chlimage_1-204](assets/chlimage_1-204.png)
+![add-content](assets/add-content.png)
+
+![upload-resource](assets/upload-resource.png)
 
 Eine Ressource hochladen. Bei einer Videoressource können Sie entweder ein benutzerdefiniertes Beginn hochladen, das vor der Videowiedergabe angezeigt wird, oder eine Miniaturansicht aus dem Video generieren lassen (dies kann einige Minuten dauern - es ist nicht erforderlich zu warten).
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![upload-video](assets/upload-video.png)
 
 * Wählen Sie **[!UICONTROL Weiter]** aus.
 
@@ -105,7 +110,7 @@ Eine Ressource hochladen. Bei einer Videoressource können Sie entweder ein benu
 
    **Hinweis**: Wenn Benutzer oder Gruppen nicht sichtbar sind, überprüfen Sie, ob sie der `Community Enable Members` Gruppe hinzugefügt und in der Veröffentlichungsinstanz *gespeichert* wurden.
 
-   ![chlimage_1-206](assets/chlimage_1-206.png)
+   ![enable-settings](assets/enablement-settings.png)
 
 * Wählen Sie **[!UICONTROL Weiter]** aus
 
@@ -115,13 +120,13 @@ Eine Ressource hochladen. Bei einer Videoressource können Sie entweder ein benu
 
    Lassen Sie die Einstellung deaktiviert, da diese Aktivierungsressource einem Lernpfad hinzugefügt wird. Wenn ein Lernender der einzelnen Aktivierungsressource sowie einem Lernpfad mit der Aktivierungsressource zugewiesen ist, wird der Lernende der Aktivierungsressource zweimal zugewiesen.
 
-   ![chlimage_1-207](assets/chlimage_1-207.png)
+   ![add-assignments](assets/add-assignments.png)
 
 * Wählen Sie **[!UICONTROL Erstellen]**
 
-   ![chlimage_1-208](assets/chlimage_1-208.png)
+   ![create-resource](assets/create-resource.png)
 
-Die erfolgreiche Erstellung der Ressource kehrt bei Auswahl der neu erstellten Ressource zur Ressourcenkonsole zurück. Über diese Konsole können Sie andere Einstellungen veröffentlichen, hinzufügen und ändern.
+Die erfolgreiche Erstellung der Ressource kehrt bei Auswahl der neu erstellten Ressource zur Ressourcenkonsole zurück. From this console, it is possible to publish, add learners and change other settings.
 
 Um eine neue Version der Ressource für die Aktivierung hochzuladen, wird empfohlen, eine neue Ressource zu erstellen und dann die Anmeldung für Mitglieder aus der alten Version aufzuheben und sie in der neuen Version einzutragen.
 
@@ -129,17 +134,17 @@ Um eine neue Version der Ressource für die Aktivierung hochzuladen, wird empfoh
 
 Bevor die Lernenden die zugewiesenen Ressourcen sehen können, müssen sie veröffentlicht werden:
 
-* Wählen Sie das `Publish` Symbol Welt
+* Select the world `Publish` icon
 
-Die Aktivierung wird mit einer Erfolgsmeldung bestätigt:
+Activation is confirmed with a success message:
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![publish-resource](assets/publish-resource.png)
 
-## Hinzufügen einer zweiten Aktivierungsressource {#add-a-second-enablement-resource}
+## Add a Second Enablement Resource {#add-a-second-enablement-resource}
 
-Wiederholen Sie die oben stehenden Schritte, um eine zweite zugehörige Aktivierungsressource zu erstellen und zu veröffentlichen, aus der ein Lernpfad erstellt wird.
+Repeat the steps above to create and publish a second related enablement resource from which a learning path will be created.
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![add-resource](assets/add-resource.png)
 
 **Veröffentlichen** Sie die zweite Ressource.
 
@@ -147,18 +152,18 @@ Kehren Sie zur Liste der Ressourcen des Tutorials zur Aktivierung zurück.
 
 *Hinweis: Wenn beide Ressourcen nicht sichtbar sind, aktualisieren Sie die Seite.*
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![refresh-resource](assets/refresh-resource.png)
 
-## Hinzufügen Lernpfad {#add-a-learning-path}
+## hinzufügen Lernpfad {#add-a-learning-path}
 
 Ein Lernpfad ist eine logische Gruppierung von Ressourcen zur Aktivierung, die einen Kurs bilden.
 
 * Wählen Sie in der Ressourcenkonsole `+ Create`
 * Lernpfad auswählen ****
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![add-learning-path](assets/add-learning-path.png)
 
-Hinzufügen der **[!UICONTROL Basisinformationen]**:
+hinzufügen der **[!UICONTROL Basisinformationen]**:
 
 * **[!UICONTROL Lernpfad-Name]**
 
@@ -172,11 +177,11 @@ Hinzufügen der **[!UICONTROL Basisinformationen]**:
 
    Nicht aktivieren
 
-* **[!UICONTROL Hochladen eines Bildes]**
+* **[!UICONTROL Upload an image]**
 
    Zum Darstellen des Lernpfads in der Ressourcenkonsole.
 
-   ![chlimage_1-213](assets/chlimage_1-213.png)
+   ![learn-path-basic](assets/learningpath-basic.png)
 
 * Wählen Sie **[!UICONTROL Weiter]** aus.
 
@@ -192,22 +197,22 @@ Im Bereich Hinzufügen Ressourcen:
 
 >[!NOTE]
 >
->Sie können die verfügbaren Ressourcen nur auf derselben Ebene wie der Lernpfad auswählen. Beispielsweise stehen für einen Lernpfad, der in einer Gruppe erstellt wird, nur Ressourcen auf Gruppenebene zur Verfügung; für einen Lernpfad, der auf einer Community-Site erstellt wurde, stehen die Ressourcen auf dieser Site zum Hinzufügen zum Lernpfad zur Verfügung.
+>You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
 
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
-   ![chlimage_1-214](assets/chlimage_1-214.png)
+   ![learningpath](assets/learningpath-add.png)
 
-   ![chlimage_1-215](assets/chlimage_1-215.png)
+   ![create-learningpath](assets/create-learningpath.png)
 
 * Wählen Sie **[!UICONTROL Weiter]** aus
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![learningpath-settings](assets/learningpath-settings.png)
 
 * **[!UICONTROL Bevollmächtigte hinzufügen]**
 
-   Verwenden Sie das Pulldown-Menü, um die `Community Ski Class` Gruppe auszuwählen, die Mitglieder umfassen soll `Riley Taylor` und `Sidney Croft.`
+   Use the pulldown menu to select the `Community Ski Class` group, which should included members `Riley Taylor` and `Sidney Croft.`
 
 * **[!UICONTROL Lernpfad Contact&amp;ast;]**
 
@@ -215,9 +220,9 @@ Im Bereich Hinzufügen Ressourcen:
 
 * Wählen Sie **[!UICONTROL Erstellen]**.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![learningpath-info](assets/learningpath-info.png)
 
 Bei erfolgreicher Erstellung des Lernpfads wird die Ressourcenkonsole mit dem neu erstellten Lernpfad ausgewählt. Über diese Konsole können Sie andere Einstellungen veröffentlichen, hinzufügen und ändern.
 
-**Veröffentlichen** Sie den Lernpfad.
+**Publish** the learning path.
 
