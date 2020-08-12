@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ## Übersicht {#overview}
 
-Die Suchfunktion ist eine wesentliche Funktion von AEM Communities. Zusätzlich zu den Suchfunktionen für die [AEM-Plattform](../../help/sites-deploying/queries-and-indexing.md) stellt AEM Communities die [UGC-Such-API](#ugc-search-api) zur Verfügung, mit der benutzergenerierte Inhalte durchsucht werden können. UGC verfügt über eindeutige Eigenschaften, da es separat von anderen AEM-Inhalten und Benutzerdaten eingegeben und gespeichert wird.
+Die Suchfunktion ist ein wesentliches Merkmal von AEM Communities. Zusätzlich zu den Suchfunktionen für [AEM Plattformen](../../help/sites-deploying/queries-and-indexing.md) stellt AEM Communities die [UGC-Suchschnittstelle](#ugc-search-api) zur Verfügung, mit der benutzergenerierte Inhalte durchsucht werden können. UGC verfügt über eindeutige Eigenschaften, da es unabhängig von anderen AEM- und Benutzerdaten eingegeben und gespeichert wird.
 
 Für Communities werden im Allgemeinen zwei Dinge gesucht:
 
@@ -29,7 +32,7 @@ Für Communities werden im Allgemeinen zwei Dinge gesucht:
 
 * Benutzer und Benutzergruppen (Benutzerdaten)
 
-   * Verwendet die Suchfunktionen der AEM-Plattform.
+   * Verwendet die Suchfunktionen der AEM Plattform.
 
 Dieser Abschnitt der Dokumentation ist für Entwickler von Interesse, die benutzerdefinierte Komponenten erstellen, die UGC erstellen oder verwalten.
 
@@ -47,32 +50,32 @@ Der gemeinsame [UGC-Speicher](working-with-srp.md) wird von einer Vielzahl von D
 
 ### ASRP-Suchen {#asrp-searches}
 
-Für [ASRP](asrp.md)wird UGC in der Adobe-Cloud gespeichert. Während UGC in CRX nicht sichtbar ist, ist die [Moderation](moderate-ugc.md) sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung verfügbar. Die Verwendung der [UGC-Such-API](#ugc-search-api) funktioniert für ASRP genauso wie für andere SRPs.
+Bei [ASRP](asrp.md)wird UGC in der Adobe Cloud gespeichert. Während UGC in CRX nicht sichtbar ist, ist die [Moderation](moderate-ugc.md) sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung verfügbar. The use of the [UGC search API](#ugc-search-api) works for ASRP the same as for other SRPs.
 
-Es gibt derzeit keine Tools zur Verwaltung von ASRP-Suchen.
+Tools do not currently exist for managing ASRP searches.
 
-Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen die [Benennungsanforderungen](#naming-of-custom-properties)eingehalten werden.
+When creating custom properties that are searchable, it is necessary to adhere to the [naming requirements](#naming-of-custom-properties).
 
-### MSRP-Suchen {#msrp-searches}
+### MSRP Searches {#msrp-searches}
 
-Für [MSRP](msrp.md)wird UGC in MongoDB gespeichert, das für die Suche mit Solr konfiguriert ist. UGC ist in CRX nicht sichtbar, aber die [Moderation](moderate-ugc.md) ist sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung verfügbar.
+For [MSRP](msrp.md), UGC is stored in MongoDB configured to use Solr for searching. UGC will not be visible in CRX, but [moderation](moderate-ugc.md) is available from both the author and publish environments.
 
-Zu MSRP und Solr:
+Regarding MSRP and Solr:
 
-* Der eingebettete Solr für die AEM-Plattform wird nicht für MSRP verwendet.
-* Wenn Sie einen Remote-Support für die AEM-Plattform verwenden, kann dieser für MSRP freigegeben werden, sollte jedoch unterschiedliche Sammlungen verwendet werden.
-* Solr kann für die Standardsuche oder für die mehrsprachige Suche (MLS) konfiguriert werden.
-* Weitere Informationen zur Konfiguration finden Sie unter [Solr-Konfiguration](msrp.md#solr-configuration) für MSRP.
+* The embedded Solr for the AEM platform is not used for MSRP.
+* If using a remote Solr for the AEM platform, it may be shared with MSRP, but they should use different collections.
+* Solr may be configured for standard search or for multilingual search (MLS).
+* For configuration details, see [Solr Configuration](msrp.md#solr-configuration) for MSRP.
 
-Benutzerdefinierte Suchfunktionen sollten die [UGC-Suchschnittstelle](#ugc-search-api)verwenden.
+Custom search features should use the [UGC search API](#ugc-search-api).
 
-Beim Erstellen benutzerdefinierter Eigenschaften, die durchsuchbar sind, müssen die [Benennungsanforderungen](#naming-of-custom-properties)eingehalten werden.
+When creating custom properties that are searchable, it is necessary to adhere to the [naming requirements](#naming-of-custom-properties).
 
-### JSRP-Suchen {#jsrp-searches}
+### JSRP Searches {#jsrp-searches}
 
-Bei [JSRP](jsrp.md)wird UGC in [Oak](../../help/sites-deploying/platform.md) gespeichert und ist nur im Repository der AEM-Autor- oder Veröffentlichungsinstanz sichtbar, in der es eingegeben wurde.
+For [JSRP](jsrp.md), UGC is stored in [Oak](../../help/sites-deploying/platform.md) and is visible only in the repository of the AEM author or publish instance on which it was entered.
 
-Da UGC in der Regel in der Veröffentlichungs-Umgebung eingegeben wird, müssen für Produktionssysteme mit mehreren Herausgebern ein [Veröffentlichungscluster](topologies.md)und nicht eine Veröffentlichungsfarm konfiguriert werden, damit die eingegebenen Inhalte von allen Herausgebern sichtbar sind.
+Da UGC in der Regel in der Umgebung &quot;Veröffentlichen&quot;eingegeben wird, muss für Produktionssysteme mit mehreren Herausgebern ein [Veröffentlichungscluster](topologies.md)und nicht eine Veröffentlichungsfarm konfiguriert werden, damit die eingegebenen Inhalte von allen Herausgebern sichtbar sind.
 
 Bei JSRP ist in der Umgebung &quot;Veröffentlichen&quot;eingegebenes UGC in der Autorenversion nie sichtbar. So finden alle [Moderations](moderate-ugc.md) -Aufgaben in der Umgebung der Veröffentlichung statt.
 
@@ -80,7 +83,7 @@ Benutzerdefinierte Suchfunktionen sollten die [UGC-Suchschnittstelle](#ugc-searc
 
 #### Indizierung von Eichen {#oak-indexing}
 
-Obwohl Oak-Indizes nicht automatisch für die AEM-Plattformsuche erstellt werden, wurden sie seit AEM 6.2 für AEM Communities hinzugefügt, um die Leistung zu verbessern und die Paginierung bei der Präsentation von UGC-Suchergebnissen zu unterstützen.
+Obwohl Oak-Indizes nicht automatisch für die AEM Plattformsuche erstellt werden, wurden sie ab AEM 6.2 für AEM Communities hinzugefügt, um die Leistung zu verbessern und Paginierung bei der Präsentation von UGC-Suchergebnissen zu unterstützen.
 
 Wenn benutzerdefinierte Eigenschaften verwendet werden und die Suchvorgänge langsam sind, müssen zusätzliche Indizes für die benutzerdefinierten Eigenschaften erstellt werden, um sie leistungsfähiger zu machen. Um die Portabilität zu erhalten, müssen Sie beim Erstellen von durchsuchbaren benutzerdefinierten Eigenschaften die [Benennungsanforderungen](#naming-of-custom-properties) beachten.
 
@@ -91,11 +94,11 @@ Der [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-comm
 * Eine Ansicht bestehender Indizes.
 * Die Möglichkeit, eine Neuindizierung zu starten.
 
-Zur Ansicht der vorhandenen Oak-Indizes in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)lautet der Speicherort:
+Zur Ansicht der bestehenden Oak-Indizes in der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)lautet der Speicherort:
 
 * `/oak:index/socialLucene`
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+![social-lucene](assets/social-lucene.png)
 
 ## Eigenschaften der indizierten Suche {#indexed-search-properties}
 
@@ -108,12 +111,12 @@ Im Folgenden sind einige der durchsuchbaren Eigenschaften aufgeführt, die für 
 | isGekennzeichnet | *Boolesch* |
 | isSpam | *Boolesch* |
 | lesen | *Boolesch* |
-| Einfluss | *Boolesch* |
+| influence | *Boolesch* |
 | attachments | *Boolesch* |
 | sentiment | *Lang* |
-| markiert | *Boolesch* |
+| flagged | *Boolesch* |
 | hinzugefügt | *Datum* |
-| modifyDate | *Datum* |
+| modifiedDate | *Datum* |
 | state | *Zeichenfolge* |
 | userIdentifier | *Zeichenfolge* |
 | Antworten | *Lang* |
@@ -125,7 +128,7 @@ Im Folgenden sind einige der durchsuchbaren Eigenschaften aufgeführt, die für 
 | publishDate | *Datum* |
 | publishJobId | *Zeichenfolge* |
 | beantwortet | *Boolesch* |
-| chosenantwortet | *Boolesch* |
+| chosenanswered | *Boolesch* |
 | tag | *Zeichenfolge* |
 | cq:Tag | *Zeichenfolge* |
 | author_display_name | *Zeichenfolge* |
@@ -133,14 +136,14 @@ Im Folgenden sind einige der durchsuchbaren Eigenschaften aufgeführt, die für 
 | parentPath | *Zeichenfolge* |
 | parentTitle | *Zeichenfolge* |
 
-### Benennung benutzerdefinierter Eigenschaften {#naming-of-custom-properties}
+### Naming of Custom Properties {#naming-of-custom-properties}
 
-Wenn Sie benutzerdefinierte Eigenschaften hinzufügen, damit diese Eigenschaften für mit der [UGC-Such-API](#ugc-search-api)erstellte Sorten und Suchen sichtbar sind, *müssen* Sie dem Eigenschaftennamen ein Suffix hinzufügen.
+When adding custom properties, in order for those properties to be visible to sorts and searches created with the [UGC search API](#ugc-search-api), it is *required* to add a suffix to the property name.
 
-Das Suffix ist für Abfragen gedacht, die ein Schema verwenden:
+The suffix is for query languages which use a schema:
 
-* Er identifiziert die Eigenschaft als durchsuchbar.
-* Er identifiziert den Datentyp.
+* It identifies the property as searchable.
+* It identifies the data type.
 
 Solr ist ein Beispiel für eine Abfrage, die ein Schema verwendet.
 
@@ -155,12 +158,12 @@ Solr ist ein Beispiel für eine Abfrage, die ein Schema verwendet.
 
 **Hinweise:**
 
-* *Text* ist eine tokenisierte Zeichenfolge, *String* nicht. Verwenden Sie *Text* für unscharfe Suchen (mehr wie diese).
+* *Text* is a tokenized string, *String* is not. Verwenden Sie *Text* für unscharfe Suchen (mehr wie diese).
 
 * Bei Typen mit mehreren Werten fügen Sie dem Suffix &quot;s&quot;hinzu, z. B.:
 
    * `viewDate_dt`: single date property
-   * `viewDates_dts`: Liste der Eigenschaft &quot;date&quot;
+   * `viewDates_dts`: liste der Eigenschaft &quot;date&quot;
 
 ## Filter {#filters}
 
@@ -178,7 +181,7 @@ Die Filtersyntax für AND- und OR-Logik wird wie folgt ausgedrückt (wird vor de
 
 Die Standardimplementierung der [Suchkomponente](search.md) verwendet diese Syntax wie in der URL, die die Seite &quot;Suchergebnisse&quot;im Handbuch &quot; [Community-Komponenten&quot;öffnet](components-guide.md), dargestellt. Um zu experimentieren, navigieren Sie zu [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
-Filteroperatoren sind:
+Filter operators are:
 
 | EQ | Gleich |
 |---|---|
@@ -200,13 +203,13 @@ Es ist wichtig, dass die URL auf die Communities-Komponente (Ressource) und nich
 
 Es gibt ein Adobe Marketing Cloud GitHub-Projekt, das Folgendes enthält:
 
-[AEM Communities SRP Tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
+[AEM Communities SRP-Tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
-Dieses Repository enthält Tools zum Verwalten von Daten in SRP.
+This repository contains tools for managing data in SRP.
 
-Derzeit gibt es ein Servlet, das die Möglichkeit bietet, alle UGC aus einem SRP zu löschen.
+Currently, there is one servlet that provides the ability to delete all UGC from any SRP.
 
-So löschen Sie z. B. alle UGC in ASRP:
+For example, to delete all UGC in ASRP:
 
 ```shell
 curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/usergenerated/asi/cloud -uadmin:admin
@@ -216,21 +219,21 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 ### Solr-Abfrage {#solr-query}
 
-Aktivieren Sie die DEBUG-Protokollierung für
+To help troubleshoot problems with a Solr query, enable DEBUG logging for
 
 `com.adobe.cq.social.srp.impl.SocialSolrConnector`.
 
-Die tatsächliche SOR-Abfrage wird im Debug-Protokoll kodiert angezeigt:
+The actual Solr query will be displayed URL encoded in the debug log:
 
-Abfrage zu lösen ist: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
+Query to solr is: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
 
-Der `q` Parameterwert ist die Abfrage. Nachdem die URL-Kodierung entschlüsselt wurde, kann die Abfrage zur weiteren Debugging an das Tool zur Abfrage der Administratoren weitergeleitet werden.
+The value of the `q` parameter is the query. Once the URL encoding is decoded, the query can be passed to the Solr Admin Query tool for further debugging.
 
 ## Verwandte Ressourcen {#related-resources}
 
-* [Community Content Datenspeicherung](working-with-srp.md) - Behandelt die verfügbaren SRP-Optionen für einen UGC Common Store.
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Coding-Richtlinien.
-* [SocialUtils Refactoring](socialutils.md) - Dienstprogrammmethoden für SRP, die SocialUtils ersetzen.
-* [Komponenten](search.md) für Suche und Suchergebnisse - Hinzufügen der UGC-Suchfunktion zu einer Vorlage.
+* [Community Content Storage](working-with-srp.md) - Discusses the available SRP choices for a UGC common store.
+* [Storage Resource Provider Overview](srp.md) - Introduction and repository usage overview.
+* [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
+* [SocialUtils Refactoring](socialutils.md) - Utility methods for SRP that replace SocialUtils.
+* [Search and Search Results components](search.md) - Adding UGC search feature to a template.
 
