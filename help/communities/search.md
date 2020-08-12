@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 31%
 
 ---
 
@@ -37,23 +40,24 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search` component will appear.
 
-![chlimage_1-373](assets/chlimage_1-373.png)
+![add-search](assets/add-search.png)
 
 ### Konfigurieren der hinzugefügten Suche {#configure-the-added-search}
 
 Select the placed `Search` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![Konfirue](assets/configure-new.png)
 
 Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are search when a query is entered by a visitor.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![search-settings](assets/search-settings.png)
 
-* **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt. Um die Suche beispielsweise auf ein bestimmtes Forum zu beschränken, wählen Sie eine Forumkomponente aus, die auf einer Seite platziert wird:
+* **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt. As an example, to limit the search to a specific forum, select a forum component placed within a page:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Ergebnisseite]** Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der `Search Results` Komponente im Browser angegeben wird.
+* **[!UICONTROL Ergebnisseite]** Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der Variablen 
+`Search Results` component.
 
 ## Search Results {#search-results}
 
@@ -71,17 +75,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search Result` component will appear:
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![search-result](assets/search-result1.png)
 
 ### Konfigurieren hinzugefügter Suchergebnisse {#configure-the-added-search-result}
 
 Select the placed `Search Results` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-377](assets/chlimage_1-377.png)
+![configure](assets/configure-new.png)
 
 Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify what paths are included in the search when a query is entered by a visitor.
 
-![chlimage_1-378](assets/chlimage_1-378.png)
+![search-result-settings](assets/search-result-settings.png)
 
 * **[!UICONTROL Suchergebnisse pro Seite]**
 
