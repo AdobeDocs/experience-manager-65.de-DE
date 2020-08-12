@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -25,39 +28,40 @@ Die folgenden Anweisungen beschreiben zum Einrichten Ihrer Website die Ordner, d
 
 * `/etc/designs/an-scf-sandbox`
 
-   Hier befinden sich herunterladbare Designelemente.
+   This is where downloadable design elements reside.
 
 * `/content/an-scf-sandbox`
 
    Hier befinden sich die herunterladbaren Webseiten.
 
-Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners für die Anwendung, den Entwurf und den Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` den von Ihnen gewählten Namen.
+The code in this tutorial will rely on the main folder name being the same for the application, design, and content. If you choose some other name for your website, then always replace `an-scf-sandbox` with the name you have chosen.
 
 >[!NOTE]
 >
->Info zu Namen:
+>About names:
 >
->* Die in CRXDE angezeigten Namen sind Knotennamen, die den Pfad zu adressierbaren Inhalten bilden.
->* Knotennamen können Leerzeichen enthalten, bei Verwendung in einem URI muss das Leerzeichen jedoch entweder als &quot;%20&quot;oder &quot;+&quot;kodiert werden.
->* Knotennamen können Bindestriche und Unterstriche enthalten, müssen jedoch kodiert werden, wenn sie als Paketname in einer Java-Datei referenziert werden. Sowohl Bindestriche als auch Unterstriche werden mit einem Unterstrich gefolgt von ihrem Unicode-Wert versehen:
+>* The names seen in CRXDE are node names which form the path to addressable content.
+>* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;.
+>* Node names may contain hyphens and underscores, but they must be encoded when referenced as a package name within a Java file. Both hyphens and underscores are escaped with underscore followed by their unicode value:
+
    >
    >   
    * Bindestrich wird &#39;_002d&#39;
-   >   * Unterstrich wird &#39;_005f&#39;
+   >   * underscore becomes &#39;_005f&#39;
 
 
-## Anwendungsverzeichnis einrichten (/apps) {#setup-the-application-directory-apps}
+## Set up the Application Directory (/apps) {#setup-the-application-directory-apps}
 
-Der Ordner &quot;/apps&quot;im Repository enthält den Code mit implementiert das Verhalten und die Wiedergabe der Seiten, die vom Ordner &quot;/content&quot;bereitgestellt werden.
+The /apps directory in the repository contains the code with implements the behavior and rendering of the pages served from the /content directory.
 
-Der Ordner &quot;/apps&quot;ist geschützt und nicht öffentlich zugänglich, ebenso wie die Ordner &quot;/content&quot;und &quot;/etc/designs&quot;.
+The /apps directory is protected and not publicly accessible as are the /content and /etc/designs directories.
 
 1. Create `/apps/an-scf-sandbox` folder.
 
-   Verwenden von **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
+   Using **[!UICONTROL CRXDE Lite]**, in the explorer pane
 
-   1. Wählen Sie den `/apps` Ordner aus.
-   1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Erstellen]**... oder ziehen Sie die **[!UICONTROL Create...]** angezeigt.
+   1. Select the `/apps` folder.
+   1. Right-click **[!UICONTROL Create]**... or pull down the **[!UICONTROL Create...]** menu.
    1. Wählen Sie Ordner **[!UICONTROL erstellen...]**.
    1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot;ein `an-scf-sandbox`.
    1. Klicken Sie auf **[!UICONTROL OK]**.
@@ -77,11 +81,12 @@ Der Ordner &quot;/apps&quot;ist geschützt und nicht öffentlich zugänglich, eb
    1. Klicken Sie auf **[!UICONTROL OK]**.
    1. Wählen Sie erneut `/apps/an-scf-sandbox`.
    1. Select **[!UICONTROL Save All]**.
+
    Speichern Sie wie bei jedem Bearbeitungsprozess häufig. Wenn bei der Dateneingabe Probleme auftreten, kann dies entweder daran liegen, dass Ihr Anmeldevorgang abgelaufen ist oder Sie vorherige Änderungen speichern müssen.
 
-1. Die Struktur im Explorer-Bereich von CRXDE Lite sollte nun etwa wie folgt aussehen:
+1. Die Struktur im Explorer-Bereich der CRXDE Lite sollte nun etwa wie folgt aussehen:
 
-   ![chlimage_1-44](assets/chlimage_1-44.png)
+   ![crxde-template](assets/crxde-template.png)
 
 ## Einrichten des Designverzeichnisses (/etc/designs) {#setup-the-design-directory-etc-designs}
 
@@ -89,29 +94,30 @@ Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets,
 
 1. Um das Designer-Tool in der klassischen Benutzeroberfläche zu verwenden, navigieren Sie zu [https://&lt;server>:/miscadmin](http://localhost:4502/miscadmin).
 
-   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten des Typs zu erstellen, `cq:Page`werden Zugriffskontrolle und Replikation nicht auf Standardeinstellungen für eine Seite eingestellt.
+   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten des Typs zu erstellen, `cq:Page`werden Zugriffskontrolle und Replikation nicht auf Standardeinstellungen für eine Seite festgelegt.
 
 1. In the explorer pane, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New]** > **[!UICONTROL New Page]**.
 
    Geben Sie Folgendes ein:
 
-   * Titel: **[!UICONTROL SCF-Sandbox]**
+   * Title: **[!UICONTROL An SCF Sandbox]**
    * Name: **[!UICONTROL an-scf-sandbox]**
    * Vorlage **[!UICONTROL der Entwurfsseite auswählen]**
+
    Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   ![design-template](assets/design-template.png)
 
-1. Aktualisieren Sie den Explorer-Bereich, wenn der Ordner &quot;An SCF Sandbox&quot;nicht angezeigt wird.
+1. Refresh the explorer pane if &quot;An SCF Sandbox&quot; folder does not appear.
 
-1. Kehren Sie zu CRXDE Lite zurück (http:// localhost:4502/crx/de) und erweitern Sie /etc/designs, um den Knoten &quot;an-scf-sandbox&quot;anzuzeigen.
+1. Return to CRXDE Lite (http:// localhost:4502/crx/de) and expand /etc/designs to see the node named &quot;an-scf-sandbox&quot;.
 
-   Im rechten unteren Bereich von CRXDE können Sie die Registerkarte Eigenschaften, die Registerkarte Zugriffskontrolle und die Registerkarte Replikation Ansicht haben, um zu sehen, was mit der Designseitenvorlage definiert wurde.
+   In the right, lower pane of CRXDE, you can view the Properties tab, Access Control tab and Replication tab to see what was defined using the Design Page Template.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![crxde-configure-template](assets/crxde-configure-template.png)
 
-## Content Directory (/content) einrichten {#setup-the-content-directory-content}
+## Set up the Content Directory (/content) {#setup-the-content-directory-content}
 
-Der Ordner &quot;/content&quot;im entsprechenden Ordner befindet sich dort, wo sich der Inhalt der Website befindet. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
+The /content directory in the respository is where the website content resides. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
 
-*Nachdem* die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt wurde, kann der anfängliche Seiteninhalt basierend auf der Vorlage erstellt werden.... [****](initial-app.md)
+*After* the [page template](initial-app.md#createthepagetemplate) is created as part of the initial application, the initial page content can be created based on the template.... [**⇒**](initial-app.md)
