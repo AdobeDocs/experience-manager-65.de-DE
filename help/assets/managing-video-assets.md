@@ -3,7 +3,7 @@ title: Verwalten Sie Video-Assets in [!DNL Adobe Experience Manager].
 description: Hochladen, Vorschau, Anmerkungen und Veröffentlichen von Video-Assets [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 37%
@@ -13,15 +13,15 @@ ht-degree: 37%
 
 # Verwalten von Video-Assets    {#manage-video-assets}
 
-Das Videoformat ist ein wichtiger Bestandteil digitaler Assets eines Unternehmens. [!DNL Adobe Experience Manager] Angebote bieten und verwalten den gesamten Lebenszyklus Ihrer Video-Assets nach deren Erstellung.
+Das Videoformat ist ein wichtiger Bestandteil digitaler Assets eines Unternehmens. [!DNL Adobe Experience Manager] angebote bieten und verwalten den gesamten Lebenszyklus Ihrer Video-Assets nach deren Erstellung.
 
 Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager Assets]. Also, if you are licensed to use [!DNL Dynamic Media], see the [Dynamic Media video documentation](/help/assets/video.md).
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn das Asset nicht im MP4-Format vorliegt, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videodarstellungen vom Typ OGG und MP4. You can preview the renditions in the [!DNL Assets] user interface.
+[!DNL Adobe Experience Manager Assets] generiert Vorschauen für Video-Assets mit der Erweiterung MP4. If the format of the asset is not MP4, install the FFmpeg pack to generate a preview. FFmpeg creates video renditions of type OGG and MP4. You can preview the renditions in the [!DNL Assets] user interface.
 
-1. Navigieren Sie im Ordner oder in den Unterordnern für digitale Assets zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
+1. In the digital assets folder or subfolders, navigate to the location where you want to add digital assets.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternativ können Sie sie direkt in den Assets-Bereich ziehen. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
@@ -79,16 +79,16 @@ Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Webseite
 
    Um den Anmerkungsassistenten zu schließen, klicken Sie auf **[!UICONTROL Schließen]**.
 
-1. Suchen Sie nach einem bestimmten Punkt im Video, indem Sie die Zeit in Sekunden in das **Textfeld** eingeben und auf **Springen** klicken. Um beispielsweise die ersten 10 Sekunden des Videos zu überspringen, geben Sie „20“ in das Textfeld ein.
+1. Suchen Sie nach einem bestimmten Punkt im Video, indem Sie die Zeit in Sekunden in das **Textfeld** eingeben und auf **Springen** klicken. Um beispielsweise die ersten 20 Sekunden des Videos zu überspringen, geben Sie „20“ in das Textfeld ein.
 
-   ![Suche nach einer Zeit in einem Video, um nach einer bestimmten Sekunde zu überspringen](assets/seek-in-video.png)
+   ![Seek to a time in a video to skip by specified seconds](assets/seek-in-video.png)
 
 1. Klicken Sie auf eine Anmerkung, um sie in der Zeitleiste anzuzeigen. Um die Anmerkung aus der Zeitleiste zu löschen, klicken Sie auf **[!UICONTROL Löschen]**.
 
-   ![Anmerkungen zur Ansicht und Details in der Zeitleiste](assets/timeline-view-annotation.png)
+   ![View annotations and the details in the timeline](assets/timeline-view-annotation.png)
 
 >[!MORELIKETHIS]
 >
->* [Digitale Assets in Experience Manager-Assets verwalten](/help/assets/managing-assets-touch-ui.md)
+>* [Manage digital assets in Experience Manager Assets](/help/assets/managing-assets-touch-ui.md)
 >* [Verwalten von Sammlungen in Experience Manager-Assets](/help/assets/managing-collections-touch-ui.md)
 
