@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '306'
+ht-degree: 96%
 
 ---
 
@@ -42,8 +42,9 @@ Weitere Informationen finden Sie in den folgenden Themen:
 * [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Bereitstellen von optimierten Bildern für eine responsive Site](/help/assets/responsive-site.md)
 * [Bereitstellung von Inhalt über HTTP/2 ](/help/assets/http2.md)
-* [Ungültigmachen von CDN-Inhalten](/help/assets/invalidate-cdn-cached-content.md)
+* [Invalidating your CDN cache by way of Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Verwenden von Regelsätzen zum Konvertieren von URLs](/help/assets/using-rulesets-to-transform-urls.md) 
+
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2    {#http-delivery-of-dynamic-media-assets}
 
