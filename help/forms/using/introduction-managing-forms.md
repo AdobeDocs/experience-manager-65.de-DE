@@ -10,25 +10,28 @@ topic-tags: introduction
 discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 8d352255ace00499412a21564f45f61f45060f4d
+workflow-type: tm+mt
+source-wordcount: '1593'
+ht-degree: 67%
 
 ---
 
 
-# Einführung in das Verwalten von Formularen{#introduction-to-managing-forms}
+# Einführung in das Verwalten von Formularen {#introduction-to-managing-forms}
 
-AEM Forms bietet eine vereinfachte und gleichzeitig leistungsstarke Benutzeroberfläche, in der Formular-Administratoren und -Entwickler Dokumente, Themen, Briefe Dokumentfragmente, Datenwörterbücher und damit zusammenhängende Assets erstellen und verwalten können. Es vereinfacht die Verwaltung des gesamten Formularzyklusvon Formularen, Dokumente und damit zusammenhängenden Assets – vom Desktop eines Entwicklers bis zur Bereitstellung auf einem  Portalserver für Endbenutzer. Sie können die Benutzeroberfläche von AEM Forms für folgende Vorgänge verwenden:
+AEM [!DNL Forms] provides simplified yet powerful user interface to create and manage forms, documents, themes, letters, document fragments, data dictionaries, and related assets. Es vereinfacht die Verwaltung des gesamten Formularzyklusvon Formularen, Dokumente und damit zusammenhängenden Assets – vom Desktop eines Entwicklers bis zur Bereitstellung auf einem  Portalserver für Endbenutzer. You can use the AEM [!DNL Forms] user interface to:
 
-* Auf AEM Forms-Komponenten zugreifen
-* Auf AEM Forms-Konfigurationen zugreifen 
+* Access AEM [!DNL Forms] components
+* Zugriff auf AEM [!DNL Forms] Konfigurationen
 
 >[!NOTE]
 >
->Detaillierte Informationen zu anderen AEM-Werkzeugen und -Optionen finden Sie unter [Authoring](/help/sites-authoring/author.md).
+>For detailed information about other AEM tools and options, see [Authoring](/help/sites-authoring/author.md).
 
 ## Auf AEM Forms-Komponenten zugreifen {#access-aem-forms-components}
 
-Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Asstes, zum Verwalten einer AEM-Instanz und mehr. You can click the ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager logo to navigate to all the available tools. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM Forms. To navigate to AEM Forms, click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) > Forms. Links der folgenden Konsolen werden angezeigt:
+Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Asstes, zum Verwalten einer AEM-Instanz und mehr. You can click the ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager logo to navigate to all the available tools. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM [!DNL Forms]. To navigate to AEM [!DNL Forms], click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) > **[!UICONTROL Forms]**. Links der folgenden Konsolen werden angezeigt:
 
 * Formulare und Dokumente
 * Designs
@@ -36,15 +39,15 @@ Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften
 * Dokumentfragmente
 * Datenwörterbücher
 
-![AEM Forms-Konsole](assets/aem_forms_console_new.png)
+   ![AEM Forms Console](assets/aem_forms_console_new.png)
 
 ### Formulare und Dokumente  {#forms-documents}
 
-Formulare und Dokumente bietet Optionen zum Erstellen einer interaktiven Kommunikation, adaptiven Formularen, adaptiven Formularfragmenten und Formularsätzen. Nur für AEM Forms on JEE bietet Formulare &amp; Dokumente eine Option zum Importieren von Dateien von lokalen Speicherorten und synchronisiert AEM Forms-Assets mit Workbench.
+Formulare und Dokumente bietet Optionen zum Erstellen einer interaktiven Kommunikation, adaptiven Formularen, adaptiven Formularfragmenten und Formularsätzen. Only for AEM [!DNL Forms] on JEE, Forms &amp; Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.
 
-Die Schaltfläche zum Erstellen ist der Startpunkt des Prozesses zur Erstellung oder zum Hochladen von AEM Forms-Assets. Sie bietet Ihnen Optionen zum Erstellen:
+The create button is the starting point of the process of creating or uploading AEM [!DNL Forms] asset. Sie bietet Ihnen Optionen zum Erstellen:
 
-* **Interaktive Kommunikation**: Eine interaktive Kommunikation ist eine personalisierte, interaktive und gerätefreundliche HTML-basierte digitale Korrespondenz, Aussage oder ein Dokument. Interaktive Kommunikationen sind responsiv, d. h., ihr Layout und Design passt sich automatisch an das Gerät und die Einstellungen des Benutzers an. Detaillierte Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md)
+* **Interactive Communication**: An Interactive Communication is a personalized, interactive, and device friendly HTML-based digital correspondence, statement, or document. Interaktive Kommunikationen sind responsiv, d. h., ihr Layout und Design passt sich automatisch an das Gerät und die Einstellungen des Benutzers an. Detaillierte Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md)
 
 * **Adaptives Formular:** Ein adaptives Formular ist ein ansprechendes und interaktives Formular. Sie können adaptive Formulare erstellen, die sich dynamisch an Benutzereingaben anpassen, indem Felder oder Abschnitte je nach Antwort, Gerät oder Arbeitsumgebung des Benutzers hinzugefügt oder entfernt werden. Weitere Informationen zu adaptiven Formularen finden Sie unter [Einführung zum Erstellen adaptiver Formulare](../../forms/using/introduction-forms-authoring.md).
 
@@ -52,29 +55,29 @@ Die Schaltfläche zum Erstellen ist der Startpunkt des Prozesses zur Erstellung 
 
 * **Formularsatz**: Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die zusammen gruppiert sind und als einzelner Formularsatz dem Endbenutzern präsentiert wird. Wenn der Benutzer ein Formularsatz ausfüllt, werden diese Informationen von einem Formular zu einem anderen übertragen. Am Ende kann ein Benutzer alle Formulare als einzelne Entität in nur einem Klick senden. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
-* **Ordner:** Die Benutzeroberfläche von AEM Forms verwendet Ordner zum Anordnen von Assets. Sie unterstützt zwei Typen von Ordnern:
+* **Ordner:**[!DNL Forms]Die Benutzeroberfläche von AEM verwendet Ordner zum Anordnen von Assets. Sie unterstützt zwei Typen von Ordnern:
 
-   * **Allgemeine Ordner:** Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von AEM Forms erstellt werden. Diese Ordner haben keine feste Ordnerstruktur. Sie können sie umbenennen, Unterordner erstellen und adaptive Formulare, interaktive Kommunikation adaptive Formularfragmente, Formularvorlagen (XDPs), PDF-Formulare, Dokumente und verwandte Assets in diesen Ordnern erstellen.
-   * **Workflow-Ordner von Forms**: Diese Ordner werden erstellt, wenn Workbench-Prozesse (LiveCycle-Archieve) mit der Benutzeroberfläche von AEM Forms migriert und synchronisiert werden. Sie dürfen sie nicht umbenennen, einen Unterordner erstellen, eine interaktive Kommunikation erstellen, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen. Es ist auch nicht zulässig, einen Versionsordner zu löschen oder ein adaptives Formular, ein adaptives Formularfragment oder eine interaktive Kommunikation parallel zum Versionsordner zu erstellen und hochzuladen.
+   * **Allgemeine Ordner:**[!DNL Forms]Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von AEM erstellt werden. Diese Ordner haben keine feste Ordnerstruktur. Sie können sie umbenennen, Unterordner erstellen und adaptive Formulare, interaktive Kommunikation adaptive Formularfragmente, Formularvorlagen (XDPs), PDF-Formulare, Dokumente und verwandte Assets in diesen Ordnern erstellen.
+   * **Workflow-Ordner von**[!DNL Forms]: Diese Ordner werden erstellt, wenn Workbench-Prozesse (LiveCycle-Archieve) mit der Benutzeroberfläche von AEM Forms migriert und synchronisiert werden. Sie dürfen sie nicht umbenennen, einen Unterordner erstellen, eine interaktive Kommunikation erstellen, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen. It is also not allowed to delete a version folder or create and upload an adaptive form, an adaptive form fragment, or an Interactive Communication in parallel to the version folder.
 
-![Ordner](assets/folders.png)
+   ![folders](assets/folders.png)
 
-******A. Allgemeiner Ordner** B. Ordner &quot;Forms Workflow&quot;
+   **A.** Allgemeiner Ordner **B.** Forms Workflow
 
 Der Formular &amp; Dokumente-Bereich bietet auch Optionen für Folgendes:
 
 * **Importieren von Dateien vom lokalen Speicherort:** Sie können PDF Formulare &amp; Dokumente importieren, Formularvorlagen (XFA-Formulare) und andere Ressourcen (Bild und XML-Schema für XSDs) importieren. Eine schrittweise Anleitung finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md).
-* **Syncchronisieren von AEM Forms-Assets mitWorkbench:** Sie können die Option „Dateien von Workbench“ verwenden, um Assets zwischen der Benutzeroberfläche von AEM Forms und Workbench zu synchronisieren. Das gewährleistet, dass alle Assets in der Benutzeroberfläche von AEM Forms und der CRX-Repository-Assetauswahl von Workbench vorhandne sind.
+* **Syncchronisieren von AEM Forms-Assets mitWorkbench:** Sie können die Option „Dateien von Workbench“ verwenden, um Assets zwischen der Benutzeroberfläche von AEM Forms und Workbench zu synchronisieren. It ensures all the assets are available in AEM [!DNL Forms] user interface and Workbench&#39;s crx-repository assets selection.
 
 ### Designs  {#themes}
 
-Zu einem Design gehört die Formatierung von Details für Komponenten und Bereiche. Design haben eine unabhängige Identität. Daher können Sie ein Design für mehrere adaptive Formulare wierverwenden. Sie können die Stile für eine Komponente festlegen oder CSS-Eigenschaften für die verschiedenen Komponenten in Ihrem Formular ändern. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz und Größe. Sie können Anpassungen in einem Design speichern und diese als Voreinstellung auf Komponenten des Formulars übertragen. Wenn Sie das Design zu einem Formular hinzufügen, bestimmt der festgelegte Stil die entsprechenden Komponenten des Formulars. Mit AEM Forms 6.2 können Sie Designs erstellen und sie dann auf Ihre Formulare anwenden.
+Zu einem Design gehört die Formatierung von Details für Komponenten und Bereiche. Design haben eine unabhängige Identität. Daher können Sie ein Design für mehrere adaptive Formulare wierverwenden. Sie können die Stile für eine Komponente festlegen oder CSS-Eigenschaften für die verschiedenen Komponenten in Ihrem Formular ändern. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz und Größe. Sie können Anpassungen in einem Design speichern und diese als Voreinstellung auf Komponenten des Formulars übertragen. Wenn Sie das Design zu einem Formular hinzufügen, bestimmt der festgelegte Stil die entsprechenden Komponenten des Formulars. With AEM 6.2 [!DNL Forms], you can create themes and apply them to your forms.
 
 Weitere Informationen finden Sie unter [Designs in AEM Forms](../../forms/using/themes.md).
 
 ### Briefe  {#letters}
 
-Ein AEM Forms-Brief ist ein sicheres, personalisiertes und interaktives Schriftstück. Sie können AEM Forms verwenden, um Briefe (auch als Schriftstück bekannt) von zuvor genehmigten und benutzerdefinierten Inhalten in einem vereinfachten Prozess zusammenzustellen.
+An AEM [!DNL Forms] letter is a secure, personalized, and interactive correspondence. You can use AEM [!DNL Forms] to quickly assemble letters (also known as correspondences) from both pre-approved and custom-authored content in a streamlined process.
 
 Weitere Informationen finden Sie unter [Erstellen von Briefen](../../forms/using/create-letter.md).
 
@@ -84,33 +87,33 @@ Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, 
 
 ### Datenwörterbücher {#data-dictionaries}
 
-In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstellungen wie XSD (XML-Schema) und Java-Klassen haben. Sie müssen allerdings in der Regel Zugriff auf diese Datenstrukturen und Attribute haben, um Lösungen erstellen zu können. Mit Datenwörterbücher sind die Benutzer in der Lage, Informationen aus Back-End-Datenquellen zu verwenden, ohne technische Details der zugrunde liegenden Datenmodelle zu kennen.
+In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstellungen wie XSD (XML-Schema) und Java-Klassen haben. Sie müssen allerdings in der Regel Zugriff auf diese Datenstrukturen und Attribute haben, um Lösungen erstellen zu können. AEM [!DNL Forms] uses data dictionary that enables business users to use information from back-end data sources without knowing technical details about their underlying data models.
 
 Detaillierte Informationen zum Erstellen und Verwenden von Datenwörterbüchern finden Sie unter [Erstellen von Datenwörterbüchern](../../forms/using/data-dictionary.md).
 
-## Zugriff auf AEM Forms-Konfigurationen {#accessing-aem-forms-configurations}
+## Accessing AEM [!DNL Forms] Configurations {#accessing-aem-forms-configurations}
 
-AEM Tools-Bereich enthält Tools für verschiedene Komponenten. To navigate to AEM Forms-specific tools, click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > tools ![hammer](assets/hammer.png) > Forms. Tools zum Durchführen folgender Funktionen werden angezeigt:
+AEM Tools-Bereich enthält Tools für verschiedene Komponenten. To navigate to AEM Forms-specific tools, click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > tools ![hammer](assets/hammer.png) > **[!UICONTROL Forms]**. Tools zum Durchführen folgender Funktionen werden angezeigt:
 
 * **Konfigurieren eines überwachten Ordners:** Ein Administrator kann einen Netzwerkordner konfigurieren, der als überwachter Ordner bezeichnet wird, sodass ein vorkonfigurierter Dienstvorgang zur Verarbeitung einer Datei gestartet wird, wenn ein Benutzer eine Datei (z. B. eine PDF-Datei) in diesem überwachten Ordner ablegt. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren eines überwachten Ordners](/help/forms/using/creating-configure-watched-folder.md).
-* **** Offline-Dienst für Forms App konfigurieren: Der Offlinedienst für die AEM Forms-App speichert die Pfade oder URLs der in einem Formular verwendeten Ressourcen zwischen. Durch das Zwischenspeichern der Pfa oder URLs der in einem Formular verwendeten Ressourcen wird die serverseitige Leistung verbessert. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
+* **Forms App Offline-Dienst konfigurieren:** Der Offlinedienst für die AEM [!DNL Forms] App speichert die Pfade oder URLs der in einem Formular verwendeten Ressourcen zwischen. Durch das Zwischenspeichern der Pfa oder URLs der in einem Formular verwendeten Ressourcen wird die serverseitige Leistung verbessert. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
 
-![AEM Forms-Tools](assets/aem_forms_tools_new.png)
+   ![AEM Forms-Werkzeuge](assets/aem_forms_tools_new.png)
 
-* **Konfigurieren von PDF Generator:** Ein Administrator kann AEM Forms PDF Generator-Einstellungen konfigurieren, Benutzerkonten hinzufügen und Konfiguration in PDF Generator importieren oder exportieren. 
-* **Correspondence Management-Assets veröffentlichen:** Mit AEM Forms können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autorinstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. For detailed information, see [Publishing and unpublishing forms &amp; documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Exportieren von Correspondence Management-Assets:** Verwenden Sie diese Option, um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket aus einer AEM Forms-Instanz herunterzuladen. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Konfigurieren von PDF Generator:**[!DNL Forms] Ein Administrator kann AEM PDF Generator-Einstellungen konfigurieren, Benutzerkonten hinzufügen und Konfiguration in PDF Generator importieren oder exportieren. 
+* **Correspondence Management-Assets veröffentlichen:**[!DNL Forms] Mit AEM können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autorinstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. For detailed information, see [Publishing and unpublishing forms &amp; documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Export Correspondence Management Assets:** You can download all the Correspondence Management assets and related dependencies as a package from an AEM [!DNL Forms] instance. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Häufige Elemente der Benutzeroberfläche {#commonelements}
 
-* **** Linke Leiste: Sie können auf das Symbol für die linke Leiste ![klicken, um die Funktionen für Zeitschiene und Referenzen in AEM Forms anzuzeigen](assets/railleftpng.png) .
+* **Left rail:** You can click the left rail icon ![railleftpng](assets/railleftpng.png) to reveal Timeline and References capabilities of AEM [!DNL Forms].
 
    * **Zeitleiste:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Zeitleiste verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](../../forms/using/create-reviews-forms.md).
-   * **Referenzen:** Ein AEM Forms-Asset kann in mehreren AEM Forms-Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. Referenzen sind eine Liste der Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, sowie eine Liste der anderen Assets, die das ausgewählte Asset verwendet.
+   * **References:** An AEM [!DNL Forms] asset can be used in multiple AEM [!DNL Forms] assets. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. Referenzen sind eine Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, sowie die Liste anderer Assets, die das ausgewählte Asset verwendet.
 
 * **Breadcrumbs:** Ein Breadcrumb gibt den Titel der aktuellen Konsole oder des Ordners an. Sie können auf die Breadcrumb-Option klicken, um zwischen den Ordnerebenen, die höher in der Hierarchie sind, zu navigieren.
-* **** Switch anzeigen: Sie können auf die ![Viewlist](assets/viewlist.png) oder ![Viewcard](assets/viewcard.png) für das Symbol &quot;Switch anzeigen&quot;klicken, um schnell zwischen Listen- und Kartenansicht zu wechseln. Weitere Informationen zu allgemeinen Komponenten der Benutzeroberfläche finden Sie unter [Authoring](/help/sites-authoring/author.md).
-* **** Suchen: Die ![Suche](assets/search.png) mit den Suchoptionen bietet die Möglichkeit, schnell die benötigten Inhalte und Werkzeuge zu finden und zu finden. Geben Sie den Namen des Inhalts oder Produkts ein und wählen Sie aus den Vorschlägen, geben Sie z. B. „Dokumente“ ein, um Formulare und Dokumente oder Dokumentfragmente schnell zu suchen. Weitere Informationen zu  finden Sie im AEM 6.2-Artikel [Suche](/help/sites-authoring/search.md)
+* **Ansicht Switcher:** Sie können auf das Symbol &quot;Ansicht-Switcher&quot; ![viewlist](assets/viewlist.png) oder ![viewcard](assets/viewcard.png) klicken, um schnell zwischen Liste und Ansicht zu wechseln. Weitere Informationen zu allgemeinen Komponenten der Benutzeroberfläche finden Sie unter [Authoring](/help/sites-authoring/author.md).
+* **Suchen:** Die ![Suche](assets/search.png) mit den Suchoptionen bietet die Möglichkeit, schnell die benötigten Inhalte und Werkzeuge zu finden und zu finden. Type the name of content or product capability and select from the suggestions, for example, type &quot;Documents&quot; to quickly find and navigate to **[!UICONTROL Forms &amp; Documents]** or Document Fragments console. Weitere Informationen zu  finden Sie im AEM 6.2-Artikel [Suche](/help/sites-authoring/search.md)
 
 * **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt. Sie enthält alle Management-Tools für das ausgewählte Asset. Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
 
@@ -120,7 +123,6 @@ AEM Tools-Bereich enthält Tools für verschiedene Komponenten. To navigate to A
 
 * **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt. Sie enthält alle Management-Tools für das ausgewählte Asset. Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
 
-![Aktionssymbolleiste für ein adaptives Formular](assets/action_toolbar_new.png)
+   ![Aktionssymbolleiste für ein adaptives Formular](assets/action_toolbar_new.png)
 
-Aktionssymbolleiste für ein adaptives Formular
-
+   Aktionssymbolleiste für ein adaptives Formular
