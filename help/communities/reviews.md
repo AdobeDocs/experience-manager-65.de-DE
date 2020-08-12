@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Bewertungen und Bewertungszusammenfassung (Anzeige)
 seo-title: Verwenden von Bewertungen und Bewertungszusammenfassung (Anzeige)
-description: Hinzufügen der Komponenten "Review and Reviews Summary"zu einer Seite
+description: Adding the Reviews and Reviews Summary components to a page
 seo-description: Hinzufügen der Komponenten "Review and Reviews Summary"zu einer Seite
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
 contentOwner: Guillaume Carlino
@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 39%
 
 ---
 
@@ -32,23 +35,23 @@ Wenn Sie einer Seite im Autorenmodus eine `Reviews` Komponente hinzufügen möch
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews`component will appear.
+When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews` component will appear.
 
-![chlimage_1-340](assets/chlimage_1-340.png)
+![create-review](assets/create-review.png)
 
 ## Konfigurieren von Bewertungen {#configuring-reviews}
 
 Select the placed `Reviews` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![configure-new](assets/configure-new.png)
 
 Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of ratings to be shown to members. The first rating should be an overall/general rating, as it is the rating which provides the average rating for the `Review Summary (Display)` component. Die nächsten beiden Ratings in der Standardkonfiguration sollten einen anderen Titel erhalten als &quot;Unterbewertung 1&quot;oder &quot;Unterbewertung 2&quot;.
 
-![chlimage_1-342](assets/chlimage_1-342.png)
+![allowed-rating](assets/configure-review1.png)
 
 * **[!UICONTROL Zulässige Bewertungen]**
 
-   Eine Liste von Ratings, aus denen ein Mitglied wählen kann.
+   A list of ratings from which a member can choose.
 
     Verwenden Sie die Schaltflächen zur Bearbeitung der angezeigten Auswahl (Pfeil nach oben, Pfeil nach unten und Schaltfläche zum Löschen).
 
@@ -58,11 +61,11 @@ Under the **[!UICONTROL Required Ratings]** tab, re-enter items from the list of
 
 Auf der Webseite werden erforderliche Bewertungen durch einen Stern gekennzeichnet. Ist die Bewertung eines Elements erforderlich, das jedoch nicht bewertet wurde, erhält das Mitglied eine Meldung und kann das Formular erst absenden, wenn das erforderliche Element bewertet wurde.
 
-![chlimage_1-343](assets/chlimage_1-343.png)
+![required-rating](assets/configure-review2.png)
 
 * **[!UICONTROL Erforderliche Bewertungen]**
 
-   Eine Untergruppe zulässiger Ratings, die angibt, welche Ratings erforderlich sind.
+   A subset of allowed ratings, indicating which ratings are required.
 
     Verwenden Sie die Schaltflächen zur Bearbeitung der angezeigten Auswahl (Pfeil nach oben, Pfeil nach unten und Schaltfläche zum Löschen).
 
@@ -75,7 +78,7 @@ Auf der Webseite werden erforderliche Bewertungen durch einen Stern gekennzeichn
 
 Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
-![chlimage_1-344](assets/chlimage_1-344.png)
+![Bewertungen](assets/configure-review3.png)
 
 * **[!UICONTROL Antworten zulassen]**
 
@@ -91,7 +94,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **Max. Dateigröße **
 
-   Relevant nur, wenn &quot;Datei-Uploads **[!UICONTROL zulassen]** &quot;aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 10 MB.
+   Relevant nur, wenn &quot;Datei-Uploads **[!UICONTROL zulassen]** &quot;aktiviert ist. This field limits the size (in bytes) of an uploaded file. Der Standardwert ist 10 MB.
 
 * **[!UICONTROL Maximale Nachrichtenlänge]**
 
@@ -103,7 +106,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
-   Wenn diese Option aktiviert ist, können Beiträge mit Markup eingegeben werden. Diese Option ist standardmäßig deaktiviert.
+   If checked, posts may be entered with markup. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
 
@@ -111,11 +114,11 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
-![chlimage_1-345](assets/chlimage_1-345.png)
+![user-moderation](assets/configure-review4.png)
 
 * **[!UICONTROL Vor der Moderation]**
 
-   Wenn diese Option aktiviert ist, müssen Überprüfungen genehmigt werden, bevor sie auf einer Veröffentlichungssite angezeigt werden. Diese Option ist standardmäßig deaktiviert.
+   If checked, reviews must be approved before they will appear on a publish site. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Bewertungen löschen]**
 
@@ -147,7 +150,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 * **[!UICONTROL Kennzeichnungslimit]**
 
-   Geben Sie an, wie oft eine Überprüfung markiert werden muss, bevor sie aus der öffentlichen Ansicht ausgeblendet wird. Dieser Wert muss größer als der oder gleich dem **[!UICONTROL Schwellenwert für Moderation]** sein. Der Standardwert ist 5.
+   Enter the number of times a review has to be flagged before it is hidden from public view. Dieser Wert muss größer als der oder gleich dem **[!UICONTROL Schwellenwert für Moderation]** sein. Der Standardwert ist 5.
 
 ### Hinzufügen einer Bewertungszusammenfassung (Anzeige) zu einer Seite {#adding-a-review-summary-display-to-a-page}
 
@@ -161,7 +164,7 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews Summary (Display)`component will appear.
 
-![chlimage_1-346](assets/chlimage_1-346.png)
+![review-summary](assets/configure-review5.png)
 
 >[!NOTE]
 >
@@ -172,15 +175,15 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 
 Select the placed `Reviews Summary (Display)` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![konfigurieren](assets/configure-new.png)
 
 Auf der Registerkarte **[!UICONTROL Bewertungszusammenfassung]** können Sie Folgendes festlegen:
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![review-summary](assets/configure-review6.png)
 
 * `Review Path`
 
-   Geben Sie die platzierte Instanz der `reviews`Komponente ein oder suchen Sie nach dieser, um sie zusammenzufassen, wenn sie der Webseite der [Geometrixx-Engage-Site hinzugefügt wird. Der Pfad lautet beispielsweise](getting-started.md) :
+   Geben Sie die platzierte Instanz der `reviews`Komponente ein oder navigieren Sie zu dieser, um sie zusammenzufassen. Wenn Sie sie der Webseite der [Geometrixx Engage-Site hinzufügen,](getting-started.md) lautet der Pfad:
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -196,9 +199,9 @@ Durch Änderung des Kommentarressourcentyps generiert das Kommentarsystem nicht 
 
 Once the custom resource types is known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Comments` component to open a dialog with an additional tab.
 
-Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![comments-stimmberechtigt](assets/configure-review7.png)
 
 * **[!UICONTROL Kommentarressourcentyp]**
 
@@ -210,7 +213,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
    Navigieren Sie zum resourceType einer erweiterten `voting`Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`.
 
-   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wird, wenn ein Besucher eine Abstimmung veröffentlicht.
+   This resource will identify the resource type of the UGC created when a visitor posts a vote.
 
 * **[!UICONTROL System-Ressourcen-Typ kommentieren]**
 
@@ -224,12 +227,12 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 ### Mitglieder {#members}
 
-Abhängig von der Konfiguration können angemeldete Besucher Folgendes tun:
+When the site visitor is signed in, depending on the configuration, they may:
 
-* Posten Sie eine neue Überprüfung.
-* Bearbeiten Sie den eigenen Review.
-* Löschen Sie ihren eigenen Review.
-* Markieren Sie die Review-Kommentare anderer.
+* Eine neue Überprüfung posten
+* Eigene Prüfung bearbeiten
+* Eine eigene Überprüfung löschen
+* Kommentare zur Überprüfung anderer Personen kennzeichnen
 
 Pro Mitglied ist nur eine Bewertung zulässig.  Das Mitglied kann seine Meinung jedoch jederzeit ändern.
 
