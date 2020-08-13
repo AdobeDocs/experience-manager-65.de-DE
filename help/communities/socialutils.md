@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 1429a099288f038510cb0a194fb55632297ef371
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 Das Paket `com.adobe.cq.social.ugcbase.SocialUtils` wurde in AEM 6.1 nicht mehr unterstützt.
 
-In den folgenden Tabellen werden die Methoden Liste, die anstelle der SocialUtils-Methoden verwendet werden sollen.
+In den folgenden Tabellen werden die Methoden Liste, die anstelle von `SocialUtils` Methoden zu verwenden sind.
 
-## SocialResourceUtilities-Paket {#socialresourceutilities-package}
+## SocialResourceUtilities-Paket  {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -36,18 +39,18 @@ In den folgenden Tabellen werden die Methoden Liste, die anstelle der SocialUtil
 | Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | boolean hasModeratePermissions(Resource resource) |  |
 | String resourceToACLPath(Resource resource) |  |
-| String resourceToUGCStoragePath(Resource resource) | ersetzt String resourceToUGCPath(Resource resource) |
+| String resourceToUGCStoragePath(Resource resource) | replaces String resourceToUGCPath(Resource resource) |
 | String UGCToResourcePath(Resource resource) |  |
-| String UGCToResourcePath(String ugcPath) | Methodenunterschrift geändert |
+| String UGCToResourcePath(String ugcPath) | method signature changed |
 | String UGCToResourcePath(String ugcPath, ResourceResolver resolver) | new |
 
-| Methoden in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
+| Methods in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
-| SocialResourceProvider getSocialResourceProvider(Resource resource) | ersetzt SocialResourceProvider getConfigurationProvider(Resource resource) |
+| SocialResourceProvider getSocialResourceProvider(Resource resource) | replaces SocialResourceProvider getConfiguredProvider(Resource resource) |
 
-## SCFUtilities-Paket {#scfutilities-package}
+## SCFUtilities Package {#scfutilities-package}
 
-| Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
+| Methods in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
 | String getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, int size) |
