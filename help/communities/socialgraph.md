@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 1429a099288f038510cb0a194fb55632297ef371
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 26%
 
 ---
 
@@ -33,7 +36,7 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](essentials-socialgraph.md#essentials-for-client-side) are included, this is how the `Following` component will appear:
 
-![chlimage_1-447](assets/chlimage_1-447.png)
+![folgende](assets/following.png)
 
 ## Konfigurieren von Folgenden {#configuring-following}
 
