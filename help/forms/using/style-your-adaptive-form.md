@@ -8,10 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 71%
+source-wordcount: '2069'
+ht-degree: 65%
 
 ---
 
@@ -26,7 +26,7 @@ Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives 
 
 ## Über die Schulung  {#about-the-tutorial}
 
-Sie können Themen verwenden, um einem adaptiven Formular eine eindeutige Darstellung und einen einzigartigen Stil zu geben. Sie können Standarddesigns anwenden, die mit dem adaptiven Formulareditor bereitgestellt werden, oder eigene Designs erstellen. AEM Forms bietet einen [Design-Editor zum Erstellen benutzerdefinierter Designs](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html). Ein einzelnes Design kann das gleiche Aussehen auf Mobilgeräten, Tablets oder Desktops bieten. Vorkenntnisse von CSS oder LESS sind nicht erforderlich, um den Designeditor zu verwenden, aber sie sind erwünscht.
+Sie können Themen verwenden, um einem adaptiven Formular eine eindeutige Darstellung und einen einzigartigen Stil zu geben. Sie können Standarddesigns anwenden, die mit dem adaptiven Formulareditor bereitgestellt werden, oder eigene Designs erstellen. AEM [!DNL Forms] provide a [theme editor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) to create custom themes. Ein einzelnes Design kann das gleiche Aussehen auf Mobilgeräten, Tablets oder Desktops bieten. Vorkenntnisse von CSS oder LESS sind nicht erforderlich, um den Designeditor zu verwenden, aber sie sind erwünscht.
 
 Am Ende der Schulung lernen Sie Folgendes: 
 
@@ -55,16 +55,16 @@ Der Adaptive Forms Editor bietet mehrere Standarddesigns. Wenn Sie beabsichtigen
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-1. Öffnen Sie die Eigenschaften von **Adaptive Form - Container**. Navigieren Sie im Eigenschaften-Browser zu **Standard** > **Adaptives Formulardesign**. Das Feld **Adaptives Formulardesign** listet alle vordefinierten und benutzerdefinierten Designs auf. Standardmäßig wird das Canvas-Design angewendet.
-1. Wählen Sie ein Design aus dem Feld **Adaptives Formulardesign**. Zum Beispiel: **Umfragedesign**. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um das ausgewählte Design anzuwenden.
+1. Öffnen Sie die Eigenschaften von **[!UICONTROL Adaptive Form - Container]**. Navigieren Sie im Eigenschaften-Browser zu **[!UICONTROL Standard]** > **[!UICONTROL Adaptives Formulardesign]**. Das Feld **[!UICONTROL Adaptives Formulardesign]** listet alle vordefinierten und benutzerdefinierten Designs auf. Standardmäßig wird das Canvas-Design angewendet.
+1. Wählen Sie ein Design aus dem Feld **[!UICONTROL Adaptives Formulardesign]**. Zum Beispiel: **Umfragedesign**. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um das ausgewählte Design anzuwenden.
 
-![Adaptives Formular mit dem Standarddesign](assets/default-adaptive-form.png)
+   ![Adaptives Formular mit dem Standarddesign](assets/default-adaptive-form.png)
 
-**Abbildung:** *Adaptives Formular mit dem Standarddesign*
+   **Abbildung:** *Adaptives Formular mit dem Standarddesign*
 
-![Adaptives Formular mit dem Umfragedesign](assets/adaptive-form-with-survey-theme.png)
+   ![Adaptives Formular mit dem Umfragedesign](assets/adaptive-form-with-survey-theme.png)
 
-**Abbildung:** *Adaptives Formular mit dem Thema Umfrage*
+   **Abbildung:** *Adaptives Formular mit dem Thema Umfrage*
 
 ## Schritt 2: Aktualisieren Sie Ihr adaptives Formular {#step-update-your-adaptive-form}
 
@@ -76,20 +76,20 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Tap logo image in the header component and tap ![cmppr](assets/cmppr.png) properties. Tippen Sie in der Bildeigenschaft auf X, um das vorhandene Logobild zu entfernen.
-   1. Tap upload, select the logo.png, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) to save the changes. The image was downloaded in the [Before you start](/help/forms/using/style-your-adaptive-form.md#before-you-start) section.
-   1. Tippen Sie auf Kopfzeilentext `We.Retail`und dann auf ![aem_6_3_edit](assets/aem_6_3_edit.png) , **edit**. Ändern Sie den Kopfzeilentext in `we retail`. Wenden Sie fett formatierte Formatierungen nur `we`in an `we retail`.
+   1. Tap logo image in the [!UICONTROL header] component and tap ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. In the [!UICONTROL image] property, tap X to remove the existing logo image.
+   1. Tippen Sie auf **[!UICONTROL Hochladen]**, wählen Sie die Datei logo.png und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um die Änderungen zu speichern. The image was downloaded in the [Before you start](/help/forms/using/style-your-adaptive-form.md#before-you-start) section.
+   1. Tippen Sie auf Kopfzeilentext `We.Retail`und dann auf ![aem_6_3_edit](assets/aem_6_3_edit.png) , **[!UICONTROL edit]**. Ändern Sie den Kopfzeilentext in `we retail`. Wenden Sie fett formatierte Formatierungen nur `we`in an `we retail`.
 
-   ![we-retail-logo-text](assets/we-retail-logo-text.png)
+      ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Entfernen Sie Titel und fügen Sie Platzhaltertext hinzu:
 
    1. Tap the Customer ID field and tap ![cmppr](assets/cmppr.png) properties.
-   1. Kopieren Sie den Inhalt des Felds **Titel** in das Feld **Platzhaltertext**.
-   1. Löschen Sie den Inhalt des Felds **Titel** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Kopieren Sie den Inhalt des Felds **[!UICONTROL Titel]** in das Feld **[!UICONTROL Platzhaltertext]**.
+   1. Delete the content of the **[!UICONTROL Title]** field and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Wiederholen Sie die vorherigen drei Schritte für alle Textfelder, das numerische Feld und das E-Mail-Feld im Formular.
 
-   ![updated-adaptive-form](assets/updated-adaptive-form.png)
+      ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
 ## Schritt 3: Erstellen Sie ein benutzerdefiniertes Design für Ihr adaptives Formular {#step-create-a-custom-theme-for-your-adaptive-form}
 
@@ -101,17 +101,17 @@ In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Kompone
 
 ### Designs erstellen {#create-a-theme}
 
-1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** > **Forms** > **Themes**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Design]**. Die Seite „Design erstellen“ mit den Feldern zum Erstellen eines Designs wird angezeigt. Die Felder „Titel“ und „Name“ sind obligatorisch.
+1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Themes]**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Design]**. The [!UICONTROL Create Theme] page with the fields required to create a theme appears. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
 
-   * **Titel:** Geben Sie einen Titel des Designs an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
+   * **Title:** Specify a title of the theme. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
    * **Name:** Geben Sie den Namen des Designs an. Zum Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
 
-1. Tippen Sie auf **Erstellen**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tap **Open** to open the newly created theme in a new tab. Design wird im Design-Editor geöffnet. Zum Formatieren verwendet der Design-Editor ein Standardformular, das mit AEM Forms geliefert wird.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tap **[!UICONTROL Open]** to open the newly created theme in a new tab. Design wird im Design-Editor geöffnet. For styling, the theme editor uses an out-of-the-box adaptive form shipped with AEM [!DNL Forms].
 
    For information about using theme editor UI, see [About the theme editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Tap **Theme Options** ![theme-options](assets/theme-options.png) > **Configure**. In the **Preview Form** field, select the **shipping-address-add-update-form** adaptive form, tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), tap **Save**. Jetzt ist der Design-Editor konfiguriert, um Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars zu benutzen. Tippen Sie auf **Abbrechen**, um zum Design-Editor zurückzukehren.
+1. Tap **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In the **[!UICONTROL Preview Form]** field, select the **shipping-address-add-update-form** adaptive form, tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), tap **[!UICONTROL Save]**. Jetzt ist der Design-Editor konfiguriert, um Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars zu benutzen. Tippen Sie auf **[!UICONTROL Abbrechen]**, um zum Design-Editor zurückzukehren.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -125,9 +125,9 @@ In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Kompone
 
 Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwechselbares Aussehen. Im Allgemeinen enthält die Kopfzeile das Logo und den Namen der Organisation. Die Fußzeile enthält Copyright-Informationen, die in allen Formularen einer Organisation identisch bleiben. So formatieren Sie Kopf- und Fußzeile des adaptiven Formulars „shipping-address-add-update-form adaptive form“:
 
-1. Navigieren Sie im Bereich „Auswahl“ zur Option **Kopfzeile** > **Text**. Der Bereich „Auswahl“ befindet sich auf der linken Seite des Design-Editors. If the panel is not visible, tap ![toggle-side-panel](assets/toggle-side-panel.png) Toggle Side Panel.
+1. Navigieren Sie im Bereich „Auswahl“ zur Option **[!UICONTROL Kopfzeile]** > **[!UICONTROL Text]**. Der Bereich „Auswahl“ befindet sich auf der linken Seite des Design-Editors. If the panel is not visible, tap ![toggle-side-panel](assets/toggle-side-panel.png) Toggle Side Panel.
 
-1. Set the following properties in the **Text** accordion and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Set the following properties in the **[!UICONTROL Text]** accordion and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschaft | Wert |
    |---|---|
@@ -135,10 +135,10 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
    | Schriftfarbe | FFFFFF |
    | Schriftgrad | 54px |
 
-1. Tippen Sie auf das Kopfzeilen-Widget und tippen Sie auf **Kopfzeile**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie das Akkordeon **Dimensionen und Position** , legen Sie die **Höhe** auf `120px`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Erweitern Sie das Akkordeon „Hintergrund“-des Kopfzeilen-Widgets und stellen Sie die **Hintergrundfarbe** auf `F6921E.` ein.
+1. Tap the [!UICONTROL header] widget and tap **[!UICONTROL Header]**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Expand the **[!UICONTROL Dimensions &amp; Position]** accordion, set the **[!UICONTROL Height]** to `120px`, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Expand the **[!UICONTROL Background]** accordion of the header widget, set the **[!UICONTROL Background Color]** to `F6921E.`
 
-   Hover over **Image &amp; Gradient** > **+ Add**, tap **Image**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Hover over **[!UICONTROL Image &amp; Gradient]** > **[!UICONTROL + Add]**, tap **[!UICONTROL Image]**. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschaft | Wert |
    |---|---|
@@ -146,93 +146,93 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
    | Position | Rechts unten |
    | Anordnung | Keine Wiederholung |
 
-1. Tippen Sie im Design-Editor auf das Logo in der Kopfzeile und tippen Sie auf **Kopfzeilen-Logo**. Expand the Dimensions &amp; Position accordion, set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie im Design-Editor auf das Logo in der Kopfzeile und tippen Sie auf **[!UICONTROL Kopfzeilen-Logo]**. Expand the Dimensions &amp; Position accordion, set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Marge</td> 
-   <td>Wert</td> 
-  </tr> 
-  <tr> 
-   <td>Marge</td> 
-   <td> 
-    <ul> 
-     <li>Oben: 1.5rem</li> 
-     <li>Unten: -35px</li> 
-     <li>Links: 1rem<strong><br /> </strong></li> 
-    </ul> <p><strong>Tipp:</strong> Tippen Sie auf das Link-Symbol<img src="assets/link.png">, um einen anderen Wert für jedes Feld zur Verfügung zu stellen.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td>Höhe</td> 
-   <td>4.75rem</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Marge</b></td> 
+      <td><b>Wert</b></td> 
+     </tr> 
+     <tr> 
+      <td>Marge</td> 
+      <td> 
+       <ul> 
+        <li>Oben: 1.5rem</li> 
+        <li>Unten: -35px</li> 
+        <li>Links: 1rem<strong><br /> </strong></li> 
+       </ul> <p><strong>Tipp:</strong> Tippen Sie auf das Link-Symbol<img src="assets/link.png">, um einen anderen Wert für jedes Feld zur Verfügung zu stellen.<br /> </p> </td> 
+     </tr> 
+     <tr> 
+      <td>Höhe</td> 
+      <td>4.75rem</td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-1. Tippen Sie auf das Fußzeilen-Widget und tippen Sie auf **Fußzeile**. Erweitern Sie das Akkordeon &quot; **Hintergrund** &quot;, legen Sie die **Hintergrundfarbe** auf `F6921E`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf das Fußzeilen-Widget und tippen Sie auf **[!UICONTROL Fußzeile]**. Expand the **[!UICONTROL Background]** accordion, set the **[!UICONTROL Background Color]** to `F6921E`, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Formatieren Sie die Datenerfassungskomponente und wenden Sie einen Hintergrund auf das adaptive Formular an.{#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen. Zum Beispiel Textfeld und Zahlenfeld. Sie können für alle Datenerfassungskomponenten denselben Stil oder für jede Komponente einen separaten Stil bereitstellen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Lieferadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
-1. Tippen Sie auf das Feld „Kunden-ID“ und tippen Sie auf die Option **Feld-Widget** Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tap the **[!UICONTROL Customer ID]** field and tap the **[!UICONTROL Field Widget]** option. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordion</td> 
-   <td>Eigenschaft</td> 
-   <td>Wert</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenfarbe</td> 
-   <td>A7A9AC</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenradius </td> 
-   <td> 
-    <ul> 
-     <li>Oben: 7px<br /> </li> 
-     <li>Rechts: 7px<br /> </li> 
-     <li>Unten: 7px<br /> </li> 
-     <li>Links: 7px<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftfamilie</td> 
-   <td>Arial</td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftfarbe</td> 
-   <td>939598<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftgrad</td> 
-   <td>18px</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Breite</td> 
-   <td>60%</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Marge</td> 
-   <td> 
-    <ul> 
-     <li>Links: 10rem</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordion</b></td> 
+      <td><b>Eigenschaft</b></td> 
+      <td><b>Wert</b></td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenfarbe</td> 
+      <td>A7A9AC</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenradius </td> 
+      <td> 
+       <ul> 
+        <li>Oben: 7px<br /> </li> 
+        <li>Rechts: 7px<br /> </li> 
+        <li>Unten: 7px<br /> </li> 
+        <li>Links: 7px<br /> </li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftfamilie</td> 
+      <td>Arial</td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftfarbe</td> 
+      <td>939598<br /> </td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftgrad</td> 
+      <td>18px</td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Breite</td> 
+      <td>60%</td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Marge</td> 
+      <td> 
+       <ul> 
+        <li>Links: 10rem</li> 
+       </ul> </td> 
+     </tr> 
+    </tbody> 
+    </table>
 
-1. Tippen Sie auf den leeren Bereich über dem Feld Kunden-ID und tippen Sie auf **Responsive Bereichscontainer**. Legen Sie den **Hintergrund** > **Hintergrundfarbe** auf F1F2F2 fest. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tap on the empty area above the **[!UICONTROL Customer ID]** field and tap **[!UICONTROL Responsive Panel Container]**. Legen Sie den **[!UICONTROL Hintergrund]** > **[!UICONTROL Hintergrundfarbe]** auf F1F2F2 fest. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![](do-not-localize/responsive-panel-container.png)
 
@@ -240,53 +240,53 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
 
 You can use a custom theme to apply an identical style to all the buttons of the adaptive form and [inline styling](/help/forms/using/inline-style-adaptive-forms.md) to apply a style to a specific button. So gestalten Sie die Schaltflächen:
 
-1. Tippen Sie auf **Senden** und dann auf **Option**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Option]**. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordion</td> 
-   <td>Eigenschaft</td> 
-   <td>Wert</td> 
-  </tr> 
-  <tr> 
-   <td>Hintergrund</td> 
-   <td>Hintergrundfarbe</td> 
-   <td>F6921E</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen<br /> </td> 
-   <td>Rahmenfarbe</td> 
-   <td>F6921E</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenradius </td> 
-   <td> 
-    <ul> 
-     <li>Oben: 7px<br /> </li> 
-     <li>Rechts: 7px<br /> </li> 
-     <li>Unten: 7px<br /> </li> 
-     <li>Links: 7px </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Text<br /> </td> 
-   <td>Schriftfamilie</td> 
-   <td>Arial</td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftfarbe</td> 
-   <td>FFFFFF</td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftgrad</td> 
-   <td>18px</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordion</b></td> 
+      <td><b>Eigenschaft&lt;/b</td> 
+      <td><b>Wert</b></td> 
+     </tr> 
+     <tr> 
+      <td>Hintergrund</td> 
+      <td>Hintergrundfarbe</td> 
+      <td>F6921E</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen<br /> </td> 
+      <td>Rahmenfarbe</td> 
+      <td>F6921E</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenradius </td> 
+      <td> 
+       <ul> 
+        <li>Oben: 7px<br /> </li> 
+        <li>Rechts: 7px<br /> </li> 
+        <li>Unten: 7px<br /> </li> 
+        <li>Links: 7px </li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Text<br /> </td> 
+      <td>Schriftfamilie</td> 
+      <td>Arial</td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftfarbe</td> 
+      <td>FFFFFF</td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftgrad</td> 
+      <td>18px</td> 
+     </tr> 
+    </tbody> 
+   </table>
 
 1. [Wenden Sie das benutzerdefinierte Design](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form), Globales Design, auf Ihr adaptives Formular an. Wenn der Stil nicht im adaptiven Formular übernommen wird, löschen Sie den Browser-Cache und versuchen Sie es erneut.
 
@@ -297,162 +297,163 @@ You can use a custom theme to apply an identical style to all the buttons of the
 Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werden im adaptiven Formulareditor gestaltet.
 
 1. Öffnen Sie Ihr adaptives Formular zum Bearbeiten. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
-1. Wählen Sie in der oberen Leiste die Option **Stil**.
+1. Wählen Sie in der oberen Leiste die Option **[!UICONTROL Stil]**.
 
    ![style-option](assets/style-option.png)
 
-1. Tap the **Attach** button and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Set the following properties in the **Dimensions and Position** accordion:
+1. Tap the **[!UICONTROL Attach]** button and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Set the following properties in the **[!UICONTROL Dimensions and Position]** accordion:
 
    | Eigenschaft | Wert |
    |---|---|
    | Gleitkomma | Links |
    | Breite | 10% |
 
-1. Tap the **Government approved address proof** option and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Legen Sie die folgenden Eigenschaften fest:
+1. Tap the **[!UICONTROL Government approved address proof]** option and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png)icon. Legen Sie die folgenden Eigenschaften fest:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordion</td> 
-   <td>Eigenschaft</td> 
-   <td>Wert</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Gleitkomma</td> 
-   <td>Links</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Breite</td> 
-   <td>73%</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Erweiterte Umrandung</td> 
-   <td> 
-    <ul> 
-     <li>Links: 10px</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Höhe</td> 
-   <td>40px</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position<br /> </td> 
-   <td>Marge</td> 
-   <td><br /> 
-    <ul> 
-     <li>Rechts: 2rem</li> 
-     <li>Links: 10rem </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Hintergrund</td> 
-   <td>Hintergrundfarbe</td> 
-   <td>FFFFFF</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenbreite</td> 
-   <td>1px</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenstil</td> 
-   <td>Durchgezogen</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenfarbe</td> 
-   <td>A7A9AC</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenradius</td> 
-   <td>7px</td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftfamilie</td> 
-   <td>Arial</td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftfarbe</td> 
-   <td>BCBEC0</td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Schriftgrad</td> 
-   <td>18px</td> 
-  </tr> 
-  <tr> 
-   <td>Text</td> 
-   <td>Zeilenhöhe</td> 
-   <td>2</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordion</b></td> 
+      <td><b>Eigenschaft</b></td> 
+      <td><b>Wert</b></td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Gleitkomma</td> 
+      <td>Links</td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Breite</td> 
+      <td>73%</td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Erweiterte Umrandung</td> 
+      <td> 
+       <ul> 
+        <li>Links: 10px</li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Höhe</td> 
+      <td>40px</td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position<br /> </td> 
+      <td>Marge</td> 
+      <td><br /> 
+       <ul> 
+        <li>Rechts: 2rem</li> 
+        <li>Links: 10rem </li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Hintergrund</td> 
+      <td>Hintergrundfarbe</td> 
+      <td>FFFFFF</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenbreite</td> 
+      <td>1px</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenstil</td> 
+      <td>Durchgezogen</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenfarbe</td> 
+      <td>A7A9AC</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenradius</td> 
+      <td>7px</td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftfamilie</td> 
+      <td>Arial</td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftfarbe</td> 
+      <td>BCBEC0</td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Schriftgrad</td> 
+      <td>18px</td> 
+     </tr> 
+     <tr> 
+      <td>Text</td> 
+      <td>Zeilenhöhe</td> 
+      <td>2</td> 
+     </tr> 
+     </tr> 
+    </tbody> 
+   </table>
 
-1. Tap the **Submit** button and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. Legen Sie die folgenden Eigenschaften fest:
+1. Tap the **[!UICONTROL Submit]** button and tap the ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. Legen Sie die folgenden Eigenschaften fest:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordion</td> 
-   <td>Eigenschaft</td> 
-   <td>Wert</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Gleitkomma</td> 
-   <td>Rechts</td> 
-  </tr> 
-  <tr> 
-   <td>Abmessungen und Position</td> 
-   <td>Marge</td> 
-   <td> 
-    <ul> 
-     <li>Oben: 5rem</li> 
-     <li>Rechts: 14rem</li> 
-     <li>Unten: 20px</li> 
-     <li>Links: 20px<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Hintergrund</td> 
-   <td>Hintergrundfarbe</td> 
-   <td>F6921E</td> 
-  </tr> 
-  <tr> 
-   <td>Rahmen</td> 
-   <td>Rahmenfarbe</td> 
-   <td>F6921E</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordion</b></td> 
+      <td><b>Eigenschaft</b></td> 
+      <td><b>Wert</b></td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Gleitkomma</td> 
+      <td>Rechts</td> 
+     </tr> 
+     <tr> 
+      <td>Abmessungen und Position</td> 
+      <td>Marge</td> 
+      <td> 
+       <ul> 
+        <li>Oben: 5rem</li> 
+        <li>Rechts: 14rem</li> 
+        <li>Unten: 20px</li> 
+        <li>Links: 20px<br /> </li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Hintergrund</td> 
+      <td>Hintergrundfarbe</td> 
+      <td>F6921E</td> 
+     </tr> 
+     <tr> 
+      <td>Rahmen</td> 
+      <td>Rahmenfarbe</td> 
+      <td>F6921E</td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
+   ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
 ## Schritt 5: Bonusabschnitt: Verwenden von Webschriftarten in einem benutzerdefinierten Design {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Alle Geräte, auf denen das adaptive Formular angezeigt wird, verfügen möglicherweise nicht über die zum Entwerfen des adaptiven Formulars verwendeten Schriftarten. Sie können einen Webschriftartdienst verwenden, um die erforderlichen Schriftarten an das Zielgruppe-Gerät zu senden.
 
-Adobe Typekit ist ein Webschriftartdienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. So verwenden Sie Adobe Typekit in einem adaptiven Formular:
+[!DNL Adobe Typekit] ist ein Webschriftarten-Dienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. To use [!DNL Adobe Typekit] in an adaptive form:
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit heißt jetzt Adobe Fonts und ist in Creative Cloud und anderen Abonnements enthalten. [Weitere Informationen](https://fonts.adobe.com/)
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Weitere Informationen](https://fonts.adobe.com/)
 
-1. Create an [Adobe Typekit](https://typekit.com/) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. Es ist erforderlich, Adobe Typekit-Schriftarten (Webfonts) in einem adaptiven Formular zu verwenden.
-1. In the AEM Forms server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Tools** ![hammer](assets/hammer.png) > **Deployment** > **Cloud Services**. On the Cloud Services page, navigate to **Third Party Services** > **Typekit**, and click **Configure** Now under Typekit. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche +, um eine neue Instanz zu erstellen.
+1. Create an [Adobe Typekit](https://typekit.com/) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Typekit] fonts (Web fonts) in an adaptive form.
+1. In the AEM [!DNL Forms] server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**. On the Cloud Services page, navigate to **[!UICONTROL Third Party Services]** > **[!UICONTROL Typekit]**, and click **[!UICONTROL Configure]** Now under [!UICONTROL Typekit]. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche +, um eine neue Instanz zu erstellen.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **Create**. Daraufhin werden Sie zur Seite „Konfiguration“ geleitet. In the Edit Component dialog that appears, provide your **Kit ID** and click **OK**.
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. Daraufhin werden Sie zur Seite „Konfiguration“ geleitet. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
 
-1. Konfigurieren Sie Ihr Design für die Verwendung der TypeKit-Konfiguration. On the author instance, open **Global Theme** in the theme editor. In the theme editor, navigate to Theme Options ![theme-options](assets/theme-options.png) > Configure. In **Typekit Configuration** field, select the kit, and click **Save**.
+1. Configure your theme to use the [!DNL TypeKit] configuration. On the author instance, open **[!UICONTROL Global Theme]** in the theme editor. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In **[!UICONTROL Typekit Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
 
-   The fonts added to the Typekit are available for selection in the **Text** accordion of all the components.
+   The fonts added to the [!UICONTROL Typekit] are available for selection in the **[!UICONTROL Text]** accordion of all the components.
 
