@@ -8,10 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 67%
+source-wordcount: '1148'
+ht-degree: 65%
 
 ---
 
@@ -89,15 +89,15 @@ Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Lief
 
    ![update-shipping-address](assets/update-shipping-address.png)
 
-1. ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
+   ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Ziehen Sie die Felder **[!UICONTROL Lieferadresse, Bundesland und Postleitzahl]** aus der Registerkarte &quot;Formularobjekte&quot;in die entsprechende Tabelleneigenschaft &quot;.property&quot;(z. B. customerdetails .shippingAddress) des **[!UICONTROL Drop-Objekts oder wählen Sie hier]** im Feld &quot; **[!UICONTROL INPUT]** &quot;aus. Alle Felder mit dem Präfix tableName (in diesem Anwendungsfall z. B. Kundendetails) dienen als Eingabedaten für den Updateservice. Der gesamte Inhalt in diesen Feldern wird in der Datenquelle aktualisiert.
+1. Ziehen Sie das Feld **[!UICONTROL Lieferadresse, Status und Postleitzahl]** aus der Registerkarte &quot; [!UICONTROL Formularobjekte] &quot;in die entsprechende Tabelleneigenschaft &quot;.property&quot;(z. B. customerdetails.shippingAddress) des **[!UICONTROL Drop-Objekts oder wählen Sie hier]** im Feld &quot; **[!UICONTROL INPUT]** &quot;aus. Alle Felder mit dem Präfix tableName (in diesem Anwendungsfall z. B. Kundendetails) dienen als Eingabedaten für den Updateservice. Der gesamte Inhalt in diesen Feldern wird in der Datenquelle aktualisiert.
 
    >[!NOTE]
    >
    >Do not drag-and-drop the **[!UICONTROL Name]** and **[!UICONTROL Customer ID]** fields to the corresponding tablename.property (for example, customerdetails.name). Der Name und die ID des Kunden sollten nicht versehentlich aktualisiert werden.
 
-1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte „Formularobjekte“ in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne Präfix  tablename (z. B. Kundendetails in diesem Anwendungsfall) dient als Suchparameter für den Updateservice. The **[!UICONTROL id]** field in this use case uniquely identifies a record in the  customerdetails  table.
+1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte „Formularobjekte“ in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vordefinierten Tabellennamen (in diesem Anwendungsfall z. B. Kundendetails) dienen als Suchparameter für den Updateservice. The **[!UICONTROL id]** field in this use case uniquely identifies a record in the  **customerdetails**  table.
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern. On the rule editor window, tap **[!UICONTROL Close]**.
 1. Zeigen Sie das adaptive Formular in der Vorschau an. Rufen Sie Details eines Kunden ab, aktualisieren Sie die Lieferadresse und senden Sie das Formular ab. Wenn Sie Details des gleichen Kunden erneut abrufen, wird die aktualisierte Lieferadresse angezeigt.
 
@@ -107,9 +107,9 @@ Sie sollten die Validierung des Formulars durchführen, um sicherzustellen, dass
 
 Adaptive Formulare bieten mehrere Komponenten mit integrierten Validierungen, z. B. E-Mail, und numerische Felder, die Sie für häufige Anwendungsfälle verwenden können. Verwenden Sie den Regeleditor für erweiterte Anwendungsfälle, um z. B. eine Fehlermeldung anzuzeigen, wenn die Datenbank null (0) Datensätze (keine Datensätze) zurückgibt. 
 
-Das folgende Verfahren zeigt, wie eine Regel erstellt wird, die eine Fehlermeldung anzeigt, wenn die im Formular eingegebene Kunden-ID nicht in der Datenbank vorhanden ist. Mit der Regel wird auch das Feld für die Kunden-ID aktiviert und zurückgesetzt. The rule uses [the dataIntegrationUtils API of the form data model service](/help/forms/using/invoke-form-data-model-services.md) to check if the Customer ID exists in the database.
+Das folgende Verfahren zeigt, wie eine Regel erstellt wird, die eine Fehlermeldung anzeigt, wenn die im Formular eingegebene Kunden-ID nicht in der Datenbank vorhanden ist. The rule also brings the focus to and resets the **[!UICONTROL Customer ID]** field. The rule uses [the dataIntegrationUtils API of the form data model service](/help/forms/using/invoke-form-data-model-services.md) to check if the Customer ID exists in the database.
 
-1. Tap the **[!UICONTROL Customer ID]** field and tap the `Edit Rules` icon. Das Fenster „Regeleditor“ wird geöffnet.
+1. Tap the **[!UICONTROL Customer ID]** field and tap the `Edit Rules` icon. The [!UICONTROL Rule Editor] window opens.
 1. Tippen Sie auf das Symbol **[!UICONTROL + Erstellen]**, um eine Regel hinzuzufügen. Es öffnet den visuellen Editor.
 
    In the Visual Editor, the **[!UICONTROL WHEN]** statement is selected by default. Also, the form object (in this case, **[!UICONTROL Customer ID]**) from where you launched the rule editor is specified in the **[!UICONTROL WHEN]** statement.
@@ -132,7 +132,7 @@ Das folgende Verfahren zeigt, wie eine Regel erstellt wird, die eine Fehlermeldu
    };
    ```
 
-1. Ersetzen Sie den Abschnitt guidelib.dataIntegrationUtils.executeOperation (operationInfo, Eingaben, Ausgaben) durch den folgenden Code:
+1. Replace the `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` section with the following code:
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
