@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 81%
+source-wordcount: '1927'
+ht-degree: 79%
 
 ---
 
@@ -35,16 +35,16 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse und die Daten
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur ein Minimum einer AEM Autor- oder Veröffentlichungsinstanz, um AEM Forms-Datenerfassungsfunktionen auszuführen. Die folgende Topologie wird zum Ausführen von AEM Forms-Datenerfassungsfunktionen von AEM Forms empfohlen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![recommendations-topology](assets/recommended-topology.png)
+![recommended-topology](assets/recommended-topology.png)
 
 ## Systemanforderungen {#system-requirements}
 
-Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von AEM Forms beginnen, stellen Sie sicher, dass:
+Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von AEM Forms beginnen, stellen Sie Folgendes sicher:
 
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
-* Eine AEM-Instanz wird ausgeführt. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens zwei[ AEM-Instanzen (eine Autor- und Veröffentlichungsinstanz),](/help/sites-deploying/deploy.md) um AEM Forms-Datenerfassungsfunktionen auszuführen:
+* Eine AEM-Instanz wird ausgeführt. For Windows users, install the AEM instance in elevated mode. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens zwei[ AEM-Instanzen (eine Autor- und Veröffentlichungsinstanz),](/help/sites-deploying/deploy.md) um AEM Forms-Datenerfassungsfunktionen auszuführen:
 
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
    * **Veröffentlichen**: Eine AEM-Instanz, die den Inhalt über das Internet oder ein internes Netzwerk veröffentlicht.
@@ -55,7 +55,7 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
    * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
 
 * Die Replikation und die umgekehrte Replikation für die Autor- und die Veröffentlichungsinstanz werden festgelegt. Weitere Details finden Sie unter [Replikation](/help/sites-deploying/replication.md).
-* Bei UNIX-basierten Systemen:
+* For UNIX-based systems:
 
    * Installieren Sie die folgenden 32-Bit-Pakete vom Installationsmedium:
 
@@ -96,8 +96,8 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 
 >[!NOTE]
 >
->* Wenn OpenSSL bereits auf dem Server installiert ist, aktualisieren Sie es auf die neueste Version.
->* Erstellen Sie die Symlinks libcurl.so, libcrypto.so und libssl.so, die auf die neueste Version der Bibliotheken libcurl, libcrypto und libssl verweisen.
+>* If OpenSSL is already installed on the server, upgrade it to the latest version.
+>* Create libcurl.so, libcrypto.so, and libssl.so symlinks pointing to the latest version of the libcurl, libcrypto, and libssl libraries respectively.
 
 >
 
@@ -111,18 +111,36 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 
 AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält AEM bildet Datenerfassung und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
 
-1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
-1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
-1. In the **[!UICONTROL Filters]** section:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
-1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
-1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
+1. Open [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
+1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Im Abschnitt **[!UICONTROL Filter]**:
+   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
+   2. Wählen Sie die Version und den Typ für das Paket aus. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
+1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie, bevor Sie den AEM Forms-Server beenden, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` Datei nicht mehr angezeigt werden und das Protokoll stabil ist.
+   You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Bevor Sie den AEM Forms-Server beenden, warten Sie, bis die Meldungen &quot;ServiceEvent REGISTERED&quot;und &quot;ServiceEvent UNREGISTERED&quot;in der `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` Datei nicht mehr angezeigt werden und das Protokoll stabil ist.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
+
+### (Nur Windows) Automatische Installation von Visual Studio-Redistributables {#automatic-installation-visual-studio-redistributables}
+
+Wenn Sie eine AEM Instanz im erhöhten Modus installieren, werden die fehlenden Visual Studio-Redistributables während der Installation des AEM Forms Add-On-Pakets automatisch installiert.
+
+Um zu prüfen, ob die Visual Studio-Redistributables automatisch installiert werden, öffnen Sie die `error.log` Datei, die im Ordner `/crx-repository/logs/` verfügbar ist. Die Protokolle enthalten die folgende Meldung:
+
+`Redist <service name> already installed on system, will not attempt re-installation`
+
+Wenn die Redistributables nicht installiert werden können, enthalten die Protokolle die folgende Meldung:
+
+`Current user does not have elevated privileges, aborting installation of redist <service name>`
+
+Um das Problem zu beheben, starten Sie den AEM-Server neu, installieren Sie AEM im erhöhten Modus und installieren Sie dann das AEM Forms-Add-On-Paket.
+
+Wenn die Berechtigungsprüfung fehlschlägt, enthalten die Protokolle die folgende Meldung:
+
+`Privilege escalation check failed with error: <error message>`
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
 
@@ -194,7 +212,7 @@ Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu 
 
 #### Konfigurieren Sie die SSL-Kommunikation für das Formulardatenmodell {#configure-ssl-communcation-for-form-data-model}
 
-Sie können die SSL-Kommunikation für das Formulardatenmodell aktivieren. Um die SSL-Kommunikation für das Formulardatenmodell zu aktivieren, fügen Sie vor dem Starten einer AEM Forms-Instanz Zertifikate zum Java Trust Store aller Instanzen hinzu. Sie können den folgenden Befehl ausführen, um die Zertifikate hinzuzufügen: &quot;
+Sie können die SSL-Kommunikation für das Formulardatenmodell aktivieren. Um die SSL-Kommunikation für das Formulardatenmodell zu aktivieren, fügen Sie vor dem Starten einer AEM Forms-Instanz Zertifikate zum Java Trust Store aller Instanzen hinzu. You can run the below command to add the certificates: ``
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
