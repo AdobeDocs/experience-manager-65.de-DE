@@ -1,18 +1,18 @@
 ---
-title: '"Tutorial: Veröffentlichen des adaptiven Formulars"'
-seo-title: '"Tutorial: Veröffentlichen des adaptiven Formulars"'
-description: Veröffentlichen des adaptiven Formulars als AEM-Seite, Einbetten des Formulars in eine AEM Sites-Seite oder Einbetten des adaptiven Formulars in eine externe Webseite
-seo-description: Veröffentlichen des adaptiven Formulars als AEM-Seite, Einbetten des Formulars in eine AEM Sites-Seite oder Einbetten des adaptiven Formulars in eine externe Webseite
+title: '"Tutorial: Publish your adaptive form"'
+seo-title: '"Tutorial: Publish your adaptive form"'
+description: Publish the adaptive form as an AEM page, embed the form to an AEM Sites page, or embed the adaptive form in an external webpage
+seo-description: Publish the adaptive form as an AEM page, embed the form to an AEM Sites page, or embed the adaptive form in an external webpage
 uuid: 1b164376-e61a-40aa-9f16-c79d24a72e20
 contentOwner: khsingh
 topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 8%
+source-wordcount: '966'
+ht-degree: 9%
 
 ---
 
@@ -23,56 +23,55 @@ ht-degree: 8%
 
 Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
-Nachdem das adaptive Formular fertig ist, können Sie es veröffentlichen, um es für Endbenutzer verfügbar zu machen. Die Endbenutzer können das veröffentlichte Formular auf jedem Gerät und in jedem Internetbrowser öffnen. Wenn ein adaptives Formular veröffentlicht wird, werden das Formular und der zugehörige Inhalt von einer AEM-Autoreninstanz in eine AEM-Veröffentlichungsinstanz kopiert. Das Formular wird dem Endbenutzer über die Veröffentlichungsinstanz zur Verfügung gestellt.
+After the adaptive form is ready, you can publish the form to make it available for end users. The end users can open the published form on any device and internet browser. When an adaptive form is published, the form and related content are copied from an AEM author instance to an AEM publish instance. Das Formular wird dem Endbenutzer über die Veröffentlichungsinstanz zur Verfügung gestellt.
 
 Sie haben die folgenden Methoden, um ein adaptives Formular zu veröffentlichen:
 
-* [Veröffentlichen des adaptiven Formulars als AEM-Seite](../../forms/using/publish-your-adaptive-form.md#publish-the-adaptive-form-as-an-aem-page)
-* [Einbetten des adaptiven Formulars in eine Seite &quot;AEM Sites&quot;](#embed-the-adaptive-form-in-an-aem-sites-page)
-* [Einbetten des adaptiven Formulars in eine externe Webseite (eine Nicht-AEM-Webseite, die außerhalb von AEM gehostet wird)](../../forms/using/publish-your-adaptive-form.md)
+* [Veröffentlichen des adaptiven Formulars als AEM](../../forms/using/publish-your-adaptive-form.md#publish-the-adaptive-form-as-an-aem-page)
+* [Einbetten des adaptiven Formulars in eine AEM Sites-Seite](#embed-the-adaptive-form-in-an-aem-sites-page)
+* [Einbetten des adaptiven Formulars in eine externe Webseite (eine nicht AEM Webseite, die außerhalb AEM gehostet wird)](../../forms/using/publish-your-adaptive-form.md)
 
 ## Bevor Sie beginnen {#before-you-start}
 
-* **[Richten Sie eine Veröffentlichungsinstanz](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**für AEM Forms ein: Die Instanz im Veröffentlichungsmodus ist eine öffentliche Instanz von AEM Forms im Veröffentlichungsmodus. In einer Produktions-Umgebung befindet sich die Veröffentlichungsinstanz außerhalb der Firewall des Unternehmens.
-* **[Richten Sie Replizierung und umgekehrte Replizierung](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**ein: Replizierung kopiert Inhalte aus der Autoreninstanz in eine Veröffentlichungsinstanz und gibt Benutzereingaben (z. B. Formulareingaben) aus der Veröffentlichungsinstanz an die Autoreninstanz zurück.
+* **[Einrichten einer AEM Forms-Veröffentlichungsinstanz](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**: Die Instanz im Veröffentlichungsmodus ist eine öffentlich zugängliche Instanz von AEM, die im Veröffentlichungsmodus ausgeführt [!DNL Forms] wird. In einer Produktions-Umgebung befindet sich die Veröffentlichungsinstanz außerhalb der Firewall des Unternehmens.
+* **[Richten Sie Replizierung und umgekehrte Replizierung](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)** ein: Replizierung kopiert Inhalte aus der Autoreninstanz in eine Veröffentlichungsinstanz und gibt Benutzereingaben (z. B. Formulareingaben) aus der Veröffentlichungsinstanz an die Autoreninstanz zurück.
 
-## Veröffentlichen des adaptiven Formulars als AEM-Seite {#publish-the-adaptive-form-as-an-aem-page}
+## Veröffentlichen des adaptiven Formulars als AEM {#publish-the-adaptive-form-as-an-aem-page}
 
-Wenn das adaptive Formular als AEM-Seite veröffentlicht wird, enthält die gesamte Webseite nur das veröffentlichte Formular. Sie können die URL des adaptiven Formulars verwenden, um es von einer anderen Webseite aus zu verknüpfen. So veröffentlichen Sie das adaptive Formular **shipping-address-add-update-form** als AEM-Seite:
+Wenn das adaptive Formular als AEM veröffentlicht wird, enthält die gesamte Webseite nur das veröffentlichte Formular. Sie können die URL des adaptiven Formulars verwenden, um es von einer anderen Webseite aus zu verknüpfen. So veröffentlichen Sie das adaptive Formular **shipping-address-add-update-form** als AEM:
 
-1. Melden Sie sich bei der Autoreninstanz an und suchen Sie das adaptive Formular &quot;shipping-address-add-update-form&quot;in der Benutzeroberfläche &quot;AEM Forms&quot;.
+1. Melden Sie sich bei AEM [!DNL Forms] Autoreninstanz an und suchen Sie das adaptive Formular &quot;shipping-address-add-update-form&quot;in der AEM [!DNL Forms] -Benutzeroberfläche.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. Wählen Sie das adaptive Formular &quot;shipping-address-add-update-form&quot;und klicken Sie auf **Veröffentlichen**. Ein Dialogfeld mit Assets, die mit dem adaptiven Formular in Verbindung stehen, wird angezeigt. Tippen Sie auf **Veröffentlichen**. Das adaptive Formular wird veröffentlicht und ein Dialogfeld mit Erfolg wird angezeigt.
+1. Wählen Sie das adaptive Formular &quot;shipping-address-add-update-form&quot;und klicken Sie auf **[!UICONTROL Veröffentlichen]**. Ein Dialogfeld mit Assets, die mit dem adaptiven Formular in Verbindung stehen, wird angezeigt. Tippen Sie auf **[!UICONTROL Veröffentlichen]**. Das adaptive Formular wird veröffentlicht und ein Dialogfeld mit Erfolg wird angezeigt.
 1. Öffnen Sie das Formular in der Veröffentlichungsinstanz. Das Formular kann vom Endbenutzer ausgefüllt und gesendet werden.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
-## Einbetten des adaptiven Formulars in eine Seite &quot;AEM Sites&quot; {#embed-the-adaptive-form-in-an-aem-sites-page}
+## Einbetten des adaptiven Formulars in eine AEM Sites-Seite {#embed-the-adaptive-form-in-an-aem-sites-page}
 
-AEM Forms ermöglicht Formularentwicklern das nahtlose Einbetten adaptiver Formulare in eine AEM Sites-Seite. Das eingebettete adaptive Formular ist voll funktionsfähig und Benutzer können es ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular zu interagieren.
+AEM [!DNL Forms] ermöglicht es Formularentwicklern, adaptive Formulare nahtlos in eine AEM [!DNL Sites] Seite einzubetten. Das eingebettete adaptive Formular ist voll funktionsfähig und Benutzer können es ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular zu interagieren.
 
-AEM Forms stellen eine Komponente (AEM Forms Container) bereit, um ein adaptives Formular in eine Seite &quot;AEM Sites&quot;einzubetten. Standardmäßig ist die Komponente im Container AEM Sites nicht sichtbar. Führen Sie die folgenden Schritte aus, um die Komponente &quot;AEM Forms Container&quot;zu aktivieren und das adaptive Formular in eine Seite &quot;AEM Sites&quot;einzubetten:
+AEM [!DNL Forms] stellen Sie eine Komponente AEM [!DNL Forms] Container bereit, um ein adaptives Formular in eine AEM [!DNL Sites] Seite einzubetten. Standardmäßig ist die Komponente im AEM [!DNL Sites] Container nicht sichtbar. Führen Sie die folgenden Schritte aus, um die Komponente AEM [!DNL Forms] Container zu aktivieren und das adaptive Formular in eine AEM [!DNL Sites] Seite einzubetten:
 
-1. Erstellen und öffnen Sie eine Seite auf der Website We.Retail zur Bearbeitung. Beispiel: [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Das adaptive Formular ist in die Siteseite eingebettet.
+1. Erstellen und öffnen Sie eine Seite auf der Website We.Retail zur Bearbeitung. Beispiel: [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). The adaptive form is embedded to the [!DNL Sites] page.
 
-   Sie können das adaptive Formular auch in eine bestehende Website von We.Retail einbetten. Zum Beispiel die Seite &quot;ABOUT US&quot; [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Dadurch sparen Sie Zeit, eine Seite zu erstellen. Die folgenden Schritte verwenden die neu erstellte Seite.
+   Sie können das adaptive Formular auch in eine bestehende [!DNL Site's] Seite &quot;We.Retail&quot;einbetten. Zum Beispiel die Seite &quot;ABOUT US&quot; [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Dadurch sparen Sie Zeit, eine Seite zu erstellen. Die folgenden Schritte verwenden die neu erstellte Seite.
 
    Die Website We.Retail wird mit AEM ausgeliefert. Wenn Sie die Website &quot;We.Retail&quot;nicht installiert haben, lesen Sie die Informationen unter [We.Retail Reference Implementation](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) installieren.
 
 1. Tippen Sie auf die ![Eigenschaften](assets/properties.png) -Seiteninformationen und wählen Sie auf der neu erstellten Website &quot;Wir.Einzelhandel&quot;die Option &quot;Vorlage **** bearbeiten&quot;aus. Die Vorlage der Seite wird in einer neuen Registerkarte des Browsers geöffnet.
-1. Tippen Sie im Feld **Layout-Container** auf ![Feedmanagement](assets/feedmanagement.png). Erweitern Sie auf der Registerkarte &quot; **Zulässige Komponenten** &quot;das Akkordeon &quot; **Allgemein** &quot;, wählen Sie die Option &quot; **AEM Form** &quot;und klicken Sie auf &quot; ![save_icon](assets/save_icon.svg)&quot;. Die Seitenkomponente &quot;AEM Forms Container&quot;ist aktiviert.
+1. Tippen Sie im Feld **[!UICONTROL Layout-Container]** auf ![Feedmanagement](assets/feedmanagement.png). Erweitern Sie auf der Registerkarte &quot; **[!UICONTROL Zulässige Komponenten]** &quot;das Akkordeon &quot; **[!UICONTROL Allgemein]** &quot;, wählen Sie die Option &quot; **[!UICONTROL AEM Formular]** &quot;und klicken Sie auf &quot; ![save_icon](assets/save_icon.svg)&quot;. Die Komponente &quot;AEM [!DNL Forms] Container&quot;ist für die Seite aktiviert.
 
-1. Öffnen Sie die Browserregisterkarte mit der Seite &quot;AEM Sites&quot;, die in Schritt 1 geöffnet wurde. Tippen Sie auf das Feld Komponenten hierher **** ziehen und dann auf **+.** Tippen Sie im Feld Neue Komponente **** einfügen auf **AEM Form.** Die Komponente **AEM Forms Container** wird der Seite hinzugefügt.
-1. Tippen Sie auf die Komponente **AEM Forms Container** und dann auf ![configure-icon](assets/configure-icon.svg). Es wird ein Dialogfeld mit den Eigenschaften des Containers &quot;AEM Forms&quot;angezeigt. Suchen Sie im Feld **Asset Path** das adaptive Formular shipping-address-add-update-form und wählen Sie es aus. Tippen Sie auf ![save_icon](assets/save_icon.svg). Das adaptive Formular ist in die Seite eingebettet.
-1. Veröffentlichen Sie sowohl das adaptive Formular als auch die Siteseite. Beachten Sie dabei Folgendes:
+1. Open the browser tab containing AEM [!DNL Sites] page opened in step 1. Tap the **[!UICONTROL Drag components here]** box and tap **+.** In the **[!UICONTROL Insert New Component]** box, tap **[!UICONTROL AEM Form]**. The **[!UICONTROL AEM Forms Container]** component is added to the page.
+1. Tippen Sie auf die Komponente **[!UICONTROL AEM Forms Container]** und dann auf ![configure-icon](assets/configure-icon.svg). Ein Dialogfeld mit den Eigenschaften AEM [!DNL Forms] Containers wird angezeigt. Suchen Sie im Feld **[!UICONTROL Asset Path]** das adaptive Formular shipping-address-add-update-form und wählen Sie es aus. Tippen Sie auf ![save_icon](assets/save_icon.svg). Das adaptive Formular ist in die Seite eingebettet.
+1. Veröffentlichen Sie das adaptive Formular und die [!DNL Sites] Seite. Beachten Sie dabei Folgendes:
 
-   * Wenn Sie die AEM-Siteseite zum ersten Mal veröffentlichen und sie ein eingebettetes Formular enthält, veröffentlichen Sie die Siteseite und das eingebettete Formular.
+   * If you publish the AEM [!DNL Sites] page for the first time and it includes an embedded form, publish the [!DNL Sites] page and the embedded form.
    * Wenn Sie nur das eingebettete Formular auf einer veröffentlichten Siteseite ändern, veröffentlichen Sie das Originalformular und die Änderungen werden auf der veröffentlichten Siteseite übernommen. Die veröffentliche Siteseite enthält einen Verweis auf das Formular ein und erfordert kein erneutes Veröffentlichen der Seite.
-   * Wenn Sie die Siteseite und das eingebettete Formular ändern, veröffentlichen Sie die Siteseite und das Formular erneut.
+   * Wenn Sie die [!DNL Sites] Seite und das eingebettete Formular ändern, veröffentlichen Sie die [!DNL Sites] Seite und das Formular erneut.
 
-   ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
+      ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
+   Formular zur Änderung der Lieferungs- und Rechnungsadresse, das zu einer AEM [!DNL Sites] Seite hinzugefügt wurde.
 
-   Formular zur Änderung der Liefer- und Rechnungsadresse, das zu einer Seite &quot;AEM Sites&quot;hinzugefügt wurde.
+## Embed the adaptive form in an external webpage {#embed-the-adaptive-form-in-an-external-webpage}
 
-## Einbetten des adaptiven Formulars in eine externe Webseite {#embed-the-adaptive-form-in-an-external-webpage}
-
-Sie können ein adaptives Formular in eine externe Webseite einbetten (eine Nicht-AEM-Webseite, die außerhalb von AEM gehostet wird), indem Sie einige Zeilen JavaScript in die externe Webseite einfügen. Der JavaScript-Code sendet eine HTTP-Anforderung für das adaptive Formular und die zugehörigen Ressourcen an den AEM Forms-Server und fügt das adaptive Formular der Webseite hinzu. Ausführliche Anweisungen finden Sie unter [Einbetten des adaptiven Formulars in eine externe Webseite](/help/forms/using/embed-adaptive-form-external-web-page.md).
+You can embed an adaptive form to an external web page (a non-AEM webpage hosted outside AEM) by inserting a few lines of JavaScript in the external web page. The JavaScript code sends an HTTP request to the AEM [!DNL Forms] server for the adaptive form and related resources and adds the adaptive form to the web page. For detailed steps, see [embed the adaptive form to an external web page](/help/forms/using/embed-adaptive-form-external-web-page.md).
