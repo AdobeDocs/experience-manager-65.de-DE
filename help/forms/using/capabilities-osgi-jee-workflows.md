@@ -3,9 +3,9 @@ title: Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und A
 description: Aktionen und Funktionen formularorientierter AEM-Workflows in OSGi- und AEM Forms JEE-Workflows
 contentOwner: khsingh
 translation-type: tm+mt
-source-git-commit: d5d30e16d2561c020a82cdda847a9dd9b48acd3b
+source-git-commit: dfa5a0dbfdd2c63ea0ec66d805e8b452baa3d0ac
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '928'
 ht-degree: 72%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 72%
 
 ## AEM-Posteingang und HTML Workspace {#aem-inbox-and-html-workspace}
 
-Sie können AEM Inbox verwenden, um Forms-zentriertes AEM Workflows unter OSGi auszuführen und zu überwachen. HTML Workspace ermöglicht es Ihnen hingegen, AEM Forms JEE Workflows auszuführen und zu überwachen. In der folgenden Tabelle sind verschiedene wichtige Aktionen aufgeführt, die in AEM Inbox für Forms-zentriertes AEM Workflows auf OSGi und in HTML Workspace für AEM Forms JEE Workflows verfügbar sind.
+Sie können AEM Inbox verwenden, um Forms-orientierte AEM Workflows auf OSGi auszuführen und zu überwachen. HTML Workspace ermöglicht es Ihnen hingegen, AEM Forms JEE Workflows auszuführen und zu überwachen. Die folgende Tabelle zeigt Ihnen, welche wichtigen Aktionen in AEM Inbox für Forms-zentrierte AEM auf OSGi und in HTML Workspace für AEM Forms JEE Workflows verfügbar sind.
 
 <table>
  <tbody>
   <tr>
-   <td>Aktionen </td>
+   <td>Aktionen   </td>
    <td>AEM-Posteingang</td>
    <td>HTML-Arbeitsbereich</td>
   </tr>
@@ -99,7 +99,7 @@ Sie können AEM Inbox verwenden, um Forms-zentriertes AEM Workflows unter OSGi a
 
 ## Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Forms in JEE Process Management) bieten unterschiedliche Funktionen. Die folgende Tabelle zeigt Ihnen wichtige Funktionen, die in Form-zentrischem AEM Workflows unter OSGi und AEM Forms unter JEE Workflows verfügbar sind:
+Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Forms in JEE Process Management) bieten unterschiedliche Funktionen. Die folgende Tabelle zeigt Ihnen wichtige Funktionen, die in Form-zentrierten AEM Workflows auf OSGi und AEM Forms on JEE Workflows verfügbar sind:
 
 <table>
  <tbody>
@@ -177,6 +177,41 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
    <td>Integration mit Correspondence Management</td>
    <td>Unterstützt</td>
    <td>Unterstützt</td>
+  </tr>
+   <tr>
+   <td>Gateways, KEIN WAIT </td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+   <tr>
+   <td>Variablen zum Speichern von Daten </td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+  <tr>
+   <td>ODER, UND teilen</td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+  <tr>
+   <td>Verwenden eines Avatars</td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+  <tr>
+   <td>Senden einer E-Mail am Ende des Workflows</td>
+   <td>Supported <sup>[7]</sup></td>
+   <td>Unterstützt</td>
+  </tr>
+  <tr>
+   <td>Abrufen eines Webdiensts aus einem Workflow</td>
+   <td>Unterstützt</td>
+   <td>Unterstützt</td>
+  </tr>
+  <tr>
+   <td>Digitale Signatur</td>
+   <td>Unterstützt<br /> </td>
+   <td>Unterstützt<br /> </td>
   </tr>
   <tr>
    <td>Zurücksetzen-Schaltfläche</td>
@@ -289,11 +324,6 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
    <td>Unterstützt</td>
   </tr>
   <tr>
-   <td>Verwenden eines Avatars</td>
-   <td>Unterstützt</td>
-   <td>Unterstützt</td>
-  </tr>
-  <tr>
    <td>Manageransicht</td>
    <td>Nicht unterstützt</td>
    <td>Unterstützt<br /> </td>
@@ -329,17 +359,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
    <td>Unterstützt</td>
   </tr>
   <tr>
-   <td>Senden einer E-Mail am Ende des Workflows</td>
-   <td>Supported <sup>[7]</sup></td>
-   <td>Unterstützt</td>
-  </tr>
-  <tr>
    <td>Delegieren zwischen getrennten Gruppen</td>
-   <td>Nicht unterstützt</td>
-   <td>Unterstützt</td>
-  </tr>
-  <tr>
-   <td>Abrufen eines Webdiensts aus einem Workflow</td>
    <td>Nicht unterstützt</td>
    <td>Unterstützt</td>
   </tr>
@@ -349,32 +369,27 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
    <td>Unterstützt</td>
   </tr>
   <tr>
-   <td>Gateways, KEIN WAIT </td>
-   <td>Unterstützt</td>
-   <td>Unterstützt</td>
-  </tr>
-   <tr>
-   <td>Variablen zum Speichern von Daten </td>
-   <td>Unterstützt</td>
-   <td>Unterstützt</td>
-  </tr>
-  <tr>
-   <td>ODER, UND teilen</td>
-   <td>Nicht unterstützt</td>
-   <td>Unterstützt</td>
-  </tr>
-  <tr>
    <td>Dynamische Aufgabenpriorität</td>
+   <td>Nicht unterstützt</td>
+   <td>Nicht unterstützt</td>
+  </tr>
+  <tr>
+   <td>Dynamischer Titel</td>
+   <td>Nicht unterstützt</td>
+   <td>Nicht unterstützt</td>
+  </tr>
+    <tr>
+   <td>Dynamische Beschreibung</td>
    <td>Nicht unterstützt</td>
    <td>Nicht unterstützt</td>
   </tr>
  </tbody>
 </table>
 
-1. Sie können Form-zentriertes AEM Workflows auf OSGi verwenden, um ein ausgefülltes adaptives Formular zu signieren. Formularorientierte AEM-Workflows in OSGi unterstützen das externe Signieren von Formularen. [Formularinternes Signieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) wird nicht unterstützt.
+1. Sie können formularzentrierte AEM Workflows auf OSGi verwenden, um ein ausgefülltes adaptives Formular zu signieren. Formularorientierte AEM-Workflows in OSGi unterstützen das externe Signieren von Formularen. [Formularinternes Signieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) wird nicht unterstützt.
 
-1. Sie benötigen Zugriff auf AEM Inbox, um formularzentrierte Workflows auf AEM Forms OSGi und HTML Workspace auszuführen und zu überwachen, um die JEE-Workflows von AEM Forms ausführen und überwachen zu können.
-1. Programmeigene AEM Forms Document Services sind sowohl für formularorientierte AEM-Workflows in OSGi als auch für AEM Forms in JEE-Workflows verfügbar. AEM Workflow verwendet native Dokument-Dienste für formularzentriertes AEM Workflows unter OSGi und AEM Forms JEE (Process Management) Workflows.
+1. Sie benötigen Zugriff auf AEM Inbox, um formularzentrierte Workflows auf AEM Forms OSGi und HTML Workspace auszuführen und zu überwachen, um AEM Forms JEE Workflows ausführen und überwachen zu können.
+1. Programmeigene AEM Forms Document Services sind sowohl für formularorientierte AEM-Workflows in OSGi als auch für AEM Forms in JEE-Workflows verfügbar. AEM Workflow verwendet native Dokument-Dienste für formularorientierte AEM Workflows auf OSGi und AEM Forms JEE (Process Management) Workflows.
 1. AEM Forms JEE-Workflows können nur adaptive Formulare wiedergeben. Die Wiedergabe adaptiver Formulare als PDF-Dokument wird nicht unterstützt.
 1. AEM Forms JEE-Workflows bieten keinen separaten Schritt für Adobe Sign. Sie benötigen für AEM Forms JEE-Workflows ein adaptives Formular, in dem Adobe Sign aktiviert ist. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
 1. Sie können den Schritt zum [Aufrufen des Formulardatenmodelldienstes](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) verwenden, um einen Webdienst aufzurufen und Daten aus einer Drittanbieteranwendung zu posten oder abzurufen.
@@ -389,7 +404,7 @@ Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Aktionen </strong></p> </td>
+   <td><p><strong>Aktionen   </strong></p> </td>
    <td><p><strong>AEM-Posteingang</strong></p> </td>
    <td><p><strong>AEM Forms-App</strong></p> </td>
   </tr>
