@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 84dd0d551431169239f63cff62a015e15f998e7d
+workflow-type: tm+mt
+source-wordcount: '2043'
+ht-degree: 80%
 
 ---
 
@@ -22,9 +25,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-`<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` [ 01-aem-forms-architecture ![](assets/01-aem-forms-architecture.jpg)*Ansicht im Format *](javascript:void(0).md)
-
-[ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
+![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Über das Sling Framework {#using-sling-framework}
 
@@ -51,7 +52,7 @@ HTML5-Formulare speichert Vorlagen nicht zwischen, die fehlende Verweise auf Fra
 Der Forms OSGi-Dienst verarbeitet eine Anforderung in zwei Schritten:
 
 * **Generierung eines Layouts und des anfänglichen Formularstatus**: Der Forms OSGi-Renderdienst ruft die Formular-Cachekomponente auf, um zu bestimmen, ob das Formular bereits zwischengespeichert wurde und ob es noch gültig ist. Wenn das Formular zwischengespeichert und gültig ist, liefert es das generierte HTML aus dem Cache. Wenn das Formular ungültig ist, generiert der Forms OSGi-Render-Dienst das anfängliche Formularlayout und den Formularstatus im XML-Format. Diese XML-Datei wird vom Forms OSGi-Dienst in HTML-Layout und in den anfänglichen JSON-Formularstatus umgewandelt sowie für folgende Anforderungen zwischengespeichert.
-* **Vorausgefüllte Formulare**: Beim Rendern ruft der Forms OSGi-Renderdienst den Forms-Dienst Container auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
+* **Vorausgefülltes Forms**: Beim Rendern ruft der Forms OSGi-Renderdienst den Forms-Dienst auf und generiert einen neuen Formularstatus mit zusammengeführten Daten. Da das Layout jedoch schon im ersten Schritt generiert wird, ist dieser Aufruf schneller als der erste. Dieser Aufruf führt nur die Zusammenführung von Daten durch und führt die Skripten auf den Daten aus.
 
 Wenn ein Formular aktualisiert wurde oder Elemente in einem Formular verwendet wurden, erkennt die Formular-Cache-Komponente es und der Cache für dieses bestimmte Formular wird ungültig. Wenn die Verarbeitung durch den Forms OSGi-Dienst abgeschlossen ist, fügt das Profil-Renderer-JSP JavaScript-Bibliotheksverweise in das Formular ein und gibt die Antwort an den Client zurück. Hierfür kann ein typischer Webserver wie [Apache](https://httpd.apache.org/) mit aktivierter HTML-Komprimierung verwendet werden. Ein Webserver würde die Antwortgröße, den Netzwerkverkehr und die für das Streaming der Daten zwischen Server und Clientcomputer erforderliche Zeit erheblich verringern.
 
@@ -63,7 +64,7 @@ Sie benötigen das AEM Forms-Add-On-Paket, um HTML5-Formulare zu aktivieren. Wei
 
 ### OSGi-Komponenten (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er von der Bundle-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er von der Bündel-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
 
 Diese Komponente enthält OSGi-Komponenten für Rendering, Cachemanagement und Konfigurationseinstellungen.
 
