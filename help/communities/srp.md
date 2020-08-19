@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 2%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ## Einführung {#introduction}
 
-Ab AEM Communities 6.1 werden Community-Inhalte, häufig auch als benutzergenerierte Inhalte bezeichnet, in einem einzigen gemeinsamen Speicher gespeichert, der von einem [Datenspeicherung Resource Provider](working-with-srp.md) (SRP) bereitgestellt wird.
+Ab AEM Communities 6.1 werden Community-Inhalte, die gemeinhin als benutzergenerierte Inhalte (UGC) bezeichnet werden, in einem einzigen gemeinsamen Speicher gespeichert, der von einem [Datenspeicherung Resource Provider](working-with-srp.md) (SRP) bereitgestellt wird.
 
-Es gibt mehrere SRP-Optionen, die alle über eine neue AEM Communities-Schnittstelle auf UGC zugreifen, die [SocialResourceProvider API](srp-and-ugc.md) (SRP API), die alle Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen (CRUD) umfasst.
+Es gibt mehrere SRP-Optionen, die alle über eine neue AEM Communities-Schnittstelle, die [SocialResourceProvider-API](srp-and-ugc.md) (SRP-API), auf UGC zugreifen. Dazu gehören alle Vorgänge zum Erstellen, Lesen, Aktualisieren und Löschen (CRUD).
 
 Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass Code ohne Kenntnis der [zugrunde liegenden Topologie](topologies.md) oder des Standorts von UGC entwickelt werden kann.
 
@@ -29,7 +32,8 @@ Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass Code ohne
 
 >[!NOTE]
 >
->**Benutzerdefinierte Komponenten**: Für lizenzierte Kunden von AEM Communities steht die SRP-API Entwicklern von benutzerdefinierten Komponenten zum Zugriff auf UGC ohne Rücksicht auf die zugrunde liegende Topologie zur Verfügung. Siehe [SRP und UGC Essentials](srp-and-ugc.md).
+>**Benutzerdefinierte Komponenten**: Für lizenzierte Kunden von AEM Communities steht die SRP-API Entwicklern von benutzerdefinierten Komponenten zur Verfügung, um ohne Rücksicht auf die zugrunde liegende Topologie auf UGC zugreifen zu können. Siehe [SRP und UGC Essentials](srp-and-ugc.md).
+
 
 Siehe auch:
 
@@ -39,17 +43,17 @@ Siehe auch:
 
 ## Info zum Repository {#about-the-repository}
 
-Um SRP zu verstehen, ist es hilfreich, die Rolle des AEM-Repositorys (OAK) auf einer AEM-Community-Site zu verstehen.
+Um SRP zu verstehen, ist es hilfreich, die Rolle des AEM Repository (OAK) in einer AEM Community-Site zu verstehen.
 
 **Java Content Repository (JCR)** Dieser Standard definiert ein Datenmodell und eine Anwendungsprogrammierschnittstelle ([JCR-API](https://jackrabbit.apache.org/jcr/jcr-api.html)) für Content-Repositorys. Es kombiniert Eigenschaften herkömmlicher Dateisysteme mit denen relationaler Datenbanken und bietet eine Reihe zusätzlicher Funktionen, die Content-Anwendungen oft benötigen.
 
-Eine Implementierung von JCR ist das AEM-Repository, OAK.
+Eine Implementierung von JCR ist das AEM Repository, OAK.
 
 **Apache Jackrabbit Oak (OAK)**[OAK](../../help/sites-deploying/platform.md) ist eine Implementierung von JCR 2.0, einem Datensystem, das speziell für inhaltsorientierte Datenspeicherung entwickelt wurde. Es handelt sich um eine Art hierarchischer Datenbank, die für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur die benutzerseitigen Inhalte, sondern auch alle durch die Anwendung verwendeten Codes, Vorlagen und internen Daten. Die Benutzeroberfläche für den Zugriff auf Inhalte ist [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Sowohl JCR als auch OAK werden normalerweise verwendet, um auf das AEM-Repository zu verweisen.
+Sowohl JCR als auch OAK werden normalerweise dazu verwendet, auf das AEM Repository zu verweisen.
 
-Nachdem Sie Site-Inhalte in der Umgebung für private Autoren entwickelt haben, müssen Sie sie in die Umgebung für öffentliche Veröffentlichungen kopieren. Dies geschieht oft durch einen Vorgang, der als *[Replikation](deploy-communities.md#replication-agents-on-author)*bezeichnet wird. Dies geschieht unter der Kontrolle des Autors/Entwicklers/Administrators.
+Nachdem Sie Site-Inhalte in der Umgebung für private Autoren entwickelt haben, müssen Sie sie in die Umgebung für öffentliche Veröffentlichungen kopieren. Dies geschieht oft durch einen Vorgang, der als *[Replikation](deploy-communities.md#replication-agents-on-author)* bezeichnet wird. Dies geschieht unter der Kontrolle des Autors/Entwicklers/Administrators.
 
 Für UGC wird der Inhalt von registrierten Site-Besuchern (Community-Mitgliedern) in der Umgebung zur Veröffentlichung eingegeben. Das passiert zufällig.
 
@@ -68,7 +72,7 @@ Wenn UGC in einer freigegebenen Datenspeicherung gespeichert wird, gibt es eine 
 
 ### ASRP {#asrp}
 
-Im Fall von ASRP wird UGC nicht in JCR gespeichert, sondern in einem Cloud-Dienst gespeichert, der von Adobe gehostet und verwaltet wird. In ASRP gespeicherte UGC können weder mit CRXDE Lite angezeigt werden noch mit der JCR-API aufgerufen werden.
+Bei ASRP wird UGC nicht in JCR gespeichert, sondern in einem Cloud-Dienst gespeichert, der von der Adobe gehostet und verwaltet wird. In ASRP gespeicherte UGC können weder mit CRXDE Lite angezeigt noch über die JCR-API aufgerufen werden.
 
 Siehe [ASRP - Adobe Datenspeicherung Resource Provider](asrp.md).
 
@@ -78,23 +82,23 @@ ASRP verwendet Adobe Cloud für Abfragen.
 
 ### MSRP {#msrp}
 
-Bei MSRP wird UGC nicht in JCR gespeichert, sondern in MongoDB. In MSRP gespeicherte UGC können weder mit CRXDE Lite angezeigt werden noch mit der JCR-API auf sie zugegriffen werden.
+Bei MSRP wird UGC nicht in JCR gespeichert, sondern in MongoDB. In MSRP gespeicherte UGC können weder mit CRXDE Lite angezeigt noch über die JCR-API aufgerufen werden.
 
 See [MSRP - MongoDB Storage Resource Provider](msrp.md).
 
-Während MSRP mit ASRP vergleichbar ist, da alle AEM-Serverinstanzen auf dasselbe UGC zugreifen, ist es möglich, allgemeine Tools zu verwenden, um direkt auf die in MongoDB gespeicherte UGC zuzugreifen.
+Während MSRP mit ASRP vergleichbar ist, da alle AEM Serverinstanzen auf dasselbe UGC zugreifen, ist es möglich, allgemeine Tools zu verwenden, um direkt auf die in MongoDB gespeicherte UGC zuzugreifen.
 
 MSRP verwendet Solr für Abfragen.
 
 ### JSRP {#jsrp}
 
-JSRP ist der Standardanbieter für den Zugriff auf alle UGC auf einer einzelnen AEM-Instanz. Es bietet die Möglichkeit, AEM Communities 6.1 schnell zu erleben, ohne dass MSRP oder ASRP eingerichtet werden müssen.
+JSRP ist der Standardanbieter für den Zugriff auf alle UGC in einer einzigen AEM. Es bietet die Möglichkeit, AEM Communities 6.1 schnell zu erleben, ohne MSRP oder ASRP einrichten zu müssen.
 
 Siehe [JSRP - JCR Datenspeicherung Resource Provider](jsrp.md).
 
-Im Fall von JSRP wird, während UGC in JCR gespeichert ist und sowohl über CRXDE Lite- als auch über die JCR-API auf sie zugegriffen werden kann, dringend empfohlen, dass JCR-API nie dazu verwendet wird. Andernfalls können zukünftige Änderungen den benutzerdefinierten Code beeinflussen.
+Im Falle von JSRP wird, während UGC in JCR gespeichert ist und sowohl über die CRXDE Lite- als auch über die JCR-API zugänglich ist, dringend empfohlen, dass JCR-API nie dazu verwendet wird. Andernfalls können sich zukünftige Änderungen auf benutzerdefinierten Code auswirken.
 
-Darüber hinaus wird das Repository für die Autor- und Veröffentlichungs-Umgebung nicht freigegeben. Während ein Cluster aus Instanzen im Veröffentlichungsmodus zu einem Repository im freigegebenen Veröffentlichungsmodus führt, ist beim Autor kein im Veröffentlichungsmodus eingegebener UGC sichtbar, sodass keine Möglichkeit besteht, UGC vom Autor zu verwalten. UGC wird nur im AEM-Repository (JCR) der Instanz beibehalten, in der es eingegeben wurde.
+Darüber hinaus wird das Repository für die Autor- und Veröffentlichungs-Umgebung nicht freigegeben. Während ein Cluster aus Instanzen im Veröffentlichungsmodus zu einem Repository im freigegebenen Veröffentlichungsmodus führt, ist beim Autor kein im Veröffentlichungsmodus eingegebener UGC sichtbar, sodass keine Möglichkeit besteht, UGC vom Autor zu verwalten. UGC wird nur im AEM Repository (JCR) der Instanz beibehalten, in der es eingegeben wurde.
 
 JSRP verwendet die Oak-Indizes für Abfragen.
 
