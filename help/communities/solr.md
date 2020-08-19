@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 2%
 
 ---
 
 
 # Solr-Konfiguration für SRP {#solr-configuration-for-srp}
 
-## Solr für AEM-Plattform {#solr-for-aem-platform}
+## Solr für AEM Plattform {#solr-for-aem-platform}
 
 Eine [Apache Solr](https://lucene.apache.org/solr/) -Installation kann mithilfe verschiedener Sammlungen zwischen dem [Node Store](../../help/sites-deploying/data-store-config.md) (Oak) und [Common Store](working-with-srp.md) (SRP) freigegeben werden.
 
@@ -80,7 +83,8 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 #### 2. Create a collection {#create-a-collection}
 
 Referenz:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
+](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Nutzung:
 ./bin/solr create \
@@ -143,20 +147,20 @@ Die folgenden 33 Sprachen werden in Advanced MLS unterstützt.
 
 **Hinweis**: AEM 6.1 bezieht sich auf AEM 6.1 Communities FP3 und früher.
 
-![chlimage_1-283](assets/chlimage_1-283.png)
+![Compar-solr-mls](assets/compare-solr-mls.png)
 
 ### Installieren von Standard MLS {#installing-standard-mls}
 
 Für die SRP-Sammlung (entweder MSRP oder DSRP) muss zur Unterstützung der standardmäßigen mehrsprachigen Suche (MLS) zwei der Solr-Konfigurationsdateien geändert werden:
 
-* **Schema.xml**
+* **schema.xml**
 * **solrconfig.xml**
 
 Standard-MLS-Dateien (Schema.xml, solrconfig.xml) für Solr 4.10.
 
 Standard-MLS-Dateien (Schema.xml, solrconfig.xml) für Solr 5.x.
 
-Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
+Die Standard-MLS-Dateien werden im AEM Repository gespeichert.
 
 **Hinweis**: Die Solr-Dateien werden zwar im Ordner msrp/ gespeichert, aber auch für DSRP (keine Änderungen erforderlich).
 
@@ -217,11 +221,11 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 
 Damit die SRP-Sammlung (MSRP oder DSRP) erweiterte MLS unterstützen kann, sind zusätzlich zu einer benutzerdefinierten Schema- und Solr-Konfiguration neue Solr-Plug-Ins erforderlich. Alle erforderlichen Elemente werden in einer herunterladbaren ZIP-Datei zusammengefasst. Darüber hinaus wird ein Installationsskript zur Verwendung bereitgestellt, wenn Solr im eigenständigen Modus bereitgestellt wird.
 
-Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt &quot;Bereitstellen&quot;der Dokumentation.
+Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM Erweitertes MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt &quot;Bereitstellen&quot;der Dokumentation.
 
 Erste Schritte mit der Installation für die SolrCloud oder den eigenständigen Modus:
 
-* Laden Sie das AEM-SOLR-MLS-ZIP-Archiv auf den Server herunter, auf dem Solr gehostet wird.
+* Laden Sie AEM-SOLR-MLS ZIP Archiv herunter, um Solr auf dem Server zu hosten.
 * Entpacken Sie das Archiv.
 
 #### SolrCloud-Modus - Erweitertes MLS {#solrcloud-mode-advanced-mls}
@@ -231,10 +235,10 @@ Installationsanweisungen - Beachten Sie die folgenden Unterschiede für Solr4 un
 1. Installieren und konfigurieren Sie Solr im SolrCloud-Modus.
 1. Extrahieren Sie den Inhalt des erweiterten MLS-Pakets auf die Festplatte. Der Inhalt sollte Folgendes umfassen:
 
-   * **Schema.xml**
+   * **schema.xml**
    * **solrconfig.xml**
    * **Stoppwörter/** Ordner
-   * **Profile/** Ordner
+   * **profile/** Ordner
    * **extra-libs/** folder
 
 1. Vorbereitung einer neuen Konfiguration:
