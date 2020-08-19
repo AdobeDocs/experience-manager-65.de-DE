@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 2%
 
 ---
 
@@ -59,7 +62,7 @@ Für eine Community-Site ist es notwendig, nach der Veröffentlichung der Site u
 
 Im Folgenden sehen Sie, wie es in CRXDE angezeigt wird, wenn ein Administrator Leserechte `/etc/tags/ski-catalog` für die Gruppe anwendet `Community Enable Members`.
 
-![chlimage_1-420](assets/chlimage_1-420.png)
+![site-tags](assets/site-tags.png)
 
 ## Kataloge Tag-Namensraum {#catalog-tag-namespaces}
 
@@ -67,7 +70,7 @@ Die Katalogfunktion verwendet Tags, um sich selbst zu definieren. Wenn Sie die K
 
 Die Funktion &quot;Katalog&quot;enthält eine Tag-Einstellung, mit der die in der Filter-Benutzeroberfläche für den Katalog aufgelisteten Tags definiert werden. Die Einstellung &quot;Alle Namensraum&quot;bezieht sich auf den Umfang der Tag-Namensraum, die für die Community-Site ausgewählt wurden.
 
-![chlimage_1-421](assets/chlimage_1-421.png)
+![catalog-Namensraum](assets/catalog-namespace.png)
 
 ## Tags auf Aktivierungsressourcen anwenden {#applying-tags-to-enablement-resources}
 
@@ -88,7 +91,7 @@ Daher werden alle Aktivierungsressourcen mit einem der folgenden Tags versehen:
 
 angezeigt wird, `Ski Catalog` nachdem die Aktivierungsressource veröffentlicht wurde.
 
-![chlimage_1-422](assets/chlimage_1-422.png)
+![basic-info](assets/applytags-basicinfo.png)
 
 ## Ansicht des Katalogs bei der Veröffentlichung {#viewing-catalog-on-publish}
 
@@ -100,5 +103,5 @@ Wenn Tag-Namensraum hinzugefügt wurden und fehlen, stellen Sie sicher, dass die
 
 Wenn nach der Auswahl eines Tags beim Anzeigen des Katalogs keine Aktivierungsressourcen angezeigt werden, stellen Sie sicher, dass ein Tag aus dem Namensraum des Katalogs bzw. den Katalogs auf die Aktivierungsressource angewendet wurde.
 
-![chlimage_1-423](assets/chlimage_1-423.png)
+![ansicht-Katalog](assets/viewcatalog.png)
 
