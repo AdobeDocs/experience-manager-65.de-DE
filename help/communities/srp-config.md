@@ -1,6 +1,6 @@
 ---
-title: Speicher  Konfiguration
-seo-title: Speicher  Konfiguration
+title: Speicherkonfiguration
+seo-title: Speicherkonfiguration
 description: Zugriff auf die Datenspeicherung Configuration Console
 seo-description: Zugriff auf die Datenspeicherung Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 Die Konfiguration der Datenspeicherung ist das Mittel zur Identifizierung der Datenspeicherung, die für Community-Inhalte gewählt wurde, auch als benutzergenerierte Inhalte (UGC) bezeichnet.
 
-Diese Einstellung informiert den AEM Communities-Code darüber, welche Implementierung des Datenspeicherung Resource Provider (SRP) beim Zugriff auf UGC verwendet werden soll, und muss die bei der Bereitstellung von AEM festgelegte Topologie widerspiegeln.
+Diese Einstellung informiert den AEM Communities-Code darüber, welche Implementierung des Datenspeicherung Resource Provider (SRP) beim Zugriff auf UGC verwendet werden soll, und muss die bei der Bereitstellung der AEM festgelegte Topologie widerspiegeln.
 
 Eine Diskussion der Optionen für die Datenspeicherung und der Bereitstellungstopologien finden Sie unter:
 
@@ -28,7 +31,7 @@ Eine Diskussion der Optionen für die Datenspeicherung und der Bereitstellungsto
 
 ## Datenspeicherung Configuration Console {#storage-configuration-console}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 In der Autorenkonfiguration, um die Datenspeicherung-Konfigurationskonsole zu erreichen.
 
@@ -47,7 +50,7 @@ So wählen Sie eine andere Datenspeicherung als die Standard-JCR-Option aus:
 
 ### Informationen zur JCR-Datenspeicherung {#about-jcr-storage}
 
-Beachten Sie, dass bei fehlender Auswahl standardmäßig das AEM-Repository JCR verwendet wird.
+Beachten Sie, dass bei fehlender Auswahl das AEM Repository JCR standardmäßig verwendet wird.
 
 JCR ist *kein* gemeinsamer Speicher für Autoren- und Veröffentlichungsfunktionen. Der Community-Inhalt ist nur von der Autor- oder Veröffentlichungsdatei sichtbar, in der er erstellt wurde.
 
