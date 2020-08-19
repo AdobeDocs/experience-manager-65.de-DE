@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Die SRP-API ist keine abstrakte Klasse, sondern eine Schnittstelle. Eine benutze
 
 Die Mittel zur Verwendung der SRP-API werden über bereitgestellte Hilfsprogramme bereitgestellt, z. B. im Paket SocialResourceUtilities.
 
-Beim Aktualisieren von AEM 6.0 oder früher müssen Sie UGC für alle SRP migrieren, für die ein Open-Source-Tool verfügbar ist. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Bei der Aktualisierung von AEM 6.0 oder früher muss UGC für alle SRP migriert werden, für die ein Open-Source-Tool verfügbar ist. See [Upgrading to AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -102,17 +105,17 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## Standorte für kontextbezogene Datenspeicherung {#ugc-related-storage-locations}
 
-Die folgenden Beschreibungen der Position der Datenspeicherung können bei der Entwicklung mit JSRP oder vielleicht MSRP hilfreich sein. Es gibt derzeit keine Benutzeroberfläche für den Zugriff auf UGC, die in ASRP gespeichert ist, wie es für JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) und MSRP (MongoDB-Werkzeuge) gibt.
+Die folgenden Beschreibungen der Position der Datenspeicherung können bei der Entwicklung mit JSRP oder vielleicht MSRP hilfreich sein. Es gibt derzeit keine Benutzeroberfläche für den Zugriff auf UGC, die in ASRP gespeichert ist, wie es für JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) und MSRP (MongoDB-Tools) gibt.
 
 **Komponentenposition**
 
-Wenn ein Mitglied in der Umgebung zum Veröffentlichen in das UGC wechselt, interagiert es mit einer Komponente als Teil einer AEM-Site.
+Wenn ein Mitglied in der Umgebung zum Veröffentlichen in das UGC wechselt, interagiert es mit einer Komponente als Teil einer AEM Site.
 
 Ein Beispiel für eine solche Komponente ist die [Kommentarkomponente](http://localhost:4502/content/community-components/en/comments.html) , die auf der Website &quot; [Community-Komponenten-Handbuch](components-guide.md) &quot;vorhanden ist. Der Pfad zum Kommentarknoten im lokalen Repository lautet:
 
 * Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-**Speicherort des Schatten-Knotens**
+**Speicherort des Shadow-Knotens**
 
 Bei der Erstellung von UGC wird auch ein [Shadow-Knoten](srp.md#about-shadow-nodes-in-jcr) erstellt, auf den die erforderlichen ACLs angewendet werden. Der Pfad zum entsprechenden Shadow-Knoten im lokalen Repository ist das Ergebnis, wenn der Shadow-Knoten-Stammpfad dem Komponentenpfad vorangestellt wird:
 
@@ -126,7 +129,7 @@ Die UGC wird an keinem dieser Orte erstellt und sollte nur mit einer [Dienstprog
 * Stammverzeichnis = `/content/usergenerated/asi/srp-choice`
 * UGC-Knoten für JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Achten Sie darauf*, dass der UGC-Knoten für JSRP *nur* auf der AEM-Instanz (Autor oder Veröffentlichung) vorhanden ist, auf der er eingegeben wurde. Bei der Eingabe in eine Veröffentlichungsinstanz ist eine Moderation in der Moderationskonsole beim Autor nicht möglich.
+*Beachten* Sie, dass der UGC-Knoten für JSRP *nur* auf der AEM Instanz (Autor oder Veröffentlichungsinstanz) vorhanden ist, auf der er eingegeben wurde. Bei der Eingabe in eine Veröffentlichungsinstanz ist eine Moderation in der Moderationskonsole beim Autor nicht möglich.
 
 ## Verwandte Informationen {#related-information}
 
