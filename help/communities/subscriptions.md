@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Komponenten müssen konfiguriert werden, um Abonnement zu aktivieren *und* Folge
 
 ## Abonnements aus folgenden {#subscriptions-from-following}
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![abonnement-folgende](assets/subscription-following.png)
 
 Über die Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, Abonnements und/oder Benachrichtigungen folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten.
 
@@ -61,9 +64,9 @@ Wenn E-Mail für die Beantwortung per E-Mail [](email.md#configure-polling-impor
 
 Wenn sie auf die E-Mail antworten, erscheinen die Inhalte, die sie in der Antwort eingeben, online als Inhalt.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![email-response](assets/email-reply.png)
 
 Die Zeitdauer, die für die Veröffentlichung einer Antwort benötigt wird, wird durch das Aktualisierungsintervall [des](email.md#configure-polling-importer)Abfragenimporteurs gesteuert.
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![QA](assets/qa.png)
 
