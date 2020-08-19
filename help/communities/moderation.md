@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Moderation Console {#moderation-console}
 
-In AEM Communities ist eine Massenmoderation von [Community-Inhalten](/help/communities/moderate-ugc.md) sowohl aus der Autor- als auch aus der Veröffentlichungs-Umgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).
+In AEM Communities ist eine Massenmoderation von [Community-Inhalten](/help/communities/moderate-ugc.md) sowohl von der Autor- als auch von der Veröffentlichungs-Umgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).
 
 Administratoren und Community-Moderatoren können auch [kontextbezogene Moderationen](/help/communities/in-context.md) in der Veröffentlichungs-Umgebung durchführen.
 
@@ -241,22 +241,22 @@ Zusätzlich zu den vordefinierten Filtern in der [Filterleiste](/help/communitie
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Das [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) auf Github implementiert den Tag-Filter, um die UGC-Liste nach Anwendung der spezifischen Tags auf benutzergenerierte Inhalte zu filtern. Sie können dem Beispielcode folgen und analoge Filter für andere ähnliche UGC-Metadatenfelder erstellen.
+Das [Beispielprojekt](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) auf Github implementiert den Tag-Filter, um die UGC-Liste nach Anwendung der spezifischen Tags auf benutzergenerierte Inhalte zu filtern. Sie können dem Beispielcode folgen und analoge Filter für andere ähnliche UGC-Metadatenfelder erstellen.
 
 So installieren Sie das Beispiel für den Filter &quot;Tags&quot;:
 
-1. Öffnen Sie den Package Manager in der Instanz &quot;AEM Author&quot;([https://[AEM-Autor]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) und &quot;AEM Publish&quot;([https://[AEM-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Öffnen Sie den Paketmanager in der AEM Author-Instanz ([https://[AEM-Autor]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) und in der AEM Publish-Instanz ([https://[AEM-Veröffentlichungsmodus]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Erstellen Sie das Paket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` aus dem Github-Code und installieren und aktivieren Sie dasselbe.
-1. Öffnen Sie die Bundles-Konsole in der AEM Author- ( `https://[aem-author]:4502/system/console/bundles`) und AEM Publish-Instanz ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Öffnen Sie die Bundles-Konsole auf der AEM Author-Instanz ( `https://[aem-author]:4502/system/console/bundles`) und der AEM Publish-Instanz ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Erstellen Sie das Paket ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` von Github und installieren und aktivieren Sie dasselbe.
 1. Wechseln Sie zum Knoten **/apps/social/moderation/facets** auf AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) und AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
-1. Hinzufügen einem technischen Benutzer **community-utility-reader** mit `jcr:read` Berechtigungen.
+1. hinzufügen einem technischen Benutzer **community-utility-reader** mit `jcr:read` Berechtigungen.
 
 So machen Sie die benutzerdefinierten Filter auf bestehenden Websites der Gemeinschaft verfügbar:
 
 1. Bearbeiten `Clientlibs` der vorhandenen Moderationsseite `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
-   * Hinzufügen neue Kategorie `cq.social.hbs.moderation.v2.`
+   * hinzufügen neue Kategorie `cq.social.hbs.moderation.v2.`
 
 1. Wechseln zu `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
@@ -365,7 +365,7 @@ Beispiel:
 
 #### Details anzeigen {#view-detail}
 
-![Ansicht](assets/view.png)
+![ansicht](assets/view.png)
 
 Wenn Sie mit einem einzelnen Beitrag arbeiten, können Sie weitere Details anzeigen, indem Sie das UGC im Detailmodus öffnen.
 
