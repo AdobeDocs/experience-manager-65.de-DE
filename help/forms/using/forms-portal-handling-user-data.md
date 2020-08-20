@@ -9,14 +9,17 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+workflow-type: tm+mt
+source-wordcount: '859'
+ht-degree: 60%
 
 ---
 
 
 # Forms-Portal | Umgang mit Benutzerdaten {#forms-portal-handling-user-data}
 
-Das AEM Forms-Portal stellt Komponenten bereit, mit denen Sie adaptive Formulare, HTML5-Formulare und andere Forms-Assets auf der AEM Sites-Seite auflisten können. Darüber hinaus können Sie sie so konfigurieren, dass Entwürfe und eingereichte adaptive Formulare und HTML5-Formulare für einen angemeldeten Benutzer angezeigt werden. For more information about forms portal, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] portal stellt Komponenten bereit, die Sie zur Liste adaptiver Formulare, HTML5-Formulare und anderer Forms-Elemente auf der [!DNL AEM Sites] Seite verwenden können. Darüber hinaus können Sie sie so konfigurieren, dass Entwürfe und eingereichte adaptive Formulare und HTML5-Formulare für einen angemeldeten Benutzer angezeigt werden. For more information about forms portal, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
 
 Wenn ein angemeldeter Benutzer ein adaptives Formular als Entwurf speichert oder übermittelt, wird es auf den Registerkarten Entwürfe und Sendungen im Forms-Portal angezeigt. Die Daten für Entwürfe oder übermittelte Formulare werden in dem für die AEM-Bereitstellung konfigurierten Datenspeicher gespeichert. Die Entwürfe und Sendungen anonymer Benutzer werden nicht auf der Forms-Portalseite angezeigt. Die Daten werden jedoch im konfigurierten Datenspeicher gespeichert. Weitere Informationen finden Sie unter [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
 
@@ -25,7 +28,7 @@ Wenn ein angemeldeter Benutzer ein adaptives Formular als Entwurf speichert oder
 Das Forms-Portal speichert Daten für Entwürfe und übermittelte Formulare in folgenden Szenarien:
 
 * Die Sendeaktion, die im adaptiven Formular konfiguriert wird, lautet **Forms-Portal-Sendeaktion**.
-* For submit actions other than **Forms Portal Submit Action**, the **[!UICONTROL Store data in forms portal]** option is enabled in the **Submission** properties of the adaptive form container.
+* For submit actions other than **Forms Portal Submit Action**, the **[!UICONTROL Store data in forms portal]** option is enabled in the **[!UICONTROL Submission]** properties of the adaptive form container.
 
 Forms-Portal speichert für jeden Entwurf und jedes übermittelte Formular für angemeldete und anonyme Benutzer folgende Daten:
 
@@ -40,7 +43,7 @@ Abhängig von der konfigurierten Datenspeicherpersistenz werden Entwürfe und ü
   <tr>
    <td><p><strong>Persistenztyp</strong></p> </td>
    <td><p><strong>Datenspeicher</strong></p> </td>
-   <td><p><strong>Standort</strong></p> </td>
+   <td><p><strong>Ort</strong></p> </td>
   </tr>
   <tr>
    <td><p>Default</p> </td>
@@ -94,7 +97,7 @@ The following table explains how the data for all drafts by `srose` is stored in
 
 Um Benutzerdaten aus Entwürfen und Sendungen für einen angemeldeten Benutzer von AEM-Systemen vollständig zu löschen, müssen Sie den Knoten `user ID` für einen bestimmten Benutzer vom Author-Knoten löschen. Sie müssen Daten manuell von allen anwendbaren AEM-Instanzen löschen.
 
-Drafts and submission data for all anonymous users is stored within the common `drafts` and `submit` nodes under `/content/forms/fp/anonymous`. Es gibt keine Methode, um Daten für einen bestimmten anonymen Benutzer zu finden, sofern keine identifizierbaren Informationen bekannt sind. In diesem Fall können Sie nach den Informationen suchen, die den anonymen Benutzer im AEM-Repository identifizieren, und den Knoten, der ihn enthält, manuell aus allen anwendbaren AEM-Instanzen löschen, um Daten aus dem AEM-System zu entfernen. However, to delete data for all anonymous users, you can delete the `anonymous` node to remove drafts and submissions data for all anonymous users.
+Drafts and submission data for all anonymous users is stored within the common `drafts` and `submit` nodes under `/content/forms/fp/anonymous`. Es gibt keine Methode, Daten für einen bestimmten anonymen Benutzer zu finden, es sei denn, es sind bestimmte identifizierbare Informationen bekannt. In diesem Fall können Sie in AEM Repository nach Informationen suchen, die den anonymen Benutzer identifizieren, und den Knoten, der ihn enthält, manuell aus allen entsprechenden AEM-Instanzen löschen, um Daten aus dem AEM zu entfernen. However, to delete data for all anonymous users, you can delete the `anonymous` node to remove drafts and submissions data for all anonymous users.
 
 ### Datenbank {#database}
 
