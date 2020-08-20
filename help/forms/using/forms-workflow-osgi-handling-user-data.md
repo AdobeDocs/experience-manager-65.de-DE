@@ -8,7 +8,10 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+workflow-type: tm+mt
+source-wordcount: '1011'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +23,7 @@ Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularze
 Ein formularzentrierter Workflow kann über eine der folgenden Methoden ausgelöst oder gestartet werden:
 
 * Senden einer Anwendung aus dem AEM-Posteingang
-* Senden einer Anwendung aus der AEM Forms-App
+* Submitting an application from AEM [!DNL Forms] App
 * Senden eines adaptiven Formulars
 * Überwachten Ordner verwenden
 * Einreichen einer interaktiven Mitteilung oder eines Briefes
@@ -41,8 +44,8 @@ Die Standardspeicherorte des Repositorys, in denen Nutzlast, Entwürfe und der V
  <tbody>
   <tr>
    <td> </td>
-   <td>AEM 6.4 Forms</td>
-   <td>AEM 6.3 Forms</td>
+   <td><b>AEM 6.4 [!DNL Forms]</b></td>
+   <td><b>AEM 6.3 [!DNL Forms]</b></td>
   </tr>
   <tr>
    <td><strong>Workflow<br />-Instanz</strong></td>
@@ -87,9 +90,11 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 1. Führen Sie abhängig von den verfügbaren Informationen eine der folgenden Abfragen aus:
 
    * Führen Sie Folgendes aus, wenn der Workflow-Initiator bekannt ist:
+
    `SELECT &ast; FROM [cq:Workflow] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[initiator]='*initiator-ID*'`
 
    * Führen Sie Folgendes aus, wenn der Benutzer, dessen Daten Sie finden, der aktuelle Workflow-Verantwortliche ist:
+
    `SELECT &ast; FROM [cq:WorkItem] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[assignee]='*assignee-id*'`
 
    Die Abfrage gibt den Speicherort aller Workflow-Instanzen für den angegebenen Workflow-Initiator oder den aktuellen Workflow-Empfänger zurück.
@@ -116,9 +121,9 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
 1. Wiederholen Sie die Schritte 3 bis 5 für alle Workflow-Instanzen, die von der Abfrage in Schritt 2 zurückgegeben wurden.
 
->[!NOTE]
->
->Die AEM Forms-App speichert Daten auch im Offline-Modus. Es ist möglich, dass Daten für eine Workflow-Instanz lokal auf einzelnen Geräten gespeichert und an den Forms-Server gesendet werden, wenn die App mit dem Server synchronisiert wird.
+   >[!NOTE]
+   >
+   >AEM [!DNL Forms] app also stores data in offline mode. It is possible that data for a workflow instance is locally stored on individual devices and gets submitted to the [!DNL Forms] server when the app synchronizes with the server.
 
 ### Benutzerdaten löschen {#delete-user-data}
 
@@ -136,9 +141,10 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
    1. Go to `https://'[server]:[port]'/aem/start.html` and log in with administrator credentials.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
    1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]**, um die laufenden Instanzen zu beenden.
-   For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
 
-1. Wechseln Sie zur CRXDE Lite-Konsole, navigieren Sie zum Nutzlastpfad für eine Workflow-Instanz und löschen Sie den Knoten `payload`.
+      For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
+
+1. Go to [!DNL CRXDE Lite] console, navigate to the payload path for a workflow instance, and delete the `payload` node.
 1. Navigieren Sie zum Entwurfspfad für eine Workflow-Instanz und löschen Sie den Knoten `draft`.
 1. Navigate to the history path for a workflow instance, and delete the `history` node.
 1. Navigate to the workflow instance path for a workflow instance, and delete the `[workflow-instance-ID]` node for the workflow.
@@ -148,11 +154,11 @@ Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
    >Durch das Löschen des Workflow-Instanzknotens wird die Workflow-Instanz für alle Workflow-Teilnehmer entfernt.
 
 1. Wiederholen Sie die Schritte 2 bis 6 für alle Workflow-Instanzen, die für einen Benutzer identifiziert wurden.
-1. Identifizieren und löschen Sie Offline-Entwurfs- und -Sendedaten aus dem AEM Forms-App-Ausgang von Workflow-Teilnehmern, um eine Sendung an den Server zu vermeiden.
+1. Identify and delete offline draft and submission data from AEM [!DNL Forms] app outbox of workflow participants to avoid any submission to the server.
 
 Sie können auch APIs verwenden, um auf Knoten und Eigenschaften zuzugreifen und sie zu entfernen. Weitere Informationen finden Sie in den folgenden Dokumente.
 
 * [Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR](/help/sites-developing/access-jcr.md)
-* [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/de/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API-Referenz](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
 
