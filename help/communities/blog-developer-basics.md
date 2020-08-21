@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Blog Essentials {#blog-essentials}
 
-Ab AEM 6.1 Communities ist ein Blog eine Community-Aktivität. Blog-Artikel werden jetzt aus der Umgebung &quot;Veröffentlichen&quot;gepostet, wo zuvor nur Blog-Artikel in der Autorendatei erstellt und veröffentlicht werden konnten.
+Seit AEM 6.1 Communities ist ein Blog eine Community-Aktivität. Blog-Artikel werden jetzt aus der Umgebung &quot;Veröffentlichen&quot;gepostet, wo zuvor nur Blog-Artikel in der Autorendatei erstellt und veröffentlicht werden konnten.
 
 Blog-Artikel können jetzt von jedem Community-Mitglied erstellt werden, es sei denn, sie sind auf privilegierte Mitglieder beschränkt.
 
@@ -71,8 +71,8 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 
 | **resourceType** | social/Protokoll/components/hbs/sidebar |
 |---|---|
-| [**einschließbar **](/help/communities/scf.md#add-or-include-a-communities-component) | Nein |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**einschließbar**](/help/communities/scf.md#add-or-include-a-communities-component) | Nein |
+| [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **Eigenschaften** | siehe [Blog-Funktion](/help/communities/blog-feature.md) |
@@ -115,7 +115,7 @@ Weitere Informationen finden Sie unter [Primär Publisher](/help/communities/dep
 
 ## Rich Media zulassen {#allowing-rich-media}
 
-Die AEM-Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie hier beschrieben:
+Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie in
 
 * [Schutz vor Cross-Site Scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
@@ -123,5 +123,5 @@ Ab AEM 6.2 sind die zuvor manuell vorzunehmenden Änderungen in der standardmä�
 
 Rich-Media-Daten werden durch Auswahl des `Embed Media from External Sites` Symbols in einen Blog-Artikel eingebettet:
 
-![chlimage_1-471](assets/chlimage_1-471.png)
+![media](assets/media-icon.png)
 
