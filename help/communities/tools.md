@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Um auf die Communities Tools Console zuzugreifen, melden Sie sich bei Ihrer Auto
 
 * Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Communities]**.
 
-   ![chlimage_1-129](assets/chlimage_1-129.png)
+   ![Communities](assets/communities-home.png)
 
 * [Site-Vorlagen](sites.md) - Konsole für die Erstellung und Verwaltung von Sitevorlagen.
 
