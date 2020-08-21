@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -29,7 +29,7 @@ Diese Verfolgungsmöglichkeit bietet eine zusätzliche Art der Aktivitätenansic
 
 Das Dokument beschreibt:
 
-* Hinzufügen der Aktivität Streams-Komponente zu einer AEM-Site
+* Hinzufügen der Aktivität Streams-Komponente zu einer AEM Site
 * Konfigurationseinstellungen für die Aktivität Streams-Komponente
 
 ### Hinzufügen von Aktivitäts-Streams zu einer Seite {#adding-activity-streams-to-a-page}
@@ -44,13 +44,13 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![aktivität-Streams](assets/activity-component.png)
 
 ### Konfigurieren von Aktivitäts-Streams {#configuring-activity-streams}
 
 Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![konfigurieren](assets/configure-new.png)
 
 Auf der Registerkarte **Benutzeraktivitäten** können Sie festlegen, welche Aktivitäten angezeigt werden sollen:
 
@@ -80,7 +80,7 @@ Auf der Registerkarte **Benutzeraktivitäten** können Sie festlegen, welche Akt
 
 Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [Blog](/help/communities/blog-feature.md), [Forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [Kalender](/help/communities/calendar.md), [Dateibibliothek](/help/communities/file-library.md)[](/help/communities/comments.md)undKommentare.
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![after-Ansicht](assets/following-activities.png)
 
 Über die Schaltfläche &quot; **Folgen** &quot;können Sie Einträgen wie Aktivitäten, [Benachrichtigungen](/help/communities/notifications.md)oder [Abonnement](/help/communities/subscriptions.md)folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
 
