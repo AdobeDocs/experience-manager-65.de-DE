@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 3cbcd23254e16231a199276aa2f9e70d6ff39b34
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 84%
@@ -23,11 +23,11 @@ ht-degree: 84%
 
 Gehen Sie folgendermaßen vor, um ein adaptives Formular zu erstellen.
 
-1. Zugriff auf die Autoreninstanz von AEM Forms unter `https://'[server]:[port]'/<custom-context-if-any>.`
+1. Zugriff auf AEM Forms Authoring-Instanz unter `https://'[server]:[port]'/<custom-context-if-any>.`
 
 1. Geben Sie Ihre Anmeldedaten auf der AEM-Anmeldeseite ein.
 
-   Wenn Sie sich angemeldet haben, tippen Sie in der oberen linken Ecke auf **[!UICONTROL Adobe Experience Manager > Formulare > Formulare und Dokumente]**.
+   After you are logged in, in the top-left corner, tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
 
    >[!NOTE]
    >
@@ -144,7 +144,7 @@ Führen Sie folgende Schritte aus, um ein XML- oder JSON-Schema als Formularmode
 
 ## Adaptive Formularvorlagen {#adaptive-form-templates}
 
-Eine Vorlage bietet eine Grundstruktur für adaptive Formulare und definiert deren Erscheinungsbild (Layouts und Stile). Sie enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Standardmäßig stellt AEM Forms einige adaptive Formularvorlagen bereit. Um das vollständige Vorlagenpaket einschließlich erweiterter Vorlagen zu erhalten, müssen Sie das Add-On-Paket für AEM Forms installieren. For more information, see [Installing AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+Eine Vorlage bietet eine Grundstruktur für adaptive Formulare und definiert deren Erscheinungsbild (Layouts und Stile). Sie enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Standardmäßig stellt AEM Forms einige adaptive Formularvorlagen bereit. Um das vollständige Vorlagenpaket einschließlich erweiterter Vorlagen zu erhalten, müssen Sie das AEM Forms Add-On-Paket installieren. For more information, see [Installing AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 Darüber hinaus können Sie den Vorlageneditor verwenden, um eigene Vorlagen zu erstellen. Weitere Informationen zu Vorlagen finden Sie unter [Adaptive Formularvorlagen](/help/forms/using/template-editor.md).
 
