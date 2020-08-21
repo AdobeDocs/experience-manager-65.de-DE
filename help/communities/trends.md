@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 30%
+ht-degree: 29%
 
 ---
 
@@ -35,7 +35,7 @@ Das Dokument beschreibt:
 
 Daten für die `Community Activity List` sind nur verfügbar, wenn Adobe Analytics für die Community-Site lizenziert und konfiguriert ist.
 
-Informationen zu Communities-Funktionen finden Sie unter [Analytics-Konfiguration](/help/communities/analytics.md).
+Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md).
 
 ### Adding a Community Activity List to a Page {#adding-a-community-activity-list-to-a-page}
 
@@ -55,11 +55,11 @@ Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente
 
 Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![konfigurieren](assets/configure-new.png)
 
 Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![Eigenschaften](assets/activity-list-properties.png)
 
 * **Typ**
 
@@ -126,5 +126,5 @@ Konfiguration **Wichtigste Besucher** (Top Visitors): Typ = Mitglieder, Aktivit
 
 **Konfigurieren des Trendinhalts** : Typ = Aktivität, Typ = Beiträge
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![components](assets/activity-list-components.png)
 
