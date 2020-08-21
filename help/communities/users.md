@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -71,18 +74,18 @@ Verwenden Sie die [Sicherheitskonsole, um in der Authoring-Umgebung registrierte
 
 ### Rollen der Autorengruppe {#author-group-roles}
 
-| Wenn Mitglied der Gruppe... | Primäre Rolle |
+| Wenn Mitglied der Gruppe... | Primär |
 |---|---|
 | administrators | Die Gruppe &quot;Administratoren&quot;besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe &quot;Community-Administratoren&quot;zu verwalten. |
 | Community-Administratoren | Die Gruppe &quot;Community-Administratoren&quot;wird automatisch Mitglied aller Community-Sites und aller Community-Gruppen, die auf der Site erstellt wurden. Ein erstes Mitglied der Gruppe &quot;Community-Administratoren&quot;ist die Gruppe &quot;Administratoren&quot;. In der Umgebung &quot;Autor&quot;können Community-Administratoren Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community verbieten) und Inhalte moderieren. |
-| Community &lt;*Site-Name*> SiteContent Manager | Der Community Site Content Manager kann herkömmliche AEM-Authoring-, Inhaltserstellung- und Änderungsseiten für eine Community-Site durchführen. |
+| Community &lt;*Site-Name*> SiteContent Manager | Der Site Content Manager der Community kann herkömmliche AEM erstellen, Inhalte erstellen und Seiten für eine Community-Site ändern. |
 | Community-Aktivierungsmanager | Die Gruppe Community-Berechtigungsmanager besteht aus Benutzern, die für die Zuweisung zur Verwaltung der Gruppe der Berechtigungsmanager einer Community-Site zur Verfügung stehen. |
 | Community &lt;*Site-Name* > SiteEnabledManager | Die Community-Site-Aktivierungsmanager-Gruppe besteht aus Benutzern, die mit der Verwaltung der [Ressourcen](resources.md)für die Aktivierung einer Community-Site betraut wurden. |
 | Keine | Ein anonymer Site-Besucher kann nicht auf die Autorendatei zugreifen. |
 
 ### Systemadministratoren {#system-administrators}
 
-Mitglieder der Administratorgruppe sind Systemadministratoren, die die Ersteinrichtung einer AEM-Umgebung sowohl für Autoren- als auch für Veröffentlichungsfunktionen durchführen können.
+Mitglieder der Administratorgruppe sind Systemadministratoren, die sowohl für Autoren- als auch für Veröffentlichungs-Umgebung die Ersteinrichtung einer AEM durchführen können.
 
 Zu Demonstrations- und Entwicklungszwecken verfügt die Administratorgruppe über ein Mitglied, dessen Benutzer *admin* und Kennwort *admin* lautet.
 
@@ -111,16 +114,16 @@ In der Umgebung &quot;Veröffentlichen&quot;kann je nach [Einstellungen](sites-c
 
 ### Rollen veröffentlichen {#publish-group-roles}
 
-| Wenn Mitglied der Gruppe... | Primäre Rolle |
+| Wenn Mitglied der Gruppe... | Primär |
 |---|---|
 | Community &lt;*Site-Name*>-Mitglieder | Ein Community-Site-Mitglied ist ein registrierter Benutzer. Sie können sich anmelden, ihr Profil ändern, einer offenen Community-Gruppe beitreten, Inhalte in die Community posten, Nachrichten an andere Mitglieder senden und Site-Aktivitäten folgen. |
 | Community &lt;*Site-Name*>-Moderatoren | Ein Community-Site-Moderator ist ein vertrauenswürdiges Community-Mitglied, das in der Lage ist, UGC entweder stapelweise über die Moderationskonsole oder im Kontext auf der Seite zu moderieren, auf der der Inhalt gepostet wird. |
-| Community &lt;*Site-Name*> &lt;*Gruppenname*>-Mitglieder | Ein Community-Gruppenmitglied ist ein Community-Mitglied, das entweder einer offenen Community-Gruppe beigetreten ist oder zu einer geschlossenen Community-Gruppe eingeladen wurde. Sie haben die Fähigkeiten eines Mitglieds für diese Community-Gruppe innerhalb der Site. |
+| Community &lt;*Site-Name*> &lt;*Gruppenname*>-Member | Ein Community-Gruppenmitglied ist ein Community-Mitglied, das entweder einer offenen Community-Gruppe beigetreten ist oder zu einer geschlossenen Community-Gruppe eingeladen wurde. Sie haben die Fähigkeiten eines Mitglieds für diese Community-Gruppe innerhalb der Site. |
 | Community &lt;*Site-Name*>-Gruppenadministratoren | Ein Community-Site-Gruppenadministrator ist ein vertrauenswürdiges Community-Mitglied, das mit der Erstellung und Verwaltung von Untergruppen (Gruppen) innerhalb einer Community-Site betraut ist. Einbezogen ist die Fähigkeit, kontextbezogene Moderation bereitzustellen. |
 | *Sicherheitsgruppe für berechtigte Mitglieder* | Eine manuell erstellte und gepflegte Benutzergruppe zur Einschränkung der Inhaltserstellung. Siehe Gruppe [berechtigter Mitglieder](#privileged-members-group). |
 | Keine | Ein anonymer Site-Besucher, der die Site entdeckt, kann Ansichten erstellen und Community-Sites suchen, die anonymen Zugriff zulassen. Um Inhalte zu nutzen und zu posten, muss sich der Benutzer selbst registrieren (falls erlaubt) und Mitglied der Community werden. |
 
-### Zuweisen von Mitgliedern zu Rollen in Veröffentlichungsgruppen {#assigning-members-to-publish-group-roles}
+### Zuweisen von Mitgliedern zu Veröffentlichungsgruppenrollen {#assigning-members-to-publish-group-roles}
 
 Bei der [Erstellung einer Community-Site](sites-console.md) in der Authoring-Umgebung oder beim [Ändern der Site-Eigenschaften können den Mitgliedern verschiedene Rollen zugewiesen werden,](sites-console.md#modifying-site-properties) die in der Umgebung zur Veröffentlichung ausgeführt werden, z. B. Moderatoren, Gruppenadministratoren, Ressourcenkontakte oder privilegierte Mitglieder.
 
@@ -214,18 +217,18 @@ Auf der Authoring-Instanz:
    * Pfad muss sein `/home/users/community`.
 4. Wählen Sie **[!UICONTROL Erstellen]**.
 
-   ![chlimage_1-130](assets/chlimage_1-130.png)
+   ![create-community-user](assets/create-community-user.png)
 
 * Suchen Sie im linken Bereich nach dem neu erstellten Benutzer und wählen Sie im rechten Bereich die Option zur Anzeige aus.
 
-   ![chlimage_1-131](assets/chlimage_1-131.png)
+   ![community-user](assets/view-community-user.png)
 
 Im linken Bereich:
 
 1. Löschen Sie das Suchfeld und wählen Sie Benutzer **[!UICONTROL ausblenden]**.
 2. Suchen Sie den neuen Benutzer und ziehen Sie ihn `community-enablementmanagers` auf die Registerkarte **[!UICONTROL Gruppen]** , die im rechten Bereich angezeigt wird.
 
-   ![chlimage_1-132](assets/chlimage_1-132.png)
+   ![assign-group](assets/assign-group.png)
 
 ### Rolle der Community-Administratoren {#community-administrators-role}
 
@@ -235,11 +238,11 @@ Führen Sie dieselben Schritte aus wie beim Erstellen und Zuweisen eines Benutze
 
 ### LDAP-Integration {#ldap-integration}
 
-AEM unterstützt die Verwendung von LDAP für die Authentifizierung von Benutzern sowie die Erstellung von Benutzerkonten. Ausführliche Informationen finden Sie unter [Konfigurieren von LDAP mit AEM 6](../../help/sites-administering/ldap-config.md).
+AEM unterstützt die Verwendung von LDAP für die Authentifizierung von Benutzern sowie die Erstellung von Benutzerkonten. Dies wird unter LDAP [konfigurieren mit AEM 6](../../help/sites-administering/ldap-config.md)beschrieben.
 
 Im Folgenden finden Sie einige Konfigurationsdetails, die spezifisch für Community-Mitglieder und Mitgliedsgruppen sind.
 
-1. Konfigurieren Sie LDAP für jede AEM-Veröffentlichungsinstanz.
+1. Konfigurieren Sie LDAP für jede AEM Instanz im Veröffentlichungsmodus.
 2. [LDAP-Identitätsanbieter](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * Keine besonderen Anweisungen
@@ -258,9 +261,9 @@ Im Folgenden finden Sie einige Konfigurationsdetails, die spezifisch für Commun
 
 Dies führt dazu, dass Benutzer automatisch der Mitgliedergruppe der Community-Site und dem Speicherort des Repositorys zugewiesen werden `/home/users/community` `/home/groups/community`und die entsprechenden Berechtigungen erben, um das Profil der anderen zu sehen.
 
-* Der `User auto membership` Wert sollte die `rep:authorizableId` Eigenschaft sein, nicht der `givenName` (Anzeigename) des Profils.
+* Der `User auto membership` Wert sollte die `rep:authorizableId` Eigenschaft und nicht der `givenName` (Anzeigename) des Profils sein.
 
-## Synchronisieren von Benutzern unter AEM-Instanzen {#synchronizing-users-among-aem-instances}
+## Synchronisieren von Benutzern unter AEM Instanzen {#synchronizing-users-among-aem-instances}
 
 Wenn Sie eine [Veröffentlichungsfarm](topologies.md)verwenden, stellen Sie sicher, dass die Benutzer in jeder Veröffentlichungsinstanz über denselben Pfad verfügen, indem Sie die Benutzer zuerst in eine Instanz importieren und die Benutzersynchronisierung [](sync.md) aktivieren, um Sling zu aktivieren, die Benutzer an die anderen Instanzen im Veröffentlichungsmodus zu verteilen.
 
