@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 25%
 
 ---
 
@@ -27,17 +30,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](essentials-voting.md#essentials-for-client-side) are included, this is how the `Voting` component will appear.
 
-![chlimage_1-307](assets/chlimage_1-307.png)
+![stimmberechtigte Komponente](assets/voting-component.png)
 
 ## Konfigurieren einer Abstimmung {#configuring-voting}
 
 Select the placed `Voting` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-308](assets/chlimage_1-308.png)
+![konfigurieren](assets/configure-new.png)
 
 Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used to record votes.
 
-![chlimage_1-309](assets/chlimage_1-309.png)
+![stimmetikett](assets/voting-label.png)
 
 * **[!UICONTROL Beschriftung für positive Antwort]**
 
