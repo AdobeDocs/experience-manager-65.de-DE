@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 21%
 
 ---
 
@@ -32,24 +35,26 @@ Das Forum-Feature QnA (Fragen und Antworten) bietet Community-Mitgliedern einen 
 
 Die Dokumentation beschreibt:
 
-* Hinzufügen der Funktion des QnA-Forums zu einer AEM-Site.
+* Hinzufügen der Funktion des QnA-Forums zu einer AEM Site.
 * Configuration settings for the `QnA`component.
 
 ## Hinzufügen eines Fragen-und-Antworten-Forums zu einer Seite {#adding-a-q-a-forum-to-a-page}
 
-Um einer Seite im Autorenmodus eine `QnA` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / QnA`und auf eine Seite zu ziehen, auf der das QnA-Forum angezeigt werden soll.
+Um eine `QnA` Komponente einer Seite im Autorenmodus hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / QnA` und auf eine Seite zu ziehen, auf der das QnA-Forum angezeigt werden soll.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/qna-essentials.md#essentials-for-client-side) are included, this is how the `QnA`component appears:
+When the [required client-side libraries](/help/communities/qna-essentials.md#essentials-for-client-side) are included, this is how the `QnA` component appears:
 
-![chlimage_1](assets/chlimage_1.png)
+![qna-Komponente](assets/qna-component.png)
 
 ### Konfigurieren von Fragen und Antworten {#configuring-qna}
 
 Select the placed `QnA` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-1](assets/chlimage_1-1.png) ![qna-config](assets/qna-config.png)
+![konfigurieren](assets/configure-new.png)
+
+![qna-config](assets/qna-config.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
