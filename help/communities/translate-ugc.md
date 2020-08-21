@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1118'
+ht-degree: 2%
 
 ---
 
 
 # Übersetzen benutzergenerierter Inhalte {#translating-user-generated-content}
 
-Die Übersetzungsfunktion für AEM Communities erweitert das Konzept der [Übersetzung von Seiteninhalten](../../help/sites-administering/translation.md) auf die benutzergenerierten Inhalte (UGC), die mithilfe von SCF-Komponenten ( [Social Component Framework) auf Community-Sites veröffentlicht werden](scf.md).
+Die Übersetzungsfunktion für AEM Communities erweitert das Konzept der [Übersetzung von Seiteninhalten](../../help/sites-administering/translation.md) auf die benutzergenerierten Inhalte (UGC), die mithilfe von SCF-Komponenten [(](scf.md)Social Component Framework) an Community-Sites veröffentlicht werden.
 
 Die Übersetzung von UGC ermöglicht es Site-Besuchern und -Mitgliedern, eine globale Community zu erleben, indem sie Sprachbarrieren beseitigen.
 
@@ -31,7 +34,7 @@ Beispiel:
 
 ## Übersicht {#overview}
 
-In diesem Abschnitt der Dokumentation wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC funktioniert. Dabei wird erläutert, wie AEM mit einem [Übersetzungs-Dienstleister](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) verbunden und dieser Dienst in eine Website integriert werden kann, indem ein [Übersetzungs-Integrationsframework](../../help/sites-administering/tc-tic.md)konfiguriert wird.
+In diesem Abschnitt der Dokumentation wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC funktioniert. Dabei wird erläutert, wie AEM mit einem [Übersetzungsdienst](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) verbunden und dieser Dienst in eine Website integriert werden kann, indem ein [Übersetzungsintegrationsframework](../../help/sites-administering/tc-tic.md)konfiguriert wird.
 
 Wenn ein Übersetzungs-Dienstleister mit der Site verknüpft ist, unterhält jede Sprachkopie der Site eigene Threads von UGC, die über SCF-Komponenten wie Kommentare veröffentlicht werden.
 
@@ -39,7 +42,7 @@ Wenn ein Framework für die Integration von Übersetzungen zusätzlich zu dem Di
 
 ## Der Standard-Übersetzungsdienst {#the-default-translation-service}
 
-AEM Communities bietet eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für einen [Standard-Übersetzungsdienst](../../help/sites-administering/tc-msconf.md) , der für mehrere Sprachen aktiviert ist.
+AEM Communities verfügt über eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für einen [Standard-Übersetzungsdienst](../../help/sites-administering/tc-msconf.md) , der für mehrere Sprachen aktiviert ist.
 
 Beim [Erstellen einer Community-Site](sites-console.md)ist der Standard-Übersetzungsdienst aktiviert, wenn `Allow Machine Translation` er im Unterfeld [TRANSLATION](sites-console.md#translation) überprüft wird.
 
@@ -78,20 +81,20 @@ So erstellen Sie eine neue Translation Integration, die einen Translation Servic
 * Wählen Sie **[!UICONTROL Tools]**
 * Vorgänge **[!UICONTROL auswählen]**
 * **[!UICONTROL Cloud auswählen]**
-* Cloud- **[!UICONTROL Dienste auswählen]**
+* **[!UICONTROL Cloud Services auswählen]**
 * Bildlauf nach unten zur **[!UICONTROL Übersetzungsintegration]**
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
+   ![translation-integration](assets/translation-integration.png)
 
 * Konfigurationen **[!UICONTROL anzeigen auswählen]**
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
+   ![show-configuration](assets/translation-integration1.png)
 
 * Klicken Sie auf `[+]` das Symbol neben **[!UICONTROL Verfügbare Konfigurationen]** , um eine neue Konfiguration zu erstellen.
 
 #### Dialogfeld &quot;Konfiguration erstellen&quot; {#create-configuration-dialog}
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![create-configuration](assets/translation-integration2.png)
 
 * **[!UICONTROL Übergeordnete Konfiguration]**
 
@@ -109,19 +112,21 @@ So erstellen Sie eine neue Translation Integration, die einen Translation Servic
 
 #### Dialogfeld &quot;Konvertierungskonfiguration&quot; {#translation-config-dialog}
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![configuration-dialog](assets/translation-integration3.png)
 
 Ausführliche Anweisungen finden Sie unter [Erstellen einer Konfiguration für die Integration von Übersetzungen](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
 * **[!UICONTROL Registerkarte &quot;Sites]** &quot;: kann als Standard beibehalten werden.
 
 * **[!UICONTROL Registerkarte &quot;Communities]** &quot;:
-   * **[!UICONTROL Übersetzungsanbieter]** Wählen Sie den Übersetzungsanbieter aus der Dropdown-Liste. Der Standard ist `microsoft`der Testdienst.
+   * **[!UICONTROL Übersetzungsanbieter]** Wählen Sie den Übersetzungsanbieter aus der Dropdown-Liste. Der Standardwert ist 
+`microsoft`, den Testdienst.
 
-   * **[!UICONTROL Content Kategorie]** Wählen Sie eine Kategorie, die die zu übersetzenden Inhalte beschreibt. Der Standardwert ist `General.`
+   * **[!UICONTROL Content Kategorie]** Wählen Sie eine Kategorie, die die zu übersetzenden Inhalte beschreibt. Der Standardwert ist 
+`General.`
 
    * **[!UICONTROL Gebietsschema auswählen...]**
-(Optional) Wenn Sie ein Gebietsschema zum Speichern von UGC auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](sites-console.md#translation) der Website. Durch Auswahl dieser Option `No Common Store` wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
+(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](sites-console.md#translation) der Website. Durch Auswahl dieser Option `No Common Store` wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
 
 * **[!UICONTROL Registerkarte &quot;Assets]** &quot;: kann als Standard beibehalten werden.
 * Wählen Sie **[!UICONTROL OK]** aus
@@ -153,7 +158,7 @@ Eine dieser Einstellungen ist, ob Community-Inhalte immer in ihrer bevorzugten S
 
 Wenn Seiten automatisch in die vom Benutzer bevorzugte Sprache übersetzt werden, wird die Benutzeroberfläche zum Anzeigen des Originaltextes und Verbessern der Übersetzung weiterhin zur Verfügung gestellt.
 
-![chlimage_1-69](assets/chlimage_1-69.png)
+![user-Profil](assets/translation-integration4.png)
 
 ### Community-Site-Einstellung {#community-site-setting}
 
