@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Erweiterte Bewertung und Abzeichen{#advanced-scoring-and-badges}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die erweiterte Bewertung ermöglicht die Vergabe von Kennzeichen, um Mitglieder als Experten zu identifizieren. Bei der erweiterten Bewertung werden Punkte basierend auf der Menge *und* Qualität der von einem Mitglied erstellten Inhalte zugewiesen, während bei der grundlegenden Bewertung Punkte nur auf der Grundlage der erstellten Inhaltsmenge zugewiesen werden.
 
@@ -62,7 +62,7 @@ Die verschiedenen Regeln für die Bewertung und Kennzeichnung unterscheiden sich
 
 Die erweiterte Scoring-Engine bietet eine OSGi-Konfiguration mit Parametern, die sich auf den erweiterten Scoring-Algorithmus auswirken.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![advanced-scoring-engine](assets/advanced-scoring-engine.png)
 
 * **Gewichtungen bewerten**
 
@@ -103,7 +103,7 @@ Um die erweiterte Scoring-Engine aufzurufen, `scoringType`sollte die auf `advanc
 
 Siehe [Scoring-Unterregeln](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![advanced-scoring-type](assets/advanced-scoring-type.png)
 
 ### Stoppwörter {#stopwords}
 
@@ -123,7 +123,7 @@ Die Eigenschaften der erweiterten Kennzeichnungsregel unterscheiden sich von den
 
 Anstatt Punkte mit einem Abzeichen zu verknüpfen, ist es nur notwendig, die Anzahl der zulässigen Experten und das zu vergebende Abbild zu identifizieren.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![Regeln für erweiterte Abzeichen](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -165,7 +165,7 @@ In dieser Beta-Version ist ein auf Belohnung basierendes Expertenabzeichen entha
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![expertenbadge](assets/included-badge.png)
 
 Damit das Expertenkennzeichen als Belohnung für die Aktivität angezeigt wird, müssen Sie sicherstellen, dass:
 
