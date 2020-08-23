@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6822'
+source-wordcount: '6814'
 ht-degree: 76%
 
 ---
@@ -170,7 +170,7 @@ Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Ko
 
 **Formular** überprüfen Validiert das Formular.
 
-**Hinzufügen Instanz** fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
+**hinzufügen Instanz** fügt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile hinzu.
 
 **Instanz** entfernen Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
@@ -333,11 +333,10 @@ Benutzeroberfläche des Regeleditors starten
    Alle vorhandenen Regeln für die ausgewählten Formularobjekte sind in dieser Ansicht aufgelistet. Weitere Informationen zum Verwalten vorhandener Regeln finden Sie unter [Regeln verwalten](../../forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Tap **[!UICONTROL Create]** to write a new rule. Wenn Sie den Regeleditor zum ersten Mal starten, wird standardmäßig der Visual Editor der Regeleditor-Benutzeroberfläche geöffnet.
-[ ![Benutzeroberfläche des Regeleditors](assets/rule-editor-ui.png)
 
-   Hier klicken, um vergrößertes Bild anzuzeigen
+   ![Benutzeroberfläche des Regeleditors](assets/rule-editor-ui.png)
 
-   ](assets/rule-editor-ui-1.png)Lassen Sie uns die einzelnen Komponenten der Benutzeroberfläche des Regeleditors im Detail betrachten.
+Im Folgenden werden die einzelnen Komponenten der Benutzeroberfläche des Regeleditors im Detail beschrieben.
 
 ### A. Komponenten und -Regelanzeige {#a-component-rule-display}
 
@@ -683,7 +682,7 @@ var c = {
 
 Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules1.png). Sie können den Titel und eine Vorschau der Regelübersicht anzeigen. Darüber hinaus können Sie in der Benutzeroberfläche die vollständige Regelübersicht erweitern und anzeigen, die Reihenfolge der Regeln ändern, Regeln bearbeiten und Regeln löschen.
 
-![Listen](assets/list-rules.png)
+![listen](assets/list-rules.png)
 
 Sie können die folgenden Aktionen für Regeln durchführen:
 
