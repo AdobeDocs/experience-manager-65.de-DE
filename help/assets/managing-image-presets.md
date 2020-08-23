@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Bildvorgaben für Dynamic Media
-description: Verstehen Sie die Bildvorgaben für Dynamic Media und lernen Sie, wie Sie Bildvorgaben erstellen, ändern und verwalten.
+title: Verwalten von Bildvorgaben für dynamische Medien
+description: Verstehen Sie die Bildvorgaben für dynamische Medien und erfahren Sie, wie Sie Bildvorgaben erstellen, ändern und verwalten.
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '3843'
+source-wordcount: '3842'
 ht-degree: 91%
 
 ---
@@ -220,7 +220,7 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **[!UICONT
 
 Erstellte Bildvorgaben sind auch als dynamische Ausgabeformate verfügbar, wenn Sie eine Vorschau von Assets anzeigen. AEM zeigt verschiedene dynamische Ausgabeformate an, wenn Sie ein Asset unter **[!UICONTROL Detailansicht > Ausgabeformate anzeigen.]** Sie können die Anzahl der angezeigten Ausgabeformate erhöhen oder verringern.
 
-**So erhöhen oder verringern Sie die Anzahl der angezeigten** Bildvorgaben für Dynamic Media:
+**So erhöhen oder verringern Sie die Anzahl der Bildvorgaben** für dynamische Medien:
 
 1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
@@ -235,9 +235,9 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabeformate verfügbar, wenn 
 1. Ändern Sie in der Eigenschaft „limit“ den Wert auf die gewünschte Zahl, z. B. `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Tippen Sie auf **[!UICONTROL Alle speichern.]**
 
-## Erstellen einer Bildvorgabe für Dynamic Media {#creating-image-presets}
+## Erstellen einer Bildvorgabe für dynamische Medien {#creating-image-presets}
 
-Wenn Sie eine Bildvorgabe für Dynamic Media erstellen, können Sie diese Einstellungen bei der Vorschau oder Veröffentlichung auf alle Bilder anwenden.
+Wenn Sie eine Bildvorgabe für dynamische Medien erstellen, können Sie diese Einstellungen bei der Vorschau oder Veröffentlichung auf alle Bilder anwenden.
 
 >[!NOTE]
 >
@@ -251,9 +251,9 @@ Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
 >[!NOTE]
 >
->Zum Erstellen von Bildvorgaben für Dynamic Media benötigen Sie Administratorrechte als AEM-Administrator oder Admin Console-Administrator.
+>Um Bildvorgaben für dynamische Medien zu erstellen, müssen Sie über Administratorrechte als AEM Administrator oder Admin Console verfügen.
 
-**So erstellen Sie eine Bildvorgabe** für Dynamic Media:
+**So erstellen Sie eine Bildvorgabe** für dynamische Medien:
 
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Assets > Bildvorgaben.]**
 1. Klicken Sie auf **[!UICONTROL Erstellen.]** Das Fenster **[!UICONTROL Bildvorgabe bearbeiten]** wird geöffnet.
@@ -268,7 +268,7 @@ Siehe [InDesign-Dateiformat (INDD)](#indesign-indd-file-format).
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Creating a responsive image preset {#creating-a-responsive-image-preset}
 
@@ -493,7 +493,7 @@ Wenn Sie den Modus „Dynamic Media –Hybrid“ ausführen, müssen Sie Bildvo
 
 (Wenn Sie den Modus „Dynamic Media – Scene7“ ausführen, werden Bildvorgaben automatisch veröffentlicht und Sie müssen diese Schritte nicht ausführen.)
 
-**So veröffentlichen Sie Bildvorgaben im Dynamic Media-Hybridmodus**:
+**So veröffentlichen Sie Bildvorgaben im dynamischen Medienmodus**:
 
 1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets.]**
 1. Wählen Sie in der Liste der Bildvorgaben eine oder mehrere Bildvorgaben aus und klicken oder tippen Sie auf **[!UICONTROL Veröffentlichen.]**
@@ -503,7 +503,7 @@ Wenn Sie den Modus „Dynamic Media –Hybrid“ ausführen, müssen Sie Bildvo
 
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
-1. Tippen oder klicken Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen.
+1. Tippen oder klicken Sie in AEM auf das AEM Logo, um auf die globale Navigationskonsole zuzugreifen.
 1. Tippen Sie auf das Symbol **[!UICONTROL Werkzeuge]** und navigieren Sie dann zu **[!UICONTROL Assets > Bildvorgaben.]**
 1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**, um den Löschvorgang vorzunehmen, oder auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
 
