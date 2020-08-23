@@ -9,21 +9,21 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3707'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
 
 # Videoprofile {#video-profiles}
 
-Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Wenn Sie Ihre primären Quellvideos mit dem Profil Adaptive Videokodierung kodieren, passt der Videoplayer während der Wiedergabe die Qualität des Videostreams automatisch an die Internetverbindungsgeschwindigkeit Ihrer Kunden an. Dies wird als adaptives Streaming bezeichnet.
+Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Beim Kodieren von Master-Videos mithilfe des Profils „Adaptive Videoverschlüsselung“ passt der Video-Player während der Wiedergabe automatisch die Qualität des Video-Streams auf Grundlage der Internet-Verbindungsgeschwindigkeit Ihrer Kunden an. Dies wird als adaptives Streaming bezeichnet.
 
 Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
-* **Auflösung des hochgeladenen primären Quellvideos**
+* **Auflösung des hochgeladenen Master-Videos**
 
    Wenn das MP4-Video mit einer geringeren Auflösung (wie 240 p oder 360 p) aufgenommen wurde, kann es nicht in High Definition gestreamt werden.
 
@@ -61,7 +61,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td><strong>Video-Bitrate (kBit/s)</strong></td>
    <td><strong>Video-Framerate (FPS)</strong></td>
    <td><strong>Audio-Codec</strong></td>
-   <td><strong>Audiobitrate     (Kbit/s)</strong></td>
+   <td><strong>Audiobitrate       (Kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -140,7 +140,7 @@ Für alle MP4 H.264-Videokodierungsvorgaben im Profil werden also die folgenden 
 
 * Videoformat-Codec – MP4 H.264 (.mp4)
 * Audio-Codec
-* Audiobitrate    
+* Audiobitrate      
 * Seitenverhältnis beibehalten
 * Kodierung mit zwei Durchgängen
 * Konstante Bitrate
@@ -199,8 +199,8 @@ Wenn Sie die Option **[!UICONTROL Kodieren für adaptives Streaming]** nicht ver
 
 Je nachdem, welchen Modus Sie ausführen, werden die folgenden Videoformat-Codecs unterstützt:
 
-* Dynamic Media-Scene7-Modus: H.264 (.mp4)
-* Dynamic Media-Hybrid-Modus: H.264 (.mp4), WebM
+* Dynamischer Media-Scene7-Modus: H.264 (.mp4)
+* Dynamischer Media-Hybrid-Modus: H.264 (.mp4), WebM
 
 Siehe auch [Erstellen eines Videokodierungsprofils für adaptives Streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
@@ -363,7 +363,7 @@ Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Strea
 
 ## Anwenden eines Videoprofils auf Ordner     {#applying-a-video-profile-to-folders}
 
-Wenn Sie ein Videoprofil einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Videoprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
+Wenn Sie ein Videoprofil zu einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Videoprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig berücksichtigen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
 Wenn Sie einem Ordner ein anderes Videoprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets verbleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
 
@@ -420,7 +420,7 @@ In der Datei `error.log` können Sie den Fortschritt des Kodierungsauftrags eben
 
 ## Entfernen eines Videoprofils aus Ordnern {#removing-a-video-profile-from-folders}
 
-Wenn Sie ein Videoprofil aus einem Ordner entfernen, übernehmen alle Unterordner automatisch die Entfernung des Profils vom übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
+Wenn Sie ein Videoprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
 
 You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings.]** This section describes how to remove video profiles from folders both ways.
 
@@ -435,6 +435,6 @@ You can remove a video profile from a folder from within the **[!UICONTROL Tools
 ### Entfernen von Videoprofilen aus Ordnern über „Eigenschaften“{#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Tippen oder klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Videoprofil entfernen möchten.
-1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **Eigenschaften.]**
+1. Tippen oder klicken Sie im Ordner auf das Häkchen, um den Ordner auszuwählen, und tippen oder klicken Sie auf **[!UICONTROL Eigenschaften.]**
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** die Option **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen.]** Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
