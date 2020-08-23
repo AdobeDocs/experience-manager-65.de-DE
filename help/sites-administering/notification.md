@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 75%
 
 ---
 
@@ -65,7 +68,7 @@ Fügen Sie zum Konfigurieren der „Von“-E-Mail-Adresse einen `sling:OsgiConfi
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ `sling:OsgiConfig`
 
-1. Add a `String` property to the node] named `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
+1. Add a `String` property to the node named `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
 
 1. Klicken Sie auf **Alle speichern**.
 
@@ -135,14 +138,14 @@ Die Vorlage muss folgendes Format aufweisen:
 
 Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Stringvariablen sein. Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Seitenbenachrichtigungen verwendet werden:
 
-* `${time}`, das Ereignisdatum und die Uhrzeit.
+* `${time}`, Ereignis und Uhrzeit.
 
 * `${userFullName}`, der vollständige Name des Benutzers, der das Ereignis ausgelöst hat.
 
 * `${userId}`, die ID des Benutzers, der das Ereignis ausgelöst hat.
-* `${modifications}`beschreibt den Typ des Seitenereignisses und den Seitenpfad im Format:
+* `${modifications}`, beschreibt den Typ des Seiten-Ereignisses und den Seitenpfad im Format:
 
-   &lt;page event type> => &lt;page path>
+   &lt;page Ereignistyp> => &lt;page path>
 
    Beispiel:
 
@@ -195,7 +198,7 @@ Where `<text_x>` can be a mix of static text and dynamic string variables.
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Forumsbenachrichtigungen verwendet werden:
 
-* `${time}`, das Ereignisdatum und die Uhrzeit.
+* `${time}`, Ereignis und Uhrzeit.
 
 * `${forum.path}`, der Pfad zur Forumsseite.
 
@@ -256,7 +259,7 @@ The method `${payload.path.open}` reveals the path to the payload of the workite
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
-* `${event.EventType}`, Ereignistyp
+* `${event.EventType}`, Typ des Ereignisses
 * `${event.TimeStamp}`, Datum und Uhrzeit des Ereignisses
 * `${event.User}`, der Benutzer, der das Ereignis ausgelöst hat
 * `${initiator.home}`, der Pfad des Initiator-Knotens
