@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 99%
 
 ---
@@ -36,7 +36,7 @@ Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchte
 
 1. Gehen Sie zum Karussellset, interaktiven Bild oder interaktiven Video und tippen oder klicken Sie auf die Registerkarte **[!UICONTROL Aktionen]** (nur verfügbar, wenn Sie einen Hotspot oder eine Imagemap definiert haben).
 
-   Der Produktselektor befindet sich im Bereich **[!UICONTROL Aktionstyp**.
+   Der Produktselektor befindet sich im Bereich **[!UICONTROL Aktionstyp]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -78,7 +78,7 @@ Verwenden Sie den Site-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen 
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und gehen Sie zu einer Seite in Ihren AEM-Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
+1. Tippen Sie auf das Symbol **[!UICONTROL Site-Selektor]** (Ordner mit Lupe) und gehen Sie zu einer Seite in Ihren AEM Sites, mit der Sie den Hotspot oder die Imagemap verknüpfen möchten.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
