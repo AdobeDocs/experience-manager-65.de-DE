@@ -8,7 +8,7 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 5bbafd9006b04d761ffab218e8480c1e94903bb6
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '2060'
 ht-degree: 37%
@@ -105,7 +105,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 1. Wenn die Reihenfolge der Anhänge beim Erstellen der interaktiven Kommunikation nicht gesperrt war, können Sie die Reihenfolge der Anhänge neu anordnen, indem Sie einen Anhang auswählen und auf die Pfeile nach unten oder nach oben tippen.
 1. Verwenden Sie Webvorschau und Druckvorschau, um zu sehen, ob die beiden Ausgaben Ihren Anforderungen entsprechen.
 
-   If you find the previews to be satisfactory, tap **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Or to make changes, exit the preview to go back to the making changes.
+   If you find the previews to be satisfactory, tap **[!UICONTROL Submit]** to submit/send the Interactive Communication to a post process. Um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den vorzunehmenden Änderungen zurückzukehren.
 
 ## Text formatieren {#formattingtext}
 
@@ -139,8 +139,8 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 
 #### Anlagenübermittlung {#attachmentdelivery}
 
-* When the Interactive Communication is rendered using Server-side APIs as an interactive or non-interactive PDF, the rendered PDF contains attachments as PDF attachments.
-* When a post process associated with an Interactive Communication is loaded as part of the Submit using Agent UI, attachments are passed as the List&lt;com.adobe.idp.Document> inAttachmentDocs parameter.
+* Wenn die interaktive Kommunikation mit serverseitigen APIs als interaktive oder nicht interaktive PDF gerendert wird, enthält die gerenderte PDF-Datei Anlagen als PDF-Anlagen.
+* Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil der Benutzeroberfläche &quot;Mit Agent senden&quot;geladen wird, werden Anlagen als Parameter &quot;Liste&lt;com.adobe.idp.Dokument> inAttachmentDocs&quot;übergeben.
 * Vordefinierte Übermittlungsmechanismen, wie z. B. E-Mail und Drucken, übermitteln auch Anlagen zusammen mit einer PDF-Datei der interaktiven Kommunikation.
 
 ## Aktionen und Informationen, die auf der Benutzeroberfläche für Agenten verfügbar sind {#actionsagentui}
@@ -153,7 +153,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * **Löschen**: Wenn zulässig, löschen Sie das Dokumentfragment aus der interaktiven Kommunikation.
 * **Seitenumbruch vor** (anwendbar für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch vor dem Dokumentfragment ein.
 * **Einzug:** Einzug eines Dokumentenfragments vergrößern oder verkleinern.
-* **Page Break After** (applicable for child fragments of target area): Inserts page break after the document fragment.
+* **Seitenumbruch nach** (gilt für untergeordnete Fragmente des Bereichs Zielgruppe): Fügt nach dem Fragment des Dokuments einen Seitenumbruch ein.
 
 ![docfragoptions](assets/docfragoptions.png)
 
@@ -236,84 +236,84 @@ import java.util.*;
 @Component(service = CCRDocumentInstanceService.class, immediate = true)
 public class CCRDraftService implements CCRDocumentInstanceService {
 
- private static final Logger logger = LoggerFactory.getLogger(CCRDraftService.class);
+    private static final Logger logger = LoggerFactory.getLogger(CCRDraftService.class);
 
- private HashMap<String, Object> draftDataMap = new HashMap<>();
+    private HashMap<String, Object> draftDataMap = new HashMap<>();
 
- @Override
- public String save(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
-     String documentInstanceName = ccrDocumentInstance.getName();
-     if (StringUtils.isNotEmpty(documentInstanceName)) {
-         logger.info("Saving ccrData with name : {}", ccrDocumentInstance.getName());
-         if (!CCRDocumentInstance.Status.SUBMIT.equals(ccrDocumentInstance.getStatus())) {
-             ccrDocumentInstance = mySQLDataBaseServiceCRUD(ccrDocumentInstance,null, "SAVE");
-         }
-     } else {
-         logger.error("Could not save data as draft name is empty");
-     }
-     return ccrDocumentInstance.getId();
- }
+    @Override
+    public String save(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+        String documentInstanceName = ccrDocumentInstance.getName();
+        if (StringUtils.isNotEmpty(documentInstanceName)) {
+            logger.info("Saving ccrData with name : {}", ccrDocumentInstance.getName());
+            if (!CCRDocumentInstance.Status.SUBMIT.equals(ccrDocumentInstance.getStatus())) {
+                ccrDocumentInstance = mySQLDataBaseServiceCRUD(ccrDocumentInstance,null, "SAVE");
+            }
+        } else {
+            logger.error("Could not save data as draft name is empty");
+        }
+        return ccrDocumentInstance.getId();
+    }
 
- @Override
- public void update(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
-     String documentInstanceName = ccrDocumentInstance.getName();
-     if (StringUtils.isNotEmpty(documentInstanceName)) {
-         logger.info("Saving ccrData with name : {}", documentInstanceName);
-         mySQLDataBaseServiceCRUD(ccrDocumentInstance, ccrDocumentInstance.getId(), "UPDATE");
-     } else {
-         logger.error("Could not save data as draft Name is empty");
-     }
- }
+    @Override
+    public void update(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+        String documentInstanceName = ccrDocumentInstance.getName();
+        if (StringUtils.isNotEmpty(documentInstanceName)) {
+            logger.info("Saving ccrData with name : {}", documentInstanceName);
+            mySQLDataBaseServiceCRUD(ccrDocumentInstance, ccrDocumentInstance.getId(), "UPDATE");
+        } else {
+            logger.error("Could not save data as draft Name is empty");
+        }
+    }
 
- @Override
- public CCRDocumentInstance get(String id) throws CCRDocumentException {
-     CCRDocumentInstance cCRDocumentInstance;
-     if (StringUtils.isEmpty(id)) {
-         logger.error("Could not retrieve data as draftId is empty");
-         cCRDocumentInstance = null;
-     } else {
-         cCRDocumentInstance = mySQLDataBaseServiceCRUD(null, id,"GET");
-     }
-     return cCRDocumentInstance;
- }
+    @Override
+    public CCRDocumentInstance get(String id) throws CCRDocumentException {
+        CCRDocumentInstance cCRDocumentInstance;
+        if (StringUtils.isEmpty(id)) {
+            logger.error("Could not retrieve data as draftId is empty");
+            cCRDocumentInstance = null;
+        } else {
+            cCRDocumentInstance = mySQLDataBaseServiceCRUD(null, id,"GET");
+        }
+        return cCRDocumentInstance;
+    }
 
- @Override
- public List<CCRDocumentInstance> getAll(String userId, Date creationTime, Date updateTime,
-                                         Map<String, Object> optionsParams) throws CCRDocumentException {
-     List<CCRDocumentInstance> ccrDocumentInstancesList = new ArrayList<>();
+    @Override
+    public List<CCRDocumentInstance> getAll(String userId, Date creationTime, Date updateTime,
+                                            Map<String, Object> optionsParams) throws CCRDocumentException {
+        List<CCRDocumentInstance> ccrDocumentInstancesList = new ArrayList<>();
 
-     HashMap<String, Object> allSavedDraft = mySQLGetALLData();
-     for (String key : allSavedDraft.keySet()) {
-         ccrDocumentInstancesList.add((CCRDocumentInstance) allSavedDraft.get(key));
-     }
-     return ccrDocumentInstancesList;
- }
+        HashMap<String, Object> allSavedDraft = mySQLGetALLData();
+        for (String key : allSavedDraft.keySet()) {
+            ccrDocumentInstancesList.add((CCRDocumentInstance) allSavedDraft.get(key));
+        }
+        return ccrDocumentInstancesList;
+    }
 
- //The APIs call the service in the database using the following section.
- private CCRDocumentInstance mySQLDataBaseServiceCRUD(CCRDocumentInstance ccrDocumentInstance,String draftId, String method){
-     if(method.equals("SAVE")){
+    //The APIs call the service in the database using the following section.
+    private CCRDocumentInstance mySQLDataBaseServiceCRUD(CCRDocumentInstance ccrDocumentInstance,String draftId, String method){
+        if(method.equals("SAVE")){
 
-         String autoGenerateId = draftDataMap.size() + 1 +"";
-         ccrDocumentInstance.setId(autoGenerateId);
-         draftDataMap.put(autoGenerateId, ccrDocumentInstance);
-         return ccrDocumentInstance;
+            String autoGenerateId = draftDataMap.size() + 1 +"";
+            ccrDocumentInstance.setId(autoGenerateId);
+            draftDataMap.put(autoGenerateId, ccrDocumentInstance);
+            return ccrDocumentInstance;
 
-     }else if (method.equals("UPDATE")){
+        }else if (method.equals("UPDATE")){
 
-         draftDataMap.put(ccrDocumentInstance.getId(), ccrDocumentInstance);
-         return ccrDocumentInstance;
+            draftDataMap.put(ccrDocumentInstance.getId(), ccrDocumentInstance);
+            return ccrDocumentInstance;
 
-     }else if(method.equals("GET")){
+        }else if(method.equals("GET")){
 
-         return (CCRDocumentInstance) draftDataMap.get(draftId);
+            return (CCRDocumentInstance) draftDataMap.get(draftId);
 
-     }
-     return null;
- }
+        }
+        return null;
+    }
 
- private HashMap<String, Object> mySQLGetALLData(){
-     return draftDataMap;
- }
+    private HashMap<String, Object> mySQLGetALLData(){
+        return draftDataMap;
+    }
 }
 ```
 
@@ -328,25 +328,25 @@ In der folgenden Tabelle wird die Beispielimplementierung `ccrDocumentInstance` 
   <td><p><strong>Beispiele für Datenbankdienste</strong></p></td> 
    </tr>
   <tr>
-   <td><p>You can either create a draft for an Interactive Communication or submit it directly. The API for the save operation checks if the Interactive Communication is submitted as a draft and it includes a draft name. The API then calls the mySQLDataBaseServiceCRUD service with Save as the input method.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>The mySQLDataBaseServiceCRUD service verifies Save as the input method and generates an autogenerated draft ID and returns it to AEM. The logic to generate a draft ID can vary based on the database.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Sie können entweder einen Entwurf für eine interaktive Kommunikation erstellen oder ihn direkt senden. Die API für den Speichervorgang prüft, ob die interaktive Kommunikation als Entwurf übermittelt wird und einen Namen für den Entwurf enthält. Die API ruft dann den Dienst mySQLDataBaseServiceCRUD mit Save als Eingabemethode auf.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
+   <td><p>Der mySQLDataBaseServiceCRUD-Dienst überprüft Save als Eingabemethode und generiert eine automatisch generierte Entwurfs-ID und gibt sie an AEM zurück. Die Logik zum Generieren einer Entwurfs-ID kann je nach Datenbank variieren.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
    </tr>
   <tr>
-   <td><p>Die API für den Aktualisierungsvorgang ruft den Status des Entwurfs der interaktiven Kommunikation ab und prüft, ob die interaktive Kommunikation einen Namen enthält. The API calls the mySQLDataBaseServiceCRUD service to update that status in Database.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
-   <td><p>The mySQLDataBaseServiceCRUD service verifies Update as the input method and saves the status of Interactive Communication draft in the database.</br></p><img src="assets/update-operation-service.png"/></td>
+   <td><p>Die API für den Aktualisierungsvorgang ruft den Status des Entwurfs der interaktiven Kommunikation ab und prüft, ob die interaktive Kommunikation einen Namen enthält. Die API ruft den Dienst mySQLDataBaseServiceCRUD auf, um diesen Status in der Datenbank zu aktualisieren.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>Der mySQLDataBaseServiceCRUD-Dienst überprüft Update als Eingabemethode und speichert den Status des Entwurfs der interaktiven Kommunikation in der Datenbank.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
-   <td><p>The API for the get operation checks if the Interactive Communication includes a draft ID. The API then calls the mySQLDataBaseServiceCRUD service with Get as the input method to retrieve the data for the Interactive Communication.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>The mySQLDataBaseServiceCRUD service verifies Get as the input method and retrieves the data for the Interactive Communication based on the draft ID.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>Die API für den get-Vorgang prüft, ob die interaktive Kommunikation eine Entwurfs-ID enthält. Die API ruft dann den Dienst mySQLDataBaseServiceCRUD mit Get als Eingabemethode auf, um die Daten für die interaktive Kommunikation abzurufen.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>Der mySQLDataBaseServiceCRUD-Dienst überprüft Get als Eingabemethode und ruft die Daten für die interaktive Kommunikation basierend auf der Entwurfs-ID ab.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
    </tr>
    <tr>
-   <td><p>The API for the getAll operation calls the mySQLGetALLData service to retrieve data for all Interactive Communications saved in the database.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>Die API für den getAll-Vorgang ruft den Dienst mySQLGetALLData auf, um Daten für alle in der Datenbank gespeicherten interaktiven Nachrichten abzurufen.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
    <td><p>Der mySQLGetALLData-Dienst ruft Daten für alle in der Datenbank gespeicherten interaktiven Kommunikation ab.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
    </tr>
   </tbody>
 </table>
 
-The following is an example of the `pom.xml` file that is part of the implementation:
+Im Folgenden finden Sie ein Beispiel für die `pom.xml` Datei, die Teil der Implementierung ist:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -443,4 +443,4 @@ The following is an example of the `pom.xml` file that is part of the implementa
 
 >[!NOTE]
 >
->Ensure that you update the `aemfd-client-sdk` dependency to 6.0.122 in the `pom.xml` file.
+>Stellen Sie sicher, dass Sie die `aemfd-client-sdk` Abhängigkeit in der `pom.xml` Datei auf 6.0.122 aktualisieren.
