@@ -10,21 +10,21 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '768'
 ht-degree: 49%
 
 ---
 
 
-# Definitionen für AEM Update Release Release Vehicle{#update-release-vehicle-definitions}
+# Definitionen für AEM Update Release Vehicle{#update-release-vehicle-definitions}
 
 Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe Experience Manager (AEM), einschließlich Vollversionen, Feature Packs und Services Packs, die Adobe für Kunden bereitstellt.
 
->[!NHinweis]
+>[!NOTE]
 >
->Versionsplan für AEM-Updateversionen finden Sie im Fahrplan für [AEM-Updateversionen](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
+>Der Veröffentlichungsplan AEM Update-Versionen finden Sie im Fahrplan [AEM Aktualisierungsveröffentlichungen.](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
 
 ## Vollversion {#full-release}
 
@@ -72,7 +72,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td>
     <ul>
      <li>Lieferbar als eigenständiges Produktinstallationsprogramm</li>
-     <li>Verfügbar auf der Lizenzierungs-Website und auf der Website für Managed Services</li>
+     <li>Verfügbar auf der Lizenzierungs-Website und der Managed Services Licensing-Website</li>
      <li>Eventuelle Migration zum Inhaltsrepository</li>
     </ul> </td>
   </tr>
@@ -221,7 +221,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Verfügbarkeit und Installation </strong></td>
    <td>
     <ul>
-     <li>Als Paket von der AEM-Kundenunterstützung bereitgestellt</li>
+     <li>Lieferbar als Paket durch AEM Kundenunterstützung</li>
      <li>Nicht unbedingt in Service Packs oder Vollversionen enthalten</li>
     </ul> </td>
   </tr>
@@ -240,7 +240,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td><strong>Definition</strong></td>
    <td>
     <ul>
-     <li>Feature Packs sind Zusatzfunktionalitäten und werden über Service Packs bereitgestellt. Wenn eine AEM-Version ihr letztes Service Pack veröffentlicht hat, stellt Adobe in Zukunft kein Feature Pack dafür bereit.</li>
+     <li>Feature Packs sind Zusatzfunktionalitäten und werden über Service Packs bereitgestellt. Wenn eine AEM Version ihr letztes Service Pack veröffentlicht hat, stellt die Adobe in Zukunft kein Feature Pack dafür bereit.</li>
      <li>Die FPs enthalten Produktverbesserungen, die für eine spätere Produktversion geplant sind, aber aufgrund der Entscheidung des Produktmanagements von Adobe frühzeitig bereitgestellt werden.</li>
      <li>Features werden immer mit der nächsten Hauptversion zusammengeführt und dann in die vom Kunden benötigte AEM-Version zurückportiert.</li>
      <li>Feature Packs mit Funktionen von allgemeinem Interesse und GA Feature Packs werden mit dem nächsten Service Pack zusammengeführt</li>
@@ -272,7 +272,7 @@ Dieses Dokument enthält Einzelheiten zu den verschiedenen Versionen von Adobe E
    <td>
     <ul>
      <li>Wird über Service Packs bereitgestellt</li>
-     <li>Steht über Package Share zur Verfügung. Kunden akzeptieren die Geschäftsbedingungen von Adobe über Package Share.</li>
+     <li>Steht über Package Share zur Verfügung. Kunden akzeptieren die Geschäftsbedingungen der Adobe über Package Share.</li>
     </ul> </td>
   </tr>
   <tr>
