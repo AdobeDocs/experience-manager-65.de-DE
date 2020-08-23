@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 79%
 
 ---
 
@@ -29,8 +32,7 @@ All diese Teile werden mit einer Reihe standardmäßiger [Formularkomponenten ](
 Neben der [Entwicklung neuer Komponenten](/help/sites-developing/developing-components-samples.md) für Ihre Formulare ist auch Folgendes möglich:
 
 * [Ein Formular vorab mit Werten ausfüllen](#preloading-form-values)
-* [(Bestimmte) Felder mit mehreren Werten vorab ausfüllen 
-   ](#preloading-form-fields-with-multiple-values)
+* [(Bestimmte) Felder mit mehreren Werten vorab ausfüllen ](#preloading-form-fields-with-multiple-values)
 * [Neue Aktionen entwickeln](#developing-your-own-form-actions)
 * [Neue Einschränkungen entwickeln](#developing-your-own-form-constraints)
 * [Bestimmte Formularfelder ein- oder ausblenden](#showing-and-hiding-form-components)
@@ -39,7 +41,7 @@ Neben der [Entwicklung neuer Komponenten](/help/sites-developing/developing-comp
 
 >[!NOTE]
 >
->Dieses Dokument befasst sich hauptsächlich mit der Entwicklung von Formularen mit den [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt, bei der Formularentwicklung in der Touch-optimierten Benutzeroberfläche die neuen [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) und [Ausblendebedingungen](/help/sites-developing/hide-conditions.md) zu nutzen.
+>Dieses Dokument befasst sich hauptsächlich mit der Entwicklung von Formularen mit den [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt, bei der Formularentwicklung in der Touch-optimierten Benutzeroberfläche die neuen [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und [Ausblendebedingungen](/help/sites-developing/hide-conditions.md) zu nutzen.
 
 ## Vorausfüllen von Formularwerten {#preloading-form-values}
 
@@ -120,7 +122,7 @@ You can add your own action under `/apps` as follows:
 
       * `jcr:title`: Geben Sie einen Titel Ihrer Wahl an, der in der Dropdown-Auswahlliste angezeigt wird. Wenn Sie dies nicht festlegen, wird der Name des Knotens angezeigt
 
-      * `jcr:description` - Geben Sie eine Beschreibung Ihrer Wahl ein
+      * `jcr:description` - Geben Sie eine Beschreibung Ihrer Wahl ein.
 
 1. Erstellen Sie im Ordner einen Dialogknoten:
 
@@ -130,7 +132,8 @@ You can add your own action under `/apps` as follows:
 
    1. Ein Postskript.
 The name of the script is `post.POST.<extension>`, e.g. `post.POST.jsp`
-The post script is invoked when a form is submitted to process the form, it contains the code that handles the data arriving from the form `POST`.
+The post script is invoked when a form is submitted to process the form, it contains the code that handles the data arriving from the form 
+`POST`.
 
    1. Fügen Sie ein Weiterleitungsskript hinzu, das aufgerufen wird, wenn das Formular eingereicht wird.
 Der Name des Skripts ist `forward.<extension`>, z.B. kann `forward.jsp`dieses Skript einen Pfad definieren. Die aktuelle Anfrage wird dann an den angegebenen Pfad weitergeleitet.
@@ -142,6 +145,7 @@ Der Name des Skripts ist `forward.<extension`>, z.B. kann `forward.jsp`dieses Sk
 
    * Ein `post.POST.jsp` eignet sich für kleine Vorgänge, die vollständig von der Aktion selbst ausgeführt werden.
    * `forward.jsp` ist hingegen hilfreich, wenn nur Delegation erforderlich ist.
+
    Die Skripte werden in folgender Reihenfolge ausgeführt:
 
    * Upon rendering the form ( `GET`):
@@ -167,7 +171,7 @@ Der Name des Skripts ist `forward.<extension`>, z.B. kann `forward.jsp`dieses Sk
 1. Auch hier können Sie optional Folgendes zum Ordner hinzufügen:
 
    1. Ein Skript für das Hinzufügen von Feldern.
-Der Name des Skripts wird `addfields.<extension>`z. B. `addfields.jsp`Ein addfields-Skript wird unmittelbar nach dem Schreiben des HTML für den Formularstart aufgerufen. Dadurch kann die Aktion benutzerdefinierte Eingabefelder oder sonstigen HTML-Code in das Formular einfügen.
+Der Skriptname wird `addfields.<extension>`z. B. `addfields.jsp`Ein addfields-Skript wird unmittelbar nach dem Schreiben des HTML-Codes für den Formular-Beginn aufgerufen. Dadurch kann die Aktion benutzerdefinierte Eingabefelder oder sonstigen HTML-Code in das Formular einfügen.
 
    1. Ein Initialisierungsskript.
 Der Name des Skripts wird `init.<extension>`z. B. `init.jsp`Dieses Skript wird aufgerufen, wenn das Formular wiedergegeben wird. Es kann zur Initialisierung von handlungsspezifischen Elementen verwendet werden. ``
@@ -280,6 +284,7 @@ In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname�
       * **Beliebig**: Wenn nur eine oder mehrere Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden
    * Wählen Sie in der Bedingungszeile (eine wird als Standard gezeigt) eine Komponente und einen Operator aus und geben Sie einen Wert an.
    * Klicken Sie bei Bedarf auf **Bedingung hinzufügen**, um weitere Bedingungen hinzuzufügen.
+
    Beispiel:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
