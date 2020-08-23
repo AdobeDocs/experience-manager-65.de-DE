@@ -3,10 +3,10 @@ title: XMP-Writeback in Ausgabeformaten
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 57%
+source-wordcount: '789'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propa
 
 1. Um Configuration Manager zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM Rendition Maker]**.
-1. Wählen Sie die Option **[!UICONTROL Propagate XMP[!UICONTROL *** und speichern Sie die Änderungen.
+1. Wählen Sie die Option **[!UICONTROL XMP propagieren]** aus und speichern Sie die Änderungen.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
