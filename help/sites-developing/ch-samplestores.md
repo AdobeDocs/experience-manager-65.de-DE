@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 translation-type: tm+mt
-source-git-commit: e37ff1c9e657c580c607f2656adca01a2b39f81f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 88%
 
 ---
 
@@ -37,7 +40,7 @@ Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segment
 
 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)Der Store-Kandidat aem.segmentations erweitert .
 
-### Konfiguration{#configuration-segmentation}
+### Konfiguration {#configuration-segmentation}
 
 Wenn Sie einen aem.segmentation-Store erstellen, ist es nicht erforderlich, eine detaillierte Konfiguration zur Verfügung zu stellen. Die Standardkonfiguration gibt das Verzeichnis Ort der ContextHub-Segmentdefinitionen an.
 
@@ -63,7 +66,7 @@ Der Beispiel-Store-Kandidat „contexthub.geolocation“ verwendet Google Maps z
 
 Der Store-Kandidat „contexthub.geolocation“ erweitert [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-### Konfiguration{#configuration-geolocation}
+### Konfiguration {#configuration-geolocation}
 
 Die Standardkonfiguration enthält Informationen zum Google-Dienst und die anfänglichen Längen- und Breitenkoordinaten.
 
@@ -113,7 +116,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 
 Speichert Informationen über die aktuelle Clientumgebung wie Gerät, Fenster, Browser, Datum und Uhrzeit.
 
-### Quellort {#source-location-surferinfo
+### Quellpfad {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
@@ -121,7 +124,7 @@ Speichert Informationen über die aktuelle Clientumgebung wie Gerät, Fenster, B
 
 Der Store-Kandidat „contexthub.datetime“ erweitert [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
-### Konfiguration{#configuration-surferinfo}
+### Konfiguration {#configuration-surferinfo}
 
 The default configuration is inherited from `ContextHub.Store.PersistedStore`.
 
@@ -188,7 +191,7 @@ Der Beispiel-Store-Kandidat „granite.emulators“ speichert Informationen übe
 
 Der Store-Kandidat „contexthub.geolocation“ erweitert [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
-### Konfiguration{#configuration-emulators}
+### Konfiguration {#configuration-emulators}
 
 Die Standardkonfiguration enthält ein Array namens `defaultEmulators`, das Informationen über verschiedene Geräte enthält. Wenn Sie einen Store erstellen, stellen Sie verschiedene Geräteprofile nach Bedarf in der Detailkonfigurationseigenschaft mithilfe des Formats bereit, das im folgenden Beispiel veranschaulicht wird:
 
@@ -321,7 +324,7 @@ Informationen über den aktuellen Benutzer.
 
 Der Store-Kandidat „contexthub.datetime“ erweitert [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-### Konfiguration{#configuration-profile}
+### Konfiguration {#configuration-profile}
 
 Die folgende Standardkonfiguration wird verwendet. Sie sollten diese Konfiguration nicht ändern.
 
