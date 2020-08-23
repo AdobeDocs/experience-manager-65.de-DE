@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 74%
@@ -59,8 +59,8 @@ Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und m
    <td><p>Der Speicherort und der Name der Keystore-Datei.</p><p>Der Speicherort kann den absoluten Pfad der Datei enthalten. Er kann auch relativ zum aktuellen Ordner der Eingabeaufforderung angegeben werden, an der der Keytool-Befehl eingegeben wird.</p></td>
    <td>
     <ul>
-     <li><p>Custom Identity keystore: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[server name]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>Custom Trust keystore: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[server name]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>Custom Identity keystore: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ssl.jks</code></p></li>
+     <li><p>Custom Trust keystore: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -134,7 +134,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
 
    >[!NOTE]
    >
-   >Replace `[JAVA_HOME]` with the directory where the JDK is installed, and replace `store`*_*`password`* with the password for the Custom Identity keystore.*
+   >Replace `[JAVA_HOME]` with the directory where the JDK is installed, and replace `store`*_* `password`* with the password for the Custom Identity keystore.*
 
    Beispiel:
 
@@ -151,7 +151,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
 
    >[!NOTE]
    >
-   >Replace `[JAVA_HOME]` with the directory where the JDK is installed, and replace `store`*_*`password`and`key`*_* `password` *with your own passwords.*
+   >Replace `[JAVA_HOME]` with the directory where the JDK is installed, and replace `store`*_* `password` and `key`*_* `password` *with your own passwords.*
 
    Beispiel:
 
