@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 3%
@@ -33,21 +33,20 @@ Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM
 
 ### Artikel Ziel {#article-objective}
 
-In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor der Leser durch eine exemplarische Anleitung des SPA-Editors geführt wird, indem eine einfache SPA-Anwendung verwendet wird, um die grundlegende Bearbeitung von Inhalten zu demonstrieren. Anschließend taucht er in die Konstruktion der Seite ein und zeigt, wie die SPA-Anwendung mit dem AEM SPA Editor in Beziehung steht und mit ihm interagiert.
+In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor der Leser durch eine exemplarische Anleitung des SPA-Editors geführt wird, indem eine einfache SPA-Anwendung verwendet wird, um die grundlegende Bearbeitung von Inhalten zu demonstrieren. Dann taucht er in die Konstruktion der Seite ein und zeigt, wie die SPA-Anwendung mit dem AEM SPA Editor in Beziehung steht und mit ihm interagiert.
 
-Ziel dieser Einführung und exemplarischen Vorgehensweise ist es, einem AEM-Entwickler zu zeigen, warum SPAs relevant sind, wie sie im Allgemeinen funktionieren, wie eine SPA vom AEM SPA Editor verarbeitet wird und wie sie sich von einer Standard-AEM-Anwendung unterscheiden.
+Ziel dieser Einführung und exemplarischen Vorgehensweise ist es, einem AEM Entwickler zu zeigen, warum SPAs relevant sind, wie sie im Allgemeinen funktionieren, wie ein SPA vom AEM SPA Editor behandelt wird und wie es sich von einer AEM unterscheidet.
 
-Die exemplarische Vorgehensweise basiert auf der standardmäßigen AEM-Funktionalität und der Web.Retail-Protokoll-App. Folgende Anforderungen müssen erfüllt sein:
+Die exemplarische Vorgehensweise basiert auf AEM Standardfunktionalität und der Beispielanwendung &quot;We.Retail&quot;-Protokoll. Folgende Anforderungen müssen erfüllt sein:
 
-* [AEM Version 6.4 mit Service Pack 2 oder neuer
-   ](/help/release-notes/sp-release-notes.md)
+* [AEM Version 6.4 mit Service Pack 2 oder neuer](/help/release-notes/sp-release-notes.md)
 * [Installieren Sie hier die Beispielanwendung &quot;We.Retail&quot;, die auf GitHub verfügbar ist.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
 >
 >Dieses Dokument verwendet die [We.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken. Es sollte nicht für Projektarbeiten verwendet werden.
 >
->Jedes AEM-Projekt sollte den [AEM-Projektarchiv](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
+>Jedes AEM Projekt sollte den [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ### Was ist ein BSG? {#what-is-a-spa}
 
@@ -55,7 +54,7 @@ Eine einseitige Anwendung (SPA) unterscheidet sich von einer herkömmlichen Seit
 
 Auf diese Weise wird die Seitenaktualisierung reduziert und dem Benutzer ein Erlebnis präsentiert, das nahtlos, schnell und mehr wie eine native App funktioniert.
 
-Der AEM SPA Editor ermöglicht es Frontend-Entwicklern, SPAs zu erstellen, die in eine AEM-Site integriert werden können. Dadurch können Autoren den SPA-Inhalt genauso einfach bearbeiten wie andere AEM-Inhalte.
+Der AEM SPA Editor ermöglicht es Frontend-Entwicklern, SPAs zu erstellen, die in eine AEM Site integriert werden können, sodass die Autoren den SPA-Inhalt genauso einfach bearbeiten können wie alle anderen AEM.
 
 ### Warum ein BSG? {#why-a-spa}
 
@@ -98,11 +97,11 @@ Durch die clientseitige Wiedergabe reagieren Seitenelemente schneller, und die I
 
 ## Content Editing Experience with SPA {#content-editing-experience-with-spa}
 
-Wenn eine SPA erstellt wurde, um den AEM SPA Editor zu nutzen, merkt der Inhaltsersteller keinen Unterschied beim Bearbeiten und Erstellen von Inhalten. Es sind gängige AEM-Funktionen verfügbar und es sind keine Änderungen am Arbeitsablauf des Autors erforderlich.
+Wenn eine SPA erstellt wurde, um den AEM SPA-Editor zu nutzen, merkt der Inhaltsersteller keine Unterschiede beim Bearbeiten und Erstellen von Inhalten. Es stehen gängige AEM zur Verfügung, sodass keine Änderungen am Arbeitsablauf des Autors erforderlich sind.
 
 >[!NOTE]
 >
->Die exemplarische Vorgehensweise basiert auf der standardmäßigen AEM-Funktionalität und der Web.Retail-Protokoll-App. Folgende Anforderungen müssen erfüllt sein:
+>Die exemplarische Vorgehensweise basiert auf AEM Standardfunktionalität und der Beispielanwendung &quot;We.Retail&quot;-Protokoll. Folgende Anforderungen müssen erfüllt sein:
 >
 >* [AEM Version 6.4 mit Service Pack 2](/help/release-notes/sp-release-notes.md)
 >* [Installieren Sie hier die Beispielanwendung &quot;We.Retail&quot;, die auf GitHub verfügbar ist.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
@@ -142,11 +141,11 @@ Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten
 >
 >Der SPA-Editor ändert das DOM der Anwendung nicht. Die SPA selbst ist für das DOM verantwortlich.
 >
->Um zu sehen, wie dies funktioniert, fahren Sie mit dem nächsten Abschnitt dieses Artikels [SPA-Apps und AEM SPA-Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)fort.
+>Um zu sehen, wie dies funktioniert, fahren Sie mit dem nächsten Abschnitt dieses Artikels [SPA-Apps und dem AEM SPA-Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)fort.
 
-## SPA-Apps und AEM SPA-Editor {#spa-apps-and-the-aem-spa-editor}
+## SPA-Apps und der AEM SPA-Editor {#spa-apps-and-the-aem-spa-editor}
 
-Die Erfahrung, wie sich eine SPA für den Endbenutzer verhält und anschließend die SPA-Seite überprüft, hilft, besser zu verstehen, wie eine SAP-App mit dem SPA Editor in AEM funktioniert.
+Die Erfahrung, wie sich eine SPA für den Endbenutzer verhält, und die anschließende Überprüfung der SPA-Seite helfen, besser zu verstehen, wie eine SAP-App mit dem SPA-Editor in AEM funktioniert.
 
 ### Verwenden einer SPA-Anwendung {#using-an-spa-application}
 
@@ -253,9 +252,9 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](/help/sites-developing/spa-w
 
 Mithilfe der Beispielanwendung &quot;We.Retail Protokoll&quot;ist klar, wie sich die App beim Veröffentlichen verhält und geladen wird, wobei Inhaltsdienste für JSON Content Versand sowie das asynchrone Laden von Ressourcen genutzt werden.
 
-Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor in AEM nahtlos.
+Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor nahtlos in AEM.
 
-Im folgenden Abschnitt wird der Vertrag erläutert, der es dem SPA-Editor ermöglicht, Komponenten innerhalb der SPA mit AEM-Komponenten zu verknüpfen und diese nahtlose Bearbeitung zu erzielen.
+Im folgenden Abschnitt werden wir den Vertrag untersuchen, der es dem SPA Editor erlaubt, Komponenten innerhalb der SPA miteinander zu verbinden, um Komponenten zu AEM und diese nahtlose Bearbeitung zu erzielen.
 
 1. Laden Sie die Web.Retail-Protokoll-Anwendung im Editor und wechseln Sie in den **Vorschau** -Modus.
 
@@ -279,15 +278,15 @@ Im folgenden Abschnitt wird der Vertrag erläutert, der es dem SPA-Editor ermög
 
    >[!NOTE]
    >
-   >Hierbei handelt es sich um eine Verhaltensänderung von serverseitig gerenderten Seiten in AEM, wobei für jede bearbeitbare Komponente ein `cq` Element eingefügt wird.
+   >Hierbei handelt es sich um eine Verhaltensänderung von serverseitigen wiedergegebenen Seiten in AEM, wo für jede bearbeitbare Komponente ein `cq` Element eingefügt wird.
    >
    >
    >Durch diesen Ansatz in SPA entfällt die Notwendigkeit, benutzerdefinierte Elemente zu injizieren. Dabei wird nur ein zusätzliches Datenattribut verwendet, wodurch das Markup für den Frontend-Entwickler einfacher wird.
 
 ## Nächste Schritte {#next-steps}
 
-Jetzt, da Sie die SPA-Bearbeitungserfahrung in AEM und die Beziehung eines SPA zum SPA-Editor kennen, sollten Sie sich einen tieferen Eindruck davon machen, wie ein SPA aufgebaut ist.
+Jetzt, da Sie die SPA-Bearbeitungserfahrung in AEM verstehen und wie ein SPA mit dem SPA-Editor verknüpft ist, sollten Sie einen tieferen Einblick in die Erstellung eines SPA-Editors gewinnen.
 
-* [Erste Schritte mit SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) zeigen, wie eine grundlegende SPA für die Verwendung mit dem SPA-Editor in AEM erstellt wurde
-* [Der SPA Editor-Überblick](/help/sites-developing/spa-overview.md) geht näher auf das Kommunikationsmodell zwischen AEM und SPA ein.
-* [In der Entwicklung von SPAs für AEM](/help/sites-developing/spa-architecture.md) wird beschrieben, wie Frontend-Entwickler dazu bewegt werden, eine SPA für AEM zu entwickeln, und wie SPAs mit der AEM-Architektur interagieren.
+* [Erste Schritte mit SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) zeigen, wie ein grundlegendes SPA für die Arbeit mit dem SPA-Editor in AEM
+* [Der SPA Editor-Überblick](/help/sites-developing/spa-overview.md) vertieft das Kommunikationsmodell zwischen AEM und SPA.
+* [Die Entwicklung von SPAs für AEM](/help/sites-developing/spa-architecture.md) beschreibt, wie Front-End-Entwickler dazu gebracht werden können, eine SPA für AEM zu entwickeln, und wie SPAs mit AEM Architektur interagieren.
