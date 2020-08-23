@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4719'
+source-wordcount: '4718'
 ht-degree: 67%
 
 ---
@@ -51,7 +51,7 @@ Bevor es um die Entwicklung von Komponenten geht, müssen Sie wissen, welche Ben
 
 * **Touch-optimierte Benutzeroberfläche**
    [Die Standardbenutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) basiert auf der einheitlichen Benutzererfahrung für das Adobe Marketing Cloud und verwendet dabei die zugrunde liegenden Technologien der Benutzeroberfläche [von](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral und der Benutzeroberfläche von [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-* **Klassische Benutzeroberfläche** auf Grundlage der ExtJS-Technologie, die mit AEM 6.4 nicht mehr unterstützt wurde.
+* **Klassische Benutzeroberfläche** auf Grundlage der ExtJS-Technologie, die mit AEM 6.4 veraltet wurde.
 
 Weitere Informationen finden Sie unter [Benutzeroberflächen-Empfehlungen für Kunden](/help/sites-deploying/ui-recommendations.md).
 
@@ -61,7 +61,7 @@ Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider V
 
 >[!NOTE]
 >
->Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Moderationstools&amp;(moderation-tools.md) können die Migration vereinfachen.
+>Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Modernisierungstools](modernization-tools.md) können die Migration erleichtern.
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
@@ -98,7 +98,7 @@ Die Komponenten, die Inhalte rendern, müssen auf derselben AEM-Instanz bereitge
 
 Mit den folgenden Tools können Sie Ihre Komponenten in die Veröffentlichungsinstanz verschieben:
 
-* [Verwenden Sie Package Manager](/help/sites-administering/package-manager.md) , um Ihre Komponenten einem Paket hinzuzufügen und in eine andere AEM-Instanz zu verschieben.
+* [Verwenden Sie Package Manager](/help/sites-administering/package-manager.md) , um Ihre Komponenten einem Paket hinzuzufügen und in eine andere AEM Instanz zu verschieben.
 * [Mit dem Replikationstool „Tree aktivieren“](/help/sites-authoring/publishing-pages.md#manage-publication) können Sie die Komponenten replizieren.
 
 >[!NOTE]
