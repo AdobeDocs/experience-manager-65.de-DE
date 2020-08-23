@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '3095'
-ht-degree: 90%
+source-wordcount: '3092'
+ht-degree: 91%
 
 ---
 
@@ -27,13 +27,13 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren W
 >
 >Sie müssen Assets veröffentlichen, um sie Seiten in AEM hinzufügen zu können. Siehe [Veröffentlichen von Dynamic Media-Assets ](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Hinzufügen einer Dynamic Media-Komponente zu einer Seite       {#adding-a-dynamic-media-component-to-a-page}
+## Hinzufügen einer Dynamic Media-Komponente zu einer Seite         {#adding-a-dynamic-media-component-to-a-page}
 
-Das Hinzufügen von 3D-Medien, Dynamic Media, interaktiven Medien, Panoramamedien, Smart-Zuschneiden von Videos oder Video 360-Medien zu einer Seite entspricht dem Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
+Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Medien, Panoramamedien, Smart-Zuschnitt-Videos oder 360-Grad-Videomedien gehen Sie genauso vor wie beim Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
 
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
 1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (möglicherweise müssen Sie die Anzeige des Seitenbedienfelds umschalten) auf das Symbol &quot; **[!UICONTROL Komponenten]** &quot;.
-1. Wählen Sie unter der Überschrift **[!UICONTROL Komponenten]** in der Dropdown-Liste **[!UICONTROL Dynamic Media aus.]**
+1. Wählen Sie unter der Überschrift &quot; **[!UICONTROL Komponenten]** &quot;in der Dropdown-Liste &quot; **[!UICONTROL Dynamische Medien&quot;aus.]**
 
    Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
 
@@ -53,7 +53,7 @@ Das Hinzufügen von 3D-Medien, Dynamic Media, interaktiven Medien, Panoramamedie
 
    Die Dynamic Media-Komponente für 360-Grad-Videomedien
 
-1. Wenn Sie fertig sind, tippen Sie in der oberen rechten Ecke des Dialogfelds auf das Kontrollkästchen, um Ihre Änderungen zu speichern.
+1. Wenn Sie fertig sind, tippen Sie oben rechts im Dialogfeld auf das Häkchen, um Ihre Änderungen zu speichern.
 
 ### Aktivieren von Dynamic Media-Komponenten {#enabling-dynamic-media-components}
 
@@ -102,7 +102,7 @@ Dynamic Media components are available when you tap the **[!UICONTROL Components
 
 Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
-* **[!UICONTROL Dynamische Medien]**: Assets wie Bilder, Videos, E-Kataloge und Rotationssets. 
+* **[!UICONTROL Dynamische Medien]**: Assets wie Bilder, Videos, E-Kataloge und Rotations-Sets. 
 * **[!UICONTROL Interaktive Medien]**: interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets.
 * **[!UICONTROL Panoramamedien]**: Panoramabilder oder VR-Panoramabilder.
 * **[!UICONTROL 360-Grad-Videomedien]**: 360-Grad-Videos und 360-Grad-VR-Videos.
@@ -115,7 +115,7 @@ Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
 ### Komponente „Dynamische Medien“{#dynamic-media-component}
 
-Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, gemischte Mediensets und Videos. Zudem ist der Viewer dynamisch. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bild-Sets sowie Rotations-Sets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 >[!NOTE]
 >
@@ -123,6 +123,7 @@ Die Dynamic Media-Komponente ist intelligent. In Abhängigkeit davon, ob Sie ein
 >
 >* Mehrere Instanzen der Dynamic Media-Komponente werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >
 Beachten Sie, dass Sie den einzelnen Dynamic Media-Komponenten auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
@@ -134,9 +135,9 @@ Wenn Sie die Dynamic Media-Komponente hinzufügen und **[!UICONTROL Einstellunge
 * Sie [Dynamic Media aktiviert](/help/assets/config-dynamic.md) haben. Dynamic Media ist standardmäßig deaktiviert.
 * das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die vor der Aktivierung von dynamischen Medien importiert wurden, verfügen nicht über eine Pyramid TIFF-Datei.
 
-#### Arbeiten mit Bildern       {#when-working-with-images}
+#### Arbeiten mit Bildern         {#when-working-with-images}
 
-Mit der Komponente „Dynamische Medien“ können Sie dynamische Bilder, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
+Mit der Komponente „Dynamische Medien“ können Sie dynamische Bilder, einschließlich Bild-Sets, Rotations-Sets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotations-Set drehen oder ein Bild aus einem anderen Set auswählen.
 
 Sie können zudem die Viewer-Vorgabe, Bildvorgabe oder das Bildformat direkt in der Komponente konfigurieren. Um ein Bild dynamisch zu machen, können Sie die Haltepunkte festlegen oder eine dynamische Bildvorgabe anwenden.
 
@@ -150,21 +151,21 @@ You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTRO
 
 * **[!UICONTROL Viewer-Vorgaben]**: Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-   Dies ist die einzig verfügbare Option beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent – es werden nur relevante Viewer-Vorgaben angezeigt.
+   Dies ist die einzig verfügbare Option beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent – es werden nur relevante Viewer-Vorgaben angezeigt.
 
 * **[!UICONTROL Viewer-Modifikatoren]**: Viewer-Modifikatoren haben die Form „name=value pair with a &amp; delimiter“ und ermöglichen eine Viewer-Bearbeitung, wie im Viewer-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`. Damit wird ein anderes Bild für die Videominiatur festgelegt und eine Untertiteldatei mit dem Video verknüpft.
 
 * **[!UICONTROL Bildvorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Bildvorgabe aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Bildmodifikatoren]**: Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Haltepunkte]**: Wenn Sie dieses Asset auf einer dynamischen Website verwenden, müssen Sie die Bildhaltepunkte hinzufügen. Bildhaltepunkte müssen durch Kommas (,) voneinander getrennt werden. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** tippen.
 
@@ -172,11 +173,11 @@ You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTRO
 
 * **[!UICONTROL Alternativer Text]**: Benennen Sie das Bild für die Benutzer, deren Grafiken deaktiviert sind.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL URL, Öffnen in]**: Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Breite]**: Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
@@ -195,17 +196,18 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 >
 >Die Videokomponente für Dynamic Media ist standardmäßig adaptiv. Wenn sie eine feste Größe aufweisen soll, müssen Sie dies in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** festlegen.
 
-* **Viewer-Vorgabe**: Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“.
+* **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Video-Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“.
 
-* **Viewer-Modifikatoren**: Viewer-Modifikatoren haben die Form „name=value pair with a &amp; delimiter“ und ermöglichen eine Viewer-Bearbeitung, wie im Adobe Viewer-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`.
+* **[!UICONTROL Viewer-Modifikatoren]**- Viewer-Modifikatoren haben die Form eines &quot;name=value&quot;-Paars mit einem &amp;-Trennzeichen und ermöglichen das Ändern von Viewern, wie im Viewer-Referenzhandbuch für Adoben beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`.
 
    Viewer-Modifikatoren ermöglichen z. B. Folgendes:
 
    * Verknüpfen einer Untertiteldatei mit einem Video: [Untertitel][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Verknüpfen Sie eine Navigationsdatei mit einem Video: [navigation][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-* **Titel**: Ändern Sie den Titel des Videos.
+* **[!UICONTROL Titel]**: Ändern Sie den Videotitel.
 
 * **[!UICONTROL Breite]**: Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
@@ -227,7 +229,7 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 
 * **[!UICONTROL Bildmodifikatoren]**: Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
    Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
@@ -235,11 +237,11 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 
 * **[!UICONTROL Alternativer Text]**: Benennen Sie das Smart-Zuschnitt-Bild für die Benutzer, deren Grafiken deaktiviert sind.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL URL, Öffnen in]**: Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
-   Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
+   Diese Option ist beim Anzeigen von Bild-Sets, Rotations-Sets oder Sets für gemischte Medien nicht verfügbar.
 
 * **[!UICONTROL Breite]**: Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
@@ -257,6 +259,7 @@ Die Komponente „Interaktive Medien“ ist eine intelligente Komponente. Je nac
 >
 >* Mehrere Instanzen der Komponente für interaktive Medien werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >
 Beachten Sie, dass Sie den einzelnen Komponenten für interaktive Medien auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
@@ -298,6 +301,7 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 >
 >* Mehrere Instanzen der Komponente für **[!UICONTROL Panoramamedien]** werden auf derselben Seite verwendet.
 >* Jede Instanz verwendet denselben Asset-Typ.
+
 >
 >
 Beachten Sie, dass Sie den einzelnen Komponenten für **[!UICONTROL Panoramamedien]** auf dieser Seite nicht unterschiedliche Viewer-Vorgaben zuweisen können.
