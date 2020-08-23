@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 456460d54650bcb71d8eee47fdf0e859a383b3d4
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 77%
@@ -265,12 +265,12 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit)</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-Bit)</p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
   <tr>
-   <td><p>SUSE® Linux® Enterprise Server 12 (64-bit)</p> </td>
+   <td><p>SUSE® Linux® Enterprise Server 12 (64 Bit)</p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Service Packs, kumulative Patches und wichtige Sicherheitsupdates</p> </td>
   </tr>
@@ -325,7 +325,7 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 * AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt, wenn entsprechend angegeben.
 * Clusterbasierte Installationen unterstützen keine TarMK-Persistenz. Weitere Informationen zur unterstützten Persistenz finden Sie unter [Auswählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 * AEM Forms on JEE unterstützt die Software verschiedener Drittanbieter gemäß der [Richtlinie zur Unterstützung der Software von Drittanbietern](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-* AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter. Einige Kombinationen sind durch Drittanbieter möglicherweise nicht zulässig. For example, many vendors have not certified their application servers with Oracle. Daher unterstützt AEM Forms on JEE diese Kombinationen ebenfalls nicht. Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Supportmatrix dieser Drittanbieter überprüfen.
+* AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter. Einige Kombinationen sind durch Drittanbieter möglicherweise nicht zulässig. Beispielsweise haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt AEM Forms on JEE diese Kombinationen ebenfalls nicht. Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Supportmatrix dieser Drittanbieter überprüfen.
 * AEM Forms on JEE unterstützt keine TarMK Cold Standby.
 * AEM Forms on JEE unterstützt kein vertikales Clustering.
 * AEM Forms on JEE unterstützt nicht MySQL-Datenbank in Cluster-Umgbungen.
@@ -475,7 +475,7 @@ Die folgenden Untersysteme von AEM Forms sind nicht mit [508](https://www.sectio
 * Benutzeroberfläche für Correspondence Management Authoring
 * Administrator-Benutzeroberfläche (Benutzeroberfläche der Administration Console)
 
-## System Requirements for AEM Forms on JEE {#system-requirements-for-aem-forms-on-jee}
+## Systemanforderungen für AEM Forms on JEE {#system-requirements-for-aem-forms-on-jee}
 
 ### Mindestanforderungen an die Hardware {#minimum-hardware-requirements}
 
@@ -511,10 +511,9 @@ Die folgenden Untersysteme von AEM Forms sind nicht mit [508](https://www.sectio
 Für zusätzliche Anforderungen siehe:
 
 * [Systemanforderungen für eine AEM Forms on JEE-Bereitstellung mit einem Server](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Systemanforderungen für eine Clusterbereitstellung von AEM Forms on JEE
-   ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [Systemanforderungen für eine Clusterbereitstellung von AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
-## Supported Clients for AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
+## Unterstützte Clients für AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
 
@@ -525,7 +524,7 @@ Für zusätzliche Anforderungen siehe:
    <th><p><strong>Unterstützte Patch-Definitionen</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basic)</p> <p>32-bit or 64-bit version</p> <p> </p> </td>
+   <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basic)</p> <p>32-Bit- oder 64-Bit-Version</p> <p> </p> </td>
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
@@ -690,7 +689,7 @@ Die AEM Forms-App ist für die folgenden Plattformen verfügbar:
 | **Plattform** | **Unterstützte Geräte** |
 |---|---|
 | Apple iOS | Apple iPhone, iPad, iPad Air und iPad mini mit iOS 11 und höher. |
-| Google Android | Android 5.1 und höher. AEM Forms app is certified on 7- and 10-inch Samsung Galaxy tablets and popular smartphones. |
+| Google Android | Android 5.1 und höher. Die AEM Forms App ist für Samsung Galaxy Tablets und beliebte Smartphones mit 7 und 10 Zoll zertifiziert. |
 | Microsoft Windows | Microsoft Surface-Geräte, Tablets, Laptops und Desktops mit Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
