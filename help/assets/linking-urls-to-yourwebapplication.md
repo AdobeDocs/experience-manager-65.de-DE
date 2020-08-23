@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 93%
+source-wordcount: '1274'
+ht-degree: 94%
 
 ---
 
@@ -32,9 +32,9 @@ Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](embed-c
 
 Siehe auch [Verknüpfen von YouTube-URLs mit einer Web-Anwendung](video.md).
 
-Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
+Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site.](responsive-site.md)
 
-Informationen hierzu finden Sie auch unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
+Informationen hierzu finden Sie auch unter [Hochladen von Assets.](managing-assets-touch-ui.md#uploading-assets)
 
 ## Abrufen einer URL für ein Asset     {#obtaining-a-url-for-an-asset}
 
@@ -74,7 +74,7 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Wenn Sie ein Rotationsset, Bildset, Karussellset oder Video ausgewählt haben, tippen Sie im Dropdown-Menü auf **[!UICONTROL Viewer.]**
+   * Wenn Sie ein Rotations-Set, Bild-Set, Karussell-Set oder Video ausgewählt haben, tippen Sie im Dropdown-Menü auf **[!UICONTROL Viewer.]**
 
       Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
 
@@ -115,7 +115,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Beispiel: `https://aem.com/is/content/adobe/image.gif`.
-   * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
+   * Tippen Sie auf **[!UICONTROL Asset > Dynamische Ausgabedarstellungen]** und tippen Sie dann auf eine dynamische Ausgabedarstellung des statischen Assets und kopieren Sie die URL.
 
       Ändern Sie die kopierte URL, um `is/content` anstelle von `is/image/` im Pfad zu verwenden.
 
@@ -138,7 +138,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
 1. Kopieren Sie den gesamten Pfad für das Video-Ausgabeformat aus dem JCR (Java Content Repository).
 
    Der Pfad für das Video-Ausgabeformat kann zum Beispiel folgendermaßen aussehen:
@@ -157,7 +157,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Dies ist die vollständige Video-URL für ein veröffentlichtes Videoausgabeformat.
 
-## Abrufen einer Video-URL für adaptives Streaming (HLS)     {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Abrufen einer Video-URL für adaptives Streaming (HLS)       {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen.]**
