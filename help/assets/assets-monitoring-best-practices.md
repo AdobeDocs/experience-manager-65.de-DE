@@ -3,9 +3,9 @@ title: Bewährte Verfahren zur [!DNL Adobe Experience Manager Assets] Überwachu
 description: Best practices to monitor the environment and performance of your [!DNL Adobe Experience Manager] deployment after it is deployed.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1671'
 ht-degree: 69%
 
 ---
@@ -95,7 +95,7 @@ Arbeitsspeicher
 * Alarmschwellenwert: Wenn die Arbeitsspeicherauslastung (Heap oder Nicht-Heap) 75 % der jeweiligen maximalen Arbeitsspeichergröße überschreitet.
 * Alarmdefinition: Entweder ist der Arbeitsspeicher des Systems unzureichend oder der Code weist ein Speicherleck auf. Analysieren Sie eine Thread-Sicherungskopie, um eine Definition zu erhalten.
 
->[!NHinweis]
+>[!NOTE]
 >
 >Die von dieser Bean bereitgestellten Informationen werden in Byte ausgedrückt.
 
@@ -122,7 +122,7 @@ Replikationsagenten
 
 * Alarmdefinition: Blockierte Warteschlange im System. Dies ist ein Hinweis darauf, dass das Replikationsziel ausgefallen oder nicht erreichbar ist. Häufig führen Netzwerk- oder Infrastrukturprobleme dazu, dass eine übermäßig hohe Zahl von Einträgen in eine Warteschlange eingereiht wird, und dies kann sich negativ auf die Systemleistung auswirken.
 
->[!NHinweis]
+>[!NOTE]
 >
 >For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
 
@@ -198,5 +198,5 @@ In the process of monitoring, if you encounter issues, here are some troubleshoo
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
 * Investigate the egress points from the client network and the ingress points to the [!DNL Experience Manager] deployment network, including the dispatcher. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
-* Vergrößern Sie Ihren [!DNL Experience Manager] Server. You may have an inadequately sized your [!DNL Experience Manager] deployment. Der Adobe-Kundendienst kann Ihnen dabei helfen, festzustellen, ob Ihr Server untermaßig ist.
+* Vergrößern Sie Ihren [!DNL Experience Manager] Server. You may have an inadequately sized your [!DNL Experience Manager] deployment. Die Kundenunterstützung der Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server untermaßig ist.
 * Untersuchen Sie die Dateien `access.log` und `error.log` auf Einträge, die zu Fehlerzeitpunkten erstellt wurden. Suchen Sie nach Mustern, die ggf. auf Anomalien im benutzerdefinierten Code hinweisen. Fügen Sie diese der Liste mit den zu überwachenden Ereignissen hinzu.
