@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '2493'
+ht-degree: 63%
 
 ---
 
 
 # Texte in interaktiver Kommunikation{#texts-in-interactive-communications}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Ein Textdokument besteht aus einem oder mehreren Textabsätzen. Ein Absatz kann statisch oder dynamisch sein. Ein dynamischer Absatz kann Formulardatenmodelleigenschaften und -variablen enthalten. Sie können auch Regeln anwenden und innerhalb eines Textfragments wiederholen. Beispielsweise könnte der Kundenname in einer Begrüßung eine FDM-Eigenschaft (Form Data Model) sein, deren Wert zur Laufzeit verfügbar gemacht wird. Durch Änderung dieser Werte kann dieselbe interaktive Kommunikation verwendet werden, um die interaktive Kommunikation für verschiedene Kunden mithilfe der Agent-Benutzeroberfläche vorzubereiten.
 
@@ -25,7 +28,7 @@ Das Textfragment in Interaktiver Kommunikation unterstützt den folgenden Typ dy
 * **Datenmodellobjekte**: Die Dateneigenschaften verwenden eine Back-End-Datenquelle.
 * **Regelbasierter Inhalt**: Teile des Inhalts in einem Text, die basierend auf einer Regel angezeigt oder ausgeblendet werden. Eine Regel kann auch auf den Eigenschaften und Variablen des Formulardatenmodells basieren.
 * **Variablen**: Im Textdokumentfragment sind Variablen nicht an eine Backend-Datenquelle gebunden. Der Agent füllt/wählt Werte in Variablen aus oder bindet die Variablen an Datenquellen, während er die interaktive Kommunikation für das Senden an einen Nachbearbeitungsprozess vorbereitet.
-* **Wiederholen**: Sie verfügen möglicherweise über dynamische Informationen in Ihrer interaktiven Kommunikation, z. B. Transaktionen in einem Kreditkartenauszug, deren Häufigkeit sich mit jeder generierten interaktiven Kommunikation ändern kann. Wenn Sie die Wiederholen-Funktion verwenden, können Sie solche dynamischen Daten formatieren und strukturieren. For more information, see [Inline condition and repeat](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Wiederholen**: Sie verfügen möglicherweise über dynamische Informationen in Ihrer interaktiven Kommunikation, z. B. Transaktionen in einem Kreditkartenauszug, deren Häufigkeit sich mit jeder generierten interaktiven Kommunikation ändern kann. Wenn Sie die Wiederholen-Funktion verwenden, können Sie solche dynamischen Daten formatieren und strukturieren. For more information, see [Inline condition and repeat](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Text erstellen {#createtext}
 
@@ -59,6 +62,7 @@ Das Textfragment in Interaktiver Kommunikation unterstützt den folgenden Typ dy
    * [Sonderzeichen](#special)
    * [Text suchen und ersetzen](#searching)
    * [Tastaturbefehle](/help/forms/using/keyboard-shortcuts.md)
+
    >[!NOTE]
    >
    >Sie können Formulardatenmodellelemente, Datenwörterbuchelemente und Variablen mit dem @-Symbol im Texteditor hinzufügen. Wenn Sie im Texteditor eine Zeichenfolge mit vorangestelltem @ eingeben, werden alle Datenmodellelemente, Datenwörterbuchelemente und Variablen durchsucht und Elemente oder Variablen mit der gesuchten Zeichenfolge angezeigt. Sie können durch die Suchergebnisse navigieren und ein Element oder eine Variable auswählen. Wenn kein übereinstimmendes Ergebnis vorliegt, wird die Meldung *&quot;Keine übereinstimmenden Ergebnisse gefunden* &quot;angezeigt.
@@ -85,7 +89,7 @@ Wenn Sie beim Erstellen eines Textes ein Formulardatenmodell angegeben haben, we
 
 ![insertFdmelementtext](assets/insertfdmelementtext.png)
 
-* To insert an form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and tap **[!UICONTROL [B]Add Selected]**. You can also just double-tap the property to insert it at the**[ C ]**cursor position. Die Eigenschaften des Formulardatenmodells werden in einer braunen Hintergrundfarbe hervorgehoben.
+* To insert an form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and tap **[!UICONTROL [B]Add Selected]**. You can also just double-tap the property to insert it at the **[C]** cursor position. Die Eigenschaften des Formulardatenmodells werden in einer braunen Hintergrundfarbe hervorgehoben.
 
 Alternativ dazu können Sie die Formulardatenmodelleigenschaft mit dem @-Symbol im Texteditor suchen und hinzufügen. Platzieren Sie den Cursor an der Stelle, an der Sie die Eigenschaft einfügen möchten. Geben Sie @ gefolgt von der Suchzeichenfolge ein. Der Suchvorgang wird mit allen Formulardatenmodelleigenschaften und -variablen durchgeführt, die im Dokument-Fragment verfügbar sind. Die Eigenschaften oder Variablen, die die Suchzeichenfolge enthalten, werden abgerufen und als Dropdown-Liste angezeigt. Navigieren Sie durch die Suchergebnisse und klicken Sie auf die Eigenschaft, die Sie an der Cursorposition einfügen möchten. Drücken Sie Esc, um die Suchergebnisse auszublenden.
 
@@ -161,6 +165,7 @@ Mit Regeleditor in einem Text können Sie Regeln erstellen, um Textzeichenfolgen
 
    * Eigenschaft des zugeordneten Formulardatenmodells
    * Beliebige Variablen, die Sie erstellt haben.
+
    Wählen Sie die geeignete Option aus, die ausgewertet werden soll.
 
    ![ruleEditor](assets/ruleeditor.png) ![eleeditorfdm](assets/ruleeditorfdm.png)
@@ -193,12 +198,13 @@ Mit Regeleditor in einem Text können Sie Regeln erstellen, um Textzeichenfolgen
 
 ## Text formatieren {#formatting}
 
-While creating or editing text, the toolbar changes depending on the type of edits you choose to make: Paragraph, Alignment, or Listing:
-[ ![Select type of toolbar](do-not-localize/toolbarselection.png)
+Beim Erstellen oder Bearbeiten von Text ändert sich die Symbolleiste je nach dem Typ der Bearbeitung, die Sie wählen, um Folgendes zu machen: Absatz, Ausrichtung oder Auflistung:
+
+![Symbolleistentyp auswählen](do-not-localize/toolbarselection.png)
 
 Symbolleistentyp auswählen: Absatz, Ausrichtung oder Liste
 
-](assets/toolbarselection.png) Symbolleiste zur ![Schriftbearbeitung](do-not-localize/paragraphtoolbar.png)
+![Symbolleiste zum Bearbeiten der Schriftart](do-not-localize/paragraphtoolbar.png)
 
 Symbolleiste zum Bearbeiten der Schriftart
 
@@ -265,6 +271,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
    * Wenn eine andere Instanz des gesuchten Texts gefunden wird, wird diese Instanz im Textdokumentfragment hervorgehoben. Wenn Sie erneut auf **[!UICONTROL Ersetzen]** klicken, wird die hervorgehobene Instanz ersetzt und der Cursor bewegt sich weiter, falls eine dritte Instanz gefunden wird.
    * Wenn keine andere Instanz gefunden wird, wird im Dialogfeld „Suchen und Ersetzen“ folgende Meldung angezeigt: „Modulende erreicht“.
+
    Sie können auch auf „Alle ersetzen“ tippen, um alle Übereinstimmungen auf einmal zu ersetzen.
 
    Die Funktion umfasst außerdem eine leistungsstarke Suche nach regulären Ausdrücken. To use regex in your search, select **[!UICONTROL Reg ex]** and then tap **[!UICONTROL Find]** or **[!UICONTROL Replace]**.
