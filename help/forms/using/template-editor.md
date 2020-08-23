@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1984'
+ht-degree: 89%
 
 ---
 
@@ -139,11 +142,9 @@ Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informati
 
 #### Hinzufügen von Inhalten in Registerkarten {#adding-content-in-tabs}
 
-[ ![Hinzufügen von Feldern in Vorlagen für adaptive Formulare](assets/template-edit-initial-content.png)
+![Hinzufügen von Feldern in Vorlagen für adaptive Formulare](assets/template-edit-initial-content.png)
 
-Hinzufügen von Feldern in der Vorlage
-
-](assets/template-edit-initial-content-1.png) Nachdem Sie Bereiche hinzugefügt und als Registerkarten strukturiert haben, können Sie Felder innerhalb der Registerkarten hinzufügen. Wenn Sie eine Registerkarte im Editor auswählen, sehen Sie die Option **Komponenten hierher ziehen**. Sie können Komponenten wie Textboxen, Listenelemente und Schaltflächen per Drag&amp;Drop verschieben. Sie können Komponenten aus dem Komponenten-Browser in der Seitenleiste ziehen.
+Nachdem Sie Bedienfelder hinzugefügt und sie als Registerkarten strukturiert haben, können Sie Felder innerhalb der Registerkarten hinzufügen. Wenn Sie eine Registerkarte im Editor auswählen, sehen Sie die Option **Komponenten hierher ziehen**. Sie können Komponenten wie Textboxen, Listenelemente und Schaltflächen per Drag&amp;Drop verschieben. Sie können Komponenten aus dem Komponenten-Browser in der Seitenleiste ziehen.
 
 Jede Komponente verfügt über Eigenschaften, die die Datenerfassung und -bearbeitung verbessern. Beispielsweise können Sie die Eigenschaft **Erforderliches Feld** einer Komponente aktivieren. Die Autoren können die Meldung festlegen, die Ihre Kunden sehen, wenn sie das Ausfüllen eines erforderlichen Felds überspringen. Specify the message in **Required Field Message** property.
 
