@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '6933'
+ht-degree: 82%
 
 ---
 
@@ -58,13 +61,14 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
 1. Ein Texteditor wird geöffnet. Geben Sie hier den gewünschten Text ein. Verwenden Sie die Symbolleiste oben auf der Seite, um den Text zu formatieren, Bedingungen, Links und Seitenumbrüche einzufügen.
 
-   [ ![Symbolleiste](assets/advancedediting.png)
+   ![Symbolleiste](assets/advancedediting.png)
 
    * **Link**[](#insert-hyperlink): Fügen Sie eine Hypertextverknüpfung in den Text ein.
    * **Wiederholen**: Mit diesem Befehl wird ein Collection-Element unter Verwendung eines Trennzeichens in ein Datenwörterbuch gedruckt.
    * **Bedingung**: Klicken Sie, um eine Bedingung einzufügen. Text wird auf der Grundlage einer Bedingung eingefügt. Nur wenn die Bedingung den Status „true“ hat, wird der Text im Brief sichtbar.
-   * **Hinzufügen Beschreibung**: Hinzufügen Anmerkung zu einem Textteil. Es handelt sich hierbei um Metadaten, die nur für den Autor sichtbar und nicht Teil des erstellten Briefs sind.
+   * **hinzufügen Beschreibung**: hinzufügen Anmerkung zu einem Textteil. Es handelt sich hierbei um Metadaten, die nur für den Autor sichtbar und nicht Teil des erstellten Briefs sind.
    * **Seitenumbruch**: Wenn Sie das Seitenumbruch-Attribut eines Textmoduls auf „false“ setzen, wird das Textmodul nicht auf mehreren Seiten angezeigt.
+
    Ein Texteditor wird geöffnet. Geben Sie den Text ein. Die Symbolleiste ändert sich je nach dem Typ der Bearbeitung, die Sie vornehmen: Absatz, Ausrichtung oder Auflistung:
 
    ![Symbolleistentyp auswählen](assets/toolbarselection.png)
@@ -99,6 +103,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
    * Währungssymbole wie €,¥ und £
    * Mathematische Symbole wie z. B. □, , ^ und ^
    * Interpunktionssymbole wie ‟ und&quot;
+
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
    Correspondence Management enthält integrierte Unterstützung für 210 Sonderzeichen. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
@@ -119,6 +124,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
    * Add a data dictionary element in the text, select a data element from the list, and tap Insert ( ![insert](assets/insert.png)). Wenn Sie Geschützt auswählen, ist das Datenlexikonelement schreibgeschützt und wird im Briefeditor, aber nicht in der Benutzeroberfläche „Korrespondenz erstellen“ oder in der Korrespondenzerstellung angezeigt.
    * Um ein Platzhalterelement im Text einzufügen, klicken Sie im Bereich „Datenelemente“ auf „Neu erstellen“. geben Sie die Details des neuen Datenelements ein und klicken Sie auf „Erstellen“, um das neue Element der Liste hinzuzufügen. Der neue Platzhalter kann in den Text auf dieselbe Weise wie ein Datenlexikonelement eingefügt werden. Um einen Platzhalter zu bearbeiten, wählen Sie einen Platzhalter aus und tippen Sie auf „Bearbeiten“.
+
    ![Platzhalterelemente](assets/placeholder_elements_in_xmldata.png)
 
    Platzhalterelemente, wie in der von Ihnen erstellten Musterdatendatei eines Datenwörterbuchs angegeben
@@ -403,12 +409,14 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 
    * **Zeilen**: Wählen Sie die Anzahl der Zeilen für das Layout aus. Die konfigurierte Zeilenanzahl muss größer oder gleich der ursprünglichen Zeilenanzahl sein.
    * **Spalten**: Wählen Sie die Anzahl der Spalten für das Layout aus. Die konfigurierte Spaltenanzahl muss größer oder gleich der ursprünglichen Spaltenanzahl sein.
+
    Für jede Spalte sind folgende Details erforderlich:
 
    * **Kopfzeile**: für die Kopfzeile anzuzeigender Text
    * **Fußzeile**: für die Fußzeile anzuzeigender Text
    * **Typ**: Typ der zusätzlichen Spalte. Feld- oder Zielbereich Der Typ ist für statische Platzhaltertabellen aktiviert. Der Typ kann auf Spaltenebene definiert werden, nicht auf Zellenebene. Alle Zellen in einer erweiterten Spalte sind vom gleichen Typ. Für eine dynamische Tabelle haben alle Spalten den Typ „Feld“. Für Nicht-Platzhaltertabellen können Sie den Typ der zusätzlichen Spalten nicht definieren. In diesem Fall ist der Typ der zusätzlichen Zellen in einer erweiterten Spalte identisch mit dem Typ der letzten Spalte in dieser Zeile. Der Typ der Zelle in der zusätzlichen Zeile ist identisch mit dem Typ der letzten Zelle in dieser Spalte.
    * **Breitenverhältnis**: Verhältnis der Tabellenspaltenbreiten.
+
    For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#examplewithsamplefiles).
 
 1. Tippen Sie auf **Speichern**.
@@ -495,8 +503,9 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
 
 1. Erstellen Sie in Designer zwei XDPs (Layout-Fragmente): eine dynamische Tabelle und eine statische Tabelle. Für beide Layouts:
 
-   * Hinzufügen Teilformular in die Tabellenspalte. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
-   * Hinzufügen Sie ein Teilformular in die Tabellenzelle. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
+   * hinzufügen Teilformular in die Tabellenspalte. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
+   * hinzufügen Sie ein Teilformular in die Tabellenzelle. Stellen Sie sicher, dass Sie das Layout des übergeordneten Unterformulars der Tabelle auf Fluss ändern, und entfernen Sie die Bindungen des Unterformulars in der Tabelle.
+
    Oder verwenden Sie die hier angehängten statischen und dynamischen XDPs.
 
    Weitere Informationen zum Arbeiten mit Layout-Fragmenten finden Sie unter [Layout-Fragmente](#layoutfragments).
