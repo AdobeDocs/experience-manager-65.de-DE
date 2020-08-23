@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4814'
+source-wordcount: '4813'
 ht-degree: 98%
 
 ---
@@ -43,7 +43,7 @@ Sehen Sie sich eine exemplarische Vorgehensweise (10 Minuten und 33 Sekunden) 
 
 >[!NOTE]
 >
->Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users ]**hinzufügen kann.
+>Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
 
 ## Schnellstart: Karussellbanner {#quick-start-carousel-banners}
 
@@ -86,12 +86,10 @@ So schaffen Sie einen schnellen Einstieg:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * [Fügen Sie ein Karussellbanner zu Ihrer Website-Seite hinzu.
-      ](#adding-a-carousel-banner-to-your-website-page)Sie können die Karussellbanner-URL oder den Einbettungs-Code hinzufügen, die oder den Sie auf die Website-Seite kopiert haben.
+   * [Fügen Sie ein Karussellbanner zu Ihrer Website-Seite hinzu.](#adding-a-carousel-banner-to-your-website-page) Sie können die Karussellbanner-URL oder den Einbettungs-Code hinzufügen, die oder den Sie auf die Website-Seite kopiert haben.
 
       * [Integrieren Sie das Karussellbanner in eine Schnellansicht.](#integrating-the-carousel-banner-with-an-existing-quickview) Wenn Sie ein Drittanbietersystem für Web Content Management verwenden, müssen Sie das neue Karussellbanner in der vorhandenen Schnellansichtsimplementierung auf Ihrer Website integrieren.
-   * [Fügen Sie ein Karussellbanner zu einer Website in AEM hinzu.
-      ](/help/assets/adding-dynamic-media-assets-to-pages.md)Wenn Sie AEM Sites-Kunde sind, können Sie das Karussell-Set direkt zur Seite in AEM hinzufügen, indem Sie die Komponente für interaktive Medien verwenden.
+   * [Fügen Sie ein Karussellbanner zu einer Website in AEM hinzu.](/help/assets/adding-dynamic-media-assets-to-pages.md) Wenn Sie AEM Sites-Kunde sind, können Sie das Karussell-Set direkt zur Seite in AEM hinzufügen, indem Sie die Komponente für interaktive Medien verwenden.
 
 
 Wenn Sie Karussell-Sets bearbeiten müssen, finden Sie weitere Informationen unter [Bearbeiten von Karussell-Sets](#editing-carousel-sets). Darüber hinaus können Sie [Eigenschaften von Karussell-Sets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties) anzeigen und bearbeiten.
@@ -200,8 +198,7 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
    * Tippen Sie oben links auf **[!UICONTROL Folie hinzufügen]**.
 
    * Tippen Sie in der Mitte der Seite auf **[!UICONTROL Tippen, um den Asset-Wähler zu öffnen.]**
-
-   Tippen Sie zur Auswahl von Assets, die Sie in das Karussellset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **Auswählen**.
+   Tippen Sie zur Auswahl von Assets, die Sie in das Karussellset aufnehmen möchten. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
 
    Mit der Asset-Auswahl können Sie nach Assets suchen, indem Sie einen Suchbegriff eingeben und auf **[!UICONTROL Zurück tippen/klicken.]** Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View.]**
 
@@ -383,7 +380,7 @@ Um eine Vorschau für ein Karussellbanner anzuzeigen, verwenden Sie entweder den
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tippen Sie auf **Vorschau.]**
+1. Tippen Sie auf **[Vorschau.]**
 1. Tippen Sie auf die Hotspots oder Imagemaps im Bild, um die verbundenen Aktionen zu prüfen.
 
 **So zeigen Sie eine Vorschau für Karussellbanner über die Viewer-Liste an**
