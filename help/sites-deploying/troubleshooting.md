@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +40,7 @@ AEM speichert detaillierte Protokolle, die Sie konfigurieren können, um Install
 
 ## Verwenden der Option „verbose“ (ausführlich){#using-the-verbose-option}
 
-Wenn Sie AEM WCM starten, können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen: java -jar cq-wcm-quickstart-&lt;Version>.jar -v.
+Beim Beginn AEM WCM können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen: java -jar cq-wcm-quickstart-&lt;Version>.jar -v.
 
 Die Option „verbose“ zeigt einen Teil der Ausgabe des Schnellstartprotokolls in der Konsole an und kann somit für die Fehlerbehebung verwendet werden.
 
@@ -45,7 +48,7 @@ Die Option „verbose“ zeigt einen Teil der Ausgabe des Schnellstartprotokolls
 
 Im folgenden Abschnitt werden einige Installationsprobleme und zugehörige Lösungen beschrieben.
 
-### **Durch Doppelklicken auf die Quickstart-JAR-Datei wird die JAR-Datei nicht mit einem anderen Programm geöffnet (z. B. Archiv-Manager){#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### Beim Doppelklicken auf die JAR-Datei für den Schnellstart passiert entweder gar nichts oder die Datei wird mit einem anderen Programm (z. B. der Archivverwaltung) geöffnet {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 Dies weist in der Regel auf ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems zum Öffnen von Dateien mit der Erweiterung .jar hin. Abgesehen davon kann es ein Hinweis darauf sein, dass Java nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java verwenden.
 
@@ -62,11 +65,11 @@ Beheben Sie dieses Problem wie folgt:
 * Manchmal hilft es auch, die unterstützte Java-Version neu zu installieren, um die richtigen Zuordnungen wiederherzustellen.
 * Sie haben jederzeit die Möglichkeit, CRX über eine Befehlszeile oder Start-/Stoppskripts wie zuvor in diesem Dokument beschrieben auszuführen.
 
-### **Über CRX ausgeführte Anwendung erzeugt Fehler wegen unzureichendem Arbeitsspeicher{#my-application-running-on-crx-throws-out-of-memory-errors}**
+### Über CRX ausgeführte Anwendung erzeugt Fehler wegen unzureichendem Arbeitsspeicher {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Siehe [Analysieren von Arbeitsspeicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+>Siehe [Analysieren von Arbeitsspeicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
 CRX selbst benötigt sehr wenig Arbeitsspeicher. Wenn die Anwendung, die in CRX ausgeführt wird, größere Mengen Arbeitsspeicher benötigt oder Vorgänge anfordert, die viel Arbeitsspeicher belegen, etwa große Transaktionen, muss die JVM-Instanz, in der CRX ausgeführt wird, mit entsprechenden Speichereinstellungen gestartet werden.
@@ -83,7 +86,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Damit wird immer dann eine Heap-Abbilddatei erstellt (**java_...hprof**), wenn dem Vorgang nicht genügend Arbeitsspeicher zur Verfügung steht. Der Vorgang läuft möglicherweise noch weiter, nachdem das Heap-Abbild erstellt wurde. In der Regel reicht eine Heap-Abbilddatei, um das Problem zu analysieren.
 
-### **Der AEM-Willkommensbildschirm wird nach einem Doppelklick auf den AEM-Schnellstart nicht im Browser angezeigt{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### Der AEM-Begrüßungsbildschirm wird nicht im Browser angezeigt, nachdem auf den AEM-Schnellstart doppelt geklickt wurde. {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 Manchmal wird der AEM WCM-Begüßungsbildschirm nicht automatisch angezeigt, obwohl das Repository selbst fehlerfrei läuft. Dies kann von der Einrichtung des Betriebssystems, der Browserkonfiguration oder ähnlichen Faktoren abhängen.
 
@@ -97,7 +100,7 @@ Sollte das Problem durch keinen der Vorschläge gelöst werden können, überpr�
 
 ## Fehlerbehebung bei Installationen mit einem Anwendungsserver {#troubleshooting-installations-with-an-application-server}
 
-### **Meldung „Seite nicht gefunden“ wird angezeigt, wenn eine Geometrixx Outdoors-Seite angefordert wird{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}**
+### Meldung „Seite nicht gefunden“ wird angezeigt, wenn eine Geometrixx Outdoors-Seite angefordert wird {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Gilt für WebLogic 10.3.5 und JBoss 5.1**
 
@@ -105,7 +108,7 @@ Wenn eine englische Geometrixx Outdoors-Seite einen 404-Fehler (Seite nicht gefu
 
 Weitere Informationen finden Sie in *AEM-Webapplikation bereitstellen*.
 
-### **Antwortkopfzeile kann größer als 4 KB sein{#response-header-size-can-be-greater-than-kb}**
+### Antwortkopfzeile kann größer als 4 KB sein {#response-header-size-can-be-greater-than-kb}
 
 502-Fehler können darauf hinweisen, dass der Webserver mit der Größe der AEM-HTTP-Antwortkopfzeile nicht umgehen kann. AEM kann HTTP-Antwortkopfzeilen erstellen, die Cookies mit einer Größe von mehr als 4 KB beinhalten. Achten Sie darauf, dass Ihr Servletcontainer so konfiguriert ist, dass die maximale Größe der Antwortkopfzeile 4 KB übersteigen darf.
 
@@ -123,7 +126,7 @@ Falls beständiger Speicher in das Installationsverzeichnis integriert ist, beis
 
 Falls Ihre AEM-Installation externen Speicher nutzt, etwa einen Datenbankserver, werden beim Entfernen der Ordner nicht automatisch auch die Daten entfernt. Allerdings wird dabei die Speicherkonfiguration entfernt, wodurch die Wiederherstellung der JCR-Inhalte schwierig wird.
 
-### **JSP-Dateien werden von JBoss nicht kompiliert{#jsp-files-are-not-compiled-on-jboss}**
+### JSP-Dateien werden von JBoss nicht kompiliert {#jsp-files-are-not-compiled-on-jboss}
 
 Wenn Sie JSP-Dateien über JBoss im Experience Manager installieren oder aktualisieren und die entsprechenden Servlets nicht kompiliert werden, überprüfen Sie, ob der JBoss-JSP-Compiler richtig konfiguriert ist. For information, see the
 [JSP Compilation Issues in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) article.
