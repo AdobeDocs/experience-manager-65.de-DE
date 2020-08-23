@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 71%
@@ -132,7 +132,7 @@ Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server o
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Replace `[AEM_Instance`] with the AEM server publish URL in the rules.
+   Replace `[AEM_Instance]` with the AEM server publish URL in the rules.
 
 Wenn Sie den AEM-Server nicht auf einem Kontextpfad bereitstellen, lauten die Proxyregeln auf der Apache-Ebene wie folgt:
 
@@ -161,7 +161,7 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Webseite d
 * Verwenden Sie für den Formularcontainer auf der Webseite die gesamte Fensterbreite. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formularcontainer nicht die gesamte Fensterbreite einnimmt, müssen Sie benutzerdefinierte CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
 * Use `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
 * Use `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
-* Richten Sie die Kopfzeile &quot;access-control-Herkunft&quot;ein, wenn Sie eine Antwort vom AEM-Server senden.
+* Richten Sie beim Senden der Antwort vom AEM den Header access-control-Herkunft ein.
 
 ## Bereitstellung adaptiver Formulare auf einer domänenübergreifenden Site durch AEM Forms {#cross-site}
 
