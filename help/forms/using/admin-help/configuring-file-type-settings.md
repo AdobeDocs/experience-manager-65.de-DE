@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '6146'
+ht-degree: 81%
 
 ---
 
@@ -91,9 +94,9 @@ Sie können die Standardwerte für die Adobe PDF-, Sicherheits- und Dateitypeins
 1. Klicken Sie auf der Seite **[!UICONTROL Adobe PDF-Einstellungen]**, **[!UICONTROL Dateitypeinstellungen]** oder **[!UICONTROL Sicherheitseinstellungen]**  auf **[!UICONTROL Standardeinstellungen festlegen]**.
 1. Wählen Sie Ihre bevorzugten Standardeinstellungen. Mindestens eine der folgenden Einstellungen ist auf der Seite „Standardeinstellungen festlegen“ verfügbar:
 
-   **[!UICONTROL Adobe PDF-Einstellung]**: Die ursprüngliche Standardeinstellung ist Standard (Acrobat 6).
+   **[!UICONTROL Adobe PDF-Einstellung]**: Die ursprüngliche Standardeinstellung ist &quot;Standard (Acrobat 6)&quot;.
 
-   **[!UICONTROL Sicherheitseinstellungen]**: Der ursprüngliche Standard lautet &quot;Keine Sicherheit&quot;(Acrobat 5).
+   **[!UICONTROL Sicherheitseinstellungen]**: Die ursprüngliche Standardeinstellung ist &quot;Keine Sicherheit (Acrobat 5)&quot;.
 
    **[!UICONTROL Dateitypeinstellungen]**: Die ursprüngliche Standardeinstellung ist Standard.
 
@@ -123,7 +126,7 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Wei
 
 ***Hinweis **: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
 
-**Primäre OCR-Sprache:** Gibt die Sprache an, in der die OCR-Engine die Zeichen identifizieren soll.
+**Primär OCR-Sprache:** Gibt die Sprache an, in der die OCR-Engine die Zeichen identifizieren soll.
 
 **Stil der PDF-Ausgabe:** Bestimmt den zu erstellenden PDF-Typ. Alle Formate wenden OCR und Schriftart- und Seitenerkennung auf die Bilder im Text an und konvertieren sie in normalen Text.
 
@@ -251,6 +254,7 @@ Weitere Informationen zum Zugriff auf diese Einstellung finden Sie unter [Dateit
    * Wählen Sie bei Bedarf einen anderen Schriftartenordner aus dem Dropdownmenü **Schriftquelle**. Dieses Dropdownmenü enthält Schriftartenordner, die in **Startseite > Einstellungen > Core-System > Core-Konfigurationen** angegeben wurden.
    * Wählen Sie mindestens eine Schriftart aus der Liste **Verfügbare Schriftarten** und klicken Sie auf **Hinzufügen**. Diese Schriftarten werden der Liste **Einbettung für folgende Schriftarten aufheben** hinzugefügt.
    * Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, die auf dem Formularserver nicht vorhanden sind, geben Sie die Namen dieser Schriftarten in das Feld **Schriftarten für die Aufhebung der Einbettung hinzufügen** ein. Klicken Sie auf **Hinzufügen**.
+
    >[!NOTE]
    >
    >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, deren Untergruppen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: „+Helvetica“.*
@@ -297,7 +301,11 @@ Wählen Sie die **Transparenz**, um die Transparenzeinstellungen beim Optimieren
 
 **Alle Konturen in Konturen** konvertieren Konvertiert alle Konturen auf Seiten mit Transparenz in einfache ausgefüllte Pfade. Mit dieser Option wird sichergestellt, dass die Breite von Konturen beim Reduzieren unverändert bleibt. Beachten Sie, dass dünne Konturen geringfügig dicker angezeigt werden und die Leistung des Reduzierens beeinträchtigen werden könnte, wenn Sie diese Option aktivieren.
 
-**Komplexe Bereiche** beschneiden stellt sicher, dass die Grenzen zwischen Vektorgrafiken und gerasterten Grafiken entlang von Objektpfaden verlaufen. Mit dieser Option werden sichtbare Übergänge bei Grafiken vermieden, wenn ein Teil eines og] &quot;>
+**Komplexe Bereiche** beschneiden stellt sicher, dass die Grenzen zwischen Vektorgrafiken und gerasterten Grafiken entlang von Objektpfaden verlaufen. Mit dieser Option werden sichtbare Übergänge bei Grafiken vermieden, wenn ein Teil eines og
+
+<!--
+NOTE to WRITER: Unfinished sentence above.
+-->
 
 >[!NOTE]
 >
@@ -408,7 +416,7 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Inform
 
 **PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
 
-**Lesezeichen in Adobe PDF** Hinzufügen: Konvertiert Excel-Arbeitsblattnamen in Lesezeichen. Standardmäßig ist diese Option aktiviert.
+**hinzufügen Lesezeichen auf Adobe PDF**: Konvertiert Excel-Arbeitsblattnamen in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
 **Arbeitsblatt an eine einzelne Seite** anpassen: Reduziert die Größe des Textes, sodass er auf eine einzelne Seite passt.
 
@@ -422,7 +430,7 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Inform
 
 **Quelldatei an Adobe PDF** anhängen: Wenn diese Option aktiviert ist, wird die ursprüngliche Excel-Tabelle als Anlage in das generierte PDF-Dokument eingefügt.
 
-**Barrierefreiheit aktivieren und Umfließen mit Adobe PDF** mit Tagging aktivieren: Bettet Tags in das PDF-Dokument ein, um Barrierefreiheit und Umfließen zu aktivieren.
+**Barrierefreiheit und Reflow mit Tagged Adobe PDF** aktivieren: Bettet Tags in das PDF-Dokument ein, um Barrierefreiheit und Umfließen zu aktivieren.
 
 **Liste der zu ladenden** Excel-Add-Ins: Standardmäßig werden (aus Sicherheitsgründen) keine Excel-Add-Ins ausgeführt, wenn eine Excel-Datei in PDF konvertiert wird. Wenn Sie zulassen möchten, dass bestimmte Excel-Add-Ins während der Konvertierung ausgeführt werden, stellen Sie eine durch Kommas getrennte Liste mit den Namen der Add-Ins bereit.
 
@@ -519,7 +527,7 @@ Wenn der Name eines Microsoft Word-Stils ein Komma (,) oder Gleichheitszeichen (
 
 **Dokumentinformationen konvertieren**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Stichwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert. Diese Option ist standardmäßig aktiviert.
 
-**Hinzufügen Links zu Adobe PDF**: Behält alle Links bei. Standardmäßig ist diese Option aktiviert.
+**hinzufügen Links zu Adobe PDF**: Behält alle Links bei. Standardmäßig ist diese Option aktiviert.
 
 **Lesezeichen zu Adobe PDF hinzufügen:** Konvertiert Überschriften in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
