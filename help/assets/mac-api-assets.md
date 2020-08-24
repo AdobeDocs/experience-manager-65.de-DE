@@ -3,10 +3,10 @@ title: '[!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].'
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
 workflow-type: tm+mt
-source-wordcount: '1579'
-ht-degree: 87%
+source-wordcount: '1673'
+ht-degree: 82%
 
 ---
 
@@ -25,6 +25,10 @@ So greifen Sie auf die API zu:
 Die API antwortet mit einer JSON-Datei für einige MIME-Typen und einem Antwort-Code für alle MIME-Typen. Die JSON-Antwort ist optional und kann zum Beispiel nicht für PDF-Dateien verfügbar sein. Verwenden Sie den Antwortcode für weitere Analysen oder Aktionen.
 
 Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar. Die API gibt die Fehlermeldung 404 zurück, wenn die [!UICONTROL Einschaltzeit] in der Zukunft oder die [!UICONTROL Ausschaltzeit] in der Vergangenheit liegt.
+
+>[!CAUTION]
+>
+>[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namensraum. Die Metadateneigenschaften im `dc` Namensraum werden jedoch von der Benutzeroberfläche des Experience Managers aktualisiert.
 
 ## Inhaltsfragmente {#content-fragments}
 
@@ -168,7 +172,7 @@ Aktualisiert die Binärdatei eines Assets (Darstellung mit dem Namen Original). 
 
 Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:`-Namespace aktualisieren, aktualisiert die API dieselbe Eigenschaft im `jcr`-Namespace. Die API synchronisiert die Eigenschaften unter den beiden Namespaces nicht.
 
-**Anforderung**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Anforderung**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
@@ -176,6 +180,27 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 404 – NICHT GEFUNDEN – wenn das Asset nicht gefunden oder unter dem angegebenen URI nicht aufgerufen werden konnte.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
+
+### Metadaten-Aktualisierung zwischen `dc` und `jcr` Namensraum synchronisieren {#sync-metadata-between-namespaces}
+
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namensraum. Die mithilfe von Touch-UI vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namensraum. Um die Metadatenwerte zwischen `dc` und `jcr` Namensraum zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der beim Bearbeiten des Assets ausgeführt wird. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Erstellen von Asset-Ausgabedarstellungen {#create-an-asset-rendition}
 
