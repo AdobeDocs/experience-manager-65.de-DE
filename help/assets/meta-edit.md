@@ -3,10 +3,10 @@ title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
 description: Learn about asset metadata in [!DNL Adobe Experience Manager Assets] an various ways by which you can edit asset metadata.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
+source-git-commit: fc14ccc834c9a41b67eb8cf17dd8b34f5dff2406
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 22%
+source-wordcount: '473'
+ht-degree: 21%
 
 ---
 
@@ -55,6 +55,10 @@ You can add your own namespaces within [!DNL Experience Manager]. Just as there 
 1. Klicken Sie auf **[!UICONTROL Namensraum]** oben auf der Seite, um auf die Seite &quot;Namensraum-Administration&quot;zuzugreifen.
 1. Klicken Sie zum Hinzufügen eines Namensraums unten auf der Seite auf **[!UICONTROL Neu]** .
 1. Geben Sie einen benutzerdefinierten Namensraum in der XML-Namensraum-Konvention an. Geben Sie die ID in Form eines URI und eines zugehörigen Präfix für die ID an. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+## Tipps und Einschränkungen {#best-practices-limitations}
+
+* Die Metadaten-Aktualisierungen über die Touch-Benutzeroberfläche ändern die Metadateneigenschaften im `dc` Namensraum. Über die HTTP-API vorgenommene Aktualisierungen ändern die Metadateneigenschaften im `jcr` Namensraum. Siehe [Aktualisieren von Metadaten mit der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 >[!MORELIKETHIS]
 >
