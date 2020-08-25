@@ -3,7 +3,7 @@ title: Verwalten Sie Video-Assets in [!DNL Adobe Experience Manager].
 description: Hochladen, Vorschau, Anmerkungen und Veröffentlichen von Video-Assets [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
+source-git-commit: 268689d534f8bf649335269f9169455c381f9554
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 37%
@@ -19,9 +19,9 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] generiert Vorschauen für Video-Assets mit der Erweiterung MP4. If the format of the asset is not MP4, install the FFmpeg pack to generate a preview. FFmpeg creates video renditions of type OGG and MP4. You can preview the renditions in the [!DNL Assets] user interface.
+[!DNL Adobe Experience Manager Assets] generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn das Asset nicht im MP4-Format vorliegt, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videodarstellungen vom Typ OGG und MP4. You can preview the renditions in the [!DNL Assets] user interface.
 
-1. In the digital assets folder or subfolders, navigate to the location where you want to add digital assets.
+1. Navigieren Sie im Ordner oder in den Unterordnern für digitale Assets zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Alternativ können Sie sie direkt in den Assets-Bereich ziehen. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
@@ -51,8 +51,8 @@ Um eine höhere Dateigrößenbeschränkung zu konfigurieren, führen Sie die fol
 
    ![Überlagerungsknoten](assets/overlay-node-path.png)
 
-1. Aktualisieren Sie die Browser-Ansicht. Der Überlagerungsknoten `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` ist ausgewählt.
-1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** den gewünschten Wert in Byte ein, um die maximale Größe festzulegen. Um beispielsweise die Größenbeschränkung auf 30 GB zu erhöhen, geben Sie den Wert `{sizeLimit : "32212254720"}` ein.
+1. Aktualisieren Sie die Browser-Ansicht. Der Überlagerungsknoten `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` ist ausgewählt.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** den gewünschten Wert in Byte ein, um die maximale Größe festzulegen. Um beispielsweise die Größenbeschränkung auf 30 GB zu erhöhen, geben Sie den Wert `32212254720` ein.
 
 1. From the toolbar, click **[!UICONTROL Save All]**.
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
@@ -81,14 +81,14 @@ Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Webseite
 
 1. Suchen Sie nach einem bestimmten Punkt im Video, indem Sie die Zeit in Sekunden in das **Textfeld** eingeben und auf **Springen** klicken. Um beispielsweise die ersten 20 Sekunden des Videos zu überspringen, geben Sie „20“ in das Textfeld ein.
 
-   ![Seek to a time in a video to skip by specified seconds](assets/seek-in-video.png)
+   ![Suche nach einer Zeit in einem Video, um nach einer bestimmten Sekunde zu überspringen](assets/seek-in-video.png)
 
 1. Klicken Sie auf eine Anmerkung, um sie in der Zeitleiste anzuzeigen. Um die Anmerkung aus der Zeitleiste zu löschen, klicken Sie auf **[!UICONTROL Löschen]**.
 
-   ![View annotations and the details in the timeline](assets/timeline-view-annotation.png)
+   ![Anmerkungen zur Ansicht und Details in der Zeitleiste](assets/timeline-view-annotation.png)
 
 >[!MORELIKETHIS]
 >
->* [Manage digital assets in Experience Manager Assets](/help/assets/managing-assets-touch-ui.md)
+>* [Digitale Assets in Experience Manager-Assets verwalten](/help/assets/managing-assets-touch-ui.md)
 >* [Verwalten von Sammlungen in Experience Manager-Assets](/help/assets/managing-collections-touch-ui.md)
 
