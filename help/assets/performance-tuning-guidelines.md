@@ -4,9 +4,9 @@ description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfigurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2748'
 ht-degree: 53%
 
 ---
@@ -28,7 +28,7 @@ In den folgenden Schlüsselbereichen sollten Sie besonders darauf achten, dass L
 
 ## Plattform {#platform}
 
-Obwohl Experience Manager auf verschiedenen Plattformen unterstützt wird, hat Adobe die beste Unterstützung für native Tools unter Linux und Windows gefunden, was zu einer optimalen Performance und einfachen Implementierung beiträgt. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Wie bei jeder Implementierung von Experience Managern sollten Sie TarMK so weit wie möglich implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
+Obwohl Experience Manager auf verschiedenen Plattformen unterstützt wird, hat Adobe die größte Unterstützung für native Tools unter Linux und Windows gefunden, was zu einer optimalen Performance und einfachen Implementierung beiträgt. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Wie bei jeder Implementierung von Experience Managern sollten Sie TarMK so weit wie möglich implementieren. TarMK kann zwar nicht über eine einzelne Autoreninstanz skaliert werden, erzielt jedoch erfahrungsgemäß eine bessere Leistung als MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
 
 ### Temporärer Ordner {#temp-folder}
 
@@ -45,7 +45,7 @@ mkfs -q /dev/ram1 800000
 
 Unter Windows OS verwenden Sie einen Treiber eines Drittanbieters, um ein RAM-Laufwerk zu erstellen, oder verwenden Sie einfach eine leistungsstarke Datenspeicherung wie SSD.
 
-Once the high performance temporary volume is ready, set the JVM parameter `-Djava.io.tmpdir`. For example, you could add the JVM parameter below to the `CQ_JVM_OPTS` variable in the `bin/start` script of [!DNLExperience Manager]:
+Once the high performance temporary volume is ready, set the JVM parameter `-Djava.io.tmpdir`. For example, you could add the JVM parameter below to the `CQ_JVM_OPTS` variable in the `bin/start` script of [!DNL Experience Manager]:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -53,7 +53,7 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 ### Java-Version {#java-version}
 
-Adobe empfiehlt die Bereitstellung [!DNL Experience Manager Assets] auf Java 8 für eine optimale Leistung.
+Adobe empfiehlt die Bereitstellung [!DNL Experience Manager Assets] auf Java 8 für optimale Leistung.
 
 <!-- TBD: Link to the latest official word around Java.
 -->
@@ -76,7 +76,7 @@ Separating the data store from the segment store is recommended for all [!DNL Ex
 
 ### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches   {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-When uploading large amounts of assets to [!DNLAdobe Experience Manager], to allow for unexpected spikes in memory consumption and to prevent JVM fails with OutOfMemoryErrors, reduce the configured maximum size of the buffered image cache. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
+When uploading large amounts of assets to [!DNL Adobe Experience Manager], to allow for unexpected spikes in memory consumption and to prevent JVM fails with OutOfMemoryErrors, reduce the configured maximum size of the buffered image cache. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
 
 Konfigurieren Sie die Größe des gepufferten Cache in der OSGi-Webkonsole. Legen Sie bei `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` die Eigenschaft `cq.dam.image.cache.max.memory` in Byte fest. 1073741824 entspricht beispielsweise 1 GB (1024 x 1024 x 1024 = 1 GB).
 
@@ -115,10 +115,10 @@ accessKey=<snip>
 
 Adobe empfiehlt die Aktivierung von HTTPS, da viele Unternehmen über Firewalls verfügen, die den HTTP-Verkehr überprüfen und sich dadurch negativ auf Uploads auswirken und Dateien beschädigen. Stellen Sie bei großen Datei-Uploads sicher, dass Benutzer über Kabelverbindungen zum Netzwerk verfügen, da ein WLAN-Netzwerk schnell überfordert ist. For guidelines on identifying network bottlenecks, see [Assets sizing guide](/help/assets/assets-sizing-guide.md). To assess network performance by analyzing network topology, see [Assets network considerations](/help/assets/assets-network-considerations.md).
 
-Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNLExperience Manager] instance. Allgemeine Konfigurationsoptionen, einschließlich Firewalls oder Proxys, können zur Verbesserung der Netzwerkleistung beitragen. Die folgenden Aspekte sollten berücksichtigt werden:
+Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNL Experience Manager] instance. Allgemeine Konfigurationsoptionen, einschließlich Firewalls oder Proxys, können zur Verbesserung der Netzwerkleistung beitragen. Die folgenden Aspekte sollten berücksichtigt werden:
 
-* Stellen Sie je nach Instanztyp (klein, mittel, groß) sicher, dass Sie über ausreichend Netzwerkbandbreite für Ihre Experience Manager-Instanz verfügen. Adequate bandwidth allocation is especially important if [!DNLExperience Manager] is hosted on AWS.
-* If your [!DNLExperience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Vergrößern Sie die Instanz, wenn Benutzer eine hohe Belastung erwarten. Verkleinern Sie die Instanz, wenn nur eine mäßige/geringe Belastung erwartet wird.
+* Stellen Sie je nach Instanztyp (klein, mittel, groß) sicher, dass Sie über ausreichend Netzwerkbandbreite für Ihre Experience Manager-Instanz verfügen. Adequate bandwidth allocation is especially important if [!DNL Experience Manager] is hosted on AWS.
+* If your [!DNL Experience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Vergrößern Sie die Instanz, wenn Benutzer eine hohe Belastung erwarten. Verkleinern Sie die Instanz, wenn nur eine mäßige/geringe Belastung erwartet wird.
 * HTTPS: Die meisten Benutzer verwenden Firewalls zur Überwachung des HTTP-Verkehrs. Sie können den Prozess des Hochladens beeinträchtigen oder Dateien beim Hochladen beschädigen.
 * Upload großer Dateien: Die Benutzer benötigen Kabelverbindungen zum Netzwerk (WLAN-Verbindungen sind schnell gesättigt).
 
@@ -128,7 +128,7 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. Die Einstellung trägt zu einer erheblichen Reduzierung des Overheads bei, der für die Verarbeitung der Workflows benötigt wird, da die Workflows in diesem Fall nicht die normalen Tracking- und Archivierungsprozesse durchlaufen.
 
-1. Navigieren Sie zu `/miscadmin` der Experience [!DNLEManager] -Bereitstellung unter `https://[aem_server]:[port]/miscadmin`.
+1. Navigieren Sie zu `/miscadmin` in der [!DNL Experience Manager] Bereitstellung unter `https://[aem_server]:[port]/miscadmin`.
 
 1. Erweitern Sie **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL dam]**.
 
@@ -152,9 +152,9 @@ For example, after executing numerous non-transient workflows (that creates work
 
 ### Maximal parallel ausführbare Aufträge   {#maximum-parallel-jobs}
 
-By default, [!DNLExperience Manager] runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNLExperience Manager] from running other processes that safeguard server performance and stability. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
+By default, [!DNL Experience Manager] runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNLExperience Manager] from running other processes that safeguard server performance and stability. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
 
-1. Beim [!DNLEExperience Manager] -Autor Zugriff `https://[aem_server]:[port]/system/console/slingevent`.
+1. Beim [!DNL Experience Manager] Autor Zugriff `https://[aem_server]:[port]/system/console/slingevent`.
 
 1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example **[!UICONTROL Granite Transient Workflow Queue]**.
 
@@ -180,7 +180,7 @@ Kunden verwenden Bilder unterschiedlicher Größen und Formate auf ihrer Website
 
 Viele Kunden der Website implementieren ein Bild-Servlet, das Bilder zum Zeitpunkt ihrer Anforderung skaliert und beschneidet und der Veröffentlichungsinstanz damit eine zusätzliche Belastung auferlegt. Wenn diese Bilder zwischengespeichert werden können, lässt sich dieses Problem abmildern.
 
-Ein alternativer Ansatz ist die Scene7-Technologie, mit der sich die Bildbearbeitung vollständig abgeben lässt. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the [!DNLExperience Manager] infrastructure, but also the entire publish tier.
+Ein alternativer Ansatz ist die Scene7-Technologie, mit der sich die Bildbearbeitung vollständig abgeben lässt. Additionally, you can deploy Brand Portal that not only takes over rendition generation responsibilities from the [!DNL Experience Manager] infrastructure, but also the entire publish tier.
 
 #### ImageMagick {#imagemagick}
 
@@ -211,7 +211,7 @@ Stellen Sie darüber hinaus in der Datei `configure.xml` (alternativ in der Umge
 >
 >Die ImageMagick- `policy.xml` und `configure.xml` -Dateien stehen `/usr/lib64/ImageMagick-&#42;/config/` anstelle von `/etc/ImageMagick/`zur Verfügung. Informationen zum Speicherort der Konfigurationsdateien finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php) .
 
-If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Wenden Sie sich an den Kundenbetreuer von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Werkzeuge und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel verarbeiten.
+If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Wenden Sie sich an den Kundenbetreuer der Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate der Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel verarbeiten.
 
 ### XMP-Writeback {#xmp-writeback}
 
@@ -251,8 +251,8 @@ Some optimizations can be done on the Oak index configurations that can help imp
 
 1. Open CRXDe `/crx/de/index.jsp` and log in as an administrative user.
 1. Gehen Sie zu `/oak:index/lucene`.
-1. Hinzufügen einer `String[]` Eigenschaft `excludedPaths` mit Werten `/var`, `/etc/workflow/instances`und `/etc/replication`.
-1. Gehen Sie zu `/oak:index/damAssetLucene`. Hinzufügen einer `String[]` Eigenschaft `includedPaths` mit Wert `/content/dam`. Speichern Sie die Änderungen.
+1. hinzufügen einer `String[]` Eigenschaft `excludedPaths` mit Werten `/var`, `/etc/workflow/instances`und `/etc/replication`.
+1. Gehen Sie zu `/oak:index/damAssetLucene`. hinzufügen einer `String[]` Eigenschaft `includedPaths` mit Wert `/content/dam`. Speichern Sie die Änderungen.
 
 Wenn Ihre Benutzer keine Volltextsuche von Assets durchführen müssen, z. B. durch Durchsuchen von Text in PDF-Dokumenten, deaktivieren Sie diese Option. Sie verbessern die Indexleistung, indem Sie die Indexierung im Volltext deaktivieren. Gehen Sie wie folgt vor, um die [!DNL Apache Lucene] Text-Extraktion zu deaktivieren:
 
@@ -299,12 +299,12 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Implementieren Sie die Bereitstellung unter Java 8.
 * Stellen Sie optimale JVM-Parameter ein..
 * Konfigurieren Sie einen Filesystem DataStore oder einen S3-Datenspeicher.
-* Deaktivieren Sie die Erzeugung von Teilassets. Ist sie aktiviert, erstellt der AEM-Arbeitsablauf für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist ein einzelnes Asset, das zusätzlichen Speicherplatz auf der Festplatte benötigt, eine Versionsverwaltung und eine zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie die Aktivitäten für die Generierung und Extraktion von Teilassets.
+* Deaktivieren Sie die Erzeugung von Teilassets. Ist sie aktiviert, erstellt AEM Workflow für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist ein einzelnes Asset, das zusätzlichen Speicherplatz auf der Festplatte benötigt, eine Versionsverwaltung und eine zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie die Aktivitäten für die Generierung und Extraktion von Teilassets.
 * Aktivieren Sie transiente Workflows.
 * Passen Sie die Granite-Workflow-Warteschlangen an, um gleichzeitige Aufträge zu begrenzen.
 * Configure [!DNL ImageMagick] to limit resource consumption.
 * Remove unnecessary steps from the [!UICONTROL DAM Update Asset] workflow.
 * Konfigurieren des Arbeitsablaufs und der Versionsbereinigung.
-* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an den Adobe-Kundendienst, um weitere verfügbare Indexoptimierungen zu erhalten.
+* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an den Kundendienst von Adobe, um weitere verfügbare Indexoptimierungen zu erhalten.
 * Optimieren Sie die Abfrageleistung mit guessTotal.
 * If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.
