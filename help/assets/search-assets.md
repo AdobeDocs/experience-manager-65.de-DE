@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 4efe5247d91fa846c4a444c81245b0fa1515a7b4
 workflow-type: tm+mt
 source-wordcount: '5858'
 ht-degree: 54%
@@ -14,26 +14,26 @@ ht-degree: 54%
 
 # Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] provides robust asset discovery methods that help you achieve higher content velocity. Ihre Teams reduzieren die Time-to-Market mit einer nahtlosen, intelligenten Sucherfahrung, indem Sie vordefinierte Funktionen und benutzerdefinierte Methoden verwenden. Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
+[!DNL Adobe Experience Manager Assets] bietet stabile Methoden zur Ermittlung von Assets, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Ihre Teams reduzieren die Time-to-Market mit einer nahtlosen, intelligenten Sucherfahrung, indem Sie vordefinierte Funktionen und benutzerdefinierte Methoden verwenden. Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
 
 [!DNL Experience Manager Assets] unterstützt folgende Anwendungsfälle und in diesem Artikel werden Verwendung, Konzepte, Konfigurationen, Einschränkungen und Fehlerbehebung für diese Fälle beschrieben.
 
 | Suchen von Assets | Konfiguration und Verwaltung | Arbeiten mit Suchergebnissen |
 |---|---|---|
 | [Einfache Suchvorgänge](#searchbasics) | [Suchindex](#searchindex) | [Ergebnisse sortieren](#sort) |
-| [Benutzeroberfläche für Suchen](#searchui) | [Visual or similarity search](#configvisualsearch) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
+| [Benutzeroberfläche für Suchen](#searchui) | [Visuelle Suche oder Ähnlichkeitssuche](#configvisualsearch) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
 | [Suchvorschläge](#searchsuggestions) | [Obligatorische Metadaten](#mandatorymetadata) | [Download](#download) |
 | [Suchergebnisse und -verhalten verstehen](#searchbehavior) | [Suchfacetten ändern](#searchfacets) | [Massenaktualisierung von Metadaten](#metadataupdates) |
 | [Such-Ranking und -Optimierung](#searchrank) | [Textextraktion](#extracttextupload) | [Smart-Sammlungen](#collections) |
 | [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Unerwartete Ergebnisse und Fehlerbehebung](#troubleshoot-unexpected-search-results-and-issues) |
-| [Search from other solutions and apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-Desktop-App](#desktopapp)</li><li>[Adobe Stock-Fotos](#adobestock)</li><li>[Dynamic Media-Assets](#dynamicmedia)</li></ul> |  |  |
+| [Suchen Sie nach anderen Lösungen und Apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-Desktop-App](#desktopapp)</li><li>[Adobe Stock-Fotos](#adobestock)</li><li>[Dynamic Media-Assets](#dynamicmedia)</li></ul> |  |  |
 | [Asset-Auswahl](#assetpicker) |  |  |
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
 
-Search for assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click search in top bar, enter search keyword, and press return. Alternativ können Sie den Suchbegriff-Shortcut / (Schrägstrich) verwenden, um das Omniture-Suchfeld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
+Search for assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click search in top bar, enter search keyword, and press return. Alternativ können Sie den Suchbegriff-Shortcut / (Schrägstrich) verwenden, um das Omniture-Suchfeld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] bietet Vorschläge, wie Ihr Beginn einen Suchbegriff eingeben kann.
 
-Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. Ihre Administratoren können das Bedienfeld &quot;Filter&quot;anpassen und mithilfe von Suchfacetten Suchvorhersagen hinzufügen oder entfernen. The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
+Verwenden Sie das Bedienfeld &quot; **[!UICONTROL Filter]** &quot;, um die Suche einzuschränken, indem Sie die Suchergebnisse auf Grundlage der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Insight-Daten und Adobe Stock-Lizenzierung. Ihre Administratoren können das Bedienfeld &quot;Filter&quot;anpassen und mithilfe von Suchfacetten Suchvorhersagen hinzufügen oder entfernen. Der [!UICONTROL Dateityp] -Filter im Bedienfeld &quot; [!UICONTROL Filter] &quot;enthält Kontrollkästchen mit gemischtem Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene teilweise markiert.
 
 [!DNL Experience Manager] Suchfunktion unterstützt die Suche nach Sammlungen und die Suche nach Assets in einer Sammlung. Siehe [Suchen nach Sammlungen](/help/assets/managing-collections-touch-ui.md).
 
@@ -41,9 +41,9 @@ Use the **[!UICONTROL Filters]** panel to narrow your search by filtering search
 
 Machen Sie sich mit der Suchoberfläche und den verfügbaren Aktionen vertraut.
 
-![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+![Benutzeroberfläche der Suchergebnisse von Experience Manager Assets](assets/aem_search_results.png)
 
-*Figure: Understand[!DNL Experience Manager Assets]search results interface.*
+*Abbildung: Erkennen Sie die Oberfläche[!DNL Experience Manager Assets]der Suchergebnisse.*
 
 **A.** Speichern Sie die Suche als intelligente Sammlung. **B.** Filter oder Vorhersagen zur Eingrenzung der Suchergebnisse. **C.** Anzeigen von Dateien, Ordnern oder beidem. **D.** Klicken Sie auf „Filter“, um die linke Leiste zu öffnen oder zu schließen. **E.** Die Suchposition ist DAM. **F.** Omniture Suchfeld mit benutzerdefiniertem Suchbegriff. **G.** Wählen Sie die geladenen Suchergebnisse aus. **H.** Anzahl der angezeigten Suchergebnisse aus den gesamten Suchergebnissen. **I.** Schließen Sie die Suche **J.** Wechseln Sie zwischen der Ansicht der Karte und der Ansicht der Liste.
 
@@ -142,7 +142,7 @@ Wenn Sie Bilder suchen möchten, die einem vom Benutzer ausgewählten Bild ähne
 
 ![Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht der Karte](assets/search_find_similar.png)
 
-*Figure: Find similar images using the option in the card view.*
+*Abbildung: Suchen Sie ähnliche Bilder mithilfe der Option in der Ansicht.*
 
 ### Adobe Stock-Fotos {#adobestock}
 
@@ -154,7 +154,7 @@ Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTR
 
 ### Mit bestimmten Werten in Metadatenfeldern suchen {#gqlsearch}
 
-You can search for assets based on exact values of specific metadata fields, such as, title, description, and author. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
+Sie können nach Assets suchen, die auf exakten Werten bestimmter Metadatenfelder wie Titel, Beschreibung und Autor basieren. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 | Metadatenfeld | Facettenwert und Nutzung |
 | ----------------------------------------- | ------------------------------------- |
@@ -220,7 +220,7 @@ Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTR
 
 ### Suchen nach Assets in der Inhaltssuche beim Erstellen von Web-Seiten {#contentfinder}
 
-Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Assets durchsuchen und die Assets auf den von ihnen erstellten Web-Seiten verwenden. Authors can also use the Connected Assets functionality to search for assets that are available on a remote [!DNL Experience Manager] deployment. Autoren können diese Assets dann auf Webseiten in einer lokalen [!DNL Experience Manager] Bereitstellung verwenden. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Assets durchsuchen und die Assets auf den von ihnen erstellten Web-Seiten verwenden. Autoren können auch die Funktion &quot;Connected Assets&quot;verwenden, um nach Assets zu suchen, die in einer Remote- [!DNL Experience Manager] Bereitstellung verfügbar sind. Autoren können diese Assets dann auf Webseiten in einer lokalen [!DNL Experience Manager] Bereitstellung verwenden. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
 ### Suchen nach Sammlungen {#collections}
 
@@ -228,9 +228,9 @@ Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Asse
 
 ## Asset-Auswahl {#assetpicker}
 
-Asset Picker lets you search, filter, and browse the DAM assets in a special way. Asset Picker is available at `https://[aem-server]:[port]/aem/assetpicker.html`. Mit dieser Funktion können Sie die Metadaten der ausgewählten Assets abrufen. Sie können ihn mit unterstützten Anfrageparametern wie dem Asset-Typ (Bild, Video, Text) und dem Auswahlmodus (eine oder mehrere Auswahlen) starten. Diese Parameter legen den Kontext der Asset-Auswahl für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt.
+Mit der Asset-Auswahl können Sie die DAM-Assets auf besondere Weise suchen, filtern und durchsuchen. Asset Picker is available at `https://[aem-server]:[port]/aem/assetpicker.html`. Mit dieser Funktion können Sie die Metadaten der ausgewählten Assets abrufen. Sie können ihn mit unterstützten Anfrageparametern wie dem Asset-Typ (Bild, Video, Text) und dem Auswahlmodus (eine oder mehrere Auswahlen) starten. Diese Parameter legen den Kontext der Asset-Auswahl für eine bestimmte Suchinstanz fest und bleiben während der Auswahl intakt.
 
-The asset Picker uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. Asset Picker works only in the browse mode and works only with the Omnisearch result page.
+The asset Picker uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. Die Elementauswahl funktioniert nur im Durchsuchen-Modus und nur mit der Omniture Suchergebnisseite.
 
 Sie können die folgenden Anforderungsparameter in einer URL übergeben, um die Asset-Auswahl in einem bestimmten Kontext zu starten:
 
@@ -278,7 +278,7 @@ Die Suchfunktion weist in den folgenden Szenarien möglicherweise Leistungseinsc
 * Die Volltextsuche unterstützt Operatoren wie - und ^. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie z. B. „Notebook - Schönheit“ statt Notebook - Schönheit.
 * Wenn es zu viele Suchergebnisse gibt, schränken Sie den [Suchbereich](#scope) ein, um die gewünschten Assets leichter finden zu können. Das funktioniert am besten, wenn Sie eine Ahnung davon haben, wie Sie besser nach den gewünschten Assets suchen können (z. B. nach einem bestimmten Dateityp, nach einem bestimmten Speicherort, nach bestimmten Metadaten usw.).
 
-* **Tagging**: Tags help you categorize assets that can be browsed and searched more efficiently. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows. [!DNL Experience Manager] bietet Methoden zum automatischen Taggen von Assets mit den KI-Diensten von Adobe Sensei, die beim Taggen von Assets durch Verwendung und Training immer besser werden. Bei der Suche nach Assets werden die Smart-Tags berücksichtigt, wenn die Funktion in Ihrem Konto aktiviert ist. Sie funktioniert zusammen mit der integrierten Suchfunktion. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie für einige ausgewählte Assets das [Such-Ranking optimieren](#searchrank).
+* **Tagging**: Mit Tags können Sie Assets kategorisieren, die effizienter durchsucht und durchsucht werden können. Tagging hilft bei der Verbreitung der entsprechenden Taxonomie an andere Benutzer und Workflows. [!DNL Experience Manager] bietet Methoden zum automatischen Taggen von Assets mit den KI-Diensten von Adobe Sensei, die beim Taggen von Assets durch Verwendung und Training immer besser werden. Bei der Suche nach Assets werden die Smart-Tags berücksichtigt, wenn die Funktion in Ihrem Konto aktiviert ist. Sie funktioniert zusammen mit der integrierten Suchfunktion. Siehe [Suchverhalten](#searchbehavior). Um die Reihenfolge zu optimieren, in der die Suchergebnisse angezeigt werden, können Sie für einige ausgewählte Assets das [Such-Ranking optimieren](#searchrank).
 
 * **Indizierung**: In den Suchergebnissen werden nur indizierte Metadaten und Assets zurückgegeben. Um eine bessere Abdeckung und Leistung zu erzielen, stellen Sie eine ordnungsgemäße Indizierung sicher und befolgen Sie die Best Practices. Siehe [Indizierung](#searchindex).
 
@@ -288,7 +288,7 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ![Suchverhalten mit und ohne Anführungszeichen](assets/search_with_quotes.gif)
 
-*Figure: Search behavior with and without quotation marks.*
+*Abbildung: Suchverhalten mit und ohne Anführungszeichen.*
 
 **Suche mit Sternchen als Platzhalter**: Wenn Sie die Suche erweitern möchten, verwenden Sie ein Sternchen vor oder nach dem Suchbegriff, um Treffer mit einer beliebigen Anzahl von Zeichen zu erhalten. Wenn Sie beispielsweise ohne Sternchen nach „run“ suchen, werden keine Assets zurückgegeben, die Varianten des Worts enthalten (auch in den Metadaten). Ein Sternchen ersetzt eine beliebige Anzahl von Zeichen. Beispiel:
 
@@ -321,21 +321,21 @@ Verwenden Sie doppelte Anführungszeichen um Suchbegriffe, um Assets zu finden, 
 
 ## Konfigurations- und Verwaltungsfunktionen in Bezug auf die Suchfunktion {#configadmin}
 
-### Search index configurations {#searchindex}
+### Suchindexkonfigurationen {#searchindex}
 
-Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [search index](/help/assets/performance-tuning-guidelines.md#search-indexes), [oak queries and indexing](/help/sites-deploying/queries-and-indexing.md), and [best practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Die Ermittlung von Assets beruht auf der Indexierung von DAM-Inhalten, einschließlich der Metadaten. Die schnellere und genaue Erkennung von Assets beruht auf optimierter Indexierung und geeigneten Konfigurationen. Siehe [Suchindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [Eichen-Abfragen und Indexierung](/help/sites-deploying/queries-and-indexing.md)und [Best Practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-To exclude specific assets from search results, use `excludedPath` property on the Lucene index.
+Um bestimmte Assets aus den Suchergebnissen auszuschließen, verwenden Sie die `excludedPath` Eigenschaft im Lucene-Index.
 
-### Visual or similarity search {#configvisualsearch}
+### Visuelle Suche oder Ähnlichkeitssuche {#configvisualsearch}
 
-Visual search uses smart tagging and requires [!DNL Experience Manager] 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps:
+Die visuelle Suche verwendet intelligentes Tagging und erfordert [!DNL Experience Manager] 6.5.2.0 oder höher. Führen Sie nach der Konfiguration der Funktion für intelligentes Tagging die folgenden Schritte aus:
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
+1. Fügen Sie in [!DNL Experience Manager] CRXDE im `/oak:index/lucene` Knoten die folgenden Eigenschaften und Werte hinzu und speichern Sie die Änderungen.
 
-   * `costPerEntry` property of type `Double` with the value `10`.
-   * `costPerExecution` property of type `Double` with the value `2`.
-   * `refresh` property of type `Boolean` with the value `true`.
+   * `costPerEntry` Eigenschaft des Typs `Double` mit dem Wert `10`.
+   * `costPerExecution` Eigenschaft des Typs `Double` mit dem Wert `2`.
+   * `refresh` Eigenschaft des Typs `Boolean` mit dem Wert `true`.
 
    Diese Konfiguration ermöglicht Suchen vom entsprechenden Index.
 
@@ -365,9 +365,9 @@ Um die Suchgeschwindigkeit zu erhöhen, suchen Sie [!DNL Experience Manager Asse
 
 ### Text beim Hochladen von Assets extrahieren {#extracttextupload}
 
-You can configure [!DNL Experience Manager] to extract the text from the assets when users upload assets, such as PSD or PDF files. [!DNL Experience Manager] indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Sie können konfigurieren, [!DNL Experience Manager] dass Text aus den Assets extrahiert wird, wenn Benutzer Assets wie PSD- oder PDF-Dateien hochladen. [!DNL Experience Manager] indiziert den extrahierten Text und hilft Benutzern, diese Assets anhand des extrahierten Textes zu suchen. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
-If text extraction becomes too resource-intensive for your deployment, consider [disabling text extraction](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
+Wenn die Extraktion von Text für Ihre Bereitstellung zu ressourcenintensiv ist, sollten Sie die Extraktion [von Text](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)deaktivieren.
 
 ### Benutzerdefinierte Vorhersagen zum Filtern von Suchergebnissen {#custompredicates}
 
@@ -403,7 +403,7 @@ Sie können mit den Assets, die Sie in Experience Manager gesucht haben, Folgend
 
 ### Sortieren von Suchergebnissen {#sort}
 
-Sortieren Sie die Suchergebnisse, um die erforderlichen Assets schneller zu ermitteln. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
+Sortieren Sie die Suchergebnisse, um die erforderlichen Assets schneller zu ermitteln. You can sort the search results in list view and only when you select **[!UICONTROL [Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
 
 In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert anhand der folgenden Spalten: Name, Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
 
@@ -447,16 +447,16 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 | Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
 | Zu viele Suchergebnisse. | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu beschränken. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht verwandte oder teilweise verwandte Suchergebnisse. | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
-| No auto-complete suggestions for assets. | Newly uploaded assets are not indexed yet. The metadata is not immediately available as suggestions when you start typing a search keyword in Omnisearch bar. | [!DNL Assets] erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
-| Keine Suchergebnisse. | <ul><li>Assets matching your query don&#39;t exist. </li><li> Whitespace added before the search query. </li><li> Das Feld für nicht unterstützte Metadaten enthält den Suchbegriff, nach dem Sie gesucht haben.</li><li> Search made during an asset&#39;s off-time. </li></ul> | <ul><li>Search using a different keyword. Alternatively, use smart tagging or similarity search to improve search results. </li><li>[Known limitation](#limitations).</li><li>Alle Metadatenfelder werden bei Suchvorgängen nicht berücksichtigt. Siehe [Suchbereich](#scope).</li><li>Search later or modify on-time and off-time for the required assets.</li></ul> |
-| Search filter or a predicate is not available. | <ul><li>The search filter is either not configured.</li><li>Es ist nicht für Ihre Anmeldung verfügbar.</li><li>(Less likely) The search options are not customized on the deployment you are using.</li></ul> | <ul><li>Contact administrator to check if the search customizations are available or not.</li><li>Contact administrator to check if your account has the privilege/permissions to use the customization.</li><li>Wenden Sie sich an den Administrator und überprüfen Sie die verfügbaren Anpassungen für die [!DNL Assets] Bereitstellung, die Sie verwenden.</li></ul> |
-| Bei der Suche nach visuell ähnlichen Bildern fehlt ein erwartetes Bild. | <ul><li>Bild ist in nicht verfügbar [!DNL Experience Manager].</li><li>Bild wird nicht indiziert. In der Regel, wenn es kürzlich hochgeladen wurde.</li><li>Bild ist nicht intelligent getaggt.</li></ul> | <ul><li>hinzufügen Sie das Bild an [!DNL Assets].</li><li>Wenden Sie sich an Ihren Administrator, um das Repository neu zu indizieren. Stellen Sie außerdem sicher, dass Sie den entsprechenden Index verwenden.</li><li>Contact your administrator to smart tag the relevant assets.</li></ul> |
-| Bei der Suche nach visuell ähnlichen Bildern wird ein irrelevantes Bild angezeigt. | Visual search behavior. | [!DNL Experience Manager] zeigt so viele potenziell passende Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, jedoch mit einem niedrigeren Such-Ranking. Die Qualität der Treffer und die Relevanz der gefundenen Assets nehmen ab, je weiter Sie nach unten scrollen. |
-| Bei Auswahl und Verwendung der Suchergebnisse werden nicht alle gesuchten Assets verarbeitet. | The [!UICONTROL Select All] option only selects first 100 search results in card view and first 200 search results in list view. |  |
+| Keine Vorschläge für Assets automatisch ausfüllen. | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | [!DNL Assets] erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
+| Keine Suchergebnisse. | <ul><li>Assets, die Ihrer Abfrage entsprechen, sind nicht vorhanden. </li><li> Whitespace, der vor der Abfrage der Suche hinzugefügt wurde. </li><li> Das Feld für nicht unterstützte Metadaten enthält den Suchbegriff, nach dem Sie gesucht haben.</li><li> Suche, die während der Offenzeit eines Assets durchgeführt wurde. </li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie intelligentes Tagging oder Ähnlichkeitssuche verwenden, um die Suchergebnisse zu verbessern. </li><li>[Bekannte Einschränkung](#limitations).</li><li>Alle Metadatenfelder werden bei Suchvorgängen nicht berücksichtigt. Siehe [Suchbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Zeit- und Zeitangabe für die erforderlichen Assets.</li></ul> |
+| Suchfilter oder eine Vorhersage ist nicht verfügbar. | <ul><li>Der Suchfilter ist entweder nicht konfiguriert.</li><li>Es ist nicht für Ihre Anmeldung verfügbar.</li><li>(Weniger wahrscheinlich) Die Suchoptionen werden nicht auf die verwendete Bereitstellung angepasst.</li></ul> | <ul><li>Wenden Sie sich an den Administrator, um zu prüfen, ob die Suchanpassungen verfügbar sind oder nicht.</li><li>Wenden Sie sich an den Administrator, um zu prüfen, ob Ihr Konto über die Berechtigung/Berechtigungen zur Verwendung der Anpassung verfügt.</li><li>Wenden Sie sich an den Administrator und überprüfen Sie die verfügbaren Anpassungen für die [!DNL Assets] Bereitstellung, die Sie verwenden.</li></ul> |
+| Bei der Suche nach visuell ähnlichen Bildern fehlt ein erwartetes Bild. | <ul><li>Bild ist in nicht verfügbar [!DNL Experience Manager].</li><li>Bild wird nicht indiziert. In der Regel, wenn es kürzlich hochgeladen wurde.</li><li>Bild ist nicht intelligent getaggt.</li></ul> | <ul><li>hinzufügen Sie das Bild an [!DNL Assets].</li><li>Wenden Sie sich an Ihren Administrator, um das Repository neu zu indizieren. Stellen Sie außerdem sicher, dass Sie den entsprechenden Index verwenden.</li><li>Wenden Sie sich an Ihren Administrator, um die relevanten Assets mit einem intelligenten Tag zu versehen.</li></ul> |
+| Bei der Suche nach visuell ähnlichen Bildern wird ein irrelevantes Bild angezeigt. | Visuelles Suchverhalten. | [!DNL Experience Manager] zeigt so viele potenziell passende Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, jedoch mit einem niedrigeren Such-Ranking. Die Qualität der Treffer und die Relevanz der gefundenen Assets nehmen ab, je weiter Sie nach unten scrollen. |
+| Bei Auswahl und Verwendung der Suchergebnisse werden nicht alle gesuchten Assets verarbeitet. | Die Option &quot;Alle  auswählen&quot;wählt nur die ersten 100 Suchergebnisse in der Ansicht der Karte und die ersten 200 Suchergebnisse in der Ansicht der Liste aus. |  |
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager search implementation guide](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [Advanced configuration to boost search results](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
->* [Configure smart translation search](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
+>* [Handbuch zur Implementierung der Experience Manager-Suche](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Erweiterte Konfiguration zur Steigerung der Suchergebnisse](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [Intelligente Übersetzungssuche konfigurieren](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
