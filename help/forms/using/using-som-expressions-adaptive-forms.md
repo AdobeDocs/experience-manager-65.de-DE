@@ -29,7 +29,7 @@ Die folgende Abbildung zeigt eine Knotenstruktur, in die ein adaptives Formular 
 
 DOM-Baumstruktur
 
-Einem SOM-Ausdruck für ein beliebiges Element in einem adaptiven Formular wird das Präfix `guide[0].guide1[0]` ] vorangestellt. Die Position einer Komponente in der hierarchischen Knotenstruktur wird zum Ableiten ihres SOM-Ausdrucks verwendet.
+Einem SOM-Ausdruck für ein beliebiges Element in einem adaptiven Formular wird das Präfix `guide[0].guide1[0]` vorangestellt. Die Position einer Komponente in der hierarchischen Knotenstruktur wird zum Ableiten ihres SOM-Ausdrucks verwendet.
 
 ![DOM-Baumstruktur mit zwei Optionsfeldern](assets/hierarchy_radio_button.png)
 
