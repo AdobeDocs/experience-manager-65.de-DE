@@ -4,9 +4,9 @@ description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfigurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2746'
 ht-degree: 53%
 
 ---
@@ -152,7 +152,7 @@ For example, after executing numerous non-transient workflows (that creates work
 
 ### Maximal parallel ausführbare Aufträge   {#maximum-parallel-jobs}
 
-By default, [!DNL Experience Manager] runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNLExperience Manager] from running other processes that safeguard server performance and stability. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
+By default, [!DNL Experience Manager] runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNL Experience Manager] from running other processes that safeguard server performance and stability. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
 
 1. Beim [!DNL Experience Manager] Autor Zugriff `https://[aem_server]:[port]/system/console/slingevent`.
 
