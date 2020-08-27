@@ -458,7 +458,7 @@ Eine kurze Übersicht über Hilfsfunktionen aus der [Handlebars.js-Dokumentation
 * Der Kontext kann ein String-, number-, boolean- oder JSON-Datenobjekt sein.
 * Es ist möglich, ein im aktuellen Kontext verschachteltes Objekt als Kontext zu übergeben, z. B. `this.url` oder `this.id` (siehe folgende Beispiele von einfachen und Blockhelfern).
 
-* Blockhelfer sind Funktionen, die von jeder beliebigen Stelle in der Vorlage aufgerufen werden können. Sie können einen Vorlagenblock jedes Mal mit einem anderen Kontext null oder mehrmals aufrufen. Sie enthalten einen Kontext zwischen {{#*name*}} und {{/*name*}.
+* Blockhelfer sind Funktionen, die von jeder beliebigen Stelle in der Vorlage aufgerufen werden können. Sie können einen Vorlagenblock jedes Mal mit einem anderen Kontext null oder mehrmals aufrufen. Sie enthalten einen Kontext zwischen {{#*name*}} und {{/*name*}}.
 
 * Handlebars bietet einen endgültigen Parameter für Helfer namens &#39;options&#39;. Das Sonderobjekt &#39;options&#39; enthält
 
