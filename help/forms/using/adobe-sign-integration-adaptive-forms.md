@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1148ac87ef6ff1afa77788e9cbd180d883290bfe
+source-git-commit: 6eb6ea86c5544329be5cb28500c59c632ccc9639
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 69%
+source-wordcount: '929'
+ht-degree: 71%
 
 ---
 
@@ -35,6 +35,7 @@ Um Adobe Sign mit AEM Forms zu integrieren, benötigen Sie Folgendes:
 * Eine[ Adobe Sign API-Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Anmeldeinformationen (Client-ID und Client Secret) der Adobe Sign API-Anwendung.
 * Entfernen Sie bei der Neukonfiguration die vorhandene Adobe Sign-Konfiguration aus der Autoreninstanz und der Veröffentlichungsinstanz.
+* Verwenden Sie für Autoren- und Veröffentlichungsinstanzen [identischen Verschlüsselungsschlüssel](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) .
 
 ## Konfigurieren Sie Adobe Sign mit AEM Forms {#configure-adobe-sign-with-aem-forms}
 
@@ -89,16 +90,11 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 1. Öffnen Sie die AEM Web-Konsole. The URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Öffnen Sie **Forms Common-Konfigurationsdienst.** 
 1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** Autoreninstanz ist konfiguriert, um Aobe Sign zu verwenden.
-1. Melden Sie sich in der Instanz [Veröffentlichen](/help/sites-deploying/deploy.md) an und öffnen Sie die folgende URL:
+1. Verwenden Sie die [Replizierung](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) , um eine identische Konfiguration für entsprechende Veröffentlichungsinstanzen zu erstellen.
 
-   `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
+Jetzt ist Adobe Sign in AEM Forms integriert und kann in adaptiven Formularen verwendet werden. Um [Adobe Sign service in einem adaptiven Formular zu nutzen](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), geben Sie den Konfigurationscontainer an, der oben in den Einstellungen für adaptive Formulare erstellt wurde.
 
-1. Wiederholen Sie die Schritte 1 bis 12 zum Konfigurieren von Adobe Sign mit AEM Forms. Verwenden Sie denselben Namen für die Konfiguration (wie in Schritt 3 angegeben) und denselben Namen (wie in Schritt 6 angegeben), um die für die Autoreninstanz konfigurierten Einstellungen zu replizieren.
 
-   Jetzt ist Adobe Sign in AEM Forms integriert und kann in adaptiven Formularen verwendet werden. Um [Adobe Sign service in einem adaptiven Formular zu nutzen](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), geben Sie den Konfigurationscontainer an, der oben in den Einstellungen für adaptive Formulare erstellt wurde.
-
-   >[!NOTE]
-   > Wenn Sie über eine gehärtete Umgebung verfügen und keinen Zugriff auf die URL haben, führen Sie die Konfiguration im Autorenmodus durch `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`und erstellen Sie mit der [Replikation](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) identische Konfigurationen für die entsprechenden Instanzen im Veröffentlichungsmodus.
 
 ## Konfigurieren Sie den Adobe Sign-Scheduler-Dienst, um den Signaturstatus zu synchronisieren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
