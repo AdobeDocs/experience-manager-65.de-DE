@@ -10,14 +10,17 @@ topic-tags: forms-app
 discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 81%
 
 ---
 
 
 # Arbeiten mit Startpunkten{#working-with-startpoints}
 
-Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit einem Formular verknüpft, über das der Prozess aufgerufen wird, wenn das Formular gesendet wird. Genauere Informationen zu Prozessen finden Sie unter [Schrittweise Anleitung für die Geometrixx Finance-Referenz-Website](../../forms/using/finance-reference-site-walkthrough.md).
+Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit einem Formular verknüpft, über das der Prozess aufgerufen wird, wenn das Formular gesendet wird.
 
 >[!NOTE]
 >
