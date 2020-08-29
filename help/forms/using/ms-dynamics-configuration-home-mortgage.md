@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 75%
 
 ---
 
@@ -21,13 +24,11 @@ In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste ü
 
 Microsoft® Dynamics 365 ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Unternehmenslösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Interessenten, Chancen und Fällen bietet.
 
-AEM Forms provides a cloud service to integrate Dynamics 365 with [Forms Data Integration](/help/forms/using/data-integration.md) module. Das Szenario [Schrittweise Anleitung Hypothekantrag mit Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics), stellt dar, wie ein Kunde die We.Finance-Referenzwebsite für einen Hypothekantrag verwendet, wenn die Website Microsoft® Dynamics für die Integration von Formulardaten nutzt. Bevor Sie die exemplarische Vorgehensweise für die Hypothekenanwendung mit dem Microsoft® Dynamics-Szenario verwenden können, müssen Sie Microsoft® Dynamics 365 für die Verwendung mit der Referenz-Website We.Finance konfigurieren.
+AEM Forms provides a cloud service to integrate Dynamics 365 with [Forms Data Integration](/help/forms/using/data-integration.md) module. Bevor Sie die exemplarische Vorgehensweise für die Hypothekenanwendung mit dem Microsoft® Dynamics-Szenario verwenden können, müssen Sie Microsoft® Dynamics 365 für die Verwendung mit der Referenz-Website We.Finance konfigurieren.
 
 ## Voraussetzungen {#prerequisites}
 
 Bevor Sie mit dem Einrichten und Konfigurieren von Dynamics 365 beginnen, stellen Sie sicher, dass folgende Bedingungen erfüllt sind:
-
-* [Einrichten und Konfigurieren von AEM Forms-Referenzwebsites](/help/forms/using/setup-reference-sites.md).
 
 * AEM Forms 6.3 Service Pack 1 und höher
 * Microsoft® Dynamics 365-Konto
