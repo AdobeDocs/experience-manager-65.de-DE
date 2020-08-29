@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6eb6ea86c5544329be5cb28500c59c632ccc9639
+source-git-commit: 2e5cf93eb3ce47b65298b8de13c7d874d1989073
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '932'
 ht-degree: 71%
 
 ---
@@ -90,6 +90,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 1. Öffnen Sie die AEM Web-Konsole. The URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Öffnen Sie **Forms Common-Konfigurationsdienst.** 
 1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** Autoreninstanz ist konfiguriert, um Aobe Sign zu verwenden.
+1. Veröffentlichen Sie die Konfiguration.
 1. Verwenden Sie die [Replizierung](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) , um eine identische Konfiguration für entsprechende Veröffentlichungsinstanzen zu erstellen.
 
 Jetzt ist Adobe Sign in AEM Forms integriert und kann in adaptiven Formularen verwendet werden. Um [Adobe Sign service in einem adaptiven Formular zu nutzen](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), geben Sie den Konfigurationscontainer an, der oben in den Einstellungen für adaptive Formulare erstellt wurde.
