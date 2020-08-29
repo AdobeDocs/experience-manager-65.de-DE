@@ -8,16 +8,15 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '1435'
+ht-degree: 90%
 
 ---
 
 
 # Mitarbeiterrekrutierung exemplarische Vorgehensweise für Referenz-Website {#employee-recruitment-reference-site-walkthrough}
-
-## Voraussetzung {#prerequisite}
-
-Richten Sie die Referenz-Websites ein wie in [Einrichten und Konfigurieren von AEM Forms-Referenz-Websites](/help/forms/using/setup-reference-sites.md) beschrieben.
 
 ## Überblick {#overview}
 
@@ -55,7 +54,7 @@ Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung�
 
 Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch“ in diesem Dokument dargestellt.
 
-![we-finance-employee-werbung-post-interviewworkflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![we-finance-employee-rekruting-post-interviewworkflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### Personen {#personas}
 
