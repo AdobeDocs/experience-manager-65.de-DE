@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
-source-git-commit: dc7804c9985bf9a14bfad40f546e393b39615dab
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +23,7 @@ Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen 
 
 ![](do-not-localize/correspondence-management.png)
 
-Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Aussagen, Benefiz, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits.
+Interactive Communications zentralisiert und verwaltet die Erstellung, Zusammenstellung und den Versand sicherer, personalisierter und interaktiver Schriftstücke, wie z. B. Geschäftskorrespondenz, Dokumente, Aussagen, Vorteilsmitteilungen, Marketing-E-Mails, Rechnungen und Begrüßungs-Kits.
 
 ## Schlüsselfunktionen {#key-capabilities}
 
@@ -30,12 +33,8 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 * Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
 * Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
 * Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
-* Die Benutzeroberfläche des Agenten zeigt die Druck- und Webvorschau der interaktiven Kommunikation an
+* Die Benutzeroberfläche des Agenten zeigt die Druck- und Web-Vorschau der interaktiven Kommunikation an
 * Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
-
-## Beispielanwendungsfall {#sample-use-case}
-
-The [Welcome kit for a credit card customer](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) sample use case showcases the capabilities of an Interactive Communication.
 
 ## Erstellung einer interaktiven Kommunikation  {#interactive-communication-creation}
 
@@ -67,8 +66,8 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 * [Formulardatenmodell](/help/forms/using/data-integration.md)
 * [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 * [Dokumentfragmente](/help/forms/using/document-fragments.md)
-* Bilder 
-* [Designs](/help/forms/using/themes.md) für den Webkanal
+* Bilder
+* [Themen](/help/forms/using/themes.md) für den Web-Kanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -106,7 +105,7 @@ Interaktive Kommunikation ist der Standardansatz und der empfohlene Ansatz zur E
    <td>Keine Benutzeroberfläche für die Erstellung eines bedingten Ausdrucks</td>
   </tr>
   <tr>
-   <td>Bearbeiten</td>
+   <td>Authoring – </td>
    <td>Drag-and-Drop-Benutzeroberfläche für Erstellung von Druck- und Webkanal</td>
    <td>Kein Drag-and-Drop-Mechanismus </td>
   </tr>
