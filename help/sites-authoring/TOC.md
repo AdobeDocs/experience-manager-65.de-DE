@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Authoring-Benutzerhandbuch
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Grundlegende Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
++ Wichtige Aufgaben, Werkzeuge und Konzepte für AEM Authoring {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Bearbeiten von Seiten](page-authoring.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
@@ -53,7 +53,6 @@ ht-degree: 89%
    + [Responsives Layout](responsive-layout.md)
    + [Inhaltseinblick ](content-insights.md)
    + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien) ](creating-accessible-content.md)
-   + [Strukturvorlage](scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](default-components-designmode.md)
    + [Foundation-Komponenten](default-components-foundation.md)
    + [Strukturvorlage](scaffolding.md)
@@ -79,8 +78,8 @@ ht-degree: 89%
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
    + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung      {#personalization}
-   + [Personalisierung     ](personalization.md)
++ Personalisierung   {#personalization}
+   + [Personalisierung  ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten ](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
