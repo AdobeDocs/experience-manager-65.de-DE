@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 1%
@@ -147,7 +147,7 @@ Weitere Informationen finden Sie unter [Checkpoint-Erstellung](https://jackrabbi
 
 **Offline-Indizierung für die generierten Indexdefinitionen durchführen**
 
-Die Reindexpling von Lucene kann offline mithilfe von Eichenlauf durchgeführt werden. Dieser Prozess erstellt Indexdaten auf der Festplatte unter `indexing-result/indices`. Es schreibt **nicht** in das Repository und erfordert daher nicht, die laufende AEM Instanz zu beenden. Der erstellte Textspeicher wird in diesen Prozess eingebunden:
+Die Reindexpling von Lucene kann offline mithilfe von Eichenlauf durchgeführt werden. Dieser Prozess erstellt Indexdaten auf der Festplatte unter `indexing-result/indexes`. Es schreibt **nicht** in das Repository und erfordert daher nicht, die laufende AEM Instanz zu beenden. Der erstellte Textspeicher wird in diesen Prozess eingebunden:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -155,7 +155,7 @@ java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --re
 Sample <checkpoint> looks like r16c85700008-0-8
 —fds-path: path to data store.
 --pre-extracted-text-dir: Directory of pre-extracted text.
-merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indices in this file will be re-indexed.
+merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indexes in this file will be re-indexed.
 ```
 
 Die Verwendung des `--doc-traversal-mode` Parameters ist bei MongoMK-Installationen praktisch, da die reindex-Zeit dadurch erheblich verbessert wird, dass Repository-Inhalte in eine lokale, flache Datei hochgeladen werden. Es benötigt jedoch zusätzlichen Speicherplatz in Dublette der Größe des Repositorys.
@@ -164,9 +164,9 @@ Im Fall von MongoMK kann dieser Prozess beschleunigt werden, wenn dieser Schritt
 
 Weitere technische Details finden Sie in der [oak-run-Dokumentation zur Indexierung](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
-### Indizes importieren {#importing-indices}
+### Indizes importieren {#importing-indexes}
 
-Mit AEM 6.4 und neueren Versionen verfügt AEM über die integrierte Funktion, um Indizes von der Festplatte bei der Startsequenz zu importieren. Der Ordner `<repository>/indexing-result/indices` wird während des Starts auf das Vorhandensein von Indexdaten überwacht. Sie können den vordefinierten Index während des [Aktualisierungsprozesses](in-place-upgrade.md#performing-the-upgrade) an den oben genannten Speicherort kopieren, bevor Sie mit der neuen Version der **Zielgruppe** AEM JAR beginnen. AEM importiert es in das Repository und entfernt den entsprechenden Checkpoint aus dem System. Ein Rentidex wird somit vollständig vermieden.
+Mit AEM 6.4 und neueren Versionen verfügt AEM über die integrierte Funktion, Indizes von der Festplatte bei der Systemstartsequenz zu importieren. Der Ordner `<repository>/indexing-result/indexes` wird während des Starts auf das Vorhandensein von Indexdaten überwacht. Sie können den vordefinierten Index während des [Aktualisierungsprozesses](in-place-upgrade.md#performing-the-upgrade) an den oben genannten Speicherort kopieren, bevor Sie mit der neuen Version der **Zielgruppe** AEM JAR beginnen. AEM importiert es in das Repository und entfernt den entsprechenden Checkpoint aus dem System. Ein Rentidex wird somit vollständig vermieden.
 
 ## Zusätzliche Tipps und Fehlerbehebung {#troubleshooting}
 
