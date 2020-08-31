@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.5 - Administrationsbenutzerhandbuch
+user-guide-title: AEM 6.5 Benutzerhandbuch zur Verwaltung
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '619'
 ht-degree: 96%
 
 ---
@@ -94,8 +94,8 @@ ht-degree: 96%
    + [Prinzipalansicht für die Berechtigungsverwaltung](touch-ui-principal-view.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
-+ Personalisierung      {#personalization}
-   + [Personalisierung     ](personalization.md)
++ Personalisierung   {#personalization}
+   + [Personalisierung  ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -137,7 +137,6 @@ ht-degree: 96%
    + [AEM Livefyre-Rezepte](aem-livefyre-recipes.md)
    + [Fehlerbehebung für Integrationsprobleme](troubleshooting-integration-issues.md)
    + [Integration mit BrightEdge Content Optimizer](brightedge.md)
-   + [Best Practices für E-Mail-Vorlagen](best-practices-for-email-templates.md)
    + [Catalog Producer](catalog-producer.md)
    + [AEM Assets-Integration mit Experience Cloud und Creative Cloud konfigurieren](configure-assets-cc-integration.md)
    + [Integrieren mit Silverpop Engage](silverpop.md)
@@ -151,7 +150,7 @@ ht-degree: 96%
    + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
-   + [Exportieren von Erlebnisfragmenten in Adobe Target](experience-fragments-target.md)
+   + [Exportieren von Erlebnisfragmenten nach Adobe Target](experience-fragments-target.md)
    + [Best Practices für E-Mail-Vorlagen](best-practices-for-email-templates.md)
    + [Integrieren mit Livefyre](livefyre.md)
 + Best Practices {#bestpractices}
