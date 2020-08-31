@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.5 Implementierungshandbuch
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 95%
+source-wordcount: '328'
+ht-degree: 92%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 95%
    + [Abwärtskompatibilität in AEM 6.5](backward-compatibility.md)
    + [Aktualisierungsverfahren](upgrade-procedure.md)
    + [Durchführen einer In-Place-Aktualisierung](in-place-upgrade.md)
+   + [Verwenden der Offline-Neudezierung, um Ausfallzeiten während einer Aktualisierung zu reduzieren](upgrade-offline-reindexing.md)
    + [Lazy-Content-Migration](lazy-content-migration.md)
    + [Verwendung des CRX2OAK-Migrationstools](using-crx2oak.md)
    + [Wartungsaufgaben vor einer Aktualisierung](pre-upgrade-maintenance-tasks.md)
