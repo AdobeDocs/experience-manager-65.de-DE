@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 93%
 
 ---
 
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
@@ -216,7 +219,7 @@ Aktuell bietet der Musterdetektor folgende Überprüfungen:
 
 * Zwischen den Exporten und Importen von OSGi-Bundles kommt es zu Ungleichgewichten.
 * Überverwendung von Sling-Ressourcentypen und -Supertypen (mit Überlagerung von Suchpfadinhalten)
-* Definitionen der Oak-Indizes (Kompatibilität)
+* Definitionen von Oak-Indizes (Kompatibilität)
 * VLT-Pakete (Überverwendung)
 * Kompatibilität von rep:User-Knoten (im Kontext der OAuth-Konfiguration)
 
