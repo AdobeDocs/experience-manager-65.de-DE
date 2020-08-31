@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring-Benutzerhandbuch
+user-guide-title: AEM 6.5 Benutzerhandbuch für die Benutzeroberfläche
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '257'
 ht-degree: 89%
 
 ---
@@ -58,13 +58,11 @@ ht-degree: 89%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung      {#personalization}
++ Personalisierung   {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
-   + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
    + [Einstiegsseiten](classic-personalization-campaigns-landingpage.md)
    + [Adobe Target-Angebote](classic-personalization-campaigns-target-offers.md)
-   + [Arbeiten mit dem Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [E-Mail-Marketing](classic-personalization-campaigns-email.md)
    + [Nachverfolgen nicht zugestellter E-Mails](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
