@@ -5,17 +5,17 @@ audience: end-user
 user-guide-title: Versionshinweise zu AEM 6.5
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 73%
+source-wordcount: '57'
+ht-degree: 66%
 
 ---
 
 
 # Versionshinweise zu AEM 6.5 {#release-notes}
 
-+ [AEM 6.5 - Überblick](home.md)
++ [Übersicht über AEM 6.5](home.md)
 + [Allgemeine Versionshinweise](release-notes.md)
 + Service Pack  – Versionshinweise {#service-pack}
    + [Neuerungen](new-features-latest-service-pack.md)
@@ -23,6 +23,7 @@ ht-degree: 73%
    + [Frühere Service Pack-Versionshinweise](previous-hotfixes-featurepacks.md)
 + [Versionshinweise zu AEM Sites](sites.md)
 + [Versionshinweise zu AEM Assets](assets.md)
++ [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
 + [Versionshinweise zu AEM Communities](communities-release-notes.md)
 + [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
 + [Bekannte Probleme](known-issues.md)
