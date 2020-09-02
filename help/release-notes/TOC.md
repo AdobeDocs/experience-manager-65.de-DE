@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Versionshinweise zu AEM 6.5
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
+source-git-commit: 5b4c684e3ebf2f4c37cfe3244c0118cd994093fb
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 66%
@@ -19,7 +19,7 @@ ht-degree: 66%
 + [Allgemeine Versionshinweise](release-notes.md)
 + Service Pack  – Versionshinweise {#service-pack}
    + [Neuerungen](new-features-latest-service-pack.md)
-   + [Service Pack 5 – Versionshinweise](sp-release-notes.md)
+   + [Service Pack 6 – Versionshinweise](sp-release-notes.md)
    + [Frühere Service Pack-Versionshinweise](previous-hotfixes-featurepacks.md)
 + [Versionshinweise zu AEM Sites](sites.md)
 + [Versionshinweise zu AEM Assets](assets.md)
