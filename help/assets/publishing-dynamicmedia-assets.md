@@ -8,21 +8,22 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7a1da89805799f392f4397b1582bcc83d9bc67de
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 76%
+source-wordcount: '461'
+ht-degree: 81%
 
 ---
 
 
-# Veröffentlichen von Dynamic Media-Assets  {#publishing-dynamic-media-assets}
+# Veröffentlichen von Dynamic Media-Assets    {#publishing-dynamic-media-assets}
 
-Sie veröffentlichen die Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf &quot; **[!UICONTROL Veröffentlichen]** &quot;oder &quot; **[!UICONTROL Schnelle Veröffentlichung&quot;tippen.]** Nachdem Sie Ihre Dynamic Media-Assets veröffentlicht haben, können Sie sie über eine URL oder durch Einbetten des Seitencodes in eine Webseite einfügen.
+Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish tippen.]** Nachdem Sie Ihre dynamischen Medien-Assets veröffentlicht haben, können Sie sie über eine URL oder durch Einbetten des Codes auf der Seite in eine Webseite einfügen.
 
-Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. See [Configuring Dynamic Media - Scene7 mode](config-dms7.md).
+Sie können hochgeladene Assets auch umgehend und ohne Benutzerinteraktion veröffentlichen. See [Configuring Dynamic Media - Scene7 mode.](config-dms7.md)
+Sie können Assets auch selektiv für dynamische Medien oder AEM veröffentlichen, die sich gegenseitig ausschließen, indem Sie **[!UICONTROL Selektive Veröffentlichung]** auf Ordnerebene verwenden. See [Working with Selective Publish in Dynamic Media.](/help/assets/selective-publishing.md)
 
-In der Ansicht **[!UICONTROL &quot;]** Karte&quot;wird ein kleines Globussymbol direkt unter dem Namen des Assets sowie links neben dem Datum und der Uhrzeit angezeigt, um anzugeben, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
+In der **[!UICONTROL Kartenansicht]** wird ein kleines Globussymbol direkt unter dem Namen eines Assets und links von Datum und Uhrzeit angezeigt, um anzuzeigen, dass es veröffentlicht wurde. In der **[!UICONTROL Listenansicht]** gibt eine Spalte **[!UICONTROL Veröffentlicht]** an, welche Assets veröffentlicht sind.
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 Ausführliche Informationen zum Veröffentlichen von Sets oder des Assets finden Sie unter [Veröffentlichen von Assets](managing-assets-touch-ui.md). 
 
-## Bereitstellung von Dynamic Media-Assets über HTTP/2  {#http-delivery-of-dynamic-media-assets}
+## Bereitstellung von Dynamic Media-Assets über HTTP/2    {#http-delivery-of-dynamic-media-assets}
 
 AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Anwendungen integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 
