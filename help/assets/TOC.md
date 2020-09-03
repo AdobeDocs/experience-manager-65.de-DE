@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Experience Manager 6.5 Asset-Benutzerhandbuch
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
+source-git-commit: 32f8e42325314d5afbec3b3e1611fd696e1a4603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 52%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 52%
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Aktivitäts-Stream in der Timeline](activity-stream.md)
-   + [Process assets](assets-workflow.md)
-   + [Add image maps](image-maps.md)
-   + [Reuse assets using MSM](reuse-assets-using-msm.md)
+   + [Prozesselemente](assets-workflow.md)
+   + [hinzufügen](image-maps.md)
+   + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
    + [Verbundene Assets mit Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Dynamic Media Newsletter von Experience League](dynamic-media-newsletter.md)
@@ -72,16 +72,17 @@ ht-degree: 52%
    + [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md)
+   + [Arbeiten mit selektiver Veröffentlichung in dynamischen Medien](selective-publishing.md)
    + [Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
-   + [Installing Feature Pack 18912 for bulk asset migration](bulk-ingest-migrate.md)
+   + [Installieren von Feature Pack 18912 für die Migration von Massenelementen](bulk-ingest-migrate.md)
    + [Arbeiten mit Selektoren](working-with-selectors.md)
 + Assets erweitern {#extending}
    + [Anpassen und Erweitern von Assets](extending-assets.md)
-   + [Process assets using media handlers and workflows](media-handlers.md)
+   + [Verarbeiten von Assets mit Media Handlern und Workflows](media-handlers.md)
    + [Suchfunktion erweitern](searchx.md)
    + [Installieren und [!DNL ImageMagick] Konfigurieren von Assets](best-practices-for-imagemagick.md)
    + [Assets in den Aktivitäten-Stream integrieren](extending-activity-stream.md)
-   + [Extend Asset Editor](asseteditorx.md)
+   + [Asset-Editor erweitern](asseteditorx.md)
    + [Assets-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der Asset-HTTP-API](assets-api-content-fragments.md)
    + [Asset Proxy-Entwicklung](proxy.md)
@@ -99,7 +100,7 @@ ht-degree: 52%
    + [Handbuch zur Asset-Größenanpassung](assets-sizing-guide.md)
    + [Metadaten-Schemareferenz](meta-ref.md)
    + [Bewährte Verfahren zum Übersetzen von Assets](best-practices-for-translating-assets-efficiently.md)
-   + [Assets performance tuning guide](performance-tuning-guidelines.md)
+   + [Handbuch zur Leistungsoptimierung von Assets](performance-tuning-guidelines.md)
    + [Hinzufügen und Bearbeiten von Metadaten](meta-edit.md)
    + [Handbuch zur Asset-Migration](assets-migration-guide.md)
    + [XMP-Metadaten](xmp.md)
@@ -117,12 +118,12 @@ ht-degree: 52%
    + [Unterstützung von Camera Raw](camera-raw.md)
    + [MIME-Typ von Assets mithilfe von Apache Tika erkennen](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
-   + [Support for IPTC metadata](iptc-support.md)
+   + [Unterstützung für IPTC-Metadaten](iptc-support.md)
    + [Metadatenschemata](metadata-schemas.md)
-   + [Multi-tenancy for collections, snippets, and snippet templates](multi-tenancy.md)
+   + [Mehrere Mandanten für Sammlungen, Snippets und Snippet-Vorlagen](multi-tenancy.md)
    + [Wasserzeichen für Assets](watermarking.md)
    + [Importieren und Exportieren von Massenmetadaten](metadata-import-export.md)
-   + [Asset templates](asset-templates.md)
+   + [Asset-Vorlagen](asset-templates.md)
    + [Bewährte Verfahren zum Freigeben von Ordnern mit Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Verwaltung intelligenter Tags](managing-smart-tags.md)
@@ -145,23 +146,23 @@ ht-degree: 52%
    + [Verwalten digitaler Assets](managing-assets-touch-ui.md)
    + [Verwalten von Sammlungen](managing-collections-touch-ui.md)
    + [Verwalten mehrerer Assets und Sammlungen](managing-multiple-assets.md)
-   + [Configure tagging using Smart Content Service](config-smart-tagging.md)
+   + [Tagging mit dem Smart Content Service konfigurieren](config-smart-tagging.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
    + [Verwalten von Video-Assets](managing-video-assets.md)
    + [Erstellen von Übersetzungsprojekten](translation-projects.md)
    + [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
-   + [Download assets from Experience Manager](download-assets-from-aem.md)
+   + [Herunterladen von Assets von Experience Manager](download-assets-from-aem.md)
    + [Asynchrone Aufträge](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Asset-Einblicke](touch-ui-asset-insights.md)
-   + [Enable asset insights through Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
+   + [Asset-Einblicke über den Start der Adobe aktivieren](touch-ui-using-dtm-for-asset-insights.md)
    + [Asset-Einblicke konfigurieren](touch-ui-configuring-asset-insights.md)
-   + [Check in and check out assets](check-out-and-submit-assets.md)
+   + [Assets ein- und auschecken](check-out-and-submit-assets.md)
    + [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
    + [Verwenden von Seiten-Tracker und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md)
    + [Verwalten von ebenenübergreifenden Assets](managing-linked-subassets.md)
    + [Zugehörige Assets](related-assets.md)
    + [Freigeben privater Ordner](private-folder.md)
-   + [Training guidelines for Smart Content Service](smart-tags-training-guidelines.md)
+   + [Schulungsrichtlinien für intelligente Inhaltsdienste](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
