@@ -1,6 +1,6 @@
 ---
-title: Invalidating the CDN cache by way of Dynamic Media Classic
-description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media Classic, instead of waiting for the cache to expire.
+title: Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic
+description: Wenn Sie Ihre zwischengespeicherten Inhalte im CDN (Content Versand Network) für ungültig erklären, können Sie Assets, die von Dynamic Media Classic bereitgestellt werden, schnell aktualisieren, anstatt darauf zu warten, dass der Cache abläuft.
 uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
@@ -8,21 +8,21 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
+source-git-commit: 10eef47ec15aef1f17238702520848df4ed36342
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 84%
+source-wordcount: '718'
+ht-degree: 80%
 
 ---
 
 
-# Invalidating the CDN cache by way of Dynamic Media Classic {#invalidating-your-cdn-cached-content}
+# Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
 Dynamic Media-Assets werden vom CDN zwecks schneller Bereitstellung im Cache gespeichert. Wenn Sie ein Asset aktualisieren, sollen diese Änderungen jedoch möglicherweise sofort wirksam werden. Indem Sie die Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen dazu also nicht auf einen Ablauf des Caches warten.
 
 >[!IMPORTANT]
 >
->The following steps apply only to Dynamic Media in AEM 6.5, Service Pack 5 or earlier.
+>Die folgenden Schritte gelten nur für dynamische Medien in AEM 6.5, Service Pack 5 (AEM 6.5.5) oder früher.<br>Wenn Sie dynamische Medien in AEM 6.5, Service Pack 6 (AEM 6.5.6) oder höher verwenden, befolgen Sie die Schritte unter [Ungültigmachen des CDN-Cache mithilfe von dynamischen Medien](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 
 Siehe auch [Übersicht über Caching in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
