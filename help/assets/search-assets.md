@@ -4,9 +4,9 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5bbdc80f199a2af38631a5443c46daae827abb52
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '5858'
+source-wordcount: '5878'
 ht-degree: 54%
 
 ---
@@ -355,6 +355,10 @@ Die visuelle Suche verwendet intelligentes Tagging und erfordert [!DNL Experienc
 
 Weitere Informationen zu [Smart-Tags finden Sie unter Verwalten von Smart-Tags in Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) und [wie diese verwaltet werden](/help/assets/managing-smart-tags.md).
 
+>[!CAUTION]
+>
+>Wenn die Lucene-Indizierung beendet ist, funktioniert [!DNL Adobe Experience Manager]die Suche auf der Grundlage von Smart-Tags nicht wie erwartet.
+
 ### Obligatorische Metadaten {#mandatorymetadata}
 
 Geschäftsbenutzer, Administratoren oder DAM-Bibliothekare können einige Metadaten als obligatorische Metadaten definieren, die für die Geschäftsprozesse erforderlich sind. Aus verschiedenen Gründen fehlen bei einigen Assets diese Metadaten, z. B. ältere Assets oder Assets, die stapelweise migriert werden. Assets mit fehlenden oder ungültigen Metadaten werden basierend auf der Eigenschaft für indizierte Metadaten erkannt und gemeldet. Informationen zum Konfigurieren finden Sie unter [Erforderliche Metadaten](/help/assets/metadata-schemas.md#define-mandatory-metadata).
@@ -371,7 +375,7 @@ Wenn die Extraktion von Text für Ihre Bereitstellung zu ressourcenintensiv ist,
 
 ### Benutzerdefinierte Vorhersagen zum Filtern von Suchergebnissen {#custompredicates}
 
-Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Bedienfeld &quot;Filter&quot;mithilfe vorkonfigurierter Voreinstellungen anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prädikate](/help/assets/searchx.md).
+Mit Eigenschaften werden Facetten erstellt. Administratoren können die Suchfacetten im Bedienfeld &quot;Filter&quot;mithilfe vorkonfigurierter Voreinstellungen anpassen. Diese Vorhersagen können mithilfe von Überlagerungen angepasst werden. Siehe [Erstellen benutzerdefinierter Prognosen](/help/assets/searchx.md).
 
 Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets suchen. Filter, die für einige dieser Eigenschaften gelten, sind standardmäßig verfügbar, und einige andere Filter können benutzerdefiniert erstellt werden, um sie auf die anderen Eigenschaften anzuwenden.
 
