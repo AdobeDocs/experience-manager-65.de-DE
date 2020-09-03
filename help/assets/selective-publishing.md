@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6e7368663d18dd0b5b46be9e292dba17577acf70
+source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 4%
@@ -202,6 +202,7 @@ Optional können Sie diese Kontrollkästchen zusammen mit der Suchvorgabe **[!UI
    | In Dynamic Media veröffentlichen | Selektive Veröffentlichung | Nur für dynamische Medien veröffentlicht. |
    | Veröffentlichung von Dynamic Media rückgängig machen | Sofort oder auf Aktivierung | Veröffentlichung nicht rückgängig gemacht von AEM, Dynamic Media oder beidem. |
    | Veröffentlichung von Dynamic Media rückgängig machen | Selektive Veröffentlichung | Nur Veröffentlichung für dynamische Medien rückgängig gemacht. |
+
 1. Legen Sie unter **[!UICONTROL Planen]**den Zeitpunkt der Aktivierung fest.
 | Ausgewählter Zeitplan | Was passiert? |
 | — | — |
