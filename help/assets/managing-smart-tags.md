@@ -3,10 +3,10 @@ title: Verwalten von Smart-Tags und Suchvorgängen
 description: Aktualisieren oder entfernen Sie die ungenauen Smarttags, um die Relevanz von Tags zu verbessern
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 75%
+source-wordcount: '464'
+ht-degree: 72%
 
 ---
 
@@ -44,3 +44,7 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 1. Treffer von `woman running` in den verschiedenen Metadatenfeldern.
 1. Treffer von `woman running` in den Smart-Tags,
 1. Treffer von `woman` oder `running` in Smart-Tags.
+
+>[!CAUTION]
+>
+>Wenn die Lucene-Indizierung abgeschlossen ist, funktioniert [!DNL Adobe Experience Manager] die Suche auf der Grundlage von Smart-Tags nicht wie erwartet.
