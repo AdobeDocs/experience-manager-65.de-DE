@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
+source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 6%
@@ -114,6 +114,7 @@ Siehe [Erstellen einer Konfiguration](#configuring-dynamic-media-cloud-services)
 
 1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
 1. Führen Sie auf der Seite &quot;Veröffentlichung **[!UICONTROL verwalten - Scope]** &quot;einen der folgenden Schritte aus:
+
    * Wählen Sie bei Bedarf ein oder mehrere Assets aus, die Sie aus der Veröffentlichung entfernen möchten.
    * Tippen Sie in der rechten oberen Ecke der Seite &quot;Veröffentlichung **[!UICONTROL verwalten - Umfang]** &quot;auf **[!UICONTROL Veröffentlichen]** oder Auf dynamischen Medien **[!UICONTROL veröffentlichen.]**
 1. Tippen Sie auf **[!UICONTROL OK.]**
