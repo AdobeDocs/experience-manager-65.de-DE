@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 6a44c4ac11f2fdf794895c28468c2a600a09b3c0
+source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Dynamic Media-Assets werden vom CDN (Content Versand Network) zwischengespeicher
 
 >[!IMPORTANT]
 >
->Die folgenden Schritte gelten nur für den Modus &quot;Dynamische Medien - Scene7&quot;in AEM 6.5, Service Pack 6 (AEM 6.5.6) oder höher. Für diese Funktion zur Ungültigmachung von CDN müssen Sie auch das im Lieferumfang von AEM Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. andere benutzerdefinierte CDN werden nicht unterstützt.<br>Wenn Sie dynamische Medien in AEM 6.5, Service Pack 5 (AEM 6.5.5) oder früher verwenden, befolgen Sie die Schritte unter [Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>Die folgenden Schritte gelten nur für den Modus &quot;Dynamische Medien - Scene7&quot;in AEM 6.5, Service Pack 6 (AEM 6.5.6) oder höher. Für diese Funktion zur Ungültigmachung von CDN müssen Sie auch das im Lieferumfang von AEM Dynamic Media enthaltene Out-of-the-Box-CDN verwenden. andere benutzerdefinierte CDN werden nicht unterstützt.<br>Wenn Sie dynamische Medien in AEM 6.5, Service Pack 5 (AEM 6.5.5) oder früher verwenden, befolgen Sie die Schritte unter [Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic.](/help/assets/invalidate-cdn-cache-dm-classic.md)
 
 See also [Caching overview in Dynamic Media](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
