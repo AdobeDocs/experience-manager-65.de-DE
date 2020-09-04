@@ -37,7 +37,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 >
 >Der gesamte Inhalt der Kampagne sollte unter einer `master` Seite des Typs erstellt werden `cq/personalization/components/ambitpage`.
 >
->Wenn Ihre geplante Kampagne z. B.
+>Wenn Ihre geplante Kampagne z. B. in etwa
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
