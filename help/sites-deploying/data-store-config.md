@@ -12,9 +12,9 @@ discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
 translation-type: tm+mt
-source-git-commit: f0ec3415ffef70c985828f17b32dc0d453c1ae7c
+source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3423'
 ht-degree: 71%
 
 ---
@@ -190,7 +190,7 @@ Nach dem Download können Sie den S3-Connector wie folgt installieren und konfig
 1. Bearbeiten Sie die Datei und fügen Sie die für Ihre Einrichtung erforderlichen Konfigurationsoptionen hinzu.
 1. Starten Sie AEM.
 
-### Aktualisieren auf eine neue Version des 1.10.x S3-Connectors {#upgrading-to-a-new-version-of-the-x-s-connector}
+### Aktualisieren auf eine neue Version des 1.10.x S3-Connectors {#upgrading-to-a-new-version-of-the-s-connector}
 
 Wenn Sie auf eine neue Version des 1.10.x S3-Connectors aktualisieren müssen (z. B. von 1.10.0 auf 1.10.4), führen Sie die folgenden Schritte aus:
 
@@ -204,7 +204,7 @@ Wenn Sie auf eine neue Version des 1.10.x S3-Connectors aktualisieren müssen (z
 
    >[!NOTE]
    >
-   >Die oben angegebenen Dateinamen dienen nur zur Veranschaulichung und stellen keine definitiven Werte dar.
+   >Die oben dargestellten Dateinamen dienen nur zur Veranschaulichung.
 
 1. Laden Sie die neueste Version des Feature Packs 1.8.x aus dem [Adobe-Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) herunter.
 1. Unzip the contents to a separate folder, then navigate to `jcr_root/libs/system/install/15`.
