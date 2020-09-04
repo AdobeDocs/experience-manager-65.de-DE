@@ -11,7 +11,10 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
+source-git-commit: 7e05502b590fb2c7c36919f94611efe999262d32
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 44%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 >[!CAUTION]
 >
->Die AEM-E-Mail-Komponenten wurden nicht mehr unterstützt. Aufgrund der Art der E-Mail, die Inhalt und Stil zusammenführt, werden die von AEM standardmäßig bereitgestellten E-Mail-Komponenten für Kunden nur eingeschränkt wiederverwendet, da benutzerdefinierte Stile in alle Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
+>Die AEM E-Mail-Komponenten wurden nicht mehr unterstützt. Aufgrund der Art der E-Mail, die Inhalt und Stil zusammenführt, werden die standardmäßig bereitgestellten E-Mail-Komponenten für Kunden nur in begrenztem Umfang wiederverwendet, da benutzerdefinierte Stile in alle Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
 >
->E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Diese veralteten Komponenten sollten jedoch nicht in Projekten verwendet werden.
+>E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Diese veralteten Komponenten sollten jedoch nicht in Projekten verwendet werden.
 
 Dieses Dokument beschreibt einige der Best Practices zum E-Mail-Design, die eine gut entwickelte E-Mail-Kampagnenvorlage ermöglichen.
 
@@ -34,7 +37,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 >
 >Der gesamte Inhalt der Kampagne sollte unter einer `master` Seite des Typs erstellt werden `cq/personalization/components/ambitpage`.
 >
->Wenn Ihre geplante Kampagne z. B. in etwa
+>Wenn Ihre geplante Kampagne z. B.
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
@@ -57,11 +60,11 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
    <td><strong>Implementierung</strong></td>
   </tr>
   <tr>
-   <td><p>Geben Sie den Dokument-Typ an, um eine einheitliche Darstellung sicherzustellen.</p> <p>Hinzufügen DOCTYPE am Anfang (HTML oder XHTML)</p> </td>
+   <td><p>Geben Sie den Dokument-Typ an, um eine einheitliche Darstellung sicherzustellen.</p> <p>hinzufügen DOCTYPE am Anfang (HTML oder XHTML)</p> </td>
    <td><p>Ist konfigurierbar durch Änderung der <i>Eigenschaft cq:doctype</i> in<i>"/etc/designs/default/jcr:content/Kampagne_newsletterpage"</i></p> <p>Die Standardeinstellung ist "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//DE" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kann in "HTML_5"geändert werden:</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>Hinzufügen CHARSET-Erklärung (z. B. iso-8859-15, UTF-8) bis</p> </td>
+   <td><p>Geben Sie die Zeichendefinition an, um die korrekte Darstellung von Sonderzeichen sicherzustellen.</p> <p>hinzufügen CHARSET-Erklärung (z. B. iso-8859-15, UTF-8) bis</p> </td>
    <td><p>Ist auf UTF-8 eingestellt.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
@@ -97,10 +100,10 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 | **Best Practice** | **Implementierung** |
 |---|---|
-| Hinzufügen von *Alt* -Attributen zu Bildern | Das *Alt* -Attribut wurde als obligatorisch für die Bildkomponente definiert. |
+| hinzufügen von *Alt* -Attributen zu Bildern | Das *Alt* -Attribut wurde als obligatorisch für die Bildkomponente definiert. |
 | Verwenden Sie *das Format &quot;jpg* &quot;anstelle des *PNG* -Formats für Bilder | Bilder werden immer als JPG von der Bildkomponente bereitgestellt. |
 | Verwenden Sie `<img>` in einer Tabelle Elemente anstelle von Hintergrundbildern. | In den Vorlagen werden keine Hintergrundbilddaten verwendet. |
-| Hinzufügen attribute style=&quot;display block&quot; auf Bildern. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig das Attribut *style=&quot;display block&quot;* . |
+| hinzufügen attribute style=&quot;display block&quot; auf Bildern. Dies ermöglicht eine gute Anzeige in Gmail. | Alle Bilder enthalten standardmäßig das Attribut *style=&quot;display block&quot;* . |
 
 ### Text und Links {#text-and-links}
 
@@ -127,9 +130,9 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 | **Best Practice** | **Implementierung** |
 |---|---|
-| Verwenden Sie den W3C-Validator, um den HTML-Code zu korrigieren. Stellen Sie sicher, dass alle offenen Tags ordnungsgemäß geschlossen werden. | Code wurde validiert. Bei XHTML-Übergangsdokumenten ist nur das fehlende xmlns-Attribut für die Variable <html> -Element fehlt. |
+| Verwenden Sie den W3C-Validator, um den HTML-Code zu korrigieren. Stellen Sie sicher, dass alle offenen Tags ordnungsgemäß geschlossen werden. | Code wurde validiert. Bei XHTML-Übergangsdokumenten fehlt nur das fehlende xmlns-Attribut für das `<html>` Element. |
 | Machen Sie sich keine Gedanken mit JavaScript oder Flash - diese Technologien werden von E-Mail-Clients weitgehend nicht unterstützt. | In der Newslettervorlage werden weder JavaScript noch Flash verwendet. |
-| Hinzufügen einer Nur-Text-Version für mehrteilige Versand. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
+| hinzufügen einer Nur-Text-Version für mehrteilige Versand. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
 
 ## Kampagnen-Newsletter – Vorlagen und Beispiele {#campaign-newsletter-templates-and-examples}
 
