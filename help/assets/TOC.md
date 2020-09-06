@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Experience Manager 6.5 Asset-Benutzerhandbuch
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: c57cc70fbdeabfdff1e8977d3bf8187f7c41ce77
+source-git-commit: d4cd304fccba9c06078790ea97bee74fc12d8df0
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 50%
+source-wordcount: '650'
+ht-degree: 51%
 
 ---
 
@@ -157,7 +157,7 @@ ht-degree: 50%
    + [Asynchrone Aufträge](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Asset-Einblicke](touch-ui-asset-insights.md)
-   + [Asset-Einblicke über den Start der Adobe aktivieren](touch-ui-using-dtm-for-asset-insights.md)
+   + [Asset-Einblicke über DTM aktivieren](touch-ui-using-dtm-for-asset-insights.md)
    + [Asset-Einblicke konfigurieren](touch-ui-configuring-asset-insights.md)
    + [Assets ein- und auschecken](check-out-and-submit-assets.md)
    + [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
