@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 097109edcf66cc06460c9d962037e49613e3405b
+source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '822'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 # Konfigurieren der E-Mail {#configuring-email}
 
-AEM Communities verwenden E-Mail für:
+AEM Communities verwendet E-Mail für:
 
 * [Communities-Benachrichtigungen](notifications.md)
 * [Communities Abonnements](subscriptions.md)
@@ -76,7 +76,7 @@ Beispiel (nur mit Werten zur Veranschaulichung gefüllt):
 
    Wenn diese Option aktiviert ist, wird die Protokollierung von SMTP-Serverinteraktionen aktiviert.
 
-## E-Mail-Konfiguration von AEM Communities {#aem-communities-email-configuration}
+## AEM Communities-E-Mail-Konfiguration {#aem-communities-email-configuration}
 
 Sobald der [Standard-E-Mail-Dienst](#default-mail-service-configuration) konfiguriert ist, funktionieren die beiden in der Version enthaltenen Instanzen der `AEM Communities Email Reply Configuration` OSGi-Konfiguration.
 
@@ -112,7 +112,7 @@ Diese Konfiguration sollte nicht geändert werden.
 
 * Vergewissern Sie sich, dass **Beitrag aus Antwort-E-Mail** erstellen `unchecked`ist.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### Konfiguration für Abonnement {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit zu aktivieren oder
 * Wählen Sie das Bearbeitungssymbol aus.
 * Überprüfen Sie, ob der **Name** `subscriptions-email`lautet.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL Name]**
 
@@ -131,16 +131,17 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit zu aktivieren oder
 * **[!UICONTROL Beitrag aus Antwort-E-Mail erstellen]**
 
    Wenn diese Option aktiviert ist, kann der Empfänger der Abonnement-E-Mail Inhalte veröffentlichen, indem er eine Antwort sendet. Diese Option ist standardmäßig aktiviert.
-* **[!UICONTROL Hinzufügen verfolgt ID in Kopfzeile]**
+* **[!UICONTROL hinzufügen verfolgt ID in Kopfzeile]**
 
    Der Standardwert ist `Reply-To`.
 
 * **[!UICONTROL Maximale Länge des Betreffs]**
 
    Wenn der Betreffzeile eine Tracker-ID hinzugefügt wird, ist dies die maximale Länge des Betreffs, mit Ausnahme der verfolgten ID, nach der sie abgeschnitten wird. Beachten Sie, dass dies so klein wie möglich sein sollte, damit verfolgte ID-Informationen nicht verloren gehen. Der Standardwert ist 200.
-* **[!UICONTROL E-Mail-Adresse &quot;Von&quot;]**
 
-   *(Erforderlich)* Adresse, von der die Benachrichtigungs-E-Mail gesendet wird. Ist wahrscheinlich derselbe **SMTP-Benutzer** , der für den [Standard-E-Mail-Dienst](#configuredefaultmailservice)angegeben wurde. Der Standardwert ist `no-reply@example.com`.
+* **[!UICONTROL E-Mail-Adresse &quot;Antwort an&quot;]**
+
+   Adresse, die als E-Mail-Adresse für Antworten verwendet wird. Der Standardwert ist `communities@adobe.com`.
 
 * **[!UICONTROL Antwort-zu-Trennzeichen]**
 
@@ -168,7 +169,7 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit zu aktivieren oder
 
 Damit die E-Mail in das Repository geladen werden kann, müssen Sie einen Abrufimporteur konfigurieren und seine Eigenschaften im Repository manuell konfigurieren.
 
-### Hinzufügen neuer Abruf-Importer {#add-new-polling-importer}
+### hinzufügen neuer Abruf-Importer {#add-new-polling-importer}
 
 * Melden Sie sich mit Administratorberechtigungen beim primären Herausgeber an und navigieren Sie zur Abstimmungs-Importer-Konsole:
 
