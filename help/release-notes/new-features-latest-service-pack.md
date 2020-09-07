@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8980348736825f45647a91062b1fe4e4a790b8f1
+source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2462'
 ht-degree: 6%
 
 ---
@@ -126,6 +126,8 @@ Sie können jetzt mehrere Dateien an die Komponente [!UICONTROL Dateianlage] ada
 * Verbesserte Unterstützung für Bildschirmlesehilfen.
 
 #### Weitere wichtige Verbesserungen (6.5.5.0) {#other-enhancements-sites}
+
+* Der anonyme Zugriff auf CRXDE Lite ist nicht erlaubt, um die Sicherheit zu erhöhen. Stattdessen werden die Benutzer zum Anmeldebildschirm weitergeleitet. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 * Beim Kopieren oder Einfügen einer Seitenstruktur haben Sie jetzt die Möglichkeit, entweder die Stammeseite einzufügen oder die Stammeseite mit den Unterseiten der Struktur einzufügen.
 
