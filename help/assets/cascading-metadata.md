@@ -3,9 +3,9 @@ title: Hinzufügen von Metadaten [!DNL Adobe Experience Manager Assets].
 description: In diesem Artikel wird die Definition kaskadierender Metadaten für Assets beschrieben.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '948'
 ht-degree: 82%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 82%
 Beim Erfassen der Metadateninformationen eines Assets geben Benutzer Informationen in den verschiedenen verfügbaren Feldern an. Sie können bestimmte Metadatenfelder oder Feldwerte anzeigen, die von den in anderen Feldern ausgewählten Optionen abhängig sind. Solche bedingt angezeigten Metadaten werden als „kaskadierende Metadaten“ bezeichnet. Anders ausgedrückt können Sie eine Abhängigkeit zwischen einem bestimmten Metadatenfeld/-wert und einem oder mehreren Feldern und/oder dessen/deren Werten schaffen.
 
 Verwenden Sie Metadatenschemata, um Regeln für die Anzeige kaskadierender Metadaten zu definieren. Beispiel: Wenn Ihr Metadatenschema ein Feld für den Assettyp enthält, können Sie einen relevanten Satz von Feldern erstellen, die basierend auf der Art des von einem Benutzer ausgewählten Assets angezeigt werden.
+
+>[!CAUTION]
+>
+>Das Kaskadieren von Metadaten wird für Inhaltsfragmente nicht unterstützt.
 
 Nachfolgend finden Sie einige Anwendungsfälle, für die Sie kaskadierende Metadaten definieren können:
 
