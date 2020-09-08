@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8f35717324cd2c1524fb2cf931b3ce21be05729a
+workflow-type: tm+mt
+source-wordcount: '2132'
+ht-degree: 88%
 
 ---
 
@@ -120,7 +123,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 
 * Globale Parameter für den zentralen Protokollierungsdienst
 * Anforderung einer Datenprotokollierung; eine spezielle Protokollierungskonfiguration zum Anfordern von Informationen
-* Bestimmte Einstellungen für einzelne Dienste, beispielsweise zum Festlegen einer einzelnen Protokolldatei und des Formats von Protokollmeldungen
+* Spezifische Einstellungen für die einzelnen Dienste; zum Beispiel eine einzelne Protokolldatei und ein bestimmtes Format für die Protokollmeldungen
 
 Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md). 
 
@@ -179,9 +182,9 @@ Weitere Informationen zur Benutzerverwaltung in AEM (einschließlich der Zuweisu
 
 ### Konfigurieren des Dispatchers {#configuring-the-dispatcher}
 
-Der Dispatcher ist das Caching- bzw. Lastenausgleichs-Tool von Adobe. Mit dem Dispatcher können Sie außerdem Ihren AEM-Server vor Angriffen schützen. Daher können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden.
+Dispatcher ist das Caching- und/oder Lastenausgleichstool von Adobe Experience Manager, das in Verbindung mit einem Webserver der Unternehmensklasse verwendet werden kann.
 
-Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), insbesondere unter [Konfigurieren des Dispatchers](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), insbesondere unter [Konfigurieren des Dispatchers](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 ### Konfigurieren von AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
@@ -213,7 +216,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 ### Freigegebener Datenspeicher {#shared-data-store}
 
-Der Repository-Datenspeicher wird verwendet, um den Speicher großer Binärdateien aus dem Repository zu einem separaten Bereich zu laden, sodass mehrere Instanzen derselben Binärdatei (z. B. ein Bild) innerhalb der Repository-Struktur nur einmal gespeichert werden.
+Der Repository-Datenspeicher wird verwendet, um die Datenspeicherung großer Binärdateien aus dem eigentlichen Repository in einen separaten Bereich zu verschieben, sodass mehrere Instanzen derselben Binärdatei (z. B. ein Bild) innerhalb der Repository-Struktur nur einmal gespeichert werden.
 
 Die Funktion zum einmaligen Speichern, aber mehrfachen Referenzieren kann erweitert werden, sodass nicht nur ein einziger Repository-Baum bedient wird, sondern getrennte Repositorys. Der Datenspeicher eines jeden Repositorys wird dabei so konfiguriert, dass er auf denselben gemeinsamen Dateisystem-Speicherort verweist.
 
