@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4db76ca1de97d8353ac88a6e66e14f41fb0b87db
+source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2740'
 ht-degree: 59%
 
 ---
@@ -64,7 +64,7 @@ Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, al
 
 ## Referenzieren von clientseitigen Bibliotheken {#referencing-client-side-libraries}
 
-Da HTL die bevorzugte Technologie zur Entwicklung von AEM-Sites ist, sollte HTL verwendet werden, um clientseitige Bibliotheken in AEM einzuschließen. Sie können jedoch auch JSP verwenden.
+Da HTL die bevorzugte Technologie zur Entwicklung von AEM Sites ist, sollte HTL verwendet werden, um clientseitige Bibliotheken in AEM einzuschließen. Sie können jedoch auch JSP verwenden.
 
 ### Verwendung von HTL {#using-htl}
 
@@ -103,7 +103,7 @@ Ausführliche Informationen wie Attribute zum Filtern von JS, CSS oder Themenbib
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, die in der Vergangenheit häufig zum Einschließen von Clientbibliotheken verwendet wurde, wurde seit AEM 5.6 nicht mehr unterstützt. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
+>`<cq:includeClientLib>`, die in der Vergangenheit häufig zur Einbindung von Client-Bibliotheken verwendet wurde, ist seit AEM 5.6 veraltet. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
 
 ## Erstellen von Client-Bibliotheksordnern {#creating-client-library-folders}
 
@@ -157,7 +157,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 >[!CAUTION]
 >
->Bei Verwendung von Proxyclient-Bibliotheken erfordert die AEM Dispatcher-Konfiguration möglicherweise ein Update, um sicherzustellen, dass die URIs mit der Erweiterung clientlibs zulässig sind.
+>Bei der Verwendung von Proxyclient-Bibliotheken erfordert die AEM Dispatcher-Konfiguration möglicherweise ein Update, um sicherzustellen, dass die URIs mit der Erweiterung clientlibs zulässig sind.
 
 >[!CAUTION]
 >
@@ -182,8 +182,8 @@ Then you set the `allowProxy` property on `foo` to true.
 1. Wählen Sie den Client-Bibliotheksordner aus und klicken Sie auf **Erstellen > Datei erstellen**.
 1. Geben Sie in das Dateinamenfeld einen der folgenden Dateinamen ein und klicken Sie auf „OK“:
 
-   * **`js.txt`:**Verwenden Sie diesen Dateinamen, um eine JavaScript-Datei zu erzeugen.
-   * **`css.txt`:**Verwenden Sie diesen Dateinamen, um ein Cascading Style Sheet zu erzeugen.
+   * **`js.txt`:** Verwenden Sie diesen Dateinamen, um eine JavaScript-Datei zu erzeugen.
+   * **`css.txt`:** Verwenden Sie diesen Dateinamen, um ein Cascading Style Sheet zu erzeugen.
 
 1. Öffnen Sie die Datei und geben Sie den folgenden Text ein, um das Stammverzeichnis des Pfads der Quelldateien anzugeben:
 
@@ -233,7 +233,7 @@ Verwenden Sie die Eigenschaft &quot;Kategorien&quot;, um den einzubettenden Clie
 * **Typ:** String[]
 * **Wert:** Der Wert der Eigenschaft &quot;Kategorien&quot;des einzubettenden `cq:ClientLibraryFolder` Knotens.
 
-#### Minimieren von Anfragen durch Einbetten {#using-embedding-to-minimize-requests}
+<!-- #### Using Embedding to Minimize Requests {#using-embedding-to-minimize-requests}
 
 In some cases you may find that the final HTML generated for typical page by your publish instance includes a relatively large number of `<script>` elements, particularly if your site is using client context information for analaytics or targeting. For example, in a non-optimized project you might find the following series of `<script>` elements in the HTML for a page:
 
@@ -247,9 +247,9 @@ In some cases you may find that the final HTML generated for typical page by you
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
-In solchen Fällen kann es nützlich sein, den gesamten benötigten Client-Bibliothekscode in einer einzelnen Datei zu kombinieren, um die Anzahl der Anfragen in beide Richtungen beim Laden einer Seite zu reduzieren. To do this you can `embed` the required libraries into you app-specific client library using the embed property of the `cq:ClientLibraryFolder` node.
+In such cases, it can be useful to combine all the required client library code in to a single file so that the number of back and forth requests on page load is reduced. To do this you can `embed` the required libraries into you app-specific client library using the embed property of the `cq:ClientLibraryFolder` node.
 
-Die folgenden Client-Bibliothekskategorien sind in AEM bereits vorhanden. Sie sollten nur die Kategorien einbetten, die für die Funktion Ihrer Website erforderlich sind. Sie sollten jedoch **die hier angegebene Reihenfolge einhalten**:
+The following client library categories are incuded with AEM. You should embed only those that are required for he functioning of your particular site. However, **you should maintain the order listed here**:
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -269,6 +269,10 @@ Die folgenden Client-Bibliothekskategorien sind in AEM bereits vorhanden. Sie so
 1. `cq.collab.toggle`
 1. `cq.collab.forum`
 1. `cq.cleditor`
+
+EDITOR NOTE: removed as requested on CQDOC-16765
+
+-->
 
 #### Pfade in CSS-Dateien {#paths-in-css-files}
 
@@ -304,7 +308,7 @@ Verwenden Sie die Eigenschaft `channels` eines Client-Bibliotheksordners, um die
 
 To associate a client library folder with a device group, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
-* **Name:** Kanal
+* **Name:** kanal
 * **Typ:** String[]
 * **Werte:** Der Name der mobilen Gruppe. Um den Bibliotheksordner aus einer Gruppe auszuschließen, setzen Sie ein Ausrufezeichen („!“) vor den Namen.
 
@@ -341,7 +345,7 @@ Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.
 >
 >Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Möglichkeiten der Präprozessoren verwenden.
 
-### Nutzung {#usage}
+### Verwendung {#usage}
 
 Sie können die Präprozessorkonfiguration pro Client-Bibliothek oder systemweit festlegen.
 
@@ -449,6 +453,7 @@ The `dumplibs` component includes a test selector that displays the source code 
    * Öffnen Sie die folgende URL in Ihrem Webbrowser (verwenden Sie je nach Bedarf einen anderen Host und Port):
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+
    Die Standardseite zeigt die Ausgabe für Tags ohne Wert für das category-Attribut.
 
 1. To see the output for a category, type the value of the client library&#39;s `categories` property and click **Submit Query**.
