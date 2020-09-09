@@ -1,10 +1,10 @@
 ---
-title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5
+title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1722'
 ht-degree: 44%
 
 ---
@@ -48,7 +48,8 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
 | Entwickler | `Granite.Sling.js` Client-Bibliothek. Adobe plant keine weitere Pflege und Aktualisierung der Granite.Sling.js-Client-Bibliothek, die im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Adobe empfiehlt Kunden, die sich auf die Bibliotheksfunktion verlassen, um ihren Code umzurechnen und nicht mehr zu verwenden. |
 | Entwickler | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. Bis AEM 6.4 wurde JavaScript standardmäßig mit der Option zum Wechsel zu Google Closure Compiler (GCC) minimiert. Ab AEM 6.5 ist GCC der Standard. | Adobe empfiehlt Kunden, die zur Implementierung auf AEM 6.5 aktualisieren, um auf GCC zu wechseln |
 | Entwickler | Dialog-Editor für klassische UI in CRXDE Lite.. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Es steht kein Ersatz zur Verfügung. |
-| Formulare | Die Integration der AEM Forms in AEM Mobile ist veraltet. | Es steht kein Ersatz zur Verfügung. |
+| Formulare | Die AEM Forms-Integration mit AEM Mobile ist veraltet. | Es steht kein Ersatz zur Verfügung. |  | Entwickler | Dialog-Editor für klassische UI in CRXDE Lite.. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Es steht kein Ersatz zur Verfügung. |
+| Formulare | Client-Bibliothek &quot;Lodash/Unterstrich&quot;. Adobe plant nicht, die Lodash/underscore-Client-Bibliothek, die im Lieferumfang enthalten ist, weiter zu pflegen und zu aktualisieren (Quickstart) | Adobe empfiehlt Kunden, die für ihren Code immer noch einen Lodash/Unterstrich benötigen, um ihn in ihre Projektcodebasis einzufügen. |
 
 ## Entfernte Funktionen {#removed-features}
 
@@ -62,8 +63,8 @@ In diesem Abschnitt werden Funktionen Liste, die aus AEM 6.5 entfernt wurden. Fr
 | Formulare | Die Unterstützung für den Adobe Central Migration Bridge-Service wurde eingestellt, da Adobe Central nicht länger unterstützt wird. | Kein Ersatz. |
 | Formulare | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Kein Ersatz. |
 | Formulare | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Kein Ersatz vorhanden. |
-| Formulare | Ein Single-Hop-Upgrade von LiveCycle ES4 SP1 auf AEM 6.5 Forms on JEE ist nicht verfügbar | Siehe [verfügbare Aktualisierungspfade](../forms/using/upgrade.md) in der Dokumentation zu AEM Forms-Upgrades. |
-| Formulare | Unterstützung für UPD-basiertes Clustering von AEM Forms auf JEE entfernt | Sie können nur TCP-basiertes Clustering in AEM Forms auf JEE verwenden. Wenn Sie einen UDP-Multicast-Server von einer früheren Version auf AEM 5.5 Forms on JEE aktualisieren, führen Sie manuelle Konfigurationen durch, um zu TCP-basiertem Gemfire-Clustering zu wechseln. Detaillierte Anweisungen finden Sie unter [Aktualisierung auf AEM 6.5 Forms on JEE](../forms/using/upgrade-forms-jee.md) |
+| Formulare | Ein Single-Hop-Upgrade von LiveCycle ES4 SP1 auf AEM 6.5 Forms on JEE ist nicht verfügbar | Siehe [verfügbare Upgrade-Pfade](../forms/using/upgrade.md) in der Dokumentation zur AEM Forms-Aktualisierung. |
+| Formulare | Unterstützung für UPD-basiertes Clustering von AEM Forms on JEE entfernt | Sie können nur TCP-basiertes Clustering in AEM Forms on JEE verwenden. Wenn Sie einen UDP-Multicast-Server von einer früheren Version auf AEM 5.5 Forms on JEE aktualisieren, führen Sie manuelle Konfigurationen durch, um zu TCP-basiertem Gemfire-Clustering zu wechseln. Detaillierte Anweisungen finden Sie unter [Aktualisierung auf AEM 6.5 Forms on JEE](../forms/using/upgrade-forms-jee.md) |
 | Entwickler | Firebug Lite wurde aus der Standardverteilung (Quickstart) entfernt. | Verwenden Sie die im Browser integrierten Entwicklerkonsolen. |
 | Entwickler | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Kein Ersatz vorhanden. |
 | [!DNL Assets] | Die Funktion zum Abladen von Assets wird in [!DNL Adobe Experience Manager] 6.5 entfernt. | Es steht kein Ersatz zur Verfügung. |
