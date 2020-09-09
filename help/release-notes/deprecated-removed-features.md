@@ -2,7 +2,7 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
+source-git-commit: 1e6feac534fe990d614997c4bd3ab999a4a8d479
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 44%
@@ -49,7 +49,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
 | Entwickler | Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken: Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. Bis AEM 6.4 wurde JavaScript standardmäßig mit der Option zum Wechsel zu Google Closure Compiler (GCC) minimiert. Ab AEM 6.5 ist GCC der Standard. | Adobe empfiehlt Kunden, die zur Implementierung auf AEM 6.5 aktualisieren, um auf GCC zu wechseln |
 | Entwickler | Dialog-Editor für klassische UI in CRXDE Lite.. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Es steht kein Ersatz zur Verfügung. |
 | Formulare | Die AEM Forms-Integration mit AEM Mobile ist veraltet. | Es steht kein Ersatz zur Verfügung. |  | Entwickler | Dialog-Editor für klassische UI in CRXDE Lite.. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Verteilung (Quickstart) bereitgestellt wird. | Es steht kein Ersatz zur Verfügung. |
-| Formulare | Client-Bibliothek &quot;Lodash/Unterstrich&quot;. Adobe plant nicht, die Lodash/underscore-Client-Bibliothek, die im Lieferumfang enthalten ist, weiter zu pflegen und zu aktualisieren (Quickstart) | Adobe empfiehlt Kunden, die für ihren Code immer noch einen Lodash/Unterstrich benötigen, um ihn in ihre Projektcodebasis einzufügen. |
+| Entwickler | Client-Bibliothek &quot;Lodash/Unterstrich&quot;. Adobe plant nicht, die Lodash/underscore-Client-Bibliothek, die im Lieferumfang enthalten ist, weiter zu pflegen und zu aktualisieren (Quickstart) | Adobe empfiehlt Kunden, die für ihren Code immer noch einen Lodash/Unterstrich benötigen, um ihn in ihre Projektcodebasis einzufügen. |
 
 ## Entfernte Funktionen {#removed-features}
 
