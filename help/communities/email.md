@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
+source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -112,7 +112,7 @@ Diese Konfiguration sollte nicht geändert werden.
 
 * Vergewissern Sie sich, dass **Beitrag aus Antwort-E-Mail** erstellen `unchecked`ist.
 
-![chlimage_1-100](assets/configure-email.png)
+![configure-email-response](assets/configure-email-reply.png)
 
 ### Konfiguration für Abonnement {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit zu aktivieren oder
 * Wählen Sie das Bearbeitungssymbol aus.
 * Überprüfen Sie, ob der **Name** `subscriptions-email`lautet.
 
-   ![chlimage_1-101](assets/configure-email-subscription.png)
+   ![configure-email-Abonnement](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Name]**
 
@@ -141,7 +141,7 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit zu aktivieren oder
 
 * **[!UICONTROL E-Mail-Adresse &quot;Antwort an&quot;]**
 
-   Adresse, die als E-Mail-Adresse für Antworten verwendet wird. Der Standardwert ist `communities@adobe.com`.
+   Adresse, die als E-Mail-Adresse für Antworten verwendet wird. Der Standardwert ist `no-reply@example.com`.
 
 * **[!UICONTROL Antwort-zu-Trennzeichen]**
 
