@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5baef6f4d570aff738444e0620b982729b897f89
+source-git-commit: 8633216807061c73f4bc692d13f9eba37845cffc
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 48%
+source-wordcount: '2028'
+ht-degree: 47%
 
 ---
 
@@ -357,6 +357,8 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
    >[!NOTE]
    >
    >Deaktivieren Sie keine Replizierungsagenten. Dies kann dazu führen, dass die Replizierung einiger Assets fehlschlägt.
+   >
+   >Stellen Sie sicher, dass alle vier Replizierungsagenten so konfiguriert sind, dass kein Timeout-Fehler auftritt. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Ihre AEM Assets-Autoreninstanz wurde erfolgreich mit dem Markenportal konfiguriert. Sie können jetzt:
 
