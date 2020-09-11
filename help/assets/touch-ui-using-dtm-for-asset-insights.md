@@ -3,23 +3,21 @@ title: 'Aktivieren von Asset Insights über DTM  '
 description: Erfahren Sie, wie Sie Asset Insights mit Adobe Dynamic Tag Management (DTM) aktivieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 3fbf32ec0930b8e832f8bea5b466fcb6bd38fbd3
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 41%
+source-wordcount: '680'
+ht-degree: 34%
 
 ---
 
 
 # Aktivieren von Asset Insights über DTM   {#enable-asset-insights-through-dtm}
 
-Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingtools aktivieren können. Es wird Adobe Analytics-Kunden kostenlos bereitgestellt.
+Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingtools aktivieren können. Es wird Adobe Analytics-Kunden kostenlos bereitgestellt. Sie können Ihren Rückverfolgungscode entweder so anpassen, dass CMS-Lösungen von Drittanbietern Asset Insights verwenden können, oder Sie können DTM verwenden, um Asset Insights-Tags einzufügen. Einblicke werden nur für Bilder unterstützt und bereitgestellt.
 
-Obwohl Sie Ihren Trackingcode anpassen können, um CMS-Lösungen von Drittanbietern zu aktivieren, um Asset Insights zu verwenden, empfiehlt Adobe, dass Sie DTM verwenden, um Asset Insights-Tags einzufügen.
-
->[!NOTE]
+>[!CAUTION]
 >
->Einblicke werden nur für Bilder unterstützt und bereitgestellt.
+>Adobe DTM wird zugunsten von Adobe Experience Platform Launch eingestellt und wird bald [das Lebensende](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)erreichen. Adobe empfiehlt die [Verwendung von Launch für Asset-Einblicke](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 
@@ -58,7 +56,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 
 1. Greife Sie auf `https://dtm.adobe.com` zu. Klicken Sie in der Web-Eigenschaft auf **[!UICONTROL Übersicht]** und dann auf **[!UICONTROL Tool hinzufügen]** oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
 
-   ![Hinzufügen Adobe Analytics-Tool](assets/Add-Adobe-Analytics-Tool.png)
+   ![hinzufügen Adobe Analytics-Tool](assets/Add-Adobe-Analytics-Tool.png)
 
    Wählen Sie die Report Suites „Bereitstellung/Produktion“ nach Bedarf.
 
