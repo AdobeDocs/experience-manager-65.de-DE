@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 7%
@@ -48,7 +48,7 @@ Verwenden von CRXDE Lite:
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
-1. Navigieren Sie im **CRXDE Lite** -Explorer-Bereich zu der Datei `/apps/an-scf-sandbox/components/playpage` und klicken Sie mit der Dublette darauf, `playpage.jsp` um sie im Bearbeitungsbereich zu öffnen.
+1. Navigieren Sie im Bereich &quot; **CRXDE Lite** Explorer&quot;zu der Datei `/apps/an-scf-sandbox/components/playpage` und klicken Sie mit der Dublette darauf, `playpage.jsp` um sie im Bearbeitungsbereich zu öffnen.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -183,4 +183,4 @@ In diesem einfachen Beispiel wird die Root-Landingpage statisch so eingestellt, 
 
 Sobald die Site veröffentlicht wurde, führt das Browsen zur Root-Seite in einer Veröffentlichungsinstanz eine Umleitung zur englischen Seite durch.
 
-Der letzte Schritt vor der Wiedergabe mit den Communities SCF-Komponenten ist, einen Client Library Folder (clientlibs) hinzuzufügen .... [Hinzufügen Clienlibs](add-clientlibs.md)
+Der letzte Schritt vor der Wiedergabe mit den Communities SCF-Komponenten ist, einen Client Library Folder (clientlibs) hinzuzufügen .... [hinzufügen Clienlibs](add-clientlibs.md)
