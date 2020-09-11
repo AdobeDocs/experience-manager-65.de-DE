@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Mobile Benutzerhandbuch
+breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 26%
@@ -49,14 +50,14 @@ ht-degree: 26%
    + [Inhaltsbereitstellung](develop-content-as-a-service.md)
 + Verwaltung der On-Demand Services-App {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
-   + [Einrichten von AEM Mobile](aem-mobile-setup.md)
+   + [AEM Mobile Setup](aem-mobile-setup.md)
    + [Konfigurieren von Benutzern und Benutzergruppen](aem-mobile-configure-users.md)
    + [Vorschau mit Preflight](aem-mobile-manage-ondemand-services.md)
    + [Mobile Apps](administer-mobile-apps.md)
    + [Modellübersicht](model-management.md)
    + [Bereiche und Entitäten](spaces-and-entities.md)
    + [Verwalten von Sammlungen](mobile-on-demand-managing-collections.md)
-+ Authoring von Adobe PhoneGap Enterprise {#author-phonegap}
++ Authoring Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [Bearbeiten von App-Metadaten](phonegap-editmetadata.md)
    + [App-Definitionen](phonegap-app-definitions.md)
@@ -65,7 +66,7 @@ ht-degree: 26%
    + [Bearbeiten von Anwendungen](phonegap-authoring-apps.md)
    + [Kachel „App verwalten“](phonegap-app-details-tile.md)
    + [Personalisierung von AEM Mobile-Inhalten](phonegap-aem-mobile-content-personalization.md)
-+ Entwicklung von Adobe PhoneGap Enterprise {#developphonegap}
++ Entwickeln von Adobe PhoneGap Enterprise {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
    + [Erstellen von Mobilanwendungen](building-app-mobile-phonegap.md)
    + [Push-Benachrichtigungen](phonegap-push-notifications.md)
@@ -77,15 +78,15 @@ ht-degree: 26%
    + [Erstellen und Bearbeiten von Apps mit der Apps-Konsole](phonegap-apps-console.md)
    + [Ist Ihre Hybrid-App für AEM Mobile bereit?](phonegap-adding-content-to-imported-app.md)
    + [Gerätefunktionen aufrufen](phonegap-access-device-features.md)
-   + [Hinzufügen von Adobe Analytics zur Mobilanwendung](phonegap-add-analytics-to-apps.md)
+   + [hinzufügen von Adobe Analytics zur Mobilanwendung](phonegap-add-analytics-to-apps.md)
    + [Seitenvorlagen für mobile Apps](phonegap-apps-arch-page-templates.md)
-   + [Konfigurieren von Adobe Target Cloud Service](aem-mobile-configuring-cloud-service.md)
+   + [Adobe Target Cloud Service konfigurieren](aem-mobile-configuring-cloud-service.md)
    + [Einzelseiten-Webanwendungen](phonegap-single-page-applications.md)
    + [Modelle im Repository](administer-mobile-apps.md)
-   + [Starten von AEM PhoneGap](starting-aem-phonegap-app.md)
+   + [Starten AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Testen von mobilen Apps](develop-mobile-apps-testing.md)
    + [App strukturieren](phonegap-structure-an-app.md)
-   + [Verfolgen der App-Leistung mit Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
+   + [Verfolgen der App-Performance mit Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
 + Verwaltung von Adobe PhoneGap Enterprise {#administering-phonegap}
    + [Mobile Schnellstart](phonegap-mobile-quickstart.md)
    + [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](administer-phonegap.md)
