@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Communities Benutzerhandbuch
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 26%
@@ -39,7 +40,7 @@ ht-degree: 26%
    + [Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities](user-ugc-management-service.md)
    + [Communities Sites](administer-landing.md)
    + [Communities Konsolen](consoles.md)
-   + [Analytics Configuration for Communities - Funktionen](analytics.md)
+   + [Analytics-Konfiguration für Communities-Funktionen](analytics.md)
    + [Konfiguration von Aktivierungsfunktionen](enablement.md)
    + [Messaging konfigurieren](messaging.md)
    + [Moderieren von Community-Inhalten](moderate-ugc.md)
@@ -125,13 +126,13 @@ ht-degree: 26%
    + [Anfänglicher Sandbox-Inhalt](initial-content.md)
    + [Sandbox-Anwendung entwickeln](develop-app.md)
    + [Entwicklung von Sandbox-Inhalten](develop-content.md)
-   + [Hinzufügen Clientlibs](add-clientlibs.md)
+   + [hinzufügen Clientlibs](add-clientlibs.md)
    + [Komponente &quot;Überlagerungskommentare&quot;](overlay-comments.md)
    + [Kommentarseite erstellen](overlay-create-comments-page.md)
    + [Nodes erstellen](overlay-create-nodes.md)
    + [Erscheinungsbild ändern](overlay-alter-appearance.md)
    + [Komponenten erstellen](extend-create-components.md)
-   + [Hinzufügen auf Beispielseite](extend-sample-page.md)
+   + [hinzufügen auf Beispielseite](extend-sample-page.md)
    + [Komponente &quot;Kommentare erweitern&quot;](extend-comments.md)
    + [Erscheinungsbild ändern (HBS)](extend-alter-appearance.md)
    + [Beispielseite erstellen](create-sample-page.md)
