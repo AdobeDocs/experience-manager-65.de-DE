@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '792'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Diese Konfiguration eignet sich für *Nicht-Produktion* -Umgebung wie Entwicklun
    * Der definierte Datenordnerpfad wird als &lt;mongo-dbpath> bezeichnet.
 
 
-* MongoDB kann auf demselben Host wie AEM oder remote ausgeführt werden.
+* MongoDB kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden.
 
 ### Beginn MongoDB {#start-mongodb}
 
@@ -72,7 +72,7 @@ Dadurch wird ein MongoDB-Server mit dem Standardanschluss 27017 Beginn.
 
 >[!NOTE]
 >
->Wenn MongoDB *nach* AEM gestartet wird, **starten** Sie alle **AEM** -Instanzen neu, damit sie ordnungsgemäß eine Verbindung zu MongoDB herstellen.
+>Wenn MongoDB *nach* AEM gestartet wird, **starten** Sie alle **AEM** Instanzen neu, damit sie ordnungsgemäß eine Verbindung zu MongoDB herstellen.
 
 
 ### Demoproduktionsoption: Setup MongoDB Replikat Set {#demo-production-option-setup-mongodb-replica-set}
@@ -100,7 +100,7 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung eines Replikationss
 * Download Solr von [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Geeignet für jedes Betriebssystem.
-   * Verwenden Sie Version 4.10 oder Version 5.
+   * Solr Version 7.0.
    * Solr erfordert Java 1.7 oder höher.
 
 * Grundkonfiguration
@@ -109,7 +109,7 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung eines Replikationss
    * Es ist kein Dienst erforderlich.
    * Der installierte Solr-Ordner wird als &lt;solr-install> bezeichnet.
 
-### Konfigurieren von Solr für AEM Communities {#configure-solr-for-aem-communities}
+### Solr für AEM Communities konfigurieren {#configure-solr-for-aem-communities}
 
 Um eine SOLR-Sammlung für MSRP für Demo zu konfigurieren, müssen zwei Entscheidungen getroffen werden (siehe die Links zur Hauptdokumentation):
 
@@ -143,9 +143,9 @@ Um ein sehr einfaches (nicht produktives) solrCloud-Setup auszuführen, führen 
 
 ## Identifizieren Sie MongoDB als gemeinsamen Store. {#identify-mongodb-as-common-store}
 
-Starten Sie den Autor und veröffentlichen Sie bei Bedarf AEM-Instanzen.
+Starten Sie bei Bedarf die Instanz im Autorenmodus und veröffentlichen Sie AEM.
 
-Wenn AEM vor dem Start von MongoDB ausgeführt wurde, müssen die AEM-Instanzen neu gestartet werden.
+Wenn AEM vor dem Start von MongoDB ausgeführt wurde, müssen die AEM Instanzen neu gestartet werden.
 
 Befolgen Sie die Anweisungen auf der Hauptseite der Dokumentation: [MSRP - MongoDB Common Store](msrp.md)
 
@@ -186,9 +186,9 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
 
 1. Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde:
 
-   * Gehen Sie bei allen Autoren- und Veröffentlichungsinstanzen von AEM erneut zur [Datenspeicherung Configuration Console](srp-config.md)
+   * Rufen Sie auf allen Instanzen im Autorenmodus und AEM Veröffentlichungsmodus die [Datenspeicherung Configuration Console erneut auf](srp-config.md)
 
-   Oder überprüfen Sie das AEM-Repository:
+   Oder überprüfen Sie das AEM Repository:
 
    * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -196,4 +196,4 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
    * Wenn der Knoten srpc vorhanden ist und die Node- [Standardkonfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)enthält, sollten die Eigenschaften der Standardkonfiguration MSRP als Standardanbieter definieren
 
 
-1. Vergewissern Sie sich, dass AEM nach Auswahl von MSRP neu gestartet wurde.
+1. Stellen Sie sicher, dass AEM nach Auswahl von MSRP neu gestartet wurde.
