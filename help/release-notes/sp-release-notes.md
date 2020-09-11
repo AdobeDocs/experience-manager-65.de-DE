@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
+source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
 workflow-type: tm+mt
-source-wordcount: '4423'
+source-wordcount: '4422'
 ht-degree: 7%
 
 ---
@@ -112,7 +112,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Die Suchseite und die Suchergebnisseite haben jetzt informativere Titel für ein besseres Verständnis der Benutzer von Bildschirmlesehilfen (NPR-34093).
 
-* Bildschirmlesehilfen geben jetzt die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte &quot; [!UICONTROL Grundeinstellungen] &quot;der Schaltflächen &quot;Asset- Eigenschaften&quot;an, um die ausgewählten Tags zu löschen (NPR-33972).
+* Bildschirmlesehilfen geben jetzt die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte &quot; [!UICONTROL Einfach] &quot;der Schaltflächen &quot;Asset- [!UICONTROL Eigenschaften] &quot;an, um die ausgewählten Tags zu löschen (NPR-33972).
 
 * Die Elemente in jeder Zeile in der Ansicht der Liste werden nun korrekt als Elemente derselben Zeile von Bildschirmlesehilfen (NPR-33932) angekündigt.
 
