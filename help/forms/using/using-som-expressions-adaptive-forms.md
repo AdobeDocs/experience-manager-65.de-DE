@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6b4bc58efd72900c54cb245878239e345d72ae3e
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 91%
@@ -29,7 +29,7 @@ Die folgende Abbildung zeigt eine Knotenstruktur, in die ein adaptives Formular 
 
 DOM-Baumstruktur
 
-Einem SOM-Ausdruck für ein beliebiges Element in einem adaptiven Formular wird das Präfix `guide[0].guide1[0]` vorangestellt. Die Position einer Komponente in der hierarchischen Knotenstruktur wird zum Ableiten ihres SOM-Ausdrucks verwendet.
+Einem SOM-Ausdruck für ein beliebiges Element in einem adaptiven Formular wird das Präfix `guide[0].guide1[0]` ] vorangestellt. Die Position einer Komponente in der hierarchischen Knotenstruktur wird zum Ableiten ihres SOM-Ausdrucks verwendet.
 
 ![DOM-Baumstruktur mit zwei Optionsfeldern](assets/hierarchy_radio_button.png)
 
@@ -48,4 +48,3 @@ Innerhalb von Bereichen können Sie von der Bereichssymbolleiste aus auf die Fun
 Extrahieren von SOM-Ausdrücken mithilfe der Bereichssymbolleiste
 
 Einige in [GuideBridge](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html) aufgeführten APIs verwenden den SOM-Ausdruck eines Elements. Um beispielsweise ein bestimmtes Feld in einem adaptiven Formular hervorzuheben, muss der entsprechende SOM-Ausdruck an die `getFocus`-API in `guideBridge` übergeben werden.
-
