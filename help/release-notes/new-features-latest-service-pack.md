@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5cf27977d3d94d39c9dfec51eb50778048f76dfd
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
 source-wordcount: '2482'
 ht-degree: 6%
@@ -17,8 +17,6 @@ ht-degree: 6%
 Die Adobe Experience Manager 6.5 Service Packs bieten in vierteljährlichen Abständen neue Funktionen, kundenspezifische Verbesserungen und Verbesserungen bei Leistung, Stabilität und Sicherheit. Die vierteljährliche Verfügbarkeit erleichtert den Zugriff auf neue Funktionen und Innovationen.
 
 In diesem Artikel werden die Funktionen des aktuellen 6.5 Service Packs, die [wichtigsten Funktionen der vorherigen 6.5 Service Packs](#key-features-previous-service-packs)und einige der [wichtigsten Versionen seit Experience Manager 6.5.5.0](#key-releases-since-last-sp) erläutert.
-
->[!VIDEO](https://video.tv.adobe.com/v/39867)
 
 ## Adobe [!DNL Experience Manager] Sites {#aem-sites}
 
@@ -305,7 +303,7 @@ Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus ei
 
 Zwischen dem 04. Juni 2020 und dem 03. September 2020 veröffentlichte die Adobe zusätzlich zu den Service Packs und kumulativen Fixpaketen folgende Inhalte:
 
-* [Das Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) steht zum Herunterladen von Experience Manager Service Packs, kumulativen Fix Packs, Hotfixes und Feature Packs zur Verfügung.
+* [Das Softwareverteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) steht zum Herunterladen von Experience Manager Service Packs, kumulativen Fix Packs, Hotfixes und Feature Packs zur Verfügung.
 
 * [!DNL Adobe Experience Manager as a cloud service] [2020.7.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) und [2020.8.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
