@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74606bc3e9c768c3d94b7d05c722980f29e20e0e
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
-source-wordcount: '4418'
+source-wordcount: '4458'
 ht-degree: 7%
 
 ---
@@ -185,7 +185,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * In der Ansicht der Karte, wenn ein Workflow (für ein Asset in einem Ordner) ausgeführt oder ausstehend ist, wird die Seite neu geladen, bis der Workflow abgeschlossen oder beendet ist. Daher können Autoren nicht an den Assets im Ordner arbeiten, für die sie einen Bildlauf nach unten durchführen müssen (NPR-33986).
 
-* Wenn der Benutzer ein veröffentlichtes Asset an einen neuen Speicherort verschiebt, wird das Asset erneut veröffentlicht, auch wenn die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;deaktiviert ist. Dies führt dazu, dass sich viele verwaiste Assets in der Veröffentlichungsinstanz befinden. Das Standardverhalten ist jedoch, dass beim Verschieben eines Vorgangs für ein veröffentlichtes Asset die Veröffentlichung automatisch rückgängig gemacht wird. Dieses Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;auswählt (NPR-33934).
+* Wenn der Benutzer ein veröffentlichtes Asset an einen neuen Speicherort verschiebt, wird das Asset erneut veröffentlicht, auch wenn die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;deaktiviert ist. Dies führt dazu, dass sich viele verwaiste Assets in der Veröffentlichungsinstanz befinden. Das Standardverhalten ist jedoch, dass beim Verschieben eines Vorgangs für ein veröffentlichtes Asset die Veröffentlichung automatisch rückgängig gemacht wird. Dieses Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Veröffentlichung] wiederholen&quot;auswählt (NPR-33934).
 
 * Die Seite [!UICONTROL &quot;Assets] verschieben&quot;für Assets in Sammlungen lädt nicht den gesamten HTML-Inhalt, z. B. die Option &quot; [!UICONTROL Anpassen/Neu veröffentlichen] &quot;. Daher können die Verwender den Verschiebevorgang nicht abschließen (NPR-33860).
 
@@ -434,7 +434,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-Das UberJar für Experience Manager 6.5.6.0 ist im Repository [Adobe Public Maven verfügbar](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/).
+Das UberJar für Experience Manager 6.5.6.0 ist im [Maven Central-Repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/)verfügbar.
 
 Um UberJar in einem Maven-Projekt zu verwenden, [verwenden Sie UberJar](/help/sites-developing/ht-projects-maven.md) und fügen Sie die folgende Abhängigkeit in Ihr Projekt-POM ein:
 
@@ -446,6 +446,10 @@ Um UberJar in einem Maven-Projekt zu verwenden, [verwenden Sie UberJar](/help/si
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>Ab dieser Version sind UberJar und andere zugehörige Artefakte im Maven Central Repository anstelle der Adobe Public Maven Repository (repo.adobe.com) verfügbar. Die UberJar-Hauptdatei wird in `uber-jar-<version>.jar`. Daher gibt es für das `classifier`Tag keine Werte `apis` mit `dependency` dem Wert.
 
 ## Veraltete Funktionen {#removed-deprecated-features}
 
