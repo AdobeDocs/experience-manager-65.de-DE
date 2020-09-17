@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
 workflow-type: tm+mt
-source-wordcount: '4458'
+source-wordcount: '4402'
 ht-degree: 7%
 
 ---
@@ -104,39 +104,39 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 ### [!DNL Assets] {#assets-6560}
 
-**Verbesserungen der Barrierefreiheit in Experience Manager Assets**
+**Barrierefreiheitsverbesserungen in Experience Manager Assets**
 
-* Die Benutzer können nun auf die Optionen der interaktiven Benutzeroberfläche in der [!UICONTROL Liste der Assets mit den Tastenkombinationen &quot;Referenzen] &quot;zugreifen und sie fokussieren (NPR-34115).
+* Mithilfe der Tastenkombinationen können Benutzer jetzt auf die interaktiven Benutzeroberflächenoptionen in der [!UICONTROL References] -Liste der Assets zugreifen und sich darauf konzentrieren (NPR-34115).
 
-* Bildschirmlesehilfen geben nun die Optionen im Suchfilter als erweiterbare Akkordeons an (NPR-34104).
+* Bildschirmlesehilfen geben nun die beabsichtigte Aktion der Prädikate auf der Suchseite an (NPR-34104).
 
 * Die Suchseite und die Suchergebnisseite haben jetzt informativere Titel für ein besseres Verständnis der Benutzer von Bildschirmlesehilfen (NPR-34093).
 
-* Bildschirmlesehilfen geben jetzt die Optionen zum Löschen der ausgewählten Tags auf der Registerkarte &quot; [!UICONTROL Einfach] &quot;der Schaltflächen &quot;Asset- [!UICONTROL Eigenschaften] &quot;an, um die ausgewählten Tags zu löschen (NPR-33972).
+* Bildschirmlesehilfen geben jetzt die Optionen zum Löschen der ausgewählten Tags auf der [!UICONTROL Registerkarte &quot;Einfach] &quot;der Seite &quot;Asset- [!UICONTROL Eigenschaften] &quot;an (NPR-33972).
 
-* Die Elemente in jeder Zeile in der Ansicht der Liste werden nun korrekt als Elemente derselben Zeile von Bildschirmlesehilfen (NPR-33932) angekündigt.
+* Die Elemente in jeder Zeile in der Ansicht der Liste werden nun als Elemente derselben Zeile von Bildschirmlesehilfen (NPR-33932) angekündigt.
 
-* Der Benutzerfokus beim Navigieren mit der Tabulatortaste wechselt jetzt korrekt zur Schließoption in der Vorschau der Version (NPR-33863).
+* Der Benutzerfokus beim Navigieren mit der `Tab` Taste wechselt jetzt zur Schließoption in der Vorschau der Version (NPR-33863).
 
-* Der Benutzerfokus wird nun korrekt auf das Suchsymbol verschoben, nachdem Omniture Search geschlossen wurde (NPR-33705).
+* Der Benutzerfokus wird nun auf das Suchsymbol verschoben, nachdem Omniture Search geschlossen wurde (NPR-33705).
 
-* Die Optionen der umsetzbaren Benutzeroberfläche haben jetzt einen auffälligeren visuellen Fokus mit einem erhöhten Kontrast, wenn sie mithilfe von Tastaturbefehlen fokussiert werden. Sehbehinderte Keyboard-Benutzer können nun die Fokusbereiche unterscheiden (NPR-33542).
+* Die Optionen der umsetzbaren Benutzeroberfläche haben jetzt einen auffälligeren visuellen Fokus und einen verbesserten Kontrast bei der Navigation mit den Tasten der Tastatur. Die Tastaturbenutzer können die fokussierten Bereiche identifizieren (NPR-33542).
 
-* Die Drag-Funktion mit der Tastatur funktioniert jetzt im [!UICONTROL Metadata Schema Editor] im Durchsuchenmodus der Bildschirmlesehilfe korrekt (CQ-4296326).
+* Die Drag-Funktion mit der Tastatur funktioniert jetzt im [!UICONTROL Metadata Schema Editor] im Durchsuchenmodus der Bildschirmlesehilfe (CQ-4296326).
 
 * Wenn Sie im Dialogfeld für die Freigabe von Links im Durchsuchen-Modus navigieren,
 
-   * erzählen Sie die Tabelleninformationen nicht, sobald das Dialogfeld geladen wurde.
+   * Die Tabelleninformationen werden nicht kommentiert, sobald das Dialogfeld geladen wurde.
 
-   * Sie können zu allen aufgelisteten automatischen Empfehlungen navigieren.
+   * Kann zu allen aufgelisteten automatischen Empfehlungen navigieren.
 
-   * Beschreiben Sie jetzt die angezeigten automatischen Vorschläge für die [!UICONTROL Hinzufügen E-Mail-Adresse/Suche] (CQ-4294232).
+   * Beschreibt die angezeigten automatischen Vorschläge für die [!UICONTROL Hinzufügen E-Mail-Adresse/Suche] (CQ-4294232).
 
-* Die Verwendung der Esc-Taste zum Entfernen der Schnellaktion-Symbole aus der Miniaturansicht-Ansicht entfernt den Tastaturfokus nicht mehr vom zuletzt fokussierten Element (CQ-4293554).
+* Durch die Verwendung der `Esc` Taste zum Entfernen der Schnellaktion-Symbole aus der Ansicht der Karten wird der Tastaturfokus nicht mehr aus dem zuletzt fokussierten Element entfernt (CQ-4293554).
 
-* Bildschirmlesehilfen geben jetzt Textalternativen an, die ihre Funktionalität darstellen, für Symbole (z. B. Chevrons) anstelle ihrer wörtlichen Namen (CQ-4272943).
+* Bei interaktiven Optionen auf der Benutzeroberfläche gibt die Bildschirmlesehilfe jetzt statt der wörtlichen Namen der Symbole ihren Zweck an (CQ-4272943).
 
-* Der Tastaturfokus wechselt jetzt erfolgreich zu [!UICONTROL Flyout]-, [!UICONTROL InlineZoom]-, [!UICONTROL Shoppable_Banner]-, [!UICONTROL Zoom_dark]-, [!UICONTROL Zoom_light]-, ZoomVertical_dark, navigZoomVertical_light   -Optionen bei Verwendung der Tabulatortaste in Asset-DetailsViewerIn dynamischen Medien (Dynamische Medien) CQ-4290605).
+* Der Tastaturfokus wechselt jetzt erfolgreich zu [!UICONTROL Flyout]-, [!UICONTROL InlineZoom]-, [!UICONTROL Shoppable_Banner]-, [!UICONTROL Zoom_dark]-, [!UICONTROL Zoom_light]  [!DNL Dynamic Media] -, ZoomVertical_dark, navigierenVertical_lightDie Optionen zum Verkleinern der vertikalen Tab-Taste beim Verwenden der Tastaturdetails Q-4290605).
 
 * [!UICONTROL Die Option &quot;Speichern und Schließen] &quot;auf der Seite &quot;Asset- [!UICONTROL Eigenschaften] &quot;kann jetzt über die Tastatur aufgerufen werden (NPR-34107).
 
@@ -144,38 +144,35 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Im [!DNL Experience Manager] Kopfzeilenabschnitt werden beim Navigieren im Durchsuchen-Modus jetzt Bildschirmlesehilfen angekündigt,
 
-   * automatisch bearbeitete Vorschläge in [!UICONTROL Typ zur Suche] in Omniture.
+   * Automatisch bearbeitete Vorschläge im [!UICONTROL Typ zur Suche] in Omniture.
 
-   * der Status für [!UICONTROL Lösungsoptionen], [!UICONTROL Hilfe], [!UICONTROL Posteingang] und [!UICONTROL Benutzeroptionen] erweitert oder minimiert.
+   * Der Status für [!UICONTROL Lösungsoptionen], [!UICONTROL Hilfe], [!UICONTROL Posteingang]und [!UICONTROL Benutzeroptionen] wurde erweitert oder reduziert.
 
-   * die Statusmeldung [!UICONTROL zur] Suchhilfe, die angezeigt wird, wenn der Benutzer eine Suchzeichenfolge in das Feld &quot;Hilfe [!UICONTROL suchen&quot;unter der Option &quot;] Hilfe  &quot;eingibt.
+   * Die Statusmeldung zur [!UICONTROL Suchhilfe] , die angezeigt wird, wenn der Benutzer eine Suchzeichenfolge in das Feld Hilfe  suchen unter [!UICONTROL Hilfe] eingibt.
 
    ![Hilfemenü in der Kopfzeile](assets/Help_aem_header.png)
 
-   *Abbildung:[!UICONTROL Hilfe]im[!UICONTROL Menü &quot;Hilfe]&quot;suchen*
+   *Abbildung:[!UICONTROL Suchen Sie nach Hilfe]im[!UICONTROL Menü Hilfe].*
 
-   * die Fehlermeldung, wenn unter der Option &quot; [!UICONTROL Benutzer] &quot;in [!UICONTROL Eigenschaftsvariablen als] Feld eingegeben und der Fokus korrekt auf das Textfeld (NPR-33804) verschoben wird.
+   * Die Fehlermeldung, wenn unter der Option &quot; [!UICONTROL Benutzer] &quot;in das Feld &quot;  Identität annehmen&quot;ein falscher Wert eingegeben wurde und der Fokus korrekt auf das Textfeld verschoben wird (NPR-33804).
 
    ![Benutzermenü in der Kopfzeile](assets/User_aem_header.png)
 
-   *Abbildung:[!UICONTROL Als]Feld im Menü &quot;[!UICONTROL Benutzer]&quot;in der Kopfzeile personalisieren*
+   *Abbildung:[!UICONTROL Stellen Sie sich]als Feld im Menü &quot;[!UICONTROL Benutzer]&quot;in der Kopfzeile vor.*
 
-* Der Benutzer kann den Fokus jetzt mithilfe der Tastaturbefehle innerhalb von:
+* Der Benutzer kann jetzt den Fokus mithilfe der Tastatur in folgenden Bereichen ändern:
 
-   * [!UICONTROL Feld E-Mail-Adresse] suchen/Hinzufügen im Dialogfeld [!UICONTROL Linkfreigabe] .
+   * [!UICONTROL Feld &quot;E-Mail-Adresse] &quot;im Dialogfeld &quot; [!UICONTROL Linkfreigabe] &quot;suchen/Hinzufügen
 
    * [!UICONTROL hinzufügen Feld &quot;Benutzer&quot;oder &quot;Gruppe] &quot;unter &quot; [!UICONTROL Geschlossene Benutzergruppe] &quot;auf der Registerkarte &quot; [!UICONTROL Berechtigungen] &quot;des Ordners [!UICONTROL Eigenschaften] (NPR-34452).
 
 **In Experience Manager Assets behobene Probleme**
 
-[!DNL Adobe Experience Manager] 6.5.6.0 Assets bieten Korrekturen an folgenden Problemen:
+[!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] enthält Korrekturen an folgenden Problemen:
 
-* Die Vorschau von Marketing-Sicherheiten (wie Broschüre, Flyer und Visitenkarte), die mit [!DNL Adobe InDesign] (INDD)-Vorlage erstellt wurden, behält keine Zeilenumbrüche und Absatzbrüche bei (NPR-34268).
+* Bei der Vorschau von Marketing-Sicherheiten (wie Broschüre, Flyer und Visitenkarte), die mit [!DNL Adobe InDesign] Vorlage erstellt wurden, werden keine Zeilenumbrüche und Absatzbrüche angezeigt (NPR-34268).
 
-* Die Extraktion von Text für die hochgeladenen PDF-Dateien funktioniert nicht und die Volltextsuche nach bestimmten Wörtern in einer PDF-Datei funktioniert nicht, um diese PDF-Datei abzurufen (NPR-34164).
-
-   >[!NOTE]
-   >Damit diese Fehlerbehebung funktioniert, müssen Sie die Adobe Experience Manager-Instanz nach der Installation von Service Pack 6.5.6.0 neu starten.
+* Die Extraktion von Text und damit die Volltextsuche für die hochgeladenen PDF-Dateien funktioniert nicht (NPR-34164). Um dies zu beheben, starten Sie die [!DNL sAdobe Experience Manager] Bereitstellung nach der Installation von Service Pack 6 neu.
 
 * In der Zeitleiste mehrseitiger Assets werden Anmerkungen angezeigt, die beim Durchsuchen des Assets in der Timeline-Ansicht auf alle Teilassets angewendet werden, anstatt die Anmerkungen anzuzeigen, die spezifisch für die jeweiligen Teilassets sind (NPR-34100).
 
@@ -205,11 +202,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Beim Erstellen von Regeln für die Dropdown-Liste im [!UICONTROL Ordnermetadaten-Schema-Formular]kann der Benutzer keine Werte aus der Spalte [!UICONTROL Feldauswahl] auswählen (CQ-4297530).
 
-* Die Laufzeitkopie des benutzerdefinierten Assets Workflow-Modells (erstellt in `/var/workflow/models/dam`) wird gelöscht, wenn Sie 6.5 Service Pack 5 oder frühere Versionen auf 6.5 GA (NPR-34532) installieren.
-
-   >[!NOTE]
-   >
-   >Beim Aktualisieren auf das [!DNL Experience Manager] 6.5 Service Pack 6 wird Ihre Laufzeitkopie nicht abgerufen, wenn Ihre Laufzeitkopie bei der Installation von [!DNL Experience Manager] 6.5 Service Pack 5 oder früheren Versionen auf 6.5 GA gelöscht wird. Um die Laufzeitkopie abzurufen, synchronisieren Sie die Entwurfszeitkopie des Workflow-Modells mit der Laufzeitkopie mit der HTTP-API:
+* Die Laufzeitkopie des benutzerdefinierten Assets Workflow-Modells (erstellt in `/var/workflow/models/dam`) wird gelöscht, wenn Sie [!DNL Experience Manager] 6.5 Service Pack 5 oder eine frühere Version von [!DNL Experience Manager] 6.5 (NPR-34532) installieren. Um die Laufzeitkopie abzurufen, synchronisieren Sie die Entwurfskopie des Workflow-Modells mit der Laufzeitkopie mit der HTTP-API:
    `<designModelPath>/jcr:content.generate.json`.
 
 **Behobene Probleme in dynamischen Medien**
@@ -410,7 +403,7 @@ B. Verwenden Sie die [HTTP-API aus Package Manager](https://helpx.adobe.com/de/e
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or higher (Use Web Console: `/system/console/bundles`).
+1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` ist Version 1.22.3 oder höher (Web-Konsole verwenden: `/system/console/bundles`).
 
 Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
@@ -453,7 +446,7 @@ Um UberJar in einem Maven-Projekt zu verwenden, [verwenden Sie UberJar](/help/si
 
 ## Veraltete Funktionen {#removed-deprecated-features}
 
-In diesem Abschnitt werden Funktionen Liste, die mit AEM 6.5.6.0 als veraltet gekennzeichnet wurden. Funktionen, die in einer zukünftigen Version entfernt werden sollen, werden zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine alternative Option verwendet werden muss.
+In diesem Abschnitt werden Funktionen Liste, die mit Experience Manager 6.5.6.0 als veraltet gekennzeichnet wurden. Funktionen, die in einer zukünftigen Version entfernt werden sollen, werden zuerst auf &quot;Veraltet&quot;eingestellt, wobei eine alternative Option verwendet werden muss.
 
 Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität in ihrer aktuellen Bereitstellung nutzen, und Pläne zur Änderung ihrer Implementierung zu erstellen, um die alternative Option zu verwenden.
 
@@ -464,7 +457,7 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 
 ## Bekannte Probleme {#known-issues}
 
-* Wenn Sie [!DNL Experience Manager] 6.5 Service Pack 5 oder frühere Versionen auf 6.5 GA installieren, wird die Laufzeitkopie des benutzerdefinierten Assets Workflow-Modells (erstellt in `/var/workflow/models/dam`) gelöscht.
+* Wenn Sie [!DNL Experience Manager] 6.5 Service Pack 5 oder ein vorheriges Service Pack auf [!DNL Experience Manager] 6.5 installieren, wird die Laufzeitkopie des benutzerdefinierten Assets Workflow-Modells (erstellt in `/var/workflow/models/dam`) gelöscht.
 Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe die Synchronisierung der Entwurfszeitkopie des benutzerdefinierten Workflow-Modells mit der Laufzeitkopie mithilfe der HTTP-API:
    `<designModelPath>/jcr:content.generate.json`.
 
