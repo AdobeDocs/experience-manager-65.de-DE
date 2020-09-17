@@ -1,11 +1,11 @@
 ---
 title: 'Konfigurieren der Rich-Text-Editor-Plug-ins    '
-description: Learn to configure the Adobe Experience Manager Rich Text Editor plug-ins to enable individual functionalities.
+description: Erfahren Sie, wie Sie die Adobe Experience Manager Rich Text Editor-Plugins konfigurieren, um individuelle Funktionen zu aktivieren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4398'
 ht-degree: 95%
 
 ---
@@ -607,16 +607,16 @@ Wenn das spellcheck-Plug-in aktiviert wird, verwendet der RTE Wörterbücher fü
 >[!NOTE]
 The message `Spell checking failed` is seen if a check is attempted for a language that is not installed. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden README-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
-A standard AEM installation includes the dictionaries for American English (`en_us`) and British English (`en_gb`). To add more dictionaries, follow these steps.
+Eine AEM Installation beinhaltet die Wörterbücher für Englisch (`en_us`) und Englisch (`en_gb`). Gehen Sie wie folgt vor, um weitere Wörterbücher hinzuzufügen.
 
 1. Navigieren Sie zur Seite [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
 1. Führen Sie einen der folgenden Schritte aus, um ein Wörterbuch Ihrer Sprache zu suchen:
 
    * Suchen Sie nach einem Wörterbuch Ihrer Sprache. Suchen Sie auf der Wörterbuchseite den Link zur ursprünglichen Quelle oder zur Autorenseite. Suchen Sie die Wörterbuchdateien für v2.x auf einer solchen Seite.
-   * Search for v2.x dictionary files at [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+   * Suchen Sie nach Wörterbuchdateien der Version 2.x unter [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. Download the archive with the spelling definitions. Entpacken Sie den Inhalt des Archivs in Ihrem Dateisystem.
+1. Laden Sie das Archiv mit den Rechtschreibdefinitionen herunter. Entpacken Sie den Inhalt des Archivs in Ihrem Dateisystem.
 
    >[!CAUTION]
    Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da die Wörterbücher jetzt Archivdateien sind, ist es ratsam, eine vollständige Prüfung nach dem Herunterladen durchzuführen.
@@ -625,8 +625,8 @@ A standard AEM installation includes the dictionaries for American English (`en_
 1. Laden Sie die *.aff- und die *.dic-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE checks the spelling of words and highlights the misspelled words.
-If you incorporate any change that the spell checker suggests, the state of the text changes and misspelled words are no longer highlighted. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
+Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE überprüft die Rechtschreibung von Wörtern und hebt die falsch geschriebenen Wörter hervor.
+Wenn Sie Änderungen einbeziehen, die die Rechtschreibprüfung vorschlägt, werden die Textänderungen und falsch geschriebenen Wörter nicht mehr hervorgehoben. Tippen/klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“{#undohistory}
 
@@ -731,7 +731,7 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
       * **Name** `cssExternal`
       * **Typ** `String`
       * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
-   * Array of valid **protocols** (including `https://`, `https://`, `file://`, and `mailto:` amongst others)
+   * Array mit gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://`und `mailto:`.
 
       * **Name** `protocols`
       * **Typ** `String[]`
