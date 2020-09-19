@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 65647a5e7c30991e06dd43125159547490fdddef
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2064'
 ht-degree: 37%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 37%
 
 Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die Interaktive Kommunikation in der Agent-Benutzeroberfläche öffnen und eine Empfänger-spezifische Kopie erstellen, indem er Daten eingibt und Inhalte und Anlagen verwaltet. Schließlich kann der Agent die interaktive Kommunikation an einen Nachbearbeitungsprozess senden.
 
@@ -366,7 +366,7 @@ Im Folgenden finden Sie ein Beispiel für die `pom.xml` Datei, die Teil der Impl
         <dependency>
             <groupId>com.adobe.aemfd</groupId>
             <artifactId>aemfd-client-sdk</artifactId>
-            <version>6.0.122</version>
+            <version>6.0.146</version>
         </dependency>
     </dependencies>
 
@@ -443,4 +443,4 @@ Im Folgenden finden Sie ein Beispiel für die `pom.xml` Datei, die Teil der Impl
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie die `aemfd-client-sdk` Abhängigkeit in der `pom.xml` Datei auf 6.0.122 aktualisieren.
+>Stellen Sie sicher, dass Sie die `aemfd-client-sdk` Abhängigkeit auf 6.0.146 oder eine spätere Version in der `pom.xml` Datei aktualisieren.
