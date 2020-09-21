@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Service Pack-Versionshinwei
 description: Versionshinweise für [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
+source-git-commit: 5db4dd7ccc7d722f0503b22fdd5ff9e5508be4ea
 workflow-type: tm+mt
-source-wordcount: '11438'
+source-wordcount: '11482'
 ht-degree: 26%
 
 ---
@@ -74,6 +74,10 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * Anonyme Benutzer können auf Funktionen der CRXDE Lite zugreifen (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
+
+>[!IMPORTANT]
+>
+>Windows-Benutzern [!DNL Experience Manager desktop app] wird empfohlen, auf die [Desktop-App-Version 2.0.3.2](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) zu aktualisieren, um auf [!DNL Adobe Experience Manager 6.5.5.0] Instanz auf das DAM-Repository zuzugreifen. Da Probleme beim Zugriff auf das DAM-Repository auf [!DNL Adobe Experience Manager] 6.5.5.0-Instanz mit der Desktop-App Version 2.0.2 auftreten können.
 
 **Barrierefreiheitsverbesserungen in Experience Manager Assets**
 
@@ -259,7 +263,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 * Beim Exportieren [!DNL Experience Fragments] mit Adobe I/O werden Metadaten wie &quot;Quellprodukt&quot;nicht nach Adobe Target exportiert (NPR-32159).
 * Autorisierte IMS-Benutzer in der lokalen Experience Manager-Administratorgruppe können keine IMS-Konfigurationen erstellen oder ändern (NPR-33045).
 * Adobe Startkonfigurationsseite zeigt nicht alle Datensätze an (NPR-33011).
-* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
+* Benutzer in der Gruppe &quot;Inhaltsersteller&quot;können die Eigenschaften einer Adobe Target-Komponente aufgrund eines JavaScript-Fehlers (NPR-32996) nicht bearbeiten.
 * Site-übergreifende Skripterstellung für JSON (NPR-32744).
 
 ### Übersetzungsprojekte {#translation-6550}
