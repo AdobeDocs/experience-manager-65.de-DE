@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4f6b2bbb58f7f18798eb01a6c8f2cef4b02063a3
+source-git-commit: 4da9481dbd74a8cecf13c51b78c94abc4d48332e
 workflow-type: tm+mt
-source-wordcount: '4413'
+source-wordcount: '4485'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,11 @@ ht-degree: 7%
 | Version | 6.5.6.0 |
 | Typ | Service Pack-Version |
 | Datum            | 03. September 2020 |
-| Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip) |
+| Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
+
+>[!NOTE]
+>
+>Eine aktualisierte Version von AEM 6.5 Service Pack 6 ist verfügbar. Wenn Sie bereits eine ältere Version von Service Pack 6 installiert haben, aktualisieren Sie auf die neueste verfügbare Version.
 
 ## Inhalt von Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -152,9 +156,9 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
    ![Hilfemenü in der Kopfzeile](assets/Help_aem_header.png)
 
-   *Abbildung:[!UICONTROL Suchen Sie nach Hilfe]im[!UICONTROL Menü Hilfe].*
+   *Abbildung:[!UICONTROL Suchen Sie nach Hilfe]im Menü[!UICONTROL Hilfe].*
 
-   * Die Fehlermeldung, wenn unter der Option &quot; [!UICONTROL Benutzer] &quot;in das Feld &quot;  Identität annehmen&quot;ein falscher Wert eingegeben wurde und der Fokus korrekt auf das Textfeld verschoben wird (NPR-33804).
+   * Die Fehlermeldung, wenn unter der Option &quot; [!UICONTROL Benutzer] &quot;in das Feld &quot;  Identität annehmen&quot;ein falscher Wert eingegeben wurde und der Fokus korrekt auf das Textfeld (NPR-33804) verschoben wird.
 
    ![Benutzermenü in der Kopfzeile](assets/User_aem_header.png)
 
@@ -377,7 +381,7 @@ Informationen zu Sicherheitsaktualisierungen finden Sie auf der Seite [zu Sicher
 
 Führen Sie die folgenden Schritte aus, um das Service Pack auf einer vorhandenen Adobe Experience Manager 6.5-Instanz zu installieren:
 
-1. Laden Sie das Service Pack von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip)herunter.
+1. Laden Sie das Service Pack von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip)herunter.
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. Informationen zur Verwendung finden Sie unter [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
@@ -458,6 +462,17 @@ Kunden wird empfohlen, zu überprüfen, ob sie die Funktion oder Funktionalität
 | Connectoren | Die Adobe JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013 wird für AEM 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
+
+* Wenn die Überprüfung des Sicherheitsstatus nicht funktioniert und das System die folgende Fehlermeldung anzeigt:
+   `message: Could not verify users and could not test system account logins.`
+Führen Sie zur Behebung dieses Problems folgende Schritte durch:
+   1. Go to https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
+
+   1. Suchen Sie nach `hc.impl`.
+
+   1. Klicken Sie in [!UICONTROL Dienstzuordnungen]auf `+` und geben Sie an `com.adobe.granite.repository.hc.impl=[user-reader-service]`.
+
+   1. Klicken Sie auf [!UICONTROL Speichern], um die Konfiguration zu speichern.
 
 * Wenn Sie [!DNL Experience Manager] 6.5 Service Pack 5 oder ein vorheriges Service Pack auf [!DNL Experience Manager] 6.5 installieren, wird die Laufzeitkopie des benutzerdefinierten Assets Workflow-Modells (erstellt in `/var/workflow/models/dam`) gelöscht.
 Um Ihre Laufzeitkopie abzurufen, empfiehlt Adobe die Synchronisierung der Entwurfszeitkopie des benutzerdefinierten Workflow-Modells mit der Laufzeitkopie mithilfe der HTTP-API:
