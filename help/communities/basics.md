@@ -1,8 +1,8 @@
 ---
 title: Grundlagen zu Communities-Komponenten
 seo-title: Grundlagen zu Communities-Komponenten
-description: Funktionen von Communities auf AEM-Sites im Bearbeitungsmodus Hinzufügen und Komponenten konfigurieren
-seo-description: Funktionen von Communities auf AEM-Sites im Bearbeitungsmodus Hinzufügen und Komponenten konfigurieren
+description: Funktionen von Communities AEM Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
+seo-description: Funktionen von Communities AEM Sites im Bearbeitungsmodus und Konfigurieren von Komponenten
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 61%
@@ -22,7 +22,7 @@ ht-degree: 61%
 
 ## Überblick {#overview}
 
-Im Autorenabschnitt der Dokumentation finden Sie Informationen zum Hinzufügen von Communities-Funktionen zu AEM-Sites im Bearbeitungsmodus sowie eine Beschreibung der Komponentenkonfigurationen.
+Im Autorenabschnitt der Dokumentation finden Sie Informationen zum Hinzufügen von Communities-Funktionen zu AEM Sites im Bearbeitungsmodus sowie eine Beschreibung der Komponentenkonfigurationen.
 
 Components may be explored using an AEM instance and the interactive [Community Components guide](components-guide.md).
 
@@ -47,11 +47,11 @@ For details, see [Configuring Components in Design Mode](../../help/sites-author
 
 Im Folgenden finden Sie Bilder zur Auswahl einiger Communities-Komponenten und zur Anzeige im Komponenten-Browser:
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![component-design](assets/component-design.png)
 
 Die ausgewählten Komponenten werden jetzt im Komponenten-Browser angezeigt:
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![component-design1](assets/component-design1.png)
 
 ## Erforderliche Clientlibs {#required-clientlibs}
 
@@ -61,11 +61,11 @@ Wird eine Communities-Komponente einer Seite hinzugefügt und führt dies zur Au
 
 ### Example: Initially placed reviews without client libraries... {#example-initially-placed-reviews-without-client-libraries}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![clientlibs1](assets/clientlibs1.png)
 
 ### ... And with client libraries {#and-with-client-libraries}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![clientlibs2](assets/clientlibs2.png)
 
 ## Tagging {#tagging}
 
