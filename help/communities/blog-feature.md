@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 48%
+source-wordcount: '1676'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ Die Blogfunktion bietet Folgendes:
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
-* Hinzufügen der Blog-Funktion zu einer AEM-Site
+* Hinzufügen der Blog-Funktion zu einer AEM Site
 * Konfigurationseinstellungen für Blog-Komponenten
 
 >[!NOTE]
@@ -61,19 +61,15 @@ und ziehen Sie die Elemente an die jeweilige Position auf der Seite, auf der das
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear :
+When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear:
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-Und wie das `Blog Sidebar` aussehen wird:
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### Konfigurieren eines Blogs {#configuring-blog}
 
 Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![konfigurieren](assets/configure-new.png)
 
 ![Blog-Einstellungen](assets/blog-configure.png)
 
@@ -103,7 +99,7 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Zugelassene privilegierte Mitglieder**
 
-   Hinzufügen die privilegierten Mitglieder, die Inhalte erstellen dürfen.
+   hinzufügen die privilegierten Mitglieder, die Inhalte erstellen dürfen.
 
 * **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
 
@@ -125,7 +121,7 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 
 * **Themen pro Seite**
 
-   Definiert die Anzahl der Blog-Einträge/Kommentare pro Seite. Der Standardwert lautet 10.
+   Definiert die Anzahl der Blog-Einträge/Kommentare pro Seite. Standard: 10.
 
 * **Moderiert**
 
@@ -307,7 +303,7 @@ Die Blogartikel erscheinen auf der entsprechenden Registerkarte („Veröffentli
 
 Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er [Moderationsaufgaben](/help/communities/moderate-ugc.md) für alle Blogartikel und Komponenten des Blogs durchführen (je nach Berechtigungen durch die Konfiguration der Komponente).
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![moderator-homepage](assets/moderator-homepage.png)
 
 #### Mitglieder {#members}
 
@@ -322,15 +318,15 @@ Insbesondere können sie
 * Löschen Sie einen eigenen Blog-Artikel oder -Kommentar
 * Markieren von Blog-Artikeln oder -Kommentaren anderer Benutzer
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![member-homepage](assets/member-homepage.png)
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### Anonym {#anonymous}
 
 Nicht angemeldete Besucher können veröffentlichte Blogartikel und Kommentare lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Artikel oder Kommentare hinzufügen und keine Artikel und Kommentare anderer Benutzer kennzeichnen.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![anonymous-user-Ansicht](assets/anonymous-user-view.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
