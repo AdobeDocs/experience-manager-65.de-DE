@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '9368'
-ht-degree: 63%
+source-wordcount: '9410'
+ht-degree: 62%
 
 ---
 
@@ -538,25 +538,30 @@ Weitere Informationen zum Erstellen und Anzeigen von Teilassets finden Sie unter
 
 Zum Löschen von Assets muss ein Benutzer über die entsprechenden Berechtigungen verfügen `dam/asset`. Wenn Sie nur eine Änderungsberechtigung haben, haben Sie nur die Möglichkeit, die Asset-Metadaten zu bearbeiten und Notizen zum Asset hinzuzufügen. Sie können jedoch das Asset oder dessen Metadaten nicht löschen.
 
-Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Um Benutzer daran zu hindern, referenzierte Assets zu löschen und fehlerhafte Links zu hinterlassen, deaktivieren Sie die Option zum erzwungenen Löschen mithilfe einer Überlagerung.
+Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Um zu verhindern, dass Benutzer referenzierte Assets löschen und fehlerhafte Links beibehalten, deaktivieren Sie die Option zum erzwungenen Löschen mithilfe einer Überlagerung.
 
-1. Navigieren Sie zum Speicherort der Assets, die Sie löschen möchten.
+So löschen Sie ein Asset oder einen Ordner mit einem Asset:
 
-1. Select the asset, and click **[!UICONTROL Delete]** ![Delete option](assets/do-not-localize/deleteoutline.png) from the toolbar.
+1. Navigieren Sie zum Speicherort des Assets oder des Ordners, den Sie löschen möchten.
 
-1. Wählen Sie im Bestätigungsdialogfeld eine der folgenden Optionen aus:
+1. Wählen Sie das Asset oder den Ordner aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Löschen]** &quot; ![](assets/do-not-localize/deleteoutline.png) .
 
-   * **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen.
-   * **[!UICONTROL Löschen]**, um die Aktion zu bestätigen:
+   Nachdem Sie den Löschvorgang bestätigt haben:
 
-      * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
-      * Wenn die Seite Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **Es wird auf ein oder mehrere Asset(s) verwiesen.** Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+   * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
 
+   * If the asset has references, an error-message informs you that **One or more assets are referenced**. You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
    >[!NOTE]
    >
    >* Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe einer Überlagerung, um zu verhindern, dass Benutzer referenzierte Assets löschen und fehlerhafte Links hinterlassen.
    >* Es ist möglich, einen *Ordner* zu löschen, der ausgecheckte Asset-Dateien enthält. Bevor Sie einen Ordner löschen, stellen Sie sicher, dass keine digitalen Assets von Benutzern ausgecheckt werden.
 
+
+>[!NOTE]
+>
+>Wenn Sie einen Ordner mit der oben genannten Methode aus der Benutzeroberfläche löschen, werden auch die zugehörigen Benutzergruppen gelöscht.
+>
+>Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe der `clean` JMX-Methode in Ihrer Autoreninstanz (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`) aus dem Repository bereinigt werden.
 
 ## Herunterladen von Assets {#downloading-assets}
 
