@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '9370'
+source-wordcount: '9368'
 ht-degree: 63%
 
 ---
@@ -94,7 +94,7 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 >
 >Der Standardwert beim Auslösen des Chunk-Uploads ist 500 MB und die Größe des Chunk-Formats 50 MB. Wenn Sie die Token-Konfiguration [für die](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) Apache Jackrabbit-Oak ändern, um festzulegen, dass der Wert kleiner als die für das Hochladen eines Assets benötigte Zeit sein `timeout configuration` soll, können Sie während des Hochladevorgangs des Assets eine Zeitüberschreitung der Sitzung ausführen. Sie müssen daher die Einstellung `chunkUploadMinFileSize` &quot;und&quot;ändern, `chunksize`damit jede Wortgruppe die Sitzung aktualisiert.
 >
->Angesichts der Werte für Ablauf- und Zeitüberschreitung, Latenz, Bandbreite und erwartete gleichzeitige Uploads sollte der höchste Wert ausgewählt werden, mit dem Sie sicherstellen können, dass die folgenden beiden Werte erfüllt werden:
+>Angesichts der Werte für Ablauf- und Zeitüberschreitung, Latenz, Bandbreite und erwartete gleichzeitige Uploads wird der höchste Wert gewählt, mit dem Sie Folgendes sicherstellen können:
 >
 >* Um sicherzustellen, dass das Hochladen von Dateien in Textbausteinen für Dateien aktiviert ist, deren Größe den Ablauf der Berechtigung zur Folge haben kann, während der Hochladevorgang läuft.
    >
