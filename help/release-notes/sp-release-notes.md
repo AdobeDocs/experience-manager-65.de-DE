@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4da9481dbd74a8cecf13c51b78c94abc4d48332e
+source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4495'
 ht-degree: 7%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 7%
 | Typ | Service Pack-Version |
 | Datum            | 03. September 2020 |
 | Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
-
->[!NOTE]
->
->Eine aktualisierte Version von AEM 6.5 Service Pack 6 ist verfügbar. Wenn Sie bereits eine ältere Version von Service Pack 6 installiert haben, aktualisieren Sie auf die neueste verfügbare Version.
 
 ## Inhalt von Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -128,7 +124,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Die Drag-Funktion mit der Tastatur funktioniert jetzt im [!UICONTROL Metadata Schema Editor] im Durchsuchenmodus der Bildschirmlesehilfe (CQ-4296326).
 
-* Wenn Sie im Dialogfeld für die Freigabe von Links im Durchsuchen-Modus navigieren,
+* Wenn Sie im Dialogfeld &quot;Linkfreigabe&quot;im Durchsuchen-Modus navigieren, wird eine Bildschirmlesehilfe,
 
    * Die Tabelleninformationen werden nicht kommentiert, sobald das Dialogfeld geladen wurde.
 
@@ -156,7 +152,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
    ![Hilfemenü in der Kopfzeile](assets/Help_aem_header.png)
 
-   *Abbildung:[!UICONTROL Suchen Sie nach Hilfe]im Menü[!UICONTROL Hilfe].*
+   *Abbildung:[!UICONTROL Suchen Sie nach Hilfe]im[!UICONTROL Menü Hilfe].*
 
    * Die Fehlermeldung, wenn unter der Option &quot; [!UICONTROL Benutzer] &quot;in das Feld &quot;  Identität annehmen&quot;ein falscher Wert eingegeben wurde und der Fokus korrekt auf das Textfeld (NPR-33804) verschoben wird.
 
@@ -188,7 +184,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * In der Ansicht der Karte, wenn ein Workflow (für ein Asset in einem Ordner) ausgeführt oder ausstehend ist, wird die Seite neu geladen, bis der Workflow abgeschlossen oder beendet ist. Daher können Autoren nicht an den Assets im Ordner arbeiten, für die sie einen Bildlauf nach unten durchführen müssen (NPR-33986).
 
-* Wenn der Benutzer ein veröffentlichtes Asset an einen neuen Speicherort verschiebt, wird das Asset erneut veröffentlicht, auch wenn die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;deaktiviert ist. Dies führt dazu, dass sich viele verwaiste Assets in der Veröffentlichungsinstanz befinden. Das Standardverhalten ist jedoch, dass beim Verschieben eines Vorgangs für ein veröffentlichtes Asset die Veröffentlichung automatisch rückgängig gemacht wird. Dieses Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;auswählt (NPR-33934).
+* Wenn der Benutzer ein veröffentlichtes Asset an einen neuen Speicherort verschiebt, wird das Asset erneut veröffentlicht, auch wenn die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;deaktiviert ist. Dies führt dazu, dass sich viele verwaiste Assets in der Veröffentlichungsinstanz befinden. Das Standardverhalten ist jedoch, dass beim Verschieben eines Vorgangs für ein veröffentlichtes Asset die Veröffentlichung automatisch rückgängig gemacht wird. Dieses Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Veröffentlichung] wiederholen&quot;auswählt (NPR-33934).
 
 * Die Seite [!UICONTROL &quot;Assets] verschieben&quot;für Assets in Sammlungen lädt nicht den gesamten HTML-Inhalt, z. B. die Option &quot; [!UICONTROL Anpassen/Neu veröffentlichen] &quot;. Daher können die Verwender den Verschiebevorgang nicht abschließen (NPR-33860).
 
@@ -319,6 +315,8 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Adaptive Formulare verfügen über einige offene Ressourcenauflöser. Dies führt zu Übermittlungsfehlern. Das Problem tritt gelegentlich auf (CQ-4299407).
 
+* Wenn Sie die Feldkonfiguration zum ersten Mal öffnen, wird das Symbol Eigenschaften nicht angezeigt (CQ-4296284).
+
 **Arbeitsablauf**
 
 * Wenn ein Workflow-Genehmiger eine Anlage hochlädt, wird die Anlage in `undefined` (NPR-33699) umbenannt.
@@ -386,6 +384,10 @@ Führen Sie die folgenden Schritte aus, um das Service Pack auf einer vorhandene
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. Informationen zur Verwendung finden Sie unter [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Select the package and click **[!UICONTROL Install]**.
+
+>[!NOTE]
+>
+>Aufgrund eines bekannten Problems ist ein aktualisiertes Service Pack-Paket verfügbar. Es wird empfohlen, das Paket zu installieren.
 
 >[!NOTE]
 >
