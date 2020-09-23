@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2492'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ Sie können jetzt Assets selektiv veröffentlichen oder die Veröffentlichung r�
 
 ### Weitere Verbesserungen in Assets {#other-enhancements-assets-6560}
 
-* Benutzergruppen von privaten Ordnern werden jetzt beim Löschen von privaten Ordnern aus dem Repository entfernt. Durch das Löschen des privaten Ordners wird das Repository verwaister Benutzergruppen bereinigt, die jedes Mal erstellt werden, wenn ein privater Ordner erstellt wird.
+* Benutzergruppen von privaten Ordnern werden jetzt beim Löschen von privaten Ordnern aus dem Repository entfernt. Durch das Löschen des privaten Ordners wird das Repository verwaister Benutzergruppen bereinigt, die jedes Mal erstellt werden, wenn ein privater Ordner erstellt wird. Weitere Informationen finden Sie unter Entfernen von [Benutzergruppen beim Löschen](#group-removal-on-folder-deletion)von Ordnern.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -87,7 +87,7 @@ Sie können den [!DNL Experience Manager Forms] Server jetzt so konfigurieren, d
 
 Wenn ein AcroForm [!DNL Adobe Sign] Text-Tags enthält, werden diese Felder jetzt erkannt und als [!DNL Adobe Sign] Felder im adaptiven Formular dargestellt, die mit [!DNL Automated Forms Conversion service]konvertiert werden. Ein Unterzeichner kann diese Felder beim Unterschreiben des adaptiven Formulars ausfüllen.
 
-### Unterstützung für die Konvertierung farbiger PDF forms in adaptive Formulare {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
 
 Sie können farbige PDF forms [!DNL Automated Forms Conversion service] in adaptive Formulare konvertieren.
 
@@ -303,7 +303,7 @@ Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus ei
 
 Zwischen dem 04. Juni 2020 und dem 03. September 2020 veröffentlichte die Adobe zusätzlich zu den Service Packs und kumulativen Fixpaketen folgende Inhalte:
 
-* [Das Softwareverteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) steht zum Herunterladen von Experience Manager Service Packs, kumulativen Fix Packs, Hotfixes und Feature Packs zur Verfügung.
+* [Das Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) steht zum Herunterladen von Experience Manager Service Packs, kumulativen Fix Packs, Hotfixes und Feature Packs zur Verfügung.
 
 * [!DNL Adobe Experience Manager as a cloud service] [2020.7.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) und [2020.8.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
