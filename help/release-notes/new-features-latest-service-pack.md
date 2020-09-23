@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2480'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ Sie können jetzt Assets selektiv veröffentlichen oder die Veröffentlichung r�
 
 ### Weitere Verbesserungen in Assets {#other-enhancements-assets-6560}
 
-* Benutzergruppen von privaten Ordnern werden jetzt beim Löschen von privaten Ordnern aus dem Repository entfernt. Durch das Löschen des privaten Ordners wird das Repository verwaister Benutzergruppen bereinigt, die jedes Mal erstellt werden, wenn ein privater Ordner erstellt wird. Weitere Informationen finden Sie unter Entfernen von [Benutzergruppen beim Löschen](#group-removal-on-folder-deletion)von Ordnern.
+* Benutzergruppen, die Ordnern zugeordnet sind (privat und nicht privat), werden nun beim [Löschen dieser Ordner](/help/assets/private-folder.md#delete-private-folder)aus dem Repository entfernt. Vorhandene redundante, verwaiste, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe von JMX aus dem Repository bereinigt werden.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -303,7 +303,7 @@ Sie können die Stapel-API verwenden, um mehrere interaktive Mitteilungen aus ei
 
 Zwischen dem 04. Juni 2020 und dem 03. September 2020 veröffentlichte die Adobe zusätzlich zu den Service Packs und kumulativen Fixpaketen folgende Inhalte:
 
-* [Das Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) steht zum Herunterladen von Experience Manager Service Packs, kumulativen Fix Packs, Hotfixes und Feature Packs zur Verfügung.
+* [Das Softwareverteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) steht zum Herunterladen von Experience Manager Service Packs, kumulativen Fix Packs, Hotfixes und Feature Packs zur Verfügung.
 
 * [!DNL Adobe Experience Manager as a cloud service] [2020.7.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) und [2020.8.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
