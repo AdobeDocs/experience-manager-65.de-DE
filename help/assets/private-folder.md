@@ -3,10 +3,10 @@ title: Privater Ordner in [!DNL Adobe Experience Manager Assets]
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 23%
+source-wordcount: '641'
+ht-degree: 19%
 
 ---
 
@@ -67,26 +67,30 @@ So erstellen Sie einen privaten Ordner und geben ihn frei:
 
 >[!NOTE]
 >
->Zum Erstellen eines privaten Ordners benötigen Sie die Zugriffsrechte zum Lesen und Bearbeiten von ACL für den übergeordneten Ordner, unter dem Sie einen privaten Ordner erstellen möchten. If you are not an administrator, these permissions are not enabled for you by default on `/content/dam`. In diesem Fall müssen Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe erhalten, bevor Sie versuchen, private Ordner zu erstellen oder Ordnereinstellungen anzuzeigen.
+>To create a private folder, you require Read and Modify [access control permissions](/help/sites-administering/security.md#permissions-in-aem) on the parent folder under which you want to create a private folder. If you are not an administrator, these permissions are not enabled for you by default on `/content/dam`. In diesem Fall sollten Sie zunächst diese Berechtigungen für Ihre Benutzer-ID/Gruppe abrufen, bevor Sie versuchen, private Ordner zu erstellen.
 
 ## Löschen von privaten Ordnern {#delete-private-folder}
 
-Sie können einen privaten Ordner löschen, indem Sie den Ordner auswählen und im oberen Menü die Option &quot; [!UICONTROL Löschen] &quot;wählen oder die Rücktaste auf der Tastatur verwenden.
+Sie können einen Ordner löschen, indem Sie den Ordner auswählen und im oberen Menü die Option &quot; [!UICONTROL Löschen] &quot;wählen oder die Rücktaste auf der Tastatur verwenden.
 
-### Entfernen von Benutzergruppen beim Löschen von Ordnern {#group-removal-on-folder-deletion}
-
-Wenn Sie einen privaten Ordner mit der oben genannten Methode aus der Benutzeroberfläche löschen, werden auch die zugehörigen Benutzergruppen gelöscht. Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe von [JMX](#group-clean-up-jmx)aus dem Repository bereinigt werden.
+![Option &quot;Löschen&quot;im oberen Menü](assets/delete-option.png)
 
 >[!CAUTION]
 >
 >Wenn Sie einen Privatordner aus der CRXDE Lite löschen, bleiben redundante Benutzergruppen im Repository.
 
+>[!NOTE]
+>
+>Wenn Sie einen Ordner mit der oben genannten Methode aus der Benutzeroberfläche löschen, werden auch die zugehörigen Benutzergruppen gelöscht.
+Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe von [JMX](#group-clean-up-jmx)aus dem Repository bereinigt werden.
+
 ### Verwenden Sie JMX, um nicht verwendete Benutzergruppen zu bereinigen {#group-clean-up-jmx}
 
 So bereinigen Sie das Repository nicht verwendeter Benutzergruppen:
 
-1. Öffnen Sie die JMX-Datei, um redundante Gruppen für Assets zu reinigen von `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+1. Öffnen Sie die JMX-Datei, um redundante Gruppen für Assets in Ihrer [!DNL Experience Manager] Autoreninstanz zu reinigen `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+Beispiel: `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
 
 1. Rufen Sie die `clean` Methode aus dieser JMX-Datei auf.
 
-Sie können sehen, dass alle redundanten Benutzergruppen oder die automatisch generierten Gruppen (die beim Erstellen eines privaten Ordners mit demselben Namen wie eine zuvor gelöschte Gruppe erstellt werden) aus dem Pfad entfernt werden `/home/groups/mac/default/<user_name>/<folder_name>`.
+Sie können sehen, dass alle redundanten Benutzergruppen oder die automatisch generierten Gruppen (die beim Erstellen eines Ordners mit demselben Namen wie eine zuvor gelöschte Gruppe erstellt werden) aus dem Pfad entfernt werden `/home/groups/mac/default/<user_name>/<folder_name>`.
