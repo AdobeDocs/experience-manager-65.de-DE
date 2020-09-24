@@ -5,12 +5,15 @@ description: Gewähren Sie ausgewählten Benutzergruppen eingeschränkten Zugrif
 seo-description: Gewähren Sie ausgewählten Benutzergruppen eingeschränkten Zugriff auf den Regel-Editor.
 uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 75%
 
 ---
 
