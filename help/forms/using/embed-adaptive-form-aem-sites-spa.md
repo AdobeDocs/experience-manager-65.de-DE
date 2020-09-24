@@ -1,15 +1,15 @@
 ---
-title: Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in eine Einzelseitenanwendung für AEM Sites
-seo-title: Einbetten adaptiver Formulare oder interaktiver Mitteilungen in AEM Sites
-description: Einbetten von adaptiven Formularen oder interaktiver Kommunikation in AEM Sites Benutzer können Formulare ausfüllen und senden, ohne die Seite "Sites"zu verlassen.
-seo-description: Sie können adaptive Formulare oder interaktive Kommunikation in AEM Sites einbetten. Benutzer können Formulare ausfüllen und senden, ohne die Seite "Sites"zu verlassen.
+title: Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in eine AEM Sites-Einzelseitenanwendung
+seo-title: Adaptive Formulare oder interaktive Kommunikation in AEM Sites-Seiten einbetten
+description: Betten Sie adaptive Formulare oder interaktive Kommunikation in AEM Sites-Seiten ein. Benutzer können Formulare ausfüllen und senden, ohne die Seite "Sites"zu verlassen.
+seo-description: Sie können adaptive Formulare oder interaktive Kommunikation in AEM Sites-Seiten einbetten. Benutzer können Formulare ausfüllen und senden, ohne die Seite "Sites"zu verlassen.
 uuid: 4c75494e-e9d2-43b9-bbae-562e0eda8abb
-topic-tags: interactive-communications
+topic-tags: author, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 11%
@@ -19,24 +19,24 @@ ht-degree: 11%
 
 # Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Mit AEM Forms können Formularentwickler adaptive Formulare und interaktive Kommunikation nahtlos in eine Einzelseitenanwendung (AEM Sites Single Page Application, SPA) einbetten. Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig. Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem adaptiven Formular oder der interaktiven Kommunikation zu interagieren.
+Mit AEM Forms können Formularentwickler adaptive Formulare und interaktive Kommunikation nahtlos in eine AEM Sites-Einzelseitenanwendung (SPA) einbetten. Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig. Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem adaptiven Formular oder der interaktiven Kommunikation zu interagieren.
 
-Unter &quot;AEM Sites Einzelseitenanwendung&quot;können Sie ein adaptives Formular oder eine interaktive Kommunikation mit der Komponente &quot; [AEM Forms-SPA-Container&quot;hinzufügen](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es handelt sich um eine AEM Forms-Komponente für AEM Sites-SPAs, die Sie Ihrer Siteseite hinzufügen können.
+In der AEM Sites-Einzelseitenanwendung können Sie ein adaptives Formular oder eine interaktive Kommunikation mit der Komponente [AEM Forms SPA Container hinzufügen](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es handelt sich um eine AEM Forms-Komponente für AEM Sites-SPAs, die Sie Ihrer Seite &quot;Sites&quot;hinzufügen können.
 
-Weitere Informationen zum Einbetten eines adaptiven Formulars in eine Nicht-SPA-AEM Sites finden Sie unter Einbetten eines adaptiven Formulars oder Interaktive Kommunikation in AEM Sites [einbetten](/help/forms/using/embed-adaptive-form-aem-sites.md).
+Informationen zum Einbetten eines adaptiven Formulars in ein Nicht-SPA-AEM Sites finden Sie unter Einbetten eines adaptiven Formulars oder Interaktive Kommunikation [in die AEM Sites-Seite](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 ## Voraussetzungen {#prerequisites}
 
-Um ein adaptives Formular oder eine interaktive Kommunikation in eine AEM-Site-SPA mit der Komponente AEM Forms SPA Container einzubetten, stellen Sie sicher, dass Sie Folgendes installiert haben:
+Um ein adaptives Formular oder eine interaktive Kommunikation mithilfe der Komponente AEM Forms SPA Container in ein SPA AEM Sites einzubetten, stellen Sie sicher, dass Sie Folgendes installiert haben:
 
 * Java SE Development Kit 8 oder neuer
 * Apache Maven 3.3.1 oder neuer
-* AEM-Autoreninstanz
+* AEM Autoreninstanz
 * [AEM Forms 6.4.2 Add-On-Paket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) in Autoreninstanz
 
-## Installieren der AEM Forms SPA Container-Komponente {#install-aem-forms-spa-container-component}
+## AEM Forms SPA-Container installieren {#install-aem-forms-spa-container-component}
 
 Führen Sie die folgenden Schritte aus, um die AEM Forms SPA Container-Komponente zu installieren:
 
@@ -48,23 +48,23 @@ Führen Sie die folgenden Schritte aus, um die AEM Forms SPA Container-Komponent
 1. [Klonen oder Herunterladen eines react-basierten SPA-Projekts](https://github.com/adobe/aem-sample-we-retail-journal).
 1. Integrieren Sie die SPA-Container-Komponente in ein react-basiertes SPA-Projekt, indem Sie die Anweisungen in der Datei [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) verwenden.
 
-   Nachdem Sie die AEM Forms SPA Container-Komponente installiert und die Komponente in ein react-basiertes SPA-Projekt integriert haben, können Sie adaptive Formulare und interaktive Kommunikation in die Seite &quot;AEM Sites&quot;einbetten.
+   Nachdem Sie die AEM Forms SPA Container-Komponente installiert und die Komponente in ein react-basiertes SPA-Projekt integriert haben, können Sie adaptive Formulare und interaktive Kommunikation auf der AEM Sites-Seite einbetten.
 
 ## Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation {#af-component}
 
-So betten Sie ein adaptives Formular oder eine interaktive Kommunikation mit AEM Forms für die Komponente SPA-Container ein:
+So betten Sie ein adaptives Formular oder eine interaktive Kommunikation mit AEM Forms für SPA-Container ein:
 
-1. Öffnen Sie die AEM-Siteseite im Bearbeitungsmodus, in die Sie ein adaptives Formular oder eine interaktive Kommunikation einbetten möchten.
-1. Fügen Sie die **AEM Form for SPA** -Komponente mit einer der folgenden Optionen auf der Seite ein:
+1. Öffnen Sie die Seite &quot;AEM Sites&quot;im Bearbeitungsmodus, in die Sie ein adaptives Formular oder interaktive Kommunikation einbetten möchten.
+1. Fügen Sie das **AEM Formular für die SPA** -Komponente mit einer der folgenden Optionen auf der Seite ein:
 
-   * Tippen Sie auf der Seite &quot;Sites&quot;auf den Layout-Container, klicken Sie auf **+** und wählen Sie die **AEM Form for SPA** -Komponente aus.
+   * Tippen Sie auf der Seite &quot;Sites&quot;auf den Layout-Container, klicken Sie auf **+** und wählen Sie das **AEM Formular für die SPA** -Komponente aus.
 
    * From the Component browser panel, drag-drop the **AEM Form for SPA** component on the page.
    * Suchen Sie im Asset-Browser nach einem adaptiven Formular oder einer interaktiven Kommunikation und ziehen Sie es auf die Seite &quot;Sites&quot;. Bettet das Formular in einen AEM Forms für den Container der SPA-Komponente ein.
 
    >[!NOTE]
    >
-   >Das Rendern mehrerer AEM Forms-SPA-Container-Komponenten auf einer Seite wird nicht unterstützt. Es können mehrere AEM Forms SPA-Container auf einer Seite vorhanden sein, es wird jedoch jeweils nur eine Komponente gerendert. Stellen Sie sicher, dass nur eine Komponente auf einer Seite sichtbar ist, um Diskrepanzen zu vermeiden.
+   >Das Rendern mehrerer AEM Forms SPA Container-Komponenten auf einer Seite wird nicht unterstützt. Sie können mehrere AEM Forms SPA-Container auf einer Seite haben, es wird jedoch jeweils nur eine Komponente gerendert. Stellen Sie sicher, dass nur eine Komponente auf einer Seite sichtbar ist, um Diskrepanzen zu vermeiden.
 
 1. Tap the embedded AEM Forms SPA Container component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **Edit AEM Forms SPA Container** dialog opens.
 1. In the **Edit AEM Forms Container** dialog, specify the following:
@@ -80,15 +80,15 @@ So betten Sie ein adaptives Formular oder eine interaktive Kommunikation mit AEM
 
 ## Veröffentlichen von eingebetteten adaptiven Formularen und interaktiver Kommunikation {#publish-embedded-adaptive-form-and-interactive-communication}
 
-Betrachten Sie die folgenden Szenarien zum Veröffentlichen eines eingebetteten Assets (adaptives Formular oder interaktive Kommunikation) auf der Seite &quot;AEM Sites&quot;:
+Betrachten Sie die folgenden Szenarien zum Veröffentlichen eines eingebetteten Assets (adaptives Formular oder interaktive Kommunikation) auf der AEM Sites-Seite:
 
-* Wenn Sie die Seite &quot;AEM Sites&quot;zum ersten Mal veröffentlichen und sie ein eingebettetes adaptives Formular oder eine interaktive Kommunikation enthält, veröffentlichen Sie die Seite &quot;Sites&quot;und das eingebettete Asset.
+* Wenn Sie die AEM Sites-Seite zum ersten Mal veröffentlichen und sie ein eingebettetes adaptives Formular oder eine interaktive Kommunikation enthält, veröffentlichen Sie die Seite &quot;Sites&quot;und das eingebettete Asset.
 * Wenn Sie nur das eingebettete adaptive Formular oder die interaktive Kommunikation auf einer Seite mit veröffentlichten Sites geändert haben, veröffentlichen Sie das ursprüngliche Asset und die Änderungen werden auf der Seite &quot;Sites&quot;übernommen. Die Seite &quot;Veröffentlichte Sites&quot;enthält einen Verweis auf das Asset und erfordert keine erneute Veröffentlichung der Seite.
 * Wenn Sie die Seite &quot;Sites&quot;und das eingebettete adaptive Formular oder die interaktive Kommunikation geändert haben, veröffentlichen Sie die Seite &quot;Sites&quot;und das eingebettete Asset erneut.
 
 ## Eingebettetes adaptives Formular und interaktive Kommunikation ändern {#modify-embedded-adaptive-form-and-interactive-communication}
 
-Die AEM-Siteseite enthält einen Verweis auf das adaptive Formular und die interaktive Kommunikation im Container AEM Forms. Daher werden alle Konfigurationen und Eigenschaften, wie das Design, die Stile und die Übermittlungsaktion, die im ursprünglichen adaptiven Formular und in der interaktiven Kommunikation konfiguriert wurden, im eingebetteten adaptiven Formular und in der interaktiven Kommunikation beibehalten.
+AEM Siteseite behält einen Verweis auf das adaptive Formular und die interaktive Kommunikation im AEM Forms-Container bei. Daher werden alle Konfigurationen und Eigenschaften, wie das Design, die Stile und die Übermittlungsaktion, die im ursprünglichen adaptiven Formular und in der interaktiven Kommunikation konfiguriert wurden, im eingebetteten adaptiven Formular und in der interaktiven Kommunikation beibehalten.
 
 Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars und der interaktiven Kommunikation zu ändern, führen Sie einen der folgenden Schritte aus.
 
