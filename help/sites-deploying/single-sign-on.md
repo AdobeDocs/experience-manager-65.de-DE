@@ -6,11 +6,14 @@ seo-description: Erfahren Sie, wie Sie Single Sign-On (SSO) für eine AEM-Instan
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: configuring, Security
 content-type: reference
-topic-tags: Security
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 83%
 
 ---
 
@@ -42,19 +45,20 @@ Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizi
 
    Legen Sie beispielsweise für NTLM Folgendes fest:
 
-   * **** Pfad: nach Bedarf; zum Beispiel `/`
+   * **Pfad:** nach Bedarf; zum Beispiel `/`
    * **Kopfzeilennamen**: `LOGON_USER`
    * **ID-Format**: `^<DOMAIN>\\(.+)$`
 
       Where `<*DOMAIN*>` is replaced by your own domain name.
    Für CoSign:
 
-   * **** Pfad: nach Bedarf; zum Beispiel `/`
+   * **Pfad:** nach Bedarf; zum Beispiel `/`
    * **Kopfzeilennamen**: remote_user
-   * **** ID-Format: AsIs
+   * **ID-Format:** AsIs
+
    Für SiteMinder:
 
-   * **** Pfad: nach Bedarf; zum Beispiel `/`
+   * **Pfad:** nach Bedarf; zum Beispiel `/`
    * **Kopfzeilennamen:** SM_USER
    * **ID-Format:** AsIs
 
@@ -83,6 +87,7 @@ Um SSO für eine AEM-Instanz zu konfigurieren, müssen Sie den [SSO-Authentifizi
 >
 >* `disp_iis.ini`
 >* IIS
+
 >
 >
 Im `disp_iis.ini` Satz:
@@ -90,6 +95,7 @@ Im `disp_iis.ini` Satz:
 >
 >* `servervariables=1` (leitet IIS-Servervariablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
 >* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
+
 >
 >
 In IIS:
@@ -98,6 +104,7 @@ In IIS:
    >
    >
 * Aktivieren Sie die Option **Integrierte Windows-Authentifizierung**.
+
 >
 
 
@@ -150,10 +157,11 @@ Transfer-Encoding: chunked
 ....
 ```
 
-Dies funktioniert auch bei Anforderung:
+Dies funktioniert auch, wenn Sie Folgendes anfordern:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Sie können auch den folgenden Befehl &quot;curl&quot;verwenden, um die `TestHeader` `admin:`Kopfzeile an`curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
+Sie können auch den folgenden Befehl &quot;curl&quot;verwenden, um die `TestHeader` Kopfzeile an `admin:`
+`curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
