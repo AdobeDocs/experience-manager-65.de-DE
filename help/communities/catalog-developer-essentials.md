@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -80,7 +80,7 @@ Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md
 
    * Beispiel: `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Hinzufügen eines untergeordneten Filter-Knotens
+* hinzufügen eines untergeordneten Filter-Knotens
 
    * Wählen Sie den `catalog`Knoten
    * Knoten **[!UICONTROL erstellen auswählen]**
@@ -89,10 +89,10 @@ Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md
       * Typ: `nt:unstructured`
       * Select **[!UICONTROL Save All]**
 
-* Hinzufügen `se_resource-tags` Eigenschaft des `filters` Knotens
+* hinzufügen `se_resource-tags` Eigenschaft des `filters` Knotens
 
    * Wählen Sie die `filters` Node
-   * Hinzufügen einer Multi-Eigenschaft
+   * hinzufügen einer Multi-Eigenschaft
 
       * Name: `se_resource-tags`
       * Typ: String
@@ -104,13 +104,13 @@ Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md
 
 * Veröffentlichen Sie die Community-Site erneut.
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-catalog](assets/configure-catalog.png)
 
 #### TagIDs vor dem Filtern {#pre-filter-tagids}
 
 Die [TagIDs](../../help/sites-developing/framework.md#tagid) vor dem Filter müssen exakt mit den Tags übereinstimmen, die auf die Aktivierungsressourcen angewendet wurden. Diese sind im `resources` Ordner der Site als Werte der Eigenschaft sichtbar `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-Filters](assets/configure-catalog1.png)
 
 ### Referenz-APIs {#reference-apis}
 
@@ -118,5 +118,5 @@ Die [TagIDs](../../help/sites-developing/framework.md#tagid) vor dem Filter müs
 
 * [Berichte-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [Berichte Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [Berichte Analytics-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
