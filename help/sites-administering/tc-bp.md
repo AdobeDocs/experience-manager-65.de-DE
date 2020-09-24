@@ -6,11 +6,14 @@ seo-description: Hier finden Sie Best Practices für die Einrichtung und Ausfüh
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '859'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +33,7 @@ Das Erstellen bzw. Erweitern einer globalen Webpräsenz kann ein komplexer Proze
 * Falls die Ressourcensituation es erlaubt, sollten Übersetzungsaktivitäten von einem zentralen Team verwaltet werden, das Fachwissen hinsichtlich der nötigen Tools, Prozesse und Lieferantenbeziehungen entwickeln kann.
 * **Planen**, **Prototypen** und **testen** Sie Ihre globale Struktur und Ihre Prozesse, um sicherzustellen, dass sie das Unternehmen unterstützen und dass Sie die erforderliche Unterstützung von Interessengruppen in den geografischen Regionen erhalten.
 
-## Site-Struktur {#site-structure}
+## Site-Struktur       {#site-structure}
 
 * Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort muss die höchste Ebene Ihrer Website darstellen.
 * Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Websites.
@@ -55,7 +58,7 @@ Das Erstellen bzw. Erweitern einer globalen Webpräsenz kann ein komplexer Proze
 
 * Choose a **translation method** that best suits the content.
 
-   * **Humanübersetzungen** eignen sich am besten für Inhalte, bei denen Messaging und Qualitätserwartungen hoch sind und der Inhalt einige Zeit auf der Site leben wird, z. B. Marketingseiten.
+   * **Humanübersetzungen** eignen sich am besten für Inhalte, bei denen Messaging und Qualitätserwartungen hoch sind und der Inhalt eine gewisse Zeit auf der Site leben wird, z. B. Marketingseiten.
    * **Eine maschinelle Übersetzung** kann eine gute Wahl für große Mengen von Übersetzungen sein, wenn die Zeit bis zur Veröffentlichung kritisch ist, die Qualitätsanforderungen gelockert werden oder die menschlichen Übersetzungskosten untragbar sind. Support-Wissensdatenbanken und benutzergenerierte Inhalte werden üblicherweise maschinell übersetzt.
 
 * Nutzen Sie die Fachkenntnisse von Lokalisierungsdienstleistern, Adobe Consulting und Systemintegratoren zum Planen Ihrer multilingualen Site-Struktur sowie zum Erstellen von Prototypen und zum Testen davon.
