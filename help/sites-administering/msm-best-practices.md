@@ -6,11 +6,14 @@ seo-description: Hier finden Sie Best Practices für die Einrichtung und Verwend
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 65%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und erstrecken sich über Organisationen und geografische Regionen. Es wird daher dringend empfohlen, MSM-Implementierungen mit der gleichen Sorgfalt zu planen wie Ihre Website:
 
 * Carefully **plan structure and content flows** before starting implementation.
-* **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar einen hohen Grad an Anpassung (z.B. Rollout-Konfigurationen), ist aber für die Leistung, Zuverlässigkeit und Upgradefähigkeit Ihrer Website in der Regel die Minimierung der Anpassung empfehlenswert.
+* **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar einen hohen Grad an Anpassung (z.B. Rollout-Konfigurationen), ist aber in der Regel die beste Methode für die Leistung, Zuverlässigkeit und Upgradefähigkeit Ihrer Website, die Anpassung zu minimieren.
 * Establish a **governance** model early, and train users accordingly, to ensure success. A best practice from a governance point of view is to **minimize the authority that local content producers have** to allocate/connect content to other local users and their respective live copies. Das liegt daran, dass ungesteuerte, verkettete Erbschaften die Komplexität einer MSM-Struktur deutlich erhöhen und ihre Leistung und Zuverlässigkeit beeinträchtigen können.
 
 * Once a plan exists for your structure, content flows, automation and governance - **prototype and thoroughly test your system**, before starting live implementation.
@@ -34,6 +37,7 @@ MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsberei
 >
 >* [Häufig gestellte Fragen zu MSM](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
 >* [Beheben von Problemen mit MSM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
+
 >
 
 
@@ -43,7 +47,8 @@ MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsberei
 >Sie können auch die [Bezugskomponente](/help/sites-authoring/default-components-foundation.md#reference) verwenden, um eine einzelne Seite oder einen Absatz wiederzuverwenden. Bedenken Sie Folgendes:
 >
 >* MSM ist flexibler und ermöglicht eine differenziertere Steuerung von Art und Zeitpunkt der Inhaltssynchronisierung.
->* [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) werden nun anstelle der Foundation-Komponenten empfohlen.
+>* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) werden nun anstelle der Foundation-Komponenten empfohlen.
+
 >
 
 
@@ -168,7 +173,7 @@ Die Rollout-Konfigurationen von MSM sind in hohem Maße anpassbar. Beachten Sie,
 
 * automating rollouts; for example, with [onModify triggers](#onmodify),
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)
-* Starten nachfolgender Arbeitsabläufe,
+* Beginn nachfolgender Workflows,
 * und/oder das Aktivieren von Inhalten im Rahmen von Rollouts.
 
 ### onModify {#onmodify}
