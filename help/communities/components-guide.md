@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 3%
@@ -70,13 +70,13 @@ Das Handbuch enthält eine Liste der SCF-Komponenten, die für die Vorschau und 
 
 Komponentenhandbuch, wie auf einer Autoreninstanz im Bearbeitungsmodus angezeigt:
 
-![chlimage_1-404](assets/chlimage_1-404.png)
+![community-component1](assets/community-component1.png)
 
 ## Komponentenseiten {#component-pages}
 
 Wählen Sie eine Komponente aus der Liste links auf der Seite aus.
 
-![chlimage_1-405](assets/chlimage_1-405.png)
+![community-component-pages](assets/community-component2.png)
 
 Der Hauptteil des Handbuchs wird angezeigt:
 
@@ -100,11 +100,11 @@ Wenn Sie das Handbuch für eine Autoreninstanz verwenden, können Sie die Konfig
 
 Im Handbuch &quot;Community-Komponenten&quot;werden einige Einstellungen für das Komponentendialogfeld mit dem Status &quot; [Einschließen](scf.md#add-or-include-a-communities-component) &quot;überlagert. Um zwischen der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource zu wechseln, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den inklusiven Text aus und klicken Sie bei gedrückter Dublette, um das Bearbeitungsdialogfeld zu öffnen:
 
-![chlimage_1-406](assets/chlimage_1-406.png)
+![community-component3](assets/community-component3.png)
 
 Auf der Registerkarte **Vorlagen** :
 
-![chlimage_1-407](assets/chlimage_1-407.png)
+![community-component4](assets/community-component4.png)
 
 * **Untergeordnete Komponente mit sling:include einschließen**
 
@@ -152,7 +152,7 @@ Um schnell mit Anpassungen zu experimentieren, muss die `scg:showIde`Eigenschaft
 
 Verwenden der Kommentarkomponente als Beispiel für die Autor- oder Veröffentlichungsinstanz, die mit Administratorberechtigungen angemeldet ist:
 
-1. Zu [CRXDE Lite navigieren](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Zur [CRXDE Lite navigieren](../../help/sites-developing/developing-with-crxde-lite.md)
 
    For example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -173,7 +173,9 @@ Verwenden der Kommentarkomponente als Beispiel für die Autor- oder Veröffentli
 
 1. Beachten Sie, dass es jetzt 3 Registerkarten für Vorlagen, CSS und Daten gibt.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
+![community-component5](assets/community-component5.png)
+
+![community-component6](assets/community-component6.png)
 
 ### Registerkarte &quot;Vorlagen&quot; {#templates-tab}
 
