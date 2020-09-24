@@ -5,14 +5,17 @@ description: Mithilfe des Migrationsdienstprogramms können Sie Assets und Dokum
 seo-description: Mithilfe des Migrationsdienstprogramms können Sie Assets und Dokumente von AEM Forms bis Version 6.3 in AEM 6.4 Forms migrieren.
 uuid: a3fdf940-7fc2-441c-91c8-ad66ba47e5f2
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1809'
+ht-degree: 70%
 
 ---
 
@@ -69,7 +72,7 @@ Für Correspondence Management-Assets:
 
 ### Ausführen des Migrationsdienstprogramms{#runningmigrationutility} 
 
-Führen Sie die Migration aus, bevor Sie Änderungen an den Assets vornehmen oder Assets erstellen. Wir empfehlen, das Dienstprogramm erst dann auszuführen, wenn Änderungen an den Assets vorgenommen wurden oder Assets erstellt wurden. Stellen Sie sicher, dass die Benutzeroberfläche von Correspondence Management oder adaptiven Formularen Assets nicht geöffnet ist, während der Migrationsprozess ausgeführt wird.
+Führen Sie die Migration aus, bevor Sie Änderungen an den Assets vornehmen oder Assets erstellen. Wir empfehlen, das Dienstprogramm erst dann auszuführen, wenn Änderungen an den Assets vorgenommen wurden oder Assets erstellt wurden. Stellen Sie sicher, dass die Benutzeroberfläche von Correspondence Management oder Adaptive Forms Assets nicht geöffnet ist, während der Migrationsprozess ausgeführt wird.
 
 Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protokoll unter dem folgenden Pfad und mit dem folgenden Namen erstellt: \[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log. Dieses Protokoll enthält aktualisierte Correspondence Management- und Adaptive Forms-Migrationsinformationen, beispielsweise zum Verschieben von Assets.
 
@@ -99,6 +102,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
       * Designs
       * Briefe
       * Datenwörterbücher
+
    >[!NOTE]
    >
    >Während der Asset-Migration treten möglicherweise Warnungen ähnlich der folgenden auf: „Konflikt aufgetreten bei …“. Solche Meldungen weisen darauf hin, dass Regeln für einige Komponenten in adaptiven Formularen nicht migriert werden konnten. Beispiel: Wenn bei einer Komponente ein Ereignis auftritt, das sowohl Regeln als auch Skripten umfasst und wenn die Regeln nach einem Skript angewendet werden, wird keine der Regeln für die Komponente migriert. Allerdings können diese Regeln migriert werden, indem der Regeleditor für das Authoring von adaptiven Formularen geöffnet wird.
@@ -108,7 +112,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
    >
    >
    >
-   >    * Um Regeln und Skripten (die bei einer Aktualisierung von 6.3 nicht erforderlich sind) in benutzerdefinierten Komponenten zu migrieren, tippen Sie auf Migration zu benutzerdefinierten adaptiven Formularen und dann im nächsten Bildschirm auf Migration starten. Die folgenden Elemente werden migriert:    >
+   >    * Zum Migrieren von Regeln und Skripten (bei Aktualisierung von 6.3 nicht erforderlich) in benutzerdefinierten Komponenten tippen Sie auf Migration von benutzerdefinierten adaptiven Forms-Komponenten und anschließend auf Beginn Migration. Die folgenden Elemente werden migriert:    >
       >
       >
       >        
@@ -117,7 +121,8 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
       >        * Skripte, erstellt mithilfe der Skript-Registerkarte in der Benutzeroberfläche von Version 6.1 oder niedriger
    >
    >
-   >    * Um Vorlagen zu migrieren (bei einer Aktualisierung von 6.3 und 6.4 nicht erforderlich), tippen Sie auf Migration zu adaptiven Formularen und dann im nächsten Bildschirm auf Migration starten. Die folgenden Elemente werden migriert:
+   >    * Um Vorlagen zu migrieren (bei einer Aktualisierung von 6.3 und 6.4 nicht erforderlich), tippen Sie auf Adaptive Forms-Vorlagenmigration und dann im nächsten Bildschirm auf Beginn Migration. Die folgenden Elemente werden migriert:
+
       >
       >
       >
@@ -135,7 +140,8 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
    * To migrate adaptive form templates, tap **Adaptive Forms Template Migration** and in the Custom Components Migration page, tap **Start Migration**. Die folgenden Elemente werden migriert:
 
       * Die adaptiven Formularvorlagen, die unter /Apps oder /Conf mit dem AEM-Vorlageneditor erstellt wurden.
-   * Migrieren Sie die AEM Forms Cloud-Konfigurationsdienste, um das neue kontextbezogene Cloud-Dienst-Paradigma zu nutzen, das die Benutzeroberfläche mit Touch-Funktion (unter/conf) umfasst. Wenn Sie AEM Forms Cloud-Konfigurationsdienste migrieren, werden die Cloud-Dienste in /etc nach /conf verschoben. Wenn Sie keine Anpassungen an Cloud-Services vornehmen, die von den alten Pfaden (/etc) abhängen, sollten Sie das Migrationsdienstprogramm unmittelbar nach der Aktualisierung auf 6.5 ausführen und die Touch-Cloud-Konfigurationsoberfläche für weitere Arbeiten verwenden. Wenn Sie über Anpassungen für die bereits vorhandene Cloud-Dienste verfügen, setzen Sie die klassische Benutzeroberfläche bei der Aktualisierung fort, bis die Anpassungen für die migrierten Pfaden (/conf) abgeschlossen sind, und führen Sie das Migrationshilfsprogramm aus.
+   * Migrieren Sie die AEM Forms Cloud-Konfigurationsdienste, um das neue kontextbezogene Cloud-Dienst-Paradigma zu nutzen, das die Benutzeroberfläche mit Touch-Funktion (unter/conf) umfasst. Wenn Sie AEM Forms Cloud-Konfigurationsdienste migrieren, werden die Cloud-Dienste in /etc nach /conf verschoben. Wenn Sie keine Anpassungen an Cloud-Services vornehmen, die von den alten Pfaden (/etc) abhängen, sollten Sie das Migrationsdienstprogramm unmittelbar nach der Aktualisierung auf 6.5 ausführen und die Touch-Cloud-Konfigurationsschnittstelle für weitere Arbeiten verwenden. Wenn Sie über Anpassungen für die bereits vorhandene Cloud-Dienste verfügen, setzen Sie die klassische Benutzeroberfläche bei der Aktualisierung fort, bis die Anpassungen für die migrierten Pfaden (/conf) abgeschlossen sind, und führen Sie das Migrationshilfsprogramm aus.
+
    To migrate **AEM Forms cloud services**, which include the following, tap AEM Forms Cloud Configuration Migration (cloud config migration is independent of AEMFD Compatibility package), tap AEM Forms Cloud Configurations Migration and then on the Configuration Migration page, tap **Start Migration**:
 
    * Cloud-Dienste für Formulardatenmodell
@@ -154,10 +160,12 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
       * Quellpfad: /etc/cloudservices/typekit
       * Zielpfad: /conf/global/settings/cloudconfigs/typekit
+
    Im Browserfenster wird während der Migration Folgendes ausgeführt: 
 
    * Wenn die Assets aktualisiert sind: Assets wurden erfolgreich aktualisiert.
    * Nachdem die Migration abgeschlossen ist: Migration für Elemente wurde abgeschlossen.
+
    Wenn ausgeführt, geht das Migrationsdienstprogramm wie folgt vor: 
 
    * **Fügt den Elementen die Tags hinzu**: Fügt das Tag „Correspondence Management: Migrierte Assets“ / „Adaptive Forms : Migrierte Assets“. den migrierten Assets hinzu, damit Benutzer migrierte Inhalte ermitteln können. Wenn Sie das Migrationsdienstprogramm ausführen, werden alle vorhandenen Assets im System als migriert markiert.
@@ -185,7 +193,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
 Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende Systemverwaltungsaufgaben durch:[](../../forms/using/import-export-forms-templates.md) 
 
-1. Stellen Sie sicher, dass die XFA-Version von Layouts und Fragmentlayouts 3.3 oder höher ist. Wenn Sie Layouts und Fragmentlayouts einer älteren Version verwenden, kann es zu Problemen beim Rendern des Briefs kommen. Um ein älteres XFA auf die neueste Version zu aktualisieren, führen Sie folgende Schritte aus:
+1. Stellen Sie sicher, dass die XFA-Version von Layouts und Fragment-Layouts 3.3 oder höher ist. Wenn Sie Layouts und Fragmentlayouts einer älteren Version verwenden, kann es zu Problemen beim Rendern des Briefs kommen. Um ein älteres XFA auf die neueste Version zu aktualisieren, führen Sie folgende Schritte aus:
 
    1. [Herunterladen von XFA- als ZIP-Datei](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) aus der Forms-Benutzeroberfläche.
    1. Extrahieren Sie die Datei. 
