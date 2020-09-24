@@ -5,12 +5,15 @@ description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodu
 seo-description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
 uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
 contentOwner: anujkapo
+topic-tags: interactive-communications, author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Die Authoring-Benutzeroberfläche für adaptive Formulare und interaktive Kommun
 
 Sie können den Layoutmodus verwenden, um die Größe von Komponenten für alle Gerätetypen wie Desktop, Tablet, Smartphone und andere kleinere Geräte zu ändern. Das Tablet leitet die Layoutkonfiguration automatisch von der Desktop-Version ab und die kleineren Geräte leiten die Layoutkonfiguration vom Smartphone ab. Sie können die automatisch abgeleiteten Konfigurationen jedoch überschreiben, um für jeden Gerätetyp eine andere Konfiguration zu definieren.
 
-Wenn Sie den Web-Kanal mit [Print Kanal als Master](../../forms/using/create-interactive-communication.md) für eine interaktive Kommunikation erstellen, umfassen die für die Größenanpassung verfügbaren Komponenten auch die Teilformulare und Felder, die in Web Kanal mithilfe von Print Kanal automatisch generiert werden. Der Web-Kanal behält das Layout für die Kanal &quot;Drucken&quot;im Layoutmodus bei.
+Wenn Sie den Web-Kanal mit [Print Kanal für eine interaktive Kommunikation Übergeordnet](../../forms/using/create-interactive-communication.md) erstellen, umfassen die für die Größenanpassung verfügbaren Komponenten auch die Teilformulare und Felder, die in Web Kanal mithilfe von Print Kanal automatisch generiert werden. Der Web-Kanal behält das Layout für die Kanal &quot;Drucken&quot;im Layoutmodus bei.
 
 ## Layout-Modus aufrufen {#access-layout-mode}
 
@@ -33,7 +36,7 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben auf der Authoring-Oberfl
 
    ![Layout-Modus für interaktive Kommunikation](assets/layout_mode_ic_new.png)
 
-## Größe von Komponenten ändern {#resize-components}
+## Größe von Komponenten anpassen {#resize-components}
 
 1. Tippen Sie im Layoutmodus auf die zu ändernde Komponente. Die blauen Punkte werden am Beginn und am Ende des reaktionsfähigen Rasters angezeigt.
 1. Ziehen Sie die blauen Punkte per Drag &amp; Drop, um die Position der Komponente im interaktiven Raster zu definieren.
@@ -44,6 +47,7 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben auf der Authoring-Oberfl
 
    * **Übergeordnet:** Wählen Sie das übergeordnete Element einer Komponente aus.
    * **In neue Zeile schwenken:** Versetzen Sie die Komponente in die nächste Zeile, wenn sich mehrere Komponenten in derselben Zeile befinden.
+
    Mit der Option &quot;Haltepunkt **[!UICONTROL zurücksetzen&quot;können Sie alle Änderungen an der Größe rückgängig machen und Standardlayout auf das Bedienfeld anwenden, das die Größe der Komponenten enthält, indem Sie die Option &quot;Haltepunkt]** zurücksetzen&quot; ![(&quot;Haltepunkt](assets/reverttopreviouslypublishedversion.png)zurücksetzen&quot;) verwenden. Tippen Sie auf das übergeordnete Element der Größenanpassung, um die Option Ansicht.
 
    >[!NOTE]
