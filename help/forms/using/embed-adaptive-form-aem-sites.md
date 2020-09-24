@@ -6,10 +6,13 @@ seo-description: Sie können adaptive Formulare in den AEM-Site-Seiten einbetten
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: interactive-communications
+topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 75%
 
 ---
 
@@ -22,15 +25,15 @@ Mit AEM Forms können Formularentwickler nahtlos adaptive Formulare in eine AEM-
 
 For information about embedding an adaptive form in an external web page, see [Embed adaptive form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
-Auf der Seite &quot;AEM-Sites&quot;können Sie ein adaptives Formular oder eine interaktive Kommunikation hinzufügen, indem Sie:
+Auf der Seite &quot;AEM Sites&quot;können Sie ein adaptives Formular oder eine interaktive Kommunikation hinzufügen, indem Sie:
 
-* **[AEM Forms-Container-Komponente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**AEM Forms bietet eine Komponente, die Sie Ihren Siteseiten hinzufügen können. Über die AEM Forms-Container-Komponente können Sie ein adaptives Formular und interaktive Kommunikation einbetten.
+* **[AEM Forms-Container-Komponente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** AEM Forms bietet eine Komponente, die Sie Ihren Siteseiten hinzufügen können. Über die AEM Forms-Container-Komponente können Sie ein adaptives Formular und interaktive Kommunikation einbetten.
 
-* **[Asset Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**Alle Formulare und interaktiven Kommunikationen, die Sie erstellen, sind unter „Assets“ verfügbar. Sie können das Formular als Asset auf Ihrer Seite per Drag&amp;Drop einfügen.
+* **[Asset Browser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** Alle Formulare und interaktiven Kommunikationen, die Sie erstellen, sind unter „Assets“ verfügbar. Sie können das Formular als Asset auf Ihrer Seite per Drag&amp;Drop einfügen.
 
 ## Voraussetzungen {#prerequisites}
 
-Um ein adaptives Formular oder eine interaktive Kommunikation in eine AEM-Siteseite einzubetten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die AEM Form-Komponente in der zugehörigen Vorlage als zulässige Komponente konfiguriert ist. Weitere Informationen finden Sie im Abschnitt **Richtlinie und Eigenschaften (Layout-Container)** unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
+Um ein adaptives Formular oder eine interaktive Kommunikation in eine AEM Siteseite einzubetten, die eine bearbeitbare Vorlage verwendet, stellen Sie sicher, dass die AEM-Formularkomponente in der zugehörigen Vorlage als zulässige Komponente konfiguriert ist. Weitere Informationen finden Sie im Abschnitt **Richtlinie und Eigenschaften (Layout-Container)** unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
 
 Falls eine Siteseite eine statische Vorlage verwendet, müssen Sie es im Absatzsystem der Seite konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Designmodus](/help/sites-authoring/default-components-designmode.md).
 
@@ -93,5 +96,5 @@ Beachten Sie die folgenden Punkte, wenn Sie adaptive Formulare in AEM-Siteseiten
 * Benutzerentwürfe und Übermittlungen von eingebetteten Formularen werden unterstützt und sind auf der entsprechenden Registerkarte im Forms Portal sichtbar.
 * Die im Originalformular konfigurierte Aktion wird im eingebetteten Formular beibehalten.
 * Die im Originalformular konfigurierten Erlebnis-Targeting und A/B-Tests funktionieren im eingebetteten Formular nicht. Sie können jedoch Erlebnis-Targeting auf der Siteseite verwenden, um verschiedene Formular je nach Benutzerprofil darzustellen.
-* Wenn Adobe Analytics für das Originalformular konfiguriert ist, werden die Analysedaten des eingebetteten Formulars in Adobe Analytics erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
+* Wenn Sie Adobe Analytics für das Originalformular konfiguriert haben, werden die Analysedaten des eingebetteten Formulars in Adobe Analytics erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.
 
