@@ -6,11 +6,11 @@ seo-description: AEM Forms bietet Tools zum Verwalten adaptiver Formulare und zu
 uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8d352255ace00499412a21564f45f61f45060f4d
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 67%
@@ -27,7 +27,7 @@ AEM [!DNL Forms] provides simplified yet powerful user interface to create and m
 
 >[!NOTE]
 >
->For detailed information about other AEM tools and options, see [Authoring](/help/sites-authoring/author.md).
+>Detaillierte Informationen zu anderen AEM Tools und Optionen finden Sie unter [Authoring](/help/sites-authoring/author.md).
 
 ## Auf AEM Forms-Komponenten zugreifen {#access-aem-forms-components}
 
@@ -47,7 +47,7 @@ Formulare und Dokumente bietet Optionen zum Erstellen einer interaktiven Kommuni
 
 The create button is the starting point of the process of creating or uploading AEM [!DNL Forms] asset. Sie bietet Ihnen Optionen zum Erstellen:
 
-* **Interactive Communication**: An Interactive Communication is a personalized, interactive, and device friendly HTML-based digital correspondence, statement, or document. Interaktive Kommunikationen sind responsiv, d. h., ihr Layout und Design passt sich automatisch an das Gerät und die Einstellungen des Benutzers an. Detaillierte Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md)
+* **Interaktive Kommunikation**: Eine interaktive Kommunikation ist eine personalisierte, interaktive und gerätefreundliche HTML-basierte digitale Korrespondenz, ein Statement oder ein Dokument. Interaktive Kommunikationen sind responsiv, d. h., ihr Layout und Design passt sich automatisch an das Gerät und die Einstellungen des Benutzers an. Detaillierte Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md)
 
 * **Adaptives Formular:** Ein adaptives Formular ist ein ansprechendes und interaktives Formular. Sie können adaptive Formulare erstellen, die sich dynamisch an Benutzereingaben anpassen, indem Felder oder Abschnitte je nach Antwort, Gerät oder Arbeitsumgebung des Benutzers hinzugefügt oder entfernt werden. Weitere Informationen zu adaptiven Formularen finden Sie unter [Einführung zum Erstellen adaptiver Formulare](../../forms/using/introduction-forms-authoring.md).
 
@@ -58,9 +58,9 @@ The create button is the starting point of the process of creating or uploading 
 * **Ordner:**[!DNL Forms]Die Benutzeroberfläche von AEM verwendet Ordner zum Anordnen von Assets. Sie unterstützt zwei Typen von Ordnern:
 
    * **Allgemeine Ordner:**[!DNL Forms]Diese Ordner werden für Elemente verwendet, die in der Benutzeroberfläche von AEM erstellt werden. Diese Ordner haben keine feste Ordnerstruktur. Sie können sie umbenennen, Unterordner erstellen und adaptive Formulare, interaktive Kommunikation adaptive Formularfragmente, Formularvorlagen (XDPs), PDF-Formulare, Dokumente und verwandte Assets in diesen Ordnern erstellen.
-   * **Workflow-Ordner von**[!DNL Forms]: Diese Ordner werden erstellt, wenn Workbench-Prozesse (LiveCycle-Archieve) mit der Benutzeroberfläche von AEM Forms migriert und synchronisiert werden. Sie dürfen sie nicht umbenennen, einen Unterordner erstellen, eine interaktive Kommunikation erstellen, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen. It is also not allowed to delete a version folder or create and upload an adaptive form, an adaptive form fragment, or an Interactive Communication in parallel to the version folder.
+   * **Workflow-Ordner von**[!DNL Forms]: Diese Ordner werden erstellt, wenn Workbench-Prozesse (LiveCycle-Archieve) mit der Benutzeroberfläche von AEM Forms migriert und synchronisiert werden. Sie dürfen sie nicht umbenennen, einen Unterordner erstellen, eine interaktive Kommunikation erstellen, ein adaptives Formularfragment oder eine interaktive Kommunikation erstellen. Es ist auch nicht zulässig, einen Versionsordner zu löschen oder ein adaptives Formular, ein adaptives Formularfragment oder eine interaktive Kommunikation parallel zum Versionsordner zu erstellen und hochzuladen.
 
-   ![folders](assets/folders.png)
+   ![Ordner](assets/folders.png)
 
    **A.** Allgemeiner Ordner **B.** Forms Workflow
 
@@ -91,7 +91,7 @@ In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstell
 
 Detaillierte Informationen zum Erstellen und Verwenden von Datenwörterbüchern finden Sie unter [Erstellen von Datenwörterbüchern](../../forms/using/data-dictionary.md).
 
-## Accessing AEM [!DNL Forms] Configurations {#accessing-aem-forms-configurations}
+## Zugriff auf AEM [!DNL Forms] Konfigurationen {#accessing-aem-forms-configurations}
 
 AEM Tools-Bereich enthält Tools für verschiedene Komponenten. To navigate to AEM Forms-specific tools, click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > tools ![hammer](assets/hammer.png) > **[!UICONTROL Forms]**. Tools zum Durchführen folgender Funktionen werden angezeigt:
 
@@ -102,14 +102,14 @@ AEM Tools-Bereich enthält Tools für verschiedene Komponenten. To navigate to A
 
 * **Konfigurieren von PDF Generator:**[!DNL Forms] Ein Administrator kann AEM PDF Generator-Einstellungen konfigurieren, Benutzerkonten hinzufügen und Konfiguration in PDF Generator importieren oder exportieren. 
 * **Correspondence Management-Assets veröffentlichen:**[!DNL Forms] Mit AEM können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autorinstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. For detailed information, see [Publishing and unpublishing forms &amp; documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Export Correspondence Management Assets:** You can download all the Correspondence Management assets and related dependencies as a package from an AEM [!DNL Forms] instance. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Correspondence Management-Assets exportieren:** Sie können alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket von einer AEM [!DNL Forms] Instanz herunterladen. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Häufige Elemente der Benutzeroberfläche {#commonelements}
 
-* **Left rail:** You can click the left rail icon ![railleftpng](assets/railleftpng.png) to reveal Timeline and References capabilities of AEM [!DNL Forms].
+* **Linke Leiste:** Sie können auf das Symbol für die linke Leiste ![links](assets/railleftpng.png) klicken, um die Funktionen für Zeitschiene und Referenzen von AEM anzuzeigen [!DNL Forms].
 
    * **Zeitleiste:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Zeitleiste verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](../../forms/using/create-reviews-forms.md).
-   * **References:** An AEM [!DNL Forms] asset can be used in multiple AEM [!DNL Forms] assets. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. Referenzen sind eine Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, sowie die Liste anderer Assets, die das ausgewählte Asset verwendet.
+   * **Referenzen:** Ein AEM [!DNL Forms] Asset kann in mehreren AEM [!DNL Forms] Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. Referenzen sind eine Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, sowie die Liste anderer Assets, die das ausgewählte Asset verwendet.
 
 * **Breadcrumbs:** Ein Breadcrumb gibt den Titel der aktuellen Konsole oder des Ordners an. Sie können auf die Breadcrumb-Option klicken, um zwischen den Ordnerebenen, die höher in der Hierarchie sind, zu navigieren.
 * **Ansicht Switcher:** Sie können auf das Symbol &quot;Ansicht-Switcher&quot; ![viewlist](assets/viewlist.png) oder ![viewcard](assets/viewcard.png) klicken, um schnell zwischen Liste und Ansicht zu wechseln. Weitere Informationen zu allgemeinen Komponenten der Benutzeroberfläche finden Sie unter [Authoring](/help/sites-authoring/author.md).
