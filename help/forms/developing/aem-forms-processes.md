@@ -1,23 +1,26 @@
 ---
-title: AEM Forms-Prozesse
-seo-title: AEM Forms-Prozesse
+title: Die AEM Forms-Prozesse
+seo-title: Die AEM Forms-Prozesse
 description: 'null'
 seo-description: 'null'
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 3%
 
 ---
 
 
-# AEM Forms-Prozesse {#understanding-aem-forms-processes}
+# Die AEM Forms-Prozesse {#understanding-aem-forms-processes}
 
-Ein gängiger Anwendungsfall ist der Einsatz einer Reihe von AEM Forms-Diensten auf einem einzigen Dokument. Sie können eine Anforderung an den Dienst-Container senden, indem Sie einen Prozess mit Workbench erstellen. Ein Prozess stellt einen Geschäftsprozess dar, den Sie automatisieren. Informationen zum Erstellen von Prozessen finden Sie unter [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Ein gängiger Anwendungsfall besteht darin, dass eine Reihe von AEM Forms-Diensten auf einem einzigen Dokument betrieben wird. Sie können eine Anforderung an den Dienst-Container senden, indem Sie einen Prozess mit Workbench erstellen. Ein Prozess stellt einen Geschäftsprozess dar, den Sie automatisieren. Informationen zum Erstellen von Prozessen finden Sie unter [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Sobald ein Prozess aktiviert ist, wird er zu einem Dienst und kann wie andere Dienste aufgerufen werden. Ein Unterschied zwischen einem Standarddienst wie dem Encryption-Dienst und einem Dienst, der aus einem Prozess stammt, besteht darin, dass dieser einen Vorgang hat, der viele Aktionen ausführt. Im Gegensatz dazu verfügt ein Standarddienst über viele Vorgänge. Jeder Vorgang führt in der Regel eine Aktion aus, z. B. das Anwenden einer Richtlinie auf ein Dokument oder das Verschlüsseln eines Dokuments.
 
@@ -57,15 +60,15 @@ Wenn dieser Prozess mit kurzer Lebensdauer aufgerufen wird, werden die folgenden
    >
    >Normalerweise besteht ein Prozess mit kurzer Lebensdauer aus mehr als drei Aktionen. Sie erstellen einen Prozess mit Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *Die Programmierung mit AEM-* Formularen beschreibt die folgenden Methoden, mit denen Sie diesen Prozess mit kurzer Lebensdauer programmgesteuert aufrufen können:
+   *Die Programmierung mit AEM* Formularen beschreibt die folgenden Methoden, mit denen Sie diesen Prozess mit kurzer Lebensdauer programmgesteuert aufrufen können:
 
-   * [Aufrufen eines Prozesses mit kurzer Lebensdauer durch Übergeben eines unsicheren Dokuments mithilfe von AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (mithilfe einer Flex-Anwendung)
+   * [Aufrufen eines Prozesses mit kurzer Lebensdauer durch Übergeben eines unsicheren Dokuments mithilfe von AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (mit einer Flex-Anwendung)
    * [Aufrufen eines Prozesses mit kurzer Lebensdauer mithilfe der AufrufAPI](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java Invocation API)
-   * [Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (Webdienstbeispiel)
-   * [Aufrufen von AEM Forms mithilfe von MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (Webdienstbeispiel)
-   * [Aufrufen von AEM Forms mithilfe von SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (Webdienstbeispiel)
    * [Aufrufen von AEM Forms mithilfe von BLOB-Daten über HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (Webdienstbeispiel)
-   * [Aufrufen von AEM Forms mithilfe von DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mit DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (Webdienstbeispiel)
    * [Aufrufen des MyApplication/EncryptDocument-Prozesses mithilfe von REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Beispiel für Prozesse mit langer Lebensdauer**
@@ -76,4 +79,4 @@ Dieser Prozess wird aufgerufen, wenn ein Antragsteller ein Darlehensformular ein
 
 >[!NOTE]
 >
->Dieser Vorgang kann gemäß dem unter [Erstellen der ersten AEM Forms-Anwendung](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)angegebenen Lernprogramm erstellt werden.
+>Dieser Vorgang kann gemäß dem unter [Erstellen Ihrer ersten AEM Forms-Anwendung](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)angegebenen Lernprogramm erstellt werden.
