@@ -5,12 +5,15 @@ description: Layout-Designdetails erklären, wie Sie Layouts für Ihre Briefe od
 seo-description: Layout-Design Details erläutern, wie Sie Layouts für Ihre Briefe oder interaktive Kommunikation erstellen können.
 uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
-topic-tags: interactive-communications
+topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '2190'
+ht-degree: 66%
 
 ---
 
@@ -49,11 +52,11 @@ Befolgen Sie diese Schritte, um Layouts für Briefe/Druckkanal einer interaktive
 
 ### Teilformular in einer XDP-Vorlage verwenden {#usesubformxdp}
 
-Nachdem Sie das zum Erstellen der interaktiven Kommunikation erforderliche Layout analysiert haben, können Sie mit dem Forms Designer in der XDP-Vorlage Teilformulare erstellen. Leere Teilformularkomponenten, die in der XDP-Vorlage verwendet werden, führen zur Anzeige von Zielgruppen im Kanal &quot;Drucken&quot;der interaktiven Kommunikation.
+Nachdem Sie das zum Erstellen der interaktiven Kommunikation erforderliche Layout analysiert haben, können Sie in der XDP-Vorlage mit Forms Designer Teilformulare erstellen. Leere Teilformularkomponenten, die in der XDP-Vorlage verwendet werden, führen zur Anzeige von Zielgruppen im Kanal &quot;Drucken&quot;der interaktiven Kommunikation.
 
 >[!NOTE]
 >
->Hinzufügen Sie Inhalte in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Teilformularkomponente in der XDP-Vorlage Inhalte hinzuzufügen. Hinzufügen Sie Inhalte mit Fragmenten, Diagrammen, Bildern [und Layout-Fragmenten in den Zielgruppen des Kanals &quot;Drucken&quot;in](create-interactive-communication.md#step2)Dokument.
+>hinzufügen Sie Inhalte in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Teilformularkomponente in der XDP-Vorlage Inhalte hinzuzufügen. hinzufügen Sie Inhalte mit Fragmenten, Diagrammen, Bildern [und Layout-Fragmenten in den Zielgruppen des Kanals &quot;Drucken&quot;in](create-interactive-communication.md#step2)Dokument.
 
 Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage zu verwenden:
 
@@ -83,7 +86,8 @@ Führen Sie die folgenden Schritte aus, um das Teilformular in einer XDP-Vorlage
 
    1. Geben Sie im Feld &quot; **Name** &quot;einen Namen für das Teilformular ein.
    1. Wählen Sie **Keine Datenbindung** aus der Dropdown-Liste **Datenbindung**.
-   Wiederholen Sie die Schritte 2 bis 5, um der XDP-Vorlage weitere Teilformulare hinzuzufügen. Hinzufügen von [Texten, Dokumenten, Bildern und Diagrammen](create-interactive-communication.md#step2) nur beim Authoring der interaktiven Zielgruppe.
+
+   Wiederholen Sie die Schritte 2 bis 5, um der XDP-Vorlage weitere Teilformulare hinzuzufügen. hinzufügen von [Texten, Dokumenten, Bildern und Diagrammen](create-interactive-communication.md#step2) nur beim Authoring der interaktiven Zielgruppe.
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
@@ -98,7 +102,7 @@ Verwenden Sie die Bildfeld- oder Teilformularkomponente in der XDP-Vorlage und f
 
 >[!NOTE]
 >
->Hinzufügen Sie das Bild in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Bildfeld- oder Teilformularkomponente in der XDP-Vorlage ein Bild hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Inhalten zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#step2).
+>hinzufügen Sie das Bild in den Kanal &quot;Drucken&quot;der interaktiven Kommunikation, anstatt der Bildfeld- oder Teilformularkomponente in der XDP-Vorlage ein Bild hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Inhalten zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#step2).
 
 Führen Sie die folgenden Schritte aus, um die Bildfeldkomponente in einer XDP-Vorlage zu verwenden:
 
@@ -117,7 +121,7 @@ Verwenden Sie die Komponente &quot;Tabelle&quot;in Forms Designer, um Layout-Fra
 >
 >Geben Sie Text in die Tabellenzellen ein oder [erstellen Sie nur beim Authoring der interaktiven Kommunikation eine Bindung mit den Formulardatenmodellobjekten](create-interactive-communication.md#step2) .
 
-Führen Sie die folgenden Schritte aus, um die Komponente &quot;Tabelle&quot;in der XDP-Vorlage mit Forms Designer zu verwenden:
+Führen Sie die folgenden Schritte aus, um die Tabellenkomponente in der XDP-Vorlage mit Forms Designer zu verwenden:
 
 1. Drag-and-drop the **Table** component from the **Object Library** to the form.
 1. In the **Insert Table** dialog:
@@ -149,7 +153,7 @@ Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie 
 
 1. Wählen Sie **Formulare** > **Formulare &amp; Dokumente**.
 1. Tippen Sie auf **Erstellen** > **Datei hochladen**.
-1. Navigieren Sie zum Speicherort der XDP-Vorlage im lokalen Dateisystem und tippen Sie auf **Öffnen** , um die XDP-Vorlage in den AEM Forms-Server zu importieren.
+1. Navigieren Sie zum Speicherort der XDP-Vorlage im lokalen Dateisystem und tippen Sie auf **Öffnen** , um die XDP-Vorlage auf den AEM Forms-Server zu importieren.
 
 ## Schema verwenden {#using-schema}
 
