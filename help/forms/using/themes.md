@@ -5,12 +5,12 @@ description: Sie können Designs verwenden, um ein adaptives Formular oder eine 
 seo-description: Sie können Designs verwenden, um ein adaptives Formular oder eine interaktive Kommunikation zu stilisieren und eine visuelle Identität bereitzustellen. Sie können ein Design für beliebig viele adaptive Formulare oder interaktive Kommunikationen freigeben.
 uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '6067'
 ht-degree: 78%
@@ -62,7 +62,7 @@ Sie können Designs als Zip-Datei exportieren und diese in anderen Projekten ode
 
 1. **Wählen** Sie auf der Designseite ein Design aus und klicken Sie auf **Herunterladen**. Ein Dialogfeld mit den Details des Designs wird angezeigt.
 
-1. Klicken Sie auf **Herunterladen**. Das Design wird als eine zip.-Datei heruntergeladen.
+1. Klicken Sie auf **Download**. Das Design wird als eine zip.-Datei heruntergeladen.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Eine bestimmte Komponente wirkt sich auf Objekte der jeweiligen Kategorie aus. W
       Wenn Sie alle Feldkomponenten mit einer bestimmten Hintergrundfarbe anpassen, übernehmen alle Felder wie Alter, Name und Adresse die Hintergrundfarbe. Wenn Sie ein numerisches Feld wie Alter auswählen und seine Breite verringern, wird die Breite aller numerischer Felder, wie Alter, Anzahl der Personen in einer Familie, verringert. Die Breite der Textfelder wird nicht geändert.
 
    * **Bundesland:** Ermöglicht das Anpassen der Stile eines Objekts in einem bestimmten Status. Beispielsweise können Sie festlegen, wie ein Objekt mit dem Status „Standard“, „Fokus“, „Deaktiviert“, „Mausberührung“ oder „Fehler“ aussieht.
-   * **Eigenschaftenkategorien: ** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Zum Beispiel Dimension und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Stilinformationen ein. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
+   * **Eigenschaftenkategorien: ** Formatierungseigenschaften sind in verschiedene Kategorien unterteilt. Dimension und Position, Text, Hintergrund, Rahmen und Effekte. Unter jeder Kategorie geben Sie Stilinformationen ein. Unter „Hintergrund“ können Sie z. B. „Hintergrundfarbe“ sowie „Bild und Verlauf“ angeben.
 
    * **Erweitert:** Ermöglicht das Hinzufügen benutzerdefinierter CSS zu einem Objekt, wodurch die Eigenschaften, die visuelle Steuerelemente definieren, überschrieben werden, wenn eine Überschneidung vorliegt.
 
