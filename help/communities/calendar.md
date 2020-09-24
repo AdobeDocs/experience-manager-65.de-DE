@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 46%
@@ -27,7 +27,7 @@ Mit der Kalenderfunktion können der Community Veranstaltungsdaten im Kalenderfo
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
-* Hinzufügen der Kalenderfunktion zu einer AEM-Site
+* Hinzufügen der Kalenderfunktion zu einer AEM Site
 * Configuration settings for `Calendar` components
 
 ## Hinzufügen eines Kalenders zu einer Seite {#adding-a-calendar-to-a-page}
@@ -42,15 +42,15 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![calendar-component](assets/calendar-component.png)
 
 ### Konfigurieren eines Kalenders {#configuring-calendar}
 
 Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![konfigurieren](assets/configure-new.png)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-calendar](assets/configure-calendar1.png)
 
 #### Registerkarte „Settings“{#settings-tab}
 
@@ -193,7 +193,7 @@ Die Verfügbarkeit weiterer Optionen hängt davon ab, ob der Site-Besucher Moder
 
 Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er [Moderationsaufgaben](/help/communities/moderate-ugc.md) für alle Kalenderereignisse und Kommentare der Veranstaltung durchführen (je nach Berechtigungen durch die Konfiguration der Komponente).
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![moderators-Ansicht](assets/moderators-view.png)
 
 #### Mitglieder {#members}
 
@@ -207,15 +207,15 @@ Insbesondere können sie
 * Löschen eines eigenen Ereignisses oder Kommentars
 * Ereignisse oder Kommentare anderer kennzeichnen
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![create-Ereignis](assets/configure-calendar2.png)
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![ereignis-Post](assets/configure-calendar3.png)
 
 #### Anonym {#anonymous}
 
 Nicht registrierte oder angemeldete Besucher können veröffentlichte Veranstaltungen und Kommentare lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Veranstaltungen oder Kommentare hinzufügen und keine Veranstaltungen und Kommentare anderer Benutzer kennzeichnen.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![anonymous-user-Ansicht](assets/anonymous-user-view1.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
