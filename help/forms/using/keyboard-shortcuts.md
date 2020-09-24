@@ -6,10 +6,13 @@ seo-description: In diesem Artikel werden die Tastaturbefehle aufgeführt, die i
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
-topic-tags: correspondence-management
+topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 79%
 
 ---
 
@@ -49,6 +52,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 >
 >* Windows: Strg+Klick auf benötigte Komponenten
 >* Mac OS: Befehlstaste+Klick auf benötigte Komponenten
+
 >
 
 
