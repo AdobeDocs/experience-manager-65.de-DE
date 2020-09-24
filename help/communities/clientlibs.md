@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Grundlegende Informationen finden Sie unter:
 
 * [Verwenden clientseitiger Bibliotheken](/help/sites-developing/clientlibs.md) , die Nutzungsdetails und Debugging-Tools bereitstellen
 * [Clientlibs für SCF](/help/communities/client-customize.md#clientlibs) , die beim Anpassen von SCF-Komponenten nützliche Informationen bereitstellen
-* [Blog: AEM-Client-Bibliotheken, erklärt durch Beispiel](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog: AEM Client-Bibliotheken, erklärt durch Beispiel](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Warum Clientlibs erforderlich sind {#why-clientlibs-are-required}
 
@@ -41,24 +41,24 @@ Wenn die erforderlichen clientlibs fehlen, kann das [Hinzufügen einer Communiti
 
 ### Beispiel: Platzierte Reviews ohne Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![put-reviews](assets/placed-reviews.png)
 
 ### Beispiel: Platzierte Reviews mit Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![reviews-clientlibs](assets/reviews-clientlibs.png)
 
 ## Identifizieren erforderlicher Clientlibs {#identifying-required-clientlibs}
 
 Die wesentlichen Funktionsinformationen für Entwickler identifizieren die erforderlichen clientlibs.
 
-Darüber hinaus können Sie von einer AEM-Instanz aus im [Community-Komponentenleitfaden](/help/communities/components-guide.md) eine Auflistung der für eine Komponente erforderlichen clientlib-Kategorien aufrufen.
+Darüber hinaus bietet das Durchsuchen des [Community-Komponentenhandbuchs](/help/communities/components-guide.md) in einer AEM-Instanz Zugriff auf eine Auflistung der für eine Komponente erforderlichen clientlib-Kategorien.
 
 Die erforderlichen clientlibs sind beispielsweise ganz oben auf der Seite [Reviews aufgeführt](https://localhost:4502/content/community-components/en/reviews.html) .
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![clientlibs-reviews](assets/clientlibs-reviews.png)
 
 ## Erforderliche Clientlibs hinzufügen {#adding-required-clientlibs}
 
@@ -66,7 +66,7 @@ Wenn Sie einer Seite eine Communities-Komponente hinzufügen möchten, müssen S
 
 Verwenden Sie [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene clientlibslist für eine Community-Site-Seite zu ändern.
 
-So fügen Sie eine clientlib für eine Community-Site mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)hinzu:
+So fügen Sie mithilfe der [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)eine clientlib für eine Community-Site hinzu:
 
 * Gehen Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Suchen Sie den `clientlibslist` Knoten für die Seite, auf der Sie die Komponente hinzufügen möchten:
@@ -92,7 +92,7 @@ So fügen Sie eine clientlib für eine Community-Site mit [CRXDE Lite](/help/sit
 >Wenn die Site keine Community-Site ist, muss die Existenz oder der Speicherort der Client-Bibliotheken, die für die Site verwendet werden, ermittelt werden.
 
 
-Mithilfe des Beispiels [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) , wo `site-name` &quot; *Interagieren*&quot;angezeigt wird, wird die clientliblist wie folgt angezeigt, wenn die Komponente &quot;Reviews&quot;hinzugefügt wird:
+In dem Beispiel [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) , in dem `site-name` Interaktion *stattfindet*, wird die clientliblist wie folgt angezeigt, wenn die Komponente Reviews hinzugefügt wird:
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![review-component](assets/review-component.png)
 
