@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 2%
 
 ---
@@ -41,8 +41,6 @@ In der Autorenversion sind die `Communities` Konsolen nach der Anmeldung mit Adm
 
 ## Globaler Navigationsbereich {#global-navigation-panel}
 
-![chlimage_1-91](assets/chlimage_1-91.png)
-
 Klicken Sie auf das `Adobe Experience Manager` Symbol in der oberen linken Ecke, um das globale Navigationsfenster zu öffnen und auf zwei Symbole zuzugreifen:
 
 * [Navigationskonsole](#navigation-console)
@@ -52,7 +50,7 @@ Klicken Sie auf das `Adobe Experience Manager` Symbol in der oberen linken Ecke,
 
 Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie aus der globalen Navigation **Navigation Navigation, Communities**.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![Communities](assets/communities.png)
 
 * [Sites](sites-console.md)
 
