@@ -1,17 +1,20 @@
 ---
 title: Kompatibilitätspaket
 seo-title: Kompatibilitätspaket
-description: Durch die Installation des Kompatibilitätspakets auf AEM Forms 6.5 können Sie die Correspondence Management-Assets von AEM Forms 6.4 und früheren Versionen und nicht mehr unterstützten Vorlagen und Seiten für adaptive Formulare verwenden
+description: Durch die Installation des Kompatibilitätspakets auf AEM Forms 6.5 können Sie die Correspondence Management-Assets von AEM Forms 6.4 und früheren Versionen sowie nicht mehr unterstützte Vorlagen und Seiten für adaptive Formulare verwenden
 seo-description: Die Installation des Kompatibilitätspakets auf AEM Forms 6.4 ermöglicht es Ihnen, die Correspondence Management-Assets aus AEM Forms 6.4 sowie veraltete Vorlagen und Seiten für adaptive Formulare zu verwenden.
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: correspondence-management
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 64%
 
 ---
 
