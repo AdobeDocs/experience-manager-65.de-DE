@@ -6,12 +6,15 @@ seo-description: Die Verwaltung eines Projekts zur Implementierung von Adobe Exp
 uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 810d4e9fa93bd0913ba6c928a2508587c605c07e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '3316'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +58,7 @@ Das Arbeitsblatt zum **Projekt-Heartbeat** gibt eine graphische Übersicht über
 
 ## Status nach Rolle {#status-by-role}
 
-Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der [**Konsistenz **,** Qualität **und** Vollständigkeit **](#projectheartbeat), sortiert nach**[ Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
+Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der [**Konsistenz**, **Qualität** und **Vollständigkeit**](#projectheartbeat), sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
 
 ## Phasen und Milestones {#phases-and-milestones}
 
@@ -199,6 +202,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
    * Interaktion der Anwendungen miteinander und mit Anwendern
    * Daten, die von den Anwendungen genutzt und produziert werden sollen, nicht ihre interne Struktur
+
    Die Definitionen sollten Folgendes umfassen:
 
    * grundlegende Code-Struktur für das Projekt;
@@ -238,7 +242,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
    Vor der Entwicklung sollten alle Unterstützungsprozesse, die zur Bereitstellung, zur Veröffentlichung, zum Test und zur Meldung von Problemen notwendig sind, erstellt werden.
 
-   Informationen finden Sie auch im [Adobe Support-Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+   Informationen finden Sie auch im [Adobe Support-Portal](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 ### Ablaufplanung und Abläufe {#operations-planning-and-operations}
 
@@ -257,6 +261,7 @@ Auf ähnlicher Grundlage müssen auch die Abläufe angemessen geplant werden, um
    * Definition of the use of privileges that impact the publish environment; for example, `replicate`
    * Für Benutzer mit minimalen Privilegien sollten Workflows definiert werden
    * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
+
    For more information, see [User Administration and Security](/help/sites-administering/security.md).
 
 * **Überwachung und Wartung**
@@ -265,6 +270,7 @@ Auf ähnlicher Grundlage müssen auch die Abläufe angemessen geplant werden, um
 
    * was überwacht werden muss;
    * Wartungsaufgaben, sowohl für die regelmäßige Wartung als auch besondere Fälle.
+
    Weitere Informationen finden Sie unter [Überwachung und Wartung](/help/sites-deploying/monitoring-and-maintaining.md).
 
 * **Migration**
@@ -367,6 +373,7 @@ Sobald die neue Anwendung verfügbar ist, muss sie in Bezug auf Funktionalität 
 
    * die Lösung die Anforderungen des Benutzers/Kunden erfüllt;
    * der Kunde/Benutzer die Lösung akzeptiert (Funktion, Design und Leistung);
+
    eine formelle Checkliste sollte für die Kundenübergabe erstellt werden, die idealerweise automatisiert ist und nächtlich gegenüber einer Momentaufnahme durchgeführt wird. Die Ergebnisse sollten an den Projektmanager oder das Entwicklerteam weitergeleitet werden.
 
 * **Testen der Leistung und Belastbarkeit**
@@ -622,9 +629,9 @@ Weitere Informationen zu Best Practices für die Bereitstellung, Verwaltung, Ent
 
       * [Entwickeln der Grundlagen](/help/sites-developing/the-basics.md)
       * [MSM-Konzepte](/help/sites-administering/msm.md)
-      * [HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+      * [HTML-Vorlagensprache (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 
 * Verwandte Dokumentation
 
-   * Adobe Experience Cloud - [Planung für Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * Adobe Experience Cloud - [Planung für Adobe Experience Cloud](https://helpx.adobe.com/de/marketing-cloud/how-to/planning.html)
 
