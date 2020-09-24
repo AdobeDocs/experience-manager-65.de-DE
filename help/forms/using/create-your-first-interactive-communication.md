@@ -6,10 +6,13 @@ seo-description: Erfahren Sie, wie Sie Ihre erste interaktive Kommunikation erst
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 91%
 
 ---
 
@@ -66,7 +69,7 @@ So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgen
 * Formulardatenmodell
 * Agent-Benutzeroberfläche
 * Bedingte Daten
-* Bilder 
+* Bilder
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
