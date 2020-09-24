@@ -6,11 +6,11 @@ seo-description: AEM Forms bietet eine benutzerfreundliche, aber leistungsstarke
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '3075'
 ht-degree: 84%
