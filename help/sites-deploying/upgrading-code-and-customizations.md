@@ -12,7 +12,10 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '2204'
+ht-degree: 76%
 
 ---
 
@@ -26,16 +29,16 @@ Beim Planen einer Aktualisierung sollten folgende Bereiche der Implementierung u
 * [AEM-Anpassungen](#aem-customizations)
 * [Testverfahren](#testing-procedure) 
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-1. **Mustererkennung** : Führen Sie den Musterdetektor wie in der Aktualisierungsplanung beschrieben und auf [dieser Seite](/help/sites-deploying/pattern-detector.md) detailliert beschrieben aus, um einen Musterdetektorbericht mit weiteren Details zu Bereichen zu erhalten, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielgruppe von AEM behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.5 kompatibel ist, können Sie dennoch eine neue Entwicklung für die Verwendung der 6.5-Funktionalität durchführen. Sie benötigen sie jedoch nicht nur zur Aufrechterhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.5-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
+1. **Mustererkennung** - Führen Sie den Musterdetektor wie in der Aktualisierungsplanung beschrieben und auf [dieser Seite](/help/sites-deploying/pattern-detector.md) detailliert beschrieben aus, um einen Musterdetektor-Bericht mit weiteren Details zu Bereichen zu erhalten, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielgruppe-Version von AEM behoben werden müssen. Der Bericht &quot;Mustererkennung&quot;sollte Sie auf Inkompatibilitäten im Code hinweisen. Wenn keine Kompatibilität besteht und Ihre Bereitstellung bereits 6.5 kompatibel ist, können Sie dennoch eine neue Entwicklung für die Verwendung der 6.5-Funktionalität durchführen. Sie benötigen sie jedoch nicht nur zur Aufrechterhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.5-Funktionen oder Kompatibilität verschieben, b) beschließen, die Entwicklung nach der Aktualisierung durchzuführen und zu Schritt 2 wechseln. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
 
 1. **Codebasis für 6.5 entwickeln **- Erstellen Sie eine dedizierte Verzweigung oder ein Repository für die Codebasis für die Zielgruppe. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
 1. **Compile with 6.5 Uber jar **- Update code base POMs to point to 6.5 uber jar und Kompilieren von Code dagegen.
-1. **AEM-Anpassungen** aktualisieren* - *Alle Anpassungen oder Erweiterungen von AEM sollten aktualisiert/validiert werden, um in 6.5 zu funktionieren, und der 6.5-Codebasis hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
+1. **Update AEM Anpassung*** - *Alle Anpassungen oder Erweiterungen zu AEM sollten aktualisiert/validiert werden, um in 6.5 zu funktionieren und der 6.5 Codebasis hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
 
 1. **Bereitstellung auf 6.5 Umgebung** - Eine saubere Instanz von AEM 6.5 (Autor + Veröffentlichung) sollte in einer Dev/QA-Umgebung stehen. Stellen Sie die aktualisierte Codebasis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
-1. **Validierung und Fehlerbehebung bei** der Qualitätssicherung: Die Qualitätssicherung sollte die Anwendung sowohl in der Autoreninstanz als auch in der Veröffentlichungsinstanz von 6.5 validieren. Alle gefundenen Fehler sollten behoben und an die 6.5-Codebasis gebunden werden. Wiederholen Sie den Entwicklungszyklus, falls erforderlich, bis alle Fehler korrigiert sind.
+1. **Validierung und Fehlerbehebung bei** der Qualitätssicherung: Die Qualitätssicherung sollte die Anwendung sowohl in der Autoren- als auch in der Veröffentlichungsinstanz von 6.5 validieren. Alle gefundenen Fehler sollten behoben und an die 6.5-Codebasis gebunden werden. Wiederholen Sie den Entwicklungszyklus, falls erforderlich, bis alle Fehler korrigiert sind.
 
 Bevor Sie mit der Aktualisierung beginnen, benötigen Sie eine stabile Anwendungscodebasis, die sorgfältig gegen die Zielversion von AEM getestet wurde. Basierend auf den im Rahmen der Tests gemachten Beobachtungen kann möglicherweise der benutzerdefinierte Code optimiert werden. Dazu können die Umgestaltung des Codes zum Durchsuchen des Repositorys, die benutzerdefinierte Indizierung für optimierte Suchabfragen, die Verwendung von unsortierten Knoten in JCR und andere Optimierungen gehören.
 
@@ -146,7 +149,7 @@ Adobe recommends putting custom scripts at `/apps/settings/dam/indesign/scripts`
 
 ### Wiederherstellen von ContextHub-Konfigurationen {#recovering-contexthub-configurations}
 
-ContextHub-Konfigurationen sind von einer Aktualisierung betroffen. Anweisungen, wie Sie vorhandene ContextHub-Konfigurationen wiederherstellen, finden Sie [hier](/help/sites-administering/contexthub-config.md#recovering-contexthub-configurations-after-upgrading).
+ContextHub-Konfigurationen sind von einer Aktualisierung betroffen. Anweisungen, wie Sie vorhandene ContextHub-Konfigurationen wiederherstellen, finden Sie [hier](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
 
 ### Workflow-Anpassungen {#workflow-customizations}
 
