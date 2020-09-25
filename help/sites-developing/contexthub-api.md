@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5029'
 ht-degree: 79%
@@ -532,7 +532,7 @@ Verwaltet Benutzeroberflächenmodule und Benutzeroberflächenmodulrenderer.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registriert einen Benutzeroberflächenmodulrenderer mit ContextHub. Nachdem der Renderer registriert ist, kann er verwendet werden, um [Benutzeroberflächenmodule zu erstellen](/help/sites-administering/contexthub-config.md#adding-a-ui-module). Verwenden Sie diese Funktion, wenn Sie[ ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) erweitern, um einen benutzerdefinierten Benutzeroberflächenmodulrenderer zu erstellen.
+Registriert einen Benutzeroberflächenmodulrenderer mit ContextHub. Nachdem der Renderer registriert ist, kann er verwendet werden, um [Benutzeroberflächenmodule zu erstellen](ch-configuring.md#adding-a-ui-module). Verwenden Sie diese Funktion, wenn Sie[ ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) erweitern, um einen benutzerdefinierten Benutzeroberflächenmodulrenderer zu erstellen.
 
 **Parameter**
 
