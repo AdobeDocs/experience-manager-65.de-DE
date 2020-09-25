@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2766'
+source-wordcount: '2767'
 ht-degree: 77%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 77%
 
 Adaptive Formulare bieten ein optimiertes und vereinfachtes Ausfüllen von Formularen für Endbenutzer mit Kenntnissen in der dynamischen Skripterstellung. Dadurch können Sie Ausdruck schreiben, um verschiedene Verhaltensweisen hinzuzufügen, z. B. dynamische Ein-/Ausblenden-Felder und -Bedienfelder. Außerdem können Sie berechnete Felder hinzufügen, Felder schreibgeschützt machen, Überprüfungslogik hinzufügen und vieles mehr. Das dynamische Verhalten basiert auf der Benutzereingabe oder vorausgefüllten Daten.
 
-JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
+JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Empfohlene Vorgehensweisen zum Schreiben von Ausdrücken {#best-practices-for-writing-expressions}
 
@@ -51,11 +51,11 @@ In adaptiven Formularen können Sie Ausdruck schreiben, um Verhaltensweisen wie 
 * **[Ausdrücke für den Zugriff](#access-expression-enablement-expression)**: Zum Aktivieren/Deaktivieren eines Felds.
 * **[Ausdrücke für die Berechnung](#calculate-expression)**: Zum automatischen Berechnen des Werts eines Felds.
 * **[Ausdruck für ein Klickereignis](#click-expression)**: Zum Verarbeiten von Aktionen beim Klicken auf eine Schaltfläche.
-* **[Initialisierungsskript](#initialization-script):**Durchführen einer Aktion zum Initialisieren eines Felds.
+* **[Initialisierungsskript](#initialization-script):** Durchführen einer Aktion zum Initialisieren eines Felds.
 * **[Ausdruck für Optionen](#options-expression)**: Zum dynamischen Ausfüllen einer Dropdown-Liste.
 * **[Zusammenfassungsausdruck](#summary)**: Zum dynamischen Berechnen des Titels eines Akkordeons.
 * **[Ausdrücke für die Überprüfung](#validate-expression)**: Zum Überprüfen eines Felds.
-* **[Skript](#value-commit-script)zum Bestätigen von Werten:**, um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **[Skript](#value-commit-script)zum Bestätigen von Werten:** , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
 * **[Ausdruck für die Sichtbarkeit](#visibility-expression)**: Zum Steuern der Sichtbarkeit eines Felds oder Bereichs.
 * **[Ausdruck zum Abschluss von Schritten](#step-completion-expression)**: Um zu vermeiden, dass ein Benutzer zum nächsten Schritt eines Assistenten geht.
 
@@ -88,7 +88,7 @@ Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken a
 
 **Rückgabetyp:** Der Ausdruck für ein Klickereignis gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Wenn Sie ein Textfeld **textbox1** mit dem Wert **AEM Forms** auf eine Schaltfläche klicken, wird der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"`
+**Beispiel**: Wenn Sie ein Textfeld **textbox1** auf die Klickaktion einer Schaltfläche mit dem Wert **AEM Forms** füllen möchten, lautet der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"`
 
 ### Initialisierungsskript {#initialization-script}
 
