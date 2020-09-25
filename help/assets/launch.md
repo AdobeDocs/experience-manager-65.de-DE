@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 96%
@@ -133,7 +133,7 @@ Derzeit ist die Unterstützung für Video-Tracking auf das Tracking „Core-Wied
 
 ## Verwenden der Erweiterung „Dynamic Media-Viewer“ {#using-the-dynamic-media-viewers-extension}
 
-Wie unter [Anwendungsbeispiele für die Integration](#use%20cases%20for%20the%20integration) erwähnt, ist es möglich, Dynamic Media-Viewer sowohl mit der neuen Adobe Launch-Integration in AEM Sites als auch mithilfe von Einbettungs-Code zu verfolgen.
+Wie unter [Anwendungsbeispiele für die Integration](#use-cases-for-the-integration) erwähnt, ist es möglich, Dynamic Media-Viewer sowohl mit der neuen Adobe Launch-Integration in AEM Sites als auch mithilfe von Einbettungs-Code zu verfolgen.
 
 ### Verfolgen von Dynamic Media-Viewern in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -149,7 +149,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 Kunden, die kein AEM Sites verwenden oder Dynamic Media-Viewer in Web-Seiten außerhalb von AEM Sites einbetten (oder beides), können weiter die Adobe Launch-Integration nutzen.
 
-Sie müssen die Konfigurationsschritte im Abschnitt [Konfigurieren von Adobe Analytics](#configuringadobeanalytics) und [Konfigurieren von Adobe Launch](#configuringadobelaunch) ausführen. AEM-bezogene Konfigurationsschritte sind jedoch nicht erforderlich.
+Sie müssen die Konfigurationsschritte im Abschnitt [Konfigurieren von Adobe Analytics](#configuring-adobe-analytics-for-the-integration) und [Konfigurieren von Adobe Launch](#configuring-adobe-launch-for-the-integration) ausführen. AEM-bezogene Konfigurationsschritte sind jedoch nicht erforderlich.
 
 Nach der ordnungsgemäßen Konfiguration können Sie mit einem Dynamic Media-Viewer Adobe Launch-Unterstützung zu einer Web-Seite hinzufügen.
 
@@ -162,7 +162,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **So verfolgen Sie Dynamic Media-Viewer mit Einbettungs-Code**:
 
 1. Verwenden Sie eine Web-Seite, die bereit zum Einbetten eines Dynamic Media-Viewers ist.
-1. Rufen Sie den Einbettungs-Code für die Adobe Launch-Bibliothek ab, indem Sie sich zunächst bei Adobe Launch anmelden (siehe [Konfigurieren von Adobe Launch](#configuringadobelaunch)).
+1. Rufen Sie den Einbettungs-Code für die Adobe Launch-Bibliothek ab, indem Sie sich zunächst bei Adobe Launch anmelden (siehe [Konfigurieren von Adobe Launch](#configuring-adobe-launch-for-the-integration)).
 1. Klicken Sie auf **[!UICONTROL Eigenschaften]** und dann auf die Registerkarte **[!UICONTROL Umgebungen]**.
 1. Wählen Sie die für die Umgebung der Web-Seite relevante Umgebungsebene aus. Klicken Sie dann in der Spalte **[!UICONTROL Installieren]** auf das Kontrollkästchen.
 1. Kopieren Sie im Dialogfeld **[!UICONTROL Web-Installationsanweisungen]** den vollständigen Einbettungs-Code der Adobe Launch-Bibliothek zusammen mit den zugehörigen `<script/>`-Tags.
@@ -483,7 +483,7 @@ Siehe auch [Analytics-Implementierungshandbuch](https://docs.adobe.com/content/h
 
 1. Im Allgemeinen wird die Einrichtung eines Berichts in Adobe Analytics von den jeweiligen Projektanforderungen bestimmt. Die Einrichtung detaillierter Berichte ist daher für diese Integration nicht relevant.
 
-   Es ist ausreichend zu wissen, dass Custom Traffic-Berichte automatisch in Adobe Analytics verfügbar werden, nachdem Sie unter **[Einrichten von Adobe Analytics-Variablen](#setting-up-adobe-analytics-variables)**Custom Traffic-Variablen eingerichtet haben.
+   Es ist ausreichend zu wissen, dass Custom Traffic-Berichte automatisch in Adobe Analytics verfügbar werden, nachdem Sie unter **[Einrichten von Adobe Analytics-Variablen](#setting-up-adobe-analytics-variables)** Custom Traffic-Variablen eingerichtet haben.
 
    Beispielsweise ist der Bericht für **[!UICONTROL Viewer-Asset (prop 30)]** im Menü „Berichte“ unter **[!UICONTROL Custom Traffic > Custom Traffic 21-30 > Viewer-Asset (prop 30)]** verfügbar.
 
@@ -533,7 +533,7 @@ Um eine Erweiterung zu installieren, klicken Sie auf **[!UICONTROL Installieren]
 
 Wenn erforderlich, müssen die folgenden Erweiterungen installiert und konfiguriert werden:
 
-* (Required) *Experience Cloud ID Service *extension
+* (Erforderlich) *Experience Cloud-ID-Dienst *Erweiterung
 
 Es ist keine zusätzliche Konfiguration erforderlich; akzeptieren Sie die vorgeschlagenen Werte. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Speichern]**.
 
