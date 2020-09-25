@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 88%
@@ -72,11 +72,11 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
 Wenn Sie ein Bild in der Panoramamedienkomponente in WCM abgelegt haben und der Platzhalter der Komponente ausgeblendet ist, helfen Ihnen möglicherweise die folgenden Schritte zur Fehlerbehebung:
 
-* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für **[!UICONTROL Maximale Größe des Antwortbildes]** in [Konfigurieren von Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen für **[!UICONTROL Maximale Größe des Antwortbildes]** in [Konfigurieren von Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Überprüfen Sie im Falle einer „ungültigen Sperre“ für das Asset oder einem auf der Seite angezeigten „Parsing-Fehler“ den Anfragenverschleierungs- sowie den Anfragensperrmodus, um sicherzustellen, dass diese Modi deaktiviert sind.
 * Bei einer Fehlermeldung zu einer beschädigten Arbeitsfläche können Sie einen Dateipfad für Regeldefinitionen einrichten und CTN für die vorangegangenen Anforderungen für das Bild-Asset ungültig machen.
-* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der Image-Server-Veröffentlichungsseite. Weitere Informationen über den Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der Image-Server-Veröffentlichungsseite. Weitere Informationen über den Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 
