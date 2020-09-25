@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 94%
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API{#content-fragments-support-in-aem-assets-http-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Die API ermöglicht es Ihnen, AEM als Headless-CMS (Content Management System) a
 
 Beispielsweise benötigen frameworkbasierte oder benutzerdefinierte Single-Page-Applikationen (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
 
-AEM-Core-Komponenten bieten eine sehr umfassende, flexible und anpassbare API, die für diesen Zweck erforderliche Read-Vorgänge bereitstellen kann und deren JSON-Ausgabe angepasst werden kann. Für die Implementierung ist jedoch AEM WCM (Web-Content-Management)-Know-how erforderlich, da diese auf (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat Zugriff auf diese Ressourcen.
+AEM Core-Komponenten bieten eine sehr umfassende, flexible und anpassbare API, die für diesen Zweck erforderliche Read-Vorgänge bereitstellen kann und deren JSON-Ausgabe angepasst werden kann. Sie erfordern jedoch AEM WCM (Web-Content-Management)-Know-how für die Implementierung, da sie auf (API-)Seiten gehostet werden müssen, die auf dedizierten AEM-Vorlagen basieren. Nicht jede SPA-Entwicklungsorganisation hat Zugriff auf diese Ressourcen.
 
 Hier kann die Assets-REST-API eingesetzt werden. Damit können Entwickler direkt auf Assets (z. B. Bilder und Inhaltsfragmente) zugreifen, ohne sie zuerst in eine Seite einzubetten, und ihre Inhalte im serialisierten JSON-Format bereitstellen. (Beachten Sie, dass Sie die JSON-Ausgabe nicht über die Assets-REST-API anpassen können). Mit der Assets-REST-API können Entwickler Inhalte ändern, indem sie neue Assets, Inhaltsfragmente und Ordner erstellen, aktualisieren oder vorhandene Assets, Inhaltsfragmente und Ordner löschen.
 
@@ -143,7 +143,7 @@ Inhaltsfragmente sind eine bestimmte Art von Assets. Informationen finden Sie un
 
 Weitere Informationen zu den über die APIs verfügbaren Funktionen:
 
-* [Verfügbare Funktionen](/help/assets/mac-api-assets.md#available-features) der Assets-REST-API
+* [Verfügbare Funktionen](/help/assets/mac-api-assets.md#assets) der Assets-REST-API
 * [Entitätstypen](/help/assets/assets-api-content-fragments.md#entity-types)
 
 ### Paging {#paging}
@@ -203,7 +203,7 @@ Ein [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) ist e
 
 Da es einige Unterschiede zu *Standard*-Assets (z. B. Bildern oder Audio) aufweist, gelten einige zusätzliche Regeln für die Verarbeitung.
 
-#### Darstellung     {#representation}
+#### Darstellung           {#representation}
 
 Inhaltsfragmente:
 
@@ -212,7 +212,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Nutzlast eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente     {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente           {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Nutzlast ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -363,14 +363,14 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    }
    ```
 
-## API-Referenz     {#api-reference}
+## API-Referenz           {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 
 * [Adobe Experience Manager Assets API – Inhaltsfragmente](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
-   * [Verfügbare Funktionen](/help/assets/mac-api-assets.md#available-features)
+   * [Verfügbare Funktionen](/help/assets/mac-api-assets.md#assets)
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
