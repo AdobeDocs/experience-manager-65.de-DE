@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1889'
+ht-degree: 78%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
 
 >[!NOTE]
 >
->ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden [Konfigurations-](/help/sites-administering/contexthub-config.md) und [Entwicklerdokumentation](/help/sites-developing/contexthub.md).
+>ClientContext wurde durch ContextHub abgelöst. For more details, see the related [configuration]ch-configuring.md) and [developer](/help/sites-developing/contexthub.md) documenatation.
 
-Der Kundenkontext ist ein Mechanismus, mit dem Sie bestimmte Informationen über die aktuelle Seite und den Besucher erhalten. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
+Der Client-Kontext ist ein Mechanismus, mit dem Sie bestimmte Informationen über die aktuelle Seite und den aktuellen Besucher erhalten. It can be opened using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac):
 
 ![](assets/clientcontext_alisonparker.png)
 
@@ -51,18 +54,18 @@ ClientContext kann die folgenden Eigenschaften anzeigen ([abhängig von der mit 
 **Surfer-Informationen** Zeigt die folgenden clientseitigen Informationen an:
 
 * die **IP-Adresse**
-* **Suchbegriffe** für Suchmaschinenverweise
+* **Suchbegriffe** , die für Suchmaschinenverweise verwendet werden
 * der **verwendete Browser**
 * das **Betriebssystem** , das verwendet wird
 * die **Bildschirmauflösung**
 * X-Position der **Maus**
 * die Y **-Position der** Maus
 
-**Aktivitäts-Stream** : Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. zum Beispiel die AEM-Foren, Blogs, Ratings usw.
+**Aktivität Stream** : Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. zum Beispiel die AEM Foren, Blogs, Ratings usw.
 
 **Kampagne** Ermöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
 
-Die Kampagnenauflösung basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
+Die Auflösung der Kampagne basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
 
 **Warenkorb** zeigt Informationen zum Warenkorb einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), gelöste Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
 
@@ -94,7 +97,7 @@ Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Information
 >
 >Der JSONP-Store speichert die Informationen nicht im Cookie zwischen, ruft aber die Daten bei jedem Seitenladevorgang ab.
 
-**Profildaten** Zeigt die im Benutzerprofil erfassten Informationen an. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
+**Profil Data** zeigt Informationen, die im Profil des Benutzers erfasst wurden. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
 
 **Gelöste Segmente** Zeigt an, welche Segmente zurzeit aufgelöst werden (häufig abhängig von anderen im Kundenkontext angezeigten Informationen). Dies ist beim Konfigurieren von Kampagnen von Interesse.
 
@@ -241,7 +244,7 @@ Fügen Sie die Komponente „JSONP-Store“ zu ClientContext hinzu und nutzen Si
 
    ![](assets/chlimage_1-40.png)
 
-1. Klicken Sie auf „OK“.
+1. Klicken Sie auf OK.
 1. Kehren Sie zur Geometrixx Outdoors-Homepage zurück und aktualisieren Sie die Seite. ClientContext umfasst nun die Informationen aus der Komponente „JSONP-Store“.
 
    ![](assets/chlimage_1-41.png)
