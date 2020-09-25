@@ -10,7 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 80%
 
 ---
 
@@ -27,16 +30,16 @@ ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextda
 >
 >The path containing the sample ContextHub configuration that is used by the [We.Retail reference implementation](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) should only be used as a reference for creating your own configuration.
 >
->Es sollte nicht als eigene ContextHub-Konfiguration in einem Projekt verwendet werden.
+>Es sollte nicht in einem Projekt als Ihre eigene ContextHub-Konfiguration verwendet werden.
 
 ## Persistenz {#persistence}
 
-ContextHub speichert persistente Kontextdaten auf dem Client. Die ContextHub JavaScript-API ermöglicht Ihnen den Zugriff auf Stores zum Erstellen, Aktualisieren und Löschen von Daten nach Bedarf. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
+ContextHub speichert persistente Kontextdaten auf dem Client. Die ContextHub JavaScript-API ermöglicht Ihnen den Zugriff auf Stores, um Daten nach Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
 
 Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 
 * [ContextHub stellt verschiedene Beispielspeicherarten bereit](/help/sites-developing/ch-samplestores.md).
-* Verwenden Sie AEM-Konsolen zum [Erstellen von Speichern](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* Verwenden Sie AEM-Konsolen zum [Erstellen von Speichern](ch-configuring.md#creating-a-contexthub-store).
 * Entwickler können [benutzerdefinierte Speichertypen erstellen](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Entwickler können auf die [gespeicherten Daten](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
 
@@ -51,7 +54,7 @@ Die [ContextHub-Symbolleiste](/help/sites-authoring/ch-previewing.md) ermöglich
 Jedes ContextHub-UI-Modul ist eine Instanz eines vordefinierten Modultyps:
 
 * ContextHub stellt mehrere [Beispielmodularten](/help/sites-developing/ch-samplemodules.md) bereit.
-* Verwenden Sie AEM-Konsolen, um [UI-Module hinzuzufügen](/help/sites-administering/contexthub-config.md#adding-a-ui-module) und sie in [UI-Modi zu gruppieren](/help/sites-administering/contexthub-config.md#adding-a-ui-mode).
+* Verwenden Sie AEM-Konsolen, um [UI-Module hinzuzufügen](ch-configuring.md#adding-a-ui-module) und sie in [UI-Modi zu gruppieren](ch-configuring.md#adding-a-ui-mode).
 
 * Entwickler können [benutzerdefinierte Modularten erstellen](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
