@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5 Entwicklungs-Benutzerhandbuch
 breadcrumb-title: Developing Guide
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '823'
 ht-degree: 79%
 
 ---
@@ -138,13 +138,14 @@ ht-degree: 79%
    + [AEM Repo Tool](aem-repo-tool.md)
 + Personalisierung  {#personlization}
    + [ContextHub](contexthub.md)
-   + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
-   + [Erweitern von ContextHub](ch-extend.md)
+   + [Context Hub konfigurieren](ch-configuring.md)
    + [Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher](ch-adding.md)
+   + [Erweitern von ContextHub](ch-extend.md)
    + [Beispiele für ContextHub-Store-Kandidaten](ch-samplestores.md)
    + [Mustertypen von ContextHub-Benutzeroberflächenmodulen](ch-samplemodules.md)
    + [ContextHub-Diagnosen](ch-diagnostics.md)
    + [Entwicklung für zielgerichtete Inhalte](target.md)
+   + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
    + ClientContext{#client-context}
       + [ClientContext im Detail](client-context.md)
       + [ClientContext-JavaScript-API](ccjsapi.md)
