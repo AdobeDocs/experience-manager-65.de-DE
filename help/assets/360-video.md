@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 95%
@@ -70,7 +70,7 @@ Beim Hochladen in AEM werden 360-Grad-Video-Assets wie normale Video-Assets auf 
 
    Beachten Sie, dass sich durch diese Vorgehensweise auch steigenden Anforderungen an Netzwerk und CPU beim Anwender ergeben.
 
-1. [Laden Sie Ihr Video in den Ordner hoch](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+1. [Laden Sie Ihr Video in den Ordner hoch](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 ## Überschreiben des Standardseitenverhältnisses von 360-Grad-Videos  {#overriding-the-default-aspect-ratio-of-videos}
 
@@ -118,7 +118,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](https://helpx.adobe.com/e
    * Ziehen Sie den Mauszeiger über das Video, um den Anzeigewinkel der statischen Szene zu ändern.
    * Tippen Sie auf die Schaltfläche **[!UICONTROL Abspielen]**, um die Wiedergabe des Videos zu starten. Ziehen Sie dann den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Screenshot eines 360-Grad-Videos.*
 
    * Tippen Sie in der Viewer-Liste auf **[!UICONTROL Video360VR.]**
 
