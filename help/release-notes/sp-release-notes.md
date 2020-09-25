@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
+source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
 workflow-type: tm+mt
-source-wordcount: '4495'
+source-wordcount: '4518'
 ht-degree: 7%
 
 ---
@@ -124,7 +124,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * Die Drag-Funktion mit der Tastatur funktioniert jetzt im [!UICONTROL Metadata Schema Editor] im Durchsuchenmodus der Bildschirmlesehilfe (CQ-4296326).
 
-* Wenn Sie im Dialogfeld &quot;Linkfreigabe&quot;im Durchsuchen-Modus navigieren, wird eine Bildschirmlesehilfe,
+* Wenn Sie im Dialogfeld für die Freigabe von Links im Durchsuchen-Modus navigieren,
 
    * Die Tabelleninformationen werden nicht kommentiert, sobald das Dialogfeld geladen wurde.
 
@@ -154,7 +154,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
    *Abbildung:[!UICONTROL Suchen Sie nach Hilfe]im[!UICONTROL Menü Hilfe].*
 
-   * Die Fehlermeldung, wenn unter der Option &quot; [!UICONTROL Benutzer] &quot;in das Feld &quot;  Identität annehmen&quot;ein falscher Wert eingegeben wurde und der Fokus korrekt auf das Textfeld (NPR-33804) verschoben wird.
+   * Die Fehlermeldung, wenn unter der Option &quot; [!UICONTROL Benutzer] &quot;in das Feld &quot;  Identität annehmen&quot;ein falscher Wert eingegeben wurde und der Fokus korrekt auf das Textfeld verschoben wird (NPR-33804).
 
    ![Benutzermenü in der Kopfzeile](assets/User_aem_header.png)
 
@@ -184,7 +184,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 * In der Ansicht der Karte, wenn ein Workflow (für ein Asset in einem Ordner) ausgeführt oder ausstehend ist, wird die Seite neu geladen, bis der Workflow abgeschlossen oder beendet ist. Daher können Autoren nicht an den Assets im Ordner arbeiten, für die sie einen Bildlauf nach unten durchführen müssen (NPR-33986).
 
-* Wenn der Benutzer ein veröffentlichtes Asset an einen neuen Speicherort verschiebt, wird das Asset erneut veröffentlicht, auch wenn die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;deaktiviert ist. Dies führt dazu, dass sich viele verwaiste Assets in der Veröffentlichungsinstanz befinden. Das Standardverhalten ist jedoch, dass beim Verschieben eines Vorgangs für ein veröffentlichtes Asset die Veröffentlichung automatisch rückgängig gemacht wird. Dieses Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Veröffentlichung] wiederholen&quot;auswählt (NPR-33934).
+* Wenn der Benutzer ein veröffentlichtes Asset an einen neuen Speicherort verschiebt, wird das Asset erneut veröffentlicht, auch wenn die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;deaktiviert ist. Dies führt dazu, dass sich viele verwaiste Assets in der Veröffentlichungsinstanz befinden. Das Standardverhalten ist jedoch, dass beim Verschieben eines Vorgangs für ein veröffentlichtes Asset die Veröffentlichung automatisch rückgängig gemacht wird. Dieses Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;auswählt (NPR-33934).
 
 * Die Seite [!UICONTROL &quot;Assets] verschieben&quot;für Assets in Sammlungen lädt nicht den gesamten HTML-Inhalt, z. B. die Option &quot; [!UICONTROL Anpassen/Neu veröffentlichen] &quot;. Daher können die Verwender den Verschiebevorgang nicht abschließen (NPR-33860).
 
@@ -290,6 +290,16 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 >[!NOTE]
 >
 >[!DNL Experience Manager] Service Pack enthält keine Korrekturen für [!DNL Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+
+Nach der Installation des Add-On-Pakets [!DNL Experience Manager Forms] 6.5.6.0:
+
+* Stop the [!DNL Experience Manager Forms] instance.
+
+* Löschen `bcpkix-1.51`, `bcmail-1.51`und `bcprov-1.51` JAR-Dateien aus dem `crx-repository\launchpad\ext` Ordner.
+
+* Löschen` sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider` der Eigenschaft aus der `sling.properties` Datei.
+
+* Restart the [!DNL Experience Manager Forms] instance.
 
 **Adaptive Formulare**
 
