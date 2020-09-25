@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 85%
 
 ---
 
@@ -54,8 +57,7 @@ Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie die fol
    ```shell
    sling.bootdelegation.sun=sun.*,com.sun.*,sun.misc.*
    sling.bootdelegation.ibm=com.ibm.xml.*,com.ibm.*
-   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
-   sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
+   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*  
    ```
 
 1. Speichern und schließen Sie die Datei „sling.properties“.
@@ -91,25 +93,27 @@ Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
 >[!NOTE]
 >
->Ersetzen Sie beim Wechsel in die Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Bevor Sie eine abgelaufene oder Testberechtigung aktualisieren, müssen Sie die alten Reader Extensions-Berechtigungen löschen.
+>Ersetzen Sie beim Wechsel in die Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Achten Sie darauf, die Anmeldeinformationen für die alten Reader-Erweiterungen zu löschen, bevor Sie eine abgelaufene oder Testberechtigung aktualisieren.
 
 ## Erstellen eines Aliasnamens für das Gerät {#configuredeviceinaemconsole}
 
 Der Aliasname enthält alle Parameter, die ein HSM oder eToken erfordert. Befolgen Sie die nachfolgenden Anweisungen, um einen Aliasnamen für jede HSM- oder eToken-Berechtigung zu erstellen, die eSign oder Digital Signatures verwendet:
 
-1. Öffnen Sie die AEM-Konsole. Die Standard-URL der AEM-Konsole lautet https://&lt;Host>:&lt;Port>/system/console/configMgr
+1. Öffnen Sie die AEM-Konsole. Die Standard-URL AEM Konsole lautet https://&lt;Host>:&lt;Port>/system/console/configMgr
 1. Öffnen Sie den **HSM Credentials Configuration Service** und geben Sie Werte in die folgenden Felder ein:
 
    * **Berechtigungsalias**: Geben Sie eine Zeichenfolge ein, die verwendet wird, um den Aliasnamen zu identifizieren. Dieser Wert wird als Eigenschaft für einige Digital Signatures-Vorgänge wie etwa das Signieren eines Signaturfelds verwendet.
    * **DLL-Pfad**: Geben Sie den vollständig qualifizierten Pfad der HSM- oder eToken-Clientbibliothek auf dem Server an. Beispiel: c:\Programme\LunaSA\cryptoki.dll. In einer Clusterumgebung muss dieser Pfad für alle Server im Cluster identisch sein.
    * **HSM-Pin**: Legen Sie ein Kennwort fest, das benötigt wird, um auf den Geräteschlüssel zuzugreifen.
    * **HSM-Steckplatz-ID**: Geben Sie eine Steckplatz-ID als Ganzzahl an. Die Steckplatz-ID wird für jeden Client einzeln festgelegt. Falls Sie einen zweiten Rechner bei einer anderen Partition registrieren (z. B. HSMPART2 auf demselben HSM-Gerät), wird Steckplatz 1 für diesen Client mit der Partition HSMPART2 verknüpft.
+
    >[!NOTE]
    >
    >Geben Sie beim Konfigurieren von Etoken einen numerischen Wert für das HSM-Steckplatz-ID-Feld ein. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.
 
    * **Zertifikat SHA1**: Geben Sie den SHA1-Wert (Thumbprint) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung an. Stellen Sie sicher, dass in dem SHA1-Wert keine Leerzeichen verwendet werden. Wenn Sie ein physisches Zertifikat verwenden, ist dies nicht erforderlich.
    * **HSM-Gerätetyp**: Wählen Sie den Hersteller des HSM- (Luna- oder anderen) oder eToken-Geräts aus.
+
    Klicken Sie auf **Speichern**. Das Hardware-Sicherheitsmodul ist für AEM Forms konfiguriert. Jetzt können Sie das Hardware-Sicherheitsmodul mit AEM Forms verwenden, um Dokumente zu signieren oder zu zertifizieren.
 
 ## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines auf dem Gerät gespeicherten Dokuments mit digitalem Schlüssel  {#programatically}
