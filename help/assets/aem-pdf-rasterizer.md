@@ -1,19 +1,19 @@
 ---
-title: Verwenden Sie PDF-Rasterfunktion, um Darstellungen von PDF-Dateien zu erstellen.
-description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Raster-Bibliothek in [!DNL Adobe Experience Manager].
+title: Verwenden des PDF-Rasters zum Generieren von Darstellungen
+description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Rasterbibliothek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 40%
+source-wordcount: '732'
+ht-degree: 43%
 
 ---
 
 
 # PDF-Raster verwenden {#using-pdf-rasterizer}
 
-When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. Die PDF-Rasterbibliothek von Adobe kann eine zuverlässigere und genauere Ausgabe im Vergleich zur Ausgabe aus einer Standardbibliothek generieren. Adobe empfiehlt die Verwendung der PDF-Rasterbibliothek für folgende Szenarien:
+When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. Die PDF-Rasterbibliothek der Adobe kann eine zuverlässigere und genauere Ausgabe im Vergleich zur Ausgabe aus einer Standardbibliothek generieren. Adobe empfiehlt die Verwendung der PDF-Rasterbibliothek für folgende Szenarien:
 
 * Starke, inhaltsintensive AI-Dateien oder PDF-Dateien.
 * AI-Dateien und PDF-Dateien mit Miniaturansichten, die nicht standardmäßig generiert werden.
@@ -86,7 +86,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    * MIME-Typen: `application/pdf` oder `application/postscript`
 
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. Hinzufügen benutzerdefinierte Miniaturansicht-Konfiguration nach Bedarf.
+   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. hinzufügen benutzerdefinierte Miniaturansicht-Konfiguration nach Bedarf.
 
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
