@@ -1,11 +1,11 @@
 ---
-title: '[!DNL-Adobe Experience Manager] Best Practices für [!DNL Adobe Creative Cloud] die Freigabe von Ordnern.'
+title: Best [!DNL Adobe Creative Cloud] Practices für die Ordnerfreigabe
 description: Konfigurieren Sie [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] den Ordneraustausch mit Adobe Creative Cloud (CC)-Benutzern.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '957'
 ht-degree: 18%
 
 ---
@@ -28,7 +28,7 @@ This type of integration can be used in the following use cases, especially when
 >
 >Before reading this document, you can review the overall [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md) for an overview of the integration.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 [!DNL Experience Manager] zum [!DNL Creative Cloud] Freigeben von Ordnern setzt die serverseitige Freigabe von Ordnern und Dateien zwischen [!DNL Assets] und [!DNL Creative Cloud] Konten voraus. Creative professionals, who use the [!DNL Creative Cloud] desktop app on their desktops, can additionally make the shared folders available directly on their disks using [!DNL Adobe CreativeSync] technology.
 
@@ -39,9 +39,9 @@ Das folgende Diagramm bietet einen Überblick über die Integration.
 Die Integration umfasst folgende Elemente:
 
 * **[!DNL Experience Manager Assets]** im Unternehmensnetzwerk (verwaltete Dienste oder lokale Dienste) bereitgestellt werden: Die Freigabe von Ordnern wird hier initiiert.
-* **[!DNL Adobe Marketing Cloud Assets]Hauptdienst **: fungiert als Vermittler zwischen[!DNL Experience Manager]und[!DNL Creative Cloud]Datenspeicherung. Ein Administrator eines Unternehmens, das die Integration verwendet, muss eine Vertrauensbeziehung zwischen dem Marketing Cloud und der[!DNL Assets]Bereitstellung herstellen. They also[define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that[!DNL Assets]users can share folders too for additional security.
+* **[!DNL Adobe Marketing Cloud Assets]Hauptdienst**: fungiert als Vermittler zwischen [!DNL Experience Manager] und [!DNL Creative Cloud] Datenspeicherung. Ein Administrator eines Unternehmens, das die Integration verwendet, muss eine Vertrauensbeziehung zwischen dem Marketing Cloud und der [!DNL Assets] Bereitstellung herstellen. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
 
-* **[!DNL Creative Cloud]Assets Web Services **(Web-Benutzeroberfläche für Datenspeicherung und[!DNL Creative Cloud]Dateien): Hier können bestimmte Creative Cloud-App-Benutzer, für die ein[!DNL Assets]Ordner freigegeben wurde, die Einladung annehmen und den Ordner in ihrer Creative Cloud-Konto-Datenspeicherung anzeigen.
+* **[!DNL Creative Cloud]Assets Web Services** (Web-Benutzeroberfläche für Datenspeicherung und [!DNL Creative Cloud] Dateien): Hier können bestimmte Creative Cloud-App-Benutzer, für die ein [!DNL Assets] Ordner freigegeben wurde, die Einladung annehmen und den Ordner in ihrer Creative Cloud-Konto-Datenspeicherung anzeigen.
 * **Creative Cloud-Desktop-App**: (Optional) Ermöglicht den direkten Zugriff auf freigegebene Ordner/Dateien vom Desktop des kreativen Benutzers über die Synchronisierung mit der [!DNL Creative Cloud] Assets-Datenspeicherung.
 
 ## Funktionen und Einschränkungen {#characteristics-and-limitations}
