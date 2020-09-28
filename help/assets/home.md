@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager 6.5 Asset-Benutzerhandbuch
-seo-title: Adobe Experience Manager 6.5 Asset-Benutzerhandbuch
+title: Asset-Handbuch
+seo-title: Handbuch zu Adobe Experience Manager 6.5 Assets
 description: In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 seo-description: Behandelt alle Asset-Aufgaben des Experience Managers, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '371'
 ht-degree: 18%
 
 ---
 
 
-# Adobe Experience Manager 6.5 Asset-Benutzerhandbuch
+# Handbuch zu Adobe Experience Manager 6.5 Assets
 
 In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 
@@ -26,12 +26,12 @@ In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt,
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Sicherheitscheckliste](/help/sites-administering/security-checklist.md)
 
-## Benutzerhandbücher zu Experience Manager 6.5
+## Experience Manager 6.5 - Handbücher
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
 | [Versionshinweise](/help/release-notes/home.md) | Bietet wichtige Informationen zur aktuellen Version, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme |
-| [Forms-Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
+| [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
 | [Communities-Benutzerhandbuch](/help/communities/home.md) | Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
 | [Administratorhandbuch](/help/sites-administering/home.md) | Verstehen Sie, wie Sie Experience Manager verwalten. |
 | [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in Experience Manager erläutert. |
@@ -45,7 +45,7 @@ In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt,
 
 ## Wichtige Experience Manager-Ressourcen
 
-* [Experience Manager-Videolehrgänge](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Experience Manager Video-Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Community-Forum zum Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
