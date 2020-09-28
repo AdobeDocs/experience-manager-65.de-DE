@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
 workflow-type: tm+mt
-source-wordcount: '7077'
+source-wordcount: '7109'
 ht-degree: 51%
 
 ---
@@ -51,7 +51,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
 >[!NOTE]
 >
->Für den Zugriff auf die Benutzeroberfläche von Interactive Communications Agent im AEM-Posteingang müssen cm-agent-user und workflow-users Gruppen zugewiesen sein.
+>Für den Zugriff auf die Benutzeroberfläche von Interactive Communications Agent in AEM Posteingang müssen cm-agent-users und Gruppen von Workflow-Benutzern zugewiesen sein.
 
 * **Adaptives Formular oder interaktiver Kommunikationspfad**: Geben Sie den Pfad des adaptiven Formulars oder der interaktiven Kommunikation an. Sie können das adaptive Formular oder die interaktive Kommunikation verwenden, die an den Workflow gesendet wird, an einem absoluten Pfad verfügbar ist, oder das adaptive Formular aus einem Pfad abrufen, der in einer Variablen des Zeichenfolgen-Datentyps gespeichert ist.
 * **PDF-Eingabedatei auswählen mit:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Nutzlast ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Dokument-Datentyps verwendet. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
@@ -94,7 +94,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **HTML-E-Mail-Vorlage**: Wählen Sie die E-Mail-Vorlage für die Benachrichtigungs-E-Mail. Um eine Vorlage zu bearbeiten, ändern Sie die Datei unter /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt im CRX-Repository.
 * **Delegierung zulassen an:** AEM Inbox bietet dem angemeldeten Benutzer eine Option, den zugewiesenen Workflow an einen anderen Benutzer zu übertragen. Sie dürfen innerhalb derselben Gruppe oder an den Workflow-Benutzer einer anderen Gruppe delegieren. Wenn die Aufgabe einem einzelnen Benutzer zugewiesen ist und die Option **Delegierung an Mitglieder der Bevollmächtigten-Gruppe zulassen** aktiviert ist, kann die Aufgabe nicht an einen anderen Benutzer oder eine andere Gruppe übertragen werden.
 * **Freigabeeinstellungen:** AEM Inbox bietet Optionen zum Freigeben einer einzelnen oder aller Aufgaben im Posteingang für andere Benutzer:
-   * Wenn die Option &quot; **Zulassen, dass ein Verantwortlicher explizit in einem Posteingang** freigegeben wird&quot;aktiviert ist, kann der Benutzer auf die Aufgabe klicken und sie für einen anderen AEM-Benutzer freigeben.
+   * Wenn die Option &quot; **Zulassen, dass ein Verantwortlicher explizit in einem Posteingang** freigegeben wird&quot;aktiviert ist, kann der Benutzer auf die Aufgabe klicken und sie für einen anderen AEM freigeben.
    * Wenn die Option &quot;Freigeben durch **Posteingang** zulassen&quot;aktiviert ist und ein Benutzer seine Posteingangselemente freigibt oder anderen Benutzern den Zugriff auf seine Posteingangselemente erlaubt, werden nur Aufgaben mit aktivierter Option für andere Benutzer freigegeben.
 
 * **Aktionen > Standardaktionen:** Standardmäßig sind die Aktionen &quot;Senden&quot;, &quot;Speichern&quot;und &quot;Zurücksetzen&quot;verfügbar. Alle Standardaktionen sind standardmäßig aktiviert.
@@ -185,7 +185,7 @@ Um die Eingaben für Felder des Schritts zu erläutern, werden die folgende Date
 <table>
  <tbody> 
   <tr> 
-   <td>Eigenschaft</td> 
+   <td>Property</td> 
    <td>Wert<br /> </td> 
   </tr> 
   <tr> 
@@ -251,7 +251,8 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 * **Wählen Sie Input JSON-Dokument mit**: Die JSON-Datei, die Werte für alle Dienstargumente enthält. Der Pfad der JSON-Datei kann **relativ zur Payload** oder einem **absoluten Pfad sein.** Sie können das JSON-Eingabedatenmodell auch mit einer Variablen des JSON- oder Formulardatenmodells abrufen.
 
 * **JSON Dot Notation:** Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Service-Parameter zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Parameter zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie ein JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie insurance.customerDetails an, um alle Details eines Kunden als Eingabe für den Dienst anzugeben.
-* **Output of service > Map and write output values to variable or metadata:** Wählen Sie die Option zum Speichern der Ausgabewerte als Eigenschaften des Metadaten-Knotens der Workflow-Instanz im CRX-Repository. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu. Gleichermaßen können Sie die Ausgabe in einer Variablen des Typs &quot;Long&quot;speichern.
+* **Output of service > Map and write output values to variable or metadata:** Wählen Sie die Option zum Speichern der Ausgabewerte als Eigenschaften des Metadaten-Knotens der Workflow-Instanz im CRX-Repository. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu. Gleichermaßen können Sie die Ausgabe in einer Variablen des Typs &quot;Lang&quot;speichern. Wenn Sie eine Eigenschaft für die Option &quot; **[!UICONTROL Dienstausgabeattribut&quot;auswählen, die zugeordnet]** werden soll, werden nur Variablen, die Daten der ausgewählten Eigenschaft speichern können, für die Option &quot;Ausgabe **[!UICONTROL speichern unter]**&quot;ausgefüllt.
+
 * **Output of service > Save output to variable or a JSON file:** Wählen Sie die Option, um die Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, in einem Pfad relativ zur Nutzlast oder in einer Variablen zu speichern.
 * **Output JSON-Dokument mit den folgenden Optionen speichern:** Speichern Sie die JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen des JSON- oder Formulardatenmodells-Datentyps speichern.
 
@@ -279,9 +280,9 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 
 ## Schritt „Document Services“{#document-services-steps}
 
-Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. AEM Forms stellt einen separaten AEM-Workflow-Schritt für jeden Dokument-Dienst bereit.
+Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. AEM Forms stellt für jeden Dokument-Dienst einen AEM Workflow-Schritt bereit.
 
-Ähnlich wie andere Arbeitsablaufschritte wie &quot;Aufgabe zuweisen&quot;, &quot;E-Mail senden&quot;und &quot;Dokument unterschreiben&quot;können Sie Variablen in allen AEM Dokument-Dienstschritten verwenden. Weitere Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
+Ähnlich wie bei anderen AEM Forms-Arbeitsablaufschritten wie &quot;Aufgabe zuweisen&quot;, &quot;E-Mail senden&quot;und &quot;Dokument unterschreiben&quot;können Sie Variablen in allen AEM Dokument Services-Schritten verwenden. Weitere Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
 
 ### Schritt „Dokumentzeitstempel einfügen“{#apply-document-time-stamp-step}
 
