@@ -1,11 +1,11 @@
 ---
-title: Checken Sie Ihre digitalen Assets ein und checken Sie sie zur Bearbeitung aus.
+title: Assets zur Bearbeitung ein- und auschecken
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '435'
 ht-degree: 51%
 
 ---
