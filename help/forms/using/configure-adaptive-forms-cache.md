@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
+source-git-commit: d5a649337acdc01c58ecc473e7c919e06cbd0188
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 21%
@@ -127,7 +127,8 @@ Führen Sie die folgenden Schritte aus, um die Zwischenspeicherung adaptiver For
       # added for AEM forms specific use cases.
       /0003 { /glob "dataRef" /type "allow" }
       }
-   
+   ```
+
 Ihre AEM Umgebung ist so konfiguriert, dass adaptive Formulare zwischengespeichert werden. Es speichert alle Arten adaptiver Formulare zwischen. Wenn Sie vor der Bereitstellung der zwischengespeicherten Seite die Benutzerzugriffsberechtigungen für eine Seite überprüfen müssen, lesen Sie [Zwischenspeichern von geschützten Inhalten](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Fehlerbehebung {#troubleshooting}
