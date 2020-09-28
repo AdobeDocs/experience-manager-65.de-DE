@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].'
+title: '[!DNL Assets] HTTP-API.'
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1672'
 ht-degree: 82%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 # [!DNL Assets] HTTP-API {#assets-http-api}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung von Inhaltsfragmenten](/help/assets/assets-api-content-fragments.md).
 
