@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
 
-Die Funktion für die Bewertung und Kennzeichnung von AEM Communities bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
+Die AEM Communities-Funktion für Scoring und Abzeichen bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
 
 Die Details zur Einrichtung der Funktion finden Sie unter
 
@@ -31,11 +31,11 @@ Diese Seite enthält weitere technische Details:
 
 * So [zeigen Sie eine Markierung](#displaying-badges) als Bild oder Text an
 * So aktivieren Sie die umfassende [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
-* Wie [kann ich auf UGC](#ugc-for-scoring-and-badging) im Zusammenhang mit Scoring und Abzeichen zugreifen?
+* Wie [Zugriff auf UGC](#ugc-for-scoring-and-badging) in Zusammenhang mit Scoring und Abzeichen
 
 >[!CAUTION]
 >
->Die in CRXDE Lite sichtbare Implementierungsstruktur kann geändert werden.
+>Die in der CRXDE Lite sichtbare Implementierungsstruktur kann sich ändern.
 
 ## Anzeigen von Abzeichen {#displaying-badges}
 
@@ -83,7 +83,7 @@ Ausführliche Anweisungen finden Sie unter [Erstellen einer benutzerdefinierten 
 
 So richten Sie schnell eine Slinglog-Datei ein:
 
-1. Greifen Sie beispielsweise auf die Web-Konsolenprotokoll-Unterstützung **des** Adobe Experience Managers zu
+1. So können Sie beispielsweise auf die **Adobe Experience Manager Web-Konsolenprotokoll-Unterstützung** zugreifen
 
    * https://localhost:4502/system/console/slinglog
 
@@ -102,7 +102,7 @@ So richten Sie schnell eine Slinglog-Datei ein:
 
 
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![debug-scoring-log](assets/debug-scoring-log.png)
 
 So zeigen Sie Protokolleinträge an:
 
@@ -118,17 +118,17 @@ So zeigen Sie Protokolleinträge an:
 
    * Beispiel: `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png)
+![scoring-log](assets/scoring-log.png)
 
 ## UGC für Scoring und Bading {#ugc-for-scoring-and-badging}
 
 Es ist möglich, die UGC in Bezug auf die Bewertung und Abzeichen zu Ansichten, wenn die gewählte SRP entweder JSRP oder MSRP, aber nicht ASRP ist. (Wenn Sie mit diesen Begriffen nicht vertraut sind, finden Sie weitere Informationen unter [Community Content Datenspeicherung](/help/communities/working-with-srp.md) und Übersicht über [Datenspeicherung Resource Provider](/help/communities/srp.md).)
 
-Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da die UGC mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)leicht zugänglich ist.
+Die Beschreibungen für den Zugriff auf Scoring- und Abzeichen-Daten verwenden JSRP, da der Zugriff auf das UGC mit der [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)einfach ist.
 
 **JSRP für Autor**: Das Experimentieren in der Autorendatei führt zu einer UGC, die nur in der Autorenversion der Umgebung sichtbar ist.
 
-**JSRP bei Veröffentlichung**: Ähnlich ist es bei Tests auf der Veröffentlichungsinstanz erforderlich, auf CRXDE Lite mit Administratorrechten auf einer Veröffentlichungsinstanz zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](/help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Abrufen von Inhalten), muss CRXDE Lite [aktiviert werden](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests auf der Umgebung &quot;Veröffentlichen&quot;erforderlich, auf die CRXDE Lite mit Administratorrechten auf einer Instanz im Veröffentlichungsmodus zuzugreifen. Wenn die Instanz im Veröffentlichungsmodus im [Produktionsmodus](/help/sites-administering/production-ready.md) ausgeführt wird (nicht im Ausführungsmodus zum Beispielinhalt), muss die CRXDE Lite [aktiviert](/help/sites-administering/enabling-crxde-lite.md)werden.
 
 Der Basisort von UGC auf JSRP ist `/content/usergenerated/asi/jcr/`.
 
@@ -145,16 +145,16 @@ Die neuesten Javadocs für das installierte Feature Pack stehen Entwicklern aus 
 
 ### Beispieleinrichtung {#example-setup}
 
-Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und Abzeichen für ein Forum auf zwei verschiedenen AEM-Sites:
+Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und Abzeichen für ein Forum auf zwei verschiedenen AEM Websites:
 
-1. Eine AEM-Site *mit* einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde):
+1. Eine AEM Site *mit* einer eindeutigen ID (Community-Site, die mithilfe des Assistenten erstellt wurde):
 
    * Verwenden der Website &quot;Erste Schritte&quot;-Lernprogramm (Interaktion), die während der [Übungen für die ersten Schritte erstellt wurde](/help/communities/getting-started.md)
    * Suchen Sie den Knoten der Forumseite
 
       `/content/sites/engage/en/forum/jcr:content`
 
-   * Hinzufügen und Abzeichen
+   * hinzufügen und Abzeichen
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
@@ -171,21 +171,21 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
+   * hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
       `allowBadges = true`
 
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält eine Bronze-Abzeichen
 
 
-1. Eine AEM-Site *ohne* eine eindeutige ID:
+1. Eine AEM Site *ohne* eine eindeutige ID:
 
    * Verwenden des Handbuchs &quot; [Community-Komponenten&quot;](/help/communities/components-guide.md)
    * Suchen Sie den Knoten der Forumseite
 
       `/content/community-components/en/forum/jcr:content`
 
-   * Hinzufügen und Abzeichen
+   * hinzufügen und Abzeichen
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
@@ -202,7 +202,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Hinzufügen Eigenschaft zum Anzeigen von Abzeichen
+   * hinzufügen Eigenschaft zum Anzeigen von Abzeichen
 
       `allowBadges = true`
 
@@ -217,7 +217,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 
    Da ein Benutzer zwei Bronze-Abzeichen erhalten hat und ein Moderator-Abzeichen erhalten hat, erscheint der Benutzer mit seinem Forumseintrag so.
 
-![chlimage_1-250](assets/chlimage_1-250.png)
+   ![moderator](assets/moderator.png)
 
 >[!NOTE]
 >
@@ -229,7 +229,7 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
    >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
-* Erstellen von eindeutigen Abzeichen-Bildern für verschiedene AEM-Sites
+* Erstellen einzigartiger Abzeichen für verschiedene AEM Sites
 
 >
 
@@ -245,7 +245,7 @@ Zu Ermittlungszwecken ist der Basisordner, der Ergebnisse enthält, z. B. mithil
 
 Der untergeordnete Knoten von `scoring` ist der Name der Bewertungsregel. Eine Best Practice ist daher, dass die Namen von Bewertungsregeln auf einem Server global eindeutig sind.
 
-Für die Geometrixx-Engage-Site befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Bewertungsregel, der Community-Site-ID ( `engage-ba81p`), einer eindeutigen ID und der Benutzer-ID verknüpft ist:
+Für die Geometrixx Engage-Site befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Bewertungsregel, der Site-ID der Community ( `engage-ba81p`), einer eindeutigen ID und der ID des Benutzers verknüpft ist:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
@@ -255,7 +255,7 @@ Auf der Guide-Site &quot;Community-Komponenten&quot;befinden sich der Benutzer u
 
 Das Ergebnis wird in der Eigenschaft gespeichert, `scoreValue_tl` die direkt einen Wert enthält oder indirekt auf einen atomicCounter verweist.
 
-![chlimage_1-251](assets/chlimage_1-251.png)
+![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### UGC für Zugriffsabzeichen {#access-badging-ugc}
 
@@ -271,11 +271,11 @@ Nach dem Pfad zum Profil des Benutzers, der in einem Ablagenordner endet, z. B.:
 
 #### Ausgezeichnetes Zeichen {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png)
+![award-badging-ugc](assets/access-badging-ugc.png)
 
 #### Zugewiesenes Zeichen {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png)
+![assign-badge](assets/assigned-badge.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
