@@ -8,9 +8,9 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
+source-git-commit: 0b3884301e09eba6860891f00a98508033d12ec8
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2058'
 ht-degree: 65%
 
 ---
@@ -86,7 +86,7 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
 
    1. Tap the Customer ID field and tap ![cmppr](assets/cmppr.png) properties.
    1. Kopieren Sie den Inhalt des Felds **[!UICONTROL Titel]** in das Feld **[!UICONTROL Platzhaltertext]**.
-   1. Delete the content of the **[!UICONTROL Title]** field and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Löschen Sie den Inhalt des Felds **[!UICONTROL Titel]** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Wiederholen Sie die vorherigen drei Schritte für alle Textfelder, das numerische Feld und das E-Mail-Feld im Formular.
 
       ![updated-adaptive-form](assets/updated-adaptive-form.png)
@@ -104,7 +104,7 @@ In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Kompone
 1. Log in to the AEM author instance and navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Themes]**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Design]**. The [!UICONTROL Create Theme] page with the fields required to create a theme appears. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
 
-   * **Title:** Specify a title of the theme. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
+   * **Titel:** Geben Sie einen Titel des Designs an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
    * **Name:** Geben Sie den Namen des Designs an. Zum Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tap **[!UICONTROL Open]** to open the newly created theme in a new tab. Design wird im Design-Editor geöffnet. For styling, the theme editor uses an out-of-the-box adaptive form shipped with AEM [!DNL Forms].
@@ -135,10 +135,10 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
    | Schriftfarbe | FFFFFF |
    | Schriftgrad | 54px |
 
-1. Tap the [!UICONTROL header] widget and tap **[!UICONTROL Header]**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Expand the **[!UICONTROL Dimensions &amp; Position]** accordion, set the **[!UICONTROL Height]** to `120px`, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tap the [!UICONTROL header] widget and tap **[!UICONTROL Header]**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie das Akkordeon &quot; **[!UICONTROL Dimensionen und Position]** &quot;, legen Sie die **[!UICONTROL Höhe]** auf `120px`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expand the **[!UICONTROL Background]** accordion of the header widget, set the **[!UICONTROL Background Color]** to `F6921E.`
 
-   Hover over **[!UICONTROL Image &amp; Gradient]** > **[!UICONTROL + Add]**, tap **[!UICONTROL Image]**. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Hover over **[!UICONTROL Image &amp; Gradient]** > **[!UICONTROL + Add]**, tap **[!UICONTROL Image]**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschaft | Wert |
    |---|---|
@@ -170,13 +170,13 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
     </tbody> 
    </table>
 
-1. Tippen Sie auf das Fußzeilen-Widget und tippen Sie auf **[!UICONTROL Fußzeile]**. Expand the **[!UICONTROL Background]** accordion, set the **[!UICONTROL Background Color]** to `F6921E`, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf das Fußzeilen-Widget und tippen Sie auf **[!UICONTROL Fußzeile]**. Erweitern Sie das Akkordeon &quot; **[!UICONTROL Hintergrund]** &quot;, legen Sie die **[!UICONTROL Hintergrundfarbe]** auf `F6921E`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Formatieren Sie die Datenerfassungskomponente und wenden Sie einen Hintergrund auf das adaptive Formular an.{#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen. Zum Beispiel Textfeld und Zahlenfeld. Sie können für alle Datenerfassungskomponenten denselben Stil oder für jede Komponente einen separaten Stil bereitstellen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Lieferadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
-1. Tap the **[!UICONTROL Customer ID]** field and tap the **[!UICONTROL Field Widget]** option. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tap the **[!UICONTROL Customer ID]** field and tap the **[!UICONTROL Field Widget]** option. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -232,7 +232,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
     </tbody> 
     </table>
 
-1. Tap on the empty area above the **[!UICONTROL Customer ID]** field and tap **[!UICONTROL Responsive Panel Container]**. Legen Sie den **[!UICONTROL Hintergrund]** > **[!UICONTROL Hintergrundfarbe]** auf F1F2F2 fest. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tap on the empty area above the **[!UICONTROL Customer ID]** field and tap **[!UICONTROL Responsive Panel Container]**. Legen Sie den **[!UICONTROL Hintergrund]** > **[!UICONTROL Hintergrundfarbe]** auf F1F2F2 fest. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![](do-not-localize/responsive-panel-container.png)
 
@@ -240,7 +240,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
 
 You can use a custom theme to apply an identical style to all the buttons of the adaptive form and [inline styling](/help/forms/using/inline-style-adaptive-forms.md) to apply a style to a specific button. So gestalten Sie die Schaltflächen:
 
-1. Tippen Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Option]**. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf **[!UICONTROL Senden]** und dann auf **[!UICONTROL Option]**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -442,18 +442,18 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
 
 Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Alle Geräte, auf denen das adaptive Formular angezeigt wird, verfügen möglicherweise nicht über die zum Entwerfen des adaptiven Formulars verwendeten Schriftarten. Sie können einen Webschriftartdienst verwenden, um die erforderlichen Schriftarten an das Zielgruppe-Gerät zu senden.
 
-[!DNL Adobe Typekit] ist ein Webschriftarten-Dienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. To use [!DNL Adobe Typekit] in an adaptive form:
+[!DNL Adobe Fonts] ist ein Webschriftarten-Dienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. To use [!DNL Adobe Fonts] in an adaptive form:
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Weitere Informationen](https://fonts.adobe.com/)
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] heißt jetzt Adobe Fonts und ist in Creative Cloud und anderen Abonnements enthalten. [Weitere Informationen](https://fonts.adobe.com/)
 
-1. Create an [Adobe Typekit](https://typekit.com/) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Typekit] fonts (Web fonts) in an adaptive form.
-1. In the AEM [!DNL Forms] server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**. On the Cloud Services page, navigate to **[!UICONTROL Third Party Services]** > **[!UICONTROL Typekit]**, and click **[!UICONTROL Configure]** Now under [!UICONTROL Typekit]. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche +, um eine neue Instanz zu erstellen.
+1. Create an [Adobe Fonts](https://typekit.com/) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web fonts) in an adaptive form.
+1. Navigieren Sie im AEM [!DNL Forms] Server zu ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **** Adobe Fonts. Öffnen Sie jetzt einen Konfigurationsordner. If a configuration is already available, click the **[!UICONTROL Create]** button to create a new instance.
 
    On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. Daraufhin werden Sie zur Seite „Konfiguration“ geleitet. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
 
-1. Configure your theme to use the [!DNL TypeKit] configuration. On the author instance, open **[!UICONTROL Global Theme]** in the theme editor. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In **[!UICONTROL Typekit Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+1. Configure your theme to use the [!DNL Adobe Fonts] configuration. On the author instance, open **[!UICONTROL Global Theme]** in the theme editor. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
 
-   The fonts added to the [!UICONTROL Typekit] are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+   The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
 
