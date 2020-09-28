@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren Sie das Asset-Tagging mit dem Smart Content Service.
+title: Asset-Tags mit dem Smart Content Service konfigurieren
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 506b965e4f1c18230357f25532d3fdd10f526ef0
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1240'
 ht-degree: 47%
 
 ---
@@ -44,7 +44,7 @@ To enable Enhanced Smart Tags, in addition to the above, also install the latest
 
 Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profils in der Adobe Developer Console.
 
-1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Werkzeuge]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy-Cloud Service]** auf.
+1. Rufen Sie in der [!DNL Experience Manager] Benutzeroberfläche **[!UICONTROL Werkzeuge]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy-Cloud Services]** auf.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 
