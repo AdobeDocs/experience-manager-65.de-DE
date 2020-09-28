@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Integrieren mit [!DNL Adobe InDesign Server]'
+title: ' [!DNL Assets] Integrieren mit [!DNL InDesign Server]'
 description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 37%
@@ -23,7 +23,7 @@ To fully upload files to [!DNL Experience Manager Assets] that you have created 
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] wird als zwei separate Angebote angeboten. [Adobe InDesign](https://www.adobe.com/de/products/indesign.html) -Desktop-App, mit der Seitenlayouts für die Druck- und digitale Verteilung entworfen werden. [Mit Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) können Sie automatisierte Dokumente programmgesteuert auf Grundlage der von Ihnen erstellten Elemente erstellen [!DNL InDesign]. Es dient als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://www.adobe.com/devnet/scripting.html) -Engine anbietet. Die Skripte sind in [!DNL ExtendScript]ähnlich wie [!DNL JavaScript]. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] wird als zwei separate Angebote angeboten. [Adobe InDesign](https://www.adobe.com/de/products/indesign.html) -Desktop-App, die zum Entwerfen von Seitenlayouts für die Druck- und digitale Distribution verwendet wird. [Mit Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) können Sie automatisierte Dokumente programmgesteuert erstellen, basierend auf dem, was Sie mit erstellt haben [!DNL InDesign]. Es dient als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://www.adobe.com/devnet/scripting.html) -Engine anbietet. Die Skripte sind in [!DNL ExtendScript]ähnlich wie [!DNL JavaScript]. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## How the extraction works {#how-the-extraction-works}
 
@@ -112,7 +112,7 @@ Argumente und Skriptpfade zum Extrahieren von Medien
 
 * **Skripten** erweitern: Hier können Sie verschiedene Skriptkombinationen angeben. If you want your own scripts to be executed on the [!DNL InDesign Server], save the scripts at `/apps/settings/dam/indesign/scripts`.
 
-Weitere Informationen zu [!DNL Adobe InDesign] Skripten finden Sie in der [InDesign-Entwicklerdokumentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Weitere Informationen zu [!DNL Adobe InDesign] Skripten finden Sie in der Dokumentation zu [InDesign-Entwicklern](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -201,7 +201,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die blockierungsliste von IDS-Mitarbeitern aktivieren.
+>Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die Blockierungsliste von IDS-Mitarbeitern aktivieren.
 >
 >To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
 >
