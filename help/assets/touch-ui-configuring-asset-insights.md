@@ -1,12 +1,12 @@
 ---
-title: Konfigurieren Sie Asset Insights, um Analysen zur Verwendung digitaler Assets zu erhalten.
+title: Konfigurieren Sie Asset Insights für Analysen.
 description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 34%
+source-wordcount: '228'
+ht-degree: 35%
 
 ---
 
