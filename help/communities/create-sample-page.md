@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
 
 # Create a Sample Page {#create-a-sample-page}
 
-Ab AEM 6.1 Communities besteht die einfachste Möglichkeit, eine Beispielseite zu erstellen, darin, eine einfache Community-Site zu erstellen, die aus einer Seitenfunktion besteht.
+Ab AEM 6.1 Communities ist es am einfachsten, eine Beispielseite zu erstellen, eine einfache Community-Site zu erstellen, die aus einer Seitenfunktion besteht.
 
 Dazu gehört eine parsys-Komponente, damit Sie Komponenten für das Authoring [aktivieren können](basics.md#accessing-communities-components).
 
@@ -38,7 +38,7 @@ Erstellen Sie zunächst eine einfache [Community-Site-Vorlage](sites.md).
 
 Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Extras]** > **[!UICONTROL Communities]** > **[!UICONTROL Site-Vorlagen]**.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![create-site-template](assets/create-site-template1.png)
 
 * Wählen Sie nun eine der folgenden Optionen aus `Create button`
 * GRUNDINFORMATIONEN
@@ -47,7 +47,7 @@ Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Ext
    * `Description`: Eine Vorlage, die aus einer einzelnen Seitenfunktion besteht.
    * Wählen Sie nun eine der folgenden Optionen aus `Enabled`
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![site-template-editor](assets/site-template-editor.png)
 
 * STRUKTUR
 
@@ -57,7 +57,7 @@ Wählen Sie in der globalen Navigation in einer Autoreninstanz **[!UICONTROL Ext
       * `Title`: Einzelseite
       * `URL`: page
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![site-template-editor-structure](assets/site-template-editor1.png)
 
 * Für **`Save`** die Konfiguration auswählen
 * Für **`Save`** die Sitevorlage auswählen
@@ -68,7 +68,7 @@ Erstellen Sie jetzt eine neue Community-Site basierend auf der einfachen Site-Vo
 
 Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!UICONTROL Communities > Sites]**.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![create-community-site](assets/create-community-site1.png)
 
 * Symbol **`Create`** auswählen
 
@@ -83,7 +83,8 @@ Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!U
       * url = http://localhost:4502/content/sites/sample
 
       * `Template`: auswählen `Single Page Template`
-      ![chlimage_1-86](assets/chlimage_1-86.png)
+
+      ![create-community-site-template](assets/create-community-site-template.png)
 
 
 * Wählen Sie nun eine der folgenden Optionen aus `Next`
@@ -98,23 +99,23 @@ Wählen Sie nach dem Erstellen der Sitevorlage aus der globalen Navigation **[!U
 
 * Wählen Sie nun eine der folgenden Optionen aus `Create`
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
+   ![create-community-site](assets/create-community-site.png)
 
 ## Veröffentlichen der Site {#publish-the-site}
 
-![chlimage_1-88](assets/chlimage_1-88.png)
+![publish-site](assets/publish-site.png)
 
 Wählen Sie in der [Community-Sites-Konsole](sites-console.md)das Veröffentlichungssymbol aus, um die Site zu veröffentlichen. Die Standardeinstellung ist &quot;http://localhost:4503&quot;.
 
 ## Öffnen Sie die Site im Autorenmodus im Bearbeitungsmodus {#open-the-site-on-author-in-edit-mode}
 
-![chlimage_1-89](assets/chlimage_1-89.png)
+![open-site](assets/open-site.png)
 
 Wählen Sie das Symbol zum Öffnen der Site aus, um die Site im Bearbeitungsmodus Ansicht.
 
 Die URL lautet [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![chlimage_1-90](assets/chlimage_1-90.png)
+![author-site](assets/author-site.png)
 
 Auf der einfachen Startseite ist es möglich, zu sehen, was durch die Community-Funktionen und -Vorlagen vorverkabelt ist, und mit dem Hinzufügen und Konfigurieren von Community-Komponenten zu spielen.
 
