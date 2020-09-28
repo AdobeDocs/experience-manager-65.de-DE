@@ -1,9 +1,9 @@
 ---
-title: Unterstützte Dateiformate zur Verarbeitung in [!DNL Adobe Experience Manager Assets].
+title: Unterstützte Dateiformate und MIME-Typen
 description: Dateiformate und MIME-Typen, die [!DNL Assets] and [!DNL Dynamic Media] von und die für die einzelnen Formate unterstützten Funktionen unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 60%
@@ -85,11 +85,11 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
-## Nicht unterstützte Rasterbildformate in Dynamic Media {#unsupported-image-formats-dynamic-media}
+## Nicht unterstützte Rasterbildformate in dynamischen Medien {#unsupported-image-formats-dynamic-media}
 
-Die folgende Liste beschreibt die Untertypen der Rasterbilddateiformate, die von Dynamic Media *nicht* unterstützt werden.
+In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
 
-Siehe auch Nicht unterstützte Dateiformate [erkennen für Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Siehe auch [Erkennung nicht unterstützter Dateiformate für dynamische Medien](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
 * PSB-Dateien.
@@ -163,7 +163,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Unterstützte Dokument-Formate in Dynamic Media {#supported-document-formats-dynamic-media}
+## Unterstützte Dokument-Formate in dynamischen Medien {#supported-document-formats-dynamic-media}
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
