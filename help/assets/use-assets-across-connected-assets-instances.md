@@ -1,12 +1,12 @@
 ---
-title: Verwenden von Connected Assets zum Freigeben von DAM-Assets im Authoring-Workflow von  [!DNL Adobe Experience Manager Sites] .
+title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Sites]
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2105'
-ht-degree: 77%
+source-wordcount: '2103'
+ht-degree: 96%
 
 ---
 
@@ -27,21 +27,21 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
-* Die Benutzer gehören bei jeder Bereitstellung zu den entsprechenden Benutzergruppen.
+* Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Implementierung.
 * Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5 [!DNL Assets] funktioniert [!DNL Experience Manager] als Cloud Service. Weitere Informationen finden Sie unter Funktionen für [verbundene Assets in Experience Manager als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a Cloud Service ** | Unterstützt | Unterstützt | Unterstützt |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]auf AMS ** | Unterstützt | Unterstützt | Unterstützt |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise ** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
+   | **[!DNL Experience Manager Assets]as a Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]auf AMS** | Unterstützt | Unterstützt | Unterstützt |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
 ### Unterstützte Dateiformate {#mimetypes}
 
-Autoren suchen in der Inhaltssuche nach Bildern und den folgenden Dokumenten und verwenden die gesuchten Assets im Seiteneditor. Dokumente werden der `Download` Komponente und Bilder zur `Image` Komponente hinzugefügt. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Folgende Formate werden unterstützt:
+Autoren können in Content Finder nach Bildern und den folgenden Dokumenten suchen und die gefundenen Assets im Seiten-Editor verwenden. Dokumente werden der Komponente `Download` und Bilder der Komponente `Image` hinzugefügt. Autoren können die Remote-Assets auch zu jeder benutzerdefinierten [!DNL Experience Manager]-Komponente hinzufügen, die die standardmäßigen `Download`- oder `Image`-Komponenten erweitert. Folgende Formate werden unterstützt:
 
 * **Bildformate**: Die Formate, die von der [Bildkomponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) unterstützt werden. [!DNL Dynamic Media]-Bilder werden nicht unterstützt.
-* **Dokument-Formate**: Siehe [Unterstützte Dokument-Formate](assets-formats.md#supported-document-formats).
+* **Dokumentenformate**: Siehe [Unterstützte Dokumentformate](assets-formats.md#supported-document-formats).
 
 ### Beteiligte Benutzer und Gruppen {#users-and-groups-involved}
 
@@ -58,7 +58,7 @@ Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurier
 
 ## Konfigurieren einer Verbindung zwischen [!DNL Sites]- und [!DNL Assets]-Bereitstellungen {#configure-a-connection-between-sites-and-assets-deployments}
 
-Ein [!DNL Experience Manager]-Administrator kann diese Integration erstellen. Nach der Erstellung werden die erforderlichen Berechtigungen über Benutzergruppen festgelegt. Die Benutzergruppen werden für die [!DNL Sites] Bereitstellung und die DAM-Bereitstellung definiert.
+Ein [!DNL Experience Manager]-Administrator kann diese Integration erstellen. Nach der Erstellung werden die erforderlichen Berechtigungen über Benutzergruppen festgelegt. Die Benutzergruppen werden für die [!DNL Sites]-Implementierung und die DAM-Implementierung definiert.
 
 Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen [!DNL Sites] zu konfigurieren:
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 
    1. Der Speicherort von [!DNL Assets] ist `https://[assets_servername_ams]:[port]`.
    1. Anmeldeinformationen eines DAM-Distributors (technischer Benutzer).
-   1. In the **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. Beispielsweise den Ordner `remoteassets`.
+   1. Geben Sie im Feld **[!UICONTROL Bereitstellungspunkt]** den lokalen [!DNL Experience Manager]-Pfad ein, aus dem [!DNL Experience Manager] die Assets abruft. Beispielsweise den Ordner `remoteassets`.
    1. Passen Sie die Werte für den **[!UICONTROL Schwellenwert zum Optimieren der ursprünglichen Binärübertragung]** an Ihr Netzwerk an. Eine Asset-Ausgabedarstellung, deren Größe diesen Schwellenwert überschreitet, wird asynchron übertragen.
    1. Wählen Sie **[!UICONTROL Mit Connected Assets gemeinsam verwendeter Datenspeicher]** aus, wenn Sie zum Speichern Ihrer Assets einen Datenspeicher verwenden und der Datenspeicher der gemeinsam verwendete Speicher beider Bereitstellungen ist. In diesem Fall spielt die Schwellenwertbegrenzung keine Rolle, da sich die tatsächlichen Asset-Binärdateien im Datenspeicher befinden und nicht übertragen werden.
 
@@ -103,28 +103,28 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
    >
    >Wenn Autoren ein Asset abrufen, werden alle in der Remote-Bereitstellung verfügbaren Ausgabedarstellungen abgerufen. Überspringen Sie diesen Konfigurationsschritt, wenn Sie mehr Ausgabedarstellungen eines abgerufenen Assets erstellen möchten. Der Workflow [!UICONTROL DAM-Update-Asset] wird gestartet und es werden mehr Ausgabedarstellungen erstellt. Diese Ausgabedarstellungen sind nur für die lokale [!DNL Sites]-Bereitstellung verfügbar und nicht für die Remote-DAM-Bereitstellung.
 
-1. Add the [!DNL Sites] deployment as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Assets'] CORS configuration.
+1. Fügen Sie die [!DNL Sites]-Implemetierung als **[!UICONTROL zulässigen Ursprung]** in der Remote-[!DNL Assets']-CORS-Konfiguration hinzu.
 
    1. Melden Sie sich mit den Anmeldeinformationen des Administrators an. Suchen Sie nach `Cross-Origin`. Öffnen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 
-   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. Klicken Sie zum Erstellen einer CORS-Konfiguration für die [!DNL Sites]-Implemetierung auf das Symbol ![_assets_add_](assets/do-not-localize/assets_add_icon.png) neben der **[!UICONTROL Adobe Granite-Richtlinie für das gemeinsame Nutzen von Ressourcen über Ursprünge hinweg]**.
 
    1. Geben Sie im Feld für den **[!UICONTROL zulässigen Ursprung]** die URL der lokalen [!DNL Sites] ein, z. B. `https://[local_sites]:[port]`. Speichern Sie die Konfiguration.
 
-## Verwenden von Remote-Assets     {#use-remote-assets}
+## Verwenden von Remote-Assets       {#use-remote-assets}
 
-Die Website-Autoren verwenden Content Finder, um eine Verbindung zur DAM-Bereitstellung herzustellen. Die Autoren können die Remote-Assets durchsuchen und in eine Komponente ziehen. Halten Sie zum Authentifizieren beim Remote-DAM die von Ihrem Administrator bereitgestellten Anmeldeinformationen des DAM-Benutzers bereit.
+Die Website-Autoren verwenden Content Finder zum Verbinden mit der DAM-Implemetierung. Die Autoren können die Remote-Assets durchsuchen und in eine Komponente ziehen. Halten Sie zum Authentifizieren beim Remote-DAM die von Ihrem Administrator bereitgestellten Anmeldeinformationen des DAM-Benutzers bereit.
 
-Autoren können die Assets, die auf dem lokalen DAM und der Remote-DAM-Bereitstellung verfügbar sind, auf einer einzigen Webseite verwenden. Verwenden Sie Content Finder, um zwischen der Suche im lokalen und im Remote-DAM zu wechseln.
+Autoren können in lokalen und Remote-DAM-Implemetierungen verfügbare Assets auf derselben Web-Seite nutzen. Verwenden Sie Content Finder, um zwischen der Suche im lokalen und im Remote-DAM zu wechseln.
 
-Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] deployment. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-[!DNL Experience Manager]-Bereitstellung nach Remote-Assets suchen, da eine Volltextsuche verfügbar ist.
+Es werden nur die Tags von Remote-Assets abgerufen, die über ein exakt entsprechendes Tag – mit derselben Taxonomie-Hierarchie – verfügen, das in der lokalen [!DNL Sites]-Implemetierung verfügbar ist. Alle anderen Tags werden verworfen. Autoren können mit allen Tags in der Remote-[!DNL Experience Manager]-Bereitstellung nach Remote-Assets suchen, da eine Volltextsuche verfügbar ist.
 
 ### Beispiel für die Verwendung {#walk-through-of-usage}
 
-Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Funktionen im Authoring-Erlebnis zu überprüfen. Verwenden Sie Dokumente oder Bilder Ihrer Wahl in der Remote-DAM-Bereitstellung.
+Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Funktionen im Authoring-Erlebnis zu überprüfen. Verwenden Sie Dokumente oder Bilder Ihrer Wahl in der Remote-DAM-Implemetierung.
 
 1. Navigieren Sie zur [!DNL Assets]-Benutzeroberfläche in der Remote-Bereitstellung, indem Sie im [!DNL Experience Manager]-Arbeitsbereich auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** zugreifen. Sie können `https://[assets_servername_ams]:[port]/assets.html/content/dam` auch in einem Browser aufrufen. Laden Sie die Assets Ihrer Wahl hoch.
-1. On the [!DNL Sites] deployment, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Geben Sie `ksaner` als Benutzernamen ein, wählen Sie die bereitgestellte Option und klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie in der [!DNL Sites]-Implemetierung in der Profilaktivierung oben rechts auf **[!UICONTROL Identität annehmen als]**. Geben Sie `ksaner` als Benutzernamen ein, wählen Sie die bereitgestellte Option und klicken Sie auf **[!UICONTROL OK]**.
 1. Öffnen Sie eine We.Retail-Webseite unter **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bearbeiten Sie die Seite. Sie können `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` auch in einem Browser aufrufen, um die Seite zu bearbeiten.
 
    Klicken Sie oben links auf der Seite auf **[!UICONTROL Seitliches Bedienfeld ein/aus]**.
@@ -145,7 +145,7 @@ Verwenden Sie die oben beschriebenen Einstellungen, um die Funktionsweise der Fu
 
    *Abbildung: Benachrichtigung zum asynchronen Abrufen von Assets, die im Hintergrund ausgeführt werden.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used on the page. Stellen Sie sicher, dass die Remote-Assets zum Zeitpunkt der Veröffentlichung erfolgreich abgerufen wurden. Informationen zum Überprüfen des Status der einzelnen abgerufenen Assets finden Sie in der Benutzeroberfläche für [Async-Aufträge](/help/sites-administering/asynchronous-jobs.md).
+1. Beim Veröffentlichen einer Seite zeigt [!DNL Experience Manager] eine vollständige Liste der auf der Seite verwendeten Assets an. Stellen Sie sicher, dass die Remote-Assets zum Zeitpunkt der Veröffentlichung erfolgreich abgerufen wurden. Informationen zum Überprüfen des Status der einzelnen abgerufenen Assets finden Sie in der Benutzeroberfläche für [Async-Aufträge](/help/sites-administering/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -166,7 +166,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
 * Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Dynamic Media]-Assets, Inhaltsfragmente und Experience Fragments werden nicht unterstützt.
 * Metadatenschemata werden nicht abgerufen.
-* All [!DNL Sites] authors have read permissions on the fetched copies, even if authors cannot access the remote DAM deployment.
+* Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Bereitstellung verfügbar machen möchten, sollten Sie die Assets migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](assets-migration-guide.md).
 * Es ist nicht möglich, ein Remote-Asset als Seitenminiaturansicht in der Benutzeroberfläche der [!UICONTROL Seiteneigenschaften] zu verwenden. Sie können eine Miniaturansicht einer Web-Seite in der Benutzeroberfläche [!UICONTROL Seiteneigenschaften] von [!UICONTROL Miniaturansicht] aus festlegen, indem Sie auf [!UICONTROL Bild auswählen] klicken.
@@ -180,14 +180,14 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 
 ### Nutzung {#usage}
 
-* Benutzer können beim Authoring nach Remote-Assets suchen und diese auf die lokale Seite ziehen. Es werden keine anderen Funktionen unterstützt.
+* Benutzer können bei der Inhaltserstellung nach Remote-Assets suchen und diese auf die lokale Seite ziehen. Es werden keine anderen Funktionen unterstützt.
 * Nach 5 Sekunden tritt bei Abrufvorgängen ein Timeout auf. Autoren können beispielsweise bei Netzwerkproblemen Probleme beim Abrufen von Assets haben. Autoren können es erneut versuchen, indem sie das Remote-Asset aus [!UICONTROL Content Finder] in den [!UICONTROL Seiten-Editor] ziehen.
 * An abgerufenen Assets können einfache, zerstörungsfreie Änderungen sowie Änderungen, die von der `Image`-Komponente unterstützt werden, vorgenommen werden. Assets sind schreibgeschützt.
 * Die einzige Methode zum erneuten Abrufen des Assets besteht darin, es auf eine Seite zu ziehen. Es gibt keine API-Unterstützung oder andere Methoden zum erneuten Abrufen eines Assets, um es zu aktualisieren.
 
-## Fehlerbehebung bei Problemen     {#troubleshoot}
+## Fehlerbehebung bei Problemen       {#troubleshoot}
 
 Gehen Sie wie folgt vor, um eine Fehlerbehebung für das allgemeine Fehlerszenario durchzuführen:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
-* Ein aus dem Remote-Damm abgerufenes Asset kann aus einem oder mehreren Gründen nicht auf einer Webseite veröffentlicht werden. Es existiert nicht auf einem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler kann die Ursache sein. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen vorhanden sind und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie es erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
+* Wenn Sie über [!UICONTROL Content Finder] nicht nach Remote-Assets suchen können, überprüfen Sie erneut, ob die erforderlichen Rollen und Berechtigungen eingerichtet sind.
+* Ein aus dem Remote-DAM abgerufenes Asset kann aus verschiedenen Gründen nicht auf einer Web-Seite veröffentlicht werden. Es existiert nicht auf dem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler liegt vor. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
