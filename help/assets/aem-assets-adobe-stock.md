@@ -1,12 +1,12 @@
 ---
-title: ' [!DNL Adobe Stock] Assets verwalten in [!DNL Adobe Experience Manager Assets].'
+title: ' [!DNL Adobe Stock] ManagementAssets'
 description: Suchen, Abrufen, Lizenz und [!DNL Adobe Stock] Verwalten von Assets von innen [!DNL Adobe Experience Manager]aus. Verwenden Sie die lizenzierten Assets wie jedes andere digitale Asset.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 20%
+source-wordcount: '1109'
+ht-degree: 21%
 
 ---
 
