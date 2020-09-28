@@ -1,17 +1,17 @@
 ---
-title: Hinzufügen von Imagemaps mit Hyperlinks zu digitalen Bildern
+title: hinzufügen von Imagemaps mit Hyperlinks
 description: Erfahren Sie, wie Sie einem Bild Imagemap mit Hyperlinks hinzufügen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '268'
 ht-degree: 13%
 
 ---
 
 
-# Hinzufügen {#adding-image-maps}
+# hinzufügen {#adding-image-maps}
 
 Mit Imagemaps können Sie einen oder mehrere Hyperlinkbereiche hinzufügen, die genau so wie andere Hyperlinks funktionieren.
 
