@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 13%
@@ -21,7 +21,7 @@ ht-degree: 13%
 
 # Messaging-Funktion {#messaging-feature}
 
-Zusätzlich zu den öffentlich sichtbaren Interaktionen, die in Foren und Kommentaren auftreten, ermöglicht die Messaging-Funktion von AEM Communities, dass Community-Mitglieder privat miteinander interagieren können.
+Zusätzlich zu den öffentlich sichtbaren Interaktionen, die in Foren und Kommentaren auftreten, ermöglicht die Messaging-Funktion von AEM Communities Community-Mitgliedern, privat miteinander zu interagieren.
 
 This feature can be included when a [community site](/help/communities/overview.md#communitiessites) is created.
 
@@ -41,7 +41,9 @@ Die Messaging-Funktion bietet folgende Funktionen:
 
 **G** - gelöschte Meldung wiederherstellen
 
-![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
+![messaging-section](assets/messaging-section.png)
+
+![restore-message](assets/restore-message.png)
 
 Informationen zum Aktivieren und Ändern der Messaging-Funktion finden Sie unter:
 
