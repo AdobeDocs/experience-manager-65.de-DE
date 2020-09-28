@@ -10,10 +10,10 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '3075'
-ht-degree: 84%
+source-wordcount: '3115'
+ht-degree: 83%
 
 ---
 
@@ -146,7 +146,7 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
   </tr>
   <tr>
    <td>Dateianlage</td>
-   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>.</p> </td>
+   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können. Sie können mehrere Dateien an eine Dateianlagenkomponente anhängen.</p> <p><strong> Hinweis: </strong><ul> <li> Um mehrere Dateien an eine Dateianlagenkomponente anzuhängen, die im Apple Safari-Browser geöffnet wird, wählen Sie die gewünschten Dateien aus und fügen Sie sie einzeln an. Es ist nicht möglich, mehrere Dateien gleichzeitig auszuwählen und anzuhängen.</li> <li>Die Dateianlagenkomponente unterstützt einen vordefinierten Satz von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Unterstützte Dateiformate</a>. </li> </ul></p> </td>
   </tr>
   <tr>
    <td>Auflistung der Dateianhänge</td>
