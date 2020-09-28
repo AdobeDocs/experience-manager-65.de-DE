@@ -9,10 +9,10 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 12b2b73b6363c90d784527b260d664e48c746496
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 81%
+source-wordcount: '2200'
+ht-degree: 74%
 
 ---
 
@@ -227,7 +227,7 @@ Die XML-Tags für die Benutzerdaten, die für verschiedene Felder gesendet werde
 
 ## Konfigurieren des Vorbefüllungs-Diensts mithilfe von Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
-Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vorfülldienstes in der AEM Web Console-Konfiguration an. Führen Sie die folgenden Schritte aus, um den Vorbefüllungs-Dienst zu konfigurieren:
+Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vorfülldienstes in der AEM Web-Konsolenkonfiguration an. Führen Sie die folgenden Schritte aus, um den Vorbefüllungs-Dienst zu konfigurieren:
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vor
 
    >[!NOTE]
    >
-   >Standardmäßig ist das Vorausfüllen durch CRX-Dateien für alle Typen adaptiver Formulare (XSD, XDP, JSON, FDM und kein Formularmodell) zulässig. Vorbefüllen ist nur mit JSON- und XML-Dateien zulässig.
+   >Standardmäßig ist das Vorausfüllen durch CRX-Dateien für alle Typen des adaptiven Forms (XSD, XDP, JSON, FDM und kein Formularmodell) zulässig. Vorbefüllen ist nur mit JSON- und XML-Dateien zulässig.
 
 1. Der Vorbefüllungs-Dienst ist jetzt für Ihr Formular konfiguriert.
 
@@ -371,3 +371,20 @@ Um den Vorbefüllungs-Dienst zu starten, laden Sie die JAR-Datei auf AEM Forms W
 1. In der Eigenschaftenkonsole navigieren Sie zu „AEM Forms Container“ > „Standard“ > „Vorbefüllungs-Dienst“.
 1. Wählen Sie den Vorbefüllungsdienst und klicken Sie auf **[!UICONTROL Speichern]**. Dieser Dienst ist mit dem Formular verknüpft.
 
+## Daten vorab auf dem Client ausfüllen {#prefill-at-client}
+
+Wenn Sie ein adaptives Formular im Voraus ausfüllen, führt der AEM Forms-Server Daten mit einem adaptiven Formular zusammen und liefert das ausgefüllte Formular an Sie weiter. Standardmäßig erfolgt die Datenzusammenführung auf dem Server.
+
+Sie können den AEM Forms-Server so konfigurieren, dass die Datenzusammenführung auf dem Client statt auf dem Server durchgeführt wird. Dadurch wird die erforderliche Zeit zum Vorausfüllen und Wiedergeben adaptiver Formulare erheblich verringert. Standardmäßig ist die Funktion deaktiviert. Sie können sie über Configuration Manager oder die Befehlszeile aktivieren.
+
+* So aktivieren oder deaktivieren Sie Configuration Manager:
+   1. Öffnen Sie AEM Configuration Manager.
+   1. Suchen und öffnen Sie die Konfiguration des adaptiven Formulars und des interaktiven Kanals für Kommunikation
+   1. Aktivieren Sie die Option Configuration.af.clientside.datamerge.enabled.name
+* So aktivieren oder deaktivieren Sie die Befehlszeile:
+   * Führen Sie zum Aktivieren den folgenden cURL-Befehl aus:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   * Führen Sie zum Deaktivieren den folgenden cURL-Befehl aus:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+   Um die vorausgefüllten Daten bei der Client-Option in vollem Umfang nutzen zu können, aktualisieren Sie den Prefill-Dienst, um [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) und [CustomContext zurückzugeben.](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
