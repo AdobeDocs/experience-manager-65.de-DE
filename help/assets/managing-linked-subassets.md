@@ -1,11 +1,11 @@
 ---
-title: Verwalten Sie zusammengesetzte Assets mit Verweisen und mehrseitigen Assets in [!DNL Adobe Experience Manager].
+title: Verwalten von zusammengesetzten Assets mit Verweisen und mehreren Seiten
 description: Hier erfahren Sie, wie Sie Verweise auf digitale Assets von innen [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]aus erstellen. Verwenden Sie die Funktion "Seiten-Viewer", um einzelne Seiten von Teilassets von mehrseitigen Dateien wie PDF-, INDD-, PPT-, PPTX- und AI-Dateien Ansicht.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1360'
 ht-degree: 17%
 
 ---
@@ -21,7 +21,7 @@ Besides eliminating redundancy, referencing the assets in [!DNL Adobe Creative C
 
 Referenzen werden auf der Grundlage von Pfad, Dokument-ID und Instanz-ID der referenzierten Assets aufgelöst.
 
-## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe Illustrator] {#refai}
+## hinzufügen digitaler Assets als Referenz in [!DNL Adobe Illustrator] {#refai}
 
 You can reference existing digital assets from within an [!DNL Adobe Illustrator] file.
 
@@ -40,11 +40,11 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
 1. Click **[!UICONTROL View Properties]** from the toolbar. In the [!UICONTROL Properties] page, the list of files that reference the current asset appear under the **[!UICONTROL References]** column in the **[!UICONTROL Basic]** tab.
 
-   ![Ansicht der Verweise auf Experience Manager Assets in der Spalte &quot;Verweise&quot;in den Asset-Details](assets/asset-references.png)
+   ![ansicht der Verweise auf Experience Manager Assets in der Spalte &quot;Verweise&quot;in den Asset-Details](assets/asset-references.png)
 
    *Abbildung: Asset-Verweise in den Asset-Details.*
 
-## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
+## hinzufügen digitaler Assets als Referenz in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
 To reference digital assets from within an [!DNL InDesign] file, either drag assets to the [!DNL InDesign] file or export the [!DNL InDesign] file as a ZIP archive.
 
@@ -66,7 +66,7 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 1. Start the `Unarchiver` workflow.
 1. Nach Abschluss des Workflows werden die Verweise im Ordner &quot;Links&quot;automatisch als Teilassets referenziert. To view a list of referred assets, navigate to the asset details page of the [!DNL InDesign] asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Hinzufügen digitaler Assets als Referenz in [!DNL Adobe Photoshop] {#refps}
+## hinzufügen digitaler Assets als Referenz in [!DNL Adobe Photoshop] {#refps}
 
 1. Verwenden Sie die [!DNL Experience Manager] Desktop-App, um darauf zuzugreifen [!DNL Experience Manager Assets]. Laden Sie die Assets herunter und zeigen Sie sie auf dem lokalen Dateisystem an. Verwenden Sie die Funktion [!UICONTROL Linked] platzieren in [!DNL Adobe Photoshop]. Siehe [Platzieren von Assets in der Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
@@ -91,7 +91,7 @@ Die Erstellung von Unter-Assets ist standardmäßig deaktiviert. Gehen Sie wie f
 
 1. Log into [!DNL Experience Manager] as an administrator. Öffnen Sie **[!UICONTROL Werkzeuge]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. Wählen Sie **[!UICONTROL DAM Update Asset]** Workflow und klicken Sie auf **[!UICONTROL Bearbeiten]**.
-1. Klicken Sie auf **[!UICONTROL Seitenbedienfeld]** umschalten und suchen Sie den Schritt &quot;Unterelement **[!UICONTROL erstellen&quot;]** . Hinzufügen den Schritt zum Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
+1. Klicken Sie auf **[!UICONTROL Seitenbedienfeld]** umschalten und suchen Sie den Schritt &quot;Unterelement **[!UICONTROL erstellen&quot;]** . hinzufügen den Schritt zum Workflow. Klicken Sie auf **[!UICONTROL Synchronisieren]**.
 
 Führen Sie zum Generieren der Teilassets einen der folgenden Schritte aus:
 
