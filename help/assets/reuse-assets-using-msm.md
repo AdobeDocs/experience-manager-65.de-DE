@@ -1,12 +1,12 @@
 ---
-title: Reuse assets using MSM for [!DNL Adobe Experience Manager Assets].
+title: Wiederverwenden von Assets mit MSM
 description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus übergeordneten Assets abgeleitet und mit diesen verknüpft sind. Die Assets bleiben mit einer primären Kopie synchron und erhalten mit wenigen Klicks die Aktualisierungen der übergeordneten Assets.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 73%
 
 ---
