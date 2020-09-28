@@ -1,12 +1,12 @@
 ---
-title: Leistungsoptimierung für [!DNL Adobe Experience Manager Assets].
+title: Leistungsoptimierung [!DNL Assets].
 description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfiguration, Änderungen an Hardware, Software und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung [!DNL Experience Manager Assets]zu optimieren.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 53%
 
 ---
