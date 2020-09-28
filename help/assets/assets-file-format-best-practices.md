@@ -1,12 +1,12 @@
 ---
-title: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateiformate mit [!DNL Adobe Experience Manager Assets].
+title: Empfohlene Verfahren zur Verarbeitung der unterstützten Dateiformate
 description: Bewährte Verfahren zur Verarbeitung der verschiedenen unterstützten Dateitypen mit [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 46%
+source-wordcount: '465'
+ht-degree: 47%
 
 ---
 
@@ -19,11 +19,11 @@ Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von A
 
 >[!TIP]
 >
->If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Wenden Sie sich an den Kundenbetreuer von Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Werkzeuge und Modelle für die proprietären Formate von Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel verarbeiten.
+>If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Wenden Sie sich an den Kundenbetreuer der Adobe, um diese Best Practices für Ihre AMS-Bereitstellung zu implementieren und die bestmöglichen Tools und Modelle für die proprietären Formate der Adobe auszuwählen. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel verarbeiten.
 
 ## [!DNL Adobe Camera Raw] library {#adobe-camera-raw-library}
 
-Zur optimalen Leistung empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw] Bibliothek für RAW- und DNG-Dateien.
+Für eine optimale Leistung empfiehlt Adobe die Verwendung der [!DNL Adobe Camera Raw] Bibliothek für RAW- und DNG-Dateien.
 
 [!DNL Adobe Camera Raw] library unterstützt CMYK-Profil als Eingabe. Sie generiert die Ausgabe jedoch im RGB-Farbraum und unterstützt nur Darstellungen im JPEG-Format. Sie behält nicht den Quelldatei-Farbraum (z. B. CMYK) in den Miniaturen bei.
 
@@ -37,7 +37,7 @@ Um optimale Ergebnisse zu erzielen, sollte die Adobe PDF Rasterizer-Bibliothek f
 * AI-Dateien mit nicht standardmäßig generierten Miniaturbildern
 * Für AI-Dateien mit SPOT (PMS)-Farben
 
-Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Raster-Bibliothek unterstützt keine Farbraumkonvertierung. Unabhängig vom Farbraum der PDF-Quelldatei erzeugt Adobe PDF Raster nur RGB-Ausgaben.
+Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Rasterbibliothek unterstützt keine Farbraumkonvertierung. Unabhängig vom Farbraum der PDF-Quelldatei erzeugt Adobe PDF Rasterizer nur RGB-Ausgabe.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
