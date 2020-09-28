@@ -1,12 +1,12 @@
 ---
-title: Suchfacetten.
+title: Suchfacetten zum Filtern von Suchergebnissen
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 76%
+source-wordcount: '2489'
+ht-degree: 78%
 
 ---
 
@@ -44,9 +44,9 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Mit
 
 1. Ziehen Sie auf der Seite „Suchformulare bearbeiten“ ein Prädikat von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
-   ![Drücken Sie die Taste und verschieben Sie eine Prognose, um die Filter der Suche anzupassen.](assets/drag_predicate.png)
+   ![Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen](assets/drag_predicate.png)
 
-   *Abbildung: Drücken Sie die Eingabetaste und verschieben Sie ein Prädikat, um die Filter anzupassen.*
+   *Abbildung: Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen.*
 
 1. Geben Sie auf der Registerkarte „Einstellungen“ eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll.
 
@@ -64,14 +64,14 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Mit
 
    Verknüpfen einer Metadateneigenschaft mit einem Prädikat im Feld „Eigenschaftsname“
 
-1. Click the **[!UICONTROL Preview]** ![preview](assets/do-not-localize/preview_icon.png) to generate a preview of the Filters panel as it appears after you add the predicate.
+1. Klicken Sie auf das Symbol **[!UICONTROL Vorschau]** ![Vorschau](assets/do-not-localize/preview_icon.png), um eine Vorschau des Bedienfelds „Filter“ anzuzeigen, wie es nach dem Hinzufügen des Prädikats angezeigt wird.
 1. Prüfen Sie das Layout des Prädikats im Vorschaumodus.
 
    ![Anzeigen einer Vorschau des Suchformulars vor dem Übermitteln der Änderungen](assets/preview-1.png)
 
    Anzeigen einer Vorschau des Suchformulars vor dem Übermitteln der Änderungen
 
-1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close.png) on the upper-right corner of the preview.
+1. Um die Vorschau zu schließen, klicken Sie auf das Symbol **[!UICONTROL Schließen]** ![Schließen](assets/do-not-localize/close.png) oben rechts in der Vorschau.
 1. Klicken Sie auf **[!UICONTROL Fertig]**, um die Einstellungen zu speichern.
 1. Navigieren Sie in der [!DNL Assets]-Benutzeroberfläche zum Suchbereich. Das Prädikat Eigenschaft wird dem Bereich hinzugefügt.
 1. Geben Sie eine Beschreibung des zu suchenden Assets in das Textfeld ein. For example, enter `Adobe`. When you perform a search, assets with description matching `Adobe` are listed in the search results.
@@ -130,7 +130,7 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 1. Geben Sie eine optionale Beschreibung in das Feld **[!UICONTROL Beschreibung]** ein und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zum Suchfeld. Die Options-Eigenschaft wird dem Bereich **Suchen** hinzugefügt. Die Optionen für **[!UICONTROL Dateityp]** werden als Kontrollkästchen angezeigt.
 
-## Hinzufügen einer Eigenschaft mit mehreren Werten {#adding-a-multi-value-property-predicate}
+## hinzufügen einer Eigenschaft mit mehreren Werten {#adding-a-multi-value-property-predicate}
 
 Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Consider a scenario where you have images of multiple products in [!DNL Assets] and the metadata for each image includes an SKU number associated with the product. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
 
@@ -168,7 +168,7 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. By
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-## Hinzufügen andere Vorhersagen {#adding-other-predicates}
+## hinzufügen andere Vorhersagen {#adding-other-predicates}
 
 Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigenschaftsprädikate oder Options-Prädikate dem Suchbereich hinzufügen.
 
