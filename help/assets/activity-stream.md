@@ -1,11 +1,11 @@
 ---
-title: Aktivität von digitalen Assets in der Zeitschiene Ansicht von [!DNL Experience Manager].
+title: Aktivität des Streams digitaler Assets in der Ansicht der Zeitschiene
 description: Dieser Artikel beschreibt, wie Sie Aktivitätsprotokolle für Assets in der Timeline anzeigen können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 72%
 
 ---
@@ -38,7 +38,7 @@ Um den Aktivitätsstream anzuzeigen, führen Sie einen oder mehrere Vorgänge f�
 
 In der Timeline wird der Aktivitäts-Stream für die mit den Assets ausgeführten Vorgänge angezeigt.
 
-![Aktivität_stream](assets/activity_stream.png)
+![aktivität_stream](assets/activity_stream.png)
 
 >[!NOTE]
 >
