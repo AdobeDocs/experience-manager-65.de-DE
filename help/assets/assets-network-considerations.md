@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Assets] Netzwerküberlegungen und -anforderungen.'
+title: Überlegungen und Anforderungen zum Netzwerk
 description: Discusses network considerations when designing an [!DNL Adobe Experience Manager Assets] deployment.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 72%
 
 ---
@@ -68,7 +68,7 @@ Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptione
 
 Designing the topology of the [!DNL Experience Manager] environment requires detailed knowledge of the system configuration and how the network is connected within the user environment.
 
-Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen S3-Binärspeicher und konfigurierte Dynamic Media.
+Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen S3-Binärspeicher und dynamische Medien, die konfiguriert sind.
 
 The dispatcher shares it&#39;s 100Mbps connection with two entities, the outside world and the [!DNL Experience Manager] deployment. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
 
