@@ -10,10 +10,10 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '6067'
-ht-degree: 78%
+source-wordcount: '6062'
+ht-degree: 77%
 
 ---
 
@@ -350,7 +350,7 @@ In der Arbeitsflächen-Symbolleiste sehen Sie Folgendes:
 * **Seitliches Bedienfeld** ![umschalten](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * **Themenoptionen** ![Themenoptionen](assets/theme-options.png): Bietet drei Optionen
 
-   * Konfigurieren: Bietet Optionen zur Auswahl des Formulars oder der interaktiven Kommunikation, der Basis-ClientLib und der Typekit-Konfiguration.
+   * Konfigurieren: Bietet Optionen zur Auswahl des Formulars für die Vorschau oder der interaktiven Kommunikation, der Basis-ClientLib und der Adobe Fonts-Konfiguration.
    * Design-CSS anzeigen: Erzeugt CSS für das ausgewählte Design.
    * Stile verwalten: Bietet Optionen zum Verwalten von Text- und Bildstilen
    * Hilfe: Zeigt eine Einführung in den Design-Editor mit Abbildungen an.
@@ -487,23 +487,23 @@ Sie können Komponenten für Formulare oder interaktive Kommunikation für mehre
 
 ### Verwenden von Webschriften in einem Design {#using-web-fonts-in-a-theme}
 
-Sie können jetzt die Schriftarten, die in einem Webservice verfügbar sind, in einem adaptiven Formular oder in interaktiver Kommunikation verwenden. [Typekit](https://typekit.com/), der Adobe-Dienst für Webschriften, ist jetzt standardmäßig als Konfiguration verfügbar. To use Typekit, create a kit, and fonts in it, and obtain the Kit ID from [Typekit website](https://typekit.com/).
+Sie können jetzt die Schriftarten, die in einem Webservice verfügbar sind, in einem adaptiven Formular oder in interaktiver Kommunikation verwenden. Out-of-the-box, [Adobe Fonts](https://fonts.adobe.com/), Adobe&#39;s web font service, is available as a configuration. Um Adobe Fonts zu verwenden, erstellen Sie ein Kit, fügen Schriftarten hinzu und erhalten Sie die Kit-ID von [Adobe Fonts](https://fonts.adobe.com/).
 
-Führen Sie die folgenden Schritte aus, um Typekit in AEM zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um Adobe Fonts in AEM zu konfigurieren:
 
 1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Deployment > Cloud Services.
-1. On the **Cloud Services** page, navigate to **Third Party Services** > **Typekit** , and click **Configure Now** under Typekit. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche **+**, um eine neue Instanz zu erstellen.
+1. Navigieren Sie auf der Seite &quot; **Cloud Services** &quot;zur Option &quot; **Adobe Fonts** &quot;und öffnen Sie sie. Öffnen Sie den Konfigurationsordner und klicken Sie auf **Erstellen**.
 1. Geben Sie im Dialogfeld **Konfiguration erstellen** einen Titel und für die neue Konfiguration an und klicken Sie auf **Erstellen**.
 
    Daraufhin werden Sie zur Seite „Konfiguration“ geleitet.
 
 1. Geben Sie im Dialogfeld „Komponente bearbeiten“, das angezeigt wird, Ihre Kit-ID bereit und klicken Si auf **OK**.
 
-Führen Sie die folgenden Schritte aus, um ein Design zu konfigurieren, um die TypeKit-Konfiguration zu verwenden:
+Führen Sie die folgenden Schritte aus, um ein Design für die Verwendung der Adobe Fonts-Konfiguration zu konfigurieren:
 
 1. Öffnen Sie in der Autorinstanz ein Design im Designeditor.
 1. In the theme editor, navigate to **Theme Options** ![theme-options](assets/theme-options.png) > **Configure**.
-1. Wählen Sie im Feld **Typekit-Konfiguration** ein Kit und klicken Sie auf **Speichern**.
+1. In **Adobe Fonts Configuration** field, select a kit, and click **Save**.
 
    Jetzt können Sie sehen, dass die Schriften in der Font-Familien-Eigenschaft des Designs hinzugefügt werden.
 
