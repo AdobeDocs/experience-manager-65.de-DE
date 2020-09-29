@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7b3282f086ba1f0a2f1e5430b90a6742ddf946d6
+source-git-commit: c94220ca6e31716b6de4dac99dfb98ac1ba1faff
 workflow-type: tm+mt
 source-wordcount: '5955'
 ht-degree: 51%
@@ -27,7 +27,7 @@ ht-degree: 51%
 | [Such-Ranking und -Optimierung](#searchrank) | [Textextraktion](#extracttextupload) | [Smart-Sammlungen](#collections) |
 | [Erweiterte Suche: Filtern und Suchbereich](#scope) | [Benutzerdefinierte Prädikate](#custompredicates) | [Unerwartete Ergebnisse und Fehlerbehebung](#troubleshoot-unexpected-search-results-and-issues) |
 | [Suchen Sie nach anderen Lösungen und Apps](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-Desktop-App](#desktopapp)</li><li>[Adobe Stock-Fotos](#adobestock)</li><li>[Dynamic Media-Assets](#dynamicmedia)</li></ul> |  |  |
-| [Asset-Auswahl](#assetpicker) |  |  |
+| [Asset-Wähler](#assetpicker) |  |  |
 | [Einschränkungen](#limitations) und [Tipps](#tips) |  |  |
 | [Illustrierte Beispiele](#samples) |  |  |
 
@@ -451,8 +451,8 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
 |---|---|---|
-| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nachdem die Metadaten aktualisiert wurden, muss der Asset-Metadatenstatus neu deklariert werden. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
-| Zu viele Suchergebnisse. | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu beschränken. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
+| Falsche Ergebnisse bei der Suche nach Assets mit fehlenden Metadaten. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Die Ergebnisse basieren auf der Eigenschaft &quot;Indizierte Metadaten&quot;. | Nach der Aktualisierung der Metadaten ist eine erneute Dekodierung erforderlich, um den korrekten Status der Asset-Metadaten widerzuspiegeln. Siehe [Obligatorische Metadaten](metadata-schemas.md#define-mandatory-metadata). |
+| Zu viele Suchergebnisse. | Umfassender Suchparameter. | Erwägen Sie, den [Suchbereich](#scope)zu begrenzen. Die Verwendung intelligenter Tags kann zu mehr Suchergebnissen führen als erwartet. Siehe [Suchverhalten mit Smart-Tags](#withsmarttags). |
 | Nicht verwandte oder teilweise verwandte Suchergebnisse. | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach intelligentem Tagging](#withsmarttags)verändert. |
 | Keine Vorschläge für Assets automatisch ausfüllen. | Neu hochgeladene Assets werden noch nicht indiziert. Die Metadaten stehen nicht sofort als Vorschläge zur Verfügung, wenn Sie einen Suchbegriff in die Omniture Suchleiste eingeben. | [!DNL Assets] erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
 | Keine Suchergebnisse. | <ul><li>Assets, die Ihrer Abfrage entsprechen, sind nicht vorhanden. </li><li> Whitespace, der vor der Abfrage der Suche hinzugefügt wurde. </li><li> Das Feld für nicht unterstützte Metadaten enthält den Suchbegriff, nach dem Sie gesucht haben.</li><li> Suche, die während der Offenzeit eines Assets durchgeführt wurde. </li></ul> | <ul><li>Suche mit einem anderen Suchbegriff. Alternativ können Sie intelligentes Tagging oder Ähnlichkeitssuche verwenden, um die Suchergebnisse zu verbessern. </li><li>[Bekannte Einschränkung](#limitations).</li><li>Alle Metadatenfelder werden bei Suchvorgängen nicht berücksichtigt. Siehe [Suchbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Zeit- und Zeitangabe für die erforderlichen Assets.</li></ul> |
