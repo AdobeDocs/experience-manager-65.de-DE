@@ -3,10 +3,10 @@ title: Private Ordner zum Freigeben von Assets
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 19%
+source-wordcount: '591'
+ht-degree: 21%
 
 ---
 
@@ -82,15 +82,4 @@ Sie können einen Ordner löschen, indem Sie den Ordner auswählen und im oberen
 >[!NOTE]
 >
 >Wenn Sie einen Ordner mit der oben genannten Methode aus der Benutzeroberfläche löschen, werden auch die zugehörigen Benutzergruppen gelöscht.
-Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe von [JMX](#group-clean-up-jmx)aus dem Repository bereinigt werden.
-
-### Verwenden Sie JMX, um nicht verwendete Benutzergruppen zu bereinigen {#group-clean-up-jmx}
-
-So bereinigen Sie das Repository nicht verwendeter Benutzergruppen:
-
-1. Öffnen Sie die JMX-Datei, um redundante Gruppen für Assets in Ihrer [!DNL Experience Manager] Autoreninstanz zu reinigen `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-Beispiel: `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-
-1. Rufen Sie die `clean` Methode aus dieser JMX-Datei auf.
-
-Sie können sehen, dass alle redundanten Benutzergruppen oder die automatisch generierten Gruppen (die beim Erstellen eines Ordners mit demselben Namen wie eine zuvor gelöschte Gruppe erstellt werden) aus dem Pfad entfernt werden `/home/groups/mac/default/<user_name>/<folder_name>`.
+Vorhandene redundante, nicht verwendete und automatisch generierte Benutzergruppen können jedoch mithilfe der `clean` Methode in JMX in Ihrer Autoreninstanz aus dem Repository bereinigt werden (http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundante+Gruppen+for+Assets).
