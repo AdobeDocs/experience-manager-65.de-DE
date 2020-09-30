@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
 source-wordcount: '1661'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 4%
 
 ## Community-Site erstellen {#create-a-community-site}
 
-Verwenden Sie die Autoreninstanz, um eine Community-Site zu erstellen. Bei AEM Author-Instanz:
+Verwenden Sie die Autoreninstanz, um eine Community-Site zu erstellen. Auf AEM-Autoreninstanz:
 
 1. Melden Sie sich mit Administratorrechten an.
-1. Gehen Sie von der globalen Navigation zu **Navigation, Communities, Sites.**
+1. Gehen Sie von der globalen Navigation zu **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
 Die Communities Sites-Konsole bietet einen Assistenten, der Sie durch die Schritte zum Erstellen einer Community-Site führt. Es ist möglich, den `Next` Schritt oder `Back` den vorherigen Schritt vor der Verpflichtung der Site im letzten Schritt weiter zu gehen.
 
@@ -71,7 +71,7 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 (Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird an der linken Kante des Browsers zwischen dem Community-Site-Header und den Navigationslinks fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
 
-![chlimage_1-284](assets/chlimage_1-284.png)
+![community-site-branding](assets/community-site-branding.png)
 
 ![upload-image-site](assets/upload-image-site.png)
 
@@ -81,7 +81,7 @@ Wählen Sie **Weiter** aus.
 
 Beachten Sie, dass im Schritt Einstellungen vor der Auswahl `Next`sieben Abschnitte für den Zugriff auf Konfigurationen mit Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse, Übersetzung und Aktivierung zur Verfügung stehen.
 
-Besuchen Sie das Tutorial [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md) , um sich mit den Funktionen für die Aktivierung vertraut zu machen.
+Besuchen Sie das Tutorial [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md) , um mehr über die Funktionen zur Aktivierung zu erfahren.
 
 #### Benutzerverwaltung {#user-management}
 
@@ -102,14 +102,14 @@ Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communitie
 
 #### TAGGING {#tagging}
 
-Die Tags, die auf Community-Inhalte angewendet werden können, werden gesteuert, indem Sie AEM-Namensraum auswählen, die zuvor über die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. den [Tutorial-Namensraum](/help/communities/setup.md#create-tutorial-tags)).
+Die Tags, die auf Community-Inhalte angewendet werden können, werden gesteuert, indem AEM Namensraum ausgewählt werden, die zuvor über die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. der [Tutorial-Namensraum](/help/communities/setup.md#create-tutorial-tags)).
 
 Die Suche nach Namensräumen ist mit der Typenvorschau einfach. Beispiel:
 
 * Typ `tut`
 * Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
 
-![chlimage_1-286](assets/chlimage_1-286.png)
+![tagging](assets/tagging.png)
 
 #### ROLES {#roles}
 
@@ -133,15 +133,15 @@ Beispiel:
 
 Übernehmen Sie die globalen Standardeinstellungen für die [Moderation](/help/communities/sites-console.md#moderation) benutzergenerierter Inhalte (UGC).
 
-![chlimage_1-287](assets/chlimage_1-287.png)
+![Moderation](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
-Wenn Adobe Analytics lizenziert ist und ein Analytics Cloud-Dienst und -Framework konfiguriert wurden, ist es möglich, Analytics zu aktivieren und das Framework auszuwählen.
+Wenn Adobe Analytics lizenziert ist und ein Analytics-Cloud-Dienst und -Framework konfiguriert wurden, können Sie Analytics aktivieren und das Framework auswählen.
 
-Informationen zu Communities-Funktionen finden Sie unter [Analytics-Konfiguration](/help/communities/analytics.md).
+Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md).
 
-![chlimage_1-288](assets/chlimage_1-288.png)
+![Analyse](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -154,23 +154,23 @@ Die [Übersetzungseinstellungen](/help/communities/sites-console.md#translation)
 * Gesamte Seite **übersetzen auswählen**
 * Standardpersistenzoption deaktivieren
 
-![chlimage_1-289](assets/chlimage_1-289.png)
+![translation-settings](assets/translation-settings.png)
 
 #### ENABLEMENT {#enablement}
 
 Lassen Sie beim Erstellen einer Interaktionsgemeinschaft leer.
 
-Eine ähnliche Übung zum schnellen Erstellen einer [Aktivierungs-Community](/help/communities/overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities zur Aktivierung](/help/communities/getting-started-enablement.md).
+Eine ähnliche Übung zum schnellen Erstellen einer [Aktivierungs-Community](/help/communities/overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md).
 
 Wählen Sie **Weiter** aus.
 
-![chlimage_1-290](assets/chlimage_1-290.png)
+![Aktivierung](assets/enablement.png)
 
 ### Schritt 4: Communities-Site erstellen {#step-create-communities-site}
 
 Wählen Sie **Erstellen.**
 
-![chlimage_1-291](assets/chlimage_1-291.png)
+![create-site](assets/create-site2.png)
 
 Nach Abschluss des Prozesses wird der Ordner für die neue Site in der Konsole Communities - Sites angezeigt.
 
@@ -236,11 +236,9 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
 Nachdem Sie sichergestellt haben, dass der Veröffentlichungsserver ausgeführt wird, wählen Sie das Symbol Welt, um die Community-Site zu veröffentlichen.
 
-![chlimage_1-292](assets/chlimage_1-292.png)
+![publish-site](assets/publish-site.png)
 
-Wenn die Community-Site erfolgreich veröffentlicht wurde, wird eine kurze Nachricht angezeigt:
-
-![chlimage_1-293](assets/chlimage_1-293.png)
+Wenn die Community-Site erfolgreich veröffentlicht wurde, wird kurz die Meldung &quot;Site veröffentlicht&quot;angezeigt.
 
 ### Neue Community-Benutzergruppen {#new-community-user-groups}
 
@@ -261,17 +259,17 @@ Beachten Sie, dass [Aaron McDonald](/help/communities/tutorials.md#demo-users) M
 * Community-Interaktionsmoderatoren
 * Community-Interage-Mitglieder (indirekt als Mitglied der Moderatoren-Gruppe)
 
-![chlimage_1-294](assets/chlimage_1-294.png)
+![Benutzergruppe](assets/user-group.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![take](assets/engage.png)
 
 ## Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
 Nachdem eine Site konfiguriert und zur Veröffentlichung gesendet wurde, [konfigurieren Sie die Anmeldezuordnung](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldeinformationen der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut angezeigt wird.
 
-Hinzufügen `Login Page Mapping` als
+hinzufügen `Login Page Mapping` als
 
 * `/content/sites/engage/en/signin:/content/sites/engage/en`
 
@@ -298,12 +296,12 @@ Erste Schritte:
 
 1. Bei Auswahl des neu erstellten `localhost.4503` Knotens:
 
-   * Hinzufügen Eigenschaft:
+   * hinzufügen Eigenschaft:
 
    * **Name** sling:match
       * **Typzeichenfolge**
       * **Wert** localhost.4503/$(muss mit &#39;$&#39; char enden)
-   * Hinzufügen Eigenschaft:
+   * hinzufügen Eigenschaft:
 
       * **Name** sling:internalRedirect
       * **Typzeichenfolge**
@@ -321,21 +319,21 @@ Erste Schritte:
 >Zur Deaktivierung setzen Sie dem `sling:match` Eigenschaftswert einfach das Präfix &quot;x&quot;- `xlocalhost.4503/$` - und das Präfix **&quot;Alle** speichern&quot;.
 
 
-![chlimage_1-297](assets/chlimage_1-297.png)
+![optionale Schritte](assets/optional-steps.png)
 
 #### Fehlerbehebung: Fehler beim Speichern der Map {#troubleshooting-error-saving-map}
 
 Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`mit einem Punkt-Trennzeichen und nicht `localhost:4503` mit einem Doppelpunkt-Trennzeichen versehen ist, da es sich nicht um ein gültiges Namensraum-Präfix `localhost`handelt.
 
-![chlimage_1-298](assets/chlimage_1-298.png)
+![error-message](assets/error-message.png)
 
 #### Fehlerbehebung: Fehler bei der Umleitung {#troubleshooting-fail-to-redirect}
 
-Die **Zeichenfolge &#39;**$ `sling:match`&#39; am Ende des regulären Ausdrucks ist von entscheidender Bedeutung, sodass nur exakt `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt es fehl.
+Die **Zeichenfolge &#39;**$ `sling:match`&#39; am Ende des regulären Ausdrucks ist von entscheidender Bedeutung, sodass nur exakt `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt sie fehl.
 
 ### Ändern der Site {#modify-the-site}
 
-Nachdem die Site zum ersten Mal erstellt wurde, können Autoren mit dem Symbol [Offene Site](/help/communities/sites-console.md#authoring-site-content) standardmäßige AEM-Authoring-Aktivitäten durchführen.
+Nachdem die Site zum ersten Mal erstellt wurde, können Autoren das Symbol [Site öffnen verwenden, um Aktivitäten zum Erstellen AEM Standarddokuments](/help/communities/sites-console.md#authoring-site-content) durchzuführen.
 
 Darüber hinaus können Administratoren die Eigenschaften der Site, z. B. den Titel, über das Symbol [&quot;Site](/help/communities/sites-console.md#modifying-site-properties) bearbeiten&quot;ändern.
 
