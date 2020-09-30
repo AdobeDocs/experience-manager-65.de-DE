@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1728'
 ht-degree: 4%
 
 ---
@@ -98,7 +98,7 @@ Stellen Sie sicher, dass die meisten Kontrollkästchen für [Benutzerverwaltung]
 
 #### TAGGING {#tagging}
 
-Die Tags, die auf Community-Inhalte angewendet werden können, werden gesteuert, indem Sie AEM-Namensraum auswählen, die zuvor über die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. den [Tutorial-Namensraum](/help/communities/enablement-setup.md#create-tutorial-tags)).
+Die Tags, die auf Community-Inhalte angewendet werden können, werden gesteuert, indem AEM Namensraum ausgewählt werden, die zuvor über die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) definiert wurden (z. B. der [Tutorial-Namensraum](/help/communities/enablement-setup.md#create-tutorial-tags)).
 
 Darüber hinaus wird bei der Auswahl von Tag-Namensräumen für die Community-Site die Auswahl beim Definieren von Katalogen und Aktivierungsressourcen eingeschränkt. Wichtige Informationen finden Sie unter [Tagging-Aktivierungsressourcen](/help/communities/tag-resources.md) .
 
@@ -229,7 +229,7 @@ Es wird ein Hinweis geben, dass die Site veröffentlicht wurde.
 
 Neben der neuen Community-Site werden neue Benutzergruppen erstellt, die über die entsprechenden Berechtigungen für verschiedene Verwaltungsfunktionen verfügen. Weitere Informationen finden Sie unter [Benutzergruppen für Community-Sites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Für diese neue Community-Site werden die neuen Benutzergruppen, die in der Umgebung zum Veröffentlichen vorhanden sind, unter dem Site-Namen &quot;Aktivieren&quot;in Schritt 1 in der Konsole &quot; [Communities Mitglieder und Gruppen&quot;angezeigt](/help/communities/members.md#groups-console):
+Für diese neue Community-Site werden die neuen Benutzergruppen, die in der Umgebung &quot;Veröffentlichen&quot;vorhanden sind, unter dem Site-Namen &quot;Aktivieren&quot;in Schritt 1 in der Konsole &quot; [Communities-Mitglieder und -Gruppen&quot;angezeigt](/help/communities/members.md#groups-console):
 
 ![community_usergroup](assets/community_usergroup.png)
 
@@ -262,7 +262,7 @@ In diesem Beispiel `Community Ski Class` wird die Gruppe als Mitglied der Gruppe
 
 Nachdem eine Site konfiguriert und zur Veröffentlichung gesendet wurde, [konfigurieren Sie die Anmeldezuordnung](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldeinformationen der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut angezeigt wird.
 
-Hinzufügen `Login Page Mapping` als:
+hinzufügen `Login Page Mapping` als:
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -291,7 +291,7 @@ Erste Schritte:
 
 1. Mit neu erstelltem `localhost.4503` Knoten ausgewählt
 
-   * Hinzufügen
+   * hinzufügen
 
       * **Name** sling:match
       * **Typzeichenfolge**
@@ -299,7 +299,7 @@ Erste Schritte:
 
    (muss mit &#39;$&#39; Zeichen enden)
 
-   * Hinzufügen
+   * hinzufügen
 
       * **Name** sling:internalRedirect
       * **Typzeichenfolge**
@@ -327,11 +327,11 @@ Wenn die Änderungen nicht gespeichert werden können, stellen Sie sicher, dass 
 
 #### Fehlerbehebung: Fehler bei der Umleitung {#troubleshooting-fail-to-redirect}
 
-Die Zeichenfolge &#39;**$**&#39; am Ende des regulären Ausdrucks `sling:match` ist von entscheidender Bedeutung, sodass nur exakt `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt es fehl.
+Die Zeichenfolge &#39;**$**&#39; am Ende des regulären Ausdrucks `sling:match` ist von entscheidender Bedeutung, sodass nur exakt `https://localhost:4503/` zugeordnet wird. Andernfalls wird der Umleitungswert jedem Pfad vorangestellt, der nach server:port in der URL existieren könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt sie fehl.
 
 ## Ändern der Community-Site {#modifying-the-community-site}
 
-Nachdem die Site zum ersten Mal erstellt wurde, können Autoren mit dem Symbol [Offene Site](/help/communities/sites-console.md#authoring-site-content) standardmäßige AEM-Authoring-Aktivitäten durchführen.
+Nachdem die Site zum ersten Mal erstellt wurde, können Autoren das Symbol [Site öffnen verwenden, um Aktivitäten zum Erstellen AEM Standarddokuments](/help/communities/sites-console.md#authoring-site-content) durchzuführen.
 
 Darüber hinaus können Administratoren die Eigenschaften der Site, z. B. den Titel, über das Symbol [&quot;Site](/help/communities/sites-console.md#modifying-site-properties) bearbeiten&quot;ändern.
 
@@ -342,7 +342,7 @@ Denken Sie nach jeder Änderung daran, die Site zu **speichern** und erneut zu *
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
 
-### Hinzufügen eines Katalogs {#add-a-catalog}
+### hinzufügen eines Katalogs {#add-a-catalog}
 
 Die für diese Community-Site ausgewählte Community-Site-Vorlage sollte die Katalogfunktion enthalten.
 
@@ -350,7 +350,7 @@ Ist dies nicht der Fall, kann die Katalogfunktion einfach hinzugefügt werden. D
 
 Wenn die Site-Struktur bereits die Katalogfunktion enthält, kann deren Titel geändert werden.
 
-Um die Struktur der Site zu ändern, navigieren Sie zur Konsole &quot; **Communities&quot;, &quot;Sites** &quot;, öffnen Sie den `enable` Ordner und klicken Sie auf das Symbol &quot;Site **bearbeiten&quot;** , um auf die Eigenschaften von `Enablement Tutorial`zuzugreifen.
+Um die Struktur der Site zu ändern, navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Sites]** -Konsole, öffnen Sie den `enable` Ordner und klicken Sie auf das Symbol Site **bearbeiten** , um auf die Eigenschaften von `Enablement Tutorial`zuzugreifen.
 
 Wählen Sie das STRUKTURbedienfeld aus, um einen Katalog hinzuzufügen oder einen vorhandenen Katalog zu ändern:
 
