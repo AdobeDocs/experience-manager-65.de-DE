@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: add17f46dfb292aeaf8425e5f75cfe955ed93cbc
 workflow-type: tm+mt
-source-wordcount: '2424'
-ht-degree: 58%
+source-wordcount: '2468'
+ht-degree: 55%
 
 ---
 
@@ -37,16 +37,16 @@ Wenn Sie Ihr AEM-Projekt mit Maven erstellen, haben Sie mehrere Vorteile:
 
 ### Maven-Projekt-Archetypen {#maven-project-archetypes}
 
-Adobe stellt zwei Maven-Archetypen bereit, die als Grundlage für Ihre AEM-Projekte dienen können. Weitere Informationen finden Sie unter den folgenden Links:
+Adobe bietet zwei Maven-Archetypen, die als Grundlage für Ihre AEM Projekte dienen können. Weitere Informationen finden Sie unter den folgenden Links:
 
-* [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
+* [AEM](https://github.com/adobe/aem-project-archetype)
 * [Archetyp für Einseitige Anwendungen - Starterkit](https://github.com/adobe/aem-spa-project-archetype)
 
 ## API-Abhängigkeiten von Experience Manager {#experience-manager-api-dependencies}
 
 ### Was ist das UberJar? {#what-is-the-uberjar}
 
-&quot;UberJar&quot;ist der informelle Name, der der speziellen Java-Archivdatei (JAR) von Adobe gegeben wird. Diese JAR-Dateien enthalten alle öffentlichen Java-APIs, die von Adobe Experience Manager bereitgestellt werden. Dazu gehören auch eingeschränkte externe Bibliotheken, insbesondere alle in AEM verfügbaren öffentlichen APIs, die von Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava stammen, und zwei Bibliotheken, die für die Bildverarbeitung verwendet werden (Werner Randelshofers CYMK JPEG ImageIO-Bibliothek und die TformerMonkeys-Bildbibliothek). Die UberJars enthalten nur API-Schnittstellen und -Klassen, d. h. sie enthalten nur Schnittstellen und Klassen, die von einem OSGi-Bundle in AEM exportiert werden. They also contain a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
+Die &quot;UberJar&quot; ist der informelle Name, der der von Adobe bereitgestellten speziellen Java-Archivdatei (JAR) gegeben wird. Diese JAR-Dateien enthalten alle öffentlichen Java-APIs, die von Adobe Experience Manager bereitgestellt werden. Dazu gehören auch begrenzte externe Bibliotheken, insbesondere alle öffentlichen APIs, die in AEM verfügbar sind, die von Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava stammen, und zwei Bibliotheken, die für die Bildverarbeitung verwendet werden (Werner Randelshofer CYMK JPEG ImageIO-Bibliothek und die TZwölfMonkeys Bildbibliothek). Die UberJars enthalten nur API-Schnittstellen und -Klassen, d. h. sie enthalten nur Schnittstellen und Klassen, die von einem OSGi-Bundle in AEM exportiert werden. They also contain a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
 
 ### Why did Adobe create the UberJars? {#why-did-adobe-create-the-uberjars}
 
@@ -58,10 +58,14 @@ Mit der zweiten Uber-JAR-Datei werden alle nicht mehr unterstützten Klassen, Me
 
 ### Welches UberJar sollte verwendet werden? {#which-uberjar-to-use}
 
-AEM 6.5 ist in zwei Varianten von Uber Jar erhältlich:
+AEM 6.5 kommt in zwei Geschmacksrichtungen von Uber Jar:
 
 1. Uber Jar - Umfasst nur die öffentlichen Schnittstellen, die nicht als veraltet markiert sind. Dies ist die **empfohlene** Verwendung von UberJar, da es zukünftigen Testversänden der Codebasis hilft, sich auf veraltete APIs zu verlassen.
 1. Uber Jar mit veralteten APIs - Umfasst alle öffentlichen Schnittstellen, einschließlich derjenigen, die in einer zukünftigen Version von AEM als veraltet markiert wurden.
+
+>[!NOTE]
+>
+>Ab AEM 6.5.6 stehen UberJar und andere zugehörige Artefakte im [Maven Central-Repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) anstelle der Adobe Public Maven-Repository (repo.adobe.com) zur Verfügung. Die UberJar-Hauptdatei wird in `uber-jar-<version>.jar`. Daher gibt es für das `classifier`Tag keine Werte `apis` mit `dependency` dem Wert.
 
 ### Wie verwende ich UberJars? {#how-do-i-use-the-uberjars}
 
@@ -83,7 +87,7 @@ If you are using Apache Maven as a build system (which is the case for most AEM 
 
 >[!CAUTION]
 >
->Adobe empfiehlt die Bereitstellung mit Uber Jar, wenn **die veralteten APIs *nicht* **enthalten, um sicherzustellen, dass Ihre Anwendungen auf zukünftigen Versionen von AEM ordnungsgemäß ausgeführt werden.
+>Adobe empfiehlt die Bereitstellung mit Uber Jar, dass **die veralteten APIs *nicht* **enthalten, um sicherzustellen, dass Ihre Anwendungen auf zukünftigen Versionen von AEM ordnungsgemäß ausgeführt werden.
 >
 >Verwenden Sie Uber Jar mit nicht mehr unterstützten API-Support nur, wenn der Code, der auf den veralteten APIs basiert, nicht entsprechend den Änderungen geändert werden kann.
 
@@ -97,7 +101,7 @@ If you are using Apache Maven as a build system (which is the case for most AEM 
 </dependency>
 ```
 
-Wenn Ihr Unternehmen bereits einen Maven Repository Manager wie Sonatype Nexus, Apache Archiva oder JFrog Artifactory verwendet, fügen Sie die entsprechende Konfiguration zum Projekt hinzu, um auf diesen Repository-Manager zu verweisen, und fügen Sie das Maven-Repository von Adobe ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) zu Ihrem Repository-Manager hinzu.
+If your company is already using a Maven Repository Manager such as Sonatype Nexus, Apache Archiva, or JFrog Artifactory, add the appropriate configuration to your project to reference this repository manager and add Adobe&#39;s Maven repository ([https://repo.maven.apache.org/maven2/](https://repo.maven.apache.org/maven2/)) to your repository manager.
 
 If you are not using a repository manager, then you will need to add a *repository* element to your *pom.xml* file:
 
@@ -106,7 +110,7 @@ If you are not using a repository manager, then you will need to add a *reposito
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -114,7 +118,7 @@ If you are not using a repository manager, then you will need to add a *reposito
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
