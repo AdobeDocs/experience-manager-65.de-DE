@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 42606e76742fe7698c4c186208e515ed22adc5a4
+workflow-type: tm+mt
+source-wordcount: '2787'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +32,7 @@ Während das für den Handel bestimmte Beispiel Beispiele für Facebook- und Twi
 
 Die erforderlichen Schritte sind:
 
-1. [Aktivieren Sie die OAuth-Authentifizierung](#adobe-granite-oauth-authentication-handler) für alle AEM-Veröffentlichungsinstanzen.
+1. [Aktivieren Sie die OAuth-Authentifizierung](#adobe-granite-oauth-authentication-handler) für alle AEM Instanzen im Veröffentlichungsmodus.
 
    Wenn OAuth nicht aktiviert ist, schlägt die Anmeldung fehl.
 
@@ -45,13 +48,13 @@ Die erforderlichen Schritte sind:
       * Erstellen und veröffentlichen Sie einen [Twitter Connect-Cloud-Dienst](#create-a-twitter-connect-cloud-service).
 
 
-1. [**Aktivieren **Sie die Anmeldung](#enable-social-login)in sozialen Netzwerken für eine Community-Site.
+1. [**Aktivieren** Sie die Anmeldung](#enable-social-login) in sozialen Netzwerken für eine Community-Site.
 
 Es gibt zwei grundlegende Konzepte:
 
 1. **Umfang** (Berechtigungen) gibt die Daten an, die die App anfordern darf.
 
-   * Die Facebook- und Twitter-Instanzen [Adobe Granite OAuth Application und Provider](#adobe-granite-oauth-application-and-provider) beinhalten standardmäßig die grundlegenden App-Berechtigungen in ihren Geltungsbereich.
+   * Die Granite OAuth-Instanzen für Facebook- und Twitter- [Adoben](#adobe-granite-oauth-application-and-provider) -Anwendungen und -Providerenthalten standardmäßig die grundlegenden App-Berechtigungen.
 
 1. **Felder** (Parameter) geben die tatsächlichen Daten an, die mit URL-Parametern angefordert werden.
 
@@ -63,11 +66,11 @@ Es gibt zwei grundlegende Konzepte:
 ### Facebook-API-Version {#facebook-api-version}
 
 Die Anmeldung in sozialen Netzwerken und das Facebook-Beispiel für den Handel wurden entwickelt, als die Facebook-Grafik-API Version 1.0 war.
-Ab AEM 6.4 GA und AEM 6.3 SP1 wurde die Anmeldung für soziale Netzwerke aktualisiert und funktioniert nun mit der neueren Facebook Graph API 2.5 Version.
+Ab AEM 6.4 GA und AEM 6.3 SP1 wurde die Social-Anmeldung aktualisiert, um mit der neueren Facebook Graph API 2.5 Version zu funktionieren.
 
 >[!NOTE]
 >
->Wenn Sie bei älteren AEM-Versionen eine Ausnahme in Protokollen sehen **Kann kein Token aus dieser** Version extrahieren, aktualisieren Sie auf die neueste CFP für diese AEM-Version.
+>Wenn Sie bei älteren AEM eine Ausnahme in Protokollen sehen **Kann kein Token aus dieser** Version extrahieren, aktualisieren Sie auf die neueste CFP für diese AEM Version.
 
 
 Informationen zur Version der Facebook-Grafik-API finden Sie im [Facebook-API-Changelog](https://developers.facebook.com/docs/apps/changelog).
@@ -80,12 +83,12 @@ Um eine Facebook-Anwendung zu erstellen, befolgen Sie die Anweisungen von Facebo
 
 Im Allgemeinen ab Facebook API Version 2.7:
 
-* *Hinzufügen einer neuen Facebook-App*
+* *hinzufügen einer neuen Facebook-App*
    * Wählen Sie als *Plattform* Website:
       * Geben Sie für *Site-URL*`  https://<server>:<port>.`
       * Geben Sie als *Anzeigename* einen Titel ein, der als Titel des Facebook-Verbindungs-Dienstes verwendet werden soll.
       * Zur *Kategorie* wird empfohlen, &quot; *Apps für Seiten*&quot;zu wählen, kann jedoch alles sein.
-      * *Hinzufügen Produkt:  Facebook-Anmeldung*
+      * *hinzufügen Produkt:  Facebook-Anmeldung*
       * Geben Sie für *gültige OAuth-Umleitungs-URIs*`  https://<server>:<port>.`
 
 >[!NOTE]
@@ -95,12 +98,12 @@ Im Allgemeinen ab Facebook API Version 2.7:
 
 Nachdem die Anwendung erstellt wurde, suchen Sie die Einstellungen für die **[!UICONTROL App-ID]** und den **[!UICONTROL geheimen]** Schlüssel. Diese Informationen sind für die Konfiguration des [Facebook-Cloud-Dienstes](#createafacebookcloudservice)erforderlich.
 
-### Facebook Connect Cloud-Dienst erstellen {#create-a-facebook-connect-cloud-service}
+### Facebook Connect-Cloud Service erstellen {#create-a-facebook-connect-cloud-service}
 
-Die [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -Instanz, instanziiert durch Erstellen einer Cloud-Service-Konfiguration, identifiziert die Facebook-Anwendung und die Mitgliedsgruppe/n, der/denen die neuen Benutzer hinzugefügt werden.
+Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oauth-application-and-provider) , instanziiert durch Erstellen einer Cloud-Dienstkonfiguration, identifiziert die Facebook-Anwendung und die Mitgliedsgruppe/n, der/denen die neuen Benutzer hinzugefügt werden.
 
-1. Melden Sie sich auf der AEM-Autoreninstanz mit Administratorrechten an.
-1. Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Facebook Social-Anmeldekonfiguration]**.
+1. Melden Sie sich auf der AEM Autoreninstanz mit Administratorrechten an.
+1. Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Facebook Social-Anmeldekonfiguration]**.
 1. Wählen Sie den **[!UICONTROL Kontextpfad]** für die Konfiguration aus.
 
    **[!UICONTROL Der Kontextpfad]** sollte mit dem Cloud-Konfigurationspfad übereinstimmen, den Sie beim Erstellen/Bearbeiten einer Community-Site ausgewählt haben.
@@ -115,12 +118,13 @@ Die [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe
    ![fbsocialloginconfig](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL Titel]** (*erforderlich*) Geben Sie einen Anzeigentitel ein, der die Facebook-App identifiziert. Es wird empfohlen, denselben Namen zu verwenden, der als *Anzeigename* für die Facebook-App eingegeben wurde.
-   * **[!UICONTROL App-ID/API-Schlüssel]** (*erforderlich*) Geben Sie die ***App-ID*** für die Facebook-App ein. Dadurch wird die [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -Instanz identifiziert, die über das Dialogfeld erstellt wurde.
+   * **[!UICONTROL App-ID/API-Schlüssel]** (*erforderlich*) Geben Sie die ***App-ID*** für die Facebook-App ein. Dadurch wird die im Dialogfeld erstellte Granite OAuth Application- und Provider-Instanz der [Adobe](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) identifiziert.
    * **[!UICONTROL App-Geheimer]** (*erforderlich*) Geben Sie den ***App-Geheimen*** für die Facebook-App ein.
-   * **[!UICONTROL Benutzer]** erstellen Wenn diese Option aktiviert ist, wird bei der Anmeldung bei einem Facebook-Konto ein AEM-Benutzereintrag erstellt und als Mitglied der ausgewählten Benutzergruppe(n) hinzugefügt.  Die Standardeinstellung ist aktiviert (wird dringend empfohlen).
+   * **[!UICONTROL Benutzer]** erstellen Wenn diese Option aktiviert ist, wird bei der Anmeldung bei einem Facebook-Konto ein AEM Benutzereintrag erstellt und der/den ausgewählten Benutzergruppe(n) hinzugefügt.  Die Standardeinstellung ist aktiviert (wird dringend empfohlen).
    * **[!UICONTROL Benutzer-IDs]** maskieren: Lassen Sie die Auswahl aufgehoben.
    * **[!UICONTROL Scope-E-Mail]**: Die E-Mail-ID des Benutzers sollte von Facebook abgerufen werden.
-   * **[!UICONTROL Hinzufügen zu Benutzergruppen]** wählen Sie Hinzufügen Benutzergruppe aus, um eine oder mehrere [Mitgliedsgruppen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
+   * **[!UICONTROL hinzufügen zu Benutzergruppen]** wählen Sie Hinzufügen Benutzergruppe aus, um eine oder mehrere [Mitgliedsgruppen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) für die Community-Site auszuwählen, der Benutzer hinzugefügt werden sollen.
+
    >[!NOTE]
    >
    >Gruppen können jederzeit hinzugefügt oder entfernt werden. Die Mitgliedschaft bestehender Benutzer wird jedoch nicht beeinträchtigt. Die automatische Mitgliedschaft gilt nur für neue Benutzer, die nach dieser Feldaktualisierung erstellt werden. Wählen Sie für Sites, bei denen anonyme Benutzer deaktiviert sind, Benutzer zu der entsprechenden Community-Mitglieder-Gruppe für diese geschlossene Community-Site hinzuzufügen.
@@ -131,20 +135,20 @@ Die [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe
 
 
 
-Das Ergebnis ist eine [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) -Instanz, die keine weitere Änderung erfordert, es sei denn, es werden zusätzliche Gültigkeitsbereiche (Berechtigungen) hinzugefügt. Der Standardbereich ist die Standardberechtigung für die Anmeldung bei Facebook. Wenn Sie zusätzlichen Umfang wünschen, müssen Sie die OSGI-Konfiguration direkt bearbeiten. Wenn Änderungen direkt über das System/die Konsole vorgenommen werden, sollten Sie Ihre Cloud-Service-Konfigurationen nicht über die Touch-Benutzeroberfläche bearbeiten, um ein Überschreiben zu vermeiden.
+Das Ergebnis ist eine Granite OAuth-Instanz der [Adobe und des Anbieters](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) , die nur dann weiter bearbeitet werden muss, wenn zusätzliche Gültigkeitsbereiche (Berechtigungen) hinzugefügt werden. Der Standardbereich ist die Standardberechtigung für die Anmeldung bei Facebook. Wenn Sie zusätzlichen Umfang wünschen, müssen Sie die OSGI-Konfiguration direkt bearbeiten. Wenn Änderungen direkt über das System/die Konsole vorgenommen werden, sollten Sie Ihre Cloud-Service-Konfigurationen nicht über die Touch-Benutzeroberfläche bearbeiten, um ein Überschreiben zu vermeiden.
 
 ### AEM Communities Facebook OAuth Provider {#aem-communities-facebook-oauth-provider}
 
-Der AEM Communities-Anbieter erweitert die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -Instanz.
+Der AEM Communities-Anbieter erweitert die Granite OAuth-Anwendungsinstanz und -Provider der [Adobe](#adobe-granite-oauth-application-and-provider) .
 
 Dieser Anbieter muss bearbeitet werden, um:
 
 * Benutzeraktualisierungen zulassen
-* Hinzufügen zusätzlicher Felder [im Anwendungsbereich](#adobe-granite-oauth-application-and-provider)
+* hinzufügen zusätzlicher Felder [im Anwendungsbereich](#adobe-granite-oauth-application-and-provider)
 
    * Nicht alle standardmäßig zulässigen Felder sind standardmäßig eingeschlossen.
 
-Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM-Veröffentlichungsinstanz folgende Schritte durch:
+Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM Veröffentlichungsinstanz folgende Schritte durch:
 
 1. Melden Sie sich mit Administratorrechten an.
 1. Navigate to the [Web Console](../../help/sites-deploying/configuring-osgi.md). Beispiel: http://localhost:4503/system/console/configMgr.
@@ -157,7 +161,7 @@ Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM-Veröffentlich
 
       (*Erforderlich*) Der Standardwert ist *soco -facebook*. Bearbeiten Sie nicht.
 
-   * **[!UICONTROL Cloud-Dienstkonfiguration]**
+   * **[!UICONTROL Cloud Service-Konfiguration]**
 
       Der Standardwert ist `/etc/  cloudservices /  facebookconnect`. Bearbeiten Sie nicht.
 
@@ -192,6 +196,7 @@ Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM-Veröffentlich
       * updated_time
       * überprüft
       * email
+
    Wenn ein Feld hinzugefügt oder geändert wird, aktualisieren Sie die entsprechende Konfiguration des Standard-Synchronisierungs-Handlers, um die Zuordnung zu korrigieren.
 
    * **[!UICONTROL Benutzer aktualisieren]**
@@ -239,17 +244,17 @@ Im Abschnitt Berechtigungen für Twitter-Anwendungsverwaltung:
 
 * **[!UICONTROL Zusätzliche Berechtigungen]**: Wählen Sie optional `Request email addresses from users`.
 
-   * Wenn diese Option nicht ausgewählt ist, enthält das Profil des Benutzers in AEM keine E-Mail-Adresse.
+   * Wenn diese Option nicht aktiviert ist, enthält das Benutzerkonto in AEM keine E-Mail-Adresse.
    * In den Anweisungen von Twitter werden zusätzliche Schritte beschrieben.
 
-Die einzige REST-Anforderung, die für die Anmeldung in sozialen Netzwerken gestellt wird, ist *[GET Konto/Verification-Anmeldeinformationen](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*.
+Die einzige REST-Anforderung für die Anmeldung bei Social ist die *[GET/Überprüfung der Anmeldeinformationen](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*.
 
-### Erstellen eines Twitter Connect Cloud-Dienstes {#create-a-twitter-connect-cloud-service}
+### Erstellen eines Twitter Connect-Cloud Service {#create-a-twitter-connect-cloud-service}
 
-Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -Instanz, instanziiert durch Erstellen einer Cloud-Service-Konfiguration, identifiziert die Twitter-Anwendung und die Mitgliedsgruppe/n, der/denen die neuen Benutzer hinzugefügt werden.
+Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oauth-application-and-provider) , instanziiert durch Erstellen einer Cloud-Dienstkonfiguration, identifiziert die Twitter-Anwendung und die Mitgliedsgruppe/n, der/denen die neuen Benutzer hinzugefügt werden.
 
 1. Melden Sie sich auf der Autoreninstanz mit Administratorrechten an.
-1. Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Twitter Social-Anmeldekonfiguration]**.
+1. Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Twitter Social-Anmeldekonfiguration]**.
 1. Wählen Sie die **[!UICONTROL Kontextpfadkonfiguration]** .
 
    Der Kontextpfad sollte mit dem Cloud-Konfigurationspfad übereinstimmen, den Sie beim Erstellen/Bearbeiten einer Community-Site ausgewählt haben.
@@ -269,7 +274,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    * **[!UICONTROL Verbraucherschlüssel]**
 
-      (*Erforderlich*) Geben Sie den **API-Schlüssel** für die Twitter-App ein. Dadurch wird die [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -Instanz identifiziert, die über das Dialogfeld erstellt wurde.
+      (*Erforderlich*) Geben Sie den **API-Schlüssel** für die Twitter-App ein. Dadurch wird die im Dialogfeld erstellte Granite OAuth Application- und Provider-Instanz der [Adobe](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) identifiziert.
 
    * **[!UICONTROL Kundengeheimnis]**
 
@@ -277,7 +282,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
    * **[!UICONTROL Benutzer erstellen]**
 
-      Wenn diese Option aktiviert ist, wird bei der Anmeldung bei einem Twitter-Konto ein AEM-Benutzereintrag erstellt und als Mitglied der ausgewählten Benutzergruppe(n) hinzugefügt. Die Standardeinstellung ist aktiviert (wird dringend empfohlen).
+      Wenn diese Option aktiviert ist, wird bei der Anmeldung bei einem Twitter-Konto ein AEM Benutzereintrag erstellt und als Mitglied der ausgewählten Benutzergruppe(n) hinzugefügt. Die Standardeinstellung ist aktiviert (wird dringend empfohlen).
 
    * **[!UICONTROL Benutzer-IDs verschleiern]**
 
@@ -292,13 +297,13 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 
 1. Wählen Sie **[!UICONTROL SPEICHERN]** und **[!UICONTROL Veröffentlichen]**.
 
-Das Ergebnis ist eine [Adobe Granite OAuth-Anwendungs- und Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) -Instanz, die keine weitere Änderung erfordert. Der Standardbereich ist die Standardberechtigung für die Twitter-Anmeldung.
+Das Ergebnis ist eine Granite OAuth-Instanz der [Adobe und des Anbieters](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) , die keine weitere Änderung erfordert. Der Standardbereich ist die Standardberechtigung für die Twitter-Anmeldung.
 
 ### AEM Communities Twitter OAuth Provider {#aem-communities-twitter-oauth-provider}
 
-Die AEM Communities-Konfiguration erweitert die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -Instanz. Dieser Anbieter muss bearbeitet werden, um Benutzeraktualisierungen zu ermöglichen.
+Die AEM Communities-Konfiguration erweitert die Granite OAuth- [Anwendungsinstanz und -Provider](#adobe-granite-oauth-application-and-provider) der Adobe. Dieser Anbieter muss bearbeitet werden, um Benutzeraktualisierungen zu ermöglichen.
 
-Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM-Veröffentlichungsinstanz folgende Schritte durch:
+Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM Veröffentlichungsinstanz folgende Schritte durch:
 
 1. Melden Sie sich mit Administratorrechten an.
 1. Navigate to the [Web Console](../../help/sites-deploying/configuring-osgi.md).
@@ -311,9 +316,10 @@ Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM-Veröffentlich
    ![twitteroauth_png](assets/twitteroauth_png.png)
 
    * **[!UICONTROL OAuth Provider-ID]**
+
    (*Erforderlich*) Der Standardwert ist *soco -twitter*. Bearbeiten Sie nicht.
 
-   * **[!UICONTROL Cloud-Dienstkonfiguration]**
+   * **[!UICONTROL Cloud Service-Konfiguration]**
 
       The default value is *conf.* Bearbeiten Sie nicht.
 
@@ -323,7 +329,7 @@ Wenn eine Bearbeitung erforderlich ist, führen Sie bei jeder AEM-Veröffentlich
 
    * **[!UICONTROL Benutzerpfad]**
 
-      Speicherort im Repository, an dem Benutzerdaten gespeichert werden. Bei einer Community-Site sollte der Pfad der Standardpfad sein, um sicherzustellen, dass die Mitglieder das Profil einer anderen Ansicht ausführen `/home/users/community`.
+      Speicherort im Repository, an dem Benutzerdaten gespeichert werden. Für eine Community-Site sollte der Pfad der Standardpfad sein, um sicherzustellen, dass die Mitglieder das Profil einer anderen Ansicht ausführen `/home/users/community`.
 
    * **[!UICONTROL Parameter]** aktivieren bearbeiten nicht
    * **[!UICONTROL URL-Parameter]** bearbeiten nicht
@@ -345,7 +351,7 @@ Die nächsten Schritte sind für Facebook und Twitter gleich:
 
 Nachdem ein Cloud-Dienst konfiguriert wurde, kann er für die entsprechende Social-Anmeldeeinstellung für eine Community-Site aktiviert werden. Verwenden Sie dazu das Unterbedienfeld [Benutzerverwaltungseinstellungen](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) , während Sie Community-Sites [erstellen](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) oder [verwalten](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
-1. Wählen Sie den Kontext für die Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
+1. Wählen Sie den Kontext Ihrer Site-Konfiguration aus, in dem Sie Ihre Social-Anmeldekonfigurationen gespeichert haben.
 
 1. Legen Sie auf der Registerkarte Allgemein die Cloud-Konfigurationen fest.
 
@@ -357,7 +363,7 @@ Nachdem ein Cloud-Dienst konfiguriert wurde, kann er für die entsprechende Soci
 
 ## Social-Anmeldung testen {#test-social-login}
 
-* Vergewissern Sie sich, dass der [Adobe Granite OAuth Authentication Handler](#adobe-granite-oauth-authentication-handler) für alle Veröffentlichungsinstanzen aktiviert wurde.
+* Stellen Sie sicher, dass der [Adobe Granite OAuth Authentication Handler](#adobe-granite-oauth-authentication-handler) für alle Veröffentlichungsinstanzen aktiviert wurde.
 * Vergewissern Sie sich, dass die Cloud-Dienste veröffentlicht wurden.
 * Vergewissern Sie sich, dass die Community-Site veröffentlicht wurde.
 * Starten Sie die veröffentlichte Site in einem Browser.
@@ -373,7 +379,7 @@ Beispiel: http://localhost:4503/content/sites/engage/en.html
 
 ### Adobe Granite OAuth Authentication Handler {#adobe-granite-oauth-authentication-handler}
 
-Die Funktion `Adobe Granite OAuth Authentication Handler` ist nicht standardmäßig aktiviert und ***muss in allen AEM-Veröffentlichungsinstanzen aktiviert sein.***
+Die Funktion `Adobe Granite OAuth Authentication Handler` ist nicht standardmäßig aktiviert und ***muss in allen AEM Instanzen im Veröffentlichungsmodus aktiviert sein.***
 
 Um den Authentifizierungshandler bei der Veröffentlichung zu aktivieren, öffnen Sie einfach die OSGi-Konfiguration und speichern Sie sie:
 
@@ -388,7 +394,7 @@ Beispiel: http://localhost:4503/system/console/configMgr
 
 >[!CAUTION]
 >
->Verwechseln Sie den Authentifizierungshandler nicht mit einer Facebook- oder Twitter-Instanz von *Adobe Granite OAuth Application and Provider*.
+>Verwechseln Sie den Authentifizierungshandler nicht mit einer Facebook- oder Twitter-Instanz von Granite OAuth Application und Provider der *Adobe*.
 
 
 ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -404,7 +410,7 @@ So suchen Sie die erstellte Instanz für eine Facebook- oder Twitter-App:
 
    Beispiel: http://localhost:4503/system/console/configMgr.
 
-1. Suchen Sie Adobe Granite OAuth Application and Provider.
+1. Suchen Sie nach Adobe Granite OAuth Application and Provider.
 
    * Suchen Sie die Instanz, in der die **[!UICONTROL Client-ID]** mit der **[!UICONTROL App-ID]**&#x200B;übereinstimmt.
 
@@ -485,7 +491,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
    * Select **[!UICONTROL Save All]**.
 
 
-* Ersetzen Sie für den **Namen** `oauthid-123`123 *durch die Facebook-* App-ID ***oder den Twitter-*** Consumer-Schlüssel ***(API), der den Wert der*** Client-IDin der Konfiguration von Adobe **** [](social-login.md#adobe-granite-oauth-application-and-provider) Granite OAuth Application und Provider darstellt.
+* Ersetzen Sie für den **Namen** `oauthid-123`123 *durch die Facebook-* App-ID ***oder den Twitter-*** Consumer-Schlüssel ***(API), der den Wert der*** **** [](social-login.md#adobe-granite-oauth-application-and-provider) Client-IDAdobe in der OAuth-Anwendungskonfiguration und der Provider-Konfiguration angibt.
 
    ![chlimage_1-492](assets/chlimage_1-492.png)
 
