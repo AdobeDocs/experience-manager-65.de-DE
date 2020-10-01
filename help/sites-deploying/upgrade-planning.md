@@ -12,6 +12,9 @@ discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+workflow-type: tm+mt
+source-wordcount: '2447'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +29,7 @@ Dieser Leitfaden unterstützt Sie bei der Formulierung von klaren Zielen, Phasen
 
 Der Aktualisierungsprozess für AEM erfordert sorgfältig ausgeführte Planungs-, Analyse- und Durchführungsphasen, für die jeweils wichtige Ergebnisse festgelegt werden müssen.
 
-Beachten Sie, dass ein Upgrade direkt von AEM-Versionen 6.0 und bis 6.5 möglich ist. Kunden, die 5.6.x und höher ausführen, müssen zuerst auf Version 6.0 oder höher aktualisieren, wobei 6.0(SP3) empfohlen wird. Darüber hinaus wird seit 6.3 für den Segment-Knotenspeicher das neue OAK-Segment-TAR-Format verwendet. Eine Repository-Migration in dieses neue Format ist sogar für die Versionen 6.0, 6.1 und 6.2 obligatorisch.
+Beachten Sie, dass es möglich ist, direkt von AEM Version 6.0 und bis zu 6.5 zu aktualisieren. Kunden, die 5.6.x und höher ausführen, müssen zuerst auf Version 6.0 oder höher aktualisieren, wobei 6.0(SP3) empfohlen wird. Darüber hinaus wird seit 6.3 für den Segment-Knotenspeicher das neue OAK-Segment-TAR-Format verwendet. Eine Repository-Migration in dieses neue Format ist sogar für die Versionen 6.0, 6.1 und 6.2 obligatorisch.
 
 >[!CAUTION]
 >
@@ -136,7 +139,7 @@ Sie müssen bei einer Aktualisierung möglicherweise auch andere Komponenten Ihr
 
 #### Überlegungen zur Neustrukturierung des Contents {#content-restructuring-considerations}
 
-Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Restrukturierung wurde so durchgeführt, dass zum Zeitpunkt der Aktualisierung von 6.5 keine Codeänderungen erforderlich sind. Es wird jedoch empfohlen, die Details bei der [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md) während der Planung einer Aktualisierung zu überprüfen.
+Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Restrukturierung wurde so durchgeführt, dass zum Zeitpunkt der 6.5-Aktualisierung keine Codeänderungen erforderlich sind. Es wird jedoch empfohlen, die Details bei der [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md) während der Planung einer Aktualisierung zu überprüfen.
 
 ### Bewertung der Komplexität der Aktualisierung {#assessing-upgrade-complexity}
 
