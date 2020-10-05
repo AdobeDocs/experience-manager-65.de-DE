@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -44,7 +44,7 @@ Verwenden von CRXDE Lite:
 1. Click the green **[!UICONTROL +Add]** button.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![page-script](assets/page-script.png)
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
@@ -128,13 +128,13 @@ Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch di
 
 Das Seitenbedienfeld &quot;Elemente/Komponenten&quot;wird angezeigt, wenn sowohl das Seitenbedienfeld geöffnet ist als auch das Fenster breit genug ist, damit sowohl der Seiteninhalt als auch der Seiteninhalt angezeigt werden können.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![ansicht-Seite](assets/view-page.png)
 
 * Klassische Benutzeroberfläche: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 So wird die Wiedergabeseite in der klassischen Benutzeroberfläche angezeigt, auch mit der Inhaltssuche (siehe ):
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![play-page-Ansicht](assets/play-page-view.png)
 
 ## Communities-Komponenten {#communities-components}
 
