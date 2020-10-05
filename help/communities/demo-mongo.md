@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
 workflow-type: tm+mt
 source-wordcount: '792'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -137,7 +137,7 @@ Wenn ja, aktualisieren Sie die Datei etc/hosts mit einem neuen Eintrag für dies
 
 ### SolrCloud {#solrcloud}
 
-Um ein sehr einfaches (nicht produktives) solrCloud-Setup auszuführen, führen Sie Beginn-Solr mit:
+Um eine sehr einfache (nicht produktive) solrCloud-Einrichtung auszuführen, führen Sie Beginn-Solr mit:
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
@@ -157,26 +157,26 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
 1. Melden Sie sich an, um einen Kommentar zu posten:
 1. Geben Sie Text in das Kommentartexteingabefeld ein und klicken Sie auf **[!UICONTROL Beitrag]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![post-comment](assets/post-comment.png)
 
 1. Ansicht einfach den Kommentar auf der [Autoreninstanz](http://localhost:4502/content/community-components/en/comments.html) (wahrscheinlich noch als Admin / Admin angemeldet).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![ansicht-Kommentar](assets/view-comment.png)
 
-   Hinweis: während es JCR-Knoten unter dem *asipath* auf author gibt, gelten diese für das SCF-Framework. Die eigentliche UGC ist nicht in JCR, sondern in der MongoDB.
+   Hinweis: Während es JCR-Knoten unter dem *asipath* auf author gibt, gelten diese für das SCF-Framework. Die eigentliche UGC ist nicht in JCR, sondern in der MongoDB.
 
 1. Ansicht des UGC in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Sammlungen]** > **[!UICONTROL Inhalt]**
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+   ![ugc-content](assets/ugc-content.png)
 
 1. Ansicht des UGC in Solr:
 
-   * Zu Solr-Dashboard navigieren: [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * Benutzer `core selector` auswählen `collection1`
-   * Wählen Sie nun eine der folgenden Optionen aus `Query`
-   * Wählen Sie nun eine der folgenden Optionen aus `Execute Query`
+   * Zu Solr-Dashboard navigieren: [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * Zu `core selector` wählender Benutzer `collection1`.
+   * Wählen Sie nun eine der folgenden Optionen aus `Query`.
+   * Wählen Sie nun eine der folgenden Optionen aus `Execute Query`.
 
-   ![chlimage_1-194](assets/chlimage_1-194.png)
+   ![ugc-solr](assets/ugc-solr.png)
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -186,14 +186,9 @@ Um den MongoDB-Stammspeicher zu testen und zu überprüfen, veröffentlichen Sie
 
 1. Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde:
 
-   * Rufen Sie auf allen Instanzen im Autorenmodus und AEM Veröffentlichungsmodus die [Datenspeicherung Configuration Console erneut auf](srp-config.md)
+   * Rufen Sie auf allen Instanzen im Autorenmodus AEM Veröffentlichungsmodus erneut die [Datenspeicherung Configuration Console](srp-config.md) auf oder überprüfen Sie das AEM Repository:
 
-   Oder überprüfen Sie das AEM Repository:
-
-   * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
-
-   * Enthält keinen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) -Knoten, d. h., der Datenspeicherung-Provider ist JSRP
-   * Wenn der Knoten srpc vorhanden ist und die Node- [Standardkonfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)enthält, sollten die Eigenschaften der Standardkonfiguration MSRP als Standardanbieter definieren
-
+   * Wenn [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) in JCR keinen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) -Knoten enthält, bedeutet dies, dass der Datenspeicherung-Provider JSRP ist.
+   * Wenn der srpc-Knoten vorhanden ist und Node- [Standardkonfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)enthält, sollten die Eigenschaften der Standardkonfiguration MSRP als Standardanbieter definieren.
 
 1. Stellen Sie sicher, dass AEM nach Auswahl von MSRP neu gestartet wurde.
