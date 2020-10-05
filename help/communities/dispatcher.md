@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Dispatcher für Communities
 seo-title: Konfigurieren von Dispatcher für Communities
-description: Konfigurieren des Dispatchers für AEM Communities
-seo-description: Konfigurieren des Dispatchers für AEM Communities
+description: Dispatcher für AEM Communities konfigurieren
+seo-description: Dispatcher für AEM Communities konfigurieren
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 6%
@@ -22,19 +22,19 @@ ht-degree: 6%
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities müssen den Dispatcher so konfigurieren, dass die [Community-Sites](overview.md#community-sites)ordnungsgemäß funktionieren. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie Aktivierung der Communities und Anmeldung in sozialen Netzwerken einbezogen werden.
+Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um sicherzustellen, dass [Community-Sites](overview.md#community-sites)ordnungsgemäß funktionieren. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie Aktivierung der Communities und Anmeldung in sozialen Netzwerken einbezogen werden.
 
 So erfahren Sie, was für Ihre spezifische Implementierung und Ihren Site-Entwurf erforderlich ist
 
 * Contact [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
-Weitere Informationen finden Sie in der Hauptdokumentation zu [Dispatchern](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Siehe auch die wichtigste [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Dispatcher Caching {#dispatcher-caching}
 
-### Übersicht {#overview}
+### Überblick {#overview}
 
-Dispatcher-Caching für AEM Communities ist die Fähigkeit des Dispatchers, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
+Dispatcher-Zwischenspeicherung für AEM Communities ist die Fähigkeit des Dispatchers, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
 
 Derzeit wird sie nur für anonyme Site-Besucher, wie z. B. Benutzer, die die Community-Site durchsuchen, oder für Benutzer, die infolge einer Suche auf einer Community-Seite landen, sowie für Suchmaschinen unterstützt, die Seiten indizieren. Der Vorteil besteht darin, dass anonyme Benutzer und Suchmaschinen eine höhere Leistung erleben.
 
@@ -61,7 +61,7 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 * Suchen `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Klicken Sie auf das Symbol &quot;+&quot;, um eine neue Verbindungskonfiguration zu erstellen.
 
-   ![chlimage_1-339](assets/chlimage_1-339.png)
+   ![dispatcher](assets/dispatcher.png)
 
 * **Filtermuster**
 
@@ -71,7 +71,7 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
    *(Erforderlich)* Das Höchstalter (in Sekunden), das dem Cache-Steuerelement-Header hinzugefügt werden soll. Der Wert muss größer als null (0) sein.
 
-## Dispatcher-Client-Kopfzeilen {#dispatcher-client-headers}
+## Dispatcher-Client-Header {#dispatcher-client-headers}
 
 Im Abschnitt /clientheaders `dispatcher.any`ist es erforderlich, wenn Sie einen bestimmten Satz von Kopfzeilen auflisten, `"CSRF-Token"` damit die [Aktivierungsfunktion](enablement.md) ordnungsgemäß funktioniert.
 
@@ -87,7 +87,7 @@ Die folgenden Beispiele verwenden Eigenschaftsnamen, die wahrscheinlich geänder
 
 Siehe auch:
 
-* [Checkliste für die Sicherheit von Dispatchern](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Dispatcher Security Checkliste](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
