@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 3%
@@ -24,12 +24,12 @@ ht-degree: 3%
 
 Aus Entwicklungs- und Demonstrationsgründen müssen ein Autor und eine Instanz im Veröffentlichungsmodus ausgeführt werden.
 
-Befolgen Sie die grundlegenden AEM- [Erste](../../help/sites-deploying/deploy.md#getting-started) Schritte, die zu
+Befolgen Sie die grundlegenden AEM [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started) , die zu
 
 * Autorendatei auf [localhost:4502](http://localhost:4502/)
 * Umgebung auf [localhost veröffentlichen: 4503](http://localhost:4503/)
 
-Für AEM Communities
+AEM Communities:
 
 * Die Umgebung des Verfassers dient:
 
@@ -55,7 +55,7 @@ Dieses Lernprogramm erstellt eine [Community-Site](overview.md#enablement-commun
 
 * [Neueste Versionen](deploy-communities.md#latest-releases)
 
-Eine Übung, die eine [Interaktionssite](overview.md#engagement-community)erstellt, finden Sie unter [Erste Schritte mit AEM Communities](getting-started.md).
+Ein Tutorial zur Erstellung einer [Interaktionssite](overview.md#engagement-community)finden Sie unter [Erste Schritte mit AEM Communities](getting-started.md).
 
 ## Aktivierungsfunktionen konfigurieren {#configure-enablement-features}
 
@@ -63,7 +63,7 @@ Um diesem Lernprogramm zu folgen, müssen Sie die Aktivierung [ordnungsgemäß i
 
 ## Konfigurieren Sie Analytics {#configure-analytics}
 
-Wenn [Adobe Analytics für die Community-Site](analytics.md)konfiguriert ist, stehen weitere Informationen in den [Berichten](reports.md) zur Verfügung, die zu den Aktivierungsressourcen und Lernpfaden erstellt wurden, die Mitgliedern der Community (Lernenden) zugewiesen wurden.
+Wenn [Adobe Analytics für die Community-Site](analytics.md)konfiguriert ist, stehen weitere Informationen in den [Berichten](reports.md) zur Verfügung, die zu Aktivierungsressourcen und Lernpfaden erstellt wurden, die Mitgliedern der Community (Lernenden) zugewiesen wurden.
 
 ## E-Mail für Benachrichtigungen konfigurieren {#configure-email-for-notifications}
 
@@ -94,14 +94,14 @@ Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#taggi
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-417](assets/chlimage_1-417.png)
+![tutorial-tags](assets/tutorial-tags.png)
 
 Folgen Sie dann den Anweisungen:
 
 1. [Festlegen der Tag-Berechtigungen](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Veröffentlichen der Tags](../../help/sites-administering/tags.md#publishing-tags)
 
-Beispielpaket mit Tags, die für die Lernprogramme für AEM Communities erstellt wurden
+Beispielpaket mit Tags, die für die Tutorials Erste Schritte mit AEM Communities erstellt wurden
 
 [Datei laden](assets/communities_tutorialtags-10.zip)
 
@@ -157,14 +157,14 @@ Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die 
 * **Vorname**: Quinn
 * **Nachname**: Harper
 
-### Hinzufügen einer Benutzergruppe - Community-Skiklasse {#add-a-user-group-community-ski-class}
+### hinzufügen einer Benutzergruppe - Community-Skiklasse {#add-a-user-group-community-ski-class}
 
-[Hinzufügen eine neue Gruppe](members.md#create-new-group) namens Community Ski Class.
+[hinzufügen eine neue Gruppe](members.md#create-new-group) namens Community Ski Class.
 
 * **ID**: community-ski-class
 * **Name**: Community Ski Class
 * **Beschreibung**: eine Beispielgruppe zum Zuweisen von Ressourcen für die Aktivierung
-* **Hinzufügen Mitglieder zu Gruppe** hinzufügen:
+* **hinzufügen Mitglieder zu Gruppe** hinzufügen:
 
    * Riley
    * sidney
@@ -173,7 +173,7 @@ Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die 
 
 ### Community-Ski-Klasseneigenschaften {#community-ski-class-properties}
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![ski-class-properties](assets/ski-class-properties.png)
 
 >[!NOTE]
 >
@@ -219,5 +219,5 @@ Blättern Sie nach unten zu `Add User to Groups`:
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![admin-role](assets/admin-role.png)
 
