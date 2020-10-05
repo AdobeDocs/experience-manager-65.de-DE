@@ -9,17 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
 workflow-type: tm+mt
-source-wordcount: '4102'
-ht-degree: 61%
+source-wordcount: '4162'
+ht-degree: 60%
 
 ---
 
 
 # Arbeiten mit einem Formulardatenmodell{#work-with-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![data-integration](do-not-localize/data-integeration.png)
 
 Der Formulardatenmodell-Editor bietet eine intuitive Benutzeroberfläche und Werkzeuge zum Bearbeiten und Konfigurieren eines Formulardatenmodells. Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Dienste aus verknüpften Datenquellen im Formulardatenmodell hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und -eigenschaften ohne Datenquellen erstellen und später mit den entsprechenden Datenmodellobjekten und -eigenschaften verknüpfen. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, die Sie zum Vorbefüllen von adaptiven Formularen und interaktiver Kommunikation während der Vorschau verwenden können. Sie können Datenmodellobjekte und -dienste testen, die in einem Formulardatenmodell konfiguriert sind, um sicherzustellen, dass sie ordnungsgemäß in Datenquellen integriert sind.
 
@@ -175,11 +175,11 @@ In diesem Beispiel werden die mit **4367655678** als Wert für das `mobilenum` A
 
 #### Benutzerprofilattribut {#user-profile-attribute}
 
-Wählen Sie **[!UICONTROL User Profil Attribute]** aus dem Dropdownmenü **[!UICONTROL Bindung an]** und geben Sie den Attributnamen in das Feld **[!UICONTROL Bindungswert]** ein. Die Details des Benutzers, der bei der AEM-Instanz angemeldet ist, werden anhand des Attributnamens aus der Datenquelle abgerufen.
+Wählen Sie **[!UICONTROL User Profil Attribute]** aus dem Dropdownmenü **[!UICONTROL Bindung an]** und geben Sie den Attributnamen in das Feld **[!UICONTROL Bindungswert]** ein. Die Details des Benutzers, der bei der AEM Instanz angemeldet ist, werden aus der Datenquelle anhand des Attributnamens abgerufen.
 
 Der im Feld **[!UICONTROL Bindungswert]** angegebene Attributname muss den vollständigen Bindungspfad bis zum Attributnamen des Benutzers enthalten. Öffnen Sie die folgende URL, um auf die Benutzerdetails in CRXDE zuzugreifen:
 
-https://&lt;Servername>: /crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Benutzerprofil](assets/binding_crxde_user_profile_new.png)
 
@@ -195,15 +195,31 @@ Verwenden Sie das Anforderungsattribut, um die zugehörigen Eigenschaften aus de
 
 1. Wählen Sie im Dropdown-Menü &quot; **[!UICONTROL Bindung an]** &quot;die Option &quot;Attribut **** anfordern&quot;und geben Sie den Attributnamen in das Feld &quot; **[!UICONTROL Bindungswert]** &quot;ein.
 
-1. Öffnen Sie head.jsp, um die Attributdetails in CRXDE zu definieren:\
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Erstellen Sie eine [Überlagerung](../../../help/sites-developing/overlays.md) für head.jsp. Um die Überlagerung zu erstellen, öffnen Sie CRX DE und kopieren Sie die `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` Datei in `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
-1. Fügen Sie den folgenden Text in die Datei head.jsp ein:
+   >[!NOTE]
+   >
+   > * Wenn Sie eine statische Vorlage verwenden, überlagern Sie head.jsp unter:
+/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * Wenn Sie eine bearbeitbare Vorlage verwenden, überlagern Sie die Datei aftemplatedpage.jsp unter:
+/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+
+1. Wird [!DNL paramMap] für das Anforderungsattribut festgelegt. Fügen Sie beispielsweise den folgenden Code in die JSP-Datei im Apps-Ordner ein:
+
+   ```javascript
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+   ```
+
+   Verwenden Sie zum Beispiel den folgenden Code, um den Wert der Petid aus der Datenquelle abzurufen:
+
+
+   ```javascript
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
    ```
 
 Die Details werden basierend auf dem in der Anforderung angegebenen Attributnamen aus der Datenquelle abgerufen.
