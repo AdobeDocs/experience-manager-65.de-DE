@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 71%
+source-wordcount: '990'
+ht-degree: 68%
 
 ---
 
@@ -98,7 +98,7 @@ Einbetten des adaptiven Formulars:
 
 1. Im eingebetteten Code:
 
-   * Change value of the *options.path* variable with the path of the publish URL of the adaptive form. Wenn der AEM-Server in einem Kontextpfad ausgeführt wird, stellen Sie sicher, dass die URL diesen Pfad enthält. Beispielsweise befinden sich der Code und das adaptive Formular im Beispiel oben auf demselben AEM Forms-Server, daher wird im Kontextpfad dieses Beispiels der Pfad /content/forms/af/locbasic.html für das adaptive Formular verwendet.
+   * Change value of the *options.path* variable with the path of the publish URL of the adaptive form. Wenn der AEM-Server in einem Kontextpfad ausgeführt wird, stellen Sie sicher, dass die URL diesen Pfad enthält. Erwähnen Sie immer den vollständigen Namen des adaptiven Formulars einschließlich der Erweiterung.   Beispiel: Der oben aufgeführte Code und das adaptive Formular befinden sich auf demselben AEM Formularserver, sodass im Beispiel der Kontextpfad des adaptiven Formulars /content/forms/af/locbasic.html verwendet wird.
    * Ersetzen Sie *options.dataRef* durch Attribute, die mit der URL übertragen werden sollen. You can use the dataref variable to [prefill an adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md).
    * Ersetzen Sie *options.themePath* durch den Pfad zu einem anderen Design als dem im adaptiven Formular konfigurierten Design. Alternativ können Sie den Designpfad mit dem Anforderungsattribut angeben.
    * CSS_Selector ist der CSS-Selektor des Formularcontainers, in den das adaptive Formular eingebettet ist. Beispiel: Die CSS-Klasse &quot;.customafsection&quot;ist im obigen Beispiel der CSS-Selektor.
