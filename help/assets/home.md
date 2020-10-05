@@ -1,22 +1,21 @@
 ---
 title: Asset-Handbuch
-seo-title: Handbuch zu Adobe Experience Manager 6.5 Assets
 description: In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
-seo-description: Behandelt alle Asset-Aufgaben des Experience Managers, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
+user-guide-title: Asset-Handbuch
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 18%
+source-wordcount: '339'
+ht-degree: 20%
 
 ---
 
 
-# Handbuch zu Adobe Experience Manager 6.5 Assets
+# Asset-Handbuch
 
-In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
+In diesem Handbuch werden alle [!DNL Experience Manager Assets] Aufgaben behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 
-## Artikel zu wichtigen Experience Managern
+## Wichtige [!DNL Experience Manager] Artikel
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -26,7 +25,7 @@ In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt,
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Sicherheitscheckliste](/help/sites-administering/security-checklist.md)
 
-## Experience Manager 6.5 - Handbücher
+## [!DNL Experience Manager] 6.5 Hilfslinien
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
@@ -43,7 +42,7 @@ In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt,
 | [Mobiles Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird das Erstellen und Verwalten von Inhalten für mobile Anwendungen beschrieben. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Dieses Handbuch zeigt Ihnen, wie Sie benutzergenerierte Inhalte gemeinsam nutzen [!DNL Livefyre]. |
 
-## Wichtige Experience Manager-Ressourcen
+## Wichtige [!DNL Experience Manager] Ressourcen
 
 * [Experience Manager Video-Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
