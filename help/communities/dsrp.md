@@ -1,8 +1,8 @@
 ---
 title: DSRP - Ressourcenanbieter für relationale Datenspeicherung
 seo-title: DSRP - Ressourcenanbieter für relationale Datenspeicherung
-description: Einrichten von AEM Communities zur Verwendung einer relationalen Datenbank als gemeinsamen Speicher
-seo-description: Einrichten von AEM Communities zur Verwendung einer relationalen Datenbank als gemeinsamen Speicher
+description: AEM Communities für die Verwendung einer relationalen Datenbank als gemeinsamen Speicher einrichten
+seo-description: AEM Communities für die Verwendung einer relationalen Datenbank als gemeinsamen Speicher einrichten
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Über DSRP {#about-dsrp}
 
-Wenn AEM Communities für die Verwendung einer relationalen Datenbank als gemeinsamer Speicher konfiguriert ist, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass Synchronisierung oder Replikation erforderlich sind.
+Wenn AEM Communities so konfiguriert ist, dass eine relationale Datenbank als gemeinsamer Speicher verwendet wird, können vom Benutzer generierte Inhalte (UGC) von allen Autor- und Veröffentlichungsinstanzen aus aufgerufen werden, ohne dass Synchronisierung oder Replikation erforderlich sind.
 
 Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-of-srp-options) und der [empfohlenen Topologien](topologies.md).
 
@@ -71,7 +71,7 @@ Wenn Sie Autor sind, können Sie auf die Datenspeicherung Configuration Console 
       >[!NOTE]
       >
       >Die Standardkonfiguration für die Datenspeicherung wird jetzt in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) anstelle von etc path(`/etc/socialconfig/srpc/defaultconfiguration`) gespeichert. Es wird empfohlen, die [Migrationsschritte](#zerodt-migration-steps) durchzuführen, damit die Standardeinstellung wie erwartet funktioniert.
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Datenbankkonfiguration**
@@ -90,7 +90,7 @@ Wenn Sie Autor sind, können Sie auf die Datenspeicherung Configuration Console 
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper-Host **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper-Host**
 
       Lassen Sie diesen Wert leer, wenn Solr mit dem internen ZooKeeper ausgeführt wird. Andernfalls legen Sie bei Ausführung im [SolrCloud-Modus](solr.md#solrcloud-mode) mit einem externen ZooKeeper diesen Wert auf den URI für den ZooKeeper fest, z. B. *my.server.com:80*
 
