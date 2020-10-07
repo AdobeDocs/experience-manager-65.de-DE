@@ -6,10 +6,10 @@ user-guide-title: AEM 6.5 Implementierungshandbuch
 breadcrumb-title: Deploying Guide
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: cb07e24b01084f57ad46615cb463ad5a0329c181
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 92%
+source-wordcount: '324'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 92%
    + [Oak-run.jar – Indizierungsanwendungsfälle](oak-run-indexing-usecases.md)
    + [Fehlerbehebung bei Oak-Indizes](troubleshooting-oak-indexes.md)
    + [Aktivieren der aggregierten Sammlung von Nutzungsstatistiken](opt-in-aggregated-usage-statistics.md)
-   + [Definitionen des Releasebilds aktualisieren](update-release-vehicle-definitions.md)
    + [Fehlerbehebung](troubleshooting.md)
 + Konfigurieren von AEM {#configuring}
    + [Grundlegende Konfigurationskonzepte](configuring.md)
