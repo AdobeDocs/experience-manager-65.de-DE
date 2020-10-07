@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
+source-git-commit: b76d93ada35f5d054c1d07bf1a7dd9deaaaec1ee
 workflow-type: tm+mt
-source-wordcount: '9618'
+source-wordcount: '9619'
 ht-degree: 61%
 
 ---
@@ -452,8 +452,8 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
 ## Move and rename assets {#moving-or-renaming-assets}
 
-Wenn Sie Assets (oder Ordner) an einen anderen Speicherort verschieben, werden die Assets (oder Ordner) nicht dupliziert, anders als beim Kopieren des Assets. Die Assets (oder die Ordner) werden am Speicherort der Zielgruppe platziert und vom Quellspeicherort entfernt. Sie können das Asset auch umbenennen, wenn Sie es an die neue Position verschieben.
-Wenn Sie ein veröffentlichtes Asset an einen anderen Speicherort verschieben, haben Sie die Möglichkeit, das Asset erneut zu veröffentlichen. Standardmäßig wird beim Verschieben eines veröffentlichten Assets die Veröffentlichung automatisch rückgängig gemacht. Verschiebte Assets werden erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;auswählt.
+Wenn Sie Assets (oder Ordner) an einen anderen Speicherort verschieben, werden die Assets (oder Ordner) nicht dupliziert, anders als beim Kopieren des Assets. Die Assets (oder die Ordner) werden am Speicherort der Zielgruppe platziert und vom Quellspeicherort entfernt. Sie können das Asset auch umbenennen, wenn Sie es an den neuen Speicherort verschieben.
+Wenn Sie ein veröffentlichtes Asset an einen anderen Speicherort verschieben, haben Sie die Möglichkeit, das Asset erneut zu veröffentlichen. Standardmäßig wird beim Verschieben eines veröffentlichten Assets die Veröffentlichung automatisch rückgängig gemacht. Ein verschobenes Asset wird erneut veröffentlicht, wenn der Autor beim Verschieben des Assets die Option &quot; [!UICONTROL Neu veröffentlichen] &quot;auswählt.
 
 ![Sie können bereits veröffentlichte Assets beim Verschieben erneut veröffentlichen](assets/republish-on-move.png)
 
@@ -498,7 +498,7 @@ So verschieben Sie Assets oder Ordner:
 
 Sie können Assets (oder Ordner) in einen gleichgeordneten Ordner, die [!UICONTROL Leuchtkasten] -Sammlung oder eine andere Sammlung verschieben, indem Sie sie an den Speicherort der Zielgruppe ziehen, anstatt die Option &quot; [!UICONTROL Verschieben] &quot;in der Benutzeroberfläche zu verwenden. Dieser Vorgang ist jedoch nur in der Ansicht der Liste möglich.
 
-Wenn Sie Assets durch Ziehen verschieben, wird der Assistent zum [!UICONTROL Verschieben von Assets] nicht geöffnet. Daher erhalten Sie beim Verschieben keine Option zum Umbenennen der Assets. Darüber hinaus werden die bereits veröffentlichten Assets beim Verschieben durch Ziehen erneut veröffentlicht, ohne dass die Zustimmung des Benutzers zur erneuten Veröffentlichung eingeholt werden muss.
+Wenn Sie Assets durch Ziehen verschieben, wird der Assistent zum [!UICONTROL Verschieben von Assets] nicht geöffnet. Daher können Sie die Assets beim Verschieben nicht umbenennen. Darüber hinaus werden die bereits veröffentlichten Assets beim Verschieben durch Ziehen erneut veröffentlicht, ohne dass die Zustimmung des Benutzers zur erneuten Veröffentlichung eingeholt werden muss.
 
 ![Verschieben von Assets in gleichgeordnete Ordner durch Ziehen von Assets](assets/move-by-drag.gif)
 
