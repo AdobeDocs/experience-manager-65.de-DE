@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Die Konsole &quot;Gruppen&quot;bietet Zugriff auf das Erstellen von Community-Gruppen, wenn die [Vorlagenstruktur](/help/communities/sites-console.md#step1) einer Community-Site die Funktion [&quot;](/help/communities/functions.md#groups-function)Gruppen&quot;enthält.
 
-* AEM Communities unterstützen das Verschachteln von Gruppen innerhalb anderer Gruppen. Gruppenverschachtelung ist möglich, wenn die [Struktur der neuen Gruppe](/help/communities/tools-groups.md) die Funktion groups enthält.
+* AEM Communities unterstützt das Verschachteln von Gruppen innerhalb anderer Gruppen. Gruppenverschachtelung ist möglich, wenn die [Struktur der neuen Gruppe](/help/communities/tools-groups.md) die Funktion groups enthält.
 * Nur für die Umgebung des Autors gibt es einen Assistenten zum Erstellen von Gruppen, der dem Assistenten zum Erstellen der Site ähnelt.
 * Ob (oder nicht) Mitglieder in der Umgebung &quot;Veröffentlichen&quot;Gruppen erstellen können, ist beim Hinzufügen einer Gruppenfunktion zu einer Community-Site- oder Community-Gruppenstruktur konfigurierbar.
 
@@ -39,14 +39,14 @@ Die verschiedenen Facetten von Gemeinschaftsgruppen sind:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+-->
 
 >[!NOTE]
 >
 >Diese Konsole &quot;Gruppen&quot;, die nur über die Konsole &quot;Communities Sites&quot;zugänglich ist, ist nicht mit der [Gruppenkonsole](/help/communities/members.md) für die Verwaltung von Mitgliedsgruppen zu verwechseln.
 >
 >Mitgliedergruppen sind Benutzergruppen, die in der Umgebung &quot;Veröffentlichen&quot;registriert sind und von der Autorenversion aus über den [Tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author)aufgerufen werden.
-
 
 ## Gruppenerstellung {#group-creation}
 
@@ -204,12 +204,11 @@ Nach Abschluss des Vorgangs wird die Karte für die neue Subcommunity-Site (Grup
 >
 >Die Gruppe wird in allen Sprachen erstellt, wie in [Schritt 1 angegeben: Community-Gruppenvorlage](/help/communities/groups.md#step-community-group-template) in zusätzlichen verfügbaren Community-Gruppensprachen in der Community-Gruppenkonsole der jeweiligen Community-Sites.
 
-
 ## Inhalt der Autorengruppe {#author-group-content}
 
 ![open-site](assets/open-site.png)
 
-Der Seiteninhalt einer Gruppe kann mit denselben Werkzeugen wie jede andere AEM-Seite erstellt werden. Um die Gruppe zum Authoring zu öffnen, wählen Sie das Symbol &quot;Site öffnen&quot;, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen.
+Der Seiteninhalt einer Gruppe kann mit denselben Werkzeugen wie jede andere AEM erstellt werden. Um die Gruppe zum Authoring zu öffnen, wählen Sie das Symbol &quot;Site öffnen&quot;, das angezeigt wird, wenn Sie den Mauszeiger über die Gruppenkarte bewegen.
 
 ## Gruppeneigenschaften ändern {#modify-group-properties}
 
@@ -256,13 +255,11 @@ Entfernen (Löschen) von Funktionen aus der Site-Struktur.
 >
 >Wenn Sie beispielsweise die URL umbenennen, wird die vorhandene UGC nicht verschoben, sodass die UGC verliert wird.
 
-
 >[!CAUTION]
 >
 >Die Funktion groups darf *nicht* die *erste oder einzige* Funktion in der Site-Struktur sein.
 >
 >Jede andere Funktion, wie die [Seitenfunktion](/help/communities/functions.md#page-function), muss eingeschlossen und zuerst aufgeführt werden.
-
 
 **Beispiel: Hinzufügen einer Kalenderfunktion zu einer UnterCommunity-(Gruppen-)Struktur**
 
@@ -304,7 +301,6 @@ Nachdem die Gruppe erfolgreich veröffentlicht wurde, wird eine Meldung angezeig
 >Die übergeordnete Community-Site und die übergeordneten Gruppen hätten bereits veröffentlicht werden sollen.
 >
 >Die Community-Site und verschachtelte Gruppen sollten von oben nach unten veröffentlicht werden.
-
 
 ## Gruppe löschen {#delete-the-group}
 
