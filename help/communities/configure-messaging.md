@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 13%
@@ -53,7 +53,6 @@ Informationen zum Aktivieren und Ändern der Messaging-Funktion finden Sie unter
 >[!NOTE]
 >
 >Es wird nicht unterstützt, `Compose Message, Message, or Message List` Komponenten (in der `Communities`Komponentengruppe) einer Seite im Bearbeitungsmodus des Autors hinzuzufügen.
-
 
 ## Messaging-Komponenten konfigurieren {#configure-messaging-components}
 
@@ -99,7 +98,7 @@ Nach dem Abbrechen der Vererbung können Sie das Symbol &quot;Konfigurieren&quot
 
 * **Ordnerpfade**
 
-   (*Erforderlich*) Verweisen auf die für **inbox.path.name** und **sentitems.path.name** festgelegten Werte im [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Bei der Konfiguration für einen `Inbox`Eintrag fügen Sie einen Eintrag mit dem Wert **inbox.path.name** hinzu. Bei der Konfiguration für einen `Outbox`Eintrag fügen Sie einen Eintrag mit dem Wert von **sentitems.path.name** hinzu. Fügen Sie beim Konfigurieren für `Trash`zwei Einträge mit beiden Werten hinzu.
+   (*Erforderlich*) Verweisen auf die Werte, die für **inbox.path.name** und **sentitems.path.name** im [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service)festgelegt wurden. Bei der Konfiguration für einen `Inbox`Eintrag fügen Sie einen Eintrag mit dem Wert **inbox.path.name** hinzu. Bei der Konfiguration für einen `Outbox`Eintrag fügen Sie einen Eintrag mit dem Wert von **sentitems.path.name** hinzu. Fügen Sie beim Konfigurieren für `Trash`zwei Einträge mit beiden Werten hinzu.
 
 #### Registerkarte anzeigen {#display-tab}
 
