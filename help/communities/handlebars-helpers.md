@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1534'
+ht-degree: 7%
 
 ---
 
@@ -32,7 +35,6 @@ Die mit AEM Communities gelieferten benutzerdefinierten SCF-Helfer werden in der
 >[!NOTE]
 >
 >Installieren Sie unbedingt das [neueste Communities Feature Pack](deploy-communities.md#latestfeaturepack).
-
 
 ## Abkürzung {#abbreviate}
 
@@ -237,7 +239,7 @@ Ein Helfer zum Einbeziehen einer Komponente als nicht vorhandene Ressource in ei
 
 Dadurch kann die Ressource programmgesteuert einfacher angepasst werden, als es für eine Ressource möglich ist, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einbeziehen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
 
-Es sind nur einige ausgewählte Communities-Komponenten inklusive. Für AEM 6.1 sind die inklusiven [Kommentare](essentials-comments.md), [Ratings](rating-basics.md), [Reviews](reviews-basics.md)und [Abstimmungen](essentials-voting.md).
+Es sind nur einige ausgewählte Communities-Komponenten inklusive. Für AEM 6.1 sind die [Kommentare](essentials-comments.md), [Rating](rating-basics.md), [Rezensionen](reviews-basics.md)und [Abstimmungen](essentials-voting.md)inbegriffen.
 
 Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [cq:include](../../help/sites-developing/taglib.md) für JSP-Skripte ähneln.
 
@@ -283,7 +285,7 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die [ui:inc
 
 ### Parameter {#parameters-7}
 
-* **Kategorien**: Zeichenfolge
+* **kategorien**: Zeichenfolge
 
    (Optional) Eine Liste kommagetrennter Client-Lib-Kategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
@@ -458,7 +460,7 @@ Eine kurze Übersicht über Hilfsfunktionen aus der [Handlebars.js-Dokumentation
 * Der Kontext kann ein String-, number-, boolean- oder JSON-Datenobjekt sein.
 * Es ist möglich, ein im aktuellen Kontext verschachteltes Objekt als Kontext zu übergeben, z. B. `this.url` oder `this.id` (siehe folgende Beispiele von einfachen und Blockhelfern).
 
-* Blockhelfer sind Funktionen, die von jeder beliebigen Stelle in der Vorlage aufgerufen werden können. Sie können einen Vorlagenblock jedes Mal mit einem anderen Kontext null oder mehrmals aufrufen. Sie enthalten einen Kontext zwischen {{#*name*}} und {{/*name*}}.
+* Blockhelfer sind Funktionen, die von jeder beliebigen Stelle in der Vorlage aufgerufen werden können. Sie können einen Vorlagenblock jedes Mal mit einem anderen Kontext null oder mehrmals aufrufen. Sie enthalten einen Kontext zwischen {{#*name*}} und {{/*name*}.
 
 * Handlebars bietet einen endgültigen Parameter für Helfer namens &#39;options&#39;. Das Sonderobjekt &#39;options&#39; enthält
 
@@ -467,7 +469,7 @@ Eine kurze Übersicht über Hilfsfunktionen aus der [Handlebars.js-Dokumentation
    * Möglichkeit zum Aufrufen selbst (options.fn())
    * Möglichkeit zum Aufrufen des Umkehrs (options.inverse())
 
-* Es wird empfohlen, dass der von einem Helfer zurückgegebene HTML-String-Inhalt eine SafeString-Zeichenfolge ist.
+* Es wird empfohlen, dass der HTML-String-Inhalt, der von einem Helfer zurückgegeben wird, ein SafeString ist.
 
 ### Ein Beispiel für einen einfachen Helfer aus der Handlebars.js-Dokumentation: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
@@ -567,7 +569,6 @@ public class FooTextHelper implements TemplateHelper<String>{
 >Für die clientseitige Erstellung muss auch ein Helfer erstellt werden.
 >
 >Die Komponente wird für den angemeldeten Benutzer clientseitig wiedergegeben. Wenn der clientseitige Helfer nicht gefunden wird, wird die Komponente ausgeblendet.
-
 
 ### Benutzerspezifische Helfer auf Clientseite {#client-side-custom-helpers}
 
