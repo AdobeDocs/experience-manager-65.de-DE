@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 10%
@@ -23,12 +23,11 @@ ht-degree: 10%
 
 Die Art der Funktionen, die von einer Community-Erfahrung erwartet werden, sind bekannt. Community-Funktionen sind als Community-Funktionen verfügbar. Sie sind im Wesentlichen eine oder mehrere Seiten, die vorab verkabelt sind, um eine Community-Funktion zu implementieren, die mehr erfordert, als einfach eine Komponente zu einer Seite im Autorenmodus hinzuzufügen. Sie sind die Bausteine, mit denen die Struktur einer [Community-Site-Vorlage](/help/communities/sites.md) definiert wird, aus der Community-Sites [erstellt](/help/communities/sites-console.md)werden.
 
-Nachdem eine Community-Site erstellt wurde, können den resultierenden Seiten Inhalte mithilfe des Standard- [AEM-Authoring-Modus](/help/sites-authoring/editing-content.md)hinzugefügt werden. Verschiedene Community-Funktionen stehen zur Verfügung, wie in der Community-Funktionkonsole zu sehen ist.
+Nachdem eine Community-Site erstellt wurde, können den resultierenden Seiten Inhalte im Standard- [AEM-Bearbeitungsmodus](/help/sites-authoring/editing-content.md)hinzugefügt werden. Verschiedene Community-Funktionen stehen zur Verfügung, wie in der Community-Funktionkonsole zu sehen ist.
 
 >[!NOTE]
 >
 >Die Konsolen zum Erstellen von [Community-Sites](/help/communities/sites-console.md), [Community-Site-Vorlagen](/help/communities/sites.md), [Community-Gruppenvorlagen](/help/communities/tools-groups.md)und [Community-Funktionen](/help/communities/functions.md) sind nur für die Verwendung in der Autoren-Umgebung vorgesehen.
-
 
 ## Community Functions Console {#community-functions-console}
 
@@ -40,7 +39,7 @@ So erreichen Sie die Community-Funktionkonsole in der Authoring-Umgebung:
 
 ## Vordefinierte Funktionen {#pre-built-functions}
 
-Im Folgenden werden die mit AEM Communities gelieferten Funktionen kurz beschrieben. Jede Funktion umfasst eine oder mehrere AEM-Seiten, die Communities-Komponenten enthalten, die in eine Funktion verkettet sind, die leicht in eine [Community-Site-Vorlage](/help/communities/sites.md)integriert werden kann.
+Im Folgenden werden die mit AEM Communities gelieferten Funktionen kurz beschrieben. Jede Funktion umfasst eine oder mehrere AEM Seiten, die Communities-Komponenten enthalten, die zu einer Funktion verdrahtet sind, die leicht in eine [Community-Site-Vorlage](/help/communities/sites.md)integriert werden kann.
 
 Eine Community-Site-Vorlage bietet die Struktur für eine Community-Site, einschließlich Anmeldung, Profile, Benachrichtigungen, Nachrichten, Site-Menü, Suche, Themen und Branding-Funktionen.
 
@@ -60,7 +59,7 @@ Wenn eine Community-Funktion zu einer Community-Site-Vorlage hinzugefügt oder h
 
 * **URL**
 
-   (*Erforderlich*) Der Name, mit dem der URI generiert wird. Der Name muss den [Benennungskonventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR entsprechen.
+   (*Erforderlich*) Der Name, mit dem der URI generiert wird. Der Name muss den [Benennungsregeln](/help/sites-developing/naming-conventions.md) von AEM und JCR entsprechen.
 
 Verwenden Sie zum Beispiel die Site, die nach dem Tutorial [Erste](/help/communities/getting-started.md) Schritte erstellt wurde, wenn
 
@@ -234,7 +233,6 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 >
 >Jede andere Funktion, wie die [Seitenfunktion](#page-function), muss eingeschlossen und zuerst aufgeführt werden.
 
-
 Die Gruppenfunktion bietet Community-Mitgliedern die Möglichkeit, Untergruppen auf der Community-Site in der Umgebung zum Veröffentlichen zu erstellen.
 
 Je nach [Einstellungen](/help/communities/sites-console.md#groupmanagement) , wenn die Funktion &quot;Gruppen&quot;in einer [Community-Site-Vorlage](/help/communities/sites.md)enthalten ist, können die Gruppen öffentlich oder privat sein, und eine oder mehrere Community-Gruppenvorlagen können so konfiguriert werden, dass eine Auswahl von Vorlagen bereitgestellt wird, wenn die Community-Gruppe erstellt wird (z. B. aus der Umgebung &quot;Veröffentlichen&quot;). Eine [Community-Gruppenvorlage](/help/communities/tools-groups.md) gibt an, welche Communities-Funktionen für die Gruppenseiten erstellt werden, z. B. Foren und Kalender.
@@ -317,7 +315,7 @@ Die Option &quot;Standard&quot;ist deaktiviert.
 
 ### Seitenfunktion {#page-function}
 
-Die Seitenfunktion fügt der Community-Site eine leere Seite hinzu, auf der sie in die Funktionen der Community-Site verdrahtet wird: Login, Menü, Benachrichtigungen, Messaging, Theming und Branding. Inhalte werden der Seite mithilfe des [Standard-AEM-Authoring-Modus](/help/sites-authoring/editing-content.md)hinzugefügt.
+Die Seitenfunktion fügt der Community-Site eine leere Seite hinzu, auf der sie in die Funktionen der Community-Site verdrahtet wird: Login, Menü, Benachrichtigungen, Messaging, Theming und Branding. Der Seite werden Inhalte mithilfe des [Standard-AEM-Authoring-Modus](/help/sites-authoring/editing-content.md)hinzugefügt.
 
 Wenn Sie einer Vorlage hinzugefügt werden, erfolgt die einzige Konfiguration für die [Titel- und URL-Einstellungen](#title-and-url-settings).
 
@@ -353,7 +351,7 @@ Wenn eine Vorlage hinzugefügt wird, erlaubt die Konfiguration die Beschränkung
 
 ## Community-Funktion erstellen {#create-community-function}
 
-Die Möglichkeit, eine Community-Funktion zu erstellen, wird durch Auswahl des `Create Community Function` Symbols oben in der Community Functions-Konsole erreicht. Mehrere Funktionen, die auf demselben AEM-Blueprint basieren, können erstellt und dann durch Öffnen im Autorenbearbeitungsmodus eindeutig angepasst werden.
+Die Möglichkeit, eine Community-Funktion zu erstellen, wird durch Auswahl des `Create Community Function` Symbols oben in der Community Functions-Konsole erreicht. Mehrere Funktionen, die auf demselben AEM Blueprint basieren, können erstellt und dann durch Öffnen im Autorenbearbeitungsmodus eindeutig angepasst werden.
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -387,7 +385,7 @@ Da die Community-Funktion als [Live-Kopie](/help/sites-administering/msm.md#live
 
 Siehe auch [Multi-Site-Manager](/help/sites-administering/msm.md).
 
-### Miniaturansicht     {#thumbnail}
+### Miniaturansicht       {#thumbnail}
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -401,7 +399,7 @@ Wählen Sie das `Open Community Function` Symbol aus, um zum Authoring des Seite
 
 ### Konfigurieren von Komponenten {#configuring-components}
 
-Eine Community-Funktion wird als Live Copy eines AEM-Blueprints implementiert, dessen Details unter [Multi-Site-Manager](/help/sites-administering/msm.md)dokumentiert sind.
+Eine Community-Funktion wird als Live Copy eines AEM Blueprints implementiert, dessen Details unter [Multi Site Manager](/help/sites-administering/msm.md)dokumentiert sind.
 
 Es ist möglich, nicht nur Seiteninhalte zu erstellen, sondern Komponenten zu konfigurieren.
 
