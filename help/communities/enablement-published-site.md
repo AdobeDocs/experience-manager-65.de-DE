@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 3%
@@ -50,8 +50,8 @@ Beachten Sie, dass diese Startseite vier Menüelemente enthält: `Assignments, S
 >[!NOTE]
 >
 >Es ist möglich, anonymen Zugriff auf eine Aktivierungs-Site zu gewähren, ohne dass Site-Besucher sich selbst registrieren können.
+>
 >Wenn eine Aktivierungsressource auf `show in catalog` `allow anonymous access`und festgelegt ist, können anonyme Site-Besucher Ansichten im Katalog ausführen.
-
 
 ### Anonymen Zugriff auf JCR verhindern {#prevent-anonymous-access-on-jcr}
 
@@ -59,7 +59,7 @@ Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen B
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer durch jcr-Inhalte und json zu schützen:
 
-1. Wechseln Sie in der AEM-Autoreninstanz zu https://&lt;Host>:&lt;Port>/editor.html/content/site/&lt;Site-Name>.html.
+1. Wechseln Sie in AEM Autoreninstanz zu https://&lt;Host>:&lt;Port>/editor.html/content/site/.html.
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
    ![site-authentication](assets/site-authentication.png)
 
-1. Hinzufügen den Pfad der Anmeldeseite. Beispiel: `/content/......./GetStarted`.
+1. hinzufügen den Pfad der Anmeldeseite. Beispiel: `/content/......./GetStarted`.
 1. Veröffentlichen Sie die Seite.
 
 ## Eingeschriebenes Mitglied {#enrolled-member}
@@ -140,7 +140,7 @@ Beachten Sie, dass es neben der Inline-Moderation Optionen gibt, das Thema in so
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-### Neuerungen {#what-s-new}
+### Neue Funktionen {#what-s-new}
 
 Der `What's New` Menüpunkt ist der Titel der [Aktivität-Stream-Funktion](functions.md#activity-stream-function) in der Struktur dieser Community-Site.
 
@@ -182,7 +182,7 @@ Navigieren Sie beim Autor zur **Communities, zur[Ressourcenkonsole](resources.md
 * Alle Aktivierungsressourcen und Lernpfade
 * Eine spezifische Aktivierungsressource oder ein Lernpfad
 
-Navigieren Sie zur **Communities-,[Reports-Konsole](reports.md)**und generieren Sie Berichte wie folgt:
+Navigieren Sie zur **Communities-,[Reports-Konsole](reports.md)** und generieren Sie Berichte wie folgt:
 
 * Zuweisung zu aktivierenden Ressourcen und Lernpfaden
 * Beiträge zu einer Community-Site über einen bestimmten Zeitraum
@@ -251,7 +251,7 @@ Für Berichte zu Ansichten:
 
 * Melden Sie sich beim Autor mit Administratorrechten an.
 * Navigieren Sie zu **[!UICONTROL Communities]** > **[!UICONTROL Berichte]** > **[!UICONTROL Ansichten-Bericht]**.
-* Wählen Sie eine **Site **aus dem Pulldown-Menü aus (wählen Sie`Enablement Tutorial`).
+* Wählen Sie eine **Site** aus dem Pulldown-Menü aus (wählen Sie `Enablement Tutorial`).
 
 * Wählen Sie **[!UICONTROL Inhaltstyp]** (wählen Sie `all`).
 
