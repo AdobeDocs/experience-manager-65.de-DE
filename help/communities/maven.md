@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 2%
@@ -20,20 +20,20 @@ ht-degree: 2%
 
 # Verwenden von Maven für Communities {#using-maven-for-communities}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Dieser Abschnitt der Dokumentation zu den AEM Communities ergänzt:
+Dieser Abschnitt der AEM Communities-Dokumentation ergänzt:
 
-* [Erstellen von AEM-Projekten mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Erstellen AEM Projekte mit Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Es gibt jetzt zwei &quot;Uber&quot;-Artefakte, die einzelne Artefakte ersetzen:
 
-* AEM [Communities API-JAR](#communities-api-jar-artifact)
-* AEM [Uber API-JAR](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* API-JAR [für AEM](#communities-api-jar-artifact)
+* AEM [Uber-API-JAR](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Communities API JAR Artefakt {#communities-api-jar-artifact}
 
-Im Folgenden finden Sie ein Beispiel für eine GAV-Datei für die AEM Communities API-JAR:
+Im Folgenden finden Sie ein Beispiel für eine GAV für die AEM Communities API-JAR:
 
 ```xml
 <dependency>
@@ -51,7 +51,7 @@ Stellen Sie sicher, dass die angegebene Version der Communities-Paketversion ent
 
 1. Suchen Sie das Paket: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extrahieren Sie die Version aus dem Paketnamen:
-   * Die erste Version von AEM 6.3 ist Version 1.11.170.
+   * Die erste Version für AEM 6.3 ist Version 1.11.170.
    * Feature Packs sind die Versionen 1.12.xxx.
 
 >[!NOTE]
@@ -59,7 +59,6 @@ Stellen Sie sicher, dass die angegebene Version der Communities-Paketversion ent
 >Es wird empfohlen, mit der neuesten Version von Communities auf dem Laufenden zu bleiben.
 >
 >Im Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) finden Sie die neueste Version.
-
 
 ## Beispiel für eine Maven-Abhängigkeit {#maven-dependency-example}
 
