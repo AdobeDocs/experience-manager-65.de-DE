@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -74,7 +74,6 @@ Dadurch wird ein MongoDB-Server mit dem Standardanschluss 27017 Beginn.
 >
 >Wenn MongoDB *nach* AEM gestartet wird, **starten** Sie alle **AEM** Instanzen neu, damit sie ordnungsgemäß eine Verbindung zu MongoDB herstellen.
 
-
 ### Demoproduktionsoption: Setup MongoDB Replikat Set {#demo-production-option-setup-mongodb-replica-set}
 
 Die folgenden Befehle sind ein Beispiel für die Einrichtung eines Replikationssatzes mit 3 Knoten auf localhost:
@@ -133,7 +132,6 @@ Dadurch wird ein Solr-HTTP-Server mit dem Standardanschluss 8983 Beginn. Sie kö
 >
 >Wenn Solr Console nicht verfügbar ist, überprüfen Sie die Protokolle unter &lt;solrinstall>/example/logs. Achten Sie darauf, ob SOLR versucht, sich an einen bestimmten Hostnamen zu binden, der nicht aufgelöst werden kann (z.B. &quot;user-macbook-pro&quot;).
 Wenn ja, aktualisieren Sie die Datei etc/hosts mit einem neuen Eintrag für diesen Hostnamen (z.B. 127.0.0.1 user-macbook-pro) und Solr wird ordnungsgemäß Beginn.
-
 
 ### SolrCloud {#solrcloud}
 
