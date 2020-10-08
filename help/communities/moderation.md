@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -62,7 +62,6 @@ Nur wenn Sie sich als Administrator oder als Mitglied mit [Moderatorberechtigung
 >
 >UGC aus der Veröffentlichungs-Umgebung ist nur beim Autor sichtbar, wenn das ausgewählte SRP einen gemeinsamen Store implementiert. Beispielsweise ist die Datenspeicherung standardmäßig JSRP, also kein gemeinsamer Speicher für Autoren und Veröffentlichungen. Weitere Informationen finden Sie unter [Community-Inhaltsspeicher](/help/communities/working-with-srp.md).
 
-
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## Benutzeroberfläche der Moderationskonsole {#moderation-console-ui}
@@ -109,7 +108,6 @@ Der Inhaltsbereich enthält Informationen für veröffentlichte UGC:
 > 
 >Der Inhaltsbereich verfügt über einen *unendlichen Bildlauf*, sodass Sie mit dem Bildlauf fortfahren können, bis das Ende des Inhalts erreicht ist. Die Symbolleiste bleibt auch beim Scrollen in einer festen, sichtbaren Position über dem Inhaltsbereich.
 
-
 ### Filterleiste {#ootbfilters}
 
 ![open-filterrail](assets/open-filterrail.png)
@@ -125,7 +123,6 @@ Wenn Sie jedoch **Frage** und **Ausstehend** aktivieren, werden nur Inhalte ange
 >[!NOTE]
 >
 >Community-Moderatoren können die vordefinierten Filter in der Benutzeroberfläche der Moderationskonsole mit einem Lesezeichen versehen. Da diese Filter an das Ende der URL angehängt werden (als Zeichenfolgenparameter für Abfragen), können Moderatoren später zu den mit Lesezeichen versehenen Filtern zurückkehren und diese Links auch freigeben.
-
 
 ![searicon](assets/searchicon.png)
 
@@ -154,7 +151,6 @@ Site beschränkt die referenzierte UGC auf Beiträge auf ausgewählte Community-
 >Wenn ein Administrator auf die Massen-Moderationskonsole zugreift, werden alle Verweise auf UGC angezeigt, einschließlich Sites, die nicht mit dem [Site-Erstellungsassistenten](/help/communities/sites-console.md)erstellt wurden, wie z. B. die Geometrixx.
 >
 >Wenn ein Mitglied einer vertrauenswürdigen Community auf die Massenmoderationskonsole zugreift, werden nur Verweise auf UGC angezeigt, die für Community-Sites erstellt wurden, die das Mitglied moderieren darf, und können mit dem Site-Filter gefiltert werden.
-
 
 #### Inhaltstyp {#content-type}
 
@@ -205,7 +201,6 @@ Der Status beschränkt die referenzierte UGC auf Beiträge mit dem ausgewählten
 >[!NOTE]
 >
 >Wenn nur der Status &quot;Nicht beantwortet&quot;ausgewählt ist, wird dem Moderator der gesamte Inhalt (für alle Inhaltstypen) mit Ausnahme der beantworteten Fragen angezeigt. Dies liegt daran, dass die Eigenschaft, die für die Antwort Frage verantwortlich ist, bei nicht beantworteten Fragen und anderen Inhalten wie Forenthema, Blog-Artikel oder Kommentaren nicht vorhanden ist.
-
 
 ![Status](assets/statuses.png)
 
@@ -272,7 +267,7 @@ So machen Sie die benutzerdefinierten Filter auf bestehenden Websites der Gemein
 
 Wenn Sie die Beiträge stapelweise moderieren möchten, klicken Sie im Inhaltsbereich auf das Symbol Auswählen (![Auswahl](assets/selecticon.png)) eines Beitrags, das angezeigt wird, wenn Sie den Mauszeiger über diesen Beitrag bewegen (Desktop) oder indem Sie mit dem Finger auf den Beitrag drücken (Mobil). Auf diese Weise können Sie den Mehrfachauswahlmodus aufrufen und die nachfolgenden Beiträge auswählen, die per Mausklick gepostet werden sollen. Verwenden Sie die in der Symbolleiste angezeigten Schaltflächen, um Moderationsaktionen an den ausgewählten Beiträgen durchzuführen. Alle Aktionen werden zur Bestätigung aufgefordert.
 
-Um einen einzelnen Beitrag im Inhaltsbereich zu moderieren, halten Sie den Mauszeiger über ihn (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
+Wenn Sie einen einzelnen Beitrag im Inhaltsbereich moderieren möchten, halten Sie den Mauszeiger über den Beitrag (Desktop) oder drücken Sie die Eingabetaste und halten Sie den Finger auf dem Beitrag (Mobil), sodass die Schaltflächen auf dem Beitrag angezeigt werden. Wenn Sie mit einem einzigen Inhaltsdetail arbeiten, wird nur eine Löschaktion zur Bestätigung aufgefordert.
 
 ### Moderieren mehrerer Beiträge {#moderating-multiple-posts}
 
