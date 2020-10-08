@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Bewertungen und Bewertungszusammenfassung (Anzeige)
 seo-title: Verwenden von Bewertungen und Bewertungszusammenfassung (Anzeige)
-description: Adding the Reviews and Reviews Summary components to a page
+description: Hinzufügen der Komponenten "Review and Reviews Summary"zu einer Seite
 seo-description: Hinzufügen der Komponenten "Review and Reviews Summary"zu einer Seite
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
 contentOwner: Guillaume Carlino
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 39%
@@ -27,7 +27,6 @@ The `Reviews Summary (Display)` component provides a summary of an active or clo
 >[!NOTE]
 >
 >Das anonyme Posten von Bewertungen wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglieder werden) und anmelden, um Kommentare verfassen zu können. Angemeldete Besucher können ihre Bewertungen jederzeit aktualisieren.
-
 
 ## Hinzufügen einer Bewertung zu einer Seite {#adding-a-review-to-a-page}
 
@@ -51,7 +50,7 @@ Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of rat
 
 * **[!UICONTROL Zulässige Bewertungen]**
 
-   A list of ratings from which a member can choose.
+   Eine Liste von Ratings, aus denen ein Mitglied wählen kann.
 
     Verwenden Sie die Schaltflächen zur Bearbeitung der angezeigten Auswahl (Pfeil nach oben, Pfeil nach unten und Schaltfläche zum Löschen).
 
@@ -65,7 +64,7 @@ Auf der Webseite werden erforderliche Bewertungen durch einen Stern gekennzeichn
 
 * **[!UICONTROL Erforderliche Bewertungen]**
 
-   A subset of allowed ratings, indicating which ratings are required.
+   Eine Untergruppe zulässiger Ratings, die angibt, welche Ratings erforderlich sind.
 
     Verwenden Sie die Schaltflächen zur Bearbeitung der angezeigten Auswahl (Pfeil nach oben, Pfeil nach unten und Schaltfläche zum Löschen).
 
@@ -74,7 +73,6 @@ Auf der Webseite werden erforderliche Bewertungen durch einen Stern gekennzeichn
 >[!NOTE]
 >
 >If an item is entered on the **[!UICONTROL Required Ratings]** tab that is not specified on the **[!UICONTROL Allowed Ratings]** tab, then it is not included in the items to rate.
-
 
 Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
@@ -92,9 +90,9 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
    Wenn diese Option aktiviert ist, lassen Sie das Hochladen von Dateianlagen für die Überprüfung zu. Diese Option ist standardmäßig deaktiviert.
 
-* **Max. Dateigröße **
+* **Max. Dateigröße**
 
-   Relevant nur, wenn &quot;Datei-Uploads **[!UICONTROL zulassen]** &quot;aktiviert ist. This field limits the size (in bytes) of an uploaded file. Der Standardwert ist 10 MB.
+   Relevant nur, wenn &quot;Datei-Uploads **[!UICONTROL zulassen]** &quot;aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 10 MB.
 
 * **[!UICONTROL Maximale Nachrichtenlänge]**
 
@@ -106,7 +104,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
-   If checked, posts may be entered with markup. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Beiträge mit Markup eingegeben werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
 
@@ -118,7 +116,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 * **[!UICONTROL Vor der Moderation]**
 
-   If checked, reviews must be approved before they will appear on a publish site. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, müssen Überprüfungen genehmigt werden, bevor sie auf einer Veröffentlichungssite angezeigt werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Bewertungen löschen]**
 
@@ -150,7 +148,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 * **[!UICONTROL Kennzeichnungslimit]**
 
-   Enter the number of times a review has to be flagged before it is hidden from public view. Dieser Wert muss größer als der oder gleich dem **[!UICONTROL Schwellenwert für Moderation]** sein. Der Standardwert ist 5.
+   Geben Sie an, wie oft eine Überprüfung markiert werden muss, bevor sie aus der öffentlichen Ansicht ausgeblendet wird. Dieser Wert muss größer als der oder gleich dem **[!UICONTROL Schwellenwert für Moderation]** sein. Der Standardwert ist 5.
 
 ### Hinzufügen einer Bewertungszusammenfassung (Anzeige) zu einer Seite {#adding-a-review-summary-display-to-a-page}
 
@@ -169,7 +167,6 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 >[!NOTE]
 >
 >Der Durchschnitt spiegelt das Stimmenverhältnis für das erste aufgelistete Element auf der Registerkarte „Zulässige Bewertungen“ derjenigen Bewertungen wider, die hier zusammengefasst werden.
-
 
 ### Konfigurieren von Bewertungszusammenfassungen (Anzeige) {#configuring-reviews-summary-display}
 
@@ -213,7 +210,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
    Navigieren Sie zum resourceType einer erweiterten `voting`Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`.
 
-   This resource will identify the resource type of the UGC created when a visitor posts a vote.
+   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wird, wenn ein Besucher eine Abstimmung veröffentlicht.
 
 * **[!UICONTROL System-Ressourcen-Typ kommentieren]**
 
@@ -227,7 +224,7 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 ### Mitglieder {#members}
 
-When the site visitor is signed in, depending on the configuration, they may:
+Wenn der Site-Besucher angemeldet ist, kann es je nach Konfiguration zu Folgendem kommen:
 
 * Eine neue Überprüfung posten
 * Eigene Prüfung bearbeiten
