@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Durch eine bekannte Einschränkung wird der Inhalt der Community-Site anonymen B
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durch anonyme Benutzer durch jcr-Inhalte und json zu schützen:
 
-1. Wechseln Sie auf der Instanz im AEM Author zu https:// Hostname:port/editor.html/content/site/sitename.html.
+1. Wechseln Sie auf der AEM Author-Instanz zu https:// Hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff durc
 
    ![site-authentication](assets/site-authentication.png)
 
-1. Hinzufügen den Pfad der Anmeldeseite. For example, **/content/......./GetStarted**.
+1. hinzufügen den Pfad der Anmeldeseite. For example, **/content/......./GetStarted**.
 1. Veröffentlichen Sie die Seite.
 
 ## Vertrauenswürdiger Community-Mitglied {#trusted-community-member}
@@ -107,9 +107,6 @@ Beachten Sie, dass die Kalenderseite die Startseite ist, da die gewählte Refere
 >
 >* [Communities-Komponenten](/help/communities/author-communities.md) (für Autoren)
 >* [Komponenten-, Funktionen- und Funktionsgrundlagen](/help/communities/essentials.md) (für Entwickler)
-
->
-
 
 
 ### Forum-Link {#forum-link}
