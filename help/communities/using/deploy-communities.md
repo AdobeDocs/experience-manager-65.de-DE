@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c0834e9b70266e8b678771510fb1756c8091ea8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 4%
@@ -329,7 +329,6 @@ Um das Schlüsselmaterial vom Autor in alle anderen Instanzen zu kopieren, müss
 >
 >Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, könnte die Replizierung der Verschlüsselungsschlüssel die Konfiguration beschädigen. Wenden Sie sich zwecks Hilfe [an die Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
-
 #### Repository-Replikation {#repository-replication}
 
 Die Speicherung des Schlüsselmaterials im Repository kann, wie bei AEM 6.2 und früher, beibehalten werden, indem beim ersten Start jeder AEM Instanz (die das anfängliche Repository erstellt) die folgende Systemeigenschaft angegeben wird:
@@ -339,7 +338,6 @@ Die Speicherung des Schlüsselmaterials im Repository kann, wie bei AEM 6.2 und 
 >[!NOTE]
 >
 >Es ist wichtig zu überprüfen, ob der [Replizierungsagenten beim Autor](#replication-agents-on-author) richtig konfiguriert ist.
-
 
 Wenn das Schlüsselmaterial im Repository gespeichert ist, erfolgt die Replizierung des Verschlüsselungsschlüssels vom Autor zu anderen Instanzen wie folgt:
 
@@ -356,7 +354,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 #### Granite Crypto-Bundle aktualisieren {#refresh-the-granite-crypto-bundle}
 
-* Greifen Sie auf jeder Instanz im Veröffentlichungsmodus auf die [Web-Konsole zu](/help/sites-deploying/configuring-osgi.md)
+* Greifen Sie auf jeder Instanz im Veröffentlichungsmodus auf die [Webkonsole zu](/help/sites-deploying/configuring-osgi.md)
 
    * Beispiel: [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
 
