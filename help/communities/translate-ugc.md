@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Beispiel:
 * Das Mitglied aus Frankreich verwendet die Übersetzungsfunktion, um den japanischen Kommentar ins Französische zu übersetzen.
 * Globale Kommunikation.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In diesem Abschnitt der Dokumentation wird insbesondere erläutert, wie der Übersetzungsdienst mit UGC funktioniert. Dabei wird erläutert, wie AEM mit einem [Übersetzungsdienst](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) verbunden und dieser Dienst in eine Website integriert werden kann, indem ein [Übersetzungsintegrationsframework](../../help/sites-administering/tc-tic.md)konfiguriert wird.
 
@@ -52,10 +52,9 @@ Beim [Erstellen einer Community-Site](sites-console.md)ist der Standard-Überset
 >
 >Für ein Produktionssystem ist ein lizenzierter Übersetzungsdienst erforderlich. Ist keine Lizenz vorhanden, sollte der Standard-Übersetzungsdienst [deaktiviert](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors)werden.
 
-
 ## Globale Übersetzung von UGC {#global-translation-of-ugc}
 
-Wenn eine Website über mehrere [Sprachkopien](../../help/sites-administering/tc-prep.md)verfügt, erkennt der Standard-Übersetzungsdienst nicht, dass auf einer Site eingegebener UGC mit einem in einer anderen Site eingegebenen UGC in Beziehung stehen kann, als ob der UGC im Wesentlichen von derselben Komponente (der Sprachkopie der Seite, die die Komponente enthält) generiert wird.
+Wenn eine Website mehrere [Sprachkopien](../../help/sites-administering/tc-prep.md)hat, erkennt der Standard-Übersetzungsdienst nicht, dass auf einer Site eingegebener UGC mit einem in einer anderen Site eingegebenen UGC in Beziehung stehen kann, als ob der UGC im Wesentlichen von derselben Komponente (der Sprachkopie der Seite, die die Komponente enthält) generiert wird.
 
 Es ähnelt Gruppen von Menschen, die ein Thema diskutieren, die sich nicht bewusst sind, dass Kommentare in anderen Gruppen als ihren eigenen abgegeben werden, im Vergleich zu allen in einer großen Gruppe, die an einem Gespräch teilnimmt.
 
@@ -70,7 +69,6 @@ Wenn z. B. ein Forum auf der Basis-Site eingerichtet wurde, Sprachkopien erstell
 >Während sich das UGC noch im [gemeinsamen Speicher](working-with-srp.md)befindet, befindet es sich unter dem sprachspezifischen UGC-Speicherort, während neue Inhalte, die nach der Konfiguration der globalen Übersetzung hinzugefügt wurden, vom globalen freigegebenen Speicherort abgerufen werden.
 >
 >Es gibt kein Migrationswerkzeug zum Verschieben oder Zusammenführen sprachspezifischer Inhalte in den globalen gemeinsamen Speicher.
-
 
 ### Konfiguration für Übersetzungsintegration {#translation-integration-configuration}
 
@@ -126,7 +124,7 @@ Ausführliche Anweisungen finden Sie unter [Erstellen einer Konfiguration für d
 `General.`
 
    * **[!UICONTROL Gebietsschema auswählen...]**
-(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](sites-console.md#translation) der Website. Durch Auswahl dieser Option `No Common Store` wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
+(Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](sites-console.md#translation) der Website aus. Durch Auswahl dieser Option `No Common Store` wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert.
 
 * **[!UICONTROL Registerkarte &quot;Assets]** &quot;: kann als Standard beibehalten werden.
 * Wählen Sie **[!UICONTROL OK]** aus
@@ -146,7 +144,6 @@ Der neue Cloud-Dienst für die Integration von Übersetzungen muss in der Umgebu
 >Die bevorzugte Sprache ist die Spracheinstellung, die im Profil des Benutzers festgelegt wird, wenn der Site-Besucher angemeldet ist und eine Spracheinstellung festgelegt hat.
 >
 >Wenn der Site-Besucher anonym ist oder keine Spracheinstellung in seinem Profil angegeben hat, ist die bevorzugte Sprache die Basissprache der Seitenvorlage.
-
 
 ### Benutzereinstellungen {#user-preference}
 
