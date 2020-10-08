@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4742'
 ht-degree: 4%
@@ -757,7 +757,7 @@ Sobald der Bericht ausgeführt wurde, können die Benutzer Folgendes erwarten:
 
 ![Zugänglichkeitsbericht](assets/aftia-accessibility.jpg)
 
-Die Anzahl, die vor den Benutzern angezeigt wird, ist die Gesamtanzahl der Zugänglichkeitsberechtigungen, die sie erworben haben. Es gibt auch eine Beschreibung, wie dies nach dem Ergebnis berechnet wurde.
+Die Anzahl, die vor den Benutzern angezeigt wird, ist die Gesamtzahl der Zugriffsberechtigungen, die sie erworben haben. Es gibt auch eine Beschreibung, wie dies nach dem Ergebnis berechnet wurde.
 
 Wenn Sie diese Datei exportieren möchten, können Sie auf die drei Schaltflächen rechts neben dem Bildschirm klicken und aus den weiteren Optionen auswählen, die das Plugin Angebot.
 
@@ -788,13 +788,13 @@ Damit sie im Workflow aktiviert werden können, müssen die Benutzer die folgend
 
 1. Öffnen Sie die Dienstdefinition und aktivieren Sie den Aufruf der ausgewählten Dienste im Workflow.
 
->[!NOTE]
-Nur weil ein Benutzer den Dienst auf der Seite &quot;Configuration Manager&quot;aktiviert, müssen Benutzer eine Dienstkonfiguration einrichten, um mit den angeforderten externen Diensten zu kommunizieren.
+   >[!NOTE]
+   Nur weil ein Benutzer den Dienst auf der Seite &quot;Configuration Manager&quot;aktiviert, müssen Benutzer eine Dienstkonfiguration einrichten, um mit den angeforderten externen Diensten zu kommunizieren.
 
-![wir gov Forms-Paket](assets/aftia-configuration-options.jpg)
+   ![wir gov Forms-Paket](assets/aftia-configuration-options.jpg)
 
 1. Klicken Sie nach Abschluss des Vorgangs auf die Schaltfläche Speichern, um die Einstellungen zu speichern.
 
 ## Nächste Schritte {#next-steps}
 
-Jetzt sind Sie alle bereit, die Web.Gov Referenz-Website zu erkunden. Weitere Informationen über den Arbeitsablauf und die Schritte auf der Referenzseite &quot;Wir.Gov&quot;finden Sie unter [exemplarische Vorgehensweise](../../forms/using/forms-gov-reference-site-user-demo.md)auf der Referenzseite &quot;Wir.Gov&quot;.
+Jetzt sind Sie alle bereit, die Web.Gov Referenz-Website zu erkunden. Weitere Informationen über den Arbeitsablauf und die Schritte auf der Referenzseite &quot;Wir.Gov&quot;finden Sie unter [exemplarische Vorgehensweise](../../forms/using/forms-gov-reference-site-user-demo.md)auf der Website &quot;Wir.Gov&quot;.
