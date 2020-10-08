@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Erweiterte Bewertung und Abzeichen{#advanced-scoring-and-badges}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die erweiterte Bewertung ermöglicht die Vergabe von Kennzeichen, um Mitglieder als Experten zu identifizieren. Bei der erweiterten Bewertung werden Punkte basierend auf der Menge *und* Qualität der von einem Mitglied erstellten Inhalte zugewiesen, während bei der grundlegenden Bewertung Punkte nur auf der Grundlage der erstellten Inhaltsmenge zugewiesen werden.
 
@@ -56,7 +56,6 @@ Die verschiedenen Regeln für die Bewertung und Kennzeichnung unterscheiden sich
 >[!NOTE]
 >
 >Installieren Sie das [Expert Identification-Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg), um erweiterte Scoring- und Auszeichnungsfunktionen zu verwenden.
-
 
 ## Konfigurierbare Scoring-Engine {#configurable-scoring-engine}
 
