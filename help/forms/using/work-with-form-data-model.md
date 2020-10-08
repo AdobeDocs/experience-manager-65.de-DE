@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '4162'
-ht-degree: 60%
+source-wordcount: '4148'
+ht-degree: 61%
 
 ---
 
@@ -200,9 +200,9 @@ Verwenden Sie das Anforderungsattribut, um die zugehörigen Eigenschaften aus de
    >[!NOTE]
    >
    > * Wenn Sie eine statische Vorlage verwenden, überlagern Sie head.jsp unter:
-/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Wenn Sie eine bearbeitbare Vorlage verwenden, überlagern Sie die Datei aftemplatedpage.jsp unter:
-/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Wird [!DNL paramMap] für das Anforderungsattribut festgelegt. Fügen Sie beispielsweise den folgenden Code in die JSP-Datei im Apps-Ordner ein:
