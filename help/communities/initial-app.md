@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 12%
@@ -22,8 +22,8 @@ ht-degree: 12%
 
 In diesem Abschnitt erstellen Sie Folgendes:
 
-* The **[template](#createthepagetemplate)**that will be used to create content pages in the example website.
-* Die **[Komponente und das Skript](#create-the-template-s-rendering-component)**, die zum Rendern der Webseiten verwendet werden.
+* The **[template](#createthepagetemplate)** that will be used to create content pages in the example website.
+* Die **[Komponente und das Skript](#create-the-template-s-rendering-component)** , die zum Rendern der Webseiten verwendet werden.
 
 ## Create the Content Template {#create-the-content-template}
 
@@ -31,7 +31,7 @@ Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websi
 
 Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
-1. Im Explorer-Bereich von CRXDE Lite:
+1. Im Explorer-Bereich &quot;CRXDE Lite&quot;:
 
    * Wählen Sie nun eine der folgenden Optionen aus `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Erstellen]** > Vorlage **[!UICONTROL erstellen]**
