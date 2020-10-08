@@ -1,8 +1,8 @@
 ---
 title: Communities-Sites-Konsole
-seo-title: Communities Sites Console
-description: How to access the Communities Sites console
-seo-description: How to access the Communities Sites console
+seo-title: Communities-Sites-Konsole
+description: Zugriff auf die Konsole "Communities Sites"
+seo-description: Zugriff auf die Konsole "Communities Sites"
 uuid: 74134281-244c-40da-a941-7f2f3e706d4b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 4%
@@ -19,27 +19,26 @@ ht-degree: 4%
 ---
 
 
-# Communities Sites Console {#communities-sites-console}
+# Communities-Sites-Konsole {#communities-sites-console}
 
-The Communities Sites console provides access to:
+Die Communities Sites-Konsole bietet Zugriff auf:
 
-* Site creation
-* Site editing
-* Site management
-* [Creating and editing nested groups](/help/communities/groups.md) (sub-communities)
+* Site-Erstellung
+* Site-Bearbeitung
+* Site-Management
+* [Erstellen und Bearbeiten verschachtelter Gruppen](/help/communities/groups.md) (Untergruppen)
 
-See [Getting Started with AEM Communities](/help/communities/getting-started.md) to experience how quickly a community site can be created in the author environment, as well as how to create community groups from the author and publish environments.
+Unter [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) erfahren Sie, wie schnell eine Community-Site in der Authoring-Umgebung erstellt werden kann und wie Sie Community-Gruppen aus den Umgebung zum Erstellen und Veröffentlichen erstellen.
 
 >[!NOTE]
 >
->The main Communities menus for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md) and [community functions](/help/communities/functions.md) are for use only in the author environment.
-
+>Die Hauptmenüs Communities für die Erstellung von [Community-Sites](/help/communities/sites-console.md), [Community-Site-Vorlagen](/help/communities/sites.md), [Community-Gruppenvorlagen](/help/communities/tools-groups.md) und [Community-Funktionen](/help/communities/functions.md) sind nur für die Verwendung in der Autoren-Umgebung vorgesehen.
 
 ## Voraussetzungen {#prerequisites}
 
-Before creating a community site, it is *required* to:
+Bevor Sie eine Community-Site erstellen, müssen Sie Folgendes *tun* :
 
-* Ensure one or more publish instances are running.
+* Vergewissern Sie sich, dass eine oder mehrere Instanzen im Veröffentlichungsmodus ausgeführt werden.
 * Aktivieren Sie den [Tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author) , um Mitglieder und Mitgliedsgruppen zu verwalten.
 * Identifizieren Sie den [primären Herausgeber](/help/communities/deploy-communities.md#primary-publisher).
 * [Konfigurieren Sie die Replikation](/help/communities/deploy-communities.md#replication-agents-on-author) , wenn der primäre Herausgeberanschluss nicht der Standard ist (4503).
@@ -125,47 +124,47 @@ Im Bedienfeld &quot;Site-Vorlage&quot;werden Titel, Beschreibung, Site-Stammordn
 
 ### Schritt 2: Design {#step-design}
 
-The Design panel contains 2 sub-panels for selecing the theme and branding banner:
+Das Bedienfeld &quot;Design&quot;enthält 2 Unterbereiche zum Auswählen des Designs und des Branding-Banners:
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
 ![sitetheme](assets/sitetheme.png)
 
-Das Framework verwendet [Twitter-Bootstrap](https://twitterbootstrap.org/) , um ein reaktionsfähiges, flexibles Design auf die Site zu bringen. One of the many preloaded Bootstrap themes may be selected to style the selected community site template, or a Bootstrap theme may be uploaded.
+Das Framework verwendet [Twitter-Bootstrap](https://twitterbootstrap.org/) , um ein reaktionsfähiges, flexibles Design auf die Site zu bringen. Es kann eines der vielen vorab geladenen Bootstrap-Themen ausgewählt werden, um die ausgewählte Community-Site-Vorlage zu gestalten, oder es kann ein Bootstrap-Design hochgeladen werden.
 
-When selected, the theme will be overlayed with an opaque blue checkmark.
+Wenn diese Option aktiviert ist, wird das Design mit einem undurchsichtigen blauen Häkchen überlagert.
 
-After the community site is published, it is possible to [edit the properties](#modifying-site-properties) and select a different theme.
+Nachdem die Community-Site veröffentlicht wurde, können Sie die Eigenschaften [](#modifying-site-properties) bearbeiten und ein anderes Design auswählen.
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-![site-branding](assets/site-branding.png)
+![Site-Branding](assets/site-branding.png)
 
-Community site branding is an image displayed as a header across the top of each page.
+Das Branding einer Community-Site ist ein Bild, das als Kopfzeile am oberen Rand jeder Seite angezeigt wird.
 
-The image should be sized to be as wide as the expected display of the page in the browser and 120 pixels in height.
+Das Bild sollte so groß sein, dass es im Browser wie erwartet angezeigt wird, und 120 Pixel hoch.
 
-When creating or selecting an image, keep in mind:
+Beachten Sie beim Erstellen oder Auswählen eines Bildes Folgendes:
 
-* The image height will be cropped to 120 pixels measured from the top edge of the image.
-* The image is pinned to the left edge of the browser window.
-* There is no resizing of the image, such that when the image width is...
+* Die Bildhöhe wird auf 120 Pixel abgeschnitten, gemessen vom oberen Bildrand.
+* Das Bild wird am linken Rand des Browserfensters fixiert.
+* Die Bildgröße wird nicht geändert, d. h., wenn die Bildbreite ...
 
-   * Less than the browser&#39;s width, the image will repeat horizontally.
-   * Greater than the browser&#39;s width, the image will appear to be cropped.
+   * Wenn die Breite des Browsers geringer ist, wird das Bild horizontal wiederholt.
+   * Größer als die Breite des Browsers, scheint das Bild beschnitten zu sein.
 
 * Wählen Sie **Weiter** aus.
 
-### Step 3 : Settings {#step-settings}
+### Schritt 3: Einstellungen {#step-settings}
 
 Das Einstellungsbedienfeld enthält mehrere Unterbereiche mit Funktionen, die konfiguriert werden müssen, bevor Sie zum letzten Schritt zur Erstellung der Site wechseln.
 
-* [USER MANAGEMENT](#user-management)
-* [TAGGING](#tagging)
+* [BENUTZERVERWALTUNG](#user-management)
+* [TAG](#tagging)
 * [ROLLEN](#roles)
 * [MODERATION](#moderation)
 * [ANALYSEN](#analytics)
-* [TRANSLATION](#translation)
+* [ÜBERSETZUNG](#translation)
 * [AKTIVIERUNG](#enablement)
 
 >[!NOTE]
@@ -180,7 +179,6 @@ Das Einstellungsbedienfeld enthält mehrere Unterbereiche mit Funktionen, die ko
 >
 >Dies wird erreicht, indem Sie die ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` für die Autorenversion Umgebung aktivieren.
 
-
 #### USER MANAGEMENT {#user-management}
 
 ![createsitesettings](assets/createsitesettings.png)
@@ -191,11 +189,10 @@ Das Einstellungsbedienfeld enthält mehrere Unterbereiche mit Funktionen, die ko
 >
 >Eine Community-Site ist privat, wenn anonymen Site-Besuchern der Zugriff verweigert wird, sie sich nicht selbst registrieren können und sie möglicherweise keine Social-Anmeldung verwenden.
 
-
 * **Benutzerregistrierung zulassen**
 
    Wenn diese Option aktiviert ist, können Site-Besucher durch Selbstregistrierung Community-Mitglieder werden.
-Wenn diese Option deaktiviert ist, ist die Community-Site *eingeschränkt* und die Site-Besucher müssen der Mitgliedergruppe der Community-Site zugewiesen werden, eine Anforderung stellen oder per E-Mail eine Einladung erhalten. Wenn diese Option deaktiviert ist, sollte der anonyme Zugriff nicht erlaubt sein.
+Wenn diese Option deaktiviert ist, ist die Community-Site *eingeschränkt* und die Site-Besucher müssen der Mitgliedergruppe der Community-Site zugewiesen werden, eine Anfrage stellen oder per E-Mail eine Einladung erhalten. Wenn diese Option deaktiviert ist, sollte der anonyme Zugriff nicht erlaubt sein.
 Deaktivieren Sie die Option für eine *private* Community-Site. Diese Option ist standardmäßig aktiviert.
 
 * **Anonymen Zugriff erlauben**
@@ -227,7 +224,6 @@ Lassen Sie das Kontrollkästchen für eine *private* Community-Site deaktiviert.
 >**Zulassen von Social-Anmeldungen**
 >
 >Während Beispielkonfigurationen für Facebook und Twitter existieren und auswählbar sind, müssen für eine [Produktions-Umgebung](/help/sites-administering/production-ready.md)benutzerdefinierte Facebook- und Twitter-Anwendungen erstellt werden. Siehe [Social-Anmeldung bei Facebook und Twitter](/help/communities/social-login.md).
-
 
 #### TAGGING {#tagging}
 
@@ -267,15 +263,15 @@ Die Suche nach Community-Mitgliedern ist mit der Type-Ahead-Suche einfach.
 
 ![site-moderation](assets/site-moderation.png)
 
-Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wird durch diese Einstellungen gesteuert. Individual components have additional settings to control moderation.
+Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wird durch diese Einstellungen gesteuert. Die einzelnen Komponenten verfügen über zusätzliche Einstellungen zur Steuerung der Moderation.
 
 * **Inhalt ist vormoderiert**
 
-   If checked, posted community content will not appear until approved by a moderator. Diese Option ist standardmäßig deaktiviert. For more information, see [Moderating Community Content](/help/communities/moderate-ugc.md#premoderation).
+   Wenn diese Option aktiviert ist, werden gepostete Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Diese Option ist standardmäßig deaktiviert. For more information, see [Moderating Community Content](/help/communities/moderate-ugc.md#premoderation).
 
 * **Kennzeichnung des Schwellenwerts, bevor der Inhalt ausgeblendet wird**
 
-   Wenn der Wert größer als 0 ist, muss ein Thema oder Beitrag vor der öffentlichen Ansicht markiert werden. If set to -1, the flagged topic or post is never hidden from public view. Der Standardwert ist 5.
+   Wenn der Wert größer als 0 ist, muss ein Thema oder Beitrag vor der öffentlichen Ansicht markiert werden. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der Beitrag nie aus der öffentlichen Ansicht ausgeblendet. Der Standardwert ist 5.
 
 #### ANALYTICS {#analytics}
 
@@ -283,15 +279,15 @@ Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wi
 
 * **Analytics aktivieren**
 
-   Only available when Adobe Analytics has been [configured](/help/communities/analytics.md) for Communities features.
-Diese Option ist standardmäßig deaktiviert. When checked, an additional selection menu appears:
+   Nur verfügbar, wenn Adobe Analytics für Communities-Funktionen [konfiguriert](/help/communities/analytics.md) wurde.
+Diese Option ist standardmäßig deaktiviert. Wenn diese Option aktiviert ist, wird ein zusätzliches Auswahlmenü angezeigt:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
 * **Framework-Verweis der Cloud-Konfiguration**
 
-   From the pull-down menu, select the Analytics cloud service framework configured for this community site.
-   `Communities` is the framework example from [Analytics Configuration for Communities Features](/help/communities/analytics.md#aem-analytics-framework-configuration) documentation.
+   Wählen Sie im Pulldown-Menü das für diese Community-Site konfigurierte Analytics Cloud-Service-Framework aus.
+   `Communities` ist das Framework-Beispiel aus der Dokumentation [Analytics Configuration for Communities Features](/help/communities/analytics.md#aem-analytics-framework-configuration) .
 
 #### TRANSLATION {#translation}
 
@@ -299,17 +295,17 @@ Diese Option ist standardmäßig deaktiviert. When checked, an additional select
 
 * **Maschinelle Übersetzung zulassen**
 
-   When checked (default is unchecked), machine translation is enabled for UGC within the site. This does not affect any other content, such as page content, even if the site is setup as a multilingual site. See [Translating User Generated Content](/help/communities/translate-ugc.md) for information on configuring a licensed translation service for AEM Communities. See [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for a complete overview.
+   Wenn diese Option aktiviert ist (Standardeinstellung deaktiviert), wird die maschinelle Übersetzung für UGC innerhalb der Site aktiviert. Dies hat keine Auswirkungen auf andere Inhalte wie Seiteninhalte, auch wenn die Site als mehrsprachige Site eingerichtet wurde. Informationen zum Konfigurieren eines lizenzierten Übersetzungsdiensts für AEM Communities finden Sie unter [Übersetzen benutzergenerierter Inhalte](/help/communities/translate-ugc.md) . Eine vollständige Übersicht finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) .
 
 ![allow-machine-translation](assets/allow-machine-translation.png)
 
 * **Maschinelle Übersetzung für ausgewählte Sprachen aktivieren**
 
-   The languages enabled for machine translation default to the system setting specified by the [translation integration configuration](/help/communities/translate-ugc.md#translation-integration-configuration). Diese Standardeinstellungen können für diese Site überschrieben werden, indem Standardwerte gelöscht und/oder andere Sprachen aus dem Pulldown-Menü ausgewählt werden.
+   Die für die maschinelle Übersetzung aktivierten Sprachen entsprechen standardmäßig den Systemeinstellungen, die in der [Konvertierungskonfiguration](/help/communities/translate-ugc.md#translation-integration-configuration)angegeben sind. Diese Standardeinstellungen können für diese Site überschrieben werden, indem Standardwerte gelöscht und/oder andere Sprachen aus dem Pulldown-Menü ausgewählt werden.
 
 * **Übersetzungsanbieter auswählen**
 
-   By default, the service provider is a trial service using `microsoft` for demonstration only. Wenn kein Dienstleister für Übersetzung lizenziert ist, sollte die Option &quot;maschinelle Übersetzung **zulassen** &quot;deaktiviert werden.
+   Standardmäßig ist der Dienstleister ein Testdienst, der nur `microsoft` für Demonstrationen verwendet wird. Wenn kein Dienstleister für Übersetzung lizenziert ist, sollte die Option &quot;maschinelle Übersetzung **zulassen** &quot;deaktiviert werden.
 
 * **Globalen geteilten Speicher auswählen**
 
@@ -358,33 +354,32 @@ Default is *selected*.
 
 ![Site-Aktivierung](assets/site-enablement.png)
 
-Die `ENABLEMENT`Einstellungen gelten, wenn die ausgewählte Community-Site-Vorlage die [Zuweisungsfunktion](/help/communities/functions.md#assignments-function)enthält, die verfügbar ist, wenn die Aktivierungsfunktionen lizenziert und [konfiguriert](/help/communities/enablement.md)sind. The reference site template that includes the assignments function is `Reference Structured Learning Site Template.`
+Die `ENABLEMENT`Einstellungen gelten, wenn die ausgewählte Community-Site-Vorlage die [Zuweisungsfunktion](/help/communities/functions.md#assignments-function)enthält, die verfügbar ist, wenn die Aktivierungsfunktionen lizenziert und [konfiguriert](/help/communities/enablement.md)sind. Die Referenz-Website-Vorlage, die die Zuweisungsfunktion enthält, lautet `Reference Structured Learning Site Template.`
 
-* **Enablement Managers**
-(Required) Only members of the `Community Enablementmanagers` group are available to be selected to manage this enablement community. Enablement managers are responsible for assigning members to resources. See also [Managing Users and User Groups](/help/communities/users.md).
+* **Aktivierungsmanager**(Erforderlich) Nur Mitglieder der `Community Enablementmanagers` Gruppe können ausgewählt werden, um diese Community für die Aktivierung zu verwalten. Aktivierungsmanager sind für die Zuweisung von Mitgliedern zu Ressourcen verantwortlich. Siehe auch [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
 
 * **ID der Marketing Cloud-Organisation**
 
-   (optional) The ID for a [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) license.
+   (Optional) Die ID für eine [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) -Lizenz.
 
 * Wählen Sie **Weiter** aus.
 
-### Step 4 : Create Communities Site {#step-create-communities-site}
+### Schritt 4: Communities-Site erstellen {#step-create-communities-site}
 
-If any adjustments are needed, use the **Back** button to make them.
+Falls Anpassungen erforderlich sind, verwenden Sie die Schaltfläche &quot; **Zurück** &quot;, um sie vorzunehmen.
 
-Once **Create** is selected and started, the process of creating the site cannot be interrupted.
+Nachdem **Create** ausgewählt und gestartet wurde, kann der Vorgang zum Erstellen der Site nicht unterbrochen werden.
 
-Once the site is created:
+Nachdem die Site erstellt wurde:
 
-* Changing the url (node name) is not supported.
-* Future changes to the community site template will not affect the created community site.
-* Disabling the community site template will not affect the created community site.
-* It is possible to edit the [STRUCTURE](#modify-structure) of a community site by modifying its properties.
+* Das Ändern der URL (Knotenname) wird nicht unterstützt.
+* Zukünftige Änderungen an der Community-Site-Vorlage haben keine Auswirkungen auf die erstellte Community-Site.
+* Die Deaktivierung der Community-Site-Vorlage hat keine Auswirkungen auf die erstellte Community-Site.
+* Sie können die [STRUKTUR](#modify-structure) einer Community-Site bearbeiten, indem Sie deren Eigenschaften ändern.
 
 ![create-site](assets/create-site1.png)
 
-When the process completes, the folder for the new site is displayed in the Communities Sites console, from where authors may add page content or administrators may modify the properties of the site.
+Nach Abschluss des Vorgangs wird der Ordner für die neue Site in der Konsole Communities Sites angezeigt, in der Autoren Seiteninhalte hinzufügen können oder Administratoren die Eigenschaften der Site ändern können.
 
 ![modify-site-property](assets/modify-site-property.png)
 
@@ -396,7 +391,7 @@ Wenn Sie den Mauszeiger über eine Site bewegen oder eine Sitekarte berühren, w
 
 ## Erstellen von Site-Inhalten {#authoring-site-content}
 
-The content of a site may be authored with the same tools as any other AEM website. To open the site for authoring, select the `Open Site` icon that appears on hovering the site with mouse. The site will open in a new tab such that the Communities Sites console remains accessible.
+Der Inhalt einer Website kann mit den gleichen Tools wie jede andere AEM erstellt werden. Um die Site zum Authoring zu öffnen, wählen Sie das Symbol aus, das angezeigt wird, wenn Sie den Mauszeiger über die Site bewegen. `Open Site` Die Site wird in einer neuen Registerkarte geöffnet, sodass auf die Konsole Communities Sites weiterhin zugegriffen werden kann.
 
 ![site-content](assets/site-content.png)
 
@@ -404,14 +399,13 @@ The content of a site may be authored with the same tools as any other AEM websi
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
-
-## Modifying Site Properties {#modifying-site-properties}
+## Ändern der Site-Eigenschaften {#modifying-site-properties}
 
 ![edit-site](assets/edit-site.png)
 
-The properties of an exisitng site, specified during the site creation process, can be modified by selecting the `Edit Site`icon that appears on hovering the site with mouse.
+Die Eigenschaften einer vorhandenen Site, die während des Site-Erstellungsprozesses angegeben werden, können durch Auswahl des `Edit Site`Symbols geändert werden, das beim Bewegen der Maus über die Site angezeigt wird.
 
-`Details of the following properties match the descriptions provided in the` [Site Creation](#site-creation) section.
+`Details of the following properties match the descriptions provided in the` [Site-Erstellung](#site-creation) .
 
 ![modify-site-basicinfo](assets/modify-site-basicinfo.png)
 
@@ -422,17 +416,17 @@ Das BASIC-Bedienfeld ermöglicht die Änderung von:
 * Community-Site-Titel
 * Community-Site-Beschreibung
 
-The Community Site Name may not be modified.
+Der Community-Site-Name darf nicht geändert werden.
 
-Choosing a different community site template would have no affect on an existing community site as no connection remains between templates and sites.
+Die Auswahl einer anderen Community-Site-Vorlage hätte keine Auswirkungen auf eine vorhandene Community-Site, da keine Verbindung zwischen Vorlagen und Sites bestehen bleibt.
 
-Instead, the [STRUCTURE](#modify-structure) of the community site may be modified.
+Stattdessen kann die [STRUKTUR](#modify-structure) der Community-Site geändert werden.
 
-### Modify Structure {#modify-structure}
+### Struktur ändern {#modify-structure}
 
 Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich aus der ausgewählten Community-Site-Vorlage erstellt wurde. Über den Bereich können Sie:
 
-* Drag-and-drop additional [community functions](/help/communities/functions.md) into the site structure.
+* Ziehen Sie zusätzliche [Community-Funktionen](/help/communities/functions.md) per Drag &amp; Drop in die Site-Struktur.
 * Auf einer Instanz einer Community-Funktion in der Site-Struktur:
 
    * **`gear icon`**
@@ -441,7 +435,7 @@ Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich
 
    * **`trashcan icon`**
 
-      Remove (delete) functions from the site structure.
+      Entfernen (Löschen) von Funktionen aus der Site-Struktur.
 
    * **`grid icon`**
 
@@ -449,40 +443,37 @@ Das STRUKTURbedienfeld ermöglicht die Änderung der Struktur, die ursprünglich
 
 >[!NOTE]
 >
->Sie können die Reihenfolge aller Funktionen in der Site-Struktur mit Ausnahme der Funktion oben ändern. Therefore, the home page of communities site cannot be changed.
-
+>Sie können die Reihenfolge aller Funktionen in der Site-Struktur mit Ausnahme der Funktion oben ändern. Daher kann die Startseite der Communities site nicht geändert werden.
 
 >[!CAUTION]
 >
->* While the display title may be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
+>* Der Anzeigentitel kann ohne Nebenwirkungen geändert werden, es wird jedoch nicht empfohlen, den URL-Namen einer Community-Funktion zu bearbeiten, die zu einer Community-Site gehört.
 >
 >
 Wenn Sie beispielsweise die URL umbenennen, wird die vorhandene UGC nicht verschoben, sodass die UGC verliert wird.
 
-
 >[!CAUTION]
 >
->The groups function must *not* be the *first nor the only* function in the site structure.
+>Die Funktion groups darf *nicht* die *erste oder einzige* Funktion in der Site-Struktur sein.
 >
->Any other function, such as the [page function](/help/communities/functions.md#page-function), must be included and listed first.
+>Jede andere Funktion, wie die [Seitenfunktion](/help/communities/functions.md#page-function), muss eingeschlossen und zuerst aufgeführt werden.
 
-
-#### Example : Adding a Catalog Function to a Community Site Structure {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### Beispiel: Hinzufügen einer Katalogfunktion zu einer Community-Site-Struktur {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![add-catalog-site](assets/add-catalog-site.png)
 
-### Modify Design {#modify-design}
+### Design ändern {#modify-design}
 
 Das DESIGN-Bedienfeld ermöglicht die Anwendung eines neuen Designs:
 
 * [Community-Site-Thema](#community-site-theme)
 * [Community-Site-Branding](#community-site-branding)
 
-   * Scroll to the bottom of the panel to change the brand image.
+   * Blättern Sie nach unten im Bedienfeld, um das Markenbild zu ändern.
 
-### Modify Settings {#modify-settings}
+### Einstellungen ändern {#modify-settings}
 
-The SETTINGS panel allows access to most of the settings under the sub-panels of for Step 3 of community site creation:
+Das Bedienfeld &quot;EINSTELLUNGEN&quot;ermöglicht den Zugriff auf die meisten Einstellungen unter den Unterfeldern von Schritt 3 der Community-Site-Erstellung:
 
 * [Benutzerverwaltung](#user-management)
 * [Tags](#tagging)
@@ -491,7 +482,7 @@ The SETTINGS panel allows access to most of the settings under the sub-panels of
 * [Analyse](#analytics)
 * [Übersetzung](#translation)
 
-### Modify Thumbnail {#modify-thumbnail}
+### Miniaturansicht ändern {#modify-thumbnail}
 
 Im Bereich &quot;MINIATURANSICHT&quot;kann ein Bild hochgeladen werden, das die Site in der Konsole &quot;Communities Sites&quot;darstellt.
 
@@ -499,7 +490,7 @@ Im Bereich &quot;MINIATURANSICHT&quot;kann ein Bild hochgeladen werden, das die 
 
 Das Fenster &quot;ENABLEMENT&quot;ermöglicht den Zugriff auf die Einstellungen, die während der Erstellung der Community-Site bereitgestellt werden.
 
-See the [ENABLEMENT](#enablement) description.
+Siehe Beschreibung der [AKTIVIERUNG](#enablement) .
 
 ## Veröffentlichen der Site {#publishing-the-site}
 
@@ -507,68 +498,67 @@ Nachdem eine Community-Site neu erstellt oder geändert wurde, ist es möglich, 
 
 ![publish-site](assets/publish-site.png)
 
-There will be an indication after site is successfully published.
+Nach erfolgreicher Veröffentlichung der Site wird ein Hinweis angezeigt.
 
 ![site-published](assets/site-published.png)
 
-### Publishing with Nested Groups {#publishing-with-nested-groups}
+### Veröffentlichen mit verschachtelten Gruppen {#publishing-with-nested-groups}
 
-After publishing a community site, it is necessary to individually publish each sub-community (nested group) created using the [Groups console](/help/communities/groups.md).
+Nach dem Veröffentlichen einer Community-Site muss jede Untergemeinschaft (verschachtelte Gruppe), die mit der [Gruppenkonsole](/help/communities/groups.md)erstellt wurde, einzeln veröffentlicht werden.
 
-## Exporting the Site {#exporting-the-site}
+## Exportieren der Site {#exporting-the-site}
 
 ![export-site](assets/export-site.png)
 
-Select the export icon, on mouse hover over the site, to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
+Wählen Sie das Exportsymbol, wenn Sie den Mauszeiger über die Site bewegen, um ein Paket der Community-Site zu erstellen, das sowohl im [Paketmanager](/help/sites-administering/package-manager.md) gespeichert als auch heruntergeladen wird.
 
-Note that UGC is not included in the site package.
+Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 
-## Deleting the Site {#deleting-the-site}
+## Löschen der Site {#deleting-the-site}
 
 ![deleteicon](assets/deleteicon.png)
 
-To delete the community site, select the Delete Site icon that appears on hovering the mouse over the site in Communities Site Console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
+Um die Community-Site zu löschen, wählen Sie das Symbol &quot;Site löschen&quot;, das angezeigt wird, wenn Sie den Mauszeiger über die Site in der Communities Site-Konsole bewegen. Durch diese Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. UGC, Benutzergruppen, Assets und Datenbankdatensätze.
 
-## Created Community User Groups {#created-community-user-groups}
+## Community-Benutzergruppen erstellt {#created-community-user-groups}
 
-Once the new community site is published, new member groups (user groups are created in the publish environment) which have the appropriate permissions set for various administrative and member roles.
+Sobald die neue Community-Site veröffentlicht wurde, werden neue Mitgliedsgruppen (Benutzergruppen werden in der Umgebung zum Veröffentlichen erstellt) mit den entsprechenden Berechtigungen für verschiedene Verwaltungs- und Mitgliedsrollen erstellt.
 
-The name created for the member groups includes the *site-name* given the site in [Step 1](#step13asitetemplate) (the name which appears in the URL) as well as an unique ID to avoid conflicts with community sites and groups having the same site-name for different community site roots.
+Der für die Mitgliedergruppen erstellte Name enthält den *Site-Namen* , der in [Schritt 1](#step13asitetemplate) der Site zugewiesen wurde (den Namen, der in der URL angezeigt wird), sowie eine eindeutige ID, um Konflikte mit Community-Sites und -Gruppen zu vermeiden, die denselben Site-Namen für verschiedene Community-Site-Wurzeln haben.
 
-For example, if the name were &quot;engage&quot; for a site titled &quot;Getting Started Tutorial&quot;, then the user group for moderators would be :
+Wenn der Name beispielsweise &quot;interagieren&quot;für eine Site mit dem Titel &quot;Erste Schritte-Tutorial&quot;wäre, wäre die Benutzergruppe für Moderatoren:
 
-* title: Community Engage Moderators
-* name: community-*engage-uid*-moderators
+* title: Community-Interaktionsmoderatoren
+* name: community-*engagement-uid*-moderators
 
-Notice that any members assigned roles as moderators or group administrators while creating the site, will be assigned to the appropriate group as well as assigned to the members group. These groups and member assignments are created on publish when the new site is published.
+Beachten Sie, dass alle Mitglieder, denen beim Erstellen der Site Rollen als Moderatoren oder Gruppenadministratoren zugewiesen wurden, der entsprechenden Gruppe zugewiesen und der Mitgliedergruppe zugewiesen werden. Diese Gruppen und Mitgliederzuweisungen werden bei der Veröffentlichung der neuen Site erstellt.
 
-For details, see [Managing Users and User Groups](/help/communities/users.md).
+Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
 
 >[!NOTE]
 >
->If [Allow Social Login: Facebook](#user-management) is enabled, once the user group
+>Wenn Social-Anmeldung [zulassen: Facebook](#user-management) ist aktiviert, sobald die Benutzergruppe
 >
 >* `community-<site-name>-<uid>-members`
 >
 >
-is created, the applied [Facebook cloud service](/help/communities/social-login.md#createafacebookcloudservice) should be configured to add users to this group.
+erstellt wurde, sollte der angewendete [Facebook-Cloud-Dienst](/help/communities/social-login.md#createafacebookcloudservice) so konfiguriert sein, dass dieser Gruppe Benutzer hinzugefügt werden.
 
+## Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
-## Configure for Authentication Error {#configure-for-authentication-error}
+Standardmäßig wird eine Community-Site zu einer Beispielseite für die Anmeldung umgeleitet, wenn der Benutzer die falschen Anmeldeinformationen eingibt und sich nicht anmeldet. Diese Beispielanmeldung ist auf einem [Produktionsserver](/help/sites-administering/production-ready.md)nicht vorhanden.
 
-By default, a community site will redirect to a sample login page when the user enters the wrong credentials and fails to login. This sample login will not be present on a [production server](/help/sites-administering/production-ready.md).
-
-To correctly redirect, once a site has been configured and pushed to publish, complete these steps to get authentication failure to redirect to the community site:
+Führen Sie zur korrekten Umleitung die folgenden Schritte aus, um sicherzustellen, dass die Authentifizierung bei der Umleitung auf die Community-Site fehlschlägt, sobald eine Site konfiguriert wurde und veröffentlicht wird:
 
 * Auf jeder AEM Instanz im Veröffentlichungsmodus.
-* Sign in with administrator privileges.
+* Melden Sie sich mit Administratorrechten an.
 * Access the [Web Console](/help/sites-deploying/configuring-osgi.md).
 
    * For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
-* Locate `Adobe Granite Login Selector Authentication Handler`.
-* Select the `pencil` icon to open the configuration for edit.
-* Enter a **Login Page Mappings** as follows:
+* Suchen Sie `Adobe Granite Login Selector Authentication Handler`.
+* Wählen Sie das `pencil` Symbol aus, um die Konfiguration zur Bearbeitung zu öffnen.
+* Geben Sie eine Seitenzuordnung **für die Anmeldung** wie folgt ein:
 
    `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
@@ -579,26 +569,26 @@ To correctly redirect, once a site has been configured and pushed to publish, co
 
 ![auth-error](assets/auth-error.png)
 
-### Test Authentication Redirection {#test-authentication-redirection}
+### Testauthentifizierungsumleitung {#test-authentication-redirection}
 
-On the same AEM publish instance configured with a login page mapping for the community site:
+In derselben AEM Instanz im Veröffentlichungsmodus, die mit einer Zuordnung der Anmeldeseite für die Community-Site konfiguriert wurde:
 
-* Browse to the community site home page.
+* Navigieren Sie zur Community-Site-Startseite.
 
-   * For example, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+   * Beispiel: [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
-* Select Log Out.
-* Select Log In.
-* Enter obviously incorrect credentials, such as username &quot;x&quot; and password &quot;x&quot;.
+* Wählen Sie Abmelden.
+* Wählen Sie Anmelden.
+* Geben Sie offensichtlich falsche Anmeldeangaben ein, z. B. Benutzername &quot;x&quot;und Kennwort &quot;x&quot;.
 * Die Anmeldeseite sollte mit der Fehlermeldung &quot;Ungültige Anmeldung&quot;angezeigt werden.
 
 ![test-authentication](assets/test-authentication.png)
 
-## Accessing Community Sites from Main Sites Console {#accessing-community-sites-from-main-sites-console}
+## Zugriff auf Community-Sites über die Haupt-Sites-Konsole {#accessing-community-sites-from-main-sites-console}
 
-From the global navigation Sites console, community sites are located in the `Community Sites` folder.
+In der Konsole der globalen Navigations-Sites befinden sich Community-Sites im `Community Sites` Ordner.
 
-While it is possible to access a community site in this manner, for administrative tasks, the community site should be accessed from the Communities Sites console.
+Obwohl es möglich ist, auf eine Community-Site auf diese Weise zuzugreifen, sollte die Community-Site für administrative Aufgaben von der Communities Sites-Konsole aus aufgerufen werden.
 
 ![access-site](assets/access-site.png)
 
