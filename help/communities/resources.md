@@ -1,8 +1,8 @@
 ---
 title: Aktivierungsressourcen-Konsole
 seo-title: Aktivierungsressourcen-Konsole
-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
-seo-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
+description: In der Ressourcenkonsole erstellen, verwalten und weisen Aktivierungsmanager Ressourcen Mitgliedern einer Community-Site für eine Aktivierung zu.
+seo-description: In der Ressourcenkonsole erstellen, verwalten und weisen Aktivierungsmanager Ressourcen Mitgliedern einer Community-Site für eine Aktivierung zu.
 uuid: 52445b39-c339-4b39-8004-eb36de99bced
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 6%
@@ -20,27 +20,24 @@ ht-degree: 6%
 
 # Aktivierungsressourcen-Konsole {#enablement-resources-console}
 
-For AEM Communities, the Resources console is where [Enablement Managers](users.md) create, manage and assign resources to members of an enablement community site.
+Für AEM Communities ist die Ressourcenkonsole der Ort, an dem [Aktivierungsmanager](users.md) Ressourcen erstellen, verwalten und Mitgliedern einer Community-Site für die Aktivierung zuweisen.
 
 ## Voraussetzungen {#requirements}
 
-Before adding enablement resources for a community site, the AEM instances must be properly configured, including:
+Vor dem Hinzufügen von Aktivierungsressourcen für eine Community-Site müssen die AEM ordnungsgemäß konfiguriert sein, einschließlich:
 
 * SCORM
 * FFmpeg
 
-For details, see [Configuring Enablement](enablement.md).
+Weitere Informationen finden Sie unter [Konfigurieren der Aktivierung](enablement.md).
 
 >[!CAUTION]
 >
->If SCORM is installed after community site creation, any enablement resources present before SCORM is installed must be recreated.
-
-
+>Wenn SCORM nach der Erstellung einer Community-Site installiert wird, müssen alle vor der Installation von SCORM vorhandenen Aktivierungsressourcen neu erstellt werden.
 
 >[!NOTE]
 >
 >Mit der Veröffentlichung von [AEM 6.3](deploy-communities.md#latestfeaturepack) und den entsprechenden Communities Feature Packs [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) und [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack) ist für die Aktivierung keine [MySQL-Datenbank](mysql.md)mehr erforderlich.
-
 
 ## Terminologie {#terminology}
 
@@ -102,7 +99,7 @@ Wählen Sie das Symbol zum Umschalten zwischen den Seitenbedienfeldern aus, um n
 
 #### Selection Mode {#selection-mode}
 
-To select multiple enablement resources, select the first by hovering over the card and selecting the checkmark icon. Once selected, selecting any other card will add it to the selection group. Selecting a second time de-selects the card.
+Um mehrere Aktivierungsressourcen auszuwählen, wählen Sie die erste aus, indem Sie den Mauszeiger über die Karte halten und das Häkchensymbol auswählen. Wenn Sie eine andere Karte ausgewählt haben, wird sie der Auswahlgruppe hinzugefügt. Wenn Sie ein zweites Mal auswählen, wird die Karte deaktiviert.
 
 ![selection-mode](assets/selection-mode.png)
 
@@ -113,13 +110,13 @@ To select multiple enablement resources, select the first by hovering over the c
 So fügen Sie der Community-Site eine neue Aktivierungsressource hinzu
 
 * Select the `Create` icon.
-* From the sub-menu which displays, select **[!UICONTROL Resource]**.
+* Wählen Sie im angezeigten Untermenü die Option **[!UICONTROL Ressource]**.
 
 Dadurch wird ein schrittweiser Prozess gestartet mit:
 
 * Beschreibung der Ressource (Name, Kartenbild und Text).
 * Auswählen des Ressourceninhalts.
-* Selecting a cover image for the resource.
+* Auswählen eines Deckblattbilds für die Ressource.
 * Identifizieren von Ressourcenkontakten.
 * Zuweisen von Ressourcen zu Mitgliedern.
 
@@ -131,29 +128,29 @@ Ist die Ressource Teil eines Kurses, eines Lernpfads, sollten Mitglieder nur dem
 
 * **[!UICONTROL Bild hinzufügen]**
 
-   (*Optional*) An image to display on the card for the enablement resource in the member&#39;s assignments page as well as the Resources console. Das Bild wird aus dem lokalen Dateisystem des Servers ausgewählt. Wenn kein Bild bereitgestellt wird, wird eine Miniaturansicht für die hochgeladene Ressource generiert.
+   (*Optional*) Ein Bild, das auf der Karte für die Aktivierungsressource auf der Seite &quot;Zuweisungen&quot;des Mitglieds sowie in der Ressourcenkonsole angezeigt wird. Das Bild wird aus dem lokalen Dateisystem des Servers ausgewählt. Wenn kein Bild bereitgestellt wird, wird eine Miniaturansicht für die hochgeladene Ressource generiert.
 
-   ***Hinweis***: Die empfohlene Bildgröße beträgt nicht einfach 480 x 480 Pixel. Due to the responsive design of the cards to various browser dimensions, the display size will vary from 220 X 165 pixels to 400 x 165 pixels.
+   ***Hinweis***: Die empfohlene Bildgröße beträgt nicht einfach 480 x 480 Pixel. Aufgrund des reaktionsfähigen Designs der Karten mit verschiedenen Browser-Abmessungen kann die Anzeigegröße von 220 x 165 Pixel bis 400 x 165 Pixel betragen.
 
 * **[!UICONTROL Site-Name]**
 
-   (*readonly*) The community site to which the resource is being added.
+   (*schreibgeschützt*) Die Community-Site, der die Ressource hinzugefügt wird.
 
 * **[!UICONTROL Ressourcenname]**
 
-   (*Required*) The display name for the resource. A valid node name is created from the display name.
+   (*Erforderlich*) Der Anzeigename der Ressource. Aus dem Anzeigenamen wird ein gültiger Knotenname erstellt.
 
 * **[!UICONTROL Tags]**
 
-   (*Optional*) One or more tags may be chosen which associate the enablement resource with one or more catalogs. See [Tagging Enablement Resources](tag-resources.md).
+   (*Optional*) Es können ein oder mehrere Tags ausgewählt werden, die die Aktivierungsressource mit einem oder mehreren Katalogen verbinden. See [Tagging Enablement Resources](tag-resources.md).
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
-   When unchecked, the enablement resource will not appear in any catalog. Wenn diese Option aktiviert ist, wird die Aktivierungsressource in allen Katalogen angezeigt, es sei denn, die [vorgefilterten](catalog-developer-essentials.md#pre-filters) Filter oder die Mitglieder der Benutzeroberfläche werden vorgefiltert. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option deaktiviert ist, wird die Aktivierungsressource in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird die Aktivierungsressource in allen Katalogen angezeigt, es sei denn, die [vorgefilterten](catalog-developer-essentials.md#pre-filters) Filter oder die Mitglieder der Benutzeroberfläche werden vorgefiltert. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Beschreibung]**
 
-   (*Optional*) The description to display for the enablement resource.
+   (*Optional*) Die für die Aktivierungsressource anzuzeigende Beschreibung.
 
 * **[!UICONTROL Kleines Asset]**
 
@@ -165,7 +162,7 @@ Ist die Ressource Teil eines Kurses, eines Lernpfads, sollten Mitglieder nur dem
 
 * **[!UICONTROL Inhaltsfragment-Asset]**
 
-   (*Optional*) Selected from AEM Assets. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
+   (*Optional*) Aus AEM Assets ausgewählt. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
 
 * Wählen Sie **[!UICONTROL Weiter]** aus
 
@@ -181,7 +178,7 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
 
 * **[!UICONTROL Upload aus lokalen Dateien]**
 
-   Uploading from the local file system will use the native file browser to select and upload a file. Unterstützte Dateitypen sind SCORM.zip (HTML5 oder SWF), MP4-Video-, SWF-, PDF- und Bildtypen (JPG, PNG, GIF, BMP). Der Dateiname wird zum Namen des Assets, der der Asset-Bibliothek hinzugefügt wird.
+   Beim Hochladen aus dem lokalen Dateisystem wird der native Dateibrowser verwendet, um eine Datei auszuwählen und hochzuladen. Unterstützte Dateitypen sind SCORM.zip (HTML5 oder SWF), MP4-Video-, SWF-, PDF- und Bildtypen (JPG, PNG, GIF, BMP). Der Dateiname wird zum Namen des Assets, der der Asset-Bibliothek hinzugefügt wird.
 
 * **[!UICONTROL Asset-Bibliothek durchsuchen]**
 
@@ -235,9 +232,9 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
 
 * **[!UICONTROL Ressourcen-Titelbild]**
 
-   Das Deckblattbild ist ein Bild, das angezeigt wird, wenn die Aktivierungsressource zum ersten Mal angezeigt wird. For example, the cover image is displayed when a video resource is not yet playing. If a custom image is not uploaded, a default image is displayed. For video resources, it may be possible to [generate a thumbnail](enablement.md#ffmpeg), but only when uploaded and not when the video is referenced as an URL. Für Standortressourcen kann das Bild verwendet werden, um zusätzliche Informationen bereitzustellen.
+   Das Deckblattbild ist ein Bild, das angezeigt wird, wenn die Aktivierungsressource zum ersten Mal angezeigt wird. Das Deckblattbild wird beispielsweise angezeigt, wenn eine Videoressource noch nicht abgespielt wird. Wenn kein benutzerdefiniertes Bild hochgeladen wird, wird ein Standardbild angezeigt. Bei Videoressourcen ist es möglicherweise möglich, eine Miniaturansicht [zu](enablement.md#ffmpeg)generieren, allerdings nur beim Hochladen und nicht, wenn das Video als URL referenziert wird. Für Standortressourcen kann das Bild verwendet werden, um zusätzliche Informationen bereitzustellen.
 
-   The recommended size for the cover image is 640 x 360 px.
+   Die empfohlene Größe für das Deckblattbild ist 640 x 360 Pixel.
 
 * Wählen Sie **[!UICONTROL Weiter]** aus.
 
@@ -247,10 +244,9 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
 
 >[!NOTE]
 >
->Lernende sollten nicht direkt in Aktivierungsressourcen eingeschrieben werden, auf die von einem Lernpfad aus verwiesen werden soll. Learners need only be enrolled in the learning path.
+>Lernende sollten nicht direkt in Aktivierungsressourcen eingeschrieben werden, auf die von einem Lernpfad aus verwiesen werden soll. Lernende müssen nur in den Lernpfad eingeschrieben werden.
 >
 >Wenn ein Mitglied sowohl in einer Ressource als auch in einem Lernpfad angemeldet ist, der auf diese Ressource verweist, zeigen ihre Zuweisungen sowohl die einzelne Ressource als auch die Ressource im Lernpfad an.
-
 
 * **[!UICONTROL Einstellungen für Social Media]**
 
@@ -278,31 +274,31 @@ Wählen Sie oben rechts `'+' icon`die Ressource aus, um mit der Auswahl der Quel
 
 * **[!UICONTROL Resource Contact&amp;ast;]**
 
-   *(Erforderlich)* Eine Person, die das Mitglied bezüglich der Aktivierungsressource kontaktieren kann. Use the pulldown menu to select from the users who are members of the [members group](#members-group).
+   *(Erforderlich)* Eine Person, die das Mitglied bezüglich der Aktivierungsressource kontaktieren kann. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)sind.
 
 * **[!UICONTROL Ressourcen-Experte]**
 
-   *(Optional)* A person the member can contact who has expertise regarding the enablement resource. Use the pulldown menu to select from users who are members of the [members group](#members-group).
+   *(Optional)* Eine Person, die das Mitglied kontaktieren kann und die über Sachkenntnis in Bezug auf die Aktivierungsressource verfügt. Verwenden Sie das Pulldown-Menü, um Benutzer auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)sind.
 
 ### 4 Assignments {#assignments}
 
-![resource-assignments](assets/resource-assignments.png)
+![Ressourcenzuweisungen](assets/resource-assignments.png)
 
 * **[!UICONTROL Bevollmächtigte hinzufügen]**
 
-   Use the pulldown menu to select from [members](#members-group) - The users and user groups (listed in bold face) - who are to be enrolled as Learners. Wenn sich Mitglieder auf der Community-Site anmelden, werden die Aktivierungsressourcen (und Lernpfade), in die sie eingeschrieben sind, auf ihrer Seite &quot; [Aufgaben](functions.md#assignments-function) &quot;angezeigt.
+   Verwenden Sie das Pulldown-Menü, um aus [Mitgliedern](#members-group) - die (fett gedruckten) Benutzer und Benutzergruppen - auszuwählen, die als Lernende eingeschrieben werden sollen. Wenn sich Mitglieder auf der Community-Site anmelden, werden die Aktivierungsressourcen (und Lernpfade), in die sie eingeschrieben sind, auf ihrer Seite &quot; [Aufgaben](functions.md#assignments-function) &quot;angezeigt.
 
 * Wählen Sie **[!UICONTROL Erstellen]**.
 
    ![resourceinfo](assets/resourceinfo.png)
 
-Successful creation of the enablement resource returns to the Resources console with the newly created resource selected. From this console, it is possible to [manage the resource](#managing-a-resource).
+Bei erfolgreicher Erstellung der Ressourcen für die Aktivierung wird die Ressourcenkonsole mit der neu erstellten Ressource erneut ausgewählt. Von dieser Konsole aus können Sie die Ressource [verwalten](#managing-a-resource).
 
 ## Create a Learning Path {#create-a-learning-path}
 
 ![add-learning-path](assets/add-learning-path.png)
 
-To add a new learning path to the community site
+So fügen Sie der Community-Site einen neuen Lernpfad hinzu
 
 * Wählen Sie das `Create` Symbol
 * Wählen Sie im angezeigten Untermenü die Option **[!UICONTROL Lernpfad]**.
@@ -317,17 +313,17 @@ Dadurch wird ein schrittweiser Prozess gestartet mit:
 * Identifizieren eines Lernpfadkontakts.
 * Mitglieder werden eingeschrieben.
 
-For enablement resources included in a learning path, the assignments should only be made for the learning path and not for the individual resources.
+Für die in einem Lernpfad enthaltenen Aktivierungsressourcen sollten die Zuweisungen nur für den Lernpfad und nicht für die einzelnen Ressourcen vorgenommen werden.
 
 ### Grundlegende Informationen {#basic-info-1}
 
-![learningpath-basic](assets/learningpath-basic1.png)
+![learn-path-basic](assets/learningpath-basic1.png)
 
 * **[!UICONTROL Bild hinzufügen]**
 
-   (*Optional*) Ein Bild, das auf der Karte für den Lernpfad auf der Seite &quot;Zuweisungen&quot;des Mitglieds sowie in der Konsole &quot;Ressourcen&quot;angezeigt wird. The image is selected from the server&#39;s local file system. If an image is not provided, a thumbnail will be generated for the uploaded resource.
+   (*Optional*) Ein Bild, das auf der Karte für den Lernpfad auf der Seite &quot;Zuweisungen&quot;des Mitglieds sowie in der Konsole &quot;Ressourcen&quot;angezeigt wird. Das Bild wird aus dem lokalen Dateisystem des Servers ausgewählt. Wenn kein Bild bereitgestellt wird, wird eine Miniaturansicht für die hochgeladene Ressource generiert.
 
-   ***Hinweis***: Die empfohlene Bildgröße beträgt nicht mehr einfach 480 x 480 Pixel. Due to the responsive design of the cards to various browser dimensions, the display size will vary from 220 X 165 pixels to 400 x 165 pixels.
+   ***Hinweis***: Die empfohlene Bildgröße beträgt nicht mehr einfach 480 x 480 Pixel. Aufgrund des reaktionsfähigen Designs der Karten mit verschiedenen Browser-Abmessungen kann die Anzeigegröße von 220 x 165 Pixel bis 400 x 165 Pixel betragen.
 
 * **[!UICONTROL Site-Name]**
 
@@ -339,33 +335,33 @@ For enablement resources included in a learning path, the assignments should onl
 
 * **[!UICONTROL Tags]**
 
-   (*Optional*) One or more tags may be chosen which associate the learning path with one or more catalogs. See [Tagging Enablement Resources](tag-resources.md).
+   (*Optional*) Es können ein oder mehrere Tags ausgewählt werden, die den Lernpfad mit einem oder mehreren Katalogen verbinden. See [Tagging Enablement Resources](tag-resources.md).
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
-   When unchecked, the learning path will not appear in any catalog. If checked, the learning path will appear in all catalogs unless [pre-filtered](catalog-developer-essentials.md#pre-filters) or the member filters from the UI. Durch die Anzeige des Lernpfads in einem Katalog erhalten Sie indirekt Zugriff auf alle darin enthaltenen Ressourcen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option deaktiviert ist, wird der Lernpfad in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird der Lernpfad in allen Katalogen angezeigt, es sei denn, die Filter der Benutzeroberfläche werden [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Mitglieder werden aus der Benutzeroberfläche entfernt. Durch die Anzeige des Lernpfads in einem Katalog erhalten Sie indirekt Zugriff auf alle darin enthaltenen Ressourcen. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Beschreibung]**
 
-   (*Optional*) The description to display for the enablement resource.
+   (*Optional*) Die für die Aktivierungsressource anzuzeigende Beschreibung.
 
 * **[!UICONTROL Kleines Asset]**
 
-   (*Optional*) Selected from AEM Assets. A thumbnail image to represent the resource in the publish environment, such as in a catalog.
+   (*Optional*) Aus AEM Assets ausgewählt. Ein Miniaturbild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. in einem Katalog.
 
 * **[!UICONTROL Großes Asset]**
 
-   (*Optional*) Selected from AEM Assets. A large image to represent the resource in the publish environment, such as on the main page for a resource.
+   (*Optional*) Aus AEM Assets ausgewählt. Ein großes Bild, das die Ressource in der Umgebung &quot;Veröffentlichen&quot;darstellt, z. B. auf der Hauptseite einer Ressource.
 
 * **[!UICONTROL Inhaltsfragment-Asset]**
 
-   (*Optional*) Selected from AEM Assets. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
+   (*Optional*) Aus AEM Assets ausgewählt. Ein Inhaltsfragment, auf das in der Umgebung &quot;Veröffentlichen&quot;verwiesen werden kann, das jedoch standardmäßig nicht verwendet wird.
 
 * Wählen Sie **[!UICONTROL Weiter]** aus.
 
 ### Voraussetzungen hinzufügen {#add-prerequisites}
 
-![learningpath-prerequisites](assets/learningpath-prerequisites.png)
+![Lernpfad-Voraussetzungen](assets/learningpath-prerequisites.png)
 
 * **[!UICONTROL Erforderliche Lernpfade]**
 
@@ -375,20 +371,19 @@ For enablement resources included in a learning path, the assignments should onl
 
 ### Ressourcen hinzufügen {#add-resources}
 
-![learningpath-addresource](assets/learningpath-addresource.png)
+![learn-path-addresource](assets/learningpath-addresource.png)
 
 * **[!UICONTROL Reihenfolge im Lernpfad erzwingen]**
 
-   (*Optional*) If set to On, then the order in which the enablement resources are added is the order in which learners are required to proceed through the learning path. Default is Off.
+   (*Optional*) Wenn diese Einstellung auf &quot;Ein&quot;gesetzt ist, ist die Reihenfolge, in der die Aktivierungsressourcen hinzugefügt werden, die Reihenfolge, in der die Lernenden den Lernpfad durchlaufen müssen. Die Standardeinstellung ist deaktiviert.
 
 * **[!UICONTROL Ressourcen]**
 
-   One or more Resources chosen from among the *published* enablement resources created for the current community site.
+   Eine oder mehrere Ressourcen, die aus den für die aktuelle Community-Site erstellten *veröffentlichten* Ressourcen ausgewählt wurden.
 
 >[!NOTE]
 >
->You can only select the resources available at the same level as the learning path. For example, for a learning path created in a group only the group level resources are available; for a learning path created in a community site the resources in that site are available for adding to the learning path.
-
+>Sie können die verfügbaren Ressourcen nur auf derselben Ebene wie der Lernpfad auswählen. Beispielsweise stehen für einen Lernpfad, der in einer Gruppe erstellt wird, nur Ressourcen auf Gruppenebene zur Verfügung; für einen Lernpfad, der auf einer Community-Site erstellt wurde, stehen die Ressourcen auf dieser Site zum Hinzufügen zum Lernpfad zur Verfügung.
 
 * Wählen Sie **[!UICONTROL Weiter]** aus.
 
@@ -398,117 +393,116 @@ For enablement resources included in a learning path, the assignments should onl
 
 * **[!UICONTROL Einschreibungen hinzufügen]**
 
-   Use the pulldown menu to select from the members and member groups (listed in bold face) who are members of the community site&#39;s [members group](#members-group). Es ist nicht erforderlich, Zuweisungen beim ersten Erstellen des Lernpfads hinzuzufügen. The learning path properties can be modified to add learners at a later time.
+   Verwenden Sie das Pulldown-Menü, um aus den (fettgedruckten) Mitgliedern und Mitgliedsgruppen auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)der Community-Site sind. Es ist nicht erforderlich, Zuweisungen beim ersten Erstellen des Lernpfads hinzuzufügen. Die Eigenschaften des Lernpfads können geändert werden, um Lernende zu einem späteren Zeitpunkt hinzuzufügen.
 
-* **[!UICONTROL Learning Path Contact&amp;ast;]**
+* **[!UICONTROL Lernpfad Contact&amp;ast;]**
 
-   *(Required)* A person the member can contact regarding the learning path. Use the pulldown menu to select from the users who are members of the community site&#39;s [members group](#members-group).
+   *(Erforderlich)* Eine Person, die das Mitglied bezüglich des Lernpfads kontaktieren kann. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der [Mitgliedergruppe](#members-group)der Community-Site sind.
 
 * Wählen Sie **[!UICONTROL Erstellen]**
 
 >[!NOTE]
 >
->Enablement resources referenced from the learning path should not list the same Assignees (learners), if any.
+>In den Aktivierungsressourcen, auf die vom Lernpfad verwiesen wird, sollten nicht dieselben Bevollmächtigten (Lernende) Liste werden, sofern vorhanden.
 >
 >Wenn ein Mitglied sowohl in einer Aktivierungsressource als auch in einem Lernpfad, der auf diese Ressource verweist, eingeschrieben ist, zeigen ihre Zuweisungen sowohl die einzelne Ressource als auch die Ressource im Lernpfad an.
 
+## Verwalten einer Ressource {#managing-a-resource}
 
-## Managing a Resource {#managing-a-resource}
+So verwalten Sie eine einzelne Aktivierungsressource
 
-To manage a single enablement resource:
-
-* From the **[!UICONTROL Resources]** console, select the community site which contains the resource.
+* Wählen Sie in der **[!UICONTROL Ressourcenkonsole]** die Community-Site aus, die die Ressource enthält.
 * Wählen Sie die Ressource aus.
 
-For the selected enablement resource, it is possible to:
+Für die ausgewählte Aktivierungsressource können Sie:
 
-* View properties (default)
+* Eigenschaften von Ansichten (Standard)
 * Eigenschaften bearbeiten
 * Löschen
 * Veröffentlichen  
 * Veröffentlichung rückgängig machen
 
-To upload a new version of the enablement resource, it is recommended to create a new resource, and then unenroll members from the old version and enroll them in the new version.
+Um eine neue Version der Ressource für die Aktivierung hochzuladen, wird empfohlen, eine neue Ressource zu erstellen und dann die Anmeldung für Mitglieder aus der alten Version aufzuheben und sie in der neuen Version einzutragen.
 
 ### Ressource bearbeiten {#edit-resource}
 
 ![edit-resource](assets/edit-resource.png)
 
-By selecting the pencil icon, the steps shown for creating a an enablement resource are made available so that any of the information provided may be modified.
+Durch Auswahl des Stiftsymbols werden die zum Erstellen einer Aktivierungsressource angezeigten Schritte verfügbar gemacht, sodass alle bereitgestellten Informationen geändert werden können.
 
-If the only change is to modify assignments on the Settings step, then saving the changes results in the modifications being published. If any other changes are made, the resource must be explicitly published afting saving.
+Wenn die einzige Änderung darin besteht, Zuweisungen im Schritt Einstellungen zu ändern, werden die Änderungen beim Speichern veröffentlicht. Wenn andere Änderungen vorgenommen werden, muss die Ressource nach dem Speichern explizit veröffentlicht werden.
 
 ### Ressource löschen {#delete-resource}
 
 ![delete-resource](assets/delete-resource.png)
 
-By selecting the trashcan icon, the enablement resource will be `Deleted` after confirmation.
+Durch Auswahl des Papierkorbsymbols wird die Aktivierungsressource `Deleted` nach der Bestätigung ausgewählt.
 
 ### Veröffentlichen   {#publish}
 
 ![publish-resource](assets/publish-resource1.png)
 
-Before learners are able to see an assigned enablement resourse, it must be published:
+Bevor die Lernenden eine zugewiesene Aktivierungsressource sehen können, müssen sie veröffentlicht werden:
 
-* Select the world icon to `Publish`.
-* In the dialog which pops up, select **[!UICONTROL Publish]** again.
-* Select **[!UICONTROL Close]**.
+* Wählen Sie das gewünschte Symbol für die Welt `Publish`.
+* Wählen Sie im daraufhin angezeigten Dialogfeld erneut **[!UICONTROL Veröffentlichen]** .
+* Wählen Sie **[!UICONTROL Schließen]**.
 
-Even though the dialog states the action is queued, it often is published immediately.
+Obwohl im Dialogfeld angegeben wird, dass die Aktion in die Warteschlange gestellt ist, wird sie oft sofort veröffentlicht.
 
 ### Veröffentlichung rückgängig machen {#unpublish}
 
 ![unpublish](assets/unpublish.png)
 
-To temporarily make the enablement resources unaccessible to members in the publish environment without deleting it, use the world icon to `Unpublish` the resource.
+Wenn Sie vorübergehend verhindern möchten, dass die Aktivierungsressourcen für Mitglieder in der Umgebung &quot;Veröffentlichen&quot;zugänglich sind, ohne sie zu löschen, verwenden Sie das Symbol &quot;Welt&quot;für `Unpublish` die Ressource.
 
 ### Bericht {#report}
 
 ![resource-reports](assets/resource-reports.png)
 
-The Report icon provides access to the reports generated when learners interact with their assigned enablement resources in the publish environment. The report varies depending on the type of resource.
+Das Berichtssymbol ermöglicht den Zugriff auf die Berichte, die generiert werden, wenn die Lernenden mit ihren zugewiesenen Aktivierungsressourcen in der Umgebung &quot;Veröffentlichen&quot;interagieren. Der Bericht hängt vom Typ der Ressource ab.
 
-For all learning paths, it is possible to view a report based either on resources or learners ( `User Report`.)
+Für alle Lernpfade ist es möglich, einen Bericht auf der Grundlage von Ressourcen oder Lernenden Ansicht ( `User Report`.)
 
-![learningpath-info](assets/learningpath-info1.png)
+![learn-path-info](assets/learningpath-info1.png)
 
-This Report is specifically for the current enablement resource or learning path. The depth of reporting provided depends on whether or not [Adobe Analytics](analytics.md) is licensed and enabled for the community site. The [Timeline](#timeline), [Viewer Engagement](#viewer-engagement), and [Engagement by Device](#engagement-by-device) reports are imported from Adobe Analytics based on the [polling interval](analytics.md#report-importer).
+Dieser Bericht ist speziell für die aktuelle Aktivierungsressource oder den Lernpfad gedacht. Die Tiefe des bereitgestellten Berichte hängt davon ab, ob [Adobe Analytics](analytics.md) für die Community-Site lizenziert und aktiviert ist. Die [Berichte &quot;Zeitschiene](#timeline)&quot;, &quot; [Viewer-Interaktion](#viewer-engagement)&quot;und &quot; [Interaktion nach Gerät](#engagement-by-device) &quot;werden basierend auf dem [Abfrageintervall](analytics.md#report-importer)aus Adobe Analytics importiert.
 
-For all enablement resources, regardless of whether or not Adobe Analytics is enabled, there are reports on [Assignee Status](#assignee-status) and [Ratings](#ratings) as well as a [Report Summary](#report-summary) table.
+Für alle Aktivierungsressourcen gibt es Berichte zu [Status](#assignee-status) und [Bewertungen](#ratings) des Empfängers sowie eine [Berichtübersichtstabelle](#report-summary) , unabhängig davon, ob Adobe Analytics aktiviert ist oder nicht.
 
 ![resource-report](assets/resource-report1.png)
 
 #### Timeline {#timeline}
 
-The Analytics Timeline report shows when events occur over time for this enablement resource:
+Der Bericht zur Analytics-Timeline zeigt an, wann Ereignis im Zeitverlauf für diese Aktivierungsressource auftreten:
 
 * **Ansichten**
 
-   A view is when a learner visits the resource details page.
+   Eine Ansicht ist, wenn ein Lernender die Seite mit den Ressourcendetails besucht.
 
 * **Wiedergaben**
 
-   A play is when alLearner interacts with the resource, such as playing a video or opening a PDF.
+   Eine Wiedergabe erfolgt, wenn alLearn mit der Ressource interagiert, z. B. beim Abspielen eines Videos oder Öffnen einer PDF-Datei.
 
 * **Bewertungen**
 
-   A rating is when a learner assigns a star rating to a resource.
+   Eine Bewertung ist, wenn ein Lernender einer Ressource eine Sternbewertung zuweist.
 
 * **Kommentare**
 
-   A comment is when alLearner adds a comment.
+   Ein Kommentar ist, wenn alLerner einen Kommentar hinzufügt.
 
-The vertical axis is the number of events.
+Die vertikale Achse ist die Anzahl der Ereignis.
 
-The horizontal axis is calendar time.
+Die horizontale Achse ist die Kalenderzeit.
 
-[Adobe Analytics required](sites-console.md#analytics).
+[Adobe Analytics erforderlich](sites-console.md#analytics).
 
 #### Betrachterinteraktion {#viewer-engagement}
 
-The Analytics Viewer Engagement report shows, for video resources, the number of learners who have viewed the resource and, if not played to the end, at what point learners stopped playing it.
+Der Bericht &quot;Interaktion mit dem Analytics-Viewer&quot;zeigt für Videoressourcen die Anzahl der Lernenden an, die die Ressource angesehen haben, und, falls sie nicht bis zum Ende wiedergegeben wurde, an welchem Punkt die Wiedergabe gestoppt wurde.
 
-The vertical axis is the number of learners who have viewed this resource.
+Die vertikale Achse ist die Anzahl der Lernenden, die diese Ressource angesehen haben.
 
 Die horizontale Achse ist die Dauer dieser Ressource.
 
@@ -566,7 +560,7 @@ Sie können die Anzeige der Tabelle anpassen, indem Sie Spalten mithilfe der `Sh
 
 Die Tabelle &quot;Berichtzusammenfassung&quot;kann im CSV-Format mit einer Schaltfläche oben in der Konsole heruntergeladen werden.
 
-* For an enablement resource: `Download Resource Report as CSV` button.
-* For a learning path: `Download Learning Path Report as CSV` button.
+* Für eine Aktivierungsressource: `Download Resource Report as CSV` Schaltfläche.
+* Für einen Lernpfad: `Download Learning Path Report as CSV` Schaltfläche.
 
-The complete Reports Summary is downloaded regardless of columns chosen for display.
+Die vollständige Berichtszusammenfassung wird unabhängig von den zur Anzeige ausgewählten Spalten heruntergeladen.
