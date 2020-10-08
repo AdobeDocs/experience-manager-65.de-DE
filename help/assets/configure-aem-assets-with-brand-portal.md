@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c03ba5e2ec7954cca8b129f453919d151956df5
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 35%
@@ -32,16 +32,14 @@ AEM Assets wird über die Adobe Developer Console mit dem Brand Portal konfiguri
 >
 >Die Konfiguration über veraltetes OAuth Gateway wird ab dem 6. April 2020 nicht mehr unterstützt und in Adobe Developer Console geändert.
 
-
 >[!TIP]
 >
 >***Nur für Bestandskunden***
 >
 >Es wird empfohlen, weiterhin die vorhandene alte OAuth Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über die Adobe Developer Console.
 
-
-
 In dieser Hilfe werden die folgenden zwei Anwendungsfälle beschrieben:
+
 * [Neue Konfiguration](#configure-new-integration-65): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit Brand Portal konfigurieren möchten, können Sie die Konfiguration über die Adobe Developer Console erstellen.
 * [Upgrade-Konfiguration](#upgrade-integration-65): Wenn Sie ein bestehender Brand Portal-Benutzer sind, der auf dem alten OAuth Gateway konfiguriert ist, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über die Adobe Developer Console.
 
@@ -58,7 +56,6 @@ Sie benötigen Folgendes, um AEM Assets mit Brand Portal zu konfigurieren:
 * Eine AEM Assets-Autoreninstanz mit dem neuesten Service Pack
 * URL eines Pächter-Portals
 * Ein Benutzer mit Systemadministrator-Berechtigungen für die IMS-Organisation des Markenportal-Mandanten
-
 
 [Herunterladen und Installieren von AEM 6.5](#aemquickstart)
 
@@ -94,12 +91,9 @@ Zum Konfigurieren von AEM Assets mit dem Markenportal sind Konfigurationen sowoh
 1. Konfigurieren Sie in AEM Assets den Markenportal-Cloud-Dienst mit dem IMS-Konto- und Markenportal-Endpunkt (Organisations-URL).
 1. Testen Sie Ihre Konfiguration, indem Sie ein Asset aus AEM Assets in das Markenportal veröffentlichen.
 
-
 >[!NOTE]
 >
 >Eine AEM Assets-Autoreninstanz darf nur mit einem Markenportal-Mandanten konfiguriert werden.
-
-
 
 Führen Sie die folgenden Schritte in der aufgeführten Reihenfolge aus, wenn Sie AEM Assets mit Markenportal zum ersten Mal konfigurieren:
 1. [Abrufen eines öffentlichen Zertifikats](#public-certificate)
@@ -269,7 +263,6 @@ Führen Sie die folgenden Schritte aus, um das IMS-Konto zu konfigurieren.
 
    ![IMS-Kontokonfiguration](assets/create-new-integration6.png)
 
-
 1. Wählen Sie die IMS-Kontokonfiguration aus und klicken Sie auf **[!UICONTROL Systemdiagnose]**.
 
    Klicken Sie im Dialogfeld auf **[!UICONTROL Prüfen]**. Bei erfolgreicher Konfiguration wird eine Meldung angezeigt, dass das *Token erfolgreich abgerufen* wurde.
@@ -281,8 +274,6 @@ Führen Sie die folgenden Schritte aus, um das IMS-Konto zu konfigurieren.
 >Sie dürfen nur eine IMS-Konfiguration haben.
 >
 >Vergewissern Sie sich, dass die IMS-Konfiguration die Konsistenzprüfung besteht. Wenn die Konfiguration die Konsistenzprüfung nicht besteht, ist sie ungültig. Sie müssen sie löschen und eine neue gültige Konfiguration erstellen.
-
-
 
 ### Konfigurieren von Cloud Service {#configure-the-cloud-service}
 
@@ -326,11 +317,9 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
 
    ![](assets/test-integration3.png)
 
-
    >[!NOTE]
    >
    >Die Replizierungsagenten arbeiten parallel und teilen die Auftragsverteilung gleichmäßig, wodurch die Veröffentlichungsgeschwindigkeit um das Vierfache der Originalgeschwindigkeit steigt. Wenn der Cloud-Service konfiguriert wurde, sind keine zusätzlichen Konfigurationsschritte erforderlich, um die Replikationsagenten zu aktivieren. Sie werden standardmäßig aktiviert, um die parallele Veröffentlichung mehrerer Assets zu ermöglichen.
-
 
 1. To verify the connection between AEM Assets and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
