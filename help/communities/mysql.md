@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 4%
@@ -75,7 +75,7 @@ Wenn MySQL Workbench zum ersten Mal gestartet wird, werden, sofern sie nicht ber
 ### Neue Verbindungseinstellungen {#new-connection-settings}
 
 1. Klicken Sie auf das Symbol &quot;+&quot;rechts neben `MySQL Connections`.
-1. Geben `Setup New Connection`Sie im Dialogfeld Werte ein, die für Ihre Plattform zu Demonstrationszwecken geeignet sind, wobei sich die Autorinstanz AEM MySQL auf demselben Server befinden:
+1. Geben `Setup New Connection`Sie im Dialogfeld Werte ein, die für Ihre Plattform zu Demonstrationszwecken geeignet sind, wobei die Autoreninstanz AEM MySQL auf demselben Server wie der Autoreninstanz und der MySQL-Server:
    * Verbindungsname: `Enablement`
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
@@ -140,9 +140,6 @@ Installieren Sie das Schema, bevor Sie die Daten installieren.
 >* [JDBC-Konfiguration](#configure-jdbc-connections)
 >* [SCORM-Konfiguration](#configure-scorm)
 
->
-
-
 
 #### Schritt 1: SQL-Datei öffnen {#step-open-sql-file}
 
@@ -195,7 +192,7 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
 * Geben Sie die folgenden Werte ein:
    * **[!UICONTROL JDBC-Treiberklasse]**: `com.mysql.jdbc.Driver`
-   * **DBC-Verbindung URIJ **:`jdbc:mysql://localhost:3306/aem63reporting`den Server anstelle von localhost angeben, wenn der MySQL-Server nicht mit dem AEM &quot;this&quot; identisch ist.
+   * **DBC-Verbindung URIJ**: `jdbc:mysql://localhost:3306/aem63reporting` den Server anstelle von localhost angeben, wenn der MySQL-Server nicht mit dem AEM &quot;this&quot; identisch ist.
    * **[!UICONTROL Benutzername]**: Stamm-Node oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, wenn nicht &quot;root&quot;.
    * **[!UICONTROL Kennwort]**: Löschen Sie dieses Feld, wenn für MySQL kein Kennwort festgelegt wurde. Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
    * **[!UICONTROL Name]** der Datenquelle: Name, der für die [MySQL-Verbindung](#new-connection-settings)eingegeben wurde, z. B. &quot;Aktivierung&quot;.
@@ -205,7 +202,7 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
 ### AEM Communities ScormEngine-Dienst {#aem-communities-scormengine-service}
 
-Die OSGi-Konfiguration für den **AEM Communities ScormEngine-Dienst** konfiguriert SCORM für die Verwendung des MySQL-Servers durch eine Aktivierungs-Community.
+Die OSGi-Konfiguration für den **AEM Communities ScormEngine-Dienst** konfiguriert SCORM für die Verwendung des MySQL-Servers durch eine Aktivierungsgemeinschaft.
 
 Diese Konfiguration ist vorhanden, wenn das [SCORM-Paket](deploy-communities.md#scorm-package) installiert ist.
 
@@ -229,7 +226,7 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 * Zum folgenden Parameter:
    * **[!UICONTROL Scorm-Benutzerkennwort]**: NICHT BEARBEITEN
 
-      Nur zur internen Verwendung: Es ist für einen Spezialdienstbenutzer, der von AEM Communities verwendet wird, um mit der Scorm-Engine zu kommunizieren.
+      Nur zur internen Verwendung: Es ist für einen Spezialdienstbenutzer, der von AEM Communities verwendet wird, um mit der Scorm Engine zu kommunizieren.
 * Wählen Sie **[!UICONTROL Speichern]** aus
 
 ### Adobe Granit-CSRF-Filter {#adobe-granite-csrf-filter}
