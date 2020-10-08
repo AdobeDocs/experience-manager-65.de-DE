@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 3%
@@ -103,7 +103,6 @@ Lassen Sie beim Ausführen im SolrCloud-Modus leer.
 >[!NOTE]
 >
 >Die mongoDB-Datenbank, die standardmäßig den Namen verwendet, `communities`sollte nicht auf den Namen einer Datenbank eingestellt werden, die für [Knotenspeicher oder Datenspeicher (binäre) verwendet wird](../../help/sites-deploying/data-store-config.md). Siehe auch [Datenspeicherung in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
-
 
 ### MongoDB-Replikat-Set {#mongodb-replica-set}
 
@@ -206,7 +205,6 @@ cURL -u *signin* -d *data* *reindex-url*
 >[!NOTE]
 >
 >Wenn Sie DSRP Solr [](dsrp.md)neu deklarieren, lautet die URL **/services/social/datastore/rdb/reindex**
-
 
 ### MSRP Reindex-Beispiel {#msrp-reindex-example}
 
