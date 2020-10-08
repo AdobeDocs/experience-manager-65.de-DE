@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Diese Seite enthält weitere technische Details:
 
 * So [zeigen Sie eine Markierung](#displaying-badges) als Bild oder Text an
 * So aktivieren Sie die umfassende [Debug-Protokollierung](#debug-log-for-scoring-and-badging)
-* Wie [Zugriff auf UGC](#ugc-for-scoring-and-badging) in Zusammenhang mit Scoring und Abzeichen
+* Wie [kann ich auf UGC](#ugc-for-scoring-and-badging) im Zusammenhang mit Scoring und Abzeichen zugreifen?
 
 >[!CAUTION]
 >
@@ -224,15 +224,14 @@ Die Screenshots der Repository-Daten stammen aus der Einrichtung von Scoring und
 >Dieses Beispiel folgt nicht den folgenden bewährten Verfahren:
 >
 >* Die Namen von Bewertungsregeln sollten global eindeutig sein. sie sollten nicht mit demselben Namen enden.
-   >  Ein Beispiel dafür, was *nicht* zu tun ist:
-   >  /libs/settings/community/scoring/rules/site1/forums-scoring
-   >  /libs/settings/community/scoring/rules/site2/forums-scoring
-   >
-   >
-* Erstellen einzigartiger Abzeichen für verschiedene AEM Sites
-
 >
-
+>  
+Ein Beispiel dafür, was *nicht* zu tun ist:
+>
+>  /libs/settings/community/scoring/rules/site1/forums-scoring
+>  /libs/settings/community/scoring/rules/site2/forums-scoring
+>
+>* Erstellen einzigartiger Abzeichen für verschiedene AEM Sites
 
 
 ### Zugriff auf Scoring-UGC {#access-scoring-ugc}
