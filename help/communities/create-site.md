@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 3%
@@ -124,7 +124,6 @@ Beispiel:
 >[!NOTE]
 >
 >[Der Tunnel-Dienst](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungs-Umgebung vorhanden sind.
-
 
 ![Benutzerrollen in neuen Sites](assets/site-admin-1.png)
 
@@ -275,7 +274,7 @@ hinzufügen `Login Page Mapping` als
 
 Wenn Sie zu Demonstrationszwecken mit der Veröffentlichungs-Site arbeiten, ist es ggf. sinnvoll, die standardmäßige Startseite auf die neue Site zu ändern.
 
-Dazu müssen Sie [CRXDE](https://localhost:4503/crx/de) Lite verwenden, um die [Ressourcenzuordnungstabelle](/help/sites-deploying/resource-mapping.md) bei der Veröffentlichung zu bearbeiten.
+Hierzu müssen Sie [CRXDE](https://localhost:4503/crx/de) Lite verwenden, um die [Ressourcenzuordnungstabelle](/help/sites-deploying/resource-mapping.md) bei der Veröffentlichung zu bearbeiten.
 
 Erste Schritte:
 
