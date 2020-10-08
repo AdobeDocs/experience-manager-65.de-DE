@@ -10,18 +10,21 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 6%
 
 ---
 
 
 # Empfohlene Topologien für Communities {#recommended-topologies-for-communities}
 
-Ab AEM Communities 6.1 wurde ein eindeutiger Ansatz für die Behandlung benutzergenerierter Inhalte (UGC) gewählt, die von Site-Besuchern (Mitgliedern) aus der Veröffentlichungs-Umgebung eingereicht wurden.
+Ab AEM Communities 6.1 wurde ein einzigartiger Ansatz für die Behandlung benutzergenerierter Inhalte (UGC) gewählt, die von Besuchern der Site (Mitglieder) aus der Umgebung &quot;Veröffentlichen&quot;eingereicht wurden.
 
-Dieser Ansatz unterscheidet sich grundlegend von der Art und Weise, wie die AEM-Plattform Site-Inhalte verarbeitet, die im Allgemeinen von der Authoring-Umgebung verwaltet werden.
+Dieser Ansatz unterscheidet sich grundsätzlich von der Art und Weise, wie die AEM Plattform Site-Inhalte verarbeitet, die im Allgemeinen von der Autorenversion verwaltet werden.
 
-Die AEM-Plattform verwendet einen Knotenspeicher, der den Site-Inhalt vom Autor zur Veröffentlichung repliziert, während AEM Communities einen einzigen, gemeinsamen Speicher für UGC verwendet, der nie repliziert wird.
+Die AEM-Plattform verwendet einen Knotenspeicher, der den Site-Inhalt vom Autor bis zur Veröffentlichung repliziert, während AEM Communities einen einzigen gemeinsamen Speicher für UGC verwendet, der nie repliziert wird.
 
 Für den allgemeinen UGC-Store muss ein [Datenspeicherung Resource Provider (SRP)](working-with-srp.md)gewählt werden. Die empfohlenen Optionen sind:
 
@@ -35,15 +38,14 @@ Die Anforderung eines gemeinsamen Speichers führt zu den folgenden empfohlenen 
 
 >[!NOTE]
 >
->Bei AEM Communities wird [UGC nie repliziert](working-with-srp.md#ugc-never-replicated).
+>Für AEM Communities wird [UGC nie repliziert](working-with-srp.md#ugc-never-replicated).
 >
->Wenn die Bereitstellung keinen [gemeinsamen Speicher](working-with-srp.md)enthält, ist UGC nur in der Veröffentlichungs- oder Autoreninstanz von AEM sichtbar, in der sie eingegeben wurde.
+>Wenn die Bereitstellung keinen [gemeinsamen Speicher](working-with-srp.md)enthält, ist UGC nur in der AEM- oder Autoreninstanz sichtbar, in der sie eingegeben wurde.
 
 
 >[!NOTE]
 >
->Weitere Informationen zur AEM-Plattform finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md) und [Einführung in die AEM-Plattform](../../help/sites-deploying/data-store-config.md).
-
+>Weitere Informationen zur AEM finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md) und [Einführung in die AEM Plattform](../../help/sites-deploying/data-store-config.md).
 
 ## zur Herstellung {#for-production}
 
@@ -74,7 +76,7 @@ Wenn es sich bei der Topologie um eine Veröffentlichungsfarm handelt, sind folg
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | beliebig | JCR | MySQL | DSRP | Ja |
 | beliebig | JCR | MongoDB | MSRP | Ja |
-| beliebig | JCR | Adobe On-Demandstorage | ASRP | Ja |
+| beliebig | JCR | On-Demand-Speicher für Adoben | ASRP | Ja |
 
 ### JSRP {#jsrp}
 
