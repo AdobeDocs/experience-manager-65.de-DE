@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 71%
@@ -553,8 +553,7 @@ Führen Sie die folgenden Schritte aus, um die Zertifikate zu konfigurieren:
 
    >[!NOTE]
    >
-   >* Ersetzen Sie in der Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Achten Sie darauf, die Anmeldeinformationen für die alten Reader-Erweiterungen zu löschen, bevor Sie eine abgelaufene oder Testberechtigung aktualisieren.
-
+   >Ersetzen Sie in der Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Achten Sie darauf, die Anmeldeinformationen für die alten Reader-Erweiterungen zu löschen, bevor Sie eine abgelaufene oder Testberechtigung aktualisieren.
 
 1. Klicken Sie auf der Seite &quot;Benutzereinstellungen **[!UICONTROL bearbeiten&quot;auf]** Speichern &amp; Schließen **** .
 
