@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -32,7 +32,6 @@ Sobald eine Aktion durchgeführt wird, um eine neue Community-Gruppe zu erstelle
 >[!NOTE]
 >
 >Die Konsolen für die Erstellung von [Community-Sites](/help/communities/sites-console.md), [Community-Site-Vorlagen](/help/communities/sites.md), [Community-Gruppenvorlagen](/help/communities/tools-groups.md) und [Community-Funktionen](/help/communities/functions.md) sind nur zur Verwendung in der Autorendatei bestimmt.
-
 
 ## Gruppenvorlagen-Konsole {#group-templates-console}
 
@@ -83,7 +82,6 @@ Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschr
 >Die Funktion für verschachtelte Gruppen ist ab Communities [FP1](/help/communities/communities.md#latestfeaturepack)verfügbar.
 >
 >Es ist immer noch nicht zulässig, eine Funktion &quot;Gruppen&quot;als erste oder einzige Funktion in einer Vorlage hinzuzufügen.
-
 
 ![Gruppenvorlageneditor](assets/template-editor.png)
 
