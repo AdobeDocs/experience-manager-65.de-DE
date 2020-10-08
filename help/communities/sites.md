@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -26,52 +26,51 @@ Die Konsole &quot;Site-Vorlagen&quot;ist der Konsole &quot; [Gruppenvorlagen](to
 >
 >Die Konsolen für die Erstellung von [Community-Sites](sites-console.md), [Community-Site-Vorlagen](sites.md), [Community-Gruppenvorlagen](tools-groups.md) und [Community-Funktionen](functions.md) sind nur zur Verwendung in der Autorendatei bestimmt.
 
-
-## Site Templates Console {#site-templates-console}
+## Site-Vorlagenkonsole {#site-templates-console}
 
 In der Umgebung &quot;Autor&quot;zur Konsole der Community-Sites gelangen Sie wie folgt:
 
 * Aus globaler Navigation: **[!UICONTROL Tools > Communities > Site-Vorlagen]**
 
-This console displays the templates from which a [community site](sites-console.md) can be created and allows new site templates to be created.
+Diese Konsole zeigt die Vorlagen an, aus denen eine [Community-Site](sites-console.md) erstellt werden kann, und ermöglicht die Erstellung neuer Site-Vorlagen.
 
 ![site-template](assets/site-template.png)
 
 ## Site-Vorlage erstellen {#create-site-template}
 
-To get started creating a new site template, select `Create`.
+Um eine neue Site-Vorlage zu erstellen, wählen Sie `Create`.
 
-This will bring up the Site Editor panel which contains 3 sub-panels:
+Dadurch wird der Site-Editor-Bereich angezeigt, der drei Unterbereiche enthält:
 
 ### Basic info {#basic-info}
 
 ![site-template-basicinfo](assets/site-template-basicinfo.png)
 
-On the Basic Info panel, a name, description and whether the template is enabled or disabled are configured:
+Im Bedienfeld &quot;Grundlegende Informationen&quot;werden ein Name, eine Beschreibung und die Konfiguration der Vorlage, ob sie aktiviert oder deaktiviert ist, wie folgt konfiguriert:
 
 * **[!UICONTROL Name der Community-Site-Vorlage]**
 
-   The template name id.
+   Die Vorlagenname-ID.
 
 * **[!UICONTROL Beschreibung der Community-Site-Vorlage]**
 
-   The template description.
+   Die Vorlagenbeschreibung.
 
-* **[!UICONTROL Disabled/Enabled]**
+* **[!UICONTROL Deaktiviert/aktiviert]**
 
-   A toggle switch controlling whether the template is referenceable.
+   Ein Umschalter steuert, ob die Vorlage referenzierbar ist.
 
 ### Miniaturansicht       {#thumbnail}
 
 ![site-thumbnail](assets/site-thumbnail.png)
 
-(Optional) Select the Upload Image icon in order to display a thumbnail along with the name and description to creators of community sites.
+(Optional) Wählen Sie das Symbol Bild hochladen, um eine Miniaturansicht mit dem Namen und der Beschreibung für Ersteller von Community-Sites anzuzeigen.
 
 ### Struktur {#structure}
 
 ![site-structure](assets/site-structure.png)
 
-To add community functions, drag from the right side to the left in the order the site menu links should appear. Stile werden während der Erstellung der Site auf die Vorlage angewendet.
+Um Community-Funktionen hinzuzufügen, ziehen Sie von der rechten Seite nach links in der Reihenfolge, in der die Sitemenü-Links angezeigt werden sollen. Stile werden während der Erstellung der Site auf die Vorlage angewendet.
 
 Wenn Sie beispielsweise eine Startseite erstellen möchten, ziehen Sie die Funktion &quot;Seite&quot;aus der Bibliothek und legen Sie sie unter dem Vorlagenaufbau ab. Dadurch wird das Dialogfeld für die Seitenkonfiguration geöffnet. Informationen zu den Konfigurationsdialogen finden Sie in der [Funktionskonsole](functions.md) .
 
@@ -85,7 +84,6 @@ Die Seitenfunktion stellt eine leere Seite bereit. Die Funktion &quot;Gruppen&qu
 >
 >Jede andere Funktion, wie die [Seitenfunktion](functions.md#page-function), muss eingeschlossen und zuerst aufgeführt werden.
 
-
 ![site-editor](assets/site-editor.png)
 
 ### Gruppenvorlagen für die Funktion &quot;Gruppen&quot; {#group-templates-for-groups-function}
@@ -95,7 +93,6 @@ Wenn Sie eine Gruppenfunktion in die Site-Vorlage aufnehmen, müssen Sie die Gru
 >[!CAUTION]
 >
 >Die Funktion Groups darf *nicht* die *erste oder einzige* Funktion in der Site-Struktur sein.
-
 
 ![site-function](assets/site-functions.png)
 
