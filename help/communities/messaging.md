@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 2%
@@ -21,9 +21,9 @@ ht-degree: 2%
 
 # Nachrichten konfigurieren {#configure-messaging}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern mit angemeldeten Sites (Mitgliedern), Nachrichten an andere zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
+Die Messaging-Funktion für AEM Communities ermöglicht es Besuchern (Teilnehmern) mit angemeldeten Sites, Nachrichten an andere zu senden, auf die bei der Anmeldung auf der Site zugegriffen werden kann.
 
 Die Messaging-Funktion wird für eine Community-Site aktiviert, indem während der Erstellung [](/help/communities/sites-console.md)einer Community-Site ein Kästchen markiert wird.
 
@@ -33,7 +33,7 @@ For additional information for developers, see [Messaging Essentials](/help/comm
 
 ## Messaging-Dienst {#messaging-operations-service}
 
-Der Nachrichtendienst [&quot;Messaging Operations&quot;](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities zur Konfiguration identifiziert den Endpunkt, der mit Anfragen im Zusammenhang mit Nachrichten verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden sollte, und wenn Meldungen Dateianhänge enthalten können, welche Dateitypen sind zulässig.
+Der [AEM Communities Messaging Operations-Dienst](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifiziert den Endpunkt, der Messaging-bezogene Anforderungen verarbeitet, die Ordner, die der Dienst zum Speichern von Nachrichten verwenden sollte, und wenn Meldungen Dateianhänge enthalten können, welche Dateitypen sind zulässig.
 
 Für Community-Sites, die mit dem erstellt wurden, `Communities Sites console`ist bereits eine Instanz des Dienstes vorhanden, wobei der Posteingang auf `/mail/inbox`festgelegt ist.
 
@@ -125,7 +125,7 @@ Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** 
 
    Die Standardeinstellung ist */bin/messaging* .
 
-* **Feld-Zulassungslisten**
+* **Feld-Zulassungsliste**
 
    Verwenden Sie die Zulassungsliste **&quot;Nachrichtenfelder&quot;**.
 
@@ -134,7 +134,6 @@ Um eine neue Konfiguration hinzuzufügen, klicken Sie auf das Plus-Symbol **+** 
 >Jedes Mal, wenn eine `Messaging Operations Service` Konfiguration zur Bearbeitung geöffnet wird und sie entfernt `allowedAttachmentTypes.name` wurde, wird ein leerer Eintrag erneut hinzugefügt, damit die Eigenschaft konfiguriert werden kann. Ein einzelner leerer Eintrag deaktiviert Dateianlagen effektiv.
 >
 >Um alle Dateinamenerweiterungen mit Ausnahme der auf die Blockierungsliste gesetzt zuzulassen, verwenden Sie das Symbol &#39;**-**&#39;, um (erneut) den einzelnen leeren Eintrag zu entfernen, bevor Sie auf **Speichern** klicken.
-
 
 ## Group Messaging {#group-messaging}
 
