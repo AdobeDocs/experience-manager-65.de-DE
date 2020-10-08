@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 7%
@@ -31,7 +31,6 @@ Standardmäßig funktioniert die E-Mail-Funktion nicht, da sie die Angabe eines 
 >[!CAUTION]
 >
 >E-Mail für Benachrichtigungen und Abonnement muss nur für den [primären Herausgeber](deploy-communities.md#primary-publisher)konfiguriert werden.
-
 
 ## Standardkonfiguration für den Mail-Dienst {#default-mail-service-configuration}
 
