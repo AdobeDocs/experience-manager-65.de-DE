@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -20,9 +20,9 @@ ht-degree: 4%
 
 # Mitglieder und Gruppenverwaltungskonsolen {#members-groups-management-consoles}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
-AEM Communities-Funktionen erfordern häufig, dass Site-Besucher registriert und angemeldet sind, bevor sie an einer Community in der Umgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungs-Umgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von den in der Autorenversion registrierten *Benutzern* zu unterscheiden.
+Für AEM Communities-Funktionen müssen Site-Besucher oft registriert und angemeldet sein, bevor sie an einer Community in der Umgebung teilnehmen. Ihre Benutzerregistrierung muss nur in der Veröffentlichungs-Umgebung vorhanden sein. Sie werden häufig als *Mitglieder* bezeichnet, um sie von den in der Autorenversion registrierten *Benutzern* zu unterscheiden.
 
 ### Mitglieder (Benutzer) bei der Veröffentlichung {#members-users-on-publish}
 
@@ -39,7 +39,6 @@ Für die Verwaltung der in der *Autor* -Umgebung registrierten Benutzer und Grup
 >
 >Wenn Beispielinhalte bereitgestellt und aktiviert sind, gibt es viele Beispielbenutzer sowohl in der Autor- als auch in der Veröffentlichungs-Umgebung. Diese Benutzer sind nicht vorhanden, wenn sie mit [nosampleContent-Ausführungsmodus](../../help/sites-administering/production-ready.md)ausgeführt werden.
 
-
 ## Mitgliederkonsole {#members-console}
 
 In der Umgebung &quot;Autor&quot;erreichen Sie die Mitgliederkonsole, um in der Umgebung &quot;Veröffentlichen&quot;registrierte Mitglieder zu verwalten:
@@ -49,7 +48,6 @@ In der Umgebung &quot;Autor&quot;erreichen Sie die Mitgliederkonsole, um in der 
 >[!CAUTION]
 >
 >Die Mitgliederkonsole kann nicht verwendet werden, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
-
 
 ![member-console1](assets/member-console1.png)
 
@@ -66,7 +64,7 @@ Klicken Sie auf das Suchsymbol auf der linken Seite der `Members` Kopfzeile, um 
 
 ### Mitgliederstatistiken {#member-statistics}
 
-Die Spalten `Views`, `Posts`und `Follows` werden aktualisiert, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites ist, auf denen Adobe Analytics `Likes` aktiviert [](sites-console.md#analytics)ist.
+Die Spalten `Views`, `Posts`und `Follows` werden aktualisiert, wenn der Benutzer Mitglied einer oder mehrerer Community-Sites ist, für die Adobe Analytics `Likes` aktiviert [](sites-console.md#analytics)ist.
 
 ### CSV exportieren {#export-csv}
 
@@ -156,7 +154,7 @@ Siehe auch [Scoring und Badges](implementing-scoring.md).
 
 ![create-member2](assets/create-member2.png)
 
-* **[!UICONTROL Hinzufügen]**
+* **[!UICONTROL hinzufügen]**
    * Geben Sie mit der Eingabe an, um aus den [verfügbaren Abzeichen](badges.md)auszuwählen. Wählen Sie nach Auswahl eines Kennzeichens jede Website oder alle Sites aus, auf denen das Kennzeichen zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
    * Es können mehrere Abzeichen und Sites ausgewählt werden.
 * **[!UICONTROL Entfernen von Markierungen]**
@@ -174,7 +172,6 @@ So greifen Sie auf die Konsole &quot;Gruppen&quot;zu:
 >[!CAUTION]
 >
 >Die Konsole Gruppen kann nicht verwendet werden, wenn der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
-
 
 ### Neue Gruppe erstellen {#create-new-group}
 
