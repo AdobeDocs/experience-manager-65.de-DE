@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 6%
@@ -25,7 +25,6 @@ ht-degree: 6%
 >[!CAUTION]
 >
 >Der Inhalt des Ordners &quot;/libs&quot;wird nie bearbeitet, da bei einer Neuinstallation oder Aktualisierung der Ordner &quot;/libs&quot;gelöscht oder ersetzt werden kann, während der Inhalt des Ordners &quot;/apps&quot;unverändert bleibt.
-
 
 Erstellen Sie zunächst mit der [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) auf einer Autoreninstanz einen Pfad im Ordner &quot;/apps&quot;, der mit dem Pfad zu den überlagerten Komponenten im Ordner &quot;/libs&quot;identisch ist.
 
@@ -82,9 +81,6 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
->
-
 
 
 Die eigene Eigenschaft `Type`(Eigenschaft `sling:resourceType`) der Überlagerung muss eine relative Selbstreferenz sein, damit nicht in /apps gefundene Inhalte in /libs gesucht werden.
