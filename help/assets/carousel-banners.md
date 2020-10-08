@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4813'
 ht-degree: 98%
@@ -243,7 +243,8 @@ Siehe [Experience Fragment](/help/sites-authoring/experience-fragments.md).
 >[!NOTE]
 >
 >Beachten Sie, dass die Tools zur Freigabe in Social Media im Karussellbanner nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten.
-Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+>
+>Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 Vergessen Sie nicht, Ihre Arbeit zu speichern, wenn Sie einem Bild Hotspots oder Imagemaps hinzufügen. Die Optionen „Rückgängig“ und „Wiederholen“ in der Nähe der oberen rechten Ecke der Seite werden während der aktuellen Erstellungs-/Bearbeitungssitzung unterstützt.
 
@@ -311,7 +312,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
          >[!NOTE]
          Beachten Sie, dass die Tools zur Freigabe in Social Media im Karussellbanner nicht unterstützt werden, wenn Sie den Viewer in ein Experience Fragment einbetten.
-Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+         Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    Sie können in einer Vorschau anzeigen, wie das Karussellbanner aussehen wird. Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previewing-carousel-banners).
