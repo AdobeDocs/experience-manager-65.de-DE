@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 6%
@@ -81,7 +81,7 @@ Da es nun eine [Seitenvorlage](initial-app.md#createthepagetemplate)gibt, könne
 
    ![classic-ui-repository-Ansicht](assets/classic-ui-repository-view.png)
 
-## Hinzufügen des Entwurfspfads {#add-the-design-path}
+## hinzufügen des Entwurfspfads {#add-the-design-path}
 
 Wenn ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` sie mithilfe des Abschnitts &quot;Entwürfe&quot;der Konsole &quot;Werkzeuge&quot;erstellt wurde, wird die Eigenschaft
 
@@ -109,5 +109,3 @@ Bei Problemen beim Speichern der Konfiguration müssen Sie sich erneut anmelden 
 >[!NOTE]
 >
 >Die Verwendung von `cq:designPath` ist optional und steht in keinem Zusammenhang mit der [Verwendung von clientlibs](develop-app.md#includeclientlibsintemplate), die im Wesentlichen erforderlich sind, da die SCF-Komponenten [clientlibs](client-customize.md#clientlibs-for-scf) zur Verwaltung ihrer JS und CSS verwenden.
-
-
