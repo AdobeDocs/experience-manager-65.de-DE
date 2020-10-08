@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 4%
@@ -68,7 +68,7 @@ Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden sol
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-(Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird an der linken Kante des Browsers zwischen dem Community-Site-Header und dem Menü (Navigationslinks) fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
+(Optional) Laden Sie ein Bannerbild hoch, das auf den Seiten der Site angezeigt wird. Das Banner wird am linken Rand des Browsers zwischen dem Community-Site-Header und dem Menü (Navigationslinks) fixiert. Die Bannerhöhe wird auf 120 Pixel zugeschnitten. Die Größe des Banners wird nicht an die Breite des Browsers und die Höhe von 120 Pixel angepasst.
 
 ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -123,7 +123,6 @@ Beispiel:
 >[!NOTE]
 >
 >[Der Tunnel-Dienst](/help/communities/deploy-communities.md#tunnel-service-on-author) ermöglicht die Auswahl von Mitgliedern und Gruppen, die nur in der Veröffentlichungs-Umgebung vorhanden sind.
-
 
 ![Rollen aktivieren](assets/site-admin.png)
 
@@ -237,7 +236,7 @@ Für diese neue Community-Site werden die neuen Benutzergruppen, die in der Umge
 
 Bei aktiviertem Tunneldienst ist es möglich, die während der Ersteinrichtung erstellten [Benutzer der Community-Mitglieder-Gruppe für die neu erstellte Community-Site zuzuweisen](/help/communities/enablement-setup.md#publishcreateenablementmembers) .
 
-Mithilfe der Community Groups-Konsole können Mitglieder einzeln hinzugefügt oder über die Mitgliedschaft in einer Gruppe hinzugefügt werden.
+Mithilfe der Community-Gruppenkonsole können Mitglieder einzeln hinzugefügt oder über die Mitgliedschaft in einer Gruppe hinzugefügt werden.
 
 In diesem Beispiel `Community Ski Class` wird die Gruppe als Mitglied der Gruppe `Community Enable Members` sowie als Mitglied hinzugefügt `Quinn Harper`.
 
@@ -316,7 +315,6 @@ Erste Schritte:
 >
 >Zur Deaktivierung müssen Sie den `sling:match` Eigenschaftswert einfach mit einem &quot;x&quot;- `xlocalhost.4503/$` - und **Save All**(Alle speichern) vorlegen.
 
-
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Fehlerbehebung: Fehler beim Speichern der Map {#troubleshooting-error-saving-map}
@@ -340,7 +338,6 @@ Denken Sie nach jeder Änderung daran, die Site zu **speichern** und erneut zu *
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
-
 
 ### hinzufügen eines Katalogs {#add-a-catalog}
 
