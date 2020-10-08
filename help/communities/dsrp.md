@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -34,7 +34,6 @@ Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-
 >[!NOTE]
 >
 >Die Standardkonfiguration für die Datenspeicherung wird jetzt in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) anstelle von etc path(`/etc/socialconfig/srpc/defaultconfiguration`) gespeichert. Es wird empfohlen, die [Migrationsschritte](#zerodt-migration-steps) durchzuführen, damit die Standardeinstellung wie erwartet funktioniert.
-
 
 ## Konfiguration der relationalen Datenbank {#relational-database-configuration}
 
