@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 3%
@@ -145,7 +145,6 @@ Wenn der Knoten vom Typ `cq:Page` (empfohlen) ist, fügen Sie mithilfe von CRXDE
 >[!NOTE]
 >
 >Wenn eine Bewertungsregel keine Auswirkungen auf die Zuweisung von Kennzeichen zu haben scheint, stellen Sie sicher, dass die Bewertungsregel nicht von der scoringRules-Eigenschaft der Kennzeichnungsregel blockiert wurde. Siehe Abschnitt mit dem Titel [Regeln](#badging-rules)für die Kennzeichnung.
-
 
 ### Kennzeichen für Komponente aktivieren {#enable-badges-for-component}
 
@@ -534,7 +533,7 @@ Die folgenden Tabellen beschreiben die `verbs` definierten Communities für die 
 | FLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds wird markiert |
 | UNFLAG-AS-INAPPROPRIATE | Der Inhalt des Mitglieds ist unmarkiert |
 | AKZEPT | Der Inhalt des Mitglieds wird vom Moderator genehmigt |
-| SCHLIESSEN | Mitglied schließt Kommentar zu Bearbeitungen und Antworten |
+| CLOSE | Mitglied schließt Kommentar zu Bearbeitungen und Antworten |
 | OPEN | Mitglied öffnet Kommentar erneut |
 
 ### Ereignis für benutzerdefinierte Komponenten {#custom-component-events}
