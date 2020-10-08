@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '896'
+ht-degree: 0%
 
 ---
 
@@ -27,12 +30,11 @@ source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 >
 >Der Speicherort des Pakets von Communities-APIs kann sich ändern, wenn von einer Hauptversion zur nächsten aktualisiert wird.
 
-
 ### SocialComponent-Schnittstelle {#socialcomponent-interface}
 
 SocialComponents sind POJOs, die eine Ressource für eine AEM Communities-Funktion darstellen. Idealerweise stellt jede SocialComponent einen bestimmten resourceType mit offen gelegten GETters dar, die dem Client Daten bereitstellen, damit die Ressource korrekt dargestellt wird. Die gesamte Geschäftslogik und die Logik der Ansicht sind in der SocialComponent eingeschlossen, einschließlich der Sitzungsinformationen des Site-Besuchers, sofern erforderlich.
 
-Die Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass die Schnittstelle Map&lt;String, Object> getAsMap()- und String toJSONString()-Methoden vorgibt, die zum Rendern von Handlebars-Vorlagen und zum Bereitstellen von GET JSON-Endpunkten für Ressourcen erforderlich sind.
+Die Schnittstelle definiert einen grundlegenden Satz von GETters, die zur Darstellung einer Ressource erforderlich sind. Wichtig ist, dass in der Schnittstelle die Methoden Map&lt;String, Object> getAsMap() und String toJSONString() festgelegt sind, die zum Rendern von Handlebars-Vorlagen und zum Bereitstellen von GET JSON-Endpunkten für Ressourcen erforderlich sind.
 
 Alle SocialComponent-Klassen müssen die Schnittstelle implementieren `com.adobe.cq.social.scf.SocialComponent`
 
@@ -66,9 +68,9 @@ Ein Handle für den OSGi-Dienst wird durch Aufrufen von `com.adobe.cq.social.scf
 
 #### PostOperation-Klasse {#postoperation-class}
 
-Die HTTP-API-POST-Endpunkte sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation` Schnittstelle (Paket) definiert werden `org.apache.sling.servlets.post`.
+Die HTTP-API-POST-Endpunkte sind PostOperation-Klassen, die durch Implementierung der `SlingPostOperation` Schnittstelle (package `org.apache.sling.servlets.post`) definiert werden.
 
-Die Implementierung des `PostOperation` Endpunkts legt `sling.post.operation` einen Wert fest, auf den der Vorgang reagieren soll. Alle POST-Anforderungen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
+Die Implementierung des `PostOperation` Endpunkts legt `sling.post.operation` einen Wert fest, auf den der Vorgang reagieren soll. Alle POST-Anfragen mit einem:operation-Parameter, der auf diesen Wert gesetzt ist, werden dieser Implementierungsklasse übertragen.
 
 Die `PostOperation` ruft die `SocialOperation` auf, die die für den Vorgang erforderlichen Aktionen ausführt.
 
@@ -117,7 +119,7 @@ Alle `OperationService` Klassen erweitern `AbstractOperationService`und ermögli
 
 ## Beispielcode {#sample-code}
 
-Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) -Repository verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
+Beispielcode ist im [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) Repository verfügbar. Suchen Sie nach Projekten mit dem Präfix `aem-communities` oder `aem-scf`.
 
 ## Best Practices {#best-practices}
 
