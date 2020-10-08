@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 2%
@@ -34,7 +34,6 @@ Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass Code ohne
 >
 >**Benutzerdefinierte Komponenten**: Für lizenzierte Kunden von AEM Communities steht die SRP-API Entwicklern von benutzerdefinierten Komponenten zur Verfügung, um ohne Rücksicht auf die zugrunde liegende Topologie auf UGC zugreifen zu können. Siehe [SRP und UGC Essentials](srp-and-ugc.md).
 
-
 Siehe auch:
 
 * [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
@@ -57,7 +56,7 @@ Nachdem Sie Site-Inhalte in der Umgebung für private Autoren entwickelt haben, 
 
 Für UGC wird der Inhalt von registrierten Site-Besuchern (Community-Mitgliedern) in der Umgebung zur Veröffentlichung eingegeben. Das passiert zufällig.
 
-Für die Verwaltung und den Berichte ist es nützlich, von der Umgebung des Privatautors Zugriff auf UGC zu haben. Mit SRP ist der Zugriff auf UGC vom Autor konsistenter und leistungsfähiger, da eine umgekehrte Replizierung von der Veröffentlichung zum Autor nicht erforderlich ist.
+Für die Verwaltung und den Berichte ist es nützlich, von der Umgebung des Privatautors aus Zugriff auf UGC zu haben. Mit SRP ist der Zugriff auf UGC vom Autor konsistenter und leistungsfähiger, da eine umgekehrte Replizierung von der Veröffentlichung zum Autor nicht erforderlich ist.
 
 ## Informationen zu SRP {#about-srp}
 
@@ -68,7 +67,6 @@ Wenn UGC in einer freigegebenen Datenspeicherung gespeichert wird, gibt es eine 
 >Siehe [SRP und UGC Essentials](srp-and-ugc.md) für Beispielcode und weitere Details.
 >
 >Unter [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) finden Sie Best Practices für das Kodieren.
-
 
 ### ASRP {#asrp}
 
@@ -130,7 +128,6 @@ Shadow-Knoten bieten einen adressierbaren Sling-Speicherort im Repository.
 >[!CAUTION]
 >
 >Da der Shadow-Knoten mehrere Verwendungen hat, bedeutet das Vorhandensein eines Shadow-Knotens *nicht* , dass die Komponente ein NER ist.
-
 
 ### Speicherort der Datenspeicherung {#storage-location}
 
