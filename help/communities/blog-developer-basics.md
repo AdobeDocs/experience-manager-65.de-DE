@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
@@ -30,7 +30,6 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Blog
 >[!NOTE]
 >
 >Die zugrunde liegende Infrastruktur der Blog-Funktion ist die Protokoll-Funktion.
-
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -105,7 +104,7 @@ Siehe :
 * [Übersicht über](/help/communities/srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
 * [SRP und UGC Essentials](/help/communities/srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
 * [Zugriff auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [SocialUtils Refactoring](/help/communities/socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
 ## Primär Publisher {#primary-publisher}
 
