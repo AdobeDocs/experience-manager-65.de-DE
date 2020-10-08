@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -42,10 +42,9 @@ Bei der Aktualisierung von AEM 6.0 oder früher muss UGC für alle SRP migriert 
 
 >[!NOTE]
 >
->Bisher wurden Hilfsprogramme für den Zugriff auf UGC im Paket SocialUtils gefunden, das nicht mehr existiert.
+>Historisch gesehen wurden Hilfsprogramme für den Zugriff auf UGC im Paket SocialUtils gefunden, das nicht mehr existiert.
 >
 >Ersatzdienstprogramme finden Sie unter [SocialUtils Refactoring](socialutils.md).
-
 
 ## Dienstprogrammmethode für den Zugriff auf UGC {#utility-method-to-access-ugc}
 
@@ -74,7 +73,6 @@ Richtlinien zum Kodieren finden Sie unter [Zugriff auf UGC mit SRP](accessing-ug
 >
 >Die Rückgabe des Pfads resourceToUGCStoragePath() ist *nicht* für die [ACL-Prüfung](srp.md#for-access-control-acls)geeignet.
 
-
 ## Dienstprogrammmethode für den Zugriff auf ACLs {#utility-method-to-access-acls}
 
 Einige SRP-Implementierungen, wie z. B. ASRP und MSRP, speichern Community-Inhalte in Datenbanken, die keine ACL-Verifizierung bieten. Shadow-Knoten bieten einen Speicherort im lokalen Repository, auf den ACLs angewendet werden können.
@@ -101,7 +99,6 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >[!CAUTION]
 >
 >Der von resourceToACLPath() zurückgegebene Pfad ist *nicht* für den [Zugriff auf das UGC](#utility-method-to-access-acls) selbst geeignet.
-
 
 ## Standorte für kontextbezogene Datenspeicherung {#ugc-related-storage-locations}
 
@@ -136,4 +133,3 @@ Die UGC wird an keinem dieser Orte erstellt und sollte nur mit einer [Dienstprog
 * [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
 * [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Coding-Richtlinien.
 * [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
-
