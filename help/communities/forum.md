@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 38%
@@ -34,7 +34,7 @@ Die Forumsfunktion bietet einen Bereich, in dem angemeldete Besucher (Community-
 
 Dieser Abschnitt der Dokumentation beschreibt:
 
-* Hinzufügen der Forumsfunktion zu einer AEM-Site.
+* Hinzufügen der Forumsfunktion zu einer AEM Site.
 * Configuration settings for the `Forum` component.
 
 ### Hinzufügen eines Forums zu einer Seite {#adding-a-forum-to-a-page}
@@ -152,7 +152,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Zugelassene privilegierte Mitglieder**
 
-   Hinzufügen die privilegierten Mitglieder, die Inhalte erstellen dürfen.
+   hinzufügen die privilegierten Mitglieder, die Inhalte erstellen dürfen.
 
 * **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
 
@@ -173,7 +173,6 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 >[!NOTE]
 >
 >Es kann erforderlich sein, Kommentare zu einem Thema sowohl zu prüfen `AllowThreaded Replies` als auch `Allow users to Delete Comments and Topics` zu aktivieren.
-
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
