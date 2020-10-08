@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # OSGi-Ereignis für Communities-Komponenten  {#osgi-events-for-communities-components}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Wenn Mitglieder mit Communities-Funktionen interagieren, werden OSGi-Ereignis gesendet, die asynchrone Listener auslösen können, z. B. Benachrichtigungen oder Gamification (Scoring und Abzeichen).
 
@@ -98,14 +98,14 @@ Die folgenden Tabellen beschreiben die `verbs` Definition der in der Version ber
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| HINZUFÜGEN | Der Inhalt des Mitglieds wurde bewertet |
+| hinzufügen | Der Inhalt des Mitglieds wurde bewertet |
 | RATING ENTFERNEN | Der Inhalt des Mitglieds wurde herabgesetzt |
 
 [Komponente](essentials-voting.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| HINZUFÜGEN ABSTIMMUNG | Der Inhalt des Mitglieds wurde zur Abstimmung gestellt |
+| hinzufügen ABSTIMMUNG | Der Inhalt des Mitglieds wurde zur Abstimmung gestellt |
 | ABSTIMMUNG ENTFERNEN | Der Inhalt des Mitglieds wurde abgelehnt |
 
 **Moderationsaktivierte Komponenten** SocialEvent `topic`= com/adobe/cq/social/moderation
@@ -128,7 +128,6 @@ Das benutzerdefinierte Ereignis setzt die Methode außer Kraft, `getVerb()` soda
 >[!NOTE]
 >
 >Stellen Sie sicher, dass eine benutzerdefinierte Erweiterung mit einer niedrigeren Rangfolge registriert ist als jede vorhandene Implementierung im Produkt.
-
 
 ### Pseudo-Code für Ereignis einer benutzerdefinierten Komponente {#pseudo-code-for-custom-component-event}
 
