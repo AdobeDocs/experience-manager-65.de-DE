@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
@@ -28,40 +28,40 @@ Die folgenden Anweisungen beschreiben zum Einrichten Ihrer Website die Ordner, d
 
 * `/etc/designs/an-scf-sandbox`
 
-   This is where downloadable design elements reside.
+   Hier befinden sich herunterladbare Designelemente.
 
 * `/content/an-scf-sandbox`
 
    Hier befinden sich die herunterladbaren Webseiten.
 
-The code in this tutorial will rely on the main folder name being the same for the application, design, and content. If you choose some other name for your website, then always replace `an-scf-sandbox` with the name you have chosen.
+Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners für die Anwendung, den Entwurf und den Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` den von Ihnen gewählten Namen.
 
 >[!NOTE]
 >
->About names:
+>Info zu Namen:
 >
->* The names seen in CRXDE are node names which form the path to addressable content.
->* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;.
->* Node names may contain hyphens and underscores, but they must be encoded when referenced as a package name within a Java file. Both hyphens and underscores are escaped with underscore followed by their unicode value:
+>* Die in CRXDE angezeigten Namen sind Knotennamen, die den Pfad zu adressierbaren Inhalten bilden.
+>* Knotennamen können Leerzeichen enthalten, bei Verwendung in einem URI muss das Leerzeichen jedoch entweder als &quot;%20&quot;oder &quot;+&quot;kodiert werden.
+>* Knotennamen können Bindestriche und Unterstriche enthalten, müssen jedoch kodiert werden, wenn sie als Paketname in einer Java-Datei referenziert werden. Sowohl Bindestriche als auch Unterstriche werden mit einem Unterstrich gefolgt von ihrem Unicode-Wert versehen:
 
    >
    >   
    * Bindestrich wird &#39;_002d&#39;
-   >   * underscore becomes &#39;_005f&#39;
+   >   * Unterstrich wird &#39;_005f&#39;
 
 
-## Set up the Application Directory (/apps) {#setup-the-application-directory-apps}
+## Anwendungsverzeichnis einrichten (/apps) {#setup-the-application-directory-apps}
 
-The /apps directory in the repository contains the code with implements the behavior and rendering of the pages served from the /content directory.
+Der Ordner &quot;/apps&quot;im Repository enthält den Code mit implementiert das Verhalten und die Wiedergabe der Seiten, die vom Ordner &quot;/content&quot;bereitgestellt werden.
 
-The /apps directory is protected and not publicly accessible as are the /content and /etc/designs directories.
+Der Ordner &quot;/apps&quot;ist geschützt und nicht öffentlich zugänglich, ebenso wie die Ordner &quot;/content&quot;und &quot;/etc/designs&quot;.
 
 1. Create `/apps/an-scf-sandbox` folder.
 
-   Using **[!UICONTROL CRXDE Lite]**, in the explorer pane
+   Verwenden der **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
 
-   1. Select the `/apps` folder.
-   1. Right-click **[!UICONTROL Create]**... or pull down the **[!UICONTROL Create...]** menu.
+   1. Wählen Sie den `/apps` Ordner aus.
+   1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Erstellen]**... oder ziehen Sie die **[!UICONTROL Create...]** angezeigt.
    1. Wählen Sie Ordner **[!UICONTROL erstellen...]**.
    1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot;ein `an-scf-sandbox`.
    1. Klicken Sie auf **[!UICONTROL OK]**.
@@ -100,7 +100,7 @@ Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets,
 
    Geben Sie Folgendes ein:
 
-   * Title: **[!UICONTROL An SCF Sandbox]**
+   * Titel: **[!UICONTROL Eine SCF-Sandbox]**
    * Name: **[!UICONTROL an-scf-sandbox]**
    * Vorlage **[!UICONTROL der Entwurfsseite auswählen]**
 
@@ -108,16 +108,16 @@ Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets,
 
    ![design-template](assets/design-template.png)
 
-1. Refresh the explorer pane if &quot;An SCF Sandbox&quot; folder does not appear.
+1. Aktualisieren Sie den Explorer-Bereich, wenn der Ordner &quot;An SCF Sandbox&quot;nicht angezeigt wird.
 
-1. Return to CRXDE Lite (http:// localhost:4502/crx/de) and expand /etc/designs to see the node named &quot;an-scf-sandbox&quot;.
+1. Kehren Sie zur CRXDE Lite zurück (http:// localhost:4502/crx/de) und erweitern Sie &quot;/etc/designs&quot;, um den Knoten &quot;an-scf-sandbox&quot; anzuzeigen.
 
-   In the right, lower pane of CRXDE, you can view the Properties tab, Access Control tab and Replication tab to see what was defined using the Design Page Template.
+   Im rechten unteren Bereich von CRXDE können Sie die Registerkarte Eigenschaften, die Registerkarte Zugriffskontrolle und die Registerkarte Replikation Ansicht haben, um zu sehen, was mit der Designseitenvorlage definiert wurde.
 
    ![crxde-configure-template](assets/crxde-configure-template.png)
 
-## Set up the Content Directory (/content) {#setup-the-content-directory-content}
+## Content Directory (/content) einrichten {#setup-the-content-directory-content}
 
-The /content directory in the respository is where the website content resides. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
+Der Ordner &quot;/content&quot;im entsprechenden Ordner befindet sich dort, wo sich der Inhalt der Website befindet. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
 
-*After* the [page template](initial-app.md#createthepagetemplate) is created as part of the initial application, the initial page content can be created based on the template.... [**⇒**](initial-app.md)
+*Nachdem* die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt wurde, kann der anfängliche Seiteninhalt basierend auf der Vorlage erstellt werden.... [**δ**](initial-app.md)
