@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -108,7 +108,6 @@ Die benutzerdefinierten Stile überschreiben jetzt die standardmäßigen Rahmens
 >Jeder CSS-Klassenname, dem ein Präfix vorangestellt wird, `scf-js` hat eine bestimmte Verwendung im JavaScript-Code. Diese Klassen wirken sich auf den Status einer Komponente aus (z. B. Umschalten von ausgeblendet zu sichtbar) und sollten weder überschrieben noch entfernt werden.
 >
 >Obwohl die `scf-js` Klassen keine Auswirkungen auf Stile haben, können die Klassennamen in Stylesheets mit dem Vorbehalt verwendet werden, dass, da sie die Status von Elementen steuern, es möglicherweise Nebenwirkungen geben kann.
-
 
 ## JavaScript erweitern {#extending-javascript}
 
