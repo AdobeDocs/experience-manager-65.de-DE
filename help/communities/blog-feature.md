@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 47%
@@ -48,7 +48,6 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 >Die Komponenten `Journal` und `Journal Sidebar` sind benannt `Blog` und `Blog Sidebar`.
 >
 >Die Blogfunktion in AEM 6.0 und älteren Versionen wurde eingestellt. Sie beruhte auf einer Vorlage und beschränkte das Verfassen von Inhalten ausschließlich auf die Autorenumgebung.
-
 
 ## Hinzufügen von Blog-Komponenten zu einer Seite {#adding-blog-components-to-a-page}
 
@@ -112,8 +111,8 @@ Geben Sie auf der Registerkarte **Einstellungen** die grundlegenden Eigenschafte
 >[!NOTE]
 >
 >Mit dem Protokoll-Titel wird automatisch eine URL für den Blog erstellt.
->Maximal 50 Zeichen (mit 5 zusätzlichen Zeichen zur Eindeutigkeit) werden aus dem hier angegebenen Protokoll-Titel verwendet, um eine URL für den Blog zu erstellen.
-
+>
+>Maximal 50 Zeichen (zusätzlich 5 Zeichen für die Eindeutigkeit) werden aus dem hier angegebenen Protokoll-Titel verwendet, um eine URL für den Blog zu erstellen.
 
 * **Journalbeschreibung**
 
