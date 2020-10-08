@@ -1,8 +1,8 @@
 ---
 title: Communities-Komponenten
 seo-title: Communities-Komponenten
-description: Hinzufügen von Community-Funktionen zu einer AEM-Site
-seo-description: Hinzufügen von Community-Funktionen zu einer AEM-Site
+description: Hinzufügen von Community-Funktionen zu AEM Website
+seo-description: Hinzufügen von Community-Funktionen zu AEM Website
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 67%
@@ -23,7 +23,7 @@ ht-degree: 67%
 
 ## Einführung {#introduction}
 
-Wird eine Lizenz für AEM Communities erworben, lassen sich nicht nur Community-Sites erstellen. Es können auch allen AEM-Sites, die die Standard-Authoring-Werkzeuge von AEM verwenden, Communities-Funktionen hinzugefügt werden.
+Wird eine Lizenz für AEM Communities erworben, lassen sich nicht nur Community-Sites erstellen. Es können auch allen AEM Sites, die die Standard-Authoring-Werkzeuge von AEM verwenden, Communities-Funktionen hinzugefügt werden.
 
 Weitere Informationen zum Erstellen eines Community-Site-Besuchs finden Sie unter:
 
@@ -34,7 +34,6 @@ Weitere Informationen zum Erstellen eines Community-Site-Besuchs finden Sie unte
 >[!NOTE]
 >
 >If not familiar with the authoring environment, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
-
 
 ## Verfügbare Communities-Komponenten {#available-communities-components}
 
@@ -82,7 +81,6 @@ See also the interactive [Community Components guide](/help/communities/componen
 >[!NOTE]
 >
 >Die Umfragekomponente ist nicht mehr verfügbar und wird in Experience Manager Communities unterstützt.
-
 
 ## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
 
