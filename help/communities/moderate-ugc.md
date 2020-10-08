@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # Moderieren von Community-Inhalten {#moderating-community-content}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Community-Inhalte, auch als benutzergenerierte Inhalte (UGC) bezeichnet, werden erstellt, wenn ein Mitglied (der in Site-Besucher angemeldet ist) Inhalte von einer veröffentlichten Community-Site durch Interaktion mit einer der folgenden Community-Komponenten veröffentlicht:
 
@@ -175,7 +175,7 @@ Ein Moderator kann verhindern, dass UGC auf der veröffentlichten Site sichtbar 
 
 Die Aktion &quot;Schließen&quot;wirkt sich auf den gesamten Diskussionstraum aus (ein Forenthema oder der erste Kommentar) und enthält alle nachfolgenden Beiträge oder Antworten.
 
-Wenn geschlossen, sind nicht nur keine weiteren Antworten möglich, es sind auch keine Moderationsaktionen zulässig.
+Wenn geschlossen, sind nicht nur keine weiteren Antworten möglich, auch keine Moderationsaktionen sind zulässig.
 
 Um Vorgänge auszuführen, muss das Thema oder der Kommentar erneut geöffnet werden.
 
@@ -221,8 +221,8 @@ Gehen Sie wie folgt vor, um die Spam-Erkennungs-Engine zu aktivieren:
 
 1. Öffnen Sie [Web Console](https://localhost:4502/system/console/configMgr), indem Sie zu `/system/console/configMgr`.
 
-1. Suchen Sie die Konfiguration für die automatische Moderation **von** AEM Communities und bearbeiten Sie sie.
-1. Hinzufügen den Eintrag **[!UICONTROL SpamProcess]** .
+1. Suchen Sie die Konfiguration für die automatische Moderation **in** AEM Communities und bearbeiten Sie sie.
+1. hinzufügen den Eintrag **[!UICONTROL SpamProcess]** .
 
 ![spamprocess](assets/spamprocess.png)
 
@@ -230,12 +230,11 @@ Gehen Sie wie folgt vor, um die Spam-Erkennungs-Engine zu aktivieren:
 >
 >Die Spam-Erkennung ist nur für das englische Gebietsschema implementiert.
 
-
 ### Empfindung {#sentiment}
 
 Das Sentiment wird basierend auf der Anzahl positiver und negativer Suchbegriffe ([Watchwords](#configuringwatchwords)) in einem Beitrag (UGC) berechnet.
 
-Die Sentiment-Analyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment der UGC. Die Standardregeln befinden sich unter: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+Die Sentiment-Analyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment des UGC. Die Standardregeln befinden sich unter: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 Der Wert, den die Regeln erzeugen, liegt zwischen 1 (alle negativen, keine positiven Wörter) und 10 (alle positiven, keine negativen Wörter). Der Sentimentwert 5 ist ein neutrales Sentiment und der Standardwert.
 
