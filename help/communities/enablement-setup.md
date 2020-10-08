@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 3%
@@ -47,7 +47,6 @@ AEM Communities:
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
-
 
 ## Neueste Communities-Version installieren {#install-latest-communities-release}
 
@@ -123,7 +122,6 @@ Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die 
 >
 >Stattdessen werden sie später der Mitgliedergruppe [zugewiesen](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
 
-
 ### Riley Taylor - Kursteilnehmer {#riley-taylor-enrollee}
 
 [Erstellen Sie ein Mitglied](members.md#create-new-member) , das zu einer Gruppe von Lernenden hinzugefügt wird - der Community Ski Class Gruppe.
@@ -178,7 +176,6 @@ Ein vierter Benutzer wird in der Umgebung &quot;Autor&quot;erstellt und hat die 
 >[!NOTE]
 >
 >Während der Erstellung der Community-Site können bestehende Mitglieder und Gruppen zur Mitgliedergruppe der Community-Site hinzugefügt werden.
-
 
 ## Community-Administratorrolle {#community-administrator-role}
 
