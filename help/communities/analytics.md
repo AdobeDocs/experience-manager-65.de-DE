@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 03e3bb3a6843ef19b63a4ed915d9821dd706c3d4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 5%
@@ -27,7 +27,7 @@ Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen von Adob
 
 Adobe Analytics kann für AEM Communities konfiguriert werden, sodass Ereignis, die von einem Mitglied mit unterstützten Communities-Funktionen interagieren, an Adobe Analytics gesendet werden, von dem aus Berichte generiert werden.
 
-Wenn beispielsweise ein Mitglied einer Community-Site zur Aktivierung eine Videoressource Ansicht, die ihm zugewiesen wurde, sendet der Ressourcenplayer Ereignis, einschließlich Video Heartbeat-Daten. Auf der Community-Site können Administratoren verschiedene Berichte zur Wiedergabe des Videos sehen.
+Wenn beispielsweise ein Mitglied einer Community-Site für die Aktivierung eine Videoressource Ansicht, die ihm zugewiesen wurde, sendet der Ressourcenplayer Ereignis einschließlich Video Heartbeat-Daten an Analytics. Auf der Community-Site können Administratoren verschiedene Berichte zur Wiedergabe des Videos sehen.
 
 Darüber hinaus sind Analysen erforderlich für:
 
@@ -197,7 +197,7 @@ For example, enter *communities*
 
 ### Dialogfeld &quot;Analytics-Einstellungen&quot; {#analytics-settings-dialog}
 
-Bei der ersten Erstellung einer neuen Analytics-Konfiguration wird die Konfiguration angezeigt und es wird ein neues Dialogfeld für die Eingabe der Analytics-Einstellungen angezeigt. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer eingeholt werden.
+Bei der ersten Erstellung einer neuen Analytics-Konfiguration wird die Konfiguration angezeigt und es wird ein neues Dialogfeld für die Eingabe der Analytics-Einstellungen angezeigt. Dieser Dialog erfordert die [erforderlichen Kontoinformationen](#prerequisites) , die vom Kundenbetreuer erhalten wurden.
 
 ![analytics-settings](assets/analytics-settings.png)
 
@@ -383,7 +383,6 @@ Wenn neue benutzerdefinierte Komponenten erstellt werden, die für Analytics ins
 >[!NOTE]
 >
 >Die Protokoll-Komponenten werden zur Implementierung der Blog-Funktion verwendet.
-
 
 ### Analytics AEM Variablen zugeordnet {#mapped-analytics-to-aem-variables}
 
