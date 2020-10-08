@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 72%
 
 ---
 
@@ -123,9 +126,9 @@ Weitere Informationen zu JGroups und Workspace finden Sie unter [JGroups and AEM
 
 **server_debugLevel:** Ändern Sie diese Einstellung nicht.
 
-**client_pollingInterval:** Legt das Abfrageintervall (in Sekunden) fest, das in Flex Workspace (nicht mehr unterstützt für AEM Forms on JEE) verwendet wird, um neue und geänderte Aufgaben zu erkennen. Der Standardwert ist 3 Sekunden. Dies ist für AEM Forms Workspace nicht möglich.
+**client_pollingInterval:** Legt das Abfrageintervall (in Sekunden) fest, das in Flex Workspace (für AEM Forms on JEE nicht mehr unterstützt) verwendet wird, um neue und geänderte Aufgaben zu erkennen. Der Standardwert ist 3 Sekunden. Dies ist für AEM Forms Workspace nicht möglich.
 
-**client_systemContext_name:** Geben Sie einen benutzerdefinierten Namen (z. B. Bürger) an, der im Feld &quot;Hinzugefügt von&quot;(auf der Registerkarte &quot;Anlagen&quot;) für die Anlagen einer Aufgabe in AEM Forms Workspace angezeigt werden soll.
+**client_systemContext_name:** Geben Sie einen benutzerdefinierten Namen (z. B. &quot;Bürger&quot;) an, der im Feld &quot;Hinzugefügt von&quot;(auf der Registerkarte &quot;Anlagen&quot;) für die Anlagen einer Aufgabe in AEM Forms Workspace angezeigt werden soll.
 
 Definieren des benutzerdefinierten Namens:
 
@@ -133,4 +136,6 @@ Definieren des benutzerdefinierten Namens:
 
 >[!NOTE]
 >
->In der Demoanwendung lautet der standardmäßige Anzeigename **Bürger**. In einer von Ihnen erstellten benutzerdefinierte Anwendung lautet der standardmäßige Anzeigename **Systemkontextkonto**.***client_idleTimeout:** Wenn ein Benutzer eine bestimmte Zeit lang inaktiv bleibt, läuft die AEM Forms Workspace-Sitzung ab. Um die Funktion zu aktivieren, fügen Sie unter &quot;Globale Einstellungen&quot;einen Eintrag zu &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout> hinzu. Sie können den Wert 0 angeben, um die Zeitüberschreitung im Leerlauf zu deaktivieren. Die Zeitdauer wird in Sekunden angegeben.
+>In der Demoanwendung lautet der standardmäßige Anzeigename **Bürger**. In einer von Ihnen erstellten benutzerdefinierte Anwendung lautet der standardmäßige Anzeigename **Systemkontextkonto**.
+>
+>**client_idleTimeout:** Wenn ein Benutzer eine bestimmte Zeit lang inaktiv bleibt, läuft die AEM Forms Workspace-Sitzung ab. Um die Funktion zu aktivieren, fügen Sie unter &quot;Globale Einstellungen&quot;einen Eintrag zu &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout> hinzu. Sie können den Wert 0 angeben, um die Zeitüberschreitung im Leerlauf zu deaktivieren. Die Zeitdauer wird in Sekunden angegeben.
