@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 10%
@@ -36,7 +36,6 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 > 
 >Es wird dringend empfohlen, über die [neuesten Versionen](deploy-communities.md#latest-releases)auf dem Laufenden zu bleiben.
 
-
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
 * [Community Content Datenspeicherung](working-with-srp.md): beschreibt die verfügbaren SRP-Optionen für einen UGC-gemeinsamen Store
@@ -54,7 +53,7 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ## Komponenten, Funktionen und Funktionen {#component-function-and-feature-essentials}
 
-AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine für [Community-Sites](sites-console.md)dar.
+Die Komponenten, Funktionen und Features von AEM Communities stellen die Bausteine für [Community-Sites](sites-console.md)dar.
 
 * [Komponenten, Funktionen und Funktionen](essentials.md)
 * [Clientlibs für Communities-Komponenten](clientlibs.md)
