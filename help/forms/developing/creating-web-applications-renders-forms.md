@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Webanwendungen, die Formulare wiedergeben
-seo-title: Erstellen von Webanwendungen, die Formulare wiedergeben
+title: Erstellen von Webanwendungen, die Forms rendern
+seo-title: Erstellen von Webanwendungen, die Forms rendern
 description: 'null'
 seo-description: 'null'
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 1%
@@ -19,9 +19,9 @@ ht-degree: 1%
 ---
 
 
-# Erstellen von Webanwendungen, die Formulare wiedergeben {#creating-web-applications-thatrenders-forms}
+# Erstellen von Webanwendungen zum Rendern von Forms {#creating-web-applications-thatrenders-forms}
 
-## Erstellen von Webanwendungen, die Formulare wiedergeben {#creating-web-applications-that-renders-forms}
+## Erstellen von Webanwendungen zum Rendern von Forms {#creating-web-applications-that-renders-forms}
 
 Sie können eine webbasierte Anwendung erstellen, die Java-Servlets verwendet, um den Forms-Dienst aufzurufen und Formulare wiederzugeben. Ein Vorteil der Verwendung eines Java™-Servlets besteht darin, dass Sie den Rückgabewert des Prozesses in einen Client-Webbrowser schreiben können. Das heißt, ein Java-Servlet kann als Link zwischen dem Forms-Dienst, der ein Formular zurückgibt, und einem Client-Webbrowser verwendet werden.
 
@@ -51,15 +51,15 @@ Wenn der Benutzer kanadische Daten auswählt, enthält das zurückgesendete Form
 
 In diesem Abschnitt werden Beispieldateien verwendet, die sich am folgenden Speicherort befinden können:
 
-&lt;Installationsordner *für* Forms Designer>/Samples/Forms/Purchase Order/Form Fragments
+&lt;*Forms Designer-Installationsordner*>/Samples/Forms/Purchase Order/Form Fragments
 
-wobei &lt;*Installationsordner*> der Installationspfad ist. Für die Zwecke der Clientanwendung wurde die Datei &quot;Purchase Order Dynamic.xdp&quot;von diesem Installationsort kopiert und in eine Forms-Anwendung mit dem Namen *Applications/FormsApplication* bereitgestellt. Die Datei &quot;Purchase Order Dynamic.xdp&quot;wird in einem Ordner mit dem Namen FormsFolder abgelegt. Ebenso werden die Fragmente in dem Ordner Fragments abgelegt, wie in der folgenden Abbildung dargestellt.
+wobei &lt;*Installationsordner*> der Installationspfad ist. Für die Clientanwendung wurde die Datei &quot;Purchase Order Dynamic.xdp&quot;von diesem Installationsort kopiert und in eine Forms-Anwendung mit dem Namen *Applications/FormsApplication* bereitgestellt. Die Datei &quot;Purchase Order Dynamic.xdp&quot;wird in einem Ordner mit dem Namen FormsFolder abgelegt. Ebenso werden die Fragmente in dem Ordner Fragments abgelegt, wie in der folgenden Abbildung dargestellt.
 
 ![cw_cw_fragments_repository](assets/cw_cw_fragmentsrepository.png)
 
 Um auf den Formularentwurf &quot;Purchase Order Dynamic.xdp&quot;zuzugreifen, geben Sie `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` als Formularname (der erste Parameter, der an die `renderPDFForm` Methode übergeben wird) und `repository:///` als Inhaltsstamm-URI-Wert an.
 
-Die von der Webanwendung verwendeten XML-Datendateien wurden aus dem Ordner &quot;Data&quot;in `C:\Adobe`(das Dateisystem, das zu den Hosting-AEM Forms des J2EE-Anwendungsservers gehört) verschoben. Die Dateinamen sind &quot;Purchase Order *Canada.xml* &quot;und &quot;Purchase Order *US.xml&quot;*.
+Die von der Webanwendung verwendeten XML-Datendateien wurden aus dem Ordner &quot;Data&quot;in `C:\Adobe`(das Dateisystem, das zum J2EE-Anwendungsserver gehört, auf dem AEM Forms gehostet wird) verschoben. Die Dateinamen sind &quot;Purchase Order *Canada.xml* &quot;und &quot;Purchase Order *US.xml&quot;*.
 
 >[!NOTE]
 >
@@ -78,11 +78,11 @@ So erstellen Sie webbasierte Anwendungen, die Formulare basierend auf Fragmenten
 
 >[!NOTE]
 >
->Einige dieser Schritte hängen von der J2EE-Anwendung ab, auf der AEM Forms bereitgestellt werden. Die Methode zum Bereitstellen einer WAR-Datei hängt beispielsweise vom J2EE-Anwendungsserver ab, den Sie verwenden. In diesem Abschnitt wird davon ausgegangen, dass AEM Forms unter JBoss® bereitgestellt werden.
+>Einige dieser Schritte hängen von der J2EE-Anwendung ab, auf der AEM Forms bereitgestellt wird. Die Methode zum Bereitstellen einer WAR-Datei hängt beispielsweise vom J2EE-Anwendungsserver ab, den Sie verwenden. In diesem Abschnitt wird davon ausgegangen, dass AEM Forms unter JBoss® bereitgestellt wird.
 
 ### Creating a web project {#creating-a-web-project}
 
-Der erste Schritt zum Erstellen einer Webanwendung mit einem Java-Servlet, das den Forms-Dienst aufrufen kann, besteht darin, ein neues Webprojekt zu erstellen. Die Java-IDE, auf der dieses Dokument basiert, ist Eclipse 3.3. Erstellen Sie mit der Eclipse-IDE ein Webprojekt und fügen Sie dem Projekt die erforderlichen JAR-Dateien hinzu. Fügen Sie Ihrem Projekt schließlich eine HTML-Seite mit dem Namen *index.html* und ein Java-Servlet hinzu.
+Der erste Schritt zum Erstellen einer Webanwendung mit einem Java-Servlet, das den Forms-Dienst aufrufen kann, ist das Erstellen eines neuen Webprojekts. Die Java-IDE, auf der dieses Dokument basiert, ist Eclipse 3.3. Erstellen Sie mit der Eclipse-IDE ein Webprojekt und fügen Sie dem Projekt die erforderlichen JAR-Dateien hinzu. Fügen Sie Ihrem Projekt schließlich eine HTML-Seite mit dem Namen *index.html* und ein Java-Servlet hinzu.
 
 Die folgende Liste gibt die JAR-Dateien an, die Sie Ihrem Webprojekt hinzufügen müssen:
 
@@ -119,7 +119,7 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 >[!NOTE]
 >
->Informationen zum Erstellen der HTML-Seite, die das `RenderFormFragment` Java-Servlet aufruft, finden Sie unter[Erstellen der Webseite](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>Informationen zum Erstellen der HTML-Seite, die das `RenderFormFragment` Java-Servlet aufruft, finden Sie unter [Erstellen der Webseite](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### Java-Anwendungslogik für das Servlet erstellen {#creating-java-application-logic-for-the-servlet}
 
@@ -379,11 +379,11 @@ Um das Java-Servlet bereitzustellen, das den Forms-Dienst aufruft, verpacken Sie
 
 1. Klicken Sie im Fenster **Project Explorer** mit der rechten Maustaste auf das `FragmentsWebApplication` Projekt und wählen Sie **Exportieren** > **WAR-Datei**.
 1. Geben Sie in das Textfeld **Webmodul** den Namen `FragmentsWebApplication` des Java-Projekts ein.
-1. Geben Sie in das Textfeld **Ziel** den Dateinamen `FragmentsWebApplication.war`****ein, geben Sie den Speicherort für die WAR-Datei an und klicken Sie dann auf Fertig stellen.
+1. Geben Sie in das Textfeld **Ziel** den Dateinamen `FragmentsWebApplication.war`**** ein, geben Sie den Speicherort für die WAR-Datei an und klicken Sie dann auf Fertig stellen.
 
 ### Bereitstellen der WAR-Datei auf dem J2EE-Anwendungsserver {#deploying-the-war-file-to-the-j2ee-application-server}
 
-Sie können die WAR-Datei auf dem J2EE-Anwendungsserver bereitstellen, auf dem die AEM Forms bereitgestellt werden. Nach der Bereitstellung der WAR-Datei können Sie über einen Webbrowser auf die HTML-Webseite zugreifen.
+Sie können die WAR-Datei auf dem J2EE-Anwendungsserver bereitstellen, auf dem AEM Forms bereitgestellt wird. Nach der Bereitstellung der WAR-Datei können Sie über einen Webbrowser auf die HTML-Webseite zugreifen.
 
 **So stellen Sie die WAR-Datei auf dem J2EE-Anwendungsserver bereit:**
 
