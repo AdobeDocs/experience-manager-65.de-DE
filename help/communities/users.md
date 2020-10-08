@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Managing Users and User Groups {#managing-users-and-user-groups}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 In AEM Communities können sich Benutzer in der Umgebung zum Veröffentlichen selbst registrieren und ihre Profil bearbeiten. Mit den entsprechenden Berechtigungen können sie auch:
 
@@ -38,7 +38,7 @@ Berechtigungen werden erteilt, indem Mitglieder einer [Mitglieds-(Benutzer-)Grup
 
 Standardmäßig sollten in der Umgebung &quot;Veröffentlichen&quot;erstellte Mitglieder und Mitgliedsgruppen nicht in der Umgebung &quot;Autor&quot;angezeigt werden. Benutzer und Benutzergruppen, die in der Autor-Umgebung erstellt wurden, sollen in ähnlicher Weise in der Autorendatei verbleiben.
 
-Wenn Benutzer, die Autor und Mitglieder im Veröffentlichungsmodus sind, aus derselben Liste von Benutzern stammen, z. B. aus demselben LDAP-Ordner synchronisiert, werden sie nicht als derselbe Benutzer mit denselben Berechtigungen und derselben Gruppenmitgliedschaft in der Autor- und Veröffentlichungs-Umgebung betrachtet. Die Rolle(en) der Mitglieder und Benutzer muss (müssen) bei der Veröffentlichung und gegebenenfalls beim Autor gesondert festgelegt werden.
+Wenn Benutzer, die Autor und Mitglieder im Veröffentlichungsmodus sind, aus derselben Liste von Benutzern stammen, z. B. aus demselben LDAP-Ordner, werden sie nicht als derselbe Benutzer mit denselben Berechtigungen und derselben Gruppenmitgliedschaft in der Autor- und Veröffentlichungs-Umgebung betrachtet. Die Rolle(en) der Mitglieder und Benutzer muss (müssen) bei der Veröffentlichung und gegebenenfalls beim Autor gesondert festgelegt werden.
 
 For a [publish farm](topologies.md), registration and modifications made on one publish instance need to be synchronized with other publish instances in order for them to have access to the same user data. Weitere Informationen finden Sie unter [Benutzersynchronisierung](sync.md), in dem ein Abschnitt beschrieben wird, [was passiert, wenn...](sync.md#what-happens-when).
 
@@ -89,7 +89,7 @@ Mitglieder der Administratorgruppe sind Systemadministratoren, die sowohl für A
 
 Zu Demonstrations- und Entwicklungszwecken verfügt die Administratorgruppe über ein Mitglied, dessen Benutzer *admin* und Kennwort *admin* lautet.
 
-Bei Produktions-Umgebung sollte die standardmäßige Administratorgruppe geändert werden.
+Bei Produktions-Umgebung sollte die Standardadministratorgruppe geändert werden.
 
 Befolgen Sie die [Sicherheitscheckliste](../../help/sites-administering/security-checklist.md).
 
@@ -111,19 +111,18 @@ In der Umgebung &quot;Veröffentlichen&quot;kann je nach [Einstellungen](sites-c
 >
 >Wenn sich ein Site-Besucher als Mitglied einer offenen Community-Site registriert, werden sie automatisch Mitglied anderer offener Community-Sites auf derselben Umgebung zur Veröffentlichung.
 
-
 ### Rollen veröffentlichen {#publish-group-roles}
 
 | Wenn Mitglied der Gruppe... | Primär |
 |---|---|
 | Community &lt;*Site-Name*>-Mitglieder | Ein Community-Site-Mitglied ist ein registrierter Benutzer. Sie können sich anmelden, ihr Profil ändern, einer offenen Community-Gruppe beitreten, Inhalte in die Community posten, Nachrichten an andere Mitglieder senden und Site-Aktivitäten folgen. |
 | Community &lt;*Site-Name*>-Moderatoren | Ein Community-Site-Moderator ist ein vertrauenswürdiges Community-Mitglied, das in der Lage ist, UGC entweder stapelweise über die Moderationskonsole oder im Kontext auf der Seite zu moderieren, auf der der Inhalt gepostet wird. |
-| Community &lt;*Site-Name*> &lt;*Gruppenname*>-Member | Ein Community-Gruppenmitglied ist ein Community-Mitglied, das entweder einer offenen Community-Gruppe beigetreten ist oder zu einer geschlossenen Community-Gruppe eingeladen wurde. Sie haben die Fähigkeiten eines Mitglieds für diese Community-Gruppe innerhalb der Site. |
+| Community &lt;*Site-Name*> &lt;*Gruppenname*>-Mitglieder | Ein Community-Gruppenmitglied ist ein Community-Mitglied, das entweder einer offenen Community-Gruppe beigetreten ist oder zu einer geschlossenen Community-Gruppe eingeladen wurde. Sie haben die Fähigkeiten eines Mitglieds für diese Community-Gruppe innerhalb der Site. |
 | Community &lt;*Site-Name*>-Gruppenadministratoren | Ein Community-Site-Gruppenadministrator ist ein vertrauenswürdiges Community-Mitglied, das mit der Erstellung und Verwaltung von Untergruppen (Gruppen) innerhalb einer Community-Site betraut ist. Einbezogen ist die Fähigkeit, kontextbezogene Moderation bereitzustellen. |
 | *Sicherheitsgruppe für berechtigte Mitglieder* | Eine manuell erstellte und gepflegte Benutzergruppe zur Einschränkung der Inhaltserstellung. Siehe Gruppe [berechtigter Mitglieder](#privileged-members-group). |
 | Keine | Ein anonymer Site-Besucher, der die Site entdeckt, kann Ansichten erstellen und Community-Sites suchen, die anonymen Zugriff zulassen. Um Inhalte zu nutzen und zu posten, muss sich der Benutzer selbst registrieren (falls erlaubt) und Mitglied der Community werden. |
 
-### Zuweisen von Mitgliedern zu Veröffentlichungsgruppenrollen {#assigning-members-to-publish-group-roles}
+### Zuweisen von Mitgliedern zu Rollen in Veröffentlichungsgruppen {#assigning-members-to-publish-group-roles}
 
 Bei der [Erstellung einer Community-Site](sites-console.md) in der Authoring-Umgebung oder beim [Ändern der Site-Eigenschaften können den Mitgliedern verschiedene Rollen zugewiesen werden,](sites-console.md#modifying-site-properties) die in der Umgebung zur Veröffentlichung ausgeführt werden, z. B. Moderatoren, Gruppenadministratoren, Ressourcenkontakte oder privilegierte Mitglieder.
 
@@ -151,7 +150,6 @@ Wenn keine Community-Funktion gesichert ist (keine privilegierte Mitgliedergrupp
 >[!NOTE]
 >
 >Wenn ein Benutzer einer Gruppe von privilegierten Mitgliedern für eine Community-Site hinzugefügt wird, werden ihm nur dann Berechtigungen erteilt, wenn er auch Mitglied derselben Community-Site ist.
-
 
 ## Community-Mitglieder erstellen {#creating-community-members}
 
