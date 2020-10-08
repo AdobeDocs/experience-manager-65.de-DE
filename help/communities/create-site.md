@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 3%
@@ -96,7 +96,6 @@ Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communitie
 >[!NOTE]
 >
 >Für eine Produktions-Umgebung ist es erforderlich, benutzerdefinierte Facebook- und Twitter-Anwendungen zu erstellen. Siehe [Social-Anmeldung bei Facebook und Twitter](/help/communities/social-login.md).
-
 
 ![Community-Site-Einstellungen](assets/site-settings.png)
 
@@ -228,9 +227,6 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 >1. Wählen Sie **[!UICONTROL OK]** aus.
 >1. (Optional) Wählen Sie **[!UICONTROL Löschen]** oder Wiederholen **[!UICONTROL erzwingen]** , um die Replikationswarteschlange zurückzusetzen.
 
->
-
-
 
 ### Wählen Sie Veröffentlichen {#select-publish}
 
@@ -316,8 +312,7 @@ Erste Schritte:
 
 >[!NOTE]
 >
->Zur Deaktivierung setzen Sie dem `sling:match` Eigenschaftswert einfach das Präfix &quot;x&quot;- `xlocalhost.4503/$` - und das Präfix **&quot;Alle** speichern&quot;.
-
+>Zur Deaktivierung setzen Sie dem `sling:match` Eigenschaftswert einfach das Präfix &quot;x&quot;- `xlocalhost.4503/$` - und das Präfix &quot; **Alle** speichern&quot;.
 
 ![optionale Schritte](assets/optional-steps.png)
 
@@ -342,5 +337,3 @@ Denken Sie nach jeder Änderung daran, die Site zu **speichern** und erneut zu *
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
-
-
