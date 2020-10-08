@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 6%
@@ -92,8 +92,8 @@ Siehe auch:
 >[!NOTE]
 >
 >**Beispiele für Eigenschaftsnamen**
+>
 >Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollten an die vorhandene Konfigurationsdatei dispatcher.any angepasst werden.
-
 
 Die folgenden Einträge sollten am Ende des Abschnitts &quot;/filter&quot;hinzugefügt werden, besonders nach allen Einträgen, die verweigert werden.
 
