@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 31%
@@ -34,7 +34,6 @@ Das Dokument beschreibt:
 >
 >Das anonyme Posten von Kommentaren wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglieder werden) und anmelden, um Kommentare verfassen zu können.
 
-
 ### Hinzufügen von Kommentaren zu einer Seite {#adding-comments-to-a-page}
 
 To add a `Comments` component to a page in author mode, use the component browser to locate
@@ -52,7 +51,6 @@ When the [required client-side libraries](/help/communities/essentials-comments.
 >[!NOTE]
 >
 >Only one `Comments` component may exist on a page. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, z. B. ein Blog, ein Kalender, ein Forum, eine QnA-Datei und Rezensionen.
-
 
 ### Konfigurieren von Kommentaren {#configuring-comments}
 
