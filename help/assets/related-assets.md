@@ -3,9 +3,9 @@ title: Zugehörige Assets
 description: Erfahren Sie, wie digitale Assets, die einige allgemeine Attribute gemeinsam haben, miteinander verknüpft werden. Erstellen Sie auch Quell-abgeleitete Beziehungen zwischen digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '632'
 ht-degree: 47%
 
 ---
@@ -44,8 +44,6 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
    * Um eine abgeleitete Datei zuzuordnen, wählen Sie **[!UICONTROL Abgeleitet]** aus der Liste aus.
    * Um eine Zweiwege-Beziehung zwischen den Assets zu erstellen, wählen Sie **[!UICONTROL Andere]** aus der Liste aus.
 
-   ![chlimage_1-276](assets/chlimage_1-276.png)
-
 1. Navigieren Sie im Bildschirm **[!UICONTROL Assets auswählen]** zum Speicherort des Elements, das Sie zuordnen möchten, und wählen Sie es aus.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -55,9 +53,7 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfung aufheben]** .
-
-   ![nicht verknüpfte Vermögenswerte](assets/do-not-localize/link-unrelate-icon.png)
+1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfung]** von Assets ![aufheben](assets/do-not-localize/link-unrelate-icon.png) .
 
 1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
@@ -81,8 +77,6 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. From the [!UICONTROL Projects] page, open the translation folder.
 
-   ![chlimage_1-283](assets/chlimage_1-283.png)
-
 1. Klicken Sie auf die Projektkachel, um die Detailseite zu öffnen.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
@@ -97,8 +91,4 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. Klicken Sie auf das Quellelement, um zu überprüfen, ob die mit der Quelle verknüpften Assets übersetzt wurden.
 
-   ![chlimage_1-287](assets/chlimage_1-287.png)
-
 1. Select the asset that is related to the source, and then click **[!UICONTROL Reveal in Assets]**. Das übersetzte zugehörige Asset wird angezeigt.
-
-   ![chlimage_1-288](assets/chlimage_1-288.png)
