@@ -3,9 +3,9 @@ title: Erstellen von Übersetzungsprojekten
 description: Learn how to create translation projects in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1885'
 ht-degree: 68%
 
 ---
@@ -47,8 +47,6 @@ Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielor
 1. Click **[!UICONTROL Create &amp; Translate]** at the bottom.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache, für die Sie eine Ordnerstruktur erstellen möchten.
-
-   ![Sprache der Zielgruppe auswählen](assets/target-language.png)
 
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Nur Struktur erstellen]**.
 
@@ -113,7 +111,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 1. Navigate to the [!DNL Assets] UI, and open the Properties page for each of the translated assets to view the translated metadata.
 
-   ![Ansicht der übersetzten Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;](assets/translated-metadata-asset-properties.png)
+   ![ansicht der übersetzten Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;](assets/translated-metadata-asset-properties.png)
 
    *Abbildung: Metadaten werden auf der Seite mit den Asset-Eigenschaften übersetzt.*
 
@@ -132,8 +130,6 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
 
-   ![Sprache der Zielgruppe auswählen](assets/target-language.png)
-
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]**, um den Übersetzungs-Workflow für den Ordner auszuführen.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -143,8 +139,6 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
    >Wenn Sie die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]** wählen, wird Ihr Übersetzungsprojekt zu einem vorhandenen Projekt hinzugefügt, sofern Ihre Projekteinstellungen genau den Einstellungen des bereits vorhandenen Projekts entsprechen. Anderenfalls wird ein neues Projekt erstellt.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Vorhandenes Übersetzungsprojekt]** ein Projekt, dem das zu übersetzende Asset hinzugefügt werden soll.
-
-   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Die zu übersetzenden Assets werden dem Zielordner hinzugefügt. Der aktualisierte Ordner wird unter **[!UICONTROL Sprachkopien]** aufgeführt.
 
@@ -174,8 +168,6 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    Eine Meldung informiert Sie darüber, dass mit der Ausführung des Übersetzungsauftrags begonnen wird.
-
-   ![chlimage_1-82](assets/chlimage_1-82.png)
 
 1. Um den Status des Übersetzungsauftrags anzuzeigen, klicken Sie unten auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf das Auslassungszeichen.
 
@@ -210,8 +202,6 @@ Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von
 
 1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
 1. Klicken Sie auf **[!UICONTROL Starten]**.
 1. Navigieren Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
 
@@ -230,8 +220,6 @@ Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    Eine Meldung informiert Sie darüber, dass mit der Ausführung des Übersetzungsauftrags begonnen wird.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. Um den Status des Übersetzungsauftrags anzuzeigen, klicken Sie unten auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf das Auslassungszeichen.
 
@@ -261,8 +249,6 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Wählen Sie aus der Liste **[!UICONTROL Vorhandenes Übersetzungsprojekt]** ein Projekt, dem das zu übersetzende Asset hinzugefügt werden soll.
-
-   ![Projekt auswählen](assets/select-a-project.png)
 
 1. Klicken Sie auf **[!UICONTROL Starten]**.
 1. Führen Sie Schritt 9 bis 14 des Verfahrens [Zu vorhandenem Übersetzungsprojekt hinzufügen](translation-projects.md#add-to-existing-translation-project) aus, um den Vorgang abzuschließen.
