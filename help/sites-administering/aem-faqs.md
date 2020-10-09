@@ -8,10 +8,10 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 82%
+source-wordcount: '1356'
+ht-degree: 80%
 
 ---
 
@@ -31,9 +31,9 @@ Bei aktiviertem Binary-Less-Modus enthalten die verteilten Inhaltspakete Verweis
 #### Wie aktiviere ich die Binary-Less-Verteilung? {#how-do-i-enable-binary-less-distribution}
 
 Stellen Sie zur Aktivierung der Binary-Less-Verteilung einen freigegebenen Blob-Speicher bereit.
-Check the `useBinaryReferences` property in the OSGI configuration with the factory PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*that your agent is using.
+Check the `useBinaryReferences` property in the OSGI configuration with the factory PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* that your agent is using.
 
-#### Wie kann ich die Fehlermeldungen beim Navigieren durch die Seitenhierarchie in der AEM-Sites-Konsole anpassen? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
+#### Wie kann ich die Fehlermeldungen beim Navigieren durch die Seitenhierarchie in der AEM Sites-Konsole anpassen? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
 Rufen Sie den Bereich „Netzwerk“ (des Chrome-Browsers) auf, um persönliche Einstellungen festzulegen (ohne minimierte JavaScript-Version).
 
@@ -119,7 +119,7 @@ Als Problemumgehung können Sie die Komponente auch manuell deaktivieren und zwa
 
 #### Wie lässt sich Asset Insights mit AEM 6.5-Instanzen konfigurieren? {#how-to-configure-asset-insights-with-aem-instance}
 
-Ziehen Sie zum Einrichten und Konfigurieren von Asset Insights für per Adobe Activation (DTM) bereitgestellte Experience Manager-Versionen die Informationen unter [Einrichten von Asset Insights mit AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html) heran.
+To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), see how to [Set up Asset Insights with AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### Wie lassen sich Admin-Konsolen anpassen? {#how-to-customize-admin-consoles}
 
