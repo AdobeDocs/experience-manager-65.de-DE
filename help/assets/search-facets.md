@@ -3,9 +3,9 @@ title: Suchfacetten zum Filtern von Suchergebnissen
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2438'
 ht-degree: 78%
 
 ---
@@ -42,19 +42,13 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Mit
    >1. Speichern Sie die Änderungen.
 
 
-1. Ziehen Sie auf der Seite „Suchformulare bearbeiten“ ein Prädikat von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
+1. Ziehen Sie auf der Seite [!UICONTROL Suchformulare bearbeiten] eine Eigenschaft von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
    ![Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen](assets/drag_predicate.png)
 
    *Abbildung: Drücken und bewegen Sie ein Prädikat, um die Suchfilter anzupassen.*
 
-1. Geben Sie auf der Registerkarte „Einstellungen“ eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll.
-
-   Mit der Kopfzeilenbeschriftung auf der Registerkarte „Einstellungen“ wird der Typ des gewählten Prädikats identifiziert.
-
-   ![Verwenden der Registerkarte „Einstellungen“ zum Festlegen der erforderlichen Optionen für ein Prädikat](assets/settings.png)
-
-   Verwenden der Registerkarte „Einstellungen“ zum Festlegen der erforderlichen Optionen für ein Prädikat
+1. Geben Sie auf der Registerkarte [!UICONTROL Einstellungen] eine Feldbeschriftung, einen Platzhaltertext und eine Beschreibung für das Eigenschaftsprädikat ein. Geben Sie einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. The header label in the [!UICONTROL Settings] tab identifies the type of the selected predicate.
 
 1. Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** einen gültigen Namen für die Metadateneigenschaft an, die mit dem Prädikat verknüpft werden soll. Basierend auf diesem Namen wird die Suche ausgeführt. Geben Sie beispielsweise `jcr:content/metadata/dc:description` oder `./jcr:content/metadata/dc:description` ein.
 
@@ -154,17 +148,9 @@ Mit der Tag-Prognose können Sie tagbasierte Suchen nach Assets durchführen. By
 1. Konfigurieren Sie die Eigenschaft „Pfad für Stamm-Tags“ dieses Prädikats, um die Tag-Liste mit verschiedenen Tags zu füllen.
 1. Aktivieren Sie **[!UICONTROL Option „Übereinstimmung mit allen Tags“ anzeigen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-   ![Typische Einstellungen des Tag-Prädikats](assets/tags_predicate.png)
-
-   Typische Einstellungen des Tag-Prädikats
-
 1. Geben Sie eine optionale Beschreibung in das Feld **[!UICONTROL Beschreibung]** ein und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags ein, auf deren Grundlage Sie nach Assets suchen möchten, oder wählen Sie Tags aus, die in der Liste vorgeschlagen werden.
-
-   ![Vom Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags](assets/tag-suggestion.png)
-
-   *Abbildung: Vom Experience Manager bereitgestellte Empfehlung bei der Eingabe des Namens des Tags.*
 
 1. Aktivieren Sie **[!UICONTROL Übereinstimmung mit allen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
