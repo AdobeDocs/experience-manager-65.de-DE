@@ -1,16 +1,16 @@
 ---
-title: Versionshinweise zu AEM 6.5
+title: Adobe Experience Manager 6.5 - Versionshinweise
 description: Die AEM Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, nicht mehr unterstützten und entfernten Funktionen und bekannter Probleme.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 27%
+source-wordcount: '374'
+ht-degree: 25%
 
 ---
 
 
-# Versionshinweise zu AEM 6.5
+# Adobe Experience Manager 6.5 - Versionshinweise
 
 Die AEM Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, nicht mehr unterstützten und entfernten Funktionen und bekannter Probleme.
 
