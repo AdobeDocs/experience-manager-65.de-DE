@@ -70,6 +70,7 @@ Wenn Sie Autor sind, können Sie auf die Datenspeicherung Configuration Console 
       >[!NOTE]
       >
       >Die Standardkonfiguration für die Datenspeicherung wird jetzt in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) anstelle von etc path(`/etc/socialconfig/srpc/defaultconfiguration`) gespeichert. Es wird empfohlen, die [Migrationsschritte](#zerodt-migration-steps) durchzuführen, damit die Standardeinstellung wie erwartet funktioniert.
+
    ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**

@@ -62,7 +62,8 @@ Oft werden in regelmäßigen Abständen (z. B. täglich, wöchentlich oder monat
 >Andernfalls ist das Backup womöglich nutzlos (im schlimmsten Fall).
 >
 >[!NOTE]
-Weitere Informationen zur Backup-Leistung finden Sie im Abschnitt [Backup-Leistung](/help/sites-deploying/configuring-performance.md#backup-performance).
+>
+>Weitere Informationen zur Backup-Leistung finden Sie im Abschnitt [Backup-Leistung](/help/sites-deploying/configuring-performance.md#backup-performance).
 
 ### Erstellen Sie ein Backup Ihrer installierten Software {#backing-up-your-software-installation}
 
@@ -74,13 +75,16 @@ Dazu müssen Sie erst[ein Backup des gesamten Repositorys erstellen](#backing-up
 1. Back up the entire `<cq-installation-dir>` from your file system.
 
 >[!CAUTION]
-Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver. ](/help/sites-deploying/application-server-install.md) [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
+>
+>Falls Sie einen Anwendungsserver eines Drittanbieters verwenden, gibt es möglicherweise zusätzliche Ordner an anderen Speicherorten, die Sie ebenfalls sichern müssen. Informationen dazu, wie Sie Anwendungsserver installieren, finden Sie unter [Installieren von AEM mit einem Anwendungsserver. ](/help/sites-deploying/application-server-install.md) [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
 
 >[!CAUTION]
-Das inkrementelle Sichern des Dateidatenspeichers wird unterstützt. Wenn Sie inkrementelle Backups anderer Komponenten (z. B. der Lucene-Indizes) erstellen möchten, stellen Sie sicher, dass gelöschte Dateien auch im Backup als gelöscht markiert sind.
+>
+>Das inkrementelle Sichern des Dateidatenspeichers wird unterstützt. Wenn Sie inkrementelle Backups anderer Komponenten (z. B. der Lucene-Indizes) erstellen möchten, stellen Sie sicher, dass gelöschte Dateien auch im Backup als gelöscht markiert sind.
 
 >[!NOTE]
-Die Festplattenspiegelung kann als Sicherungsmethode eingesetzt werden.
+>
+>Die Festplattenspiegelung kann als Sicherungsmethode eingesetzt werden.
 
 ### Erstellen Sie ein Backup Ihres Repositorys {#backing-up-your-repository}
 
@@ -132,7 +136,8 @@ Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
 1. Klicken Sie auf **Löschen**, um den Vorgang zu starten.
 
 >[!CAUTION]
-Bereinigte Knoten können ohne Wiederherstellung des Repository nicht zurückgesetzt werden. Da eine fehlerfreie Konfiguration sehr wichtig ist, empfiehlt es sich, vor einer Bereinigung immer einen Probelauf durchzuführen.
+>
+>Bereinigte Knoten können ohne Wiederherstellung des Repository nicht zurückgesetzt werden. Da eine fehlerfreie Konfiguration sehr wichtig ist, empfiehlt es sich, vor einer Bereinigung immer einen Probelauf durchzuführen.
 
 ### Analysieren der Konsole {#analyzing-the-console}
 
@@ -180,7 +185,8 @@ Protokolldateirotation bezeichnet einen Vorgang, bei dem das Dateiwachstum durch
 * Frühere Protokolldateien werden nicht gelöscht, daher ist es Ihre Verantwortung, alte Protokolldateien regelmäßig zu bereinigen, um die Datenträgernutzung zu begrenzen.
 
 >[!NOTE]
-Wenn Sie Ihre AEM-Installation aktualisieren, verbleiben vorhandene Protokolldateien, die nicht mehr von AEM verwendet werden, auf der Festplatte. Sie können diese ohne Risiko löschen. Alle neuen Protokolleinträge werden in die neuen Protokolldateien geschrieben. 
+>
+>Wenn Sie Ihre AEM-Installation aktualisieren, verbleiben vorhandene Protokolldateien, die nicht mehr von AEM verwendet werden, auf der Festplatte. Sie können diese ohne Risiko löschen. Alle neuen Protokolleinträge werden in die neuen Protokolldateien geschrieben. 
 
 ### Suchen nach Protokolldateien {#finding-the-log-files}
 
@@ -222,7 +228,8 @@ Bietet ein Protokoll aller Aktualisierungsvorgänge, die über die Variable
 Überarbeitung der Journalinformationen.
 
 >[!NOTE]
-Die ImageServer- und s7access-Protokolle sind nicht im **Download Full **Package enthalten, das aus der **system/console/status-bundlelist **Seite generiert wurde. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
+>
+>Die ImageServer- und s7access-Protokolle sind nicht im **Download Full **Package enthalten, das aus der **system/console/status-bundlelist **Seite generiert wurde. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
 
 ### Aktivieren der DEBUG-Protokollebene {#activating-the-debug-log-level}
 
@@ -231,7 +238,8 @@ Die Standard-Protokollebene ([Apache Sling-Protokollierungskonfiguration](/help/
 Um die Debugging-Protokollebene für eine Protokollierung zu aktivieren, müssen Sie für die Eigenschaften `org.apache.sling.commons.log.level` im Repository den Wert „debug“ festlegen. For example, on `/libs/sling/config/org.apache.sling.commons.log.LogManager` to configure the [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
-Legen Sie für das Protokoll nur so lange wie erforderlich „debug“ fest, da eine große Anzahl an Protokolleinträgen erstellt wird, die Ressourcen verbrauchen.
+>
+>Legen Sie für das Protokoll nur so lange wie erforderlich „debug“ fest, da eine große Anzahl an Protokolleinträgen erstellt wird, die Ressourcen verbrauchen.
 
 Eine Zeile in der Debugging-Datei beginnt üblicherweise mit DEBUG, gefolgt von der Protokollebene, der Installationsaktion und der Protokollmeldung. Beispiel:
 
@@ -250,7 +258,8 @@ Die Protokollebenen lauten wie folgt:
 ### Erstellen einer benutzerdefinierten Protokolldatei {#create-a-custom-log-file}
 
 >[!NOTE]
-Beim Arbeiten mit Adobe Experience Manager haben Sie mehrere Möglichkeiten, die Konfigurationseinstellungen für Dienste zu verwalten. Einzelheiten und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+>
+>Beim Arbeiten mit Adobe Experience Manager haben Sie mehrere Möglichkeiten, die Konfigurationseinstellungen für Dienste zu verwalten. Einzelheiten und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte Protokolldatei mit einer anderen Protokollebene erstellen. Gehen Sie dazu im Repository wie folgt vor:
 
@@ -265,7 +274,8 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
    * Typ: `sling:OsgiConfig`
    >[!NOTE]
-   Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<*identifier*>` einen eindeutigen Parameter zu verwenden.
+   >
+   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<*identifier*>` einen eindeutigen Parameter zu verwenden.
 
 1. Legen Sie die folgenden Eigenschaften des Knotens fest:
 
@@ -300,33 +310,38 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
-   `org.apache.sling.commons.log.pattern` unterstützt bis zu sechs Argumente.
+   >
+   >`org.apache.sling.commons.log.pattern` unterstützt bis zu sechs Argumente.
 
    >{0} Zeitstempel vom Typ `java.util.Date` {1} Protokollmarkierung {2} Name des aktuellen Thread {3} Name der Protokollierung {4} Protokollebene {5} Protokollmeldung
 
    >Falls der Protokollaufruf den Parameter `Throwable` enthält, wird der StackTrace an die Meldung angefügt.
 
    >[!CAUTION]
-   „org.apache.sling.commons.log.names“ muss einen Wert enthalten.
+   >
+   >„org.apache.sling.commons.log.names“ muss einen Wert enthalten.
 
    >[!NOTE]
-   Die Protokollierungspfade sind vom Speicherort-`crx-quickstart`abhängig.
-   Eine Protokolldatei wie:
-   `logs/thelog.log`
+   >
+   >Die Protokollierungspfade sind vom Speicherort-`crx-quickstart`abhängig.
+   >Eine Protokolldatei wie:
+   >`logs/thelog.log`
 
    >wird daher geschrieben in:
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
-   Und eine Protokolldatei wie:
-   `../logs/thelog.log`
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
+   >Und eine Protokolldatei wie:
+   >`../logs/thelog.log`
 
    >wird in folgendes Verzeichnis geschrieben:
-   ` <*cq-installation-dir*>/logs/`
+   >` <*cq-installation-dir*>/logs/`
+
 &quot;(z. B. neben ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
 
 1. Dieser Schritt muss nur ausgeführt werden, wenn ein neuer Writer erforderlich ist (d. h. mit einer Konfiguration, die vom standardmäßigen Writer abweicht). 
 
    >[!CAUTION]
-   Eine neue Logging-Writer-Konfiguration ist nur erforderlich, wenn die vorhandene Standardkonfiguration nicht geeignet ist.
+   >
+   >Eine neue Logging-Writer-Konfiguration ist nur erforderlich, wenn die vorhandene Standardkonfiguration nicht geeignet ist.
 
    >Wenn kein expliziter Writer konfiguriert ist, erstellt das System automatisch einen impliziten Writer auf Basis der Standardkonfiguration.
 
@@ -338,7 +353,8 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
    * Typ: `sling:OsgiConfig`
    >[!NOTE]
-   Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<*identifier*>` einen eindeutigen Parameter zu verwenden.
+   >
+   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<*identifier*>` einen eindeutigen Parameter zu verwenden.
 
    Legen Sie die folgenden Eigenschaften des Knotens fest:
 
@@ -364,9 +380,10 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
-   * eine maximalen Dateigröße
-   * einen Zeit-/Terminplan
+   >
+   >`org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
+   >* eine maximalen Dateigröße
+   >* einen Zeit-/Terminplan
 
    um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
    * Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
@@ -454,10 +471,11 @@ Gehen Sie wie folgt vor, um Replikationsagenten zu überwachen:
    * **Erneuten Versuch erzwingen**, um einen erneuten Versuch auf beliebigen Elementen der Warteschlange zu erzwingen, falls erforderlich.
 
    >[!CAUTION]
-   Verwenden Sie den Link „Verbindung testen“ nicht für den Postausgang der Rückwärtsreplikation auf der Veröffentlichungsinstanz.
-   Falls Sie eine Replikation für eine Warteschlange in einem Postausgang testen, werden alle Elemente, die älter als die Testreplikation sind, bei jeder Rückwärtsreplikation erneut verarbeitet.
-   Wenn solche Elemente bereits in einer Warteschlange vorhanden sind, können Sie mit der folgenden XPath JCR-Abfrage danach suchen und diese entfernen.
-   `/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
+   >
+   >Verwenden Sie den Link „Verbindung testen“ nicht für den Postausgang der Rückwärtsreplikation auf der Veröffentlichungsinstanz.
+   >Falls Sie eine Replikation für eine Warteschlange in einem Postausgang testen, werden alle Elemente, die älter als die Testreplikation sind, bei jeder Rückwärtsreplikation erneut verarbeitet.
+   >Wenn solche Elemente bereits in einer Warteschlange vorhanden sind, können Sie mit der folgenden XPath JCR-Abfrage danach suchen und diese entfernen.
+   >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Again you can develop a solution to detect all replication agents (located under `/etc/replication/author` or `/etc/replication/publish`), then check the status of the agent ( `enabled`, `disabled`) and the underlying queue ( `active`, `idle`, `blocked`).
 
@@ -468,7 +486,8 @@ Die [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) ist
 Die für das Erfassen von Informationen eingesetzten Methoden können auch zur kontinuierlichen Überwachung verwendet werden.
 
 >[!NOTE]
-Spezifische [Konfigurationen, die die Leistung verbessern](/help/sites-deploying/configuring-performance.md#configuring-for-performance), können ebenfalls überprüft werden.
+>
+>Spezifische [Konfigurationen, die die Leistung verbessern](/help/sites-deploying/configuring-performance.md#configuring-for-performance), können ebenfalls überprüft werden.
 
 Nachfolgend finden Sie eine Liste mit häufigen Leistungsproblemen und Vorschlägen, wie Sie diese erkennen und beheben.
 
@@ -853,7 +872,8 @@ Ab JDK 1.6 ist der Tool-Befehl `jvisualvm` verfügbar. Wenn Sie JDK 1.6 installi
 1. Starten Sie Ihre AEM-Instanz.
 
    >[!NOTE]
-   If using Java 5 you can add the `-Dcom.sun.management.jmxremote` argument to the java command line that starts your JVM. JMX ist bei Java 6 standardmäßig aktiviert.
+   >
+   >If using Java 5 you can add the `-Dcom.sun.management.jmxremote` argument to the java command line that starts your JVM. JMX ist bei Java 6 standardmäßig aktiviert.
 
 1. Führen Sie einen der beiden Befehle aus:
 
@@ -1017,11 +1037,12 @@ Wiederholen Sie die obigen Schritte auf der Veröffentlichungsinstanz.
 Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollten, falls Sie gewisse Leistungsprobleme bemerken. Die Liste ist (leider) nicht vollständig. 
 
 >[!NOTE]
-In folgenden Artikeln finden Sie weitere Informationen:
-* [Thread-Dumps](https://helpx.adobe.com/de/experience-manager/kb/TakeThreadDump.html) 
-* [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
-* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
-* [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
+>
+>In folgenden Artikeln finden Sie weitere Informationen:
+>* [Thread-Dumps](https://helpx.adobe.com/de/experience-manager/kb/TakeThreadDump.html) 
+>* [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
+>* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
+>* [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
 
 
 
@@ -1114,5 +1135,6 @@ Oder mit JConsole:
 Dies ist hilfreich, wenn Sie herausfinden möchten, wie viel Arbeitsspeicher belegt ist, welche GC-Algorithmen verwendet werden, wie lange diese ausgeführt werden und welche Auswirkung dies auf die Anwendungsleistung hat. Andernfalls ist die Abstimmung nur &quot;zufällig drehende Knopf&quot;.
 
 >[!NOTE]
-Informationen zu Oracle VM finden Sie unter:
-[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>
+>Informationen zu Oracle VM finden Sie unter:
+>[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
