@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Service Pack-Versionshinwei
 description: Versionshinweise für [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 359eb60c0ba3845d7aa0ca58488aa945a9f45aea
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '11484'
+source-wordcount: '11487'
 ht-degree: 26%
 
 ---
@@ -27,7 +27,7 @@ Zu den wichtigsten Funktionen und Verbesserungen, die in [!DNL Adobe Experience 
 
 * Speichern Sie einen Entwurf [!DNL Interactive Communication] als Entwurf.
 
-* Unterstützung für [!DNL Oracle WebLogic 12] Experience Manager Forms on JEE.
+* Unterstützung [!DNL Oracle WebLogic 12] von Experience Manager Forms on JEE.
 
 * Verbesserte Ausnahmebehandlung im [!DNL Adobe Experience Manager Assets] Benutzeroberflächenfluss.
 
@@ -405,7 +405,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Die Generierung von Ausgabeformaten für Assets mit ${extension} schlägt fehl (NPR-32294).
 
-* Die URLs im Versionsverlauf werden auf der Eigenschaftenseite (NPR-31889) unter &quot;Verwiesen nach&quot;angezeigt.
+* Die URLs im Versionsverlauf werden auf der Eigenschaftenseite für Assets unter &quot;Verwiesen auf&quot;angezeigt (NPR-31889).
 
 * Die von DAM heruntergeladene ZIP-Datei kann nicht mit WinZip (NPR-32293) geöffnet werden.
 
@@ -505,7 +505,7 @@ Eine vollständige Liste der in den neuesten Service Packs eingeführten Funktio
 
 * Für ein veröffentlichtes Asset wird kein Bild für die Vorschau angezeigt (CQ-4285886).
 
-* Benutzer kann Assets, die ein einzelnes Anführungszeichen im Namen enthalten (CQ-4272686), nicht veröffentlichen oder die Veröffentlichung rückgängig machen.
+* Benutzer kann Assets mit einem einfachen Anführungszeichen im Namen nicht veröffentlichen oder die Veröffentlichung rückgängig machen (CQ-4272686).
 
 * Die Geschäftsbedingungen werden beim Herunterladen mehrerer Assets nicht angezeigt (CQ-4281224).
 
@@ -577,7 +577,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Möglichkeit zur [Freigabe von Inbox- oder Inbox-Elementen](../forms/using/configure-shared-queues-osgi.md) für andere Benutzer in [!DNL Experience Manager] Workflows.
 
-* Möglichkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
+* Fähigkeit, interaktive Kommunikation im Stapelmodus zu [generieren](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
 * Die Version von jQuery im Paket ContextHub wurde auf 3.4.1 aktualisiert.
 
@@ -669,7 +669,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Durch das Verschieben von Assets aus einem Ordner wird eine große Anzahl von Sling-Aufträgen (Scene7 API-Aufrufe) erzeugt, die nicht unbedingt erforderlich sind (CQ-4278664).
 
-* Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn in DAM (CQ-4281112) Bildsatz (oder Mediaset) erstellt und mit der entsprechenden Benennungskonvention benannt wird.
+* Die Namen des Bildsatzes werden in Scene7 in Kleinbuchstaben geändert, wenn in DAM (CQ-4281112) Bildsatz (oder Mediaset) erstellt und mit einer entsprechenden Benennungskonvention benannt wird.
 
 * Scene7 Migrator stellt den Veröffentlichungsstatus falsch ein (CQ-4263492).
 
@@ -1259,7 +1259,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Assets - einschließlich
 
-* Multi-Site-Manager bietet jetzt Unterstützung für [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: Hotfix für CQ-4259922
+* Multi-Site-Manager bietet jetzt Unterstützung für [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: Hotfix für CQ-4259922
 
 #### Sites - Einbezogen
 
