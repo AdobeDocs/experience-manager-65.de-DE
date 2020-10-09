@@ -3,10 +3,10 @@ title: Assets zur Bearbeitung ein- und auschecken
 description: Erfahren Sie, wie Sie Assets für die Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 51%
+ht-degree: 49%
 
 ---
 
@@ -64,5 +64,5 @@ Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
 >[!MORELIKETHIS]
 >
 >* [Einchecken und Auschecken in der Experience Manager Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Videoschulung zum Einchecken und Auschecken in Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Videoschulung zum Einchecken und Auschecken in Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
