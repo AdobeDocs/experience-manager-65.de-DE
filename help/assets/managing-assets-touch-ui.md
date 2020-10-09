@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '9613'
+source-wordcount: '9565'
 ht-degree: 61%
 
 ---
@@ -508,9 +508,6 @@ Wenn Sie Assets durch Ziehen verschieben, wird der Assistent zum [!UICONTROL Ver
 
 1. Klicken Sie auf das Asset, um seine Seite zu öffnen.
 1. Wählen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;in der Liste die Option **[!UICONTROL Darstellungen]** aus.
-
-   ![Linke Leiste zum Öffnen des Menüs und Auswahl der Option &quot;Darstellungen&quot;](assets/renditions_menu.png)
-
 1. Im Bereich **[!UICONTROL Ausgabeformate]** wird die Liste der für das Asset generierten Ausgabeformate angezeigt.
 
    ![Bedienfeld &quot;Darstellungen&quot;auf der Seite &quot;Assets Detail&quot;](assets/renditions_panel.png)
@@ -666,10 +663,6 @@ You can view, navigate through, and select assets with any of the available view
 
 In der Ansicht &quot;Ansicht der Liste&quot;und &quot;Spalte&quot;wird die Option &quot; **[!UICONTROL Auswählen]** &quot;angezeigt, wenn Sie den Mauszeiger über die Asset-Miniaturansicht bewegen.
 
-![Assets in der Ansicht Liste auswählen](assets/select_quick_in_listview.png)
-
-![Assets in der Ansicht der Spalte auswählen](assets/select_quick_in_columnview.png)
-
 In der Ansicht der Karte wird die Option &quot; **[!UICONTROL Auswählen]** &quot;als Schnellaktion angezeigt.
 
 ![Schnellaktion bei der Ansicht der Karte auswählen](assets/select_quick_action.png)
@@ -690,9 +683,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
    * Select the asset and then click **[!UICONTROL Edit]** in the toolbar.
    * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
-   * Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
-
-   ![Option in der Symbolleiste bearbeiten](assets/do-not-localize/edit_icon.png)
+   * Klicken Sie in der Werkzeugleiste **[!UICONTROL in der Option]** Bearbeiten auf Bearbeiten ![](assets/do-not-localize/edit_icon.png).
 
 1. Wenn Sie das Bild beschneiden möchten, klicken Sie auf **[!UICONTROL &quot;Beschneiden]** &quot;, um ein Bild ![](assets/do-not-localize/crop.png)zu beschneiden.
 
@@ -751,9 +742,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Click the **[!UICONTROL Annotate]** option from one of the following:
 
    * [Schnellaktionen](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben        oder zur Asset-Seite navigiert sind
-
-   ![Option &quot;Anmerkung&quot;](assets/annotate-option.png)
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben     oder zur Asset-Seite navigiert sind.
 
 1. Fügen Sie im Feld **[!UICONTROL Kommentar]** am unteren Rand der Timeline einen Kommentar hinzu. Sie haben auch die Möglichkeit, einen Bereich im Bild zu markieren und im Dialogfeld **[!UICONTROL Anmerkung hinzufügen]** eine Anmerkung hinzuzufügen.
 
@@ -768,8 +757,6 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
    >For a non-administrator user, the suggestions appear only if the user has read permissions at `/home` path in CRXDE.
 
 1. Nachdem Sie die Anmerkung hinzugefügt haben, klicken Sie auf **[!UICONTROL Hinzufügen]**, um sie zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
-
-   ![Schaltfläche &quot;Hinzufügen&quot;zum Speichern einer Anmerkung](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -799,12 +786,7 @@ Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unt
 1. Um die gespeicherten Anmerkungen zu einem Asset anzuzeigen, navigieren Sie zum Speicherort des Assets und öffnen Sie die Asset-Seite für dieses Asset.
 
 1. Wählen Sie in der Benutzeroberfläche &quot;Experience Manager&quot;die Option &quot; **[!UICONTROL Zeitschiene]**&quot;aus.
-
-   ![Zeitschiene im Experience Manager verfügbar](assets/view-timeline.png)
-
 1. Wählen Sie in der Liste **[!UICONTROL Alle anzeigen]** in der Timeline **[!UICONTROL Kommentare]** aus, um die Ergebnisse anhand von Anmerkungen zu filtern.
-
-   ![Alle Listen in der Zeitschiene anzeigen](assets/timeline-show-all-option.png)
 
    Klicken Sie im Bedienfeld **[!UICONTROL Timeline]** auf einen Kommentar, um die entsprechende Anmerkung auf dem Bild anzuzeigen.
 
@@ -833,8 +815,6 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    Um nur den Prüfungsstatus zu drucken, wählen Sie ihn aus der Timeline aus.
 
 1. Click **[!UICONTROL Print]** from the toolbar.
-
-   ![Druckoption in der Symbolleiste](assets/do-not-localize/print.png)
 
 1. Wählen Sie im Dialogfeld „Drucken“ die Position, deren Anmerkungen/Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen/den Status in der linken oberen Ecke der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **Oben links**. Sie ist standardmäßig aktiviert.
 
@@ -923,8 +903,6 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
 
    * Klicken Sie auf **[!UICONTROL Alle]** in der [!UICONTROL Zeitleiste]anzeigen.
    * Klicken Sie auf **[!UICONTROL Versionen]**. Alle für ein Asset erstellten Versionen werden in der linken Seitenleiste aufgeführt.
-
-      ![ Option &quot;Versionen auswählen&quot;in der Zeitleiste](assets/versions_option.png)
 
    * Wählen Sie eine bestimmte Version des Assets aus und klicken Sie auf **[!UICONTROL Vorschau Version]**.
 
