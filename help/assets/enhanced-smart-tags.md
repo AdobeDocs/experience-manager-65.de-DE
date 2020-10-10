@@ -3,10 +3,10 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 75%
+source-wordcount: '1587'
+ht-degree: 72%
 
 ---
 
@@ -44,6 +44,7 @@ Stellen Sie vor der Verwendung des Smart Content Service Folgendes sicher, um ei
 
 * Es ist ein Adobe ID-Konto mit Administratorrechten für die Organisation vorhanden.
 * Der Smart Content Service ist für Ihre Organisation aktiviert.
+* Das Smart Content Services-Basispaket kann nur einer Bereitstellung hinzugefügt werden, für die ein [!DNL Sites] Basispaket und [!DNL Assets] Add-On lizenziert wurden.
 
 ## Einstieg {#onboarding}
 
@@ -179,3 +180,7 @@ Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit
 >[!NOTE]
 >
 >In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu trainierten Tags markiert. Selbst unveränderte Assets werden jedoch markiert, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus des Tagging-Workflows 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall 6 Monate überschreitet.
+
+## Tipps und Einschränkungen {#tips-best-practices-limitations}
+
+* Die Verwendung von Smart Content Services ist auf bis zu 2 Millionen getaggte Bilder pro Jahr beschränkt. Alle verarbeiteten und mit Tags versehenen Duplikat-Bilder werden als getaggte Bilder gezählt.
