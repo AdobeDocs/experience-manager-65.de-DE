@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+source-git-commit: b08149e00c418319ebacec71c56472ad4e8e1089
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 88%
@@ -36,13 +36,14 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 >* Nicht verfügbar in der klassischen Benutzeroberfläche.
 >* Nicht verfügbar für Seiten innerhalb einer Live Copy.
 >* Nur verfügbar für Seiten mit desselben Ressourcentyp.
+
 >
 
 
 
 >[!NOTE]
 >
->Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/managing-multiple-assets.md) You can customize the fields in the Bulk Metadata editor for Assets using the [Schema editor](/help/assets/metadata-schemas.md).
+>Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/metadata.md) You can customize the fields in the Bulk Metadata editor for Assets using the [Schema editor](/help/assets/metadata-schemas.md).
 
 ## Aktivieren eines Felds {#enabling-a-field}
 
@@ -56,6 +57,7 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
@@ -76,6 +78,7 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
    * **Name**: `allowBulkEdit`
    * **Typ**: `Boolean`
    * **Wert**: `true`
+
    Beispiel: für die [Grundlagenkomponente](/help/sites-authoring/default-components-foundation.md) der Standardseite:
 
    `/libs/foundation/components/page`
