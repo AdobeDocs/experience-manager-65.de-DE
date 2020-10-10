@@ -4,7 +4,7 @@ description: Hier erfahren Sie, wie Sie Sammlungen von Assets verwalten, z. B. S
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: cedefb58919d7d215040e72b4cc41159161938a8
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 63%
@@ -109,7 +109,7 @@ Gehen Sie wie folgt vor, um eine intelligente Sammlung zu erstellen:
 Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen füllen Assets anhand einer Suchabfrage. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
 
 1. Wählen Sie in der Benutzeroberfläche &quot; [!DNL A]Assets&quot;das Asset aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Zu Sammlung]** hinzufügen&quot; ![](assets/do-not-localize/add-to-collection.png) .
-Alternativ können Sie das Asset in den Bereich &quot;In Sammlung **[!UICONTROL ablegen]** &quot;auf der Benutzeroberfläche ziehen. Hinzufügen die Assets, wenn die Beschriftung des Bereichs in **[!UICONTROL Ablegen in Hinzufügen]** geändert wird.
+Alternativ können Sie das Asset in den Bereich &quot;In Sammlung **[!UICONTROL ablegen]** &quot;auf der Benutzeroberfläche ziehen. hinzufügen die Assets, wenn die Beschriftung des Bereichs in **[!UICONTROL Ablegen in Hinzufügen]** geändert wird.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** die Sammlung aus, der Sie das Asset hinzufügen möchten.
 
@@ -137,7 +137,7 @@ Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt,
 1. Click **[!UICONTROL Overwrite]** to replace the original smart collection with the edited collection. Wählen Sie alternativ **[!UICONTROL Speichern unter]** aus, um die bearbeitete Sammlung separat zu speichern.
 1. In the confirmation dialog, Click **[!UICONTROL Save]** to complete the process.
 
-## Anzeigen und Bearbeiten von Sammlungsmetadaten {#viewing-and-editing-collection-metadata}
+## Anzeigen und Bearbeiten von Sammlungsmetadaten {#view-edit-collection-metadata}
 
 Sammlungsmetadaten umfassen die Daten zur Sammlung, einschließlich aller hinzugefügten Tags.
 
@@ -192,7 +192,7 @@ Sie können Sammlungseinstellungen, wie z. B. Titel und Beschreibung, bearbeite
 1. Select a collection, and click **[!UICONTROL Settings]** in the toolbar. Verwenden Sie alternativ die Schnellaktion **[!UICONTROL Einstellungen]** in der Miniaturansicht der Sammlung.
 1. Modify the collection settings in the **[!UICONTROL Collection Settings]** page. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
 
-1. Klicken Sie zum Speichern der Änderungen auf **[!UICONTROL Speichern]**.
+1. To save the changes, click **[!UICONTROL Save]**.
 
 ## Löschen von Sammlungen {#deleting-a-collection}
 
