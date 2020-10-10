@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 96%
@@ -739,7 +739,7 @@ Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern.]**
 1. Wenden Sie das Metadatenprofil für YouTube Publishing auf die Ordner an, in die Sie Videos hochladen möchten. Sie müssen sowohl das Metadatenprofil als auch das Video-Profil festlegen.
 
-   Siehe [Metadatenprofile](/help/assets/metadata-profiles.md) und [Videoprofile](/help/assets/video-profiles.md).
+   Siehe [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles) und [Videoprofile](/help/assets/video-profiles.md).
 
 ### Veröffentlichen von Videos in Ihrem YouTube-Kanal         {#publishing-videos-to-your-youtube-channel}
 
@@ -1023,7 +1023,7 @@ So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit dem
 
    Der Parameter `config2` aktiviert die Verfolgung in HTML5-Viewern. Er ist außerdem eine firmenspezifische Vorgabe, die die Konfigurationsinformationen für Videoberichte und kundenspezifische Adobe Analytics-Konfigurationen enthält.
 
-   Der richtige Wert für den Parameter &quot;config2&quot;ist sowohl in der Funktion **Einbettungscode **als auch in der Funktion **URL **zu finden. In der URL des Befehls **URL **suchen ist der zu suchende Parameter `&config2=<value>` . Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
+   Der richtige Wert für den Parameter config2 ist sowohl in der Funktion **Einbettungscode **als auch in der Kopie **URL **gefunden. In der URL des Befehls **URL **suchen ist der zu suchende Parameter `&config2=<value>` . Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
 
 1. Fügen Sie im benutzerspezifischen Video-Viewer-Code „AppMeasurementBridge.jsp“ wie folgt zur Viewer-Seite hinzu:
 
