@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 89%
@@ -23,7 +23,7 @@ Profile sind Rezepte, die vorgeben, welche Optionen auf Assets angewendet werden
 
 Dazu kann das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen gehören. In AEM können Sie drei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
 
-* [Metadatenprofile](/help/assets/metadata-profiles.md)
+* [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles)
 * [Bildprofile](/help/assets/image-profiles.md)
 * [Videoprofile](/help/assets/video-profiles.md)
 
