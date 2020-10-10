@@ -6,9 +6,9 @@ user-guide-title: Asset-Handbuch
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '619'
 ht-degree: 51%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 51%
 + Experience Manager-Assets verwenden {#using}
    + [Startseite der Assets](assets-home-page.md)
    + [Suchen nach digitalen Assets](search-assets.md)
+   + [Arbeiten mit Asset-Metadaten](metadata.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
    + [Assets [!DNL Adobe Stock] verwenden](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
@@ -91,28 +92,24 @@ ht-degree: 51%
 + Assets verwalten {#administer}
    + [Unterstützte Dateiformate](assets-formats.md)
    + [Suchfacetten](search-facets.md)
-   + [Verwalten von Metadaten für Assets](metadata.md)
+   + [Verstehen von Metadatenkonzepten](metadata-concepts.md)
+   + [Konfiguration der Metadatenfunktionalität](metadata-config.md)
    + [XMP-Writeback in Ausgabeformaten](xmp-writeback.md)
    + [Asset-Linkfreigabe](link-sharing.md)
    + [Asset-Berichte](asset-reports.md)
    + [Optimierte Smart-Tags](enhanced-smart-tags.md)
    + [Profile zur Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md)
-   + [Kaskadierende Metadaten](cascading-metadata.md)
    + [Erstellen und Konfigurieren von Asset Editor-Seiten](assets-finder-editor.md)
    + [Handbuch zur Asset-Größenanpassung](assets-sizing-guide.md)
-   + [Metadaten-Schemareferenz](meta-ref.md)
    + [Bewährte Verfahren zum Übersetzen von Assets](best-practices-for-translating-assets-efficiently.md)
    + [Handbuch zur Leistungsoptimierung von Assets](performance-tuning-guidelines.md)
-   + [Hinzufügen und Bearbeiten von Metadaten](meta-edit.md)
    + [Handbuch zur Asset-Migration](assets-migration-guide.md)
-   + [XMP-Metadaten](xmp.md)
    + [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md)
    + [Assets und MediaLibrary](medialibrary.md)
    + [PDF-Rasterfunktion verwenden](aem-pdf-rasterizer.md)
    + [Upload-Beschränkungen konfigurieren](configuring-asset-upload-restrictions.md)
    + [Integration von Experience Manager und Creative Cloud](aem-cc-integration-best-practices.md)
    + [Mit InDesign Server integrieren](indesign.md)
-   + [Metadatenprofile](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
    + [Demopaket für Asset-Einblicke verwenden](touch-ui-using-demo-package-for-asset-insights.md)
    + [Best Practices für Dateiformate in Assets](assets-file-format-best-practices.md)
@@ -120,14 +117,11 @@ ht-degree: 51%
    + [Unterstützung von Camera Raw](camera-raw.md)
    + [MIME-Typ von Assets mithilfe von Apache Tika erkennen](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
-   + [Unterstützung für IPTC-Metadaten](iptc-support.md)
    + [Metadatenschemata](metadata-schemas.md)
    + [Mehrere Mandanten für Sammlungen, Snippets und Snippet-Vorlagen](multi-tenancy.md)
    + [Wasserzeichen für Assets](watermarking.md)
-   + [Importieren und Exportieren von Massenmetadaten](metadata-import-export.md)
    + [Asset-Vorlagen](asset-templates.md)
    + [Bewährte Verfahren zum Freigeben von Ordnern mit Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-   + [Ordner-Metadatenschema](folder-metadata-schema.md)
    + [Verwaltung intelligenter Tags](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [Konfigurieren von Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md)
@@ -147,7 +141,6 @@ ht-degree: 51%
 + Manage Assets {#managing}
    + [Verwalten digitaler Assets](managing-assets-touch-ui.md)
    + [Verwalten von Sammlungen](managing-collections-touch-ui.md)
-   + [Verwalten mehrerer Assets und Sammlungen](managing-multiple-assets.md)
    + [Tagging mit dem Smart Content Service konfigurieren](config-smart-tagging.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
