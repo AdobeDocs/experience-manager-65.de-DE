@@ -3,7 +3,7 @@ title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 8%
@@ -46,7 +46,7 @@ Mithilfe von Tags als Metadaten können Sie mühelos Assets suchen, Sammlungen m
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
 * [Tags im Experience Manager](/help/sites-authoring/tags.md)
-* [Bearbeiten von Asset-Metadaten](meta-edit.md)
+* [Bearbeiten von Asset-Metadaten](metadata.md)
 * [Verbesserte intelligente Tags in Assets](enhanced-smart-tags.md)
 
 ## Als Sammlungen organisieren {#organize-as-collections}
@@ -69,7 +69,7 @@ Durch die Standardisierung der Metadaten-Nutzung, Dateibenennung und Ordnerstruk
 >[!MORELIKETHIS]
 >
 >* [Profile zum Verarbeiten von Metadaten, Bildern und Videos](processing-profiles.md).
->* [Metadatenprofile](metadata-profiles.md).
+>* [Metadatenprofile](/help/assets/metadata-config.md#metadata-profiles).
 >* [Videoprofile](video-profiles.md).
->* [Dynamic Media Image-Profil](image-profiles.md).
+>* [Profile](image-profiles.md)für dynamische Medien
 
