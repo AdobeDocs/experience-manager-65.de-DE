@@ -3,10 +3,10 @@ title: '[!DNL Assets] HTTP-API.'
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 82%
+source-wordcount: '1727'
+ht-degree: 79%
 
 ---
 
@@ -307,3 +307,9 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 * 200 – OK – wenn der Ordner erfolgreich gelöscht wurde.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
+
+## Tipps und Einschränkungen {#tips-best-practices-limitations}
+
+* [Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namensraum. Die Metadateneigenschaften im `dc` Namensraum werden jedoch von der Benutzeroberfläche des Experience Managers aktualisiert.
+
+* Die Asset-API gibt die vollständigen Metadaten nicht zurück. In der API werden die Namensraum hartcodiert und nur diese werden zurückgegeben. Wenn Sie vollständige Metadaten benötigen, prüfen Sie den Asset-Pfad `/jcr_content/metadata.json`.
