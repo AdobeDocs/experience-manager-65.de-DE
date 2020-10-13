@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 410858ee7d1b8022070445937731644724a90155
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 48%
+source-wordcount: '1233'
+ht-degree: 45%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 48%
 >6.5.3.0
 >
 >* **Externalizer-Domänen** können jetzt ausgewählt werden.
+   >  **Hinweis:** Externalisierungs-Domänen sind nur für den Inhalt des Erlebnisfragments relevant, das an die Zielgruppe gesendet wird, und nicht für Metadaten wie Ansicht Angebot Content.
 >
 >
 6.5.2.0:
@@ -58,7 +59,7 @@ Es gibt drei Formatoptionen für den Export eines Experience Fragments in Adobe 
 * JSON: Unterstützung für Versand ohne Inhalt
 * HTML und JSON
 
-AEM Erlebnisfragmente können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies erfolgt über Adobe-I/O, für die AEM mit der Adobe-E/A [in Adobe Target](/help/sites-administering/integration-ims-adobe-io.md)integriert werden müssen.
+AEM Erlebnisfragmente können in den Standardarbeitsbereich in Adobe Target oder in benutzerdefinierte Arbeitsbereiche für Adobe Target exportiert werden. Dies geschieht über Adobe-I/O, für die AEM mit Adobe Target [integriert werden müssen, indem Adobe-I/O](/help/sites-administering/integration-ims-adobe-io.md)verwendet wird.
 
 >[!NOTE]
 >
@@ -136,7 +137,11 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
 
    >[!CAUTION]
    >
-   >Die Externalizer-Domäne ist optional. Ein AEM Externalisierer wird konfiguriert, wenn der exportierte Inhalt auf eine bestimmte *Veröffentlichungsdomäne* verweisen soll. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >Die Externalizer-Domäne ist optional.
+   >
+   > Ein AEM Externalisierer wird konfiguriert, wenn der exportierte Inhalt auf eine bestimmte *Veröffentlichungsdomäne* verweisen soll. Weitere Informationen finden Sie unter [Konfigurieren des AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >
+   > Beachten Sie außerdem, dass Externalizer-Domänen nur für den Inhalt des Erlebnisfragments relevant sind, das an die Zielgruppe gesendet wird, und nicht für Metadaten wie Ansicht Angebot Content.
 
    Beispiel für einen Ordner:
 
