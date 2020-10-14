@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 100%
+source-wordcount: '325'
+ht-degree: 96%
 
 ---
 
@@ -30,6 +30,10 @@ In diesem Abschnitt wird beschrieben, wie Sie Bildvorgaben verwenden. [Administr
 
 Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwenden.
 
+>[!NOTE]
+>
+>Im Modus &quot;Dynamische Medien - Scene7&quot;werden Bildvorgaben nur für Bild-Assets unterstützt.
+
 **So wenden Sie Dynamic Media-Bildvorgaben an**
 
 1. Öffnen Sie das Asset und tippen Sie in der linken Leiste auf das Dropdown-Menü und anschließend auf **[!UICONTROL Ausgabeformate.]**
@@ -37,8 +41,9 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
    >[!NOTE]
    >
    >* Statische Ausgabeformate werden in der oberen Hälfte angezeigt. Dynamische Ausgabeformate werden in der unteren Hälfte angezeigt. Bei dynamischen Ausgabeformaten (und nur bei diesen) können Sie das Bild mit der URL anzeigen. Die Schaltfläche **[!UICONTROL URL]** wird nur angezeigt, wenn Sie ein dynamisches Ausgabeformat auswählen. Die Schaltfläche **[!UICONTROL RESS]** wird nur angezeigt, wenn Sie eine responsive Bildvorgabe auswählen.
-   >
-   >* Das System zeigt mehrere Ausgabeformate, wenn Sie **[!UICONTROL Ausgabeformate]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Vorgaben erhöhen. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+      >
+      >
+   * Das System zeigt mehrere Ausgabeformate, wenn Sie **[!UICONTROL Ausgabeformate]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Vorgaben erhöhen. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
