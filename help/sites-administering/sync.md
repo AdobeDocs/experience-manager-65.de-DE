@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
+source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+workflow-type: tm+mt
+source-wordcount: '2436'
+ht-degree: 73%
 
 ---
 
@@ -74,7 +77,7 @@ Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Be
 
 1. Stellen Sie sicher, dass der neueste Code installiert wurde:
 
-* [AEM-Plattformupdates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
 * [AEM Communities-Updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
@@ -86,7 +89,7 @@ Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Be
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
    * suchen `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * select the existing configuration to open for edit (pencil icon)
@@ -124,6 +127,7 @@ Verify `name`: **`socialpubsync`**
 >
 >* Als Standardbenutzer wird **`admin`** zugewiesen.
 >* Nicht verwenden `communities-user-admin user.`
+
 >
 
 
@@ -153,7 +157,7 @@ Siehe auch
 * [Verwalten von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Troubleshooting section [Modify Operation Exception During Response Processing](#modify-operation-exception-during-response-processing).
 
-### 3. Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider {#adobegraniteencpasswrd}
+### 3. Adobe Granite Distribution – Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
 
 **Konfigurieren von Berechtigungen**
 
@@ -164,8 +168,8 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * suchen `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
+      * Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+   * suchen `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * select the existing configuration to open for edit (pencil icon)
 Verify `property name`: **`socialpubsync-publishUser`**
 
@@ -185,7 +189,7 @@ Verify `property name`: **`socialpubsync-publishUser`**
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
    * suchen `Apache Sling Distribution Agent - Queue Agents Factory`
 
       * select the existing configuration to open for edit (pencil icon)
@@ -208,7 +212,7 @@ Verify `Name`: `socialpubsync-reverse`
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
    * suchen **`Adobe Social Sync - Diff Observer Factory`**
 
       * Wählen Sie die vorhandene Konfiguration aus, um sie zur Bearbeitung zu öffnen (Bleistiftsymbol).
@@ -232,7 +236,7 @@ Standardmäßig ruft der Autor Änderungen alle 30 Sekunden ab. So ändern Sie 
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
    * suchen `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
       * Wählen Sie die vorhandene Konfiguration aus, um sie zur Bearbeitung zu öffnen (Bleistiftsymbol).
@@ -258,7 +262,7 @@ Die Standardkonfiguration ist für eine einzelne Veröffentlichungsinstanz vorge
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
    * suchen `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * select the existing configuration to open for edit (pencil icon)
@@ -351,7 +355,7 @@ Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Ver
       * z. B. auf einem Windows-System:
          `use windows explorer and search for *sling.id.file*`
 
-1. Beginn der Veröffentlichungsinstanz
+1. beginn der Veröffentlichungsinstanz
 
    * Beim Start wird der Instanz eine neue Sling-ID zugewiesen.
 
@@ -366,7 +370,7 @@ Damit Updates ordnungsgemäß synchronisiert werden, muss der Vault-Paket-Builde
 * In jeder AEM-Veröffentlichungsinstanz:
 * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-   * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+   * Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * suchen `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
@@ -503,7 +507,7 @@ Der autorisierte Benutzer sollte als Mitglied der Benutzergruppe **`administrato
 
 Für den autorisierten Benutzer sollten explizit die folgenden Rechte und Einschränkungen für alle Veröffentlichungsinstanzen gelten:
 
-| **path** | **jcr:all** | **rep:glob** |
+| **Pfad** | **jcr:all** | **rep:glob** |
 |---|---|---|
 | /home | X | */activities/* |
 | /home/users | X | */activities/* |
@@ -511,7 +515,7 @@ Für den autorisierten Benutzer sollten explizit die folgenden Rechte und Einsch
 
 As a member of the `administrators` group, the authorized user should have the following privileges on all publish instances:
 
-| **path** | **jcr:all** | **jcr:read** | **rep:write** |
+| **Pfad** | **jcr:all** | **jcr:read** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |
