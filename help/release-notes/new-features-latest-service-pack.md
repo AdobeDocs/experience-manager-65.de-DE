@@ -4,9 +4,9 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
+source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2561'
 ht-degree: 6%
 
 ---
@@ -77,7 +77,7 @@ Sie können jetzt Assets selektiv veröffentlichen oder die Veröffentlichung r�
 ### Vorausfüllen eines adaptiven Formulars auf dem Client {#prefill-merge-data-at-client}
 
 Wenn Sie ein adaptives Formular im Voraus ausfüllen, führt der [!DNL Experience Manager Forms] Server Daten mit einem adaptiven Formular zusammen und stellt das ausgefüllte Formular für Sie bereit. Standardmäßig erfolgt die Datenzusammenführung auf dem Server.
-Sie können den [!DNL Experience Manager Forms] Server jetzt so konfigurieren, dass die Datenzusammenführungsaktion auf dem Client statt auf dem Server ausgeführt wird. Dadurch wird die erforderliche Zeit zum Vorausfüllen und Wiedergeben adaptiver Formulare erheblich verringert.
+Sie können den [!DNL Experience Manager Forms] Server jetzt so konfigurieren, dass die Datenzusammenführungsaktion auf dem Client [und nicht auf dem Server](../../help/forms/using/prepopulate-adaptive-form-fields.md) durchgeführt wird. Dadurch wird die erforderliche Zeit zum Vorausfüllen und Wiedergeben adaptiver Formulare erheblich verringert.
 
 ### Integration des Formulardatenmodells mit RESTful-APIs auf einem Server mit einer Zwei-Wege-SSL-Implementierung {#fdm-integration-rest-apis-two-way-ssl}
 
@@ -87,7 +87,7 @@ Sie können den [!DNL Experience Manager Forms] Server jetzt so konfigurieren, d
 
 Wenn ein AcroForm [!DNL Adobe Sign] Text-Tags enthält, werden diese Felder jetzt erkannt und als [!DNL Adobe Sign] Felder im adaptiven Formular dargestellt, die mit [!DNL Automated Forms Conversion service]konvertiert werden. Ein Unterzeichner kann diese Felder beim Unterschreiben des adaptiven Formulars ausfüllen.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 Sie können farbige PDF forms [!DNL Automated Forms Conversion service] in adaptive Formulare konvertieren.
 
@@ -97,7 +97,7 @@ Sie können farbige PDF forms [!DNL Automated Forms Conversion service] in adapt
 
 ### Verbesserte Zwischenspeicherung für übersetzte Seiten adaptiver Formulare {#enhanced-caching-translated-adaptive-forms}
 
-Sie können jetzt das Gebietsschema als Selektor anstelle des URL-Arguments angeben. Dadurch können übersetzte adaptive Formulare zwischengespeichert werden [!DNL Experience Manager Dispatcher].
+Sie können jetzt [das Gebietsschema als Selektor in der URL des adaptiven Formulars anstelle eines Arguments in der URL](../../help/forms/using/supporting-new-language-localization.md)des adaptiven Formulars angeben. Dadurch können übersetzte adaptive Formulare zwischengespeichert werden [!DNL Experience Manager Dispatcher]. Das Zwischenspeichern übersetzter adaptiver Formulare war in früheren Versionen nicht möglich. Detaillierte Informationen zum Konfigurieren der Zwischenspeicherung für die Verwendung des Gebietsschemas als Selektor in der URL des adaptiven Formulars finden Sie unter Cache für adaptive Formulare [konfigurieren beim Dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### Ausgabe des Formulardatenmodelldiensts in einer Variablen speichern {#save-fdm-service-to-variable}
 
@@ -105,7 +105,9 @@ Mit dem Formulardatenmodell können Sie die Ausgabe eines Formulardatenmodelldie
 
 ### Mehrere Dateien für die Dateianlagenkomponente anhängen {#attach-multiple-files}
 
-Sie können jetzt mehrere Dateien an die Komponente [!UICONTROL Dateianlage] adaptiver Formulare anhängen.
+Sie können jetzt mehrere Dateien [an die](../../help/forms/using/introduction-forms-authoring.md) Dateianlagenkomponente [!UICONTROL adaptiver Formulare] anhängen.
+
+
 
 ## Wichtige Funktionen in vorherigen Experience Manager 6.5 Service Packs {#key-features-previous-service-packs}
 
