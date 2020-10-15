@@ -3,7 +3,7 @@ title: Verarbeiten von Assets mit Media Handlern und Workflows
 description: Erfahren Sie mehr über die Media-Handler und wie Sie Workflows verwenden, um Aufgaben an Ihren digitalen Assets durchzuführen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 50%
@@ -447,7 +447,7 @@ The following conversions can be automatically run and stored within [!DNL Asset
 * EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/).
 * FLV-Videotranskodierung mithilfe von [FFmpeg](https://ffmpeg.org/).
 * MP3-Kodierung mithilfe von [LAME](https://lame.sourceforge.io/).
-* Verarbeitung von Audiodaten mithilfe von [SOX](http://sox.sourceforge.net/).
+* Verarbeitung von Audiodaten mithilfe von [SOX](https://sox.sourceforge.net/).
 
 >[!NOTE]
 >
