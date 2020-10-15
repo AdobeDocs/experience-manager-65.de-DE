@@ -3,10 +3,10 @@ title: Herunterladen von Assets
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 75%
+source-wordcount: '866'
+ht-degree: 73%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
    ![Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets](/help/assets/assets/asset-download1.png)
 
-   *Abbildung: Optionen des Dialogfelds &quot;Herunterladen&quot;.*
+   *Abbildung: Optionen im Download-Dialogfeld.*
 
 1. Wählen Sie im Dialogfeld „Herunterladen“ die gewünschten Download-Optionen aus.
 
@@ -73,6 +73,7 @@ The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Pub
 
 >[!MORELIKETHIS]
 >
+>* [Herunterladen von Assets mit dem Markenportal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Herunterladen von DRM-geschützten Assets](drm.md).
 >* [Herunterladen von Assets mit der Experience Manager-Desktop-App auf einem Win- oder Mac-Desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Herunterladen von Assets mit Adobe Assets Link aus den unterstützten Adobe Creative Cloud-Programmen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html).
