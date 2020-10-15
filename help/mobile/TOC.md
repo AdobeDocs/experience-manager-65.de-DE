@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Mobile Benutzerhandbuch
-breadcrumb-title: Mobile Guide
-user-guide-description: Create and manage content for mobile apps.
+user-guide-title: AEM 6.5-Mobilbenutzeranleitung
+breadcrumb-title: Mobilanleitung
+user-guide-description: Erstellen und verwalten Sie Inhalte für mobile Apps.
 translation-type: tm+mt
 source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 26%
+source-wordcount: '324'
+ht-degree: 30%
 
 ---
 
 
-# AEM 6.5 Mobile User Guide {#mobile}
+# AEM 6.5-Mobilbenutzeranleitung {#mobile}
 
 + [Mobile Benutzerhandbuch - Übersicht](home.md)
 + Introduction to AEM Mobile {#introduction}
