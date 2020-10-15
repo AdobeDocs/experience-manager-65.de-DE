@@ -3,10 +3,10 @@ title: Verwalten von Metadaten für digitale Assets in  [!DNL Adobe Experience M
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '2436'
-ht-degree: 57%
+source-wordcount: '2423'
+ht-degree: 56%
 
 ---
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um die Metadaten eines Assets in der [!DNL Assets] Benu
 
    ![Eigenschaften eines Assets auswählen, um die Metadaten Ansicht](assets/asset-metadata.png)
 
-   *Abbildung: Bearbeiten oder Hinzufügen von Metadaten auf der Seite[!UICONTROL &quot;Asset-Eigenschaften&quot;].*
+   *Abbildung: Bearbeiten oder Hinzufügen von Metadaten auf der Seite [!UICONTROL &quot;Asset-Eigenschaften&quot;] .*
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
@@ -68,7 +68,7 @@ XMP write-back is supported and enabled for the platforms and file formats descr
 * Metadateneigenschaften in einen gemeinsamen Wert ändern
 * Tags hinzufügen oder ändern
 
-Verwenden Sie den Schema-Editor, um die Seite mit den Metadateneigenschaften, einschließlich Hinzufügen, Ändern und Löschen, anzupassen.
+To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the [schema editor](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Videoprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
-### Anwenden von Metadatenprofilen auf Ordner über die Benutzeroberfläche „Profile“ {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Apply metadata profiles to folders from [!UICONTROL Profiles] user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Gehen Sie wie folgt vor, um Metadaten-Profil anzuwenden:
 
@@ -196,7 +196,7 @@ Gehen Sie wie folgt vor, um Metadaten-Profil anzuwenden:
 1. Wählen Sie ein Metadatenprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
-### Anwenden von Metadatenprofilen auf Ordner aus „Eigenschaften“ {#applying-metadata-profiles-to-folders-from-properties}
+### Apply metadata profiles to folders from [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. In the left rail, click **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
@@ -205,9 +205,11 @@ Gehen Sie wie folgt vor, um Metadaten-Profil anzuwenden:
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+
 ### Apply metadata profile globally {#metadata-profile-global}
 
-Weitere Informationen finden Sie unter [Konfiguration zum globalen](/help/assets/metadata-config.md#apply-a-metadata-profile-globally)Anwenden von Metadaten-Profil.
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### Remove a metadata profile from folders {#removing-a-metadata-profile-from-folders}
 
