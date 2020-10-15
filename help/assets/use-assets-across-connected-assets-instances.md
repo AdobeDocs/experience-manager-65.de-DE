@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
+source-git-commit: d2bc8c7c52084a415faaf8a5b68be7dc6fc461c4
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 93%
+source-wordcount: '2224'
+ht-degree: 91%
 
 ---
 
@@ -33,8 +33,8 @@ Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sic
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]as a Cloud Service** | Unterstützt | Unterstützt | Unterstützt |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]auf AMS** | Unterstützt | Unterstützt | Unterstützt |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] auf AMS** | Unterstützt | Unterstützt | Unterstützt |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
 ### Unterstützte Dateiformate {#mimetypes}
 
@@ -194,3 +194,4 @@ Gehen Sie wie folgt vor, um eine Fehlerbehebung für das allgemeine Fehlerszenar
 
 * Wenn Sie über [!UICONTROL Content Finder] nicht nach Remote-Assets suchen können, überprüfen Sie erneut, ob die erforderlichen Rollen und Berechtigungen eingerichtet sind.
 * Ein aus dem Remote-DAM abgerufenes Asset kann aus verschiedenen Gründen nicht auf einer Web-Seite veröffentlicht werden. Es existiert nicht auf dem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler liegt vor. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
+* Wenn Sie von der lokalen [!DNL Sites] Bereitstellung aus nicht auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass Site-übergreifende Cookies zulässig sind. Wenn Site-übergreifende Cookies blockiert werden, werden die beiden Implementierungen von [!DNL Experience Manager] möglicherweise nicht authentifiziert. Beispielsweise können [!DNL Google Chrome] im Inkognito-Modus Drittanbieter-Cookies blockiert werden. Klicken Sie in [!DNL Chrome]der Adressleiste auf das Augensymbol , um Cookies zuzulassen, oder lesen Sie Hilfe [zur Aktivierung von Drittanbieter-Cookies](https://support.google.com/chrome/answer/95647).
