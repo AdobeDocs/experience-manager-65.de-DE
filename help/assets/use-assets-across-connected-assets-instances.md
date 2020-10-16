@@ -3,7 +3,7 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5972647d23b7e7bfd2fcd791648cb26de1fdb68
+source-git-commit: 2c3836cb7e2275c30e88e8a750eafce24a05837a
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 90%
@@ -196,4 +196,4 @@ Gehen Sie wie folgt vor, um eine Fehlerbehebung für das allgemeine Fehlerszenar
 * Ein aus dem Remote-DAM abgerufenes Asset kann aus verschiedenen Gründen nicht auf einer Web-Seite veröffentlicht werden. Es existiert nicht auf dem Remote-Server, es fehlen entsprechende Berechtigungen zum Abrufen oder ein Netzwerkfehler liegt vor. Stellen Sie sicher, dass das Asset nicht aus dem Remote-DAM entfernt wird. Stellen Sie sicher, dass die entsprechenden Berechtigungen eingerichtet und die Voraussetzungen erfüllt sind. Wiederholen Sie den Vorgang zum Hinzufügen des Assets zur Seite und veröffentlichen Sie erneut. Überprüfen Sie die [Liste asynchroner Aufträge](/help/sites-administering/asynchronous-jobs.md) auf Fehler beim Abrufen von Assets.
 * Wenn Sie von der lokalen [!DNL Sites] Bereitstellung aus nicht auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass Site-übergreifende Cookies zulässig sind. Wenn Site-übergreifende Cookies blockiert werden, werden die beiden Implementierungen von [!DNL Experience Manager] möglicherweise nicht authentifiziert. Beispielsweise können [!DNL Google Chrome] im Inkognito-Modus Drittanbieter-Cookies blockiert werden. Um Cookies im [!DNL Chrome] Browser zuzulassen, klicken Sie auf das Augensymbol in der Adressleiste, navigieren Sie zu &quot;Site funktioniert nicht&quot;> &quot;Blockiert&quot;, wählen Sie die Remote-DAM-URL aus und lassen Sie das Cookie &quot;Login-Token&quot;zu. Weitere Informationen [zum Aktivieren von Drittanbieter-Cookies](https://support.google.com/chrome/answer/95647)finden Sie in der Hilfe.
 
-![Cookie-Fehler in Chrome im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
+   ![Cookie-Fehler in Chrome im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
