@@ -3,17 +3,15 @@ title: Optimierte Smart-Tags
 description: Optimierte Smart-Tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 72%
+source-wordcount: '1522'
+ht-degree: 65%
 
 ---
 
 
 # Optimierte Smart-Tags {#enhanced-smart-tags}
-
-## Überblick über optimierte Smart-Tags {#overview-of-enhanced-smart-tags}
 
 Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Grunde umfasst dieses eine Liste von Schlüsselbegriffen, die Mitarbeiter, Partner und Kunden häufig verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und nach diesen zu suchen. Das Tagging mit einem taxonomiegesteuerten Vokabular stellt sicher, dass diese Begriffe im Rahmen von Tag-basierten Suchen einfach identifiziert und abgerufen werden können.
 
@@ -60,70 +58,36 @@ The onboarding process is complete when the administrator configures the service
 
 ## Überprüfen von Assets und Tags {#reviewing-assets-and-tags}
 
-Nach der Einrichtung sollten Sie zunächst einen Satz von Tags definieren, die diese Bilder im Kontext Ihres Geschäftsfeldes bestmöglich beschreiben.
+Nachdem Sie sich an Bord befinden, sollten Sie als Erstes eine Reihe von Tags identifizieren, die diese Bilder am besten im Kontext Ihres Unternehmens beschreiben.
 
-Stellen Sie dann einen Satz mit Bildern zusammen, die Ihr Produkt bestmöglich für eine bestimmte Geschäftsanforderung darstellen. Stellen Sie sicher, dass die Assets in Ihrem Satz den [Richtlinien für das Trainieren des Smart Content Service](smart-tags-training-guidelines.md) entsprechen.
+Stellen Sie dann einen Satz mit Bildern zusammen, die Ihr Produkt bestmöglich für eine bestimmte Geschäftsanforderung darstellen. Stellen Sie sicher, dass die Assets in Ihrem Satz den [Richtlinien für das Trainieren des Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service) entsprechen.
 
 Fügen Sie die Assets einem Ordner hinzu und wenden Sie die Tags über die Eigenschaftsseite auf die einzelnen Assets an. Führen Sie anschließend den Trainings-Workflow für diesen Ordner aus. Mit dem Asset-Satz kann der Smart Content Service mithilfe Ihrer Taxonomiedefinitionen mehr Assets effektiv trainieren.
 
 >[!NOTE]
 >
 >1. Das Training ist ein unwiderruflicher Vorgang. Adobe empfiehlt Ihnen, die Tags im Asset-Satz zu überprüfen, bevor Sie den Smart Content Service mit den Tags trainieren.
->1. Bevor Sie eine Schulung für ein Tag durchführen, lesen Sie die Schulungsrichtlinien für [Smart Content Service](smart-tags-training-guidelines.md).
+>1. Bevor Sie eine Schulung für ein Tag durchführen, lesen Sie die Schulungsrichtlinien für [Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Adobe empfiehlt Ihnen, mindestens zwei unterschiedliche Tags zu verwenden, wenn Sie den Smart Content Service zum ersten Mal trainieren.
 
 
-## Intelligente Inhaltserstellung {#training-the-smart-content-service}
+## Understand [!DNL Experience Manager] search results with smart tags {#understandsearch}
 
-Damit der Smart Content Service die Taxonomie Ihres Unternehmens erkennen kann, sollten Sie den Dienst auf einen Asset-Satz ausführen, der bereits für Ihr Unternehmen relevante Tags enthält. Nach dem Training kann der Dienst dieselbe Taxonomie auf einen ähnlichen Satz von Assets anwenden.
+By default, [!DNL Experience Manager] search combines the search terms with an `AND` clause. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Schlüsselwort `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird bei dieser Suchanfrage jedoch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
-Sie können den Dienst mehrfach trainieren, um die Fähigkeit, relevante Tags anzuwenden, zu verbessern. Führen Sie nach jedem Trainingszyklus einen Tagging-Workflow aus und überprüfen Sie, ob Ihre Assets mit den richtigen Tags versehen wurden.
+* Assets mit den Keywords `woman` und `running` in den Metadaten.
 
-Sie können den Smart Content Service regelmäßig oder je nach Anforderung trainieren.
+* Assets, die über Smart-Tags mit einem der Schlüsselwörter getaggt wurden.
 
->[!NOTE]
+Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Suchbegriffen in den Smart-Tags entsprechen. Im obigen Beispiel werden die Suchergebnisse ungefähr in dieser Reihenfolge angezeigt:
+
+1. Treffer von `woman running` in den verschiedenen Metadatenfeldern.
+1. Treffer von `woman running` in den Smart-Tags,
+1. Treffer von `woman` oder `running` in Smart-Tags.
+
+>[!CAUTION]
 >
->Der Trainings-Workflow wird nur für Ordner ausgeführt.
-
-### Regelmäßiges Trainieren {#periodic-training}
-
-Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Open the [!UICONTROL Properties] page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
-
-![enable_smart_tags](assets/enable_smart_tags.png)
-
-Once this option is selected for a folder, [!DNL Experience Manager] runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
-
-### Training bei Bedarf {#on-demand-training}
-
-Sie können den Smart Content Service über die Workflow-Konsole trainieren, wann immer es erforderlich ist.
-
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
-1. Suchen Sie im Dialogfeld **[!UICONTROL Workflow ausführen]** nach dem Payload-Ordner, der die mit Tags versehenen Assets für das Trainieren des Diensts enthält.
-1. Geben Sie einen Titel für den Workflow ein und fügen Sie einen Kommentar hinzu. Then, click **[!UICONTROL Run]**. Die Assets und Tags werden für das Training übermittelt.
-
-   ![workflow_dialog](assets/workflow_dialog.png)
-
->[!NOTE]
->
->Nachdem die Assets in einem Ordner für die Schulung verarbeitet wurden, werden in den nachfolgenden Schulungszyklen nur die geänderten Assets verarbeitet.
-
-### Schulungsberichte zur Ansicht {#viewing-training-reports}
-
-Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Trainingssatz trainiert ist, überprüfen Sie den Bericht zum Trainings-Workflow über die Berichte-Konsole.
-
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. Klicken Sie auf der Seite **[!UICONTROL Asset-Berichte]** auf **[!UICONTROL Erstellen]**.
-1. Wählen Sie den Bericht **[!UICONTROL Smart-Tags-Training]** aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Weiter]**.
-1. Geben Sie einen Titel und eine Beschreibung für den Bericht an. Lassen Sie unter **[!UICONTROL Berichtplanen]** die Option **[!UICONTROL Jetzt]** aktiviert. Wenn Sie den Bericht für einen späteren Zeitpunkt planen möchten, wählen Sie **[!UICONTROL Später]** und geben Sie ein Datum und eine Uhrzeit an. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Asset-Berichte]** den erstellten Bericht aus. Um den Bericht anzuzeigen, klicken Sie in der Symbolleiste auf **[!UICONTROL Ansicht]**.
-1. Prüfen Sie die Details des Berichts.
-
-   Der Bericht zeigt den Trainings-Status der von Ihnen trainierten Tags an. Grün gibt in der Spalte **[!UICONTROL Trainingsstatus]** an, dass der Smart Content Service für das Tag trainiert wird. Gelb bedeutet, dass der Service für ein bestimmtes Tag nicht vollständig trainiert ist. Fügen Sie in diesem Fall weitere Bilder mit dem jeweiligen Tag hinzu und führen Sie den Trainings-Workflow aus, um den Service vollständig für das Tag zu trainieren.
-
-   Wenn Ihre Tags nicht im Bericht angezeigt werden, führen Sie den Trainings-Workflow für diese Tags erneut aus.
-
-1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**. Der Bericht wird als Microsoft Excel-Tabellenkalkulation heruntergeladen.
+>Wenn die Lucene-Indizierung abgeschlossen ist, funktioniert [!DNL Adobe Experience Manager] die Suche auf der Grundlage von Smart-Tags nicht wie erwartet.
 
 ## Assets automatisch taggen {#tagging-assets-automatically}
 
@@ -143,10 +107,7 @@ Wenn diese Option für einen Ordner ausgewählt ist, werden die Assets im Ordner
 
 ### Tagging bei Bedarf {#on-demand-tagging}
 
-Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit Tags zu versehen:
-
-* Workflow-Konsole
-* Timeline
+Sie können den Tag-Arbeitsablauf über die Arbeitsablaufkonsole oder die Zeitleiste auslösen, um Ihre Assets sofort zu taggen.
 
 >[!NOTE]
 >
@@ -164,7 +125,7 @@ Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat. Weitere Informationen finden Sie unter [Verwalten von Smart-Tags](managing-smart-tags.md).
+   Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat.
 
 #### Tagging von Assets über die Timeline {#tagging-assets-from-the-timeline}
 
@@ -175,12 +136,29 @@ Sie können den Tagging-Workflow wie folgt aktivieren, um Ihre Assets sofort mit
    ![start_workflow](assets/start_workflow.png)
 
 1. Wählen Sie den Workflow **[!UICONTROL DAM Smart-Tag-Assets]** aus und geben Sie einen Titel für den Workflow an.
-1. Klicken Sie auf **[!UICONTROL Starten]**. Der Workflow wendet Ihre Tags auf Assets an. Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat. For details, see [manage Smart Tags](managing-smart-tags.md).
+1. Klicken Sie auf **[!UICONTROL Starten]**. Der Workflow wendet Ihre Tags auf Assets an. Navigieren Sie zum Asset-Ordner und prüfen Sie die Tags, um sicherzustellen, dass der Smart Content Service Ihre Assets ordnungsgemäß mit Tags versehen hat.
 
 >[!NOTE]
 >
 >In den nachfolgenden Tagging-Zyklen werden nur die geänderten Assets erneut mit neu trainierten Tags markiert. Selbst unveränderte Assets werden jedoch markiert, wenn das Intervall zwischen dem letzten und dem aktuellen Tagging-Zyklus des Tagging-Workflows 24 Stunden überschreitet. Bei periodischen Tagging-Workflows werden unveränderte Assets mit Tags versehen, wenn das Intervall 6 Monate überschreitet.
 
+## Kuratieren oder Moderieren der angewendeten Smarttags {#manage-smart-tags}
+
+Sie können Smart-Tags kuratieren, um alle falschen Tags zu entfernen, die Ihren Markenbildern zugewiesen wurden, sodass nur die relevantesten Tags angezeigt werden.
+
+Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Bildern verfeinern, indem Sie sicherstellen, dass Ihr Bild nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Im Grunde wird so ausgeschlossen, dass in den Suchergebnissen Bilder ohne Bezug angezeigt werden.
+
+Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz in Bezug auf ein Bild zu erhöhen. Je höher der Rang eines Tags für ein Bild, desto wahrscheinlicher ist bei einer Tag-basierten Suche die Aufnahme des Bildes in die Suchergebnisse.
+
+1. Suchen Sie im OmniSearch-Feld nach Assets, die auf einem Tag basieren.
+1. Prüfen Sie die Suchergebnisse auf Bilder, die Ihnen für Ihren Suchvorgang nicht relevant erscheinen.
+1. Select the image, and click **[!UICONTROL Manage Tags]** from the toolbar.
+1. Prüfen Sie die Tags auf der Seite **[!UICONTROL Tags verwalten]**. If you don&#39;t want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Alternativ können Sie auf `x` das Symbol klicken, das neben einem Tag angezeigt wird.
+1. Optionally, to assign a higher rank to a tag, select the tag and click **[!UICONTROL Promote]** from the toolbar. Das höhergestufte Tag wird in den Abschnitt **[!UICONTROL Tags]** verschoben.
+1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
+1. Navigate to the **[!UICONTROL Properties]** page for the image. Achten Sie darauf, dass dem von Ihnen beworbenen Tag mehr Relevanz zugewiesen wird und es früher in den Suchergebnissen angezeigt wird.
+
 ## Tipps und Einschränkungen {#tips-best-practices-limitations}
 
 * Die Verwendung von Smart Content Services ist auf bis zu 2 Millionen getaggte Bilder pro Jahr beschränkt. Alle verarbeiteten und mit Tags versehenen Duplikat-Bilder werden als getaggte Bilder gezählt.
+* Wenn Sie den Tagging-Workflow über die Timeline ausführen, können Sie Tags gleichzeitig auf maximal 15 Assets anwenden.
