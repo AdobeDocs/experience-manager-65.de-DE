@@ -6,9 +6,9 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Kreativelemente.
 translation-type: tm+mt
-source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 51%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 51%
    + [Assets [!DNL Adobe Stock] verwenden](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
+   + [Optimierte Smart-Tags](enhanced-smart-tags.md)
    + [Aktivitäts-Stream in der Timeline](activity-stream.md)
    + [Prozesselemente](assets-workflow.md)
    + [hinzufügen](image-maps.md)
@@ -93,11 +94,12 @@ ht-degree: 51%
    + [Unterstützte Dateiformate](assets-formats.md)
    + [Suchfacetten](search-facets.md)
    + [Verstehen von Metadatenkonzepten](metadata-concepts.md)
-   + [Konfiguration der Metadatenfunktionalität](metadata-config.md)
+   + [Konfigurieren der Metadatenfunktionalität](metadata-config.md)
+   + [Metadatenschemata](metadata-schemas.md)
    + [XMP-Writeback in Ausgabeformaten](xmp-writeback.md)
    + [Asset-Linkfreigabe](link-sharing.md)
    + [Asset-Berichte](asset-reports.md)
-   + [Optimierte Smart-Tags](enhanced-smart-tags.md)
+   + [Intelligenten Content-Dienst für Tags konfigurieren](config-smart-tagging.md)
    + [Profile zur Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md)
    + [Erstellen und Konfigurieren von Asset Editor-Seiten](assets-finder-editor.md)
    + [Handbuch zur Asset-Größenanpassung](assets-sizing-guide.md)
@@ -117,12 +119,10 @@ ht-degree: 51%
    + [Unterstützung von Camera Raw](camera-raw.md)
    + [MIME-Typ von Assets mithilfe von Apache Tika erkennen](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
-   + [Metadatenschemata](metadata-schemas.md)
    + [Mehrere Mandanten für Sammlungen, Snippets und Snippet-Vorlagen](multi-tenancy.md)
    + [Wasserzeichen für Assets](watermarking.md)
    + [Asset-Vorlagen](asset-templates.md)
    + [Bewährte Verfahren zum Freigeben von Ordnern für [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-   + [Verwaltung intelligenter Tags](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [ [!DNL Assets] Configurewith [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Veröffentlichen von Assets auf [!DNL Brand Portal]](brand-portal-publish-assets.md)
@@ -141,7 +141,6 @@ ht-degree: 51%
 + Manage Assets {#managing}
    + [Verwalten digitaler Assets](managing-assets-touch-ui.md)
    + [Verwalten von Sammlungen](managing-collections-touch-ui.md)
-   + [Tagging mit dem Smart Content Service konfigurieren](config-smart-tagging.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
    + [Verwalten von Video-Assets](managing-video-assets.md)
@@ -158,5 +157,4 @@ ht-degree: 51%
    + [Verwalten von ebenenübergreifenden Assets](managing-linked-subassets.md)
    + [Zugehörige Assets](related-assets.md)
    + [Freigeben privater Ordner](private-folder.md)
-   + [Schulungsrichtlinien für intelligente Inhaltsdienste](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
