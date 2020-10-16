@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Service Pack-Versionshinwei
 description: Versionshinweise für [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: 263a25b70fe4a3e7de65b47f07932d2e5f3d0197
 workflow-type: tm+mt
-source-wordcount: '11487'
+source-wordcount: '11483'
 ht-degree: 26%
 
 ---
@@ -693,7 +693,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Bei der [!DNL Experience Manager] Abfrage nach Auftragsdetails eines Assets wird eine Ausnahme angezeigt (CQ-4283569).
 
-### Sites {#sites}
+### Sites
 
 * Wenn die LiveCopy-Vererbung beschädigt ist, werden auf Live-Kopierseiten anstelle von LiveCopy-Links Sprachkopie-Links angezeigt (NPR-30980).
 * Bei einem neuen Blueprint werden nur die ersten 40 Datensätze angezeigt, wenn die Anzahl der Datensätze mehr als 40 beträgt. Blueprint zeigt leere Zeilen für die übrigen Datensätze an (NPR-31182).
@@ -725,7 +725,7 @@ Remove one mention of this fix.
 
 * Bei Auswahl der Option &quot;Fälliges Datum&quot;in einem Übersetzungsauftrag (NPR-31270) werden zwei Kalender-Popups angezeigt.
 
-### Plattform {#platform}
+### Plattform
 
 * Die Option &quot;Mime-Typ&quot;in der Webkonsole funktioniert nicht (NPR-31108).
 
@@ -745,7 +745,7 @@ Remove one mention of this fix.
 
 * Das `org.apache.sling.distribution.api` Bundle ist im Konfigurationsmanager ausgeblendet und steht daher nicht für benutzerdefinierte Bundles (NPR-31720) zur Verfügung.
 
-### Projekte {#projects}
+### Projekte
 
 * Das Wechseln von Kalendereinstellungen funktioniert nicht (NPR-31271).
 
@@ -854,7 +854,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 * Fehlerkorrektur – In der Spaltenansicht der Asset-Benutzeroberfläche werden jetzt nur noch mandantenspezifische Inhalte angezeigt.
 * Fehlerkorrektur – Änderungen des Stilakkordeons wirken sich jetzt auf die Suchergebnisse aus.
 
-### Assets {#assets}
+### Assets
 
 **Produktverbesserungen**
 
@@ -961,7 +961,7 @@ Zu den wichtigsten Merkmalen dieses Service Packs gehören:
 
 * Eine Aktualisierung der Instanz von 6.3.3.2 auf 6.5 führt zu doppelten OSGi-Konfigurationen. NPR-30130: Hotfix für CQ-4274016
 
-### Integration {#integration}
+### Integration
 
 * Angepasster Content wird auf der Veröffentlichungsinstanz erst nach dem Neustart der Instanz korrekt angezeigt. NPR-30377: Hotfix für CQ-4273706
 * Bei der Konfiguration von Launch auf einer Website wird der Bibliotheksadresse ein Schrägstrich (/) vorangestellt, der jedes Mal einen manuellen Eingriff verursacht. NPR-30694: Hotfix für CQ-4275501
@@ -976,7 +976,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Added &#39;Auto&#39; setting to `RenderAtClient` in `PDFFormRenderOptions` API for [!DNL Experience Manager] Forms OSGi.
 
-#### Forms-Add-on-Paket {#forms-add-on-package}
+#### Forms-Add-on-Paket
 
 **Back-End-Integration**
 
@@ -1006,7 +1006,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Wird im Durchsuchen-Modus „NonVisual Desktop Access“ zum Lesen eines HTML5-Formulars verwendet, liest der Chrome-Browser vor jeder skalierbaren Vektorgrafik (SVG) im Formularentwurf das Wort „Grafik“. NPR-30449: Hotfix für CQ-4274732
 
-#### Forms JEE-Installationsprogramm {#forms-jee-installer}
+#### Forms JEE-Installationsprogramm
 
 **Forms - Document Security**
 
@@ -1021,7 +1021,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 * Der HTMLtoPDF-Dienst zeigt in der JMX-Konsole nicht maxReuseCount an. NPR-30134, NPR-30304: Hotfix für CQ-4273763
 * Adding or editing a Web Service connection by invoking web services from [!DNL Experience Manager Forms] Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix für CQ-4273217
 
-### Enthaltene Feature Packs {#feature-packs-included}
+### Enthaltene Feature Packs
 
 >[!NOTE]
 >
