@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: ee2b13f2fc1f044f119ff54f332844d458663287
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 55%
+source-wordcount: '1802'
+ht-degree: 46%
 
 ---
 
@@ -35,7 +35,7 @@ Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OA
 
 Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration konfigurieren. Gehen Sie folgendermaßen vor:
 
-1. Wechseln Sie zu AEM-Webkonsole unter https://server:host/system/console/configMgr.
+1. Rufen Sie AEM Webkonsole unter https://server:host/system/console/configMgr auf.
 1. Suchen Sie die Konfiguration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
 
@@ -52,7 +52,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    >    
    >    
    >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
-   >    1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort bzw. die zu verschlüsselnde Zeichenfolge ein und klicken Sie auf **[!UICONTROL Protect]**.
+   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
 
    >    
    >    
@@ -112,7 +112,7 @@ Konfigurieren des Ordners für Cloud-Dienstkonfigurationen:
 
 ## RESTful-Webdienste konfigurieren {#configure-restful-web-services}
 
-RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Um RESTful-Webdienst in AEM cloud services zu konfigurieren, stellen Sie sicher, dass die Swagger-Datei im Dateisystem oder die URL, unter der die Datei gehostet wird, vorhanden ist.
+RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Um den RESTful-Webdienst in AEM Cloud-Diensten zu konfigurieren, stellen Sie sicher, dass sich die Swagger-Datei im Dateisystem oder die URL befindet, unter der die Datei gehostet wird.
 
 Gehen Sie wie folgt vor, um RESTful-Dienste zu konfigurieren:
 
@@ -130,9 +130,11 @@ Gehen Sie wie folgt vor, um RESTful-Dienste zu konfigurieren:
       * Host: Der Domänenname oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
          Bearbeiten Sie bei Bedarf die vorausgefüllten Werte für diese Felder.
-   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, API-Schlüssel oder benutzerdefinierte Authentifizierung — , um auf den RESTful-Dienst zuzugreifen und dementsprechend Details zur Authentifizierung anzugeben.
+   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, API-Schlüssel, benutzerdefinierte Authentifizierung oder gegenseitige Authentifizierung — , um auf den RESTful-Dienst zuzugreifen und dementsprechend Details zur Authentifizierung anzugeben.
 
    Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL API-Schlüssel]** &quot;auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungsheader oder als Abfrage-Parameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste &quot; **[!UICONTROL Position]** &quot;und geben Sie den Namen der Kopfzeile bzw. des Abfrage-Parameters im Feld **[!UICONTROL Parametername]** entsprechend an.
+
+   Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL Gegenseitige Authentifizierung]** &quot;auswählen, finden Sie weitere Informationen unter [Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste](#mutual-authentication).
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Dienst zu erstellen.
 
@@ -149,10 +151,12 @@ SOAP-basierte Webdienste werden mithilfe von [WSDL-Spezifikationen (Web Services
 
    * WSDL-URL für den Webdienst.
    * Dienstendpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Dienstendpunkt zu überschreiben.
-   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, benutzerdefinierte Authentifizierung oder X509-Token — , um auf den SOAP-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
+   * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, benutzerdefinierte Authentifizierung, X509-Token oder gegenseitige Authentifizierung — , um auf den SOAP-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
 
-      Wenn Sie als Authentifizierungstyp &quot;X509-Token&quot;auswählen, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+      Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL X509-Token]** &quot;auswählen, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Geben Sie den KeyStore-Alias für das X509-Zertifikat im Feld **[!UICONTROL Key Alias]** an. Geben Sie im Feld &quot; **[!UICONTROL Zeit bis zum Live]** &quot;die Zeit in Sekunden an, bis die Authentifizierungsanforderung gültig bleibt. Optional können Sie den Nachrichtentext oder die Zeitstempelüberschrift oder beides signieren.
+
+      Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL Gegenseitige Authentifizierung]** &quot;auswählen, finden Sie weitere Informationen unter [Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste](#mutual-authentication).
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den SOAP-Webdienst zu erstellen.
 
@@ -177,6 +181,19 @@ Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online
    Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
 
 1. Tap **Create** to create the cloud configuration for the OData service.
+
+## Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste {#mutual-authentication}
+
+Wenn Sie die gegenseitige Authentifizierung für das Formulardatenmodell aktivieren, authentifizieren sich sowohl die Datenquelle als auch AEM Server, auf dem das Formulardatenmodell ausgeführt wird, die Identität der anderen, bevor Daten freigegeben werden. Sie können die gegenseitige Authentifizierung für REST- und SOAP-basierte Verbindungen (Datenquellen) verwenden. So konfigurieren Sie die gegenseitige Authentifizierung für ein Formulardatenmodell auf Ihrer AEM Forms-Umgebung:
+
+1. Laden Sie den privaten Schlüssel (Zertifikat) auf den [!DNL AEM Forms] Server hoch. So laden Sie den privaten Schlüssel hoch:
+   1. Melden Sie sich bei Ihrem [!DNL AEM Forms] Server als Administrator an.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Wählen Sie den `fd-cloudservice` Benutzer aus und tippen Sie auf **[!UICONTROL Eigenschaften]**.
+   1. Öffnen Sie die Registerkarte **[!UICONTROL Keystore]** , erweitern Sie die Option **[!UICONTROL Hinzufügen privaten Schlüssel aus KeyStore-Datei]** , laden Sie die KeyStore-Datei hoch, geben Sie die Aliase und Kennwörter ein und tippen Sie auf **[!UICONTROL Senden]**. Das Zertifikat wird hochgeladen.  Der Alias für den privaten Schlüssel wird im Zertifikat erwähnt und beim Erstellen des Zertifikats festgelegt.
+1. Hochladen des Trust-Zertifikats in den Global Trust Store. So laden Sie das Zertifikat hoch:
+   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Trust Store]**.
+   1. Erweitern Sie die Option **[!UICONTROL Hinzufügen Zertifikat aus CER-Datei]** , tippen Sie auf **[!UICONTROL Zertifikatdatei]** auswählen, laden Sie das Zertifikat hoch und klicken Sie auf **[!UICONTROL Senden]**.
+1. Konfigurieren Sie [SOAP](#configure-soap-web-services) - oder [RESTful](#configure-restful-web-services) -Webdienste als Datenquelle und wählen Sie **[!UICONTROL Gegenseitige Authentifizierung]** als Authentifizierungstyp. Wenn Sie mehrere selbstsignierte Zertifikate für `fd-cloudservice` Benutzer konfigurieren, geben Sie den Aliasnamen für das Zertifikat an.
 
 ## Nächste Schritte {#next-steps}
 
