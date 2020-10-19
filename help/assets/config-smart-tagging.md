@@ -3,9 +3,9 @@ title: Asset-Tags mit dem Smart Content Service konfigurieren
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2188'
 ht-degree: 60%
 
 ---
@@ -23,7 +23,7 @@ Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Installieren Sie das neueste [Experience Manager Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+* Installieren Sie das neueste [Experience Manager Service Pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integration mit der Adobe Developer Console {#integrate-adobe-io}
 
