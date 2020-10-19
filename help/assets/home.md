@@ -1,17 +1,17 @@
 ---
-title: Asset-Handbuch
+title: Assets-Anleitung
 description: In diesem Handbuch werden alle Asset-Aufgaben des Experience Managers behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
-user-guide-title: Asset-Handbuch
+user-guide-title: Assets-Anleitung
 translation-type: tm+mt
-source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 20%
+source-wordcount: '344'
+ht-degree: 27%
 
 ---
 
 
-# Asset-Handbuch
+# Assets-Anleitung
 
 In diesem Handbuch werden alle [!DNL Experience Manager Assets] Aufgaben behandelt, z. B. wie digitale Assets erstellt, verwaltet, bereitgestellt und optimiert werden.
 
@@ -22,7 +22,7 @@ In diesem Handbuch werden alle [!DNL Experience Manager Assets] Aufgaben behande
 
 * [Erste Schritte mit Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Experience Manager 6.5 - Versionshinweise](/help/release-notes/home.md)
-* [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Aktuelle Aktualisierungen der Dokumentation](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Sicherheitscheckliste](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 Hilfslinien
@@ -31,9 +31,9 @@ In diesem Handbuch werden alle [!DNL Experience Manager Assets] Aufgaben behande
 |--- |---|
 | [Versionshinweise](/help/release-notes/home.md) | Bietet wichtige Informationen zur aktuellen Version, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
-| [Communities-Benutzerhandbuch](/help/communities/home.md) | Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
-| [Administratorhandbuch](/help/sites-administering/home.md) | Verstehen Sie, wie Sie Experience Manager verwalten. |
-| [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in Experience Manager erläutert. |
+| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
+| [Administratorenanleitung](/help/sites-administering/home.md) | Verstehen Sie, wie Sie Experience Manager verwalten. |
+| [Autorenanleitung](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in Experience Manager erläutert. |
 | [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in Experience Manager in der klassischen Benutzeroberfläche erläutert. |
 | [Screens Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen des Experience Managers. |
