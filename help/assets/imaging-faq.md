@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
 workflow-type: tm+mt
-source-wordcount: '1720'
-ht-degree: 99%
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Die intelligente Bildbearbeitung verwendet Adobe Sensei, um Bilder basierend auf
 
 Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
 
-## Welche Bildformate werden unterstützt?      {#what-image-formats-are-supported}
+## Welche Bildformate werden unterstützt?        {#what-image-formats-are-supported}
 
 Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstützt:
 * JPEG
@@ -96,7 +96,7 @@ Nein. Die intelligente Bildbearbeitung funktioniert nahtlos mit Ihren vorhandene
 
 Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?](#am-i-eligible-to-use-smart-imaging), um die Voraussetzungen für die intelligente Bildbearbeitung zu verstehen.
 
-## Funktioniert Smart Imaging mit HTTPS? Und mit HTTP/2?      {#does-smart-imaging-working-with-https-how-about-http}
+## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?        {#does-smart-imaging-working-with-https-how-about-http}
 
 Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS oder HTTP/2 bereitgestellt wurden.
 
@@ -117,8 +117,8 @@ Für Ihre erste benutzerdefinierte Domäne fallen mit einer Dynamic Media-Lizenz
 
 Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine entsprechende Anfrage stellen.
 
-1. Richten Sie eine Anfrage an den technischen Support (E-Mail: `s7support@adobe.com`).
-1. In der Anfrage geben Sie folgende Informationen an:
+1. [Verwenden Sie die Admin Console, um einen Supportfall zu erstellen.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Geben Sie im Supportfall die folgenden Informationen ein:
 
    1. Name des Hauptansprechpartners, E-Mail, Telefon.
    1. Geben Sie alle Domänen an, für die intelligente Bildbearbeitung aktiviert werden soll (also `images.company.com` oder `mycompany.scene7.com`).
