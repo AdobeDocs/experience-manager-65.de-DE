@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1275'
 ht-degree: 83%
 
 ---
@@ -175,6 +175,10 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 ### Bestimmen des korrekten Befehls zum Starten des Upgrades {#determining-the-correct-upgrade-start-command}
 
 Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden, um die Instanz zu öffnen. For upgrading to 6.5, please also see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
+
+>[!IMPORTANT]
+>
+>Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen aktueller als 8), werden zusätzliche Parameter zu Ihrer Befehlszeile hinzugefügt, sobald AEM gestartet wird. Weitere Informationen finden Sie unter Überlegungen zu [Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 Beachten Sie, dass beim Starten von AEM mit dem Start-Skript das Upgrade nicht gestartet wird. Die meisten Kunden starten AEM mithilfe des Start-Skripts und haben dieses Start-Skript so angepasst, dass Schalter für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. eingeschlossen sind. Aus diesem Grund empfehlen wir, dieser Anleitung zu folgen, um den korrekten Upgrade-Befehl zu bestimmen:
 
