@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
+source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Der Vorgang &quot;Verschieben der Seite&quot;ist jetzt im asynchronen Modus verf
 
 ### Ungültige Inhalte im CDN-Cache {#invalidate-cdn-cached-content}
 
-Sie können jetzt die[!DNL  Dynamic Media] Benutzeroberfläche verwenden, um zwischengespeicherte Content Versand Network (CDN)-Inhalte ungültig zu machen. Die aktualisierten Assets stehen daher sofort zur Verfügung, anstatt darauf zu warten, dass der Cache abläuft. Sie können CDN für ungültig erklären, indem Sie:
+Sie können jetzt die [!DNL Dynamic Media] Benutzeroberfläche verwenden, um zwischengespeicherte Content Versand Network (CDN)-Inhalte ungültig zu machen. Die aktualisierten Assets stehen daher sofort zur Verfügung, anstatt darauf zu warten, dass der Cache abläuft. Sie können CDN für ungültig erklären, indem Sie:
 
 * Erstellen einer Vorlage für die Ungültigmachung eines CDN: Auswählen von Assets und formularverknüpften vorlagenbasierten URLs
 
