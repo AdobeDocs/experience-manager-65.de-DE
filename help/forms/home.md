@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager 6.5 Forms Guide
-seo-title: Benutzerhandbuch zu AEM 6.5 Forms
+title: Adobe Experience Manager 6.5, Forms-Anleitung
+seo-title: AEM 6.5 Forms-Handbuch
 description: Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellung, Verwaltung, Veröffentlichung und Aktualisierung digitaler Formulare.
 seo-description: Behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellung, Verwaltung, Veröffentlichung und Aktualisierung digitaler Formulare.
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 5b5937303dd543195b6c8300e6579a58e03a97d1
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 30%
+source-wordcount: '369'
+ht-degree: 37%
 
 ---
 
 
-# Adobe Experience Manager 6.5 Forms Guide
+# Adobe Experience Manager 6.5, Forms-Anleitung
 
 Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellung, Verwaltung, Veröffentlichung und Aktualisierung digitaler Formulare.
 
@@ -30,9 +30,9 @@ Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellun
 | [Versionshinweise](/help/release-notes/home.md) | Bietet wichtige Informationen zur neuesten Version von AEM, einschließlich neuer, unterstützter Plattformen, veralteter und entfernter Funktionen und bekannter Probleme |
 | [Benutzerhandbuch für Assets](/help/assets/home.md) | Erfahren Sie, wie Sie digitale Assets erstellen, verwalten, bereitstellen und optimieren. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
-| [Communities-Benutzerhandbuch](/help/communities/home.md) | Erstellen Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
-| [Administratorhandbuch](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
-| [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
+| [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
+| [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
+| [Autorenanleitung](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM der klassischen Benutzeroberfläche erläutert. |
 | [Screens Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
