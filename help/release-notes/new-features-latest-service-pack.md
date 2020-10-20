@@ -4,7 +4,7 @@ description: Neue Funktionen in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
+source-git-commit: 750e3729a33718d54dca8b2514468d4a40910d4c
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 6%
@@ -81,7 +81,8 @@ Sie können den [!DNL Experience Manager Forms] Server jetzt so konfigurieren, d
 
 ### Integration des Formulardatenmodells mit RESTful-APIs auf einem Server mit einer Zwei-Wege-SSL-Implementierung {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] Formulardatenmodell kann jetzt mit RESTful-APIs auf einem Server, auf dem ein bidirektionales SSL implementiert ist, integriert werden.
+[!DNL Experience Manager Forms] Formulardatenmodell kann jetzt mit RESTful-APIs auf einem Server [integriert werden, auf dem ein bidirektionales SSL implementiert ist](../../help/forms/using/configure-data-sources.md).
+
 
 ### Neue Unterstützung für [!DNL Adobe Sign] Text-Tags im automatisierten Forms-Konvertierungsdienst {#sign-integration-acroform-afcs}
 
