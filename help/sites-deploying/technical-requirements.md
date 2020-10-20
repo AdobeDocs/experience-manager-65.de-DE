@@ -11,10 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a299e26668b1f1f08cca8d4a8085da185522ec96
+source-git-commit: 7065a6b984afb18c188acd848b9b77da7da67749
 workflow-type: tm+mt
 source-wordcount: '3118'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -47,6 +47,7 @@ Mindestanforderungen für die Ausführung von Adobe Experience Manager:
 >
 >* Digitale Assets benötigen mehr Grundspeicher. Einzelheiten finden Sie unter [Bereitstellung und Wartung](/help/sites-deploying/deploy.md#default-local-install).
 >* Das [AEM Forms Add-on-Paket](/help/forms/using/installing-configuring-aem-forms-osgi.md) benötigt 15 GB temporären Speicherplatz. 
+
 >
 
 
@@ -224,7 +225,7 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen in Pro
 | Oracle Solaris 11 | Z: Nicht unterstützt |
 | IBM AIX 7.2 | Z: Nicht unterstützt |
 
-1. Linux Kernel 2.6, 3.x und 4.x beinhaltet Derivate von Red Hat Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. Add-on-Funktionen von AEM Forms werden nur auf CentOS 7 sowie Red Hat Enterprise Linux 7 unterstützt.
+1. Linux Kernel 2.6, 3.x und 4.x beinhaltet Derivate von Red Hat Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Forms-Add-On-Funktionen werden nur unter CentOS 7 und Red Hat Enterprise Linux 7 unterstützt.
 1. AEM Forms wird nur auf Ubuntu 16.04 LTS unterstützt.
 1. Linux-Distribution wird von Adobe Managed Services unterstützt.
 1. Microsoft Windows-Produktionsbereitstellungen werden für Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für Nicht-Produktionseinsätze. Neue Bereitstellungen erfolgen auf Anforderung für AEM Sites und Assets.
@@ -457,7 +458,7 @@ Windows x86:
    <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 - Klassische Verfolgung</a> der neuesten Version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 - Klassische</a> neueste Version</td>
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
@@ -499,9 +500,11 @@ Windows x86:
 >* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt.
 >* Die Funktionen von OCR PDF, Optimize PDF und Export PDF werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+
    >
    >
 * Der PDF Generator-Dienst unterstützt nicht Microsoft Windows 10.
+
 >
 
 
@@ -519,6 +522,6 @@ Die XMP-Zurückschreibung wird für die folgenden Plattformen und Dateiformate u
 
 * **Dateiformate**: JPEG, PNG, TIFF, PDF, INDD, AI und EPS.
 
-### Anforderungen für AEM Assets zur Verarbeitung von durch Metadaten schweren Assets unter Linux {#assetsonlinux}
+### Anforderungen an AEM Assets zur Verarbeitung von mit Metadaten versehenen Assets unter Linux {#assetsonlinux}
 
 Der XMPFilesProcessor-Prozess erfordert die Bibliothek GLIBC_2.14, um zu funktionieren. Verwenden Sie einen Linux-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux-Kernel Version 3.1.x. Sie verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer vorherigen Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`beginnen.
