@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '465'
 ht-degree: 21%
 
 ---
@@ -34,7 +34,7 @@ From this dialog, you can also configure the design of the Video component and p
 
 ## Installieren und Konfigurieren von AEM {#install-ffmpeg}
 
-Die Video-Komponente nutzt das Open-Source-Produkt FFmpeg eines Drittanbieters für die Transkodierung von Videos. Heruntergeladen von [https://ffmpeg.org/](https://ffmpeg.org/). Konfigurieren Sie nach der Installation von FFmpeg AEM so, dass ein bestimmter Audio-Codec und bestimmte Laufzeitoptionen verwendet werden.
+Die Video-Komponente nutzt das Open-Source-Produkt FFmpeg eines Drittanbieters für die Transkodierung von Videos. Heruntergeladen von [https://ffmpeg.org/](https://ffmpeg.org/). Nachdem Sie FFmpeg installiert haben, konfigurieren Sie AEM, um einen bestimmten Audio-Codec und bestimmte Laufzeitoptionen zu verwenden.
 
 Gehen Sie wie folgt vor, um FFmpeg unter **Windows** zu installieren:
 
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um FFmpeg unter **Windows** zu installieren:
 
 Gehen Sie wie folgt vor, um FFmpeg unter **Mac OS X** zu installieren:
 
-1. Installieren Sie Xcode unter [developer.apple.com/xcode](hhttps://developer.apple.com/xcode/).
+1. Installieren Sie Xcode unter [developer.apple.com/xcode](https://developer.apple.com/xcode/).
 1. Installieren Sie unter [XQuartz](https://www.xquartz.org) , um [X11](https://support.apple.com/de-de/HT201341)zu erhalten.
 1. Installieren Sie die MacPorts unter [www.macports.org](https://www.macports.org/).
 1. Führen Sie in der Konsole den Befehl `sudo port install ffmpeg` aus und befolgen Sie die Anweisungen auf dem Bildschirm. Stellen Sie sicher, dass der Pfad der `FFmpeg` ausführbaren Datei der `PATH` Systemvariablen hinzugefügt wird.
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor, um FFmpeg unter **Mac OS X 10.6** mit der vorkompiliert
 1. Heben Sie die Archivierung im `/usr/local` Verzeichnis auf.
 1. Führen Sie in der Konsole aus `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Ändern Sie die Pfade entsprechend.
 
-Gehen Sie wie folgt vor, um AEM **zu** konfigurieren:
+Gehen Sie wie **folgt vor, um AEM** zu konfigurieren:
 
 >[!NOTE]
 >
@@ -78,4 +78,4 @@ Gehen Sie wie folgt vor, um AEM **zu** konfigurieren:
 
 >[!NOTE]
 >
->Änderungen an den standardmäßigen Out-of-the-Box-Workflow-Modellen (OOTB) werden beim Aktualisieren der AEM-Instanz nicht beibehalten. Adobe empfiehlt, dass Sie die geänderten Workflow-Modelle kopieren, bevor Sie diese bearbeiten. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>Änderungen an den standardmäßigen Out-of-the-Box-Workflow-Modellen (OOTB) werden beim Aktualisieren Ihrer AEM nicht beibehalten. Adobe empfiehlt, dass Sie die geänderten Workflow-Modelle kopieren, bevor Sie diese bearbeiten. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
