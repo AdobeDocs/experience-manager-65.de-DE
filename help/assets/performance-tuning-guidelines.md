@@ -4,9 +4,9 @@ description: Vorschläge und Anleitungen [!DNL Experience Manager] zu Konfigurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2743'
 ht-degree: 53%
 
 ---
@@ -205,7 +205,7 @@ Stellen Sie darüber hinaus in der Datei `configure.xml` (alternativ in der Umge
 
 >[!CAUTION]
 >
->Eine falsche Konfiguration kann den Server instabil machen, wenn ImageMagick sämtlichen verfügbaren Festplattenspeicher verwendet. The policy changes required to process large files using ImageMagick may impact the [!DNLExperience Manager] performance. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Eine falsche Konfiguration kann den Server instabil machen, wenn ImageMagick sämtlichen verfügbaren Festplattenspeicher verwendet. The policy changes required to process large files using ImageMagick may impact the [!DNL Experience Manager] performance. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
