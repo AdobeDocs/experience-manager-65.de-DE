@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Forms-Handbuch
 description: Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellung, Verwaltung, Veröffentlichung und Aktualisierung digitaler Formulare.
 seo-description: Behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellung, Verwaltung, Veröffentlichung und Aktualisierung digitaler Formulare.
 translation-type: tm+mt
-source-git-commit: 5b5937303dd543195b6c8300e6579a58e03a97d1
+source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '368'
 ht-degree: 37%
 
 ---
@@ -23,7 +23,7 @@ Dieses Handbuch behandelt alle AEM Forms-Aufgaben, einschließlich der Erstellun
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
 
-## AEM 6.5 Benutzerhandbücher
+## AEM 6.5-Guides
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
