@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
+source-git-commit: 4e1f5d549df1db28a8679296afb4b758051d8f6c
 workflow-type: tm+mt
-source-wordcount: '3276'
-ht-degree: 76%
+source-wordcount: '3298'
+ht-degree: 75%
 
 ---
 
@@ -264,7 +264,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-Bit)</br><b>Hinweis:</b> Red Hat Enterprise Linux 6 erreicht das Ende der Wartungsphase und Transitionen zur Extended Life Phase am 30. November 2020. Adobe empfiehlt Red Hat Enterprise Linux 7 für die Aktualisierung und Neuinstallation.</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-Bit)</br><b>Hinweis:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> erreicht die Wartungsphase und Transitionen zur Extended Life Cycle Support Phase am 30. November 2020. Adobe empfiehlt Red Hat Enterprise Linux 7 für Upgrades und Neuinstallationen. Bestehende Installationen können Red Hat Enterprise Linux 6 während der Extended Life Cycle Support Phase verwenden.</p> </td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
