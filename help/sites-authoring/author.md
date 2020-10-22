@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
+source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+workflow-type: tm+mt
+source-wordcount: '544'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 AEM bietet Ihnen zwei Umgebungen:
 
 * Autor
-* Veröffentlichen
+* Veröffentlichen  
 
 Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher ihn lesen können.
 
@@ -35,10 +38,6 @@ Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Übe
 ![chlimage_1-132](assets/chlimage_1-132.png)
 
 In der Autorenumgebung werden die Funktionen von AEM in zwei Benutzeroberflächen bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das Aussehen der Oberfläche, die Sie Ihren Benutzern zur Verfügung stellen.
-
->[!NOTE]
->
->Mit AEM und dem Dispatcher wird diese AEM-Dokumentation veröffentlicht.
 
 ### Autorenumgebung {#author-environment}
 
@@ -96,4 +95,4 @@ Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/over
 
 #### Dispatcher {#dispatcher}
 
-Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Lastverteilung und Caching durch.**
+Um eine optimale Nutzung der Website durch Ihre Besucher zu gewährleisten, führt der **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) Lastverteilung und Caching durch.**
