@@ -3,7 +3,7 @@ title: Konfiguration und Verwaltung der Metadatenfunktionalität.
 description: Konfigurations- und [!DNL Experience Manager Assets] Verwaltungsfunktionen im Zusammenhang mit dem Hinzufügen und Verwalten von Metadaten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1953'
 ht-degree: 54%
@@ -269,7 +269,7 @@ Enter metadata values in the various fields and click **[!UICONTROL Save]** to s
 >[!MORELIKETHIS]
 >
 >* [Metadaten-Konzepte und -Verständnis](metadata-concepts.md).
->* [Bearbeiten von Metadateneigenschaften von mehreren Sammlungen](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+>* [Bearbeiten von Metadateneigenschaften von mehreren Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk).
 >* [Metadaten-Import und -Export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
 >* [Profile zum Verarbeiten von Metadaten, Bildern und Videos](processing-profiles.md).
 >* [Best Practices zum Organisieren digitaler Assets für die Verwendung von Profilen](/help/assets/organize-assets.md)zur Verarbeitung.
