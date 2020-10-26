@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '4006'
+ht-degree: 80%
 
 ---
 
@@ -254,6 +257,7 @@ Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
    * **Datenwörterbuch (optional)**: Das Datenwörterbuch kann mit der Korrespondenz verknüpft werden. Die Assets, die Sie später in diese Korrespondenz einfügen, sollten entweder dasselbe Datenwörterbuch wie Sie es für die Korrespondenz hier auswählen, oder gar kein Datenwörterbuch enthalten.
    * **Tags (optional):** Wählen Sie die Tags aus, die auf die Korrespondenz angewendet werden sollen. Sie können auch einen neuen/benutzerdefinierten Tag-Namen eingeben und die Eingabetaste drücken, um ihn zu erstellen.
    * **Nachbearbeitung (optional):** Wählen Sie den Nachbearbeitungsprozess aus, der auf die Briefvorlage angewendet werden soll. Es gibt sowohl standardmäßige Nachbearbeitungsprozesse als auch jene, die Sie mithilfe von AEM wie E-Mail und Druck erstellt haben.
+
    ![Eigenschaften der Korrespondenz](assets/createcorrespondenceproperties.png)
 
 1. Das System zeigt eine Nachricht an: „Brief erfolgreich erstellt.“ (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done** to go back to the previous page.
@@ -287,6 +291,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
    1. **Einzug:** Vergrößern oder verringern Sie den Einzug des Moduls/Inhalts im Brief. Einzüge werden in Form von Ebenen angegeben, beginnend bei null. Jede Ebene wird um 36 pts eingezogen. Weitere Informationen zum Anpassen von Formularen finden Sie unter **[!UICONTROL Correspondence Management-Konfigurationen]** im [Forms-Workflow](submit-letter-topostprocess.md#formsworkflow).
    1. **Seitenumbruch vor:** Wenn Sie die Funktion „Seitenumbruch vor“ einstellen, werden die Inhalte DIESES Moduls stets auf einer neuen Seite angezeigt.
    1. **Seitenumbruch nach:** Wenn Sie die Funktion „Seitenumbruch nach“ für ein bestimmtes Modul einstellen, werden die Inhalte des Moduls „WEITER“ stets auf der neuen Seite angezeigt.
+
    ![Eingefügte Datenmodule und Layout-Fragmente](assets/insertdmandlf2.png)
 
 1. Tippen Sie zum Bearbeiten eines Moduls auf das Symbol „Bearbeiten“ daneben. After editing the modules, tap **Save**.
@@ -295,6 +300,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 
    1. **Freien Text** zulassen: Wenn &quot;Freien Text zulassen&quot;aktiviert ist, kann der Benutzer in der CCR-Ansicht Inline-Text im Brief hinzufügen. In der CCR-Ansicht wird die Aktion ‚T‘ für jene Zielbereiche aktiviert, für die „Freien Text zulassen“ aktiviert wurde. Wenn der Benutzer darauf tippt, wird er nach einem Namen und einer Beschreibung des Textes gefragt. Anschließend tippt der Benutzer auf „OK“ und dieser Text wird im Bearbeitungsmodus geöffnet, damit der Benutzer Text hinzufügen kann. Das funktioniert wie andere Textmodule
    1. **Sperrungsreihenfolge:** Sperrt die Reihenfolge der Unterformulare im Brief. Der Autor ist nicht befugt, die Reihenfolge der Unterformulare/Komponenten beim Erstellen des Briefs zu ändern.
+
    Auf dieser Seite können Sie für jedes der Assets der Unterformulare auch die folgenden Optionen einstellen:
 
    1. **Reihenfolge der Assets**&#x200B;ändern: Ziehen Sie ein Asset per Drag &amp; Drop, indem Sie das Symbol &quot;Neu anordnen&quot;für ein Asset gedrückt halten ( ![Ziehen](assets/dragndrop.png)).
@@ -309,6 +315,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 
    * Die **Feldelemente** können mit einem Literal, einem Datenwörterbuchelement, einem Asset oder einem vom Benutzer angegebenen Wert verknüpft werden. Sie können ein Feldelement ignorieren, indem Sie es an die Option „Ignorieren“ binden.
    * Die **Variablenelemente** können mit einem Literal, mit Datenwörterbuchelementen, mit einem Feld, einer Variablen, einem Asset oder einem vom Benutzer angegebenen Wert verknüpft werden.
+
    Es folgen einige Hauptfelder in der Verknüpfung:
 
    * **Mehrzeilig**: Sie können angeben, ob der Dateneintrag für ein Feld oder eine Variable mehrzeilig ist. Wenn Sie diese Option auswählen, wird ein mehrzeiliges Eingabefeld für das Feld oder die Variable in der Datenbearbeitungsansicht angezeigt. Das Feld oder die Variable werden auch mehrzeilig in den Daten- und Inhaltsansichten der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Das mehrzeilige Eingabefeld ähnelt dem Feld zur Eingabe von Kommentaren in einem Textmodul. Die Option „Mehrzeilig“ ist nur für Felder und Variablen mit Verbindungstyp „Benutzer“ oder nicht geschützte Datenlexikonelemente verfügbar.
@@ -316,6 +323,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 
    * **Validierung** von Feldern/Variablen: Um eine erweiterte Validierung des Werts eines Felds oder einer Variablen zu ermöglichen, können Sie dem Feld oder der Variablen einen Validator zuweisen. Die Option ist nur für Felder und Variablen mit Verbindungstyp „Benutzer“ oder nicht geschützte Datenlexikonelemente verfügbar.
    * ******Beschriftung und QuickInfo:** Beschriftung ist die Beschreibung des Feldes, das in der CRR-Benutzeroberfläche vor dem Feld angezeigt wird. Diese Option ist für Felder und Variablen mit Verbindungstyp &quot;Benutzer&quot;oder ungeschützte Datenwörterbuchelemente verfügbar.
+
    Es folgen die Validierungstypen, die Sie für die Felder verwenden können:
 
    * **Validator für Zeichenfolge:** Verwenden Sie den Validator für Zeichenfolge, um die minimale und maximale Länge der in ein Feld oder eine Variable eingegebenen Zeichenfolge festzulegen. Wenn Sie einen Validator für Zeichenfolge erstellen, stellen Sie sicher, dass Sie gültige Überprüfungsparameter angeben. Geben Sie eine gültige Länge für Mindest- und Höchstwerte ein. Für den Validator für Zeichenfolge können Sie die Mindest- und Höchstlänge des Wertes angeben, der eingegeben werden kann. Wenn der eingegebene Wert nicht der angegebenen Mindest- und Höchstlänge entspricht, wird das entsprechende Feld in der CCR-Benutzeroberfläche rot markiert.
@@ -334,7 +342,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 ### Richten Sie die Anlagen ein {#set-up-the-attachments}
 
 1. Select **Add Asset**.
-1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber Sie können auch Bilder anhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/managing-assets-touch-ui.md).
+1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber auch Bilder anzuhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/manage-assets.md).
 1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap **Lock Order**. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
 1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
 1. Tap **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Geben Sie eine Anlage als „Ausgewählt“ an, wenn sie in der CCR-Benutzeroberfläche vorausgewählt werden soll.
@@ -360,7 +368,7 @@ Die folgenden Werte in der Tabelle
   <tr> 
    <td> </td> 
    <td><strong>Literal</strong></td> 
-   <td><strong>Asset-</strong></td> 
+   <td><strong>Asset</strong></td> 
    <td><strong>Datenwörterbuch</strong></td> 
    <td><strong>Groß-/Kleinschreibung</strong></td> 
    <td><strong>User</strong></td> 
