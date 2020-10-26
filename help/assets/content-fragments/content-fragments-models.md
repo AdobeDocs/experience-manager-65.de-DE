@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfra
 
 Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 
-* Aktivieren Sie die Verwendung von Inhaltsfragmentmodellen im Konfigurations-Manager
+* Enable the use of content fragment models in the [Configuration Browser](/help/sites-administering/configurations.md)
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an
 
 ### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager   {#enable-content-fragment-models-in-configuration-manager}
