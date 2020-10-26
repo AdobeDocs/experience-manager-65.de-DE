@@ -3,7 +3,7 @@ title: Verwalten von Metadaten für digitale Assets in  [!DNL Adobe Experience M
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 56%
@@ -163,7 +163,7 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 
 ## Metadaten von Sammlungen bearbeiten {#collections-metadata}
 
-Weitere Informationen finden Sie unter [Ansicht und Bearbeiten von Sammlungsmetadaten](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) und [Bearbeiten von Metadaten mehrerer Sammlungen als Massendatei](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+Weitere Informationen finden Sie unter [Ansicht und Bearbeiten von Sammlungsmetadaten](/help/assets/manage-collections.md#view-edit-collection-metadata) und [Bearbeiten von Metadaten mehrerer Sammlungen als Massendatei](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Anwenden eines Metadatenprofils auf Ordner {#applying-a-metadata-profile-to-folders}
 
@@ -242,7 +242,7 @@ Sie können ein Metadaten-Profil aus einem Ordner im Menü &quot; **[!UICONTROL 
 >[!MORELIKETHIS]
 >
 >* [Metadaten-Konzepte und -Verständnis](metadata-concepts.md).
->* [Bearbeiten von Metadateneigenschaften von mehreren Sammlungen](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Bearbeiten von Metadateneigenschaften von mehreren Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Metadaten-Import und -Export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
