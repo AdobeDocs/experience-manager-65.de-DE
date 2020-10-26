@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 80%
@@ -151,7 +151,7 @@ You can change the permissions granted/denied to a given user by selecting or cl
 
 Wo sich das Häkchen im Raster befindet, gibt zudem an, welche Berechtigungen Benutzer in welchen AEM-Bereichen (also Pfaden) haben.
 
-### Aktionen  {#actions}
+### Aktionen    {#actions}
 
 Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Für jede Seite in der Hierarchie können Sie angeben, zu welcher Aktion der Benutzer auf der Seite berechtigt ist. [Mit Berechtigungen](#permissions-and-acls) können Sie Aktionen zulassen oder ablehnen.
 
@@ -205,7 +205,7 @@ Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Fü
 
 >[!NOTE]
 >
->AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/managing-collections-touch-ui.md). Werden solchen Gruppen jedoch ACLs manuell hinzugefügt, kann dies zu Sicherheitsschwachstellen in AEM führen. Adobe empfiehlt, manuelles Hinzufügen von ACLs zu vermeiden.
+>AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/manage-collections.md). Werden solchen Gruppen jedoch ACLs manuell hinzugefügt, kann dies zu Sicherheitsschwachstellen in AEM führen. Adobe empfiehlt, manuelles Hinzufügen von ACLs zu vermeiden.
 
 ### Zugriffssteuerungslisten und ihre Bewertung {#access-control-lists-and-how-they-are-evaluated}
 
@@ -238,7 +238,7 @@ Zugriffssteuerungslisten setzen sich aus einzelnen Berechtigungen zusammen und d
 
 | **Aktion** | **Beschreibung** |
 |---|---|
-| Zulassen (Häkchen) | Mit AEM WCM kann der Benutzer die Aktion auf dieser Seite oder auf untergeordneten Seiten durchführen. |
+| Zulassen (Häkchen) | AEM WCM ermöglicht es dem Benutzer, die Aktion auf dieser Seite oder auf untergeordneten Seiten durchzuführen. |
 | Ablehnen (kein Häkchen) | AEM WCM erlaubt es dem Benutzer nicht, die Aktion auf dieser Seite oder auf untergeordneten Seiten durchzuführen. |
 
 Die Berechtigungen gelten auch für untergeordnete Seiten.
@@ -496,7 +496,7 @@ Gehen Sie wie folgt vor, um das Kennwort eines Benutzers zu ändern.
 >
 >Sie können das Administratorkennwort nicht mit der Sicherheitskonsole ändern. Um das Kennwort für das Admin-Konto zu ändern, verwenden Sie die unter „Granite-Vorgänge“ bereitgestellte [Benutzerkonsole.](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user)
 >
->Wenn Sie AEM Forms unter JEE verwenden, verwenden Sie nicht die unten stehenden Anweisungen zum Ändern des Kennworts, sondern verwenden Sie AEM Forms in der JEE Admin Console (/adminui), um das Kennwort zu ändern.
+>Wenn Sie AEM Forms on JEE verwenden, verwenden Sie keine der folgenden Anweisungen zum Ändern des Kennworts, sondern verwenden Sie AEM Forms on JEE Admin Console (/adminui), um das Kennwort zu ändern.
 
 1. Doppelklicken Sie in der **Sicherheitskonsole** auf den Namen des Benutzers, dessen Kennwort geändert werden soll.
 1. Klicken Sie auf die Registerkarte **Eigenschaften** (sofern noch nicht aktiv).
