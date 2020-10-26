@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2803'
 ht-degree: 2%
 
 ---
@@ -110,6 +110,8 @@ Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oa
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Wählen Sie den Kontext und bearbeiten Sie die Eigenschaften. Aktivieren Sie Cloud-Konfigurationen, wenn sie noch nicht aktiviert sind.
 
    ![config-properties](assets/config-propertiespng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. **Konfiguration des Facebook-Cloud-Dienstes erstellen/bearbeiten** .
 
@@ -260,6 +262,8 @@ Die Granite OAuth Application and Provider-Instanz der [Adobe](#adobe-granite-oa
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Wählen Sie den Kontext und bearbeiten Sie die Eigenschaften. Aktivieren Sie Cloud-Konfigurationen, wenn sie noch nicht aktiviert sind.
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Konfiguration des Twitter-Cloud-Dienstes erstellen/bearbeiten.
 
@@ -460,7 +464,7 @@ Wenn in den Protokollen übergreifende Warnungen angezeigt werden, wird empfohle
 
 Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
 
-1. Aus globaler Navigation: Wählen Sie **Tools,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Aus globaler Navigation: Wählen Sie **Tools, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Erstellen Sie einen Index mit dem Namen ntBaseLucene-oauth aus einer Kopie von ntBaseLucene:
 
    * under node `/oak:index`
