@@ -3,7 +3,7 @@ title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mit Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 8%
@@ -19,7 +19,7 @@ Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokum
 
 ## Assets in Ordnern organisieren {#organize-using-folders}
 
-Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in Ordnern zu speichern. Es entspricht dem Organisieren von Dateien in Ordnern in unserem lokalen Dateisystem. Weitere Informationen zum Erstellen und Verwalten von Ordnern finden Sie unter [Verwalten von Assets](managing-assets-touch-ui.md). Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie mit den Dateien in diesen Ordnern umgehen, kann erhebliche Auswirkungen auf die Verarbeitung dieser Assets haben. Durch die Verwendung konsistenter und geeigneter Strategien zur Datei- und Ordnerbenennung sowie einer bewährten Metadatenpraxis können Sie das Beste aus Ihrem digitalen Assets-Repository machen.
+Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in Ordnern zu speichern. Es entspricht dem Organisieren von Dateien in Ordnern in unserem lokalen Dateisystem. Weitere Informationen zum Erstellen und Verwalten von Ordnern finden Sie unter [Verwalten von Assets](manage-assets.md). Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie mit den Dateien in diesen Ordnern umgehen, kann erhebliche Auswirkungen auf die Verarbeitung dieser Assets haben. Durch die Verwendung konsistenter und geeigneter Strategien zur Datei- und Ordnerbenennung sowie einer bewährten Metadatenpraxis können Sie das Beste aus Ihrem digitalen Assets-Repository machen.
 
 * In den meisten Fällen wächst Ihr Repository für digitale Assets immer. Daher ist es wichtig, die Verwendung von Metadaten, die Ordnerstruktur und die Dateibenennung zu einem frühen Zeitpunkt des Inhaltserstellungszyklus zu formalisieren.
 * Verwenden Sie Ordner, um eine konsistente Speicherstruktur für die digitalen Assets durchzusetzen. Diese Konsistenz hilft Ihnen, Ihre Assets besser zu verwalten und zu verarbeiten. Beispielsweise können Sie mithilfe von Assets, die in den folgenden Ordnertypen platziert werden, geeignete [Profil für die Verarbeitung](processing-profiles.md)von Assets verwenden:
@@ -53,7 +53,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 
 Mit den Asset-Sammlungen in [!DNL Experience Manager Assets]können Sie die Erstellung, Bearbeitung und Freigabe von Assets zwischen Benutzern optimieren. Erstellen Sie verschiedene Arten von Sammlungen basierend auf der Art und Weise, wie Sie sie verwenden, einschließlich Sammlungen, die eine statische Referenz-Liste von Assets, Ordnern und Sammlungen enthalten, sowie Sammlungen, die Assets basierend auf Suchkriterien abrufen.  Sie können auch Sammlungen mit Assets von verschiedenen Orten erstellen und sie für mehrere Benutzer mit unterschiedlichen Zugriffs-, Anzeige- und Bearbeitungsberechtigungen freigeben.
 
-For more information, see [manage collections](managing-collections-touch-ui.md)
+For more information, see [manage collections](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
