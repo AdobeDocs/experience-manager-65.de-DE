@@ -3,7 +3,7 @@ title: Einführung in [!DNL Adobe Experience Manager Assets].
 description: Erfahren Sie mehr über das digitale Asset-Management, seine Anwendungsfälle [!DNL Adobe Experience Manager Asset] und Angebote.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 38%
@@ -67,7 +67,7 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 * **Darstellungen**: Eine Darstellung ist die binäre Darstellung eines Assets. [!DNL Assets] verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
 
-* **Versionen**: Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versionen**: Bei der Versionierung wird ein Schnappschuss digitaler Assets zu einem bestimmten Zeitpunkt erstellt. Sie können frühere Versionen von Assets wiederherstellen. See [versioning in Assets](manage-assets.md#asset-versioning).
 
 * **Teilassets**: Unter-Assets sind Assets, aus denen ein Asset besteht, z. B. Ebenen in einer [!DNL Adobe Photoshop] Datei oder Seiten in einer PDF-Datei. In [!DNL Assets], you can manage sub-assets as you would assets.
 
