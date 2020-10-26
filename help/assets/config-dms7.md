@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5944'
 ht-degree: 84%
@@ -237,7 +237,7 @@ Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden,
 * Rastern einer Adobe Illustrator- (.AI) oder Adobe Photoshop Encapsulated Postscript-Datei (.EPS)
 * Hinweis: Video- und Bilddarstellungsprofile können jeweils zum Definieren der Verarbeitung von Videos und Bildern verwendet werden.
 
-Siehe [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Siehe [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
 **So konfigurieren Sie die Asset-Verarbeitung**
 
@@ -428,7 +428,7 @@ Wenn das Rotations-Set hochgeladen und veröffentlicht wird, aktivieren Sie den 
 
    Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 
-1. Klicken Sie auf der Navigationsleiste im oberen Seitenbereich auf **[!UICONTROL Einrichtung]>[!UICONTROL Anwendungseinstellungen]>[!UICONTROL Stapelsatzvorgaben]>[!UICONTROL Stapelsatzvorgabe]**.
+1. Klicken Sie auf der Navigationsleiste im oberen Seitenbereich auf **[!UICONTROL Einrichtung] > [!UICONTROL Anwendungseinstellungen] > [!UICONTROL Stapelsatzvorgaben ]> [!UICONTROL Stapelsatzvorgabe]**.
 
    Hinweis: **[!UICONTROL Formular anzeigen]**, wie oben rechts auf der Detailseite festgelegt, ist die Standardansicht.
 
