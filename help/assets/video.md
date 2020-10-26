@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 96%
@@ -70,7 +70,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
       * Zeigen Sie das Quellvideo und die kodierten Ausgabeformate des Videos zusammen mit den zugehörigen Miniaturansichten an:
          [Videos vorab anzeigen](managing-video-assets.md#upload-and-preview-video-assets) oder [Assets vorab anzeigen](previewing-assets.md)
          [Anzeigen von Videowiedergaben](video-renditions.md)
-         [Videoausgabeformate verwalten](managing-assets-touch-ui.md#managing-renditions)
+         [Videoausgabeformate verwalten](manage-assets.md#managing-renditions)
 
       * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
       * [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md)
@@ -80,16 +80,16 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
          [Anzeigen der Eigenschaften von Videoausgabeformaten](video-renditions.md)
 
       * Bearbeiten Sie die Eigenschaften von Videos wie Titel, Beschreibung und Tags sowie benutzerdefinierte Metadatenfelder:
-         [Bearbeiten von Videoeigenschaften](managing-assets-touch-ui.md#editing-properties)
+         [Bearbeiten von Videoeigenschaften](manage-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
       * [Metadatenschemata](metadata-schemas.md)
    * Videos prüfen, genehmigen und mit Anmerkungen versehen und die vollständige Versionskontrolle behalten
 
-      * [Kommentieren von Videos](managing-video-assets.md#annotate-video-assets) oder [Kommentieren von Assets](managing-assets-touch-ui.md#annotating)
+      * [Kommentieren von Videos](managing-video-assets.md#annotate-video-assets) oder [Kommentieren von Assets](manage-assets.md#annotating)
 
-      * [Versionen erstellen](managing-assets-touch-ui.md#asset-versioning)
-      * [Anwenden von Workflows auf Assets](assets-workflow.md) oder unter [Starten eines Workflows für ein Asset](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Versionen erstellen](manage-assets.md#asset-versioning)
+      * [Anwenden von Workflows auf Assets](assets-workflow.md) oder unter [Starten eines Workflows für ein Asset](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Ordner-Assets prüfen](bulk-approval.md)
       * [Projekte](../sites-authoring/projects.md)
@@ -1165,7 +1165,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt
     Grundsätzlich sollte die Kapitel-VTT-Datei denselben Namen haben wie die Videodatei und über den Dateinamenanhang „chapters“ verfügen. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 1. Laden Sie die WebVTT-Kapiteldatei in AEM hoch.
 
-   Siehe [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Siehe [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
 1. Führen Sie einen der folgenden Schritte aus:
 
