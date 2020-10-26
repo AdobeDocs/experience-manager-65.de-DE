@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3218'
 ht-degree: 73%
 
 ---
@@ -51,7 +51,7 @@ Bei den in diesem Dokument beschriebenen Schritten wird vorausgesetzt, dass Sie 
 >[!NOTE]
 >
 >Folgende Übung könnte auch für die Einrichtung einer bearbeitbaren Seitenvorlage in einem neuen Projekt von Interesse sein:
->[Erste Schritte mit AEM-Sites Teil 2 - Erstellen einer Basisseite und Vorlage](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Erste Schritte mit AEM Sites Teil 2 - Erstellen einer Basisseite und Vorlage](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Erstellen neuer Vorlagen {#creating-a-new-template}
 
@@ -180,7 +180,7 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 
 ## Verwenden von CRXDE Lite {#using-crxde-lite}
 
-1. Ein neuer Ordner (unter /conf) kann entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
+1. Ein neuer Ordner (unter /conf) kann für Ihre Instanz entweder programmgesteuert oder mit CRXDE Lite erstellt werden.
 
    Nur die folgende Struktur darf verwendet werden:
 
@@ -226,6 +226,8 @@ Zum Erstellen eines neuen Ordners stehen Ihnen die folgenden Optionen zur Auswah
 >[!NOTE]
 >
 >Im Konfigurationsbrowser können Sie den Ordner „global“ bearbeiten und die Option **Bearbeitbare Vorlagen** aktivieren, wenn Sie in diesem Ordner Vorlagen erstellen möchten. Davon ist jedoch abzuraten.
+>
+>See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 ### ACLs und Gruppen {#acls-and-groups}
 
@@ -248,7 +250,7 @@ In der folgenden Tabelle sind die erforderlichen Berechtigungen für die Bearbei
 <table>
  <tbody>
   <tr>
-   <th>Pfad     </th>
+   <th>Pfad          </th>
    <th>Rolle/Gruppe</th>
    <th>Berechtigungen<br /> </th>
    <th>Beschreibung</th>
@@ -308,7 +310,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table>
  <tbody>
   <tr>
-   <th>Pfad     </th>
+   <th>Pfad          </th>
    <th>Rolle/Gruppe</th>
    <th>Berechtigungen<br /> </th>
    <th>Beschreibung</th>
@@ -386,7 +388,7 @@ Die vordefinierten Vorlagentypen werden unter dem folgenden Pfad gespeichert:
 
 >[!CAUTION]
 >
->Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen, This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+>Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen. This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
 Ihre Site-spezifischen Vorlagentypen sollten an einer mit dem folgenden Pfad vergleichbaren Stelle gespeichert werden:
 
@@ -534,7 +536,7 @@ When [editing a template you can define the layout](/help/sites-authoring/templa
 
 Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlagen-Editor erstellt und ausgewählt werden.
 
-* Die Eigenschaft `cq:policy`auf dem `root` Knoten
+* The property `cq:policy`, on the `root` node
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem der Seite bereit.
 
@@ -582,7 +584,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
 1. **Zugelassene Vorlagen**
 
-   * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften **](/help/sites-authoring/templates.md#allowing-a-template-author)der entsprechenden Seite oder Stammseite einer Unterverzweigung.
+   * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die Eigenschaft fest:
       `cq:allowedTemplates`
 Im 
