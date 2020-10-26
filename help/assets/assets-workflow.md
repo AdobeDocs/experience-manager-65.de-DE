@@ -3,7 +3,7 @@ title: Verarbeiten von Assets mit Workflows
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Darstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 27%
@@ -23,11 +23,11 @@ Zur Verarbeitung von Assets [!DNL Experience Manager] werden Workflows verwendet
 
 Standardmäßig werden alle hochgeladenen Assets mit dem [!UICONTROL DAM Update Asset] -Arbeitsablauf verarbeitet. Der Arbeitsablauf wird für jedes hochgeladene Asset ausgeführt und führt grundlegende Aufgaben zur Asset-Verwaltung durch, wie z. B. Generierung von Ausgabeformaten, Schreibback von Metadaten, Extraktion von Seiten, Extraktion von Medien und Transkodierung.
 
-Informationen zu den verschiedenen Workflow-Modellen, die standardmäßig verfügbar sind, finden Sie unter **[!UICONTROL Werkzeuge > Workflow > Modelle]** in [!DNL Experience Manager].
+Die verschiedenen Workflow-Modelle, die standardmäßig verfügbar sind, finden Sie unter **[!UICONTROL Werkzeuge > Workflow > Modelle]** in [!DNL Experience Manager].
 
 ![Einige der standardmäßigen Arbeitsabläufe](assets/aem-default-workflows.png)
 
-*Abbildung: Einige der standardmäßigen Workflows in[!DNL Experience Manager].*
+*Abbildung: Einige der standardmäßigen Workflows in [!DNL Experience Manager].*
 
 ## Apply workflows to process assets {#applying-workflows-to-assets}
 
@@ -84,7 +84,7 @@ Die Vorgehensweise zum Anwenden eines Workflows auf mehrere Ordner ähnelt der V
 
 ## Anwenden eines Workflows auf eine Sammlung {#applying-a-workflow-to-a-collection}
 
-Siehe [Anwenden eines Workflows auf eine Sammlung](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+Siehe [Anwenden eines Workflows auf eine Sammlung](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Automatisches Beginn eines Workflows zur bedingten Verarbeitung von Assets {#auto-execute-workflow-on-some-assets}
 
