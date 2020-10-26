@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '4530'
 ht-degree: 7%
@@ -248,7 +248,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 ### Benutzeroberfläche {#ui-6560}
 
 * Die Oberfläche des Offload-Browsers zeigt nicht alle Auftragsthemen an (NPR-34308).
-* Die Oberfläche des Konfigurationsbrowsers zeigt nicht alle Konfigurationen an (NPR-33644).
+* Die [Konfigurationsbrowser](/help/sites-administering/configurations.md) -Oberfläche zeigt nicht alle Konfigurationen an (NPR-33644).
 * Wenn Sie die `Esc` Eingabetaste drücken, wird das Dialogfeld &quot; **[!UICONTROL Benutzer]** &quot;statt der Liste des Benutzers (NPR-34084) geschlossen.
 
 ### Integrationen {#integrations-6560}
