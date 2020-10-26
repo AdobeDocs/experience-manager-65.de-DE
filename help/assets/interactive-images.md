@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '4334'
 ht-degree: 99%
@@ -222,7 +222,7 @@ Wenn Sie die gewünschten Bilder bereits hochgeladen haben, fahren Sie mit dem n
 
 1. Laden Sie Bildbanner hoch, die interaktiv sein sollen.
 
-   Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Informationen hierzu finden Sie unter [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
    Sie können jetzt dem Bildbanner Hotspots hinzuzufügen. Anweisungen dazu finden Sie in der folgenden Aufgabe.
 
@@ -311,7 +311,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern, und kehren Sie zur Seite „Durchsuchen“ zurück.
 1. Veröffentlichen Sie das interaktive Bild. Durch eine Veröffentlichung kann das Banner über die Cloud bereitgestellt werden. Außerdem wird ein Einbettungscode zur Integration auf der Website von Dritten generiert. 
 
-   Informationen hierzu finden Sie unter [Veröffentlichen von Assets](/help/assets/managing-assets-touch-ui.md#publishing-assets).
+   Informationen hierzu finden Sie unter [Veröffentlichen von Assets](/help/assets/manage-assets.md#publishing-assets).
 
    Nachdem Sie Hotspots hinzugefügt und das interaktive Bild veröffentlicht haben, können Sie es jetzt einer vorhandenen Website hinzufügen.
 
