@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ee2b13f2fc1f044f119ff54f332844d458663287
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1810'
 ht-degree: 46%
 
 ---
@@ -98,6 +98,7 @@ All cloud service configurations in AEM are consolidated in the `/conf` folder i
 Konfigurieren des Ordners für Cloud-Dienstkonfigurationen:
 
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud-Dienstkonfigurationen zu erstellen und zu konfigurieren.
 
    1. Wählen Sie im **[!UICONTROL Konfigurationsbrowser]** den Ordner `global`und tippen Sie auf **[!UICONTROL Eigenschaften]**.
