@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragm
 >
 >Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen. 
 
-Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection). Danach können Sie Folgendes tun:
+Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md#adding-assets-to-a-collection). Danach können Sie Folgendes tun:
 
 1. Öffnen Sie das Fragment und wählen Sie im seitlichen Bedienfeld **Zugehörige Inhalte** aus.
 
