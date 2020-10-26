@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2749'
 ht-degree: 84%
@@ -25,7 +25,7 @@ Ein Inhaltsfragment erweitert ein Standard-Asset. Weitere Informationen zu Inhal
 
 * [Erstellen und Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 
-* Weitere Informationen zu Standard-Assets finden Sie unter [Verwalten von Assets](/help/assets/managing-assets-touch-ui.md) und [Anpassen und Erweitern von Assets](/help/assets/extending-assets.md).
+* Weitere Informationen zu Standard-Assets finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md) und [Anpassen und Erweitern von Assets](/help/assets/extending-assets.md).
 
 ## Architektur {#architecture}
 
@@ -61,7 +61,7 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
    * Vorlagen definieren die (grundlegende, texbasierte) Struktur eines Inhaltsfragments, wenn dieses erstellt wird.
    * Die Vorlage wird beim Erstellen des Fragments zu diesem kopiert. Weitere Änderungen an der Vorlage werden nicht für bereits vorhandene Fragmente übernommen.
    * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
-   * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) funktionieren anders als andere Vorlagen innerhalb des AEM-Ökosystems (z. B. Seitenvorlagen usw.). Daher sollten sie separat berücksichtigt werden.
+   * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) funktionieren anders als andere Vorlagen im AEM Ökosystem (z. B. Seitenvorlagen usw.). Daher sollten sie separat berücksichtigt werden.
    * Wenn der MIME-Typ eines Inhalts auf einer Vorlage basiert, wird er für den jeweiligen Inhalt verwaltet. Folglich kann jedes Element und jede Variante einen anderen MIME-Typ aufweisen.
 
 ### Integration mit Assets {#integration-with-assets}
@@ -129,7 +129,7 @@ Weitere Informationen finden Sie unter [Inhaltsfragmente – Überlegungen zum 
 >
 >Derzeit wird die [Kernkomponente für Inhaltsfragmente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) dafür empfohlen. Weitere Informationen finden Sie unter [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
 
-AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für [****Inhaltsfragmente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)bereit, eine[Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this** Content Fragment **core component.
+AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen anderen Asset-Typen. AEM stellt die Kernkomponente für [**** Inhaltsfragmente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) bereit, eine [Komponente, mit der Sie Inhaltsfragmente in Seiten einfügen können](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this **Content Fragment** core component.
 
 * Die Komponente verwendet die `fragmentPath`-Eigenschaft für Verweise auf das tatsächliche Inhaltsfragment. Die `fragmentPath`-Eigenschaft wird wie ähnliche Eigenschaften anderer Asset-Typen gehandhabt, beispielsweise wenn das Inhaltsfragment zu einem anderen Speicherort verschoben wird.
 
@@ -236,7 +236,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
    * Das entsprechende Schemaformular ist mit dem Fragment-Editor integriert.
 
-## Server-seitige API für die Inhaltsfragmentverwaltung       {#the-content-fragment-management-api-server-side}
+## Server-seitige API für die Inhaltsfragmentverwaltung         {#the-content-fragment-management-api-server-side}
 
 Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
@@ -246,7 +246,7 @@ Sie können die serverseitige API für den Zugriff auf Inhaltsfragmente verwende
 >
 >Es wird dringend empfohlen, die serverseitige API zu verwenden, anstatt direkt auf die Inhaltsstruktur zuzugreifen.
 
-### Hauptschnittstellen       {#key-interfaces}
+### Hauptschnittstellen         {#key-interfaces}
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
@@ -355,7 +355,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
 
 
-### Anpassen mit adaptTo()       {#adapting-using-adaptto}
+### Anpassen mit adaptTo()         {#adapting-using-adaptto}
 
 Folgendes kann angepasst werden:
 
@@ -494,7 +494,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Beispiel: Erstellen eines neuen Inhaltsfragments       {#example-creating-a-new-content-fragment}
+### Beispiel: Erstellen eines neuen Inhaltsfragments         {#example-creating-a-new-content-fragment}
 
 Um ein neues Inhaltsfragment zu programmieren, verwenden Sie:
 
@@ -508,7 +508,7 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Beispiel: Angeben des Intervalls für das automatische Speichern       {#example-specifying-the-auto-save-interval}
+### Beispiel: Angeben des Intervalls für das automatische Speichern         {#example-specifying-the-auto-save-interval}
 
 Das Intervall für das automatische Speichern (gemessen in Sekunden) kann mit dem Konfigurations-Manager (ConfMgr) definiert werden:
 
