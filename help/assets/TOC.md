@@ -6,7 +6,7 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Kreativelemente.
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 51%
@@ -113,7 +113,7 @@ ht-degree: 51%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integration](aem-cc-integration-best-practices.md)
    + [Integrieren mit [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in Assets](drm.md)
-   + [Demopaket für Asset-Einblicke verwenden](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Demopaket für Asset-Einblicke verwenden](use-demo-package-for-asset-insights.md)
    + [Best Practices für Dateiformate in Assets](assets-file-format-best-practices.md)
    + [Bewährte Verfahren zur Überwachung von Assets](assets-monitoring-best-practices.md)
    + [Unterstützung von Camera Raw](camera-raw.md)
@@ -139,21 +139,21 @@ ht-degree: 51%
    + [Inhaltsfragmente – Markdown](content-fragments/content-fragments-markdown.md)
    + [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
-   + [Verwalten digitaler Assets](managing-assets-touch-ui.md)
-   + [Verwalten von Sammlungen](managing-collections-touch-ui.md)
+   + [Verwalten digitaler Assets](manage-assets.md)
+   + [Verwalten von Sammlungen](manage-collections.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
    + [Verwalten von Video-Assets](managing-video-assets.md)
    + [Erstellen von Übersetzungsprojekten](translation-projects.md)
    + [Vorbereiten von Assets für die Übersetzung](preparing-assets-for-translation.md)
    + [Herunterladen von Assets von Experience Manager](download-assets-from-aem.md)
-   + [Lightbox](touch-ui-light-box.md)
-   + [Asset-Einblicke](touch-ui-asset-insights.md)
-   + [Asset-Einblicke über DTM aktivieren](touch-ui-using-dtm-for-asset-insights.md)
-   + [Asset-Einblicke konfigurieren](touch-ui-configuring-asset-insights.md)
+   + [Lightbox](light-box.md)
+   + [Asset-Einblicke](asset-insights.md)
+   + [Asset-Einblicke über DTM aktivieren](use-dtm-for-asset-insights.md)
+   + [Asset-Einblicke konfigurieren](configure-asset-insights.md)
    + [Assets ein- und auschecken](check-out-and-submit-assets.md)
    + [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
-   + [Verwenden von Seiten-Tracker und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md)
+   + [Verwenden von Seiten-Tracker und Einbettungscode in Webseiten](use-page-tracker.md)
    + [Verwalten von ebenenübergreifenden Assets](managing-linked-subassets.md)
    + [Zugehörige Assets](related-assets.md)
    + [Freigeben privater Ordner](private-folder.md)
