@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 56c9bc1ea99dcb93af21d8b26bac8792512f4d42
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2312'
 ht-degree: 94%
@@ -24,7 +24,7 @@ Mit Dynamic Media können Sie 3D-Assets hochladen, verwalten, anzeigen und als e
 * Optimierte Unterstützung für die Anzeige von 3D-Assets mit der hochwertigen, interaktiven Viewer-Vorgabe „Dimensional“, bereitgestellt von Adobe Dimension.
 * Mit der 3D Media WCM-Komponente können Sie Ihren Seiten in AEM Sites mühelos 3D-Elemente hinzufügen.
 
-Es ist keine zusätzliche Konfiguration erforderlich, um 3D-Elemente in Dynamic Media zu verwenden.
+Für die Verwendung von 3D-Assets in dynamischen Medien ist keine zusätzliche Konfiguration erforderlich.
 
 ![Schuh in 3D](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -32,7 +32,7 @@ Es ist keine zusätzliche Konfiguration erforderlich, um 3D-Elemente in Dynamic 
 
 ## Unterstützte 3D-Formate in Dynamic Media {#supported-three-d-file-formats-in-dm}
 
-Dynamic Media unterstützt die folgenden 3D-Formate.
+Dynamische Medien unterstützen die folgenden 3D-Formate.
 
 Siehe auch [Unterstützte 3D-Formate.](/help/assets/assets-formats.md)
 
@@ -45,19 +45,19 @@ Siehe auch [Unterstützte 3D-Formate.](/help/assets/assets-formats.md)
 
 ## Schnellstart: Arbeiten mit 3D-Assets in Dynamic Media {#quick-start-three-d}
 
-Die folgende Workflow-Beschreibung hilft Ihnen, sich schnell mit 3D-Assets in Dynamic Media - Scene7-Modus vertraut zu machen.
+Die folgende Workflow-Beschreibung hilft Ihnen, sich schnell mit 3D-Assets im Modus &quot;Dynamische Medien - Scene7&quot;vertraut zu machen.
 
 >[!NOTE]
 >
->3D-Assets werden im Dynamic Media-Hybridmodus nicht unterstützt.
+>3D-Assets werden im Modus &quot;Dynamische Medien - Hybrid&quot;nicht unterstützt.
 
-Bevor Sie mit 3D-Assets in Dynamic Media arbeiten, vergewissern Sie sich, dass Ihr AEM-Administrator die Cloud Service für Dynamic Media im Scene7-Modus bereits aktiviert und konfiguriert hat.
+Bevor Sie mit 3D-Assets in dynamischen Medien arbeiten, stellen Sie sicher, dass Ihr AEM-Administrator die Cloud Services für dynamische Medien im Modus &quot;Dynamische Medien - Scene7&quot;bereits aktiviert und konfiguriert hat.
 
 Siehe [Konfiguration von Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in „Konfigurieren von Dynamic Media – Scene7-Modus“ und [Fehlerbehebung in Dynamic Media – Scene7-Modus](/help/assets/troubleshoot-dms7.md).
 
 1. **Hochladen von 3D-Assets**
 
-   * [Hochladen von 3D-Assets zur Verwendung in Dynamic Media](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   * [Hochladen von 3D-Assets zur Verwendung in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
    * [Unterstützte 3D-Dateiformate zum Hochladen in Dynamic Media](#supported-three-d-file-formats-in-dm).
 
 1. **Verwalten von 3D-Assets**
@@ -70,7 +70,7 @@ Siehe [Konfiguration von Dynamic Media Cloud Services](/help/assets/config-dms7.
    * Anzeigen von 3D-Assets
 
       * [Anzeigen von und Interagieren mit 3D-Assets](#viewing-three-d-assets).
-      * [Verwalten der Viewer-Vorgabe](/help/assets/managing-viewer-presets.md)für Dimensionen
+      * [Verwalten der Viewer-Vorgabe](/help/assets/managing-viewer-presets.md)&quot;Dimensionen&quot;
    * Arbeiten mit 3D-Asset-Metadaten
 
       * [Verwalten von Metadaten für digitale Assets](/help/assets/metadata.md).
@@ -111,7 +111,7 @@ Siehe auch [Asset-Vorschau über die Software-Oberfläche](/help/assets/previewi
 
 1. Laden Sie 3D-Assets in AEM hoch.
 
-   Siehe [Hochladen von 3D-Assets zur Verwendung in Dynamic Media.](/help/assets/managing-assets-touch-ui.md#uploading-assets)
+   Siehe [Hochladen von 3D-Assets zur Verwendung in Dynamic Media.](/help/assets/manage-assets.md#uploading-assets)
 
 1. Tippen Sie in AEM auf der **[!UICONTROL Navigationsseite]** auf **[!UICONTROL Assets > Dateien.]**
 1. Tippen Sie oben rechts auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Kartenansicht.]**
