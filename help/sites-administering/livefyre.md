@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 67%
+source-wordcount: '1661'
+ht-degree: 66%
 
 ---
 
@@ -52,6 +52,7 @@ In AEM 6.5 ist das Livefyre-Feature Pack 1.2.6 vorinstalliert. Dieses Paket bein
 ### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General > Configuration Browser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Klicken Sie auf **Erstellen**, um das Dialogfeld „Konfiguration erstellen“ zu öffnen.
 1. Name your configuration and check the **Cloud Configurations** checkbox.
 
@@ -70,7 +71,7 @@ Konfigurieren Sie AEM so, dass die Livefyre-Lizenzinformationen Ihrer Organisati
 
    >[!NOTE]
    >
-   >Für Ordner müssen Cloud-Konfigurationen in ihren Eigenschaften aktiviert sein, bevor LiveCycle-Konfigurationen hinzugefügt werden können. Konfigurationsordner werden im Konfigurationsbrowser erstellt und verwaltet.
+   >Für Ordner müssen Cloud-Konfigurationen in ihren Eigenschaften aktiviert sein, bevor LiveCycle-Konfigurationen hinzugefügt werden können. Configuration folders are created and managed in the [Configuration Browser.](/help/sites-administering/configurations.md)
    >
    >Sie können eine Konfiguration nicht benennen – auf sie wird durch den Ordnerpfad verwiesen, unter dem sie sich befindet. Pro Ordner ist nur eine Konfiguration zulässig.
 
@@ -204,7 +205,7 @@ AEM Commerce-Benutzer können ihren vorhandenen Produktkatalog nahtlos in Livefy
 
 Nach dem Import des Produktkatalogs werden die Produkte in Echtzeit in Ihrer Livefyre-Instanz angezeigt. Wenn Sie Elemente in Ihrem AEM Commerce-Produktkatalog bearbeiten oder löschen, werden die Änderungen automatisch in Livefyre widergespiegelt.
 
-1. Vergewissern Sie sich, dass auf Ihrer AEM-Instanz das neueste Livefyre für AEM-Paket installiert ist.
+1. Vergewissern Sie sich, dass auf Ihrer AEM die neueste Version von Livefyre für AEM Paket installiert ist.
 1. From the AEM homepage, navigate to **AEM Commerce**.
 1. Erstellen Sie eine neue Sammlung oder verwenden Sie eine vorhandene Sammlung.
 1. Hover over the collection and click **Collection Properties** (pencil icon).
