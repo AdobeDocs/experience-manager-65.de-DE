@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 99%
@@ -120,7 +120,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele sind [Standardaktionen für Assets](/help/assets/managing-assets-touch-ui.md) bzw. das [AEM-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+>Viele sind [Standardaktionen für Assets](/help/assets/manage-assets.md) bzw. das [AEM-Desktop-Programm](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 ## Öffnen des Fragment-Editors {#opening-the-fragment-editor}
 
@@ -233,14 +233,14 @@ Sie können die Eigenschaften eines Fragments über die Registerkarte [Metadaten
 
 ## Timeline für Inhaltsfragmente       {#timeline-for-content-fragments}
 
-Neben den Standardoptionen enthält die [Timeline](/help/assets/managing-assets-touch-ui.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
+Neben den Standardoptionen enthält die [Timeline](/help/assets/manage-assets.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
 * Anzeigen von Informationen zu Versionen, Kommentaren und Anmerkungen
 * Aktionen für Versionen
 
-   * **[Auf diese Version zurücksetzen](#reverting-to-a-version)**(ein vorhandenes Fragment und eine bestimmte Version auswählen)
+   * **[Auf diese Version zurücksetzen](#reverting-to-a-version)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
 
-   * **[Mit aktueller Version vergleichen](#comparing-fragment-versions)**(ein vorhandenes Fragment und eine bestimmte Version auswählen)
+   * **[Mit aktueller Version vergleichen](#comparing-fragment-versions)** (ein vorhandenes Fragment und eine bestimmte Version auswählen)
 
    * **Beschriftung** und/oder **Kommentar** hinzufügen (ein vorhandenes Fragment und eine bestimmte Version auswählen)
 
