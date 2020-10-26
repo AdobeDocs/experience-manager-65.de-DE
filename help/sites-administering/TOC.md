@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 translation-type: tm+mt
-source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
+source-git-commit: c7de7bee2368a558620aafdff5272e4bd07aae00
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '630'
 ht-degree: 97%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 97%
    + [Assistent „Sprachkopie erstellen“](tc-wizard.md)
    + [Verbesserungen an der Übersetzung](tc-enhancements.md)
    + [Best Practices für die Übersetzung](tc-bp.md)
+   + [Konfigurationen und der Konfigurationsbrowser](configurations.md)
    + [Häufig gestellte Fragen (FAQ) zu AEM](aem-faqs.md)
 + Betrieb {#operations}
    + [Dashboards](dashboards.md)
