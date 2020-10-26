@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 76%
@@ -133,7 +133,7 @@ Sie können Anpassungen der Benutzeroberfläche &quot;Assets&quot;wie folgt vorb
 
 ### Generieren von Asset-IDs für vorhandene Assets {#generating-asset-ids-for-existing-assets}
 
-Um Asset-IDs für vorhandene Assets zu generieren, aktualisieren Sie diese, wenn Sie die AEM-Instanz auf AEM 6.5 aktualisieren. Dies ist erforderlich, um die Funktion [Assets Insights](/help/assets/touch-ui-asset-insights.md) zu aktivieren. For more details, see [Add embed code](/help/assets/touch-ui-using-page-tracker.md#add-embed-code).
+Um Asset-IDs für vorhandene Assets zu generieren, aktualisieren Sie diese, wenn Sie die AEM-Instanz auf AEM 6.5 aktualisieren. Dies ist erforderlich, um die Funktion [Assets Insights](/help/assets/asset-insights.md) zu aktivieren. For more details, see [Add embed code](/help/assets/use-page-tracker.md#add-embed-code).
 
 Um Assets zu aktualisieren, konfigurieren Sie das Paket „Associate Asset IDs“ in der JMX-Konsole. Je nach Anzahl der Assets im Repository kann das Ausführen von `migrateAllAssets` lange dauern. Internen Tests zufolge liegt der Schätzwert für TarMK bei einem Durchsatz von 125000 Assets pro Stunde.
 
