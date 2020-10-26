@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 9f22cb618d487a2b02dc17149d11b81a9e9e27be
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5895'
 ht-degree: 82%
 
 ---
@@ -34,7 +34,7 @@ Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie I
 | [Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) werden überwacht. |  |  |
 | Die Systemüberwachung wird (ständig) im Hintergrund ausgeführt. | Einschließlich CPU-, Arbeitsspeicher-, Festplatten- und Netzwerkauslastung. Verwendet wird z. B. iostat / vmstat / perfmon. | Protokollierte Daten werden angezeigt und können zum Nachverfolgen von Leistungsproblemen verwendet werden. Rohdaten sind ebenfalls verfügbar. |
 | [Die AEM-Leistung wird überwacht](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Einschließlich [Anfragezähler](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) zur Überwachung des Traffic-Niveaus. | Bei großem oder anhaltendem Leistungsverlust sollte eine detaillierte Analyse erfolgen. |
-| Sie überwachen Ihre [Replikationsagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). `` |  |  |
+| Sie überwachen Ihre [Replikationsagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Regelmäßige Bereinigung von Workflow-Instanzen. | Repository-Größe und Workflow-Leistung. | Siehe [Regelmäßige Bereinigung von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Backups {#backups}
@@ -58,9 +58,9 @@ Oft werden in regelmäßigen Abständen (z. B. täglich, wöchentlich oder monat
 >[!CAUTION]
 >
 >Wenn Sie Sicherungskopien der Produktionsinstanzen erstellt haben, *müssen* Sie Tests durchführen, um sicherzustellen, dass die Sicherungskopie erfolgreich wiederhergestellt werden kann.
-
->Andernfalls ist das Backup womöglich nutzlos (im schlimmsten Fall).
 >
+>Andernfalls ist das Backup womöglich nutzlos (im schlimmsten Fall).
+
 >[!NOTE]
 >
 >Weitere Informationen zur Backup-Leistung finden Sie im Abschnitt [Backup-Leistung](/help/sites-deploying/configuring-performance.md#backup-performance).
@@ -98,9 +98,9 @@ Das Tool **Versionen bereinigen** dient zum Bereinigen der Versionen eines Knote
 
 In diesem Abschnitt werden die Wartungsaufgaben im Zusammenhang mit der Versionsfunktion von AEM behandelt. Mit dem Tool **Versionsbereinigung** können Sie Versionen eines Knotens oder eine Knotenhierarchie Ihres Repository bereinigen. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.
 
-### Übersicht {#overview}
+### Überblick {#overview}
 
-Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/tools-consoles.md)-Konsole **unter**„Versionsverwaltung“**oder direkt unter folgender URL verfügbar:
+Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/tools-consoles.md)-Konsole** unter **„Versionsverwaltung“** oder direkt unter folgender URL verfügbar:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
@@ -122,7 +122,7 @@ Das Tool **Versionsbereinigung** ist in der **[Tools](/help/sites-administering/
 
 Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
 
-1. Navigieren Sie zur **[Tools](/help/sites-administering/tools-consoles.md)****-Konsole**, wählen Sie **„Versionsverwaltung“**aus und doppelklicken Sie auf **„Versionen bereinigen“**.
+1. Navigieren Sie zur **[Tools](/help/sites-administering/tools-consoles.md)****-Konsole**, wählen Sie **„Versionsverwaltung“** aus und doppelklicken Sie auf **„Versionen bereinigen“**.
 1. Legen Sie den Startpfad für den zu löschenden Inhalt fest (z. B. `/content/geometrixx-outdoors`).
 
    * Falls Sie nur den durch den Pfad definierten Knoten löschen möchten, deaktivieren Sie die Option **„Rekursiv“**.
@@ -145,7 +145,7 @@ Beim den Vorgängen **Probelauf** und **Löschen** werden alle Knoten aufgeliste
 
 * `ignore (not versionnable)`: Der Knoten unterstützt keine Versionierung und wird während des Prozesses ignoriert.
 
-* `ignore (no version)`: Für den Knoten sind keine Versionen vorhanden und er wird beim Bereinigungsvorgang ignoriert. ``
+* `ignore (no version)`: Für den Knoten sind keine Versionen vorhanden und er wird beim Bereinigungsvorgang ignoriert.
 
 * `retained`: Der Knoten wurde nicht gelöscht.
 * `purged`: die Node wird bereinigt.
@@ -222,7 +222,7 @@ Enthält Protokollmeldungen, die auf Ereignisse beim Starten verweisen.
 Bietet ein Protokoll aller Aktualisierungsvorgänge, die über die Variable 
 `com.day.compat.codeupgrade` und `com.adobe.cq.upgradesexecutor` Pakete.
 
-* `<*cq-installation-dir*>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository`
 
    * `revision.log`
 Überarbeitung der Journalinformationen.
@@ -263,19 +263,19 @@ Die Protokollebenen lauten wie folgt:
 
 Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte Protokolldatei mit einer anderen Protokollebene erstellen. Gehen Sie dazu im Repository wie folgt vor:
 
-1. Erstellen Sie, falls nicht bereits vorhanden, einen neuen Konfigurationsordner (`sling:Folder`) für das Projekt `/apps/<*project-name*>/config`.
-1. Erstellen Sie unter `/apps/<*project-name*>/config`[ einen Knoten für die neue Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
+1. Erstellen Sie, falls nicht bereits vorhanden, einen neuen Konfigurationsordner (`sling:Folder`) für das Projekt `/apps/<project-name>/config`.
+1. Erstellen Sie unter `/apps/<project-name>/config`[ einen Knoten für die neue Apache Sling Logging Logger-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
-   * Name: `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (da dies ein Logger ist)
+   * Name: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (da dies ein Logger ist)
 
-      wobei `<*identifier*>` durch einen freien Text ersetzt wird, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden).
+      wobei `<identifier>` durch einen freien Text ersetzt wird, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden).
 
       Beispiel: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Typ: `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<*identifier*>` einen eindeutigen Parameter zu verwenden.
+   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<identifier>` einen eindeutigen Parameter zu verwenden.
 
 1. Legen Sie die folgenden Eigenschaften des Knotens fest:
 
@@ -312,9 +312,19 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` unterstützt bis zu sechs Argumente.
-
-   >{0} Zeitstempel vom Typ `java.util.Date` {1} Protokollmarkierung {2} Name des aktuellen Thread {3} Name der Protokollierung {4} Protokollebene {5} Protokollmeldung
-
+   >
+   >{0} Der Zeitstempel des Typs `java.util.Date`
+   >
+   >{1} die Protokollmarkierung
+   >
+   >{2} der Name des aktuellen Threads
+   >
+   >{3} Name der Protokollfunktion
+   >
+   >{4} die Protokollebene
+   >
+   >{5} die Protokollmeldung
+   >
    >Falls der Protokollaufruf den Parameter `Throwable` enthält, wird der StackTrace an die Meldung angefügt.
 
    >[!CAUTION]
@@ -324,37 +334,42 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >[!NOTE]
    >
    >Die Protokollierungspfade sind vom Speicherort-`crx-quickstart`abhängig.
+   >
    >Eine Protokolldatei wie:
+   >
    >`logs/thelog.log`
-
+   >
    >wird daher geschrieben in:
-   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
+   >
+   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`.
+   >
    >Und eine Protokolldatei wie:
+   >
    >`../logs/thelog.log`
-
+   >
    >wird in folgendes Verzeichnis geschrieben:
-   >` <*cq-installation-dir*>/logs/`
-
-&quot;(z. B. neben ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
+   >
+   >`<cq-installation-dir>/logs/`\
+   >(d. h. neben `<cq-installation-dir>/crx-quickstart/`)
 
 1. Dieser Schritt muss nur ausgeführt werden, wenn ein neuer Writer erforderlich ist (d. h. mit einer Konfiguration, die vom standardmäßigen Writer abweicht). 
 
    >[!CAUTION]
    >
    >Eine neue Logging-Writer-Konfiguration ist nur erforderlich, wenn die vorhandene Standardkonfiguration nicht geeignet ist.
-
+   >
    >Wenn kein expliziter Writer konfiguriert ist, erstellt das System automatisch einen impliziten Writer auf Basis der Standardkonfiguration.
 
-   Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
+   Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
-   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
+   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
 
-      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Beispiel: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Beispiel: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Typ: `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<*identifier*>` einen eindeutigen Parameter zu verwenden.
+   >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<identifier>` einen eindeutigen Parameter zu verwenden.
 
    Legen Sie die folgenden Eigenschaften des Knotens fest:
 
@@ -382,25 +397,36 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` steuert die Rotation der Protokolldatei durch eine der folgenden Einstellungen:
+   >
    >* eine maximalen Dateigröße
    >* einen Zeit-/Terminplan
 
-   um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
-   * Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   * Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
+   >
+   >um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
+   >
+   >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
 
-   Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
-   So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
-   | `'.'yyyy-MM` | Rotation zu Beginn jedes Monats |
-   |---|---|
-   | `'.'yyyy-ww` | Rotation am ersten Wochentag (abhängig vom Gebietsschema). |
-   | `'.'yyyy-MM-dd` | Rotation jeden Tag um Mitternacht. |
-   | `'.'yyyy-MM-dd-a` | Rotation jeden Tages um Mitternacht und Mittag. |
-   | `'.'yyyy-MM-dd-HH` | Rotation am Anfang jeder Stunde. |
-   | `'.'yyyy-MM-dd-HH-mm` | Rotation am Anfang jeder Minute. |
-   Hinweis: Bei der Angabe einer Uhrzeit/eines Datums ist Folgendes zu beachten:
-   1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;
-Dadurch soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
+   >
+   >Der Standardwert lautet &#39;.&#39;yyyy-MM-dd (für die tägliche Protokollrotation).
+   >
+   >So wird beispielsweise um Mitternacht am 20. Januar 2010 (oder sobald die erste Protokollmeldung nach diesem Zeitpunkt ausgegeben wird), ../logs/error.log in ../logs/error.log.2010-01-20 umbenannt. Die Protokollierung für den 21. Januar erfolgt in (ein neues und leeres) ../logs/error.log und geht bei der nächsten Änderung zum nächsten Datum über. 
+   >
+   >| `'.'yyyy-MM` | Rotation zu Beginn jedes Monats |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotation am ersten Wochentag (abhängig vom Gebietsschema). |
+   >| `'.'yyyy-MM-dd` | Rotation jeden Tag um Mitternacht. |
+   >| `'.'yyyy-MM-dd-a` | Rotation jeden Tages um Mitternacht und Mittag. |
+   >| `'.'yyyy-MM-dd-HH` | Rotation am Anfang jeder Stunde. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotation am Anfang jeder Minute. |
+   >
+   >Hinweis: Bei der Angabe einer Uhrzeit/eines Datums ist Folgendes zu beachten:
+   > 1. Sie sollten literalen Text innerhalb eines Paars mit einfachen Anführungszeichen (&#39; &#39;) &quot;Escape&quot;;
+      >
+      >     
+      Dadurch soll verhindert werden, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
+      >
+      >  
    1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
 
 
@@ -432,7 +458,7 @@ Diese Einträge enthalten die gleichen Informationen wie sie beim Bearbeiten ein
 
 #### OSGi-Auditdatensätze aus der Web-Konsole {#osgi-audit-records-from-the-web-console}
 
-OSGi events also generate audit records which can be seen from the **Configuration Status** tab -> **Log Files **tab in the AEM Web Console:
+OSGi-Ereignisse generieren ebenfalls Auditdatensätze, die Sie in der AEM-Web-Konsole auf der Registerkarte **Konfigurationsstatus** unter **Protokolldateien** anzeigen können:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -473,8 +499,11 @@ Gehen Sie wie folgt vor, um Replikationsagenten zu überwachen:
    >[!CAUTION]
    >
    >Verwenden Sie den Link „Verbindung testen“ nicht für den Postausgang der Rückwärtsreplikation auf der Veröffentlichungsinstanz.
+   >
    >Falls Sie eine Replikation für eine Warteschlange in einem Postausgang testen, werden alle Elemente, die älter als die Testreplikation sind, bei jeder Rückwärtsreplikation erneut verarbeitet.
+   >
    >Wenn solche Elemente bereits in einer Warteschlange vorhanden sind, können Sie mit der folgenden XPath JCR-Abfrage danach suchen und diese entfernen.
+   >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Again you can develop a solution to detect all replication agents (located under `/etc/replication/author` or `/etc/replication/publish`), then check the status of the agent ( `enabled`, `disabled`) and the underlying queue ( `active`, `idle`, `blocked`).
@@ -643,7 +672,7 @@ Durch Addieren aller GET-Einträge über einen bestimmten Zeitraum (z. B. über
 
 Ein guter Ausgangspunkt für Leistungsanalysen ist das Anforderungsprotokoll:
 
-`<*cq-installation-dir*>/crx-quickstart/logs/request.log`
+`<cq-installation-dir>/crx-quickstart/logs/request.log`
 
 Das Protokoll sieht wie folgt aus (die Zeilen sind der Einfachheit halber gekürzt):
 
@@ -710,8 +739,8 @@ Sie sollten testen, wie viele gleichzeitige Benutzer das System unterstützt, be
 
 ### Verwenden von rlog.jar bei der Suche nach Anforderungen mit langer Dauer {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM umfasst verschiedene Hilfstools unter:
-`<*cq-installation-dir*>/crx-quickstart/opt/helpers`
+AEM enthält verschiedene Hilfstools unter:
+`<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Eines dieser Tools, `rlog.jar`, kann zum schnellen Sortieren von `request.log` verwendet werden, sodass Anforderungen nach Dauer (längste bis kürzeste Zeit) angezeigt werden.
 
@@ -1039,10 +1068,13 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 >[!NOTE]
 >
 >In folgenden Artikeln finden Sie weitere Informationen:
+>
 >* [Thread-Dumps](https://helpx.adobe.com/de/experience-manager/kb/TakeThreadDump.html) 
 >* [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html) 
 >* [Analysieren mit dem integrierten Profiler](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html) 
 >* [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
+
+>
 
 
 
@@ -1137,4 +1169,5 @@ Dies ist hilfreich, wenn Sie herausfinden möchten, wie viel Arbeitsspeicher bel
 >[!NOTE]
 >
 >Informationen zu Oracle VM finden Sie unter:
+>
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
