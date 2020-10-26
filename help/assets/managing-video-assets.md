@@ -3,7 +3,7 @@ title: 'Verwalten von Video-Assets   '
 description: Hochladen, Vorschau, Anmerkungen und Veröffentlichen von Video-Assets [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 37%
@@ -22,7 +22,7 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 [!DNL Adobe Experience Manager Assets] generiert Vorschauen für Video-Assets mit der Erweiterung MP4. Wenn das Asset nicht im MP4-Format vorliegt, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videodarstellungen vom Typ OGG und MP4. You can preview the renditions in the [!DNL Assets] user interface.
 
 1. Navigieren Sie im Ordner oder in den Unterordnern für digitale Assets zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
-1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen. Weitere Informationen finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
+1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Alternativ können Sie eine Datei auf die Benutzeroberfläche ziehen. Weitere Informationen finden Sie unter [Hochladen von Assets](manage-assets.md#uploading-assets).
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Sie können Videos nur in der Kartenansicht anhalten oder wiedergeben. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
 1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. Das Video wird im systemeigenen Video-Player des Browsers wiedergegeben. Sie können das Video wiedergeben und anhalten, die Lautstärke regeln und in den Vollbildmodus wechseln.
@@ -87,7 +87,7 @@ Nach der Veröffentlichung können Sie die Video-Assets als URL in eine Webseite
 
 >[!MORELIKETHIS]
 >
->* [Digitale Assets in Experience Manager-Assets verwalten](/help/assets/managing-assets-touch-ui.md)
->* [Verwalten von Sammlungen in Experience Manager-Assets](/help/assets/managing-collections-touch-ui.md)
+>* [Digitale Assets in Experience Manager-Assets verwalten](/help/assets/manage-assets.md)
+>* [Verwalten von Sammlungen in Experience Manager-Assets](/help/assets/manage-collections.md)
 >* [Dokumentation](/help/assets/video.md)zu Videos zu dynamischen Medien
 
