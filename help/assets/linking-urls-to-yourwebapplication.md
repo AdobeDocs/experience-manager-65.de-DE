@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 94%
@@ -34,7 +34,7 @@ Siehe auch [Verknüpfen von YouTube-URLs mit einer Web-Anwendung](video.md).
 
 Siehe auch [Bereitstellen von optimierten Bildern für eine responsive Site.](responsive-site.md)
 
-Informationen hierzu finden Sie auch unter [Hochladen von Assets.](managing-assets-touch-ui.md#uploading-assets)
+Informationen hierzu finden Sie auch unter [Hochladen von Assets.](manage-assets.md#uploading-assets)
 
 ## Abrufen einer URL für ein Asset     {#obtaining-a-url-for-an-asset}
 
