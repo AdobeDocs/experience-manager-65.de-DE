@@ -3,7 +3,7 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2c3836cb7e2275c30e88e8a750eafce24a05837a
+source-git-commit: 2fe2b5fcaff2b2f2402f0bc638a0df2afd335b31
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 90%
@@ -159,7 +159,7 @@ Die abgerufenen Assets können wie jedes andere lokale Element verwendet werden.
 
 ## Limitations and best practices {#tips-and-limitations}
 
-* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die [Asset Insight](/help/assets/touch-ui-asset-insights.md) -Funktion auf der [!DNL Sites] Instanz.
+* Um Einblicke in die Asset-Nutzung zu erhalten, konfigurieren Sie die [Asset Insight](/help/assets/asset-insights.md) -Funktion auf der [!DNL Sites] Instanz.
 
 ### Berechtigungen und Asset-Verwaltung {#permissions-and-managing-assets}
 
