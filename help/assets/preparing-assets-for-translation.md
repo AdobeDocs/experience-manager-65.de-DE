@@ -3,7 +3,7 @@ title: Vorbereiten von Assets für die Übersetzung
 description: Erstellen Sie sprachliche Stammordner, um Assets für die Übersetzung vorzubereiten und damit mehrsprachige Assets zu unterstützen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 1d3e908eafa1cdcbc6ef557da509f12cdd9418cc
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 57%
@@ -21,16 +21,16 @@ Jeder Sprachordner wird als eine Sprachkopie bezeichnet. Der Stammordner einer S
 
 Die Sprachkopie, für die Sie ursprünglich Assets hinzufügen, ist die primäre Sprachinstanz. Die primäre Sprachinstanz ist die Quelle, die in andere Sprachen übersetzt wird. Eine Beispielordnerhierarchie enthält mehrere Sprachstämme:
 
-```
- /content
-  /- dam
-   |- en
-   |- fr
-   |- de
-   |- es
-   |- it
-   |- ja
-   |- zh
+```shell
+/content
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 Führen Sie die folgenden Schritte aus, um Ihre Assets für die Übersetzung vorzubereiten:
@@ -52,7 +52,7 @@ Beispielsweise verfügt die Stammseite der italienischsprachigen Kopie der Beisp
 
 1. In the **[!UICONTROL Name]** field type the country code in the format of `<language-code>`.
 
-   ![Hinzufügen Sprachencode im Ordner](assets/Add-language-code-in-folder.png)
+   ![hinzufügen Sprachencode im Ordner](assets/Add-language-code-in-folder.png)
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. The language root is created in the [!DNL Assets] console.
 
