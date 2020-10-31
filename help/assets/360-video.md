@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: 0d5ee29141c897284f3f298d921f4f8528216f8f
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 95%
@@ -51,7 +51,7 @@ Beim Hochladen in AEM werden 360-Grad-Video-Assets wie normale Video-Assets auf 
 **So laden Sie Assets für die Verwendung mit dem 360-Grad-Video-Viewer hoch:**
 
 1. Erstellen Sie einen Ordner für Ihr 360-Grad-Video-Asset.
-1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+1. [Wenden Sie ein adaptives Videoprofil auf den Ordner an.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
    Das Rendern von 360-Grad-Videos ist mit höheren Anforderungen an die Auflösung des Quellvideos sowie der kodierten Ausgabeformate verbunden als Standard-Videoinhalte.
 
@@ -97,7 +97,7 @@ Siehe auch [Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets
 
 Wenn das 360-Grad-Video Ihren Vorstellungen entspricht, können Sie es veröffentlichen.
 
-Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
+Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Beachten Sie, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in AEM Sites.
 Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 
