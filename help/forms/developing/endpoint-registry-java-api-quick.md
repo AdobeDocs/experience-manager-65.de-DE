@@ -1,8 +1,7 @@
 ---
 title: Endpoint Registry Java API QuickStart(SOAP)
 seo-title: Endpoint Registry Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Endpoint Registry Java API QuickStart(SOAP)
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 1%
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -40,11 +39,11 @@ Java API Quick Beginn (SOAP) ist für die Endpunktregistrierung verfügbar.
 
 [QuickStart: Abrufen von Endpunktschnittstellenverbindungsinformationen mit der Java-API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Quick Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
