@@ -4,13 +4,12 @@ seo-title: Formularzentrierte Workflows in OSGi - Schritt-Referenz
 description: Der formularzentrierte Workflow in OSGi-Schritten ermöglicht das schnelle Erstellen adaptiver formularbasierter Workflows.
 seo-description: Der formularzentrierte Workflow in OSGi-Schritten ermöglicht das schnelle Erstellen adaptiver formularbasierter Workflows.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
-contentOwner: null
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
 source-wordcount: '7109'
 ht-degree: 51%
@@ -53,7 +52,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 >
 >Für den Zugriff auf die Benutzeroberfläche von Interactive Communications Agent in AEM Posteingang müssen cm-agent-users und Gruppen von Workflow-Benutzern zugewiesen sein.
 
-* **Adaptives Formular oder interaktiver Kommunikationspfad**: Geben Sie den Pfad des adaptiven Formulars oder der interaktiven Kommunikation an. Sie können das adaptive Formular oder die interaktive Kommunikation verwenden, die an den Workflow gesendet wird, an einem absoluten Pfad verfügbar ist, oder das adaptive Formular aus einem Pfad abrufen, der in einer Variablen des Zeichenfolgen-Datentyps gespeichert ist.
+* **Adaptives Formular oder interaktiver Kommunikationspfad**: Geben Sie den Pfad des adaptiven Formulars oder der interaktiven Kommunikation an. Sie können das adaptive Formular oder die interaktive Kommunikation verwenden, die an den Workflow gesendet wird, an einem absoluten Pfad verfügbar ist, oder das adaptive Formular aus einem Pfad abrufen, der in einer Variablen des Datentyps Zeichenfolge gespeichert ist.
 * **PDF-Eingabedatei auswählen mit:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Nutzlast ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Dokument-Datentyps verwendet. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
 * **Für abgeschlossene Aufgaben rendern Sie das adaptive Formular wie folgt**: Wenn eine Aufgabe als abgeschlossen markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument ausgeben. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **Vorausgefüllt:** Die folgenden Felder dienen als Eingaben in die Aufgabe:
@@ -71,7 +70,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 
    * **Ausgabedatendatei speichern unter:** Speichern Sie die Datendatei (.json,). XML-, DOC- oder Formulardatenmodell). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Sie können die Ausgabedatendatei unter Verwendung eines Pfads speichern, der relativ zur Nutzlast ist, oder sie in einer Variablen des Dokument-, XML- oder JSON-Datentyps speichern. For example, [Payload_Directory]/Workflow/data, where data is a file.
    * **Anlagen speichern unter:** Speichern Sie die Formularanhänge in einer Aufgabe. Sie können die Anlagen mit einem Pfad speichern, der relativ zur Nutzlast ist, oder sie in einer Variablen des Dokument-Datentyps speichern.
-   * **Dokument aus Datensatz speichern unter:** Pfad zum Speichern eines Dokuments Datensatzdatei. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Dokument Datensatz unter Verwendung eines Pfads speichern, der relativ zur Nutzlast ist, oder es in einer Variablen des Dokument-Datentyps speichern. Wenn Sie die Option **Relativ zur Nutzlast** auswählen, wird das Dokument des Datensatzes nicht generiert, wenn das Pfadfeld leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Adaptives Formular&quot;auswählen.
+   * **Dokument aus Datensatz speichern unter:** Pfad zum Speichern eines Dokuments einer Datensatzdatei. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Dokument Datensatz unter Verwendung eines Pfads speichern, der relativ zur Nutzlast ist, oder es in einer Variablen des Dokument-Datentyps speichern. Wenn Sie die Option **Relativ zur Nutzlast** auswählen, wird das Dokument des Datensatzes nicht generiert, wenn das Pfadfeld leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Adaptives Formular&quot;auswählen.
 
    * **Web-Kanal-Daten speichern unter:** Speichern Sie die Web-Kanal-Datendatei unter einem Pfad, der relativ zur Nutzlast ist, oder speichern Sie sie in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodell. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;auswählen.
    * **PDF-Dokument speichern unter:** Speichern Sie das PDF-Dokument unter einem Pfad, der relativ zur Nutzlast ist, oder speichern Sie es in einer Variablen des Dokument-Datentyps. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;auswählen.
