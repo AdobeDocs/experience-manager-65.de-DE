@@ -1,14 +1,16 @@
 ---
 title: Document Security | Umgang mit Benutzerdaten
 seo-title: Document Security | Umgang mit Benutzerdaten
-description: 'null'
-seo-description: 'null'
+description: Dokument Security | Umgang mit Benutzerdaten
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 59%
 
 ---
 
@@ -156,6 +158,7 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
    1. Open the XML blob of each row in the `EdcPolicyXMLEntity` or `EdcPolicyArchiveEntity` table and extract the XML file. Die XML-Datei ähnelt der unten gezeigten.
    1. Bearbeiten Sie die XML-Datei, um den Blob für die Prinzipal-ID zu entfernen.
    1. Wiederholen Sie die Schritte 1 und 2 für die andere Datei.
+
    >[!NOTE]
    >
    >You must remove the complete blob within the `Principal` tag for a principal ID or the policy XML may get corrupt or unusable.
@@ -194,6 +197,7 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
    1. As an administrator, log into the Forms JEE administration console at https://[*server*]:[*port*]/adminui.
    1. Navigate to **[!UICONTROL Services > Document Security > Policy Sets]**.
    1. Öffnen Sie eine Richtliniengruppe und löschen Sie den Benutzer aus der Richtlinie.
+
    **Verwenden der Document Security-Webseite**
 
    Document Security-Benutzer, die zum Erstellen persönlicher Richtlinien berechtigt sind, können Benutzerdaten aus ihren Richtlinien löschen. Gehen Sie dazu wie folgt vor:
@@ -201,6 +205,7 @@ Führen Sie folgende Schritte aus, um Document Security-Daten für eine Prinzipa
    1. Users who have personal policies log into their document security web page at https://[*server*]:[*port*]/edc.
    1. Navigate to **[!UICONTROL Services > Document Security > My Policies]**.
    1. Öffnen Sie eine Richtliniengruppe und löschen Sie den Benutzer aus der Richtlinie.
+
    >[!NOTE]
    >
    >Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.
