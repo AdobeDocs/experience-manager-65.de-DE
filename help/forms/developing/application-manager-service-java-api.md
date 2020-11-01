@@ -1,8 +1,7 @@
 ---
 title: Application Manager Service JavaAPI Quick Beginn(SOAP)
 seo-title: Application Manager Service JavaAPI Quick Beginn(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Application Manager Service JavaAPI Quick Beginn(SOAP)
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 2%
+source-wordcount: '209'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +29,11 @@ Java API Quick Beginn (SOAP) ist für den Application Manager-Dienst verfügbar.
 >
 >Die APIs des Anwendungsmanagers unterstützen nur AEM Forms-LCA-Dateien. LCA-Dateien von LiveCycle ES2 und ES4 werden nicht unterstützt.
 
-AEM Forms-Vorgänge können mit der stark typisierten API der AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der AEM Forms stark typisierten API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Java API(SOAP) Quick Beginn im Abschnitt Programmieren mit AEM Forms basieren auf Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Java API(SOAP) Quick Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
