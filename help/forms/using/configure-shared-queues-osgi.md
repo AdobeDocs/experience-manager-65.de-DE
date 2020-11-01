@@ -3,13 +3,11 @@ title: Freigegebene Warteschlangen konfigurieren
 seo-title: Freigegebene Warteschlangen konfigurieren
 description: Erfahren Sie, wie Sie freigegebene Warteschlangen für Forms-zentrierte Workflows auf AEM Forms unter OSGi verwenden.
 seo-description: Erfahren Sie, wie Sie freigegebene Warteschlangen für Forms-zentrierte Workflows auf AEM Forms unter OSGi verwenden.
-uuid: null
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: null
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 1%
