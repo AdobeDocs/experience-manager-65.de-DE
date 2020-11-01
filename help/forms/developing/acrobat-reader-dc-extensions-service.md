@@ -1,18 +1,17 @@
 ---
 title: Acrobat Reader DC Extensions ServiceJava API Quick Beginn(SOAP)
 seo-title: Acrobat Reader DC Extensions ServiceJava API Quick Beginn(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Acrobat Reader DC Extensions ServiceJava API Quick Beginn(SOAP)
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 2%
+source-wordcount: '289'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +26,11 @@ Die folgenden Quick-Beginn sind für den Acrobat Reader DC Extensions-Dienst ver
 
 [Quick Beginn (SOAP-Modus): Abrufen von Anmeldeinformationen mit der Java-API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Schnellere Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms-Serverbetriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus):Verwendungsrechte mithilfe der Java-API anwenden {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
