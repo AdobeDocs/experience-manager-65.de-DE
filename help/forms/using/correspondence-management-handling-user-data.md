@@ -1,14 +1,16 @@
 ---
 title: Correspondence Management | Umgang mit Benutzerdaten
 seo-title: Correspondence Management | Umgang mit Benutzerdaten
-description: 'null'
-seo-description: 'null'
+description: Correspondence Management | Umgang mit Benutzerdaten
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +36,7 @@ Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersi
   <tr>
    <td><p><strong>Persistenztyp</strong></p> </td>
    <td><p><strong>Datenspeicher</strong></p> </td>
-   <td><p><strong>Standort</strong></p> </td>
+   <td><p><strong>Ort</strong></p> </td>
   </tr>
   <tr>
    <td><p>Default</p> </td>
