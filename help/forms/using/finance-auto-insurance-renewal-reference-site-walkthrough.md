@@ -1,8 +1,7 @@
 ---
 title: Anleitung zur Erneuerung der Kfz-Versicherung auf der Referenz-Site von We.Finance
 seo-title: Anleitung zur Erneuerung der Kfz-Versicherung auf der Referenz-Site von We.Finance
-description: 'null'
-seo-description: 'null'
+description: Anleitung zur Erneuerung der Kfz-Versicherung auf der Referenz-Site von We.Finance
 uuid: c749a6f7-71f1-4f47-b824-9c7b699072c7
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +9,9 @@ content-type: reference
 discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '748'
 ht-degree: 38%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 38%
 
 Wir.Finance Website ist eine Finanzdienstleistungs-Website, die Ihnen hilft, interaktive Kommunikationsfähigkeiten von AEM Forms zu lernen.
 
-Lesen Sie die ausführliche Anleitung von We.Finance Auto Insurance Verwendungsfall, in der erläutert wird, wie AEM Formulare und ihre Integration mit Microsoft Dynamics zu einer personalisierten Kundenerfahrung in einer Finanzdienstleistungsbranche beitragen. Die interaktive exemplarische Vorgehensweise soll die Implementierung komplexer digitaler Transaktionen und die Kundenkommunikation in einer finanziellen Firma erleichtern.
+Lesen Sie die ausführliche Anleitung von We.Finance Auto Insurance Verwendungsfall, in der erläutert wird, wie AEM Formulare und ihre Integration mit Microsoft Dynamics zu einer personalisierten Kundenerfahrung in einer Finanzdienstleistungs-Firma beitragen. Die interaktive exemplarische Vorgehensweise soll die Implementierung komplexer digitaler Transaktionen und die Kundenkommunikation in einer finanziellen Firma erleichtern.
 
 **Das Ganze beginnt mit dem Benutzerszenario:** 
 
