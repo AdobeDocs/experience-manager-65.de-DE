@@ -1,21 +1,23 @@
 ---
 title: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
 seo-title: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
-description: 'null'
-seo-description: 'null'
+description: Forms JEE-Workflows| Verarbeiten von Benutzerdaten
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '1371'
+ht-degree: 70%
 
 ---
 
 
 # Forms JEE-Workflows| Verarbeiten von Benutzerdaten {#forms-jee-workflows-handling-user-data}
 
-AEM Forms JEE-Workflows bieten Werkzeuge zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen. Ein Workflow-Prozess besteht aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, z. B. einem Benutzer eine Aufgabe zuweisen oder eine E-Mail verschicken. Ein Prozess kann mit Assets, Benutzerkonten und Diensten interagieren und mit einer der folgenden Methoden ausgelöst werden:
+AEM Forms JEE Workflows bietet Tools zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen. Ein Workflow-Prozess besteht aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, z. B. einem Benutzer eine Aufgabe zuweisen oder eine E-Mail verschicken. Ein Prozess kann mit Assets, Benutzerkonten und Diensten interagieren und mit einer der folgenden Methoden ausgelöst werden:
 
 * Starten eines Prozesses von AEM Forms Workspace aus
 * Verwenden des SOAP- oder RESTful-Service
@@ -31,7 +33,7 @@ Wenn ein Prozess ausgelöst wird und fortschreitet, erfasst er Daten zu den Proz
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und eine langlebige Aufrufkennung generiert und der Prozessinstanz zugeordnet. Sie können auf Daten für eine Prozessinstanz basierend auf der Aufruf-ID mit langer Lebensdauer zugreifen und diese löschen. Sie können die langlebige Aufrufkennung einer Prozessinstanz mit dem Benutzernamen des Prozessinitiators oder der Prozessteilnehmer, die ihre Aufgaben gesendet haben, definieren.
+Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und eine langlebige Aufrufkennung generiert und der Prozessinstanz zugeordnet. Sie können auf Daten für eine Prozessinstanz basierend auf der Aufruf-ID mit langer Lebensdauer zugreifen und diese löschen. Sie können die langlebige Aufrufkennung einer Prozessinstanz mit dem Benutzernamen des Prozessinitiators oder der Prozessteilnehmer, die ihre Aufgaben übermittelt haben, definieren.
 
 Sie können die Prozessinstanz-ID für einen Initiator in den folgenden Szenarien jedoch nicht identifizieren:
 
@@ -78,7 +80,7 @@ Führen Sie die folgenden Schritte durch, um Prozessinstanz-IDs für einen Workf
 
 ### Identifizieren Sie Prozessinstanz-IDs, wenn Benutzerdaten in primitiven Variablen gespeichert werden {#primitive}
 
-Ein Workflow kann so gestaltet werden, dass die Benutzerdaten in einer Variablen erfasst werden, die als Blob in der Datenbank gespeichert wird. In solchen Fällen können Sie Benutzerdaten nur abfragen, wenn sie in einer der folgenden primitiven Variablen gespeichert sind:
+Ein Workflow kann so gestaltet werden, dass die Benutzerdaten in einer Variablen erfasst werden, die als Block in der Datenbank gespeichert wird. In solchen Fällen können Sie Benutzerdaten nur abfragen, wenn sie in einer der folgenden primitiven Variablen gespeichert sind:
 
 * **Zeichenfolge**: Enthält die Benutzer-ID direkt oder als Teilzeichenfolge und kann mit SQL abgefragt werden.
 * **Nummerisch:** Enthält direkt die Benutzer-ID.
@@ -126,7 +128,7 @@ Nachdem Sie die Prozessinstanz-IDs identifiziert haben, die einem Benutzer zugeo
 
 1. Create an instance of the public `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) using a `ServiceClientFactory` instance with the correct connection settings.
 
-   Weitere Informationen finden Sie in der Java API-Referenz unter [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Weitere Informationen finden Sie in der Java API-Referenz unter [Class ProcessManager](https://helpx.adobe.com/de/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Überprüfen Sie den Status der Workflow-Instanz. Wenn der Status nicht 2 (COMPLETE) oder 4 (BEENDET) ist, beenden Sie die Instanz zunächst, indem Sie die folgende Methode aufrufen:
 
@@ -166,6 +168,7 @@ Sobald Sie die Aufgaben-IDs haben, führen Sie die folgenden Schritte aus, um di
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
+
       Die Dateien mit diesen Erweiterungen sind die Markierungsdateien. Sie werden mit Dateinamen im folgenden Format gespeichert:
 
       `<file_name_guid>.session<session_id_string>`
