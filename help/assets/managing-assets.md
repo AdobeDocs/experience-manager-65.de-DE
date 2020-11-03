@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Das Verwalten von Dynamic Media-Assets – Bildern, Videos und interaktiven Asse
 
 In der Vorschau können Sie auch Bildvorgaben (nur für Bilder) oder Viewer-Vorgaben (für Videos und Bilder) anwenden. Sie können aber nicht beide Vorgabetypen auf ein Asset anwenden. Siehe [Anwenden von Viewer-Vorgaben](/help/assets/viewer-presets.md) und [Anwenden von Bildvorgaben](/help/assets/image-sets.md).
 
-Allgemeine Informationen über das Verwalten von Assets finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](/help/assets/manage-assets.md).
+Allgemeine Informationen zum Verwalten von Assets finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md).
 
 In den folgenden Themen wird beschrieben, wie Sie Dynamic Media-Assets verwalten:
 
@@ -30,4 +30,3 @@ In den folgenden Themen wird beschrieben, wie Sie Dynamic Media-Assets verwalten
 * [Anzeigen von Dynamic Media-Assets in der Vorschau](/help/assets/previewing-assets.md)
 * [Veröffentlichen von Dynamic Media-Assets   ](/help/assets/publishing-dynamicmedia-assets.md)
 * [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md)
-
