@@ -3,7 +3,7 @@ title: '[!DNL Assets] HTTP-API.'
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 79%
@@ -183,7 +183,7 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 
 ### Metadaten-Aktualisierung zwischen `dc` und `jcr` Namensraum synchronisieren {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namensraum. Die mithilfe von Touch-UI vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namensraum. Um die Metadatenwerte zwischen `dc` und `jcr` Namensraum zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der beim Bearbeiten des Assets ausgeführt wird. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namensraum. Die mithilfe der Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften des `dc` Namensraums. Um die Metadatenwerte zwischen `dc` und `jcr` Namensraum zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, der beim Bearbeiten des Assets ausgeführt wird. Verwenden Sie ein ECMA-Skript, um die erforderlichen Metadateneigenschaften zu synchronisieren. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
