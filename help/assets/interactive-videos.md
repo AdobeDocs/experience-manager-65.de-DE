@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '6050'
+source-wordcount: '6056'
 ht-degree: 97%
 
 ---
@@ -89,7 +89,7 @@ Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.
 Wenn Sie AEM Sites, AEM eCommerce oder beides verwenden, können Sie das interaktive Video direkt auf einer Web-Seite in AEM hinzufügen, indem Sie die interaktive Medienkomponente auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Verwenden Sie den Einbettungs-Code, um das interaktive Video auf Ihrer Website zu integrieren. Siehe [Integrieren eines interaktiven Videos auf Ihrer Website](#integrating-an-interactive-video-with-your-website).
 Wenn Sie einen Drittanbieter-WCM (Web Content Manager) verwenden, müssen Sie das neue interaktive Video in die vorhandene Schnellansichtsimplementierung integrieren, die auf Ihrer Website verwendet wird. Siehe [Integrieren eines interaktiven Videos in einer Schnellansicht](#integrating-an-interactive-video-with-an-existing-quickview).
-   [](/help/assets/adding-dynamic-media-assets-to-pages.md)
+   [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 ## (Optional) Ermitteln von Schnellansichtsvariablen {#optional-identifying-quickview-variables}
 
