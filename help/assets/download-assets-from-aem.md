@@ -3,10 +3,10 @@ title: Herunterladen von Assets
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 73%
+source-wordcount: '862'
+ht-degree: 72%
 
 ---
 
@@ -23,11 +23,11 @@ Die Asset-Typen „Bild-Set“, „Rotations-Set“ „Set für gemischte Medien
 
 Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
-1. On the Navigation page, tap **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
+1. Klicken Sie in der oberen linken Ecke auf das Logo. Klicken Sie in der linken Leiste auf **[!UICONTROL Navigation]**.
+1. On the [!UICONTROL Navigation] page, click **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
 1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
 1. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Herunterladen.]**
+1. On the toolbar, click **[!UICONTROL Download.]**
 
    ![Verfügbare Optionen beim Herunterladen von Assets aus AEM Assets](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um Assets herunterzuladen:
    | **[!UICONTROL Smartes Zuschneiden]** | Wählen Sie diese Option, um alle Ausgabedarstellungen des ausgewählten Assets, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, aus AEM herunterzuladen. Eine ZIP-Datei mit den Ausgabedarstellungen, die mit der Funktion „Smartes Zuschneiden“ erstellt wurden, wird erstellt und auf Ihren lokalen Computer heruntergeladen. |
    | **[!UICONTROL Dynamische Ausgabedarstellung(en)]** | Wählen Sie diese Option, um eine Reihe von alternativen Ausgabedarstellungen in Echtzeit zu erstellen. Wenn Sie diese Option wählen, wählen Sie durch Auswahl aus der Liste [Bildvorgabe](image-presets.md) auch die Ausgabedarstellungen, die Sie dynamisch erstellen möchten. <br>Außerdem können Sie Größe und Einheit, Format, Farbraum, Auflösung und beliebige Bild-Modifikatoren auswählen (um das Bild z. B. umzukehren). Die Option ist nur verfügbar, wenn Sie [!DNL Dynamic Media] aktiviert haben. |
 
-1. Tippen Sie im Dialogfeld auf **[!UICONTROL Herunterladen.]**.
+1. In the dialog box, click **[!UICONTROL Download.]**.
 
 Wenn Sie einen Ordner zum Herunterladen auswählen, wird die komplette Asset-Hierarchie unter dem Ordner heruntergeladen. Um jedes heruntergeladene Asset (einschließlich Assets in untergeordneten Ordnern) in einem eigenen Ordner abzulegen, wählen Sie die Option **[!UICONTROL Separaten Ordner für jedes Asset erstellen]**.
 
