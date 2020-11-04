@@ -8,17 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: d5efcec4a0397d99c899643ff13a883a0ed02c81
+source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 81%
+source-wordcount: '4296'
+ht-degree: 80%
 
 ---
 
 
 # Best Practices für die Arbeit mit adaptiven Formularen {#best-practices-for-working-with-adaptive-forms}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Allerdings bedarf es gemeinsamer Anstrengungen, ein effizientes und produktives AEM Forms-System zu implementieren, zu erstellen, auszuführen und zu warten.
 
@@ -68,7 +68,7 @@ Nachdem Sie Ihr AEM-Projekt eingerichtet haben, definieren Sie eine Strategie f�
    * **Ohne**: Die adaptiven Formulare, die mit dieser Option erstellt worden sind, verwenden kein Datenmodell. Die XML-Datendatei, die aus diesen Formularen generiert wurde, hat eine flache Struktur mit Feldern und entsprechenden Werten.
    * **XML- oder JSON-Schema**: XML- und JSON-Schema stellen die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und mit dessen Elementen dem adaptiven Formular dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte &quot;Datenmodellobjekt&quot;des Inhaltsbrowsers zum Authoring adaptiver Formulare zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
    * **XFA-Formularvorlage**: Es ist ein optimales Datenmodell, wenn Sie Investitionen in XFA-basierten HTML5-Formularen haben. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln werden in den zugehörigen adaptiven Formularen beibehalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte, z. B. Überprüfungen, Ereignisse, Eigenschaften und Muster.
-   * **Formulardatenmodell**: Es ist ein bevorzugtes Formularmodell, wenn Sie Backend-Systeme wie Datenbanken, Webdienste und AEM-Profil integrieren möchten, um adaptive Formulare im Voraus auszufüllen und gesendete Formulardaten in Backend-Systeme zu schreiben. Verwendung eines Formulardatenmodells Datenintegration ermöglicht die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
+   * **Formulardatenmodell**: Es ist ein bevorzugtes Formularmodell, wenn Sie Backend-Profile wie Datenbanken, Webdienste und AEM benutzerspezifischen  integrieren möchten, um adaptive Formulare im Voraus auszufüllen und gesendete Formulardaten in Backend-Systeme zu schreiben. Verwendung eines Formulardatenmodells Datenintegration ermöglicht die Integration von Entitäten und Diensten aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
 Es ist wichtig, das Datenmodell mit Bedacht auszuwählen, das nicht nur Ihren Anforderungen entspricht, aber Ihre bereits getätigten Investitionen in XSD-Asset XFA-Assets erweitert. Es wird empfohlen, das XSD-Modell zu verwenden, um Formularvorlagen zu erstellen, weil die generiert XML-Daten enthält, die per XPFAD vom Schema definiert wurden. Die Verwendung des XSD-Modells als Standardauswahl für das Formulardatenmodell hilft auch dabei, weil es das Formulardesign vom Backendsystem abkoppelt, das Daten verarbeitet und verbraucht und es verbessert die Leistung des Formulard, wegen der One-to-One-Zuweisung des Formularfelds. BindRef des Felds kann auch aus dem XPFAD seines Datenwerts in XML gemacht werden.
 
@@ -181,7 +181,7 @@ Sie können adaptive Formularfelder mit Daten aus dem Backend vorbefüllen, um B
 * Die Prefill-Daten XML muss mit dem Schema des Formularmodells, das mit dem adaptiven Formular verknüpft ist, konform sein.
 * Schließen Sie die Abschnitte`afBoundedData`   und`afUnBoundedData`   in die Prefill-XML zum Vorbefüllen von gebundenen und ungebundenen Feldern in einem adaptiven Formular ein.
 
-* Für adaptive Formulare, die auf dem Formulardatenmodell basieren, bietet AEM Forms den vordefinierten Formulardatenmodellvorfülldienst. Der Prefill-Dienst fragt nach Datenquellen für Datenmodellobjekte im adaptiven Formular und befüllt Feldwerte beim Rendern des Formulars.
+* Für adaptive Formulare, die auf dem Formulardatenmodell basieren, stellt AEM Forms den vordefinierten Formulardatenmodellvorfülldienst bereit. Der Prefill-Dienst fragt nach Datenquellen für Datenmodellobjekte im adaptiven Formular und befüllt Feldwerte beim Rendern des Formulars.
 * Sie können auch die Protokolle file, crx, service oder http verwenden, um adaptive Formulare vorzubefüllen.
 * AEM Forms unterstützt benutzerdefinierte Prefill-Dienste, die Sie als OSGi-Dienst einbinden können, um adaptive Formulare vorzubefüllen.
 
@@ -197,7 +197,7 @@ Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der v
 
 Sie können die Funktion der mehrfachen Signaturen von Adobe Sign in adaptiven Formularen nutzen. Beachten Sie die folgenden Punkte bei der Konfiguration von Adobe Sign in adaptiven Formularen. For details, see [Using Adobe Sign in an adaptive form](/help/forms/using/working-with-adobe-sign.md).
 
-* Adobe Sign-aktiviertes Formular wird nur gesendet, nachdem alle Unterzeichner das Formular unterzeichnet haben. Formulare werden im Status &quot;Ausstehende Unterschrift&quot;angezeigt, bis das Formular von allen Unterzeichnern unterzeichnet wurde.
+* Adobe Sign-aktiviertes Formular wird nur gesendet, nachdem alle Unterzeichner das Formular unterzeichnet haben. Forms wird im Status &quot;Ausstehende Unterschrift&quot;angezeigt, bis das Formular von allen Unterzeichnern unterzeichnet wurde.
 * Sie können die Funktion des Unterzeichnens im Formular konfigurieren oder Unterzeichner auf eine neue Signaturseite beim Senden umleiten.
 * Konfigurieren Sie je nach Bedarf sequentielle oder parallele Signaturfunktionen.
 
@@ -310,6 +310,8 @@ In einer Produktionsumgebung wird empfohlen, eingereichte Formulardaten nicht im
 * **Speichern von Übermittlungsdaten**: Wenn Sie den Form Portal Submit Store verwenden, sollten Sie eine benutzerdefinierte SPI implementieren, um die Sendungsdaten in einer Datenbank zu speichern. See [Sample for integrating drafts &amp; submissions component with database](/help/forms/using/integrate-draft-submission-database.md) for a sample integration.
 
    Sie können auch eine benutzerdefinierte Übermittlungsaktion schreiben, die Formulardaten und Anhänge in einem sicheren Speicher speichert. See [Writing custom Submit action for adaptive forms](/help/forms/using/custom-submit-action-form.md) for more information.
+
+* **Länge der Entwurfs-ID**: Wenn Sie ein adaptives Formular als Entwurf speichern, wird eine Entwurfs-ID generiert, um den Entwurf eindeutig zu identifizieren. Der Mindestwert für die Länge des Entwurfs-ID-Felds beträgt 26 Zeichen. Adobe empfiehlt, die Entwurfslänge der ID auf 26 Zeichen oder mehr festzulegen.
 
 ### Bearbeiten von persönlichen identifizierbaren Informationen {#handling-personally-identifiable-information}
 
