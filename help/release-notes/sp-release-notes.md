@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 2e56a44fce08bc127a7ec920d2cb985ce2842bbc
 workflow-type: tm+mt
 source-wordcount: '4530'
 ht-degree: 7%
@@ -20,7 +20,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | Version | 6.5.6.0 |
 | Typ | Service Pack-Version |
-| Datum            | 03. September 2020 |
+| Datum | 03. September 2020 |
 | Download-URL | [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
 
 ## Inhalt von Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
