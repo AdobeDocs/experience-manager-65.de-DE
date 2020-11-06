@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 98%
+source-wordcount: '2085'
+ht-degree: 79%
 
 ---
 
@@ -60,11 +60,23 @@ Nein. Die intelligente Bildbearbeitung ist im Lieferumfang Ihrer vorhandenen Liz
 
 ## Wie funktioniert die intelligente Bildbearbeitung? {#how-does-smart-imaging-work}
 
-Die intelligente Bildbearbeitung verwendet Adobe Sensei, um Bilder basierend auf den Browser-Funktionen automatisch in das optimale Format, die optimale Größe und die optimale Qualität zu konvertieren:
+Wenn ein Bild von einem Verbraucher angefordert wird, prüfen wir die Benutzereigenschaften und konvertieren es in das entsprechende Bildformat, je nach verwendetem Browser. Diese Formatkonvertierungen werden so durchgeführt, dass die visuelle Genauigkeit nicht beeinträchtigt wird. Mit der intelligenten Bildbearbeitung werden Bilder wie folgt je nach Browserfunktionalität automatisch in andere Formate konvertiert.
 
-* Automatische Konvertierung in WebP für Browser wie Chrome, Firefox, Microsoft Edge, Android und Opera.
-* Automatische Konvertierung in JPEG2000 für Browser wie Safari.
-* Automatische Konvertierung in JPEG für Browser wie Internet Explorer 9+
+* Konvertieren Sie folgende Browser automatisch in WebP:
+   * Chrome
+   * Firefox
+   * Microsoft Edge
+   * Safari 14.0 +
+      * Safari 14 nur mit iOS 14.0 und höher und macOS BigSur und höher
+   * Android
+   * Opera
+* Unterstützung älterer Browser für Folgendes:
+
+   | Browser | Browser/OS-Version | Format |
+   | --- | --- | --- |
+   | Safari | iOS 14.0 oder früher | JPEG2000 |
+   | Edge | 18 oder früher | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * Bereitstellung des ursprünglich angeforderten Bildformats für Browser, die diese Formate nicht unterstützen.
 
 Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbeitung erzeugte, wird das Originalbild bereitgestellt.
@@ -90,11 +102,15 @@ Die intelligente Bildbearbeitung funktioniert mit Ihren vorhandenen „Bildvorga
 
 ## Muss ich für die intelligente Bildbearbeitung URLs und Bildvorgaben ändern oder neuen Code auf Websites bereitstellen? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Nein. Die intelligente Bildbearbeitung funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben. Darüber hinaus müssen Sie bei der intelligenten Bildbearbeitung keinen Code auf Ihrer Website hinzufügen, um den Browser eines Benutzers zu erkennen. All dies wird automatisch erledigt.
+Smart Imaging funktioniert nahtlos mit Ihren vorhandenen Bild-URLs und Bildvorgaben, wenn Sie Smart Imaging in Ihrer vorhandenen benutzerdefinierten Domäne konfigurieren. Darüber hinaus müssen Sie bei der intelligenten Bildbearbeitung keinen Code auf Ihrer Website hinzufügen, um den Browser eines Benutzers zu erkennen. All dies wird automatisch erledigt.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+Falls Sie eine neue benutzerdefinierte Domäne für die Verwendung von Smart Imaging konfigurieren müssen, müssen die URLs aktualisiert werden, um diese benutzerdefinierte Domäne widerzuspiegeln.
 
 Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?](#am-i-eligible-to-use-smart-imaging), um die Voraussetzungen für die intelligente Bildbearbeitung zu verstehen.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?        {#does-smart-imaging-working-with-https-how-about-http}
 
@@ -177,6 +193,34 @@ Zu Beginn der Übergangsphase treffen die nicht im Cache gespeicherten Bilder di
 Nicht alle Bilder werden konvertiert.  Die intelligente Bildbearbeitung entscheidet, ob durch Konvertieren die Leistung gesteigert werden kann. In einigen Fällen, in denen kein Leistungsgewinn erwartet wird oder das Format nicht JPEG oder PNG ist, wird das Bild nicht konvertiert.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## Wie erkenne ich den Leistungsgewinn? Gibt es eine Möglichkeit, die Vorteile von Smart Imaging zu beachten? {#performance-gain}
+
+**Über Smart Imaging-Kopfzeilen**
+
+Die Header-Werte für Smart Imaging funktionieren nur, wenn Nicht-Cache-Anforderungen ab sofort verarbeitet werden. Dies geschieht, um die Kompatibilität des aktuellen Caches zu gewährleisten und zu vermeiden, dass eine Berechnung erforderlich ist, wenn Bilder über den Cache verarbeitet werden.
+
+Um Smart Imaging-Kopfzeilen zu verwenden, müssen Sie den`cache=off`Modifikator in Ihre Anforderungen einfügen. Siehe[Cache in der Dynamic Media Image Serving and Rendering API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html).
+
+Beispiel für die Verwendung `cache=off` (nur zur Veranschaulichung):
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+Nachdem Sie eine solche Anforderung verwendet haben, können Sie im Abschnitt &quot;Antwortheader&quot;die `-x-adobe-smart-imaging` Kopfzeile anzeigen. Siehe den folgenden Screenshot mit `-x-adobe-smart-imaging` hervorgehobener Markierung.
+
+![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+Dieser Kopfzeilenwert bezeichnet Folgendes:
+
+* Smart Imaging funktioniert für die Firma.
+* Positiver Wert (>=0) bedeutet, dass die Konvertierung erfolgreich war. In diesem Fall wird ein neues Bild (WebP hier) zurückgegeben.
+* Negativer Wert (&lt;0) bedeutet, dass die Konvertierung nicht erfolgreich war. In diesem Fall wird das ursprünglich angeforderte Bild zurückgegeben (standardmäßig JPEG, falls nicht angegeben).
+* Der Wert gibt die Differenz in Byte zwischen dem angeforderten Bild und dem neuen Bild an. In diesem Fall werden 75048 Bytes gespeichert, was ungefähr 75 KB für ein Bild entspricht. 
+   * Der negative Wert gibt an, dass das angeforderte Bild kleiner als das neue Bild war. Wir zeigen die negative Größendifferenz an, aber das bereitgestellte Bild ist nur das ursprünglich angeforderte Bild
+
+**Wann werden Smart Imaging-Kopfzeilen verwendet?**
+
+Die Smart Imaging-Antwort-Header sind für Debugging-Zwecke oder beim Hervorheben der Vorteile von Smart Imaging aktiviert. Die Verwendung`cache=off`in normalen Szenarien kann die Ladezeit erheblich beeinträchtigen.
 
 ## Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden? {#turning-off-smart-imaging}
 
