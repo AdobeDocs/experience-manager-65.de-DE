@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2e56a44fce08bc127a7ec920d2cb985ce2842bbc
+source-git-commit: b23b66e9d57742f6771bc4b26753a47b334e06bc
 workflow-type: tm+mt
-source-wordcount: '4530'
+source-wordcount: '4557'
 ht-degree: 7%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 7%
 Adobe Experience Manager 6.5.6.0 ist ein wichtiges Update, das neue Funktionen, von wichtigen Kunden angeforderte Verbesserungen sowie Verbesserungen in den Bereichen Leistung, Stabilität und Sicherheit umfasst. Die Updates werden seit der allgemeinen Verfügbarkeit der Version 6.5 im **April 2019** veröffentlicht. Es kann auf Adobe Experience Manager 6.5 installiert werden.
 
 Die wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6.5.6.0 eingeführt wurden, umfassen:
+
+* Assets können mithilfe des Assistenten &quot; [!DNL Experience Manager] Schnelle Veröffentlichung [!DNL Dynamic Media] &quot;oder &quot;Veröffentlichung [!UICONTROL verwalten]  &quot;selektiv veröffentlicht oder die Veröffentlichung rückgängig gemacht werden.
+
+* Verwenden Sie die [!DNL Dynamic Media] Benutzeroberfläche, um zwischengespeicherte Content Versand Network (CDN)-Inhalte ungültig zu machen.
 
 * Das Veröffentlichen der Asset-Beitragsordner vom Markenportal in Experience Manager Assets wird jetzt auch über den Proxyserver unterstützt.
 
