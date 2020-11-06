@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
+source-git-commit: 141a1783f275c0b3587ebc374bde19a21e107409
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -97,7 +97,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets.]**
+1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 
    ![Seite „Workflow-Modelle“ mit „Scene7: Assets erneut verarbeiten“ in der Kartenansicht ausgewählt](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -117,9 +117,9 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Dialogfeld „Eigenschaften“](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done.]**
+1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done]**.
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync.]** Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 
