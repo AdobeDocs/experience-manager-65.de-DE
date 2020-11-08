@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3904'
 ht-degree: 60%
 
 ---
@@ -76,6 +76,10 @@ Führen Sie die folgenden Schritte aus, um ein signaturfähiges adaptives Formul
    1. Geben Sie den **Namen** und den **Titel** für das adaptive Formular an.
 
    1. Wählen Sie den [Configuration Container](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) aus, der beim Konfigurieren von Adobe Sign mit AEM Forms erstellt wurde.
+
+      >[!NOTE]
+      >
+      >Die Dropdown-Liste **[!UICONTROL Adobe Sign Cloud Service]** zeigt die Cloud-Services an, die in dem in diesem Feld ausgewählten Container konfiguriert sind. Die Dropdown-Liste **[!UICONTROL Adobe Sign Cloud Service]** ist im Abschnitt **[!UICONTROL Elektronische Signatur]** der Eigenschaften des adaptiven Formulars verfügbar, wenn Sie die Option &quot;Adobe Sign **** aktivieren&quot;wählen.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Formularmodell]** eine der folgenden Optionen aus:
 
@@ -340,7 +344,7 @@ Damit ist der Ablauf zur formularinternen Unterzeichnung vollständig. Sie könn
 
 **Auflösung**
 
-* Wenn Sie Adobe Sign ohne Unterschriftsschritt verwenden oder das Formular Unterschriften mehrerer Personen erfordert, wartet der AEM Forms-Server auf die Planung, um zu bestätigen, dass alle Personen das Formular unterzeichnet haben. Die Planung sendet das adaptive Formular erst, nachdem der gesamte Beginn die Unterzeichnung abgeschlossen hat, und erst nach erfolgreicher Übermittlung des adaptiven Formulars. Sie können das Intervall der [Planung](adobe-sign-integration-adaptive-forms.md) verkürzen, um den Status der Formularsignierung in kurzen Zeitabständen zu überprüfen und die Formularübermittlung zu beschleunigen.
+* Wenn Sie Adobe Sign ohne Unterschriftsschritt verwenden oder das Formular Unterschriften mehrerer Personen erfordert, wartet der AEM Forms-Server auf die Planung, um zu bestätigen, dass alle Personen das Formular unterzeichnet haben. Die Planung sendet das adaptive Formular erst, nachdem der gesamte Beginn die Unterzeichnung abgeschlossen hat, und erst nach erfolgreicher Übermittlung des adaptiven Formulars. Sie können das Intervall der [Planung](adobe-sign-integration-adaptive-forms.md) verkürzen, um den Status der Formularsignierung in kurzen Abständen zu überprüfen und die Formularübermittlung zu beschleunigen.
 
 
 ## Related Articles {#related-articles}
