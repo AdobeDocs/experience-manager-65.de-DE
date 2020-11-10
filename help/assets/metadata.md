@@ -3,9 +3,9 @@ title: Verwalten von Metadaten für digitale Assets in  [!DNL Adobe Experience M
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2421'
 ht-degree: 56%
 
 ---
@@ -243,7 +243,7 @@ Sie können ein Metadaten-Profil aus einem Ordner im Menü &quot; **[!UICONTROL 
 >
 >* [Metadaten-Konzepte und -Verständnis](metadata-concepts.md).
 >* [Bearbeiten von Metadateneigenschaften von mehreren Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Metadaten-Import und -Export in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Metadaten-Import und -Export in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
