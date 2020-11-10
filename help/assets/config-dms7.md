@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ee527712b4d7f6ebf9ef2996de1405f6f9c3d335
+source-git-commit: 24ad36d3ff329885efff319404e0d5321e8ce46d
 workflow-type: tm+mt
-source-wordcount: '5964'
-ht-degree: 81%
+source-wordcount: '5990'
+ht-degree: 80%
 
 ---
 
@@ -545,9 +545,7 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 
 1. Ändern Sie im Feld **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** die Zahl in den gewünschten Wert.
 
-   Die maximale Anzahl der parallelen Aufträge hängt standardmäßig von der Anzahl der verfügbaren CPU-Kerne ab. Auf einem Server mit 4 Kernen werden z. B. 2 Workerthreads zugewiesen. (Ein Wert zwischen 0,0 und 1,0 ist verhältnisbasiert, alle Zahlen über 1 weisen die Anzahl der Workerthreads zu.)
-
-   In den meisten Fällen ist die Standardeinstellung 0,5 ausreichend.
+   Sie können &quot;Maximale Anzahl paralleler Aufträge&quot;erhöhen, um den umfangreichen Hochladevorgang von Dateien auf dynamische Medien angemessen zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien - d. h. einer ersten Migration oder einem einmaligen Massen-Upload - können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines hohen Werts (z. B. die zweifache Anzahl der Kerne) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert auf Basis Ihres jeweiligen Anwendungsfalls testen und anpassen.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
