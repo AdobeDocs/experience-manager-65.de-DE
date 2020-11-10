@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5e10ddb0e5cf24e1915d0840cd380520374e93ea
+source-git-commit: 03967fcdc9685c9a8bf1dead4bd5e389603ff91b
+workflow-type: tm+mt
+source-wordcount: '3934'
+ht-degree: 80%
 
 ---
 
@@ -24,9 +27,9 @@ Sie können von den folgenden Seiten aus auf Pakete zugreifen und/oder Pakete ve
 
 * [Package Manager](#package-manager), mit dessen Hilfe Sie die Pakete auf der lokalen AEM-Instanz verwalten.
 
-* [Package Share](#package-share), einem zentralen Server, auf dem sowohl öffentlich verfügbare Pakete als auch private Pakete Ihrer Firma gespeichert sind. Die öffentlichen Pakete können Hotfixes, neue Funktionen, Dokumentationen usw. enthalten.
+* [Softwareverteilung](#software-distribution), ein zentralisierter Server, der sowohl öffentlich verfügbare als auch private Pakete für Ihre Firma enthält. Die öffentlichen Pakete können Hotfixes, neue Funktionen, Dokumentationen usw. enthalten.
 
-Sie können Pakete zwischen Package Manager, Package Share und Ihrem Dateisystem übertragen.
+Sie können Pakete zwischen Package Manager, Software Distribution und Ihrem Dateisystem übertragen.
 
 ## Was sind Pakete? {#what-are-packages}
 
@@ -34,7 +37,7 @@ Ein Paket ist eine Zip-Datei mit Repository-Inhalten in Form einer Dateisystem-S
 
 Pakete enthalten sowohl Seiteninhalte als auch projektspezifische Inhalte, die mithilfe von Filtern ausgewählt werden.
 
-Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen und Import-Konfigurationsinformationen. Zusätzliche Inhaltseigenschaften (die nicht für die Paketextrahierung verwendet werden) können in das Paket eingeschlossen werden, z. B. eine Beschreibung, ein visuelles Bild oder ein Symbol. Diese Eigenschaften dienen nur dem Benutzer des Inhaltspakets und nur zu Informationszwecken.
+Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen und Import-Konfigurationsinformationen. Zusätzliche Inhaltseigenschaften (die nicht für die Extraktion von Paketen verwendet werden) können in das Paket aufgenommen werden, z. B. eine Beschreibung, ein visuelles Bild oder ein Symbol. Diese Eigenschaften dienen nur dem Benutzer des Inhaltspakets und nur zu Informationszwecken.
 
 >[!NOTE]
 >
@@ -56,8 +59,8 @@ Sie können die folgenden Aktionen hinsichtlich der Pakete ausführen:
 * Führen Sie eine Trockenausführungsinstallation durch
 * Pakete installieren (AEM installiert Pakete nach dem Hochladen nicht automatisch)
 * Pakete löschen
-* Pakete wie Hotfixes aus der Package Share-Bibliothek herunterladen
-* Pakete in den firmeninternen Bereich der Package Share-Bibliothek hochladen
+* Herunterladen von Paketen wie Hotfixes aus der Software-Distribution-Bibliothek
+* Hochladen von Paketen in den Firma-internen Bereich der Softwareverteilungsbibliothek
 
 ## Paketinformationen {#package-information}
 
@@ -82,7 +85,7 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 | Gruppe | Der Name der Gruppe, der das Paket hinzugefügt werden soll, um Pakete zu organisieren. Geben Sie den Namen für eine neue Gruppe ein oder wählen Sie eine vorhandene Gruppe aus. |
 | Version | Für die benutzerdefinierte Version zu verwendender Text. |
 | Beschreibung | Eine kurze Beschreibung des Pakets. HTML-Markup kann zum Formatieren verwendet werden. |
-| Miniatur | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
+| Miniaturansicht       | Das Symbol, das mit der Paketliste angezeigt wird. Klicken Sie auf „Durchsuchen“, um eine lokale Datei auszuwählen. |
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -143,9 +146,9 @@ Rufen Sie das Dialogfeld **Paketeinstellungen** über die Schaltfläche **Bearbe
 
 | **Feld** | **Beschreibung** | **Format/Beispiel** |
 |---|---|---|
-| Testen mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM 6* |
-| Behobene Fehler/Probleme | Ein Textfeld, mit dem Sie Details zu Fehlern auflisten können, die mit diesem Paket behoben wurden. Listen Sie die einzelnen Fehler in separaten Zeilen auf. | bug-nr-Zusammenfassung |
-| Abhängig von | Listet Abhängigkeitsinformationen auf, die beachtet werden müssen, wenn andere Pakete benötigt werden, damit das aktuelle Paket erwartungsgemäß ausgeführt werden kann. Dieses Feld ist bei Verwendung von Hotfixes wichtig. | groupId:name:version |
+| Testen mit | Der Produktname und die Version, auf die dieses Paket ausgerichtet ist oder mit der es kompatibel ist. | *AEM 6* |
+| Behobene Fehler/Probleme | Ein Textfeld, das die Liste von Details zu Fehlern ermöglicht, die mit diesem Paket behoben wurden. Listen Sie die einzelnen Fehler in separaten Zeilen auf. | bug-nr-Zusammenfassung |
+| Abhängig von | Abhängigkeitsinformationen von Listen, die beachtet werden müssen, wenn andere Pakete benötigt werden, damit das aktuelle Paket erwartungsgemäß ausgeführt werden kann. Dieses Feld ist bei Verwendung von Hotfixes wichtig. | groupId:name:version |
 | Ersetzungen | Eine Liste veralteter Pakete, die dieses Paket ersetzt. Überprüfen Sie vor der Installation, ob dieses Paket alle erforderlichen Inhalte von den veralteten Paketen beinhaltet, sodass keine Inhalte überschrieben werden. | groupId:name:version |
 
 ### Paketfilter {#package-filters}
@@ -254,7 +257,7 @@ So erstellen Sie eine neue Paketdefinition:
 
    * **Gruppenname**
 
-      Der Name der Zielgruppe (oder des Ordners). Gruppen sind für die Organisation Ihrer Pakete vorgesehen.
+      Der Name der Zielpopulation (oder des Ordners). Gruppen sind für die Organisation Ihrer Pakete vorgesehen.
 
       Das System legt einen Ordner für die Gruppe an, sollte sie noch nicht vorhanden sein. Wenn Sie keinen Gruppennamen eingeben, wird das Paket in der Hauptpaketliste („Startseite“ > „Pakete“) erstellt.
 
@@ -267,7 +270,7 @@ So erstellen Sie eine neue Paketdefinition:
       Ein Textfeld zur Eingabe einer Version. Diese wird an den Paketnamen angehängt, um den Namen der ZIP-Datei zu bilden.
    Klicken Sie auf **OK**, um das Paket zu erstellen.
 
-1. AEM listet das neue Paket im entsprechenden Gruppenordner auf.
+1. AEM wird das neue Paket im entsprechenden Gruppenordner Liste.
 
    ![packagesitem](assets/packagesitem.png)
 
@@ -285,11 +288,11 @@ So erstellen Sie eine neue Paketdefinition:
 
    Klicken Sie auf **OK**, wenn Sie mit der Bearbeitung der Einstellungen fertig sind.
 
-1. Fügen Sie dem Paket bei Bedarf **[Screenshots](#package-screenshots)**hinzu. Eine Instanz ist verfügbar, wenn das Paket erstellt wurde. Fügen Sie weitere hinzu, falls dies erforderlich sein sollte, indem Sie die Option **Paket-Screenshot**im Sidekick verwenden.
+1. Fügen Sie dem Paket bei Bedarf **[Screenshots](#package-screenshots)** hinzu. Eine Instanz ist verfügbar, wenn das Paket erstellt wurde. Fügen Sie weitere hinzu, falls dies erforderlich sein sollte, indem Sie die Option **Paket-Screenshot** im Sidekick verwenden.
 
    Fügen Sie das Ist-Bild hinzu, indem Sie auf die Bildkomponente im Bereich **Screenshots** doppelklicken, ein Bild hinzufügen und auf **OK** klicken.
 
-1. Definieren Sie die **[Paketfilter](#package-filters)**, indem Sie die Instanzen der **Filterdefinition**aus dem Sidekick ziehen und dann darauf doppelklicken, um sie zur Bearbeitung zu öffnen:
+1. Definieren Sie die **[Paketfilter](#package-filters)**, indem Sie die Instanzen der **Filterdefinition** aus dem Sidekick ziehen und dann darauf doppelklicken, um sie zur Bearbeitung zu öffnen:
 
    ![packagesfilter](assets/packagesfilter.png)
 
@@ -298,7 +301,7 @@ So erstellen Sie eine neue Paketdefinition:
    * **Stammpfad** Die zu packenden Inhalte. Dabei kann es sich um den Stamm einer Unterstruktur handeln.
    * **Regeln** Regeln sind optional. Bei einfachen Paketdefinitionen ist es nicht notwendig, Regeln zum Ein- oder Ausschließen festzulegen.
 
-      Bei Bedarf können Sie Regeln zum [**Einschließen **oder** Ausschließen **](#package-filters)definieren, um die Paketinhalte genau festzulegen.
+      Bei Bedarf können Sie Regeln zum [**Einschließen** oder **Ausschließen**](#package-filters) definieren, um die Paketinhalte genau festzulegen.
 
       Fügen Sie Regeln mithilfe des **+**-Symbols hinzu und entfernen Sie Regeln mithilfe des **-**-Symbols. Regeln werden entsprechend ihrer Reihenfolge angewendet. Positionieren Sie sie daher mit den Schaltflächen **Nach oben** und **Nach unten** wie gewünscht.
    Klicken Sie dann auf **OK**, um den Filter zu speichern.
@@ -338,11 +341,11 @@ Nach der Erstellung kann das Paket bei Bedarf neu eingegliedert werden.
 
 Bei einer Neueingliederung werden die Paketinformationen *ohne* Änderung der Paketinhalte geändert. Zu den Paketinformationen gehören die Miniaturansicht, die Beschreibung usw., d. h. alle Informationen, die Sie im Dialogfeld **Paketeinstellungen** bearbeiten können (klicken Sie zum Öffnen des Dialogfelds auf **Bearbeiten**).
 
-Hauptsächlich wird die Neueingliederungsfunktion bei der Vorbereitung eines Pakets für Package Share eingesetzt. Es könnte beispielsweise sein, dass Sie ein vorhandenes Paket haben, das Sie für andere freigeben möchten. Bevor Sie dies tun, möchten Sie eine Miniaturansicht und eine Beschreibung hinzufügen. Anstatt das gesamte Paket mit allen Funktionen neu zu erstellen (was möglicherweise einige Zeit in Anspruch nimmt und das Risiko birgt, dass das Paket nicht mit dem Original identisch ist), können Sie es neu eingliedern und nur die Miniaturansicht und die Beschreibung hinzufügen.
+Ein wichtiger Anwendungsfall für Umbruch ist die Vorbereitung eines Pakets. Es könnte beispielsweise sein, dass Sie ein vorhandenes Paket haben, das Sie für andere freigeben möchten. Bevor Sie dies tun, möchten Sie eine Miniaturansicht und eine Beschreibung hinzufügen. Anstatt das gesamte Paket mit allen Funktionen neu zu erstellen (was möglicherweise einige Zeit in Anspruch nimmt und das Risiko birgt, dass das Paket nicht mit dem Original identisch ist), können Sie es neu eingliedern und nur die Miniaturansicht und die Beschreibung hinzufügen.
 
 1. Öffnen Sie die Paketdefinition im **Package Manager** (klicken Sie auf das Paketsymbol oder den Paketnamen).
 
-1. Klicken Sie auf **Bearbeiten** und aktualisieren Sie die **[Paketeinstellungen](#package-settings)**nach Bedarf. Klicken Sie zum Speichern auf **OK**.
+1. Klicken Sie auf **Bearbeiten** und aktualisieren Sie die **[Paketeinstellungen](#package-settings)** nach Bedarf. Klicken Sie zum Speichern auf **OK**.
 
 1. Klicken Sie auf **Erneut verpacken**. Daraufhin wird ein Bestätigungsdialogfeld angezeigt.
 
@@ -382,21 +385,6 @@ Nach der Erstellung eines Pakets können Sie dessen Inhalte anzeigen:
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem **Package Manager** ein Paket von AEM in das Dateisystem herunterladen.
 
->[!NOTE]
->
->Informationen zum Herunterladen von Hotfixes, Funktionspaketen sowie Paketen aus dem öffentlichen Bereich und dem firmeninternen Bereich von Package Share finden Sie in [Package Share](#package-share).
->
->Sie können von Package Share aus:
->
->* Pakete von [Package Share direkt in die lokale AEM-Instanz herunterladen](#downloading-and-installing-packages-from-package-share).
-   >  Nach dem Download wird das Paket in das Repository importiert. Anschließend können Sie es mithilfe des **Package Managers** sofort auf der lokalen Instanz installieren. Diese Pakete enthalten Hotfixes und andere gemeinsame Pakete.
-   >
-   >
-* Pakete von [Package Share in das Dateisystem herunterladen](#downloading-packages-to-your-file-system-from-package-share).
->
-
-
-
 1. On the AEM Welcome screen, click **Packages**, then select **Package Manager**.
 1. Navigieren Sie zum Paket, das Sie herunterladen möchten.
 
@@ -408,12 +396,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit dem **Package Manager** ein Pa
 
 ### Hochladen von Paketen von dem Dateisystem {#uploading-packages-from-your-file-system}
 
-Beim Hochladen von Paketen können Sie ein Paket aus Ihrem Dateisystem in den AEM Package Manager hochladen.
-
->[!NOTE]
->
->See [Uploading packages to the company-internal Package Share](#uploading-packages-to-the-company-internal-package-share) to upload a package to your company&#39;s private area of Package Share.
-
+Beim Hochladen eines Pakets können Sie ein Paket aus Ihrem Dateisystem in den AEM Package Manager hochladen.
 So laden Sie ein Paket hoch:
 
 1. Navigieren Sie zum **Package Manager**. Klicken Sie dann auf den Gruppenordner, in den Sie das Paket hochladen wollen.
@@ -426,7 +409,7 @@ So laden Sie ein Paket hoch:
 
    * **File**
 
-      **Sie können entweder den Dateinamen direkt eingeben oder die** Durchsuchen... , um das gewünschte Paket aus Ihrem lokalen Dateisystem auszuwählen (nach Auswahl klicken Sie auf **OK**).
+      You can either type the file name directly, or use the **Browse...** dialog to select the required package from your local file system (after selection click **OK**).
 
    * **Hochladen erzwingen**
 
@@ -554,6 +537,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `osgiPackageImports`
 >* `overlays`
 >* `acls`
+
 >
 >
 The value of `type` defaults to `osgiPackageImports` if not passed.
@@ -576,7 +560,7 @@ Im Folgenden finden Sie ein Beispiel für die Verwendung von cURL zur Ausführun
 
 Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren. Damit die Paketinhalte installiert und verwendet werden können, müssen sie:
 
-* loaded into AEM (either [uploaded from your filesystem](#uploading-packages-from-your-file-system) or [downloaded from package share](#downloading-and-installing-packages-from-package-share))
+* loaded into AEM (either [uploaded from your filesystem](#uploading-packages-from-your-file-system) or downloaded from [Software Distribution](#software-distribution))
 
 * installiert werden.
 
@@ -592,6 +576,7 @@ Nachdem Sie ein Paket hochgeladen haben, müssen Sie dessen Inhalte installieren
    >
 * Siehe Liste der Paketinhalte:
    >  Öffnen Sie das Paket und klicken Sie auf **Inhalt**.
+
 >
 
 
@@ -641,7 +626,7 @@ Wird Ihre Instanz ausgeführt und Sie fügen dem `install`-Ordner ein Paket hinz
 
 ### Deinstallieren von Paketen {#uninstalling-packages}
 
-Mit AEM können Sie Pakete deinstallieren. Durch diese Aktion werden die Inhalte des Repositorys zurückgesetzt, die im Snapshot enthalten sind, der unmittelbar vor der Paketinstallation erstellt wurde.
+AEM ermöglicht die Deinstallation von Paketen. Durch diese Aktion werden die Inhalte des Repositorys zurückgesetzt, die im Snapshot enthalten sind, der unmittelbar vor der Paketinstallation erstellt wurde.
 
 >[!NOTE]
 >
@@ -667,6 +652,7 @@ So löschen Sie ein Paket aus der/den Package Manager-Liste(n):
 
    * Click **Delete** in the toolbar menu.
    * Klicken Sie mit der rechten Maustaste und wählen Sie **Löschen** aus.
+
    ![packagesdelete](assets/packagesdelete.png)
 
 1. AEM fragt nach der Bestätigung, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
@@ -686,217 +672,17 @@ Replizieren Sie die Inhalte eines Pakets, um sie auf der veröffentlichten Insta
 
 ## Package Share {#package-share}
 
-Package Share ist ein zentraler Server, der öffentlich zugänglich ist, um Inhaltspakete auszutauschen.
+Package Share war ein zentralisierter Server, der öffentlich zur Freigabe von Content-Packages zur Verfügung gestellt wurde.
 
-Mithilfe von Package Share können Sie diese Pakete herunterladen, die offizielle Hotfixes, Funktionen, Updates oder von anderen Benutzern erstellte Beispielinhalte enthalten können.
+Es wurde durch [Softwareverteilung](#software-distribution)ersetzt.
 
-Sie können auch Pakete hochladen und innerhalb Ihres Unternehmens austauschen.
+## Software Distribution {#software-distribution}
 
-### Zugreifen auf Package Share {#access-to-package-share}
+[Software Distribution](https://downloads.experiencecloud.adobe.com) ist die neue Benutzeroberfläche, die die Suche und den Download von AEM Packages vereinfacht.
 
-Ein anonymer Zugriff auf Package Share ist nicht möglich, d. h. nur registrierte Benutzer können Pakete anzeigen, herunterladen und hochladen.
-
-Unsere Partner und Kunden können auf Package Share zugreifen. Dazu müssen Registrierungsdetails übermittelt werden, damit Zugriffsrechte zugewiesen werden können.
-
-So erhalten Sie Zugriff auf Package Share:
-
-* Verwenden Sie die [Anmeldeseite](#signing-in-to-package-share).
-* Beim erstmaligen Aufruf der Anmeldeseite müssen Sie:
-
-   * [sich registrieren, um eine Adobe ID zu erhalten,](#registering-for-package-share) und/oder [Ihre vorhandene Adobe ID validieren,](#validating-your-adobe-id)
-   * damit Ihr [Package Share-Konto](#package-share-account) erstellt werden kann.
-
->[!NOTE]
->
->Jeder Package Share-Benutzer, der noch keinem Kunden zugewiesen wurde, muss Mitglied einer Community werden, um diese Ressourcen sehen zu können, indem er auf **Beitreten** neben der Package Share-Anmeldung klickt.
-
-#### Anmelden bei Package Share {#signing-in-to-package-share}
-
-1. On the AEM Welcome screen, click **Tools**.
-1. Wählen Sie dann **Package Share** aus. Sie werden aufgefordert, entweder:
-
-   * sich mit Ihrer Adobe ID anzumelden oder
-   * [eine Adobe ID zu erstellen](#registering-for-package-share).
-   >[!NOTE]
-   >
-   >Bei der ersten Anmeldung mit Ihrer Adobe ID müssen Sie [Ihre E-Mail-Adresse validieren](#validating-your-adobe-id).
-
-   >[!NOTE]
-   >
-   >Sollten Sie Ihr Kennwort vergessen haben, verwenden Sie den Link [Hilfeseiten](https://enterprise-dev.adobe.com/content/edev/en/registration/account.html) (dieser ist auch im Dialogfeld „Anmelden“ zu finden).
-
-#### Validieren der Adobe ID {#validating-your-adobe-id}
-
-Bei der ersten Anmeldung bei Package Share mit Ihrer Adobe ID wird Ihre E-Mail-Adresse validiert.
-
-1. Sie erhalten eine E-Mail mit einem Link.
-1. Sie müssen auf diesen Link klicken.
-1. Daraufhin wird eine Webseite geöffnet.
-
-   Durch das Öffnen der Webseite haben Sie die E-Mail validiert.
-
-1. Der Anmeldevorgang wird fortgesetzt.
-
-1. Sie erhalten eine E-Mail mit einem Link.
-1. Sie müssen auf diesen Link klicken.
-1. Daraufhin wird eine Webseite geöffnet. Durch das Öffnen der Webseite haben Sie die E-Mail validiert.
-1. Der Anmeldevorgang wird fortgesetzt.
-
-#### Registrieren für Package Share {#registering-for-package-share}
-
-Wenn Sie auf Package Share zugreifen wollen, müssen Sie sich für eine Adobe ID registrieren:
-
-* Auf der [Package Share-Anmeldeseite](#signing-in-to-package-share) befindet sich ein Link zur Registrierung einer Adobe ID.
-* Sie können sich auch über bestimmte Adobe-Desktop-Softwareprogramme für eine Adobe ID registrieren.
-* Alternativ können Sie sich online auf der [Adobe-Anmeldeseite](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1) registrieren.
-
-Eine Adobe ID kann erstellt werden, wenn Sie Folgendes bereitstellen:
-
-* Ihre E-Mail-Adresse
-* ein Kennwort Ihrer Wahl
-* einige weitere Informationen wie beispielsweise Ihren Namen und das Land Ihres Wohnsitzes
-
-#### Package Share-Konto {#package-share-account}
-
-Die Gültigkeit Ihrer Anwendung wird überprüft, bevor:
-
-* Ihr Benutzerkonto mit den erforderlichen/gestatteten Berechtigungen erstellt wird;
-* Ihr Konto zur Gruppe Ihres Unternehmens hinzugefügt wird.
-
->[!NOTE]
->
->Ein Benutzer von einem unserer Partnerunternehmen kann auch ein Mitglied seiner Kundengruppen sein.
-
-#### Netzwerkhinweise {#network-considerations}
-
-**IPv6**
-
-Möglicherweise kann es zu Problemen kommen, wenn Sie versuchen, von einer reinen IPv6-Umgebung aus auf Package Share zuzugreifen.
-
-Der Grund dafür ist, dass Package Share ein auf einem Server gehosteter Service ist. Dies bedeutet, dass Ihre Verbindung über zahlreiche Netzwerke im Internet hergestellt wird. Dadurch kann nicht sichergestellt werden, dass alle angeschlossenen Netzwerke IPv6 unterstützen. Ist dies nicht der Fall, schlägt der Verbindungsaufbau fehl.
-
-Zur Vermeidung dieses Problems können Sie über ein IPv4-Netzwerk auf Package Share zugreifen, das Paket herunterladen und es dann in die IPv6-Umgebung hochladen.
-
-**HTTP-Proxy**
-
-Package Share ist derzeit nicht verfügbar, wenn Ihr Unternehmen einen HTTP-Proxy verwendet, der eine Authentifizierung erfordert.
-
-Package Share ist nur verfügbar, wenn Ihr AEM-Server ohne Authentifizierung auf das Internet zugreifen kann. Verwenden Sie zur Konfiguration des Proxys für alle Dienste, die den HTTP-Client verwenden (einschließlich Package Share), die [OSGi-Konfiguration des Day Commons HTTP Client 3.1-Bundles](/help/sites-deploying/osgi-configuration-settings.md).
-
-### Innerhalb von Package Share {#inside-package-share}
-
-Pakete werden in Package Share in einer Struktur mit Unterstrukturen angeordnet:
-
-* Von Adobe bereitgestellte Adobe-Pakete
-* Freigegebene Pakete, die von anderen Unternehmen bereitgestellt und von Adobe veröffentlicht wurden
-* Ihre privaten Unternehmenspakte
-
-![chlimage_1-110](assets/chlimage_1-110.png)
-
-### Suchen nach und Filtern von Paketen {#searching-and-filtering-packages}
-
-Package Share verfügt über eine Suchleiste, über die Sie nach bestimmten Keywords (Suchbegriffen) oder/und Tags suchen können. Keywords und Tags unterstützen mehrere Werte.
-
-* Wenn Sie nach mehreren Keywords suchen wollen, müssen Sie die einzelnen Keywords durch ein Leerzeichen trennen.
-* Um nach mehreren Tags zu suchen, müssen Sie jedes Tag in den Paketstrukturen auswählen.
-
-Sie können auf der rechten Seite der Filterübersichtsleiste auch den Konditionaloperator von ODER in UND ändern.
-
-### Herunterladen und Installieren von Paketen von Package Share {#downloading-and-installing-packages-from-package-share}
-
-Zum Herunterladen von Paketen von Package Share und Installieren dieser Pakete auf der lokalen Instanz ist es einfacher, von Ihrer AEM-Instanz aus auf Package Share zuzugreifen. Auf diese Weise wird das Paket heruntergeladen und sofort im Package Manager registriert, von wo aus es installiert werden kann.
-
-1. Klicken Sie im AEM-Willkommensbildschirm auf **Tools** und wählen Sie dann **Package Share**, um die Package Share-Seite zu öffnen.
-1. Melden Sie sich mithilfe Ihrer Kontodetails bei Package Share an. Die Einstiegsseite (Landingpage) wird mit dem Ordner „Adobe“, dem Ordner „Freigegeben“ und einem unternehmensspezifischen Ordner angezeigt.
-
-   >[!NOTE]
-   >
-   >Vergewissern Sie sich vor dem Herunterladen von Paketen von Package Share, dass Sie über die [erforderlichen Zugriffsrechte](#access-to-package-share) verfügen.
-
-1. Navigieren Sie zum Paket, das Sie herunterladen möchten, und klicken Sie auf **Herunterladen**.
-
-1. Kehren Sie zurück oder navigieren Sie zum **Package Manager** auf Ihrer AEM-Instanz. Navigieren Sie dann zu dem gerade heruntergeladenen Paket.
-
-   >[!NOTE]
-   >
-   >Folgen Sie demselben Pfad wie in Package Share, um die heruntergeladene Datei zu finden. Wenn Sie beispielsweise ein Paket unter dem folgenden Pfad in Package Share heruntergeladen haben:
-   >
-   >**Pakete** > **Öffentlich** > **Hotfixes**
-   Dann wird das Paket im Package Manager auf Ihrer lokalen Instanz auch unter folgendem Pfad angezeigt:
-   **Pakete** > **Öffentlich** > **Hotfixes**
-
-1. Klicken Sie auf **Installieren**, um das Paket auf der lokalen AEM-Installation zu installieren.
-
-   >[!NOTE]
-   Falls das Paket bereits auf der Instanz installiert wurde, wird anstatt der Schaltfläche **Installieren** die Anzeige **Installiert** neben dem Paket angezeigt.
-
-   >[!CAUTION]
-   Durch die Installation eines Pakets können vorhandene Inhalte im Repository überschrieben werden. Daher empfehlen wir, zunächst die Option **Installation testen** auszuführen. So können Sie überprüfen, ob die Inhalte im Paket mit den vorhandenen Inhalten in Konflikt stehen.
-
-### Herunterladen von Paketen in Ihr Dateisystem von Package Share {#downloading-packages-to-your-file-system-from-package-share}
-
-[Herunterladen und Installieren](#downloading-and-installing-packages-from-package-share) ist sehr bequem, aber Sie können das Paket bei Bedarf auch herunterladen und in Ihrem lokalen Dateisystem speichern:
-
-1. Klicken Sie in Package Share auf das Paketsymbol oder den Paketnamen.
-1. Klicken Sie auf die Registerkarte **Assets**.
-1. Klicken Sie auf **Auf Festplatte herunterladen**.
-
-### Hochladen von Paketen {#uploading-a-package}
-
-Mithilfe von Package Share können Sie Pakete in den unternehmensinternen Bereich von Package Share hochladen. Dadurch können sie innerhalb des Unternehmens geteilt werden.
-
-Diese Pakete sind *nicht* der allgemeinen AEM-Community zugänglich, aber sie sind für alle bei Ihrem Unternehmen registrierten Benutzer verfügbar.
-
-So laden Sie Pakete in den unternehmensinternen Bereich von Package Share hoch:
+Weitere Informationen finden Sie in der Dokumentation zur [Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 >[!CAUTION]
-Zum Hochladen eines Pakets in Package Share müssen Sie zuerst einen nach Ihrem Unternehmen benannten Gruppenordner im lokalen Package Manager erstellen. Beispielsweise „geometrixx“. Alle Pakete, die zum Freigeben hochgeladen werden sollen, müssen in diesem Gruppenordner platziert werden.
-Pakete in der Package Manager-Startseitenliste oder in anderen Ordnern können nicht freigegeben werden.
-
-1. Öffnen Sie den **Package Manager** und navigieren Sie zu dem Paket, das Sie hochladen wollen.
-
-1. Klicken Sie zum Öffnen auf das Paketsymbol.
-1. Klicken Sie auf **Freigeben**, um das Dialogfeld zum Hochladen des Pakets in Package Share zu öffnen.
-1. Wenn Sie noch nicht bei Package Share angemeldet sind, müssen Sie Ihre Anmeldedaten eingeben.
-
-   Sind Sie bereits angemeldet, zeigt AEM die Details des hochzuladenden Pakets an:
-
-   ![chlimage_1-111](assets/chlimage_1-111.png)
-
-1. Klicken Sie auf **Freigeben**, um das Paket in den unternehmensinternen Bereich von Package Share hochzuladen.
-
-   AEM zeigt den Status und den Zeitpunkt an, an dem das Hochladen des Pakets abgeschlossen ist. Anschließend können Sie auf das **x** (oben rechts) klicken, um das Fenster **Paket freigeben** zu verlassen.
-
-1. Nachdem der Hochladevorgang abgeschlossen ist, können Sie zum internen Ordner Ihres Unternehmens navigieren, um das gerade von Ihnen freigegebene Paket anzuzeigen.
-
->[!NOTE]
-Zum Ändern eines in Package Share verfügbaren Pakets müssen Sie es herunterladen, neu erstellen und dann erneut in Package Share hochladen.
-
-### Löschen eines Pakets {#deleting-a-package}
-
-Sie können Pakete, die Sie hochgeladen haben, nur wie folgt löschen:
-
-1. Markieren Sie in der Unternehmensstruktur die Paketgruppe, die das Paket enthält.
-1. Klicken Sie auf das Paket.
-1. Klicken Sie auf die Schaltfläche „Löschen“.
-
-   ![chlimage_1-18](do-not-localize/chlimage_1-30.png)
-
-1. Click **Delete** to confirm you want to delete the package.
-
-### Erstellen von halbprivaten Paketen {#making-packages-semi-private}
-
-Sie können Pakete freigeben, sodass sie außerhalb Ihrer Organisation, aber nicht öffentlich zugänglich sind. Diese Pakete sind halbprivate Pakete. Um diese halbprivaten Pakete freizugeben, benötigen Sie Hilfe vom Adobe-Support. Erstellen Sie daher ein Ticket für den Adobe Support mit der Aufforderung, ein Paket außerhalb Ihrer Organisation zugänglich zu machen. Sie werden Sie um eine Liste der Adobe-IDs bitten, die Sie für Ihre Pakete verwenden möchten.
-
-## Softwareverteilung (Beta) {#software-distribution-beta}
-
-[Software Distribution](https://downloads.experiencecloud.adobe.com) ist die neue Benutzeroberfläche, die die Suche und den Download von AEM Packages vereinfacht. Es befindet sich derzeit im Beta-Status und ist nur für Adobe Managed Services- und AEM-Kunden als Cloud-Service sowie für Adobe-Mitarbeiter verfügbar.
-
->[!NOTE]
-* [Package Share](#package-share) bleibt solange im Betrieb, bis alle Kunden Zugriff auf die Softwareverteilung haben.
-* Alle Pakete sind sowohl von Package Share als auch von der Software Distribution verfügbar.
-
-
->[!CAUTION]
-AEM Package Manager kann derzeit nicht mit Software Distribution verwendet werden. Sie laden Ihre Pakete auf Ihre lokale Festplatte herunter.
+>
+>AEM Package Manager ist derzeit nicht mit Software Distribution verwendbar, laden Sie Ihre Pakete auf Ihre lokale Festplatte herunter.
 
