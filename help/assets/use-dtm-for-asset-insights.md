@@ -3,9 +3,9 @@ title: 'Aktivieren von Asset Insights über DTM  '
 description: Erfahren Sie, wie Sie Asset Insights mit Adobe Dynamic Tag Management (DTM) aktivieren können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d13381d961f7663366b041168da369c0b01c9336
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '671'
 ht-degree: 34%
 
 ---
@@ -17,7 +17,7 @@ Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingt
 
 >[!CAUTION]
 >
->Adobe DTM wird zugunsten von Adobe Experience Platform Launch eingestellt und wird bald [das Lebensende](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)erreichen. Adobe empfiehlt die [Verwendung von Launch für Asset-Einblicke](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM wird zugunsten von DTM eingestellt [!DNL Adobe Experience Platform Launch] und wird bald [Lebensende](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)erreichen. Adobe empfiehlt, dass Sie Asset-Einblicke [ [!DNL Launch] verwenden](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 
@@ -31,7 +31,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren.
 
    * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
-   * Aktualisieren Sie die Felder entsprechend und klicken Sie auf Eigenschaft **[!UICONTROL erstellen]**. See [documentation](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Aktualisieren Sie die Felder entsprechend und klicken Sie auf Eigenschaft **[!UICONTROL erstellen]**. See [documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Webeigenschaft zum Bearbeiten](assets/Create-edit-web-property.png)
 
