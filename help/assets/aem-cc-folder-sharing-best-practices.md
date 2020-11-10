@@ -3,10 +3,10 @@ title: Best [!DNL Adobe Creative Cloud] Practices für die Ordnerfreigabe
 description: Konfigurieren Sie [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] den Ordneraustausch mit Adobe Creative Cloud (CC)-Benutzern.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 18%
+source-wordcount: '953'
+ht-degree: 17%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 >[!CAUTION]
 >
->The [!DNL Experience Manager] to [!DNL Creative Cloud] Folder Sharing feature is deprecated. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
+>The [!DNL Experience Manager] to [!DNL Creative Cloud] Folder Sharing feature is deprecated. Adobe empfiehlt dringend die Verwendung neuerer Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [Experience Manager Desktop-App](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] können so konfiguriert werden, dass Benutzer in Ordner [!DNL Assets] für die Benutzer von [!DNL Adobe Creative Cloud] Apps freigeben können, sodass sie als freigegebene Ordner im [!DNL Adobe Creative Cloud] Assets-Dienst verfügbar sind. The feature can be used to exchange files between creative teams and [!DNL Assets] users, especially when the creative users do not have access to the [!DNL Assets] deployment (they are not on the enterprise network).
 
@@ -39,7 +39,7 @@ Das folgende Diagramm bietet einen Überblick über die Integration.
 Die Integration umfasst folgende Elemente:
 
 * **[!DNL Experience Manager Assets]** im Unternehmensnetzwerk (verwaltete Dienste oder lokale Dienste) bereitgestellt werden: Die Freigabe von Ordnern wird hier initiiert.
-* **[!DNL Adobe Marketing Cloud Assets]Hauptdienst**: fungiert als Vermittler zwischen [!DNL Experience Manager] und [!DNL Creative Cloud] Datenspeicherung. Ein Administrator eines Unternehmens, das die Integration verwendet, muss eine Vertrauensbeziehung zwischen dem Marketing Cloud und der [!DNL Assets] Bereitstellung herstellen. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
+* **[!DNL Adobe Marketing Cloud Assets]Hauptdienst**: fungiert als Vermittler zwischen [!DNL Experience Manager] und [!DNL Creative Cloud] Datenspeicherung. Ein Administrator eines Unternehmens, das die Integration verwendet, muss eine Vertrauensbeziehung zwischen dem Marketing Cloud und der [!DNL Assets] Bereitstellung herstellen. They also [define a list of approved Creative Cloud collaborators](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
 
 * **[!DNL Creative Cloud]Assets Web Services** (Web-Benutzeroberfläche für Datenspeicherung und [!DNL Creative Cloud] Dateien): Hier können bestimmte Creative Cloud-App-Benutzer, für die ein [!DNL Assets] Ordner freigegeben wurde, die Einladung annehmen und den Ordner in ihrer Creative Cloud-Konto-Datenspeicherung anzeigen.
 * **Creative Cloud-Desktop-App**: (Optional) Ermöglicht den direkten Zugriff auf freigegebene Ordner/Dateien vom Desktop des kreativen Benutzers über die Synchronisierung mit der [!DNL Creative Cloud] Assets-Datenspeicherung.
