@@ -3,9 +3,9 @@ title: Asset-Tags mit dem Smart Content Service konfigurieren
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2179'
 ht-degree: 60%
 
 ---
@@ -23,7 +23,7 @@ Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Installieren Sie das neueste [Experience Manager Service Pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Installieren Sie das neueste [Experience Manager Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integration mit der Adobe Developer Console {#integrate-adobe-io}
 
@@ -281,12 +281,12 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 
    * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
    * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
-   * Tagging is supported in the locales that [!DNL Experience Manager] is supported in. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](https://docs.adobe.com/content/help/de-DE/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * Tagging is supported in the locales that [!DNL Experience Manager] is supported in. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
 * To search for assets with smart tags (regular or enhanced), use the [!DNL Assets] Omnisearch (full-text search). Es gibt kein separates Suchprädikat für Smart-Tags.
 
 >[!MORELIKETHIS]
 >
 >* [Übersicht und Schulung von Smart-Tags](enhanced-smart-tags.md)
->* [Videoschulung zum Konfigurieren von Smart-Tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
+>* [Videoschulung zu Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
