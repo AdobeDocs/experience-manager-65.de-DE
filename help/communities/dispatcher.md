@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 9ba00322588326df6fbcc02bdfba88491d39c289
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 6%
+source-wordcount: '680'
+ht-degree: 8%
 
 ---
 
@@ -92,8 +92,13 @@ Siehe auch:
 >[!NOTE]
 >
 >**Beispiele für Eigenschaftsnamen**
->
 >Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollten an die vorhandene Konfigurationsdatei dispatcher.any angepasst werden.
+
+
+>[!CAUTION]
+>
+>In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Also, read the [AEM Security Cheklist](https://helpx.adobe.com/experience-manager/6-3/sites/administring/using/security-checklist.html) for additional security details regarding your AEM installation.
+
 
 Die folgenden Einträge sollten am Ende des Abschnitts &quot;/filter&quot;hinzugefügt werden, besonders nach allen Einträgen, die verweigert werden.
 
