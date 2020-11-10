@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Asset-Management-Aufgaben wie Hochladen
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c59726cc1e6656f16a237aac703f37f3f38a87f9
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '9565'
 ht-degree: 61%
@@ -496,7 +496,7 @@ So verschieben Sie Assets oder Ordner:
 
 ### Verschieben von Assets mithilfe des Drag-Vorgangs {#move-using-drag}
 
-Sie können Assets (oder Ordner) in einen Ordner verschieben, indem Sie sie an den Speicherort der Zielgruppe ziehen, anstatt die Option &quot; [!UICONTROL Verschieben] &quot;in der Benutzeroberfläche zu verwenden. Dieser Vorgang ist jedoch nur in der Ansicht der Liste möglich.
+Sie können Assets (oder Ordner) in einen gleichgeordneten Ordner verschieben, indem Sie sie an den Speicherort der Zielgruppe ziehen, anstatt die Option &quot; [!UICONTROL Verschieben] &quot;in der Benutzeroberfläche zu verwenden. Dieser Vorgang ist jedoch nur in der Ansicht der Liste möglich.
 
 Wenn Sie Assets durch Ziehen verschieben, wird der Assistent zum [!UICONTROL Verschieben von Assets] nicht geöffnet. Daher können Sie die Assets beim Verschieben nicht umbenennen. Darüber hinaus werden die bereits veröffentlichten Assets beim Verschieben durch Ziehen erneut veröffentlicht, ohne dass die Zustimmung des Benutzers zur erneuten Veröffentlichung eingeholt werden muss.
 
@@ -879,7 +879,7 @@ Sie können Versionen in [!DNL Experience Manager] den folgenden Szenarien erste
 * Laden Sie ein Asset mit demselben Dateinamen hoch, der sich am selben Speicherort befindet. Es kann sich um ein neues Asset oder um eine geänderte Version desselben Assets handeln.
 * Bearbeiten Sie ein Bild in [!DNL Experience Manager] und speichern Sie die Änderungen.
 * Bearbeiten Sie die Metadaten eines Assets.
-* Verwenden Sie die [!DNL Experience Manager] Desktop-App, um ein vorhandenes Asset auszuchecken, zu bearbeiten und die Änderungen [hochzuladen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Verwenden Sie die [!DNL Experience Manager] Desktop-App, um ein vorhandenes Asset auszuchecken, zu bearbeiten und die Änderungen [hochzuladen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabeformate gemeinsam mit der Version gespeichert. Ausgabeformate sind gerenderte Alternativen für dieselben Bilder, z. B. ein PNG-Ausgabeformat einer hochgeladenen JPEG-Datei.
 
