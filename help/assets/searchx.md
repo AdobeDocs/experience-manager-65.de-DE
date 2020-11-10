@@ -3,9 +3,9 @@ title: Erweitern der Suchfunktion.
 description: Erweitern Sie die Suchfunktionen [!DNL Adobe Experience Manager Assets] über die Standardwerte hinaus.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '838'
 ht-degree: 77%
 
 ---
@@ -21,7 +21,7 @@ You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe empfiehlt die Verwendung der Touch-fähigen Benutzeroberfläche. For customization, see [search facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe empfiehlt die Verwendung der Touch-fähigen Benutzeroberfläche. For customization, see [search facets](/help/assets/search-facets.md).
 
 ## Überlagerung {#overlaying}
 
