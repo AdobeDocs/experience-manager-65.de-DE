@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 93%
@@ -19,9 +19,9 @@ ht-degree: 93%
 ---
 
 
-# Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor 
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
@@ -43,9 +43,10 @@ Der Musterdetektor wird als separates [Paket](https://www.adobeaemcloud.com/cont
 >* Um die Erkennungsrate zu erhöhen,
 >* vermeiden Sie jede Verlangsamung bei geschäftskritischen Instanzen.
 
-
->Gleichzeitig wird die Ausführung in **Staging-Umgebungen** empfohlen, die hinsichtlich Benutzerapplikationen, Inhalt und Konfigurationen den Produktionsumgebungen möglichst stark ähneln.
 >
+>
+Gleichzeitig wird die Ausführung in **Staging-Umgebungen** empfohlen, die hinsichtlich Benutzerapplikationen, Inhalt und Konfigurationen den Produktionsumgebungen möglichst stark ähneln.
+
 Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüfen: 
 
 * **Über die Felix Inventory-Konsole:** 
@@ -56,7 +57,6 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
    ![screenshot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle** 
-
 * **Über eine reaktive JSON-Leitungsschnittstelle, **die ein separates JSON-Dokument in jeder Zeile generiert.
 
 Beide Methoden werden im Folgenden erläutert:
@@ -211,7 +211,8 @@ Mit der Ausgabe:
 ```
 
 >[!NOTE]
-Es empfiehlt sich, die gesamte Ausgabe aus Curl in der Datei zu speichern und diese dann über `jq` oder `grep` zu verarbeiten, um einen Informationstyp zu filtern.
+>
+>Es empfiehlt sich, die gesamte Ausgabe aus Curl in der Datei zu speichern und diese dann über `jq` oder `grep` zu verarbeiten, um einen Informationstyp zu filtern.
 
 ## Erkennungsbereich {#scope}
 
@@ -224,5 +225,5 @@ Aktuell bietet der Musterdetektor folgende Überprüfungen:
 * Kompatibilität von rep:User-Knoten (im Kontext der OAuth-Konfiguration)
 
 >[!NOTE]
-Bitte beachten Sie, dass der Musterdetektor versucht, die Warnungen für die Aktualisierung genau vorherzusagen. Allerdings generiert er möglicherweise in einigen Fällen falsche Positivergebnisse.
-
+>
+>Bitte beachten Sie, dass der Musterdetektor versucht, die Warnungen für die Aktualisierung genau vorherzusagen. Allerdings generiert er möglicherweise in einigen Fällen falsche Positivergebnisse.
