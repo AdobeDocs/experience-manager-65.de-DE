@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
+source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
 workflow-type: tm+mt
-source-wordcount: '3904'
-ht-degree: 60%
+source-wordcount: '3949'
+ht-degree: 59%
 
 ---
 
@@ -163,6 +163,8 @@ Führen Sie die folgenden Schritte aus, um einen Cloud-Service und die Reihenfol
 1. Wählen Sie einen Cloud-Dienst aus der bereits konfigurierten Liste der Adobe Sign Cloud-Services aus.
 
    Wenn die Liste der **Cloud-Services von Adobe Sign** leer ist, befolgen Sie die Anweisungen zum [Konfigurieren von Adobe Sign mit AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md), um den Dienst zu konfigurieren.
+
+   Die Dropdown-Liste Liste die Cloud-Dienste, die im `global` Ordner unter Tools > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** vorhanden sind. Darüber hinaus werden im Dropdown-Menü auch die Cloud-Dienste Liste, die in dem Ordner vorhanden sind, den Sie beim Erstellen eines adaptiven Formulars im Feld **[!UICONTROL Configuration Container]** auswählen.
 
 1. Wählen Sie die Signaturreihenfolge im Dialogfeld **Benutzer können signieren**. Adobe Sign-Unterzeichner können ein adaptives Formular **sequenziell**, d. h. nacheinander, oder **simultan** in beliebiger Reihenfolge unterschreiben.
 
