@@ -1,40 +1,30 @@
 ---
-title: Verwenden des Layoutmodus zum Ändern der Größe von Komponenten
-seo-title: Verwenden des Layoutmodus zum Ändern der Größe von Komponenten
+title: Verwenden Sie den Layoutmodus, um die Größe von Komponenten für adaptive Formulare zu ändern
 description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
-seo-description: 'Definieren der Position von Komponenten mithilfe des im Layoutmodus verfügbaren interaktiven Rasters '
-uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
-contentOwner: anujkapo
-topic-tags: interactive-communications, author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
 
 
-# Verwenden des Layoutmodus zum Ändern der Größe von Komponenten{#use-layout-mode-to-resize-components}
+# Verwenden des Layoutmodus zum Ändern der Größe von Komponenten {#use-layout-mode-to-resize-components}
 
-Die Authoring-Benutzeroberfläche für adaptive Formulare und interaktive Kommunikation im Web Kanal ermöglicht es Ihnen, die Größe von Komponenten mithilfe des Layoutmodus zu ändern. Ziehen Sie blaue Punkte in Spalten, um den Beginn und den Endpunkt für die Positionierung der Komponenten zu definieren. Die blauen Punkte werden angezeigt, nachdem auf die Komponente im interaktiven Raster getippt wurde. Das reaktionsfähige Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten unterscheidet eine Spalte von der anderen.
+Die Authoring-Oberfläche für adaptive Formulare ermöglicht es Ihnen, die Größe von Komponenten mithilfe des Layoutmodus zu ändern. Ziehen Sie blaue Punkte in Spalten, um den Beginn und den Endpunkt für die Positionierung der Komponenten zu definieren. Die blauen Punkte werden angezeigt, nachdem auf die Komponente im interaktiven Raster getippt wurde. Das reaktionsfähige Raster besteht aus 12 gleichen Spalten. Die weiße und blaue Farbschattierung in alternativen Spalten unterscheidet eine Spalte von der anderen.
 
 Sie können den Layoutmodus verwenden, um die Größe von Komponenten für alle Gerätetypen wie Desktop, Tablet, Smartphone und andere kleinere Geräte zu ändern. Das Tablet leitet die Layoutkonfiguration automatisch von der Desktop-Version ab und die kleineren Geräte leiten die Layoutkonfiguration vom Smartphone ab. Sie können die automatisch abgeleiteten Konfigurationen jedoch überschreiben, um für jeden Gerätetyp eine andere Konfiguration zu definieren.
 
-Wenn Sie den Web-Kanal mit [Print Kanal für eine interaktive Kommunikation Übergeordnet](../../forms/using/create-interactive-communication.md) erstellen, umfassen die für die Größenanpassung verfügbaren Komponenten auch die Teilformulare und Felder, die in Web Kanal mithilfe von Print Kanal automatisch generiert werden. Der Web-Kanal behält das Layout für die Kanal &quot;Drucken&quot;im Layoutmodus bei.
-
 ## Layout-Modus aufrufen {#access-layout-mode}
 
-Wählen Sie **Layout** aus der Dropdown-Liste, die oben auf der Authoring-Oberfläche für adaptive Formulare und interaktive Kommunikation neben der Option &quot; **Vorschau** &quot;angezeigt wird. Das Formular wird im Layoutmodus angezeigt.
+Wählen Sie **Layout** aus der Dropdown-Liste, die oben auf der Authoring-Oberfläche für adaptive Formulare neben der Option &quot; **Vorschau** &quot;angezeigt wird. Das Formular wird im Layoutmodus angezeigt.
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**.
-1. [Erstellen Sie ein neues](../../forms/using/create-interactive-communication.md) oder öffnen Sie ein vorhandenes adaptives Formular oder eine interaktive Kommunikation.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Wählen Sie **Layout** aus der Dropdown-Liste, die oben neben der Option &quot; **Vorschau** &quot;angezeigt wird. Das Formular wird im Layoutmodus angezeigt.
 
-   ![Layout-Modus für interaktive Kommunikation](assets/layout_mode_ic_new.png)
+   ![Layout-Modus](assets/layout_mode_ic_new.png)
 
 ## Größe von Komponenten anpassen {#resize-components}
 
@@ -56,9 +46,9 @@ Wählen Sie **Layout** aus der Dropdown-Liste, die oben auf der Authoring-Oberfl
 
 ### Beispiel {#example}
 
-**Zielsetzung:** Sie möchten eine Tabellenkomponente und eine Bildkomponente einfügen und sie in einer interaktiven Kommunikation parallel zueinander positionieren.
+**Zielsetzung:** Sie möchten eine Tabellenkomponente und eine Image-Komponente einfügen und sie in einem adaptiven Formular parallel zueinander positionieren.
 
-1. Fügen Sie die Tabellen- und Bildkomponenten im Bearbeitungsmodus im Web-Kanal ein. Die Image-Komponente wird nach der Tabellenkomponente angezeigt.
+1. Fügen Sie die Tabellen- und Bildkomponenten im Bearbeitungsmodus im adaptiven Formular ein. Die Image-Komponente wird nach der Tabellenkomponente angezeigt.
 1. Wechseln Sie zum Layoutmodus und tippen Sie auf die Komponente &quot;Tabelle&quot;. Die blauen Punkte zur Größenanpassung der Komponente werden in den Spalten 1 und 12 angezeigt.
 1. Ziehen Sie den blauen Punkt in Spalte 12 in Spalte 6 des interaktiven Rasters.
 
@@ -114,7 +104,7 @@ Mit dem neuen reaktionsfähigen Layout für adaptive Formulare können Sie ein a
 
 ### Einbetten eines Fragments mit einem neuen reaktionsfähigen Layout in ein altes adaptives Formular {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
-Wenn Sie ein Fragment mit dem neuen reaktionsfähigen Layout in ein adaptives Formular mit einem alten reaktionsfähigen Layout einbetten, fordert Sie das System auf, den Layoutmodus für das Formular zu aktivieren und das Fragment erneut einzubetten.
+Wenn Sie ein Fragment mit dem neuen reaktionsfähigen Layout in ein adaptives Formular mit einem alten reaktionsfähigen Layout einbetten, fordert das System Sie auf, den Layoutmodus für das Formular zu aktivieren und das Fragment erneut einzubetten.
 
 Um den Layoutmodus zu aktivieren, wählen Sie in der Dropdown-Liste, die oben neben der Option &quot; **Vorschau** &quot;angezeigt wird, die Option &quot; **Layout** &quot;aus und tippen Sie zur Bestätigung auf **Ja** . Wählen Sie **Bearbeitungsmodus** , um das Fragment erneut einzubetten.
 
