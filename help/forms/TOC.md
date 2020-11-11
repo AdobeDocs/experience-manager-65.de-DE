@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3716'
 ht-degree: 70%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 70%
       + [Installieren und konfigurieren Sie Datenerfassungsfunktionen](using/installing-configuring-aem-forms-osgi.md)
       + [Forms-zentrierten Arbeitsablauf unter OSGi installieren und konfigurieren](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installieren und konfigurieren Sie Interaktive Kommunikationen](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [Automatisierte Forms-Konvertierungsdienste installieren und konfigurieren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [Installieren und Konfigurieren des Automated forms conversion-Dienstes](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [Unterstützte Plattformen für AEM Forms on JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -193,6 +193,7 @@ ht-degree: 70%
    + [Druckkanal und Webkanal](using/web-channel-print-channel.md)
    + [Konfigurationseigenschaften für interaktive Kommunikation](using/interactive-communication-configuration-properties.md)
    + [Generieren mehrerer interaktiver Kommunikation](using/generate-multiple-interactive-communication-using-batch-api.md)
+   + [Verwenden des Layoutmodus zum Ändern der Größe von Komponenten](using/resize-using-layout-mode-interactive-communication.md)
 + Workflows {#workflows}
    + [Formularzentrierte Workflows in OSGi](using/aem-forms-workflow.md)
    + [Formularzentrierte Workflows in OSGi - Schritt-Referenz](using/aem-forms-workflow-step-reference.md)
