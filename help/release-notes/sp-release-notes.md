@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b23b66e9d57742f6771bc4b26753a47b334e06bc
+source-git-commit: c4e602a208fa5f66e79a5705a7f1f2f844fb23b5
 workflow-type: tm+mt
-source-wordcount: '4557'
+source-wordcount: '4574'
 ht-degree: 7%
 
 ---
@@ -49,7 +49,7 @@ Die wichtigsten Funktionen und Verbesserungen, die in Adobe Experience Manager 6
 
 * [Verbesserte Zwischenspeicherung für übersetzte Seiten](../../help/forms/using/configure-adaptive-forms-cache.md)adaptiver Formulare.
 
-* Unterstützung für [Adobe Sign-Text-Tags im automatisierten Forms-Konvertierungsdienst](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+* Unterstützung für [Adobe Sign-Text-Tags im Automated forms conversion-Dienst](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
 * Unterstützung für die [Konvertierung farbiger Formulare in adaptive Formulare](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) mit [!DNL Automated Forms Conversion service].
 
@@ -258,6 +258,12 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 ### Integrationen {#integrations-6560}
 
 * Aktivitäten mit langen Namen werden nicht synchronisiert [!DNL Adobe Target] (NPR-34254).
+
+* Wenn Sie eine Eigenschaft beim Erstellen einer neuen Adobe Startkonfiguration auswählen, wird die folgende Fehlermeldung angezeigt (NPR-33947):
+
+   ```javascript
+   GET http://hostname:Port/libs/cq/dtm-reactor/content/configurations/createcloudconfigwizard/jcr:content/body/items/form/items/wizard/items/general/items/fixedcolumns/items/container/items/general/items/property/data.html?query=&start=0&end=25&imsConfigurationId=Adobe%20Launch&companyId=&_charset_=utf-8 400 (Bad Request)
+   ```
 
 ### Übersetzungsprojekte {#translation-6560}
 
