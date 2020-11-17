@@ -11,7 +11,10 @@ topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d281ea4a5e7711aafa906bc0c43009c3c2cc8947
+source-git-commit: 480e1f62e34783295133d10451ec409cf3a8bb0b
+workflow-type: tm+mt
+source-wordcount: '3661'
+ht-degree: 74%
 
 ---
 
@@ -61,7 +64,7 @@ AEM [Communities](/help/communities/overview.md) never uses replication for UGC.
 
 ### Replikation – vorkonfiguriert {#replication-out-of-the-box}
 
-Die Website für den Handel mit Kunden, die in einer Standardinstallation von AEM enthalten ist, kann zur Veranschaulichung der Replikation verwendet werden.
+Die in einer Standardinstallation von AEM enthaltene Website für den Handel kann zur Veranschaulichung der Replikation verwendet werden.
 
 To follow this example and use the default replication agents you need to [Install AEM](/help/sites-deploying/deploy.md) with:
 
@@ -79,6 +82,7 @@ Standardmäßig deaktiviert (ab AEM 6.1):
 >
 >* Agenten beim Autor: Replizierungsagenten umkehren (publish_reverse)
 >* Agenten beim Veröffentlichen: Rückwärtsreplikation (Postausgang)
+
 >
 >
 Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole** überprüft werden.
@@ -87,17 +91,18 @@ Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole*
 #### Replikation (von der Autoren- auf der Veröffentlichungsinstanz) {#replication-author-to-publish}
 
 1. Navigieren Sie zur Support-Seite in der Autorenumgebung.
-   **https://localhost:4502/content/we-retail/us/en/experience.html**`<pi>`
+   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
 1. Bearbeiten Sie die Seite, um neuen Text hinzuzufügen.
 1. **Aktivieren Sie die Seite**, um die Änderungen zu veröffentlichen.
-1. Öffnen Sie die Supportseite in der Veröffentlichungsumgebung:
+1. Öffnen Sie die Support-Seite auf der Umgebung &quot;Veröffentlichen&quot;:
    **https://localhost:4503/content/we-retail/us/en/experience.html**
 1. Jetzt können Sie die Änderungen sehen, die Sie in der Autorenumgebung eingegeben haben.
 
 Diese Replikation wird von der Autorenumgebung aus durch folgende Komponenten verarbeitet:
 
 * **Standardagent („publish“)**  Dieser Agent repliziert Inhalte auf der Standard-Veröffentlichungsinstanz.
-Die Details zu dieser Datei (Konfiguration und Protokolle) können über die Tools-Konsole der Autorenumgebung aufgerufen werden. oder:
+Die Details dazu (Konfiguration und Protokolle) können über die Tools-Konsole der Autor-Umgebung aufgerufen werden. oder:
+
    `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Replikationsagenten – vorkonfiguriert {#replication-agents-out-of-the-box}
@@ -157,6 +162,7 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
    * Erfassen und Verpacken der Inhalte aus der Autorenumgebung
    * Erstellen und Schreiben der Inhalte in der Veröffentlichungsumgebung
+
    Lassen Sie dieses Feld leer, um das Systembenutzerkonto zu verwenden (das in Sling als Administrator definierte Konto; standardmäßig ist dies das `admin`-Konto).
 
    >[!CAUTION]
@@ -178,6 +184,7 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
    * `Error`: Nur Fehler werden protokolliert
    * `Info`: Fehler, Warnungen und andere Informationsmeldungen werden protokolliert
    * `Debug`: In den Meldungen wird eine hohe Detailgenauigkeit verwendet, hauptsächlich zu Debugging-Zwecken
+
    Default: `Info`
 
 * **Für Rückwärtsreplikation verwenden**
@@ -198,9 +205,10 @@ Beim Konfigurieren eines Replikationsagenten in der Tools-Konsole stehen vier Re
 
    * A Default Agent may replicate to `https://localhost:4503/bin/receive`
    * A Dispatcher Flush agent may replicate to `https://localhost:8000/dispatcher/invalidate.cache`
+
    Das hier angegebene Protokoll (HTTP oder HTTPS) bestimmt die Transportmethode.
 
-   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden, verwenden Sie dieses Feld, um die Farm als ungültig festzulegen. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
+   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden. In diesem Feld können Sie die Farm für ungültig erklären. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
 
 * **User**
 
@@ -277,11 +285,13 @@ Die folgenden Einstellungen müssen nur festgelegt werden, wenn ein Proxy benöt
    * `CQ-Action:{action}`
    * `CQ-Handle:{path}`
    * `CQ-Path:{path}`
+
    Diese dienen ggf. dazu, die Aktion anzugeben, die beim Leeren des Handles oder Pfades verwendet werden soll. Die Unterparameter sind dynamisch:
 
    * `{action}` gibt eine Replizierungsaktion an
 
    * `{path}` gibt einen Pfad an
+
    Sie werden durch den für die Anforderungen relevanten Pfad bzw. die relevante Aktion ersetzt und müssen deshalb nicht hardcodiert sein:
 
    >[!NOTE]
@@ -383,13 +393,13 @@ Da sich die Veröffentlichungsumgebung in der Regel in der DMZ befindet, muss ei
 
 Hierzu benötigen Sie Folgendes:
 
-**Ein Agenten für die Rückwärtsreplikation in der Autorenumgebung** Dies fungiert als aktive Komponente zur Erfassung von Informationen aus dem Postausgang in der Veröffentlichungsumgebung:
+**Ein Agenten für die Rückwärtsreplikation in der Authoring-Umgebung** Dies fungiert als die aktive Komponente zum Erfassen von Informationen aus dem Postausgang in der Veröffentlichungskomponente:
 
 Falls Sie die Rückwärtsreplikation nutzen möchten, muss dieser Agent aktiviert sein.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-**Ein Agenten für die Rückwärtsreplikation in der Veröffentlichungsumgebung (ein Postausgang)** Dies ist das passive Element, da es als &quot;Outbox&quot;fungiert. Benutzereingaben werden hier abgelegt und vom Agenten in der Autorenumgebung abgerufen.
+**Ein Agenten für die Rückwärtsreplikation in der Veröffentlichungs-Umgebung (ein Postausgang)** Dies ist das passive Element, da es als &quot;Outbox&quot;fungiert. Benutzereingaben werden hier abgelegt und vom Agenten in der Autorenumgebung abgerufen.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -444,6 +454,7 @@ Falls Probleme auftreten, können Sie die Protokolle der Autoreninstanz überpr�
 >1. Konfigurieren Sie einen Replikationsagenten für die Replikation auf dieser Veröffentlichungsumgebung.
 >1. Konfigurieren Sie ein Benutzerkonto mit den nötigen Zugriffsrechten zum Lesen der Inhalte, die auf der spezifischen Veröffentlichungsumgebung repliziert werden.
 >1. Weisen Sie das Benutzerkonto als **Agenten-Benutzer-ID** für den Replikationsagenten zu.
+
 >
 
 
@@ -472,7 +483,8 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
       * Die anderen Parameter können nach Bedarf konfiguriert werden.
-   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden, verwenden Sie dieses Feld, um die Farm als ungültig festzulegen. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
+
+   Bei Dispatcher Flush-Agenten wird die URI-Eigenschaft nur verwendet, wenn Sie pfadbasierte virtualhost-Einträge verwenden, um zwischen Farmen zu unterscheiden. In diesem Feld können Sie die Farm für ungültig erklären. Beispiel: Farm 1 hat den virtuellen Host `www.mysite.com/path1/*` und Farm 2 den virtuellen Host `www.mysite.com/path2/*`. Mit der URL `/path1/invalidate.cache` können Sie die erste Farm und mit `/path2/invalidate.cache` die zweite Farm bestimmen.
 
    >[!NOTE]
    >
@@ -534,13 +546,15 @@ Gehen Sie wie folgt vor, um Replikationsagenten zu überwachen:
    * **Protokoll anzeigen** für den Zugriff auf das Protokoll beliebiger Aktionen des Replikationsagenten.
    * **Verbindung testen** zum Testen der Verbindung mit der Zielinstanz.
    * **Erneuten Versuch erzwingen**, um einen erneuten Versuch auf beliebigen Elementen der Warteschlange zu erzwingen, falls erforderlich.
+
    >[!CAUTION]
    >
    >Verwenden Sie den Link „Verbindung testen“ nicht für den Postausgang der Rückwärtsreplikation auf der Veröffentlichungsinstanz.
    >
    >
    >Falls Sie eine Replikation für eine Warteschlange in einem Postausgang testen, werden alle Elemente, die älter als die Testreplikation sind, bei jeder Rückwärtsreplikation erneut verarbeitet.
-
+   >
+   >
    >Wenn solche Elemente bereits in einer Warteschlange vorhanden sind, können Sie mit der folgenden XPath JCR-Abfrage danach suchen und diese entfernen.
    >
    >
@@ -558,7 +572,7 @@ Der Herausgeber entpackt alle Elemente, speichert sie und meldet sie dem Autor z
 
 1. Wechseln zu `http://serveraddress:serverport/siteadmin`
 1. Klicken Sie auf das Symbol **[!UICONTROL Tools]** oben im Bildschirm auf das Symbol
-1. Wechseln Sie auf der linken Seite zur Navigationsleiste zu **[!UICONTROL Replication - Agents im Autor]** und doppelklicken Sie auf **[!UICONTROL Default Agent]**.
+1. Klicken Sie auf der linken Navigationsleiste auf Replizierung - Agenten im Autor **[!UICONTROL und Dublette auf]** Standardagent ****.
    * Sie können auch den standardmäßigen Agenten für die Veröffentlichungsreplikation erreichen, indem Sie direkt zu `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
 1. Drücken Sie auf die Schaltfläche **[!UICONTROL Bearbeiten]** oberhalb der Replikationswarteschlange.
 1. In the following window, go to the **[!UICONTROL Batch]** tab:
@@ -569,7 +583,7 @@ Der Herausgeber entpackt alle Elemente, speichert sie und meldet sie dem Autor z
 
 * `[!UICONTROL Enable Batch Mode]` - Aktiviert oder deaktiviert den Stapelreplikationsmodus
 * `[!UICONTROL Max Wait Time]` - Maximale Wartezeit bis zum Starten einer Stapelanforderung in Sekunden. Der Standardwert ist 2 Sekunden.
-* `[!UICONTROL Trigger Size]` - Startet die Stapelreplikation, wenn diese Größenbeschränkung
+* `[!UICONTROL Trigger Size]` - Stapelreplikation von Beginn, wenn diese Größenbeschränkung
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
@@ -577,4 +591,4 @@ Für weitere Informationen zu Fehlerbehebung können Sie die Seite [Fehlerbehebu
 
 Weitere Informationen finden Sie in einer Reihe von Knowledge-Base-Artikeln von Adobe zum Thema Replikation:
 
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)[https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)[https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)[https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html[](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)[](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)[](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)[](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)[](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)[](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)[](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)[](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)[](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.htmlunter Angabehttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.htmlhttps://helpx.adobe.com/experience-manager/kb/ACLReplication.htmlhttps://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html
+[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)[https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)[https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)[https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html[](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)[](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)[](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)[](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)[](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)[](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)[](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)[](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)[](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.htmlunter Angabehttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.htmlhttps://helpx.adobe.com/experience-manager/kb/ACLReplication.htmlhttps://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.htmlhttps://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.htmlhttps://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.htmlhttps://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.htmlhttps://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.htmlhttps://helpx.adobe.com/experience-manager/kb/ACLReplication.htmlhttps://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html
