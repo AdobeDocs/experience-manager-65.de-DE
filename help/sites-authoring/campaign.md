@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 6853306d217809e05dbef4968c75bfef9d048f1c
+source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+workflow-type: tm+mt
+source-wordcount: '2780'
+ht-degree: 76%
 
 ---
 
@@ -65,8 +68,8 @@ Eine ausführliche Anleitung finden Sie in diesem Dokument.
 1. Wählen Sie dann **Erstellen** und **Seite erstellen** aus.
 1. Wählen Sie je nach der Adobe-Kampagne, mit der Sie sich verbinden möchten, eine der verfügbaren Vorlagen aus und klicken Sie auf **Weiter**. Standardmäßig sind drei Vorlagen verfügbar:
 
-   * **Adobe Campaign Classic-E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie diese zur Bereitstellung an Adobe Campaign Classic senden.
-   * **Adobe Campaign Standard-E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie diese zur Bereitstellung an Adobe Campaign Standard senden.
+   * **Adobe Campaign Classic E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie diese zum Versand an Adobe Campaign Classic senden.
+   * **Adobe Campaign Standard E-Mail**: können Sie einer vordefinierten Vorlage (zwei Spalten) Inhalte hinzufügen, bevor Sie diese zum Versand an Adobe Campaign Standard senden.
 
 1. Fill in the **Title** and optionally the **Description** and click **Create**. Der Titel wird als Betreff des Newsletters/der E-Mail verwendet, falls er beim Bearbeiten der E-Mail nicht überschrieben wird.
 
@@ -91,7 +94,7 @@ Auf der Seite **Sites**:
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Wählen Sie aus einer Dropdown-Liste die Konfiguration aus, die Ihrer Adobe Campaign-Konfiguration entspricht, und bestätigen Sie Ihre Auswahl durch einen Klick auf **Speichern**.
-1. Sie können die Vorlage anzeigen, die die E-Mail angewendet hat, indem Sie auf die Registerkarte* Adobe Campaign** klicken. Möchten Sie die Vorlage wechseln, können Sie diese während der Bearbeitung in der E-Mail selbst ändern.
+1. Sie können die auf die E-Mail angewendete Vorlage anzeigen, indem Sie auf die Registerkarte **Adobe Campaign** klicken. Möchten Sie die Vorlage wechseln, können Sie diese während der Bearbeitung in der E-Mail selbst ändern.
 
    If you would like to apply a specific email delivery template (from Adobe Campaign), other than the default mail template, in **Properties**, select the **Adobe Campaign** tab. Geben Sie den internen Namen der E-Mail-Vorlage in die jeweilige Adobe Campaign-Instanz ein.
 
@@ -111,7 +114,7 @@ Möglicherweise können Sie bei der Bearbeitung des Newsletters/der E-Mail aufgr
    >
    >Alternativ können Sie die Cloud-Services durch Auswahl der Option **Eigenschaften anzeigen** auf der Registerkarte **Sites** auswählen.
 
-1. Wählen Sie in der Dropdownliste die Konfiguration aus, die mit Ihrer Adobe Campaign-Instanz übereinstimmt, löschen Sie die erste Konfiguration, die Sie erstellt haben und die nicht für Adobe Campaign gedacht war, und bestätigen Sie dann, indem Sie auf das Häkchen klicken.
+1. Wählen Sie in der Dropdown-Liste die Konfiguration aus, die mit Ihrer Adobe Campaign-Instanz übereinstimmt, löschen Sie die erste Konfiguration, die Sie erstellt haben, die nicht zum Adobe Campaign erstellt wurde, und bestätigen Sie dann durch Klicken auf das Häkchen.
 1. Fahren Sie nun mit Schritt 4 des zuvor beschriebenen Verfahrens fort, um eine Vorlage auszuwählen und einfachen Text hinzuzufügen.
 
 ### Bearbeiten von E-Mail-Inhalten {#editing-email-content}
@@ -148,8 +151,8 @@ So bearbeiten Sie E-Mail-Inhalte:
 
 Beim Bearbeiten Ihres Inhalts können Sie Folgendes einfügen:
 
-* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können, und die entsprechend den Daten des Empfängers angepasst werden (z. B. Vorname, Nachname oder Daten der Zieldimension).
-* Adobe Campaign-Personalisierungsblöcke. Dies sind Blöcke vordefinierter Inhalte, die nicht mit den Daten des Empfängers in Zusammenhang stehen, wie z. B. ein Markenlogo oder ein Link zu einer Spiegelseite.
+* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Textfelder, die Sie in den Text einfügen können und die sich entsprechend den Daten des Empfängers (z. B. Vorname, Nachname oder Daten der Dimension &quot;Zielgruppe&quot;) anpassen.
+* Adobe Campaign-Personalisierungsblöcke. Dabei handelt es sich um vordefinierte Inhaltsblöcke, die nicht mit den Daten des Empfängers zusammenhängen, wie z. B. ein Markenlogo oder eine Verknüpfung zu einer Mirrorseite.
 
 Detaillierte Beschreibungen der Komponenten von Adobe Campaign finden Sie unter [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md).
 
@@ -157,6 +160,7 @@ Detaillierte Beschreibungen der Komponenten von Adobe Campaign finden Sie unter
 >
 >* Es werden nur die Felder der Adobe Campaign-**Profile** der Targeting-Dimension berücksichtigt.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. Sie können bei deren Bearbeitung direkt aus E-Mails darauf zugreifen.
+
 >
 
 
@@ -177,6 +181,7 @@ So fügen Sie Personalisierung ein:
    >
    >* Die verfügbaren Kontextfelder entsprechen den **Profilen** der Targeting-Dimension in Adobe Campaign.
    >* See [Linking an AEM page to an Adobe Campaign email](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+
    >
    >**Adobe Campaign Standard:**
    >
@@ -259,7 +264,7 @@ Diese Optionen ermöglichen die Bereitstellung von Inhalten. Aus dem auf der Sei
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
-Wenn ein Newsletter mit mehreren Auslieferungen verknüpft ist, wird die Anzahl der verknüpften Auslieferungen (aber nicht jede ID) angezeigt.
+Wenn ein Newsletter mit mehreren Versänden verknüpft ist, wird die Anzahl der verknüpften Versand angezeigt (jedoch nicht jede ID).
 
 So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
@@ -286,6 +291,7 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
    * Der Genehmigungsstatus des Inhalts in AEM. Wurde der Inhalt nicht genehmigt, können Sie den Inhalt synchronisieren, der vor der Bereitstellung jedoch zuerst genehmigt werden muss. Sie können jedoch bestimmte Optionen verwenden, beispielsweise Versenden eines Nachweises oder die Vorschau.
    * Das Datum der letzten Änderung des Inhalts.
    * Inhalte, die bereits mit einer Bereitstellung verknüpft wurden.
+
    >[!NOTE]
    Standardmäßig werden Inhalte, die bereits mit einer Bereitstellung synchronisiert wurden, ausgeblendet. Sie können diese jedoch einblenden und verwenden. Beispielsweise dann, wenn Sie den Inhalt als Vorlage für mehrere Bereitstellungen nutzen möchten.
 
@@ -315,9 +321,8 @@ Ist ein Newsletter in AEM mit einer Bereitstellung verknüpft, wird der Bereitst
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
-Wenn der Newsletter mit mehreren Auslieferungen verknüpft ist, wird die Anzahl der verknüpften Auslieferungen (aber nicht jede ID) angezeigt.
-
->[!NOTE]
+Wenn der Newsletter mit mehreren Versänden verknüpft ist, wird die Anzahl der verknüpften Versand angezeigt (jedoch nicht jede ID).
+[!NOTE]
 Der Arbeitsablaufschritt **In Adobe Campaign veröffentlichen** ist veraltet und ab AEM 6.1 nicht länger Teil des Arbeitsablaufs. In den Versionen AEM 6.0 und älter diente dieser Schritt der Integration mit Adobe Campaign, er wird in neueren Versionen nicht mehr benötigt.
 
 So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe Campaign:
@@ -341,6 +346,7 @@ So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe C
    * Der Genehmigungsstatus des Inhalts in AEM. Wurde der Inhalt nicht genehmigt, können Sie den Inhalt synchronisieren, der vor der Bereitstellung jedoch zuerst genehmigt werden muss. Sie können jedoch bestimmte Optionen verwenden, beispielsweise Versenden eines BAT oder die Vorschau.
    * Das Datum der letzten Änderung des Inhalts.
    * Inhalte, die bereits mit einer Bereitstellung verknüpft wurden.
+
    >[!NOTE]
    Standardmäßig werden Inhalte, die bereits mit einer Bereitstellung synchronisiert wurden, ausgeblendet. Sie können diese jedoch einblenden und verwenden. Beispielsweise dann, wenn Sie den Inhalt als Vorlage für mehrere Bereitstellungen nutzen möchten.
 
