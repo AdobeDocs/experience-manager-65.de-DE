@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 76%
@@ -53,7 +53,6 @@ Eine ausführliche Anleitung finden Sie in diesem Dokument.
 >[!NOTE]
 >
 >When adding email templates, be sure to add them under **/content/campaigns** to make them available.
-
 
 #### Erstellen neuer E-Mail-Inhalte {#creating-new-email-content-1}
 
@@ -160,9 +159,6 @@ Detaillierte Beschreibungen der Komponenten von Adobe Campaign finden Sie unter
 >
 >* Es werden nur die Felder der Adobe Campaign-**Profile** der Targeting-Dimension berücksichtigt.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. Sie können bei deren Bearbeitung direkt aus E-Mails darauf zugreifen.
-
->
-
 
 
 So fügen Sie Personalisierung ein:
