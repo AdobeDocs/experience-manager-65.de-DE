@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '2854'
+ht-degree: 83%
 
 ---
 
@@ -22,13 +25,13 @@ Bei einer Integration mit Adobe Campaign stehen Ihnen für die Arbeit mit Newsl
 
 >[!CAUTION]
 >
->Die AEM-E-Mail-Komponenten wurden nicht mehr unterstützt. Aufgrund der Art der E-Mail, die Inhalt und Stil zusammenführt, werden die von AEM standardmäßig bereitgestellten E-Mail-Komponenten für Kunden nur eingeschränkt wiederverwendet, da benutzerdefinierte Stile in alle Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
+>Die AEM E-Mail-Komponenten wurden nicht mehr unterstützt. Aufgrund der Art der E-Mail, die Inhalt und Stil zusammenführt, werden die standardmäßig bereitgestellten E-Mail-Komponenten für Kunden nur in begrenztem Umfang wiederverwendet, da benutzerdefinierte Stile in alle Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
 >
->E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Diese veralteten Komponenten sollten jedoch nicht in Projekten verwendet werden.
+>E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Diese veralteten Komponenten sollten jedoch nicht in Projekten verwendet werden.
 
 ## Adobe Campaign-Newsletter-Komponenten {#adobe-campaign-newsletter-components}
 
-Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md) finden und die auf der Adobe-Markupsprache [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html) basieren.
+Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md) finden und die auf der Adobe-Markupsprache [HTL](https://helpx.adobe.com/de/experience-manager/htl/using/overview.html) basieren.
 
 Öffnen Sie eine E-Mail oder einen Newsletter, der oder die für die Integration mit Adobe Campaign konfiguriert wurde, werden Ihnen im Abschnitt **Adobe Campaign-Newsletter** folgende Optionen angezeigt:
 
@@ -88,9 +91,9 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 >[!NOTE]
 >
 >Der integrierte Editor zeigt bei der Bearbeitung die Originalgröße und das Seitenverhältnis des Bildes an. Sie können auch die Höhe und die Breite festlegen. Alle in den Eigenschaften definierten Beschränkungen der Größe und des Seitenverhältnisses werden angewendet, sobald Sie Ihre Änderungen speichern.
-
->Abhängig von Ihrer Instanz können Mindest- und Höchstbeschränkungen auch durch das [Design der Seite](/help/sites-developing/designer.md) vorgegeben sein. Diese werden bei der Implementierung des Projekts festgelegt.
 >
+>Abhängig von Ihrer Instanz können Mindest- und Höchstbeschränkungen auch durch das [Design der Seite](/help/sites-developing/designer.md) vorgegeben sein. Diese werden bei der Implementierung des Projekts festgelegt.
+
 Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verfügung, beispielsweise Karte und Zoom:
 
 ![](do-not-localize/chlimage_1-11.png)
@@ -127,8 +130,10 @@ Eine Beschreibung des Bildes.
 Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
-Sie müssen im Feld **ALT-Text** der Registerkarte **Erweitert** Informationen eingeben, da das Bild sonst nicht gespeichert werden kann und die folgende Fehlermeldung ausgegeben wird:
-`Validation failed. Verify the values of the marked fields.`
+>
+>Sie müssen im Feld **ALT-Text** der Registerkarte **Erweitert** Informationen eingeben, da das Bild sonst nicht gespeichert werden kann und die folgende Fehlermeldung ausgegeben wird:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Bild (Kampagne)“ dargestellt wird.
@@ -145,13 +150,16 @@ Folgendes können Sie in den Registerkarten **Anzeige**, **URL-Info** oder **Erw
 
 * **Link-QuickInfo** Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
 
-* **Verknüpfungstyp** Wählen Sie in der Dropdown-Liste aus einer **URL** und einem **adaptiven Dokument** aus. Dieses Feld ist obligatorisch. Entscheiden Sie sich für eine benutzerdefinierte URL, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+* **LinkType** Wählen Sie in der Dropdown-Liste zwischen einem 
+**Benutzerdefinierte URL** und ein **adaptives Dokument**. Dieses Feld ist obligatorisch. Entscheiden Sie sich für eine benutzerdefinierte URL, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter** Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
 
 >[!NOTE]
-You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
-`Validation failed. Verify the values of the marked fields.`
+>
+>You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Link (Kampagne)“ dargestellt wird.
@@ -160,7 +168,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Link (Kampagne)“ darges
 
 ### Scene7-Bildvorlage (Kampagne) {#scene-image-template-campaign}
 
-[Scene7-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) sind Bilddateien mit Ebenen, in denen Inhalt und Eigenschaften auf Variabilität parametrisiert werden können. Mithilfe der Komponente **Bildvorlage** können Sie Scene7-Vorlagen in Newslettern verwenden und die Werte der Vorlagenparameter bearbeiten. Darüber hinaus können Sie in den Parametern Adobe Campaign-Metadatenvariablen verwenden, damit jeder Benutzer das Bild auf eine personalisierte Weise erfährt.
+[Scene7-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) sind Bilddateien mit Ebenen, bei denen Inhalt und Eigenschaften auf Variabilität parametrisiert werden können. Mithilfe der Komponente **Bildvorlage** können Sie Scene7-Vorlagen in Newslettern verwenden und die Werte der Vorlagenparameter bearbeiten. Darüber hinaus können Sie Adobe Campaign-Metadatenvariablen in den Parametern verwenden, damit jeder Benutzer das Bild auf eine personalisierte Weise aufruft.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -223,8 +231,10 @@ Eine Beschreibung des Bildes.
 Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
-Das Feld **ALT-Text** auf der Registerkarte **Erweitert** muss ausgefüllt werden, da die Komponente anderenfalls nicht gespeichert werden kann und folgende Fehlermeldung ausgegeben wird:
-`Validation failed. Verify the values of the marked fields.`
+>
+>Das Feld **ALT-Text** auf der Registerkarte **Erweitert** muss ausgefüllt werden, da die Komponente anderenfalls nicht gespeichert werden kann und folgende Fehlermeldung ausgegeben wird:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Text und Bild (Kampagne)“ dargestellt wird.
@@ -242,15 +252,19 @@ The Text &amp; Personalization (Campaign) component lets you enter a text block 
 Im Editor im Kontext können Sie Text hinzufügen, Anpassungen ändern, Links hinzufügen und entfernen, Kontextfelder und Personalisierungsblöcke hinzufügen und den Vollbildmodus aufrufen. Wählen Sie das Häkchen aus, um nach Abschluss der Personalisierung/Bearbeitung des Textes Änderungen zu speichern, oder klicken Sie auf das Kreuz, um sie zu verwerfen. See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
 
 >[!NOTE]
-* Welche Personalisierungsfelder Ihnen zur Verfügung stehen, hängt davon ab, mit welcher Adobe Campaign-Vorlage Ihr Newsletter verknüpft ist.
-* Nach der Auswahl eines Profils im ContextHub werden die Personalisierungsfelder automatisch durch Daten des gewählten Profils ersetzt.
+>
+>* Welche Personalisierungsfelder Ihnen zur Verfügung stehen, hängt davon ab, mit welcher Adobe Campaign-Vorlage Ihr Newsletter verknüpft ist.
+>* Nach der Auswahl eines Profils im ContextHub werden die Personalisierungsfelder automatisch durch Daten des gewählten Profils ersetzt.
 
+>
+>
 Weitere Informationen finden Sie unter [Einfügen von Personalisierungen](/help/sites-authoring/campaign.md#inserting-personalization).
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
-Nur die Felder, die im Schema **nms:seedMember** oder einer seiner Erweiterungen festgelegt wurden, werden berücksichtigt. Die Attribute der mit **nms:seedMember** verknüpften Tabellen stehen nicht zur Verfügung.
+>
+>Nur die Felder, die im Schema **nms:seedMember** oder einer seiner Erweiterungen festgelegt wurden, werden berücksichtigt. Die Attribute der mit **nms:seedMember** verknüpften Tabellen stehen nicht zur Verfügung.
 
 ## Adobe Campaign-Formular-Komponenten {#adobe-campaign-form-components}
 
@@ -294,7 +308,7 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind
   </tr>
   <tr>
    <td><p>Datumsfeld (Kampagne)</p> <p>Datumsfeld/HTM 5 (Kampagne)</p> </td>
-   <td><p>Datum</p> </td>
+   <td><p>date</p> </td>
    <td><p>Geburtsdatum</p> </td>
   </tr>
   <tr>
@@ -407,7 +421,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Fehleranzeige (Kampagne)�
 
 ### Ausgeblendeter Abstimmschlüssel (Kampagne) {#hidden-reconciliation-key-campaign}
 
-Mit der Komponente Ausgeblendeter Versöhnungsschlüssel (Kampagne) können Sie einem Formular verborgene Felder als Teil des Versöhnungsschlüssels hinzufügen.
+Mit der Komponente &quot;Ausgeblendeter Abstimmschlüssel (Kampagne)&quot;können Sie ausgeblendete Felder als Teil des Abstimmschlüssels zu einem Formular hinzufügen.
 
 In der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie Folgendes konfigurieren:
 
@@ -424,7 +438,7 @@ Mit dem numerischen Feld können Sie es Empfängern ermöglichen, Zahlen (beispi
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
-* **Einschränkungen - Einschränkung** DropdownSie können auswählen - **Keine** oder **Nummerisch -** , um die Beschränkung einer Zahl oder ohne Einschränkung hinzuzufügen. Wählen Sie die numerische Beschränkung, können Benutzer ausschließlich Zahlen in das Feld eingeben.
+* **Einschränkungen - Einschränkung** DropdownSie können - **Keine** oder **Nummerisch - auswählen, um die Beschränkung einer Zahl oder ohne Einschränkung hinzuzufügen** . Wählen Sie die numerische Beschränkung, können Benutzer ausschließlich Zahlen in das Feld eingeben.
 
 * **Beschränkungsmeldung** Außerdem können Sie eine Beschränkungsmeldung hinzufügen, die Benutzern mitteilt, wie Antworten richtig formatiert werden.
 * **Stile - Breite** Passen Sie die Breite des Felds an, indem Sie auf die **+** - und **-** -Symbole klicken oder eine Zahl eingeben.
@@ -452,7 +466,8 @@ Mithilfe der Komponente **Abonnement-Checkliste (Kampagne)** können Sie die mit
 Wird die Komponente einem Formular hinzugefügt, werden alle verfügbaren Abonnements als Kontrollkästchen angezeigt, aus denen die Benutzer das gewünschte auswählen können. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
 
 >[!NOTE]
-Von der Komponente wird nicht geprüft, welche Services der Benutzer bereits abonniert oder abbestellt hat und welche nicht.
+>
+>Von der Komponente wird nicht geprüft, welche Services der Benutzer bereits abonniert oder abbestellt hat und welche nicht.
 
 Sie können [von den meisten Adobe Campaign-Komponenten genutzte Einstellungen](#settings-common-to-most-components) in der Komponente „Abonnement-Checkliste (Kampagne)“ bearbeiten. (Für diese Komponente stehen keine Adobe Campaign-Konfigurationen zur Verfügung.)
 
