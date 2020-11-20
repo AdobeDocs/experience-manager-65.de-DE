@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '6169'
+ht-degree: 89%
 
 ---
 
@@ -166,7 +169,8 @@ Abhängig von dem von Ihnen ausgewählten Element wird ein neues Fenster geöffn
 Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * **Seiten** Wählen Sie eine Liste der Seiten aus. Verwenden Sie `+` zum Hinzufügen weiterer Einträge und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+         * **Seiten** Wählen Sie eine Liste von Seiten aus. Verwendung 
+`+` , um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -179,7 +183,8 @@ Sie können eine Textsuchanfrage eingeben.
          * **Querybuilder-Eigenschafts-Notation**
 Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 Unter [QueryBuilder API](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
-   * **Ordnen nach** Auswahl `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdownmenü.
+   * **Reihenfolge nach** Auswahl 
+`jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü.
 
    * **Begrenzung**
 Die maximale Anzahl der Elemente, die Sie im Karussell verwenden möchten (optional).
@@ -229,7 +234,7 @@ Die Inhaltsfragment-Komponente wird im Sidekick der klassischen Benutzeroberflä
 
 [Inhaltsfragmente](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
-### Design-Importtool {#design-importer}
+### Design-Import-Tool {#design-importer}
 
 Mit dem Design-Importtool können Sie eine ZIP-Datei mit einem Designpaket hochladen.
 
@@ -331,8 +336,7 @@ Sie können ein Bild aus dem [Content Finder](/help/sites-classic-ui-authoring/c
 >[!NOTE]
 Der Upload-Fortschritt kann in Internet Explorer nicht verfolgt werden.
 Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
-
->See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -405,7 +409,7 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
 
          * **Seiten**
 
-            Wählen Sie eine Liste der Seiten aus. Fügen Sie mit + weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
+            Wählen Sie eine Liste von Seiten aus. Fügen Sie mit + weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -414,12 +418,12 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
 
          * **Suchabfrage**
 
-            Sie können eine einfache Textsuchabfrage eingeben.
+            Sie können eine Abfrage für die Textsuche eingeben.
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
 
-            Sie können eine Suchabfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
+            Sie können eine Abfrage mit der Querybuilder-Prädikatsschreibweise eingeben. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 
             Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
       * **Tags**
@@ -452,7 +456,7 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
 
 Das folgende Beispiel zeigt eine **Listen-Komponente** auf die Art und Weise, wie eine Liste mit untergeordneten Seiten angezeigt werden würde, wobei das Layout durch die benutzerdefinierten CSS-Definitionen eines Site-Designs gesteuert wird.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_Liste_use](assets/dc_list_use.png)
 
 ### Anmeldung {#login}
 
@@ -500,7 +504,8 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung**
 
-      Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
+      
+Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
 
    * **Typ/Größe**
 
@@ -508,7 +513,7 @@ Sie können Folgendes konfigurieren:
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
-### Verweis {#reference}
+### Verweis   {#reference}
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -538,7 +543,7 @@ Nach der Konfiguration wird der Inhalt exakt so angezeigt wie auf der Quellseite
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-### Suche{#searching}
+### Suche {#searching}
 
 Die Komponente „Suche“ stellt für Ihre Seite eine Suchfunktion zur Verfügung.
 
@@ -734,7 +739,7 @@ Sie können Folgendes konfigurieren:
 
    * **Verknüpfung zu**
 
-      Geben Sie einen Zielpfad an.
+      Geben Sie einen Pfad zur Zielgruppe an.
 
    * **Beschreibung**
 
@@ -1112,7 +1117,7 @@ Geben Sie die erforderliche Lead-Liste an.
 
          * **Lead wird aus dieser Liste gelöscht**
 
-            Geben Sie die erforderliche Interessentenliste an.
+            Geben Sie die erforderliche Liste für den Interessenten an.
 
 
 
@@ -1296,7 +1301,7 @@ Sie können auf einer speziellen Registerkarte verschiedene Parameter angeben, d
    * **Zulässige Namespaces**
 
       * **Geometrixx Outdoors**
-      * **Workflow**
+      * **Arbeitsablauf**
       * **Forum**
       * **Stockfotographie**
       * **Geometrixx Media**
