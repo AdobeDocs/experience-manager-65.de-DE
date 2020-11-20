@@ -13,7 +13,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '7287'
 ht-degree: 89%
@@ -29,7 +29,7 @@ ht-degree: 89%
 >
 >Adobe empfiehlt die Nutzung der modern und erweiterbaren [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) in AEM-Projekten. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
->Sie können die [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) verwenden, um Ihre auf Foundation-Komponenten basierende Site für die Verwendung der Hauptkomponenten umzugestalten.
+>Sie können die [AEM Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) modernisieren verwenden, um Ihre auf Foundation-Komponenten basierende Website für die Verwendung der Kernkomponenten umzugestalten.
 
 Die Foundation-Komponenten wurden für die Verwendung beim Bearbeiten von Inhalten für eine Standardwebseite entworfen. Sie bilden eine Teilmenge der für eine Standardinstallation von AEM verfügbaren Komponenten.
 
@@ -392,17 +392,19 @@ Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie es mit der [D
 >[!NOTE]
 >
 >Der integrierte Editor zeigt bei der Bearbeitung die Originalgröße und das Seitenverhältnis des Bildes an. Sie können auch die Höhe und die Breite festlegen. Alle in den Eigenschaften definierten Beschränkungen der Größe und des Seitenverhältnisses werden angewendet, sobald Sie Ihre Änderungen speichern.
-
->Abhängig von Ihrer Instanz können Mindest- und Höchstbeschränkungen auch durch das [Design der Seite](/help/sites-developing/designer.md) vorgegeben sein. Diese werden bei der Implementierung des Projekts festgelegt.
 >
+>Abhängig von Ihrer Instanz können Mindest- und Höchstbeschränkungen auch durch das [Design der Seite](/help/sites-developing/designer.md) vorgegeben sein. Diese werden bei der Implementierung des Projekts festgelegt.
+
 Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verfügung, beispielsweise Karte und Zoom:
 
 ![](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
-Der Upload-Fortschritt kann in Internet Explorer nicht verfolgt werden.
-Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
-
+>
+>Der Upload-Fortschritt kann in Internet Explorer nicht verfolgt werden.
+>
+>Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
+>
 >See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
@@ -444,7 +446,8 @@ Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werde
    Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
-Einige Optionen sind nur im Vollbild-Bearbeitungsmodus verfügbar.
+>
+>Einige Optionen sind nur im Vollbild-Bearbeitungsmodus verfügbar.
 
 Das endgültige Bild (mit **Titel** und **Beschreibung**) sieht beispielsweise wie folgt aus:
 
@@ -457,12 +460,14 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
 >[!NOTE]
-Diese Komponente ist mit [HTML Template Language (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) implementiert.
+>
+>Diese Komponente ist mit [HTML Template Language (HTL)](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) implementiert.
 
 ### Liste {#list}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Liste“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/list.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Liste“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/list.html). 
 
 Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
 
@@ -535,7 +540,8 @@ Das folgende Beispiel zeigt eine **Listen-Komponente** auf die Art und Weise, wi
 ### Anmeldung {#login}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Stellt die Felder für den Benutzernamen und das Kennwort bereit.
 
@@ -590,10 +596,11 @@ Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werd
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-### Verweis {#reference}
+### Verweis   {#reference}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Fragment“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Fragment“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html). 
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -626,7 +633,8 @@ Nach der Konfiguration wird der Inhalt exakt so angezeigt wie auf der Quellseite
 ### Suche {#searching}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Schnellsuche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/quick-search.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Schnellsuche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/quick-search.html). 
 
 Die Komponente „Suche“ stellt für Ihre Seite eine Suchfunktion zur Verfügung.
 
@@ -694,7 +702,8 @@ Das folgende Beispiel zeigt einen falsch geschriebenen und nicht verfügbaren Su
 ### Sitemap {#sitemap}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/breadcrumb.html) instead.
+>
+>Diese Foundation-Komponente ist veraltet. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/breadcrumb.html) instead.
 
 Eine automatische Sitemap-Auflistung, in der (bei Standardeinstellungen) alle Seiten (als aktive Links) in der aktuellen Website aufgeführt werden: Beispiel:
 
@@ -711,7 +720,8 @@ Sie können bei Bedarf Folgendes konfigurieren:
 ### Diashow {#slideshow}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html). 
 
 Mit dieser Komponente können Sie mehrere Fotos laden, sodass sie als Diashow auf Ihrer Seite angezeigt werden. Sie können Bilder hinzufügen oder entfernen und jedem einen Titel zuweisen. Unter „Erweitert“ können Sie auch die Größe des Anzeigebereichs festlegen.
 
@@ -740,10 +750,12 @@ Die Bildschirmpräsentation-Komponente zeigt dann wiederholt die einzelnen Fotos
 ### Tabelle {#table}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html). 
 
 >[!NOTE]
-Die Foundation-Komponente **Tabelle** basiert auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) - genau wie die Foundation-Komponente **[Text](#text)**.
+>
+>Die Foundation-Komponente **Tabelle** basiert auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) - genau wie die Foundation-Komponente **[Text](#text)**.
 
 Die Komponente **Tabelle** ist so vorkonfiguriert, dass Sie damit eine Tabelle erstellen, ausfüllen und formatieren können. Im Dialogfeld können Sie Ihre Tabelle konfigurieren und die Inhalte wie folgt erstellen:
 
@@ -787,10 +799,12 @@ Weitere Informationen zur Verwendung von Tags finden Sie im Beitrag zum [Verwend
 ### Text {#text}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html). 
 
 >[!NOTE]
-Die Foundation-Komponente **Text** basiert auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) - genau wie die Foundation-Komponente **Tabelle**.
+>
+>Die Foundation-Komponente **Text** basiert auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) - genau wie die Foundation-Komponente **Tabelle**.
 
 Mit der Text-Komponente können Sie über einen WYSIWYG-Editor einen Textblock eingeben und die Funktionen nutzen, die der [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitstellt. Über mehrere Symbole können Sie den Text formatieren, darunter Schriftmerkmale, Ausrichtung, Links, Listen und Einzüge:
 
@@ -814,7 +828,8 @@ Zusätzlich zu der Bearbeitung in Dialogfeldern durch den Rich-Text-Editor biete
 ### Text und Bild {#text-image}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) und [„Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html).
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html) und [„Text“](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html).
 
 Mit der Komponente „Text und Bild“ werden ein Textblock und ein Bild hinzugefügt. Außerdem können Sie Text und Bilder separat hinzufügen und bearbeiten. Einzelheiten hierzu finden Sie in den Beiträgen zu den Komponenten [Text](#text) und [Bild](#image).
 
@@ -861,7 +876,8 @@ Das folgende Beispiel zeigt eine Text-Bild-Komponente, die das Bild linksbündig
 ### Titel {#title}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Titel“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/list.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Titel“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/list.html). 
 
 Für die Titel-Komponente gilt Folgendes:
 
@@ -889,7 +905,8 @@ Das folgende Beispiel zeigt eine angezeigte **Titel**-Komponente; das Design wir
 ### Video {#video}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Mit der **Video-Komponente** können Sie ein vordefiniertes und vorgefertigtes Videoelement auf einer Seite platzieren.
 
@@ -908,10 +925,12 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
       Die systemeigene Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben der Größe angezeigt (siehe oben). Geben Sie die Breite und Höhe hier manuell ein, wenn Sie die systemeigenen Abmessungen des Videos überschreiben möchten. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 >[!NOTE]
-Unterstützte Formate:
-* `.mp4`
-* `Ogg`
-* `FLV` (Flash-Video)
+>
+>Unterstützte Formate:
+>
+>* `.mp4`
+>* `Ogg`
+>* `FLV` (Flash-Video)
 
 
 ## Columns {#columns}
@@ -943,12 +962,14 @@ Mit der Spalten-Steuerung-Komponente können Benutzer auswählen, wie sie den In
 ## Formular {#form}
 
 >[!CAUTION]
-Der Foundation-Komponente aus Komponenten wird nicht mehr unterstützt. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Der Foundation-Komponente aus Komponenten wird nicht mehr unterstützt. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingaben vornehmen können. Formulare und Formular-Komponenten können dazu genutzt werden, Informationen, einschließlich Benutzer-Feedback (z. B. ein Fragebogen zur Kundenzufriedenheit), und Benutzerinformationen (z. B. Benutzerregistrierung) zu sammeln.
 
 >[!NOTE]
-Weitere Informationen zu AEM Forms finden Sie in der [AEM Forms-Hilfe](/help/forms/home.md).
+>
+>Weitere Informationen zu AEM Forms finden Sie in der [AEM Forms-Hilfe](/help/forms/home.md).
 
 Formulare bestehen aus mehreren verschiedenen Komponenten:
 
@@ -969,7 +990,8 @@ Das folgende Beispiel zeigt ein Beispielformular. Es besteht aus der **Formular-
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
-Informationen dazu, wie Sie Ihre Formulare weiter entwickeln und anpassen können, finden Sie auf der Seite zum [Entwickeln von Formularen](/help/sites-developing/developing-forms.md). Dies betrifft das Hinzufügen von Aktionen und Beschränkungen, das Vorabladen von Feldern und die Verwendung von Scripts, um z. B. einen Service aufzurufen, der eine Aktion ausführt.
+>
+>Informationen dazu, wie Sie Ihre Formulare weiter entwickeln und anpassen können, finden Sie auf der Seite zum [Entwickeln von Formularen](/help/sites-developing/developing-forms.md). Dies betrifft das Hinzufügen von Aktionen und Beschränkungen, das Vorabladen von Feldern und die Verwendung von Scripts, um z. B. einen Service aufzurufen, der eine Aktion ausführt.
 
 ### Gemeinsame Einstellungen vieler Formular-Komponenten {#settings-common-to-many-form-components}
 
@@ -994,7 +1016,8 @@ Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld di
    Gibt die Größe und den Stil der Felder an.
 
 >[!NOTE]
-Die angezeigten Felder können je nach Komponente sehr unterschiedlich sein.
+>
+>Die angezeigten Felder können je nach Komponente sehr unterschiedlich sein.
 
 Diese Registerkarten stellen die erforderlichen Parameter bereit. Diese können vom Typ der einzelnen Komponenten abhängen, können jedoch Folgendes enthalten:
 
@@ -1059,7 +1082,8 @@ Dies ist ein erforderliches Feld und sollte nur die folgenden Zeichen enthalten:
 ### Formular (Komponente) {#form-component}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formular-Container“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-container.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formular-Container“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-container.html). 
 
 Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithilfe der Elemente **Formular-Start** und **Formular-Ende**. Diese treten immer gemeinsam auf, damit das Formular ordnungsgemäß definiert wird.
 
@@ -1068,7 +1092,8 @@ Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithil
 Zwischen dem Start und dem Ende eines Formulars können Sie Formular-Komponenten hinzufügen, die die eigentlichen Eingabefelder für die Benutzer definieren.
 
 >[!NOTE]
-Die Formular-Komponente der Foundation-Komponenten unterstützt nur die Verwendung anderer Formular-Komponenten von Foundation-Komponenten (Schaltflächen, Text, ausgeblendet usw.). Die Verwendung von [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) in einem Foundation-Komponentenformular (und umgekehrt) wird nicht unterstützt.
+>
+>Die Formular-Komponente der Foundation-Komponenten unterstützt nur die Verwendung anderer Formular-Komponenten von Foundation-Komponenten (Schaltflächen, Text, ausgeblendet usw.). Die Verwendung von [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) in einem Foundation-Komponentenformular (und umgekehrt) wird nicht unterstützt.
 
 #### Beginn des Formulars {#start-of-form}
 
@@ -1285,7 +1310,8 @@ Hiermit wird das Ende des Formulars gekennzeichnet. Sie können Folgendes konfig
 ### Kontoname {#account-name}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-text.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-text.html). 
 
 Hiermit kann der Benutzer einen Kontonamen eingeben:
 
@@ -1294,7 +1320,8 @@ Hiermit kann der Benutzer einen Kontonamen eingeben:
 ### Adresse {#address}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-text.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-text.html). 
 
 Hiermit können Sie ein Feld für internationale Adressen im folgenden Format hinzufügen:
 
@@ -1305,7 +1332,8 @@ Die Komponente ist für den unmittelbaren Einsatz konfiguriert, Sie können die 
 ### Captcha {#captcha}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge eingeben, die am Bildschirm angezeigt wird. Die Zeichenfolge ändert sich bei jeder Aktualisierung.
 
@@ -1316,7 +1344,8 @@ Sie können verschiedene Parameter für diese Komponente konfigurieren, darunter
 ### Kontrollkästchen-Gruppe {#checkbox-group}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-options.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-options.html). 
 
 Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
 
@@ -1325,13 +1354,16 @@ Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontr
 Sie können verschiedene Parameter festlegen wie einen Titel, eine Beschreibung und einen Elementnamen. Mit den Schaltflächen „+“ und „–“ können Sie Elemente hinzufügen oder entfernen und sie dann mit den Nach-oben- und Nach-unten-Pfeilen positionieren.
 
 >[!NOTE]
-Mit **Element-Ladepfad** können Sie die Kontrollkästchengruppen-Liste vorab mit Werten laden.
-Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Mit **Element-Ladepfad** können Sie die Kontrollkästchengruppen-Liste vorab mit Werten laden.
+>
+>Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Kreditkartendetails {#credit-card-details}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Hiermit können Sie Felder bereitstellen, in die Kreditkartendetails eingegeben werden können. Sie können die Typen der akzeptierten Kreditkarten und die benötigten Informationen konfigurieren (z. B. den Sicherheitscode).
 
@@ -1340,7 +1372,8 @@ Hiermit können Sie Felder bereitstellen, in die Kreditkartendetails eingegeben 
 ### Dropdown-Liste {#dropdown-list}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-options.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-options.html). 
 
 Eine Dropdown-Liste kann so konfiguriert werden, dass Sie eine Reihe von Auswahlwerten verwenden können:
 
@@ -1349,38 +1382,46 @@ Eine Dropdown-Liste kann so konfiguriert werden, dass Sie eine Reihe von Auswahl
 Sie können einen Titel und Elemente angeben, die in der Liste angezeigt werden. Mit den Schaltflächen „+“ und „-“ können Sie Listenelemente hinzufügen oder entfernen und sie dann mit den Nach-oben- und Nach-unten-Tasten positionieren. Sie können festlegen, ob Benutzer mehrere Elemente aus der Liste auswählen können, sowie alle Elemente, die automatisch ausgewählt werden sollen, wenn ein Benutzer die Liste zum ersten mal öffnet (Anfangswerte).
 
 >[!NOTE]
-Mit dem **Element-Ladepfad** können Sie die Dropdown-Liste vorab mit Werten laden.
-Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Mit dem **Element-Ladepfad** können Sie die Dropdown-Liste vorab mit Werten laden.
+>
+>Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Datei-Upload {#file-upload}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei auszuwählen und hochzuladen.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
 >[!NOTE]
-Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
+>
+>Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
 ### Ausgeblendetes Feld {#hidden-field}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Ausgeblendetes Formular“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-hidden.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Ausgeblendetes Formular“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-hidden.html). 
 
 Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld kann zu unterschiedlichen Zwecken verwendet werden. Wenn Sie z. B. nach dem Senden des Formulars eine Aktion durchführen müssen oder wenn für die Nachverarbeitung ausgeblendete Daten benötigt werden.
 
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
-Sie können das Formular auch so anpassen, dass bestimmte Formular-Komponenten abhängig vom Wert anderer auf dem Formular befindlichen Felder ein- oder ausgeblendet werden. Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist.
-Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+>
+>Sie können das Formular auch so anpassen, dass bestimmte Formular-Komponenten abhängig vom Wert anderer auf dem Formular befindlichen Felder ein- oder ausgeblendet werden. Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist.
+>
+>Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Bild-Schaltfläche {#image-button}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-button.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-button.html). 
 
 Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bild und Text erstellen:
 
@@ -1389,7 +1430,8 @@ Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bi
 ### Bild-Upload {#image-upload}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Die Bild-Upload-Komponente bietet Benutzern die Möglichkeit, eine Bilddatei auszuwählen und hochzuladen.
 
@@ -1398,7 +1440,8 @@ Die Bild-Upload-Komponente bietet Benutzern die Möglichkeit, eine Bilddatei aus
 ### Verknüpfungsfeld {#link-field}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Im Link-Feld können Benutzer eine URL angeben:
 
@@ -1409,7 +1452,8 @@ Dies wird am häufigsten für das Kalenderereignis-Formular verwendet, wo es fü
 ### Kennwort-Feld {#password-field}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Dieses Feld ermöglicht dem Benutzer die Eingabe seines Kennworts:
 
@@ -1418,7 +1462,8 @@ Dieses Feld ermöglicht dem Benutzer die Eingabe seines Kennworts:
 ### Kennwort zurücksetzen {#password-reset}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Diese Komponente bietet Benutzern zwei Felder für:
 
@@ -1432,7 +1477,8 @@ Die Standardeinstellungen der Komponente werden folgendermaßen angezeigt:
 ### Optionsfeldgruppe {#radio-group}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-options.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-options.html). 
 
 Eine Optionsfeldgruppe bietet Ihnen eine Liste mit einem oder mehreren Optionsschaltern, von denen nur jeweils einer ausgewählt werden kann.
 
@@ -1441,13 +1487,16 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung fes
 ![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
-Mit dem **Element-Ladepfad** können Sie die Optionsfeld-Gruppe vorab mit Werten laden.
-Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>Mit dem **Element-Ladepfad** können Sie die Optionsfeld-Gruppe vorab mit Werten laden.
+>
+>Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Schaltfläche „Übermitteln“{#submit-button}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-button.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-button.html). 
 
 Mit dieser Komponente können Sie eine Schaltfläche „Übermitteln“ mit Standardtext erstellen:
 
@@ -1460,7 +1509,8 @@ Oder Sie können Ihren eigenen Text eingeben:
 ### Feld „Tags“{#tags-field}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). 
 
 Über dieses Feld können Sie Tags auswählen:
 
@@ -1486,7 +1536,8 @@ Sie können auf einer speziellen Registerkarte verschiedene Parameter angeben, d
 ### Textfeld {#text-field}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-text.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-text.html). 
 
 Das Standardtextfeld kann an die erforderliche Größe angepasst werden und kann den eigenen Lead in der Nachricht enthalten:
 
@@ -1495,7 +1546,8 @@ Das Standardtextfeld kann an die erforderliche Größe angepasst werden und kann
 ### Workflow-Sende-Schaltfläche(n) {#workflow-submit-button-s}
 
 >[!CAUTION]
-Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-button.html). 
+>
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/forms/form-button.html). 
 
 Damit können Sie eine Senden-Schaltfläche für die Verwendung in einem Workflow erstellen.
 
