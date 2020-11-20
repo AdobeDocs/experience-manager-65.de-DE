@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 79%
 
 ---
 
@@ -55,7 +58,7 @@ Diese Snippets ermöglichen die Erfassung von Daten und Generierung von Berichte
 >[!CAUTION]
 >
 >The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.
-
+>
 >If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.
 >
 >Ohne diese Komponente funktioniert keiner der Dienste (generisch, Analytics, Target usw.).
@@ -102,4 +105,5 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
    Nach Ablauf einer gewissen Zeitspanne können Sie die Statistiken anzeigen, die erfasst wurden.
 
    >[!NOTE]
-   Wenn die Konfiguration an eine Seite mit untergeordneten Seiten angehängt wird, wird der Dienst von diesen ebenfalls übernommen.
+   >
+   >Wenn die Konfiguration an eine Seite mit untergeordneten Seiten angehängt wird, wird der Dienst von diesen ebenfalls übernommen.
