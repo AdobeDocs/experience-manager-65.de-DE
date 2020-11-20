@@ -9,7 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '3720'
+ht-degree: 67%
 
 ---
 
@@ -41,6 +44,7 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
    * forms-users (zur Vorschau auf der Autoreninstanz)
    * cm-agent-users (für Rendering auf Veröffentlichungsinstanz)
+
    Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). Wenn Sie versuchen, eine Korrespondenz ohne die entsprechenden Berechtigungen wiederzugeben, wird die 404-Fehlerseite angezeigt.
 
 1. Wenn Sie **Vorschau**> **Benutzerdefiniert** wählen, wird ein Dialogfeld geöffnet. In the dialog, select a data file, corresponding to the data dictionary, to preview the letter with and then select **Preview**. Eine Datendatei wird basierend auf einem Datenwörterbuch für einen bestimmten Brief erstellt: For more information on the data file, see [Data Dictionary](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
@@ -54,7 +58,7 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
    Es gibt drei Registerkarten: Daten, Inhalt und Anlagen. Wenn keine Datenelemente (Platzhaltervariablen und Layout-Felder) vorhanden sind, wird der Brief direkt in der Inhaltsansicht geöffnet. Die Registerkarte „Anlagen“ ist nur verfügbar, wenn Anlagen vorhanden sind oder der Bibliothekszugriff aktiviert ist.
 
    >[!NOTE]
-
+   >
    >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/de/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Daten eingeben {#enterdata}
@@ -124,8 +128,9 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 1. Falls erforderlich, fügen Sie Sonderzeichen in die Korrespondenz ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 
    * Währungssymbole wie €,¥ und £
-   * Mathematische Symbole wie z. B. □, , ^ und ^
+   * Mathematische Symbole wie z. B. □, □ und ^
    * Interpunktionssymbole wie ‟ und&quot;
+
    ![Sonderzeichen](assets/specialcharacters.png)
 
    Correspondence Management enthält integrierte Unterstützung für 210 Sonderzeichen. The admin can [add support for more/custom special characters by customization](../../forms/using/custom-special-characters.md).
@@ -156,6 +161,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
    * Obligatorische Felder.
    * Layout-Felder, wenn sie obligatorisch und an den Benutzer gebunden sind.
    * Nur eindeutige Variableninstanzen. Wenn ein Modul, Zielbereich oder eine Briefvorlage zwei oder mehr Instanzen derselben Variable enthält, wird die Anzahl als „1“ (eins) angezeigt. Allerdings wird für jede der Instanzen „1“ als Anzahl angezeigt.
+
    Die Anzahl der nicht ausgefüllten Variablen umfasst keine deaktivierten Module. Wenn ein Modul in einer Briefvorlage aber nicht im Brief enthalten ist, wird die Anzahl der nicht ausgefüllten Variablen in diesem Modul nicht angezeigt.
 
    Für Zielbereich, Modul und Variable wird die Anzahl auf der rechten Seite jedes Objekts in der Briefvorlage angezeigt. Für die gesamte Vorlage wird die Anzahl jedoch in der Statusleiste &quot;Korrespondenz erstellen&quot;angezeigt.
@@ -166,6 +172,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
    * **Bedingung** Zeigt die Summe der eindeutigen nicht ausgefüllten Bedingungsvariablen an, die in der Bedingung enthalten sind, und der Variablen, die in den resultierenden Modulen enthalten sind.
    * **Liste** Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den der Liste zugewiesenen Modulen enthalten sind.
    * **Bereich** Zielgruppe Zeigt die Summe aller eindeutigen nicht ausgefüllten Variablen an, die in den Modulen enthalten sind, die dem Bereich Zielgruppe zugewiesen sind.
+
    Beachten Sie Folgendes zu Variablen mit Standardwerten:
 
    * Ein boolesches Variablenfeld ergibt standardmäßig *false*. Die Variable wird jedoch als nicht ausgefüllt erfasst. This implies that the variable count includes all Boolean variable fields with value *false*.
@@ -278,7 +285,7 @@ Es gibt zwei Arten von Briefinstanzen, die gespeichert werden können: Entwurfsi
 
 Solche Instanzen können nur gespeichert werden, wenn der Brief in der öffentlichen Instanz angezeigt wird. Das Speichern von Instanzen ist standardmäßig deaktiviert. Führen Sie die folgenden Schritte durch, um das Speichern von Briefinstanzen zu aktivieren.
 
-1. Öffnen Sie in AEM die Web-Konsolenkonfiguration für Adobe Experience Manager für Ihren Server unter Verwendung der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. Öffnen Sie in AEM die Adobe Experience Manager Web Console Configuration für Ihren Server unter Verwendung der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Locate **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Überprüfen Sie die Konfiguration **[!UICONTROL Briefinstanzen im Veröffentlichungsmodus verwalten]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
