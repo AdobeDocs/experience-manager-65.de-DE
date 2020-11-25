@@ -6,7 +6,7 @@ user-guide-title: Adobe Experience Manager 6.5 - Versionshinweise
 breadcrumb-title: Versionshinweise
 user-guide-description: Erfahren Sie mehr über die neuesten neuen Funktionen in AEM 6.5 in den Versionshinweisen.
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 56551f31e87188cebc2754f6a2c756ae96164ed1
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 45%
@@ -20,7 +20,7 @@ ht-degree: 45%
 + [Allgemeine Versionshinweise](release-notes.md)
 + Service Pack  – Versionshinweise {#service-pack}
    + [Neue Funktionen](new-features-latest-service-pack.md)
-   + [Service Pack 6 – Versionshinweise](sp-release-notes.md)
+   + [Service Pack 7 – Versionshinweise](sp-release-notes.md)
    + [Frühere Service Pack-Versionshinweise](previous-hotfixes-featurepacks.md)
 + [Versionshinweise zu AEM Sites](sites.md)
 + [Versionshinweise zu AEM Assets](assets.md)
