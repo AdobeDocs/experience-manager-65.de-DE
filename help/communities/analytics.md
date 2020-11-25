@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
+source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2756'
 ht-degree: 5%
 
 ---
@@ -125,9 +125,7 @@ Wenn Sie eine **neue Report Suite** verwenden, beachten Sie, dass eine neue Repo
 
 Wenn Sie eine **vorhandene Report Suite** verwenden, müssen Sie die Variablenzuordnung [ggf.](#modifying-analytics-variable-mapping) ändern, bevor Sie das Analytics-Framework für eine Community-Site aktivieren.
 
-<!--
-Contact your account representative for any concerns regarding the variables dedicated to Communities.
--->
+Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie Bedenken hinsichtlich der Variablen für Communities haben.
 
 >[!CAUTION]
 >
