@@ -7,10 +7,10 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 52%
+source-wordcount: '585'
+ht-degree: 56%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 52%
 + [[!DNL Experience Manager] 6.5 Versionshinweise zu Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
++ [Zugänglichkeit in [!DNL Assets]](accessibility.md)
 + Experience Manager-Assets verwenden {#using}
    + [[!DNL Assets] startseite](assets-home-page.md)
    + [Suchen nach digitalen Assets](search-assets.md)
@@ -76,9 +77,9 @@ ht-degree: 52%
    + [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
    + [Veröffentlichen von Dynamic Media-Assets](publishing-dynamicmedia-assets.md)
-   + [Arbeiten mit selektiver Veröffentlichung in dynamischen Medien](selective-publishing.md)
-   + [Ungültigmachen des CDN-Cache über dynamische Medien](invalidate-cdn-cache-dynamic-media.md)
-   + [Ungültigmachen des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](selective-publishing.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidierung des CDN-Cache mithilfe von Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installieren von Feature Pack 18912 für die Migration von Massenelementen](bulk-ingest-migrate.md)
    + [Arbeiten mit Selektoren](working-with-selectors.md)
 + Assets erweitern {#extending}
@@ -121,7 +122,7 @@ ht-degree: 52%
    + [MIME-Typ von Assets mithilfe von Apache Tika erkennen](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
    + [Mehrere Mandanten für Sammlungen, Snippets und Snippet-Vorlagen](multi-tenancy.md)
-   + [Wasserzeichen für Assets](watermarking.md)
+   + [Versehen Sie Assets mit Wasserzeichen](watermarking.md)
    + [Asset-Vorlagen](asset-templates.md)
    + [Bewährte Verfahren zum Freigeben von Ordnern für [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
