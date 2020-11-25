@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Wenn ein Framework für die Integration von Übersetzungen zusätzlich zu dem Di
 
 ## Der Standard-Übersetzungsdienst {#the-default-translation-service}
 
-AEM Communities verfügt über eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für einen [Standard-Übersetzungsdienst](../../help/sites-administering/tc-msconf.md) , der für mehrere Sprachen aktiviert ist.
+AEM Communities verfügt über eine [Testlizenz](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) für einen [Standardübersetzungsdienst](../../help/sites-administering/tc-msconf.md) , der für mehrere Sprachen aktiviert ist.
 
 Beim [Erstellen einer Community-Site](sites-console.md)ist der Standard-Übersetzungsdienst aktiviert, wenn `Allow Machine Translation` er im Unterfeld [TRANSLATION](sites-console.md#translation) überprüft wird.
 
