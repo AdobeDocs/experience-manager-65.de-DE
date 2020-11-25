@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1898'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 ## Checkliste für die Installation {#installation-checklist}
 
-**Für die[AEM](/help/sites-deploying/deploy.md#what-is-aem)**
+**Für die [AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
 * Installieren Sie die neuesten [AEM 6.5-Updates](#aem64updates)
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 * [Kryptoschlüssel replizieren](#replicate-the-crypto-key)
 * Wenn Sie die Globalisierung unterstützen, [richten Sie die automatisierte Übersetzung](/help/sites-administering/translation.md)ein (Mustereinrichtung wird für die Entwicklung bereitgestellt)
 
-**Fähigkeit &quot;[Communities&quot;](/help/communities/overview.md)**
+**Fähigkeit &quot; [Communities&quot;](/help/communities/overview.md)**
 
 * Wenn Sie eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm)bereitstellen, [müssen Sie den primären Herausgeber](#primary-publisher)
 
@@ -89,7 +89,7 @@ ht-degree: 5%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.5 Communities GA mit Communities package. Informationen zu Updates für AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities)finden Sie in den [AEM 6.5 Versionshinweisen](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA beinhaltet Communities-Paket. Informationen zu Updates für AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities)finden Sie in den [AEM 6.5 Versionshinweisen](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 Updates {#aem-updates}
 
