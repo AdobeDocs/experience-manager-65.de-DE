@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3796'
 ht-degree: 5%
 
 ---
@@ -139,7 +139,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 [!DNL Adobe Experience Manager] 6.5.7.0 [!DNL Assets] behebt die folgenden Probleme und bietet die folgenden Erweiterungen.
 
-* Die folgenden Verbesserungen wurden für die Barrierefreiheit in [!DNL Experience Manager Assets]vorgenommen:
+* Die folgenden Erweiterungen wurden für die Barrierefreiheit in [!DNL Experience Manager Assets] dieser Version vorgenommen. Weitere Informationen finden Sie unter [Zugänglichkeitsfunktionen in [!DNL Assets]](/help/assets/accessibility.md).
 
    * Beim Navigieren in der Zeitleiste mit einer Tastatur kann die `Esc` Taste die Option &quot;Alle [!UICONTROL anzeigen] &quot;ausblenden, ohne den Fokus zu verlieren (CQ-4293598).
    * Beim Navigieren mit der Tastatur-Tabulatortaste behält das Tag-Feld den Fokus (NPR-35109) bei, nachdem das letzte Tag aus den hinzugefügten Tags entfernt wurde.
@@ -193,7 +193,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* Die folgenden wichtigen Verbesserungen wurden für die Barrierefreiheit in [!DNL Dynamic Media] (CQ-4290306) vorgenommen. Weitere Informationen finden Sie unter Barrierefreiheitsfunktionen [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* Die folgenden Verbesserungen wurden für Barrierefreiheit in [!DNL Dynamic Media] (CQ-4290306) vorgenommen. Weitere Informationen finden Sie unter [Zugänglichkeitsfunktionen [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
    * Bildschirmlesehilfen (JAWS, Erzähler) beschreiben den Namen, die Rolle und den Status der Menüelemente in der Menüoption &quot;Größe einbetten&quot;(CQ-4290927).
    * Benutzer können mithilfe des `Tab` Schlüssels (CQ-4290926) im Dialogfeld &quot;E-Mail-Link&quot;navigieren.
