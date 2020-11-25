@@ -4,9 +4,9 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 752f8a305f689a9aa1377533108d28c714da8afd
+source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
 workflow-type: tm+mt
-source-wordcount: '5776'
+source-wordcount: '5769'
 ht-degree: 53%
 
 ---
@@ -398,7 +398,7 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 | Video-Codec | x264 Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 | Video-Bitrate | Wird als Mindest- oder Höchstwert angegeben. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 | Audio-Codec | Libvorbis, Lame MP3, AAC-Kodierung. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
-| Audiobitrate       | Wird als Mindest- oder Höchstwert angegeben. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
+| Audiobitrate  | Wird als Mindest- oder Höchstwert angegeben. Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
 
 ## Arbeiten mit Asset-Suchergebnissen {#aftersearch}
 
@@ -411,9 +411,9 @@ Sie können die Assets, nach denen Sie gesucht haben, wie [!DNL Experience Manag
 
 ### Sortieren von Suchergebnissen {#sort}
 
-Sortieren Sie die Suchergebnisse, um die erforderlichen Assets schneller zu ermitteln. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets] nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
+Sortieren Sie die Suchergebnisse, um die erforderlichen Assets schneller zu ermitteln. Sie können die Suchergebnisse nur sortieren, wenn Sie im Bedienfeld &quot; **[[!UICONTROL Filter]](#searchui)** &quot;die Option &quot;Dateien&quot;auswählen **** . [!DNL Assets] nutzt eine Server-seitige Sortierung, um alle Assets (wie viele auch immer) in einem Ordner oder den Ergebnissen einer Suchanfrage schnell zu sortieren. Server-seitige Sortierung liefert schnellere und genauere Ergebnisse als Client-seitige Sortierung.
 
-In der Listenansicht lassen sich die Suchergebnisse genauso sortieren, wie Sie Assets in einem beliebigen Ordner sortieren. Die Sortierung funktioniert anhand der folgenden Spalten: Name, Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
+Sie können die Suchergebnisse genau so sortieren, wie Sie Assets in einem beliebigen Ordner sortieren können. Die Sortierung funktioniert anhand der folgenden Spalten: Name, Titel, Status, Abmessungen, Größe, Bewertung, Nutzung, (Datum) erstellt, (Datum) geändert, (Datum) veröffentlicht, Workflow und Ausgecheckt.
 
 Mehr über Einschränkungen bei der Sortierfunktion finden Sie unter [Einschränkungen](#limitations).
 
