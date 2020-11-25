@@ -3,10 +3,10 @@ title: Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Site
 description: Verwenden Sie Assets, die in einer Remote- [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] -Bereitstellung verfügbar sind.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 916b49572981115f6178c04f260ce63bcfc6d054
+source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
 workflow-type: tm+mt
-source-wordcount: '2251'
-ht-degree: 88%
+source-wordcount: '2263'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ Benutzer können Web-Seiten in [!DNL Experience Manager Sites] erstellen. [!DNL 
 
 ## Übersicht über Connected Assets {#overview-of-connected-assets}
 
-Beim Bearbeiten von Seiten im [!UICONTROL Seiten-Editor] können die Autoren Assets aus einer anderen [!DNL Assets]-Bereitstellung durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Sites] mit einer anderen (Remote-)Bereitstellung von [!DNL Assets].
+Beim Bearbeiten von Seiten im [!UICONTROL Seiteneditor] [!DNL Assets] als Zielort der Zielgruppe können die Autoren Assets aus einer anderen Bereitstellung, die als Asset-Quelle dient, nahtlos suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites] Funktionen und einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets] Funktionen.
 
 Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und die gleichzeitige Verwendung einiger weniger Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die [!DNL Sites]-Bereitstellung verfügbar machen möchten, sollten Sie die Assets als Stapel migrieren. Siehe Migrationshandbuch für [Experience Manager-Assets](/help/assets/assets-migration-guide.md).
 
