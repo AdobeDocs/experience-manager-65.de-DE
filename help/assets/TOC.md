@@ -7,9 +7,9 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
 translation-type: tm+mt
-source-git-commit: 3443fe49e7eacbdacf7d21077f920d38b34daeae
+source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '589'
 ht-degree: 56%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 56%
    + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
    + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
    + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
-   + [Zugänglichkeitsfunktionen in [!DNL Dynamic Media]](accessibility-dm.md)
+   + [Barrierefreiheit in dynamischen Medien](accessibility-dm.md)
    + [Migration von dynamischen Medien - Hybridmodus zu dynamischen Medien - S7-Modus](migrate-from-hybrid-to-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
