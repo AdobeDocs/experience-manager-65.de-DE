@@ -3,10 +3,10 @@ title: Verwalten von Metadaten für digitale Assets in  [!DNL Adobe Experience M
 description: Erfahren Sie mehr über die Metadatentypen und wie [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] Assets automatisch basierend auf ihren Metadaten organisiert und verarbeitet werden können.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
 workflow-type: tm+mt
 source-wordcount: '2421'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -112,7 +112,7 @@ Der Metadaten-Import erfolgt asynchron und beeinträchtigt nicht die Systemleist
 1. Navigate to the [!DNL Assets] user interface, and click **[!UICONTROL Create]** from the toolbar.
 1. Wählen Sie aus dem Menü **[!UICONTROL Metadaten]** aus.
 1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
-1. Geben Sie die folgenden Parameter an. Siehe Beispiel für eine CSV-Datei unter [metadata-import-sample-file.csv](assets/metadata-import-sample-file.csv).
+1. Geben Sie die folgenden Parameter an. Siehe Beispiel für eine CSV-Datei unter [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Metadaten-Importparameter | Beschreibung |
    |:---|:---|
