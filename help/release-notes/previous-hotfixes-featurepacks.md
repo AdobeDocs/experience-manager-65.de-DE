@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Frühere Service Pack-Versionshinwei
 description: Versionshinweise für [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 62a04c1d9f62a5a5fa6f97f415015001daa94747
+source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
 workflow-type: tm+mt
-source-wordcount: '14760'
+source-wordcount: '14804'
 ht-degree: 20%
 
 ---
@@ -326,6 +326,8 @@ Nach der Installation des Add-On-Pakets [!DNL Experience Manager Forms] 6.5.6.0:
 * Adaptive Formulare verfügen über einige offene Ressourcenauflöser. Dies führt zu Übermittlungsfehlern. Das Problem tritt gelegentlich auf (CQ-4299407).
 
 * Wenn Sie die Feldkonfiguration zum ersten Mal öffnen, wird das Symbol Eigenschaften nicht angezeigt (CQ-4296284).
+
+* Benutzer können beim Senden eines adaptiven Formulars Metadaten zum Senden wie `afPath`und `afSubmissionTime` `signers`Bearbeiten bearbeiten. Um das Problem zu beheben, werden die Metadatenwerte von den Formulardaten auf der Clientseite entfernt. Benutzer können das `FormSubmitInfo` Objekt verwenden, um diese Werte vom Server abzurufen (NPR-33654).
 
 **Arbeitsablauf**
 
