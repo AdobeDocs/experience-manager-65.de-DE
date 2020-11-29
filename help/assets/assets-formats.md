@@ -3,10 +3,10 @@ title: Unterstützte Dateiformate und MIME-Typen
 description: Dateiformate und MIME-Typen, die [!DNL Assets] and [!DNL Dynamic Media] von und die für die einzelnen Formate unterstützten Funktionen unterstützt werden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
+source-git-commit: eaff176bf3ffc197607b8eb39b15c1e945927f8e
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 59%
+source-wordcount: '1639'
+ht-degree: 58%
 
 ---
 
@@ -247,7 +247,11 @@ Die Anwendbarkeit der üblichen DAM-Funktionen für einige spezifische Dateiform
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) | − | − | − | − | − | ✓ |
 
-## Unterstützt MIME-Typen {#supported-mime-types}
+>[!NOTE]
+>
+>Das Hochladen und Verteilen von JavaScript-Dateien ist möglicherweise nicht sicher. Bei Bedarf können Überlagerungen verwendet werden, um zu verhindern, dass Benutzer JS-Dateien hochladen können.
+
+## Unterstützte MIME-Typen {#supported-mime-types}
 
 Erkennt den Dateityp standardmäßig mithilfe der Dateierweiterung [!DNL Experience Manager] . [!DNL Experience Manager] kann es aus dem Inhalt der Dateien erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
 
