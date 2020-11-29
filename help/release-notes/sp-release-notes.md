@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
+source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3789'
 ht-degree: 5%
 
 ---
@@ -145,7 +145,7 @@ Im Folgenden finden Sie die Liste der Fehlerbehebungen in Version [!DNL Experien
    * Beim Navigieren mit der Tastatur-Tabulatortaste behält das Tag-Feld den Fokus (NPR-35109) bei, nachdem das letzte Tag aus den hinzugefügten Tags entfernt wurde.
    * [!DNL Experience Manager] Komponenten enthalten nun entsprechende Informationen für Namen, Rolle und Wert, die von Bildschirmlesehilfen verwendet werden sollen (NPR-34255).
    * Nachdem Sie das Kombinationsfeld &quot;Typ/Größe&quot;, das Kombinationsfeld &quot;Verknüpfen&quot;, das Sprachkombinationsfeld oder das Textfeld zum Bearbeiten gelöscht haben, kehrt der Tastaturfokus zu den nächsten oder vorherigen Elementen der Benutzeroberfläche oder zu einem relevanteren Element der Benutzeroberfläche zurück (CQ-4293585).
-   * Wenn Sie den Mauszeiger über verschiedene Optionen bewegen, werden die Tipps wie &quot;Auswählen&quot;und &quot;Herunterladen&quot;angezeigt. Benutzer, die die Bildschirmvergrößerung verwenden, haben möglicherweise Schwierigkeiten, die Dateiminiaturen anzuzeigen, da der Inhalt durch Bewegen des Mauszeigers angezeigt wird. Es ist jetzt möglich, den Fokus beizubehalten, nachdem die Option mithilfe eines `Escape` Schlüssels entfernt wurde (CQ-4293554).
+   * Wenn Sie den Mauszeiger über Optionen bewegen, werden Tipps wie &quot;Auswählen&quot;und &quot;Herunterladen&quot;angezeigt. Benutzer, die eine Vergrößerung verwenden, sehen aufgrund dieser Tipps möglicherweise keine Dateiminiaturen. Jetzt ist es möglich, den Fokus beizubehalten, nachdem die Option mit der `Escape` Taste entfernt wurde. (CQ-4293554).
    * Wenn Sie eine Rasterzelle aus dem Raster auf der Seite auswählen, wird der Fokus auf die Aktionsleiste verschoben, die auf dem Bildschirm angezeigt wird (CQ-4282127).
    * Visuelle Benutzer können zwischen Normaltext und einem Link unterscheiden, da visuelle Hinweise (Unterstreichung und Chevron-Symbol) für Links zu allen Lösungen in der [!DNL Experience Manager] Startseite angezeigt werden (CQ-4282072).
 
@@ -405,7 +405,7 @@ Im Folgenden finden Sie eine Liste der Funktionen, die mit [!DNL Experience Mana
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integrationen | Der Bildschirm &quot; **[!UICONTROL AEM Cloud-Services-Teilnahme]** &quot;wird nicht mehr unterstützt. Mit der in AEM 6.5 aktualisierten AEM- und Zielgruppe-Integration zur Unterstützung der Target Standard-API, die die Authentifizierung über Adobe IMS und I/O verwendet, und der wachsenden Rolle des Adobe Launch bei der Instrumentierung AEM Seiten für Analyse und Personalisierung ist der Opt-In-Assistent funktional irrelevant geworden. | Konfigurieren Sie Systemverbindungen, Adobe-IMS-Authentifizierung und Adobe-I/O-Integrationen über die jeweiligen AEM-Cloud-Dienste. |
+| Integrationen | Der Bildschirm &quot; **[!UICONTROL AEM Cloud-Services-Teilnahme]** &quot;wird nicht mehr unterstützt. Mit der in AEM 6.5 aktualisierten AEM- und Zielgruppe-Integration zur Unterstützung der Target Standard-API, die die Authentifizierung über Adobe IMS und I/O verwendet, und der wachsenden Rolle des Adobe Launch bei der Instrumentierung AEM Seiten für Analyse und Personalisierung ist der Opt-In-Assistent funktional irrelevant geworden. | Konfigurieren Sie Systemverbindungen, Adobe IMS-Authentifizierung und Adobe I/O-Integrationen über die jeweiligen AEM-Cloud-Dienste. |
 | Connectoren | Die Adobe JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013 wird für AEM 6.5 nicht mehr unterstützt. | Nicht zutreffend |
 
 ## Bekannte Probleme {#known-issues}
