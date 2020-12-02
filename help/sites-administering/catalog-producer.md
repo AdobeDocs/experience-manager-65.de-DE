@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 40%
 
 ---
 
@@ -18,17 +21,17 @@ source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
 
 Erfahren Sie, wie Sie mit Catalog Producer in AEM Assets Produktkataloge mit Ihren digitalen Assets generieren.
 
-Mit dem Catalog Producer von Adobe Experience Manager (AEM) Assets können Sie mit InDesign-Vorlagen, die Sie aus einer InDesign-Anwendung importieren, Kataloge für Ihre Markenprodukte erstellen. Um InDesign-Vorlagen zu importieren, integrieren Sie zunächst AEM Assets in einen InDesign-Server.
+Mit dem Catalog Producer von Adobe Experience Manager (AEM) Assets können Sie mit InDesign-Vorlagen, die Sie aus einer InDesign-Anwendung importieren, Kataloge für Ihre Markenprodukte erstellen. Um InDesign-Vorlagen zu importieren, integrieren Sie zunächst AEM Assets mit einem InDesign-Server.
 
 ## Integration mit einem InDesign-Server {#integrating-with-indesign-server}
 
-As part of the integration process, configure the **DAM Update Asset** workflow, which is suited for integration with InDesign. Konfigurieren Sie außerdem einen Proxy Worker für den InDesign-Server. For details, see [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md).
+Konfigurieren Sie im Rahmen des Integrationsprozesses den Arbeitsablauf **DAM Update Asset**, der für die Integration mit InDesign geeignet ist. Konfigurieren Sie außerdem einen Proxy Worker für den InDesign-Server. Weitere Informationen finden Sie unter [Integration von AEM Assets mit InDesign Server](/help/assets/indesign.md).
 
 >[!NOTE]
 >
 >Sie können aus InDesign-Dateien InDesign-Vorlagen erstellen, bevor Sie sie in AEM Assets importieren. Weitere Informationen finden Sie unter [Arbeiten mit Dateien und Vorlagen](https://helpx.adobe.com/indesign/using/files-templates.html).
 >
->Sie können die Elemente in Ihren InDesign-Vorlagen XML-Tags zuordnen. Die zugeordneten Tags werden als Eigenschaften angezeigt, wenn Sie im Catalog Producer den Vorlageneigenschaften Produkteigenschaften zuordnen. To learn about XML tagging in InDesign files, see [Tagging content for XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
+>Sie können die Elemente in Ihren InDesign-Vorlagen XML-Tags zuordnen. Die zugeordneten Tags werden als Eigenschaften angezeigt, wenn Sie im Catalog Producer den Vorlageneigenschaften Produkteigenschaften zuordnen. Weitere Informationen zum XML-Tagging in InDesign-Dateien finden Sie unter [Tagging von Inhalten für XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >
@@ -38,28 +41,28 @@ As part of the integration process, configure the **DAM Update Asset** workflow,
 
 Der Catalog Producer verwendet Daten der Produktdatenverwaltung (PIM), um Produkteigenschaften den in der Vorlage angezeigten XML-Eigenschaften zuzuordnen. Um einen Katalog zu erstellen, führen Sie die folgenden Schritte durch:
 
-1. From the Assets user interface, tap/click the **AEM logo**, and go to **Assets > Catalogs**.
-1. In the **Catalogs** page, tap/click **Create** from the toolbar, and then select **Catalog** from the list.
-1. In the **Create Catalog** page, enter a name and description (optional) for the catalog and specify tags, if any. Außerdem können Sie ein Miniaturbild für den Katalog hinzufügen.
+1. Tippen Sie in der Benutzeroberfläche &quot;Assets&quot;auf das **AEM Logo** und gehen Sie zu **Assets > Kataloge**.
+1. Tippen Sie auf der Seite **Kataloge** auf **Erstellen** in der Symbolleiste und wählen Sie dann **Katalog** aus der Liste.
+1. Geben Sie auf der Seite **Katalog erstellen** einen Namen und eine Beschreibung (optional) für den Katalog ein und geben Sie ggf. Tags an. Außerdem können Sie ein Miniaturbild für den Katalog hinzufügen.
 
    ![create_catalog](assets/create_catalog.png)
 
-1. Tippen oder klicken Sie auf **Speichern**. Ein Dialogfeld bestätigt, dass der Katalog erstellt wurde. Tap/click **Done** to close the dialog.
-1. To open the catalog you created, tap/click it from the **Catalogs** page.
+1. Tippen oder klicken Sie auf **Speichern**. Ein Dialogfeld bestätigt, dass der Katalog erstellt wurde. Tippen/klicken Sie auf **Fertig**, um das Dialogfeld zu schließen.
+1. Um den erstellten Katalog zu öffnen, tippen/klicken Sie auf der Seite **Kataloge** auf ihn.
 
    >[!NOTE]
    >
-   >To open the catalog, you can also tap/click **Open** in the confirmation dialog mentioned in the previous step.
+   >Um den Katalog zu öffnen, können Sie auch im Bestätigungsdialogfeld, das im vorherigen Schritt erwähnt wurde, auf **Öffnen** tippen/klicken.
 
-1. To add pages to the catalog, tap/click **Create** from the toolbar, and then choose the **New Page** option.
-1. Wählen Sie im Assistenten eine InDesign-Vorlage für Ihre Seite aus. Then, tap/click **Next**.
+1. Um dem Katalog Seiten hinzuzufügen, tippen/klicken Sie in der Symbolleiste auf **Erstellen** und wählen Sie dann die Option **Neue Seite**.
+1. Wählen Sie im Assistenten eine InDesign-Vorlage für Ihre Seite aus. Tippen Sie dann auf **Weiter**.
 1. Geben Sie einen Namen für die Seite sowie eine optionale Beschreibung an. Legen Sie ggf. Tags fest.
-1. Tap/click the **Create** from the toolbar. Then, tap/click **Open** from the dialog. Die Eigenschaften des Produkts werden im linken Fensterbereich angezeigt. Die vordefinierten Eigenschaften der InDesign-Vorlage werden im rechten Bereich angezeigt.
+1. Tippen/klicken Sie in der Symbolleiste auf **Erstellen**. Tippen/klicken Sie dann im Dialogfeld auf **Öffnen**. Die Eigenschaften des Produkts werden im linken Fensterbereich angezeigt. Die vordefinierten Eigenschaften der InDesign-Vorlage werden im rechten Bereich angezeigt.
 1. Ziehen Sie die Produkteigenschaften aus dem linken Bereich in die InDesign-Vorlageneigenschaften und erstellen Sie eine Zuordnung zwischen diesen Eigenschaften.
 
-   To view how the page appears in real time, tap/click the **Preview** tab on the right pane.
+   Um die Seitendarstellung in Echtzeit Ansicht, tippen/klicken Sie auf die Registerkarte **Vorschau** im rechten Bereich.
 
-1. Wenn Sie weitere Seiten erstellen möchten, wiederholen Sie die Schritte 6–9. To create similar pages for other products, select the page and tap/click the **Create similar pages** icon from the toolbar.
+1. Wenn Sie weitere Seiten erstellen möchten, wiederholen Sie die Schritte 6–9. Um ähnliche Seiten für andere Produkte zu erstellen, wählen Sie die Seite aus und tippen/klicken Sie in der Symbolleiste auf das Symbol **Ähnliche Seiten erstellen**.
 
    ![create_ähnlicher_pages](assets/create_similar_pages.png)
 
@@ -71,30 +74,31 @@ Der Catalog Producer verwendet Daten der Produktdatenverwaltung (PIM), um Produk
 
    ![select_product](assets/select_product.png)
 
-1. From the toolbar, click/tap **Create**. Tap/click **Done** to close the dialog. Ähnliche Seiten sind in Ihrem Katalog enthalten.
-1. To add any existing InDesign file to your catalog, tap/click **Create** from the toolbar, and choose the **Add to existing page** option.
-1. Select the InDesign file, and tap/click **Add** from the toolbar. Tippen oder klicken Sie dann auf **OK**, um das Dialogfeld zu schließen.
+1. Klicken Sie in der Symbolleiste auf/tippen Sie auf **Erstellen**. Tippen/klicken Sie auf **Fertig**, um das Dialogfeld zu schließen. Ähnliche Seiten sind in Ihrem Katalog enthalten.
+1. Um eine vorhandene InDesign-Datei zu Ihrem Katalog hinzuzufügen, tippen/klicken Sie in der Symbolleiste auf **Erstellen** und wählen Sie die Option **Hinzufügen zu vorhandener Seite**.
+1. Wählen Sie die InDesign-Datei aus und tippen/klicken Sie in der Symbolleiste auf **Hinzufügen**. Tippen oder klicken Sie dann auf **OK**, um das Dialogfeld zu schließen.
 
-   Wenn die Metadaten der Produkte, auf die Sie auf den Katalogseiten verweisen, geändert werden, werden die Änderungen nicht automatisch auf den Katalogseiten übernommen. A banner labeled **Stale** appears on the product images in the referencing catalog pages, indicating that the metadata for the referenced products is not up-to-date.
+   Wenn die Metadaten der Produkte, auf die Sie auf den Katalogseiten verweisen, geändert werden, werden die Änderungen nicht automatisch auf den Katalogseiten übernommen. Auf den Produktbildern auf den verweisenden Katalogseiten wird ein Banner mit der Bezeichnung **Stable** angezeigt, das darauf hinweist, dass die Metadaten für die referenzierten Produkte nicht auf dem neuesten Stand sind.
 
    ![chlimage_1-117](assets/chlimage_1-117a.png)
 
-   To ensure that the product images reflect the latest metadata changes, select the page in the Catalog console and click/tap the **Update page** icon from the toolbar.
+   Um sicherzustellen, dass die Produktbilder die neuesten Metadatenänderungen widerspiegeln, wählen Sie die Seite in der Katalogkonsole aus und klicken Sie auf das Symbol **Seite aktualisieren** in der Symbolleiste.
 
    ![chlimage_1-118](assets/chlimage_1-118a.png)
 
    >[!NOTE]
    >
-   >To change the metadata for a referenced product, navigate to the Products console (**AEM Logo** > **Commerce** > **Products**), and select the product. Then, click/tap the **View Properties** icon from the toolbar and edit the metadata in the Properties page of the asset.
+   >Um die Metadaten für ein referenziertes Produkt zu ändern, navigieren Sie zur Produktkonsole (**AEM Logo** > **Commerce** > **Produkte**) und wählen Sie das Produkt aus. Klicken Sie dann in der Symbolleiste auf das Symbol **Eigenschaften von Ansichten** und bearbeiten Sie die Metadaten auf der Seite &quot;Eigenschaften&quot;des Assets.
 
-1. To rearrange the pages in catalog, tap/click the **Create** icon from the toolbar and then choose **Merge** from the menu. Im Assistenten können Sie über das Karussell am oberen Bildschirmrand die Seiten durch Ziehen neu anordnen. Sie können Seiten auch entfernen.
+1. Um die Seiten im Katalog neu anzuordnen, tippen/klicken Sie in der Symbolleiste auf das Symbol **Erstellen** und wählen Sie dann **Zusammenführen** aus dem Menü. Im Assistenten können Sie über das Karussell am oberen Bildschirmrand die Seiten durch Ziehen neu anordnen. Sie können Seiten auch entfernen.
 
-1. Klicken oder tippen Sie auf **Weiter**. To add an existing InDesign file as a cover page, tap/click **Browse** beside the **Choose Cover Page** box, and specify the path for the cover page template.
-1. Tap/click **Save**, and then tap/click **Done** to close the confirmation dialog.
-Wenn Sie die Option &quot; **Fertig** &quot;auswählen, wird ein Dialogfeld geöffnet, in dem Sie auswählen können, ob die PDF-Darstellung angezeigt werden soll.
-   ![In PDF](assets/CatalogPDF.png)exportieren Wenn die Option &quot;Acrobat(PDF)&quot;ausgewählt ist, wird neben der Indexdarstellung eine PDF-Darstellung in **/jcr:content/renditions** erstellt. Sie können alle Darstellungen herunterladen, indem Sie im Downloaddialogfeld das Kontrollkästchen &quot;Darstellungen&quot;aktivieren.
+1. Klicken oder tippen Sie auf **Weiter**. Um eine vorhandene InDesign-Datei als Titelseite hinzuzufügen, tippen/klicken Sie auf **Durchsuchen** neben dem Feld **Titelseite auswählen** und geben Sie den Pfad für die Titelseitenvorlage an.
+1. Tippen/klicken Sie auf **Speichern** und dann auf **Fertig**, um das Bestätigungsdialogfeld zu schließen.
+Wenn Sie die Option **Fertig** auswählen, wird ein Dialogfeld geöffnet, in dem Sie auswählen können, ob die PDF-Darstellung angezeigt werden soll.
+   ![Exportieren in ](assets/CatalogPDF.png)
+pdfWenn die Option &quot;Acrobat(PDF)&quot;aktiviert ist, wird neben der Darstellung in &quot;indesign&quot;eine PDF-Darstellung in   **/jcr:content/** renditions erstellt. Sie können alle Darstellungen herunterladen, indem Sie im Downloaddialogfeld das Kontrollkästchen &quot;Darstellungen&quot;aktivieren.
 
-1. To generate a preview for the catalog you created, select it in the **Catalogs** console, and then click the **Preview** icon from the toolbar.
+1. Um eine Vorschau für den erstellten Katalog zu erstellen, wählen Sie ihn in der Konsole **Kataloge** aus und klicken Sie dann in der Symbolleiste auf das Symbol **Vorschau**.
 
    ![chlimage_1-119](assets/chlimage_1-119a.png)
 
