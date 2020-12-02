@@ -12,13 +12,16 @@ discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a156e09e77951041dce017f2f78069bc050b6bdb
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 88%
 
 ---
 
 
 # Prinzipalansicht für die Berechtigungsverwaltung{#principal-view-for-permissions-management}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM 6.5 führt die Berechtigungsverwaltung für Benutzer und Gruppen ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter.
 
@@ -50,7 +53,7 @@ Wenn Sie auf den Namen klicken, werden die zugewiesenen Berechtigungen auf der r
 
 ![](assets/trei-1.png)
 
-### Hinzufügen neuer Zugriffssteuerungseinträge für einen Prinzipal {#adding-new-access-control-entry-for-a-principal}
+### Hinzufügen neuer Zugriffssteuerungseinträge für einen Prinzipal  {#adding-new-access-control-entry-for-a-principal}
 
 Sie können neue Berechtigungen hinzufügen, indem Sie mit einem Klick auf die Schaltfläche „ACE hinzufügen“ einen neuen Zugriffssteuerungseintrag hinzufügen.
 
@@ -64,7 +67,7 @@ Hier wählen wir einen Pfad aus, in dem wir eine Berechtigung für **dam-users**
 
 ![](assets/sase-1.png)
 
-After the path is selected, the workflow goes back to this screen, where the user can then select one or more of the privileges from the available namespaces (like `jcr`, `rep` or `crx`) as shown i below.
+Nach Auswahl des Pfades kehrt der Workflow zu diesem Bildschirm zurück, wo der Benutzer eine oder mehrere der verfügbaren Namensraum auswählen kann (z. B. `jcr`, `rep` oder `crx`), wie unten dargestellt.
 
 Berechtigungen können hinzugefügt werden, indem Sie mit dem Textfeld suchen und dann aus der Liste auswählen.
 
@@ -78,7 +81,7 @@ Nachdem die Liste der Berechtigungen ausgewählt wurde, kann der Benutzer den Be
 
 ![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
 
-### Verwendung von Einschränkungen {#using-restrictions}
+### Verwendung von Einschränkungen  {#using-restrictions}
 
 Zusätzlich zur Liste der Berechtigungen und dem Berechtigungstyp für einen bestimmten Pfad können auf diesem Bildschirm auch Einschränkungen für fein abgestufte Zugriffssteuerungsmöglichkeiten hinzugefügt werden:
 
@@ -90,7 +93,7 @@ Zusätzlich zur Liste der Berechtigungen und dem Berechtigungstyp für einen bes
 
 Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie den Einschränkungstyp auswählen, den Wert eingeben und auf das **Pluszeichen** klicken. ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-Der neue ACE wird wie unten dargestellt in der Zugriffsteuerungsliste angezeigt. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as its covered under `jcr:write`.
+Der neue ACE wird wie unten dargestellt in der Zugriffsteuerungsliste angezeigt. Beachten Sie, dass `jcr:write` eine Aggregat-Berechtigung ist, die `jcr:removeNode` enthält, die oben hinzugefügt wurde, aber unten nicht als deren abgedeckt unter `jcr:write` angezeigt wird.
 
 ### Bearbeiten von ACEs {#editing-aces}
 
@@ -108,7 +111,7 @@ Hier fügen wir die Berechtigung `addChildNodes` für **dam-users** im angegeben
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Changes can be saved by clicking the **Save** button on top right, and the changes will reflect in the new permissions for **dam-users **as shown below:
+Änderungen können gespeichert werden, indem Sie oben rechts auf die Schaltfläche **Speichern** klicken. Die Änderungen werden in den neuen Berechtigungen für **dam-Benutzer **wie unten dargestellt übernommen:
 
 ![](assets/zece-1.png)
 
@@ -118,7 +121,7 @@ Zugriffssteuerungseinträge können gelöscht werden, um alle Berechtigungen fü
 
 ![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
 
-### Berechtigungskombinationen der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
+### Berechtigungskombinationen der klassischen Benutzeroberfläche  {#classic-ui-privilege-combinations}
 
 Beachten Sie, dass die neue Benutzeroberfläche für Berechtigungen explizit den grundlegenden Satz von Berechtigungen anstelle vordefinierter Kombinationen verwendet, die nicht immer exakt die gewährten Berechtigungen wiedergegeben haben.
 
