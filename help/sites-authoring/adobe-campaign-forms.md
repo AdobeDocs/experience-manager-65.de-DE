@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 translation-type: tm+mt
 source-git-commit: 2451f4994a18b1566ea0efddbefcaa5bb8e41c99
+workflow-type: tm+mt
+source-wordcount: '1306'
+ht-degree: 75%
 
 ---
 
@@ -43,7 +46,7 @@ Das Formular aktualisiert sich, basierend auf dem Benutzer, selbstständig. Weit
 
 Bevor Sie für Adobe Campaign spezifische Formulare erstellen können, müssen Sie verschiedene Vorlagen in Ihrer AEM-Anwendung verfügbar machen.
 
-To do this, see the [Templates documentation](/help/sites-developing/templates.md#template-availability).
+Weitere Informationen hierzu finden Sie in der Dokumentation zu [Vorlagen](/help/sites-developing/templates.md#template-availability).
 
 ## Erstellen von Formularen {#creating-a-form}
 
@@ -55,13 +58,13 @@ Zunächst müssen Sie prüfen, ob die Verbindung zwischen Autoren- und Veröffen
 
 
 1. Navigieren Sie in AEM unter „Sites“ an den Ort, an dem Sie eine neue Seite erstellen möchten.
-1. Create a page and select **Adobe Campaign Classic Profile** or **Adobe Campaign Standard Profile** and click **Next**.
+1. Erstellen Sie eine Seite, wählen Sie **Adobe Campaign Classic Profil** oder **Adobe Campaign Standard Profil** und klicken Sie auf **Weiter**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
 
    >[!NOTE]
    >
-   >If the desired template is not available, see [Template Availability](/help/sites-developing/templates.md#template-availability).
+   >Wenn die gewünschte Vorlage nicht verfügbar ist, finden Sie weitere Informationen unter [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability).
 
 1. Fügen Sie im Feld **Name** den Namen der Seite ein. Sie müssen einen gültigen JCR-Namen verwenden.
 1. Geben Sie in das Feld **Titel** einen Titel ein und klicken Sie auf **Erstellen**.
@@ -77,33 +80,33 @@ Für Adobe Campaign erstellte Formulare verfügen über bestimmte Komponenten. 
 
 >[!NOTE]
 >
->If the desired template is not available, see [Making a template available](/help/sites-authoring/adobe-campaign.md).
+>Wenn die gewünschte Vorlage nicht verfügbar ist, finden Sie weitere Informationen unter [Verfügbarmachen einer Vorlage](/help/sites-authoring/adobe-campaign.md).
 
-In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen behandelt. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-authoring/default-components-foundation.md).
+In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen behandelt. Weitere Informationen zur Verwendung von Formularen in Adobe Experience Manager finden Sie unter [Editmode components](/help/sites-authoring/default-components-foundation.md).
 
 1. Wählen Sie **Eigenschaften öffnen** aus. Fügen Sie den Cloud-Services die Adobe Campaign-Konfiguration hinzu und klicken Sie auf das Häkchen, um die Änderungen zu übernehmen.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
-1. On the page, in the **Form Start** component, click the Configuration icon.
+1. Klicken Sie auf der Seite in der Komponente **Form Beginn** auf das Konfigurationssymbol.
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. Click the **Advanced** tab and select the type of form it is - **Subscribe, Unsubscribe,** or **Save Profile** and click **OK.** Pro Formular kann nur ein Typ gewählt werden.
+1. Klicken Sie auf die Registerkarte **Erweitert** und wählen Sie den Formulartyp aus: **Abonnieren, Abmelden,** oder **Profil speichern** und klicken Sie auf **OK.** Pro Formular kann nur ein Typ gewählt werden.
 
    * **Adobe Campaign: Profil speichern**: Mit dieser Option können Sie Empfänger in Adobe Campaign erstellen oder aktualisieren (Standardeinstellung).
    * **Adobe Campaign: Services abonnieren**: Mit dieser Option können Sie Abonnements eines Empfängers in Adobe Campaign verwalten.
    * **Adobe Campaign: Abonnement von Services beenden**: Mit dieser Einstellung können Sie die Abonnements eines Empfängers in Adobe Campaign beenden.
 
 1. Jedes Formular muss über die Komponente **Verschlüsselter Primärschlüssel** verfügen. Mit dieser Komponente wird festgelegt, welcher URL-Parameter für die Annahme des verschlüsselten Primärschlüssels eines Adobe Campaign-Profils verwendet wird. Wählen Sie aus den Komponenten Adobe Campaign aus, sodass nur die entsprechenden Komponenten angezeigt werden.
-1. Drag the component **Encrypted Primary Key** to the form (anywhere) and click or tap the **Configuration** icon. Geben Sie auf der Registerkarte **Adobe Campaign** einen Namen für den URL-Parameter an. Klicken oder tippen Sie auf das Häkchen, um die Änderungen zu übernehmen.
+1. Ziehen Sie die Komponente **Verschlüsselter Primär-Schlüssel** in das Formular (an einer beliebigen Stelle) und klicken oder tippen Sie auf das Symbol **Konfiguration**. Geben Sie auf der Registerkarte **Adobe Campaign** einen Namen für den URL-Parameter an. Klicken oder tippen Sie auf das Häkchen, um die Änderungen zu übernehmen.
 
    Die generierten Links, die auf dieses Formular verweisen, müssen diesen URL-Parameter verwenden und ihn dem verschlüsselten Primärschlüssel eines Adobe Campaign-Profils zuweisen. Der verschlüsselte Primärschlüssel muss ordnungsgemäß für die URL codiert sein (Prozent).
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
 1. Fügen Sie dem Formular die gewünschten Komponenten hinzu (beispielsweise Text-, Daten-, Kontrollkästchen-, Optionsfeld usw.) hinzu. Weitere Informationen zu den Komponenten finden Sie unter [Adobe Campaign-Formular-Komponenten](/help/sites-authoring/adobe-campaign-components.md).
-1. Klicken Sie auf das Symbol für die Konfiguration, um die Komponente zu öffnen. For example, in **Text Field (Campaign)** component, change the title and text.
+1. Klicken Sie auf das Symbol für die Konfiguration, um die Komponente zu öffnen. Ändern Sie beispielsweise in der Komponente **Textfeld (Kampagne)** den Titel und den Text.
 
    Klicken Sie auf **Adobe Campaign**, um das Formularfeld mit einer Adobe Campaign-Metadatenvariable zu verknüpfen. Beim Senden des Formulars wird das Feld in Adobe Campaign aktualisiert. Es stehen in der Auswahl nur Felder mit entsprechenden Datentypen zur Verfügung (beispielsweise Zeichenfolgenvariablen für Textfelder).
 
@@ -111,7 +114,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
 
    >[!NOTE]
    >
-   >You can add/remove fields that are displayed in the recipient table by following the instructions here: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
+   >Sie können in der Tabelle &quot;Empfänger&quot;angezeigte Felder wie folgt hinzufügen/entfernen: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
 1. Klicken Sie auf **Seite veröffentlichen**. Die Seite wird auf Ihrer Site aktiviert. Sie können sie anzeigen, indem Sie zur AEM-Veröffentlichungsinstanz navigieren. Sie können zudem [Formulare testen](#testing-a-form).
 
@@ -125,20 +128,20 @@ Nach der Erstellung und Bearbeitung eines Formulars möchten Sie dieses möglich
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. Wählen Sie aus den Komponenten Adobe Campaign aus, sodass nur die entsprechenden Komponenten angezeigt werden.
+>Für jedes Formular muss eine Komponente **Enkryted Primär Key** vorhanden sein. Wählen Sie aus den Komponenten Adobe Campaign aus, sodass nur die entsprechenden Komponenten angezeigt werden.
 >
 >Obwohl Sie bei diesem Verfahren die EPK-Nummer manuell eingeben, würden Benutzer in der Praxis im Newsletter einen Link zur Seite erhalten (auf der sie Abonnements abschließen oder beenden und ihr Profil aktualisieren können). Der EPK wird – basierend auf dem Benutzer – automatisch aktualisiert.
 >
->To create that link, you use the variable **Main resource identifier**(Adobe Campaign Standard) or **Encrypted identifier** (Adobe Campaign Classic) (for example, in a **Text &amp; Personalization (Campaign)** component), which links to the epk in Adobe Campaign.
+>Um diesen Link zu erstellen, verwenden Sie die Variable **Hauptkennung der Ressource**(Adobe Campaign Standard) oder **Verschlüsselte Kennung** (Adobe Campaign Classic) (z. B. in einer Komponente **Text und Personalisierung (Kampagne)**), die mit dem epk in Adobe Campaign verknüpft ist.
 
 Hierfür müssen Sie den EPK eines Adobe Campaign-Profils manuell abrufen und an die URL anhängen:
 
 1. So rufen Sie den verschlüsselten Primärschlüssel (EPK) eines Adobe Campaign-Profils ab:
 
-   * In Adobe Campaign Standard - Navigate to **Profiles and Audiences** > **Profiles**, which lists the existing profiles. Make sure the table displays the **Main Resource Identifier** field in a column (This can be configured by clicking/tapping **Configure list**). Kopieren Sie die Hauptressourcenkennung des gewünschten Profils.
-   * In Adobe Campaign Classic, go to **Profiles and Targets** >  **Recipients**, which lists the existing profiles. Make sure the table displays the **Encrypted identifier** field in a column (This can be configured by right-clicking on an entry and selecting **Configure list...**). Kopieren Sie die verschlüsselte Kennung des gewünschten Profils.
+   * In Adobe Campaign Standard - Navigieren Sie zu **Profile und Audiencen** > **Profil**, mit denen die vorhandenen Profil Liste werden. Vergewissern Sie sich, dass in der Tabelle das Feld **Hauptressourcen-ID** in einer Spalte angezeigt wird (dies kann durch Klicken/Tippen auf **Liste konfigurieren** konfiguriert werden). Kopieren Sie die Hauptressourcenkennung des gewünschten Profils.
+   * Wechseln Sie in Adobe Campaign Classic zu **Profile und Zielgruppen** > **Empfänger**, mit denen die vorhandenen Profil Liste werden. Vergewissern Sie sich, dass in der Tabelle das Feld **Verschlüsselte Kennung** in einer Spalte angezeigt wird (Dies kann konfiguriert werden, indem Sie mit der rechten Maustaste auf einen Eintrag klicken und **Liste konfigurieren... auswählen.**). Kopieren Sie die verschlüsselte Kennung des gewünschten Profils.
 
-1. In AEM, open the form page on the publish instance and append the EPK from step 1 as a URL parameter: use the same name that you previously defined in the EPK component when authoring the form (for example: `?epk=...`)
+1. Öffnen Sie AEM die Formularseite in der Veröffentlichungsinstanz und hängen Sie das EPK aus Schritt 1 als URL-Parameter an: beim Authoring des Formulars denselben Namen verwenden, den Sie zuvor in der EPK-Komponente definiert haben (z. B.: `?epk=...`)
 1. Das Formular kann jetzt verwendet werden, um die Daten und Abonnements zu ändern, die dem verknüpften Adobe Campaign-Profil zugeordnet sind. Nach der Bearbeitung einiger Felder und dem Absenden des Formulars können Sie in Adobe Campaign prüfen, ob die Daten entsprechend aktualisiert wurden. 
 
 Die Daten der Adobe Campaign-Datenbank werden nach Validierung eines Formulars aktualisiert.
