@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
 source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+workflow-type: tm+mt
+source-wordcount: '3783'
+ht-degree: 88%
 
 ---
 
@@ -25,30 +28,30 @@ Auf dieser Seite finden Sie weitere Details, um die Dokumente und Prinzipien von
 >
 >Die Listen in diesem Unterabschnitt sind nicht erschöpfend, sondern als Einführung gedacht.
 
-### Funktionen innerhalb von AEM {#features-within-aem}
+### Funktionen innerhalb von AEM  {#features-within-aem}
 
-When implementing AEM (particularly for the first time) you will need to review the [capabilites and workflows of AEM](https://www.adobe.com/marketing/experience-manager.html) to be sure of which areas you want/need.
+Bei der Implementierung von AEM (vor allem zum ersten Mal) müssen Sie die [Funktionen und Workflows von AEM](https://www.adobe.com/de/marketing/experience-manager.html) überprüfen, um sicherzustellen, welche Bereiche Sie möchten/benötigen.
 
 Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkungen auf Ihr Design, zum Beispiel:
 
 * [Commerce](/help/sites-administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/home.md)
+* [Formulare](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
 Überprüfen Sie außerdem die [Versionshinweise](/help/release-notes/release-notes.md) für die verschiedenen Versionen von AEM, um zu sehen, wann neue Funktionen hinzugefügt wurden.
 
-### Integrationen {#integrations}
+### Integrationen  {#integrations}
 
 AEM kann mit anderen Adobe-Produkten und/oder Dienstleistungen von Drittanbietern integriert werden. Diese können die Ihnen zur Verfügung stehende Leistung und Funktionalität steigern.
 
 Siehe [Lösungsintegration](/help/sites-administering/integration.md) für ausführliche Informationen.
 
-## Migration oder Upgrade? {#migrate-or-upgrade}
+## Migration oder Upgrade?  {#migrate-or-upgrade}
 
 Es ist wichtig, dass Sie sich klar machen welche der beiden Alternativen Sie nutzen möchten:
 
@@ -60,13 +63,13 @@ Beim Wechsel von einer Vorgängerversion zur aktuellen Version gibt es zwei Mög
 * Verwenden Sie den [Package Manager](/help/sites-administering/package-manager.md), um alle Inhalte und Anwendungscodes aus dem alten System in das neue System zu exportieren.
 * [Upgrade](/help/sites-deploying/upgrade.md) des aktuellen Systems. Dies ist in den meisten Fällen die empfohlene Wahl.
 
-## Grundregeln {#basic-ground-rules}
+## Grundregeln  {#basic-ground-rules}
 
 Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzulegen. Dazu gehören:
 
 >[!NOTE]
 >
->These points are generic, the [Best Practices Checklist](/help/managing/best-practices.md) deals with specifics in relation to AEM.
+>Diese Punkte sind generisch, die Checkliste [Best Practices](/help/managing/best-practices.md) beschäftigt sich mit spezifischen AEM.
 
 * **Rollen**
 
@@ -104,7 +107,7 @@ Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzu
 
    * Dabei ist es wichtig, nur eine Kopie der Informationen aufzubewahren und die Informationen (und damit den Zugriff auf das verwendete Tool) zu teilen. Dies erleichtert die Wartung und hilft, Unstimmigkeiten zu vermeiden.
 
-* **Anwendungsbereich**
+* **Umfang**
 
    Definieren Sie klar, was das Projekt auf verschiedenen Ebenen abdecken soll:
 
@@ -131,7 +134,7 @@ Diese Informationen können in einem Projekthandbuch definiert werden; die Verwe
 * Die Informationen werden klar und deutlich an alle Beteiligten kommuniziert. Obwohl Standard-Projektmanagement-Praxis, kann es nicht oft genug wiederholt werden, dass eine klare Rollendefinition und gute Kommunikation entscheidend für den Erfolg eines Projekts sind.
 * Von allen Informationen, die verfolgt werden, wird nur eine Version gespeichert, z. B. Bug-Verfolgung, Problem-Tracking usw.
 
-## Leistungsindikatoren und Zielmetriken {#key-performance-indicators-and-target-metrics}
+## Leistungsindikatoren und Zielmetriken  {#key-performance-indicators-and-target-metrics}
 
 Unternehmen verwenden Key Performance Indicators (KPIs), um ihren Erfolg bei der Erreichung von Zielen zu bewerten. Diese Indikatoren sind messbare Werte, die zeigen, wie effektiv bestimmte Ziele erreicht werden.
 
@@ -186,14 +189,14 @@ Bei richtiger Anwendung können diese Metriken ein nützliches Werkzeug sein; be
 >
 >In diesem Abschnitt werden die Grundprinzipien und Fragen behandelt, die zu berücksichtigen sind. Jede Installation ist anders beschaffen, sodass sich die tatsächlich zu messenden Werte unterscheiden
 
-### Alles dies beruht auf Ihrem Projektdesign {#everything-rests-on-your-project-design}
+### Alles dies beruht auf Ihrem Projektdesign  {#everything-rests-on-your-project-design}
 
 Alle zu messenden Metriken werden auf irgendeine Weise durch den Entwurf des Projekts beeinflusst. Umgekehrt lassen sich viele Probleme am besten durch Entwurfsänderungen lösen.
 
 Deshalb sollten Sie Ihre Zielmetriken definieren, *bevor*Sie sich für Ihr Design entscheiden. 
 So können Sie Ihr Design auf Basis dieser Faktoren optimieren. So können Sie Ihr Design auf Basis dieser Faktoren optimieren. Sobald Ihr Projekt entwickelt ist, wird es schwierig, Änderungen an den grundlegenden Entwurfsprinzipien vorzunehmen.
 
-Wenn Sie die Struktur für die Website erstellen, folgen Sie der empfohlenen Struktur für AEM-Websites. Stellen Sie sicher, dass Sie die folgenden Punkte und/oder Prinzipien verstehen:
+Wenn Sie die Struktur für die Website erstellen, folgen Sie der empfohlenen Struktur für AEM Sites. Stellen Sie sicher, dass Sie die folgenden Punkte und/oder Prinzipien verstehen:
 
 * Wie der Inhalt der Website strukturiert ist.
 * Wie Vorlagen und Komponenten funktionieren.
@@ -204,7 +207,7 @@ Wenn Sie die Struktur für die Website erstellen, folgen Sie der empfohlenen Str
 
 Wenn Sie der Meinung sind, dass Ihr Design nicht den Richtlinien entspricht, oder wenn Sie sich über einige der Auswirkungen unsicher sind, klären Sie diese Fragen, bevor Sie entweder mit der Programmierphase beginnen oder den Inhalt ausfüllen.
 
-### Infrastruktur {#infrastructure}
+### Infrastruktur  {#infrastructure}
 
 Um die Infrastruktur zu definieren oder zu bewerten, hilft es, Zielwerte zu definieren, wie z. B.:
 
@@ -229,7 +232,7 @@ Es gibt mehrere Leistungsfaktoren, die ausgewertet werden können:
 
 * Antwortzeiten für Suchanfragen
 
-This section can be read in conjunction with [Performance Optimization](/help/sites-deploying/configuring-performance.md) that expands the technical details of actually measuring the performance.
+Dieser Abschnitt kann in Verbindung mit [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) gelesen werden, die die technischen Details der tatsächlichen Leistungsmessung erweitert.
 
 #### Antwortzeiten für einzelne Seiten {#response-times-for-individual-pages}
 
@@ -258,7 +261,7 @@ Die Antwortzeiten, die Sie anstreben, sind je nach Autoren- und Veröffentlichun
       * Der Inhalt wird zwischengespeichert
       * Lastausgleich wird angewendet
 
-#### Zielvorgabe für Antwortzeiten festlegen {#setting-target-response-times}
+#### Zielvorgabe für Antwortzeiten festlegen  {#setting-target-response-times}
 
 Wie können Sie die erreichbaren (durchschnittlichen) Antwortzeiten bestimmen? Dies ist häufig eine Frage der Erfahrung:
 
@@ -324,7 +327,7 @@ Diese sollten von Anfang des Projekts an geplant und integriert werden. Für die
 
    Um die von Ihnen gesammelten Informationen über Suchanfragen und deren Leistung anzupassen, wird empfohlen, die Informationssammlung in Ihren Projekt-Quellcode aufzunehmen; siehe [Performanceoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
-### Gleichzeitigkeit {#concurrency}
+### Gleichzeitigkeit  {#concurrency}
 
 Ihre Website wird einer Reihe von Benutzern/Besuchern zur Verfügung gestellt, sowohl in der Autoren- als auch in der Veröffentlichungsumgebung. Die Zahlen sind oft höher als beim Testen, aber auch schwankend und schwer vorhersehbar. Die Website muss für eine durchschnittliche Anzahl von gleichzeitigen Benutzern/Besuchern konzipiert sein, ohne dass dabei eine negative Auswirkung auf die Performance auftritt. Auch hier kann `request.log` verwendet werden, um Parallelitätstests durchzuführen; siehe [Performanceoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
@@ -339,7 +342,7 @@ Ziele für die Anzahl der gleichzeitigen Benutzer sind abhängig von der Art der
    * Dies ist schwieriger vorherzusagen, es sollte daher ein Zielwert ausgewählt werden. Auch dies sollte auf der Erfahrung Ihrer aktuellen Website zusammen mit realistischen Erwartungen an Ihre neue Website basieren.
    * Spezielle Veranstaltungen (z. B. wenn Sie neue, sehr beliebte Inhalte veröffentlichen) können die Erwartungen übertreffen - oder sogar die Möglichkeiten (wie manchmal in der Presse berichtet wird, wenn Tickets für bestimmte Veranstaltungen zum Verkauf angeboten werden).
 
-### Kapazität und Volumen {#capacity-and-volume}
+### Kapazität und Volumen  {#capacity-and-volume}
 
 Bevor wir die entsprechenden Metriken besprechen, eine schnelle Definition der Begriffe:
 
@@ -376,7 +379,7 @@ Es ist jedoch besser, einen kleinen Satz von genauen, zentralen Metriken zu habe
 
 Sicherheit ist entscheidend und eine immer größere Herausforderung. Sie ***muss*** von Anfang an berücksichtigt und geplant werden.
 
-Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) beschreibt die Schritte, die Sie unternehmen sollten, um sicherzustellen, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Other security aspects are covered under [Security (when developing)](/help/sites-developing/security.md) and [User Administration and Security](/help/sites-administering/security.md).
+Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) beschreibt die Schritte, die Sie unternehmen sollten, um sicherzustellen, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Andere Sicherheitsaspekte werden unter [Sicherheit (bei der Entwicklung)](/help/sites-developing/security.md) und [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) behandelt.
 
 ## Parallele und iterative Aufgaben {#parallel-and-iterative-tasks}
 
@@ -384,9 +387,10 @@ Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) be
 >
 >Das Folgende:
 >
->* Offers an overview related to the *first* implemention of an AEM project.
+>* Angebots an overview related to the *first* implementation of an AEM project.
 >* Ist als abstrakte Übersicht gedacht; siehe [Projekt-Checkliste](/help/managing/best-practices.md) für bestimmte Phasen/Milestones/Aufgaben.
 >* Jede Zeitskala ist theoretisch.
+
 >
 
 
@@ -469,7 +473,7 @@ Einige Punkte, die für jede Kategorie zu beachten sind:
    * Planen Sie „In-Sprint-Migration“ nach der Überarbeitung.
    * Planen Sie „Inhalts-Burndown“ (Sitemap für Go-Live-Inhalte).
 
-## Schätzung von Zeit und Aufwand {#estimating-time-and-effort}
+## Schätzung von Zeit und Aufwand  {#estimating-time-and-effort}
 
 Abhängig von Ihrer resultierenden Aufgabenliste können Sie dann erste Schätzungen des Aufwands für (hochrangige) Aufgabendefinitionen vornehmen. Diese sollten einen Hinweis enthalten, wer (Kunde oder Partner) was und wann tun wird.
 
@@ -499,19 +503,19 @@ Die folgenden Site-Metriken sollten definiert werden:
 
 | Klassifizierung | Definition |
 |---|---|
-| Anzahl der Websites |  |
+| Anzahl der Internetseiten |  |
 | Anzahl der Intranet-Sites |  |
 | Anzahl der Codegrundlagen (z. B. wenn Internet und Intranet unterschiedlich sind) |  |
 | Anzahl der einzelnen Seiten |  |
 | Anzahl der Site-Besuche/Tage |  |
-| Anzahl der Seitenansichten/Tag |  |
+| Anzahl der Ansichten pro Tag |  |
 | Menge (in GB) der Datenübertragung/Tag |  |
 | Anzahl gleichzeitiger Benutzer (geschlossene Benutzergruppe) |  |
 | Anzahl gleichzeitiger Besucher (Veröffentlichen) |  |
 | Anzahl gleichzeitiger Autoren |  |
 | Anzahl der registrierten Autoren |  |
-| Anzahl der Seitenaktivierungen / Arbeitstag |  |
-| Anzahl der Seitenaktivierungen während der Bereitstellung |  |
+| Anzahl der Aktivierungen/Arbeitstage |  |
+| Anzahl der Aktivierungen während der Bereitstellung |  |
 
 ## Übersicht der möglichen Werkzeuge {#overview-of-potential-tools}
 
@@ -525,7 +529,7 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM selbst bietet eine Reihe von Mechanismen, mit denen Sie Ihre Anwendung überwachen, testen, untersuchen und debuggen können. einschließlich:</p>
+   <td><p>AEM bietet eine Reihe von Mechanismen, mit denen Sie Ihre Anwendung überwachen, testen, untersuchen und debuggen können. einschließlich:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Entwicklermodus</a></li>
      <li>Die <a href="/help/sites-developing/hobbes.md">Testkonsole</a></li>
@@ -540,7 +544,7 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/">Selen</a> ist ein Open-Source-Testwerkzeug. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
+   <td><a href="https://docs.seleniumhq.org/"></a> Seleniumist ein Open Source Testwerkzeug. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
   </tr>
   <tr>
    <td>Microsoft Project</td>
@@ -548,23 +552,23 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira">Jira</a> ist ein Open Source Tool zur Verfolgung und Verwaltung von Details Ihrer Software-Fehler. Arbeitsabläufe können bei Bedarf auf die Fehlerdetails angewendet werden.</td>
+   <td><a href="https://www.atlassian.com/software/jira"></a> Jirais ist ein Open-Source-Tool zur Verfolgung und Verwaltung von Details Ihrer Software-Fehler. Arbeitsabläufe können bei Bedarf auf die Fehlerdetails angewendet werden.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/">Git</a> ist eine Software zur Versionskontrolle.</td>
+   <td><a href="https://git-scm.com/"></a> Gitis ist eine Software zur Revisionskontrolle.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">Entwickeln von AEM-Projekten mit Eclipse</a> .</p> </td>
+   <td><p>Eclipse ist eine Open Source IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">AEM mithilfe von Eclipse</a> entwickeln.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Eine professionelle (und damit lizenzpflichtige) IDE mit einer umfassenden Palette von Features. </p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/ht-intellij.md">Entwickeln von AEM-Projekten mit IntelliJ IDEA</a> .</p> </td>
+   <td><p>Eine professionelle (und damit lizenzpflichtige) IDE mit einer umfassenden Palette von Features. </p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/ht-intellij.md">Wie Sie AEM Projekte mit IntelliJ IDEA</a> entwickeln.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/">Maven</a> ist ein Software-Projektmanagement- und -verständniswerkzeug, das den Aufbau eines Projektes (Software und Dokumentation) verwalten kann.</td>
+   <td><a href="https://maven.apache.org/"></a> Mavenis ist ein Software-Projektmanagement- und -verständniswerkzeug, das den Aufbau eines Projektes (Software und Dokumentation) verwalten kann.</td>
   </tr>
  </tbody>
 </table>
@@ -582,7 +586,7 @@ Darüber hinaus sind die folgenden Abschnitte von besonderem Interesse:
 Adobe bietet weitere Best Practices für alle Phasen und Zielgruppen:
 
 * [Bereitstellung](/help/sites-deploying/best-practices.md)
-* [Bearbeitung](/help/sites-authoring/best-practices.md)
+* [Authoring – ](/help/sites-authoring/best-practices.md)
 * [Verwalten](/help/sites-administering/administer-best-practices.md)
 * [Entwickeln](/help/sites-developing/best-practices.md)
 * [Projektmanagement](/help/managing/best-practices.md)
