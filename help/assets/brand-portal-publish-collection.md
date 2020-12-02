@@ -12,46 +12,49 @@ discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 69%
 
 ---
 
 
 # Veröffentlichen von Sammlungen in Brand Portal {#publish-collections-to-brand-portal}
 
-Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Sammlungen in der AEM Assets Brand Portal-Instanz veröffentlichen. Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. For details, see [Configure AEM Assets with Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Sammlungen in der AEM Assets Brand Portal-Instanz veröffentlichen. Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. Weitere Informationen finden Sie unter [Konfigurieren der von AEM Assets mit Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
-Wenn Sie nachfolgende Änderungen an der ursprünglichen Sammlung in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie die Sammlung erneut veröffentlichen. Mit dieser Eigenschaft wird sichergestellt, dass in der Arbeit befindliche Änderungen nicht im Markenportal verfügbar sind. Nur genehmigte Änderungen, die von einem Administrator veröffentlicht werden, sind im Markenportal verfügbar.
+Wenn Sie nachfolgende Änderungen an der ursprünglichen Sammlung in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie die Sammlung erneut veröffentlichen. Mit dieser Eigenschaft wird sichergestellt, dass in der Arbeit befindliche Änderungen nicht im Markenportal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
 >[!NOTE]
 >
->Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Therefore, if you select content fragment(s) on AEM Author, then **Publish to Brand Portal** action is not available.
+>Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie also Inhaltsfragmente in AEM Author auswählen, ist die Aktion **In Markenportal veröffentlichen** nicht verfügbar.
 >
 >Wenn Sammlungen, die Inhaltsfragmente enthalten, über die AEM-Autoreninstanz in Brand Portal veröffentlicht werden, wird der gesamte Inhalt des Ordners mit Ausnahme der Inhaltsfragmente auf der Brand Portal-Oberfläche repliziert.
 
 ## Veröffentlichen einer Sammlung in Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. Klicken Sie in der AEM Assets-Benutzeroberfläche auf AEM-Logo.
-1. From **Navigation** page, go to **Assets > Collections**.
+1. Klicken Sie in der Benutzeroberfläche von AEM Assets auf das AEM-Logo.
+1. Gehen Sie von der Seite **Navigation** aus zu **Assets > Sammlungen**.
 1. Wählen Sie in der Konsole &quot;Sammlungen&quot;die Sammlung aus, die Sie im Markenportal veröffentlichen möchten.
 
-   ![select_collection](assets/select_collection.png)
+   ![Sammlung auswählen](assets/select_collection.png)
 
-1. From the toolbar, click **Publish to Brand Portal**.
-1. In the confirmation dialog, click **Publish**.
+1. Klicken Sie in der Symbolleiste auf **In Brand Portal veröffentlichen**.
+1. Klicken Sie im Bestätigungsdialogfeld auf **Veröffentlichen**.
 1. Schließen Sie die Bestätigungsmeldung.
 1. Melden Sie sich bei Brand Portal als Administrator an. Die veröffentlichte Sammlung steht in der Konsole „Sammlungen“ zur Verfügung.
 
-   ![veröffentlichte Sammlung](assets/published_collection.png)
+   ![Veröffentlichte Sammlung](assets/published_collection.png)
 
 ## Veröffentlichung von Sammlungen rückgängig machen {#unpublish-collections}
 
-Sie können die Veröffentlichung von Sammlungen, die Sie aus AEM Assets im Markenportal veröffentlichen, rückgängig machen. Nachdem Sie die Veröffentlichung der ursprünglichen Sammlung rückgängig gemacht haben, steht die Kopie nicht mehr für Markenportal-Benutzer zur Verfügung.
+Sie können die Veröffentlichung von Sammlungen rückgängig machen, die Sie von AEM Assets im Markenportal veröffentlichen. Nachdem Sie die Veröffentlichung der ursprünglichen Sammlung rückgängig gemacht haben, steht die Kopie nicht mehr für Markenportal-Benutzer zur Verfügung.
 
 1. Wählen Sie über die Konsole „Sammlungen“ der AEM Assets-Instanz die Sammlung aus, deren Veröffentlichung rückgängig gemacht werden soll.
 
    ![select_collection-1](assets/select_collection-1.png)
 
-1. From the toolbar, click **Remove from Brand Portal** icon.
-1. In the dialog, click **Unpublish**.
-1. Schließen Sie die Bestätigungsmeldung. Die Sammlung wird aus der Benutzeroberfläche des Markenportals entfernt.
+1. Klicken Sie in der Symbolleiste auf das Symbol **Aus Brand Portal löschen**.
+1. Klicken Sie im Dialogfeld auf **Veröffentlichung rückgängig machen**.
+1. Schließen Sie die Bestätigungsmeldung. Die Sammlung wird aus der Brand Portal-Oberfläche entfernt.
 
