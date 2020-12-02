@@ -1,8 +1,8 @@
 ---
 title: Überlagerungen
 seo-title: Überlagerungen
-description: AEM nutzt Überlagerungen, um die Konsolen und andere Funktionen zu erweitern und anzupassen.
-seo-description: AEM nutzt Überlagerungen, um die Konsolen und andere Funktionen zu erweitern und anzupassen.
+description: AEM nutzt das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen zu erweitern und anzupassen.
+seo-description: AEM nutzt das Prinzip von Überlagerungen, um Ihnen zu ermöglichen, die Konsolen und andere Funktionen zu erweitern und anzupassen.
 uuid: d14c08fe-04c0-4925-8c99-c6644357919d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 67%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 AEM (und zuvor CQ) nutzt seit Langem Überlagerungen, um die [Konsolen](/help/sites-developing/customizing-consoles-touch.md) und andere Funktionen (beispielsweise die [Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md)) zu erweitern und anzupassen.
 
-Überlagerung ist ein Begriff, der in unterschiedlichen Zusammenhängen verwendet werden kann. In diesem Zusammenhang (der Erweiterung von AEM) ist damit die Übernahme der vordefinierten Funktionen und das Anwenden eigener Definitionen (zum Anpassen der Standardfunktionen) gemeint.
+Der Begriff „Überlagerung“ kann in unterschiedlichen Zusammenhängen verwendet werden. In diesem Zusammenhang (der Erweiterung von AEM) ist damit die Übernahme der vordefinierten Funktionen und das Anwenden eigener Definitionen (zum Anpassen der Standardfunktionen) gemeint.
 
-In a standard instance the predefined functionality is held under `/libs` and it is recommended practice to define your overlay (customizations) under the `/apps` branch. AEM uses a search path to find a resource, searching first the `/apps` branch and then the `/libs` branch (the [search path can be configured](#configuring-the-search-paths)). Durch diesen Mechanismus hat Ihre Überlagerung (und die dort definierten Anpassungen) Priorität.
+In einer Standardinstanz wird die vordefinierte Funktion unter `/libs` gehalten. Es wird empfohlen, Ihre Überlagerung (Anpassungen) unter der Verzweigung `/apps` zu definieren. AEM verwendet einen Suchpfad, um eine Ressource zu finden, indem zuerst die Verzweigung `/apps` und dann die Verzweigung `/libs` durchsucht wird (der [Suchpfad kann konfiguriert werden](#configuring-the-search-paths)). Durch diesen Mechanismus hat Ihre Überlagerung  (und die dort definierten Anpassungen) Priorität.
 
 Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwendung von Überlagerungen vorgenommen:
 
@@ -29,11 +32,11 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
    * Methode
 
-      * Reconstruct the appropriate `/libs` structure under `/apps`.
+      * Rekonstruieren Sie die entsprechende `/libs`-Struktur unter `/apps`.
 
          Dies erfordert keine 1:1-Kopie, der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) wird verwendet, um die erforderlichen Originaldefinitionen zu vergleichen. Der Sling Resource Merger stellt Dienste für den Zugriff auf und die Zusammenführung von Ressourcen mittels Vergleichsmechanismen bereit.
 
-      * Make any changes under `/apps`.
+      * Nehmen Sie beliebige Änderungen unter `/apps` vor.
    * Vorteile
 
       * Robuster gegenüber Änderungen unter `/libs`.
@@ -44,14 +47,14 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
    * Methode
 
-      * Kopieren Sie den Inhalt von `/libs` in `/apps`
+      * Kopieren Sie den Inhalt von `/libs` nach `/apps`
 
          Sie müssen die gesamte Unterverzweigung einschließlich der Eigenschaften kopieren.
 
-      * Make any changes under `/apps`.
+      * Nehmen Sie beliebige Änderungen unter `/apps` vor.
    * Nachteile
 
-      * Although your changes will not be lost when something changes under `/libs`, you might have to recreate certain changes that occur in your overlay under `/apps`.
+      * Obwohl Ihre Änderungen nicht verloren gehen, wenn sich etwas unter `/libs` ändert, müssen Sie möglicherweise bestimmte Änderungen neu erstellen, die in Ihrer Überlagerung unter `/apps` auftreten.
 
 
 >[!CAUTION]
@@ -62,7 +65,8 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
 Überlagerungen empfehlen sich für viele Änderungen, beispielsweise das [Konfigurieren von Konsolen](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) oder [Erstellen der Auswahlkategorie für den Asset-Browser im seitlichen Bedienfeld](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (wird bei der Seitenbearbeitung verwendet). Sie sind aus folgenden Gründen erforderlich:
 
-* You ***must not *make changes in the`/libs`branch **Any changes you do make may be lost, because this branch is liable to changes whenever you:
+* Sie dürfen keine Änderungen an der `/libs`-Verzweigung **vornehmen.
+Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da sich diese Verzweigung ändern kann, wenn Sie:****
 
    * Bei Upgrades auf Ihrer Instanz
    * Beim Anwenden eines Hotfix
@@ -77,7 +81,7 @@ Bei Überlagerungen ist die bereitgestellte Ressource ein Aggregat der abgerufen
 * Der **Suchpfad des Ressourcen-Resolvers** wie in der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für die **Apache Sling-ResourceResolverFactory** definiert
 
    * Die Reihenfolge der Suchpfade von oben nach unten gibt die jeweiligen Prioritäten an.
-   * In a standard installation the primary defaults are `/apps`, `/libs` - so the content of `/apps` has a higher priority than that of `/libs` (i.e. it *overlays* it).
+   * Bei einer Standardinstallation sind die primären Standardwerte `/apps`, `/libs` - daher hat der Inhalt von `/apps` eine höhere Priorität als `/libs` (d. h. *Überlagerungen*).
 
 * Zwei Dienstbenutzer benötigen JCR:READ-Zugriff auf den Speicherort der Skripten. Diese Benutzer sind: components-search-service (wird von den com.day.cq.wcm.coreTo-Access/cache-Komponenten verwendet) und sling-scripting (wird von org.apache.sling.servlets.resolver verwendet, um Servlets zu finden).
 * Die folgende Konfiguration muss auch entsprechend der Stelle konfiguriert werden, an der Sie Ihre Skripte ablegen (in diesem Beispiel unter /etc, /libs oder /apps).
