@@ -18,21 +18,21 @@ ht-degree: 35%
 
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
-AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. To invoke a data model service, you can either create a rule in the visual editor or specify a JavaScript using the `guidelib.dataIntegrationUtils.executeOperation` API in the code editor of the [rule editor](/help/forms/using/rule-editor.md).
+AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mit der API `guidelib.dataIntegrationUtils.executeOperation` im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
 
 In diesem Dokument wird das Schreiben von JavaScript im API`guidelib.dataIntegrationUtils.executeOperation` für den Aufruf eines Dienst beschrieben.
 
 ## Verwenden der API {#using-the-api}
 
-The `guidelib.dataIntegrationUtils.executeOperation` API invokes a service from within an adaptive form field. Für die API gilt die folgende Syntax:
+Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Dienst aus einem Feld für ein adaptives Formular auf. Für die API gilt die folgende Syntax:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. Die Struktur weist die folgende Syntax auf.
+Die Struktur der API `guidelib.dataIntegrationUtils.executeOperation` gibt Details zum Dienstvorgang an. Die Struktur weist die folgende Syntax auf.
 
 ```javascript
 var operationInfo = {
@@ -76,24 +76,24 @@ Die API-Struktur gibt die folgenden Informationen zum Webdienst-Vorgang an.
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>Maps one or more form objects to output values from the service operation to populate form fields<br /> </td>
+   <td>Ordnet ein oder mehrere Formularobjekte Ausgabewerten aus dem Dienstvorgang zu, um Formularfelder auszufüllen.<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
-   <td>Gibt Werte basierend auf den Eingabeargumenten für den Dienstvorgang zurück. Es handelt sich um einen optionalen Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
+   <td>Gibt Werte basierend auf den Eingabeargumenten für den Dienstvorgang zurück. Dies ist ein optionaler Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
   </tr>
   <tr>
    <td><code>failure</code></td>
-   <td>Zeigt eine Fehlermeldung an, wenn die Rückruffunktion success die Ausgabenwerte basierend auf den Eingabeargumenten nicht anzeigen kann. Es handelt sich um einen optionalen Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
+   <td>Zeigt eine Fehlermeldung an, wenn die Rückruffunktion success die Ausgabenwerte basierend auf den Eingabeargumenten nicht anzeigen kann. Dies ist ein optionaler Parameter, der als Rückruffunktion verwendet wird.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Beispielskript zum Erstellen eines Dienstes {#sample-script-to-invoke-a-service}
 
-The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `getAccountById` service operation configured in the `employeeAccount` form data model.
+Das folgende Beispielskript verwendet die API `guidelib.dataIntegrationUtils.executeOperation`, um den im Formulardatenmodell `employeeAccount` konfigurierten Dienstvorgang `getAccountById` aufzurufen.
 
-The `getAccountById` operation takes the value in the `employeeID` form field as input for the `empId` argument and returns employee name, account number, and account balance for the corresponding employee. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. For example, the value in `name` argument is populated in the `fullName` form element and value for `accountNumber` argument in `account` form element.
+Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das `empId`-Argument und gibt Mitarbeitername, Kontonummer und Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` und der Wert für `accountNumber` im `account`-Formularelement gefüllt.
 
 ```javascript
 var operationInfo = {
@@ -113,23 +113,23 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ## Verwenden der API mit der Rückruffunktion {#using-the-api-callback}
 
-Sie können den Formulardatenmodelldienst auch über die `guidelib.dataIntegrationUtils.executeOperation` API mit einer Rückruffunktion aufrufen. Für die API gilt die folgende Syntax:
+Sie können den Formulardatenmodelldienst auch mit der API `guidelib.dataIntegrationUtils.executeOperation` mit einer Rückruffunktion aufrufen. Für die API gilt die folgende Syntax:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-Die Rückruffunktion kann über Rückruffunktionen `success` und `failure` Rückruffunktionen verfügen.
+Die Rückruffunktion kann über die Rückruffunktionen `success` und `failure` verfügen.
 
-### Beispielskript mit Rückruffunktionen bei Erfolg und Fehler {#callback-function-success-failure}
+### Beispielskript mit Rückruffunktionen für Erfolg und Fehler {#callback-function-success-failure}
 
-The following sample script uses the `guidelib.dataIntegrationUtils.executeOperation` API to invoke the `GETOrder` service operation configured in the `employeeOrder` form data model.
+Das folgende Beispielskript verwendet die API `guidelib.dataIntegrationUtils.executeOperation`, um den im Formulardatenmodell `employeeOrder` konfigurierten Dienstvorgang `GETOrder` aufzurufen.
 
-Der `GETOrder` Vorgang nimmt den Wert im `Order ID` Formularfeld als Eingabe für das `orderId` Argument und gibt den Wert für die Bestellmenge in der `success` Rückruffunktion zurück.  Wenn die `success` Rückruffunktion nicht die Bestellmenge zurückgibt, zeigt die `failure` Rückruffunktion die `Error occured` Meldung an.
+Der Vorgang `GETOrder` nimmt den Wert im Formularfeld `Order ID` als Eingabe für das `orderId`-Argument und gibt den Wert für die Bestellmenge in der Rückruffunktion `success` zurück.  Wenn die Rückruffunktion `success` nicht die Bestellmenge zurückgibt, zeigt die Rückruffunktion `failure` die Meldung `Error occured` an.
 
 >[!NOTE]
 >
-> Wenn Sie die `success` Rückruffunktion verwenden, werden die Ausgabewerte nicht in die angegebenen Formularfelder eingefügt.
+> Wenn Sie die Rückruffunktion `success` verwenden, werden die Ausgabewerte nicht in die angegebenen Formularfelder eingefügt.
 
 ```javascript
 var operationInfo = {
