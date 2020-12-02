@@ -11,6 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 100%
 
 ---
 
@@ -43,7 +46,7 @@ Zusammenfassend lässt sich sagen, dass AEM Forms leistungsstarke Formularverwal
 * Integration mit Adobe Document Cloud-eSign-Diensten oder Scribble zur elektronischen Verschlüsselung von Dokumenten mit vertraulichen Informationen
 * Automatisierte Formularveröffentlichungsfunktionen und die Möglichkeit, zeitnahe, personalisierte und konsistente Kommunikation über mehrere Kanäle bereitzustellen
 
-## AEM-Formulartypen {#aem-form-types}
+## AEM-Formulartypen  {#aem-form-types}
 
 Mit AEM Forms können Sie neue und vorhandene Formulare erweitern, um Folgendes zu erstellen:
 
