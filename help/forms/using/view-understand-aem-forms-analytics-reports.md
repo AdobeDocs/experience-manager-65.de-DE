@@ -11,6 +11,9 @@ discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Adobe Experience Manager Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
-## Einrichten von Analysen {#setting-up-analytics}
+## Einrichten von Analysen  {#setting-up-analytics}
 
 Die Analysefunktion in AEM Forms ist als Teil des AEM Forms-Add-On-Pakets verfügbar. Weitere Informationen zum Installieren des Add-On-Pakets finden Sie unter [Installieren und Konfigurieren von AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
@@ -27,7 +30,7 @@ Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto. Informati
 
 Nachdem Sie das AEM Forms-Add-On-Paket installiert und ein Adobe Analytics-Konto erstellt haben, integrieren Sie das Adobe Analytics-Konto in AEM Forms und aktivieren Sie in Ihren Formularen oder Dokumenten „Verfolgen“, wie in [Konfigurieren von Analysen und Berichten](../../forms/using/configure-analytics-forms-documents.md) beschrieben.
 
-### Wie Benutzerinteraktionsinformationen aufgezeichnet werden {#how-user-interaction-information-is-recorded}
+### Wie Benutzerinteraktionsinformationen aufgezeichnet werden  {#how-user-interaction-information-is-recorded}
 
 Wenn ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgezeichnet und an den Analytics-Server gesendet. Folgende Liste zeigt Serveraufrufe für verschiedene Benutzeraktivitäten:
 
@@ -49,7 +52,7 @@ Wenn ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgeze
 
 Führen Sie die folgenden Schritte aus, um Analytics-Berichte anzuzeigen:
 
-1. Log in to the AEM portal at `https://[hostname]:'port'`
+1. Melden Sie sich beim AEM Portal unter `https://[hostname]:'port'` an
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**.
 1. Wählen Sie das Formular aus, für das Sie die Analytics-Berichte anzeigen möchten.
 1. Wählen Sie **Mehr > Analytics-Berichte** aus.
@@ -62,7 +65,7 @@ AEM Forms zeigt Analytics-Berichte für das Formular und für jeden Bereich im F
 
 ![Zusammenfassungsbericht eines adaptiven Formulars](assets/analyticsdashboard_callout.png)
 
-**A.** Konversionen **B.** Zusammenfassung auf Formularebene **C.** Zusammenfassung auf Bereichsebene **D.** Browser der Besucher - Filter **E.** Betriebssystem der Besucher - Filter **F.** Sprache der Besucher - Filter
+**A.** Konvertierungen  **B.** Zusammenfassung auf Formularebene  **C.** Bereichszusammenfassung  **D.** Browser der Besucher - Filter  **E.** OS der Besucher - Filter  **** F.Sprache der Besucher - Filter
 
 Standardmäßig wird der Analytics-Bericht für die letzten sieben Tage angezeigt. Sie können Berichte für die letzten 15 Tage, den letzten Monat usw. anzeigen oder einen Datumsbereich angeben.
 
@@ -91,7 +94,7 @@ Mit der Zusammenfassung auf Formularebene erhalten Sie einen Einblick in die Lei
 * **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde 
 * **Übermittlungen**: Gibt an, wie oft das Formular gesendet wurde
 * **Abbruch**: Gibt an, wie oft Benutzer das Ausfüllen des Formulars begonnen und dann abgebrochen haben
-* **Individuelle Besucher**: Anzahl der Wiedergaben des Formulars durch eindeutige Besucher. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **Individuelle Besucher**: Anzahl der Wiedergaben des Formulars durch eindeutige Besucher. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Erweiterter zusammenfassender Analysebericht auf Formularebene](assets/analytics-report.png)
 
@@ -113,7 +116,7 @@ Der detaillierte Bericht zeigt Werte für alle Felder im Bereich an.
 
 Der Bereichsbericht enthält drei Registerkarten:
 
-* **Zeitbericht**(Standard): Zeigt die Zeit in Sekunden an, die mit dem Ausfüllen der einzelnen Felder im Bereich verbracht wurde
+* **Zeitbericht** (Standard): Zeigt die Zeit in Sekunden an, die mit dem Ausfüllen der einzelnen Felder im Bereich verbracht wurde
 * **Fehlerbericht**: Zeigt die Anzahl der Fehler, die von den Benutzern beim Ausfüllen der Felder gefunden wurden
 * **Hilfebericht**: Anzahl der Hilfeaufrufe für ein bestimmtes Feld
 
