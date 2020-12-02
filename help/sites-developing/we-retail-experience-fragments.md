@@ -11,11 +11,14 @@ topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 40%
 
 ---
 
 
-# Trying out Experience Fragments in We.Retail{#trying-out-experience-fragments-in-we-retail}
+# Testen von Erlebnisfragmenten in We.Retail{#trying-out-experience-fragments-in-we-retail}
 
 Testen von Erlebnisfragmenten in We.Retail
 
@@ -23,29 +26,30 @@ Ein [Experience Fragment](/help/sites-authoring/experience-fragments.md) ist ein
 
 Sie ermöglichen es einem Autor, Teile einer Seite (ein Fragment eines Erlebnisses) wiederzuverwenden, ohne den Inhalt kopieren und einfügen zu müssen.
 
-Dies unterstützt den Anwendungsfall des kostenlosen Content Management Systems (CMS), bei dem Autoren AEM nur für das Authoring, nicht aber für die Bereitstellung an den Kunden verwenden möchten. Ein Drittanbietersystem/Touchpoint kann dieses Erlebnis dann nutzen und dann an den Endbenutzer liefern.
+Dies unterstützt den Anwendungsfall des kostenlosen Content-Management-Systems (CMS), bei dem Autoren AEM nur für das Authoring, nicht aber für die Bereitstellung an den Kunden verwenden möchten. Ein Drittanbietersystem/Touchpoint kann dieses Erlebnis dann nutzen und dann an den Endbenutzer liefern.
 
 >[!NOTE]
 >
->**[Inhaltsfragmente](/help/sites-developing/we-retail-content-fragments.md)**und **Experience Fragments**sind unterschiedliche Funktionen in AEM:
+>**[Inhaltsfragmente](/help/sites-developing/we-retail-content-fragments.md)** und **Experience Fragments** sind unterschiedliche Funktionen in AEM:
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
->* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Webseiten dar.
+>* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
 >
 Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 
 ## Erstellen von Erlebnisfragmenten in We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Select **Experience Fragments** from the Global Navigation. Hier konfigurieren, [erstellen](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) und [bearbeiten](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) Sie Ihre Erlebnisfragmente und alle zugehörigen [Varianten](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
+Wählen Sie in der globalen Navigation die Option **Experience Fragments** aus. Hier konfigurieren Sie [Erstellen](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) und [bearbeiten](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) Ihre Erlebnisfragmente und alle damit verbundenen [Variationen](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
 
-## Verwendungsmöglichkeiten von Erlebnisfragmenten in We.Retail {#where-to-use-experience-fragments-in-we-retail}
+## Wo Sie Erlebnisfragmente in We.Retail verwenden{#where-to-use-experience-fragments-in-we-retail}
 
-Sie können Ihre [Erlebnisfragmente](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (wie jede andere Komponente) auf [jeder Seite](/help/sites-authoring/editing-content.md) unter **Sites** in der globalen Navigation verwenden.
+Sie können Ihre [Erlebnisfragmente](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (wie bei jeder anderen Komponente) auf [einer beliebigen Seite](/help/sites-authoring/editing-content.md) unter **Sites** in der globalen Navigation verwenden.
 
 ## Weiterführende Informationen {#further-information}
 
 Weitere Informationen finden Sie unter:
 
-* [Erlebnisfragmente](/help/sites-authoring/experience-fragments.md)
+* [Experience Fragments](/help/sites-authoring/experience-fragments.md)
 
