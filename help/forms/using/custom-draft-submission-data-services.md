@@ -10,17 +10,20 @@ topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 80%
 
 ---
 
 
 # Anpassen von Entwurfs- und Übermittlungsdatendiensten {#customizing-draft-and-submission-data-services}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Mit AEM Forms können Benutzer ein adaptives Formular als Entwurf speichern. Die Entwurfsfunktion bietet Benutzern die Möglichkeit, ein Formular, an dem sie gerade arbeiten, beizubehalten. Ein Benutzer kann das Formular dann jederzeit von jedem beliebigen Gerät ausfüllen und senden.
 
-By default, AEM Forms stores the user data associated with the draft and submission on the Publish instance in the `/content/forms/fp` node.
+Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung verknüpften Benutzerdaten auf der Veröffentlichungsinstanz im Knoten `/content/forms/fp`.
 
 AEM Forms Portal-Komponenten bieten allerdings Datendienste, mit denen Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
@@ -28,10 +31,10 @@ Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste für [E
 
 ## Voraussetzungen {#prerequisites}
 
-* Aktivieren der Komponenten im [Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren [adaptiver Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Informationen zur [Implementierung des benutzerdefinierten Speichers](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Aktivieren Sie [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* Erstellen einer [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
+* Aktivieren Sie [adaptive Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
+* Informationen zu [Implementierungsdetails der benutzerdefinierten Datenspeicherung](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
@@ -80,9 +83,9 @@ public interface DraftAFDataService {
 }
 ```
 
-## Übermittlungsdatendienst {#submission-data-service}
+## Übermittlungsdatendienst  {#submission-data-service}
 
-To customize the storage of user submission data, you need to provide implementation for all the methods of the `SubmittedAFDataService` interface.
+Um die Datenspeicherung der Benutzerübermittlungsdaten anzupassen, müssen Sie die Implementierung für alle Methoden der `SubmittedAFDataService`-Schnittstelle bereitstellen.
 
 Eine Beschreibung der Methoden und deren Argumente finden Sie im folgenden Codebeispiel der Schnittstelle:
 
