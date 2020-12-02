@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 36a7e16f-d09d-4cc5-babd-1ccadba76e16
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 92%
 
 ---
 
@@ -21,7 +24,7 @@ Mit Forms können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst 
 
 **Die Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten verhindern**
 
-1. In administration console, click **[!UICONTROL Services > Forms]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Dienste > Forms]**.
 1. Deaktivieren Sie das Kontrollkästchen „Externe Entitäten auflösen“.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
