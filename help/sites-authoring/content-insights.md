@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 89%
 
 ---
 
@@ -48,7 +51,7 @@ Weitere Informationen finden Sie unter [Ändern des Berichtszeitraums](/help/sit
 
 >[!NOTE]
 >
->Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Siehe [Integration in SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration in Adobe Target](/help/sites-administering/target.md) und [Integration in BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Der Ansichtsbericht {#the-views-report}
 
