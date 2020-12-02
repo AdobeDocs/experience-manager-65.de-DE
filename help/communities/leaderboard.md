@@ -22,9 +22,9 @@ ht-degree: 8%
 
 Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der Lederboard-Funktion.
 
-Bevor Sie die Komponente &quot;Lederboard&quot;auf eine Seite einfügen, müssen Sie die Bewertung und Abzeichen der [Communities konfigurieren](implementing-scoring.md).
+Bevor Sie die Lederboard-Komponente auf eine Seite setzen, müssen Sie [Communities Scoring and Badges](implementing-scoring.md) konfigurieren.
 
-Siehe Essentials zu [Scoring und Abzeichen](configure-scoring.md).
+Siehe [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -61,4 +61,4 @@ Siehe Essentials zu [Scoring und Abzeichen](configure-scoring.md).
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die [Leaderboard-Funktion](functions.md#leaderboard-function)enthält, enthält eine konfigurierte `leaderboard` Komponente.
+Eine Community-Site-Struktur, die die [Leaderboard-Funktion](functions.md#leaderboard-function) enthält, enthält eine konfigurierte `leaderboard`-Komponente.
