@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 96%
 
 ---
 
 
 # Eogenschaften der Correspondence Management-Konfiguration {#correspondence-management-configuration-properties}
 
-To configure these properties, open the following URL in a browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` and select **Correspondence Management Configurations**.
+Um diese Eigenschaften zu konfigurieren, öffnen Sie die folgende URL in einem Browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` und wählen Sie **Correspondence Management-Konfigurationen**.
 
 Correspondence Management verfügt über die folgenden Konfigurationseigenschaften:
 
@@ -43,7 +46,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr>
    <td><p>Mindestbreite von römischen Zahlen</p> </td>
    <td><p>Mindestbreite für das Aufzählungszeichenfeld bei Verwendung von römischen Zahlen</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12.7 mm</p> </td>
    <td><p>Beliebige Zahl</p> </td>
   </tr>
   <tr>
@@ -152,13 +155,13 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
    <td><p>Datenanzeigeformate</p> </td>
    <td><p>Legt bestimmtes Anzeigeformat des Gebietsschemas für Daten fest</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>Datenbearbeitungsformate</p> </td>
    <td><p>Bearbeitet das Format für Daten Wird verwendet, wenn Daten als Zeichenfolge geschrieben oder Daten aus der Zeichenfolge analysiert werden</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Briefinstanzen in der Veröffentlichungsinstanz verwalten</p> </td>
@@ -241,7 +244,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr>
    <td><p>URL für CM-Benutzerelemente</p> </td>
    <td><p>URL des Ordners mit allen Correspondence Management-Benutzerelementen</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Zulässiger Ordnerpfad</p> </td>
   </tr>
   <tr>
@@ -252,7 +255,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr>
   <tr>
    <td><p>Briefcache aktivieren</p> </td>
-   <td><p>Briefcache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung  <code>in-memory </code> cache.</p> </td>
+   <td><p>Briefcache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung   <code>in-memory </code> Cache.</p> </td>
    <td><p>true</p> </td>
    <td><p>true/false</p> </td>
   </tr>
@@ -269,7 +272,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
    <td><p>true/false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Temporärer Ordner</td>
+   <td>Temporärer Ordner  </td>
    <td>Pfad des Temp-Ordners.</td>
    <td>acm.tpmFolder</td>
    <td> </td>
@@ -288,7 +291,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr>
   <tr>
    <td><p>Debug-Ordner </p> <p> </p> </td>
-   <td>Ordnerpfad im Dateisystem für das Debugging. Ist der Ordner nicht  <code>exists</code>, no debug dumps will be generated.</td>
+   <td>Ordnerpfad im Dateisystem für das Debugging. Ist der Ordner nicht   <code>exists</code>, werden keine Debug-Dumps generiert.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>
