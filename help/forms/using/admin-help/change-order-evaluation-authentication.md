@@ -44,7 +44,7 @@ Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die 
     </node>
    ```
 
-   In `<entry key="order" value="3" />`, edit the value for each node to set the order of the authentication evaluation.
+   Bearbeiten Sie in `<entry key="order" value="3" />` den Wert für jeden Knoten, um die Reihenfolge der Authentifizierungsauswertung festzulegen.
 
 1. Um die aktualisierte Datei zu importieren, klicken Sie in User Management auf „Konfiguration“ > „Konfigurationsdateien im- und exportieren“.
 1. Klicken Sie auf „Durchsuchen“, um die Datei zu suchen, klicken Sie dann auf „Importieren“ und anschließend auf „OK“.
