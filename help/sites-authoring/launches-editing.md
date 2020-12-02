@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 99%
 
 ---
 
@@ -26,28 +29,28 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 1. Rufen Sie [Launches aus Verweisen (Konsole „Sites“)](/help/sites-authoring/launches.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
 1. Wählen Sie **Gehe zu Seite** aus, um die Seite zur Bearbeitung zu öffnen.
 
-### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy {#editing-launch-pages-subject-to-a-live-copy}
+### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy   {#editing-launch-pages-subject-to-a-live-copy}
 
 Wenn Ihr Launch auf einer [Live Copy](/help/sites-administering/msm.md) basiert, sehen Sie Folgendes:
 
 * Schlosssymbole (kleine Vorhängeschlösser), wenn Sie eine Komponente bearbeiten (Inhalt und/oder Eigenschaften)
 * die Registerkarte **Live Copy** in den **Seiteneigenschaften** 
 
-Eine Live Copy wird verwendet, um Inhalt *von* der Quellverzweigung mit Ihrer *Startverzweigung* zu synchronisieren (um Ihren Launch mit den Änderungen an der Quelle aktuell zu halten).
+Eine Livecopy wird verwendet, um Inhalte *von* der Quellverzweigung *mit* Ihrer Launch-Verzweigung zu synchronisieren (um Ihren Launch mit den Änderungen an der Quelle zu aktualisieren).
 
 Sie können Änderungen auf dieselbe Weise vornehmen wie bei einer Standard-Live-Copy, z. B.:
 
 * Durch Klicken auf ein geschlossenes Schloss wird die Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen. Nach dem Entsperren (offenes Vorhängeschloss) werden Ihre Änderungen nicht von Änderungen überschrieben, die am selben Ort innerhalb der Startverzweigung vorgenommen werden.
-* **Vererbung aussetzen** (und **fortsetzen**) für eine bestimmte Seite.
+* Sie können die Vererbung für eine bestimmte Seite **aussetzen** (und **fortsetzen**).
 
 Siehe [Ändern des Live-Copy-Inhalts](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
 
 ## Vergleichen einer Launch-Seite mit ihrer Quellseite {#comparing-a-launch-page-to-its-source-page}
 
-Sie können die vorgenommenen Änderungen verfolgen, indem Sie den Launch in den **Verweisen** anzeigen und die Launch-Seite mit ihrer Quellseite vergleichen:
+Um die vorgenommenen Änderungen zu verfolgen, können Sie den Launch in **Referenzen** anzeigen und die Launch- mit der Quellseite vergleichen:
 
 1. Navigieren Sie in der **Sites-Konsole** [zur Quellseite Ihres Launches und wählen Sie sie aus](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Öffnen Sie das Fenster **[Verweise](/help/sites-authoring/basic-handling.md#references)**und wählen Sie **Launches**aus.
+1. Öffnen Sie das Fenster **[Verweise](/help/sites-authoring/basic-handling.md#references)** und wählen Sie **Launches** aus.
 1. Wählen Sie dann Ihren spezifischen Launch und **Mit Quelle vergleichen** aus:
 
    ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
@@ -67,7 +70,8 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
       * Wählen Sie **Bearbeiten** aus.
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console) zum Anzeigen verfügbarer Aktionen:
 
-      * Wählen Sie **Launch bearbeiten** aus. 
+      * Wählen Sie **Launch bearbeiten** aus.
+
    Die Quellseiten werden angezeigt.
 
 1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie dann mit **Speichern**.
@@ -76,9 +80,9 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
    >
    >Damit Seiten zu einem Launch hinzugefügt werden können, müssen sich diese unter einem gemeinsamen Sprachstamm befinden, d. h. innerhalb einer einzelnen Website.
 
-## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
+## Bearbeiten einer Launch-Konfiguration    {#editing-a-launch-configuration}
 
-Sie können die Eigenschaften für einen Launch jederzeit bearbeiten: 
+Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
 
 1. Sie können auf den Launch wie folgt zugreifen und ihn auswählen:
 
@@ -87,14 +91,15 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
       * Wählen Sie **Eigenschaften** aus.
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console) zum Anzeigen verfügbarer Aktionen:
 
-      * Wählen Sie **Eigenschaften bearbeiten** aus. 
+      * Wählen Sie **Eigenschaften bearbeiten** aus.
+
    Die Details werden angezeigt.
 
 1. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie dann mit **Speichern**.
 
-   Unter [Launches: Reihenfolge von Ereignissen](/help/sites-authoring/launches.md#launches-the-order-of-events) finden Sie weitere Informationen über den Zweck und die Interaktion der Felder **Launch-Datum** und **Produktionsbereit**.
+   Unter [Launches – Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events) finden Sie Informationen zum Zweck und zur Interaktion der Felder **Launch-Datum** und **Bereit für Produktion**.
 
-## Ermitteln des Launch-Status einer Seite {#discovering-the-launch-status-of-a-page}
+## Ermitteln des Launch-Status einer Seite    {#discovering-the-launch-status-of-a-page}
 
 Der Status wird angezeigt, wenn Sie einen bestimmten Launch auf der Registerkarte „Verweise“ auswählen (siehe [Launches in Verweisen (Sites-Konsole))](/help/sites-authoring/launches.md#launches-in-references-sites-console).
 
