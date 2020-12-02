@@ -20,7 +20,7 @@ ht-degree: 63%
 
 # Texteditor anpassen{#customize-text-editor}
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
 Sie können den Texteditor in der Benutzeroberfläche „Assets verwalten und Korrespondenz erstellen“ anpassen, um weitere Schriftarten und Schriftgrade hinzuzufügen. Diese Schriftarten enthalten englische und nicht-englische Schriftarten wie Japanisch.
 
@@ -40,10 +40,10 @@ Wenn Sie so verfahren, müssen Sie folgende Schritte durchführen:
 
 Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxeditor-config.xml&quot;anzupassen:
 
-1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;config&quot;, der sich unter &quot;libs/fd/cm/config&quot;befindet, und führen Sie die folgenden Schritte aus:
+1. Gehen Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen config mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;config&quot;, der sich unter &quot;libs/fd/cm/config&quot;befindet, und führen Sie dabei die folgenden Schritte aus:
 
-   1. Right-click the items folder at the following path and select **Overlay Node**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner items im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/config`
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
       **Pfad:** /libs/fd/cm/config
 
-      **Ort:** /apps/
+      **Ort:** /Apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -70,7 +70,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
 
       `apps/fd/cm/config`
 
-   1. Der Name der eingefügten Datei lautet standardmäßig &quot; `copy of tbxeditor-config.xml.` Benennen Sie die Datei um&quot; `tbxeditor-config.xml` und klicken Sie auf &quot;Alle **speichern&quot;**.
+   1. Der Name der eingefügten Datei lautet standardmäßig `copy of tbxeditor-config.xml.` Benennen Sie die Datei in `tbxeditor-config.xml` um und klicken Sie auf **Alle speichern**.
 
 1. Öffnen Sie die Datei &quot;tbxeditor-config.xml&quot;unter apps/fd/cm/config und nehmen Sie dann die erforderlichen Änderungen vor.
 
@@ -175,7 +175,7 @@ Gehen Sie wie folgt vor, um Schriftarten durch Bearbeiten der Datei &quot;tbxedi
    1. Klicken Sie auf **Alle speichern**.
 
 
-## Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu {#addcustomfonts}
+## Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu  {#addcustomfonts}
 
 Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, muss sie auf dem Client-Computer vorhanden sein, den Sie für den Zugriff auf Correspondence Management verwenden. Um eine benutzerdefinierte Schriftart im Texteditor verwenden zu können, müssen Sie diese zunächst auf dem Clientcomputer installieren.
 
@@ -188,7 +188,7 @@ Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
 Nachdem Sie Änderungen an den Schriftarten in der Datei &quot;tbxeditor-config.xml&quot;in CRX vorgenommen und die erforderlichen Schriftarten auf dem Clientcomputer installiert haben, der für den Zugriff auf AEM Forms verwendet wird, werden die Änderungen im Texteditor angezeigt.
 
-For example, the Sazanami Mincho Medium font added in the [Customize fonts by editing the tbxeditor-config.xml file in CRX](#customizefonts) procedure appears in the text editor UI as following:
+Beispielsweise wird die Schriftart Sazanami Mincho Medium, die im Verfahren [Schriftarten durch Bearbeiten der Datei &quot;tbxeditor-config.xml&quot;in CRX](#customizefonts) hinzugefügt wurde, in der Benutzeroberfläche des Texteditors wie folgt angezeigt:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
