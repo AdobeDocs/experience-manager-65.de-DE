@@ -26,7 +26,7 @@ ContextHub bietet mehrere Musterbenutzeroberflächenmodule, die Sie in Ihren Lö
 
 Informationen zum Hinzufügen von Benutzeroberflächenmodulen zu ContextHub finden Sie unter [Hinzufügen eines Benutzeroberflächenmoduls](ch-configuring.md#adding-a-ui-module). Informationen zum Entwickeln von Benutzeroberflächenmodulen finden Sie unter [Erstellen von ContextHub-Benutzeroberflächenmodultypen](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
-## Benutzeroberflächenmodultyp contexthub.base {#contexthub-base-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.base  {#contexthub-base-ui-module-type}
 
 Der Benutzeroberflächenmodultyp contexthub.base ist der Basistyp für alle anderen Benutzeroberflächenmodultypen. Als solches stellt er allgemeine Funktionen zum Rendern von Storedaten bereit.
 
@@ -44,13 +44,13 @@ Der Quellcode befindet sich unter /libs/granite/contexthub/code/ui/container/js/
 
 Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der Benutzeroberflächenmodulfunktionen hinzu:
 
-* **image:** URL zu einem Bild, das als Symbol angezeigt werden soll.
-* **Symbol:** Der Name einer [Coral UI-Symbolklasse](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) . Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.
+* **image:** Eine URL zu einem Bild, das als Symbol angezeigt wird.
+* **icon:** Der Name einer  [Coral UI-](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Ikonklasse. Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.
 
 * **title:** Ein Titel für das UI-Modul. Der Titel wird angezeigt, wenn der Mauszeiger auf dem Benutzeroberflächenmodulsymbol platziert wird.
-* **fullscreen:** Ein boolescher Wert, der angibt, ob das UI-Modul den Vollbildmodus unterstützt. Use `true` to support fullscreen and `false` to prevent fullscreen mode.
+* **fullscreen:** Ein boolescher Wert, der angibt, ob das UI-Modul den Vollbildmodus unterstützt. Verwenden Sie `true`, um den Vollbildmodus zu unterstützen, und `false`, um den Vollbildmodus zu verhindern.
 
-* **template:** Eine [Handlebars-Vorlage](https://handlebarsjs.com/), die den Inhalt angibt, der in der ContextHub-Symbolleiste gerendert werden soll. Use at most two `<p>` tags.
+* **template:** Eine [Handlebars-Vorlage](https://handlebarsjs.com/), die den Inhalt angibt, der in der ContextHub-Symbolleiste gerendert werden soll. Verwenden Sie höchstens zwei `<p>`-Tags.
 
 * **storeMapping:** Ein Schlüssel-/Storediagramm. Verwenden Sie den Schlüssel in den Handlebar-Vorlagen, um auf die zugehörigen ContextHub-Speicherdaten zuzugreifen.
 * **liste:** Ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popup angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit folgenden Schlüsseln:
@@ -66,7 +66,7 @@ Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines J
    * Kontrollkästchen 
    * radio
 
-* **popoverTemplate:** Eine Handlebars-Vorlage, die den Inhalt angibt, der beim Klicken auf das UI-Modul im Popup wiedergegeben werden soll. Wenn Sie diesen Artikel einschließen, schließen Sie das `list`-Element nicht ein.
+* **popoverTemplate:** Eine Handlebars-Vorlage, die den Inhalt angibt, der im Popupfenster wiedergegeben wird, wenn auf das UI-Modul geklickt wird. Wenn Sie diesen Artikel einschließen, schließen Sie das `list`-Element nicht ein.
 
 ### Beispiel {#example}
 
@@ -106,7 +106,7 @@ Instanzen des Benutzeroberflächenmoduls contexthub.browserinfo benötigen keine
 }
 ```
 
-## Benutzeroberflächenmodultyp contexthub.datetime  {#contexthub-datetime-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.datetime   {#contexthub-datetime-ui-module-type}
 
 Das Benutzeroberflächenmodul contexthub.datetime zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen datetime gespeichert sind, der auf dem Storekandidaten [contexhub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) basiert.
 
@@ -174,7 +174,7 @@ Instanzen des Benutzeroberflächenmoduls contexthub.location erfordern keinen We
 }
 ```
 
-## Benutzeroberflächenmodultyp contexthub.screen-orientation  {#contexthub-screen-orientation-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.screen-orientation   {#contexthub-screen-orientation-ui-module-type}
 
 Das Benutzeroberflächenmodul contexthub.screen-orientation zeigt die aktuelle Bildschirmausrichtung des Clients an. Obwohl standardmäßig deaktiviert, bietet das Modul ein Popover, mit dem Sie eine Ausrichtung auswählen können. Das Modul erhält Informationen von einem ContextHub-Store namens Emulatoren, der auf dem Storekandidaten [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) basiert.
 
@@ -184,7 +184,7 @@ Die Quelle des UI-Moduls befindet sich unter /libs/granite/contexthub/components
 
 ### Konfiguration {#configuration-5}
 
-Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Note that the `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
+Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötigen keinen Wert für die Detailkonfiguration. Der folgende JSON-Text repräsentiert die Standardkonfiguration des Moduls. Beachten Sie, dass die Eigenschaft `clickable` standardmäßig `false` lautet. Wenn Sie die Standardkonfiguration überschreiben, um `clickable` auf `true` festzulegen, wird durch Klicken auf das Modul ein Popup angezeigt, in dem Sie die Ausrichtung auswählen können.
 
 ```xml
 {
@@ -222,7 +222,7 @@ Für Instanzen des Benutzeroberflächenmoduls contexthub.tagcloud ist kein Wert 
 }
 ```
 
-## Benutzeroberflächenmodultyp granite.profile  {#granite-profile-ui-module-type}
+## Benutzeroberflächenmodultyp granite.profile   {#granite-profile-ui-module-type}
 
 Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popupmenü zeigt den Anmeldenamen des Benutzers auf, was Ihnen ermöglicht, den Wert der Anzeigename zu ändern. Das Benutzeroberflächenmodul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Storekandidaten [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) basiert.
 
