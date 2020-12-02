@@ -17,11 +17,11 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->[Wenden Sie sich an den Support](https://www.adobe.com/de/account/sign-in.supportportal.html) , um weitere Informationen zu erhalten oder den Patch zu erhalten.
+>[Wenden Sie sich an ](https://www.adobe.com/de/account/sign-in.supportportal.html) den Support, um weitere Informationen zu erhalten oder den Patch zu erhalten.
 
 ## Informationen zum Patch-Installationsprogramm {#about-the-patch-installer}
 
-Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Probleme für alle Komponenten von AEM 6.5 Forms JEE, die bis zur Veröffentlichung dieses Patches verfügbar sind. Eine vollständige Liste der behobenen Probleme finden Sie in den aktuellen Versionshinweisen [zum](sp-release-notes.md) Service Pack.
+Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Probleme für alle Komponenten von AEM 6.5 Forms JEE, die bis zur Veröffentlichung dieses Patches verfügbar sind. Eine vollständige Liste der behobenen Probleme finden Sie in den aktuellen Versionshinweisen zu [Service Pack.](sp-release-notes.md)
 
 ## Voraussetzungen für die Installation des Patches {#prerequisites-to-installing-the-patch}
 
@@ -34,11 +34,13 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 1. Extrahieren Sie die Patch-Installationsarchivdatei auf Ihre Festplatte.
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
-   * **Windows** Navigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder dem Installationsordner auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie mit der Dublette auf die Datei &quot;aemforms65_cfp_install.exe&quot;.
+   * ****
+WindowsNavigieren Sie zum entsprechenden Ordner auf dem Installationsdatenträger oder auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und klicken Sie mit der Dublette auf die Datei &quot;aemforms65_cfp_install.exe&quot;.
 
-      * (Windows 32-bit) `Windows\Disk1\InstData\VM`
-      * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * **Linux** Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforderung 
+      * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
+      * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+   * ****
+LinuxNavigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforderung 
 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -51,14 +53,14 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 1. Lesen Sie die Informationen zur „Zusammenfassung vor der Installation“ und klicken Sie auf **[!UICONTROL Installieren]**.
 1. Wenn die Installation abgeschlossen ist, klicken Sie auf **[!UICONTROL Weiter]**, um die Schnellkorrektur-Updates auf Ihre installierten Dateien anzuwenden.
 
-1. Deaktivieren Sie die Option „LiveCycle Configuration Manager“ starten, bevor Sie auf „Fertig“ klicken. Bevor Sie Configuration Manager mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** ausführen, navigieren Sie zum Ordner *&lt;AEMForms_Install_Dir>\configurationManager\bin* und aktualisieren Sie **axis.jar** in den folgenden Dateien auf **axis-1.4.1.1.jar** :
+1. Deaktivieren Sie die Option „LiveCycle Configuration Manager“ starten, bevor Sie auf „Fertig“ klicken. Bevor Sie Configuration Manager mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** ausführen, navigieren Sie zum Ordner *&lt;AEMForms_Install_Dir>\configurationManager\bin* und aktualisieren Sie **axis.jar** auf **axis-1.4.1.1.1..jar** in den folgenden Dateien:
 
    * ConfigurationManager.lax
    * ConfigurationManager_IPv6.lax
 
 1. Das Kontrollkästchen Beginn Configuration Manager ist standardmäßig aktiviert. Klicken Sie auf **[!UICONTROL Fertig]**, um Configuration Manager auszuführen.
 
-1. Um Configuration Manager später auszuführen, deaktivieren Sie die Option Configuration Manager starten, bevor Sie auf Fertig klicken. You can start Configuration Manager later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
+1. Um Configuration Manager später auszuführen, deaktivieren Sie die Option Configuration Manager starten, bevor Sie auf Fertig klicken. Sie können Configuration Manager später mit dem entsprechenden Beginn im Ordner `[AEM_forms_root]/configurationManager/bin` ausführen.
 
 1. Wählen Sie je nach Anwendungsserver eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
 
@@ -84,4 +86,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Document Security
 * Foundation JEE
 
-[Support kontaktieren](https://www.adobe.com/de/account/sign-in.supportportal.html)
+[Support kontaktieren](https://www.adobe.com/account/sign-in.supportportal.html)
