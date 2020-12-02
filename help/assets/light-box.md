@@ -15,26 +15,26 @@ ht-degree: 53%
 
 Lightbox ist ein spezieller Sammlungstyp, der den einfachen Zugriff auf Assets ermöglicht. Sie können schnell auf Lightbox zugreifen, um Assets hinzuzufügen oder zu löschen. Es dient als Ihre persönliche Bildergalerie.
 
-If you are an [!DNL Adobe Experience Manager Assets] user, Lightbox is automatically created when you first log in to the application. Lightbox bezieht sich ausschließlich auf Ihre eigenen Anmeldungen. Andere Benutzer können nicht auf Ihren Lightbox-Ordner zugreifen.
+Wenn Sie ein [!DNL Adobe Experience Manager Assets]-Benutzer sind, wird Lightbox automatisch erstellt, wenn Sie sich zum ersten Mal bei der Anwendung anmelden. Lightbox bezieht sich ausschließlich auf Ihre eigenen Anmeldungen. Andere Benutzer können nicht auf Ihren Lightbox-Ordner zugreifen.
 
 ## Hinzufügen von Assets zu Lightbox {#adding-assets-to-lightbox}
 
-1. From the [!DNL Assets] user interface, select the assets that you want to add to Lightbox.
-1. Ziehen Sie die Assets in den Bereich **[!UICONTROL In Lightbox ablegen]**. Release when the drop-zone becomes active, and its label changes to **[!UICONTROL Drop to Add]**.
+1. Wählen Sie in der Benutzeroberfläche [!DNL Assets] die Elemente aus, die Sie Lightbox hinzufügen möchten.
+1. Ziehen Sie die Assets in den Bereich **[!UICONTROL In Lightbox ablegen]**. Lassen Sie diese Option los, wenn die Dropzone aktiv wird und die Beschriftung in **[!UICONTROL Ablegen zu Hinzufügen]** geändert wird.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. In the dialog, click **[!UICONTROL Add]**, and then close it to complete the process. Die ausgewählten Assets werden zu Lightbox hinzugefügt.
+1. Klicken Sie im Dialogfeld auf **[!UICONTROL Hinzufügen]** und schließen Sie es dann, um den Prozess abzuschließen. Die ausgewählten Assets werden zu Lightbox hinzugefügt.
 1. Um Lightbox anzuzeigen, wechseln Sie zur Konsole „Sammlungen“.
-1. Click **[!UICONTROL Lightbox]** to view the assets in it.
+1. Klicken Sie auf **[!UICONTROL Leuchtkasten]**, um die darin enthaltenen Elemente Ansicht.
 
    >[!NOTE]
    >
    >Obwohl Lightbox einer Sammlung ähnelt, können Sie nicht alle Aktionen ausführen, die Sie normalerweise mit Sammlungen ausführen. Sie können beispielsweise keine Einstellungen für eine Lightbox löschen, freigeben oder anzeigen. Außerdem können Sie sie nicht zu anderen Sammlungen hinzufügen. Sie können aber die Assets in einer Lightbox bearbeiten.
 
-## Remove assets from Lightbox {#removing-assets-from-lightbox}
+## Entfernen von Assets aus Lightbox {#removing-assets-from-lightbox}
 
 1. Navigieren Sie zur Sammlungskonsole und klicken Sie auf &quot;Leuchtkasten&quot;, um die Assets Ansicht.
 1. Wählen Sie die Assets aus, die Sie entfernen möchten.
-1. From the toolbar, click **[!UICONTROL Remove]**.
-1. In the dialog, click **[!UICONTROL Remove]** to confirm the delete action. Die Assets werden aus Lightbox gelöscht.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Entfernen]**.
+1. Klicken Sie im Dialogfeld auf **[!UICONTROL Entfernen]**, um die Löschaktion zu bestätigen. Die Assets werden aus Lightbox gelöscht.
