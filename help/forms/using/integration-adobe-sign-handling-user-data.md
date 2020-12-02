@@ -19,17 +19,17 @@ ht-degree: 70%
 
 [!DNL AEM Forms] lässt sich in integrieren, um E-Signatur-Workflows in adaptiven Formularen für die Verarbeitung von Formularen oder Vereinbarungen für Rechts-, Verkaufs-, Lohn- und Personalmanagement-Workflows zu ermöglichen. [!DNL  Adobe Sign] Es ermöglicht das Signieren von Einzel- und Mehrbenutzer-Signaturen, sequenzielle und simultane Signier-Workflows, das Signieren von Formularen als anonymer oder angemeldeter Benutzer und mehrere Möglichkeiten zur Authentifizierung von Benutzern.
 
-When a signer or multiple signers sign and submit an adaptive form, an [!DNL Adobe Sign] agreement is generated that includes information about the signers.
+Wenn ein Unterzeichner oder mehrere Unterzeichner ein adaptives Formular signieren und senden, wird eine [!DNL Adobe Sign]-Vereinbarung generiert, die Informationen zu den Unterzeichnern enthält.
 
-For more information about [!DNL AEM Forms] integration with [!DNL Adobe Sign], see [Using Adobe Sign in an adaptive form](/help/forms/using/working-with-adobe-sign.md).
+Weitere Informationen zur [!DNL AEM Forms] Integration mit [!DNL Adobe Sign] finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
 
 ## Benutzerdaten und Datenspeicher {#data}
 
-[!DNL Adobe Sign]Das für aktiviertes adaptives Formular enthält Informationen zu den Unterzeichnern und kann andere Benutzerdaten enthalten, die vom adaptiven Formular erfasst wurden. The [!DNL Adobe Sign] service saves user data with the signature within the agreement. The agreement is saved on [!DNL Adobe Sign] server configured in [!DNL AEM Forms] cloud services. Wenn das adaptive Formular für die Sendeaktion konfiguriert ist, werden die Vertragsdaten außerdem zusammen mit den Formulardaten im Datenspeicher des Forms-Portals gespeichert.
+[!DNL Adobe Sign]Das für aktiviertes adaptives Formular enthält Informationen zu den Unterzeichnern und kann andere Benutzerdaten enthalten, die vom adaptiven Formular erfasst wurden. Der [!DNL Adobe Sign]-Dienst speichert Benutzerdaten mit der Signatur innerhalb der Vereinbarung. Die Vereinbarung wird auf dem [!DNL Adobe Sign]-Server gespeichert, der in [!DNL AEM Forms] Cloud-Diensten konfiguriert ist. Wenn das adaptive Formular für die Sendeaktion konfiguriert ist, werden die Vertragsdaten außerdem zusammen mit den Formulardaten im Datenspeicher des Forms-Portals gespeichert.
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Benutzerdaten werden innerhalb der Vereinbarung gesammelt, aber nicht in einer der Servicetabellen gespeichert. [!DNL Adobe Sign]Mit können Administratoren ihre eigenen Entscheidungen bei der Verwaltung von Daten treffen, die sie im Dienst steuern. Privacy administrators on the [!DNL Adobe Sign] service can list or remove agreements based on the email address of a requestor.
+Benutzerdaten werden innerhalb der Vereinbarung gesammelt, aber nicht in einer der Servicetabellen gespeichert. [!DNL Adobe Sign]Mit können Administratoren ihre eigenen Entscheidungen bei der Verwaltung von Daten treffen, die sie im Dienst steuern. Datenschutzadministratoren des [!DNL Adobe Sign]-Dienstes können Verträge auf der Grundlage der E-Mail-Adresse eines Anforderers Listen oder entfernen.
 
 [!DNL Adobe Sign] bietet eine Webanwendung, mit der Teilnehmer nach Vereinbarungen suchen und diese gegebenenfalls löschen können. Weitere Informationen finden Sie unter [Adobe Sign - Funktion: Löschen Sie Benutzerinformationen](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
