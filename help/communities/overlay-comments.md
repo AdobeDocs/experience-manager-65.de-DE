@@ -12,13 +12,16 @@ discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
 
-# Komponenten für Überlagerungsgemeinschaften {#overlay-communities-components}
+# Komponenten für Overlay Communities {#overlay-communities-components}
 
-Die Absicht, eine Standardkomponente zu [überlagern](/help/communities/client-customize.md#overlays) , besteht darin, das Erscheinungsbild oder Verhalten einer Komponente global für alle relativen Verweise auf die Komponente zu ändern. Es beruht auf der Natur von sling, um in den Ordner /apps aufzulösen, bevor Sie im Ordner /libs suchen. Daher ist der Pfad zur Komponente identisch mit dem Pfad zur Standardkomponente, es sei denn, er befindet sich im Ordner &quot;/apps&quot;und nicht im Ordner &quot;/libs&quot;.
+Die Absicht von [overlay](/help/communities/client-customize.md#overlays) einer Standardkomponente besteht darin, das Erscheinungsbild oder Verhalten einer Komponente global für alle relativen Verweise auf die Komponente zu ändern. Es beruht auf der Natur von sling, um in den Ordner /apps aufzulösen, bevor Sie im Ordner /libs suchen. Daher ist der Pfad zur Komponente identisch mit dem Pfad zur Standardkomponente, es sei denn, er befindet sich im Ordner &quot;/apps&quot;und nicht im Ordner &quot;/libs&quot;.
 
 ## Beispiel {#example}
 
@@ -34,9 +37,9 @@ Um Kommentare zu überlagern, müssen Sie:
 
 **E-Mails zu Überlagerungsbenachrichtigungen**
 
-Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, indem Sie die Vorlagen unter [/libs/settings/community/templates/email/html](/help/communities/client-customize.md#overlays) überlagern ****.
+Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, indem Sie [die Vorlagen unter **/libs/settings/community/templates/email/html** überlagern.](/help/communities/client-customize.md#overlays)
 
-Um beispielsweise die Benachrichtigungen zu Erwähnungen-E-Mails zu ändern (für eine bestimmte Communities-Komponente, in der ugc erstellt wird), fügen Sie in den Vorlagen der Komponenten, für die Sie die Unterstützung von **@Erwähnungen** aktiviert haben, eine if **-Bedingung für die** Erwähnung **** des Verb hinzu.
+Um beispielsweise die Benachrichtigungen zu Erwähnungen-E-Mails zu ändern (für eine bestimmte Communities-Komponente, in der ugc erstellt wird), fügen Sie eine **if**-Bedingung für Verb **mentions** in die Vorlagen der Komponenten ein, für die Sie die Unterstützung **@mentions** aktiviert haben.
 
 ```java
 {{#equals this.verb "mention"}}\
