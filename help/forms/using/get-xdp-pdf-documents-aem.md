@@ -11,13 +11,16 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 91%
 
 ---
 
 
 # XDP- und PDF-Dokumente in AEM Forms übernehmen{#getting-xdp-and-pdf-documents-in-aem-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository importieren, indem Sie sie in AEM Forms hochladen. Der Upload-Vorgang wird für die folgenden Assettypen unterstützt:
 
@@ -25,15 +28,15 @@ Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository import
 * PDF-Formulare
 * Dokumente (reduzierte PDF-Dokumente)
 
-Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. You can upload an asset of the type `Resource`, only alongside an XFA form in a ZIP archive.
+Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset des Typs `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
 
 >[!NOTE]
 >
->Ensure that you are a member of the `form-power-users` group to be able to upload XDP files. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
+>Stellen Sie sicher, dass Sie Mitglied der Gruppe `form-power-users` sind, damit Sie XDP-Dateien hochladen können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
 
 ## Hochladen von Formularen {#uploading-forms}
 
-1. Log in to the AEM Forms user interface by accessing `https://'[server]:[port]'/aem/forms.html`.
+1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche an, indem Sie auf `https://'[server]:[port]'/aem/forms.html` zugreifen.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
 1. Auf der Aktionensymbolleiste klicken Sie auf **Erstellen > Datei hochladen**.
 
@@ -59,13 +62,13 @@ Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen.
 
 Wenn der Upload abgeschlossen ist, wird basierend auf der Asset-Vorschau über einen Workflow im Hintergrund für jedes Asset eine Miniatur generiert. Wenn neuere Versionen von Assets hochgeladen werden, werden die vorhandenen Assets überschrieben.
 
-### Geschützter Modus {#protected-mode}
+### Geschützter Modus  {#protected-mode}
 
 AEM Forms-Server ermöglicht es Ihnen, JavaScript-Code auszuführen. Ein schadhafter JavaScript-Code kann eine AEM Forms-Umgebung beschädigen. Der abgesicherte Modus beschränkt AEM Forms darauf, XDP-Dateien nur von vertrauenswürdigen Assets und Speicherorten auszuführen. Alle XDPs, die in der AEM Forms-Benutzeroberfläche verfügbar sind, gelten als vertrauenswürdige Assets.
 
 Der abgesicherte Modus ist standardmäßig aktiviert. Bei Bedarf können Sie den abgesicherten Modus deaktivieren:
 
-1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr
+1. Melden Sie sich bei der AEM Web-Konsole als Administrator an. Die URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr
 1. Öffnen Sie Mobile Forms Konfigurationen für die Bearbeitung.
 1. Wählen Sie die Option „Abgesicherter Modus“ und klicken Sie auf **Speichern**. Der abgesicherte Modus ist deaktiviert.
 
@@ -82,7 +85,7 @@ Wenn eine Formularvorlage entfernt wird, wird das abhängige adaptive Formular b
 
 ![Warnung für ein unsynchronisiertes adaptives Formular nach dem Aktualisieren der zugehörigen XFA](assets/dirtyaf.png)
 
-Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Only for dirty adaptive forms, a metadata property `Model Refresh` displays `Recommended` value.
+Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Nur bei schmutzigen adaptiven Formularen zeigt die Metadateneigenschaft `Model Refresh` den Wert `Recommended` an.
 
 ![Kennzeichnung eines adaptiven Formular, das mit dem XFA-Modell nicht synchronisiert ist](assets/model-refresh.png)
 
