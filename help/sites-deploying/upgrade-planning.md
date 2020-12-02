@@ -69,7 +69,7 @@ Nachfolgend finden Sie eine Liste der Bereiche, die von einem typischen AEM-Aktu
   <tr>
    <td>AEM-Komponenten/-Inhalte</td>
    <td>Moderate Auswirkungen</td>
-   <td><code>/libs</code> and <code>/apps</code> are easily handled through the upgrade, but <code>/etc</code> usually requires some manual re-application of customizations.</td>
+   <td><code>/libs</code> und <code>/apps</code> sind durch die Aktualisierung einfach zu handhaben, aber <code>/etc</code> erfordert in der Regel eine manuelle Neuanwendung der Anpassungen.</td>
   </tr>
   <tr>
    <td>AEM-Dienste</td>
@@ -95,7 +95,7 @@ Sie müssen sicherstellen, dass ein unterstütztes Betriebssystem, eine unterst�
 
 Mit der Planung und Durchführung einer AEM-Aktualisierung ist ein hoher Arbeitsaufwand verbunden. Um den Arbeitsaufwand besser zu verdeutlichen, haben wir die Planungs- und Durchführungsschritte in separate Phasen unterteilt. In den nachfolgenden Abschnitten resultiert jede Phase in einem Ergebnis, das häufig für eine zukünftige Phase des Projekts genutzt wird.
 
-### Planen der Autorenschulung {#planning-for-author-training}
+### Planen der Autorenschulung  {#planning-for-author-training}
 
 In jeder neuen Version ist mit potenziellen Änderungen an der Benutzeroberfläche und den Benutzer-Workflows zu rechnen. Außerdem werden neue Funktionen eingeführt, deren Nutzung sich für das Unternehmen als vorteilhaft erweisen kann. Adobe empfiehlt die eingeführten Funktionsänderungen zu überprüfen und einen Schulungsplan für Benutzer zu erstellen, damit diese neue Funktionen effektiv nutzen können.
 
@@ -103,7 +103,7 @@ In jeder neuen Version ist mit potenziellen Änderungen an der Benutzeroberfläc
 
 Neue Funktionen in AEM 6.5 finden Sie im [Bereich zu AEM auf adobe.com](/help/release-notes/release-notes.md). Achten Sie vor allem auf Änderungen an Benutzeroberflächen oder Produktfunktionen, die in Ihrem Unternehmen häufig verwendet werden. Wenn Sie sich über die neuen Funktionen informieren, achten Sie auch auf neue Funktionen, die für Ihr Unternehmen von Nutzen sein können. Sobald Sie sich mit den Änderungen in AEM 6.5 vertraut gemacht haben, entwickeln Sie einen Schulungsplan für Ihre Autoren. Hierzu können Sie kostenlos verfügbare Ressourcen wie Videos zu Funktionen des Adobe-Supports oder formelle Schulungen nutzen, die von [Adobe Digital Learning Services](https://www.adobe.com/training.html) angeboten werden.
 
-### Erstellen eines Testplans {#creating-a-test-plan}
+### Erstellen eines Testplans  {#creating-a-test-plan}
 
 Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforderungen des Unternehmens zugeschnitten. Deshalb ist es wichtig, alle am System vorgenommenen Anpassungen zu bestimmen, damit sie in einen Testplan einbezogen werden können. Dieser Testplan bildet die Basis für den QS-Prozess, der für aktualisierte Instanzen durchgeführt wird.
 
@@ -111,7 +111,7 @@ Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforde
 
 Die Produktionsumgebung muss exakt dupliziert und nach der Aktualisierung getestet werden, um sicherzustellen, dass alle Anwendungen und benutzerdefinierter Code weiterhin wie gewünscht ausgeführt werden. Sie müssen alle Anpassungen rückgängig machen und Leistungs-, Last- und Sicherheitstests durchführen. Beziehen Sie beim Organisieren des Testplans neben den vorkonfigurierten Benutzeroberflächen und Workflows, die für Ihre täglichen Betriebsabläufe verwendet werden, alle am System vorgenommenen Anpassungen in den Plan mit ein. Hierzu gehören möglicherweise benutzerdefinierte OSGi-Dienste und -Servlets, Integrationen mit Adobe Marketing Cloud, Integrationen mit Drittanbieteranwendungen über AEM-Connectors, benutzerdefinierte Drittanbieterintegrationen, benutzerdefinierte Komponenten und Vorlagen, benutzerdefinierte Benutzeroberflächen-Überlagerungen in AEM und benutzerdefinierte Workflows. Kunden, die eine Migration von einer Version vor AEM 6 durchführen, sollten alle benutzerdefinierten Abfragen analysieren, da diese u. U. indiziert werden müssen. Kunden die bereits eine AEM 6.x-Version verwenden, sollte diese Abfragen ebenfalls testen, um sicherzustellen, das ihre Indizes auch nach der Aktualisierung ordnungsgemäß arbeiten.
 
-### Bestimmen der erforderlichen Architektur- und Infrastrukturänderungen {#determining-architectural-and-infrastructure-changes-needed}
+### Bestimmen der erforderlichen Architektur- und Infrastrukturänderungen  {#determining-architectural-and-infrastructure-changes-needed}
 
 Sie müssen bei einer Aktualisierung möglicherweise auch andere Komponenten Ihres Technologie-Stacks aktualisieren, z. B. das Betriebssystem oder JVM. Darüber hinaus ist aufgrund von Änderungen an der Repository-Konfiguration u. U. zusätzliche Hardware erforderlich. Dies trifft in der Regel nur für Kunden zu, die eine Migration von Instanzen vor Version 6.x durchführen, muss jedoch berücksichtigt werden. Und schließlich müssen Sie möglicherweise Ihre Betriebspraktiken ändern, darunter Ihre Prozesse für die Überwachung, Wartung, Sicherung und Nofallwiederherstellung.
 
@@ -139,7 +139,7 @@ Sie müssen bei einer Aktualisierung möglicherweise auch andere Komponenten Ihr
 
 #### Überlegungen zur Neustrukturierung des Contents {#content-restructuring-considerations}
 
-Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Restrukturierung wurde so durchgeführt, dass zum Zeitpunkt der 6.5-Aktualisierung keine Codeänderungen erforderlich sind. Es wird jedoch empfohlen, die Details bei der [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md) während der Planung einer Aktualisierung zu überprüfen.
+Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Restrukturierung wurde so durchgeführt, dass zum Zeitpunkt der 6.5-Aktualisierung keine Codeänderungen erforderlich sind. Es wird jedoch empfohlen, die Details unter [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md) während der Planung einer Aktualisierung zu überprüfen.
 
 ### Bewertung der Komplexität der Aktualisierung {#assessing-upgrade-complexity}
 
@@ -151,7 +151,7 @@ Nach dieser anfänglichen Bewertung kann in einem umfangreicheren nächsten Schr
 
 ![trei_cut](assets/trei_cropped.png)
 
-Der kürzlich eingeführte Musterdetektor liefert Ihnen eine recht genaue Schätzung dessen, was Sie während einer Aktualisierung in den meisten Fällen erwarten können. However, for more complex customizations and deployments where you have incompatible changes you can upgrade a development instance to AEM 6.5 according to the instructions in [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md). Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Sie dienen nicht dazu, das Nutzungsszenario umfassend zu testen und eine formelle Liste mit Defekten zu erstellen. Vielmehr soll der geschätzte erforderliche Arbeitsaufwand für die Aktualisierung des Codes ermittelt werden, um die Kompatibilität mit Version 6.5 sicherzustellen. Wenn die [Mustererkennung](/help/sites-deploying/pattern-detector.md) mit den Änderungen an der Architektur kombiniert wird, die im vorherigen Abschnitt beschrieben wurden, liefert dies eine grobe Schätzung, mit deren Hilfe das Projektleiterteam die Aktualisierung planen kann.
+Der kürzlich eingeführte Musterdetektor liefert Ihnen eine recht genaue Schätzung dessen, was Sie während einer Aktualisierung in den meisten Fällen erwarten können. Bei komplexeren Anpassungen und Bereitstellungen mit inkompatiblen Änderungen können Sie jedoch eine Entwicklungsinstanz gemäß den Anweisungen unter [Durchführen einer ersetzenden Aktualisierung](/help/sites-deploying/in-place-upgrade.md) auf AEM 6.5 aktualisieren. Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Sie dienen nicht dazu, das Nutzungsszenario umfassend zu testen und eine formelle Liste mit Defekten zu erstellen. Vielmehr soll der geschätzte erforderliche Arbeitsaufwand für die Aktualisierung des Codes ermittelt werden, um die Kompatibilität mit Version 6.5 sicherzustellen. Wenn die [Mustererkennung](/help/sites-deploying/pattern-detector.md) mit den Änderungen an der Architektur kombiniert wird, die im vorherigen Abschnitt beschrieben wurden, liefert dies eine grobe Schätzung, mit deren Hilfe das Projektleiterteam die Aktualisierung planen kann.
 
 ### Erstellen des Runbooks für die Aktualisierung und das Rollback {#building-the-upgrade-and-rollback-runbook}
 
@@ -161,7 +161,7 @@ Obwohl Adobe den Prozess für die Aktualisierung von AEM-Instanzen dokumentiert 
 
 Unter [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) finden Sie Aktualisierung- und Rollbackverfahren sowie schrittweise Anleitungen für die Durchführung einer [ersetzenden Aktualisierung](/help/sites-deploying/in-place-upgrade.md). Diese Anweisungen sollten überprüft und für Ihre Systemarchitektur, Anpassungen und Ausfallzeitentoleranz berücksichtigt werden, um die entsprechenden Switchover- und Rollbackvorgänge zu bestimmen, die Sie während der Aktualisierung ausführen. Änderungen an der Architektur oder Servergröße sollten bei der Erstellung Ihres benutzerdefinierten Runbooks miteinbezogen werden. Beachten Sie, dass diese Version als erster Entwurf gelten sollte. Möglicherweise sind nach Abschluss der QS- und Entwicklungszyklen und der Bereitstellung der Aktualisierung in der Staging-Umgebung weitere Schritte erforderlich. Die Informationen im Dokument sollten möglichst umfassend sein, sodass Ihr Betriebspersonal die Aktualisierung anhand der darin enthaltenen Informationen vollständig durchführen und abschließen kann.
 
-### Entwickeln eines Projektplans {#developing-a-project-plan}
+### Entwickeln eines Projektplans  {#developing-a-project-plan}
 
 Anhand der Ergebnisse aus den vorherigen Schritten kann ein Projektplan erstellt werden, der die erwarteten Zeitrahmen für den Test- oder Entwicklungsaufwand, Schulungen und die tatsächliche Aktualisierung beinhaltet.
 
@@ -178,15 +178,15 @@ Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 * Zertifizierung der Umgebung
 * Live-Schaltung
 
-### Entwicklung und Qualitätssicherung (QS) {#performing-development-and-qa}
+### Entwicklung und Qualitätssicherung (QS)  {#performing-development-and-qa}
 
-Wir haben Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 kompatibel sind. Wenn dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Also see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) on information on how your customizations can stay backward compatible in most cases without requiring development immediately after upgrade.
+Wir haben Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 kompatibel sind. Wenn dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Weitere Informationen dazu, wie Ihre Anpassungen in den meisten Fällen abwärtskompatibel bleiben können, ohne dass die Entwicklung unmittelbar nach der Aktualisierung erforderlich ist, finden Sie unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
 ![patru_cut](assets/patru_cropped.png)
 
 Der Entwicklungs- und Testprozess ist in der Regel iterativ. Änderungen, die aufgrund von Anpassungen während der Aktualisierung vorgenommen werden, können potenziell einen kompletten Teil des Produkts unbrauchbar machen. Wenn die Entwickler die Ursache des Problems behoben und das Testteam Zugriff auf die Funktionen hat, um diese zu testen, werden möglicherweise weitere Probleme gefunden. Werden Probleme identifiziert, die Anpassungen des Aktualisierungsprozesses erfordern, stellen Sie sicher, dass Sie diese zum benutzerdefinierten Runbook für die Aktualisierung hinzufügen. Nach mehreren Test- und Fehlerbehebungsphasen sollte die Codebasis vollständig validiert und zur Implementierung in der Staging-Umgebung bereit sein.
 
-### Abschließende Tests {#final-testing}
+### Abschließende Tests  {#final-testing}
 
 Nach der Autorisierung der Codebasis durch das QS-Team Ihres Unternehmens wird eine abschließende Testphase empfohlen. Dabei wird Ihr Runbook in einer Staging-Umgebung überprüft, gefolgt von Benutzerakzeptanz-, Leistungs- und Sicherheitstests.
 
@@ -194,7 +194,7 @@ Nach der Autorisierung der Codebasis durch das QS-Team Ihres Unternehmens wird e
 
 Dieser Schritt ist notwendig, da dies die einzige Gelegenheit ist, bei der Sie die Schritte im Runbook in einer produktionsähnlichen Umgebung überprüfen können. Wenn die Umgebung aktualisiert wurde, müssen die Endbenutzer genügend Zeit haben, um sich anzumelden und ihre üblichen täglichen Aktivitäten im System durchzuführen. Nicht selten verwenden Benutzer einen Teil des Systems, den sie zuvor nicht genutzt haben. Durch die Identifizierung und Behebung von Fehlern in diesen Bereichen vor einer Live-Schaltung können teure Produktionsausfälle verhindert werden. Da eine neue AEM-Version erhebliche Änderungen der zugrunde liegenden Plattform mit sich bringt, ist es ebenfalls wichtig, Leistungs-, Last- und Sicherheitstests für das System durchzuführen, und zwar so, als ob dieses zum ersten Mal gestartet wird.
 
-### Durchführen der Aktualisierung {#performing-the-upgrade}
+### Durchführen der Aktualisierung  {#performing-the-upgrade}
 
 Wenn alle Beteiligten den Prozess abgezeichnet haben, ist es Zeit für die Ausführung der im Runbook festgelegten Verfahren. Unter [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) werden Schritte für die Aktualisierung und das Rollback sowie als Referenz die Installationsschritte bei der Durchführung einer [ersetzenden Aktualisierung](/help/sites-deploying/in-place-upgrade.md) beschrieben.
 
