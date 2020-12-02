@@ -49,7 +49,7 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 
 ## JVM-Parameter   {#jvm-parameters}
 
-For optimal performance, it is recomended to use the following JVM `init` arguments to configure the `Java heap` and `PermGen`.
+Für eine optimale Leistung wird empfohlen, die folgenden JVM `init`-Argumente zu verwenden, um `Java heap` und `PermGen` zu konfigurieren.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -82,7 +82,7 @@ Die folgenden Schritte demonstrieren die Änderungen, die erforderlich sind, um 
 
 Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfigurationen zur optimierten Nutzung von HTTP.
 
-1. Uncomment the following module configurations in `APACHE_HOME/conf/httpd.conf` file.
+1. Heben Sie die Auskommentierung der folgenden Modulkonfigurationen in der Datei `APACHE_HOME/conf/httpd.conf` auf.
 
    ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -92,17 +92,17 @@ Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfiguration
 
    >[!NOTE]
    >
-   >For Linux, the default `APACHE_HOME` is `/etc/httpd/`.
+   >Unter Linux ist der Standardwert `APACHE_HOME` `/etc/httpd/`.
 
 1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
-Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
+hinzufügen folgende Konfiguration in der Konfigurationsdatei `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Aktivieren Sie die Komprimierung. Add following configuration in `APACHE_HOME/conf/httpd.conf` configuration file.
+1. Aktivieren Sie die Komprimierung. hinzufügen folgende Konfiguration in der Konfigurationsdatei `APACHE_HOME/conf/httpd.conf`.
 
    **Für HTML5-Formulare**
 
@@ -148,30 +148,30 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM-Installationsordner]\crx-repository\temp
-   * [AEM-Installationsordner]\crx-repository\repository
-   * [AEM-Installationsordner]\crx-repository\launchpad
+   * [AEM Installationsordner] \crx-repository\temp
+   * [AEM Installationsordner] \crx-repository\repository
+   * [AEM Installationsordner] \crx-repository\launchpad
 
 * Temporärer Ordner des Anwendungsservers. Der Standardspeicherort lautet:
 
-   * (Jboss) [AEM installation directory]\jboss\standalone\tmp
+   * (Jboss) [AEM Installationsordner]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere) \Programme\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(Nur AEM Forms unter JEE),** Ordner des globalen Dokumentenspeichers (GDS). Der Standardspeicherort lautet:
 
-   * (JBoss) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (JBoss) [Anwendungsserver-Stammordner]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere) [Anwendungsserver-Stammordner]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(Nur AEM Forms unter JEE),** AEM Forms-Serverprotokolle und temporäres Verzeichnis. Der Standardspeicherort lautet:
 
-   * Server logs - [AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs
-   * Temp directory - [AEM Forms installation directory]\temp
+   * Serverprotokolle - [AEM Forms-Installationsordner]\Adobe\AEM forms\[Anwendungsserver]\server\all\logs
+   * Temporärer Ordner - [AEM Forms-Installationsordner]\temp
 
 >[!NOTE]
 >
->* If you are using a different location for GDS and temporary directory, open AdminUI at `https://'[server]:[port]'/adminui`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
+>* Wenn Sie einen anderen Speicherort für den globalen Dokumentenspeicher und den temporären Ordner verwenden, öffnen Sie AdminUI unter `https://'[server]:[port]'/adminui`, navigieren Sie zu **Startseite > Einstellungen > Core-Systemeinstellungen > Core-Konfigurationen**, um den verwendeten Speicherort zu bestätigen.
 
 * Wenn der AEM Forms-Server selbst nach dem Ausschluss der vorgeschlagenen Ordner langsam arbeitet, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
 
