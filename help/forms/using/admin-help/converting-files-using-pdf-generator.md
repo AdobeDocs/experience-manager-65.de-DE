@@ -43,7 +43,7 @@ Sie können die PDF Generator-Webseiten verwenden, um Dateien zu konvertieren.
 1. Klicken Sie auf Erstellen. Nach der Erstellung wird ein Link zur Datei angezeigt. Tritt während der Konvertierung ein Fehler auf, wird eine Warnung angezeigt. Wenn Sie eine Postcript-Datei erstellen, enthält die Warnung auch einen Link zur Protokolldatei.
 1. Klicken Sie auf den Link zur PDF-Datei. Die Datei wird in Acrobat geöffnet.
 
-### Informationen zu XMP-Dateien {#about-xmp-files}
+### Informationen zu XMP-Dateien  {#about-xmp-files}
 
 PDF-Dokumente, die PDF Generator in Acrobat 5.0 oder höher erstellt, enthalten Dokumentmetadaten im XML-Format. *Metadaten sind Informationen zum Dokument und seinem Inhalt, z. B. der Name des Autors, Schlüsselwörter und Copyright-Informationen, die Suchprogramme verwenden können.*
 
@@ -53,7 +53,7 @@ Adobe Extensible Metadata Platform (XMP) stellt Adobe-Anwendungen eine allgemein
 
 Sie können XMP-Dateien in Acrobat erstellen.
 
-## HTML- oder ZIP-Datei ins PDF-Format konvertieren {#convert-an-html-file-or-zip-file-to-pdf}
+## HTML- oder ZIP-Datei ins PDF-Format konvertieren  {#convert-an-html-file-or-zip-file-to-pdf}
 
 Sie können mithilfe von PDF Generator die folgenden Dateitypen in das Adobe PDF-Format konvertieren:
 
@@ -74,10 +74,10 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 >  * &quot;Kozuka Gothic Pro-VI&quot;
 >  * &quot;Kozuka Mincho Pro-VI&quot;
 >  * &quot;Sazanami Gothic&quot;
->  * &quot;Kozuka Mincho Pr6N&quot;
+>  * ‚Kozuka Mincho Pr6N‘
 >  * &quot;Sazanami Mincho&quot;
->  * &quot;Adobe Heiti Std.&quot;
->  * &quot;Adobe Song Std&quot;
+>  * ‚Adobe Heiti Std.‘
+>  * &quot;Adobe Song Std.&quot;
 
    >
    >
@@ -108,7 +108,7 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 1. Klicken Sie auf Erstellen. Nach der Erstellung wird ein Link zur PDF-Datei angezeigt.
 1. Klicken Sie auf den Link, um die PDF-Datei in Acrobat anzuzeigen.
 
-## Eine PDF-Datei in ein anderes Dateiformat (nur Windows) exportieren {#export-a-pdf-file-to-another-file-format-windows-only}
+## Eine PDF-Datei in ein anderes Dateiformat (nur Windows) exportieren  {#export-a-pdf-file-to-another-file-format-windows-only}
 
 Sie können PDF-Dateien in verschiedene Dateiformate exportieren, wie im Kapitel zum Generate PDF-Dienst in der [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_63) beschrieben.
 
@@ -123,7 +123,7 @@ Sie können PDF-Dateien in verschiedene Dateiformate exportieren, wie im Kapitel
 1. Klicken Sie auf „Exportieren“. Nach der Konvertierung wird ein Link zur exportierten Datei angezeigt.
 1. Klicken Sie auf den Link, um die konvertierte Datei anzuzeigen.
 
-## PDF-Datei optimieren (Windows Only) {#optimize-a-pdf}
+## PDF-Datei optimieren (Nur Windows) {#optimize-a-pdf}
 
 PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Dateien.
 
