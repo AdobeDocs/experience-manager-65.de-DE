@@ -11,13 +11,16 @@ discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+workflow-type: tm+mt
+source-wordcount: '1581'
+ht-degree: 93%
 
 ---
 
 
 # Erstellen und Verwalten von A/B-Test für adaptive Formulare{#create-and-manage-a-b-test-for-adaptive-forms}
 
-## Überblick {#overview-br}
+## Überblick{#overview-br}
 
 Ihre Kunden werden ein Formular wahrscheinlich verlassen, wenn sie nicht davon angesprochen fühlen. Für die Kunden ist dies ein frustrierendes Erlebnis. Für Ihr Unternehmen kann es zusätzlichen Supportaufwand und Mehrkosten bedeuten. Das Kundenerlebnis optimal zu gestalten und dadurch eine höhere Konvertierungsrate zu erzielen, ist absolut unverzichtbar und stellt zugleich eine große Herausforderung dar. Mit Adobe Experience Manager Forms erhalten Sie das entscheidende Werkzeug dafür.
 
@@ -29,17 +32,17 @@ Mit AEM Forms können Sie A/B-Tests für adaptive Formulare in Echtzeit durchfü
 
 Bevor Sie mit der Erstellung und Analyse von A/B-Tests für adaptive Formulare beginnen, müssen Sie den Target-Server einrichten und in AEM Forms integrieren.
 
-### Target einrichten {#set-up-target}
+### Target einrichten  {#set-up-target}
 
 Wenn Sie AEM mit Target integrieren möchten, stellen Sie sicher, dass Sie über ein gültiges Adobe Target-Konto verfügen. Nach der Registrierung bei Adobe Target erhalten Sie einen Clientcode. Sie benötigen den Clientcode, die E-Mail-Adresse, die mit dem Target-Konto verknüpft sind, und das Kennwort, um AEM mit Target zu verbinden. 
 
 Der Clientcode identifiziert das Adobe Target-Kundenkonto und wird als Subdomäne in einer URL verwendet, wenn er über den Adobe Target-Server aufgerufen wird. Bevor Sie fortfahren, überprüfen Sie, ob Sie sich mit Ihren Anmeldedaten bei [https://testandtarget.omniture.com/](https://testandtarget.omniture.com/) anmelden können.
 
-### Integration von Target in AEM Forms {#integrate-target-in-aem-forms}
+### Integration von Target in AEM Forms  {#integrate-target-in-aem-forms}
 
 Gehen Sie zur Integration eines laufenden Target-Servers in AEM Forms wie folgt vor:
 
-1. On AEM server, go to https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
+1. Wechseln Sie auf AEM Server zu https://&lt;*Hostname*:*Anschluss*>/libs/cq/core/content/tools/cloudservices.html.
 
 1. Klicken Sie im Bereich **Adobe Target** auf **Konfigurationen anzeigen** und anschließend auf das Symbol **+**, um eine neue Konfiguration anzuzeigen.
 Bei der Erstkonfiguration von Target klicken Sie auf **Jetzt konfigurieren**.
@@ -54,11 +57,11 @@ Bei der Erstkonfiguration von Target klicken Sie auf **Jetzt konfigurieren**.
 
 1. Erstellen Sie ein Target-Framework, wie beschrieben in [Framework hinzufügen](/help/sites-administering/target.md).
 
-1. Go to https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
+1. Gehen Sie zu https://&lt;*Hostname*:&lt;*Anschluss*>/system/console/configMgr.
 
 1. Klicken Sie auf **AEM Forms Target-Konfiguration**.
 1. Wählen Sie ein **Target-Framework** aus.
-1. Geben Sie im Feld **Target-URLs** alle URLs an, für die A/B-Tests durchgeführt werden sollen. For example, https://&lt;*hostname*>:&lt;*port*>/ for AEM Forms server on OSGi or https://&lt;*hostname*>:&lt;*port*>/lc/ for AEM Forms server on JEE.
+1. Geben Sie im Feld **Target-URLs** alle URLs an, für die A/B-Tests durchgeführt werden sollen. Beispiel: https://&lt;*Hostname*:&lt;*Anschluss*>/ für AEM Forms-Server unter OSGi oder https://&lt;*Hostname*:&lt;*Anschluss*/lc/ für AEM Forms-Server unter JEE.
 Wenn Sie z. B. eine Target-URL für eine Instanz im Veröffentlichungsmodus konfigurieren möchten und Ihre Kunden über den Hostnamen oder die IP-Adresse darauf zugreifen können, müssen Sie beide konfigurieren – sowohl den Hostnamen als auch die IP-Adresse. Wenn Sie nur eine der URLs konfigurieren, ist der A/B-Test für Kunden, die über die andere URL zugreifen möchten, nicht möglich. Klicken Sie auf **+**, um mehrere URLs anzugeben.
 
 1. Klicken Sie auf **Speichern**.
@@ -80,7 +83,7 @@ Zusätzlich zum Jboss-Server können Sie das -Dabtesting.enabled=true jvm-Argume
 >Wenn Sie die konfigurierten Target-URLs später aktualisieren, achten Sie darauf, etwaige laufende A/B-Tests ebenfalls zu aktualisieren, sodass sie auf die aktuellen URLs verweisen. Weitere Informationen zur Aktualisierung von A/B-Tests finden Sie unter [A/B-Test aktualisieren](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
 
 
-## Erstellen von Zielgruppen in AEM {#create-audiences-within-aem}
+## Erstellen von Zielgruppen in AEM  {#create-audiences-within-aem}
 
 Mit AEM können Sie eine Zielgruppe erstellen und für einen A/B-Test verwenden. Die Zielgruppe, die Sie in AEM erstellen, ist in AEM Forms verfügbar. Führen Sie die folgenden Schritte aus, um Zielgruppen in AEM zu erstellen:
 
@@ -90,19 +93,19 @@ Mit AEM können Sie eine Zielgruppe erstellen und für einen A/B-Test verwenden.
 1. Wählen Sie im Dialogfeld „Adobe Target-Konfiguration“ eine Target-Konfiguration und klicken Sie auf **OK**.
 1. Erstellen Sie auf der Seite „Neue Zielgruppe erstellen“ Regeln. Mit Regeln können Sie die Zielgruppe kategorisieren. Beispiel: Sie möchten die Zielgruppen basierend auf dem Betriebssystem kategorisieren. Ihre Zielgruppe A kommt von Windows und Zielgruppe B von Linux.
 
-   1. To categorize audience based on Windows, in Rule #1, select **OS** attribute type. From the When drop-down, select **Windows.**
+   1. Um die Audience basierend auf Windows zu kategorisieren, wählen Sie in Regel 1 den Attributtyp **OS** aus. Wählen Sie aus der Dropdownliste Wann **Windows.**
 
-   1. To categorize audience based on Linux, in Rule #2, select **OS** attribute type. From the **When** drop-down, select **Linux**, and click **Next**.
+   1. Um die Audience basierend auf Linux zu kategorisieren, wählen Sie in Regel 2 den Attributtyp **OS** aus. Wählen Sie aus der Dropdownliste **Wenn** **Linux** und klicken Sie auf **Weiter**.
 
 1. Geben Sie einen Namen für die erstellte Zielgruppe an und klicken Sie auf **Speichern**.
 
 Wie nachfolgend gezeigt, können Sie die Zielgruppe auswählen, wenn Sie A/B-Test für ein Formular konfigurieren.
 
-## A/B-Test erstellen {#create-a-b-test}
+## A/B-Test erstellen  {#create-a-b-test}
 
 Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives Formular zu erstellen.
 
-1. Go to **Forms &amp; Documents** at https://&lt;*hostname*>:&lt;*port*>/aem/forms.html/content/dam/formsanddocuments.
+1. Wechseln Sie zu **Forms und Dokumente** unter https://&lt;*Hostname*:*Anschluss*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Navigieren Sie zum Ordner mit dem adaptiven Formular.
 1. Klicken Sie auf das Tool **Auswählen** in der Symbolleiste und wählen Sie das adaptive Formular aus.
@@ -131,7 +134,7 @@ Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives For
 
 Ihr A/B-Test wird jetzt ausgeführt und die Formularvarianten mit ihren unterschiedlichen Kundenerlebnissen werden der angegebenen Zielgruppe in der festgelegten Verteilung nach dem Zufallsprinzip präsentiert.
 
-## A/B-Test aktualisieren {#update-a-b-test}
+## A/B-Test aktualisieren  {#update-a-b-test}
 
 Sie können die Zielgruppe und die Verteilung der Erlebnisse eines laufenden A/B-Tests aktualisieren. Gehen Sie dazu wie folgt vor:
 
