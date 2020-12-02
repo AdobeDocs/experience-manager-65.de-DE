@@ -1,6 +1,6 @@
 ---
 title: MIME-Typ von Assets mithilfe von Apache Tika erkennen
-description: Enable Apache Tika to help [!DNL Experience Manager Assets] detect the MIME type of assets from the content stream during the upload operation instead of the file extension.
+description: 'Aktivieren Sie die Apache-Tika, um beim Upload-Vorgang anstelle der Dateierweiterung den MIME-Typ von Assets vom Inhaltsstream zu erkennen. [!DNL Experience Manager Assets] '
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
@@ -11,23 +11,23 @@ ht-degree: 11%
 ---
 
 
-# MIME-Typ von Assets erkennen mit [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
+# MIME-Typ von Assets mit [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika} erkennen
 
-Normally, [!DNL Adobe Experience Manager Assets] detects the MIME type of assets that you upload from their file extension.
+Normalerweise erkennt [!DNL Adobe Experience Manager Assets] den MIME-Typ von Assets, die Sie von ihrer Dateierweiterung hochladen.
 
-If you use [!DNL Apache Tika] to upload assets, [!DNL Assets] detects their MIME type from the content stream during the upload operation instead of the file extension.
+Wenn Sie zum Hochladen von Assets [!DNL Apache Tika] verwenden, erkennt [!DNL Assets] deren MIME-Typ während des Upload-Vorgangs vom Inhaltsstream und nicht von der Dateierweiterung.
 
-Diese Funktion ist standardmäßig deaktiviert.  To enable the feature, configure the **[!UICONTROL Day CQ DAM Mime Type]** service from [!UICONTROL Configuration Manager].
+Diese Funktion ist standardmäßig deaktiviert.  Um die Funktion zu aktivieren, konfigurieren Sie den Dienst **[!UICONTROL Day CQ DAM Mime Type]** von [!UICONTROL Configuration Manager].
 
 >[!NOTE]
 >
->MIME type detection using the [!DNL Apache Tika] library is a resource-intensive operation.
+>Die MIME-Typerkennung mit der Bibliothek [!DNL Apache Tika] ist ein ressourcenintensiver Vorgang.
 
-1. Um die Configuration Manager-Webkonsole zu öffnen, öffnen Sie `https://[aem_server]:[port]/system/console/configMgr`.
+1. Um die Configuration Manager-Webkonsole zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 
 1. Suchen Sie in der Liste der Dienste nach **[!UICONTROL Day CQ DAM Mime Type Service]** und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 
-1. Select the **[!UICONTROL Detect MIME from content]** option to enable the parsing of uploaded assets to determine their MIME type while ignoring file extensions. Standardmäßig ist diese Option deaktiviert. 
+1. Wählen Sie die Option **[!UICONTROL MIME aus Inhalt erkennen]**, um die Analyse hochgeladener Assets zu aktivieren, um deren MIME-Typ zu bestimmen, während Sie Dateierweiterungen ignorieren. Standardmäßig ist diese Option deaktiviert. 
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
