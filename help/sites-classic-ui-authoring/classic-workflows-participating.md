@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +48,7 @@ Sie können die folgenden Aktionen durchführen, um ein Arbeitselement zu verarb
 
 ### Benachrichtigungen über zugewiesene Workflow-Aktionen {#notifications-of-assigned-workflow-actions}
 
-Wenn Ihnen ein Arbeitselement zugeordnet wird (z. B. **Inhalt bestätigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
+Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
 
 * Die Spalte **Status** der Websites-Konsole zeigt an, wenn eine Seite in einem Workflow enthalten ist:
 
@@ -68,7 +71,7 @@ Nachdem Sie die angegebene Aktion abgeschlossen haben, können Sie das Arbeitsel
 
 1. Klicken Sie auf **OK**, um die Aktion zu bestätigen.
 
-### Delegieren eines Teilnehmerschritts {#delegating-a-participant-step}
+### Delegieren eines Teilnehmerschritts    {#delegating-a-participant-step}
 
 Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren.
 
