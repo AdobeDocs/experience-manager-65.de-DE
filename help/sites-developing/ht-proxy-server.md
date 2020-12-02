@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 91%
 
 ---
 
@@ -72,7 +75,7 @@ Schreibt die Interaktionen zwischen Client und Server in eine Protokolldatei. Di
 
 **`-i <numIndentions>`**(Einzug hinzufügen)
 
-Die einzelnen Verbindungen werden für eine bessere Lesbarkeit eingezogen. Der Standardwert beträgt 16 Ebenen. This feature was introduced with `proxy.jar version 1.16`.
+Die einzelnen Verbindungen werden für eine bessere Lesbarkeit eingezogen. Der Standardwert beträgt 16 Ebenen. Diese Funktion wurde mit `proxy.jar version 1.16` eingeführt.
 
 ### Protokollformat {#log-format}
 
@@ -86,7 +89,7 @@ So kann eine Webseitenanforderung zum Beispiel wie folgt aussehen:
 
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anforderung einer Webseite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
-* &#x200B;# 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
+* # 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
 * `[GET <?>]` ist der Inhalt der Anforderung, im Beispiel einer der HTTP-Header (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:
@@ -112,7 +115,7 @@ befindet, zusammen mit einer Bilddatei unter
 
 `/content/test.jpg`
 
-The content of `test.html` is:
+Der Inhalt von `test.html` lautet:
 
 ```xml
 <html>
@@ -126,11 +129,11 @@ The content of `test.html` is:
 </html>
 ```
 
-Assuming the AEM instance is running on `localhost:4502` we start the proxy like this:
+Wenn die AEM Instanz auf `localhost:4502` ausgeführt wird, wird der Proxy wie folgt Beginn:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-The CQ/CRX instance can now be accessed though the proxy at `localhost:4444` and all communication via this port is logged to `test.log`.
+Die CQ/CRX-Instanz kann nun über den Proxy unter `localhost:4444` aufgerufen werden und die gesamte Kommunikation über diesen Anschluss wird an `test.log` protokolliert.
 
 Wenn Sie sich nun die Ausgabe des Proxys ansehen, können Sie die Interaktion zwischen dem Browser und der AEM-Instanz beobachten.
 
@@ -145,7 +148,7 @@ Wenn Sie anschließend einen Browser öffnen und auf die Testseite unter
 
 `http://localhost:4444/content/test.html`
 
-and we see the browser make a `GET` request for the page:
+und wir sehen, dass der Browser eine `GET` Anforderung für die Seite stellt:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
