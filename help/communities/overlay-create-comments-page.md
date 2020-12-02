@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # Kommentarseite erstellen {#create-comments-page}
 
-**[⇐ Overlay Comments Component](overlay-comments.md)[Create Nodes](overlay-create-nodes.md)**
+**[⇐ Overlay Comments ](overlay-comments.md) [ComponentErstellen von Nodes ⇒](overlay-create-nodes.md)**
 
 ## Kommentarseite {#comments-page}
 
-Das Handbuch [zu](components-guide.md) Community-Komponenten bietet die Möglichkeit, die Kommentarkomponente einfach zu überlagern.
+Das Handbuch [Community-Komponenten](components-guide.md) bietet die Möglichkeit, die Kommentarkomponente einfach zu überlagern.
 
 Ansicht der Seite in der Autoreninstanz:
 
@@ -32,4 +32,4 @@ Ansicht der Seite in der Autoreninstanz:
 
 ![Kommentare](assets/comments.png)
 
-**[⇐ Overlay Comments Component](overlay-comments.md)[Create Nodes](overlay-create-nodes.md)**
+**[⇐ Overlay Comments ](overlay-comments.md) [ComponentErstellen von Nodes ⇒](overlay-create-nodes.md)**
