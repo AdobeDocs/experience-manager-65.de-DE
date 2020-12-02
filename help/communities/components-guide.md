@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Handbuch der Community-Komponenten  {#community-components-guide}
 
-Das Handbuch &quot;Community Components&quot;ist ein interaktives Entwicklungstool für den Rahmen für [soziale Komponenten (SCF)](scf.md). Es bietet eine Liste der verfügbaren AEM Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten bestehen.
+Das Handbuch Community-Komponenten ist ein interaktives Entwicklungstool für das [Social-Komponenten-Framework (SCF)](scf.md). Es bietet eine Liste der verfügbaren AEM Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten bestehen.
 
 Neben den grundlegenden Informationen für jede Komponente ermöglicht das Handbuch Experimente darüber, wie die SCF-Komponenten/-Funktionen funktionieren und wie sie konfiguriert oder angepasst werden können.
 
@@ -39,9 +39,9 @@ Die Interaktionen mit den Communities-Komponenten variieren je nach:
 * Der Server (Autor oder Veröffentlichungsserver).
 * Gibt an, ob der Site-Besucher angemeldet ist.
 * Wenn Sie sich angemeldet haben, werden die dem Mitglied zugewiesenen Rechte angezeigt.
-* Gibt an, ob der Standard-SRP, [JSRP](jsrp.md), verwendet wird.
+* Gibt an, ob der Standard-SRP [JSRP](jsrp.md) verwendet wird.
 
-Wenn Sie beim Autor in den Bearbeitungsmodus wechseln möchten, fügen Sie nach dem Servernamen entweder `editor.html` oder `cf#` als erstes Pfadsegment ein:
+Um beim Autor in den Bearbeitungsmodus zu wechseln, fügen Sie entweder `editor.html` oder `cf#` als erstes Pfadsegment nach dem Servernamen ein:
 
 * Standard-Benutzeroberfläche:
 
@@ -59,9 +59,9 @@ Wenn Sie beim Autor in den Bearbeitungsmodus wechseln möchten, fügen Sie nach 
 >
 >Kehren Sie bei angezeigter Komponentenseite zum Bearbeitungsmodus zurück, um das Dialogfeld der Komponente zu öffnen.
 >
->For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>Ansicht der [Quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md) für allgemeine Authoring-Informationen.
 >
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+>Wenn Sie mit AEM nicht vertraut sind, Ansicht der Dokumentation unter [Basisbehandlung](../../help/sites-authoring/basic-handling.md).
 
 ### Startseite {#home-page}
 
@@ -95,13 +95,13 @@ Der Hauptteil des Handbuchs wird angezeigt:
 
 ### Autoreninteraktionen {#author-interactions}
 
-Wenn Sie das Handbuch für eine Autoreninstanz verwenden, können Sie die Konfiguration einer Komponente durch Öffnen des Dialogfelds durchführen. Informationen für Entwickler finden Sie im Abschnitt [Komponenten und Funktionen](essentials.md) der Dokumentation, während die Dialogeinstellungen im Abschnitt [Communities Komponenten](author-communities.md) für Autoren beschrieben werden.
+Wenn Sie das Handbuch für eine Autoreninstanz verwenden, können Sie die Konfiguration einer Komponente durch Öffnen des Dialogfelds durchführen. Informationen für Entwickler finden Sie im Abschnitt [Komponenten- und Funktionskomponenten](essentials.md) der Dokumentation, während die Dialogeinstellungen im Abschnitt [Communities-Komponenten](author-communities.md) für Autoren beschrieben werden.
 
-Im Handbuch &quot;Community-Komponenten&quot;werden einige Einstellungen für das Komponentendialogfeld mit dem Status &quot; [Einschließen](scf.md#add-or-include-a-communities-component) &quot;überlagert. Um zwischen der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource zu wechseln, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den inklusiven Text aus und klicken Sie bei gedrückter Dublette, um das Bearbeitungsdialogfeld zu öffnen:
+Im Handbuch &quot;Community-Komponenten&quot;werden einige Einstellungen im Komponentendialogfeld mit dem Umschalter [Includable](scf.md#add-or-include-a-communities-component) überlagert. Um zwischen der vorhandenen Ressource oder einer dynamisch eingeschlossenen Ressource zu wechseln, wählen Sie im Bearbeitungsmodus sowohl die Komponente als auch den inklusiven Text aus und klicken Sie bei gedrückter Dublette, um das Bearbeitungsdialogfeld zu öffnen:
 
 ![community-component3](assets/community-component3.png)
 
-Auf der Registerkarte **Vorlagen** :
+Auf der Registerkarte **Vorlagen**:
 
 ![community-component4](assets/community-component4.png)
 
@@ -123,19 +123,19 @@ Bei Verwendung des Handbuchs in einer Veröffentlichungsinstanz können die Komp
 
 >[!NOTE]
 >
->Wenn die SRP standardmäßig auf [JSRP](jsrp.md)festgelegt ist, ist UGC, die in der Veröffentlichungsinstanz eingegeben wird, nur bei der Veröffentlichung sichtbar und *nicht* in der [Moderationskonsole](moderate-ugc.md) auf der Autoreninstanz sichtbar.
+>Wenn die SRP standardmäßig auf [JSRP](jsrp.md) festgelegt ist, ist die in der Veröffentlichungsinstanz eingegebene UGC nur bei der Veröffentlichung sichtbar und wird in der Autoreninstanz *nicht* in der Konsole [Moderation](moderate-ugc.md) sichtbar.
 
 ## Client-seitige Bibliotheken {#client-side-libraries}
 
-Die clientseitigen Bibliotheken (clientlibs), die für jede Komponente aufgelistet sind, sind diejenigen, auf die beim Platzieren der Komponente auf einer Seite verwiesen werden *muss* . Die clientlibs bieten eine Möglichkeit zum Verwalten und Optimieren des Downloads von Javascript und CSS, die zur Wiedergabe der Komponente im Browser verwendet werden.
+Die clientseitigen Bibliotheken (clientlibs), die für jede Komponente aufgelistet werden, sind die *erforderlichen*, auf die verwiesen werden soll, wenn die Komponente auf einer Seite platziert wird. Die clientlibs bieten eine Möglichkeit zum Verwalten und Optimieren des Downloads von Javascript und CSS, die zur Wiedergabe der Komponente im Browser verwendet werden.
 
-Weitere Informationen finden Sie unter [Clientlibs für Communities-Komponenten](clientlibs.md).
+Weitere Informationen finden Sie unter [clientlibs für Communities-Komponenten](clientlibs.md).
 
 ## Personifikation {#impersonation}
 
-Verwenden Sie für die Autoreninstanz, bei der einer oft als Administrator oder Entwickler angemeldet ist, das Textfeld links neben der Schaltfläche **[!UICONTROL Eigenschaftswechsel]** , um den Benutzernamen einzugeben oder aus der Pulldown-Liste auszuwählen, und klicken Sie dann auf die Schaltfläche. Klicken Sie auf &quot;Zurück&quot;, um den Identitätswechsel zu signalisieren und zu beenden.
+Verwenden Sie für die Autoreninstanz, bei der einer häufig als Administrator oder Entwickler angemeldet ist, das Textfeld links neben der Schaltfläche **[!UICONTROL Impersonate]**, um die Komponente als ein anderer Benutzer anzuzeigen, und klicken Sie dann auf die Schaltfläche, um den Benutzernamen einzugeben oder aus der Pulldown-Liste auszuwählen. Klicken Sie auf &quot;Zurück&quot;, um den Identitätswechsel zu signalisieren und zu beenden.
 
-Die Instanz im Veröffentlichungsmodus muss nicht imitiert werden. Verwenden Sie einfach den Link Anmelden/Abmelden, um verschiedene Benutzer, wie z.B. die [Demobenutzer](tutorials.md#demo-users), zu imitieren.
+Die Instanz im Veröffentlichungsmodus muss nicht imitiert werden. Verwenden Sie einfach den Link Anmelden/Abmelden, um verschiedene Benutzer zu imitieren, z. B. [Demobenutzer](tutorials.md#demo-users).
 
 ## Anpassung {#customization}
 
@@ -147,15 +147,15 @@ Bei Aktivierung steht jede SCF-Komponente für die Prototypisierung möglicher A
 >
 >**Dieses Tool ist schreibgeschützt**. Keine der an Vorlagen, CSS oder Daten vorgenommenen Änderungen werden im Repository gespeichert.
 
-Um schnell mit Anpassungen zu experimentieren, muss die `scg:showIde`Eigenschaft dem content-JCR-Knoten der Komponentenseite hinzugefügt und auf true eingestellt werden.
+Um schnell mit Anpassungen zu experimentieren, muss die `scg:showIde`Eigenschaft dem content-JCR-Knoten der Komponentenseite hinzugefügt und auf true gesetzt werden.
 
 Verwenden der Kommentarkomponente als Beispiel für die Autor- oder Veröffentlichungsinstanz, die mit Administratorberechtigungen angemeldet ist:
 
-1. Zur [CRXDE Lite navigieren](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Gehen Sie zu [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   For example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
+   Beispiel: [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. Wählen Sie den `jcr:content` Knoten der Komponente
+1. Wählen Sie den Knoten `jcr:content` der Komponente aus
 
    Beispiel: `/content/community-components/en/comments/jcr:content`
 
@@ -165,7 +165,7 @@ Verwenden der Kommentarkomponente als Beispiel für die Autor- oder Veröffentli
    * **Typ** `String`
    * **Wert** `true`
 
-1. Select **[!UICONTROL Save All]**
+1. Wählen Sie **[!UICONTROL Alle speichern]**
 1. Laden Sie die Seite &quot;Kommentare&quot;im Handbuch erneut.
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
@@ -194,7 +194,7 @@ Mit dem CSS-Editor kann das CSS geändert und auf die Beispielkomponenteninstanz
 
 Eine Regel kann ausgewählt werden, um die Teile des DOM mithilfe dieser Regel hervorzuheben, indem Sie neben der Regel im Bundstegen klicken.
 
-### Registerkarte &quot;Daten&quot; {#data-tab}
+### Datenregisterkarte {#data-tab}
 
 Wählen Sie die Registerkarte &quot;Daten&quot;, um die Endpunktdaten &quot;.social.json&quot;anzuzeigen. Diese Daten können bearbeitet werden und werden auf die Beispielkomponenteninstanz angewendet.
 
