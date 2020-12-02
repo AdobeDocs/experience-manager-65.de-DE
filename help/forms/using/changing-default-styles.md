@@ -11,6 +11,9 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '390'
+ht-degree: 73%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 HTML5-Formulare werden mithilfe von HTML5-Funktionen gerendert. Der Stil des gerenderten Formulars wird mit CSS festgelegt. Das Standarderscheinungsbild von HTML5-Formularen ist der PDF-Darstellung ähnlich. Entwickler können benutzerdefinierte CSS verwenden, um das Standarderscheinungsbild von HTML5-Formularen zu ändern.
 
-This article provides step-by-step information to change style of an HTML5 form and [Introduction to Styles](/help/forms/using/css-styles.md) article contains detailed information about various styling aspects of HTML5 forms. Lesen Sie den Artikel &quot;Einführung zu Stilen&quot;, bevor Sie die in diesem Artikel genannten Schritte durchführen.
+Dieser Artikel enthält Schritt-für-Schritt-Informationen zum Ändern des Stils eines HTML5-Formulars und der [Einführung in Stile](/help/forms/using/css-styles.md)-Artikel enthält detaillierte Informationen zu den verschiedenen Gestaltungsaspekten von HTML5-Formularen. Lesen Sie den Artikel &quot;Einführung zu Stilen&quot;, bevor Sie die in diesem Artikel genannten Schritte durchführen.
 
 Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutzerdefiniertem Stil.
 
@@ -29,17 +32,18 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
 1. **Wählen Sie ein Profil, um benutzerdefinierte Stile hinzufügen**
 
-   Access the CRX DE interface at the URL: **https://&lt;server>:&lt;port>/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a new Profile](/help/forms/using/custom-profile.md)
+   Greifen Sie auf die CRX DE-Schnittstelle unter der URL zu: **https://&lt;server>:&lt;port>/crx/de** und erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil. Informationen zum Erstellen eines Profils finden Sie unter [Erstellen eines neuen Profils](/help/forms/using/custom-profile.md)
 
 1. **Erstellen Sie ein CSS-Stylesheet zum Gestalten der HTML5-Formulare**
 
    Navigieren Sie zu dem Ordner, in dem Sie den Profil-Renderer erstellt haben, und erstellen Sie eine CSS-Stylesheet-Datei. Die zu befolgenden Schritte:
 
-   1. Right click the folder and select **create** > **create File** from the menu
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner und wählen Sie **create** > **create File** aus dem Menü
 
    1. Geben Sie im Dateierstellungsdialog den Namen des Stylesheets ein. Achten Sife darauf, die Erweiterung .css (z. B. stylesheet.css) zu verwenden.
    1. Öffnen Sie im Navigationsbereich die von Ihnen erstellte CSS-Datei.
    1. Definieren Sie die CSS-Klassen der Komponenten, die Sie gestalten wollen, und fügen Sie in diesen Klassen Stile hinzu.
+
    Welche CSS-Klassen für eine bestimmte Komponente in Ihrem HTML5-Formular zu erstellen sind, erfahren Sie unter [Einführung zu Stilen](/help/forms/using/css-styles.md).
 
 1. **Schließen Sie das Stylesheet im Profil-Renderer ein.**
