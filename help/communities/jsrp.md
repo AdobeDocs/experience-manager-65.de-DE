@@ -20,27 +20,27 @@ ht-degree: 1%
 
 # JSRP - JCR Datenspeicherung Resource Provider {#jsrp-jcr-storage-resource-provider}
 
-## Informationen zu JSRP {#about-jsrp}
+## Über JSRP {#about-jsrp}
 
-Wenn AEM Communities JSRP als Standardoption für die Datenspeicherung verwenden, werden Community-Inhalte in JCR gespeichert und benutzerdefinierte Inhalte (UGC) können nur von der Autor- oder Veröffentlichungsinstanz aus aufgerufen werden, in der sie veröffentlicht wurden.
+Wenn AEM Communities JSRP als Standardoption für die Datenspeicherung verwendet, werden Community-Inhalte in JCR gespeichert und benutzerdefinierte Inhalte (UGC) können nur von der Autor- oder Veröffentlichungsinstanz aufgerufen werden, in der sie veröffentlicht wurden.
 
 Aufgrund der einfachen Bereitstellung ist JSRP im Allgemeinen am besten für Demonstrations- oder Entwicklungs-Umgebung einer Veröffentlichungsinstanz und einer Autoreninstanz geeignet.
 
-Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-of-srp-options) und der [empfohlenen Topologien](topologies.md).
+Siehe auch [Eigenschaften der SRP-Optionen](working-with-srp.md#characteristics-of-srp-options) und [Empfohlene Topologien](topologies.md).
 
 ## Konfiguration {#configuration}
 
-### JSRP auswählen {#select-jsrp}
+### JSRP {#select-jsrp}
 
 Standardmäßig ist JSRP die Datenspeicherung-Option für UGC.
 
-Die [Datenspeicherung Configuration Console](srp-config.md) ermöglicht die Auswahl der Standardkonfiguration der Datenspeicherung, die festlegt, welche SRP-Implementierung verwendet werden soll.
+Die [Datenspeicherung Configuration Console](srp-config.md) ermöglicht die Auswahl der Standardkonfiguration der Datenspeicherung, die die zu verwendende Implementierung von SRP identifiziert.
 
 In der Umgebung &quot;author&quot;zur Datenspeicherung Configuration Console
 
-* Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Communities]** > Konfiguration der **[!UICONTROL Datenspeicherung]**
+* Aus globaler Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Datenspeicherung Configuration]**
 
-* Select **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+* Wählen Sie **[!UICONTROL JCR Datenspeicherung Resource Provider (JSRP)]**
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**
 
@@ -50,40 +50,40 @@ In der Umgebung &quot;author&quot;zur Datenspeicherung Configuration Console
 
 Während JSRP die Standardkonfiguration ist, stellen Sie sicher, dass die gleiche Konfiguration in der Umgebung &quot;Veröffentlichen&quot;festgelegt ist:
 
-* Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**
-* Wählen Sie **[!UICONTROL Baum]** aktivieren > **[!UICONTROL Beginn-Pfad]**:
+* Aus globaler Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**
+* Wählen Sie **[!UICONTROL Baum aktivieren]** > **[!UICONTROL Beginn Pfad]**:
 
-   * Navigieren zu `/conf/global/settings/community/srpc/`
+   * Gehen Sie zu `/conf/global/settings/community/srpc/`
 
-* Aktivieren **[!UICONTROL auswählen]**
+* Wählen Sie **[!UICONTROL Aktivieren]**
 
 ## Verwalten von Benutzerdaten {#managing-user-data}
 
-Informationen zu *Benutzern*, *Profilen* und *Benutzergruppen*, die häufig in der Umgebung zur Veröffentlichung eingegeben werden, finden Sie unter:
+Informationen zu *Profilen*, *Benutzergruppen* und *die häufig in die Umgebung &quot;Veröffentlichen&quot;eingegeben wurden, finden Sie unter:*
 
 * [Benutzersynchronisierung](sync.md)
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
 
 ## Fehlerbehebung {#troubleshooting}
 
-### UGC in JCR nicht sichtbar {#ugc-not-visible-in-jcr}
+### UGC in JCR {#ugc-not-visible-in-jcr} nicht sichtbar
 
 Vergewissern Sie sich, dass JSRP als Standardanbieter konfiguriert wurde, indem Sie die Konfigurationsoption der Datenspeicherung überprüfen. Standardmäßig ist der Datenspeicherung Resource Provider JSRP.
 
-Gehen Sie bei allen Autoren- und Veröffentlichungsinstanzen von AEM erneut zur Datenspeicherung Configuration Console oder überprüfen Sie das AEM-Repository:
+Rufen Sie auf allen Instanzen im Autorenmodus und AEM Veröffentlichungsmodus erneut die Datenspeicherung Configuration Console auf oder überprüfen Sie das AEM Repository:
 
-* In JCR, if [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* In JCR, wenn [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Enthält keinen [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) -Knoten, bedeutet dies, dass der Datenspeicherung-Provider JSRP ist.
-   * Wenn der Knoten srpc vorhanden ist und Node- [Standardkonfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)enthält, sollten die Eigenschaften der Standardkonfiguration JSRP als Standardanbieter definieren.
+   * Enthält keinen [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc)-Knoten, bedeutet dies, dass der Datenspeicherung-Provider JSRP ist.
+   * Wenn der Knoten srpc vorhanden ist und den Knoten [defaultConfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration) enthält, sollten die Eigenschaften der Standardkonfiguration JSRP als Standardanbieter definieren.
 
-### UGC auf Autoreninstanz nicht sichtbar {#ugc-not-visible-on-author-instance}
+### UGC auf Autoreninstanz {#ugc-not-visible-on-author-instance} nicht sichtbar
 
 Das ist kein Fehler. Charakteristisch für JSRP ist, dass in der Umgebung &quot;Veröffentlichen&quot;eingegebene Community-Inhalte nur in der Umgebung &quot;Veröffentlichen&quot;sichtbar sind.
 
-### UGC in Veröffentlichungsinstanz nicht sichtbar {#ugc-not-visible-on-publish-instance}
+### UGC in Veröffentlichungsinstanz {#ugc-not-visible-on-publish-instance} nicht sichtbar
 
-Wenn eine einzelne Veröffentlichungsinstanz oder ein Veröffentlichungscluster bereitgestellt ist, befolgen Sie die Anweisungen für [UGC in JCR](#ugc-not-visible-in-jcr)nicht sichtbar.
+Wenn eine einzelne Veröffentlichungsinstanz oder ein Veröffentlichungscluster bereitgestellt ist, befolgen Sie die Anweisungen für [UGC nicht sichtbar in JCR](#ugc-not-visible-in-jcr).
 
 Wenn eine Veröffentlichungsfarm bereitgestellt wird, ist ein Merkmal von JSRP, dass Community-Inhalte nur auf der Veröffentlichungsinstanz sichtbar sind, auf der sie veröffentlicht wurden.
 
