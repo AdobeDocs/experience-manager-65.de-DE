@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
 
 Das Skript `start` befindet sich im Verzeichnis *&lt;cq-installation>/bin*. Sowohl die Unix- als auch die Windows-Version wird bereitgestellt. Das Skript startet die im Verzeichnis *&lt;cq-installation>* installierte Instanz.
 
-Diese beiden Versionen unterstützen eine Liste von Umgebungsvariablen, mit denen die AEM-Instanz gestartet und eingestellt werden kann.
+Diese beiden Versionen unterstützen eine Liste von Umgebung-Variablen, die zum Beginn und zur Abstimmung der AEM verwendet werden können.
 
 <table>
  <tbody>
@@ -117,9 +120,9 @@ Wenn Sie das Repository einfach vorkonfigurieren möchten (ohne seine Position z
 
 * `repository.xml` am erforderlichen Speicherort extrahieren
 
-* update `repository.xml` as required
+* Aktualisieren Sie `repository.xml` nach Bedarf
 
-* erstellen `bootstrap.properties` und definieren `repository.config`
+* `bootstrap.properties` erstellen und `repository.config` definieren
 
 Zur Erinnerung: Führen Sie diese Aktionen vor der tatsächlichen Installation aus.
 
