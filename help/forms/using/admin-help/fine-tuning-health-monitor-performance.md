@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +25,7 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 <table>
  <thead>
   <tr>
-   <th><p>Eigenschaft</p></th>
+   <th><p>Property</p></th>
    <th><p>Zweck</p></th>
    <th><p>Standardwert</p></th>
   </tr>
@@ -64,20 +67,20 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 ## Java-Optionen zu JBoss hinzufügen {#add-java-options-to-jboss}
 
 1. JBoss-Anwendungsserver beenden.
-1. Open the *[appserver root]*/bin/run.bat (Windows) or run.sh (Linux or UNIX) in an editor and add any of the Java options as required.
+1. Öffnen Sie den *[Anwendungsserver-Stammordner]*/bin/run.bat (Windows) oder run.sh (Linux oder UNIX) in einem Editor und fügen Sie die Java-Optionen nach Bedarf hinzu.
 1. Starten Sie den Server neu.
 
-## Java-Optionen zu WebLogic hinzufügen {#add-java-options-to-weblogic}
+## Java-Optionen zu WebLogic hinzufügen  {#add-java-options-to-weblogic}
 
-1. Start the WebLogic administration console by typing https://[host name]:&#39;port&#39;/console in the URL line of a web browser.
+1. Beginn Sie WebLogic Administration Console, indem Sie in die Adresszeile eines Browsers https://[Hostname]:&#39;Anschluss&#39;/console eingeben.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
-1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. For example, adding - `Dadobe.healthmonitor.enabled=false` disables Health Monitor.
+1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. Wenn Sie beispielsweise - `Dadobe.healthmonitor.enabled=false` hinzufügen, wird Health Monitor deaktiviert.
 1. Klicken Sie auf Save und dann auf Activate Changes.
 1. Starten Sie WebLogic Managed Server neu.
 
-## Java-Optionen zu WebSphere hinzufügen {#add-java-options-to-websphere}
+## Java-Optionen zu WebSphere hinzufügen  {#add-java-options-to-websphere}
 
 1. Führen Sie in der Navigationsstruktur von WebSphere Administrative Console die folgenden Schritte für Ihren Anwendungsserver aus:
 
