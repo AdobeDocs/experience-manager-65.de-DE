@@ -19,9 +19,9 @@ ht-degree: 81%
 
 # Konfigurieren der Sendeaktion{#configuring-the-submit-action}
 
-## Einführung in Übermittlungsaktionen {#introduction-to-submit-actions}
+## Einführung in die Übermittlungsaktionen {#introduction-to-submit-actions}
 
-Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßige Übermittlungsaktion kopieren und erweitern und so eine eigene Übermittlungsaktion erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten. Die Übermittlungsaktion kann [synchrones oder asynchrones Senden](../../forms/using/asynchronous-submissions-adaptive-forms.md)verwenden.
+Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßige Übermittlungsaktion kopieren und erweitern und so eine eigene Übermittlungsaktion erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten. Die Übermittlungsaktion kann [synchrone oder asynchrone Übermittlung](../../forms/using/asynchronous-submissions-adaptive-forms.md) verwenden.
 
 Sie können eine Sendeaktion in der Seitenleiste im Bereich **Senden** des „Container für adaptive Formulare“ konfigurieren.
 
@@ -45,12 +45,12 @@ Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmä�
 
 >[!NOTE]
 >
->Ensure that the [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
+>Stellen Sie sicher, dass [AEM_Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM folder
 >vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
 
 >[!CAUTION]
 >
->If you [prefill](../../forms/using/prepopulate-adaptive-form-fields.md) a form template, form data model, or schema based adaptive form with XML or JSON data complaint to a schema (XML schema, JSON schema, form template, or form data model) that is data does not contain &lt;afData>, &lt;afBoundData>, and &lt;/afUnboundData> tags, then the data of unbounded fields (Unbounded fields are adaptive form fields without [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) property) of the adaptive form is lost.
+>Wenn Sie eine Formularvorlage, ein Formulardatenmodell oder ein Schema-basiertes adaptives Formular mit XML- oder JSON-Daten an ein Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) ausfüllen, das keine Daten enthält, die die Tags &lt;afData>, &lt;afBoundData> und &lt;/afUnboundData> enthalten, dann die Daten ungebundene Felder (Nicht gebundene Felder sind adaptive Formularfelder ohne [bindref](../../forms/using/prepopulate-adaptive-form-fields.md)-Eigenschaft) des adaptiven Formulars gehen verloren.](../../forms/using/prepopulate-adaptive-form-fields.md)[
 
 Sie können eine benutzerdefinierte Übermittlungsaktion für adaptive Formulare entsprechend des Anwendungsfalls schreiben. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](../../forms/using/custom-submit-action-form.md).
 
@@ -81,11 +81,11 @@ Stellen Sie die URL bereit, um Daten an einen externen Server zu veröffentliche
 
 ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Danksagungsseite](assets/post-enabled-actionconfig.png)
 
-In the example above, user entered information in `textbox` is captured using parameter `param1`. Syntax to post data captured using `param1` is:
+Im obigen Beispiel wird der in `textbox` eingegebene Benutzer mithilfe des Parameters `param1` erfasst. Die Syntax zum Posten von mit `param1` erfassten Daten lautet:
 
 `String data=request.getParameter("param1");`
 
-Similarly, paramenters that you use for posting XML data and attachments are `dataXml` and `attachments`.
+Gleichermaßen sind die Parameter `dataXml` und `attachments`, die Sie zum Veröffentlichen von XML-Daten und -Anlagen verwenden.
 
 Beispielsweise können Sie diese beiden Parameter in Ihrem Skript verwenden, um Daten an einem Restendpunkt zu analysieren. Verwenden Sie die folgende Syntax, um Daten zu speichern und zu analysieren: 
 
@@ -96,7 +96,7 @@ In diesem Beispiel speichert `data` die XML-Daten und `att` speichert Anlagendat
 
 ## E-Mail senden {#send-email}
 
-The **Send Email** submit action sends an email to one or more recipients on successful submission of the form. Die generierte E-Mail kann Formulardaten in einem vordefinierten Formaten enthalten.
+Bei der Übermittlungsaktion **E-Mail senden** wird nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger gesendet. Die generierte E-Mail kann Formulardaten in einem vordefinierten Formaten enthalten.
 
 >[!NOTE]
 Alle Formularfelder müssen über verschiedene Elementnamen verfügen, auch wenn sie in verschiedene Fenster platziert werden, um in eine E-Mail Formulardaten einzubinden.
@@ -114,21 +114,21 @@ Bei der Übermittlungsoption **An Formular-Workflow übermitteln** werden eine D
 
 Weitere Informationen zum Konfigurieren der Sendeaktion „An Formular-Workflow übermitteln“ finden Sie unter [Senden und Verarbeiten Ihrer Formulardaten mit Formular-Workflows](../../forms/using/submit-form-data-livecycle-process.md).
 
-## Senden mit Formulardatenmodell {#submit-using-form-data-model}
+## Senden mit Formulardatenmodell  {#submit-using-form-data-model}
 
-The **Submit using Form Data Model** submit action writes submitted adaptive form data for the specified data model object in a form data model to its data source. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
+Die Übermittlungsaktion **Mit Formulardatenmodell senden** schreibt gesendete adaptive Formulardaten für das angegebene Datenmodellobjekt in einem Formulardatenmodell in seine Datenquelle. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
 
 Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell und einem Datensatzdokument (Document of Record) an die Datenquelle senden.
 
 Weitere Informationen zum Formulardatenmodell finden Sie unter [Datenintegration für AEM Forms](../../forms/using/data-integration.md).
 
-## Übermittlungsaktion für Forms Portal {#forms-portal-submit-action}
+## Übermittlungsaktion für Forms Portal  {#forms-portal-submit-action}
 
 Mit der Option **Übermittlungsaktion für Forms Portal** werden über das AEM Forms-Portal Formulardaten zur Verfügung gestellt.
 
 Weitere Informationen zur Übermittlungsaktion für Forms Portal finden Sie unter [Komponente für Formular und übermittelte Formulare](../../forms/using/draft-submission-component.md).
 
-## AEM-Workflow aufrufen {#invoke-an-aem-workflow}
+## AEM-Workflow aufrufen  {#invoke-an-aem-workflow}
 
 Die Übermittlungsaktion **AEM-Workflow aufrufen** verknüpft ein adaptives Formular mit einem AEM-Workflow. Wenn ein Formular gesendet wird, startet der verknüpfte Workflow automatisch auf dem Verarbeitungsknoten. Darüber hinaus speichert er die Datendatei, Anhänge und das Datensatzdokument (falls vorhanden) im Nutzlastspeicherort des Workflows.
 
@@ -160,7 +160,7 @@ Wenn der Endbenutzer diese Validierungen umgeht und die Formulare übermittelt, 
 
 ### Unterstützende benutzerdefinierte Funktionen in Überprüfungsausdrücken {#supporting-custom-functions-in-validation-expressions-br}
 
-Bisweilen befindet sich bei komplexen **Validierungsregeln** das exakte Validierungsskript in den benutzerdefinierten Funktionen. Der Autor kann diese benutzerdefinierten Funktionen über den Ausdrück für die Feldvalidierung abrufen. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **Basic** tab of Adaptive Form Container properties as shown below.
+Bisweilen befindet sich bei komplexen **Validierungsregeln** das exakte Validierungsskript in den benutzerdefinierten Funktionen. Der Autor kann diese benutzerdefinierten Funktionen über den Ausdrück für die Feldvalidierung abrufen. Um diese benutzerdefinierte Funktionsbibliothek bei serverseitigen Überprüfungen bekannt und verfügbar zu machen, kann der Formularverfasser den Namen AEM Client-Bibliothek auf der Registerkarte **Einfach** der Eigenschaften des adaptiven Formular-Containers konfigurieren, wie unten dargestellt.
 
 ![Unterstützende benutzerdefinierte Funktionen in Überprüfungsausdrücken](assets/clientlib-cat.png)
 
@@ -172,4 +172,4 @@ Autor kann benutzerdefinierte JavaScript-Bibliothek pro adaptives Formular konfi
 
 Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Beschränkungen benutzerdefinierte Seiten für die Fehler 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Übermitteln des Formulars 404 oder 500 Fehler auftreten. Die Handler werden auch aufgerufen, wenn diese Fehlercodes auf einem Veröffentlichungsknoten ausgelöst werden.
 
-For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md).
+Weitere Informationen finden Sie unter [Anpassen der vom Fehler-Handler](/help/sites-developing/customizing-errorhandler-pages.md) angezeigten Seiten.
