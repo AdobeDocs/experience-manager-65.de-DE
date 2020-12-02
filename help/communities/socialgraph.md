@@ -22,25 +22,25 @@ ht-degree: 26%
 
 ## Einführung {#introduction}
 
-The ability for a community member to follow [activities](activities.md) as well as be followed is established through two components: `Follow` and `Following`.
+Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](activities.md) zu befolgen, wird durch zwei Komponenten festgelegt: `Follow` und `Following`.
 
-The `Follow` component must be associated with another resource, and this association is already established for community members and features.
+Die Komponente `Follow` muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für Community-Mitglieder und -Funktionen eingerichtet.
 
-The `Following` component simply lists the members that are either following the current member or are being followed by the current member. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine [Community-Site](overview.md#communitiessites) bereitgestellt wird.
+Die `Following`-Komponente Liste lediglich die Mitglieder, die dem aktuellen Member folgen oder denen das aktuelle Member folgt. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine [Community-Site](overview.md#communitiessites) bereitgestellt wird.
 
 ## Hinzufügen von Folgenden zu einer Seite {#adding-following-to-a-page}
 
-Wenn Sie eine `Following` Komponente im Autorenmodus zu einer Seite hinzufügen möchten, suchen Sie die Komponente `Communities / Following` und ziehen Sie sie auf eine Seite, auf der das Social-Diagramm angezeigt werden soll.
+Wenn Sie eine `Following`-Komponente zu einer Seite im Autorenmodus hinzufügen möchten, suchen Sie die Komponente `Communities / Following` und ziehen Sie sie auf eine Seite, auf der das Social-Diagramm angezeigt werden soll.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](essentials-socialgraph.md#essentials-for-client-side) are included, this is how the `Following` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-socialgraph.md#essentials-for-client-side) einbezogen werden, wird die `Following`-Komponente wie folgt angezeigt:
 
 ![folgende](assets/following.png)
 
 ## Konfigurieren von Folgenden {#configuring-following}
 
-Currently, it is necessary to set the property to determine whether the component displays the `follows` relationship, or the `following` relationship.
+Derzeit muss die Eigenschaft festgelegt werden, um zu bestimmen, ob die Komponente die `follows`-Beziehung oder die `following`-Beziehung anzeigt.
 
 ## Zusätzliche Informationen {#additional-information}
 
