@@ -26,14 +26,14 @@ Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit e
 >
 >Die Begriffe „Startpunkte“, „Startprozess“ und „Formular“ werden wechselweise verwendet, wenn von diesem Konzept die Rede ist.
 
-To initiate a process from the AEM Forms app, you need to have a startpoint of type **Workspace** in your process. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL Visible in Mobile Workspace]** auswählen.
+Um einen Prozess von der AEM Forms-App aus zu starten, müssen Sie einen Startpunkt des Typs **Workspace** in Ihrem Prozess haben. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL Visible in Mobile Workspace]** auswählen.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Starten eines in Workbench definierten Prozesses**
 
 1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, gehen Sie zum [Startbildschirm](../../forms/using/home-screen.md).
-1. On the **[!UICONTROL Home]** screen, by default, the **[!UICONTROL All Forms]** list is displayed.
+1. Auf dem Bildschirm **[!UICONTROL Home]** wird standardmäßig die Liste **[!UICONTROL Alle Forms]** angezeigt.
 
    Der Startpunkt ist mit einem Formular verknüpft. Tippen Sie auf das mit dem Startpunkt verknüpfte Formular in der Liste, um es zu öffnen.
 
