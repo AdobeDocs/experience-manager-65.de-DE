@@ -12,6 +12,9 @@ discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 92%
 
 ---
 
@@ -31,14 +34,14 @@ Führen Sie beim Bearbeiten der weiterzuleitenden Launch-Seite die folgenden Sch
 1. Klicken Sie im Sidekick auf der Registerkarte **Seite** auf **Launch bewerben**.
 1. Geben Sie die Seiten an, die weitergeleitet werden sollen:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
-   * To also promote the child pages of the current page, select **Include Sub Pages**.
+   * (Standard) Um nur die aktuelle Seite zu bewerben, wählen Sie **Seitenänderungen an Produktionsversion fördern**.
+   * Um auch die untergeordneten Seiten der aktuellen Seite zu fördern, wählen Sie **Unterseiten einschließen**.
    * Um alle Seiten im Launch weiterzuleiten, wählen Sie **Vollständigen Launch in Produktionsversion weiterleiten**.
 
 1. Um die Produktionsseiten einem Workflow-Paket hinzuzufügen, wählen Sie zunächst **Zu Workflow-Paket hinzufügen** und wählen Sie dann das Workflow-Paket.
 1. Klicken Sie auf **Bewerben**.
 
-## Processing Promoted Pages Using AEM Workflow {#processing-promoted-pages-using-aem-workflow}
+## Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow {#processing-promoted-pages-using-aem-workflow}
 
 Verwenden Sie Workflow-Modelle, um eine Stapelverarbeitung weitergeleiteter Launch-Seiten durchzuführen:
 
