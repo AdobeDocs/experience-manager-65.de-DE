@@ -21,7 +21,7 @@ ht-degree: 89%
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor 
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
@@ -51,7 +51,7 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über die Felix Inventory-Konsole:** 
 
-1. Go to the AEM Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
+1. Gehen Sie zur AEM Web Console, indem Sie zu *https://serveraddress:serverport/system/console/configMgr* navigieren.
 1. Wählen Sie **Status - Musterdetektor** aus, wie im Bild unten dargestellt:
 
    ![screenshot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
@@ -70,7 +70,7 @@ Die Ausgabe ist zurzeit unter 2 URLs verfügbar:
 1. Nur-Text-Schnittstelle 
 1. JSON-Schnittstelle
 
-## Handhabung der Nur-Text-Schnittstelle {#handling-the-plain-text-interface}
+## Handhabung der Nur-Text-Schnittstelle  {#handling-the-plain-text-interface}
 
 Die in der Ausgabe enthaltenen Informationen sind als Serie von Ereigniseinträgen formatiert. Es gibt zwei Kanäle - einen für die Veröffentlichung von Verstößen und einen zweiten für die Veröffentlichung des aktuellen Fortschritts.
 
@@ -100,7 +100,7 @@ Dies führt zur folgenden Ausgabe:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Behandlung der JSON-Schnittstelle {#handling-the-json-interface}
+## Behandlung der JSON-Schnittstelle  {#handling-the-json-interface}
 
 JSON kann auf ähnliche Weise mit dem Tool [jq](https://stedolan.github.io/jq/) verarbeitet werden, sobald die Veröffentlichung erfolgt ist.
 
