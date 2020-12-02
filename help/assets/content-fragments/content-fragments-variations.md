@@ -292,7 +292,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
    >* **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
-## Verwalten von Varianten     {#managing-variations}
+## Verwalten von Varianten      {#managing-variations}
 
 ### Variante erstellen {#creating-a-variation}
 
@@ -310,7 +310,7 @@ So erstellen Sie eine neue Variante:
    >
    >Wenn eine neue Variante erstellt wird, wird immer der **Master** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante     {#editing-a-variation}
+### Bearbeiten einer Variante      {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
