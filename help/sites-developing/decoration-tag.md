@@ -37,33 +37,33 @@ Es folgen einige allgemeine Empfehlungen, wann Sie ein einschließendes Element 
 
 Die folgenden Eigenschaften und Knoten können auf Komponenten angewendet werden, um das Verhalten ihrer Decoration-Tags zu steuern:
 
-* **`cq:noDecoration {boolean}`:**Diese Eigenschaft kann einer Komponente hinzugefügt werden. Wenn der Wert „true“ lautet, darf AEM keine einschließenden Elemente für die Komponente generieren.
+* **`cq:noDecoration {boolean}`:** Diese Eigenschaft kann einer Komponente hinzugefügt werden. Wenn der Wert „true“ lautet, darf AEM keine einschließenden Elemente für die Komponente generieren.
 
-* **`cq:htmlTag`node :**Dieser Knoten kann unter einer Komponente hinzugefügt werden und die folgenden Eigenschaften aufweisen:
+* **`cq:htmlTag`node :** Dieser Knoten kann unter einer Komponente hinzugefügt werden und die folgenden Eigenschaften aufweisen:
 
-   * **`cq:tagName {String}`:**Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
-   * **`class {String}`:**Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
+   * **`cq:tagName {String}`:** Damit können Sie ein eigenes HTML-Tag angeben, das die Komponenten anstatt des standardmäßigen DIV-Elements einschließen soll.
+   * **`class {String}`:** Damit können Sie css-Klassennamen angeben, die dem einschließenden Element hinzugefügt werden sollen.
    * Andere Eigenschaftsnamen werden als HTML-Attribute mit demselben angegebenen String-Wert hinzugefügt.
 
 ## Skript-Steuerung {#script-controls}
 
-The wrapper behavior does differ however depending on if [HTL](/help/sites-developing/decoration-tag.md#htl) or [JSP](/help/sites-developing/decoration-tag.md#jsp) is used to include the element.
+Das Wrapper-Verhalten unterscheidet sich jedoch je nachdem, ob [HTL](/help/sites-developing/decoration-tag.md#htl) oder [JSP](/help/sites-developing/decoration-tag.md#jsp) zum Einbeziehen des Elements verwendet wird.
 
 ### HTL {#htl}
 
 Im Allgemeinen lässt sich das Wrapper-Verhalten in HTL wie folgt beschreiben:
 
-* No wrapper DIV is rendered by default (when just doing `data-sly-resource="foo"`).
+* Standardmäßig wird kein Wrapper-DIV gerendert (nur bei `data-sly-resource="foo"`).
 * Alle wcm-Modi (deaktiviert, Vorschau, Bearbeiten für Autor oder Veröffentlichung) werden identisch dargestellt.
 
 Das Verhalten des Wrappers kann auch vollständig kontrolliert werden.
 
 * Das HTL-Skript hat die vollständige Kontrolle über das resultierende Verhalten des Wrapper-Tags.
-* Component properties (like `cq:noDecoration` and `cq:tagName`) can also define the wrapper tag.
+* Komponenteneigenschaften (wie `cq:noDecoration` und `cq:tagName`) können auch das Wrapper-Tag definieren.
 
 Sie können das Verhalten der Wrapper-Tags von HTL-Skripten und der zugehörigen Logik vollständig kontrollieren.
 
-For further information about developing in HTL see the [HTL documentation](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html).
+Weitere Informationen zur Entwicklung in HTML finden Sie in der [HTL Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html).
 
 #### Entscheidungsbaum {#decision-tree}
 
@@ -103,7 +103,7 @@ Der häufigste Anwendungsfall besteht darin, dass eine Komponente eine andere Ko
 
 `two.html: Hello World!`
 
-Ergebnisausgabe am `/content/test.html`:
+Ergebnis der Ausgabe bei `/content/test.html`:
 
 **`Hello World!`**
 
@@ -113,13 +113,13 @@ Ein Beispiel wäre eine Komponente, die eine Core-Image-Komponente enthält, um 
 
 Bei einem weiteren häufigen Anwendungsfall enthalten Containerkomponenten bearbeitbare untergeordnete Komponenten z. B. einen Layout-Container. In diesem Fall benötigt jedes enthaltene untergeordnete Element einen Wrapper, damit der Editor funktioniert (es sei denn, dies ist explizit mit der Eigenschaft `cq:noDecoration` deaktiviert).
 
-Da die eingefügte Komponente in diesem Fall eine unabhängige Komponente ist, benötigt sie ein Wrapper-Element, damit der Editor funktioniert und um Layout und Style anzuwenden. To trigger this behavior, there&#39;s the `decoration=true` option.
+Da die eingefügte Komponente in diesem Fall eine unabhängige Komponente ist, benötigt sie ein Wrapper-Element, damit der Editor funktioniert und um Layout und Style anzuwenden. Um dieses Verhalten auszulösen, gibt es die Option `decoration=true`.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
 `two.html: Hello World!`
 
-Ergebnisausgabe am `/content/test.html`:
+Ergebnis der Ausgabe bei `/content/test.html`:
 
 **`<article class="component-two">Hello World!</article>`**
 
@@ -134,20 +134,20 @@ Es sind unendlich viele komplexe Anwendungsfälle möglich, die einfach umgesetz
 
 `two.html: Hello World!`
 
-Ergebnis `/content/test.html`:
+Ergebnis Ausgabe `/content/test.html`:
 
 **`<aside class="child">Hello World!</aside>`**
 
 ## JSP {#jsp}
 
-When including a component using `cq:includ`e or `sling:include`, the default behavior in AEM is to use a DIV to wrap the element. Sie können dieses Verhalten jedoch auf zwei Arten anpassen:
+Wenn Sie eine Komponente mit `cq:includ`e oder `sling:include` einschließen, wird in AEM standardmäßig ein DIV verwendet, um das Element einzuschließen. Sie können dieses Verhalten jedoch auf zwei Arten anpassen:
 
 * Geben Sie mit `cq:noDecoration` explizit an, dass AEM die Komponente nicht einschließen soll.
-* Use a custom HTML tag to wrap the component using `cq:htmlTag`/ `cq:tagName` or `decorationTagName`.
+* Verwenden Sie ein benutzerdefiniertes HTML-Tag, um die Komponente mit `cq:htmlTag`/ `cq:tagName` oder `decorationTagName` einzuschließen.
 
 ### Entscheidungsbaum {#decision-tree-1}
 
-The following decision tree illustrates how `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, and `decorationTagName` affect the wrapper behavior.
+Die folgende Entscheidungsstruktur zeigt, wie `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` und `decorationTagName` das Wrapper-Verhalten beeinflussen.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)
 
