@@ -29,7 +29,7 @@ JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sin
 * Verwenden Sie im gesamten Formular eindeutige Namen für Felder und Fenster. Auf diese Weise können Sie mögliche Konflikte mit beim Schreiben von Ausdrücken verwendeten Feldnamen vermeiden.
 * Beim Schreiben von mehrzeiligen Ausdrücken, müssen Sie ein Semikolon verwenden, um eine Anweisung zu beenden. 
 
-## Empfohlene Vorgehensweisen für Ausdrücke in Verbindung mit Wiederholungsfeldern {#best-practices-for-expressions-involving-repeating-panel}
+## Empfohlene Vorgehensweisen für Ausdrücke in Verbindung mit Wiederholungsfeldern  {#best-practices-for-expressions-involving-repeating-panel}
 
 Wiederholungsfelder sind Instanzen eines Fensters, das mithilfe einer Skripterstellungs-API oder vorausgefüllten Daten dynamisch hinzugefügt oder entfernt wird. Ausführliche Informationen zum Verwenden von Wiederholungsfeldern finden Sie unter [Erstellen von Formularen mit Wiederholungsfeldern](/help/forms/using/creating-forms-repeatable-sections.md).
 
@@ -39,10 +39,10 @@ Wiederholungsfelder sind Instanzen eines Fensters, das mithilfe einer Skripterst
 * Adaptive Formulare bieten einige spezifische Funktionen zum Vereinfachen der Berechnungen für die wiederholbaren Felder wie etwa „sum“, „count“, „min“, „max“, „filter“ und viele mehr. Eine vollständige Liste der Funktionen finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * Es gibt folgende APIs zum Manipulieren von Instanzen von Wiederholungsfeldern:
 
-   * To add a panel instance: `panel1.instanceManager.addInstance()`
-   * To get a panel repeat index: `panel1.instanceIndex`
+   * So fügen Sie eine Bereichsinstanz hinzu: `panel1.instanceManager.addInstance()`
+   * Abrufen eines Wiederholungsindex für ein Bedienfeld: `panel1.instanceIndex`
    * Abrufen des instanceManager eines Bedienfelds: `_panel1 or panel1.instanceManager`
-   * To remove an instance of a panel: `_panel1.removeInstance(panel1.instanceIndex)`
+   * So entfernen Sie eine Instanz eines Bedienfelds: `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Ausdruckstypen {#expression-types}
 
@@ -55,7 +55,7 @@ In adaptiven Formularen können Sie Ausdruck schreiben, um Verhaltensweisen wie 
 * **[Ausdruck für Optionen](#options-expression)**: Zum dynamischen Ausfüllen einer Dropdown-Liste.
 * **[Zusammenfassungsausdruck](#summary)**: Zum dynamischen Berechnen des Titels eines Akkordeons.
 * **[Ausdrücke für die Überprüfung](#validate-expression)**: Zum Überprüfen eines Felds.
-* **[Skript](#value-commit-script)zum Bestätigen von Werten:** , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **[Skript](#value-commit-script) zum Bestätigen des Werts:** Zum Ändern der Komponenten eines Formulars nach einer Feldänderung.
 * **[Ausdruck für die Sichtbarkeit](#visibility-expression)**: Zum Steuern der Sichtbarkeit eines Felds oder Bereichs.
 * **[Ausdruck zum Abschluss von Schritten](#step-completion-expression)**: Um zu vermeiden, dass ein Benutzer zum nächsten Schritt eines Assistenten geht.
 
@@ -67,7 +67,7 @@ Sie können den Ausdruck für den Zugriff zum Aktivieren oder Deaktivieren eines
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Aktivierungsstatus des Felds wiedergibt. **true** bedeutet, dass das Feld aktiviert ist, und **false** bedeutet, dass das Feld deaktiviert ist.
 
-**Beispiel**: Um ein Feld nur dann zu aktivieren, wenn der Wert von **field1** auf **X** festgelegt ist, lautet der Ausdruck access wie folgt: `field1.value == "X"`
+**Beispiel**: Um ein Feld nur dann zu aktivieren, wenn der Wert von  **field1**  auf  **X** festgelegt ist, lautet der Ausdruck access wie folgt:  `field1.value == "X"`
 
 ### Ausdruck für die Berechnung {#calculate-expression}
 
@@ -77,18 +77,18 @@ Der Ausdruck für die Berechnung wird verwendet, um den Wert eines Felds unter V
 
 **Rückgabetyp**: Der Ausdruck gibt einen Wert zurück, der mit dem Feld kompatibel ist, in dem das Ergebnis des Ausdrucks angezeigt wird (z. B. dezimal).
 
-**Beispiel**: Der Ausdruck calculate, der die Summe zweier Felder in **field1** anzeigt, lautet:
+**Beispiel**: Der Ausdruck calculate, der die Summe zweier Felder in  **field1** anzeigt, lautet: 
 `field2.value + field3.value`
 
 ### Ausdruck für ein Klickereignis {#click-expression}
 
-Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken auf eine Schaltfläche durchgeführt werden. GuideBridge ist sofort einsetzbar und bietet APIs zum Ausführen verschiedener Funktionen wie dem Senden oder Überprüfen, die in Verbindung mit dem Ausdruck für ein Klickereignis Anwendung finden. Eine vollständige Liste der APIs finden Sie in den [GuideBridge-APIs](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html).
+Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken auf eine Schaltfläche durchgeführt werden. GuideBridge ist sofort einsetzbar und bietet APIs zum Ausführen verschiedener Funktionen wie dem Senden oder Überprüfen, die in Verbindung mit dem Ausdruck für ein Klickereignis Anwendung finden. Eine vollständige Liste der APIs finden Sie in den [GuideBridge-APIs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Gilt für**: Felder mit Schaltfläche
 
 **Rückgabetyp:** Der Ausdruck für ein Klickereignis gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Wenn Sie ein Textfeld **textbox1** auf die Klickaktion einer Schaltfläche mit dem Wert **AEM Forms** füllen möchten, lautet der Ausdruck click der Schaltfläche `textbox1.value="AEM Forms"`
+**Beispiel**: Wenn Sie ein Textfeld  **textbox1** auf eine Schaltfläche mit dem Wert  **AEM Forms** füllen möchten, lautet der Ausdruck click der Schaltfläche  `textbox1.value="AEM Forms"`
 
 ### Initialisierungsskript {#initialization-script}
 
@@ -102,7 +102,7 @@ Das Initialisierungsskript wird ausgelöst, wenn ein adaptives Formular initiali
 
 **Rückgabetyp:** Der Ausdruck für das Initialisierungsskript gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel:** Wenn in einem Datenvorausfüllszenario Felder mit dem Standardwert ausgefüllt werden sollen, `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Ausdruck des Initialisierungsskripts:
+**Beispiel:** Wenn Felder mit Standardwert gefüllt werden sollen,  `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Ausdruck des Initialisierungsskripts: 
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Ausdruck für Optionen {#options-expression}
@@ -119,7 +119,7 @@ Der Ausdruck für Optionen wird zum dynamischen Ausfüllen von Optionen in einem
 
 Sobald sich der Wert des Felds **marital_status** ändert, wird der Ausdruck erneut ausgelöst. Sie können das Dropdown-Menü auch von einem REST-Dienst aus auffüllen. Ausführliche Informationen finden Sie unter [Dynamisches Auffüllen von Dropdown-Listen](../../forms/using/dynamically-populate-dropdowns.md).
 
-### Zusammenfassungsausdruck {#summary}
+### Zusammenfassungsausdruck  {#summary}
 
 Der Zusammenfassungsausdruck berechnet dynamisch den Titel eines untergeordneten Bedienfelds eines Akkordeon-Layout-Bedienfelds. Sie können den Zusammenfassungsausdruck in einer Regel festlegen, die ein Formularfeld oder eine benutzerdefinierte Logik verwendet, um den Titel zu bewerten. Der Ausdruck wird ausgeführt, wenn das Formular initialisiert wird. Wenn Sie ein Formular im Voraus ausfüllen, wird der Ausdruck ausgeführt, nachdem die Daten vorausgefüllt wurden oder sich der Wert der im Ausdruck verwendeten abhängigen Felder ändert.
 
@@ -137,7 +137,7 @@ Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verw
 
 **Gilt für**: Felder
 
-**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds darstellt. The value **false** represents that the field is invalid and **true** represents that the field is valid.
+**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds darstellt. Der Wert **false** bedeutet, dass das Feld ungültig ist und **true** angibt, dass das Feld gültig ist.
 **Beispiel**: Für ein Feld, das eine britische Postleitzahl enthalten soll, lautet der Ausdruck für die Überprüfung wie folgt:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -164,9 +164,9 @@ Das Skript zum Bestätigen von Werten wird ausgelöst, wenn
 
 >[!NOTE]
 >
->Sie können die Ausführung des Skripts zum Bestätigen von Werten deaktivieren, wenn der Wert eines Felds programmgesteuert geändert wird. To do so, go to https://&#39;[server]:[port]&#39;/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Dann wird das Skript zum Bestätigen von Werten nur ausgeführt, wenn der Benutzer den Wert des Felds in der Benutzeroberfläche ändert.
+>Sie können die Ausführung des Skripts zum Bestätigen von Werten deaktivieren, wenn der Wert eines Felds programmgesteuert geändert wird. Gehen Sie dazu zu https://&#39;[server]:[port]&#39;/system/console/configMgr und ändern Sie **Adaptive Forms-Version für Kompatibilität** in **AEM Forms 6.1**. Dann wird das Skript zum Bestätigen von Werten nur ausgeführt, wenn der Benutzer den Wert des Felds in der Benutzeroberfläche ändert.
 
-### Ausdruck für die Sichtbarkeit {#visibility-expression}
+### Ausdruck für die Sichtbarkeit  {#visibility-expression}
 
 Der Ausdruck für die Sichtbarkeit wird verwendet, um die Sichtbarkeit eines Felds/Fensters zu steuern. Normalerweise verwendet der Ausdruck für die Sichtbarkeit die Werteigenschaft eines Felds und wird erneut ausgelöst, sobald sich dieser Wert ändert.
 
@@ -184,7 +184,7 @@ Der Ausdruck zum Abschluss von Schritten dient der Vermeidung, dass ein Benutzer
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Gültigkeitsstatus des aktuellen Fensters wiedergibt. **True** bedeutet, dass das aktuelle Fenster gültig ist und der Benutzer zum nächsten Fenster navigieren kann.
 
-**Beispiel**: In einem in mehrere Fenster organisierten Formular wird vor dem Navigieren zum nächsten Fenster das aktuelle Fenster überprüft. In diesen Fällen werden Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die Überprüfungs-API GuideBridge. An example of step completion expression is:
+**Beispiel**: In einem in mehrere Fenster organisierten Formular wird vor dem Navigieren zum nächsten Fenster das aktuelle Fenster überprüft. In diesen Fällen werden Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die Überprüfungs-API GuideBridge. Ein Beispiel für den Ausdruck zum Abschluss von Schritten:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Überprüfungen in adaptiven Formularen {#validations-in-adaptive-form}
@@ -211,7 +211,7 @@ Die Überprüfung eines Felds kann auch mithilfe von Ausdrücken für verschiede
 
 Das Anzeigeformat kann zum Anzeigen von Daten in verschiedenen Formaten verwendet werden. Sie können das Anzeigeformat beispielsweise dazu verwenden, eine Telefonnummer mit Bindestrichen anzuzeigen oder eine Postleitzahl oder eine Datumsauswahl zu formatieren. Die Darstellungsmuster können im Abschnitt **Muster** des Dialogfelds „Bearbeiten“ einer Komponente ausgewählt werden. Ähnlich wie bei den oben erwähnten Überprüfungsmustern können Sie benutzerdefinierte Darstellungsmuster schreiben.
 
-### GuideBridge – APIs und Ereignisse {#guidebridge-apis-and-events}
+### GuideBridge – APIs und Ereignisse  {#guidebridge-apis-and-events}
 
 GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven Formularen im Speichermodell eines Browsers verwendet werden können. Eine ausführliche Einführung in die API, die Klassenmethoden, und die bereitgestellten Ereignisse in Guide Bridge finden Sie in der [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
@@ -219,19 +219,19 @@ GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven F
 >
 >Es wird empfohlen, die GuideBridge-Ereignis-Listener nicht in Ausdrücken zu verwenden.
 
-#### GuideBridge-Verwendung in verschiedenen Ausdrücken {#guidebridge-usage-in-various-expressions}
+#### GuideBridge-Verwendung in verschiedenen Ausdrücken  {#guidebridge-usage-in-various-expressions}
 
-* To reset form fields, you can trigger `guideBridge.reset()` API on the click expression of a button. Similarly there is a submit API which can be called as a click expression `guideBridge.submit()`**.**
+* Um Formularfelder zurückzusetzen, können Sie die API `guideBridge.reset()` beim Klicken auf den Ausdruck einer Schaltfläche auslösen. Ebenso gibt es eine Sende-API, die als Klick-Ausdruck `guideBridge.submit()`**aufgerufen werden kann.**
 
-* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`bietet eine breite Palette von Optionen zum Navigieren, z. B. Navigation über Fenster, vorherige/nächste Durchreise, Fokussierung auf ein bestimmtes Feld und vieles mehr. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Sie können die API `setFocus()` verwenden, um den Fokus auf verschiedene Felder oder Bereiche zu legen (der Bereichsfokus wird automatisch auf das erste Feld eingestellt). `setFocus()`bietet eine breite Palette von Optionen zum Navigieren, z. B. Navigation über Fenster, vorherige/nächste Durchreise, Fokussierung auf ein bestimmtes Feld und vieles mehr. Um zum nächsten Fenster zu wechseln, können Sie beispielsweise Folgendes verwenden: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
-* To validate an adaptive form or its specific panels, use `guideBridge.validate(errorList, somExpression).`
+* Verwenden Sie zum Überprüfen eines adaptiven Formulars oder seiner spezifischen Bereiche `guideBridge.validate(errorList, somExpression).`
 
 #### GuideBridge außerhalb von Ausdrücken verwenden  {#using-guidebridge-outside-expressions-nbsp}
 
 Sie können die GuideBridge-APIs auch außerhalb von Ausdrücken verwenden. Sie können die GuideBridge-API beispielsweise dazu verwenden, die Kommunikation zwischen Seiten-HTML, in der das adaptive Formular integriert ist, und dem Formularmodell festzulegen. Darüber hinaus können Sie den Wert festlegen, der von dem übergeordneten Element von Iframe stammt, auf dem das Formular gehostet wird.
 
-Zum Verwenden der GuideBridge-API im oben erwähnten Beispiel erfassen Sie eine Instanz von GuideBridge. To capture the instance, listen to `bridgeInitializeStart`event of a `window`object:
+Zum Verwenden der GuideBridge-API im oben erwähnten Beispiel erfassen Sie eine Instanz von GuideBridge. Um die Instanz zu erfassen, überwachen Sie das `bridgeInitializeStart`Ereignis eines `window`Objekts:
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -259,7 +259,7 @@ Um GuideBridge nach der Initialisierung des Formulars zu verwenden (das `bridgeI
 
 #### GuideBridge-Ereignisse {#guidebridge-events}
 
-GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Weitere Informationen zu diesen Ereignissen finden Sie unter [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Verwenden Sie folgenden Code zum Registrieren von Handlern:
 
@@ -271,14 +271,14 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 });
 ```
 
-### Benutzerdefinierte Muster für ein Feld erstellen {#creating-custom-patterns-for-a-field}
+### Benutzerdefinierte Muster für ein Feld erstellen  {#creating-custom-patterns-for-a-field}
 
 Wie oben erwähnt lassen adaptive Formulare das Bereitstellen von Überprüfungsmustern oder Anzeigeformaten durch den Autor zu. Über die Verwendung von Mustern für den sofortigen Einsatz können Sie wiederverwendbare benutzerdefinierte Muster für eine Komponente eines adaptiven Formulars verwenden. Beispiel: Sie können ein Textfeld oder ein numerisches Feld definieren. Sobald die Definition abgeschlossen ist, können Sie diese Muster in allen Formularen für einen bestimmten Komponententyp verwenden. Sie können beispielsweise ein benutzerdefiniertes Muster für ein Textfeld erstellen und es in den Textfeldern in ihren adaptiven Formularen verwenden. Sie können das benutzerdefinierte Muster auswählen, indem Sie auf den Musterabschnitt im Dialogfeld „Bearbeiten“ einer Komponente zugreifen. Ausführliche Informationen zu Musterdefinitionen oder -formaten finden Sie unter [Unterstützung für HTML5 Forms](/help/forms/using/picture-clause-support.md). 
 
 Führen Sie die folgenden Schritte durch, um ein benutzerdefiniertes Muster für einen bestimmten Feldtyp zu erstellen und ihn für alle Felder desselben Typs wiederzuverwenden:
 
 1. Navigieren Sie auf Ihrer Authoring-Instanz zu CRXDE Lite.
-1. Erstellen Sie einen Ordner zum Aufbewahren Ihrer benutzerdefinierten Muster. Erstellen Sie im Ordner „/apps“ einen Knoten des Typs „sling:folder“. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Under this node, create another node of type `nt:unstructed` and name it `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
+1. Erstellen Sie einen Ordner zum Aufbewahren Ihrer benutzerdefinierten Muster. Erstellen Sie im Ordner „/apps“ einen Knoten des Typs „sling:folder“. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Erstellen Sie unter diesem Knoten einen weiteren Knoten des Typs `nt:unstructed` und geben Sie ihm den Namen `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox*.
 
 1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert von `guideComponentType` *fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
