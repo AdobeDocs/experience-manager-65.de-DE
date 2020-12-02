@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 92%
 
 ---
 
@@ -106,7 +109,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritte 10 und 29</strong></td>
    <td>Untersuchung der Netzwerkschicht</td>
-   <td><p>Überprüfen Sie die Netzwerkschicht auf Sättigungs- und Latenzprobleme.</p> <p>Für die Autorenschicht wird empfohlen, dass der Latenzwert 100 Millisekunden nicht übersteigt.</p> <p>Weitere Tipps zur Leistungsoptimierung finden Sie auf <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">dieser Seite</a>.</p> </td>
+   <td><p>Überprüfen Sie die Netzwerkschicht auf Sättigungs- und Latenzprobleme.</p> <p>Für die Autorenschicht wird empfohlen, dass der Latenzwert 100 Millisekunden nicht übersteigt.</p> <p>Weitere Tipps zur Leistungsoptimierung finden Sie auf <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">dieser Seite</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 11</strong></td>
@@ -160,7 +163,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Unzureichender Speicher</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">Meine Anwendung gibt Fehler über unzureichenden Speicher aus</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html">Analyse von Speicherproblemen mit der Helpx-Funktion.</a><br /> </li>
+     <li><a href="https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html">Analyse von Speicherproblemen mit der Helpx-Funktion.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -252,7 +255,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 34</strong></td>
    <td>Aktualisierung der Dispatcher-Version</td>
-   <td><p>Sie können die aktuelle Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td>
+   <td><p>Sie können die aktuelle Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 35</strong></td>
@@ -286,7 +289,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritte 45<br /> und 47</strong><br /> </td>
    <td>Verwendung von HTTP/2</td>
-   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39 Also, check out <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">this</a> forum post on HTTP/2 support.<br /> </td>
+   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39 Sehen Sie sich auch <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">diesen </a> Forumsbeitrag zur HTTP/2-Unterstützung an.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 49</strong></td>
@@ -311,7 +314,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
      <li>Verketten Sie Ressourcen (Bilder, CSS-Sprites, JSON usw.)<br /> </li>
      <li>Einbetten von clientlibs:
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Erstellen von Clientbibliotheksordnern</a> - siehe Abschnitt Verwenden der Einbettung, um Anforderungen zu minimieren</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Erstellen von Clientbibliotheksordnern</a>  - siehe Abschnitt Verwenden der Einbettung, um Anforderungen zu minimieren</li>
       </ol> </li>
     </ol> </td>
   </tr>
