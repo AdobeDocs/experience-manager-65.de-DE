@@ -11,6 +11,9 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 translation-type: tm+mt
 source-git-commit: 97b2da315fac6f84fcba6d4464bf8dd1d690cfd1
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 61%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 97b2da315fac6f84fcba6d4464bf8dd1d690cfd1
 
 ## Einführung {#introduction}
 
-Vor AEM 6.4 wurde Kundencode in unvorhersehbaren Bereichen der JCR bereitgestellt, die sich bei Aktualisierungen ändern mussten. Aus diesem Grund wurde in offiziellen AEM-Versionen häufig der benutzerdefinierte Code, die Konfiguration oder der Inhalt überschrieben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
+Vor AEM 6.4 wurde Kundencode in unvorhersehbaren Bereichen der JCR bereitgestellt, die bei Aktualisierungen geändert werden mussten. Aus diesem Grund wurde in formellen AEM Versionen häufig der benutzerdefinierte Code, die Konfiguration oder der Inhalt überschrieben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
 
 Durch klare Abgrenzungshierarchien für AEM-Produktcode und Kundencode können diese Konflikte vermieden werden.
 
@@ -33,18 +36,18 @@ Zu diesem Zweck werden ab AEM 6.4 und um in zukünftigen Versionen fortgeführt 
 Beim Aktualisieren auf AEM 6.5 wird eine große Teilmenge des Inhalts unter /etc in andere Ordner im Repository dupliziert. Diese neuen Speicherorte sind die bevorzugten Stellen, an denen der Inhalt referenziert wird. Allerdings ist die Aktualisierung auf AEM 6.5 abwärtskompatibel mit den früheren Speicherorten im /etc-Ordner, sodass der AEM-Code in den meisten Fällen weiterhin auf die alten Speicherorte verweist, bis Änderungen in der Applikation eines Kunden aktiv - und in vielen Fällen manuell - vorgenommen werden. Hinsichtlich der Timeline gibt es zwei Kategorien von Änderungen:
 
 * Mit der Aktualisierung auf 6.5: Einige der Neustrukturierungsänderungen für /etc sind nicht abwärtskompatibel und entsprechend sollten Änderungen im Rahmen der Aktualisierung auf AEM 6.5 geplant und umgesetzt werden.
-* Vor der zukünftigen Aktualisierung - die überwiegende Mehrheit der Änderungen der /etc-Umstrukturierung kann bis zu einer gewissen Zeit nach der Aktualisierung verschoben werden. Wie bereits erwähnt, verweist der AEM 6.5-Code weiterhin auf die alten Speicherorte, bis die Änderungen im Rahmen eines Kundenrelease implementiert werden. Es gibt zwar keine geforderte Zeitschiene, für die die Änderungen vorgenommen werden sollten, es wird jedoch empfohlen, sie vor der zukünftigen Aktualisierung vorzunehmen, da zukünftige Funktionen auf den neuen Speicherorten basieren können, auf die verwiesen wird. Auch veweist die Dokumentation für ein bestimmtes Merkmal standardmäßig auf die neuen Speicherorte, weswegen die Verwendung alter Speicherorte verwirrend sein könnte.
+* Vor der zukünftigen Aktualisierung - die überwiegende Mehrheit der /etc Restrukturierungsänderungen kann bis zu einer gewissen Zeit nach der Aktualisierung verschoben werden. Wie bereits erwähnt, verweist der AEM 6.5-Code weiterhin auf die alten Speicherorte, bis die Änderungen im Rahmen eines Kundenrelease implementiert werden. Es gibt zwar keine geforderte Zeitschiene, für die die Änderungen vorgenommen werden sollten, es wird jedoch empfohlen, sie vor der zukünftigen Aktualisierung vorzunehmen, da zukünftige Funktionen auf den neuen Speicherorten basieren können, auf die verwiesen wird. Auch veweist die Dokumentation für ein bestimmtes Merkmal standardmäßig auf die neuen Speicherorte, weswegen die Verwendung alter Speicherorte verwirrend sein könnte.
 
-### Restructuring Guidance {#restructuring-guidance}
+### Umstrukturierungsleitlinien {#restructuring-guidance}
 
 Bei der Planung einer Aktualisierung auf AEM 6.5 sollten die folgenden Seiten zur Abschätzung des Arbeitsaufwands herangezogen werden:
 
 * [Repository-Neustrukturierung für alle AEM-Lösungen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
 * [Repository-Neustrukturierung für AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
-* [Umstrukturierung des AEM Assets-Repositorys](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
+* [AEM Assets-Repository-Umstrukturierung](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
 * [Repository-Neustrukturierung für AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
-* [AEM Forms Repository-Umstrukturierung](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-* [AEM-Repository-Umstrukturierung](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
+* [AEM Forms-Repository-Umstrukturierung](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
+* [AEM Communities-Repository-Umstrukturierung](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
 * [Repository-Neustrukturierung für AEM Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
 
 Jede Seite enthält zwei Bereiche entsprechend der Dringlichkeit der erforderlichen Änderungen. Alle Punkte im Abschnitt „Mit der Aktualisierung auf 6.5“ sollten im Rahmen des AEM 6.5-Aktualisierungsprojekts behandelt werden. Alles, was unter &quot;Vor der zukünftigen Aktualisierung&quot;steht, kann optional bis zur Nachrüstung verschoben werden.
