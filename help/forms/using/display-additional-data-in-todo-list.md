@@ -32,7 +32,7 @@ Sie können die verfügbaren Informationen der Datei in `task.json` hinzufügen,
 
 Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/help/forms/using/html-workspace-json-object-description.md) Artikel.
 
-## Anzeigen von Informationen über eine Aufgabe {#displaying-information-on-a-task}
+## Anzeigen von Informationen über eine Aufgabe  {#displaying-information-on-a-task}
 
 1. Befolgen Sie die [generischen Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Um zusätzliche Information für eine Aufgabe anzuzeigen, müssen die entsprechenden Schlüssel-Wert-Paare innerhalb des Aufgabenblocks von `translation.json` hinzugefügt werden.
@@ -122,9 +122,9 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
    }
    ```
 
-## Definieren von CSS für die neue Eigenschaft {#defining-css-for-the-new-property}
+## Definieren von CSS für die neue Eigenschaft  {#defining-css-for-the-new-property}
 
-1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. To do this, you need to add style information for the new property added to `/apps/ws/css/newStyle.css`.
+1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die `/apps/ws/css/newStyle.css` hinzugefügt wird.
 
    Fügen Sie beispielsweise ein:
 
@@ -136,7 +136,7 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
    }
    ```
 
-## Hinzufügen eines Eintrags in der HTML-Vorlage {#adding-entry-in-the-html-template}
+## Hinzufügen eines Eintrags in der HTML-Vorlage  {#adding-entry-in-the-html-template}
 
 Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen möchten, einen Eintrag ins Entwicklerpaket aufnehmen. Informationen zum Erstellen eines Eintrags finden Sie unter „Erstellen von AEM Forms Workspace-Code“.
 
@@ -145,9 +145,9 @@ Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen 
    * von: `/libs/ws/js/runtime/templates/`
    * in: `/apps/ws/js/runtime/templates/`
 
-1. Hinzufügen die neuen Informationen an `/apps/ws/js/runtime/templates/task.html`.
+1. hinzufügen Sie die neuen Informationen auf `/apps/ws/js/runtime/templates/task.html`.
 
-   Fügen Sie beispielsweise Folgendes hinzu `div class="taskProperties"`:
+   Fügen Sie beispielsweise unter `div class="taskProperties"` hinzu:
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
