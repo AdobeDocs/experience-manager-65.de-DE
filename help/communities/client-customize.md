@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Clientseitige Anpassung  {#client-side-customization}
+# Clientseitige Anpassung {#client-side-customization}
 
 | **[⇐ Essentials](essentials.md)** | **[Serverseitige Anpassung ⇒](server-customize.md)** |
 |---|---|
@@ -28,37 +28,37 @@ Zum Anpassen des Erscheinungsbilds und/oder Verhaltens einer AEM Communities-Kom
 
 Zwei Hauptansätze sind das Überlagern oder Erweitern einer Komponente.
 
-[Durch das Überlagern](#overlays) einer Komponente wird die Standardkomponente geändert und wirkt sich auf jeden Verweis auf die Komponente aus.
+[Durch das ](#overlays) Überlagern einer Komponente wird die Standardkomponente geändert und jeder Verweis auf die Komponente wird beeinflusst.
 
-[Die Erweiterung](#extensions) einer Komponente, die eindeutig benannt ist, schränkt den Umfang der Änderungen ein. Der Begriff &quot;Erweiterung&quot; wird synonym mit &quot;Außerkraftsetzen&quot; verwendet.
+[Die ](#extensions) Erweiterung einer Komponente, die eindeutig benannt ist, schränkt den Umfang der Änderungen ein. Der Begriff &quot;Erweiterung&quot; wird synonym mit &quot;Außerkraftsetzen&quot; verwendet.
 
 ## Überlagerungen {#overlays}
 
 Das Überlagern einer Komponente ist eine Methode, um Änderungen an einer Standardkomponente vorzunehmen, die alle Instanzen betreffen, die den Standard verwenden.
 
-Die Überlagerung erfolgt durch Ändern einer Kopie der Standardkomponente im Ordner &quot;/**apps** &quot;, anstatt die Originalkomponente im Ordner &quot;/**libs** &quot;zu ändern. Die Komponente wird mit einem identischen relativen Pfad erstellt, außer &#39;libs&#39; wird durch &#39;apps&#39; ersetzt.
+Die Überlagerung erfolgt durch Ändern einer Kopie der Standardkomponente im Ordner &quot;/**apps**&quot;, anstatt die Originalkomponente im Ordner &quot;/**libs**&quot;zu ändern. Die Komponente wird mit einem identischen relativen Pfad erstellt, außer &#39;libs&#39; wird durch &#39;apps&#39; ersetzt.
 
 Der Ordner &quot;/apps&quot;ist der erste Ort, der zum Auflösen von Anforderungen gesucht wird. Wenn er nicht gefunden wird, wird die Standardversion im Ordner &quot;/libs&quot;verwendet.
 
 Die Standardkomponente im Verzeichnis /libs darf nie geändert werden, da zukünftige Patches und Upgrades das Verzeichnis /libs auf jede erforderliche Weise ändern können, während öffentliche Schnittstellen beibehalten werden.
 
-Dies unterscheidet sich von der [Erweiterung](#extensions) einer Standardkomponente, bei der Änderungen für eine bestimmte Verwendung vorgenommen werden sollen, wobei ein eindeutiger Pfad zur Komponente erstellt wird und die ursprüngliche Standardkomponente im Verzeichnis /libs als Super-Ressourcentyp referenziert wird.
+Dies unterscheidet sich von [extension](#extensions) einer Standardkomponente, bei der Änderungen für eine bestimmte Verwendung vorgenommen werden sollen, wobei ein eindeutiger Pfad zur Komponente erstellt wird und auf der Verweise auf die ursprüngliche Standardkomponente im Verzeichnis /libs als Super-Ressourcentyp verwiesen wird.
 
-Ein kurzes Beispiel für das Überlagern der Komponente &quot;Kommentare&quot;finden Sie im Lernprogramm &quot; [Überlagerungskommentare&quot;](overlay-comments.md).
+Ein kurzes Beispiel zum Überlagern der Komponente &quot;Kommentare&quot;finden Sie im Tutorial [Komponente &quot;Überlagerungskommentare](overlay-comments.md)&quot;.
 
 ## Erweiterungen {#extensions}
 
 Das Erweitern (Überschreiben) einer Komponente ist eine Methode, um Änderungen für eine bestimmte Verwendung vorzunehmen, ohne dass alle Instanzen betroffen sind, die den Standard verwenden. Die erweiterte Komponente ist eindeutig im Ordner /apps benannt und verweist auf die Standardkomponente im Ordner /libs. Daher werden Standarddesign und Standardverhalten einer Komponente nicht geändert.
 
-Dies unterscheidet sich von der [Überlagerung](#overlays) der Standardkomponente, bei der die Art von Sling relative Verweise auf den Ordner apps/ auflöst, bevor der Ordner libs/ gesucht wird. Daher wird das Design oder Verhalten einer Komponente global geändert.
+Dies unterscheidet sich von der Standardkomponente [overlay](#overlays), bei der die Art von Sling relative Verweise auf den Ordner &quot;apps/&quot;auflöst, bevor die Suche im Ordner &quot;libs/&quot;erfolgt, sodass das Design oder Verhalten einer Komponente global geändert wird.
 
-Ein kurzes Beispiel zum Erweitern der Komponente &quot;Kommentare&quot;finden Sie im Tutorial [Kommentarkomponente](extend-comments.md)erweitern.
+Ein kurzes Beispiel zum Erweitern der Komponente &quot;Kommentare&quot;finden Sie im Tutorial [Kommentare erweitern](extend-comments.md).
 
 ## JavaScript-Bindung {#javascript-binding}
 
 Das HBS-Skript für die Komponente muss an die JavaScript-Objekte, -Modelle und -Ansichten gebunden sein, die diese Funktion implementieren.
 
-Der Wert des `data-scf-component` Attributs kann der Standardwert sein, z. B. **`social/tally/components/hbs/rating`** oder eine erweiterte (benutzerdefinierte) Komponente für benutzerdefinierte Funktionen, wie z. B. **Kleinschreibung/Komponenten/hbs/Bewertung**.
+Der Wert des Attributs `data-scf-component` kann der Standardwert sein, z. B. **`social/tally/components/hbs/rating`**, oder eine erweiterte (benutzerdefinierte) Komponente für benutzerdefinierte Funktionen, z. B. **weretail/components/hbs/rating**.
 
 Um eine Komponente zu binden, muss das gesamte Komponentenskript in ein &lt;div>-Element mit den folgenden Attributen eingeschlossen sein:
 
@@ -68,7 +68,7 @@ Um eine Komponente zu binden, muss das gesamte Komponentenskript in ein &lt;div>
 
 * `data-scf-component`=&quot;*&lt;resourceType>*
 
-Beispiel `/apps/weretail/components/hbs/rating/rating.hbs`:
+Beispiel:`/apps/weretail/components/hbs/rating/rating.hbs`
 
 ```xml
 <div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
@@ -86,7 +86,7 @@ Auf alle Eigenschaften, die für eine Komponente/Ressource festgelegt sind, kann
 
 `{{properties.<property_name>}}`
 
-## CSS-Skins {#skinning-css}
+## Skin-CSS {#skinning-css}
 
 Die Anpassung der Komponenten an das allgemeine Thema der Website kann durch &quot;Skin&quot; erreicht werden - durch eine Änderung der Farben, Schriftarten, Bilder, Schaltflächen, Links, Abstände und sogar Positionierung in einem bestimmten Umfang.
 
@@ -97,7 +97,7 @@ So legen Sie eine Komponente als Skin fest:
 1. Identifizieren Sie die Elemente, die Sie ändern möchten (z. B. Komponentenbereich, Symbolleistenschaltflächen, Meldungsart usw.).
 1. Identifizieren Sie die CSS-Klasse/die CSS-Regeln, die sich auf diese Elemente auswirken.
 1. Erstellen Sie eine Stylesheet-Datei (.css).
-1. Schließen Sie das Stylesheet in einen Client-Bibliotheksordner ([clientlibs](#clientlibs-for-scf)) für Ihre Site ein und stellen Sie sicher, dass es in Ihren Vorlagen und Seiten mit [ui:includeClientLib](../../help/sites-developing/clientlibs.md)enthalten ist.
+1. Schließen Sie das Stylesheet in einen Clientbibliotheksordner ([clientlibs](#clientlibs-for-scf)) für Ihre Site ein und vergewissern Sie sich, dass es in Ihren Vorlagen und Seiten mit [ui:includeClientLib](../../help/sites-developing/clientlibs.md) enthalten ist.
 
 1. Definieren Sie die CSS-Klassen und -Regeln, die Sie im Stylesheet identifiziert haben (#2), neu und fügen Sie Stile hinzu.
 
@@ -105,11 +105,11 @@ Die benutzerdefinierten Stile überschreiben jetzt die standardmäßigen Rahmens
 
 >[!CAUTION]
 >
->Jeder CSS-Klassenname, dem ein Präfix vorangestellt wird, `scf-js` hat eine bestimmte Verwendung im JavaScript-Code. Diese Klassen wirken sich auf den Status einer Komponente aus (z. B. Umschalten von ausgeblendet zu sichtbar) und sollten weder überschrieben noch entfernt werden.
+>Jeder CSS-Klassenname, dem `scf-js` vorangestellt wird, hat eine bestimmte Verwendung im JavaScript-Code. Diese Klassen wirken sich auf den Status einer Komponente aus (z. B. Umschalten von ausgeblendet zu sichtbar) und sollten weder überschrieben noch entfernt werden.
 >
->Obwohl die `scf-js` Klassen keine Auswirkungen auf Stile haben, können die Klassennamen in Stylesheets mit dem Vorbehalt verwendet werden, dass, da sie die Status von Elementen steuern, es möglicherweise Nebenwirkungen geben kann.
+>Die `scf-js`-Klassen wirken sich zwar nicht auf Stile aus, die Klassennamen können jedoch in Stylesheets mit dem Vorbehalt verwendet werden, dass, da sie die Zustände von Elementen steuern, möglicherweise Nebenwirkungen auftreten.
 
-## JavaScript erweitern {#extending-javascript}
+## Erweitern von JavaScript {#extending-javascript}
 
 Um eine JavaScript-Implementierung der Komponenten zu erweitern, müssen Sie:
 
@@ -119,7 +119,7 @@ Um eine JavaScript-Implementierung der Komponenten zu erweitern, müssen Sie:
 1. Erweitern Sie die Methode.
 1. Verwenden Sie SCF.registerComponent(), um alle Methoden entweder mit den Standardwerten oder den angepassten Objekten und Ansichten zu registrieren.
 
-### forum.js: Beispielerweiterung des Forums - HBS  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Beispielerweiterung des Forums - HBS {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -148,20 +148,20 @@ Um eine JavaScript-Implementierung der Komponenten zu erweitern, müssen Sie:
 
 Skript-Tags sind ein wesentlicher Bestandteil des clientseitigen Frameworks. Sie sind der Klebstoff, der dazu beiträgt, das auf dem Server generierte Markup mit den Modellen und Ansichten auf dem Client zu verbinden.
 
-Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Komponenten nicht entfernt werden. SCF-Skript-Tags, die automatisch für die JSON-Injektion in HTML erstellt wurden, werden mit dem Attribut identifiziert `data-scf-json=true`.
+Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Komponenten nicht entfernt werden. SCF-Skript-Tags, die automatisch für die JSON-Injektion in HTML erstellt wurden, werden mit dem Attribut `data-scf-json=true` identifiziert.
 
-## Clientlibs für SCF {#clientlibs-for-scf}
+## clipplibs für SCF {#clientlibs-for-scf}
 
-Die Verwendung [clientseitiger Bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit, JavaScript und CSS zu organisieren und zu optimieren, die zum Rendern von Inhalten auf dem Client verwendet werden.
+Die Verwendung von [clientseitigen Bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit zum Organisieren und Optimieren von Javascript und CSS, die zum Rendern von Inhalten auf dem Client verwendet werden.
 
 Die clientlibs für SCF folgen einem sehr spezifischen Benennungsmuster für zwei Varianten, die nur durch das Vorhandensein von &quot;author&quot;im Namen der Kategorie variieren:
 
 | Clientlib-Variante | Muster für Eigenschaft &quot;Kategorien&quot; |
 |--- |--- |
-| complete clientlib | cq.social.hbs.&lt;Name der Komponente> |
-| author clientlib | cq.social.author.hbs.&lt;Name der Komponente> |
+| complete clientlib | cq.social.hbs.&lt;component name=&quot;&quot;> |
+| author clientlib | cq.social.author.hbs.&lt;component name=&quot;&quot;> |
 
-### Vollständige Clientlibs {#complete-clientlibs}
+### Complete Clientlibs {#complete-clientlibs}
 
 Die vollständigen clientlibs (ohne Autor) beinhalten Abhängigkeiten und eignen sich ideal für die Verwendung mit ui:includeClientLib.
 
@@ -174,9 +174,9 @@ Beispiel:
 * Client-Ordnerknoten: `/etc/clientlibs/social/hbs/forum`
 * Eigenschaft &quot;Kategorien&quot;: `cq.social.hbs.forum`
 
-Im Handbuch [&quot;](components-guide.md) Community-Komponenten&quot;werden die vollständigen clientlibs für jede SCF-Komponente Liste.
+Im [Handbuch &quot;Community-Komponenten&quot;](components-guide.md) werden die vollständigen clientlibs Liste, die für jede SCF-Komponente erforderlich sind.
 
-[clientlibs for Communities Components](clientlibs.md) beschreibt, wie Sie einer Seite clientlibs hinzufügen.
+[clientlibs für Communities ](clientlibs.md) Components beschreibt, wie clientlibs zu einer Seite hinzugefügt werden.
 
 ### Autor-Clientlibs {#author-clientlibs}
 
@@ -195,9 +195,9 @@ Beispiel:
 
 Hinweis: Während Autor clientlibs nie andere Bibliotheken einbetten, machen sie Liste ihre Abhängigkeiten. Wenn sie in andere Bibliotheken eingebettet sind, werden die Abhängigkeiten nicht automatisch eingezogen und müssen auch eingebettet werden.
 
-Die erforderlichen Autoren-clientlibs können identifiziert werden, indem Sie &quot;author&quot;in die clientlibs einfügen, die für jede SCF-Komponente im Handbuch [Community-Komponenten aufgeführt sind](components-guide.md).
+Die erforderlichen Autoren-clientlibs können identifiziert werden, indem Sie &quot;author&quot;in die clientlibs einfügen, die für jede SCF-Komponente im [Community-Komponenten-Handbuch](components-guide.md) aufgelistet sind.
 
-### Überlegungen zur Nutzung {#usage-considerations}
+### Überlegungen zur Verwendung {#usage-considerations}
 
 Jede Website ist anders, wenn es darum geht, Client-Bibliotheken zu verwalten. Zu den verschiedenen Faktoren gehören:
 
