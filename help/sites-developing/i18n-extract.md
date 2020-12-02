@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 71%
 
 ---
 
@@ -65,8 +68,8 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 | Präfix | Ergebnis |
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
-|  &amp;ast; | Gibt eine normale Datei im Dateisystem an. |
-| none | Kein Präfix oder ein Muster, das mit einem Ordner- oder Dateinamen beginnt, zeigt eine normale Datei im Dateisystem an. |
+| &amp;ast; | Gibt eine normale Datei im Dateisystem an. |
+| keine | Kein Präfix oder ein Muster, das mit einem Ordner- oder Dateinamen beginnt, zeigt eine normale Datei im Dateisystem an. |
 
 Bei Verwendung innerhalb eines Musters gibt das /-Zeichen einen Unterordner und den &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
 
@@ -134,7 +137,7 @@ mvn xgettext:extract
 ### Ausgabedateien {#output-files}
 
 * `raw.xliff`: extrahierte Zeichenfolgen
-* `warn.log`: (sofern vorhanden), wenn die `CQ.I18n.getMessage()` API nicht korrekt verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
+* `warn.log`: (sofern vorhanden), wenn die  `CQ.I18n.getMessage()` API nicht korrekt verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
 
 * `parserwarn.log`: Parser-Warnungen (falls vorhanden), z. B. js-Parserprobleme
 * `potentials.xliff`: „potenzielle“ Kandidaten, die nicht extrahiert werden, aber möglicherweise von Menschen lesbare Zeichenfolgen sind, die übersetzt werden müssen (kann ignoriert werden, da es noch eine große Menge an falsch positiven Ergebnissen findet)
