@@ -51,8 +51,8 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    >
    >    
    >    
-   >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
+   >    1. Wechseln Sie zu https://&#39;[server]:[port]&#39;/system/console/crypto.
+   >    1. Geben Sie im Feld **[!UICONTROL Normaler Text]** das zu verschlüsselnde Kennwort oder eine beliebige Zeichenfolge ein und tippen Sie auf **[!UICONTROL Protect]**.
 
    >    
    >    
@@ -65,14 +65,14 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    * SELECT 1 (MySQL und MS SQL)
    * SELECT 1 from dual (Oracle)
 
-1. Tap **[!UICONTROL Save]** to save the configuration.
+1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
 ## AEM-Benutzerprofil konfigurieren {#configure-aem-user-profile}
 
 Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfiguration in der AEM-Webkonsole konfigurieren. Gehen Sie folgendermaßen vor:
 
-1. Go to AEM web console at https://&#39;[server]:[port]&#39;system/console/configMgr.
-1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
+1. Wechseln Sie zu AEM Webkonsole unter https://&#39;[server]:[port]&#39;system/console/configMgr.
+1. Suchen Sie nach **[!UICONTROL AEM Forms Data Integrations - User Profil Connector Configuration]** und tippen Sie auf , um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Im Dialogfeld für die Benutzerprofil-Connector-Konfiguration können Sie Benutzerprofileigenschaften hinzufügen, entfernen oder aktualisieren. Die angegebenen Eigenschaften sind zur Verwendung im Formulardatenmodell verfügbar. Verwenden Sie das folgende Format, um Benutzerprofileigenschaften festzulegen:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -84,21 +84,21 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
    >[!NOTE]
    >
-   >The ***** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
+   >Die Node ***** im obigen Beispiel kennzeichnet alle Nodes unter der Node `profile/empLocation/` in AEM Benutzerstruktur in CRXDE. Das bedeutet, dass das Formulardatenmodell auf die `city`-Eigenschaft des Typs `string` zugreifen kann, die in einem beliebigen Knoten unter dem Knoten `profile/empLocation/` vorhanden ist. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
 
-1. Tap **[!UICONTROL Save]** to save the configuration.
+1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
 ## Ordner für Cloud-Dienstkonfigurationen konfigurieren {#cloud-folder}
 
 >[!NOTE]
 Zum Konfigurieren von Cloud-Diensten für RESTful-, SOAP- und OData-Dienste ist eine Konfiguration des Ordners für Cloud-Dienste erforderlich.
 
-All cloud service configurations in AEM are consolidated in the `/conf` folder in AEM repository. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud-Dienst-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud-Dienstkonfigurationen zu erstellen und zu organisieren.
+Alle Cloud-Dienstkonfigurationen in AEM werden im Ordner `/conf` im AEM Repository konsolidiert. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud-Dienst-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud-Dienstkonfigurationen zu erstellen und zu organisieren.
 
 Konfigurieren des Ordners für Cloud-Dienstkonfigurationen:
 
-1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
-   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+1. Gehen Sie zu **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**.
+   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
 1. Gehen Sie folgendermaßen vor, um den globalen Ordner für Cloud-Konfigurationen zu aktivieren, oder überspringen Sie diesen Schritt, um einen anderen Ordner für Cloud-Dienstkonfigurationen zu erstellen und zu konfigurieren.
 
    1. Wählen Sie im **[!UICONTROL Konfigurationsbrowser]** den Ordner `global`und tippen Sie auf **[!UICONTROL Eigenschaften]**.
@@ -109,19 +109,19 @@ Konfigurieren des Ordners für Cloud-Dienstkonfigurationen:
 
 1. Tippen Sie im **[!UICONTROL Konfigurationsbrowser]** auf **[!UICONTROL Erstellen]**.
 1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
-1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den Ordner zu erstellen, der für Cloud-Dienstkonfigurationen aktiviert ist.
 
 ## RESTful-Webdienste konfigurieren {#configure-restful-web-services}
 
-RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Um den RESTful-Webdienst in AEM Cloud-Diensten zu konfigurieren, stellen Sie sicher, dass sich die Swagger-Datei im Dateisystem oder die URL befindet, unter der die Datei gehostet wird.
+RESTful-Webdienst kann mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/) im JSON- oder YAML-Format in einer Swagger-Definitionsdatei beschrieben werden. Um den RESTful-Webdienst in AEM Cloud-Diensten zu konfigurieren, stellen Sie sicher, dass sich die Swagger-Datei im Dateisystem oder die URL befindet, unter der die Datei gehostet wird.
 
 Gehen Sie wie folgt vor, um RESTful-Dienste zu konfigurieren:
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud-Dienste > Datenquellen]**. Tippen Sie auf , um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
+   Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Dienstkonfigurationen finden Sie unter [Ordner für Cloud-Dienstkonfigurationen konfigurieren](../../forms/using/configure-data-sources.md#cloud-folder).
 
-1. Tap **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Dienst]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]**, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und tippen Sie auf **[!UICONTROL Weiter]**.
+1. Tippen Sie auf **[!UICONTROL Create]**, um den Assistenten **[!UICONTROL Create Data Source Configuration Wizard]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL RESTful-Dienst]** aus der Dropdown-Liste **[!UICONTROL Service-Typ]**, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und tippen Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie die folgenden Details für den RESTful-Dienst an:
 
    * Wählen Sie in der Dropdown-Liste &quot;Swagger-Quelle&quot;die Option &quot;URL&quot;oder &quot;Datei&quot;und geben Sie entsprechend die Swagger-URL zur Swagger-Definitionsdatei an oder laden Sie die Swagger-Datei aus Ihrem lokalen Dateisystem hoch.
@@ -133,9 +133,9 @@ Gehen Sie wie folgt vor, um RESTful-Dienste zu konfigurieren:
          Bearbeiten Sie bei Bedarf die vorausgefüllten Werte für diese Felder.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, API-Schlüssel, benutzerdefinierte Authentifizierung oder gegenseitige Authentifizierung — , um auf den RESTful-Dienst zuzugreifen und dementsprechend Details zur Authentifizierung anzugeben.
 
-   Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL API-Schlüssel]** &quot;auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungsheader oder als Abfrage-Parameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste &quot; **[!UICONTROL Position]** &quot;und geben Sie den Namen der Kopfzeile bzw. des Abfrage-Parameters im Feld **[!UICONTROL Parametername]** entsprechend an.
+   Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungsheader oder als Abfrage-Parameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Position]** und geben Sie den Namen der Kopfzeile oder des Abfrage-Parameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
-   Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL Gegenseitige Authentifizierung]** &quot;auswählen, finden Sie weitere Informationen unter [Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste](#mutual-authentication).
+   Wenn Sie **[!UICONTROL Gegenseitige Authentifizierung]** als Authentifizierungstyp auswählen, finden Sie weitere Informationen unter [Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste](#mutual-authentication).
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den RESTful-Dienst zu erstellen.
 
@@ -145,19 +145,19 @@ SOAP-basierte Webdienste werden mithilfe von [WSDL-Spezifikationen (Web Services
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud-Dienste > Datenquellen]**. Tippen Sie auf , um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
+   Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Dienstkonfigurationen finden Sie unter [Ordner für Cloud-Dienstkonfigurationen konfigurieren](../../forms/using/configure-data-sources.md#cloud-folder).
 
-1. Tap **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL SOAP Web-Dienst]** aus der **[!UICONTROL Dropdown-Liste Service-Typ]**, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und tippen Sie auf **[!UICONTROL Weiter]**.
+1. Tippen Sie auf **[!UICONTROL Create]**, um den Assistenten **[!UICONTROL Create Data Source Configuration Wizard]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL SOAP Web-Dienst]** aus der **[!UICONTROL Dropdown-Liste Service-Typ]**, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und tippen Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie Folgendes für den SOAP-Webdienst an:
 
    * WSDL-URL für den Webdienst.
    * Dienstendpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Dienstendpunkt zu überschreiben.
    * Wählen Sie den Authentifizierungstyp aus — Keine, OAuth2.0, einfache Authentifizierung, benutzerdefinierte Authentifizierung, X509-Token oder gegenseitige Authentifizierung — , um auf den SOAP-Dienst zuzugreifen und die Details zur Authentifizierung anzugeben.
 
-      Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL X509-Token]** &quot;auswählen, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Geben Sie den KeyStore-Alias für das X509-Zertifikat im Feld **[!UICONTROL Key Alias]** an. Geben Sie im Feld &quot; **[!UICONTROL Zeit bis zum Live]** &quot;die Zeit in Sekunden an, bis die Authentifizierungsanforderung gültig bleibt. Optional können Sie den Nachrichtentext oder die Zeitstempelüberschrift oder beides signieren.
+      Wenn Sie als Authentifizierungstyp **[!UICONTROL X509-Token]** auswählen, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Zertifikate einrichten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Geben Sie im Feld **[!UICONTROL Schlüsselalias]** den KeyStore-Alias für das X509-Zertifikat an. Geben Sie im Feld **[!UICONTROL Zeit bis zum Live]** die Zeit in Sekunden an, bis die Authentifizierungsanforderung gültig bleibt. Optional können Sie den Nachrichtentext oder die Zeitstempelüberschrift oder beides signieren.
 
-      Wenn Sie als Authentifizierungstyp &quot; **[!UICONTROL Gegenseitige Authentifizierung]** &quot;auswählen, finden Sie weitere Informationen unter [Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste](#mutual-authentication).
+      Wenn Sie **[!UICONTROL Gegenseitige Authentifizierung]** als Authentifizierungstyp auswählen, finden Sie weitere Informationen unter [Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste](#mutual-authentication).
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den SOAP-Webdienst zu erstellen.
 
@@ -170,9 +170,9 @@ Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud-Dienste > Datenquellen]**. Tippen Sie auf , um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
-   See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
+   Informationen zum Erstellen und Konfigurieren eines Ordners für Cloud-Dienstkonfigurationen finden Sie unter [Ordner für Cloud-Dienstkonfigurationen konfigurieren](../../forms/using/configure-data-sources.md#cloud-folder).
 
-1. Tap **[!UICONTROL Create]** to open the **[!UICONTROL Create Data Source Configuration wizard]**. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Dienst]** aus der **[!UICONTROL Dropdown-Liste Service-Typ]**, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und tippen Sie auf **[!UICONTROL Weiter]**.
+1. Tippen Sie auf **[!UICONTROL Create]**, um den Assistenten **[!UICONTROL Create Data Source Configuration Wizard]** zu öffnen. Geben Sie einen Namen und optional einen Titel für die Konfiguration ein, wählen Sie **[!UICONTROL OData-Dienst]** aus der **[!UICONTROL Dropdown-Liste Service-Typ]**, suchen Sie optional nach einem Miniaturbild für die Konfiguration, und tippen Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie die folgenden Details für den OData-Dienst an:
 
    * Dienststamm-URL für den zu konfigurierenden OData-Dienst.
@@ -181,21 +181,21 @@ Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online
    >[!NOTE]
    Sie müssen den OAuth 2.0-Authentifizierungstyp auswählen, um eine Verbindung mit Microsoft Dynamics-Diensten herzustellen, die den OData-Endpunkt als Dienststamm nutzen.
 
-1. Tap **Create** to create the cloud configuration for the OData service.
+1. Tippen Sie auf **Create**, um die Cloud-Konfiguration für den ODData-Dienst zu erstellen.
 
 ## Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Webdienste {#mutual-authentication}
 
 Wenn Sie die gegenseitige Authentifizierung für das Formulardatenmodell aktivieren, authentifizieren sich sowohl die Datenquelle als auch AEM Server, auf dem das Formulardatenmodell ausgeführt wird, die Identität der anderen, bevor Daten freigegeben werden. Sie können die gegenseitige Authentifizierung für REST- und SOAP-basierte Verbindungen (Datenquellen) verwenden. So konfigurieren Sie die gegenseitige Authentifizierung für ein Formulardatenmodell auf Ihrer AEM Forms-Umgebung:
 
-1. Laden Sie den privaten Schlüssel (Zertifikat) auf den [!DNL AEM Forms] Server hoch. So laden Sie den privaten Schlüssel hoch:
-   1. Melden Sie sich bei Ihrem [!DNL AEM Forms] Server als Administrator an.
-   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Wählen Sie den `fd-cloudservice` Benutzer aus und tippen Sie auf **[!UICONTROL Eigenschaften]**.
-   1. Öffnen Sie die Registerkarte **[!UICONTROL Keystore]** , erweitern Sie die Option **[!UICONTROL Hinzufügen privaten Schlüssel aus KeyStore-Datei]** , laden Sie die KeyStore-Datei hoch, geben Sie die Aliase und Kennwörter ein und tippen Sie auf **[!UICONTROL Senden]**. Das Zertifikat wird hochgeladen.  Der Alias für den privaten Schlüssel wird im Zertifikat erwähnt und beim Erstellen des Zertifikats festgelegt.
+1. Laden Sie den privaten Schlüssel (Zertifikat) auf den [!DNL AEM Forms]-Server hoch. So laden Sie den privaten Schlüssel hoch:
+   1. Melden Sie sich bei Ihrem [!DNL AEM Forms]-Server als Administrator an.
+   1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**. Wählen Sie den Benutzer `fd-cloudservice` und tippen Sie auf **[!UICONTROL Eigenschaften]**.
+   1. Öffnen Sie die Registerkarte **[!UICONTROL Keystore]**, erweitern Sie die Option **[!UICONTROL Hinzufügen privaten Schlüssel aus der KeyStore-Datei]**, laden Sie die KeyStore-Datei hoch, geben Sie die Aliase und Kennwörter ein und tippen Sie auf **[!UICONTROL Senden]**. Das Zertifikat wird hochgeladen.  Der Alias für den privaten Schlüssel wird im Zertifikat erwähnt und beim Erstellen des Zertifikats festgelegt.
 1. Hochladen des Trust-Zertifikats in den Global Trust Store. So laden Sie das Zertifikat hoch:
    1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Trust Store]**.
-   1. Erweitern Sie die Option **[!UICONTROL Hinzufügen Zertifikat aus CER-Datei]** , tippen Sie auf **[!UICONTROL Zertifikatdatei]** auswählen, laden Sie das Zertifikat hoch und klicken Sie auf **[!UICONTROL Senden]**.
-1. Konfigurieren Sie [SOAP](#configure-soap-web-services) - oder [RESTful](#configure-restful-web-services) -Webdienste als Datenquelle und wählen Sie **[!UICONTROL Gegenseitige Authentifizierung]** als Authentifizierungstyp. Wenn Sie mehrere selbstsignierte Zertifikate für `fd-cloudservice` Benutzer konfigurieren, geben Sie den Aliasnamen für das Zertifikat an.
+   1. Erweitern Sie die Option **[!UICONTROL Hinzufügen Zertifikat aus CER-Datei]**, tippen Sie auf **[!UICONTROL Zertifikatdatei]** auswählen, laden Sie das Zertifikat hoch und tippen Sie auf **[!UICONTROL Senden]**.
+1. Konfigurieren Sie die Webdienste [SOAP](#configure-soap-web-services) oder [RESTful](#configure-restful-web-services) als Datenquelle und wählen Sie **[!UICONTROL Gegenseitige Authentifizierung]** als Authentifizierungstyp. Wenn Sie mehrere selbstsignierte Zertifikate für `fd-cloudservice`-Benutzer konfigurieren, geben Sie den Aliasnamen für das Zertifikat an.
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell erstellen oder, falls Sie bereits ein Formulardatenmodell ohne Datenquelle erstellt haben, können Sie es den soeben konfigurierten Datenquellen zuordnen. See [Create form data model](/help/forms/using/create-form-data-models.md) for details.
+Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell erstellen oder, falls Sie bereits ein Formulardatenmodell ohne Datenquelle erstellt haben, können Sie es den soeben konfigurierten Datenquellen zuordnen. Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](/help/forms/using/create-form-data-models.md).
