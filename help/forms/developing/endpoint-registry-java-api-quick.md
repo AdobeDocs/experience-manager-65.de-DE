@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Java-API-Quick-Beginn (SOAP) der Endpunktregistrierung {#endpoint-registry-java-api-quickstart-soap}
+# Endpoint Registry Java API Quick Beginn (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
 Java API Quick Beginn (SOAP) ist für die Endpunktregistrierung verfügbar.
 
@@ -49,7 +49,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 >
 >Sie können mit einem Webdienst nicht mit Endpunkten arbeiten.
 
-## QuickStart: Hinzufügen eines EJB-Endpunkts mithilfe der Java-API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+## QuickStart: Hinzufügen eines EJB-Endpunkts mit der Java-API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein EJB-Endpunkt hinzugefügt. (Siehe [Hinzufügen von EJB-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
@@ -250,11 +250,11 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 ## QuickStart: Hinzufügen eines Endpunkts für einen überwachten Ordner mithilfe der Java-API {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein Endpunkt für den überwachten Ordner hinzugefügt. (See [Adding Watched Folder Endpoints](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
+Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein Endpunkt für den überwachten Ordner hinzugefügt. (Siehe [Hinzufügen von Endpunkten für überwachte Ordner](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->Sie müssen die Datei &quot;watchedFolderEndpointConfigConstants.java&quot;in Ihr Projekt einschließen, um den folgenden Quick-Beginn zu kompilieren und auszuführen. (Siehe [Konfigurationswerte der Konstanten Datei](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)für überwachte Ordner.)
+>Sie müssen die Datei &quot;watchedFolderEndpointConfigConstants.java&quot;in Ihr Projekt einschließen, um den folgenden Quick-Beginn zu kompilieren und auszuführen. (Siehe [Konfigurationswerte für überwachte Ordner Konstante Datei](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -385,7 +385,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 ## QuickStart: Hinzufügen eines E-Mail-Endpunkts mit der Java-API {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/* EncryptDocument ein E-Mail-Endpunkt hinzugefügt. (Siehe [Hinzufügen von E-Mail-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocumen* t ein E-Mail-Endpunkt hinzugefügt. (Siehe [Hinzufügen von E-Mail-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
@@ -528,7 +528,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/* 
 
 ## QuickStart: Hinzufügen eines Remoting-Endpunkts mit der Java-API {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein Remoting-Endpunkt hinzugefügt. (Siehe [Hinzufügen von Remoting-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
+Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein Remoting-Endpunkt hinzugefügt. (Siehe [Remoting-Endpunkte](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints) hinzufügen.)
 
 ```java
  /*
@@ -633,7 +633,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 ## QuickStart: Hinzufügen eines TaskManager-Endpunkts mithilfe der Java-API {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein TaskManager-Endpunkt hinzugefügt. Beachten Sie, dass der Name der Kategorie *EncryptProcess* lautet. (Siehe TaskManager-Endpunkte [hinzufügen](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/EncryptDocument* ein TaskManager-Endpunkt hinzugefügt. Beachten Sie, dass der Name der Kategorie *EncryptProcess* lautet. (Siehe [Hinzufügen von TaskManager-Endpunkten](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```java
  /*
@@ -742,7 +742,7 @@ Im folgenden Java-Codebeispiel wird einem Dienst mit dem Namen *MyApplication/En
 
 ## QuickStart: Ändern eines Endpunkts mit der Java-API {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein Endpunkt des Typs &quot;Überwachter Ordner&quot;geändert. Der Endpunkt ist für den *MyApplication/EncryptDocument* -Prozess vorgesehen. Der überwachte Ordner wird in `C:\NewWatchedFolder`geändert. (Siehe Endpunkte [ändern](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+Im folgenden Java-Codebeispiel wird ein Endpunkt des Typs &quot;Überwachter Ordner&quot;geändert. Der Endpunkt wird für den Prozess *MyApplication/EncryptDocument* verwendet. Der überwachte Ordner wird in `C:\NewWatchedFolder` geändert. (Siehe [Endpunkte ändern](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*
