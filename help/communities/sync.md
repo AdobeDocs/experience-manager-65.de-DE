@@ -12,6 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 translation-type: tm+mt
 source-git-commit: acc758b83486e8c623e31bb4a68f3c29dd4848ba
+workflow-type: tm+mt
+source-wordcount: '2509'
+ht-degree: 12%
 
 ---
 
@@ -20,11 +23,11 @@ source-git-commit: acc758b83486e8c623e31bb4a68f3c29dd4848ba
 
 ## Einführung {#introduction}
 
-In AEM Communities können *Site-Besucher* aus der Umgebung &quot;Veröffentlichen&quot;(abhängig von den konfigurierten Berechtigungen) *Mitglieder* werden, *Benutzergruppen* erstellen und ihr *Member-Profil* bearbeiten.
+In AEM Communities können *Site-Besucher* aus der Umgebung zum Veröffentlichen (abhängig von den konfigurierten Berechtigungen) *zu*-Mitgliedern werden, *Benutzergruppen* erstellen und ihr *Profil für Mitglieder* bearbeiten.
 
-*&quot;Benutzerdaten* &quot;bezeichnet *Benutzer*, *Profil* und *Benutzergruppen*.
+*Benutzerdaten* sind Begriffe, mit denen auf  *Benutzer*,  *Benutzerprofile und* Benutzergruppen ** verwiesen wird.
 
-*Mitglieder* beziehen sich auf *Benutzer* , die in der Veröffentlichungs-Umgebung registriert sind, im Gegensatz zu in der Autorenversion registrierten Benutzern.
+** Membersis ist ein Begriff, der sich auf in der Umgebung &quot;Veröffentlichen&quot;registrierte  ** Benutzer bezieht, im Gegensatz zu in der Umgebung &quot;Autor&quot;registrierten Benutzern.
 
 Weitere Informationen zu Benutzerdaten finden Sie unter [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
 
@@ -34,11 +37,11 @@ Standardmäßig werden in der Umgebung &quot;Veröffentlichen&quot;erstellte Ben
 
 Die meisten in der Authoring-Umgebung erstellten Benutzerdaten bleiben in der Autoreninstanz und werden nicht synchronisiert oder auf Veröffentlichungsinstanzen repliziert.
 
-Wenn es sich bei der [Topologie](/help/communities/topologies.md) um eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm)handelt, müssen die Registrierungen und Änderungen, die an einer Veröffentlichungsinstanz vorgenommen wurden, mit anderen Instanzen im Veröffentlichungsmodus synchronisiert werden. Mitglieder müssen sich anmelden und ihre Daten auf jedem Veröffentlichungsknoten anzeigen können.
+Wenn die [Topologie](/help/communities/topologies.md) eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) ist, müssen die Registrierung und die an einer Veröffentlichungsinstanz vorgenommenen Änderungen mit anderen Instanzen im Veröffentlichungsmodus synchronisiert werden. Mitglieder müssen sich anmelden und ihre Daten auf jedem Veröffentlichungsknoten anzeigen können.
 
 Wenn die Benutzersynchronisierung aktiviert ist, werden die Benutzerdaten automatisch über die Instanzen im Veröffentlichungsmodus in der Farm hinweg synchronisiert.
 
-### Anweisungen zur Benutzersynchronisierung {#user-sync-setup-instructions}
+### Anweisungen für die Benutzersynchronisierung {#user-sync-setup-instructions}
 
 Detaillierte Anweisungen zum Aktivieren der Synchronisierung über eine Veröffentlichungsfarm hinweg finden Sie unter:
 
@@ -56,19 +59,19 @@ Detaillierte Anweisungen zum Aktivieren der Synchronisierung über eine Veröffe
 
    Es enthält Verteilungsinformationen für Sling. Das sind Informationen darüber, wo der Inhalt verteilt werden muss und wann er zuletzt verteilt wurde.
 
-## What Happens When ... {#what-happens-when}
+## Was passiert, wenn ... {#what-happens-when}
 
-### Veröffentlichen von Sites in der Sites-Konsole der Communities {#publish-site-from-communities-sites-console}
+### Site aus Communities-Sites-Konsole {#publish-site-from-communities-sites-console} veröffentlichen
 
-Wenn beim Autor eine Community-Site über die [Communities Sites Console](/help/communities/sites-console.md)veröffentlicht wird, werden die verknüpften Seiten [repliziert](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) , und Sling verteilt die dynamisch erstellten Community-Benutzergruppen, einschließlich ihrer Mitgliedschaft.
+Wenn beim Autor eine Community-Site über die [Communities Sites Console](/help/communities/sites-console.md) veröffentlicht wird, hat dies zur Folge, dass [die verknüpften Seiten repliziert und Sling die dynamisch erstellten Community-Benutzergruppen einschließlich ihrer Mitgliedschaft verteilt.](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents)
 
-### Benutzer wird beim Veröffentlichen erstellt oder bearbeitet Profil {#user-is-created-or-edits-profile-on-publish}
+### Profil &quot;Benutzer erstellt&quot;oder &quot;Bearbeitung&quot;bei Veröffentlichung {#user-is-created-or-edits-profile-on-publish}
 
 Standardmäßig werden in der Umgebung &quot;Veröffentlichen&quot;erstellte Benutzer und Profil (z. B. durch Selbstregistrierung, Social-Login oder LDAP-Authentifizierung) nicht in der Umgebung &quot;Autor&quot;angezeigt.
 
-When the topology is a [publish farm](/help/communities/topologies.md) and user sync has been correctly configured, the *user* and *user profile* is synchronized across the publish farm using Sling distribution.
+Wenn die Topologie eine [Veröffentlichungsfarm](/help/communities/topologies.md) ist und die Benutzersynchronisierung korrekt konfiguriert wurde, werden das *user*- und *user-Profil* mithilfe der Sling-Distribution über die Veröffentlichungsfarm hinweg synchronisiert.
 
-### Neue Community-Gruppe wird bei der Veröffentlichung erstellt {#new-community-group-is-created-on-publish}
+### Neue Community-Gruppe wird unter Veröffentlichen {#new-community-group-is-created-on-publish} erstellt
 
 Obwohl sie von einer Instanz im Veröffentlichungsmodus initiiert wird, erfolgt die Erstellung einer Community-Gruppe, die zu neuen Site-Seiten und einer neuen Benutzergruppe führt, tatsächlich in der Autoreninstanz.
 
@@ -82,7 +85,7 @@ Wenn in der Veröffentlichungsumgebung neue Benutzer über die Konsole [Benutzer
 
 ### Inhalt von Benutzerbeiträgen bei der Veröffentlichung {#user-posts-content-on-publish}
 
-Bei benutzergenerierten Inhalten (UGC) wird auf die in einer Veröffentlichungsinstanz eingegebenen Daten über das [konfigurierte SRP](/help/communities/srp-config.md)zugegriffen.
+Bei benutzergenerierten Inhalten (UGC) wird auf die in einer Veröffentlichungsinstanz eingegebenen Daten über das [konfigurierte SRP](/help/communities/srp-config.md) zugegriffen.
 
 ## Best Practices {#bestpractices}
 
@@ -101,7 +104,7 @@ Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die V
    * [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities-Updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
-Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung in AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, damit die Verteilung von Sling-Inhalten nicht fehlschlägt.
+Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung auf AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, damit die Verteilung von Sling-Inhalten nicht fehlschlägt.
 
 ### Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -111,20 +114,20 @@ Die Standardwerte in der Konfiguration beziehen sich auf eine einzelne Instanz i
 
 **Wie werden die Inhalte synchronisiert?**
 
-Die Autoreninstanz fügt den Endpunkt des Exporteurs von Herausgebern ein. Wenn ein Benutzer auf bestimmten Herausgebern (n) erstellt oder aktualisiert wird, ruft der Autor den Inhalt von seinen Exporteuren-Endpunkten ab und [sendet den Inhalt](/help/communities/sync.md#main-pars-image-1413756164) an andere Herausgeber (n-1, d. h. nicht an die Herausgeber, von denen der Inhalt abgerufen wird).
+Die Autoreninstanz fügt den Endpunkt des Exporteurs von Herausgebern ein. Wenn ein Benutzer auf bestimmten Herausgebern (n) erstellt oder aktualisiert wird, ruft der Autor den Inhalt von seinen Exporteuren-Endpunkten ab und [schiebt den Inhalt](/help/communities/sync.md#main-pars-image-1413756164) in andere Herausgeber (n-1, d. h. nicht in die Herausgeber, von denen der Inhalt abgerufen wird).
 
 Konfigurieren der Konfiguration von Apache Sling Sync Agents:
 
-1. Melden Sie sich mit Administratorrechten für Ihre AEM-Autoreninstanz an.
-1. Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html). For example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Locate **Apache Sling Distribution Agent - Sync Agents Factory**.
+1. Melden Sie sich mit Administratorrechten für Ihre AEM Autoreninstanz an.
+1. Rufen Sie die [Webkonsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html) auf. Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Suchen Sie nach **Apache Sling Distribution Agent - Sync Agents Factory**.
 
    * Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol).
 
       Überprüfungsname: **socialpubsync.**
 
-   * Select the **Enabled** checkbox.
-   * Wählen Sie &quot;Mehrere Warteschlangen **verwenden&quot;.**
+   * Aktivieren Sie das Kontrollkästchen **Aktiviert**.
+   * Wählen Sie **Mehrere Warteschlangen verwenden.**
    * Geben Sie **Exporter-Endpunkte** und **Importer-Endpunkte** an (Sie können weitere Exporteur- und Importer-Endpunkte hinzufügen).
 
       Diese Endpunkte definieren, woher der Inhalt abgerufen werden soll und wohin der Inhalt verschoben werden soll. Der Autor ruft den Inhalt vom angegebenen Exporteur-Endpunkt ab und gibt den Inhalt an die Herausgeber weiter (mit Ausnahme des Herausgebers, von dem er den Inhalt abgerufen hat).
@@ -134,22 +137,22 @@ Konfigurieren der Konfiguration von Apache Sling Sync Agents:
 
 Dadurch kann der Autor den autorisierten Benutzer identifizieren, da er berechtigt ist, Benutzerdaten vom Autor zur Veröffentlichung zu synchronisieren.
 
-Der [autorisierte Benutzer, der auf allen Instanzen im Veröffentlichungsmodus erstellt wurde](/help/sites-administering/sync.md#createauthuser) , hilft Herausgebern, eine Verbindung mit dem Autor herzustellen und die Sling-Distribution für den Autor zu konfigurieren. Dieser autorisierte Benutzer verfügt über alle erforderlichen [ACLs](/help/sites-administering/sync.md#howtoaddacl).
+Der auf allen Instanzen im Veröffentlichungsmodus erstellte [autorisierte Benutzer hilft Herausgebern, eine Verbindung mit dem Autor herzustellen und die Sling-Distribution für den Autor zu konfigurieren. ](/help/sites-administering/sync.md#createauthuser) Dieser autorisierte Benutzer hat alle erforderlichen [ACLs](/help/sites-administering/sync.md#howtoaddacl).
 
 Wenn Daten auf Herausgebern installiert oder von diesen abgerufen werden sollen, stellt der Autor eine Verbindung mit den Herausgebern her, wobei die in dieser Konfiguration festgelegten Anmeldeinformationen (Benutzername und Kennwort) verwendet werden.
 
 So verbinden Sie Autoren mit Herausgebern mit autorisierten Benutzern:
 
-1. Melden Sie sich mit Administratorrechten für Ihre AEM-Autoreninstanz an.
-1. Access the [Web Console](/help/sites-deploying/configuring-osgi.md).
+1. Melden Sie sich mit Administratorrechten für Ihre AEM Autoreninstanz an.
+1. Rufen Sie die [Webkonsole](/help/sites-deploying/configuring-osgi.md) auf.
 
-   For example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Locate **Adobe Granite Distribution - Encrypted Password Transport Secret Provider.**
+   Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Suchen Sie nach **Adobe Granite Distribution - Verschlüsselter Kennworttransportanbieter.**
 1. Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol).
 
-   Eigenschaft **socialpubsync** überprüfen - **publishUser.**
+   Verify property **socialpubsync** - **publishUser.**
 
-1. Legen Sie den Benutzernamen und das Kennwort auf den [autorisierten Benutzer](/help/sites-administering/sync.md#createauthorizeduser)fest.
+1. Legen Sie Benutzername und Kennwort auf [autorisierter Benutzer](/help/sites-administering/sync.md#createauthorizeduser) fest.
 
    Beispiel: **usersync - admin**
 
@@ -157,45 +160,45 @@ So verbinden Sie Autoren mit Herausgebern mit autorisierten Benutzern:
 
 ### Apache Sling Distribution Agent – Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
-Diese Konfiguration wird verwendet, um die Daten zu konfigurieren, die Sie über Herausgeber hinweg synchronisieren möchten. Wenn Daten in Pfaden erstellt/aktualisiert werden, die in **Zulässige Stammordner** angegeben sind, wird &quot;var/community/distribution/diff&quot;aktiviert und der erstellte Replikator ruft die Daten von einem Herausgeber ab und installiert sie auf anderen Herausgebern.
+Diese Konfiguration wird verwendet, um die Daten zu konfigurieren, die Sie über Herausgeber hinweg synchronisieren möchten. Wenn Daten in Pfaden erstellt/aktualisiert werden, die unter **Zulässige Stammordner** angegeben sind, wird &quot;var/community/distribution/diff&quot;aktiviert und der erstellte Replikator ruft die Daten von einem Herausgeber ab und installiert sie auf anderen Herausgebern.
 
 So konfigurieren Sie die zu synchronisierenden Daten (Knotenpfade):
 
 1. Melden Sie sich mit Administratorrechten für Ihre Autoreninstanz an.
-1. Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Rufen Sie die [Webkonsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html) auf.
 
-   For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+   Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
-1. Locate **Apache Sling Distribution Agent - Queue Agents Factory**.
+1. Suchen Sie nach **Apache Sling Distribution Agent - Queue Agents Factory**.
 1. Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol).
 
    Überprüfungsname: **socialpubsync -reverse**
 
-1. Aktivieren Sie das Kontrollkästchen &quot; **Aktiviert** &quot;und speichern Sie.
-1. Geben Sie die Knotenpfade an, die in **Zulässigen Wurzeln** repliziert werden sollen.
-1. Repeat for each **publish** instance.
+1. Aktivieren Sie das Kontrollkästchen **Aktiviert** und speichern Sie.
+1. Geben Sie die Knotenpfade an, die in **Zulässige Wurzeln** repliziert werden sollen.
+1. Wiederholen Sie diese Schritte für jede **publish**-Instanz.
 
    ![queue-agents-fact](assets/queue-agents-fact.png)
 
 ### Adobe Granite Distribution – Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
 Bei dieser Konfiguration wird die Gruppenmitgliedschaft über Herausgeber hinweg synchronisiert.
-Wenn eine Änderung der Mitgliedschaft in einer Gruppe in einem Herausgeber die Mitgliedschaft nicht in anderen Herausgebern aktualisiert, stellen Sie sicher, dass **ref :members** den **Namen** der angezeigten Eigenschaften hinzugefügt wird.
+Wenn die Mitgliedschaft einer Gruppe in einem Herausgeber nicht auf andere Herausgeber aktualisiert wird, stellen Sie sicher, dass **ref :members** zu **ausgesuchten Eigenschaftennamen** hinzugefügt wird.
 
 So stellen Sie die Mitgliedersynchronisierung sicher:
 
-1. Melden Sie sich mit Administratorrechten für Ihre AEM-Autoreninstanz an.
-1. Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Melden Sie sich mit Administratorrechten für Ihre AEM Autoreninstanz an.
+1. Rufen Sie die [Webkonsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html) auf.
 
-   For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+   Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
-1. Locate **Adobe Granite Distribution - Diff Observer Factory**.
+1. Suchen Sie nach **Granite-Verteilung der Adobe - Diff Observer Factory**.
 1. Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol).
 
-   Name des **Agenten überprüfen: socialpubsync -reverse**.
+   **Agentenname überprüfen: socialpubsync -reverse**.
 
-1. Select the **Enabled** checkbox.
-1. Geben Sie **rep:members** als Beschreibung für propertyName in den Namen **der** gesuchten Eigenschaften an und speichern Sie.
+1. Aktivieren Sie das Kontrollkästchen **Aktiviert**.
+1. Geben Sie **rep:members** als Beschreibung für propertyName in **Namen der gesuchten Eigenschaften** an und speichern Sie.
 
    ![diff-obs](assets/diff-obs.png)
 
@@ -203,24 +206,25 @@ So stellen Sie die Mitgliedersynchronisierung sicher:
 
 Mit dieser Konfiguration können Sie das Abfrageintervall konfigurieren (nach dem Herausgeber gepingt und Änderungen vom Autor gezogen werden), um die Änderungen zwischen Herausgebern zu synchronisieren.
 
-Der Autor fragt Herausgeber alle 30 Sekunden ab (Standard). Wenn Pakete im Ordner vorhanden sind `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, werden diese Pakete abgerufen und auf anderen Herausgebern installiert.
+Der Autor fragt Herausgeber alle 30 Sekunden ab (Standard). Wenn Pakete im Ordner `/var/sling/distribution/packages/  socialpubsync -  vlt /shared` vorhanden sind, werden diese Pakete abgerufen und auf anderen Herausgebern installiert.
 
 So ändern Sie den Abfrageintervall:
 
-1. Melden Sie sich mit Administratorrechten für Ihre AEM-Autoreninstanz an.
-1. Auf die [Webkonsole](/help/sites-deploying/configuring-osgi.md)zugreifen, z. B. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-1. Locate **Apache Sling Distribution Trigger - Scheduled Triggers Factory**
+1. Melden Sie sich mit Administratorrechten für Ihre AEM Autoreninstanz an.
+1. Rufen Sie die [Webkonsole](/help/sites-deploying/configuring-osgi.md) auf, z. B. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+1. Suchen Sie nach **Apache Sling Distribution Trigger - Scheduled Triggers Factory**
 
    * Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol).
 
-      Verify **socialpubsync -geplante-auslöser**
+      Überprüfen Sie **socialpubsync -schedule-trigger**
 
    * Legen Sie das Intervall in Sekunden auf das gewünschte Intervall fest und speichern Sie es.
+
    ![scheduled-trigger](assets/scheduled-trigger.png)
 
 ### AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
-Überprüfen Sie bei Problemen in der Sling-Distribution, bei denen es zu einer Diskrepanz bei Abonnements kommt und darauf folgt, ob die folgenden Eigenschaften in **AEM Communities User Sync Listener** -Konfigurationen festgelegt sind:
+Bei Problemen mit der Sling-Distribution, bei denen es zu einer Diskrepanz bei Abonnements und folgenden kommt, prüfen Sie, ob die folgenden Eigenschaften in den Konfigurationen für den AEM Communities-Benutzersynchronisierungs-Listener **festgelegt sind:**
 
 * NodeTypes
 * IgnorableProperties
@@ -229,16 +233,16 @@ So ändern Sie den Abfrageintervall:
 
 So synchronisieren Sie Abonnements, Follower und Benachrichtigungen
 
-Auf jeder AEM-Veröffentlichungsinstanz:
+Auf jeder AEM Veröffentlichungsinstanz:
 
 1. Melden Sie sich mit Administratorrechten an.
-1. Access the [Web Console](/help/sites-deploying/configuring-osgi.md). For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
-1. Locate **AEM Communities User Sync Listener**.
+1. Rufen Sie die [Webkonsole](/help/sites-deploying/configuring-osgi.md) auf. Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+1. Suchen Sie nach **AEM Communities User Sync Listener**.
 1. Wählen Sie die vorhandene Konfiguration aus, die zur Bearbeitung geöffnet werden soll (Stiftsymbol)
 
-   Überprüfungsname: **socialpubsync -geplante-auslöser**
+   Überprüfungsname: **socialpubsync -schedule-trigger**
 
-1. Legen Sie die folgenden **NodeTypes** fest:
+1. Legen Sie folgende **NodeTypes** fest:
 
    `rep:User`
 
@@ -254,7 +258,7 @@ Auf jeder AEM-Veröffentlichungsinstanz:
 
    Die in dieser Eigenschaft angegebenen Node-Typen werden synchronisiert und die Benachrichtigungsinformationen (Blogs und Konfigurationen folgen) werden zwischen verschiedenen Herausgebern synchronisiert.
 
-1. Hinzufügen alle Ordner, die in **DistributedFolders** synchronisiert werden sollen. Beispiel:
+1. hinzufügen alle zu synchronisierenden Ordner in **DistributedFolders**. Beispiel:
 
    `segments/scoring`
 
@@ -262,7 +266,7 @@ Auf jeder AEM-Veröffentlichungsinstanz:
 
    `activities`
 
-1. Legen Sie die **ignorierten** Nodes wie folgt fest:
+1. Setzen Sie **Ignorablenodes** auf:
 
    `.tokens`
 
@@ -274,21 +278,21 @@ Auf jeder AEM-Veröffentlichungsinstanz:
 
 ### Eindeutige Sling-ID {#unique-sling-id}
 
-Die AEM-Autoreninstanz verwendet Sling-ID, um zu ermitteln, woher die Daten kommen und an welche Herausgeber das Paket zurückgesendet werden muss (oder muss).
+AEM Autoreninstanz verwendet Sling-ID, um herauszufinden, woher die Daten kommen und an welche Herausgeber das Paket zurückgesendet werden muss (oder muss).
 
 Vergewissern Sie sich, dass alle Herausgeber in einer Veröffentlichungsfarm über eine eindeutige Sling-ID verfügen. Wenn die Sling-ID für mehrere Instanzen im Veröffentlichungsmodus identisch ist, schlägt die Benutzersynchronisierung fehl. Da der Autor nicht wissen, wo das Paket abgeholt und wo das Paket installiert werden soll.
 
 So stellen Sie für jede Instanz im Veröffentlichungsmodus eine eindeutige Sling-ID für Herausgeber sicher:
 
-1. Browse to [https://_host:port_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
-1. Check the value of **Sling ID**.
+1. Gehen Sie zu [https://_host:port_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
+1. Überprüfen Sie den Wert von **Sling-ID**.
 
    ![slingid](assets/slingid.png)
 
    Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Veröffentlichungsinstanz entspricht, gehen Sie wie folgt vor:
 
 1. Beenden Sie eine der Instanzen im Veröffentlichungsmodus, die über eine entsprechende Sling-ID verfügen.
-1. Suchen Sie im `crx-quickstart/launchpad/felix` Verzeichnis nach der Datei &quot; *sling.id.file&quot;und löschen Sie sie.*
+1. Suchen und löschen Sie im Ordner `crx-quickstart/launchpad/felix` die Datei *sling.id.file.*
 
    Beispiel:
 
@@ -296,63 +300,64 @@ So stellen Sie für jede Instanz im Veröffentlichungsmodus eine eindeutige Slin
 
    Beispiel Windows:
 
-   Windows Explorer verwenden und nach `sling.id.file`
+   Windows Explorer verwenden und nach `sling.id.file` suchen
 
 1. Starten Sie die Veröffentlichungsinstanz. Beim Start wird ihm eine neue Sling-ID zugewiesen.
-1. Validate that the **Sling ID** is now unique.
+1. Überprüfen Sie, ob die **Sling-ID** jetzt eindeutig ist.
 
 Wiederholen Sie diese Schritte, bis alle Veröffentlichungsinstanzen über eine eindeutige Sling-ID verfügen.
 
 ### Vault Package Builder Factory {#vault-package-builder-factory}
 
 Damit Updates ordnungsgemäß synchronisiert werden, müssen Sie den Vault Package Builder für die Benutzersynchronisierung ändern.
-In `/home/users`wird ein `*/rep:cache` Knoten erstellt. Es ist ein Cache, der verwendet wird, um zu finden, dass, wenn wir Abfrage auf den Hauptnamen eines Knotens, dann dieser Cache direkt verwendet werden kann.
+In `/home/users` wird ein `*/rep:cache`-Knoten erstellt. Es ist ein Cache, der verwendet wird, um zu finden, dass, wenn wir Abfrage auf den Hauptnamen eines Knotens, dann dieser Cache direkt verwendet werden kann.
 
-Die Benutzersynchronisierung kann beendet werden, wenn `rep :cache` Knoten über Herausgeber hinweg synchronisiert werden.
+Die Benutzersynchronisierung kann beendet werden, wenn `rep :cache`-Knoten über Herausgeber hinweg synchronisiert werden.
 
-Um sicherzustellen, dass Updates ordnungsgemäß über Herausgeber hinweg synchronisiert werden, führen Sie für jede AEM-Veröffentlichungsinstanz folgende Schritte durch:
+Um sicherzustellen, dass Updates ordnungsgemäß über Herausgeber hinweg synchronisiert werden, führen Sie für jede AEM Veröffentlichungsinstanz folgende Schritte aus:
 
-1. Access the [Web Console](/help/sites-deploying/configuring-osgi.md)
+1. Zugriff auf die [Webkonsole](/help/sites-deploying/configuring-osgi.md)
 
-   For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
-1. Locate the **Apache Sling Distribution Packaging - Vault Package Builder Factory**
+   Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+1. Suchen Sie die Apache Sling Distribution Packaging - Vault Package Builder Factory ****
 
    Builder name: socialpubsync-vlt.
 
 1. Wählen Sie das Bearbeitungssymbol aus.
-1. Hinzufügen zwei Filter des Paketknotens:
+1. hinzufügen zwei Filter des Paketknotens:
    * `/home/users|-.*/.tokens`
    * `/home/users|-.*/rep:cache`
 1. Richtlinienverwaltung
-   * To overwrite existing rep :policy nodes with new ones, add a third Package Filter: `/home/users|+.*/rep:policy`
-   * To prevent policies from being distributed, set: `Acl Handling: IGNORE`
+   * Um vorhandene rep:policy-Knoten mit neuen zu überschreiben, fügen Sie einen dritten Paketfilter hinzu: `/home/users|+.*/rep:policy`
+   * Um zu verhindern, dass Richtlinien verteilt werden, legen Sie Folgendes fest: `Acl Handling: IGNORE`
+
    ![Vault-Paketerstellung](assets/vault-package-builder-factory.png)
 
 ## Fehlerbehebung bei der Sling-Distribution in AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
 
 Wenn die Sling-Verteilung fehlschlägt, führen Sie die folgenden Debugging-Schritte aus:
 
-1. **Auf[falsch hinzugefügte Konfigurationen prüfen](/help/sites-administering/sync.md#improperconfig)**
+1. **Auf  [falsch hinzugefügte Konfigurationen prüfen](/help/sites-administering/sync.md#improperconfig)**
 
    Vergewissern Sie sich, dass nicht mehrere Konfigurationen hinzugefügt oder bearbeitet werden. Stattdessen sollten die vorhandenen Standardkonfigurationen bearbeitet werden.
 1. **Konfigurationen prüfen**
 
-   Vergewissern Sie sich, dass alle [Konfigurationen](/help/communities/sync.md#bestpractices) in Ihrer AEM-Autoreninstanz entsprechend eingestellt sind, wie in den [Best Practices](/help/communities/sync.md#main-pars-header-863110628)beschrieben.
+   Stellen Sie sicher, dass alle [Konfigurationen](/help/communities/sync.md#bestpractices) in Ihrer AEM-Autoreninstanz entsprechend eingestellt sind, wie in [Best Practices](/help/communities/sync.md#main-pars-header-863110628) beschrieben.
 
 1. **Berechtigungen autorisierter Benutzer überprüfen**
 
-   Wenn die Pakete nicht ordnungsgemäß installiert sind, überprüfen Sie, ob der in der ersten Instanz im Veröffentlichungsmodus erstellte [autorisierte Benutzer](/help/sites-administering/sync.md#createauthuser) über die richtigen Zugriffssteuerungslisten verfügt.
+   Wenn die Pakete nicht ordnungsgemäß installiert sind, überprüfen Sie, ob der [autorisierte Benutzer](/help/sites-administering/sync.md#createauthuser), der in der ersten Instanz im Veröffentlichungsmodus erstellt wurde, die richtigen ACLs aufweist.
 
-   Um dies zu validieren, ändern Sie anstelle des [erstellten autorisierten Benutzers](/help/sites-administering/sync.md#createauthuser) die Konfiguration des [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) in der Autoreninstanz, um Administratorberechtigungen zu verwenden. Versuchen Sie nun, die Pakete erneut zu installieren. Wenn die Benutzersynchronisierung mit Administratorberechtigungen ordnungsgemäß funktioniert, bedeutet dies, dass der erstellte Veröffentlichungsbenutzer nicht über entsprechende Zugriffssteuerungslisten verfügte.
+   Um dies zu validieren, ändern Sie anstelle des erstellten [autorisierten Benutzers](/help/sites-administering/sync.md#createauthuser) die [Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd)-Konfiguration auf der Autoreninstanz, um Administratorbenutzer-Anmeldedaten zu verwenden. Versuchen Sie nun, die Pakete erneut zu installieren. Wenn die Benutzersynchronisierung mit Administratorberechtigungen ordnungsgemäß funktioniert, bedeutet dies, dass der erstellte Veröffentlichungsbenutzer nicht über entsprechende Zugriffssteuerungslisten verfügte.
 
 1. **Konfiguration des Werks des Beobachters überprüfen**
 
-   Wenn nur bestimmte Knoten nicht über die Veröffentlichungsfarm synchronisiert werden (z. B. sind Gruppenmitglieder nicht synchronisiert), stellen Sie sicher, dass die [Adobe Granite Distribution - Diff Observer Factory](/help/sites-administering/sync.md#diffobserver) -Konfiguration aktiviert ist und **rep: Member** werden in Namen **ausgesuchter Eigenschaften** festgelegt.
+   Wenn nur bestimmte Knoten nicht über die Veröffentlichungsfarm synchronisiert werden - z. B. sind Gruppenmitglieder nicht synchronisiert - stellen Sie sicher, dass die Konfiguration [Adobe Granite Distribution - Diff Observer Factory](/help/sites-administering/sync.md#diffobserver) aktiviert ist und **rep: Member** werden unter **Aussehbare Eigenschaftennamen** eingestellt.
 
-1. **Überprüfen Sie die Konfiguration von AEM Communities User Sync Listener.** Wenn die erstellten Benutzer synchronisiert werden, Abonnement und folgende Elemente jedoch nicht funktionieren, stellen Sie sicher, dass die AEM Communities User Sync Listener-Konfiguration über Folgendes verfügt:
+1. **Überprüfen Sie die AEM Communities User Sync Listener-Konfiguration.** Wenn die erstellten Benutzer synchronisiert werden, Abonnement und folgende Elemente jedoch nicht funktionieren, stellen Sie sicher, dass die AEM Communities User Sync Listener-Konfiguration über Folgendes verfügt:
 
-   * Knotentypen - festgelegt auf **rep:User, nt:unstructured**, **nt:resource**, **rep:ACL**, **sling:Folder** und **sling:OrderedFolder**.
-   * Ignorierbare Knoten - auf **.tokens**, **system** und **rep:cache** eingestellt.
+   * Knotentypen - festgelegt auf **rep:User, nt:unstructured**, **nt :resource**, **rep:ACL**, **sling:Folder** und **sling:OrderedFolder**.
+   * Ignorierbare Knoten - auf **.tokens**, **system** und **rep :cache** eingestellt.
    * Verteilte Ordner: Legen Sie die Ordner fest, die verteilt werden sollen.
 
 1. **Bei der Benutzererstellung in der Veröffentlichungsinstanz generierte Protokolle überprüfen**
@@ -376,19 +381,19 @@ Wenn die Sling-Verteilung fehlschlägt, führen Sie die folgenden Debugging-Schr
 Debugging:
 
 1. Deaktivieren Sie die Benutzersynchronisierung:
-1. Melden Sie sich in der AEM-Autoreninstanz mit Administratorberechtigungen an.
+1. Melden Sie sich bei AEM Autoreninstanz mit Administratorrechten an.
 
-   1. Access the [Web Console](/help/sites-deploying/configuring-osgi.md). For example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Locate the configuration **Apache Sling Distribution Agent - Sync Agents Factory**.
-   1. Deaktivieren Sie das Kontrollkästchen **Aktiviert** .
+   1. Rufen Sie die [Webkonsole](/help/sites-deploying/configuring-osgi.md) auf. Beispiel: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Suchen Sie die Konfiguration **Apache Sling Distribution Agent - Sync Agents Factory**.
+   1. Deaktivieren Sie das Kontrollkästchen **Aktiviert**.
 
-      Beim Deaktivieren der Benutzersynchronisierung in der Autoreninstanz sind (Exporteur und Importeur) Endpunkte deaktiviert und die Autoreninstanz ist statisch. Die **vlt** -Pakete werden vom Autor nicht pinged oder fetched.
+      Beim Deaktivieren der Benutzersynchronisierung in der Autoreninstanz sind (Exporteur und Importeur) Endpunkte deaktiviert und die Autoreninstanz ist statisch. Die **vlt**-Pakete werden nicht vom Autor gepingelt oder abgerufen.
 
-      Wenn nun ein Benutzer in der Veröffentlichungsinstanz erstellt wird, wird das **vlt** -Paket im Knoten */var/sling/distribution/packages/ socialpubsync - vlt /data* erstellt. Und wenn diese Pakete vom Autor an einen anderen Dienst gesendet werden. Sie können diese Daten herunterladen und extrahieren, um zu überprüfen, welche Eigenschaften an andere Dienste gesendet werden.
+      Wenn nun ein Benutzer in der Veröffentlichungsinstanz erstellt wird, wird das Paket **vlt** unter dem Knoten */var/sling/distribution/packages/ socialpubsync - vlt /data* erstellt. Und wenn diese Pakete vom Autor an einen anderen Dienst gesendet werden. Sie können diese Daten herunterladen und extrahieren, um zu überprüfen, welche Eigenschaften an andere Dienste gesendet werden.
 
 1. Wechseln Sie zu einem Herausgeber und erstellen Sie einen Benutzer im Herausgeber. Daher werden Ereignis erstellt.
-1. Überprüfen Sie die [Reihenfolge der Protokolle](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), die beim Erstellen des Benutzers erstellt werden.
-1. Überprüfen Sie, ob ein **vlt** -Paket unter **/var/sling/distribution/packages/socialpubsync-vlt/data** erstellt wurde.
-1. Aktivieren Sie jetzt die Benutzersynchronisierung in der AEM-Autoreninstanz.
-1. Ändern Sie beim Herausgeber die Endpunkte des Exporteurs oder Importeurs in **Apache Sling Distribution Agent - Sync Agents Factory**.
+1. Überprüfen Sie die [Reihenfolge der Protokolle](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), die bei der Benutzererstellung erstellt wurden.
+1. Überprüfen Sie, ob ein **vlt**-Paket unter **/var/sling/distribution/packages/socialpubsync-vlt/data** erstellt wurde.
+1. Aktivieren Sie jetzt die Benutzersynchronisierung in AEM Autoreninstanz.
+1. Ändern Sie beim Herausgeber die Endpunkte für Exporteur oder Importeur in **Apache Sling Distribution Agent - Sync Agents Factory**.
 Wir können Paketdaten herunterladen und extrahieren, um zu überprüfen, welche Eigenschaften an andere Herausgeber gesendet werden und welche Daten verloren gehen.
