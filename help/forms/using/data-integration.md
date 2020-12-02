@@ -32,7 +32,7 @@ Verteilte, modulare Systeme bieten ihre Vorteile, die Herausforderung besteht je
 
 ![aem-forms-data-integer](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] Die Datenintegration ermöglicht die Konfiguration und Verbindung unterschiedlicher Datenquellen mit [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Darstellung der Geschäftsbereiche und Dienste für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell gibt Ihnen folgende Möglichkeiten:
+[!DNL AEM Forms] Die Datenintegration ermöglicht die Konfiguration und Verbindung unterschiedlicher Datenquellen mit  [!DNL AEM Forms]. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Darstellung der Geschäftsbereiche und Dienste für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell gibt Ihnen folgende Möglichkeiten:
 
 * Zugreifen auf Datenmodellobjekte, Eigenschaften und Dienste aus verbundenen Datenquellen.
 * Erstellen Sie benutzerdefinierte Datenmodellobjekte und -eigenschaften
@@ -46,7 +46,7 @@ Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiede
 * Aufrufen von Datenquellendiensten/-vorgängen mit Regeln für adaptive Formulare
 * Übermittelte Formulardaten in Datenquellen schreiben
 
-## Erste Schritte mit Datenintegration {#get-started-with-data-integration}
+## Erste Schritte mit Datenintegration  {#get-started-with-data-integration}
 
 Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen, die Informationen speichern, die Sie in Anwendungsfällen für adaptive Formulare und interaktive Kommunikation verwenden möchten, zu identifizieren und zu konfigurieren. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekt, Eigenschaften und Dienste aus einer oder mehreren Datenquellen verwendet. Sie können adaptive Formulare und interaktive Kommunikation basierend auf einem Formulardatenmodell erstellen, bei dem adaptive Formularfelder oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
 
