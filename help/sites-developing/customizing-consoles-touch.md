@@ -12,6 +12,9 @@ discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 77%
 
 ---
 
@@ -24,10 +27,10 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
 
-* Clientbibliotheken Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden weiterhin verwenden. Beim Anpassen können Sie Ihre eigene clientlib erstellen, `/apps.` z. B. unter dem Code, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+* Clientbibliotheken Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden weiterhin verwenden. Beim Anpassen können Sie Ihre eigene clientlib unter `/apps.` erstellen. Sie können beispielsweise den für Ihre benutzerdefinierte Komponente erforderlichen Code speichern.
 
-* Overlays
-Overlays are based on node definitions and allow you to overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
+* Überlagerungen
+Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, die Standardfunktionalität (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
 
 Überlagerungen können vielseitig zum Erweitern von AEM-Konsolen verwendet werden. Einige davon sind nachstehend (allgemein) beschrieben.
 
@@ -38,27 +41,29 @@ Overlays are based on node definitions and allow you to overlay the standard fun
 >* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
 Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) behandelt.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
    >
    >
-1. Make any changes within `/apps`
+1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+
 >
 
 
 
-For example, the following location within the `/libs` structure can be overlaid:
+Die folgende Position innerhalb der `/libs`-Struktur kann beispielsweise überlagert werden:
 
 * Konsolen (alle Konsolen basierend auf Seiten der Granite-Benutzeroberfläche); zum Beispiel:
 
@@ -78,7 +83,7 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
    Der erste Eintrag ist die Standardeinstellung.
 
-   Die verfügbaren Nodes korrelieren mit den verfügbaren Ansichtsoptionen:
+   Die verfügbaren Nodes korrelieren mit den verfügbaren Optionen für die Ansicht:
 
    * `column`
    * `card`
@@ -128,13 +133,13 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Using properties on this node you can define the `groups` allowed to perform the specific action; for example, `administrators`
+   Mithilfe der Eigenschaften auf diesem Knoten können Sie die `groups` definieren, die für die Ausführung der spezifischen Aktion zulässig ist. zum Beispiel `administrators`
 
 ### Anpassen von Spalten in der Listenansicht {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->This feature is optimized for columns of text fields; for other data types it is possible to overlay `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` zu überlagern.
 
 Anpassen von Spalten in der Listenansicht:
 
@@ -151,13 +156,14 @@ Anpassen von Spalten in der Listenansicht:
 
 1. Optional:
 
-   * If you want to plug additional data, you need to write a [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a
+   * Wenn Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einem
       `pageInfoProviderType`.
+
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
 
 1. Sie können jetzt die Spalte im Spaltenkonfigurator der Listenansicht auswählen.
 
-### Filtern von Ressourcen {#filtering-resources}
+### Filtern von Ressourcen  {#filtering-resources}
 
 Ein häufiges Nutzungsszenario beim Verwenden der Konsole ist die Auswahl von Ressourcen (z. B. Seiten, Komponenten, Assets usw.) durch den Benutzer. Dabei kann beispielsweise eine Liste verwendet werden, aus der der Autor ein Element auswählen muss.
 
