@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 80%
 
 ---
 
@@ -79,13 +82,13 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 ## Communities {#communities}
 
-[AEM Communities](/help/communities/overview.md) vereinfacht die Erstellung und Verwaltung von lokalen Gemeinschaften.
+[AEM ](/help/communities/overview.md) Community vereinfacht die Gründung und Verwaltung von lokalen Gemeinschaften.
 
 Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzerdefinierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung flexibler, portabler Codes für das [Social-Komponenten-Framework](/help/communities/scf.md) (SCF). |
+| Best Practices für die Arbeit mit benutzerdefinierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablen Code für das [Framework für soziale Komponenten](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Communities-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungstool. |
 
 ## Tools/HTL {#tooling-htl}
@@ -99,6 +102,6 @@ HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0
 
 >[!NOTE]
 >
->Die folgenden mehrteiligen Lernprogramme könnten für die Best Practice zum Einrichten eines neuen AEM-Projekts interessant sein, in denen die Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung ausführlich beschrieben werden:
+>Für die Best Practice zum Einrichten eines neuen AEM-Projekts, in dem die Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung ausführlich beschrieben werden, könnte es von Interesse sein, ein mehrteiliges Lernprogramm zu folgen:
 >[Erste Schritte mit AEM Sites - WKND-Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
