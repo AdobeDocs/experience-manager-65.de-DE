@@ -36,7 +36,7 @@ Weitere Informationen finden Sie unter:
 
 Um einen Satz, einen Absatz oder eine Textzeichenfolge in einer interaktiven Kommunikation mit Bedingungen zu versehen, können Sie im entsprechenden Textdokumentfragment eine Regel erstellen. Im folgenden Beispiel wird eine Regel verwendet, um eine gebührenfreie Nummer nur für die US-Empfänger der interaktiven Kommunikation anzuzeigen.
 
-For more information, see Create rule in text in [Texts in Interactive Communications](../../forms/using/texts-interactive-communications.md).
+Weitere Informationen finden Sie unter Erstellen von Regeln im Text in [Texte in interaktiven Nachrichten](../../forms/using/texts-interactive-communications.md).
 
 Wenn Sie das Textfragment in eine interaktive Kommunikation einbeziehen und der Agent die Agent-Benutzeroberfläche zur Erstellung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
 
@@ -58,7 +58,7 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
    >[!NOTE]
    >
-   >Leerer oder ungültiger Bedingungsausdruck kann nicht gespeichert werden. There has to be a valid conditional expression inside `${}` to save the expression.
+   >Leerer oder ungültiger Bedingungsausdruck kann nicht gespeichert werden. Es muss einen gültigen bedingten Ausdruck innerhalb von `${}` geben, um den Ausdruck zu speichern.
 
 1. Führen Sie folgende Schritte aus, um eine Bedingung für die Bewertung zu konstruieren, ob ausgewählter Text oder Text, für den Bedingungen erstellt werden, im Brief angezeigt wird, und tippen Sie auf das Häkchen, um den Ausdruck zu speichern:
 
@@ -74,7 +74,7 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
-1. Insert similar condition by selecting the text `Ma'am`.
+1. Fügen Sie eine ähnliche Bedingung ein, indem Sie den Text `Ma'am` auswählen.
 
    ```javascript
    ${DD_creditcard_Gender == "Female"}
@@ -230,7 +230,7 @@ Entsprechend Ihren Anforderungen können Sie auch Folgendes erstellen:
 * Eine oder mehrere Bedingungen innerhalb einer Wiederholung
 * Eine Kombination von Bedingungen und Wiederholungen innerhalb einer Bedingung oder Wiederholung
 
-### Leere Inline-Bedingung {#empty-inline-condition}
+### Leere Inline-Bedingung  {#empty-inline-condition}
 
 Möglicherweise müssen Sie leere Inline-Bedingungen einfügen und Text und DD-Elemente später einbetten. Correspondence Management ermöglicht es Ihnen.
 
