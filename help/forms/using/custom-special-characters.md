@@ -11,26 +11,29 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 69%
 
 ---
 
 
 # Benutzerdefinierte Sonderzeichen in Correspondence Management{#custom-special-characters-in-correspondence-management}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Correspondence Management umfasst einen integrierten Standard-Support für 210 Sonderzeichen, die Sie mühelos in Briefen einfügen können.
 
 Sie können beispielsweise die folgenden Sonderzeichen einfügen:
 
 * Währungssymbole wie €,¥ und £
-* Mathematische Symbole wie z. B. □, , ^ und ^
+* Mathematische Symbole wie z. B. □, □ und ^
 * Interpunktionssymbole ‟ und&quot;
 
 Sie können Sonderzeichen in Briefe einfügen:
 
-* In the [text editor](/help/forms/using/document-fragments.md#createtext)
-* In an [editable, inline module in a correspondence](../../forms/using/create-correspondence.md#managecontent)
+* Im [Texteditor](/help/forms/using/document-fragments.md#createtext)
+* In einem editierbaren [Inline-Modul in einer Korrespondenz](../../forms/using/create-correspondence.md#managecontent)
 
 ![specialcharaktersinlinemodul](assets/specialcharactersinlinemodule.png)
 
@@ -40,10 +43,10 @@ Der Administrator kann Unterstützung für mehr/benutzerdefinierte Sonderzeichen
 
 Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefinierte Sonderzeichen hinzuzufügen:
 
-1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named **[!UICONTROL specialcharacters]** with path/structure similar to the specialcharacters folder (located in the textEditorConfig folder under libs):
+1. Gehen Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen **[!UICONTROL Sonderzeichen]** mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;specialcharacters&quot;(im Ordner &quot;textEditorConfig&quot;unter &quot;libs&quot;):
 
-   1. Right-click the **specialcharacters** folder at the following path and select **Overlay Node**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **Sonderzeichen** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
@@ -79,7 +82,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    | cmConfigurationType | Zeichenfolge | cmTextEditorConfiguration |
    | cssPath | Zeichenfolge | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Right-click the **[!UICONTROL specialcharacters]** folder at the following path and select **Create > Child Node** and then click **Save All**:
+1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL Sonderzeichen]** unter folgendem Pfad und wählen Sie **Erstellen > Untergeordneter Knoten** und klicken Sie dann auf **Alle speichern**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
@@ -97,7 +100,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>Fügen Sie ein benutzerdefiniertes Sonderzeichen hinzu</td>
    <td>
     <ol>
-     <li>Hinzufügen einer untergeordneten Node unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"mit obligatorischen Eigenschaften.</li>
+     <li>hinzufügen einer untergeordneten Node unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"mit obligatorischen Eigenschaften.</li>
      <li>Klicken Sie auf Alle speichern</li>
      <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.</li>
     </ol> </td>
@@ -108,7 +111,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
     <ol>
      <li>Überlagern den Knoten, der aktualisiert werden soll, wie oben erläutert und überprüfen Sie Tags und Klassen.</li>
      <li>Ändern Sie alle Werte wie Beschriftung, Wert, endValue und multipleCaption. </li>
-     <li>Klicken Sie auf „Alle speichern“. </li>
+     <li>Klicken Sie auf Alle speichern. </li>
      <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.</li>
     </ol> </td>
   </tr>
@@ -117,8 +120,8 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>
     <ol>
      <li>Überlagern Sie den Knoten, der unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"ausgeblendet werden soll</li>
-     <li>Hinzufügen Eigenschaft sling:hideResource (Boolescher Wert) auf den Knoten (unter Apps), der ausgeblendet werden soll. </li>
-     <li>Klicken Sie auf „Alle speichern“. </li>
+     <li>hinzufügen Eigenschaft sling:hideResource (Boolescher Wert) auf den Knoten (unter Apps), der ausgeblendet werden soll. </li>
+     <li>Klicken Sie auf Alle speichern. </li>
      <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.<br /> </li>
     </ol> </td>
   </tr>
@@ -126,9 +129,9 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>Mehrere Sonderzeichen ausblenden</td>
    <td>
     <ol>
-     <li>Hinzufügen die Eigenschaft "sling:hideChildren (String oder String[])"in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
+     <li>hinzufügen die Eigenschaft "sling:hideChildren (String oder String[])"in "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
      <li>Fügen Sie Knotennamen (Sonderzeichen, die ausgeblendet werden sollen) als Werte für die Eigenschaft „sling:hideChildren“ hinzu. </li>
-     <li>Klicken Sie auf „Alle speichern“. </li>
+     <li>Klicken Sie auf Alle speichern. </li>
      <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.<br />  </li>
     </ol> </td>
   </tr>
@@ -136,10 +139,10 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    <td>Sonderzeichen anordnen</td>
    <td>
     <ol>
-     <li>Hinzufügen einer untergeordneten Node unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"mit obligatorischen Eigenschaften. </li>
+     <li>hinzufügen einer untergeordneten Node unter "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"mit obligatorischen Eigenschaften. </li>
      <li>Fügen Sie die Eigenschaft „sling:orderBefore (String)“ zum neu erstellten untergeordneten Knoten hinzu. </li>
      <li>Fügen Sie den Knotennamen als Wert vor dem neu hinzugefügten Sonderzeichen hinzu, das angezeigt werden soll. </li>
-     <li>Klicken Sie auf „Alle speichern“. </li>
+     <li>Klicken Sie auf Alle speichern. </li>
      <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.<br /> </li>
     </ol> </td>
   </tr>
