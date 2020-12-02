@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
 source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 13%
 
 ---
 
 
 # Grundlagen zu Social-Diagrammen {#social-graph-essentials}
 
-The ability for a Community member to follow [activities](essentials-activities.md) as well as be followed is established through two components:
+Die Fähigkeit eines Community-Mitglieds, [Aktivitäten](essentials-activities.md) zu befolgen, wird durch zwei Komponenten ermittelt:
 
-Die `following` Komponente muss mit einer anderen Ressource verknüpft sein, und diese Zuordnung ist bereits für bestehende Communities Mitglieder und Funktionen auf einer [Community-Site](overview.md#communitiessites)eingerichtet.
+Die `following`-Komponente muss mit einer anderen Ressource verknüpft sein. Diese Zuordnung ist bereits für bestehende Communities-Mitglieder und -Funktionen auf einer [Community-Site](overview.md#communitiessites) eingerichtet.
 
-The `following` component lists the members that are either following the current member or are being followed by the current member. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine Community-Site bereitgestellt wird.
+Die `following`-Komponente Liste die Member, die dem aktuellen Member folgen oder denen das aktuelle Member folgt. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine Community-Site bereitgestellt wird.
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -51,20 +54,20 @@ The `following` component lists the members that are either following the curren
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Siehe <a href="socialgraph.md">Verwenden von Social-Diagrammen</a></td>
+   <td>Siehe <a href="socialgraph.md">Soziales Diagramm verwenden</a></td>
   </tr>
   <tr>
-   <td><strong> optional<br /> , Eigenschaft</strong></td>
+   <td><strong> optional<br />-Eigenschaft</strong></td>
    <td>
     <ul>
      <li>Name: <strong><code>outgoing</code></strong></li>
-     <li>Type: Boolean</li>
+     <li>Typ: Boolesch</li>
      <li>Wert:<br />
       <ul>
-       <li><i>True </i>- Die <code>following</code> Komponente Liste die Mitglieder, die das derzeit angemeldete Mitglied sind <code>follows</code></li>
-       <li><i>FALSE </i>- Die <code>following</code> Komponente Liste die Mitglieder, <code>follow </code>die derzeit angemeldet sind.</li>
+       <li><i>True  </i>- Die  <code>following</code> Komponente Liste die Mitglieder, die das derzeit angemeldete Mitglied sind. <code>follows</code></li>
+       <li><i>FALSE  </i>- Die  <code>following</code> Komponente Liste die Mitglieder,  <code>follow </code>die derzeit angemeldet sind.</li>
       </ul> </li>
-    </ul> <p>Wenn die Eigenschaft fehlt, wird standardmäßig <i>true</i> verwendet. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss einer Instanz des <code>following </code>Knotens mit <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>hinzugefügt werden.</p> </td>
+    </ul> <p>Die Standardeinstellung ist <i>true</i>, wenn die Eigenschaft fehlt. Derzeit ist es nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss mit <code>following </code>CRXDE|Lite<a href="../../help/sites-developing/developing-with-crxde-lite.md"> einer Instanz des Knotens hinzugefügt werden.</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -73,7 +76,7 @@ The `following` component lists the members that are either following the curren
 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
-| [**einschließbar **](scf.md#add-or-include-a-communities-component) | Nein |
+| [**einschließbar**](scf.md#add-or-include-a-communities-component) | Nein |
 | **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
