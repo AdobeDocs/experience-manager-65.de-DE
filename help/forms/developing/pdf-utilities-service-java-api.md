@@ -32,15 +32,15 @@ Die folgenden Quick-Beginn sind für den PDF Utilities-Dienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Bereinigen von PDF-Dokumenten](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellere Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Konvertieren eines PDF-Dokuments in ein XDP-Dokument mit der Java-API {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein PDF-Dokument in ein XDP-Dokument konvertiert. (Siehe PDF-Dokumente [in XDP-Dokumente](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents)konvertieren.)
+Im folgenden Codebeispiel wird ein PDF-Dokument in ein XDP-Dokument konvertiert. (Siehe [Konvertieren von PDF-Dokumenten in XDP-Dokumente](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
 ```java
  /*
@@ -241,7 +241,7 @@ Im folgenden Codebeispiel wird ein XDP-Dokument in ein PDF-Dokument konvertiert.
 
 ## Quick Beginn (SOAP-Modus): Abrufen von PDF-Dokument-Eigenschaften mit der Java-API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-Im folgenden Codebeispiel wird bestimmt, ob es sich bei dem Dokument um ein PDF-Dokument handelt und, falls ja, um die älteste Acrobat-Version, die gelesen werden kann. (Siehe PDF-Dokument-Eigenschaften [abrufen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
+Im folgenden Codebeispiel wird bestimmt, ob es sich bei dem Dokument um ein PDF-Dokument handelt und, falls ja, um die älteste Acrobat-Version, die es lesen kann. (Siehe [PDF-Dokument-Eigenschaften abrufen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
 ```java
  /*
@@ -358,7 +358,7 @@ Im folgenden Codebeispiel wird bestimmt, ob es sich bei dem Dokument um ein PDF-
 
 ## Quick Beginn (SOAP-Modus): Festlegen des Speicherstils für ein PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-Im folgenden Codebeispiel wird der Speichermodus für eine schnelle Webanzeige festgelegt und dann das PDF-Dokument an den Encryption-Dienst weitergeleitet, wo es verschlüsselt ist. Das verschlüsselte PDF-Dokument, das für eine schnelle Webanzeige gespeichert wird, wird als PDF-Datei mit dem Namen* FastWebViewLoan.pdf* gespeichert. (Siehe Speichern von Modi [für PDF-Dokumente](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)festlegen.)
+Im folgenden Codebeispiel wird der Speichermodus für eine schnelle Webanzeige festgelegt und dann das PDF-Dokument an den Encryption-Dienst weitergeleitet, wo es verschlüsselt ist. Das verschlüsselte PDF-Dokument, das für eine schnelle Webanzeige gespeichert wird, wird als PDF-Datei mit dem Namen* FastWebViewLoan.pdf* gespeichert. (Siehe [Festlegen von PDF-Dokument Speichermodi](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
 
 ```java
  /*
@@ -496,7 +496,7 @@ Im folgenden Codebeispiel wird der Speichermodus für eine schnelle Webanzeige f
  
 ```
 
-## Quick Beginn (SOAP-Modus): Konvertieren eines Dokuments in ein PDF/A-2b-Dokument mit der Java-API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Konvertieren eines Dokuments in ein PDF/A-2b-Dokument mithilfe der Java-API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein PDF/A-2b-Dokument konvertiert, das als PDF-Datei mit dem Namen *LoanArchive.pdf* gespeichert wird. (Siehe [Konvertieren von Dokumenten in PDF/A-Dokumente](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
