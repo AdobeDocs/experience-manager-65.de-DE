@@ -35,25 +35,25 @@ Die Forumsfunktion bietet einen Bereich, in dem angemeldete Besucher (Community-
 Dieser Abschnitt der Dokumentation beschreibt:
 
 * Hinzufügen der Forumsfunktion zu einer AEM Site.
-* Configuration settings for the `Forum` component.
+* Konfigurationseinstellungen für die Komponente `Forum`.
 
 ### Hinzufügen eines Forums zu einer Seite {#adding-a-forum-to-a-page}
 
-To add a `Forum` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Forum`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Forum`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite, auf der das Forum angezeigt werden soll.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-forum.md#essentials-for-client-side) einbezogen werden, wird die `Forum`-Komponente wie folgt angezeigt:
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Konfigurieren eines Forums {#configuring-a-forum}
 
-Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Forum` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -94,7 +94,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Tagging zulassen**
 
-   If checked, allow members to add tag labels to their post (see **Tag field** tab). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, ihrem Beitrag Tagbeschriftungen hinzuzufügen (siehe **Feld** Registerkarte). Diese Option ist standardmäßig deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -102,7 +102,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](/help/communities/notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumbeiträge hinzu, mit der Mitglieder über neue Beiträge benachrichtigt werden können. [](/help/communities/notifications.md) Diese Option ist standardmäßig deaktiviert.
 
 * **Fixierung zulassen**
 
@@ -110,21 +110,22 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](/help/communities/featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [gekennzeichneter Inhalt](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Sie den Mitgliedern per E-Mail ([Abonnement](/help/communities/subscriptions.md)) eine Benachrichtigung über neue Beiträge erlauben. Muss überprüft `Allow Following` und [E-Mail konfiguriert](/help/communities/email.md)werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, per E-Mail über neue Beiträge informiert zu werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und [E-Mail-Konfiguration](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
 
 * **Max. Dateigröße**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
 * **Zulässige Dateitypen**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
-* **Max. Größe** der Bilddatei anhängen ist nur relevant, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
+* **Max.**
+Größe der Bilddatei anhängenRelevant nur, wenn &quot;Datei-Uploads zulassen&quot;aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
 
 * **Antworten mit Diskussionsfaden zulassen**
 
@@ -144,7 +145,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Abzeichen anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Abzeichen](/help/communities/implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
+   Wenn aktiviert, zeigen Sie verdiente und zugewiesene [Abzeichen](/help/communities/implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Diese Option ist standardmäßig deaktiviert.
 
 * **Privilegierte Mitglieder zulassen**
 
@@ -172,11 +173,11 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 >[!NOTE]
 >
->Es kann erforderlich sein, Kommentare zu einem Thema sowohl zu prüfen `AllowThreaded Replies` als auch `Allow users to Delete Comments and Topics` zu aktivieren.
+>Es kann erforderlich sein, sowohl `AllowThreaded Replies` als auch `Allow users to Delete Comments and Topics` zu überprüfen, um Kommentare zu einem Thema zu aktivieren.
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
-Under the **User Moderation** tab, specify how the posted topics and replies (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Themen und Antworten (vom Benutzer generierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Posts ablehnen**
 
@@ -216,13 +217,13 @@ Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausg
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
    Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Standardwert ist **-**1 (keine Beschränkungen).
 
-#### Registerkarte &quot;Übersetzung&quot; {#translation-tab}
+#### Registerkarte Übersetzung {#translation-tab}
 
 Auf der Registerkarte **Übersetzung** können Sie festlegen, ob bei für die Community-Site aktivierter Übersetzungsoption der gesamte Thread oder nur bestimmte Posts übersetzt werden sollen.
 
@@ -232,7 +233,7 @@ Auf der Registerkarte **Übersetzung** können Sie festlegen, ob bei für die Co
 
 #### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
-Geben Sie auf der Registerkarte &quot; **Sortiereinstellungen** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie unter der Registerkarte **Sortiereinstellungen** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortierfolge**
 
