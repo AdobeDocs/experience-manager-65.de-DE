@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 80%
 
 ---
 
@@ -26,55 +29,55 @@ Auf der Registerkarte „Work Manager“ werden Statistiken angezeigt, die mit W
 
 ### Kategorie {#category}
 
-**** Standard: Alle Arbeitselemente, denen der Client beim Senden keine Kategorie zugewiesen hat. Work Manager verwaltet diese Elemente, daher gehören die Status zu Work Manager.
+**Standard:** Alle Arbeitselemente, denen der Client beim Senden keine Kategorie zugewiesen hat. Work Manager verwaltet diese Elemente, daher gehören die Status zu Work Manager.
 
-**** Job Manager: Alle Aufträge, die zu Job Manager gehören. Job Manager verwaltet seine eigenen Aufträge und verfügt über seine eigenen Auftragsstatus. Informationen hierzu finden Sie in den spezifischen unten beschriebenen Jobstatus.
+**Job Manager:** Alle Aufträge, die zu Job Manager gehören. Job Manager verwaltet seine eigenen Aufträge und verfügt über seine eigenen Auftragsstatus. Informationen hierzu finden Sie in den spezifischen unten beschriebenen Jobstatus.
 
-**** Arbeitsablauf: Alle Arbeitselemente, die zur Workflow-Ausführung gehören. Workflow verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
+**Workflow:** Alle Arbeitselemente, die zur Workflow-Ausführung gehören. Workflow verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
 
-**** Ereignisse: Alle Arbeitselemente, die zur Ereignisverwaltung gehören. Die Ereignisverwaltung verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
+**Ereignis:** Alle Arbeitselemente, die zur Ereignis-Verwaltung gehören. Die Ereignisverwaltung verwaltet keine eigenen Arbeitselemente, sondern verlässt sich auf Work Manager. Daher gehören die Status zu Work Manager.
 
-### Status (nur für Standard-, Workflow- oder Ereigniskategorien) {#status-for-default-workflow-or-events-categories-only}
+### Status (nur für Standard-, Workflow- oder Ereigniskategorien)  {#status-for-default-workflow-or-events-categories-only}
 
-**** Alle anzeigen: Zeigt alle aktuellen Arbeitselemente an.
+**Alle anzeigen:** Zeigt alle aktuellen Arbeitselemente an.
 
-**** Geplant: Zeigt alle Arbeitselemente an, die vom Anwendungsserver ausgeführt werden können, aber noch nicht gestartet wurden.
+**Geplant:** Zeigt alle Arbeitselemente an, die vom Anwendungsserver ausgeführt werden können, aber noch nicht gestartet wurden.
 
-**** Angehalten: Zeigt alle geplanten Arbeitselemente an, die von der Clientanwendung angehalten wurden. Diese Elemente können ausgeführt oder gelöscht werden. (Siehe Arbeitselemente oder Aufträge verwalten.)
+**Angehalten:** Zeigt alle geplanten Arbeitselemente an, die von der Clientanwendung angehalten wurden. Diese Elemente können ausgeführt oder gelöscht werden. (Siehe Arbeitselemente oder Aufträge verwalten.)
 
-**** Wird ausgeführt: Zeigt alle Arbeitselemente an, die vom Work Manager des Anwendungsservers abgerufen wurden und entweder abgeschlossen werden oder fehlschlagen. Sie können für diese Arbeitselemente keine Vorgänge verwenden.
+**Wird ausgeführt:** Zeigt alle Arbeitselemente an, die vom Work Manager des Anwendungsservers abgerufen wurden und die entweder abgeschlossen werden oder fehlschlagen. Sie können für diese Arbeitselemente keine Vorgänge verwenden.
 
-**** Abgeschlossen: Zeigt alle Arbeitselemente an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht. Zum Löschen dieser Elemente verwenden Sie den Vorgang „Elemente löschen“. (Siehe Arbeitselemente oder Aufträge verwalten.)
+**Abgeschlossen:** Zeigt alle Arbeitselemente an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht. Zum Löschen dieser Elemente verwenden Sie den Vorgang „Elemente löschen“. (Siehe Arbeitselemente oder Aufträge verwalten.)
 
-**** Fehlgeschlagen: Zeigt alle Arbeitselemente an, die aufgrund einer Fehlerbedingung nicht erfolgreich abgeschlossen wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
+**Fehlgeschlagen:** Zeigt alle Arbeitselemente an, die aufgrund eines Fehlers nicht erfolgreich abgeschlossen wurden. Diese Arbeitselemente können mehrmals durch Verwenden des Vorgangs „Elemente wiederholen“ wiederholt werden. (Siehe Arbeitselemente oder Aufträge verwalten.) Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
 
-**** Unbekannt: Zeigt alle Arbeitselemente an, deren Status unbekannt ist.
+**Unbekannt:** Zeigt alle Arbeitselemente an, deren Status unbekannt ist.
 
 ### Status (nur für Job Manager-Kategorie) {#status-for-job-manager-category-only}
 
-**** Abgeschlossen: Zeigt alle Aufträge an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht.
+**Abgeschlossen:** Zeigt alle Aufträge an, die erfolgreich ausgeführt wurden. Permanente Arbeitselemente verbleiben in diesem Status und nicht permanente Elemente werden beim Beenden von Rückrufen an die Rückruf-Handler gelöscht.
 
-**** Abschließen angefordert: Zeigt Aufträge an, für die eine vollständige Anforderung ausgeführt wurde.
+**Abschließen angefordert:** Zeigt Aufträge an, für die eine vollständige Anforderung ausgeführt wurde.
 
-**** Fehler angefordert: Zeigt Aufträge an, für die eine Fehleranforderung ausgeführt wurde.
+**Fehler angefordert:** Zeigt Aufträge an, für die eine Fehleranforderung ausgeführt wurde.
 
-**** Fehlgeschlagen: Zeigt Aufträge an, die aufgrund eines Fehlers nicht erfolgreich abgeschlossen wurden. Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
+**Fehlgeschlagen:** Zeigt Aufträge an, die aufgrund eines Fehlers nicht erfolgreich abgeschlossen wurden. Mithilfe der Fehlerverknüpfung in der Statuszeile können Sie auf Details über den Fehler zugreifen.
 
-**** Beenden angefordert: Zeigt Aufträge an, für die eine Anforderung zum Beenden ausgeführt wurde.
+**Angefordert beenden:** Zeigt Aufträge an, für die eine Anforderung zum Beenden ausgeführt wurde.
 
-**** Beendet: Zeigt Aufträge an, die ohne Abschluss beendet wurden.
+**Beendet:** Zeigt Aufträge an, die ohne Abschluss beendet wurden.
 
-**** Aussetzen angefordert: Zeigt Aufträge an, für die eine Aussetzungsanfrage ausgeführt wurde.
+**Angefordert aussetzen:** Zeigt Aufträge an, für die eine Aussetzungsanforderung ausgeführt wurde.
 
-**** Ausgesetzt: Zeigt Aufträge an, die ausgesetzt wurden.
+**Ausgesetzt:** Zeigt Aufträge an, die ausgesetzt wurden.
 
-**** Fortsetzen angefordert: Zeigt Aufträge an, für die eine Anforderung zum Fortsetzen ausgeführt wurde.
+**Fortsetzen angefordert:** Zeigt Aufträge an, für die eine Wiederaufnahme-Anforderung ausgeführt wurde.
 
-**** Warteschlange: Zeigt Aufträge an, die sich in der Warteschlange befinden.
+**Warteschlange:** Zeigt Aufträge an, die sich in der Warteschlange befinden.
 
-**** Wird ausgeführt: Zeigt Aufträge an, die ausgeführt werden.
+**Ausführen:** Zeigt Aufträge an, die ausgeführt werden.
 
-### Server Name {#server-name}
+### Servername {#server-name}
 
 Nur für Clusterserver: Wählen Sie den Namen des Knotens aus, der die Arbeitselemente oder Auftragselemente anzeigen soll, die nur auf diesem Server erstellt wurden. Wenn die Option „Alle anzeigen“ ausgewählt ist, werden alle Arbeitselemente für alle Knoten im Cluster angezeigt.
 
@@ -82,7 +85,7 @@ Nur für Clusterserver: Wählen Sie den Namen des Knotens aus, der die Arbeitsel
 
 Wählen Sie in diesem Filter eine Option aus, um nur die Arbeitselemente, die innerhalb des von Ihnen ausgewählten Zeitrahmens erstellt wurden, anzuzeigen. Wenn Sie beispielsweise „1 Tag“ auswählen, werden alle Arbeitselemente, die innerhalb von 24 Stunden vor der im Filter „Vor“ festgelegten Zeit erstellt wurden, angezeigt.
 
-### Vor {#prior-to}
+### Vor  {#prior-to}
 
 Legt das Datum und die Zeit fest, die der Filter „Zeit erstellen“ als Enddatum verwendet. Lassen Sie die Option „Aktuelles Datum und Zeit verwenden“ ausgewählt, um von dem aktuellen Datum oder der aktuellen Zeit zurückzufiltern. Sie können die Auswahl für die Option auch aufheben und die entsprechenden Werte eingeben. Klicken Sie entweder auf die Kalender- oder Uhrsymbole, um Werte mithilfe dieser Tools auszuwählen.
 
@@ -92,13 +95,13 @@ Wenn Sie beispielsweise unter „Zeit erstellen = 1 Tag“ und „Vor = Aktuelle
 >
 >Bei Oracle-Datenbankbereitstellungen funktionieren die Datumsbereichsfilter (d. h. die Einstellungen „Zeit erstellen“ und „Vor“) nicht zuverlässig. Verwenden Sie einen anderen Filter, um die Arbeitselemente abzurufen.
 
-## Informationen zur Oberfläche der Registerkarte „Work Manager“ {#about-the-work-manager-tab-interface}
+## Informationen zur Oberfläche der Registerkarte „Work Manager“  {#about-the-work-manager-tab-interface}
 
 Wenn Sie eine Work Manager-Abfrage oder einen Vorgang an einem Arbeitselement oder Auftrag ausführen, wird über der Liste eine Meldung angezeigt. Diese Meldung bietet eine Rückmeldung über den von Ihnen initiierten Vorgang und in einigen Fällen eine Verknüpfung „Mehr Informationen“, die weitere Details zur Verfügung stellt. Wenn beispielsweise der von Ihnen initiierte Vorgang fehlgeschlagen ist, gibt die Meldung Informationen darüber und stellt eine Verknüpfung zum Abrufen von Details über den Fehler bereit.
 
 Wenn Sie auf „Mehr Informationen“ klicken, zeigt das Dialogfeld „Vorgangsdetails“ eine Liste der Arbeitselemente oder Aufträge an, die während des Vorgangs ausgewählt wurden. Sie können auf jedes Listenelement klicken, um die Fehlerdetails unten im Dialogfeld anzuzeigen.
 
-### Arbeitselemente oder Aufträge verwalten {#manage-the-work-items-or-jobs}
+### Arbeitselemente oder Aufträge verwalten  {#manage-the-work-items-or-jobs}
 
 1. Verwenden Sie die unten beschriebenen Vorgangstools, um die Arbeitselemente oder Aufträge in der Liste zu verwalten.
 
@@ -116,7 +119,7 @@ Wenn Sie auf „Mehr Informationen“ klicken, zeigt das Dialogfeld „Vorgangsd
 
    Sie können überprüfen, ob ein Vorgang erfolgreich war, indem Sie über der Liste auf „Mehr Informationen“ klicken. Ein Dialogfeld, das die ausgewählten Arbeitselemente oder Aufträge sowie ihre Status enthält, wird angezeigt.
 
-## Weitere Informationen über die Status der Arbeitselemente {#additional-information-about-work-item-statuses}
+## Weitere Informationen über die Status der Arbeitselemente  {#additional-information-about-work-item-statuses}
 
 Ein typischer Statusübergang für ein Arbeitselement ist „Neu“ > „Geplant“> „Wird ausgeführt“ > „Abgeschlossen“ oder „Fehler“.
 
