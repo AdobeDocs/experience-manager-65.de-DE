@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +71,7 @@ Das Widget-Element enthält das Element der Benutzeroberfläche für die Interak
 
 Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine weitere CSS-Klasse: **subtype**. Eine subtype-Klasse zeigt an, welcher Feldtyp es ist, z. B. NumericField, DateField, TextField. Sie können die subtype-Klasse außer Kraft setzen, um die Stile aller Felder des Typs „subtype“ zu ändern.
 
-## CSS-Klassen für verschiedene Komponenten {#css-classes-for-different-components}
+## CSS-Klassen für verschiedene Komponenten  {#css-classes-for-different-components}
 
 <table>
  <tbody>
@@ -120,7 +123,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
  </tbody>
 </table>
 
-## CSS-Klassen für verschiedene Felder {#css-classes-for-different-fields}
+## CSS-Klassen für verschiedene Felder  {#css-classes-for-different-fields}
 
 Der AEM Forms Designer unterstützt unterschiedliche Typen von Feldern in einem Formular wie NumericField, DecimalField und DateField. All diese Felder enthalten in HTML die oben genannten CSS-Klassen. Je nach Typ des Feldes enthalten sie auch ein paar zusätzliche Klassen.
 
@@ -247,4 +250,4 @@ Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnun
 
 `Styling Fields with Validation Errors`
 
-Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. This style change is done by applying a CSS class **widgetError** on the widget component. To modify the default styling, override the **widgetError** class.
+Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf die Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die Klasse **widgetError**.
