@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Verwalten von Angeboten
-seo-title: Erstellen und Verwalten von Angeboten
+title: 'Erstellen und Verwalten von Angeboten  '
+seo-title: 'Erstellen und Verwalten von Angeboten  '
 description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
 seo-description: Mit der Angebotskonsole lassen sich Angebote erstellen, die für Erlebnisse in Aktivitäten eingesetzt werden können.
 uuid: be0a53da-a979-4a30-a4bb-7c9ce26ae1a1
@@ -12,11 +12,14 @@ discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 99%
 
 ---
 
 
-# Erstellen und Verwalten von Angeboten{#creating-and-managing-offers}
+# Erstellen und Verwalten von Angeboten  {#creating-and-managing-offers}
 
 Mit der Angebotskonsole lassen sich Angebote erstellen, die für [Erlebnisse in Aktivitäten](/help/sites-authoring/content-targeting-touch.md) eingesetzt werden können. Durch das Erstellen von Angeboten mithilfe der Konsole sparen Sie Zeit, wenn ein Angebot für mehrere Erlebnisse benötigt wird:
 
@@ -25,22 +28,22 @@ Mit der Angebotskonsole lassen sich Angebote erstellen, die für [Erlebnisse in 
 
 In der Angebotskonsole werden Angebote nach Marken sortiert. Jede Marke verfügt über eine Angebotsbibliothek, die für die Erlebnisse dieser Marke verwendet werden kann. Verwenden Sie Ordner, um eine Hierarchie der Angebote einer Bibliothek festzulegen. Mithilfe logischer Ordnerstrukturen können Autoren Angebote beim Durchsuchen leichter auffinden. Such- und Tagging-Werkzeuge vereinfachen die Suche zusätzlich.
 
-## Hinzufügen von Marken mithilfe der Angebotskonsole {#add-a-brand-using-the-offers-console}
+## Hinzufügen von Marken mithilfe der Angebotskonsole   {#add-a-brand-using-the-offers-console}
 
 Erstellen Sie eine Marke, mit der Angebote verknüpft werden sollen. Öffnen Sie eine Marke in der Angebotskonsole, um auf deren Angebotsbibliothek zuzugreifen, in der Sie Ordner und Angebote erstellen können.
 
 Erstellen Sie mithilfe der Angebotskonsole eine Marke, wird diese ebenfalls in der [Aktivitätskonsole](/help/sites-authoring/activitylib.md) angezeigt, in der Sie der Marke Aktivitäten hinzufügen können.
 
-1. Klicken oder tippen Sie in der Navigationskonsole auf **Personalisierung** > **Angebote**.
+1. Tippen/Klicken Sie in der Navigationskonsole auf **Personalisierung** > **Angebote**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Click or tap **Create** and then **Create** **Brand**.
+1. Klicken oder tippen Sie auf **Erstellen** und anschließend auf **Marke** **erstellen**.
 1. Wählen Sie die Markenvorlage aus und klicken oder tippen Sie auf **Weiter**.
 1. Geben Sie den Namen der Marke an, der in den Konsolen „Angebote“ und „Aktivitäten“ angezeigt werden soll. Wenn gewünscht, können Sie zudem einen oder mehrere Tags auswählen, um diese mit der Marke zu verknüpfen.
 1. Klicken oder tippen Sie auf **Erstellen**.
 
-## Angebotsbibliotheken Ordner hinzufügen {#add-a-folder-to-an-offer-library}
+## Hinzufügen von Ordnern zu Angebotsbibliotheken   {#add-a-folder-to-an-offer-library}
 
 Fügen Sie der Angebotsbibliothek einer Marke Ordner hinzu, um Angebote zu ordnen und zu speichern. Sie können Ordner erstellen, die direkt der Marke oder anderen Ordnern untergeordnet werden.
 
@@ -56,7 +59,7 @@ Fügen Sie der Angebotsbibliothek einer Marke Ordner hinzu, um Angebote zu ordne
 
 1. Klicken oder tippen Sie auf **Erstellen**.
 
-## Hinzufügen von Angeboten zu Angebotsbibliotheken {#add-an-offer-to-an-offer-library}
+## Hinzufügen von Angeboten zu Angebotsbibliotheken    {#add-an-offer-to-an-offer-library}
 
 Fügen Sie ein Angebot zur Angebotsbibliothek einer Marke hinzu, damit dieses für Markenerlebnisse genutzt werden kann. Geben Sie beim Hinzufügen eines Angebots dessen Titel ein. Sie können das Angebot auch mit einem oder mehreren Tags verknüpfen, damit es sich leichter auffinden lässt.
 
@@ -69,7 +72,7 @@ Nach Erstellung des Angebots können Sie es öffnen, um Inhalte zu verfassen.
 
 1. Wählen Sie dann die Vorlage der **Angebotsseite** aus und klicken oder tippen Sie auf **Weiter**.
 1. Geben Sie dem Angebot einen Namen und wählen Sie, falls gewünscht, einen oder mehr Tags aus und klicken Sie abschließend auf **Erstellen**.
-1. In the confirmation dialog box, to open the offer for editing click or tap **Open Page**.
+1. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Seite öffnen**, um das Angebot zur Bearbeitung zu öffnen.
 
 ## Bearbeiten von Angeboten {#editing-an-offer}
 
@@ -80,7 +83,7 @@ Sie können Angebote über den Ordner in der Angebotsbibliothek oder direkt übe
 1. Klicken oder tippen Sie in der Angebotskonsole auf das Symbol neben dem Angebot und wählen Sie **Bearbeiten** aus.
 1. Fügen Sie dem Angebot Komponenten hinzu und bearbeiten Sie den Komponenteninhalt wie üblich.
 
-## Löschen von Angeboten {#deleting-an-offer}
+## Löschen von Angeboten    {#deleting-an-offer}
 
 Wird ein Angebot nicht länger benötigt, können Sie es löschen. Sollten Sie versuchen, ein Angebot zu löschen, das von einem Erlebnis verwendet wird, werden Sie zur Bestätigung des Löschvorgangs aufgefordert. Bestätigen Sie, dass das Angebot gelöscht werden soll, wird es aus den entsprechenden Erlebnissen entfernt.
 
@@ -96,9 +99,9 @@ Sie können Angebote löschen, wenn Sie entweder Ordnerinhalte der Angebotsbibli
    * Soll das Angebot gelöscht und aus den Erlebnissen entfernt werden, klicken oder tippen Sie auf **Löschen erzwingen**.
    * Soll das Angebot nicht gelöscht werden, klicken oder tippen Sie auf **Abbrechen**.
 
-## Suchen nach Angeboten {#searching-for-offers}
+## Suchen nach Angeboten    {#searching-for-offers}
 
-Suchen Sie in den Angeboten Ihrer Marken mithilfe von Stichwörtern nach passenden Titeln.
+Suchen Sie in den Angeboten Ihrer Marken mithilfe von Keywords nach passenden Titeln.
 
 ![screen-shot_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
 
