@@ -130,7 +130,7 @@ Informationen hierzu finden Sie auch im Thema über die [Best Practices für die
 ## Bearbeiten oder Löschen von Bildprofilen für Dynamic Media {#editing-or-deleting-image-profiles}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile.]**
-1. Select the image profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile.]** Um das Profil zu entfernen, wählen Sie &quot;Bildverarbeitungs- **[!UICONTROL löschen&quot;.]**
+1. Wählen Sie das Profil aus, das Sie bearbeiten oder entfernen möchten. Um es zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungs-Profil bearbeiten.]** Um das Profil zu entfernen, wählen Sie &quot;Bildverarbeitungs-  **[!UICONTROL löschen&quot;.]**
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -275,7 +275,7 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
 
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save.]** then tap **[!UICONTROL Close]** to return to the folder of assets.
+1. Tippen Sie in der rechten oberen Ecke der Seite auf **[!UICONTROL Speichern.]** und dann auf **[!UICONTROL Schließen]**, um zum Ordner der Assets zurückzukehren.
 
 ## Entfernen eines Bildprofils aus Ordnern {#removing-an-image-profile-from-folders}
 
