@@ -23,60 +23,60 @@ ht-degree: 57%
 
 ## Metadaten und ihre Herkunft {#how-to-edit-or-add-metadata}
 
-Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Es wird zu Assets hinzugefügt und verarbeitet, wenn Sie ein Asset hochladen. [!DNL Experience Manager] Sie können die vorhandenen Metadaten bearbeiten und den vorhandenen Feldern neue Metadateneigenschaften hinzufügen. Organisationen benötigen kontrollierte und zuverlässige Metadaten-Vokabeln. Daher ist es [!DNL Experience Manager Assets] nicht möglich, bei Bedarf neue Metadateneigenschaften hinzuzufügen. Nur Administratoren und Entwickler können neue Eigenschaften oder Felder mit Metadaten hinzufügen. Benutzer können die vorhandenen Felder mit Metadaten füllen.
+Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Es wird Assets hinzugefügt und in [!DNL Experience Manager] verarbeitet, wenn Sie ein Asset hochladen. Sie können die vorhandenen Metadaten bearbeiten und den vorhandenen Feldern neue Metadateneigenschaften hinzufügen. Organisationen benötigen kontrollierte und zuverlässige Metadaten-Vokabeln. Daher ist es für [!DNL Experience Manager Assets] nicht möglich, bei Bedarf neue Metadateneigenschaften hinzuzufügen. Nur Administratoren und Entwickler können neue Eigenschaften oder Felder mit Metadaten hinzufügen. Benutzer können die vorhandenen Felder mit Metadaten füllen.
 
 Mit den folgenden Methoden können Sie digitalen Assets Metadaten hinzufügen:
 
-* Zunächst fügen die nativen Anwendungen, die Assets erstellen, einige Metadaten hinzu. Beispielsweise fügt [Acrobat PDF-Dateien Metadaten](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) hinzu oder eine Kamera fügt den Fotos einige einfache Metadaten hinzu. Beim Generieren von Assets können Sie die Metadaten in nativen Anwendungen selbst hinzufügen. Beispielsweise können Sie IPTC-Metadaten in Adobe Lightroom [](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)hinzufügen.
+* Zunächst fügen die nativen Anwendungen, die Assets erstellen, einige Metadaten hinzu. Beispielsweise fügt [Acrobat einige Metadaten](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) zu PDF-Dateien hinzu oder eine Kamera fügt den Fotos einige grundlegende Metadaten hinzu. Beim Generieren von Assets können Sie die Metadaten in nativen Anwendungen selbst hinzufügen. Sie können beispielsweise [IPTC-Metadaten in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html) hinzufügen.
 
-* Vor dem Hochladen eines Assets in können Sie Metadaten entweder mit der nativen Anwendung bearbeiten und ändern, die zum Erstellen eines Assets verwendet wird, oder mit einer anderen Metadaten-Bearbeitungsanwendung. [!DNL Experience Manager] Wenn Sie ein Asset in Experience Manager hochladen, werden die Metadaten verarbeitet. Sehen Sie sich zum Beispiel an, wie Sie mit Metadaten [arbeiten [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) , und sehen Sie sich das [Tagbedienfeld für [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in an [!DNL Adobe Exchange].
+* Vor dem Hochladen eines Assets zu [!DNL Experience Manager] können Sie Metadaten entweder mit der nativen Anwendung bearbeiten und ändern, die zum Erstellen eines Assets verwendet wird, oder mit einer anderen Metadaten-Bearbeitungsanwendung. Wenn Sie ein Asset in Experience Manager hochladen, werden die Metadaten verarbeitet. Sehen Sie sich beispielsweise an, wie [mit Metadaten in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) und das [Tags-Bedienfeld für [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange] funktioniert.
 
-* Sie [!DNL Experience Manager Assets]können Metadaten von Assets auf der Seite &quot; [!UICONTROL Eigenschaften] &quot;manuell hinzufügen oder bearbeiten.
+* Unter [!DNL Experience Manager Assets] können Sie Metadaten von Assets auf der Seite [!UICONTROL Eigenschaften] manuell hinzufügen oder bearbeiten.
 
-* Sie können die [Metadaten-Profile](/help/assets/metadata-config.md#metadata-profiles) von nutzen, [!DNL Experience Manager Assets] um beim Hochladen von Assets in DAM automatisch Metadaten hinzuzufügen.
+* Sie können die [Metadaten-Profil](/help/assets/metadata-config.md#metadata-profiles)-Funktion von [!DNL Experience Manager Assets] nutzen, um beim Hochladen von Assets in DAM automatisch Metadaten hinzuzufügen.
 
 ## hinzufügen oder bearbeiten Sie Metadaten in [!DNL Experience Manager Assets] {#add-edit-metadata}
 
-Gehen Sie wie folgt vor, um die Metadaten eines Assets in der [!DNL Assets] Benutzeroberfläche zu bearbeiten:
+Gehen Sie wie folgt vor, um die Metadaten eines Assets in der [!DNL Assets]-Benutzeroberfläche zu bearbeiten:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie in der [!DNL Assets] Benutzeroberfläche das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Ansichten-Eigenschaften]** .
+   * Wählen Sie in der Benutzeroberfläche [!DNL Assets] das Asset aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften der Ansicht]**.
    * Wählen Sie die Schnellaktion **[!UICONTROL Eigenschaften anzeigen]** aus der Miniaturansicht des Assets aus.
-   * Klicken Sie auf der Seite &quot;Asset&quot;in der Symbolleiste auf das Symbol für die **[!UICONTROL Ansicht Eigenschaften]** ![Assets](assets/do-not-localize/info-circle-icon.png) .
+   * Klicken Sie auf der Asset-Seite in der Symbolleiste auf **[!UICONTROL Eigenschaften von Ansichten]** ![Infosymbol für Elemente](assets/do-not-localize/info-circle-icon.png).
 
-   Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Die Metadaten werden extrahiert, wenn das Asset hochgeladen (aufgenommen) wird [!DNL Experience Manager].
+   Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Die Metadaten werden extrahiert, wenn das Asset in [!DNL Experience Manager] hochgeladen (aufgenommen) wird.
 
    ![Eigenschaften eines Assets auswählen, um die Metadaten Ansicht](assets/asset-metadata.png)
 
-   *Abbildung: Bearbeiten oder Hinzufügen von Metadaten auf der Seite [!UICONTROL &quot;Asset-Eigenschaften&quot;] .*
+   *Abbildung: Bearbeiten oder Hinzufügen von Metadaten auf der   Seite &quot;Asset-Eigenschaften&quot;.*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
+1. Nehmen Sie die gewünschten Änderungen an den Metadaten unter den verschiedenen Registerkarten vor und klicken Sie nach Abschluss der Bearbeitung in der Symbolleiste auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern. Klicken Sie auf **[!UICONTROL Schließen]**, um zur [!DNL Assets]-Weboberfläche zurückzukehren.
 
    >[!NOTE]
    >
    >Ein leeres Textfeld gibt an, dass kein Metadatenset vorhanden ist. Sie können einen Wert in das Feld eingeben und speichern, um diese Metadateneigenschaft hinzuzufügen. 
 
-Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Der Metadaten-Schreibback-Arbeitsablauf fügt die Metadaten zur ursprünglichen Binärdatei hinzu. Changes made to the existing properties (such as `dc:title`) are overwritten and new properties (including custom properties like `cq:tags`) are added with the schema.
+Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Der Metadaten-Schreibback-Arbeitsablauf fügt die Metadaten zur ursprünglichen Binärdatei hinzu. Änderungen, die an den vorhandenen Eigenschaften (z. B. `dc:title`) vorgenommen wurden, werden überschrieben und dem Schema werden neue Eigenschaften (einschließlich benutzerdefinierter Eigenschaften wie `cq:tags`) hinzugefügt.
 
-XMP write-back is supported and enabled for the platforms and file formats described in [technical requirements.](/help/sites-deploying/technical-requirements.md)
+XMP Schreibback wird unterstützt und für die Plattformen und Dateiformate aktiviert, die unter [Technische Anforderungen beschrieben werden.](/help/sites-deploying/technical-requirements.md)
 
-## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
+## Bearbeiten von Metadateneigenschaften mehrerer Assets {#editing-metadata-properties-of-multiple-assets}
 
 [!DNL Adobe Enterprise Manager Assets]Mit können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, sodass Sie allgemeine Metadatenänderungen an Assets zusammen vornehmen können. Sie können die Metadaten für mehrere Sammlungen zusammen bearbeiten. Verwenden Sie die Seite „Eigenschaften“, um Metadatenänderungen für mehrere Assets oder Sammlungen durchzuführen:
 
 * Metadateneigenschaften in einen gemeinsamen Wert ändern
 * Tags hinzufügen oder ändern
 
-To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the [schema editor](metadata-config.md#folder-metadata-schema).
+Verwenden Sie den [Schema-Editor](metadata-config.md#folder-metadata-schema), um die Seite mit den Metadateneigenschaften anzupassen, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften.
 
 >[!NOTE]
 >
 >Die Massenbearbeitung kann auf Assets angewendet werden, die in einem Ordner oder einer Sammlung enthalten sind. Für Assets, die in verschiedenen Ordnern enthalten sind oder gemeinsamen Kriterien entsprechen, können die [Metadaten nach einer Suche stapelweise aktualisiert werden](search-assets.md#metadataupdates).
 
-1. In the [!DNL Assets] user interface, navigate to the location of the assets you want to edit.
+1. Navigieren Sie in der Benutzeroberfläche [!DNL Assets] zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
-1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um die Eigenschaftsseite für die ausgewählten Assets zu öffnen.
 
    >[!NOTE]
    >
@@ -91,7 +91,7 @@ To customize the metadata properties page, including adding, modifying, deleting
    >* Aktivieren Sie über der Asset-Liste das Kontrollkästchen neben **[!UICONTROL Titel]**, um zwischen der Auswahl von Assets und dem Deaktivieren der Liste umzuschalten.
 
 
-1. To select a different metadata schema for the assets, click **[!UICONTROL Settings]** from the toolbar, and select the desired schema.
+1. Um ein anderes Metadaten-Schema für die Assets auszuwählen, klicken Sie in der Symbolleiste auf **[!UICONTROL Settings]** und wählen Sie das gewünschte Schema aus.
 1. Speichern Sie die Änderungen.
 1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
@@ -109,9 +109,9 @@ Der Metadaten-Import erfolgt asynchron und beeinträchtigt nicht die Systemleist
 >
 >Um Metadaten in benutzerdefinierte Namespaces zu importieren, registrieren Sie zunächst die Namespaces.
 
-1. Navigate to the [!DNL Assets] user interface, and click **[!UICONTROL Create]** from the toolbar.
+1. Navigieren Sie zur Benutzeroberfläche [!DNL Assets] und klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie aus dem Menü **[!UICONTROL Metadaten]** aus.
-1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Wählen Sie die CSV-Datei mit den Metadaten aus.
+1. Klicken Sie auf der Seite **[!UICONTROL Metadatenimport]** auf **[!UICONTROL Datei]** auswählen. Wählen Sie die CSV-Datei mit den Metadaten aus.
 1. Geben Sie die folgenden Parameter an. Siehe Beispiel für eine CSV-Datei unter [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Metadaten-Importparameter | Beschreibung |
@@ -119,12 +119,12 @@ Der Metadaten-Import erfolgt asynchron und beeinträchtigt nicht die Systemleist
    | [!UICONTROL Batch-Größe] | Anzahl der Assets in einem Batch, für die Metadaten importiert werden sollen. Der Standardwert ist 50. Der Wert darf maximal 100 betragen. |
    | [!UICONTROL Feldtrennzeichen] | Der Standardwert ist `,` (ein Komma). Sie können jedoch ein beliebiges anderes Zeichen eingeben. |
    | [!UICONTROL Mehrfachtrennzeichen] | Trennzeichen für Metadatenwerte. Der Standardwert ist `|`. |
-   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. When set to `true` and default Launcher settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Die Aktivierung von Start-Workflows verlangsamt das System. |
+   | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. Bei Festlegung auf `true` sind die standardmäßigen Launcher-Einstellungen für den [!UICONTROL DAM-Metadaten WriteBack]-Workflow (der Metadaten in die binären XMP schreibt) wirksam. Die Aktivierung von Start-Workflows verlangsamt das System. |
    | [!UICONTROL Asset-Pfad-Spaltenname] | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
-1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung im Posteingang [!UICONTROL Notification] angezeigt.
 
-1. Um den korrekten Import zu überprüfen, navigieren Sie zur Seite &quot; [!UICONTROL Eigenschaften] &quot;eines Assets und überprüfen Sie die Werte in den Feldern.
+1. Um den korrekten Import zu überprüfen, navigieren Sie zur Seite [!UICONTROL Eigenschaften] eines Assets und überprüfen Sie die Werte in den Feldern.
 
 Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
 
@@ -132,9 +132,9 @@ Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden
 >
 >Wenn das Datumsformat nicht mit `YYYY-MM-DDThh:mm:ss.fff-00:00` übereinstimmt, werden die Datumswerte nicht eingestellt. Die Datumsformate der exportierten Metadaten-CSV-Datei entsprechen dem Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie das Datum importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den mit `fff` angegebenen Nanosekundenwert hinzufügen.
 
-## Export metadata {#export-metadata}
+## Exportieren von Metadaten {#export-metadata}
 
-Sie können Metadaten für mehrere Assets in ein CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. To export metadata, [!DNL Experience Manager] traverses through the properties of the asset node `jcr:content/metadata` and its child nodes and exports the metadata properties in a CSV file.
+Sie können Metadaten für mehrere Assets in ein CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Zum Exportieren von Metadaten durchsucht [!DNL Experience Manager] die Eigenschaften des Asset-Knotens `jcr:content/metadata` und seiner untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
 
 Einige Anwendungsfälle für den Massenexport von Metadaten:
 
@@ -145,7 +145,7 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 
 1. Wählen Sie einen Asset-Ordner aus, der Assets enthält, für die Sie Metadaten exportieren möchten. Wählen Sie in der Symbolleiste **[!UICONTROL Metadaten exportieren]** aus.
 
-1. In the [!UICONTROL Metadata Export] dialog, specify a name for the CSV file. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.
+1. Geben Sie im Dialogfeld [!UICONTROL Metadatenexport] einen Namen für die CSV-Datei an. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.
 
    ![Benutzeroberfläche und Optionen zum Exportieren von Metadaten aller Assets in einem Ordner](assets/export_metadata_page.png "Benutzeroberfläche und Optionen zum Exportieren von Metadaten aller Assets in einem Ordner")
 
@@ -153,17 +153,17 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 
 1. Geben Sie im Feld **[!UICONTROL Zu exportierende Eigenschaften]** an, ob Sie alle oder nur bestimmte Eigenschaften exportieren wollen. Wenn Sie für den Export „Selektive Eigenschaften“ auswählen, fügen Sie die gewünschten Eigenschaften hinzu.
 
-1. From the toolbar, click **[!UICONTROL Export]**. Sie erhalten eine Meldung, die bestätigt, dass die Metadaten exportiert wurden. Schließen Sie die Meldung.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Export]**. Sie erhalten eine Meldung, die bestätigt, dass die Metadaten exportiert wurden. Schließen Sie die Meldung.
 
-1. Öffnen Sie die Posteingangsbenachrichtigung für den Exportauftrag. Wählen Sie den Auftrag aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**. To download the CSV file with the metadata, click **[!UICONTROL CSV Download]** from the toolbar. Klicken Sie auf **[!UICONTROL Schließen]**.
+1. Öffnen Sie die Posteingangsbenachrichtigung für den Exportauftrag. Wählen Sie den Auftrag aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Öffnen]**. Um die CSV-Datei mit den Metadaten herunterzuladen, klicken Sie in der Symbolleiste auf **[!UICONTROL CSV-Download]**. Klicken Sie auf **[!UICONTROL Schließen]**.
 
    ![Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden](assets/csv_download.png)
 
    *Abbildung: Dialogfeld zum Herunterladen der CSV-Datei mit Metadaten, die stapelweise exportiert wurden.*
 
-## Metadaten von Sammlungen bearbeiten {#collections-metadata}
+## Bearbeiten von Metadaten von Sammlungen {#collections-metadata}
 
-Weitere Informationen finden Sie unter [Ansicht und Bearbeiten von Sammlungsmetadaten](/help/assets/manage-collections.md#view-edit-collection-metadata) und [Bearbeiten von Metadaten mehrerer Sammlungen als Massendatei](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
+Weitere Informationen finden Sie unter [Ansicht und Bearbeiten von Sammlungsmetadaten](/help/assets/manage-collections.md#view-edit-collection-metadata) und [Bearbeiten von Metadaten mehrerer Sammlungen als Massendateien](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Anwenden eines Metadatenprofils auf Ordner {#applying-a-metadata-profile-to-folders}
 
@@ -188,20 +188,20 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Videoprofil verfügt, das Sie nachträglich geändert haben. Informationen hierzu finden Sie unter [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung des zugehörigen Verarbeitungsprofils](processing-profiles.md#reprocessing-assets).
 
-### Apply metadata profiles to folders from [!UICONTROL Profiles] user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Anwenden von Metadaten-Profilen auf Ordner von [!UICONTROL Profilen] der Benutzeroberfläche {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Gehen Sie wie folgt vor, um Metadaten-Profil anzuwenden:
 
-1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Profil]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
-1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
+1. Klicken Sie auf **[!UICONTROL Metadaten-Profil auf Ordner]** anwenden und wählen Sie den Ordner bzw. mehrere Ordner aus, die Sie zum Empfangen der neu hochgeladenen Assets verwenden möchten, und klicken Sie auf **[!UICONTROL Fertig]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
-### Apply metadata profiles to folders from [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
+### Anwenden von Metadaten-Profilen auf Ordner von [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
 
-1. In the left rail, click **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
-1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
+1. Klicken Sie in der linken Leiste auf **[!UICONTROL Assets]** und navigieren Sie dann zu dem Ordner, auf den Sie ein Metadaten-Profil anwenden möchten.
+1. Klicken Sie im Ordner auf das Häkchen, um es auszuwählen, und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
 
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the popup menu and click **[!UICONTROL Save]**.
+1. Wählen Sie die Registerkarte **[!UICONTROL Metadaten-Profil]** aus, wählen Sie das Profil im Popupmenü aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
@@ -211,33 +211,33 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
-### Remove a metadata profile from folders {#removing-a-metadata-profile-from-folders}
+### Entfernen eines Metadaten-Profils aus Ordnern {#removing-a-metadata-profile-from-folders}
 
 Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
 
-Sie können ein Metadaten-Profil aus einem Ordner im Menü &quot; **[!UICONTROL Extras]** &quot;oder aus dem Ordner &quot; **[!UICONTROL Eigenschaften]** &quot;entfernen.
+Sie können ein Metadaten-Profil aus einem Ordner aus dem Menü **[!UICONTROL Tools]** oder aus dem Ordner **[!UICONTROL Eigenschaften]** entfernen.
 
-#### Remove metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Entfernen von Metadaten-Profilen aus Ordnern über die Profils-Benutzeroberfläche {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Profil]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
-1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
+1. Klicken Sie auf **[!UICONTROL Metadaten-Profil aus Ordner(n)]** entfernen und wählen Sie den Ordner bzw. mehrere Ordner aus, aus dem bzw. denen Sie ein Profil entfernen möchten, und klicken Sie auf **[!UICONTROL Fertig]**.
 
    Sie können bestätigen, dass das Metadatenprofil nicht länger auf einen Ordner angewendet wird, da der Name in diesem Fall nicht mehr unter dem Ordner angezeigt wird.
 
-#### Remove metadata profiles from folders via Properties {#removing-metadata-profiles-from-folders-via-properties}
+#### Entfernen von Metadaten-Profilen aus Ordnern über Eigenschaften {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Click the [!DNL Experience Manager] logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
-1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Metadaten-Profil entfernen möchten.
+1. Klicken Sie im Ordner auf das Häkchen, um es auszuwählen, und klicken Sie dann auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** aus. Wählen Sie anschließend **[!UICONTROL Keine]** aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 ## Tipps und Einschränkungen {#best-practices-limitations}
 
-* Die Metadaten-Aktualisierungen über die Benutzeroberfläche ändern die Metadateneigenschaften im `dc` Namensraum. Über die HTTP-API vorgenommene Aktualisierungen ändern die Metadateneigenschaften im `jcr` Namensraum. Siehe [Aktualisieren von Metadaten mit der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
+* Die Metadaten-Aktualisierungen über die Benutzeroberfläche ändern die Metadateneigenschaften im Namensraum `dc`. Über die HTTP-API vorgenommene Aktualisierungen ändern die Metadateneigenschaften im Namensraum `jcr`. Siehe [Informationen zum Aktualisieren von Metadaten mit der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 * Die CSV-Datei zum Importieren von Asset-Metadaten ist in einem sehr spezifischen Format verfügbar. Um Arbeitsaufwand und Zeit zu sparen und unbeabsichtigte Fehler zu vermeiden, können Sie mit dem Erstellen der CSV-Datei das Format einer exportierten CSV-Datei verwenden.
 
-* Beim Importieren von Metadaten mit einer CSV-Datei ist das erforderliche Datumsformat `YYYY-MM-DDThh:mm:ss.fff-00:00`erforderlich. Wenn ein anderes Format verwendet wird, werden die Datumswerte nicht festgelegt. Die Datumsformate der exportierten Metadaten-CSV-Datei entsprechen dem Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie das Datum importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den mit `fff` angegebenen Nanosekundenwert hinzufügen.
+* Beim Importieren von Metadaten mit einer CSV-Datei ist das erforderliche Datumsformat `YYYY-MM-DDThh:mm:ss.fff-00:00`. Wenn ein anderes Format verwendet wird, werden die Datumswerte nicht festgelegt. Die Datumsformate der exportierten Metadaten-CSV-Datei entsprechen dem Format `YYYY-MM-DDThh:mm:ss-00:00`. Wenn Sie das Datum importieren möchten, konvertieren Sie es in das akzeptable Format, indem Sie den mit `fff` angegebenen Nanosekundenwert hinzufügen.
 
 >[!MORELIKETHIS]
 >
