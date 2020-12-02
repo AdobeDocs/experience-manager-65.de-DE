@@ -11,35 +11,35 @@ ht-degree: 49%
 ---
 
 
-# Install and configure ImageMagick to work with [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# Installieren und konfigurieren Sie ImageMagick für die Verwendung mit [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick ist ein Software-Plug-in zum Erstellen, Bearbeiten, Erstellen oder Konvertieren von Bitmapbildern. Es kann Bilder in verschiedenen Formaten (über 200) lesen und schreiben, darunter PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF und SVG. Verwenden Sie ImageMagick, um die Größe von Bildern zu ändern, Bilder zu kippen, zu spiegeln, zu drehen, zu verzerren, zuzuschneiden und umzuwandeln. Darüber hinaus können Sie mit ImageMagick die Bildfarben anpassen, verschiedene Spezialeffekte anwenden oder Text, Linien, Polygone, Ellipsen und Kurven zeichnen.
 
-Use the [!DNL Adobe Experience Manager] media handler from the command line to process images through ImageMagick. Unter [Best Practices für Assets-Dateiformate](/help/assets/assets-file-format-best-practices.md) finden Sie weitere Informationen zur Verwendung verschiedener Dateiformate mit ImageMagick. Unter [Von Assets unterstützte Formate](/help/assets/assets-formats.md) erfahren Sie mehr zu allen unterstützten Dateiformaten.
+Verwenden Sie den Medienhandler [!DNL Adobe Experience Manager] in der Befehlszeile, um Bilder über ImageMagick zu verarbeiten. Unter [Best Practices für Assets-Dateiformate](/help/assets/assets-file-format-best-practices.md) finden Sie weitere Informationen zur Verwendung verschiedener Dateiformate mit ImageMagick. Unter [Von Assets unterstützte Formate](/help/assets/assets-formats.md) erfahren Sie mehr zu allen unterstützten Dateiformaten.
 
-Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheranforderungen, potenzielle Änderungen an IM-Richtlinien und die Gesamtauswirkung auf die Leistung berücksichtigen. Die Speicheranforderungen hängen von verschiedenen Faktoren wie Auflösung, Bittiefe, Farbprofil und Dateiformat ab. If you intend to process very large files using ImageMagick, properly benchmark the [!DNL Experience Manager] server. Einige hilfreiche Ressourcen finden Sie weiter unten.
+Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheranforderungen, potenzielle Änderungen an IM-Richtlinien und die Gesamtauswirkung auf die Leistung berücksichtigen. Die Speicheranforderungen hängen von verschiedenen Faktoren wie Auflösung, Bittiefe, Farbprofil und Dateiformat ab. Wenn Sie sehr große Dateien mit ImageMagick verarbeiten möchten, sollten Sie den [!DNL Experience Manager]-Server richtig vergleichen. Einige hilfreiche Ressourcen finden Sie weiter unten.
 
 >[!NOTE]
 >
->Wenn Sie [!DNL Experience Manager] mit [!DNL Adobe Managed Services] (AMS) arbeiten, wenden Sie sich an den Kundendienst der Adobe, wenn Sie viele hochauflösende PSD- oder PSB-Dateien verarbeiten möchten. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel verarbeiten.
+>Wenn Sie [!DNL Experience Manager] unter [!DNL Adobe Managed Services] (AMS) verwenden, wenden Sie sich an den Kundendienst der Adobe, wenn Sie viele hochauflösende PSD- oder PSB-Dateien verarbeiten möchten. [!DNL Experience Manager] kann keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel verarbeiten.
 
 ## Installieren von ImageMagick {#installing-imagemagick}
 
 Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssysteme verfügbar. Verwenden Sie die entsprechende Version für Ihr Betriebssystem.
 
-1. Download the appropriate [ImageMagick installation files](https://www.imagemagick.org/script/download.php) for your operating system.
-1. To install ImageMagick on the disk hosting the [!DNL Experience Manager] server, launch the installation file.
+1. Laden Sie die entsprechenden [ImageMagick-Installationsdateien](https://www.imagemagick.org/script/download.php) für Ihr Betriebssystem herunter.
+1. Um ImageMagick auf der Festplatte zu installieren, auf der der [!DNL Experience Manager]-Server gehostet wird, starten Sie die Installationsdatei.
 
 1. Legen Sie die Path-Umgebungsvariable auf das ImageMagick-Installationsverzeichnis fest.
 1. Um zu überprüfen, ob die Installation erfolgreich war, führen Sie den Befehl `identify -version` aus.
 
 ## Einrichten eines Befehlszeilenprozessschritts {#set-up-the-command-line-process-step}
 
-Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfall einrichten. Perform these steps to generate a flipped image and thumbnails (140x100, 48x48, 319x319, and 1280x1280) each time you add a JPEG image file to `/content/dam` on the [!DNL Experience Manager] server:
+Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfall einrichten. Führen Sie die folgenden Schritte aus, um ein gedrehtes Bild und Miniaturansichten (140 x 100, 48 x 48, 319 x 319 und 1280 x 1280) jedes Mal zu erstellen, wenn Sie eine JPEG-Bilddatei zu `/content/dam` auf dem [!DNL Experience Manager]-Server hinzufügen:
 
-1. On the [!DNL Experience Manager] server, go to the Workflow console (`https://[aem_server]:[port]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
-1. From the **[!UICONTROL DAM Update Asset]** workflow model, open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step.
-1. In the **[!UICONTROL Arguments tab]**, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
+1. Wechseln Sie auf dem Server [!DNL Experience Manager] zur Workflow-Konsole (`https://[aem_server]:[port]/workflow`) und öffnen Sie das Workflow-Modell **[!UICONTROL DAM-Update-Asset]**.
+1. Öffnen Sie im Workflow-Modell **[!UICONTROL DAM Update Asset]** den Schritt **[!UICONTROL EPS-Miniaturansichten (powered by ImageMagick)]**.
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Argumente]** `image/jpeg` der Liste **[!UICONTROL Mime-Typen]** hinzu.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
@@ -47,11 +47,11 @@ Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfal
 
    `convert ./${filename} -flip ./${basename}.flipped.jpg`
 
-1. Select the **[!UICONTROL Delete Generated Rendition]** and **[!UICONTROL Generate Web Rendition]** flags.
+1. Wählen Sie die Flags **[!UICONTROL Generierte Darstellung löschen]** und **[!UICONTROL Webwiedergabe erstellen]** aus.
 
    ![select_flags](assets/select_flags.png)
 
-1. Legen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** die Details für die Ausgabedarstellung mit 1280x1280 Pixel fest. Geben Sie außerdem `image/jpeg` im Feld **[!UICONTROL Mimetype]** an.
+1. Legen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** die Details für die Ausgabedarstellung mit 1280x1280 Pixel fest. Geben Sie außerdem `image/jpeg` in das Feld **[!UICONTROL Mimetype]** ein.
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
@@ -59,22 +59,22 @@ Sie können den Befehlszeilenprozesssschritt für Ihren jeweiligen Anwendungsfal
 
    >[!NOTE]
    >
-   >The `convert` command may not run with certain Windows versions (for example Windows SE), because it conflicts with the native `convert` utility that is part of Windows installation. Geben Sie in diesem Fall den vollständigen Pfad zum ImageMagick-Programm an. Geben Sie zum Beispiel Folgendes an:
+   >Der Befehl `convert` wird möglicherweise nicht mit bestimmten Windows-Versionen (z. B. Windows SE) ausgeführt, da er mit dem nativen Dienstprogramm `convert` in Konflikt steht, das Teil der Windows-Installation ist. Geben Sie in diesem Fall den vollständigen Pfad zum ImageMagick-Programm an. Geben Sie zum Beispiel Folgendes an:
    >
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
-1. Open the **[!UICONTROL Process Thumbnails]** step, and add the MIME type `image/jpeg` under **[!UICONTROL Skip Mime Types]**.
+1. Öffnen Sie den Schritt **[!UICONTROL Prozessminiaturen]** und fügen Sie den MIME-Typ `image/jpeg` unter **[!UICONTROL MIME-Typen überspringen]** hinzu.
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** den MIME-Typ `image/jpeg` unter **[!UICONTROL Liste überspringen]** hinzu. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
 
    ![web_enabled](assets/web_enabled.png)
 
 1. Speichern Sie den Workflow.
 
-1. Um die ordnungsgemäße Verarbeitung zu überprüfen, laden Sie ein JPG-Bild in [!DNL Assets]. Überprüfen Sie nach Abschluss der Verarbeitung, ob ein gedrehtes Bild und die Darstellungen generiert wurden oder nicht.
+1. Um die ordnungsgemäße Verarbeitung zu überprüfen, laden Sie ein JPG-Bild auf [!DNL Assets] hoch. Überprüfen Sie nach Abschluss der Verarbeitung, ob ein gedrehtes Bild und die Darstellungen generiert wurden oder nicht.
 
 ## Minimieren von Sicherheitslücken {#mitigating-security-vulnerabilities}
 
@@ -84,5 +84,5 @@ Außerdem ist eine Reihe von Bildverarbeitungs-Plug-ins von der ImageMagick-Bibl
 
 Wenn Sie ImageMagick oder eine betroffene Bibliothek verwenden, empfiehlt Adobe, die bekannten Sicherheitslücken zu minimieren, indem Sie mindestens eine der folgenden Aufgaben ausführen (vorzugsweise beide):
 
-1. Verify that all image files begin with the expected [&quot;magic bytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) corresponding to the image file types you support before sending them to ImageMagick for processing.
-1. Verwenden Sie eine Richtliniendatei, um die verwundbaren ImageMagick-Codes zu deaktivieren. The global policy for ImageMagick is found at `/etc/ImageMagick`.
+1. Vergewissern Sie sich, dass alle Bilddateien mit den erwarteten [&quot;magischen Bytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) beginnen, die den unterstützten Bilddateitypen entsprechen, bevor Sie sie zur Verarbeitung an ImageMagick senden.
+1. Verwenden Sie eine Richtliniendatei, um die verwundbaren ImageMagick-Codes zu deaktivieren. Die globale Richtlinie für ImageMagick finden Sie unter `/etc/ImageMagick`.
