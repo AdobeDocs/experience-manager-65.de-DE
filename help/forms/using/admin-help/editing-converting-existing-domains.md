@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ Sie können auf der Seite „Domänenverwaltung“ die Einstellungen für besteh
 1. Um die Ordnerinformationen für eine Unternehmensdomäne zu ändern, klicken Sie auf den entsprechenden Ordnernamen am unteren Rand der Seite. Ändern Sie auf der Seite „Verzeichnis bearbeiten“ die Einstellungen den Anforderungen entsprechend. (Siehe [Ordner oder benutzerdefinierten SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
 1. Wenn Sie die gewünschten Änderungen durchgeführt haben, klicken Sie auf „OK“.
 
-## Eine Unternehmensdomäne in eine Hybriddomäne konvertieren {#convert-an-enterprise-domain-to-a-hybrid-domain}
+## Eine Unternehmensdomäne in eine Hybriddomäne konvertieren  {#convert-an-enterprise-domain-to-a-hybrid-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf den Namen der Unternehmensdomäne, die umgewandelt werden soll.
@@ -40,7 +43,7 @@ Sie können auf der Seite „Domänenverwaltung“ die Einstellungen für besteh
 >
 >Wenn die Unternehmensdomäne, die Sie konvertieren, keine Ordnereinstellungen enthält, gehen alle LDAP-Authentifizierungseinstellungen verloren.
 
-## Eine Hybriddomäne in eine Unternehmensdomäne umwandeln {#convert-a-hybrid-domain-to-an-enterprise-domain}
+## Eine Hybriddomäne in eine Unternehmensdomäne umwandeln  {#convert-a-hybrid-domain-to-an-enterprise-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf den Namen der Hybriddomäne, die umgewandelt werden soll.
