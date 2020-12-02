@@ -643,7 +643,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus): Anzeigen einer Vorschau des LiveCycle ES2- und späteren Anwendungsarchivs mit der Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Quick Beginn (SOAP-Modus):Vorschau des LiveCycle ES2- und späteren Anwendungsarchivs mit der Java-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api} anzeigen
 
 Im folgenden Java-Codebeispiel wird die Vorschau des AEM Forms- und späteren Anwendungsarchivs mit der Java-API gezeigt.
 
@@ -722,7 +722,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Quick Beginn (SOAP-Modus):Anwendungsarchiv mit der Java-API löschen {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Quick Beginn (SOAP-Modus):Anwendungsarchiv mit der Java-API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api} löschen
 
 Das folgende Java-Codebeispiel dient zum Löschen eines Anwendungsarchivs.
 
