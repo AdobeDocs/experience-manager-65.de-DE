@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Die AEM Forms-Prozesse {#understanding-aem-forms-processes}
 
-Ein gängiger Anwendungsfall besteht darin, dass eine Reihe von AEM Forms-Diensten auf einem einzigen Dokument betrieben wird. Sie können eine Anforderung an den Dienst-Container senden, indem Sie einen Prozess mit Workbench erstellen. Ein Prozess stellt einen Geschäftsprozess dar, den Sie automatisieren. Informationen zum Erstellen von Prozessen finden Sie unter [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Ein gängiger Anwendungsfall besteht darin, dass eine Reihe von AEM Forms-Diensten auf einem einzigen Dokument betrieben wird. Sie können eine Anforderung an den Dienst-Container senden, indem Sie einen Prozess mit Workbench erstellen. Ein Prozess stellt einen Geschäftsprozess dar, den Sie automatisieren. Informationen zum Erstellen von Prozessen finden Sie unter [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) verwenden.
 
 Sobald ein Prozess aktiviert ist, wird er zu einem Dienst und kann wie andere Dienste aufgerufen werden. Ein Unterschied zwischen einem Standarddienst wie dem Encryption-Dienst und einem Dienst, der aus einem Prozess stammt, besteht darin, dass dieser einen Vorgang hat, der viele Aktionen ausführt. Im Gegensatz dazu verfügt ein Standarddienst über viele Vorgänge. Jeder Vorgang führt in der Regel eine Aktion aus, z. B. das Anwenden einer Richtlinie auf ein Dokument oder das Verschlüsseln eines Dokuments.
 
@@ -45,7 +45,7 @@ Die folgende Abbildung zeigt ein Beispiel eines Prozesses mit kurzer Lebensdauer
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um mit den Codebeispielen zu folgen, die das Aufrufen dieses Prozesses besprechen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um zusammen mit den Codebeispielen zu folgen, die das Aufrufen dieses Prozesses beschreiben, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wenn dieser Prozess mit kurzer Lebensdauer aufgerufen wird, werden die folgenden Aktionen ausgeführt:
 
@@ -61,21 +61,21 @@ Wenn dieser Prozess mit kurzer Lebensdauer aufgerufen wird, werden die folgenden
 
    *Die Programmierung mit AEM* Formularen beschreibt die folgenden Methoden, mit denen Sie diesen Prozess mit kurzer Lebensdauer programmgesteuert aufrufen können:
 
-   * [Aufrufen eines Prozesses mit kurzer Lebensdauer durch Übergeben eines unsicheren Dokuments mit AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (mit einer Flex-Anwendung)
-   * [Aufrufen eines Prozesses mit kurzer Lebensdauer mithilfe der AufrufAPI](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java Invocation API)
-   * [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (Webdienstbeispiel)
-   * [Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (Webdienstbeispiel)
-   * [Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (Webdienstbeispiel)
-   * [Aufrufen von AEM Forms mithilfe von BLOB-Daten über HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (Webdienstbeispiel)
-   * [Aufrufen von AEM Forms mit DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (Webdienstbeispiel)
+   * [Aufrufen eines Prozesses mit kurzer Lebensdauer durch Übergeben eines unsicheren Dokuments mithilfe von AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  (mit einer Flex-Anwendung)
+   * [Aufrufen eines Prozesses mit kurzer Lebensdauer mithilfe der AufrufAPI](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java-AufrufAPI)
+   * [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mit SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)  (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mithilfe von BLOB-Daten über HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  (Webdienstbeispiel)
+   * [Aufrufen von AEM Forms mit DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)  (Webdienstbeispiel)
    * [Aufrufen des MyApplication/EncryptDocument-Prozesses mithilfe von REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Beispiel für Prozesse mit langer Lebensdauer**
 
 Die folgende Abbildung zeigt ein Beispiel für einen Prozess mit langer Lebensdauer.
 
-Dieser Prozess wird aufgerufen, wenn ein Antragsteller ein Darlehensformular einreicht. Das Verfahren ist erst abgeschlossen, wenn ein Kreditsachbearbeiter den Kreditantrag genehmigt oder ablehnt. Der Name dieses Prozesses mit langer Lebensdauer lautet *FirstAppSolution/PreLoanProcess* und sein Vorgang ist `invoke_Async`. Dieser Prozess muss asynchron aufgerufen werden. For information about programmatically invoking this long-lived process, see [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+Dieser Prozess wird aufgerufen, wenn ein Antragsteller ein Darlehensformular einreicht. Das Verfahren ist erst abgeschlossen, wenn ein Kreditsachbearbeiter den Kreditantrag genehmigt oder ablehnt. Der Name dieses Prozesses mit langer Lebensdauer ist *FirstAppSolution/PreLoanProcess* und sein Vorgang ist `invoke_Async`. Dieser Prozess muss asynchron aufgerufen werden. Weitere Informationen zum programmgesteuerten Aufrufen dieses langlebigen Prozesses finden Sie unter [Aufrufen von Prozessen mit menschlicher Zielgruppe und langer Lebensdauer](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >
->Dieser Vorgang kann gemäß dem unter [Erstellen Ihrer ersten AEM Forms-Anwendung](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)angegebenen Lernprogramm erstellt werden.
+>Dieser Vorgang kann anhand des unter [Erstellen Ihrer ersten AEM Forms-Anwendung](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63) angegebenen Lernprogramms erstellt werden.
