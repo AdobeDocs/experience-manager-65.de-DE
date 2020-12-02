@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 81%
 
 ---
 
@@ -19,32 +22,32 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Dieser Artikel erläutert, wie Sie AEM Forms Workspace debuggen, indem Sie die Protokollierung aktivieren und den Debugger in einem Browser verwenden. Darüber hinaus werden einige allgemeine Fragen, die bei der Verwendung von AEM Forms Workspace auftreten können, und ihre Umgehungslösungen behandelt.
 
-## AEM Forms Workspace-Paket kann nicht installiert werden {#unable-to-install-aem-forms-workspace-package}
+## AEM Forms Workspace-Paket kann nicht installiert werden  {#unable-to-install-aem-forms-workspace-package}
 
-Nach der Installation des Patches öffnen Sie die AEM Forms Workspace-App. If you encounter the No Resource Found error, open the CRX Package Manager, and reinstalling the `adobe-lc-workspace-pkg-<version>.zip` package.
+Nach der Installation des Patches öffnen Sie die AEM Forms Workspace-App. Wenn der Fehler &quot;Keine Ressource gefunden&quot;auftritt, öffnen Sie den CRX Package Manager und installieren Sie das `adobe-lc-workspace-pkg-<version>.zip`-Paket neu.
 
-While installling the package, if you encounter an error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, perform the following steps:
+Wenn beim Installieren des Pakets ein Fehler `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` auftritt, führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich bei CRX DE Lite an. The default url is `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Melden Sie sich bei CRX DE Lite an. Die Standard-URL ist `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Löschen Sie den folgenden Knoten:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Navigieren Sie zu Package Manager. Die Standardeinstellung ist `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. Search and install the `adobe-lc-workspace-pkg-[version].zip` package.
+1. Suchen und installieren Sie das `adobe-lc-workspace-pkg-[version].zip`-Paket.
 1. Starten Sie den Anwendungsserver neu.
 
-## Protokollierung für AEM Forms Workspace {#aem-forms-workspace-nbsp-logging}
+## Protokollierung für AEM Forms Workspace  {#aem-forms-workspace-nbsp-logging}
 
 Sie können Protokolle auf verschiedenen Ebenen generieren, um eine optimale Fehlerbehebung zu ermöglichen. Beispielsweise hilft in einer komplexen Anwendung die Protokollierung auf der Komponentenebene beim Debugging und der Fehlerbehebung bestimmter Komponenten.
 
 In AEM Forms Workspace:
 
-* To get the logging information about a specific component file, append `/log/<ComponentFile>/<LogLevel>` in the URL, and press `Enter`. Alle Protokollinformationen für die Komponentendatei auf der angegebenen Protokollebene werden in der Konsole ausgegeben.
+* Um die Protokollinformationen zu einer bestimmten Komponentendatei abzurufen, hängen Sie `/log/<ComponentFile>/<LogLevel>` an die URL an und drücken Sie `Enter`. Alle Protokollinformationen für die Komponentendatei auf der angegebenen Protokollebene werden in der Konsole ausgegeben.
 
-* To get logging information of all component files, append `/log/all/trace` in the URL, and press `Enter`.
+* Um Protokollinformationen zu allen Komponentendateien abzurufen, hängen Sie `/log/all/trace` an die URL an und drücken Sie `Enter`.
 
-* Log format: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
+* Protokollformat: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ In AEM Forms Workspace:
 
 * Die vom Benutzer festgelegte Protokollebene gilt nur für diese Browsersitzung. Wenn der Benutzer die Seite aktualisiert, wird die Protokollebene auf den anfänglichen Wert für alle Komponenten festgelegt.
 
-### Liste von Komponentendateien in AEM Forms Workspace {#list-of-component-files-in-nbsp-aem-forms-workspace}
+### Liste von Komponentendateien in AEM Forms Workspace  {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
 <table>
  <tbody>
@@ -139,10 +142,10 @@ In AEM Forms Workspace:
  </tbody>
 </table>
 
-### In AEM Forms Workspace verfügbare Protokollebenen {#log-levels-available-in-nbsp-aem-forms-workspace}
+### In AEM Forms Workspace verfügbare Protokollebenen  {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATAL
-* FEHLER
+* ERROR
 * WARN
 * INFO
 * DEBUG
@@ -153,11 +156,11 @@ In AEM Forms Workspace:
 
 Skripten und Stile können in verschiedenen Browsern debuggt werden.
 
-* **Debugging in IE**: Informationen zum Debugging von AEM Forms Workspace in IE finden Sie unter: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Debugging in IE**: Informationen zum Debugging von AEM Forms Workspace in IE finden Sie unter:  [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Debugging in Chrome**: Um den Debugger in Chrome zu öffnen, verwenden Sie den Tastaturbefehl: Strg+Umschalt+I. Weitere Informationen finden Sie unter: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Debugging in Chrome**: Um den Debugger in Chrome zu öffnen, verwenden Sie den Tastaturbefehl: Strg+Umschalt+I. Weitere Informationen finden Sie unter:  [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **Debugging in Firefox**: Zum Debugging von Skripten und Stilen in Firefox stehen mehrere Add-ons zur Verfügung. For example, Firebug is one such debugging utility ([https://getfirebug.com](https://getfirebug.com)).
+* **Debugging in Firefox**: Zum Debugging von Skripten und Stilen in Firefox stehen mehrere Add-ons zur Verfügung. Firebug ist beispielsweise ein solches Debugging-Dienstprogramm ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Häufig gestellte Fragen {#faqs}
 
