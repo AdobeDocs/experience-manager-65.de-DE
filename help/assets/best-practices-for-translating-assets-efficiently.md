@@ -44,7 +44,7 @@ Mittels gewisser Änderungen an Workflows und am Framework für die Übersetzung
 
 1. Aktivieren Sie den Workflow [!UICONTROL Letztes Änderungsdatum des Sets].
 
-   Mit dem Workflow [!UICONTROL DAM-Metadaten-Writeback] wird das Datum der letzten Änderung eines Assets konfiguriert. Because you disable this workflow in step 2, [!DNL Assets] is no longer able to keep the last modified date of assets up-to-date. Aktivieren Sie daher den Workflow *Letztes Änderungsdatum des Sets*, um sicherzustellen, dass die Datumsangaben für die letzten Asset-Änderungen aktuell sind. Assets mit veralteten Datumsangaben für letzte Änderungen können Fehler verursachen.
+   Mit dem Workflow [!UICONTROL DAM-Metadaten-Writeback] wird das Datum der letzten Änderung eines Assets konfiguriert. Da Sie diesen Workflow in Schritt 2 deaktivieren, kann [!DNL Assets] das Datum der letzten Änderung der Assets nicht mehr auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Letztes Änderungsdatum des Sets*, um sicherzustellen, dass die Datumsangaben für die letzten Asset-Änderungen aktuell sind. Assets mit veralteten Datumsangaben für letzte Änderungen können Fehler verursachen.
 
-1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md), damit Asset-Binärdateien nicht mehr übersetzt werden. Unselect the **[!UICONTROL Translate Assets]** option under the [!UICONTROL Assets] tab to stop the translation of Asset binaries.
-1. Translate asset metadata/tags using [Multilingual asset workflows](multilingual-assets.md).
+1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md), damit Asset-Binärdateien nicht mehr übersetzt werden. Deaktivieren Sie die Option **[!UICONTROL Assets übersetzen]** unter der Registerkarte [!UICONTROL Assets], um die Übersetzung von Asset-Binärdateien zu beenden.
+1. Übersetzen Sie Asset-Metadaten/Tags mit [Mehrsprachigen Workflows](multilingual-assets.md).
