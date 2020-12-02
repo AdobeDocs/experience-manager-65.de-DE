@@ -10,6 +10,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 100%
 
 ---
 
@@ -42,7 +45,7 @@ Wenn Sie ein eingeladener Benutzer sind und per E-Mail eine Registrierungsnachri
 1. Geben Sie Ihren Namen, Ihre Telefonnummer, Ihre Adresse, Ihre Firma und Ihr Kennwort in die entsprechenden Felder ein. Geben Sie dann Ihr Kennwort erneut in das Feld „Kennwort bestätigen“ ein. Das Kennwort kann eine beliebige Kombination aus acht Zeichen sein.
 1. Klicken Sie auf Speichern. Es wird eine Dankmeldung angezeigt, die Sie darauf hinweist, dass Sie in Ihrer E-Mail nun eine Nachricht zur Aktivierung des Kontos finden können. Sie müssen nun Ihr Konto aktivieren, um den Registrierungsprozess abzuschließen.
 
-## Konto für eingeladene Benutzer aktivieren {#activate-your-invited-user-account}
+## Konto für eingeladene Benutzer aktivieren  {#activate-your-invited-user-account}
 
 Nach der Registrierung erhalten Sie eine Aktivierungs-E-Mail von Document Security. Sie müssen Ihr Konto unter Verwendung der in der Nachricht angegebenen URL aktivieren. Dann können Sie sich bei Document Security anmelden, um richtliniengeschützte Dokumente zu verwenden, auf die Sie Zugriff haben. Abhängig von den Funktionen, welche der Administrator für externe Benutzer aktiviert, sind Sie eventuell auch berechtigt, Richtlinien zu erstellen und auf Dokumente anzuwenden sowie weitere externe Benutzer zu Ihren Richtlinien hinzuzufügen.
 
@@ -54,7 +57,7 @@ Ihr Konto bleibt aktiv, bis es der Administrator deaktiviert oder löscht.
 1. Geben Sie in das Feld „Benutzername“ die E-Mail-Adresse ein, mit der Sie sich bei Document Security registriert haben. Diese E-Mail-Adresse ist Ihr Standardbenutzername für Document Security.
 1. Geben Sie in das Feld Kennwort das Kennwort ein, das Sie bei der Registrierung festgelegt haben, und klicken Sie auf Anmelden.
 
-## Kennwort zurücksetzen {#reset-your-password}
+## Kennwort zurücksetzen  {#reset-your-password}
 
 Falls Sie Ihr Kennwort vergessen haben, kann es der Richtlinienadministrator für Sie zurücksetzen. Beim Zurücksetzen eines Kennworts wird eine E-Mail generiert, in der Sie zur Anmeldung mit einem temporären Kennwort eingeladen werden. Sie können dann ein neues Kennwort erstellen.
 
