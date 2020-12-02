@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -30,14 +30,14 @@ Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Applikatio
 * [Coral-UI-Handbuch](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 * [JavaScript-API-Referenz zum UI-Test-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
-* [JavaScript-API-Referenz zum Editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [JavaScript-API-Referenz zum Editor](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Referenzen:
 
 * [Komponentenzuordnung](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Seitenmodell-Manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Bearbeitbare React-Komponenten](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Angular bearbeitbare Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Bearbeitbare Angular-Komponenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 APIs für AEM-Bereitstellung und Content Management:
 
@@ -49,7 +49,7 @@ APIs für AEM-Bereitstellung und Content Management:
 
 * **Assets**: Die Asset-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für Assets, einschließlich Binärdateien, Metadaten, Ausgabeformaten und Kommentaren. Siehe [AEM Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
-* **Inhaltsfragmente**: [Inhaltsfragmente werden in Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) und [AEM Assets-API – Inhaltsfragmente](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html) unterstützt.
+* **Inhaltsfragmente**: [Inhaltsfragmente werden in Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) und [AEM Assets-API – Inhaltsfragmente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html) unterstützt.
 
 Die folgenden externen Ressourcen werden nur zu Referenzzwecken bereitgestellt:
 
