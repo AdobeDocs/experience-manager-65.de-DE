@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '2065'
+ht-degree: 80%
 
 ---
 
@@ -39,7 +42,7 @@ Die verfügbaren Standardkonfigurationen sind:
 
 * **Seiten-Editor (Dokumentensuche):**
 
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Dokumenten im Assets-Browser verfügbar sind (beim Bearbeiten einer Seite).
+   Diese Konfiguration definiert die Optionen, die beim Suchen nach Dokument im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Seiten-Editor (Bildsuche):**
 
@@ -63,9 +66,9 @@ Die verfügbaren Standardkonfigurationen sind:
 
 * **Seiten-Editor (Scene7-Suche)**:
 
-   Diese Konfiguration definiert die Optionen, die beim Suchen nach Scene7-Ressourcen im Asset-Browser verfügbar sind (beim Bearbeiten einer Seite).
+   Diese Konfiguration definiert die Optionen, die beim Suchen nach Scene7-Ressourcen im Assets-Browser verfügbar sind (beim Bearbeiten einer Seite).
 
-* **Sites-Admin-Suchschiene**:
+* **Sites-Admin-Suchleiste**:
 
    Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei Verwendung der Suchleiste der Site-Konsole zur Verfügung stehen.
 
@@ -73,7 +76,7 @@ Die verfügbaren Standardkonfigurationen sind:
 
    Diese Konfiguration definiert die Optionen, die beim Suchen nach Videos im Assets-Browser verfügbar sind (beim Bearbeiten einer Seite).
 
-* **Asset-Admin-Suchschiene:**
+* **Asset-Admin-Suchleiste:**
 
    Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei Verwendung der Assets-Konsole zur Verfügung stehen.
 
@@ -91,28 +94,28 @@ Die verfügbaren Standardkonfigurationen sind:
 
 * **Produkt-Admin-Suchschiene:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei der Suche nach kommerziellen Produkten zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer beim Durchsuchen von Commerce-Produkten zur Verfügung stehen.
 
-* **Projekt-Admin-Suchschiene:**
+* **Projekt-Admin-Suchleiste:**
 
    Diese Konfiguration definiert die Suchoptionen, die dem Benutzer beim Durchsuchen von Projekten zur Verfügung stehen.
 
 ## Prädikate und ihre Einstellungen {#predicates-and-their-settings}
 
-### Eigenschaften {#predicates}
+### Prädikate {#predicates}
 
 Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 
 <table>
  <tbody>
   <tr>
-   <th>Eigenschaft</th>
+   <th>Prädikat</th>
    <th>Zweck</th>
    <th>Einstellungen</th>
   </tr>
   <tr>
-   <td>Analytics </td>
-   <td>Such-/Filterfunktionen im Sites-Browser, wenn Analytics-basierte Daten angezeigt werden. Analysen-Suchfilter werden geladen, um die zugeordneten angepassten Analysespalten abzugleichen.</td>
+   <td>Analyse </td>
+   <td>Such-/Filterfunktionen im Sites-Browser, wenn analysebasierte Daten angezeigt werden. Analyse-Suchfilter werden geladen, um die zugeordneten angepassten Analysespalten abzugleichen.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -137,7 +140,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum </td>
+   <td>Datum            </td>
    <td>Slider-basierte Suche von Assets basierend auf einer Datumseigenschaft.</td>
    <td>
     <ul>
@@ -147,7 +150,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum Bereich </td>
+   <td>Datum            Bereich </td>
    <td>Suchen Sie Assets, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -182,7 +185,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Volltext </td>
-   <td>Sucheigenschaft für Volltextsuchen.</td>
+   <td>Suchprädikat für Volltextsuchen.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -192,7 +195,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendeter Filter</td>
+   <td>Ausgeblendet       Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -202,8 +205,8 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Optionen </td>
-   <td><p>Die Optionen sind vom Benutzer erstellte Inhaltsknoten.</p> <p>See <a href="#addinganoptionspredicate">Adding an Options Predicate</a> for more information.</p> </td>
+   <td>Optionen      </td>
+   <td><p>Die Optionen sind vom Benutzer erstellte Inhaltsknoten.</p> <p>Weitere Informationen finden Sie unter <a href="#addinganoptionspredicate">Hinzufügen eines Optionsprädikats</a>.</p> </td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -215,7 +218,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Options-Eigenschaft </td>
+   <td>Optionen      Eigenschaft </td>
    <td>Suchen Sie nach einer Eigenschaft der Option.</td>
    <td>
     <ul>
@@ -227,7 +230,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite Status </td>
+   <td>Seite       Status </td>
    <td>Suchseiten nach ihrem Status.</td>
    <td>
     <ul>
@@ -238,19 +241,19 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Pfad </td>
+   <td>Pfad           </td>
    <td>Suchen Sie Assets, die sich unter einem bestimmten Pfad befinden.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
-     <li>Suchpfad hinzufügen</li>
+     <li>hinzufügen Suchpfad</li>
      <li>Beschreibung</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Eigenschaft </td>
-   <td>Suchen Sie nach einer angegebenen Eigenschaft.</td>
-   <td>none</td>
+   <td>Suche nach einer angegebenen Eigenschaft.</td>
+   <td>keine</td>
   </tr>
   <tr>
    <td>Veröffentlichungsstatus </td>
@@ -264,7 +267,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Bereich </td>
-   <td>Suchen Sie Ressourcen, die innerhalb eines bestimmten Bereichs liegen. Im Suchbereich können Sie den Mindest- und den Höchstwert für den Bereich angeben.</td>
+   <td>Suche nach Ressourcen, die innerhalb eines bestimmten Bereichs liegen. Im Suchbereich können Sie den Mindest- und den Höchstwert für den Bereich angeben.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -273,7 +276,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Bereichsoptionen </td>
+   <td>Bereich Optionen      </td>
    <td>Eine bestimmte Suche sagt für Assets voraus und entspricht der allgemeinen Slider Predicate. Ist aufgrund von Problemen mit der Abwärtskompatibilität noch verfügbar.</td>
    <td>
     <ul>
@@ -296,7 +299,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Relatives Datum </td>
-   <td>Search assets based on the relative date of their creation<br /> </td>
+   <td>Suchen nach Assets anhand des relativen Datums ihrer Erstellung<br /> </td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -307,7 +310,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Reglerbereich </td>
-   <td>Eine allgemeine Suche sagt voraus, dass die Erweiterung des Bereichs mit der Schiebereglerfunktion vorhergesagt wird. Der Wert der gesuchten Eigenschaft muss zwischen den Grenzen des Reglers liegen.</td>
+   <td>Ein allgemeines Suchprädikat, das das Bereichprädikat mit der Reglerfunktion erweitert. Der Wert der gesuchten Eigenschaft muss zwischen den Grenzen des Reglers liegen.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -328,7 +331,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Tags </td>
-   <td>Suche anhand von Tags.</td>
+   <td>Suche basierend auf Tags.</td>
    <td>
     <ul>
      <li>Platzhalter</li>
@@ -341,7 +344,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 
 >[!NOTE]
 >
->* Die allgemeinen Suchvorausschätzungen werden wie folgt definiert:
+>* Die allgemeinen Suchprädikate sind hier definiert:
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
    >
    >
@@ -350,9 +353,10 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 * Suchvorhersagen, die sich nur auf SiteAdmin (klassische Benutzeroberfläche) beziehen, befinden sich unter:
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Diese werden nicht mehr unterstützt und stehen nur zur Abwärtskompatibilität zur Verfügung.
+
 >
 >
-This information is for reference only, you must not make changes to `/libs`.
+Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
 
 ### Prädikateinstellungen {#predicate-settings}
 
@@ -360,51 +364,53 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 * **Feldbezeichnung**
 
-   Die Beschriftung, die als reduzierbare Kopfzeile oder als Feldbeschriftung der Vorhersage angezeigt wird.
+   Die Bezeichnung, die als ausblendbare Kopfzeile oder als Feldbezeichnung des Prädikats angezeigt wird.
 
 * **Beschreibung**
 
-   Beschreibende Details für den Benutzer.
+   Beschreibende Informationen für die Benutzer.
 
 * **Platzhalter**
 
-   Leerer Text oder Platzhalter für die Vorhersage, falls kein Filtertext eingegeben wird.
+   Leerer Text oder der Platzhalter des Prädikats, der angezeigt wird, wenn kein Filtertext eingegeben wird.
 
 * **Eigenschaftsname**
 
-   Die Eigenschaft, nach der gesucht werden soll. It uses a relative path and the wildcards `*/*/*` specify the depth of the property relative to the `jcr:content` node (each asterisk represents one node level).
+   Die Eigenschaft, nach der gesucht werden soll. Sie nutzt einen relativen Pfad und die Platzhaltersymbole `*/*/*` geben die Tiefe der Eigenschaft in Relation zum `jcr:content`-Knoten an (jeder Asterisk steht für eine Knotenebene).
 
-   If you want to search only on a first level child node of the resource that has the `x` property on the `jcr:content` node use `*/jcr:content/x`
+   Wenn Sie nur nach dem untergeordneten Knoten der ersten Ebene der Ressource suchen möchten, die die Eigenschaft `x` auf dem Knoten `jcr:content` aufweist, nutzen Sie `*/jcr:content/x`.
 
 * **Eigenschaftstiefe**
 
-   Die maximale Tiefe, mit der nach dieser Eigenschaft in den Ressourcen gesucht wird. So können Sie eine Suche nach dieser Eigenschaft auf einer Ressource und rekursiven untergeordneten Elementen durchführen, bis die Ebene der untergeordneten Elemente der festgelegten Tiefe entspricht.
+   Die maximale Tiefe, die bei der Suche nach dieser Eigenschaft innerhalb der Ressourcen berücksichtigt werden soll. So können Sie eine Suche nach dieser Eigenschaft auf einer Ressource und rekursiven untergeordneten Elementen durchführen, bis die Ebene der untergeordneten Elemente der festgelegten Tiefe entspricht.
 
 * **Eigenschaftswert**
 
-   The property value as an absolute string or as an expression language; for example, `cq:Page` or
+   Der Eigenschaftswert als absolute Zeichenfolge oder als Ausdruckssprache, zum Beispiel `cq:Page` oder
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Bereichstext**
 
-   The label of the range field in the **Date Range** predicate.
+   Die Bezeichnung des Bereichsfelds im Prädikat **Datumsbereich**.
 
 * **Optionspfad**
 
-   Der Benutzer kann den Pfad mithilfe des Pfadbrowsers auf der Registerkarte &quot;Voreinstellung&quot;auswählen. Nach dem Auswählen können Sie mit dem Plussymbol (**+**) die Auswahl zur Liste der gültigen Optionen hinzufügen. (Entfernen lässt sich die Auswahl mit dem Minussymbol (**-**), falls erforderlich.)
+   Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach dem Auswählen können Sie mit dem Plussymbol (**+**) die Auswahl zur Liste der gültigen Optionen hinzufügen. (Entfernen lässt sich die Auswahl mit dem Minussymbol (**-**), falls erforderlich.)
 
-   Die Optionen sind vom Benutzer erstellte Inhaltsknoten mit der folgenden Struktur:
+   Die Optionen sind Inhaltsknoten, die von Benutzern erstellt werden, und weisen die folgende Struktur auf:
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Optionsknotenpfad** Praktisch dasselbe wie der **Optionspfad**, mit dem Unterschied, dass dieser Pfad sich im gemeinsamen Prädikatsfeld befindet, während der andere Pfad nur für Assets gilt.
+* **Options-Knotenpfad** 
+Identisch mit dem 
+**Optionspfad**, nur dass dieser sich im Feld „Allgemeine Vorhersage“ befindet, der andere ist spezifisch für Assets.
 
 * **Einzelauswahl** Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine Einzelauswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
 
 * **Veröffentlichungs- und Live Copy-Eigenschaftsname(n)** Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
 
-* The &amp;ast; on the field labels in the **Settings** tab means the fields are required and if left blank an error message will appear
+* &amp;ast; auf der Registerkarte &quot;**Einstellungen**&quot;die Feldbeschriftungen angezeigt werden, bedeutet dies, dass die Felder erforderlich sind und bei leerem Feld eine Fehlermeldung angezeigt wird
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -438,12 +444,12 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
    * Sie fügen ein neues Feld hinzu:
 
-      Nach dem Hinzufügen der Vorhersage wird die Registerkarte **Einstellungen** geöffnet und zeigt die Eigenschaften an, die definiert werden können.
+      Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
 
-   * Sie möchten eine vorhandene Vorhersage aktualisieren:
+   * Sie aktualisieren ein vorhandenes Prädikat:
 
-      Wählen Sie das Feld &quot;Vorhersage&quot;(rechts) und öffnen Sie dann die Registerkarte &quot; **Einstellungen** &quot;.
-   Beispiel: die Einstellungen für das **Datumsbereichprädikat**:
+      Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie dann die Registerkarte **Einstellungen**.
+   Beispiel: die Einstellungen für das **Datumsbereichsprädikat**:
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
@@ -461,7 +467,7 @@ Sie können Felder hinzufügen oder bearbeiten und ihre Einstellungen definieren
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
-### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
+### Löschen eines Prädikatfelds       {#deleting-a-predicate-field}
 
 1. [Öffnen Sie die angepasste Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
 1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
@@ -486,9 +492,9 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, die wieder in der Konsole angezeigt wird.)
+1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
-### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
+### Hinzufügen von Optionsprädikaten        {#adding-options-predicates}
 
 Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
@@ -500,24 +506,25 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 
-   * `jcr:title` – die Feldbezeichnung, die in der Suchschiene angezeigt werden soll
+   * `jcr:title` – die Feldbezeichnung, die in der Suchleiste angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
+
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
-   >You ***must*** not change anything in the `/libs` path.
+   >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
    >
-   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
    >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
-   >1. Recreate the required item, as it exists in `/libs`, under `/apps`. In diesem Fall im folgenden Verzeichnis:
+   >1. Aktivieren Sie das benötigte Element erneut so, wie es in `/libs` unter `/apps` vorhanden ist. In diesem Fall im folgenden Verzeichnis:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Make any changes within `/apps.`
+   >1. Nehmen Sie die gewünschten Änderungen in `/apps.` vor.
 
 
-1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**.
+1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchleiste**.
 
    Klicken/tippen Sie anschließend auf das Symbol **Suchformulare bearbeiten**.
 
@@ -526,13 +533,13 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    * **Eigenschaftsname**
 
-      Spezifizieren Sie die Knoteneigenschaft, nach der auf den Zielknoten gesucht werden soll. Beispiel:
+      Geben Sie die Knoteneigenschaft an, nach der auf den Zielknoten gesucht werden soll. Beispiel:
 
       `jcr:content/cq:template`
 
    * **Optionsknotenpfad**
 
-      Wählen Sie den Pfad, zu dem Ihre Optionen gehalten werden. Beispiel:
+      Wählen Sie den Pfad des Speicherorts der Optionen aus. Beispiel:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![chlimage_1-380](assets/chlimage_1-380.png)
@@ -542,7 +549,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-## Anwenderberechtigungen {#user-permissions}
+## Benutzerberechtigungen {#user-permissions}
 
 In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benötigen, um Suchformulare zu bearbeiten, zu löschen und Vorschauen anzuzeigen.
 
@@ -554,15 +561,15 @@ In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benö
   </tr>
   <tr>
    <td>Bearbeiten </td>
-   <td>Lesen, Schreibberechtigungen für den <code>/apps </code>Knoten.</td>
+   <td>Lese- und Schreibberechtigungen für den Knoten <code>/apps </code>.</td>
   </tr>
   <tr>
    <td>Löschen</td>
-   <td>Read, Write, Delete permissions on the <code>/apps</code> node</td>
+   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/apps</code>.</td>
   </tr>
   <tr>
    <td>Vorschau</td>
-   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Lesen, Schreibberechtigungen für den <code>/apps</code> Knoten.</td>
+   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code>.<br />Lese- und Schreibberechtigungen für den Knoten <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>
