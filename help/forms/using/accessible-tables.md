@@ -34,7 +34,7 @@ Um das neue Format in HTML5-Forms zu verwenden, markieren Sie die Tabelle als ko
  </extras>
 ```
 
-The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  Um einen Zeilenabschnitt zu erstellen, wählen Sie mehrere Zellen einer Tabelle in derselben Spalte, klicken Sie mit der rechten Maustaste auf die Auswahl und klicken Sie dann auf **[!UICONTROL Zellen verbinden]**.
+Die Tabellen, die als *complexTable* markiert sind, folgen der nativen HTML-Darstellung und bieten eine bessere Barrierefreiheit für bestimmte Bildschirmlesehilfen.  Um einen Zeilenabschnitt zu erstellen, wählen Sie mehrere Zellen einer Tabelle in derselben Spalte, klicken Sie mit der rechten Maustaste auf die Auswahl und klicken Sie dann auf **[!UICONTROL Zellen verbinden]**.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Um eine Zeile als Zeilenkopf zu markieren, wählen Sie alle Zellen in der Zeile,
 
 Um eine Zelle als Spaltenkopf zu markieren, wählen Sie eine beliebige Zelle in der Spalte, klicken Sie mit der rechten Maustaste auf die Auswahl und klicken Sie dann auf **[!UICONTROL Kopf markieren]**.
 
-Limitations in new *AccessibleTable* format:
+Einschränkungen im neuen *AccessibleTable*-Format:
 
 * Fehlende Unterstützung für vergrößerungsfähige Felder, wenn Zeilenabschnitt in der Tabelle verwendet wird
 * Keine Unterstützung für verschachtelte Tabellen (Tabellen in Tabellenzellen)
