@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 62%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 Für die Entwicklung Ihrer JCR-, Apache Sling- oder AEM-Anwendungen stehen die folgenden Toolsets zur Verfügung:
 
-* one set consisting of [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) and WebDAV. CRXDE Lite ist in CRX/AEM integriert und ermöglicht es Ihnen, gängige Entwicklungstätigkeiten im Browser vorzunehmen. Mit CRXDE Lite können Sie Dateien (etwa JSP- und JAVA-Dateien), Ordner, Vorlagen, Komponenten, Dialoge, Knoten, Eigenschaften und Pakete erstellen und bearbeiten, während eine Protokollierung und Integration mit SVN erfolgt.
+* ein Satz, der aus [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) und WebDAV besteht. CRXDE Lite ist in CRX/AEM integriert und ermöglicht es Ihnen, gängige Entwicklungstätigkeiten im Browser vorzunehmen. Mit CRXDE Lite können Sie Dateien (etwa JSP- und JAVA-Dateien), Ordner, Vorlagen, Komponenten, Dialoge, Knoten, Eigenschaften und Pakete erstellen und bearbeiten, während eine Protokollierung und Integration mit SVN erfolgt.
 
-   CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den CRX/AEM-Server haben, wenn Sie eine Anwendung entwickeln, indem Sie die vordefinierten Komponenten und Java-Pakete erweitern oder ändern oder wenn Sie keinen dedizierten Debugger, Codeausführung und Syntaxhervorhebung benötigen.
+   CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den CRX/AEM-Server haben, wenn Sie eine Anwendung entwickeln, indem Sie die vordefinierten Komponenten und Java-Pakete erweitern oder ändern, oder wenn Sie keinen dedizierten Debugger, Codeausführung und Syntaxhervorhebung benötigen.
 
-* one set consisting of an Integrated Development Environment (for example: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) or [IntelliJ](/help/sites-developing/ht-intellij.md)), a build tool (for example: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault which has been developed by Adobe to map a repository to a file system, a version control system (for example: Subversion), a bug tracker system (for example: Jira), a central dependency management system (for example: Apache Archiva) and a build automation system (for example: Apache Continuum).
+* ein Satz aus einer integrierten Umgebung für Entwicklung (z. B.: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) oder [IntelliJ](/help/sites-developing/ht-intellij.md)), ein Buildtool (z. B.: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault, das von Adobe entwickelt wurde, um ein Repository einem Dateisystem zuzuordnen, einem Versionsverwaltungssystem (z. B.: Subversion), ein Fehlerverfolgungssystem (z. B. Jira), ein zentrales Abhängigkeitsmanagementsystem (z. B. Apache Archiva) und ein Automatisierungssystem zum Erstellen von Inhalten (z. B. Apache Continuum).
 
    Diese Ausstattung ermöglicht Ihnen, Ihre Anwendung (Inhalte, Code, Konfiguration) vollständig in beliebige Entwicklungsumgebungen und -prozesse zu integrieren. Die Verbindung zwischen den verschiedenen Elementen ist die Dateisystemdarstellung des Repositorys durch FileVault, da alle genannten Entwicklungstools mit Dateien umgehen können.
 
@@ -57,6 +60,6 @@ Tools, die die Erstellung neuer Projekte erleichtern:
 
 >[!NOTE]
 >
->Folgende Übung könnte für den Start eines neuen AEM-Projekts von Interesse sein:
->[Erste Schritte mit AEM-Sites Teil 1 - Projekteinrichtung](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>Folgende Übung könnte für die Einleitung eines neuen AEM von Interesse sein:
+>[Erste Schritte mit AEM Sites Teil 1 - Projekteinrichtung](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
 
