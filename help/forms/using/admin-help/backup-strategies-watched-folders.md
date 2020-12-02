@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +30,7 @@ In diesem Abschnitt werden überwachte Ordner unter dem Aspekt der Sicherung und
 * Failure
 * Preserve
 
-Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingabeordner ab. Im Rahmen des Dienstvorgangs wird die Datei dann zur Verarbeitung in den Ordner „Stage“ verschoben. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei im Ordner „Output“ gespeichert. Erfolgreich verarbeitete Quelldateien werden in den Ordner „Preserve“, nicht verarbeitete Dateien in den Ordner „Failure“ verschoben. When the `Preserve On Failure` attribute for the watched folder is enabled, failed processed source files are moved to the preserve folder. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
+Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingabeordner ab. Im Rahmen des Dienstvorgangs wird die Datei dann zur Verarbeitung in den Ordner „Stage“ verschoben. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei im Ordner „Output“ gespeichert. Erfolgreich verarbeitete Quelldateien werden in den Ordner „Preserve“, nicht verarbeitete Dateien in den Ordner „Failure“ verschoben. Wenn das Attribut `Preserve On Failure` für den überwachten Ordner aktiviert ist, werden nicht verarbeitete Quelldateien in den Ordner &quot;Preserve&quot;verschoben. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
 
 Überwachte Ordner können durch Sichern des Dateisystems gesichert werden.
 
@@ -37,7 +40,7 @@ Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingab
 
 ## Funktionsweise überwachter Ordner {#how-watched-folders-work}
 
-In diesem Abschnitt wird der Dateiverarbeitungsprozess für überwachte Ordner beschrieben. Sie müssen mit diesem Prozess vertraut sein, bevor Sie einen Wiederherstellungsplan entwickeln. In this example, the `Preserve On Failure` attribute for the watched folder is enabled. Die Dateien werden in der Reihenfolge ihres Eingangs verarbeitet.
+In diesem Abschnitt wird der Dateiverarbeitungsprozess für überwachte Ordner beschrieben. Sie müssen mit diesem Prozess vertraut sein, bevor Sie einen Wiederherstellungsplan entwickeln. In diesem Beispiel ist das `Preserve On Failure`-Attribut für den überwachten Ordner aktiviert. Die Dateien werden in der Reihenfolge ihres Eingangs verarbeitet.
 
 In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (Datei1, Datei2, Datei3, Datei4, Datei5) im gesamten Prozess beschrieben. In der Tabelle werden auf der X-Achse die Zeit (z. B. Zeit 1 oder Z1) und auf der Y-Achse die Ordner in der Hierarchie öffentlicher Ordner abgebildet, z. B. „Eingabe“.
 
@@ -86,7 +89,7 @@ In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (D
    <td><p>Datei1_out, Datei2_out, Datei4_out</p></td>
   </tr>
   <tr>
-   <td><p>Failure</p></td>
+   <td><p>Fehler</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>
@@ -128,7 +131,7 @@ Der folgende Text beschreibt die Dateiverarbeitung am jeweiligen Zeitpunkt:
 
 Es wird empfohlen, das gesamte Überwachter Ordner-Dateisystem in einem anderen Dateisystem zu sichern.
 
-## Überwachte Ordner wiederherstellen {#restoring-watched-folders}
+## Überwachte Ordner wiederherstellen  {#restoring-watched-folders}
 
 In diesem Kapitel wird die Wiederherstellung überwachter Ordner beschrieben. Überwachte Ordner rufen häufig kurzfristige Prozesse auf, die binnen einer Minute abgeschlossen sind. In diesen Fällen werden Datenverluste nicht verhindert, wenn der überwachte Ordner mittels einer stündlich erstellten Sicherung wiederhergestellt wird.
 
@@ -146,14 +149,14 @@ Wenn eine spätere Sicherung erfolgte, können Sie die Dateien wiederherstellen.
 
 **Preserve:** Dateien in diesem Ordner werden nicht verarbeitet.
 
-## Strategien zur Minimierung von Datenverlusten {#strategies-to-minimize-data-loss}
+## Strategien zur Minimierung von Datenverlusten  {#strategies-to-minimize-data-loss}
 
 Über die folgenden Vorgehensweisen kann der Datenverlust bei Ein- und Ausgabeordnern bei der Wiederherstellung eines überwachten Ordners minimiert werden:
 
 * Sichern Sie Ein- und Ausgabeordner regelmäßig, z. B. stündlich, um den Verlust von Ergebnis- und Fehlerdateien zu vermeiden.
 * Sichern Sie die Eingabedateien in einem anderen Ordner als dem überwachten Ordner. Dies gewährleistet die Verfügbarkeit der Dateien nach der Wiederherstellung, sollten Sie die Dateien weder im Ordner „Output“ noch im Ordner „Failure“ finden. Vergewissern Sie sich, dass das Dateibenennungsschema einheitlich ist.
 
-   For example, if you are saving the output with `%F.`*extension *, the output file will have the same name as the input file. Auf diese Weise können Sie leichter bestimmen, welche Eingabedateien verarbeitet wurden und welche erneut zur Verarbeitung übergeben werden müssen. Wenn im Ordner „Result“ nur die Datei Datei1_out angezeigt wird, aber weder Datei2_out noch Datei3_out noch Datei4_out, bedeutet dies, dass die Dateien Datei2, Datei3 und Datei4 erneut zur Verarbeitung übergeben werden müssen.
+   Wenn Sie beispielsweise die Ausgabe mit `%F.`*extension* speichern, hat die Ausgabedatei denselben Namen wie die Eingabedatei. Auf diese Weise können Sie leichter bestimmen, welche Eingabedateien verarbeitet wurden und welche erneut zur Verarbeitung übergeben werden müssen. Wenn im Ordner „Result“ nur die Datei Datei1_out angezeigt wird, aber weder Datei2_out noch Datei3_out noch Datei4_out, bedeutet dies, dass die Dateien Datei2, Datei3 und Datei4 erneut zur Verarbeitung übergeben werden müssen.
 
 * Ist die verfügbare Sicherung des überwachten Ordners älter als der Zeitraum, der zur Verarbeitung des Auftrags erforderlich ist, ist es besser, das System automatisch einen neuen überwachten Ordner erstellen zu lassen und dann die Dateien im Ordner „Input“ abzulegen.
 * Wenn die letzte verfügbare Sicherung nicht neu genug ist, die Sicherungsdauer kürzer als die für die Verarbeitung der Dateien benötigte Zeit ist und der überwachte Ordner wiederhergestellt wurde, wurde die Datei in einer folgenden Phasen verarbeitet:
@@ -163,6 +166,7 @@ Wenn eine spätere Sicherung erfolgte, können Sie die Dateien wiederherstellen.
    * **Phase 3:** Kopiert in den Ordner „Stage“, und der Prozess wurde aufgerufen
    * **Phase 4:** Verarbeitung ist im Gang
    * **Phase 5:** Ergebnisse wurden zurückgegeben.
+
    Sind Dateien in Phase 1, werden sie verarbeitet. Sind Dateien in Phase 2 oder 3, legen Sie sie im Eingabeordner ab, damit die Verarbeitung erneut erfolgt.
 
    >[!NOTE]
