@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Schnellere Beginn zur Sicherungs- und Wiederherstellungs-Dienst-API {#backup-and-restore-service-apiquick-starts}
+# Schnellere Beginn {#backup-and-restore-service-apiquick-starts} für die Sicherungs- und Wiederherstellungs-Dienst-API
 
 Java API Quick Beginn (SOAP) sind für die Sicherungs- und Wiederherstellungs-Dienst-API verfügbar.
 
@@ -146,9 +146,9 @@ Das folgende Java-Codebeispiel tritt zwei Stunden lang mit einer eindeutigen Bes
  
 ```
 
-## Quick Beginn (SOAP-Modus): Sicherungsmodus mithilfe der Java-API deaktivieren {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Sicherungsmodus mithilfe der Java-API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api} verlassen
 
-Im folgenden Java-Codebeispiel wird ein Forms-Server explizit dazu veranlasst, den Sicherungsmodus zu beenden und zu den Bereinigungsdateien aus der Datenspeicherung des globalen Dokuments zurückzukehren. (Siehe Sicherungsmodus [auf dem Formularserver](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)verlassen.)
+Im folgenden Java-Codebeispiel wird ein Forms-Server explizit dazu veranlasst, den Sicherungsmodus zu beenden und zu den Bereinigungsdateien aus der Datenspeicherung des globalen Dokuments zurückzukehren. (Siehe [Sicherungsmodus auf dem Formularserver](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server) verlassen.)
 
 ```java
  /*
