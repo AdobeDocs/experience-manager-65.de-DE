@@ -11,9 +11,9 @@ ht-degree: 70%
 ---
 
 
-# Use page tracker and embed code in web pages {#using-page-tracker-and-embed-code-in-web-pages}
+# Verwenden von Seiten-Tracker und Einbettungscode in Webseiten {#using-page-tracker-and-embed-code-in-web-pages}
 
-Page Tracker is a piece of JavaScript code that you include in third-party websites&#39; code to enable Adobe Analytics to capture usage data around [!DNL Adobe Experience Manager Assets] on these websites.
+Page Tracker ist ein JavaScript-Code, den Sie in den Code von Drittanbieter-Websites aufnehmen, damit Adobe Analytics Nutzungsdaten rund um [!DNL Adobe Experience Manager Assets] auf diesen Websites erfassen kann.
 
 Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungscode in den Code der Websites von Drittanbietern ein.
 
@@ -59,7 +59,7 @@ Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sow
 </html>
 ```
 
-## Add page tracker code {#adding-page-tracker-code}
+## hinzufügen Seiten-Tracker-Code {#adding-page-tracker-code}
 
 Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
 
@@ -79,7 +79,7 @@ Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. 
  </head>
 ```
 
-## Einbettungscode Hinzufügen {#add-embed-code}
+## hinzufügen Einbettungscode {#add-embed-code}
 
 Sie können Einbettungs-Code im Hauptteil des Website-Codes hinzufügen. Das folgende Code-Beispiel zeigt den Einbettungs-Code, der in einer Web-Seite enthalten ist:
 
