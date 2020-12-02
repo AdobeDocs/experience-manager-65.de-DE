@@ -12,6 +12,9 @@ discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 94%
 
 ---
 
@@ -47,7 +50,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. Klicken Sie im Absatzsystem (**Design von par**) auf **Bearbeiten**.
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -71,7 +74,7 @@ Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigu
 
 1. Sie können das Design von Komponenten konfigurieren.
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   Wenn Sie beispielsweise auf **Bearbeiten** in der Image-Komponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
