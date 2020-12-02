@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 75%
 
 ---
 
@@ -35,7 +38,7 @@ Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
 
 1. Wählen Sie das adaptive Formular aus. Der Auswahlprozess unterscheidet sich je nach Ansicht.
 
-   If you are in card view, go to selection mode by clicking the selection ![aem6forms_check-circle](assets/aem6forms_check-circle.png) icon and click all the adaptive forms that you want to copy.
+   Wenn Sie sich in der Ansicht befinden, wechseln Sie zum Auswahlmodus, indem Sie auf das Symbol ![aem6forms_check-circle](assets/aem6forms_check-circle.png) klicken und dann auf alle adaptiven Formulare klicken, die Sie kopieren möchten.
 
    Wenn Sie sich in der Listenansicht befinden, aktivieren Sie die Kontrollkästchen der gewünschten adaptiven Formulare, um sie auszuwählen.
 
@@ -43,15 +46,15 @@ Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
    >
    >Alle ausgewählten Assets müssen adaptive Formulare sein, da die Kopieren/Einfügen-Funktion nur bei adaptiven Formularen unterstützt wird. Außerdem müssen sich alle ausgewählten Elemente in demselben Ordner befinden.
 
-   After selecting the assets, click the copy ![aem6forms_copy](assets/aem6forms_copy.png) icon present in the toolbar to copy the selected adaptive form.
+   Klicken Sie nach Auswahl der Assets auf das Symbol ![aem6forms_copy](assets/aem6forms_copy.png) in der Symbolleiste, um das ausgewählte adaptive Formular zu kopieren.
 
 ### Einfügen adaptiver Formulare {#paste-an-adaptive-form}
 
-Clicking the copy action automatically exits the selection mode and makes the paste ![aem6forms_paste](assets/aem6forms_paste.png) icon visible. Now go to the desired folder path and click the paste ![aem6forms_paste](assets/aem6forms_paste.png) icon to paste the copied adaptive form.
+Durch Klicken auf die Kopieraktion wird der Auswahlmodus automatisch beendet und das Symbol ![aem6forms_paste](assets/aem6forms_paste.png) wird angezeigt. Wechseln Sie nun zum gewünschten Ordnerpfad und klicken Sie auf das Symbol ![aem6forms_paste](assets/aem6forms_paste.png) einfügen, um das kopierte adaptive Formular einzufügen.
 
 Wenn Sie in denselben Ordner einfügen oder sich im Zielordner eine weitere Datei mit demselben Knotennamen (mit dem sie im CRX-Repository gespeichert ist) befindet, wird am Suffix „1“ angehängt (zum Beispiel wird „myaf“ zu „myaf1“ und wenn sich „myaf1“ in demselben Speicherort befindet, wird „myaf“ zu „myaf2“). Alle anderen Eigenschaften bleiben genauso wie beim ursprünglichen adaptiven Formular.
 
-Nach dem Klicken auf das Symbol ![aem6forms_paste](assets/aem6forms_paste.png) wird es wieder ausgeblendet. Sie können jeweils nur einmal einfügen. Wenn Sie von demselben Asset erneut eine Kopie erstellen möchten, kopieren Sie es erneut.
+Nach dem Klicken auf das Symbol ![aem6forms_paste](assets/aem6forms_paste.png) einfügen wird es wieder ausgeblendet. Sie können jeweils nur einmal einfügen. Wenn Sie von demselben Asset erneut eine Kopie erstellen möchten, kopieren Sie es erneut.
 
 ### Ändern der Inhalte eines neuen adaptiven Formulars {#change-contents-of-new-adaptive-form}
 
@@ -59,9 +62,9 @@ Wenn Sie eingefügte adaptive Formulare anders als das kopierte Formular gestalt
 
 1. **Ändern der Metadateneigenschaften:**
 
-   Sie können die Metadateneigenschaften des adaptiven Formulars ändern, z. B. Titel und Beschreibung. For more details about metadata properties and how they can be changed, see [Managing Form Metadata](/help/forms/using/manage-form-metadata.md)
+   Sie können die Metadateneigenschaften des adaptiven Formulars ändern, z. B. Titel und Beschreibung. Weitere Informationen zu Metadateneigenschaften und dazu, wie sie geändert werden können, finden Sie unter [Verwalten von Formularmetadaten](/help/forms/using/manage-form-metadata.md)
 
-1. **XFA/XSD für XFA/XSD-basierte adaptive Formulare ändern:**
+1. **XFA/XSD für XFA/XSD-basiertes adaptives Forms ändern:**
 
    Sie können die in adaptiven Formularen verwendete XFA/XSD ändern. Informationen zum Ändern dieser adaptiven Formulare finden Sie unter [Verwalten von Formularmetadaten](/help/forms/using/manage-form-metadata.md).
 
