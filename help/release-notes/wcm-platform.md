@@ -1,6 +1,6 @@
 ---
 title: AEM Foundation und Repository
-description: Versionshinweise für die Adobe Experience Manager-Plattform und das Repository.
+description: Versionshinweise für Adobe Experience Manager-Plattform und -Repository.
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 55%
 
 # AEM Foundation und Repository {#aem-foundation-repository}
 
-## Liste der Änderungen      {#list-of-changes}
+## Liste der Änderungen {#list-of-changes}
 
 ### Repository {#repository}
 
@@ -35,7 +35,7 @@ ht-degree: 55%
 
 ### Projekte und Workflows {#projects-and-workflows}
 
-* New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced `OR` and `AND` splits.
+* Der neue Workflow-Modell-Editor, der in 6.4 eingeführt wurde, wurde verbessert und umfasst jetzt weitere Vorgänge wie Kopieren und Veröffentlichen, Variablenunterstützung in Workflow-Schritten und erweiterte `OR`- und `AND`-Aufteilungen.
 
 ### Suche {#searching}
 
@@ -54,18 +54,18 @@ Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundl
 * In Spaltenansichten werden nun auch nur noch die Einträge geladen, die auf dem Bildschirm sichtbar sind. Weitere Einträge werden lediglich geladen, wenn der Anwender einen Bildlauf durchführt. In der Listen- und Kartenansicht wurde so bereits seit Version 6.0 verfahren (verbessert in Version 6.4)..
 * Spalten-Ansichten enthalten jetzt den Workflow-Status für Seiten/Assets, sofern zutreffend.
 * Mit der Aktion &quot;Alles auswählen&quot;können Sie schnell eine Aktion mit allen Seiten/Assets im selben Ordner ausführen.
-* Mit der Aktion Alle auswählen wird versucht, die Aktion für alle Seiten/Assets durchzuführen, nicht nur für die geladenen Elemente. Wenn die Aktion nicht aktualisiert wurde, um Massenaktionen zu verarbeiten, wird eine Warnung angezeigt.
+* Mit der Aktion Alle auswählen wird versucht, die Aktion für alle Seiten/Assets durchzuführen, nicht nur für die geladenen Elemente. Wenn die Aktion nicht aktualisiert wird, um Massenaktionen zu verarbeiten, wird eine Warnung angezeigt.
 
 >[!CAUTION]
 >
->Die klassische Benutzeroberfläche wird durch Adobe nicht weiter verbessert. Experience Manager 6.5 enthält die klassische Benutzeroberfläche für Abwärtskompatibilität. Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+>Die klassische Benutzeroberfläche wird durch Adobe nicht weiter verbessert. Experience Manager 6.5 enthält die klassische Benutzeroberfläche für Abwärtskompatibilität. Die klassische Benutzeroberfläche wird weiterhin vollständig unterstützt, während [Lesen Sie mehr](/help/sites-deploying/ui-recommendations.md).
 
 ### Aktualisierung {#upgrade}
 
 * Das Aktualisierungsverfahren bleibt in 6.5 größtenteils unverändert.
 * Wir unterstützen weiterhin die in 6.4 eingeführten Funktionen „Abwärtskompatibilität“, „Bewertung der Aktualisierungskomplexität“ und „Nachhaltige Aktualisierungen“. Für diese Bereiche wurden nach Bedarf versionsspezifische Aktualisierungen durchgeführt.
 * Das Pattern Detector-Paket wurde vereinfacht und es gibt ein Paket, das Aktualisierungen auf 6.5 für die verfügbaren Quellversionen bewertet.
-* Weitere Informationen zum Aktualisierungsverfahren finden Sie in der [Aktualisierungsdokumentation](/help/sites-deploying/upgrade.md).
+* Weitere Informationen zum Aktualisierungsverfahren finden Sie in der [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md).
 
 ### Webserver {#web-server}
 
