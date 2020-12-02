@@ -30,17 +30,17 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 1. Öffnen Sie Ihr Projekt.
 
-   * For iOS, open `Capture.xcodeproj` in Xcode
+   * Für iOS öffnen Sie `Capture.xcodeproj` in Xcode
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * For Windows, open `MWSWindows.sln` in Visual Studio.
+   * Öffnen Sie unter Windows `MWSWindows.sln` in Visual Studio.
 
 1. Navigieren Sie zum Ordner „templates“.
 
-   * In Xcode, navigate to the **Capture > www > wsmobile > js > runtime > templates** folder.
-   * In Eclipse, navigate to the **assets > www > wsmobile > js > runtime > templates** folder.
-   * In Visual Studio, navigate to the **MWSWindows > www > wsmobile > js > runtime > templates** folder.
+   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > templates**.
+   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > templates**.
+   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > templates**.
 
-1. Open the `template.html` file for editing.
+1. Öffnen Sie die Datei `template.html` zur Bearbeitung.
 1. Suchen Sie die folgende Zeichenfolge:
 
    ```jsp
@@ -75,13 +75,13 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 1. Navigieren Sie zum Ordner „css“.
 
-   * In Xcode, navigate to **Capture > www > wsmobile > css**.
-   * In Eclipse, navigate to **assets > www > wsmobile > css**.
-   * In Visual Studio, navigate to **MWSWindows > www > wsmobile > css**.
+   * In Xcode navigieren Sie zu **Capture > www > wsmobile > css**.
+   * Navigieren Sie in Eclipse zu **assets > www > wsmobile > css**.
+   * Navigieren Sie in Visual Studio zu **MWSWindows > www > wsmobile > css**.
 
-1. Open the `_style.css` file for editing.
-1. For Background image, change `#323232` to `#fff`.
-1. Save the changes and close `_style.css` file.
+1. Öffnen Sie die Datei `_style.css` zur Bearbeitung.
+1. Ändern Sie für das Hintergrundbild `#323232` in `#fff`.
+1. Speichern Sie die Änderungen und schließen Sie die Datei `_style.css`.
 1. Öffnen Sie die AEM Forms-App.
 
    Die AEM Forms-App zeigt jetzt Anweisungen anstelle einer Beschreibung an.
