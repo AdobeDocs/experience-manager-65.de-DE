@@ -34,7 +34,7 @@ ht-degree: 94%
 >
 Die aktuelle Implementierung der AEM Assets-HTTP-API ist REST.
 
-The Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) allows developers to access content (stored in AEM) directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete).
+Die Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) ermöglicht es Entwicklern, über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen) direkt auf AEM Inhalte zuzugreifen.
 
 Die API ermöglicht es Ihnen, AEM als Headless-CMS (Content Management System) auszuführen, indem Sie einer Javascript-Frontend-Applikation Content Services bereitstellen. Oder jeder anderen Applikation, die HTTP-Anforderungen ausführen und JSON-Antworten verarbeiten kann.
 
@@ -98,8 +98,8 @@ Dies bedeutet, dass die folgenden (`write`)-Anfragen nicht in einer einzelnen Tr
   </tr>
   <tr>
    <td>Zugriff</td>
-   <td><p>Direkter Zugriff möglich.</p> <p>Verwendet den Endpunkt <code>/api/assets </code> und ist <code>/content/dam</code> zugeordnet (im Repository).</p> <p>For example, to access:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>Direkter Zugriff möglich.</p> <p>Verwendet den Endpunkt <code>/api/assets </code> und ist <code>/content/dam</code> zugeordnet (im Repository).</p> <p>So greifen Sie beispielsweise auf Folgendes zu:<code class="code">
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /><br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
    <td><p>Muss über eine AEM-Komponente auf einer AEM-Seite referenziert werden.</p> <p>Verwendet den Selektor <code>.model</code>, um die JSON-Darstellung zu erstellen.</p> <p>Eine Beispiel-URL würde wie folgt aussehen:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
   </tr>
   <tr>
@@ -212,7 +212,7 @@ Inhaltsfragmente:
 
 * Gelten auch als atomisch, d. h. die Elemente und Varianten werden als Teil der Eigenschaften des Fragments anstatt als Links oder untergeordnete Entitäten bereitgestellt. Dies ermöglicht einen effiziente Zugriff auf die Nutzlast eines Fragments.
 
-#### Inhaltsmodelle und Inhaltsfragmente           {#content-models-and-content-fragments}
+#### Inhaltsmodelle und Inhaltsfragmente            {#content-models-and-content-fragments}
 
 Derzeit werden die Modelle, die die Struktur eines Inhaltsfragments definieren, nicht über eine HTTP-API bereitgestellt. Daher benötigt der *Benutzer* (zumindest einige) Informationen über das Modell eines Fragments. Die meisten Informationen kann er jedoch aus der Nutzlast ableiten. So sind z. B. Datentypen Teil der Definition.
 
@@ -273,7 +273,7 @@ Nutzung erfolgt über
 
 Der Hauptteil muss eine JSON-Darstellung davon enthalten, was für das angegebene Inhaltsfragment aktualisiert werden soll.
 
-Dies kann einfach der Titel oder die Beschreibung eines Inhaltsfragments bzw. ein einzelnes Element oder alle Elementwerte und/oder Metadaten sein. It is also mandatory to provide a valid `cq:model` property for updates.
+Dies kann einfach der Titel oder die Beschreibung eines Inhaltsfragments bzw. ein einzelnes Element oder alle Elementwerte und/oder Metadaten sein. Es ist auch obligatorisch, eine gültige `cq:model`-Eigenschaft für Aktualisierungen bereitzustellen.
 
 ### Löschen {#delete}
 
@@ -363,11 +363,11 @@ Unter den entsprechenden Voraussetzungen werden möglicherweise die folgenden St
    }
    ```
 
-## API-Referenz           {#api-reference}
+## API-Referenz            {#api-reference}
 
 Hier finden Sie detaillierte API-Referenzen:
 
-* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
    * [Verfügbare Funktionen](/help/assets/mac-api-assets.md#assets)
