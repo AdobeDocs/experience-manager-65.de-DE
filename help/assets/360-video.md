@@ -109,7 +109,7 @@ Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](https://helpx.adobe.com/e
 
    Tippen Sie auf das 360-Grad-Videoasset, um die Videovorschau anzuzeigen.
 
-1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **[!UICONTROL Viewers.]**
+1. Tippen Sie auf der Seite &quot;Vorschau&quot;links oben auf die Dropdown-Liste und wählen Sie **[!UICONTROL Viewer.]**
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
