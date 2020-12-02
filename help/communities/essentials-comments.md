@@ -34,11 +34,11 @@ Die Kommentarkomponente stellt ein Kommentarsystem bereit, bei dem jeder einzeln
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
-   <td>Ja - Eigenschaften können im <i>Designmodus bearbeitet </i>werden</td>
+   <td>Ja - Eigenschaften können im <i>design </i>mode bearbeitet werden</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.stimmte</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.stimbe</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -50,7 +50,7 @@ Die Kommentarkomponente stellt ein Kommentarsystem bereit, bei dem jeder einzeln
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td> Siehe <a href="comments.md">Verwenden von Kommentaren</a></td>
+   <td> Siehe <a href="comments.md">Kommentare verwenden</a></td>
   </tr>
  </tbody>
 </table>
@@ -91,14 +91,14 @@ Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
+* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP Dienstprogrammmethoden und Beispiele.
 * [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Coding-Richtlinien.
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [SocialUtils Refactoring](socialutils.md)  - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
