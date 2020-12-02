@@ -37,7 +37,7 @@ AEM Forms-Vorgänge können mit der AEM Forms stark typisierten API ausgeführt 
 
 ## Quick Beginn (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Anwendung basierend auf einer vorhandenen LCA-Datei mit dem Namen *EncryptDocument.lca* importiert.
+Im folgenden Java-Codebeispiel wird eine Anwendung importiert, die auf einer vorhandenen LCA-Datei mit dem Namen *EncryptDocument.lca* basiert.
 
 ```java
  /*
