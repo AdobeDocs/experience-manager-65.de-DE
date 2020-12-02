@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    **Voll-HTML**, um das Formular mit vollständigen HTML-Tags wiederzugeben (eine vollständige HTML-Seite). Dies ist der Standardwert.
 
-   **** Formularkörper: So rendern Sie das Formular innerhalb von `<BODY>` -Tags (nicht als vollständige HTML-Seite).
+   **Formularhauptteil:** Zum Wiedergeben des Formulars in  `<BODY>` Tags (keine vollständige HTML-Seite).
 
 1. Klicken Sie auf Speichern.
 
@@ -40,7 +43,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. Klicken Sie auf Speichern.
 
-## Aufrufe von benutzerdefinierten Skripten konfigurieren, bevor das Formular eingereicht wird {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Aufrufe von benutzerdefinierten Skripten konfigurieren, bevor das Formular eingereicht wird  {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Führen Sie zum Aktivieren der Funktion folgende Schritte durch:
 
