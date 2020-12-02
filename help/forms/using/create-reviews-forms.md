@@ -11,6 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +27,7 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder m
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
-1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Klicken Sie auf das Symbol zum Starten der Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Wenn für das Asset keine Überprüfung ausgeführt wird, wird in der Aktionsleiste das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Klicken Sie auf das Symbol zum Überprüfen des Beginns ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Geben Sie die folgenden Informationen ein:
 
    * Überprüfungsname: obligatorisch – kann alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
@@ -55,9 +58,9 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
 
-1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
+1. Wenn ein Asset derzeit eine Überprüfung durchführt und Sie der Initiator der Überprüfung sind, werden in der Aktionsleiste Symbole zum Verwalten von Überprüfungen ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
 
-   Klicken Sie auf den Kommentar zum Verwalten von Review ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)kommenticon.
+   Klicken Sie auf das Symbol zum Verwalten der Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
    Für Benutzer, die nicht der Initiator sind, ist das Symbol zum Verwalten von Überprüfungen deaktiviert.
 
@@ -79,7 +82,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 1. Zum Beenden der Überprüfung klicken auf „Ende“.
 
-### Aktionen beim Bearbeiten von Überprüfungen {#actions-that-occur-when-a-review-is-modified}
+### Aktionen beim Bearbeiten von Überprüfungen  {#actions-that-occur-when-a-review-is-modified}
 
 In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüfungen passiert:
 
