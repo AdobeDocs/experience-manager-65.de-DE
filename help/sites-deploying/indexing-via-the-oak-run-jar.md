@@ -10,6 +10,9 @@ topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
 translation-type: tm+mt
 source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +50,7 @@ Nachstehend finden Sie eine Liste von Anwendungsfällen, die Sie bei der Durchf�
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)
 
-## Re-indexing Approach Decision Tree {#reindexingapproachdecisiontree}
+## Neuindizierung der Entscheidungsstruktur des Ansatzes {#reindexingapproachdecisiontree}
 
 Dieses Diagramm ist ein Entscheidungsbaum für die Verwendung der verschiedenen Neuindizierungsansätze.
 
@@ -71,7 +74,7 @@ Abhängig vom `oak-run.jar`-Indizierungsansatz, müssen, wie im Diagramm unten d
 >
 >Aktivitäten, bei denen sich AEM in einem Wartungsfenster befinden muss, sind orange dargestellt.
 
-### Online-Neuindizierung für MongoMK oder RDBMK mit oak-run.jar {#onlinere-indexingformongomk}
+### Online-Neuindizierung für MongoMK oder RDBMK mit oak-run.jar  {#onlinere-indexingformongomk}
 
 >[!NOTE]
 >
@@ -97,7 +100,7 @@ Dieser Vorgang darf nur für eine einzelne AEM-Instanz im Cluster durchgeführt 
 
    * Bei einer Veröffentlichungsfarm muss dies für alle Veröffentlichungen ausgeführt werden ODER die Schritte werden auf einer einzigen Veröffentlichung durchgeführt und das Setup wird dann für die anderen geklont (mit den üblichen Vorsichtsmaßnahmen für das Klonen von AEM-Instanzen. sling.id muss hier auf etwas verweisen)
 
-### Online-Neuindizierung für TarMK {#onlinere-indexingfortarmk}
+### Online-Neuindizierung für TarMK  {#onlinere-indexingfortarmk}
 
 >[!NOTE]
 >
@@ -167,7 +170,7 @@ Es ermöglicht das Versenden der Indexdefinition über ein Inhaltspaket, das sp�
 
 Weitere Informationen finden Sie in der [Dokumentation zu ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html).
 
-### Erstellen und Aktualisieren von Indexdefinitionen auf TarMK mit oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
+### Erstellen und Aktualisieren von Indexdefinitionen auf TarMK mit oak-run.jar  {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
 Wenn die Dauer der Neuindizierung oder die Auswirkung auf die Performance bei Nicht-`oak-run.jar`-Methoden zu hoch ist, kann der folgende auf `oak-run.jar` basierende Ansatz genutzt werden, um Lucene-Indexdefinitionen in eine TarMK-basierte AEM-Installation zu importieren und neu zu indizieren.
 
