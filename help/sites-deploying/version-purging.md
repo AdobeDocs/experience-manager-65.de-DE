@@ -12,6 +12,9 @@ discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 69%
 
 ---
 
@@ -41,7 +44,7 @@ Wird dieser Wert überschritten, wird die älteste Version entfernt.
    * Das Höchstalter einer im Repository gespeicherten Version.
 Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
 
-* the [Version Purge maintenance task](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die manuelle Verwendung der Werkzeuge zum Bereinigen der Version minimiert.
+* die [Aufgabe Versionsbereinigung (Maintenance)](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die manuelle Verwendung der Werkzeuge zum Bereinigen der Version minimiert.
 
 >[!CAUTION]
 >
@@ -51,7 +54,7 @@ Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Reposi
 
 Zusätzlich zur expliziten Bereinigung mit dem Bereinigungs-Tool kann der Versions-Manager so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
 
-To configure the Version Manager, [create a configuration](/help/sites-deploying/configuring-osgi.md) for:
+Um den Version Manager zu konfigurieren, [erstellen Sie eine Konfiguration](/help/sites-deploying/configuring-osgi.md) für:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -59,9 +62,9 @@ Die folgenden Optionen sind verfügbar:
 
 * `versionmanager.createVersionOnActivation` (Boolescher Wert, Standard: true) Gibt an, ob beim Aktivieren von Seiten eine Version erstellt werden soll.
 Eine Version wird erstellt, es sei denn, der Replikationsagent ist so konfiguriert, dass er die Erstellung von Versionen unterdrückt, was vom Versions-Manager berücksichtigt wird.
-A version is created only if the activation happens on a path that is contained in `versionmanager.ivPaths` (see below).
+Eine Version wird nur erstellt, wenn die Aktivierung auf einem Pfad erfolgt, der in `versionmanager.ivPaths` enthalten ist (siehe unten).
 
-* `versionmanager.ivPaths`(Zeichenfolge[], Standard: `{"/"}`) Gibt die Pfade an, auf denen Versionen implizit bei der Aktivierung erstellt werden, wenn der Wert auf &quot;true&quot;festgelegt `versionmanager.createVersionOnActivation` ist.
+* `versionmanager.ivPaths`(Zeichenfolge[], Standard:  `{"/"}`) Gibt die Pfade an, auf denen Versionen implizit bei der Aktivierung erstellt werden, wenn  `versionmanager.createVersionOnActivation` sie auf &quot;true&quot;gesetzt sind.
 
 * `versionmanager.purgingEnabled` (Boolescher Wert, Standard: false) Definiert, ob das Bereinigen aktiviert werden soll, wenn neue Versionen erstellt werden.
 
@@ -69,17 +72,17 @@ A version is created only if the activation happens on a path that is contained 
 
 * `versionmanager.maxAgeDays` (int, Standard: 30) Beim Bereinigen der Version werden alle älteren Versionen als der konfigurierte Wert entfernt. Wenn der Wert kleiner als 1 ist, wird das Bereinigen nicht basierend auf dem Alter der Version durchgeführt.
 
-* `versionmanager.maxNumberVersions` (int, Standard 5) Beim Bereinigen der Version werden alle älteren Versionen als die n-neueste Version entfernt. Wenn der Wert kleiner als 1 ist, wird das Bereinigen nicht basierend auf der Anzahl der Versionen durchgeführt.
+* `versionmanager.maxNumberVersions` (int, Standard 5) Beim Bereinigen der Version werden alle älteren Versionen als die n. neueste Version entfernt. Wenn der Wert kleiner als 1 ist, wird das Bereinigen nicht basierend auf der Anzahl der Versionen durchgeführt.
 
 * `versionmanager.minNumberVersions` (int, default 0) Die Mindestanzahl Versionen, die unabhängig vom Alter beibehalten werden. Wenn hier ein Wert kleiner als 1 festgelegt wird, wird keine Mindestanzahl an Versionen beibehalten.
 
 >[!NOTE]
 >
->Es wird nicht empfohlen, eine große Anzahl von Versionen im Repository zu halten. Achten Sie also bei der Konfiguration des Versions-Bereinigungsvorgangs darauf, nicht zu viele Versionen von der Bereinigung auszuschließen, da sonst die Größe des Repositorys nicht richtig optimiert wird. Wenn Sie aufgrund von Geschäftsanforderungen eine große Anzahl von Versionen behalten, wenden Sie sich an den Adobe-Support, um alternative Möglichkeiten zur Optimierung der Repository-Größe zu finden.
+>Es wird nicht empfohlen, eine große Anzahl von Versionen im Repository zu halten. Achten Sie also bei der Konfiguration des Versions-Bereinigungsvorgangs darauf, nicht zu viele Versionen von der Bereinigung auszuschließen, da sonst die Größe des Repositorys nicht richtig optimiert wird. Wenn Sie aufgrund von Geschäftsanforderungen eine große Anzahl von Versionen haben, wenden Sie sich bitte an den Support der Adobe, um alternative Möglichkeiten zur Optimierung der Repository-Größe zu finden.
 
 ### Kombinieren von Aufbewahrungsoptionen {#combining-retention-options}
 
-The options defining how which versions should be retained ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), can be combined depending on your requirements.
+Die Optionen, mit denen festgelegt wird, welche Versionen beibehalten werden sollen ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), können je nach Ihren Anforderungen kombiniert werden.
 
 Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die älteste aufzubewahrende Version definieren:
 
