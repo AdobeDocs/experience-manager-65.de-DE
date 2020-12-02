@@ -33,7 +33,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 
 ## Quick Beginn (SOAP-Modus): Konvertieren eines PDF-Dokuments in PostScript mit der Java-API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein PostScript-Dokument mit dem Namen *Loan.ps* konvertiert. (Siehe PDF-Dokumente [in PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)konvertieren.)
+Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein PostScript-Dokument mit dem Namen *Loan.ps* konvertiert. (Siehe [Konvertieren von PDF-Dokumenten in PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
 ```java
  /*
@@ -148,7 +148,7 @@ Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein 
 
 ## Quick Beginn (SOAP-Modus): Konvertieren eines PDF-Dokuments in JPEG-Dateien mit der Java-API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in einen Satz von JPEG-Dateien konvertiert und im Ordner C:\Adobe directory gespeichert. Jede Datei wird benannt `tempFile[index].jpg`, wobei die erste Bilddatei den Namen *tempFile0.jpg* erhält. (Siehe [Konvertieren von PDF-Dokumenten in Bildformate](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in einen Satz von JPEG-Dateien konvertiert und im Ordner C:\Adobe directory gespeichert. Jede Datei hat den Namen `tempFile[index].jpg`, wobei die erste Bilddatei *tempFile0.jpg* heißt. (Siehe [Konvertieren von PDF-Dokumenten in Bildformate](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```java
  /*
