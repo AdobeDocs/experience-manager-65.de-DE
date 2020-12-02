@@ -31,7 +31,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 
 ## Quick Beginn (SOAP-Modus): Dekodieren von Formulardaten mit Strichcode mithilfe der Java-API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-Der folgende Java-Code dekodiert Formulardaten, die sich in einem PDF-Formular befinden, das als &quot;Loan.pdf&quot;gespeichert wird. Die dekodierten Daten werden als XML-Datei mit dem Namen extracData.xml gespeichert. In diesem Codebeispiel wird ein `org.w3c.dom.Document` Objekt in ein `com.adobe.idp.Document` Objekt konvertiert. (Siehe [Dekodieren von Formulardaten](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)mit Strichcode.)
+Der folgende Java-Code dekodiert Formulardaten, die sich in einem PDF-Formular befinden, das als &quot;Loan.pdf&quot;gespeichert wird. Die dekodierten Daten werden als XML-Datei mit dem Namen extracData.xml gespeichert. In diesem Codebeispiel wird ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt konvertiert. (Siehe [Dekodieren von Strichcodeformulardaten](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -220,5 +220,5 @@ Der folgende Java-Code dekodiert Formulardaten, die sich in einem PDF-Formular b
 
 >[!NOTE]
 >
->Wenn Sie sowohl ein `org.w3c.dom.Document` Objekt als auch ein `com.adobe.idp.Document` Objekt in derselben Anwendungslogik verwenden, empfiehlt es sich, beide Objekte vollständig zu qualifizieren.
+>Bei Verwendung eines `org.w3c.dom.Document`- und eines `com.adobe.idp.Document`-Objekts in derselben Anwendungslogik empfiehlt es sich, beide Objekte vollständig zu qualifizieren.
 
