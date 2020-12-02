@@ -12,6 +12,9 @@ discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 66%
 
 ---
 
@@ -22,10 +25,10 @@ Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und vir
 
 Diese Zuordnungen können Sie beispielsweise folgendermaßen verwenden:
 
-* Prefix all requests with `/content` so that the internal structure is hidden from the visitors to your website.
-* Define a redirect so that all requests to the `/content/en/gateway` page of your website are redirected to `https://gbiv.com/`.
+* Präfix aller Anforderungen mit `/content`, damit die interne Struktur von den Besuchern Ihrer Website ausgeblendet wird.
+* Definieren Sie eine Umleitung, damit alle Anforderungen an die `/content/en/gateway`-Seite Ihrer Website an `https://gbiv.com/` umgeleitet werden.
 
-One possible HTTP mapping prefixes all requests to `localhost:4503` with `/content`. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
+Eine mögliche HTTP-Zuordnung präfixiert alle Anforderungen an `localhost:4503` mit `/content`. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
 
 `localhost:4503/content/we-retail/en/products.html`
 
@@ -33,7 +36,7 @@ mithilfe von:
 
 `localhost:4503/we-retail/en/products.html`
 
-da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html`.
+da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html` hinzufügt.
 
 >[!CAUTION]
 >
@@ -47,7 +50,7 @@ da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.h
 
 Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
-These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel:`https://<*host*>:<*port*>/system/console/jcrresolver`
 
 * Configuration Zeigt die aktuelle Konfiguration (wie für den [Apache Sling-Ressourcen-Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) definiert) an.
 
@@ -63,7 +66,7 @@ Die Listen verbinden ein **Muster**, d. h. einen auf die Anforderung abgestimmt
 
 So löst beispielsweise das
 
-**Muster**`^[^/]+/[^/]+/welcome$`
+**Muster** `^[^/]+/[^/]+/welcome$`
 
 das
 
@@ -81,7 +84,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->There are many resources available that help explain how to define regular expressions; for example [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es stehen viele Ressourcen zur Verfügung, die erklären, wie reguläre Ausdrücke definiert werden können. zum Beispiel [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
@@ -89,13 +92,13 @@ Eine Standardinstallation von AEM umfasst folgenden Ordner:
 
 `/etc/map/http`
 
-Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Other folders ( `sling:Folder`) can be created under `/etc/map` for any other protocols that you want to map.
+Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Andere Ordner ( `sling:Folder`) können für alle anderen Protokolle, die Sie zuordnen möchten, unter `/etc/map` erstellt werden.
 
 #### Konfigurieren einer internen Umleitung an „/content“{#configuring-an-internal-redirect-to-content}
 
-To create the mapping that prefixes any request to https://localhost:4503/ with `/content`:
+So erstellen Sie die Zuordnung, die jeder Anforderung an https://localhost:4503/ mit `/content` vorangestellt wird:
 
-1. Using CRXDE navigate to `/etc/map/http`.
+1. Navigieren Sie mit CRXDE zu `/etc/map/http`.
 
 1. Erstellen Sie einen neuen Knoten:
 
@@ -121,8 +124,10 @@ To create the mapping that prefixes any request to https://localhost:4503/ with 
 1. Klicken Sie auf **Alle speichern**.
 
 Dies behandelt eine Anforderung wie:
-als`localhost:4503/geometrixx/en/products.html`ob:
-Sie`localhost:4503/content/geometrixx/en/products.html`wurden beantragt.
+`localhost:4503/geometrixx/en/products.html`
+as if:
+`localhost:4503/content/geometrixx/en/products.html`
+wurden beantragt.
 
 >[!NOTE]
 >
@@ -130,5 +135,5 @@ Sie`localhost:4503/content/geometrixx/en/products.html`wurden beantragt.
 
 >[!NOTE]
 >
->You can use `/etc/map.publish` to hold the configurations for the publish environment. These must then be replicated, and the new location ( `/etc/map.publish`) configured for the **Mapping Location** of the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) of the publish environment.
+>Sie können `/etc/map.publish` verwenden, um die Konfigurationen für die Veröffentlichungs-Umgebung aufzunehmen. Diese müssen dann repliziert werden, und der neue Speicherort ( `/etc/map.publish`) muss für den **Zuordnungsort** des [Apache Sling-Ressourcen-Resolvers](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungs-Umgebung konfiguriert sein.
 
