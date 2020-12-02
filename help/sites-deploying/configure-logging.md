@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 
 * Globale Parameter für den zentralen Protokollierungsdienst
 * Anforderung einer Datenprotokollierung; eine spezielle Protokollierungskonfiguration zum Anfordern von Informationen
-* Bestimmte Einstellungen für einzelne Dienste, beispielsweise zum Festlegen einer einzelnen Protokolldatei und des Formats von Protokollmeldungen
+* Spezifische Einstellungen für die einzelnen Dienste; zum Beispiel eine einzelne Protokolldatei und ein bestimmtes Format für die Protokollmeldungen
 
 Hierbei handelt es sich jeweils um [OSGi-Konfigurationen](/help/sites-deploying/configuring-osgi.md).
 
@@ -54,7 +57,7 @@ Neben den globalen Protokollierungseinstellungen können Sie in AEM bestimmte Ei
 * Format zum Schreiben der Protokollmeldungen
 * Logger (OSGi-Dienst, der die Protokollmeldungen bereitstellt)
 
-So können Sie die Protokollmeldungen für einen einzelnen Dienst in einer separaten Datei kanalisieren. Dies kann insbesondere beim Entwickeln oder Testen nützlich sein, etwa wenn Sie für einen bestimmten Dienst auf eine höhere Protokollierungsstufe angewiesen sind.
+So können Sie die Protokollmeldungen für einen einzelnen Dienst in eine separate Datei leiten. Dies kann insbesondere beim Entwickeln oder Testen nützlich sein, etwa wenn Sie für einen bestimmten Dienst auf eine höhere Protokollierungsstufe angewiesen sind.
 
 AEM geht wie folgt vor, um Protokollmeldungen in eine Datei zu schreiben:
 
@@ -64,9 +67,9 @@ AEM geht wie folgt vor, um Protokollmeldungen in eine Datei zu schreiben:
 
 Diese Elemente sind über die folgenden Parameter mit den entsprechenden Elementen verknüpft:
 
-* **Protokollfunktion**
+* **Logger (Logging Logger)**
 
-   Definieren Sie die Dienste, die die Nachrichten generieren.
+   Hiermit werden der Dienst bzw. die Dienste zum Generieren der Meldungen definiert.
 
 * **Protokolldatei (Protokollprotokollierung)**
 
@@ -80,7 +83,7 @@ Diese Elemente sind über die folgenden Parameter mit den entsprechenden Element
 
    Der Wert muss mit den Parametern in der Logging-Writer-Konfiguration übereinstimmen. Andernfalls erfolgt kein Abgleich. Liegt keine Übereinstimmung vor, wird ein impliziter Writer mit der Standardkonfiguration (tägliche Protokollrotation) erstellt.
 
-### Standardlogger und -writer {#standard-loggers-and-writers}
+### Standard-Logger und -Writer {#standard-loggers-and-writers}
 
 Bestimmte Logger und Writer sind in einer standardmäßigen AEM-Installation bereits enthalten.
 
@@ -92,7 +95,7 @@ Das erste Paar ist ein Sonderfall, da sowohl `request.log`- als auch `access.log
 
       (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * schreibt Meldungen zu Anforderungsinhalt in die Datei `request.log`.
+   * Schreibt Meldungen zum Anforderungsinhalt in die Datei `request.log`.
 
 * Ist verknüpft mit:
 
@@ -100,7 +103,7 @@ Das erste Paar ist ein Sonderfall, da sowohl `request.log`- als auch `access.log
 
       (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Writes the messages to either `request.log` or `access.log`.
+   * Schreibt Meldungen in `request.log` oder `access.log`.
 
 Eine Anpassung ist hier ggf. möglich, obwohl die Standardkonfiguration für die meisten Installationen geeignet ist.
 
@@ -112,19 +115,19 @@ Die anderen Paare folgen der Standardkonfiguration:
 
       (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * Schreibt `Information` Nachrichten an `logs/error.log`.
+   * Schreibt `Information`-Meldungen in `logs/error.log`.
 
 * Ist mit dem folgenden Writer verknüpft:
 
-   * Apache Sling Logging Writer Configuration
+   * Apache Sling Logging Write-Konfiguration
 
       (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * Der Logger:
 
-   * Apache Sling Logging Logger Configuration (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+   * Apache Sling Logging Logger-Konfiguration (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Schreibt `Warning` Nachrichten für `../logs/error.log` den Dienst `org.apache.pdfbox`.
+   * Schreibt `Warning`-Meldungen in `../logs/error.log` für den `org.apache.pdfbox`-Dienst.
 
 * Ist nicht mit einem bestimmten Writer verknüpft, sodass ein impliziter Writer mit Standardkonfiguration (tägliche Protokollrotation) verwendet wird.
 
