@@ -32,14 +32,14 @@ Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als Ihren W
 Beim Hinzufügen einer Komponente für 3D Media, Dynamic Media, interaktive Medien, Panoramamedien, Smart-Zuschnitt-Videos oder 360-Grad-Videomedien gehen Sie genauso vor wie beim Hinzufügen einer Komponente zu einer beliebigen Seite. Die Dynamic Media-Komponenten werden in den folgenden Abschnitten beschrieben.
 
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
-1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (möglicherweise müssen Sie die Anzeige des Seitenbedienfelds umschalten) auf das Symbol &quot; **[!UICONTROL Komponenten]** &quot;.
-1. Wählen Sie unter der Überschrift &quot; **[!UICONTROL Komponenten]** &quot;in der Dropdown-Liste &quot; **[!UICONTROL Dynamische Medien&quot;aus.]**
+1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (möglicherweise müssen Sie die Anzeige des Seitenbedienfelds umschalten) auf das Symbol **[!UICONTROL Komponenten]**.
+1. Wählen Sie unter der Überschrift **[!UICONTROL Komponenten]** in der Dropdown-Liste **[!UICONTROL Dynamische Medien.]**
 
    Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
-1. Drag a **[!UICONTROL Dynamic Media]** component that you want to use and drop it in the desired location on the page.
+1. Ziehen Sie eine Komponente **[!UICONTROL Dynamische Medien]**, die Sie verwenden möchten, und legen Sie sie an der gewünschten Position auf der Seite ab.
 
 1. Bewegen Sie den Mauszeiger direkt über die Komponente. Wenn die Komponente blau hervorgehoben wird, tippen Sie einmal darauf, um die Symbolleiste der Komponente anzuzeigen. Tippen Sie auf das Symbol **[!UICONTROL Konfiguration]**(Schraubenschlüssel).
 
@@ -73,7 +73,7 @@ Wenn keine Dynamic Media-Komponenten zum Hinzufügen zu einer Seite verfügbar s
 
    ![Zugelassene Komponenten](/help/assets/assets-dm/allowed-components.png)
 
-1. Scroll until you see **[!UICONTROL Dynamic Media.]**
+1. Scrollen Sie, bis **[!UICONTROL Dynamische Medien.]**
 1. Tippen Sie links neben **[!UICONTROL Dynamic Media]** auf „>“, um die Liste zu erweitern, und wählen Sie die Dynamic Media-Komponenten aus, die Sie aktivieren möchten.
 
    ![Liste der Dynamic Media-Komponenten](/help/assets/assets-dm/dm-components-select.png)
@@ -98,7 +98,7 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
 
 ## Komponenten vom Typ „Dynamische Medien“{#dynamic-media-components}
 
-Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media.]**
+Dynamische Medienkomponenten sind verfügbar, wenn Sie auf das Symbol **[!UICONTROL Komponenten]** tippen und dann auf **[!UICONTROL Dynamische Medien filtern.]**
 
 Zu den verfügbaren Dynamic Media-Komponenten zählen:
 
@@ -135,19 +135,19 @@ Wenn Sie die Dynamic Media-Komponente hinzufügen und **[!UICONTROL Einstellunge
 * Sie [Dynamic Media aktiviert](/help/assets/config-dynamic.md) haben. Dynamic Media ist standardmäßig deaktiviert.
 * das Bild eine Pyramid TIFF-Datei aufweist. Bilder, die vor der Aktivierung von dynamischen Medien importiert wurden, verfügen nicht über eine Pyramid TIFF-Datei.
 
-#### Arbeiten mit Bildern         {#when-working-with-images}
+#### Arbeiten mit Bildern          {#when-working-with-images}
 
 Mit der Komponente „Dynamische Medien“ können Sie dynamische Bilder, einschließlich Bild-Sets, Rotations-Sets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotations-Set drehen oder ein Bild aus einem anderen Set auswählen.
 
 Sie können zudem die Viewer-Vorgabe, Bildvorgabe oder das Bildformat direkt in der Komponente konfigurieren. Um ein Bild dynamisch zu machen, können Sie die Haltepunkte festlegen oder eine dynamische Bildvorgabe anwenden.
 
-You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings.]**
+Sie müssen *die folgenden Einstellungen für dynamische Medien bearbeiten, indem Sie auf das Symbol **[!UICONTROL Bearbeiten]**in der Komponente und dann auf **[!UICONTROL Einstellungen für dynamische Medien]**tippen.*
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Standardmäßig ist die Bildkomponente für dynamische Medien adaptiv. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
+>Standardmäßig ist die Bildkomponente für dynamische Medien adaptiv. Wenn Sie eine feste Größe festlegen möchten, setzen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit den Registerkarten **[!UICONTROL Breite]** und **[!UICONTROL Höhe.]**
 
 * **[!UICONTROL Viewer-Vorgaben]**: Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
@@ -190,7 +190,7 @@ Verwenden Sie die Dynamic Media-Komponente, um Ihren Web-Seiten dynamische Video
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+Sie müssen die folgenden Einstellungen für dynamische Medien bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
 * **[!UICONTROL Viewer-Vorgabe]**: Wählen Sie im Dropdown-Menü eine vorhandene Video-Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“.
 
-* **[!UICONTROL Viewer-Modifikatoren]**- Viewer-Modifikatoren haben die Form eines &quot;name=value&quot;-Paars mit einem &amp;-Trennzeichen und ermöglichen das Ändern von Viewern, wie im Viewer-Referenzhandbuch für Adoben beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`.
+* **[!UICONTROL Viewer-Modifikatoren]** - Viewer-Modifikatoren haben die Form eines &quot;name=value&quot;-Paars mit einem &amp;-Trennzeichen und ermöglichen das Ändern von Viewern, wie im Viewer-Referenzhandbuch für Adoben beschrieben. Ein Beispiel für einen Viewer-Modifikator ist `posterimage=img.jpg&caption=text.vtt,1`.
 
    Viewer-Modifikatoren ermöglichen z. B. Folgendes:
 
@@ -221,11 +221,11 @@ Weitere Informationen finden Sie unter [Bildprofile](/help/assets/image-profiles
 
 ![dm-settings-smart-cut](assets/dm-settings-smart-crop.png)
 
-You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
+Sie müssen die folgende Einstellung für dynamische Medien bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
 >[!NOTE]
 >
->Standardmäßig ist die Bildkomponente für dynamische Medien adaptiv. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
+>Standardmäßig ist die Bildkomponente für dynamische Medien adaptiv. Wenn Sie eine feste Größe festlegen möchten, setzen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit den Registerkarten **[!UICONTROL Breite]** und **[!UICONTROL Höhe.]**
 
 * **[!UICONTROL Bildmodifikatoren]**: Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 
