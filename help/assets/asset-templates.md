@@ -1,6 +1,6 @@
 ---
 title: Asset-Vorlagen
-description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
+description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Adobe Experience Manager Assets] und wie Sie Asset-Vorlagen verwenden, um Marketingmaterial zu erstellen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
@@ -11,17 +11,17 @@ ht-degree: 33%
 ---
 
 
-# Asset templates {#asset-templates}
+# Asset-Vorlagen {#asset-templates}
 
 Asset-Vorlagen sind eine spezielle Asset-Klasse, die eine schnelle Wiederverwendung visuell reicher Inhalte für digitale und Druckmedien ermöglicht. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messagingabschnitt und den bearbeitbaren Abschnitt. Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle und textuelle Inhalte in Feldern enthalten, die bearbeitet werden können, um Messaging anzupassen.
 
 Die Flexibilität, begrenzte Bearbeitungen bei gleichzeitiger Sicherung globaler Signaturen vorzunehmen, macht Asset-Vorlagen zu idealen Bausteinen für die schnelle Anpassung und Verteilung von Inhalten als Inhaltsartefakte für verschiedene Funktionen. Die Wiederverwendung von Inhalten trägt dazu bei, die Kosten für die Verwaltung von Print- und digitalen Kanälen zu senken und ganzheitliche und konsistente Erlebnisse in diesen Kanälen bereitzustellen.
 
-As a marketer, you can store and manage templates within [!DNL Experience Manager Assets] and use a single base template to create multiple personalized print experiences with ease. Sie können verschiedene Arten von Marketingmaterial erstellen, z. B. Broschüren, Flyer, Postkarten, Visitenkarten usw., um Kunden Ihre Marketingbotschaft eindeutig und klar zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Umgebungen und Printumgebungen bereitstellen, um für Benutzer eine konsistente integrierte Erfahrung zu schaffen.
+Marketingexperten können Vorlagen innerhalb von [!DNL Experience Manager Assets] speichern und verwalten und eine einzelne Basisvorlage verwenden, um mühelos mehrere personalisierte Druckerlebnisse zu erstellen. Sie können verschiedene Arten von Marketingmaterial erstellen, z. B. Broschüren, Flyer, Postkarten, Visitenkarten usw., um Kunden Ihre Marketingbotschaft eindeutig und klar zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Umgebungen und Printumgebungen bereitstellen, um für Benutzer eine konsistente integrierte Erfahrung zu schaffen.
 
-While asset templates are mostly [!DNL Adobe InDesign] files, proficiency in [!DNL Adobe InDesign] is not a barrier to creating stellar artifacts. You need not map the fields of your [!DNL Adobe InDesign] template with your product fields that you otherwise require to when creating catalogs. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Weboberfläche bearbeiten. However, for [!DNL Adobe InDesign] to process your editing changes, you must first configure [!DNL Experience Manager Assets] to integrate with [!DNL Adobe InDesign Server].
+Während Asset-Vorlagen meist [!DNL Adobe InDesign]-Dateien sind, stellt die Kompetenz in [!DNL Adobe InDesign] keine Barriere für das Erstellen von Sternartefakten dar. Sie müssen die Felder Ihrer [!DNL Adobe InDesign]-Vorlage nicht Ihren Produktfeldern zuordnen, die Sie sonst beim Erstellen von Katalogen benötigen. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Weboberfläche bearbeiten. Damit [!DNL Adobe InDesign] Ihre Bearbeitungsänderungen verarbeitet, müssen Sie [!DNL Experience Manager Assets] zunächst konfigurieren, um [!DNL Adobe InDesign Server] zu integrieren.
 
-Die Möglichkeit, [!DNL Adobe InDesign] Vorlagen über die Web-Oberfläche zu bearbeiten, trägt dazu bei, die Zusammenarbeit zwischen Kreativ- und Marketingmitarbeitern zu verbessern. Die höhere Inhaltsgeschwindigkeit verringert die Markteinführungszeit für Marketingsicherheiten.
+Die Möglichkeit, [!DNL Adobe InDesign]-Vorlagen über die Weboberfläche zu bearbeiten, trägt dazu bei, die Zusammenarbeit zwischen Kreativ- und Marketingmitarbeitern zu verbessern. Die höhere Inhaltsgeschwindigkeit verringert die Markteinführungszeit für Marketingsicherheiten.
 
 Mit Asset-Vorlagen können Sie Folgendes erreichen:
 
@@ -31,48 +31,48 @@ Mit Asset-Vorlagen können Sie Folgendes erreichen:
 * Anzeigen von Vorlagenbearbeitungen in der Vorschau.
 * Zusammenführen mehrerer Vorlagendateien zum Erstellen eines mehrseitigen Artefakts.
 
-When you choose a template for your collateral, [!DNL Experience Manager Assets] creates a copy of the template that you can edit. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
+Wenn Sie eine Vorlage für Ihre Sicherheit auswählen, erstellt [!DNL Experience Manager Assets] eine Kopie der Vorlage, die Sie bearbeiten können. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
 
 Sie können die aktualisierte Datei im übergeordneten Ordner in die Formate INDD, PDF oder JPG exportieren. Sie können die Ausgabe in diesen Formaten auch in Ihr lokales Dateisystem herunterladen.
 
 ## Erstellen von Sicherheiten {#creating-a-collateral}
 
-Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designers can create the campaign templates (single-page or multi-page) using a creative solution, such as [!DNL InDesign] and upload the templates to [!DNL Experience Manager Assets] for you. Bevor Sie eine Sicherheit erstellen, sollten Sie eine oder mehrere INDD-Vorlagen hochladen und [!DNL Experience Manager] im Voraus verfügbar machen.
+Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (einseitige oder mehrseitige) mit einer Kreativlösung wie [!DNL InDesign] erstellen und die Vorlagen für Sie nach [!DNL Experience Manager Assets] hochladen. Bevor Sie eine Sicherheit erstellen, lassen Sie eine oder mehrere INDD-Vorlagen im Voraus hochladen und verfügbar sein.[!DNL Experience Manager]
 
-1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf [!UICONTROL Assets].
+1. Klicken Sie in der [!DNL Experience Manager]-Schnittstelle auf [!UICONTROL Assets].
 
 1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
 
    ![chlimage_1-101](assets/chlimage_1-306.png)
 
-1. Click **[!UICONTROL Create]**, and then choose the collateral you want to create from the menu. For example, choose **[!UICONTROL Brochure]**.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie dann im Menü die zu erstellenden Sicherheiten aus. Wählen Sie beispielsweise **[!UICONTROL Prospekt]**.
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
-1. Lassen Sie eine oder mehrere INDD-Vorlagen [!DNL Experience Manager] im Voraus hochladen und verfügbar sein. Choose a template for your brochure, and click **[!UICONTROL Next]**.
+1. Lassen Sie eine oder mehrere INDD-Vorlagen im Voraus hochladen und verfügbar sein. [!DNL Experience Manager] Wählen Sie eine Vorlage für Ihre Broschüre und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Namen und eine optionale Beschreibung für die Broschüre an.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
-1. (Optional) Klicken Sie auf **[!UICONTROL Tags]** und wählen Sie einen oder mehrere Tags für die Broschüre aus. Click **[!UICONTROL Confirm]** to confirm your selection.
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. In einem Dialogfeld mit einem Hinweis wird bestätigt, dass eine neue Broschüre erstellt wurde. Click **[!UICONTROL Open]** to open the brochure in edit mode.
+1. (Optional) Klicken Sie auf **[!UICONTROL Tags]** und wählen Sie eines oder mehrere Tags für die Broschüre aus. Klicken Sie auf **[!UICONTROL Bestätigen]**, um Ihre Auswahl zu bestätigen.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. In einem Dialogfeld mit einem Hinweis wird bestätigt, dass eine neue Broschüre erstellt wurde. Klicken Sie auf **[!UICONTROL Öffnen]**, um die Broschüre im Bearbeitungsmodus zu öffnen.
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   Alternativ hierzu können Sie das Dialogfeld schließen und auf der Seite „Vorlagen“ zu dem Ordner navigieren, mit dem Sie den Vorgang begonnen haben, um die erstellte Broschüre anzuzeigen. Der Typ des Materials wird in der Kartenansicht in der dazugehörigen Miniaturansicht angezeigt. For example, in this case, the word [!UICONTROL Brochure] is displayed on the thumbnail.
+   Alternativ hierzu können Sie das Dialogfeld schließen und auf der Seite „Vorlagen“ zu dem Ordner navigieren, mit dem Sie den Vorgang begonnen haben, um die erstellte Broschüre anzuzeigen. Der Typ des Materials wird in der Kartenansicht in der dazugehörigen Miniaturansicht angezeigt. In diesem Fall wird beispielsweise das Wort [!UICONTROL Prospekt] auf der Miniaturansicht angezeigt.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Bearbeiten von Zusätzen {#editing-a-collateral}
+## Bearbeiten von Sicherheiten {#editing-a-collateral}
 
-Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you open it from the [!UICONTROL Templates] page or the asset page.
+Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ können Sie sie auf der Seite [!UICONTROL Vorlagen] oder auf der Asset-Seite öffnen.
 
 1. Sie haben folgende Möglichkeiten, um das Material zur Bearbeitung zu öffnen:
 
-   * Open the collateral (brochure in this case) you created in step 7 of [Create a collateral](/help/assets/asset-templates.md#creating-a-collateral).
-   * From the Templates page, navigate to a folder where you created the collateral, and click the [!UICONTROL Edit] quick action on the thumbnail of a collateral.
-   * In the asset page for the collateral, click **[!UICONTROL Edit]** from the toolbar.
-   * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+   * Öffnen Sie die in Schritt 7 von [Erstellen Sie eine Sicherheit](/help/assets/asset-templates.md#creating-a-collateral) erstellten Sicherheiten (in diesem Fall eine Broschüre).
+   * Navigieren Sie auf der Seite &quot;Vorlagen&quot;zu einem Ordner, in dem Sie die Sicherheit erstellt haben, und klicken Sie auf die Schnellaktion [!UICONTROL Bearbeiten] in der Miniaturansicht eines Assets.
+   * Klicken Sie auf der Asset-Seite für die Sicherheit in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
+   * Wählen Sie die Sicherheit aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
@@ -80,15 +80,15 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    Sie können den Text-Editor verwenden, um den Text zu ändern, der im Textfeld angezeigt werden soll. Sie können Schriftgröße, -stil, -farbe und -typ auf der Tag-Ebene ändern.
 
-   Using the asset finder, you can browse or search for images within [!DNL Experience Manager Assets] and replace the editable images in the template with images of your choice.
+   Mit der Asset-Suche können Sie Bilder innerhalb von [!DNL Experience Manager Assets] suchen oder suchen und die bearbeitbaren Bilder in der Vorlage durch Bilder Ihrer Wahl ersetzen.
 
    ![chlimage_1-109](assets/chlimage_1-314.png)
 
-   Die bearbeitbaren Bilder werden rechts angezeigt. For a field to be editable in [!DNL Experience Manager Assets], corresponding field in the template must be tagged in [!DNL InDesign]. In other words, they should be marked as editable in [!DNL InDesign].
+   Die bearbeitbaren Bilder werden rechts angezeigt. Damit ein Feld in [!DNL Experience Manager Assets] bearbeitet werden kann, muss das entsprechende Feld in der Vorlage mit [!DNL InDesign] gekennzeichnet werden. Mit anderen Worten, sie sollten in [!DNL InDesign] als bearbeitbar markiert werden.
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Weitere Informationen finden Sie unter [Integrieren von Experience Manager-Assets in InDesign Server](/help/assets/indesign.md).
+   >Stellen Sie sicher, dass Ihre [!DNL Experience Manager]-Bereitstellung in eine [!DNL InDesign Server] integriert ist, damit [!DNL Experience Manager Assets] Daten aus der [!DNL InDesign]-Vorlage extrahieren und zur Bearbeitung verfügbar machen kann. Weitere Informationen finden Sie unter [Experience Manager-Assets mit InDesign Server](/help/assets/indesign.md) integrieren.
 
 1. Um den Text in einem bearbeitbaren Feld zu ändern, klicken Sie in der Liste der bearbeitbaren Felder auf das Textfeld und bearbeiten Sie den Text im Feld.
 
@@ -96,38 +96,38 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    Sie können die Texteigenschaften, z. B. Schriftschnitt, Farbe und Größe, mithilfe der bereitgestellten Optionen bearbeiten.
 
-1. Klicken Sie auf **[!UICONTROL Vorschau]** , um die Textänderungen Vorschau.
+1. Klicken Sie auf **[!UICONTROL Vorschau]**, um die Textänderungen Vorschau.
 
-1. Um ein Bild zu tauschen, klicken Sie auf die **[!UICONTROL Asset-Suche]** ![chlimage_1-113](assets/chlimage_1-318.png).
+1. Um ein Bild auszutauschen, klicken Sie auf **[!UICONTROL Asset Finder]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Wählen Sie in der Liste mit den bearbeitbaren Feldern das Bildfeld aus und ziehen Sie das gewünschte Bild dann aus der Asset-Auswahl in das bearbeitbare Feld.
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   Sie können auch nach Bildern suchen, indem Sie Stichwörter, Tags und den Veröffentlichungsstatus angeben. You can browse through the [!DNL Experience Manager Assets] repository and navigate to the location of the desired image.
+   Sie können auch nach Bildern suchen, indem Sie Stichwörter, Tags und den Veröffentlichungsstatus angeben. Sie können das [!DNL Experience Manager Assets]-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
-1. Klicken Sie auf **[!UICONTROL Vorschau]** , um das Bild Vorschau.
+1. Klicken Sie auf **[!UICONTROL Vorschau]**, um das Bild Vorschau.
 1. Verwenden Sie den Seitennavigator unten, um eine bestimmte Seite in einem mehrseitigen Begleitmaterial zu bearbeiten.
 
-1. Click **[!UICONTROL Preview]** on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Vorschau]**, um alle Änderungen Vorschau. Klicken Sie auf **[!UICONTROL Fertig]**, um die Bearbeitungsänderungen an den Sicherheiten zu speichern.
 
    >[!NOTE]
    >
-   >Die Optionen &quot;Vorschau&quot;und &quot;Fertig&quot;sind nur aktiviert, wenn die bearbeitbaren Bildfelder in den Zusätzen keine fehlenden Symbole aufweisen. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
+   >Die Optionen &quot;Vorschau&quot;und &quot;Fertig&quot;sind nur aktiviert, wenn die bearbeitbaren Bildfelder in den Zusätzen keine fehlenden Symbole aufweisen. Wenn in Ihren Zusätzen Symbole fehlen, liegt dies daran, dass [!DNL Experience Manager] die Bilder in der [!DNL InDesign]-Vorlage nicht auflösen kann. Normalerweise kann [!DNL Experience Manager] in folgenden Fällen keine Bilder auflösen:
    >
-   >* Images are not embedded in the underlying [!DNL InDesign] template.
+   >* Bilder werden nicht in die zugrunde liegende [!DNL InDesign]-Vorlage eingebettet.
    >* Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem.
 
    >
-   >To enable [!DNL Experience Manager] to resolve images, do the following:
+   >Gehen Sie wie folgt vor, um [!DNL Experience Manager] zum Auflösen von Bildern zu aktivieren:
    >
-   >* Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
-   >* Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
+   >* Betten Sie Bilder beim Erstellen von [!DNL InDesign]-Vorlagen ein (siehe [Links und eingebettete Grafiken](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
+   >* Bereiten Sie [!DNL Experience Manager] in Ihr lokales Dateisystem ein und ordnen Sie dann fehlende Symbole mit vorhandenen Elementen in [!DNL Experience Manager] zu.
 
    >
-   >Weitere Informationen zum Arbeiten mit [!DNL InDesign] Dokumenten finden Sie unter [Best Practices für das Arbeiten mit InDesign-Dokumenten in Experience Manager](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Weitere Informationen zum Arbeiten mit [!DNL InDesign]-Dokumenten finden Sie unter [Best Practices für das Arbeiten mit InDesign-Dokumenten in Experience Manager](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Wählen Sie zum Generieren einer PDF-Ausgabe für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 1. Das Marketingmaterial wird in dem Ordner erstellt, in dem Sie den Vorgang begonnen haben. Öffnen Sie das Marketingmaterialelement und wählen Sie in der GlobalNav-Liste die Option **[!UICONTROL Ausgabeformate]**, um die Ausgabeformate anzuzeigen.
@@ -138,17 +138,17 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
-## Merge collateral {#merge-collateral}
+## Zusammenführen von Sicherheiten {#merge-collateral}
 
-1. Klicken Sie auf der [!DNL Experience Manager] Navigationsseite auf [!UICONTROL Assets] .
+1. Klicken Sie in der Oberfläche [!DNL Experience Manager] auf der Navigationsseite auf [!UICONTROL Assets].
 
 1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
 
-1. Click **[!UICONTROL Create]** and the choose **[!UICONTROL Merge]** from the menu.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Zusammenführen]** aus dem Menü.
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Klicken Sie auf der Seite &quot; [!UICONTROL Vorlagenzusammenführung] &quot;auf **[!UICONTROL Zusammenführen]** , um Elemente ![](assets/do-not-localize/assets_add_icon.png)hinzuzufügen.
+1. Klicken Sie auf der Seite [!UICONTROL Vorlagenzusammenführung] auf **[!UICONTROL Zusammenführen]** ![Elemente hinzufügen](assets/do-not-localize/assets_add_icon.png).
 
 1. Navigieren Sie zum Speicherort der zusammenzuführenden Sicherheiten und klicken Sie auf die Miniaturansichten der zusammenzuführenden Sicherheiten, um sie auszuwählen.
 
@@ -156,20 +156,20 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
    Sie können auch über das Omniture Suchfeld nach Vorlagen suchen.
 
-   You can browse through the [!DNL Experience Manager Assets] repository or collections, and navigate to the location of the desired templates and then select them to merge.
+   Sie können durch das [!DNL Experience Manager Assets]-Repository oder die Sammlungen navigieren, zum Speicherort der gewünschten Vorlagen navigieren und diese dann zum Zusammenführen auswählen.
 
    Sie können verschiedene Filter anwenden, um nach den gewünschten Vorlagen zu suchen. Es ist beispielsweise möglich, basierend auf dem Dateityp oder auf Tags nach Vorlagen zu suchen.
 
-1. Click **[!UICONTROL Next]** from the toolbar.
-1. In the **[!UICONTROL Preview &amp; Reorder]** screen, rearrange the templates if required and preview the selection of templates to merge. Then, click **[!UICONTROL Next]** from the toolbar.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
+1. Ordnen Sie die Vorlagen im Bildschirm **[!UICONTROL Vorschau und neu anordnen]** bei Bedarf neu an und Vorschau der Vorlagenauswahl für das Zusammenführen. Klicken Sie dann in der Symbolleiste auf **[!UICONTROL Weiter]**.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. In the [!UICONTROL Configure Template] screen, specify a name for the collateral. Geben Sie optional Tags an, die jeweils geeignet sind. If you want to export the output in PDF format, select **[!UICONTROL Acrobat (.PDF)]**. By default, the collateral is exported in JPG and [!DNL InDesign] format. To change the display thumbnail for the multi-page collateral, click **[!UICONTROL Change Thumbnail]**.
+1. Geben Sie im Bildschirm [!UICONTROL Vorlage konfigurieren] einen Namen für die Sicherheit ein. Geben Sie optional Tags an, die jeweils geeignet sind. Wenn Sie die Ausgabe im PDF-Format exportieren möchten, wählen Sie **[!UICONTROL Acrobat (.PDF)]**. Standardmäßig werden die Sicherheiten im JPG- und [!DNL InDesign]-Format exportiert. Klicken Sie zum Ändern der Miniaturansicht der mehrseitigen Sicherheit auf **[!UICONTROL Miniaturansicht ändern]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
-1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]** in the dialog to close the dialog. Die mehrseitigen Sicherheiten werden in dem Ordner erstellt, mit dem Sie begonnen haben.
+1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL OK]** im Dialogfeld, um das Dialogfeld zu schließen. Die mehrseitigen Sicherheiten werden in dem Ordner erstellt, mit dem Sie begonnen haben.
 
    >[!NOTE]
    >
@@ -177,4 +177,4 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternatively, you op
 
 ## Best Practices und Einschränkungen {#best-practices-limitations-tips}
 
-* Der [!DNL InDesign] Editor in [!DNL Experience Manager] funktioniert auf Tag-Ebene, und der gesamte Text unter einem einzelnen Tag wird als einzelne Entität betrachtet. Um Textformatierung und -stile bei der Bearbeitung beizubehalten, müssen Sie jeden Absatz (oder Text mit einem anderen Stil) separat taggen.
+* Der [!DNL InDesign]-Editor in [!DNL Experience Manager] funktioniert auf Tag-Ebene und der gesamte Text unter einem einzelnen Tag wird als einzelne Entität betrachtet. Um Textformatierung und -stile bei der Bearbeitung beizubehalten, müssen Sie jeden Absatz (oder Text mit einem anderen Stil) separat taggen.
