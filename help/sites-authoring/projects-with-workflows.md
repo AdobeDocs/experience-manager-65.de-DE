@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: 0033dfac2540f56b3903c19f6ca19677af050db3
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 100%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 0033dfac2540f56b3903c19f6ca19677af050db3
 
 Folgende Projekt-Workflows sind im Lieferumfang enthalten:
 
-* **Arbeitsablauf** für die Projektgenehmigung - Dieser Arbeitsablauf ermöglicht es Ihnen, einem Benutzer Inhalte zuzuweisen, diese zu überprüfen und dann zu genehmigen.
-* **Anforderungsstart** - Ein Workflow, der einen Start anfordert.
-* **Einstiegsseite** anfordern - Dieser Arbeitsablauf fordert eine Einstiegsseite an.
+* **Workflow für Projektbestätigung** - Dieser Workflow ermöglicht es Ihnen, Inhalte einem Benutzer zuzuweisen, sie zu prüfen und dann zu bestätigen.
+* **Launch anfordern** - Ein Workflow, der einen Launch anfordert.
+* **Einstiegsseite anfordern** - Dieser Workflow fordert eine Landingpage an.
 * **E-Mail anfordern** - Workflow zum Anfordern einer E-Mail.
 * **Produkt-Fotoshooting und Produkt-Fotoshooting (Commerce)** - Ordnet Assets Produkten zu
 * **DAM-Kopie erstellen und übersetzen und DAM-Sprachkopie erstellen** - Erstellt übersetzte Binärdateien, Metadaten und Tags für Assets und Ordner.
@@ -37,12 +40,12 @@ Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verf�
 | Launch anfordern | x |  |  |  |
 | Einstiegsseite anfordern | x |  |  |  |
 | E-Mail anfordern | x |  |  |  |
-| DAM Create Language Copy&amp;ast; |  |  |  | x |
-| DAM Create and Translate Language Copy&amp;ast; |  |  |  | x |
+| DAM-Sprachkopie erstellen&amp;ast; |  |  |  | x |
+| DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md). 
+>&amp;ast; Diese Workflows werden nicht auf der Kachel **Workflow** in Projekten gestartet. Weitere Informationen finden Sie unter [Erstellen von Sprachkopien für Assets](/help/sites-administering/tc-manage.md). 
 
 Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Workflow immer gleich. Nur die Schritte dazwischen ändern sich.
 
@@ -52,11 +55,11 @@ Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
 * [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md) 
 * [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md) 
-* [Konfigurieren von Workflows](/help/sites-administering/workflows.md) 
+* [Konfigurieren von Workflows](/help/sites-administering/workflows.md)
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
-## Workflow „Kopie anfordern“ {#request-copy-workflow}
+## Workflow „Kopie anfordern“   {#request-copy-workflow}
 
 Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und es dann genehmigen. So starten Sie den Workflow „Kopie anfordern“:
 
@@ -75,9 +78,9 @@ Die Workflows „Produkt-Fotoshooting“ (mit oder ohne Commerce) werden in [Kre
 
 ## Workflow für Projektbestätigung {#project-approval-workflow}
 
-Im Workflow „Projektbestätigung“ weisen Sie Inhalte einem Benutzer zu, überprüfen diese und genehmigen sie dann.
+Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, überprüfen diese und genehmigen sie dann.
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. Wählen Sie in Ihrem einfachen Projekt das **`+`**-Symbol in der Kachel **Workflows** aus und wählen Sie dann **Workflow für Projektbestätigung** aus.
 1. Geben Sie einen Titel ein und wählen Sie aus, welchem Mitglied der Teamliste Sie den Workflow zuweisen möchten. Geben Sie bei Bedarf eine Beschreibung, einen Inhaltspfad, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -86,7 +89,7 @@ Im Workflow „Projektbestätigung“ weisen Sie Inhalte einem Benutzer zu, übe
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## Workflow „Launch anfordern“{#request-launch-workflow}
+## Workflow „Launch anfordern“ {#request-launch-workflow}
 
 Mit diesem Workflow können Sie einen Launch anfordern.
 
@@ -95,7 +98,7 @@ Mit diesem Workflow können Sie einen Launch anfordern.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Klicken Sie auf **Erstellen**. Der Workflow startet. **Der Workflow wird in der Liste** Workflows **angezeigt (klicken Sie auf Auslassungspunkte**... auf der Kachel **Workflows** , um auf diese Liste zuzugreifen).
+1. Klicken Sie auf **Erstellen**. Der Workflow startet. Der Workflow wird in der Liste **Workflows** angezeigt (klicken Sie auf das Auslassungszeichen **…** auf der Kachel **Workflows**, um auf diese Liste zugreifen).
 
 ## Workflow „Einstiegsseite anfordern“{#request-landing-page-workflow}
 
@@ -108,7 +111,7 @@ Mit diesem Workflow können Sie eine Einstiegsseite anfordern.
 
 1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgabe** angezeigt.
 
-## Workflow „E-Mail anfordern“ {#request-email-workflow}
+## Workflow „E-Mail anfordern“  {#request-email-workflow}
 
 Mit diesem Workflow können Sie eine E-Mail anfordern. Es ist der derselbe Workflow, der in der Kachel **E-Mails** angezeigt wird.
 
