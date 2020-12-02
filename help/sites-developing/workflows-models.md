@@ -12,6 +12,9 @@ discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 9f260d3ccb98409790cd18b2540329fc36a07c05
+workflow-type: tm+mt
+source-wordcount: '2485'
+ht-degree: 78%
 
 ---
 
@@ -30,18 +33,19 @@ Wenn ein Benutzer einen Workflow startet, wird eine Instanz gestartet. Dabei han
 
 Wenn Sie zum ersten Mal ein neues Workflow-Modell erstellen, umfasst es Folgendes:
 
-* The steps, **Flow Start** and **Flow End**.
+* Die Schritte **Fließende Beginn** und **Flussende**.
 Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind erforderlich und können nicht bearbeitet bzw. entfernt werden.
-* An example **Participant** step named **Step 1**.
+* Beispiel für einen Schritt **Teilnehmer** mit dem Namen **Schritt 1**.
 Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitselement zuordnet. Sie können diesen Schritt nach Bedarf bearbeiten oder löschen und Schritte hinzufügen.
 
 Gehen Sie folgendermaßen vor, um einen neuen Workflow mit dem Editor zu erstellen:
 
-1. Open the **Workflow Models** console; via **Tools**, **Workflow**, **Models** or, for example: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
+1. Öffnen Sie die Konsole **Workflow-Modelle**; über **Tools**, **Workflow**, **Modelle** oder zum Beispiel: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Wählen Sie dann **Erstellen** und dann **Modell erstellen** aus.
-1. Daraufhin wird das Dialogfeld **Workflow-Modell hinzufügen** angezeigt. Geben Sie den **Titel** und den **Namen** (optional) ein. Wählen Sie anschließend **Fertig** aus.
-1. The new model is listed in the **Workflow Models** console.
-1. Wählen Sie Ihren neuen Workflow aus und öffnen Sie ihn dann, indem Sie auf [**Bearbeiten **klicken, um ihn zu konfigurieren](#editinganexistingworkflow):   ![wf-01](assets/wf-01.png)
+1. Das Dialogfeld **Arbeitsablaufmodell hinzufügen** wird angezeigt. Geben Sie den **Titel** und den **Namen** (optional) ein. Wählen Sie anschließend **Fertig** aus.
+1. Das neue Modell wird in der Konsole **Workflow-Modelle** aufgeführt.
+1. Wählen Sie Ihren neuen Workflow aus und öffnen Sie ihn dann, indem Sie auf [**Bearbeiten** klicken, um ihn zu konfigurieren](#editinganexistingworkflow):
+   ![wf-01](assets/wf-01.png)
 
 >[!NOTE]
 >
@@ -53,18 +57,18 @@ Gehen Sie folgendermaßen vor, um einen neuen Workflow mit dem Editor zu erstell
 >
 >Dieser Ordner kann anschließend zum [Verwalten des Zugriffs auf die Modelle in diesem Ordner](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that) verwendet werden.
 
-## Bearbeiten von Workflows {#editing-a-workflow}
+## Bearbeiten von Workflows  {#editing-a-workflow}
 
 Sie können jedes vorhandene Workflow-Modell zu folgenden Zwecken bearbeiten:
 
 * [zum Definieren von Schritten](#addingasteptoamodel-) und ihren [Parametern](#configuring-a-workflow-step)
 * zum Konfigurieren von Workflow-Eigenschaften, einschließlich [Phasen](#configuring-workflow-stages-that-show-workflow-progress), [egal ob es sich um einen Übergangs-Workflow handelt](#creatingatransientworkflow-) und/oder [der Workflow mehrere Ressourcen verwendet](#configuring-a-workflow-for-multi-resource-support)
 
-Das Bearbeiten eines (vordefinierten) [**Standard- bzw. Legacy **-Workflows](#editing-a-default-or-legacy-workflow-for-the-first-time)umfasst einen zusätzlichen Schritt, um sicherzustellen, dass eine[sichere Kopie](/help/sites-developing/workflows-best-practices.md#locations-workflow-models)erstellt wird, bevor Sie Änderungen vornehmen.
+Das Bearbeiten eines (vordefinierten) [**Standard- bzw. Legacy**-Workflows](#editing-a-default-or-legacy-workflow-for-the-first-time) umfasst einen zusätzlichen Schritt, um sicherzustellen, dass eine [sichere Kopie](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) erstellt wird, bevor Sie Änderungen vornehmen.
 
 Wenn Sie mit den Änderungen an Ihrem Workflow fertig sind, müssen Sie zum **Generieren eines Laufzeitmodells** auf **Sync** klicken. Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Synchronisieren von Workflows – Generieren von Laufzeitmodellen {#sync-your-workflow-generate-a-runtime-model}
+### Synchronisieren von Workflows – Generieren von Laufzeitmodellen  {#sync-your-workflow-generate-a-runtime-model}
 
 Wenn Sie rechts in der Editor-Symbolleiste auf **Sync** klicken, wird ein [Laufzeitmodell](/help/sites-developing/workflows.md#runtime-model) generiert. Das Laufzeitmodell ist das Modell, das tatsächlich verwendet wird, wenn ein Benutzer einen Workflow startet. Wenn Sie Ihre Änderungen nicht durch Klicken auf **Sync** synchronisieren, stehen diese nicht zur Laufzeit zur Verfügung.
 
@@ -83,9 +87,11 @@ Wenn Sie ein [Standard- bzw. Legacy-Modell](/help/sites-developing/workflows.md#
 * Der Schritte-Browser (auf der linken Seite) ist nicht verfügbar.
 * Die Symbolleiste weist eine Option zum **Bearbeiten** auf (auf der rechten Seite).
 * Zunächst werden das Modell und seine Eigenschaften im schreibgeschützten Modus wie folgt dargestellt:
-   * Default workflows are located in `/libs`
-   * Alte Arbeitsabläufe befinden sich unter `/etc`Auswahl von **Bearbeiten** :
-* take a copy of the workflow into `/conf`
+   * Die Workflows befinden sich in `/libs`
+   * Ältere Workflows befinden sich in `/etc`
+Auswählen 
+**** Editwill:
+* eine Kopie des Workflows in `/conf`
 * Der Schritte-Browser wird verfügbar gemacht.
 * Sie erhalten die Möglichkeit, Änderungen vorzunehmen.
 
@@ -114,7 +120,8 @@ Gehen Sie folgendermaßen vor, um Schritte zu Ihrem Workflow-Modell hinzuzufüge
 
    * Die Option **Filter** zum Filtern nach bestimmten Schritten.
    * Verwenden Sie das Dropdown-Menü, um die Auswahl auf eine bestimmte Gruppe von Schritten zu begrenzen.
-   * Select the Show Description icon ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) to show more details about the appropriate step.
+   * Klicken Sie auf das Symbol Beschreibung anzeigen ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png), um weitere Details zum entsprechenden Schritt anzuzeigen.
+
    ![wf-02](assets/wf-02.png)
 
 1. Ziehen Sie die entsprechenden Schritte an die gewünschte Stelle im Modell,
@@ -131,26 +138,26 @@ Gehen Sie folgendermaßen vor, um Schritte zu Ihrem Workflow-Modell hinzuzufüge
 
    Sie können vorhandene Schritte wie beim [Seiten-Editor](/help/sites-authoring/editing-content.md) darüber hinaus kopieren, ausschneiden, einfügen, gruppieren oder löschen.
 
-   Split steps can also be collapsed/expanded using the toolbar option: ![wf-collapseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
+   Unterteilte Schritte können auch mithilfe der Symbolleistenoption reduziert/erweitert werden: ![wf-collapse-expanse-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
 
 1. Bestätigen Sie Ihre Änderungen, indem Sie in der Editor-Symbolleiste auf **Sync** klicken, um das Laufzeitmodell zu generieren.
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Konfigurieren von Workflow-Schritten {#configuring-a-workflow-step}
+### Konfigurieren von Workflow-Schritten  {#configuring-a-workflow-step}
 
 Sie können das Verhalten von Workflow-Schritten über das Dialogfeld **Schritt-Eigenschaften** **** konfigurieren und anpassen.
 
 1. Führen Sie zum Öffnen des Dialogfelds **Schritt-Eigenschaften** einen der folgenden Schritte durch:
 
-   * Click/tap the* *step in the workflow model and select **Configure** from the component toolbar.
+   * Klicken Sie auf den Schritt* *im Workflow-Modell und wählen Sie **Konfigurieren** in der Komponenten-Symbolleiste aus.
 
    * Doppelklicken Sie auf den Schritt.
    >[!NOTE]
    >
    >Weitere Informationen zu den primären Schrittkomponenten, die mit AEM installiert werden, finden Sie in der [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md).
 
-1. Konfigurieren Sie die **Schritt-Eigenschaften** nach Bedarf. Die jeweils verfügbaren Eigenschaften hängen vom Schritttyp ab, ggf. stehen auch mehrere Registerkarten zur Verfügung. For example, the default **Participant Step**, present in a new workflow as `Step 1`:
+1. Konfigurieren Sie die **Schritt-Eigenschaften** nach Bedarf. Die jeweils verfügbaren Eigenschaften hängen vom Schritttyp ab, ggf. stehen auch mehrere Registerkarten zur Verfügung. Beispiel: Der standardmäßige **Teilnehmerschritt** befindet sich in einem neuen Arbeitsablauf wie `Step 1`:
 
    ![wf-11](assets/wf-11.png)
 
@@ -159,13 +166,13 @@ Sie können das Verhalten von Workflow-Schritten über das Dialogfeld **Schritt-
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Erstellen von Übergangs-Workflows {#creating-a-transient-workflow}
+### Erstellen von Übergangs-Workflows  {#creating-a-transient-workflow}
 
 Sie können ein [Übergangs-](/help/sites-developing/workflows.md#transient-workflows)Workflow-Modell erstellen, wenn Sie ein neues Modell erstellen oder ein vorhandenes Modell bearbeiten:
 
 1. Öffnen Sie das Workflow-Modell zur [Bearbeitung](#editinganexistingworkflow).
 1. Wählen Sie in der Symbolleiste die Option **Eigenschaften für Workflow-Modell** aus.
-1. In the dialog activate **Transient Workflow** (or deactivate if required):
+1. Aktivieren Sie im Dialogfeld **Übergangsarbeitsablauf** (oder deaktivieren Sie ggf.):
 
    ![wf-07](assets/wf-07.png)
 
@@ -179,22 +186,22 @@ Sie können ein [Übergangs-](/help/sites-developing/workflows.md#transient-work
 
 ## Workflow-Modelle in der Touch-Benutzeroberfläche verfügbar machen {#classic2touchui}
 
-If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. Die folgenden Schritte veranschaulichen die Verwendung des Workflow-Modells **[!UICONTROL Request for Activation]**.
+Wenn ein Workflow-Modell in der klassischen Benutzeroberfläche vorhanden ist, aber im Popupmenü &quot;Auswahl&quot;in der Leiste **[!UICONTROL Zeitschiene]** der Touch-Benutzeroberfläche fehlt, befolgen Sie die Konfiguration, um es verfügbar zu machen. Die folgenden Schritte veranschaulichen die Verwendung des Workflow-Modells **[!UICONTROL Anforderung der Aktivierung]**.
 
-1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Access an asset using `/assets.html/content/dam` path. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Timeline]** in der linken Leiste. Klicken Sie auf Arbeitsablauf **[!UICONTROL starten]** und vergewissern Sie sich, dass das **[!UICONTROL Aktivierungsmodell]** nicht in der Popup-Liste vorhanden ist.
+1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Greifen Sie über den Pfad `/assets.html/content/dam` auf ein Asset zu. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Timeline]** in der linken Leiste. Klicken Sie auf **[!UICONTROL Beginn-Workflow]** und bestätigen Sie, dass das **[!UICONTROL Anforderungsmodell für Aktivierung]** nicht in der Popup-Liste vorhanden ist.
 
-1. Navigieren Sie zu **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
+1. Navigieren Sie durch **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
 
-1. Select **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+1. Wählen Sie **[!UICONTROL Erstellen > Tag erstellen]**. Stellen Sie **[!UICONTROL Title]** auf `DAM` und **[!UICONTROL Name]** auf `dam` ein. Klicken Sie auf **[!UICONTROL Übermitteln]**.
    ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
 
-1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** und dann **[!UICONTROL Bearbeiten]**.
+1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie **[!UICONTROL Anforderung der Aktivierung]** und dann **[!UICONTROL Bearbeiten]**.
 
-1. Wählen Sie &quot; **[!UICONTROL Bearbeiten]**&quot;, öffnen Sie das Menü &quot; **[!UICONTROL Seiteninformationen]** &quot;, wählen Sie dort &quot;Eigenschaften ****&#x200B;öffnen&quot;und gehen Sie zur Registerkarte &quot; **[!UICONTROL Grundeinstellungen]** &quot;(falls nicht bereits geöffnet).
+1. Wählen Sie **[!UICONTROL Bearbeiten]**, öffnen Sie das Menü **[!UICONTROL Seiteninformationen]** und wählen Sie **[!UICONTROL Eigenschaften öffnen]** und gehen Sie zur Registerkarte **[!UICONTROL Einfach]** (falls noch nicht geöffnet).
 
-1. Zu `Workflow : DAM`Tags **** hinzufügen. Bestätigen Sie die Auswahl mit dem Häkchen.
+1. hinzufügen `Workflow : DAM` in **[!UICONTROL Tags]**-Feld. Bestätigen Sie die Auswahl mit dem Häkchen.
 
-1. Bestätigen Sie das Hinzufügen des Tags mit **[!UICONTROL Speichern und Schließen]**.
+1. Bestätigen Sie das Hinzufügen des Tags mit **[!UICONTROL Speichern &amp; Schließen]**.
    ![Seiteneigenschaften des Modells bearbeiten](assets/workflow_model_edit_activation1.png)
 
 1. Schließen Sie den Prozess mit **[!UICONTROL Synchronisieren]** ab. Der Workflow ist jetzt in der Touch-fähigen Benutzeroberfläche verfügbar.
@@ -206,7 +213,7 @@ Sie konfigurieren ein Workflow-Modell für die [Unterstützung für mehrere Ress
 1. Öffnen Sie das Workflow-Modell zur [Bearbeitung](#editinganexistingworkflow).
 1. Wählen Sie in der Symbolleiste die Option **Eigenschaften für Workflow-Modell** aus.
 
-1. In the dialog activate **Multi Resource Support** (or deactivate if required):
+1. Aktivieren Sie im Dialogfeld **Multi-Resource-Unterstützung** (oder deaktivieren Sie ggf.):
 
    ![wf-08](assets/wf-08.png)
 
@@ -214,7 +221,7 @@ Sie konfigurieren ein Workflow-Modell für die [Unterstützung für mehrere Ress
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-### Konfigurieren von Workflow-Phasen (die den Workflow-Fortschritt anzeigen) {#configuring-workflow-stages-that-show-workflow-progress}
+### Konfigurieren von Workflow-Phasen (die den Workflow-Fortschritt anzeigen)  {#configuring-workflow-stages-that-show-workflow-progress}
 
 Die [Workflow-Phasen](/help/sites-developing/workflows.md#workflow-stages) helfen Ihnen bei der Visualisierung des Fortschritts bei der Verarbeitung von Aufgaben.
 
@@ -241,7 +248,7 @@ Gehen Sie folgendermaßen vor, um **Phasen** zu definieren:
 
    Eine Phase kann mehreren Schritten zugeordnet werden. Beispiel:
 
-   | **Schritt** | **Phase** |
+   | **Schritt** | **Staging** |
    |---|---|
    | Schritt 1 | Erstellen |
    | Schritt 2 | Erstellen |
@@ -254,7 +261,7 @@ Gehen Sie folgendermaßen vor, um **Phasen** zu definieren:
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-## Exportieren von Workflow-Modellen in Pakete {#exporting-a-workflow-model-in-a-package}
+## Exportieren von Workflow-Modellen in Pakete  {#exporting-a-workflow-model-in-a-package}
 
 Gehen Sie folgendermaßen vor, um ein Workflow-Modell in ein Paket zu exportieren:
 
@@ -287,7 +294,7 @@ Gehen Sie folgendermaßen vor, um ein Workflow-Modell in ein Paket zu exportiere
 1. Wählen Sie in der Symbolleiste Ihrer Paketdefinition die Option **Build** aus.
 1. Wählen Sie in der Symbolleiste Ihres Pakets die Option **Herunterladen** aus.
 
-## Verwenden von Workflows zum Verarbeiten von Formularübermittlungen {#using-workflows-to-process-form-submissions}
+## Verwenden von Workflows zum Verarbeiten von Formularübermittlungen  {#using-workflows-to-process-form-submissions}
 
 Sie können ein Formular so konfigurieren, dass es durch den ausgewählten Workflow verarbeitet wird. Wenn Benutzer das Formular übermitteln, wird eine neue Workflow-Instanz mit den Daten der Formularübermittlung als Nutzlast erstellt.
 
@@ -296,7 +303,7 @@ Gehen Sie folgendermaßen vor, um den Workflow zur Verwendung mit Ihrem Formular
 1. Erstellen Sie eine neue Seite und öffnen Sie sie zur Bearbeitung.
 1. Fügen Sie der Seite die Komponente **Formular** hinzu.
 1. **Konfigurieren** Sie die Komponente **Formular-Start**, die auf der Seite angezeigt wird.
-1. Use **Start Workflow** to select the desired workflow from those available:
+1. Wählen Sie mit **Beginn Workflow** den gewünschten Workflow aus den verfügbaren Arbeitsabläufen aus:
 
    ![wf-12](assets/wf-12.png)
 
@@ -308,13 +315,13 @@ Beim Testen eines Workflows ist es sinnvoll, verschiedene Nutzlasttypen zu verwe
 
 Testen Sie Ihren neuen Workflow beispielsweise wie folgt:
 
-1. [Starten Sie Ihr Workflow-Modell](/help/sites-administering/workflows-starting.md) von der Konsole aus.
+1. [Beginn Sie Ihr Workflow-](/help/sites-administering/workflows-starting.md) Modell über die Konsole.
 1. Definieren Sie die **Nutzlast** und bestätigen Ihre Eingaben.
 
 1. Ergreifen Sie die erforderlichen Maßnahmen, damit der Workflow fortgesetzt wird.
 1. Überwachen Sie während der Ausführung des Workflows die Protokolldateien.
 
-Sie können AEM auch so konfigurieren, dass die **DEBUG**-Meldungen in den Protokolldateien angezeigt werden. See [Logging](/help/sites-deploying/configure-logging.md) for further information and when the development is finished, set the **Log Level** back to **Info**.
+Sie können AEM auch so konfigurieren, dass die **DEBUG**-Meldungen in den Protokolldateien angezeigt werden. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md). Wenn die Entwicklung abgeschlossen ist, setzen Sie **Protokollierungsstufe** auf **Info** zurück.
 
 ## Beispiele {#examples}
 
@@ -322,7 +329,7 @@ Sie können AEM auch so konfigurieren, dass die **DEBUG**-Meldungen in den Proto
 
 Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen, wird im folgenden Beispiel eine Variante des Workflows `Publish Example` erstellt.
 
-1. [Erstellen Sie ein neues Workflow-Modell.](#creating-a-new-workflow)
+1. [Erstellen Sie ein neues Workflow-Modell](#creating-a-new-workflow).
 
    Der neue Workflow umfasst Folgendes:
 
@@ -330,32 +337,33 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
    * `Step 1`
    * **Prozessende**
 
-1. Delete `Step 1` (as it is the wrong step type for this example):
+1. Löschen Sie `Step 1` (da es sich bei diesem Beispiel um den falschen Schritttyp handelt):
 
-   * Click on the step and select **Delete** from the component toolbar. Bestätigen Sie die Aktion.
+   * Klicken Sie auf den Schritt und wählen Sie **Löschen** aus der Komponenten-Symbolleiste. Bestätigen Sie die Aktion.
 
-1. From the **Workflow** selection of the steps browser, drag a **Participant Step** onto the workflow and position it between **Flow Start** and **Flow End**.
+1. Ziehen Sie aus der Auswahl des Schrittbrowsers **Workflow** einen **Teilnehmerschritt** in den Workflow und positionieren Sie ihn zwischen **Flow-Beginn** und **Flussende**.
 1. Führen Sie zum Öffnen des Dialogfelds „Eigenschaften“ einen der folgenden Schritte durch:
 
-   * Click on the participant step and select **Configure** from the component toolbar.
+   * Klicken Sie auf den Schritt Teilnehmer und wählen Sie **Konfigurieren** in der Komponenten-Symbolleiste aus.
    * Doppelklicken Sie auf den Teilnehmer-Schritt.
 
-1. In the **Common** tab enter `Validate Content` for both the **Title** and **Description**.
+1. Geben Sie auf der Registerkarte **Allgemein** `Validate Content` für **Titel** und **Beschreibung** ein.
 1. Öffnen Sie die Registerkarte **Benutzer/Gruppe**:
 
    * Aktivieren Sie das Kontrollkästchen **Benachrichtigen Sie den Benutzer per E-Mail**.
-   * Select `Administrator` ( `admin`) for the **User/Group** field.
+   * Wählen Sie `Administrator` ( `admin`) für das Feld **Benutzer/Gruppe** aus.
+
    >[!NOTE]
    >
    >Damit E-Mails versendet werden können, müssen [der E-Mail-Dienst und die Benutzerkontoinformationen konfiguriert werden](/help/sites-administering/notification.md).
 
 1. Bestätigen Sie Ihre Änderungen durch Klicken auf das Häkchen-Symbol.
 
-   You will be returned to the overview of the workflow model, here the participant step will have been renamed to `Validate Content`.
+   Sie erhalten die Übersicht über das Workflow-Modell zurück. Hier wurde der Teilnehmerschritt in `Validate Content` umbenannt.
 
-1. Drag an **Or Split** onto the workflow and position it between `Validate Content` and **Flow End**.
+1. Ziehen Sie ein **oder teilen** in den Workflow und positionieren Sie es zwischen `Validate Content` und **Flussende**.
 1. Öffnen Sie die **ODER-Teilung** zur Konfiguration.
-1. Konfigurieren Sie Folgendes:
+1. Konfigurieren:
 
    * **Allgemein**: Geben Sie den Teilungsnamen an.
    * **Zweig 1**: Wählen Sie **Standardroute** aus.
@@ -369,13 +377,13 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
 
    * **Benutzer/Gruppe**: z. B. `projects-administrators`
 
-   * **Benutzer per E-Mail** benachrichtigen: Aktivieren Sie diese Option, damit der Benutzer per E-Mail benachrichtigt wird.
+   * **Benutzer per E-Mail** benachrichtigen: Aktivieren Sie diese Option, um den Benutzer per E-Mail benachrichtigen zu lassen.
 
 1. Ziehen Sie einen **Prozessschritt** auf den rechten Zweig, öffnen Sie die Eigenschaften, geben Sie die folgenden Werte an und bestätigen Sie die Änderungen:
 
    * **Titel**: `Publish Page as Requested`
 
-   * **Prozess**: auswählen `Activate Page`. Mit diesem Prozess wird die ausgewählte Seite in den Publisher-Instanzen veröffentlicht.
+   * **Prozess**: auswählen  `Activate Page`. Mit diesem Prozess wird die ausgewählte Seite in den Publisher-Instanzen veröffentlicht.
 
 1. Klicken Sie in der Editor-Symbolleiste auf **Sync**, um das Laufzeitmodell zu generieren.
 
@@ -401,14 +409,14 @@ Gehen Sie folgendermaßen vor, um eine Regel für eine ODER-Teilung zu definiere
 
    >[!NOTE]
    >
-   >The scripts must have a [function `check()`](#function-check) that returns a boolean.
+   >Die Skripten müssen über eine [Funktion `check()`](#function-check) verfügen, die einen booleschen Wert zurückgibt.
 
 1. Bearbeiten Sie den Workflow und fügen Sie die **ODER-Teilung** zum Modell hinzu.
 1. Bearbeiten Sie die Eigenschaften von **Zweig 1** der **ODER-Teilung**:
 
-   * Define this as the **Default Route** by setting the **Value** to `true`.
+   * Definieren Sie dies als **Standardweg**, indem Sie **Wert** auf `true` setzen.
 
-   * As **Rule**, set the path to the script. Beispiel:
+   * Legen Sie als **Regel** den Pfad zum Skript fest. Beispiel:
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
    >
@@ -416,21 +424,21 @@ Gehen Sie folgendermaßen vor, um eine Regel für eine ODER-Teilung zu definiere
 
 1. Bearbeiten Sie die Eigenschaften von **Zweig 2** der **ODER-Teilung**:
 
-   * As **Rule**, set the path to the other script. Beispiel:
+   * Legen Sie als **Regel** den Pfad zum anderen Skript fest. Beispiel:
       `/apps/myapp/workflow/scripts/myscript2.ecma`
 
-1. Legen Sie die Eigenschaften der einzelnen Schritte in jedem Zweig fest. Make sure the **User/Group** is set.
+1. Legen Sie die Eigenschaften der einzelnen Schritte in jedem Zweig fest. Stellen Sie sicher, dass **Benutzer/Gruppe** eingestellt ist.
 1. Klicken Sie in der Editor-Symbolleiste auf **Sync**, um Ihre Änderungen am Laufzeitmodell beizubehalten.
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
 
-#### Funktion „Check()“ {#function-check}
+#### Funktionsprüfung() {#function-check}
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter [Verwenden von ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
 
-The following sample script returns `true` if the node is a `JCR_PATH` located under `/content/we-retail/us/en`:
+Das folgende Beispielskript gibt `true` zurück, wenn sich die Node unter `/content/we-retail/us/en` befindet:`JCR_PATH`
 
 ```
 function check() {
@@ -453,4 +461,4 @@ function check() {
 
 Sie können jeden der vorkonfigurierten Workflows anpassen. Um das Verhalten anzupassen, überlagern Sie Details des entsprechenden Workflows.
 
-Beispielsweise der Workflow **Aktivierungsanfrage**. Dieser wird für die Veröffentlichung von Seiten innerhalb von **Sites** verwendet und automatisch ausgelöst, wenn ein Inhaltsautor nicht über die entsprechenden Replikationsrechte verfügt. See [Customizing Page Authoring - Customizing the Request for Activation Workflow](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) for further details.
+Beispielsweise der Workflow **Aktivierungsanfrage**. Dieser wird für die Veröffentlichung von Seiten innerhalb von **Sites** verwendet und automatisch ausgelöst, wenn ein Inhaltsautor nicht über die entsprechenden Replikationsrechte verfügt. Weitere Informationen finden Sie unter [Anpassen der Seitenbearbeitung - Anpassen des Arbeitsablaufs für die Aktivierung](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow).
