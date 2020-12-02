@@ -12,6 +12,9 @@ discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 93%
 
 ---
 
@@ -46,15 +49,15 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 Die Protokollebenen lauten wie folgt:
 
-| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen, und das Installationsprogramm kann nicht fortgesetzt werden. |
+| 0 | Schwerwiegender Fehler | Die Aktion ist fehlgeschlagen und das Installationsprogramm kann nicht fortgesetzt werden. |
 |---|---|---|
 | 1 | Fehler | Die Aktion ist fehlgeschlagen. Die Installation wird fortgesetzt, aber ein CRX-Teil wurde nicht ordnungsgemäß installiert und funktioniert daher nicht. |
-| 2 | Warnung | Die Aktion war erfolgreich, hatte aber Probleme. CRX funktioniert ggf. nicht ordnungsgemäß. |
+| 2 | Warnung | Die Aktion war erfolgreich, stieß aber auf Probleme. CRX funktioniert ggf. nicht ordnungsgemäß. |
 | 3 | Informationen | Die Aktion war erfolgreich. |
 
 ## Ausführliche Option „verbose“ zur Fehlerbehebung {#verbose-option-used-for-troubleshooting}
 
-Wenn Sie CRX starten, können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen:
+Beim Beginn von CRX können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen:
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 
