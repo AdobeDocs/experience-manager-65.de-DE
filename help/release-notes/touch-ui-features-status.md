@@ -1,6 +1,6 @@
 ---
 title: Status der Funktionen der Touch-optimierten Benutzeroberfläche
-description: Spezifische Versionshinweise [!DNL Adobe Experience Manager] zur Touch-Enabled-Benutzeroberfläche.
+description: 'Spezifische Versionshinweise zur touchaktivierten Benutzeroberfläche. [!DNL Adobe Experience Manager] '
 translation-type: tm+mt
 source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
 workflow-type: tm+mt
@@ -12,15 +12,15 @@ ht-degree: 49%
 
 # Status der Funktionen der Touch-optimierten Benutzeroberfläche {#touch-ui-feature-status}
 
-Ab AEM 6.4 wird die [klassische Benutzeroberfläche nicht mehr unterstützt](../release-notes/deprecated-removed-features.md). Die Benutzeroberfläche von Classic wird durch Adobe nicht weiter verbessert, und Benutzer sollten die leistungsstarken neuen Funktionen der touchfähigen Benutzeroberfläche nutzen.
+Ab AEM 6.4 [Klassische Benutzeroberfläche ist veraltet](../release-notes/deprecated-removed-features.md). Die Benutzeroberfläche von Classic wird durch Adobe nicht weiter verbessert, und Benutzer sollten die leistungsstarken neuen Funktionen der touchfähigen Benutzeroberfläche nutzen.
 
-Starting with version 6.0, AEM introduced a new user interface referred as the &quot;touch-enabled UI&quot; (simply called &quot;Touch UI&quot;) that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. Da die Funktionsparität nahezu erreicht ist, wurde diese zur Standard-Benutzeroberfläche in AEM mit der alten, Desktop-orientierten Oberfläche, die als &quot;klassische Benutzeroberfläche&quot;bezeichnet wird.
+Ab Version 6.0 hat AEM eine neue Benutzeroberfläche eingeführt, die als &quot;touchfähige Benutzeroberfläche&quot;(einfach &quot;Touch UI&quot; genannt) bezeichnet wird und an den [!DNL Adobe Experience Cloud]- und den allgemeinen Adobe-Benutzeroberflächenrichtlinien ausgerichtet ist. Da die Funktionsparität nahezu erreicht ist, wurde diese zur Standard-Benutzeroberfläche in AEM mit der alten, Desktop-orientierten Oberfläche, die als &quot;klassische Benutzeroberfläche&quot;bezeichnet wird.
 
 Die meisten Funktionen sind zwar in der Touch-optimierten Benutzeroberfläche vorhanden, allerdings ist die Entwicklung einiger Funktionen noch nicht abgeschlossen. Diese werden dann in künftigen Versionen hinzugefügt.
 
 Die folgende Liste zeigt den aktuellen Status der in AEM 6.5 implementierten Funktionen.
 
-For recommendations for customers that upgrade to AEM 6.5, see [User interface recommendations for customers](/help/sites-deploying/ui-recommendations.md).
+Empfehlungen für Kunden, die auf AEM 6.5 aktualisieren, finden Sie unter [Empfehlungen für die Benutzeroberfläche für Kunden](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -40,11 +40,11 @@ For recommendations for customers that upgrade to AEM 6.5, see [User interface r
 
 ## Funktionsstatus: Sites Admin {#feature-status-sites-admin}
 
-This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and the status in the touch-enabled UI (`/sites.html`).
+Dies ist eine Liste von Funktionen, die der klassische Site-Administrator der Benutzeroberfläche (`/siteadmin`) hat und den Status in der touchfähigen Benutzeroberfläche (`/sites.html`).
 
 | Funktion | Status | Kommentar |
 |--- |--- |--- |
-| Site-Hierarchie navigieren | Fertig stellen | AEM 6.4 wurde eine [Content-Tree-Ansicht](/help/sites-authoring/basic-handling.md#content-tree)eingeführt. |
+| Site-Hierarchie navigieren | Fertig stellen | AEM 6.4 wurde eine [Content Tree-Ansicht](/help/sites-authoring/basic-handling.md#content-tree) eingeführt. |
 | Workflow starten | Fertig stellen |  |
 | Neue Seite erstellen | Umfassend |  |
 | Neue Site erstellen | Umfassend |  |
@@ -78,7 +78,7 @@ This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and 
 
 ## Funktionsstatus: Seiten-Editor {#feature-status-page-editor}
 
-This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the status in the touch-enabled (`/editor.html`).
+Dies ist eine Liste von Funktionen, die der klassische UI-Seiten-Editor (`/cf#`) hat und den Status in der touchfähigen (`/editor.html`).
 
 | Funktion | Status | Kommentar |
 |--- |--- |--- |
@@ -106,7 +106,7 @@ This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the s
 | Kopieren einer Seite | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu kopieren](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Seite verschieben | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu verschieben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | Seite löschen | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu löschen](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| Verweise einblenden | Entfernt | Use Site Admin to see the [detailed reference list](/help/sites-authoring/author-environment-tools.md#references). |
+| Verweise einblenden | Entfernt | Verwenden Sie Site-Administrator, um die [detaillierte Referenz-Liste](/help/sites-authoring/author-environment-tools.md#references) anzuzeigen. |
 | Auditprotokoll | Entfernt | Verwenden Sie Sites Admin und [öffnen Sie die Aktivitätsschiene](/help/sites-authoring/author-environment-tools.md#events-timeline). |
 | Version erstellen | Entfernt | Verwenden Sie Sites Admin, um [neue Versionen zu erstellen](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
 | Version wiederherstellen | Entfernt | Verwenden Sie Sites Admin, um [Versionen wiederherzustellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
@@ -130,7 +130,7 @@ Dies ist eine Liste von Funktionen, die die klassischen Benutzeroberflächentext
 | Funktion | Status | Kommentar |
 |--- |--- |--- |
 | Rich-Text-Editor | Fertig stellen | Einsetzbar, im Dialog und im Vollbildmodus. |
-| RTE-Plug-ins aktivieren/deaktivieren | Fertig stellen | Kann mit dem [Vorlageneditor](/help/sites-authoring/templates.md)ausgeführt werden. |
+| RTE-Plug-ins aktivieren/deaktivieren | Fertig stellen | Kann mit dem [Vorlagen-Editor](/help/sites-authoring/templates.md) ausgeführt werden. |
 | RTE für Text verwenden | Fertig stellen |  |
 | RTE-Plug-in: Links und Anker | Fertig stellen |  |
 | RTE-Plug-in: Zeichenzuordnung | Fertig stellen |  |
@@ -150,8 +150,8 @@ Dies ist eine Liste von Funktionen, die die klassischen Benutzeroberflächentext
 | RTE-Plug-In: Inline-Bilder zulassen | Fertig stellen |  |
 | Tabelleneditor | Fertig stellen | Einsetzbar, im Dialog und im Vollbildmodus. |
 | Bild in Tabellenzelle ziehen | Fertig stellen | In-line-fähig |
-| Bild-Editor | Fertig stellen | Einsetzbar, im Dialog und im Vollbildmodus. |
-| IPE-Plug-ins aktivieren/deaktivieren | Fertig stellen | In AEM 6.3 wurde eine Benutzeroberfläche im [Vorlageneditor](/help/sites-authoring/templates.md)eingeführt. |
+| Bildeditor | Fertig stellen | Einsetzbar, im Dialog und im Vollbildmodus. |
+| IPE-Plug-ins aktivieren/deaktivieren | Fertig stellen | In AEM 6.3 wurde eine Benutzeroberfläche im [Vorlagen-Editor](/help/sites-authoring/templates.md) eingeführt. |
 | IPE-Plug-in: Beschneiden | Fertig stellen |  |
 | IPE-Plug-in: Spiegeln | Fertig stellen |  |
 | IPE-Plug-in: Rückgängig/Wiederholen | Fertig stellen |  |
@@ -167,7 +167,7 @@ Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberflä
 |--- |--- |--- |
 | Aufgabenverwaltung | Ersetzt | 6.0 Einführung von Projekten und Aufgaben. |
 | Workflow-Posteingang | Fertig stellen |  |
-| Konfiguration von Workflow zu Seitenvorlage (`/etc/workflow/wcm/templates.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Workflow zur Konfiguration von Seitenvorlagen (`/etc/workflow/wcm/templates.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
 | Tagging-Admin-Benutzeroberfläche | Fertig stellen |  |
 | MSM/Blueprint Control Center | Fertig stellen |  |
 | Blueprint Manager-Benutzeroberfläche | Fertig stellen |  |
