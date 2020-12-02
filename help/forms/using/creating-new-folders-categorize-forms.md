@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 81%
 
 ---
 
@@ -28,14 +31,15 @@ Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 
 * Erstellen eines neuen leeren Ordners
 
-1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.
+1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche unter `https://<server>:<port>/aem/forms.html` an.
 1. Navigieren Sie zum Speicherort, unter dem Sie einen Ordner erstellen möchten.
-1. Click the ![aem6forms_add](assets/aem6forms_add.png) icon in the toolbar and then select **[!UICONTROL Create Folder]**.
+1. Klicken Sie auf das Symbol ![aem6forms_add](assets/aem6forms_add.png) in der Symbolleiste und wählen Sie **[!UICONTROL Ordner erstellen]**.
 
 1. Geben Sie die folgenden Details ein:
 
-   * **** Titel: Anzeigename für den Ordner
+   * **Titel:** Anzeigename für den Ordner
    * **Name:***(Obligatorisch)* Der Knotenname, unter dem Sie den Ordner im Repository speichern möchten
+
    >[!NOTE]
    >
    >Standardmäßig wird der Wert des Namensfelds automatisch aus dem Titel gefüllt. Der Name darf nur alphanumerische Zeichen oder die Sonderzeichen Bindestrich (-) und Unterstrich (_) enthalten. Andere Sonderzeichen, die in den Titel eingegeben wurden, werden automatisch durch einen Bindestrich ersetzt und Sie werden aufgefordert, den neuen Namen zu bestätigen. Sie können mit dem vorgeschlagenen Namen fortfahren oder diesen weiter bearbeiten.
@@ -44,12 +48,12 @@ Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 
    Ein neuer Ordner mit dem definierten Titel wird an der aktuellen Position in der Asset-Liste angezeigt.
 
-   Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt die Übermittlung mit einem Fehler fehl. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) icon that appears beside the name field.
+   Wenn ein Ordner mit dem angegebenen Namen vorhanden ist, schlägt die Übermittlung mit einem Fehler fehl. Sie können die Fehlermeldung durch Bewegen des Mauszeigers über das Fehlersymbol ![aem6forms_error_alert](assets/aem6forms_error_alert.png), das neben dem Namensfeld angezeigt wird, Ansicht.
 
 ### Bearbeiten des Ordnertitels {#edit-the-folder-title-br}
 
 1. Wählen Sie den Ordner aus, dessen Namen Sie bearbeiten möchten.
-1. Klicken Sie in der Symbolleiste auf das Symbol ![aem6forms_edit](assets/aem6forms_edit.png) .
+1. Klicken Sie in der Symbolleiste auf das Symbol zum Bearbeiten ![aem6forms_edit](assets/aem6forms_edit.png).
 1. Geben Sie den neuen Titel ein. Das Textfeld wird vorab mit dem aktuellen Wert des Ordnertitels gefüllt. Sie können diesen in einen neuen Wert ändern.
 1. Klicken Sie auf **[!UICONTROL Übermitteln].**
 
