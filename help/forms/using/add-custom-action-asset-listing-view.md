@@ -20,7 +20,7 @@ ht-degree: 62%
 
 # Hinzufügen benutzerdefinierter Aktionen zur Ansicht „Asset-Auflistung“{#add-custom-action-to-the-asset-listing-view}
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Assets verwalten“ hinzuzufügen.
 
@@ -45,11 +45,11 @@ In den nachstehenden Schritten wird der Ansicht „Asset-Auflistung“ für Brie
 
 Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF von Briefen herunterladen können, führen Sie folgende Schritte aus:
 
-1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
+1. Gehen Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 
 1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen &quot;items&quot;mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;items&quot;im Auswahlordner, indem Sie die folgenden Schritte durchführen:
 
-   1. Right-click the **items** folder at the following path and select **Overlay Node**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **items** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -66,7 +66,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
       **Pfad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **Ort:** /apps/
+      **Ort:** /Apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -78,7 +78,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
 1. Fügen Sie unter dem neu erstellten Ordner &quot;items&quot;einen Knoten für die benutzerdefinierte Schaltfläche/Aktion in einem bestimmten Asset hinzu (Beispiel: downloadFlatPDF) mit den folgenden Schritten:
 
-   1. Right-click the **items** folder and select **Create** > **Create Node**.
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **items** und wählen Sie **Create** > **Create Node**.
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
@@ -105,7 +105,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
         <tr>
         <td>foundation-collection-action</td>
         <td>Zeichenfolge</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> kann ein oder mehrere der folgenden Einträge sein (durch Kommas getrennt): BRIEF,TEXT,LISTE,BEDINGUNG,DATADIKTIONSBUCH</p> </td>
+        <td><p>{"Zielgruppe": ".cq-manageasset-admin-child", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kann ein- oder mehrmals sein, um die Auswahl einzelner oder mehrerer Assets zu ermöglichen, für die die benutzerdefinierte Aktion ausgeführt wird.</p> <p><strong>typecan </strong> kann einer oder mehrere der folgenden Einträge sein (Komma getrennt mehrere Einträge): BRIEF,TEXT,LISTE,BEDINGUNG,DATADIKTIONSBUCH</p> </td>
         </tr>
         <tr>
         <td>icon</td>
@@ -142,7 +142,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
 1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen js mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;items&quot;im Ordner &quot;admin&quot;, indem Sie die folgenden Schritte durchführen:
 
-   1. Right-click the **js** folder at the following path and select **Overlay Node**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **js** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -150,7 +150,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
       **Pfad:** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **Ort:** /apps/
+      **Ort:** /Apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -158,7 +158,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
 1. Erstellen Sie im Ordner „js“ eine Datei mit dem Namen „formaction.js“ mit dem Code für Aktionsbearbeitung der Schaltfläche, indem Sie folgende Schritte durchführen:
 
-   1. Right-click the **js** folder at the following path and select **Create > Create File**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **js** unter folgendem Pfad und wählen Sie **Erstellen > Datei erstellen**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -169,7 +169,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
-      Then append the following code at the end in the formaction.js file (under the /apps branch) and click **Save All**:
+      Hängen Sie dann den folgenden Code am Ende der Datei &quot;formaction.js&quot;(unter der /apps-Verzweigung) an und klicken Sie auf **Alle speichern**:
 
       ```javascript
       /* Action url for xml file to be added.*/
@@ -232,7 +232,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
 1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen &quot;items&quot;mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner &quot;items&quot;im Ordner &quot;actionhandlers&quot;, indem Sie die folgenden Schritte durchführen:
 
-   1. Right-click the **items** folder at the following path and select **Overlay Node**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **items** unter folgendem Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -240,7 +240,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
       **Pfad:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **Ort:** /apps/
+      **Ort:** /Apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -270,7 +270,7 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Right-click the **admin** folder at the following path and select **Create > Create File**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **admin** unter folgendem Pfad und wählen Sie **Erstellen > Datei erstellen**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -355,10 +355,10 @@ Nachdem Sie eine benutzerdefinierte Funktion zum Herunterladen einer einfachen P
 1. Gehen Sie zu `https://'[server]:[port]'/[ContextPath]/projects.html` und melden Sie sich an.
 
 1. Wählen Sie **Formulare > Briefe**. Correspondence Management listet die im System verfügbaren Briefe auf.
-1. Click **Select** and then click a letter to select it.
-1. Select **More** > **&lt;Download Flat PDF>** (The custom functionality created using the instructions this article). Das Dialogfeld „Brief als PDF herunterladen“ wird angezeigt.
+1. Klicken Sie auf **Wählen Sie** und klicken Sie dann auf einen Brief, um ihn auszuwählen.
+1. Wählen Sie **Mehr** > **&lt;Flat-PDF herunterladen>** (Die benutzerdefinierte Funktion, die mit den Anweisungen in diesem Artikel erstellt wurde). Das Dialogfeld „Brief als PDF herunterladen“ wird angezeigt.
 
-   The menu item name, functionality, and alt-text is according to the customization created in [Scenario: Add a command to the Letters list user interface to download flat PDF version of a letter.](#addcommandtoletters)
+   Der Name des Menüelements, die Funktionalität und der Alternativtext entsprechen der unter [Szenario erstellten Anpassung: hinzufügen Sie auf der Benutzeroberfläche &quot;Liste der Briefe&quot;einen Befehl zum Herunterladen einer einfachen PDF-Version eines Briefs.](#addcommandtoletters)
 
    ![Benutzerdefinierte Funktion: Einfache PDF herunterladen](assets/5_downloadflatpdf.png)
 
@@ -366,7 +366,7 @@ Nachdem Sie eine benutzerdefinierte Funktion zum Herunterladen einer einfachen P
 
    >[!NOTE]
    >
-   >Before downloading the letter as a flat PDF, you can create the XML file with the data in the letter using the **Create Report** option.
+   >Bevor Sie den Brief als einfache PDF herunterladen, können Sie die XML-Datei mit den Daten im Brief mit der Option **Bericht erstellen** erstellen erstellen erstellen.
 
    ![Brief als PDF herunterladen](assets/6_downloadflatpdf.png)
 
