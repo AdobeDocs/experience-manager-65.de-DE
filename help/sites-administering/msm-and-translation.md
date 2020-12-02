@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
 source-git-commit: 0885fb6eb6b6a6b8fefd522b2656c8f64e0a537e
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +24,7 @@ Die folgenden Administrationstools sind für die Verwaltung von Websites und Sei
 
 * Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Website-Inhalte an mehreren Stellen und lässt gleichzeitig Varianten zu:
 
-   * [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](/help/sites-administering/msm.md)
+   * [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](/help/sites-administering/msm.md)
 
 * Die Übersetzungsfunktion ermöglicht Ihnen die Automatisierung der Übersetzung von Seiteninhalten, Assets und benutzergenerierten Inhalten, um mehrsprachige Websites zu erstellen und zu pflegen:
 
@@ -51,6 +54,7 @@ Das folgende Diagramm veranschaulicht, wie die Hauptkonzepte sich überschneiden
 >
 >* [MSM](/help/sites-administering/msm.md) verwaltet die Bereitstellung der übersetzten Inhalte von einem Blueprint (z. B. einem globalen Master) in die Live Copies (z. B. die lokalen Sites) innerhalb der Grenzen einer Sprache.
 >* Die AEM-Integrationsfunktionen zur [Übersetzung](/help/sites-administering/translation.md) verwalten kombiniert mit Übersetzungsmanagementdiensten von Drittanbietern die Sprachen und die Übersetzung der Inhalte in diese verschiedenen Sprachen.
+
 >
 >
 Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprach-Master hinweg eingesetzt werden.
@@ -60,8 +64,10 @@ Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprach-Master hinweg 
 >Bei allen Nutzungsszenarien wird empfohlen, die folgenden Best Practices zu lesen:
 >
 >* [Best Practices für MSM](/help/sites-administering/msm-best-practices.md) – insbesondere:
->
->   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+   >
+   >   
+   * [Erstellen einer Website](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM und mehrsprachige Websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Best Practices für die Übersetzung](/help/sites-administering/tc-bp.md)
+
