@@ -12,6 +12,9 @@ discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 68%
 
 ---
 
@@ -26,8 +29,8 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 * In der Autoreninstanz:
 * Melden Sie sich mit Administratorrechten an.
-* browse to the console
-for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* zur Konsole navigieren
+zum Beispiel [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -45,15 +48,22 @@ for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 1. Geben Sie in beiden Fällen Folgendes ein:
 
-   * **Titel**(*Erforderlich*) Der Anzeigentitel für das Tag. Auch wenn es bei der Eingabe keine verbotenen Zeichen gibt, wird empfohlen, keines dieser Sonderzeichen zu verwenden:
+   * **Titel**
+(
+*Erforderlich*) Der Anzeigentitel des Tags. Auch wenn es bei der Eingabe keine verbotenen Zeichen gibt, wird empfohlen, keines dieser Sonderzeichen zu verwenden:
 
-      * `colon (:)` - Namespace-Trennzeichen
+      * `colon (:)` - Namensraum-Trennzeichen
       * `forward slash (/)` - Trennzeichen für Untertags
+
       Diese Zeichen werden möglicherweise nicht angezeigt, wenn sie eingegeben werden.
 
-   * **Name**(*Erforderlich*) Der Knotenname für das Tag.
+   * **Name**
+(
+*Erforderlich*) Der Knotenname für das Tag.
 
-   * **Beschreibung**(*Optional*) Eine Beschreibung des Tags.
+   * **Beschreibung**
+(
+*Optional*) Eine Beschreibung des Tags.
 
    * Wählen Sie **Erstellen** aus.
 
@@ -65,7 +75,7 @@ for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. Sie können **Titel** und **Beschreibung** ändern.
 1. Klicken Sie auf **Speichern**, um das Dialogfeld zu schließen.
 
-## Löschen von Tags {#deleting-tags}
+## Löschen von Tags  {#deleting-tags}
 
 1. Wählen Sie im rechten Bedienfeld das zu löschende Tag aus.
 1. Klicken Sie auf **Löschen**.
@@ -78,13 +88,13 @@ for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. Wählen Sie im rechten Bedienfeld das Tag bzw. den Namespace aus, das/der aktiviert (veröffentlicht) bzw. deaktiviert (dessen Veröffentlichung rückgängig gemacht) werden soll.
 1. Klicken Sie je nach Bedarf auf **Aktivieren** oder **Deaktivieren**.
 
-## Liste – zeigt alle Seiten, die auf Tags verweisen {#list-showing-where-tags-are-referenced}
+## Liste – zeigt alle Seiten, die auf Tags verweisen  {#list-showing-where-tags-are-referenced}
 
 **Liste** öffnet ein neues Fenster, das die Pfade zu allen Seiten enthält, die das markierte Tag verwenden:
 
 ![](assets/list_showing_wheretagsarereferenced.png)
 
-## Verschieben von Tags {#moving-tags}
+## Verschieben von Tags  {#moving-tags}
 
 Um Tag-Administratoren und -Entwicklern die Organisation des Klassifikationsschemas oder die Umbenennung einer Tag-ID zu erleichtern, ist es möglich, ein Tag an einen neuen Ort zu verschieben:
 
@@ -103,7 +113,7 @@ Das Dialogfeld **Tag verschieben** hat folgende Gestalt:
 
 >[!NOTE]
 >
->Autoren sollten Tags nicht verschieben und auch keine Tag-ID ändern. When necessary, Authors should only [change the tag titles](#editing-tags).
+>Autoren sollten Tags nicht verschieben und auch keine Tag-ID ändern. Bei Bedarf sollten Autoren die Tag-Titel nur [ändern.](#editing-tags)
 
 ## Zusammenführen von Tags {#merging-tags}
 
@@ -119,7 +129,7 @@ So führen Sie Tags zusammen:
 
 1. Klicken Sie auf **Zusammenführen**.
 
-The **Merge Tag** dialog looks as follows:
+Das Dialogfeld **Tag zusammenführen** sieht wie folgt aus:
 
 ![](assets/mergetag.png)
 
@@ -130,16 +140,16 @@ So können Sie anzeigen, wie oft ein Tag verwendet wurde:
 1. Öffnen Sie die **Tagging**-Konsole.
 1. Klicken Sie in der oberen Werkzeugleiste auf **Verwendung zählen**. In der Spalte „Zählung“ wird das Ergebnis angezeigt.
 
-## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
+## Verwalten von Tags in verschiedenen Sprachen  {#managing-tags-in-different-languages}
 
-Die optionale Eigenschaft `title` eines Tags kann in mehrere Sprachen übersetzt werden. Tag `titles` can then be displayed according to the user language or to the page language.
+Die optionale Eigenschaft `title` eines Tags kann in mehrere Sprachen übersetzt werden. Tag `titles` kann dann entsprechend der Benutzersprache oder der Seitensprache angezeigt werden.
 
 ### Festlegen von Tag-Titeln in verschiedenen Sprachen {#defining-tag-titles-in-multiple-languages}
 
-The following procedure shows how to translate the `title`of the tag **Animals** into English, German and French:
+Das folgende Verfahren zeigt, wie die `title`des Tags **Tiere** in Englisch, Deutsch und Französisch übersetzt werden kann:
 
-1. Go to the **Tagging** console.
-1. Edit the tag **Animals** below **Tags** > **Stock Photography**.
+1. Gehen Sie zur Konsole **Tagging**.
+1. Bearbeiten Sie das Tag **Tiere** unter **Tags** > **Lagerfotografie**.
 1. Fügen Sie Übersetzungen in den folgenden Sprachen hinzu:
 
    * **Englisch**: Animals
@@ -158,21 +168,21 @@ Wie Sie dem Dialogfeld eine neue Sprache hinzufügen, erfahren Sie im Abschnitt 
 
 ### Anzeigen von Tag-Titeln in Seiteneigenschaften in der angegebenen Sprache {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-By default the tag `titles`in the page properties are displayed in the page language. The tag dialog in the page properties has a language field that enables the display of tag `titles`in a different language. The following procedure describes how to display the tag `titles`in French:
+Standardmäßig wird das Tag `titles`in den Seiteneigenschaften in der Seitensprache angezeigt. Das Tag-Dialogfeld in den Seiteneigenschaften verfügt über ein Sprachfeld, das die Anzeige des Tags `titles`in einer anderen Sprache ermöglicht. Das folgende Verfahren beschreibt, wie das Tag `titles`auf Französisch angezeigt wird:
 
-1. Refer to the previous section to add the French translation to the **Animals** below **Tags** > **Stock Photography**.
+1. Im vorherigen Abschnitt können Sie die französische Übersetzung zu **Tiere** unter **Tags** > **Lagerfotografie** hinzufügen.
 1. Öffnen Sie die Seiteneigenschaften der Seite **Products** in der englischsprachigen Verzweigung der **Geometrixx**-Website.
-1. Open the **Tags/Keywords** dialog (by selecting the pull-down menu to the right of the Tags/Keywords display area) and select the **French** language from the pull-down menu in the bottom right corner.
-1. Scroll using the left-right arrows until able to select the **Stock Photography** tab
+1. Öffnen Sie das Dialogfeld **Tags/Suchbegriffe** (durch Auswahl des Pulldown-Menüs rechts neben dem Anzeigebereich &quot;Tags/Suchbegriffe&quot;) und wählen Sie die Sprache **Französisch** aus dem Pulldown-Menü in der unteren rechten Ecke aus.
+1. Blättern Sie mit den Pfeiltasten nach links rechts, bis Sie die Registerkarte **Lagerfotografie** auswählen können.
 
-   Select the **Animals** (**Animaux**) tag and select outside the dialog to close it and add the tag to the page properties.
+   Wählen Sie das Tag **Tiere** (**Animaux**) und wählen Sie außerhalb des Dialogfelds aus, um es zu schließen und das Tag den Seiteneigenschaften hinzuzufügen.
 
    ![](assets/french_tag.png)
 
-By default, the Page Properties dialog displays the tag `titles`according to the page language.
+Standardmäßig wird im Dialogfeld &quot;Seiteneigenschaften&quot;das Tag `titles`entsprechend der Sprache der Seite angezeigt.
 
 Die Sprache für das Tag wird im Allgemeinen von der Seitensprache übernommen, falls diese eingestellt ist. Wird das Widget [`tag` in anderen Fällen verwendet (z. B. in Formularen oder Dialogfeldern), hängt die Tag-Sprache vom Kontext ab.](/help/sites-developing/building.md#tagging-on-the-client-side)
 
 >[!NOTE]
 >
->The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
+>Die Tag-Cloud und die Meta-Suchbegriffe in der Standardseitenkomponente verwenden das lokalisierte Tag `titles`basierend auf der Seitensprache, sofern verfügbar.
