@@ -35,16 +35,16 @@ Eine Diskussion der Optionen für die Datenspeicherung und der Bereitstellungsto
 
 In der Autorenkonfiguration, um die Datenspeicherung-Konfigurationskonsole zu erreichen.
 
-* Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Datenspeicherung Configuration.]**
+* Wählen Sie in der globalen Navigation **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Datenspeicherung Configuration]**
 
 So wählen Sie eine andere Datenspeicherung als die Standard-JCR-Option aus:
 
 * Option auswählen
 * Passend konfigurieren
 
-   * Siehe Details zur [Auswahl von MSRP](msrp.md#select-msrp)
-   * Siehe Details zur [Auswahl von DSRP](dsrp.md#select-dsrp)
-   * Siehe Details zur [Auswahl von ASRP](asrp.md#select-asrp)
+   * Siehe Details zu [Auswahl von MSRP](msrp.md#select-msrp)
+   * Siehe Details zur Auswahl von DSRP[](dsrp.md#select-dsrp)
+   * Siehe Details zur Auswahl von ASRP[](asrp.md#select-asrp)
 
 * Klicken Sie auf **[!UICONTROL Übermitteln]**.
 
@@ -52,10 +52,10 @@ So wählen Sie eine andere Datenspeicherung als die Standard-JCR-Option aus:
 
 Beachten Sie, dass bei fehlender Auswahl das AEM Repository JCR standardmäßig verwendet wird.
 
-JCR ist *kein* gemeinsamer Speicher für Autoren- und Veröffentlichungsfunktionen. Der Community-Inhalt ist nur von der Autor- oder Veröffentlichungsdatei sichtbar, in der er erstellt wurde.
+JCR ist *nicht* ein gemeinsamer Speicher, der von den Autor- und Veröffentlichungs-Umgebung freigegeben wird. Der Community-Inhalt ist nur von der Autor- oder Veröffentlichungsdatei sichtbar, in der er erstellt wurde.
 
-Weitere Informationen finden Sie im [JCR Store](jsrp.md) .
+Weitere Informationen finden Sie unter [JCR Store](jsrp.md).
 
 >[!NOTE]
 >
->Das Fehlen des Knotens `srpc` unter `/etc/socialconfig` gibt den standardmäßigen [JCR-Store](jsrp.md)an.
+>Das Fehlen des Knotens `srpc` unter `/etc/socialconfig` gibt den standardmäßigen [JCR-Speicher](jsrp.md) an.
