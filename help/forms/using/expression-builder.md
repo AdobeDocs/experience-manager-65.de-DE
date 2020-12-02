@@ -42,7 +42,7 @@ Im Folgenden werden einige Beispiele für häufige JSP-EL-Verwendungszwecke geze
 
 Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Der clientseitige Expression Manager unterstützt nicht alle Variablen und Funktionen in der JSP-EL-Spezifikation. Dabei gilt:
 
-* Collection indexes and map keys (using the [] notation) are not supported in variable names for expressions evaluated on the client-side.
+* Sammlungsindizes und Zuordnungsschlüssel (unter Verwendung der []-Notation) werden in Variablennamen für clientseitig ausgewertete Ausdruck nicht unterstützt.
 * Die folgenden Parameter sind als Parametertypen oder Rückgabetypen für in Ausdrücken verwendete Funktionen unterstützt:
 
    * java.lang.String
@@ -100,7 +100,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
 
    * java.lang.String
    * java.lang.Character
-   * Char
+   * Zeichen
    * java.lang.Boolean
    * Boolesch
    * java.lang.Integer
@@ -110,9 +110,9 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
    * java.lang.Byte
    * byte
    * java.lang.Double
-   * Double
+   * Dublette
    * java.lang.Long
-   * Long
+   * lang
    * java.lang.Float
    * Float
    * java.util.Calendar
@@ -157,7 +157,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Nachfolgend finden Sie Beispiel-Archive:
 
-* **GoodFunctions.jar.zip** ist die JAR-Datei mit Bundle, die eine Definition für eine Remote-Funktion enthält. Laden Sie die GoodFunctions.jar.zip-Datei herunter und dekomprimieren Sie diese, um die JAR-Datei zu erhalten.
+* **GoodFunctions.jar.** zipis die JAR-Datei mit Bundle, die eine Definition für eine Muster-Remote-Funktion enthält. Laden Sie die GoodFunctions.jar.zip-Datei herunter und dekomprimieren Sie diese, um die JAR-Datei zu erhalten.
 * **GoodFunctions.zip** ist das Paket des Quellcodes zum Definieren einer benutzerdefinierten Remote-Funktion und eines Bundles dafür.
 
 GoodFunctions.jar.zip
