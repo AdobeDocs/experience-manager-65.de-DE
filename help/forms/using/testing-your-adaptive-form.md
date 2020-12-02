@@ -1,7 +1,7 @@
 ---
-title: '"Tutorial: Testing your adaptive form"'
-seo-title: '"Tutorial: Testing your adaptive form"'
-description: Use automated testing to test multiple adaptive forms at once.
+title: '"Tutorial: Testen des adaptiven Formulars"'
+seo-title: '"Tutorial: Testen des adaptiven Formulars"'
+description: Verwenden Sie automatisierte Tests, um mehrere adaptive Formulare gleichzeitig zu testen.
 seo-description: Verwenden Sie automatisierte Tests, um mehrere adaptive Formulare gleichzeitig zu testen.
 uuid: 6d182bbc-b47a-4c97-af70-c960b52fdfac
 contentOwner: khsingh
@@ -24,20 +24,20 @@ Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives 
 
 Nachdem das adaptive Formular fertig ist, müssen Sie das adaptive Formular testen, bevor Sie es an die Endbenutzer übertragen. Sie können jedes Feld manuell testen (funktionelle Tests) oder das Testen des adaptiven Formulars automatisieren. Wenn Sie mehrere adaptive Formulare haben, wird das manuelle Testen aller Felder der adaptiven Formulare zu einer beängstigenden Aufgabe.
 
-AEM [!DNL Forms] bieten ein Testframework, Calvin, um das Testen Ihrer adaptiven Formulare zu automatisieren. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt JavaScript-APIs zum Erstellen von Tests bereit. Mit dem automatisierten Test können Sie das Erlebnis zum Vorausfüllen eines adaptiven Formulars testen, die Sendeerfahrung eines adaptiven Formulars, die Regeln für den Ausdruck von Überprüfungen, verzögertes Laden und Benutzeroberflächeninteraktionen testen. Dieses Lernprogramm führt Sie durch die Schritte zum Erstellen und Ausführen automatisierter Tests für ein adaptives Formular. Am Ende dieser Schulung können Sie Folgendes:
+AEM [!DNL Forms] stellen Sie ein Testframework bereit, Calvin, um das Testen Ihrer adaptiven Formulare zu automatisieren. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt JavaScript-APIs zum Erstellen von Tests bereit. Mit dem automatisierten Test können Sie das Erlebnis zum Vorausfüllen eines adaptiven Formulars testen, die Sendeerfahrung eines adaptiven Formulars, die Regeln für den Ausdruck von Überprüfungen, verzögertes Laden und Benutzeroberflächeninteraktionen testen. Dieses Lernprogramm führt Sie durch die Schritte zum Erstellen und Ausführen automatisierter Tests für ein adaptives Formular. Am Ende dieser Schulung können Sie Folgendes:
 
 * [Testsuite für Ihr adaptives Formular erstellen](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
-* [Create tests for your adaptive form](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
-* [Run test suite and tests created for your adaptive form](#step-run-all-the-tests-in-a-suite-or-individual-tests-cases)
+* [Erstellen von Tests für Ihr adaptives Formular](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
+* [Testsuite und für Ihr adaptives Formular erstellte Tests ausführen](#step-run-all-the-tests-in-a-suite-or-individual-tests-cases)
 
-## Step 1: Create a test suite {#step-create-a-test-suite}
+## Schritt 1: Testsuite {#step-create-a-test-suite} erstellen
 
-Test suites have a collection of test cases. You can have multiple test suites. Es wird empfohlen, für jedes Formular eine separate Testsuite zu verwenden. So erstellen Sie eine Test-Suite:
+Test Suites verfügen über eine Reihe von Testfällen. Sie können über mehrere Testsuiten verfügen. Es wird empfohlen, für jedes Formular eine separate Testsuite zu verwenden. So erstellen Sie eine Test-Suite:
 
-1. Log to AEM [!DNL Forms] author instance in as an administrator. Open [!UICONTROL CRXDE Lite]. You can tap AEM Logo > **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]** or open the [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) URL in a browser to open CRXDE Lite.
+1. Melden Sie sich bei AEM [!DNL Forms] Autoreninstanz als Administrator an. Öffnen Sie [!UICONTROL CRXDE Lite]. Sie können AEM Logo > **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]** oder die [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp)-URL in einem Browser öffnen, um die CRXDE Lite zu öffnen.
 
-1. Navigate to /etc/clientlibs in [!UICONTROL CRXDE Lite]. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]**. In the **[!UICONTROL Name]** field type **WeRetailFormTestCases**. Select the type as **cq:ClientLibraryFolder** and click **[!UICONTROL OK]**. It creates a node. You can use any name in place of `WeRetailFormTestCases`.
-1. Add the following properties to the `WeRetailFormTestCases` node and tap **[!UICONTROL Save ALL]**.
+1. Navigieren Sie zu /etc/clientlibs in [!UICONTROL CRXDE Lite]. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]**. Geben Sie im Feld **[!UICONTROL Name]** **WeRetailFormTestCases** ein. Wählen Sie den Typ **cq:ClientLibraryFolder** und klicken Sie auf **[!UICONTROL OK]**. Es wird eine Node erstellt. Sie können jeden beliebigen Namen anstelle von `WeRetailFormTestCases` verwenden.
+1. hinzufügen Sie die folgenden Eigenschaften auf den Knoten `WeRetailFormTestCases` und tippen Sie auf **[!UICONTROL Save ALL]**.
 
    <table>
     <tbody>
@@ -75,7 +75,7 @@ Test suites have a collection of test cases. You can have multiple test suites. 
 
    ![dependencies](assets/dependencies.png)
 
-1. Right-click the **[!UICONTROL WeRetailFormTestCases]** node click **[!UICONTROL Create]** > **[!UICONTROL Create File]**. In the **[!UICONTROL Name]** field, type `js.txt` and click **[!UICONTROL OK]**.
+1. Klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL WeRetailFormTestCases]** und klicken Sie auf **[!UICONTROL Create]** > **[!UICONTROL Create File]**. Geben Sie im Feld **[!UICONTROL Name]** `js.txt` ein und klicken Sie auf **[!UICONTROL OK]**.
 1. Öffnen Sie die Datei &quot;js.txt&quot;zur Bearbeitung, fügen Sie den folgenden Code hinzu und speichern Sie die Datei:
 
    ```text
@@ -83,7 +83,7 @@ Test suites have a collection of test cases. You can have multiple test suites. 
     init.js
    ```
 
-1. Erstellen Sie eine Datei, init.js, im `WeRetailFormTestCases`Knoten. hinzufügen Sie den folgenden Code in die Datei und tippen Sie auf Alle **[!UICONTROL speichern]**.
+1. Erstellen Sie eine Datei, init.js, im Knoten `WeRetailFormTestCases`. hinzufügen Sie den folgenden Code in die Datei ein und tippen Sie auf **[!UICONTROL Alle speichern]**.
 
    ```javascript
    (function(window, hobs) {
@@ -99,19 +99,19 @@ Test suites have a collection of test cases. You can have multiple test suites. 
    }(window, window.hobs));
    ```
 
-   Mit dem obigen Code wird eine Testsuite mit dem Namen **We retail - Tests** erstellt.
+   Mit dem obigen Code wird eine Testsuite mit dem Namen **Wir für den Handel - Tests** erstellt.
 
-1. Öffnen Sie AEM Testing UI (AEM > **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Tests]**). Die Testsuite - **Wir für den Handel - Tests** - wird in der Benutzeroberfläche aufgelistet.
+1. Öffnen Sie AEM Benutzeroberfläche für Tests (AEM > **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Tests]**). Die Testsuite - **Wir für den Handel - Tests** - ist in der Benutzeroberfläche aufgeführt.
 
    ![we-retail-test-suite](assets/we-retail-test-suite.png)
 
-## Schritt 2: Erstellen eines Testfalls zum Vorausfüllen von Werten in einem adaptiven Formular {#step-create-a-test-case-to-prefill-values-in-an-adaptive-form}
+## Schritt 2: Erstellen Sie einen Testfall, um Werte in einem adaptiven Formular vorab auszufüllen. {#step-create-a-test-case-to-prefill-values-in-an-adaptive-form}
 
 Ein Testfall ist eine Reihe von Aktionen zum Testen einer bestimmten Funktion. Beispielsweise müssen Sie alle Felder eines Formulars im Voraus ausfüllen und einige Felder überprüfen, um sicherzustellen, dass die richtigen Werte eingegeben werden.
 
 Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. durch Klicken auf eine Schaltfläche. So erstellen Sie einen Testfall und Aktionen, um die Benutzereingabe für jedes adaptive Formularfeld zu überprüfen:
 
-1. Navigieren Sie in [!UICONTROL CRXDE Lite]zum `/content/forms/af/create-first-adaptive-form` Ordner. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL create-first-adaptive-form]** und klicken Sie auf **[!UICONTROL Create]**> **[!UICONTROL Create File]**. In the **[!UICONTROL Name]** field, type `prefill.xml` and click **[!UICONTROL OK]**. Fügen Sie der Datei „“ den folgenden Code hinzu:
+1. Navigieren Sie in [!UICONTROL CRXDE Lite] zum Ordner `/content/forms/af/create-first-adaptive-form`. Klicken Sie mit der rechten Maustaste auf den Ordnernamen **[!UICONTROL create-first-adaptive-form]** und klicken Sie auf **[!UICONTROL Create]** **[!UICONTROL Create File]**. Geben Sie im Feld **[!UICONTROL Name]** `prefill.xml` ein und klicken Sie auf **[!UICONTROL OK]**. Fügen Sie der Datei „“ den folgenden Code hinzu:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -130,11 +130,11 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
    </afData>
    ```
 
-1. Navigieren Sie zu `/etc/clientlibs`. Right-click the `/etc/clientlibs` subfolder and click **[!UICONTROL Create]**> **[!UICONTROL Create Node]**.
+1. Navigieren Sie zu `/etc/clientlibs`. Klicken Sie mit der rechten Maustaste auf den Unterordner `/etc/clientlibs` und klicken Sie auf **[!UICONTROL Erstellen]** **[!UICONTROL Erstellen Sie Knoten]**.
 
-   Geben Sie im Feld **[!UICONTROL Name]** den gewünschten Wert ein `WeRetailFormTests`. Wählen Sie den Typ aus `cq:ClientLibraryFolder` und klicken Sie auf **[!UICONTROL OK]**.
+   Geben Sie im Feld **[!UICONTROL Name]** den Wert `WeRetailFormTests` ein. Wählen Sie den Typ `cq:ClientLibraryFolder` und klicken Sie auf **[!UICONTROL OK]**.
 
-1. Add the following properties to the **[!UICONTROL WeRetailFormTests]** node.
+1. hinzufügen Sie die folgenden Eigenschaften auf den Knoten **[!UICONTROL WeRetailFormTests]**.
 
    <table>
     <tbody>
@@ -145,7 +145,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
       <td><strong>Wert</strong></td>
      </tr>
      <tr>
-      <td>categories</td>
+      <td>kategorien</td>
       <td>Zeichenfolge</td>
       <td>Aktiviert</td>
       <td>
@@ -155,7 +155,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
        </ul> </td>
      </tr>
      <tr>
-      <td>dependencies</td>
+      <td>Abhängigkeiten</td>
       <td>Zeichenfolge</td>
       <td>Aktiviert</td>
       <td>
@@ -166,7 +166,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
      </tbody>
    </table>
 
-1. Erstellen Sie die Datei &quot;js.txt&quot;im Knoten **[!UICONTROL WeRetailFormTests]** . hinzufügen Sie Folgendes zur Datei:
+1. Erstellen Sie die Datei &quot;js.txt&quot;im Knoten **[!UICONTROL WeRetailFormTests]**. hinzufügen Sie Folgendes zur Datei:
 
    ```shell
    #base=.
@@ -175,7 +175,7 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
 
    Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-1. Erstellen Sie eine Datei `prefillTest.js`im Knoten **[!UICONTROL WeRetailFormTests]** . hinzufügen Sie den unten stehenden Code in die Datei ein. Der Code erstellt einen Testfall. Der TestCase füllt alle Felder eines Formulars im Voraus aus und überprüft einige Felder, um sicherzustellen, dass korrekte Werte eingegeben werden.
+1. Erstellen Sie eine Datei mit dem Namen `prefillTest.js` im Knoten **[!UICONTROL WeRetailFormTests]**. hinzufügen Sie den unten stehenden Code in die Datei ein. Der Code erstellt einen Testfall. Der TestCase füllt alle Felder eines Formulars im Voraus aus und überprüft einige Felder, um sicherzustellen, dass korrekte Werte eingegeben werden.
 
    ```javascript
    (function (window, hobs) {
@@ -209,28 +209,28 @@ Eine Aktion ist eine bestimmte Aktivität in einem adaptiven Formular, z. B. dur
 
    Der Testfall wird erstellt und kann ausgeführt werden. Sie können Testfälle erstellen, um verschiedene Aspekte eines adaptiven Formulars zu validieren, z. B. die Ausführung des Berechnungsskripts, die Überprüfung von Mustern und die Überprüfung der Sendeerfahrung eines adaptiven Formulars. Weitere Informationen zu verschiedenen Aspekten des Testens adaptiver Formulare finden Sie unter Automatisches Testen von adaptiven Formularen.
 
-## Schritt 3: Führen Sie alle Tests in einer Suite oder in einzelnen Testfällen aus {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
+## Schritt 3: Führen Sie alle Tests in einer Suite oder einzelnen Testfällen aus.{#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
 
 Eine Testsuite kann mehrere Testfälle aufweisen. Sie können alle Testfälle in einer Testsuite auf einmal oder einzeln ausführen. Wenn Sie einen Test durchführen, werden die Ergebnisse durch die Symbole angezeigt:
 
-* A checkmark icon indicates a passed test: ![save_icon](assets/save_icon.svg)
-* An &quot;X&quot; icon indicates a failed test: ![close-icon](assets/close-icon.svg)
+* Ein Häkchen-Symbol zeigt an, dass ein Test bestanden hat: ![save_icon](assets/save_icon.svg)
+* Ein X-Symbol weist auf einen fehlgeschlagenen Test hin: ![close-icon](assets/close-icon.svg)
 
-1. Navigate to AEM icon > **[!UICONTROL Tools]**> **[!UICONTROL Operations]**> **[!UICONTROL Testing]**
-1. To run all the tests of the Test Suite:
+1. Navigieren Sie zu AEM Symbol > **[!UICONTROL Tools]** **[!UICONTROL Vorgänge]** **[!UICONTROL Testen]**
+1. So führen Sie alle Tests der Test Suite aus:
 
-   1. In the [!UICONTROL Tests] panel, tap **[!UICONTROL We retail - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
-   1. Tap the **[!UICONTROL Run tests]** button. Der leere Bereich auf der rechten Seite des Bildschirms wird durch ein adaptives Formular ersetzt, während der Test ausgeführt wird.
+   1. Tippen Sie im Bedienfeld [!UICONTROL Tests] auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
+   1. Tippen Sie auf die Schaltfläche **[!UICONTROL Tests ausführen]**. Der leere Bereich auf der rechten Seite des Bildschirms wird durch ein adaptives Formular ersetzt, während der Test ausgeführt wird.
 
       ![all-test](assets/run-all-test.png)
 
 1. So führen Sie einen einzelnen Test aus der Test Suite aus:
 
-   1. Tippen Sie im Fenster Tests auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
-   1. Tippen Sie auf den Test **[!UICONTROL zum Vorausfüllen]** und dann auf die Schaltfläche zum **[!UICONTROL Ausführen von Tests]** . Der leere Bereich auf der rechten Seite des Bildschirms wird durch ein adaptives Formular ersetzt, während der Test ausgeführt wird.
+   1. Tippen Sie im Testbedienfeld auf **[!UICONTROL Wir für den Handel - Tests (1)]**. Die Suite wird erweitert, um die Liste des Tests anzuzeigen.
+   1. Tippen Sie auf **[!UICONTROL Test vor dem Ausfüllen]** und dann auf die Schaltfläche **[!UICONTROL Tests ausführen]**. Der leere Bereich auf der rechten Seite des Bildschirms wird durch ein adaptives Formular ersetzt, während der Test ausgeführt wird.
 
-1. Tippen Sie auf den Testnamen &quot;Vorausfüllen&quot;, um die Ergebnisse des Test Case zu überprüfen. It opens the [!UICONTROL Result] panel. Tap the name of your Test Case in the [!UICONTROL Result] panel to view all the details of the test.
+1. Tippen Sie auf den Testnamen &quot;Vorausfüllen&quot;, um die Ergebnisse des Test Case zu überprüfen. Es wird das Bedienfeld [!UICONTROL Ergebnis] geöffnet. Tippen Sie im Bereich [!UICONTROL Ergebnis] auf den Namen Ihres Testfalls, um alle Testdetails Ansicht.
 
    ![review-results](assets/review-results.png)
 
-Now the adaptive form is ready for publishing.
+Jetzt kann das adaptive Formular veröffentlicht werden.
