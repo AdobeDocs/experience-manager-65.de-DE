@@ -12,6 +12,9 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 Interaktive Kommunikation enthält Eigenschaften, die nach der Installation des Pakets [AEM Forms Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) automatisch konfiguriert werden. Autoren der interaktiven Kommunikation können diese Standardkonfigurationseigenschaften mit Hilfe der Seite **Konfiguration von Adobe Experience Manager Web Console** bearbeiten.
 
-Open the **Adobe Experience Manager Web Console Configuration** page using the following URL:
+Öffnen Sie die Seite **Adobe Experience Manager Web Console Configuration** unter Verwendung der folgenden URL:
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
@@ -33,7 +36,7 @@ Die Konfigurationseigenschaften umfassen Folgendes:
 
 ## Konfiguration für Dokumentfragment {#document-fragments-configuration}
 
-Tap **Document Fragments configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for document fragments.
+Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** auf **, um die Konfigurationseigenschaften für Dokument-Fragmente Ansicht.**
 
 <table>
  <tbody> 
@@ -54,7 +57,7 @@ Tap **Document Fragments configuration** on the **Adobe Experience Manager Web C
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td>Einzug</td> 
@@ -65,7 +68,7 @@ Tap **Document Fragments configuration** on the **Adobe Experience Manager Web C
   <tr> 
    <td>Mindestbreite von römischen Zahlen</td> 
    <td>Mindestbreite für das Aufzählungsfeld oder Zahlenfeld, wenn römische Zahlen in Listendokumentfragmenten verwendet werden. </td> 
-   <td>12.7mm</td> 
+   <td>12.7 mm</td> 
    <td>Nummer</td> 
   </tr> 
   <tr> 
@@ -77,16 +80,16 @@ Tap **Document Fragments configuration** on the **Adobe Experience Manager Web C
  </tbody> 
 </table>
 
-## Korrespondenzkonfiguration erstellen {#create-correspondence-configuration}
+## Korrespondenzkonfiguration erstellen  {#create-correspondence-configuration}
 
-Tap **Create Correspondence Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Agent UI.
+Tippen Sie auf der Seite **Adobe Experience Manager Web Console Configuration** auf Korrespondenzkonfiguration erstellen **, um die Konfigurationseigenschaften für die Agent-Benutzeroberfläche Ansicht.**
 
 <table>
  <tbody> 
   <tr> 
    <td>Eigenschaft</td> 
    <td>Beschreibung</td> 
-   <td>Default</td> 
+   <td>Standard</td> 
    <td>Zulässige Werte</td> 
   </tr> 
   <tr> 
@@ -103,33 +106,33 @@ Tap **Create Correspondence Configuration** on the **Adobe Experience Manager We
   </tr> 
   <tr> 
    <td>Schrifteinbettung in PDF aktivieren</td> 
-   <td><p>Aktivieren Sie das Kontrollkästchen, um die Einbettung von Schriftarten in PDF-Dokumenten zu aktivieren. Nach Auswahl dieser Option können Sie neue Schriftarten einbetten, nachdem Sie die PDF-Dokumente mithilfe der Agent-Benutzeroberfläche generiert oder in der Vorschau angezeigt haben. Verwenden Sie den Kanal "Drucken"der interaktiven Kommunikation, um PDF-Dokumente zu erstellen und Vorschau.</p> <p>Das Einbetten von Schriftarten in ein PDF-Dokument ist nützlich, wenn eine Schriftart auf einem Computer verfügbar ist, der zum Generieren der PDF-Datei verwendet wird und nicht auf dem Clientcomputer verfügbar ist, der auf die PDF-Datei zugreift.</p> <p>Weitere Informationen zum Einbetten von Schriftarten finden Sie unter <a href="../../forms/using/customize-text-editor.md" target="_blank">Anpassen des Texteditors</a>.</p> </td> 
+   <td><p>Aktivieren Sie das Kontrollkästchen, um die Einbettung von Schriftarten in PDF-Dokumenten zu aktivieren. Nach Auswahl dieser Option können Sie neue Schriftarten einbetten, nachdem Sie die PDF-Dokumente mithilfe der Agent-Benutzeroberfläche generiert oder in der Vorschau angezeigt haben. Verwenden Sie den Kanal "Drucken"der interaktiven Kommunikation, um PDF-Dokumente zu erstellen und Vorschau.</p> <p>Das Einbetten von Schriftarten in ein PDF-Dokument ist nützlich, wenn eine Schriftart auf einem Computer verfügbar ist, der zum Generieren der PDF-Datei verwendet wird und nicht auf dem Clientcomputer verfügbar ist, der auf die PDF-Datei zugreift.</p> <p>Weitere Informationen zum Einbetten von Schriftarten finden Sie unter <a href="../../forms/using/customize-text-editor.md" target="_blank">Texteditor anpassen</a>.</p> </td> 
    <td>Nicht ausgewählt</td> 
    <td>Nicht zutreffend</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation  {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel. Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
+Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** auf **, um die Konfigurationseigenschaften für den Web-Kanal Adaptive Forms und Interactive Communications Ansicht.** Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
 
-| Eigenschaft | Beschreibung | Default | Zulässige Werte |
+| Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
 | Platzhalter anzeigen | Aktivieren Sie das Kontrollkästchen, um die Anzeige von Platzhaltern für Felder zu aktivieren, die in adaptiven Formularen und in interaktiver Kommunikation enthalten sind. | Ausgewählt | Nicht zutreffend |
 | Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Nummer |
 | Dateinamen als eindeutig festlegen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anhänge in adaptiven Formularen und interaktiver Kommunikation enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
 
-## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation  {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel themes.
+Tippen Sie auf der Seite **Adobe Experience Manager Web-Konsolenkonfiguration** auf **Kanal-Konfiguration für adaptive Formulare und interaktive Kommunikation**, um die Konfigurationseigenschaften für Themen des adaptiven Forms und des interaktiven Kommunikations-Web-Kanals Ansicht.
 
 <table>
  <tbody> 
   <tr> 
    <td>Eigenschaft</td> 
    <td>Beschreibung</td> 
-   <td>Default</td> 
+   <td>Standard</td> 
    <td>Zulässige Werte</td> 
   </tr> 
   <tr> 
