@@ -23,7 +23,7 @@ AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Fo
 
 >[!NOTE]
 >
->Users who will invoke the APIs must be added to the reviewers group as described in [Associating submission reviewers to a form](/help/forms/using/adding-reviewers-form.md).
+>Benutzer, die die APIs aufrufen, müssen zur Reviewer-Gruppe hinzugefügt werden, wie unter [Verknüpfen von Reviewern mit einem Formular](/help/forms/using/adding-reviewers-form.md) beschrieben.
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -160,7 +160,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments    {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Gibt  alle für die angegebene Sendeinstanz veröffentlichten Kommentare zurück.
 
