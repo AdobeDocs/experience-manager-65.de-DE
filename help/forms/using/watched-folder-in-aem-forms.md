@@ -36,7 +36,7 @@ Die
 >
 >In einer Clusterumgebung muss der Ordner, der als überwachter Ordner verwendet wird, zugriffsbereit sein, Schreibzugriff bieten und im Dateisystem oder Netzwerk freigegeben sein. Jede Anwendungsserverinstanz des Clusters muss Zugriff auf denselben freigegebenen Ordner haben. Unter Windows erstellen Sie auf allen Servern ein verbundenes Netzlaufwerk und tragen Sie dessen Pfad in die Eigenschaft „folderPath“ ein.
 
-## Konfigurationsknoten für überwachten Ordner erstellen {#create-watched-folder-configuration-node}
+## Konfigurationsknoten für überwachten Ordner erstellen  {#create-watched-folder-configuration-node}
 
 Um einen überwachten Ordner zu konfigurieren, erstellen Sie einen Konfigurationsknoten des Typs „Überwachter Ordner“. Führen Sie die folgenden Schritte aus, um den Konfigurationsknoten zu erstellen:
 
@@ -57,7 +57,7 @@ Um einen überwachten Ordner zu konfigurieren, erstellen Sie einen Konfiguration
 
    Eine vollständige Liste der unterstützten Eigenschaften finden Sie unter [Eigenschaften für überwachte Ordner](#watchedfolderproperties).
 
-1. Klicken Sie auf **Alle speichern**. Der Knoten wird erstellt und die Eigenschaften werden gespeichert. The `input`, `result`, `failure`, `preserve`, and `stage`folders are created at the path specified in the `folderPath` property.
+1. Klicken Sie auf **Alle speichern**. Der Knoten wird erstellt und die Eigenschaften werden gespeichert. Die Ordner `input`, `result`, `failure`, `preserve` und `stage`werden unter dem in der Eigenschaft `folderPath` angegebenen Pfad erstellt.
 
    Der Überprüfungsauftrag beginnt mit der regelmäßigen Überprüfung des überwachten Ordners im definierten Zeitintervall.
 
@@ -77,7 +77,7 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 
    * author
 
-   * publish
+   * veröffentlichen
 
    * author, publish
 
@@ -107,7 +107,7 @@ Sie können Dateimuster verwenden, um Folgendes auszuschließen:[](../../forms/u
 
       * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
       * *.[dD][Aa]&#39;port&#39;
-      * *.[Xx][mm][Ll]
+      * *.[XX][Mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
@@ -121,7 +121,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
       * *.[dD][Aa]&#39;port&#39;
-      * *.[Xx][mm][Ll]
+      * *.[XX][Mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -154,7 +154,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 
 * **failureFolderName (Zeichenfolge)**: Der Ordner, in dem Dateien mit Fehlern gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Der Standardwert ist „failure/%Y/%M/%D/“.
 * **preserveFolderName (Zeichenfolge):** Der Speicherort, an dem Dateien nach erfolgreicher Verarbeitung gespeichert werden. Dies kann ein absoluter, relativer oder leerer Ordnerpfad sein. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Der Standardwert ist „preserve/%Y/%M/%D/“.
-* **batchSize (Lang)**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.         
+* **batchSize (Lang)**: Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
 
      Die Einstellungen für Abrufintervall und Stapelgröße bestimmen, wie viele Dateien bei jeder Überprüfung vom Watched Folder-Dienst ausgewählt werden. Der Watched Folder-Dienst verwendet einen Quartz-Threadpool, um den Eingabeordner zu überprüfen. Der Threadpool wird mit anderen Diensten gemeinsam verwendet. Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft. Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, verwenden Sie ein größeres Überprüfungsintervall, damit die anderen Dienste die Threads verwenden können.
 
@@ -174,9 +174,9 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 >Die Workflows sind standardmäßig asynchron. Sie werden selbst dann im asynchronen Modus gestartet, wenn Sie das Flag auf „false“ setzen.
 
 * **enabled (Boolescher Wert)**: Deaktiviert und aktiviert die Überprüfung des überwachten Ordners. Legen Sie für „enabled“ den Wert „true“ fest, um die Überprüfung des überwachten Ordners zu starten. Der Standardwert lautet true.
-* **payloadMapperFilter:** Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird im überwachten Ordner eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern. Die Ordnerstruktur eines überwachten Ordners kann als eine Nutzlast für formularzentrierte Workflows dienen. Mit einem Payload-Mapper können Sie die Struktur einer Nutzlast definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet. For example, if you use the default mapper, it maps content of Watched Folder with [payload]\input and [payload]\output folder. Zwei Standard-Mapper-Implementierungen sind verfügbar. Wenn Sie keine[ benutzerdefinierte Implementierung](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter) haben, verwenden Sie eine Standard-Implementierung:
+* **payloadMapperFilter:** Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird im überwachten Ordner eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern. Die Ordnerstruktur eines überwachten Ordners kann als eine Nutzlast für formularzentrierte Workflows dienen. Mit einem Payload-Mapper können Sie die Struktur einer Nutzlast definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet. Wenn Sie beispielsweise die Standardzuordnung verwenden, ordnet sie den Inhalt des überwachten Ordners dem Ordner [payload]\input und [payload]\output zu. Zwei Standard-Mapper-Implementierungen sind verfügbar. Wenn Sie keine[ benutzerdefinierte Implementierung](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter) haben, verwenden Sie eine Standard-Implementierung:
 
-   * **Standard-Mapper:** Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Also, in payload path of a workflow, use [payload]/input/ and [payload]/output paths to retrive and save content.
+   * **Standard-Mapper:** Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie außerdem im Nutzlastanschluss eines Workflows die Pfade [payload]/input/ und [payload]/output, um Inhalte abzurufen und zu speichern.
 
    * **Einfacher dateibasierter Payload-Mapper:** Verwenden Sie den einfachen dateibasierten Payload-Mapper, um Eingabe- und Ausgabe-Inhalte direkt im Nutzdatenordner zu beizubehalten. Er erstellt keine zusätzliche Hierarchie, wie Standard-Mapper.
 
@@ -197,7 +197,7 @@ Diese Eigenschaften werden als unveränderliche Zuordnung des Typs „Map&lt;Str
 
 Beispiel: Konfigurationsknoten für überwachten Ordner mit obligatorischen Eigenschaften, einige optionalen Eigenschaften und einigen Konfigurationsparametern.
 
-#### Veränderliche Variablen für Workflows {#mutable-variables-for-workflows}
+#### Veränderliche Variablen für Workflows  {#mutable-variables-for-workflows}
 
 Sie können veränderliche Variablen für Workflow-basierte Dateiverarbeitungsmethoden erstellen. Diese Variablen dienen als Container für die zwischen den Schritten eines Workflows übertragenen Daten. So erstellen Sie solche Variablen:
 
@@ -221,11 +221,11 @@ Sie können veränderliche Variablen für Workflow-basierte Dateiverarbeitungsme
 
 Sie können einen Workflow, einen Dienst oder ein Skript zur Verarbeitung der in einem überwachten Ordner abgelegten Dokumente starten.
 
-### Verarbeiten von Dateien in einem überwachten Ordner mithilfe eines Dienstes {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Verarbeiten von Dateien in einem überwachten Ordner mithilfe eines Dienstes  {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Ein Dienst ist eine benutzerdefinierte Implementierung der `com.adobe.aemfd.watchfolder.service.api.ContentProcessor`-Schnittstelle. Sie wird in OSGi mit einigen benutzerdefinierten Eigenschaften registriert. Die benutzerdefinierten Eigenschaften der Implementierung machen diese eindeutig und erleichtern ihre Identifizierung.
 
-#### Benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle {#custom-implementation-of-the-contentprocessor-interface}
+#### Benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle  {#custom-implementation-of-the-contentprocessor-interface}
 
 Die benutzerdefinierte Implementierung übernimmt einen Verarbeitungskontext (ein Objekt des Typs „com.adobe.aemfd.watchfolder.service.api.ProcessorContext“), liest die Eingabedokumente und -konfigurationsparameter aus dem Kontext, verarbeitet die Eingaben und fügt die Ausgaben wieder in den Kontext ein. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
 
@@ -264,7 +264,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 }
 ```
 
-### Verarbeiten von Dateien in einem überwachten Ordner mithilfe von Skripts {#using-scripts-to-process-files-of-a-watched-folder}
+### Verarbeiten von Dateien in einem überwachten Ordner mithilfe von Skripts  {#using-scripts-to-process-files-of-a-watched-folder}
 
 Skripts sind der ECMAScript-kompatible benutzerdefinierter Code, der in die im überwachten Ordner abgelegten Prozessdokumente geschrieben wird. Jedes Skript wird als ein JCR-Knoten dargestellt. Das Skript weist neben den standardmäßigen ECMAScript-Variablen (log, sling und weitere) eine processorContext-Variable auf. Die Variable gehört zum Typ „processorContext“. Für „ProcessorContext“ stehen die folgenden APIs zur Verfügung:
 
@@ -294,14 +294,14 @@ Standardmäßig wird ein Containerordner (/etc/fd/watchfolder/scripts) bereitges
 
 Wenn Sie Ihre Skripten an einem benutzerdefinierten Speicherort ablegen möchten, hat der Standarddienstbenutzer möglicherweise keine Leserechte für den benutzerdefinierten Speicherort. Führen Sie in einem solchen Fall die folgenden Schritte durch, um die benötigten Berechtigungen für den benutzerdefinierten Speicherort bereitzustellen:
 
-1. Create a system user programmatically or via the console https://&#39;[server]:[port]&#39;/crx/explorer. Sie können auch einen bestehenden Systembenutzer verwenden. Für diesen Zweck ist es wichtig, nicht mit normalen, sondern mit Systembenutzern zu arbeiten.
+1. Erstellen Sie einen Systembenutzer programmgesteuert oder über die Konsole https://&#39;[server]:[port]&#39;/crx/explorer. Sie können auch einen bestehenden Systembenutzer verwenden. Für diesen Zweck ist es wichtig, nicht mit normalen, sondern mit Systembenutzern zu arbeiten.
 1. Weisen Sie dem neu erstellten oder bestehenden Systembenutzer für den benutzerdefinierten Speicherort, unter dem die Skripte gespeichert sind, Leserechte zu. Sie können mehrere benutzerdefinierte Speicherorte verwenden. Gewähren Sie mindestens Leserechte für alle benutzerdefinierten Speicherorte.
 1. Suchen Sie in der Felix-Konfigurationskonsole (/system/console/configMgr) die Dienstbenutzer-Zuordnung für die watch-folders. Diese Zuordnung lautet ähnlich wie &#39;Mapping: adobe-aemds-core-watch-folder=...&#39;.
 1. Klicken Sie auf die Zuordnung. Ändern Sie für den Eintrag &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; die Angabe „fd-service“ in die ID des benutzerdefinierten Systembenutzers. Klicken Sie auf Speichern.
 
 Jetzt können Sie Skripte im konfigurierten benutzerdefinierten Speicherort speichern.
 
-### Verarbeiten von Dateien in einem überwachten Ordner mithilfe eines Workflows {#using-a-workflow-to-process-files-of-a-watched-folder}
+### Verarbeiten von Dateien in einem überwachten Ordner mithilfe eines Workflows  {#using-a-workflow-to-process-files-of-a-watched-folder}
 
 Mithilfe von Workflows können Sie Aktivitäten in Experience Manager automatisieren. Workflows bestehen aus einer Reihe von Schritten, die in einer bestimmten Reihenfolge ausgeführt werden. Bei jedem Schritt wird eine bestimmte Aktivität ausgeführt, etwa eine Seite aktiviert oder eine E-Mail verschickt. Workflows können mit Assets im Repository, mit Benutzerkonten und mit Experience Manager-Diensten interagieren. Mit Workflows können Sie daher komplexe Abläufe koordinieren.
 
@@ -394,13 +394,13 @@ wfSvc.execute(impl, graniteWorkItem, graniteWorkflowSession, metaData);
 log.info("Exiting workflow script!")
 ```
 
-### Erstellen eines Payload-Mapper-Filters, um die Struktur eines überwachten Ordners der Nutzlast eines Workflows zuzuordnen {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
+### Erstellen eines Payload-Mapper-Filters, um die Struktur eines überwachten Ordners der Nutzlast eines Workflows zuzuordnen  {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
 
 Wenn Sie einen überwachten Ordner anlegen, wird eine Ordnerstruktur innerhalb des überwachten Ordners erstellt. Die Ordnerstruktur enthält die Ordner „Stage“, „Result“, „Preserve“, „Input“ und „Failure“. Die Ordnerstruktur kann als Nutzdateneingabe für den Workflow verwendet werden und die Ausgabe eines Workflow übernehmen. Sie kann gegebenenfalls auch Fehlerpunkte auflisten.
 
 Wenn sich die Struktur einer Nutzlast von der Struktur des überwachten Ordners unterscheidet, können Sie benutzerdefinierte Skripts erstellen, um die Struktur des überwachten Ordners der Nutzlast zuzuordnen. Ein solches Skript wird „Payload-Mapper-Filter“ genannt. Standardmäßig bietet AEM Forms einen Payload-Mapper-Filter, um die Struktur des überwachten Ordners einer Nutzlast zuzuordnen.
 
-#### Erstellen eines benutzerdefinierten Payload-Mapper-Filters {#creating-a-custom-payload-mapper-filter}
+#### Erstellen eines benutzerdefinierten Payload-Mapper-Filters  {#creating-a-custom-payload-mapper-filter}
 
 1. Laden Sie [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar) herunter.
 1. Richten Sie das Client-SDK im Build-Pfad des Maven-basierten Projekts ein. Um zu beginnen, können Sie das folgende Maven-basierte Projekt in der IDE Ihrer Wahl herunterladen und öffnen.
@@ -498,7 +498,7 @@ Wenn der Auftrag mehrere Eingabedateien umfasst, muss der Benutzer einen Ordner 
 >
 >Stellen Sie sicher, dass der Anwendungsserver Löschzugriff auf die Dateien im überwachten Ordner hat. Wenn AEM Forms die Dateien nicht aus dem Eingabeordner löschen kann, nachdem sie durchsucht wurden, wird der dazugehörige Prozess unendlich oft aufgerufen.
 
-## Weitere Informationen zu überwachten Ordnern {#additional-information-about-the-watched-folders}
+## Weitere Informationen zu überwachten Ordnern  {#additional-information-about-the-watched-folders}
 
 ### Informationen zu Einschränkungen {#about-throttling}
 
@@ -508,7 +508,7 @@ Wenn Einschränkungen für einen Endpunkt des Typs „überwachter Ordner“ akt
 >
 >Die Funktion „Einschränken“ ist in Clustern nicht skalierbar. Bei aktiviertem „Einschränken“ verarbeitet der Cluster zu keiner Zeit insgesamt mehr Aufträge als vom Wert „Stapelgröße“ angegeben ist. Dieser Grenzwert ist clusterweit gültig und nicht für jeden Knoten im Cluster spezifisch. Bei einer Stapelgröße von 2 kann der Grenzwert für „Einschränken“ beispielsweise von einem einzelnen Knoten bereits mit der Verarbeitung von zwei Aufträgen erreicht werden, sodass keine anderen Knoten mehr den Eingabeordner abrufen, bevor nicht einer der Aufträge abgeschlossen ist.
 
-#### Funktionsweise von „Einschränken“ {#how-throttling-works}
+#### Funktionsweise von „Einschränken“  {#how-throttling-works}
 
 Der Eingabeordner des überwachten Ordners wird jeweils nach Ablauf des pollInterval überprüft, die in „Stapelgröße“ angegebene Anzahl von Dateien wird aufgenommen und der Zieldienst für jede dieser Dateien wird aufgerufen. Wenn die Stapelgröße beispielsweise 4 beträgt, nimmt der Dienst für überwachte Ordner bei jeder Überprüfung vier Dateien auf, erstellt vier Aufrufanforderungen und ruft den Zieldienst auf. Wenn der Dienst für überwachte Ordner vor Abschluss dieser Anforderungen erneut aufgerufen wird, werden unabhängig davon, ob die vorherigen vier Aufträge abgeschlossen sind, erneut vier Aufträge gestartet.
 
@@ -518,7 +518,7 @@ Der Eingabeordner des überwachten Ordners wird jeweils nach Ablauf des pollInte
 * Wenn der AEM Forms-Server heruntergefahren wird, bevor der Dienst für überwachte Ordner die Aufträge aufruft, kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 * Wenn zwar der AEM Forms-Server, nicht aber der Dienst für überwachte Ordner ausgeführt wird, während der Job Manager-Dienst zurückruft (wozu es kommt, wenn Dienste nicht in der richtigen Reihenfolge starten), dann kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
-### Fehlerquellen und Wiederherstellung {#failure-points-and-recoveryfailure-points-and-recovery}
+### Fehlerquellen und Wiederherstellung  {#failure-points-and-recoveryfailure-points-and-recovery}
 
 Bei jedem Abrufereignis sperrt der Watched Folder-Dienst den Eingabeordner, verschiebt die Dateien, die dem Muster für einzuschließende Dateien entsprechen, in den Bereitstellungsordner und hebt anschließend die Sperrung des Eingabeordners wieder auf. Die Sperrung ist erforderlich, damit nicht dieselben Dateien von zwei Threads aufgenommen und doppelt verarbeitet werden. Die Wahrscheinlichkeit, dass es hierzu kommt, steigen mit einem kurzen pollInterval und einer hohen Stapelgröße. Nachdem Dateien in den Bereitstellungsordner verschoben wurden, wird die Sperrung des Eingabeordners aufgehoben, damit andere Threads den Ordner überprüfen können. Dieser Schritt hilft bei der Bereitstellung eines hohen Durchsatzes, weil andere Threads eine Überprüfung ausführen können, während die Dateien bereits von einem Thread verarbeitet werden.
 
@@ -531,7 +531,7 @@ Nachdem Dateien in den Bereitstellungsordner verschoben wurden, werden für jede
    * **Synchron:** Wenn der Dienst für überwachte Ordner für den synchronen Aufruf des Dienstes konfiguriert ist, bleiben alle Dateien im Bereitstellungsordner darin unverarbeitet.
    * **Asynchron:** In diesem Fall ist der Dienst für überwachte Ordner vom Job Manager-Dienst abhängig. Wenn der Job Manager-Dienst den Dienst für überwachte Ordner zurückruft, werden die Dateien im Bereitstellungsordner auf Grundlage der Ergebnisse des jeweiligen Aufrufs in den Aufbewahrungs- oder Fehlerordner verschoben. Ruft der Job Manager-Dienst den Watched Folder-Dienst nicht zurück, bleiben die Dateien unverarbeitet im Bereitstellungsordner. Diese Situation tritt ein, wenn der Watched Folder-Dienst bei Rückruf des Job Managers nicht ausgeführt wird.
 
-#### Nicht verarbeitete Quelldateien im Bereitstellungsordner wiederherstellen {#recover-unprocessed-source-files-in-the-stage-folder}
+#### Nicht verarbeitete Quelldateien im Bereitstellungsordner wiederherstellen  {#recover-unprocessed-source-files-in-the-stage-folder}
 
 Wenn die Quelldateien im Bereitstellungsordner nicht vom Watched Folder-Dienst verarbeitet werden können, können Sie diese wiederherstellen.
 
@@ -570,7 +570,7 @@ Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werd
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * *.[dD][Aa]&#39;port&#39;
-   * *.[Xx][mm][Ll]
+   * *.[XX][Mm][Ll]
 
 * Der Administrator kann das Dateimuster für den Ausgabeordner definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehalten und Fehler; „result“, „preserve“ und „failure“) kann der Administrator jedes der folgenden Dateimuster angeben:
 * %Y = Jahr (vollständig)
@@ -603,11 +603,11 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Gen
 1. [Workflow erstellen](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [Überwachten Ordner konfigurieren](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### ECMAScript erstellen {#create-an-ecmascript}
+### ECMAScript erstellen  {#create-an-ecmascript}
 
 Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsoft Word-Dokumente (.docx) in PDF-Dokumente. Führen Sie die folgenden Schritte aus, um das Skript zu erstellen:
 
-1. Öffnen Sie CRXDE Lite in einem Browserfenster. The URL is https://&#39;[server]:[port]&#39;/crx/de.
+1. Öffnen Sie CRXDE Lite in einem Browserfenster. Die URL lautet https://&#39;[server]:[port]&#39;/crx/de.
 
 1. Navigieren Sie zu „/etc/workflow/scripts“ und erstellen Sie einen Ordner namens „PDFG“. 
 
@@ -641,7 +641,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 ### Workflow erstellen {#create-a-workflow}
 
 1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.
-https://[Servername]:&#39;Port&#39;/workflow
+https://[Servername]:&#39;port/workflow
 
 1. Klicken Sie in der Modellansicht auf **Neu**. Geben Sie im Dialogfeld „Neuer Workflow“ den **Titel** an und klicken Sie auf **OK**.
 
@@ -655,7 +655,7 @@ https://[Servername]:&#39;Port&#39;/workflow
 
 1. Klicken Sie mit der rechten Maustaste auf den Prozessschritt und wählen Sie **Bearbeiten**. Das Fenster „Schritt-Eigenschaften“ wird angezeigt.
 
-1. Wählen Sie auf der Registerkarte „Prozess“ das ECMAScript aus. For example, the pdfg-openOffice-sample.ecma script created in [Create an ECMAScript](#p-create-an-ecmascript-p). Aktivieren Sie die Option **Handler-Modus** und klicken Sie auf **OK**.
+1. Wählen Sie auf der Registerkarte „Prozess“ das ECMAScript aus. Beispielsweise das Skript pdfg-openOffice-sample.ecma, das in [Erstellen eines ECMAScripts](#p-create-an-ecmascript-p) erstellt wurde. Aktivieren Sie die Option **Handler-Modus** und klicken Sie auf **OK**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
