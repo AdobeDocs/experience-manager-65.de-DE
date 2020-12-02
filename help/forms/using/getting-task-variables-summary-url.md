@@ -78,7 +78,7 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
 
       * **Ordnerpfad**: Der Pfad, in dem der neue CRX-Knoten erstellt wird. Legen Sie den Pfad auf **/content** fest.
       * **Knotenname**: Weisen Sie diesem Feld die Eingabevariable nodeName zu. Dies ist eine eindeutige Knotennamen-Zeichenfolge.
-      * **Knotentyp**: Definieren Sie den Typ als **nt:unstructured**. Die Ausgabe dieses Prozesses ist nodePath. NodePath ist der CRX-Pfad des neu erstellten Knotens. NodePath stellt die endgültige Ausgabe des Prozesses **create PTO summary** dar.
+      * **Knotentyp**: Definieren Sie den Typ als  **nt:unstructured**. Die Ausgabe dieses Prozesses ist nodePath. NodePath ist der CRX-Pfad des neu erstellten Knotens. NodePath stellt die endgültige Ausgabe des Prozesses **create PTO summary** dar.
    1. Übergeben Sie die gesendeten Formulardaten (**employeeName**, **employeeID**, **ptoReason** und **totalDays**) als Eingabe für den neuen Prozess **create PTO summary**. Übernehmen Sie die Ausgabe als **ptoSummaryNodePath**.
 
 
