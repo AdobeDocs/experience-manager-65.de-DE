@@ -200,7 +200,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   </tr>
   <tr>
    <td>Senden einer E-Mail am Ende des Workflows</td>
-   <td>Supported <sup>[7]</sup></td>
+   <td>Unterstützt <sup>[7]</sup></td>
    <td>Unterstützt</td>
   </tr>
   <tr>
@@ -335,7 +335,7 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
   </tr>
   <tr>
    <td>Integration mit Anwendungen von Drittanbietern</td>
-   <td>Not Supported <sup>[6]</sup></td>
+   <td>Nicht unterstützt <sup>[6]</sup></td>
    <td>Unterstützt</td>
   </tr>
   <tr>
@@ -392,12 +392,12 @@ Formularorientierte AEM-Workflows in OSGi- und AEM Forms JEE-Workflows (AEM Form
 1. Programmeigene AEM Forms Document Services sind sowohl für formularorientierte AEM-Workflows in OSGi als auch für AEM Forms in JEE-Workflows verfügbar. AEM Workflow verwendet native Dokument-Dienste für formularorientierte AEM Workflows auf OSGi und AEM Forms JEE (Process Management) Workflows.
 1. AEM Forms JEE-Workflows können nur adaptive Formulare wiedergeben. Die Wiedergabe adaptiver Formulare als PDF-Dokument wird nicht unterstützt.
 1. AEM Forms JEE-Workflows bieten keinen separaten Schritt für Adobe Sign. Sie benötigen für AEM Forms JEE-Workflows ein adaptives Formular, in dem Adobe Sign aktiviert ist. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. Sie können den Schritt zum [Aufrufen des Formulardatenmodelldienstes](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) verwenden, um einen Webdienst aufzurufen und Daten aus einer Drittanbieteranwendung zu posten oder abzurufen.
-1. Sie können den Schritt E-Mail [senden](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) verwenden, um E-Mails zu senden.
+1. Mit dem Schritt [Formulardatenmodelldienst aufrufen](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) können Sie einen Webdienst aufrufen und Daten aus einer Drittanbieteranwendung posten oder abrufen.
+1. Mit dem Schritt [E-Mail senden](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) können Sie E-Mails senden.
 
 ## Unterschiede zwischen den Funktionen von AEM Inbox und AEM Forms-App {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Two of the prominent ways to launch a Forms-centric workflow are using [AEM Inbox](../../forms/using/manage-applications-inbox.md) and AEM Forms app. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. AEM Inbox works only with [Forms-centric workflows](../../forms/using/aem-forms-workflow.md) while the AEM Forms app works with both Forms-centric workflows as well as process management.
+Zwei der markanten Methoden zum Starten eines Forms-orientierten Workflows sind [AEM Inbox](../../forms/using/manage-applications-inbox.md) und die AEM Forms-App. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. AEM Inbox funktioniert nur mit [Forms-zentrierten Workflows](../../forms/using/aem-forms-workflow.md), während die AEM Forms-App sowohl mit Forms-zentrierten Workflows als auch mit Prozessverwaltung funktioniert.
 
 Die folgende Tabelle zeigt die Funktionen von AEM Inbox und der AEM Forms App:
 
