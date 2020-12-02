@@ -12,6 +12,9 @@ discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +35,7 @@ Beispiel:
 
 Aus dem MCM können Sie auf folgende Komponenten zugreifen:
 
-* **[Dashboard](#dashboard)**Dieses ist in vier Bereiche unterteilt:
+* **[Dashboard](#dashboard)** Dieses ist in vier Bereiche unterteilt:
 
    * [Listen](#lists) Dieser Bereich enthält die Listen, die Sie bereits erstellt haben, sowie die Anzahl der Leads in den jeweiligen Listen. Aus diesem Bereich können Sie direkt neue Listen erstellen oder Leads importieren, um eine neue Liste zu erstellen.
 Wenn Sie eine bestimmte Liste auswählen, gelangen Sie in den Bereich [Listen](#lists), der Details zu Ihrer Liste enthält.
@@ -45,19 +48,19 @@ Wenn Sie einen Bericht auswählen, wird die Berichtseite geöffnet.
 
    * [Kampagnen](#campaigns) In diesem Fenster werden Ihre Kampagnenerlebnisse wie [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) aufgeführt.
 
-* **[Leads](#leads)**Hier können Sie Ihre Leads verwalten. Sie können Leads erstellen oder importieren, bestimmte Details für einzelne Leads bearbeiten oder löschen, wenn sie nicht mehr benötigt werden. Außerdem können Sie Leads in verschiedene Gruppen, sogenannte Listen, einteilen.**Hinweis:**Adobe plant nicht, diese Funktion weiter auszubauen.
+* **[Leads](#leads)** Hier können Sie Ihre Leads verwalten. Sie können Leads erstellen oder importieren, bestimmte Details für einzelne Leads bearbeiten oder löschen, wenn sie nicht mehr benötigt werden. Außerdem können Sie Leads in verschiedene Gruppen, sogenannte Listen, einteilen. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-* **[Listen](#lists)**Hier können Sie Ihre (Lead-)Listen verwalten.**Hinweis:**Adobe plant nicht, diese Funktion weiter auszubauen.
+* **[Listen](#lists)** Hier können Sie Ihre (Lead-)Listen verwalten. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-* **[Kampagnen](#campaigns)**Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
+* **[Kampagnen](#campaigns)** Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
 
 ## Dashboard {#dashboard}
 
 Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead-)Listen, Segmente, Berichte und Kampagnen bieten. Hier können Sie ebenfalls auf die entsprechenden Grundfunktionen zugreifen.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_Dashboard](assets/mcm_dashboard.png)
 
 ### Leads {#leads}
 
@@ -130,7 +133,7 @@ Hier können Sie folgende Aktionen durchführen:
 
 * Öffnen der Kampagnenübersicht (doppelklicken Sie im rechten Bereich auf eine Kampagne oder klicken Sie im linken Bereich einmal).
 
-#### Kampagnenübersicht {#campaign-overview}
+#### Kampagnenübersicht  {#campaign-overview}
 
 Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
@@ -164,7 +167,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * **Eine** Neu erstellen... Erfahrung; zum Beispiel Adobe Target-Angebote, Teaser und Newsletter.
+   * Erstellen Sie eine **Neu...** Erlebnis; zum Beispiel Adobe Target-Angebote, Teaser und Newsletter.
    * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
    * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
@@ -176,7 +179,7 @@ Wenn die simulierte Seite geöffnet ist, können Sie den Sidekick öffnen, um in
    * **Suchen** nach Text (das Feld „Titel“ des Erlebnisses wird durchsucht).
    * Verwenden der **erweiterten** Suche, um Filter auf die Suche anzuwenden.
 
-### Simulieren von Kampagnen-Erlebnissen {#simulating-your-campaign-experiences}
+### Simulieren von Kampagnen-Erlebnissen  {#simulating-your-campaign-experiences}
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Simulieren**. Der Touchpoint (Teaser- oder Newsletter-Seite) wird geöffnet und das gewählte Erlebnis wird angezeigt (so, wie der Besucher es sieht).
 
@@ -184,7 +187,7 @@ Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie si
 
 Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen Pfeil nach unten), um zum Bearbeitungsmodus zu wechseln und die Seite zu aktualisieren.
 
-### Analysieren von Kampagnen-Erlebnissen {#analyzing-your-campaign-experiences}
+### Analysieren von Kampagnen-Erlebnissen  {#analyzing-your-campaign-experiences}
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm mit den Seiten-Impressions im Zeitverlauf wird angezeigt.
 
