@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 84%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
 
 Da Granite die CRX-Repository-Implementierung der JCR-API-Spezifikation umfasst, verfügt es über eine eigene Benutzer- und Gruppenverwaltung.
 
-These accounts are the underlying basis of the [AEM accounts](/help/sites-administering/security.md) and any account changes made with the Granite administration will be reflected if/when the accounts are accessed from the [AEM Users console](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (e.g. `http://localhost:4502/useradmin`). Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
+Diese Konten bilden die Basis der [AEM Konten](/help/sites-administering/security.md) und alle mit der Granite-Verwaltung vorgenommenen Kontoänderungen werden angezeigt, wenn/wenn auf die Konten über die [AEM Konsole Benutzer](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) zugegriffen wird (z.B. `http://localhost:4502/useradmin`). Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
 
-Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[Tools-Konsole](/help/sites-administering/tools-consoles.md)**der Touch-optimierten Benutzeroberfläche verfügbar:
+Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[Tools-Konsole](/help/sites-administering/tools-consoles.md)** der Touch-optimierten Benutzeroberfläche verfügbar:
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
@@ -79,7 +82,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Telefonnummer**
    * **Berufsbezeichnung**
    * **Straße**
-   * **Mobil**
+   * **Mobilgerät**
    * **Ort**
    * **PLZ**
    * **Land**
@@ -89,7 +92,9 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **Info**
    * **Kontoeinstellungen**
 
-      * **Status** Sie können das Konto als **aktiv** oder **inaktiv** kennzeichnen.
+      * ****
+StatusSie können das Konto entweder als 
+**** aktiviert oder  **inaktiv**.
    * **Foto**
 
       Hier können Sie ein Foto hochladen, um es als Avatar zu verwenden.
@@ -104,7 +109,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    * **Gruppen**
 
-      Eine Liste der Gruppen, denen der Benutzer derzeit angehört. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Eine Liste von Gruppen, zu denen der Benutzer zurzeit gehört. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
 
 1. Wählen Sie eine der folgenden Optionen aus, nachdem Sie das Benutzerkonto definiert haben:
@@ -187,7 +192,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    * **Beschreibung**
 
-       Eine Beschreibung der Gruppe.
+      Eine Beschreibung der Gruppe.
 
    * **Mitglieder zu Gruppe hinzufügen**
 
@@ -195,7 +200,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
    * **Gruppenmitglieder**
 
-      Eine Liste der Benutzer in der Gruppe. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Eine Liste von Benutzern in der Gruppe. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
 1. Wählen Sie eine der folgenden Optionen aus, nachdem Sie die Gruppe definiert haben:
 
@@ -217,7 +222,7 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
 1. Das Formular **Gruppeneinstellungen bearbeiten** wird geöffnet.
 
-   The group ID will be the same as the original, but prefixed with `Copy of`. Sie müssen die Kennung bearbeiten, da IDs keine Leerzeichen enthalten dürfen. Alle anderen Angaben bleiben gegenüber dem Original unverändert.
+   Die Gruppen-ID ist mit der ursprünglichen ID identisch, mit dem Präfix `Copy of`. Sie müssen die Kennung bearbeiten, da IDs keine Leerzeichen enthalten dürfen. Alle anderen Angaben bleiben gegenüber dem Original unverändert.
 
    Sie können nun die Details wie unter [Hinzufügen neuer Gruppen](#adding-a-new-group) bearbeiten.
 
