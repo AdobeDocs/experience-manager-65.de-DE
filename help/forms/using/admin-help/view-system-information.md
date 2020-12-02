@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 37%
 
 ---
 
@@ -35,66 +38,66 @@ Sie können Ihren Zeiger auf der Zeitachse verschieben, um Werte für einen best
 
 Im linken Bereich der Registerkarte „System“ werden die folgenden Informationen zum Server oder Knoten angezeigt:
 
-**** Virtuelle Maschine: Java Virtual Machine (JVM)-Version auf dem Server.
+**Virtual Machine:** Java Virtual Machine (JVM)-Version auf dem Server.
 
-**** Hersteller der virtuellen Maschine: Hersteller der JVM.
+**Hersteller der virtuellen Maschine:** Hersteller der JVM.
 
-**** Virtual Machine-Version: JVM-Versionsnummer
+**Virtual Machine-Version:** JVM-Versionsnummer
 
-**** Computername: Hostname des Servers, auf dem AEM Forms installiert ist.
+**Computername:** Hostname des Servers, auf dem AEM Formulare installiert sind.
 
-**** Up Time: Die Zeit in Stunden und Minuten, die der Server ausgeführt wurde.
+**Up Time:** Die Zeit in Stunden und Minuten, die der Server ausgeführt wurde.
 
-**** Just-in-time-Compiler: Der Name des verwendeten Compilers.
+**Just-in-time-Compiler:** Der Name des verwendeten Compilers.
 
-**** Kompilierungszeit: Die Zeit, die beim Kompilieren verbracht wurde.
+**Kompilierungszeit:** Die Zeit, die während der Kompilierung verbracht wurde.
 
-**** Anzahl der Live-Threads: Die Gesamtzahl der Threads, die derzeit im AEM Forms-System vorhanden sind.
+**Anzahl der Live-Threads:** Die Gesamtzahl der Threads, die derzeit im AEM Forms-System vorhanden sind.
 
-**** Anzahl Threads Spitze: Größte Anzahl Live-Threads, die je im System aufgezeichnet wurden.
+**Anzahl der Threads Spitze:** Größte Anzahl der Live-Threads, die je auf dem System aufgezeichnet wurden.
 
-**** Anzahl der geladenen Klassen: Anzahl der Klassen, die in die JVM geladen wurden.
+**Anzahl der geladenen Klassen:** Anzahl der Klassen, die in die JVM geladen wurden.
 
-**** Anzahl der nicht geladenen Klassen: Anzahl der Klassen, die aus der JVM entfernt wurden.
+**Anzahl der nicht geladenen Klassen:** Anzahl der Klassen, die aus der JVM entfernt wurden.
 
-**** Mindest-Heap: Die Mindestmenge des verwendeten Heap.
+**Mindest-Heap:** Die verwendete Mindestmenge an Heap.
 
-**** Maximum Heap: Die maximal verwendete Heap-Menge.
+**Maximum Heap:** Die maximal verwendete Heap-Menge.
 
-**** Betriebssystemname: Der Name des Betriebssystems, das auf dem AEM Forms-Server ausgeführt wird.
+**Betriebssystemname:** Der Name des Betriebssystems, das auf dem AEM forms-Server ausgeführt wird.
 
-**** Betriebssystemversion: Versionsnummer des Betriebssystems, das auf dem AEM Forms-Server ausgeführt wird.
+**Betriebssystemversion:** Versionsnummer des Betriebssystems, das auf dem AEM forms-Server ausgeführt wird.
 
-**** Betriebssystem-Arch: Die Betriebssystemarchitektur, auf der die JVM ausgeführt wird.
+**Betriebssystem-Arch:** Die Betriebssystemarchitektur, auf der die JVM ausgeführt wird.
 
-**** Anzahl Prozessoren: Die Anzahl der Prozessoren im System.
+**Anzahl der Prozessoren:** Die Anzahl der Prozessoren im System.
 
-**** Argumente der virtuellen Maschine: Das von der JVM verwendete Argument.
+**Argumente für Virtual Machine:** Das von der JVM verwendete Argument.
 
-**** Klassenpfad: Der von der JVM verwendete Klassenpfad.
+**Klassenpfad:** Der von der JVM verwendete Klassenpfad.
 
-**** Bibliothekspfad: Der von der JVM verwendete Bibliothekspfad.
+**Bibliothekspfad:** Der von der JVM verwendete Bibliothekspfad.
 
-**** Boot-Klassen-Pfad: Der von der JVM verwendete Bootklassenpfad.
+**Boot-Klassenpfad:** Der von der JVM verwendete Bootklassenpfad.
 
-**** Anwendungsservertyp: Typ des Anwendungsservers, der zum Ausführen von AEM Forms verwendet wird.
+**Anwendungsservertyp:** Typ des Anwendungsservers, der zum Ausführen AEM Formulare verwendet wird.
 
-**** Anwendungsserverversion: Versionsnummer des Anwendungsservers, der zum Ausführen von AEM Forms verwendet wird.
+**Anwendungsserverversion:** Versionsnummer des Anwendungsservers, der zum Ausführen AEM Formulare verwendet wird.
 
-**** Anwendungsserver-Anbieter: Hersteller des Anwendungsservers, der zum Ausführen von AEM Forms verwendet wird.
+**Anwendungsserver-Anbieter:** Hersteller des Anwendungsservers, der zum Ausführen AEM Formulare verwendet wird.
 
-**** Installationsdatum: Datum (im Format JJJ-MM-TT), an dem AEM Forms installiert wurde.
+**Installationsdatum:** Datum (im Format JJJ-MM-TT), an dem AEM Formulare installiert wurden.
 
-**** AEM Forms-Version: Version von AEM Forms, die installiert wird.
+**AEM Forms-Version:** Version der installierten AEM Formulare.
 
-**** Patch-Version: AEM Forms-Patch-Nummer.
+**Patch-Version:** AEM Patch-Nummer für Formulare.
 
-**** Datenbankname: Von AEM Forms verwendeter Datenbanktyp.
+**Datenbankname:** Von AEM Formularen verwendeter Datenbanktyp.
 
-**** Datenbankversion: Versionsnummer der von AEM Forms verwendeten Datenbank.
+**Datenbankversion:** Versionsnummer der Datenbank, die von AEM Formularen verwendet wird.
 
-**** Name des Datenbanklaufwerks: Der Name des Treibers, der von der JVM verwendet wird, um eine Verbindung zur Datenbank herzustellen.
+**Name des Datenbanklaufwerks:** Der Name des Treibers, der von der JVM verwendet wird, um eine Verbindung zur Datenbank herzustellen.
 
-**** Datenbanktreiberversion: Die Version des Treibers, mit dem die JVM eine Verbindung zur Datenbank herstellt.
+**Datenbanktreiberversion:** Die Version des Treibers, der von der JVM verwendet wird, um eine Verbindung zur Datenbank herzustellen.
 
 Mit der Schaltfläche **Speichern** können Sie diese Systeminformationen in einer Eigenschaftendatei speichern.
