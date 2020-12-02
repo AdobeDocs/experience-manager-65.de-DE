@@ -43,7 +43,7 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 
 >[!NOTE]
 >
->Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/metadata.md) You can customize the fields in the Bulk Metadata editor for Assets using the [Schema editor](/help/assets/metadata-schemas.md).
+>Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/metadata.md) Sie können die Felder im Massenmetadateneditor für Assets mit dem Schema-Editor [a1/> anpassen.](/help/assets/metadata-schemas.md)
 
 ## Aktivieren eines Felds {#enabling-a-field}
 
@@ -72,7 +72,7 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
    >
    >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 
-1. Navigate to the required field within the `cq:dialog` definition.
+1. Navigieren Sie zum erforderlichen Feld innerhalb der Definition `cq:dialog`.
 1. Definieren Sie die folgende Eigenschaft auf dem Feldknoten:
 
    * **Name**: `allowBulkEdit`
@@ -95,7 +95,7 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
    >
    >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
    >
-   >    1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >    1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
    >    1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
