@@ -49,7 +49,7 @@ Die einzelnen Workflow-Schritte:
 
 Anstatt eine völlig neue Layoutvorlage zu erstellen, können Sie die von Correspondence Management bereitgestellten Vorlagen ändern und wiederverwenden. Sie können in Designer rasch das Branding und die Daten- und Inhaltsfelder in den Vorlagen ändern wie für die Zwecke Ihres Unternehmens benötigt. Weitere Informationen finden Sie unter [Referenzieren von Briefvorlagen](/help/forms/using/reference-cm-layout-templates.md).
 
-### Dokumentfragmenterstellung {#document-fragment-creation}
+### Dokumentfragmenterstellung  {#document-fragment-creation}
 
 Dokument-Fragmente sind wiederverwendbare Bestandteile\Komponenten einer Korrespondenz, mit denen Sie Briefe/Korrespondenz zusammenstellen können.
 
@@ -63,13 +63,13 @@ Ein Text-Asset ist eine Inhaltskomponente, die aus einem oder mehreren Textabsä
 
 Liste ist eine Reihe von Dokument-Fragmenten, einschließlich Text, Listen (die gleiche Liste kann nicht &quot;an sich hinzugefügt werden), Bedingungen und Bilder. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren.
 
-#### Bedingung {#condition}
+#### Bedingung  {#condition}
 
 Mit Hilfe von Bedingungen können Sie festlegen, welche Inhalte zum Zeitpunkt der Dokumenterstellung je nach den bereitgestellten Daten in das Schriftstück einbezogen werden sollen. Die Beschreibung der Bedingung beruht auf Steuerungsvariablen. Die Variablen können entweder ein Datenwörterbuchelement oder ein Platzhalter sein. Beim Hinzufügen einer Bedingung haben Sie die Möglichkeit, ein Asset einzubeziehen, das auf dem Wert beruht, den die Steuerungsvariable hat. Bedingungen führen zu einer einzelnen Ausgabe, die von einem Ausdruck abhängt. Der erste Ausdruck wird basierend auf der aktuellen Bedingungsvariable als „true“ gefunden. Ihr Wert wird zur Ausgabe der Bedingung.
 
 #### Layout-Fragment {#layout-fragment}
 
-Unter einem Layout-Fragment versteht man ein Layout, das mit einem oder mehreren Briefen verwendet werden kann. Mit einem Layout-Fragment werden wiederholbare Muster, insbesondere dynamische Tabellen erstellt. Das Layout kann typische Formularfelder wie „Adresse“ und „Referenz“ enthalten. Es enthält auch leere Unterformulare, die Zielbereiche kennzeichnen. The layouts (XDPs) are created in Designer and then are [uploaded to Forms and Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Unter einem Layout-Fragment versteht man ein Layout, das mit einem oder mehreren Briefen verwendet werden kann. Mit einem Layout-Fragment werden wiederholbare Muster, insbesondere dynamische Tabellen erstellt. Das Layout kann typische Formularfelder wie „Adresse“ und „Referenz“ enthalten. Es enthält auch leere Unterformulare, die Zielbereiche kennzeichnen. Die Layouts (XDPs) werden in Designer erstellt und dann [nach Forms und Dokumente](/help/forms/using/get-xdp-pdf-documents-aem.md) hochgeladen.
 
 ### Brieferstellung {#letter-creation}
 
@@ -166,21 +166,21 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 
 ## Vorteile der Analyse {#benefits-of-performing-the-analysis}
 
-**Wiederverwendung** von Inhalten Sie benötigen eine konsolidierte Liste von neuen Inhalten, um Korrespondenz zu generieren. Viele Inhalt, wie Kopf- und Fußzeilen, Haftungsausschlüsse und Einleitungen, kommen in vielen Briefen vor und können daher für zahlreiche Briefe wiederholt verwendet werden. Solche gemeinsam genutzten Inhalte können einmalig von Fachleuten erstellt und genehmigt und dann in vielen Schriftstücken wiederholt verwendet werden.
+**Wiederverwendung** von InhaltenSie benötigen eine konsolidierte Liste von neuen Inhalten, um Korrespondenz zu generieren. Viele Inhalt, wie Kopf- und Fußzeilen, Haftungsausschlüsse und Einleitungen, kommen in vielen Briefen vor und können daher für zahlreiche Briefe wiederholt verwendet werden. Solche gemeinsam genutzten Inhalte können einmalig von Fachleuten erstellt und genehmigt und dann in vielen Schriftstücken wiederholt verwendet werden.
 
-**Erstellen des Datenwörterbuchs** Es gibt Datenwerte wie &quot;Kunden-ID&quot;und &quot;Kundenname&quot;, die in vielen Briefen verwendet werden. Sie können eine konsolidierte Liste mit all diesen Datenwerten vorbereiten. Normalerweise wird jemand aus dem Middleware-Team des Unternehmens hinzugezogen, wenn die Struktur geplant wird. Diese Liste bildet die Grundlage für den Aufbau des Datenwörterbuchs.
+**Erstellen des** Datenwörterbuchs Es gibt Datenwerte wie &quot;Kunden-ID&quot;und &quot;Kundenname&quot;, die in vielen Briefen verwendet werden. Sie können eine konsolidierte Liste mit all diesen Datenwerten vorbereiten. Normalerweise wird jemand aus dem Middleware-Team des Unternehmens hinzugezogen, wenn die Struktur geplant wird. Diese Liste bildet die Grundlage für den Aufbau des Datenwörterbuchs.
 
-**Datenquellen aus Back-End-Unternehmenssystemen** Sie werden auch alle erforderlichen Datenwerte kennen und wissen, von wo aus die Daten des Unternehmenssystems abgerufen werden. Sie können dann die Architektur so einrichten, dass die Daten aus dem Unternehmenssystem extrahiert und an die Brieflösung übermittelt werden.
+**Datenquellen aus Back-End-** UnternehmenssystemenSie werden auch alle erforderlichen Datenwerte kennen und wissen, von wo aus die Daten des Unternehmenssystems abgerufen werden. Sie können dann die Architektur so einrichten, dass die Daten aus dem Unternehmenssystem extrahiert und an die Brieflösung übermittelt werden.
 
-**Schätzung der Komplexität von Briefen** Es ist wichtig zu bestimmen, wie komplex es sein wird, eine bestimmte Korrespondenz zu erstellen. Mit Hilfe der entsprechenden Analyse lässt sich bestimmen, wie viel Zeit und Fachwissen zur Erstellung der Briefvorlagen erforderlich sein wird. Dies wiederum erleichtert die Schätzung des Ressourcenbedarfs und der Kosten zur Implementierung der Brieflösung.
+**Schätzung der Komplexität von** Briefen Es ist wichtig zu bestimmen, wie komplex die Erstellung einer bestimmten Korrespondenz sein wird. Mit Hilfe der entsprechenden Analyse lässt sich bestimmen, wie viel Zeit und Fachwissen zur Erstellung der Briefvorlagen erforderlich sein wird. Dies wiederum erleichtert die Schätzung des Ressourcenbedarfs und der Kosten zur Implementierung der Brieflösung.
 
-## Komplexität der Schriftstücke {#correspondence-complexity}
+## Komplexität der Schriftstücke  {#correspondence-complexity}
 
 Die Komplexität der einzelnen Schriftstücke lässt sich durch eine Analyse der folgenden Parameter ermitteln:
 
-**Komplexität** des Layouts Wie komplex ist das Layout? Briefe wie Kündigungsmitteilungen verfügen über einfache Layouts. Anderseits haben Briefe, wie z. B. Anspruchsabdeckungsbestätigungen, ein komplexes Layout mit mehreren Tabellen und mehr als 60 Formularfeldern. Die Erstellung komplexer Layouts nimmt mehr Zeit in Anspruch und erfordert fortgeschrittenes Fachwissen zur Layoutentwicklung.
+**Layout-** KomplexitätWie komplex ist das Layout? Briefe wie Kündigungsmitteilungen verfügen über einfache Layouts. Anderseits haben Briefe, wie z. B. Anspruchsabdeckungsbestätigungen, ein komplexes Layout mit mehreren Tabellen und mehr als 60 Formularfeldern. Die Erstellung komplexer Layouts nimmt mehr Zeit in Anspruch und erfordert fortgeschrittenes Fachwissen zur Layoutentwicklung.
 
-**Anzahl der Textabsätze und Bedingungen** Ein Darlehensvertrag kann 10 Seiten lang sein und mehr als 40 Textbausteine enthalten. Viele dieser Klauseln wären von &quot;Darlehensparametern&quot;abhängig. Je nach den genauen Vertragsbedingungen würden die einzelnen Bausteine in den Vertrag aufgenommen oder nicht. Die Erstellung solcher Briefe erfordert sorgfältige Planung und eine umsichtige Festlegung der komplexen Bedingungen.
+**Anzahl der Textabsätze und** BedingungenEin Darlehensvertrag kann 10 Seiten lang sein und mehr als 40 Textbausteine enthalten. Viele dieser Klauseln wären von &quot;Darlehensparametern&quot;abhängig. Je nach den genauen Vertragsbedingungen würden die einzelnen Bausteine in den Vertrag aufgenommen oder nicht. Die Erstellung solcher Briefe erfordert sorgfältige Planung und eine umsichtige Festlegung der komplexen Bedingungen.
 
 Die folgende Tabelle enthält einige Richtlinien, die Sie bei der Einteilung Ihrer Briefe zu Grunde legen können:
 
@@ -228,45 +228,45 @@ Die folgende Tabelle enthält einige Richtlinien, die Sie bei der Einteilung Ihr
 
 Sie müssen zunächst Folgendes einrichten, um eine Korrespondenz zu erstellen:
 
-* [Kompatibilitätspaket](compatibility-package.md). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
+* [Kompatibilitätspaket](compatibility-package.md). Installieren Sie das Kompatibilitätspaket, um die Option **Briefe** auf der **Forms**-Seite Ansicht.
 * Die XDP-Datei des Briefs ([Layout](/help/forms/using/document-fragments.md)).
-* Andere XDP-Dateien ([Layoutfragmente](document-fragments.md#document-fragments)), die Bestandteile des Briefs bilden. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
-* The relevant [data dictionary](/help/forms/using/data-dictionary.md) (Optional).
+* Andere XDP-Dateien ([Layoutfragmente](document-fragments.md#document-fragments)), die Bestandteile des Briefs bilden. Die XDPs\Layouts werden unter [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/) erstellt.
+* Das relevante [Datenwörterbuch](/help/forms/using/data-dictionary.md) (Optional).
 * Die [Datenmodule](/help/forms/using/document-fragments.md), die Sie in der Korrespondenz verwenden möchten.
-* [Testdaten](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) sind die XML-Datei mit den darin enthaltenen Testdaten. Testdaten sind erforderlich, wenn Sie ein Datenwörterbuch verwenden.
+* [&quot;](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) Testdaten&quot;ist die XML-Datei mit den darin enthaltenen Testdaten. Testdaten sind erforderlich, wenn Sie ein Datenwörterbuch verwenden.
 
-## Erstellen Sie eine Briefvorlage {#create-a-letter-template}
+## Erstellen Sie eine Briefvorlage  {#create-a-letter-template}
 
 ### Auswählen eines Layouts und Eingabe der Briefeigenschaften {#select-a-layout-and-enter-the-letter-properties}
 
 1. Wählen Sie **Formulare** > **Briefe**.
 
-1. Select **Create > Letter**. Correspondence Management zeigt die verfügbaren Layouts (XDPs) an. Diese Layouts stammen von Designer. Die Layouts umfassen auch die Briefvorlagen, die in Correspondence Management standardmäßig bereitgestellt werden. Weitere Informationen finden Sie unter [Referenzieren von Briefvorlagen](/help/forms/using/reference-cm-layout-templates.md). To add your own layouts, create XDP (layout) files in Designer and then [upload them to AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Wählen Sie **Erstellen > Brief**. Correspondence Management zeigt die verfügbaren Layouts (XDPs) an. Diese Layouts stammen von Designer. Die Layouts umfassen auch die Briefvorlagen, die in Correspondence Management standardmäßig bereitgestellt werden. Weitere Informationen finden Sie unter [Referenzieren von Briefvorlagen](/help/forms/using/reference-cm-layout-templates.md). Um Ihre eigenen Layouts hinzuzufügen, erstellen Sie XDP-Dateien (Layout) in Designer und laden Sie sie dann [in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md) hoch.
 
    ![create-letter](assets/create-letter.png)
 
-1. Select a layout by tapping it and tap **Next**.
+1. Wählen Sie ein Layout aus, indem Sie darauf tippen und auf **Weiter** tippen.
 
    ![Wählen Sie „Layout“, um einen Brief zu erstellen](assets/selectlayout.png)
 
-1. Enter the properties for the Correspondence and tap **Save:**
+1. Geben Sie die Eigenschaften für die Korrespondenz ein und tippen Sie auf **Speichern:**
 
    * **Titel (optional):** Geben Sie den Titel für den Brief ein. Der Titel muss nicht eindeutig sein und darf Sonderzeichen und nichtenglische Zeichen enthalten.
    * **Name:** Der eindeutige Name des Briefs. Es darf immer nur ein Brief mit einem bestimmten Namen in einem Status vorhanden sein. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt. Die im Feld &quot;Titel&quot;eingegebenen Sonderzeichen, Leerzeichen, Zahlen und nichtenglischen Zeichen werden durch Bindestriche im Feld &quot;Name&quot;ersetzt. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
    * **Beschreibung (optional):** Geben Sie eine Beschreibung des Briefs als Referenz ein.
    * **Datenwörterbuch (optional)**: Das Datenwörterbuch kann mit der Korrespondenz verknüpft werden. Die Assets, die Sie später in diese Korrespondenz einfügen, sollten entweder dasselbe Datenwörterbuch wie Sie es für die Korrespondenz hier auswählen, oder gar kein Datenwörterbuch enthalten.
-   * **Tags (optional):** Wählen Sie die Tags aus, die auf die Korrespondenz angewendet werden sollen. Sie können auch einen neuen/benutzerdefinierten Tag-Namen eingeben und die Eingabetaste drücken, um ihn zu erstellen.
+   * **Tags (Optional):** Wählen Sie die Tags aus, die auf die Korrespondenz angewendet werden sollen. Sie können auch einen neuen/benutzerdefinierten Tag-Namen eingeben und die Eingabetaste drücken, um ihn zu erstellen.
    * **Nachbearbeitung (optional):** Wählen Sie den Nachbearbeitungsprozess aus, der auf die Briefvorlage angewendet werden soll. Es gibt sowohl standardmäßige Nachbearbeitungsprozesse als auch jene, die Sie mithilfe von AEM wie E-Mail und Druck erstellt haben.
 
    ![Eigenschaften der Korrespondenz](assets/createcorrespondenceproperties.png)
 
-1. Das System zeigt eine Nachricht an: „Brief erfolgreich erstellt.“ (in the alert message) Tap **Open** to configure the data modules and layout fragments in it. Or tap **Done** to go back to the previous page.
+1. Das System zeigt eine Nachricht an: „Brief erfolgreich erstellt.“ (in der Warnmeldung) Tippen Sie auf **Öffnen**, um die Datenmodule und Layout-Fragmente darin zu konfigurieren. Oder tippen Sie auf **Fertig**, um zur vorherigen Seite zurückzukehren.
 
    ![Warnmeldung: Brief erfolgreich erstellt](assets/createcorrespondencecreated.png)
 
-   **Nächste**: Wenn Sie auf **Öffnen** tippen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Komponenten an. Fahren Sie fort mit dem Einfügen von [Datenmodulen und Layout-Fragmenten und konfigurieren Sie sie](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Nächste**: Wenn Sie auf  **Öffnen** tippen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Komponenten an. Fahren Sie fort mit dem Einfügen von [Datenmodulen und Layout-Fragmenten und konfigurieren Sie sie](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
-### Fügen Sie Datenmodule und Layout-Fragmente in einen Brief ein und konfigurieren Sie sie {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
+### Fügen Sie Datenmodule und Layout-Fragmente in einen Brief ein und konfigurieren Sie sie  {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
 Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, zeigt Correspondence Management eine Darstellung des Layouts mit allen im Layout (XDP) aufgelisteten Teilformulare/Zielgruppen an. Sie können in jeden der Zielbereiche entweder ein Datenmodul oder ein Layout-Fragment einfügen (und dann Datenmodule in das Layout-Fragment).
 
@@ -274,7 +274,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 >
 >Auf der Seite „Daten“ können Sie auch auf das Symbol „Bearbeiten“ für einen Brief tippen, um Datenmodule und Layout-Fragmente in einen Brief einzufügen und sie zu konfigurieren.
 
-1. Tap **Insert** for each of the subforms and select Data Modules or a Layout Fragment to insert in each of the subforms.
+1. Tippen Sie für jedes der Teilformulare auf **Einfügen** und wählen Sie &quot;Datenmodule&quot;oder &quot;Layout-Fragment&quot;, die in die einzelnen Teilformulare eingefügt werden sollen.
 
    ![Fügen Sie Datenmodule und Layout-Fragmente ein](assets/insertdmandlf.png)
 
@@ -294,7 +294,7 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 
    ![Eingefügte Datenmodule und Layout-Fragmente](assets/insertdmandlf2.png)
 
-1. Tippen Sie zum Bearbeiten eines Moduls auf das Symbol „Bearbeiten“ daneben. After editing the modules, tap **Save**.
+1. Tippen Sie zum Bearbeiten eines Moduls auf das Symbol „Bearbeiten“ daneben. Tippen Sie nach dem Bearbeiten der Module auf **Speichern**.
 
    Auf dieser Seite können Sie für die Unterformulare auch die folgenden Optionen einstellen:
 
@@ -303,9 +303,9 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 
    Auf dieser Seite können Sie für jedes der Assets der Unterformulare auch die folgenden Optionen einstellen:
 
-   1. **Reihenfolge der Assets**&#x200B;ändern: Ziehen Sie ein Asset per Drag &amp; Drop, indem Sie das Symbol &quot;Neu anordnen&quot;für ein Asset gedrückt halten ( ![Ziehen](assets/dragndrop.png)).
+   1. **Reihenfolge der Assets** ändern: Ziehen Sie ein Asset per Drag &amp; Drop, indem Sie das Symbol &quot;Neu anordnen&quot;für ein Asset gedrückt halten ( ![Ziehen](assets/dragndrop.png)).
    1. **Assets löschen:** Tippen Sie neben dem Asset auf das Symbol „Löschen“, um das Asset zu löschen.
-   1. **Vorschauen-Assets**: Tippen Sie auf das Symbol Vorschau anzeigen ( ![Vorschau](assets/showpreview.png)anzeigen) neben einem Asset.
+   1. **Vorschauen-Assets**: Tippen Sie auf das Symbol Vorschau anzeigen (  ![Vorschau](assets/showpreview.png) anzeigen) neben einem Asset.
 
 
 1. Tippen Sie auf **Weiter**.
@@ -337,17 +337,17 @@ Wenn Sie nach dem Erstellen einer Korrespondenz auf &quot;Öffnen&quot;tippen, z
 
    ![Verknüpfungen](assets/linkages.png)
 
-1. After specifying linkage, tap **Next**. Correspondence Management zeigt den Bildschirm &quot;Anlagen&quot;an.
+1. Nachdem Sie die Verknüpfung angegeben haben, tippen Sie auf **Weiter**. Correspondence Management zeigt den Bildschirm &quot;Anlagen&quot;an.
 
 ### Richten Sie die Anlagen ein {#set-up-the-attachments}
 
-1. Select **Add Asset**.
-1. In the Select Asset screen, tap the assets to attach with the letter and tap **Done**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber auch Bilder anzuhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/manage-assets.md).
-1. To lock the order of the assets in the list so that the Claims Adjustor cannot change the order, tap **Lock Order**. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
-1. To change the order of the assets, drag-and-drop an asset holding the reorder icon for an asset ( ![dragndrop](assets/dragndrop.png)).
-1. Tap **Edit** in front of an attachment and specify an attachment as Mandatory if you do not want the author to be able to delete it. Geben Sie eine Anlage als „Ausgewählt“ an, wenn sie in der CCR-Benutzeroberfläche vorausgewählt werden soll.
+1. Wählen Sie **Hinzufügen Asset**.
+1. Tippen Sie im Bildschirm &quot;Asset auswählen&quot;auf die Assets, die mit dem Brief verbunden werden sollen, und tippen Sie auf **Fertig**. Sie müssen die Anlagen zuerst in „Anlagen“ hochladen“. Es wird empfohlen, nur PDF- und Microsoft Office-Dokumente anzuhängen, aber auch Bilder anzuhängen. Weitere Informationen über das Hochladen von Assets in DAM finden Sie unter [Assets hochladen](/help/assets/manage-assets.md).
+1. Um die Reihenfolge der Assets in der Liste zu sperren, sodass der Schadensregulierer die Reihenfolge nicht ändern kann, tippen Sie auf **Reihenfolge sperren**. Wenn Sie diese Option nicht aktivieren, kann der Schadensregulierer die Reihenfolge der Listenelemente ändern.
+1. Um die Reihenfolge der Assets zu ändern, ziehen Sie per Drag &amp; Drop ein Asset, indem Sie das Symbol &quot;Neu anordnen&quot;für ein Asset gedrückt halten ( ![dragndrop](assets/dragndrop.png)).
+1. Tippen Sie auf **Bearbeiten** vor einer Anlage und geben Sie eine Anlage als obligatorisch an, wenn Sie nicht möchten, dass der Autor sie löschen kann. Geben Sie eine Anlage als „Ausgewählt“ an, wenn sie in der CCR-Benutzeroberfläche vorausgewählt werden soll.
 1. Wählen Sie **Bibliothekszugriff** aus, um Zugriff auf die Bibliothek zu gewähren. Bei Aktivierung des Bibliothekszugriffs kann der Schadensregulierer beim Erstellen eines Briefes auf die Inhaltsbibliothek zugreifen und Anlagen einfügen.
-1. Select **Attachments Configuration** and specify the maximum number of attachments.
+1. Wählen Sie **Anlagenkonfiguration** und geben Sie die maximale Anzahl von Anlagen an.
 
 1. Tippen Sie auf **Speichern**. Ihre Korrespondenz wird erstellt und auf der Seite &quot;Briefe&quot;aufgelistet.
 
@@ -436,7 +436,7 @@ Die folgenden Werte in der Tabelle
    <td>Nicht zutreffend</td> 
   </tr> 
   <tr> 
-   <td><strong>Nur</strong> <strong>Text</strong></td> 
+   <td><strong></strong> <strong>Nur Text</strong></td> 
    <td>Ja</td> 
    <td>Nur Text</td> 
    <td>Ja</td> 
