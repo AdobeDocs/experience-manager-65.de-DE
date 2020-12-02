@@ -27,12 +27,12 @@ Wenn die Eingabewerte die Überprüfungskriterien erfüllen, werden die Werte an
 
 Wenn die Eingabewerte die Überprüfungskriterien nicht erfüllen und die Fehlermeldung zur Servervalidierung nicht im Standardmeldungsformat vorliegt, stellen die adaptiven Formulare einen Mechanismus bereit, mit dem die Prüffehlermeldungen in ein Standardformat umgewandelt werden können, sodass sie auf Feldebene im Formular angezeigt werden. Sie können die Fehlermeldung mit zwei der folgenden Methoden in das Standardformat transformieren:
 
-* Hinzufügen benutzerdefinierter Fehlerhandler bei der Übermittlung adaptiver Formulare
-* Hinzufügen benutzerdefinierter Handler zum Aufrufen einer Dienstaktion mit dem Regeleditor
+* hinzufügen benutzerdefinierter Fehlerhandler bei der Übermittlung adaptiver Formulare
+* hinzufügen benutzerdefinierter Handler zum Aufrufen einer Dienstaktion mit dem Regeleditor
 
 In diesem Artikel werden das Standardformat für die Prüffehlermeldungen und die Anweisungen zur Konvertierung der Fehlermeldungen von einem benutzerdefinierten in das Standardformat beschrieben.
 
-## Standard-Fehlermeldungsformat {#standard-validation-message-format}
+## Standard-Validierungsfehlerformat {#standard-validation-message-format}
 
 Die adaptiven Formulare zeigen die Fehler auf Feldebene an, wenn die Fehlermeldungen zur Servervalidierung im folgenden Standardformat vorliegen:
 
@@ -58,36 +58,36 @@ wobei:
 * `originCode` enthält den vom externen Dienst zurückgegebenen Fehlercode
 * `originMessage` enthält die vom externen Dienst zurückgegebenen Rohfehlerdaten
 
-## Konfigurieren der Übermittlung adaptiver Formulare zum Hinzufügen benutzerdefinierter Handler {#configure-adaptive-form-submission}
+## Konfigurieren Sie die Übermittlung adaptiver Formulare, um benutzerdefinierte Handler {#configure-adaptive-form-submission} hinzuzufügen.
 
 Wenn die Fehlermeldung zur Servervalidierung nicht im Standardformat angezeigt wird, können Sie die asynchrone Übermittlung aktivieren und einen benutzerdefinierten Fehlerhandler für die Übermittlung des adaptiven Formulars hinzufügen, um die Nachricht in ein Standardformat zu konvertieren.
 
-### Configure asynchronous adaptive form submission {#configure-asynchronous-adaptive-form-submission}
+### Konfigurieren der Übermittlung eines asynchronen adaptiven Formulars {#configure-asynchronous-adaptive-form-submission}
 
 Bevor Sie einen benutzerdefinierten Handler hinzufügen, müssen Sie das adaptive Formular für die asynchrone Übermittlung konfigurieren. Führen Sie die folgenden Schritte aus:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
-1. Wählen Sie **[!UICONTROL Auf Server]** erneut überprüfen, um die Eingabefeldwerte vor der Übermittlung auf dem Server zu überprüfen.
+1. Wählen Sie im Authoring-Modus für adaptive Formulare das Objekt &quot;Form Container&quot;aus und tippen Sie auf ![Eigenschaften für adaptive Formulare](assets/configure_icon.png), um die Eigenschaften zu öffnen.
+1. Aktivieren Sie im Abschnitt **[!UICONTROL Submission]** properties **[!UICONTROL Asynchronous submission]**.
+1. Wählen Sie **[!UICONTROL Auf Server]** erneut überprüfen, um die Eingabefeldwerte vor dem Senden auf dem Server zu überprüfen.
 1. Wählen Sie die Übermittlungsaktion aus:
 
-   * Wählen Sie &quot; **[!UICONTROL Senden mit Formulardatenmodell]** &quot;und wählen Sie das entsprechende Datenmodell aus, wenn Sie das RESTful-Webdienst-basierte [Formulardatenmodell](work-with-form-data-model.md) als Datenquelle verwenden.
-   * Wählen Sie &quot; **[!UICONTROL An REST-Endpunkt]** übermitteln&quot;und geben Sie die **[!UICONTROL Umleitungs-URL/den Pfad]** an, wenn Sie RESTful-Webdienste als Datenquelle verwenden.
+   * Wählen Sie **[!UICONTROL Mit Formulardatenmodell senden]** und wählen Sie das entsprechende Datenmodell, wenn Sie RESTful-Webdienst-basiertes [Formulardatenmodell](work-with-form-data-model.md) als Datenquelle verwenden.
+   * Wählen Sie **[!UICONTROL An REST-Endpunkt senden]** und geben Sie **[!UICONTROL Umleitungs-URL/Pfad]** an, wenn Sie RESTful-Webdienste als Datenquelle verwenden.
 
    ![Eigenschaften für die Übermittlung adaptiver Formulare](assets/af_submission_properties.png)
 
 1. Tippen Sie auf ![Speichern](assets/save_icon.png), um die Eigenschaften zu speichern.
 
-### Hinzufügen benutzerdefinierter Fehlerhandler bei der Übermittlung adaptiver Formulare {#add-custom-error-handler-af-submission}
+### hinzufügen benutzerdefinierter Fehler-Handler bei der Übermittlung des adaptiven Formulars {#add-custom-error-handler-af-submission}
 
 AEM Forms bietet standardmäßig Handler zur Verarbeitung von erfolgreichen und fehlgeschlagenen Formularübermittlungen an. Handler sind clientseitige Funktionen, die anhand der Serverantwort ausgeführt werden. Wenn ein Formular übermittelt wird, werden die Daten zur Validierung an den Server gesendet, der eine Antwort mit Informationen über den Erfolg oder das Fehlschlagen der Übermittlung an den Client zurücksendet. Die Informationen werden als Parameter an den relevanten Handler übergeben, um die Funktion auszuführen.
 
 Führen Sie die folgenden Schritte aus, um beim Senden des adaptiven Formulars einen benutzerdefinierten Fehlerhandler hinzuzufügen:
 
-1. Open the adaptive form in authoring mode, select any form object, and tap <!--![Rule Editor](assets/af_edit_rules.png)--> to open the rule editor.
+1. Öffnen Sie das adaptive Formular im Bearbeitungsmodus, wählen Sie ein beliebiges Formularobjekt aus und tippen Sie auf <!--![Rule Editor](assets/af_edit_rules.png)-->, um den Regeleditor zu öffnen.
 1. Wählen Sie **[!UICONTROL Formular]** in der Struktur „Formularobjekte“ und tippen Sie auf **[!UICONTROL Erstellen]**.
-1. Wählen Sie in der Dropdown-Liste Ereignis die Option **[!UICONTROL Fehler bei Übermittlung]** .
-1. Schreiben Sie eine Regel, um die benutzerdefinierte Fehlerstruktur in die Standardfehlerstruktur zu konvertieren, und tippen Sie auf **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Wählen Sie **[!UICONTROL Fehler bei Übermittlung]** aus der Dropdown-Liste Ereignis.
+1. Schreiben Sie eine Regel, um die benutzerdefinierte Fehlerstruktur in die Standardfehlerstruktur zu konvertieren, und tippen Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern.
 
 Im Folgenden finden Sie einen Beispielcode zum Konvertieren einer benutzerdefinierten Fehlerstruktur in die standardmäßige Fehlerstruktur:
 
@@ -129,31 +129,31 @@ if (data) {
 }
 ```
 
-Die `var som_map` Liste des SOM-Ausdrucks der adaptiven Formularfelder, die in das Standardformat umgewandelt werden sollen. Sie können den SOM-Ausdruck eines beliebigen Felds in einem adaptiven Formular durch Tippen auf das Feld und Auswahl von **[!UICONTROL Ansicht SOM-Ausdruck]** Ansicht werden.
+Die Liste `var som_map` des SOM-Ausdrucks der adaptiven Formularfelder, die Sie in das Standardformat umwandeln möchten. Sie können den SOM-Ausdruck eines beliebigen Felds in einem adaptiven Formular durch Tippen auf das Feld und Auswahl von **[!UICONTROL Ansicht SOM-Ausdruck]** Ansicht haben.
 
-Mithilfe dieses benutzerspezifischen Fehlerhandlers konvertiert das adaptive Formular die in aufgeführten Felder in `var som_map` das Standard-Fehlermeldungsformat. Die Prüffehlermeldungen werden daher auf Feldebene im adaptiven Formular angezeigt.
+Mit diesem benutzerdefinierten Fehlerhandler konvertiert das adaptive Formular die unter `var som_map` aufgelisteten Felder in das Standardfehlermeldungsformat. Die Prüffehlermeldungen werden daher auf Feldebene im adaptiven Formular angezeigt.
 
-## Hinzufügen benutzerdefinierter Handler mit der Aktion &quot;Dienst aufrufen&quot;
+## hinzufügen benutzerdefinierter Handler mit der Aktion &quot;Dienst aufrufen&quot;
 
-Führen Sie die folgenden Schritte aus, um einen Fehler-Handler hinzuzufügen, um eine benutzerdefinierte Fehlerstruktur mithilfe der Aktion &quot;Aufrufdienst&quot;des [Regeleditors](rule-editor.md) in die Standardfehlerstruktur zu konvertieren:
+Führen Sie die folgenden Schritte aus, um einen Fehlerhandler hinzuzufügen, um eine benutzerdefinierte Fehlerstruktur mithilfe der Aktion [Regel-Editor](rule-editor.md) Dienst aufrufen in die Standardfehlerstruktur zu konvertieren:
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![Rule Editor](assets/rule_editor_icon.png) to open the rule editor.
+1. Öffnen Sie das adaptive Formular im Bearbeitungsmodus, wählen Sie ein beliebiges Formularobjekt aus und tippen Sie auf ![Regel-Editor](assets/rule_editor_icon.png), um den Regeleditor zu öffnen.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**.
-1. Erstellen Sie eine Bedingung im Abschnitt **[!UICONTROL Wenn]** der Regel. Beispiel:[WennName des Felds] geändert wird. &quot;Auswählen&quot; **[!UICONTROL wird aus der Dropdown-Liste &quot;Status]** auswählen **[!UICONTROL &quot;geändert]** , um diese Bedingung zu erreichen.
+1. Erstellen Sie eine Bedingung im Abschnitt **[!UICONTROL Wenn]** der Regel. Beispiel: Wenn[Name des Felds] geändert wird. Wählen Sie **[!UICONTROL aus der Dropdown-Liste**[!UICONTROL  Status ]**auswählen, um diese Bedingung zu erreichen.]**
 1. Im Abschnitt **[!UICONTROL Dann]** wählen Sie **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen.]**
-1. Wählen Sie einen Post-Dienst und die zugehörigen Datenbindungen im Abschnitt **[!UICONTROL Eingabe]** aus. Wenn Sie beispielsweise die Felder **Name**, **ID** und **Status** im adaptiven Formular überprüfen möchten, wählen Sie einen Post-Dienst (Tier) aus und wählen Sie im Abschnitt **[!UICONTROL Eingabe]** den Eintrag &quot;pet.name&quot;, &quot;pet.id&quot;und &quot;pet.status&quot;aus.
+1. Wählen Sie im Abschnitt **[!UICONTROL Eingabe]** einen Post-Dienst und die zugehörigen Datenbindungen aus. Wenn Sie beispielsweise die Felder **Name**, **ID** und **Status** im adaptiven Formular validieren möchten, wählen Sie einen Post-Dienst (Begleiter) aus und wählen Sie im Abschnitt **[!UICONTROL Eingabe]** die Optionen &quot;pet.name&quot;, &quot;pet.id&quot;und &quot;pet.status&quot;aus.
 
-Aufgrund dieser Regel werden die Werte, die Sie für die Felder **Name**, **ID** und **Status** eingeben, validiert, sobald das in Schritt 2 definierte Feld geändert wird und Sie die Tabulatortaste aus dem Feld im Formular entfernen.
+Aufgrund dieser Regel werden die Werte, die Sie für die Felder **Name**, **ID** und **Status** eingeben, validiert, sobald das in Schritt 2 definierte Feld geändert wird und Sie die Tabulatortaste aus dem Feld im Formular verlassen.
 
-1. Select **[!UICONTROL Code Editor]** from the mode selection drop-down list.
-1. Tippen Sie auf Code **[!UICONTROL bearbeiten]**.
+1. Wählen Sie **[!UICONTROL Code-Editor]** aus der Dropdown-Liste &quot;Modusauswahl&quot;.
+1. Tippen Sie auf **[!UICONTROL Code bearbeiten]**.
 1. Löschen Sie die folgende Zeile aus dem vorhandenen Code:
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
    ```
 
-1. Schreiben Sie eine Regel, um die benutzerdefinierte Fehlerstruktur in die Standardfehlerstruktur zu konvertieren, und tippen Sie auf **[!UICONTROL Fertig]** , um die Regel zu speichern.
+1. Schreiben Sie eine Regel, um die benutzerdefinierte Fehlerstruktur in die Standardfehlerstruktur zu konvertieren, und tippen Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern.
 Fügen Sie beispielsweise am Ende den folgenden Beispielcode hinzu, um eine benutzerdefinierte Fehlerstruktur in die Standardfehlerstruktur zu konvertieren:
 
    ```javascript
@@ -198,7 +198,7 @@ Fügen Sie beispielsweise am Ende den folgenden Beispielcode hinzu, um eine benu
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   Die `var som_map` Liste des SOM-Ausdrucks der adaptiven Formularfelder, die in das Standardformat umgewandelt werden sollen. Sie können den SOM-Ausdruck eines beliebigen Felds in einem adaptiven Formular durch Tippen auf das Feld und Auswahl des Menüs **[!UICONTROL Ansicht-SOM-Ausdruck]** aus **[!UICONTROL Mehr Optionen]** (...) Ansicht.
+   Die Liste `var som_map` des SOM-Ausdrucks der adaptiven Formularfelder, die Sie in das Standardformat umwandeln möchten. Sie können den SOM-Ausdruck eines beliebigen Felds in einem adaptiven Formular durch Tippen auf das Feld und Auswahl von **[!UICONTROL Ansicht SOM-Ausdruck]** aus dem Menü **[!UICONTROL Mehr Optionen]** (...) Ansicht.
 
    Stellen Sie sicher, dass Sie die folgende Zeile des Beispielcodes in den benutzerdefinierten Fehlerhandler kopieren:
 
@@ -206,6 +206,6 @@ Fügen Sie beispielsweise am Ende den folgenden Beispielcode hinzu, um eine benu
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   Die executeOperation-API enthält die `null` und `errorHandler` -Parameter, die auf dem neuen benutzerdefinierten Fehlerhandler basieren.
+   Die executeOperation-API enthält die Parameter `null` und `errorHandler`, basierend auf dem neuen benutzerdefinierten Fehlerhandler.
 
-   Mithilfe dieses benutzerspezifischen Fehlerhandlers konvertiert das adaptive Formular die in aufgeführten Felder in `var som_map` das Standard-Fehlermeldungsformat. Die Prüffehlermeldungen werden daher auf Feldebene im adaptiven Formular angezeigt.
+   Mit diesem benutzerdefinierten Fehlerhandler konvertiert das adaptive Formular die unter `var som_map` aufgelisteten Felder in das Standardfehlermeldungsformat. Die Prüffehlermeldungen werden daher auf Feldebene im adaptiven Formular angezeigt.
