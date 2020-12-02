@@ -18,15 +18,15 @@ ht-degree: 2%
 ---
 
 
-# Community-Gruppengrundlagen  {#community-group-essentials}
+# Community-Gruppen-Essentials {#community-group-essentials}
 
 Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, dynamisch innerhalb einer Community-Site von autorisierten Benutzern aus der Umgebung &quot;Veröffentlichen&quot;und &quot;Autor&quot;erstellt zu werden.
 
-Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack)können Gruppen innerhalb anderer Gruppen verschachtelt werden
+Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack) können Gruppen innerhalb anderer Gruppen verschachtelt werden
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
-### Community Groups Liste {#community-groups-member-list}
+### Community Groups Member Liste {#community-groups-member-list}
 
 <table>
  <tbody>
@@ -88,15 +88,15 @@ Ab Communities [Feature Pack 1](deploy-communities.md#latestfeaturepack)können 
 
 ### Gruppenfunktion {#groups-function}
 
-Eine Community-Sitestruktur, die eine [Gruppenfunktion](functions.md#groups-function) enthält, unterstützt die Erstellung neuer Elemente `community groups` aus der Veröffentlichungs- und der Autorenfunktion. Die erstellte Community-Gruppe enthält eine `community groups member list` Komponente, die die Gruppenmitglieder Liste.
+Eine Community-Sitestruktur, die eine [Gruppenfunktion](functions.md#groups-function) enthält, unterstützt die Erstellung neuer `community groups` aus den Umgebung &quot;Veröffentlichen&quot;und &quot;Verfassen&quot;. Die erstellte Community-Gruppe enthält eine `community groups member list`-Komponente, die die Gruppenmitglieder Liste.
 
-Eine oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppen-Seite(n) bereitstellen, können für die Funktion &quot;Gruppen&quot;konfiguriert werden, wenn die Funktion einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
+Eine oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseite(n) bereitstellen, können für die Funktion &quot;Gruppen&quot;konfiguriert werden, wenn die Funktion einer [Community-Site-Vorlage](sites.md) hinzugefügt oder in einer Community-Gruppenvorlage verschachtelt wird.
 
-Die Einbeziehung mehrerer Community-Gruppenvorlagen führt dazu, dass dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site eine Auswahl an Designs angezeigt wird, wie im Abschnitt über [Community-Gruppen](creating-groups.md) für Autoren dargestellt.
+Die Einbeziehung mehrerer Community-Gruppenvorlagen führt dazu, dass dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site eine Auswahl an Designs angezeigt wird, wie im Abschnitt [Community-Gruppen](creating-groups.md) für Autoren dargestellt.
 
 ### Verschachtelte Gruppen {#nested-groups}
 
-Ab Communities [FP1](deploy-communities.md#latestfeaturepack)ist es möglich, eine Funktion &quot;Gruppen&quot;in eine Gruppenvorlage einzubinden und somit verschachtelte Gruppen (Untergruppen) zu ermöglichen.
+Ab Communities [FP1](deploy-communities.md#latestfeaturepack) ist es möglich, dass eine Funktion &quot;Gruppen&quot;in eine Gruppenvorlage eingeschlossen wird, wodurch verschachtelte Gruppen (Unter-Communities) möglich sind.
 
 Wenn eine Community-Site oder Gruppenvorlage die Funktion Gruppen enthält, können Sie Folgendes tun:
 
