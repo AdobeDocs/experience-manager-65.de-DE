@@ -20,11 +20,11 @@ ht-degree: 82%
 
 # Automatisieren von Tests von adaptiven Formularen{#automate-testing-of-adaptive-forms}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher Bedeutung. Es ist wichtig, dass Sie Ihre adaptiven Formulare mit jeder Änderung testen, die Sie daran vornehmen, z. B. beim Rollout eines neuen Fixpack oder beim Ändern einer Regel im Formular. Allerdings kann das funktionelle Testen adaptiver Formen und jedes Feld in ihnen mühsam sein.
 
-Calvin ermöglicht es Ihnen das automatische Testen der adaptiven Formulare im Webbrowser. Calvin utilizes [Hobbes](/help/sites-developing/hobbes.md)&#39;s user interface for running the tests and provides the following tools:
+Calvin ermöglicht es Ihnen das automatische Testen der adaptiven Formulare im Webbrowser. Calvin verwendet die Benutzeroberfläche von [Hobbes](/help/sites-developing/hobbes.md) zum Ausführen der Tests und stellt die folgenden Tools bereit:
 
 * Ein JavaScript-API für die Erstellung von Tests.
 * Eine Benutzeroberfläche für das Ausführen von Tests.
@@ -89,7 +89,7 @@ Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webb
 
 Bevor Sie diesen Artikel verwenden, um Ihre Testfälle zu erstellen, müssen Sie Folgendes wissen:
 
-* Creating test suites and executing test cases using [Hobbes](https://docs.adobe.com/docs/de/aem/6-3/develop/components/hobbes.html)
+* Erstellen von Test Suites und Ausführen von Testfällen mit [Hobbes](https://docs.adobe.com/docs/de/aem/6-3/develop/components/hobbes.html)
 * [Hobbes-Javascript-APIs](https://docs.adobe.com/docs/de/aem/6-2/develop/ref/test-api/index.html)
 * [Calvin JavaScript-APIs](https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
@@ -97,7 +97,7 @@ Bevor Sie diesen Artikel verwenden, um Ihre Testfälle zu erstellen, müssen Sie
 
 Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen mehrerer adaptiver Formulare. Sie müssen einen separaten Testfall für jedes Formular erstellen, das Sie testen wollen. Wenn Sie die folgenden Schritte befolgen und den JavaScript-Code in Schritt 11 ändern, können Sie Ihre eigenen Testfälle erstellen, um Ihre adaptiven Formulare zu testen.
 
-1. Go to CRXDE Lite in your web browser: `https://'[server]:[port]'/crx/de`.
+1. Gehen Sie zur CRXDE Lite in Ihrem Webbrowser: `https://'[server]:[port]'/crx/de`.
 1. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **Erstellen** > **Knoten erstellen**. Geben Sie einen Namen (hier afTestRegistration) ein, geben Sie die Art des Knotens als cq:ClientLibraryFolder ein und klicken Sie auf **OK.** 
 
    Der Ordner „clientlibs“ enthält den Ausrichtungsaspekt Ihrer Anwendung (JS und Init). Es wird empfohlen, dass Sie alle Hobbes Test-Objekte, die für ein Formular spezifisch sind, im Clientlibs-Ordner registrieren.
@@ -130,7 +130,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Right-click the test node (here **afTestRegistration)** and then click **Create** > **Create File**. Nennen Sie die Datei js.txt und klicken Sie auf **OK**.
+1. Klicken Sie mit der rechten Maustaste auf den Test-Knoten (hier **afTestRegistration)** und klicken Sie dann auf **Create** > **Create File**. Nennen Sie die Datei js.txt und klicken Sie auf **OK**.
 1. In der js.txt-Datei fügen Sie den folgenden Text ein:
 
    ```javascript
@@ -139,8 +139,8 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
    ```
 
 1. Klicken Sie auf **Alle speichern** und schließen Sie dann die Datei js.txt.
-1. Right-click the test node (here **afTestRegistration)** and click **Create** > **Create File**. Nennen Sie die Datei init.js und klicken Sie auf **OK**.
-1. Copy the following code to the init.js file and click **Save All**:
+1. Klicken Sie mit der rechten Maustaste auf den Test-Knoten (hier **afTestRegistration)** und klicken Sie auf **Create** > **Create File**. Nennen Sie die Datei init.js und klicken Sie auf **OK**.
+1. Kopieren Sie den folgenden Code in die Datei init.js und klicken Sie auf **Save All**:
 
    ```javascript
    (function(window, hobs) {
@@ -158,7 +158,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
    Der obige Code erstellt Testfälle, die **Adaptives Formular- Demo Test** heißen. Um Testfälle mit einem anderen Namen anzulegen, ändern Sie den Namen entsprechend.
 
-1. Klicken Sie auf **Erstellen** >**Knoten erstellen**, um einen Knoten unter dem clientlib-Ordner für jedes Formular zu erstellen, das Sie testen möchten. This example uses a node named **testForm** to test an adaptive form named **testForm**.  Legen Sie die folgenden Eigenschaften fest und klicken Sie auf **OK**:
+1. Klicken Sie auf **Erstellen** >**Knoten erstellen**, um einen Knoten unter dem clientlib-Ordner für jedes Formular zu erstellen, das Sie testen möchten. In diesem Beispiel wird ein Knoten mit dem Namen **testForm** verwendet, um ein adaptives Formular mit dem Namen **testForm** zu testen.  Legen Sie die folgenden Eigenschaften fest und klicken Sie auf **OK**:
 
    * Name: testForm (Ihr Formularname)
    * Typ: cq:ClientLibraryFolder
@@ -167,8 +167,8 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
    | **Eigenschaft** | **Typ** | **Wert** |
    |---|---|---|
-   | categories | Zeichenfolge[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
-   | dependencies | Zeichenfolge[] | granite.testing.calvin.tests |
+   | kategorien | Zeichenfolge[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | Abhängigkeiten | Zeichenfolge[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -178,7 +178,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner, den Sie für das Testformular (hier testForm) erstellt haben und wählen Sie **Erstellen** > **Datei erstellen**. Nennen Sie die Datei scriptingTest.js und fügen Sie den folgenden Code zur Datei hinzu und klicken Sie auf **Alle speichern**.
 
-   Um den folgenden Code zum Testen eines anderen adaptiven Formulars zu verwenden, ändern Sie den Pfad und den Namen des Formulars in **navigateTo** (Zeilen 11, 36 und 62) und die entsprechenden Testfälle. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Um den folgenden Code zum Testen eines anderen adaptiven Formulars zu verwenden, ändern Sie den Pfad und den Namen des Formulars in **navigateTo** (Zeilen 11, 36 und 62) und die entsprechenden Testfälle. Weitere Informationen zu APIs zum Testen verschiedener Aspekte von Formularen und Formularobjekten finden Sie unter [Calvin-APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```javascript
    (function(window, hobs) {
@@ -272,7 +272,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
     }(window, window.hobs));
    ```
 
-   Der Testfall wird erstellt. Führen Sie den Testfall aus, um adaptive Formulare über Hobbes zu testen. For steps for running the test cases, see [Executing Tests in Testing Your UI Using Automated Tests](/help/sites-developing/hobbes.md).
+   Der Testfall wird erstellt. Führen Sie den Testfall aus, um adaptive Formulare über Hobbes zu testen. Anweisungen zum Ausführen der Testfälle finden Sie unter [Durchführen von Tests in Testen der Benutzeroberfläche mit automatisierten Tests](/help/sites-developing/hobbes.md).
 
 Sie können das Paket auch in der angehängten Datei SampleTestPackage.zip installieren, um dieselben Ergebnisse zu erzielen wie im Beispiel: Erstellen einer Testsuite für ein adaptives Formular mit Hobbes als Testrahmen.
 
@@ -286,7 +286,7 @@ Test-Suites können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausfüh
 
 Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: ![checkmark](assets/checkmark.png)
 
-An &quot;X&quot; icon indicates a failed test: ![cross](assets/cross.png)
+Ein X-Symbol weist auf einen fehlgeschlagenen Test hin: ![cross](assets/cross.png)
 
 So führen Sie eine Test-Suite aus:
 
@@ -311,7 +311,7 @@ Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritte
 * Anzeigen von Test-Suites
 * Ausführen mehrerer Tests
 
-## Glossar    {#glossary}
+## Glossar     {#glossary}
 
 <table>
  <tbody>
