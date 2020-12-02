@@ -43,13 +43,13 @@ Zum Zugriff auf Ihre Segmente wählen Sie in der globalen Navigation die Optione
 
 ## Segment-Editor {#segment-editor}
 
-The **Segment Editor** allows you to easily modify a segment. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der [Liste von Segmenten](/help/sites-administering/segmentation.md#accessing-segments) aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
+Mit dem **Segment-Editor** können Sie ein Segment einfach ändern. Wählen Sie zur Bearbeitung eines Segments ein Segment aus der [Liste von Segmenten](/help/sites-administering/segmentation.md#accessing-segments) aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
-Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
+Mithilfe des Komponenten-Browsers können Sie **AND**- und **OR**-Container hinzufügen, um die Segmentlogik zu definieren, und dann zusätzliche Komponenten hinzufügen, um Eigenschaften und Werte zu vergleichen oder Referenzskripte und andere Segmente zu definieren, um die Auswahlkriterien zu definieren (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)), um das genaue Szenario für die Segmentauswahl zu definieren.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. See [Creating a New Segment](#creating-a-new-segment) for details on the [boost factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Verstärkungsfaktor [finden Sie unter Erstellen eines neuen Segments](#creating-a-new-segment).](/help/sites-administering/campaign-segmentation.md#boost-factor)[
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufge
 
 ### Container {#containers}
 
-Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. See the following section [Using AND and OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers) for more information.
+Die folgenden Container sind standardmäßig verfügbar und ermöglichen Ihnen die Gruppierung von Vergleichen und Verweisen zum Zweck einer booleschen Bewertung. Sie können vom Komponentenbrowser in den Editor gezogen werden. Weitere Informationen finden Sie im folgenden Abschnitt [Verwenden von AND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers).
 
 <table>
  <tbody>
@@ -79,7 +79,7 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 <table>
  <tbody>
   <tr>
-   <td>property-value<br /> </td>
+   <td>Property-Value<br /> </td>
    <td>Vergleicht eine Eigenschaft eines Stores mit einem definierten Wert<br /> </td>
   </tr>
   <tr>
@@ -107,9 +107,9 @@ Die folgenden Segmentvergleiche sind standardmäßig für die Bewertung der Segm
 >
 >`null < 30 // will return true`
 >
->Therefore when [creating a segment](/help/sites-administering/segmentation.md#creating-a-new-segment), you should select a **data type** whenever the types of compared values are known. Beispiel:
+>Daher sollten Sie beim Erstellen eines Segments [ einen **Datentyp** auswählen, sobald die Typen der verglichenen Werte bekannt sind. ](/help/sites-administering/segmentation.md#creating-a-new-segment) Beispiel:
 >
->When comparing the property `profile/age`, you already know that the compared type will be **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 will return **false**, as you would expect.
+>Beim Vergleich der Eigenschaft `profile/age` wissen Sie bereits, dass der Vergleichstyp **number** ist. Wenn `profile/age` also nicht eingestellt ist, gibt ein Vergleich `profile/age` weniger als 30 **false** zurück, wie Sie erwarten würden.
 
 ### Verweise {#references}
 
@@ -123,7 +123,7 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
   </tr>
   <tr>
    <td>Skript-Referenz</td>
-   <td>Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt <a href="/help/sites-administering/segmentation.md#using-script-references">Verwenden von Skriptverweisen</a> .</td>
+   <td>Bewerten Sie das referenzierte Skript. Weitere Informationen finden Sie im folgenden Abschnitt <a href="/help/sites-administering/segmentation.md#using-script-references">Skriptverweise</a> verwenden.</td>
   </tr>
  </tbody>
 </table>
@@ -132,9 +132,9 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 So legen Sie Ihr neues Segment fest:
 
-1. Nach dem [Zugriff auf die Segmente](/help/sites-administering/segmentation.md#accessing-segments)[navigieren Sie zu dem Ordner](#organizing-segments) , in dem Sie das Segment erstellen möchten, oder lassen Sie es im Stammordner.
+1. Nach dem Zugriff auf die Segmente [ navigieren Sie [zu dem Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten, oder lassen Sie es im Stammordner liegen.](/help/sites-administering/segmentation.md#accessing-segments)
 
-1. Klicken oder tippen Sie auf die Schaltfläche Erstellen und wählen Sie ContextHub-Segment **erstellen**.
+1. Klicken oder tippen Sie auf die Schaltfläche Erstellen und wählen Sie **ContextHub-Segment** erstellen.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -157,7 +157,7 @@ So legen Sie Ihr neues Segment fest:
 1. Klicken Sie auf **OK**, um Ihre Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) weiter unten). Mit dem Segment-Editor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
 
 Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
@@ -180,9 +180,9 @@ Beginnen Sie damit, eine ODER-Containerkomponente innerhalb des standardmäßige
 
 Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als eine beliebige andere Komponente einer Segmentbedingung verwendet werden.
 
-#### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
+#### Definieren eines Skripts für einen Verweis  {#defining-a-script-to-reference}
 
-1. Add file to `contexthub.segment-engine.scripts` clientlib.
+1. hinzufügen Datei in `contexthub.segment-engine.scripts` clientlib.
 1. Implementieren Sie eine Funktion, durch die ein Wert ausgegeben wird. Beispiel:
 
    ```
@@ -214,9 +214,9 @@ Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segm
    })();
    ```
 
-1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
+1. Registrieren Sie das Skript mit `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` () abrufen. For example if the script depends on `profile/age`:
+Wenn das Skript von zusätzlichen Eigenschaften abhängig ist, sollte dieses `this.dependOn()` () abrufen. Wenn das Skript beispielsweise von `profile/age` abhängt:
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -228,20 +228,20 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Fügen Sie eine **Skript-Referenz**-Komponente an der gewünschten Stelle des Segments hinzu.
 1. Öffnen Sie das Dialogfeld der **Skript-Referenz**-Komponente. Ist das Skript [ordnungsgemäß konfiguriert](/help/sites-administering/segmentation.md#defining-a-script-to-reference), sollte es im Dropdown-Menü **Skriptname** verfügbar sein.
 
-## Segmente organisieren {#organizing-segments}
+## Organisieren von Segmenten {#organizing-segments}
 
 Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwalten sein. In solchen Fällen kann es nützlich sein, Ordner zur Verwaltung Ihrer Segmente zu erstellen.
 
-### Create a New Folder {#create-folder}
+### Neuen Ordner {#create-folder} erstellen
 
-1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+1. Klicken Sie nach dem Zugriff auf die Segmente](#accessing-segments) auf oder tippen Sie auf die Schaltfläche **Erstellen** und wählen Sie **Ordner**.[
 
    ![hinzufügen](assets/contexthub-create-segment.png)
 
-1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner ein.
+1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Es wird automatisch auf der Grundlage des Titels generiert und entsprechend [AEM Benennungskonventionen angepasst.](/help/sites-developing/naming-conventions.md)
+   * Der Knoten **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch basierend auf dem Titel generiert und entsprechend den Benennungskonventionen [AEM angepasst.](/help/sites-developing/naming-conventions.md)
       * Er kann bei Bedarf angepasst werden.
 
    ![Ordner erstellen](assets/contexthub-create-folder.png)
@@ -255,13 +255,13 @@ Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwal
    * Sie können auf die Spaltenüberschriften tippen oder klicken, um die Sortierung anzupassen.
       ![Der neue Ordner](assets/contexthub-folder.png)
 
-### Vorhandene Ordner ändern {#modify-folders}
+### Vorhandene Ordner {#modify-folders} ändern
 
-1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments)auf den Ordner, den Sie ändern möchten, oder tippen Sie darauf, um ihn auszuwählen.
+1. Nachdem Sie [auf die Segmente](#accessing-segments) zugegriffen haben, klicken oder tippen Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **Umbenennen** , um den Ordner umzubenennen.
+1. Tippen oder klicken Sie in der Symbolleiste auf **Umbenennen**, um den Ordner umzubenennen.
 
 1. Geben Sie einen neuen **Ordnertitel** ein und tippen oder klicken Sie auf **Speichern**.
 
@@ -273,25 +273,25 @@ Wenn Sie viele Segmente haben, können diese als einfache Liste schwer zu verwal
 
 ### Ordner löschen
 
-1. Klicken Sie nach dem [Zugriff auf die Segmente](#accessing-segments)auf den Ordner, den Sie ändern möchten, oder tippen Sie darauf, um ihn auszuwählen.
+1. Nachdem Sie [auf die Segmente](#accessing-segments) zugegriffen haben, klicken oder tippen Sie auf den Ordner, den Sie ändern möchten, um ihn auszuwählen.
 
    ![Ordner auswählen](assets/contexthub-select-folder.png)
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **Löschen** , um den Ordner zu löschen.
+1. Tippen oder klicken Sie in der Symbolleiste auf **Löschen**, um den Ordner zu löschen.
 
 1. In einem Dialogfeld wird eine Liste der zum Löschen ausgewählten Ordner angezeigt.
 
    ![Löschen bestätigen](assets/contexthub-confirm-segment-delete.png)
 
-   * Tippen oder klicken Sie zur Bestätigung auf **Löschen** .
-   * Tippen oder klicken Sie auf **Abbrechen** , um abzubrechen.
+   * Tippen oder klicken Sie zur Bestätigung auf **Löschen**.
+   * Tippen oder klicken Sie auf **Abbrechen**, um abzubrechen.
 
 1. Wenn einer der ausgewählten Ordner Unterordner oder Segmente enthält, muss der Löschvorgang bestätigt werden.
 
    ![Löschen von Kindern bestätigen](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Tippen oder klicken Sie zur Bestätigung auf Löschen **erzwingen** .
-   * Tippen oder klicken Sie auf **Abbrechen** , um abzubrechen.
+   * Tippen oder klicken Sie zur Bestätigung auf **Löschen erzwingen**.
+   * Tippen oder klicken Sie auf **Abbrechen**, um abzubrechen.
 
 >[!NOTE]
 >
@@ -336,4 +336,4 @@ Wenn Sie mithilfe des obigen Beispiels zum Segment zur wichtigsten Alterszielgru
 
 ## Verwenden Ihres Segments {#using-your-segment}
 
-Segmente werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. See [Managing Audiences](/help/sites-authoring/managing-audiences.md) for more information about audiences and segments and [Authoring Targeted Content](/help/sites-authoring/content-targeting-touch.md) about using audiences and segments to target content.
+Segmente werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. Weitere Informationen über die Verwendung von Audiencen und Segmenten zur Zielgruppe von Inhalten finden Sie unter [Verwalten von Audiencen](/help/sites-authoring/managing-audiences.md) und [Erstellen von zielgerichteten Inhalten](/help/sites-authoring/content-targeting-touch.md).
