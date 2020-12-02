@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 translation-type: tm+mt
 source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 67%
 
 ---
 
@@ -30,28 +33,28 @@ Diese Seite enthält eine Übersicht über die Komponenten von Adobe Experience 
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Sie können das Bearbeitungsverhalten konfigurieren.
 * Verwenden von Dialogfeldern, die mit Unterelementen basierend auf Granite UI-Komponenten erstellt wurden
-* Are developed using [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) (recommended) or JSP.
+* werden mit [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) (empfohlen) oder JSP entwickelt.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
 Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
 
 * Entwickeln einer neuen Komponente auf Ihrer lokalen Instanz
-* Stellen Sie es in Ihrer Testumgebung bereit.
+* Stellen Sie es in Ihrer Test-Umgebung bereit.
 * Bereitstellen in Ihrer Live-Authoring-Umgebung, in der Autoren bzw. Administratoren Inhalt hinzufügen und konfigurieren können
-* Stellen Sie sie in Ihrer (den) Live-Veröffentlichungsumgebung(en) bereit, in der (denen) sie zum Rendern von Inhalten für Besucher Ihrer Website verwendet werden. Bestimmte Komponenten, z. B. für Communitys, akzeptieren auch Eingaben von Ihren Benutzern.
+* Stellen Sie sie in Ihrer (den) Live-Veröffentlichungs-Umgebung(en) bereit, in der (denen) sie zum Rendern von Inhalten für Besucher auf Ihrer Website verwendet werden. Bestimmte Komponenten, z. B. für Communitys, akzeptieren auch Eingaben von Ihren Benutzern.
 
 Für jede AEM-Komponente gilt Folgendes:
 
 * Ist ein Ressourcentyp.
 * Ist eine Sammlung mit Skripten, mit denen eine bestimmte Funktion vollständig realisiert wird.
-* Can function in *isolation*, meaning either within AEM or a portal.
+* Kann in *Isolation* funktionieren, d. h. entweder innerhalb AEM oder eines Portals.
 
 ## Im Lieferumfang von AEM enthaltene Komponenten {#out-of-the-box-components-within-aem}
 
 AEM verfügt über verschiedene [im Lieferumfang enthaltene Komponenten](/help/sites-authoring/default-components.md) mit umfassender Funktionalität, z. B.:
 
 * Absatzsystem ( `parsys`)
-* Page ( `responsivegrid` - touch-enabled UI only)
+* Seite ( `responsivegrid` - nur touchfähige Benutzeroberfläche)
 * Text
 * Bild mit Begleittext
 * Symbolleiste
@@ -62,10 +65,10 @@ Mit den bereitgestellten Komponenten und deren Nutzung auf den bereitgestellten 
 
 Von Adobe werden zwei Sätze mit AEM-Komponenten bereitgestellt:
 
-* [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
 * [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md)
 
-**Die Kernkomponenten** wurden mit AEM 6.3 eingeführt und bieten flexible und funktionsreiche Authoring-Funktionen. The [We.Retail reference site](/help/sites-developing/we-retail.md) illustrates how the core components can be used and represent the current best-practices of component development.
+**Core** Components wurde mit AEM 6.3 und Angebot mit flexiblen und leistungsstarken Authoring-Funktionen eingeführt. Die [We.Retail-Referenz-Website](/help/sites-developing/we-retail.md) zeigt, wie die Kernkomponenten verwendet werden können und stellt die aktuellen Best Practices der Komponentenentwicklung dar.
 
 **Foundation-Komponenten** gehören in vielen Versionen von AEM zur Grundausstattung und sind direkt nach einer Standardinstallation verfügbar. Obwohl sie noch unterstützt werden, wurden die meisten nicht mehr unterstützt, wurden nicht mehr verbessert und basieren auf alten Technologien.
 
@@ -73,7 +76,7 @@ Von Adobe werden zwei Sätze mit AEM-Komponenten bereitgestellt:
 >
 >[Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) sind die derzeit beste Vorgehensweise für den Entwurf und die Entwicklung von Komponenten und dienen als Referenzimplementierungen.
 >
->[AEM-Modernisierungstools](modernization-tools.md) können die Migration zu Kernkomponenten unterstützen.
+>[AEM Modernisierung ](modernization-tools.md) Toolscan hilft bei der Migration zu Kernkomponenten.
 
 ### Anzeigen der verfügbaren Komponenten {#viewing-available-components}
 
@@ -81,7 +84,7 @@ Eine Übersicht über alle verfügbaren Komponenten Ihrer AEM-Instanz erhalten S
 
 Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen Komponenten abzurufen, die im Repository verfügbar sind.
 
-1. In **[!UICONTROL CRXDE Lite]**, select **[!UICONTROL Tools]** from the toolbar, then **[!UICONTROL Query]**, which opens the **[!UICONTROL Query]** tab.
+1. Wählen Sie in **[!UICONTROL CRXDE Lite]** **[!UICONTROL Tools]** aus der Symbolleiste und **[!UICONTROL Abfrage]**. Dadurch wird die Registerkarte **[!UICONTROL Abfrage]** geöffnet.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Query]** (Abfrage) für `XPath`Type **[!UICONTROL (Typ) die Option]**.
 
@@ -89,7 +92,7 @@ Alternativ hierzu können Sie auch CRXDE Lite verwenden, um eine Liste mit allen
 
    `//element(*, cq:Component)`
 
-1. Click **[!UICONTROL Execute]** and the components are listed.
+1. Klicken Sie auf **[!UICONTROL Ausführen]** und die Komponenten werden aufgelistet.
 
 ## Zusätzliche Ressourcen {#further-reading}
 
