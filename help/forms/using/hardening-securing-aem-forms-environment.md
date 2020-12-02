@@ -8,6 +8,9 @@ topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 translation-type: tm+mt
 source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+workflow-type: tm+mt
+source-wordcount: '1463'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +96,7 @@ Sie können eine externe Firewall konfigurieren, um für bestimmte AEM Forms-URL
  </tbody>
 </table>
 
-#### Interne Firewall konfigurieren  {#configure-internal-firewall}
+#### Interne Firewall konfigurieren   {#configure-internal-firewall}
 
 Sie können die interne Firewall konfigurieren, um bestimmten Komponenten von AEM Forms (z. B. Authoring-Instanz, Verarbeitungsinstanz, Datenbanken) die Kommunikation mit der Veröffentlichungsfarm und anderen im Topologiediagramm genannten internen Komponenten zu ermöglichen:
 
@@ -136,7 +139,7 @@ Wenn Sie Formulare für Dateianhänge konfigurieren, überprüfen oder Komponent
 
 In den oben genannten Szenarien werden die Daten nur für authentifizierte Benutzer gespeichert. Darüber hinaus sind die Daten durch Zugriffskontrolllisten (ACLs) geschützt. Die Änderung der Datenbereinigung ist damit ein weiterer Schritt zum Schutz der Informationen.
 
-### Durch Übermittlungsaktion für Forms Portal gespeicherte Daten sichern {#secure-data-saved-by-forms-portal-submit-action}
+### Durch Übermittlungsaktion für Forms Portal gespeicherte Daten sichern  {#secure-data-saved-by-forms-portal-submit-action}
 
 Standardmäßig speichert die Übermittlungsaktion für Forms Portal in adaptiven Formularen Daten im lokalen Repository des Veröffentlichungsknotens. Die Daten werden unter /content/forms/fp gespeichert. **Wir raten davon ab, Daten auf der Veröffentlichungsinstanz zu speichern.**
 
@@ -144,7 +147,7 @@ Sie können den Speicherdienst so konfigurieren, dass er über das Netzwerk an d
 
 Verwenden Sie die Anmeldedaten des Verarbeitungsservers für den AEM DS-Einstellungsdienst, um Daten vom Veröffentlichungsknoten an den Verarbeitungsserver zu senden. Es wird empfohlen, die Anmeldedaten eines Benutzers mit eingeschränkten Rechten, der kein Administrator ist und über Lese- und Schreibzugriff auf das Repository des Verarbeitungsservers verfügt, zu verwenden. Weitere Informationen finden Sie unter [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
 
-### Durch das Formulardatenmodell (FDM) verarbeitete Daten sichern {#secure-data-handled-by-form-data-model-fdm}
+### Durch das Formulardatenmodell (FDM) verarbeitete Daten sichern  {#secure-data-handled-by-form-data-model-fdm}
 
 Verwenden Sie Benutzerkonten mit dem minimal erforderlichen Berechtigungen zum Konfigurieren der Datenquellen für das Formulardatenmodell (FDM). Wenn Sie ein Konto mit administrativen Rechten verwenden, erhalten nicht autorisierte Benutzer möglicherweise offenen Zugriff auf Metadaten und Schema-Entitäten.\
 Die Datenintegration stellt außerdem Methoden zum Autorisieren von FDM-Dienstanfragen bereit. Sie können Autorisierungsmechanismen vor und nach der Ausführung einfügen, um Anfragen zu validieren. Die Dienstanforderungen werden beim Vorausfüllen und beim Senden eines Formulars sowie beim Aufrufen von Diensten mithilfe einer Regel generiert.
@@ -153,7 +156,7 @@ Die Datenintegration stellt außerdem Methoden zum Autorisieren von FDM-Dienstan
 
 **Autorisierung nach Verarbeitung:** Mithilfe der Autorisierung nach Verarbeitung können Sie die Ergebnisse validieren und kontrollieren, bevor sie an den Anforderer zurückgegeben werden. Sie können darüber hinaus Daten filtern, bereinigen und zusätzlich Daten hinzufügen.
 
-### Benutzerzugriff begrenzen {#limit-user-access}
+### Benutzerzugriff begrenzen  {#limit-user-access}
 
 Für die Authoring-, Veröffentlichungs- und Verarbeitungsinstanz sind jeweils unterschiedliche User Personas erforderlich. Führen Sie keine Instanzen mit Administrator-Anmeldedaten aus.
 
@@ -185,7 +188,7 @@ Für die Authoring-, Veröffentlichungs- und Verarbeitungsinstanz sind jeweils u
 * Für Remote-Speichern und -Senden erstellen Sie einen Benutzer mit Lese-, Erstellungs- und Änderungsrechten für den Pfad „content/form/fp“ des crx-Repositorys.
 * Fügen Sie den Benutzer der Gruppe „workflow-user“ hinzu, um ihm die Verwendung der AEM-Posteingang-Anwendungen zu ermöglichen.
 
-## Intranetelemente einer AEM Forms-Umgebung sichern {#secure-intranet-elements-of-an-aem-forms-environment}
+## Intranetelemente einer AEM Forms-Umgebung sichern  {#secure-intranet-elements-of-an-aem-forms-environment}
 
 Verarbeitungscluster und das Forms Workflow-Add-On (AEM Forms on JEE) werden im Allgemeinen hinter einer Firewall ausgeführt. Sie können daher als sicher betrachtet werden. Dennoch können Sie diese Umgebungen mit einigen weiteren Maßnahmen absichern:
 
