@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Website-Struktur einrichten {#setup-website-structure}
+# Einrichten der Website-Struktur {#setup-website-structure}
 
 Die folgenden Anweisungen beschreiben zum Einrichten Ihrer Website die Ordner, die an den folgenden Orten erstellt werden sollen:
 
@@ -34,7 +34,7 @@ Die folgenden Anweisungen beschreiben zum Einrichten Ihrer Website die Ordner, d
 
    Hier befinden sich die herunterladbaren Webseiten.
 
-Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners für die Anwendung, den Entwurf und den Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` den von Ihnen gewählten Namen.
+Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners für die Anwendung, den Entwurf und den Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie `an-scf-sandbox` immer durch den Namen, den Sie gewählt haben.
 
 >[!NOTE]
 >
@@ -50,37 +50,37 @@ Der Code in diesem Lernprogramm hängt davon ab, dass der Name des Hauptordners 
    >   * Unterstrich wird &#39;_005f&#39;
 
 
-## Anwendungsverzeichnis einrichten (/apps) {#setup-the-application-directory-apps}
+## Einrichten des Anwendungsverzeichnisses (/apps) {#setup-the-application-directory-apps}
 
 Der Ordner &quot;/apps&quot;im Repository enthält den Code mit implementiert das Verhalten und die Wiedergabe der Seiten, die vom Ordner &quot;/content&quot;bereitgestellt werden.
 
 Der Ordner &quot;/apps&quot;ist geschützt und nicht öffentlich zugänglich, ebenso wie die Ordner &quot;/content&quot;und &quot;/etc/designs&quot;.
 
-1. Create `/apps/an-scf-sandbox` folder.
+1. Erstellen Sie den Ordner `/apps/an-scf-sandbox`.
 
-   Verwenden der **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
+   Verwenden von **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
 
-   1. Wählen Sie den `/apps` Ordner aus.
-   1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Erstellen]**... oder ziehen Sie die **[!UICONTROL Create...]** angezeigt.
-   1. Wählen Sie Ordner **[!UICONTROL erstellen...]**.
-   1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot;ein `an-scf-sandbox`.
+   1. Wählen Sie den Ordner `/apps` aus.
+   1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Erstellen]**... oder ziehen Sie **[!UICONTROL Erstellen...]**-Menü.
+   1. Wählen Sie **[!UICONTROL Ordner erstellen...]**.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** `an-scf-sandbox` ein.
    1. Klicken Sie auf **[!UICONTROL OK]**.
 
-1. Erstellen Sie den Unterordner **[!UICONTROL Komponenten]** .
+1. Erstellen Sie den Unterordner **[!UICONTROL Komponenten]**.
 
-   1. Wählen Sie den `/apps/an-scf-sandbox` Ordner aus.
-   1. Click **[!UICONTROL Create > Create Folder]**.
-   1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot;die **[!UICONTROL Komponenten]** ein.
+   1. Wählen Sie den Ordner `/apps/an-scf-sandbox` aus.
+   1. Klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** **[!UICONTROL Komponenten]** ein.
    1. Klicken Sie auf **[!UICONTROL OK]**.
 
-1. Erstellen Sie **[!UICONTROL den Unterordner &quot;templates]** &quot;.
+1. Erstellen Sie den Unterordner **[!UICONTROL templates]**.
 
-   1. Wählen Sie den `/apps/an-scf-sandbox` Ordner aus.
-   1. Click **[!UICONTROL Create > Create Folder]**.
-   1. Geben Sie im Dialogfeld &quot;Ordner **[!UICONTROL erstellen]** &quot; **[!UICONTROL Vorlagen]** ein.
+   1. Wählen Sie den Ordner `/apps/an-scf-sandbox` aus.
+   1. Klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**.
+   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** **[!UICONTROL Vorlagen]** ein.
    1. Klicken Sie auf **[!UICONTROL OK]**.
-   1. Wählen Sie erneut `/apps/an-scf-sandbox`.
-   1. Select **[!UICONTROL Save All]**.
+   1. Wählen Sie `/apps/an-scf-sandbox` erneut aus.
+   1. Wählen Sie **[!UICONTROL Alle speichern]**.
 
    Speichern Sie wie bei jedem Bearbeitungsprozess häufig. Wenn bei der Dateneingabe Probleme auftreten, kann dies entweder daran liegen, dass Ihr Anmeldevorgang abgelaufen ist oder Sie vorherige Änderungen speichern müssen.
 
@@ -92,17 +92,17 @@ Der Ordner &quot;/apps&quot;ist geschützt und nicht öffentlich zugänglich, eb
 
 Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets, die zusammen mit dem Seiteninhalt heruntergeladen werden sollen.
 
-1. Um das Designer-Tool in der klassischen Benutzeroberfläche zu verwenden, navigieren Sie zu [https://&lt;server>:/miscadmin](http://localhost:4502/miscadmin).
+1. Um das Designer-Tool in der klassischen Benutzeroberfläche zu verwenden, navigieren Sie zu [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten des Typs zu erstellen, `cq:Page`werden Zugriffskontrolle und Replikation nicht auf Standardeinstellungen für eine Seite festgelegt.
+   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten des Typs `cq:Page` zu erstellen, werden Zugriffskontrolle und Replikation nicht auf Standardeinstellungen für eine Seite eingestellt.
 
-1. In the explorer pane, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New]** > **[!UICONTROL New Page]**.
+1. Wählen Sie im Explorer-Bereich den Ordner **[!UICONTROL Entwürfe]** und klicken Sie dann auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**.
 
    Geben Sie Folgendes ein:
 
    * Titel: **[!UICONTROL Eine SCF-Sandbox]**
    * Name: **[!UICONTROL an-scf-sandbox]**
-   * Vorlage **[!UICONTROL der Entwurfsseite auswählen]**
+   * Wählen Sie **[!UICONTROL Designseitenvorlage]**
 
    Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -116,8 +116,8 @@ Der Ordner &quot;/etc/designs&quot;enthält die Bilder, Skripte und Stylesheets,
 
    ![crxde-configure-template](assets/crxde-configure-template.png)
 
-## Content Directory (/content) einrichten {#setup-the-content-directory-content}
+## Content Directory (/content) {#setup-the-content-directory-content} einrichten
 
 Der Ordner &quot;/content&quot;im entsprechenden Ordner befindet sich dort, wo sich der Inhalt der Website befindet. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
 
-*Nachdem* die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt wurde, kann der anfängliche Seiteninhalt basierend auf der Vorlage erstellt werden.... [**δ**](initial-app.md)
+*Nachdem* die  [Seitenvorlage als Teil der ursprünglichen Anwendung ](initial-app.md#createthepagetemplate) erstellt wurde, kann der ursprüngliche Seiteninhalt auf der Grundlage der Vorlage erstellt werden....  [**δ**](initial-app.md)
