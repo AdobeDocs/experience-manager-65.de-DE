@@ -10,6 +10,9 @@ discoiquuid: 7c392909-ff84-4411-b44f-16f99dffac54
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 69%
 
 ---
 
@@ -20,53 +23,54 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 Die AEM Forms-Datenintegration bietet eine intuitive Benutzeroberfläche zum Erstellen von und Arbeiten mit Formulardatenmodellen. Ein Formulardatenmodell stützt sich auf Datenquellen für den Austausch von Daten; Sie können jedoch ein Formulardatenmodell mit oder ohne Datenquelle erstellen. Je nachdem, ob Sie Datenquellen konfiguriert haben, gibt es zwei Möglichkeiten, ein Formulardatenmodell zu erstellen:
 
-* **Verwenden vorkonfigurierter Datenquellen**: Wenn Sie Datenquellen wie unter Datenquellen [konfigurieren](../../forms/using/configure-data-sources.md)beschrieben konfiguriert haben, können Sie diese beim Erstellen eines Formulardatenmodells auswählen. Es stellt alle Datenmodellobjekte, Eigenschaften und Dienste aus den ausgewählten Datenquellen zur Verwendung im Formulardatenmodell zur Verfügung.
+* **Verwenden vorkonfigurierter Datenquellen**: Wenn Sie Datenquellen wie unter Datenquellen  [konfigurieren](../../forms/using/configure-data-sources.md) beschrieben konfiguriert haben, können Sie diese beim Erstellen eines Formulardatenmodells auswählen. Es stellt alle Datenmodellobjekte, Eigenschaften und Dienste aus den ausgewählten Datenquellen zur Verwendung im Formulardatenmodell zur Verfügung.
 
 * **Ohne Datenquellen**: Wenn Sie für Ihr Formulardatenmodell keine Datenquellen konfiguriert haben, können Sie es auch ohne Datenquellen erstellen. Sie können das Formulardatenmodell verwenden, um adaptive Formulare und interaktive Kommunikation zu erstellen und sie anhand von Beispieldaten zu testen. Wenn Datenquellen verfügbar sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen, die automatisch in den zugehörigen adaptiven Formularen und interaktiven Kommunikationen reflektiert werden.
 
 >[!NOTE]
 >
->You must be a member of both **fdm-author** and **forms-user** groups to be able to create and work with form data model. Wenden Sie sich an Ihren AEM-Administrator, um Mitglied der Gruppe zu werden.
+>Sie müssen Mitglied der Gruppen **fdm-author** und **forms-user** sein, um Formulardatenmodell erstellen und verwenden zu können. Wenden Sie sich an Ihren AEM-Administrator, um Mitglied der Gruppe zu werden.
 
 ## Formulardatenmodell erstellen {#data-sources}
 
-Ensure that you have configured the data sources you intend to use in the form data model as described in [Configure data sources](../../forms/using/configure-data-sources.md). Führen Sie die folgenden Schritte aus, um ein Formulardatenmodell basierend auf konfigurierten Datenquellen zu erstellen:
+Stellen Sie sicher, dass Sie die Datenquellen konfiguriert haben, die Sie im Formulardatenmodell verwenden möchten, wie unter [Datenquellen konfigurieren](../../forms/using/configure-data-sources.md) beschrieben. Führen Sie die folgenden Schritte aus, um ein Formulardatenmodell basierend auf konfigurierten Datenquellen zu erstellen:
 
-1. Navigieren Sie in der AEM-Authoring-Instanz zu **[!UICONTROL Forms > Datenintegrationen]**.
-1. Tap **[!UICONTROL Create > Form Data Model]**.
+1. Navigieren Sie in der AEM-Autoreninstanz zu **[!UICONTROL Formulare > Datenintegration]**.
+1. Tippen Sie auf **[!UICONTROL Erstellen > Formulardatenmodell]**.
 1. Im Dialogfeld „Formulardatenmodell erstellen“:
 
    * Geben Sie einen Namen für das Formulardatenmodul ein.
    * (**Optional**) Geben Sie Titel, Beschreibung und Tags für das Formulardatenmodell an.
    * (**Optional und nur anwendbar, wenn Datenquellen konfiguriert sind**) Tippen Sie auf das Häkchen-Symbol neben dem Feld **[!UICONTROL Datenquellenkonfiguration]** und wählen Sie den Konfigurationsknoten, in dem sich die Cloud-Dienste für die Datenquellen befinden, die Sie verwenden möchten. Das beschränkt die Liste der Datenquellen, die auf der nächsten Seite zur Auswahl stehen, auf diejenigen, die im ausgewählten Konfigurationsknoten verfügbar sind. JDBC-Datenbank- und AEM-Benutzerprofildatenquellen werden jedoch standardmäßig aufgelistet. Wenn Sie keinen Konfigurationsknoten auswählen, werden Datenquellen von allen Konfigurationsknoten aufgelistet.
+
    Tippen Sie auf **[!UICONTROL Weiter]**.
 
 1. (**Nur anwendbar, wenn Datenquellen konfiguriert sind**) Der Bildschirm **[!UICONTROL Datenquelle auswählen]** listet verfügbare Datenquellen auf, falls vorhanden. Wählen Sie Datenquellen aus, die Sie im Formulardatenmodell verwenden möchten.
-1. Tap **[!UICONTROL Create]** and on the confirmation dialog, tap **[!UICONTROL Open]** to open the form data model editor.
+1. Tippen Sie auf **[!UICONTROL Erstellen]** und im Bestätigungsdialogfeld auf **[!UICONTROL Öffnen]**, um den Formulardatenmodelleditor zu öffnen.
 
 Lassen Sie uns die verschiedenen Komponenten der Benutzeroberfläche des Formulardatenmodelleditors überprüfen.
 
 ![Formulardatenmodell mit drei Datenquellen: einem RESTful-Dienst, einem AEM-Benutzerprofil und eines RDBMS](assets/fdm-ui.png)
 
-**A. Data Sources** Listet Datenquellen in einem Formulardatenmodell auf. Erweitern Sie eine Datenquelle, um deren Datenmodellobjekte und -dienste anzuzeigen.
+**A. Data** SourcesListet Datenquellen in einem Formulardatenmodell auf. Erweitern Sie eine Datenquelle, um deren Datenmodellobjekte und -dienste Ansicht.
 
-**B. Datenquellendefinitionen** aktualisieren Ruft alle Änderungen an den Datenquellendefinitionen aus konfigurierten Datenquellen ab und aktualisiert sie auf der Registerkarte &quot;Datenquellen&quot;des Formulardatenmodelleditors.
+**B. Datenquellendefinitionen aktualisieren** Ruft alle Änderungen an den Datenquellendefinitionen aus konfigurierten Datenquellen ab und aktualisiert sie auf der Registerkarte &quot;Datenquellen&quot;des Formulardatenmodelleditors.
 
-**C. Bereich Modellinhalt** , in dem hinzugefügte Datenmodellobjekte angezeigt werden.
+**C.** ModelContent-Bereich, in dem hinzugefügte Datenmodellobjekte angezeigt werden.
 
-**D. Dienste** im Inhaltsbereich, in dem zusätzliche Datenquellen-Vorgänge oder -Dienste angezeigt werden.
+**D.** DiensteInhaltsbereich, in dem hinzugefügte Datenquellen-Vorgänge oder -Dienste angezeigt werden.
 
-**E. Werkzeugleistenwerkzeuge** , um mit dem Formulardatenmodell zu arbeiten. Die Symbolleiste zeigt mehr Optionen, abhängig vom ausgewählten Objekt im Formulardatenmodell.
+**E.** SymbolleisteTools für die Verwendung des Formulardatenmodells. Die Symbolleiste zeigt mehr Optionen, abhängig vom ausgewählten Objekt im Formulardatenmodell.
 
-**F. &quot;Ausgewählte** Datenmodellobjekte und -dienste hinzufügen&quot;wird dem Formulardatenmodell hinzugefügt.
+**F. hinzufügen** SelectedFügt ausgewählte Datenmodellobjekte und -dienste zum Formulardatenmodell hinzu.
 
-For more information about form data model editor and how you can work with it to edit and configure form data model, see [Work with form data model](../../forms/using/work-with-form-data-model.md).
+Weitere Informationen zum Formulardatenmodelleditor und zur Bearbeitung und Konfiguration des Formulardatenmodells finden Sie unter [Mit Formulardatenmodell arbeiten](../../forms/using/work-with-form-data-model.md).
 
 ## Datenquellen aktualisieren {#update}
 
 Führen Sie die folgenden Schritte aus, um Datenquellen zu einem vorhandenen Formulardatenmodell hinzuzufügen oder zu aktualisieren.
 
-1. Go to **[!UICONTROL Forms > Data Integrations]**, select the form data model in which you want to add or update data sources, and tap **[!UICONTROL Properties]**.
+1. Wechseln Sie zu **[!UICONTROL Forms > Datenintegrationen]**, wählen Sie das Formulardatenmodell aus, dem Sie Datenquellen hinzufügen oder aktualisieren möchten, und tippen Sie auf **[!UICONTROL Eigenschaften]**.
 1. Wechseln Sie in den Eigenschaften des Formulardatenmodells zur Registerkarte **[!UICONTROL Quelle aktualisieren]**.
 
    Auf der Registerkarte „Quelle aktualisieren“:
@@ -76,7 +80,8 @@ Führen Sie die folgenden Schritte aus, um Datenquellen zu einem vorhandenen For
    * Um eine neue Datenquelle hinzuzufügen, tippen Sie auf **[!UICONTROL Quellen hinzufügen]** und wählen Sie die Datenquellen aus, die dem Formulardatenmodell hinzugefügt werden sollen. Alle in `global` konfigurierten Datenquellen und ggf. der ausgewählte Konfigurationsknoten werden angezeigt.
 
    * Um eine vorhandene Datenquelle durch eine andere Datenquelle desselben Typs zu ersetzen, tippen Sie auf das Symbol **[!UICONTROL Bearbeiten]** für die Datenquelle und wählen Sie diese aus der Liste der verfügbaren Datenquellen aus.
-   * To delete an existing data source, tap the **[!UICONTROL Delete]** icon for the data source. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
+   * Um eine vorhandene Datenquelle zu löschen, tippen Sie auf das Symbol **[!UICONTROL Löschen]** für die Datenquelle. Das Symbol „Löschen“ ist deaktiviert, wenn ein Datenmodellobjekt in der Datenquelle im Formulardatenmodell hinzugefügt wird.
+
    ![fdm-properties](assets/fdm-properties.png)
 
 1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Aktualisierungen zu speichern.
@@ -89,4 +94,4 @@ Führen Sie die folgenden Schritte aus, um Datenquellen zu einem vorhandenen For
 
 Sie haben jetzt ein Formulardatenmodell mit hinzugefügten Datenquellen. Als Nächstes können Sie das Formulardatenmodell bearbeiten, um Datenmodellobjekte und -dienste hinzuzufügen und zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten hinzuzufügen, Eigenschaften zu bearbeiten, benutzerdefinierte Datenmodellobjekte und -eigenschaften hinzuzufügen, Beispieldaten zu generieren und so weiter.
 
-For more information, see [Work with form data model](../../forms/using/work-with-form-data-model.md).
+Weitere Informationen finden Sie unter [Mit Formulardatenmodell arbeiten](../../forms/using/work-with-form-data-model.md).
