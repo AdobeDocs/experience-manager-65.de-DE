@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
 source-wordcount: '2979'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -69,7 +69,7 @@ Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navi
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
-![bh-03](assets/bh-03.png)
+![bh-05](assets/bh-03.png)
 
 >[!NOTE]
 >
@@ -77,14 +77,14 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)**– dargestellt durch einen Kompass
-* **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)**– dargestellt durch einen Hammer
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass     
+* **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
-### Navigationsfenster   {#navigation-panel}
+### Navigationsfenster     {#navigation-panel}
 
-Das Navigationsfenster bietet Zugriff auf die AEM-Konsolen:
+Das Navigationsfenster bietet Zugriff auf die AEM Konsolen:
 
 ![bh-01](assets/bh-01.png)
 
@@ -193,7 +193,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
 * Breadcrumb
 
-   ![bh-05](assets/bh-05.png)
+   ![bh-03](assets/bh-05.png)
 
    Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
@@ -205,7 +205,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Diese Option ist nur in der Listenansicht verfügbar. See [list view](#list-view) for more information.
+   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen finden Sie unter [Ansicht der Liste](#list-view).
 
 * Schaltfläche **Erstellen**
 
@@ -223,11 +223,11 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![bh-09](assets/bh-09.png)
 
-* Tastaturnavigation
+* Navigation über die Tastatur
 
-   Sie können auf einer Website nur mit der Tastatur navigieren. Dabei wird die standardmäßige Browserfunktionalität des **TAB** -Schlüssels (oder **OPT+TAB**) verwendet, um Sie zwischen fokussierbaren ** Elementen auf der Seite zu bewegen.
+   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die standardmäßige Browserfunktion des Schlüssels **TAB** (oder **OPT+TAB**) verwendet, um Sie zwischen Elementen auf der Seite zu bewegen, die *fokussierbar* sind.
 
-   In der **Sites** -Konsole gibt es die hinzugefügte Option zum **Überspringen zum Hauptinhalt**. Dies wird sichtbar, wenn Sie die Kopfzeilenoptionen *durch Drücken* der Tabulatortaste durchlaufen und die Navigation beschleunigen, indem Sie die Standardelemente in der Produktsymbolleiste überspringen und Sie direkt zum Hauptinhalt weiterleiten können.
+   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Dies wird sichtbar, wenn Sie *tab* durch die Kopfzeilenoptionen navigieren, und beschleunigt die Navigation, indem Sie die Standardelemente in der (Produkt-)Symbolleiste überspringen und Sie direkt zum Hauptinhalt weiterleiten können.
 
    ![bh-30](assets/bh-30.png)
 
@@ -245,15 +245,15 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
    Beim erstmaligen Navigieren im System [wird die AEM-Navigation über eine Reihe von Folien vorgestellt](/help/sites-authoring/basic-handling.md#product-navigation).
 
-* **Seiteneditor**
+* **Seiten-Editor**
 
-   Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiteneditor durch eine Reihe von Folien vorgestellt.
+   Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiten-Editor durch eine Reihe von Folien vorgestellt.
 
    ![bh-11](assets/bh-11.png)
 
    Navigieren Sie in diesem Überblick wie im [Überblick zur Produktnavigation](/help/sites-authoring/basic-handling.md#product-navigation) beim erstmaligen Öffnen einer Konsole.
 
-   Im Menü [**Seiteninformationen **können Sie die Option** Hilfe **](/help/sites-authoring/author-environment-tools.md#accessing-help)auswählen, um diese Folien jederzeit erneut anzuzeigen.
+   Im Menü [**Seiteninformationen** können Sie die Option **Hilfe**](/help/sites-authoring/author-environment-tools.md#accessing-help) auswählen, um diese Folien jederzeit erneut anzuzeigen.
 
 * **Tools-Konsole**
 
@@ -294,7 +294,7 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 >
 >Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen   {#quick-actions}
+## Schnellaktionen      {#quick-actions}
 
 In der [Kartenansicht](#cardviewquickactions) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -317,7 +317,7 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 >
 >Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Darstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Darstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen   {#selecting-resources}
+### Auswählen von Ressourcen      {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -345,13 +345,13 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
+     <li>Desktop:<br /> Maus über und verwenden Sie dann die Schnellaktion mit dem Häkchen</li>
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Click the card</li>
-     <li>Mobile device:<br /> Tap the card</li>
+     <li>Desktop:<br /> Klicken Sie auf die Karte</li>
+     <li>Mobilgerät:<br /> Tippen Sie auf die Karte</li>
     </ul> </td>
   </tr>
   <tr>
@@ -578,7 +578,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 **Verweise** zeigen sämtliche Verbindungen zur ausgewählten Ressource. Beispiel: In der **Sites-Konsole** wird in den [Verweisen](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten Folgendes angezeigt:
 
-* [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+* [Starts](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Sprachkopien](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise:
