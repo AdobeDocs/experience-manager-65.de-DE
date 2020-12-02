@@ -51,7 +51,7 @@ Beispiel: Die erste Textzeile in der folgenden Tabelle enthält ein Textfeld, ei
 
 Sie können zwei oder mehr Textzellen zusammenführen, indem Sie die gewünschten Zellen auswählen, mit der rechten Maustaste klicken, und im Kontextmenü die Option **Zusammenführen** wählen. Außerdem können Sie eine zusammengeführte Zelle teilen, indem Sie mit der rechten Maustaste darauf klicken und im Kontextmenü die Option **Zellen teilen** wählen.
 
-### Hinzufügen, Löschen und Verschieben von Zeilen und Spalten {#add-delete-move-rows-and-columns}
+### Hinzufügen, Löschen und Verschieben von Zeilen und Spalten  {#add-delete-move-rows-and-columns}
 
 Sie können eine Zeile oder Spalte hinzufügen bzw. löschen sowie eine Zeile in einer Tabelle nach oben bzw. nach unten verschieben.
 
@@ -69,15 +69,15 @@ Die Dropdownliste für die Zeile enthält auch die Option „Bearbeiten“ zum B
 >
 >Sie können zwar eine beliebige Anzahl von Zeilen einer Tabelle hinzufügen, aber nur maximal sechs Spalten. Die Überschriftzeile der Tabelle kann nicht gelöscht werden.
 
-### Fügen Sie die Tabellenbeschreibung hinzu {#add-table-description}
+### Fügen Sie die Tabellenbeschreibung hinzu  {#add-table-description}
 
 Sie können eine Beschreibung der Tabelle eingeben, die erklärt, wie die Daten aufgebaut sind, die von Bildschirmlesehilfen interpretiert und gelesen werden können. Hinzufügen der Beschreibung:
 
-1. Select the table and tap ![cmppr](assets/cmppr.png) to see its properties in the sidebar.
+1. Wählen Sie die Tabelle aus und tippen Sie auf ![cmppr](assets/cmppr.png), um deren Eigenschaften in der Seitenleiste anzuzeigen.
 1. Geben Sie auf der Registerkarte „Ein-/Ausgabehilfe“ die Zusammenfassung ein.
 1. Klicken Sie auf **Fertig**.
 
-### Spalten in einer Tabelle sortieren {#sortcolumnstable}
+### Sortieren von Spalten in einer Tabelle {#sortcolumnstable}
 
 Sie können Daten basierend auf einer beliebigen Spalte in einer Tabelle im adaptiven Formular sortieren. Die Werte in der Spalte können in auf- oder absteigender Reihenfolge sortiert werden.
 
@@ -91,13 +91,13 @@ Um eine Sortierung auf Tabellenspalten anzuwenden, müssen die Zellen der Tabell
 
 So aktivieren Sie die Sortierung:
 
-1. Wählen Sie die Tabelle aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch über den Browser &quot; **Inhalt** &quot;im Sidekick der interaktiven Kommunikation auswählen.
-1. Wählen Sie Sortierung **aktivieren**.
-1. Tap ![done_icon](assets/done_icon.png) to save the table properties. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
+1. Wählen Sie die Tabelle aus und tippen Sie auf ![configure_icon](assets/configure_icon.png) (Konfigurieren). Sie können die Tabelle auch über den Browser **Content** im Sidekick der interaktiven Kommunikation auswählen.
+1. Wählen Sie **Sortierung aktivieren**.
+1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Tabelleneigenschaften zu speichern. Die Sortiersymbole (Auf- und Ab-Pfeile) in Spaltenüberschriften zeigen an, dass die Sortierung aktiviert wurde.
 
    ![Sortieren aktivieren](assets/enable_sorting_new.png)
 
-1. Wechseln Sie zum **Vorschau** -Modus, um die Ausgabe Ansicht. Die Tabelle wird automatisch nach der ersten Spalte der Tabelle sortiert.
+1. Wechseln Sie zum Modus **Vorschau**, um die Ausgabe Ansicht. Die Tabelle wird automatisch nach der ersten Spalte der Tabelle sortiert.
 1. Klicken Sie auf die Spaltenüberschrift, um die Werte anhand der Spalte zu sortieren.
 
    Eine Spaltenüberschrift mit einem Pfeil nach oben zeigt an, dass die Tabelle anhand dieser Spalte sortiert wird. Darüber hinaus werden die Werte in der Spalte in aufsteigender Reihenfolge angezeigt.
@@ -106,15 +106,15 @@ So aktivieren Sie die Sortierung:
 
    Gleichermaßen stellt eine Spaltenüberschrift mit einem Pfeil nach unten dar, dass die Werte in der Spalte in absteigender Reihenfolge angezeigt werden.
 
-   Sie können auch im Tabellenmodus **Vorschau** ändern und erneut auf die Spaltenüberschrift klicken, um die Spaltenwerte zu sortieren.
+   Sie können auch Tabellenänderungen im Modus **Vorschau** vornehmen und erneut auf die Spaltenüberschrift klicken, um die Spaltenwerte zu sortieren.
 
 ## Konfigurieren des Tabellenstils {#configure}
 
 Sie können den Stil für eine Tabelle definieren, indem Sie den Stilmodus in der Seitensymbolleiste verwenden. Führen Sie die folgenden Schritte aus, um zum Stilmodus zu wechseln und den Stil der Tabelle zu bearbeiten:
 
-1. In the page toolbar, before Preview, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Tippen Sie in der Seitensymbolleiste vor der Vorschau auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
-1. In the sidebar select table and tap the edit button ![edit-button](assets/edit-button.png).
+1. Wählen Sie in der Seitenleiste die Tabelle aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png).
 Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 ![Anpassen der Stileigenschaften einer Tabelle](assets/style-table.png)
@@ -127,7 +127,7 @@ Die Stileigenschaften werden in der Seitenleiste angezeigt.
 
 Tabellen unterstützen standardmäßig das dynamische Hinzufügen oder Löschen von Zeilen zur Laufzeit.
 
-1. Select a table row and tap ![cmppr](assets/cmppr.png).
+1. Wählen Sie eine Tabellenzeile und tippen Sie auf ![cmppr](assets/cmppr.png).
 1. Geben Sie auf der Registerkarte „Wiederholungseinstellungen“ die Mindest- und Höchstanzahl der Zeilen in der Tabelle an.
 1. Klicken Sie auf **Fertig**.
 
@@ -139,14 +139,14 @@ Zur Laufzeit werden die Schaltflächen **+** und *-* zum Hinzufügen bzw. Lösch
 >
 >Das dynamische Hinzufügen und Löschen einer Zeile wird nicht unterstützt, wenn das Mobil-Layout „Kopfzeilen links“ aktiviert ist.
 
-## Ausdrücke in einer Tabelle {#expressions-in-a-table}
+## Ausdrücke in einer Tabelle  {#expressions-in-a-table}
 
 Mit Tabellen in adaptiven Formularen können Sie Ausdrücke in JavaScript schreiben, um Funktionen (z. B. das Ein- bzw. Ausblenden einer Tabelle oder Zeile, das Addieren aller Zahlen und das Anzeigen der Summe in einer Zelle, das Aktivieren bzw. Deaktivieren einer Zelle, das Überprüfen der Benutzereingabe usw.) bereitzustellen. Diese Ausdrücke nutzen Skriptmodell-APIs für adaptive Formulare.
 
 Während Tabellen und Zeilen nur Ausdrücke zum Steuern ihrer Sichtbarkeit unterstützen, unterstützen Zellen folgende Ausdrücke:
 
 * **Initialisierungsskript**: Zum Ausführen einer Aktion nach der Initialsierung eines Felds.
-* **Skript zum Bestätigen von Werten:** , um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
+* **Skript zum Bestätigen von Werten:** um die Komponenten eines Formulars zu ändern, nachdem der Wert eines Felds geändert wurde.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Tabellen in adaptiven Formularen eignen sich hervorragend für Mobilgeräte aufg
 
 Sie können ein Tabellenlayout für Mobilgeräte im Dialogfeld „Komponente bearbeiten“ einer Tabelle auf der Registerkarte „Stile“ konfigurieren.
 
-### Kopfzeilen links {#headers-on-left}
+### Kopfzeilen links  {#headers-on-left}
 
 Im Layout „Kopfzeilen links“ werden die Spaltenüberschriften der Tabelle auf der linken Seite angeordnet und nur eine Zelle steht neben der Kopfzeile. Jede Zeile in diesem Layout ist ein eigenständiger Abschnitt. In den folgenden Abbildungen wird eine Tabelle auf einem Desktop mit derselben auf einem Mobilgerät verglichen.
 
@@ -197,7 +197,7 @@ Reduzierte Spalten einer Tabelle mit nur zwei Spalten auf einem Mobilgerät
 
 Erweiterte Spalte einer Tabelle auf einem Mobilgerät
 
-## Zusammenführen von Daten in einer Tabelle {#merge-data-in-a-table}
+## Zusammenführen von Daten in einer Tabelle  {#merge-data-in-a-table}
 
 Sie können Tabellen in adaptiven Formularen zur Laufzeit mithilfe von Daten aus einer XML-Datei füllen. Die XML-Datendatei kann sich im lokalen Dateisystem des Computers, auf dem der AEM Forms-Server ausgeführt wird, oder im CRX-Repository befinden.
 
@@ -271,9 +271,9 @@ Die XML-Datei, die Daten im folgenden Format enthält:
 </afData>
 ```
 
-In the sample XML, the data for a row is defined by the `<Row1>` tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
+In der XML-Musterdatei werden die Daten für eine Zeile durch die Tags `<Row1>` definiert, bei denen es sich um den Elementnamen für die Zeile in der Tabelle handelt. Innerhalb des Tags `<Row1>` werden die Daten für jede Zelle im Tag für den Elementnamen definiert, z. B. `<tableItem1>`, `<tableItem2>`, `<tableItem3>` und `<type>`.
 
-Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. For example, if the adaptive form is at *https://localhost:4502/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
+Um diese Daten mit der Tabelle zur Laufzeit zusammenzuführen, muss das adaptive Formular, das die Tabelle enthält, auf den absoluten Pfad der XML-Datei zeigen. Dabei muss „wcmmode“ aktiviert sein. Wenn sich das adaptive Formular beispielsweise unter *https://localhost:4502/myForms/bankTransaction.html* befindet und die XML-Datendatei unter *C:/myTransactions/bankSummary.xml* gespeichert wird, können Sie die Tabelle mit Daten unter der folgenden URL Ansicht werden:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
