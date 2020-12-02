@@ -12,6 +12,9 @@ discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 79%
 
 ---
 
@@ -25,6 +28,6 @@ PDF Generator konvertiert Dateien mit unterschiedlichen Formaten in PDF-Dateien.
 Es gibt drei Möglichkeiten zum Senden von Dateien zur Verarbeitung an PDF Generator.
 
 * Administratoren können auf die PDFG-Seiten in Administration Console zugreifen. (Siehe [Dateien mithilfe von PDF Generator konvertieren](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
-* Die Benutzer können auf die PDFG-Endbenutzerseiten zugreifen, indem sie sich bei `http(s)://'[server]:[port]'/pdfgui.` Von dort anmelden, sie können auf den PDFG-Netzwerkdrucker zugreifen, PDF erstellen, HTML in PDF, PDF exportieren und PDF-Seiten optimieren.
+* Die Benutzer können auf die PDFG-Endbenutzerseiten zugreifen, indem sie sich bei `http(s)://'[server]:[port]'/pdfgui.` anmelden. Dort können sie auf die Seiten PDFG-Netzwerkdrucker, PDF erstellen, HTML in PDF, Export PDF und Optimize PDF zugreifen.
 * Sie können Endpunkte für die Dienste konfigurieren. Siehe <!--Fix broken link to Managing Endpoints --> [Empfehlungen für den Generate PDF-Dienst](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).
 
