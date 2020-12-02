@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 translation-type: tm+mt
 source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 53%
 
 ---
 
 
 # Assets-Repository-Neustrukturierung in AEM 6.5 {#assets-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Assets Solution. Einige Änderungen erfordern Arbeitsaufwand während des Aktualisierungsprozesses von AEM 6.5, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die die AEM Assets-Lösung beeinträchtigen. Einige Änderungen erfordern Arbeitsaufwand während des AEM 6.5-Aktualisierungsprozesses, während andere bis zu einem zukünftigen Upgrade verschoben werden können.
 
 **Mit der Aktualisierung auf 6.5**
 
@@ -76,13 +79,13 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Wenn die E-Mail-Vorlagen vom Kunden geändert wurden, führen Sie die folgenden Schritte aus, um sie an die neue Repository-Struktur anzupassen:</p>
     <ol>
-     <li>Die <code>/libs/settings/dam/notification</code> E-Mail-Vorlage sollte von <strong><code>/etc/notification/email/default</code></strong> in <strong><code>/apps/settings/notification/email/default</code></strong>
+     <li>Die E-Mail-Vorlage <code>/libs/settings/dam/notification</code> sollte von <strong><code>/etc/notification/email/default</code></strong> nach <strong><code>/apps/settings/notification/email/default</code></strong> kopiert werden.
       <ol>
-       <li>Because the destination is in<strong> <code>/apps</code></strong> this change should be persisted in SCM.</li>
+       <li>Da das Ziel in <strong> <code>/apps</code></strong> liegt, sollte diese Änderung in SCM beibehalten werden.</li>
       </ol> </li>
-     <li>Remove the folder: <strong><code>/etc/dam/notification/email/default</code></strong> after the e-mail templates within it have been moved.<br />
+     <li>Entfernen Sie den Ordner: <strong><code>/etc/dam/notification/email/default</code></strong> nach dem Verschieben der darin enthaltenen E-Mail-Vorlagen.<br />
       <ol>
-       <li>If no updates were made to the e-mail template under<strong> <code>/etc/notification/email/default</code></strong>, the folder can be removed as the original e-mail template exists under <strong><code>/libs/settings/notification/email/default</code></strong> as part of AEM 4 install.</li>
+       <li>Wenn keine Aktualisierungen an der E-Mail-Vorlage unter <strong> <code>/etc/notification/email/default</code></strong> vorgenommen wurden, kann der Ordner entfernt werden, da die ursprüngliche E-Mail-Vorlage unter <strong><code>/libs/settings/notification/email/default</code></strong> als Teil AEM 4-Installation vorhanden ist.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -113,7 +116,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
      <li>Wandeln Sie die gesamten CSS-, JavaScript- und statischen Ressourcen im Design in eine <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client-Bibliothek</a> mit <code>allowProxy = true</code> um.</li>
      <li>Aktualisieren Sie die Verweise auf den vorherigen Speicherort in der Eigenschaft <code>cq:designPath</code> über <strong>AEM &gt; Sites &gt; Seiten für benutzerdefinierte Site &gt; Seiteneigenschaften &gt; Erweitert &gt; Design</strong>.</li>
      <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, um die neue Kategorie „Client-Bibliothek“ zu verwenden. Dies erfordert die Aktualisierung des Implementierungscodes der Seite.</li>
-     <li>Update the Dispatcher rules to allow serving of Client Libraries via the <code>/etc.clientlibs/</code> proxy servlet.</li>
+     <li>Aktualisieren Sie die Dispatcher-Regeln, damit Client-Bibliotheken über das Proxy-Servlet <code>/etc.clientlibs/</code> bereitgestellt werden können.</li>
     </ol> <p>Für alle Designs, die nicht in SCM verwaltet werden und die zur Laufzeit über Design-Dialoge geändert werden, verschieben Sie keine bearbeitbaren Designs aus <code>/etc</code>.</p> </td>
   </tr>
   <tr>
@@ -123,7 +126,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
  </tbody>
 </table>
 
-### Vorlage für E-Mail-Benachrichtigung zum Asset-Download {#download-asset-e-mail-notification-template}
+### Vorlage für E-Mail-Benachrichtigung zum Asset-Download  {#download-asset-e-mail-notification-template}
 
 <table>
  <tbody>
@@ -139,24 +142,24 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Wenn die E-Mail-Vorlagen (<strong>downloadasset</strong> oder<strong> transientworkflowcompleted</strong>) geändert wurden, befolgen Sie die nachstehenden Schritte, um sie an die neue Struktur anzupassen:</p>
     <ol>
-     <li>The updated e-mail template should be copied from <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> to <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
+     <li>Die aktualisierte E-Mail-Vorlage sollte von <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> nach <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong> kopiert werden
       <ol>
-       <li>Because the destination is in<strong> <code>/apps</code></strong> this change should be persisted in SCM.</li>
+       <li>Da das Ziel in <strong> <code>/apps</code></strong> liegt, sollte diese Änderung in SCM beibehalten werden.</li>
       </ol> </li>
-     <li>Remove the folder: <code>/etc/dam/workflow/notification/email/downloadasset </code>after the e-mail templates within it have been moved.<br />
+     <li>Entfernen Sie den Ordner: <code>/etc/dam/workflow/notification/email/downloadasset </code>nachdem die darin enthaltenen E-Mail-Vorlagen verschoben wurden.<br />
       <ol>
-       <li>If no updates were made to the e-mail template under<strong> <code>/etc</code></strong>, the folder can be removed as the orginal e-mail template exists under <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> as part of AEM 6.4 install.</li>
+       <li>Wenn keine Aktualisierungen an der E-Mail-Vorlage unter <strong> <code>/etc</code></strong> vorgenommen wurden, kann der Ordner entfernt werden, da die ursprüngliche E-Mail-Vorlage unter <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> als Teil der AEM 6.4-Installation vorhanden ist.</li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td>
-   <td>While <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> is technically supported for look-up (takes precedence before /apps via usual Sling CAConfig lookup, but after <code>/etc</code>) the template could be placed in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Dies wird allerdings nicht empfohlen, da es keine Laufzeit-Benutzeroberfläche gibt, die die Bearbeitung der E-Mail-Vorlage erleichtert.</td>
+   <td>Während <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> technisch für die Suche unterstützt wird (hat Vorrang vor /apps über die übliche Sling CAConfig-Suche, aber nach <code>/etc</code>), könnte die Vorlage in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> platziert werden. Dies wird allerdings nicht empfohlen, da es keine Laufzeit-Benutzeroberfläche gibt, die die Bearbeitung der E-Mail-Vorlage erleichtert.</td>
   </tr>
  </tbody>
 </table>
 
-### Beispiel-DRM-Lizenzen {#example-drm-licenses}
+### Beispiel-DRM-Lizenzen  {#example-drm-licenses}
 
 | **Vorheriger Speicherort** | `/etc/dam/drm/licenses/` |
 |---|---|
@@ -164,7 +167,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 | **Leitfaden für die Neustrukturierung** | Nicht zutreffend |
 | **Hinweise** | Nicht zutreffend |
 
-### Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe {#link-share-e-mail-notification-template}
+### Vorlage für E-Mail-Benachrichtigung zu Link-Freigabe  {#link-share-e-mail-notification-template}
 
 <table>
  <tbody>
@@ -180,19 +183,19 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Wenn die E-Mail-Vorlage vom Kunden geändert wurde, sollte sie anschließend an die neue Repository-Struktur angepasst werden:</p>
     <ol>
-     <li>The updated e-mail template should be copied from <strong><code>/etc/dam/adhocassetshare</code></strong> to <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
+     <li>Die aktualisierte E-Mail-Vorlage sollte von <strong><code>/etc/dam/adhocassetshare</code></strong> nach <strong><code>/apps/settings/dam/adhocassetshare</code></strong> kopiert werden
       <ol>
-       <li>Because the destination is in<strong> <code>/apps</code></strong> this change should be persisted in SCM.</li>
+       <li>Da das Ziel in <strong> <code>/apps</code></strong> liegt, sollte diese Änderung in SCM beibehalten werden.</li>
       </ol> </li>
-     <li>Remove the folder: <strong><code>/etc/dam/adhocassetshare</code></strong> after the e-mail templates within it have been moved.<br />
+     <li>Entfernen Sie den Ordner: <strong><code>/etc/dam/adhocassetshare</code></strong> nach dem Verschieben der darin enthaltenen E-Mail-Vorlagen.<br />
       <ol>
-       <li>If no updates were made to the e-mail template under<strong> <code>/etc</code></strong>, the folder can be removed as the original e-mail template exists under <strong><code>/libs/settings/dam/adhocassetshare</code></strong> as part of AEM 6.4 install.</li>
+       <li>Wenn keine Aktualisierungen an der E-Mail-Vorlage unter <strong> <code>/etc</code></strong> vorgenommen wurden, kann der Ordner entfernt werden, da die ursprüngliche E-Mail-Vorlage unter <strong><code>/libs/settings/dam/adhocassetshare</code></strong> als Teil AEM 6.4-Installation vorhanden ist.</li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td>
-   <td>While <code>/conf/global/settings/dam/adhocassetshare</code> is technically supported for look-up (it takes precedence before <code>/apps</code> via usual Sling CAConfig lookup, but after <code>/etc</code>), the template can be placed in <code>/conf/global/settings/dam/adhocassetshare</code>. Dies wird jedoch nicht empfohlen, da es keine Benutzeroberfläche zur Laufzeit gibt, die die Bearbeitung der E-Mail-Vorlage erleichtern könnte</td>
+   <td>Während <code>/conf/global/settings/dam/adhocassetshare</code> technisch für das Nachschlagen unterstützt wird (es hat Vorrang vor <code>/apps</code> über die herkömmliche Sling CAConfig-Suche, aber nach <code>/etc</code>), kann die Vorlage in <code>/conf/global/settings/dam/adhocassetshare</code> platziert werden. Dies wird jedoch nicht empfohlen, da es keine Benutzeroberfläche zur Laufzeit gibt, die die Bearbeitung der E-Mail-Vorlage erleichtern könnte</td>
   </tr>
  </tbody>
 </table>
@@ -213,20 +216,20 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>So nehmen Sie eine Anpassung an eine neue Repository-Sturktur vor:</p>
     <ol>
-     <li>Alle benutzerdefinierten oder geänderten Skripten kopieren von <strong><code>/etc/dam/indesign/scripts</code></strong><strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
+     <li>Kopieren Sie alle benutzerdefinierten oder geänderten Skripte von <strong><code>/etc/dam/indesign/scripts</code></strong> nach <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
-       <li>Only copy new or modified scripts as unmodified scripts provided by AEM will be available via <strong><code>/libs/settings</code></strong> in AEM 6.5</li>
+       <li>Über <strong><code>/libs/settings</code></strong> in AEM 6.5 sind nur neue oder geänderte Skripte als von AEM bereitgestellte nicht geänderte Skripte verfügbar.</li>
       </ol> </li>
      <li>Suchen Sie alle Workflow-Modelle, die den Medienextraktionsprozess-WF-Schritt verwenden und
       <ol>
-       <li>For each instance of the Workflow Step, update the paths in config to point explicitly at the proper scripts under<strong> <code>/apps/settings/dam/indesign/scripts</code></strong> or <strong><code>/libs/settings/dam/indesign/scripts</code></strong> as appropriate.</li>
+       <li>Aktualisieren Sie für jede Instanz des Workflow-Schritts die Pfade in "config", um explizit auf die richtigen Skripten unter <strong> <code>/apps/settings/dam/indesign/scripts</code></strong> oder <strong><code>/libs/settings/dam/indesign/scripts</code></strong> zu verweisen.</li>
       </ol> </li>
-     <li>Entfernen<strong> Sie <code>/etc/dam/indesign/scripts</code></strong> vollständig.</li>
+     <li>Entfernen Sie <strong> <code>/etc/dam/indesign/scripts</code></strong> vollständig.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td>
-   <td>It is recommended customized scripts be stored under <code>/apps</code>, since that is the location where code should be stored.</td>
+   <td>Es wird empfohlen, benutzerdefinierte Skripten unter <code>/apps</code> zu speichern, da dies der Speicherort ist, an dem Code gespeichert werden soll.</td>
   </tr>
  </tbody>
 </table>
@@ -245,9 +248,9 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Project level customizations need to be cut and pasted under equivalent <code>/apps</code> or <code>/conf</code> paths as applicable.</p> <p>So nehmen Sie eine Anpassung an die Repository-Sturktur von AEM 6.4 vor:</p>
+   <td><p>Anpassungen auf Projektebene müssen unter äquivalenten <code>/apps</code>- oder <code>/conf</code>-Pfaden geschnitten und eingefügt werden.</p> <p>So nehmen Sie eine Anpassung an die Repository-Sturktur von AEM 6.4 vor:</p>
     <ol>
-     <li>Alle geänderten Videokonfigurationen kopieren von <code>/etc/dam/video</code> in <code>/apps/settings/dam/video</code></li>
+     <li>Kopieren Sie alle geänderten Videokonfigurationen von <code>/etc/dam/video</code> nach <code>/apps/settings/dam/video</code></li>
      <li>Remove <code>/etc/dam/video</code></li>
     </ol> </td>
   </tr>
@@ -258,7 +261,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
  </tbody>
 </table>
 
-### Konfigurationen der Viewer-Voreinstellungen {#viewer-preset-configurations}
+### Konfigurationen der Viewer-Voreinstellungen  {#viewer-preset-configurations}
 
 <table>
  <tbody>
@@ -274,9 +277,9 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Die Voreinstellungen für die Standardanzeige sind nur am neuen Speicherort verfügbar.</p> <p>Für die benutzerdefinierte Viewer-Vorgabe:</p>
     <ul>
-     <li>you will have to run a migration script to move the node from <code>/etc</code> to <code>/conf</code>. The script is located at <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
+     <li>Sie müssen ein Migrationsskript ausführen, um den Knoten von <code>/etc</code> nach <code>/conf</code> zu verschieben. Das Skript befindet sich unter <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>oder Sie können die Konfiguration bearbeiten und sie wird automatisch am neuen Speicherort gespeichert.</li>
-    </ul> <p>Note that you do not have to adjust their copyURL/embed code to point to <code>/conf</code>. The existing request to <code>/etc</code> will be re-routed to the correct content from <code>/conf</code>.</p> </td>
+    </ul> <p>Beachten Sie, dass Sie ihren copyURL-/Einbettungscode nicht so anpassen müssen, dass er auf <code>/conf</code> verweist. Die vorhandene Anforderung an <code>/etc</code> wird von <code>/conf</code> zum richtigen Inhalt umgeleitet.</p> </td>
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td>
@@ -285,7 +288,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
  </tbody>
 </table>
 
-### Verschiedenes {#misc2}
+### Verschiedenes  {#misc2}
 
 <table>
  <tbody>
@@ -299,7 +302,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Adjust any references to point to the new resources under <code>/libs</code> using the <code>/etc.clientlibs/</code> allow proxy prefix.</p> <p>Bereinigen Sie schließlich die Ordner für die migrierten clientlibs aus <code>/etc/clientlibs/foundation/</code></p> </td>
+   <td><p>Passen Sie alle Verweise so an, dass sie auf die neuen Ressourcen unter <code>/libs</code> verweisen, indem Sie das Präfix <code>/etc.clientlibs/</code> Proxy zulassen verwenden.</p> <p>Bereinigen Sie schließlich die Ordner für die migrierten clientlibs aus <code>/etc/clientlibs/foundation/</code></p> </td>
   </tr>
   <tr>
    <td><strong>Hinweise</strong></td>
