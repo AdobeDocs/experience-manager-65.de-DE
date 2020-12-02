@@ -12,6 +12,9 @@ discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +75,7 @@ So erstellen Sie einen neue Marke:
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-### Erstellen einer neuen Kampagne {#creating-a-new-campaign}
+### Erstellen einer neuen Kampagne  {#creating-a-new-campaign}
 
 So erstellen Sie einen neue Kampagne:
 
@@ -86,7 +89,7 @@ So erstellen Sie einen neue Kampagne:
 
 1. Klicken Sie auf **Erstellen**. Ihre neue Kampagne wird im MCM angezeigt.
 
-### Definieren der Eigenschaften für die neue Kampagne {#defining-the-properties-for-your-new-campaign}
+### Definieren der Eigenschaften für die neue Kampagne  {#defining-the-properties-for-your-new-campaign}
 
 Konfigurieren Sie Kampagneneigenschaften, die das Verhalten beeinflussen:
 
@@ -105,7 +108,7 @@ Konfigurieren Sie Kampagneneigenschaften, die das Verhalten beeinflussen:
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-### Erstellen eines neuen Erlebnisses {#creating-a-new-experience}
+### Erstellen eines neuen Erlebnisses  {#creating-a-new-experience}
 
 Die Vorgehensweise beim Erstellen eines neuen Erlebnisses hängt vom Erlebnistyp ab.
 
@@ -119,7 +122,7 @@ Die Vorgehensweise beim Erstellen eines neuen Erlebnisses hängt vom Erlebnistyp
 >
 >Es wird jedoch empfohlen, jetzt den MCM für das Erstellen von Erlebnissen zu verwenden.
 
-### Konfigurieren des neuen Erlebnisses {#configuring-your-new-experience}
+### Konfigurieren des neuen Erlebnisses  {#configuring-your-new-experience}
 
 Nachdem Sie das Grundgerüst für Ihr Erlebnis erstellt haben, müssen Sie jetzt abhängig vom Erlebnistyp die folgenden Schritte ausführen:
 
@@ -170,7 +173,7 @@ Leads werden im Allgemeinen in Kategorien eingeteilt und in Listen gruppiert, so
 >
 >Um die Avatare von Benutzern hinzuzufügen oder zu ändern, müssen Sie die Clickstream-Cloud (Strg+Alt+C) öffnen, das Profil laden und dann auf **Bearbeiten** klicken.
 
-### Erstellen neuer Leads {#creating-new-leads}
+### Erstellen neuer Leads  {#creating-new-leads}
 
 Denken Sie daran, die Leads nach dem Erstellen zu [aktivieren](#activating-or-deactivating-leads), damit Sie deren Aktivitäten auf der Veröffentlichungsinstanz verfolgen und das Benutzererlebnis personalisieren können.
 
@@ -236,7 +239,7 @@ So importieren Sie Leads aus einer kommagetrennten Liste:
    >Bei der ersten Zeile in der CSV-Liste handelt es sich um vordefinierte Etiketten, die genau wie im Beispiel angegeben geschrieben werden müssen:
    >
    >
-   >`email,givenName,familyName` - wenn sie als `givenname`Beispiel geschrieben wurde, wird das System es nicht erkennen.
+   >`email,givenName,familyName` - wenn sie als  `givenname`Beispiel geschrieben wurde, wird das System es nicht erkennen.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -250,7 +253,7 @@ So importieren Sie Leads aus einer kommagetrennten Liste:
 
    Der neue Lead wird im Bereich „Leads“ angezeigt. Wenn Sie auf den Eintrag klicken, werden alle eingegebenen Informationen im rechten Bereich angezeigt. Sobald Sie den Lead erstellt haben, können Sie ihn einer Liste hinzufügen.
 
-### Hinzufügen von Leads zu Listen {#adding-leads-to-lists}
+### Hinzufügen von Leads zu Listen  {#adding-leads-to-lists}
 
 So fügen Sie schon bestehenden Listen Leads hinzu:
 
@@ -266,7 +269,7 @@ So fügen Sie schon bestehenden Listen Leads hinzu:
 
 1. Wählen Sie aus, welcher Liste Sie die Leads hinzufügen möchten und klicken Sie auf **OK**. Die Leads werden den entsprechenden Listen hinzugefügt.
 
-### Anzeigen von Lead-Informationen {#viewing-lead-information}
+### Anzeigen von Lead-Informationen  {#viewing-lead-information}
 
 Um Lead-Informationen im MCM anzuzeigen, klicken Sie auf das Kontrollkästchen neben dem Lead. Rechts wird ein Bereich geöffnet mit allen Informationen zum Lead, darunter auch die Listenzugehörigkeit.
 
@@ -294,7 +297,7 @@ So ändern Sie bestehende Lead-Informationen:
    >
    >Gehen Sie zum Benutzerprofil, um den Lead-Avatar zu ändern. Über Strg+Alt+C können Sie das Profil in die Clickstream Cloud laden. Klicken Sie dann auf **Laden** und wählen Sie dann das Profil aus.
 
-### Löschen vorhandener Leads {#deleting-existing-leads}
+### Löschen vorhandener Leads  {#deleting-existing-leads}
 
 Wählen Sie zum Löschen von bestehenden Leads im MCM das Kontrollkästchen neben dem Lead aus und klicken Sie auf **Löschen**. Der Lead wird aus der Lead-Liste und allen zugehörigen Listen entfernt.
 
@@ -302,7 +305,7 @@ Wählen Sie zum Löschen von bestehenden Leads im MCM das Kontrollkästchen nebe
 >
 >Vor dem Löschen fragt AEM noch einmal nach, ob Sie den bestehenden Lead wirklich löschen möchten. Nach dem Löschen kann er nicht wiederhergestellt werden.
 
-## Arbeiten mit Listen {#working-with-lists}
+## Arbeiten mit Listen  {#working-with-lists}
 
 >[!NOTE]
 >
@@ -345,7 +348,7 @@ So ändern Sie eine bestehende Liste:
 
 1. Nehmen Sie die gewünschten Änderungen vor und klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
-### Löschen vorhandener Listen {#deleting-existing-lists}
+### Löschen vorhandener Listen  {#deleting-existing-lists}
 
 Wählen Sie zum Löschen von bestehenden Listen im MCM das Kontrollkästchen neben der Liste aus und klicken Sie auf **Löschen**. Die Liste wird gelöscht. Leads, die der Liste zugeordnet waren, werden nicht entfernt; es wird nur die Zugehörigkeit zur Liste entfernt.
 
@@ -353,7 +356,7 @@ Wählen Sie zum Löschen von bestehenden Listen im MCM das Kontrollkästchen neb
 >
 >Vor dem Löschen fragt AEM noch einmal nach, ob Sie die bestehende Liste wirklich löschen möchten. Nach dem Löschen kann er nicht wiederhergestellt werden.
 
-### Zusammenführen von Listen {#merging-lists}
+### Zusammenführen von Listen  {#merging-lists}
 
 Sie können eine bestehende Liste mit einer anderen zusammenführen. Dabei wird die Liste, die Sie zusammenführen, Mitglied der anderen Liste. Sie besteht weiterhin als eigenständige Liste und sollte nicht gelöscht werden.
 
@@ -385,7 +388,7 @@ So führen Sie bestehende Listen zusammen:
 >
 >Das Entfernen einer zusammengeführten Liste aus der Mitgliedschaft entspricht dem Entfernen von Leads aus einer Liste. Öffnen Sie die Registerkarte **Listen**, wählen Sie die Liste aus, die die zusammengeführte Liste enthält, und entfernen Sie diese Mitgliedschaft, indem Sie neben der Liste auf den roten Kreis klicken.
 
-### Anzeigen von Leads in Listen {#viewing-leads-in-lists}
+### Anzeigen von Leads in Listen  {#viewing-leads-in-lists}
 
 Sie können jederzeit anzeigen, welche Leads einer bestimmten Liste angehören, indem Sie nach den Mitgliedern suchen oder die Liste durchsuchen.
 
