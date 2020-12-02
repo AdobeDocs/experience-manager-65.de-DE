@@ -11,6 +11,9 @@ discoiquuid: fb2b7ff6-6b29-425b-a86e-d1f80faab9e0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ Wenn Sie Ihre AEM Forms-App starten, müssen Sie zunächst Ihre Anmeldedaten und
 
 ## Starten der App {#to-start-the-app}
 
-1. Tippen Sie auf das Symbol der AEM Forms-App auf Ihrem Mobilgerät.
+1. Tippen Sie auf das Symbol für die AEM Forms-App auf Ihrem Mobilgerät.
 1. Um sich bei der App anzumelden, geben Sie einen Benutzernamen, ein Kennwort und eine AEM Forms-Server-URL ein.
 
    >[!NOTE]
@@ -32,7 +35,7 @@ Wenn Sie Ihre AEM Forms-App starten, müssen Sie zunächst Ihre Anmeldedaten und
    >    * Sie können die AEM Forms-Server-URL auswählen, um sich über die App anzumelden.
 
 
-Wenn Sie sich bei der App anmelden, werden Sie zum [**Startbildschirm **weitergeleitet](../../forms/using/home-screen.md).
+Wenn Sie sich bei der App anmelden, werden Sie zum [**Startbildschirm** weitergeleitet](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >
