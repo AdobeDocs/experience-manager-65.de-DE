@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 100%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Im folgenden Diagramm ist der Aufbau der Multisite-Unterstützung für Targeting-Inhalte dargestellt.
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. In jedem Gebiet ist ein eigener Satz Aktivitäten, Erlebnisse und Angebote enthalten.
+Gebiete werden unter **/content/campaigns/&lt;Marke>** eingeordnet und jede Marke verfügt standardmäßig über ein automatisch erstelltes Master-Gebiet. In jedem Gebiet ist ein eigener Satz Aktivitäten, Erlebnisse und Angebote enthalten.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
 Seiten oder Sites können Gebieten zugeordnet werden, sodass sich Targeting-Inhalte nachschlagen lassen. Sollte kein Gebiet konfiguriert sein, bezieht sich AEM für diese Marke auf das Mastergebiet.
 
-Im folgenden Diagramm finden Sie ein Beispiel dafür, wie die Logik im Falle der drei Seiten Site1, Site2 und Site3 funktioniert.
+Im folgenden Diagramm finden Sie ein Beispiel dafür, wie die Logik im Falle der drei Sites Site1, Site2 und Site3 funktioniert.
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
