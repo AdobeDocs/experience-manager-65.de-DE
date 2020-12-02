@@ -53,7 +53,7 @@ ht-degree: 74%
  </tbody>
 </table>
 
-## Vergleich der OSGi-Dienste {#comparison-of-osgi-services}
+## Vergleich der OSGi-Dienste  {#comparison-of-osgi-services}
 
 **Ältere AEM-Versionen**
 
@@ -89,7 +89,7 @@ Dienst zum Konfigurieren der Liste von Prinzipalen, die von der CUG-Genehmigung 
 
    >[!NOTE]
    > 
-   >Wenn die Variable nicht konfiguriert `CugExcludeImpl` ist, wird `CugConfiguration` die Standardeinstellung zurückgesetzt.
+   >Wenn `CugExcludeImpl` nicht konfiguriert ist, wird `CugConfiguration` auf die Standardeinstellung zurückgesetzt.
 
    Es ist möglich, bei besonderen Anforderungen eine benutzerdefinierte CugExclude-Implementierung zu verbinden.
 
