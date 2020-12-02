@@ -19,18 +19,18 @@ ht-degree: 70%
 
 # Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“{#custom-storage-for-drafts-and-submissions-component}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
 
-By default, AEM Forms stores the user data associated with the draft and submission of a form in the `/content/forms/fp` node on the Publish instance. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
+Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung eines Formulars verknüpften Benutzerdaten im Knoten `/content/forms/fp` in der Veröffentlichungsinstanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
 
 ## Voraussetzungen  {#prerequisites}
 
-* Aktivieren von [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren [adaptiver Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Informationen zur [Implementierung von benutzerdefinierten Datenspeicherung](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Aktivieren Sie [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* Erstellen einer [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
+* Aktivieren Sie [adaptive Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
+* Informationen zu [Implementierungsdetails der benutzerdefinierten Datenspeicherung](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
