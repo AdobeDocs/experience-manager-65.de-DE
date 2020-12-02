@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -113,7 +113,7 @@ Sie haben folgende Möglichkeiten:
 
 ![wf-91](assets/wf-91.png)
 
-### Inbox - Settings {#inbox-view-settings}
+### Posteingang - Einstellungen {#inbox-view-settings}
 
 Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
@@ -136,34 +136,34 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
    ![wf-83](assets/inbox-settings.png)
 
-### Posteingang - Admin-Steuerung {#inbox-admin-control}
+### Posteingang - Administratorsteuerung {#inbox-admin-control}
 
 Mit der Option &quot;Admin-Steuerung&quot;können Administratoren:
 
-* Anpassen der AEM Inbox-Spalten
+* Anpassen der AEM-Posteingangsspalten
 
 * Anpassen von Kopfzeilentext und Logo
 
 * Steuern der Anzeige der in der Kopfzeile verfügbaren Navigationslinks
 
-Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der `administrators` Gruppe oder `workflow-administrators` Gruppe sichtbar.
+Die Option &quot;Admin-Steuerung&quot;ist nur für die Mitglieder der Gruppe `administrators` oder `workflow-administrators` sichtbar.
 
-* **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzuzeigen.
-   * **Hinzufügen Spalte**: Wählen Sie eine Spalte aus, die in AEM Inbox hinzugefügt werden soll.
-   * **Spalte** bearbeiten: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf das Symbol ![Bearbeiten](assets/edit.svg) , um einen Spaltenanzeigenamen einzugeben.
-   * **Spalte** löschen: Tippen Sie auf das Symbol zum ![Löschen](assets/delete_updated.svg) , um die Spalte aus dem AEM-Posteingang zu löschen.
-   * **Spalte** verschieben: Ziehen Sie das ![Verschieben](assets/move_updated.svg) -Symbol, um eine Spalte an eine neue Position im AEM-Posteingang zu verschieben.
+* **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten anzuzeigen, die auf den Daten eines Workflows basieren.
+   * **hinzufügen Spalte**: Wählen Sie eine Spalte aus, die in AEM Posteingang hinzugefügt werden soll.
+   * **Spalte** bearbeiten: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf  ![](assets/edit.svg) Bearbeiten, um einen Spaltenanzeigenamen einzugeben.
+   * **Spalte** löschen: Tippen Sie auf das  ![](assets/delete_updated.svg) Löschen-Symbol, um die Spalte aus AEM Posteingang zu löschen.
+   * **Spalte** verschieben: Ziehen Sie das  ![](assets/move_updated.svg) moveicon, um eine Spalte an eine neue Position in AEM Posteingang zu verschieben.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Branding-Anpassung**
 
-   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den Standardtext des **Adobe Experience Managers** zu ersetzen.
+   * **Kopfzeilentext anpassen:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den Standardtext von  **Adobe Experience** Manager zu ersetzen.
 
    * **Logo anpassen:** Geben Sie das Bild an, das in der Kopfzeile als Logo angezeigt werden soll. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie auf dieses Bild im Feld.
 
 * **Benutzernavigation**
-   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Links und die Authoring-Optionen, die beim Tippen auf das Logo oder den Text des Adobe Experience Managers verfügbar sind.
+   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Links und die Authoring-Optionen, die beim Tippen auf Adobe Experience Manager-Logo oder -Text verfügbar sind.
 * **Speichern:** Tippen/klicken Sie auf diese Option, um die Einstellungen zu speichern.
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
