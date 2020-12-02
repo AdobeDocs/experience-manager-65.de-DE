@@ -21,7 +21,7 @@ ht-degree: 8%
 
 # Berichte-Konsole {#reports-console}
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
 Für AEM Communities gibt es verschiedene Berichte, auf die von der Autorendatei aus auf verschiedene Weise zugegriffen werden kann.
 
@@ -29,7 +29,7 @@ Die verschiedenen Berichte sind im Allgemeinen:
 
 * [Zuweisungsbericht](#assignments-report)
 
-   For an [enablement community](/help/communities/overview.md#enablement-community), provides an overview of learners&#39; progress on their assignments, including an associated score if implementing the SCORM standard.
+   Für eine [Aktivierungs-Community](/help/communities/overview.md#enablement-community) gibt es einen Überblick über den Fortschritt der Lernenden bei der Zuweisung, einschließlich eines zugehörigen Ergebnisses bei der Implementierung des SCORM-Standards.
 
 * [Ansichtsbericht](#views-report)
 
@@ -37,17 +37,17 @@ Die verschiedenen Berichte sind im Allgemeinen:
 
 * [Post-Bericht](#posts-report)
 
-   Provides a chart of various types of posts by community members to any community site.
+   Bietet ein Diagramm mit verschiedenen Beitragstypen von Community-Mitgliedern zu jeder Community-Site.
 
-When [Adobe Analytics is enabled](/help/communities/sites-console.md#analytics), reports will include the number of views, plays, comments and ratings for each enablement resource over time.
+Wenn [Adobe Analytics aktiviert ist, enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Laufe der Zeit.](/help/communities/sites-console.md#analytics)
 
 Tabuläre Berichte können zur anschließenden Verarbeitung im .csv-Format exportiert werden.
 
-## Reporting Consoles {#reporting-consoles}
+## Berichte-Konsolen {#reporting-consoles}
 
-### Reports for Community Sites {#reports-for-community-sites}
+### Berichte für Community-Sites {#reports-for-community-sites}
 
-* From global navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Reports]**
+* Aus globaler Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Berichte]**
 
 * Wählen Sie aus:
 
@@ -59,7 +59,7 @@ Tabuläre Berichte können zur anschließenden Verarbeitung im .csv-Format expor
       * Erstellen Sie einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum.
    * **[!UICONTROL Ansichtsbericht]**
 
-      * generate a report for selected Community Site, Content Type, and Time Period.
+      * einen Bericht für die ausgewählte Community-Site, den Inhaltstyp und den Zeitraum erstellen.
 
 
 
@@ -71,9 +71,9 @@ Tabuläre Berichte können zur anschließenden Verarbeitung im .csv-Format expor
 
 * Wählen Sie eine vorhandene Community-Site für die Aktivierung aus:
 
-   * Select **Report** icon to generate reports which cover all enablement resources.
+   * Klicken Sie auf das Symbol **Bericht**, um Berichte zu erstellen, die alle Aktivierungsressourcen abdecken.
    * Wählen Sie einen Lernpfad für die Aktivierung aus.
-   * Klicken Sie auf das Symbol **Bericht** , um Berichte zu erstellen für:
+   * Klicken Sie auf das Symbol **Bericht**, um Berichte zu erstellen für:
 
       * Die im Lieferumfang enthaltenen Aktivierungsressourcen.
       * Die Lernenden, die dem Lernpfad zugewiesen sind.
@@ -94,7 +94,7 @@ Weitere Informationen finden Sie im Abschnitt [Berichte](/help/communities/resou
 
 Die Konsole &quot;Zuweisungen&quot;ermöglicht das Filtern von Berichten nach der Aktivierung der Community-Site, Benutzern oder Gruppen und der Zuweisung.
 
-The report provides information on their progress as well as any comments or ratings provided.
+Der Bericht enthält Informationen über ihre Fortschritte sowie Kommentare und Bewertungen.
 
 ![auftragsbericht](assets/assignment-report.png)
 
@@ -105,7 +105,7 @@ Wählen Sie die Kriterien für den Bericht aus:
    Wählen Sie eine Community-Site für die Aktivierung aus.
 
 * **Benutzer oder Gruppe**
-   * Select User to generate a report for one learner.
+   * Wählen Sie Benutzer, um einen Bericht für einen Lernenden zu erstellen.
    * Wählen Sie Gruppe, um einen Bericht für eine Gruppe von Lernenden zu erstellen.
 
    Der Tunneldienst greift von der Umgebung zur Veröffentlichung auf Mitglieder und Mitgliedergruppen zu.
@@ -114,17 +114,17 @@ Wählen Sie die Kriterien für den Bericht aus:
 
    Wählen Sie aus den den den ausgewählten Lernenden zugewiesenen Ressourcen.
 
-Select **Generate** to create the report:
+Wählen Sie **Generate**, um den Bericht zu erstellen:
 
 ![generate-report](assets/generate-assignment-report.png)
 
 ## Ansichtsbericht {#views-report}
 
-The Views console allows reports to be generated on page views by community feature(s) for a given time period.
+Die Konsole &quot;Ansichten&quot;ermöglicht die Erstellung von Berichten auf Ansichten durch Community-Funktionen für einen bestimmten Zeitraum.
 
-![view-report](assets/view-report.png)
+![ansicht-Bericht](assets/view-report.png)
 
-Select the criteria for the report:
+Wählen Sie die Kriterien für den Bericht aus:
 
 * **[!UICONTROL Website]**
 
@@ -143,7 +143,7 @@ Select the criteria for the report:
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Generieren]** , um den Bericht zu erstellen.
+Wählen Sie **[!UICONTROL Generate]**, um den Bericht zu erstellen.
 
 ![generate-Ansichten](assets/generate-views.png)
 
@@ -172,7 +172,7 @@ Wählen Sie die Kriterien für den Bericht aus:
    * Letzte 90 Tage
    * Letztes Jahr
 
-Wählen Sie **[!UICONTROL Generieren]** , um den Bericht zu erstellen.
+Wählen Sie **[!UICONTROL Generate]**, um den Bericht zu erstellen.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -182,8 +182,8 @@ Wählen Sie **[!UICONTROL Generieren]** , um den Bericht zu erstellen.
 
 Wenn keine Community-Sites aufgelistet sind, stellen Sie sicher, dass Adobe Analytics für eine Site aktiviert wurde. Wenn Sie Berichte zu Zuweisungen auswählen, stellen Sie sicher, dass sich die Zuweisungsfunktion in der Struktur der Community-Site befindet.
 
-### Berichte werden nicht in der AEM Author-Instanz angezeigt {#reports-do-not-show-in-aem-author-instance}
+### Berichte werden nicht in der AEM-Autoreninstanz {#reports-do-not-show-in-aem-author-instance} angezeigt
 
-Wenn Berichte nicht in der AEM Author-Instanz angezeigt werden, prüfen Sie, ob Anpassungen vorgenommen wurden, z. B. die URL-Zuordnung in der Veröffentlichungsinstanz. If URL mapping is done only on AEM Publish instance of the communities site, ensure that the same has been configured in AEM Author instance in **Site Trend Report Social Component Factory** configuration.
+Wenn Berichte nicht in der AEM Author-Instanz angezeigt werden, prüfen Sie, ob Anpassungen vorgenommen wurden, z. B. die URL-Zuordnung in der Veröffentlichungsinstanz. Wenn die URL-Zuordnung nur auf der AEM Publish-Instanz der Communities-Site erfolgt, stellen Sie sicher, dass dasselbe in der AEM Author-Instanz in der Konfiguration **Site-Trendbericht Social-KomponentenFactory** konfiguriert wurde.
 
-![URL mapping on AEM Author](assets/sitetrend.png)
+![URL-Zuordnung in AEM Authoring](assets/sitetrend.png)
