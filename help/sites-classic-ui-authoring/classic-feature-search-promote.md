@@ -12,6 +12,9 @@ discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 93%
 
 ---
 
@@ -40,7 +43,7 @@ Facetten werden auf dem Search&amp;Promote-Server konfiguriert, genau wie die vo
    <td>Anzeige von Bannerwerbung. Banner werden auf Grundlage der Daten ausgewählt, die von Search&amp;Promote erfasst werden.<br /> </td>
   </tr>
   <tr>
-   <td>Breadcrumbs</td>
+   <td>Breadcrumb</td>
    <td>Zeigt den Suchbegriff und die Reihenfolge der Filter an, die der Benutzer auf Suchergebnisse angewendet hat.</td>
   </tr>
   <tr>
@@ -89,11 +92,11 @@ Sie können die folgenden Komponenteneigenschaften im Bearbeitungsmodus konfigur
 * Vorherige/Nächste ausblenden: Legt fest, ob Benutzer zu Ergebnisseiten relativ zur aktuellen Seite navigieren können.
 * „Alle anzeigen“ ausblenden: Legt fest, ob Benutzer alle Suchergebnisse auf einer einzigen Seite zusammenfassen können. In der Regel erfolgt die Nutzung von Serverressourcen bei Daten mit Seitenaufteilung effizienter. Wählen Sie diese Option aus, um die Übertragung großer Datenmengen in einer einzelnen Antwortmeldung zu verhindern.
 
-### Aktivieren der Filterung von Ergebnissen durch Facetten {#enabling-the-filtering-of-results-by-facets}
+### Aktivieren der Filterung von Ergebnissen durch Facetten  {#enabling-the-filtering-of-results-by-facets}
 
-Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components enable users to select one or more facets for filtering. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **Breadcrumbs** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
+Sie können Benutzern die Filterung von Suchergebnissen durch Facetten ermöglichen. Die Komponenten **Facette für die Liste des Kontrollkästchens**, **Dropdown-Facette** und **Facet der Liste verknüpfen** ermöglichen es dem Benutzer, eine oder mehrere Facetten zum Filtern auszuwählen. Bei Verwendung dieser Komponenten sollten Sie auch die Komponente **Breadcrumbs** einschließen. Breadcrumbs zeigen die aktuell verwendeten Filter an.
 
-The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components each have the following properties that you configure in **Edit** mode:
+Die Komponenten **Checkbox-Liste**, **Dropdown-Facet** und **Link-Liste-Facet** verfügen jeweils über die folgenden Eigenschaften, die Sie im Modus **Bearbeiten** konfigurieren:
 
 * **Facettenname**: Der Name der zur Filterung verwendeten Facette.
 
@@ -126,7 +129,7 @@ Sie können die folgenden Eigenschaften für Breadcrumbs im Bearbeitungsmodus ko
 * Trennzeichen: Definieren Sie das Zeichen oder die Zeichenfolge für die Verwendung als Trennzeichen zwischen den einzelnen Breadcrumbs. Für das Feld „Trennzeichen“ ist jede beliebige Zeichenfolge als Eingabe zulässig. Die Standardeinstellung ist: „>“ (ohne die Anführungszeichen)
 * Nachfolgende Trennzeichen: Definieren Sie ein Zeichen oder eine Zeichenfolge für die Anzeige am Ende der Breadcrumbs. Für das Feld „Nachfolgende Trennzeichen“ ist jede beliebige Zeichenfolge als Eingabe zulässig. Die Standardeinstellung hierfür ist *leer* (d. h. am Ende der Breadcrumb-Zeile wird nichts angezeigt).
 
-### Hinzufügen von Suchfeldern {#adding-search-boxes}
+### Hinzufügen von Suchfeldern  {#adding-search-boxes}
 
 Mit der Suchkomponente können Kunden Suchvorgänge auf Grundlage von Suchbegriffen durchführen. Fügen Sie Suchkomponenten zu jeder Seite hinzu, auf der die Suchfunktion verfügbar sein soll.
 
@@ -139,7 +142,7 @@ Konfigurieren Sie die folgenden Eigenschaften im Bearbeitungsmodus, um das Verha
 
 ### Hinzufügen von Bannern {#adding-banners}
 
-Die Komponente &quot;Banner&quot;zeigt Bannerwerbung entsprechend den Search&amp;Promote-Suchvorgängen des Kunden an. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
+Die Bannerkomponente zeigt Bannerwerbung entsprechend den Search&amp;Promote des Kunden an. Logik auf dem Search&amp;Replace-Server ermittelt, welches Banner angezeigt wird. Beispielsweise könnte bei einer Suche nach Jeans ein Banner angezeigt werden, das mit Mode zu tun hat. Durch Filtern auf die Herrenabteilung könnte die Auswahl des Banners noch weiter verfeinert werden.
 
 Die Komponente „Banner“ weist die konfigurierbare Eigenschaft „Banner-Bereich“ auf. Klicken Sie im Bearbeitungsmodus auf einen der Eigenschaftswerte, um die Darstellungsweise des Banners festzulegen. Der Search&amp;Promote-Service legt die Liste der Werte fest, aus denen Sie auswählen können.
 
