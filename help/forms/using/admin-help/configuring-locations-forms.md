@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 75%
 
 ---
 
@@ -47,7 +50,7 @@ Wenn ein Abhängigkeitspfad absolut ist, wird der Basis-URL-Wert ignoriert. Ande
 
 `https://<host name>:<port>/FormServer`
 
-Where `host name`and `port` are the server name and port number of the server that is hosting the Forms web application.
+Dabei sind `host name`und `port` der Servername und die Anschlussnummer des Servers, auf dem die Forms-Webanwendung gehostet wird.
 
  Der Standardwert ist eine leere Zeichenfolge.
 
@@ -59,7 +62,7 @@ Where `host name`and `port` are the server name and port number of the server th
 
  Der Standardwert ist eine leere Zeichenfolge.
 
-**XCI-Konfigurations-URI:** Der relative oder absolute Speicherort, an dem die für die Wiedergabe verwendete XCI-Datei gefunden wird. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet. 
+**XCI Configuration URI:** Der relative oder absolute Speicherort, an dem die für die Wiedergabe verwendete XCI-Datei gefunden wird. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet. 
 
 Der Standardwert ist `com/adobe/formServer/PA/pa.xci`.
 
@@ -73,19 +76,19 @@ Im Folgenden finden Sie ein Beispiel für einen Eintrag in der Schriftartzuordnu
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Seed-PDF-Datei:** Die erste PDF-Datei, die in einer PDFForm-Transformation zur Optimierung des Versands verwendet wird. Die Seed-PDF-Datei ist eine angepasste PDF-Datei (die nur XFA-Stream-, Bild- und Schriftartressourcen enthält), die dem Formularentwurf und den Formulardaten angehängt wird. Das Formular wird in Acrobat 7 oder höher wiedergegeben und findet bei der PDFForm-Transformation Anwendung. 
+**Seed-PDF-Datei:** Die ursprüngliche PDF-Datei, die in einer PDFForm-Transformation zur Optimierung des Versands verwendet wird. Die Seed-PDF-Datei ist eine angepasste PDF-Datei (die nur XFA-Stream-, Bild- und Schriftartressourcen enthält), die dem Formularentwurf und den Formulardaten angehängt wird. Das Formular wird in Acrobat 7 oder höher wiedergegeben und findet bei der PDFForm-Transformation Anwendung. 
 
 Der Standardwert ist eine leere Zeichenfolge.
 
-**Cache-Speicherort:** Gibt den Speicherort des Forms-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
+**Cache-Speicherort:** Gibt den Speicherort des Forms-Datenträgercache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
 
-**Standardspeicherort:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
+**Standardposition:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
-* **JBoss:** [JBoss-Startseite]\server\[Installationstyp]\svcdata\FormServer\Cache
-* **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[AEM-Forms-Domänenname]\adobe\[Name des Formularservers]\FormServer\Cache
+* **JBoss:** [JBoss Home]\server\[Installationstyp]\svcdata\FormServer\Cache
+* **WebLogic:** [WebLogic Home]\user_projects\domains\[Name der AEM-Forms-Domäne]\adobe\[Name des Formularservers]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC Temp Directory:** Der Cache wird in einem Unterordner des temporären Ordners von AEM Forms erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. The subdirectory is named adobeform_[servername].
+**LC Temp Directory:** Der Cache wird in einem Unterordner des temporären Ordners für AEM Formulare erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. Der Unterordner heißt adobeform_[servername].
 
 >[!NOTE]
 >
