@@ -14,13 +14,16 @@ pagetitle: Deploying eCommerce with Demandware
 redirecttarget: https //github.com/adobe/commerce-salesforce
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 66%
 
 ---
 
 
 # Salesforce Commerce Cloud{#salesforce-commerce-cloud}
 
-Die Bereitstellung der erforderlichen eCommerce-Pakete bietet die volle Funktionalität des eCommerce-Frameworks sowie eine Referenzimplementierung der eCommerce-Funktionalität, wie sie mit einer Salesforce Commerce Cloud/Demandware-Implementierung (einschließlich eines Demonstrationskatalogs) bereitgestellt wird.
+Die Bereitstellung der erforderlichen eCommerce-Pakete bietet die volle Funktionalität des eCommerce-Frameworks sowie eine Referenz-Implementierung der eCommerce-Funktionalität, wie sie mit einer Salesforce-Commerce Cloud-/Demandware-Implementierung (einschließlich eines Demonstrationskatalogs) bereitgestellt wird.
 
 ## Für eCommerce mit Salesforce Commerce Cloud benötigte Pakete {#packages-needed-for-ecommerce-with-salesforce-commerce-cloud}
 
@@ -43,16 +46,16 @@ Zur Installation der eCommerce-Funktionalität benötigen Sie:
 Um AEM mit einer Demandware Commerce-Integrationskonfiguration (mithilfe des Demonstrationskatalogs Geometrixx Outdoors) zu installieren, gehen Sie folgendermaßen vor:
 
 1. [Installieren Sie AEM](/help/sites-deploying/deploy.md).
-1. Install the content package using the [package manager](/help/sites-administering/package-manager.md):
+1. Installieren Sie das Inhaltspaket mit dem [Paketmanager](/help/sites-administering/package-manager.md):
 1. [Erstellen](/help/sites-authoring/page-authoring.md) Sie etwaige zusätzliche Seiten, die Sie in AEM benötigen.
 
 >[!NOTE]
 >
->To download the packages, navigate to [Package Share](/help/sites-administering/package-manager.md#package-share).
+>Um die Pakete herunterzuladen, navigieren Sie zu [Package Share](/help/sites-administering/package-manager.md#package-share).
 
 Die Serververbindung zwischen AEM und der Demandware-Sandbox muss konfiguriert werden. Die meisten Konfigurationen sind bereits so vorkonfiguriert, dass sie mit dem bereitgestellten SiteGenisis-Demoinhaltspaket unter Verwendung von Standardpfaden, Bibliotheken usw. funktionieren. Wenn der Connector mit anderen Websites und Bibliotheken verwendet wird, müssen Sie diese Konfiguration aktualisieren.
 
-1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Navigieren Sie zu [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Klicken Sie auf **Demandware Client**.
 1. Geben Sie die **IP-Adresse für den Instanzenendpunkt oder den Hostnamen** ein.
 
@@ -68,7 +71,7 @@ Die Serververbindung zwischen AEM und der Demandware-Sandbox muss konfiguriert w
 
 #### Replikation {#replication}
 
-The replication should be enabled after the package installation, you can verify that here: [https://localhost:4502/etc/replication/agents.author/demandware.html](https://localhost:4502/etc/replication/agents.author/demandware.html)
+Die Replikation sollte nach der Paketinstallation aktiviert sein. Sie können hier überprüfen, ob: [https://localhost:4502/etc/replication/agents.author/demandware.html](https://localhost:4502/etc/replication/agents.author/demandware.html)
 
 >[!NOTE]
 >
@@ -80,14 +83,14 @@ Der OAuth-Client ist so konfiguriert, dass er mit einer Demandware-Sandbox-Insta
 
 Für Staging- und Produktionssysteme müssen die OAuth-Clients mit der entsprechenden Client-ID und einem Passwort konfiguriert werden.
 
-1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Click **Demandware Access Token provider**.
+1. Navigieren Sie zu [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Klicken Sie auf **Demandware Zugriffstoken Provider**.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
 1. Ändern Sie die Werte nach Bedarf und klicken Sie auf **Speichern**.
 
-### Salesforce Commerce Cloud-Sandbox {#salesforce-commerce-cloud-sandbox}
+### Salesforce Commerce Cloud-Sandbox  {#salesforce-commerce-cloud-sandbox}
 
 Die Demandware-Sandbox muss so konfiguriert werden, dass die neue Vorlagen-Engine „Velocity“ ausgeführt werden kann.
 
@@ -95,15 +98,15 @@ Die Demandware-Sandbox muss so konfiguriert werden, dass die neue Vorlagen-Engin
 >
 >Der folgende Assistent ist nicht Teil des AEM Demandware Connectors. Er wird im Rahmen des Demo-Inhaltspakets bereitgestellt, um die rasche Einrichtung der SiteGenesis-Demoseiten zu ermöglichen.
 
-1. Navigate to [https://localhost:4502/etc/demandware/init.html](https://localhost:4502/etc/demandware/init.html).
+1. Navigieren Sie zu [https://localhost:4502/etc/demandware/init.html](https://localhost:4502/etc/demandware/init.html).
 1. Klicken Sie auf **Edit**.
 1. Überprüfen Sie die Werte und klicken Sie auf **OK**.
 1. Klicken Sie auf **Initialize**.
-1. Go to the WebDAV folder and check for published template files, for example under `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Dynamic/SiteGenesis`.
+1. Wechseln Sie zum Ordner WebDAV und suchen Sie nach veröffentlichten Vorlagendateien, z. B. unter `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Dynamic/SiteGenesis`.
 
    >[!NOTE]
    >
-   >The extension will be `.vs`.
+   >Die Erweiterung ist `.vs`.
 
-1. Check also for exported JS and CSS files, for example under `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Libraries/SiteGenesisSharedLibrary`.
+1. Überprüfen Sie auch, ob exportierte JS- und CSS-Dateien vorhanden sind, z. B. unter `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Libraries/SiteGenesisSharedLibrary`.
 
