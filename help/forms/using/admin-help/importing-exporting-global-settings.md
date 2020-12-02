@@ -41,7 +41,7 @@ Im Anschluss an den Export der Datei mit den globalen Einstellungen können Sie 
 1. Klicken Sie unter dem Feld „Suchvorlagendefinition importieren“ auf „Datei auswählen“, und wählen Sie die Suchvorlage aus. Sie können nur Suchvorlagendefinitionen importieren, die ursprünglich aus einer Instanz von Workspace exportiert wurden.
 1. Klicken Sie auf „Importieren“.
 
-## Eine Suchvorlagendefinition exportieren {#export-a-search-template-definition}
+## Eine Suchvorlagendefinition exportieren  {#export-a-search-template-definition}
 
 1. Klicken Sie auf der Seite „Globale Verwaltung“ unter „Suchvorlagendefinition exportieren“ auf „Alles auflisten“.
 1. Wählen Sie in der Liste der Suchvorlagen die zu exportierende Vorlage aus.
@@ -52,17 +52,17 @@ Im Anschluss an den Export der Datei mit den globalen Einstellungen können Sie 
 
 1. Klicken Sie auf „Exportieren“ und speichern Sie die Datei auf Ihrem Computer.
 
-## Globale Einstellungen importieren {#import-global-settings}
+## Globale Einstellungen importieren  {#import-global-settings}
 
 1. Klicken Sie auf der Seite „Globale Verwaltung“ unter „Globale Einstellungen importieren“ auf „Datei auswählen“, und wählen Sie die globale Einstellungsdatei aus. Die Datei mit den globalen Einstellungen muss im XML-Format vorliegen.
 1. Klicken Sie auf „Importieren“.
 
-## Globale Einstellungen exportieren {#export-global-settings}
+## Globale Einstellungen exportieren  {#export-global-settings}
 
 1. Klicken Sie auf der Seite „Globale Verwaltung“ unter „Globale Einstellungen exportieren“ auf „Exportieren“.
 1. Speichern Sie die Datei auf Ihrem Computer.
 
-## Globale Einstellungen für Workspace {#workspace-global-settings}
+## Globale Einstellungen für Workspace  {#workspace-global-settings}
 
 Sie können die Datei mit den globalen Einstellungen ändern, sollten jedoch nur die Einstellungen „JChannelConnectionProperties“, „formViewOnly“ und „specialRoutes“ bearbeiten.
 
@@ -72,27 +72,27 @@ Sie können die Datei mit den globalen Einstellungen ändern, sollten jedoch nur
 
 Die Datei mit den globalen Einstellungen für Workspace enthält folgende Einstellungen:
 
-### Einstellungen unter „specialRoutes“ {#specialroutes-settings}
+### Einstellungen unter „specialRoutes“  {#specialroutes-settings}
 
 Die Einstellungen unter *specialRules* geben die Eigenschaften der Sonderrouten („Genehmigen“ und „Ablehnen“) in Workspace an. Unter bestimmten Umständen werden die Schaltflächen für diese Routen auf den Aufgabenkarten in Workspace angezeigt, so dass sie der Benutzer auswählen kann, ohne das Formular zu öffnen. Sie können die Einstellungen unter „specialRoutes“ in der Datei mit den globalen Einstellungen ändern, um benutzerdefinierte Namen für das Genehmigen oder Ablehnen hinzuzufügen oder zusätzliche Routen zu erstellen.
 
-**client_specialRoutes_routes_approval_style:** Der Name des Stils, der sich im Workspace-Design befindet und die Symbole für die Genehmigungsschaltfläche angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden:
+**client_specialRoutes_routes_approval_style:** Der Name des Stils, der sich im Workspace-Design befindet und die Symbole für die Schaltfläche &quot;Genehmigen&quot;identifiziert. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden:
 ` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Die CCS-Datei von Workspace ist in die Datei „workspace-theme.swf“ eingebettet, die in der Datei „adobe-workspace-client.ear > adobe-workspace-client.war“ enthalten ist. Um das Erscheinungsbild von Workspace zu ändern, müssen Sie die Datei „workspace-theme.swf“ erneut kompilieren.
 
-**client_specialRoutes_routes_deny_names:** Die verschiedenen Zeichenfolgen, die ein Workbench-Benutzer verwenden kann, um als &quot;Ablehnen&quot;interpretiert zu werden. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise Ablehnen. Wenn der Workspace-Benutzer das Wort Ablehnen in einem Prozess verwendet, wird es nicht erkannt. Der Begriff Ablehnen muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
+**client_specialRoutes_routes_deny_names:** Die Vielzahl von Zeichenfolgen, die ein Workbench-Benutzer verwenden kann, um als &quot;Ablehnen&quot;interpretiert zu werden. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise Ablehnen. Wenn der Workspace-Benutzer das Wort Ablehnen in einem Prozess verwendet, wird es nicht erkannt. Der Begriff Ablehnen muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
 
-**client_specialRoutes_routes_deny_style:** Der Name des Stils, der sich in der Workspace-Designdatei befindet, die die Symbole für die Schaltfläche &quot;Ablehnen&quot;angibt. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden:
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approval_names:** Die verschiedenen Zeichenfolgen, die ein Workbench-Benutzer verwenden kann, um als &quot;Genehmigen&quot;interpretiert zu werden. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise genehmigen. Wenn der Workspace-Benutzer das Wort Genehmigen in einem Prozess verwendet, wird es nicht erkannt. Der Begriff Genehmigen muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
+**client_specialRoutes_routes_deny_style:** Der Name des Stils, der sich in der Designdatei von Workspace befindet und die Symbole für die Schaltfläche &quot;Ablehnen&quot;identifiziert. Der Stil muss Werte für ein aktiviertes und ein deaktiviertes Symbol enthalten. Zum Definieren eines Stils für eine benutzerdefinierte Schaltfläche müssen Sie die folgende Vorlage verwenden: 
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approval_names:** Die Vielzahl von Zeichenfolgen, die ein Workbench-Benutzer verwenden kann, um als &quot;Genehmigen&quot;interpretiert zu werden. Bei den Zeichenfolgen muss die Groß-/Kleinschreibung beachtet werden. Der Standardwert lautet beispielsweise genehmigen. Wenn der Workspace-Benutzer das Wort Genehmigen in einem Prozess verwendet, wird es nicht erkannt. Der Begriff Genehmigen muss dieser Einstellung hinzugefügt werden, damit die Routenschaltfläche angepasst und mit dem Stil versehen wird.
 
-**client_specialRoutes_names:** Die Schlüssel, mit denen der benutzerdefinierte Zeichenfolgenwert aus den Ressourcendateien gefunden wird. Jeder Eintrag in diesen Einstellungen muss die Werte für die Namen und den Stil umfassen.
+**client_specialRoutes_names:** Die Schlüssel zum Suchen des benutzerdefinierten Zeichenfolgenwerts aus den Ressourcendateien. Jeder Eintrag in diesen Einstellungen muss die Werte für die Namen und den Stil umfassen.
 
-### JGroup-Einstellungen {#jgroup-settings}
+### JGroup-Einstellungen  {#jgroup-settings}
 
 Diese Einstellungen werden nur angezeigt, wenn Sie Adobe LiveCycle ES2.5 oder früher aktualisiert haben.
 
-**server_remoteevents_ClientTimeoutMilliseconds:** Die maximale Zeit, die die JGroup auf Ereignis-Nachrichten wartet. Diese Einstellung sollte nicht geändert werden.
+**server_remoteevents_ClientTimeoutMilliseconds:** Die maximale Zeit, die die JGroup auf Ereignis-Meldungen wartet. Diese Einstellung sollte nicht geändert werden.
 
-**server_remoteevents_ServerTimeoutMilliseconds:** Der Timeout für den Empfang von JGroup-Nachrichten auf dem Server. Diese Option legt die Verzögerung zum Senden von Meldungen vom Server an den Client fest.
+**server_remoteevents_ServerTimeoutMilliseconds:** Die Zeitüberschreitung zum Empfangen von JGroup-Nachrichten auf dem Server. Diese Option legt die Verzögerung zum Senden von Meldungen vom Server an den Client fest.
 
 **server_remoteevents_JChannelConnectionProperties:** Die Verbindungseigenschaften für die JGroup, die für die Kommunikation zwischen dem Server (auf dem ein Dienst-Ereignis vom RemoteEvent-Dienst verarbeitet wird) und allen Instanzen von Workspace verwendet werden.
 
@@ -104,15 +104,15 @@ Eventuell müssen Sie die UDP-Werte für die Multicast-IP-Adresse (mcast_addr), 
 
 Die restlichen Eigenschaften dieser Einstellung sollten nicht geändert werden.
 
-**server_remoteevents_JGroupName:** Der Name der JGroup, die für die Kommunikation mit Remote-Ereignissen verwendet wird. Dieser Wert wird nach dem Zufallsprinzip generiert, um Konflikte in Clustern zu vermeiden. Dieser Wert sollte nicht geändert werden.
+**server_remoteevents_JGroupName:** Der Name der JGroup-Gruppe, die für die Remotekommunikation von Ereignissen verwendet wird. Dieser Wert wird nach dem Zufallsprinzip generiert, um Konflikte in Clustern zu vermeiden. Dieser Wert sollte nicht geändert werden.
 
 Weitere Informationen zu JGroups und Workspace finden Sie unter [JGroups and AEM Forms Workspace - Explained.](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html)
 
-### formView-Einstellungen {#formview-settings}
+### formView-Einstellungen  {#formview-settings}
 
 **client_formView_openFormInFullScreen:** Um alle Formulare in Workspace im Vollbildmodus anzuzeigen, stellen Sie diese Option auf true ein. Standardmäßig ist die Einstellung false gewählt und die Formulare werden nicht im Vollbildmodus angezeigt. Beachten Sie, dass der User-Dienst eine Option zum Öffnen des Dokuments, das einer Aufgabe im Vollbildmodus zugeordnet ist, enthält. Damit können Sie die Anzeige auf der Basis pro Prozess steuern.
 
-**client_routes_formViewOnly:** Bei Festlegung auf &quot;True&quot;werden Routen nicht in der Ansicht der Karten oder Listen in Workspace angezeigt. Der Standardwert False bedeutet, dass Routen in der Karten- und Listenansicht angezeigt werden.
+**client_routes_formViewOnly:** Bei Festlegung auf True werden Routen nicht in der Ansicht der Karten oder Listen in Workspace angezeigt. Der Standardwert False bedeutet, dass Routen in der Karten- und Listenansicht angezeigt werden.
 
 ### Andere Einstellungen {#other-settings}
 
@@ -122,13 +122,13 @@ Weitere Informationen zu JGroups und Workspace finden Sie unter [JGroups and AEM
 * `application/msexcel`
 * `application/ms-powerpoint`
 
-**client_customUI_caching:** Zwischenspeichert eine benutzerdefinierte Benutzeroberfläche für Aufgaben.
+**client_customUI_caching:** Zwischenspeichert eine Benutzeroberfläche für benutzerdefinierte Aufgaben.
 
 **server_debugLevel:** Ändern Sie diese Einstellung nicht.
 
-**client_pollingInterval:** Legt das Abfrageintervall (in Sekunden) fest, das in Flex Workspace (für AEM Forms on JEE nicht mehr unterstützt) verwendet wird, um neue und geänderte Aufgaben zu erkennen. Der Standardwert ist 3 Sekunden. Dies ist für AEM Forms Workspace nicht möglich.
+**client_pollingInterval:** Legt das Abrufintervall (in Sekunden) fest, das auf dem Flex Workspace (für AEM Forms on JEE nicht mehr unterstützt) zum Erkennen neuer und geänderter Aufgaben verwendet wird. Der Standardwert ist 3 Sekunden. Dies ist für AEM Forms Workspace nicht möglich.
 
-**client_systemContext_name:** Geben Sie einen benutzerdefinierten Namen (z. B. &quot;Bürger&quot;) an, der im Feld &quot;Hinzugefügt von&quot;(auf der Registerkarte &quot;Anlagen&quot;) für die Anlagen einer Aufgabe in AEM Forms Workspace angezeigt werden soll.
+**client_systemContext_name:** Geben Sie einen benutzerdefinierten Namen (z. B. Bürger) an, der im Feld Hinzugefügt von (auf der Registerkarte Anlagen) für die Anlagen einer Aufgabe in AEM Forms Workspace angezeigt werden soll.
 
 Definieren des benutzerdefinierten Namens:
 
@@ -138,4 +138,4 @@ Definieren des benutzerdefinierten Namens:
 >
 >In der Demoanwendung lautet der standardmäßige Anzeigename **Bürger**. In einer von Ihnen erstellten benutzerdefinierte Anwendung lautet der standardmäßige Anzeigename **Systemkontextkonto**.
 >
->**client_idleTimeout:** Wenn ein Benutzer eine bestimmte Zeit lang inaktiv bleibt, läuft die AEM Forms Workspace-Sitzung ab. Um die Funktion zu aktivieren, fügen Sie unter &quot;Globale Einstellungen&quot;einen Eintrag zu &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout> hinzu. Sie können den Wert 0 angeben, um die Zeitüberschreitung im Leerlauf zu deaktivieren. Die Zeitdauer wird in Sekunden angegeben.
+>**client_idleTimeout:** Wenn ein Benutzer eine bestimmte Zeit lang inaktiv bleibt, läuft die AEM Forms Workspace-Sitzung ab. Um die Funktion zu aktivieren, fügen Sie unter &quot;Globale Einstellungen&quot;&lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout> einen Eintrag hinzu. Sie können den Wert 0 angeben, um die Zeitüberschreitung im Leerlauf zu deaktivieren. Die Zeitdauer wird in Sekunden angegeben.
