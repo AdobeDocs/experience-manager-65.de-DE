@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 84%
 
 ---
 
@@ -23,14 +26,14 @@ AEM bietet verschiedene Prozessschritte für die Erstellung von Workflow-Modelle
 
 Die folgenden Merkmale werden für jeden Prozessschritt beschrieben.
 
-### Java-Klasse oder ECMA-Pfad {#java-class-or-ecma-path}
+### Java-Klasse oder ECMA-Pfad  {#java-class-or-ecma-path}
 
 Prozessschritte werden entweder durch eine Java-Klasse oder ein ECMAScript definiert.
 
 * Bei Java-Klassenprozessen wird der vollqualifizierte Klassenname angegeben.
 * Bei ECMAScript-Prozessen wird der Pfad des Skripts angegeben.
 
-### Nutzlast {#payload}
+### Nutzlast  {#payload}
 
 Die Nutzlast ist die Entität, auf die die Workflow-Instanz reagiert. Die Nutzlast wird implizit durch den Kontext ausgewählt, in dem eine Workflow-Instanz gestartet wird.
 
@@ -42,7 +45,7 @@ Meistens besteht die Nutzlast aus einem JCR-Knoten im Repository (beispielsweise
 
 Einige Workflow-Prozesse akzeptieren Argumente, die der Administrator beim Einrichten des Workflow-Schritts angibt.
 
-Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Beispielsweise zeigt Folgendes an, dass die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren besteht, wobei jedes Paar aus einem Namen (der eine Zeichenfolge ist) und einem Wert besteht, der durch einen Doppelpunkt voneinander getrennt ist:
+Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Beispielsweise zeigt Folgendes an, dass die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren besteht, wobei jedes Paar aus einem Dublette-Doppelpunkt (also einer Zeichenfolge) und einem Wert besteht:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -57,7 +60,7 @@ Nach einer gewissen Zeitüberschreitung funktioniert der Workflow-Schritt nicht 
 
 ### Berechtigungen {#permissions}
 
-The session passed to the `WorkflowProcess` is backed by the service user for the workflow process service, which has the following permissions at the root of the repository:
+Die an `WorkflowProcess` weitergeleitete Sitzung wird vom Dienstbenutzer für den Workflow-Prozessdienst gesichert, der über die folgenden Berechtigungen im Stammordner des Repositorys verfügt:
 
 * `jcr:read`
 * `rep:write`
@@ -65,7 +68,7 @@ The session passed to the `WorkflowProcess` is backed by the service user for th
 * `jcr:lockManagement`
 * `crx:replicate`
 
-If that set of permissions is not sufficient for your `WorkflowProcess` implementation, then it must use a session with the required permissions.
+Wenn dieser Berechtigungssatz für Ihre `WorkflowProcess`-Implementierung nicht ausreicht, muss eine Sitzung mit den erforderlichen Berechtigungen verwendet werden.
 
 Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe der erforderlichen Berechtigungen zu verwenden.
 
@@ -79,7 +82,7 @@ Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe de
 >
 >Eine kurzfristige Lösung ist auch für Abwärtskompatibilitätszwecke verfügbar, wenn Codeänderungen nicht möglich sind:
 >
->* Using the Web Console ( `/system/console/configMgr` locate the **Adobe Granite Workflow Configuration Service**
+>* Suchen Sie mithilfe der Web-Konsole ( `/system/console/configMgr` den **Adobe Granite Workflow Configuration Service**
    >
    >
 * Aktivieren Sie den **Legacymodus des Workflow-Prozesses**.
@@ -95,7 +98,7 @@ Die folgenden Prozesse wirken sich nicht auf Inhalte aus. Sie dienen der Steueru
 
 Der Prozess `AbsoluteTimeAutoAdvancer` (automatisches Voranschreiten für absolute Uhrzeit) verhält sich wie **AutoAdvancer**. Ausnahme ist, dass die Zeitüberschreitung nach einer bestimmten Zeit und einem gewissen Datum anstelle einer entsprechenden Dauer eintritt.
 
-* **Java-Klasse**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Java-Klasse**:  `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Nutzlast**: Keine.
 * **Argumente**: Keine.
 * **Zeitüberschreitung**: Zeitüberschreitung nach festgelegter Zeit und festgelegtem Datum.
@@ -104,7 +107,7 @@ Der Prozess `AbsoluteTimeAutoAdvancer` (automatisches Voranschreiten für absolu
 
 Der `AutoAdvancer`-Prozess bringt den Workflow automatisch zum nächsten Schritt. Falls mehr als nur ein nächster Schritt möglich ist (beispielsweise bei einer ODER-Teilung), bringt der Prozess den Workflow auf der *Standardroute* voran. Wurde keine Standardroute festgelegt, wird der Workflow nicht vorangebracht.
 
-* **Java-Klasse**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Java-Klasse**:  `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Nutzlast**: Keine.
 * **Argumente**: Keine.
@@ -114,7 +117,7 @@ Der `AutoAdvancer`-Prozess bringt den Workflow automatisch zum nächsten Schritt
 
 Der `ProcessAssembler`-Prozess führt mehrere Teilprozesse nacheinander in einem einzigen Workflow-Schritt aus. Erstellen Sie für die Nutzung des `ProcessAssembler`-Prozesses einen einzelnen entsprechenden Schritt im Workflow und legen Sie die Argumente so fest, dass sie die Namen und Argumente der auszuführenden Teilprozesse angeben.
 
-* **Java-Klasse**: `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Java-Klasse**:  `com.day.cq.workflow.impl.process.ProcessAssembler`
 
 * **Nutzlast**: DAM-Asset, AEM-Seite oder keine Nutzlast (je nach Anforderungen der Teilprozesse).
 * **Argumente**:
@@ -152,15 +155,15 @@ Die folgenden Prozesse führen einfache Aufgaben durch oder dienen als Beispiel.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+>Der Grund dafür ist, dass der Inhalt von `/libs` beim nächsten Aktualisieren der Instanz überschrieben wird (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
 ### Löschen Sie {#delete}
 
 Das Element unter dem angegebenen Pfad wird gelöscht.
 
-* **ECMAScript-Pfad**: `/libs/workflow/scripts/delete.ecma`
+* **ECMAScript-Pfad**:  `/libs/workflow/scripts/delete.ecma`
 
 * **Nutzlast**: JCR-Pfad
 * **Argumente**: Keine
@@ -170,7 +173,7 @@ Das Element unter dem angegebenen Pfad wird gelöscht.
 
 Dies ist der Null-Prozess. Es wird kein Vorgang ausgeführt, jedoch eine Debugmeldung protokolliert.
 
-* **ECMAScript-Pfad**: `/libs/workflow/scripts/noop.ecma`
+* **ECMAScript-Pfad**:  `/libs/workflow/scripts/noop.ecma`
 
 * **Nutzlast**: Keine
 * **Argumente**: Keine
@@ -178,9 +181,9 @@ Dies ist der Null-Prozess. Es wird kein Vorgang ausgeführt, jedoch eine Debugme
 
 ### rule-false {#rule-false}
 
-This is a null process that returns `false` on the `check()` method.
+Dies ist ein Null-Prozess, der `false` für die `check()`-Methode zurückgibt.
 
-* **ECMAScript-Pfad**: `/libs/workflow/scripts/rule-false.ecma`
+* **ECMAScript-Pfad**:  `/libs/workflow/scripts/rule-false.ecma`
 
 * **Nutzlast**: Keine
 * **Argumente**: Keine
@@ -190,7 +193,7 @@ This is a null process that returns `false` on the `check()` method.
 
 Ein Muster-ECMAScript-Prozess.
 
-* **ECMAScript-Pfad**: `/libs/workflow/scripts/sample.ecma`
+* **ECMAScript-Pfad**:  `/libs/workflow/scripts/sample.ecma`
 
 * **Nutzlast**: Keine
 * **Argumente**: Keine
@@ -200,7 +203,7 @@ Ein Muster-ECMAScript-Prozess.
 
 Einfacher Workflow-Prozess, der die angegebene URL aufruft. Für gewöhnlich ist die URL ein Verweis auf ein JSP (oder ein anderes entsprechendes Servlet), das eine einfache Aufgabe ausführt. Dieser Prozess sollte nur während der Entwicklung und für Demonstrationen verwendet werden, nicht in einer Produktionsumgebung. Die Argumente legen die URL, die Anmeldedaten und das Kennwort fest.
 
-* **ECMAScript-Pfad**: `/libs/workflow/scripts/urlcaller.ecma`
+* **ECMAScript-Pfad**:  `/libs/workflow/scripts/urlcaller.ecma`
 
 * **Nutzlast**: Keine
 * **Argumente**:
@@ -220,9 +223,9 @@ Beispiel: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 Sperrt die Nutzlast des Workflows.
 
-* **** Java-Klasse: `com.day.cq.workflow.impl.process.LockProcess`
+* **Java-Klasse:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **** Nutzlast: JCR_PATH und JCR_UUID
+* **Payload:** JCR_PATH und JCR_UUID
 * **Argumente:** Keine
 * **Zeitüberschreitung:** Ignoriert
 
@@ -235,9 +238,9 @@ Unter folgenden Bedingungen ist der Schritt nicht wirksam:
 
 Entsperrt die Nutzlast des Workflows.
 
-* **** Java-Klasse: `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Java-Klasse:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **** Nutzlast: JCR_PATH und JCR_UUID
+* **Payload:** JCR_PATH und JCR_UUID
 * **Argumente:** Keine
 * **Zeitüberschreitung:** Ignoriert
 
@@ -250,7 +253,7 @@ Unter folgenden Bedingungen ist der Schritt nicht wirksam:
 
 Der folgende Prozess führt eine versionsbezogene Aufgabe aus.
 
-### CreateVersionProcess {#createversionprocess}
+### CreateVersionProcess  {#createversionprocess}
 
 Erstellt eine neue Version der Workflow-Nutzlast (AEM-Seite oder DAM-Asset).
 
