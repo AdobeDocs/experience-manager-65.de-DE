@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 translation-type: tm+mt
 source-git-commit: 66f46a34832254af74c72da16ec8ebe3eb8cd46d
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 79%
 
 ---
 
@@ -19,15 +22,15 @@ AEM Assets unterstützt statische und dynamische Ausgabeformate (DM-kodierte Aus
 
 Statische Ausgabeformate werden nativ mit FFMPEG (im Systempfad installiert und verfügbar) generiert und im Inhalts-Repository gespeichert.
 
-Die DM-kodierten Darstellungen werden im Proxyserver gespeichert und zur Laufzeit bereitgestellt.
+Die DM-kodierten Ausgabeformate werden im Proxyserver gespeichert und zur Laufzeit bereitgestellt.
 
-AEM Assets bietet Wiedergabeunterstützung für diese Ausgabeformate auf Clientseite.
+AEM Assets bietet Wiedergabeunterstützung für diese Ausgabeformate auf Client-Seite.
 
-Um die Darstellungen eines bestimmten Video-Assets anzuzeigen, öffnen Sie dessen Asset-Seite und tippen Sie auf das Symbol für globale Navigation. Then, choose **[!UICONTROL Renditions]** from the list.
+Um die Ausgabeformate eines bestimmten Video-Assets anzuzeigen, öffnen Sie die entsprechende Asset-Seite und klicken oder tippen Sie auf das GlobalNav-Symbol. Wählen Sie dann **[!UICONTROL Ausgabeformate]** aus der Liste aus.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-Die Liste mit Videoausgabeformaten wird im Bereich **[!UICONTROL Ausgabeformate]** angezeigt.
+Die Liste mit Videoausgabeformate wird im Bereich **[!UICONTROL Wiedergaben]** angezeigt.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
@@ -39,6 +42,6 @@ Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, könne
 
 >[!NOTE]
 >
->Die Audiowiedergabe funktioniert nicht bei OGG- und WAV-Dateien in Microsoft Internet Explorer 11. An error `Invalid Source` displays up on the asset details page for assets with extension OGG or WAV.
+>Die Audiowiedergabe funktioniert nicht bei OGG- und WAV-Dateien in Microsoft Internet Explorer 11. Der Fehler `Invalid Source` wird auf der Seite mit den Asset-Details für Assets mit der Erweiterung OGG oder WAV angezeigt.
 >
 >Auf MS Edge- und iPad-Geräten werden OGG-Dateien nicht abgespielt und es wird ein Fehler im nicht unterstützten Format ausgegeben.
