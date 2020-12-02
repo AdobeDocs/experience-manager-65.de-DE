@@ -18,11 +18,11 @@ ht-degree: 18%
 ---
 
 
-# Komponenten, Funktionen und Funktionen  {#component-function-and-feature-essentials}
+# Komponenten, Funktionen und Funktionsgrundlagen {#component-function-and-feature-essentials}
 
-AEM Communities-Funktionen erfordern, dass Site-Besucher Mitglieder werden und sich auf der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. Daher sind [Community-Site-Vorlagen](sites.md), aus denen eine Community-Site [erstellt](sites-console.md)wird, so konzipiert, dass sie eine Anmeldefunktion sowie Profil, Nachrichten, Suchen, Moderation und Übersetzung enthalten.
+Für AEM Communities-Funktionen müssen Site-Besucher Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) anmelden, bevor sie Inhalte posten können. [Community-Site-Vorlagen](sites.md), von denen eine Community-Site [erstellt](sites-console.md) ist, sind so konzipiert, dass sie eine Anmeldefunktion sowie Profil, Nachrichten, Suche, Moderation und Übersetzung enthalten.
 
-Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die [Community-Gruppen-Funktion](functions.md#groups-function) in der ausgewählten Community-Site-Vorlage enthalten ist.
+Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die Funktion [Community-Gruppen](functions.md#groups-function) in der ausgewählten Community-Site-Vorlage enthalten ist.
 
 Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities Komponenten, Funktionen und Features.
 
@@ -71,9 +71,9 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities Komponen
 ## Javadocs {#javadocs}
 
 Die [Online-JavaCs](../../help/sites-developing/reference-materials.md) spiegeln die in AEM 6.3 verfügbaren APIs wider.
-Communities-APIs sind in `com.adobe.cq.social.*` Paketen enthalten.
+Communities-APIs befinden sich in `com.adobe.cq.social.*`-Paketen.
 
-Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack)wird eine JavaScript-Datei verfügbar gemacht. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
+Für jedes [Feature Pack](deploy-communities.md#latestfeaturepack) wird eine JavaScript-Datei verfügbar gemacht. Weitere Informationen finden Sie unter [Verwenden von Maven für Communities](maven.md#javadocs).
 
 ## Zusätzliche Informationen {#additional-information}
 
