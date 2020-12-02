@@ -12,6 +12,9 @@ discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 70%
 
 ---
 
@@ -24,7 +27,7 @@ Sie können das Dienstprogramm der Protokollfunktion konfigurieren, um mit der E
 
 Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfigurieren:
 
-1. Wechseln zu `https://'[server]:[port]'/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Das folgende Dialogfeld wird angezeigt:
+1. Rufen Sie `https://'[server]:[port]'/system/console/configMgr` auf. Suchen und öffnen Sie die Option *Apache Sling Logging Logger-Konfiguration*. Das folgende Dialogfeld wird angezeigt:
 
    ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
@@ -32,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfiguri
 
 1. Ändern Sie die **Protokollierungsstufe** in **Debug**.
 
-1. Specify name and path of the **Log File**.
+1. Geben Sie den Namen und den Pfad der **Protokolldatei** an.
 
    >[!NOTE]
    >
@@ -69,7 +72,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
   </tr>
   <tr>
    <td>2</td>
-   <td>Logs are collected in a JavaScript object on client side and can be posted to <strong>Server</strong> </td>
+   <td>Protokolle werden clientseitig in einem JavaScript-Objekt erfasst und können an <strong>Server</strong> gesendet werden </td>
   </tr>
   <tr>
    <td>3</td>
@@ -78,7 +81,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
  </tbody>
 </table>
 
-#### Protokollebenen {#log-levels}
+#### Protokollebenen  {#log-levels}
 
 <table>
  <tbody>
@@ -96,10 +99,10 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
   </tr>
   <tr>
    <td>2</td>
-   <td>FEHLER<br type="_moz" /> </td>
+   <td>ERROR<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>WARN<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -144,7 +147,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
  </tbody>
 </table>
 
-#### Protokollkonfiguration {#log-configuration}
+#### Protokollkonfiguration  {#log-configuration}
 
 In der Protokoll-URL wird der Abfragezeichenfolgen-Parameter zur Protokollkonfiguration wie folgt definiert:
 
@@ -169,14 +172,14 @@ Beispiel:
 >
 >Die Standardprotokollebene für jede Protokollkategorie – a (xfa), b (xfaView) und c (xfaPerf) – ist 2 (ERROR). Entsprechend lauten bei der Protokollkonfiguration 2-b6 die Protokollebenen für die verschiedenen Kategorien:
 >a (xfa): 2 (Standard-EBENENFEHLER)
->b (xfaView): 6 (vom Benutzer angegebener TRACE)
+>b (xfaView): 6 (vom Benutzer angegebenes TRACE)
 >a (xfaPerf): 2 (Standard-EBENENFEHLER)
 
 ### Aktivieren der Protokollierung über den Configuration Manager {#enabling-logging-using-configuration-manager}
 
 Wenn Sie Configuration Manager zur Aktivierung der Protokollierung verwenden, werden Protokolle für jede Renderanforderung generiert, bis die Protokollierung wieder deaktiviert wird.
 
-1. Melden Sie sich bei CQ Configuration Manager an `https://'[server]:[port]'/system/console/configMgr` und melden Sie sich mit Administratorberechtigungen an.
+1. Melden Sie sich bei CQ Configuration Manager unter `https://'[server]:[port]'/system/console/configMgr` an und melden Sie sich mit Administratorberechtigungen an.
 1. Suchen Sie nach **Mobile Forms Configurations** und klicken Sie darauf.
 1. Geben Sie im Textfeld &quot;Debug Options&quot; die Protokollkonfigurationen ein, wie sie im letzten Abschnitt beschrieben sind, z. B. **2a4-b5-c6**
 
@@ -186,23 +189,23 @@ Wenn Sie Configuration Manager zur Aktivierung der Protokollierung verwenden, we
 
 ## Hochladen von Protokollen {#uploading-logs}
 
-Wenn als Ziel 1 eingestellt ist, werden alle clientseitigen Skriptprotokollmeldungen an die Konsole geleitet. Wenn ein Administrator diese Protokolle zusammen mit Serverprotokollen benötigt, setzen Sie die Zielebene auf 2. At this level, all logs are collected in a JS object on client side and if form is rendered with default Profile then a **Send Logs** button appears to the left of **Highlight Existing Fields** button in toolbar. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server gesendet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
+Wenn als Ziel 1 eingestellt ist, werden alle clientseitigen Skriptprotokollmeldungen an die Konsole geleitet. Wenn ein Administrator diese Protokolle zusammen mit Serverprotokollen benötigt, setzen Sie die Zielebene auf 2. Auf dieser Ebene werden alle Protokolle in einem JS-Objekt auf Clientseite erfasst. Wenn das Formular mit dem Standardsymbol wiedergegeben wird, wird links neben der Schaltfläche **Vorhandene Felder markieren** die Schaltfläche **Protokolle senden** angezeigt. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server gesendet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
 
 Standardmäßig werden alle Daten der Datei „error.log“ im Ordner „/crx-repository/logs/“ hinzugefügt.
 
 Speicherort und Namen der Protokolldatei ändern:
 
-1. Melden Sie sich beim Configuration Manager als Administrator an. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/system/console/configMgr`.
+1. Melden Sie sich beim Configuration Manager als Administrator an. Die Standard-URL von Configuration Manager ist `https://'[server]:[port]'/system/console/configMgr`.
 1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Das folgende Dialogfeld wird angezeigt.
 
    ![logconfig-1](assets/logconfig-1.png)
 
 1. Ändern Sie die **Protokollierungsstufe** in Debug.
 
-1. Specify path and name of the **Log File**.
+1. Geben Sie den Pfad und den Namen der **Protokolldatei** an.
 
    >[!NOTE]
    >
    >Um Protokolle im selben Ordner zu erstellen, in dem bereits andere Protokolldateien enthalten sind, geben Sie in den Eigenschaften der Protokolldateien ../logs/&lt;filename> an.
 
-1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
+1. Ändern Sie **Logger** in **HTMLFormsPerfLogger** und klicken Sie auf **Speichern**.
