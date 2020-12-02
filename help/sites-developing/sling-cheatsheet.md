@@ -1,6 +1,6 @@
 ---
-title: Sling-Schnellübersicht
-seo-title: Sling-Schnellübersicht
+title: 'Sling-Schnellübersicht '
+seo-title: 'Sling-Schnellübersicht '
 description: Ein einfache Sling-Referenz
 seo-description: Ein einfache Sling-Referenz
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
@@ -13,13 +13,13 @@ translation-type: tm+mt
 source-git-commit: c6b1d651940b5c556dea81d19354aac36d14b423
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
 
-# Sling-Schnellübersicht{#sling-cheatsheet}
+# Sling-Schnellübersicht {#sling-cheatsheet}
 
-![Die Auflösung des Apache Sling-Skripts.](assets/sling-cheatsheet-01.png)
+![Verstehen der Auflösung des Apache Sling-Skripts.](assets/sling-cheatsheet-01.png)
 
-![Verwenden des SlingPostServlet - dies ist der Standardhandler für Ihre POST-Anforderungen; es kann fast alles tun.](assets/sling-cheatsheet-02.png)
+![Das SlingPostServlet verwenden – dies ist der Standard-Handler für Ihre POST-Anforderungen. Er kann fast alles erledigen.](assets/sling-cheatsheet-02.png)
