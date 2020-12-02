@@ -32,26 +32,26 @@ Die Funktion &quot;Zielversion&quot;bietet einen Bereich für angemeldete Site-B
 
 Dieser Abschnitt der Dokumentation beschreibt:
 
-* Hinzufügen der Zielfunktion zu einer AEM-Site.
+* Hinzufügen der Suchfunktion zu einer AEM Site.
 * Konfigurationseinstellungen für die Ideenkomponente.
 
-### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
+### Hinzufügen einer Idee zu einer Seite {#adding-a-ideation-to-a-page}
 
-To add a `Ideation` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Ideation`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Ideation`
 
 und ziehen Sie es auf eine Seite, auf der die Idee erscheinen soll.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/ideation.md#essentials-for-client-side) einbezogen werden, wird die `Ideation`-Komponente wie folgt angezeigt:
 
-![Idee](assets/ideation.png)
+![ideation](assets/ideation.png)
 
 ### Konfigurieren einer Idee {#configuring-an-ideation}
 
-Select the placed `Ideation` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Ideation` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -59,7 +59,7 @@ Select the placed `Ideation` component to access and select the `Configure` icon
 
 #### Registerkarte „Settings“{#settings-tab}
 
-Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments:
+Geben Sie unter der Registerkarte **[!UICONTROL Einstellungen]** die Einstellungen für Ideen und Kommentare an:
 
 * **Anhangminiatur zulassen**
 * **Max. Anhangminiaturgröße**
@@ -93,7 +93,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Tagging zulassen**
 
-   If checked, allow members to add tag labels to their post (see **[!UICONTROL Tag field]** tab). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, ihrem Beitrag Tagbeschriftungen hinzuzufügen (siehe **[!UICONTROL Feld]** Registerkarte). Diese Option ist standardmäßig deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -101,11 +101,11 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Max. Dateigröße**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
 * **Zulässige Dateitypen**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
 
@@ -125,11 +125,11 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](/help/communities/notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder über neue Beiträge benachrichtigt werden können. [](/help/communities/notifications.md) Diese Option ist standardmäßig deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Sie den Mitgliedern per E-Mail ([Abonnement](/help/communities/subscriptions.md)) eine Benachrichtigung über neue Beiträge erlauben. Muss überprüft `Allow Following` und [E-Mail konfiguriert](/help/communities/email.md)werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, per E-Mail über neue Beiträge informiert zu werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert die Überprüfung von `Allow Following` und [E-Mail-Konfiguration](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
 
 * **Abstimmung zulassen**
 
@@ -143,15 +143,15 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](/help/communities/featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [gekennzeichneter Inhalt](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
 * **Erwähnung aktivieren**
 * **Max. Erwähnungen**
 * **UI-Erwähnungsmuster**
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
-Under the **[!UICONTROL User Moderation]** tab, specify how the posted ideas and comments (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Ideen und Kommentare (vom Benutzer generierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Posts ablehnen**
 
@@ -187,7 +187,7 @@ Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **[!UICONTROL Einstellungen]** markiert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
@@ -195,7 +195,7 @@ Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags
 
 #### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
-Geben Sie auf der Registerkarte &quot; **[!UICONTROL Sortiereinstellungen]** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie unter der Registerkarte **[!UICONTROL Sortiereinstellungen]** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortierfolge**
 
@@ -207,7 +207,7 @@ Geben Sie auf der Registerkarte &quot; **[!UICONTROL Sortiereinstellungen]** &qu
 
 * **Zeitoptionen für Analytics-Sortierung auswählen**
 
-   Ziehen Sie nach unten, um einen von `All, Last 24 Hours, Last 7 Days, Last 30 Days`auszuwählen. Der Standardwert ist `All`.
+   Ziehen Sie nach unten, um eines von `All, Last 24 Hours, Last 7 Days, Last 30 Days` auszuwählen. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -221,23 +221,23 @@ Nach der Anmeldung kann ein Mitglied eine neue Idee erstellen.
 
 Bevor Sie die Idee einreichen, kann das Mitglied einen Entwurf speichern.
 
-Durch Auswahl der `Save as Draft` Schaltfläche wird ein Entwurf gespeichert.
+Durch Auswahl der Schaltfläche `Save as Draft` wird ein Entwurf gespeichert.
 
 ![save-concept](assets/save-idea.png)
 
-Wenn Sie gespeicherte Entwürfe auf der `My Drafts` Registerkarte anzeigen, wählen Sie `Read More` die Option, um wieder in den Bearbeitungsmodus zu wechseln:
+Wenn Sie gespeicherte Entwürfe auf der Registerkarte `My Drafts` anzeigen, wählen Sie `Read More` aus, um erneut in den Bearbeitungsmodus zu wechseln:
 
 ![edit-concept](assets/edit-idea.png)
 
-#### Feedback bereitstellen {#providing-feedback}
+#### Feedback {#providing-feedback} bereitstellen
 
-Sobald die Idee veröffentlicht ist, können sich andere Mitglieder anmelden, die Idee ( `Read More`) öffnen und die Idee mögen, um so zur Stimmenauszählung hinzuzufügen und Kommentare.
+Sobald die Idee veröffentlicht ist, können sich andere Mitglieder anmelden, die Idee ( `Read More`) öffnen und die Idee, so hinzufügen, um die Stimmenanzahl, und Kommentare.
 
 ![Feedback,](assets/feedback-idea.png)
 
 ### Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Ideation Essentials](/help/communities/ideation.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Grundlegende Ideen](/help/communities/ideation.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
