@@ -12,6 +12,9 @@ discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 81%
 
 ---
 
@@ -38,7 +41,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. The **Next** button brings you to the **Configure** step of the wizard. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
+1. Mit der Schaltfläche **Weiter** gelangen Sie zum Schritt **Konfigurieren** des Assistenten. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -46,7 +49,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
    >
    >Standardmäßig gibt es nur eine Übersetzungs-Einstellung. Um die Auswahl anderer Einstellungen zu ermöglichen, müssen Sie zuerst die Cloud-Einstellungen konfigurieren. Siehe [Konfigurieren des Übersetzungsintegrations-Frameworks](/help/sites-administering/tc-tic.md).
 
-1. The **Next** button brings you to the **Translate** step of the wizard. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
+1. Mit der Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
 
    >[!NOTE]
    >
