@@ -17,7 +17,7 @@ Mit der Funktion „Asset Insights“ können Sie Benutzerbewertungen und Nutzun
 
 [!DNL Assets] Insights hält Details zu Benutzeraktivitäten wie Anzahl der Bildbewertungen, Klickraten und Impressionen (Häufigkeit des Ladens eines Bildes auf einer Website) fest. Basierend auf diesen Statistiken werden Bildern Bewertungen zugewiesen. Sie können Bewertungs- und Leistungsstatistiken nutzen, um beliebte Bilder für Kataloge, Marketing-Kampagnen usw. auszuwählen. Sie können außerdem Richtlinien zu Archivierungen und Lizenzerneuerungen anhand dieser Statistiken formulieren.
 
-For [!DNL Assets] Insights to capture usage statistics for images from a website, you must include the embed code for the image in the website code.
+Damit [!DNL Assets] Insights Nutzungsstatistiken für Bilder von einer Website erfassen kann, müssen Sie den Einbettungscode für das Bild in den Website-Code aufnehmen.
 
 Damit Asset Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurieren Sie zunächst die Funktion für den Abruf von Berichtsdaten aus Adobe Analytics. Weitere Details finden Sie unter [Asset Insights konfigurieren](/help/assets/configure-asset-insights.md).
 
@@ -29,7 +29,7 @@ Damit Asset Insights Nutzungsstatistiken für Assets anzeigen kann, konfiguriere
 
 Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
-1. From the [!DNL Assets] user interface (UI), select the image and then click **[!UICONTROL Properties]** from the toolbar.
+1. Wählen Sie in der Benutzeroberfläche von [!DNL Assets] das Bild aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Klicken Sie auf der Seite „Eigenschaften“ auf die Registerkarte **[!UICONTROL Statistiken]**.
 1. Überprüfen Sie die Nutzungsdetails für das Asset auf der Registerkarte **[!UICONTROL Insights]**. Der Abschnitt **[!UICONTROL Bewertung]** beschreibt die gesamte Asset-Nutzung und die Leistungsbewertungen eines Assets.
 
@@ -58,7 +58,7 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
    >
    >Im Gegensatz zu den Daten im Abschnitt „Lösungen“ zeigt der Abschnitt „Leistungsstatistiken“ die neuesten Daten an.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and embed code in web pages](/help/assets/use-page-tracker.md).
+1. Um den Einbettungscode für das Asset abzurufen, das Sie in Websites einschließen, um Leistungsdaten abzurufen, klicken Sie unter der Asset-Miniaturansicht auf **[!UICONTROL Einbettungscode abrufen]**. Weitere Informationen zum Einbettungscode in Webseiten von Drittanbietern finden Sie unter [Verwenden von Seiten-Tracker und Einbettungscode in Webseiten](/help/assets/use-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
@@ -66,15 +66,15 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
 Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets in einem Ordner gleichzeitig anzeigen.
 
-1. In the [!DNL Assets] user interface, navigate to the folder containing the assets for which you want to view insights.
-1. Click Layout from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. Navigieren Sie in der Benutzeroberfläche [!DNL Assets] zu dem Ordner, der die Assets enthält, für die Sie Einblicke Ansicht wünschen.
+1. Klicken Sie in der Symbolleiste auf Layout und wählen Sie dann **[!UICONTROL Insight-Ansicht]**.
 1. Die Seite zeigt die Nutzungsbewertungen für die Assets an. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
 
 ## Planen von Hintergrundaufträgen {#scheduling-background-job}
 
 Asset Insights ruft regelmäßig Nutzungsdaten für Assets aus den Adobe Analytics-Report Suites ab. Standardmäßig führt Asset Insights alle 24 Stunden um 2 Uhr Hintergrundjobs aus, um Daten abzurufen. Sie können jedoch die Häufigkeit und die Zeit ändern, indem Sie den Dienst **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** von der Web-Konsole aus konfigurieren.
 
-1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Webkonsole]**.
 1. Öffnen Sie die Service-Konfiguration **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
