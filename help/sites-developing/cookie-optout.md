@@ -65,41 +65,41 @@ function writeCookie(value){
 }
 ```
 
-## Das Granite.OptOutUtil-JavaScript-Objekt {#the-granite-optoututil-javascript-object}
+## Das Granite.OptOutUtil-JavaScript-Objekt  {#the-granite-optoututil-javascript-object}
 
 „Granite.OptOutUtil“ ermöglicht es Ihnen festzulegen, ob die Verwendung von Cookies zulässig ist.
 
-### Funktion „getCookieNames()“ {#getcookienames-function}
+### Funktion „getCookieNames()“  {#getcookienames-function}
 
 Gibt die Namen der Cookies zurück, die, falls vorhanden, darauf hinweisen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat.
 
 **Parameter**
 
-Keine.
+Kein.
 
-**Gibt Folgendes zurück:**
+**Rückgabe**
 
 Eine Reihe von Cookie-Namen
 
-#### Funktion „getWhitelistCookieNames()“ {#getwhitelistcookienames-function}
+#### Funktion „getWhitelistCookieNames()“  {#getwhitelistcookienames-function}
 
 Gibt die Namen von Cookies zurück, die unabhängig von der Zustimmung des Benutzers verwendet werden können.
 
 **Parameter**
 
-Keine.
+Kein.
 
-**Gibt Folgendes zurück:**
+**Rückgabe**
 
 Eine Reihe von Cookie-Namen
 
-#### Funktion „isOptedOut()“ {#isoptedout-function}
+#### Funktion „isOptedOut()“  {#isoptedout-function}
 
 Bestimmt, ob der Browser des Benutzers Cookies enthält, die darauf hinweisen, dass keine Zustimmung zur Verwendung von Cookies erteilt wurde.
 
 **Parameter**
 
-Keine.
+Kein.
 
 **Rückgabe**
 
@@ -113,6 +113,6 @@ Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kan
 
 * cookieName: String. Der Name des Cookies.
 
-**Gibt Folgendes zurück:**
+**Rückgabe**
 
-A boolean value of `true` if `cookieName` can be used, or a value of `false` if `cookieName` cannot be used.
+Ein boolescher Wert von `true`, wenn `cookieName` verwendet werden kann, oder ein Wert von `false`, wenn `cookieName` nicht verwendet werden kann.
