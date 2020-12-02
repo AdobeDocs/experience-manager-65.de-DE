@@ -1,6 +1,6 @@
 ---
-title: Fehlerbehebung in AEM bei der Bearbeitung
-seo-title: Fehlerbehebung in AEM bei der Bearbeitung
+title: Fehlerbehebung in AEM beim Authoring
+seo-title: Fehlerbehebung in AEM beim Authoring
 description: Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
 seo-description: Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
 
-# Fehlerbehebung in AEM bei der Bearbeitung{#troubleshooting-aem-when-authoring}
+# Fehlerbehebung in AEM beim Authoring{#troubleshooting-aem-when-authoring}
 
 Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
 
@@ -27,7 +30,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 >
 >Benutzer mit Administratorrechten, die Probleme in AEM beheben möchten, können die unter [Fehlerbehebung in AEM (für Administratoren)](/help/sites-administering/troubleshoot.md) beschriebenen Lösungen nutzen. Wenn Sie nicht über ausreichende Rechte verfügen, wenden Sie sich bezüglich der Problembehebung in AEM an Ihren Administrator.
 
-## Alte Seitenversion wird weiterhin auf der Veröffentlichungs-Website angezeigt {#old-page-version-still-on-published-site}
+## Alte Seitenversion wird weiterhin auf der veröffentlichten Website angezeigt {#old-page-version-still-on-published-site}
 
 * **Problem**:
 
@@ -42,13 +45,13 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
    * Hier gibt es mehrere Möglichkeiten:
    * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Prüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
    * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
-   * Add `?` to the end of the page URL. For example:
+   * Fügen Sie dem Ende der Seiten-URL `?` hinzu:
 
       `http://localhost:4502/sites.html/content?`
 
       Dadurch wird die Seite direkt von AEM abgerufen und der Dispatcher wird umgangen. Wenn die aktualisierte Seite angezeigt wird, ist dies ein Hinweis darauf, dass Sie den Dispatcher-Cache löschen müssen.
 
-   * Wenden Sie sich an den Systemadministrator, wenn Probleme mit den Replikations-Warteschlangen vorliegen.
+   * Wenden Sie sich an den Systemadministrator, wenn Probleme mit den Replikationswarteschlangen vorliegen.
 
 ## Sidekick wird nicht angezeigt {#sidekick-not-visible}
 
@@ -68,7 +71,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Bei Verwendung der Option **Suchen &amp; Ersetzen** kann es vorkommen, dass nicht alle Instanzen des Begriffs `find` auf einer Seite ersetzt werden.
 
 * **Grund**:
 
