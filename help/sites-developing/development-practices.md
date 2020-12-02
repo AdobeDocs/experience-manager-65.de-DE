@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 100%
 
 ---
 
@@ -44,7 +47,7 @@ Entwickler sollten TDD praktizieren und fehlschlagende Einheitstests vor dem Pro
 
 Es gibt benutzerdefinierte Frameworks, z. B. Jackalope und Prosper, um die Imitation von JCR-APIs zu vereinfachen und so die Produktivität der Entwickler beim Schreiben von Einheitstests zu gewährleisten.
 
-### Immer bereit für Demos sein {#stay-demo-ready}
+### Immer bereit für Demos sein  {#stay-demo-ready}
 
 Das System sollte am Ende jeder Iteration für Demos im Unternehmen zur Verfügung stehen. Indem das System immer bereit für Demos gehalten wird, ist das Team immer nur eine Iteration von Produktionsbereitschaft entfernt und technische Rückstände werden auf ein vertretbares Maß beschränkt.
 
