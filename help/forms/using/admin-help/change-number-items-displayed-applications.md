@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d06f20d-0fbd-447c-8c78-bf6ce0ceed31
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 73%
 
 ---
 
@@ -19,6 +22,6 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Auf der Seite „Voreinstellungen“ können Sie die Anzahl der Dienste, Endpunkte, Kategorien und Archive steuern, die pro Webseite von Anwendungen und Dienste angezeigt werden.
 
-1. In administration console, **[!UICONTROL click Services > Applications and Services > Preferences]**.
-1. On the Preferences page, type the number of services, endpoints, categories, and archives that can be displayed on each page, and then click **[!UICONTROL Save]**.
+1. Klicken Sie in Administration Console auf Dienste > Anwendungen und Dienste > Voreinstellungen ]**.**[!UICONTROL 
+1. Geben Sie auf der Seite &quot;Voreinstellungen&quot;die Anzahl der Dienste, Endpunkte, Kategorien und Archive ein, die auf jeder Seite angezeigt werden können, und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
