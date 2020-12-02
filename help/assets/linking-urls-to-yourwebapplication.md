@@ -11,14 +11,14 @@ translation-type: tm+mt
 source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1274'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
 
 # Verknüpfen von URLs mit einer Web-Anwendung {#linking-urls-to-your-web-application}
 
-Ihre Websites und Anwendungen greifen über URL-Aufrufe auf Dynamic Media-Dienste zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamische Medien“ aktiviert. Sie können diese URLs zu Testzwecken in einen Webbrowser einfügen.
+Ihre Websites und Anwendungen greifen über URL-Aufrufe auf Dynamic Media-Dienste zu. Wenn Sie ein Asset veröffentlichen, wird eine URL-Zeichenfolge, die auf das Asset verweist, von „Dynamic Media“ aktiviert. Sie können diese URLs zu Testzwecken in einen Webbrowser einfügen.
 
 Sie verknüpfen nur dann zu URLs, wenn Sie AEM *nicht* als Ihren WCM verwenden. Die Verknüpfung (im Gegensatz zur Einbettung) wird verwendet, wenn Sie einen Video-Player als Popup oder modales Fenster übermitteln möchten. Wenn Sie AEM als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
 
@@ -26,7 +26,7 @@ Um diese URL-Zeichenfolgen auf Ihren Web-Seiten und in Ihren Anwendungen zu plat
 
 >[!NOTE]
 >
->URL-Zeichenfolgen sind nur für dynamische Ausgabeformate von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die in DAM und nicht im Server für dynamische Medien aufbewahrt werden. Für statische Ausgabeformate wird die URL-Schaltfläche nicht angezeigt.
+>URL-Zeichenfolgen sind nur für dynamische Ausgabedarstellungen von Assets verfügbar. Sie sind derzeit nicht für statische Assets verfügbar, die in DAM und nicht im Server für Dynamic Media aufbewahrt werden. Für statische Ausgabedarstellungen wird die URL-Schaltfläche nicht angezeigt.
 
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite.](embed-code.md)
 
@@ -66,15 +66,15 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
 1. Führen Sie je nach gewähltem Asset eine der folgenden Aktionen aus:
 
-   * Wenn Sie ein Bild im Dropdown-Menü ausgewählt haben, tippen Sie auf **[!UICONTROL Ausgabeformate.]**
+   * Wenn Sie ein Bild im Dropdown-Menü ausgewählt haben, tippen Sie auf **[!UICONTROL Ausgabedarstellungen.]**
 
-      Tippen Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um das zugehörige Ausgabeformat im rechten Rahmen anzuzeigen. Möglicherweise müssen Sie in der Liste der Ausgabeformate einen Bildlauf durchführen, um die Überschrift „Dynamisch“ anzuzeigen.
+      Tippen Sie unter der Überschrift **[!UICONTROL Dynamisch]** auf einen Vorgabennamen, um die zugehörige Ausgabedarstellung im rechten Rahmen anzuzeigen. Möglicherweise müssen Sie in der Liste der Ausgabedarstellungen einen Bildlauf durchführen, um die Überschrift „Dynamisch“ anzuzeigen.
 
       Tippen Sie unten in der linken Seitenleiste auf **[!UICONTROL URL.]**
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Wenn Sie ein Rotations-Set, Bild-Set, Karussell-Set oder Video ausgewählt haben, tippen Sie im Dropdown-Menü auf **[!UICONTROL Viewer.]**
+   * Wenn Sie ein Rotationsset, Bildset, Karussellset oder Video ausgewählt haben, tippen Sie im Dropdown-Menü auf **[!UICONTROL Viewer.]**
 
       Tippen Sie auf der linken Schiene auf den Namen einer Viewer-Vorgabe. Eine Vorschau des Sets oder Videos wird auf einer separaten Seite geöffnet.
 
@@ -120,9 +120,9 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
       Ändern Sie die kopierte URL, um `is/content` anstelle von `is/image/` im Pfad zu verwenden.
 
 
-## Abrufen einer Video-URL für ein veröffentlichtes Videoausgabeformat {#obtaining-a-video-url-for-a-published-video-rendition}
+## Abrufen einer Video-URL für eine veröffentlichtes Videoausgabedarstellung {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
+1. Navigieren Sie in AEM zu **[!UICONTROL Tools > Bereitstellung > Cloud > Cloud Services.]**
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen.]**
 1. Tippen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** auf den Namen der gewünschten Konfiguration.
 
@@ -138,10 +138,10 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
-1. Kopieren Sie den gesamten Pfad für das Video-Ausgabeformat aus dem JCR (Java Content Repository).
+1. Tippen Sie links oben auf der Seite auf **[!UICONTROL Cloud Services]**, dann auf das Experience Manager-Logo und navigieren Sie zu **[!UICONTROL Allgemein > CRXDE Lite.]**
+1. Kopieren Sie den gesamten Pfad für die Videoausgabedarstellung aus dem JCR (Java Content Repository).
 
-   Der Pfad für das Video-Ausgabeformat kann zum Beispiel folgendermaßen aussehen:
+   Der Pfad für die Videoausgabedarstellung kann zum Beispiel folgendermaßen aussehen:
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
@@ -155,11 +155,11 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   Dies ist die vollständige Video-URL für ein veröffentlichtes Videoausgabeformat.
+   Dies ist die vollständige Video-URL für eine veröffentlichte Videoausgabedarstellung.
 
-## Abrufen einer Video-URL für adaptives Streaming (HLS)       {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Abrufen einer Video-URL für adaptives Streaming (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
+1. Navigieren Sie in AEM zu **[!UICONTROL Tools > Bereitstellung > Cloud > Cloud Services.]**
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und tippen Sie dann auf **[!UICONTROL Konfigurationen anzeigen.]**
 1. Tippen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** auf den Namen der gewünschten Konfiguration.
 1. Gehen Sie auf der Seite **[!UICONTROL Cloud Services-Einstellungen für Dynamic Media]** wie folgt vor:
@@ -172,14 +172,14 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    * Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID. Sie benötigen den kopierten Kundennamen später bei diesen Schritten.
 
-       Beispiel: Für die Registrierungs-ID `87654321|demoCo` lautet der Name des Kunden, den Sie kopieren, `demoCo`.
+      Beispiel: Für die Registrierungs-ID `87654321|demoCo` lautet der Name des Kunden, den Sie kopieren, `demoCo`.
 
 
 1. Je nachdem, welches Videobereitstellungsprotokoll Sie verwenden möchten, kopieren Sie den entsprechenden Protokollselektor. Der kopierte Protokollselektor wird in den nachfolgenden Schritten benötigt.
 
    | Von Ihnen verwendetes Videobereitstellungsprotokoll | Zu verwendender Protokollselektor |
    |---|---|
-   | HTTP <br> If you are using HTTP (non-secure video delivery), be sure you change https to http in the Video Service URL value you copied earlier. | `public/` |
+   | HTTP  <br> Wenn Sie HTTP (nicht sicherer Video-Versand) verwenden, stellen Sie sicher, dass Sie in dem zuvor kopierten URL-Wert für den Videodienst HTTPS in HTTP ändern. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Kopieren Sie den vollständigen Video-Asset-Pfad in AEM, wie mit Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.
