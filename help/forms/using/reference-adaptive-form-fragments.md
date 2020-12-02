@@ -10,6 +10,9 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +34,7 @@ Für adaptive Formularautoren werden Referenzfragmente im AEM Forms-Paket [AEM-F
 * Nutzungsbedingungen
 * Nutzungsbedingungen mit Scribble
 
-Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. Informationen zum Installieren eines Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md).
 
 ![Alle aufgeführten  Fragmente](assets/ootb-frags.png)
 
