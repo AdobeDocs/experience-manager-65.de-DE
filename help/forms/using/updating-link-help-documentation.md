@@ -29,8 +29,8 @@ Berücksichtigen Sie die folgenden Anwendungsfälle, wenn Sie die Standardhilfe-
 
 Um die URL der Onlinedokumentation zu aktualisieren, führen Sie die Schritte unter [Generische Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) und dann die folgenden Schritte aus.
 
-1. Copy the `userinfo.html` file from `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
-1. Ändern:
+1. Kopieren Sie die Datei `userinfo.html` von `/libs/ws/js/runtime/templates` nach `/apps/ws/js/runtime/templates`.
+1. Änderung:
 
    ```html
    <ul class="helpmenu">
@@ -51,4 +51,4 @@ Um die URL der Onlinedokumentation zu aktualisieren, führen Sie die Schritte un
 1. Gehen Sie folgendermaßen vor:
 
    1. Öffnen Sie /apps/ws/js/registry.js zur Bearbeitung.
-   1. Search and replace `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Suchen und ersetzen Sie `text!/lc/libs/ws/js/runtime/templates/userinfo.html` durch `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
