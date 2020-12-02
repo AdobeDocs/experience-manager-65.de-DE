@@ -1,6 +1,6 @@
 ---
-title: Tastaturbefehle für Konsolen
-seo-title: Tastaturbefehle für Konsolen
+title: 'Tastaturbefehle für Konsolen  '
+seo-title: 'Tastaturbefehle für Konsolen  '
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
 seo-description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 98%
 
 ---
 
 
-# Tastaturbefehle für Konsolen{#keyboard-shortcuts-for-consoles}
+# Tastaturbefehle für Konsolen  {#keyboard-shortcuts-for-consoles}
 
 In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -27,10 +30,10 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
 
 Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce“, „Screens“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
 
-| Position | Kürzel | Beschreibung |
+| Ort | Kürzel | Beschreibung |
 |---|---|---|
 | Allgemein | `Ctrl+Click` | Mehrfachauswahl auf einem Desktop-Gerät |
-| Konsole - Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
+| Konsole – Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
 |  | `Left Arrow` | Navigieren nach oben in der Baumstruktur/Reduzieren des Strukturknotens |
 |  | `Down Arrow` | Navigieren nach unten in einer Liste mit Seiten auf derselben Ebene |
 |  | `Up Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
@@ -38,7 +41,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce�
 |  | `Esc` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-authoring/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-authoring/basic-handling.md#rail-selector) |
 |  | ` | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
