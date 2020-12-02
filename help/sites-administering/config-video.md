@@ -20,9 +20,9 @@ ht-degree: 21%
 
 # Konfigurieren der Videokomponente {#configure-the-video-component}
 
-The [Video component](/help/sites-authoring/default-components-foundation.md#video) lets you place a predefined, out-of-the-box (OOTB) video asset on your page.
+Mit der [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes OOTB-Video-Asset (Out-of-the-Box) auf Ihrer Seite platzieren.
 
-Damit eine ordnungsgemäße Transkodierung erfolgt, installiert ein Administrator FFmpeg separat. Siehe [Installieren von FFmpeg und Konfigurieren von AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
+Damit eine ordnungsgemäße Transkodierung erfolgt, installiert ein Administrator FFmpeg separat. Siehe [Installieren Sie FFmpeg und konfigurieren Sie AEM](#install-ffmpeg). Administratoren können auch [Video-Profil](#configure-video-profiles) für die Verwendung mit HTML5-Elementen konfigurieren.
 
 ## Videoprofile konfigurieren {#configure-video-profiles}
 
@@ -30,45 +30,45 @@ Definieren Sie für die Verwendung von HTML5-Elementen Video-Profil. Die hier ge
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-From this dialog, you can also configure the design of the Video component and parameters for [!UICONTROL Playback], [!UICONTROL Flash], and [!UICONTROL Advanced].
+In diesem Dialogfeld können Sie auch den Entwurf der Videokomponente und die Parameter für [!UICONTROL Wiedergabe], [!UICONTROL Flash] und [!UICONTROL Advanced] konfigurieren.
 
-## Installieren und Konfigurieren von AEM {#install-ffmpeg}
+## Installieren und konfigurieren Sie AEM {#install-ffmpeg}
 
 Die Video-Komponente nutzt das Open-Source-Produkt FFmpeg eines Drittanbieters für die Transkodierung von Videos. Heruntergeladen von [https://ffmpeg.org/](https://ffmpeg.org/). Nachdem Sie FFmpeg installiert haben, konfigurieren Sie AEM, um einen bestimmten Audio-Codec und bestimmte Laufzeitoptionen zu verwenden.
 
 Gehen Sie wie folgt vor, um FFmpeg unter **Windows** zu installieren:
 
-1. Download the compiled binary as `ffmpeg.zip`.
+1. Laden Sie die kompilierte Binärdatei als `ffmpeg.zip` herunter.
 1. Archivieren Sie die Datei in einem Ordner.
-1. Legen Sie die Variable &quot;Umgebung&quot; `PATH` auf &lt;*Ihr-ffmpeg-location*>`\bin`fest.
+1. Setzen Sie die Systemvariable `PATH` auf &lt;*your-ffmpeg-location*`\bin`.
 1. Starten Sie AEM neu.
 
 Gehen Sie wie folgt vor, um FFmpeg unter **Mac OS X** zu installieren:
 
-1. Installieren Sie Xcode unter [developer.apple.com/xcode](https://developer.apple.com/xcode/).
-1. Installieren Sie unter [XQuartz](https://www.xquartz.org) , um [X11](https://support.apple.com/de-de/HT201341)zu erhalten.
-1. Installieren Sie die MacPorts unter [www.macports.org](https://www.macports.org/).
-1. Führen Sie in der Konsole den Befehl `sudo port install ffmpeg` aus und befolgen Sie die Anweisungen auf dem Bildschirm. Stellen Sie sicher, dass der Pfad der `FFmpeg` ausführbaren Datei der `PATH` Systemvariablen hinzugefügt wird.
+1. Installieren Sie Xcode verfügbar unter [developer.apple.com/xcode](https://developer.apple.com/xcode/).
+1. Installieren Sie unter [XQuartz](https://www.xquartz.org), um [X11](https://support.apple.com/de-de/HT201341) abzurufen.
+1. Installieren Sie MacPorts, die unter [www.macports.org](https://www.macports.org/) verfügbar sind.
+1. Führen Sie in der Konsole den Befehl `sudo port install ffmpeg` aus und befolgen Sie die Anweisungen auf dem Bildschirm. Stellen Sie sicher, dass der Pfad der ausführbaren Datei `FFmpeg` der Systemvariablen `PATH` hinzugefügt wird.
 
 Gehen Sie wie folgt vor, um FFmpeg unter **Mac OS X 10.6** mit der vorkompilierten Version zu installieren:
 
 1. Laden Sie die vorkompilierte Version herunter.
-1. Heben Sie die Archivierung im `/usr/local` Verzeichnis auf.
-1. Führen Sie in der Konsole aus `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Ändern Sie die Pfade entsprechend.
+1. Heben Sie die Archivierung im Ordner `/usr/local` auf.
+1. Führen Sie in der Konsole `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg` aus. Ändern Sie die Pfade entsprechend.
 
-Gehen Sie wie **folgt vor, um AEM** zu konfigurieren:
+Gehen Sie wie folgt vor, um AEM **zu konfigurieren:**
 
 >[!NOTE]
 >
 >Diese Schritte sind nur erforderlich, wenn eine weitere Anpassung der Codecs erforderlich ist.
 
-1. Open [!UICONTROL CRXDE Lite] in your web browser. Access [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
-2. Select the `/libs/settings/dam/video/format_aac/jcr:content` node and ensure that the node properties are as follows:
+1. Öffnen Sie [!UICONTROL CRXDE Lite] in Ihrem Webbrowser. Zugriff auf [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+2. Wählen Sie den Knoten `/libs/settings/dam/video/format_aac/jcr:content` aus und stellen Sie sicher, dass die Knoteneigenschaften wie folgt lauten:
 
    * `audioCodec` das `aac`.
    * `customArgs` das `-flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8`.
 
-3. To customize the configuration, create an overlay in `/apps/settings/` node and move the same structure under `/conf/global/settings/` node. It cannot be edited in `/libs` node. Um beispielsweise einen Überlagerungspfad zu erstellen, erstellen Sie ihn `/libs/settings/dam/video/fullhd-bp`unter `/conf/global/settings/dam/video/fullhd-bp`.
+3. Um die Konfiguration anzupassen, erstellen Sie eine Überlagerung im Knoten `/apps/settings/` und verschieben Sie die gleiche Struktur unter dem Knoten `/conf/global/settings/`. Es kann nicht im Knoten `/libs` bearbeitet werden. Um beispielsweise den Pfad `/libs/settings/dam/video/fullhd-bp` zu überlagern, erstellen Sie ihn unter `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
@@ -78,4 +78,4 @@ Gehen Sie wie **folgt vor, um AEM** zu konfigurieren:
 
 >[!NOTE]
 >
->Änderungen an den standardmäßigen Out-of-the-Box-Workflow-Modellen (OOTB) werden beim Aktualisieren Ihrer AEM nicht beibehalten. Adobe empfiehlt, dass Sie die geänderten Workflow-Modelle kopieren, bevor Sie diese bearbeiten. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>Änderungen an den standardmäßigen Out-of-the-Box-Workflow-Modellen (OOTB) werden beim Aktualisieren Ihrer AEM nicht beibehalten. Adobe empfiehlt, dass Sie die geänderten Workflow-Modelle kopieren, bevor Sie diese bearbeiten. Kopieren Sie beispielsweise das OOTB [!UICONTROL DAM Update Asset]-Modell, bevor Sie den FFmpeg Transcoding-Schritt im [!UICONTROL DAM Update Asset]-Profil bearbeiten, um die vor der Aktualisierung vorhandenen Videonamen auszuwählen. Anschließend können Sie den Knoten `/apps` überlagern, damit AEM die benutzerdefinierten Änderungen am OOTB-Modell abrufen können.
