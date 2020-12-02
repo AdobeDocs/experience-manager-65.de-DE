@@ -11,6 +11,9 @@ discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 87%
 
 ---
 
@@ -28,12 +31,12 @@ Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formul
 
 Sie können das Layout eines einzelnen Felds oder aller Felder anpassen, um die Position von Beschriftungen und Fehlermeldungen anzupassen. Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Layout auf ein Feld anzuwenden:
 
-### Layout eines einzelnen Felds anpassen {#customize-layout-of-a-single-field}
+### Layout eines einzelnen Felds anpassen  {#customize-layout-of-a-single-field}
 
 Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Layout auf ein einzelnes Feld anzuwenden:
 
-1. Öffnen Sie das Formular im **Stilmodus**. To open the form in style mode, in the page toolbar tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. In the sidebar, under **Form Objects**, select the field and tap the edit button ![edit-button](assets/edit-button.png).
+1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **style**.
+1. Wählen Sie in der Seitenleiste unter **Formularobjekte** das Feld aus und tippen Sie auf die Schaltfläche zum Bearbeiten ![Schaltfläche zum Bearbeiten](assets/edit-button.png).
 1. Wählen Sie den Status des Feldes, das Sie anpassen möchten, und geben Sie den Stil für diesen Status an.
 
    ![Festlegen des Inline-Stils für ein Feld](assets/edit-error-state.png)
@@ -45,12 +48,12 @@ Mit AEM Forms können Sie jetzt ein Design erstellen und auf Ihr Formular anwend
 Indem Sie Designs im Design-Editor erstellen, könen Sie das Layout aller Felder im Formular anpassen. Nachdem Sie ein Design erstellt haben, führen Sie die folgenden Schritte aus, um es auf ein Formular anzuwenden:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. In the edit mode, select a component, then tap ![field-level](assets/field-level.png) > **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, tippen Sie dann auf ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und dann auf ![cmppr](assets/cmppr.png).
 1. Wählen Sie in der Seitenleiste unter „Adaptives Formulardesign“ das Design, das Sie im Design-Editor erstellt haben.
 
-## Benutzerdefiniertes Feldlayout definieren {#create-a-custom-field-layout}
+## Benutzerdefiniertes Feldlayout definieren  {#create-a-custom-field-layout}
 
-1. Öffnen Sie CRXDE Lite. The default URL is https://&#39;[server]:[port]&#39;/crx/de.
+1. Öffnen Sie CRXDE Lite. Die Standard-URL lautet https://&#39;[server]:[port]&#39;/crx/de.
 1. Kopieren Sie ein Feldlayout vom Knoten „/libs/fd/af/layouts/field“ (z. B. defaultFieldLayout) in den Knoten „/apps“ (z. B. „/apps/af-field-layout“).
 1. Benennen Sie den kopierten Knoten und die Datei „defaultFieldLayout.jsp“ um. Beispielsweise in „errorOnRight.jsp“. 
 
