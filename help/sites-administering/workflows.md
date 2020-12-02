@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 93%
 
 ---
 
@@ -36,9 +39,10 @@ Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows 
 >
 >Weitere Informationen finden Sie unter:
 >
->* Applying and participating in workflows: [Working with Workflows](/help/sites-authoring/workflows.md).
+>* Beantragung und Teilnahme an Workflows: [Arbeiten mit Workflows](/help/sites-authoring/workflows.md).
 >* Das Erstellen von Workflow-Modellen und die Erweiterung der Workflow-Funktionalität: [Entwickeln und Erweitern von Workflows](/help/sites-developing/workflows.md).
 >* Verbesserung der Leistung von Workflows, die bedeutende Serverressourcen nutzen: [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+
 >
 
 
@@ -56,7 +60,7 @@ Wenn ein Workflow-Modell gestartet (ausgeführt) wird, wird eine Workflow-Instan
 
 >[!CAUTION]
 >
->Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. See [Developing Workflows](/help/sites-developing/workflows.md#model) for further details.
+>Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere Informationen finden Sie unter [Entwickeln Workflows](/help/sites-developing/workflows.md#model).
 
 Workflow-Instanzen werden über den folgenden Lebenszyklus fortgeführt:
 
@@ -86,7 +90,7 @@ Workflow-Schritte werden je nach Art des jeweiligen Schritts entweder von einem 
 >
 >Wenn ein Fehler auftritt, sollte die Implementierung des Diensts/Schritts das Verhalten bei einem Fehlerszenario handhaben. Die Workflow-Engine selbst wiederholt die Ausführung des Auftrags und protokolliert dann einen Fehler und hält die Instanz an.
 
-## Workflow-Status und -Aktionen {#workflow-status-and-actions}
+## Workflow-Status und -Aktionen  {#workflow-status-and-actions}
 
 Ein Workflow kann einen der folgenden Status aufweisen:
 
@@ -105,5 +109,5 @@ Je nach dem aktuellen Status können Sie Aktionen zur Ausführung von Workflow-I
 
 * **Aussetzen**: Hält die Ausführung des Workflows vorübergehend an. Das Aussetzen ist in Ausnahmefällen nützlich, wenn Sie nicht möchten, dass der Workflow fortgeführt wird – so zum Beispiel bei der Wartung. Durch das Aussetzen ändert sich der Workflow-Status zu „Unterbrochen“.
 * **Fortsetzen**: Startet einen unterbrochenen Workflow an demselben Punkt der Ausführung, an dem er ausgesetzt wurde, und verwendet dieselbe Konfiguration.
-* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in **ABORTED**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
+* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in  **ABORTED**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
 
