@@ -188,26 +188,26 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Keep the configuration file password field `NMDDE_DM_PASSWD` blank. Das Kennwort wird im nächsten Schritt festgelegt.
+   Lassen Sie das Kennwortfeld für die Konfigurationsdatei `NMDDE_DM_PASSWD` leer. Das Kennwort wird im nächsten Schritt festgelegt.
 
 1. Legen Sie das Kennwort wie folgt in der Konfigurationsdatei fest:
 
    * Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu `[NetWorker_root]\Legato\nsr\bin`.
-   * Run the following command: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
+   * Führen Sie den folgenden Befehl aus: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
 1. Erstellen Sie die ausführbaren Batch-Dateien (.bat) zum Sichern der Datenbank. (Weitere Informationen finden Sie in der NetWorker-Dokumentation.) Legen Sie die Details in den Batch-Dateien gemäß Ihrer Installation fest.
 
    * Vollständige Datenbanksicherung (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;NetWorker-Servername>*`-U``[username]`Kennwort`-P`*[]*`-l full`*&lt;Datenbankname>*
+      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * Inkrementelle Datenbanksicherung (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker-Servername>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;Datenbankname>*
+      `[NetWorker_database_module_root]` `-s`*&lt;networker_server_name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Datenbankprotokollsicherung (nsrnmddbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;Datenbankname>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
       wobei:
 
@@ -215,7 +215,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
       `NetWorker_Server_Name` ist der Server, auf dem NetWorker installiert ist.
 
-      `username` und `password` sind der Benutzername und das Kennwort des Datenbankadministrator-Benutzers.
+      `username` und  `password` sind der Benutzername und das Kennwort des Datenbankadministrator-Benutzers.
 
       `database_name` ist der Name der zu sichernden Datenbank.
 
@@ -235,7 +235,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
 Ein Gerät wird hinzugefügt, auf dem die gesicherten Dateien gespeichert werden. Sie können mehrere Geräte mit verschiedenen Formaten hinzufügen.
 
-## EMC Documentum Content Server sichern {#back-up-the-emc-documentum-content-server}
+## EMC Documentum Content Server sichern  {#back-up-the-emc-documentum-content-server}
 
 Führen Sie die folgenden Schritte aus, nachdem Sie eine vollständige Sicherung Ihrer AEM Forms-Daten erstellt haben. (Siehe [Sichern der AEM Forms-Daten](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
@@ -250,7 +250,7 @@ Führen Sie die folgenden Schritte aus, nachdem Sie eine vollständige Sicherung
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
-## EMC Documentum Content Server wiederherstellen {#restore-the-emc-documentum-content-server}
+## EMC Documentum Content Server wiederherstellen  {#restore-the-emc-documentum-content-server}
 
 Führen Sie vor der Wiederherstellung der AEM Forms-Daten die folgenden Aufgaben aus: (Siehe[ Wiederherstellen der AEM Forms-Daten](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
@@ -263,7 +263,7 @@ Führen Sie vor der Wiederherstellung der AEM Forms-Daten die folgenden Aufgaben
 1. Klicken Sie auf die Option „Restore“ und wählen Sie „Normal“ aus.
 1. Wählen Sie auf der linken Bildschirmseite die Datenbank für Ihren Docbase-Dienst aus und klicken Sie in der Symbolleiste auf „Start“.
 1. Starten Sie, nachdem die Datenbank wiederhergestellt wurde, den Docbase-Dienst.
-1. Open a command prompt and change to *[NetWorker_root]*\Legato\nsr\bin
+1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu *[NetWorker_root]*\Legato\nsr\bin
 1. Führen Sie folgenden Befehl aus:
 
    ```shell
