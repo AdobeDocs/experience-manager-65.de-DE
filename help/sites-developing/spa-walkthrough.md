@@ -1,8 +1,8 @@
 ---
-title: Einführung und exemplarische Vorgehensweisen zu SPA
-seo-title: Einführung und exemplarische Vorgehensweisen zu SPA
-description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Verwendung einer einfachen SPA-Anwendung zum Authoring erläutert, wie sie mit dem zugrunde liegenden AEM SPA-Editor in Beziehung steht.
-seo-description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Verwendung einer einfachen SPA-Anwendung zum Authoring erläutert, wie sie mit dem zugrunde liegenden AEM SPA-Editor in Beziehung steht.
+title: Einführung in SPAs und exemplarische Anleitung
+seo-title: Einführung in SPAs und exemplarische Anleitung
+description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
+seo-description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die Nutzung einer einfachen SPA zur Inhaltserstellung erläutert. Außerdem wird gezeigt, wie eine SPA mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,28 +14,28 @@ translation-type: tm+mt
 source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 3%
+ht-degree: 61%
 
 ---
 
 
-# Einführung und exemplarische Vorgehensweisen zu SPA{#spa-introduction-and-walkthrough}
+# Einführung in SPAs und exemplarische Anleitung{#spa-introduction-and-walkthrough}
 
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA-Frameworks erstellen und Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
-Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Dieser Artikel erläutert die Verwendung einer einfachen SPA-Anwendung zum Authoring und zeigt, wie sie mit dem zugrunde liegenden AEM SPA-Editor in Beziehung steht.
+Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. In diesem Artikel wird die Verwendung einer einfachen SPA zur Inhaltserstellung erläutert und gezeigt, wie sie mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 
 >[!NOTE]
 >
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen clientseitiges Rendering (z.B. React oder Angular) durch das SPA-Framework erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, bei denen SPA Framework-basiertes clientseitiges Rendering (z.B. React oder Angular) erforderlich ist.
 
 ## Einführung {#introduction}
 
-### Artikel Ziel {#article-objective}
+### Ziel des Artikels {#article-objective}
 
-In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor der Leser durch eine exemplarische Anleitung des SPA-Editors geführt wird, indem eine einfache SPA-Anwendung verwendet wird, um die grundlegende Bearbeitung von Inhalten zu demonstrieren. Dann taucht er in die Konstruktion der Seite ein und zeigt, wie die SPA-Anwendung mit dem AEM SPA Editor in Beziehung steht und mit ihm interagiert.
+In diesem Artikel werden die grundlegenden Konzepte von SPAs vorgestellt, bevor der Leser eine exemplarische Anleitung zum SPA-Editor erhält, indem eine einfache SPA-Anwendung zum Demonstrieren der grundlegenden Inhaltsbearbeitung verwendet wird. Dann folgen Details zum Aufbau der Seite und zu der Frage, wie die SPA mit dem AEM-SPA-Editor in Beziehung steht und interagiert.
 
-Ziel dieser Einführung und exemplarischen Vorgehensweise ist es, einem AEM Entwickler zu zeigen, warum SPAs relevant sind, wie sie im Allgemeinen funktionieren, wie ein SPA vom AEM SPA Editor behandelt wird und wie es sich von einer AEM unterscheidet.
+Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM-Entwickler zu demonstrieren, warum SPAs relevant sind, wie sie grundsätzlich funktionieren, wie SPAs vom AEM-SPA-Editor gehandhabt werden und wie sie sich von einer standardmäßigen AEM-Anwendung unterscheiden.
 
 Die exemplarische Vorgehensweise basiert auf AEM Standardfunktionalität und der Beispielanwendung &quot;We.Retail&quot;-Protokoll. Folgende Anforderungen müssen erfüllt sein:
 
@@ -44,60 +44,60 @@ Die exemplarische Vorgehensweise basiert auf AEM Standardfunktionalität und der
 
 >[!CAUTION]
 >
->Dieses Dokument verwendet die [We.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken. Es sollte nicht für Projektarbeiten verwendet werden.
+>Dieses Dokument verwendet die [We.Retail-Protokoll-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
->Jedes AEM Projekt sollte den [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
+>Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA SDK verwendet.
 
-### Was ist ein BSG? {#what-is-a-spa}
+### Was ist eine SPA? {#what-is-a-spa}
 
-Eine einseitige Anwendung (SPA) unterscheidet sich von einer herkömmlichen Seite insofern, als sie clientseitig wiedergegeben wird und primär Javascript-gesteuert ist. Dabei wird auf Ajax-Aufrufen zurückgegriffen, um Daten zu laden und die Seite dynamisch zu aktualisieren. Die meisten oder alle Inhalte werden einmal in einer einzelnen Seite geladen, wobei je nach Benutzerinteraktion mit der Seite zusätzliche Ressourcen asynchron geladen werden.
+Eine Single Page Application (SPA) unterscheidet sich von einer herkömmlichen Seite insofern, als sie Client-seitig gerendert wird und primär JavaScript-gesteuert ist. Dabei wird auf Ajax-Aufrufe zurückgegriffen, um Daten zu laden und die Seite dynamisch zu aktualisieren. Der Großteil der Inhalte oder alle Inhalte werden einmal in einem einzelnen Seiten-Load abgerufen, wobei je nach Benutzerinteraktion mit der Seite asynchron zusätzliche Ressourcen geladen werden.
 
-Auf diese Weise wird die Seitenaktualisierung reduziert und dem Benutzer ein Erlebnis präsentiert, das nahtlos, schnell und mehr wie eine native App funktioniert.
+So wird der Bedarf nach Seitenaktualisierungen reduziert und dem Benutzer ein Erlebnis präsentiert, das nahtlos und schnell ist und eher wie eine native App funktioniert.
 
-Der AEM SPA Editor ermöglicht es Frontend-Entwicklern, SPAs zu erstellen, die in eine AEM Site integriert werden können, sodass die Autoren den SPA-Inhalt genauso einfach bearbeiten können wie alle anderen AEM.
+Der AEM-SPA-Editor ermöglicht es Frontend-Entwicklern, SPAs zu erstellen, die sich in eine AEM-Site integrieren lassen, damit Inhaltsautoren SPA-Inhalte so einfach bearbeiten können wie andere AEM-Inhalte.
 
-### Warum ein BSG? {#why-a-spa}
+### Warum eine SPA? {#why-a-spa}
 
-Durch die Beschleunigung, Verkapselung und mehr wie eine native Anwendung wird eine SPA nicht nur für den Besucher der Webseite, sondern auch für Marketingfachleute und Entwickler aufgrund der Art und Weise, wie SPAs funktionieren, zu einem sehr attraktiven Erlebnis.
+Da SPAs schneller, nahtloser und eher wie eine native Anwendung sind, sind sie nicht nur für Besucher der Web-Seite, sondern auch für Marketing-Experten und Entwickler attraktiv. Das hängt mit der Art und Weise zusammen, wie SPAs funktionieren.
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
 **Besucher**
 
-* Besucher möchten native Erlebnisse, wenn sie mit Inhalten interagieren.
-* Es gibt klare Daten, dass eine Konversion umso wahrscheinlicher ist, je schneller eine Seite ist.
+* Besucher bevorzugen native Erlebnisse, wenn sie mit Inhalten interagieren.
+* Es gibt Daten, die klar zeigen, dass eine Konversion umso wahrscheinlicher ist, je schneller eine Seite ist.
 
-**Marketingexperten**
+**Marketing-Experten**
 
-* Marketingexperten möchten umfangreiche, native Erlebnisse zum Angebot bringen, um Besucher dazu anzuregen, sich voll mit Inhalten zu beschäftigen.
-* Durch die Personalisierung werden diese Erlebnisse noch ansprechender.
+* Marketing-Experten wollen umfangreiche, quasi native Erlebnisse bieten, um Besucher dazu zu bringen, sich voll und ganz auf Inhalte einzulassen.
+* Durch Personalisierung können diese Erlebnisse noch ansprechender gestaltet werden.
 
 **Entwickler**
 
-* Entwickler wollen eine saubere Trennung zwischen Inhalt und Präsentation.
-* Eine saubere Trennung macht das System erweiterbarer und ermöglicht eine unabhängige Front-End-Entwicklung.
+* Entwickler wünschen sich eine saubere Trennung zwischen Inhalten und Präsentation.
+* Eine saubere Trennung macht das System leichter erweiterbar und erlaubt eine unabhängige Frontend-Entwicklung.
 
-### Wie wirkt ein BSG? {#how-does-a-spa-work}
+### Wie funktioniert eine SPA? {#how-does-a-spa-work}
 
-Die Grundidee hinter einer SPA ist, dass Aufrufe und Abhängigkeiten von einem Server verringert werden, um Verzögerungen zu minimieren, die durch Serveraufrufe verursacht werden, sodass die SPA die Reaktionsgeschwindigkeit einer nativen Anwendung angeht.
+Die Grundidee hinter einem SPA besteht darin, dass Aufrufe und Abhängigkeiten von einem Server verringert werden, um Verzögerungen zu minimieren, die durch Serveraufrufe verursacht werden, sodass die SPA der Reaktionsgeschwindigkeit einer nativen Anwendung nahekommt.
 
-Auf einer herkömmlichen, sequenziellen Webseite werden nur die für die sofortige Seite benötigten Daten geladen. Das bedeutet, dass beim Wechsel des Besuchers zu einer anderen Seite der Server für die zusätzlichen Ressourcen aufgerufen wird. Es können zusätzliche Aufrufe erforderlich sein, da der Besucher mit Elementen auf der Seite interagiert. Diese Mehrfachaufrufe können zu Verzögerungen oder Verzögerungen führen, da die Seite die Anforderungen des Besuchers einhalten muss.
+Bei einer herkömmlichen, sequenziellen Web-Seite werden nur die für die aktuelle Seite benötigten Daten geladen. Das bedeutet, dass beim Wechseln des Besuchers zu einer anderen Seite der Server für die zusätzlichen Ressourcen aufgerufen werden muss. Es können zusätzliche Aufrufe erforderlich sein, da der Besucher mit Elementen auf der Seite interagiert. Diese Mehrfachaufrufe können zu einer Wahrnehmung von Verzögerungen führen, da die Seite die Anfragen des Besuchers erfüllen muss.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
-Für eine reibungslosere Benutzererfahrung, die dem entspricht, was ein Besucher von mobilen, nativen Apps erwartet, lädt eine SPA beim ersten Laden alle erforderlichen Daten für den Besucher. Dies kann zunächst etwas länger dauern, erfordert dann jedoch keine zusätzlichen Server-Aufrufe mehr.
+Für eine reibungslosere Benutzererfahrung, die dem entspricht, was ein Besucher von mobilen, nativen Apps erwartet, lädt eine SPA alle erforderlichen Daten für den Besucher beim ersten Laden. Dies mag zunächst ein wenig länger dauern, erfordert dann jedoch keine weiteren Server-Aufrufe mehr.
 
 Durch die clientseitige Wiedergabe reagieren Seitenelemente schneller, und die Interaktionen mit der Seite durch den Besucher werden sofort ausgeführt. Alle weiteren erforderlichen Daten werden asynchron aufgerufen, um die Seitengeschwindigkeit zu maximieren.
 
 >[!NOTE]
 >
->Technische Informationen zur Funktionsweise von SPAs in AEM finden Sie im Artikel [Erste Schritte mit SPAs in AEM](/help/sites-developing/spa-getting-started-react.md).
+>Technische Details zur Funktionsweise SPA in AEM finden Sie im Artikel [Erste Schritte mit SPA in AEM](/help/sites-developing/spa-getting-started-react.md).
 >
->Weitere Informationen zu Design, Architektur und technischem Arbeitsablauf des SPA-Editors finden Sie im Artikel [SPA Editor-Übersicht](/help/sites-developing/spa-overview.md).
+>Einen genaueren Überblick über Design, Architektur und technischen Arbeitsablauf des SPA-Editors finden Sie im Artikel [SPA Editor Overview](/help/sites-developing/spa-overview.md).
 
-## Content Editing Experience with SPA {#content-editing-experience-with-spa}
+## Inhaltsbearbeitungserlebnis mit SPA {#content-editing-experience-with-spa}
 
-Wenn eine SPA erstellt wurde, um den AEM SPA-Editor zu nutzen, merkt der Inhaltsersteller keine Unterschiede beim Bearbeiten und Erstellen von Inhalten. Es stehen gängige AEM zur Verfügung, sodass keine Änderungen am Arbeitsablauf des Autors erforderlich sind.
+Wenn ein SPA erstellt wurde, um den AEM SPA Editor zu nutzen, merkt der Inhaltsautor keinen Unterschied beim Bearbeiten und Erstellen von Inhalten. Es stehen gängige AEM-Funktionen zur Verfügung; am Workflow des Autors keine Änderungen erforderlich sind.
 
 >[!NOTE]
 >
@@ -120,18 +120,18 @@ Wenn eine SPA erstellt wurde, um den AEM SPA-Editor zu nutzen, merkt der Inhalts
 
    ![screen_shot_2018-06-07at142937](assets/screen_shot_2018-06-07at142937.png)
 
-1. Bearbeiten Sie den Inhalt innerhalb von AEM normal und beachten Sie, dass die Änderungen beibehalten werden.
+1. Bearbeiten Sie den Inhalt in AEM wie gewohnt und beachten Sie, dass die Änderungen persistiert werden.
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
    >[!NOTE]
-   >Weitere Informationen zum Texteditor und den [SPAs finden Sie unter Übersicht über](spa-overview.md#requirements-limitations) den SPA-Editor.
+   >Weitere Informationen zum Texteditor und zur SPA finden Sie unter [SPA Editor Overview](spa-overview.md#requirements-limitations).
 
-1. Verwenden Sie den Assets-Browser, um ein neues Bild per Drag &amp; Drop in eine Bildkomponente zu ziehen.
+1. Verwenden Sie den Assets-Browser, um per Drag-and-Drop ein neues Bild in eine Bildkomponente zu ziehen.
 
    ![screen_shot_2018-06-07at143530](assets/screen_shot_2018-06-07at143530.png)
 
-1. Die Änderung wird beibehalten.
+1. Die Änderung wird persistiert.
 
    ![screen_shot_2018-06-07at143732](assets/screen_shot_2018-06-07at143732.png)
 
@@ -141,15 +141,15 @@ Weitere Authoring-Werkzeuge wie das Ziehen und Ablegen zusätzlicher Komponenten
 >
 >Der SPA-Editor ändert das DOM der Anwendung nicht. Die SPA selbst ist für das DOM verantwortlich.
 >
->Um zu sehen, wie dies funktioniert, fahren Sie mit dem nächsten Abschnitt dieses Artikels [SPA-Apps und dem AEM SPA-Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)fort.
+>Um zu erfahren, wie das funktioniert, fahren Sie mit dem nächsten Abschnitt des Artikels [SPAs und der AEM-SPA-Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor) fort.
 
-## SPA-Apps und der AEM SPA-Editor {#spa-apps-and-the-aem-spa-editor}
+## SPAs und der AEM-SPA-Editor {#spa-apps-and-the-aem-spa-editor}
 
-Die Erfahrung, wie sich eine SPA für den Endbenutzer verhält, und die anschließende Überprüfung der SPA-Seite helfen, besser zu verstehen, wie eine SAP-App mit dem SPA-Editor in AEM funktioniert.
+Wenn Sie erfahren, wie sich ein SPA für den Endbenutzer verhält und dann die SPA überprüfen, können Sie besser verstehen, wie eine SAP-App mit dem SPA Editor in AEM funktioniert.
 
 ### Verwenden einer SPA-Anwendung {#using-an-spa-application}
 
-1. Laden Sie die Web.Retail-Protokoll-Anwendung entweder auf dem Veröffentlichungsserver oder unter Verwendung der Option **Ansicht wie veröffentlicht** im Menü &quot; **Seiteninformationen** &quot;des Seiteneditors.
+1. Laden Sie die Web.Retail-Protokoll-Anwendung entweder auf dem Veröffentlichungsserver oder verwenden Sie die Option **Ansicht als Veröffentlicht** aus dem Menü **Seiteninformationen** im Seiteneditor.
 
    `/content/we-retail-journal/react.html`
 
@@ -157,31 +157,31 @@ Die Erfahrung, wie sich eine SPA für den Endbenutzer verhält, und die anschlie
 
    Beachten Sie die Seitenstruktur, einschließlich Navigation zu untergeordneten Seiten, Wetter-Widget und Artikeln.
 
-1. Navigieren Sie mithilfe des Menüs zu einer untergeordneten Seite und sehen Sie, dass die Seite sofort geladen wird, ohne dass eine Aktualisierung erforderlich ist.
+1. Navigieren Sie mithilfe des Menüs zu einer untergeordneten Seite und beachten Sie, dass die Seite sofort geladen wird, ohne dass eine Aktualisierung erforderlich ist.
 
    ![screen_shot_2018-06-08at102815](assets/screen_shot_2018-06-08at102815.png)
 
-1. Öffnen Sie die integrierten Entwicklerwerkzeuge Ihres Browsers und überwachen Sie die Aktivität des Netzwerks, während Sie durch die untergeordneten Seiten navigieren.
+1. Öffnen Sie die integrierten Entwickler-Tools Ihres Browsers und überwachen Sie beim Navigieren durch die untergeordneten Seiten die Netzwerkaktivität.
 
    ![screen_shot_2018-06-08at103922](assets/screen_shot_2018-06-08at103922.png)
 
-   Während Sie von Seite zu Seite in der App wechseln, ist der Traffic sehr gering. Die Seite wird nicht neu geladen und nur die neuen Bilder werden angefordert.
+   Wenn Sie in der App von Seite zu Seite wechseln, ist der Traffic sehr gering. Die Seite wird nicht neu geladen; lediglich die neuen Bilder werden angefordert.
 
-   Die SPA verwaltet den Inhalt und das Routing vollständig clientseitig.
+   Die SPA verwaltet Inhalt und Routing komplett auf der Client-Seite.
 
-Wenn die Seite beim Navigieren durch die untergeordneten Seiten nicht neu geladen wird, wie wird sie dann geladen?
+Wenn die Seite beim Navigieren durch die untergeordneten Seiten nicht neu geladen wird: Wie wird sie dann geladen?
 
-Der nächste Abschnitt, [Laden einer SPA-Anwendung](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application), geht näher auf die Mechanismen des Ladens der SPA ein und beschreibt, wie Inhalte synchron und asynchron geladen werden können.
+Im nächsten Abschnitt [Laden einer SPA-Anwendung](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application) werden die Mechanismen zum Laden der SPA und zum synchronen und asynchronen Laden von Inhalten genauer beschrieben.
 
 ### Laden einer SPA-Anwendung {#loading-an-spa-application}
 
-1. Laden Sie, falls noch nicht geladen, die Anwendung &quot;We.Retail Protokoll&quot;entweder auf dem Veröffentlichungsserver oder unter Verwendung der Option &quot; **Ansicht wie veröffentlicht** &quot;im Menü &quot; **Seiteninformationen** &quot;des Seiteneditors.
+1. Laden Sie, falls noch nicht geschehen, die Anwendung „We.Retail Journal“ entweder auf den Veröffentlichungs-Server oder unter Verwendung der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
 
    `/content/we-retail-journal/react.html`
 
    ![screen_shot_2018-06-07at144736](assets/screen_shot_2018-06-07at144736.png)
 
-1. Verwenden Sie das integrierte Tool Ihres Browsers, um die Seitenquelle Ansicht.
+1. Verwenden Sie das integrierte Tool Ihres Browsers, um die Quelle der Seiten anzuzeigen.
 1. Beachten Sie, dass der Inhalt der Quelle extrem begrenzt ist.
 
    ```
@@ -208,61 +208,61 @@ Der nächste Abschnitt, [Laden einer SPA-Anwendung](/help/sites-developing/spa-w
    </html>
    ```
 
-   Die Seite enthält keinen Inhalt im Hauptteil. Es besteht hauptsächlich aus Stylesheets und einem Aufruf eines React-Skripts, `we-retail-journal-react.js`.
+   Die Seite enthält im Hauptteil keine Inhalte. Es besteht hauptsächlich aus Stylesheets und einem Aufruf eines React-Skripts, `we-retail-journal-react.js`.
 
    Dieses React-Skript ist der primäre Treiber dieser Anwendung und ist für die Wiedergabe des gesamten Inhalts verantwortlich.
 
-1. Verwenden Sie die integrierten Tools Ihres Browsers, um die Seite zu überprüfen. Sehen Sie sich den Inhalt des DOM vollständig geladen an.
+1. Nutzen Sie die integrierten Tools Ihres Browsers, um die Seite zu überprüfen. Sehen Sie sich den Inhalt des vollständig geladenen DOM an.
 
    ![screen_shot_2018-06-07at151848](assets/screen_shot_2018-06-07at151848.png)
 
-1. Wechseln Sie im Inspektor zur Registerkarte &quot;Netzwerk&quot;und laden Sie die Seite erneut.
+1. Wechseln Sie im Inspektor zur Registerkarte „Netzwerk“ und laden Sie die Seite neu.
 
-   Beachten Sie, dass Bildanforderungen ignoriert werden, dass die primären Ressourcen, die für die Seite geladen werden, die Seite selbst, CSS, das JavaScript &quot;React&quot;, seine Abhängigkeiten sowie JSON-Daten für die Seite sind.
+   Beachten Sie, dass wenn Bildanfragen ignoriert werden, die primären Ressourcen, die für die Seite geladen werden, die Seite selbst, CSS, das React-JavaScript, seine Abhängigkeiten sowie JSON-Daten für die Seite sind.
 
    ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 
-1. Laden Sie die Datei `react.model.json` in eine neue Registerkarte.
+1. Laden Sie die `react.model.json` in einer neuen Registerkarte.
 
    `/content/we-retail-journal/react.model.json`
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   Der AEM SPA Editor nutzt [AEM Content Services](/help/assets/content-fragments/content-fragments.md) , um den gesamten Inhalt der Seite als JSON-Modell bereitzustellen.
+   Der AEM-SPA-Editor nutzt [AEM Content Services](/help/assets/content-fragments/content-fragments.md), um den gesamten Inhalt der Seite als JSON-Modell bereitzustellen.
 
-   Durch die Implementierung spezifischer Schnittstellen stellen Sling-Modelle die für die SPA erforderlichen Informationen bereit. Der Versand der JSON-Daten wird nach unten auf jede Komponente (von Seite zu Absatz, zu Komponente usw.) übertragen.
+   Durch Implementierung spezifischer Schnittstellen stellen Sling-Modelle die für die SPA notwendigen Daten bereit. Die Bereitstellung der JSON-Daten wird nach unten an die jeweilige Komponente delegiert (von Seite zu Absatz zu Komponente usw.).
 
    Jede Komponente wählt aus, was sie anzeigt und wie sie dargestellt wird (serverseitig mit HTML oder clientseitig mit React). Natürlich konzentriert sich dieser Artikel auf die clientseitige Wiedergabe mit React.
 
-1. Das Modell kann auch Seiten gruppieren, sodass sie synchron geladen werden, wodurch sich die Anzahl der erforderlichen Seitenneuladungen verringert.
+1. Das Modell kann Seiten auch zusammen gruppieren, damit sie synchron geladen werden. Dadurch verringert sich die Zahl der erforderlichen Seitenneuladungen.
 
-   Im Beispiel des We.Retail-Protokolls werden die `home`-, `blog`- und `aboutus` -Seiten synchron geladen, da Besucher in der Regel alle diese Seiten besuchen. Die `weather` Seite wird jedoch asynchron geladen, da es für Besucher weniger wahrscheinlich ist, sie zu besuchen.
+   Im Protokoll We.Retail werden die Seiten `home`, `blog` und `aboutus` synchron geladen, da Besucher normalerweise alle diese Seiten besuchen. Die Seite `weather` wird jedoch asynchron geladen, da Besucher sie mit geringerer Wahrscheinlichkeit besuchen.
 
-   Dieses Verhalten ist nicht obligatorisch und kann vollständig definiert werden.
+   Dieses Verhalten ist nicht obligatorisch und kann umfassend definiert werden.
 
    ![screen_shot_2018-06-07at153945](assets/screen_shot_2018-06-07at153945.png)
 
-1. Um diesen Verhaltensunterschied Ansicht, laden Sie die Seite neu und löschen Sie die Netzwerk-Aktivität des Inspektors. Navigieren Sie zum Blog und zu unseren Seiten im Seitenmenü und sehen Sie, dass keine Netzwerk-Aktivität gemeldet wird.
+1. Um diesen Unterschied im Verhalten zu sehen, laden Sie die -Seite neu und löschen Sie die Netzwerkaktivität des Inspektors. Navigieren Sie zum Blog und zu unseren Seiten im Seitenmenü und sehen Sie, dass keine Netzwerk-Aktivität gemeldet wird.
 
-   Navigieren Sie zur Wetterseite und sehen Sie, dass die Seite asynchron aufgerufen `weather.model.json` wird.
+   Navigieren Sie zur Wetterseite und sehen Sie, dass `weather.model.json` asynchron aufgerufen wird.
 
    ![screen_shot_2018-06-07at155738](assets/screen_shot_2018-06-07at155738.png)
 
 ### Interaktion mit dem SPA-Editor {#interaction-with-the-spa-editor}
 
-Mithilfe der Beispielanwendung &quot;We.Retail Protokoll&quot;ist klar, wie sich die App beim Veröffentlichen verhält und geladen wird, wobei Inhaltsdienste für JSON Content Versand sowie das asynchrone Laden von Ressourcen genutzt werden.
+Mithilfe der Beispielanwendung &quot;We.Retail Protokoll&quot;ist klar, wie sich die App verhält und beim Veröffentlichen geladen wird. Dazu werden Inhaltsdienste für JSON Content Versand sowie das asynchrone Laden von Ressourcen genutzt.
 
-Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor nahtlos in AEM.
+Darüber hinaus ist die Inhaltserstellung mit einem SPA-Editor für den Inhaltsautor in AEM nahtlos.
 
-Im folgenden Abschnitt werden wir den Vertrag untersuchen, der es dem SPA Editor erlaubt, Komponenten innerhalb der SPA miteinander zu verbinden, um Komponenten zu AEM und diese nahtlose Bearbeitung zu erzielen.
+Im folgenden Abschnitt werden wir uns den Vertrag ansehen, der es dem SPA-Editor erlaubt, Komponenten innerhalb der SPA mit AEM-Komponenten zu verbinden und so für ein nahtloses Bearbeitungserlebnis zu sorgen.
 
-1. Laden Sie die Web.Retail-Protokoll-Anwendung im Editor und wechseln Sie in den **Vorschau** -Modus.
+1. Laden Sie die Web.Retail-Protokoll-Anwendung im Editor und wechseln Sie zum **Vorschau**-Modus.
 
    `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
-1. Überprüfen Sie mithilfe der integrierten Entwicklerwerkzeuge Ihres Browsers den Inhalt der Seite. Wählen Sie mit dem Auswahlwerkzeug eine bearbeitbare Komponente auf der Seite aus und Ansicht der Elementdetails.
+1. Überprüfen Sie mithilfe der integrierten Entwickler-Tools Ihres Browsers den Inhalt der Seite. Wählen Sie mit dem Auswahl-Tool eine bearbeitbare Komponente auf der Seite aus und zeigen Sie die Elementdetails an.
 
-   Beachten Sie, dass die Komponente über ein neues Datenattribut verfügt `data-cq-data-path`.
+   Beachten Sie, dass die Komponente über ein neues Datenattribut verfügt (`data-cq-data-path`).
 
    ![screen_shot_2018-06-08at095124](assets/screen_shot_2018-06-08at095124.png)
 
@@ -272,21 +272,21 @@ Im folgenden Abschnitt werden wir den Vertrag untersuchen, der es dem SPA Editor
 
    Diese Pfade ermöglichen das Abrufen und Verknüpfen des Konfigurationsobjekts des Bearbeitungskontexts jeder Komponente.
 
-   Dies ist das einzige Markup-Attribut, das erforderlich ist, damit der Editor dies als bearbeitbare Komponente innerhalb der SPA erkennt. Auf der Grundlage dieses Attributs bestimmt der SPA-Editor, welche editierbare Konfiguration mit der Komponente verknüpft ist, sodass der richtige Rahmen, die richtige Symbolleiste usw. geladen wurde.
+   Dies ist das einzige Markup-Attribut, das erforderlich ist, damit der Editor das Element als bearbeitbare Komponente innerhalb der SPA erkennen kann. Auf Grundlage dieses Attributs bestimmt der SPA-Editor, welche bearbeitbare Konfiguration mit der Komponente verknüpft ist, sodass der richtige Rahmen, die richtige Symbolleiste usw. geladen werden.
 
-   Einige spezifische Klassennamen werden auch für die Kennzeichnung von Platzhaltern und für die Drag &amp; Drop-Funktion von Assets hinzugefügt.
+   Einige spezifische Klassennamen werden auch für die Kennzeichnung von Platzhaltern und für die Drag-and-Drop-Funktion von Assets hinzugefügt.
 
    >[!NOTE]
    >
-   >Hierbei handelt es sich um eine Verhaltensänderung von serverseitigen wiedergegebenen Seiten in AEM, wo für jede bearbeitbare Komponente ein `cq` Element eingefügt wird.
+   >Hierbei handelt es sich um eine Verhaltensänderung von serverseitig gerenderten Seiten in AEM, wobei für jede bearbeitbare Komponente ein `cq`-Element eingefügt wird.
    >
    >
    >Durch diesen Ansatz in SPA entfällt die Notwendigkeit, benutzerdefinierte Elemente zu injizieren. Dabei wird nur ein zusätzliches Datenattribut verwendet, wodurch das Markup für den Frontend-Entwickler einfacher wird.
 
 ## Nächste Schritte {#next-steps}
 
-Jetzt, da Sie die SPA-Bearbeitungserfahrung in AEM verstehen und wie ein SPA mit dem SPA-Editor verknüpft ist, sollten Sie einen tieferen Einblick in die Erstellung eines SPA-Editors gewinnen.
+Da Sie nun das SPA-Bearbeitungserlebnis in AEM kennen und die Beziehung einer SPA zum SPA-Editor verstehen, können Sie sich genauere Einblicke in die Erstellung einer SPA verschaffen.
 
-* [Erste Schritte mit SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) zeigen, wie ein grundlegendes SPA für die Arbeit mit dem SPA-Editor in AEM
-* [Der SPA Editor-Überblick](/help/sites-developing/spa-overview.md) vertieft das Kommunikationsmodell zwischen AEM und SPA.
-* [Die Entwicklung von SPAs für AEM](/help/sites-developing/spa-architecture.md) beschreibt, wie Front-End-Entwickler dazu gebracht werden können, eine SPA für AEM zu entwickeln, und wie SPAs mit AEM Architektur interagieren.
+* [Erste Schritte mit SPA in ](/help/sites-developing/spa-getting-started-react.md) AEM zeigt, wie ein grundlegendes SPA für die Arbeit mit dem SPA Editor in AEM
+* [SPA-Editor – Überblick](/help/sites-developing/spa-overview.md) liefert genauere Informationen zum Kommunikationsmodell zwischen AEM und der SPA.
+* [Entwicklung von SPAs für AEM](/help/sites-developing/spa-architecture.md) beschreibt, wie Frontend-Entwickler damit beauftragt werden können, eine SPA für AEM zu entwickeln, und wie SPAs mit der Architektur von AEM interagieren.
