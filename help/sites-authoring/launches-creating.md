@@ -12,19 +12,22 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 98%
 
 ---
 
 
 # Erstellen von Launches{#creating-launches}
 
-Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Webseiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
+Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
 
-* The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
+* Der Titel wird in der Leiste [Verweise](/help/sites-authoring/author-environment-tools.md#references) angezeigt. Von dort aus haben Autoren Zugriff zur Bearbeitung.
 * Die untergeordneten Seiten der Quellseiten werden standardmäßig in den Launch eingeschlossen. Sie können bei Bedarf nur die Quellseite verwenden.
 * Standardmäßig aktualisiert [Live Copy](/help/sites-administering/msm.md) automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird.
 
-Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung und Aktivierung der Launch-Seiten angeben. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
+Optional können Sie das **Launch-Datum** (und die Uhrzeit) für die Bewerbung und Aktivierung der Launch-Seiten angeben. Das **Launch-Datum** funktioniert allerdings nur in Kombination mit der Kennzeichnung **Produktionsbereit** (siehe [Bearbeiten einer Launch-Konfiguration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)). Damit die Aktionen automatisch erfolgen, muss beides festgelegt werden.
 
 ## Erstellen eines Launches {#creating-a-launch}
 
@@ -45,16 +48,18 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
       1. Wählen Sie in der Symbolleiste **Erstellen** aus, um das Auswahlfeld zu öffnen.
       1. Wählen Sie dann **Launch erstellen** aus, um den Assistenten zu öffnen.
+
    >[!NOTE]
    >
-   >In der **Sites-Konsole** können Sie auch den [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
+   >In der **Sites** Console können Sie auch den [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) verwenden, um eine Seite auszuwählen, bevor Sie **Erstellen** auswählen.
    >
-   >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet. 
+   >Dadurch wird die ausgewählte Seite als Anfangsquellseite verwendet.
 
 1. Im Schritt **Quelle auswählen** müssen Sie **Seiten hinzufügen**. Sie können mehrere Seiten auswählen, wobei jeweils der Pfad angegeben werden muss:
 
    * Navigieren Sie zur erforderlichen Position.
    * Wählen Sie die Quellseite(n) aus und bestätigen Sie (durch ein Häkchen).
+
    Wiederholen Sie dies nach Bedarf.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    * **Unterseiten einschließen**:
 
       * Geben Sie an, ob der Launch mit den oder ohne die untergeordneten Seiten erstellt werden soll.  Standardmäßig werden Unterseiten eingeschlossen.
+
    Fahren Sie mit **Weiter** fort.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -79,21 +85,22 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    * **Launch-Titel**: Der Name des Launches. Der Name sollte für Autoren einen Sinn ergeben.
    * **mit vorhandenem Inhalt**: Der ursprüngliche Inhalt wird verwendet, um den Launch zu erstellen.
    * **mit einer neuen Vorlage, um die Seite zu ersetzen**: Weitere Einzelheiten erfahren Sie unter [Erstellen von Launches mit einer neuen Vorlage](#create-launch-with-new-template).
-   * **Quellseiten-Livedaten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Quellseiten-Live-Daten übernehmen**: Wählen Sie diese Option aus, um den Inhalt von Launch-Seiten automatisch zu aktualisieren, wenn die Quellseiten sich ändern. Mit dieser Option wird dies erreicht, indem der Launch eine [Live-Kopie](/help/sites-administering/msm.md) erstellt wird.
 
       Standardmäßig ist diese Option aktiviert.
 
-   * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Kennzeichnung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Markierung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Verwenden Sie **Erstellen**, um den Vorgang abzuschließen und den neuen Launch zu erstellen. Im Bestätigungsdialogfeld werden Sie gefragt, ob Sie den Launch sofort öffnen möchten.
 
    Wenn Sie zur Konsole zurückkehren (über **Fertig**), können Sie den Launch wie folgt einsehen (und darauf zugreifen):
 
-   * in der [**Launch-Konsole **](/help/sites-authoring/launches.md#the-launches-console)
-   * unter [**Verweise **in der Konsole** Sites **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * in der [**Launch-Konsole**](/help/sites-authoring/launches.md#the-launches-console)
+   * unter [**Verweise** in der Konsole **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
-### Create Launch with New Template {#create-launch-with-new-template}
+### Erstellen von Launches mit einer neuen Vorlage {#create-launch-with-new-template}
 
 Bei der [Erstellung eines Launches](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) können Sie auswählen, ob eine neue Vorlage verwendet werden soll:
 
@@ -118,7 +125,7 @@ Die Auswahl dieser Option bewirkt Folgendes:
 >
 >Dieser Mechanismus kann verwendet werden, um die Vorlage einer [vorhandenen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) zu ändern, wobei jedoch der Verlust von Inhalten zu berücksichtigen ist.
 
-### Erstellen von verschachtelten Launches {#creating-a-nested-launch}
+### Erstellen von verschachtelten Launches   {#creating-a-nested-launch}
 
 Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Launches) bietet Ihnen die Möglichkeit, einen Launch aus einem vorhandenen Launch zu erstellen, sodass Autoren bereits vorgenommene Änderungen nutzen können, anstatt dieselben Änderungen für jeden Launch erneut vornehmen zu müssen.
 
@@ -126,12 +133,12 @@ Das Erstellen eines verschachtelten Launches (eines Launches innerhalb eines Lau
 >
 >Siehe auch [Weiterleiten eines verschachtelten Launches](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch).
 
-#### Erstellen von verschachtelten Launches: Konsole „Launches“{#creating-a-nested-launch-launches-console}
+#### Erstellen von verschachtelten Launches: Konsole „Launches“ {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist im Wesentlichen das Gleiche wie das Erstellen jeder anderen Form eines Launches mit der Ausnahme, dass Sie zu der Launch-Verzweigung `/content/launches` navigieren müssen:
 
-1. Wählen Sie in der **Launch-Konsole** die Option **Erstellen**.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
+1. Wählen Sie in der Konsole **Launches** die Option **Erstellen** aus.
+1. Wählen Sie **Seiten hinzufügen** aus und navigieren Sie zur Launch-Verzweigung, indem Sie `/content/launches` im Filter angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
@@ -139,18 +146,18 @@ Creating a nested launch from the **Launches** console is basically the same as 
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-#### Erstellen von verschachtelten Launches: Konsole „Sites“{#creating-a-nested-launch-sites-console}
+#### Erstellen von verschachtelten Launches: Konsole „Sites“ {#creating-a-nested-launch-sites-console}
 
 So erstellen Sie einen verschachtelten Launch auf Grundlage eines vorhandenen Launches über die Konsole **Sites**:
 
-1. Rufen Sie [Launch aus Verweisen (Konsole „Sites“)](/help/sites-authoring/launches.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
+1. Rufen Sie [Launches aus Verweisen (Konsole „Sites“)](/help/sites-authoring/launches.md#launches-in-references-sites-console) auf, um die verfügbaren Aktionen anzuzeigen.
 1. Wählen Sie **Launch erstellen** aus, um den Assistenten zu öffnen (da die Quelle bereits ausgewählt wurde, wird der Schritt **Quelle auswählen** übersprungen).
 
 1. Geben Sie den **Launch-Titel** und jegliche weiteren erforderlichen Details ein (wie bei einem normalen Launch).
 
 1. Verwenden Sie **Erstellen**, um den Vorgang abzuschließen und den neuen Launch zu erstellen. Im Bestätigungsdialogfeld werden Sie gefragt, ob Sie den Launch sofort öffnen möchten.
 
-   If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
+   Bei Auswahl von **Fertig** wird erneut die Leiste **Verweise** der Konsole **Sites** angezeigt. Bei Auswahl der entsprechenden Seite wird der neue Launch angezeigt.
 
 ### Löschen von Launches {#deleting-a-launch}
 
