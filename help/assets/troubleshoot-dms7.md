@@ -25,14 +25,14 @@ Das folgende Dokument beschreibt das Beheben von Fehlern mit Dynamic Media im Au
 
 Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie folgende Schritte ausführen:
 
-* Start up command contains the `-r dynamicmedia_scene7` runmode argument.
+* Beginn-up-Befehl enthält das Argument `-r dynamicmedia_scene7` runmode.
 * Alle Cumulative Fix Packs für AEM 6.4 wurden *vor* den verfügbaren Feature Packs für Dynamic Media installiert.
 * Das optionale Feature Pack 18912 wurde installiert.
 
    Dieses optionale Feature Pack bietet FTP-Unterstützung und Hilfe bei der Migration von Assets aus Dynamic Media Classic (Scene7) in Dynamic Media.
 
-* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **[!UICONTROL Available Configurations.]**
-* Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
+* Navigieren Sie zur Benutzeroberfläche &quot;Cloud Services&quot;und bestätigen Sie, dass das bereitgestellte Konto unter **[!UICONTROL Verfügbare Konfigurationen angezeigt wird.]**
+* Stellen Sie sicher, dass der Replizierungsagenten `Dynamic Media Asset Activation (scene7)` aktiviert ist.
 
    Diesen Replizierungsagent finden Sie unter „Agenten für Autor“.
 
@@ -40,7 +40,7 @@ Stellen Sie sicher, dass Dynamic Media korrekt eingerichtet wurde, indem Sie fol
 
 Die folgenden allgemeinen Tipps und Tricks gelten für alle Assets.
 
-### Asset-Synchronisierungsstatuseigenschaften   {#asset-synchronization-status-properties}
+### Asset-Synchronisierungsstatuseigenschaften  {#asset-synchronization-status-properties}
 
 Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob Assets erfolgreich zwischen AEM und Dynamic Media synchronisiert wurden:
 
@@ -69,7 +69,7 @@ Wenn Sie ein vorhandenes Dynamic Media-Asset (gleicher Name und Speicherort) ers
 
 * Wenn Sie beide beibehalten, wird ein neues Asset mit einem eindeutigen Namen für die veröffentlichte Asset-URL erstellt. Beispiel: `image.jpg` ist das ursprüngliche Asset und `image1.jpg` ist das neu hochgeladene Asset.
 
-* Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Bereitstellung.
+* Das Erstellen einer Version wird im Scene7-Modus von Dynamic Media nicht unterstützt. Die neue Version ersetzt das vorhandene Asset in der Implementierung.
 
 ## Bilder und Sets   {#images-and-sets}
 
@@ -114,12 +114,12 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
    <td><p>Verwenden Sie für das Karussell nur Bilder derselben Größe.</p> </td>
   </tr>
   <tr>
-   <td>Bild wird im Viewer für dynamische Medien nicht als Vorschau angezeigt</td>
+   <td>Bild wird im Viewer für Dynamic Media nicht als Vorschau angezeigt</td>
    <td><p>Überprüfen Sie, ob das Asset <code>dam:scene7File</code> in den Metadateneigenschaften (CRXDE Lite) enthält.</p> </td>
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
   </tr>
   <tr>
-   <td>Hochgeladenes Asset wird nicht im Asset-Wähler angezeigt</td>
+   <td>Hochgeladenes Asset wird nicht in der Asset-Auswahl angezeigt</td>
    <td><p>Überprüfen Sie, ob das Asset die Eigenschaft <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite) aufweist.</p> </td>
    <td><p>Überprüfen Sie, ob alle Elemente verarbeitet wurden.</p> </td>
   </tr>
@@ -168,13 +168,13 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>Video ist nicht kodiert</td>
    <td>
     <ul>
-     <li>Check that the runmode is <code>dynamicmedia_scene7</code>.</li>
+     <li>Überprüfen Sie, ob der Ausführungsmodus <code>dynamicmedia_scene7</code> ist.</li>
      <li>Prüfen Sie, ob der Dynamic Media-Cloud-Service konfiguriert ist.</li>
      <li>Prüfen Sie, ob dem Upload-Ordner ein Videoprofil zugeordnet ist.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Überprüfen Sie Ihre AEM-Instanz mit <code>-r dynamicmedia_scene7</code></li>
+     <li>Überprüfen Sie Ihre AEM mit <code>-r dynamicmedia_scene7</code></li>
      <li>Prüfen Sie, ob die Dynamic Media-Konfiguration unter Cloud-Services ordnungsgemäß eingerichtet ist.</li>
      <li>Überprüfen Sie, ob der Ordner ein Videoprofil hat. Überprüfen Sie außerdem das Videoprofil.</li>
     </ol> </td>
@@ -189,8 +189,8 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td> </td>
   </tr>
   <tr>
-   <td>Videoausgabeformat fehlt</td>
-   <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabeformate vorhanden sind:</p>
+   <td>Videoausgabedarstellung fehlt</td>
+   <td><p>Wenn das Video hochgeladen wurde, aber keine kodierten Ausgabedarstellungen vorhanden sind:</p>
     <ul>
      <li>Prüfen Sie, ob dem Ordner ein Videoprofil zugewiesen ist.</li>
      <li>Prüfen Sie anhand von <code>dam:scene7FileAvs</code> in den Metadaten, ob die Verarbeitung des Videos abgeschlossen wurde.</li>
