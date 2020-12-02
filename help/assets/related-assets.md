@@ -23,11 +23,11 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
 ## Zuordnen von Assets {#relating-assets}
 
-1. From the [!DNL Experience Manager] interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. Öffnen Sie in der Oberfläche [!DNL Experience Manager] die Seite **[!UICONTROL Eigenschaften]** für ein Asset, das Sie verknüpfen möchten.
 
    ![Öffnen der Seite &quot;Eigenschaften&quot;eines Assets, um das Asset zu verknüpfen](assets/asset-properties-relate-assets.png)
 
-   *Abbildung:[!DNL Assets][!UICONTROL Seite &quot;Eigenschaften]&quot;, um Assets zu verknüpfen.*
+   *Abbildung:  [!DNL Assets] [!UICONTROL Eigenschaften ] zu verknüpfen.*
 
    Wählen Sie alternativ das gewünschte Asset in der Liste aus.
 
@@ -37,7 +37,7 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** ![relate assets](assets/do-not-localize/link-relate.png) from the toolbar.
+1. Um ein anderes Asset mit dem ausgewählten Asset zu verknüpfen, klicken Sie in der Symbolleiste auf **[!UICONTROL Relate]** ![Verknüpfen von Assets](assets/do-not-localize/link-relate.png).
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um die Quelldatei des Elements zuzuordnen, wählen Sie **[!UICONTROL Quelle]** aus der Liste aus.
@@ -49,25 +49,25 @@ Mit dieser Funktion haben Sie die Flexibilität, eine PDF- oder JPG-Datei mit ni
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Klicken Sie auf **[!UICONTROL Bestätigen]**.
-1. Click **[!UICONTROL OK]** to close the dialog. Je nach Auswahl der Beziehung in Schritt 3 wird das zugeordnete Asset unter einer entsprechenden Kategorie im Abschnitt **[!UICONTROL Zugehörig]** aufgeführt. Beispiel: Wenn das zugeordnete Asset die Quelldatei des aktuellen Elements ist, wird es unter **[!UICONTROL Quelle]** aufgeführt.
+1. Klicken Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Je nach Auswahl der Beziehung in Schritt 3 wird das zugeordnete Asset unter einer entsprechenden Kategorie im Abschnitt **[!UICONTROL Zugehörig]** aufgeführt. Beispiel: Wenn das zugeordnete Asset die Quelldatei des aktuellen Elements ist, wird es unter **[!UICONTROL Quelle]** aufgeführt.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfung]** von Assets ![aufheben](assets/do-not-localize/link-unrelate-icon.png) .
+1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Aufheben der Verknüpfung]** ![Aufheben der Verknüpfung von Assets](assets/do-not-localize/link-unrelate-icon.png).
 
-1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
+1. Wählen Sie im Dialogfeld **[!UICONTROL Beziehungen entfernen]** die Elemente aus, für die Sie die Verknüpfung aufheben möchten, und klicken Sie auf **[!UICONTROL Aufheben der Verknüpfung]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Click **[!UICONTROL OK]** to close the dialog. Die Assets, für die Sie Verbindungen entfernt haben, werden aus der Liste der zugeordneten Assets im Abschnitt **[!UICONTROL Zugehörig]** gelöscht.
+1. Klicken Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Die Assets, für die Sie Verbindungen entfernt haben, werden aus der Liste der zugeordneten Assets im Abschnitt **[!UICONTROL Zugehörig]** gelöscht.
 
 ## Übersetzen zugehöriger Assets {#translating-related-assets}
 
-Das Erstellen von Quell-/abgeleiteten Beziehungen zwischen Assets mithilfe der entsprechenden Asset-Funktion ist auch bei der Workflows hilfreich. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
+Das Erstellen von Quell-/abgeleiteten Beziehungen zwischen Assets mithilfe der entsprechenden Asset-Funktion ist auch bei der Workflows hilfreich. Wenn Sie einen Übersetzungs-Workflow für ein abgeleitetes Asset ausführen, ruft [!DNL Experience Manager Assets] automatisch jedes Asset ab, auf das die Quelldatei verweist, und fügt es zur Übersetzung ein. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-If the source file is related to another asset, [!DNL Experience Manager Assets] fetches the referenced asset and includes it for translation.
+Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft [!DNL Experience Manager Assets] das referenzierte Asset ab und fügt es zur Übersetzung ein.
 
 ![Seite &quot;Asset-Eigenschaften&quot;zeigt die Quelldatei des zugehörigen Assets an, die zur Übersetzung verwendet werden soll](assets/asset-properties-source-asset.png)
 
@@ -75,7 +75,7 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. Übersetzen Sie die Assets im Quellordner für eine Zielsprache, indem Sie die Schritte unter [Neues Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project) befolgen. Übersetzen Sie in diesem Fall zum Beispiel Ihre Assets ins Französische.
 
-1. From the [!UICONTROL Projects] page, open the translation folder.
+1. Öffnen Sie auf der Seite [!UICONTROL Projekte] den Übersetzungsordner.
 
 1. Klicken Sie auf die Projektkachel, um die Detailseite zu öffnen.
 
@@ -85,10 +85,10 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Select the asset and then click **[!UICONTROL Reveal in Assets]** from the toolbar to view the translation status for the asset.
+1. Wählen Sie das Asset aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL In Assets anzeigen]**, um den Übersetzungsstatus für das Asset Ansicht.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
 1. Klicken Sie auf das Quellelement, um zu überprüfen, ob die mit der Quelle verknüpften Assets übersetzt wurden.
 
-1. Select the asset that is related to the source, and then click **[!UICONTROL Reveal in Assets]**. Das übersetzte zugehörige Asset wird angezeigt.
+1. Wählen Sie das Asset aus, das mit der Quelle in Beziehung steht, und klicken Sie dann auf **[!UICONTROL In Assets anzeigen]**. Das übersetzte zugehörige Asset wird angezeigt.
