@@ -1,52 +1,52 @@
 ---
 title: '[!DNL Assets] Startseite'
-description: Personalize the [!DNL Experience Manager Assets] Home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
+description: Personalisieren Sie die Startseite [!DNL Experience Manager Assets] für einen umfassenden Begrüßungsbildschirm, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 36%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] Startseite {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Startseite  {#aem-assets-home-page-experience}
 
-Personalize the [!DNL Adobe Experience Manager Assets] home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
+Personalisieren Sie die [!DNL Adobe Experience Manager Assets]-Startseite für einen umfassenden Begrüßungsbildschirm, einschließlich einer Momentaufnahme der letzten Aktivitäten um Assets.
 
 [!DNL Assets] Die Startseite bietet eine umfassende und personalisierte Benutzeroberfläche, die eine Momentaufnahme der letzten Aktivitäten enthält, z. B. der zuletzt angezeigten oder hochgeladenen Assets.
 
-The [!DNL Assets] home page is disabled by default. Gehen Sie wie folgt vor, um sie zu aktivieren:
+Die Startseite [!DNL Assets] ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um sie zu aktivieren:
 
 1. Öffnen Sie [!DNL Experience Manager] Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ DAM Event Recorder]** service.
-1. Select the **[!UICONTROL Enable this service]** to enable activity recording.
+1. Öffnen Sie den Dienst **[!UICONTROL Day CQ DAM Ereignis Recorder]**.
+1. Wählen Sie **[!UICONTROL Aktivieren Sie diesen Dienst]**, um die Aufzeichnung der Aktivität zu aktivieren.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. From the **[!UICONTROL Event Types]** list, select the events to be recorded and save the changes.
+1. Wählen Sie in der Liste **[!UICONTROL Ereignistyp]** die aufzuzeichnenden Ereignis aus und speichern Sie die Änderungen.
 
    >[!CAUTION]
    >
    >Die Aktivierung der Optionen „Angezeigte Assets“, „Angezeigte Projekte“ und „Angezeigte Sammlungen“ erhöht die Anzahl der aufgezeichneten Ereignisse erheblich.
 
-1. Open the **[!UICONTROL DAM Asset Home Page Feature Flag]** service from Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Select the `isEnabled.name` option to enable the [!DNL Assets] Home page feature. Speichern Sie die Änderungen.
+1. Öffnen Sie den Dienst **[!UICONTROL DAM Asset Startseite Feature Flag]** in Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Wählen Sie die Option `isEnabled.name`, um die Funktion [!DNL Assets] &quot;Startseite&quot;zu aktivieren. Speichern Sie die Änderungen.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Open the **[!UICONTROL User Preferences]** dialog, and select **[!UICONTROL Enable Assets Home Page]**. Speichern Sie die Änderungen.
+1. Öffnen Sie das Dialogfeld **[!UICONTROL Benutzereinstellungen]** und wählen Sie **[!UICONTROL Startseite &quot;Elemente aktivieren]**&quot;aus. Speichern Sie die Änderungen.
 
    ![Aktivieren der Asset-Startseite im Dialogfeld &quot;Benutzereinstellungen&quot;](assets/Annotation-color.png)
 
-Nachdem Sie die [!DNL Assets] Startseite aktiviert haben, navigieren Sie zur [!DNL Assets] Benutzeroberfläche entweder von der Navigationsseite aus oder greifen Sie direkt über die URL darauf zu `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
+Nachdem Sie die [!DNL Assets]-Startseite aktiviert haben, navigieren Sie zur [!DNL Assets]-Benutzeroberfläche entweder von der Navigationsseite oder greifen Sie direkt über die URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam` zu.
 
 ![Erlebnislink auf der Benutzeroberfläche &quot;Assets&quot;konfigurieren](assets/config-experience-link.png)
 
-Click the **[!UICONTROL Click here to configure your experience link]** to add your username, background image, and profile image.
+Klicken Sie auf **[!UICONTROL Klicken Sie hier, um Ihren Erlebnis-Link]** zu konfigurieren, um Ihren Benutzernamen, Ihr Hintergrundbild und Ihr Profil-Bild hinzuzufügen.
 
-The [!DNL Assets] Home page includes the following sections:
+Die [!DNL Assets]-Startseite umfasst die folgenden Abschnitte:
 
 * Begrüßungsabschnitt
 * Widget-Abschnitt
@@ -65,23 +65,23 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 * Aktuell
 * Entdecken
 
-**Aktivität**: Unter diesem Abschnitt zeigt das Widget &quot; **[!UICONTROL Meine Aktivität]** &quot;aktuelle Aktivitäten an, die der angemeldete Benutzer mit Assets (einschließlich Assets ohne Ausgabeformate) durchgeführt hat, z. B. Asset-Uploads, Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und &quot;Teilen&quot;-Klicks.
+**Aktivität**: Unter diesem Abschnitt zeigt das  **[!UICONTROL My]** Activity Widget die letzten Aktivitäten an, die der angemeldete Benutzer mit Assets (einschließlich Assets ohne Ausgabeformate) durchgeführt hat, z. B. Asset-Uploads, Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und Teilen-Vorgänge.
 
-**Zuletzt**: Das **[!UICONTROL kürzlich angezeigte]** Widget unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten des angemeldeten Benutzers an, einschließlich Ordner, Sammlungen und Projekte.
+**Zuletzt**: Das  **[!UICONTROL Widget &quot;Zuletzt]** angezeigt&quot;unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten des angemeldeten Benutzers an, einschließlich Ordner, Sammlungen und Projekte.
 
-**Discover**: Das **[!UICONTROL neue]** Widget unter diesem Abschnitt zeigt die Assets und Darstellungen an, die kürzlich in die [!DNL Assets] Bereitstellung hochgeladen wurden.
+**Discover**: Das  **** Widget unter diesem Abschnitt zeigt die Assets und Darstellungen an, die kürzlich in die  [!DNL Assets] Bereitstellung hochgeladen wurden.
 
-To enable purging of user activity data, enable the **[!UICONTROL DAM Event Purge Service]** from Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
+Um das Bereinigen von Benutzerdaten zu aktivieren, aktivieren Sie den Dienst **[!UICONTROL DAM Ereignis Purge Service]** in Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
 Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in der Symbolleiste für das Zugreifen auf Ordner, Sammlungen und Kataloge.
 
 >[!NOTE]
 >
->Enabling the [!UICONTROL Day CQ DAM Event Recorder] and [!UICONTROL DAM Event Purge] services increases write operations to JCR and search indexing, which significantly increases the load on the [!DNL Experience Manager] server. The additional load on the [!DNL Experience Manager] server can impact its performance.
+>Durch Aktivierung der Dienste [!UICONTROL Day CQ DAM Ereignis Recorder] und [!UICONTROL DAM Ereignis Purge] erhöhen Sie die Schreibvorgänge in JCR und die Suchindizierung, was die Belastung des [!DNL Experience Manager]-Servers erheblich erhöht. Die zusätzliche Belastung des [!DNL Experience Manager]-Servers kann sich auf seine Leistung auswirken.
 
 >[!CAUTION]
 >
->Capturing, filtering, and purging user activities required for [!DNL Assets] home page impose an overhead on performance. Daher sollten Administratoren die Homepage für Zielbenutzer effektiv konfigurieren.
+>Das Erfassen, Filtern und Bereinigen von Aktivitäten, die für die [!DNL Assets]-Startseite erforderlich sind, bedeutet einen Leistungsaufwand. Daher sollten Administratoren die Homepage für Zielbenutzer effektiv konfigurieren.
 >
 >Adobe empfiehlt Administratoren und Benutzern, die mit großen Datenmengen arbeiten, die Verwendung der Asset-Homepage-Funktion zu vermeiden, um einen Anstieg der Benutzeraktivitäten zu verhindern. Außerdem können Administratoren Aufzeichnungsaktivitäten von bestimmten Benutzern unterbinden, indem sie den [!UICONTROL Day CQ DAM Event Recorder][!UICONTROL  vom Configuration Manager aus konfigurieren].
 >
