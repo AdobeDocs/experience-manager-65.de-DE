@@ -18,21 +18,21 @@ ht-degree: 6%
 ---
 
 
-# Sandbox-Anwendung entwickeln  {#develop-sandbox-application}
+# Entwickeln der Sandbox-Anwendung {#develop-sandbox-application}
 
-In diesem Abschnitt kann die Anwendung nun, da die Vorlage im Abschnitt [Erstanwendung](initial-app.md) eingerichtet wurde und die ersten Seiten, die im Abschnitt [Erstinhalt](initial-content.md) festgelegt wurden, mithilfe von Stiftungsskripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionsfähig sein.
+In diesem Abschnitt kann die Anwendung nun, da die Vorlage im Abschnitt [Initialanwendung](initial-app.md) eingerichtet wurde und die ersten Seiten, die im Abschnitt [Anfangsinhalt](initial-content.md) festgelegt wurden, mithilfe von Basisskripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionsfähig sein.
 
-## Using Foundation Page Scripts {#using-foundation-page-scripts}
+## Verwenden von Seiten-Skripten der Foundation {#using-foundation-page-scripts}
 
 Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPal-Vorlage rendert, hinzugefügt wurde, wird geändert, um head.jsp und eine lokale body.jsp der Gründungsseite einzuschließen.
 
 ### Super Resource Type {#super-resource-type}
 
-Der erste Schritt besteht darin, dem `/apps/an-scf-sandbox/components/playpage` Knoten eine Eigenschaft des Supertyps der Ressource hinzuzufügen, damit die Skripte und Eigenschaften des Supertyps übernommen werden.
+Der erste Schritt besteht darin, dem Knoten `/apps/an-scf-sandbox/components/playpage` eine Eigenschaft des Supertyps der Ressource hinzuzufügen, damit die Skripte und Eigenschaften des Supertyps übernommen werden.
 
 Verwenden von CRXDE Lite:
 
-1. Wählen Sie Node `/apps/an-scf-sandbox/components/playpage`.
+1. Wählen Sie den Knoten `/apps/an-scf-sandbox/components/playpage`.
 1. Geben Sie auf der Registerkarte &quot;Eigenschaften&quot;eine neue Eigenschaft mit den folgenden Werten ein:
 
    Name: `sling:resourceSuperType`
@@ -41,14 +41,14 @@ Verwenden von CRXDE Lite:
 
    Wert: `foundation/components/page`
 
-1. Click the green **[!UICONTROL +Add]** button.
+1. Klicken Sie auf die grüne Schaltfläche **[!UICONTROL +Hinzufügen]**.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    ![page-script](assets/page-script.png)
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
-1. Navigieren Sie im Bereich &quot; **CRXDE Lite** Explorer&quot;zu der Datei `/apps/an-scf-sandbox/components/playpage` und klicken Sie mit der Dublette darauf, `playpage.jsp` um sie im Bearbeitungsbereich zu öffnen.
+1. Navigieren Sie im Explorer-Bereich **CRXDE Lite** zu `/apps/an-scf-sandbox/components/playpage` und klicken Sie mit der Dublette auf die Datei `playpage.jsp`, um sie im Bearbeitungsbereich zu öffnen.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -67,9 +67,9 @@ Verwenden von CRXDE Lite:
    %>
    ```
 
-1. Ersetzen Sie &quot; // TODO ...&quot;, da Sie sich der öffnenden/schließenden Skript-Tags bewusst sind. mit Skripten für die Kopf- und Textelemente von &lt;html>.
+1. Ersetzen Sie &quot; // TODO ...&quot;, da Sie sich der öffnenden/schließenden Skript-Tags bewusst sind. mit Skripten für Kopf- und Körperteile von &lt;html>.
 
-   Bei einem Super-Typ von `foundation/components/page`wird jedes Skript, das nicht in diesem Ordner definiert ist, in einem Skript im `/apps/foundation/components/page` Ordner (sofern vorhanden) aufgelöst, andernfalls in einem Skript im `/libs/foundation/components/page` Ordner.
+   Bei einem Super-Typ von `foundation/components/page` wird jedes Skript, das nicht in diesem Ordner definiert ist, in einem Skript im Ordner `/apps/foundation/components/page` (sofern vorhanden) aufgelöst, andernfalls in einem Skript im Ordner `/libs/foundation/components/page`.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -89,18 +89,18 @@ Verwenden von CRXDE Lite:
    </html>
    ```
 
-1. Das Stiftungsskript `head.jsp` muss nicht überlagert werden, aber das Stiftungsskript `body.jsp` ist leer.
+1. Das Gründungsskript `head.jsp` muss nicht überlagert werden, aber das Gründungsskript `body.jsp` ist leer.
 
    Um das Authoring einzurichten, überlagern Sie `body.jsp` mit einem lokalen Skript und fügen Sie ein Absatzsystem (parsys) in den Text ein:
 
    1. Navigieren Sie zu `/apps/an-scf-sandbox/components`.
-   1. Select the `playpage` node.
-   1. Right-click and select `Create > Create File...`
+   1. Wählen Sie den Knoten `playpage` aus.
+   1. Klicken Sie mit der rechten Maustaste und wählen Sie `Create > Create File...`
 
       * Name: **body.jsp**
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-   Öffnen `/apps/an-scf-sandbox/components/playpage/body.jsp` und fügen Sie Folgendes ein:
+   Öffnen Sie `/apps/an-scf-sandbox/components/playpage/body.jsp` und fügen Sie Folgendes ein:
 
    ```xml
    <%--
@@ -124,7 +124,7 @@ Verwenden von CRXDE Lite:
 
 * Standard-Benutzeroberfläche: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
-Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch die Benutzeroberfläche zum Bearbeiten von Seiteninhalten.
+Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch die Benutzeroberfläche zum Bearbeiten des Seiteninhalts.
 
 Das Seitenbedienfeld &quot;Elemente/Komponenten&quot;wird angezeigt, wenn sowohl das Seitenbedienfeld geöffnet ist als auch das Fenster breit genug ist, damit sowohl der Seiteninhalt als auch der Seiteninhalt angezeigt werden können.
 
@@ -142,7 +142,7 @@ Um Communities-Komponenten für das Authoring zu aktivieren, führen Sie Beginn 
 
 * [Auf Communities-Komponenten zugreifen](basics.md#accessing-communities-components)
 
-Für die Zwecke dieser Sandbox ist der Beginn mit diesen **Communities** -Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren):
+Für die Zwecke dieser Sandbox sollten Sie mit den folgenden **Communities**-Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren) Beginn ausführen:
 
 * Kommentare
 * Forum
@@ -151,7 +151,7 @@ Für die Zwecke dieser Sandbox ist der Beginn mit diesen **Communities** -Kompon
 * Bewertungszusammenfassung (Anzeige)
 * Abstimmung
 
-Wählen Sie außerdem **[!UICONTROL Allgemeine]** Komponenten, wie
+Wählen Sie außerdem Komponenten wie **[!UICONTROL Allgemein]** aus, z. B.
 
 * Bild
 * Tabelle
@@ -160,7 +160,7 @@ Wählen Sie außerdem **[!UICONTROL Allgemeine]** Komponenten, wie
 
 >[!NOTE]
 >
->Die für &quot;pagePar&quot;aktivierten Komponenten werden im Repository als Wert der `components` Eigenschaft
+>Die für &quot;page par&quot;aktivierten Komponenten werden im Repository als Wert der Eigenschaft `components` des
 >
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
@@ -173,10 +173,10 @@ In diesem einfachen Beispiel wird die Root-Landingpage statisch so eingestellt, 
 Ändern Sie die Browser-URL in die Stammseite: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
 * Symbol &quot;Seiteninformationen&quot;auswählen
-* Eigenschaften **[!UICONTROL öffnen auswählen]**
+* Wählen Sie **[!UICONTROL Eigenschaften öffnen]**
 * Registerkarte &quot;ERWEITERT&quot;
 
-   * Für den Eintrag &quot;Umleiten&quot;navigieren Sie zu **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox-Site]** > **[!UICONTROL SCF Sandbox]**
+   * Für den Eintrag &quot;Umleitung&quot;navigieren Sie zu **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL SCF Sandbox]**
    * Klicken Sie auf **[!UICONTROL OK]**
 
 * Klicken Sie auf **[!UICONTROL OK]**
