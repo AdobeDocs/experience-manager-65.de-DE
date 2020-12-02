@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +26,7 @@ Bei den folgenden Informationen handelt es sich um Anregungen und Kommentare von
 
 David Nuescheler war Mitbegründer und CTO von Day Software AG, einem führenden Anbieter von Content-Management- und Content-Infrastruktur-Software, der im Jahr 2010 von Adobe übernommen wurde. Nuescheler ist nun Fellow und VP des Bereichs Enterprise Technology bei Adobe und leitet die Entwicklung von JSR-170, der Java Content Repository-API (JCR), die den Technologiestandard für Content-Management bildet.
 
-Further updates can also be seen on [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Weitere Aktualisierungen finden Sie unter [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Einführung von David Nuescheler {#introduction-from-david}
 
@@ -75,7 +78,7 @@ Ich persönlich ziehe es vor, in vielen Fällen zunächst Hierarchiekonventionen
 >
 >Die Struktur des Content-Repositorys kann sich ebenfalls auf die Leistung auswirken. Die beste Leistung wird erzielt, wenn ein Content-Repository nicht mehr als 1.000 untergeordnete Knoten aufweist.
 >
->See [How much data can CRX handle?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) für weitere Informationen.
+>Siehe [Wie viele Daten kann CRX verarbeiten?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) für weitere Informationen.
 
 #### Beispiel {#example-2}
 
@@ -101,7 +104,7 @@ Mit dem obigen Content-Modell kann ich es einem anonymen Benutzer ohne Weiteres 
 
 #### Erklärung {#explanation-3}
 
-If you don&#39;t use `clone()`, `merge()` or `update()` methods in your application a single workspace is probably the way to go.
+Wenn Sie die Methoden `clone()`, `merge()` oder `update()` in Ihrer Anwendung nicht verwenden, ist wahrscheinlich eine einzelne Arbeitsfläche der richtige Weg.
 
 „Korrespondierende Knoten“ sind ein in den JCR-Spezifikationen definiertes Konzept. Im Wesentlichen handelt es sich dabei um Knoten, die denselben Inhalt in verschiedenen sogenannten Workspaces repräsentieren.
 
@@ -128,7 +131,7 @@ Für Folgendes sollten Workspaces nicht verwendet werden:
 * zur Unterscheidung von Inhalten für verschiedene Zielgruppen (öffentliche, private, lokale usw.)
 * für Postfächer für verschiedene Benutzer
 
-### 4. Regel: Bei gleichgeordneten Elementen mit identischen Namen ist Vorsicht geboten. {#rule-beware-of-same-name-siblings}
+### 4. Regel: Bei gleichgeordneten Elementen mit identischen Namen ist Vorsicht geboten.  {#rule-beware-of-same-name-siblings}
 
 #### Erklärung {#explanation-4}
 
@@ -140,7 +143,7 @@ Für den Import von XML oder die Interaktion mit bestehendem XML sind SNS mögli
 
 #### Beispiel {#example-4}
 
-Verwenden Sie:
+Verwenden
 
 ```xml
 /content/myblog/posts/what_i_learned_today
@@ -154,7 +157,7 @@ anstelle von:
 /content/blog[1]/post[2]
 ```
 
-### 5. Regel: Verweise richten mehr Schaden an, als sie nutzen. {#rule-references-considered-harmful}
+### 5. Regel: Verweise richten mehr Schaden an, als sie nutzen.  {#rule-references-considered-harmful}
 
 #### Erklärung {#explanation-5}
 
@@ -170,17 +173,17 @@ Also würde ich diese Verweise entweder über schwache Referenzen modellieren (i
 
 Möglicherweise gibt es Nutzungsszenarien, in denen ein System wirklich nicht funktionieren kann, solange ein Verweis nicht zugeordnet wird, aber ein praktisches Beispiel fällt mir dazu nicht ein.
 
-### Rule #6: Files are files. {#rule-files-are-files}
+### Regel Nr. 6: Dateien sind Dateien. {#rule-files-are-files}
 
 #### Erklärung {#explanation-6}
 
-If a content model exposes something that even remotely *smells* like a file or a folder I try to use (or extend from) `nt:file`, `nt:folder` and `nt:resource`.
+Wenn ein Inhaltsmodell etwas offenbart, das auch remote *riecht nach* wie einer Datei oder einem Ordner, den ich zu verwenden (oder zu erweitern) `nt:file`, `nt:folder` und `nt:resource` versuche.
 
 Meiner Erfahrung nach lassen viele generische Anwendungen implizit die Interaktion mit „nt:folder“ und „nt:files“ zu und wissen, wie sie diese Ereignisse verarbeiten und anzeigen müssen, wenn sie zusätzliche Meta-Informationen aufweisen. Beispielsweise wird eine direkte Interaktion mit Dateiserverimplementierungen wie CIFS oder WebDAV, die auf JCR aufsetzen, implizit.
 
-I think as good rule of thumb one could use the following: If you need to store the filename and the mime-type then `nt:file`/ `nt:resource` is a very good match. Wenn Sie möglicherweise mehrere „files“ haben, bietet sich „nt:folder“ für ihre Speicherung an.
+Als gute Faustregel könnte man Folgendes verwenden: Wenn Sie den Dateinamen und den mime-type speichern müssen, ist `nt:file`/ `nt:resource` eine sehr gute Übereinstimmung. Wenn Sie möglicherweise mehrere „files“ haben, bietet sich „nt:folder“ für ihre Speicherung an.
 
-Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. I rarely extend nt:file and frequently extend `nt:resource`.
+Wenn Sie Meta-Informationen für Ihre Ressource hinzufügen müssen, beispielsweise die Eigenschaft „author“ oder „description“, erweitern Sie `nt:resource` und nicht `nt:file`. Ich kann nt:file selten erweitern und `nt:resource` häufig erweitern.
 
 #### Beispiel {#example-6}
 
@@ -200,7 +203,7 @@ Es mag zwar Nutzungsszenarien geben, in denen es sich empfiehlt, nur eine Binär
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### 7. Regel: IDs sind schlecht. {#rule-ids-are-evil}
+### 7. Regel: IDs sind schlecht.  {#rule-ids-are-evil}
 
 #### Erklärung {#explanation-7}
 
@@ -212,13 +215,13 @@ Es ist zwar richtig, dass einige Knoten während ihres gesamten Lebenszyklus ein
 
 Beachten Sie außerdem, dass Elemente durch einen Pfad identifiziert werden können. Und auch wenn in einem Unix-Dateisystem Symlinks für die meisten Benutzer sinnvoller als Hardlinks sind, bietet sich für die meisten Anwendungen ein Pfad zum Verweisen auf einen Zielknoten an.
 
-More importantly, it is **mix**:referenceable which means that it can be applied to a node at the point in time when you actually need to reference it.
+Wichtiger noch ist, dass **mix**:referenzierbar ist. Dies bedeutet, dass es zu dem Zeitpunkt auf einen Knoten angewendet werden kann, zu dem Sie eigentlich darauf verweisen müssen.
 
 Wenn Sie also beispielsweise auf einen Knoten vom Typ „Document“ verweisen können möchten, bedeutet das nicht, dass Ihr Knotentyp „Document“ statisch von „mix:referenceable“ erweitert werden muss, da er dynamisch zu jeder Instanz von „Document“ hinzugefügt werden kann.
 
 #### Beispiel {#example-7}
 
-Verwenden Sie Folgendes:
+Verwenden:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
