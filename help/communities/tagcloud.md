@@ -22,33 +22,33 @@ ht-degree: 26%
 
 ## Einführung {#introduction}
 
-The `Social Tag Cloud` component highlights tags applied by community members when posting content. Dies dient der Bestimmung beliebter Themen und ermöglicht es Site-Besuchern, gekennzeichnete Inhalte schneller aufzufinden.
+Die Komponente `Social Tag Cloud` markiert Tags, die von Community-Mitgliedern beim Posten von Inhalten angewendet werden. Dies dient der Bestimmung beliebter Themen und ermöglicht es Site-Besuchern, gekennzeichnete Inhalte schneller aufzufinden.
 
 Informationen zu einer weiteren Möglichkeit zur Bestimmung von Trends finden Sie unter [Aktivitätstrends](trends.md).
 
-This page documents the `Social Tag Cloud` component dialog settings and describes the user experience.
+Auf dieser Seite werden die `Social Tag Cloud`-Komponentendialogeinstellungen Dokumente und die Benutzererfahrung beschrieben.
 
 Detaillierte Informationen für Entwickler finden Sie unter [Tag-Grundlagen](tag.md).
 
-See [Administering Tags](../../help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
+Informationen zum Erstellen und Verwalten von Tags sowie zu den angewendeten Inhalts-Tags finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md).
 
 ## Hinzufügen einer Social-Tag-Cloud {#adding-a-social-tag-cloud}
 
-Wenn Sie einer Seite im Autorenmodus eine `Social Tag Cloud` `Communities / Social Tag Cloud` Komponente hinzufügen möchten, suchen Sie die Komponente im Komponenten-Browser und ziehen Sie sie auf eine Seite, auf der die Tag-Cloud angezeigt werden soll.
+Um einer Seite im Autorenmodus eine `Social Tag Cloud`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach `Communities / Social Tag Cloud` und ziehen Sie sie auf eine Seite, auf der die Tag-Cloud angezeigt werden soll.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](tag.md#essentials-for-client-side) are included, this is how the `Social Tag Cloud` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](tag.md#essentials-for-client-side) einbezogen werden, wird die `Social Tag Cloud`-Komponente wie folgt angezeigt:
 
 ![social-tag](assets/social-tag.png)
 
 ## Konfigurieren einer Social-Tag-Cloud {#configuring-social-tag-cloud}
 
-Select the placed `Social Tag Cloud` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Social Tag Cloud` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
-Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display and, if the tags are active links, the location of the page for search results:
+Geben Sie unter der Registerkarte **[!UICONTROL Social Tag Cloud]** an, welche Tags angezeigt werden sollen und, wenn die Tags aktive Links sind, den Speicherort der Seite für die Suchergebnisse:
 
 ![social-tag-cloud](assets/social-tag-cloud.png)
 
@@ -57,11 +57,11 @@ Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display a
    * `From page and child pages`
    * `All tags`
 
-   Die Standardeinstellung ist `From page and child pages`, wobei &quot;page&quot;auf die unten stehende Einstellung &quot; **Page** &quot;verweist.
+   Die Standardeinstellung ist `From page and child pages`, wobei &quot;page&quot;auf die unten stehende Einstellung **Seite** verweist.
 
 * **[!UICONTROL Seite]**
 
-   (Required if not `All tags)` The path to the UGC for a page. Wird kein Pfad angegeben, verweist die Standardeinstellung automatisch auf die aktuelle Seite.
+   (Erforderlich, wenn nicht `All tags)` Der Pfad zum UGC für eine Seite. Wird kein Pfad angegeben, verweist die Standardeinstellung automatisch auf die aktuelle Seite.
 
 * **[!UICONTROL Keine Einschränkung bezüglich Tags]**
 
@@ -69,13 +69,13 @@ Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display a
 
 * **[!UICONTROL Suchergebnispfad]**
 
-   The path to a page on which a `Search Result` component has been placed, configured to reference UGC which includes the UGC path specified by the **Page** setting.
+   Der Pfad zu einer Seite, auf der eine `Search Result`-Komponente platziert wurde, die so konfiguriert ist, dass sie auf UGC verweist, der den UGC-Pfad enthält, der mit der Einstellung **Seite** angegeben wurde.
 
 ## Anpassen der Anzeige einer Social-Tag-Cloud {#change-display-of-social-tag-cloud}
 
-To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
+Um die Anzeige der **Social Tag Cloud** zu bearbeiten, geben Sie [Designmodus](../../help/sites-authoring/default-components-designmode.md) ein und klicken Sie mit der Dublette auf die platzierte `Social Tag Cloud`-Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
 
-Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. Ein Tag kann ein einfaches Tag, ein einzelnes Wort im Standard-Namensraum oder eine hierarchische Taxonomie sein:
+Geben Sie auf der Registerkarte **[!UICONTROL Social Tag Cloud (Design)]** an, wie Tags angezeigt werden. Ein Tag kann ein einfaches Tag, ein einzelnes Wort im Standard-Namensraum oder eine hierarchische Taxonomie sein:
 
 ![social-tag-cloud-design](assets/social-tag-cloud-design.png)
 
@@ -104,8 +104,8 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
    `Geometrixx Media (the namespace)`, `Gadgets`, und `Cars`
 
-   * Checked: Only `Cars` will display, if applied.
-   * Unchecked: `Geometrixx Media` and `Gadgets`as well as `Cars` will display, if applied.
+   * Überprüft: Nur `Cars` wird angezeigt, wenn sie angewendet wird.
+   * Nicht aktiviert: `Geometrixx Media` und `Gadgets`sowie `Cars` werden angezeigt, sofern angewendet.
 
    Einfache Tags sind immer Leaf-Tags.
 
@@ -121,6 +121,6 @@ Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are d
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Tag Essentials](tag.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Tag Essentials](tag.md) für Entwickler.
 
-See [Tagging User Generated Content](tag-ugc.md) (UGC) for information about creating and managing tags.
+Informationen zum Erstellen und Verwalten von Tags finden Sie unter [Tagging Benutzergenerierter Inhalt](tag-ugc.md) (UGC).
