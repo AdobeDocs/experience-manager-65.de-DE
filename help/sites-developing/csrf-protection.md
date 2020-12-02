@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 translation-type: tm+mt
 source-git-commit: c83c77c5c313099944dd73c8cbe63d429d84a518
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 72%
 
 ---
 
@@ -33,7 +36,7 @@ Jede Komponente, die sich auf die Abhängigkeit `granite.jquery` stützt, profit
 
 ### Replizieren des Crypto-Schlüssels {#replicating-crypto-keys}
 
-In order to make use of the tokens, you need to replicate the `/etc/keys/hmac` binary to all of the instances in your deployment. Eine bequeme Möglichkeit, den HMAC-Schlüssel in alle Instanzen zu kopieren, besteht darin, ein Paket zu erstellen, das den Schlüssel enthält, und ihn über Package Manager auf alle Instanzen zu installieren.
+Um die Token verwenden zu können, müssen Sie die `/etc/keys/hmac`-Binärdatei auf alle Instanzen in Ihrer Bereitstellung replizieren. Eine bequeme Möglichkeit, den HMAC-Schlüssel in alle Instanzen zu kopieren, besteht darin, ein Paket zu erstellen, das den Schlüssel enthält, und ihn über Package Manager auf alle Instanzen zu installieren.
 
 >[!NOTE]
 >
@@ -41,6 +44,6 @@ In order to make use of the tokens, you need to replicate the `/etc/keys/hmac` b
 
 >[!NOTE]
 >
->If you use the manifest cache with your web application, make sure you add &quot;**&amp;ast;**&quot; to the manifest in order to make sure the token does not take the CSRF token generation call offline. Weitere Informationen finden Sie unter diesem [Link](https://www.w3.org/TR/offline-webapps/).
+>Wenn Sie den Manifestcache mit Ihrer Webanwendung verwenden, stellen Sie sicher, dass Sie &quot;**&amp;ast;**&quot;zum Manifest hinzufügen, um sicherzustellen, dass der CSRF-Token-Generierungsaufruf nicht offline erfolgt. Weitere Informationen finden Sie unter diesem [Link](https://www.w3.org/TR/offline-webapps/).
 >
 >Weitere Informationen zu CSRF-Angriffen und Möglichkeiten, sie abzuschwächen, finden Sie auf der Seite [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).
