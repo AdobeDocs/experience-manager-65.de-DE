@@ -11,11 +11,11 @@ ht-degree: 16%
 ---
 
 
-# Liste von AEM-Erlebnissen{#aem-fluid-experiences-feature-list}
+# Liste der Funktion für AEM-Erlebnisse{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager Fluid Experience nutzt die leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine stabile Lösung für den Versand von kostenlosen Inhalten zu bieten.
 
-AEM Fluid Experience unterscheidet sich von klassischen AEM insofern, als nur der nutzungsfall ohne Kopf des Versands behandelt wird. Mit den [vollständigen AEM Sites-, Assets- und Dynamic Media-Lösungen stehen leistungsstarke Funktionen für Inhaltserstellung und Versand sowie AEM Unterstützung für Hybrid-Anwendungsfälle zur Verfügung.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience unterscheidet sich von klassischen AEM insofern, als nur der nutzungsfall ohne Kopf des Versands behandelt wird. Mit den AEM Sites-, Assets- und Dynamic Media-Lösungen [ können Sie mit leistungsstarkem Authoring und Versand von Inhalten und AEM leistungsstarken Unterstützung für Hybrid-Anwendungsfälle arbeiten.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 In den folgenden Tabellen sind die Funktionen AEM Fluid Experience und der Link zur entsprechenden Supportdokumentation aufgeführt.
 
