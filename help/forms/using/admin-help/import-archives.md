@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1465'
+ht-degree: 100%
 
 ---
 
@@ -91,14 +94,14 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
 1. Klicken Sie auf „Fertig stellen“, um die Konfiguration abzuschließen.
 
-## Konfigurieren Sie die AEM Forms, die Teil von Archivdateien sind. {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Konfigurieren Sie die AEM Forms, die Teil von Archivdateien sind.  {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Anwendungsverwaltung“ und klicken Sie dann auf die Registerkarte „Archive“.
 1. Wählen Sie auf der Seite „Archivverwaltung“ die zu konfigurierende Archivdatei aus.
 1. Wählen Sie auf der Seite „Archiv anzeigen“ die hervorgehobene Archivressource aus.
 1. Konfigurieren Sie die importierte Prozessarchivdatei.
 
-## Den Konfigurationsassistenten zum Konfigurieren die AEM Forms, die Teil von Archivdateien sind, verwenden {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Den Konfigurationsassistenten zum Konfigurieren die AEM Forms, die Teil von Archivdateien sind, verwenden  {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Anwendungsverwaltung“ und klicken Sie dann auf die Registerkarte „Archive“.
 1. Klicken Sie zum Konfigurieren neben der Archivdatei auf „Konfigurieren“.
@@ -156,7 +159,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
       Klicken Sie auf „Fertig gestellt“, um den Prinzipal dem Sicherheitsprofil hinzuzufügen.
 
-## Ein Archiv entfernen {#remove-an-archive}
+## Ein Archiv entfernen  {#remove-an-archive}
 
 >[!NOTE]
 >
