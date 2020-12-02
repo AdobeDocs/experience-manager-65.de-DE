@@ -32,7 +32,7 @@ Mit dem Vorgangs-Dashboard in AEM 6 können Systemoperatoren auf einen Blick di
 * verringert den Zeitaufwand für das Erkennen, Analysieren und Beheben von Fehlern
 * bietet eigenständige Wartungsautomatisierung, die die Projektbetriebskosten deutlich senkt
 
-It can be accessed by going to **Tools** - **Operations** from the AEM Welcome screen.
+Sie können auf das Tool zugreifen, indem Sie im AEM Begrüßungsbildschirm zu **Tools** - **Vorgänge** wechseln.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Es umfasst mehrere Funktionen, die unten beschrieben werden.
 
 Die **Konsistenzberichte** sind ein System von Karten, die einen guten oder einen schlechten Zustand im Hinblick auf einen bestimmten Produktbereich anzeigen. Diese Karten sind Visualisierungen der Sling-Konsistenzprüfung, die Daten von JMX und anderen Quellen aggregiert und verarbeitete Daten wieder als MBeans freigibt. Diese MBeans können Sie auch in der [JMX-Web-Konsole](/help/sites-administering/jmx-console.md) unter der Domäne **org.apache.sling.healthcheck** überprüfen.
 
-The Health Reports interface can be accessed through the **Tools** - **Operations** - **Health Reports** menu on the AEM Welcome screen, or directly through the following URL:
+Auf die Benutzeroberfläche der Gesundheitsberichte können Sie über das Menü **Tools** - **Vorgänge** - **Gesundheitsberichte** auf dem AEM Begrüßungsbildschirm oder direkt über die folgende URL zugreifen:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -118,7 +118,7 @@ Zum Erstellen einer individuellen Konsistenzprüfung sind zwei Schritte nötig: 
 
    >[!NOTE]
    >
-   >The resource path above is created as follows: if the mbean name of your Health Check is &quot;test&quot;, add &quot;test&quot; to the end of the path `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >Der Ressourcenpfad oben wird wie folgt erstellt: Wenn der mbean-Name Ihres Health Check &quot;test&quot;lautet, fügen Sie am Ende des Pfads `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck` &quot;test&quot;hinzu
    >
    >Der endgültige Pfad lautet also:
    >
@@ -126,7 +126,7 @@ Zum Erstellen einer individuellen Konsistenzprüfung sind zwei Schritte nötig: 
 
    >[!NOTE]
    >
-   >Make sure that the `/apps/settings/granite/operations/hc` path has the following properties set to true:
+   >Stellen Sie sicher, dass für den Pfad `/apps/settings/granite/operations/hc` die folgenden Eigenschaften auf &quot;true&quot;festgelegt sind:
    >
    >
    >`sling:configCollectionInherit`
@@ -134,13 +134,13 @@ Zum Erstellen einer individuellen Konsistenzprüfung sind zwei Schritte nötig: 
    >`sling:configPropertyInherit`
    >
    >
-   >This will tell the configuration manager to merge the new configurations with the existing ones from `/libs`.
+   >Dadurch wird der Configuration Manager angewiesen, die neuen Konfigurationen mit den vorhandenen von `/libs` zusammenzuführen.
 
 ### Erstellen einer Verbund-Konsistenzprüfung {#creating-a-composite-health-check}
 
 Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle Konsistenzprüfung zu aggregieren, die einige Funktionen gemeinsam nutzen. So gruppiert beispielsweise die Sicherheits-Verbund-Konsistenzprüfung alle individuellen Konsistenzprüfung, die sicherheitsbezogene Prüfungen durchführen. Um eine Verbund-Zustandsprüfung zu erstellen, müssen Sie zunächst eine neue OSGi-Konfiguration hinzufügen. Für die Anzeige im Vorgangs-Dashboard müssen Sie einen neuen Konfigurationsknoten hinzufügen, wie für die einfache Prüfung beschrieben.
 
-1. Wechseln Sie zum Web-Konfigurationsmanager in der OSGi-Konsole. You can do this by accessing `https://serveraddress:port/system/console/configMgr`
+1. Wechseln Sie zum Web-Konfigurationsmanager in der OSGi-Konsole. Sie können dazu auf `https://serveraddress:port/system/console/configMgr` zugreifen
 1. Suchen Sie den Eintrag namens **Apache Sling Composite Health Check**. Unter diesem Eintrag sind bereits zwei Konfigurationen vorhanden: eine für die Systemprüfungen, eine andere für die Sicherheitsprüfungen.
 1. Um eine neue Konfiguration zu erstellen, klicken Sie auf das Pluszeichen (+) rechts neben der Konfiguration. Ein neues Fenster wird geöffnet, wie unten abgebildet:
 
@@ -159,7 +159,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
    >
    >Ein neues JMX-MBean wird für jede neue Konfiguration des Apache Sling Composite Health Checks erstellt.**
 
-1. Zuletzt müssen Sie den Eintrag der gerade erstellten Verbund-Konsistenzprüfung in den Konfigurationsknoten des Vorgangs-Dashboards hinzufügen. The procedure for this is the same as with individual health checks: a node of type **nt:unstructured** needs to be created under `/apps/settings/granite/operations/hc`. Die Ressourceneigenschaft des Knotens wird durch den Wert **hc.mean.name** in der OSGi-Konfiguration definiert.
+1. Zuletzt müssen Sie den Eintrag der gerade erstellten Verbund-Konsistenzprüfung in den Konfigurationsknoten des Vorgangs-Dashboards hinzufügen. Das Verfahren hierfür ist dasselbe wie bei den einzelnen Gesundheitskontrollen: Eine Node des Typs **nt:unstructured** muss unter `/apps/settings/granite/operations/hc` erstellt werden. Die Ressourceneigenschaft des Knotens wird durch den Wert **hc.mean.name** in der OSGi-Konfiguration definiert.
 
    Wenn Sie beispielsweise eine Konfiguration erstellt und den Wert **hc.mbean.name** auf **diskusage** festgelegt haben, sehen die Konfigurationsknoten wie folgt aus:
 
@@ -194,54 +194,54 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
   </tr>
   <tr>
    <td>Abfrageleistung</td>
-   <td><p>This health check was simplified <strong>in AEM 6.4</strong>, and now checks the recently-refactored <code>Oak QueryStats</code> MBean, more specifically the <code>SlowQueries </code>attribute. Wenn die Statistik eine langsame Abfrage enthält, gibt die Konsistenzprüfung eine Warnung zurück. Andernfalls meldet sie den Status „OK“.<br /> </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>Dieser Gesundheitscheck wurde in AEM 6.4</strong> vereinfacht und überprüft nun das kürzlich umgestaltete <code>Oak QueryStats</code> MBean, genauer gesagt das <code>SlowQueries </code>Attribut. <strong> Wenn die Statistik eine langsame Abfrage enthält, gibt die Konsistenzprüfung eine Warnung zurück. Andernfalls meldet sie den Status „OK“.<br /> </strong></p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Länge der Überwachungswarteschlange</td>
-   <td><p>Observation Queue Length iterates over all Event Listeners and Background Observers, compares their <code>queueSize </code>to their <code>maxQueueSize</code> and:</p>
+   <td><p>Die Länge der Beobachtungswarteschlange iteriert alle Listener und Hintergrundbeobachter, vergleicht ihre <code>queueSize </code>mit ihrem <code>maxQueueSize</code> und:</p>
     <ul>
-     <li>returns Critical status if the <code>queueSize</code> value exceeds the <code>maxQueueSize</code> value (that is when events would be dropped)</li>
-     <li>returns Warn if the <code>queueSize</code> value is over the <code>maxQueueSize * WARN_THRESHOLD</code> (the default value is 0.75) </li>
-    </ul> <p>Die Höchstlänge jeder Warteschlange wird in separaten Konfigurationen (Oak und AEM) festgelegt und kann nicht über diese Konsistenzprüfung konfiguriert werden. The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>gibt "Kritischer Status"zurück, wenn der Wert <code>queueSize</code> den Wert <code>maxQueueSize</code> überschreitet (d. h. wenn Ereignis fallen gelassen werden)</li>
+     <li>gibt Warn zurück, wenn der <code>queueSize</code>-Wert über dem <code>maxQueueSize * WARN_THRESHOLD</code> liegt (der Standardwert ist 0,75) </li>
+    </ul> <p>Die Höchstlänge jeder Warteschlange wird in separaten Konfigurationen (Oak und AEM) festgelegt und kann nicht über diese Konsistenzprüfung konfiguriert werden. Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Abfrage-Ausnahmelimits</td>
-   <td><p>Query Traversal Limits checks the <code>QueryEngineSettings</code> MBean, more specifically the <code>LimitInMemory</code> and <code>LimitReads</code> attributes, and returns the following status:</p>
+   <td><p>Abfrage Traversal Limits prüft die <code>QueryEngineSettings</code> MBean, genauer gesagt die <code>LimitInMemory</code>- und <code>LimitReads</code>-Attribute, und gibt den folgenden Status zurück:</p>
     <ul>
      <li>gibt den Warn-Status zurück, wenn einer der Beschränkungen gleich oder höher als der Wert <code>Integer.MAX_VALUE</code></li>
      <li>den Warnungsstatus, wenn eines der Limits kleiner als 10.000 (die empfohlene Einstellung von Oak) ist</li>
-     <li>returns the Critical status if the <code>QueryEngineSettings</code> or any of the limits cannot be retrieved</li>
-    </ul> <p>The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
+     <li>gibt den kritischen Status zurück, wenn <code>QueryEngineSettings</code> oder eine der Beschränkungen nicht abgerufen werden kann</li>
+    </ul> <p>Die Mbean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Synchronisierte Uhren</td>
-   <td><p>This check is relevant only for <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">document nodestore clusters</a>. Sie gibt den folgenden Status zurück:</p>
+   <td><p>Diese Prüfung ist nur für <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">Dokument nodestore-Cluster</a> relevant. Sie gibt den folgenden Status zurück:</p>
     <ul>
      <li>den Warnungsstatus, wenn die Instanzuhren nicht mehr synchronisiert sind und einen vorab definierten unteren Schwellenwert übersteigen</li>
      <li>den Status „Kritisch“, wenn die Instanzuhren nicht mehr synchronisiert sind und einen vorab definierten oberen Schwellenwert übersteigen</li>
-    </ul> <p>The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=slingDiscoveryOakSynchronizedClocks,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Die Mbean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=slingDiscoveryOakSynchronizedClocks,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Asynchrone Indexizes</td>
    <td><p>Die Prüfung auf asynchrone Indizes</p>
     <ul>
      <li>gibt den Status „Kritisch“ zurück, wenn mindestens eine Indizierungsspur fehlschlägt</li>
-     <li>checks the <code>lastIndexedTime</code> for all indexing lanes and:
+     <li>überprüft das <code>lastIndexedTime</code> für alle Indizierungsspuren und
       <ul>
        <li>gibt den Status „Kritisch“ zurück, wenn die Zeit mehr als 2 Stunden zurückliegt </li>
        <li>gibt den Warnungsstatus zurück, wenn sie zwischen 2 Stunden und 45 Minuten zurückliegt </li>
        <li>gibt den Status „OK“ zurück, wenn sie weniger als 45 Minuten zurückliegt </li>
       </ul> </li>
      <li>gibt den Status „OK“ zurück, wenn keine dieser Bedingungen zutrifft</li>
-    </ul> <p>Die Schwellenwerte für „Kritisch“ und „Warnung“ sind konfigurierbar. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Hinweis: </strong>Dieser Health Check ist ab AEM 6.4 verfügbar und wurde auf AEM 6.3.0.1 zurückportiert.</p> </td>
+    </ul> <p>Die Schwellenwerte für „Kritisch“ und „Warnung“ sind konfigurierbar. Die Mbean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Hinweis:  </strong>Dieser Health Check ist ab AEM 6.4 verfügbar und wurde auf AEM 6.3.0.1 zurückportiert.</p> </td>
   </tr>
   <tr>
    <td>Große Lucene-Indizes</td>
-   <td><p>This check uses the data exposed by the <code>Lucene Index Statistics</code> MBean to identify large indexes and returns:</p>
+   <td><p>Diese Prüfung verwendet die von der MBean offen gelegten Daten, um große Indizes und Rückgaben zu identifizieren:<code>Lucene Index Statistics</code></p>
     <ul>
      <li>gibt einen Warnungsstatus zurück, wenn es einen Index mit mehr als 1 Mrd. Dokumenten gibt</li>
      <li>gibt den Status „Kritisch“ zurück, wenn es einen Index mit mehr als 1,5 Mrd. Dokumenten gibt</li>
-    </ul> <p>The thresholds are configurable and the MBean for the health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Hinweis: </strong>Diese Prüfung ist in AEM 6.4 und als Backport in AEM 6.3.2.0 verfügbar.</p> </td>
+    </ul> <p>Die Schwellenwerte sind konfigurierbar und die MBean für die Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Hinweis: </strong>Diese Prüfung ist in AEM 6.4 und als Backport in AEM 6.3.2.0 verfügbar.</p> </td>
   </tr>
   <tr>
    <td>Systemwartung</td>
@@ -252,52 +252,52 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
      <li>Sie müssen die Wartungsaufgaben „Auditprotokoll“ und „Workflow-Bereinigung“ konfigurieren oder aus den Wartungsfenstern entfernen. Wenn diese Aufgaben nicht konfiguriert sind, schlagen sie beim Ausführungsversuch fehl, sodass die Systemwartungsprüfung den Status „Kritisch“ zurückgibt.</li>
      <li><strong>In AEM 6.4</strong> gibt es auch eine Prüfung für die Aufgabe <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene Binaries Maintenance</a>.</li>
      <li>In AEM 6.2 und früher gibt die Systemwartungsprüfung einen Warnungsstatus direkt nach dem Start aus, da die Aufgaben nie ausgeführt werden. Ab Version 6.3 wird der Status „OK“ zurückgegeben, wenn das erste Wartungsfenster noch nicht erreicht wurde.</li>
-    </ul> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemcheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Replikations-Warteschlange</td>
-   <td><p>Diese Prüfung wird bei den Replikationsagenten durchgeführt und prüft deren Warteschlangen. Beim vordersten Element in der Warteschlange ermittelt die Prüfung, wie häufig der Agent die Replikation versucht hat. Wenn diese Anzahl größer ist als der Wert des Parameters <code>numberOfRetriesAllowed</code>, wird eine Warnung zurückgegeben. The <code>numberOfRetriesAllowed</code> parameter is configurable. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
+   <td><p>Diese Prüfung wird bei den Replikationsagenten durchgeführt und prüft deren Warteschlangen. Beim vordersten Element in der Warteschlange ermittelt die Prüfung, wie häufig der Agent die Replikation versucht hat. Wenn diese Anzahl größer ist als der Wert des Parameters <code>numberOfRetriesAllowed</code>, wird eine Warnung zurückgegeben. Der Parameter <code>numberOfRetriesAllowed</code> kann konfiguriert werden. </p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=ReplicationQueue,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Sling-Aufträge</td>
    <td>
     <div>
-      Sling Jobs checks the number of jobs queued in the JobManager, compares it to the
-     <code>maxNumQueueJobs</code> threshold, and:
+      Sling-Aufträge prüfen die Anzahl der in die Warteschlange im JobManager gestellten Aufträge im Vergleich mit der
+     <code>maxNumQueueJobs</code>-Schwellenwert und:
     </div>
     <ul>
-     <li>returns Critical if more than the <code>maxNumQueueJobs</code> are in the queue</li>
+     <li>gibt "Kritisch"zurück, wenn sich mehr als die <code>maxNumQueueJobs</code> in der Warteschlange befinden</li>
      <li>gibt den Status „Kritisch“ zurück, wenn es aktive Aufträge gibt, die seit mehr als einer Stunde ausgeführt werden</li>
      <li>gibt den Status „Kritisch“ zurück, wenn es Aufträge in der Warteschlange gibt und der letzte abgeschlossene Auftrag länger als 1 Stunde zurückliegt</li>
-    </ul> <p>Nur der Parameter für die Höchstzahl an Aufträgen in der Warteschlange ist konfigurierbar. Sein Standardwert ist 1.000.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Nur der Parameter für die Höchstzahl an Aufträgen in der Warteschlange ist konfigurierbar. Sein Standardwert ist 1.000.</p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Anforderungsleistung</td>
-   <td><p>This check looks at the <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling metric </a>and:</p>
+   <td><p>Diese Prüfung untersucht die <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling-Metrik </a>und:</p>
     <ul>
      <li>gibt den Status „Kritisch“ zurück, wenn der 75. Perzentilwert über dem Schwellenwert für „Kritisch“ liegt (der Standardwert beträgt 500 Millisekunden)</li>
      <li>gibt eine Warnung zurück, wenn der 75. Perzentilwert über dem Warnungs-Schwellenwert liegt (der Standardwert beträgt 200 Millisekunden)</li>
-    </ul> <p>The MBean for this health check is<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Die MBean für diese Gesundheitsprüfung lautet<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Fehlerprotokoll</td>
-   <td><p>Diese Prüfung gibt eine Warnung zurück, wenn Fehler im Protokoll vorliegen.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck</a>.</p> </td>
+   <td><p>Diese Prüfung gibt eine Warnung zurück, wenn Fehler im Protokoll vorliegen.</p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Festplattenspeicher</td>
-   <td><p>The Disk Space check looks at the <code>FileStoreStats</code> MBean, retrieves the size of the Node Store and the amount of usable disk space on the Node Store partition, and:</p>
+   <td><p>Bei der Überprüfung des Festplattenspeicherplatzes werden die MBean, die Größe des Node Store und der auf der Node Store-Partition verfügbare Speicherplatz abgerufen und:<code>FileStoreStats</code></p>
     <ul>
      <li>gibt eine Warnung zurück, wenn das Verhältnis zwischen verfügbarem Festplatten-Speicherplatz und Repository-Größe unter dem Warnungs-Schwellenwert liegt (der Standardwert ist 10)</li>
      <li>gibt den Status „Kritisch“ zurück, wenn das Verhältnis zwischen verfügbarem Festplatten-Speicherplatz und Repository-Größe unter dem Schwellenwert für „Kritisch“ liegt (der Standardwert ist 2)</li>
-    </ul> <p>Beide Werte sind konfigurierbar. Die Prüfung funktioniert nur auf Instanzen mit einem Segmentspeicher.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Beide Werte sind konfigurierbar. Die Prüfung funktioniert nur auf Instanzen mit einem Segmentspeicher.</p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Scheduler-Konsistenzprüfung</td>
-   <td><p>Diese Prüfung gibt eine Warnung zurück, wenn auf der Instanz länger als 60 Sekunden ein Quartz-Auftrag ausgeführt wird. Der Schwellenwert für die zulässige Dauer ist konfigurierbar.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingCommonsSchedulerHealthCheck,type=HealthCheck</a><em>.</em></p> </td>
+   <td><p>Diese Prüfung gibt eine Warnung zurück, wenn auf der Instanz länger als 60 Sekunden ein Quartz-Auftrag ausgeführt wird. Der Schwellenwert für die zulässige Dauer ist konfigurierbar.</p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingCommonsSchedulerHealthCheck,type=HealthCheck</a><em>.</em></p> </td>
   </tr>
   <tr>
    <td>Sicherheitsprüfungen</td>
-   <td><p>Die Sicherheitsprüfung ist eine Verbundprüfung, die die Ergebnisse mehrerer sicherheitsbezogener Prüfungen aggregiert. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> Die Prüfung ist als Feuerprobe beim Start der Instanz nützlich. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td>
+   <td><p>Die Sicherheitsprüfung ist eine Verbundprüfung, die die Ergebnisse mehrerer sicherheitsbezogener Prüfungen aggregiert. Diese individuellen Gesundheitsüberprüfungen behandeln verschiedene Bedenken aus der Sicherheitsprüfliste auf der Seite <a href="/help/sites-administering/security-checklist.md">Sicherheitscheckliste.</a> Die Prüfung ist als Feuerprobe beim Start der Instanz nützlich. </p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securityChecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Aktive Bundles</td>
@@ -305,7 +305,7 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
     <ul>
      <li>gibt eine Warnung zurück, wenn eines der Bundles nicht aktiv ist oder (gerade startet, mit Lazy-Aktivierung)</li>
      <li>ignoriert den Status von Bundles aus der Ignorieren-Liste</li>
-    </ul> <p>Der Parameter der Ignorieren-Liste ist konfigurierbar.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Der Parameter der Ignorieren-Liste ist konfigurierbar.</p> <p>Die MBean für diese Gesundheitsprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Code-Cache-Prüfung</td>
@@ -313,11 +313,11 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
     <ul>
      <li>gibt eine Warnung zurück, wenn die Instanz auf Java 7 mit aktiviertem Code-Cache-Flushing ausgeführt wird</li>
      <li>gibt eine Warnung zurück, wenn die Instanz auf Java 7 ausgeführt wird und der reservierte Code-Cache einen Mindestschwellenwert unterschreitet (der Standardwert liegt bei 90 MB)</li>
-    </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> this page</a>.</p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Der Schwellenwert <code>minimum.code.cache.size</code> kann konfiguriert werden. Weitere Informationen zum Fehler finden Sie auf dieser Seite <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">.</a></p> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Ressourcen-Suchpfad-Fehler</td>
-   <td><p>Checks if there are any resources in the path <code>/apps/foundation/components/primary</code> and:</p>
+   <td><p>Prüft, ob Ressourcen im Pfad <code>/apps/foundation/components/primary</code> vorhanden sind und:</p>
     <ul>
      <li>gibt Warn zurück, wenn untergeordnete Knoten unter <code>/apps/foundation/components/primary</code></li>
     </ul> <p>Das MBean für diese Konsistenzprüfung ist <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
@@ -341,7 +341,7 @@ Das Konsistenzprüfungs-Dashboard ist über die Granite JMX-MBeans mit Nagios in
    1. Öffnen Sie einen Browser und rufen Sie den Nagios-Server auf.
    1. Klicken Sie im oberen Menü auf die Schaltfläche **** Konfigurieren.
    1. Klicken Sie in der linken Spur unter **Erweiterte Konfiguration** auf **Core-Konfigurationsmanager**.
-   1. Press the **Hosts** link under the **Monitoring** section.
+   1. Klicken Sie auf den Link **Hosts** unter dem Abschnitt **Monitoring**.
    1. Fügen Sie die Hostdefinition hinzu:
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
@@ -404,7 +404,7 @@ Zu den wichtigsten Funktionen gehören:
 * Zugriff auf Stapel- und Thread-Sicherheitskopien
 * Leistungs-Analyzer für Anforderungen und Abfragen
 
-Auf den Bildschirm „Diagnose-Tools“ können Sie über den AEM-Begrüßungsbildschirm über **Tools > Vorgänge > Diagnose** zugreifen. You can also access the screen by directly accessing the following URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+Auf den Bildschirm „Diagnose-Tools“ können Sie über den AEM-Begrüßungsbildschirm über **Tools > Vorgänge > Diagnose** zugreifen. Sie können auch direkt auf den Bildschirm zugreifen, indem Sie auf die folgende URL zugreifen: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -448,13 +448,13 @@ Log level: INFO
 DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, Error=<MT_ERROR>, Details=<MT_DETAILS>
 ```
 
-### Anforderungsleistung {#request-performance}
+### Anforderungsleistung  {#request-performance}
 
 Die Anforderungsleistungsseite ermöglicht die Analyse der langsamsten verarbeiteten Seitenabfragen. Nur Inhaltsabfragen werden auf dieser Seite registriert. Genauer gesagt, werden die folgenden Abfragen erfasst:
 
-1. Requests accessing resources under `/content`
-1. Requests accessing resources under `/etc/design`
-1. Requests having the `".html"` extension
+1. Anforderungen für den Zugriff auf Ressourcen unter `/content`
+1. Anforderungen für den Zugriff auf Ressourcen unter `/etc/design`
+1. Anforderungen mit der Erweiterung `".html"`
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
@@ -511,9 +511,9 @@ Wenn Sie vor dem Ausführen der Abfrage das Kontrollkästchen **Ausführungsdaue
 
 Der Index-Manager soll die Indexverwaltung vereinfachen, beispielsweise die Pflege der Indizes oder die Statusanzeige.
 
-It can be accessed by going to **Tools - Operations - Diagnosis **from the Welcome Screen, and then clicking the **Index Manager** button.
+Sie können auf die Datei zugreifen, indem Sie im Begrüßungsbildschirm auf **Tools - Vorgänge - Diagnose **klicken und dann auf die Schaltfläche **Index-Manager** klicken.
 
-It can also be accessed directly at this URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
+Sie kann auch direkt unter folgender URL aufgerufen werden: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
 ![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
 
@@ -521,7 +521,7 @@ It can also be accessed directly at this URL: `https://serveraddress:port/libs/g
 
 ### Status-ZIP herunterladen {#download-status-zip}
 
-Dies löst den Download einer ZIP-Datei aus, die nützliche Informationen zum Systemstatus und zur Systemkonfiguration enthält. Das Archiv enthält Instanzkonfigurationen, eine Liste von Bundles, OSGI, Sling-Metriken und Statistiken, was zu einer großen Datei führen kann. You can reduce the impact of large status files by using the **Download Status ZIP** window. The window can be accessed from:**AEM > Tools > Operations > Diagnosis > Download Status ZIP.**
+Dies löst den Download einer ZIP-Datei aus, die nützliche Informationen zum Systemstatus und zur Systemkonfiguration enthält. Das Archiv enthält Instanzkonfigurationen, eine Liste von Bundles, OSGI, Sling-Metriken und Statistiken, was zu einer großen Datei führen kann. Sie können den Einfluss großer Statusdateien verringern, indem Sie das Fenster **Download-Status-ZIP** verwenden. Auf das Fenster kann zugegriffen werden von:**AEM > Tools > Vorgänge > Diagnose > Download-Status-ZIP.**
 
 In diesem Fenster können Sie auswählen, was exportiert werden soll (Protokolldateien oder andere Thread-Sicherheitskopien) und wie viele Tage von Protokollen im Download im Verhältnis zum aktuellen Datum enthalten sein sollen.
 
@@ -531,11 +531,11 @@ In diesem Fenster können Sie auswählen, was exportiert werden soll (Protokolld
 
 Dies löst den Download einer ZIP-Datei aus, die Informationen zu den Threads enthält, die im System vorhanden sind. Es werden Daten zu jedem Thread bereitgestellt, z. B. zum Status, Classloader und Stacktrace.
 
-### Heap-Sicherheitskopie herunterladen {#download-heap-dump}
+### Heap-Sicherheitskopie herunterladen  {#download-heap-dump}
 
 Sie können auch eine Momentaufnahme des Heaps herunterladen, um ihn zu einem späteren Zeitpunkt besser analysieren zu können. Beachten Sie, dass dadurch der Download einer großen Datei ausgelöst wird, die mehrere hundert MB umfassen kann.
 
-## Automatisierte Wartungsaufgaben {#automated-maintenance-tasks}
+## Automatisierte Wartungsaufgaben  {#automated-maintenance-tasks}
 
 Auf der Seite „Automatisierte Wartungsaufgaben“ können Sie empfohlene Wartungsaufgaben, für die die regelmäßige Ausführung geplant ist, anzeigen und nachverfolgen. Die Aufgaben sind im Konsistenzprüfungssystem integriert. Sie können die Aufgaben auch manuell über die Benutzeroberfläche ausführen.
 
@@ -546,11 +546,11 @@ Um die Wartungsseite im Vorgangs-Dashboard aufzurufen, gehen Sie auf dem AEM-Beg
 Die folgenden Aufgaben sind im Vorgangs-Dashboard verfügbar:
 
 1. die Aufgabe **Revisionsbereinigung**, zu finden im Menü **Tägliches Wartungsfenster**
-1. The **Lucene Binaries Cleanup** task, located under the **Daily Maintenance Window** menu.
+1. Die Aufgabe **Lucene Binaries Cleanup** befindet sich im Menü **Daily Maintenance Window**.
 1. die Aufgabe **Workflow-Bereinigung**, zu finden im Menü **Wöchentliches Wartungsfenster**
-1. The **Data Store Garbage Collection** task, located under the **Weekly Maintenance Window** menu.
-1. The **Audit Log Maintenance** task, located under the **Weekly Maintenance Window** menu.
-1. The **Version Purge Maintenance** task, located under the **Weekly Maintenance Window** menu.
+1. Die Aufgabe **Datenerfassungs-Garbage Collection** befindet sich im Menü **Wöchentliches Wartungsfenster**.
+1. Die Aufgabe **Audit Log Maintenance** befindet sich im Menü **Weekly Maintenance Window**.
+1. Die Aufgabe **Versionsbereinigung** befindet sich im Menü **Wöchentliches Wartungsfenster**.
 
 Die Standardzeit für das tägliche Wartungsfenster ist 02:00 bis 05:00 Uhr. Die Aufgaben, die für das Zeitfenster der wöchentlichen Wartung konfiguriert sind, werden an Samstagen zwischen 01:00 und 02:00 Uhr ausgeführt.
 
@@ -562,20 +562,20 @@ Sie können diese Zeiten auch konfigurieren. Klicken Sie dazu auf das Zahnradsym
 >
 >Seit AEM 6.1 können Sie die vorhandenen Wartungsfenster auch für die monatliche Ausführung konfigurieren.
 
-### Revisionsbereinigung {#revision-clean-up}
+### Revisionsbereinigung  {#revision-clean-up}
 
 Weitere Informationen zur Durchführung der Revisionsbereinigung in AEM [finden Sie in diesem speziellen Artikel](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene-Binärdateien-Bereinigung {#lucene-binaries-cleanup}
 
-Mit dieser Aufgabe können Sie Lucene-Binärdateien bereinigen und die Anforderungen an die Größe des ausgeführten Datenspeichers verringern. This is because the lucene&#39;s binary churn will be re-claimed daily instead of the earlier dependency on a successful [data store garbage collection](/help/sites-administering/data-store-garbage-collection.md) run.
+Mit dieser Aufgabe können Sie Lucene-Binärdateien bereinigen und die Anforderungen an die Größe des ausgeführten Datenspeichers verringern. Der Grund dafür ist, dass der binäre Wurf des Lucens täglich anstelle der früheren Abhängigkeit von einer erfolgreichen Ausführung von [Datenspeicher-Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) erneut angefordert wird.
 
 Zwar wurde die Wartungsaufgabe entwickelt, um Lucene-Revisions-Garbage zu verringern, aber ihre Ausführung verbessert auch allgemein die Effizienz:
 
 * Die wöchentliche Ausführung der Datenspeicherbereinigung wird schneller abgeschlossen.
 * Sie kann auch die AEM insgesamt leicht verbessern
 
-You can access the Lucene Binaries Cleanup task from: **AEM > Tools > Operations > Maintenance > Daily Maintenance Window > Lucene Binaries Cleanup**.
+Sie können auf die Aufgabe &quot;Bereinigung der Lucene-Binärdateien&quot;zugreifen: **AEM > Extras > Vorgänge > Wartung > Tägliches Wartungsfenster > Aufräumen von Lucene-Binärdateien**.
 
 ### Datenspeicherbereinigung {#data-store-garbage-collection}
 
@@ -598,21 +598,21 @@ Informationen zur Auditprotokoll-Wartung finden Sie auf der entsprechenden [Doku
 
 ### Versionsbereinigung {#version-purge}
 
-Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. As a result, this minimizes the need to manually use the [Version Purge tools](/help/sites-deploying/version-purging.md). You can schedule and configure the Version Purge task by accessing **Tools > Operations > Maintenance > Weekly Maintenance Window** and following these steps:
+Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die manuelle Verwendung der [Werkzeuge zur Versionsbereinigung](/help/sites-deploying/version-purging.md) minimiert. Sie können die Aufgabe zur Versionsbereinigung planen und konfigurieren, indem Sie auf **Tools > Vorgänge > Wartung > Wöchentliches Wartungsfenster** zugreifen und folgende Schritte ausführen:
 
-1. Click the **Add** button.
-1. Choose **Version Purge** from the drop-down menu.
+1. Klicken Sie auf die Schaltfläche **Hinzufügen**.
+1. Wählen Sie **Version Purge** aus dem Dropdown-Menü.
 
    ![version_purge_maintenanceTask](assets/version_purge_maintenancetask.png)
 
-1. To configure the Version Purge task, click on the **gears** icon on the newly created Version Purge maintenance card.
+1. Klicken Sie zum Konfigurieren der Aufgabe zur Versionsbereinigung auf das Symbol **Getriebe** auf der neu erstellten Versionsbereinigungskarte.
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
 **In AEM 6.4** können Sie die Versionsbereinigung wie folgt anhalten:
 
 * Automatisch – Wenn das geplante Wartungsfenster abläuft, bevor die Aufgabe abgeschlossen ist, wird die Aufgabe automatisch beendet. Sie wird fortgesetzt, wenn das nächste Wartungsfenster beginnt.
-* Manually - To manually stop the task, on the Version Purge maintenance card, click the **Stop** icon. Bei der nächsten Ausführung wird die Aufgabe sicher fortgesetzt.
+* Manuell - Um die Aufgabe manuell zu beenden, klicken Sie auf der Wartungskarte für Versionsbereinigung auf das Symbol **Stopp**. Bei der nächsten Ausführung wird die Aufgabe sicher fortgesetzt.
 
 >[!NOTE]
 >
@@ -644,7 +644,7 @@ Sie können benutzerdefinierte Wartungsaufgaben als OSGi-Dienste implementieren.
    <td>granite.maintenance.mandatory</td>
    <td>Boolesches Attribut, das definiert, ob eine Aufgabe obligatorisch ist und regelmäßig ausgeführt werden muss. Wenn eine Aufgabe verpflichtend ist, sich aber aktuell in keinem aktiven Planungsfenster befindet, meldet eine Konsistenzprüfung dies als Fehler. Der Standard lautet „false“.</td>
    <td>true</td>
-   <td>Optional</td>
+   <td>optional</td>
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
@@ -660,16 +660,16 @@ Sie können benutzerdefinierte Wartungsaufgaben als OSGi-Dienste implementieren.
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Dies ist ein einzigartiges Thema der Wartungs-Aufgabe.<br /> Die Apache Sling-Auftragsverarbeitung startet einen Auftrag mit genau diesem Thema, um die Wartungsaufgabe auszuführen, und wenn die Aufgabe für dieses Thema registriert wird, wird sie ausgeführt.<br /> Das Thema muss mit <i>com/adobe/granite/maintenance/job/ Beginn werden</i></td>
+   <td>Dies ist ein einzigartiges Thema der Wartungs-Aufgabe.<br /> Die Apache Sling-Auftragsverarbeitung startet einen Auftrag mit genau diesem Thema, um die Wartungsaufgabe auszuführen, und wenn die Aufgabe für dieses Thema registriert wird, wird sie ausgeführt.<br /> Das Thema muss mit  <i>com/adobe/granite/maintenance/job/ Beginn werden</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Erforderlich</td>
   </tr>
  </tbody>
 </table>
 
-Apart from the above service properties, the `process()` method of the `JobConsumer` interface needs to be implemented by adding the code that should be executed for the maintance task. Mit dem bereitgestellten `JobExecutionContext` können Sie Statusinformationen ausgeben, prüfen, ob der Auftrag vom Benutzer angehalten wurde, und ein Ergebnis erstellen (Erfolg oder Fehler).
+Neben den oben genannten Diensteigenschaften muss die `process()`-Methode der `JobConsumer`-Schnittstelle implementiert werden, indem der Code hinzugefügt wird, der für die Maintenance-Aufgabe ausgeführt werden soll. Mit dem bereitgestellten `JobExecutionContext` können Sie Statusinformationen ausgeben, prüfen, ob der Auftrag vom Benutzer angehalten wurde, und ein Ergebnis erstellen (Erfolg oder Fehler).
 
-For situations where a maintenance task should not be run on all installations (for example, run only on the publish instance), you can make the service require a configuration in order to be active by adding `@Component(policy=ConfigurationPolicy.REQUIRE)`. Anschließend können Sie die entsprechende Konfiguration im Repository als abhängig vom Ausführungsmodus markieren. Weitere Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
+In Fällen, in denen eine Maintenance-Aufgabe nicht auf allen Installationen ausgeführt werden sollte (z. B. nur auf der Veröffentlichungsinstanz), können Sie festlegen, dass der Dienst konfiguriert werden muss, damit er aktiv ist, indem Sie `@Component(policy=ConfigurationPolicy.REQUIRE)` hinzufügen. Anschließend können Sie die entsprechende Konfiguration im Repository als abhängig vom Ausführungsmodus markieren. Weitere Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
 Unten sehen Sie ein Beispiel einer benutzerdefinierten Wartungsaufgabe, die Dateien aus einem konfigurierbaren temporären Verzeichnis löscht, die in den letzten 24 Stunden bearbeitet wurden:
 
@@ -683,25 +683,25 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
  </tbody>
 </table>
 
-[experiencemanager-java-maintenanceTask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
+[experiencemanager-java-maintenanceTask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)-  [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
 Nach der Bereitstellung des Dienstes wird er der Benutzeroberfläche des Operations-Dashboards angezeigt. Sie können ihn einem der verfügbaren Wartungspläne hinzufügen:
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-This will add a corresponding resource at /apps/granite/operations/config/maintenance/`schedule`/`taskname`. Wenn die Aufgabe vom Ausführungsmodus abhängig ist, müssen Sie die Eigenschaft granite.operations.conditions.runmode auf diesem Knoten auf die Werte der Ausführungsmodi festlegen, die für diese Wartungsaufgabe aktiv sein müssen.
+Dadurch wird eine entsprechende Ressource unter /apps/granite/operations/config/maintenance/`schedule`/`taskname` hinzugefügt. Wenn die Aufgabe vom Ausführungsmodus abhängig ist, müssen Sie die Eigenschaft granite.operations.conditions.runmode auf diesem Knoten auf die Werte der Ausführungsmodi festlegen, die für diese Wartungsaufgabe aktiv sein müssen.
 
 ## Systemübersicht {#system-overview}
 
-The **System Overview Dashboard** displays a high-level overview of the configuration, hardware and health of the AEM instance. Der Status der Systemkonsistenz ist also transparent und alle entsprechenden Daten werden auf einem zentralen Dashboard zusammengeführt.
+Das Dashboard **Systemübersicht** zeigt einen Überblick über die Konfiguration, Hardware und den Zustand der AEM Instanz auf hoher Ebene. Der Status der Systemkonsistenz ist also transparent und alle entsprechenden Daten werden auf einem zentralen Dashboard zusammengeführt.
 
 >[!NOTE]
 >
->You can also [watch this video](https://video.tv.adobe.com/v/21340?captions=ger) for an introduction to the System Overview Dashboard.
+>Sehen Sie sich dieses Video [für eine Einführung in das Dashboard &quot;Systemübersicht&quot;an.](https://video.tv.adobe.com/v/21340?captions=ger)
 
 ### Zugriff {#how-to-access}
 
-To access the System Overview Dashboard, navigate to **Tools > Operations > System Overview**.
+Um auf das Dashboard Systemübersicht zuzugreifen, navigieren Sie zu **Tools > Vorgänge > Systemübersicht**.
 
 ![system_overview_Dashboard](assets/system_overview_dashboard.png)
 
@@ -709,7 +709,7 @@ To access the System Overview Dashboard, navigate to **Tools > Operations > Syst
 
 In der nachfolgenden Tabelle werden alle Informationen beschrieben, die im Systemübersicht-Dashboard angezeigt werden. Beachten Sie dabei: Wenn es keine relevanten anzuzeigenden Informationen gibt (wenn z. B. kein Backup durchgeführt wird, gibt es keine kritischen Konsistenzprüfungen), wird im entsprechenden Bereich die Meldung „Keine Einträge“ angezeigt.
 
-You can also download a `JSON` file summarizing the dashboard information by clicking the **Download** button in the upper right-hand corner of the dashboard.The `JSON` endpoint is `/libs/granite/operations/content/systemoverview/export.json` and it can be used in a `curl` script for external monitoring.
+Sie können auch eine `JSON`-Datei herunterladen, die die Informationen zum Dashboard zusammenfasst, indem Sie auf die Schaltfläche **Herunterladen** in der oberen rechten Ecke des Dashboards klicken. Der `JSON`-Endpunkt ist `/libs/granite/operations/content/systemoverview/export.json` und kann in einem `curl`-Skript zur externen Überwachung verwendet werden.
 
 <table>
  <tbody>
@@ -762,9 +762,9 @@ You can also download a `JSON` file summarizing the dashboard information by cli
    <td>
     <ul>
      <li>Betriebssystem und Version des Betriebssystems (z. B. Mac OS X)</li>
-     <li>system load average, as retrieved from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
+     <li>Systemlastdurchschnitt, wie von <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a> abgerufen</li>
      <li>Festplattenspeicherplatz (auf der Partition, auf der sich das Basisverzeichnis befindet)</li>
-     <li>maximum heap, as returned by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
+     <li>Maximum Heap, wie von <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a> zurückgegeben</li>
     </ul> </td>
    <td>Nicht zutreffend</td>
    <td>Nicht zutreffend</td>
