@@ -15,7 +15,7 @@ ht-degree: 95%
 ---
 
 
-# AEM 6.5 Deploying User Guide {#deploying}
+# AEM 6.5 Bereitstellen des Benutzerhandbuchs {#deploying}
 
 + [Bereitstellungshandbuch für Benutzer](home.md)
 + Einführung in die AEM-Plattform {#introduction}
