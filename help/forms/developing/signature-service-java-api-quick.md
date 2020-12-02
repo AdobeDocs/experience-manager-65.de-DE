@@ -40,15 +40,15 @@ Der Java API Quick Beginn (SOAP) ist für den Signature-Dienst verfügbar:
 
 [Quick Beginn (SOAP-Modus): Entfernen einer digitalen Signatur mit der Java-API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Beginn im Bereich &quot;Programmieren mit AEM Forms&quot;basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus): Signaturfeld zu einem PDF-Dokument mithilfe der Java-API hinzufügen {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Signaturfeld zu einem PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api} hinzufügen
 
-Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen *SignatureField1* zu einem PDF-Dokument hinzugefügt, das auf einer PDF-Datei *mit dem NamenLoan.pdf* basiert. Das PDF-Dokument, das das neue Unterschriftsfeld enthält, wird als PDF-Datei mit dem Namen *LoanSig.pdf* gespeichert. (Siehe [Hinzufügen von Unterschriftsfeldern](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen *SignatureField1* zu einem PDF-Dokument hinzugefügt, das auf einer PDF-Datei mit dem Namen *Loan.pdf* basiert. Das PDF-Dokument, das das neue Unterschriftsfeld enthält, wird als PDF-Datei mit dem Namen *LoanSig.pdf* gespeichert. (Siehe [Unterschriftsfelder hinzufügen](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
 ```java
  /*
@@ -164,7 +164,7 @@ Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen *SignatureFie
 
 ## Quick Beginn (SOAP-Modus): Abrufen von Signaturfeldnamen mit der Java-API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-The following Java code example retrieves the names of signature fields located in a PDF document named *LoanSig.pdf*. (Siehe [Abrufen von Signaturfeldnamen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+Im folgenden Java-Codebeispiel werden die Namen der Signaturfelder in einem PDF-Dokument mit dem Namen *LoanSig.pdf* abgerufen. (Siehe [Signaturfeldnamen abrufen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
 ```java
  /*
@@ -268,9 +268,9 @@ The following Java code example retrieves the names of signature fields located 
  }
 ```
 
-## Quick Beginn (SOAP-Modus): Signaturfelder mit der Java-API ändern {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Signaturfelder mit der Java-API {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api} ändern
 
-Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen SignatureField1 geändert, indem alle Felder im Formular gesperrt werden, wenn eine Signatur auf das Signaturfeld angewendet wird, und sichergestellt wird, dass keine Änderungen zulässig sind. Nachdem der Signature-Dienst das PDF-Dokument zurückgegeben hat, das das geänderte Signaturfeld enthält, wird das PDF-Dokument als PDF-Datei mit dem Namen &quot;LoanSig.pdf&quot;gespeichert. (In diesem Beispiel wird die an den Signature-Dienst weitergeleitete PDF-Datei überschrieben.) (Siehe [Unterschriftsfelder](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)ändern.)
+Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen SignatureField1 geändert, indem alle Felder im Formular gesperrt werden, wenn eine Signatur auf das Signaturfeld angewendet wird, und sichergestellt wird, dass keine Änderungen zulässig sind. Nachdem der Signature-Dienst das PDF-Dokument zurückgegeben hat, das das geänderte Signaturfeld enthält, wird das PDF-Dokument als PDF-Datei mit dem Namen &quot;LoanSig.pdf&quot;gespeichert. (In diesem Beispiel wird die an den Signature-Dienst weitergeleitete PDF-Datei überschrieben.) (Siehe [Unterschriftsfelder ändern](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*
@@ -398,7 +398,7 @@ Im folgenden Java-Codebeispiel wird ein Signaturfeld mit dem Namen SignatureFiel
 
 ## Quick Beginn (SOAP-Modus): Digitales Signieren eines PDF-Dokuments mit der Java-API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein PDF-Dokument digital signiert, das auf einer PDF-Datei mit dem Namen *LoanSig.pdf* basiert. Der für die Sicherheitsberechtigung angegebene Alias ist sicher und die Sperrüberprüfung wird durchgeführt. Da keine Zertifikatsperrliste oder OCSP-Serverinformationen angegeben sind, werden die Serverinformationen aus dem zum digitalen Signieren des PDF-Dokuments verwendeten Zertifikat abgerufen. Das signierte Dokument wird als PDF-Datei mit dem Namen *LoanSigned.pdf* gespeichert. (See [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+Im folgenden Java-Codebeispiel wird ein PDF-Dokument digital signiert, das auf einer PDF-Datei mit dem Namen *LoanSig.pdf* basiert. Der für die Sicherheitsberechtigung angegebene Alias ist sicher und die Sperrüberprüfung wird durchgeführt. Da keine Zertifikatsperrliste oder OCSP-Serverinformationen angegeben sind, werden die Serverinformationen aus dem zum digitalen Signieren des PDF-Dokuments verwendeten Zertifikat abgerufen. Das signierte Dokument wird als PDF-Datei mit dem Namen *LoanSigned.pdf* gespeichert. (Siehe [Digitales Signieren von PDF-Dokumenten](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ```java
  /*
@@ -547,7 +547,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument digital signiert, das auf e
 
 ## Quick Beginn (SOAP-Modus): Digitales Signieren eines XFA-basierten Formulars mit der Java-API {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein interaktives Formular signiert, das vom Forms-Dienst wiedergegeben wird. Die vom Forms-Dienst zurückgegebene `com.adobe.idp.Document` Instanz wird an den Signature-Dienst übergeben. Das signierte interaktive Formular wird als PDF-Datei mit dem Namen *LoanXFASigned.pdf* gespeichert.
+Im folgenden Java-Codebeispiel wird ein interaktives Formular signiert, das vom Forms-Dienst wiedergegeben wird. Die `com.adobe.idp.Document`-Instanz, die vom Forms-Dienst zurückgegeben wird, wird an den Signature-Dienst übergeben. Das signierte interaktive Formular wird als PDF-Datei mit dem Namen *LoanXFASigned.pdf* gespeichert.
 
 ```java
  /*
@@ -757,9 +757,9 @@ Im folgenden Java-Codebeispiel wird ein interaktives Formular signiert, das vom 
  
 ```
 
-## Quick Beginn (SOAP-Modus): PDF-Dokumente mit der Java-API zertifizieren {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Zertifizieren eines PDF-Dokuments mit der Java-API {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-The following Java code example certifies a PDF document that is based on a PDF file named *LoanSig.pdf*. Der für die Sicherheitsberechtigung angegebene Alias ist sicher und die Sperrüberprüfung wird nicht durchgeführt. Das zertifizierte Dokument wird als PDF-Datei mit dem Namen *LoanCertified.pdf* gespeichert. (See [Certifying PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+Im folgenden Java-Codebeispiel wird ein PDF-Dokument zertifiziert, das auf einer PDF-Datei mit dem Namen *LoanSig.pdf* basiert. Der für die Sicherheitsberechtigung angegebene Alias ist sicher und die Sperrüberprüfung wird nicht durchgeführt. Das zertifizierte Dokument wird als PDF-Datei mit dem Namen *LoanCertified.pdf* gespeichert. (Siehe [PDF-Dokumente zertifizieren](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
 ```java
  /*
@@ -906,9 +906,9 @@ The following Java code example certifies a PDF document that is based on a PDF 
  }
 ```
 
-## Quick Beginn (SOAP-Modus): Digitale Signaturen mit der Java-API überprüfen {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Digitale Signatur mit der Java-API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api} überprüfen
 
-Im folgenden Java-Codebeispiel wird eine Digitalsignatur überprüft, die sich in einem signierten PDF-Dokument befindet, das auf einer PDF-Datei mit dem Namen LoanSigned.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt, und die Option zur Prüfung der Sperrung ist nach besten Kräften eingestellt. (Siehe [Digitale Signaturen](#verifying-digital-signatures)überprüfen.)
+Im folgenden Java-Codebeispiel wird eine Digitalsignatur überprüft, die sich in einem signierten PDF-Dokument befindet, das auf einer PDF-Datei mit dem Namen LoanSigned.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt, und die Option zur Prüfung der Sperrung ist nach besten Kräften eingestellt. (Siehe [Digitale Signaturen überprüfen](#verifying-digital-signatures).)
 
 ```java
  /*
@@ -1070,9 +1070,9 @@ Im folgenden Java-Codebeispiel wird eine Digitalsignatur überprüft, die sich i
  
 ```
 
-## Quick Beginn (SOAP-Modus): Mehrere digitale Signaturen mit der Java-API überprüfen {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Mehrere digitale Signaturen mit der Java-API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api} überprüfen
 
-Im folgenden Java-Codebeispiel werden mehrere digitale Signaturen überprüft, die sich in einem signierten PDF-Dokument befinden, das auf einer PDF-Datei mit dem Namen LoanAllSigs.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt, und die Option zur Prüfung der Sperrung ist nach besten Kräften eingestellt. (See [Verifying Multiple Digital Signatures](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
+Im folgenden Java-Codebeispiel werden mehrere digitale Signaturen überprüft, die sich in einem signierten PDF-Dokument befinden, das auf einer PDF-Datei mit dem Namen LoanAllSigs.pdf basiert. Die Überprüfungszeit ist auf die aktuelle Zeit eingestellt, und die Option zur Prüfung der Sperrung ist nach besten Kräften eingestellt. (Siehe [Mehrere digitale Signaturen überprüfen](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
 ```java
  /*
@@ -1234,7 +1234,7 @@ Im folgenden Java-Codebeispiel werden mehrere digitale Signaturen überprüft, d
 
 ## Quick Beginn (SOAP-Modus): Entfernen einer digitalen Signatur mit der Java-API {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
-The following Java code example removes a digital signature from a signature field named *SignatureField1*. Der Name der PDF-Datei, die das Unterschriftsfeld enthält, lautet *LoanSigned.pdf*. (Siehe [Digitale Signaturen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures)entfernen.)
+Im folgenden Java-Codebeispiel wird eine digitale Signatur aus dem Signaturfeld *SignatureField1* entfernt. Der Name der PDF-Datei, die das Unterschriftsfeld enthält, lautet *LoanSigned.pdf*. (Siehe [Digitale Signaturen entfernen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 ```java
  /*
