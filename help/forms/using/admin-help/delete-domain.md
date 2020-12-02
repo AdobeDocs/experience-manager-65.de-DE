@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 79%
 
 ---
 
@@ -21,6 +24,6 @@ Zum Markieren einer bestehenden Domäne als veraltet verwenden Sie die Seite „
 
 Wenn Sie eine Domäne mit demselben Namen wie dem der gelöschten Domäne erstellen, wird die gelöschte Domäne zusammen mit den enthaltenen Informationen neu aktiviert. Die Domäne „DefaultDom“ kann nicht gelöscht werden.
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Domain Management]**.
-1. Select the check box for the domain to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Domänenverwaltung]**.
+1. Aktivieren Sie das Kontrollkästchen der zu löschenden Domäne, klicken Sie auf **[!UICONTROL Löschen]** und dann auf **[!UICONTROL OK]**.
 
