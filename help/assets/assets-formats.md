@@ -1,6 +1,6 @@
 ---
 title: Unterstützte Dateiformate und MIME-Typen
-description: Dateiformate und MIME-Typen, die [!DNL Assets] and [!DNL Dynamic Media] von und die für die einzelnen Formate unterstützten Funktionen unterstützt werden.
+description: Dateiformate und MIME-Typen, die von [!DNL Assets] and [!DNL Dynamic Media] unterstützt werden, und die für jedes Format unterstützten Funktionen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: eaff176bf3ffc197607b8eb39b15c1e945927f8e
@@ -11,9 +11,9 @@ ht-degree: 58%
 ---
 
 
-# Unterstützte Formate in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+# Formate unterstützt in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen. To integrate [!DNL Assets] with other standards-compliant digital asset management (DAM) solutions and desktop software, use Adobe&#39;s [!DNL Extensible Metadata Platform] (XMP).
+[!DNL Experience Manager Assets] unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen. Um [!DNL Assets] in andere standardkonforme DAM-Lösungen (Digital Asset Management) und Desktop-Software zu integrieren, verwenden Sie die Adobe [!DNL Extensible Metadata Platform] (XMP).
 
 Die Legende gibt den Grad der Unterstützung an.
 
@@ -21,56 +21,56 @@ Die Legende gibt den Grad der Unterstützung an.
 | :-----------: | ------------------------------ |
 | ✓ | Unterstützt |
 | * | Mit Funktionen von Zusatzmodulen unterstützt |
-| − | Nicht zutreffend |
+| - | Nicht zutreffend |
 
-## Supported raster image formats in [!DNL Experience Manager] {#supported-raster-image-formats}
+## Unterstützte Rasterbildformate in [!DNL Experience Manager] {#supported-raster-image-formats}
 
-Folgende Rasterbildformate werden unterstützt [!DNL Assets] :
+Folgende Rasterbildformate werden unterstützt:[!DNL Assets]
 
 | Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Bearbeiten | Metadaten-Writeback | Insights |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
-| PNM | ✓ | ✓ | − | − | − | − | ✓ |
-| PGM | ✓ | ✓ | − | − | − | − | ✓ |
-| PBM | ✓ | ✓ | − | − | − | − | ✓ |
-| PPM | ✓ | ✓ | − | − | − | − | ✓ |
-| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
-| PICT | − | − | − | − | − | − | ✓ |
-| PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
+| PNG | they | they | they | they | they | they | they |
+| GIF | they | they | they | they | they | - | they |
+| TIFF | they | they | they | they | - | they | they |
+| JPEG | they | they | they | they | they | they | they |
+| BMP | they | they | they | they | they | - | they |
+| PNM | they | they | - | - | - | - | they |
+| PGM | they | they | - | - | - | - | they |
+| PBM | they | they | - | - | - | - | they |
+| PPM | they | they | - | - | - | - | they |
+| PSD ‡ | they | they | they | they | - | - | they |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | they | they | they | they | - | they | - |
+| PICT | - | - | - | - | - | - | they |
+| PSB | they | they | they | they | - | - | - |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
-Folgende Rasterbildformate werden unterstützt [!DNL Dynamic Media] :
+Folgende Rasterbildformate werden unterstützt:[!DNL Dynamic Media]
 
-| Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
+| Format | Hochladen<br> (Eingabeformat) | Create<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamische Darstellung<br> | Wiedergabe<br> dynamisch<br> | Darstellung herunterladen<br> dynamisch<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | − | − | − | − |
-| PSD ‡ | ✓ | − | − | − | − |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | − | − | − | − |
+| PNG | they | they | they | they | they |
+| GIF | they | they | they | they | they |
+| TIFF | they | they | they | they | they |
+| JPEG | they | they | they | they | they |
+| BMP | they | - | - | - | - |
+| PSD* | they | - | - | - | - |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | they | they | they | they | they |
+| PICT | they | - | - | - | - |
 
 ‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
-* Die Unterstützung für EPS-Dateien gilt nur für Rasterbilder. Zum Beispiel wird die Erstellung von Miniaturansichten für Vektorbilder im EPS-Format nicht standardmäßig unterstützt. Um die Unterstützung hinzuzufügen, [konfigurieren Sie ImageMagick](best-practices-for-imagemagick.md). Informationen zum Integrieren von Werkzeugen von Drittanbietern, um zusätzliche Funktionen zu aktivieren, finden Sie unter [Befehlszeilenbasierter Media Handler](media-handlers.md#command-line-based-media-handler).
+* Die Unterstützung für EPS-Dateien gilt nur für Rasterbilder. Zum Beispiel wird die Erstellung von Miniaturansichten für Vektorbilder im EPS-Format nicht standardmäßig unterstützt. Um die Unterstützung hinzuzufügen, [konfigurieren Sie ImageMagick](best-practices-for-imagemagick.md). Informationen zum Integrieren von Drittanbieter-Tools zur Aktivierung zusätzlicher Funktionen finden Sie unter [Befehlszeilenbasierter Media Handler](media-handlers.md#command-line-based-media-handler).
 
-* Metadata writeback works for PSB file format when it is added to the `NComm` handler.
+* Die Metadaten-Schreibsicherung funktioniert für das PSB-Dateiformat, wenn sie dem Handler `NComm` hinzugefügt wird.
 
-* To use [!DNL Dynamic Media] to preview and generate dynamic renditions for EPS files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Informationen zum Verwenden von [!DNL Dynamic Media] zur Vorschau und Generierung dynamischer Darstellungen für EPS-Dateien finden Sie unter [Adobe Illustrator (AI), Postscript (EPS) und PDF-Dateiformate.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Metadaten-Writeback für EPS-Dateien wird ab Version 3.0 von PostScript Document Structuring Convention (PS-Adobe) unterstützt.
 
-## Supported 3D formats {#support-3d-formats}
+## Unterstützte 3D-Formate {#support-3d-formats}
 
 Die folgende Liste von 3D-Formaten wird unterstützt:
 
@@ -78,18 +78,18 @@ Siehe [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Miniaturansicht, Vorschau | 3D-Vorschau | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | − | − |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ | − | ✓ | − |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| DN | they | they | they |  | they | they | - | - |
+| gLB | they | they | they | they | they | - | they | they |
+| gLTF | they | they | they |  | they | - | they | - |
+| OBJ | they | they | they | they | they | - | they | they |
+| STL | they | they | they | they | they | - | they | they |
+| USDz | they | they | they | they | they | - | - | they |
 
 ## Nicht unterstützte Rasterbildformate in dynamischen Medien {#unsupported-image-formats-dynamic-media}
 
-In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien *nicht* unterstützt werden.
+In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in dynamischen Medien nicht unterstützt werden.**
 
-Siehe auch [Erkennung nicht unterstützter Dateiformate für dynamische Medien](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Siehe auch [Nicht unterstützte Dateiformate für dynamische Medien](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html) erkennen.
 
 * PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
 * PSB-Dateien.
@@ -118,58 +118,58 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## Unterstützte PDF Rasterizer-Bibliothek {#supported-pdf-rasterizer-library}
 
-The Adobe PDF Rasterizer library generates high-quality thumbnails and previews for large and content-intensive [!DNL Adobe Illustrator] and PDF files. Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Dateien:
+Die Adobe PDF Rasterbibliothek generiert hochwertige Miniaturansichten und Vorschauen für große und inhaltsintensive [!DNL Adobe Illustrator]- und PDF-Dateien. Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Dateien:
 
 * Inhaltsintensive AI-/PDF-Dateien, die ressourcenintensiv zu verarbeiten sind.
 * AI-/PDF-Dateien, für die standardmäßig keine Miniaturansichten generiert werden.
 * AI-Dateien mit PMS-Farben (Pantone Matching System)
 
-See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
+Siehe [Verwenden von PDF-Rastern](aem-pdf-rasterizer.md).
 
-## Supported Image Transcoding library {#supported-image-transcoding-library}
+## Unterstützte Bildtranskodierungsbibliothek {#supported-image-transcoding-library}
 
 Die Adobe Imaging Transcoding-Bibliothek ist eine Bildverarbeitungslösung, die Bildbearbeitungsfunktionen wie Kodierung, Transkodierung, Neuberechnung und Größenanpassung ausführt.
 
 Die Imaging Transcoding Library unterstützt Dateien in den Formaten JPG/JPEG, PNG (8-Bit und 16-Bit), GIF, BMP, TIFF/Komprimiertes TIFF (außer 32-Bit-TIFF- und PTIFF-Dateien), ICO sowie ICN MIME-Typen.
 
-See [Imaging Transcoding Library](imaging-transcoding-library.md).
+Siehe [Imaging Transcoding Library](imaging-transcoding-library.md).
 
-## Supported camera raw {#supported-camera-raw}
+## Unterstützte Camera Raw {#supported-camera-raw}
 
-Die [!DNL Adobe Camera Raw] Bibliothek ermöglicht [!DNL Assets] das Erfassen von Rohbildern. See [Camera Raw support](camera-raw.md).
+Die [!DNL Adobe Camera Raw]-Bibliothek ermöglicht das Erfassen von Rohbildern. [!DNL Assets] Siehe [Camera Raw support](camera-raw.md).
 
-## Supported [!DNL Assets] document formats {#supported-document-formats}
+## Unterstützte [!DNL Assets]-Dokument-Formate {#supported-document-formats}
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
-| Format | Speicherung | [Metadatenverwaltung](metadata.md) | Extraktion im Volltext<br> | [Metadatenextraktion](metadata.md) | Thumbnail<br> generation | [Subasset-Extraktion](managing-linked-subassets.md) | [Metadaten-Writeback](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Format | Speicherung | [Metadatenverwaltung](metadata.md) | Volltext<br>-Extraktion | [Metadatenextraktion](metadata.md) | Miniaturansicht<br> Generation | [Subasset-Extraktion](managing-linked-subassets.md) | [Metadaten-Writeback](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
-| DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
-| ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
-| RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
-| TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
-| XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
-| ODS | ✓ | ✓ | ✓ | − | − | − | − | − |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
-| ODP | ✓ | ✓ | ✓ | − | − | − | − | − |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
-| PS | ✓ | ✓ | − | − | − | − | − | − |
-| QXP | ✓ | ✓ | − | − | − | − | − | − |
-| EPUB | ✓ | ✓ | − | ✓ | ✓ | − | − | − |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | they | they | - | they | they | they | they | - |
+| DOC | they | they | they | they | - | - | - | they |
+| DOCX | they | they | they | they | - | - | - | they |
+| ODT | they | they | they | - | - | - | - | they |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | they | they | they | they | they | they | they | they |
+| HTML | they | they | they | - | - | - | - | they |
+| RTF | they | they | they | - | - | - | - | they |
+| TXT | they | they | they | - | - | - | - | they |
+| XLS | they | they | they | - | - | - | - | they |
+| XLSX | they | they | they | they | - | - | - | they |
+| ODS | they | they | they | - | - | - | - | - |
+| PPT | they | they | they | they | they | they | - | they |
+| PPTX | they | they | they | they | they | they | - | they |
+| ODP | they | they | they | - | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | they | they | - | they | they | they | they | - |
+| PS | they | they | - | - | - | - | - | - |
+| QXP | they | they | - | - | - | - | - | - |
+| EPUB | they | they | - | they | they | - | - | - |
 
 ## Unterstützte Dokument-Formate in dynamischen Medien {#supported-document-formats-dynamic-media}
 
-| Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
+| Format | Hochladen<br> (Eingabeformat) | Create<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamische Darstellung<br> | Wiedergabe<br> dynamisch<br> | Darstellung herunterladen<br> dynamisch<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | they | - | - | - | - |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | they | they | they | they | they |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | they | - | - | - | - |
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
@@ -177,75 +177,75 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 * Um mithilfe von Dynamic Media dynamische Ausgaben für AI-Dateien in der Vorschau anzuzeigen und zu generieren, informieren Sie sich unter [Adobe Illustrator (AI)-, PostScript (EPS)- und PDF-Dateiformate.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) 
 
-* To use Dynamic Media to generate dynamic renditions for INDD files, see [InDesign (INDD) file format](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Informationen zum Generieren dynamischer Darstellungen für INDD-Dateien mit dynamischen Medien finden Sie unter [InDesign (INDD)-Dateiformat](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## Unterstützte Multimediaformate {#supported-multimedia-formats}
 
 |  | Speicher | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | FFmpeg-Transkodierung |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ | − | − | * |
-| MIDI | ✓ | ✓ | − | − | * |
-| 3GP | ✓ | ✓ | − | − | * |
-| MP3 | ✓ | ✓ | ✓ | − | * |
-| MPG | ✓ | ✓ | − | − | * |
-| OGA | ✓ | ✓ | − | − | * |
-| OGG | ✓ | ✓ | − | − | * |
-| RA | ✓ | ✓ | − | − | * |
-| WAV | ✓ | ✓ | − | − | * |
-| WMA | ✓ | ✓ | − | − | * |
-| DVI | ✓ | ✓ | − | * | * |
-| FLV | ✓ | ✓ | − | * | * |
-| M4V | ✓ | ✓ | − | * | * |
-| MPEG | ✓ | ✓ | − | * | * |
-| OGV | ✓ | ✓ | − | * | * |
-| MOV | ✓ | ✓ | − | * | * |
-| WMV | ✓ | ✓ | − | * | * |
-| SWF | ✓ | ✓ | − | − | − |
+| AAC | they | they | - | - | * |
+| MIDI | they | they | - | - | * |
+| 3GP | they | they | - | - | * |
+| MP3 | they | they | they | - | * |
+| MPG | they | they | - | - | * |
+| OGA | they | they | - | - | * |
+| OGG | they | they | - | - | * |
+| RA | they | they | - | - | * |
+| WAV | they | they | - | - | * |
+| WMA | they | they | - | - | * |
+| DVI | they | they | - | * | * |
+| FLV | they | they | - | * | * |
+| M4V | they | they | - | * | * |
+| MPEG | they | they | - | * | * |
+| OGV | they | they | - | * | * |
+| MOV | they | they | - | * | * |
+| WMV | they | they | - | * | * |
+| SWF | they | they | - | - | - |
 
-## Supported input video formats in Dynamic Media for transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Unterstützte Eingabedokumentformate in dynamischen Medien zum Transkodieren von {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Videodateierweiterung | Container | Empfohlene Video-Codecs | Nicht unterstützte Video-Codecs |
 |---|---|---|---|
-| MP4 | MPEG-4 | H264/AVC (alle Profile) | − |
+| MP4 | MPEG-4 | H264/AVC (alle Profile) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (Vektoranimationsdateien) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
-| M4V | Apple iTunes | H264/AVC | − |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| M4V | Apple iTunes | H264/AVC | - |
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| WebM | WebM | Google VP8 | − |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| MTS | AVCHD | H264/AVC | − |
-| MKV | Matroska | H264/AVC | − |
-| R3D, RM | Red Raw Video | MJPEG 2000 | − |
+| WebM | WebM | Google VP8 | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| MTS | AVCHD | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| R3D, RM | Red Raw Video | MJPEG 2000 | - |
 | RAM, RM | RealVideo | Nicht unterstützt | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Native Flac | Free Lossless Audio Codec | − |
-| MJ2 | Motion JPEG2000 | Motion JPEG 2000 Codec | − |
+| FLAC | Native Flac | Free Lossless Audio Codec | - |
+| MJ2 | Motion JPEG2000 | Motion JPEG 2000 Codec | - |
 
 ## Unterstützte Archivformate {#supported-archive-formats}
 
 Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows werden in der folgenden Tabelle behandelt.
 
-| Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
+| Formate | Speicherung | Versionierung | Arbeitsablauf | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| TGZ | they | they | they | they | they | - |
+| JAR | they | they | they | they | they | - |
+| RAR | they | they | they | they | they | - |
+| TAR | they | they | they | they | they | - |
+| ZIP | they | they | they | they | they | they |
 
 ## Weitere unterstützte Formate {#other-supported-formats}
 
 Die Anwendbarkeit der üblichen DAM-Funktionen für einige spezifische Dateiformate wird nachfolgend beschrieben.
 
-| Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
+| Formate | Speicherung | Versionierung | Arbeitsablauf | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) | − | − | − | − | − | ✓ |
+| SVG | they | they | they | they | they | - |
+| CSS | they | they | they | they | they | they |
+| VTT | they | they | they | they | they | they |
+| XML | they | they | they | they | they | they |
+| Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) | - | - | - | - | - | they |
 
 >[!NOTE]
 >
@@ -253,9 +253,9 @@ Die Anwendbarkeit der üblichen DAM-Funktionen für einige spezifische Dateiform
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
-Erkennt den Dateityp standardmäßig mithilfe der Dateierweiterung [!DNL Experience Manager] . [!DNL Experience Manager] kann es aus dem Inhalt der Dateien erkennen. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
+Standardmäßig erkennt [!DNL Experience Manager] den Dateityp mit der Dateierweiterung. [!DNL Experience Manager] kann es aus dem Inhalt der Dateien erkennen. Wählen Sie für letztere die Option [!UICONTROL MIME aus Inhalt] in [!UICONTROL Day CQ DAM Mime Type Service] in der [!DNL Experience Manager] Web-Konsole aus.
 
-Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`verfügbar.
+Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes` verfügbar.
 
 | Dateierweiterung | MIME-Typ/Internetmedientyp | Standardmäßiger jobParam-Wert | Zulässiger jobParam-Wert |
 |---|---|---|---|
@@ -317,6 +317,6 @@ Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/s
 
 >[!MORELIKETHIS]
 >
->* [Aktivieren Sie die Unterstützung](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)von MIME-typbasierten Assets und Dynamic Media Classic-Upload-Auftragsparametern.
->* [MIME-typbasiert für die Unterstützung](config-dynamic.md)von Upload-Auftragsparametern konfigurieren.
+>* [Aktivieren Sie die Unterstützung](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) von MIME-typbasierten Assets und Dynamic Media Classic-Upload-Auftragsparametern.
+>* [MIME-typbasiert für die Unterstützung](config-dynamic.md) von Upload-Auftragsparametern konfigurieren.
 
