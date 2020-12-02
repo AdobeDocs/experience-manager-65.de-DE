@@ -19,11 +19,11 @@ ht-degree: 53%
 
 # Anpassen von Fehlerdialogen {#customizing-error-dialogs}
 
-AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Perform the [Generic steps for AEM Forms workspace customization](/help/forms/using/generic-steps-html-workspace-customization.md) followed by the steps below to customize error dialogs.
+AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die Schritte [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) und anschließend die folgenden Schritte aus, um Fehlerdialoge anzupassen.
 
 ## Text anpassen {#customizing-text}
 
-1. Ändern Sie in der `/apps/ws/locales/en-US/translation.json` Datei die Werte von `wserror` den benutzerdefinierten Werten. Beispiel:
+1. Ändern Sie in der Datei `/apps/ws/locales/en-US/translation.json` die Werte von `wserror` in die benutzerdefinierten Werte. Beispiel:
 
    ```json
    "wserror" : {
@@ -53,7 +53,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Perform the [Ge
 
 ## CSS anpassen {#customizing-css}
 
-1. You can update dialog, header, content area, foot-bar, foot-bar buttons, and other collaterals by adding the following snippet in the `/apps/ws/css/newStyle.css` file:
+1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleistenschaltflächen und andere Besicherungen aktualisieren, indem Sie das folgende Fragment in die Datei `/apps/ws/css/newStyle.css` einfügen:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -188,7 +188,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Perform the [Ge
    }
    ```
 
-1. For the foot bar button span, separate the `.error-dialog` and `.foot-bar` button spans from the composite list. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
+1. Trennen Sie für den Fußleistenschaltflächenbereich die Schaltflächenbereiche `.error-dialog` und `.foot-bar` von der Composite-Liste. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -201,7 +201,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Perform the [Ge
    }
    ```
 
-   To
+   nach
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -225,7 +225,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Perform the [Ge
 
 >[!NOTE]
 >
->If you are referring to additional images, add them at the desired hierarchy under `/apps/ws/images`.
+>Wenn Sie auf zusätzliche Bilder verweisen, fügen Sie sie in der gewünschten Hierarchie unter `/apps/ws/images` hinzu.
 
 ## Beispiele {#examples}
 
@@ -246,7 +246,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Perform the [Ge
 }
 ```
 
-To
+nach
 
 ```css
 .error-dialog{
@@ -279,7 +279,7 @@ To
 }
 ```
 
-To
+nach
 
 ```css
 .error-dialog .head-bar{
