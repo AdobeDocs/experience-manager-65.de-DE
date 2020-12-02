@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 9ba00322588326df6fbcc02bdfba88491d39c289
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 8%
 
 ## AEM Communities {#aem-communities}
 
-Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um sicherzustellen, dass [Community-Sites](overview.md#community-sites)ordnungsgemäß funktionieren. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie Aktivierung der Communities und Anmeldung in sozialen Netzwerken einbezogen werden.
+Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um sicherzustellen, dass [Community-Sites](overview.md#community-sites) ordnungsgemäß funktionieren. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie Aktivierung der Communities und Anmeldung in sozialen Netzwerken einbezogen werden.
 
 So erfahren Sie, was für Ihre spezifische Implementierung und Ihren Site-Entwurf erforderlich ist
 
-* Contact [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
+* Kontakt [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
-Siehe auch die wichtigste [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Siehe auch die Hauptdokumentation [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Dispatcher Caching {#dispatcher-caching}
+## Dispatcher-Zwischenspeicherung {#dispatcher-caching}
 
-### Überblick {#overview}
+### Überblick{#overview}
 
 Dispatcher-Zwischenspeicherung für AEM Communities ist die Fähigkeit des Dispatchers, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
 
@@ -44,7 +44,7 @@ Bei der Konfiguration zur Unterstützung der Dispatcher-Zwischenspeicherung wird
 
 ### Voraussetzungen {#requirements}
 
-* Dispatcher Version 4.1.2 oder höher (siehe [Installieren von Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) )
+* Dispatcher Version 4.1.2 oder höher (siehe [Installieren von Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) für die neueste Version)
 * [ACS AEM Commons-Paket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Version 3.3.2 oder neuer
@@ -54,11 +54,11 @@ Bei der Konfiguration zur Unterstützung der Dispatcher-Zwischenspeicherung wird
 
 Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** legt den Ablauf von zwischengespeicherten Seiten fest, die unter einem angegebenen Pfad angezeigt werden.
 
-* From the [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* Von der [Webkonsole](../../help/sites-deploying/configuring-osgi.md)
 
-   * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Suchen `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
+* Suchen Sie nach `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Klicken Sie auf das Symbol &quot;+&quot;, um eine neue Verbindungskonfiguration zu erstellen.
 
    ![dispatcher](assets/dispatcher.png)
@@ -73,11 +73,11 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 ## Dispatcher-Client-Header {#dispatcher-client-headers}
 
-Im Abschnitt /clientheaders `dispatcher.any`ist es erforderlich, wenn Sie einen bestimmten Satz von Kopfzeilen auflisten, `"CSRF-Token"` damit die [Aktivierungsfunktion](enablement.md) ordnungsgemäß funktioniert.
+Im Abschnitt &quot;/clientheaders&quot;von `dispatcher.any`&quot;müssen Sie bei der Auflistung eines bestimmten Header `"CSRF-Token"` einschließen, damit die [Aktivierungsfunktion](enablement.md) ordnungsgemäß funktioniert.
 
 ## Dispatcher-Filter {#dispatcher-filters}
 
-Der Abschnitt &quot;/filter&quot;der `dispatcher.any` Datei wird unter Zugriff auf Inhalte [konfigurieren - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter)beschrieben.
+Der Abschnitt &quot;/filter&quot;der Datei `dispatcher.any`&quot;ist in [Konfigurieren des Zugriffs auf Inhalte - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter) beschrieben.
 
 In diesem Abschnitt werden Einträge beschrieben, die für das ordnungsgemäße Funktionieren der Communities-Funktionen wahrscheinlich erforderlich sind.
 
@@ -92,12 +92,12 @@ Siehe auch:
 >[!NOTE]
 >
 >**Beispiele für Eigenschaftsnamen**
->Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollten an die vorhandene Konfigurationsdatei dispatcher.any angepasst werden.
+>Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollten angepasst werden, damit sie in eine vorhandene dispatcher.any-Konfigurationsdatei passen.
 
 
 >[!CAUTION]
 >
->In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Also, read the [AEM Security Cheklist](https://helpx.adobe.com/experience-manager/6-3/sites/administring/using/security-checklist.html) for additional security details regarding your AEM installation.
+>In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Lesen Sie auch die AEM [Sicherheitscheckliste](https://helpx.adobe.com/experience-manager/6-3/sites/administring/using/security-checklist.html) für weitere Sicherheitsdetails zu Ihrer AEM Installation.
 
 
 Die folgenden Einträge sollten am Ende des Abschnitts &quot;/filter&quot;hinzugefügt werden, besonders nach allen Einträgen, die verweigert werden.
@@ -172,9 +172,9 @@ Die folgenden Einträge sollten am Ende des Abschnitts &quot;/filter&quot;hinzug
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Dispatcher-Regeln {#dispatcher-rules}
+## Dispatcher Rules {#dispatcher-rules}
 
-Der Regelabschnitt in `dispatcher.any` definiert, welche Antworten basierend auf der angeforderten URL zwischengespeichert werden sollen. Für Communities wird im Abschnitt Regeln definiert, was nie zwischengespeichert werden sollte.
+Der Regelabschnitt von `dispatcher.any` definiert, welche Antworten basierend auf der angeforderten URL zwischengespeichert werden sollen. Für Communities wird im Abschnitt Regeln definiert, was nie zwischengespeichert werden sollte.
 
 ```shell
 # Never cache the client-side .social.json calls
