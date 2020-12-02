@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
 source-wordcount: '1825'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -23,15 +23,15 @@ Ein Rotationsset simuliert das Drehen eines Gegenstands zur genaueren Untersuchu
 
 Ein Rotationsset simuliert die 360-Grad-Anzeige. Dynamic Media bietet Rotationssets mit einer Achse, in denen ein Artikel gedreht werden kann. Darüber hinaus können Benutzer alle Ansichten mit nur wenigen Mausklicks frei zoomen und schwenken. So können Benutzer einen Artikel aus einem bestimmten Blickwinkel genauer untersuchen.
 
-Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET.]** In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+Rotationssets werden von einem Banner mit dem Wort **[!UICONTROL SPINSET gekennzeichnet.]** Wenn das Rotationsset veröffentlicht wird, wird das Veröffentlichungsdatum, das durch das Symbol **[!UICONTROL Welt]** gekennzeichnet ist, auf dem Banner zusammen mit dem letzten Änderungsdatum angezeigt, das durch das Symbol **[!UICONTROL Bleistift]** gekennzeichnet ist.
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
 >[!NOTE]
 >
->Informationen zur Benutzeroberfläche &quot;Assets&quot;finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md).
+>Informationen zur Benutzeroberfläche &quot;Assets&quot;finden Sie unter [Assets verwalten](/help/assets/manage-assets.md).
 
-## Schnellstart: Rotationssets   {#quick-start-spin-sets}
+## Schnellstart: Rotationssets  {#quick-start-spin-sets}
 
 Führen Sie die folgenden Schritte aus, um den schnellen Einstieg in die Arbeit mit Rotationssets zu schaffen:
 
@@ -122,22 +122,22 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets in AEM erstellen.
 
    >[!NOTE]
    >
-   >Beim Erstellen des Rotationssets können Sie die Miniaturansicht des Rotationssets ändern oder zulassen, dass AEM die Miniaturansicht automatisch basierend auf den Assets im Rotationsset auswählt. Um eine Miniaturansicht auszuwählen, klicken Sie auf **[!UICONTROL Miniatur ändern]** und wählen Sie ein beliebiges Bild aus. (Sie können auch in anderen Ordnern nach Bildern suchen.) If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail.]**
+   >Beim Erstellen des Rotationssets können Sie die Miniaturansicht des Rotationssets ändern oder zulassen, dass AEM die Miniaturansicht automatisch basierend auf den Assets im Rotationsset auswählt. Um eine Miniaturansicht auszuwählen, klicken Sie auf **[!UICONTROL Miniatur ändern]** und wählen Sie ein beliebiges Bild aus. (Sie können auch in anderen Ordnern nach Bildern suchen.) Wenn Sie eine Miniaturansicht ausgewählt haben und dann entscheiden, dass Sie eine aus dem Rotationsset generieren AEM, wählen Sie **[!UICONTROL Zu automatischer Miniaturansicht wechseln.]**
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
    * Tippen Sie oben links auf der Seite des Rotationsset-Editors auf **[!UICONTROL Asset hinzufügen.]**
 
-   * Tippen Sie in der Mitte des Rotationsset-Editors auf **[!UICONTROL Tippen, um den Asset-Wähler zu öffnen.]**
+   * Tippen Sie in der Mitte des Rotationsset-Editors auf **[!UICONTROL Tippen, um die Asset-Auswahl zu öffnen.]**
    Tippen Sie, um die gewünschten Assets für das Rotationsset auszuwählen. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen.]**
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View.]**
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Ändern Sie die Ansicht, indem Sie auf das Symbol Ansicht tippen und **[!UICONTROL Ansicht]**, **[!UICONTROL Ansicht]** oder **[!UICONTROL Ansicht der Liste auswählen.]**
 
    Siehe [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt.  Sie können die Assets nach dem Hinzufügen manuell neu anordnen oder sortieren.
+1. Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Assets nach dem Hinzufügen manuell neu anordnen oder sortieren.
 
    Ziehen Sie das Symbol zum Neuanordnen eines Assets ggf. rechts neben den Dateinamen des Assets, um Bilder in der Setliste nach oben oder unten zu bewegen.
 
@@ -149,9 +149,9 @@ In diesem Abschnitt wird beschrieben, wie Sie Rotationssets in AEM erstellen.
 
    * Wenn Sie ein Bild löschen möchten, wählen Sie das Bild aus und tippen Sie auf **[!UICONTROL Asset löschen.]**
 
-   * Wenn Sie eine Vorgabe anwenden möchten, tippen Sie oben rechts auf **[!UICONTROL Vorgabe]**. Wählen Sie anschließend eine Vorgabe aus, um sie auf alle Elemente gleichzeitig anzuwenden.
+   * Wenn Sie eine Vorgabe anwenden möchten, tippen Sie oben rechts auf **[!UICONTROL Voreingestellt]**. Wählen Sie anschließend eine Vorgabe aus, um sie auf alle Elemente gleichzeitig anzuwenden.
 
-1. Click **[!UICONTROL Save.]** Your newly created Spin Set appears in the folder you created it in.
+1. Klicken Sie auf **[!UICONTROL Speichern.]** Das neu erstellte Rotationsset wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
 ## Anzeigen von Rotationssets   {#viewing-spin-sets}
 
@@ -163,7 +163,7 @@ Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Sta
 
 **So zeigen Sie Rotationssets an**
 
-1. Beim Öffnen der Eigenschaften eines einzelnen Assets. Die Eigenschaften zeigen an, zu welchen Sets das ausgewählte Asset gehört (unter **[!UICONTROL Mitglied von Sets]**).  Klicken Sie auf den Namen des Sets, um das gesamte Set anzuzeigen. 
+1. Beim Öffnen der Eigenschaften eines einzelnen Assets. Die Eigenschaften zeigen an, zu welchen Sets das ausgewählte Asset gehört (unter **[!UICONTROL Mitglied von Sets]**). Klicken Sie auf den Namen des Sets, um das gesamte Set anzuzeigen.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -173,7 +173,7 @@ Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Sta
 
 1. Wählen Sie aus dem Menü „Suche“ die Option **[!UICONTROL Filter]**, erweitern Sie dann **[!UICONTROL Dynamic Media]** und wählen Sie **[!UICONTROL Sets.]**
 
-   Die Suche gibt als Ergebnis Sets zurück, die in der Benutzeroberfläche manuell oder mit Stapelsatzvorgaben automatisch erstellt wurden.  Im Gegensatz zu AEM-Suchen, die mit dem Suchkriterium `Contains` durchgeführt werden, wird die Suchabfrage für automatisierte Sets mithilfe des Suchkriteriums `Starts with` durchgeführt. Automatisierte Sets können nur durchsucht werden, wenn der Filter auf **[!UICONTROL Sets]** eingestellt ist.
+   Die Suche gibt als Ergebnis Sets zurück, die in der Benutzeroberfläche manuell oder mit Stapelsatzvorgaben automatisch erstellt wurden. Im Gegensatz zu AEM-Suchen, die mit dem Suchkriterium `Contains` durchgeführt werden, wird die Suchabfrage für automatisierte Sets mithilfe des Suchkriteriums `Starts with` durchgeführt. Automatisierte Sets können nur durchsucht werden, wenn der Filter auf **[!UICONTROL Sets]** eingestellt ist.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
