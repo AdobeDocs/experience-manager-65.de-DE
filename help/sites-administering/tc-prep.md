@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 88%
 
 ---
 
@@ -33,17 +36,17 @@ Die Beispiel-Geometrixx-Website umfasst mehrere Sprachzweige und weist die folge
              |- zh
 ```
 
-Jeder Sprachzweig einer Website wird als Sprachkopie bezeichnet. Die Stammseite einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. For example, `/content/geometrixx/fr` is the language root for the French language copy. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](/help/sites-administering/tc-prep.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von einer Quell-Website durchgeführt werden.
+Jeder Sprachzweig einer Website wird als Sprachkopie bezeichnet. Die Stammseite einer Sprachkopie, auch als Sprachstamm bezeichnet, identifiziert die Sprache des Inhalts in der Sprachkopie. Zum Beispiel ist `/content/geometrixx/fr` der Sprachstamm für die französische Sprachkopie. Sprachkopien müssen einen [korrekt konfigurierten Sprachstamm](/help/sites-administering/tc-prep.md#creating-a-language-root) verwenden, damit die korrekte Sprache angesprochen wird, wenn Übersetzungen von einer Quell-Website durchgeführt werden.
 
-Die Sprachkopie, für die Sie ursprünglich Inhalte verfassen, ist der Sprach-Master. Die Sprachmustervorlage ist die Quelle, die in andere Sprachen übersetzt wird.
+Die Sprachkopie, für die Sie ursprünglich Inhalte verfassen, ist der Sprach-Master. Die Sprach-Master-Vorlage ist die Quelle, die in andere Sprachen übersetzt wird.
 
 Führen Sie die folgenden Schritte aus, um Ihre Website für die Übersetzung vorzubereiten:
 
-1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Der Sprachstamm der englischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/en. Ensure that the language root is correctly configured according to the information in [Creating a Language Root](/help/sites-administering/tc-prep.md#creating-a-language-root).
+1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Der Sprachstamm der englischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/en. Stellen Sie sicher, dass der Sprachstamm gemäß den Informationen unter [Erstellen eines Sprachstamms](/help/sites-administering/tc-prep.md#creating-a-language-root) richtig konfiguriert ist.
 1. Verfassen Sie den Inhalt des Sprach-Masters.
 1. Erstellen Sie den Sprachstamm jeder Sprachkopie für die Website. Der Sprachstamm der französischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/fr.
 
-Wenn Sie die Inhalte für die Übersetzung vorbereitet haben, können Sie automatisch fehlende Seiten in den Sprachkopien und zugehörigen Übersetzungsprojekten erstellen. (Siehe [Erstellen eines Übersetzungsprojekts](/help/sites-administering/tc-manage.md).) For an overview of the content translation process in AEM, see [Translating Content for Multilingual Websites](/help/sites-administering/translation.md).
+Wenn Sie die Inhalte für die Übersetzung vorbereitet haben, können Sie automatisch fehlende Seiten in den Sprachkopien und zugehörigen Übersetzungsprojekten erstellen. (Siehe [Erstellen eines Übersetzungsprojekts](/help/sites-administering/tc-manage.md).) Eine Übersicht über den Übersetzungsprozess für Inhalte in AEM finden Sie unter [Übersetzung von Inhalten für mehrsprachige Websites](/help/sites-administering/translation.md).
 
 ## Erstellen eines Sprachstamms {#creating-a-language-root}
 
@@ -53,7 +56,7 @@ Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie eine
 
 * `<language-code>`Der unterstützte Sprachcode ist ein Code mit zwei Buchstaben gemäß ISO-639-1, zum Beispiel `en`.
 
-* `<language-code>_<country-code>` oder `<language-code>-<country-code>`der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben oder Großbuchstaben, wie er in ISO 3166 definiert ist, z. B. `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` oder  `<language-code>-<country-code>`der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben oder Großbuchstaben, wie er in ISO 3166 definiert ist, z. B.  `en_US`,  `en_us`,  `en_GB`,  `en-gb`.
 
 Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der Geometrixx-Website über die „Name“-Eigenschaft `fr`. Beachten Sie, dass die Eigenschaft „Name“ als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt. (http://localhost:4502/content/geometrixx/fr.html)
 
@@ -69,11 +72,11 @@ Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche genutzt, um
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Wählen Sie die Seitenvorlage aus und klicken oder tippen Sie auf „Weiter“.
-1. In the Name field type the country code in the format of `<language-code>` or `<language-code>_<country-code>`, for example `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
+1. Geben Sie im Feld Name den Ländercode im Format `<language-code>` oder `<language-code>_<country-code>` ein, z. B. `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Geben Sie einen Titel für die Seite ein.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Klicken oder tippen Sie auf „Erstellen“. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
+1. Klicken oder tippen Sie auf Erstellen. Klicken oder tippen Sie im Bestätigungsdialogfeld auf **Fertig**, um zur Sites-Konsole zurückzukehren, oder auf **Öffnen**, um die Sprachkopie zu öffnen.
 
 ## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
 
