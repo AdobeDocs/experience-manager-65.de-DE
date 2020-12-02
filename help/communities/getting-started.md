@@ -12,17 +12,20 @@ discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 12%
 
 ---
 
 
 # Einstieg in AEM Communities {#getting-started-with-aem-communities}
 
-Mit AEM Communities können Firmen dedizierte Community-Erlebnisse für Markenbezeichnungen aus einer Bibliothek mit Sitevorlagen erstellen. Foren, Gruppen, Blogs, Dateifreigabe, Kalender, Aktivitäten-Feeds und erweiterte Profil können in Ihre Website integriert werden, um Interaktionen zwischen Props, Kunden und Firmen zu fördern.
+AEM Communities ermöglicht es Firmen, dedizierte Community-Erlebnisse mit Markenbezeichnungen aus einer Bibliothek von Site-Vorlagen zu erstellen. Foren, Gruppen, Blogs, Dateifreigabe, Kalender, Aktivitäten-Feeds und erweiterte Profil können in Ihre Website integriert werden, um Interaktionen zwischen Props, Kunden und Firmen zu fördern.
 
-Im Folgenden finden Sie eine Übung zur schnellen Einrichtung einer [Interaktionsgemeinschaft](/help/communities/overview.md#engagement-community) zu Demonstrations- oder Entwicklungszwecken.
+Im Folgenden finden Sie ein Tutorial zur schnellen Einrichtung einer [Einsatzgemeinschaft](/help/communities/overview.md#engagement-community) zu Demonstrations- oder Entwicklungszwecken.
 
-Eine Anleitung zum schnellen Einrichten einer [Aktivierungs-Community](/help/communities/overview.md#enablement-community)finden Sie unter [Erste Schritte mit AEM Communities für die Aktivierung](/help/communities/getting-started-enablement.md).
+Eine Anleitung zum schnellen Einrichten einer [Aktivierungsgemeinschaft](/help/communities/overview.md#enablement-community) finden Sie unter [Erste Schritte mit AEM Communities für Aktivierung](/help/communities/getting-started-enablement.md).
 
 * [Ersteinrichtung](/help/communities/setup.md)
 
