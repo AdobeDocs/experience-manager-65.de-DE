@@ -82,15 +82,15 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Nächsten Eintrag in der Formularobjektstruktur auswählen | Nach-unten-Pfeil | Nach-unten-Pfeil |
 | Vorherigen Eintrag in der Formularobjektstruktur auswählen | Nach-oben-Taste | Nach-oben-Taste |
 
-[1] Ersetzt Strg+Rechtspfeil für Windows und Befehl+Rechtspfeil für Mac OS.\
-[2] Ersetzt Strg+Linkspfeil für Windows und Befehl+Linkspfeil für Mac OS.
+[1 ] Ersetzt Strg + Nach-rechts-Taste für Windows und Befehl + Nach-rechts-Taste für Mac OS.\
+[2 ] Ersetzt Strg+Linkspfeil für Windows und Befehl+Linkspfeil für Mac OS.
 
 ## Korrespondenzverwaltung {#correspondence-management}
 
 In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tastaturbefehl aufgeführt, die Sie im Correspondence Management-Texteditor verwenden können. Diese Tastaturkürzel können Sie wie folgt verwenden:
 
-* Creating or editing a [Text](texts-interactive-communications.md) asset
-* Editing a text module after tapping the relevant Edit icon ( ![edittextmodule](assets/edittextmodule.png)) when [creating a correspondence](/help/forms/using/create-correspondence.md).
+* Erstellen oder Bearbeiten eines [Text](texts-interactive-communications.md)-Assets
+* Bearbeiten eines Textmoduls nach dem Tippen auf das entsprechende Symbol zum Bearbeiten ( ![edittextmodule](assets/edittextmodule.png)) beim Erstellen einer Korrespondenz](/help/forms/using/create-correspondence.md).[
 
 ### Textauswahl und Bewegen des Cursors {#text-selection-and-moving-the-cursor-around}
 
@@ -264,7 +264,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Ändern der Schriftgröße {#changing-font-size}
+### Ändern der Schriftgröße  {#changing-font-size}
 
 <table> 
  <tbody>
@@ -286,7 +286,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Löschen eines Wortes {#deleting-a-word}
+### Löschen eines Wortes  {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -308,7 +308,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Kopieren und einfügen {#copy-and-paste}
+### Kopieren und einfügen  {#copy-and-paste}
 
 <table> 
  <tbody>
