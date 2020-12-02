@@ -21,11 +21,11 @@ ht-degree: 4%
 
 # Badges-Konsole {#badges-console}
 
-## Info zu Abzeichen {#about-badges}
+## Info zu Kennzeichen {#about-badges}
 
 Die Communities Badges-Konsole bietet die Möglichkeit, benutzerdefinierte Abzeichen hinzuzufügen, die für ein Mitglied angezeigt werden können, wenn es verdient (verliehen) oder eine bestimmte Rolle in der Community übernimmt (zugewiesen).
 
-### Sichtbarkeit der Abzeichen {#badge-visibility}
+### Badge-Sichtbarkeit {#badge-visibility}
 
 Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen wird, zusammen mit ihrem Namen und Avatar an den folgenden Orten angezeigt:
 
@@ -37,7 +37,7 @@ Derzeit werden Kennzeichen, die ein Community-Mitglied verdient oder zugewiesen 
 
 Navigieren Sie in der Autorenkonsole zur Badges-Umgebung:
 
-* Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Communities]** > **[!UICONTROL Abzeichen]**
+* Aus globaler Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Abzeichen]**
 
 Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeichen hinzugefügt werden können.
 
@@ -45,30 +45,30 @@ Diese Konsole zeigt die derzeit verfügbaren Abzeichen an, aus denen neue Abzeic
 
 ## Abzeichen erstellen {#create-badge}
 
-Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository gespeichert `/libs/settings/community/badging/images` und automatisch in die Umgebung &quot;Veröffentlichen&quot;repliziert.
+Eine Markierung wird erstellt, indem ein entsprechend kleines Bild hochgeladen wird (72 dpi mit einer Höhe von 26-32 Pixel) und ein Name angegeben wird. Das Abzeichen wird im Repository unter `/libs/settings/community/badging/images` gespeichert und automatisch in die Umgebung &quot;publish&quot;repliziert.
 
-Wenn die Umgebung zum Veröffentlichen eine Herausgeberfarm ist, müssen Sie die [Benutzersynchronisierung](/help/communities/sync.md)konfigurieren.
+Wenn die Veröffentlichungs-Umgebung eine Herausgeberfarm ist, müssen Sie [Benutzersynchronisierung](/help/communities/sync.md) konfigurieren.
 
 ![create-badge](assets/create-badge.png)
 
 * **Bild hochladen**
 
-   (*Erforderlich*) Ein Badge-Bild mit einer empfohlenen Größe von 32 x 32 Pixel bei 72 dpi im JPEG- oder PNG-Format.
+   (*Erforderlich*) Ein Abzeichen mit einer empfohlenen Größe von 32 x 32 Pixel bei 72 dpi im JPEG- oder PNG-Format.
 
 * **Name**
 
-   (*Erforderlich*) Der Markenname. Dies ist der Standardname `Display Name` sowie der Repository-Knotenname. Wenn der Knoten kein gültiger Repository-Knotenname `Name` ist, wird er geändert.
+   (*Erforderlich*) Der Markenname. Es handelt sich um den standardmäßigen `Display Name`- sowie den Repository-Knotennamen. Wenn `Name` kein gültiger Repository-Knotenname ist, wird er geändert.
 
 * **Anzeigename**
 
-   (*Optional*) Der Name, der für das Zeichen in der Benutzeroberfläche angezeigt wird. &quot;Standard&quot;ist der unveränderte Text, der für die `Name`Variable eingegeben wurde.
+   (*Optional*) Der Name, der für das Zeichen in der Benutzeroberfläche angezeigt werden soll. Standard ist der unveränderte Text, der für `Name` eingegeben wird.
 
 * **Beschreibung**
 
-   (*Optional*) Eine Beschreibung des Kennzeichens.
+   (*Optional*) Eine Beschreibung für das Zeichen.
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen zum Einrichten von Scoring- und Kennzeichnungsregeln finden Sie unter [Scoring and Badges](/help/communities/implementing-scoring.md).
+Weitere Informationen zum Einrichten von Scoring- und Badging-Regeln finden Sie unter [Scoring and Badges](/help/communities/implementing-scoring.md).
 
-Informationen zum Verwalten von Abzeichen für Mitglieder finden Sie unter [Mitglieder-Konsole](/help/communities/members.md).
+Informationen zum Verwalten von Abzeichen für Mitglieder finden Sie unter [Mitgliederkonsole](/help/communities/members.md).
