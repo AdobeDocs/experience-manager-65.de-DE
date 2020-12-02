@@ -32,11 +32,11 @@ Als Hilfestellung für Sie umfassen die Best Practices Folgendes:
 
 * Dokumentation, die direkt auf der [Checkliste](/help/managing/best-practices-checklist.md) basiert, mit folgenden Details:
 
-   * [Project Heartbeat](#projectheartbeat) -Analyse.
-   * [Übersicht über den Status nach Rolle](#status-by-role) .
+   * [Projekt-](#projectheartbeat) Heartbeatanalyse.
+   * [Status nach ](#status-by-role) Roleoverview
    * [Phasen und Milestones](#phases-and-milestones)
    * [Schlüsselrolle](#persona) und deren Beteiligung in jeder (relevanten) Phase
-   * A [Glossary](/help/managing/best-practices-glossary.md) of the [Required Documents and Deliverables](#required-documents-and-deliverables).
+   * Ein [Glossar](/help/managing/best-practices-glossary.md) von [Erforderliche Dokumente und Lieferbare](#required-documents-and-deliverables).
 
 * [Weiterführendes Referenzmaterial](/help/managing/best-practices-further-reference.md) für zusätzliche Informationen zu bestimmten Bereichen.
 
@@ -56,7 +56,7 @@ Das Arbeitsblatt zum **Projekt-Heartbeat** gibt eine graphische Übersicht über
 
    * Zeigt zu jedem Zeitpunkt des Projekts an, wie viel bereits in den jeweiligen Phasen des Projekts abgeschlossen wurde.
 
-## Status nach Rolle {#status-by-role}
+## Status nach Rolle  {#status-by-role}
 
 Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der [**Konsistenz**, **Qualität** und **Vollständigkeit**](#projectheartbeat), sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
 
@@ -64,13 +64,13 @@ Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der [
 
 Der Projektplan wird in einzelne (grobe) Phasen unterteilt.
 
-Jede Phase enthält ihre eigenen Milestones. For each [persona](#persona) (or role), the relevant milestones are listed, together with the documents that are required to produce the defined deliverables.
+Jede Phase enthält ihre eigenen Milestones. Für jede [persona](#persona) (oder Rolle) werden die relevanten Meilensteine zusammen mit den Dokumenten aufgelistet, die zur Erstellung der definierten Ergebnisse erforderlich sind.
 
 >[!NOTE]
 >
 >Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und Ergebnissen.
 
-### Vorbereitung {#preparation}
+### Vorbereitung  {#preparation}
 
 Die Vorbereitung des Projekts bildet die Grundlage für das gesamte Projekt. Sie müssen Schlüsselanforderungen gemeinsam mit klaren Zielen und Erwartungen für die folgenden Bereiche definieren:
 
@@ -124,7 +124,7 @@ Die vier Faktoren:
 
 Die Planung des Projekts vertieft die Vorbereitung. Beginnen Sie damit, Ihre Ziele und Erwartungen in eine sorgfältig formulierte Roadmap umzuwandeln, die aus konkreten Aufgaben besteht, an eine klare Kommunikation gebunden ist und strenge Überprüfungen zur Messung des Fortschritts enthält.
 
-#### Milestones {#milestones-1}
+#### Milestones  {#milestones-1}
 
 * **Übergabe**
 
@@ -162,7 +162,7 @@ Die Planung des Projekts vertieft die Vorbereitung. Beginnen Sie damit, Ihre Zie
 
 Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Projekt auf einer soliden Grundlage und einem Team, das über die notwendigen Kenntnisse verfügt, aufbaut.
 
-#### Milestones {#milestones-2}
+#### Meilensteine  {#milestones-2}
 
 * **Entwickeln und besetzen eines ausgebildeten Teams**
 
@@ -186,12 +186,12 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
    * Untersysteme;
    * Systeme von Dritten;
    * Schnittstellen, Hardware-, Software- und menschliche Interaktion;
-   * Servers for each environment; see the [Technical Requirements](/help/sites-deploying/technical-requirements.md) and [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md)
+   * Server für jede Umgebung; siehe [Technische Anforderungen](/help/sites-deploying/technical-requirements.md) und [Richtlinien für die Hardwaregrößenänderung](/help/managing/hardware-sizing-guidelines.md)
 
    * Prozesse für die jeweilige Umgebung, z. B. Bereitstellungs- und Wartungsanforderungen;
    * Wartungstätigkeiten (Datastore GC, TarPM-Optimierung usw.);
-   * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) -Zwischenspeicherung
-   * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) für Veröffentlichung/Autorisierung
+   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Dispatcher-Caching
+   * [](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) ClusteringPublish/AuthoringShare
    * Leistungen für die Kundenseite (Java Script Minifier, Concat, CSS-Sprites, Gesamtzahl aller http-Anfragen und andere Leistungen).
 
 * **Anwendungsarchitektur**
@@ -244,11 +244,11 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
    Informationen finden Sie auch im [Adobe Support-Portal](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
-### Ablaufplanung und Abläufe {#operations-planning-and-operations}
+### Ablaufplanung und Abläufe  {#operations-planning-and-operations}
 
 Auf ähnlicher Grundlage müssen auch die Abläufe angemessen geplant werden, um zu gewährleisten, dass Sie über die notwendigen Umgebungen verfügen - in sämtlichen Phasen des Projektzyklus. Darüber hinaus brauchen Sie ebenfalls angemessene Prozesse, um diese zu erhalten.
 
-#### Milestones {#milestones-3}
+#### Meilensteine  {#milestones-3}
 
 * **Berechtigungen**
 
@@ -256,13 +256,13 @@ Auf ähnlicher Grundlage müssen auch die Abläufe angemessen geplant werden, um
 
    Beispiel:
 
-   * A list of roles (i.e. groups) with `read`/ `write` access definitions for each
+   * Eine Liste von Rollen (d.h. Gruppen) mit `read`/ `write`-Zugriffsdefinitionen für jede Gruppe
 
-   * Definition of the use of privileges that impact the publish environment; for example, `replicate`
+   * Definition der Nutzung von Rechten, die sich auf die Umgebung zur Veröffentlichung auswirken; zum Beispiel `replicate`
    * Für Benutzer mit minimalen Privilegien sollten Workflows definiert werden
-   * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
+   * Benutzer der Gruppe `editor` sollten weder über `admin`-Rechte verfügen noch Teil der Gruppe `administrators` sein
 
-   For more information, see [User Administration and Security](/help/sites-administering/security.md).
+   Weitere Informationen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
 * **Überwachung und Wartung**
 
@@ -285,7 +285,7 @@ Auf ähnlicher Grundlage müssen auch die Abläufe angemessen geplant werden, um
 
 Die Entwicklung ist eine entscheidende Phase, die mehr als nur die Programmierung benötigt.
 
-#### Milestones {#milestones-4}
+#### Meilensteine  {#milestones-4}
 
 * **Entwicklungsumgebung**
 
@@ -325,7 +325,7 @@ Die Entwicklung ist eine entscheidende Phase, die mehr als nur die Programmierun
    * Bereitstellungsrhythmus;
    * Integration/Abhängigkeiten von Drittsoftware;
    * Sicherheitskonfiguration;
-   * Baseline performance verified by running the [Tough Day tests](/help/sites-developing/tough-day.md) on the production setup
+   * Grundlegende Leistung überprüft durch Ausführen der [Tough Day Tests](/help/sites-developing/tough-day.md) bei der Produktionseinrichtung
    * Anforderungen für Leistungstests, siehe [Best Practices für die Qualitätssicherung](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance).
 
 * **Integration**
@@ -355,7 +355,7 @@ Die Entwicklung ist eine entscheidende Phase, die mehr als nur die Programmierun
    * aller Anpassungen, die einen Einfluss auf Upgrades haben könnten;
    * Versionshinweise;
 
-### Leistung und Tests. {#performance-and-testing}
+### Leistung und Tests.  {#performance-and-testing}
 
 Sobald die neue Anwendung verfügbar ist, muss sie in Bezug auf Funktionalität und [Leistung](/help/sites-deploying/configuring-performance.md) strengen Tests unterzogen werden.
 
@@ -365,7 +365,7 @@ Sobald die neue Anwendung verfügbar ist, muss sie in Bezug auf Funktionalität 
 >
 >Es obliegt dem Projektleiter, die Auswirkungen der Ergebnisse zu bewerten und über geeignete Maßnahmen zu entscheiden.
 
-#### Milestones {#milestones-5}
+#### Meilensteine {#milestones-5}
 
 * **Test zur Benutzerakzeptanz**
 
@@ -394,7 +394,7 @@ Sobald die neue Anwendung verfügbar ist, muss sie in Bezug auf Funktionalität 
 
 Der Rollout einer neuen Anwendung bedarf sorgfältiger Planung, um einen reibungslosen Ablauf der Live-Schaltung zu gewährleisten. Die umfasst die Sicherstellung eines hohen Maßes an Sicherheit, die Schulung zukünftiger Benutzer und die Durchführung mehrerer Trockendurchläufe, um zu bestätigen, dass alle Probleme behoben wurden.
 
-#### Milestones {#milestones-6}
+#### Meilensteine  {#milestones-6}
 
 * **Vorbereitung**
 
@@ -432,11 +432,11 @@ Der Rollout einer neuen Anwendung bedarf sorgfältiger Planung, um einen reibung
 
    Weitere Informationen finden Sie unter [Sicherheitscheckliste](/help/sites-administering/security-checklist.md).
 
-### Live-Schaltung {#go-live}
+### Live-Schaltung  {#go-live}
 
 Die Live-Schaltung sollte so reibungslos wie möglich verlaufen. Abermals sei daran erinnert, dass die letzten Schritte der Planung bedürfen, um eine saubere Ausführung zu erreichen.
 
-#### Milestones {#milestones-7}
+#### Meilensteine  {#milestones-7}
 
 * **Vorbereitung**
 
@@ -462,13 +462,13 @@ Die Live-Schaltung sollte so reibungslos wie möglich verlaufen. Abermals sei da
 
    Bereiten Sie einen Smoke-Test vor und führen Sie diesen durch.
 
-## Rolle {#persona}
+## Rolle  {#persona}
 
 Die Checklisten werden rollenabhängig entworfen. Diese Rollen sind wesentlich in den Projektzyklus involviert.
 
 Es gibt auch [andere Rollen](#other-persona), die in bestimmte Aufgaben involviert sind.
 
-### Kostenträger des Projekts {#project-sponsor}
+### Kostenträger des Projekts  {#project-sponsor}
 
 Der Kostenträger des Projekts ist:
 
@@ -480,7 +480,7 @@ Der Kostenträger des Projekts ist:
 
 * und erstellt Milestones basierend auf der Roadmap des Kunden.
 
-### Projektmanager {#project-manager}
+### Projektmanager  {#project-manager}
 
 Der Projektmanager ist:
 
@@ -488,7 +488,7 @@ Der Projektmanager ist:
 * zuständig für die Festlegung des Budgets und, basierend auf diesem Budget, der für das Projekt zur Verfügung stehenden Ressourcen;
 * der Hauptansprechpartner für sämtliche in das Projekt involvierte Rollen.
 
-### Architekt {#architect}
+### Architekt  {#architect}
 
 Der Lösungsarchitekt:
 
@@ -496,7 +496,7 @@ Der Lösungsarchitekt:
 * hilft dabei, die Implementierungsstrategie für AEM festzulegen; beispielsweise bei der Frage, ob eine Cluster-Installation implementiert werden soll oder ein Cold-Standby oder wann ein Content Delivery Network (CDN) notwendig ist;
 * definiert außerdem die Architektur der AEM-Lösung basierend auf den Anforderungen des Kunden, dies kann das Konzept für Benutzerrollen (mit den damit in Verbindung stehenden Rechten), das Verhältnis zwischen Vorlagen und Komponenten oder Informationen dazu einschließen, wann Multi-Site-Management verwendet werden sollte.
 
-### Geschäftsanalyst {#business-analyst}
+### Geschäftsanalyst  {#business-analyst}
 
 Der Geschäftsanalyst:
 
@@ -524,7 +524,7 @@ Die Entwicklungsleitung:
 
 * arbeitet eng mit dem Architekten zusammen (besonders bei der Erstellung der Entwicklungsstrategie für AEM), um Aspekte, wie etwa die Beziehung zwischen Vorlage und Komponenten, eine Strategie zur Integration von Drittanwendungen und spezielle Funktionen zu definieren.
 
-### Leitung der Qualitätssicherung {#quality-lead}
+### Leitung der Qualitätssicherung  {#quality-lead}
 
 Die Leitung der Qualitätssicherung:
 
@@ -551,7 +551,7 @@ Der Sicherheitsverantwortliche:
 * ist verantwortlich für das gesamte Sicherheitskonzept der Lösung und stellt sicher, dass dieses im Einklang mit sämtlichen Vorgaben und Richtlinien des Kunden steht;
 * liefert ein Sicherheitskonzept, Sicherheitsprozesse und Empfehlungen für hardwarebasierte Sicherheitskonzepte, wie Zonen und Firewalls.
 
-### Andere Rolle {#other-persona}
+### Andere Rolle  {#other-persona}
 
 * Projektbeteiligte
 
@@ -577,9 +577,9 @@ Der Sicherheitsverantwortliche:
 
    * Die Personen, die das System verwenden, um Website-Inhalte zu erstellen und zu verwalten.
 
-## Erforderliche Dokumente und Ergebnisse {#required-documents-and-deliverables}
+## Erforderliche Dokumente und Ergebnisse  {#required-documents-and-deliverables}
 
-The checklists cover the **Required Documents** and **Deliverables** for each milestone.
+Die Checklisten umfassen die erforderlichen Dokumente **und** Lieferbare **für jeden Meilenstein.**
 
 * Es besteht keine 1:1-Beziehung zwischen diesen beiden Aspekten, so kann beispielsweise eine Gruppe erforderlicher Dokumente in nur eine Lieferung münden.
 * Das Ergebnis einer Rolle kann ein erforderliches Dokument für eine andere Rolle für denselben Milestone sein.
@@ -588,20 +588,20 @@ The checklists cover the **Required Documents** and **Deliverables** for each mi
 
 Die **erforderlichen Dokumente** werden von der entsprechenden Rolle für die Produktion ihrer Ergebnisse benötigt.
 
-For each **Required Document** the persona should indicate:
+Für jedes **Erforderliches Dokument** sollte die Persona Folgendes angeben:
 
 * **J/N**: ob es empfangen wurde.
 * **1–3**: ein Hinweis auf die Qualität des empfangenen Dokuments.
 
-### Ergebnisse {#deliverables}
+### Ergebnisse  {#deliverables}
 
 Die entsprechende Rolle ist für die Lieferung bestimmter Dokumente für den jeweiligen Milestone verantwortlich und erfüllt damit ihre Pflicht in Bezug auf diesen bestimmten Milestone.
 
-For each **Deliverable** the persona must indicate:
+Für jedes **Auslieferbare** muss die Person Folgendes angeben:
 
 * **J/N:** ob es abgeschlossen wurde.
 
-Deliverables are often used as **Required Documents** for either the current or a later milestone.
+Lieferbare Elemente werden oft als **Erforderliche Dokumente** für den aktuellen oder einen späteren Meilenstein verwendet.
 
 ## Verwandte Best Practices {#related-best-practices}
 
@@ -612,12 +612,12 @@ Weitere Informationen zu Best Practices für die Bereitstellung, Verwaltung, Ent
    * [DevOp-Strategien für Unternehmen](/help/managing/enterprise-devops.md)
    * [Best Practices für SEO und URL-Verwaltung](/help/managing/seo-and-url-management.md)
    * [AEM und Richtlinien für barrierefreien Webzugang](/help/managing/web-accessibility.md)
-   * [Allgemeine Datenschutzverordnung](/help/managing/data-protection-and-privacy.md)* [Bereitstellung und Beibehaltung bewährter Verfahren](/help/sites-deploying/best-practices.md)
+   * [Allgemeine Datenschutzverordnung](/help/managing/data-protection-and-privacy.md)*  [Bereitstellung und Beibehaltung bewährter Verfahren](/help/sites-deploying/best-practices.md)
 * [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md)
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
 
-## Schlüsselbereiche der Dokumentation {#key-documentation-areas}
+## Schlüsselbereiche der Dokumentation  {#key-documentation-areas}
 
 * AEM-Dokumentation Zusätzlich sind die folgenden Abschnitte der AEM-Dokumentation von besonderem Interesse (allerdings ist diese Liste nicht vollständig):
 
