@@ -36,9 +36,9 @@ Da das Sling-Framework, auf dem AEM aufsetzt, auf dem REST-Prinzip basiert, läs
 >
 >Jeder AEM-Befehl, der über cURL ausgeführt wird, muss in AEM genau wie jeder Benutzer autorisiert werden. Bei der Ausführung eines AEM-Befehls mit cURL werden alle ACLs und Zugriffsrechte eingehalten.
 
-## Herunterladen von cURL {#downloading-curl}
+## Herunterladen von cURL  {#downloading-curl}
 
-Bei MacOS und einigen Linux-Distributionen ist cURL standardmäßig enthalten. Das Tool ist jedoch für die meisten Betriebssysteme erhältlich. The latest downloads can be found at [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
+Bei MacOS und einigen Linux-Distributionen ist cURL standardmäßig enthalten. Das Tool ist jedoch für die meisten Betriebssysteme erhältlich. Die neuesten Downloads finden Sie unter [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
 
 Das Quell-Repository von cURL finden Sie auch auf GitHub.
 
@@ -50,7 +50,7 @@ Um zu ermitteln, welchen Befehl Sie für den gewünschten Vorgang benötigen, er
 
 Am Beispiel der Erstellung einer neuen Seite im Chrome-Browser werden die dafür nötigen Schritte nachfolgend beschrieben.
 
-1. Bereiten Sie die Aktion vor, die Sie in AEM auslösen möchten. In this case, we have proceded to the end of the **Create Page** wizard, but have not yet clicked **Create**.
+1. Bereiten Sie die Aktion vor, die Sie in AEM auslösen möchten. In diesem Fall haben wir das Ende des Assistenten **Seite erstellen** erreicht, haben aber noch nicht auf **Erstellen** geklickt.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -63,7 +63,7 @@ Am Beispiel der Erstellung einer neuen Seite im Chrome-Browser werden die dafür
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Copy the cURL command to a text editor and remove all headers from the command, which start with `-H` (highligted in blue in the image below) and add the proper authentication parameter such as `-u <user>:<password>`.
+1. Kopieren Sie den Befehl cURL in einen Texteditor und entfernen Sie alle Kopfzeilen aus dem Beginn, der mit `-H` (in der Abbildung unten blau hervorgehoben) übereinstimmt, und fügen Sie den entsprechenden Authentifizierungsparameter wie `-u <user>:<password>` hinzu.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -79,7 +79,7 @@ Hier finden Sie eine Liste an cURL-Befehlen für gängige administrative und bet
 >
 >Bei den folgenden Beispielen wird vorausgesetzt, dass AEM auf dem `localhost` an Port `4502` ausgeführt wird und den Benutzer `admin` mit dem Kennwort `admin` nutzt. Zusätzliche Befehlsplatzhalter sind in eckigen Klammern angefügt.
 
-### Paketverwaltung {#package-management}
+### Paketverwaltung  {#package-management}
 
 #### Liste aller installierten Pakete
 
@@ -217,7 +217,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 ### Sicherung {#backup}
 
-See [Backup and Restore](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) for details.
+Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup).
 
 ### OSGi-{#osgi}
 
@@ -284,33 +284,33 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### Zuteilen und Entziehen von Abzeichen {#assign-and-revoke-badges}
 
-See [Communities Scoring and Badges](/help/communities/implementing-scoring.md#assign-and-revoke-badges) for details.
+Weitere Informationen finden Sie unter [Communities Scoring and Badges](/help/communities/implementing-scoring.md#assign-and-revoke-badges).
 
-See [Scoring and Badges Essentials](/help/communities/configure-scoring.md#example-setup) for details.
+Weitere Informationen finden Sie unter [Grundlagen zu Scoring und Abzeichen](/help/communities/configure-scoring.md#example-setup).
 
 #### Erneute MSRP-Indizierung {#msrp-reindexing}
 
-See [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) for details.
+Weitere Informationen finden Sie unter [MSRP - MongoDB Datenspeicherung Resource Provider](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command).
 
 ### Sicherheit {#security}
 
 #### Aktivieren und Deaktivieren von CRXDE Lite {#enabling-and-disabling-crx-de-lite}
 
-See [Enabling CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) for details.
+Weitere Informationen finden Sie unter [Aktivieren der CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md).
 
 ### Datenspeicherbereinigung {#data-store-garbage-collection}
 
-See [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) for details.
+Weitere Informationen finden Sie unter [Datspeicher-Garbage Collection](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
 
 ### Integrieren von Analytics und Target {#analytics-and-target-integration}
 
-See [Opting Into Adobe Analytics and Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) for details.
+Weitere Informationen finden Sie unter [Opting In Adobe Analytics und Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script).
 
 ### Single Sign-On {#single-sign-on}
 
 #### Senden eines Test-Headers {#send-test-header}
 
-See [Single Sign On](/help/sites-deploying/single-sign-on.md) for details.
+Weitere Informationen finden Sie unter [Single-Sign-On](/help/sites-deploying/single-sign-on.md).
 
 ## Gängige cURL-Befehle zur Inhaltsbearbeitung für AEM {#common-content-manipulation-aem-curl-commands}
 
@@ -360,7 +360,7 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### Workflows {#workflows}
 
-See [Interacting with Workflows Programmatically](/help/sites-developing/workflows-program-interaction.md) for details.
+Weitere Informationen finden Sie unter [Programmatische Interaktion mit Workflows](/help/sites-developing/workflows-program-interaction.md).
 
 ### Sling-Inhalte {#sling-content}
 
@@ -408,4 +408,4 @@ curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localho
 
 ### Asset-Bearbeitung {#asset-manipulation}
 
-See [Assets HTTP API](/help/assets/mac-api-assets.md) for details.
+Weitere Informationen finden Sie unter [Assets HTTP API](/help/assets/mac-api-assets.md).
