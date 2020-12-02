@@ -25,17 +25,17 @@ Die Aktivitäten eines in einem Community-Mitglied unterschriebenen Mitglieds, w
 
 Die Möglichkeit zu folgen, fügt weitere Aktivitäten hinzu, wenn Community-Mitglieder Beiträge von Interesse oder andere Community-Mitglieder folgen.
 
-Alle [Community-Sites](/help/communities/overview.md#communitiessites) enthalten eine Benutzerseite für das Profil des angemeldeten Mitglieds, auf der die Mitgliederangaben auf dieselbe Weise angezeigt werden.
+Alle [Community-Sites](/help/communities/overview.md#communitiessites) beinhalten eine Benutzerseite für das angemeldete Profil, auf der die Mitgliederseiten auf dieselbe Weise angezeigt werden.
 
 ## Konzepte {#concepts}
 
-Ein *Aktivität-Stream* ist die Liste der letzten Aktivitäten, die von einem Mitglied oder einer Liste der letzten Aktivitäten an einem einzigen Inhaltsthread, wie z. B. einem Forenthema oder einem Blog, durchgeführt wurden.
+Ein *Aktivität-Stream* ist die Liste der letzten Aktivitäten, die von einem Mitglied oder einer Liste der letzten Aktivitäten an einem einzigen Inhaltsthread wie einem Forenthema oder einem Blog durchgeführt wurden.
 
 Ein Mitglied kann einem Aktivitäten-Stream folgen, indem es entweder einer anderen Einzelperson oder einem anderen Inhalt folgt.
 
-Ein *News-Feed* ist eine Zusammenführung der Aktivität-Streams, die von einem Mitglied in einem Stream verfolgt werden.
+Ein *News-Feed* ist eine Zusammenführung der Aktivitäten-Streams, denen ein Mitglied gefolgt ist, in einem Stream.
 
-Ein *[Social Graph](/help/communities/essentials-socialgraph.md)*erfasst die folgenden Beziehungen eines Mitglieds zum anderen.
+Ein *[Social Graph](/help/communities/essentials-socialgraph.md)* erfasst die folgenden Beziehungen eines Mitglieds zum anderen.
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -80,4 +80,4 @@ Ein *[Social Graph](/help/communities/essentials-socialgraph.md)*erfasst die fol
 
 ### Aktivitäts-Stream-Funktion {#activity-stream-function}
 
-Eine Community-Site-Struktur, die die [Aktivität Stream-Funktion](/help/communities/functions.md#activity-stream-function)enthält, enthält eine konfigurierte `activity streams` Komponente.
+Eine Community-Site-Struktur, die die [Aktivität-Stream-Funktion](/help/communities/functions.md#activity-stream-function) enthält, enthält eine konfigurierte `activity streams`-Komponente.
