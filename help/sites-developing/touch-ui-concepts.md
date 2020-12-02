@@ -12,17 +12,20 @@ discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 89%
 
 ---
 
 
 # Konzepte der Touch-optimierten Benutzeroberfläche von AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-AEM bietet eine Touch-fähige Benutzeroberfläche mit [reaktionsfähigem Design](/help/sites-authoring/responsive-layout.md) für die Autorenumgebung, die sowohl auf Touch- als auch auf Desktop-Geräten ausgeführt werden kann.
+AEM verfügt über eine Touch-fähige Benutzeroberfläche mit [Responsive Design](/help/sites-authoring/responsive-layout.md) für die Authoring-Umgebung, die sowohl auf Touch- als auch auf Desktop-Geräten ausgeführt werden kann.
 
 >[!NOTE]
 >
->Die touchfähige Benutzeroberfläche ist die Standard-Benutzeroberfläche für AEM. Die klassische Benutzeroberfläche wurde mit AEM 6.4 nicht mehr unterstützt.
+>Die touchfähige Benutzeroberfläche ist die Standard-Benutzeroberfläche für AEM. Die klassische Benutzeroberfläche wurde mit AEM 6.4 veraltet.
 
 Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
 
@@ -31,7 +34,7 @@ Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
    * Enthält einen Link zu „Globale Navigation“.
    * Enthält einen Link zu anderen generischen Aktionen, z. B. „Suchen“, „Hilfe“, „Marketing Cloud-Lösungen“, „Benachrichtigungen“ und „Benutzereinstellungen“.
 * Leiste auf der linken Seite (Anzeige bei Bedarf, kann ausgeblendet werden):
-   * Timeline
+   * Zeitleistensegment
    * Verweise
    * Filter
 * Kontextabhängige Navigationskopfzeile:
@@ -67,7 +70,7 @@ Die Grundprinzipien der Touch-optimierten Benutzeroberfläche lauten:
 * Einbettung von Tests
 * Bottom-Up-Design zur Sicherstellung, dass diese Prinzipien auf alle Elemente und Komponenten angewendet werden
 
-Eine weitere Übersicht über die Struktur der touchfähigen Benutzeroberfläche finden Sie in der [Artikelstruktur der AEM Touch-Enabled-Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
+Eine weitere Übersicht über die touchfähige UI-Struktur finden Sie im Artikel [Struktur der AEM Touch-Enabled-UI](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM-Technologiestapel {#aem-technology-stack}
 
@@ -107,9 +110,11 @@ Hierfür werden die folgenden Anforderungen erfüllt:
 * Erweiterbarkeit
 * Einfache Außerkraftsetzung
 
-![chlimage_1-81](assets/chlimage_1-81.png)GraniteUI.pdf
+![chlimage_1-81](assets/chlimage_1-81.png)
+GraniteUI.pdf
 
-[Datei](assets/graniteui.pdf)abrufen Die Granite-Benutzeroberfläche:
+[Datei ](assets/graniteui.pdf)
+abrufenGranite-Benutzeroberfläche:
 
 * Nutzung der RESTful-Architektur von Sling
 * Implementierung von Komponentenbibliotheken, die für die Erstellung von inhaltszentrierten Web-Anwendungen bestimmt sind
@@ -172,7 +177,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
    <td><strong>Granite-Benutzeroberfläche</strong></td>
   </tr>
   <tr>
-   <td>Remote-Prozessaufruf<br /> </td>
+   <td>Remote-Prozeduraufruf<br /> </td>
    <td>Staatliche Übergänge</td>
   </tr>
   <tr>
@@ -269,11 +274,12 @@ Implementierung:
 * Vordefinierte Komponenten, die die Foundation-Komponenten verwenden
 * Anpassung von Komponenten
 
-## Coral-Benutzeroberfläche {#coral-ui}
+## Coral-Benutzeroberfläche  {#coral-ui}
 
 CoralUI.pdf
 
-[Die Benutzeroberfläche &quot;Get File](assets/coralui.pdf)Coral UI (CUI)&quot;ist eine Implementierung des visuellen Stils von Adobe für die touchfähige Benutzeroberfläche. Diese wurde entwickelt, um die Konsistenz der Benutzererfahrung über mehrere Produkte hinweg zu gewährleisten. Mit der Coral-Benutzeroberfläche werden alle Elemente bereitgestellt, die Sie zur Übernahme des visuellen Stils der Autorenumgebung benötigen.
+[Get ](assets/coralui.pdf)
+FileCoral UI (CUI) ist eine Implementierung des visuellen Stils der Adobe für die touchfähige Benutzeroberfläche, die für Konsistenz in der Benutzererfahrung über mehrere Produkte hinweg ausgelegt ist. Mit der Coral-Benutzeroberfläche werden alle Elemente bereitgestellt, die Sie zur Übernahme des visuellen Stils der Autorenumgebung benötigen.
 
 >[!CAUTION]
 >
@@ -287,6 +293,7 @@ CoralUI.pdf
 >* Begleitmaterial, Anzeigen und Präsentationen von Adobe
 >* Benutzeroberfläche von Anwendungen unter der Marke Adobe (Schriftart darf nicht frei für andere Zwecke verfügbar sein)
 >* Geringe Anpassungen
+
 >
 >
 Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
@@ -294,6 +301,7 @@ Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden 
 >* Dokumente und andere Elemente, die sich nicht auf Adobe beziehen
 >* Umgebungen für die Inhaltserstellung (in denen die Ausgangselemente von Dritten generiert werden)
 >* Anwendungen/Komponenten/Webseiten, die nicht eindeutig mit Adobe verknüpft sind
+
 >
 
 
@@ -306,7 +314,7 @@ Sie ist vollständig modular konzipiert und jedes Modul stellt basierend auf sei
 
 Für die Coral-Benutzeroberfläche muss kein bestimmtes Entwicklungsmodell bzw. keine bestimmte Plattform verwendet werden. Hauptziel von Coral ist es, einheitlichen und sauberen HTML5-Markup-Code bereitzustellen, und zwar unabhängig von der eigentlichen Methode, die zum Ausgeben des Markup-Codes verwendet wird. Er kann für client- oder serverseitiges Rendering, Vorlagen, JSP, PHP oder auch Adobe Flash-RIA-Anwendungen verwendet werden, um nur einige zu nennen.
 
-### HTML-Elemente – Markup-Ebene {#html-elements-the-markup-layer}
+### HTML-Elemente – Markup-Ebene  {#html-elements-the-markup-layer}
 
 Über die HTML-Elemente wird ein einheitliches Erscheinungsbild für alle Basiselemente der Benutzeroberfläche (z. B. Navigationsleiste, Schaltfläche, Menü, Leiste usw.) erzielt.
 
@@ -362,20 +370,20 @@ Viele der HTML-Elemente müssen ein bestimmtes dynamisches Verhalten aufweisen, 
 
 Für ein Plug-in gilt einer der folgenden Fälle:
 
-* Es ist für ein spezifisches DOM-Element ausgelegt. For example, a dialog plugin expects to find `DIV class=dialog`
+* Es ist für ein spezifisches DOM-Element ausgelegt. Beispiel: Ein Dialogfeld-Plugin erwartet, `DIV class=dialog` zu finden
 * Es ist generischer Art. Über einen Layout-Manager wird beispielsweise das Layout für eine Liste mit `DIV`- oder `LI`-Elementen bereitgestellt.
 
 Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
 
 * Übergeben der Parameter per JavaScript-Aufruf
-* Using dedicated `data-*` attributes tied to the HTML markup
+* Verwenden dedizierter `data-*`-Attribute, die mit dem HTML-Markup verknüpft sind
 
 Entwickler können für jedes Plug-in den besten Ansatz wählen, aber die Faustregel lautet:
 
 * `data-*` Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
 * API-Optionen/-Klassen für Funktionalität in Verbindung mit Daten. Beispiel: Erstellung der Liste mit den anzuzeigenden Elementen.
 
-Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. For an element that you want validated, you must specify the required input form as a custom `data-*` attribute. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
+Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabefeld als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
 
 >[!NOTE]
 >
@@ -391,7 +399,7 @@ Zweck:
 Implementierung:
 
 * jQuery-Plug-in, an ein spezifisches DOM-Element (auch mehrere) gebunden
-* Using `data-*` attributes to customize behavior
+* Verwenden von Attributen `data-*` zum Anpassen des Verhaltens
 
 Ein Auszug aus Markup-Beispielcode (beachten Sie die als data-*-Attribute angegebenen Optionen):
 
