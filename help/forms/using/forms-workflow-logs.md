@@ -1,8 +1,8 @@
 ---
-title: Anmelden von AEM Forms Workflows
-seo-title: Anmelden von AEM Forms Workflows
-description: Verwenden Sie Protokolle, um Probleme mit dem Arbeitsablauf für AEM Forms zu debuggen.
-seo-description: Verwenden Sie Protokolle, um Probleme mit dem Arbeitsablauf für AEM Forms zu debuggen.
+title: Anmelden bei AEM Forms Workflows
+seo-title: Anmelden bei AEM Forms Workflows
+description: Verwenden Sie Protokolle, um Probleme mit dem AEM Forms-Workflow zu debuggen.
+seo-description: Verwenden Sie Protokolle, um Probleme mit dem AEM Forms-Workflow zu debuggen.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,11 +18,11 @@ ht-degree: 5%
 ---
 
 
-# Anmelden von AEM Forms Workflows{#logging-in-aem-forms-workflows}
+# Anmeldung bei AEM Forms Workflows{#logging-in-aem-forms-workflows}
 
-Schritte zum Arbeitsablauf für Formulare bieten detaillierte Protokolle zum bequemen Debuggen von Problemen mit dem Arbeitsablauf. Aktivieren Sie die Debug-Protokollierung für AEM Forms Workflows, um die Protokolle Ansicht.
+Die Arbeitsablaufschritte von Forms enthalten detaillierte Protokolle zum bequemen Debuggen von Problemen im Zusammenhang mit dem Arbeitsablauf. Aktivieren Sie die Debug-Protokollierung für AEM Forms Workflows, um die Protokolle Ansicht.
 
-By default, all logging information is available in the **error.log** file at the */crx-repository/logs/* directory.
+Standardmäßig sind alle Protokollinformationen in der Datei **error.log** im Ordner */crx-repository/logs/* verfügbar.
 
 Die Debug-Protokolle für Formulare Workflows:
 
@@ -72,14 +72,14 @@ Im folgenden Beispiel werden die Protokolle für den Schritt &quot;Dokument sign
 Verwenden Sie die Protokolle, um Folgendes zu bewerten:
 
 * Sie verwenden eine korrekte Adobe-Signaturkonfiguration.
-* Der Adobe Sign-Dienst wird beendet, nachdem eine Vereinbarung erfolgreich erstellt wurde.
+* Der Adobe Sign-Dienst wird beendet, nachdem ein Vertrag erfolgreich erstellt wurde.
 * Der Schritt Dokument signieren wird mit einer Erfolgsmeldung beendet.
 
 Wenn eine Ausnahme vorliegt, können Sie die gesamte Stapelablaufverfolgung zur Auswertung der Fehlerursache Ansicht haben.
 
-## Debugging-Protokollierung für AEM Forms-Workflows aktivieren {#enable-debug-logging-for-aem-forms-workflows}
+## Debugging-Protokollierung für AEM Forms Workflows {#enable-debug-logging-for-aem-forms-workflows} aktivieren
 
-Führen Sie die folgenden Schritte aus, um die Debug-Protokollierung für AEM Forms-Workflows zu aktivieren:
+Führen Sie die folgenden Schritte aus, um die Debug-Protokollierung für AEM Forms Workflows zu aktivieren:
 
 1. Gehen Sie zu AEM Web Console Configuration Manager unter:
 
@@ -89,9 +89,9 @@ Führen Sie die folgenden Schritte aus, um die Debug-Protokollierung für AEM Fo
 1. Tippen Sie auf **[!UICONTROL Hinzufügen neue Protokollfunktion.]**
 1. Wählen Sie **[!UICONTROL Debug]** als **[!UICONTROL Protokollierungsstufe]**.
 1. Geben Sie den Speicherort der Protokolldatei an. Der Standardspeicherort für die Protokolldatei lautet: *logs\error.log*
-1. Geben Sie den Namen des Pakets als **com.adobe.granite.workflow.core** in der Spalte **[!UICONTROL Logger]** an.
+1. Geben Sie in der Spalte **[!UICONTROL Logger]** den Namen des Pakets als **com.adobe.granite.workflow.core** ein.
 
-   Wenn Sie diese Schritte ausführen, können Sie die Debug-Protokolle für das **com.adobe.granite.workflow.core** -Paket speichern. Tippen Sie auf **[!UICONTROL +]** und fügen Sie der Liste die folgenden Paketnamen hinzu:
+   Wenn Sie diese Schritte ausführen, können Sie die Debug-Protokolle für das **com.adobe.granite.workflow.core**-Paket speichern. Tippen Sie auf **[!UICONTROL +]** und fügen Sie der Liste die folgenden Paketnamen hinzu:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace
