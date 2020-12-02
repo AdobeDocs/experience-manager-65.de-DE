@@ -18,14 +18,14 @@ ht-degree: 12%
 ---
 
 
-# Anfänglicher Sandbox-Antrag {#initial-sandbox-application}
+# Initial Sandbox Application {#initial-sandbox-application}
 
 In diesem Abschnitt erstellen Sie Folgendes:
 
-* The **[template](#createthepagetemplate)** that will be used to create content pages in the example website.
-* Die **[Komponente und das Skript](#create-the-template-s-rendering-component)** , die zum Rendern der Webseiten verwendet werden.
+* Die **[template](#createthepagetemplate)**, die zum Erstellen von Inhaltsseiten in der Beispiel-Website verwendet wird.
+* Die **[Komponente und das Skript](#create-the-template-s-rendering-component)**, die zum Rendern der Webseiten verwendet werden.
 
-## Create the Content Template {#create-the-content-template}
+## Erstellen der Inhaltsvorlage {#create-the-content-template}
 
 Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websites werden ggf. auch mehrere Vorlagen für die Erstellung der verschiedenen Seitentypen der Website verwendet. Darüber hinaus kann der Vorlagensatz zu einem Entwurf werden, mit dem Änderungen in einem Servercluster eingeführt werden.
 
@@ -34,7 +34,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 1. Im Explorer-Bereich &quot;CRXDE Lite&quot;:
 
    * Wählen Sie nun eine der folgenden Optionen aus `/apps/an-scf-sandbox/templates`
-   * **[!UICONTROL Erstellen]** > Vorlage **[!UICONTROL erstellen]**
+   * **[!UICONTROL Erstellen]** > Vorlage  **[!UICONTROL erstellen]**
 
 1. Geben Sie im Dialogfeld „Vorlage erstellen“ die folgenden Werte ein und klicken Sie anschließend auf **[!UICONTROL Weiter]**:
 
@@ -46,9 +46,9 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    Die Beschriftung wird für den Knotennamen verwendet.
 
-   Der Ressourcentyp wird auf dem Knoten &quot;jcr:content&quot;des `playpage`Benutzers als Eigenschaft angezeigt `sling:resourceType`. Er identifiziert die Komponente (Ressource), die den Inhalt auf Anforderung eines Browsers rendert.
+   Der Ressourcentyp wird auf dem Knoten &quot;jcr:content&quot;von `playpage` als Eigenschaft `sling:resourceType` angezeigt. Er identifiziert die Komponente (Ressource), die den Inhalt auf Anforderung eines Browsers rendert.
 
-   In this case, all pages created using the `playpage` template are rendered by the `an-scf-sandbox/components/playpage` component. Standardmäßig ist der Pfad zur Komponente relativ, sodass Sling die Ressource zuerst im `/apps` Ordner und, falls nicht gefunden, im `/libs` Ordner suchen kann.
+   In diesem Fall werden alle mit der Vorlage `playpage` erstellten Seiten von der Komponente `an-scf-sandbox/components/playpage` gerendert. Standardmäßig ist der Pfad zur Komponente relativ, sodass Sling zuerst im Ordner `/apps` und, falls nicht gefunden, im Ordner `/libs` nach der Ressource suchen kann.
 
    ![create-content-template](assets/create-content-template-1.png)
 
@@ -56,13 +56,13 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. &quot;Zulässige Pfade&quot;bezieht sich auf die Pfade von Seiten, die diese Vorlage verwenden, sodass die Vorlage für das Dialogfeld &quot; **[!UICONTROL Neue Seite]** &quot;aufgelistet wird.
+1. &quot;Zulässige Pfade&quot;bezieht sich auf die Pfade von Seiten, die diese Vorlage verwenden, sodass die Vorlage für das Dialogfeld **[!UICONTROL Neue Seite]** aufgelistet wird.
 
    Um einen Pfad hinzuzufügen, klicken Sie auf die Plusschaltfläche `+` und geben Sie `/content(/.&ast;)?` in das angezeigte Textfeld ein. Wenn Sie Kopieren/Einfügen verwenden, stellen Sie sicher, dass keine Leerzeichen am Anfang oder am Ende vorhanden sind.
 
-   Note: The value of the allowed path property is a *regular expression*. Inhaltsseiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In this case, the regular expression matches the path of the **/content** folder and all its subpages.
+   Hinweis: Der Wert der Eigenschaft allowed path ist ein *regulärer Ausdruck*. Inhaltsseiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In diesem Fall stimmt der reguläre Ausdruck mit dem Pfad des Ordners **/content** und allen zugehörigen Unterseiten überein.
 
-   Wenn ein Autor eine Seite unterhalb `/content`erstellt, wird die `playpage` Vorlage &quot;Eine SCF-Sandbox-Seitenvorlage&quot;in einer Liste der verfügbaren Vorlagen angezeigt.
+   Wenn ein Autor eine Seite unterhalb von `/content` erstellt, wird die Vorlage `playpage` mit dem Titel &quot;Eine SCF-Sandbox-Seitenvorlage&quot;in einer Liste der zu verwendenden Vorlagen angezeigt.
 
    Nachdem die Stammseite aus der Vorlage erstellt wurde, kann der Zugriff auf die Vorlage auf diese Website eingeschränkt werden, indem die Eigenschaft geändert wird, um den Stammpfad in den regulären Ausdruck einzuschließen, d. h.
 
@@ -72,40 +72,40 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   Klicken Sie im Bedienfeld &quot; **[!UICONTROL Zulässige Eltern]** &quot;auf **[!UICONTROL Weiter]** .
+   Klicken Sie im Bereich **[!UICONTROL Zulässige Eltern]** auf **[!UICONTROL Weiter]**.
 
-   Klicken Sie **[!UICONTROL auf Weiter]** in den Bedienfeldern **[!UICONTROL Zulässige Kinder]** .
+   Klicken Sie auf **[!UICONTROL Weiter]** in den Feldern **[!UICONTROL Zulässige Kinder]**.
 
    Klicken Sie auf **[!UICONTROL OK]**.
 
-1. Wenn Sie auf &quot;OK&quot;klicken und die Vorlage erstellen, werden rote Dreiecke angezeigt, die in den Ecken der Registerkarte &quot;Eigenschaften&quot;für die neue `playpage` Vorlage angezeigt werden. Diese roten Dreiecke zeigen Bearbeitungen an, die noch nicht gespeichert wurden.
+1. Nachdem Sie auf OK geklickt haben und die Vorlage erstellt haben, werden rote Dreiecke angezeigt, die in den Ecken der Registerkarte Eigenschaften für die neue Vorlage `playpage` erscheinen. Diese roten Dreiecke zeigen Bearbeitungen an, die noch nicht gespeichert wurden.
 
-   Klicken Sie auf Alle **[!UICONTROL speichern]** , um die neue Vorlage im Repository zu speichern.
+   Klicken Sie auf **[!UICONTROL Alle speichern]**, um die neue Vorlage im Repository zu speichern.
 
    ![verify-content-template](assets/verify-content-template.png)
 
-### Erstellen der Renderingkomponente der Vorlage {#create-the-template-s-rendering-component}
+### Erstellen der Rendering-Komponente der Vorlage {#create-the-template-s-rendering-component}
 
-Erstellen Sie die *Komponente* , die den Inhalt definiert und alle Seiten wiedergibt, die auf der [Layoutvorlage](#createthepagetemplate)erstellt wurden.
+Erstellen Sie die *Komponente*, die den Inhalt definiert und alle Seiten rendert, die auf der [PLATZIERUNGSVorlage](#createthepagetemplate) erstellt wurden.
 
-1. In CRXDE Lite, right-click **`/apps/an-scf-sandbox/components`** and click **[!UICONTROL Create > Component]**.
-1. Indem Sie den Namen (Bezeichnung) des Knotens auf *playpage* festlegen, lautet der Pfad zur Komponente
+1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf **`/apps/an-scf-sandbox/components`** und dann auf **[!UICONTROL Erstellen > Komponente]**.
+1. Durch Festlegen des Knotennamens (Beschriftung) auf *playpage* lautet der Pfad zur Komponente
 
    `/apps/an-scf-sandbox/components/playpage`
 
-   die dem Ressourcentyp der PayPal-Vorlage entspricht (optional minus dem anfänglichen **`/apps/`** Teil des Pfades).
+   was dem Ressourcentyp der PayPal-Vorlage entspricht (optional minus dem initialen **`/apps/`**-Teil des Pfades).
 
    Geben Sie im Dialogfeld **[!UICONTROL Komponente erstellen]** die folgenden Eigenschaftswerte ein:
 
    * Beschriftung: **playpage**
-   * Titel: **Eine SCF-Sandbox-Wiedergabekomponente**
-   * Beschreibung: **Diese Komponente rendert Inhalte für eine SCF-Sandbox-Seite.**
+   * Titel: **Eine SCF-Sandbox-Abspielkomponente**
+   * Beschreibung: **Dies ist die Komponente, die Inhalt für eine SCF-Sandbox-Seite rendert.**
    * Super Type: *&lt;leer lassen>*
-   * Group: *&lt;leave blank>*
+   * Gruppe: *&lt;leer lassen>*
 
    ![create-template-component](assets/create-template-component.png)
 
-1. Click **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel of the dialog appears:
+1. Klicken Sie auf **[!UICONTROL Weiter]**, bis das Fenster **[!UICONTROL Zulässige Kinder]** des Dialogfelds angezeigt wird:
 
    * Klicken Sie auf **[!UICONTROL OK]**.
    * Klicken Sie auf **[!UICONTROL Alle speichern]**.
