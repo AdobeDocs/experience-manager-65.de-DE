@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 95%
 
 ---
 
@@ -72,7 +75,7 @@ Alle Dateien, die nicht dynamisch sind und im Laufe der Zeit nicht geändert wer
    </Location>
    ```
 
-   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien einen Tag lang in Clientcaches speichert. Although this example illustrates global settings for everything below `/content` and `/etc/designs`, you should make it more granular.
+   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien einen Tag lang in Clientcaches speichert. Obwohl dieses Beispiel die globalen Einstellungen für alles unterhalb von `/content` und `/etc/designs` veranschaulicht, sollten Sie sie granularer gestalten.
 
    Abhängig vom Aktualisierungsintervall der Website käme für Sie ggf. auch das Caching von HTML-Seiten in Frage. Ein angemessener Zeitraum wäre etwa 1 Stunde:
 
