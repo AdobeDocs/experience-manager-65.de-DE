@@ -24,9 +24,9 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Kata
 
 Mit der Katalogfunktion können Community-Mitglieder, wenn sie in einer Community-Site enthalten sind, die in einem Katalog aufgelisteten Ressourcen zur Aktivierung durchsuchen und auswählen.
 
-The [ `enablement catalog` component](catalog.md) allows community members to access a catalog of [enablement resources](resources.md). Die Verwendung von AEM-Tags ist ein wichtiger Bestandteil der Verwaltung des Erscheinungsbilds der Aktivierungsressourcen in einem Katalog.
+Die [ `enablement catalog`-Komponente](catalog.md) ermöglicht es Community-Mitgliedern, auf einen Katalog von [Aktivierungsressourcen](resources.md) zuzugreifen. Die Verwendung von AEM-Tags ist ein wichtiger Bestandteil der Verwaltung des Erscheinungsbilds der Aktivierungsressourcen in einem Katalog.
 
-See [Tagging Enablement Resources](tag-resources.md).
+Siehe [Tagging-Aktivierungsressourcen](tag-resources.md).
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
@@ -42,7 +42,7 @@ See [Tagging Enablement Resources](tag-resources.md).
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.catalog<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learningPath</td>
+   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.catalog<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learn.path</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -63,13 +63,13 @@ See [Tagging Enablement Resources](tag-resources.md).
 
 ### Katalogfunktion {#catalog-function}
 
-Eine Community-Site-Struktur, die die [Katalogfunktion](functions.md#catalog-function)enthält, enthält eine konfigurierte `enablement catalog` Komponente.
+Eine Community-Site-Struktur, die die Katalogfunktion [enthält, enthält eine konfigurierte `enablement catalog`-Komponente.](functions.md#catalog-function)
 
 ### Pre-Filters {#pre-filters}
 
 Wenn einer Community-Site eine Katalogfunktion hinzugefügt wurde, können die Aktivierungsressourcen und Lernpfade, die im Katalog angezeigt werden, durch Angabe eines Vorfilters eingeschränkt werden. Dies geschieht durch Festlegen von Eigenschaften für die Instanz der Katalogressource für die Site.
 
-Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md)Aktivierung:
+Verwenden Sie das Beispiel des [Aktivierungslehrgangs](getting-started-enablement.md):
 
 * Autor
 * Verwenden von [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
@@ -82,25 +82,25 @@ Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md
 
 * hinzufügen eines untergeordneten Filter-Knotens
 
-   * Wählen Sie den `catalog`Knoten
-   * Knoten **[!UICONTROL erstellen auswählen]**
+   * Wählen Sie den Knoten `catalog`aus
+   * Wählen Sie **[!UICONTROL Knoten erstellen]**
 
       * Name: `filters`
       * Typ: `nt:unstructured`
-      * Select **[!UICONTROL Save All]**
+      * Wählen Sie **[!UICONTROL Alle speichern]**
 
-* hinzufügen `se_resource-tags` Eigenschaft des `filters` Knotens
+* hinzufügen `se_resource-tags`-Eigenschaft auf den Knoten `filters`
 
-   * Wählen Sie die `filters` Node
+   * Wählen Sie den Knoten `filters`
    * hinzufügen einer Multi-Eigenschaft
 
       * Name: `se_resource-tags`
       * Typ: String
-      * Wert: *&lt;TagID[eingeben](#pre-filter-tagids)>*
+      * Wert: *&lt;enter a [TagID](#pre-filter-tagids)*
          * Wählen Sie **[!UICONTROL Multi]**
-         * Auswählen **[!UICONTROL Hinzufügen]**
+         * Wählen Sie **[!UICONTROL Hinzufügen]**
 
-            * Wählen Sie im Popup-Dialogfeld `+` die Option zum Hinzufügen zusätzlicher TagIDs vor dem Filter
+            * Wählen Sie im Popup-Dialogfeld `+` aus, um weitere TagIDs vor dem Filter hinzuzufügen.
 
 * Veröffentlichen Sie die Community-Site erneut.
 
@@ -108,7 +108,7 @@ Verwenden Sie das Beispiel des Lernprogramms [zur](getting-started-enablement.md
 
 #### TagIDs vor dem Filtern {#pre-filter-tagids}
 
-Die [TagIDs](../../help/sites-developing/framework.md#tagid) vor dem Filter müssen exakt mit den Tags übereinstimmen, die auf die Aktivierungsressourcen angewendet wurden. Diese sind im `resources` Ordner der Site als Werte der Eigenschaft sichtbar `se_resource-tags`.
+Der Vorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) muss exakt mit den Tags übereinstimmen, die auf die Aktivierungsressourcen angewendet wurden. Diese sind im Ordner `resources` für die Site als Werte der Eigenschaft `se_resource-tags` sichtbar.
 
 ![configure-Filters](assets/configure-catalog1.png)
 
