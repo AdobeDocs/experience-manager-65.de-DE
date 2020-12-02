@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 98%
 
 ---
 
@@ -40,6 +43,7 @@ Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language 
 
    * eine Verknüpfung zur Anmeldeseite eines dritten SAML-Identitätsanbieters, wo sich Benutzer authentifizieren können, die zu einer Unternehmensdomäne gehören.
    * eine Verknüpfung zur AEM Forms-Anmeldeseite, wo sich Benutzer identifizieren können, die zu einer lokalen Domäne gehören.
+
    Wenn diese Option nicht ausgewählt ist, werden die Benutzer direkt zur Anmeldeseite des dritten SAML-Identitätsanbieters geführt, wo sich Benutzer authentifizieren können, die zu einer Unternehmensdomäne gehören.
 
 1. (Optional) Wählen Sie „Artefakt-Bindung“, um die Unterstützung für die Artefakt-Bindung zu aktivieren. Standardmäßig wird POST-Bindung mit SAML verwendet. Wenn Sie jedoch Artefakt-Bindung konfiguriert haben, wählen Sie diese Option aus. Wenn diese Option ausgewählt ist, wird die tatsächliche Benutzerassertion nicht durch die Browseranforderung weitergeleitet. Stattdessen wird ein Verweis zu der Assertion weitergeleitet und die Assertion wird mithilfe eines Backend-Webdienstaufrufs abgerufen.
@@ -55,6 +59,7 @@ Eine Erläuterung von SAML finden Sie unter [Security Assertion Markup Language 
       `saml.sp.use.relaystate=true`
 
    * Fügen Sie folgende benutzerdefinierte Eigenschaft zum Konfigurieren der URL für die benutzerdefinierten Java Serverseiten (JSP) hinzu, die zur Wiedergabe der registrierten Liste von Identitätsanbietern verwendet wird. Wenn Sie keine benutzerdefinierte Webanwendung bereitgestellt haben, wird die standardmäßige User Management-Seite verwendet, um die Liste wiederzugeben.
+
    `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Klicken Sie auf Speichern.
