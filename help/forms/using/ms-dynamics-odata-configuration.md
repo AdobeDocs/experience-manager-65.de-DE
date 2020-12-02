@@ -64,7 +64,7 @@ Gehen Sie folgendermaßen vor, um die Antwort-URL für eine registrierte Microso
 
 1. Speichern Sie die Konfiguration.
 
-## Konfigurieren Sie Microsoft Dynamics für IFD {#configure-microsoft-dynamics-for-ifd}
+## Konfigurieren Sie Microsoft Dynamics für IFD  {#configure-microsoft-dynamics-for-ifd}
 
 Microsoft Dynamics verwendet die anspruchsbasierte Authentifizierung, um externen Benutzern den Zugriff auf Daten auf dem Microsoft Dynamics CRM-Server zu ermöglichen. Führen Sie die folgenden Schritte aus, um Microsoft Dynamics für Bereitstellung mit Internetzugriff (IFD) zu konfigurieren und Schadenseinstellungen zu konfigurieren.
 
