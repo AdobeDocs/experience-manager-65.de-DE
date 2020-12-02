@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
 workflow-type: tm+mt
 source-wordcount: '2523'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+Die folgende Abbildung zeigt ein Beispiel auf der Website We.Retail, auf der auf eine Seite mit Wanderkursen ( `desert-sky-shorts`) zugegriffen wird:
 
 * Autor-Umgebung
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
@@ -43,7 +43,7 @@ The following shows an example from the We.Retail site, where a hiking shorts pa
 * Veröffentlichungsumgebung
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` auf der Umgebung zum Veröffentlichen optional sein.
 
 ```xml
  /content
@@ -89,13 +89,13 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 * **[Name](#name)**:
 
    * Mit diesem Wert wird der URI generiert.
-   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices). 
+   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
 #### Seitennamen-Einschränkungen und Best Practices {#page-name-restrictions-and-best-practices}
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
-* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich.  Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung).  Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
+* Beim Erstellen einer Seite ist nur das **Titelfeld** erforderlich. Wenn bei der Erstellung von Seiten kein **Name** angegeben wird, generiert AEM einen Namen aus den ersten 64 Zeichen des Titels (entsprechend der nachfolgenden Validierung). Nur die ersten 64 Zeichen werden verwendet, um gängige Best Practices für kurze Seitennamen zu unterstützen.
 
 * Wenn ein Seitenname manuell vom Autor angegeben wird, gilt die Beschränkung von 64 Zeichen nicht, aber andere technische Einschränkungen gelten unter Umständen für die Länge des Seitennamens.
 
@@ -105,7 +105,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technisch Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+Beim Erstellen einer neuen Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md).
 
 Mindestens zulässig sind die folgenden Zeichen:
 
@@ -123,7 +123,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen**[ für die Seite von dieser Zeichenfolge ab und validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) Im Feld **Titel** werden ungültige Zeichen akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -132,7 +132,7 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM den Namen gemäß den AEM- und JCR-Konventionen. [](/help/sites-developing/naming-conventions.md) Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen gemäß den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md). Die Eingabe von ungültigen Zeichen im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld mit einer erklärenden Meldung markiert.
 
 ![caop-02](assets/caop-02.png)
 
@@ -165,7 +165,7 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 
 ### Komponenten {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [Out-of-the-Box-Komponenten](/help/sites-authoring/default-components-console.md), die eine umfassende Funktionalität bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -185,7 +185,7 @@ Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der im
 
 Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem Einfügen von Inhalten zunächst eine Seite erstellen:
 
-1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie in der Liste **Seite** aus:
 
@@ -196,6 +196,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
    * Wählen Sie die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten, und klicken/tippen Sie auf **Weiter**, um fortzufahren.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![caop-04](assets/caop-04.png)
 
 1. Im letzten Schritt des Assistenten haben Sie folgende Möglichkeiten:
@@ -203,6 +204,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
    * Geben Sie auf den drei Registerkarten die [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) ein, die Sie der neuen Seite zuweisen möchten, und klicken bzw. tippen Sie dann auf **Erstellen**, um die Seite zu erstellen.
 
    * Verwenden Sie **Zurück**, um zur Vorlagenauswahl zurückzukehren.
+
    Die Schlüsselfelder sind:
 
    * **Titel**:
@@ -211,7 +213,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
-      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen**[ für die Seite angeben, validiert AEM den Namen entsprechend den Konventionen von AEM und JCR.](/help/sites-developing/naming-conventions.md)
+      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/sites-developing/naming-conventions.md).
 
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
    >[!NOTE]
@@ -248,6 +250,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Bearbeiten** aus:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -256,9 +259,9 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 
 >[!NOTE]
 >
->Das Navigieren zu anderen Seiten ist im Seiten-Editor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiten-Editors nicht aktiv sind.
+>Das Navigieren zu anderen Seiten ist im Seiteneditor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiteneditors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite     {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -267,6 +270,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Seite kopieren** aus:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -283,6 +287,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
    Wählen Sie eine der folgenden Möglichkeiten aus:
    * Wählen Sie das Symbol **Einfügen** aus: An dieser Stelle wird eine Kopie der Originalseite und etwaiger untergeordneter Seiten erstellt.
    * Wählen Sie den Dropdown-Pfeil aus, um die Option **Ohne untergeordnete Elemente einfügen** anzuzeigen. An dieser Stelle wird eine Kopie der Originalseite erstellt. Untergeordnete Seiten werden nicht kopiert.
+
    >[!NOTE]
    >
    >Wenn Sie die Seite an einen Speicherort kopieren, an dem sich bereits eine Seite befindet, deren Name mit dem der ursprünglichen Seite übereinstimmt, erstellt das System automatisch eine Variation des Namens, indem eine Zahl angehängt wird. Wenn `winter` beispielsweise bereits existiert, wird `winter` zu `winter1`.
@@ -295,7 +300,7 @@ Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicher
 
 >[!NOTE]
 >
->Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>Eine Seite kann nur an einen Speicherort verschoben werden, an dem die Vorlage zulässig ist, auf der die Seite basiert. Weitere Informationen finden Sie unter [Formularverfügbarkeit](/help/sites-developing/templates.md#template-availability).
 
 Die Vorgehensweise beim Verschieben oder Umbenennen einer Seite ist im Großen und Ganzen gleich und wird von demselben Assistenten unterstützt. Dieser Assistent hilft Ihnen bei den folgenden Aktionen:
 
@@ -310,6 +315,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) und Symbolleiste
+
    Wählen Sie anschließend das Symbol **Verschieben** aus:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -321,6 +327,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und tippen/klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
 
    * Mit **Abbrechen** brechen Sie den Vorgang ab.
+
    ![caop-07](assets/caop-07.png)
 
    Der Seitenname kann unverändert bleiben, wenn Sie die Seite nur verschieben.
@@ -333,9 +340,10 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) verwenden, um zum neuen Speicherort der Seite zu navigieren:
 
-      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken. 
+      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
+
    >[!NOTE]
    >
    >Standardmäßig wird das übergeordnete Element der Seite, die Sie verschieben/umbenennen, als Ziel ausgewählt.
@@ -368,24 +376,24 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
-Normalerweise wird sofort eine Aktion zum Verschieben oder Umbenennen von Seiten durchgeführt. Dies gilt als synchrone Verarbeitung, und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
+Normalerweise wird eine Aktion zum Verschieben oder Umbenennen von Seiten sofort ausgeführt. Dies gilt als synchrone Verarbeitung und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
 
-Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass der Benutzer das Authoring in der Benutzeroberfläche fortsetzen kann, ohne dass die Aktion zum Verschieben oder Umbenennen der Seite behindert wird.
+Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass der Benutzer die Inhaltserstellung in der Benutzeroberfläche fortsetzen kann, ohne von der Aktion zum Verschieben oder Umbenennen der Seite aufgehalten zu werden.
 
 * Wenn Sie im letzten Schritt oben auf **Verschieben** klicken, prüft AEM die konfigurierte Beschränkung.
-* Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang durchgeführt.
-* Wenn die Anzahl der betroffenen Seiten über der Grenze liegt, wird ein asynchroner Vorgang durchgeführt.
-   * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll
-      * **Jetzt** beginnt die Ausführung des asynchronen Auftrags sofort.
-      * **Später** kann der Benutzer definieren, wann der asynchrone Auftrag Beginn wird.
+* Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang ausgeführt.
+* Wenn die Anzahl der betroffenen Seiten über der Grenze liegt, wird ein asynchroner Vorgang ausgeführt.
+   * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll.
+      * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
+      * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
 
-         ![Asynchroner Seitenwechsel](assets/asynchronous-page-move.png)
+         ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
 
-Der Status asynchroner Aufträge kann im [**Async-Auftragsstatus **-Dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)unter** Globale Navigation **->** Tools **->** Vorgänge **->** Aufträge überprüft werden.**
+Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrationsbenutzerhandbuch.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenumbruchs-/Umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrationsbenutzerhandbuch.
 
 >[!NOTE]
 >
@@ -433,6 +441,7 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 >* Ordner können nur direkt unter **Sites** oder unter anderen Ordnern erstellt werden. Sie können jedoch nicht unter einer Seite erstellt werden.
 >* Für einen Ordner können folgende Standardaktionen ausgeführt werden: Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften.
 >* Ordner sind in einer Live Copy nicht als Auswahl verfügbar.
+
 >
 
 
