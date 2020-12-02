@@ -1,6 +1,6 @@
 ---
 title: Installieren von Feature Pack 18912 für die Migration von Massenelementen
-description: Mit Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets von Dynamic Media Classic in Dynamic Media in AEM migrieren. Dieses optionale Feature Pack ist über den Adobe-Support verfügbar.
+description: Mit dem Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets von Dynamic Media Classic auf AEM in dynamische Medien migrieren. Dieses optionale Feature Pack ist über den Adobe-Support verfügbar.
 uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -17,32 +17,32 @@ ht-degree: 24%
 ---
 
 
-# Installing feature pack 18912 for bulk asset migration{#installing-feature-pack-for-bulk-asset-migration}
+# Installieren von Feature Pack 18912 für Massenmigration von Assets{#installing-feature-pack-for-bulk-asset-migration}
 
-The installation of feature pack 18912 is *optional*.
+Die Installation von Feature Pack 18912 ist *optional*.
 
-Mit Feature Pack 18912 können Sie Assets entweder per FTP direkt in Dynamic Media importieren - Scene7-Modus auf AEM oder Assets von Dynamic Media Classic in den Scene7-Modus auf AEM migrieren. Das Feature Pack ist bei [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html)erhältlich.
+Mit dem Feature Pack 18912 können Sie Assets entweder per FTP in Dynamische Medien - Scene7-Modus stapeln oder Assets aus Dynamischer Medienklassik in den Modus Dynamische Medien - Scene7 auf AEM migrieren. Das Feature Pack ist unter [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) verfügbar.
 
 >[!NOTE]
 >
->Obwohl Sie das Feature Pack verwenden können, um Assets eigenständig von Dynamic Media Classic zu Dynamic Media zu migrieren - Scene7-Modus in AEM oder Massenmigrieren von Assets mithilfe der FTP-Funktion in Dynamic Media Classic durchzuführen, empfiehlt Adobe diese Methode aufgrund der damit verbundenen Komplexität *nicht* .
+>Es ist zwar möglich, mit dem Feature Pack eigene Assets von Dynamic Media Classic zum Dynamic Media - Scene7-Modus zu migrieren, AEM Assets jedoch mit der FTP-Funktion in Dynamic Media Classic stapelweise zu migrieren. Aufgrund der damit verbundenen Komplexität empfiehlt die Adobe diese Methode jedoch nicht.**
 >
->Daher werden Migrationspaket, wie dieses, *nur* im Rahmen eines Migrationsprojektes unterstützt, wenn es über [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html)durchgeführt wird.
+>Daher werden Migrationspaket wie dieses nur als Teil eines Migrationsprojekts unterstützt, wenn es über *Adobe Professional Services* durchgeführt wird.[](https://www.adobe.com/experience-cloud/consulting-services.html)
 
-Bevor Sie das Feature Pack installieren können, müssen Sie zunächst einen Dienstbenutzer erstellen und diese Informationen dem Adobe-Support bereitstellen.
+Bevor Sie das Feature Pack installieren können, müssen Sie zunächst einen Dienstbenutzer erstellen und diese Informationen zur Unterstützung der Adobe bereitstellen.
 
-See also [Configuring Dynamic Media - Scene7 mode](/help/assets/config-dms7.md).
+Siehe auch [Dynamische Medien konfigurieren - Scene7-Modus](/help/assets/config-dms7.md).
 
 **So installieren Sie Feature Pack 18912 für die Massenmigration von Assets**
 
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Tools > Sicherheit > Benutzer]** und wählen Sie **[!UICONTROL Benutzer erstellen]**. Dieser Dienstbenutzer benötigt *Lese-/Schreibberechtigungen* für `/content/dam.`
 1. Geben Sie in den Feldern **[!UICONTROL ID]** und **[!UICONTROL Kennwort]** einen Benutzernamen und ein Kennwort ein, z. B. **FTP-Benutzer**. Dieser Name wird in der Zeitleiste als der Benutzer angezeigt, der das Asset erstellt hat. Wenn ein Asset über FTP hochgeladen wird, gilt es als erstellt, wenn es auf den FTP-Server hochgeladen und in AEM gepusht wurde.
-1. Wenden Sie sich an den [Adobe Enterprise-Kundendienst, wenn Sie Experience Manager](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) benötigen, um Zugriff auf Feature Pack 18912 zum Herunterladen zu erhalten. Möglicherweise benötigen Sie beim Kontakt mit dem Support die folgenden Informationen:
+1. Wenden Sie sich an den [Adobe Enterprise-Kundendienst für Experience Manager](https://helpx.adobe.com/de/contact/enterprise-support.ec.html), um Zugriff auf Feature Pack 18912 zum Herunterladen anzufordern. Möglicherweise benötigen Sie beim Kontakt mit dem Support die folgenden Informationen:
 
    * Server-IP-Adresse für Ihre Autoreninstanz, einschließlich der Anschlussnummer (standardmäßig ist die Anschlussnummer 4502).
-   * Benutzername und Kennwort des AEM-Dienstbenutzers aus dem vorherigen Schritt.
+   * AEM Dienstbenutzer-Benutzername und Kennwort aus dem vorherigen Schritt.
 
-1. Der Adobe Enterprise-Kundendienst für AEM stellt Ihnen die FTP-Anmeldeinformationen und den Zugriff auf Feature Pack 18912 zur Verfügung.
+1. Adobe Enterprise-Kundendienst für AEM bietet Ihnen die FTP-Anmeldeinformationen und Zugriff auf Feature Pack 18912.
 1. Wenn Sie das Feature Pack 18912 erhalten, installieren Sie es.
 
-   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in AEM.
+   Weitere Informationen zur Verwendung von Software-Distribution und -Paketen in AEM finden Sie unter [Wie mit Paketen funktioniert](/help/sites-administering/package-manager.md).
