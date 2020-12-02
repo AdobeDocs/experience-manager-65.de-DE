@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 72%
 
 ---
 
@@ -25,23 +28,23 @@ Sie können die Speicherorte angeben, an denen Output nach bestimmten Typen von 
 
 ## Speicherorteinstellungen {#locations-settings}
 
-**** Inhaltsstamm-URI: Der URI oder der absolute Speicherort des Repositorys, aus dem Formulare abgerufen werden. Dieser Wert wird mit dem Parameter sForm kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Webspeicherort verweisen, auf den über HTTP zugegriffen werden kann. 
+**Inhaltsstamm-URI:** Der URI oder der absolute Speicherort des Repositorys, aus dem Formulare abgerufen werden. Dieser Wert wird mit dem Parameter sForm kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Webspeicherort verweisen, auf den über HTTP zugegriffen werden kann. 
 
  Der Standardwert ist eine leere Zeichenfolge.
 
-**** XCI-Konfigurationsdatei: Der relative oder absolute Speicherort der XCI-Konfigurationsdatei, die der Output-Dienst zum Rendern verwendet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der von AEM Forms bereitstellbaren EAR-Datei befindet.
+**XCI-Konfigurationsdatei:** Der relative oder absolute Speicherort der XCI-Konfigurationsdatei, die der Output-Dienst zum Rendern verwendet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der von AEM Forms bereitstellbaren EAR-Datei befindet.
 
 Der Standardwert ist `com/adobe/formServer/PA/pa_output.xci`.
 
-**** Cache-Speicherort: Gibt den Speicherort des Output-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
+**Cache-Speicherort:** Gibt den Speicherort des Output-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
 
-**** Standardspeicherort: Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
+**Standardposition:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[forms server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**** LC Temp Directory: Der Cache wird in einem Unterordner des temporären Ordners von AEM Forms erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. The subdirectory is named `adobeoutput_[servername]`.
+**LC Temp Directory:** Der Cache wird in einem Unterordner des temporären Ordners für AEM Formulare erstellt, der in Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. Der Unterordner heißt `adobeoutput_[servername]`.
 
 >[!NOTE]
 >
