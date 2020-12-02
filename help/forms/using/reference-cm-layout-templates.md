@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 In Correspondence Management enthält eine Briefvorlage typische typische Formularfelder, Layoutmerkmale wie Kopf- und Fußzeilen sowie leere „Zielbereiche“ zum Einfügen des Inhalts.
 
-Correspondence Management provides letter templates in the AEM Forms package [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer an Ihre Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
+Correspondence Management stellt Briefvorlagen im AEM Forms-Paket [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES) bereit. Informationen zum Installieren eines Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer an Ihre Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
 
 * Klassisch
 * Klassisch einfach
@@ -67,7 +70,7 @@ Die Symmetrisch links-Vorlage beinhaltet das Logo links neben dem Brief.
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Symmetrisch links-Vorlage
 
-## Symmetrisch rechts {#balanced-right}
+## Symmetrisch rechts  {#balanced-right}
 
 Eine Symmetrisch rechts-Vorlage hat das Firmenlogo auf der linken Seite und bietet Platz für die Eingabe der Empfängeradresse auf dem Brief selbst. Eine Symmetrisch rechts-Vorlage enthält auch eine Fußzeile, die bei einem Brief mit mehreren Seiten neu fließt.
 
@@ -75,7 +78,7 @@ Eine Symmetrisch rechts-Vorlage hat das Firmenlogo auf der linken Seite und biet
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Symmetrisch rechts-Vorlage
 
-## Sichtbar links {#visual-left}
+## Sichtbar links  {#visual-left}
 
 Die Sichtbar links-Vorlage hat einen Seitenkopf links auf der Seite mit dem Firmenlogo über dem Seitenkopf. Die Sichtbar links-Vorlage hat eine Betreffzeile, aber keine „Fußzeile“.
 
@@ -83,7 +86,7 @@ Die Sichtbar links-Vorlage hat einen Seitenkopf links auf der Seite mit dem Firm
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Sichtbar links-Vorlage
 
-## Sichtbar oben {#visual-top}
+## Sichtbar oben  {#visual-top}
 
 Die Sichtbar oben-Vorlage hat einen sichtbaren Rand oben. Die Sichtbar oben-Vorlage verfügt über ein Feld für die Eingabe der Adresse des Empfängers auf der Seite selbst. Die Sichtbar oben-Vorlage hat die Betreffzeile und eine Fußzeile, die für Briefe, die sich über mehrere Seiten erstrecken, neu fließt.
 
@@ -91,7 +94,7 @@ Die Sichtbar oben-Vorlage hat einen sichtbaren Rand oben. Die Sichtbar oben-Vorl
 
 PDF-Vorschau eines Briefs erstellt mithilfe der Sichtbar oben-Vorlage
 
-## Sichtbar oben - klassisch {#visual-top-classic}
+## Sichtbar oben - klassisch  {#visual-top-classic}
 
 Die Vorlage „Sichtbar oben - klassisch“ hat eine Kopfzeile oben auf der Seite mit dem Firmenlogo. Die Vorlage „Sichtbar oben - klassisch“ hat ein Feld, in dem ein Betreff eingegeben werden kann, aber keine Fußzeile.
 
