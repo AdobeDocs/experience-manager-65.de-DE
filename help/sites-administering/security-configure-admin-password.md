@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 87%
 
 ---
 
 
 # Konfigurieren des Administratorkennworts bei der Installation{#configure-the-admin-password-on-installation}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Ab Version 6.3 kann bei der Installation einer neuen AEM-Instanz das Administratorkennwort über die Befehlszeile festgelegt werden.
 
@@ -47,9 +50,9 @@ Wenn Sie die Instanz über die Befehlszeile ausführen, haben Sie während des I
 >
 >Die Aufforderung zum Ändern des Administratorkennworts wird nur während der Installation einer neuen AEM-Instanz angezeigt.
 
-## Verwenden des Flags „-nointeractive“ {#using-the-nointeractive-flag}
+## Verwenden des Flags „-nointeractive“  {#using-the-nointeractive-flag}
 
-Das Kennwort kann auch über eine Eigenschaftendatei angegeben werden. Dies geschieht mithilfe des `-nointeractive` Flags, das mit der`-Dadmin.password.file` Systemeigenschaft kombiniert wird.
+Das Kennwort kann auch über eine Eigenschaftendatei angegeben werden. Dazu wird das `-nointeractive`-Flag mit der `-Dadmin.password.file`-Systemeigenschaft kombiniert.
 
 Beispiel:
 
@@ -65,5 +68,5 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->If you simply use the `-nointeractive` parameter without the `-Dadmin.password.file` system property, AEM will use the default admin password without asking you to change it, essentially replicating behaviour from earlier versions. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.
+>Wenn Sie einfach den Parameter `-nointeractive` ohne die Systemeigenschaft `-Dadmin.password.file` verwenden, verwendet AEM das Standardkennwort des Administrators, ohne dass Sie dazu aufgefordert werden, es zu ändern, und repliziert im Grunde das Verhalten früherer Versionen. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.
 
