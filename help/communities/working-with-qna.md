@@ -36,21 +36,21 @@ Das Forum-Feature QnA (Fragen und Antworten) bietet Community-Mitgliedern einen 
 Die Dokumentation beschreibt:
 
 * Hinzufügen der Funktion des QnA-Forums zu einer AEM Site.
-* Configuration settings for the `QnA`component.
+* Konfigurationseinstellungen für die Komponente `QnA`
 
 ## Hinzufügen eines Fragen-und-Antworten-Forums zu einer Seite {#adding-a-q-a-forum-to-a-page}
 
-Um eine `QnA` Komponente einer Seite im Autorenmodus hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / QnA` und auf eine Seite zu ziehen, auf der das QnA-Forum angezeigt werden soll.
+Um einer Seite im Autorenmodus eine `QnA`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach `Communities / QnA` und ziehen Sie sie auf eine Seite, auf der das QnA-Forum angezeigt werden soll.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/qna-essentials.md#essentials-for-client-side) are included, this is how the `QnA` component appears:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) einbezogen werden, wird die `QnA`-Komponente wie folgt angezeigt:
 
 ![qna-Komponente](assets/qna-component.png)
 
 ### Konfigurieren von Fragen und Antworten {#configuring-qna}
 
-Select the placed `QnA` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `QnA` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -94,7 +94,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Tagging zulassen**
 
-   If checked, allow members to add tag labels to their post (see **Tag field** tab). Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, ihrem Beitrag Tagbeschriftungen hinzuzufügen (siehe **Feld** Registerkarte). Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -102,7 +102,7 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](/help/communities/notifications.md) werden können. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumbeiträge hinzu, mit der Mitglieder über neue Beiträge benachrichtigt werden können. [](/help/communities/notifications.md) Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Fixierung zulassen**
 
@@ -110,15 +110,15 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Sie den Mitgliedern per E-Mail ([Abonnement](/help/communities/subscriptions.md)) eine Benachrichtigung über neue Beiträge erlauben. Erfordert, dass die Option &quot;Zulassen&quot;aktiviert und die [E-Mail-Konfiguration](/help/communities/email.md)konfiguriert wird. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie Mitgliedern gestatten, per E-Mail über neue Beiträge informiert zu werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert, dass Folgendes aktiviert und [E-Mail konfiguriert werden](/help/communities/email.md). Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Max. Dateigröße**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
 * **Zulässige Dateitypen**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, dürfen nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass** **alle Dateitypen zulässig sind.
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, dürfen nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass** **alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
 
@@ -149,11 +149,11 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
    Wenn diese Option aktiviert ist, ist die erste angezeigte Antwort eine ausgewählte Antwort. Die Option &quot;Standard&quot;ist deaktiviert.
 * **Abzeichen anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie verdiente und zugewiesene [Abzeichen](/help/communities/implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn aktiviert, zeigen Sie verdiente und zugewiesene [Abzeichen](/help/communities/implementing-scoring.md) mit dem Blog-Eintrag eines Mitglieds an. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](/help/communities/featured.md)identifiziert werden. Die Option &quot;Standard&quot;ist deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [gekennzeichneter Inhalt](/help/communities/featured.md) identifiziert werden. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Erwähnung aktivieren**
 
@@ -167,9 +167,9 @@ Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen 
 
    Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag zu taggen (@Erwähnung). Beispiel: `~{{familyName}}{{givenName}}`.
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
-Under the **User Moderation** tab, specify how the posted topics (questions) and answers (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Themen (Fragen) und Antworten (vom Benutzer generierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Antworten verweigern**
 
@@ -179,7 +179,8 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
    Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern eine Frage (Thema) schließen, um weitere Bearbeitungen und Antworten vorzunehmen, und eine Frage erneut öffnen. Die Option &quot;Standard&quot;ist deaktiviert.
 
-* **Themen** verschieben Wenn diese Option aktiviert ist, können Sie Moderatoren auf Veröffentlichungsseite das Verschieben von Fragen gestatten. Die Option &quot;Standard&quot;ist deaktiviert.
+* **Verschieben von**
+ThemenWenn diese aktiviert sind, können Sie Moderatoren auf der Seite des Veröffentlichungsmodus das Verschieben von Fragen zulassen. Die Option &quot;Standard&quot;ist deaktiviert.
 
 * **Posts kennzeichnen**
 
@@ -203,11 +204,11 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 #### Tag-Feld, Registerkarte {#tag-field-tab}
 
-Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings** tab, are limited according to namespaces chosen.
+Unter der Registerkarte **Tag sind die Tags, die angewendet werden können, sofern sie unter der Registerkarte** Einstellungen **zulässig sind, je nach Namensraum begrenzt.**
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert wurde. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namensraum-Kategorien. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) und &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert ist. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namensraum-Kategorien. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) und &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
@@ -215,7 +216,7 @@ Under the **Tag field** tab, the tags that can be applied, if allowed under the 
 
 #### Sortiereinstellungen, Registerkarte {#sort-settings-tab}
 
-Geben Sie auf der Registerkarte &quot; **Sortiereinstellungen** &quot;an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
+Geben Sie unter der Registerkarte **Sortiereinstellungen** an, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
 * **Sortierfolge**
 
@@ -227,17 +228,17 @@ Geben Sie auf der Registerkarte &quot; **Sortiereinstellungen** &quot;an, wie di
 
 * **Zeitoptionen für Analytics-Sortierung auswählen**
 
-   Wählen Sie aus einer Dropdown-Liste `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Der Standardwert ist `All`.
+   Ziehen Sie nach unten, um eine von `All, Last 24 Hours, Last 7 Days, Last 30 Days` auszuwählen. Der Standardwert ist `All`.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
 ### Identifizieren von Antworten {#identifying-answers}
 
-Eine Antwort kann mit der `Select Answer` Schaltfläche als richtige oder nützliche Antwort gekennzeichnet werden. Nachdem eine Frage als &quot;Beantwortet&quot;markiert wurde, kann erst eine andere Antwort ausgewählt werden, wenn die erste mit der `Unmark Chosen Answer` Schaltfläche deaktiviert wurde.
+Eine Antwort kann mit der Schaltfläche `Select Answer` als richtige oder nützliche Antwort markiert werden. Nachdem eine Frage als &quot;Beantwortet&quot;markiert wurde, kann erst eine andere Antwort ausgewählt werden, nachdem die erste mit der Schaltfläche `Unmark Chosen Answer` deaktiviert wurde.
 
-Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der `Unmark Chosen Answer` Schaltfläche aufgehoben werden.
+Nach Auswahl als praktikable Antwort kann die Auswahl mithilfe der Schaltfläche `Unmark Chosen Answer` aufgehoben werden.
 
-Sobald eine Antwort als praktikable Antwort ausgewählt wurde, wird auf der Hauptseite der QnA neben dem Fragethema ein Hinweis darauf angezeigt, dass die Frage angezeigt `Answered` wurde.
+Sobald eine Antwort als praktikable Antwort ausgewählt wurde, wird auf der Hauptseite der QnA neben dem Fragethema ein Hinweis darauf angezeigt, dass die Frage `Answered` lautet.
 
 #### Moderatoren und Administratoren {#moderators-and-administrators}
 
@@ -260,7 +261,7 @@ Site-Besucher, die nicht angemeldet sind, können nur gepostete Fragen und Antwo
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information can be found on the [QnA Essentials](/help/communities/qna-essentials.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [QnA Essentials](/help/communities/qna-essentials.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
