@@ -11,11 +11,14 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 8%
 
 ---
 
 
-# Erstellen und Konfigurieren von Anwendungen{#application-create-and-configuration-actions}
+# Anwendungserstellungs- und Konfigurationsaktionen{#application-create-and-configuration-actions}
 
 >[!NOTE]
 >
@@ -23,32 +26,32 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Erstellen einer On-Demand-Anwendung {#creating-an-on-demand-application}
 
-Das Erstellen einer App ist oft der erste Schritt zum Erstellen und Verwalten von AEM Mobile-On-Demand-Inhalten und wird oft auf AEM-Administrator-Ebene ausgeführt. Es stellt eine Content-Shell dar, die auf mobilen Geräten angezeigt werden kann und für die die Anzeige von Inhalten wie Artikeln, Bildern, Sammlungen usw. möglich ist.
+Das Erstellen einer App ist oft der erste Schritt zum Erstellen und Verwalten von AEM Mobile-On-Demand-Inhalten und wird oft auf der Ebene AEM Administrators durchgeführt. Es stellt eine Content-Shell dar, die auf mobilen Geräten angezeigt werden kann und für die die Anzeige von Inhalten wie Artikeln, Bildern, Sammlungen usw. möglich ist.
 
-Die Details Ihrer App können im Dashboard oder im AEM Mobile Control Center angezeigt werden.
+Die Details zu Ihrer App können im Dashboard oder im AEM Mobile Control Center angezeigt werden.
 
 >[!NOTE]
 >
->Das Dashboard ist eine Reihe nützlicher Kacheln, die einen Überblick über den Inhalt der App, die Metadaten und den AEM Mobile On-Demand-Verbindungsstatus geben.
+>Das Dashboard ist eine Reihe nützlicher Kacheln, die einen Überblick über den Inhalt der App, die Metadaten und den AEM Mobile-On-Demand-Verbindungsstatus geben.
 >
->Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
+>Weitere Informationen finden Sie unter [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 **So erstellen Sie eine On-Demand-App:**
 
-1. Wählen Sie in der Seitenleiste &quot; **Mobil** &quot;aus.
+1. Wählen Sie **Mobil** aus der Seitenleiste.
 1. Wählen Sie **Apps** aus der Navigation.
 1. Klicken Sie auf **Erstellen** und wählen Sie **App** aus der Dropdownliste.
 1. Wählen Sie die Vorlage für die mobile App und klicken Sie auf **Weiter**.
-1. Geben Sie App-Eigenschaften wie **Titel**, **Name**, **Beschreibung** ein.
+1. Geben Sie App-Eigenschaften wie **Title**, **Name**, **Beschreibung** ein.
 1. Klicken Sie auf **Weiter**.
-1. Geben Sie, falls bekannt, Cloud-Konfigurationsdetails ein, andernfalls klicken Sie auf **Erstellen**.
-1. Klicken Sie auf **Fertig** , um Ihre neue AEM Mobile-App im Katalog anzuzeigen.
+1. Falls bekannt, geben Sie Cloud-Konfigurationsdetails ein, klicken Sie andernfalls auf **Erstellen**.
+1. Klicken Sie auf **Fertig**, um die neue AEM Mobile-App im Katalog Ansicht.
 
 ![chlimage_1](assets/chlimage_1.gif)
 
 >[!NOTE]
 >
->Mit diesem Prozess können Sie eine App-Instanz in AEM erstellen.
+>Auf diese Weise können Sie eine App-Instanz in AEM erstellen.
 
 ## Verwenden von App-Vorlagen {#using-app-templates}
 
@@ -61,23 +64,23 @@ Sie müssen über eine vorhandene mobile App-Vorlage verfügen (oder eine App mi
 
 ### Der nächste Schritt {#the-next-step}
 
-Nachdem Sie eine On-Demand-App aus dem Anwendungs-Dashboard erstellt haben, müssen Sie die App mit der Cloud-Konfiguration verknüpfen.
+Nachdem Sie eine On-Demand-App aus dem Application Dashboard erstellt haben, müssen Sie die App mit der Cloud-Konfiguration verknüpfen.
 
-Weitere Informationen finden Sie unter [Verknüpfen der App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
+Weitere Informationen finden Sie unter [Verbinden der App mit der Cloud-Konfiguration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md).
 
 ### Vorwärts {#getting-ahead}
 
-Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, finden Sie weitere Informationen unter [Content Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Sobald Sie mit dem Erstellen einer On-Demand-Anwendung und dem Verknüpfen dieser App mit einer Cloud-Konfiguration vertraut sind, lesen Sie [Content-Management-Aktionen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Content Management-Aktionen** umfassen die Erstellung und Verwaltung folgender Inhalte:
+**Content-Management** Actionsinvestitionen erfordert die Erstellung und Verwaltung folgender Inhalte:
 
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
-* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Sammlungen](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Veröffentlichung von Inhalten aufheben](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Informationen zu den Rollen und Verantwortlichkeiten von Administratoren und Entwicklern finden Sie in den nachfolgend aufgeführten Ressourcen:
 
-* [Entwickeln von AEM Content für AEM Mobile-On-Demand-Dienste](/help/mobile/aem-mobile-on-demand.md)
-* [Verwalten von Inhalten für die Verwendung von AEM Mobile-On-Demand-Diensten](/help/mobile/aem-mobile.md)
+* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Verwalten von Inhalten für die Verwendung von AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
