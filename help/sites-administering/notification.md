@@ -30,7 +30,7 @@ AEM sendet E-Mail-Benachrichtigungen an Benutzer, die:
 Voraussetzungen:
 
 * Benutzer müssen über eine in ihrem Profil festgelegte, gültige E-Mail-Adresse verfügen.
-* The **Day CQ Mail Service** needs to be properly configured.
+* Der **Day CQ Mail Service** muss ordnungsgemäß konfiguriert sein.
 
 Wenn ein Benutzer benachrichtigt wird, erhält er eine E-Mail in der Sprache, die in seinem Profil festgelegt ist. Jede Sprache verfügt über eine eigene, anpassbare Vorlage. Für neue Sprachen können neue E-Mail-Vorlagen hinzugefügt werden.
 
@@ -46,7 +46,7 @@ Es gelten die folgenden Beschränkungen:
 
 * Der **SMTP-Server-Anschluss** muss 25 oder höher sein.
 
-* The **SMTP server host name** must not be blank.
+* Der Hostname des **SMTP-Servers** darf nicht leer sein.
 * Die **„Von“-Adresse** darf nicht leer sein.
 
 Zum Debuggen eines Problems mit dem **Day CQ Mail Service** können Sie die Protokolle des Diensts betrachten:
@@ -66,15 +66,15 @@ Fügen Sie zum Konfigurieren der „Von“-E-Mail-Adresse einen `sling:OsgiConfi
 1. Fügen Sie in CRXDE Lite einen Ordner mit dem Namen `config` unter Ihrem Anwendungsordner hinzu.
 1. Fügen Sie im Ordner &quot;config&quot;einen Knoten mit dem Namen:
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ  `sling:OsgiConfig`
 
-1. Add a `String` property to the node named `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
+1. hinzufügen Sie eine `String`-Eigenschaft auf den Knoten `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
 
 1. Klicken Sie auf **Alle speichern**.
 
 Gehen Sie wie folgt vor, um den Knoten in den Inhaltspaketen Ihrer Quellordner festzulegen:
 
-1. Erstellen Sie `jcr_root/apps/*app_name*/config folder`in Ihrer `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. Erstellen Sie in Ihrer `jcr_root/apps/*app_name*/config folder`-Datei eine Datei mit dem Namen `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Fügen Sie die folgende XML für den Knoten hinzu:
 
@@ -83,7 +83,7 @@ Gehen Sie wie folgt vor, um den Knoten in den Inhaltspaketen Ihrer Quellordner f
 
 1. Speichern Sie die Datei.
 
-## Konfigurieren des Workflow-E-Mail-Benachrichtigungsdiensts {#configuring-the-workflow-email-notification-service}
+## Konfigurieren des Workflow-E-Mail-Benachrichtigungsdiensts  {#configuring-the-workflow-email-notification-service}
 
 Wenn Sie Workflow-E-Mail-Benachrichtigungen erhalten, sind beide „Von“-E-Mail-Adressen und das Host-URL-Präfix auf Standardwerte eingestellt. Sie können diese Werte ändern, indem Sie den **Day CQ Workflow Email Notification Service** in der Web-Konsole konfigurieren. Wenn Sie dies tun, wird empfohlen, die Änderung im Repository beizubehalten.
 
@@ -145,7 +145,7 @@ Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Stringvariabl
 * `${userId}`, die ID des Benutzers, der das Ereignis ausgelöst hat.
 * `${modifications}`, beschreibt den Typ des Seiten-Ereignisses und den Seitenpfad im Format:
 
-   &lt;page Ereignistyp> => &lt;page path>
+   &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
 
    Beispiel:
 
@@ -194,7 +194,7 @@ Die Vorlage muss folgendes Format aufweisen:
  footer=<text_4>
 ```
 
-Where `<text_x>` can be a mix of static text and dynamic string variables.
+Dabei kann `<text_x>` eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein.
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Forumsbenachrichtigungen verwendet werden:
 
@@ -229,7 +229,7 @@ View the overview in your ${host.prefix}/aem/inbox\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Anpassen von E-Mail-Vorlagen für die Workflow-Benachrichtigung {#customizing-email-templates-for-workflow-notification}
+#### Anpassen von E-Mail-Vorlagen für die Workflow-Benachrichtigung  {#customizing-email-templates-for-workflow-notification}
 
 Die englische E-Mail-Vorlage für die Benachrichtigung über ein Workflow-Ereignis können Sie wie folgt anpassen:
 
@@ -251,11 +251,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Where `<text_x>` can be a mix of static text and dynamic string variables. Each line of an `<text_x>` item needs to be ended with a backslash ( `\`), except for the last instance, when the absence of the backslash indicates the end of the `<text_x>` string variable.
+>Dabei kann `<text_x>` eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein. Jede Zeile eines Elements `<text_x>` muss mit einem umgekehrten Schrägstrich ( `\`) beendet werden, mit Ausnahme der letzten Instanz, wenn das Fehlen des umgekehrten Schrägstrichs das Ende der Zeichenfolgenvariablen `<text_x>` angibt.
 >
 >Weitere Informationen zum Vorlagenformat werden von der Methode [javadocs der Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)-Methode bereitgestellt.
 
-The method `${payload.path.open}` reveals the path to the payload of the workitem. For example, for a page in Sites then then `payload.path.open` would be similar to `/bin/wcmcommand?cmd=open&path=…`.; this is without the server name, which is why the template prepends this with `${host.prefix}`.
+Die Methode `${payload.path.open}` zeigt den Pfad zur Nutzlast des Arbeitselements an. Beispiel: Für eine Seite in Sites wäre `payload.path.open` ähnlich wie `/bin/wcmcommand?cmd=open&path=…`.; dies ohne den Servernamen ist, weshalb die Vorlage dieser mit `${host.prefix}` voranstellt.
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
@@ -302,7 +302,7 @@ Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
 
 >[!NOTE]
 >
->The `<language-code>` used as the filename for the email template needs to be a two-letters lower-case language code that is recognized by AEM. AEM nutzt die Sprachcodes gemäß ISO-639-1.
+>Der als Dateiname für die E-Mail-Vorlage verwendete `<language-code>` muss ein aus zwei Buchstaben bestehender Sprachcode sein, der von AEM erkannt wird. AEM nutzt die Sprachcodes gemäß ISO-639-1.
 
 ## Konfigurieren von E-Mail-Benachrichtigungen für AEM Assets {#assetsconfig}
 
