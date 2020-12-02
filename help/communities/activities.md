@@ -23,7 +23,7 @@ ht-degree: 25%
 
 ## Einführung {#introduction}
 
-The activities of a signed in community member, such as posting to a forum or blog, are collected into a stream which may be filtered and displayed in various ways through configuration of the `Activity Streams` component.
+Die Aktivitäten eines angemeldeten Community-Mitglieds, wie z.B. das Posten in einem Forum oder Blog, werden in einem Stream gesammelt, der durch die Konfiguration der `Activity Streams`-Komponente gefiltert und angezeigt werden kann.
 
 Diese Verfolgungsmöglichkeit bietet eine zusätzliche Art der Aktivitätenansicht, mit der Community-Mitglieder interessanten Beiträgen oder den Aktivitäten anderer Mitglieder folgen können.
 
@@ -34,21 +34,21 @@ Das Dokument beschreibt:
 
 ### Hinzufügen von Aktivitäts-Streams zu einer Seite {#adding-activity-streams-to-a-page}
 
-If it is desired to add an `Activity Streams` component to a page in author mode, use the component browser to locate
+Wenn Sie eine `Activity Streams`-Komponente zu einer Seite im Autorenmodus hinzufügen möchten, verwenden Sie den Komponenten-Browser, um
 
 * `Communities / Activity Streams`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf einer Seite, auf der Aktivitäts-Streams angezeigt werden sollen.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) einbezogen werden, wird die `Activity Streams`-Komponente wie folgt angezeigt:
 
 ![aktivität-Streams](assets/activity-component.png)
 
 ### Konfigurieren von Aktivitäts-Streams {#configuring-activity-streams}
 
-Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Activity Streams` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -76,17 +76,17 @@ Auf der Registerkarte **Benutzeraktivitäten** können Sie festlegen, welche Akt
 
    Wenn diese Option aktiviert ist, enthält die Seite &quot;Aktivitäten&quot;eine Registerkarte, auf der die Aktivitäten der Filter basieren, die vom aktuellen Member ausgeführt werden. Diese Option ist standardmäßig aktiviert.
 
-### FOLGENDE Ansicht {#following-view}
+### Nach der Ansicht {#following-view}
 
-Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [Blog](/help/communities/blog-feature.md), [Forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [Kalender](/help/communities/calendar.md), [Dateibibliothek](/help/communities/file-library.md)[](/help/communities/comments.md)undKommentare.
+Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Folgende Funktionen sind zulässig: [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [fileLibrary](/help/communities/file-library.md) und [comments](/help/communities/comments.md).
 
 ![after-Ansicht](assets/following-activities.png)
 
-Über die Schaltfläche &quot; **Folgen** &quot;können Sie Einträgen wie Aktivitäten, [Benachrichtigungen](/help/communities/notifications.md)oder [Abonnement](/help/communities/subscriptions.md)folgen. Bei jeder Auswahl der Schaltfläche &quot; **Folgen** &quot;können Sie eine Auswahl ein- oder ausschalten. Die `Email Subscriptions` Auswahl ist nur bei der Konfiguration vorhanden.
+Mit der Schaltfläche **Folgen** können Sie Einsendungen als Aktivitäten, [Benachrichtigungen](/help/communities/notifications.md) oder [Abonnement](/help/communities/subscriptions.md) folgen. Jedes Mal, wenn die Schaltfläche **Folgen** ausgewählt ist, können Sie eine Auswahl ein- oder ausschalten. Die Auswahl `Email Subscriptions` ist nur bei der Konfiguration vorhanden.
 
-Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Folgendem** geändert. Aus praktischen Gründen ist es möglich, alle Methoden `Unfollow All` zu deaktivieren.
+Wenn eine der folgenden Methoden ausgewählt ist, wird der Text der Schaltfläche in **Nach** geändert. Aus praktischen Gründen können Sie `Unfollow All` auswählen, um alle Methoden auszuschalten.
 
-Die Schaltfläche &quot; **Folgen** &quot;wird angezeigt:
+Die Schaltfläche **Folgen** wird angezeigt:
 
 * Beim Anzeigen des Profils eines anderen Mitglieds.
 * Auf einer Hauptseite mit Funktionen wie Foren, QnA und Blogs.
