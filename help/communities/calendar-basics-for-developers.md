@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Essentials des Kalenders {#calendar-essentials}
+# Kalender Essentials {#calendar-essentials}
 
 Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktion.
 
@@ -66,18 +66,18 @@ Diese Seite enthält wichtige Informationen zum Arbeiten mit der Kalenderfunktio
 
 ### Kalenderfunktion {#calendar-function}
 
-Eine Community-Site-Struktur, die die [Kalenderfunktion](functions.md#calendar-function) enthält, verfügt über eine konfigurierte `calendar` Komponente. Die Kalenderfunktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
+Eine Community-Site-Struktur, die die [Kalenderfunktion](functions.md#calendar-function) enthält, verfügt über eine konfigurierte `calendar`-Komponente. Die Kalenderfunktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](users.md#privileged-members-group).
 
 ### Zugriff auf Kalenderbeiträge (UGC) {#accessing-calendar-posts-ugc}
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Richtlinien für die Kodierung
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
+* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP-Dienstprogrammmethoden und Beispiele
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien
+* [SocialUtils Refactoring](socialutils.md)  - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden
 
