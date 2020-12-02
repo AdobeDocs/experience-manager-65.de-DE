@@ -42,16 +42,16 @@ Lesen Sie die entsprechende Anwendungsserverdokumentation, um weitere Informatio
 
 ## Allgemeine Beschreibung {#general-description}
 
-### Default behavior when installing AEM in an Application Server {#default-behaviour-when-installing-aem-in-an-application-server}
+### Standardverhalten bei der Installation von AEM in einem Anwendungsserver {#default-behaviour-when-installing-aem-in-an-application-server}
 
 AEM wird als eine einzelne bereitzustellende WAR-Datei geliefert.
 
 Nach der Bereitstellung erfolgt standardmäßig Folgendes:
 
-* the run mode is `author`
-* die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) installiert ist, `${user.dir}/crx-quickstart`wobei `${user.dir}` der aktuelle Arbeitsordner ist, wird dieser Pfad zu crx-quickstart aufgerufen `sling.home`
+* Der Ausführungsmodus ist `author`
+* die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) unter `${user.dir}/crx-quickstart`installiert ist, wobei `${user.dir}` der aktuelle Arbeitsordner ist, wird dieser Pfad zu crx-quickstart mit `sling.home`
 
-* the context root is the war file name e.g : `aem-6`
+* Der Kontextstamm ist der Name der Kriegsdatei, z. B.: `aem-6`
 
 #### Konfiguration {#configuration}
 
@@ -77,7 +77,7 @@ Um eine Veröffentlichungsinstanz bereitzustellen, müssen Sie den Ausführungsm
 Um zu überprüfen, ob alles installiert ist, haben Sie folgende Möglichkeiten:
 
 * Untersuchen der Datei `error.log`, um anzuzeigen, ob der gesamte Inhalt installiert ist.
-* look in `/system/console` that all bundles are installed
+* Suchen Sie in `/system/console`, dass alle Pakete installiert sind.
 
 #### Zwei Instanzen desselben Anwendungsservers {#two-instances-on-the-same-application-server}
 
@@ -126,17 +126,17 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 * Starten Sie die AEM-Webanwendung.
 
-#### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
+#### JBoss EAP 6.3.0/6.4.0  {#jboss-eap}
 
 Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine Bereitstellung vornehmen.
 
 **JBoss-Servervorbereitung**
 
-Set Memory arguments in your conf file(e.g. `standalone.conf`)
+Legen Sie Speicherargumente in Ihrer conf-Datei fest (z. `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-if you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (e.g `configuration/standalone.xml)`:
+Wenn Sie den Deployment-Scanner zum Installieren der AEM Webanwendung verwenden, kann es sinnvoll sein, das `deployment-timeout,`-Attribut für diesen Satz in der XML-Datei Ihrer Instanz zu erhöhen (z. B. `configuration/standalone.xml)`:`deployment-timeout`
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -158,24 +158,24 @@ Hierbei wird ein einfaches Serverlayout mit nur einem Administratorserver verwen
 
 **WebLogic-Servervorbereitung**
 
-* In `${myDomain}/config/config.xml`add to the security-configuration section:
+* Fügen Sie unter `${myDomain}/config/config.xml`zum Abschnitt &quot;security-configuration&quot;hinzu:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` siehe [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) für die richtige Position (standardmäßig ist es am Ende des Abschnitts OK)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` siehe  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdfür die richtige Position (standardmäßig ist es am Ende des Abschnitts OK)
 
 * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
    * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) search for WLS_MEM_ARGS, set z.B. set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * WebLogic Server neu starten
 
-* Create in `${myDomain}` a packages folder and inside a cq folder and in it a Plan folder
+* Erstellen Sie in `${myDomain}` einen Paketordner und in einem Ordner &quot;cq&quot;und in einem Ordner &quot;Plan&quot;
 
 **Bereitstellung der AEM-Webanwendung**
 
 * Laden Sie die AEM-WAR-Datei herunter.
 * Legen Sie die AEM Kriegsdatei in den Ordner &quot;${myDomain}/packages/cq&quot;ab
-* Make your configurations In `WEB-INF/web.xml` if needed (see above in the General Description)
+* Konfigurationen bei Bedarf in `WEB-INF/web.xml` vornehmen (siehe oben in der allgemeinen Beschreibung)
 
-   * Entpacken `WEB-INF/web.xml`der Datei
+   * Datei entpacken `WEB-INF/web.xml`
    * Parameter sling.run.models für die Veröffentlichung ändern
    * uncomment sling.home initial parameter und legen Sie diesen Pfad wie gewünscht fest (siehe Allgemeine Beschreibung)
    * Datei &quot;web.xml&quot;wiederholen
@@ -183,7 +183,7 @@ Hierbei wird ein einfaches Serverlayout mit nur einem Administratorserver verwen
 * Stellen Sie die AEM-WAR-Datei als eine Anwendung bereit (verwenden Sie für andere Einstellungen die Standardeinstellungen).
 * Die Installation kann einige Zeit dauern.
 * Überprüfen Sie, ob die Installation wie oben unter „Allgemeine Beschreibung“ beschrieben abgeschlossen wurde (beispielsweise durch Untersuchen der Datei „error.log“).
-* You can change the context root in the Configuration tab of the web application in the WebLogic `/console`
+* Sie können den Kontextstamm auf der Registerkarte &quot;Konfiguration&quot;der Webanwendung im WebLogic `/console` ändern
 
 #### Tomcat 8/8.5 {#tomcat}
 
@@ -193,7 +193,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
    * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
-      * In `bin/catalina.bat` (resp `catalina.sh` on unix) add the following setting:
+      * Fügen Sie in `bin/catalina.bat` (resp `catalina.sh` auf Unix) die folgende Einstellung hinzu:
       * `set "JAVA_OPTS= -Xmx2048m`
    * Tomcat ermöglicht weder dem Administrator noch dem Manager bei der Installation den Zugriff. Daher müssen Sie `tomcat-users.xml` manuell bearbeiten, um den Zugriff für diese Konten zuzulassen:
 
