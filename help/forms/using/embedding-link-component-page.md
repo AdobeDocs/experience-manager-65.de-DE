@@ -11,6 +11,9 @@ discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +30,7 @@ Mithilfe der Komponente „Link“ können Forms Portal-Autoren auf einer belieb
 
 Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuzufügen:
 
-1. Ziehen Sie die Komponente **Link** auf die Seite. Select the component and tap ![cmppr](assets/cmppr.png). Das Komponentendialogfeld „Link bearbeiten“ wird geöffnet.
+1. Ziehen Sie die Komponente **Link** auf die Seite. Wählen Sie die Komponente aus und tippen Sie auf ![cmppr](assets/cmppr.png). Das Komponentendialogfeld „Link bearbeiten“ wird geöffnet.
 
    ![edit-link-component](assets/edit-link-component.png)
 
@@ -37,18 +40,18 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
    * **Link Tooltip**: QuickInfo für den Link.
    * **Layout Template**: Vorlage für das Layout der Komponente „Link“.
 
-1. Öffnen Sie die Registerkarte **Asset Info** und geben Sie den Typ des Assets an. An asset can be a **form**. Je nach ausgewähltem Assettyp können die unten aufgeführten Optionen angezeigt werden:
+1. Öffnen Sie die Registerkarte **Asset Info** und geben Sie den Typ des Assets an. Ein Asset kann ein **Formular** sein. Je nach ausgewähltem Assettyp können die unten aufgeführten Optionen angezeigt werden:
 
    * **Asset Path**: Pfad für das Repository, in dem das Asset gespeichert ist.
 
    * **Render Type**: Das Wiedergabeformat – PDF, HTML oder Auto Der Wiedergabetyp „Auto“ erkennt die Benutzerumgebung und gibt das Formular entsprechend im HTML- oder PDF-Format wieder. Wenn das Formular beispielsweise auf einem Mobilgerät aufgerufen wird, gibt der Wiedergabetyp „Auto“ das Formular im HTML-Format wieder.
-   * **** Sende-URL:  URL zum Servlet, an das die Formulardaten gesendet werden.
+   * **Sende-URL:**  URL zu dem Servlet, an das die Formulardaten gesendet werden.
    * **HTML Profile**: Profil für die Wiedergabe des Formulars im HTML-Format.
    * **PDF Profile**: Profil für die Wiedergabe des Formulars als PDF-Dokument.
 
 1. Öffnen Sie die Registerkarte **Erweitert.** Sie können zusätzliche Parameter in Form von Schlüssel-Wert-Paaren angeben. Wenn der Link angeklickt wird, werden diese zusätzlichen Parameter zusammen mit dem Formular übergeben.
 
-   Tap **Done** to save the configuration.
+   Tippen Sie auf **Fertig**, um die Konfiguration zu speichern.
 
 ## Best Practices für die Verwendung der Komponente „Link“{#best-practices-for-using-link-component-br} 
 
