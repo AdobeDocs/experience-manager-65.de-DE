@@ -11,6 +11,9 @@ discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 95%
 
 ---
 
@@ -35,10 +38,10 @@ Beachten Sie bei der einfachen Suche die folgenden Punkte:
 
 * Die Suche wird mithilfe der Formular- und Asset-Metadaten durchgeführt.
 * Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht. 
-* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. For example, when you type `geometrixx`, assets with titles `Geometrixx`, `GEOMETRIXX`, and `GeoMetRixx` are displayed in the search results.
+* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie beispielsweise `geometrixx` eingeben, werden Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` in den Suchergebnissen angezeigt.
 
 * Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Wenn Sie nach unvollständigen Zeichenfolgen suchen möchten, verwenden Sie den Platzhalter (*). Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
-* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Zum Beispiel `My form` ist nicht dieselbe Suchanfrage wie `My form`.
+* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. `My form` ist beispielsweise nicht dieselbe Abfrage wie `My form`.
 
 * Wenn sich die Daten von den Anzeigewerten der Felder in den Metadateneigenschaften abweichen, können Sie Anzeigewerte als Suchparameter nicht verwenden. Beispielsweise können Sie keine Suche auf Basis eines Status, z. B. geändert oder veröffentlicht, durchführen, da diese Eigenschaften in einem anderen Format gespeichert werden.
 
@@ -82,7 +85,7 @@ Sie können beliebig viele Assettypen auswählen. Bei der Suche werden alle ausg
 <table>
  <tbody>
   <tr>
-   <th>Wahl</th> 
+   <th>Option</th> 
    <th>Beschreibung</th> 
   </tr>
   <tr>
@@ -102,7 +105,7 @@ Sie können beliebig viele Assettypen auswählen. Bei der Suche werden alle ausg
    <td>Durchsuchen Sie alle adaptiven Formulare.</td> 
   </tr>
   <tr>
-   <td>Ressource</td> 
+   <td>Resource</td> 
    <td>Durchsuchen Sie alle Ressourcen.<br /> </td> 
   </tr>
  </tbody>
