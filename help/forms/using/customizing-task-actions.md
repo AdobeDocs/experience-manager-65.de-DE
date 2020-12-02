@@ -19,11 +19,11 @@ ht-degree: 59%
 
 # Anpassen von Aufgabenaktionen {#customizing-task-actions}
 
-AEM Forms Workspace ermöglicht dem Benutzer, die Aufgabenaktionen anzupassen. Before customizing the task actions, ensure that you follow the steps listed at [Generic steps for AEM Forms workspace customization](/help/forms/using/generic-steps-html-workspace-customization.md).
+AEM Forms Workspace ermöglicht dem Benutzer, die Aufgabenaktionen anzupassen. Bevor Sie die Aktionen zur Aufgabe anpassen, führen Sie die Schritte unter [Generische Schritte zur Anpassung des AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) durch.
 
 ## Anpassen des Textstils {#customizing-text-style}
 
-To customize the text style, add the following code snippet in the `/apps/ws/css/newStyle.css` file:
+Um den Textstil anzupassen, fügen Sie das folgende Codefragment in die Datei `/apps/ws/css/newStyle.css` ein:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -111,7 +111,7 @@ To customize the text style, add the following code snippet in the `/apps/ws/css
 
 ## Anpassen von Bildern {#customizing-images}
 
-To customize the images, add the following code snippet in the `/apps/ws/css/newStyle.css` file. Das folgende Codefragment passt das Bild für die Aktion *Sperren* an:
+Um die Bilder anzupassen, fügen Sie das folgende Codefragment in die Datei `/apps/ws/css/newStyle.css` ein. Das folgende Codefragment passt das Bild für die Aktion *Sperren* an:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -132,15 +132,15 @@ To customize the images, add the following code snippet in the `/apps/ws/css/new
 }
 ```
 
-## Ausschließliches Anzeigen von Bildern für Aktionen {#showing-only-images-for-actions}
+## Ausschließliches Anzeigen von Bildern für Aktionen  {#showing-only-images-for-actions}
 
-Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-Aktionen verwendet werden. For detailed information, see [Images for Route Actions](/help/forms/using/images-route-actions.md).
+Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-Aktionen verwendet werden. Ausführliche Informationen finden Sie unter [Bilder für Route-Aktionen](/help/forms/using/images-route-actions.md).
 
 ### Aufgabenaktionen-Popupmenü „Aufgabenliste“{#task-list-task-action-nbsp-pop-up-menu}
 
-1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. For detailed information about creating development package, see [Building AEM Forms workspace code.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [Erstellen des AEM Forms Workspace-Codes.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. Copy /libs/ws/js/runtime/templates/task.html to `/apps/ws/js/runtime/templates/task.html`replace the following code snippet:
+1. Kopieren Sie /libs/ws/js/runtime/templates/task.html nach `/apps/ws/js/runtime/templates/task.html`ersetzen Sie das folgende Codefragment:
 
    ```html
    // Orignal code
@@ -213,7 +213,7 @@ Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-A
        </div>
    ```
 
-1. Remove the fixed width assigned to an anchor tag from the `/apps/ws/css/newStyle.css` file:
+1. Entfernen Sie die feste Breite, die einem Anker-Tag zugewiesen ist, aus der Datei `/apps/ws/css/newStyle.css`:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -267,8 +267,8 @@ Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-A
 
 Führen Sie die folgenden Schritte aus, um das Aufgabenaktionen-Popupmenü „Aufgabendetails“ anzupassen:
 
-* Copy the /libs/ws/js/runtime/templates/taskdetails.html file to the `/apps/ws/js/runtime/templates/` folder:
-* Kapseln Sie das Symbol-Tag innerhalb des Anker-Tags anstelle von Text. For example, the *new code* listed below encapsulates the icon tag inside the anchor tag:
+* Kopieren Sie die Datei /libs/ws/js/runtime/templates/taskdetails.html in den Ordner `/apps/ws/js/runtime/templates/`:
+* Kapseln Sie das Symbol-Tag innerhalb des Anker-Tags anstelle von Text. Beispielsweise kapselt der unten aufgeführte *neue Code* das Symbol-Tag innerhalb des Anker-Tags:
 
 ```html
 // Original code
@@ -360,5 +360,5 @@ Führen Sie die folgenden Schritte aus, um das Aufgabenaktionen-Popupmenü „Au
 ```
 
 * Öffnen Sie die Datei /apps/ws/js/registry.js für die Bearbeitung.
-* Suchen Sie folgenden Text: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
-* Replace the located text with the following text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
+* Suchen Sie folgenden Text:  `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Ersetzen Sie den lokalisierten Text durch den folgenden Text: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
