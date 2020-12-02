@@ -44,7 +44,7 @@ Weitere Informationen zur Optimierung der Auftragsverteilung finden Sie unter [K
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-Wenn das Offloading-Framework einen Cluster zur Ausführung eines Auftrags auswählt und der Cluster aus mehreren Instanzen besteht, bestimmt die Sling-Verteilung, welche Instanz im Cluster den Auftrag ausführt.
+Wenn das Offloading-Framework einen Cluster auswählt, um einen Auftrag auszuführen, und der Cluster aus mehreren Instanzen besteht, bestimmt die Sling-Verteilung, welche Instanz im Cluster den Auftrag ausführt.
 
 ### Auftrags-Payloads {#job-payloads}
 
@@ -67,7 +67,7 @@ Der Discovery-Dienst aller Topologiemitglieder verweist auf den Topologie-Connec
 
 Jeder Cluster in der Topologie enthält eine Instanz, die als Leader erkannt wird. Der Cluster-Leader interagiert für die anderen Cluster-Mitglieder mit der Topologie. Wenn der Leader den Cluster verlässt, wird automatisch ein neuer Leader ausgewählt.
 
-### Anzeigen der Topologie {#viewing-the-topology}
+### Anzeigen der Topologie  {#viewing-the-topology}
 
 Mit dem Topologie-Browser können Sie den Status der Topologie überprüfen, zu der die Experience Manager-Instanz gehört. Der Topologie-Browser zeigt die Cluster und Instanzen der Topologie.
 
@@ -75,7 +75,7 @@ Für jeden Cluster sehen Sie eine Liste von Clustermitgliedern, die die Reihenfo
 
 Für jede Instanz des Clusters werden verschiedene topologiebezogene Eigenschaften angezeigt:
 
-* Eine zulassungsliste von Themen für den Jobkonsumenten der Instanz.
+* Eine Zulassungsliste von Themen für den Jobkonsumenten der Instanz.
 * Die Endpunkte, die für die Verbindung mit der Topologie verfügbar gemacht werden
 * Die Auftragsthemen, für die die Instanz für die Abladung registriert ist
 * Die von der Instanz verarbeiteten Auftragsthemen
@@ -108,7 +108,7 @@ Gehen Sie wie folgt vor, um die Seite „Topology Management“ der Web-Konsole 
 
 Der ressourcenbasierte Apache Sling-Discovery-Dienst wird auf jeder Instanz ausgeführt und steuert, wie Experience Manager-Instanzen mit einer Topologie interagieren.
 
-Der Discovery-Dienst sendet regelmäßig POST-Anforderungen (Heartbeats) an Topologie-Connector-Dienste, um Verbindungen mit der Topologie herzustellen und aufrechtzuerhalten. Der Topology Connector-Dienst verwaltet eine zulassungsliste mit IP-Adressen oder Hostnamen, die der Topologie beitreten dürfen:
+Der Discovery-Dienst sendet regelmäßig POST-Anforderungen (Heartbeats) an Topologie-Connector-Dienste, um Verbindungen mit der Topologie herzustellen und aufrechtzuerhalten. Der Topology Connector-Dienst verwaltet eine Zulassungsliste von IP-Adressen oder Hostnamen, die der Topologie beitreten dürfen:
 
 * Um eine Instanz zum Topologie-Mitglied zu machen, geben Sie die URL für den Topologie-Connector-Dienst des Stamm-Mitglieds an.
 * Um einer Instanz zu ermöglichen, Topologie-Mitglied zu werden, fügen Sie die Instanz der Zulassungsliste für den Topologie-Connector-Dienst des Stammmitglieds hinzu.
@@ -148,7 +148,7 @@ Verwenden Sie die Web-Konsole oder einen „slign:OsgiConfig“-Knoten, um die f
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>Topology Connector-zulassungsliste</td>
+   <td>Topology Connector-Zulassungsliste</td>
    <td>topologyConnectorWhitelist</td>
    <td>Die Liste von IP-Adressen oder Host-Namen, die der lokale Topologie-Connector-Dienst in der Topologie zulässt. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
@@ -174,7 +174,7 @@ Führen Sie die folgenden Schritte für das Stamm-Mitglied der Topologie aus. Da
 1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf „Main“ > „Topology Management“.
 1. Klicken Sie auf „Configure Discovery Service“.
-1. Fügen Sie für jedes Mitglied der Topologie der Topology Connector-zulassungsliste-Eigenschaft ein Element hinzu und geben Sie den Hostnamen oder die IP-Adresse des Topologieelements an.
+1. Fügen Sie für jedes Mitglied der Topologie der Eigenschaft Topology Connector-Zulassungsliste ein Element hinzu und geben Sie den Hostnamen oder die IP-Adresse des Topologieelements an.
 
 ## Konfigurieren der Themenverarbeitung {#configuring-topic-consumption}
 
@@ -200,9 +200,10 @@ Aufträge werden auf Instanzen verteilt, bei denen das zugehörige Thema mithilf
    * Aktiviert: Diese Instanz verarbeitet Aufträge für dieses Thema.
    * Deaktiviert: Diese Instanz verarbeitet keine Aufträge für dieses Thema.
    * Exklusiv: Diese Instanz verarbeitet nur Aufträge für dieses Thema.
+
    **Hinweis:** Wenn Sie die Option „Exklusiv“ für ein Thema auswählen, werden alle anderen Themen automatisch auf „Deaktiviert“ gesetzt.
 
-### Installierte JobConsumer-Dienste {#installed-job-consumers}
+### Installierte JobConsumer-Dienste  {#installed-job-consumers}
 
 Die Installation von Experience Manager umfasst mehrere implementierte JobConsumer-Dienste. Die Themen, für die diese JobConsumer-Dienste registriert sind, werden in der Browser-Abladung angezeigt. Bei den weiteren angezeigten Themen handelt es sich um von benutzerdefinierten JobConsumer-Diensten registrierte Themen. Die nachfolgende Tabelle beschreibt die Standard-JobConsumer-Dienste.
 
@@ -221,14 +222,14 @@ Der Dienst „Apache Sling Job Consumer Manager“ stellt Eigenschaften für The
 
 **Hinweis:** Wenn die Instanz zu einer Topologie gehört, können Sie den Offload-Browser auch auf einem beliebigen Computer in der Topologie verwenden, um Themen zu aktivieren oder zu deaktivieren.
 
-Die Logik, die die Liste der aktivierten Themen erstellt, erlaubt zunächst alle Themen, die sich auf der Zulassungsliste befinden, und entfernt dann Themen, die sich auf der Blockierungsliste befinden. By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
+Die Logik, die die Liste der aktivierten Themen erstellt, erlaubt zunächst alle Themen, die sich auf der Zulassungsliste befinden, und entfernt dann Themen, die sich auf der Blockierungsliste befinden. Standardmäßig sind alle Themen aktiviert (der Wert für die Zulassungsliste ist `*`) und keine Themen sind deaktiviert (die Blockierungsliste hat keinen Wert).
 
 Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folgenden Eigenschaften zu konfigurieren. Für `sling:OsgiConfig`-Knoten lautet die PID des JobConsumerManager-Dienstes „org.apache.sling.event.impl.jobs.JobConsumerManager“.
 
 | Eigenschaftsname in der Web-Konsole | OSGi-ID | Beschreibung |
 |---|---|---|
-| zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die vom lokalen JobManager-Dienst verarbeitet werden. Der Standardwert von &amp;ast; bewirkt, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
-| blockierungsliste | job.consumermanager.blacklist | Eine Liste der Themen, die nicht vom JobManager-Dienst verarbeitet werden. |
+| Zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die vom lokalen JobManager-Dienst verarbeitet werden. Der Standardwert von &amp;ast; bewirkt, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
+| Blockierungsliste | job.consumermanager.blacklist | Eine Liste der Themen, die nicht vom JobManager-Dienst verarbeitet werden. |
 
 ## Erstellen von Replikationsagenten für die Abladung {#creating-replication-agents-for-offloading}
 
@@ -256,17 +257,17 @@ Dieses Replikationsschema gleicht dem für Autoren- und Veröffentlichungsinstan
 
 ### Benennen der Replikationsagenten für die Abladung {#naming-the-replication-agents-for-offloading}
 
-Use a specific format for the ***Name*** property of the replication agents so that the offloading framework automatically uses the correct agent for specific worker instances.
+Verwenden Sie ein bestimmtes Format für die Eigenschaft ***Name*** der Replizierungsagenten, damit das Ablade-Framework automatisch den richtigen Agenten für bestimmte Workerinstanzen verwendet.
 
 **Benennung des ausgehenden Agenten auf der Autoreninstanz:**
 
-`offloading_<slingid>`, wobei `<slingid>` die Sling-ID der Worker-Instanz steht.
+`offloading_<slingid>`, wobei  `<slingid>` die Sling-ID der Worker-Instanz steht.
 
 Beispiel: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Benennung des Rückwärtsagenten auf der Autoreninstanz:**
 
-`offloading_reverse_<slingid>`, wobei `<slingid>` die Sling-ID der Worker-Instanz steht.
+`offloading_reverse_<slingid>`, wobei  `<slingid>` die Sling-ID der Worker-Instanz steht.
 
 Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -276,7 +277,7 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des ausgehenden Agenten {#creating-the-outgoing-agent}
 
-1. Erstellen Sie einen **Replikationsagenten** auf der Autoreninstanz. (See the [documentation for replication agents](/help/sites-deploying/replication.md)). Geben Sie einen beliebigen **Titel an**. The **Name** must follow the naming convention.
+1. Erstellen Sie einen **Replikationsagenten** auf der Autoreninstanz. (Siehe die [Dokumentation für Replizierungsagenten](/help/sites-deploying/replication.md)). Geben Sie einen beliebigen **Titel an**. **Name** muss der Benennungsregel entsprechen.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften:
 
    | Eigenschaft | Wert |
@@ -290,12 +291,12 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des Rückwärtsagenten {#creating-the-reverse-agent}
 
-1. Create a **Reverse Replication Agent** on author. (See the [documentation for replication agents](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. The **Name** must follow the naming convention.
+1. Erstellen Sie einen **Agenten für Rückwärtsreplikation** beim Autor. (Siehe die [Dokumentation für Replizierungsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. **Name** muss der Benennungsregel entsprechen.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften:
 
    | Eigenschaft | Wert |
    |---|---|
-   | Einstellungen > Serialisierungstyp | Default |
+   | Einstellungen > Serialisierungstyp | Standard |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transport > Transportbenutzer | Replizierungsbenutzer auf Zielgruppe-Instanz |
    | Transport > Transportkennwort | Replizieren des Benutzerkennworts auf der Zielgruppe |
@@ -303,20 +304,20 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Erstellen des Postausgangs-Agenten {#creating-the-outbox-agent}
 
-1. Create a **Replication Agent** on the worker instance. (See the [documentation for replication agents](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. The **Name** must be `offloading_outbox`.
+1. Erstellen Sie einen **Replizierungsagenten** auf der Worker-Instanz. (Siehe die [Dokumentation für Replizierungsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. **Name** muss `offloading_outbox` sein.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften.
 
    | Eigenschaft | Wert |
    |---|---|
-   | Einstellungen > Serialisierungstyp | Default |
+   | Einstellungen > Serialisierungstyp | Standard |
    | Transport > Transport-URI | repo://var/replication/outbox |
-   | Auslöser > Standard ignorieren | True |
+   | Auslöser > Standard ignorieren | true |
 
 ### Suche nach der Sling-ID {#finding-the-sling-id}
 
 Sie können die Sling-ID einer Experience Manager-Instanz mit einer der beiden folgenden Methoden abrufen:
 
-* Open the Web Console and, in the Sling Settings, find the value of the Sling ID property ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Diese Methode ist nützlich, wenn die Instanz noch nicht Teil der Topologie ist.
+* Öffnen Sie die Web-Konsole und suchen Sie in den Sling-Einstellungen den Wert der Sling-ID-Eigenschaft ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Diese Methode ist nützlich, wenn die Instanz noch nicht Teil der Topologie ist.
 * Ist sie bereits Teil der Topologie, verwenden Sie den Topologie-Browser.
 
 <!--
@@ -355,4 +356,4 @@ The following procedure assumes the following characteristics for the offloading
 
 Neben den auf dieser Seite bereitgestellten, detaillierten Informationen können Sie auch folgende Abschnitte lesen:
 
-* For information about using Java APIs to create jobs and job consumers, see [Creating and Consuming Jobs for Offloading](/help/sites-developing/dev-offloading.md).
+* Weitere Informationen zur Verwendung von Java-APIs zum Erstellen von Aufträgen und zum Erstellen von Auftraggebern finden Sie unter [Erstellen und Verarbeiten von Aufträgen für das Verladen](/help/sites-developing/dev-offloading.md).
