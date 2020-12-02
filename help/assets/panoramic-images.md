@@ -46,7 +46,7 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 1. [Melden Sie sich bei Ihrer Dynamic Media Classic (scene7)-Instanz an, ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) und zwar bei jedem Unternehmenskonto.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server.]**
-1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving.]**
+1. Wählen Sie auf der Seite &quot;Veröffentlichung des Image-Servers&quot;im Dropdown-Menü **[!UICONTROL Veröffentlichungskontext]** oben **[!UICONTROL Image-Server.]**
 
 1. Suchen Sie auf derselben Image-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute.]**
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes.]** Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
@@ -59,10 +59,10 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
 
 1. Gehen Sie unter der Überschrift „Anfrage-Attribute“ wie folgt vor:
 
-   * Set Request Obfuscation Mode to **[!UICONTROL Disabled.]**
-   * Set Request Locking Mode to **[!UICONTROL Disabled.]**
+   * Stellen Sie den Verschleierungsmodus der Anforderung auf **[!UICONTROL Deaktiviert ein.]**
+   * Stellen Sie den Anforderungssperrmodus auf **[!UICONTROL Deaktiviert ein.]**
 
-   These settings are necessary for using the `Panoramic Media` WCM component in AEM.
+   Diese Einstellungen sind für die Verwendung der WCM-Komponente `Panoramic Media` in AEM erforderlich.
 
 1. Klicken Sie unten links auf der Image-Server-Veröffentlichungsseite auf **[!UICONTROL Speichern.]**
 
@@ -82,6 +82,6 @@ Wenn Sie ein Bild in der Panoramamedienkomponente in WCM abgelegt haben und der 
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](/help/assets/previewing-assets.md).
 
-## Veröffentlichen von Panoramabildern   {#publishing-panoramic-images}
+## Veröffentlichen von Panoramabildern    {#publishing-panoramic-images}
 
 Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
