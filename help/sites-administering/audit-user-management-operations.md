@@ -12,6 +12,9 @@ discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +37,7 @@ Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um di
 
 Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müssen Sie eine neue **Apache Sling Logging Logger**-Konfiguration erstellen. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
 
-1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
+1. Gehen Sie zur Web-Konsole, indem Sie *https://serveraddress:serverport/system/console/configMgr*
 1. Suchen Sie nach **Apache Sling Logging Logger Configuration**. Klicken Sie dann auf das Pluszeichen (+) auf der rechten Seite des Eintrags, um eine neue Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
@@ -42,6 +45,7 @@ Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müss
    * **Protokolldatei:** logs/useraudit.log
    * **Nachrichtenmuster:** Standardwert beibehalten
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    Um beide Logger in das Feld **Logger** einzugeben, müssen Sie den Namen des ersten Loggers eingeben und dann ein weiteres Feld erstellen. Klicken Sie dazu die Schaltfläche „+“. Nun können Sie den Namen des zweiten Loggers eingeben.
 
 ## Beispielausgabe {#example-output}
