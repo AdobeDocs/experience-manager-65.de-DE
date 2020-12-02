@@ -24,13 +24,13 @@ Durch die Minimierung werden die redundanten Zeichen im Quellcode, wie Leerzeich
 
 Um minimierten Code für semantische Änderungen zu generieren, führen Sie folgende Schritte aus.
 
-1. Copy `client-html/src/main/webapp/js` from src-package on filesystem.
+1. Kopieren Sie `client-html/src/main/webapp/js` aus src-package auf dem Dateisystem.
 
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter [Einführung zum Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) finden Sie weitere Informationen über die Pakete.
 
-1. Update paths in `main.js` located under client-html/src/main/webapp/js, for added/updated models/views.
+1. Aktualisieren Sie Pfade in `main.js` unter client-html/src/main/webapp/js für hinzugefügte/aktualisierte Modelle/Ansichten.
 
    Ändern Sie zum Beispiel nach Hinzufügen eines neuen Sharequeue-Modells mySharequeue:
 
@@ -44,7 +44,7 @@ Um minimierten Code für semantische Änderungen zu generieren, führen Sie folg
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Aktualisieren `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` bei Änderung/Hinzufügen eines Alias in `main.js`.
+1. Aktualisieren Sie `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,`, falls ein Alias in `main.js` geändert/hinzugefügt wird.
 
    Ändern Sie zum Beispiel nach Hinzufügen eines neuen Sharequeue-Modells mySharequeue:
 
@@ -55,7 +55,7 @@ Um minimierten Code für semantische Änderungen zu generieren, führen Sie folg
                service="service"/>
    ```
 
-   To
+   nach
 
    ```xml
    <sharequeue
