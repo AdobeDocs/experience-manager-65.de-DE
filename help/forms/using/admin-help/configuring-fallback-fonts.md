@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 translation-type: tm+mt
 source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 72%
 
 ---
 
@@ -23,12 +26,12 @@ Sie können die Datei „FontManagerResources.properties“ zum Zuordnen der AEM
 >
 >Die Konfiguration der Ersatzschriftarten gilt auch für den Assembler-Dienst.
 
-1. Navigate to the adobe-livecycle-*`[appserver]`*.ear file in the *`[aem-forms root]`*/configurationManager/export directory, make a backup copy, and unpackage the original.
+1. Navigieren Sie zur Datei &quot;adobe-livecycle-*`[appserver]`*.ear&quot;im Ordner &quot;*`[aem-forms root]`*/configurationManager/export&quot;, erstellen Sie eine Sicherungskopie und dekomprimieren Sie das Original.
 1. Suchen Sie die Datei „adobe-fontmanager.jar“ und dekomprimieren Sie sie.
 1. Suchen Sie die Datei „FontManagerResources.properties“ und öffnen Sie sie in einem Texteditor.
 1. Ändern Sie die Speicherorte und Namen der Standard- und Ersatzschriftarten den Anforderungen entsprechend und speichern Sie die Datei.
 
-   The font entries in the FontManagerResources.properties file are relative to the *`[aem-forms root]`*/fonts directory. Wenn Sie Schriftarten angeben, die keine AEM Forms-Standardschriftarten sind, müssen Sie diese in dieser Ordnerstruktur installieren (entweder in einem vorhandenen oder einem neu erstelltem Ordner).
+   Die Schriftarteinträge in der Datei &quot;FontManagerResources.properties&quot;beziehen sich auf den Ordner &quot;*`[aem-forms root]`*/fonts&quot;. Wenn Sie Schriftarten angeben, die keine AEM Forms-Standardschriftarten sind, müssen Sie diese in dieser Ordnerstruktur installieren (entweder in einem vorhandenen oder einem neu erstelltem Ordner).
 
    >[!NOTE]
    >
@@ -39,9 +42,9 @@ Sie können die Datei „FontManagerResources.properties“ zum Zuordnen der AEM
    * Allgemeine Schriftart, die gemäß der in der Tabelle mit den Ersatzschriftarten festgelegten Reihenfolge gesucht wird
 
 1. Komprimieren Sie die Datei „adobe-fontmanager.jar“ neu.
-1. Repackage the adobe-livecycle-*`[appserver]`*.ear file and then redeploy it either manually or by running Configuration Manager.
+1. Komprimieren Sie die Datei &quot;adobe-livecycle-*`[appserver]`*.ear&quot;neu und stellen Sie sie dann manuell oder unter Ausführung von Configuration Manager erneut bereit.
 
 >[!NOTE]
 >
->Do not use Configuration Manager to repackage the adobe-livecycle-`[appserver]`.ear file because it will overwrite your modifications with the AEM forms default values.
+>Verwenden Sie Configuration Manager nicht, um die Datei &quot;adobe-livecycle-`[appserver]`.ear&quot;neu zu verpacken, da dadurch Ihre Änderungen mit den Standardwerten für AEM Formulare überschrieben werden.
 
