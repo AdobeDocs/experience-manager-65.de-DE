@@ -12,6 +12,9 @@ discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '4965'
+ht-degree: 59%
 
 ---
 
@@ -30,7 +33,7 @@ Adobe Experience Manager (AEM) verwendet die [ExtJS](https://www.sencha.com/)-Wi
 
 Diese Widgets sind in AEM enthalten und können nicht nur von AEM, sondern auch von jeder mit AEM erstellten Website verwendet werden.
 
-Eine vollständige Übersicht aller verfügbaren Widgets in AEM finden Sie in der [Widget-API-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html) oder der [Liste der bestehenden X-Typen](/help/sites-developing/xtypes.md). Darüber hinaus zeigen zahlreiche Beispiele auf der Website von [Sencha](https://www.sencha.com/products/extjs/examples/), dem Eigentümer des Frameworks, wie das ExtJS-Framework zu verwenden ist.
+Eine vollständige Übersicht aller verfügbaren Widgets in AEM finden Sie in der [Widget-API-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html) oder der [Liste der bestehenden X-Typen](/help/sites-developing/xtypes.md). Darüber hinaus zeigen zahlreiche Beispiele auf der Website von [Sencha](https://www.sencha.com/products/extjs/examples/), dem Eigentümer des Frameworks, wie das ExtJS-Framework zu verwenden ist.
 
 Auf dieser Seite erhalten Sie einige Einblicke in die Verwendung und Erweiterung von Widgets. Zuerst wird beschrieben, wie [clientseitiger Code in eine Seite eingefügt wird](#including-the-client-sided-code-in-a-page). Dann werden einige Beispielkomponenten beschrieben, die erstellt wurden, um einige grundlegende Anwendungs- und Erweiterungsfälle zu illustrieren. Diese Komponenten stehen als das Paket **Using ExtJS Widgets** auf **Package Share** zur Verfügung.
 
@@ -52,21 +55,22 @@ Clientseitiger JavaScript- und Stylesheet-Code sollte in einer Client-Bibliothek
 
 Erstellen Sie eine Client-Bibliothek wie folgt:
 
-1. Create a node below `/apps/<project>` with the following properties:
+1. Erstellen Sie einen Knoten unter `/apps/<project>` mit den folgenden Eigenschaften:
 
    * name=&quot;clientlib&quot;
    * jcr:mixinTypes=&quot;[mix:lockable]&quot;
    * jcr:primaryType=&quot;cq:ClientLibraryFolder&quot;
    * sling:resourceType=&quot;widgets/clientlib&quot;
-   * categories=&quot;[&lt;category-name>]&quot;
-   * dependencies=&quot;[cq.widgets]&quot;
+   * kategorien=&quot;[&lt;Kategorie-Name>]&quot;
+   * depencies=&quot;[cq.widgets]&quot;
+
    `Note: <category-name> is the name of the custom library (e.g. "cq.extjstraining") and is used to include the library on the page.`
 
-1. Below `clientlib` create the `css` and `js` folders (nt:folder).
+1. Erstellen Sie unter `clientlib` die Ordner `css` und `js` (nt:folder).
 
-1. Below `clientlib` create the `css.txt` and `js.txt` files (nt:files). Diese TXT-Dateien listen die Dateien auf, die in der Bibliothek enthalten sind.
+1. Erstellen Sie unter `clientlib` die Dateien `css.txt` und `js.txt` (nt:files). Diese TXT-Dateien listen die Dateien auf, die in der Bibliothek enthalten sind.
 
-1. Edit `js.txt`: it needs to start with &#39; `#base=js`&#39; followed by the list of the files that will be aggregated by the CQ client library service, eg:
+1. `js.txt` bearbeiten: Es muss mit &quot;`#base=js`&quot;gefolgt von der Liste der Dateien, die vom CQ-Client-Bibliotheksdienst aggregiert werden, wie z. B.:
 
    ```
    #base=js
@@ -77,7 +81,7 @@ Erstellen Sie eine Client-Bibliothek wie folgt:
     InsertTextPlugin.js
    ```
 
-1. Edit `css.txt`: it needs to start with &#39; `#base=css`&#39; followed by the list of the files that will be aggregated by the CQ client library service, eg:
+1. `css.txt` bearbeiten: Es muss mit &quot;`#base=css`&quot;gefolgt von der Liste der Dateien, die vom CQ-Client-Bibliotheksdienst aggregiert werden, wie z. B.:
 
    ```
    #base=css
@@ -86,7 +90,7 @@ Erstellen Sie eine Client-Bibliothek wie folgt:
 
 1. Platzieren Sie die JavaScript-Dateien, die der Bibliothek angehören, unterhalb des Ordners `js`.
 
-1. Below the `css` folder, place the `.css` files and the resources used by the css files (e.g. `my_icon.png`).
+1. Platzieren Sie unter dem Ordner `css` die `.css`-Dateien und die von den CSS-Dateien verwendeten Ressourcen (z. B. `my_icon.png`).
 
 >[!NOTE]
 >
@@ -96,7 +100,8 @@ Fügen Sie die Client-Bibliothek wie folgt in die Seitenkomponenten-JSP ein:
 
 * um sowohl JavaScript-Code als auch Stylesheets einzuschließen:
    `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
-wobei `<category-nameX>` der Name der clientseitigen Bibliothek steht.
+wohin gehört 
+`<category-nameX>` ist der Name der clientseitigen Bibliothek.
 
 * nur JavaScript-Code einschließen:
    `<ui:includeClientLib js="<category-name>"/>`
@@ -113,19 +118,19 @@ In manchen Fällen darf eine Client-Bibliothek nur im Autorenmodus verfügbar se
 
 ### Erste Schritte mit den Beispielen {#getting-started-with-the-samples}
 
-To follow the tutorials on this page, install the package called **Using ExtJS Widgets** in a local AEM instance and create a sample page in which the components will be included. Gehen Sie dazu wie folgt vor:
+Um den Übungen auf dieser Seite zu folgen, installieren Sie das Paket **Verwenden von ExtJS Widgets** in einer lokalen AEM-Instanz und erstellen Sie eine Beispielseite, auf der die Komponenten enthalten sein werden. Gehen Sie dazu wie folgt vor:
 
-1. In your AEM instance download the package called **Using ExtJS Widgets (v01)** from Package Share and install the package. It creates the project `extjstraining` below `/apps` in the repository.
-1. Include the client library containing the scripts (js) and the stylesheet (css) in the head tag of the geometrixx page jsp, as you will include the sample components in a new page of the **Geometrixx** branch:
-in **CRXDE Lite** open the file `/apps/geometrixx/components/page/headlibs.jsp` and add the `cq.extjstraining` category to the existing `<ui:includeClientLib>` tag as follows:
+1. Laden Sie in Ihrer AEM das Paket mit dem Namen **Verwenden von ExtJS Widgets (v01)** von Package Share herunter und installieren Sie das Paket. Es wird das Projekt `extjstraining` unter `/apps` im Repository erstellt.
+1. Schließen Sie die Client-Bibliothek mit den Skripten (js) und dem Stylesheet (css) im head-Tag der geometrixx page jsp ein, da Sie die Beispielkomponenten in eine neue Seite der Verzweigung **Geometrixx** einschließen:
+Öffnen Sie in **CRXDE Lite** die Datei `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die `cq.extjstraining`-Kategorie wie folgt zum vorhandenen `<ui:includeClientLib>`-Tag hinzu:
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
-1. Create a new page in the **Geometrixx** branch below `/content/geometrixx/en/products` and call it **Using ExtJS Widgets**.
+1. Erstellen Sie eine neue Seite in der Verzweigung **Geometrixx** unter `/content/geometrixx/en/products` und rufen Sie sie **Verwenden von ExtJS Widgets** auf.
 1. Wechseln Sie in den Designmodus und fügen Sie alle Komponenten der Gruppe **Using ExtJS Widgets** dem Design von Geometrixx hinzu.
-1. Go back in edit mode: the components of the group **Using ExtJS Widgets** are available in the Sidekick.
+1. Zurück im Bearbeitungsmodus: Die Komponenten der Gruppe **Verwenden von ExtJS Widgets** sind im Sidekick verfügbar.
 
 >[!NOTE]
 >
->Die Beispiele auf dieser Seite basieren auf dem Geometrixx-Beispielinhalt, der nicht mehr im Lieferumfang von AEM enthalten ist, da er durch We.Retail ersetzt wurde. See the document [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx) for how to download and install Geometrixx.
+>Die Beispiele auf dieser Seite basieren auf dem Geometrixx-Beispielinhalt, der nicht mehr im Lieferumfang von AEM enthalten ist, da er durch We.Retail ersetzt wurde. Informationen zum Herunterladen und Installieren von Geometrixx finden Sie im Dokument [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx).
 
 ### Grundlegende Dialogfelder {#basic-dialogs}
 
@@ -133,7 +138,7 @@ Dialogfelder werden in der Regel verwendet, um Inhalte zu bearbeiten, aber auch 
 
 `https://localhost:4502/<path-to-dialog>.-1.json`
 
-Die erste Komponente der Gruppe **Using ExtJS Widgets** im Sidekick wird mit **1. Dialog Basics** bezeichnet und umfasst vier grundlegende Dialogfelder, die mit standardmäßigen Widgets und ohne modifizierte JavaScript-Logik erstellt wurden. The dialogs are stored below `/apps/extjstraining/components/dialogbasics`. Die grundlegenden Dialogfelder sind:
+Die erste Komponente der Gruppe **Using ExtJS Widgets** im Sidekick wird mit **1. Dialog Basics** bezeichnet und umfasst vier grundlegende Dialogfelder, die mit standardmäßigen Widgets und ohne modifizierte JavaScript-Logik erstellt wurden. Die Dialogfelder werden unterhalb von `/apps/extjstraining/components/dialogbasics` gespeichert. Die grundlegenden Dialogfelder sind:
 
 * das Dialogfeld „“ (Knoten `full`full): Es zeigt ein Fenster mit drei Registerkarten mit jeweils zwei Textfeldern an.
 * das Dialogfeld „Single Panel“ (Knoten `singlepanel`): Es zeigt ein Fenster mit einer Registerkarte mit zwei Textfeldern an.
@@ -142,7 +147,7 @@ Die erste Komponente der Gruppe **Using ExtJS Widgets** im Sidekick wird mit **1
 
 Fügen Sie die Komponente **1. Dialog Basics** der Beispielseite hinzu:
 
-1. Add the **1. Dialog Basics** component to the sample page from the **Using ExtJS Widgets** tab in the **Sidekick**.
+1. hinzufügen Sie **1. Dialogfeldgrundlagen** auf der Beispielseite von der Registerkarte **Verwenden von ExtJS Widgets** im Register **Sidekick**.
 1. Die Komponente zeigt einen Titel, etwas Text und einen Link **EIGENSCHAFTEN**: Klicken Sie auf den Link, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut auf den Link, um die Eigenschaften zu verbergen.
 
 Die Komponente wird wie im Folgenden dargestellt:
@@ -153,9 +158,9 @@ Die Komponente wird wie im Folgenden dargestellt:
 
 Das Dialogfeld **Full** zeigt ein Fenster mit drei Registerkarten mit jeweils zwei Textfeldern. Es ist das Standarddialogfeld der Komponente **Dialog Basics**. Die Eigenschaften sind:
 
-* Is defined by a node: node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`.
-* Displays 3 tabs (node type = `cq:Panel`).
-* Each tab has 2 textfields (node type = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
+* Wird durch einen Knoten definiert: node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`.
+* Zeigt 3 Registerkarten an (Knotentyp = `cq:Panel`).
+* Jede Registerkarte hat 2 Textfelder (Knotentyp = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
 * Wird durch den Knoten definiert:
    `/apps/extjstraining/components/dialogbasics/full`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
@@ -169,8 +174,8 @@ Das Dialogfeld wird wie im Folgenden dargestellt:
 
 Das Dialogfeld **Single Panel** zeigt ein Fenster mit einer Registerkarte und zwei Textfeldern an. Die Eigenschaften sind:
 
-* Displays 1 tab (node type = `cq:Dialog`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`)
-* The tab has 2 textfields (node type = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`)
+* Zeigt 1 Registerkarte an (Knotentyp = `cq:Dialog`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`)
+* Die Registerkarte hat 2 Textfelder (Knotentyp = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`)
 * Wird durch den Knoten definiert:
    `/apps/extjstraining/components/dialogbasics/singlepanel`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
@@ -181,11 +186,11 @@ Das Dialogfeld **Single Panel** zeigt ein Fenster mit einer Registerkarte und zw
 So verwenden Sie das Dialogfeld „Single Panel“:
 
 1. Ersetzen Sie das Dialogfeld der Komponente **Dialog Basics** durch das Dialogfeld **Single Panel**:
-   1. In **CRXDE Lite**, delete the node: `/apps/extjstraining/components/dialogbasics/dialog`
+   1. Löschen Sie in **CRXDE Lite** den Knoten: `/apps/extjstraining/components/dialogbasics/dialog`
    1. Klicken Sie auf **Alle speichern**, um die Änderungen zu speichern.
-   1. Copy the node: `/apps/extjstraining/components/dialogbasics/singlepanel`
-   1. Paste the copied node below: `/apps/extjstraining/components/dialogbasics`
-   1. Wählen Sie die Node aus: und benennen Sie sie `/apps/extjstraining/components/dialogbasics/Copy of singlepanel`um `dialog`.
+   1. Kopieren Sie den Knoten: `/apps/extjstraining/components/dialogbasics/singlepanel`
+   1. Fügen Sie den kopierten Knoten unten ein: `/apps/extjstraining/components/dialogbasics`
+   1. Wählen Sie die Node aus: `/apps/extjstraining/components/dialogbasics/Copy of singlepanel`und benennen Sie `dialog` um.
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-01-31at45952pm](assets/screen_shot_2012-01-31at45952pm.png)
@@ -194,9 +199,9 @@ So verwenden Sie das Dialogfeld „Single Panel“:
 
 Das Dialogfeld **Multi Panel** zeigt dasselbe wie das Dialogfeld **Full**, ist aber anders aufgebaut. Die Eigenschaften sind:
 
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`).
-* Displays 3 tabs (node type = `cq:Panel`).
-* Each tab has 2 textfields (node type = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`).
+* Zeigt 3 Registerkarten an (Knotentyp = `cq:Panel`).
+* Jede Registerkarte hat 2 Textfelder (Knotentyp = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
 * Wird durch den Knoten definiert:
    `/apps/extjstraining/components/dialogbasics/multipanel`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
@@ -204,10 +209,10 @@ Das Dialogfeld **Multi Panel** zeigt dasselbe wie das Dialogfeld **Full**, ist 
 * Ein Vorteil gegenüber dem Dialogfeld **Full** besteht in der vereinfachten Struktur.
 * Empfohlene Verwendung: für Dialogfelder mit mehreren Registerkarten.
 
-So verwenden Sie das Dialogfeld &quot;Mehrere Bereiche&quot;:
+So verwenden Sie das Dialogfeld &quot;Multi-Panel&quot;:
 
-1. Replace the dialog of the **Dialog Basics** component with the **Multi Panel** dialog:
-follow the steps described for the [Example 2: Single Panel Dialog](#example-single-panel-dialog)
+1. Ersetzen Sie das Dialogfeld der Komponente **Dialoggrundlagen** durch das Dialogfeld **Multipanel**:
+Führen Sie die für [Beispiel 2 beschriebenen Schritte aus: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-01-31at50119pm](assets/screen_shot_2012-01-31at50119pm.png)
@@ -216,10 +221,10 @@ follow the steps described for the [Example 2: Single Panel Dialog](#example-sin
 
 Das Dialogfeld **Rich** zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte weist ein Textfeld auf, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern. Die Eigenschaften sind:
 
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* Displays 2 tabs (node type = `cq:Panel`).
-* The first tab has a ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)` widget with a ` [textfield](/help/sites-developing/xtypes.md#textfield)` and a ` [selection](/help/sites-developing/xtypes.md#selection)` widget with 3 options, and a collapsible ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)` with a ` [textarea](/help/sites-developing/xtypes.md#textarea)` widget.
-* The second tab has a ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)` widget with 4 ` [textfield](/help/sites-developing/xtypes.md#textfield)` widgets, and a collapsible `dialogfieldset` with 2 ` [textfield](/help/sites-developing/xtypes.md#textfield)` widgets.
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* Zeigt 2 Registerkarten an (Knotentyp = `cq:Panel`).
+* Die erste Registerkarte hat ein Widget ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)` mit einem Widget ` [textfield](/help/sites-developing/xtypes.md#textfield)` und einem Widget ` [selection](/help/sites-developing/xtypes.md#selection)` mit 3 Optionen und ein ausblendbares ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)` Widget mit einem Widget ` [textarea](/help/sites-developing/xtypes.md#textarea)`.
+* Die zweite Registerkarte hat ein Widget ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)` mit 4 ` [textfield](/help/sites-developing/xtypes.md#textfield)` Widgets und ein ausblendbares `dialogfieldset` Widget mit 2 ` [textfield](/help/sites-developing/xtypes.md#textfield)` Widgets.
 * Wird durch den Knoten definiert:
    `/apps/extjstraining/components/dialogbasics/rich`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
@@ -227,23 +232,23 @@ Das Dialogfeld **Rich** zeigt ein Fenster mit zwei Registerkarten an. Die erste 
 
 So verwenden Sie das Dialogfeld **Rich**:
 
-1. Replace the dialog of the **Dialog Basics** component with the **Rich** dialog:
-follow the steps described for the [Example 2: Single Panel Dialog](#example-single-panel-dialog)
+1. Ersetzen Sie das Dialogfeld der Komponente **Dialoggrundlagen** durch das Dialogfeld **Rich**:
+Führen Sie die für [Beispiel 2 beschriebenen Schritte aus: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
-![screen_shot_2012-01-31at50429pm](assets/screen_shot_2012-01-31at50429pm.png) ![screen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
+![screen_shot_2012-01-31at50429](assets/screen_shot_2012-01-31at50429pm.png) ![pmscreen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
 
 ### Dynamische Dialogfelder {#dynamic-dialogs}
 
-Die zweite Komponente der Gruppe **Using ExtJS Widgets** im Sidekick heißt **2. Dynamic Dialogs** und umfasst drei dynamische Dialogfelder, die mit standardmäßigen Widgets und **modifizierter JavaScript-Logik** erstellt wurden. The dialogs are stored below `/apps/extjstraining/components/dynamicdialogs`. Die dynamischen Dialoge sind:
+Die zweite Komponente der Gruppe **Using ExtJS Widgets** im Sidekick heißt **2. Dynamic Dialogs** und umfasst drei dynamische Dialogfelder, die mit standardmäßigen Widgets und **modifizierter JavaScript-Logik** erstellt wurden. Die Dialogfelder werden unterhalb von `/apps/extjstraining/components/dynamicdialogs` gespeichert. Die dynamischen Dialoge sind:
 
 * das Dialogfeld „Switch Tabs“ (Knoten `switchtabs`): Es zeigt ein Fenster mit zwei Registerkarten. Die erste Registerkarte weist eine Navigationsauswahl mit drei Optionen auf: Wenn eine Option ausgewählt ist, wird eine Registerkarte zu der Option angezeigt. Die zweite Registerkarte weist zwei Textfelder auf.
 * das Dialogfeld „“ (Knoten `arbitrary`arbitrary): Es zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über ein Feld, in das Sie Assets ziehen oder hochladen können, und ein Feld, das Informationen über die Seite, die es umfasst, und das Asset (falls auf eines verwiesen wird) anzeigt.
-* the Toggle Fields dialog ( `togglefield` node): it displays a window with one tab. Die Registerkarte verfügt über ein Kontrollkästchen: Ist es aktiviert, wird ein Feldsatz mit zwei Textfeldern angezeigt.
+* Dialogfeld &quot;Felder ein/aus&quot;( `togglefield`-Knoten): Es wird ein Fenster mit einer Registerkarte angezeigt. Die Registerkarte verfügt über ein Kontrollkästchen: Ist es aktiviert, wird ein Feldsatz mit zwei Textfeldern angezeigt.
 
-To include the **2. Dynamic Dialogs** component on the sample page:
+So schließen Sie **2 ein. Komponente &quot;Dynamische Dialoge**&quot;auf der Beispielseite:
 
-1. Add the **2. Dynamic Dialogs** component to the sample page from the **Using ExtJS Widgets** tab in the **Sidekick**.
+1. hinzufügen Sie **2. Dynamische Dialoge** auf der Beispielseite über die Registerkarte **Verwenden von ExtJS Widgets** in **Sidekick**.
 1. Die Komponente zeigt einen Titel, etwas Text und einen Link **EIGENSCHAFTEN**: Klicken Sie, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
 
 Die Komponente wird wie im Folgenden dargestellt:
@@ -256,32 +261,34 @@ Das Dialogfeld **Switch Tabs** zeigt ein Fenster mit zwei Registerkarten an. Di
 
 Die wichtigsten Eigenschaften sind:
 
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
 * Zeigt zwei Registerkarten (node type = `cq:Panel`): eine Auswahlregisterkarte und eine zweite Registerkarte, die von der Auswahl auf der ersten Registerkarte abhängt (drei Optionen).
-* Has 3 optional tabs (node type = `cq:Panel`), each one has 2 textfields (node type = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`). Es wird jeweils nur eine optionale Registerkarte angezeigt.
-* Wird durch den `switchtabs` Knoten unter:
+* Hat 3 optionale Registerkarten (Knotentyp = `cq:Panel`), jede hat 2 Textfelder (Knotentyp = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`). Es wird jeweils nur eine optionale Registerkarte angezeigt.
+* Wird durch den Knoten `switchtabs` unter:
    `/apps/extjstraining/components/dynamicdialogs/switchtabs`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
    `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/switchtabs.-1.json`
 
 Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementiert:
 
-* Der Knoten &quot;dialog&quot;verfügt über einen `beforeshow`&quot;Listener, der alle optionalen Registerkarten ausblendet, bevor das Dialogfeld angezeigt wird:
+* Der Knoten &quot;dialog&quot;hat einen Listener &quot;`beforeshow`&quot;, der alle optionalen Registerkarten ausblendet, bevor das Dialogfeld angezeigt wird:
    `beforeshow="function(dialog){Ejst.x2.manageTabs(dialog.items.get(0));}"`
-   `dialog.items.get(0)` Ruft das Tabulatorbedienfeld mit dem Auswahlfeld und den 3 optionalen Bereichen ab.
-* The `Ejst.x2` object is defined in the `exercises.js` file at:
+
+   `dialog.items.get(0)` Ruft das Tabulatorbedienfeld mit dem Auswahlbedienfeld und den 3 optionalen Bereichen ab.
+* Das `Ejst.x2`-Objekt wird in der Datei `exercises.js` unter:
    `/apps/extjstraining/clientlib/js/exercises.js`
-* In the `Ejst.x2.manageTabs()` method, as the value of `index` is -1, all the optional tabs are hidden (i goes from 1 to 3).
-* The selection tab has 2 listeners: one that shows the selected tab when the dialog is loaded (&quot; `loadcontent`&quot; event) and one that shows the selected tab when the selection is changed (&quot; `selectionchanged`&quot; event):
+* In der `Ejst.x2.manageTabs()`-Methode sind alle optionalen Registerkarten ausgeblendet, da der Wert von `index` -1 ist (i wechselt von 1 zu 3).
+* Die Registerkarte &quot;Auswahl&quot;verfügt über zwei Listener: eine, die beim Laden des Dialogfelds die ausgewählte Registerkarte anzeigt (&quot; `loadcontent`&quot;-Ereignis), und eine, die die ausgewählte Registerkarte anzeigt, wenn die Auswahl geändert wird (&quot; `selectionchanged`&quot;-Ereignis):
    `loadcontent="function(field,rec,path){Ejst.x2.showTab(field);}"`
+
    `selectionchanged="function(field,value){Ejst.x2.showTab(field);}"`
-* In the `Ejst.x2.showTab()` method:
-   `field.findParentByType('tabpanel')` ruft das Tabulatorbedienfeld ab, das alle Registerkarten enthält ( `field` entspricht dem Auswahl-Widget)
+* Bei der `Ejst.x2.showTab()`-Methode:
+   `field.findParentByType('tabpanel')` Ruft das Tabulatorbedienfeld ab, das alle Registerkarten enthält (  `field` repräsentiert das Auswahl-Widget)
    `field.getValue()` ruft den Wert der Auswahl ab, z. B.: tab2
    `Ejst.x2.manageTabs()` zeigt die ausgewählte Registerkarte an.
-* Each optional tab has a listener that hides the tab on &quot; `render`&quot; event:
+* Jede optionale Registerkarte verfügt über einen Listener, der die Registerkarte im Ereignis &quot;`render`&quot;ausblendet:
    `render="function(tab){Ejst.x2.hideTab(tab);}"`
-* In the `Ejst.x2.hideTab()` method:
+* Bei der `Ejst.x2.hideTab()`-Methode:
    ist `tabPanel` das Registerkartenbedienfeld, das alle Registerkarten enthält.
    ist `index` der Index der optionalen Registerkarte.
    `tabPanel.hideTabStripItem(index)` Blendet die Registerkarte aus
@@ -298,23 +305,24 @@ Das Dialogfeld **Arbitrary** zeigt ein Fenster mit einer Registerkarte an. Die R
 
 Die wichtigsten Eigenschaften sind:
 
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* Displays 1 tabpanel widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) with 1 panel (node type = `cq:Panel`)
-* The panel has a smartfile widget (node type = `cq:Widget`, xtype = ` [smartfile](/help/sites-developing/xtypes.md#smartfile)`) and an ownerdraw widget (node type = `cq:Widget`, xtype = ` [ownerdraw](/help/sites-developing/xtypes.md#ownerdraw)`)
-* Wird durch den `arbitrary` Knoten unter:
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* Zeigt 1 tabpanel-Widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) mit 1 panel (node type = `cq:Panel`) an
+* Das Bedienfeld hat ein Smarttfile-Widget (Knotentyp = `cq:Widget`, xtype = ` [smartfile](/help/sites-developing/xtypes.md#smartfile)`) und ein Eigenschafts-Widget (Knotentyp = `cq:Widget`, xtype = ` [ownerdraw](/help/sites-developing/xtypes.md#ownerdraw)`)
+* Wird durch den Knoten `arbitrary` unter:
    `/apps/extjstraining/components/dynamicdialogs/arbitrary`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
    `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/arbitrary.-1.json`
 
 Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementiert:
 
-* The ownerdraw widget has a &quot; `loadcontent`&quot; listener that shows info about the page containing the component and the asset referenced by the smartfile widget when the content is loaded:
+* Das Widget für die eigene Zeichnung verfügt über einen Listener &quot;`loadcontent`&quot;, der Informationen über die Seite anzeigt, die die Komponente und das Asset enthält, auf das das Widget &quot;smartfile&quot;beim Laden des Inhalts verweist:
    `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
+
    `field` wird mit dem ownerdraw-Objekt festgelegt
    `path` wird mit dem Inhalts-Pfad der Komponente festgelegt (z. B.: /content/geometrixx/de/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs)
-* The `Ejst.x2` object is defined in the `exercises.js` file at:
+* Das `Ejst.x2`-Objekt wird in der Datei `exercises.js` unter:
    `/apps/extjstraining/clientlib/js/exercises.js`
-* In the `Ejst.x2.showInfo()` method:
+* Bei der `Ejst.x2.showInfo()`-Methode:
    ist `pagePath` der Pfad der Seite, die die Komponente enthält.
    stellt `pageInfo` die Seiteneigenschaften im JSON-Format dar.
    ist `reference` der Pfad des referenzierten Assets.
@@ -323,8 +331,8 @@ Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementie
 
 So verwenden Sie das Dialogfeld **Arbitrary**:
 
-1. Replace the dialog of the **Dynamic Dialog** component with the **Arbitrary** dialog:
-follow the steps described for the [Example 2: Single Panel Dialog](#example-single-panel-dialog)
+1. Ersetzen Sie das Dialogfeld der Komponente **Dynamischer Dialog** durch das Dialogfeld **Beliebige**:
+Führen Sie die für [Beispiel 2 beschriebenen Schritte aus: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
@@ -335,31 +343,32 @@ Das Dialogfeld **Toggle Fields** zeigt ein Fenster mit einer Registerkarte an. D
 
 Die wichtigsten Eigenschaften sind:
 
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* Displays 1 tabpanel widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#textpanel)`) with 1 panel (node type = `cq:Panel`).
-* The panel has a selection/checkbox widget (node type = `cq:Widget`, xtype = ` [selection](/help/sites-developing/xtypes.md#selection)`, type = ` [checkbox](/help/sites-developing/xtypes.md#checkbox)`) and a collapsible dialogfieldset widget (node type = `cq:Widget`, xtype = ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)`) that is hidden by default, with 2 textfield widgets (node type = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
-* Wird durch den `togglefields` Knoten unter:
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* Zeigt 1 tabpanel-Widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#textpanel)`) mit 1 panel (node type = `cq:Panel`) an.
+* Das Bedienfeld verfügt über ein Auswahl-/Kontrollkästchen-Widget (Knotentyp = `cq:Widget`, xtype = ` [selection](/help/sites-developing/xtypes.md#selection)`, type = ` [checkbox](/help/sites-developing/xtypes.md#checkbox)`) und ein ausblendbares Widget für Dialogfelder (Knotentyp = `cq:Widget`, xtype = ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)`), das standardmäßig ausgeblendet wird, mit 2 textfield-Widgets (Knotentyp = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
+* Wird durch den Knoten `togglefields` unter:
    `/apps/extjstraining/components/dynamicdialogs/togglefields`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
    `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/togglefields.-1.json`
 
 Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementiert:
 
-* the selection tab has 2 listeners: one that shows the dialogfieldset when the content is loaded (&quot; `loadcontent`&quot; event) and one that shows the dialogfieldset when the selection is changed (&quot; `selectionchanged`&quot; event):
+* Die Auswahlregisterkarte enthält 2 Listener: eines, das beim Laden des Inhalts den Dialogfeldsatz anzeigt (&quot; `loadcontent`&quot;-Ereignis), und eines, das den Dialogfeldsatz anzeigt, wenn die Auswahl geändert wird (&quot; `selectionchanged`&quot;-Ereignis):
    `loadcontent="function(field,rec,path){Ejst.x2.toggleFieldSet(field);}"`
+
    `selectionchanged="function(field,value){Ejst.x2.toggleFieldSet(field);}"`
-* The `Ejst.x2` object is defined in the `exercises.js` file at:
+* Das `Ejst.x2`-Objekt wird in der Datei `exercises.js` unter:
    `/apps/extjstraining/clientlib/js/exercises.js`
-* In the `Ejst.x2.toggleFieldSet()` method:
+* Bei der `Ejst.x2.toggleFieldSet()`-Methode:
    `box` ist das Auswahlobjekt
    ist `panel` das Bedienfeld, das das selection- und das dialogfieldset-Widget enthält.
    `fieldSet` ist das dialogFieldSet-Objekt
-   `show` ist der Wert der Auswahl (true oder false), basierend auf &#39; `show`&#39;, wenn das Dialogfeld angezeigt wird oder nicht
+   `show` ist der Wert der Auswahl (true oder false), basierend auf &#39;  `show`&#39;, wenn der Dialogfeldsatz angezeigt wird oder nicht
 
-To use the **Toggle Fields** dialog:
+So verwenden Sie das Dialogfeld **Felder** ein/aus:
 
-1. Replace the dialog of the **Dynamic Dialog** component with the **Toggle Fields** dialog:
-follow the steps described for the [Example 2: Single Panel Dialog](#example-single-panel-dialog)
+1. Ersetzen Sie das Dialogfeld der Komponente **Dynamischer Dialog** durch das Dialogfeld **Felder** ein/ein/ein/ein/ein/ein:
+Führen Sie die für [Beispiel 2 beschriebenen Schritte aus: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at115518am](assets/screen_shot_2012-02-01at115518am.png)
@@ -374,7 +383,7 @@ Die direkt einsatzbereiten und im Lieferumfang von AEM enthaltenen Widgets sollt
 
 Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente **3. Custom Widgets** des Pakets **Using ExtJS Widgets** enthalten. Fügen Sie diese Komponente wie folgt der Beispielseite hinzu:
 
-1. Add the **3. Custom Widgets** component to the sample page from the **Using ExtJS Widgets** tab in the **Sidekick**.
+1. hinzufügen Sie **3. Benutzerdefinierte Widgets** auf der Beispielseite aus der Registerkarte **Verwenden von ExtJS Widgets** im Register **Sidekick**.
 1. Die Komponente zeigt einen Titel, etwas Text und, wenn Sie auf den Link **EIGENSCHAFTEN** klicken, die Eigenschaften des im Repository gespeicherten Absatzes an. Durch erneutes Klicken werden die Eigenschaften verborgen.
 Die Komponente wird wie im Folgenden dargestellt:
 
@@ -386,15 +395,15 @@ Das auf dem **Custom Multifield**-Widget basierende Dialogfeld zeigt ein Fenster
 
 Das auf dem **Custom Multifield**-Widget basierende Dialogfeld:
 
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* Displays 1 tabpanel widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) containing a panel (node type = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
-* The panel has a `multifield` widget (node type = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`).
-* The `multifield` widget has a fieldconfig (node type = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) that is based on the custom xtype &#39; `ejstcustom`&#39;:
-   * &#39; `fieldconfig`&#39; is a config option of the ` [CQ.form.MultiField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MultiField)` object.
-   * &#39; `optionsProvider`&#39; is a configuration of the `ejstcustom` widget. Er wird mit der `Ejst.x3.provideOptions` Methode festgelegt, die in `exercises.js` folgender Tabelle definiert ist:
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* Zeigt 1 tabpanel-Widget (Knotentyp = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) mit einem Bereich (Knotentyp = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`) an.
+* Das Bedienfeld hat ein Widget `multifield` (Knotentyp = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`).
+* Das Widget `multifield` verfügt über eine fieldconfig (Knotentyp = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`), die auf dem benutzerdefinierten xtype &#39; `ejstcustom`&#39; basiert:
+   * &#39; `fieldconfig`&#39; ist eine Konfigurationsoption des Objekts ` [CQ.form.MultiField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MultiField)`.
+   * &#39; `optionsProvider`&#39; ist eine Konfiguration des Widgets `ejstcustom`. Er wird mit der `Ejst.x3.provideOptions`-Methode eingestellt, die in `exercises.js` bei:
       `/apps/extjstraining/clientlib/js/exercises.js`
 und gibt 2 Optionen zurück.
-* Wird durch den `multifield` Knoten unter:
+* Wird durch den Knoten `multifield` unter:
    `/apps/extjstraining/components/customwidgets/multifield`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
    `https://localhost:4502/apps/extjstraining/components/customwidgets/multifield.-1.json`
@@ -402,14 +411,14 @@ und gibt 2 Optionen zurück.
 Das benutzerdefinierte Multifield-Widget (xtype = `ejstcustom`):
 
 * Ist ein JavaScript-Objekt namens `Ejst.CustomWidget`.
-* Is defined in the `CustomWidget.js` javascript file at:
+* Ist in der JavaScript-Datei `CustomWidget.js` definiert unter:
    `/apps/extjstraining/clientlib/js/CustomWidget.js`
-* Extends the ` [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField)` widget.
-* Has 3 fields: `hiddenField` (Textfield), `allowField` (ComboBox) and `otherField` (Textfield)
-* Overrides `CQ.Ext.Component#initComponent` to add the 3 fields:
+* Erweitert das Widget ` [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField)`.
+* Enthält 3 Felder: `hiddenField` (Textfeld), `allowField` (ComboBox) und `otherField` (Textfeld)
+* Überschreibt `CQ.Ext.Component#initComponent`, um die 3 Felder hinzuzufügen:
    * `allowField` ist ein [CQ.form.Selection](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Selection)-Objekt vom Typ „select“. optionsProvider ist eine Konfiguration des Selection-Objekts, das mit der optionsProvider-Konfiguration des CustomWidget instanziiert wird, die im Dialogfeld
    * `otherField` ist ein [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField)-Objekt.
-* Überschreibt die Methoden `setValue``getValue` und `getRawValue` von [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) , um den Wert von CustomWidget mit folgendem Format festzulegen und abzurufen:
+* Überschreibt die Methoden `setValue`, `getValue` und `getRawValue` von [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField), um den Wert von CustomWidget mit folgendem Format festzulegen und abzurufen:
    `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`.
 * Registriert sich als &quot; `ejstcustom`&quot; xtype:
    `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -424,10 +433,10 @@ Das auf dem **Treebrowse**-Widget basierende benutzerdefinierte Dialogfeld zeigt
 
 Das benutzerdefinierte treebrowse-Dialogfeld:
 
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* Displays 1 tabpanel widget (node type = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) containing a panel (node type = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
-* The panel has a custom widget (node type = `cq:Widget`, xtype = `ejstbrowse`)
-* Wird durch den `treebrowse` Knoten unter:
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
+* Zeigt 1 tabpanel-Widget (Knotentyp = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) mit einem Bereich (Knotentyp = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`) an.
+* Das Bedienfeld verfügt über ein benutzerdefiniertes Widget (Knotentyp = `cq:Widget`, xtype = `ejstbrowse`)
+* Wird durch den Knoten `treebrowse` unter:
    `/apps/extjstraining/components/customwidgets/treebrowse`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
    `https://localhost:4502/apps/extjstraining/components/customwidgets/treebrowse.-1.json`
@@ -435,15 +444,15 @@ Das benutzerdefinierte treebrowse-Dialogfeld:
 Das benutzerdefinierte treebrowse-Widgets (xtype = `ejstbrowse`):
 
 * Ist ein JavaScript-Objekt namens `Ejst.CustomWidget`.
-* Is defined in the `CustomBrowseField.js` javascript file at:
+* Ist in der JavaScript-Datei `CustomBrowseField.js` definiert unter:
    `/apps/extjstraining/clientlib/js/CustomBrowseField.js`
-* Extends ` [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`.
+* Erweitert ` [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`.
 * Definiert ein Fenster zum Durchsuchen namens `browseWindow`.
-* Overrides ` [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick` to show the browse window when the arrow is clicked.
+* Überschreibt ` [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`, um das Fenster &quot;Durchsuchen&quot;anzuzeigen, wenn auf den Pfeil geklickt wird.
 * Definiert ein [CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)-Objekt:
-   * It gets its data by calling the servlet registered at `/bin/wcm/siteadmin/tree.json`.
-   * Its root is &quot; `apps/extjstraining`&quot;.
-* Defines a `window` object ( ` [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)`):
+   * Ruft seine Daten ab, indem das Servlet unter `/bin/wcm/siteadmin/tree.json` registriert wird.
+   * Der Stamm ist &quot; `apps/extjstraining`&quot;.
+* Definiert ein `window`-Objekt ( ` [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)`):
    * Basierend auf dem vordefinierten Bedienfeld.
    * Weist eine **OK**-Schaltfläche auf, die den Wert des ausgewählten Pfads festlegt und das Bedienfeld ausblendet.
 * Das Fenster wird unterhalb des Feldes **Pfad** verankert.
@@ -451,10 +460,10 @@ Das benutzerdefinierte treebrowse-Widgets (xtype = `ejstbrowse`):
 * Registriert sich als &quot; `ejstbrowse`&quot; xtype:
    `CQ.Ext.reg('ejstbrowse', Ejst.CustomBrowseField);`
 
-To use the **Custom Treebrowse** widget based dialog:
+So verwenden Sie das Widget-basierte Dialogfeld **Benutzerdefinierte Treebrowse**:
 
-1. Replace the dialog of the **Custom Widgets** component with the **Custom Treebrowse** dialog:
-follow the steps described for the [Example 2: Single Panel Dialog](#example-single-panel-dialog)
+1. Ersetzen Sie das Dialogfeld der Komponente **Benutzerspezifische Widgets** durch das Dialogfeld **Benutzerdefinierte Treebrowse**:
+Führen Sie die für [Beispiel 2 beschriebenen Schritte aus: Dialogfeld für einzelne Bereiche](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
@@ -465,26 +474,26 @@ Das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld ist ein auf
 
 Das auf dem **RTE-Plug-in** basierende Dialogfeld:
 
-* Wird durch den Knoten rteplugin unter:
+* Wird durch den Knoten rteplugin definiert unter:
    `/apps/extjstraining/components/customwidgets/rteplugin`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
    `https://localhost:4502/apps/extjstraining/components/customwidgets/rteplugin.-1.json`
-* The `rtePlugins` node has a child node `inserttext` (node type = `nt:unstructured`) that is named after the plugin. Er weist eine Eigenschaft mit der Bezeichnung `features` auf, die definiert, welche der Plug-in-Funktionen für den RTE verfügbar sind.
+* Der Knoten `rtePlugins` hat einen untergeordneten Knoten `inserttext` (Knotentyp = `nt:unstructured`), der nach dem Plugin benannt ist. Er weist eine Eigenschaft mit der Bezeichnung `features` auf, die definiert, welche der Plug-in-Funktionen für den RTE verfügbar sind.
 
 Das RTE-Plug-in:
 
 * Ist ein JavaScript-Objekt namens `Ejst.InsertTextPlugin`.
-* Is defined in the `InsertTextPlugin.js` javascript file at:
+* Ist in der JavaScript-Datei `InsertTextPlugin.js` definiert unter:
    `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
-* Extends the ` [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` object.
+* Erweitert das ` [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`-Objekt.
 * Die folgenden Methoden definieren das ` [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`-Objekt und werden im implementierenden Plug-in überschrieben:
    * `getFeatures()` gibt ein Array aller Funktionen zurück, die vom Plug-in bereitgestellt werden.
    * `initializeUI()` fügt die neue Schaltfläche der RTE-Symbolleiste hinzu.
    * `notifyPluginConfig()` zeigt Titel und Text an, wenn auf die Schaltfläche gezeigt wird.
    * `execute()` wird aufgerufen, wenn auf die Schaltfläche geklickt wird, und führt die Plug-in-Aktion durch: Sie zeigt ein Fenster an, in dem Text definiert wird, der eingeschlossen werden soll.
 * `insertText()` fügt einen Text anhand des entsprechenden Dialogfeldobjekts `Ejst.InsertTextPlugin.Dialog` ein (siehe unten).
-* `executeInsertText()` wird durch die `apply()` Methode des Dialogfelds aufgerufen, die ausgelöst wird, wenn auf die Schaltfläche **OK** geklickt wird.
-* Registriert sich als Plugin `inserttext`&quot;:
+* `executeInsertText()` wird von der  `apply()` Methode des Dialogfelds aufgerufen, die ausgelöst wird, wenn auf die  **** Schaltfläche OK geklickt wird.
+* Registriert sich als &#39; `inserttext`&#39; Plugin:
    `CQ.form.rte.plugins.PluginRegistry.register("inserttext", Ejst.InsertTextPlugin);`
 * Das `Ejst.InsertTextPlugin.Dialog`-Objekt definiert das Dialogfeld, das geöffnet wird, wenn auf die Plug-in-Schaltfläche geklickt wird. Das Dialogfeld besteht aus einem Bedienfeld, einem Formular, einem Textfeld und zwei Schaltflächen (**OK** und **Abbrechen**).
 
@@ -492,8 +501,8 @@ So verwenden Sie das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialo
 
 1. Ersetzen Sie das Dialogfeld der Komponente **Custom Widgets** durch das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld: Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“](#example-single-panel-dialog) beschriebenen Schritte aus.
 1. Bearbeiten Sie die Komponente.
-1. Klicken Sie auf das letzte Symbol rechts (das Symbol mit vier Pfeilen). Enter a path and click **OK**:
-The path is displayed within brackets ([ ]).
+1. Klicken Sie auf das letzte Symbol auf der rechten Seite (das Symbol mit vier Pfeilen). Geben Sie einen Pfad ein und klicken Sie auf **OK**:
+Der Pfad wird in Klammern ([ ]).
 1. Klicken Sie auf **OK**, um den Rich-Text-Editor zu schließen.
 
 Das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld wird wie folgt angezeigt:
@@ -502,7 +511,7 @@ Das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld wird wie fo
 
 >[!NOTE]
 >
->This example only shows how to implement the client-side part of the logic: the placeholders (*[text]*) have then to be parsed on the server-side explicitly (e.g. in the component JSP).
+>Dieses Beispiel zeigt nur, wie der clientseitige Teil der Logik implementiert wird: Die Platzhalter (*[text]*) müssen dann explizit auf der Serverseite analysiert werden (z. B. in der Komponente JSP).
 
 ### Tree Overview {#tree-overview}
 
@@ -510,7 +519,7 @@ Das im Lieferumfang enthaltene ` [CQ.Ext.tree.TreePanel](https://helpx.adobe.com
 
 Fügen Sie die Komponente **Tree Overview** wie folgt der Beispielseite hinzu:
 
-1. Add the **4. Tree Overview** component to the sample page from the **Using ExtJS Widgets** tab in the **Sidekick**.
+1. hinzufügen Sie **4. Baum-Übersicht** auf der Beispielseite von der Registerkarte **Verwenden von ExtJS Widgets** in **Sidekick**.
 1. Die Komponente zeigt:
    * einen Titel und etwas Text.
    * einen **EIGENSCHAFTEN**-Link: Klicken Sie, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
@@ -538,21 +547,21 @@ Die Komponenten-JSP:
 Der in die Komponenten-JSP eingebettete JavaScript-Code:
 
 * Definiert ein `tree`-Objekt, indem versucht wird, ein Baumstrukturfenster von der Seite abzurufen.
-* If the window displaying the tree does not exist, `treePanel` ([CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) is created:
+* Wenn das Fenster mit der Struktur nicht vorhanden ist, wird `treePanel` ([CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) erstellt:
    * `treePanel` enthält die Daten, anhand derer das Fenster erstellt wird.
    * Die Daten werden abgerufen, indem das Servlet aufgerufen wird, registriert unter:
       `/bin/wcm/siteadmin/tree.json`
-* The `beforeload` listener makes sure the clicked node is loaded.
-* The `root` object sets the path `apps/extjstraining` as the tree root.
-* `tree` ( ` [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)`) auf Basis der vordefinierten Einstellung festgelegt `treePanel`und angezeigt wird mit:
+* Der Listener `beforeload` stellt sicher, dass der angeklickte Knoten geladen wird.
+* Das `root`-Objekt legt den Pfad `apps/extjstraining` als Baumstamm fest.
+* `tree` (  ` [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)`) auf Basis der vordefinierten Einstellung festgelegt  `treePanel`und angezeigt wird mit:
    `tree.show();`
 * Wenn das Fenster bereits vorhanden ist, wird es anhand der aus dem Repository abgerufenen Breite, Höhe und angedockten Eigenschaften angezeigt.
 
 Das Komponentendialogfeld:
 
 * Zeigt eine Registerkarte mit zwei Feldern zum Festlegen der Größe (Breite und Höhe) des Fensters des Baumstrukturüberblicks und ein Feld zum An-/Abdocken des Fensters.
-* Is defined by a node (node type = `cq:Dialog`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
-* The panel has a sizefield widget (node type = `cq:Widget`, xtype = ` [sizefield](/help/sites-developing/xtypes.md#sizefield)`) and a selection widget (node type = `cq:Widget`, xtype = ` [selection](/help/sites-developing/xtypes.md#selection)`, type = `radio`) with 2 options (true/false)
+* Ist durch einen Knoten definiert (Knotentyp = `cq:Dialog`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
+* Das Bedienfeld verfügt über ein Widget für Größe (Knotentyp = `cq:Widget`, xtype = ` [sizefield](/help/sites-developing/xtypes.md#sizefield)`) und ein Auswahl-Widget (Knotentyp = `cq:Widget`, xtype = ` [selection](/help/sites-developing/xtypes.md#selection)`, type = `radio`) mit 2 Optionen (true/false)
 * Wird durch den Knoten dialog unter:
    `/apps/extjstraining/components/treeoverview/dialog`
 * Wird im JSON-Format wiedergegeben, indem Sie Folgendes anfordern:
@@ -570,14 +579,14 @@ Ein „Grid Panel“ stellt Daten in tabellarischer Form als Zeilen und Spalten 
 * Ansicht: fasst die Benutzeroberfläche zusammen
 * Auswahlmodell: das Auswahlverhalten
 
-The Grid Overview component included in the **Using ExtJS Widgets** package shows how to display data in a tabular format:
+Die Komponente &quot;Rasterübersicht&quot;im Paket **Verwenden von ExtJS Widgets** zeigt, wie Daten in einem Tabellenformat angezeigt werden:
 
 * Das Beispiel 1 verwendet statische Daten.
 * Beispiel 2 verwendet Daten, die aus dem Repository abgerufen wurden.
 
 So fügen Sie die Komponente &quot;Rasterübersicht&quot;zur Beispielseite hinzu:
 
-1. Add the **5. Grid Overview** component to the sample page from the **Using ExtJS Widgets** tab in the **Sidekick**.
+1. hinzufügen Sie **5. Rasterübersicht** auf der Beispielseite über die Registerkarte **Verwenden von ExtJS Widgets** im Register **Sidekick**.
 1. Die Komponente zeigt:
    * ein Titel mit Text
    * einen **EIGENSCHAFTEN**-Link: Klicken Sie, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
@@ -606,6 +615,7 @@ Die Komponenten-JSP:
 * Zeigt Text als Einführung zum Datenformat des Rasterüberblicks an.
 * Verweist auf JavaScript-Code, der das GridPanel-Objekt definiert:
    `<script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script>`
+
    `defaultgrid.js` definiert einige statische Daten als Grundlage für das GridPanel-Objekt.
 * Bettet zwischen JavaScript-Tags JavaScript-Code ein, der das Window-Objekt definiert, das das GridPanel-Objekt verbraucht.
 * Wird definiert unter:
@@ -613,19 +623,19 @@ Die Komponenten-JSP:
 
 Der in die Komponenten-JSP eingebettete JavaScript-Code:
 
-* Defines the `grid` object by trying to retrieve the window component from the page:
+* Definiert das `grid`-Objekt, indem versucht wird, die Fensterkomponente von der Seite abzurufen:
    `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* If `grid` does not exist, a [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object ( `gridPanel`) is defined by calling the `getGridPanel()` method (see below). Diese Methode wird in `defaultgrid.js` definiert.
-* `grid` ist ein ` [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)` Objekt, basierend auf dem vordefinierten GridPanel, und wird angezeigt: `grid.show();`
+* Wenn `grid` nicht vorhanden ist, wird ein [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)-Objekt ( `gridPanel`) durch Aufruf der `getGridPanel()`-Methode definiert (siehe unten). Diese Methode wird in `defaultgrid.js` definiert.
+* `grid` ist ein  ` [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)` Objekt, das auf dem vordefinierten GridPanel basiert und angezeigt wird:  `grid.show();`
 * Ist `grid` bereits vorhanden, wird es anhand der aus dem Repository abgerufenen Breite, Höhe und angedockten Eigenschaften angezeigt.
 
-The javascript file ( `defaultgrid.js`) referenced in the component jsp defines the `getGridPanel()` method which is called by the script embedded in the JSP and returns a ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object, based on static data. Die Logik lautet wie folgt:
+Die JavaScript-Datei ( `defaultgrid.js`), auf die in der Komponenten-JSP verwiesen wird, definiert die Methode `getGridPanel()`, die durch das im JSP eingebettete Skript aufgerufen wird, und gibt ein ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`-Objekt zurück, das auf statischen Daten basiert. Die Logik lautet wie folgt:
 
 * `myData` ist ein Array statischer Daten, formatiert als Tabelle mit fünf Spalten und vier Zeilen.
-* `store` ist ein `CQ.Ext.data.Store` Objekt, das konsumiert `myData`.
+* `store` ist ein  `CQ.Ext.data.Store` Objekt, das konsumiert  `myData`.
 * `store` im Arbeitsspeicher geladen wird:
    `store.load();`
-* `gridPanel` ist ein ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` Objekt, das Folgendes konsumiert `store`:
+* `gridPanel` ist ein  ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` Objekt, das Folgendes konsumiert  `store`:
    * Die Spaltenbreiten werden jederzeit neu proportional angepasst:
       `forceFit: true`
    * Es kann jeweils nur eine Zeile ausgewählt werden:
@@ -633,19 +643,19 @@ The javascript file ( `defaultgrid.js`) referenced in the component jsp defines 
 
 #### Beispiel 2: Verweissuchraster {#example-reference-search-grid}
 
-When you install the package, the `content.jsp` of the **Grid Overview** component displays a grid that is based on static data. Es ist möglich, die Komponente so zu ändern, dass ein Raster mit den folgenden Eigenschaften angezeigt wird:
+Wenn Sie das Paket installieren, zeigt `content.jsp` der Komponente **Rasterübersicht** ein Raster an, das auf statischen Daten basiert. Es ist möglich, die Komponente so zu ändern, dass ein Raster mit den folgenden Eigenschaften angezeigt wird:
 
 * Hat drei Spalten.
 * Basiert auf Daten, die aus dem Repository abgerufen werden, indem ein Servlet aufgerufen wird.
 * Die Zellen der letzten Spalte können bearbeitet werden. Der Wert wird in einer `test`-Eigenschaft unterhalb des Knotens gespeichert, der anhand des in der ersten Spalte angezeigten Pfades definiert wird.
 
-As explained in the section before, the window object gets its ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object by calling the `getGridPanel()` method defined in the `defaultgrid.js` file at `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Die Komponente **Grid Overview **stellt eine andere Implementierung für die `getGridPanel()` Methode bereit, die in der `referencesearch.js` Datei unter `/apps/extjstraining/components/gridoverview/referencesearch.js`. Durch Wechseln der JS-Datei, auf die in der Komponenten-JSP verwiesen wird, basiert das Raster auf aus dem Repository abgerufenen Daten.
+Wie im vorherigen Abschnitt erläutert, ruft das window-Objekt das ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`-Objekt ab, indem die `getGridPanel()`-Methode aufgerufen wird, die in der `defaultgrid.js`-Datei unter `/apps/extjstraining/components/gridoverview/defaultgrid.js` definiert ist. Die Komponente **Grid Overview **stellt eine andere Implementierung für die Methode `getGridPanel()` bereit, die in der Datei `referencesearch.js` unter `/apps/extjstraining/components/gridoverview/referencesearch.js` definiert ist. Durch Wechseln der JS-Datei, auf die in der Komponenten-JSP verwiesen wird, basiert das Raster auf aus dem Repository abgerufenen Daten.
 
 Wechseln Sie die JS-Datei, auf die in der Komponenten-JSP verwiesen wird:
 
-1. In **CRXDE Lite**, in the `content.jsp` file of the component, comment the line that includes the `defaultgrid.js` file, so that it looks as follows:
+1. Komprimieren Sie in **CRXDE Lite** in der `content.jsp`-Komponentendatei die Zeile, die die `defaultgrid.js`-Datei enthält, sodass sie wie folgt aussieht:
    `<!-- script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script-->`
-1. Remove the comment from the line that includes the `referencesearch.js` file, so that it looks as follows:
+1. Entfernen Sie den Kommentar aus der Zeile mit der Datei `referencesearch.js`, sodass er wie folgt aussieht:
    `<script type="text/javascript" src="/apps/extjstraining/components/gridoverview/referencesearch.js"></script>`
 1. Speichern Sie die Änderungen.
 1. Aktualisieren Sie die Beispielseite.
@@ -654,22 +664,22 @@ Die Komponente wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-The javascript code referenced in the component jsp ( `referencesearch.js`) defines the `getGridPanel()` method called from the component jsp and returns a ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` object, based on data that are dynamically retrieved from the repository. Die Logik in `referencesearch.js` definiert dynamische Daten als Basis für das GridPanel:
+Der in der Komponente jsp ( `referencesearch.js`) referenzierte JavaScript-Code definiert die Methode `getGridPanel()`, die von der Komponente jsp aufgerufen wird, und gibt ein ` [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`-Objekt zurück, basierend auf Daten, die dynamisch aus dem Repository abgerufen werden. Die Logik in `referencesearch.js` definiert dynamische Daten als Basis für das GridPanel:
 
 * `reader` ist ein ` [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`-Objekt, das die Servlet-Antwort im JSON-Format für drei Spalten liest.
-* `cm` ist ein ` [CQ.Ext.grid.ColumnModel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` Objekt für 3 Spalten.
+* `cm` ist ein  ` [CQ.Ext.grid.ColumnModel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` Objekt für 3 Spalten.
 Die Zellen der Spalte &quot;Test&quot;können bearbeitet werden, da sie mit einem Editor definiert wurden:
    `editor: new [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * Die Spalten sind sortierbar:
    `cm.defaultSortable = true;`
-* `store` ist ein ` [CQ.Ext.data.GroupingStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` Objekt:
-   * it gets its data by calling the servlet registered at &quot; `/bin/querybuilder.json`&quot; with a few parameters used to filter the query
+* `store` ist ein  ` [CQ.Ext.data.GroupingStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` Objekt:
+   * ruft es seine Daten ab, indem es das Servlet aufruft, das bei &quot; `/bin/querybuilder.json`&quot;registriert ist, mit einigen Parametern, die zum Filtern der Abfrage verwendet werden
    * Es basiert auf dem vorher definierten `reader`.
    * Die Tabelle wird anhand der Spalte „**jcr:path**“ in aufsteigender Reihenfolge definiert.
-* `gridPanel` ist ein ` [CQ.Ext.grid.EditorGridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` Objekt, das bearbeitet werden kann:
+* `gridPanel` ist ein  ` [CQ.Ext.grid.EditorGridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` Objekt, das bearbeitet werden kann:
    * Es basiert auf dem vordefinierten `store` und auf dem Spaltenmodell `cm`.
    * Es kann jeweils nur eine Zeile ausgewählt werden:
       `sm: new [CQ.Ext.grid.RowSelectionModel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * Der `afteredit`-Listener stellt sicher, dass nach der Bearbeitung einer Zelle in der „**Test**“-Spalte Folgendes passiert:
-      * the property &#39; `test`&#39; of the node at the path defined by the &quot;**jcr:path**&quot; column is set in the repository with the value of the cell
+      * Die Eigenschaft &#39; `test`&#39; des Knotens im Pfad, der durch die Spalte &quot;**jcr:path**&quot;definiert wird, wird im Repository mit dem Wert der Zelle festgelegt
       * Wenn der POST erfolgreich ist, wird der Wert dem `store`-Objekt hinzugefügt, andernfalls wird er abgelehnt.
