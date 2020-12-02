@@ -12,6 +12,9 @@ discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 78%
 
 ---
 
@@ -28,7 +31,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 >
 >Wenn Probleme auftreten, sollten Sie auch die Liste der [bekannten Probleme](/help/release-notes/known-issues.md) für Ihre Instanz (Version und Service Packs) prüfen.
 
-## Fehlerbehebungsszenarien für Administratoren {#troubleshooting-scenarios-for-administrators}
+## Fehlerbehebungsszenarien für Administratoren  {#troubleshooting-scenarios-for-administrators}
 
 Die folgende Tabelle bietet einen Überblick über Probleme, die Administratoren möglicherweise beheben müssen:
 
@@ -48,7 +51,7 @@ Die folgende Tabelle bietet einen Überblick über Probleme, die Administratoren
   </tr>
   <tr>
    <td><p>Systemadministrator</p> </td>
-   <td><p>Der AEM-Begrüßungsbildschirm wird nach Doppelklicken auf AEM CM Schnellstart nicht im Browser angezeigt</p> </td>
+   <td><p>Der AEM Begrüßungsbildschirm wird nach dem Klicken der Dublette auf AEM CM QuickStart nicht im Browser angezeigt</p> </td>
   </tr>
   <tr>
    <td><p>Systemadministrator</p> <p>Admin-Benutzer</p> </td>
@@ -69,16 +72,16 @@ Weitere Informationen zu den folgenden Fehlerbehebungsszenarien finden Sie in [A
 * In CRX ausgeführte Anwendungen führen zu Fehlern aufgrund unzureichendem Speicherplatz.
 * Der AEM-Willkommensbildschirm wird nach einem Doppelklick auf den AEM-Schnellstart nicht im Browser angezeigt.
 
-## Methoden für die Fehlerbehebungsanalyse {#methods-for-troubleshooting-analysis}
+## Methoden für die Fehlerbehebungsanalyse  {#methods-for-troubleshooting-analysis}
 
 ### Erstellen von Thread-Sicherungskopien {#making-a-thread-dump}
 
 Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv sind. Wenn AEM nicht richtig reagiert, kann die Thread-Sicherungskopie helfen, Deadlocks oder andere Probleme zu identifizieren.
 
-### Verwenden des Sling Thread Dumper {#using-sling-thread-dumper}
+### Verwenden des Sling Thread Dumper  {#using-sling-thread-dumper}
 
-1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
-1. Select the **Threads** under **Status** tab.
+1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `https://localhost:4502/system/console/`.
+1. Wählen Sie die Registerkarte **Threads** unter **Status**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -86,7 +89,7 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 1. Suchen Sie die PID (Prozess-ID) der AEM-Java-Instanz.
 
-   For example, you can use `ps -ef` or `jps`.
+   Sie können beispielsweise `ps -ef` oder `jps` verwenden.
 
 1. Ausführen:
 
@@ -96,7 +99,7 @@ Eine Thread-Sicherungskopie ist eine Liste aller Java-Threads, die derzeit aktiv
 
 >[!NOTE]
 >
->You can append the thread dumps to a log file by using the `>>` output redirection:
+>Sie können die Thread-Dumps mithilfe der Ausgabeumleitung `>>` an eine Protokolldatei anhängen:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
@@ -112,12 +115,12 @@ Wenn Funktionen für AEM WCM entwickelt werden, werden möglicherweise JCR-Sitzu
 
 Lesen Sie den Knowledgebase-Artikel [Analysieren von nicht beendeten Sitzungen](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html), um nicht beendete Sitzungen zu analysieren und festzustellen, welcher Code dazu führt, dass eine Sitzung nicht beendet wird.
 
-### Verwenden der Adobe Experience Manager-Web-Konsole {#using-the-adobe-experience-manager-web-console}
+### Verwenden der Adobe Experience Manager-Web-Konsole  {#using-the-adobe-experience-manager-web-console}
 
 Der Status der OSGi-Bundles kann auch frühzeitig auf mögliche Probleme hinweisen.
 
-1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
-1. Select **Bundles** under **OSGI** tab.
+1. Öffnen Sie die **AEM Webkonsole**. zum Beispiel bei `https://localhost:4502/system/console/`.
+1. Wählen Sie **Pakete** unter **OSGI**.
 1. Überprüfen Sie Folgendes:
 
    * den Status der Bundles. Falls Status wie „Inaktiv“ oder „Nicht erfüllt“ angezeigt werden, versuchen Sie, das Bundle zu stoppen und neu zu starten. Wenn das Problem weiterhin besteht, müssen Sie dies mithilfe anderer Methoden weiter untersuchen.
