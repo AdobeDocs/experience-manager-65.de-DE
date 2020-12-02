@@ -41,9 +41,9 @@ Für diese Diskussion nehmen Sie an, dass das folgende DDX-Dokument verwendet wi
  </DDX>
 ```
 
-Beachten Sie in diesem DDX-Dokument, dass dem Quellattribut der Wert zugewiesen wurde `Loan.pdf`. Dieses DDX-Dokument gibt an, dass ein einzelnes PDF-Dokument an den Assembler-Dienst übergeben wird. Beim Zusammenstellen eines PDF-Dokuments mit Lesezeichen müssen Sie ein XML-Dokument für Lesezeichen angeben, das die Lesezeichen im Ergebnisdokument beschreibt. Um ein XML-Dokument für Lesezeichen anzugeben, stellen Sie sicher, dass das `Bookmarks` Element im DDX-Dokument angegeben ist.
+Beachten Sie, dass dem Quellattribut in diesem DDX-Dokument der Wert `Loan.pdf` zugewiesen ist. Dieses DDX-Dokument gibt an, dass ein einzelnes PDF-Dokument an den Assembler-Dienst übergeben wird. Beim Zusammenstellen eines PDF-Dokuments mit Lesezeichen müssen Sie ein XML-Dokument für Lesezeichen angeben, das die Lesezeichen im Ergebnisdokument beschreibt. Um ein XML-Dokument für Lesezeichen anzugeben, stellen Sie sicher, dass das `Bookmarks`-Element im DDX-Dokument angegeben ist.
 
-In diesem DDX-Dokument gibt das `Bookmarks` Element `doc2` als Wert an. Dieser Wert gibt an, dass die an den Assembler-Dienst übergebene Eingabemap einen Schlüssel mit dem Namen `doc2`enthält. Der Wert des `doc2` Schlüssels ist ein `com.adobe.idp.Document` Wert, der das XML-Dokument des Lesezeichens darstellt. (Siehe &quot;Lesezeichensprache&quot;im [Assembler-Dienst und in der DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).)
+In diesem DDX-Dokument gibt das `Bookmarks`-Element `doc2` als Wert an. Dieser Wert gibt an, dass die an den Assembler-Dienst übergebene Eingabemap einen Schlüssel mit dem Namen `doc2` enthält. Der Wert des Schlüssels `doc2` ist ein `com.adobe.idp.Document`-Wert, der das XML-Lesezeichen darstellt. (Siehe &quot;Lesezeichensprache&quot;im [Assembler-Dienst und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).)
 
 In diesem Thema wird die folgende Sprache für XML-Lesezeichen verwendet, um ein PDF-Dokument mit Lesezeichen zusammenzustellen.
 
@@ -73,13 +73,13 @@ Beachten Sie in diesem XML-Dokument für Lesezeichen das Aktionselement, das die
 
 >[!NOTE]
 >
->Ausführliche Informationen zu unterstützten Aktionen finden Sie unter &quot; `Action` element&quot;im [Assembler-Dienst und in der DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Ausführliche Informationen zu unterstützten Aktionen finden Sie unter &quot; `Action` element&quot;im [Assembler-Dienst und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 Wenn das in diesem Abschnitt angegebene DDX-Dokument und die XML-Lesezeichendatei als Eingabe angegeben sind, assembliert der Assembler-Dienst ein PDF-Dokument, das die folgenden Lesezeichen enthält.
 
 ![aw_aw_bmark](assets/aw_aw_bmark.png)
 
-Wenn ein Benutzer auf das Lesezeichen *Öffnen der Kreditdetails* klickt, wird die Datei &quot;LoanDetails.pdf&quot;geöffnet. Wenn der Benutzer auf das Lesezeichen *StartnotizPad* klickt, wird NotizPad ebenfalls gestartet.
+Wenn ein Benutzer auf das Lesezeichen *Kreditinfo öffnen* klickt, wird die Datei &quot;LoanDetails.pdf&quot;geöffnet. Wenn der Benutzer auf das Lesezeichen *NotePad starten* klickt, wird NotizPad gestartet.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Wenn ein Benutzer auf das Lesezeichen *Öffnen der Kreditdetails* klickt, wird d
 
 >[!NOTE]
 >
->For more information about the Assembler service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ So assemblieren Sie ein PDF-Dokument mit Lesezeichen:
 1. Verweisen Sie auf ein vorhandenes DDX-Dokument.
 1. Verweisen Sie auf ein PDF-Dokument, dem Lesezeichen hinzugefügt werden.
 1. Verweisen Sie auf das XML-Dokument des Lesezeichens.
-1. Hinzufügen das PDF-Dokument und das XML-Lesezeichen einer Map-Sammlung.
+1. hinzufügen das PDF-Dokument und das XML-Lesezeichen einer Map-Sammlung.
 1. Legen Sie Laufzeitoptionen fest.
 1. Stellen Sie das PDF-Dokument zusammen.
 1. Speichern Sie das PDF-Dokument mit Lesezeichen.
@@ -116,10 +116,10 @@ Die folgenden JAR-Dateien müssen dem Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
-* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt werden)
+* adobe-utilities.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
+* jbossall-client.jar (erforderlich, wenn AEM Forms unter JBoss bereitgestellt wird)
 
-Wenn AEM Forms auf einem anderen unterstützten J2EE-Anwendungsserver als JBoss bereitgestellt werden, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt werden. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Wenn AEM Forms auf einem anderen unterstützten J2EE-Anwendungsserver als JBoss bereitgestellt wird, müssen Sie die Dateien &quot;adobe-utilities.jar&quot;und &quot;jbossall-client.jar&quot;durch JAR-Dateien ersetzen, die für den J2EE-Anwendungsserver spezifisch sind, auf dem AEM Forms bereitgestellt wird. Informationen zum Speicherort aller AEM Forms-JAR-Dateien finden Sie unter [Einschließen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **PDF Assembler-Client erstellen**
 
@@ -127,11 +127,11 @@ Bevor Sie einen Assembler-Vorgang programmgesteuert durchführen können, müsse
 
 **Ein vorhandenes DDX-Dokument referenzieren**
 
-Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werden. Dieses DDX-Dokument muss das `Bookmarks` Element enthalten, das den Assembler-Dienst anweist, eine PDF-Datei zusammenzustellen, die Lesezeichen enthält. (Ein Beispiel finden Sie im Dokument DDX, das weiter oben in diesem Abschnitt gezeigt wird.)
+Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werden. Dieses DDX-Dokument muss das Element `Bookmarks` enthalten, das den Assembler-Dienst anweist, eine PDF-Datei zusammenzustellen, die Lesezeichen enthält. (Ein Beispiel finden Sie im Dokument DDX, das weiter oben in diesem Abschnitt gezeigt wird.)
 
 **Verweisen Sie auf ein PDF-Dokument, dem Lesezeichen hinzugefügt werden**
 
-Verweisen Sie auf ein PDF-Dokument, dem Lesezeichen hinzugefügt werden. Es spielt keine Rolle, ob das referenzierte PDF-Dokument bereits Lesezeichen enthält. Wenn das `Bookmarks` Element ein untergeordnetes Element des PDF-Quellelements ist, ersetzen die Lesezeichen die bereits in der PDF-Quelle vorhandenen Elemente. Wenn Sie jedoch die vorhandenen Lesezeichen beibehalten möchten, stellen Sie sicher, dass das PDF-Quellelement gleichrangig `Bookmarks` ist. Beispiel:
+Verweisen Sie auf ein PDF-Dokument, dem Lesezeichen hinzugefügt werden. Es spielt keine Rolle, ob das referenzierte PDF-Dokument bereits Lesezeichen enthält. Wenn das `Bookmarks`-Element ein untergeordnetes Element des PDF-Quellelements ist, ersetzen die Lesezeichen die bereits in der PDF-Quelle vorhandenen Elemente. Wenn Sie jedoch die vorhandenen Lesezeichen beibehalten möchten, stellen Sie sicher, dass `Bookmarks` ein Geschwisterelement des PDF-Quellelements ist. Beispiel:
 
 ```xml
  <PDF result="foo">
@@ -146,19 +146,19 @@ Um eine PDF-Datei mit neuen Lesezeichen zusammenzustellen, müssen Sie auf ein X
 
 >[!NOTE]
 >
->Siehe &quot;Lesezeichensprache&quot;im [Assembler-Dienst und in der DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Siehe &quot;Lesezeichensprache&quot;im [Assembler-Dienst und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
-**Hinzufügen des PDF-Dokuments und des XML-Lesezeichen-Dokuments zu einer Map-Sammlung**
+**hinzufügen des PDF-Dokuments und des XML-Lesezeichen-Dokuments zu einer Map-Sammlung**
 
 Sie müssen sowohl das PDF-Dokument, dem Lesezeichen hinzugefügt werden, als auch das XML-Lesezeichen zur Map-Sammlung hinzufügen. Daher enthält das Map-Sammlungsobjekt zwei Elemente: ein PDF-Dokument und das XML-Dokument für das Lesezeichen.
 
 **Festlegen von Laufzeitoptionen**
 
-Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, bei Auftreten eines Fehlers mit der Verarbeitung eines Auftrags fortzufahren. Informationen zu den Laufzeitoptionen, die Sie einstellen können, finden Sie in der `AssemblerOptionSpec` Klassenreferenz in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Sie können Laufzeitoptionen festlegen, die das Verhalten des Assembler-Dienstes während der Ausführung eines Auftrags steuern. Sie können beispielsweise eine Option festlegen, mit der der Assembler-Dienst angewiesen wird, bei Auftreten eines Fehlers mit der Verarbeitung eines Auftrags fortzufahren. Informationen zu den verfügbaren Laufzeitoptionen finden Sie in der `AssemblerOptionSpec`-Klassenreferenz in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Zusammenstellen des PDF-Dokuments**
 
-Verwenden Sie zum Zusammenführen eines PDF-Dokuments mit neuen Lesezeichen den `invokeDDX` Vorgang des Assembler-Dienstes. Der Grund, warum Sie den `invokeDDX` Vorgang im Gegensatz zu anderen Assembler-Dienstvorgängen verwenden müssen, z. B. weil der Assembler-Dienst ein XML-Lesezeichen-Dokument benötigt, das innerhalb des Map-Sammlungsobjekts übergeben wird, `invokeOneDocument` ist der Grund dafür. Dieses Objekt ist ein Parameter des `invokeDDX` Vorgangs.
+Verwenden Sie zum Zusammenführen eines PDF-Dokuments mit neuen Lesezeichen den Vorgang `invokeDDX` des Assembler-Dienstes. Der Grund, warum Sie den Vorgang `invokeDDX` im Gegensatz zu anderen Assembler-Dienstvorgängen wie `invokeOneDocument` verwenden müssen, ist, dass der Assembler-Dienst ein XML-Lesezeichen-Dokument erfordert, das im Map-Sammlungsobjekt übergeben wird. Dieses Objekt ist ein Parameter des Vorgangs `invokeDDX`.
 
 **PDF-Dokument mit Lesezeichen speichern**
 
@@ -183,58 +183,58 @@ Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler Service 
 1. Erstellen Sie einen PDF Assembler-Client.
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Create an `AssemblerServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
+   * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie den Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
 1. Verweisen Sie auf ein vorhandenes DDX-Dokument.
 
-   * Erstellen Sie ein `java.io.FileInputStream` Objekt, das das DDX-Dokument darstellt, indem Sie den Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort der DDX-Datei angibt.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das DDX-Dokument darstellt, indem Sie den Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort der DDX-Datei angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Verweisen Sie auf ein PDF-Dokument, dem Lesezeichen hinzugefügt werden.
 
-   * Erstellen Sie ein `java.io.FileInputStream` Objekt, indem Sie dessen Konstruktor verwenden und den Speicherort des PDF-Dokuments übergeben.
-   * Erstellen Sie ein `com.adobe.idp.Document` Objekt mithilfe des Konstruktors und übergeben Sie das `java.io.FileInputStream` Objekt, das das PDF-Dokument enthält.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, indem Sie den Konstruktor verwenden und den Speicherort des PDF-Dokuments übergeben.
+   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt mit dem Konstruktor und übergeben Sie das `java.io.FileInputStream`-Objekt, das das PDF-Dokument enthält.
 
 1. Verweisen Sie auf das XML-Dokument des Lesezeichens.
 
-   * Erstellen Sie ein `java.io.FileInputStream` Objekt, indem Sie dessen Konstruktor verwenden und den Speicherort der XML-Datei übergeben, die das Lesezeichen-XML-Dokument darstellt.
-   * Erstellen Sie ein `com.adobe.idp.Document` Objekt und übergeben Sie das `java.io.FileInputStream` Objekt, das das PDF-Dokument enthält.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, indem Sie den Konstruktor verwenden und den Speicherort der XML-Datei übergeben, die das Lesezeichen-XML-Dokument darstellt.
+   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt und übergeben Sie das `java.io.FileInputStream`-Objekt, das das PDF-Dokument enthält.
 
-1. Hinzufügen das PDF-Dokument und das XML-Lesezeichen einer Map-Sammlung.
+1. hinzufügen das PDF-Dokument und das XML-Lesezeichen einer Map-Sammlung.
 
-   * Erstellen Sie ein `java.util.Map` Objekt, das sowohl das PDF-Eingabedokument als auch das XML-Dokument für Lesezeichen speichert.
-   * Hinzufügen Sie das PDF-Dokument zur Eingabe, indem Sie die `java.util.Map` `put` Objektmethode aufrufen und die folgenden Argumente übergeben:
+   * Erstellen Sie ein `java.util.Map`-Objekt, mit dem sowohl das PDF-Eingabedokument als auch das XML-Dokument für Lesezeichen gespeichert werden.
+   * hinzufügen Sie das PDF-Dokument zur Eingabe, indem Sie die `java.util.Map`-Objektmethode `put` aufrufen und die folgenden Argumente übergeben:
 
       * Ein Zeichenfolgenwert, der den Schlüsselnamen darstellt. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen.
-      * Ein `com.adobe.idp.Document` Objekt, das das PDF-Dokument für die Eingabe enthält.
-   * Hinzufügen Sie das XML-Dokument für Lesezeichen, indem Sie die `java.util.Map` `put` Objektmethode aufrufen und die folgenden Argumente übergeben:
+      * Ein `com.adobe.idp.Document`-Objekt, das das PDF-Dokument für die Eingabe enthält.
+   * hinzufügen Sie das XML-Dokument für das Lesezeichen, indem Sie die `java.util.Map`-Objektmethode `put` aufrufen und die folgenden Argumente übergeben:
 
       * Ein Zeichenfolgenwert, der den Schlüsselnamen darstellt. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen Lesezeichenquellenelements übereinstimmen.
-      * Ein `com.adobe.idp.Document` Objekt, das das XML-Lesezeichen enthält.
+      * Ein `com.adobe.idp.Document`-Objekt, das das XML-Dokument für das Lesezeichen enthält.
 
 
 1. Legen Sie Laufzeitoptionen fest.
 
-   * Erstellen Sie ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec` Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `AssemblerOptionSpec` Methode des `setFailOnError` Objekts auf und übergeben Sie sie `false`.
+   * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, rufen Sie die `AssemblerOptionSpec`-Methode des Objekts auf und übergeben Sie `setFailOnError`.`false`
 
 1. Stellen Sie das PDF-Dokument zusammen.
 
-   Rufen Sie die `AssemblerServiceClient` Objektmethode `invokeDDX` auf und übergeben Sie die folgenden erforderlichen Werte:
+   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden erforderlichen Werte:`invokeDDX`
 
-   * Ein `com.adobe.idp.Document` Objekt, das das zu verwendende DDX-Dokument darstellt
-   * Ein `java.util.Map` Objekt, das sowohl das PDF-Dokument als auch das XML-Dokument für das Lesezeichen enthält.
-   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` Objekt, das die Laufzeitoptionen angibt, einschließlich der standardmäßigen Schriftart- und Auftragsprotokollebene
+   * Ein `com.adobe.idp.Document`-Objekt, das das zu verwendende DDX-Dokument darstellt
+   * Ein `java.util.Map`-Objekt, das sowohl das PDF-Eingabedokument als auch das XML-Dokument des Lesezeichens enthält.
+   * Ein `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-Objekt, das die Laufzeitoptionen einschließlich der standardmäßigen Schriftart- und Auftragsprotokollebene angibt
 
-   Die `invokeDDX` Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult` Objekt zurück, das die Ergebnisse des Auftrags und alle aufgetretenen Ausnahmen enthält.
+   Die `invokeDDX`-Methode gibt ein `com.adobe.livecycle.assembler.client.AssemblerResult`-Objekt zurück, das die Ergebnisse des Auftrags und alle aufgetretenen Ausnahmen enthält.
 
 1. Speichern Sie das PDF-Dokument mit Lesezeichen.
 
    So rufen Sie das neu erstellte PDF-Dokument ab:
 
-   * Rufen Sie die `AssemblerResult` Methode des `getDocuments` Objekts auf. Dadurch wird ein `java.util.Map` Objekt zurückgegeben.
-   * Durchlaufen Sie das `java.util.Map` Objekt, bis Sie das resultierende `com.adobe.idp.Document` Objekt gefunden haben. (Sie können das im DDX-Dokument angegebene PDF-Ergebniselement verwenden, um das Dokument abzurufen.)
-   * Rufen Sie die `com.adobe.idp.Document` `copyToFile` Objektmethode auf, um das PDF-Dokument zu extrahieren.
+   * Rufen Sie die `AssemblerResult`-Methode des Objekts `getDocuments` auf. Gibt ein `java.util.Map`-Objekt zurück.
+   * Durchlaufen Sie das `java.util.Map`-Objekt, bis Sie das resultierende `com.adobe.idp.Document`-Objekt finden. (Sie können das im DDX-Dokument angegebene PDF-Ergebniselement verwenden, um das Dokument abzurufen.)
+   * Rufen Sie die `com.adobe.idp.Document`-Objektmethode `copyToFile` auf, um das PDF-Dokument zu extrahieren.
 
 **Siehe auch**
 
@@ -244,7 +244,7 @@ Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler Service 
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Zusammenstellen von PDF-Dokumenten mit Lesezeichen mithilfe der Web-Service-API {#assemble-pdf-documents-with-bookmarks-using-the-web-service-api}
+## Zusammenstellen von PDF-Dokumenten mit Lesezeichen mithilfe der Webdienst-API {#assemble-pdf-documents-with-bookmarks-using-the-web-service-api}
 
 Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler-Dienst-API (Webdienst):
 
@@ -254,75 +254,75 @@ Assemblieren eines PDF-Dokuments mit Lesezeichen mithilfe der Assembler-Dienst-A
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` dies durch die IP-Adresse des Hosting-AEM Forms.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
-   * Erstellen Sie ein `AssemblerServiceClient` Objekt mit dem Standardkonstruktor.
-   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` Objekt mithilfe des `System.ServiceModel.EndpointAddress` Konstruktors. Übergeben Sie einen Zeichenfolgenwert, der die WSDL an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version` Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding` Objekt, indem Sie den Wert des `AssemblerServiceClient.Endpoint.Binding` Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie für das `System.ServiceModel.BasicHttpBinding` Objektfeld `MessageEncoding` den Wert `WSMessageEncoding.Mtom`fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Erstellen Sie ein `AssemblerServiceClient`-Objekt mit dem Standardkonstruktor.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address`-Objekt mit dem Konstruktor `System.ServiceModel.EndpointAddress`. Übergeben Sie einen Zeichenfolgenwert, der den WSDL-Wert an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das Attribut `lc_version` nicht verwenden. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Setzen Sie das Feld `System.ServiceModel.BasicHttpBinding` des Objekts auf `MessageEncoding`. `WSMessageEncoding.Mtom` Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
 
-      * Weisen Sie dem Feld den AEM Forms-Benutzernamen zu `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Weisen Sie dem Feld den entsprechenden Kennwortwert zu `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Weisen Sie dem Feld den Konstantenwert `HttpClientCredentialType.Basic` zu `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Weisen Sie dem Feld den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zu `BasicHttpBindingSecurity.Security.Mode`.
+      * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Kennwortwert zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den Konstantenwert `HttpClientCredentialType.Basic` zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Verweisen Sie auf ein vorhandenes DDX-Dokument.
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB` Objekt wird zum Speichern des DDX-Dokuments verwendet.
-   * Erstellen Sie ein `System.IO.FileStream` Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des DDX-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Bytearray, das den Inhalt des `System.IO.FileStream` Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` Objekteigenschaft `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream` Objektmethode aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben `Read` .
-   * Füllen Sie das `BLOB` Objekt, indem Sie seinem `MTOM` Feld den Inhalt des Byte-Arrays zuweisen.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des DDX-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Verweisen Sie auf ein PDF-Dokument, dem Lesezeichen hinzugefügt werden.
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB` Objekt wird zum Speichern der PDF-Eingabedatei verwendet.
-   * Erstellen Sie ein `System.IO.FileStream` Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Eingabedatums und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Bytearray, das den Inhalt des `System.IO.FileStream` Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` Objekteigenschaft `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream` Objektmethode aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben `Read` .
-   * Füllen Sie das `BLOB` Objekt, indem Sie seinem `MTOM` Feld den Inhalt des Byte-Arrays zuweisen.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern der Eingabe-PDF verwendet.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Eingabedatums und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
 1. Verweisen Sie auf das XML-Dokument des Lesezeichens.
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB` Objekt wird zum Speichern des XML-Lesezeichens verwendet.
-   * Erstellen Sie ein `System.IO.FileStream` Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Eingabedatums und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Bytearray, das den Inhalt des `System.IO.FileStream` Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` Objekteigenschaft `Length` abrufen.
-   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream` Objektmethode aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben `Read` .
-   * Füllen Sie das `BLOB` Objekt, indem Sie seinem `MTOM` Feld den Inhalt des Byte-Arrays zuweisen.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des XML-Dokuments für Lesezeichen verwendet.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie den Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Eingabedatums und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Bytearray, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream`-Eigenschaft des Objekts `Length` abrufen.
+   * Füllen Sie das Bytearray mit Stream-Daten, indem Sie die `System.IO.FileStream`-Methode des Objekts aufrufen und das Bytearray, die Startposition und die zu lesende Stream-Länge übergeben.`Read`
+   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld mit dem Inhalt des Byte-Arrays zuweisen.
 
-1. Hinzufügen das PDF-Dokument und das XML-Lesezeichen einer Map-Sammlung.
+1. hinzufügen das PDF-Dokument und das XML-Lesezeichen einer Map-Sammlung.
 
-   * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Dieses Collection-Objekt wird zum Speichern der PDF-Eingabedokumente und des XML-Dokuments für Lesezeichen verwendet.
-   * Erstellen Sie für jedes PDF-Dokument und jedes XML-Dokument für das Lesezeichen ein `MyMapOf_xsd_string_To_xsd_anyType_Item` Objekt.
-   * Weisen Sie dem `MyMapOf_xsd_string_To_xsd_anyType_Item` Objektfeld einen Zeichenfolgenwert zu, der den Schlüsselnamen darstellt `key` . Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen.
-   * Weisen Sie das `BLOB` Objekt, in dem das PDF-Dokument gespeichert wird, dem `MyMapOf_xsd_string_To_xsd_anyType_Item` Objektfeld `value` zu.
-   * Hinzufügen das `MyMapOf_xsd_string_To_xsd_anyType_Item` Objekt mit dem `MyMapOf_xsd_string_To_xsd_anyType` Objekt. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object&#39;s `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Führen Sie diese Aufgabe für jedes PDF-Eingabedokument und das XML-Dokument für das Lesezeichen aus.)
+   * Erstellen Sie ein `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. Dieses Collection-Objekt wird zum Speichern der PDF-Eingabedokumente und des XML-Dokuments für Lesezeichen verwendet.
+   * Erstellen Sie für jedes PDF-Eingabedokument und für das XML-Dokument des Lesezeichens ein `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
+   * Weisen Sie dem Feld `MyMapOf_xsd_string_To_xsd_anyType_Item` des Objekts einen Zeichenfolgenwert zu, der den Schlüsselnamen darstellt. `key` Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen.
+   * Weisen Sie das `BLOB`-Objekt, in dem das PDF-Dokument gespeichert wird, dem `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objektfeld `value` zu.
+   * hinzufügen Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt mit dem `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. Rufen Sie die `MyMapOf_xsd_string_To_xsd_anyType`-Methode des Objekts `Add` auf und übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. (Führen Sie diese Aufgabe für jedes PDF-Eingabedokument und das XML-Dokument für das Lesezeichen aus.)
 
 1. Legen Sie Laufzeitoptionen fest.
 
-   * Erstellen Sie ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenmember, der zum `AssemblerOptionSpec` Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, weisen Sie ihn `false` dem `AssemblerOptionSpec` Datenmember des `failOnError` Objekts zu.
+   * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe des Konstruktors speichert.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenmember, der zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, bei einem Fehler mit der Verarbeitung eines Auftrags fortzufahren, weisen Sie `false` dem `AssemblerOptionSpec`-Datenmember des Objekts `failOnError` zu.
 
 1. Stellen Sie das PDF-Dokument zusammen.
 
-   Rufen Sie die `AssemblerServiceClient` Objektmethode `invokeDDX` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `AssemblerServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`invokeDDX`
 
-   * Ein `BLOB` Objekt, das das DDX-Dokument darstellt
-   * Das `MyMapOf_xsd_string_To_xsd_anyType` Array mit den Eingabe-Dokumenten
-   * Ein `AssemblerOptionSpec` Objekt, das Laufzeitoptionen angibt
+   * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt
+   * Das `MyMapOf_xsd_string_To_xsd_anyType`-Array mit den Eingabe-Dokumenten
+   * Ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen angibt
 
-   Die `invokeDDX` Methode gibt ein `AssemblerResult` Objekt zurück, das die Ergebnisse des Auftrags sowie eventuell auftretende Ausnahmen enthält.
+   Die `invokeDDX`-Methode gibt ein `AssemblerResult`-Objekt zurück, das die Ergebnisse des Auftrags und eventuell auftretende Ausnahmen enthält.
 
 1. Speichern Sie das PDF-Dokument mit Lesezeichen.
 
    So rufen Sie das neu erstellte PDF-Dokument ab:
 
-   * Greifen Sie auf das `AssemblerResult` Objektfeld `documents` zu, das ein `Map` Objekt ist, das die PDF-Dokumente enthält.
-   * Durchlaufen Sie das `Map` Objekt, bis Sie den Schlüssel gefunden haben, der dem Namen des resultierenden Dokuments entspricht. Dann wird das Array-Element `value` in eine `BLOB`umgewandelt.
-   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf das `BLOB` Objektfeld `MTOM` zugreifen. Dadurch wird ein Bytearray zurückgegeben, das Sie in eine PDF-Datei schreiben können.
+   * Greifen Sie auf das Feld `AssemblerResult` des Objekts zu, bei dem es sich um ein `Map`-Objekt handelt, das die PDF-Dokumente des Ergebnisses enthält.`documents`
+   * Durchlaufen Sie das `Map`-Objekt, bis Sie den Schlüssel finden, der dem Namen des resultierenden Dokuments entspricht. Dann wird `value` des Array-Mitglieds in ein `BLOB` umgewandelt.
+   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf das `BLOB`-Objektfeld `MTOM` zugreifen. Dadurch wird ein Bytearray zurückgegeben, das Sie in eine PDF-Datei schreiben können.
 
 **Siehe auch**
 
