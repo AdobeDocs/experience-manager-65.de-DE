@@ -12,13 +12,16 @@ discoiquuid: e972ee05-f0cb-40ca-9ae2-34395791c709
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 46610888fd61900c52b197e73a8a5850dc9c4c35
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 90%
 
 ---
 
 
 # eCommerce{#ecommerce}
 
-* [Konzepte](/help/sites-administering/concepts.md)
+* [Konzepte ](/help/sites-administering/concepts.md)
 * [Verwaltung (generisch)](/help/sites-administering/generic.md)
 
 Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
@@ -124,15 +127,15 @@ Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit läs
 
 >[!NOTE]
 >
->Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/sites-deploying/ecommerce.md).
 >
->For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>Informationen zum Erweitern der eCommerce-Funktionen finden Sie unter [Entwickeln von eCommerce](/help/sites-developing/ecommerce.md).
 
 ## Zentrale Funktionen {#main-features}
 
 AEM eCommerce bietet Folgendes:
 
-* A number of **out-of-the-box AEM components** to illustrate what can be achieved for your project:
+* Eine Reihe von **vordefinierten AEM Komponenten** veranschaulichen, was für Ihr Projekt erreicht werden kann:
 
    * Produktanzeige
    * Warenkorb
@@ -140,6 +143,7 @@ AEM eCommerce bietet Folgendes:
    * Kürzlich angezeigte Produkte
    * Gutscheine
    * und mehr
+
    ![](assets/chlimage_1-130.png)
 
    >[!NOTE]
@@ -152,13 +156,14 @@ AEM eCommerce bietet Folgendes:
    * die Suche des eCommerce-Systems
    * die Suche eines Drittanbieters (z. B. Search&amp;Promote)
    * oder eine Kombination aus diesen Suchmöglichkeiten
+
    ![](assets/chlimage_1-131.png)
 
-* Uses the AEM ability to **present your content on multiple channels**, be that full browser window or mobile device. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
+* Verwendet die AEM Möglichkeit, **Ihre Inhalte auf mehreren Kanälen** anzuzeigen, sei es in diesem vollständigen Browserfenster oder Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
 
    ![](assets/chlimage_1-132.png)
 
-* Funktion zur **Entwicklung Ihrer eigenen Integrationsimplementierung basierend auf dem[AEM eCommerce-Framework](#the-framework)**.
+* Funktion zur **Entwicklung Ihrer eigenen Integrationsimplementierung basierend auf dem [AEM eCommerce-Framework](#the-framework)**.
 
    Die beiden aktuell verfügbaren Implementierungen setzen auf derselben Basis auf und nutzen die allgemeine API (das Framework). Bei der Implementierung einer neuen Integration müssen Sie nur die Funktionen implementieren, die für Ihre Implementierung erforderlich sind. Frontendkomponenten können von jeder neuen Implementierung genutzt werden, da sie Schnittstellen verwenden (und somit unabhängig von der Implementierung sind).
 
@@ -166,6 +171,7 @@ AEM eCommerce bietet Folgendes:
 
    * Beispielsweise können Sie einen Nachlass auf die Versandkosten anbieten, wenn der Gesamtbetrag der Bestellung einen bestimmten Wert überschreitet.
    * Oder Sie bieten saisonale Angebote an, die Profildaten (wie den Ort) nutzen. Diese könnten dann bei Bedarf abhängig von anderen Faktoren hervorgehoben werden.
+
    Im folgenden Beispiel wird ein Teaser angezeigt, da die Artikel im Warenkorb einen Wert von unter 75 USD aufweisen:
 
    ![](assets/chlimage_1-133.png)
@@ -184,14 +190,14 @@ AEM eCommerce bietet Folgendes:
 
 Im Abschnitt [Konzepte](/help/sites-administering/concepts.md) finden Sie detailliertere Informationen zum Framework. Nachfolgend erhalten Sie einen groben Überblick über das Framework:
 
-### Eigenschaften des Frameworks {#what}
+### Eigenschaften des Frameworks  {#what}
 
 * Das Integrationsframework stellt die API, mehrere Komponenten zur Veranschaulichung der Funktionalität und einige Erweiterungen für Beispiele für Anbindungsmethoden bereit.
 * Das Framework stellt die grundlegende Struktur bereit, die für eine Projektimplementierung erforderlich ist.
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
-### Why? {#why}
+### Warum? {#why}
 
 * Bereitstellung der grundlegenden Mechanismen, die zur schnellen Realisierung einer benutzerspezifischen eCommerce-Site erforderlich sind.
 * Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist
