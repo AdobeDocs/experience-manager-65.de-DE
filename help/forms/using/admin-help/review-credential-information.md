@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 translation-type: tm+mt
 source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ Die Berechtigung enthält Informationen zu ihrem vorgesehenen Zweck, auf die üb
 
 1. Öffnen Sie einen Webbrowser und geben Sie diese URL ein:
 
-   http://localhost:port/ReaderExtensions (where *port* is your application server’s port number)
+   http://localhost:port/ReaderExtensions (wobei *port* die Anschlussnummer Ihres Anwendungsservers ist)
 
 1. Melden Sie sich mit dem standardmäßigen Benutzernamen und Kennwort an:
 
