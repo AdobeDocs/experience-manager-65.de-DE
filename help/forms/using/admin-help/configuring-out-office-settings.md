@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 96%
 
 ---
 
@@ -36,14 +39,14 @@ Beim Erstellen eines Prozesses kann der Workbench-Benutzer festlegen, ob eine Au
 
 1. Klicken Sie auf einen Benutzernamen, um die Abwesenheitsinformationen dieses Benutzers unterhalb der Liste der Benutzer anzuzeigen.
 
-## Den Abwesenheitsstatus eines Benutzers ändern {#change-a-user-s-out-of-office-status}
+## Den Abwesenheitsstatus eines Benutzers ändern  {#change-a-user-s-out-of-office-status}
 
 1. Suchen Sie nach dem Benutzer, wie unter [Die Abwesenheitsinformationen eines Benutzers anzeigen](configuring-out-office-settings.md#view-a-user-s-out-of-office-information) beschrieben.
 1. Klicken Sie auf den Namen des Benutzers, der geändert werden soll.
 1. Wählen Sie in der Liste „*Benutzername* ist aktuell“ entweder „Im Hause“ oder „Nicht im Hause“ aus.
 1. Klicken Sie auf Speichern.
 
-## Einen Abwesenheitsdatumsbereich für einen Benutzer hinzufügen {#add-an-out-of-office-date-range-for-a-user}
+## Einen Abwesenheitsdatumsbereich für einen Benutzer hinzufügen  {#add-an-out-of-office-date-range-for-a-user}
 
 1. Suchen Sie nach dem Benutzer, wie unter [Die Abwesenheitsinformationen eines Benutzers anzeigen](configuring-out-office-settings.md#view-a-user-s-out-of-office-information) beschrieben.
 1. Klicken Sie auf den Namen des Benutzers, der geändert werden soll.
@@ -51,7 +54,7 @@ Beim Erstellen eines Prozesses kann der Workbench-Benutzer festlegen, ob eine Au
 1. Geben Sie eine Startzeit und Endzeit ein. Sie können zum Auswählen eines Datums auf das Kalendersymbol klicken. Wenn Sie keine Endzeit angeben, wird der Abwesenheitszeitraum des Benutzers auf unbefristet festgelegt.
 1. Klicken Sie auf Speichern.
 
-## Einen Benutzer für Abwesenheitsaufgaben zuweisen {#assign-a-user-for-out-of-office-tasks}
+## Einen Benutzer für Abwesenheitsaufgaben zuweisen  {#assign-a-user-for-out-of-office-tasks}
 
 Während ein Benutzer nicht im Hause ist, können Sie einen oder mehrere Benutzer zuweisen, die alle neuen Aufgaben für den Benutzer ausführen. Sie können die folgenden Konfigurationen einrichten:
 
