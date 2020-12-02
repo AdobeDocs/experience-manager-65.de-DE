@@ -26,7 +26,7 @@ Dieser Ansatz unterscheidet sich grundsätzlich von der Art und Weise, wie die A
 
 Die AEM-Plattform verwendet einen Knotenspeicher, der den Site-Inhalt vom Autor bis zur Veröffentlichung repliziert, während AEM Communities einen einzigen gemeinsamen Speicher für UGC verwendet, der nie repliziert wird.
 
-Für den allgemeinen UGC-Store muss ein [Datenspeicherung Resource Provider (SRP)](working-with-srp.md)gewählt werden. Die empfohlenen Optionen sind:
+Für den allgemeinen UGC-Store muss ein [Datenspeicherung Resource Provider (SRP)](working-with-srp.md) ausgewählt werden. Die empfohlenen Optionen sind:
 
 * [DSRP - Ressourcenanbieter für relationale Datenspeicherung](dsrp.md)
 * [MSRP - MongoDB Datenspeicherung Resource Provider](msrp.md)
@@ -38,28 +38,28 @@ Die Anforderung eines gemeinsamen Speichers führt zu den folgenden empfohlenen 
 
 >[!NOTE]
 >
->Für AEM Communities wird [UGC nie repliziert](working-with-srp.md#ugc-never-replicated).
+>Bei AEM Communities wird [UGC nie repliziert](working-with-srp.md#ugc-never-replicated).
 >
->Wenn die Bereitstellung keinen [gemeinsamen Speicher](working-with-srp.md)enthält, ist UGC nur in der AEM- oder Autoreninstanz sichtbar, in der sie eingegeben wurde.
+>Wenn die Bereitstellung keinen [gemeinsamen Speicher](working-with-srp.md) enthält, ist UGC nur auf der AEM- oder Autoreninstanz sichtbar, auf der sie eingegeben wurde.
 
 
 >[!NOTE]
 >
 >Weitere Informationen zur AEM finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md) und [Einführung in die AEM Plattform](../../help/sites-deploying/data-store-config.md).
 
-## zur Herstellung {#for-production}
+## Für Produktion {#for-production}
 
 Die Schaffung eines gemeinsamen Speicherplatzes für UGC ist unverzichtbar, und daher hängt der zugrunde liegende Einsatz von seiner Fähigkeit ab, einen gemeinsamen Speicher zu unterstützen.
 
 Zwei Beispiele:
 
-1. Wenn das erwartete UGC-Volumen hoch ist und eine lokale MongoDB-Instanz möglich ist, dann wäre die Auswahl [MSRP](msrp.md).
+1. Wenn das erwartete Volumen von UGC hoch ist und eine lokale MongoDB-Instanz möglich ist, dann wäre die Auswahl [MSRP](msrp.md).
 
-1. Für eine optimale Leistung bei Seiteninhalten würde die Auswahl einer [Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) und eines [ASRP](asrp.md) eine optimale Skalierung von UGC bei relativ unkomplizierten Vorgängen ermöglichen.
+1. Für eine optimale Leistung bei Seiteninhalten würde die Auswahl einer [Veröffentlichungsfarm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) und [ASRP](asrp.md) eine optimale Skalierung von UGC bei relativ unkomplizierten Vorgängen bieten.
 
 Für beide kann die Bereitstellung auf einem beliebigen OAK-Mikrokernel basieren.
 
-Um den passenden gemeinsamen Store auszuwählen, sollten Sie die einzigartigen [Eigenschaften](working-with-srp.md#characteristics-of-srp-options) jedes einzelnen sorgfältig berücksichtigen.
+Um den passenden gemeinsamen Store auszuwählen, sollten Sie die eindeutigen [Merkmale](working-with-srp.md#characteristics-of-srp-options) sorgfältig beachten.
 
 Weitere Informationen zu Oak-Mikrokernen finden Sie unter [Empfohlene Bereitstellungen](../../help/sites-deploying/recommended-deploys.md).
 
@@ -86,11 +86,11 @@ Wenn es sich bei der Topologie um eine Veröffentlichungsfarm handelt, sind folg
 | TarMK Farm (Standard) | JCR | JCR | JSRP | Nein |
 | Oak-Cluster | JCR | JCR | JSRP | Nur zur Veröffentlichung Umgebung |
 
-## für Entwicklung {#for-development}
+## Für Entwicklung {#for-development}
 
-Bei Nicht-Produktions-Umgebung bietet [JSRP](jsrp.md) eine einfache Möglichkeit, eine Entwicklungs-Umgebung mit einer Autoreninstanz und einer Veröffentlichungsinstanz einzurichten.
+Bei Nicht-Produktions-Umgebung bietet [JSRP](jsrp.md) eine einfache Möglichkeit, eine Development-Umgebung mit einer Autoreninstanz und einer Veröffentlichungsinstanz einzurichten.
 
-Bei Auswahl von [ASRP](asrp.md), [DSRP](dsrp.md) oder [MSRP](msrp.md) für die Produktion ist es auch möglich, eine ähnliche Entwicklungs-Umgebung mit Adobe On-Demand-Datenspeicherung oder MongoDB einzurichten. Ein Beispiel finden Sie unter [Wie Sie MongoDB für Demo](demo-mongo.md)einrichten.
+Wenn Sie für die Produktion [ASRP](asrp.md), [DSRP](dsrp.md) oder [MSRP](msrp.md) auswählen, ist es auch möglich, eine ähnliche Umgebung für die Entwicklung mit Adobe On-Demand-Datenspeicherung oder MongoDB einzurichten. Ein Beispiel finden Sie unter [HowTo Setup MongoDB for Demo](demo-mongo.md).
 
 ## Verweise {#references}
 
@@ -102,7 +102,7 @@ Bei Auswahl von [ASRP](asrp.md), [DSRP](dsrp.md) oder [MSRP](msrp.md) für die P
 
    Erläutert die Rollen von Benutzern und Benutzergruppen in den Umgebung zum Erstellen und Veröffentlichen.
 
-* UGC [Common Store](working-with-srp.md)
+* UGC [gemeinsamer Speicher](working-with-srp.md)
 
    Beschreibt die Datenspeicherung von Community-Inhalten, die vom Site-Inhalt getrennt sind.
 
