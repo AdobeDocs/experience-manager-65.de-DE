@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 translation-type: tm+mt
 source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 83%
 
 ---
 
 
 # Forms-Repository-Neustrukturierung in AEM 6.5{#forms-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Forms Solution. Einige Änderungen erfordern Arbeitsaufwand während des Aktualisierungsprozesses von AEM 6.5, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Umstrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand zu bewerten, der mit Repository-Änderungen verbunden ist, die die AEM Forms-Lösung beeinträchtigen. Einige Änderungen erfordern Arbeitsaufwand während des AEM 6.5-Aktualisierungsprozesses, während andere bis zu einem zukünftigen Upgrade verschoben werden können.
 
 **Mit der Aktualisierung auf 6.5**
 
@@ -105,7 +108,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 | **Leitfaden für die Neustrukturierung** | Das Dienstprogramm [Erleichterte Inhaltsmigration](/help/sites-deploying/lazy-content-migration.md) wird von der Migrationsoberfläche von Forms ausgelöst. |
 | **Hinweise** | Nicht zutreffend |
 
-### Typekit-Cloud-Service-Konfigurationen {#typekit-cloud-service-configurations}
+### Typekit-Cloud-Service-Konfigurationen  {#typekit-cloud-service-configurations}
 
 | **Vorheriger Speicherort** | `/etc/cloudservices/typekit` |
 |---|---|
@@ -113,7 +116,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 | **Leitfaden für die Neustrukturierung** | Das Dienstprogramm [Erleichterte Inhaltsmigration](/help/sites-deploying/lazy-content-migration.md) wird von der Migrationsoberfläche von Forms ausgelöst. |
 | **Hinweise** | Nicht zutreffend |
 
-### Verschiedenes {#misc-1}
+### Verschiedenes  {#misc-1}
 
 | **Vorheriger Speicherort** | `/etc/cloudservices/fdm` |
 |---|---|
@@ -124,6 +127,6 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 | **Vorheriger Speicherort** | `/etc/designs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp` |
-| **Leitfaden für die Neustrukturierung** | Any references to the /etc templates should eventually be updated to point to their `/libs` counterparts. |
+| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen sollten irgendwann aktualisiert werden, um auf ihre `/libs`-Entsprechungen zu verweisen. |
 | **Hinweise** | Nicht zutreffend |
 
