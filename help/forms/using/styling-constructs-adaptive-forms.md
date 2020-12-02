@@ -10,6 +10,9 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+workflow-type: tm+mt
+source-wordcount: '2322'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +25,7 @@ Kenntnisse im Umgang mit CSS und von LESS-Framework.
 
 ## Was angepasst werden kann {#what-can-be-customized}
 
-Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder früher) nur dann zu erstellen, wenn Sie mit dem [Design- Editor ](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)keine Komponenten formatieren können.
+Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu formatieren. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder früher) nur dann zu erstellen, wenn Sie mit dem [Design- Editor ](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html)keine Komponenten formatieren können.
 
 ## Anpassen von Stilen in adaptiven Formularen {#customizing-styles-in-adaptive-forms}
 
@@ -33,7 +36,7 @@ Sie können adaptive Formularstile wie folgt anpassen:
 * Design ändern
 * Ändern Sie den Stil der Komponente
 
-## Designänderung {#changing-theme}
+## Designänderung  {#changing-theme}
 
 Sie können das Design eines adaptiven Formulars ändern, um sicherzustellen, dass sein Erscheinungsbild mit den Webseiten konsistent ist, in denen das adaptive Formular eingebettet ist.
 
@@ -51,9 +54,9 @@ Basierend auf dem Bootstrap, definiert der folgende Satz von CSS-Eigenschaften d
 
 Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Elemente in einem adaptiven Formular definiert.
 
-## Änderung des Komponentenstils {#changing-component-style}
+## Änderung des Komponentenstils  {#changing-component-style}
 
-Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Um diese Aufgabe zu erfüllen, erstellen oder aktualisieren Sie Ihre benutzerdefinierten .css-Dateien, um die in diesem Artikel aufgeführten Stilkonstrukte einzuschließen.
+Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Um diese Aufgabe zu erreichen, erstellen oder aktualisieren Sie Ihre benutzerdefinierten .css-Dateien, um die in diesem Artikel aufgeführten Stilkonstrukte einzuschließen.
 
 Um ein Design auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie im Basisregister den Pfad der benutzerdefinierten CSS-Datei ein. Standard-Designkonstrukte des adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 
@@ -101,7 +104,7 @@ Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Fel
 
 ## Feldstile {#field-styling}
 
-Adaptive Formulare enthalten verschiedene Arten von Feldern. Jedes Feld verfügt über einen eindeutigen Klassennamen, der der Name des Feldes ist. The field also has a common class name `guideFieldNode`.
+Adaptive Formulare enthalten verschiedene Arten von Feldern. Jedes Feld verfügt über einen eindeutigen Klassennamen, der der Name des Feldes ist. Das Feld hat auch einen gemeinsamen Klassennamen `guideFieldNode`.
 
 Felder enthalten Beschriftungen, Widgets, Hilfebeschreibung (lange und kurze Beschreibungen) und Feldhilfesymbole (Fragezeichen).
 
@@ -137,7 +140,7 @@ Felder enthalten Beschriftungen, Widgets, Hilfebeschreibung (lange und kurze Bes
 
 ## Beschriftungsstile {#label-styling}
 
-The HTML element **label** used for the field includes the classes **left** or **top** depending on whether the label is at the top or left.
+Das für das Feld verwendete HTML-Element **label** enthält die Klassen **left** oder **top**, je nachdem, ob sich die Beschriftung oben oder links befindet.
 
 <table>
  <tbody>
@@ -177,7 +180,7 @@ The HTML element **label** used for the field includes the classes **left** or *
  </tbody>
 </table>
 
-The CSS rules for the label are applied using the **guideFieldLabel** label. Wenn Sie ein Verfasser sind, überschreiben Sie diese Regel, um Ihre benutzerdefinierten Änderungen vorzunehmen.
+Die CSS-Regeln für die Beschriftung werden mit der Beschriftung **guideFieldLabel** angewendet. Wenn Sie ein Verfasser sind, überschreiben Sie diese Regel, um Ihre benutzerdefinierten Änderungen vorzunehmen.
 
 ## Widget-Stile {#widgets-styling}
 
@@ -281,13 +284,13 @@ Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die
  </tbody>
 </table>
 
-### Einschränkungen beim Widget-Stil {#limitations-in-widget-styling}
+### Einschränkungen beim Widget-Stil  {#limitations-in-widget-styling}
 
 Der Stil für fokussierte, deaktivierte und Pflichtfelder ist auf Variablen eingeschränkt. Sie können diese jedoch ändern, indem Sie die Stile überschreiben. Einschränkungen mithilfe von Variablen wird hauptsächlich dazu verwendet, um die Anzahl der Variablen zu kontrollieren. Die Einschränkung kann gelockert werden, wenn sich das Erscheinungsbild eines Felds drastisch ändert, da es sich in einem der zuvor besprochenen Status befindet.
 
 ## Hilfebeschreibung {#help-description}
 
-Der Verfasser kann den Hilfeinhalt in den Feldern unter Verwendung der kurzen und langen Beschreibung angeben. Both components have a common class `.guideHelpDescription` and another class `.long`/ `.short`, depending on the type of description. Der Hilfeinhalt wird in einem Absatzelement eingeschlossen, um den Stil der Beschreibung zu überschreiben. Die Hilfebeschreibung (lang und kurz) wird mithilfe der Variablen geändert. Angefangen wird mit Widgets-Hilfe, wie in der nachfolgenden Tabelle angegeben:
+Der Verfasser kann den Hilfeinhalt in den Feldern unter Verwendung der kurzen und langen Beschreibung angeben. Beide Komponenten haben eine gemeinsame Klasse `.guideHelpDescription` und eine andere Klasse `.long`/ `.short`, je nach Typ der Beschreibung. Der Hilfeinhalt wird in einem Absatzelement eingeschlossen, um den Stil der Beschreibung zu überschreiben. Die Hilfebeschreibung (lang und kurz) wird mithilfe der Variablen geändert. Angefangen wird mit Widgets-Hilfe, wie in der nachfolgenden Tabelle angegeben:
 
 <table>
  <tbody>
@@ -326,7 +329,7 @@ Der Verfasser kann den Hilfeinhalt in den Feldern unter Verwendung der kurzen un
  </tbody>
 </table>
 
-## Geschäftsbedingungen {#terms-and-conditions}
+## Geschäftsbedingungen  {#terms-and-conditions}
 
 Mit dem Bedingungs-(TnC`` ``)Widget können Sie Bedingungen angeben. Sie können das Widget mithilfe von Variablen, die in der folgenden Tabelle beschrieben sind, anpassen.
 
@@ -351,7 +354,7 @@ Mit dem Bedingungs-(TnC`` ``)Widget können Sie Bedingungen angeben. Sie können
 
 Schaltflächen sind auch Widgets. Allerdings unterscheidet sich deren Stil von Widgets. In den adaptiven Formularen bildet Folgendes eine Schaltflächen:
 
-* [inputtype = text]
+* input[type = text]
 * button
 * Element mit Klasse .button
 
@@ -567,7 +570,7 @@ Mit dem Dateianhangswidget von adaptiven Formularen können Sie Dateien hochlade
  </tbody>
 </table>
 
-## Navigatorstile {#navigator-styles}
+## Navigatorstile  {#navigator-styles}
 
 Es gibt vier Arten von Navigatorregisterkarten. Dazu gehören Registerkarten links, oben, im Assistenten und im Akkordeon. Jeder Navigator beinhaltet eine andere Klasse.
 
@@ -979,7 +982,7 @@ Diese Variablen beeinflussen die Überschriftenleiste, die auf einem Mobilgerät
  </tbody>
 </table>
 
-## Scroll-Indikator {#scroll-indicator}
+## Scroll-Indikator  {#scroll-indicator}
 
 Diese Variablen beeinflussen den Scroll-Indikator, der als orangefarbener Pfeil auf einem Mobilgerät oder auf Geräten mit kleinem Bildschirm angezeigt wird. Der Scroll-Indikator zeigt an, dass es Inhalt gibt, der über den sichtbaren Bereich des Bildschirms hinausgeht. Sie können nach unten blättern, um diesen Inhalt anzuzeigen. Wenn Sie das Ende des Inhalts erreichen, wird der Pfeil nicht mehr angezeigt.
 
@@ -1017,7 +1020,7 @@ Diese Variablen beeinflussen den Scroll-Indikator, der als orangefarbener Pfeil 
  </tbody>
 </table>
 
-## Feste spezifische Variablen für das Symbolleistenlayout für Mobilgeräte {#mobile-fixed-toolbar-layout-specific-variables}
+## Feste spezifische Variablen für das Symbolleistenlayout für Mobilgeräte  {#mobile-fixed-toolbar-layout-specific-variables}
 
 Diese Variablen in der folgenden Tabelle beeinflussen das feste Symbolleistenlayout für Mobilgeräte.
 
@@ -1071,9 +1074,9 @@ Diese Variablen in der folgenden Tabelle beeinflussen das feste Symbolleistenlay
  </tbody>
 </table>
 
-## Designspezifische Variable {#theme-specific-variable}
+## Designspezifische Variable  {#theme-specific-variable}
 
-The **Simple enrollment** theme at /etc/clientlibs/fd/af/guidetheme/simpleEnrollment and the category `guide.theme.simpleEnrollment` also introduce a few variables. Wenn Sie ein Thema erstellen möchten, das die einfache Registrierung verbessert, können Sie die folgenden &quot;zusätzlichen Variablen verwenden:
+Das **Einfache Einschreibung**-Design unter /etc/clientlibs/fd/af/guidetheme/simpleEnrollment und die Kategorie `guide.theme.simpleEnrollment` führen auch einige Variablen ein. Wenn Sie ein Thema erstellen möchten, das die einfache Registrierung verbessert, können Sie die folgenden &quot;zusätzlichen Variablen verwenden:
 
 <table>
  <tbody>
