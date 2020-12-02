@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
 source-git-commit: e594c53b2a26c1c9e484ac07220dc89c283cf7da
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 89%
 
 ---
 
@@ -98,7 +101,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
    <td>Beschreibt bewährte Verfahren beim Arbeiten mit Berechtigungen und Berechtigungen </td>
   </tr>
   <tr>
-   <td>Workflows</td>
+   <td>Workflows  </td>
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Best Practices für Workflows – Konfiguration</a></td>
    <td>Workflows ermöglichen Ihnen die Automatisierung der Aktivitäten von Adobe Experience Manager (AEM) und können einen großen Anteil der Verarbeitung in einer AEM-Umgebung ausmachen, sodass es sehr zu empfehlen ist, Ihre Workflows und Implementierungen sorgfältig zu planen und zu konfigurieren.</td>
   </tr>
