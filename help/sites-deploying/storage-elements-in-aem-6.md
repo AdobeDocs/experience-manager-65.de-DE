@@ -12,6 +12,9 @@ discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 81%
 
 ---
 
@@ -35,7 +38,7 @@ Derzeit sind in AEM 6 zwei Implementierungen von Knotenspeicher verfügbar: TAR
 
 >[!CAUTION]
 >
->Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak geändert.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 zu org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
+>Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak geändert.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 bis org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
 
 Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Binärdateien und verwendet dabei die Standardkonfigurationsoptionen. Führen Sie folgende Schritte aus, um die Speichereinstellungen manuell zu konfigurieren:
 
@@ -44,7 +47,7 @@ Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Bi
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Create a folder named `crx-quickstart\install` in the installation directory.
+1. Erstellen Sie im Installationsordner einen Ordner mit dem Namen `crx-quickstart\install`.
 
 1. Erstellen Sie die Datei `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` im neu erstellten Ordner.
 
@@ -66,18 +69,18 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Make sure that MongoDB is installed and an instance of `mongod` is running. Weitere Informationen finden Sie unter [Installieren von MongoDB](https://docs.mongodb.org/manual/installation/).
-1. Create a folder named `crx-quickstart\install` in the installation directory.
+1. Vergewissern Sie sich, dass MongoDB installiert ist und eine Instanz von `mongod` ausgeführt wird. Weitere Informationen finden Sie unter [Installieren von MongoDB](https://docs.mongodb.org/manual/installation/).
+1. Erstellen Sie im Installationsordner einen Ordner mit dem Namen `crx-quickstart\install`.
 1. Konfigurieren Sie den Knotenspeicher. Erstellen Sie dazu eine Konfigurationsdatei mit dem Namen der Konfiguration, die Sie im Verzeichnis `crx-quickstart\install` verwenden möchten.
 
-   The Document Node Store (which is the basis for AEM&#39;s MongoDB storage implementation) uses a file called `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   Der Dokument Node Store (der die Grundlage für die Implementierung AEM MongoDB-Datenspeicherung bildet) verwendet eine Datei mit dem Namen `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Bearbeiten Sie die Datei und legen Sie die Konfigurationsoptionen fest. Die folgenden Optionen sind verfügbar:
 
-   * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Der Standardwert lautet `mongodb://localhost:27017`
+   * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Standard: `mongodb://localhost:27017`
    * `db` : Name der Mongo-Datenbank. Standardmäßig wird bei AEM 6-Installationen **aem-author** als Datenbankname verwendet.
-   * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Der Standardwert lautet 256.
-   * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Zwischenspeichern unterschiedlicher Ausgaben verwendet wird. Der Standardwert lautet 256.
+   * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Standard: 256.
+   * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Zwischenspeichern unterschiedlicher Ausgaben verwendet wird. Standard: 256.
    * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert lautet „false“.
 
 1. Erstellen Sie eine Konfigurationsdatei mit der PID des Datenspeichers, in dem Sie die Datei verwenden und bearbeiten möchten, um die Konfigurationsoptionen festzulegen. Weitere Informationen finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern](/help/sites-deploying/data-store-config.md).
@@ -88,14 +91,14 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie na
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Where **`-r`** is the backend runmode. In diesem Beispiel beginnt dieser mit MongoDB-Unterstützung.
+   Dabei ist **`-r`** der Backend-Runmode. In diesem Beispiel beginnt dieser mit MongoDB-Unterstützung.
 
-#### Deaktivieren von Transparent Huge Pages {#disabling-transparent-huge-pages}
+#### Deaktivieren von Transparent Huge Pages  {#disabling-transparent-huge-pages}
 
 Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP (Transparent Huge Pages). Während AEM feinkörnige Lese- und Schreibvorgänge durchführt, ist THP für große Operationen optimiert. Aus diesem Grund wird empfohlen, dass Sie THP auf Tar- und Mongospeicher deaktivieren. Um den Algorithmus zu deaktivieren, führen Sie die folgenden Schritte aus:
 
-1. Open the `/etc/grub.conf` file in the text editor of your choice.
-1. Add the following line to the **grub.conf** file:
+1. Öffnen Sie die Datei `/etc/grub.conf` im Texteditor Ihrer Wahl.
+1. hinzufügen Sie die folgende Zeile in die Datei **grub.conf** ein:
 
    ```
    transparent_hugepage=never
@@ -117,8 +120,9 @@ Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP
 >
 >Zusätzlich können Sie auch die folgenden Ressourcen konsultieren:
 >
->* For more information regarding Transparent Huge Pages on Red Hat Linux, see this [article](https://access.redhat.com/solutions/46111).
->* For Linux tuning tips, see this [article](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>* Weitere Informationen zu transparenten großen Seiten unter Red Hat Linux finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
+>* Tipps zur Linux-Anpassung finden Sie in diesem [Artikel](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 
