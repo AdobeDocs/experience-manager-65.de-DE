@@ -30,10 +30,10 @@ Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfra
 
 Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 
-* Enable the use of content fragment models in the [Configuration Browser](/help/sites-administering/configurations.md)
+* Aktivieren Sie die Verwendung von Inhaltsfragmentmodellen im [Konfigurationsbrowser](/help/sites-administering/configurations.md)
 * Wenden Sie die Konfiguration auf Ihren Assets-Ordner an
 
-### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager   {#enable-content-fragment-models-in-configuration-manager}
+### Aktivieren Sie Inhaltsfragmentmodelle in Configuration Manager    {#enable-content-fragment-models-in-configuration-manager}
 
 Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-model), **müssen** Sie Inhaltsfragmentmodelle zunächst über Configuration Manager aktivieren:
 
@@ -70,7 +70,7 @@ Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbare
 
 1. Speichern Sie das leere Modell über **Erstellen**. Eine Benachrichtigung zeigt an, dass der Vorgang erfolgreich abgeschlossen wurde. Daraufhin können Sie das Modell über die Option **Öffnen** direkt bearbeiten oder über **Fertig** zur Konsole zurückkehren.
 
-## Definieren des Inhaltsfragmentmodells   {#defining-your-content-fragment-model}
+## Definieren des Inhaltsfragmentmodells    {#defining-your-content-fragment-model}
 
 Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehenden Inhaltsmodells. Mit dem Modell-Editor können Sie die erforderlichen Felder hinzufügen und konfigurieren:
 
@@ -140,7 +140,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
    >[!NOTE]
    Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells   {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells    {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 
