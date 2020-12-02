@@ -25,7 +25,7 @@ Wenn Sie neue Komponenten entwickeln, müssen Sie die Grundlagen ihrer Struktur 
 
 Dazu müssen Sie den theoretischen Hintergrund kennenlernen und sich mit den vielfältigen Komponenten-Implementierungen in einer standardmäßigen AEM-Instanz vertraut machen. Der zuletzt genannte Ansatz wird ein Stück weit durch die Tatsache erschwert, dass AEM zwar standardmäßig eine neue, moderne Touch-optimierte Benutzeroberfläche einsetzt, die klassische Benutzeroberfläche aber nach wie vor unterstützt.
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
 In diesem Abschnitt werden zentrale Konzepte und Schwierigkeiten erläutert. Er bietet so einen guten Einstieg in die Entwicklung eigener Komponenten.
 
@@ -37,7 +37,7 @@ Bevor Sie mit der Konfiguration oder dem Code Ihrer Komponente beginnen, sollten
    * Eine eindeutige Spezifikation hilft in allen Phasen der Entwicklung, des Testings und der Übergabe. Details können sich im Laufe der Zeit ändern, woraufhin die Spezifikation jedoch aktualisiert werden kann (Änderungen sollten jedoch ebenso dokumentiert werden).
 * Müssen Sie die Komponente komplett neu entwickeln oder können Sie die Grundlagen von einer vorhandenen Komponente übernehmen?
    * Sie müssen das Rad nicht neu erfinden.
-   * There are several mechanisms provided by AEM to allow you to inherit and extend details from another component definition including override, overlay, and the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
+   * Es gibt mehrere Mechanismen, die AEM bereitstellen, um Ihnen zu ermöglichen, Details von einer anderen Komponentendefinition zu übernehmen und zu erweitern, einschließlich Überschreiben, Überlagerung und dem [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
 * Benötigt die Komponente eine Logik zur Auswahl/Bearbeitung des Inhalts?
    * Die Logik sollte getrennt von der Ebene der Benutzeroberfläche aufbewahrt werden. HTL dient dazu, dies sicherzustellen.
 * Benötigt Ihre Komponente eine CSS-Formatierung?
@@ -50,8 +50,9 @@ Bevor Sie mit der Konfiguration oder dem Code Ihrer Komponente beginnen, sollten
 Bevor es um die Entwicklung von Komponenten geht, müssen Sie wissen, welche Benutzeroberfläche Ihre Autoren verwenden:
 
 * **Touch-optimierte Benutzeroberfläche**
-   [Die Standardbenutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) basiert auf der einheitlichen Benutzererfahrung für das Adobe Marketing Cloud und verwendet dabei die zugrunde liegenden Technologien der Benutzeroberfläche [von](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral und der Benutzeroberfläche von [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-* **Klassische Benutzeroberfläche** auf Grundlage der ExtJS-Technologie, die mit AEM 6.4 veraltet wurde.
+   [Die Standardbenutzeroberfläche ](/help/sites-developing/touch-ui-concepts.md) basiert auf der einheitlichen Benutzererfahrung für das Adobe Marketing Cloud und verwendet dabei die zugrunde liegenden Technologien der  [Coral ](/help/sites-developing/touch-ui-concepts.md#coral-ui) UI [ und der ](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite-Benutzeroberfläche.
+* **Classic**
+UIUser-Schnittstelle basierend auf der ExtJS-Technologie, die mit AEM 6.4 veraltet wurde.
 
 Weitere Informationen finden Sie unter [Benutzeroberflächen-Empfehlungen für Kunden](/help/sites-deploying/ui-recommendations.md).
 
@@ -61,7 +62,7 @@ Daher werden auf dieser Seite die Grundlagen und die Erkennungsmerkmale beider V
 
 >[!NOTE]
 >
->Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Modernisierungstools](modernization-tools.md) können die Migration erleichtern.
+>Adobe empfiehlt die Nutzung der touchfähigen Benutzeroberfläche, um von der neuesten Technologie zu profitieren. [AEM Modernisierung ](modernization-tools.md) Toolscan erleichtert die Migration.
 
 ### Inhaltslogik und Rendering-Markup  {#content-logic-and-rendering-markup}
 
@@ -73,7 +74,7 @@ Dieser Ansatz wird durch [HTL](https://docs.adobe.com/content/help/de-DE/experie
 
 HTL ist eine HTML-Vorlagensprache, die mit AEM 6.0 eingeführt wurde.
 
-Die Frage, ob Sie bei der Entwicklung eigener Komponenten [HTL](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) oder JSP (Java Server Pages) nutzen sollten, ist leicht zu beantworten – immerhin ist HTL nun die empfohlene Skriptsprache für AEM.
+Die Frage, ob Sie bei der Entwicklung eigener Komponenten [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) oder JSP (Java Server Pages) nutzen sollten, ist leicht zu beantworten – immerhin ist HTL nun die empfohlene Skriptsprache für AEM.
 
 Sie können sowohl HTL als auch JSP für die Entwicklung von Komponenten für die klassische wie die Touch-optimierte Benutzeroberfläche verwenden. Zwar wird häufig angenommen, dass HTL nur für die Touch-optimierte und JSP für die klassische Benutzeroberfläche ist, doch diese Vermutung ist falsch und wohl auf die Tatsache zurückzuführen, dass die Touch-optimierte Benutzeroberfläche und HTL ungefähr zur selben Zeit in AEM integriert wurden. Da HTL nun die empfohlene Sprache ist, wird sie für neue Komponenten verwendet, die meistens für die Touch-optimierte Benutzeroberfläche ausgelegt sind.
 
@@ -92,24 +93,24 @@ Eine schnelle Möglichkeit für den Einstieg ist das Kopieren einer vorhandenen 
 
 * [Entwickeln von Komponenten](/help/sites-developing/developing-components-samples.md) (mit Schwerpunkt auf der Touch-optimierten Benutzeroberfläche)
 
-### Verschieben von Komponenten in die Veröffentlichungsinstanz {#moving-components-to-the-publish-instance}
+### Verschieben von Komponenten in die Veröffentlichungsinstanz  {#moving-components-to-the-publish-instance}
 
 Die Komponenten, die Inhalte rendern, müssen auf derselben AEM-Instanz bereitgestellt werden wie die Inhalte. Daher müssen alle Komponenten, die zum Verfassen und Rendern von Seiten auf der Autoreninstanz genutzt werden, auf der Veröffentlichungsinstanz bereitgestellt werden. Wenn sie bereitgestellt sind, stehen diese Komponenten zum Rendern aktivierter Seiten zur Verfügung.
 
 Mit den folgenden Tools können Sie Ihre Komponenten in die Veröffentlichungsinstanz verschieben:
 
-* [Verwenden Sie Package Manager](/help/sites-administering/package-manager.md) , um Ihre Komponenten einem Paket hinzuzufügen und in eine andere AEM Instanz zu verschieben.
+* [Verwenden Sie Package ](/help/sites-administering/package-manager.md) Manager, um Ihre Komponenten einem Paket hinzuzufügen und in eine andere AEM Instanz zu verschieben.
 * [Mit dem Replikationstool „Tree aktivieren“](/help/sites-authoring/publishing-pages.md#manage-publication) können Sie die Komponenten replizieren.
 
 >[!NOTE]
 >
 >Mit diesen Mechanismen können Sie Ihre Komponente auch zwischen anderen Instanzen verschieben, z. B. von der Entwicklungs- zur Testinstanz.
 
-### Komponenten, die Sie von Anfang an kennen sollten {#components-to-be-aware-of-from-the-start}
+### Komponenten, die Sie von Anfang an kennen sollten  {#components-to-be-aware-of-from-the-start}
 
 * Seite:
 
-   * AEM has the *page* component ( `cq:Page`).
+   * AEM hat die Komponente *page* ( `cq:Page`).
    * Dabei handelt es sich um eine bestimmte Art von Ressource, die für das Content-Management wichtig ist.
       * Eine Seite entspricht einer Webseite, die Inhalte für Ihre Website enthält.
 
@@ -118,7 +119,7 @@ Mit den folgenden Tools können Sie Ihre Komponenten in die Veröffentlichungsin
    * Das Absatzsystem ist eine wichtige Komponente einer Website, da es eine Liste an Absätzen verwaltet. Mit dem Absatzsystem werden die einzelnen Komponenten gespeichert und strukturiert, die die eigentlichen Inhalte enthalten.
    * Sie können Absätze im Absatzsystem erstellen, verschieben, kopieren und löschen.
    * Sie können auch Komponenten auswählen, die zur Verwendung in einem bestimmten Absatzsystem verfügbar sein sollen.
-   * There are various paragraph systems available within a standard instance (for example `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+   * Innerhalb einer Standardinstanz stehen verschiedene Absatzsysteme zur Verfügung (z. B. `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Struktur {#structure}
 
@@ -132,7 +133,7 @@ Die Struktur einer AEM-Komponente ist leistungsstark und flexibel. Die wichtigst
 * Verfügbarkeit von Komponenten
 * Komponenten und die von ihnen erstellten Inhalte
 
-### Ressourcentyp {#resource-type}
+### Ressourcentyp  {#resource-type}
 
 Ein zentrales Element der Struktur ist der Ressourcentyp.
 
@@ -161,7 +162,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
    * jcr-Eigenschaften:
 
-      A list of jcr properties; these are variable and some may be optional though the basic structure of a component node, its properties and subnodes are defined by the `cq:Component` definition
+      eine Liste von jcr-Eigenschaften; diese Variablen sind variabel und einige können optional sein, obwohl die grundlegende Struktur eines Komponenten-Knotens, seine Eigenschaften und Unterknoten durch die `cq:Component`-Definition definiert werden.
 
    * Ressourcen:
 
@@ -194,22 +195,22 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
       Hinweis: Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponenten-Browser oder Sidekick aufgeführt, selbst wenn die cq:editConfig nicht vorhanden ist.
 
-   * `cq:childEditConfig (cq:EditConfig)` - Steuert die Aspekte der Autorenbenutzeroberfläche für untergeordnete Komponenten, die keine eigenen definieren `cq:editConfig`.
+   * `cq:childEditConfig (cq:EditConfig)` - Steuert die Aspekte der Autorenbenutzeroberfläche für untergeordnete Komponenten, die keine eigenen definieren  `cq:editConfig`.
    * Touch-optimierte Benutzeroberfläche:
 
-      * `cq:dialog` ( `nt:unstructured`) - Dialog für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
-      * `cq:design_dialog` ( `nt:unstructured`) - Designbearbeitung für diese Komponente
+      * `cq:dialog` (  `nt:unstructured`) - Dialog für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
+      * `cq:design_dialog` (  `nt:unstructured`) - Designbearbeitung für diese Komponente
    * Klassische Benutzeroberfläche:
 
-      * `dialog` ( `cq:Dialog`) - Dialog für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
-      * `design_dialog` ( `cq:Dialog`) - Designbearbeitung für diese Komponente.
+      * `dialog` (  `cq:Dialog`) - Dialog für diese Komponente. Definiert die Oberfläche, über die Benutzer die Komponente konfigurieren und/oder Inhalte bearbeiten können.
+      * `design_dialog` (  `cq:Dialog`) - Designbearbeitung für diese Komponente.
 
 
 #### Komponentensymbol in der Touch-optimierten Benutzeroberfläche {#component-icon-in-touch-ui}
 
 Das Symbol oder die Abkürzung für die Komponente wird über die JCR-Eigenschaften der Komponente definiert, wenn die Komponente vom Entwickler erstellt wird. Diese Eigenschaften werden in der folgenden Reihenfolge ausgewertet und die erste erkannte gültige Eigenschaft wird verwendet.
 
-1. `cq:icon` - String-Eigenschaft, die auf ein Standardsymbol in der [Coral UI-Bibliothek](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verweist und im Komponenten-Browser angezeigt wird
+1. `cq:icon` - String-Eigenschaft, die auf ein Standardsymbol in der  [Coral UI-Bibliothek verweist und im Komponenten-Browser angezeigt ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) wird
    * Verwenden Sie den Wert des HTML-Attributs des Coral-Symbols.
 1. `abbreviation` - String-Eigenschaft zum Anpassen der Abkürzung des Komponentennamens im Komponenten-Browser
    * Die Abkürzung sollte auf zwei Zeichen beschränkt sein.
@@ -217,23 +218,23 @@ Das Symbol oder die Abkürzung für die Komponente wird über die JCR-Eigenschaf
       * Beispiel: „Gr“ für „Grafik“.
       * Zum Erstellen der Abkürzung wird der lokalisierte Titel verwendet.
    * Die Abkürzung wird nur übersetzt, wenn die Komponente die Eigenschaft `abbreviation_commentI18n` aufweist, die dann als Anweisung für eine Übersetzung genutzt wird.
-1. `cq:icon.png` oder `cq:icon.svg` - Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird
+1. `cq:icon.png` oder  `cq:icon.svg` - Symbol für diese Komponente, das im Komponenten-Browser angezeigt wird
    * Symbole von Standardkomponenten haben eine Größe von 20 x 20 Pixeln.
       * Größere Symbole werden verkleinert (clientseitig).
    * Die empfohlene Farbe ist rgb(112, 112, 112) > #707070
    * Der Hintergrund von Symbolen von Standardkomponenten ist transparent.
-   * Only `.png` and `.svg` files are supported.
-   * If importing from the file system via Eclipse plugin, filenames need to be esacaped as `_cq_icon.png` or `_cq_icon.svg` for example.
-   * `.png` hat Vorrang, `.svg` wenn beide vorhanden sind
+   * Es werden nur die Dateien `.png` und `.svg` unterstützt.
+   * Beim Import aus dem Dateisystem über das Eclipse-Plugin müssen Dateinamen beispielsweise mit `_cq_icon.png` oder `_cq_icon.svg` versehen werden.
+   * `.png` hat Vorrang,  `.svg` wenn beide vorhanden sind
 
-If none of the above properties ( `cq:icon`, `abbreviation`, `cq:icon.png` or `cq:icon.svg`) are found on the component:
+Wenn keine der oben genannten Eigenschaften ( `cq:icon`, `abbreviation`, `cq:icon.png` oder `cq:icon.svg`) für die Komponente gefunden wird:
 
 * Das System sucht nach denselben Eigenschaften bei den übergeordneten Komponenten, die der Eigenschaft `sling:resourceSuperType` folgen.
-* If nothing or an empty abbreviation is found at the super component level, the system will build the abbreviation from the first letters of the `jcr:title` property of the current component.
+* Wenn auf der Superkomponentenebene nichts oder eine leere Abkürzung gefunden wird, erstellt das System die Abkürzung aus den ersten Buchstaben der `jcr:title`-Eigenschaft der aktuellen Komponente.
 
 Um die Vererbung von Symbolen von übergeordneten Komponenten zu deaktivieren, legen Sie eine leere Eigenschaft `abbreviation` für die Komponente fest. Das Standardverhalten wird daraufhin erneut aktiviert.
 
-The [Component Console](/help/sites-authoring/default-components-console.md#component-details) displays how the icon for a particular component is defined.
+Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md#component-details) zeigt an, wie das Symbol für eine bestimmte Komponente definiert wird.
 
 #### Beispiel: SVG-Symbol {#svg-icon-example}
 
@@ -265,12 +266,12 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td>.<br /> </td>
    <td><code>cq:Component</code></td>
-   <td>Aktuelle Komponente. A component is of node type <code>cq:Component</code>.<br /> </td>
+   <td>Aktuelle Komponente. Eine Komponente ist vom Knotentyp <code>cq:Component</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Gruppe, aus der die Komponente im Komponenten-Browser (Touch-optimierte Benutzeroberfläche) oder Sidekick (klassische Benutzeroberfläche) ausgewählt werden kann.<br /> Ein Wert von <code>.hidden</code> wird für Komponenten verwendet, die nicht über die Benutzeroberfläche ausgewählt werden können, wie z. B. die eigentlichen Absatzsysteme.</td>
+   <td>Gruppe, aus der die Komponente im Komponenten-Browser (Touch-optimierte Benutzeroberfläche) oder Sidekick (klassische Benutzeroberfläche) ausgewählt werden kann.<br /> Ein Wert von  <code>.hidden</code> wird für Komponenten verwendet, die nicht über die Benutzeroberfläche ausgewählt werden können, wie z. B. die Absatzsysteme.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -408,14 +409,14 @@ Zu den wichtigen Eigenschaften gehören:
 
 Zu den wichtigen untergeordneten Knoten gehören:
 
-* `cq:editConfig` ( `cq:EditConfig`) - dies kontrolliert visuelle Aspekte; Sie kann beispielsweise das Erscheinungsbild einer Leiste oder eines Widgets definieren oder benutzerdefinierte Steuerelemente hinzufügen
-* `cq:childEditConfig` ( `cq:EditConfig`) - Diese Funktion steuert die visuellen Aspekte für untergeordnete Komponenten, die keine eigenen Definitionen haben.
+* `cq:editConfig` (  `cq:EditConfig`) - dies kontrolliert visuelle Aspekte; Sie kann beispielsweise das Erscheinungsbild einer Leiste oder eines Widgets definieren oder benutzerdefinierte Steuerelemente hinzufügen
+* `cq:childEditConfig` (  `cq:EditConfig`) - Diese Funktion steuert die visuellen Aspekte für untergeordnete Komponenten, die keine eigenen Definitionen haben.
 * Touch-optimierte Benutzeroberfläche:
-   * `cq:dialog` ( `nt:unstructured`) - definiert das Dialogfeld zum Bearbeiten des Inhalts dieser Komponente
-   * `cq:design_dialog` ( `nt:unstructured`) - gibt die Entwurfsbearbeitungsoptionen für diese Komponente an
+   * `cq:dialog` (  `nt:unstructured`) - definiert das Dialogfeld zum Bearbeiten des Inhalts dieser Komponente
+   * `cq:design_dialog` (  `nt:unstructured`) - gibt die Entwurfsbearbeitungsoptionen für diese Komponente an
 * Klassische Benutzeroberfläche:
-   * `dialog` ( `cq:Dialog`) - Definiert das Dialogfeld zum Bearbeiten des Inhalts dieser Komponente (spezifisch für die klassische Benutzeroberfläche)
-   * `design_dialog` ( `cq:Dialog`) - gibt die Entwurfsbearbeitungsoptionen für diese Komponente an
+   * `dialog` (  `cq:Dialog`) - Definiert das Dialogfeld zum Bearbeiten des Inhalts dieser Komponente (spezifisch für die klassische Benutzeroberfläche)
+   * `design_dialog` (  `cq:Dialog`) - gibt die Entwurfsbearbeitungsoptionen für diese Komponente an
    * `icon.png` – Grafikdatei, die als Symbol für die Komponente im Sidekick genutzt werden soll
    * `thumbnail.png` – Grafikdatei, die als Miniaturansicht der Komponente beim Ziehen aus dem Sidekick genutzt werden soll
 
@@ -441,7 +442,7 @@ Dialogdefinitionen sind spezifisch für jede Benutzeroberfläche.
       * definieren das Dialogfeld für die Bearbeitung von Inhalten dieser Komponente
       * speziell für die Touch-optimierte Benutzeroberfläche
       * werden mit Komponenten der Granite-Benutzeroberfläche definiert
-      * have a property `sling:resourceType`, as standard Sling content structure
+      * über eine Eigenschaft `sling:resourceType` als standardmäßige Sling-Inhaltsstruktur verfügen
       * können die Eigenschaft `helpPath` aufweisen, um die kontextabhängige Hilferessource festzulegen (absoluter oder relativer Pfad), auf die bei Auswahl des Hilfesymbols ausgewählt ist.
          * Bei standardmäßigen Komponenten verweist diese Eigenschaft häufig auf eine Seite in der Dokumentation.
          * Wenn kein `helpPath` festgelegt ist, wird die Standard-URL (Übersichtsseite der Dokumentation) angezeigt.
@@ -471,7 +472,7 @@ Dialogdefinitionen sind spezifisch für jede Benutzeroberfläche.
    In einem klassischen Dialogfeld:
 
    * können Sie Dialogfeld wie `cq:Dialog` erstellen, die eine einzige Registerkarte aufweisen, wie in der Text-Komponente. Wenn Sie mehrere Registerkarten benötigen, wie in der Textbild-Komponente, können Sie das Dialogfeld als `cq:TabPanel` definieren.
-   * a `cq:WidgetCollection` ( `items`) is used to provide a base for either input fields ( `cq:Widget`) or further tabs ( `cq:Widget`). Diese Hierarchie kann erweitert werden.
+   * Ein `cq:WidgetCollection` ( `items`) wird verwendet, um eine Basis für Eingabefelder ( `cq:Widget`) oder weitere Registerkarten ( `cq:Widget`) bereitzustellen. Diese Hierarchie kann erweitert werden.
 
 
 ### Designdialogfelder {#design-dialogs}
@@ -499,7 +500,7 @@ Nachdem eine Komponente definiert wurde, muss sie zur Verwendung bereitgestellt 
 
 ### Komponenten und die von ihnen erstellten Inhalte {#components-and-the-content-they-create}
 
-If we create and configure an instance of the **Title** component on the page: `<content-path>/Prototype.html`
+Wenn Sie eine Instanz der Komponente **Title** auf der Seite erstellen und konfigurieren: `<content-path>/Prototype.html`
 
 * Touch-optimierte Benutzeroberfläche
 
@@ -524,13 +525,13 @@ Sehen Sie sich besonders den tatsächlichen Text für eine **Titel**-Komponente 
 
 Die definierten Eigenschaften sind von den einzelnen Definitionen abhängig. Zwar können sie komplexer als oben dargestellt sein, folgen aber dennoch denselben grundlegenden Prinzipien.
 
-## Komponentenhierarchie und Vererbung {#component-hierarchy-and-inheritance}
+## Komponentenhierarchie und Vererbung  {#component-hierarchy-and-inheritance}
 
 Komponenten in AEM unterliegen drei verschiedenen Hierarchien:
 
 * **Ressourcentyp-Hierarchie**
 
-   Dies wird zum Erweitern von Komponenten mithilfe der Eigenschaft verwendet `sling:resourceSuperType`. Dies aktiviert die Vererbung für die Komponente. Beispielsweise erbt eine Textkomponente verschiedene Attribute von der Standardkomponente.
+   Dies wird zum Erweitern von Komponenten mithilfe der Eigenschaft `sling:resourceSuperType` verwendet. Dies aktiviert die Vererbung für die Komponente. Beispielsweise erbt eine Textkomponente verschiedene Attribute von der Standardkomponente.
 
    * Skripte (aufgelöst durch Sling)
    * Dialogfelder
@@ -542,7 +543,7 @@ Komponenten in AEM unterliegen drei verschiedenen Hierarchien:
 
    So können Sie beispielsweise Konfigurationseinstellungen für die Schaltflächen auf der Bearbeitungsleiste, das Layout von Steuerungen (Bearbeitungsleiste, Rollover) oder von Dialogfeldern (eingebunden, unverankert) auf der übergeordneten Komponente definieren und an die untergeordneten Komponenten übergeben.
 
-   Configuration settings (related to edit functionality) in `cq:editConfig` and `cq:childEditConfig` are propagated.
+   Konfigurationseinstellungen (im Zusammenhang mit der Bearbeitungsfunktion) in `cq:editConfig` und `cq:childEditConfig` werden übertragen.
 
 * **Hierarchie einschließen**
 
@@ -572,14 +573,14 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
 
 * [ `cq:editConfig` untergeordnete Knoten](#configuring-with-cq-editconfig-child-nodes):
 
-   * `cq:dropTargets` (Knotentyp `nt:unstructured`): definiert eine Liste von Dropdown-Zielgruppen, die ein Ablegen aus einem Asset der Inhaltssuche akzeptieren können
+   * `cq:dropTargets` (Knotentyp  `nt:unstructured`): definiert eine Liste von Dropdown-Zielgruppen, die ein Ablegen aus einem Asset der Inhaltssuche akzeptieren können
 
       * Mehrere Ablageziele sind nur in der klassischen Benutzeroberfläche verfügbar.
       * In der Touch-optimierten Benutzeroberfläche ist nur ein einziges Ablageziel zulässig.
-   * `cq:actionConfigs` (Knotentyp `nt:unstructured`): definiert eine Liste neuer Aktionen, die an die Liste &quot;cq:actions&quot;angehängt werden.
-   * `cq:formParameters` (Knotentyp `nt:unstructured`): definiert zusätzliche Parameter, die dem Dialogfeld hinzugefügt werden.
-   * `cq:inplaceEditing` (Knotentyp `cq:InplaceEditingConfig`): definiert eine ersetzende Bearbeitungskonfiguration für die Komponente.
-   * `cq:listeners` (Knotentyp `cq:EditListenersConfig`): definiert, was vor oder nach einer Aktion für die Komponente geschieht.
+   * `cq:actionConfigs` (Knotentyp  `nt:unstructured`): definiert eine Liste neuer Aktionen, die an die Liste &quot;cq:actions&quot;angehängt werden.
+   * `cq:formParameters` (Knotentyp  `nt:unstructured`): definiert zusätzliche Parameter, die dem Dialogfeld hinzugefügt werden.
+   * `cq:inplaceEditing` (Knotentyp  `cq:InplaceEditingConfig`): definiert eine ersetzende Bearbeitungskonfiguration für die Komponente.
+   * `cq:listeners` (Knotentyp  `cq:EditListenersConfig`): definiert, was vor oder nach einer Aktion für die Komponente geschieht.
 
 
 >[!NOTE]
@@ -600,11 +601,11 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
 
 Es gibt zahlreiche vorhandene Konfigurationen im Repository. Sie können einfach nach bestimmten Eigenschaften oder untergeordneten Knoten suchen:
 
-* To look for a property of the `cq:editConfig` node, e.g. `cq:actions`, you can use the Query tool in **CRXDE Lite** and search with the following XPath query string:
+* Um nach einer Eigenschaft des Knotens `cq:editConfig` zu suchen, z. `cq:actions` können Sie das Tool Abfrage in **CRXDE Lite** verwenden und mit der folgenden XPath-Abfrage-Zeichenfolge suchen:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* To look for a child node of `cq:editConfig`, e.g. you can search for `cq:dropTargets`, which is of type `cq:DropTargetConfig`; you can use the Query tool in** CRXDE Lite** and search with the following XPath query string:
+* Um nach einem untergeordneten Knoten von `cq:editConfig` zu suchen, können Sie z. B. nach `cq:dropTargets` suchen, der vom Typ `cq:DropTargetConfig` ist; Sie können das Tool Abfrage in** CRXDE Lite** verwenden und mit der folgenden XPath-Abfrage-Zeichenfolge suchen:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -612,7 +613,7 @@ Es gibt zahlreiche vorhandene Konfigurationen im Repository. Sie können einfach
 
 ### cq:actions {#cq-actions}
 
-The `cq:actions` property ( `String array`) defines one or several actions that can be performed on the component. Folgende Werte stehen für die Konfiguration zur Verfügung:
+Die `cq:actions`-Eigenschaft ( `String array`) definiert eine oder mehrere Aktionen, die für die Komponente ausgeführt werden können. Folgende Werte stehen für die Konfiguration zur Verfügung:
 
 <table>
  <tbody>
@@ -622,7 +623,7 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr>
   <tr>
    <td><code>text:&lt;some text&gt;</code></td>
-   <td>Zeigt den statischen Textwert &lt;beliebiger Text&gt;<br /> Nur in der klassischen Benutzeroberfläche sichtbar. Die Touch-optimierte Benutzeroberfläche zeigt keine Aktionen in einem Kontextmenü an; daher trifft dieser Eigenschaftswert für sie nicht zu.</td>
+   <td>Zeigt den statischen Textwert &lt;beliebiger Text&gt;<br /> Nur in der klassischen Benutzeroberfläche sichtbar an. Die Touch-optimierte Benutzeroberfläche zeigt keine Aktionen in einem Kontextmenü an; daher trifft dieser Eigenschaftswert für sie nicht zu.</td>
   </tr>
   <tr>
    <td>-</td>
@@ -634,7 +635,7 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr>
       <tr>
     <td><code>editannotate</code></td>
-    <td>Fügt eine Schaltfläche zum Bearbeiten der Komponente und zum Zulassen von <a href="/help/sites-authoring/annotations.md">Anmerkungen</a>hinzu.</td>
+    <td>Fügt eine Schaltfläche hinzu, um die Komponente zu bearbeiten und <a href="/help/sites-authoring/annotations.md">Anmerkungen</a> zuzulassen.</td>
    </tr>
   <tr>
    <td><code>delete</code></td>
@@ -671,7 +672,7 @@ Die folgende Konfiguration fügt den Text „Inherited Configurations from Base 
 
 ### cq:layout (nur klassische Benutzeroberfläche) {#cq-layout-classic-ui-only}
 
-The `cq:layout` property ( `String`) defines how the component can be edited in the classic UI. Die folgenden Werte sind verfügbar:
+Die `cq:layout`-Eigenschaft ( `String`) definiert, wie die Komponente in der klassischen Benutzeroberfläche bearbeitet werden kann. Die folgenden Werte sind verfügbar:
 
 <table>
  <tbody>
@@ -681,11 +682,11 @@ The `cq:layout` property ( `String`) defines how the component can be edited in 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Standardwert. Die Komponentenausgabe ist "on mouse over" über Klicks und/oder Kontextmenü zugänglich.<br /> Für erweiterte Verwendungen beachten Sie, dass das entsprechende clientseitige Objekt: <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Standardwert. Die Komponentenausgabe ist "on mouse over" über Klicks und/oder Kontextmenü zugänglich.<br /> Für erweiterte Verwendungen beachten Sie, dass das entsprechende clientseitige Objekt:  <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>Auf die Komponentenausgabe kann über eine Symbolleiste zugegriffen werden.<br /> Für erweiterte Verwendungen beachten Sie, dass das entsprechende clientseitige Objekt: <code>CQ.wcm.EditBar</code>.</td>
+   <td>Auf die Komponentenausgabe kann über eine Symbolleiste zugegriffen werden.<br /> Für erweiterte Verwendungen beachten Sie, dass das entsprechende clientseitige Objekt:  <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -710,7 +711,7 @@ Die folgenden Konfigurationen fügen eine Bearbeitungsschaltfläche zur Bearbeit
 
 ### cq:dialogMode (nur klassische Benutzeroberfläche) {#cq-dialogmode-classic-ui-only}
 
-Sie können die Komponente mit einem Dialogfeld „Bearbeiten“ verknüpfen. The `cq:dialogMode` property ( `String`) defines how the component dialog will be opened in the classic UI. Die folgenden Werte sind verfügbar:
+Sie können die Komponente mit einem Dialogfeld „Bearbeiten“ verknüpfen. Die `cq:dialogMode`-Eigenschaft ( `String`) definiert, wie das Komponentendialogfeld in der klassischen Benutzeroberfläche geöffnet wird. Die folgenden Werte sind verfügbar:
 
 <table>
  <tbody>
@@ -728,7 +729,7 @@ Sie können die Komponente mit einem Dialogfeld „Bearbeiten“ verknüpfen. Th
   </tr>
   <tr>
    <td><code>auto</code></td>
-   <td>Wenn die Komponentenbreite kleiner als der clientseitige <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> Wert ist, ist das Dialogfeld schwebend, andernfalls ist es inline.</td>
+   <td>Wenn die Komponentenbreite kleiner als der clientseitige <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code>-Wert ist, ist das Dialogfeld schwebend, andernfalls ist es inline.</td>
   </tr>
  </tbody>
 </table>
@@ -750,26 +751,26 @@ Die folgende Konfiguration definiert eine Bearbeitungsleiste mit einer Bearbeitu
 
 ### cq:emptyText {#cq-emptytext}
 
-The `cq:emptyText` property ( `String`) defines text that is displayed when no visual content is present. Standardwert ist: `Drag components or assets here`.
+Die `cq:emptyText`-Eigenschaft ( `String`) definiert den Text, der angezeigt wird, wenn kein sichtbarer Inhalt vorhanden ist. Standardwert ist: `Drag components or assets here`.
 
 ### cq:inherit {#cq-inherit}
 
-The `cq:inherit` property ( `boolean`) defines whether missing values are inherited from the component that it inherits from. Standardwert ist `false`.
+Die `cq:inherit`-Eigenschaft ( `boolean`) definiert, ob fehlende Werte von der Komponente übernommen werden, von der sie übernommen wird. Standardwert ist `false`.
 
 ### dialogLayout {#dialoglayout}
 
 Die Eigenschaft `dialogLayout` legt fest, wie ein Dialogfeld standardmäßig geöffnet werden soll.
 
-* A value of `fullscreen` opens the dialog in full screen.
+* Der Wert `fullscreen` öffnet das Dialogfeld im Vollbildmodus.
 * Bei einem leeren Wert oder einer fehlenden Eigenschaft wird das Dialogfeld standardmäßig normal geöffnet.
 * Hinweis: Benutzer können den Vollbildmodus jederzeit innerhalb des Dialogfelds aktivieren.
 * Gilt nicht für die klassische Benutzeroberfläche.
 
-### Konfigurieren mit untergeordneten cq:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
+### Konfigurieren mit untergeordneten cq:EditConfig-Knoten  {#configuring-with-cq-editconfig-child-nodes}
 
 ### cq:dropTargets {#cq-droptargets}
 
-The `cq:dropTargets` node (node type `nt:unstructured`) defines a list of drop targets that can accept a drop from an asset dragged from the content finder. Er dient als Sammlung von Knoten des Typs `cq:DropTargetConfig`.
+Der Knoten `cq:dropTargets` (Knotentyp `nt:unstructured`) definiert eine Liste von Dropdown-Zielgruppen, die ein Ablegen eines aus der Inhaltssuche gezogenen Assets akzeptieren können. Er dient als Sammlung von Knoten des Typs `cq:DropTargetConfig`.
 
 >[!NOTE]
 >
@@ -777,19 +778,19 @@ The `cq:dropTargets` node (node type `nt:unstructured`) defines a list of drop t
 >
 >In der Touch-optimierten Benutzeroberfläche wird nur das erste Ziel verwendet.
 
-Each child node of type `cq:DropTargetConfig` defines a drop target in the component. Der Knotenname ist wichtig, da er im JSP wie folgt verwendet werden muss, um den CSS-Klassennamen zu erzeugen, der dem DOM-Element zugewiesen wird, das das effektive Ablageziel ist:
+Jeder untergeordnete Knoten des Typs `cq:DropTargetConfig` definiert eine Drop-Zielgruppe in der Komponente. Der Knotenname ist wichtig, da er im JSP wie folgt verwendet werden muss, um den CSS-Klassennamen zu erzeugen, der dem DOM-Element zugewiesen wird, das das effektive Ablageziel ist:
 
 ```
 <drop target css class> = <drag and drop prefix> +
  <node name of the drop target in the edit configuration>
 ```
 
-Die `<drag and drop prefix>` wird durch die Java-Eigenschaft definiert:
+Das `<drag and drop prefix>` wird durch die Java-Eigenschaft definiert:
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-For example, the class name is defined as follows in the JSP of the Download component
-( `/libs/foundation/components/download/download.jsp`), where `file` is the node name of the drop target in the edit configuration of the Download component:
+Beispielsweise wird der Klassenname im JSP der Download-Komponente wie folgt definiert
+( `/libs/foundation/components/download/download.jsp`), wobei `file` der Knotenname der Drop-Zielgruppe in der Bearbeitungskonfiguration der Download-Komponente ist:
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
@@ -830,7 +831,7 @@ Die folgende Konfiguration stammt aus der Download-Komponente. Sie ermöglicht e
 
 ### cq:actionConfigs (nur klassische Benutzeroberfläche) {#cq-actionconfigs-classic-ui-only}
 
-The `cq:actionConfigs` node (node type `nt:unstructured`) defines a list of new actions that are appended to the list defined by the `cq:actions` property. Jeder untergeordnete Knoten von `cq:actionConfigs`definiert eine Aktion, indem er ein Widget definiert.
+Der Knoten `cq:actionConfigs` (Knotentyp `nt:unstructured`) definiert eine Liste neuer Aktionen, die an die Liste angehängt werden, die durch die Eigenschaft `cq:actions` definiert wird. Jeder untergeordnete Knoten von `cq:actionConfigs`definiert eine Aktion, indem er ein Widget definiert.
 
 Die folgende Beispielkonfiguration definiert eine neue Schaltfläche (mit einem Trennzeichen für die klassische Benutzeroberfläche):
 
@@ -839,7 +840,7 @@ Die folgende Beispielkonfiguration definiert eine neue Schaltfläche (mit einem 
    * Dies wird nur von der klassischen Benutzeroberfläche verwendet.
    * Diese Definition wird von der Touch-optimierten Benutzeroberfläche ignoriert, weil xtypes ignoriert werden (und Trennzeichen unnötig sind, da die Aktionssymbolleiste in der Touch-optimierten Benutzeroberfläche anders aufgebaut ist).
 
-* a button named **Manage comments** that runs the handler function `CQ_collab_forum_openCollabAdmin()`.
+* eine Schaltfläche mit dem Namen **Kommentare verwalten**, über die die Handler-Funktion `CQ_collab_forum_openCollabAdmin()` ausgeführt wird.
 
 ```
 <jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -863,7 +864,7 @@ Die folgende Beispielkonfiguration definiert eine neue Schaltfläche (mit einem 
 
 ### cq:formParameters {#cq-formparameters}
 
-The `cq:formParameters` node (node type `nt:unstructured`) defines additional parameters that are added to the dialog form. Jede Eigenschaft wird einem Formularparameter zugeordnet.
+Der Knoten `cq:formParameters` (Knotentyp `nt:unstructured`) definiert zusätzliche Parameter, die dem Dialogfeld hinzugefügt werden. Jede Eigenschaft wird einem Formularparameter zugeordnet.
 
 Die folgende Konfiguration fügt einen Parameter namens `name` mit dem Wert `photos/primary` zum Dialogfeldformular hinzu:
 
@@ -875,7 +876,7 @@ Die folgende Konfiguration fügt einen Parameter namens `name` mit dem Wert `pho
 
 ### cq:inplaceEditing {#cq-inplaceediting}
 
-The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an inplace editing configuration for the component. Er kann die folgenden Eigenschaften aufweisen:
+Der Knoten `cq:inplaceEditing` (Knotentyp `cq:InplaceEditingConfig`) definiert eine ersetzende Bearbeitungskonfiguration für die Komponente. Er kann die folgenden Eigenschaften aufweisen:
 
 <table>
  <tbody>
@@ -885,11 +886,11 @@ The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an in
   </tr>
   <tr>
    <td><code>active</code></td>
-   <td>(<code>boolean</code>) True, um die Bearbeitung der Komponente zu aktivieren.</td>
+   <td>(<code>boolean</code>) True, um die Bearbeitung der Komponente in Inplace zu aktivieren.</td>
   </tr>
   <tr>
    <td><code>configPath</code></td>
-   <td>(<code>String</code>) Path of the editor configuration. Die Konfiguration kann durch einen Konfigurationsknoten festgelegt werden.</td>
+   <td>(<code>String</code>) Pfad der Editorkonfiguration. Die Konfiguration kann durch einen Konfigurationsknoten festgelegt werden.</td>
   </tr>
   <tr>
    <td><code>editorType</code></td>
@@ -897,7 +898,7 @@ The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an in
     <ul>
      <li>Nur Text: für Nicht-HTML-Inhalte zu verwenden.<br /> </li>
      <li>title: ist ein verbesserter Texteditor, der grafische Titel vor Beginn der Bearbeitung in einen Klartext konvertiert. wird von der Geometrixx-Titel-Komponente genutzt<br /> </li>
-     <li>text: to be used for HTML content (uses the Rich Text Editor).<br /> </li>
+     <li>text: für HTML-Inhalte zu verwenden (verwendet den Rich Text Editor).<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -914,7 +915,7 @@ Die folgende Konfiguration aktiviert die Kontextbearbeitung der Komponente und l
 
 ### cq:listeners {#cq-listeners}
 
-The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happens before or after an action on the component. In der folgenden Tabelle sind die möglichen Eigenschaften aufgeführt.
+Der Knoten `cq:listeners` (Knotentyp `cq:EditListenersConfig`) definiert, was vor oder nach einer Aktion für die Komponente geschieht. In der folgenden Tabelle sind die möglichen Eigenschaften aufgeführt.
 
 <table>
  <tbody>
@@ -988,7 +989,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 
 >[!NOTE]
 >
->The `REFRESH_INSERTED` and `REFRESH_SELFMOVED` handlers are only available in the classic UI.
+>Die Handler `REFRESH_INSERTED` und `REFRESH_SELFMOVED` stehen nur in der klassischen Benutzeroberfläche zur Verfügung.
 
 >[!NOTE]
 >
@@ -998,7 +999,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 >
 >Bei verschachtelten Komponenten gibt es bestimmte Einschränkungen bezüglich der Aktionen, die als Eigenschaften auf dem Knoten `cq:listeners` definiert werden:
 >
->* For nested components, the values of the following properties *must* be `REFRESH_PAGE`: >
+>* Bei verschachtelten Komponenten müssen die Werte der folgenden Eigenschaften ** `REFRESH_PAGE` &lt;a2/> sein: >
 >  * `aftermove`
 >  * `aftercopy`
 
@@ -1007,13 +1008,13 @@ Der Ereignis-Handler kann mit einer angepassten Implementierung implementiert we
 
 `afteredit = "project.customerAction"`
 
-The following example is equivalent to the `REFRESH_INSERTED` configuration:
+Das folgende Beispiel entspricht der `REFRESH_INSERTED`-Konfiguration:
 
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
 >
->For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
+>Für die klassische Benutzeroberfläche, um zu sehen, welche Parameter in den Handlern verwendet werden können, lesen Sie den Abschnitt `before<action>` und `after<action>` Ereignis in der Widget-Dokumentation [ `CQ.wcm.EditBar` ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) und [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover).
 
 Mit der folgenden Konfiguration wird die Seite aktualisiert, nachdem die Komponente gelöscht, bearbeitet, eingefügt oder verschoben wurde:
 
