@@ -60,7 +60,7 @@ Apache kann mit JBoss mithilfe des HTTP- oder AJP-Protokolls kommunizieren.
    >
    >Wenn Sie einen Proxy verwenden, sind die folgenden Konfigurationsänderungen erforderlich:
    >
-   >* Access: *https://&lt;server>:&lt;port>/system/console/configMgr*
+   >* Zugriff: *https://&lt;server>:&lt;port>/system/console/configMgr*
    * Bearbeiten Sie die Konfiguration für Apache Sling Referrer Filter
    * Fügen Sie unter „Hosts zulassen“ den Eintrag für den Proxyserver hinzuf.
 
@@ -85,4 +85,4 @@ Apache kann mit JBoss mithilfe des HTTP- oder AJP-Protokolls kommunizieren.
    </Location>
    ```
 
-1. To access the AEM server, use https://[Apache_server]:80.
+1. Um auf den AEM-Server zuzugreifen, verwenden Sie https://[Apache_server]:80.
