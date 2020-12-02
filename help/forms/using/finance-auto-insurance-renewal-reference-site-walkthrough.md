@@ -36,9 +36,9 @@ Das Anwendungsszenario &quot;Wir.Finance Auto Insurance&quot;ist eine visuelle A
 * Sarah Rose, einen We.Finance-Kunden
 * Gloria Rios, Versicherungsmitarbeiterin, We.Finance
 
-### Gloria sendet eine Mitteilung zur Erneuerung der Versicherungspolice von We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
+### Gloria sendet eine Mitteilung zur Erneuerung der Versicherungspolice von We.Finance  {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria logs into AEM instance, clicks **Auto Insurance Renewal,** and then clicks **Open Agent UI.** Der Klick füllt das Versicherungs-Dokument mit den Richtliniendetails von Sarah Rose im Voraus aus. Gloria clicks **Submit** and a message is displayed on the screen “Submission Initiated” and then in few seconds “Submitted Successfully”.
+Gloria meldet sich bei AEM Instanz an, klickt auf **Autom. Versicherungsverlängerung,** und klickt dann auf **Benutzeroberfläche von Agenten öffnen.** Der Klick füllt das Versicherungs-Dokument mit den Richtliniendetails von Sarah Rose im Voraus aus. Gloria klickt auf **Senden** und auf dem Bildschirm &quot;Einsendung initiiert&quot;wird eine Meldung angezeigt und in wenigen Sekunden &quot;Erfolgreich gesendet&quot;.
 
 Sarah erhält eine E-Mail mit dem Betreff &quot;Ihre Auto-Versicherung Verlängerung&quot;.
 
@@ -46,15 +46,15 @@ Sarah erhält eine E-Mail mit dem Betreff &quot;Ihre Auto-Versicherung Verlänge
 
 #### Sehen Sie selbst{#see-it-yourself} 
 
-Go to **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Auto Insurance**. Select the Auto Insurance Renewal **interactive communication** and click **Open Agent UI**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie eine gültige E-Mail-Adresse ein, um die E-Mail mit dem angehängten Policy-Dokument zu erhalten, und klicken Sie auf Senden.
+Gehen Sie zu **Adobe Experience Manager** > **Forms** > **Forms und Dokumente** > **We.Finance** > **Auto Insurance**. Wählen Sie die automatische Versicherung **interaktive Kommunikation** und klicken Sie auf **Benutzeroberfläche des Agenten öffnen**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie eine gültige E-Mail-Adresse ein, um die E-Mail mit dem angehängten Policy-Dokument zu erhalten, und klicken Sie auf Senden.
 
-You can access and review the Auto Insurance Renewal interactive communication directly from `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Sie können direkt von `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.` auf die interaktive Kommunikation zur Auto-Versicherung zugreifen und sie überprüfen.
 
 ### Sarah erhält von We.Finance eine Mitteilung zur Erneuerung der Kfz-Versicherung und entscheidet sich für eine Erneuerung.{#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
 Sarah erhält eine E-Mail mit einem Anhang von We.Finance, der sie daran erinnert, dass ihre Auto-Versicherung läuft. Die Anlage ist die Druckversion ihres Autoversicherungsbriefs.
 
-Sarah clicks **Renew Now** and is directed to the web version of her Auto Insurance letter. Über diesem Brief hinaus findet Sarah noch viele Tage, bis ihre Richtlinie abläuft. Die Seite bietet Sarah einen grundlegenden Überblick über ihre Versicherungsrichtlinien wie Versicherungsnummer, Fälligkeitsbetrag und andere Informationen wie Rabatt-Angebote und Treuebelohnungen. Sarah again clicks **Renew Now** at the bottom of the policy.
+Sarah klickt auf **Jetzt verlängern** und wird zur Webversion ihres Autom. Versicherungsbriefs weitergeleitet. Über diesem Brief hinaus findet Sarah noch viele Tage, bis ihre Richtlinie abläuft. Die Seite bietet Sarah einen grundlegenden Überblick über ihre Versicherungsrichtlinien wie Versicherungsnummer, Fälligkeitsbetrag und andere Informationen wie Rabatt-Angebote und Treuebelohnungen. Sarah klickt erneut auf **Jetzt verlängern** unten in der Richtlinie.
 
 ![ref1](assets/ref1.png)
 
@@ -64,15 +64,15 @@ Die Web- und Druckausgabe Ihres Autom. Versicherungsbriefs wird mit den Funktion
 
 Die Schaltfläche „Jetzt erneuern“ in der E-Mail ist mit der Anwendung „Kfz-Versicherung erneuern“ verknüpft, die eine interaktive Kommunikation auf einer Veröffentlichungsinstanz ist.
 
-#### Sehen Sie selbst {#see-it-yourself-1}
+#### Sehen Sie selbst  {#see-it-yourself-1}
 
-Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF-Datei ist eine Druckversion Ihres Autoversicherungsantrags. Click **Renew Now** to reach to the web version of the policy. Check your personal information and policy details and click **Renew Now** which takes you to another Interactive Communication.
+Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF-Datei ist eine Druckversion Ihres Autoversicherungsantrags. Klicken Sie auf **Jetzt verlängern**, um zur Webversion der Richtlinie zu gelangen. Überprüfen Sie Ihre persönlichen Daten und Richtliniendetails und klicken Sie auf **Jetzt verlängern**, um zu einer anderen interaktiven Kommunikation zu gelangen.
 
-The **Renew Now** button in the email directs Sarah to the web version of the policy. Sie können folgende URL aufrufen:
+Die Schaltfläche **Jetzt verlängern** in der E-Mail leitet Sarah zur Webversion der Richtlinie. Sie können folgende URL aufrufen:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
-You can check the detailed summary of your Auto Insurance Renewal and click **Renew Now** at the bottom of the page.
+Sie können die detaillierte Zusammenfassung Ihrer Auto-Versicherung-Verlängerung überprüfen und unten auf der Seite auf **Jetzt verlängern** klicken.
 
 ### Sarah wird auf die Zahlungsseite geleitet.{#sarah-reaches-the-payment-page}
 
@@ -84,7 +84,7 @@ We.Finance leitet Sarah zur Zahlungsseite. Sarah überprüft ihre Richtliniennum
 
 #### Sehen Sie selbst{#see-it-yourself-2} 
 
-Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Fill in your Credit Card information, and click **Make Payment**.
+Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Geben Sie Ihre Kreditkarteninformationen ein und klicken Sie auf **Zahlung vornehmen**.
 
 Sie können die Zahlungsseite in der Authoring-Instanz unter
 
@@ -98,7 +98,7 @@ Sarah gibt ihre Kreditkartendetails ein und klickt auf **Zahlung ausführen**.
 
 Wenn Sarah die Kreditkartendaten eingibt und auf „Senden“ klickt, wird ihre Kreditkartenzahlung verarbeitet und auf dem Bildschirm erscheint eine Dankesnachricht, die im adaptiven Formular konfiguriert wurde.
 
-#### Sehen Sie selbst {#see-it-yourself-3}
+#### Sehen Sie selbst  {#see-it-yourself-3}
 
 Sie können die Bestätigungsmeldung anzeigen, nachdem Sie auf „Zahlung ausführen“ geklickt haben
 
