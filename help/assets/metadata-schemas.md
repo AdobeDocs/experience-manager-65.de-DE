@@ -1,5 +1,5 @@
 ---
-title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften in [!DNL Adobe Experience Manager Assets]. '
+title: 'Metadaten-Schema zum Definieren des Layouts der Metadateneigenschaften-Seite in [!DNL Adobe Experience Manager Assets]. '
 description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
 contentOwner: AG
 translation-type: tm+mt
@@ -15,37 +15,37 @@ ht-degree: 61%
 
 Organisationen verfügen über ein Metadatenmodell, das die Ermittlung, Verwendung, Interoperabilität usw. von Assets verbessert. Die Anwendung für korrekte Metadaten ist für die Aufrechterhaltung von metadatenbasierten Workflows und Prozessen ungefährlich. Um die unternehmensweite Metadatenstrategie und -standards einzuhalten, können Sie Metadaten-Schema verwenden, die DAM-Benutzern helfen, diese auszurichten. [!DNL Adobe Experience Manager] ermöglicht einfache und flexible Methoden zum Erstellen, Verwalten und Anwenden von Metadaten-Schemas.
 
-In [!DNL Adobe Experience Manager Assets]Schemas sind spezielle Felder enthalten, in die die spezifischen Informationen eingetragen werden sollen. Es enthält außerdem Layoutinformationen, um Metadatenfelder benutzerfreundlich anzuzeigen. Zu den Metadateneigenschaften gehören Titel, Beschreibung, MIME-Typen, Tags und mehr. You can use the [!UICONTROL Metadata Schema Forms] editor to modify the existing schemas or add custom metadata schemas.
+In [!DNL Adobe Experience Manager Assets] enthalten Schemas spezielle Felder, um bestimmte Informationen auszufüllen. Es enthält außerdem Layoutinformationen, um Metadatenfelder benutzerfreundlich anzuzeigen. Zu den Metadateneigenschaften gehören Titel, Beschreibung, MIME-Typen, Tags und mehr. Sie können den Editor [!UICONTROL Metadaten-Schema Forms] verwenden, um die vorhandenen Schema zu ändern oder benutzerspezifische Metadaten-Schema hinzuzufügen.
 
 Gehen Sie wie folgt vor, um die Eigenschaftsseite für ein Asset Ansicht und zu bearbeiten:
 
-1. Klicken Sie in den Schnellaktionen auf der Asset-Kachel in der Ansicht auf die Option &quot; **[!UICONTROL Ansicht-Eigenschaften]** &quot;. Alternativ können Sie ein Asset auswählen und dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]** - ![Ansichten](assets/do-not-localize/info-circle-icon.png) klicken.
+1. Klicken Sie auf die Option **[!UICONTROL Eigenschaften von Ansichten]** aus den Schnellaktionen auf der Elementkachel in der Ansicht der Karte. Alternativ können Sie ein Asset auswählen und dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]** ![Eigenschaften der Ansicht](assets/do-not-localize/info-circle-icon.png) klicken.
 
-1. Sie können die verschiedenen Eigenschaften bearbeitbarer Metadaten unter den verfügbaren Registerkarten bearbeiten. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
+1. Sie können die verschiedenen Eigenschaften bearbeitbarer Metadaten unter den verfügbaren Registerkarten bearbeiten. Das Asset [!UICONTROL Typ] kann jedoch auf der Eigenschaftenseite auf der Registerkarte [!UICONTROL Einfach] nicht geändert werden.
 
    ![Grundlegende Registerkarte der Asset-Eigenschaften, auf der der Asset-Typ nicht geändert werden kann](assets/asset-properties-basic-tab.png)
 
-*Abbildung: Registerkarte &quot;Einfach&quot;bei Asset-[!UICONTROL Eigenschaften].*
+*Abbildung: Registerkarte &quot;Einfach&quot;bei Asset- [!UICONTROL Eigenschaften].*
 
-Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Wenn Sie das Metadaten-Schema eines MIME-Typs ändern, wird das Layout der Eigenschaftsseite für die Assets und alle Untertypen geändert. Durch die Bearbeitung des jpeg-Schemas unter `default/image` wird nur das Metadaten-Layout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `image/jpeg` bearbeitet. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
+Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Weitere Informationen finden Sie unter [Metadaten-Schema bearbeiten Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms). Wenn Sie das Metadaten-Schema eines MIME-Typs ändern, wird das Layout der Eigenschaftsseite für die Assets und alle Untertypen geändert. Durch die Bearbeitung des jpeg-Schemas unter `default/image` wird nur das Metadaten-Layout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `image/jpeg` bearbeitet. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
 
-## Metadata Schema forms {#default-metadata-schema-forms}
+## Metadaten-Schema-Formulare {#default-metadata-schema-forms}
 
-Um eine Liste von Formularen oder Vorlagen Ansicht, navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
+Um eine Liste von Formularen oder Vorlagen Ansicht, navigieren Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
 
 [!DNL Experience Manager] stellt die folgenden Metadaten-Schema-Formularvorlagen bereit.
 
 | Vorlagen |  | Beschreibung |
 |---|---|---|
 | [!UICONTROL default] |  | Dies ist das Basisformular für Assets. |
-|  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
+|  | Die folgenden untergeordneten Formulare übernehmen die Eigenschaften des Formulars [!UICONTROL default]: |  |
 |  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schema-Formular für Videos mit dynamischen Medien. |
-|  | <ul><li>[!UICONTROL image]</li></ul> | Schema-Formular für Bilder mit dem MIME-Typ wie `image/jpeg` und `image/png`. <br> Das [!UICONTROL Bildformular] verfügt über die folgenden Vorlagen für untergeordnete Formulare: <ul><li> [!UICONTROL jpeg]: Schema-Formular für Assets mit [!UICONTROL JPEG]-Untertyp.</li> <li>[!UICONTROL tiff]: Schema-Formular für die Assets mit dem Untertyp TIFF.</li></ul> |
-|  | <ul><li>[!UICONTROL Anwendung]</li></ul> | Schema form for assets with MIME type such as `application/pdf` and `application/zip`. <br>[!UICONTROL pdf]: Schema-Formular für Assets mit dem Untertyp PDF. |
+|  | <ul><li>[!UICONTROL image]</li></ul> | Schema-Formular für Bilder mit dem MIME-Typ wie `image/jpeg` und `image/png`. <br> Das   Bildformular verfügt über die folgenden Vorlagen für untergeordnete Formulare: <ul><li> [!UICONTROL jpeg]: Schema-Formular für Assets mit  [!UICONTROL JPEG]-Untertyp.</li> <li>[!UICONTROL tiff]: Schema-Formular für die Assets mit dem Untertyp TIFF.</li></ul> |
+|  | <ul><li>[!UICONTROL Anwendung]</li></ul> | Schema-Formular für Assets mit MIME-Typ wie `application/pdf` und `application/zip`. <br>[!UICONTROL pdf]: Schema-Formular für Assets mit dem Untertyp PDF. |
 |  | <ul><li>[!UICONTROL Video]</li></ul> | Schema-Formular für Video-Assets mit MIME-Typ wie `video/avi` und `video/mp4`. |
 | [!UICONTROL collection] |  | Schema-Formular für Sammlungen. |
 | [!UICONTROL contentfragment] |  | [Schemaformular für Inhaltsfragmente](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] |  | Dieses Schema-Formular bezieht sich auf [Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Schema-Formular für vom Benutzer erstellte Inhaltselemente und Assets, die in Experience Manager aus sozialen Medien integriert sind. |
 
 >[!NOTE]
@@ -60,25 +60,25 @@ Gehen Sie wie folgt vor, um ein Metadaten-Schema-Formular hinzuzufügen:
 
    >[!NOTE]
    >
-   >Ein Sperrsymbol wird mit den nicht bearbeiteten Vorlagen angezeigt. Wenn Sie eine Vorlage anpassen, wird sie nicht gesperrt ![und geschlossen](assets/do-not-localize/lock_closed_icon.svg).
+   >Ein Sperrsymbol wird mit den nicht bearbeiteten Vorlagen angezeigt. Wenn Sie eine Vorlage anpassen, wird sie nicht gesperrt. ![Sperren](assets/do-not-localize/lock_closed_icon.svg).
 
-1. In the dialog, provide the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
+1. Geben Sie im Dialogfeld den Titel des Formulars ein und klicken Sie auf **[!UICONTROL Erstellen]**, um den Formularerstellungsprozess abzuschließen.
 
 ## Bearbeiten von Metadatenschema-Formularen {#edit-metadata-schema-forms}
 
 Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bearbeiten. Das Metadaten-Schema-Formular enthält Registerkarten und Formularelemente in Registerkarten. Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im CRX-Repository zuordnen bzw. dafür konfigurieren. Sie können dem Metadaten-Schema-Formular Registerkarten oder Formularelemente hinzufügen. Die vom übergeordneten Objekt abgeleiteten Registerkarten und Formularelemente sind gesperrt. Sie können auf untergeordneter Ebene nicht geändert werden.
 
-1. Wählen Sie auf der Forms [!UICONTROL -Seite &quot;] Metadaten-Schema&quot;ein Formular aus und klicken Sie in der Symbolleiste auf &quot; **[!UICONTROL Bearbeiten]** &quot;.
+1. Wählen Sie auf der Seite [!UICONTROL Metadaten-Schema Forms] ein Formular aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
-1. Passen Sie auf der Seite &quot; **[!UICONTROL Metadata Schema Form Editor]** &quot;das Metadatenformular an. Ziehen Sie die erforderlichen Komponenten aus der Registerkarte &quot;Formular **[!UICONTROL erstellen]** &quot;auf eine der Registerkarten.
+1. Passen Sie auf der Seite **[!UICONTROL Metadaten-Schema-Formulareditor]** das Metadatenformular an. Ziehen Sie die erforderlichen Komponenten aus der Registerkarte **[!UICONTROL Formular erstellen]** auf eine der Registerkarten.
 
    ![Metadaten-Schema-Editor zum Anpassen der Seite &quot;Asset-Eigenschaften&quot;](assets/metadata-schema-editor.png)
 
-   *Abbildung: Eine[!UICONTROL Metadaten-Schema-Formulareditorseite]mit verfügbaren Registerkarten.*
+   *Abbildung: Eine  [!UICONTROL Metadata Schema Form ] Editor-Seite mit verfügbaren Registerkarten.*
 
 1. Um eine Komponente zu konfigurieren, wählen Sie diese aus und ändern Sie ihre Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
 
-### Components within the [!UICONTROL Build Form] tab {#components-within-the-build-form-tab}
+### Komponenten innerhalb der Registerkarte [!UICONTROL Formular erstellen] {#components-within-the-build-form-tab}
 
 Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente, die Sie im Schemaformular verwenden. Die Registerkarte **[!UICONTROL Einstellungen]** enthält die Attribute für jedes Element, das Sie auf der Registerkarte **[!UICONTROL Formular erstellen]** auswählen. Die folgende Tabelle enthält die auf der Registerkarte **[!UICONTROL Formular erstellen]** verfügbaren Formularelemente:
 
@@ -101,11 +101,11 @@ Die Registerkarte **[!UICONTROL Formular erstellen]** enthält Formularelemente,
 
 #### Bearbeiten von Metadatenkomponenten {#edit-the-metadata-component}
 
-To edit the properties of a metadata component on the form, click the component to edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
+Um die Eigenschaften einer Metadatenkomponente im Formular zu bearbeiten, klicken Sie auf die Komponente, um alle oder eine Untergruppe der folgenden Eigenschaften in der Registerkarte **[!UICONTROL Einstellungen]** zu bearbeiten.
 
 **Feldbezeichnung**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
-**Zu Eigenschaft** zuordnen: Diese Eigenschaft gibt den relativen Pfad oder den Namen des Asset-Knotens an, in dem er im CRX-Repository gespeichert wird. It starts with `./` to indicate that the path is under the asset&#39;s node.
+**Zu Eigenschaft** zuordnen: Diese Eigenschaft gibt den relativen Pfad oder den Namen des Asset-Knotens an, in dem er im CRX-Repository gespeichert wird. Es wird mit `./` Beginn, um anzugeben, dass sich der Pfad unter dem Asset-Knoten befindet.
 
 Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
@@ -123,11 +123,11 @@ Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt ange
 * **Wahlen**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
 * **Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
 * **Klasse**: Objektklasse, der die Eigenschaft zugeordnet ist.
-* **Löschen**: Klicken Sie auf [!UICONTROL Löschen] , um eine Komponente aus dem Schema-Formular zu löschen.
+* **Löschen**: Klicken Sie auf   Löschen, um eine Komponente aus dem Schema-Formular zu löschen.
 
 >[!NOTE]
 >
->The [!UICONTROL Hidden Field] component does not include these attributes. Sie enthält stattdessen Eigenschaften wie die Attribute „Name“, „Wert“, „Feldbezeichnung“ und „Beschreibung“. Die Werte für die Komponente „Ausgeblendetes Feld“ werden beim Speichern des Assets als POST-Parameter gesendet. Sie werden nicht als Metadaten für das Asset gespeichert.
+>Die Komponente [!UICONTROL Ausgeblendetes Feld] enthält diese Attribute nicht. Sie enthält stattdessen Eigenschaften wie die Attribute „Name“, „Wert“, „Feldbezeichnung“ und „Beschreibung“. Die Werte für die Komponente „Ausgeblendetes Feld“ werden beim Speichern des Assets als POST-Parameter gesendet. Sie werden nicht als Metadaten für das Asset gespeichert.
 
 Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bedienfeld **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadatenvalidierung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. Die Suchergebnisse zeigen Assets an, denen erforderliche Metadaten fehlen, die Sie über das Schemaformular konfiguriert haben.
 
@@ -149,11 +149,11 @@ Anstatt die Eigenschaften für die Optionen auf der Registerkarte **[!UICONTROL 
 
 #### Hinzufügen oder Löschen von Registerkarten im Schemaformular {#adding-deleting-a-tab-in-the-schema-form}
 
-Mit dem Schema-Editor können Sie Registerkarten hinzufügen oder löschen. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
+Mit dem Schema-Editor können Sie Registerkarten hinzufügen oder löschen. Das Standardformular für Schemas enthält die Registerkarten **[!UICONTROL Basic]**, **[!UICONTROL Advanced]**, **[!UICONTROL IPTC]** und **[!UICONTROL IPTC Extension]**.
 
 ![Standardregisterkarten im Metadaten-Schema-Formular](assets/metadata-schema-form-tabs.png)
 
-Click `+` to add a tab on a schema form. By default, the new tab has the name `Unnamed-1`. Sie können den Namen auf der Registerkarte **[!UICONTROL Einstellungen]** ändern. Klicken Sie auf `X`, um eine Registerkarte zu löschen.
+Klicken Sie auf `+`, um einem Schema-Formular eine Registerkarte hinzuzufügen. Standardmäßig hat die neue Registerkarte den Namen `Unnamed-1`. Sie können den Namen auf der Registerkarte **[!UICONTROL Einstellungen]** ändern. Klicken Sie auf `X`, um eine Registerkarte zu löschen.
 
 ![hinzufügen oder Löschen einer Registerkarte mit dem Metadaten-Schema-Editor](assets/metadata-schema-form-new-tab.png)
 
@@ -176,7 +176,7 @@ Nachfolgend finden Sie einige Anwendungsfälle, für die Sie kaskadierende Metad
 * Ändern Sie die für ein bestimmtes Feld angezeigten Optionen basierend auf dem in einem anderen Wert angegebenen Wert.
 * Legen Sie den standardmäßigen Metadatenwert in einem bestimmten Feld basierend auf dem in einem anderen Feld angegebenen Wert fest.
 
-### Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+### Kaskadenmetadaten in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem} konfigurieren
 
 Stellen Sie sich ein Szenario vor, bei dem Sie kaskadierende Metadaten anzeigen möchten, die auf dem ausgewählten Assettyp basieren. Beispiele
 
@@ -185,14 +185,14 @@ Stellen Sie sich ein Szenario vor, bei dem Sie kaskadierende Metadaten anzeigen 
 
 Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen als erforderliches Feld an.
 
-1. Wechseln Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
-1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. Wechseln Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Schema Forms]** ein Schema-Formular aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste, um das Schema zu bearbeiten.
 
    ![Auswahlformular](assets/select_form.png)
 
 1. (Optional) Erstellen Sie im Metadatenschema-Editor ein neues bedingtes Feld. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** einen Namen und den Eigenschaftenpfad an.
 
-   To create a new tab, click `+` to add a tab and then add a metadata field.
+   Um eine neue Registerkarte zu erstellen, klicken Sie auf `+`, um eine Registerkarte hinzuzufügen, und fügen Sie dann ein Metadatenfeld hinzu.
 
    ![Registerkarte hinzufügen](assets/add_tab.png)
 
@@ -202,7 +202,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. Schlüssel-Wert-Paare sind die von einem Formularbenutzer angegebenen Optionen. Sie können Schlüssel-Wert-Paare entweder manuell oder über eine JSON-Datei angeben.
 
-   * To specify the values manually, select **[!UICONTROL Add Manually]**, and click **[!UICONTROL Add Choice]** and specify the option text and value. Legen Sie z. B. die Assettypen „Video“, „PDF“, „Word“ und „Bild“ fest.
+   * Um die Werte manuell anzugeben, wählen Sie **[!UICONTROL Hinzufügen Manuell]** und klicken Sie auf **[!UICONTROL Hinzufügen Auswahl]** und geben Sie den Optionstext und den -wert an. Legen Sie z. B. die Assettypen „Video“, „PDF“, „Word“ und „Bild“ fest.
 
    * Um die Werte dynamisch aus einer JSON-Datei abzurufen, wählen Sie **[!UICONTROL Über JSON-Pfad hinzufügen]** aus und geben Sie den Pfad einer JSON-Datei an. [!DNL Experience Manager] ruft die Schlüssel-Wert-Paare in Echtzeit ab, wenn das Formular dem Benutzer angezeigt wird.
 
@@ -229,7 +229,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
    ![Abhängigkeitsfeld auswählen](assets/select_dependentfield.png)
 
 1. Wählen Sie unter **[!UICONTROL Anforderung]** die Option **[!UICONTROL Erforderlich, basierend auf neuer Regel]** aus.
-1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Click **[!UICONTROL Done]** to save the changes.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen Regel]** und wählen Sie das Feld **[!UICONTROL Asset-Typ]**, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Klicken Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
 
    ![Regel festlegen](assets/define_rule.png)
 
@@ -239,7 +239,7 @@ Zeigen Sie unabhängig vom ausgewählten Asset-Typ die Copyright-Informationen a
 
 1. Wählen Sie unter **[!UICONTROL Sichtbarkeit]** die Option **[!UICONTROL Sichtbar, basierend auf neuer Regel]** aus.
 
-1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Click **[!UICONTROL Done]** to save the changes.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen Regel]** und wählen Sie das Feld **[!UICONTROL Asset-Typ]**, um eine Abhängigkeit zu erstellen. Wählen Sie auch den Feldwert, auf dessen Grundlage die Abhängigkeit erstellt werden soll. Wählen Sie in diesem Fall **[!UICONTROL Video]** aus. Klicken Sie auf **[!UICONTROL Fertig]**, um die Änderungen zu speichern.
 
    ![Sichtbarkeitsregel festlegen](assets/define_visibilityrule.png)
 
@@ -273,23 +273,23 @@ Um ein Formular zu löschen, wählen Sie ein Formular aus und klicken Sie auf &q
 
 >[!NOTE]
 >
->* Nachdem Sie benutzerdefinierte Änderungen an einem Standardformular gelöscht haben, wird vor dem Formular die ![Sperre geschlossen](assets/do-not-localize/lock_closed_icon.svg) erneut angezeigt. Es zeigt an, dass das Formular wieder in den Standardstatus zurückgesetzt wird.
->* Sie können die standardmäßigen Metadaten-Schema-Formulare in [!DNL Assets]nicht löschen.
+>* Nachdem Sie benutzerdefinierte Änderungen an einem Standardformular gelöscht haben, wird vor dem Formular die Sperrung ![Sperren](assets/do-not-localize/lock_closed_icon.svg) erneut angezeigt. Es zeigt an, dass das Formular wieder in den Standardstatus zurückgesetzt wird.
+>* Sie können die standardmäßigen Metadaten-Schema-Formulare in [!DNL Assets] nicht löschen.
 
 
 ## Schemaformulare für MIME-Typen   {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] stellt voreingestellte Standardformulare für verschiedene MIME-Typen bereit. Sie können jedoch benutzerdefinierte Formulare für verschiedene MIME-Typen hinzufügen.
 
-### Add new forms for MIME types {#add-new-forms-for-mime-types}
+### hinzufügen neuer Formulare für MIME-Typen {#add-new-forms-for-mime-types}
 
-Erstellen Sie ein Formular unter dem entsprechenden Formulartypen. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. Der Titel für das Schemaformular ist der Name des Untertyps. In this case, the title is `png`.
+Erstellen Sie ein Formular unter dem entsprechenden Formulartypen. Um beispielsweise eine Vorlage für den Untertyp `image/png` hinzuzufügen, erstellen Sie das Formular unter den &quot;image&quot;-Formularen. Der Titel für das Schemaformular ist der Name des Untertyps. In diesem Fall ist der Titel `png`.
 
-#### Use an existing schema template for various MIME types {#use-an-existing-schema-template-for-various-mime-types}
+#### Vorhandene Schema-Vorlage für verschiedene MIME-Typen {#use-an-existing-schema-template-for-various-mime-types} verwenden
 
 Sie können eine vorhandene Vorlage für einen anderen MIME-Typ verwenden. Nutzen Sie beispielsweise das Formular `image/jpeg` für Assets mit dem MIME-Typ `image/png`.
 
-In this case, create a node at `/etc/dam/metadataeditor/mimetypemappings` in the CRX repository. Geben Sie einen Namen für den Knoten an und definieren Sie die folgenden Eigenschaften:
+Erstellen Sie in diesem Fall einen Knoten unter `/etc/dam/metadataeditor/mimetypemappings` im CRX-Repository. Geben Sie einen Namen für den Knoten an und definieren Sie die folgenden Eigenschaften:
 
 | Name | Beschreibung | Typ | Wert |
 |------|-------------|------|-------|
@@ -314,7 +314,7 @@ In this case, create a node at `/etc/dam/metadataeditor/mimetypemappings` in the
 
 ## Zugriff auf Metadatenschemata gewähren {#grant-access-to-metadata-schemas}
 
-Die Funktion „Metadatenschema“ ist nur für Administratoren verfügbar. Administratoren können jedoch Zugriff auf Nicht-Administratoren gewähren, indem sie einige Berechtigungen ändern. Geben Sie an, ob Benutzer, die keine Administratoren sind, Berechtigungen für den `/conf` Ordner erstellen, ändern und löschen möchten.
+Die Funktion „Metadatenschema“ ist nur für Administratoren verfügbar. Administratoren können jedoch Zugriff auf Nicht-Administratoren gewähren, indem sie einige Berechtigungen ändern. Geben Sie an, ob Benutzer, die keine Administratoren sind, Berechtigungen für `/conf` erstellen, ändern und löschen möchten.
 
 ## Anwenden von ordnerspezifischen Metadaten {#apply-folder-specific-metadata}
 
@@ -328,21 +328,21 @@ Die Metadatenübernahme durch Assets richtet sich nach dem Schema, das auf den O
 
 Sie können ein anderes Schema auf den Unterordner anwenden. Die Assets in einem Unterordner übernehmen das Metadaten-Schema des unmittelbaren Unterordners. Wenn kein Schema oder dasselbe Schema auf Unterordnerebene angewendet wird, übernehmen die Assets Schema vom übergeordneten Ordner.
 
-1. Navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
-1. Select the check box before a form, for example the default metadata form, and click the **[!UICONTROL Copy]** and save it as a custom form. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
+1. Navigieren Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
+1. Aktivieren Sie das Kontrollkästchen vor einem Formular, z. B. das Standard-Metadatenformular, und klicken Sie auf **[!UICONTROL Kopieren]** und speichern Sie es als benutzerdefiniertes Formular. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
 
-1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click **[!UICONTROL Edit]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Metadaten-Schema Forms]** das `my_default`-Formular und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 
-1. Fügen Sie auf der Seite **[!UICONTROL Metadatenschema-Editor]** ein Textfeld in das Schemaformular ein. For example, add a field with the label **[!UICONTROL Category]**.
+1. Fügen Sie auf der Seite **[!UICONTROL Metadatenschema-Editor]** ein Textfeld in das Schemaformular ein. Fügen Sie beispielsweise ein Feld mit der Bezeichnung **[!UICONTROL Kategorie]** hinzu.
 
    ![Textfeld zum Metadaten-Schema-Formulareditor hinzugefügt](assets/text-field-metadata-schema-editor.png)
 
    *Abbildung: Textfeld zum Metadaten-Schema-Formulareditor hinzugefügt.*
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt.
-1. Click **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Auf Ordner anwenden]**, um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden.
 
-1. Select the folder on which to apply the modified schema and then click **[!UICONTROL Apply]**.
+1. Wählen Sie den Ordner aus, auf den das geänderte Schema angewendet werden soll, und klicken Sie dann auf **[!UICONTROL Apply]**.
 
    ![Ordner zum Anwenden des Metadaten-Schemas auswählen](assets/metadata-schema-select-folder.png)
 
@@ -350,15 +350,15 @@ Sie können ein anderes Schema auf den Unterordner anwenden. Die Assets in einem
 1. Klicken Sie auf **OK**, um die Erfolgsmeldung zu schließen.
 1. Navigieren Sie zu dem Ordner, auf den Sie das geänderte Metadatenschema angewendet haben.
 
-## Definieren obligatorischer Metadaten {#define-mandatory-metadata}
+## Definieren obligatorischer Metadaten  {#define-mandatory-metadata}
 
 Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hochgeladene Assets erzwungen werden. Wenn Sie Assets mit fehlenden Metadaten für die zuvor definierten Pflichtfelder hochladen, wird in den Assets in der Ansicht eine visuelle Anzeige für fehlende Metadaten angezeigt.
 
 >[!NOTE]
 >
->Ein Metadatenfeld kann je nach dem Wert eines weiteren Felds als Pflichtfeld definiert werden. In the card view, [!DNL Experience Manager] does not display the warning message about missing metadata for such mandatory metadata fields.
+>Ein Metadatenfeld kann je nach dem Wert eines weiteren Felds als Pflichtfeld definiert werden. In der Ansicht der Karte zeigt [!DNL Experience Manager] keine Warnmeldung zu fehlenden Metadaten für solche Pflichtmetadatenfelder an.
 
-1. Navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
+1. Navigieren Sie in der [!DNL Experience Manager]-Schnittstelle zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadaten-Schema]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
 1. Speichern Sie die Standard-Metadatenformulare als benutzerdefiniertes Formular. Speichern Sie sie beispielsweise unter dem Namen `my_default`.
 
 1. Bearbeiten Sie das benutzerdefinierte Formular. Fügen Sie ein erforderliches Feld hinzu. Fügen Sie beispielsweise ein Feld mit der Bezeichnung **[!UICONTROL Kategorie]** hinzu und definieren Sie es als Pflichtfeld.
@@ -367,13 +367,13 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
    *Abbildung: Obligatorisches Feld im Metadaten-Schema-Formulareditor.*
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Select the form and then click **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Wählen Sie das Formular aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Auf Ordner anwenden]**, um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden.
 
 1. Navigieren Sie zum Ordner und laden Sie einige Assets mit fehlenden Metadaten für das Pflichtfeld, das Sie dem benutzerdefinierten Formular hinzugefügt haben. Auf der Ansicht des Assets wird eine Meldung zu den fehlenden Metadaten für das Pflichtfeld angezeigt.
 
    ![Meldung für fehlende erforderliche Metadaten bei der Ansicht der Asset-Karte beim Hochladen von Assets in den Ordner](assets/metadata-missing-info-card-view.png)
 
-1. (Optional) Rufen Sie `https://[aem_server]:[port]/system/console/components/` auf. Konfigurieren und aktivieren Sie die Komponente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob`, die standardmäßig deaktiviert ist. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu `jcr:content` in Assets hinzu. [!DNL Experience Manager] verwendet diese Eigenschaft, um die ungültigen Assets in einem Suchergebnis zu filtern. Wenn Sie ein Asset nach einer Prüfung hinzufügen, wird das Asset erst nach der nächsten geplanten Prüfung markiert `hasValidMetadata` . Daher werden die Assets erst nach der nächsten geplanten Prüfung in den Filtern für ungültige Metadaten angezeigt.
+1. (Optional) Rufen Sie `https://[aem_server]:[port]/system/console/components/` auf. Konfigurieren und aktivieren Sie die Komponente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob`, die standardmäßig deaktiviert ist. Legen Sie eine Häufigkeit fest, mit der [!DNL Experience Manager] die Gültigkeit von Metadaten für die Assets überprüft. Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu `jcr:content` in Assets hinzu. [!DNL Experience Manager] verwendet diese Eigenschaft, um die ungültigen Assets in einem Suchergebnis zu filtern. Wenn Sie ein Asset nach einer Prüfung hinzufügen, wird das Asset erst nach der nächsten geplanten Prüfung mit `hasValidMetadata` gekennzeichnet. Daher werden die Assets erst nach der nächsten geplanten Prüfung in den Filtern für ungültige Metadaten angezeigt.
 
    >[!CAUTION]
    >
