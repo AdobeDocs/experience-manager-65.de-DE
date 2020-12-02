@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 92%
 
 ---
 
@@ -52,7 +55,7 @@ Zusätzlich dazu sollten Sie die folgenden Richtlinien für den Sicherungs-/Wied
 
    Berücksichtigen Sie folgende Punkte, wenn Sie Autor- und Veröffentlichungsinstanzen sichern:
 
-   * Stellen Sie sicher, dass die Sicherung für  Autoren- und Veröffentlichungsinstanzen werden synchronisiert, um gleichzeitig zu starten. Obwohl Sie während der Sicherung weiterhin Autor- und Veröffentlichungsinstanzen verwenden können, wird empfohlen, während der Sicherung keine Assets zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
+   * Stellen Sie sicher, dass die Sicherung für  Autoren- und Veröffentlichungsinstanzen werden gleichzeitig mit Beginn synchronisiert. Obwohl Sie während der Sicherung weiterhin Autor- und Veröffentlichungsinstanzen verwenden können, wird empfohlen, während der Sicherung keine Assets zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
    * Die vollständige Sicherung des Autorknotens umfasst die Sicherung der Daten von Forms Manager und AEM Forms Workspace.
    * Workbench-Entwickler können an ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
    * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
@@ -70,7 +73,7 @@ Diese Artikel bieten Anleitungen zu grundlegenden Datenbankfeatures für die Sic
 >
 >Die Sicherung des globalen Dokumentenspeichers darf erst nach Abschluss der Datenbanksicherung erfolgen. Wenn die Datenbanksicherung nicht abgeschlossen ist, sind Ihre Daten nicht synchron.
 
-### In den Sicherungsmodus wechseln {#entering-the-backup-modes}
+### In den Sicherungsmodus wechseln  {#entering-the-backup-modes}
 
 Sie können entweder Administration Console, den Befehl „LCBackupMode“ oder die mit der AEM Forms-Installation verfügbare API verwenden, um den Sicherungsmodus zu aktivieren und zu deaktivieren. Beachten Sie, dass die Administration Console-Option für die kontinuierliche Sicherung nicht verfügbar ist. Sie sollten daher entweder die Befehlszeilenoption oder die API verwenden. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
 
@@ -91,12 +94,13 @@ Sie können entweder Administration Console, den Befehl „LCBackupMode“ oder 
 Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehlszeilenschnittstelle in den abgesicherten Sicherungsmodus zu versetzen.
 
 1. Legen Sie „ADOBE_LIVECYCLE“ fest und starten Sie den Anwendungsserver.
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
+1. Wechseln Sie zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 1. Führen Sie an der Befehlszeile den folgenden Befehl in einer einzelnen Zeile aus:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort* `] [-label=`*labelname *`] [-timeout=`** Sekunden `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort* `] [-label=`*Beschriftungsname *`]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*Hostname* `] [-port=`*Anschlussnummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `] [-label=`*labelname* `] [-timeout=`*seconds* `]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*Hostname* `] [-port=`*Anschlussnummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `] [-label=`*Beschriftungsname* `]`
+
    Die Parameter in den vorherigen Befehlen sind wie folgt definiert:
 
    `Host` ist der Name des Hosts, auf dem AEM Forms ausgeführt wird.
@@ -113,7 +117,7 @@ Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehls
 
    Weitere Informationen zum Wechseln in den Sicherungsmodus über die Befehlszeilenschnittstelle finden Sie in der Datei „Bitte-lesen“ im Ordner „BackupRestoreCommandline“.
 
-### Sicherungsmodus deaktivieren {#leaving-backup-modes}
+### Sicherungsmodus deaktivieren  {#leaving-backup-modes}
 
 Sie können entweder Administration Console oder die Befehlszeilenoption verwenden, um den Sicherungsmodus zu deaktivieren.
 
@@ -129,7 +133,7 @@ Führen Sie die folgenden Schritte aus, um AEM Forms über Administration Consol
 
 Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Sicherungsmodus (Snapshot-Modus) für AEM Forms zu deaktivieren bzw. die aktuelle Sicherungsmodussitzung (kontinuierlicher Modus) zu beenden. Beachten Sie, dass Sie Administration Console nicht verwenden können, um den kontinuierlichen Sicherungsmodus zu deaktivieren. Während des kontinuierlichen Sicherungsmodus sind die Steuerungen der Sicherungsdienstprogramme in Administration Console deaktiviert. Sie müssen entweder den API-Aufruf oder den „LCBackupMode“-Befehl verwenden.
 
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
+1. Wechseln Sie zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 
    >[!NOTE]
@@ -138,8 +142,8 @@ Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Siche
 
 1. Rufen Sie den folgenden Befehl in einer einzelnen Zeile auf:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*Hostname *`] [-port=`*Anschlussnummer* `] [-user=`*Benutzername *`] [-password=`*Kennwort*`]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname *`] [-port=`*portnumber* `] [-user=`*username *`] [-password=`*password* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*Hostname* `] [-port=`*Anschlussnummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*Hostname* `] [-port=`*Anschlussnummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `]`
 
       Die Parameter in den vorherigen Befehlen sind wie folgt definiert:
 
