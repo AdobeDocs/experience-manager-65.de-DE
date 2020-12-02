@@ -12,6 +12,9 @@ discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 translation-type: tm+mt
 source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +63,7 @@ So ändern Sie den Berichtszeitraum einer Inhaltseinblick-Seite:
 
 1. Um das Enddatum des Berichtszeitraums zu ändern, ziehen Sie den Kreis an der rechten Seite des schattierten Bereichs zum gewünschten Enddatum.
 
-#### Ändern der Granularität des Berichtszeitraums {#changing-the-granularity-of-the-reporting-period}
+#### Ändern der Granularität des Berichtszeitraums  {#changing-the-granularity-of-the-reporting-period}
 
 Ändern Sie die Zeitdauer für jeden Datenpunkt in einem Bericht. Beispiel: Wenn die Wochengranularität ausgewählt ist, stellt jeder Datenpunkt im Bericht „Ansichten“ die Anzahl der Ansichten für eine Woche dar.
 
@@ -74,7 +77,7 @@ Die Granularität wirkt sich auf die Berichte aus, die Daten in Bezug auf die Ze
 
 1. Klicken oder tippen Sie auf die gewünschte Granularität. Nach Auswahl wird der Bericht automatisch aktualisiert, um die Granularität widerzuspiegeln.
 
-### Zuweisen von Aufgaben für SEO-Empfehlungen {#assigning-tasks-for-seo-recommendations}
+### Zuweisen von Aufgaben für SEO-Empfehlungen  {#assigning-tasks-for-seo-recommendations}
 
 Verwenden Sie den Bericht „SEO-Empfehlungen“, um Aufgaben zur Verbesserung der Seitensichtbarkeit für Suchmaschinen zu erstellen. Für jede Empfehlung im Bericht ohne Häkchen können Sie eine Aufgabe erstellen, die Sie einem Benutzer zuweisen, um die erforderliche Arbeit auszuführen.
 
@@ -104,6 +107,7 @@ Führen Sie die folgenden Schritte aus, um eine Aufgabe für eine SEO-Empfehlung
    * Beschreibung: Eine Beschreibung der Aktivität, die erforderlich ist, um die Aufgabe abzuschließen. Bei der Standardbeschreibung handelt es sich um die Informationen, die die SEO-Empfehlung begleiten.
    * Aufgabenpriorität: Die Priorität der Aufgabe.
    * Fälligkeitsdatum: Das Datum, nach dem die Aufgabe erledigt sein soll.
+
    **Hinweis:** Die Aufgabe, die erstellt wird, enthält den Pfad zu der Seite, für die die SEO-Empfehlung gilt.
 
 1. Klicken oder tippen Sie auf „Fertig“, um die Meldung „Aufgabe erstellt“ zu schließen.
