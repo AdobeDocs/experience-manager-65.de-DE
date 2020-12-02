@@ -18,7 +18,7 @@ ht-degree: 7%
 ---
 
 
-# Essentials zu speziellen Inhalten  {#featured-content-essentials}
+# Essentials für spezielle Inhalte {#featured-content-essentials}
 
 Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit speziellen Inhalten.
 
@@ -60,4 +60,4 @@ Im Gegensatz zum Veröffentlichen eines Beitrags am Anfang eines Forums ermögli
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die Funktion [&quot;](functions.md#featured-content-function)Vorgestellte Inhalte&quot;enthält, enthält eine konfigurierte `featured content` Komponente.
+Eine Community-Site-Struktur, die die Funktion [Vorgestellter Inhalt](functions.md#featured-content-function) enthält, enthält eine konfigurierte Komponente `featured content`.
