@@ -11,6 +11,9 @@ topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 52%
 
 ---
 
@@ -23,11 +26,11 @@ Nach der Installation blockiert der Filter den Zugriff auf alle Assets. Sie kön
 
 ## Konfigurieren des Content-Disposition-Filters {#configure-content-disposition-filter}
 
-You can view the [Apache Sling Content Disposition Filter in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Sie können den Filter [Apache Sling Content Disposition in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java) Ansicht haben.
 
 Die Optionen für den Content-Disposition-Filter bieten die folgenden Funktionen:
 
-* Pfade zur Inhaltsanzeige: eine Liste der Pfade, auf die der Filter angewendet wird, gefolgt von einer Liste der Mime-Typen, die auf diesem Pfad ausgeschlossen werden sollen. Dieser Pfad muss ein absoluter Pfad sein und kann am Ende einen Platzhalter (&#39;&amp;ast;&#39;) enthalten, damit jeder Ressourcenpfad mit dem angegebenen Pfadpräfix übereinstimmt. Beispiel: /content/&amp;ast;:image/jpeg,image/svg+xml &quot; wendet den Filter auf jeden Knoten in /content mit Ausnahme von jpg und svg images an
+* Pfade zur Inhaltsanzeige: eine Liste von Pfaden, auf die der Filter angewendet wird, gefolgt von einer Liste von MIME-Typen, die auf diesem Pfad ausgeschlossen werden sollen. Dieser Pfad muss ein absoluter Pfad sein und kann am Ende einen Platzhalter (&#39;&amp;ast;&#39;) enthalten, damit jeder Ressourcenpfad mit dem angegebenen Pfadpräfix übereinstimmt. Beispiel: /content/&amp;ast;:image/jpeg,image/svg+xml &quot; wendet den Filter auf jeden Knoten in /content mit Ausnahme von jpg und svg images an
 
 * „Excluded Resource Paths“ (Ausgeschlossene Ressourcenpfade): Eine Liste der ausgeschlossenen Ressourcen. Alle Ressourcenpfade müssen als absolute und voll qualifizierte Pfade angegeben werden. Präfixabgleiche/Platzhalter werden nicht unterstützt.
 
