@@ -22,11 +22,11 @@ ht-degree: 0%
 
 ## Einführung {#introduction}
 
-Wenn Sie mit dem Datenspeicherung Resource Provider (SRP) und seiner Beziehung zu benutzergenerierten Inhalten (UGC) nicht vertraut sind, besuchen Sie die [Community Content Datenspeicherung](working-with-srp.md) und den [Datenspeicherung Resource Provider-Überblick](srp.md).
+Wenn Sie mit dem Datenspeicherung Resource Provider (SRP) und seiner Beziehung zu benutzergenerierten Inhalten (UGC) nicht vertraut sind, besuchen Sie [Community Content Datenspeicherung](working-with-srp.md) und [Datenspeicherung Resource Provider Overview](srp.md).
 
 Dieser Abschnitt der Dokumentation enthält einige wichtige Informationen zu SRP und UGC.
 
-## StorageResourceProvider-API {#storageresourceprovider-api}
+## StorageResourceProvider API {#storageresourceprovider-api}
 
 Die SocialResourceProvider-API (SRP-API) ist eine Erweiterung verschiedener Sling Resource Provider-APIs. Es umfasst Unterstützung für Paginierung und atomare Inkrementierung (nützlich für Tally und Scoring).
 
@@ -38,13 +38,13 @@ Die SRP-API ist keine abstrakte Klasse, sondern eine Schnittstelle. Eine benutze
 
 Die Mittel zur Verwendung der SRP-API werden über bereitgestellte Hilfsprogramme bereitgestellt, z. B. im Paket SocialResourceUtilities.
 
-Bei der Aktualisierung von AEM 6.0 oder früher muss UGC für alle SRP migriert werden, für die ein Open-Source-Tool verfügbar ist. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Bei der Aktualisierung von AEM 6.0 oder früher muss UGC für alle SRP migriert werden, für die ein Open-Source-Tool verfügbar ist. Siehe [Upgrade auf AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
 >Historisch gesehen wurden Hilfsprogramme für den Zugriff auf UGC im Paket SocialUtils gefunden, das nicht mehr existiert.
 >
->Ersatzdienstprogramme finden Sie unter [SocialUtils Refactoring](socialutils.md).
+>Weitere Informationen zu Ersatzdienstprogrammen finden Sie unter [SocialUtils Refactoring](socialutils.md).
 
 ## Dienstprogrammmethode für den Zugriff auf UGC {#utility-method-to-access-ugc}
 
@@ -65,13 +65,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Weitere SocialUtils-Ersetzungen finden Sie unter [SocialUtils-Umgestaltung](socialutils.md).
+Weitere SocialUtils-Ersetzungen finden Sie unter [SocialUtils Refactoring](socialutils.md).
 
 Richtlinien zum Kodieren finden Sie unter [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->Die Rückgabe des Pfads resourceToUGCStoragePath() ist *nicht* für die [ACL-Prüfung](srp.md#for-access-control-acls)geeignet.
+>Der Pfad resourceToUGCStoragePath() gibt *not* zurück, der für [ACL-Prüfung](srp.md#for-access-control-acls) geeignet ist.
 
 ## Dienstprogrammmethode für den Zugriff auf ACLs {#utility-method-to-access-acls}
 
@@ -98,23 +98,23 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->Der von resourceToACLPath() zurückgegebene Pfad ist *nicht* für den [Zugriff auf das UGC](#utility-method-to-access-acls) selbst geeignet.
+>Der von resourceToACLPath() zurückgegebene Pfad ist *nicht* geeignet für [den Zugriff auf den UGC](#utility-method-to-access-acls) selbst.
 
-## Standorte für kontextbezogene Datenspeicherung {#ugc-related-storage-locations}
+## Standorte für UGC-bezogene Datenspeicherung {#ugc-related-storage-locations}
 
-Die folgenden Beschreibungen der Position der Datenspeicherung können bei der Entwicklung mit JSRP oder vielleicht MSRP hilfreich sein. Es gibt derzeit keine Benutzeroberfläche für den Zugriff auf UGC, die in ASRP gespeichert ist, wie es für JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) und MSRP (MongoDB-Tools) gibt.
+Die folgenden Beschreibungen der Position der Datenspeicherung können bei der Entwicklung mit JSRP oder vielleicht MSRP hilfreich sein. Es gibt derzeit keine Benutzeroberfläche für den Zugriff auf UGC, die in ASRP gespeichert ist, wie dies bei JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) und MSRP (MongoDB-Tools) der Fall ist.
 
 **Komponentenposition**
 
 Wenn ein Mitglied in der Umgebung zum Veröffentlichen in das UGC wechselt, interagiert es mit einer Komponente als Teil einer AEM Site.
 
-Ein Beispiel für eine solche Komponente ist die [Kommentarkomponente](http://localhost:4502/content/community-components/en/comments.html) , die auf der Website &quot; [Community-Komponenten-Handbuch](components-guide.md) &quot;vorhanden ist. Der Pfad zum Kommentarknoten im lokalen Repository lautet:
+Ein Beispiel für eine solche Komponente ist die Komponente [comments](http://localhost:4502/content/community-components/en/comments.html), die auf der [Website &quot;Community Components Guide](components-guide.md)&quot;vorhanden ist. Der Pfad zum Kommentarknoten im lokalen Repository lautet:
 
-* Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
+* Komponentenpfad = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Speicherort des Shadow-Knotens**
 
-Bei der Erstellung von UGC wird auch ein [Shadow-Knoten](srp.md#about-shadow-nodes-in-jcr) erstellt, auf den die erforderlichen ACLs angewendet werden. Der Pfad zum entsprechenden Shadow-Knoten im lokalen Repository ist das Ergebnis, wenn der Shadow-Knoten-Stammpfad dem Komponentenpfad vorangestellt wird:
+Bei der Erstellung von UGC wird auch ein [shadow-Knoten](srp.md#about-shadow-nodes-in-jcr) erstellt, auf den die erforderlichen ACLs angewendet werden. Der Pfad zum entsprechenden Shadow-Knoten im lokalen Repository ist das Ergebnis, wenn der Shadow-Knoten-Stammpfad dem Komponentenpfad vorangestellt wird:
 
 * Stammverzeichnis = `/content/usergenerated`
 * Kommentarschatten-Knoten = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
@@ -126,10 +126,10 @@ Die UGC wird an keinem dieser Orte erstellt und sollte nur mit einer [Dienstprog
 * Stammverzeichnis = `/content/usergenerated/asi/srp-choice`
 * UGC-Knoten für JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Beachten* Sie, dass der UGC-Knoten für JSRP *nur* auf der AEM Instanz (Autor oder Veröffentlichungsinstanz) vorhanden ist, auf der er eingegeben wurde. Bei der Eingabe in eine Veröffentlichungsinstanz ist eine Moderation in der Moderationskonsole beim Autor nicht möglich.
+*Achten Sie darauf*, dass der UGC-Knoten für JSRP  ** nur auf der AEM Instanz (Autor oder Veröffentlichung) vorhanden ist, auf der er eingegeben wurde. Bei der Eingabe in eine Veröffentlichungsinstanz ist eine Moderation in der Moderationskonsole beim Autor nicht möglich.
 
 ## Verwandte Informationen {#related-information}
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung
+* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
 * [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Coding-Richtlinien.
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [SocialUtils Refactoring](socialutils.md)  - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
