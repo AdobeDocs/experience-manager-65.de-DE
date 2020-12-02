@@ -28,17 +28,17 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
-Bei Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsdienste bereitstellen, indem Sie den JSON-Exporter verwenden, um den Inhalt einer (y) AEM-Seite im JSON-Datenmodellformat bereitzustellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Bei Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsdienste bereitstellen, indem Sie den JSON-Exporter verwenden, um den Inhalt einer (y) AEM Seite im JSON-Datenmodellformat bereitzustellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
 >[!NOTE]
 >
->The functionality described here is available for all Core Components since [release 1.1.0 of the Core Components](https://docs.adobe.com/content/docs/de/core-components/v1.html).
+>Die hier beschriebene Funktionalität steht für alle Kernkomponenten seit der [Version 1.1.0 der Kernkomponenten](https://docs.adobe.com/content/docs/de/core-components/v1.html) zur Verfügung.
 
 ## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
 
 Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
-Innerhalb von AEM wird der Versand mithilfe der Auswahl `model` und `.json` Erweiterung erreicht.
+Innerhalb AEM Versands wird mithilfe der Selektoren `model` und `.json` erreicht.
 
 `.model.json`
 
@@ -76,13 +76,13 @@ Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten 
 
    >[!NOTE]
    >
-   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt,](json-exporter-components.md#multiple-selectors) jedoch `model` müssen sie die erste sein.
+   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt, ](json-exporter-components.md#multiple-selectors), `model` muss jedoch die erste sein.
 
 ### Weiterführende Informationen {#further-information}
 
 Siehe auch:
 
-* Assets-HTTP-API  
+* Assets-HTTP-API
 
    * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
