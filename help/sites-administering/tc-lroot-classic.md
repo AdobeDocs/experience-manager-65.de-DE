@@ -12,6 +12,9 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 80%
 
 ---
 
@@ -24,11 +27,12 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 1. Fügt eine neue untergeordnete Seite hinzu, welche die Sprachversion der Website darstellt:
 
    1. Klicken Sie auf „Neu“ > „Neue Seite“.
-   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. The Name needs to be in the format of `<language-code>` or `<language-code>_<country-code>`, for example en, en_US, en_us, en_GB, en_gb.
+   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss das Format `<language-code>` oder `<language-code>_<country-code>` haben, z. B. en, en_US, en_us, en_GB, en_gb.
 
       * Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben gemäß ISO-639-1
       * Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Klein- oder Großbuchstaben gemäß ISO-3166
    1. Wählen Sie die Vorlage aus und klicken Sie auf „Erstellen“.
+
    ![newpagefr](assets/newpagefr.png)
 
 1. Wählen Sie in der Websites-Konsole in der Baumstruktur „Websites“ die Stammseite der Website aus.
