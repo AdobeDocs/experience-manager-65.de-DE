@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2777706c-d42b-4921-a8f4-720b7c0fa45e
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 85%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Wenn Sie eine PDF-Datei in die Acrobat Reader DC Extensions-Webanwendung hochladen, können Sie diese Informationen anzeigen, um zu prüfen, ob Adobe Reader erweitert wurde, und um geltende Verwendungsrechte samt Ablaufdatum anzuzeigen.
 
-1. Log in to the Acrobat Reader DC extensions web application at `http://[localhost]:[port]/ReaderExtensions` (where *[port]* is your application server’s port number).
+1. Melden Sie sich bei der Acrobat Reader DC Extensions-Webanwendung unter `http://[localhost]:[port]/ReaderExtensions` an (wobei *[port]* die Anschlussnummer Ihres Anwendungsservers ist).
 1. Klicken Sie auf „Durchsuchen“, um die PDF-Datei hochzuladen, und dann auf „Info“. Die Informationen werden unterhalb des Dateinamens angezeigt.
 
    Detaillierte Informationen zum Ändern der Verwendungsrechte für die Datei finden Sie in der Acrobat Reader DC Extensions-Hilfe.
