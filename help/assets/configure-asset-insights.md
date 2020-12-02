@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie Asset Insights für Analysen.
-description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
+description: Konfigurieren Sie Asset Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
@@ -13,13 +13,13 @@ ht-degree: 35%
 
 # Konfigurieren von Asset Insights {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] Ruft Nutzungsdaten zu digitalen Assets ab, die von Websites von Drittanbietern verwendet werden [!DNL Adobe Analytics]. Um Asset Insights zu aktivieren und diese Daten abzurufen und Statistiken zu erzeugen, konfigurieren Sie zuerst die Funktion zur Integration mit Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] Ruft Nutzungsdaten zu digitalen Assets ab, die von Websites von Drittanbietern verwendet werden  [!DNL Adobe Analytics]. Um Asset Insights zu aktivieren und diese Daten abzurufen und Statistiken zu erzeugen, konfigurieren Sie zuerst die Funktion zur Integration mit Adobe Analytics.
 
 >[!NOTE]
 >
 >Einblicke werden nur für Bilder unterstützt und bereitgestellt.
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
@@ -28,17 +28,17 @@ ht-degree: 35%
 
    ![Adobe Analytics für Assets Insights in Experience Manager konfigurieren](assets/insights_config2.png)
 
-   *Abbildung: Konfigurieren [!DNL Adobe Analytics] für Assets Insights in [!DNL Experience Manager].*
+   *Abbildung: Konfigurieren  [!DNL Adobe Analytics] für Assets Insights in  [!DNL Experience Manager].*
 
-1. Klicken Sie auf **[!UICONTROL Authentifizieren]**.
-1. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an [!DNL Adobe Analytics] report suite from where you want Asset Insights to fetch data. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
-1. After [!DNL Experience Manager] sets up your report suite, click **[!UICONTROL Done]**.
+1. Klicken Sie auf **[!UICONTROL Authenticate]**.
+1. Nachdem [!DNL Experience Manager] Ihre Anmeldedaten authentifiziert hat, wählen Sie in der Liste **[!UICONTROL Report Suite]** eine [!DNL Adobe Analytics] Report Suite, aus der Sie die Daten abrufen möchten. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie nach der Einrichtung Ihrer Report Suite auf **[!UICONTROL Fertig]**.[!DNL Experience Manager]
 
-## Page tracker {#page-tracker}
+## Seitentracker {#page-tracker}
 
-After you configure your [!DNL Adobe Analytics] account, the Page Tracker code is generated for you. To enable Assets Insights to track [!DNL Experience Manager] assets used in third-party websites, include the page tracker code in the website code. Use the [!UICONTROL Page Tracker] utility in [!DNL Experience Manager Assets] to generate the page tracker code. For more information on how to include your Page Tracker code in third-party web pages, see [Use page tracker and embed code in web pages](/help/assets/use-page-tracker.md).
+Nachdem Sie Ihr [!DNL Adobe Analytics]-Konto konfiguriert haben, wird der Seiten-Tracker-Code für Sie generiert. Damit Assets Insights die in Websites von Drittanbietern verwendeten Elemente verfolgen kann, fügen Sie den Seiten-Trackercode im Website-Code ein. [!DNL Experience Manager] Verwenden Sie das Dienstprogramm [!UICONTROL Seitenverfolgung] in [!DNL Experience Manager Assets], um den Seiten-Trackercode zu generieren. Weitere Informationen zum Einbeziehen des Seiten-Tracker-Codes in Webseiten von Drittanbietern finden Sie unter [Verwenden Sie den Seiten-Tracker und den Einbettungscode in Webseiten](/help/assets/use-page-tracker.md).
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 
    ![chlimage_1-73](assets/chlimage_1-214.png)
 
