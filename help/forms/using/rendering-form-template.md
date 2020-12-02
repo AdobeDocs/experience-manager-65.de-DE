@@ -21,9 +21,9 @@ ht-degree: 79%
 
 ## Render-Endpunkt {#render-endpoint}
 
-HTML5 forms have the notion of **Profiles** which are exposed as REST Endpoints to enable Mobile Rendering of Form Templates. These Profiles have associated **Profile Renderer**. Es handelt sich dabei um JSP-Seiten, die für die Generierung der HTML-Darstellung des Formulars durch Aufruf des Forms OSGi-Dienstes verantwortlich sind. Der JCR-Pfad der Profil-Node bestimmt die URL des Render-Endpunkts. Der Standard-Render-Endpunkt des Formulars, der auf das Standard-Profil verweist, sieht wie folgt aus:
+HTML5-Formulare haben den Begriff **Profil**, die als REST-Endpunkte verfügbar gemacht werden, um die mobile Wiedergabe von Formularvorlagen zu aktivieren. Diese Profil haben **Profil-Renderer** zugeordnet. Es handelt sich dabei um JSP-Seiten, die für das Generieren einer HTML-Darstellung des Formulars durch Aufruf des Forms OSGi-Dienstes verantwortlich sind. Der JCR-Pfad der Profil-Node bestimmt die URL des Render-Endpunkts. Der Standard-Render-Endpunkt des Formulars, der auf das Standard-Profil verweist, sieht wie folgt aus:
 
-https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containg form xdp*>&amp;template=&lt;*name of the xdp*>
+https://&lt;*host*:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*Pfad des Ordners, der das Formular xdp*>&amp;template=&lt;*Name des xdp*>>
 
 Beispiel: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
@@ -64,23 +64,23 @@ Die folgenden Anforderungsparameter werden beim Rendern von Formularen als HTML 
  </tbody>
 </table>
 
-### Zusammenführen von Daten mit einer Formularvorlage {#merge-data-with-form-template}
+### Zusammenführen von Daten mit einer Formularvorlage  {#merge-data-with-form-template}
 
 | Parameter | Beschreibung |
 |---|---|
 | dataRef | Dieser Parameter gibt den **absoluten Pfad** der Datendatei an, die mit der Vorlage zusammengeführt wird. Dieser Parameter kann eine URL zu einem REST-Dienst sein, der die Daten im XML-Format zurückgibt. |
 | data | Dieser Parameter gibt die als UTF-8 kodierte Datenbyte an, die mit der Vorlage zusammengeführt werden. Wenn dieser Parameter festgelegt ist, wird der Parameter „dataRef“ im HTML5-Formular ignoriert. |
 
-### Übergeben eines Render-Parameters {#passing-the-render-parameter}
+### Übergeben eines Render-Parameters  {#passing-the-render-parameter}
 
 HTML5-Formulare unterstützen drei Methoden zum Übergeben der Render-Parameter. Sie können Parameter mithilfe von URLs, Schlüssel/Wert-Paaren und Profilknoten übergeben. Im Render-Parameter erhalten die Schlüssel/Wert-Paare die höchste Priorität, gefolgt von den Profilknoten. Der URL-Anforderungsparameter hat die geringste Priorität.
 
-* **URL-Anforderungsparameter**: Sie können die Render-Parameter in der URL angeben. In den URL-Anforderungsparametern sind die Parameter für den Endbenutzer sichtbar. For example, the following submit URL contains template parameter in the URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
+* **URL-Anforderungsparameter**: Sie können die Render-Parameter in der URL angeben. In den URL-Anforderungsparametern sind die Parameter für den Endbenutzer sichtbar. Die folgende Sende-URL enthält beispielsweise den Vorlagenparameter in der URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
 * **setAttribute-Anforderungsparameter**: Sie können die Render-Parameter als Schlüssel/Wert-Paar angeben. In den setAttribute-Anforderungsparametern sind die Parameter für den Endbenutzer nicht sichtbar. Sie können eine Anforderung von einem beliebigen anderen JSP an den JSP des Profil-Renderers für HTML5-Formulare weiterleiten und als Anforderungsobjekt *setAttribute* verwenden, um alle Render-Parameter zu übergeben. Diese Methode hat die höchste Priorität.
 
-* **Anforderungsparameter für Profil-Node:** Sie können die Render-Parameter als Knoteneigenschaften eines Profil-Knotens angeben. In den Profilknoten-Anforderungsparametern sind die Parameter für den Endbenutzer nicht sichtbar. Profilknoten ist der Knoten, an den die Anforderung gesendet wird. Um Parameter als Knoteneigenschaften festzulegen, verwenden Sie CRXDE lite.
+* **Anforderungsparameter für Profil-Nodes:** Sie können die Render-Parameter als Knoteneigenschaften eines Profil-Knotens angeben. In den Profilknoten-Anforderungsparametern sind die Parameter für den Endbenutzer nicht sichtbar. Profilknoten ist der Knoten, an den die Anforderung gesendet wird. Um Parameter als Knoteneigenschaften festzulegen, verwenden Sie CRXDE lite.
 
-### Sende-Parameter {#submit-parameters}
+### Sende-Parameter  {#submit-parameters}
 
 HTML5-Formulare senden Daten und führen serverseitige Skripte und Webdienste auf AEM-Servern aus. Detaillierte Informationen zu Parametern für die Ausführung serverseitiger Skripte und Webdienste auf AEM-Servern finden Sie unter [HTML5 forms Service Proxy](/help/forms/using/service-proxy.md).
