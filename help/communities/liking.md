@@ -18,31 +18,31 @@ ht-degree: 6%
 ---
 
 
-# Verwenden von &quot;Gefällt mir&quot; {#using-liking}
+# Verwenden von &quot;Gefällt mir&quot;-Klicks {#using-liking}
 
-Die `Liking` Komponente ist ein nützliches Werkzeug, mit dem Benutzer eine Meinung zu einem bestimmten Inhalt, wie z.B. einem Kommentar in einem Forum, äußern können. Bei der `Liking` Komponente wählen die Mitglieder das Herzsymbol aus, um eine positive Meinung anzuzeigen.
+Die `Liking`-Komponente ist ein nützliches Tool, mit dem Benutzer eine Meinung zu einem bestimmten Inhalt, z. B. zu einem Kommentar in einem Forum, äußern können. Bei der Komponente `Liking` wählen die Mitglieder das Herzsymbol aus, um eine positive Meinung anzuzeigen.
 
-## Adding Liking to a Page {#adding-liking-to-a-page}
+## Hinzufügen von &quot;Link&quot;zu einer Seite {#adding-liking-to-a-page}
 
-To add a `Liking` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Liking`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Liking`
 
 und ziehen Sie es auf eine Seite, z. B. eine Position relativ zur Funktion, die Benutzern gefällt.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](essentials-liking.md#essentials-for-client-side) are included, this is how the `Liking` component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-liking.md#essentials-for-client-side) einbezogen werden, wird die `Liking`-Komponente so angezeigt.
 
 ![liking-component](assets/liking-component.png)
 
-## Konfigurieren von &quot;Gefällt mir&quot; {#configuring-liking}
+## Konfigurieren von &quot;Gefällt mir&quot;-Klicks {#configuring-liking}
 
-Select the placed `Liking` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Liking` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
-Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used to record likes.
+Geben Sie auf der Registerkarte **[!UICONTROL Texte und Bezeichnungen]** die Eigenschaften an, mit denen Sie &quot;Gefällt mir&quot;aufzeichnen.
 
 ![configure-like](assets/configure-liking.png)
 
@@ -56,7 +56,7 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 * **[!UICONTROL Zählername]**
 
-   (*Required*) The internal, identifiable property name for this instance of a voting component.
+   (*Erforderlich*) Der interne, identifizierbare Eigenschaftsname für diese Instanz einer stimmberechtigten Komponente.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -70,4 +70,4 @@ Anonyme &quot;Gefällt mir&quot;-Klicks werden nicht unterstützt. Site-Besucher
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Liking Essentials](essentials-liking.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Liking Essentials](essentials-liking.md) für Entwickler.
