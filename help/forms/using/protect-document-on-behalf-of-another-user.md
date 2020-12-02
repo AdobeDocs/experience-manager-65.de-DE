@@ -18,7 +18,7 @@ ht-degree: 95%
 
 AEM Forms Document Security Java SDK stellt APIs bereit, mit denen ein Benutzerkonto ein Dokument im Auftrag eines anderen Benutzers schützen kann, ohne die Berechtigungen zum Bearbeiten des Dokuments zu erhalten. Sie können die APIs in einem Arbeitsablauf-Prozess oder programmgesteuert als Dokumentdienst verwenden. Die folgenden neuen APIs wurden eingeführt:
 
-* **protectDocumentVerwenden Sie** die ProtectDocument API, um eine Richtlinie auf ein Dokument im Namen von
+* **** protectDocumentVerwenden Sie die ProtectDocument-API, um eine Richtlinie auf ein Dokument im Namen von
 
    ein anderes Benutzerkonto. Die Berechtigungen des Benutzerkontos, das zum Anwenden der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
