@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 91%
 
 ---
 
@@ -36,9 +39,9 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als *Baumstruktur* gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-The following shows an extract from the Geometrixx site; where, for example, the `Triangle` page will be accessed:
+Im Folgenden ist ein Auszug aus dem Geometrixx dargestellt: auf die z. B. die Seite `Triangle` zugegriffen wird:
 
-* Autorenumgebung
+* Autor-Umgebung
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -46,7 +49,7 @@ The following shows an extract from the Geometrixx site; where, for example, the
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+   Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` auf der Umgebung zum Veröffentlichen optional sein.
 
 ```xml
   /content
@@ -68,11 +71,11 @@ The following shows an extract from the Geometrixx site; where, for example, the
     /...
 ```
 
-This structure can be viewed from the Websites console, which you can use to [navigate through the tree structure](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Diese Struktur kann über die Websites-Konsole angezeigt werden, die Sie verwenden können, um [durch die Baumstruktur](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15) zu navigieren.
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-### Page Naming Conventions {#page-naming-conventions}
+### Seitenbenennungskonventionen {#page-naming-conventions}
 
 Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 
@@ -86,9 +89,9 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+Beim Erstellen einer neuen Seite überprüft AEM [den Seitennamen gemäß den von AEM und JCR festgelegten Konventionen](/help/sites-developing/naming-conventions.md).
 
-Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich geringfügig von der Benutzeroberfläche (sie ist für die touchaktivierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
+Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich je nach Benutzeroberfläche geringfügig (sie ist für die touchaktivierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
 
 * „a“ bis „z“
 * „A“ bis „Z“
@@ -100,7 +103,7 @@ Verwenden Sie nur diese Zeichen, wenn Sie sicher sein möchten, dass sie akzepti
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von diesem String ab und [validiert den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR. In beiden Benutzeroberflächen werden ungültige Zeichen im Feld **Titel** akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) In beiden Benutzeroberflächen werden ungültige Zeichen im Feld **Titel** akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -109,12 +112,12 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 #### Name {#name}
 
-Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM [den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
+Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/sites-developing/naming-conventions.md).
 
-In the Classic UI you **cannot enter invalid characters** in the **Name** field.
+In der klassischen Benutzeroberfläche können Sie **keine ungültigen Zeichen** im Feld **Name** eingeben.
 
 >[!NOTE]
->In the touch-enabled UI you **cannot submit invalid characters** in the **Name** field. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
+>In der touchfähigen Benutzeroberfläche können Sie **keine ungültigen Zeichen** im Feld **Name** senden. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
 >[!NOTE]
 >
@@ -131,7 +134,7 @@ Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Die angebotenen Vorlagen hängen von der einzelnen Website ab. Welche Informationen (beim Erstellen der neuen Seite) angegeben werden müssen, hängt von der verwendeten Benutzeroberfläche ab. Die wichtigsten Felder sind:
 
 * **Titel**
-Der Titel wird auf der resultierenden Webseite angezeigt.
+Der Titel, der auf der resultierenden Web-Seite angezeigt wird.
 
 * **Name**
 Wird beim Benennen der Seite verwendet.
@@ -149,7 +152,7 @@ Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie best
 * Video
 * viele weitere
 
-Once you have created and opened a page you can [add content using the components](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), available from the [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mit den Komponenten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph) hinzufügen, die unter [Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick) verfügbar sind.
 
 ## Verwalten von Seiten {#managing-pages}
 
@@ -195,7 +198,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
 
    >[!NOTE]
    >
-   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Using **Create Child Page **from the **Page** tab of the sidekick, will create a new page directly under the page being edited.
+   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Mit **Untergeordnete Seite erstellen **aus der Registerkarte **Seite** des Sidekick wird eine neue Seite direkt unter der bearbeiteten Seite erstellt.
 
 ### Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
@@ -207,7 +210,7 @@ Sie haben verschiedene Möglichkeiten, um eine Seite zur [Bearbeitung](/help/sit
 
 * Nachdem Sie eine Seite geöffnet haben, können Sie zu anderen Seiten innerhalb der Website navigieren, um sie zu bearbeiten, indem Sie auf die zugehörigen Hyperlinks klicken.
 
-### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
 
 Beim Kopieren können Sie entweder
 
@@ -226,6 +229,7 @@ Beim Kopieren können Sie entweder
 
    * **Einfügen** - um die Seite zusammen mit allen Unterseiten einzufügen
    * **Umschalt + Einfügen** - um nur die ausgewählte Seite einzufügen
+
    Die Seite bzw. die Seiten werden am neuen Speicherort eingefügt.
 
    >[!NOTE]
