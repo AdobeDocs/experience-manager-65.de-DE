@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 100%
 
 ---
 
@@ -26,6 +29,7 @@ Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollt
 
    * „Jetzt konfigurieren“: Dieser Link wird angezeigt, wenn keine Konfiguration erstellt wurde.
    * „Konfigurationen anzeigen“: Dieser Link wird angezeigt, wenn mindestens eine Konfiguration erstellt wurde.
+
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. Wenn Sie auf „Konfigurationen anzeigen“ geklickt haben, klicken Sie auf den Link mit dem Pluszeichen (+) neben „Verfügbare Konfigurationen“.
@@ -44,7 +48,7 @@ Wenn Sie die Konfiguration erstellen, geben Sie einen Titel ein. Der Titel sollt
 1. Klicken Sie auf den Namen der Konfiguration, die Sie bearbeiten möchten.
 1. Klicken Sie auf „Bearbeiten“, bearbeiten Sie die Eigenschaftswerte und klicken Sie anschließend auf „OK“.
 
-## Verknüpfen von Seiten mit einer BrightEdge-Konfiguration {#associating-pages-with-a-brightedge-configuration}
+## Verknüpfen von Seiten mit einer BrightEdge-Konfiguration  {#associating-pages-with-a-brightedge-configuration}
 
 Verknüpfen Sie Seiten mit einer BrightEdge-Konfiguration, um Seitendaten zur Analyse an den BrightEdge-Service zu übermitteln. Wenn Sie eine Seite mit einer Konfiguration verknüpfen, erben die untergeordneten Seiten diese Verknüpfung. In der Regel wird die Startseite einer Website verknüpft, damit die Daten aller Seiten an BrightEdge übermittelt werden.
 
