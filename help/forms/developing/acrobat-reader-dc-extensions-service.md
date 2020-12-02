@@ -32,9 +32,9 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 >
 >Schnellere Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus):Verwendungsrechte mithilfe der Java-API anwenden {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Quick Beginn (SOAP-Modus):Verwendungsrechte mit der Java-API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api} anwenden
 
-Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Das PDF-Dokument mit aktivierten Benutzerrechten wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf* gespeichert. Für dieses PDF-Dokument gelten die folgenden Verwendungsrechte: `enabledComments`, `enabledFormFillIn`und `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
+Im folgenden Java-Codebeispiel werden Verwendungsrechte für ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Das PDF-Dokument mit aktivierten Benutzerrechten wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf* gespeichert. Für dieses PDF-Dokument gelten die folgenden Verwendungsrechte: `enabledComments`, `enabledFormFillIn` und `enabledDigitalSignatures`. (Siehe [Verwendungsrechte auf PDF-Dokumente anwenden](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
