@@ -11,6 +11,9 @@ discoiquuid: cbc5af90-5d51-4fdb-ac72-eea91137975d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +29,8 @@ Zum Starten eines neuen Prozesses aus bestehenden Prozessdaten sind die folgende
    * Klicken Sie unter „Verfolgung“ auf die Prozessinstanz, deren Daten Sie verwenden möchten. Klicken Sie in der Ansicht des Prozessverlaufs im rechten Bereich auf die Zeile der Aufgabe, die dem Startpunkt entspricht.
    * Wählen Sie in der Verfolgung eine Suchvorlage aus, um eine Liste von Prozessinstanzen anzuzeigen. Wählen Sie die Instanz aus, deren Daten Sie verwenden möchten.
    * Wählen Sie auf der Registerkarte **[!UICONTROL Aufgabenliste]** die Aufgabe aus. Klicken Sie auf die Registerkarte **[!UICONTROL Verlauf]** und wählen Sie die Aufgabe aus, die die Prozessinstanz initiiert hat.
-   ![Aufgabe](assets/start3_new.png) auswählen ![Aufgabe auswählen](assets/start1_new.png)
+
+   ![Wählen Sie die ](assets/start3_new.png) ![AufgabeWählen Sie die Aufgabe](assets/start1_new.png)
 
 1. In der Aufgabenaktionssymbolleiste klicken Sie auf **[!UICONTROL Start]**. Ein adaptives Formular für die neue Prozessinstanz wird mit automatischer Vorbefüllung angezeigt.
 
