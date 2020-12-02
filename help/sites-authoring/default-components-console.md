@@ -12,6 +12,9 @@ discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 97%
 
 ---
 
@@ -20,15 +23,15 @@ source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
 
 Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen. 
 
-It can be accessed from **Tools ->** **General ->** **Components**. In der Konsole sind die Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist keine Spaltenansicht verfügbar.
+Auf sie kann über **Tools** > **Allgemein** > **Komponenten** zugegriffen werden. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
->In der Komponentenkonsole werden alle im System vorhandenen Komponenten angezeigt. Im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) werden Komponenten angezeigt, die Autoren zur Verfügung stehen, und alle Komponentengruppen verborgen, die mit einem Punkt beginnen ( `.`).
+>In der Komponentenkonsole werden alle im System vorhandenen Komponenten angezeigt. Im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) werden Komponenten angezeigt, die Autoren zur Verfügung stehen, und alle Komponentengruppen verborgen, die mit einem Punkt beginnen (`.`).
 
-## Suche{#searching}
+## Suche {#searching}
 
 Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffnen, um die Komponenten zu durchsuchen und/oder zu filtern: 
 
@@ -53,7 +56,7 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
       * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Da `/apps` zur Laufzeit nicht bearbeitet werden kann, ist die Komponentenkonsole schreibgeschützt.
 
 * **Richtlinien**
 
