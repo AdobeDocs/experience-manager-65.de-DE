@@ -11,13 +11,16 @@ discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 76%
 
 ---
 
 
 # Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 In diesem Artikel wird erläutert, wie Sie die Lösung „Korrespondenz erstellen“ in Ihre Umgebung integrieren können.
 
@@ -40,11 +43,11 @@ Beispielsweise würde das benutzerdefinierte Portal die URL als\
 >
 >Bevor Sie die Anwendung „Korrespondenz erstellen“ aufrufen, speichern und laden Sie die Daten, um die Benutzeroberfläche „Korrespondenz erstellen“ unter der angegebenen URL aufzurufen. Dies kann entweder vom benutzerdefinierten Portal aus oder über einen anderen Vorgang im Back-End ausgeführt werden.
 
-## Auf Daten basierter Inline-Aufruf {#inline-data-based-invocation}
+## Auf Daten basierter Inline-Aufruf  {#inline-data-based-invocation}
 
-Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
+Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz erstellen&quot;aufzurufen, besteht darin, einfach die URL unter https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html zu drücken, während die Parameter und Daten gesendet werden, um die Anwendung &quot;Korrespondenz erstellen&quot;als Anforderung der POST aufzurufen (d. Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
 
-### Parameter für das Festlegen des Briefs {#parameters-for-specifying-letter}
+### Parameter für das Festlegen des Briefs  {#parameters-for-specifying-letter}
 
 | **Name** | **Typ** | **Beschreibung** |
 |---|---|---|
@@ -53,7 +56,7 @@ Another (and a more secure) way to call the Create Correspondence application co
 
 Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden des Briefs verwendet werden.
 
-### Parameter für die Angabe der XML-Datenquelle {#parameters-for-specifying-the-xml-data-source}
+### Parameter für die Angabe der XML-Datenquelle  {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>
@@ -74,7 +77,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
   </tr>
   <tr>
    <td>cmUseTestData</td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td>Um die Testdaten wiederzuverwenden, die im Datenwörterbuch angehängt sind.</td> 
   </tr>
  </tbody>
@@ -82,7 +85,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
 
 Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden der XML-Daten verwendet werden.
 
-### Andere Parameter {#other-parameters}
+### Andere Parameter  {#other-parameters}
 
 <table>
  <tbody>
@@ -93,7 +96,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
   </tr>
   <tr>
    <td>cmPreview<br /> </td> 
-   <td>Boolesch </td> 
+   <td>Boolesch</td> 
    <td>„True“, um den Brief im Vorschaumodus zu öffnen<br />  </td> 
   </tr>
   <tr>
