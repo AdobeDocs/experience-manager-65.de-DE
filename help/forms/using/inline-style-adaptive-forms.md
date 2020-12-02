@@ -10,6 +10,9 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 91%
 
 ---
 
@@ -22,8 +25,8 @@ Sie können die Darstellung und das Design eines adaptiven Formulars definieren,
 
 Hinzufügen von Inline-Stilen zu einer Komponente:
 
-1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in Stilmodus. To change the mode to styling mode, in the page toolbar, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. Select a component in the page, and tap the edit button ![edit-button](assets/edit-button.png). In der Randleiste geöffnete Stileigenschaften.
+1. Öffnen Sie das Formular im Formular-Editor und ändern Sie den Modus in Stilmodus. Um den Modus in den Stilmodus zu ändern, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Wählen Sie eine Komponente auf der Seite aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png). In der Randleiste geöffnete Stileigenschaften.
 
    Sie können auch Komponenten aus der Hierarchiestruktur in der Seitenleiste auswählen. Die Hierarchiestruktur für das Formular ist als „Formularobjekte“ in der Seitenleiste verfügbar.
 
@@ -41,7 +44,7 @@ Hinzufügen von Inline-Stilen zu einer Komponente:
    * Erweitert (hier können Sie benutzerdefinierte CSS für die Komponente verwenden)
 
 1. Ebenso können Sie Designs für andere Teile einer Komponente wie Widgets, Beschriftung und Hilfe anwenden.
-1. Tap **Done** to confirm the changes or **Cancel** to discard the changes.
+1. Tippen Sie auf **Fertig**, um die Änderungen zu bestätigen, oder auf **Abbrechen**, um die Änderungen zu verwerfen.
 
 ## Beispiel: Inline-Stile für eine Feldkomponente {#example-inline-styles-for-a-field-component}
 
@@ -74,7 +77,7 @@ Beachten Sie die Änderung im Textfeldstil in der folgenden Abbildung, nachdem d
    <td><p>Ändert die Hintergrundfarbe zu Kornblumenblau (#6495ED)</p> <p>Hinweis: Sie können einen Farbnamen oder seinen Hexadezimalcode im Wertefeld angeben.</p> </td>
   </tr>
   <tr>
-   <td><p>Etikett</p> </td>
+   <td><p>Bezeichnung</p> </td>
    <td><p>Abmessungen &amp; Position &gt; width</p> </td>
    <td><p>100px</p> </td>
    <td><p>Stellt die Breite als 100px für die Beschriftung ein</p> </td>
