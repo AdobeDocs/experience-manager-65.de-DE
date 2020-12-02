@@ -20,11 +20,11 @@ ht-degree: 71%
 
 # Debuggings von HTML5-Formularen {#debugging-html-forms}
 
-Dieses Dokument umfasst mehrere Fehlerbehebungsszenarien. Für jedes Beispiel werden einige Schritte beschrieben, um das Problem zu beheben. Führen Sie diese Schritte aus und, falls das Problem weiterhin besteht, konfigurieren Sie die Protokollfunktion, um Protokolle zu erhalten und auf Fehler/Warnungen zu überprüfen. For more details about HTML5 forms logging, see [Generating Logs for HTML5 forms](/help/forms/using/enable-logs.md).
+Dieses Dokument umfasst mehrere Fehlerbehebungsszenarien. Für jedes Beispiel werden einige Schritte beschrieben, um das Problem zu beheben. Führen Sie diese Schritte aus und, falls das Problem weiterhin besteht, konfigurieren Sie die Protokollfunktion, um Protokolle zu erhalten und auf Fehler/Warnungen zu überprüfen. Weitere Informationen zur Protokollierung von HTML5-Formularen finden Sie unter [Erstellen von Protokollen für HTML5-Formulare](/help/forms/using/enable-logs.md).
 
 ## Problem: Wenn ich das Formular rendere, erscheint die Ausnahmeseite „org.apache.sling.api.SlingException“.{#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
-In the exception details, search for word **caused by**.
+Suchen Sie in den Ausnahmedetails nach dem Wort **verursacht von**.
 
 Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch ist.
 
@@ -104,7 +104,7 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 1. Wenn die erwähnten Dateien nicht vorhanden sind, installieren Sie das Paket „adobe-lc-forms-runtime-pkg-&lt;Version>.zip“ erneut.
 
-### Problem: Unerwarteter Fehler gefunden {#problem-unexpected-error-encountered}
+### Problem: Unerwarteter Fehler gefunden  {#problem-unexpected-error-encountered}
 
 1. Fügen Sie in der Formular-URL den Parameter &quot;Abfrage&quot;debugClientLibs hinzu und setzen Sie den Wert auf &quot;true&quot;(z. B.: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;beliebiger Pfad>&amp;template=&lt;Name der xdp-Datei>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Im Desktop-Browser, z. B. Chrome, rufen Sie „Developer Tools“ -> „Console“ auf
@@ -119,10 +119,10 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 1. Vergewissern Sie sich, dass Sie Zugriffsrechte auf den AEM-Server haben und mit dem Server verbunden sind.
 1. Überprüfen Sie, ob der Parameter „submitUrl“ korrekt ist.
-1. Enable the client side logs as mentioned at [Logs for the HTML5 forms](/help/forms/using/enable-logs.md) using debug option as **1-a5-b5-c5**. Rendern Sie das Formular erneut und klicken Sie auf „Senden“. Öffnen Sie die Debug-Console im Browser und prüfen Sie, ob Fehler vorliegen.
+1. Aktivieren Sie die clientseitigen Protokolle, wie unter [Protokolle für die HTML5-Formulare](/help/forms/using/enable-logs.md) beschrieben, und verwenden Sie die Debugoption **1-a5-b5-c5**. Rendern Sie das Formular erneut und klicken Sie auf „Senden“. Öffnen Sie die Debug-Console im Browser und prüfen Sie, ob Fehler vorliegen.
 1. Suchen Sie die Serverprotokolle, die erwähnt werden unter [Protokolle für die HTML5-Formulare](/help/forms/using/enable-logs.md). Prüfen Sie, ob in den Serverprotokollen während der Sendung ein Fehler verzeichnet wurde.
 
-## Problem: Lokalisierte Fehlermeldungen werden nicht angezeigt {#problem-localized-error-messages-do-not-display}
+## Problem: Lokalisierte Fehlermeldungen werden nicht angezeigt  {#problem-localized-error-messages-do-not-display}
 
 1. Rendern Sie das Formular mit dem zusätzlichem Abfrageparameter **debugClientLibs=true** im Desktop-Browser, wechseln Sie dann zu „Developer Tools -> Ressourcen“ und suchen Sie die Datei „I18N.css“.
 1. Wenn die Datei nicht verfügbar ist, melden Sie sich bei CRX DE unter https://&lt;server>:&lt;port>/crx/de an.
@@ -146,11 +146,11 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
    ../LogMessages.js
    ```
 
-## Problem: Bild wird nicht angezeigt {#problem-image-not-showing-up}
+## Problem: Bild wird nicht angezeigt  {#problem-image-not-showing-up}
 
 1. Stellen Sie sicher, dass die URL des Bilds korrekt ist.
 1. Überprüfen Sie, ob Ihr Browser diesen Bildtyp unterstützt.
-1. In the exception details, search for word **caused by**.
+1. Suchen Sie in den Ausnahmedetails nach dem Wort **verursacht von**.
 
    Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch ist.
 
