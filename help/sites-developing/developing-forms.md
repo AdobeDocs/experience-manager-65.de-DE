@@ -53,11 +53,11 @@ Dies ist ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt.
 
 >[!NOTE]
 >
->Eine [Formularaktion](#developing-your-own-form-actions) kann auch festlegen, von welcher Ressource die Anfangswerte geladen werden. This is done using `FormsHelper#setFormLoadResource` inside `init.jsp`.
+>Eine [Formularaktion](#developing-your-own-form-actions) kann auch festlegen, von welcher Ressource die Anfangswerte geladen werden. Dies geschieht mit `FormsHelper#setFormLoadResource` in `init.jsp`.
 >
 >Das Formular wird nur über den Pfad, den der Autor in der Formular-Start-Komponente festgelegt hat, ausgefüllt, wenn dies nicht festgelegt wurde.
 
-### Vorabladen von Formularfeldern mit mehreren Werten {#preloading-form-fields-with-multiple-values}
+### Vorabladen von Formularfeldern mit mehreren Werten  {#preloading-form-fields-with-multiple-values}
 
 Einige Formularfelder haben auch den **Element-Ladepfad**. Dies ist ein weiterer optionaler Pfad, der auf einen Knoten im Repository verweist.
 
@@ -69,15 +69,15 @@ Eine Dropdown-Liste kann mit Ihren Werten konfiguriert werden, die ausgewählt w
 
 Mit dem **Element-Ladepfad** kann auf eine Liste aus einem Ordner im Repository zugegriffen werden, die in das Feld geladen wird:
 
-1. Create a new sling folder ( `sling:Folder`)
-for example, `/etc/designs/<myDesign>/formlistvalues`
+1. Erstellen Sie einen neuen Sling-Ordner ( `sling:Folder`)
+zum Beispiel `/etc/designs/<myDesign>/formlistvalues`
 
-1. Add a new property (for example, `myList`) of type multi-value string ( `String[]`) to contain the list of drop down items. Sie können auch mithilfe eines Skripts Inhalte importieren, z. B. mit einem JSP-Skript oder cURL in einem Shell-Skript.
+1. hinzufügen eine neue Eigenschaft (z. B. `myList`) des Typs Multi-Wert-Zeichenfolge ( `String[]`), die die Liste von Dropdown-Elementen enthält. Sie können auch mithilfe eines Skripts Inhalte importieren, z. B. mit einem JSP-Skript oder cURL in einem Shell-Skript.
 
-1. Use the full path in the **Items Load Path** field:
-for example, `/etc/designs/geometrixx/formlistvalues/myList`
+1. Verwenden Sie den vollständigen Pfad im Feld **Element Load Path**:
+zum Beispiel `/etc/designs/geometrixx/formlistvalues/myList`
 
-Note that if the values in the `String[]` are of the formatted like this:
+Beachten Sie, dass die Werte in `String[]` wie folgt formatiert sind:
 
 * `AL=Alabama`
 * `AK=Alaska`
@@ -90,7 +90,7 @@ generiert AEM die Liste wie folgt:
 
 Diese Funktion kann beispielsweise in einer mehrsprachigen Umgebung nützlich sein.
 
-### Entwicklung Ihrer eigenen Formularaktionen {#developing-your-own-form-actions}
+### Entwicklung Ihrer eigenen Formularaktionen  {#developing-your-own-form-actions}
 
 Für ein Formular ist eine Aktion erforderlich. Die Aktion bestimmt den Vorgang, der ausgeführt wird, wenn das Formular mit Benutzerdaten eingereicht wird.
 
@@ -104,7 +104,7 @@ und in der **Action Type**-Liste der **Formular**-Komponente:
 
 Dieser Abschnitt erläutert, wie Sie Ihre eigene Formularaktion entwickeln und zu dieser Liste hinzufügen können.
 
-You can add your own action under `/apps` as follows:
+Sie können Ihre eigene Aktion unter `/apps` wie folgt hinzufügen:
 
 1. Erstellen Sie einen Knoten des Typs `sling:Folder`. Geben Sie einen Namen an, der der zu implementierenden Aktion entspricht.
 
@@ -114,9 +114,9 @@ You can add your own action under `/apps` as follows:
 
 1. Definieren Sie in diesem Knoten die folgenden Eigenschaften und klicken Sie anschließend auf **Alle speichern**, um Ihre Änderungen zu speichern:
 
-   * `sling:resourceType` - festgelegt als `foundation/components/form/action`
+   * `sling:resourceType` - festgelegt als  `foundation/components/form/action`
 
-   * `componentGroup` - definieren als `.hidden`
+   * `componentGroup` - definieren als  `.hidden`
 
    * Optional:
 
@@ -131,15 +131,16 @@ You can add your own action under `/apps` as follows:
 1. Im Ordner erstellen Sie entweder:
 
    1. Ein Postskript.
-The name of the script is `post.POST.<extension>`, e.g. `post.POST.jsp`
-The post script is invoked when a form is submitted to process the form, it contains the code that handles the data arriving from the form 
+Der Name des Skripts ist `post.POST.<extension>`, z.B. `post.POST.jsp`
+Das Post-Skript wird aufgerufen, wenn ein Formular zur Verarbeitung des Formulars gesendet wird. Es enthält den Code, der die vom Formular eingehenden Daten verarbeitet 
 `POST`.
 
    1. Fügen Sie ein Weiterleitungsskript hinzu, das aufgerufen wird, wenn das Formular eingereicht wird.
-Der Name des Skripts ist `forward.<extension`>, z.B. kann `forward.jsp`dieses Skript einen Pfad definieren. Die aktuelle Anfrage wird dann an den angegebenen Pfad weitergeleitet.
-   The necessary call is `FormsHelper#setForwardPath` (2 variants). Ein typischer Anwendungsfall besteht darin, eine Validierung oder Logik auszuführen, um den Zielpfad zu finden, und anschließend zu diesem Pfad weiterzuleiten. Dabei wird die Speicherung in JCR dem standardmäßigen Sling-POST-Servlet überlassen.
+Der Name des Skripts ist `forward.<extension`, z.B. `forward.jsp`
+Dieses Skript kann einen Pfad definieren. Die aktuelle Anfrage wird dann an den angegebenen Pfad weitergeleitet.
+   Der erforderliche Aufruf ist `FormsHelper#setForwardPath` (2 Varianten). Ein typischer Anwendungsfall besteht darin, eine Validierung oder Logik auszuführen, um den Zielpfad zu finden, und anschließend zu diesem Pfad weiterzuleiten. Dabei wird die Speicherung in JCR dem standardmäßigen Sling-POST-Servlet überlassen.
 
-   Es kann auch ein weiteres Servlet verwendet werden, das die eigentliche Verarbeitung übernimmt. In diesem Fall stellen die Formularaktion und `forward.jsp` nur die Verbindung dar. An example of this is the mail action at `/libs/foundation/components/form/actions/mail`, which forwards details to `<currentpath>.mail.html`where a mail servlet sits.
+   Es kann auch ein weiteres Servlet verwendet werden, das die eigentliche Verarbeitung übernimmt. In diesem Fall stellen die Formularaktion und `forward.jsp` nur die Verbindung dar. Ein Beispiel hierfür ist die Mail-Aktion bei `/libs/foundation/components/form/actions/mail`, die Details an `<currentpath>.mail.html`weiterleitet, wo ein Mail-Servlet sitzt.
 
    Das bedeutet:
 
@@ -148,18 +149,18 @@ Der Name des Skripts ist `forward.<extension`>, z.B. kann `forward.jsp`dieses Sk
 
    Die Skripte werden in folgender Reihenfolge ausgeführt:
 
-   * Upon rendering the form ( `GET`):
+   * Beim Rendern des Formulars ( `GET`):
 
       1. `init.jsp`
-      1. for all field&#39;s constraints: `clientvalidation.jsp`
-      1. form&#39;s validationRT: `clientvalidation.jsp`
+      1. für alle Feldbeschränkungen: `clientvalidation.jsp`
+      1. validationRT des Formulars: `clientvalidation.jsp`
       1. Das Formular wird über eine Laderessource geladen, wenn dies festgelegt ist
-      1. `addfields.jsp` while inside rendering `<form></form>`
-   * upon handling a form `POST`:
+      1. `addfields.jsp` while inside rendering  `<form></form>`
+   * bei der Bearbeitung eines Formulars `POST`:
 
       1. `init.jsp`
-      1. for all field&#39;s constraints: `servervalidation.jsp`
-      1. form&#39;s validationRT: `servervalidation.jsp`
+      1. für alle Feldbeschränkungen: `servervalidation.jsp`
+      1. validationRT des Formulars: `servervalidation.jsp`
       1. `forward.jsp`
       1. Wenn ein Weiterleitungspfad festgelegt wurde (`FormsHelper.setForwardPath`), leiten Sie die Anfrage weiter und rufen Sie anschließend `cleanup.jsp` auf
 
@@ -171,13 +172,16 @@ Der Name des Skripts ist `forward.<extension`>, z.B. kann `forward.jsp`dieses Sk
 1. Auch hier können Sie optional Folgendes zum Ordner hinzufügen:
 
    1. Ein Skript für das Hinzufügen von Feldern.
-Der Skriptname wird `addfields.<extension>`z. B. `addfields.jsp`Ein addfields-Skript wird unmittelbar nach dem Schreiben des HTML-Codes für den Formular-Beginn aufgerufen. Dadurch kann die Aktion benutzerdefinierte Eingabefelder oder sonstigen HTML-Code in das Formular einfügen.
+Der Name des Skripts ist `addfields.<extension>`, z.B. `addfields.jsp`
+Ein addfields-Skript wird unmittelbar nach dem Schreiben des HTML-Codes für den Formular-Beginn aufgerufen. Dadurch kann die Aktion benutzerdefinierte Eingabefelder oder sonstigen HTML-Code in das Formular einfügen.
 
    1. Ein Initialisierungsskript.
-Der Name des Skripts wird `init.<extension>`z. B. `init.jsp`Dieses Skript wird aufgerufen, wenn das Formular wiedergegeben wird. Es kann zur Initialisierung von handlungsspezifischen Elementen verwendet werden. ``
+Der Name des Skripts ist `init.<extension>`, z.B. `init.jsp`
+Dieses Skript wird aufgerufen, wenn das Formular wiedergegeben wird. Es kann zur Initialisierung von handlungsspezifischen Elementen verwendet werden. ``
 
    1. Ein Bereinigungsskript.
-Der Name des Skripts ist `cleanup.<extension>`z.B. `cleanup.jsp`Dieses Skript kann zur Bereinigung verwendet werden.
+Der Name des Skripts ist `cleanup.<extension>`, z.B. `cleanup.jsp`
+Dieses Skript kann zur Bereinigung verwendet werden.
 
 1. Verwenden Sie die **Formular**-Komponente in einem parsys. Das Dropdown-Menü **Aktionstyp** enthält nun Ihre neue Aktion.
 
@@ -195,9 +199,9 @@ Einschränkungen können auf zwei Ebenen angewendet werden:
 * Für [einzelne Felder (siehe nachfolgendes Verfahren)](#constraints-for-individual-fields)
 * Als [globale Validierung für das Formular](#form-global-constraints)
 
-#### Einschränkungen für einzelne Felder {#constraints-for-individual-fields}
+#### Einschränkungen für einzelne Felder  {#constraints-for-individual-fields}
 
-You can add your own constraints for an individual field (under `/apps`) as follows:
+Sie können Ihre eigenen Einschränkungen für ein einzelnes Feld hinzufügen (unter `/apps`):
 
 1. Erstellen Sie einen Knoten des Typs `sling:Folder`. Geben Sie einen Namen an, der der zu implementierenden Einschränkung entspricht.
 
@@ -207,7 +211,7 @@ You can add your own constraints for an individual field (under `/apps`) as foll
 
 1. Definieren Sie in diesem Knoten die folgenden Eigenschaften und klicken Sie anschließend auf **Alle speichern**, um Ihre Änderungen zu speichern:
 
-   * `sling:resourceType` - festgelegt auf `foundation/components/form/constraint`
+   * `sling:resourceType` - festgelegt auf  `foundation/components/form/constraint`
 
    * `constraintMessage`: eine individuelle Nachricht, die beim Einreichen des Formulars angezeigt wird, wenn das Feld gemäß der Einschränkung nicht gültig ist
 
@@ -219,10 +223,12 @@ You can add your own constraints for an individual field (under `/apps`) as foll
 1. In diesem Ordner benötigen Sie möglicherweise auch die folgenden Skripte:
 
    * Ein Client-Überprüfungsskript:
-Der Name des Skripts wird `clientvalidation.<extension>`beispielsweise aufgerufen, `clientvalidation.jsp`wenn das Formularfeld wiedergegeben wird. Es kann verwendet werden, um Client-JavaScript zur Validierung des Felds im Client zu erstellen.
+Der Name des Skripts ist `clientvalidation.<extension>`, z.B. `clientvalidation.jsp`
+Dies wird aufgerufen, wenn das Formularfeld wiedergegeben wird. Es kann verwendet werden, um Client-JavaScript zur Validierung des Felds im Client zu erstellen.
 
    * Ein Serverüberprüfungsskript:
-Der Name des Skripts wird `servervalidation.<extension>`beispielsweise aufgerufen, `servervalidation.jsp`wenn das Formular gesendet wird. Es kann verwendet werden, um das Feld auf dem Server zu validieren, nachdem das Formular eingereicht wurde.
+Der Name des Skripts ist `servervalidation.<extension>`, z.B. `servervalidation.jsp`
+Dies wird aufgerufen, wenn das Formular gesendet wird. Es kann verwendet werden, um das Feld auf dem Server zu validieren, nachdem das Formular eingereicht wurde.
 
 >[!NOTE]
 >
@@ -238,8 +244,8 @@ Legen Sie die globale Validierung eines Formulars fest, indem Sie einen Ressourc
 
 Anschließend können Sie Folgendes definieren:
 
-* a `clientvalidation.jsp` - injected after the field&#39;s client validation scripts
-* and a `servervalidation.jsp` - also called after the individual field server validations upon a `POST`.
+* a `clientvalidation.jsp` - injiziert nach den Client-Überprüfungsskripten des Felds
+* und ein `servervalidation.jsp` - auch nach der Überprüfung des einzelnen Feldservers bei einem `POST` aufgerufen.
 
 ### Ein- und Ausblenden von Formularkomponenten {#showing-and-hiding-form-components}
 
@@ -262,11 +268,11 @@ Eine oder mehrere Bedingungen werden unter diesen Feldern eingeblendet. Eine Bed
 * Einen Operator.
 * Einen Wert, mit dem der Feldwert verglichen wird.
 
-Beispielsweise enthält eine Optionsfeldkomponente mit dem Titel `Receive email notifications?`* * `Yes` und `No` Optionsfelder. A Text Field component with the title of `Email Address` uses the following condition so that it is visible if `Yes` is selected:
+Beispielsweise enthält eine Optionsfeldkomponente mit dem Titel `Receive email notifications?`* * die Optionsfelder `Yes` und `No`. Eine Textfeldkomponente mit dem Titel `Email Address` verwendet die folgende Bedingung, damit sie sichtbar ist, wenn `Yes` ausgewählt ist:
 
 ![showhidebedingung](assets/showhidecondition.png)
 
-In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname“ auf Felder. In the previous example, the Element Name property of the Radio Group component is `contact`. Der folgende Code entspricht dem JavaScript-Code für dieses Beispiel:
+In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname“ auf Felder. Im vorherigen Beispiel ist die Eigenschaft Elementname der Komponente Optionsfeldgruppe `contact`. Der folgende Code entspricht dem JavaScript-Code für dieses Beispiel:
 
 `((contact == "Yes"))`
 
@@ -309,7 +315,7 @@ In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname�
    * in der Veröffentlichungsumgebung
 
 
-#### Behandlung von nicht mehr gültigen Komponentenverweisen {#handling-broken-component-references}
+#### Behandlung von nicht mehr gültigen Komponentenverweisen  {#handling-broken-component-references}
 
 Einblenden/Ausblenden-Bedingungen verweisen mit dem Wert der Eigenschaft „Elementname“ auf andere auf dem Formular befindliche Komponenten. Die Konfiguration &quot;Ein-/Ausblenden&quot;ist ungültig, wenn eine der Bedingungen auf eine Komponente verweist, die gelöscht wurde oder deren Elementname geändert wurde. In diesen Fällen müssen Sie die Bedingungen manuell aktualisieren. Anderenfalls tritt beim Laden des Formulars ein Fehler auf.
 
