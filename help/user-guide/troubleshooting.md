@@ -5,6 +5,9 @@ description: Beheben von Fehlern in AEM
 seo-description: Beheben von Fehlern in AEM
 translation-type: tm+mt
 source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+workflow-type: tm+mt
+source-wordcount: '63'
+ht-degree: 25%
 
 ---
 
@@ -13,15 +16,15 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## Fehlerbehebung bei der Leistung der Authoring-Instanz {#performance}
 
-[Weitere Informationen zur Fehlerbehebung für die AEM-Autoreninstanz finden Sie in diesem Handbuch und in den Tipps.](/help/sites-authoring/troubleshooting.md)
+[Weitere Informationen zur Fehlerbehebung in der AEM Autoreninstanz finden Sie in diesem Handbuch und in den Tipps.](/help/sites-authoring/troubleshooting.md)
 
-## Fehlerbehebung bei Verwaltungsproblemen {#administering}
+## Fehlerbehebung bei Administrationsproblemen {#administering}
 
-[Weitere Informationen zur Fehlerbehebung bei Verwaltungsproblemen in AEM finden Sie in diesem Handbuch und in den entsprechenden Tipps.](/help/sites-administering/troubleshoot.md)
+[Weitere Informationen zur Fehlerbehebung bei Verwaltungsproblemen finden Sie in diesem Handbuch und in AEM.](/help/sites-administering/troubleshoot.md)
 
-## Fehlerbehebung bei AEM-Protokollen {#logs}
+## Fehlerbehebung AEM Protokolle {#logs}
 
-[Weitere Informationen zur Fehlerbehebung in AEM-Protokollen finden Sie in diesem Handbuch und in den Tipps.](/help/sites-administering/troubleshooting.md)
+[Weitere Informationen zur Fehlerbehebung in AEM Protokollen finden Sie in diesem Handbuch und in den Tipps.](/help/sites-administering/troubleshooting.md)
 
 ## Fehlerbehebung bei Replikationsproblemen {#replication}
 
