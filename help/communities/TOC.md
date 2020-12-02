@@ -17,7 +17,7 @@ ht-degree: 30%
 # Adobe Experience Manager 6.5 Communities Guide {#communities}
 
 + [Communities-Anleitung](home.md)
-+ Introduction to AEM Communities {#introduction}
++ Einführung in AEM Communities {#introduction}
    + [Communities Sites](administer-landing.md)
    + [Übersicht über AEM Communities](overview.md)
    + [Versionshinweise zu AEM Communities](/help/release-notes/communities-release-notes.md)
