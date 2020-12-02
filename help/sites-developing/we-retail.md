@@ -50,7 +50,7 @@ We.Retail wird als AEM-Beispielinhalte bereitgestellt. Um die Inhalte zu verwend
 
 >[!CAUTION]
 >
->We.Retail sollte nicht auf Produktionsinstanzen installiert werden. Production instances should be started in `nosamplecontent` [runmode](/help/sites-deploying/configure-runmodes.md).
+>We.Retail sollte nicht auf Produktionsinstanzen installiert werden. Produktionsinstanzen sollten in `nosamplecontent` [runmode](/help/sites-deploying/configure-runmodes.md) gestartet werden.
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ We.Retail wird als AEM-Beispielinhalte bereitgestellt. Um die Inhalte zu verwend
 
 ### Neueste Version {#latest-version}
 
-Obwohl We.Retail mit dem der AEM-Version bereitgestellt wird, werden die Inhalte und ihre Funktionen ggf. nach deren Veröffentlichung aktualisiert. Therefore it is possible to [download the latest release from GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) and then [upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) and [install](/help/sites-administering/package-manager.md#installing-packages) it as a package on your AEM instance.
+Obwohl We.Retail mit dem der AEM-Version bereitgestellt wird, werden die Inhalte und ihre Funktionen ggf. nach deren Veröffentlichung aktualisiert. Daher ist es möglich, [die neueste Version von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) und [upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [install](/help/sites-administering/package-manager.md#installing-packages) als Paket auf Ihrer AEM Instanz herunterzuladen.
 
 ### Erste Schritte {#first-steps}
 
@@ -85,10 +85,10 @@ Die folgende Tabelle stellt einen Überblick über die wichtigsten Funktionen be
 | Globalisierte Site-Struktur | Sprachmaster live kopiert in länderspezifische Sites | Nicht verfügbar |
 | Inhaltsfragmente | Verfügbar | Nicht verfügbar |
 | Experience Fragments | Verfügbar | Nicht verfügbar |
-| Responsives Layout   | Für alle Seiten | Nur Geometrixx-Medien |
+| Responsives Layout   | Für alle Seiten | Nur Geometrixx Media |
 | Bearbeitbare Vorlagen | Für alle Seiten | Nicht verfügbar |
 | HTL | Alle Komponenten | Limited |
-| Targeting | Für alle Seiten | Nur Geometrixx im Freien |
+| Targeting | Für alle Seiten | Nur Geometrixx Outdoors |
 | Screens | Verfügbar | Nicht verfügbar |
 | Mobilgerät | Nicht verfügbar | Verfügbar |
 | Manuskripte | Nicht verfügbar | Verfügbar |
@@ -110,11 +110,11 @@ CODE AUF GITHUB
 Den Code dieser Seite finden Sie auf GitHub
 
 * [Open aem-sample-we-trading project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip) herunter
+* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip) herunter.
 
 Die neueste Version kann auch [direkt als installierbares Paket heruntergeladen](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) werden.
 
-If you encounter problems, please file [GitHub issues](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Sollten Sie Probleme haben, schreiben Sie bitte [GitHub-Probleme](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 Mit [Pull-Requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls) können Sie weiter ins Detail gehen und eigene Beiträge veröffentlichen.
 
