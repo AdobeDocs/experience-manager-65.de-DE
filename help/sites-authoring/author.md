@@ -26,7 +26,7 @@ ht-degree: 88%
 AEM bietet Ihnen zwei Umgebungen:
 
 * Autor
-* Veröffentlichen  
+* Veröffentlichen
 
 Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher ihn lesen können.
 
@@ -69,7 +69,7 @@ Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts un
 
 #### Veröffentlichungsumgebung {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
+Sobald die AEM bereit ist, wird der Inhalt der Site in der Umgebung **publish** veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
 
 Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der DMZ, d. h. es besteht die Möglichkeit des Zugriffs vom Internet aus und der vollständige Schutz durch das eigene Netzwerk ist nicht mehr gewährleistet.
 
