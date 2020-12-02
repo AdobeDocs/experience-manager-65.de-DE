@@ -46,7 +46,7 @@ Deshalb sind Gruppen an sich meist stabil, während Benutzer häufiger wechseln.
 
 Bei entsprechender Planung und einer sauberen Struktur kann die Verwendung von Gruppen Ihrer Struktur entsprechen, sodass Sie einen klaren Überblick haben und Ihnen ein effizienter Updatemechanismus zur Verfügung steht.
 
-### Integrierte Benutzer und Gruppen {#built-in-users-and-groups}
+### Integrierte Benutzer und Gruppen  {#built-in-users-and-groups}
 
 AEM WCM installiert eine Reihe von Benutzern und Gruppen. Diese werden angezeigt, wenn Sie nach der Installation erstmalig auf die Sicherheitskonsole zugreifen.
 
@@ -73,13 +73,13 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   </tr>
   <tr>
    <td><p>anonymous</p> <p> </p> </td>
-   <td>User</td>
+   <td>Benutzer</td>
    <td><p>Konto mit Standardrechten für nicht authentifizierten Zugriff auf eine Instanz. Dieses Konto umfasst standardmäßig minimale Zugriffsrechte.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Start neu erstellt. Das Konto kann zwar nicht dauerhaft gelöscht, aber deaktiviert werden.</p> </td>
    <td>Vermeiden Sie es, dieses Konto zu löschen oder zu deaktivieren, da dies die Funktionalität von Autoreninstanzen beeinträchtigen kann. Falls Sie aufgrund von Sicherheitsanforderungen zum Löschen des Kontos gezwungen sind, sollten Sie die Auswirkungen auf Ihr System zunächst ordnungsgemäß testen.</td>
   </tr>
   <tr>
    <td><p>author</p> <p>Standardkennwort: author</p> </td>
-   <td>User</td>
+   <td>Benutzer</td>
    <td><p>Ein Autorenkonto, das zu Schreibvorgängen unter /content berechtigt ist. Es umfasst die Berechtigungen von Mitwirkenden und Surfern.</p> <p>Eine Verwendung als Webmaster ist möglich, da auf die gesamte /content-Struktur zugegriffen werden kann.</p> <p>Hierbei handelt es sich nicht um einen integrierten Benutzer, sondern einen weiteren Geometrixx-Demobenutzer.</p> </td>
    <td><p>Adobe empfiehlt, entweder das Konto vollständig zu löschen oder das Standardkennwort zu ändern.</p> <p>Vorzugsweise sollte dies bei der Installation geschehen, es ist aber auch später möglich.</p> </td>
   </tr>
@@ -147,13 +147,13 @@ AEM nutzt ACLs (Access Control Lists, Zugriffssteuerungslisten), um zu ermitteln
 
 Berechtigungen definieren, wer welche Aktionen für eine Ressource durchführen darf. Berechtigungen sind das Ergebnis einer Bewertung der [Zugriffssteuerung](#access-control-lists-and-how-they-are-evaluated).
 
-You can change the permissions granted/denied to a given user by selecting or clearing the checkboxes for the individual AEM [actions](security.md#actions). Ein Häkchen bedeutet, dass eine Aktion erlaubt ist. Kein Häkchen bedeutet, dass eine Aktion abgelehnt wird.
+Sie können die einem bestimmten Benutzer zugeteilten/verweigerten Berechtigungen ändern, indem Sie die Kontrollkästchen für die einzelnen AEM [actions](security.md#actions) aktivieren oder löschen. Ein Häkchen bedeutet, dass eine Aktion erlaubt ist. Kein Häkchen bedeutet, dass eine Aktion abgelehnt wird.
 
 Wo sich das Häkchen im Raster befindet, gibt zudem an, welche Berechtigungen Benutzer in welchen AEM-Bereichen (also Pfaden) haben.
 
-### Aktionen    {#actions}
+### Aktionen     {#actions}
 
-Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Für jede Seite in der Hierarchie können Sie angeben, zu welcher Aktion der Benutzer auf der Seite berechtigt ist. [Mit Berechtigungen](#permissions-and-acls) können Sie Aktionen zulassen oder ablehnen.
+Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Für jede Seite in der Hierarchie können Sie angeben, zu welcher Aktion der Benutzer auf der Seite berechtigt ist. [](#permissions-and-acls) Erlauben Sie, eine Aktion zuzulassen oder abzulehnen.
 
 <table>
  <tbody>
@@ -178,7 +178,7 @@ Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Fü
    <td><p>Der Benutzer kann:</p>
     <ul>
      <li>eine neue Seite oder untergeordnete Seite erstellen.</li>
-    </ul> <p>If <strong>modify</strong> is denied the subtrees below jcr:content are specifically excluded because the creation of jcr:content and its child nodes are considered a page modification. Dies gilt nur für die Konten, die einen untergeordneten jcr:content-Knoten definieren.</p> </td>
+    </ul> <p>Wenn <strong>modify</strong> verweigert wird, werden die Unterbäume unter "jcr:content"ausdrücklich ausgeschlossen, da die Erstellung von "jcr:content"und dessen untergeordneten Knoten als Seitenänderung betrachtet werden. Dies gilt nur für die Konten, die einen untergeordneten jcr:content-Knoten definieren.</p> </td>
   </tr>
   <tr>
    <td>Löschen</td>
@@ -186,7 +186,7 @@ Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Fü
     <ul>
      <li>vorhandene Absätze von der Seite oder einer untergeordneten Seite löschen.</li>
      <li>eine Seite oder untergeordnete Seite löschen.</li>
-    </ul> <p>If <strong>modify</strong> is denied any subtrees below jcr:content are specifically excluded as removing jcr:content and its child nodes is considered a page modification. Dies gilt nur für die Konten, die einen untergeordneten jcr:content-Knoten definieren.</p> </td>
+    </ul> <p>Wenn <strong>modify</strong> verweigert wird, werden Unterbäume unterhalb von jcr:content ausdrücklich ausgeschlossen, da das Entfernen von jcr:content und dessen untergeordnete Knoten als Seitenänderung betrachtet werden. Dies gilt nur für die Konten, die einen untergeordneten jcr:content-Knoten definieren.</p> </td>
   </tr>
   <tr>
    <td>ACL lesen</td>
@@ -205,9 +205,9 @@ Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Fü
 
 >[!NOTE]
 >
->AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/manage-collections.md). Werden solchen Gruppen jedoch ACLs manuell hinzugefügt, kann dies zu Sicherheitsschwachstellen in AEM führen. Adobe empfiehlt, manuelles Hinzufügen von ACLs zu vermeiden.
+>AEM erstellt automatisch Benutzergruppen für die Rollenzuweisung (Eigentümer, Editor, Viewer) in [Sammlungen](/help/assets/manage-collections.md). Werden solchen Gruppen jedoch ACLs manuell hinzugefügt, kann dies zu Sicherheitsschwachstellen in AEM führen. Adobe empfiehlt, manuelles Hinzufügen von ACLs zu vermeiden.
 
-### Zugriffssteuerungslisten und ihre Bewertung {#access-control-lists-and-how-they-are-evaluated}
+### Zugriffssteuerungslisten und ihre Bewertung  {#access-control-lists-and-how-they-are-evaluated}
 
 AEM WCM organisiert anhand von Zugriffssteuerungslisten (Access Control Lists, ACLs) die auf die verschiedenen Seiten angewendeten Berechtigungen.
 
@@ -215,16 +215,16 @@ Zugriffssteuerungslisten setzen sich aus einzelnen Berechtigungen zusammen und d
 
 >[!NOTE]
 >
->In den Beispielen sind ACLs enthalten. Sie sollten prüfen und bestimmen, welche ACLs für Ihre Anwendungen geeignet sind. To review the ACLs that are included, go to **CRXDE **and select the **Access Control** tab for the following nodes:
+>In den Beispielen sind ACLs enthalten. Sie sollten prüfen und bestimmen, welche ACLs für Ihre Anwendungen geeignet sind. Um die darin enthaltenen ACLs zu überprüfen, gehen Sie zu **CRXDE **und wählen Sie die Registerkarte **Zugriffskontrolle** für die folgenden Knoten aus:
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Ermöglicht jedem Leserzugriff.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Ermöglicht jedem Leserzugriff.
->`/home/users/geometrixx-outdoors`: Ermöglicht allen Lesern Zugriff auf `*/profile*` und
+>`/home/users/geometrixx-outdoors`: Ermöglicht allen Lesezugriff für `*/profile*` und
 >`*/social/relationships/following/*`.
 >
->Your custom application may set access for other relationships, such as `*/social/relationships/friend/*` or `*/social/relationships/pending-following/*`.
+>Ihre benutzerdefinierte Anwendung kann den Zugriff auf andere Beziehungen einstellen, z. B. `*/social/relationships/friend/*` oder `*/social/relationships/pending-following/*`.
 >
->Wenn Sie bestimmte ACLs für Communities erstellen, können Mitgliedern, die diesen Communities beitreten, zusätzliche Berechtigungen erteilt werden. For example, this could be the case when users join the communities at `/content/geometrixx-outdoors/en/community/hiking` or `/content/geometrixx-outdoors/en/community/winter-sports`.
+>Wenn Sie bestimmte ACLs für Communities erstellen, können Mitgliedern, die diesen Communities beitreten, zusätzliche Berechtigungen erteilt werden. Dies kann beispielsweise der Fall sein, wenn Benutzer zu den Communities unter `/content/geometrixx-outdoors/en/community/hiking` oder `/content/geometrixx-outdoors/en/community/winter-sports` gehören.
 
 ### Berechtigungsstatus {#permission-states}
 
@@ -310,7 +310,7 @@ Um Berechtigungen zuzulassen oder abzulehnen, aktivieren bzw. deaktivieren Sie d
 
 Neben der Rasteransicht stellt AEM eine detaillierte Ansicht der Berechtigungen für ausgewählte Benutzer/Gruppen unter einem bestimmten Pfad bereit. Die Detailansicht liefert zusätzliche Informationen.
 
-Zusätzlich zur Anzeige von Informationen können Sie auch den aktuellen Benutzer oder die aktuelle Gruppe in eine Gruppe einschließen oder daraus ausschließen. See [Adding Users or Groups while Adding Permissions](#adding-users-or-groups-while-adding-permissions). Hier durchgeführte Änderungen werden sofort im oberen Abschnitt der Detailansicht wiedergegeben.
+Zusätzlich zur Anzeige von Informationen können Sie auch den aktuellen Benutzer oder die aktuelle Gruppe in eine Gruppe einschließen oder daraus ausschließen. Siehe [Hinzufügen von Benutzern oder Gruppen beim Hinzufügen von Berechtigungen](#adding-users-or-groups-while-adding-permissions). Hier durchgeführte Änderungen werden sofort im oberen Abschnitt der Detailansicht wiedergegeben.
 
 Zum Aufrufen der Detailansicht klicken Sie für eine(n) beliebige(n) Gruppe/Benutzer und Pfad auf der Registerkarte **Berechtigungen** auf **Details**.
 
@@ -350,7 +350,7 @@ Hierdurch kann der Stellvertreter (Darsteller) Aufgaben so abschließen, als wü
 
 >[!NOTE]
 >
->In order for impersonating to work for non-admin users, the impersonator (in the above case user-B) is required to have READ permissions in the `/home/users` path.
+>Damit das Identitätswechsel für Benutzer ohne Administratorrechte funktioniert, muss der Imitator (im oben stehenden Fall &quot;Benutzer-B&quot;) über LESEberechtigungen im Pfad `/home/users` verfügen.
 >
 >Weitere Informationen zur Vorgehensweise finden Sie unter [Berechtigungen in AEM](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -384,7 +384,7 @@ Eine Gruppe beinhaltet mehrere Benutzer.
 
 Benutzer und Gruppen können über die Funktion „Benutzerverwaltung“ in der Sicherheitskonsole konfiguriert werden.
 
-### Zugreifen auf die Benutzerverwaltung über die Sicherheitskonsole {#accessing-user-administration-with-the-security-console}
+### Zugreifen auf die Benutzerverwaltung über die Sicherheitskonsole  {#accessing-user-administration-with-the-security-console}
 
 Der Zugriff auf alle Benutzer, Gruppen, und verbundenen Berechtigungen erfolgt über die Sicherheitskonsole. Alle in diesem Abschnitte beschriebenen Vorgehensweisen werden in diesem Fenster durchgeführt.
 
@@ -410,16 +410,16 @@ In der linken Struktur sehen Sie alle aktuell im System vorhandenen Benutzer und
 
 | Tab | Beschreibung |
 |--- |--- |
-| Filterfeld | Ein Mechanismus zum Filtern der aufgelisteten Benutzer und/oder Gruppen. See [Filtering Users and Groups](#filtering-users-and-groups). |
-| Benutzer ausblenden | Ein Umschalter, mit dem alle aufgelisteten Benutzer ausgeblendet werden, wobei nur Gruppen verbleiben. See [Hiding Users and Groups](#hiding-users-and-groups). |
-| Gruppen ausblenden | Ein Umschalter, mit dem alle aufgelisteten Gruppen ausgeblendet werden, wobei nur Benutzer übrig bleiben. See [Hiding Users and Groups](#hiding-users-and-groups). |
+| Filterfeld | Ein Mechanismus zum Filtern der aufgelisteten Benutzer und/oder Gruppen. Siehe [Filtern von Benutzern und Gruppen](#filtering-users-and-groups). |
+| Benutzer ausblenden | Ein Umschalter, mit dem alle aufgelisteten Benutzer ausgeblendet werden, wobei nur Gruppen verbleiben. Siehe [Ausblenden von Benutzern und Gruppen](#hiding-users-and-groups). |
+| Gruppen ausblenden | Ein Umschalter, mit dem alle aufgelisteten Gruppen ausgeblendet werden, wobei nur Benutzer übrig bleiben. Siehe [Ausblenden von Benutzern und Gruppen](#hiding-users-and-groups). |
 | Bearbeiten | Ein Menü, mit dem Sie Benutzer oder Gruppen erstellen und löschen sowie aktivieren und deaktivieren können. Siehe [Erstellen von Benutzern und Gruppen](#creating-users-and-groups) und [Löschen von Benutzern und Gruppen](#deleting-users-and-groups). |
 | Eigenschaften | Listen zu Benutzern oder Gruppen, die E-Mail-Informationen, Beschreibungen und Namensinformationen enthalten können. Außerdem können Sie das Kennwort des Benutzers ändern. Siehe [Erstellen von Benutzern und Gruppen](#creating-users-and-groups), [Ändern von Benutzer- und Gruppeneigenschaften](#modifying-user-and-group-properties) und [Ändern eines Benutzerkennworts](#changing-a-user-password). |
 | Gruppen | Liste aller Gruppen, zu denen der ausgewählte Benutzer oder die ausgewählte Gruppe gehört. Sie können den ausgewählten Benutzer oder die ausgewählte Gruppe zusätzlichen Gruppen zuweisen oder aus Gruppen entfernen. Siehe [Gruppen](#adding-users-or-groups-to-a-group). |
 | Mitglieder | Nur für Gruppen verfügbar. Es werden nur die Mitglieder einer bestimmten Gruppe aufgeführt. Siehe [Mitglieder](#members-adding-users-or-groups-to-a-group). |
-| Berechtigungen | Sie können einem Benutzer oder einer Gruppe Berechtigungen zuweisen. Hier können Sie Folgendes steuern:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. See [Setting Permissions](#setting-permissions). </li><li>Berechtigungen zum Erstellen und Löschen von Seiten und zur Änderung der Hierarchie. ??? ermöglicht die [Zuweisung von Berechtigungen](#settingprivileges), z. B. Hierarchieänderungen, mit denen Sie Seiten erstellen und löschen können,</li><li>Berechtigungen im Zusammenhang mit [Replizierungsberechtigungen](#setting-replication-privileges) (normalerweise vom Autor bis zum Veröffentlichen) gemäß einem Pfad.</li></ul> |
-| Darsteller | Hiermit können andere Benutzer das Konto imitieren. Dies ist nützlich, wenn ein Benutzer stellvertretend für einen anderen Benutzer agieren soll. Siehe [Identifizieren von Benutzern](#impersonating-another-user). |
-| Preferences | Legt [Voreinstellungen für die Gruppe oder den Benutzer](#setting-user-and-group-preferences)fest. etwa Sprachvoreinstellungen. |
+| Berechtigungen | Sie können einem Benutzer oder einer Gruppe Berechtigungen zuweisen. Hier können Sie Folgendes steuern:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. Siehe [Einstellen von Berechtigungen](#setting-permissions). </li><li>Berechtigungen zum Erstellen und Löschen von Seiten und zur Änderung der Hierarchie. ??? können Sie [Berechtigungen](#settingprivileges) zuweisen, z. B. Hierarchieänderungen, mit denen Sie Seiten erstellen und löschen können.</li><li>Berechtigungen für [Replizierungsberechtigungen](#setting-replication-privileges) (normalerweise vom Autor zum Veröffentlichen) entsprechend einem Pfad.</li></ul> |
+| Darsteller | Hiermit können andere Benutzer das Konto imitieren. Dies ist nützlich, wenn ein Benutzer stellvertretend für einen anderen Benutzer agieren soll. Siehe [Impersonating Users](#impersonating-another-user). |
+| Preferences | Legt [Voreinstellungen für die Gruppe oder den Benutzer](#setting-user-and-group-preferences) fest. etwa Sprachvoreinstellungen. |
 
 ### Filtern von Benutzern und Gruppen {#filtering-users-and-groups}
 
@@ -466,7 +466,7 @@ So erstellen Sie einen neuen Benutzer oder eine neue Gruppe:
 
 1. Klicken Sie auf **Erstellen**. Der von Ihnen erstellte Benutzer bzw. die von Ihnen erstellte Gruppe wird in der Strukturliste angezeigt.
 
-### Löschen von Benutzern und Gruppen {#deleting-users-and-groups}
+### Löschen von Benutzern und Gruppen  {#deleting-users-and-groups}
 
 So löschen Sie einen Benutzer oder eine Gruppe:
 
@@ -507,7 +507,7 @@ Gehen Sie wie folgt vor, um das Kennwort eines Benutzers zu ändern.
 1. Geben Sie das neue Kennwort zweimal ein. Da es nicht als Klartext angezeigt wird, dient dies zur Bestätigung. Wenn die Eingaben nicht übereinstimmen, zeigt das System einen Fehler an.
 1. Klicken Sie auf **Festlegen**, um das neue Kennwort für das Konto zu aktivieren.
 
-### Hinzufügen von Benutzern oder Gruppen zu einer Gruppe {#adding-users-or-groups-to-a-group}
+### Hinzufügen von Benutzern oder Gruppen zu einer Gruppe  {#adding-users-or-groups-to-a-group}
 
 AEM bietet drei Möglichkeiten, um einer vorhandenen Gruppe Benutzer oder Gruppen hinzuzufügen:
 
@@ -515,7 +515,7 @@ AEM bietet drei Möglichkeiten, um einer vorhandenen Gruppe Benutzer oder Gruppe
 * Über das Mitgliederprofil können Sie Gruppen Mitglieder hinzufügen.
 * Beim Arbeiten an Berechtigungen können Sie Gruppen Mitglieder hinzufügen.
 
-### Gruppen – Hinzufügen von Benutzern oder Gruppen zu einer Gruppe {#groups-adding-users-or-groups-to-a-group}
+### Gruppen – Hinzufügen von Benutzern oder Gruppen zu einer Gruppe  {#groups-adding-users-or-groups-to-a-group}
 
 Auf der Registerkarte **Gruppen** wird angezeigt, zu welchen Gruppen das aktuelle Konto gehört. Hier können Sie einer Gruppe das ausgewählte Konto hinzuzufügen:
 
@@ -603,11 +603,11 @@ So entfernen Sie Mitglieder aus einer Gruppe unter einem bestimmten Pfad:
 
 ### Benutzersynchronisierung {#user-synchronization}
 
-When the deployment is a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), users and groups need to be synchronized among all publish nodes.
+Wenn es sich bei der Bereitstellung um eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) handelt, müssen Benutzer und Gruppen unter allen Veröffentlichungsknoten synchronisiert werden.
 
 Informationen zur Benutzersynchronisierung und deren Aktivierung finden Sie unter [Benutzersynchronisierung](/help/sites-administering/sync.md).
 
-## Verwalten von Berechtigungen {#managing-permissions}
+## Verwalten von Berechtigungen  {#managing-permissions}
 
 >[!NOTE]
 >
@@ -639,7 +639,7 @@ Die Replikationsberechtigung bezeichnet das Recht zur Veröffentlichung von Inha
 >
 >* Alle auf eine Gruppe angewendeten Replikationsrechte gelten für alle Benutzer in dieser Gruppe.
 >* Die Replikationsberechtigungen eines Benutzers ersetzen die Replikationsberechtigungen einer Gruppe.
->* Die Replikationsrechte „Zulassen“ haben Vorrang vor den Replikationsrechten „Ablehnen“. See [Permissions in AEM](#permissions-in-aem) for more information.
+>* Die Replikationsrechte „Zulassen“ haben Vorrang vor den Replikationsrechten „Ablehnen“. Weitere Informationen finden Sie unter [Berechtigungen in AEM](#permissions-in-aem).
 
 >
 
@@ -656,7 +656,7 @@ So legen Sie Replikationsberechtigungen fest:
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
-### Suchen nach Knoten {#searching-for-nodes}
+### Suchen nach Knoten  {#searching-for-nodes}
 
 Beim Hinzufügen oder Entfernen von Berechtigungen können Sie Knoten durchsuchen oder nach Knoten suchen.
 
@@ -716,7 +716,7 @@ So legen Sie Benutzer- und Gruppenvoreinstellungen fest, einschließlich Voreins
 
 1. Nehmen Sie nach Bedarf Änderungen an den Gruppen- oder Benutzereinstellungen vor und klicken Sie abschließend auf **Speichern**.
 
-### Einrichten von Benutzern oder Administratoren mit der Berechtigung zum Verwalten anderer Benutzer {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
+### Einrichten von Benutzern oder Administratoren mit der Berechtigung zum Verwalten anderer Benutzer  {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
 
 So richten Sie Benutzer oder Administratoren mit Berechtigungen zum Löschen/Aktivieren/Deaktivieren anderer Benutzer ein:
 
@@ -730,17 +730,17 @@ So richten Sie Benutzer oder Administratoren mit Berechtigungen zum Löschen/Akt
 
    Der ausgewählte Benutzer ist nun in der Lage, Benutzer zu deaktivieren, zu aktivieren, zu löschen und zu erstellen.
 
-### Erweitern von Berechtigungen auf Projektebene {#extending-privileges-on-a-project-level}
+### Erweitern von Berechtigungen auf Projektebene  {#extending-privileges-on-a-project-level}
 
 Wenn Sie anwendungsspezifische Berechtigungen umsetzen möchten, finden Sie im Folgenden alle erforderlichen Informationen zur Implementierung benutzerdefinierter Berechtigungen und zu ihrer CQ-weiten Durchsetzung:
 
-Die Berechtigung zur Änderung der Hierarchie wird durch eine Kombination von jcr-Privilegien abgedeckt. The replication privilege is named **crx:replicate** that is stored/evaluated along with other privileges on the jcr repository. Sie wird jedoch nicht auf jcr-Ebene durchgesetzt.
+Die Berechtigung zur Änderung der Hierarchie wird durch eine Kombination von jcr-Privilegien abgedeckt. Die Replizierungsberechtigung hat den Namen **crx:replicate**, der zusammen mit anderen Berechtigungen im jcr-Repository gespeichert/ausgewertet wird. Sie wird jedoch nicht auf jcr-Ebene durchgesetzt.
 
-The definition and registration of custom privileges is officially part of the [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) as of version 2.4 (see also [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Further usage is covered by JCR Access Control Management such as definedby [JSR 283](https://jcp.org/en/jsr/detail?id=283) (section 16). Außerdem definiert die Jackrabbit-API verschiedene Erweiterungen.
+Die Definition und Registrierung von benutzerdefinierten Berechtigungen ist offiziell Teil der [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) ab Version 2.4 (siehe auch [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Die weitere Nutzung wird durch JCR-Zugriffskontrolle-Management abgedeckt, wie z. B. durch [JSR 283](https://jcp.org/en/jsr/detail?id=283) definiert (Abschnitt 16). Außerdem definiert die Jackrabbit-API verschiedene Erweiterungen.
 
-The privilege registration mechanism is reflected in the UI under **Repository Configuration**.
+Der Mechanismus zur Registrierung von Berechtigungen wird in der Benutzeroberfläche unter **Repository-Konfiguration** angezeigt.
 
-Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene (in JCR: Übergeben von &#39;null&#39; als &#39;absPath&#39; Parameter in der ac-mgt-API, siehe jsr 333 für weitere Informationen). By default, **admin** and all members of administrators have that privilege granted.
+Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene (in JCR: Übergeben von &#39;null&#39; als &#39;absPath&#39; Parameter in der ac-mgt-API, siehe jsr 333 für weitere Informationen). Standardmäßig haben **admin** und alle Mitglieder von Administratoren diese Berechtigung erhalten.
 
 >[!NOTE]
 >
