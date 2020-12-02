@@ -21,22 +21,22 @@ ht-degree: 0%
 
 # Erscheinungsbild ändern {#alter-the-appearance}
 
-## Skript ändern {#modify-the-script}
+## Skript {#modify-the-script} ändern
 
 Das Skript &quot;comment.hbs&quot;ist für die Erstellung des gesamten HTML für jeden Kommentar zuständig.
 
 So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 
-1. Kopieren `comment.hbs`von `libs`nach `apps`
+1. Kopieren Sie `comment.hbs`von `libs`nach `apps`
 
    1. Wählen Sie nun eine der folgenden Optionen aus `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Auswahl **[!UICONTROL kopieren]**
+   1. Wählen Sie **[!UICONTROL Kopieren]**
    1. Wählen Sie nun eine der folgenden Optionen aus `/apps/social/commons/components/hbs/comments/comment`
-   1. Einfügen **[!UICONTROL auswählen]**
+   1. Wählen Sie **[!UICONTROL Einfügen]**
 
-1. Öffnen Sie die Überlagerung `comment.hbs`
+1. Öffnen Sie das überlappende `comment.hbs`
 
-   * Dublette-Click auf Knoten `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Dublette-Klick auf Knoten `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Suchen Sie die folgenden Zeilen und löschen oder kommentieren Sie sie aus:
 
@@ -45,7 +45,7 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Löschen Sie entweder die Zeilen oder umschließen Sie sie `<!--` und `-->` kommentieren Sie sie aus. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
+Löschen Sie die Zeilen oder umschließen Sie sie mit `<!--` und `-->`, um sie zu kommentieren. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
 
 ```xml
    xxx
@@ -54,25 +54,25 @@ Löschen Sie entweder die Zeilen oder umschließen Sie sie `<!--` und `-->` komm
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-### Overlay replizieren {#replicate-the-overlay}
+### Die Überlagerung replizieren {#replicate-the-overlay}
 
 Schieben Sie die überlagerte Kommentarkomponente mithilfe des Replizierungswerkzeugs an die Veröffentlichungsinstanz.
 
 >[!NOTE]
 >
->Eine stabilere Form der Replikation wäre, ein Paket im Package Manager zu erstellen und es zu [aktivieren](/help/sites-administering/package-manager.md#replicating-packages) . Ein Paket kann exportiert und archiviert werden.
+>Eine stabilere Form der Replikation wäre, ein Paket im Package Manager zu erstellen und [zu aktivieren](/help/sites-administering/package-manager.md#replicating-packages). Ein Paket kann exportiert und archiviert werden.
 
-Wählen Sie in der globalen Navigation &quot; **[!UICONTROL Werkzeuge]** &quot;> &quot; **[!UICONTROL Bereitstellung]** &quot;> &quot; **[!UICONTROL Replikation]** &quot;und klicken Sie auf &quot; **[!UICONTROL Struktur]** aktivieren&quot;.
+Wählen Sie in der globalen Navigation **[!UICONTROL Werkzeuge]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** und klicken Sie auf **[!UICONTROL Struktur aktivieren]**.
 
-Geben Sie für den Beginn Pfad ein `/apps/social/commons` und wählen Sie **[!UICONTROL Aktivieren]**.
+Geben Sie für den Pfad des Beginns `/apps/social/commons` ein und wählen Sie **[!UICONTROL Aktivieren]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
-### Ansichten {#view-results}
+### Ansicht Ergebnisse {#view-results}
 
 Wenn Sie sich als Administrator bei der Veröffentlichungsinstanz anmelden, z. B. https://localhost:4503/crx/de als Administrator/Administrator, können Sie überprüfen, ob die überlagerten Komponenten vorhanden sind.
 
-Wenn Sie sich abmelden, sich erneut anmelden `aaron.mcdonald@mailinator.com/password` und die Seite aktualisieren, werden Sie feststellen, dass der gepostete Kommentar nicht mehr mit einem Avatar angezeigt wird, sondern eine einfache &quot;xxx&quot;.
+Wenn Sie sich abmelden und sich erneut als `aaron.mcdonald@mailinator.com/password` anmelden und die Seite aktualisieren, werden Sie feststellen, dass der gepostete Kommentar nicht mehr mit einem Avatar angezeigt wird, sondern eine einfache &quot;xxx&quot;.
 
 ![create-template-component](assets/create-template-component.png)
 
