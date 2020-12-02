@@ -33,17 +33,17 @@ Weitere Informationen zum Erstellen eines Community-Site-Besuchs finden Sie unte
 
 >[!NOTE]
 >
->If not familiar with the authoring environment, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+>Wenn Sie mit der Authoring-Umgebung nicht vertraut sind, erstellen Sie eine Ansicht der Dokumentation zu [basic handling](/help/sites-authoring/basic-handling.md) und einer [Quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
 ## Verfügbare Communities-Komponenten {#available-communities-components}
 
 In der folgenden Tabelle sind diejenigen Communities-Komponenten aufgeführt, die Autoren angezeigt werden, wenn sie im Komponenten-Browser (Sidekick) aktiviert sind.
 
-See also the interactive [Community Components guide](/help/communities/components-guide.md).
+Siehe auch interaktives [Handbuch zu Community-Komponenten](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Read [Communities Components Basics](/help/communities/basics.md) as it contains information necessary for authoring with Communities components.
+>Lesen Sie die Grundlagen zu Communities-Komponenten](/help/communities/basics.md), da sie Informationen enthalten, die zum Authoring mit Communities-Komponenten erforderlich sind.[
 
 | **Komponentenname** | **Funktion** |
 |---|---|
@@ -84,9 +84,9 @@ See also the interactive [Community Components guide](/help/communities/componen
 
 ## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
 
-* Visit [Deploying Communities](/help/communities/deploy-communities.md) to learn about recommended deployments.
+* Weitere Informationen zu empfohlenen Bereitstellungen finden Sie unter [Bereitstellen von Communities](/help/communities/deploy-communities.md).
 
 * Unter [Communities-Sites verwalten](/help/communities/administer-landing.md) erfahren Sie mehr darüber, wie Sie Community-Sites erstellen, Community-Site-Vorlagen bearbeiten, Community-Inhalte moderieren, Mitglieder verwalten und Messaging-Systeme konfigurieren können.
 
-* Visit [Developing Communities](/help/communities/communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
+* Besuchen Sie [Developing Communities](/help/communities/communities.md), um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
 
