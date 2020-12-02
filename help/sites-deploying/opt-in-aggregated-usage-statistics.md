@@ -12,6 +12,9 @@ discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 61%
 
 ---
 
@@ -26,13 +29,13 @@ Sie können die Sammlung von Nutzungsstatistiken über die Touch-Benutzeroberfl�
 
 >[!NOTE]
 >
->Es gibt verschiedene Datenschutz- und Datenschutzbestimmungen. einschließlich beispielsweise GDPR und CCPA. AEM-Sites sind bereit, Kunden bei ihren Datenschutzverpflichtungen und der Einhaltung der Datenschutzbestimmungen zu unterstützen. Auf dieser Seite werden Kunden durch die Verfahren zum Aktivieren (oder Deaktivieren) der aggregierten Sammlung von Nutzungsstatistiken angeleitet.
+>Es gibt verschiedene Datenschutz- und Datenschutzbestimmungen. einschließlich beispielsweise GDPR und CCPA. AEM Sites ist bereit, Kunden bei ihren Datenschutzverpflichtungen und ihren Datenschutzverpflichtungen zu unterstützen. Auf dieser Seite werden Kunden durch die Verfahren zum Aktivieren (oder Deaktivieren) der aggregierten Sammlung von Nutzungsstatistiken angeleitet.
 >
->Weitere Informationen finden Sie im Datenschutzzentrum von [Adobe](https://www.adobe.com/privacy.html).
+>Weitere Informationen finden Sie auch im [Datenschutzzentrum der Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->You can also opt-out at anytime by either using the [Web Console](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) or by not selecting the opt-in option on the AEM opt-in screen.
+>Sie können die Abmeldung jederzeit auch über die [Web-Konsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) oder durch Nichtauswahl der Option für die Teilnahme im Bildschirm &quot;AEM anmelden&quot;vornehmen.
 
 ## Aktivieren mithilfe der Touch-Benutzeroberfläche {#opt-in-by-using-the-touch-ui}
 
@@ -56,20 +59,20 @@ Bei der ersten Verwendung von AEM können Sie die Sammlungsfunktion mithilfe der
 
 Die Aktivierung (oder Deaktivierung) mithilfe der Web-Konsole funktioniert wie folgt:
 
-1. On the AEM Navigation screen, click **Tools** and then **Operations**.
+1. Klicken Sie im Bildschirm AEM Navigation auf **Tools** und dann auf **Vorgänge**.
 
    ![usage_statisticsSopsdashboard](assets/usage_statisticsopsdashboard.png)
 
-1. On the Operations window, click **Web Console**.
+1. Klicken Sie im Fenster &quot;Vorgänge&quot;auf **Web Console**.
 
    ![usage_statistics_webconsole](assets/usage_statisticswebconsole.png)
 
 1. Suchen Sie nach **Aggregierte Sammlung von Nutzungsstatistiken**.
-1. Click the **Edit** icon.
+1. Klicken Sie auf das Symbol **Bearbeiten**.
 
    ![usage_statisticsScrollingEdit](assets/usage_statisticscollectionedit.png)
 
-1. Select the **Enabled** checkbox. Alternativ können Sie das Kontrollkästchen deaktivieren, wenn Sie die Erfassung von Nutzungsstatistiken deaktivieren möchten.
+1. Aktivieren Sie das Kontrollkästchen **Aktiviert**. Alternativ können Sie das Kontrollkästchen deaktivieren, wenn Sie die Erfassung von Nutzungsstatistiken deaktivieren möchten.
 
    ![usage_statisticsSelect](assets/usage_statisticsselect.png)
 
