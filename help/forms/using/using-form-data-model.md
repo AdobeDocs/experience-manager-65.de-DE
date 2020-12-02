@@ -65,7 +65,7 @@ Sobald das auf einem Formulardatenmodell basierende adaptive Formular oder Formu
 
 Indem Sie Datenmodellobjekte in das adaptive Formular oder Fragment ziehen und dort ablegen, können Sie Formularfelder hinzufügen. Für die hinzugefügten Formularfelder bleiben die Metadateneigenschaften und die Bindung der Datenmodellobjekteigenschaften erhalten. Die Bindung stellt sicher, dass die Feldwerte in den entsprechenden Datenquellen bei der Formularübermittlung aktualisiert und bei der Ausgabe des Formulars vorausgefüllt werden.
 
-## Interaktive Kommunikation erstellen {#create-ic}
+## Interaktive Kommunikation erstellen  {#create-ic}
 
 Sie können eine interaktive Kommunikation basierend auf einem Formulardatenmodell erstellen, mit dem Sie die interaktive Kommunikation mit Daten aus konfigurierten Datenquellen vorab füllen können. Darüber hinaus können die Bausteine &#x200B;&#x200B;einer interaktiven Kommunikation, wie etwa Text-, Listen- und Bedingungsdokumentfragmente, auf einem Formulardatenmodell basieren.
 
@@ -85,7 +85,7 @@ Weitere Informationen finden Sie unter:
 
 [Fragmente aufführen](/help/forms/using/lists.md)
 
-## Vorschau mit Beispieldaten {#preview-ic}
+## Vorschau mit Beispieldaten  {#preview-ic}
 
 Mit dem Formulardatenmodelleditor können Sie Beispieldaten für Datenmodellobjekte im Formulardatenmodell generieren und bearbeiten. Sie können diese Daten verwenden, um interaktive Kommunikation und adaptive Formulare in der Vorschau anzuzeigen und zu testen. Sie müssen die Beispieldaten vor der Vorschau generieren, wie in [Mit Formulardatenmodell arbeiten](../../forms/using/work-with-form-data-model.md#sample) beschrieben.
 
@@ -93,7 +93,7 @@ So zeigen Sie eine interaktive Kommunikation mit Stichprobendatenmodelldaten an:
 
 1. Navigieren Sie auf dem AEM-Server zu **[!UICONTROL Formulare > Formulare und Dokumente]**.
 1. Wählen Sie eine interaktive Kommunikation und tippen Sie auf **[!UICONTROL Vorschau]** in der Symbolleiste, um **[!UICONTROL Webkanal]**, **[!UICONTROL Druckkanal]** oder **[!UICONTROL Beide Kanäle]** auszuwählen und eine Vorschau der interaktiven Kommunikation anzuzeigen.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Stellen Sie im Dialogfeld &quot;Vorschau [*Kanal*]&quot;sicher, dass **[!UICONTROL Testdaten des Formulardatenmodells]** ausgewählt ist, und tippen Sie auf **[!UICONTROL Vorschau]**.
 
 Die interaktive Kommunikation öffnet sich mit vorbefüllten Beispieldaten.
 
@@ -115,11 +115,11 @@ Um den Vorbefüllungs-Dienst für Formulardatenmodelle in einer interaktiven Kom
 
 Dialogfeld „Eigenschaften bearbeiten“ für eine interaktive Kommunikation
 
-## Gesendete adaptive Formulardaten in Datenquellen schreiben {#write-af}
+## Gesendete adaptive Formulardaten in Datenquellen schreiben  {#write-af}
 
 Sie können ein auf einem Formulardatenmodell basierendes Formular so konfigurieren, dass die vom Benutzer im Formular übermittelten Daten für ein Datenmodellobjekt bei der Übermittlung in dessen Datenquellen geschrieben werden. Zu diesem Zweck steht in AEM Forms die [Übermittlungsaktion für Formulardatenmodelle](../../forms/using/configuring-submit-actions.md) zur Verfügung. Standardmäßig ist sie nur für adaptive Formulare verfügbar, die auf einem Formulardatenmodell basieren. Diese Aktion schreibt die übermittelten Daten für ein Datenmodellobjekt in dessen Datenquelle.
 
-To configure the Form Data Model submit action, open Adaptive Form Container properties and select **[!UICONTROL Submit using Form Data Model]** from the Submit Action drop-down under the Submission accordion. Suchen Sie dann das gewünschte Datenmodellobjekt in der Dropdownliste **[!UICONTROL Name des zu übermittelnden Modellobjekts]** und wählen Sie es aus. Speichern Sie die Eigenschaften.
+Um die Übermittlungsaktion &quot;Formulardatenmodell&quot;zu konfigurieren, öffnen Sie die Eigenschaften des Containers für adaptive Formulare und wählen Sie **[!UICONTROL Mit Formulardatenmodell senden]** aus der Dropdownliste Übermittlungsaktion unter dem Akkordeon &quot;Übermittlungsaktion&quot;aus. Suchen Sie dann das gewünschte Datenmodellobjekt in der Dropdownliste **[!UICONTROL Name des zu übermittelnden Modellobjekts]** und wählen Sie es aus. Speichern Sie die Eigenschaften.
 
 Bei Übermitteln des Formulars werden die Daten für das konfigurierte Datenmodellobjekt in die entsprechende Datenquelle geschrieben.
 
@@ -128,20 +128,20 @@ Bei Übermitteln des Formulars werden die Daten für das konfigurierte Datenmode
 Mithilfe der Objekteigenschaft „Binärdatenmodell“ können Sie auch Formularanhänge an eine Datenquelle senden. Gehen Sie wie folgt vor, um Anhänge an eine JDBC-Datenquelle zu senden:
 
 1. Fügen Sie dem Formulardatenmodell ein Datenmodellobjekt hinzu, das eine binäre Eigenschaft enthält.
-1. In the adaptive form, drag-drop the **[!UICONTROL File Attachment]** component from the Components browser onto the adaptive form.
-1. Tap to select the added component and tap ![settings_icon](assets/settings_icon.png) to open the Properties browser for the component.
-1. In the Bind Reference field, tap ![foldersearch_18](assets/foldersearch_18.png) and navigate to select the binary property you added in the form data model. Konfigurieren Sie weitere Eigenschaften entsprechend.
+1. Ziehen Sie im adaptiven Formular die Komponente **[!UICONTROL Dateianlage]** aus dem Komponenten-Browser auf das adaptive Formular.
+1. Tippen Sie auf , um die hinzugefügte Komponente auszuwählen, und tippen Sie auf ![settings_icon](assets/settings_icon.png), um den Eigenschaftenbrowser für die Komponente zu öffnen.
+1. Tippen Sie im Feld &quot;Bindungsreferenz&quot;auf ![foldersearch_18](assets/foldersearch_18.png) und navigieren Sie, um die binäre Eigenschaft auszuwählen, die Sie im Formulardatenmodell hinzugefügt haben. Konfigurieren Sie weitere Eigenschaften entsprechend.
 
-   Tap ![check-button](assets/check-button.png) to save the properties. Damit ist das Anhangsfeld an die binäre Eigenschaft des Formulardatenmodells gebunden.
+   Tippen Sie auf ![check-button](assets/check-button.png), um die Eigenschaften zu speichern. Damit ist das Anhangsfeld an die binäre Eigenschaft des Formulardatenmodells gebunden.
 
 1. Aktivieren Sie im Abschnitt „Übermittlung“ der Eigenschaften des Containers für das adaptive Formular die Option **[!UICONTROL Formularanhänge einreichen]**. Dadurch wird der Anhang im Feld der binären Eigenschaft bei der Sendung des Formulars an die Datenquelle gesendet.
 
-## Dienste in adaptiven Formularen mithilfe von Regeln aufrufen {#invoke-services}
+## Dienste in adaptiven Formularen mithilfe von Regeln aufrufen  {#invoke-services}
 
-In einem auf einem Formulardatenmodell basierenden adaptiven Formular können Sie [Regeln erstellen](../../forms/using/rule-editor.md) , um die im Formulardatenmodell konfigurierten Dienste aufzurufen. The **[!UICONTROL Invoke Services]** operation in a rule lists all available services in the form data model and allows you to select input and output fields for the service. Sie können außerdem mit dem Regeltyp **Wert festlegen** einen Formulardatenmodelldienst aufrufen und die vom Dienst zurückgegebene Ausgabe als Wert eines Feldes einstellen.
+In einem auf einem Formulardatenmodell basierenden adaptiven Formular können Sie [Regeln erstellen](../../forms/using/rule-editor.md) , um die im Formulardatenmodell konfigurierten Dienste aufzurufen. Der Vorgang **[!UICONTROL Dienste aufrufen]** in einer Regel Liste alle verfügbaren Dienste im Formulardatenmodell und ermöglicht die Auswahl der Eingabe- und Ausgabefelder für den Dienst. Sie können außerdem mit dem Regeltyp **Wert festlegen** einen Formulardatenmodelldienst aufrufen und die vom Dienst zurückgegebene Ausgabe als Wert eines Feldes einstellen.
 
 Beispielsweise ruft die folgende Regel einen Get-Dienst auf, für den die Mitarbeiter-ID als Eingabe angegeben werden muss und der die entsprechenden Werte in den Feldern für die Angehörigen-ID, den Nachnamen, den Vornamen und das Geschlecht zurückgibt.
 
 ![invoke-service](assets/invoke-service.png)
 
-In addition, you can use the `guidelib.dataIntegrationUtils.executeOperation` API to write a JavaScript in the code editor for the rule editor. For API details, see [API to invoke form data model service](/help/forms/using/invoke-form-data-model-services.md).
+Darüber hinaus können Sie mit der API `guidelib.dataIntegrationUtils.executeOperation` ein JavaScript im Code-Editor für den Regeleditor schreiben. Weitere Informationen zur API finden Sie unter [API zum Aufrufen des Formulardatenmodelldiensts](/help/forms/using/invoke-form-data-model-services.md).
