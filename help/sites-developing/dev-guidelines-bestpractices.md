@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 87%
 
 ---
 
@@ -50,7 +53,7 @@ Die folgenden allgemeinen Regeln für Entwickler sind in der Mehrzahl gängiger 
 
 Wenn Sie eigene Komponenten erstellen oder eine vorhandene Komponente anpassen, ist es häufig am einfachsten (und sichersten), vorhandene Definitionen wiederzuverwenden. Dies gilt auch für andere Elemente in AEM, zum Beispiel für Fehler-Handler.
 
-Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: In other words, copying the definition from `/libs` to `/apps/<your-project>`. This new definition, in `/apps`, can be updated according to your requirements.
+Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: Kopieren Sie also die Definition von `/libs` in `/apps/<your-project>`. Diese neue Definition in `/apps` kann entsprechend Ihren Anforderungen aktualisiert werden.
 
 >[!NOTE]
 >
@@ -62,11 +65,11 @@ Beispiel:
 
    Dazu gehörte die Überlagerung einer Komponentendefinition:
 
-   * Erstellen Sie einen neuen Komponentenordner in, `/apps/<website-name>/components/<MyComponent>` indem Sie eine vorhandene Komponente kopieren:
+   * Erstellen Sie einen neuen Komponentenordner in `/apps/<website-name>/components/<MyComponent>`, indem Sie eine vorhandene Komponente kopieren:
 
       * Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
 
-         * from `/libs/foundation/components/text`
+         * von `/libs/foundation/components/text`
          * in `/apps/myProject/components/text`
 
 * [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
@@ -75,19 +78,19 @@ Beispiel:
 
    * Kopieren Sie im Repository das/die Standardskript(e):
 
-      * from `/libs/sling/servlet/errorhandler/`
+      * von `/libs/sling/servlet/errorhandler/`
       * in `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->You **must not** change anything in the `/libs` path.
+>Sie dürfen **** keinerlei Änderungen im Pfad `/libs` vornehmen.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Für die Konfiguration und andere Änderungen:
 >
->1. copy the item in `/libs` to `/apps`
->1. make any changes within `/apps`
+>1. Kopieren Sie das Element in `/libs` in `/apps`
+>1. alle Änderungen innerhalb von `/apps`
 
 
 ## Verwenden von JCR-Abfragen {#when-to-use-jcr-queries-and-when-not-to-use-them}
@@ -97,7 +100,7 @@ JCR-Abfragen sind sehr wirksam, wenn sie richtig eingesetzt werden. Sie sind bes
 * echte Benutzerabfragen, wie die Volltextsuche in Inhalten.
 * die Suche nach strukturierten Inhalten in einem gesamten Repository.
 
-   Stellen Sie in solchen Fällen sicher, dass Abfragen nur bei Bedarf ausgeführt werden, z. B. bei der Komponentenaktivierung oder bei der Cache-Ungültigmachung (im Gegensatz zu z. B. Workflows, Ereignishandler, die Inhaltsänderungen auslösen, Filtern usw.).
+   Stellen Sie in solchen Fällen sicher, dass Abfragen nur ausgeführt werden, wenn dies unbedingt erforderlich ist, z. B. bei Aktivierung oder Cache-Ungültigmachung (im Gegensatz zu Workflows Schritte, Ereignis-Handler, die Inhaltsänderungen auslösen, Filter usw.).
 
 JCR-Abfragen sollten nicht für reine Rendering-Anforderungen verwendet werden. Beispielsweise sind JCR-Abfragen nicht geeignet für
 
@@ -116,7 +119,7 @@ Verwenden Sie für das Rendern von Inhalten anstelle einer JCR-Abfrage den Navig
 
 >[!NOTE]
 >
->It is also worthwhile to reference the [security checklist](/help/sites-administering/security-checklist.md).
+>Es lohnt sich auch, auf die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) zu verweisen.
 
 ### JCR- bzw. Repository-Sitzungen {#jcr-repository-sessions}
 
@@ -126,13 +129,13 @@ Verwenden Sie die Benutzersitzung und nicht die Administratorsitzung. Sie sollte
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
+### Schutz vor Cross-Site Scripting (XSS)  {#protect-against-cross-site-scripting-xss}
 
 Mit Cross-Site Scripting (XSS) können Angreifer Code in Webseiten einfügen, die von anderen Benutzern aufgerufen werden. Diese Sicherheitslücke kann von böswilligen Nutzern ausgenutzt werden, um die Zugriffssteuerung zu umgehen.
 
 AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Bei Entwicklung und Tests hat das Vermeiden von XSS höchste Priorität.
 
-Additionally, a web application firewall, such as [mod_security for Apache](https://modsecurity.org), can provide reliable, central control over the security of the deployment environment and protect against previously undetected cross-site scripting attacks.
+Darüber hinaus kann eine Web-Anwendungs-Firewall, wie z. B. [mod_security for Apache](https://modsecurity.org), eine zuverlässige und zentrale Kontrolle über die Sicherheit der Bereitstellungs-Umgebung bieten und vor zuvor unentdeckten Cross-Site-Scripting-Angriffen schützen.
 
 >[!CAUTION]
 >
@@ -153,7 +156,7 @@ Stellen Sie wie auch bei anderen Internetanwendungen sicher, dass bei der Übert
 
 Dies gilt für vertrauliche Systeminformationen (wie Konfiguration oder Administrationszugriff) und vertrauliche Benutzerinformationen (wie persönliche Daten).
 
-## Spezifische Entwicklungsaufgaben {#distinct-development-tasks}
+## Spezifische Entwicklungsaufgaben  {#distinct-development-tasks}
 
 ### Anpassen von Fehlerseiten {#customizing-error-pages}
 
@@ -161,7 +164,7 @@ Fehlerseiten können in AEM angepasst werden. Dies ist ratsam, um zu vermeiden, 
 
 Weitere Informationen finden Sie unter [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md).
 
-### Geöffnete Dateien im Java-Prozess {#open-files-in-the-java-process}
+### Geöffnete Dateien im Java-Prozess  {#open-files-in-the-java-process}
 
 Da AEM auf eine große Anzahl von Dateien zugreifen kann, wird empfohlen, die Anzahl [geöffneter Dateien für einen Java-Prozess](/help/sites-deploying/configuring.md#open-files-in-the-java-process) ausdrücklich für AEM zu konfigurieren.
 
