@@ -35,9 +35,9 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 >
 >Berechtigungsdienstvorgänge können nicht mit Webdiensten ausgeführt werden.
 
-## Quick Beginn (SOAP-Modus): Importieren von Berechtigungen mit der Java-API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Importieren von Anmeldeinformationen mit der Java-API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei mit dem Namen *cred.p12* importiert. Der Aliaswert, der zum Importieren der Berechtigung verwendet wird, ist `Secure`. (Siehe [Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)importieren.)
+Im folgenden Codebeispiel wird eine Berechtigung basierend auf einer Datei mit dem Namen *cred.p12* importiert. Der Aliaswert, der zum Importieren der Berechtigung verwendet wird, ist `Secure`. (Siehe [Berechtigungen mithilfe der Trust Manager-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api) importieren.)
 
 ```java
  /*
