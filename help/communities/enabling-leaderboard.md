@@ -19,36 +19,36 @@ ht-degree: 19%
 ---
 
 
-# Leader-Funktion {#leaderboard-feature}
+# Leaderboard-Funktion {#leaderboard-feature}
 
 ## Einführung {#introduction}
 
-Die `Leaderboard` Komponente bietet die Möglichkeit, einen Eindruck davon zu erhalten, wie Mitglieder innerhalb der Gemeinschaft interagieren, indem sie Mitglieder nach Punkten (Basis-Scoring) oder ihrem Fachwissen (Advanced Scoring) einstufen.
+Die `Leaderboard`-Komponente bietet die Möglichkeit, sich ein Gefühl dafür zu verschaffen, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder nach gewonnenen Punkten (Basissortierung) oder ihrem Fachwissen (fortgeschrittenes Scoring) einstufen.
 
-Bevor Sie die Komponente &quot;Lederboard&quot;auf eine Seite einfügen, müssen Sie die Bewertung und Abzeichen der [Communities konfigurieren](/help/communities/implementing-scoring.md).
+Bevor Sie die Lederboard-Komponente auf eine Seite setzen, müssen Sie [Communities Scoring and Badges](/help/communities/implementing-scoring.md) konfigurieren.
 
 Dieser Abschnitt der Dokumentation beschreibt:
 
-* Hinzufügen der `Leaderboard` Komponente zu einer [Community-Site](/help/communities/overview.md#community-sites).
-* Configuration settings for the `Leaderboard` component.
+* Hinzufügen der Komponente `Leaderboard` zu einer [Community-Site](/help/communities/overview.md#community-sites).
+* Konfigurationseinstellungen für die Komponente `Leaderboard`.
 
-### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+### Hinzufügen einer Pinnwand zu einer Seite {#adding-a-leaderboard-to-a-page}
 
-To add a `Leaderboard` component to a page in author mode, locate the component
+Um eine `Leaderboard`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
 
 * `Communities / Leaderboard`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
 
 Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-### Leaderboard konfigurieren {#configuring-leaderboard}
+### Leaderboard {#configuring-leaderboard} konfigurieren
 
-Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Leaderboard` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -56,7 +56,7 @@ Select the placed `Leaderboard` component to access and select the `Configure` i
 
 #### Registerkarte „Settings“{#settings-tab}
 
-Geben Sie auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &quot;an, welche Informationen zum Mitglied angezeigt werden sollen:
+Geben Sie unter der Registerkarte **[!UICONTROL Einstellungen]** an, welche Informationen zum Element angezeigt werden sollen:
 
 * **Anzeigename**
 
@@ -78,9 +78,9 @@ Diese Option ist standardmäßig deaktiviert.
    Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds neben dem Namen des Mitglieds mit dem Profil des Mitglieds verknüpft.
 Diese Option ist standardmäßig deaktiviert.
 
-#### Registerkarte &quot;Regeln&quot; {#rules-tab}
+#### Registerkarte Regeln {#rules-tab}
 
-Auf der Registerkarte &quot; **Regeln** &quot;finden Sie die Community-Site und die zugehörigen Scoring- und Badging-Regeln.
+Auf der Registerkarte **Regeln** finden Sie die Community-Site und die zugehörigen Scoring- und Bading-Regeln
 
 * **Speicherort für Regel**
 
@@ -147,6 +147,6 @@ Konfiguration der Leaderboard-Komponente:
 
 ### Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Leaderboard Essentials](/help/communities/leaderboard.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Leaderboard Essentials](/help/communities/leaderboard.md) für Entwickler.
 
-Anweisungen zum Erstellen von Regeln finden Sie auf der Seite &quot;Bewertung [und Abzeichen](/help/communities/implementing-scoring.md) für Administratoren&quot;.
+Anweisungen zum Erstellen von Regeln finden Sie auf der Seite [Bewertung und Abzeichen](/help/communities/implementing-scoring.md) für Administratoren.
