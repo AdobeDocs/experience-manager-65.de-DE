@@ -10,6 +10,9 @@ discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +38,7 @@ Sie können kontextbezogene Hilfe mit den folgenden Optionen im Abschnitt „Hil
 >
 >Die lange Beschreibung überschreibt die Kurzbeschreibung. Wenn Sie beide Optionen angegeben haben, wird nur die lange Beschreibung angezeigt.
 
-### Kurzbeschreibung {#short-description}
+### Kurzbeschreibung  {#short-description}
 
 Das Feld „Kurzbeschreibung“ dient zum Angeben schneller und kurzer Hinweise zum Ausfüllen eines Formularfelds. Der eingegebene Text im Feld „Kurzbeschreibung“ wird als QuickInfo beim Bewegen der Maus über das Feld angezeigt.
 
