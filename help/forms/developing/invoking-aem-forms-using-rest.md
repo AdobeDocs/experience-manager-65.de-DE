@@ -20,27 +20,27 @@ ht-degree: 4%
 
 # Aufrufen von AEM Forms mithilfe von REST-Anforderungen {#invoking-aem-forms-using-rest-requests}
 
-In Workbench erstellte Prozesse können so konfiguriert werden, dass Sie sie mithilfe von Representational State Transfer (REST)-Anforderungen aufrufen können. REST-Anforderungen werden von HTML-Seiten aus gesendet. Das heißt, Sie können einen Forms-Prozess direkt von einer Webseite aufrufen, indem Sie eine REST-Anforderung verwenden. Sie können beispielsweise eine neue Instanz einer Webseite öffnen. Anschließend können Sie einen Formularprozess aufrufen und ein gerendertes PDF-Dokument mit Daten laden, die in einer HTTP POST-Anforderung gesendet wurden.
+In Workbench erstellte Prozesse können so konfiguriert werden, dass Sie sie mithilfe von Representational State Transfer (REST)-Anforderungen aufrufen können. REST-Anforderungen werden von HTML-Seiten aus gesendet. Das heißt, Sie können einen Forms-Prozess direkt über eine Webseite aufrufen, indem Sie eine REST-Anforderung verwenden. Sie können beispielsweise eine neue Instanz einer Webseite öffnen. Anschließend können Sie einen Forms-Prozess aufrufen und ein gerendertes PDF-Dokument mit Daten laden, die in einer HTTP-POST-Anforderung gesendet wurden.
 
-Es gibt zwei Arten von HTML-Clients. Der erste HTML-Client ist ein AJAX-Client, der in JavaScript geschrieben wurde. Der zweite Client ist ein HTML-Formular mit einer Senden-Schaltfläche. Eine HTML-basierte Client-Anwendung ist nicht der einzige mögliche REST-Client. Jede Clientanwendung, die HTTP-Anforderungen unterstützt, kann einen Dienst mit einem REST-Aufruf aufrufen. Beispielsweise können Sie einen Dienst über einen REST-Aufruf aus einem PDF-Formular aufrufen. (Siehe [Aufrufen des MyApplication/EncryptDocument-Prozesses aus Acrobat](#rest-invocation-examples).)
+Es gibt zwei Arten von HTML-Clients. Der erste HTML-Client ist ein AJAX Client, der in JavaScript geschrieben ist. Der zweite Client ist ein HTML-Formular mit einer Senden-Schaltfläche. Eine HTML-basierte Client-Anwendung ist nicht der einzige mögliche REST-Client. Jede Clientanwendung, die HTTP-Anforderungen unterstützt, kann einen Dienst mit einem REST-Aufruf aufrufen. Beispielsweise können Sie einen Dienst über einen REST-Aufruf aus einem PDF-Formular aufrufen. (Siehe [Invoking the MyApplication/EncryptDocument process from Acrobat](#rest-invocation-examples).)
 
-Bei REST-Anforderungen wird empfohlen, Forms-Dienste nicht direkt aufzurufen. Rufen Sie stattdessen Prozesse auf, die in Workbench erstellt wurden. Verwenden Sie beim Erstellen eines Prozesses, der für den REST-Aufruf vorgesehen ist, einen programmatischen Beginn-Point. In diesem Fall wird der REST-Endpunkt automatisch hinzugefügt. Informationen zum Erstellen von Prozessen in Workbench finden Sie unter [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Bei REST-Anforderungen wird empfohlen, die Forms-Dienste nicht direkt aufzurufen. Rufen Sie stattdessen Prozesse auf, die in Workbench erstellt wurden. Verwenden Sie beim Erstellen eines Prozesses, der für den REST-Aufruf vorgesehen ist, einen programmatischen Beginn-Point. In diesem Fall wird der REST-Endpunkt automatisch hinzugefügt. Informationen zum Erstellen von Prozessen in Workbench finden Sie unter [Workbench verwenden](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-Wenn Sie einen Dienst mit REST aufrufen, werden Sie zur Eingabe eines AEM Forms-Benutzernamens und -Kennworts aufgefordert. Wenn Sie jedoch keinen Benutzernamen und kein Kennwort angeben möchten, können Sie die Dienstsicherheit deaktivieren.
+Wenn Sie einen Dienst mit REST aufrufen, werden Sie zur Eingabe eines AEM Formularbenutzernamen und -kennworts aufgefordert. Wenn Sie jedoch keinen Benutzernamen und kein Kennwort angeben möchten, können Sie die Dienstsicherheit deaktivieren.
 
-Um einen Forms-Dienst aufzurufen (ein Prozess wird bei Aktivierung des Prozesses zu einem Dienst), konfigurieren Sie einen REST-Endpunkt. (Siehe &quot;Verwalten von Endpunkten&quot;in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Um einen Forms-Dienst aufzurufen (ein Prozess wird zu einem Dienst, wenn der Prozess aktiviert wird), konfigurieren Sie einen REST-Endpunkt. (Siehe &quot;Verwalten von Endpunkten&quot;in [Administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
-Nachdem ein REST-Endpunkt konfiguriert wurde, können Sie einen Forms-Dienst mit einer HTTP GET-Methode oder einer POST-Methode aufrufen.
+Nachdem ein REST-Endpunkt konfiguriert wurde, können Sie einen Forms-Dienst mit einer HTTP-GET oder einer POST aufrufen.
 
 ```java
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
-Der obligatorische `ServiceName` Wert ist der Name des aufzurufenden Forms-Dienstes. Der optionale `OperationName` Wert ist der Name des Dienstvorgangs. Wenn dieser Wert nicht angegeben ist, wird als Standardname `invoke`der Vorgangsname verwendet, der den Prozess Beginn. Der optionale `ServiceVersion` Wert ist die im X.Y-Format kodierte Version. Wenn dieser Wert nicht angegeben ist, wird die neueste Version verwendet. Der `enctype` Wert kann auch `application/x-www-form-urlencoded`sein.
+Der obligatorische Wert `ServiceName` ist der Name des aufzurufenden Forms-Dienstes. Der optionale Wert `OperationName` ist der Name des Dienstvorgangs. Wenn dieser Wert nicht angegeben ist, wird als Name standardmäßig `invoke` verwendet, d. h. der Vorgangsname, mit dem der Prozess Beginn wird. Der optionale Wert `ServiceVersion` ist die Version, die im X.Y-Format kodiert wurde. Wenn dieser Wert nicht angegeben ist, wird die neueste Version verwendet. Der Wert `enctype` kann auch `application/x-www-form-urlencoded` sein.
 
 ## Unterstützte Datentypen {#supported-data-types}
 
-Die folgenden Datentypen werden beim Aufrufen von AEM Forms-Diensten mithilfe von REST-Anforderungen unterstützt:
+Die folgenden Datentypen werden beim Aufrufen von AEM Forms-Diensten mit REST-Anforderungen unterstützt:
 
 * Java-Primitive-Datentypen wie Strings und Ganzzahlen
 * `com.adobe.idp.Document` Datentyp
@@ -49,26 +49,26 @@ Die folgenden Datentypen werden beim Aufrufen von AEM Forms-Diensten mithilfe vo
 
    Diese Datentypen werden normalerweise als Eingabewerte für Prozesse akzeptiert, die in Workbench erstellt wurden.
 
-   Wenn ein Forms-Dienst mit der HTTP POST-Methode aufgerufen wird, werden die Argumente im HTTP-Anforderungstext übergeben. Wenn die Signatur des AEM Forms-Dienstes einen Zeichenfolgeneingabeparameter hat, kann der Anforderungstext den Textwert des Eingabeparameters enthalten. Wenn die Unterschrift des Dienstes mehrere Zeichenfolgenparameter definiert, kann die Anforderung der `application/x-www-form-urlencoded` Schreibweise des HTTP-Dienstes folgen, wobei die Namen des Parameters als Feldnamen des Formulars verwendet werden.
+   Wenn ein Forms-Dienst mit der HTTP-POST-Methode aufgerufen wird, werden die Argumente im HTTP-Anforderungstext übergeben. Wenn die Signatur des AEM Forms-Diensts über einen Zeichenfolgeneingabeparameter verfügt, kann der Abfragetext den Textwert des Eingabeparameters enthalten. Wenn die Signatur des Dienstes mehrere Zeichenfolgenparameter definiert, kann die Anforderung der HTTP-Notation `application/x-www-form-urlencoded` folgen, wobei die Namen des Parameters als Feldnamen des Formulars verwendet werden.
 
    Wenn ein Forms-Dienst einen Zeichenfolgenparameter zurückgibt, ist das Ergebnis eine Textdarstellung des Ausgabeparameters. Wenn ein Dienst mehrere Zeichenfolgenparameter zurückgibt, ist dies ein XML-Dokument, das die Ausgabeparameter im folgenden Format kodiert:
    ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
    >[!NOTE]
    >
-   >Der `output-paramater1` Wert stellt den Namen des Ausgabeparameters dar.
+   >Der Wert `output-paramater1` stellt den Namen des Ausgabeparameters dar.
 
-   Wenn für einen Forms-Dienst ein `com.adobe.idp.Document` Parameter erforderlich ist, kann der Dienst nur mit der HTTP POST-Methode aufgerufen werden. Wenn für den Dienst ein `com.adobe.idp.Document` Parameter erforderlich ist, wird der Hauptteil der HTTP-Anforderung zum Inhalt des Dokument-Eingabeobjekts.
+   Wenn für einen Forms-Dienst ein Parameter `com.adobe.idp.Document` erforderlich ist, kann der Dienst nur mit der HTTP-POST aufgerufen werden. Wenn für den Dienst ein Parameter `com.adobe.idp.Document` erforderlich ist, wird der Hauptteil der HTTP-Anforderung zum Inhalt des Dokument-Eingabeobjekts.
 
-   Wenn ein AEM Forms-Dienst mehrere Eingabeparameter erfordert, muss der HTTP-Anforderungskörper eine mehrteilige MIME-Meldung gemäß RFC 1867 sein. (RFC 1867 ist ein Standard, der von Webbrowsern zum Hochladen von Dateien auf Websites verwendet wird.) Jeder Eingabeparameter muss als separater Teil der mehrteiligen Meldung gesendet und im `multipart/form-data` Format kodiert werden. Der Name der einzelnen Teile muss mit dem Namen des Parameters übereinstimmen.
+   Wenn für einen AEM Forms-Dienst mehrere Eingabeparameter erforderlich sind, muss der Hauptteil der HTTP-Anforderung eine mehrteilige MIME-Meldung gemäß RFC 1867 sein. (RFC 1867 ist ein Standard, der von Webbrowsern zum Hochladen von Dateien auf Websites verwendet wird.) Jeder Eingabeparameter muss als separater Teil der mehrteiligen Meldung gesendet und im Format `multipart/form-data` kodiert werden. Der Name der einzelnen Teile muss mit dem Namen des Parameters übereinstimmen.
 
    Listen und Maps werden auch als Eingabewerte für in Workbench erstellte AEM Forms-Prozesse verwendet. Daher können Sie diese Datentypen bei der Verwendung einer REST-Anforderung verwenden. Java-Arrays werden nicht unterstützt, da sie nicht als Eingabewert für einen AEM Forms-Prozess verwendet werden.
 
-   Wenn ein Eingabeparameter eine Liste ist, kann ein REST-Client ihn senden, indem er ihn mehrmals angibt (einmal für jedes Element in der Liste). Wenn A beispielsweise eine Liste von Dokumenten ist, muss die Eingabe eine mehrteilige Meldung sein, die aus mehreren Teilen mit dem Namen A besteht. In diesem Fall wird jedes Teil mit dem Namen A zu einem Element in der Eingabe-Liste. Wenn B eine Liste von Zeichenfolgen ist, kann die Eingabe eine `application/x-www-form-urlencoded` Meldung sein, die aus mehreren Feldern mit dem Namen B besteht. In diesem Fall wird jedes Formularfeld mit dem Namen B zu einem Element in der Eingabe-Liste.
+   Wenn ein Eingabeparameter eine Liste ist, kann ein REST-Client ihn senden, indem er ihn mehrmals angibt (einmal für jedes Element in der Liste). Wenn A beispielsweise eine Liste von Dokumenten ist, muss die Eingabe eine mehrteilige Meldung sein, die aus mehreren Teilen mit dem Namen A besteht. In diesem Fall wird jedes Teil mit dem Namen A zu einem Element in der Eingabe-Liste. Wenn B eine Liste von Zeichenfolgen ist, kann die Eingabe eine `application/x-www-form-urlencoded`-Meldung sein, die aus mehreren Feldern mit dem Namen B besteht. In diesem Fall wird jedes Formularfeld mit dem Namen B zu einem Element in der Eingabe-Liste.
 
    Wenn ein Eingabeparameter eine Zuordnung ist und es sich um den reinen Eingabeparameter für Dienste handelt, wird jeder Teil/Feld der Eingabemeldung zu einem Schlüssel/Wert-Datensatz in der Zuordnung. Der Name jedes Teils/Felds wird zum Schlüssel des Datensatzes. Der Inhalt der einzelnen Teile/Felder wird zum Datensatzwert.
 
-   Wenn eine Eingabemap nicht der einzige Eingabeparameter für Dienste ist, kann jeder Schlüssel/Wert-Datensatz, der zur Map gehört, mit einem Parameter gesendet werden, der als Verkettung des Parameternamens und des Datensatzschlüssels benannt ist. Beispielsweise `attributes` kann eine Eingabemaps mit einer Liste der folgenden Schlüssel/Werte-Paare gesendet werden:
+   Wenn eine Eingabemap nicht der einzige Eingabeparameter für Dienste ist, kann jeder Schlüssel/Wert-Datensatz, der zur Map gehört, mit einem Parameter gesendet werden, der als Verkettung des Parameternamens und des Datensatzschlüssels benannt ist. Beispielsweise kann eine Eingabemaps mit dem Namen `attributes` mit einer Liste der folgenden Schlüssel/Werte-Paare gesendet werden:
 
    `attributesColor=red`
 
@@ -76,22 +76,22 @@ Die folgenden Datentypen werden beim Aufrufen von AEM Forms-Diensten mithilfe vo
 
    `attributesWidth=5`
 
-   Dies ergibt eine Karte mit drei Datensätzen: `Color=red`, `Shape=box`und `Width=5`.
+   Dies ergibt eine Karte mit drei Datensätzen: `Color=red`, `Shape=box` und `Width=5`.
 
    Die Ausgabeparameter der Listen- und Zuordnungstypen werden Teil der XML-Meldung. Die Ausgabe-Liste wird in XML als eine Reihe von XML-Elementen mit einem Element für jedes Element in der Liste dargestellt. Jedem Element wird der gleiche Name zugewiesen wie dem Parameter &quot;output Liste&quot;. Der Wert jedes XML-Elements besteht aus zwei Elementen:
 
 * Eine Textdarstellung des Elements in der Liste (wenn die Liste aus Zeichenfolgen-Typen besteht)
-* Eine URL, die auf den Inhalt des Dokuments verweist (wenn die Liste aus `com.adobe.idp.Document` Objekten besteht)
+* Eine URL, die auf den Inhalt des Dokuments verweist (wenn die Liste aus `com.adobe.idp.Document`-Objekten besteht)
 
-   Im folgenden Beispiel wird eine XML-Meldung ausgegeben, die von einem Dienst mit einem einzigen Ausgabeparameter namens *Liste*zurückgegeben wird, bei dem es sich um eine Liste von Ganzzahlen handelt.
-   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Ein Ausgabezuordnungsparameter wird in der resultierenden XML-Meldung als eine Reihe von XML-Elementen mit einem Element für jeden Datensatz in der Zuordnung dargestellt. Jedes Element erhält denselben Namen wie der Schlüssel des Kartendatensatzes. Der Wert jedes Elements ist entweder eine Textdarstellung des Kartendatensatzwerts (wenn die Zuordnung aus Datensätzen mit Zeichenfolgenwert besteht) oder eine URL, die auf den Inhalt des Dokuments verweist (wenn die Zuordnung aus Datensätzen mit diesem `com.adobe.idp.Document` Wert besteht). Nachstehend finden Sie ein Beispiel für eine XML-Meldung, die von einem Dienst mit einem einzigen Ausgabeparameter namens `map`zurückgegeben wird. Dieser Parameterwert ist eine Zuordnung, die aus Datensätzen besteht, die Briefe mit `com.adobe.idp.Document` Objekten verbinden.
+   Im folgenden Beispiel wird eine XML-Meldung ausgegeben, die von einem Dienst mit einem einzigen Ausgabeparameter namens *Liste* zurückgegeben wird, bei dem es sich um eine Liste von Ganzzahlen handelt.
+   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Ein Ausgabezuordnungsparameter wird in der resultierenden XML-Meldung als eine Reihe von XML-Elementen mit einem Element für jeden Datensatz in der Zuordnung dargestellt. Jedes Element erhält denselben Namen wie der Schlüssel des Kartendatensatzes. Der Wert jedes Elements ist entweder eine Textdarstellung des Kartendatensatzwerts (wenn die Zuordnung aus Datensätzen mit Zeichenfolgenwert besteht) oder eine URL, die auf den Inhalt des Dokuments verweist (wenn die Zuordnung aus Datensätzen mit dem Wert `com.adobe.idp.Document` besteht). Nachstehend finden Sie ein Beispiel für eine XML-Meldung, die von einem Dienst mit einem einzigen Ausgabeparameter namens `map` zurückgegeben wird. Dieser Parameterwert ist eine Zuordnung, die aus Datensätzen besteht, die Buchstaben mit `com.adobe.idp.Document`-Objekten verknüpfen.
    ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Asynchrone Aufrufe {#asynchronous-invocations}
 
-Einige AEM Forms-Services, wie zum Beispiel menschenorientierte Prozesse mit langer Lebensdauer, erfordern eine lange Zeit zum Abschluss. Diese Dienste können asynchron ohne Blockierung aufgerufen werden. (Siehe [An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+Einige AEM Forms-Dienste, z. B. menschenorientierte Prozesse mit langer Lebensdauer, erfordern eine lange Zeit zum Abschluss. Diese Dienste können asynchron ohne Blockierung aufgerufen werden. (Siehe [An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-Ein AEM Forms-Dienst kann asynchron aufgerufen werden, indem er `services` durch `async_invoke` die Aufruf-URL ersetzt wird, wie im folgenden Beispiel gezeigt.
+Ein AEM Forms-Dienst kann asynchron aufgerufen werden, indem `services` durch `async_invoke` in der Aufruf-URL ersetzt wird, wie im folgenden Beispiel gezeigt.
 
 ```java
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
@@ -99,7 +99,7 @@ Ein AEM Forms-Dienst kann asynchron aufgerufen werden, indem er `services` durch
 
 Diese URL gibt den Bezeichnerwert (im Format &quot;text/plain&quot;) des Auftrags zurück, der für diesen Aufruf verantwortlich ist.
 
-Der Status des asynchronen Aufrufs kann mithilfe einer URL abgerufen werden, die durch eine `services` ersetzte URL ersetzt wird `async_status`. Die URL muss einen `job_id` Parameter enthalten, der den Bezeichnerwert des mit diesem Aufruf verknüpften Auftrags angibt. Beispiel:
+Der Status des asynchronen Aufrufs kann mithilfe einer Aufrufs-URL abgerufen werden, wobei `services` durch `async_status` ersetzt wird. Die URL muss einen Parameter `job_id` enthalten, der den Bezeichnerwert des Auftrags angibt, der mit diesem Aufruf verknüpft ist. Beispiel:
 
 ```java
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
@@ -109,7 +109,7 @@ Diese URL gibt einen ganzzahligen Wert (im Format &quot;text/plain&quot;) zurüc
 
 Wenn der Auftrag abgeschlossen ist, gibt die URL dasselbe Ergebnis zurück, als ob der Dienst synchron aufgerufen wurde.
 
-Nachdem der Auftrag abgeschlossen und das Ergebnis abgerufen wurde, kann der Auftrag mithilfe einer Aufruf-URL entsorgt werden, die durch ersetzt `services` wird `async_dispose`. Die URL sollte auch einen `job_id` Parameter enthalten, der den Bezeichnerwert des Auftrags angibt. Beispiel:
+Nachdem der Auftrag abgeschlossen und das Ergebnis abgerufen wurde, kann der Auftrag mithilfe einer Aufruf-URL entsorgt werden, wobei `services` durch `async_dispose` ersetzt wird. Die URL sollte auch einen Parameter `job_id` enthalten, der den Bezeichnerwert des Auftrags angibt. Beispiel:
 
 ```java
  http://localhost:8080/rest/async_dispose/SomeService.SomeOperation?job_id=2345353443366564
@@ -119,9 +119,9 @@ Wenn der Auftrag erfolgreich gelöscht wurde, gibt diese URL eine leere Meldung 
 
 ## Fehler-Berichte {#error-reporting}
 
-Wenn eine synchrone oder asynchrone Aufrufanforderung aufgrund einer auf dem Server ausgelösten Ausnahme nicht abgeschlossen werden kann, wird die Ausnahme als Teil der HTTP-Antwortmeldung gemeldet. Wenn die Aufrufungs-URL (bzw. die `async_result` -URL bei einem asynchronen Aufruf) kein .xml-Suffix hat, gibt der REST-Provider den HTTP-Code zurück, `500 Internal Server Error` gefolgt von einer Ausnahmemeldung.
+Wenn eine synchrone oder asynchrone Aufrufanforderung aufgrund einer auf dem Server ausgelösten Ausnahme nicht abgeschlossen werden kann, wird die Ausnahme als Teil der HTTP-Antwortmeldung gemeldet. Wenn die Aufrufungs-URL (oder die `async_result`-URL bei einem asynchronen Aufruf) kein .xml-Suffix hat, gibt der REST-Provider den HTTP-Code `500 Internal Server Error` zurück, gefolgt von einer Ausnahmemeldung.
 
-Wenn die Aufrufungs-URL (oder die `async_result` -URL bei einem asynchronen Aufruf) das Suffix .xml enthält, gibt der REST-Provider den HTTP-Code zurück, `200 OK`gefolgt von einem XML-Dokument, das die Ausnahme im folgenden Format beschreibt.
+Wenn die Aufrufungs-URL (oder die `async_result`-URL bei einem asynchronen Aufruf) das Suffix .xml enthält, gibt der REST-Provider den HTTP-Code `200 OK`gefolgt von einem XML-Dokument zurück, das die Ausnahme im folgenden Format beschreibt.
 
 ```xml
  <exception>
@@ -141,23 +141,23 @@ Wenn die Aufrufungs-URL (oder die `async_result` -URL bei einem asynchronen Aufr
  </exception>
 ```
 
-Das `DSCError` Element ist optional und nur vorhanden, wenn die Ausnahme eine Instanz von `com.adobe.idp.dsc.DSCException`ist.
+Das `DSCError`-Element ist optional und nur vorhanden, wenn die Ausnahme eine Instanz von `com.adobe.idp.dsc.DSCException` ist.
 
 ## Sicherheit und Authentifizierung {#security-and-authentication}
 
-Um REST-Aufrufe mit einem sicheren Transport bereitzustellen, kann ein AEM Forms-Administrator das HTTPS-Protokoll auf dem J2EE-Anwendungsserver aktivieren, der als Host für AEM Forms dient. Diese Konfiguration ist spezifisch für den J2EE-Anwendungsserver. Es ist nicht Teil der Formularserverkonfiguration.
+Um REST-Aufrufe mit einem sicheren Transport bereitzustellen, kann ein AEM Forms-Administrator das HTTPS-Protokoll auf dem J2EE-Anwendungsserver aktivieren, auf dem AEM Forms gehostet wird. Diese Konfiguration ist spezifisch für den J2EE-Anwendungsserver. Es ist nicht Teil der Formularserverkonfiguration.
 
 >[!NOTE]
 >
 >Als Workbench-Entwickler, der Ihre Prozesse über einen REST-Endpunkt verfügbar machen möchte, sollten Sie das XSS-Schwachstellenproblem beachten. XSS-Schwachstellen können zum Stehlen oder Manipulieren von Cookies, zum Ändern der Darstellung von Inhalten und zum Kompromittieren vertraulicher Informationen verwendet werden. Es wird empfohlen, die Prozesslogik mit den zusätzlichen Validierungsregeln für Eingabe- und Ausgabedaten zu erweitern, wenn die XSS-Verwundbarkeit ein Problem darstellt.
 
-## AEM Forms-Dienste, die REST-Aufrufe unterstützen {#aem-forms-services-that-support-rest-invocation}
+## AEM Forms-Dienste, die REST-Aufrufe unterstützen{#aem-forms-services-that-support-rest-invocation}
 
 Es wird empfohlen, Prozesse, die mit Workbench erstellt wurden, im Gegensatz zu Diensten direkt aufzurufen. Es gibt jedoch einige AEM Forms-Dienste, die REST-Aufrufe unterstützen. Es wird empfohlen, einen Prozess im Gegensatz zu einem Dienst direkt aufzurufen, weil es effizienter ist, einen Prozess aufzurufen. Betrachten Sie das folgende Szenario. Angenommen, Sie möchten eine Richtlinie aus einem REST-Client erstellen. Das heißt, Sie möchten, dass der REST-Client Werte wie den Richtliniennamen und die Offline-Nutzungsdauer definiert.
 
-Um eine Richtlinie zu erstellen, müssen Sie komplexe Datentypen wie z. B. ein `PolicyEntry` Objekt definieren. Ein `PolicyEntry` Objekt definiert Attribute wie Berechtigungen, die der Richtlinie zugeordnet sind. (Siehe [Richtlinien](/help/forms/developing/protecting-documents-policies.md#creating-policies)erstellen.)
+Um eine Richtlinie zu erstellen, müssen Sie komplexe Datentypen wie ein `PolicyEntry`-Objekt definieren. Ein `PolicyEntry`-Objekt definiert Attribute wie Berechtigungen, die der Richtlinie zugeordnet sind. (Siehe [Richtlinien erstellen](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
-Anstatt eine REST-Anforderung zum Erstellen einer Richtlinie zu senden (wozu auch das Definieren komplexer Datentypen wie eines `PolicyEntry` Objekts gehören würde), erstellen Sie einen Prozess, der eine Richtlinie mithilfe von Workbench erstellt. Definieren Sie den Prozess zum Akzeptieren von primitiven Eingabevariablen, z. B. einem Zeichenfolgenwert, der den Prozessnamen oder eine Ganzzahl definiert, die die Offline-Nutzungsdauer definiert.
+Anstatt eine REST-Anforderung zum Erstellen einer Richtlinie zu senden (wozu auch das Definieren komplexer Datentypen wie einem `PolicyEntry`-Objekt gehören würde), erstellen Sie einen Prozess, der eine Richtlinie mithilfe von Workbench erstellt. Definieren Sie den Prozess zum Akzeptieren von primitiven Eingabevariablen, z. B. einem Zeichenfolgenwert, der den Prozessnamen oder eine Ganzzahl definiert, die die Offline-Nutzungsdauer definiert.
 
 Auf diese Weise müssen Sie keine REST-Aufrufanforderung erstellen, die komplexe Datentypen enthält, die für den Vorgang erforderlich sind. Der Prozess definiert die komplexen Datentypen und alles, was Sie vom REST-Client aus tun, wird der Prozess aufgerufen und primitive Datentypen übergeben. Informationen zum Aufrufen eines Prozesses mit REST finden Sie unter [Aufrufen des Prozesses MyApplication/EncryptDocument mithilfe von REST](#rest-invocation-examples).
 
@@ -169,7 +169,7 @@ Die folgenden Listen geben die AEM Forms-Dienste an, die einen direkten REST-Auf
 * Generate3dPDF-Dienst
 * FormDataIntegration
 
-## Beispiele für REST-Aufrufe {#rest-invocation-examples}
+## REST-Aufrufbeispiele {#rest-invocation-examples}
 
 Die folgenden REST-Aufrufbeispiele sind verfügbar:
 
@@ -177,7 +177,7 @@ Die folgenden REST-Aufrufbeispiele sind verfügbar:
 * Übergeben von Datumswerten an einen AEM Forms-Prozess
 * Übergeben von Dokumenten an einen AEM Forms-Prozess
 * Übergeben von Dokument- und Textwerten an einen AEM Forms-Prozess
-* Übergeben von Auflistung-Werten an einen AEM Forms-Prozess
+* Übergeben von Auflistungen an einen AEM Forms-Prozess
 * Aufrufen des MyApplication/EncryptDocument-Prozesses mithilfe von REST
 * MyApplication/EncryptDocument-Prozess aus Acrobat aufrufen
 
@@ -185,7 +185,7 @@ Die folgenden REST-Aufrufbeispiele sind verfügbar:
 
 **Übergeben boolescher Werte an einen Prozess**
 
-Im folgenden HTML-Beispiel werden zwei `Boolean` Werte an einen AEM Forms-Prozess mit dem Namen `RestTest2`übergeben. Der Name der Aufrufmethode lautet `invoke` und die Version 1.0. Beachten Sie, dass die HTML Post-Methode verwendet wird.
+Im folgenden HTML-Beispiel werden zwei `Boolean`-Werte an einen AEM Forms-Prozess mit dem Namen `RestTest2` übergeben. Der Name der Aufrufmethode ist `invoke` und die Version ist 1.0. Beachten Sie, dass die HTML Post-Methode verwendet wird.
 
 ```html
  <html>
@@ -205,7 +205,7 @@ Im folgenden HTML-Beispiel werden zwei `Boolean` Werte an einen AEM Forms-Prozes
 
 **Übergeben von Datumswerten an einen Prozess**
 
-Im folgenden HTML-Beispiel wird ein Datumswert an einen AEM Forms-Prozess mit dem Namen `SOAPEchoService`übergeben. Der Name der Aufrufmethode lautet `echoCalendar`. Beachten Sie, dass die HTML- `Post` Methode verwendet wird.
+Im folgenden HTML-Beispiel wird ein Datumswert an einen AEM Forms-Prozess mit dem Namen `SOAPEchoService` übergeben. Der Name der Aufrufmethode ist `echoCalendar`. Beachten Sie, dass die HTML-Methode `Post` verwendet wird.
 
 ```html
  <html>
@@ -224,7 +224,7 @@ Im folgenden HTML-Beispiel wird ein Datumswert an einen AEM Forms-Prozess mit de
 
 **Übergeben von Dokumenten an einen Prozess**
 
-Im folgenden HTML-Beispiel wird ein AEM Forms-Vorgang mit dem Namen `MyApplication/EncryptDocument` aufgerufen, für den ein PDF-Dokument erforderlich ist. Weitere Informationen zu diesem Vorgang finden Sie unter [Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `MyApplication/EncryptDocument` aufgerufen, für den ein PDF-Dokument erforderlich ist. Weitere Informationen zu diesem Vorgang finden Sie unter [Aufrufen von AEM Forms mit MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
 ```html
  <html>
@@ -266,7 +266,7 @@ Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `RestTest3` 
 
 **Übergeben von Auflistung-Werten an einen Prozess**
 
-Im folgenden HTML-Beispiel wird ein AEM Forms-Vorgang mit dem Namen `SOAPEchoService` aufgerufen, für den ein Auflistung-Wert erforderlich ist. Beachten Sie, dass die HTML Post-Methode verwendet wird.
+Im folgenden HTML-Beispiel wird ein AEM Forms-Prozess mit dem Namen `SOAPEchoService` aufgerufen, für den ein Auflistung-Wert erforderlich ist. Beachten Sie, dass die HTML Post-Methode verwendet wird.
 
 ```html
  <html>
@@ -289,14 +289,14 @@ Sie können einen AEM Forms-Prozess mit kurzer Lebensdauer mit dem Namen *MyAppl
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. To follow along with the code example, create a process named `MyApplication/EncryptDocument` using workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
 1. Ruft das ungesicherte PDF-Dokument ab, das an den Prozess übergeben wird. Diese Aktion basiert auf dem Vorgang `SetValue`. Der Eingangsparameter für diesen Prozess ist eine `document`-Prozessvariable mit dem Namen `inDoc`.
 1. Sie verschlüsselt das PDF-Dokument mit einem Kennwort. Diese Aktion basiert auf dem Vorgang `PasswordEncryptPDF`. Das kennwortverschlüsselte PDF-Dokument wird in einer Prozessvariablen namens `outDoc` zurückgegeben.
 
-   Wenn dieser Vorgang mit einer REST-Anforderung aufgerufen wird, wird das verschlüsselte PDF-Dokument im Webbrowser angezeigt. Geben Sie vor der Ansicht des PDF-Dokuments das Kennwort an (es sei denn, die Sicherheit ist deaktiviert). Der folgende HTML-Code stellt eine REST-Aufrufanforderung für den `MyApplication/EncryptDocument` Prozess dar.
+   Wenn dieser Vorgang mit einer REST-Anforderung aufgerufen wird, wird das verschlüsselte PDF-Dokument im Webbrowser angezeigt. Geben Sie vor der Ansicht des PDF-Dokuments das Kennwort an (es sei denn, die Sicherheit ist deaktiviert). Der folgende HTML-Code stellt eine REST-Aufrufanforderung für den `MyApplication/EncryptDocument`-Prozess dar.
 
    ```html
     <html>
@@ -315,12 +315,12 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
 **MyApplication/EncryptDocument-Prozess aus Acrobat aufrufen** {#invoke-process-acrobat}
 
-Sie können einen Formularprozess in Acrobat über eine REST-Anforderung aufrufen. Sie können beispielsweise den *MyApplication/EncryptDocument* -Prozess aufrufen. Um einen Formularprozess aus Acrobat aufzurufen, platzieren Sie eine Senden-Schaltfläche in einer XDP-Datei in Designer. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).)
+Sie können einen Forms-Prozess über eine REST-Anforderung von Acrobat aus aufrufen. Sie können beispielsweise den Prozess *MyApplication/EncryptDocument* aufrufen. Um einen Forms-Prozess von Acrobat aus aufzurufen, platzieren Sie eine Senden-Schaltfläche in einer XDP-Datei in Designer. (Weitere Informationen finden Sie in der [Designer-Hilfe](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
-Geben Sie die URL an, um den Prozess im Feld &quot; *Senden an URL* &quot;der Schaltfläche aufzurufen, wie in der folgenden Abbildung dargestellt.
+Geben Sie die URL an, um den Prozess im Feld *An URL* der Schaltfläche aufzurufen, wie in der folgenden Abbildung dargestellt.
 
 Die vollständige URL zum Aufrufen des Prozesses ist https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 
-Wenn für den Vorgang ein PDF-Dokument als Eingabewert erforderlich ist, stellen Sie sicher, dass Sie das Formular als PDF übermitteln, wie in der vorherigen Abbildung gezeigt. Damit ein Prozess erfolgreich aufgerufen werden kann, muss ein PDF-Dokument zurückgegeben werden. Andernfalls kann Acrobat den Rückgabewert nicht verarbeiten und es tritt ein Fehler auf. Sie müssen nicht den Namen der Eingabeprozessvariablen angeben. Beispielsweise verfügt der *MyApplication/EncryptDocument* -Prozess über eine Eingabevariable mit dem Namen `inDoc`. Sie müssen nicht inDoc angeben, solange das Formular als PDF gesendet wird.
+Wenn für den Vorgang ein PDF-Dokument als Eingabewert erforderlich ist, stellen Sie sicher, dass Sie das Formular als PDF übermitteln, wie in der vorherigen Abbildung gezeigt. Damit ein Prozess erfolgreich aufgerufen werden kann, muss ein PDF-Dokument zurückgegeben werden. Andernfalls kann Acrobat den Rückgabewert nicht verarbeiten und es tritt ein Fehler auf. Sie müssen nicht den Namen der Eingabeprozessvariablen angeben. Beispielsweise enthält der Prozess *MyApplication/EncryptDocument* eine Eingabevariable mit dem Namen `inDoc`. Sie müssen nicht inDoc angeben, solange das Formular als PDF gesendet wird.
 
-Sie können auch Formulardaten als XML an einen Formularprozess senden. Wenn Sie XML-Daten senden möchten, stellen Sie sicher, dass in der `Submit As` Dropdown-Liste &quot;XML&quot;angegeben ist. Da der Rückgabewert des Prozesses ein PDF-Dokument sein muss, wird das PDF-Dokument in Acrobat angezeigt.
+Sie können auch Formulardaten als XML an einen Forms-Prozess senden. Wenn Sie XML-Daten senden möchten, stellen Sie sicher, dass in der Dropdownliste `Submit As` XML angegeben ist. Da der Rückgabewert des Prozesses ein PDF-Dokument sein muss, wird das PDF-Dokument in Acrobat angezeigt.
