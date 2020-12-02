@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 59%
 
 ---
 
@@ -23,13 +26,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * Die Daten werden zuerst angezeigt, die Struktur später. Zumindest gegebenenfalls.
 * Steuern Sie die Content-Hierarchie, anstatt sie dem Zufall zu überlassen.
-* Arbeitsbereiche sind für `clone()`, `merge()`und `update()`.
+* Arbeitsflächen sind für `clone()`, `merge()` und `update()` verfügbar.
 * Bei gleichgeordneten Elementen mit identischem Namen ist Vorsicht geboten.
 * Verweise richten mehr Schaden an, als sie nutzen.
 * Dateien sind Dateien.
 * IDs sind böse.
 
-David’s Model can be found on the Jackrabbit wiki at [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+David’s Model kann im Jackrabbit Wiki unter [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel) gefunden werden.
 
 ### Alles ist Inhalt {#everything-is-content}
 
@@ -37,7 +40,7 @@ Sie sollten alles im Repository speichern, anstatt sich auf separate Datenquelle
 
 ### Anwenden des Designgrundsatzes „Content Model First“ {#use-the-content-model-first-design-principle}
 
-Wenn Sie eine neue Funktion entwickeln, beginnen Sie immer damit, zunächst die JCR-Inhaltsstruktur zu entwerfen. Befassen Sie sich dann erst mit dem Lesen und Schreiben Ihrer Inhalte mithilfe der standardmäßigen Sling-Servlets. Auf diese Weise können Sie sicherstellen, dass Ihre Implementierung mit den standardmäßigen Zugriffssteuerungsmechanismen gut funktioniert und dass Sie unnötige CRUD-artige Servlets vermeiden.
+Wenn Sie eine neue Funktion entwickeln, beginnen Sie immer damit, zunächst die JCR-Inhaltsstruktur zu entwerfen. Befassen Sie sich dann erst mit dem Lesen und Schreiben Ihrer Inhalte mithilfe der standardmäßigen Sling-Servlets. Auf diese Weise können Sie sicherstellen, dass Ihre Implementierung problemlos mit den standardmäßigen Zugriffskontrollen funktioniert, und vermeiden, dass unnötige Servlets im CRUD-Stil generiert werden.
 
 ### RESTful statt Panik {#be-restful}
 
@@ -49,7 +52,7 @@ Knotentypen setzen auf einer niedrigen Ebene der Infrastrukturschicht an und die
 
 ### Einhalten Sie Namenskonventionen im JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Durch die Einhaltung von Namenskonventionen wird die Konsistenz der Codebasis erhöht, die Fehler-Inzidenzrate gesenkt und der Arbeitsprozess der beteiligten Entwickler beschleunigt. Die folgenden Konventionen werden von Adobe bei der Entwicklung von AEM verwendet:
+Durch die Einhaltung von Namenskonventionen wird die Konsistenz der Codebasis erhöht, die Fehler-Inzidenzrate gesenkt und der Arbeitsprozess der beteiligten Entwickler beschleunigt. Die folgenden Übereinkommen werden von der Adobe bei der Entwicklung von AEM verwendet:
 
 * Knotennamen
 
