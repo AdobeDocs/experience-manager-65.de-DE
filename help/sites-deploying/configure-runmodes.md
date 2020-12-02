@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 83%
 
 ---
 
@@ -42,9 +45,9 @@ Installations-Ausführungsmodi sind vordefiniert:
 
 Jeweils zwei Paare von Ausführungsmodi schließen einander gegenseitig aus. Sie können beispielsweise:
 
-* define either `author` or `publish`, not both at the same time
+* entweder `author` oder `publish` definieren, nicht beide gleichzeitig
 
-* combine `author` with either `samplecontent` or `nosamplecontent` (but not both)
+* `author` entweder mit `samplecontent` oder `nosamplecontent` kombinieren (aber nicht mit beiden)
 
 >[!CAUTION]
 >
@@ -58,11 +61,11 @@ Sie können auch Ihre eigenen, benutzerdefinierten Ausführungsmodi erstellen. D
 
 * `author` + `development`
 
-* `publish` + `test`
+* `publish` +  `test`
 
 * `publish` + `test` + `golive`
 
-* `publish` + `intranet`
+* `publish` +  `intranet`
 
 * nach Bedarf ...
 
@@ -78,7 +81,7 @@ Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Beispie
 
 Der nosamplecontent-Ausführungsmodus ist für Produktionsinstallationen bestimmt.
 
-## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus {#defining-configuration-properties-for-a-run-mode}
+## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus  {#defining-configuration-properties-for-a-run-mode}
 
 Die Werte der Konfigurationseigenschaften, die für einen bestimmten Ausführungsmodus verwendet werden, können im Repository gespeichert werden.
 
@@ -106,7 +109,7 @@ Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.
 >
 >Für [Installations-Ausführungsmodi](#installation-run-modes) (z. B. author) kann der Ausführungsmodus nach der Installation nicht mehr geändert werden. Doch Änderungen an einzelnen Konfigurationseigenschaften werden bei einem Neustart wirksam.
 
-## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles  {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
 Zusätzliche Bundles, die für einen bestimmten Ausführungsmodus installiert werden sollen, können ebenfalls angegeben werden. Für diese Definitionen werden Installationsordner zum Speichern der Pakete verwendet. Auch hier ist der Ausführungsmodus durch ein Präfix gekennzeichnet:
 
@@ -120,7 +123,7 @@ Diese Ordner sich vom Typ `nt:folder` und sollten das entsprechende Bundle entha
 Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie festlegen, welcher beim Start verwendet werden soll. Zur Spezifizierung des Ausführungsmodus gibt es mehrere Möglichkeiten. Gehen Sie nach dieser Reihenfolge vor:
 
 1. [ `sling.properties` Datei an](#using-the-sling-properties-file)
-1. [ `-r` Option](#using-the-r-option)
+1. [ `-r` option](#using-the-r-option)
 1. [Systemeigenschaften (`-D`)](#using-a-system-property-in-the-start-script)
 
 1. [Erkennung von Dateinamen](#filename-detection-renaming-the-jar-file) 
@@ -135,13 +138,13 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Fügen Sie die folgenden Eigenschaften hinzu: das folgende Beispiel ist für den Autor bestimmt:
+1. hinzufügen die folgenden Eigenschaften; das folgende Beispiel ist für den Autor bestimmt:
 
    `sling.run.modes=author`
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-A custom run mode can be activated by using the `-r` option when launching the quickstart. Verwenden Sie zum Beispiel den folgenden Befehl, um eine AEM-Instanz mit dem Ausführungsmodus zu starten, für den dev festgelegt ist. &quot;
+Ein benutzerdefinierter Ausführungsmodus kann beim Starten des Schnellstarts mit der Option `-r` aktiviert werden. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM Instanz mit dem Ausführungsmodus zu starten, für die &quot;dev&quot;festgelegt ist. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -159,7 +162,7 @@ Mit einer Systemeigenschaft im Startskript kann der Ausführungsmodus spezifizie
 
 Die folgenden beiden Installationslaufmodi können vor der Installation durch Umbenennen der JAR-Datei für die Installation aktiviert werden:
 
-* veröffentlichen
+* publish
 * author
 
 Die JAR-Datei muss diese Benennungskonvention verwenden:
