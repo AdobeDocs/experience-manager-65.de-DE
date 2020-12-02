@@ -12,6 +12,9 @@ discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 83%
 
 ---
 
@@ -37,7 +40,7 @@ Neue Instanzen eines Berichts können auch über die Konsole **Tools** erstellt 
 >
 >Zusätzlich zu den standardmäßigen AEM-Berichten können Sie auch [Ihren eigenen (vollständig neuen) Bericht entwickeln](/help/sites-developing/dev-reports.md).
 
-## Die Grundlagen der Berichtsanpassung. {#the-basics-of-report-customization}
+## Die Grundlagen der Berichtsanpassung.  {#the-basics-of-report-customization}
 
 Es stehen verschiedene Berichtsformate zur Verfügung. Die folgenden Berichte nutzen alle Spalten, die wie in den folgenden Abschnitten beschrieben angepasst werden können.
 
@@ -55,11 +58,12 @@ Es stehen verschiedene Berichtsformate zur Verfügung. Die folgenden Berichte nu
 >* Die [Konsistenzprüfung](#health-check) nutzt Auswahlfelder, um die Daten anzugeben, zu denen Sie einen Bericht erstellen möchten.
 >* Die [Speichernutzung](#disk-usage) verwendet Verknüpfungen für einen Drilldown durch die Repository-Struktur.
 >* Der [Workflow-Bericht](/help/sites-administering/reporting.md#workflow-report) bietet einen Überblick über die Workflows, die auf Ihrer Instanz ausgeführt werden.
+
 >
 >
 Die folgenden Verfahren zur Spaltenkonfiguration sind also nicht geeignet. Weitere Informationen finden Sie in den Beschreibungen der einzelnen Berichte.
 
-### Auswählen und Positionieren der Datenspalten {#selecting-and-positioning-the-data-columns}
+### Auswählen und Positionieren der Datenspalten  {#selecting-and-positioning-the-data-columns}
 
 Spalten können in allen Berichten hinzugefügt, neu positioniert oder entfernt werden – sowohl in standardmäßigen als auch in angepassten Berichten.
 
@@ -75,7 +79,7 @@ Zum Ändern der Datenauswahl gehen Sie wie folgt vor:
 * Um eine Spalte zu verschieben, klicken Sie auf die Kopfzeile, halten Sie sie gedrückt und ziehen Sie sie an die neue Position.
 * Um eine Spalte zu entfernen, klicken Sie auf den Spaltentitel, halten Sie ihn gedrückt und ziehen Sie ihn nach oben in den Bereich der Berichtskopfzeile (ein rotes Minussymbol zeigt an, dass die Position gültig ist) und lassen Sie die Maustaste los. Das Dialogfeld „Komponente(n) löschen“ fordert Sie nun auf, die Löschung der Spalte zu bestätigen.
 
-### Dropdown-Menü der Spalte {#column-drop-down-menu}
+### Dropdown-Menü der Spalte  {#column-drop-down-menu}
 
 Jede Spalte des Berichts verfügt über ein Dropdown-Menü. Es wird angezeigt, wenn der Mauszeiger über die Zelle mit dem Spaltentitel bewegt wird.
 
@@ -92,7 +96,7 @@ Die Daten können mithilfe folgender Möglichkeiten nach einer bestimmten Spalte
 * Durch das Klicken auf die jeweilige Spaltenkopfzeile wechselt die Sortierung von einer aufsteigenden zu einer absteigenden Sortierung, was durch eine Pfeilspitze direkt neben dem Titeltext angezeigt wird.
 * Verwenden Sie das [Dropdown-Menü der Spalte](#column-drop-down-menu), um zwischen **Aufsteigend sortieren** und **Absteigend sortieren** auszuwählen. Dies wird erneut durch eine Pfeilspitze direkt neben dem Titeltext angezeigt.
 
-### Gruppen und das aktuelle Datendiagramm {#groups-and-the-current-data-chart}
+### Gruppen und das aktuelle Datendiagramm  {#groups-and-the-current-data-chart}
 
 In geeigneten Spalten können Sie **Nach Spalte gruppieren** im [Dropdown-Menü der Spalte](#column-drop-down-menu) auswählen. Hierdurch werden die Daten nach jedem einzelnen Wert innerhalb dieser Spalte gruppiert. Sie können mehrere Spalten für die Gruppierung auswählen. Die Option werden ausgegraut, wenn in der Spalte nicht geeignete Daten vorhanden sind, d. h. wenn jeder Eintrag einzeln zu betrachten und einzigartig ist, sodass keine Gruppen gebildet werden können. Dies gilt zum Beispiel für die Spalte mit der Benutzer-ID im Benutzerbericht.
 
@@ -106,7 +110,7 @@ Wenn Sie Ihren Mauszeiger über das Tortendiagramm bewegen, wird der zusammengef
 
 In geeigneten Spalten können Sie außerdem die **Filtereinstellungen** und/oder **Zusammenfassungen** im [Dropdown-Menü der Spalte](#column-drop-down-menu) konfigurieren.
 
-#### Filter {#filters}
+#### Filter  {#filters}
 
 Mithilfe der Filtereinstellungen können Sie die Kriterien für anzuzeigende Einträge festlegen. Die verfügbaren Operatoren lauten:
 
@@ -126,7 +130,7 @@ Sie können den Filter wie folgt deaktivieren:
 1. Entfernen Sie den Filtertext.
 1. Klicken Sie auf **Übernehmen**.
 
-#### Zusammenfassungen {#aggregates}
+#### Zusammenfassungen  {#aggregates}
 
 Sie können auch eine Zusammenfassungsmethode auswählen (diese können je nach ausgewählter Spalte variieren):
 
@@ -169,8 +173,8 @@ Sobald die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
 
    Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
 
-   * If the interval is set to `Day`, each snapshot is shown as a single value in the chart.
-   * If the interval is set to `Month`, all snapshots for February are aggregated into a single value (displayed as a single &quot;dot&quot; in the chart).
+   * Wenn das Intervall auf `Day` eingestellt ist, wird jeder Schnappschuss als einzelner Wert im Diagramm angezeigt.
+   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Snapshots für Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner Punkt angezeigt wird).
 
 Wählen Sie Ihre Anforderungen aus und klicken Sie dann auf **Los**, um sie auf den Bericht anzuwenden. Um die Anzeige nach der Anfertigung weiterer Momentaufnahmen zu aktualisieren, klicken Sie erneut auf **Los**.
 
@@ -188,14 +192,14 @@ Wenn die Momentaufnahmen erfasst werden, können Sie:
 
 >[!NOTE]
 >
->Snapshots are stored under `/var/reports/...` where the remainder of the path mirrors the path of the respective report and ID created when the report was finished.
+>Schnappschüsse werden unter `/var/reports/...` gespeichert, wobei der Rest des Pfads den Pfad des jeweiligen Berichts und der ID spiegelt, die beim Abschluss des Berichts erstellt wurden.
 >
 >
 >Alte Momentaufnahmen können manuell gelöscht werden, wenn Sie vollkommen sicher sind, dass Sie diese Instanzen nicht mehr benötigen.
 
 >[!NOTE]
 >
->Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch empfohlen, tägliche Snapshots in einer Produktionsumgebung zu verwenden. If possible run these daily snapshots at a time of day when there is not much activity on your website; this can be defined with the `Daily snapshots (repconf.hourofday)` parameter for **Day CQ Reporting Configuration**; see [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) for more details on how to configure this.
+>Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch empfohlen, tägliche Snapshots auf einer Produktions-Umgebung zu verwenden. Führen Sie diese täglichen Schnappschüsse nach Möglichkeit zu einer Tageszeit aus, zu der Ihre Website nicht viel Aktivität aufweist; dies kann mit dem Parameter `Daily snapshots (repconf.hourofday)` für **Day CQ Berichte Configuration** definiert werden; Weitere Informationen zum Konfigurieren finden Sie unter [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md).
 
 #### Anzeigelimits {#display-limits}
 
@@ -240,7 +244,7 @@ Dies ist ein Speicherort, an dem der Zeitraum für die Erfassung [früherer Date
 
    Sie können eine eigene Beschreibung definieren.
 
-* **Stammpfad** (*nur aktiv für bestimmte Berichte*)
+* **Stammpfad**  (*nur aktiv für bestimmte Berichte*)
 
    Verwenden Sie diese Option, um den Bericht auf einen (Unter-)Abschnitt des Repositorys zu beschränken.
 
@@ -256,13 +260,13 @@ Dies ist ein Speicherort, an dem der Zeitraum für die Erfassung [früherer Date
 
       Diese Auswahl zeigt an, dass die Berichtsdaten manuell aktualisiert werden müssen, wenn sich ein beliebiger Aspekt der Berichtskonfiguration verändert hat. Außerdem bedeutet dies, dass die Berichtstabelle bei jeder Änderung eines Aspekts der Konfiguration ausgeblendet wird.
 
-       Wenn dies ausgewählt ist, wird die Schaltfläche **[Daten laden](#load-data)**(neben **Bearbeiten**im Bericht) angezeigt. Mithilfe von **Daten laden**werden die Daten geladen und die angezeigten Berichtsdaten werden aktualisiert.
+       Wenn dies ausgewählt ist, wird die Schaltfläche **[Daten laden](#load-data)** (neben **Bearbeiten** im Bericht) angezeigt. Mithilfe von **Daten laden** werden die Daten geladen und die angezeigten Berichtsdaten werden aktualisiert.
 
 * **Momentaufnahmen** Sie können festlegen, wie oft Momentaufnahmen angefertigt werden sollen: täglich, stündlich oder gar nicht.
 
 ### Daten laden {#load-data}
 
-Die Schaltfläche **Daten laden** wird nur angezeigt, wenn **Daten manuell aktualisieren** unter **[Bearbeiten](#edit-report)**ausgewählt wurde.
+Die Schaltfläche **Daten laden** wird nur angezeigt, wenn **Daten manuell aktualisieren** unter **[Bearbeiten](#edit-report)** ausgewählt wurde.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -276,7 +280,7 @@ Die Auswahl von „Daten manuell aktualisieren“ bedeutet Folgendes:
 
 1. Wenn Sie möchten, dass die Berichtsdaten erneut angezeigt werden, müssen Sie zum erneuten Laden der Daten auf **Daten laden** klicken.
 
-### Beenden (Bericht) {#finish-report}
+### Beenden (Bericht)  {#finish-report}
 
 Wenn Sie den Bericht **beenden**, geschieht Folgendes:
 
@@ -317,7 +321,7 @@ Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
 
 Alle Komponenten werden als Produktstandard und projektspezifisch einbezogen. Mithilfe des Dialogfelds **Bearbeiten** kann der Benutzer auch ein **Stammverzeichnis** festlegen, das den Startpunkt des Berichts definiert. Alle Komponenten unter diesem Stammverzeichnis werden für den Bericht berücksichtigt.
 
-![reportcomponent](assets/reportcomponent.png) ![reportcomponent](assets/reportcompentall.png)
+![](assets/reportcomponent.png) ![reportcomponentReportCompentall](assets/reportcompentall.png)
 
 ### Speichernutzung {#disk-usage}
 
@@ -332,7 +336,7 @@ Der Bericht beginnt im Stamm ( / ) des Repositorys. Durch das Klicken auf einen 
 Dieser Bericht analysiert das aktuelle Anforderungsprotokoll:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`
-, um die teuersten Anforderungen innerhalb eines bestimmten Zeitraums zu identifizieren.
+, um Ihnen bei der Ermittlung der teuersten Anforderung(en) innerhalb eines bestimmten Zeitraums zu helfen.
 
 Zum Generieren des Berichts können Sie Folgendes Festlegen:
 
@@ -346,13 +350,13 @@ Zum Generieren des Berichts können Sie Folgendes Festlegen:
 
    Maximale Anzahl der Ausgabelinien.
 
-   Default: `50`
+   Standard: `50`
 
 * **max. Anforderungen**
 
    Maximale Anzahl der zu analysierenden Anforderungen.
 
-   Default: `-1` (all)
+   Standard: `-1` (alle)
 
 * **E-Mail-Adresse**
 
@@ -387,7 +391,7 @@ Bedeutet, dass Sie Folgendes überwachen können:
 * Seiten, die am häufigsten/seltensten geändert wurden
 * Aktivste/am wenigsten aktive Benutzer
 
-Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. By default the root path is configured to the audit log at `/var/audit/com.day.cq.wcm.core.page`.
+Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. Standardmäßig ist der Stammpfad für das Prüfprotokoll unter `/var/audit/com.day.cq.wcm.core.page` konfiguriert.
 
 ![reportpageActivity](assets/reportpageactivity.png)
 
@@ -462,17 +466,17 @@ Das Dialogfeld „Generische Spalte“ wird geöffnet, wenn Sie entweder:
 
 * **Pfad**
 
-   Usually the property is taken from the `profile`.
+   Normalerweise wird die Eigenschaft von `profile` genommen.
 
 * **Typ**
 
    Wählen Sie den Feldtyp aus `String`, `Number`, `Integer`, `Date`.
 
-* **Standardaggregat**
+* **Standard-Aggregat**
 
-   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung der Spalte in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das gewünschte Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das gewünschte Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   For example, *Count* for a `String` field means that the number of distinct `String` values is displayed for the column in the aggregated state.
+   Beispielsweise bedeutet *Count* für ein `String`-Feld, dass die Anzahl der eindeutigen `String`-Werte für die Spalte im aggregierten Status angezeigt wird.
 
 In der Spalte **Erweitert** können Sie außerdem die verfügbaren Zusammenfassungen und Filter festlegen:
 
@@ -528,7 +532,7 @@ Da in der Veröffentlichungsumgebung keine Berichtskonfiguration zulässig ist, 
 
 >[!CAUTION]
 >
->Access to these reports may be a security issue; therefore we recommend you configure the Dispatcher so that `/etc/reports` is not available to external visitors. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
+>Der Zugang zu diesen Berichten kann ein Sicherheitsproblem sein. Daher empfehlen wir Ihnen, den Dispatcher so zu konfigurieren, dass `/etc/reports` nicht für externe Besucher verfügbar ist. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
 
 ## Für die Ausführung von Berichten benötigte Berechtigungen {#permissions-needed-for-running-reports}
 
