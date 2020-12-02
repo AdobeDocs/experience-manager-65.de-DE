@@ -19,11 +19,11 @@ ht-degree: 80%
 ---
 
 
-# Architektur of HTML5 forms{#architecture-of-html-forms}
+# Architektur von HTML5-Formularen{#architecture-of-html-forms}
 
 ## Architektur {#architecture}
 
-HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](https://sling.apache.org/).
+Die Funktionalität von HTML5-Formularen wird als Paket innerhalb der eingebetteten AEM bereitgestellt und als REST-Endpunkt über HTTP/S bereitgestellt, wobei RESTful [Apache Sling Architecture](https://sling.apache.org/) verwendet wird.
 
 ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
@@ -31,7 +31,7 @@ HTML5 forms functionality is deployed as a package within the embedded AEM insta
 
 [Apache Sling](https://sling.apache.org/) ist ressourcenzentriert. Es verwendet zunächst eine Anforderungs-URL, um die Ressource aufzulösen. Jede Ressource hat eine **sling:resourceType** (oder **sling:resourceSuperType**)-Eigenschaft. Anhand dieser Eigenschaft, der Anforderungsmethode und der Eigenschaften der Anforderungs-URL wird ein Sling-Skript ausgewählt, um die Anforderung zu bearbeiten. Dieses Sling-Skript kann ein JSP oder ein Servlet sein. Im Falle von HTML5-Formulare dienen **Profil**-Knoten als Sling-Ressourcen, und der **Profil-Renderer** dient als Sling-Skript, das die Anforderung bearbeitet, das mobile Formular mit einem bestimmten Profil zu rendern. Ein **Profil-Renderer** ist ein JSP, das Parameter aus einer Anforderung ausliest und den Forms OSGi-Dienst aufruft.
 
-For details on REST endpoint and supported request parameters, see [Rendering Form Template](/help/forms/using/rendering-form-template.md).
+Weitere Informationen zum REST-Endpunkt und den unterstützten Anforderungsparametern finden Sie unter [Formularvorlage wird wiedergegeben](/help/forms/using/rendering-form-template.md).
 
 Wenn ein Benutzer eine Anforderung von einem Client-Gerät wie einem iOS- oder Android-Browser abgibt, löst Sling zuerst den Profil-Knoten basierend auf der Anforderungs-URL auf. Aus diesem Profilknoten liest es **sling:resourceSuperType** und **sling:resourceType** aus, um alle verfügbaren Skripten zu ermitteln, die diese Anforderung, ein Formular zu rendern, bearbeiten können. Abschließend verwendet es Sling-Anforderungsselektoren zusammen mit der Anforderungsmethode, um das Skript zu identifizieren, das am besten für die Bearbeitung dieser Anforderung geeignet ist. Wenn die Anforderung ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
 
@@ -56,19 +56,19 @@ Der Forms OSGi-Dienst verarbeitet eine Anforderung in zwei Schritten:
 
 Wenn ein Formular aktualisiert wurde oder Elemente in einem Formular verwendet wurden, erkennt die Formular-Cache-Komponente es und der Cache für dieses bestimmte Formular wird ungültig. Wenn die Verarbeitung durch den Forms OSGi-Dienst abgeschlossen ist, fügt das Profil-Renderer-JSP JavaScript-Bibliotheksverweise in das Formular ein und gibt die Antwort an den Client zurück. Hierfür kann ein typischer Webserver wie [Apache](https://httpd.apache.org/) mit aktivierter HTML-Komprimierung verwendet werden. Ein Webserver würde die Antwortgröße, den Netzwerkverkehr und die für das Streaming der Daten zwischen Server und Clientcomputer erforderliche Zeit erheblich verringern.
 
-When a user submits the form, the browser sends state of form in JSON format to the [submit service proxy](../../forms/using/service-proxy.md); then the submit service proxy generates a data XML using JSON data and submits that data XML to submit endpoint.
+Wenn ein Benutzer das Formular sendet, sendet der Browser den Formularstatus im JSON-Format an den [Sendedienst-Proxy](../../forms/using/service-proxy.md); generiert der Sendedienst-Proxy eine Daten-XML mit JSON-Daten und sendet diese Daten-XML an den Sende-Endpunkt.
 
 ## Komponenten {#components}
 
 Sie benötigen das AEM Forms-Add-On-Paket, um HTML5-Formulare zu aktivieren. Weitere Informationen zum Installieren des Add-On-Pakets finden Sie unter [Installieren und Konfigurieren von AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
-### OSGi-Komponenten (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
+### OSGi-Komponenten (adobe-lc-forms-core.jar)  {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er von der Bündel-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** ist der Anzeigename des HTML5 Forms OSGi-Bundles, wenn er aus der Bundle-Ansicht der Felix Admin Console angezeigt wird (https://[Host]:[port]/system/console/bundles).
 
 Diese Komponente enthält OSGi-Komponenten für Rendering, Cachemanagement und Konfigurationseinstellungen.
 
-#### Forms OSGi-Dienst {#forms-osgi-service}
+#### Forms OSGi-Dienst  {#forms-osgi-service}
 
 Dieser OSGi-Dienst enthält die Logik zum Rendern einer XDP als HTML und verarbeitet Sendungen von Formularen zur Generierung einer Daten-XML. Dieser Dienst verwendet Forms-Dienstcontainer. Der Forms-Dienstcontainer ruft intern die native Komponente`XMLFormService.exe` auf, die anschließend die Verarbeitung durchführt.
 
@@ -87,7 +87,7 @@ HTML5-Formulare verwendet eine Zwischenspeicherung, um den Durchsatz zu maximier
    <th>Beschreibung</th>
   </tr>
   <tr>
-   <td>Keine</td>
+   <td>Kein</td>
    <td>Keine Artefakte zwischenspeichern<br /> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ HTML5-Formulare führt eine Zwischenspeicherung im Arbeitsspeicher durch und ver
 
 Der Konfigurationsdienst ermöglicht die Einstellung der Konfigurationsparameter und der Cacheeinstellungen für HTML5-Formulare.
 
-To update these settings, go to the CQ Felix Admin Console (available at https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), search for and select Mobile Forms Configuration.
+Um diese Einstellungen zu aktualisieren, gehen Sie zur Admin Console &quot;CQ Felix&quot;(verfügbar unter https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), suchen Sie nach Mobile Forms Configuration und wählen Sie sie aus.
 
-Mit dem Konfigurationsdienst können Sie die Cachegröße konfigurieren oder den Cache deaktivieren. Sie können auch mithilfe des Parameters „Debug Options“ das Debugging aktivieren. More information about debugging forms can be found at [Debugging HTML5 forms](/help/forms/using/debug.md).
+Mit dem Konfigurationsdienst können Sie die Cachegröße konfigurieren oder den Cache deaktivieren. Sie können auch mithilfe des Parameters „Debug Options“ das Debugging aktivieren. Weitere Informationen zum Debugging von Formularen finden Sie unter [Debugging von HTML5-Formularen](/help/forms/using/debug.md).
 
 ### Laufzeitkomponenten (adobe-lc-forms-runtime-pkg.zip) {#runtime-components-adobe-lc-forms-runtime-pkg-zip}
 
@@ -121,7 +121,7 @@ Das Laufzeitpaket enthält die clientseitigen Bibliotheken, die verwendet werden
 
 **Im Laufzeitpaket verfügbare wichtige Komponenten:**
 
-#### Scripting Engine {#scripting-engine}
+#### Scripting Engine  {#scripting-engine}
 
 Die Implementierung von Adobe XFA unterstützt zwei Arten von Skriptsprachen, um die Ausführung einer benutzerdefinierten Logik in Formularen zu aktivieren: JavaScript und FormCalc.
 
@@ -149,7 +149,7 @@ Zusätzlich zu den Standardformatierungseigenschaften enthält jedes Formularele
 
 Weitere Informationen über Standardformatierung und Klassen finden Sie unter [Einführung zu Stilen](/help/forms/using/css-styles.md).
 
-#### Serverseitiges Skript und Webdienste {#server-side-script-and-web-services}
+#### Serverseitiges Skript und Webdienste  {#server-side-script-and-web-services}
 
 Skripten, die für eine Ausführung auf dem Server oder für den Aufruf eines Webdienstes markiert sind (unabhängig davon, wo dieser Webdienst ausgeführt werden soll), werden immer auf dem Server ausgeführt.
 
@@ -160,7 +160,7 @@ Die Client-Scripting Engine:
 1. Erstellt einen neuen JSON-Status
 1. Führt den neuen JSON-Status auf dem Client zusammen, wenn die Antwort zurückgegeben wird.
 
-#### Lokalisierungsressourcen-Bundles {#localization-resource-bundles}
+#### Lokalisierungsressourcen-Bundles  {#localization-resource-bundles}
 
 HTML5-Formulare unterstützen die Sprachen Italienisch (it), Spanisch (es), Brasilianisches Portugiesisch (pt_BR), Vereinfachtes Chinesisch (zh_CN), Traditionelles Chinesisch (nur begrenzte Unterstützung) (zh_TW), Koreanisch (ko_KR), Englisch (en_US), Französisch (fr_FR), Deutsch (de_DE) und Japanisch (ja). Nach dem im Anforderungsheader empfangenen Gebietsschema richtet sich, welches Ressourcenbündel an den Client geleitet wird. Dieses Ressourcenbündel wird zur Profil-JSP als CQ-Client-Bibliothek mit dem Kategorienamen **xfaforms.I18N** hinzugefügt. Sie können die Logik überschreiben, dass das Gebietsschema-Paket im Profil aufgenommen wird.
 
@@ -174,7 +174,7 @@ Profile sind die Ressourcenknoten im Sling, die ein Formular oder eine Familie v
 
 #### Profil-Renderer {#profile-renderers}
 
-Der Profilknoten hat ein Eigenschafts-**Sling: resourceSuperType** mit dem Wert **xfaforms/profile**. This property internally sends forward requests to the sling script for Profile nodes located in the **/libs/xfaforms/profile** folder. Diese Skripten sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
+Der Profilknoten hat ein Eigenschafts-**Sling: resourceSuperType** mit dem Wert **xfaforms/profile**. Diese Eigenschaft sendet intern Anforderungen an das Sling-Skript für Profil-Knoten im Ordner **/libs/xfaforms/Profil**. Diese Skripten sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
 
 * **xfaforms.I18N.&lt;locale>**: Diese Bibliothek enthält lokalisierte Daten.
 * **xfaforms.profile**: Diese Bibliothek enthält die Implementierung für XFA Scripting und für die Layout-Engine.
