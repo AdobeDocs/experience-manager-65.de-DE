@@ -1,5 +1,5 @@
 ---
-title: Anwenden von Workflows auf Seiten
+title: 'Anwenden von Workflows auf Seiten  '
 seo-title: Anwenden von Workflows auf Seiten
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
 seo-description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
@@ -19,7 +19,7 @@ ht-degree: 99%
 ---
 
 
-# Anwenden von Workflows auf Seiten {#applying-workflows-to-pages}
+# Anwenden von Workflows auf Seiten  {#applying-workflows-to-pages}
 
 Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
 
@@ -55,7 +55,7 @@ Workflows können wie folgt gestartet werden:
 Sie können einen Workflow wie folgt starten:
 
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
-* [ die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
+* [die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
 In beiden Fällen ist Folgendes zu tun:
 
@@ -73,7 +73,7 @@ Sie können einen Workflow von der Symbolleiste der **Sites**-Konsole aus starte
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Starten eines Workflows aus der Timeline     {#starting-a-workflow-from-the-timeline}
+### Starten eines Workflows aus der Timeline      {#starting-a-workflow-from-the-timeline}
 
 Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewählte Ressource angewendet werden soll.
 
@@ -84,14 +84,14 @@ Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewähl
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Angeben von Workflow-Details im Assistenten „Workflow erstellen“     {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Angeben von Workflow-Details im Assistenten „Workflow erstellen“       {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und die erforderlichen Details anzugeben.
 
 Öffnen Sie den Assistenten **Workflow erstellen** über
 
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
-* [ die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
+* [die Timeline-Leiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
 Anschließend können Sie Details angeben:
 
