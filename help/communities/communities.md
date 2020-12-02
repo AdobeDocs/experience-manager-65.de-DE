@@ -18,13 +18,13 @@ ht-degree: 10%
 ---
 
 
-# Entwicklungsländer  {#developing-communities}
+# Developing Communities {#developing-communities}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 AEM Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalender, Kommentare, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Umgebung &quot;Veröffentlichen&quot;eingegeben werden.
 
-Die Grundlage einer [Community-Site](overview.md#communitiessites) bildet das [Social-Komponenten-Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl einer [Community-Site-Vorlage](sites-console.md) , die aus [Community-Funktionen](functions.md)besteht.
+Die Grundlage einer [Community-Site](overview.md#communitiessites) ist das [Social-Komponenten-Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl einer [Community-Site-Vorlage](sites-console.md), die aus [Community-Funktionen](functions.md) besteht.
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
@@ -34,7 +34,7 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 >[!NOTE]
 > 
->Es wird dringend empfohlen, über die [neuesten Versionen](deploy-communities.md#latest-releases)auf dem Laufenden zu bleiben.
+>Es wird dringend empfohlen, mit den [aktuellen Versionen](deploy-communities.md#latest-releases) auf dem Laufenden zu bleiben.
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
@@ -49,11 +49,11 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 * [Serverseitige Anpassung](server-customize.md): Anpassen von Code, der auf dem Server ausgeführt wird.
 * [Datenspeicherung Resource Provider (SRP)](srp.md): Überblick über die Datenspeicherung von Community-Inhalten.
 * [Kodierungsleitlinien](code-guide.md): Richtlinien, Tipps und Tricks.
-* [Leitfaden](components-guide.md)zu Community-Komponenten: interaktives Entwicklungstool.
+* [Leitfaden](components-guide.md) zu Community-Komponenten: interaktives Entwicklungstool.
 
-## Komponenten, Funktionen und Funktionen {#component-function-and-feature-essentials}
+## Komponenten, Funktionen und Funktionsgrundlagen {#component-function-and-feature-essentials}
 
-Die Komponenten, Funktionen und Features von AEM Communities stellen die Bausteine für [Community-Sites](sites-console.md)dar.
+Komponenten, Funktionen und Funktionen von AEM Communities stellen die Bausteine für [Community-Sites](sites-console.md) bereit.
 
 * [Komponenten, Funktionen und Funktionen](essentials.md)
 * [Clientlibs für Communities-Komponenten](clientlibs.md)
@@ -68,7 +68,7 @@ Die Komponenten, Funktionen und Features von AEM Communities stellen die Baustei
 
 ## Community-Gruppen {#community-groups}
 
-[Gemeinschaftsgruppen](overview.md#communitygroups) sind das Konzept, dass es Mitgliedern der Gemeinschaft erlaubt wird, Untergemeinschaften innerhalb der Community-Site zu bilden. Die Erstellung einer Community-Gruppe kann in der Umgebung &quot;Veröffentlichen&quot;oder &quot;Autor&quot;erfolgen.
+[Community-](overview.md#communitygroups) Gruppierung ist das Konzept, dass Community-Mitgliedern erlaubt wird, Untergemeinschaften innerhalb der Community-Site zu bilden. Die Erstellung einer Community-Gruppe kann in der Umgebung &quot;Veröffentlichen&quot;oder &quot;Autor&quot;erfolgen.
 
 * [Community-Gruppengrundlagen](essentials-groups.md)
 * [Gruppenfunktion](functions.md#groups-function)
@@ -76,10 +76,10 @@ Die Komponenten, Funktionen und Features von AEM Communities stellen die Baustei
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
 * [Community-Gruppen für Autoren](creating-groups.md)
 
-## Daten verwalten {#managing-data}
+## Verwalten von Daten {#managing-data}
 
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP API-Dienstprogrammmethoden und Beispiele
-* [Tag Essentials](tag.md) - Möglichkeit für Community-Mitglieder, UGC- und/oder katalogisierte Ressourcen für die Aktivierung zu taggen
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP API-Dienstprogrammmethoden und Beispiele
+* [Tag Essentials](tag.md)  - Möglichkeit für Community-Mitglieder, UGC- und/oder katalogisierte Ressourcen für die Aktivierung zu taggen
 
 ## Tutorials {#tutorials}
 
@@ -94,9 +94,9 @@ Die Komponenten, Funktionen und Features von AEM Communities stellen die Baustei
 
 ## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
 
-* Besuchen Sie [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen und Dispatcher-Konfiguration zu erfahren.
+* Besuchen Sie [Communities](deploy-communities.md) bereitstellen, um mehr über empfohlene Bereitstellungen und Dispatcher-Konfiguration zu erfahren.
 
-* Visit [Administering Communities Sites](administer-landing.md) to learn about creating a Community Site, configuring Community Site Templates, moderating community content, managing members, and configuring messaging.
+* Besuchen Sie [Sites der Administrationsgemeinschaften](administer-landing.md), um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
 
-* Unter [Authoring Communities-Komponenten](author-communities.md) erfahren Sie, wie Sie Communities-Komponenten erstellen und konfigurieren.
+* Unter [Komponenten für Authoring-Communities](author-communities.md) erfahren Sie, wie Sie mit Communities-Komponenten erstellen und konfigurieren.
 
