@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f58a6c4-3190-49d4-800c-4a55dca7c296
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 96%
 
 ---
 
@@ -24,8 +27,8 @@ Weitere Informationen zu Schriftarteinstellungen finden Sie unter [Konfigurieren
 **Speicherort des „Verzeichnisses für Kundenschriftarten“ angeben.**
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
-1. Geben Sie in das Feld „Speicherort des Verzeichnisses für Systemschriftarten“ den Pfad für den Ordner für Kundenschriftarten an. Multiple directories can be added, separated by a semicolon **;**
-1. Klicken Sie auf „OK“.
+1. Geben Sie in das Feld „Speicherort des Verzeichnisses für Systemschriftarten“ den Pfad für den Ordner für Kundenschriftarten an. Mehrere Ordner können hinzugefügt werden, getrennt durch ein Semikolon **;**
+1. Klicken Sie auf OK.
 1. Starten Sie das System neu, auf dem AEM Forms installiert ist.
 
 >[!NOTE]
