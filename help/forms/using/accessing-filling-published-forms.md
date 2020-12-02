@@ -11,6 +11,9 @@ discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '962'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +30,7 @@ Weitere Informationen zu Forms Portal und seinen Funktionen finden Sie unter [Ei
 
 ## Erste Schritte mit Forms Portal {#getting-started-with-forms-portal}
 
-Navigieren Sie zur veröffentlichten Forms Portal-Seite. For more information about creating a forms portal page, see [Creating a forms portal page](../../forms/using/creating-form-portal-page.md).
+Navigieren Sie zur veröffentlichten Forms Portal-Seite. Weitere Informationen zum Erstellen einer Forms Portal-Seite finden Sie unter [Erstellen einer Forms Portal-Seite](../../forms/using/creating-form-portal-page.md).
 
 Die Komponente „Search &amp; Lister“ von Forms Portal zeigt die in der Veröffentlichungsinstanz des AEM-Servers verfügbaren Formulare. Diese Liste enthält alle Formulare oder die im Filter angegebenen Formulare zum Zeitpunkt der Bearbeitung der Forms Portal-Seite. Eine Forms Portal-Seite ist ähnlich der in der folgenden Abbildung gezeigten:
 
@@ -72,7 +75,7 @@ Der Zugriff auf die Formulare ist über den Link möglich, der in der Komponente
 
 Jedes Formular enthält Hilfeinformationen, mit denen Benutzer das Formular ausfüllen können.
 
-#### Formular und übermittelte Formulare {#drafts-and-submission}
+#### Formular und übermittelte Formulare  {#drafts-and-submission}
 
 Benutzer haben die Möglichkeit, den Entwurf eines Formulars zu speichern, indem sie auf die Schaltfläche „Speichern“ klicken. Dadurch können sie über einen längeren Zeitraum an einem Formular arbeiten, bevor sie es übermitteln.
 
@@ -82,7 +85,7 @@ Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie au
 
 >[!NOTE]
 >
->Gesendete Formulare werden auf der Registerkarte &quot;Gesendete Formulare&quot;nur angezeigt, wenn die Übermittlungsaktion für das adaptive Formular als Übermittlungsaktion für Forms Portal konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](../../forms/using/configuring-submit-actions.md).
+>Gesendete Formulare werden auf der Registerkarte &quot;Gesendetes Forms&quot;nur angezeigt, wenn die Übermittlungsaktion für das adaptive Formular als Forms Portal-Übermittlungsaktion konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](../../forms/using/configuring-submit-actions.md).
 
 ![Komponente „Drafts and Submissions“](assets/draft-submission.png)
 
@@ -94,6 +97,6 @@ Es gibt bestimmte Formulare, die Sie relativ häufig ausfüllen und senden müss
 
 AEM Forms trägt zu einem optimierten Benutzererlebnis beim Ausfüllen von Formularen bei und reduziert dafür benötigte Zeit erheblich. Endbenutzer können für ein neues Formular die Daten von einem früher gesendeten Formular verwenden. Diese Funktion ist integriert in der [Komponente „Drafts and Submissions“](../../forms/using/draft-submission-component.md). Wenn Sie die Komponente „Drafts and Submissions“ zu Ihrer Forms Portal-Seite hinzufügen und sie veröffentlichen, finden Endbenutzer auf der Registerkarte „Gesendete Formulare und Entwurfsformulare“ die Option, ein neues Formular mit den Daten eines zuvor gesendeten Formulars zu beginnen. Auf der folgenden Abbildung ist diese Option hervorgehoben.
 
-![start-a-new-form](assets/start-a-new-form.png)
+![beginn-a-new-form](assets/start-a-new-form.png)
 
 Wenn Sie auf die Schaltfläche klicken, um ein neues Formular zu starten, wird ein neues Formular mit Daten aus dem entsprechenden gesendeten Formular gestartet. Sie können jetzt die Informationen überprüfen, ggf. aktualisieren und das Formular senden.
