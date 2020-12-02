@@ -107,9 +107,9 @@ Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-auth
 
 In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn der Benutzer am aktuellen Workflow-Schritt beteiligt ist, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-authoring/workflows-participating.md) und die weitere Informationen zum Workflow liefern, darunter:
 
-* **Complete** - Öffnet das Dialogfeld **Complete Workitem**
+* **Complete**  - Öffnet den  **Dialog** zum Abschluss der Arbeit
 
-* **Delegate** - Öffnet das Dialogfeld &quot; **Complete** &quot;
+* **Delegate**  - Öffnet den  **Dialog** zum Abschluss
 
 * **Details anzeigen**: Öffnet das Fenster **Details** des entsprechenden Workflows.
 
@@ -312,7 +312,7 @@ Für das Hinzufügen und/oder Bearbeiten von Inhalten in Komponenten sind zwei V
 * Öffnen Sie das Dialogfeld [Komponente](#component-edit-dialog) für die Bearbeitung.
 * [Ziehen Sie ein Asset](#draganddropintocomponent) aus dem Asset-Browser, um Inhalt direkt hinzuzufügen.
 
-### Dialogfeld „Komponente bearbeiten“   {#component-edit-dialog}
+### Dialogfeld „Komponente bearbeiten“    {#component-edit-dialog}
 
 Über das [Symbol „Bearbeiten“ (Bleistift) in der Symbolleiste](#edit-configure-copy-cut-delete-paste) können Sie eine Komponente öffnen, um deren Inhalt zu bearbeiten.
 
@@ -350,12 +350,12 @@ Für bestimmte Komponententypen können Sie Assets aus dem Asset-Browser direkt 
 | **Asset-Typ** | **Komponententyp** |
 |---|---|
 | Bild | Bild |
-| Dokument | Download |
+| Dokument | Herunterladen |
 | Produkt | Produkt |
 | Video | Flash |
 | Inhaltsfragment | Inhaltsfragmente |
 
-## Bearbeiten (Inhalt) Vollbildmodus {#edit-content-full-screen-mode}
+## Bearbeiten (Inhalt) Vollbildmodus  {#edit-content-full-screen-mode}
 
 Für alle Komponenten kann der Vollbildmodus über das folgende Symbol gestartet und beendet werden:
 
@@ -454,7 +454,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 Wenn die Seite auf einer [bearbeitbaren Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie schnell und einfach zum [Vorlagen-Editor](/help/sites-authoring/templates.md#editing-templates-template-authors) wechseln, indem Sie im Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) die Option **Vorlage bearbeiten** auswählen.
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+Wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie mithilfe der [Seitenmodusauswahl](/help/sites-authoring/author-environment-tools.md#page-modes) auf der Symbolleiste zum [Designmodus wechseln, um Komponenten zur Verwendung auf der Seite zu aktivieren/deaktivieren.](/help/sites-authoring/default-components-designmode.md)
 
 Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) oder [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) können Sie schnell und einfach feststellen, auf welcher Vorlage die Seite basiert.
 
@@ -473,7 +473,7 @@ Beispiel:
 
 [Anmerkungen](/help/sites-authoring/annotations.md) bieten Reviewern und anderen Autoren die Möglichkeit, Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau   {#previewing-pages}
+## Anzeigen einer Seitenvorschau    {#previewing-pages}
 
 Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 
@@ -561,9 +561,9 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 
 >[!NOTE]
 >
->The [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` is also availalbe to undo page edit actions.
+>Der [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` ist auch verfügbar, um Seitenbearbeitungsaktionen rückgängig zu machen.
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>Der Tastaturbefehl `Ctrl-Y` ist auch verfügbar, um Seitenbearbeitungsaktionen erneut durchzuführen.
 
 >[!NOTE]
 >
