@@ -11,6 +11,9 @@ discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+workflow-type: tm+mt
+source-wordcount: '1062'
+ht-degree: 87%
 
 ---
 
@@ -29,21 +32,21 @@ Weitere Informationen finden Sie unter [Einführung in AEM Forms Workspace](/hel
 
 Um sich mit dem kompletten Ablauf zum Erstellen einer Formularanwendung vertraut zu machen, mit der ein Geschäftsprozess automatisiert wird, befolgen Sie die schrittweisen Anleitung. Nachdem Sie die Anleitung ausgeführt haben, können Sie Anwendungen mithilfe von Workbench, Designer und AEM Forms Workspace erstellen, verwalten und testen. Nähere Informationen zur Implementierung finden Sie unter [Erstellen der ersten AEM Forms-Anwendung](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
-## Funktionsübersicht {#functional-overview}
+## Funktionsübersicht  {#functional-overview}
 
 Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
-**Beginn eines Geschäftsprozesses:** AEM Forms Workspace Kategorien Ihrer Prozesse, die von Ihrem Unternehmen entworfen und eingerichtet wurden. Sie können häufig verwendete Kategorien als Favoriten definieren, um schneller auf die zugreifen zu können. Beim Starten eines Prozesses füllen Sie normalerweise ein Formular aus, um einen von Forms gesteuerten Geschäftsprozess zu starten. Weitere Informationen finden Sie unter [Starten von Prozessen](/help/forms/using/starting-processes.md).
+**Beginn eines Geschäftsprozesses:** AEM Forms Workspace Kategorien Ihrer Prozesse, die von Ihrem Unternehmen entwickelt und eingerichtet wurden. Sie können häufig verwendete Kategorien als Favoriten definieren, um schneller auf die zugreifen zu können. Beim Starten eines Prozesses füllen Sie normalerweise ein Formular aus, um einen von Forms gesteuerten Geschäftsprozess zu starten. Weitere Informationen finden Sie unter [Starten von Prozessen](/help/forms/using/starting-processes.md).
 
-**Ansicht und Maßnahmen bei Aufgaben:** Bei der Ansicht Ihrer Aufgaben-Listen sehen Sie Aufgaben aus einem Geschäftsprozess, die Ihnen oder einer anderen Gruppe, der Sie angehören, zugewiesen sind oder die freigegebene Aufgaben anderer Benutzer sind. Sie können die Aufgaben wie benötigt öffnen, bearbeiten und abschließen. Um eine Aufgabe abzuschließen, müssen Sie normalerweise Informationen angeben, ein Formular genehmigen oder es ablehnen. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Aufgabenlisten](/help/forms/using/todo-lists.md).
+**Ansicht und Handeln nach Aufgaben:** Bei der Ansicht Ihrer Aufgaben-Listen sehen Sie Aufgaben aus einem Geschäftsprozess, die Ihnen oder Gruppen zugewiesen sind, denen Sie angehören oder die freigegebene Aufgaben anderer Benutzer sind. Sie können die Aufgaben wie benötigt öffnen, bearbeiten und abschließen. Um eine Aufgabe abzuschließen, müssen Sie normalerweise Informationen angeben, ein Formular genehmigen oder es ablehnen. Weitere Informationen hierzu finden Sie unter [Arbeiten mit Aufgabenlisten](/help/forms/using/todo-lists.md).
 
 **Verfolgen von Aufgaben**: Um Ihre Aufgaben zu verfolgen, verwenden Sie die Registerkarte „Verfolgung“ von AEM Forms Workspace. Sie können nach aktiven oder abgeschlossenen Prozessen suchen, die von Ihnen gestartet wurden oder an denen Sie teilgenommen haben. Sie können die Aufgaben, Zuweisungen und Formulare anzeigen, die Teil des Prozesses waren. Zudem können Sie neue Prozesse mit Formulardaten aus einem zuvor gestarteten Prozess starten. Weitere Informationen finden Sie unter finden Sie unter [Verfolgen von Prozessen](/help/forms/using/tracking-processes.md).
 
-## Neues Angebot von AEM Forms Workspace {#new-offering-of-aem-forms-workspace}
+## Neues Angebot von AEM Forms Workspace  {#new-offering-of-aem-forms-workspace}
 
 **Unterstützung für Massengenehmigung von Aufgaben**:
 
-Sie können mehrere Aufgaben desselben Typs genehmigen. Wenn Sie eine Aufgabe zur Genehmigung auswählen, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgaben und denselben Routenoptionen aktiviert. See [Working with To-Do lists](/help/forms/using/todo-lists.md) for implementation details.
+Sie können mehrere Aufgaben desselben Typs genehmigen. Wenn Sie eine Aufgabe zur Genehmigung auswählen, bleiben nur die Aufgaben mit demselben Prozess, mit denselben Aufgaben und denselben Routenoptionen aktiviert. Implementierungsdetails finden Sie unter [Arbeiten mit Aufgaben-Listen](/help/forms/using/todo-lists.md).
 
 ## Migrieren von Flex Workspace zu AEM Forms Workspace {#migrating-from-flex-workspace-to-aem-forms-workspace}
 
@@ -106,13 +109,13 @@ Die verschiedenen Arten der Anpassung in beiden Arbeitsbereichen werden wie folg
 
 Zu den Funktionen von Flex Workspace, die nicht in AEM Forms Workspace verfügbar sind, gehören: Nachrichten und Benachrichtigungen, Begrüßungsseite, Approval-Container sowie die Option zur Verwaltung von Spaltenüberschriften. Eine vollständige Liste finden Sie unter [In AEM Forms Workspace nicht verfügbare Funktionen von Flex Workspace](/help/forms/using/features-flex-workspace-available-html.md).
 
-## Entwickeln mit AEM Forms Workspace {#developing-with-aem-forms-workspace}
+## Entwickeln mit AEM Forms Workspace  {#developing-with-aem-forms-workspace}
 
 ### Architektur {#architecture}
 
 AEM Forms Workspace ist eine auf HTML und JavaScript™ basierende Webanwendung, die auf CRX™ gehostet wird. Wenn die Workspace-URL in einem Browser geöffnet wird, wird auf eine CRX™-Ressource zugegriffen und die Anwendung wird als HTML-Seite im Browser wiedergegeben. Die JavaScript-Bibliotheken und der benutzerdefinierte JavaScript-Code verwalten das interne und externe Verhalten der Anwendung, z. B. die Benutzeroberfläche, die Interaktion und die Kommunikation mit AEM Forms-Server. Weitere Informationen finden Sie unter AEM Forms Workspace-[Architektur](/help/forms/using/html-workspace-architecture.md).
 
-### Anpassung von AEM Forms Workspace {#aem-forms-workspace-customization}
+### Anpassung von AEM Forms Workspace  {#aem-forms-workspace-customization}
 
 AEM Forms Workspace unterstützt viele Anpassungen, mit denen das Layout, die Darstellung, die Funktionalität und andere Aspekte der Benutzeroberfläche aktualisiert werden können. Bei den Anpassungen wird mindestens eins der folgenden Faktoren aktualisiert:
 
@@ -122,7 +125,7 @@ AEM Forms Workspace unterstützt viele Anpassungen, mit denen das Layout, die Da
 
 Der Artikel zu [Anpassungen](introduction-customizing-html-workspace.md#types-of-customizations) beschreibt die Arten solcher Anpassungen.
 
-### Einrichten der Entwicklungsumgebung {#set-up-the-developer-environment}
+### Einrichten der Entwicklungsumgebung  {#set-up-the-developer-environment}
 
 AEM Forms Workspace wird bereitgestellt mit einem auf CRX implementierten CRX -Paket, einem SDK-Archiv mit dem vollständigen Quellcode, JavaScript-Bibliotheken anderer Anbieter sowie Build-Skripten von AEM Forms Workspace. Verwenden Sie diese zum Einrichten der Entwicklungsumgebung, um die oben genannten Anpassungen durchführen zu können. Weitere Informationen finden Sie unter [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
@@ -132,8 +135,8 @@ Sie können einen Großteil der Benutzeroberfläche sowie Hauptfunktionen wie Sc
 
 Für neue Prozesse werden XDP-Formulare standardmäßig auf dem Desktop im PDF- und auf Tablets im HTML-Format wiedergegeben. Es ist möglich, XDP-Formulare immer im HTML-Format wiederzugeben. Weitere Informationen finden Sie unter [Neue Wiedergabe- und Sendedienste](/help/forms/using/new-render-submit-service.md).
 
-[Die Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) -Funktion, die mit [Profilen](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)funktioniert, ermöglicht die HTML-Darstellung von XDP-Formularen. „Render New HTML Form (neu)“ nutzt standardmäßig das Profil `default.html`, das Sie ändern können. Sie können darüber hinaus benutzerdefinierte Änderungen hinzufügen, die erfolgen, bevor das XDP-Formular im HTML-Format wiedergegeben wird.
+[Die Mobile ](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) Forms-Funktion, die mit  [Profilen](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) funktioniert, ermöglicht die HTML-Darstellung von XDP-Formularen. „Render New HTML Form (neu)“ nutzt standardmäßig das Profil `default.html`, das Sie ändern können. Sie können darüber hinaus benutzerdefinierte Änderungen hinzufügen, die erfolgen, bevor das XDP-Formular im HTML-Format wiedergegeben wird.
 
-## AEM Forms-Workspace-Applikation {#aem-forms-workspace-app}
+## AEM Forms-Workspace-Applikation  {#aem-forms-workspace-app}
 
 Um auf einem Mobilgerät an Ihren Geschäftsprozessen zu arbeiten, können Sie die für AEM Forms angebotene AEM Forms-Workspace-Applikation verwenden. Weitere Informationen finden Sie unter [Übersicht über AEM Forms Workspace-Applikation](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
