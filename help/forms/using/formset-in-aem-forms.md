@@ -20,7 +20,7 @@ ht-degree: 90%
 
 # Formularsatz in AEM Forms{#form-set-in-aem-forms}
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
 Ihre Kunden müssen oft mehrere Formulare senden, um sich bei einem Dienst oder anzumelden. Dazu gehört die Suche aller relevanter Formular sowie das Ausfüllen und Nachverfolgen. Außerdem müssen sie allgemeine Informationen mehrmals ausfüllen. Der gesamte Prozess ist mühsam und fehleranfällig, wenn eine große Anzahl von Formularen verwendet wird. Die Funktion von AEM Forms kann das Benutzererlebnis in derartigen Situationen vereinfachen.
 
@@ -36,7 +36,7 @@ Formularsätze werden auch in der AEM Forms-App unterstützt, wodurch Ihre Auße
 
 Sie können mehrere XDPs oder Formularvorlagen, die mit Designer erstellt wurden, mit einem Formularsatz verknüpfen. Mithilfe von Formularsätzen können die XDPs dann selektiv wiedergegeben werden, basierend auf den Werten, die die Benutzer in den Ausgangsformularen und ihren Profilen eingegeben haben.
 
-Use [AEM Forms user interface](../../forms/using/introduction-managing-forms.md) to manage all your forms, form sets, and related assets.
+Verwenden Sie die [AEM Forms-Benutzeroberfläche](../../forms/using/introduction-managing-forms.md), um alle Ihre Formulare, Formularsätze und zugehörigen Assets zu verwalten.
 
 ### Formularsatz erstellen{#create-a-form-set} 
 
@@ -50,7 +50,7 @@ Um Formularsätze zu erstellen, führen Sie folgende Schritte durch:
    * Titel: Geben Sie den Titel des Dokuments an. Der Titel erleichtert Ihnen die Identifizierung von Formularsätze in der Benutzeroberfläche von AEM Forms.
    * Beschreibung: Gibt die detaillierten Informationen zum Dokument an.
    * Tags: Gibt Tags an, die eine eindeutige Identifizierung des Formularsatzes ermöglichen. Tags erleichtern die Suche nach Formularsätzen. Um die Tags zu erstellen, geben Sie neue Tag-Namen in das Feld Tags ein.
-   * Sende-URL: Gibt die URL an, unter der die gesendeten Daten bei eigenständiger Wiedergabe des Formularsatzes veröffentlicht werden (Anwendungsfall ohne AEM Forms). Die Daten werden als mehrteilige Formulardaten mit den folgenden Anforderungsparametern gesendet:
+   * Sende-URL: Gibt die URL an, unter der die gesendeten Daten bei eigenständiger Wiedergabe des Formularsatzes veröffentlicht werden (Anwendungsfall ohne AEM Forms-App). Die Daten werden als mehrteilige Formulardaten mit den folgenden Anforderungsparametern gesendet:
    * dataXML: Dieser Parameter enthält eine XML-Darstellung der gesendeten Formularsatzdaten. Wenn alle Formulare in den Formularsätzen ein allgemeines Schema verwenden, wird die XML nach diesem Schema generiert. Andernfalls enthält das XML-Stamm-Tag ein untergeordnetes Tag für jedes ausgefüllte Formular im Formularsatz, das Daten für die Formularanlagen enthält.
    * formsetPath: Der Pfad des Formularsatzes in CRXDE, der eingereicht wurde.
    * HTML-Renderprofil: Sie können bestimmte Optionen wie Gleitfelder, Anlagen und Entwurfsunterstützung konfigurieren (nur für eigenständiges Formularsatzrendering), um das Erscheinungsbild, Verhalten und die Interaktionen der Formularsätze anzupassen. Sie können das vorhandene Profil anpassen oder erweitern, um alle HTML Form-Profileinstellungen zu ändern. 
@@ -65,12 +65,12 @@ Um Formularsätze zu erstellen, führen Sie folgende Schritte durch:
 
 1. Auf der Seite „Formular(e) konfigurieren“ haben Sie folgende Möglichkeiten:
 
-   * Reihenfolge der Formulare: Ziehen Sie die Formulare per Drag&amp;Drop, um die Anordnung zu ändern. Die Formularreihenfolge definiert die Reihenfolge, in der die Formulare dem Endbenutzer in der App und in der Standalone-Darstellung von AEM Forms angezeigt werden.
+   * Reihenfolge der Formulare: Ziehen Sie die Formulare per Drag&amp;Drop, um die Anordnung zu ändern. Die Formularreihenfolge definiert die Reihenfolge, in der die Formulare in der AEM Forms-App und in der eigenständigen Darstellung angezeigt werden.
    * Formular-ID: Gibt eine eindeutige ID an, damit die Formulare in den Berechtigungsausdrücken verwendet werden können. 
-   * Datenstamm: Der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im gesendeten XML-Code dauerhaft positioniert bleiben sollen. Der Standardwert ist /. Wenn Sie alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. For more information the XML structure of form set, see [Prefill XML for Form set](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Datenstamm: Der Autor kann für jedes Formular im Formularsatz den XPATH konfigurieren, unter dem die Daten des betreffenden Formulars im gesendeten XML-Code dauerhaft positioniert bleiben sollen. Der Standardwert ist /. Wenn Sie alle Formulare in Formularsätzen schemagebunden sind und das gleiche XML-Schema haben, können Sie diesen Wert ändern. Es wird empfohlen, für jedes Feld im Formular in der XDP-Datei die korrekte Datenbindung anzugeben. Wenn zwei Felder in zwei verschiedenen Formularen die allgemeine Datenbindung gemeinsam nutzen, dann zeigt das Feld im zweiten Formular vorausgefüllte Werte aus dem ersten Formular an. Binden Sie zwei Teilformulare mit dem gleichen internen Inhalt nicht an denselben XML-Knoten. Weitere Informationen zur XML-Struktur des Formularsatzes finden Sie unter [XML zum Vorausfüllen für Formularsatz](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
    * Berechtigungsausdruck: Gibt einen JavaScript-Ausdruck an, der einen booleschen Wert angibt, und anzeigt, ob ein Formular im Formularsatz zum Ausfüllen zulässig ist. Wenn dies „false“ ist, wird der Benutzer nicht gefragt und es wird ihm auch nicht das Formular zum Ausfüllen angezeigt. Der Ausdruck basiert normalerweise auf den Werten der Felder, die in den diesem Formular vorangehenden Formularen erfasst werden. Darüber hinaus enthalten Ausdrücke auch Aufrufe von fs.valueOf in der Formularsatz-API, um die vom Benutzer im entsprechenden Feld eines Formulars im Formularsatz eingegebenen Werte abzurufen:
 
-   *fs.valueOf(, &lt;fieldSom-Ausdruck>) > &lt;value>*
+   *fs.valueOf(&lt;form Identifier=&quot;&quot;>,  &lt;fieldsom expression=&quot;&quot;>) >  &lt;value>*
 
    Wenn Sie beispielsweise zwei Formulare im Formularsatz hat: Geschäftsausgaben und Reisekosten, können Sie ein JavaScript-Codefragment im Feld „Berechtigungsausdruck“ für beide Formulare hinzufügen, sodass beide Formulare die Benutzereingabe für Kosten in einem Formular überprüfen. Wenn der Benutzer Geschäftsausgaben wählt, wird das Formular „Geschäftsausgaben“ für den Endbenutzer gerendert. Wenn der Benutzer „Reisekosten“ wählt, wird ein anderes Formular gerendert und angezeigt. Weitere Informationen finden Sie unter Ausdruck für Förderfähigkeit.
 
@@ -82,7 +82,7 @@ Um Formularsätze zu erstellen, führen Sie folgende Schritte durch:
    >
    >Alle Formulare in Formularsätzen werden in der Benutzeroberfläche von AEM Forms verwaltet.
 
-### Verwalten eines Formularsatzes  {#managing-a-form-set}
+### Verwalten eines Formularsatzes   {#managing-a-form-set}
 
 Nachdem ein Formular erstellt wurde, können Sie die folgenden Vorgänge für den Formularsatz durchführen:
 
@@ -103,7 +103,7 @@ Nachdem ein Formular erstellt wurde, können Sie die folgenden Vorgänge für de
 Um Formularsätze zu bearbeiten, führen Sie folgende Schritte durch: 
 
 1. Wählen Sie Formulare > Formulare und Dokumente.
-1. Suchen Sie nach dem Formularsatz, den Sie bearbeiten möchten. Hover over it and select Edit ( ![editicon](assets/editicon.png)).
+1. Suchen Sie nach dem Formularsatz, den Sie bearbeiten möchten. Bewegen Sie den Mauszeiger darüber und wählen Sie Bearbeiten ( ![editicon](assets/editicon.png)).
 1. Auf der Seite „Formular(e) konfigurieren“ können Sie Folgendes bearbeiten:
 
    * Formularreihenfolge
@@ -113,11 +113,11 @@ Um Formularsätze zu bearbeiten, führen Sie folgende Schritte durch:
 
    Sie können auch auf das entsprechenden Löschen-Symbol klicken, um das Formular aus dem Formularsatz zu löschen.
 
-## Formularsätze in der Prozessverwaltung {#form-set-in-process-management}
+## Formularsätze in der Prozessverwaltung  {#form-set-in-process-management}
 
 Nachdem Sie einen Formularsatz in der Verwaltungsoberfläche von AEM Forms erstellt haben, können Sie ihn in Workbench für die Vorgänge „Ausgangspunkt“ oder „Aufgabe zuweisen“ verwenden.
 
-### Formularsätze für Aufgaben oder Ausgangspunkte verwenden {#using-form-set-in-task-or-start-point}
+### Formularsätze für Aufgaben oder Ausgangspunkte verwenden  {#using-form-set-in-task-or-start-point}
 
 1. Wählen Sie beim Entwickeln eines Prozesses im Bereich „Präsentation und Daten“ von „Ausgangspunkt“ bzw. „Aufgabe zuweisen“ die Option zum **Verwenden eines CRX-Assets**. Der Browser für CRX-Assets wird angezeigt.
 
@@ -246,7 +246,7 @@ In einem Formularsatz definierte die XML ein XML-Schema mit der folgenden Syntax
 >
 >Wenn zwei Formulare mit überlappenden Datenstämmen vorhanden sind oder die Elementhierarchie eines Formulars sich mit der Datenstamm-Hierarchie eines anderen Formulars überschneidet, werden in der XML zum Vorausfüllen die Werte der überlappenden Elemente zusammengeführt. Die Senden-XML hat eine ähnliche Struktur wie die XML zum Vorausfüllen, die Senden-XML hat jedoch mehr Wrapper-Tags und am Ende sind einige Kontextdaten-Tags des Formularsatzes angehängt.
 
-### Vorauffüllen von XML-Elementen – Beschreibung {#prefill-xml-elements-description}
+### Vorauffüllen von XML-Elementen – Beschreibung  {#prefill-xml-elements-description}
 
 Syntaxregeln zum Erstellen einer XML-Datei zu Vorauffüllen:
 
@@ -256,7 +256,7 @@ Syntaxregeln zum Erstellen einer XML-Datei zu Vorauffüllen:
 * prefillXML: Gibt an, ob das Element in der XML zum Vorausfüllen erforderlich (R) oder optional (O) ist.
 * Untergeordnete Elemente: Gibt an, welche Elemente dem betreffenden Element untergeordnet sein können.
 
-### FORMSET {#formset}
+### FORMSET  {#formset}
 
 `parent elements:`
 
@@ -272,13 +272,13 @@ Syntaxregeln zum Erstellen einer XML-Datei zu Vorauffüllen:
 
 Das Stammelement der XML für den Formularsatz. Es wird empfohlen, dieses Wort nicht als Namen für rootSubform in den Formularen innerhalb des Formularsatzes zu verwenden.
 
-### FS_DATA {#fs-data}
+### FS_DATA  {#fs-data}
 
 `parent elements:`
 
 `formset`
 
-cardinality: [1]
+Kardinalität: [1]
 
 submitXML: P
 
@@ -346,7 +346,7 @@ NAME DES STAMMELEMENT-TAGS
 
 Ist in der XML zum Vorausfüllen ein Stammelement vorhanden, wird der Name dieses Elements auch für die Senden-XML übernommen. Falls keine XML zum Vorausfüllen vorhanden ist, wird der Name des Unterformulars auf der Stammebene des ersten Formulars im Formularsatz, dessen dataRoot-Eigenschaft auf „/“ eingestellt wurde, als Name für das rootElement übernommen. Ist kein solches Formular vorhanden, wird das reservierte Schlüsselwort **fs_dummy_root** als Name für das rootElement verwendet.
 
-## Formularsatz in der AEM Forms-App {#formset-in-workspace-app}
+## Formularsatz in der AEM Forms-App  {#formset-in-workspace-app}
 
 Die AEM Forms-App ermöglicht es Außendienstmitarbeitern, ihre Mobilgeräte mit einem AEM Forms-Server zu synchronisieren und Aufgaben zu bearbeiten. Die Anwendung funktioniert nahtlos, wenn das Gerät offline ist, da Daten lokal auf dem Gerät gespeichert werden. Unter Verwendung von Anmerkungen wie Fotos können Außendienstmitarbeiter genaue Informationen bereitstellen, die in den Geschäftsprozess integriert werden können.
 
