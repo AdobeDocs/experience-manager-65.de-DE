@@ -12,6 +12,9 @@ discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 96%
 
 ---
 
@@ -130,7 +133,7 @@ So personalisieren Sie einen Newsletter und simulieren das Erscheinungsbild:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -218,7 +221,7 @@ Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Lis
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versand der Newsletter die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -253,7 +256,7 @@ So versenden Sie einen Newsletter aus einer Kampagne:
    >
    >Stellen Sie sicher, dass Sie einer der Empfänger sind, um auf diese Weise sicherzustellen, dass der Newsletter versandt wurde.
 
-### Senden von Newslettern aus einer Liste heraus {#sending-newsletters-from-a-list}
+### Senden von Newslettern aus einer Liste heraus  {#sending-newsletters-from-a-list}
 
 So versenden Sie einen Newsletter aus einer Liste:
 
@@ -283,7 +286,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
 In diesem Abschnitt wird beschrieben, wie Sie einen Newsletter abonnieren können.
 
-### Abonnieren von Newslettern {#subscribing-to-a-newsletter-1}
+### Abonnieren von Newslettern  {#subscribing-to-a-newsletter-1}
 
 Gehen Sie folgendermaßen vor, um einen Newsletter zu abonnieren (als Beispiel wird die Geometrixx-Website verwendet):
 
