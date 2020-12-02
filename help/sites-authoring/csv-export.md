@@ -12,6 +12,9 @@ discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 86%
 
 ---
 
@@ -39,7 +42,7 @@ Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in ein
       * Workflow
    * Übersetzung
       * Übersetzt
-   * Analytik
+   * Analyse
       * Seitenansichten
       * Individuelle Besucher
       * Zeit auf Seite
@@ -53,7 +56,7 @@ Die resultierende Datei `export.csv` kann in Excel (oder einer anderen kompatibl
 
 ![etc-01](assets/etc-01.png)
 
-The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+Die Option zum Erstellen eines **CSV-Berichts** ist verfügbar, wenn Sie in der Konsole **Sites** (in Liste-Ansicht) navigieren: Es handelt sich um eine Option im Dropdownmenü **Erstellen**:
 
 ![etc-02](assets/etc-02.png)
 
