@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 80%
+ht-degree: 86%
 
 ---
 
 
 # ContextHub{#contexthub}
 
-ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Die clientseitige JavaScript-API ermöglicht Ihnen den Zugriff auf die Daten zur Personalisierung von Inhalten.
+ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Die Client-seitige JavaScript-API ermöglicht Ihnen den Zugriff auf die Daten zur Personalisierung von Inhalten.
 
 >[!NOTE]
 >
@@ -28,28 +28,28 @@ ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextda
 
 >[!CAUTION]
 >
->The path containing the sample ContextHub configuration that is used by the [We.Retail reference implementation](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) should only be used as a reference for creating your own configuration.
+>Der Pfad, der die von der [We.Retail-Referenz-Implementierung](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) verwendete ContextHub-Beispielkonfiguration enthält, sollte nur als Referenz zum Erstellen Ihrer eigenen Konfiguration verwendet werden.
 >
 >Es sollte nicht in einem Projekt als Ihre eigene ContextHub-Konfiguration verwendet werden.
 
 ## Persistenz {#persistence}
 
-ContextHub speichert persistente Kontextdaten auf dem Client. Die ContextHub JavaScript-API ermöglicht Ihnen den Zugriff auf Stores, um Daten nach Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
+ContextHub speichert persistente Kontextdaten auf dem Client. Mit der ContextHub-JavaScript-API können Sie auf Speicher zugreifen, um Daten bei Bedarf zu erstellen, zu aktualisieren und zu löschen. Daher stellt ContextHub eine Datenschicht auf Ihren Seiten dar.
 
 Jeder ContextHub-Speicher ist eine Instanz eines vordefinierten Speichertyps:
 
 * [ContextHub stellt verschiedene Beispielspeicherarten bereit](/help/sites-developing/ch-samplestores.md).
 * Verwenden Sie AEM-Konsolen zum [Erstellen von Speichern](ch-configuring.md#creating-a-contexthub-store).
-* Entwickler können [benutzerdefinierte Speichertypen erstellen](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
+* Entwickler können [anwenderdefinierte Speichertypen erstellen](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Entwickler können auf die [gespeicherten Daten](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) über JavaScript zugreifen.
 
-## Segmentierung {#segmentation}
+## Segmentierung  {#segmentation}
 
 ContextHub enthält eine Segmentations-Engine, die Segmente verwaltet und bestimmt, welche Segmente für den aktuellen Kontext aufgelöst werden. Mehrere Segmente sind definiert. Sie können die Javascript-API verwenden, um [aufgelöste Segmente zu ermitteln](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 
 ## Präsentation {#presentation}
 
-Die [ContextHub-Symbolleiste](/help/sites-authoring/ch-previewing.md) ermöglicht es Vermarktern und Autoren, gespeicherte Daten zu sehen und zu manipulieren, um die Benutzererfahrung beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von UI-Modulen, die den Zugriff auf ContextHub-Speicher ermöglichen.
+Die [ContextHub-Symbolleiste](/help/sites-authoring/ch-previewing.md) ermöglicht es Marketern und Autoren, gespeicherte Daten anzuzeigen und zu bearbeiten, um das Anwendererlebnis beim Erstellen von Seiten zu simulieren. Die Symbolleiste besteht aus Gruppen von UI-Modulen, die den Zugriff auf ContextHub-Speicher ermöglichen.
 
 Jedes ContextHub-UI-Modul ist eine Instanz eines vordefinierten Modultyps:
 
