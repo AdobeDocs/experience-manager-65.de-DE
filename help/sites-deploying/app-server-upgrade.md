@@ -12,6 +12,9 @@ discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +57,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
 
 1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
 
-   1. Open the file located at `crx-quickstart/launchpad/sling.properties`
+   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties`
    1. Entfernen Sie die folgenden Eigenschaften und speichern Sie die Datei:
 
       1. `sling.installer.dir`
@@ -100,14 +103,15 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
+
    Diese zwei Dateien legen fest, dass AEM einen „TarMK“-Knotenspeicher und einen „File“-Datenspeicher verwendet.
 
 1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Gehen Sie dazu folgendermaßen vor:
 
-   * Add the following line to **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:\
+   * hinzufügen Sie die folgende Zeile in **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:\
       `customBlobStore=true`
 
-   * Then add the following lines to **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+   * Fügen Sie dann die folgenden Zeilen zu **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config** hinzu:
 
       ```
       path=./crx-quickstart/repository/datastore
