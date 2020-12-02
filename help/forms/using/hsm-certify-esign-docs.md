@@ -46,11 +46,11 @@ Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie die fol
 
 1. Beenden Sie die Autoreninstanz Ihrer AEM Forms-Umgebung.
 
-1. Open the [AEM_root]\crx-quickstart\conf\sling.properties file for editing.
+1. Öffnen Sie die Datei [AEM_root]\crx-quickstart\conf\sling.properties zur Bearbeitung.
 
    >[!NOTE]
    >
-   >If you have used the [AEM_root]\crx-quickstart\bin\start.bat file to start the AEM instance, then open the [AEM_root]\crx-quickstart\sling.properties file for editing.
+   >Wenn Sie die Datei [AEM_root]\crx-quickstart\bin\start.bat zum Beginn der AEM verwendet haben, öffnen Sie die Datei [AEM_root]\crx-quickstart\sling.properties zur Bearbeitung.
 
 1. Fügen Sie der Datei „sling.properties“ die folgenden Eigenschaften hinzu oder ersetzen Sie sie:
 
@@ -75,13 +75,13 @@ Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
 1. Klicken Sie auf der Seite **Edit User Settings** (Benutzereinstellungen bearbeiten) auf **KeyStore verwalten**.
 
-1. On KeyStore Management dialog, expand the **Add Private Key from Key Store file** option and provide an alias. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
-1. To upload the certificate file, click **Select Key Store File** and upload a `.pfx` file.
+1. Erweitern Sie im Dialogfeld KeyStore-Verwaltung die Option **Hinzufügen privaten Schlüssel aus Key Store-Datei** und geben Sie einen Alias an. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
+1. Um die Zertifikatdatei hochzuladen, klicken Sie auf **Key Store-Datei** auswählen und laden Sie eine `.pfx`-Datei hoch.
 1. Fügen Sie die Werte für **Key Store Password** (KeyStore-Kennwort),**Private Key Password** (Kennwort für privaten Schlüssel)  und **Private Key Alias**(Alias des privaten Schlüssels) für das Zertifikat in den jeweiligen Feldern hinzu. Klicken Sie auf **Übermitteln**.
 
    >[!NOTE]
    >
-   >To determine the P **rivate Key Alias** of a certificate, you can use the Java keytool command: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >Um den Alias für den P **privaten Schlüssel** eines Zertifikats zu ermitteln, können Sie den Java-Keytool-Befehl verwenden: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ Der Aliasname enthält alle Parameter, die ein HSM oder eToken erfordert. Befolg
 
    Klicken Sie auf **Speichern**. Das Hardware-Sicherheitsmodul ist für AEM Forms konfiguriert. Jetzt können Sie das Hardware-Sicherheitsmodul mit AEM Forms verwenden, um Dokumente zu signieren oder zu zertifizieren.
 
-## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines auf dem Gerät gespeicherten Dokuments mit digitalem Schlüssel  {#programatically}
+## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines auf dem Gerät gespeicherten Dokuments mit digitalem Schlüssel   {#programatically}
 
 Der folgende Beispielcode verwendet ein HSM oder eToken, um ein Dokument zu signieren oder zertifizieren.
 
