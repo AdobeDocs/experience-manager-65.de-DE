@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 91%
 
 ---
 
@@ -70,4 +73,4 @@ We.Retail verfügt über eine globalisierte Site-Struktur, die Sprach-Master auf
 
 ## Weiterführende Informationen {#further-information}
 
-For further information, refer to the authoring document [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for complete technical details.
+Weitere Informationen finden Sie im Authoring-Dokument [Übersetzung von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).
