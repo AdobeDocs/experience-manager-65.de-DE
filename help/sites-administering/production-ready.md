@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 83%
 
 ---
 
 
 # Ausführung von AEM im produktionsbereiten Modus{#running-aem-in-production-ready-mode}
 
-With AEM 6.1, Adobe introduces the new `"nosamplecontent"` runmode aimed at automating the steps required to prepare an AEM instance for deployment in a production environment.
+Mit AEM 6.1 führt Adobe den neuen Ausführungsmodus `"nosamplecontent"` ein, mit dem die Schritte automatisiert werden sollen, die zum Vorbereiten einer AEM Instanz für die Bereitstellung in einer Produktionsumgebung erforderlich sind.
 
 Der neue Ausführungsmodus konfiguriert nicht nur automatisch die Instanz, um die in der Sicherheitsprüfliste beschriebenen Best Practices für die Sicherheit einzuhalten, sondern entfernt darüber hinaus alle Geometrixx-Beispielsanwendungen und -konfigurationen innerhalb des Prozesses.
 
@@ -29,7 +32,7 @@ Der neue Ausführungsmodus konfiguriert nicht nur automatisch die Instanz, um di
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-In order to run AEM in production ready mode all you need to do is add the `nosamplecontent` via the `-r` runmode switch to your existing startup arguments:
+Um AEM im produktionsfertigen Modus auszuführen, müssen Sie nur `nosamplecontent` über den `-r` Runmode-Switch zu Ihren vorhandenen Startargumenten hinzufügen:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -58,19 +61,19 @@ Genauer gesagt werden die folgenden Konfigurationsveränderungen durchgeführt, 
 
 1. **Der Adobe Granite HTML Library Manager** ist mit den folgenden Einstellungen konfiguriert:
 
-   1. **** Minimieren: `enabled`
+   1. **Minimieren:** `enabled`
    1. **Debug:** `disabled`
-   1. **** Gzip: `enabled`
-   1. **** Zeit: `disabled`
+   1. **Gzip:** `enabled`
+   1. **Zeit:** `disabled`
 
 1. Das **Apache Sling Get Servlet** ist so eingestellt, dass es sichere Konfigurationen standardmäßig unterstützt, so zum Beispiel wie folgt:
 
 | **Konfiguration** | **Autor** | **Veröffentlichen** |
 |---|---|---|
-| TXT-Darstellung | disabled | disabled |
-| HTML-Darstellung | disabled | disabled |
+| TXT-Darstellung | disabled | deaktiviert |
+| HTML-Darstellung | deaktiviert | deaktiviert |
 | JSON-Darstellung | enabled | enabled |
-| XML-Darstellung | disabled | disabled |
+| XML-Darstellung | deaktiviert | deaktiviert |
 | json.maximumresults | 1000 | 100 |
-| Auto-Index | disabled | disabled |
+| Auto-Index | deaktiviert | deaktiviert |
 
