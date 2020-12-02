@@ -11,22 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 90%
 
 ---
 
 
 # User Management für einen SSL-aktivierten LDAP-Server konfigurieren {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-Damit die Synchronisierung ordnungsgemäß über LDAPS erfolgen kann, müssen die von einer Zertifizierungsstelle ausgestellten LDAP-Zertifikate in der JRE-Umgebung (Java Runtime Environment) des Anwendungsservers vorhanden sein. Import the certificate into the application server’s JRE cacerts file, which is usually in the *[JAVA_HOME]*/jre/lib/security/cacerts directory.
+Damit die Synchronisierung ordnungsgemäß über LDAPS erfolgen kann, müssen die von einer Zertifizierungsstelle ausgestellten LDAP-Zertifikate in der JRE-Umgebung (Java Runtime Environment) des Anwendungsservers vorhanden sein. Importieren Sie das Zertifikat in die JRE-Datei &quot;cacerts&quot;des Anwendungsservers, die sich normalerweise im Ordner &quot;*[JAVA_HOME]*/jre/lib/security/cacerts&quot;befindet.
 
 1. Aktivieren Sie SSL auf dem Ordnerserver. Weitere Informationen finden Sie in der Dokumentation des Ordneranbieters.
 1. Exportieren Sie ein Clientzertifikat vom Ordnerserver.
 1. Verwenden Sie das Programm Keytool, um die Datei mit dem Clientzertifikat in den standardmäßigen JVM-Zertifikatspeicher (Java Virtual Machine™) des AEM Forms-Anwendungsservers zu importieren . Das hierfür verwendete Verfahren ist von den Installationspfaden für JVM und Client abhängig. Wenn Sie z. B. BEA WebLogic Server mit JDK 1.5 verwenden, geben Sie an einer Eingabeaufforderung Folgendes ein:
 
-   `keytool -import -alias`*alias *`-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
+   `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. Geben Sie auf Anforderung das Kennwort ein. (Für Java lautet das Standardkennwort `changeit`.) In einer Meldung wird angezeigt, dass das Zertifikat erfolgreich importiert wurde.
-1. When prompted, type `Yes` to trust the certificate.
+1. Geben Sie bei Aufforderung `Yes` ein, um dem Zertifikat zu vertrauen.
 1. Aktivieren Sie SSL in User Management, wählen Sie beim Konfigurieren der Ordnereinstellungen für die Option SSL die Einstellung „Ja“ und ändern Sie die Anschlusseinstellung entsprechend. Der Standardanschluss ist 636.
 
 >[!NOTE]
