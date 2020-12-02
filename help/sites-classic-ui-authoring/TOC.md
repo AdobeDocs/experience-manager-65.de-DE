@@ -14,7 +14,7 @@ ht-degree: 84%
 ---
 
 
-# AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
+# AEM 6.5 Classic UI Authoring-Benutzerhandbuch {#classic-ui}
 
 + [Überblick über das Authoring der klassischen Benutzeroberfläche](home.md)
 + Einführung in das Authoring der klassischen Benutzeroberfläche {#introduction}
@@ -59,7 +59,7 @@ ht-degree: 84%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung   {#personalization}
++ Personalisierung  {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnen-Management](classic-personalization-campaigns.md)
    + [Einstiegsseiten](classic-personalization-campaigns-landingpage.md)
@@ -78,7 +78,7 @@ ht-degree: 84%
    + [Adobe Campaign-Komponenten](classic-personalization-ac-components.md)
    + [Targeting von Adobe Campaign](classic-personalization-ac-target.md)
    + [Erstellen von Adobe Campaign-Formularen in AEM](classic-personalization-ac-forms.md)
-+ Assets-Authoring in der klassischen Benutzeroberfläche {#assets}
++ Assets Authoring in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](classicui-assets.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
