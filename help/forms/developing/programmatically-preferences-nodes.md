@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 In diesem Thema wird beschrieben, wie Sie die Voreinstellungs-Nodes programmgesteuert mit der Voreinstellungen Manager Service API (Java) verwalten können.
 
-Sie können die Konfigurationseinstellungen in der Benutzeroberfläche des Administrators manuell ändern. Um die Optionen zu ändern, navigieren Sie zu `Home>Settings>User Management> Configuration>Manual Configuration`. Importieren Sie `config.xml` nach den Änderungen, Sie werden feststellen, dass alle Änderungen mit Ausnahme der am Knoten vorgenommenen Änderungen verloren gehen `/Adobe/Adobe Experience Manager Forms/Config/UM persist` . Die Vorschau von User Management Import und Export unterstützt keine Änderung der Konfigurationseinstellungen für andere Komponenten. Nun können diese Änderungen mithilfe von `PreferencesManagerServiceClient` APIs vorgenommen werden.
+Sie können die Konfigurationseinstellungen in der Benutzeroberfläche des Administrators manuell ändern. Um die Optionen zu ändern, navigieren Sie zu `Home>Settings>User Management> Configuration>Manual Configuration`. Importieren Sie `config.xml`, nachdem Sie die Änderungen vorgenommen haben, werden Sie feststellen, dass alle Änderungen mit Ausnahme der an Knoten `/Adobe/Adobe Experience Manager Forms/Config/UM persist` vorgenommenen Änderungen verloren gehen. Die Vorschau von User Management Import und Export unterstützt keine Änderung der Konfigurationseinstellungen für andere Komponenten. Nun können diese Änderungen mit `PreferencesManagerServiceClient`-APIs vorgenommen werden.
 
 **Zusammenfassung der** SchritteSo verwalten Sie die Voreinstellungsknoten programmgesteuert:
 
