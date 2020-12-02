@@ -11,6 +11,9 @@ topic-tags: administering-on-demand-services-app
 discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 51%
 
 ---
 
@@ -25,15 +28,15 @@ In diesem Kapitel werden die Benutzerrollen und die Konfiguration der Benutzer u
 
 ## AEM Mobile-Anwendungsbenutzer und Gruppenverwaltung {#aem-mobile-application-users-and-group-administration}
 
-### AEM Mobile Application Content Authors (app-author group) {#aem-mobile-application-content-authors-app-author-group}
+### AEM Mobile Application Content Authors (App-Autorengruppe) {#aem-mobile-application-content-authors-app-author-group}
 
-Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobile-Anwendungsinhalten einschließlich Seiten, Text, Bilder und Videos verantwortlich.
+Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte mobiler Anwendungen zuständig, einschließlich Seiten, Text, Bilder und Videos.
 
 #### Gruppenkonfiguration: app-authors {#group-configuration-app-authors}
 
 1. Erstellen Sie eine neue Benutzergruppe mit dem Namen „app-authors“:
 
-   Navigate to the User Admin Console: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Navigieren Sie zur Admin Console &quot;Benutzer&quot;: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Wählen Sie in der Benutzergruppenkonsole das Plussymbol, um die Gruppe zu erstellen.
 
@@ -47,7 +50,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobil
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Im Folgenden können Sie der AEM Content Authors-Gruppe hinzufügen:
+1. Im Folgenden können Sie AEM Inhaltsautorengruppe hinzufügen:
 
    (Lesen) am
 
@@ -58,7 +61,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring von AEM Mobil
 
 ### AEM Mobile Application Administrators Group (app-admins group) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Members of the app-admins group can author application content with the same permissions included with app-authors **AND** in addition are also responsible for:
+Mitglieder der Gruppe &quot;app-admins&quot; können Anwendungsinhalte mit den gleichen Berechtigungen erstellen, die auch bei den App-Autoren **UND** vorhanden sind. Außerdem sind auch für Folgendes zuständig:
 
 * Staffeln, Veröffentlichen und Löschen von OTA-Anwendungsaktualisierungen über die Inhaltssynchronisierung
 
@@ -75,13 +78,14 @@ Members of the app-admins group can author application content with the same per
 
    * content-authors
    * workflow-users
+
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
    >[!NOTE]
    >
    >Nur Mitglieder der Gruppe „workflow-users“ können die Aktion „Remote-Build“ für den PhoneGap Build-Dienst ausführen.
 
-1. Navigate to the [Permissions console](http://localhost:4502/useradmin) and add permissions to administer cloudservices
+1. Navigieren Sie zur Konsole [Berechtigungen](http://localhost:4502/useradmin) und fügen Sie Berechtigungen zum Verwalten von Cloudservices hinzu.
 
    * (Lesen, Verändern, Erstellen, Löschen, Replizieren) für „/etc/cloudservices/mobileservices“
 
@@ -89,6 +93,7 @@ Members of the app-admins group can author application content with the same per
 
    * (Lesen, Verändern, Erstellen, Löschen, Replizieren) für „/etc/packages/mobileapp“
    * (Lesen) für „/var/contentsync“
+
    >[!NOTE]
    >
    >Die Paketreplikation wird verwendet, um Anwendungsaktualisierungen aus der Erstellungsinstanz in der Veröffentlichungsinstanz zu veröffentlichen.
@@ -108,7 +113,7 @@ Members of the app-admins group can author application content with the same per
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
-Weitere Informationen zu den beiden anderen Rollen und Verantwortlichkeiten beim Erstellen einer AEM Mobile-On-Demand-Dienste-App finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu den beiden anderen Rollen und Verantwortlichkeiten beim Erstellen einer AEM Mobile On-demand Services-App finden Sie in den folgenden Ressourcen:
 
-* [Entwickeln von AEM Content für AEM Mobile-On-Demand-Dienste](/help/mobile/aem-mobile-on-demand.md)
-* [Authoring von AEM Content für AEM Mobile On-Demand Services-App](/help/mobile/mobile-apps-ondemand.md)
+* [Entwickeln von AEM für AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Authoring AEM Inhalte für AEM Mobile On-demand Services-Apps](/help/mobile/mobile-apps-ondemand.md)
