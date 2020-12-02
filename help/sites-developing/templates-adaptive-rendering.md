@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Das Rendering von adaptiven Vorlagen bietet eine Möglichkeit, eine Seite mit Variationen zu verwalten. Ursprünglich sollte diese Funktion verschiedene HTML-Ausgaben für mobile Geräte bereitstellen (z. B. für Feature- und für Smartphones). Sie ist auch dann nützlich, wenn Erlebnisse für verschiedene Geräte bereitgestellt werden sollen, die unterschiedliche Markup- oder HTML-Ausgaben erfordern.
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Vorlagen werden im Allgemeinen auf einem responsiven Raster aufgebaut. Seiten, die basierend auf diesen Vorlagen erstellt wurden, sind vollständig responsiv und passen sich automatisch an das Ansichtsfenster des Client-Geräts an. Über die Emulator-Symbolleiste im Seiten-Editor können Autoren Layouts für bestimmte Geräte festlegen.
 
@@ -42,7 +45,7 @@ Selektoren für das adaptive Rendering können Sie für vorhandene Gerätegruppe
 
 Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones** so, dass sie einen Selektor für das adaptive Rendering als Teil der Vorlage **Erlebnisseite** in We.Retail aufweisen.
 
-1. Edit the device group that requires an adaptive selector in `http://localhost:4502/miscadmin#/etc/mobile/groups`
+1. Bearbeiten Sie die Gerätegruppe, die einen adaptiven Selektor in `http://localhost:4502/miscadmin#/etc/mobile/groups` erfordert
 
    Aktivieren Sie die Option **Emulator deaktivieren** und speichern Sie diese Einstellung.
 
@@ -62,7 +65,7 @@ Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Using CRX DE Lite, allow the device group to be used on your site by adding it to the multi-value string property `cq:deviceGroups` on the structure of your site.
+1. Lassen Sie die Gerätegruppe mithilfe von CRX DE Lite auf Ihrer Site zu, indem Sie sie der Zeichenfolgeneigenschaft mit mehreren Werten `cq:deviceGroups` in der Struktur Ihrer Site hinzufügen.
 
    `/content/<your-site>/jcr:content`
 
@@ -74,7 +77,7 @@ Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones
 
 Wenn Sie nun den [Emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) im Seiten-Editor verwenden (z. B. beim [Bearbeiten des Layouts](/help/sites-authoring/responsive-layout.md)) und ein Gerät der konfigurierten Gerätegruppe auswählen, wird die Seite mit einem Selektor als Teil der URL gerendert.
 
-In our example, when editing a page based on the **Experience Page** template, and choosing iPhone 4 in the emulator, the page is rendered including the selector as `arctic-surfing-in-lofoten.smart.html` instead of `arctic-surfing-in-lofoten.html`
+In unserem Beispiel wird die Seite beim Bearbeiten einer Seite, die auf der Vorlage **Erlebnisseite** basiert, und beim Auswählen von iPhone 4 im Emulator mit der Auswahl als `arctic-surfing-in-lofoten.smart.html` anstelle von `arctic-surfing-in-lofoten.html` gerendert.
 
 Die Seite lässt sich auch direkt über diesen Selektor auswählen.
 
