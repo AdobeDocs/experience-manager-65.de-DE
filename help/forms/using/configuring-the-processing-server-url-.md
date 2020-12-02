@@ -11,6 +11,9 @@ discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 61%
 
 ---
 
@@ -31,9 +34,9 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 1. Öffnen Sie Configuration Manager mithilfe der URL in der Veröffentlichungsinstanz:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![AEM Web Console-Konfiguration](assets/web_configuration_console_new.png)
+   ![AEM Web-Konsolenkonfiguration](assets/web_configuration_console_new.png)
 
-1. In the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** window, locate and click the **[!UICONTROL AEM DS Settings]** option.
+1. Suchen Sie im Fenster **[!UICONTROL Adobe Experience Manager Web Console Configuration]** die Option **[!UICONTROL AEM DS Settings]** und klicken Sie darauf.
 
    ![DS-Einstellungen](assets/ds_settings_new.png)
 
@@ -43,9 +46,9 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 
 1. Fügen Sie die folgenden Informationen in die entsprechenden Felder ein:
 
-   **[!UICONTROL Verarbeitungsserver-URL]**: Der Verarbeitungsserver ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der AEM-Autoreninstanz oder der anderen Server-URL (d. h. https://localhost:port/) identisch sein.
+   **[!UICONTROL Verarbeitungsserver-URL]**: Der Verarbeitungsserver ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der Instanz im Autorenmodus oder der anderen Server-URL (AEM) identisch sein.
 
-   **[!UICONTROL Verarbeitungsserver-Benutzername]**: Benutzername des Workflow-Benutzers [basierend auf der verwendeten Server-URL]
+   **[!UICONTROL Verarbeitungsserver-Benutzername]**: Benutzername des Workflow-Benutzers  [basierend auf der verwendeten Server-URL]
 
    **[!UICONTROL Verarbeitungs-Serverkennwort]**: Das Kennwort des Workflow-Benutzers
 
