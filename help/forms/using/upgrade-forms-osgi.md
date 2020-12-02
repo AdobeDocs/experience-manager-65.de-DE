@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '955'
-ht-degree: 63%
+ht-degree: 67%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 63%
 
 Sie können direkt von AEM 6.3 Forms und AEM 6.4 Forms auf AEM 6.5 Forms aktualisieren.
 
-Direct upgrade path from **AEM 6.0 Forms, AEM 6.1 Forms**, and **AEM 6.2 Forms** to AEM 6.5 Forms is not available. Perform an intermediate [upgrade to AEM 6.2 Forms](https://helpx.adobe.com/de/experience-manager/6-2/forms/using/upgrade.html), [upgrade to AEM 6.3 Forms](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/upgrade.html), or [upgrade to AEM 6.4 Forms](/help/forms/using/upgrade.md) and then upgrade from AEM 6.3 Forms, or AEM 6.4 Forms to AEM 6.5 Forms.
+Der direkte Aktualisierungspfad von **AEM 6.0 Forms, AEM 6.1 Forms** und **AEM 6.2 Forms** auf AEM 6.5 Forms ist nicht verfügbar. Führen Sie ein Zwischen-Upgrade auf AEM 6.2 Forms](https://helpx.adobe.com/de/experience-manager/6-2/forms/using/upgrade.html), [auf AEM 6.3 Forms](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/upgrade.html) oder [Upgrade auf AEM 6.4 Forms](/help/forms/using/upgrade.md) durch und aktualisieren Sie dann von AEM 6.3 Forms oder AEM 6.4 Forms auf AEM 6.5.[
 
 Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms auf AEM 6.5 Forms zu aktualisieren:
 
@@ -35,26 +35,26 @@ Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms 
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Upgrade your AEM instance to AEM 6.3. For step by step instructions, see [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md).
+   1. Aktualisieren Sie Ihre AEM auf AEM 6.3. Eine schrittweise Anleitung finden Sie unter [Upgrade auf AEM 6.5](/help/sites-deploying/upgrade.md).
 
       Bevor Sie mit den nächsten Schritten fortfahren, warten Sie, bis die Nachrichten ServiceEvent REGISTERED und ServiceEvent UNREGISTERED ServiceEvent nicht mehr in der Datei &lt;crx-repository>/error.log angezeigt werden.
 
       >[!NOTE]
       >
-      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. The bundles are listed at https://&#39;[server]:[port]&#39;/system/console/.
+      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. Die Bundles sind unter https://&#39;[server]:[port]&#39;/system/console/ aufgeführt.
 
 1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
 
-   1. Open [Software Distribution](https://experience.adobe.com/downloads). Sie benötigen eine Adobe ID, um sich bei der Softwareverteilung anzumelden.
-   1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** , der im Kopfzeilenmenü verfügbar ist.
-   1. In the **[!UICONTROL Filters]** section:
-      1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** .
-      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads]** suchen filtern.
-   1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie &quot;Endbenutzer-Lizenzbedingungen **[!UICONTROL akzeptieren&quot;]** und klicken Sie auf &quot; **[!UICONTROL Herunterladen]**&quot;.
-   1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf Paket **[!UICONTROL hochladen]** , um das Paket hochzuladen.
-   1. Select the package and click **[!UICONTROL Install]**.
+   1. Öffnen Sie [Software-Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
+   1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
+   1. Im Abschnitt **[!UICONTROL Filter]**:
+      1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
+      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können die Ergebnisse auch mit der Option **[!UICONTROL Downloads suchen]** filtern.
+   1. Tippen Sie auf den Paketnamen, der auf Ihr Betriebssystem zutrifft, wählen Sie **[!UICONTROL EULA-Begriffe akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
+   1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+   1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-      Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+      Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms Releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
 
       >[!NOTE]
       >
@@ -66,7 +66,7 @@ Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms 
 
    * **Migrationsdienstprogramm ausführen**
 
-      Das Migrationsdienstprogramm macht die adaptiven Formulare und Correspondence Management-Assets aus früheren Versionen kompatibel mit AEM 6.5 Forms. Sie können das Dienstprogramm von der AEM-Softwareverteilung herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](../../forms/using/migration-utility.md).
+      Das Migrationsdienstprogramm macht die adaptiven Formulare und Correspondence Management-Assets aus früheren Versionen kompatibel mit AEM 6.5 Forms. Sie können das Dienstprogramm von AEM Software Distribution herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](../../forms/using/migration-utility.md).
 
       Wenn Sie [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) mit der Datenbank verwenden und von einer früheren Version aktualisieren, führen Sie nach der Aktualisierung die folgenden SQL-Abfragen aus:
 
@@ -88,10 +88,10 @@ Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms 
 
    * **Unterstützung für jQuery**
 
-      In AEM 6.5 Forms wird die Version von jQuery auf 3.2.1 aktualisiert und die jQuery UI-Version auf 1.12.1 aktualisiert. AEM Form verwendet JQuery im **Modus &quot;Keine Konflikte** &quot;. Wenn Sie also eine andere jQuery-Version verwenden, werden während der Aktualisierung keine Probleme angezeigt. Wenn Sie jedoch auf AEM 6.5 Forms aktualisieren:
+      In AEM 6.5 Forms wird die Version von jQuery auf 3.2.1 aktualisiert und die jQuery UI-Version auf 1.12.1 aktualisiert. AEM Formular verwendet JQuery im Modus **noConflict**. Wenn Sie also eine andere jQuery-Version verwenden, werden während der Aktualisierung keine Probleme angezeigt. Wenn Sie jedoch auf AEM 6.5 Forms aktualisieren:
 
       * Stellen Sie sicher, dass Ihre benutzerdefinierten Komponenten, falls vorhanden, mit unterstützten jQuery-Versionen kompatibel sind.
-      * Entfernen Sie nicht unterstützte APIs aus den benutzerdefinierten Komponenten. Informationen zur Liste entfernter APIs finden Sie im [Aktualisierungshandbuch](https://jquery.com/upgrade-guide/3.0/) . Beispielsweise wird die Unterstützung für die APIs load(), .unload() und .error() entfernt. Verwenden Sie die Methode .on() anstelle der oben genannten APIs. Ändern Sie beispielsweise $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
+      * Entfernen Sie nicht unterstützte APIs aus den benutzerdefinierten Komponenten. Die Liste entfernter APIs finden Sie unter [Upgrade-Handbuch](https://jquery.com/upgrade-guide/3.0/). Beispielsweise wird die Unterstützung für die APIs load(), .unload() und .error() entfernt. Verwenden Sie die Methode .on() anstelle der oben genannten APIs. Ändern Sie beispielsweise $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
    * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Analysen und Berichte neu**
 
       In AEM 6.4 Forms stehen keine Traffic-Variablen für Quelle und Erfolgsereignis für Impressionen zur Verfügung. Wenn Sie von AEM 6.2 Forms oder vorherigen Versionen aktualisieren, sendet AEM Forms daher keine Daten mehr an den Adobe Analytics-Server und es stehen keine Analyseberichte für adaptive Formulare zur Verfügung. Darüber hinaus werden mit AEM 6.4 Forms Traffic-Variablen für die Version der Formularanalyse und das Erfolgsereignis mit Angabe der Dauer der Aktivität in einem Feld eingeführt. Konfigurieren Sie daher die Analysen und Berichte erneut für Ihre AEM Forms-Umgebung. Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analyse und Berichten](../../forms/using/configure-analytics-forms-documents.md).
@@ -108,5 +108,5 @@ Führen Sie die folgenden Schritte aus, um von AEM 6.3 Forms oder AEM 6.4 Forms 
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
-   In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Wenn Sie von 6.3 Forms auf AEM 6.5 Forms aktualisieren, verwenden Sie die geänderten Pfade zur Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Wenn Sie ein Upgrade von 6.3 Forms auf AEM 6.5 Forms durchführen, verwenden Sie die geänderten Pfade zur Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 
