@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
 source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 53%
 
 ---
 
@@ -73,9 +76,9 @@ Die folgenden Aktionen werden von der REST-API unterstützt:
 >
 >Mit Firebug, einer Firefox-Erweiterung für die Webentwicklung, können Sie den HTTP-Traffic verfolgen, während die Konsole in Betrieb ist. Sie können beispielsweise mit einer `POST`-Anfrage die Parameter und Werte prüfen, die an den AEM-Server gesendet werden.
 
-In this page it is assumed that AEM runs on localhost at port `4502` and that the installation context is &quot; `/`&quot; (root). Wenn dies nicht auf Ihre Installation zutrifft, müssen die URIs für die HTTP-Anfragen entsprechend angepasst werden.
+Auf dieser Seite wird davon ausgegangen, dass AEM auf localhost am Port `4502` ausgeführt wird und dass der Installationskontext &quot; `/`&quot; (root) lautet. Wenn dies nicht auf Ihre Installation zutrifft, müssen die URIs für die HTTP-Anfragen entsprechend angepasst werden.
 
-Als Rendering-Methode wird für `GET`-Anfragen JSON-Rendering unterstützt. The URLs for `GET` should have the `.json` extension, for example:
+Als Rendering-Methode wird für `GET`-Anfragen JSON-Rendering unterstützt. Die URLs für `GET` müssen die Erweiterung `.json` aufweisen, z. B.:
 
 `http://localhost:4502/etc/workflow.json`
 
@@ -89,7 +92,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen</td>
+   <td>Aktionen   </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -97,7 +100,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Erstellt eine neue Workflow-Instanz. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> Die Nutzlast wird als Parameter gesendet <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
+   <td><p>Erstellt eine neue Workflow-Instanz. Die Parameter lauten:<br /> - <code>model</code>: die ID (URI) des jeweiligen Workflow-Modells<br /> - <code>payloadType</code>: enthält den Nutzlasttyp (z. B. <code>JCR_PATH</code> oder URL).<br /> Die Nutzlast wird als Parameter gesendet  <code>payload</code>. Eine <code>201</code>-Antwort (<code>CREATED</code>) wird mit einer Ortsüberschrift zurückgesendet, die die URL der neuen Workflow-Instanzressource enthält.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -108,9 +111,9 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| HTTP-Anforderungsmethode | Aktionen |
+| HTTP-Anforderungsmethode | Aktionen    |
 |---|---|
-| `GET` | Listen der verfügbaren Workflow-Instanzen und deren Status ( `RUNNING`, `SUSPENDED``ABORTED` oder `COMPLETED`) |
+| `GET` | Liste der verfügbaren Workflow-Instanzen und deren Status ( `RUNNING`, `SUSPENDED`, `ABORTED` oder `COMPLETED`) |
 
 #### Verwaltung einer Workflow-Instanz nach ID {#managing-a-workflow-instance-by-its-id}
 
@@ -122,7 +125,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen</td>
+   <td>Aktionen   </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -130,7 +133,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Ändert den Status der Instanz. Der neue Status wird als Parameter gesendet <code>state</code> und muss einen der folgenden Werte aufweisen: <code>RUNNING</code>, <code>SUSPENDED</code>oder <code>ABORTED</code>.<br /> Wenn der neue Status nicht erreichbar ist (z. B. beim Aussetzen einer beendeten Instanz), wird eine <code>409</code> (<code>CONFLICT</code>) Antwort an den Client zurückgesendet.</td>
+   <td>Ändert den Status der Instanz. Der neue Status wird als Parameter <code>state</code> gesendet und muss einen der folgenden Werte aufweisen: <code>RUNNING</code>, <code>SUSPENDED</code> oder <code>ABORTED</code>.<br /> Wenn der neue Status nicht erreichbar ist (z. B. beim Aussetzen einer beendeten Instanz), wird eine  <code>409</code> (<code>CONFLICT</code>) Antwort an den Client zurückgesendet.</td>
   </tr>
  </tbody>
 </table>
@@ -145,7 +148,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen</td>
+   <td>Aktionen   </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -153,12 +156,12 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Erstellt ein neues Workflow-Modell. If the parameter <code>title</code> is sent, a new model is created with the specified title. Attaching a JSON model definition as parameter <code>model</code> creates a new workflow model according to the provided definition.<br /> Eine <code>201</code> Antwort (<code>CREATED</code>) wird mit einer Kopfzeile mit der URL der neuen Ressource des Workflow-Modells zurückgesendet.<br /> Dasselbe passiert, wenn eine Modelldefinition als Dateiparameter namens <code>modelfile</code>.<br /> Sowohl bei den Parametern <code>model</code> als auch bei den <code>modelfile</code> Parametern ist ein zusätzlicher Parameter erforderlich, der aufgerufen <code>type</code> wird, um das Serialisierungsformat zu definieren. Neue Serialisierungsformate können mithilfe der OSGi-API integriert werden. Ein Standard-JSON-Serializer wird mit der Workflow-Engine bereitgestellt. Er weist den Typ JSON auf. Unten sehen Sie ein Beispiel für das Format.</td>
+   <td>Erstellt ein neues Workflow-Modell. Wenn der Parameter <code>title</code> gesendet wird, wird ein neues Modell mit dem angegebenen Titel erstellt. Durch das Anhängen einer JSON-Modelldefinition als Parameter <code>model</code> wird ein neues Workflow-Modell entsprechend der angegebenen Definition erstellt.<br /> Eine  <code>201</code> Antwort (<code>CREATED</code>) wird mit einer Kopfzeile mit der URL der neuen Ressource des Workflow-Modells zurückgesendet.<br /> Dasselbe passiert, wenn eine Modelldefinition als Dateiparameter namens  <code>modelfile</code>.<br /> Sowohl bei den  <code>model</code> als auch bei den  <code>modelfile</code> Parametern ist ein zusätzlicher Parameter erforderlich, der aufgerufen  <code>type</code> wird, um das Serialisierungsformat zu definieren. Neue Serialisierungsformate können mithilfe der OSGi-API integriert werden. Ein Standard-JSON-Serializer wird mit der Workflow-Engine bereitgestellt. Er weist den Typ JSON auf. Unten sehen Sie ein Beispiel für das Format.</td>
   </tr>
  </tbody>
 </table>
 
-Example: in the browser, a request to `http://localhost:4502/etc/workflow/models.json` generates a json response similar to the following:
+Beispiel: im Browser eine Anforderung von `http://localhost:4502/etc/workflow/models.json` generiert eine JSON-Antwort, die der folgenden ähnelt:
 
 ```
 [
@@ -224,34 +227,34 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502*{uri}*`
 
-Where `*{uri}*` is the path to the model node in the repository.
+Dabei ist `*{uri}*` der Pfad zum Modellknoten im Repository.
 
 <table>
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen</td>
+   <td>Aktionen   </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Ruft die <code>HEAD</code> Version des Modells ab (Definition und Metadaten).</td>
+   <td>Ruft die <code>HEAD</code>-Version des Modells (Definition und Metadaten) ab.</td>
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>Aktualisiert die <code>HEAD</code> Version des Modells (erstellt eine neue Version).<br /> Die vollständige Modelldefinition für die neue Version des Modells muss als Parameter namens <code>model</code>. Additionally a <code>type</code> parameter is needed as when creating new models and needs to have the value <code>JSON</code>.<br /> </td>
+   <td>Aktualisiert die <code>HEAD</code>-Version des Modells (erstellt eine neue Version).<br /> Die vollständige Modelldefinition für die neue Version des Modells muss als Parameter namens  <code>model</code>. Zusätzlich ist ein Parameter <code>type</code> erforderlich, z. B. bei der Erstellung neuer Modelle und muss den Wert <code>JSON</code> haben.<br /> </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Das gleiche Verhalten wie bei PUT. Needed because AEM widgets do not support <code>PUT</code> operations.</td>
+   <td>Wie bei PUT. Erforderlich, da AEM Widgets <code>PUT</code>-Vorgänge nicht unterstützen.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>Löscht das Modell. Um Firewall-/Proxy-Probleme zu lösen, wird ein <code>POST</code> mit einem <code>X-HTTP-Method-Override</code> Header-Eintrag mit Wert <code>DELETE</code> auch als <code>DELETE</code> Anfrage akzeptiert.</td>
+   <td>Löscht das Modell. Um Firewall-/Proxy-Probleme zu lösen, wird ein <code>POST</code>-Eintrag, der einen <code>X-HTTP-Method-Override</code> Header-Eintrag mit dem Wert <code>DELETE</code> enthält, auch als <code>DELETE</code>-Anforderung akzeptiert.</td>
   </tr>
  </tbody>
 </table>
 
-Example: in the browser, a request to `http://localhost:4502/var/workflow/models/publish_example.json` returns a `json` response that is similar to the following code:
+Beispiel: im Browser gibt eine Anforderung an `http://localhost:4502/var/workflow/models/publish_example.json` eine `json`-Antwort zurück, die dem folgenden Code ähnelt:
 
 ```shell
 {
@@ -335,7 +338,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| HTTP-Anforderungsmethode | Aktionen |
+| HTTP-Anforderungsmethode | Aktionen    |
 |---|---|
 | `GET` | Ruft die Daten des Modells in der angegebenen Version ab (sofern vorhanden). |
 
@@ -349,7 +352,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
  <tbody>
   <tr>
    <td>HTTP-Anforderungsmethode</td>
-   <td>Aktionen</td>
+   <td>Aktionen   </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -357,7 +360,7 @@ Die folgenden HTTP-Anfragemethoden gelten für:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Schließt das Arbeitselement ab, dessen URI als Parameter gesendet wird, <code>item</code> und leitet die entsprechende Workflow-Instanz an den nächsten Knoten weiter, der bzw. die vom Parameter definiert wird <code>route</code> oder <code>backroute</code> bei einem Schritt zurück.<br /> Wenn der Parameter gesendet <code>delegatee</code> <code>item</code> wird, wird das vom Parameter identifizierte Arbeitselement an den angegebenen Teilnehmer delegiert.</td>
+   <td>Schließt das Arbeitselement ab, dessen URI als Parameter <code>item</code> gesendet wird, und leitet die entsprechende Workflow-Instanz an den (die) nächsten Knoten (s) weiter, der (die) durch den Parameter <code>route</code> oder <code>backroute</code> definiert wird (werden), falls ein Schritt zurückgeht.<br /> Wenn der Parameter gesendet  <code>delegatee</code> wird,  <code>item</code> wird das vom Parameter identifizierte Arbeitselement an den angegebenen Teilnehmer delegiert.</td>
   </tr>
  </tbody>
 </table>
@@ -368,9 +371,9 @@ Die folgenden HTTP-Anfragemethoden gelten für:
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| HTTP-Anforderungsmethode | Aktionen |
+| HTTP-Anforderungsmethode | Aktionen    |
 |---|---|
-| `GET` | Ruft die Daten (Definition und Metadaten) des Posteingangs ab, der durch seine ID `WorkItem` identifiziert wird. |
+| `GET` | Ruft die Daten (Definition und Metadaten) des Posteingangs `WorkItem` ab, der durch seine ID identifiziert wird. |
 
 ## Beispiele {#examples}
 
@@ -388,7 +391,7 @@ Beispiel mit curl:
 curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 ```
 
-The `uri` displayed in the results can be used as the instance `id` in other commands; for example:
+Das in den Ergebnissen angezeigte `uri` kann als Instanz `id` in anderen Befehlen verwendet werden. Beispiel:
 
 ```shell
 [
@@ -398,7 +401,7 @@ The `uri` displayed in the results can be used as the instance `id` in other com
 
 >[!NOTE]
 >
->This `curl` command can be used with any [workflow status](/help/sites-administering/workflows.md#workflow-status-and-actions) in place of `RUNNING`.
+>Dieser Befehl `curl` kann mit jedem [Workflow-Status](/help/sites-administering/workflows.md#workflow-status-and-actions) anstelle von `RUNNING` verwendet werden.
 
 ### Ändern des Workflow-Titels {#how-to-change-the-workflow-title}
 
@@ -408,7 +411,7 @@ Um den **Workflow-Titel** zu ändern, der auf der Registerkarte **Instanzen** de
 
 * mit den folgenden Parametern:
 
-   * `action`: sein Wert muss: `UPDATE`
+   * `action`: sein Wert muss:  `UPDATE`
    * `workflowTitle`: der Titel des Workflows
 
 #### Ändern des Workflow-Titels – REST mit curl {#how-to-change-the-workflow-title-rest-using-curl}
@@ -422,7 +425,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
 ```
 
-### Auflisten aller Workflow-Modelle {#how-to-list-all-workflow-models}
+### Auflisten aller Workflow-Modelle  {#how-to-list-all-workflow-models}
 
 Um eine Liste aller verfügbaren Workflow-Modelle zu erhalten, führen Sie eine GET-Anfrage an folgende Adresse durch:
 
@@ -438,15 +441,15 @@ curl -u admin:admin http://localhost:4502/etc/workflow/models.json
 
 >[!NOTE]
 >
->See also [Managing Workflow Models](#managing-workflow-models).
+>Siehe auch [Verwalten von Workflow-Modellen](#managing-workflow-models).
 
 ### Abrufen eines WorkflowSession-Objekts {#obtaining-a-workflowsession-object}
 
-The `com.adobe.granite.workflow.WorkflowSession` class is adaptable from a `javax.jcr.Session` object or a `org.apache.sling.api.resource.ResourceResolver` object.
+Die `com.adobe.granite.workflow.WorkflowSession`-Klasse ist adaptierbar von einem `javax.jcr.Session`-Objekt oder einem `org.apache.sling.api.resource.ResourceResolver`-Objekt.
 
 #### Abrufen eines WorkflowSession-Objekts – Java {#obtaining-a-workflowsession-object-java}
 
-Verwenden Sie in einem JSP-Skript (oder Java-Code für eine Servlet-Klasse) das HTTP-Anfrageobjekt, um ein `SlingHttpServletRequest`-Objekt abzurufen. Dieses Objekt gewährt Ihnen Zugriff auf ein `ResourceResolver`-Objekt. Passen Sie das `ResourceResolver` Objekt an `WorkflowSession`.
+Verwenden Sie in einem JSP-Skript (oder Java-Code für eine Servlet-Klasse) das HTTP-Anfrageobjekt, um ein `SlingHttpServletRequest`-Objekt abzurufen. Dieses Objekt gewährt Ihnen Zugriff auf ein `ResourceResolver`-Objekt. Adaptieren Sie das `ResourceResolver`-Objekt an `WorkflowSession`.
 
 ```java
 <%
@@ -462,7 +465,7 @@ WorkflowSession wfSession = slingReq.getResourceResolver().adaptTo(WorkflowSessi
 
 #### Abrufen eines WorkflowSession Objekts – ECMA-Skript {#obtaining-a-workflowsession-object-ecma-script}
 
-Use the `sling` variable to obtain the `SlingHttpServletRequest` object that you use to obtain a `ResourceResolver` object. Adapt the `ResourceResolver` object to the `WorkflowSession` object.
+Verwenden Sie die Variable `sling`, um das `SlingHttpServletRequest`-Objekt abzurufen, mit dem Sie ein `ResourceResolver`-Objekt abrufen. Adaptieren Sie das `ResourceResolver`-Objekt an das `WorkflowSession`-Objekt.
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
@@ -482,25 +485,26 @@ Verwendete Beispiele:
 
 >[!NOTE]
 >
->Deleting the model sets the `deleted` property of the model&#39;s `metaData` child node to `true`.
+>Wenn Sie das Modell löschen, wird die `deleted`-Eigenschaft des untergeordneten Knotens des Modells `metaData` auf `true` eingestellt.
 >
 >Durch das Löschen wird der Modellknoten nicht entfernt.
 
 Wenn ein neues Modell erstellt wird:
 
-* The workflow model editor requires that models use a specific node structure below `/var/workflow/models`. The parent node of the model must be of the type `cq:Page` having a `jcr:content` node with the following property values:
+* Der Workflow-Modell-Editor erfordert, dass Modelle eine bestimmte Knotenstruktur unter `/var/workflow/models` verwenden. Die übergeordnete Node des Modells muss vom Typ `cq:Page` mit einer Node `jcr:content` mit den folgenden Eigenschaftswerten sein:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+   * `cq:template`:  `/libs/cq/workflow/templates/model`
+
    Wenn Sie ein Modell erstellen, müssen Sie zunächst diesen `cq:Page`-Knoten erstellen und seinen `jcr:content`-Knoten als übergeordneten Knoten des Modellknotens verwenden.
 
-* The `id` argument that some methods require for identifying the model is the absolute path of the model node in the repository:
+* Das `id`-Argument, das einige Methoden zur Identifizierung des Modells benötigen, ist der absolute Pfad des Modellknotens im Repository:
 
    `/var/workflow/models/<*model_name>*/jcr:content/model`
 
    >[!NOTE]
    >
-   >See [How to List all Workflow Models](#how-to-list-all-workflow-models).
+   >Siehe [Liste aller Workflow-Modelle](#how-to-list-all-workflow-models).
 
 #### Erstellen, Lesen oder Löschen von Workflow-Modellen – Java {#creating-reading-or-deleting-workflow-models-java}
 
@@ -554,9 +558,9 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 >
 >Aufgrund der erforderlichen Detailmenge gilt curl nicht als praktikabel für das Erstellen und/oder Lesen eines Modells.
 
-### Herausfiltern von System-Workflows beim Prüfen des Workflow-Status {#filtering-out-system-workflows-when-checking-workflow-status}
+### Herausfiltern von System-Workflows beim Prüfen des Workflow-Status  {#filtering-out-system-workflows-when-checking-workflow-status}
 
-You can use the [WorkflowStatus API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) to retrieve information about the workflow status of a node.
+Mit der [WorkflowStatus-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) können Sie Informationen zum Workflow-Status eines Knotens abrufen.
 
 Verschiedene Methoden haben den Parameter:
 
@@ -564,7 +568,7 @@ Verschiedene Methoden haben den Parameter:
 
 Sie können diesen Parameter auf `true` setzen, damit System-Workflows aus den Suchergebnissen ausgeschlossen werden.
 
-You [can update the OSGi configuration](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** that specifies the workflow `Models` to be considered as system workflows. Es gibt standardmäßig folgende (Laufzeit-) Workflow-Modelle:
+[Sie können die OSGi-Konfiguration ](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** aktualisieren, die den Workflow `Models` angibt, der als Workflows betrachtet werden soll. Es gibt standardmäßig folgende (Laufzeit-) Workflow-Modelle:
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
@@ -583,11 +587,11 @@ Wenn Sie einen **Teilnehmer**-Schritt fortführen müssen, der innerhalb eines f
 >
 >Die durchzuführende Handlung muss eindeutig definiert sein, damit diese Vorgehensweise möglich ist.
 
-### Interaktion mit Workflow-Instanzen {#interacting-with-workflow-instances}
+### Interaktion mit Workflow-Instanzen  {#interacting-with-workflow-instances}
 
 Hier sind einige grundlegende Beispiele, wie Sie (programmgesteuert) mit Workflow-Instanzen interagieren.
 
-#### Interaktion mit Workflow-Instanzen – Java {#interacting-with-workflow-instances-java}
+#### Interaktion mit Workflow-Instanzen – Java  {#interacting-with-workflow-instances-java}
 
 ```java
 // starting a workflow
@@ -649,7 +653,7 @@ wfSession.terminateWorkflow(workflow);
 
    >[!NOTE]
    >
-   >See [How to get a List of all Running Workflows](#how-to-get-a-list-of-all-running-workflows-with-their-ids) with their IDs for listing instances with a specific status.
+   >Informationen zum Auflisten von Instanzen mit einem bestimmten Status finden Sie unter [Abrufen einer Liste aller laufenden Workflows](#how-to-get-a-list-of-all-running-workflows-with-their-ids) mit ihren IDs.
 
 * **Pausieren eines Workflows**
 
@@ -681,11 +685,11 @@ wfSession.terminateWorkflow(workflow);
    curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
    ```
 
-### Interaktion mit Arbeitselementen {#interacting-with-work-items}
+### Interaktion mit Arbeitselementen  {#interacting-with-work-items}
 
 Hier sind einige grundlegende Beispiele, wie Sie (programmgesteuert) mit Arbeitselementen interagieren.
 
-#### Interaktion mit Arbeitselementen – Java {#interacting-with-work-items-java}
+#### Interaktion mit Arbeitselementen – Java  {#interacting-with-work-items-java}
 
 ```java
 // querying work items
@@ -790,7 +794,7 @@ wfSession.complete(workItem, routes.get(0));
 
    >[!NOTE]
    >
-   >The `delegatee` must be a valid option for the workflow step.
+   >Die Option `delegatee` muss für den Workflow-Schritt gültig sein.
 
 * **Abschließen oder Fortführen von Arbeitselementen zum nächsten Schritt**
 
@@ -805,9 +809,9 @@ wfSession.complete(workItem, routes.get(0));
    curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
    ```
 
-### Warten auf Workflow-Ereignisse {#listening-for-workflow-events}
+### Warten auf Workflow-Ereignisse  {#listening-for-workflow-events}
 
-Verwenden Sie das OSGi-Ereignis-Framework, um auf Ereignisse zu warten, die die Klasse [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) definiert. Diese Klasse bietet auch einige nützliche Methoden zum Abrufen von Informationen über das Thema des Ereignisses. Beispielsweise gibt die Methode `getWorkItem` das `WorkItem`-Objekt für das Arbeitselement, das am Ereignis beteiligt ist, zurück.
+Verwenden Sie das OSGi-Ereignis-Framework, um auf Ereignisse zu warten, die die Klasse [`com.adobe.granite.workflow.event.WorkflowEvent` definiert.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) Diese Klasse bietet auch einige nützliche Methoden zum Abrufen von Informationen über das Thema des Ereignisses. Beispielsweise gibt die Methode `getWorkItem` das `WorkItem`-Objekt für das Arbeitselement, das am Ereignis beteiligt ist, zurück.
 
 Der folgende Beispielcode definiert einen Dienst, der auf Workflow-Ereignisse wartet und je nach Art des Ereignisses Aufgaben ausführt.
 
