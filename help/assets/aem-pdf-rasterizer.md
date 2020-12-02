@@ -1,6 +1,6 @@
 ---
 title: Verwenden des PDF-Rasters zum Generieren von Darstellungen
-description: Erstellen Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Rasterbibliothek in [!DNL Adobe Experience Manager].
+description: Generieren Sie hochwertige Miniaturansichten und Darstellungen mit der Adobe PDF Rasterbibliothek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
@@ -11,9 +11,9 @@ ht-degree: 43%
 ---
 
 
-# PDF-Raster verwenden {#using-pdf-rasterizer}
+# PDF-Rasterfunktion verwenden {#using-pdf-rasterizer}
 
-When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. Die PDF-Rasterbibliothek der Adobe kann eine zuverlässigere und genauere Ausgabe im Vergleich zur Ausgabe aus einer Standardbibliothek generieren. Adobe empfiehlt die Verwendung der PDF-Rasterbibliothek für folgende Szenarien:
+Wenn Sie große, inhaltsintensive PDF- oder AI-Dateien zu [!DNL Adobe Experience Manager Assets] hochladen, wird bei der Standardkonvertierung möglicherweise keine korrekte Ausgabe generiert. Die PDF-Rasterbibliothek der Adobe kann eine zuverlässigere und genauere Ausgabe im Vergleich zur Ausgabe aus einer Standardbibliothek generieren. Adobe empfiehlt die Verwendung der PDF-Rasterbibliothek für folgende Szenarien:
 
 * Starke, inhaltsintensive AI-Dateien oder PDF-Dateien.
 * AI-Dateien und PDF-Dateien mit Miniaturansichten, die nicht standardmäßig generiert werden.
@@ -21,30 +21,30 @@ When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experien
 
 Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt unabhängig vom Farbraum der Quelldatei immer in RGB.
 
-1. Installieren Sie das PDF-Rasterpaket auf Ihrer [!DNL Adobe Experience Manager] Bereitstellung aus der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installieren Sie das PDF-Rasterpaket auf Ihrer [!DNL Adobe Experience Manager]-Bereitstellung von [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >Die PDF Rasterizer-Bibliothek ist nur für Windows und Linux verfügbar.
 
-1. Greifen Sie auf die [!DNL Assets] Workflow-Konsole unter `https://[aem_server]:[port]/workflow`. Open [!UICONTROL DAM Update Asset] workflow.
+1. Greifen Sie auf die Workflow-Konsole [!DNL Assets] unter `https://[aem_server]:[port]/workflow` zu. Öffnen Sie den Workflow [!UICONTROL DAM Update Asset].
 
 1. Gehen Sie wie folgt vor, um die Generierung von Miniaturbildern und Webdarstellungen für PDF- und AI-Dateien mithilfe der Standardmethoden zu verhindern:
 
-   * Open the **[!UICONTROL Process Thumbnails]** step, and add `application/pdf` or `application/postscript` in the **[!UICONTROL Skip Mime Types]** field under the **[!UICONTROL Thumbnails]** tab as necessary.
+   * Öffnen Sie den Schritt **[!UICONTROL Prozessminiaturen]** und fügen Sie `application/pdf` oder `application/postscript` in das Feld **[!UICONTROL Mime-Typen]** unter der Registerkarte **[!UICONTROL Miniaturansichten]** nach Bedarf überspringen ein.
 
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
-   * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
+   * Fügen Sie auf der Registerkarte **[!UICONTROL Web-aktiviertes Bild]** unter **[!UICONTROL Liste]** überspringen `application/pdf` entsprechend Ihren Anforderungen hinzu.`application/postscript`
 
    ![Konfiguration zum Überspringen der Miniaturansicht-Verarbeitung für ein Bildformat](assets/web_enabled_imageskiplist.png)
 
-1. Open the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type `application/pdf`, `application/postscript`, or `application/illustrator` from the **[!UICONTROL MIME Types]** list.
+1. Öffnen Sie den Schritt **[!UICONTROL PDF/AI Image Vorschau Rendering]** und entfernen Sie den MIME-Typ, für den Sie die Standardgeneration der Vorschau-Bilddarstellungen überspringen möchten. Entfernen Sie beispielsweise den MIME-Typ `application/pdf`, `application/postscript` oder `application/illustrator` aus der Liste **[!UICONTROL MIME-Typen]**.
 
    ![process_arguments](assets/process_arguments.png)
 
 1. Ziehen Sie den Schritt **[!UICONTROL PDF Rasterizer-Handler]** aus dem Seitenbereich unter den Schritt **[!UICONTROL Miniaturansichten verarbeiten]**.
-1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
+1. Konfigurieren Sie die folgenden Argumente für den Schritt **[!UICONTROL PDF Raster Handler]**:
 
    * MIME-Typen: `application/pdf` oder `application/postscript`
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
@@ -67,26 +67,26 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
 
-1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
+1. Damit PDF Renderer Webdarstellungen generieren kann, wählen Sie **[!UICONTROL Web-Darstellung erstellen]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
-1. Specify the settings in the **[!UICONTROL Web Enabled Image]** tab.
+1. Legen Sie die Einstellungen auf der Registerkarte **[!UICONTROL Web-aktiviertes Bild]** fest.
 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Speichern Sie den Workflow.
 
-1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **[!UICONTROL DAM Process Subasset]** model from the [!UICONTROL Workflow] console.
+1. Damit PDF Raster PDF-Seiten mit PDF-Bibliotheken verarbeiten kann, öffnen Sie das Modell **[!UICONTROL DAM-Prozess-Subasset]** in der Konsole [!UICONTROL Workflow].
 
-1. From the side panel, drag the PDF Rasterizer Handler step under the **[!UICONTROL Create Web-Enabled Image Rendition]** step.
+1. Ziehen Sie den Schritt für den PDF-Rasterassistenten aus dem Seitenbedienfeld unter den Schritt **[!UICONTROL Web-fähige Bildwiedergabe erstellen]**.
 
-1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
+1. Konfigurieren Sie die folgenden Argumente für den Schritt **[!UICONTROL PDF Raster Handler]**:
 
    * MIME-Typen: `application/pdf` oder `application/postscript`
 
    * Befehle: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. hinzufügen benutzerdefinierte Miniaturansicht-Konfiguration nach Bedarf.
+   * hinzufügen Größe der Miniaturansichten: `319:319`, `140:100`, `48:48`. hinzufügen benutzerdefinierte Miniaturansicht-Konfiguration nach Bedarf.
 
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
@@ -104,13 +104,13 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
-1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
+1. Damit PDF Renderer Webdarstellungen generieren kann, wählen Sie **[!UICONTROL Web-Darstellung erstellen]**.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
-1. Specify the settings in the **[!UICONTROL Web Enabled Image]** tab.
+1. Legen Sie die Einstellungen auf der Registerkarte **[!UICONTROL Web-aktiviertes Bild]** fest.
 
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Speichern Sie den Workflow.
-1. Upload a PDF or an AI file to [!DNL Experience Manager Assets]. PDF Rasterizer erstellt die Miniaturansichten und Webausgaben für die Datei.
+1. Laden Sie eine PDF- oder AI-Datei auf [!DNL Experience Manager Assets] hoch. PDF Rasterizer erstellt die Miniaturansichten und Webausgaben für die Datei.
