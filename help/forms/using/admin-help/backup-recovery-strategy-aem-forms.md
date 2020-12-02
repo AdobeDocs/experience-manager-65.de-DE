@@ -34,9 +34,9 @@ Adobe Experience Manager (AEM) ist ein wichtiger Bestandteil von AEM Forms. Dahe
 
 Die AEM Forms-Sicherungsstrategie umfasst zwei Sicherungsarten:
 
-**Systembild:** Eine vollständige Systemsicherung, mit der Sie den Inhalt Ihres Computers wiederherstellen können, wenn die Festplatte oder der gesamte Computer nicht mehr funktioniert. Eine Systemabbildsicherung ist nur vor der Bereitstellung von AEM Forms in der Produktionsumgebung erforderlich. Interne Unternehmensrichtlinien bestimmen anschließend, wie häufig Systemabbildsicherungen erforderlich sind.
+**Systemabbild:** Eine vollständige Systemsicherung, mit der Sie den Inhalt Ihres Computers wiederherstellen können, wenn die Festplatte oder der gesamte Computer nicht mehr funktioniert. Eine Systemabbildsicherung ist nur vor der Bereitstellung von AEM Forms in der Produktionsumgebung erforderlich. Interne Unternehmensrichtlinien bestimmen anschließend, wie häufig Systemabbildsicherungen erforderlich sind.
 
-**AEM Forms-spezifische Daten:** Anwendungsdaten befinden sich in der Datenspeicherung für globale Dokumente (GDS) und im AEM-Repository und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
+**AEM formularspezifische Daten:** Anwendungsdaten sind in der Datenbank, der globalen Dokument-Datenspeicherung (GDS) und AEM Repository vorhanden und müssen in Echtzeit gesichert werden. Der globale Dokumentenspeicher ist ein Ordner zum Speichern dauerhaft in einem Prozess genutzter Dateien. Diese Dateien können PDFs, Richtlinien und Formularvorlagen beinhalten.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Zum Vermeiden von Datenverlusten müssen die AEM Forms-spezifischen Daten so ges
 >
 >Wenn der globale Dokumentspeicher im Dateisystem und nicht in der Datenbank gespeichert wird, führen Sie die Datenbanksicherung vor der Sicherung des globalen Dokumentspeichers durch.
 
-## Besondere Überlegungen zur Sicherung und Wiederherstellung {#special-considerations-for-backup-and-recovery}
+## Besondere Überlegungen zur Sicherung und Wiederherstellung  {#special-considerations-for-backup-and-recovery}
 
 Verwenden Sie die folgenden Richtlinien, wenn Sie AEM Forms in einer anderen Umgebung aufgrund der folgenden Änderungen wiederherstellen müssen:
 
@@ -72,18 +72,18 @@ Verwenden Sie die folgenden Richtlinien, wenn Sie AEM Forms in einer anderen Umg
 
 In der Regel werden solche Szenarien durch Hardwarefehler des Servers, der als Host für den Anwendungsserver, Datenbankserver oder Formularserver dient, verursacht. Zusätzlich zu den AEM Forms-spezifischen Konfigurationen, die in diesem Abschnitt beschrieben werden, sollten Sie außerdem die notwendigen Änderungen für andere Teile der AEM Forms-Bereitstellung, z. B. Lastenausgleich und Firewalls, vornehmen, wenn sich der Hostname oder die IP-Adresse eines AEM Forms-Servers ändert.
 
-### Was nicht änderbar ist {#what-cannot-be-changed}
+### Was nicht änderbar ist  {#what-cannot-be-changed}
 
 Sie können zwar den Datenbankserver und viele andere Parameter ändern, nicht jedoch den Typ des Anwendungsservers und der Datenbank, wenn Sie AEM Forms aus einer Sicherung wiederherstellen. Wenn Sie beispielsweise eine AEM Forms-Sicherung wiederherstellen, können Sie nicht den Anwendungsserver von JBoss in WebLogic oder die Datenbank von Oracle in DB2 ändern. Zusätzlich muss das wiederhergestellte AEM Forms dieselben Dateisystempfade, z. B. den Ordner für Schriftarten, verwenden.
 
-### Neustart nach einer Wiederherstellung {#restarting-after-a-recovery}
+### Neustart nach einer Wiederherstellung  {#restarting-after-a-recovery}
 
 Bevor Sie den Formularserver nach einer Wiederherstellung neu starten, führen Sie folgende Schritte aus:
 
 1. Starten Sie das System im Wartungsmodus.
 1. Führen Sie folgende Schritte aus, um sicherzustellen, dass Forms Manager im Wartungsmodus mit AEM Forms synchronisiert wird:
 
-   1. Go to https://&lt;*server*>:&lt;*port*>/lc/fm and log in using adminstrator/password credentials.
+   1. Wechseln Sie zu https://&lt;*server*:&lt;*port*>/lc/fm und melden Sie sich mit den Anmeldeinformationen von adminstrator/password an.
    1. Klicken Sie rechts oben auf den Namen des Benutzers (in diesem Fall „Super Administrator“).
    1. Klicken Sie auf **Admin-Optionen**.
    1. Klicken Sie auf **Start**, um Elemente im Repository zu synchronisieren.
@@ -93,17 +93,17 @@ Bevor Sie den Formularserver nach einer Wiederherstellung neu starten, führen S
 
 Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die entsprechenden Installationshandbücher für Ihren Anwendungsserver, um Informationen zur Aktualisierung der Datenbankverbindungsinformationen für die AEM Forms-Datenquellen IDP_DS und EDC_DS zu finden.
 
-### AEM Forms-Hostnamen oder IP-Adresse ändern {#changing-the-aem-forms-hostname-or-ip-address}
+### AEM Forms-Hostnamen oder IP-Adresse ändern  {#changing-the-aem-forms-hostname-or-ip-address}
 
 In einem Cluster müssen Sie die Cache-Locator-Konfiguration aktualisieren, wenn Sie TCP-Zwischenspeicherung anstelle von UDP verwenden. Siehe „Konfigurieren des Zwischenspeicherungs-Locators (nur Zwischenspeicherung unter Verwendung von TCP)“ im Konfigurationshandbuch für Ihren Anwendungsserver.
 
-### AEM Forms-Knotendatei-Systempfade ändern {#changing-the-aem-forms-node-file-system-paths}
+### AEM Forms-Knotendatei-Systempfade ändern  {#changing-the-aem-forms-node-file-system-paths}
 
 Wenn Sie die Dateisystempfade für einen eigenständigen Knoten ändern, müssen Sie die entsprechenden Referenzen in Voreinstellungen, anderen Systemkonfigurationen, benutzerdefinierten Anwendungen und bereitgestellten AEM Forms-Anwendungen aktualisieren. Andererseits müssen für ein Cluster alle Knoten dieselbe Dateisystempfad-Konfiguration verwenden. Sie müssen den Ordner des globalen Dokumentenspeichers (GDS) festlegen und sicherstellen, dass es auf eine Kopie des wiederhergestellten GDS verweist, die mit der wiederhergestellten Datenbank synchronisiert ist. Das Festlegen des GDS-Pfades ist wichtig, da der GDS Daten enthalten kann, die beim Neustart von Anwendungsservern bestehen bleiben sollen.
 
 In einer Clusterumgebung muss die Konfiguration des Dateisystempfads des Repositorys für alle Clusterknoten vor der Sicherung und nach der Wiederherstellung gleich sein.
 
-Use the `LCSetGDS`script in the `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` folder to set the GDS path after you change the file system paths. Einzelheiten finden Sie in der `ReadMe.txt`-Datei im selben Ordner. Wenn der alte GDS-Ordnerpfad nicht verwendet werden kann, muss das `LCSetGDS`-Skript verwendet werden, um den neuen Pfad für den GDS festzulegen, bevor Sie AEM Forms starten.
+Verwenden Sie das Skript `LCSetGDS`im Ordner `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline`, um den GDS-Pfad festzulegen, nachdem Sie die Dateisystempfade geändert haben. Einzelheiten finden Sie in der `ReadMe.txt`-Datei im selben Ordner. Wenn der alte GDS-Ordnerpfad nicht verwendet werden kann, muss das `LCSetGDS`-Skript verwendet werden, um den neuen Pfad für den GDS festzulegen, bevor Sie AEM Forms starten.
 
 >[!NOTE]
 >
