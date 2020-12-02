@@ -12,6 +12,9 @@ discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +31,7 @@ Wenn Sie mit dem AEM Forms-Server online sind, wird Ihre App standardmäßig all
 
 **Manuelles Synchronisieren der App**
 
-Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right corner of the home screen.
+Tippen Sie auf die Schaltfläche Synchronisieren ![sync-app](assets/sync-app.png) in der rechten unteren Ecke des Startbildschirms.
 
 **Ändern der Synchronisierungsfrequenz**
 
