@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 89%
 
 ---
 
@@ -32,17 +35,17 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 Die Zeichenfolge enthält folgende Elemente:
 
-**** Zertifikatstyp: Beschreibt die AEM Forms-Module, die vom Zertifikat aktiviert werden, und die Aktivierungsstufe, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
+**Zertifikatstyp:** Beschreibt die AEM Formularmodule, die vom Zertifikat aktiviert werden, und die Aktivierung, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
 
-**** Bereitstellungstyp: Gibt die vorgesehene Verwendung des Zertifikats an, z. B. &quot;Produktion&quot;. Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
+**Bereitstellungstyp:** Gibt die vorgesehene Verwendung des Zertifikats an, z. B. &quot;Produktion&quot;. Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
 
-**** Version der Verwendungsrechte: Beschreibt die Version des Algorithmus für Verwendungsrechte, für die das Zertifikat verwendet werden kann, z. B. V6.1. Diese Version gibt nicht die Version von Acrobat oder Acrobat Reader DC Extensions an.
+**Version der Verwendungsrechte:** Beschreibt die Version des Algorithmus für Verwendungsrechte, für die das Zertifikat verwendet werden kann, z. B. V6.1. Diese Version steht nicht für die Version von Acrobat oder Acrobat Reader DC Extensions.
 
-**** Profilcode: Der Profilcode ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften, z. B. P8. Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
+**Profil-Code:** Der Profil-Code ist eine Kurzbeschreibung der vollständigen Zertifikateigenschaften, z. B. P8. Eine Liste der Profilcodes für jeden Dateityp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Profilcode“.
 
-**** Seriennummer: Jedem von Adobe ausgestellten Zertifikat wird eine Seriennummer zugewiesen, z. B. &quot;0002054&quot;. Der Support von Adobe Enterprise oder ein Adobe Enterprise-Kundenbetreuer kann anhand dieser Seriennummer das Zertifikat einer bestimmten Produktbestellung oder einem OEM-Vertrag zuordnen.
+**Seriennummer:** Jedem von der Adobe ausgestellten Zertifikat wird eine Seriennummer zugewiesen, z. B. 0002054. Der Support von Adobe Enterprise oder ein Adobe Enterprise-Kundenbetreuer kann anhand dieser Seriennummer das Zertifikat einer bestimmten Produktbestellung oder einem OEM-Vertrag zuordnen.
 
-## Zertifikatprofile {#certificate-profiles}
+## Zertifikatprofile  {#certificate-profiles}
 
 Die folgende Tabelle enthält die Zertifikatprofile, die Sie beim Analysieren von Acrobat Reader DC Extensions-Zertifikaten vorfinden können.
 
@@ -143,7 +146,7 @@ Die folgende Tabelle enthält die Zertifikatprofile, die Sie beim Analysieren vo
  </tbody>
 </table>
 
-## Gültigkeitsdauer {#validity-period}
+## Gültigkeitsdauer  {#validity-period}
 
 Testzertifikate werden Kunden und Entwicklern ausgestellt, damit diese Beispielanwendungen für Produkte entwickeln und testen können. Die Gültigkeitsdauer dieser Zertifikate ist 60 bis 90 Tage. Der Ablauf erfolgt am Ende des zweiten Monats nach dem Datum der Ausstellung.
 
@@ -153,7 +156,7 @@ Zertifikate für die interne Verwendung bei Adobe werden innerhalb des Unternehm
 
 Produktionszertifikate werden an Kunden, die Acrobat Reader DC Extensions erworben haben, ausgegeben. Diese Zertifikate sind für den von der Zertifizierungsstelle maximal zugelassenen Zeitraum gültig (siehe die Spalte „*Maximal*“ in der Tabelle „Zertifikatprofile“).
 
-## Acrobat Reader DC Extensions-Verwendungsrechte {#acrobat-reader-dc-extensions-usage-rights}
+## Acrobat Reader DC Extensions-Verwendungsrechte  {#acrobat-reader-dc-extensions-usage-rights}
 
 Wenn Sie das Acrobat Reader DC Extensions-Zertifikat in der Zertifikatanzeige untersuchen, können Sie das Element „Verwendungsrechte“ auf der Registerkarte „Details“ auswählen (falls konfiguriert), um eine in Elemente untergliederte Liste der Adobe Reader-Verwendungsrechte anzuzeigen, die vom Zertifikat aktiviert werden können. Die für ein bestimmtes Dokument aktivierten Verwendungsrechte stellen eine Teilmenge der vom Zertifikat aktivierten Rechte dar.
 
