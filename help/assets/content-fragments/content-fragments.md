@@ -94,7 +94,7 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 
 >[!NOTE]
 >
->AEM unterstützt auch die Übersetzung von Fragmentinhalten.  See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
+>AEM unterstützt auch die Übersetzung von Fragmentinhalten.  Weitere Informationen finden Sie unter [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](/help/assets/creating-translation-projects-for-content-fragments.md).
 
 ## Arten von Inhaltsfragmenten {#types-of-content-fragment}
 
@@ -285,7 +285,7 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
    * Fragmente benötigen eine oder mehrere dedizierte Komponenten zur Definition des Layouts sowie zur Bereitstellung einiger oder aller Elemente/Varianten und zugehörigen Inhalte.
    * Durch Ziehen eines Fragments auf eine Seite während der Bearbeitung wird die erforderliche Komponente automatisch zugewiesen.
 
-## Anwendungsbeispiel           {#example-usage}
+## Anwendungsbeispiel            {#example-usage}
 
 Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwurf eines Fragments muss berücksichtigt werden, welche Elemente wo verwendet werden.
 
