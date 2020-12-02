@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 51%
 
 ---
 
@@ -38,11 +41,11 @@ Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Proje
   </tr>
   <tr>
    <td>Kundentestteam</td>
-   <td><p>Je nach ausgewähltem Projektmodell ist es für Mitglieder des Kundenteams möglicherweise geplant, an Tests beteiligt zu sein, insbesondere Autoren von der Kunden-Site.</p> <p>Der Vorteil ist, dass</p>
+   <td><p>Je nach ausgewähltem Projektmodell ist es für Mitglieder des Kundenteams möglicherweise geplant, an Tests beteiligt zu sein, insbesondere Autoren von der Kunden-Site.</p> <p>Der Vorteil besteht darin, dass</p>
     <ul>
      <li><p>Bietet dem Kunden Erfahrung mit dem zu entwickelnden Projekt.</p> </li>
      <li><p>Stellt frühzeitiges Feedback des Kunden bereit.</p> </li>
-     <li><p>Users often express their requirements in terms of past experience; involving the customers in testing as early as possible increases their experience of the new project in terms of <i>hands-on</i> experience.</p> </li>
+     <li><p>Benutzer geben oft ihre Anforderungen an frühere Erfahrungen an; Die möglichst frühzeitige Einbeziehung der Kunden in die Tests steigert ihre Erfahrung mit dem neuen Projekt in Bezug auf <i>praktische </i> Erfahrung.</p> </li>
     </ul> </td>
    <td><p>Auch hier ist eine frühzeitige Einbindung gut, obwohl jede Version, die die Kunden verwenden, stabil sein sollte, mit angemessener Funktionalität.</p> <p>Erste Impressionen sind immer wichtig.</p> </td>
   </tr>
