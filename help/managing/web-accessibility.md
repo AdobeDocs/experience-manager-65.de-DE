@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager (AEM) und die Web Accessibility-Richtlinien
+title: Adobe Experience Manager (AEM) und die Leitlinien für die Web-Zugänglichkeit
 description: Einführung in Adobe Experience Manager (AEM) und die Leitlinien für die Web-Zugänglichkeit
 translation-type: tm+mt
 source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
@@ -12,9 +12,9 @@ ht-degree: 84%
 
 # AEM und Richtlinien für barrierefreien Webzugang{#aem-and-the-web-accessibility-guidelines}
 
-Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Web-Zugänglichkeit mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
+Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Web-Zugänglichkeit mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt des guten Webdesigns.
 
-Das Erstellen barrierefreier Websites und Inhalte mit AEM hat Auswirkungen:
+Zugängliche Websites und Inhalte mit AEM Auswirkungen erstellen:
 
 * Administratoren, die für die Konfiguration von AEM verantwortlich sind, um zu gewährleisten, dass die Funktionen für den barrierefreien Zugang aktiviert sind.
 
@@ -24,7 +24,7 @@ Das Erstellen barrierefreier Websites und Inhalte mit AEM hat Auswirkungen:
 
 * Entwickler von Vorlagen sollten sich ebenfalls dieser Thematiken bei der Umsetzung des Webdesigns bewusst sein.
 
-Adobe Experience Manager works with the [guidelines](#wcag-accessibility-guidelines) provided by the [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager arbeitet mit den [guidelines](#wcag-accessibility-guidelines), die vom [World Wide Web Consortium](#world-wide-web-consortium) bereitgestellt werden.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 >
 >Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
-## Barrierefreiheit bei Adobe       {#accessibility-at-adobe}
+## Barrierefreiheit bei Adobe         {#accessibility-at-adobe}
 
 Weitere Informationen finden Sie im [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
 
