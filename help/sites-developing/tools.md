@@ -12,6 +12,9 @@ discoiquuid: 3cf0fd8d-7fc8-468a-bb1e-1debb68a82a5
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 94%
 
 ---
 
@@ -31,13 +34,13 @@ Im Folgenden werden zwei Open-Source-Test-Tools vorgestellt:
 
 Selenium wird für Funktionstests im Browser mit einem Benutzer pro Aktivität verwendet. Das Tool zeichnet Prüfungsschritte (Klicks) entweder als HTML-Tabellen oder Java-Klassen auf.
 
-For more information see [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Weitere Informationen finden Sie unter [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter wird für das Tracking von Anfragen verwendet und kann für die Automatisierung von Funktions-, Leistungs- und Belastungstests verwendet werden.
 
-For more information see [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
+Weitere Informationen finden Sie unter [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
 
 Außerdem sind viele proprietäre Tools für die Automatisierung von Tests und die Verwaltung von Testplänen verfügbar.
 
