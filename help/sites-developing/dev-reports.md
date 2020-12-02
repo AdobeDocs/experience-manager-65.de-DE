@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 78%
 
 ---
 
 
 # Entwickeln von Berichten{#developing-reports}
 
-AEM provides a selection of [standard reports](/help/sites-administering/reporting.md) most of which are based on a reporting framework.
+AEM bietet eine Auswahl von [Standardberichten](/help/sites-administering/reporting.md), von denen die meisten auf einem Berichte-Framework basieren.
 
 Mithilfe des Frameworks können Sie diese Standardberichte erweitern oder Ihre eigenen Berichte entwickeln. Das Framework für die Berichterstellung setzt auf den bestehenden CQ5-Konzepten und -Prinzipien auf, sodass Entwickler ihre vorhandenen CQ5-Kenntnisse als Grundlage für die Entwicklung von Berichten nutzen können.
 
-Für mit AEM gelieferte Standardberichte:
+Für die mit AEM gelieferten Standardberichte:
 
 * Die folgenden Berichte basieren auf dem Framework für die Berichterstellung:
 
@@ -52,33 +55,34 @@ Für mit AEM gelieferte Standardberichte:
 * `N:<name> [<nodeType>]`
    >
    >     
-   Describes a node with the name of `<*name*>` and node type of `<*nodeType*>`*.*
+   Beschreibt einen Knoten mit dem Namen `<*name*>` und dem Knotentyp `<*nodeType*>`*.*
    >
    >  
 * `P:<name> [<propertyType]`
    >
    >     
-   Describes a property with the name of `<*name*>` and a property type of `<*propertyType*>`.
+   Beschreibt eine Eigenschaft mit dem Namen `<*name*>` und den Eigenschaftstyp `<*propertyType*>`.
    >
    >  
 * `P:<name> = <value>`
    >
    >     
-   Describes a property `<name>` that must be set to the value of `<value>`.
+   Beschreibt eine Eigenschaft `<name>`, die auf den Wert `<value>` gesetzt werden muss.
    >
    >
 * Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
->* Elemente, die durch| eine Liste möglicher Elemente; zum Beispiel Typen oder Namen:
+>* Elemente, die durch | eine Liste möglicher Elemente; zum Beispiel Typen oder Namen:
+
 >
 >  
-Beispiel: `String|String[]` Die Eigenschaft kann entweder String oder String[]sein.
+z. B. `String|String[]` bedeutet, dass die Eigenschaft entweder String oder String[] sein kann.
 >
->* `[]` stellt ein Array dar; wie z. B. String[] oder ein Array von Knoten wie in der [Abfrage Definition](#query-definition).
+>* `[]` stellt ein Array dar; wie z. B. [] String oder ein Array von Knoten wie in der  [Abfrage Definition](#query-definition).
 >
 >
 Sofern nicht anders angegeben, lauten die Standardtypen:
 >
->* Nodes - `nt:unstructured`
+>* Knoten - `nt:unstructured`
 >* Eigenschaften - `String`
 
 
@@ -122,7 +126,7 @@ Jede Spalte ist eine Instanz der [`columnbase`-Komponente](#column-base-componen
 * Sie definiert den Link zum [zugrunde liegenden Ergebnissatz](#the-query-and-data-retrieval), d. h. sie definiert die spezifischen Daten, auf die im Ergebnissatz verwiesen wird, und wie diese verarbeitet werden.
 * Sie enthält neben jeglichen Standardwerten zusätzliche Definitionen, beispielsweise die verfügbaren Aggregate und Filter.
 
-### Die Abfrage und der Datenabruf {#the-query-and-data-retrieval}
+### Die Abfrage und der Datenabruf  {#the-query-and-data-retrieval}
 
 Die Abfrage:
 
@@ -175,7 +179,7 @@ Der folgende Workflow stellt die Verarbeitungswarteschlange dar:
 
 Die Schritte und Elemente lauten im Detail:
 
-1. Transforms the results returned by the [initial query (reportbase)](#query-definition) into the basic result set using value extractors.
+1. Wandelt die von der [initialen Abfrage (reportbase)](#query-definition) zurückgegebenen Ergebnisse mithilfe von Wertextraktoren in die grundlegende Ergebnismenge um.
 
    Die Werteextraktionsfunktionen werden automatisch abhängig vom [Spaltentyp](#column-specific-definitions) ausgewählt. Sie dienen dazu, Werte aus der zugrunde liegenden JCR-Abfrage zu lesen und daraus einen Ergebnissatz zu erstellen. Danach kann eine weitere Verarbeitung erfolgen. Beispielsweise liest die Werteextraktionsfunktion für den Typ `diff` zwei Eigenschaften und berechnet den Einzelwert, der dann zum Ergebnissatz hinzugefügt wird. Die Werteextraktionsfunktionen können nicht konfiguriert werden.
 
@@ -209,17 +213,17 @@ Die Schritte und Elemente lauten im Detail:
 Um einen Bericht zu erstellen und zu konfigurieren, wird Folgendes benötigt:
 
 * Ein [Speicherort für die Definition Ihrer Berichtskomponenten](#location-of-report-components)
-* eine [`reportbase` Komponente](#report-base-component)
+* a [ `reportbase`-Komponente](#report-base-component)
 * Mindestens eine [`columnbase`-Komponente](#column-base-component)
 * Eine [Seitenkomponente](#page-component)
 * Ein [Bereichtsdesign](#report-design)
 * Eine [Berichtsvorlage](#report-template)
 
-### Speicherort von Berichtskomponenten {#location-of-report-components}
+### Speicherort von Berichtskomponenten  {#location-of-report-components}
 
-The default reporting components are held under `/libs/cq/reporting/components`.
+Die Standardkomponenten für Berichte befinden sich unter `/libs/cq/reporting/components`.
 
-However, it is strongly recommended that you do not update these nodes, but create your own component nodes under `/apps/cq/reporting/components` or if more appropriate `/apps/<yourProject>/reports/components`.
+Es wird jedoch dringend empfohlen, diese Knoten nicht zu aktualisieren, sondern eigene Komponentenknoten unter `/apps/cq/reporting/components` oder, falls zutreffend, `/apps/<yourProject>/reports/components` zu erstellen.
 
 Wobei (beispielsweise):
 
@@ -244,13 +248,13 @@ N:apps
 
 ### Seitenkomponente {#page-component}
 
-A report page must use the `sling:resourceType` of `/libs/cq/reporting/components/reportpage`.
+Eine Berichtsseite muss die `sling:resourceType` von `/libs/cq/reporting/components/reportpage` verwenden.
 
 Eine benutzerdefinierte Seitenkomponente sollte (in den meisten Fällen) nicht erforderlich sein.
 
-## reportbase-Komponente {#report-base-component}
+## reportbase-Komponente  {#report-base-component}
 
-Each report type requires a container component derived from `/libs/cq/reporting/components/reportbase`.
+Für jeden Berichtstyp ist eine von `/libs/cq/reporting/components/reportbase` abgeleitete Container-Komponente erforderlich.
 
 Diese Komponente dient als Container für den gesamten Bericht und stellt Informationen für Folgendes bereit:
 
@@ -266,7 +270,7 @@ N:<reportname> [cq:Component]
     N:queryBuilder
 ```
 
-### Abfragedefinition {#query-definition}
+### Abfragedefinition  {#query-definition}
 
 ```xml
 N:queryBuilder
@@ -299,7 +303,7 @@ N:queryBuilder
     ]
    ```
 
-   Gibt alle `textimage` Komponenten zurück, die zuletzt vom `admin` Benutzer geändert wurden.
+   Gibt alle `textimage`-Komponenten zurück, die zuletzt vom `admin`-Benutzer geändert wurden.
 
 * `nodeTypes`
 
@@ -340,11 +344,11 @@ N:charting
 
       * `id`
 
-         Identifizierung der aktiven Diagramme. This must match the id of one of the chart `definitions`.
+         Identifizierung der aktiven Diagramme. Dies muss mit der ID eines Diagramms `definitions` übereinstimmen.
 
 * `definitions`
 
-   Definiert die Diagrammtypen, die für den Bericht verfügbar sein können. The `definitions` to be used will be specified by the `active` settings.
+   Definiert die Diagrammtypen, die für den Bericht verfügbar sein können. Die zu verwendenden `definitions` werden durch die `active`-Einstellungen angegeben.
 
    Die Definitionen werden mithilfe eines Arrays von Knoten angegeben (auch in diesem Fall meist mit dem Namen `0`, `1`.. `x`), die jeweils die folgenden Eigenschaften aufweisen:
 
@@ -363,30 +367,30 @@ Kreisdiagramm. Wird nur aus aktuellen Daten generiert.
 Eine Reihe von Linien (die Punkte verbinden, welche die eigentlichen Momentaufnahmen darstellen). Wird nur aus Verlaufsdaten generiert.
    * Je nach Diagrammtyp stehen weitere Eigenschaften zur Verfügung:
 
-      * for the chart type `pie`:
+      * für den Diagrammtyp `pie`:
 
          * `maxRadius` ( `Double/Long`)
 
-            Der maximal zulässige Radius für das Kreisdiagramm, daher die maximal zulässige Größe für das Diagramm (ohne Legende). Ignored if `fixedRadius` is defined.
+            Der maximal zulässige Radius für das Kreisdiagramm, daher die maximal zulässige Größe für das Diagramm (ohne Legende). Wird ignoriert, wenn `fixedRadius` definiert ist.
 
-         * `minRadius` ( `Double/Long`)
+         * `minRadius` (  `Double/Long`)
 
-            Der für das Kreisdiagramm zulässige Mindestradius. Ignored if `fixedRadius` is defined.
+            Der für das Kreisdiagramm zulässige Mindestradius. Wird ignoriert, wenn `fixedRadius` definiert ist.
 
-         * `fixedRadius` ( `Double/Long`) Definiert einen festen Radius für das Kreisdiagramm.
-      * for the chart type [`lineseries`](/help/sites-administering/reporting.md#display-limits):
+         * `fixedRadius` (  `Double/Long`) Definiert einen festen Radius für das Kreisdiagramm.
+      * für den Diagrammtyp [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
-         * `totals` ( `Boolean`)
+         * `totals` (  `Boolean`)
 
-            True if an additional line showing the **Total** should be shown.
+            &quot;True&quot;, wenn eine zusätzliche Zeile mit **Total** angezeigt werden soll.
 default: `false`
 
-         * `series` ( `Long`)
+         * `series` (  `Long`)
 
             Anzahl der anzuzeigenden Zeilen/Reihen.
 Standardwert: `9` (dies ist auch der maximal zulässige Wert)
 
-         * `hoverLimit` ( `Long`)
+         * `hoverLimit` (  `Long`)
 
             Maximale Anzahl aggregierter Momentaufnahmen (Punkte auf jeder horizontalen Linie, die für unterschiedliche Werte stehen), für die Popups angezeigt werden sollen, wenn Benutzer mit der Maus über einen bestimmten Wert oder eine entsprechende Beschriftung in der Legende des Diagramms fahren.
 
@@ -469,7 +473,7 @@ Es stehen mehrere vorkonfigurierte Komponenten zur Verfügung, auf die im Dialog
 
 >[!NOTE]
 >
->The referenced components must be included using the `.infinity.json` suffix (see example above).
+>Die referenzierten Komponenten müssen mit dem Suffix `.infinity.json` eingeschlossen werden (siehe Beispiel oben).
 
 ### Stammverzeichnis {#root-path}
 
@@ -484,9 +488,9 @@ Zusätzlich kann ein Stammpfad für den Bericht definiert werden:
    * Die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
    * Den Benutzer (mithilfe dieses Parameters).
 
-## columnbase-Komponente {#column-base-component}
+## columnbase-Komponente  {#column-base-component}
 
-Each column type requires a component derived from `/libs/cq/reporting/components/columnbase`.
+Für jeden Spaltentyp ist eine Komponente erforderlich, die von `/libs/cq/reporting/components/columnbase` abgeleitet wird.
 
 Eine Spaltenkomponente definiert eine Kombination folgender Elemente:
 
@@ -524,7 +528,7 @@ N:<columnname> [cq:Component]
 
 Siehe auch [Definieren neuer Berichte](#defining-your-new-report).
 
-### Spaltenspezifische Abfrage {#column-specific-query}
+### Spaltenspezifische Abfrage  {#column-specific-query}
 
 Diese definiert die spezifische Datenextraktion (aus dem [Datenergebnissatz des Berichts](#the-query-and-data-retrieval)) für die Verwendung in der jeweiligen Spalte..
 
@@ -541,7 +545,7 @@ N:definitions
 
    Definiert die Eigenschaft, die für die Berechnung des tatsächlichen Zellwerts verwendet werden soll.
 
-   If property is defined as String[] multiple properties are scanned (in sequence) to find the actual value.
+   Wenn die Eigenschaft als String[] definiert ist, werden mehrere Eigenschaften (in der Sequenz) gescannt, um den tatsächlichen Wert zu finden.
 
    Beispiel:
 
@@ -564,7 +568,7 @@ N:definitions
 
 * `secondarySubPath`
 
-   Similar to subPath, when `secondaryProperty` is used.
+   Ähnlich wie subPath, wenn `secondaryProperty` verwendet wird.
 
 In den meisten Fällen wird nur `property` verwendet.
 
@@ -599,7 +603,7 @@ function(v) {
 }
 ```
 
-### Resolver und Vorverarbeitung {#resolvers-and-preprocessing}
+### Resolver und Vorverarbeitung  {#resolvers-and-preprocessing}
 
 Die [Verarbeitungswarteschlange](#processing-queue) definiert die verschiedenen Resolver und konfiguriert die Vorverarbeitung:
 
@@ -627,15 +631,15 @@ N:definitions
 
    * `page`
 
-        Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Beispielsweise `/content/.../page/jcr:content/par/xyz` auf `/content/.../page/jcr:content`.
+        Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Beispiel: `/content/.../page/jcr:content/par/xyz` wird in `/content/.../page/jcr:content` aufgelöst.
 
    * `path`
 
-      Löst einen Pfadwert auf, indem optional ein Unterpfad angehängt und der aktuelle Wert aus einer Eigenschaft des Knotens (wie durch `resolverConfig` definiert) unter dem aufgelösten Pfad übernommen wird. For example, a `path` of `/content/.../page/jcr:content` can be resolved to the content of the `jcr:title` property, this would mean that a page path is resolved to the page title.
+      Löst einen Pfadwert auf, indem optional ein Unterpfad angehängt und der aktuelle Wert aus einer Eigenschaft des Knotens (wie durch `resolverConfig` definiert) unter dem aufgelösten Pfad übernommen wird. Beispiel: Ein `path` von `/content/.../page/jcr:content` kann bis zum Inhalt der `jcr:title`-Eigenschaft aufgelöst werden. Dies bedeutet, dass ein Seitenpfad bis zum Seitentitel aufgelöst wird.
 
    * `pathextension`
 
-      Löst einen Wert auf, indem ein Pfad vorangestellt wird und der aktuelle Wert aus einer Eigenschaft des Knotens unter dem aufgelösten Pfad übernommen wird. For example, a value `de` might be prepended by a path such as `/libs/wcm/core/resources/languages`, taking the value from the property `language`, to resolve the country code `de` to the language description `German`.
+      Löst einen Wert auf, indem ein Pfad vorangestellt wird und der aktuelle Wert aus einer Eigenschaft des Knotens unter dem aufgelösten Pfad übernommen wird. Beispielsweise könnte einem Wert `de` ein Pfad wie `/libs/wcm/core/resources/languages` vorangestellt werden, wobei der Wert der Eigenschaft `language` verwendet wird, um den Ländercode `de` zur Sprachbeschreibung `German` aufzulösen.
 
 * `resolverConfig`
 
@@ -645,7 +649,7 @@ N:definitions
 
       Verwenden Sie Eigenschaften, um die Konstanten zum Auflösen anzugeben. Der Name der Eigenschaft definiert die aufzulösende Konstante. Der Wert der Eigenschaft definiert den aufgelösten Wert.
 
-      For example a property with **Name**= `1` and **Value** `=One` will resolve 1 to One.
+      Beispiel: Eine Eigenschaft mit **Name**= `1` und **Wert** `=One` löst 1 zu 1 auf.
 
    * `default`
 
@@ -671,19 +675,19 @@ N:definitions
 
          Definiert den vorzuzeigenden Pfad.
 
-      * `propertyName` (mandatory)
+      * `propertyName` (obligatorisch)
 
          Definiert die Eigenschaft auf dem aufgelösten Pfad, in dem sich der tatsächliche Wert befindet.
 
       * `i18n` (fakultativ) Boolescher Typ)
 
-         Determines whether the resolved value should be *internationalized* (i.e. using [CQ5&#39;s internationalization services](/help/sites-administering/tc-manage.md)).
+         Bestimmt, ob der gelöste Wert *internationalisiert* sein soll (z. B. unter Verwendung der Internationalisierungsdienste [von CQ5](/help/sites-administering/tc-manage.md)).
 
 
 
 * `preprocessing`
 
-   Preprocessing is optional and can be bound (separately) to the processing phases *apply* or *applyAfter*:
+   Die Vorverarbeitung ist optional und kann (separat) an die Verarbeitungsphasen *apply* oder *applyAfter* gebunden werden:
 
    * `apply`
 
@@ -699,7 +703,7 @@ Die Resolver werden verwendet, um die erforderlichen Informationen zu extrahiere
 
 **Const**
 
-The following will resolve a contant value of `VersionCreated` to the string `New version created`.
+Im Folgenden wird der Inhaltswert `VersionCreated` in die Zeichenfolge `New version created` aufgelöst.
 
 Siehe `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
 
@@ -725,7 +729,7 @@ N:data
 
 **Pfad**
 
-The following resolves a path of `/content/.../page` to the content of the `jcr:title` property, this would mean that a page path is resolved to the page title.
+Im Folgenden wird ein Pfad von `/content/.../page` zum Inhalt der `jcr:title`-Eigenschaft aufgelöst. Dies bedeutet, dass ein Seitenpfad bis zum Seitentitel aufgelöst wird.
 
 Siehe `/libs/cq/reporting/components/auditreport/pagecol/definitions/data`.
 
@@ -739,7 +743,7 @@ N:data
 
 **Pfaderweiterung**
 
-The following prepends a value `de` with the path extension `/libs/wcm/core/resources/languages`, then takes the value from the property `language`, to resolve the country code `de` to the language description `German`.
+Im Folgenden wird einem Wert `de` mit der Pfaderweiterung `/libs/wcm/core/resources/languages` vorangestellt und anschließend der Wert aus der Eigenschaft `language` genommen, um den Ländercode `de` zur Sprachbeschreibung `German` aufzulösen.
 
 Siehe `/libs/cq/reporting/components/userreport/languagecol/definitions/data`.
 
@@ -757,13 +761,13 @@ Die Definition `preprocessing` kann wahlweise auf Folgendes angewendet werden:
 
 * Originalwert:
 
-   The preprocessing definition for the original value is specified on `apply` and/or `applyAfter` directly.
+   Die Vorverarbeitungsdefinition für den Originalwert wird direkt auf `apply` und/oder `applyAfter` angegeben.
 
 * Wert in seinem aggregierten Zustand:
 
    Bei Bedarf kann für jede Aggregation eine eigene Definition bereitgestellt werden.
 
-   To specify explicit preprocessing for aggregated values, the preprocessing definitions have to reside on a respective `aggregated` child node ( `apply/aggregated`, `applyAfter/aggregated`). Wenn eine explizite Vorverarbeitung für verschiedene Aggregate erforderlich ist, befindet sich die Vorverarbeitungsdefinition auf einem untergeordneten Knoten mit dem Namen des jeweiligen Aggregates (z. B. `apply/aggregated/min/max` oder anderen Aggregaten).
+   Um eine explizite Vorverarbeitung für aggregierte Werte anzugeben, müssen sich die Vorverarbeitungsdefinitionen auf einem entsprechenden untergeordneten Knoten ( `apply/aggregated`, `applyAfter/aggregated`) befinden. `aggregated` Wenn eine explizite Vorverarbeitung für verschiedene Aggregate erforderlich ist, befindet sich die Vorverarbeitungsdefinition auf einem untergeordneten Knoten mit dem Namen des jeweiligen Aggregates (z. B. `apply/aggregated/min/max` oder anderen Aggregaten).
 
 Sie können eine der folgenden bei der Vorverarbeitung zu verwendenden Optionen angeben:
 
@@ -771,7 +775,7 @@ Sie können eine der folgenden bei der Vorverarbeitung zu verwendenden Optionen 
 
 * [Datentypformatierung](#preprocessing-data-type-formatters)
 
-   Converts a numeric value into a relative string; for example, the value ``representing a time difference of 1 hour would be resolved to a string such as `1:24PM (1 hour ago)`.
+   Wandelt einen numerischen Wert in eine relative Zeichenfolge um; Beispielsweise würde der Wert &quot;für eine Zeitdifferenz von 1 Stunde&quot;in eine Zeichenfolge wie `1:24PM (1 hour ago)` aufgelöst.
 
 Beispiel:
 
@@ -786,9 +790,9 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Vorverarbeitung – Muster zum Suchen und Ersetzen {#preprocessing-find-and-replace-patterns}
+#### Vorverarbeitung – Muster zum Suchen und Ersetzen  {#preprocessing-find-and-replace-patterns}
 
-For preprocessing you can specify a `pattern` (defined as a [regular expression](https://en.wikipedia.org/wiki/Regular_expression) or regex) that is located and then substituted by the `replace` pattern:
+Bei der Vorverarbeitung können Sie einen `pattern` (definiert als [regulärer Ausdruck](https://en.wikipedia.org/wiki/Regular_expression) oder regex) angeben, der sich befindet und dann durch das `replace`-Muster ersetzt wird:
 
 * `pattern`
 
@@ -800,10 +804,10 @@ For preprocessing you can specify a `pattern` (defined as a [regular expression]
 
 Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 
-* For the node `definitions/data/preprocessing/apply` with the following two properties:
+* Für den Knoten `definitions/data/preprocessing/apply` mit den folgenden beiden Eigenschaften:
 
    * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+   * `replace`:  `$1`
 
 * Eine Zeichenfolge, die wie folgt vorliegt:
 
@@ -812,11 +816,11 @@ Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 * wird in vier Abschnitte unterteilt:
 
    * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+   * `$2` -  `(/jcr:content)` -  `/jcr:content`
+   * `$3` -  `(/|$)` -  `/`
+   * `$4` -  `(.*)` -  `par/text`
 
-* And replaced with the string represented by `$1`:
+* Ersetzt durch die Zeichenfolge `$1`:
 
    * `/content/geometrixx/en/services`
 
@@ -824,7 +828,7 @@ Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 
 Diese Formatierer konvertieren einen numerischen Wert in eine relative Zeichenfolge.
 
-For example, this can be used for a time column that allows `min`, `avg` and `max` aggregates. As `min`/ `avg`/ `max` aggregates are displayed as a *time difference* (e.g. `10 days ago`), they require a data formatter. For this, a `datedelta` formatter is applied to the `min`/ `avg`/ `max` aggregated values. Wenn auch ein Aggregat `count` verfügbar ist, dann ist dafür kein Formatierer erforderlich, ebenso wenig wie für den ursprünglichen Wert..
+Dies kann beispielsweise für eine Zeitspalte verwendet werden, die `min`-, `avg`- und `max`-Aggregat zulässt. Als `min`/ `avg`/ `max` Aggregat werden als *Zeitdifferenz* (z.B. `10 days ago`), benötigen sie einen Datenformatierer. Hierfür wird ein `datedelta`-Formatierer auf die aggregierten Werte `min`/ `avg`/ `max` angewendet. Wenn auch ein Aggregat `count` verfügbar ist, dann ist dafür kein Formatierer erforderlich, ebenso wenig wie für den ursprünglichen Wert..
 
 Derzeit sind die folgenden Datentypformatierer verfügbar:
 
@@ -836,7 +840,7 @@ Derzeit sind die folgenden Datentypformatierer verfügbar:
 
       Die Dauer ist der Zeitraum zwischen zwei definierten Daten. Beispiel: Beginn und Ende einer Workflow-Aktion, die eine Stunde gedauert hat – sie hat am 13.02.11 um 11:23 Uhr begonnen und endete eine Stunde später am 13.02.11 um 12:23 Uhr.
 
-      It converts a numeric value (interpreted as milliseconds) into a duration string; for example, `30000` is formatted as * `30s`.*
+      Es wandelt einen numerischen Wert (in Millisekunden) in eine Zeichenfolge für die Dauer um. Beispiel: `30000` ist als * `30s` formatiert.*
 
    * `datedelta`
 
@@ -844,7 +848,7 @@ Derzeit sind die folgenden Datentypformatierer verfügbar:
 
       Es konvertiert den numerischen Wert (interpretiert als Zeitdifferenz in Tagen) in eine relative Datumszeichenfolge. Beispielsweise wird „1“ als „1 day ago“ formatiert.
 
-The following example defines `datedelta` formatting for `min` and `max` aggregates:
+Im folgenden Beispiel wird die Formatierung für `min`- und `max`-Aggregat definiert:`datedelta`
 
 ```xml
 N:definitions
@@ -897,7 +901,7 @@ N:definitions
    * `sortable`
 
       Diese Option wird für Werte verwendet, die unterschiedliche Werte (aus unterschiedlichen Eigenschaften) zum Sortieren und Anzeigen verwenden.
-   Zusätzlich kann any of the above can be defined as multi value; for example, `string[]` defines an array of strings.
+   Zusätzlich kann die oben genannten Werte können als &quot;Mehrwert&quot;definiert werden; Zum Beispiel definiert `string[]` ein Zeichenfolgen-Array.
 
    Der Werte-Extractor wird durch den Spaltentyp ausgewählt. Wenn für einen Spaltentyp ein Werte-Extractor verfügbar ist, dann wird dieser verwendet. Andernfalls wird der standardmäßige Werte-Extractor verwendet.
 
@@ -906,13 +910,13 @@ N:definitions
    * `timeslot` – Die Werte sind mit den entsprechenden Konstanten von `java.utils.Calendar` vergleichbar.
 
       * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+      * `timeslot:month-of-year` -  `Calendar.MONTH`
+      * `timeslot:week-of-year` -  `Calendar.WEEK_OF_YEAR`
+      * `timeslot:day-of-month` -  `Calendar.DAY_OF_MONTH`
+      * `timeslot:day-of-week` -  `Calendar.DAY_OF_WEEK`
+      * `timeslot:day-of-year` -  `Calendar.DAY_OF_YEAR`
+      * `timeslot:hour-of-day` -  `Calendar.HOUR_OF_DAY`
+      * `timeslot:minute-of-hour` -  `Calendar.MINUTE`
 
 
 * `groupable`
@@ -1006,7 +1010,7 @@ N:defaults
 
 * `aggregate`
 
-   Valid `aggregate` values are the same as for `type` under `aggregates` (see [Column Specific Definitions (definitions - filters / aggregates)](#column-specific-definitions) ).
+   Gültige `aggregate`-Werte sind dieselben wie für `type` unter `aggregates` (siehe [Spaltenspezifische Definitionen (Definitionen - Filter/Aggregat)](#column-specific-definitions) ).
 
 ### Ereignisse und Aktionen {#events-and-actions}
 
@@ -1034,11 +1038,11 @@ Generische Spalten sind eine Erweiterung, bei der (die meisten) Spaltendefinitio
 
 Sie weisen ein (standardmäßiges) Dialogfeld auf, das Sie für eine einzelne generische Komponente anpassen. Über dieses Dialogfeld können Berichtsbenutzer die Spalteneigenschaften einer generischen Spalte auf der Berichtsseite definieren (über den Menüpunkt **Spalteneigenschaften**).
 
-An example is the **Generic** column of the **User Report**; see `/libs/cq/reporting/components/userreport/genericcol`.
+Ein Beispiel ist die Spalte **Generisch** des **Benutzerberichts**; siehe `/libs/cq/reporting/components/userreport/genericcol`.
 
 Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
-* Set the `type` property of the column&#39;s `definition` node to `generic`.
+* Legen Sie die `type`-Eigenschaft des `definition`-Knotens der Spalte auf `generic` fest.
 
    Siehe `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
@@ -1056,7 +1060,7 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
    Siehe `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
-* Verwenden Sie Standard-AEM-Methoden, um (zusätzliche) Spalteneigenschaften zu definieren.
+* Verwenden Sie AEM Standardmethoden, um (zusätzliche) Spalteneigenschaften zu definieren.
 
    Beachten Sie, dass bei Eigenschaften, die sowohl für die Komponenten- als auch für Spalteninstanz definiert sind, der Wert für die Spalteninstanz Vorrang hat.
 
@@ -1066,10 +1070,11 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
    * `definitions/aggregates` - Aggregate
    * `definitions/filters` - filters
    * `definitions/type` –   – der Typ der Spalte (dieser muss über das Dialogfeld definiert werden, entweder über eine Auswahl/ein Kombinationsfeld oder ein ausgeblendetes Feld)
-   * `definitions/data/resolver` und `definitions/data/resolverConfig` (aber nicht `definitions/data/preprocessing` oder `.../clientFilter`) - der Auflöser und die Konfiguration
+   * `definitions/data/resolver` und  `definitions/data/resolverConfig` (aber nicht  `definitions/data/preprocessing` oder  `.../clientFilter`) - der Auflöser und die Konfiguration
    * `definitions/queryBuilder` - Abfrage Builder-Konfiguration
    * `defaults/aggregate` - das Standard-Aggregat
-   In the case of a new instance of the generic column on the **User Report** the properties defined with the dialog are persisted under:
+
+   Bei einer neuen Instanz der generischen Spalte im **Benutzerbericht** bleiben die mit dem Dialogfeld definierten Eigenschaften erhalten unter:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
@@ -1079,15 +1084,15 @@ Mit dem Design wird festgelegt, welche Spaltentypen für die Erstellung eines Be
 
 Es wird dringend empfohlen, für jeden Bericht ein eigenes Design zu erstellen. Damit ist eine umfassende Flexibilität gewährleistet. Siehe auch [Definieren neuer Berichte](#defining-your-new-report).
 
-The default reporting components are held under `/etc/designs/reports`.
+Die Standardkomponenten für Berichte befinden sich unter `/etc/designs/reports`.
 
 Der Speicherort für Ihre Berichte ist ggf. davon abhängig, wo sich Ihre Komponenten befinden:
 
-* `/etc/designs/reports/<yourReport>` ist geeignet, wenn der Bericht unter `/apps/cq/reporting`
+* `/etc/designs/reports/<yourReport>` ist geeignet, wenn der Bericht unter  `/apps/cq/reporting`
 
-* `/etc/designs/<yourProject>/reports/<*yourReport*>` für Berichte mit dem `/apps/<yourProject>/reports` Muster
+* `/etc/designs/<yourProject>/reports/<*yourReport*>` für Berichte mit  `/apps/<yourProject>/reports` Mustern
 
-Erforderliche Designeigenschaften werden registriert `jcr:content/reportpage/report/columns` (z. B. `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`):
+Erforderliche Designeigenschaften werden unter `jcr:content/reportpage/report/columns` registriert (z. B. `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`):
 
 * `components`
 
@@ -1095,7 +1100,7 @@ Erforderliche Designeigenschaften werden registriert `jcr:content/reportpage/rep
 
 * `sling:resourceType`
 
-   Eigenschaft mit Wert `cq/reporting/components/repparsys`.
+   Eigenschaft mit dem Wert `cq/reporting/components/repparsys`.
 
 Ein Beispiel für ein Designsnippet (aus dem Design des Komponentenberichts):
 
@@ -1129,16 +1134,16 @@ Die Angabe von Designs für einzelne Spalten ist nicht erforderlich. Verfügbare
 >
 >Standardspalten können beim Erstellen eines Berichts automatisch erstellt werden. Diese werden in der Vorlage angegeben.
 
-## Berichtsvorlage {#report-template}
+## Berichtsvorlage  {#report-template}
 
 Jeder Berichtstyp muss eine Vorlage bereitstellen. Dabei handelt es sich um die standardmäßigen [CQ-Vorlagen](/help/sites-developing/templates.md), die auch als solche konfiguriert werden können.
 
 Die Vorlage muss:
 
-* set the `sling:resourceType` to `cq/reporting/components/reportpage`
+* setzen Sie `sling:resourceType` auf `cq/reporting/components/reportpage`
 
 * das zu verwendende Design angeben.
-* create a `report` child node that references the container ( `reportbase`) component by means of the `sling:resourceType` property
+* Erstellen Sie einen untergeordneten Knoten `report`, der mithilfe der `sling:resourceType`-Eigenschaft auf die Container-Komponente ( `reportbase`) verweist.
 
 Ein Beispiel für ein Vorlagensnippet (aus der Komponentenberichtsvorlage):
 
@@ -1171,9 +1176,9 @@ Beispiel für ein Vorlagensnippet, das die Definition des Stammpfads (aus der Be
 <!-- .. -->
 ```
 
-The default reporting templates are held under `/libs/cq/reporting/templates`.
+Die Standardvorlagen für Berichte befinden sich unter `/libs/cq/reporting/templates`.
 
-However, it is strongly recommended that you do not update these nodes, but create your own component nodes under `/apps/cq/reporting/templates` or if more appropriate `/apps/<yourProject>/reports/templates`.
+Es wird jedoch dringend empfohlen, diese Knoten nicht zu aktualisieren, sondern eigene Komponentenknoten unter `/apps/cq/reporting/templates` oder, falls zutreffend, `/apps/<yourProject>/reports/templates` zu erstellen.
 
 Dabei gilt beispielsweise Folgendes (siehe auch [Speicherort von Berichtskomponenten](#location-of-report-components)):
 
@@ -1215,7 +1220,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
 1. Erstellen Sie den Stammknoten für Ihren neuen Bericht.
 
-   Zum Beispiel unter `/apps/cq/reporting/components/osgireport`.
+   Beispiel: Unter `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:cq [nt:folder]
@@ -1224,7 +1229,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
                N:osgireport [sling:Folder]
    ```
 
-1. Definieren Sie Ihren Berichtsstamm. Beispiel `osgireport[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
+1. Definieren Sie Ihren Berichtsstamm. Beispiel: `osgireport[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1272,11 +1277,11 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
    Damit wird eine reportbase-Komponente definiert, die:
 
-   * searches for all nodes of type `sling:OsgiConfig`
-   * displays both `pie` and `lineseries` charts
+   * sucht nach allen Knoten des Typs `sling:OsgiConfig`
+   * zeigt sowohl `pie`- als auch `lineseries`-Diagramme an
    * den Benutzern ein Dialogfeld zum Konfigurieren des Berichts bereitstellt.
 
-1. Definieren Sie Ihre erste Spaltenkomponente („columnbase“). Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
+1. Definieren Sie Ihre erste Spaltenkomponente („columnbase“). Beispiel: `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1307,14 +1312,15 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    Damit wird eine columnbase-Komponente definiert, die:
 
    * den Wert sucht und zurückgibt, den sie vom Server erhält. In diesem Fall die Eigenschaft `jcr:path` für jeden Knoten `sling:OsgiConfig`.
-   * provides the `count` aggregate
+   * stellt das Aggregat `count` bereit
    * nicht gruppierbar ist.
    * den Titel `Bundle` aufweist (Spaltentitel in der Tabelle)
-   * is in the sidekick group `OSGi Report`
+   * befindet sich in der Sidekick-Gruppe `OSGi Report`
    * bei bestimmten Ereignissen aktualisiert wird.
+
    >[!NOTE]
    >
-   >In this example there are no definitions of `N:data` and `P:clientFilter`. Das liegt daran, dass der vom Server empfangene Wert 1:1 zurückgegeben wird – dies ist das Standardverhalten.
+   >In diesem Beispiel gibt es keine Definitionen von `N:data` und `P:clientFilter`. Das liegt daran, dass der vom Server empfangene Wert 1:1 zurückgegeben wird – dies ist das Standardverhalten.
    >
    >Dies entspricht den Definitionen:
    >
@@ -1326,7 +1332,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    >
    >Dabei gibt die Funktion einfach den Wert zurück, den sie erhält.
 
-1. Definieren Sie Ihr Berichtsdesign. Beispiel `osgireport[cq:Page]` unter `/etc/designs/reports`.
+1. Definieren Sie Ihr Berichtsdesign. Beispiel: `osgireport[cq:Page]` unter `/etc/designs/reports`.
 
    ```xml
    N:osgireport [cq:Page]
@@ -1342,7 +1348,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
 1. Erstellen Sie den Stammknoten für Ihre neue Berichtsvorlage.
 
-   Zum Beispiel unter `/apps/cq/reporting/templates/osgireport`.
+   Beispiel: Unter `/apps/cq/reporting/templates/osgireport`.
 
    ```xml
    N:cq [nt:folder]
@@ -1351,7 +1357,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
                N:osgireport [cq:Template]
    ```
 
-1. Definieren Sie Ihre Berichtsvorlage. Beispiel `osgireport[cq:Template]` unter `/apps/cq/reporting/templates`.
+1. Definieren Sie Ihre Berichtsvorlage. Beispiel: `osgireport[cq:Template]` unter `/apps/cq/reporting/templates`.
 
    ```xml
    N:osgireport [cq:Template]
@@ -1371,7 +1377,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
    Damit wird eine Vorlage definiert, die:
 
-   * defines the `allowedPaths` for the resulting reports - in the above case anywhere under `/etc/reports`
+   * definiert das `allowedPaths` für die resultierenden Berichte - in diesem Fall an einer beliebigen Stelle unter `/etc/reports`
    * Titel und Beschreibungen für die Vorlage bereitstellt.
    * eine Miniaturansicht für die Verwendung in der Vorlagenliste bereitstellt (die vollständige Definition dieses Knotens ist oben nicht aufgeführt – am einfachsten lässt sich eine Instanz von „thumbnail.png“ aus einem vorhandenen Bericht kopieren).
 
@@ -1388,7 +1394,7 @@ Sie können nun eine Instanz Ihres neuen Berichts erstellen:
 
    >[!NOTE]
    >
-   >Da bei diesem Beispiel keine gruppierbaren Spalten gibt, sind die Diagramme nicht verfügbar. To see charts, set `groupable` to `true`:
+   >Da bei diesem Beispiel keine gruppierbaren Spalten gibt, sind die Diagramme nicht verfügbar. Um Diagramme anzuzeigen, setzen Sie `groupable` auf `true`:
    >
    >
    ```
@@ -1402,9 +1408,9 @@ Sie können nun eine Instanz Ihres neuen Berichts erstellen:
 
 In diesem Abschnitt werden die erweiterten Konfigurationsoptionen für die OSGi-Dienste beschrieben, die das Framework für die Berichterstellung implementieren.
 
-These can be viewed using the Configuration menu of the web console (available for example at `http://localhost:4502/system/console/configMgr`). Bei AEM können Sie die Konfigurationseinstellungen für Dienste dieser Art auf unterschiedliche Weise vornehmen. Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Diese können über das Konfigurationsmenü der Webkonsole angezeigt werden (verfügbar z. B. unter `http://localhost:4502/system/console/configMgr`). Bei AEM können Sie die Konfigurationseinstellungen für Dienste dieser Art auf unterschiedliche Weise vornehmen. Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-### Grundlegender Dienst („Day CQ Reporting Configuration“) {#basic-service-day-cq-reporting-configuration}
+### Grundlegender Dienst („Day CQ Reporting Configuration“)  {#basic-service-day-cq-reporting-configuration}
 
 * **Zeitzone** definiert die Zeitzone, für die Verlaufsdaten erstellt werden. Damit soll sichergestellt werden, dass das Diagramm mit den Verlaufsdaten für jeden Benutzer weltweit dieselben Daten anzeigt.
 * **Gebietsschema** definiert das Gebietsschema, das in Verbindung mit der **Zeitzone** für Verlaufsdaten verwendet werden soll. Das Gebietsschema wird verwendet, um einige gebietsschemaspezifische Kalendereinstellungen festzulegen (z. B. ob der erste Tag der Woche Sonntag oder Montag ist).
@@ -1428,7 +1434,7 @@ These can be viewed using the Configuration menu of the web console (available f
 
 * **Momentaufnahmenbenutzer erzwingen** – wenn diese Option aktiviert ist, werden alle Momentaufnahmen mit dem unter *Momentaufnahmenbenutzer* angegebenen Benutzer gemacht. Dies kann schwerwiegende Auswirkungen auf die Sicherheit haben, wenn es nicht richtig gehandhabt wird.
 
-### Cache Settings (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
+### Cache-Einstellungen (Day CQ-Berichte-Cache) {#cache-settings-day-cq-reporting-cache}
 
 * **Aktivieren** ermöglicht es Ihnen, das Caching von Berichtsdaten zu aktivieren bzw. zu deaktivieren. Das Aktivieren des Berichtcaches hält die Berichtsdaten während mehrerer Anforderungen im Speicher vor. Damit lässt sich zwar die Leistung steigern, allerdings wird auch mehr Speicherplatz beansprucht, was in unter extremen Umständen zu Speicherausfällen führen kann.
 * **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Mit einem höheren Wert wird zwar die Leistung gesteigert, ggf. werden dann aber ungenaue Daten zurückgegeben, wenn sich die Daten innerhalb des Zeitraums ändern.
@@ -1440,6 +1446,7 @@ These can be viewed using the Configuration menu of the web console (available f
 >
 >* entweder für einen Bericht für zwei Benutzer mit unterschiedlichen Spracheinstellungen
 >* oder für einen Benutzer und zwei Berichte
+
 >
 
 
