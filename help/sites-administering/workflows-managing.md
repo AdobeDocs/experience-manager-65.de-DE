@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 90%
 
 ---
 
@@ -49,9 +52,9 @@ Workflow-Modelle übernehmen (erben) die Standard-Zugriffssteuerungsliste (ACL, 
 >
 >Weitere Informationen zur Verwendung von CRXDE Lite, um ACLs zu konfigurieren, finden Sie in [Verwalten von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-### Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
+### Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models  {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-If the workflow model is stored within `/var/workflow/models` then you can assign a specific ACL, relevant to only that workflow, on the folder:
+Wenn das Workflow-Modell in `/var/workflow/models` gespeichert ist, können Sie eine spezifische ACL zuweisen, die nur für diesen Workflow relevant ist:
 
 1. Öffnen Sie CRXDE Lite im Webbrowser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Wählen Sie in der Knotenstruktur den Knoten für den Ordner der Workflow-Modelle aus:
@@ -62,13 +65,14 @@ If the workflow model is stored within `/var/workflow/models` then you can assig
 1. Klicken Sie in der Tabelle **Richtlinien zur lokalen Zugriffssteuerung** (**Zugriffssteuerungsliste**) auf das Plussymbol, um einen Eintrag hinzuzufügen ****.
 1. Fügen Sie im Dialogfeld **Neuen Eintrag hinzufügen** einen neuen ACE mit folgenden Eigenschaften hinzu:
 
-   * **Grundsatz**: `content-authors`
+   * **Grundsatz**:  `content-authors`
    * **Typ**: `Deny`
-   * **Berechtigungen**: `jcr:read`
+   * **Berechtigungen**:  `jcr:read`
    * **rep:glob**: Verweis auf den spezifischen Workflow
+
    ![wf-108](assets/wf-108.png)
 
-   The **Access Control List** table now includes the restriction for `content-authors` on the `prototype-wfm-01` workflow model.
+   Die Liste **Zugriffskontrolle** enthält jetzt die Einschränkung für `content-authors` für das Workflow-Modell `prototype-wfm-01`.
 
    ![wf-109](assets/wf-109.png)
 
@@ -98,16 +102,17 @@ Sie können dann dem Ordner selbst eine ACL hinzufügen.
 1. Klicken Sie in der Tabelle **Richtlinien zur lokalen Zugriffssteuerung** (**Zugriffssteuerungsliste**) auf das Plussymbol, um einen Eintrag hinzuzufügen ****.
 1. Fügen Sie im Dialogfeld **Neuen Eintrag hinzufügen** einen neuen ACE mit folgenden Eigenschaften hinzu:
 
-   * **Grundsatz**: `content-authors`
+   * **Grundsatz**:  `content-authors`
    * **Typ**: `Deny`
-   * **Berechtigungen**: `jcr:read`
+   * **Berechtigungen**:  `jcr:read`
+
    >[!NOTE]
    >
    >Wie im Abschnitt [Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) können Sie ein „rep:glob“ einfügen, um den Zugriff auf einen spezifischen Workflow zu beschränken.
 
    ![wf-110](assets/wf-110.png)
 
-   The **Access Control List** table now includes the restriction for `content-authors` on the `prototypes` folder.
+   Die Liste **Zugriffskontrolle** enthält jetzt die Einschränkungen für `content-authors` im Ordner `prototypes`.
 
    ![wf-111](assets/wf-111.png)
 
