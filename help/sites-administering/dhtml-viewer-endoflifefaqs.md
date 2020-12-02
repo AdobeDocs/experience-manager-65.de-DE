@@ -55,7 +55,7 @@ Um zu bestimmen, ob der Viewer Ihres Unternehmens DHTML verwendet und daher von 
 
 1. Ihr Unternehmen einen Viewer verwendet, der basierend auf einem standardmäßigen Scene7-Viewer aus dieser Tabelle erstellt wurde, bei dem die „Viewer-Technologie“ als „DHTML“ angegeben ist:
 
-   [https://help.adobe.com/de_DE/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/de_DE/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+   [https://help.adobe.com/de_DE/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
 1. Ihr Unternehmen einen benutzerdefinierten Viewer verwendet, der auf Grundlage der JSP-basierten DHTML-Lösung erstellt wurde:
 
@@ -102,10 +102,10 @@ Wenn Sie nach wie vor unsicher sind, ob das HTML5-Viewer-SDK Ihre Anforderungen 
 
 Um Ihre Viewer auf die HTML5-Plattform umzustellen, bietet Scene7 die folgenden Optionen:
 
-1. Verwenden Sie einen der standardmäßigen HTML5-Viewer von Scene7, die hier zu finden sind: [https://microsite.omniture.com/t2/help/de_DE/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/de_DE/s7/vlist/vlist.html)
+1. Verwenden Sie einen der standardmäßigen HTML5-Viewer von Scene7, die hier zu finden sind: [https://microsite.omniture.com/t2/help/de_DE/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 1. Konfigurieren Sie einen der standardmäßigen Scene7-HTML5-Viewer gemäß der SPS-Anwendungseinstellungen. Dies ermöglicht Ihnen die Anpassung von Viewer-Größe, Übergängen, Zoomverhalten usw.: [https://help.adobe.com/de_DE/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/de_DE/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
 1. Passen Sie das Erscheinungsbild der standardmäßigen HTML5-Viewer von Scene7 benutzerdefiniert an, indem Sie CSS modifizieren, um das visuelle Design wie die Schaltflächengestaltung, die Positionierungen, die Transparenz, Hintergrundfarben usw. zu ändern: [https://microsite.omniture.com/t2/help/de_DE/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/de_DE/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
-1. Erstellen Sie von Grund auf einen benutzerdefinierten HTML5-Viewer mithilfe des SDK, das hier heruntergeladen werden kann: [https://help.adobe.com/de_DE/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/de_DE/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). Sie können mit Professional Services interagieren, um einen benutzerdefinierten Viewer zu erstellen, oder Ihr Web-Entwicklungs-Team kann einen solchen Viewer entwickeln.
+1. Erstellen Sie von Grund auf einen benutzerdefinierten HTML5-Viewer mithilfe des SDK, das hier heruntergeladen werden kann: [https://help.adobe.com/de_DE/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). Sie können mit Professional Services interagieren, um einen benutzerdefinierten Viewer zu erstellen, oder Ihr Web-Entwicklungs-Team kann einen solchen Viewer entwickeln.
 
 **Wie sieht es mit Browsern aus, die HTML5 nicht unterstützen?**
 
@@ -131,4 +131,4 @@ Auch wenn Sie den DHTML-Viewer weiterhin bei der Produktion einsetzen können, i
 
 **An wen kann ich mich wenden, um weitere Informationen zu erhalten?**
 
-Wenn diese FAQ nicht alle Ihre Fragen beantwortet haben, [verwenden Sie die Admin Console, um einen Supportfall](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) zu erstellen, oder wenden Sie sich an Ihren Kundenbetreuer.
+Wenn diese FAQ nicht alle Ihre Fragen beantwortet haben, verwenden Sie bitte [die Admin Console, um einen Supportfall zu erstellen](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) oder wenden Sie sich an Ihren Kundenbetreuer.
