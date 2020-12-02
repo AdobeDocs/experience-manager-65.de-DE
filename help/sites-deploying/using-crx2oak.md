@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 translation-type: tm+mt
 source-git-commit: 24290b65a126822eb918fbecc978372394b5b655
+workflow-type: tm+mt
+source-wordcount: '1267'
+ht-degree: 70%
 
 ---
 
@@ -53,7 +56,7 @@ Das Tool kann auch separat ausgeführt werden, für den Fall, dass eine umfassen
 
 Eine weitere Besonderheit besteht darin, dass mit den Standardeinstellungen des Standalone-Modus nur der Knotenspeicher migriert wird und dass das neue Repository den alten Binärspeicher wiederverwendet.
 
-### Automatisierter Quickstart-Modus {#automated-quickstart-mode}
+### Automatisierter Quickstart-Modus  {#automated-quickstart-mode}
 
 Ab AEM 6.3 kann das CRX2OAK-Tool benutzerdefinierte Migrationsprofile verarbeiten. Diese können so konfiguriert werden, dass alle Migrationsoptionen bereits verfügbar sind. Damit wird die Flexibilität gesteigert und eine Automatisierung der AEM-Konfiguration ermöglicht. Funktionen wie diese stehen nicht zur Verfügung, wenn Sie das Tool im Standalone-Modus verwenden.
 
@@ -71,11 +74,11 @@ export SLING_HOME="/path/to/crx-quickstart"
 SET "SLING_HOME=/path/to/crx-quickstart"
 ```
 
-#### Unterstützung für die Fortsetzung der Migration {#resume-support}
+#### Unterstützung für die Fortsetzung der Migration  {#resume-support}
 
 Die Migration kann jederzeit unterbrochen und anschließend wieder fortgesetzt werden.
 
-#### Anpassbare Aktualisierungslogik {#customizable-upgrade-logic}
+#### Anpassbare Aktualisierungslogik  {#customizable-upgrade-logic}
 
 Mithilfe von `CommitHooks` kann auch eine benutzerdefinierte Java-Logik implementiert werden. Benutzerdefinierte `RepositoryInitializer`-Klassen können implementiert werden, um das Repository mit benutzerdefinierten Werten zu initialisieren.
 
@@ -85,17 +88,17 @@ CRX2OAK unterstützt standardmäßig auch Speicherzuordnungsvorgänge. Durch die
 
 >[!CAUTION]
 >
->Beachten Sie jedoch, dass Speicherzuordnungsvorgänge für Windows-Plattformen nicht unterstützt werden. Therefore, it is recommended to add the **--disable-mmap** parameter when performing the migration on Windows.
+>Beachten Sie jedoch, dass Speicherzuordnungsvorgänge für Windows-Plattformen nicht unterstützt werden. Es wird daher empfohlen, den Parameter **—disable-mmap** bei der Migration unter Windows hinzuzufügen.
 
 #### Selektive Migration von Inhalten {#selective-migration-of-content}
 
-By default, the tool migrates the whole repository under the `"/"` path. Sie haben jedoch die vollständige Kontrolle darüber, welche Inhalte migriert werden sollen.
+Standardmäßig migriert das Tool das gesamte Repository unter dem Pfad `"/"`. Sie haben jedoch die vollständige Kontrolle darüber, welche Inhalte migriert werden sollen.
 
-If there is any part of the content that is not required on the new instance, you can use the `--exclude-path` parameter to exclude the content and optimize the upgrade procedure.
+Wenn für die neue Instanz ein Teil des Inhalts nicht erforderlich ist, können Sie den Parameter `--exclude-path` verwenden, um den Inhalt auszuschließen und den Aktualisierungsvorgang zu optimieren.
 
 #### Zusammenführung von Pfaden {#path-merging}
 
-If data needs to be copied between two repositories and you have a content path that is different on both instances, you can define it in the `--merge-path` parameter. CRX2OAK kopiert dann nur die neuen Knoten in das Ziel-Repository und behält die alten im anderen Repository bei.
+Wenn Daten zwischen zwei Repositorys kopiert werden müssen und Sie über einen Content-Pfad verfügen, der in beiden Instanzen unterschiedlich ist, können Sie sie im Parameter `--merge-path` definieren. CRX2OAK kopiert dann nur die neuen Knoten in das Ziel-Repository und behält die alten im anderen Repository bei.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -105,11 +108,11 @@ Standardmäßig erstellt AEM eine Version jedes Knotens oder jeder Seite, der bz
 
 Allerdings werden diese Versionen nie bereinigt, auch wenn die Originalseite gelöscht wird. Bei Repositorys, die bereits lange Zeit verwendet werden, muss bei der Migration möglicherweise ein hohes Volumen von redundanten Daten verarbeitet werden. Schuld daran sind verwaiste Versionen.
 
-A useful feature for these types of situations is the addition of the `--copy-versions` parameter. Sie kann zum Überspringen der Versionsknoten während der Migration oder zum Kopieren eines Repositorys verwendet werden.
+Eine nützliche Funktion für diese Arten von Situationen ist das Hinzufügen des Parameters `--copy-versions`. Sie kann zum Überspringen der Versionsknoten während der Migration oder zum Kopieren eines Repositorys verwendet werden.
 
-You can also choose whether to copy orphaned versions by adding `--copy-orphaned-versions=true`.
+Sie können auch festlegen, ob verwaiste Versionen kopiert werden sollen, indem Sie `--copy-orphaned-versions=true` hinzufügen.
 
-Both parameters also support a `YYYY-MM-DD` date format, in case you want to copy versions no later than a specific date.
+Beide Parameter unterstützen auch das Datumsformat `YYYY-MM-DD`, falls Sie Versionen spätestens zu einem bestimmten Datum kopieren möchten.
 
 ![chlimage_1-153](assets/chlimage_1-153.png)
 
@@ -121,7 +124,7 @@ Eine Open-Source-Version von CRX2OAK ist als „Oak-Upgrade“ verfügbar. Es un
 * Unterstützung für Migrationsprofilen
 * Unterstützung für die automatisierte AEM-Neukonfiguration
 
-See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.html) for more information.
+Weitere Informationen finden Sie in der [Apache-Dokumentation](https://jackrabbit.apache.org/oak/docs/migration.html).
 
 ## Parameter {#parameters}
 
@@ -136,7 +139,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--user`: Der Benutzer für die Ziel-RDB
 
-* `--password`: Kennwort für die Ziel-RDB.
+* `--password`: Kennwort für die Zielgruppe RDB.
 
 ### Migrationsoptionen {#migration-options}
 
@@ -144,39 +147,39 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 * `--fail-on-error`: Erzwingt ein Fehlschlagen der Migration, wenn die Knoten nicht aus dem Quell-Repository gelesen werden können.
 * `--ldap`: Migriert LDAP-Benutzer von einer CQ 5.x-Instanz zu einer Oak-basierten Instanz. Dies funktioniert jedoch nur, wenn der Identitätsanbieter in der Oak-Konfiguration als „ldap“ angegeben ist. Weitere Informationen finden Sie in der [LDAP-Dokumentation](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Verwenden Sie dies in Verbindung mit dem `--ldap` Parameter für CQ 5.x-Repositorys, die mehrere LDAP-Server zur Authentifizierung verwendet haben. You can use it to point to the CQ 5.x `ldap_login.conf` or `jaas.conf` configuration files. Das Format ist `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Verwenden Sie dies in Verbindung mit dem  `--ldap` Parameter für CQ 5.x-Repositorys, die mehrere LDAP-Server zur Authentifizierung verwendet haben. Sie können damit auf die Konfigurationsdateien von CQ 5.x `ldap_login.conf` oder `jaas.conf` verweisen. Das Format ist `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Optionen für die Versionsspeicherung {#version-store-options}
 
-* `--copy-orphaned-versions`: Überspringt Kopieren verwaister Versionen. Parameters supported are: `true`, `false` and `yyyy-mm-dd`. Standardwert ist `true`.
+* `--copy-orphaned-versions`: Überspringt Kopieren verwaister Versionen. Folgende Parameter werden unterstützt: `true`, `false` und `yyyy-mm-dd`. Standardwert ist `true`.
 
-* `--copy-versions:` Kopiert den Versionsspeicher. Parameters: `true`, `false`, `yyyy-mm-dd`. Standardwert ist `true`.
+* `--copy-versions:` Kopiert die Datenspeicherung der Version. Parameter: `true`, `false`, `yyyy-mm-dd`. Standardwert ist `true`.
 
 #### Pfadoptionen {#path-options}
 
-* `--include-paths:` Kommagetrennte Liste der Pfade, die beim Kopieren einbezogen werden sollen
-* `--merge-paths`: Kommagetrennte Liste der beim Kopieren zusammenzuführenden Pfade
+* `--include-paths:` Kommagetrennte Liste von Pfaden, die beim Kopieren einbezogen werden sollen
+* `--merge-paths`: Durch Kommas getrennte Liste von Pfaden, die beim Kopieren zusammengeführt werden sollen
 * `--exclude-paths:` Eine kommagetrennte Liste der beim Kopieren auszuschließenden Pfade.
 
 ### Quell BLOB-Speicheroptionen {#source-blob-store-options}
 
-* `--src-datastore:` Der als Quelle zu verwendende Datenspeicher-Ordner `FileDataStore`
+* `--src-datastore:` Der als Quelle zu verwendende Datenspeicher-Ordner  `FileDataStore`
 
-* `--src-fileblobstore`: Der als Quelle zu verwendende Datenspeicher-Ordner `FileBlobStore`
+* `--src-fileblobstore`: Der als Quelle zu verwendende Datenspeicher-Ordner  `FileBlobStore`
 
-* `--src-s3datastore`: Der für die Quelle zu verwendende Datenspeicher-Ordner `S3DataStore`
+* `--src-s3datastore`: Der für die Quelle zu verwendende Datenspeicher-Ordner  `S3DataStore`
 
-* `--src-s3config`: Die Konfigurationsdatei für die Quelle `S3DataStore`.
+* `--src-s3config`: Die Konfigurationsdatei für die Quelle  `S3DataStore`.
 
 ### Ziel BLOB-Speicheroptionen {#destination-blobstore-options}
 
-* `--datastore:` Der als Ziel zu verwendende Datenspeicher-Ordner `FileDataStore`
+* `--datastore:` Der als Zielgruppe zu verwendende Datenspeicherordner  `FileDataStore`
 
-* `--fileblobstore:` Der als Ziel zu verwendende Datenspeicher-Ordner `FileBlobStore`
+* `--fileblobstore:` Der als Zielgruppe zu verwendende Datenspeicherordner  `FileBlobStore`
 
-* `--s3datastore`: Der für das Ziel zu verwendende Datenspeicher-Ordner `S3DataStore`
+* `--s3datastore`: Der für die Zielgruppe zu verwendende Datenspeicherordner  `S3DataStore`
 
-* `--s3config`: Die Konfigurationsdatei für das Ziel `S3DataStore`.
+* `--s3config`: Die Konfigurationsdatei für die Zielgruppe  `S3DataStore`.
 
 ### Hilfeoptionen {#help-options}
 
@@ -194,11 +197,11 @@ Sie können für den Migrationsvorgang auch Informationen zur Fehlerbehebung akt
   </tr>
   <tr>
    <td>Quickstart-Modus</td>
-   <td>You can add the <strong>--log-level TRACE</strong> or <strong>--log-level DEBUG </strong>options to the command line when running CRX2Oak. In this mode logs are automatically redirected to the <strong>upgrade.log file</strong>.</td>
+   <td>Sie können die Optionen <strong>—log-level TRACE</strong> oder <strong>—log-level DEBUG </strong>zur Befehlszeile hinzufügen, wenn CRX2Oak ausgeführt wird. In diesem Modus werden Protokolle automatisch zur Datei <strong>upgrade.log</strong> umgeleitet.</td>
   </tr>
   <tr>
    <td>Standalone-Modus</td>
-   <td><p>Add the <strong>--trace</strong> options to the CRX2Oak command line to show TRACE events on standard output (you need to redirect logs yourself using redirection character: '&gt;' or 'tee' command for later inspection).</p> </td>
+   <td><p>hinzufügen Sie die Optionen <strong>—trace</strong> in die CRX2Oak-Befehlszeile, um TRACE-Ereignis in der Standardausgabe anzuzeigen (Sie müssen die Protokolle selbst mithilfe des Umleitungszeichens umleiten: '&gt;' oder 'tee' Befehl für spätere Überprüfung).</p> </td>
   </tr>
  </tbody>
 </table>
