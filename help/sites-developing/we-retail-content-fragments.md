@@ -20,23 +20,23 @@ ht-degree: 79%
 
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (wie in einer vordefinierten AEM-Instanz verfügbar) stellt das Fragment **Arctic Surfing in Lofoten** als Grundmuster bereit. Dies verdeutlicht:
+Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail**  (wie in einer vordefinierten Instanz von AEM verfügbar) bietet das Fragment  **Arctic Surfing in** Lofotenas ein einfaches Beispiel. Dies verdeutlicht:
 
 * Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen.
 
-   * See [Where to Find Content Fragment assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
+   * Siehe [Wo finden Sie Inhaltsfragment-Elemente in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
 * Sie können [diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten](/help/sites-authoring/content-fragments.md) verwenden.
 
-   * See [Where Content Fragments are Used in We.Retail](#where-content-fragments-are-used-in-we-retail)
+   * Siehe [Wo Inhaltsfragmente in We.Retail](#where-content-fragments-are-used-in-we-retail) verwendet werden
 
 Die vollständige Dokumentation zum Erstellen, Verwalten, Nutzen und Entwickeln von Inhaltsfragmenten:
 
-* See [Further Information](#further-information)
+* Siehe [Weitere Informationen](#further-information)
 
 >[!NOTE]
 >
->**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)**sind unterschiedliche Funktionen in AEM:
+>**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
@@ -47,11 +47,11 @@ Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, ab
 
 ## Suche nach Inhaltsfragment-Assets in We.Retail {#where-to-find-content-fragments-in-we-retail}
 
-There are several sample content fragments in We.Retail; navigate via **Assets**, **Files**, **We.Retail**, **English**, **Experiences**.
+Es gibt mehrere Beispielinhalt-Fragmente in We.Retail. navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**.
 
 Diese enthalten **Arktisches Surfen in Lofoten**, ein Fragment zusammen mit dazu gehörenden visuellen Assets:
 
-* Navigate via **Assets**, **Files**, **We.Retail**, **English**, **Experiences**, **Artic Surfing in Lofoten**:
+* Navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **Englisch**, **Erlebnisse**, **Artisches Surfen in Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 
 
@@ -65,7 +65,7 @@ Hier können Sie Ihr Fragment anhand der Registerkarten (linkes Bedienfeld) [bea
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variationen](/help/assets/content-fragments/content-fragments-variations.md)**einschließlich[Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Variationen](/help/assets/content-fragments/content-fragments-variations.md)** einschließlich [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
 * **[Zugehörige Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md)**
 * **[Metadaten](/help/assets/content-fragments/content-fragments-metadata.md)**
 
@@ -77,9 +77,9 @@ Unter folgendem Link finden Sie mehrere Beispiele zum Veranschaulichen der [Seit
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
-For example, the **Arctic Surfing in Lofoten** content fragment is referenced in the Sites page:
+Beispielsweise wird auf der Seite &quot;Sites&quot;auf das Inhaltsfragment **Arktisches Surfen in Lofoten** verwiesen:
 
-* Navigate via **Sites**, **We.Retail**, **Language Masters**, **English**, **Experience**. Öffnen Sie dann **Arktisches Surfen in Lofoten** zur Bearbeitung:
+* Navigieren Sie über **Sites**, **We.Retail**, **Sprachführer**, **Englisch**, **Erlebnis**. Öffnen Sie dann **Arktisches Surfen in Lofoten** zur Bearbeitung:
 
    * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
