@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cd7331f5f57ec90ea72d41d467891dc832347a3c
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -30,7 +30,7 @@ Diese sind unten aufgeführt – zusammen mit einer Erläuterung, wie CRX mit ih
 * LDAP – Die LDAP-Injection ist nicht möglich, da das Authentifizierungsmodul die Eingaben filtert und den Benutzerimport mithilfe der bind-Methode durchführt.
 * BS – Aus der Anwendung heraus wird keine Shell-Ausführung durchgeführt.
 
-## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
+## 2. Cross-Site Scripting (XSS)  {#cross-site-scripting-xss}
 
 Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausgaben benutzergenerierter Inhalte mithilfe einer serverseitigen XSS-Schutzbibliothek, die auf dem [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) und [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) basiert.
 
@@ -44,11 +44,11 @@ AEM nutzt fundierte, bewährte Authentifizierungstechniken und greift hierzu auf
 
 Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und daher durch die rollenbasierte Zugriffssteuerung beschränkt.
 
-## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
+## 5. Cross-Site Request Forgery (CSRF)  {#cross-site-request-forgery-csrf}
 
-Cross-Site Request Forgery (CSRF) wird durch das automatische Einsetzen eines kryptografischen Tokens in alle Formulare und AJAX-Anforderungen und die Überprüfung dieses Tokens auf dem Server für jeden POST-Test abgemildert.
+Cross-Site Request Forgery (CSRF) wird durch die automatische Injektion eines kryptografischen Tokens in alle Formulare und AJAX Anforderungen sowie die Überprüfung dieses Tokens auf dem Server für jede POST abgemildert.
 
-In addition, AEM ships with a referrer-header based filter, which can be configured to *only* allow POST requests from specific hosts (defined in a list).
+Darüber hinaus verfügt AEM über einen Werber-Header-basierten Filter, der so konfiguriert werden kann, dass nur *nur* Anfragen von bestimmten Hosts (in einer Liste definiert) zulässig sind.
 
 ## 6. Sicherheitsrelevante Fehlkonfiguration {#security-misconfiguration}
 
@@ -62,7 +62,7 @@ Die Kennwörter werden als kryptografische Hashes im Benutzerknoten gespeichert.
 
 Sensible Daten wie die Drittanbieteranmeldedaten sind in verschlüsselter Form mithilfe einer FIPS 140-2-zertifizierten kryptografischen Bibliothek gespeichert
 
-## 8. Fehlgeschlagene Beschränkung des URL-Zugriffs {#failure-to-restrict-url-access}
+## 8. Fehlgeschlagene Beschränkung des URL-Zugriffs  {#failure-to-restrict-url-access}
 
 Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) für jeden Benutzer bzw. jede Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
 
