@@ -28,7 +28,7 @@ Für das Authoring eines adaptiven Formulars mit einem JSON-Schema als Formularm
 
 ## Verwenden eines JSON-Schemas als Formularmodell  {#using-a-json-schema-as-form-model}
 
-AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. The JSON Schema you use should be compliant with [v4 specifications](https://json-schema.org/draft-04/schema).
+AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das verwendete JSON-Schema sollte mit [v4-Spezifikationen](https://json-schema.org/draft-04/schema) konform sein.
 
 Die Haupteigenschaften bei der Verwendung eines JSON-Schemas sind wie folgt:
 
@@ -337,9 +337,9 @@ Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendb
 
 Das obige Beispiel definiert einen Kundendatensatz, bei dem jeder Kunde über eine Versand- und eine Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Stadt und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
 
-## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
+## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen  {#pre-configuring-fields-in-json-schema-definition}
 
-You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom adaptive form component. Ein Beispiel wird unten angezeigt:
+Mit der Eigenschaft **aem:afProperties** können Sie das JSON-Schema vorkonfigurieren, um es einer benutzerdefinierten adaptiven Formularkomponente zuzuordnen. Ein Beispiel wird unten angezeigt:
 
 ```json
 {
@@ -359,9 +359,9 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 ```
 
-## Skripten oder Ausdrücke für Formularobjekte konfigurieren  {#configure-scripts-or-expressions-for-form-objects}
+## Skripten oder Ausdruck für Formularobjekte {#configure-scripts-or-expressions-for-form-objects} konfigurieren
 
-JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Sie können Formularobjekte vorkonfigurieren, um einen Ausdruck [in einem Formular-Ereignis](../../forms/using/adaptive-form-expressions.md) auszuwerten.
+JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Sie können Formularobjekte vorkonfigurieren, um einen Ausdruck[in einem Formular-Ereignis auszuwerten.](../../forms/using/adaptive-form-expressions.md)
 
 Verwenden Sie die aem:afproperties-Eigenschaft, um Ausdruck oder Skripten für adaptive Formularkomponenten vorzukonfigurieren. Wenn beispielsweise das Ereignis initialize ausgelöst wird, setzt der folgende Code den Wert des Telefonfelds ein und druckt einen Wert in das Protokoll:
 
@@ -381,7 +381,7 @@ Verwenden Sie die aem:afproperties-Eigenschaft, um Ausdruck oder Skripten für a
 }
 ```
 
-Sie sollten Mitglied der [forms-power-user-Gruppe](/help/forms/using/forms-groups-privileges-tasks.md) sein, um Skripte oder Ausdruck für Formularobjekte zu konfigurieren. Die folgende Tabelle Liste alle Skript-Ereignis, die für eine adaptive Formularkomponente unterstützt werden.
+Sie sollten Mitglied der [forms-power-user group](/help/forms/using/forms-groups-privileges-tasks.md) sein, um Skripte oder Ausdruck für Formularobjekte zu konfigurieren. Die folgende Tabelle Liste alle Skript-Ereignis, die für eine adaptive Formularkomponente unterstützt werden.
 
 <table>
  <tbody>
@@ -394,7 +394,7 @@ Sie sollten Mitglied der [forms-power-user-Gruppe](/help/forms/using/forms-group
    <td>Aktiviert</td>
    <td>Wertfestschreibung</td>
    <td>Klicken Sie auf </td>
-   <td>Optionen   </td>
+   <td>Optionen     </td>
   </tr>
   <tr>
    <td>Textfeld</td>
@@ -586,7 +586,7 @@ Sie sollten Mitglied der [forms-power-user-Gruppe](/help/forms/using/forms-group
  </tbody>
 </table>
 
-Einige Beispiele für die Verwendung von Ereignissen in einem JSON sind das Ausblenden eines Felds beim Initialisieren des Ereignisses und das Konfigurieren des Werts eines anderen Felds im Ereignis zum Bestätigen des Werts. Detaillierte Informationen zum Erstellen von Ausdrücken für die Skript-Ereignis finden Sie unter Ausdrücke für [adaptive Formulare](../../forms/using/adaptive-form-expressions.md).
+Einige Beispiele für die Verwendung von Ereignissen in einem JSON sind das Ausblenden eines Felds beim Initialisieren des Ereignisses und das Konfigurieren des Werts eines anderen Felds im Ereignis zum Bestätigen des Werts. Detaillierte Informationen zum Erstellen von Ausdrücken für die Skript-Ereignis finden Sie unter [Ausdruck für adaptive Formulare](../../forms/using/adaptive-form-expressions.md).
 
 Im Folgenden finden Sie den JSON-Beispielcode für die oben genannten Beispiele.
 
@@ -603,7 +603,7 @@ Im Folgenden finden Sie den JSON-Beispielcode für die oben genannten Beispiele.
 }
 ```
 
-#### Wert eines anderen Felds im Ereignis zum Bestätigen von Werten konfigurieren {#configure-value-of-another-field-on-value-commit-event}
+#### Wert eines anderen Felds im Ereignis für Wertbeanspruchung {#configure-value-of-another-field-on-value-commit-event} konfigurieren
 
 ```json
 "Income": {
