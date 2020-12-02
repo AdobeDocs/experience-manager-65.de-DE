@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Essentials zur Dateibibliothek {#file-library-essentials}
+# Dateibibliotheksgrundlagen {#file-library-essentials}
 
 Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der Dateibibliotheksfunktion.
 
@@ -36,7 +36,7 @@ Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der D
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stimting<br /> cq.social.hbs.filelilibrary</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stimms<br /> cq.social.hbs.filelilibrary</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -65,21 +65,21 @@ Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der D
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die [Dateibibliotheksfunktion](functions.md#file-library-function)enthält, enthält eine konfigurierte `file library` Komponente.
+Eine Community-Site-Struktur, die die Funktion [Dateibibliothek](functions.md#file-library-function) enthält, enthält eine konfigurierte Komponente `file library`.
 
-### Zugriff auf für Dateibibliotheken gepostete Kommentare {#accessing-comments-posted-for-file-libraries-ugc}
+### Zugriff auf für Dateibibliotheken gepostete Kommentare (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien.
+* [SocialUtils Refactoring](socialutils.md)  - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
