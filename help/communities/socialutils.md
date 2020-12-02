@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# SocialUtils-Umgestaltung {#socialutils-refactoring}
+# SocialUtils Refactoring {#socialutils-refactoring}
 
 ## SocialUtils-Paket veraltet {#socialutils-package-deprecated}
 
 Das Paket `com.adobe.cq.social.ugcbase.SocialUtils` wurde in AEM 6.1 nicht mehr unterstützt.
 
-In den folgenden Tabellen werden die Methoden Liste, die anstelle von `SocialUtils` Methoden zu verwenden sind.
+In den folgenden Tabellen werden die Methoden Liste, die anstelle der `SocialUtils`-Methoden verwendet werden.
 
-## SocialResourceUtilities-Paket  {#socialresourceutilities-package}
+## SocialResourceUtilities-Paket {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -39,18 +39,18 @@ In den folgenden Tabellen werden die Methoden Liste, die anstelle von `SocialUti
 | Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | boolean hasModeratePermissions(Resource resource) |  |
 | String resourceToACLPath(Resource resource) |  |
-| String resourceToUGCStoragePath(Resource resource) | replaces String resourceToUGCPath(Resource resource) |
+| String resourceToUGCStoragePath(Resource resource) | ersetzt String resourceToUGCPath(Resource resource) |
 | String UGCToResourcePath(Resource resource) |  |
-| String UGCToResourcePath(String ugcPath) | method signature changed |
+| String UGCToResourcePath(String ugcPath) | Methodenunterschrift geändert |
 | String UGCToResourcePath(String ugcPath, ResourceResolver resolver) | new |
 
-| Methods in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
+| Methoden in `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
-| SocialResourceProvider getSocialResourceProvider(Resource resource) | replaces SocialResourceProvider getConfiguredProvider(Resource resource) |
+| SocialResourceProvider getSocialResourceProvider(Resource resource) | ersetzt SocialResourceProvider getConfigurationProvider(Resource resource) |
 
 ## SCFUtilities Package {#scfutilities-package}
 
-| Methods in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
+| Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
 | String getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, int size) |
@@ -60,7 +60,7 @@ In den folgenden Tabellen werden die Methoden Liste, die anstelle von `SocialUti
 | String getSocialProfileURL(String username, ResourceResolver resolver, Page page) |
 | UserProperties getUserProperties(ResourceResolver resolver, String userId) |
 
-## For Internal Use Only {#for-internal-use-only}
+## Nur zur internen Verwendung {#for-internal-use-only}
 
 | boolean canAddNode(Session session, String path) |
 |---|
