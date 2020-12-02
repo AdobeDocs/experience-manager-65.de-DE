@@ -22,8 +22,8 @@ ht-degree: 72%
 
 Für Benutzer kann es zu langsameren Reaktionszeiten kommen, wenn sie vielen Gruppen (z. B. 500 oder mehr) angehören oder wenn die Gruppen tief verschachtelt sind (z. B. 30 Ebenen). Wenn dieses Problem auftritt, können Sie AEM Forms so konfigurieren, dass Informationen aus bestimmten Domänen vorher abgerufen werden.
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Configuration > Import And Export Configuration Files]**.
-1. To export the current configuration setting to a file, click **[!UICONTROL Export]** and save the configuration file in another location.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Konfiguration > Konfigurationsdateien importieren und exportieren]**.
+1. Um die aktuelle Konfigurationseinstellung in eine Datei zu exportieren, klicken Sie auf **[!UICONTROL Export]** und speichern Sie die Konfigurationsdatei an einem anderen Speicherort.
 1. Fügen Sie den folgenden Knoten (fett gedruckt) hinzu:
 
    ```xml
@@ -43,6 +43,6 @@ Für Benutzer kann es zu langsameren Reaktionszeiten kommen, wenn sie vielen Gru
 
    In diesem Beispiel werden mehrere Domänen zum vorherigen Abrufen konfiguriert. Die Domänennamen werden durch ein „/“ getrennt. Dies wird im oben stehenden Beispiel mit *Domain_Name1*, *Domain_Name2* und *Domain_Name3* gezeigt.
 
-1. To import the updated file, in User Management, click **[!UICONTROL Configuration > Import And Export Configuration Files]**.
-1. Click **[!UICONTROL Browse]** to find the file, click Import, and then click **[!UICONTROL OK]**.
+1. Um die aktualisierte Datei zu importieren, klicken Sie in User Management auf **[!UICONTROL Konfiguration > Konfigurationsdateien importieren und exportieren]**.
+1. Klicken Sie auf **[!UICONTROL Durchsuchen]**, um die Datei zu suchen, klicken Sie auf Importieren und dann auf **[!UICONTROL OK]**.
 
