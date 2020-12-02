@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 99%
 
 ---
 
@@ -48,7 +51,7 @@ Der Richtliniensatz „Global“ ist der einzige Standardrichtliniensatz, der be
 Klicken Sie bei der Richtliniensatzerstellung auf die Schaltfläche „Zurück“, um zum vorherigen Bildschirm zurückzukehren. Um den Richtliniensatz zu speichern, klicken Sie zu einem beliebigen Zeitpunkt auf die Schaltfläche „Speichern“.
 
 1. Klicken Sie auf der Document Security-Seite auf „Richtlinien“, auf die Registerkarte „Richtliniensätze“ und anschließend auf „Neu“.
-1. Geben Sie in das Feld „Name“ einen Namen für den Richtliniensatz und optional in das Feld „Beschreibung“ eine Beschreibung ein. Klicken Sie danach auf „Weiter“. The name cannot contain a colon **:**.
+1. Geben Sie in das Feld „Name“ einen Namen für den Richtliniensatz und optional in das Feld „Beschreibung“ eine Beschreibung ein. Klicken Sie danach auf „Weiter“. Der Name darf keinen Doppelpunkt **:** enthalten.
 
    >[!NOTE]
    >
@@ -86,7 +89,7 @@ Klicken Sie bei der Richtliniensatzerstellung auf die Schaltfläche „Zurück�
 
 Sie können nun dem Richtliniensatz Richtlinien hinzufügen. (Siehe [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
-## Einen Richtliniensatz bearbeiten {#edit-a-policy-set}
+## Einen Richtliniensatz bearbeiten  {#edit-a-policy-set}
 
 1. Klicken Sie auf der Document Security-Seite auf „Richtlinien“, anschließend auf die Registerkarte „Richtliniensätze“ und dann auf den zu bearbeitenden Richtliniensatz.
 1. Klicken Sie auf die gewünschte Registerkarte und führen Sie die Bearbeitung durch:
@@ -104,7 +107,7 @@ Sie können nun dem Richtliniensatz Richtlinien hinzufügen. (Siehe [Richtlinien
    * Um eine Richtlinie zu suchen, wählen Sie „Richtlinien-ID“ oder „Richtlinienname“ aus, geben den gewünschten Wert ein, wählen die Anzahl anzuzeigender Elemente aus und klicken auf „Suchen“.
    * Informationen zum Erstellen einer neuen Richtlinie finden Sie unter [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
-## Einen Richtliniensatz löschen {#delete-a-policy-set}
+## Einen Richtliniensatz löschen  {#delete-a-policy-set}
 
 Beim Löschen eines Richtliniensatzes können Richtlinien, die Bestandteil des Satzes waren, nicht mehr auf neue Dokumente angewendet werden. Sie können die Richtlinieninformationen aber sowohl in Administration Console als auch auf den Webseiten für Endbenutzer für Richtlinien, die noch in Benutzung sind, anzeigen. Sie können die Richtlinieninformationen über die Seite „Dokumentdetails“ jedes von dieser Richtlinie geschützten Dokuments anzeigen. Richtlinien, die noch verwendet werden, können bearbeitet werden.
 
