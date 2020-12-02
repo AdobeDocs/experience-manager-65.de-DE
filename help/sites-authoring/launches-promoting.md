@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +35,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 
 >[!CAUTION]
 >
->Es ist nicht möglich, einen einzelnen Launch gleichzeitig mehrfach weiterzuleiten. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Es ist nicht möglich, einen einzelnen Launch gleichzeitig mehrfach weiterzuleiten. Dies bedeutet, dass zwei gleichzeitig ausgeführte Weiterleitungen für denselben Launch einen Fehler verursachen können: `Launch could not be promoted` (zusammen mit Konfliktfehlern im Protokoll).
 
 >[!CAUTION]
 >
@@ -46,6 +49,7 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 >
 >* [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch), wenn die Struktur mehrere Launches enthält.
 >* [Der Ablauf eines Launches](/help/sites-authoring/launches.md#launches-the-order-of-events) für weitere Informationen zur automatischen Weiterleitung und Veröffentlichung.
+
 >
 
 
@@ -56,7 +60,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
 
    * die Konsole **Sites**:
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). Alle Verweise werden angezeigt.
+      1. Öffnen Sie die Leiste [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-authoring/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
 
       1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der Launches anzuzeigen.
       1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
@@ -69,16 +73,17 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
 
 1. Im ersten Schritt können Sie folgende Optionen festlegen:
 
-   * **Target**
+   * **Ziel**
 
       * **Launch nach der Veröffentlichung löschen**
-   * **Anwendungsbereich**
+   * **Umfang**
 
       * **Vollständigen Launch bewerben**
       * **Geänderte Seiten bewerben**
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
-   Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen: 
+
+   Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen:
 
    ![launches-pd-06](assets/launches-pd-06.png)
 
@@ -87,15 +92,15 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
    >Hier wird ein individueller Launch beschrieben. Informationen zu verschachtelten Launches finden Sie unter [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch).
 
 1. Klicken Sie auf **Weiter**, um den Vorgang fortzusetzen.
-1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab: 
+1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab:
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
 1. Wählen Sie **Bewerben**.
 
-## Weiterleiten von Launch-Seiten bei der Bearbeitung {#promoting-launch-pages-when-editing}
+## Weiterleiten von Launch-Seiten bei der Bearbeitung   {#promoting-launch-pages-when-editing}
 
-Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen. 
+Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen.
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -103,7 +108,7 @@ Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch
 >
 >Diese Option steht für einzelne und [verschachtelte Launches](#promoting-a-nested-launch) zur Verfügung.
 
-## Weiterleiten eines verschachtelten Launches {#promoting-a-nested-launch}
+## Weiterleiten eines verschachtelten Launches    {#promoting-a-nested-launch}
 
 Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an jede der Quellen weiterleiten, auch an die Stammquelle (Produktion).
 
@@ -114,7 +119,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
 1. Geben Sie die erforderlichen Details ein:
 
-   * **Target**
+   * **Ziel**
 
       * **Ziel der Promotion** Sie können an eine beliebige Quelle weiterleiten. 
 
@@ -125,10 +130,11 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
       * **Geänderte Seiten bewerben**
       * **Aktuelle Seite bewerben**
       * **Aktuelle Seite und Unterseiten bewerben**
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
-1. Wählen Sie **Weiter**.
-1. Überprüfen Sie die Details, bevor Sie **Bewerben** auswählen: 
+1. Wählen Sie **Weiter** aus.
+1. Überprüfen Sie die Details, bevor Sie **Bewerben** auswählen:
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -140,7 +146,7 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
-## Processing Promoted Pages Using AEM Workflow {#processing-promoted-pages-using-aem-workflow}
+## Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow {#processing-promoted-pages-using-aem-workflow}
 
 Verwenden Sie Workflow-Modelle, um eine Stapelverarbeitung weitergeleiteter Launch-Seiten durchzuführen:
 
