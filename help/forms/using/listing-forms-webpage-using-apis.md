@@ -21,7 +21,7 @@ ht-degree: 86%
 
 AEM Forms stellt eine REST-basierte Such-API bereit, die Web-Entwickler verwenden können, um Abfragen in Formularsätzen durchzuführen und Formularsätze abzurufen, die die Suchkriterien erfüllen. Sie können APIs zum Durchsuchen von Formularen auf Basis verschiedener Filter verwenden. Das Antwortobjekt enthält Formularattribute, -Eigenschaften und Render-Endpunkte der Formulare.
 
-To search forms using the REST API, send a GET request to the server at `https://'[server]:[port]'/libs/fd/fm/content/manage.json` with query parameters described below.
+Um Formulare mit der REST-API zu suchen, senden Sie eine GET mit den unten beschriebenen Abfragen an den Server unter `https://'[server]:[port]'/libs/fd/fm/content/manage.json`.
 
 ## Abfrageparameter {#query-parameters}
 
@@ -116,7 +116,7 @@ To search forms using the REST API, send a GET request to the server at `https:/
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Gibt an, ob der binäre Inhalt abgerufen werden soll oder nicht. The <code>includeXdp</code> attribute is applicable for assets of type <code>FORM</code>, <code>PDFFORM</code>, and <code>PRINTFORM</code>.</td>
+   <td>Gibt an, ob der binäre Inhalt abgerufen werden soll oder nicht. Das Attribut <code>includeXdp</code> gilt für Assets des Typs <code>FORM</code>, <code>PDFFORM</code> und <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -125,7 +125,7 @@ To search forms using the REST API, send a GET request to the server at `https:/
  </tbody>
 </table>
 
-## Musteranforderung {#sample-request}
+## Musteranforderung  {#sample-request}
 
 ```json
 func : searchForms
