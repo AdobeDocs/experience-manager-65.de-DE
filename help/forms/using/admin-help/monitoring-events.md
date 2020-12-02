@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 74%
 
 ---
 
@@ -21,9 +24,9 @@ Wenn die Prüffunktion aktiviert ist, können Sie mithilfe von Document Securit
 
 **Benutzer:** Kann Ansicht geprüfte Ereignis für ihre richtliniengeschützten Dokumente und für alle geschützten Dokumente, die sie empfangen und verwenden, prüfen.
 
-**Richtliniensatzkoordinatoren:** Kann die Ansicht geprüfte Ereignis, einschließlich Dokument- und Richtliniensätze, für Dokumente prüfen, die durch Richtlinien aus ihren Richtliniensätzen geschützt sind.
+**Richtliniensatzkoordinatoren:** Kann Ansicht geprüfte Ereignis, einschließlich Dokument- und Richtliniensatzvorgaben, für Dokumente prüfen, die durch Richtlinien aus ihren Richtliniensätzen geschützt sind.
 
-**Administratoren:** Kann Ansicht geprüfte Ereignis prüfen, die mit allen richtliniengeschützten Dokumenten und Benutzern zusammenhängen. Administratoren können darüber hinaus andere Ereignistypen nachverfolgen, z. B. Benutzer-, Dokument-, Richtlinien- und Systemereignisse.
+**Administratoren:** Kann Ansicht geprüfte Ereignis prüfen, die sich auf alle richtliniengeschützten Dokumente und Benutzer beziehen. Administratoren können darüber hinaus andere Ereignistypen nachverfolgen, z. B. Benutzer-, Dokument-, Richtlinien- und Systemereignisse.
 
 >[!NOTE]
 >
@@ -49,7 +52,7 @@ Es folgen die Schritte, die für die Aktivierung der Ereignisprüfung erfolgen m
 
 * Für die Richtlinie, die dem Schutz des Dokuments dient, muss die Prüffunktion aktiviert sein. (Siehe [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
-## Nach einem Ereignis suchen {#search-for-an-event}
+## Nach einem Ereignis suchen  {#search-for-an-event}
 
 Sie können die Ereignisliste durchsuchen und detaillierte Beschreibungen von Ereignissen anzeigen. Dazu zählen Informationen wie die Ereignis-ID, Beschreibung und IP-Adresse, das Unternehmen, die betroffenen Benutzer, Datum und Uhrzeit des Ereignisses, verweigerte Aktivitäten und Offline-Ereignisse (wenn Benutzer versuchen, ein Dokument zu nutzen, ohne mit Document Security verbunden zu sein).
 
@@ -57,23 +60,23 @@ Auf der Seite „Ereignisse“ können Sie über eine Kombination aus Ereignissu
 
 **Benutzer:** Kann Ansicht geprüfte Ereignis für ihre richtliniengeschützten Dokumente und für alle geschützten Dokumente, die sie empfangen und verwenden, prüfen. Die folgenden Suchoptionen sind verfügbar:
 
-**Ereignisse zu mir:** Benutzer können Ereignis für jedes richtliniengeschützte Dokument suchen, das sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
+**Ereignis, die mit mir in Verbindung stehen:** Benutzer können Ereignis für jedes richtliniengeschützte Dokument finden, das sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
 
 **Ereignisse im Zusammenhang mit meinen Dokumenten:** Benutzer können alle Ereignis finden, die mit ihren eigenen richtliniengeschützten Dokumenten in Verbindung stehen. Der Benutzer sieht die Ereignisse, die von allen Personen generiert wurden, die Umgang mit seinen Dokumenten hatten.
 
-**Richtliniensatzkoordinatoren:** Kann die Ansicht geprüfte Ereignis, einschließlich Dokument- und Richtliniensätze, für Dokumente prüfen, die durch Richtlinien aus ihren Richtliniensätzen geschützt sind. Die folgenden Optionen stehen zur Auswahl:  
+**Richtliniensatzkoordinatoren:** Kann Ansicht geprüfte Ereignis, einschließlich Dokument- und Richtliniensatzvorgaben, für Dokumente prüfen, die durch Richtlinien aus ihren Richtliniensätzen geschützt sind. Die folgenden Optionen stehen zur Auswahl:  
 
-**Dokument-Ereignis, bei denen ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren, die über die Berechtigung zum Ereignis von Ansichten verfügen, können Ereignis im Zusammenhang mit Dokumenten finden, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
+**Dokument-Ereignis, bei denen ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Ereignis von Ansichten können Ereignis im Zusammenhang mit Dokumenten finden, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
-**Richtliniensatzkoordinator, Ereignis für Richtlinien:** Richtliniensatzkoordinatoren mit der Berechtigung &quot;Ansicht Ereignisses&quot;können in ihren Richtliniensätzen nach Ereignissen suchen, die mit Richtlinien zusammenhängen.
+**Richtliniensatzkoordinator:** Richtliniensatzkoordinatoren, die über die Berechtigung für Ansichten-Ereignisse verfügen, können aus ihren Richtliniensätzen Ereignis im Zusammenhang mit Richtlinien finden.
 
-**Administratoren:** Kann Ansicht geprüfte Ereignis prüfen, die mit allen richtliniengeschützten Dokumenten und Benutzern zusammenhängen. Administratoren können darüber hinaus andere Typen nachverfolgen. Administratoren können außerdem Ereignissuchen gemäß dem Benutzertyp unterteilen:
+**Administratoren:** Kann Ansicht geprüfte Ereignis prüfen, die sich auf alle richtliniengeschützten Dokumente und Benutzer beziehen. Administratoren können darüber hinaus andere Typen nachverfolgen. Administratoren können außerdem Ereignissuchen gemäß dem Benutzertyp unterteilen:
 
 **Bekannte Benutzer:** Benutzer befinden sich in den Quellordnern oder sind als externe Benutzer registriert.
 
-**Anonyme Benutzer:** Unbekannte Nutzer, die auf ein durch eine Richtlinie geschütztes Dokument zugreifen, das den anonymen Zugriff zulässt.
+**Anonyme Benutzer:** Unbekannte Nutzer, die auf ein Dokument zugreifen, das durch eine Richtlinie geschützt ist, die den anonymen Zugriff zulässt.
 
-**Systembenutzer:** Vom Server initiierte Ereignis, z. B. eine Ordnersynchronisierung.
+**Systembenutzer:vom** Server initiierte Ereignis, z. B. eine Ordnersynchronisierung.
 
 1. Klicken Sie auf der Document Security-Seite auf „Ereignisse“.
 1. Wählen Sie in der Liste „Suchen“ die gewünschten Suchkriterien aus. Abhängig von der Auswahl in der Liste „Suchen“ wird eine zweite Liste mit weiteren Suchkriterien angezeigt. Geben Sie, falls möglich, in das Textfeld die Suchkriterien ein.
@@ -99,7 +102,7 @@ Auf der Seite „Ereignisse“ können Sie über eine Kombination aus Ereignissu
 
 1. Um Details zu einem Ereignis anzuzeigen, klicken Sie auf die Beschreibung des Ereignisses in der Liste.
 
-## Die Ereignisliste sortieren {#sort-the-event-list}
+## Die Ereignisliste sortieren  {#sort-the-event-list}
 
 Sie können die Ereignisliste nach Spaltenüberschrift sortieren, um Ereignisse leichter zu finden. Ein Dreieckssymbol neben der Spaltenüberschrift gibt an, nach welcher Spalte gegenwärtig sortiert wird. Ein nach oben zeigendes Dreieck gibt eine aufsteigende Reihenfolge an. Ein nach unten zeigendes Dreieck gibt eine absteigende Reihenfolge an.
 
