@@ -29,7 +29,7 @@ Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung benutz
 >
 >* Die Beispiele und Konfigurationen in diesem Dokument entsprechen MySQL 5.6.24 und Sie müssen sie für Ihr Datenbanksystem anpassen.
 >* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms Freigabe](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
->* Das Musterpaket funktioniert nur mit Übermittlungsaktionen für adaptive Formulare.
+>* Das Musterpaket funktioniert nur mit adaptiven Forms-Übermittlungsaktionen.
 
 
 ## Beispiel installieren und konfigurieren {#set-up-and-configure-the-sample}
@@ -42,13 +42,13 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
    [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Go to AEM package manager at https://[*host*]:[*port*]/crx/packmgr/.
+1. Wechseln Sie zu AEM Package Manager unter https://[*host*]:[*port*]/crx/packmgr/.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
-1. Go to **[!UICONTROL AEM Web Console Configuration]**
-page at https://[*host*]:[*port*]/system/console/configMgr.
+1. Gehen Sie zu **[!UICONTROL AEM Web-Konsolenkonfiguration]**
+Seite unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 
 1. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
@@ -317,7 +317,7 @@ Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinst
 1. Navigieren Sie zu `https://'[server]:[port]'/system/console/bundles` und klicken Sie auf **[!UICONTROL Installieren/Aktualisieren]**.
 1. Klicken Sie auf **[!UICONTROL Datei auswählen]** und wählen Sie die Datei mysql-connector-java-5.1.39-bin.jar. Aktivieren Sie außerdem die Kontrollkästchen **[!UICONTROL Paket starten]** und **[!UICONTROL Paket aktualisieren]**.
 1. Klicken Sie auf **[!UICONTROL Installieren oder Aktualisieren]**. Wenn dies abgeschlossen ist, starten Sie den Server neu.
-1. (*Windows only*) Turn off the system firewall for your operating system.
+1. (*Nur Windows*) Schalten Sie die System-Firewall für Ihr Betriebssystem aus.
 
 ## Beispielcode für Formularportaldaten und Metadatendienst {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -343,9 +343,9 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
     util.js
    ```
 
-   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. The `util` folder and `util.js` file are created in suceeeding steps.
+   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. Der Ordner `util` und die Datei `util.js` werden in den folgenden Schritten erstellt.
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten `cq:ClientLibraryFolder`, der in Schritt 2 erstellt wurde, wählen Sie „Erstellen“ > „Ordner erstellen“. Create a folder named `util`. Klicken Sie auf **[!UICONTROL Alle speichern]**. Klicken Sie mit der rechten Maustaste auf den Ordner `util` und wählen Sie „Erstelle“ > „Ordner erstellen“. Create a file named `util.js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Klicken Sie mit der rechten Maustaste auf den Knoten `cq:ClientLibraryFolder`, der in Schritt 2 erstellt wurde, wählen Sie „Erstellen“ > „Ordner erstellen“. Erstellen Sie einen Ordner mit dem Namen `util`. Klicken Sie auf **[!UICONTROL Alle speichern]**. Klicken Sie mit der rechten Maustaste auf den Ordner `util` und wählen Sie „Erstelle“ > „Ordner erstellen“. Erstellen Sie eine Datei mit dem Namen `util.js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Fügen Sie der Datei „POST.jsp“ folgenden Code hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**. Der Code validiert die Länge des Dateinamens.
 
@@ -414,9 +414,9 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
    * **[!UICONTROL Multi-Option:]** Aktiviert
 
-1. Navigate to `/libs/fd/af/runtime/clientlibs/guideRuntime`and append the `fp.validation` value to the embed property.
+1. Navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideRuntime`und hängen Sie den Wert `fp.validation` an die Eigenschaft embed an.
 
-1. Navigate to /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA and append the `fp.validation` value to embed property.
+1. Navigieren Sie zu /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA und hängen Sie den Wert `fp.validation` an die Eigenschaft embed an.
 
    >[!NOTE]
    >
