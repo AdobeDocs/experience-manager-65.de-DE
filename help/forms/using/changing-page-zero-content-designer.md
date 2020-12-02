@@ -19,19 +19,19 @@ ht-degree: 72%
 
 # Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
 
-Page Zero content is displayed by default when a non-Adobe PDF viewer, such as the default PDF viewer in [!DNL Chrome] or [!DNL Firefox], cannot read the content of the PDF/XFA form. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
+Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, wie der standardmäßige PDF-Viewer in [!DNL Chrome] oder [!DNL Firefox], den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 
-![defaultpage0message](assets/defaultpage0message.png)
+![defaultPage0message](assets/defaultpage0message.png)
 
 [!DNL AEM Forms] Version von Designer ermöglicht es Ihnen, die Meldung zu ändern, die auf Seite Null angezeigt wird. Zum Ändern der auf Seite Null angezeigten Meldung müssen Sie folgende Schritte ausführen:
 
-1. Ensure that you have the [!DNL AEM Forms] version of Designer installed. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
+1. Stellen Sie sicher, dass die [!DNL AEM Forms]-Version von Designer installiert ist. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
 
 1. Öffnen Sie das Formular, in dem der Inhalt der Seite Null geändert werden soll.
 
-1. Click **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
+1. Klicken Sie auf **[!UICONTROL Datei]** > **[!UICONTROL Formulareigenschaften]**.
 
-1. In the [!UICONTROL Form Properties] dialog, click ![plus](assets/plus.png) (Plus icon) to add a custom property.
+1. Klicken Sie im Dialogfeld [!UICONTROL Formulareigenschaften] auf ![plus](assets/plus.png) (Plus-Symbol), um eine benutzerdefinierte Eigenschaft hinzuzufügen.
 
 1. Legen Sie **_pagezerocontent** als den Namen der Eigenschaft fest.
 1. Fügen Sie die Meldung auf Seite Null als Wert im Rich Text-Format hinzu. Beispiel:
