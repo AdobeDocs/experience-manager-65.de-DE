@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# Eine Transaktion für benutzerdefinierte Implementierungen aufzeichnen {#record-a-transaction-for-custom-implementations}
+# Eine Transaktion für benutzerdefinierte Implementierungen {#record-a-transaction-for-custom-implementations} aufzeichnen
 
 Verwenden Sie die TransactionRecorder-API, um Aktionen aufzuzeichnen, die nicht automatisch als Transaktionen bilanziert werden
 
-Sie können einen benutzerspezifischen Code verwenden, um ein PDF-Formular zu senden, die URL der Benutzeroberfläche des Agenten an Endbenutzer zu senden, um eine interaktive Vorschau zu erstellen, oder um ein Formular mit benutzerdefinierten Methoden zu senden, anstatt die mit AEM Forms bereitgestellten Übermittlungsmethoden zu verwenden. Alle zuvor erwähnten Aktionen und benutzerdefinierten Implementierungen von AEM Forms APIs werden nicht als Transaktionen erfasst. AEM Forms stellt eine API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), zur Verfügung, um Aktionen wie Transaktionen aufzuzeichnen.
+Sie können einen benutzerspezifischen Code verwenden, um ein PDF-Formular zu senden, die URL der Benutzeroberfläche des Agenten an Endbenutzer zu senden, um eine interaktive Vorschau zu erstellen, oder um ein Formular mit benutzerdefinierten Methoden zu senden, anstatt die mit AEM Forms bereitgestellten Übermittlungsmethoden zu verwenden. Alle oben genannten Aktionen und benutzerdefinierten Implementierungen von AEM Forms APIs werden nicht als Transaktionen erfasst. AEM Forms stellt eine API bereit, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), um Aktionen wie Transaktionen aufzuzeichnen.
 
-Um eine Transaktion aufzuzeichnen, schreiben Sie das [standardmäßige Sling-Servlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) und rufen Sie das Servlet von einem Client auf, um eine Transaktion aufzuzeichnen. Sie können das Servlet mit AJAX oder einer anderen Standardmethode aufrufen.
+Um eine Transaktion aufzuzeichnen, schreiben Sie das standardmäßige Sling-Servlet[ und rufen Sie das Servlet von einem Client auf, um eine Transaktion aufzuzeichnen. ](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) Sie können das Servlet mit AJAX oder einer anderen Standardmethode aufrufen.
 
 ## Beispiel für serverseitigen Code {#sample-server-sided-code}
 
@@ -75,7 +75,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## Beispiel für clientseitigen Code {#sample-client-side-code}
 
-Sie können den folgenden Beispielcode verwenden, um das Servlet mit der `TransactionRecorder`API aufzurufen.
+Sie können den folgenden Beispielcode verwenden, um das Servlet mit der API `TransactionRecorder`aufzurufen.
 
 ```javascript
 $.ajax({
@@ -91,7 +91,7 @@ $.ajax({
 })
 ```
 
-## Related Articles {#related-articles}
+## Verwandte Artikel {#related-articles}
 
 * [Übersicht über Transaktionsberichte](/help/forms/using/transaction-reports-overview.md)
 * [Anzeigen und Verstehen von Transaktionsberichten](/help/forms/using/viewing-and-understanding-transaction-reports.md)
