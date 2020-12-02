@@ -21,7 +21,7 @@ ht-degree: 69%
 
 # Erstellen von benutzerspezifischen Erscheinungsbildern in HTML5-Formularen{#create-custom-appearances-in-html-forms}
 
-Sie können mit Mobile Forms benutzerdefinierte Widgets einsetzen. Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md) for detailed information.
+Sie können mit Mobile Forms benutzerdefinierte Widgets einsetzen. Sie können mithilfe des Erscheinungsbild-Framework vorhandene jQuery Widgets erweitern oder Ihre eigenen benutzerdefinierten Widgets entwickeln. Die XFA-Engine verwendet verschiedene Widgets. Detaillierte Informationen finden Sie unter [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](/help/forms/using/introduction-widgets.md).
 
 ![Beispiel für ein standardmäßiges und benutzerdefiniertes Widget](assets/custom-widgets.jpg)
 
@@ -70,15 +70,15 @@ HTML5-Formulare bieten eine Implementierung des Widget-Frameworks, das erweitert
  </tbody>
 </table>
 
-Um ein eigenes Widget im oben erstellen Profil zu erstellen, müssen Sie die Verweise der JavaScript-Datei einschließen, die die überschriebenen und neu hinzugefügten Funktionen enthält. For example, the *sliderNumericFieldWidget* is a widget for numeric Fields. Um das Widget in Ihrem Profil in der Kopfzeile zu verwenden, fügen Sie die folgende Zeile hinzu:
+Um ein eigenes Widget im oben erstellen Profil zu erstellen, müssen Sie die Verweise der JavaScript-Datei einschließen, die die überschriebenen und neu hinzugefügten Funktionen enthält. Beispiel: Das *reglerNumericFieldWidget* ist ein Widget für numerische Felder. Um das Widget in Ihrem Profil in der Kopfzeile zu verwenden, fügen Sie die folgende Zeile hinzu:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Registrieren von benutzerdefinierten Widgets mit XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Registrieren von benutzerdefinierten Widgets mit XFA Scripting Engine   {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-When the custom widget code is ready, register the widget with the scripting engine by using `registerConfig`API for [Form Bridge](/help/forms/using/form-bridge-apis.md). Als Eingabe ist „widgetConfigObject“ erforderlich.
+Wenn der benutzerdefinierte Widget-Code fertig ist, registrieren Sie das Widget bei der Skriptmaschine, indem Sie `registerConfig`API für [Form Bridge](/help/forms/using/form-bridge-apis.md) verwenden. Als Eingabe ist „widgetConfigObject“ erforderlich.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -88,7 +88,7 @@ window.formBridge.registerConfig("widgetConfig",
     );
 ```
 
-#### widgetConfigObject {#widgetconfigobject}
+#### widgetConfigObject  {#widgetconfigobject}
 
 Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von Schlüssel-Wert-Paaren), bei dem der Schlüssel die Felder identifiziert und der Wert für das Widget steht, das mit den Feldern verwendet werden soll. Eine Beispielkonfiguration sieht wie folgt aus:
 
