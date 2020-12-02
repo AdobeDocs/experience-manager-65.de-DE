@@ -40,11 +40,12 @@ Darüber hinaus können Sie ein benutzerdefiniertes Symbolleistenlayout erstelle
 
 Im Folgenden werden die Schritte erläutert, um eine benutzerdefinierte Symbolleiste zu erstellen, die drei Aktionen in der Symbolleiste und die anderen Aktionen in einer Dropdown-Liste in der Symbolleiste anzeigt.
 
-Das angehängte Inhaltspaket enthält den gesamten unten beschriebenen Code. After installing the content package, open `/content/forms/af/CustomLayoutDemo.html` to view the custom toolbar layout demo.
+Das angehängte Inhaltspaket enthält den gesamten unten beschriebenen Code. Öffnen Sie nach der Installation des Inhaltspakets `/content/forms/af/CustomLayoutDemo.html`, um die Demo zum benutzerdefinierten Symbolleistenlayout Ansicht.
 
 CustomToolbarLayoutDemo.zip
 
-[Benutzerdefiniertes Symbolleistenlayout für Datei](assets/customtoolbarlayoutdemo.zip)-Demo abrufen
+[Benutzerdefiniertes ](assets/customtoolbarlayoutdemo.zip)
+FileDemo-Symbolleistenlayout abrufen
 
 ## Erstellen eines benutzerdefinierten Symbolleistenlayouts {#layout-1}
 
@@ -56,15 +57,15 @@ CustomToolbarLayoutDemo.zip
 
    `/libs/fd/af/layouts/toolbar`
 
-   For example, copy the `mobileFixedToolbarLayout` node from the `/libs/fd/af/layouts/toolbar` folder to the `/apps/customlayout/toolbar` folder.
+   Kopieren Sie beispielsweise den Knoten `mobileFixedToolbarLayout` aus dem Ordner `/libs/fd/af/layouts/toolbar` in den Ordner `/apps/customlayout/toolbar`.
 
-   Also, copy the toolbarCommon.jsp to the `/apps/customlayout/toolbar` folder.
+   Kopieren Sie außerdem toolbarCommon.jsp in den Ordner `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
    >Der Ordner, den Sie für die benutzerdefinierten Layouts erstellen, muss mit dem Ordner `apps` erstellt werden.
 
-1. Rename the copied node, `mobileFixedToolbarLayout`, to `customToolbarLayout.`
+1. Benennen Sie den kopierten Knoten `mobileFixedToolbarLayout` in `customToolbarLayout.` um
 
    Geben Sie außerdem eine relevante Beschreibung für den Knoten an. Beispiel: Ändern Sie jcr:description des Knotens in **Benutzerdefiniertes Layout für Symbolleiste**.
 
@@ -86,7 +87,7 @@ CustomToolbarLayoutDemo.zip
 
 1. Wählen Sie dieses benutzerdefinierte Symbolleistenlayout und klicken Sie auf „OK“.
 
-   Add clientlib (javascript and css) in the `/etc/customlayout` node and include the reference of the clientlib in the `customToolbarLayout.jsp`.
+   hinzufügen clientlib (javascript und css) im Knoten `/etc/customlayout` und fügen Sie den Verweis der clientlib in das `customToolbarLayout.jsp` ein.
 
    ![Pfad der Datei customToolbarLayout.css](assets/toolbar_3.png)
 
