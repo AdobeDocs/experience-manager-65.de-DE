@@ -26,7 +26,7 @@ Für jede Unternehmensdomäne, die Sie konfigurieren, geben Sie die Ordner an, a
 
 Für jede Unternehmensdomäne, die Sie konfigurieren, geben Sie die Ordner an, aus denen der Authentifizierungsanbieter Benutzerdaten abfragt. Sie können einen Ordner zu einer bestehenden Unternehmensdomäne hinzufügen oder zu einer neuen Unternehmensdomäne, die Sie gerade hinzufügen. Sie können mehrere Ordner für eine Domäne konfigurieren. Sie können eine Domäne auch für die Verwendung einer benutzerdefinierten SPI (Service Provider Interface) zur Synchronisierung konfigurieren.
 
-### Ordner hinzufügen {#add-a-directory}
+### Ordner hinzufügen  {#add-a-directory}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf „Neue Unternehmensdomäne“ oder wählen Sie eine bestehende Unternehmensdomäne aus.
@@ -42,7 +42,7 @@ Für jede Unternehmensdomäne, die Sie konfigurieren, geben Sie die Ordner an, a
 1. Wählen Sie „Gruppeneinstellungen“ aus und konfigurieren Sie die Einstellungen den Anforderungen entsprechend. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
 1. Klicken Sie auf „Testen“, um zu überprüfen, ob der Basis-DN und andere konfigurierte Attribute den richtigen Gruppenstapel abrufen. Wenn Gruppen zurückgegeben werden, zeigen die Ergebnisse die Werte, die jedem Feld gemäß der Attributfestlegung zugewiesen werden. Klicken Sie auf „Schließen“.
 
-### Eine benutzerdefinierte SPI hinzufügen {#add-a-custom-spi}
+### Eine benutzerdefinierte SPI hinzufügen  {#add-a-custom-spi}
 
 Informationen zum Erstellen einer benutzerdefinierten SPI finden Sie unter „Entwickeln von SPIs für AEM Forms“ in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63). Starten Sie den Server neu, damit eine neu bereitgestellte benutzerdefinierte SPI für die Verknüpfung mit der Domäne verfügbar wird.
 
@@ -53,7 +53,7 @@ Informationen zum Erstellen einer benutzerdefinierten SPI finden Sie unter „En
 1. Wählen Sie einen benutzerdefinierten Benutzeranbieter in der Liste aus und klicken Sie auf „Weiter“.
 1. Wählen Sie einen benutzerdefinierten Gruppenanbieter in der Liste aus und klicken Sie auf „Fertig stellen“.
 
-## Ordner bearbeiten {#edit-a-directory}
+## Ordner bearbeiten  {#edit-a-directory}
 
 Sie können die Details eines bereits konfigurierten Ordners bearbeiten.
 
@@ -62,7 +62,7 @@ Sie können die Details eines bereits konfigurierten Ordners bearbeiten.
 1. Konfigurieren Sie die Ordner-, Benutzer- und Gruppeneinstellungen den Anforderungen entsprechend. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
 1. Klicken Sie auf OK.
 
-## Ordner löschen {#delete-a-directory}
+## Ordner löschen  {#delete-a-directory}
 
 Wenn Sie Ihre Domänen nach dem Löschen eines Ordners synchronisieren, werden alle Benutzer und Gruppen in der Datenbank als veraltet markiert. Sie werden bei keiner Suche von Administration Console zurückgegeben.
 
@@ -75,27 +75,27 @@ Wenn Sie Ihre Domänen nach dem Löschen eines Ordners synchronisieren, werden a
 1. Aktivieren Sie das Kontrollkästchen neben dem gewünschten Ordner und klicken Sie auf „Löschen“.
 1. Klicken Sie zuerst auf der angezeigten Bestätigungsseite auf „OK“ und dann erneut auf „OK“.
 
-## Ordnereinstellungen {#directory-settings}
+## Ordnereinstellungen  {#directory-settings}
 
 Wenn Sie einer Domäne einen Ordner hinzufügen, geben Sie die folgenden Ordnereinstellungen an.
 
-**Server:** (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispiel: Der vollständig qualifizierte Domänenname eines Computers namens x im Netzwerk corp.adobe.com lautet x.corp.adobe.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
+**Server:**  (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispiel: Der vollständig qualifizierte Domänenname eines Computers namens x im Netzwerk corp.adobe.com lautet x.corp.adobe.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
 
-**Anschluss:** (Obligatorisch) Der Anschluss, den der Ordnerserver verwendet. Dies ist in der Regel Anschluss 389 bzw. 636, falls das SSL-Protokoll (Secure Sockets Layer) zum Senden der Authentifizierungsinformationen über das Netzwerk verwendet wird.
+**Port:**  (Obligatorisch) Der Anschluss, den der Ordnerserver verwendet. Dies ist in der Regel Anschluss 389 bzw. 636, falls das SSL-Protokoll (Secure Sockets Layer) zum Senden der Authentifizierungsinformationen über das Netzwerk verwendet wird.
 
 **SSL:** (Obligatorisch) Gibt an, ob der Ordnerserver beim Senden von Daten über das Netzwerk SSL verwendet. Die Standardeinstellung ist „Nein“. Wenn Sie „Ja“ wählen, muss das entsprechende LDAP-Serverzertifikat von der Java™-Umgebung (Java Runtime Environment) des Anwendungsservers als vertrauenswürdig betrachtet werden.
 
-**Bindung** (Obligatorisch) Gibt an, wie auf den Ordner zugegriffen wird.
+**Bindung**  (Obligatorisch) Gibt an, wie auf den Ordner zugegriffen wird.
 
 **Anonym:** Es ist kein Benutzername oder Kennwort erforderlich. Anonyme Benutzer können nur eine begrenzte Datenmenge abrufen. Diese Option kann beim ersten Testing sinnvoll sein.
 
-**Benutzer:** Authentifizierung ist erforderlich. Geben Sie im Feld „Name“ den Namen des Benutzereintrags an, der auf den Ordner zugreifen darf. Am besten geben Sie den vollständigen definierten  Namen (DN) des Benutzerkontos ein, z. B. cn=Jane Doe, ou=user, dc=can, dc=com. Geben Sie im Feld „Kennwort“ das zugehörige Kennwort an. Wenn Sie „Benutzer“ als Bindungsoption auswählen, sind diese Einstellungen obligatorisch.
+**Benutzer:** Authentifizierung erforderlich. Geben Sie im Feld „Name“ den Namen des Benutzereintrags an, der auf den Ordner zugreifen darf. Am besten geben Sie den vollständigen definierten  Namen (DN) des Benutzerkontos ein, z. B. cn=Jane Doe, ou=user, dc=can, dc=com. Geben Sie im Feld „Kennwort“ das zugehörige Kennwort an. Wenn Sie „Benutzer“ als Bindungsoption auswählen, sind diese Einstellungen obligatorisch.
 
-**Name:** Name, der verwendet werden kann, um eine Verbindung zur LDAP-Datenbank herzustellen, wenn der anonyme Zugriff nicht aktiviert ist. Geben Sie für Active Directory 2003 `[domain name]\[userid]`. Geben Sie für Sun™ One, eDirectory oder IBM Tivoli Directory Server den vollständig qualifizierten Benutzernamen, z. B. uid=lcuser,ou=it,o=company.com an.
+**Name:** Name, mit dem eine Verbindung zur LDAP-Datenbank hergestellt werden kann, wenn der anonyme Zugriff nicht aktiviert ist. Geben Sie für Active Directory 2003 `[domain name]\[userid]` an. Geben Sie für Sun™ One, eDirectory oder IBM Tivoli Directory Server den vollständig qualifizierten Benutzernamen, z. B. uid=lcuser,ou=it,o=company.com an.
 
 **Kennwort:** Kennwort, das dem Namen entspricht, den Sie für die Verbindung zur LDAP-Datenbank angegeben haben, wenn der anonyme Zugriff nicht aktiviert ist.
 
-**Seite mit folgenden Elementen füllen:** Wenn diese Option aktiviert ist, werden Attribute auf den Seiten &quot;Benutzer- und Gruppeneinstellungen&quot;mit entsprechenden LDAP-Standardwerten gefüllt.
+**Seite ausfüllen mit:** Wenn diese Option aktiviert ist, werden Attribute auf den Seiten &quot;Benutzer- und Gruppeneinstellungen&quot;mit den entsprechenden LDAP-Standardwerten gefüllt.
 
 **Basis-DNs abrufen:** Ruft die Basis-DNs ab und zeigt sie in der Dropdown-Liste an. Diese Einstellung ist sinnvoll, wenn mehrere Basis-DNs vorhanden sind und Sie einen Wert auswählen müssen.
 
@@ -107,13 +107,13 @@ Wenn Sie einer Domäne einen Ordner hinzufügen, geben Sie die folgenden Ordnere
 
 ### Benutzereinstellungen {#user-settings}
 
-**Eindeutiger Bezeichner:** (Obligatorisch) Ein eindeutiges und konstantes Attribut zur Identifizierung von Benutzern. Verwenden Sie als eindeutigen Bezeichner ein Nicht-DN-Attribut, da sich der definierte Name (DN) eines Benutzers ändern kann, wenn er in einen anderen Unternehmensbereich wechselt. Diese Einstellung hängt vom Ordnerserver ab. Der Wert ist objectGUID für Active Directory 2003, nsuniqueID für Sun™ One und guid für eDirectory.
+**Eindeutiger Bezeichner:**  (Obligatorisch) Ein eindeutiges und konstantes Attribut, das zur Identifizierung von Benutzern verwendet wird. Verwenden Sie als eindeutigen Bezeichner ein Nicht-DN-Attribut, da sich der definierte Name (DN) eines Benutzers ändern kann, wenn er in einen anderen Unternehmensbereich wechselt. Diese Einstellung hängt vom Ordnerserver ab. Der Wert ist objectGUID für Active Directory 2003, nsuniqueID für Sun™ One und guid für eDirectory.
 
 >[!NOTE]
 >
 >Stellen Sie sicher, dass ein Attribut eingegeben wird, das in Ihrer Organisation garantiert eindeutig ist. Die Eingabe eines falschen Wertes kann zu schwerwiegenden Systemproblemen führen.
 
-**Basis-DN:** Als Ausgangspunkt für die Synchronisierung von Benutzern und Gruppen aus der LDAP-Hierarchie festlegen. Es empfiehlt sich, einen Basis-DN auf der niedrigsten Hierarchieebene anzugeben, die sämtliche Benutzer und Gruppen enthält, die für Dienste synchronisiert werden müssen.
+**Basis-DN:Als Ausgangspunkt für die Synchronisierung von Benutzern und Gruppen aus der LDAP-Hierarchie** festlegen. Es empfiehlt sich, einen Basis-DN auf der niedrigsten Hierarchieebene anzugeben, die sämtliche Benutzer und Gruppen enthält, die für Dienste synchronisiert werden müssen.
 
 Wenn Sie in den Ordnereinstellungen „Verweise aktivieren“ ausgewählt haben, legen Sie die Option „Basis-DN“ auf den *dc*-Teil des definierten Namens (DN) fest. Damit der Verweis funktioniert, muss der Suchbereich sowohl über- als auch untergeordnete Domänen umfassen.
 
@@ -127,85 +127,85 @@ Obwohl „Basis-DN“ eine obligatorische Einstellung in Administration Console 
 
 **Beschreibung:** Schema-Attribut für die Beschreibung des Benutzers
 
-**Vollständiger Name:** (Obligatorisch) Schema-Attribut für den vollständigen Benutzernamen
+**Vollständiger Name:**  (Obligatorisch) Schema-Attribut für den vollständigen Benutzernamen
 
 **Anmelde-ID:** (Obligatorisch) Schema-Attribut für die Anmelde-ID des Benutzers
 
-**Nachname:** (Obligatorisch) Schema-Attribut für den Nachnamen des Benutzers
+**Nachname:**  (Obligatorisch) Schema-Attribut für den Nachnamen des Benutzers
 
-**Vorname:** (Obligatorisch) Schema-Attribut für den Vornamen des Benutzers
+**Vorname:**  (Obligatorisch) Schema-Attribut für Vorname des Benutzers
 
 **Initialen:** Schema-Attribut für die Initialen des Benutzers
 
-**Geschäftskalender:** Ermöglicht die Zuordnung eines Geschäftskalenders zu einem Benutzer anhand des Werts für diese Einstellung (Geschäftskalenderschlüssel). Im Geschäftskalender werden Arbeits- und freie Tage definiert. AEM Forms kann Geschäftskalender zum Berechnen künftiger Termine und Zeiten für Ereignisse wie Erinnerungen, Fristen und Eskalationen verwenden. Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybriddomäne verwendet wird. (Siehe Geschäftskalender konfigurieren.) 
+**Geschäftskalender:** Ermöglicht die Zuordnung eines Geschäftskalenders zu einem Benutzer anhand des Wertes für diese Einstellung (Geschäftskalenderschlüssel). Im Geschäftskalender werden Arbeits- und freie Tage definiert. AEM Forms kann Geschäftskalender zum Berechnen künftiger Termine und Zeiten für Ereignisse wie Erinnerungen, Fristen und Eskalationen verwenden. Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybriddomäne verwendet wird. (Siehe Geschäftskalender konfigurieren.) 
 
  Wenn Sie eine Unternehmensdomäne verwenden, können Sie die Einstellung „Geschäftskalender“ einem Feld im LDAP-Ordner zuordnen. Wenn beispielsweise jeder Benutzerdatensatz in Ihrem Ordner ein Feld *country* enthält und Sie Geschäftskalender auf Grundlage des Landes zuweisen möchten, in dem sich der Benutzer befindet, geben Sie den Feldnamen *country* als Wert für die Einstellung „Geschäftskalender“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld *country* im LDAP-Ordner definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen. 
 
  Der Platz zum Anzeigen des Namens des Geschäftskalenderschlüssels auf den Seiten des Arbeitsablaufs für Formulare ist begrenzt. Begrenzen Sie den Namen des Geschäftskalenderschlüssels auf weniger als 53 Zeichen, um zu verhindern, dass der Name auf diesen Seiten abgeschnitten wird.
 
-**Zeitstempel ändern:** Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert fest, um TimeStamp zu ändern. (Siehe Delta-Ordnersynchronisierung aktivieren.)
+**Ändern des Zeitstempels:** Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert fest, um TimeStamp zu ändern. (Siehe Delta-Ordnersynchronisierung aktivieren.)
 
-**Einrichtung:** Schema-Attribut für den Namen der Organisation, der der Benutzer angehört.
+**Unternehmen:** Schema-Attribut für den Namen der Organisation, der der Benutzer angehört.
 
-**Primär-E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse des Benutzers.
+**Primär E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse des Benutzers.
 
-**Sekundär-E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse des Benutzers.
+**Sekundär E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse des Benutzers.
 
 **Telefon:** Schema-Attribut für die Telefonnummer des Benutzers.
 
-**Postanschrift:** Schema-Attribut für die E-Mail-Adresse des Benutzers.
+**Postanschrift:** Schema-Attribut für die Postanschrift des Benutzers.
 
 **Gebietsschema:** Schema-Attribut, das die Informationen zum ISO-Gebietsschema enthält. Das Schemaattribut ist ein aus zwei Buchstaben bestehender Sprachencode oder ein Sprachen- und Ländercode.
 
 **Zeitzone:** Schema-Attribut, das die Zeitzone enthält, in der sich der Benutzer befindet. Der Wert ist eine Zeichenfolge, z. B. City/Country.
 
-**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Forms Daten in Stapeln vom Ordnerserver abrufen kann. Wenn Sie Sun One als LDAP-Ordner verwenden und der Ordner sehr viele Benutzer enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Benutzern verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Gruppen aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie im Feld „Sortierfeld“ einen Namen an.
+**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Formulare Daten in Stapeln vom Ordnerserver abrufen können. Wenn Sie Sun One als LDAP-Ordner verwenden und der Ordner sehr viele Benutzer enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Benutzern verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Gruppen aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie im Feld „Sortierfeld“ einen Namen an.
 
 >[!NOTE]
 >
->Zum Aktivieren von VLV konfigurieren Sie Sun One. See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
+>Zum Aktivieren von VLV konfigurieren Sie Sun One. Siehe [User Management für die Verwendung der Virtual Liste Ansicht (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv) konfigurieren.
 
-**Sortierfeld:** Wenn Sie &quot;VLV-Steuerung (Virtual Liste Ansicht) aktivieren&quot;ausgewählt haben, geben Sie den Attributnamen an, der zum Sortieren des Indexes verwendet wird. Dieser Attributname (z. B. UID) ist der Name, den Sie beim Erstellen eines Indexes für die virtuelle Listenansicht auf dem Ordnerserver angegeben haben.
+**Sortierfeld:** Wenn Sie &quot;VLV-Ansicht aktivieren&quot;ausgewählt haben, geben Sie den Attributnamen an, der zum Sortieren des Indexes verwendet wird. Dieser Attributname (z. B. UID) ist der Name, den Sie beim Erstellen eines Indexes für die virtuelle Listenansicht auf dem Ordnerserver angegeben haben.
 
 ### Gruppeneinstellungen {#group-settings}
 
-**Eindeutiger Bezeichner:** (Obligatorisch) Ein eindeutiges und konstantes Attribut zur Identifizierung von Gruppen. Verwenden Sie als eindeutigen Bezeichner ein Nicht-DN-Attribut. Diese Einstellung hängt vom Ordnerserver ab. Der Wert ist objectGUID für Active Directory 2003, nsuniqueID für Sun One und guid für eDirectory.
+**Eindeutiger Bezeichner:**  (Obligatorisch) Ein eindeutiges und konstantes Attribut, das zur Identifizierung von Gruppen verwendet wird. Verwenden Sie als eindeutigen Bezeichner ein Nicht-DN-Attribut. Diese Einstellung hängt vom Ordnerserver ab. Der Wert ist objectGUID für Active Directory 2003, nsuniqueID für Sun One und guid für eDirectory.
 
 >[!NOTE]
 >
 >Stellen Sie sicher, dass ein Attribut eingegeben wird, das in Ihrer Organisation garantiert eindeutig ist. Die Eingabe eines falschen Wertes kann zu schwerwiegenden Systemproblemen führen.
 
-**Basis-DN:** (Obligatorisch) Ausgewiesener Basisname des Ordners.
+**Basis-DN:**  (Obligatorisch) Grunddefinierter Name des Ordners.
 
 Obwohl „Basis-DN“ eine obligatorische Einstellung in Administration Console ist, erfordern einige Ordnerserver, z. B. IBM Domino Enterprise Server, einen leeren Basis-DN. Um einen leeren Basis-DN anzugeben, exportieren Sie die Datei „config.xml“, bearbeiten Sie die Einstellung in dieser Datei und importieren Sie sie dann erneut. (Siehe [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 **Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet wird, um den Datensatz zu finden, der der Gruppe zugeordnet ist. Sie können eine Suche auf einer Ebene oder auf Unterebenen durchführen.
 
-**Beschreibung:** Schema-Attribut für die Gruppenbeschreibung
+**Beschreibung:** Schema-Attribut für Gruppenbeschreibung
 
-**Vollständiger Name:** (Obligatorisch) Schema-Attribut für den vollständigen Gruppennamen
+**Vollständiger Name:**  (Obligatorisch) Schema-Attribut für den vollständigen Gruppennamen
 
-**Mitglied-DN:** (Obligatorisch) Schema-Attribut für den charakteristischen Namen der Gruppenmitglieder
+**Mitglied-DN:**  (Obligatorisch) Schema-Attribut für den charakteristischen Gruppennamen
 
-**Eindeutige Kennung des Mitglieds:** Eindeutige Kennung für einen Benutzer oder eine Gruppe, der/die Mitglied der ausgewählten Gruppe ist. Dieser Wert hängt vom Ordnerserver ab. Der Wert ist objectSID für AD2003, nsuniqueID für Sun One und guid für eDirectory.
+**Eindeutige Kennung des Mitglieds:** Eindeutige Kennung eines Benutzers oder einer Gruppe, der/die Mitglied der ausgewählten Gruppe ist. Dieser Wert hängt vom Ordnerserver ab. Der Wert ist objectSID für AD2003, nsuniqueID für Sun One und guid für eDirectory.
 
 Wenn der Mitglieder-DN mit einem Nicht-DN-Attribut angegeben wird, verwendet User Management die Angabe für „Eindeutiger Bezeichner für Mitglied“ zum Abfragen von LDAP, um den DN des Benutzers zu erfassen, da dieser einem eindeutigen Bezeichnerwert entspricht.
 
 Wird der DN als eindeutiger Bezeichner angegeben, muss „Eindeutiger Bezeichner für Mitglied“ nicht konfiguriert werden.
 
-**Einrichtung:** Schema-Attribut für den Namen der Organisation, zu der die Gruppe gehört
+**Unternehmen:** Schema-Attribut für den Namen der Organisation, zu der die Gruppe gehört
 
-**Primär-E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse der Gruppe
+**Primär E-Mail:** Schema-Attribut für die primäre E-Mail-Adresse der Gruppe
 
-**Sekundär-E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse der Gruppe
+**Sekundär E-Mail:** Schema-Attribut für die sekundäre E-Mail-Adresse der Gruppe
 
-**Zeitstempel ändern:** Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert fest, um TimeStamp zu ändern. (Siehe Delta-Ordnersynchronisierung aktivieren.)
+**Ändern des Zeitstempels:** Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert fest, um TimeStamp zu ändern. (Siehe Delta-Ordnersynchronisierung aktivieren.)
 
-**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Forms Daten in Stapeln vom Ordnerserver abrufen kann. Wenn Sie Sun One als LDAP-Ordner verwenden und das Ordner sehr viele Gruppen enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Gruppen verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Benutzer aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie einen Sortierfeldnamen an.
+**VLV-Steuerung (Virtual Liste Ansicht) aktivieren:** Ein LDAP-Steuerelement, mit dem AEM Formulare Daten in Stapeln vom Ordnerserver abrufen können. Wenn Sie Sun One als LDAP-Ordner verwenden und das Ordner sehr viele Gruppen enthält, wird bei Aktivieren der VLV-Steuerung ein Index erstellt, den User Management zum Suchen von Gruppen verwenden kann. Diese Funktion ist nützlich, wenn ein normales Benutzerkonto verwendet wird, das nur eine begrenzte Datenmenge synchronisieren kann. Sie können die VLV-Steuerung auch für Benutzer aktivieren. Wenn Sie „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ auswählen, geben Sie einen Sortierfeldnamen an.
 
 >[!NOTE]
 >
->Zum Aktivieren von VLV konfigurieren Sie Sun One. See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
+>Zum Aktivieren von VLV konfigurieren Sie Sun One. Siehe [User Management für die Verwendung der Virtual Liste Ansicht (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv) konfigurieren.
 
 **Sortierfeldname:** Wenn Sie &quot;VLV-Steuerung (Virtual Liste Ansicht) aktivieren&quot;ausgewählt haben, geben Sie den Attributnamen an, der zum Sortieren des Indexes verwendet wird. Dies ist der Attributname, den Sie beim Erstellen eines Indexes für die virtuelle Listenansicht auf dem Ordnerserver angegeben haben.
 
@@ -219,7 +219,7 @@ Wenn Benutzer und Gruppen zurückgegeben werden, zeigen die Ergebnisse die Werte
 >
 >User Management unterstützt keine doppelten Benutzer-IDs innerhalb einer Domäne. Es wird nur ein Benutzer mit der Benutzer-ID synchronisiert.
 
-## User Management mit der virtuellen Listenansicht (VLV) konfigurieren {#configure-user-management-to-use-virtual-list-view-vlv}
+## User Management mit der virtuellen Listenansicht (VLV) konfigurieren  {#configure-user-management-to-use-virtual-list-view-vlv}
 
 Eine wichtige Voraussetzung für User Management ist die Ordnersynchronisierung. Die Benutzer und Gruppen werden aus einem Unternehmensordner mit der AEM Forms-Datenbank synchronisiert, um Rollen und Berechtigungen zuzuweisen. Die Anzahl der Benutzer liegt (je nach Anforderung) zwischen 100 und über 100.000, was eine technische Herausforderung für eine effiziente Datensynchronisierung darstellt.
 
@@ -233,9 +233,9 @@ Das LDAP-Protokoll bietet in der Form von Anforderungssteuerelementen eine Mögl
 1. Verwenden Sie die Sun ONE Administration Console oder ein Befehlszeilenskript, um die LDAP-VLV-Einträge für Benutzer und Gruppen zu erstellen. Mithilfe eines Befehlszeilenskripts können die Benutzer- und Gruppen-LDIF-Beispieldateien verwendet werden. (Siehe [Sun ONE Directory Server für VLV konfigurieren](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Beenden Sie den Server und erstellen Sie den erforderlichen Index. (Siehe [Ordnerserverindex für VLV erstellen](configuring-directories.md#create-the-directory-server-index-for-vlv).)
 
-### Sun ONE Directory Server für VLV konfigurieren {#configuring-the-sun-one-directory-server-for-vlv}
+### Sun ONE Directory Server für VLV konfigurieren  {#configuring-the-sun-one-directory-server-for-vlv}
 
-Zum Erstellen einer virtuellen Listenansicht muss ein Paar von Einträgen vorhanden sein, zu denen die Objektklassen `vlvSearch` und `vlvIndex` gehören. Der vlvSearch-Eintrag beinhaltet eine Suchbasis und das `vlvFilter`-Attribut, das die Objektklasse angibt, die die Attribute enthält, die sortiert werden sollen. Die `vlvIndex` Objektklasse enthält das `vlvSort` Attribut, das eines oder mehrere zu sortierende Attribute und die Sortierreihenfolge angibt. (Ein Minuszeichen (-) bedeutet umgekehrte alphabetische Reihenfolge). Für die Verwendung der virtuellen Listenansicht mit AEM Forms sind getrennte Einträge für Benutzer und Gruppen erforderlich.
+Zum Erstellen einer virtuellen Listenansicht muss ein Paar von Einträgen vorhanden sein, zu denen die Objektklassen `vlvSearch` und `vlvIndex` gehören. Der vlvSearch-Eintrag beinhaltet eine Suchbasis und das `vlvFilter`-Attribut, das die Objektklasse angibt, die die Attribute enthält, die sortiert werden sollen. Die `vlvIndex`-Objektklasse enthält das `vlvSort`-Attribut, das eines oder mehrere Attribute angibt, in denen sortiert werden soll, und die Sortierreihenfolge. (Ein Minuszeichen (-) bedeutet umgekehrte alphabetische Reihenfolge). Für die Verwendung der virtuellen Listenansicht mit AEM Forms sind getrennte Einträge für Benutzer und Gruppen erforderlich.
 
 >[!NOTE]
 >
@@ -276,7 +276,7 @@ Im Folgenden finden Sie eine Beispielskript-LDIF für VLV-Einträge für Benutze
 
    >[!NOTE]
    >
-   >Als Konvention wird der vlvIndex-Eintragsname ebenfalls auf `lcuser` festgelegt, jedoch können Sie einen anderen Namen auswählen. Verwenden Sie denselben Namen wie im vlvindex-Tool. (Siehe [Ordnerserverindex für VLV erstellen](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Als Konvention wird der vlvIndex-Eintragsname ebenfalls auf `lcuser` festgelegt, jedoch können Sie einen anderen Namen auswählen. Verwenden Sie denselben Namen wie im vlvindex-Tool. (Siehe [Ordnerserverindex für VLV erstellen ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Erstellen Sie mit dem Tool `ldapmodify` im Funktionsumfang des Sun ONE-Servers einen ähnlichen Eintrag für Gruppen unter Verwendung des Basis-DN der jeweiligen Gruppe, des Suchfilters und des Sortierfeldes:
 
@@ -308,11 +308,11 @@ Beenden Sie nach dem Konfigurieren der Ordnereinstellungen und dem Erstellen der
     [21/Nov/2007:16:47:29 +051800] - userRoot: Finished indexing.
    ```
 
-   Das vlvindex-Tool befindet sich im Ordner der Ordnerserverinstanz. Wenn der Sun ONE Server zwei Instanzen ausführt (server1 und server2), befindet sich das vlvindex-Tool im Ordner „*Sun ONE-Serverordner*\server1“. The value for parameter `-T` is the value of the `cn` attribute of the vlvindex entry created previously in the sample LDIF. In diesem Beispiel ist er auf `lcuser` festgelegt.
+   Das vlvindex-Tool befindet sich im Ordner der Ordnerserverinstanz. Wenn der Sun ONE Server zwei Instanzen ausführt (server1 und server2), befindet sich das vlvindex-Tool im Ordner „*Sun ONE-Serverordner*\server1“. Der Wert für den Parameter `-T` ist der Wert des Attributs `cn` des zuvor in der Beispiel-LDIF erstellten vlvindex-Eintrags. In diesem Beispiel ist er auf `lcuser` festgelegt.
 
 1. Wenn die virtuelle Listenansicht für Gruppen aktiviert ist, muss auch der entsprechende Index für die Gruppen erstellt werden. Sie können dann überprüfen, ob die Indizes erstellt wurden, indem Sie folgenden Befehl ausführen:
 
-   *Sun one server directory* `\shared\bin>ldapsearch -h`*hostname *`-p`*port* `-s base -b "" objectclass=*`
+   *sun one server* `\shared\bin>ldapsearch -h`** `-p`*directoryhostnameport nr* `-s base -b "" objectclass=*`
 
    Folgende Ausgabe wird erzeugt (Beispieldaten):
 
