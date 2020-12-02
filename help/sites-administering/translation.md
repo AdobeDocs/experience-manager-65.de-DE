@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 87%
 
 ---
 
@@ -28,9 +31,9 @@ Die Übersetzung der Inhalte umfasst die folgenden Schritte:
 
 1. [Stellen Sie eine Verbindung zwischen AEM und Ihrem Übersetzungsdienstleister her](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) und [erstellen Sie Konfigurationen für die Integration des Übersetzungs-Frameworks](/help/sites-administering/tc-tic.md).
 1. [Verknüpfen Sie die Seiten Ihres Sprach-Masters](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) mit dem Übersetzungsdienstleister und den Framework-Konfigurationen.
-1. [Identifizieren Sie den zu übersetzenden Inhaltstyp](/help/sites-administering/tc-rules.md) .
+1. [Identifizieren Sie den Typ des zu übersetzenden ](/help/sites-administering/tc-rules.md) Inhalts.
 1. [Bereiten Sie die Inhalte für die Übersetzung vor](/help/sites-administering/tc-prep.md), indem Sie die Sprach-Master und die Stammseiten der Sprachkopien erstellen.
-1. [Erstellen Sie Übersetzungsprojekte](/help/sites-administering/tc-manage.md) , um die zu übersetzenden Inhalte zu sammeln und den Übersetzungsprozess vorzubereiten.
+1. [Erstellen Sie Übersetzungsprojekte, ](/help/sites-administering/tc-manage.md) um die zu übersetzenden Inhalte zu sammeln und den Übersetzungsprozess vorzubereiten.
 1. Verwenden Sie die Übersetzungsprojekte, um [den Prozess zur Übersetzung der Inhalte zu verwalten](/help/sites-administering/tc-manage.md).
 
 Wenn Ihr Übersetzungsdienstleister keinen Connector für die Integration in AEM bereitstellt, unterstützt AEM auch die manuelle Extrahierung und das erneute Einfügen von Übersetzungsinhalten im XML-Format.
@@ -41,4 +44,4 @@ Wenn Ihr Übersetzungsdienstleister keinen Connector für die Integration in AEM
 
 ## Best Practices {#best-practices}
 
-The [Translation Best Practices](/help/sites-administering/tc-bp.md) page contains important information regarding your implementation.
+Die Seite [Best Practices für Übersetzung](/help/sites-administering/tc-bp.md) enthält wichtige Informationen zu Ihrer Implementierung.
