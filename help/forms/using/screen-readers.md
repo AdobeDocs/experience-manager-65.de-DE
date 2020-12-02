@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 84%
 
 ---
 
@@ -24,18 +27,18 @@ HTML5-Formulare verwenden standardmäßige HTML-Konstrukte, sodass für diese Fo
 
 HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Ausführliche Informationen finden Sie in [VPAT für HTML5-Forms](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html).
 
-## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare {#certified-screen-readers-for-html-forms}
+## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare  {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 unter Microsoft Windows
 * VoiceOver unter Mac OS X und auf iPad
 
-### JAWS {#jaws}
+### JAWS  {#jaws}
 
-In HTML5-Formularen funktionieren alle standardmäßigen Tasteneingaben und Tastaturbefehle. For more information on using JAWS, visit [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+In HTML5-Formularen funktionieren alle standardmäßigen Tasteneingaben und Tastaturbefehle. Weitere Informationen zur Verwendung von JAWS finden Sie unter [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### VoiceOver {#voiceover}
 
-HTML5-Formulare unterstützen alle Standard-Tasteneingaben und Gesten für VoiceOver. For more information on setting up and using VoiceOver, see [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
+HTML5-Formulare unterstützen alle Standard-Tasteneingaben und Gesten für VoiceOver. Weitere Informationen zum Einrichten und Verwenden von VoiceOver finden Sie unter [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
 
 ## Bekannte Probleme {#known-issues}
 
