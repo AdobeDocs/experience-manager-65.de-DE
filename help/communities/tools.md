@@ -19,23 +19,23 @@ ht-degree: 0%
 ---
 
 
-# Communities-Tools {#communities-tools}
+# Communities Tools {#communities-tools}
 
 Um auf die Communities Tools Console zuzugreifen, melden Sie sich bei Ihrer Autoreninstanz an:
 
-* Aus globaler Navigation: **[!UICONTROL Werkzeuge]** > **[!UICONTROL Communities]**.
+* Aus globaler Navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
 
    ![Communities](assets/communities-home.png)
 
-* [Site-Vorlagen](sites.md) - Konsole für die Erstellung und Verwaltung von Sitevorlagen.
+* [Site-Vorlagen](sites.md)  - Konsole für die Erstellung und Verwaltung von Sitevorlagen.
 
-* [Gruppenvorlagen](tools-groups.md) - Konsole für die Erstellung und Verwaltung von Gruppenvorlagen.
+* [Gruppenvorlagen](tools-groups.md)  - Konsole für die Erstellung und Verwaltung von Gruppenvorlagen.
 
-* [Community-Funktionen](functions.md) - Konsole für die Erstellung und Verwaltung von Community-Funktionen.
+* [Community-Funktionen](functions.md)  - Konsole für die Erstellung und Verwaltung von Community-Funktionen.
 
-* [Datenspeicherung Configuration](srp-config.md) - Console für die Konfiguration und Auswahl des [Standard-SRP](working-with-srp.md).
+* [Datenspeicherung Configuration](srp-config.md)  - Console für die Konfiguration und Auswahl des  [Standard-SRP](working-with-srp.md).
 
-* [Komponentenleitfaden](components-guide.md) - Öffnet eine interaktive Site, auf der Experimente darüber durchgeführt werden können, wie die SCF-Komponenten funktionieren und wie sie konfiguriert oder angepasst werden können.
+* [Komponenten-Handbuch](components-guide.md) : Öffnet eine interaktive Site, auf der Experimente darüber durchgeführt werden können, wie die SCF-Komponenten funktionieren und wie sie konfiguriert oder angepasst werden können.
 
-* [Abzeichen](badges.md) - Konsole, in der benutzerdefinierte Abzeichen für die Verwendung in [Scoring- und Kennzeichnungsregeln hinzugefügt werden können](implementing-scoring.md)
+* [Abzeichen](badges.md)  - Konsole, in der benutzerdefinierte Abzeichen für die Verwendung in  [Scoring- und Kennzeichnungsregeln hinzugefügt werden können](implementing-scoring.md)
 
