@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 translation-type: tm+mt
 source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
 
 Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
 
-Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platziert. Mit der Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
+Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platziert. Mit einer Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
 
 >[!NOTE]
 >
@@ -36,7 +39,7 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!NOTE]
 >
->Je nach Ihren Anforderungen können Sie auch einen Workflow entwickeln, um Benachrichtigungen beim Hinzufügen, Aktualisieren oder Löschen von Anmerkungen zu senden.
+>Je nach Ihren Anforderungen können Sie auch einen Arbeitsablauf entwickeln, um Benachrichtigungen beim Hinzufügen, Aktualisieren oder Löschen von Anmerkungen zu senden.
 
 ## Anmerkungen {#annotations}
 
@@ -76,6 +79,7 @@ Wenn Sie die Anmerkung löschen möchten, müssen Sie den Vorgang bestätigen (d
 >
 >* Wird das Symbol nicht angezeigt.
 >* Werden vorhandene Zeichnungen, die in anderen Browsern erstellt wurden, nicht angezeigt.
+
 >
 
 
