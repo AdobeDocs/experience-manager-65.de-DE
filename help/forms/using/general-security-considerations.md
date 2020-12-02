@@ -1,8 +1,8 @@
 ---
-title: Allgemeine Sicherheitsaspekte für AEM Forms on JEE
-seo-title: Allgemeine Sicherheitsaspekte für AEM Forms on JEE
-description: Hier erfahren Sie, wie Sie sich auf das Härten Ihrer AEM Forms on JEE-Umgebung vorbereiten.
-seo-description: Hier erfahren Sie, wie Sie sich auf das Härten Ihrer AEM Forms on JEE-Umgebung vorbereiten.
+title: Allgemeine Sicherheitsaspekte für AEM Forms auf JEE
+seo-title: Allgemeine Sicherheitsaspekte für AEM Forms auf JEE
+description: Erfahren Sie, wie Sie sich auf die Härtung Ihrer AEM Forms on JEE-Umgebung vorbereiten.
+seo-description: Erfahren Sie, wie Sie sich auf die Härtung Ihrer AEM Forms on JEE-Umgebung vorbereiten.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
@@ -11,6 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+workflow-type: tm+mt
+source-wordcount: '1082'
+ht-degree: 59%
 
 ---
 
@@ -95,7 +98,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Anwendungsserver
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Search for Understanding WebLogic Security at <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Suchen Sie nach "Understanding WebLogic Security"unter <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM WebSphere®</p> </td>
@@ -213,9 +216,9 @@ Der JBoss-Anwendungsserver verwendet 8080 als HTTP-Standardanschluss. JBoss verf
 
    Cluster-Installationen: [JBoss-Stammordner]/domain/configuration/domain.xml
 
-1. Ändern Sie den Wert des **Portattributs** im **&lt;socket-binding>** -Tag in eine benutzerdefinierte Anschlussnummer. Im Folgenden wird beispielsweise Port 8090 verwendet:
+1. Ändern Sie den Wert des Attributs **port** im Tag **** in eine benutzerdefinierte Anschlussnummer. Im Folgenden wird beispielsweise Port 8090 verwendet:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
 
 1. Speichern und schließen Sie die Datei.
 1. Starten Sie JBoss Application Server neu.
@@ -224,15 +227,15 @@ Der JBoss-Anwendungsserver verwendet 8080 als HTTP-Standardanschluss. JBoss verf
 
 In diesem Abschnitt werden bestimmte Sicherheitsprobleme für AEM Forms on JEE beschrieben, über die Sie sich bewusst sein sollen.
 
-### Keine Verschlüsselung von E-Mail-Berechtigungen in der Datenbank {#email-credentials-not-encrypted-in-database}
+### Keine Verschlüsselung von E-Mail-Berechtigungen in der Datenbank  {#email-credentials-not-encrypted-in-database}
 
 Die von -Anwendungen gespeicherten E-Mail-Berechtigungen werden nicht verschlüsselt, bevor sie in der AEM Forms on JEE-Datenbank gespeichert werden. Wenn Sie einen Dienstendpunkt für die Verwendung von E-Mail konfigurieren, werden Kennwortinformationen, die bei der Endpunktkonfiguration verwendet werden, beim Speichern in der Datenbank nicht verschlüsselt.
 
-### Sensibler Inhalt für Rights Management in der Datenbank {#sensitive-content-for-rights-management-in-the-database}
+### Sensibler Inhalt für Rights Management in der Datenbank  {#sensitive-content-for-rights-management-in-the-database}
 
-AEM Forms on JEE verwendet die AEM Forms on JEE-Datenbank, um vertrauliche Informationen zum Dokumentschlüssel und anderes kryptographisches Material zu speichern, das für Richtliniendokumente verwendet wird. Wenn Sie die Datenbank gegen unberechtigten Zugriff schützen, erhöht dies den Schutz dieser sensiblen Informationen.
+AEM Forms on JEE verwendet die AEM Forms on JEE-Datenbank, um sensible Dokument-Schlüsselinformationen und anderes kryptographisches Material zu speichern, das für Policy-Dokumente verwendet wird. Wenn Sie die Datenbank gegen unberechtigten Zugriff schützen, erhöht dies den Schutz dieser sensiblen Informationen.
 
-### Kennwort in unverschlüsseltem Textformular {#password-in-clear-text-format-in-adobe-ds-xml}
+### Kennwort in unverschlüsselter Textform {#password-in-clear-text-format-in-adobe-ds-xml}
 
 Der zum Ausführen von AEM Forms on JEE verwendete Anwendungsserver benötigt seine eigene Konfiguration, um über eine auf dem Anwendungsserver konfigurierte Datenquelle auf Ihre Datenbank zuzugreifen. Stellen Sie sicher, dass Ihr Anwendungsserver Ihr Datenbankkennwort in seiner Datenquellenkonfigurationsdatei nicht in unverschlüsseltem Text offen legt.
 
