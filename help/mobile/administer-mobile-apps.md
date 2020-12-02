@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 302d1bd9-fdb3-4db6-a446-6ed85ad9fba5
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 17%
 
 ---
 
@@ -21,13 +24,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Adobe Experience Manager (AEM) Mobile ist Teil der digitalen Mehrkanal-Plattform von Adobe Experience Manager, die auch AEM Assets, Sites, Bildschirme, Workflow, User Manager, Commerce und Forms nutzt. AEM Mobile bietet eine bemerkenswerte Flexibilität bei der Bereitstellung, sodass Unternehmen eine Vielzahl von Inhaltsquellen nutzen können.
+Adobe Experience Manager (AEM) Mobile ist Teil der digitalen Adobe Experience Manager-Plattform für mehrere Kanal, die auch AEM Assets, Sites, Bildschirme, Arbeitsabläufe, User Manager, Commerce und Forms nutzt. AEM Mobile Angebots bietet eine bemerkenswerte Flexibilität bei der Bereitstellung, sodass Unternehmen eine Vielzahl von Inhaltsquellen nutzen können.
 
-AEM Mobile bietet mehrere Methoden zum Erstellen von Apps. Die verschiedenen Methoden zum Erstellen von Apps sind:
+AEM Mobile Angebots bietet mehrere Methoden zum Erstellen von Apps. Die verschiedenen Methoden zum Erstellen von Apps sind:
 
-* [Verwalten von Inhalten für AEM Mobile-On-Demand-Dienste](/help/mobile/aem-mobile.md)
+* [Verwalten von Inhalten für AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 * [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](/help/mobile/administer-phonegap.md)
 
 >[!NOTE]
 >
->Wenn Sie neu bei Adobe Experience Manager sind, sollten Sie die [ersten Schritte mit AEM](/help/sites-deploying/deploy.md)durchführen.
+>Wenn Sie neu bei Adobe Experience Manager sind, sollten Sie [Erste Schritte mit AEM](/help/sites-deploying/deploy.md) durchführen.
