@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +29,7 @@ Das Erscheinungsbild-Framework stützt sich bei der Erfassung von Benutzerintera
 * Das Erscheinungsbild löst als Teil des Kontrakts eine Reihe von Ereignissen wie „enter“, „exit“ und so weiter aus.
 * Das Erscheinungsbild muss einen Funktionssatz implementieren. Einige der Funktionen sind allgemein, während andere spezifisch für die Feldtypfunktion sind.
 
-## Allgemeine Optionen {#common-options}
+## Allgemeine Optionen  {#common-options}
 
 Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügbar.
 
@@ -41,7 +44,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
    <td>Ein Bezeichner, mit dem dieses Objekt oder Ereignis in Skriptausdrücken angegeben wird. Diese Eigenschaft gibt beispielsweise den Namen der Host-Anwendung an.</td>
   </tr>
   <tr>
-   <td>value</td>
+   <td>Wert</td>
    <td>Tatsächlicher Wert des Felds. </td>
   </tr>
   <tr>
@@ -50,7 +53,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. The form provides the value and you can override the value.<br /> </td>
+   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular gibt den Wert an und Sie können den Wert überschreiben.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -85,11 +88,11 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
 
 Zusätzlich zu diesen Optionen stellt das Framework einige andere Optionen bereit, die je nach Typ des Felds variieren. Die Details zu den feldspezifischen Optionen sind unten aufgeführt.
 
-### Interaktion mit Formularframework {#interaction-with-forms-framework}
+### Interaktion mit Formularframework  {#interaction-with-forms-framework}
 
 Um mit dem Formularframework zu interagieren, löst ein Widget einige Ereignisse aus, die das Formularskript aktivieren. Wenn das Widget diese Ereignisse nicht erzeugt, funktionieren einige der Skripte nicht, die im Formular für dieses Feld eingegeben wurden.
 
-#### Vom Widget ausgelöste Ereignisse {#events-triggered-by-widget}
+#### Vom Widget ausgelöste Ereignisse  {#events-triggered-by-widget}
 
 <table>
  <tbody>
@@ -135,7 +138,7 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
    <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EREIGNIS wird aufgerufen.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: Zeichenfolge </em>zur Darstellung des Fehlers<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td>
    <td>Sendet Fehlermeldung und Fehlertyp an das Widget. Das Widget zeigt den Fehler an.</td>
   </tr>
   <tr>
@@ -145,7 +148,7 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
  </tbody>
 </table>
 
-## Optionen je nach Feldtyp {#options-specific-to-type-of-field}
+## Optionen je nach Feldtyp  {#options-specific-to-type-of-field}
 
 Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen übereinstimmen. Um die Funktionen von verschiedenen Feldern zu nutzen, muss das Widget den Richtlinien des jeweiligen Felds entsprechen.
 
@@ -172,7 +175,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
  </tbody>
 </table>
 
-### ChoiceList: DropDownList, ListBox {#choicelist-dropdownlist-listbox}
+### ChoiceList: DropDownList, ListBox  {#choicelist-dropdownlist-listbox}
 
 <table>
  <tbody>
@@ -181,7 +184,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
    <th>Beschreibung</th>
   </tr>
   <tr>
-   <td>value<br /> </td>
+   <td>Wert<br /> </td>
    <td>Array der ausgewählten Werte.<br /> </td>
   </tr>
   <tr>
@@ -226,9 +229,9 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
  </tbody>
 </table>
 
-### NumericEdit: NumericField, DecimalField {#numericedit-numericfield-decimalfield}
+### NumericEdit: NumericField, DecimalField  {#numericedit-numericfield-decimalfield}
 
-| Optionen | Beschreibung |
+| Optionen      | Beschreibung |
 |---|---|
 | dataType | String, der, der den Datentyp des Felds darstellt (ganze Zahl/Dezimalzahl). |
 | leadDigits | Maximale führende Ziffern der Dezimalzahl. |
@@ -236,16 +239,16 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 | zero | Die Zeichenfolgendarstellung von Null im Gebietsschema des Felds. |
 | decimal | Die Zeichenfolgendarstellung von Dezimalzahlen im Gebietsschema des Felds. |
 
-### CheckButton: RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
+### CheckButton: RadioButton, CheckBox  {#checkbutton-radiobutton-checkbox}
 
 <table>
  <tbody>
   <tr>
-   <th>Optionen</th>
+   <th>Optionen     </th>
    <th>Beschreibung</th>
   </tr>
   <tr>
-   <td>values</td>
+   <td>Werte</td>
    <td><p>Werte-Array(an/aus/neutral).</p> <p>Werte-Array für die verschiedenen Statusangaben des CheckButton. Wert[0] steht für den Status AN, Wert[1] steht für den Status AUS,<br /> Wert[2] steht für den Status NEUTRAL. Die Länge des Werte-Arrays entspricht dem Wert der Status-Option.<br /> </p> </td>
   </tr>
   <tr>
