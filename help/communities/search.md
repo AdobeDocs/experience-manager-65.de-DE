@@ -24,9 +24,9 @@ Die Suchfunktion kann für zahlreiche andere Funktionen wie beispielsweise Foren
 
 Wird die Funktion zum Durchsuchen der von Community-Mitgliedern veröffentlichten Beiträge – hier „user generated content“ (UGC, benutzergenerierter Inhalt) genannt – hinzugefügt, stehen zwei Komponenten zur Verfügung: [Suche](#search) und [Suchergebnisse](#search-results).
 
-The page that includes the `Search Results` component supports both searching and the display of results.
+Die Seite, die die Komponente `Search Results` enthält, unterstützt sowohl die Suche als auch die Anzeige der Ergebnisse.
 
-The page that includes the `Search` component provides a place to launch a search with results appearing on the `Search Results` page.
+Die Seite, die die Komponente `Search` enthält, bietet eine Stelle zum Starten einer Suche mit Ergebnissen, die auf der Seite `Search Results` angezeigt werden.
 
 Die Suchfunktion kann gemeinsam mit anderen Funktionen verwendet werden, sodass Site-Besucher und Mitglieder in der Lage sind, Inhalte einzusehen.
 
@@ -34,56 +34,57 @@ Die Suchfunktion kann gemeinsam mit anderen Funktionen verwendet werden, sodass 
 
 ### Hinzufügen einer Suche zu einer Seite {#add-search-to-a-page}
 
-Um einer Seite im Autorenmodus eine `Search` Komponente hinzuzufügen, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Search` und auf eine Seite zu ziehen. Die Verwendung `Search` erfordert eine zweite Seite für die Variable `Search Results.`
+Um einer Seite im Autorenmodus eine `Search`-Komponente hinzuzufügen, suchen Sie mithilfe des Komponenten-Browsers `Communities / Search` und ziehen Sie sie an die gewünschte Position auf einer Seite. Für die Verwendung von `Search` ist eine zweite Seite für `Search Results.` erforderlich.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search` component will appear.
+Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` einbezogen wird, wird die Komponente `Search` so angezeigt.
 
 ![add-search](assets/add-search.png)
 
 ### Konfigurieren der hinzugefügten Suche {#configure-the-added-search}
 
-Select the placed `Search` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Search` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![Konfirue](assets/configure-new.png)
 
-Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are search when a query is entered by a visitor.
+Geben Sie unter der Registerkarte **[!UICONTROL Sucheinstellungen]** an, wie Pfade gesucht werden, wenn ein Besucher eine Abfrage eingibt.
 
 ![search-settings](assets/search-settings.png)
 
-* **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt. As an example, to limit the search to a specific forum, select a forum component placed within a page:
+* **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt. Um die Suche beispielsweise auf ein bestimmtes Forum zu beschränken, wählen Sie eine Forumkomponente aus, die auf einer Seite platziert wird:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Ergebnisseite]** Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der Variablen 
+* **[!UICONTROL Ergebnisseite]**
+Die Ergebnisse werden auf einer separaten Seite angezeigt, die durch Auswahl einer Seite mit der Variablen 
 `Search Results` component.
 
 ## Search Results {#search-results}
 
 ### Hinzufügen von Suchergebnissen zu einer Seite {#add-search-results-to-a-page}
 
-To add a `Search Results` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Search Results`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Search Results`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite. Im Gegensatz zur Komponente „Suche“ wird hier keine zweite Seite benötigt, da die Suchergebnisse auf der gleichen Seite angezeigt werden können.
 
-If using Search elsewhere within the website, this one page with `Search Results` may be configured to be the `Result Page` for any or all instances of `Search`.
+Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, kann diese eine Seite mit `Search Results` so konfiguriert werden, dass sie für eine oder alle Instanzen von `Search` `Result Page` &lt;a1/> ist.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search Result` component will appear:
+Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search` einbezogen wird, wird die Komponente `Search Result` wie folgt angezeigt:
 
 ![search-result](assets/search-result1.png)
 
 ### Konfigurieren hinzugefügter Suchergebnisse {#configure-the-added-search-result}
 
-Select the placed `Search Results` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Search Results` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
-![configure](assets/configure-new.png)
+![konfigurieren](assets/configure-new.png)
 
-Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify what paths are included in the search when a query is entered by a visitor.
+Unter der Registerkarte **[!UICONTROL Suchergebniseinstellungen]** können Sie angeben, welche Pfade bei Eingabe einer Abfrage durch einen Besucher in die Suche einbezogen werden.
 
 ![search-result-settings](assets/search-result-settings.png)
 
@@ -97,4 +98,4 @@ Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Search Essentials](search-implementation.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Suchbegriffe](search-implementation.md) für Entwickler.
