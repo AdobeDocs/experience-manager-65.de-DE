@@ -158,7 +158,7 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
 [ECMAScript](https://de.wikipedia.org/wiki/ECMAScript) ist eine Skriptsprache. Sie wird für clientseitige Skript- und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um ECMAScript zum Hinzufügen benutzerdefinierter Metadaten für eine E-Mail-Vorlage zu verwenden:
 
-1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. The URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
+1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. Die URL lautet https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
 1. Navigieren Sie zu /apps/fd/dashboard/scripts/metadataScripts. Erstellen Sie eine Datei mit der Erweiterung „.ecma“. Beispiel: usermetadata.ecma
 
@@ -178,7 +178,7 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
    }
    ```
 
-1. Klicken Sie auf „Alle speichern“. Jetzt ist das Skript zur Auswahl im AEM-Workflow-Modell verfügbar.
+1. Klicken Sie auf Alle speichern. Jetzt ist das Skript zur Auswahl im AEM-Workflow-Modell verfügbar.
 
    ![assigntask-metadata](assets/assigntask-metadata.png)
 
@@ -195,7 +195,7 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
       | Typ | Zeichenfolge |
       | Wert | Geben Sie den Titel des Skripts an. Beispiel: Benutzerdefinierte Metadaten für den Richtlinieneigentümer. Der angegebene Wert wird im Schritt „Aufgabe zuweisen“ angezeigt. |
 
-### Verwenden eines OSGi-Bundles und einer Java-Schnittstelle zum Hinzufügen benutzerdefinierter Metadaten {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Verwenden eines OSGi-Bundles und einer Java-Schnittstelle zum Hinzufügen benutzerdefinierter Metadaten  {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
 Sie können die Java-Schnittstelle „WorkitemUserMetadataService“ zum Hinzufügen benutzerdefinierter Metadaten für E-Mail-Vorlagen verwenden. Erstellen Sie ein OSGi-Bundle, das die Java-Schnittstelle „WorkitemUserMetadataService“ verwendet, und stellen Sie es auf dem AEM Forms-Server bereit. Dadurch werden die Metadaten zur Auswahl im Schritt „Aufgabe zuweisen“ verfügbar.
 
