@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 92%
 
 ---
 
@@ -34,11 +37,16 @@ In diesem Dokument werden die verschiedenen Elemente beschrieben, aus denen Kamp
 Das Kampagnenmanagement umfasst verschiedene Elemente:
 
 * **Marken**
-In AEM, brands are the top level unit and form a collection of **Campaigns**.
+In AEM sind Marken die oberste Ebene und bilden eine Sammlung von 
+**Kampagnen**.
 
-* **Kampagnen** Eine Kampagne ist eine Sammlung einzelner **Erlebnisse**.
+* ****
+KampagnenEine Kampagne ist eine Sammlung von 
+**Erlebnisse**.
 
-* **Erlebnisse** Die zielgerichteten Inhalte bilden verschiedene Erlebnisse, die Besuchern an **Touchpoints** präsentiert werden. Es gibt verschiedene Erlebnistypen:
+* ****
+ErlebnisseDer fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unter 
+**Touchpoints**. Es gibt verschiedene Erlebnistypen:
 
    * **Teasers**
       [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte Besucher-**Segmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.
@@ -47,11 +55,12 @@ In AEM, brands are the top level unit and form a collection of **Campaigns**.
 
       * Präsentieren einer Optionspalette, aus der der Besucher wählen kann
       * Anzeigen nur eines Teaser-Absatzes basierend auf dem jeweiligen Besuchersegment. Der angezeigte Teaser-Absatz kann beispielsweise vom Alter des Besuchers abhängig sein.
+
       Bei einer Teaser-Seite handelt es sich in der Regel um eine temporäre Aktion, die für eine bestimmte Zeitdauer gültig ist, bis sie durch die nächste Teaser-Seite ersetzt wird.
 
    * **Newsletter**
 
-      [E-Mail-Nachrichten](#emailmarketing) werden verwendet, um Benutzer zu binden und sie zu ermutigen, Ihre Website zu besuchen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+      [Mithilfe von E-Mail-](#emailmarketing) Mitteilungen werden Benutzer dazu angeregt, Ihre Website zu besuchen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
