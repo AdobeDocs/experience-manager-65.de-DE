@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 81%
 
 ---
 
@@ -28,9 +31,9 @@ Die Anwendung greift auf den AEM Forms-Server an den REST-Endpunkten zu, um folg
 
 Der AEM Forms Server greift auf die AEM Forms-Datenbank über JDBC zu. Die Datenbank erfasst Aufgaben, Prozesse und deren Instanzen, Benutzer und zugehörige Informationen.
 
-AEM Forms Workspace ist aus modularen JavaScript™-Komponenten aufgebaut, die einzeln angepasst und in anderen Webanwendungen wiederverwendet werden können. Die Komponenten basieren auf Backbone, einer JavaScript-Bibliothek, die eine Struktur für Webanwendungen zur Verfügung stellt. Einen ausführlicher Artikel, der die Interaktion von Komponenten mit Backbone beschreibt, finden Sie [hier](/help/forms/using/backbone-interaction.md). Die Organisation der Komponenten in der CRX-Ordnerstruktur wird in [diesem](/help/forms/using/folder-structure.md) Artikel behandelt.
+Der AEM Forms Workspace ist aus modularen JavaScript™-Komponenten aufgebaut, die in anderen Webanwendungen individuell angepasst und wiederverwendet werden können. Die Komponenten basieren auf Backbone, einer JavaScript-Bibliothek, die eine Struktur für Webanwendungen zur Verfügung stellt. Einen ausführlicher Artikel, der die Interaktion von Komponenten mit Backbone beschreibt, finden Sie [hier](/help/forms/using/backbone-interaction.md). Die Organisation der Komponenten in der CRX-Ordnerstruktur wird in [diesem](/help/forms/using/folder-structure.md) Artikel behandelt.
 
 Pakete, die für AEM Forms Workspace gesendet werden:
 
 * `adobe-lc-workspace-pkg-<version>.zip`: Dies ist ein CRX-Paket, das heißt, es kann mithilfe des Package Manager in CRX bereitgestellt werden.
-* `adobe-lc-workspace-<version>-src.zip`: Es handelt sich dabei um ein Archiv, das den vollständigen Code von AEM Forms Workspace und Skripten zum Erstellen der Bereitstellungspakete - Ship-, Debug- und Dev-Pakete - enthält.
+* `adobe-lc-workspace-<version>-src.zip`: Es handelt sich um ein Archiv, das den vollständigen Code von AEM Forms Workspace und Skripten zum Erstellen der Bereitstellungspakete &quot;Ship&quot;, &quot;Debug&quot;und &quot;Dev&quot;enthält.
