@@ -22,12 +22,12 @@ ht-degree: 56%
 + [Über DAM](assets.md)
 + [Bewährte Verfahren für Assets](best-practices-for-assets.md)
 + [Zugänglichkeit in [!DNL Assets]](accessibility.md)
-+ Experience Manager-Assets verwenden {#using}
++ Experience Manager-Assets {#using} verwenden
    + [[!DNL Assets] startseite](assets-home-page.md)
    + [Suchen nach digitalen Assets](search-assets.md)
    + [Arbeiten mit Asset-Metadaten](metadata.md)
    + [Mehrsprachige Assets](multilingual-assets.md)
-   + [Assets [!DNL Adobe Stock] verwenden](aem-assets-adobe-stock.md)
+   + [Assets  [!DNL Adobe Stock] verwenden](aem-assets-adobe-stock.md)
    + [Vorschau von 3D-Assets](previewing-3d-assets.md)
    + [Überprüfen von Ordner-Assets und Sammlungen](bulk-approval.md)
    + [Optimierte Smart-Tags](enhanced-smart-tags.md)
@@ -87,11 +87,11 @@ ht-degree: 56%
    + [Anpassen und Erweitern [!DNL Assets]](extending-assets.md)
    + [Verarbeiten von Assets mit Media Handlern und Workflows](media-handlers.md)
    + [Suchfunktion erweitern](searchx.md)
-   + [Installation und [!DNL ImageMagick] Konfiguration [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installation und  [!DNL ImageMagick] Konfiguration [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Assets in den Aktivitäten-Stream integrieren](extending-activity-stream.md)
    + [Asset-Editor erweitern](asseteditorx.md)
    + [[!DNL Assets] HTTP-API](mac-api-assets.md)
-   + [Unterstützung von Inhaltsfragmenten [!DNL Assets] in der HTTP-API](assets-api-content-fragments.md)
+   + [Unterstützung von Inhaltsfragmenten  [!DNL Assets] in der HTTP-API](assets-api-content-fragments.md)
    + [[!DNL Assets] Proxy-Entwicklung](proxy.md)
 + Assets verwalten {#administer}
    + [Unterstützte Dateiformate](assets-formats.md)
@@ -141,7 +141,7 @@ ht-degree: 56%
    + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments/content-fragments-delete.md)
    + [Inhaltsfragmente – Markdown](content-fragments/content-fragments-markdown.md)
    + [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Assets verwalten {#managing}
    + [Verwalten digitaler Assets](manage-assets.md)
    + [Verwalten von Sammlungen](manage-collections.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
