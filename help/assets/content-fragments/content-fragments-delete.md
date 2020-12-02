@@ -87,11 +87,11 @@ Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bea
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
-These `remove` privileges must be [administered using Access Control Lists, within CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Diese `remove`-Berechtigungen müssen [mit Zugriffskontrolle-Listen innerhalb der CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management) verwaltet werden.
 
-The `add` and `modify` privileges can also be administered in CRXDE Lite, or using the User Management console.
+Die Berechtigungen `add` und `modify` können auch in CRXDE Lite oder mithilfe der User Management Console verwaltet werden.
 
-For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
+Beispielsweise die Definition der `remove`-Berechtigungen für eine Gruppe `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
 
