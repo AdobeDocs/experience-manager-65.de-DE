@@ -29,24 +29,24 @@ Es gibt zwei Arten von Diensten, die Bestandteil von AEM Forms sind:
 
 AEM Forms-Module (z. B. Forms, Rights Management, Output) arbeiten als Dienste. Manchmal müssen die Dienste für diese AEM Forms-Module beendet und neu gestartet werden. Beispielsweise müssen Sie einen AEM Forms-Dienst beenden und wieder neu starten, nachdem Sie Einstellungen des Dienstes geändert haben.
 
-1. In administration console click **Services** > **Applications and Services** > **Service Management**.
+1. Klicken Sie in Administration Console auf **Dienste** > **Anwendungen und Dienste** > **Dienstverwaltung**.
 1. Aktivieren Sie auf der Seite „Dienstverwaltung“ das Kontrollkästchen neben dem zu beendenden oder startenden Dienst und klicken Sie auf „Beenden“ bzw. „Starten“.
 
-## Dienste für den Anwendungsserver und die Datenbank starten und beenden {#start-or-stop-services-for-the-application-server-and-database}
+## Dienste für den Anwendungsserver und die Datenbank starten und beenden  {#start-or-stop-services-for-the-application-server-and-database}
 
 Eine vollständige Implementierung von AEM Forms umfasst einen Anwendungsserver und Datenbankdienste:
 
-* *`[application server]`* für AEM Forms
-* *`[database]`* für AEM Forms
+* *`[application server]`* für AEM
+* *`[database]`* für AEM
 
-On Windows, these services are accessible through the **Administrative Tools** > **Services panel**. Wenn Sie z. B. AEM Forms unter JBoss mit der Turnkey-Methode installiert haben, stehen auf Ihrem System die folgenden Dienste zur Verfügung:
+Unter Windows sind diese Dienste über das Bedienfeld **Verwaltung** > **Dienste** verfügbar. Wenn Sie z. B. AEM Forms unter JBoss mit der Turnkey-Methode installiert haben, stehen auf Ihrem System die folgenden Dienste zur Verfügung:
 
 * JBoss für Adobe Experience Manager Forms
 * MySQL für Adobe Experience Manager Forms
 
 Sie können Sie diese Dienste starten bzw. beenden, indem Sie sie in der Liste im Bereich „Dienste“ auswählen und anschließend auf die entsprechende Aktionsschaltfläche klicken.
 
-On UNIX® or Linux, enter the following text from a command line, where *`[service name]`* is the name of the service you are verifying:
+Geben Sie unter UNIX® oder Linux den folgenden Text in einer Befehlszeile ein, wobei *`[service name]`* der Name des zu überprüfenden Dienstes ist:
 
 ```java
      ps -A | grep [service name]
