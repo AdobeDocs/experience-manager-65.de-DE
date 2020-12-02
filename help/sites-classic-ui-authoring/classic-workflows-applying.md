@@ -1,6 +1,6 @@
 ---
-title: Anwenden von Workflows auf Seiten
-seo-title: Anwenden von Workflows auf Seiten
+title: 'Anwenden von Workflows auf Seiten  '
+seo-title: 'Anwenden von Workflows auf Seiten  '
 description: Workflows können entweder aus der Websites-Konsole oder, beim Bearbeiten einer Seite, aus dem Sidekick gestartet werden.
 seo-description: Workflows können entweder aus der Websites-Konsole oder, beim Bearbeiten einer Seite, aus dem Sidekick gestartet werden.
 uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
@@ -11,15 +11,18 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
 
-# Anwenden von Workflows auf Seiten{#applying-workflows-to-pages}
+# Anwenden von Workflows auf Seiten  {#applying-workflows-to-pages}
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
-* Den anzuwendenden Workflow.
+* Der anzuwendende Workflow.
 
    Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
 * Optional:
@@ -35,7 +38,7 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 Workflows können entweder aus der Websites-Konsole oder, beim Bearbeiten einer Seite, aus dem Sidekick gestartet werden.
 
-The **Status** column in the **Websites** console indicates whether a workflow has been applied to a page:
+Die Spalte **Status** in der Konsole **Websites** gibt an, ob ein Workflow auf eine Seite angewendet wurde:
 
 ![Workflow-Status](assets/workflowstatus.png)
 
@@ -46,12 +49,12 @@ The **Status** column in the **Websites** console indicates whether a workflow h
 1. Wählen Sie in der Seitenliste die Seite aus und klicken Sie dann auf „Workflow“.
 1. Wählen Sie im Dialogfeld „Workflow starten“ den Workflow aus, der angewendet werden soll. Geben Sie optional einen Kommentar und einen Titel ein. Klicken Sie dann auf „Start“.
 
-### Starten eines Workflows aus dem Sidekick {#starting-a-workflow-using-sidekick}
+### Starten eines Workflows aus dem Sidekick  {#starting-a-workflow-using-sidekick}
 
 1. Öffnen Sie die Websites-Konsole. 
 1. Öffnen Sie die gewünschte Seite.
 1. Wählen Sie die Registerkarte „Workflow“ aus dem Sidekick aus.
-1. Expand the **Workflow** dialog, allowing you to select the **Workflow** and optionally enter **Workflow Title** and **Comment**.
+1. Erweitern Sie das Dialogfeld **Workflow**, in dem Sie **Workflow** auswählen und optional **Workflow-Titel** und **Kommentar** eingeben können.
 
    ![workflow startsidekick](assets/workflowstartsidekick.png)
 
