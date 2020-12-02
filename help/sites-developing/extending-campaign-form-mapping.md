@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +31,7 @@ Sie müssen Folgendes installiert haben:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-See [Integrating AEM with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) for more information.
+Weitere Informationen finden Sie unter [AEM mit Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) integrieren.
 
 ## Erstellen benutzerdefinierter Formularzuordnungen {#creating-custom-form-mappings-2}
 
@@ -43,7 +46,7 @@ Zur Erstellung benutzerdefinierter Formularzuordnungen führen Sie die folgenden
 
 ### Erstellen der benutzerdefinierten Tabelle in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition, um eine Ereignistabelle zu erstellen:
+Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition, um eine Ereignis-Tabelle zu erstellen:
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -56,13 +59,13 @@ Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Camp
 
 Führen Sie nach der Erstellung der Ereignistabelle den **Assistenten zur Aktualisierung der Datenbankstruktur** aus, um die Tabelle zu erstellen.
 
-### Erweitern der Seed-Tabelle {#extending-the-seed-table}
+### Erweitern der Seed-Tabelle  {#extending-the-seed-table}
 
 Klicken/tippen Sie in Adobe Campaign auf **Hinzufügen**, um eine neue Erweiterung für die Tabelle **Seed-Adressen (nms)** hinzuzufügen.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Now, use the fields from the **event** table to extend the **seed** table:
+Verwenden Sie jetzt die Felder aus der Tabelle **Ereignis**, um die Tabelle **samen** zu erweitern:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -75,7 +78,7 @@ Now, use the fields from the **event** table to extend the **seed** table:
 
 Führen Sie danach den **Assistenten zur Aktualisierung der Datenbank** aus, um die Änderungen zu übernehmen.
 
-### Erstellen einer benutzerdefinierten Zielzuordnung {#creating-custom-target-mapping}
+### Erstellen einer benutzerdefinierten Zielzuordnung  {#creating-custom-target-mapping}
 
 Wechseln Sie unter **Administration/Kampagnenverwaltung** zu **Zielzuordnungen** und fügen Sie eine neue **Zielzuordnung** hinzu.
 
