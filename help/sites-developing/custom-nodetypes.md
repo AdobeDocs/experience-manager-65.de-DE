@@ -20,7 +20,7 @@ ht-degree: 52%
 
 # Benutzerdefinierte Knotentypen{#custom-node-types}
 
-Da AEM auf Sling basiert und ein JCR-Repository verwendet, stehen die von beiden folgenden Node-Typen zur Verwendung zur Verfügung:
+Da AEM auf Sling basiert und ein JCR-Repository verwendet, stehen die beiden folgenden Knotentypen zur Verwendung zur Verfügung:
 
 * [JCR-Knotentypen](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling-Knotentypen](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -80,7 +80,7 @@ Definiert den Knotentyp eines comment-Knotens.
 
 **Beschreibung**
 
-Defines the nodetype of a `commentattachment` node
+Definiert den Nodetyp eines `commentattachment`-Knotens
 
 **Definition**
 
@@ -166,7 +166,7 @@ Definiert den Standardknoten für den Seiteninhalt mit den von WCM verwendeten M
 * `@prop jcr:description` - Beschreibung dieser Seite.
 * `@prop cq:template` - Pfad zur Vorlage, die zum Erstellen der Seite verwendet wird.
 * `@prop cq:allowedTemplates` - Liste der regulären Ausdruck zur Bestimmung des Pfads/der Pfade für die zulässige Vorlage.
-* `@prop pageTitle` - Der Titel wird normalerweise im `<title>` Tag angezeigt.
+* `@prop pageTitle` - Der Titel wird normalerweise im  `<title>` Tag angezeigt.
 * `@prop navTitle` - Titel, der normalerweise bei der Navigation verwendet wird.
 * `@prop hideInNav` - Gibt an, ob die Seite in der Navigation ausgeblendet werden soll.
 * `@prop onTime` - Zeitpunkt, zu dem diese Seite gültig wird.
@@ -241,14 +241,14 @@ Definiert eine CQ-Komponente.
 * `@prop cq:noDecoration` - Wenn &quot;true&quot;, werden keine Dekorations- `div` Tags gezeichnet, wenn diese Komponente einbezogen wird.
 * `@node cq:editConfig` - Die Konfiguration, die die Parameter für die Bearbeitungsleiste definiert.
 * `@node cq:childEditConfig` - Die Bearbeitungskonfiguration, die von untergeordneten Komponenten geerbt wird.
-* `@node cq:htmlTag` - Definiert zusätzliche Tag-Attribute, die dem &quot;umgebenden&quot; `div` -Tag hinzugefügt werden, wenn die Komponente einbezogen wird.
+* `@node cq:htmlTag` - Definiert zusätzliche Tag-Attribute, die dem &quot;umgebenden&quot;  `div` Tag hinzugefügt werden, wenn die Komponente einbezogen wird.
 * `@node icon.png`- Eine Datei, die ein charakteristisches Symbol enthält.
 * `@node thumbnail.png` - Eine Datei, die ein charakteristisches Miniaturbild enthält.
 * `@prop allowedParents` - Regelmäßige Ausdruck zur Bestimmung des Pfads bzw. der Pfade von Komponenten, die als übergeordnete Komponenten zulässig sind.
 * `@prop allowedChildren` - Regelmäßige Ausdruck-Muster zur Bestimmung des Pfads bzw. der Pfade von Komponenten, die als untergeordnete Komponenten zulässig sind.
 * `@node virtual` - Enthält Unterknoten, die virtuelle Komponenten widerspiegeln, welche zum Verschieben der Komponenten per Drag-and-Drop verwendet werden.
 * `@prop componentGroup` - Name der Komponentengruppe, die für die Drag &amp; Drop-Funktion der Komponente verwendet wird.
-* `@node cq:infoProviders` - Enthält Unterknoten, von denen jede eine Eigenschaft hat, `className` die auf eine `PageInfoProvider`verweist.
+* `@node cq:infoProviders` - Enthält Unterknoten, von denen jede eine Eigenschaft hat,  `className` die auf eine  `PageInfoProvider`verweist.
 
 **Definition**
 
@@ -302,7 +302,7 @@ Definiert die Konfiguration für „EditBar“.
 * `@prop cq:actions`- Liste von Aktionen (Bearbeiten von Schaltflächen in der Leiste oder Menüelemente).
 * `@node cq:actionConfigs` - Widget-Konfigurationen für Bearbeitungsleiste oder Menüelemente.
 * `@prop cq:emptyText` - Text, der angezeigt werden soll, wenn kein sichtbarer Inhalt vorhanden ist.
-* `@node cq:dropTargets` - Sammlung von `{@link cq:DropTargetConfig}` Knoten.
+* `@node cq:dropTargets` - Sammlung von  `{@link cq:DropTargetConfig}` Knoten.
 
 **Definition**
 
@@ -321,7 +321,7 @@ Definiert die Konfiguration für „EditBar“.
 
 Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als ID für per Drag-and-Drop zu verschiebende Komponenten verwendet.
 
-* `@prop accept` - Liste von Mime-Typen, die von dieser Dropdown-Zielgruppe akzeptiert werden; z. B. `["image/*"]`
+* `@prop accept` - Liste von Mime-Typen, die von dieser Dropdown-Zielgruppe akzeptiert werden; z. B.  `["image/*"]`
 * `@prop groups` - Liste von Drag &amp; Drop-Gruppen, die eine Quelle akzeptieren.
 * `@prop propertyName` - Name der Eigenschaft, die zum Speichern des Verweises verwendet wird.
 
@@ -468,9 +468,9 @@ Container-Liste
 
 **Beschreibung**
 
-Der Knotentyp `cq:contentPage` enthält die Eigenschaft und die Definitionen des untergeordneten Knotens für ContentBus-Inhaltsseiten. Only when this mixin type is added to a node of type `cq:page`, a node becomes a ContentBus content page.
+Der Knotentyp `cq:contentPage` enthält die Eigenschaft und die Definitionen des untergeordneten Knotens für ContentBus-Inhaltsseiten. Nur wenn dieser Mixin-Typ einem Knoten des Typs `cq:page` hinzugefügt wird, wird ein Knoten zu einer ContentBus-Inhaltsseite.
 
-The items in a `cq:Cq4ContentPage` are:
+Die Elemente in einem `cq:Cq4ContentPage` sind:
 
 * `@prop cq:csd` - Die ContentBus-CSD der Seite.
 * `@node cq:content` - Der Inhalt der Seite. Dieser untergeordnete Knoten ist nicht vorhanden, wenn der Seitenknoten keinen Inhalt aufweist oder gelöscht wurde.
@@ -618,7 +618,7 @@ LiveSync-Konfiguration
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Fügen Sie für AEM 5.4 zum Ende der Liste hinzu:
+Für AEM 5.4 fügen Sie am Ende der Liste Folgendes hinzu:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
@@ -819,7 +819,7 @@ Jeder Benutzer/jede öffentliche Website kann den Inhalt (im Web 2.0-Stil) mit 
 
 **Beschreibung**
 
-Fügt einen `cq:userContent` Unterknoten hinzu, der von Benutzern geändert werden kann. Jeder Benutzer hat seine eigene `cq:userContent/<userid>` Unterknoten, die normalerweise über das Mixin verfügt `cq:UserTaggable`.
+Fügt eine `cq:userContent`-Unterknoten hinzu, die von Benutzern geändert werden kann. Jeder Benutzer hat seine eigene Unterknoten `cq:userContent/<userid>`, die normalerweise das mixin `cq:UserTaggable` hat.
 
 **Definition**
 
@@ -827,7 +827,7 @@ Fügt einen `cq:userContent` Unterknoten hinzu, der von Benutzern geändert werd
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Extended variant, more explicitly defining the `cq:userContent` tree
+Erweiterte Variante, genauer definiert die Struktur `cq:userContent`
 
 * `[cq:AllowsUserContent]`
    * `mixin`
@@ -925,7 +925,7 @@ Registerkartenbedienfeld
 
 **Definition**
 
-* `[cq:TabPanel] > cq:Panel orderable``
+* s[cq:TabPanel] > cq:Panel orderable&quot;
    * `- activeTab (long)`
 
 ### cq:Field {#cq-field}
