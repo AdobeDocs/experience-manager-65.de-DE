@@ -12,6 +12,9 @@ discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '1080'
+ht-degree: 80%
 
 ---
 
@@ -30,15 +33,15 @@ Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalt
 
 Mit AEM können Sie Segmente, Teaser und Kampagnen auf einfache Weise erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
 
-The **Segment Editor** allows you to easily define a segment:
+Mit dem **Segment-Editor** können Sie einfach ein Segment definieren:
 
 ![](assets/segmenteditor.png)
 
 Sie können jedes Segment **bearbeiten**, um einen **Titel**, eine **Beschreibung** und einen Faktor **Verstärken** anzugeben. Mithilfe des Sidekicks können Sie **UND**- und **ODER**-Container zum Definieren der **Segmentlogik** hinzufügen und anschließend die erforderlichen **Segmenteigenschaften** zur Definition der Auswahlkriterien hinzufügen.
 
-## Faktor „Verstärken“ {#boost-factor}
+## Faktor „Verstärken“  {#boost-factor}
 
-Each segment has a **Boost** parameter that is used as a weighting factor; a higher number indicates that the segment will be selected in preference to a segment with a lower number.
+Jedes Segment hat einen Parameter **Boost**, der als Gewichtungsfaktor verwendet wird. eine höhere Zahl bedeutet, dass das Segment anstelle eines Segments mit einer niedrigeren Zahl ausgewählt wird.
 
 * Mindestwert: `0`
 * Höchstwert: `1000000`
@@ -96,18 +99,18 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
   </tr>
   <tr>
    <td> Benutzeralter<br /> </td>
-   <td>Wie aus dem Benutzerprofil genommen.<br /> </td>
+   <td>Wie aus dem Profil des Benutzers genommen.<br /> </td>
   </tr>
   <tr>
    <td> Benutzereigenschaft<br /> </td>
-   <td>Alle weiteren Informationen, die im Benutzerprofil verfügbar sind. </td>
+   <td>Alle anderen Informationen, die im Profil des Benutzers verfügbar sind. </td>
   </tr>
  </tbody>
 </table>
 
 Sie können diese Eigenschaften mithilfe der booleschen Operatoren „ODER“ und „UND“ kombinieren (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)), um das exakte Szenario zur Auswahl dieses Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)**verwendet.
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)** verwendet.
 
 >[!CAUTION]
 >
@@ -115,15 +118,15 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 
 >[!NOTE]
 >
->Properties with the **_i18n** suffix are set by a script which is a part of personalization&#39;s UI clientlib. Alle benutzeroberflächenbezogenen clientlibs werden nur dann in der Autoreninstanz geladen, wenn die Benutzeroberfläche in der Veröffentlichungsinstanz nicht benötigt wird.
+>Eigenschaften mit dem Suffix **_i18n** werden durch ein Skript festgelegt, das Teil der Benutzeroberflächen-clientlib der Personalisierung ist. Alle benutzeroberflächenbezogenen clientlibs werden nur dann in der Autoreninstanz geladen, wenn die Benutzeroberfläche in der Veröffentlichungsinstanz nicht benötigt wird.
 >
->Therefore when creating a segment with such properties is it normally necessary to rely on **browserFamily** for instance instead of **browserFamily_i18n**.
+>Daher ist es beim Erstellen eines Segments mit solchen Eigenschaften normalerweise erforderlich, sich z. B. auf **browserFamily** anstatt auf **browserFamily_i18n** zu verlassen.
 
 ### Erstellen eines neuen Segments {#creating-a-new-segment}
 
 So legen Sie Ihr neues Segment fest:
 
-1. In the rail, choose **Tools > Operations > Configuration**.
+1. Wählen Sie in der Leiste **Werkzeuge > Vorgänge > Konfiguration**.
 1. Klicken Sie auf die Seite **Segmentierung** im linken Bereich und navigieren Sie zum erforderlichen Ort.
 1. Erstellen Sie eine [neue Seite](/help/sites-authoring/editing-content.md#creatinganewpage) mithilfe der Vorlage **Segment**.
 1. Öffnen Sie die neue Seite, um den Segment-Editor anzuzeigen:
@@ -136,13 +139,13 @@ So legen Sie Ihr neues Segment fest:
    ![](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Klicken Sie auf **OK**, um Ihre Definition zu speichern:
-1. Sie können die Segmentdefinition **bearbeiten**, um ihr einen **Titel**, eine **Beschreibung** und einen Faktor **[Verstärken](#boost-factor)**zuzuordnen:
+1. Sie können die Segmentdefinition **bearbeiten**, um ihr einen **Titel**, eine **Beschreibung** und einen Faktor **[Verstärken](#boost-factor)** zuzuordnen:
 
    ![](assets/screen_shot_2012-02-02at103547am.png)
 
 1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Sie können boolesche Ausdrücke anhand der **UND-Container-** und **ODER-Containerkomponenten** hinzufügen, die unter **Segmentlogik** zu finden sind. Mit dem Segment-Editor können Sie nicht mehr benötigte Eigenschaften oder Container löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern  {#using-and-and-or-containers}
 
 Sie können in AEM komplexe Segmente erstellen. Es ist hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
@@ -161,12 +164,12 @@ Da der Hauptoperator „ODER“ lautet, müssen Sie mit einem **ODER-Container**
 
 ![](assets/screen_shot_2012-02-02at105145am.png)
 
-## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
+## Testen der Anwendung eines Segments  {#testing-the-application-of-a-segment}
 
-Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe des **[ClientContext](/help/sites-administering/client-context.md)**getestet werden:
+Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe des **[ClientContext](/help/sites-administering/client-context.md)** getestet werden:
 
 1. Wählen Sie das zu testende Segment aus.
-1. Drücken Sie **[Strg-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)**, um den**[ ClientContext](/help/sites-administering/client-context.md)** zu öffnen, der die gesammelten Daten anzeigt. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
+1. Drücken Sie **[Strg-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)**, um den **[ClientContext](/help/sites-administering/client-context.md)** zu öffnen, der die gesammelten Daten anzeigt. Zu Testzwecken können Sie **bestimmte Werte bearbeiten oder** Laden **ein anderes Profil laden, um die Auswirkungen dort zu sehen.**
 
 1. Je nach den definierten Eigenschaften können die zu der aktuellen Seite verfügbaren Daten mit der Segmentdefinition übereinstimmen oder nicht. Der Status der Übereinstimmung wird unter der Definition angezeigt.
 
@@ -188,6 +191,6 @@ In der QuickInfo zum Teaser-Absatz werden die angewendeten Segmente angezeigt so
 
 ![](assets/chlimage_1-47.png)
 
-### Verwenden Ihres Segments {#using-your-segment}
+### Verwenden Ihres Segments  {#using-your-segment}
 
 Die Segmente werden aktuell innerhalb von [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) verwendet. Sie werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. Weitere Informationen finden Sie unter [Segmente](/help/sites-authoring/segmentation-overview.md).
