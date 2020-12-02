@@ -39,7 +39,7 @@ Mit der neuen Architektur ist AEM für Assets aus Primärquellen und Synchronisi
 
 >[!NOTE]
 >
->Dynamische Medien - Der Scene7-Modus ist nur für die AEM-Autoreninstanz verfügbar. Daher müssen Sie `runmode=dynamicmedia_scene7` die AEM Author-Instanz konfigurieren, *nicht* die AEM Publish-Instanz.
+>Dynamische Medien - Der Scene7-Modus ist nur für die AEM-Autoreninstanz verfügbar. Daher müssen Sie `runmode=dynamicmedia_scene7` für die AEM-Autoreninstanz *und nicht* für die AEM Publish-Instanz konfigurieren.
 
 Zum Aktivieren von dynamischen Medien müssen Sie AEM über die Befehlszeile im Ausführungsmodus `dynamicmedia_scene7` starten, indem Sie folgenden Befehl in ein Terminalfenster eingeben (verwendeter Beispielport: 4502):
 
@@ -49,7 +49,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## (Optional) Migration von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 zu 6.5 ohne Ausfallzeit {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-If you are upgrading AEM Dynamic Media from 6.3 to 6.4 or 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
+Wenn Sie ein Upgrade AEM dynamischen Medien von 6.3 auf 6.4 oder 6.5 durchführen (was jetzt die Möglichkeit umfasst, keine Ausfallzeiten bereitzustellen), müssen Sie den folgenden Befehl &quot;curl&quot;ausführen, um alle Ihre Vorgaben und Konfigurationen in der CRXDE Lite von `/etc` auf `/conf` zu migrieren.
 
 >[!NOTE]
 >
@@ -59,29 +59,29 @@ Bei allen Upgrades – mit oder ohne Kompatibilitätspaket – können Sie die
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-To migrate any custom viewer presets and configurations that you have created from `/etc` to `/conf`, run the following Linux curl command:
+Um benutzerdefinierte Viewer-Vorgaben und Konfigurationen zu migrieren, die Sie von `/etc` zu `/conf` erstellt haben, führen Sie den folgenden Linux-Befehl &quot;curl&quot;aus:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Installing feature pack 18912 for bulk asset migration {#installing-feature-pack-for-bulk-asset-migration}
+## Feature Pack 18912 für Massenmigration von Assets installieren {#installing-feature-pack-for-bulk-asset-migration}
 
-The installation of feature pack 18912 is *optional*.
+Die Installation von Feature Pack 18912 ist *optional*.
 
-Mit Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets aus dem Dynamic Media - Hybrid-Modus oder dem Dynamic Media Classic in den Modus Dynamische Medien - Scene7 auf AEM migrieren. Es ist in [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html)erhältlich.
+Mit Feature Pack 18912 können Sie Assets per FTP stapelweise erfassen oder Assets aus dem Dynamic Media - Hybrid-Modus oder dem Dynamic Media Classic in den Modus Dynamische Medien - Scene7 auf AEM migrieren. Sie ist unter [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) verfügbar.
 
-Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration](/help/assets/bulk-ingest-migrate.md) von Assets.
+Weitere Informationen finden Sie unter [Feature Pack 18912 installieren für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 
 ## Erstellen einer Konfiguration für dynamische Medien in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Bevor Sie dynamische Medien** konfigurieren - Nachdem Sie Ihre Bereitstellungs-E-Mail mit den Anmeldeinformationen für dynamische Medien erhalten haben, müssen Sie sich bei Dynamic Media Classic [anmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) , um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
+**Bevor Sie dynamische Medien**  konfigurieren - Nachdem Sie Ihre Bereitstellungs-E-Mail mit den Anmeldeinformationen für dynamische Medien erhalten haben, müssen Sie sich  [bei Dynamic Media Classic ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) anmelden, um Ihr Kennwort zu ändern. Das Kennwort aus der Bereitstellungs-E-Mail wird systemseitig erstellt und ist nur als temporäres Kennwort vorgesehen. Sie müssen das Kennwort aktualisieren, damit Dynamic Media Cloud Service mit den richtigen Anmeldedaten eingerichtet wird.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 **So erstellen Sie eine Konfiguration für dynamische Medien in Cloud Services**
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. Tippen Sie in AEM auf das AEM Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf das Symbol Tools und dann auf **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
 1. Tippen Sie auf der Seite „Browser zur Konfiguration dynamischer Medien“ im linken Bereich auf **[!UICONTROL global]** (tippen Sie nicht auf bzw. wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus) und tippen Sie dann auf **[!UICONTROL Erstellen.]**
-1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an den Support, wenn Sie sie nicht erhalten haben.
+1. Geben Sie auf der Seite **[!UICONTROL Konfiguration für dynamische Medien erstellen]** einen Titel, die E-Mail-Adresse des Kontos für dynamische Medien und das Kennwort ein und wählen Sie dann Ihre Region aus. Diese Informationen erhalten Sie in der Bereitstellungs-E-Mail von Adobe. Wenden Sie sich an den Support, wenn Sie sie nicht erhalten haben.
 
    Klicken Sie auf **[!UICONTROL Mit Dynamic Media verbinden.]**
 
@@ -98,16 +98,16 @@ Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für
    * **[!UICONTROL Assets veröffentlichen]** – Sie können zwischen den folgenden drei Optionen wählen:
       * **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.
       * **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.
-      * **[!UICONTROL Selektive Veröffentlichung]** Mit diesen Optionen können Sie steuern, welche Ordner in dynamischen Medien veröffentlicht werden, damit Sie Funktionen wie Smart-Zuschneiden oder dynamische Darstellungen verwenden können oder welche Ordner ausschließlich in AEM zur Vorschau veröffentlicht werden. Diese Assets werden *nicht* für den Versand in der Öffentlichkeit in dynamischen Medien veröffentlicht.<br>Sie können diese Option hier in der **[!UICONTROL Dynamic Media Cloud-Konfiguration]** oder, falls gewünscht, auf Ordnerebene in den **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe [Arbeiten mit selektiver Veröffentlichung in dynamischen Medien.](/help/assets/selective-publishing.md)<br>Beachten Sie, dass sich diese Änderungen, wenn Sie diese Konfiguration später ändern oder später auf Ordnerebene ändern, nur auf neue Assets auswirken, die Sie von diesem Zeitpunkt an hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie sie manuell im Dialogfeld &quot; **[!UICONTROL Schnelle Veröffentlichung]** &quot;oder &quot;Veröffentlichung **[!UICONTROL verwalten]** &quot;ändern.
+      * **[!UICONTROL Selektive]** VeröffentlichungMit diesen Optionen können Sie steuern, welche Ordner in dynamischen Medien veröffentlicht werden, damit Sie Funktionen wie Smart-Zuschneiden oder dynamische Darstellungen verwenden können oder welche Ordner ausschließlich in AEM zur Vorschau veröffentlicht werden. Diese Assets werden  ** nicht in dynamischen Medien für den Versand in der Öffentlichkeit veröffentlicht.<br>Sie können diese Option hier in der  **[!UICONTROL Dynamic Media Cloud-]** Konfiguration oder, falls gewünscht, auf Ordnerebene in den  **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media.](/help/assets/selective-publishing.md)<br>Beachten Sie, dass sich diese Änderungen, wenn Sie diese Konfiguration später ändern oder später auf Ordnerebene ändern, nur auf neue Assets auswirken, die Sie von diesem Zeitpunkt an hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
    * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, dass AEM sicher auf die Dynamic Media-Remote-Ausgaben zugreifen und eine Vorschau dafür anzeigen kann, nachdem die Ausgaben erstellt wurden (es werden keine Binärdateien an die AEM-Instanz zurückgesendet).
 Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmens-Server oder eines speziellen Servers getroffen haben, empfiehlt Adobe Systems, diese Einstellung nicht zu verändern. 
 
-   * **[!UICONTROL Synchronisieren Sie alle Inhalte]** - standardmäßig <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:
+   * **[!UICONTROL Alle Inhalte]**  synchronisieren -  <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Standardmäßig ausgewählt. Deaktivieren Sie diese Option, wenn Sie Assets aus der Synchronisierung mit Dynamic Media gezielt ein- oder ausschließen möchten. Wenn Sie diese Option deaktivieren, können Sie aus den beiden folgenden Synchronisierungsmodi für Dynamic Media wählen:
 
    * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**
       * **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
-Um einen ausgewählten Ordner zur Synchronisierung mit dynamischen Medien zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften.]** Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Details]** &quot;in der Dropdown-Liste &quot;Synchronisierungsmodus für **[!UICONTROL dynamische Medien]** &quot;eine der folgenden drei Optionen. When you are done tap **[!UICONTROL Save.]** *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor &quot;Alle Inhalte **synchronisieren&quot;ausgewählt haben**.* Siehe auch [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in dynamischen Medien.](/help/assets/selective-publishing.md)
+Um einen ausgewählten Ordner zur Synchronisierung mit dynamischen Medien zu markieren, wählen Sie einen Asset-Ordner aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften.]** Wählen Sie auf der  **** Detailkarte in der  **[!UICONTROL Dropdown-Liste &quot;Synchronisierung]** für dynamische Medien&quot;aus den folgenden drei Optionen. Wenn Sie fertig sind, tippen Sie auf **[!UICONTROL Speichern.]** *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie die Option &quot;Alle Inhalte **synchronisieren&quot;**zuvor ausgewählt haben.* Siehe auch  [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in dynamischen Medien.](/help/assets/selective-publishing.md)
          * **[!UICONTROL Vererbt]** – Kein expliziter Synchronisierungswert für den Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
          * **[!UICONTROL Aktivieren für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
          * **[!UICONTROL Deaktiviert für Unterordner]** – Schließen Sie alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
@@ -159,7 +159,7 @@ Die Einrichtungs- und Konfigurationsaufgaben umfassen Folgendes:
 * [Hinzufügen von MIME-Typen für nicht unterstützte Formate](#adding-mime-types-for-unsupported-formats)
 * [Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotations-Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Veröffentlichungseinstellungen für Image-Server           {#publishing-setup-for-image-server}
+#### Veröffentlichungseinstellungen für Image-Server            {#publishing-setup-for-image-server}
 
 Mit den Veröffentlichungseinstellungen wird festgelegt, wie Assets standardmäßig von Dynamic Media bereitgestellt werden. Wenn keine Einstellung festgelegt wird, stellt Dynamic Media ein Asset gemäß den Standardeinstellungen unter „Veröffentlichungseinstellungen“ bereit. Beispiel: Bei der Anforderung, ein Bild bereitzustellen, das kein Auflösungsattribut enthält, wird ein Bild mit der Einstellung „Standardobjektauflösung“ bereitgestellt.
 
@@ -173,7 +173,7 @@ Auf dem Bildschirm „Image-Server“ werden Standardeinstellungen für das Bere
 * **[!UICONTROL Standardeinstellungen für Katalogfelder]**: Diese Einstellungen beziehen sich auf die Auflösung und den Standardtyp für Miniaturansichten von Bildern.
 * **[!UICONTROL Farbverwaltungsattribute]**: Mit diesen Einstellungen wird festgelegt, welche ICC-Farbprofile verwendet werden.
 * **[!UICONTROL Kompatibilitätsattribute]**: Diese Einstellung ermöglicht die Behandlung von Anfangs- und Endabsätzen in Textebenen wie in Version 3.6, um die Abwärtskompatibilität zu gewährleisten.
-* **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. For more information about setting up **[Localization Support]**, see [Considerations when setting up localization of assets](https://help.adobe.com/de_DE/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Lokalisierungsunterstützung]**: Mit diesen Einstellungen können mehrere Gebietsschemaattribute verwaltet werden. Außerdem kann damit eine Zeichenfolge der Gebietsschemakarte angegeben werden, damit Sie festlegen können, welche Sprachen für die verschiedenen QuickInfos in Viewern unterstützt werden sollen. Weitere Informationen zum Einrichten von **[Lokale Anpassung-Support]** finden Sie unter [Überlegungen beim Einrichten der lokale Anpassung von Elementen](https://help.adobe.com/de_DE/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
 #### Konfigurieren der allgemeinen Anwendungseinstellungen {#configuring-application-general-settings}
 
@@ -196,7 +196,7 @@ Zum Öffnen der Seite „Allgemeine Programmeinstellungen“ über die globale N
 
 >[!NOTE]
 >
->Standardmäßig zeigt das System 15 Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und 15 Viewer-Voreinstellungen, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können diese Grenze erhöhen. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Standardmäßig zeigt das System 15 Ausgabedarstellungen an, wenn Sie **[!UICONTROL Ausgabedarstellungen]** auswählen, und 15 Viewer-Voreinstellungen, wenn Sie in der Detailansicht des Assets **[!UICONTROL Viewer]** auswählen. Sie können diese Grenze erhöhen. Siehe [Erhöhung der Anzahl der Bildvorgaben, die angezeigt werden,](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhung der Anzahl der Viewer-Vorgaben, die](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display) anzeigen.
 
 
 #### Konfigurieren des Farb-Managements {#configuring-color-management}
@@ -214,7 +214,7 @@ So konfigurieren Sie die Standardfarbeigenschaften, damit die Farbkorrektur beim
    * **[!UICONTROL CMYK-Standardfarbraum]**: Name des standardmäßigen CMYK-Farbprofils
    * **[!UICONTROL Graustufen-Standardfarbraum]**: Name des standardmäßigen Grau-Farbprofils
    * **[!UICONTROL RGB-Standardfarbraum]**: Name des standardmäßigen RGB-Farbprofils
-   * **[!UICONTROL Rendering Intent für Farbumwandlung]**: Gibt die Render-Priorität an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch.]** Adobe empfiehlt, **[!UICONTROL relativ]** festzulegen.
+   * **[!UICONTROL Rendering Intent für Farbumwandlung]**: Gibt die Render-Priorität an. Zulässige Werte sind: **[!UICONTROL wahrnehmungsorientiert]**, **[!UICONTROL relativ farbmetrisch]**, **[!UICONTROL Sättigung]**, **[!UICONTROL absolut farbmetrisch.]** Adobe empfiehlt  **** relativea als Standard.
 
 1. Tippen Sie auf **[!UICONTROL Speichern.]**
 
@@ -235,13 +235,13 @@ Sie können festlegen, welche Asset-Typen von Dynamic Media verarbeitet werden,
 * Konvertieren eines Adobe PDF-Dokuments in ein E-Katalog-Asset
 * Konvertieren eines Adobe Photoshop-Dokuments (.PSD) in ein Bannervorlagen-Asset für Personalisierung
 * Rastern einer Adobe Illustrator- (.AI) oder Adobe Photoshop Encapsulated Postscript-Datei (.EPS)
-* [Mit Video-Profilen](/help/assets/video-profiles.md) und [Imaging-Profilen](/help/assets/image-profiles.md) können Sie die Verarbeitung von Videos bzw. Bildern definieren.
+* [Mithilfe von ](/help/assets/video-profiles.md) Videoprofilen und  [Bildprofilen können ](/help/assets/image-profiles.md) Sie die Verarbeitung von Videos bzw. Bildern definieren.
 
 Siehe [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
 **So bearbeiten Sie MIME-Typen für unterstützte Formate**
 
-1. In AEM, click the AEM logo to access the global navigation console, then click **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Klicken Sie AEM auf das AEM Logo, um auf die globale Navigationskonsole zuzugreifen, und klicken Sie dann auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
 1. Navigieren Sie in der linken Leiste zu:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -262,9 +262,9 @@ Siehe [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
 1. Tippen Sie links oben auf der Seite auf **[!UICONTROL CRXDE Lite]**, um zu AEM zurückzukehren.
 
-#### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
+#### Hinzufügen von MIME-Typen für nicht unterstützte Formate {#adding-mime-types-for-unsupported-formats}
 
-Sie können in AEM Assets benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzufügen. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before `image_` and its enabled value is set to **[!UICONTROL false.]**
+Sie können in AEM Assets benutzerdefinierte MIME-Typen für nicht unterstützte Formate hinzufügen. Um sicherzustellen, dass kein neuer Knoten, den Sie in CRXDE Lite hinzufügen, von AEM gelöscht wird, müssen Sie sicherstellen, dass Sie den MIME-Typ vor `image_` verschieben und der aktivierte Wert auf **[!UICONTROL false eingestellt ist.]**
 
 **So fügen Sie MIME-Typen für nicht unterstützte Formate hinzu**
 
@@ -435,7 +435,7 @@ Wenn das Rotations-Set hochgeladen und veröffentlicht wird, aktivieren Sie den 
 1. Klicken Sie im Bereich „Vorgabenliste“ auf **[!UICONTROL Hinzufügen]**, um die Definitionsfelder im Detailbereich auf der rechten Seite des Bildschirms zu aktivieren.
 1. Geben Sie im Bereich „Details“ im Feld „Vorgabenname“ einen Namen für die Vorgabe ein.
 1. Wählen Sie im Dropdown-Menü „Batch-Settyp“ die Option **[!UICONTROL Asset-Set.]**
-1. In the Sub Type drop-down list, select **[!UICONTROL Multi-Axis Spin Set.]**
+1. Wählen Sie in der Dropdown-Liste &quot;Untertyp&quot;die Option **[!UICONTROL Multiachsen-Rotationsset.]**
 1. Erweitern Sie **[!UICONTROL Asset-Benennungskonventionen]** und klicken Sie in der Dropdown-Liste „Dateibenennung“ auf **[!UICONTROL Benutzerdefiniert.]**
 1. Verwenden Sie die Attribute **[!UICONTROL Übereinstimmung]** und optional **[!UICONTROL Basisname]**, um einen regulären Ausdruck für die Benennung von Bild-Assets zu definieren, aus denen die Gruppierung besteht.
 
@@ -480,7 +480,7 @@ Wenn das Rotations-Set hochgeladen und veröffentlicht wird, aktivieren Sie den 
 
    Durch das Aktivieren dieser Vorgabe wird sichergestellt, dass beim Hochladen von Assets in Dynamic Media die Stapelsatzvorgabe angewendet wird, um den Satz zu erstellen.
 
-### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Optional) Steigern der Leistung von Dynamic Media – Scene7-Modus  {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Damit der Modus &quot;Dynamische Medien - Scene7&quot;reibungslos ausgeführt werden kann, empfiehlt Adobe die folgenden Tipps zur Synchronisierungsleistung/Skalierbarkeit:
 
@@ -507,7 +507,7 @@ Adobe empfiehlt die Verwendung der folgenden „angepassten“ Auftragsparameter
 
 Um einen dieser Parameter zu aktualisieren, führen Sie die Schritte unter [Unterstützung von MIME-typbasierten Assets/Dynamic Media Classic-Upload-Auftragsparametern](#enabling-mime-type-based-assets-scene-upload-job-parameter-support) aus.
 
-#### Updating the Granite transient workflow queue {#updating-the-granite-transient-workflow-queue}
+#### Aktualisieren der Warteschlange für den transienten Granite-Workflow {#updating-the-granite-transient-workflow-queue}
 
 Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICONTROL DAM-Update-Asset]** verwendet. In Dynamic Media wird sie für die Bildaufnahme und -verarbeitung genutzt.
 
@@ -521,7 +521,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 1. Ändern Sie im Feld **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** die Zahl in den gewünschten Wert.
 
-   Sie können die Anzahl **[!UICONTROL paralleler Aufträge]** erhöhen, um den umfangreichen Hochladevorgang von Dateien auf dynamische Medien ausreichend zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien - d. h. einer ersten Migration oder einem einmaligen Massen-Upload - können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines hohen Werts (z. B. die zweifache Anzahl der Kerne) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert auf Basis Ihres jeweiligen Anwendungsfalls testen und anpassen.
+   Sie können **[!UICONTROL Maximale Anzahl paralleler Aufträge]** erhöhen, um den umfangreichen Hochladevorgang von Dateien auf dynamische Medien angemessen zu unterstützen. Der genaue Wert hängt von der Hardwarekapazität ab. In bestimmten Szenarien - d. h. einer ersten Migration oder einem einmaligen Massen-Upload - können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines hohen Werts (z. B. die zweifache Anzahl der Kerne) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert auf Basis Ihres jeweiligen Anwendungsfalls testen und anpassen.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -531,7 +531,7 @@ Die Transit-Workflow-Warteschlange von Granite wird für den Workflow **[!UICON
 
 1. Tippen Sie auf **[!UICONTROL Speichern.]**
 
-#### Updating the Granite workflow queue {#updating-the-granite-workflow-queue}
+#### Aktualisieren der Granite-Workflow-Warteschlange {#updating-the-granite-workflow-queue}
 
 Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. In Dynamic Media dient sie zum Verarbeiten von Videos mit dem Workflow **[!UICONTROL Dynamic Media-Videokodierung]**.
 
@@ -551,7 +551,7 @@ Die Granite-Workflow-Warteschlange wird für Workflows ohne Verlauf verwendet. I
 
 1. Tippen Sie auf **[!UICONTROL Speichern.]**
 
-#### Aktualisieren der Verbindung zum Hochladen von dynamischen Medien in Classic {#updating-the-scene-upload-connection}
+#### Aktualisieren der Upload-Verbindung für Dynamic Media Classic {#updating-the-scene-upload-connection}
 
 Die Einstellung der Upload-Verbindung (Scene 7) synchronisiert AEM-Assets mit Dynamic Media Classic-Servern.
 
@@ -572,7 +572,7 @@ Die Einstellung der Upload-Verbindung (Scene 7) synchronisiert AEM-Assets mit Dy
 
 ### (Optional) Filtern von Assets für die Replizierung {#optional-filtering-assets-for-replication}
 
-In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your AEM author environment to the AEM publish node. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
+In Bereitstellungen für nicht dynamische Medien replizieren Sie *alle*-Elemente (sowohl Bilder als auch Videos) aus Ihrer AEM Autorendatei in den Veröffentlichungsknoten AEM. Dieser Arbeitsablauf ist erforderlich, da die AEM Server die Assets auch bereitstellen.
 
 Da Assets jedoch über den Cloud-Dienst bereitgestellt werden, müssen diese Assets in Bereitstellungen für dynamische Medien nicht repliziert werden, um Veröffentlichungsknoten zu AEM. Ein solcher Arbeitsablauf für &quot;Hybrid-Veröffentlichung&quot;vermeidet zusätzliche Kosten für die Datenspeicherung und längere Verarbeitungszeiten für die Replizierung von Assets. Andere Inhalte, z. B. Webseiten in Sites, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
@@ -593,7 +593,7 @@ Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, könne
   <tr>
    <td>Dynamic Media Image Versand</td>
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
-   <td><p>Beginn mit <strong>image/</strong></p> <p>Enthält <strong>Anwendung/</strong> und endet mit dem <strong>Satz</strong>.</p> </td>
+   <td><p>Beginn mit <strong>image/</strong></p> <p>Enthält <strong>application/</strong> und endet mit <strong>set</strong>.</p> </td>
    <td>Die vordefinierten "Filterbilder"(gilt für Einzelbilder, einschließlich interaktiver Bilder) und "Filtersätze"(gilt für Rotationssets, Bildsätze, gemischte Mediensets und Karussell-Sets) werden wie folgt ausgeführt:
     <ul>
      <li>Das Originalbild und statische Bildausgabeformate werden von der Replikation ausgeschlossen.</li>
@@ -602,10 +602,10 @@ Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, könne
   <tr>
    <td>Video-Versand für dynamische Medien</td>
    <td>filter-video</td>
-   <td>Beginn mit <strong>Video/</strong></td>
+   <td>Beginn mit <strong>video/</strong></td>
    <td>Das vordefinierte "filter-video" wird:
     <ul>
-     <li>Schließen Sie die Originaldarstellungen für Videos und statische Miniaturansichten von der Replikation aus.<br /> <br /> </li>
+     <li>Ausschließen von der Replizierung der ursprünglichen Video- und statischen Miniaturdarstellungen. <br /> <br /> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -615,26 +615,26 @@ Wenn Sie dynamische Medien für Bildbearbeitung und/oder Video verwenden, könne
 >
 >Filter gelten für MIME-Typen und können nicht pfadspezifisch sein.
 
-#### Anpassen von Asset-Filtern für die Replikation {#customizing-asset-filters-for-replication}
+#### Anpassen von Asset-Filtern für die Replikation  {#customizing-asset-filters-for-replication}
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite.]**
-1. In the left folder tree, navigate to `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` to review the filters.
+1. Tippen Sie AEM auf das AEM Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie auf **[!UICONTROL Tools > Allgemein > CRXDE Lite.]**
+1. Navigieren Sie im linken Ordnerbaum zu `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters`, um die Filter zu überprüfen.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
 
 1. Zum Definieren des MIME-Typs für den Filter können Sie den MIME-Typ wie folgt ermitteln:
 
-   Erweitern Sie in der linken Leiste `content > dam > <locate_your_asset> > jcr:content > metadata`und suchen Sie in der Tabelle nach `dc:format`.
+   Erweitern Sie in der linken Leiste `content > dam > <locate_your_asset> > jcr:content > metadata` und suchen Sie in der Tabelle `dc:format`.
 
-   The following graphic is an example of an asset&#39;s path to `dc:format`.
+   Die folgende Grafik veranschaulicht den Pfad eines Assets zu `dc:format`.
 
    ![chlimage_1-18](assets/chlimage_1-3.png)
 
-   Notice that the `dc:format` for the asset `Fiji Red.jpg` is `image/jpeg`.
+   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` `image/jpeg` &lt;a2/> lautet.
 
-   To have this filter apply to all images, regardless of their format, set the value to `image/*` where `*` is a regular expression that is applied to all images of any format.
+   Damit dieser Filter für alle Bilder unabhängig von ihrem Format gilt, setzen Sie den Wert auf `image/*`, wobei `*` ein regulärer Ausdruck ist, der auf alle Bilder eines beliebigen Formats angewendet wird.
 
-   To have the filter apply only to images of the type JPEG, enter a value of `image/jpeg`.
+   Damit der Filter nur auf Bilder vom Typ JPEG angewendet werden kann, geben Sie den Wert `image/jpeg` ein.
 
 1. Definieren Sie, welche Darstellungen Sie von der Replizierung ausschließen möchten.
 
@@ -667,5 +667,5 @@ Die folgende Grafik ist ein Beispiel für die Wiedergabeformate eines Assets.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-If you only wanted to replicate the original, then you would enter `+original`.
+Wenn Sie nur das Original replizieren möchten, geben Sie `+original` ein.
 
