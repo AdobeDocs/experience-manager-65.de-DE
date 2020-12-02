@@ -32,16 +32,16 @@ So funktioniert die herkömmliche Authentifizierung:
 
    **Vorhanden:** Wenn der Benutzer aktuell und entsperrt ist, gibt User Management den Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
 
-   **Nicht vorhanden:** User Management gibt einen Authentifizierungsfehler zurück.
+   **Nicht vorhanden:** User Management gibt Authentifizierungsfehler zurück.
 
-   **Ungültig:** User Management gibt einen Authentifizierungsfehler zurück.
+   **Ungültig:** User Management gibt Authentifizierungsfehler zurück.
 
 1. Das vom Authentifizierungsanbieter zurückgegebene Ergebnis wird ausgewertet. Wenn der Authentifizierungsanbieter angibt, dass die Authentifizierung erfolgreich war, kann sich der Benutzer anmelden. Andernfalls nimmt User Management mit dem nächsten Authentifizierungsanbieter eine Überprüfung vor (Schritte 2 bis 3).
 1. Die Authentifizierung war nicht erfolgreich, wenn kein verfügbarer Authentifizierungsanbieter die Anmeldeinformationen des Benutzers überprüft.
 
 Wenn Just-in-time-Bereitstellung implementiert ist, werden neue Benutzer dynamisch in User Management erstellt, wenn einer der Authentifizierungsanbieter deren Anmeldedaten überprüft. (Nach Schritt 3 im obigen herkömmlichen Authentifizierungsverfahren.)
 
-## Just-in-time-Benutzerbereitstellung implementieren {#implement-just-in-time-user-provisioning}
+## Just-in-time-Benutzerbereitstellung implementieren  {#implement-just-in-time-user-provisioning}
 
 ### API für Just-in-time-Bereitstellung {#apis-for-just-in-time-provisioning}
 
@@ -82,7 +82,7 @@ public Boolean assign(User user);
 }
 ```
 
-### Überlegungen beim Erstellen einer Just-in-time-Domäne {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Überlegungen beim Erstellen einer Just-in-time-Domäne  {#considerations-while-creating-a-just-in-time-enabled-domain}
 
 * Beim Erstellen eines benutzerdefinierten`IdentityCreator`   für eine Hybrid-Domäne stellen Sie sicher, dass für den lokalen Benutzer ein Platzhalter-Kennwort angegeben wird. Lassen Sie das Kennwortfeld nicht leer.
 * Empfehlung: Verwenden Sie`DomainSpecificAuthentication` , , um die Benutzerinformationen für eine bestimmte Domäne zu überprüfen.
@@ -99,13 +99,13 @@ public Boolean assign(User user);
 
 1. Speichern Sie die neue Domäne.
 
-## Hinter den Kulissen {#behind-the-scenes}
+## Hinter den Kulissen  {#behind-the-scenes}
 
 Angenommen, ein Benutzer versucht, sich bei AEM Forms anzumelden und ein Authentifizierungsanbieter akzeptiert seine Benutzerdaten. Wenn der Benutzer noch nicht in der User Management-Datenbank vorhanden ist, schlägt die Identitätsprüfung für den Benutzer fehl. AEM Forms führt jetzt folgende Aktionen durch:
 
 1. `UserProvisioningBO` --Objekt mit den Authentifizierungsdaten erstellen und in einer Benutzerdatenzuordnung ablegen.
 1. Basierend auf den von `UserProvisioningBO` zurückgegebenen Domänendaten `IdentityCreator` und `AssignmentProvider` für die Domäne laden und aufrufen.
-1. Invoke `IdentityCreator`. Wenn ein erfolgreiches`AuthResponse`   zurückgegeben wird, `UserInfo` aus der Benutzerdatenzuordnung extrahieren. An `AssignmentProvider`   für Gruppen-/Rollenzuweisung und andere Nachbearbeitungsvorgänge übergeben, nachdem der Benutzer erstellt wurde.
+1. Rufen Sie `IdentityCreator` auf. Wenn ein erfolgreiches`AuthResponse`   zurückgegeben wird, `UserInfo` aus der Benutzerdatenzuordnung extrahieren. An `AssignmentProvider`   für Gruppen-/Rollenzuweisung und andere Nachbearbeitungsvorgänge übergeben, nachdem der Benutzer erstellt wurde.
 1. Wenn der Benutzer erfolgreich erstellt wurde, den Anmeldeversuch des Benutzers als erfolgreich zurückgeben.
 1. Bei Hybrid-Domänen Benutzerdaten aus den Authentifizierungsdaten extrahieren, die vom Authentifizierungsanbieter bereitgestellt wurden. Wenn diese Daten erfolgreich geladen werden, Benutzer spontan erstellen.
 
