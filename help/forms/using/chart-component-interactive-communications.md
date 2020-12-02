@@ -24,17 +24,17 @@ Ein Diagramm ist eine visuelle Darstellung von Daten. Es verdichtet große Menge
 
 Beim Erstellen einer interaktiven Kommunikation können Sie Diagramme hinzufügen, um zweidimensionale Daten vom Formulardatenmodell der Vorlage für die interaktive Kommunikation visuell darzustellen. Mit der Diagrammkomponente können Sie die folgenden Diagrammtypen hinzufügen und konfigurieren: Torten, Spalten, Donut, Balken, Linie, Linie und Punkt, Punkt, Bereich und Quadrant.
 
-## Add and configure chart in an Interactive Communication {#add-and-configure-chart-in-an-interactive-communication}
+## hinzufügen und Konfigurieren von Diagrammen in einer interaktiven Kommunikation{#add-and-configure-chart-in-an-interactive-communication}
 
 Führen Sie die folgenden Schritte aus, um ein Diagramm in einer interaktiven Kommunikation hinzuzufügen und zu konfigurieren:
 
-1. Tippen Sie im Sidekick der interaktiven Kommunikation auf **Komponenten** .
-1. Ziehen Sie die **Diagrammkomponente** per Drag &amp; Drop in eine der folgenden Komponenten:
+1. Tippen Sie im Sidekick der interaktiven Kommunikation auf **Komponenten**.
+1. Ziehen Sie die Komponente **Diagramm** auf eine der folgenden Komponenten:
 
    * Kanal drucken: Zielgruppen- oder Bildfeld
    * Web-Kanal: Bereich oder Zielgruppe
 
-1. Tippen Sie im Editor für interaktive Kommunikation auf die Diagrammkomponente und wählen Sie in der Komponenten-Symbolleiste die Option &quot; **[!UICONTROL Konfigurieren&quot;(]** configure_icon ![](assets/configure_icon.png)).
+1. Tippen Sie auf die Diagrammkomponente im Editor für interaktive Kommunikation und wählen Sie **[!UICONTROL Konfigurieren (]** ![configure_icon](assets/configure_icon.png)) in der Komponenten-Symbolleiste.
 
    Die Diagrammeigenschaften werden im linken Bereich angezeigt.
 
@@ -46,16 +46,16 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm in einer interaktiven Ko
 
    Grundlegende Eigenschaften eines Zeilentypdiagramms im Webkanal
 
-1. Konfigurieren Sie die [Diagrammeigenschaften](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) auf Grundlage des Kanals.
-1. (Print channel only) In the **[!UICONTROL Agent Settings]**, specify if it is mandatory for the agent to use this chart. If i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** option is not selected, the agent can tap the eye icon for the chart in the **[!UICONTROL Content]** tab of Agent UI to show or hide the chart.
+1. Konfigurieren Sie die Diagrammeigenschaften [je nach Kanal-Typ.](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties)
+1. (Nur Kanal drucken) Geben Sie unter **[!UICONTROL Agenteneinstellungen]** an, ob dieses Diagramm vom Agenten verwendet werden muss. Wenn die Option &quot;i **[!UICONTROL t ist obligatorisch, damit der Agent dieses Diagramm verwenden kann]**&quot;nicht ausgewählt ist, kann der Agent auf das Augensymbol für das Diagramm auf der Registerkarte **[!UICONTROL Inhalt]** der Agent-Benutzeroberfläche tippen, um das Diagramm ein- oder auszublenden.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
+1. Tippen Sie auf ![done_icon](assets/done_icon.png), um die Diagrammeigenschaften zu speichern.
 
-   Tippen Sie auf **[!UICONTROL Vorschau]** , um das Erscheinungsbild und die mit dem Diagramm verknüpften Daten Ansicht. Tippen Sie auf **[!UICONTROL Bearbeiten]** , um die Eigenschaften des Diagramms neu zu konfigurieren.
+   Tippen Sie auf **[!UICONTROL Vorschau]**, um das Erscheinungsbild und die mit dem Diagramm verknüpften Daten Ansicht. Tippen Sie auf **[!UICONTROL Bearbeiten]**, um die Eigenschaften des Diagramms neu zu konfigurieren.
 
-## Diagrammeigenschaften konfigurieren {#configure-chart-properties}
+## Diagrammeigenschaften {#configure-chart-properties} konfigurieren
 
 Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanal die folgenden Eigenschaften:
 
@@ -153,29 +153,29 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanal die fo
   </tr>
   <tr>
    <td>QuickInfo</td>
-   <td><p>Format, in dem die QuickInfo auf einem Datenpunkt im Diagramm im Web Kanal angezeigt wird. Der Standardwert ist ${x}(${y}). Je nach Diagrammtyp werden die Variablen ${x}und ${y} dynamisch durch die entsprechenden Werte auf der X- und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie mit der Maus auf einen Punkt, eine Leiste oder ein Segment im Diagramm zeigen.</p> <p>To disable tool tip, leave the <span class="uicontrol">Tooltip</code> field blank. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar. For example, see <a href="#chartoutputprintweb">Example 1: Chart output in print and web</a>.</code></p> </td>
+   <td><p>Format, in dem die QuickInfo auf einem Datenpunkt im Diagramm im Web Kanal angezeigt wird. Der Standardwert ist ${x}(${y}). Je nach Diagrammtyp werden die Variablen ${x}und ${y} dynamisch durch die entsprechenden Werte auf der X- und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie mit der Maus auf einen Punkt, eine Leiste oder ein Segment im Diagramm zeigen.</p> <p>Um die QuickInfo zu deaktivieren, lassen Sie das Feld <span class="uicontrol">QuickInfo</code> leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar. Beispiel: Diagrammausgabe in Druck und Web</a>.<a href="#chartoutputprintweb"></a></p> </td>
    <td>Web</td>
   </tr>
   <tr>
    <td>Diagrammspezifische Konfigurationen</td>
    <td><p>Neben den allgemeinen Konfigurationen sind die folgenden spezifischen Diagrammkonfiguration verfügbar:</p>
     <ul>
-     <li><strong>Legende anzeigen: </strong>Zeigt eine Legende für das Kreisdiagramm oder Ringdiagramm an, wenn diese aktiviert ist.</li>
-     <li><strong>Legendenposition: </strong>Gibt die Position der Legende in Bezug auf das Diagramm an. Die verfügbaren Optionen sind rechts, links, oben und unten. Es wird empfohlen, die rechte Legende im Kanal zu verwenden.</li>
+     <li><strong>Legende anzeigen:  </strong>Zeigt eine Legende für das Kreisdiagramm oder Ringdiagramm an, wenn diese aktiviert ist.</li>
+     <li><strong>Legendenposition:  </strong>Gibt die Position der Legende in Bezug auf das Diagramm an. Die verfügbaren Optionen sind rechts, links, oben und unten. Es wird empfohlen, die rechte Legende im Kanal zu verwenden.</li>
      <li><strong>Innerer Radius</strong>: Verfügbar für Ringdiagramme, um den Radius (in Pixel) des inneren Kreises im Diagramm anzugeben.</li>
      <li><strong>Linienfarbe</strong>: Verfügbar für Linien-, Linien- und Punktdiagramme sowie Flächendiagramme, um die Farbe für die Linie im Diagramm anzugeben.</li>
      <li><strong>Punktfarbe</strong>: Verfügbar für Punkt- und Linien- und Punktdiagramme, um die Farbe für die Punkte im Diagramm anzugeben.<br /> </li>
      <li><strong>Bereichsfarbe</strong>: Verfügbar für Flächendiagramme, um die Farbe für den Bereich unter der Linie im Diagramm anzugeben.</li>
-     <li><strong>Referenzpunkt &gt; Bindungstyp: </strong>Verfügbar für Quadrantendiagramme, um den<strong> Bindungstyp für den Referenzpunkt </strong>anzugeben. Verwenden Sie die Objekteigenschaft für statischen Text oder Datenmodell, um den Wert für den Referenzpunkt zu definieren.</li>
-     <li><strong>Bezugspunkt &gt; X-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Statisch</code> "wählen, um den X-Achsen-Wert für den Referenzpunkt anzugeben.</code></li>
-     <li><strong>Bezugspunkt &gt; Y-Achse: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Statisch</code> "wählen, um den Y-Achsenwert für den Referenzpunkt anzugeben.</code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serie: </strong>Verfügbar für mehrere Reihen Quadrante Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Definieren Sie die Formulareigenschaft des Formdatenmodells, um die Serie für den Referenzpunkt zu identifizieren. </code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Serie: </strong>Verfügbar für mehrere Reihen Quadrante Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für Reihen und den in diesem Feld definierten Wert, um die Reihe für den Referenzpunkt zu identifizieren.</code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Definieren Sie eine Objekteigenschaft des Formulardatenmodells, die den auf der X- und Y-Achse dargestellten Eigenschaften gleicht. Definieren Sie außerdem für mehrere Reihen eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</code></li>
-     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Referenzpunkt: </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt</code> "auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrante Beschriftungen &gt; Oben links:</strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten oben links anzugeben.</code></li>
-     <li><strong>Quadrante Beschriftungen &gt; Oben rechts:</strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten rechts oben anzugeben.</li>
-     <li><strong>Quadrante Beschriftungen &gt; Unten rechts: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten rechts anzugeben.</li>
-     <li><strong>Quadrante Beschriftungen &gt; Unten links: </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten links anzugeben.</li>
+     <li><strong>Referenzpunkt &gt; Bindungstyp:  </strong>Verfügbar für Quadrantendiagramme <strong> </strong>zur Angabe des Bindungstyps für den Referenzpunkt. Verwenden Sie die Objekteigenschaft für statischen Text oder Datenmodell, um den Wert für den Referenzpunkt zu definieren.</li>
+     <li><strong>Bezugspunkt &gt; X-Achse:  </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol"></code> Statikmethode"wählen, um den X-Achsen-Wert für den Referenzpunkt anzugeben.</code></li>
+     <li><strong>Bezugspunkt &gt; Y-Achse:  </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol"></code> Statikmethode"wählen, um den Y-Achsenwert für den Referenzpunkt anzugeben.</code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Serie:  </strong>Verfügbar für mehrere Reihen Quadrante Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt"</code> auswählen. Definieren Sie die Formulareigenschaft des Formdatenmodells, um die Serie für den Referenzpunkt zu identifizieren. </code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Serie:  </strong>Verfügbar für mehrere Reihen Quadrante Diagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt"</code> auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für Reihen und den in diesem Feld definierten Wert, um die Reihe für den Referenzpunkt zu identifizieren.</code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjekt für Referenzpunkt:  </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt"</code> auswählen. Definieren Sie eine Objekteigenschaft des Formulardatenmodells, die den auf der X- und Y-Achse dargestellten Eigenschaften gleicht. Definieren Sie außerdem für mehrere Reihen eine Datenmodellobjekteigenschaft, die eine untergeordnete Entität der für die Serie definierten Datenmodellobjekteigenschaft ist.</code></li>
+     <li><strong>Referenzpunkt &gt; Datenmodellobjektwert für Referenzpunkt:  </strong>Verfügbar für Quadrantendiagramme, wenn Sie in der Dropdown-Liste "Bindungstyp"die Option " <span class="uicontrol">Datenmodellobjekt"</code> auswählen. Verwenden Sie die Objekteigenschaft des Formulardatenmodells für den Referenzpunkt und den in diesem Feld definierten Wert, um den Referenzpunkt für das Diagramm zu identifizieren.<br /> <strong>Quadrante Beschriftungen &gt; Oben links: </strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten links oben anzugeben.</code></li>
+     <li><strong>Quadrante Beschriftungen &gt; Oben rechts: </strong> Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten rechts oben anzugeben.</li>
+     <li><strong>Quadrante Beschriftungen &gt; Unten rechts:  </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten rechts anzugeben.</li>
+     <li><strong>Quadrante Beschriftungen &gt; Unten links:  </strong>Verfügbar für Quadrantendiagramme, um den Namen für den Quadranten unten links anzugeben.</li>
     </ul> </td>
    <td>Druck und Web</td>
   </tr>
@@ -188,29 +188,29 @@ Sie können das Diagramm so konfigurieren, dass Sie mit statistischen Funktionen
 
 ![Funktionen in Diagrammen](assets/functions_charts_new.png)
 
-While the Chart component come with some in-built functions, you can write [custom functions](#customfunctionsweb) and make them available for use in the chart configuration in the web channel.
+Die Diagrammkomponente enthält zwar einige integrierte Funktionen, Sie können aber [benutzerdefinierte Funktionen](#customfunctionsweb) schreiben und sie für die Verwendung in der Diagrammkonfiguration im Web Kanal verfügbar machen.
 
 Die folgenden Funktionen sind standardmäßig in der Diagrammkomponente verfügbar:
 
 **Mittelwert (Durchschnitt)** Gibt den Durchschnitt der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
 
-**Summe** Gibt die Summe aller Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
+**** SumGibt die Summe aller Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
 
-**Maximum** Gibt das Maximum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
+**** MaximumGibt das Maximum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
 
-**Frequenz** Gibt die Anzahl der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
+**** FrequencyGibt die Anzahl der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
 
-**Bereich** Gibt die Differenz zwischen dem Maximum und Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
+**** RangeGibt die Differenz zwischen dem Maximum und Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
 
-**Median** Gibt den Wert zurück, der auf der X- oder Y-Achse höhere und niedrigere Werte auf der anderen Achse halbiert.
+**** MedianGibt den Wert zurück, der auf der X- oder Y-Achse höhere und niedrigere Werte auf der anderen Achse halbiert.
 
-**Minimum** Gibt das Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
+**** MinimumGibt das Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
 
-**Mode** Gibt den Wert mit den meisten Vorkommen auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
+**** ModeGibt den Wert mit den meisten Vorkommen auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück.
 
-Weitere Informationen finden Sie unter [Beispiel 2: Anwendung der Sum- und Frequenzfunktionen in einem Liniendiagramm](#applicationsumfrequency).
+Weitere Informationen finden Sie unter [Beispiel 2: Anwendung von Summe- und Frequenzfunktionen in einem Liniendiagramm](#applicationsumfrequency).
 
-### Custom functions in web channel {#customfunctionsweb}
+### Benutzerdefinierte Funktionen im Web-Kanal {#customfunctionsweb}
 
 Neben der Verwendung der Standardfunktionen in Diagrammen können Sie benutzerdefinierte Funktionen in JavaScript™ schreiben und in der Liste der Funktionen in der Diagrammkomponente freigeben.
 
@@ -228,16 +228,16 @@ Multiply(valueArray, category) {
 
 Wenn Sie eine benutzerdefinierte Funktion geschrieben haben, können Sie die folgenden Schritte ausführen, um sie für die Verwendung in der Diagrammkonfiguration freizugeben:
 
-1. Fügen Sie die benutzerdefinierte Funktion in der Client-Bibliothek hinzu, die mit der entsprechenden interaktiven Kommunikation verknüpft ist. For more information, see [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md) and [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
+1. Fügen Sie die benutzerdefinierte Funktion in der Client-Bibliothek hinzu, die mit der entsprechenden interaktiven Kommunikation verknüpft ist. Weitere Informationen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md) und [Verwenden clientseitiger Bibliotheken](/help/sites-developing/clientlibs.md).
 
-1. To display the custom function in Function drop-down, in CRXDe Lite, create an `nt:unstructured` node in the apps folder with the following properties:
+1. Um die benutzerdefinierte Funktion in der Dropdown-Liste Funktion anzuzeigen, erstellen Sie in CRXDe Lite einen Knoten `nt:unstructured` im Anwendungsordner mit den folgenden Eigenschaften:
 
-   * Add property `guideComponentType` with value as `fd/af/reducer`. (mandatory)
+   * hinzufügen Eigenschaft `guideComponentType` mit dem Wert `fd/af/reducer`. (mandatory)
 
-   * Add property `value` to a fully qualified name of the custom JavaScript™ function. (obligatorisch) und setzen Sie den Wert auf den Namen der benutzerdefinierten Funktion, z. B. Multiplizieren, fest.
-   * Add property `jcr:description` with the value you want to display as the name of the custom function that appears in the Function drop-down. Beispiel:**Multiplizieren**. 
+   * hinzufügen Eigenschaft `value` auf einen vollständig qualifizierten Namen der benutzerdefinierten JavaScript™-Funktion. (obligatorisch) und setzen Sie den Wert auf den Namen der benutzerdefinierten Funktion, z. B. Multiplizieren, fest.
+   * hinzufügen Eigenschaft `jcr:description` mit dem Wert, der als Name der benutzerdefinierten Funktion angezeigt werden soll, der in der Dropdown-Liste Funktion angezeigt wird. Beispiel:**Multiplizieren**. 
 
-   * Add property `qtip` with value that will be short description of the custom function. Es wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste **Funktion** bewegt wird.
+   * hinzufügen Eigenschaft `qtip` mit einem Wert, der eine kurze Beschreibung der benutzerdefinierten Funktion enthält. Es wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste **Funktion** bewegt wird.
 
 1. Klicken Sie auf **Alle speichern**, um die Konfiguration zu speichern.
 
@@ -249,28 +249,28 @@ Auf der Registerkarte Einfach definieren Sie den Diagrammtyp, die Eigenschaften 
 
 Anhand eines Kartenausweises, der mithilfe einer interaktiven Kommunikation generiert wurde, sollten wir uns ausführlich mit den erforderlichen Informationen in den grundlegenden Eigenschaften auskennen. Wenn Sie ein Diagramm generieren möchten, um die Höhe der verschiedenen Ausgaben in der Abrechnung darzustellen. Sie können verschiedene Diagrammarten für Druck- und Webausgabe der interaktiven Kommunikation verwenden.
 
-### Säulendiagramm für Druck {#columnchartprint}
+### Säulendiagramm für Drucken {#columnchartprint}
 
 Geben Sie dazu die folgenden Eigenschaften an:
 
 * **[!UICONTROL Name]** : Geben Sie den Namen für das Diagramm an.
-* **[!UICONTROL Diagrammtyp]** : Wählen Sie in der Dropdown-Liste die Option **Spalte** aus.
-* **[!UICONTROL Titel]** - Geben Sie den Ausgabentyp für die X-Achse und den Transaktionsbetrag für die Y-Achse an.
-* **[!UICONTROL Datenmodellobjekte]** - Wählen Sie die Objekteigenschaften des Datenmodells aus, um Datenbindungen für die X-Achse (Ausgabetyp) und die Y-Achse (Transaktionsbetrag) zu erstellen.
+* **[!UICONTROL Diagrammtyp]** : Wählen Sie  **** Spalten aus der Dropdown-Liste aus.
+* **[!UICONTROL Titel]** : Geben Sie den Ausgabentyp für die X-Achse und den Transaktionsbetrag für die Y-Achse an.
+* **[!UICONTROL Datenmodellobjekte]** : Wählen Sie die Objekteigenschaften des Datenmodells aus, um Datenbindungen für die X-Achse (Ausgabetyp) und die Y-Achse (Transaktionsbetrag) zu erstellen.
 
 ![Spaltendiagramm im Kanal &quot;Drucken&quot;einer interaktiven Kommunikation](assets/sample_chart_print_column_new.png)
 
 Spaltendiagramm im Kanal &quot;Drucken&quot;einer interaktiven Kommunikation
 
-### Ringdiagramm für das Web {#donutchartweb}
+### Ringdiagramm für Web {#donutchartweb}
 
 Geben Sie dazu die folgenden Eigenschaften an:
 
 * **[!UICONTROL Name]** : Geben Sie den Namen für das Diagramm an.
-* **[!UICONTROL Diagrammtyp]** : Wählen Sie **[!UICONTROL Donut]** aus der Dropdown-Liste.
-* **[!UICONTROL Datenmodellobjekte]** - Wählen Sie die Objekteigenschaften des Datenmodells aus, um Datenbindungen für die X-Achse (Ausgabetyp) und die Y-Achse (Transaktionsbetrag) zu erstellen.
+* **[!UICONTROL Diagrammtyp]** : Wählen Sie in der Dropdown-Liste  **** Donutt aus.
+* **[!UICONTROL Datenmodellobjekte]** : Wählen Sie die Objekteigenschaften des Datenmodells aus, um Datenbindungen für die X-Achse (Ausgabetyp) und die Y-Achse (Transaktionsbetrag) zu erstellen.
 * **[!UICONTROL Innerer Radius]** : Geben Sie den Wert &quot;Innerer Radius&quot;als 150 an, um den Radius (in Pixel) des inneren Kreises im Diagramm anzugeben.
-* **[!UICONTROL QuickInfo]** - Verwenden Sie das Standardformat ${x}(${y}), um die QuickInfo anzuzeigen. Die QuickInfo wird wie folgt angezeigt: Ausgabentyp(Transaktionsbetrag). Beispiel: Debit for Bitcoin(10000).
+* **[!UICONTROL QuickInfo]**  - Verwenden Sie das Standardformat ${x}(${y}), um die QuickInfo anzuzeigen. Die QuickInfo wird wie folgt angezeigt: Ausgabentyp(Transaktionsbetrag). Beispiel: Debit for Bitcoin(10000).
 
 ![Ringdiagramm im Web-Kanal einer interaktiven Kommunikation](assets/sample_chart_web_new.png)
 
@@ -298,23 +298,23 @@ Die Funktion Frequenz gibt die Anzahl der Werte der Y-Achse für einen bestimmte
 
 ![Liniendiagrammfrequenz](assets/line_chart_web_functions_frequency_new.png)
 
-## Beispiel 3: Quadrantendiagramm mehrerer Reihen im Web {#example-multi-series-quadrant-chart-in-web}
+## Beispiel 3: Quadrantendiagramm mit mehreren Reihen im Web {#example-multi-series-quadrant-chart-in-web}
 
 Das Diagramm zeigt den Betrag für Transaktionen in einem bestimmten Datumsbereich an. Das Quadrantendiagramm bietet die Möglichkeit, den Diagrammbereich in vier beschriftete Abschnitte zu unterteilen. Das Zeichen verwendet einen statischen Bezugspunkt für die X- und Y-Achse. Verwenden Sie die Funktion für mehrere Reihen, um Daten basierend auf dem Namen der Bank zu trennen.
 
 Geben Sie dazu die folgenden Eigenschaften an:
 
 * **Name:** Geben Sie den Namen für das Diagramm an.
-* **Diagrammtyp:** Wählen Sie **Quadrant** aus der Dropdown-Liste.
+* **Diagrammtyp:** Wählen Sie  **** Quadrantaus der Dropdown-Liste.
 
-* Aktivieren Sie das Kontrollkästchen **Mehrere Reihen** .
+* Aktivieren Sie das Kontrollkästchen **Mehrere Reihen**.
 * **Datenmodellobjekt**: Geben Sie die Datenmodell-Objekteigenschaft für die Serie an. Die Datenmodell-Objekteigenschaft für den Banknamen ist eine übergeordnete Eigenschaft der Datenmodellobjekteigenschaften, die in der X- und Y-Achse dargestellt werden.
-* **Datenmodellobjekte:** Wählen Sie die Objekteigenschaften des Datenmodells aus, um Datenbindungen für die X-Achse (Transaktionsdatum) und die Y-Achse (Transaktionsbetrag) zu erstellen.
-* Wählen Sie im Abschnitt **Referenzpunkt** die Option **Statisch** als Bindungstyp.
+* **Datenmodellobjekte:** Wählen Sie die Datenmodellobjekteigenschaften aus, um Datenbindungen für die X-Achse (Transaktionsdatum) und die Y-Achse (Transaktionsbetrag) zu erstellen.
+* Wählen Sie im Abschnitt **Referenzpunkt** **Statisch** als Bindungstyp.
 
 * Geben Sie die Werte für die Referenzpunkte der X- und Y-Achse an.
 * Geben Sie die quadranten Beschriftungen für Quadranten oben links, oben rechts, unten rechts und unten links an.
-* Aktivieren Sie das Kontrollkästchen &quot; **Legenden** anzeigen&quot;, um die Farbcodes für die Banknamen anzuzeigen.
+* Aktivieren Sie das Kontrollkästchen **Legenden anzeigen**, um die Farbcodes für die Namen der Banken anzuzeigen.
 
 ![Quadrantendiagramme](assets/charts_quadrant_example_new.png)
 
