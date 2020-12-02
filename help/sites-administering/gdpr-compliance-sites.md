@@ -46,7 +46,7 @@ Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern eing
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
-AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md) that can be used for managing the opt-in/opt-out for users.
+AEM verfügt über einen [Cookie-Ausschluss-Dienst](/help/sites-developing/cookie-optout.md), der für die Verwaltung der Ausschluss-/Abmeldeoption für Benutzer verwendet werden kann.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -62,7 +62,7 @@ Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Ad
 
 ## ContextHub {#contexthub}
 
-AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md). Dadurch verbleiben besucherspezifische Daten im Browser, die dort für eine regelbasierte Personalisierung verwendet werden.
+AEM bietet eine optionale Datenschicht mit [ContextHub](/help/sites-developing/contexthub.md). Dadurch verbleiben besucherspezifische Daten im Browser, die dort für eine regelbasierte Personalisierung verwendet werden.
 
 Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM übermittelt Regeln an die Datenebene, sodass personalisierungsbezogene Entscheidungen direkt im Browser getroffen werden.
 
@@ -72,7 +72,7 @@ Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM übermi
 >
 >Adobe CQ 5.5 und frühere Versionen wurden mittlerweile eingestellt und werden in dieser Dokumentation nicht behandelt.
 
-### Implementieren von Opt-in-/Opt-out-Komponenten {#implementing-opt-in-opt-out}
+### Implementieren von Opt-in-/Opt-out-Komponenten  {#implementing-opt-in-opt-out}
 
 Der Website-Inhaber muss eine Opt-out-Komponente gemäß den folgenden Richtlinien implementieren.
 
@@ -104,7 +104,7 @@ Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Deshal
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### Vorschau der ContextHub-Persistenz {#previewing-persistence-of-contexthub}
+### Vorschau der ContextHub-Persistenz  {#previewing-persistence-of-contexthub}
 
 Zum Anzeigen der von ContextHub verwendeten Persistenz bestehen folgende Möglichkeiten:
 
@@ -192,7 +192,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### Löschen der ContextHub-Persistenz {#clearing-persistence-of-contexthub}
+### Löschen der ContextHub-Persistenz  {#clearing-persistence-of-contexthub}
 
 So löschen Sie die ContextHub-Persistenz:
 
