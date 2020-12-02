@@ -26,7 +26,7 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
 >
 >Für Benutzerbilder wird nur das Seitenverhältnis 1:1 unterstützt.
 
-1. Erstellen Sie ein DSC mithilfe der Informationen, die im nächsten Schritt angegeben werden. For more information, see &#39;Developing Components for AEM Forms&#39; topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
+1. Erstellen Sie ein DSC mithilfe der Informationen, die im nächsten Schritt angegeben werden. Weitere Informationen finden Sie unter &quot;Entwickeln von Komponenten für AEM Forms&quot;im Handbuch [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. Definieren Sie im DSC eine neue SPI, die mithilfe der Methoden getCurrentUserImageUrl und getUserImageUrl eine Bild-URL für einen AEM Forms-Benutzer abruft. Im Folgenden finden Sie ein Java™-Beispielcodefragment:
 
    ```java
@@ -84,5 +84,5 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
    </component>
    ```
 
-1. Stellen Sie das DSC über Workbench bereit. Starten Sie den `ProcessManagementClientSessionService` Dienst neu.
+1. Stellen Sie das DSC über Workbench bereit. Starten Sie den Dienst `ProcessManagementClientSessionService` neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.
