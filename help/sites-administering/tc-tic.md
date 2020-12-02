@@ -26,7 +26,7 @@ Das Framework für die Übersetzungsintegration integriert Übersetzungsdienstle
 * Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration.
 * Verknüpfen Sie die Cloudkonfigurationen mit Ihren Seiten.
 
-For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
+Eine Übersicht der Inhaltsübersetzungsfunktionen in AEM finden Sie unter [Übersetzung von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).
 
 ## Herstellen einer Verbindung zu einem Übersetzungsdienstleister {#connecting-to-a-translation-service-provider}
 
@@ -53,6 +53,7 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 >
 >* [AEM – Übersetzung durch Menschen](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM – maschinelle Übersetzung](https://www.adobe.com/go/aem-machine-translation-connectors)
+
 >
 
 
@@ -75,7 +76,7 @@ Nachdem Sie eine Framework-Konfiguration erstellt haben, verknüpfen Sie die Clo
 
 Wenn für verschiedene Bereiche Ihrer Website unterschiedliche Übersetzungsanforderungen vorliegen, erstellen Sie entsprechend mehrere Framework-Konfigurationen. Beispielsweise enthält eine mehrsprachige Website deutsche, englische und japanische Sprachkopien. Der Website-Eigentümer nutzt zwei verschiedene Übersetzungsdienstleister für die englische und die deutsche Übersetzung. Daher werden zwei verschiedene Konfigurationen des Frameworks erstellt. Jede Konfiguration nutzt einen anderen Übersetzungsdienstleister.
 
-After you configure a translation integration framework, you can [associate it with the pages](/help/sites-administering/tc-prep.md) that use it.
+Nachdem Sie ein Framework für die Integration von Übersetzungen konfiguriert haben, können Sie [dieses mit den Seiten ](/help/sites-administering/tc-prep.md) verknüpfen, die es verwenden.
 
 **Hinweis:** Einen Überblick über die AEM-Funktionen zur Inhaltsübersetzung finden Sie unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).
 
@@ -137,11 +138,11 @@ Die Communities-Eigenschaften steuern, wie die Übersetzung von benutzergenerier
 |---|---|
 | Übersetzungsanbieter | Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung auszuführen. Die Anbieter, für die Cloudkonfigurationen erstellt wurden, werden in der Liste angezeigt. |
 | Inhaltskategorie | Eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
-| Auswählen eines Gebietsschemas, das als globaler Share Store verwendet werden soll | (Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Wählen Sie standardmäßig das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) der Website aus. Wenn Sie &quot;Kein gemeinsamer Store&quot;wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
+| Auswählen eines Gebietsschemas, das als globaler Share Store verwendet werden soll | (Optional) Durch Auswahl eines Gebietsschemas zum Speichern von UGC werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) für die Website. Wenn Sie &quot;Kein gemeinsamer Store&quot;wählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
-Asset-Eigenschaften steuern, wie Assets konfiguriert werden. For more information about translating assets, see [Creating Language Copies for Assets](/help/assets/translation-projects.md).
+Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Informationen zum Übersetzen von Assets finden Sie unter [Erstellen von Sprachkopien für Assets](/help/assets/translation-projects.md).
 
 <table>
  <tbody>
@@ -194,7 +195,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. For more informatio
 1. Geben Sie einen Namen für die Konfiguration an und klicken oder tippen Sie anschließend auf „Erstellen“.
 1. Konfigurieren Sie die Eigenschaften auf den Registerkarten „Sites“, „Communities“ und „Assets“ und klicken oder tippen Sie anschließend auf „OK“.
 
-## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
+## Konfigurieren von Seiten für Übersetzungen  {#configuring-pages-for-translation}
 
 Um die Übersetzung Ihrer Quellseiten in andere Sprachen zu konfigurieren, verknüpfen Sie die Seiten mit den folgenden Cloudkonfigurationen:
 
@@ -207,7 +208,7 @@ Wenn Sie eine Seite mit einer Cloudkonfiguration verknüpfen, erben die untergeo
 
 Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um das Thema Bekleidung. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. Die Stammseite der Website ist mit einem Framework für die Übersetzungsintegration verknüpft, das vorgibt, dass maschinelle Übersetzung mit der Kategorie „Bekleidung“ angewendet werden soll. Der Zweig, der das Unternehmen beschreibt, nutzt dagegen ein Framework, bei dem maschinelle Übersetzung mit der Kategorie „Allgemein“ angewendet wird.
 
-Further, for any communities [SCF components](/help/communities/scf.md) on the pages, the user generated content (UGC) will include the ability for users to translate content. For more information, see [Translation of User Generated Content](/help/communities/translate-ugc.md).
+Für Communities [SCF-Komponenten](/help/communities/scf.md) auf den Seiten beinhaltet der vom Benutzer generierte Inhalt (UGC) die Möglichkeit für Benutzer, Inhalte zu übersetzen. Weitere Informationen finden Sie unter [Übersetzung von benutzergenerierten Inhalten](/help/communities/translate-ugc.md).
 
 ### Verknüpfen einer Seite mit einem Übersetzungsdienstleister {#associating-a-page-with-a-translation-provider}
 
@@ -218,7 +219,7 @@ Verknüpfen Sie eine Seite mit Ihrem Übersetzungsdienstleister, um die Seite un
 1. Klicken oder tippen Sie auf „Konfiguration hinzufügen“ > „Übersetzungsintegration“.
 1. Wählen Sie den gewünschten Übersetzungsdienstleister aus und klicken oder tippen Sie auf „Fertig“.
 
-### Verknüpfen von Seiten mit einem Framework für die Übersetzungsintegration {#associating-pages-with-a-translation-integration-framework}
+### Verknüpfen von Seiten mit einem Framework für die Übersetzungsintegration  {#associating-pages-with-a-translation-integration-framework}
 
 Verknüpfen Sie eine Seite mit dem Framework für die Übersetzungsintegration, das festlegt, wie die Übersetzung der Seite und der untergeordneten Seiten durchgeführt werden soll.
 
