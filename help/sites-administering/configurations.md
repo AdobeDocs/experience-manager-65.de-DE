@@ -18,8 +18,8 @@ AEM Konfigurationen dienen zur Verwaltung von Einstellungen in AEM und dienen al
 
 Eine Konfiguration kann aus zwei verschiedenen Perspektiven betrachtet werden.
 
-* [Ein Administrator](#configurations-administrator) verwendet Konfigurationen als Arbeitsbereiche in AEM, um Einstellungsgruppen zu definieren und zu verwalten.
-* [Ein Entwickler](#configurations-developer) verwendet den zugrunde liegenden Konfigurationsmechanismus, der Konfigurationen implementiert, um die Einstellungen in AEM beizubehalten und nachzuschlagen.
+* [Ein ](#configurations-administrator) Administrator verwendet Konfigurationen als Arbeitsbereiche in AEM, um Einstellungsgruppen zu definieren und zu verwalten.
+* [Ein ](#configurations-developer) Entwickler verwendet den zugrunde liegenden Konfigurationsmechanismus, der Konfigurationen implementiert, um die Einstellungen in AEM beizubehalten und nachzuschlagen.
 
 Zusammenfassung: Aus der Ansicht eines Administrators ergeben sich bei Konfigurationen die Arbeitsbereiche zur Verwaltung von Einstellungen in AEM, während der Entwickler verstehen sollte, wie AEM diese Konfigurationen im Repository verwendet und verwaltet.
 
@@ -57,13 +57,13 @@ Dies geschieht folgendermaßen:
 
 Ähnliche Setups sind nicht nur für bearbeitbare Vorlagen, sondern auch für Cloud-Konfigurationen, ContextHub-Segmente und Inhaltsfragmentmodelle möglich.
 
-### Verwenden des Konfigurationsbrowsers {#using-configuration-browser}
+### Verwenden des Konfigurations-Browsers {#using-configuration-browser}
 
 Der Konfigurationsbrowser ermöglicht es einem Administrator, Zugriffsrechte für Konfigurationen in AEM einfach zu erstellen, zu verwalten und zu konfigurieren.
 
 >[!NOTE]
 >
->Konfigurationen können nur mit dem Konfigurationsbrowser erstellt werden, wenn der Benutzer über `admin` Rechte verfügt. `admin` Rechte sind auch erforderlich, um der Konfiguration Zugriffsrechte zuzuweisen oder eine Konfiguration anderweitig zu ändern.
+>Es ist nur möglich, Konfigurationen mit dem Konfigurationsbrowser zu erstellen, wenn Ihr Benutzer über `admin`-Rechte verfügt. `admin` Rechte sind auch erforderlich, um der Konfiguration Zugriffsrechte zuzuweisen oder eine Konfiguration anderweitig zu ändern.
 
 #### Erstellen einer Konfiguration {#creating-a-configuration}
 
@@ -71,13 +71,13 @@ Es ist ganz einfach, mithilfe des Konfigurationsbrowsers eine neue Konfiguration
 
 1. Melden Sie sich bei AEM als Cloud Service an und wählen Sie im Hauptmenü **Tools** -> **Allgemein** -> **Konfigurationsbrowser**.
 1. Tippen oder klicken Sie auf **Erstellen**.
-1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration ein.
+1. Geben Sie für Ihre Konfiguration einen **Titel** und einen **Namen** ein.
 
    ![Konfiguration erstellen](assets/configuration-create.png)
 
    * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Es wird automatisch auf der Grundlage des Titels generiert und entsprechend [AEM Benennungskonventionen angepasst.](/help/sites-developing/naming-conventions.md)
+   * Der Knoten **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch basierend auf dem Titel generiert und entsprechend den Benennungskonventionen [AEM angepasst.](/help/sites-developing/naming-conventions.md)
       * Er kann bei Bedarf angepasst werden.
 1. Überprüfen Sie die Art der Konfigurationen, die Sie zulassen möchten.
    * [Cloud-Konfigurationen](/help/sites-administering/configurations.md)
@@ -95,21 +95,21 @@ Es ist ganz einfach, mithilfe des Konfigurationsbrowsers eine neue Konfiguration
 Wenn Sie Konfigurationen als Arbeitsbereiche betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf oder nicht.
 
 1. Melden Sie sich bei AEM als Cloud Service an und wählen Sie im Hauptmenü **Tools** -> **Allgemein** -> **Konfigurationsbrowser**.
-1. Wählen Sie die zu ändernde Konfiguration aus und tippen Sie dann in der Symbolleiste auf **Eigenschaften** oder klicken Sie auf diese.
+1. Wählen Sie die zu ändernde Konfiguration aus und tippen oder klicken Sie in der Symbolleiste auf **Eigenschaften**.
 1. Wählen Sie alle zusätzlichen Funktionen aus, die Sie der Konfiguration hinzufügen möchten
    >[!NOTE]
    >
    >Es ist nicht möglich, die Auswahl einer Funktion aufzuheben, nachdem die Konfiguration erstellt wurde.
-1. Verwenden Sie die Schaltfläche &quot; **Effektive Berechtigungen** &quot;, um eine Rollenmatrix und die Berechtigungen, die derzeit für Konfigurationen gewährt werden, Ansicht.
+1. Verwenden Sie die Schaltfläche **Effektive Berechtigungen**, um eine Rollenmatrix und die Berechtigungen, die derzeit für Konfigurationen gewährt werden, Ansicht.
    ![Fenster &quot;Effektive Berechtigungen&quot;](assets/configuration-effective-permissions.png)
-1. Um neue Berechtigungen zuzuweisen, geben Sie den Benutzer- oder Gruppennamen in das Feld Benutzer oder Gruppe **auswählen** im Abschnitt **Neue Berechtigungen** ein.
-   * Die Angebote für das Feld &quot;Benutzer oder Gruppe **auswählen** &quot;werden basierend auf vorhandenen Benutzern und Rollen automatisch ausgefüllt.
+1. Um neue Berechtigungen zuzuweisen, geben Sie den Benutzer- oder Gruppennamen in das Feld **Benutzer oder Gruppe auswählen** im Abschnitt **Hinzufügen Neue Berechtigungen** ein.
+   * Die Angebot **Benutzer oder Gruppe auswählen** werden basierend auf vorhandenen Benutzern und Rollen automatisch ausgefüllt.
 1. Wählen Sie den gewünschten Benutzer oder die entsprechende Rolle aus den Ergebnissen der automatischen Vervollständigung aus.
    * Sie können mehrere Benutzer oder Rollen auswählen.
-1. Überprüfen Sie die Zugriffsoptionen, die die ausgewählten Benutzer oder Rollen haben sollen, und klicken Sie auf **Hinzufügen**.
+1. Markieren Sie die Zugriffsoptionen, die der/die ausgewählte(n) Benutzer/Rollen haben soll(n), und klicken Sie auf **Hinzufügen**.
    ![hinzufügen Zugriffsrechte auf eine Konfiguration](assets/configuration-edit.png)
 1. Wiederholen Sie die Schritte, um Benutzer oder Rollen auszuwählen und nach Bedarf zusätzliche Zugriffsrechte zuzuweisen.
-1. Tippen oder klicken Sie auf **Speichern &amp; Schließen** , wenn Sie fertig sind.
+1. Tippen oder klicken Sie auf **Speichern und schließen**, wenn Sie fertig sind.
 
 ## Konfigurationen als Entwickler {#configurations-developer}
 
@@ -117,12 +117,12 @@ Als Entwickler ist es wichtig zu wissen, wie AEM als Cloud Service mit Konfigura
 
 ### Trennung von Konfiguration und Inhalt {#separation-of-config-and-content}
 
-Obwohl der [Administrator und die Benutzer Konfigurationen als Arbeitsplätze](#configurations-administrator) zur Verwaltung verschiedener Einstellungen und Inhalte betrachten, ist es wichtig, zu verstehen, dass Konfigurationen und Inhalte von AEM im Repository getrennt gespeichert und verwaltet werden.
+Obwohl der [Administrator und Benutzer Konfigurationen als Arbeitsplätze](#configurations-administrator) zur Verwaltung verschiedener Einstellungen und Inhalte betrachten, ist es wichtig, zu verstehen, dass Konfigurationen und Inhalte von AEM im Repository getrennt gespeichert und verwaltet werden.
 
 * `/content` ist die Heimat aller Inhalte.
 * `/conf` ist die Heimat aller Konfigurationen.
 
-Content verweist über eine `cq:conf` Eigenschaft auf die zugehörige Konfiguration. AEM führt eine Suche basierend auf dem Inhalt durch und es ist eine kontextuelle `cq:conf` Eigenschaft, um die entsprechende Konfiguration zu finden.
+Content verweist über eine `cq:conf`-Eigenschaft auf die zugehörige Konfiguration. AEM führt eine Suche basierend auf dem Inhalt durch und es ist die kontextuelle `cq:conf`-Eigenschaft, um die entsprechende Konfiguration zu finden.
 
 ### Beispiel {#developer-example}
 
@@ -134,9 +134,9 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-Der Ausgangspunkt der Konfigurationssuche ist eine Inhaltsressource, normalerweise irgendwo unter `/content`. Dies kann eine Seite, eine Komponente innerhalb einer Seite, ein Asset oder ein DAM-Ordner sein. Dies ist der eigentliche Inhalt, für den wir die richtige Konfiguration suchen, die in diesem Zusammenhang gilt.
+Der Ausgangspunkt aller Konfigurationsabfragen ist eine Inhaltsressource, üblicherweise unter `/content`. Dies kann eine Seite, eine Komponente innerhalb einer Seite, ein Asset oder ein DAM-Ordner sein. Dies ist der eigentliche Inhalt, für den wir die richtige Konfiguration suchen, die in diesem Zusammenhang gilt.
 
-Mit dem `Conf` Objekt können wir nun das spezifische Konfigurationselement abrufen, an dem wir interessiert sind. In diesem Fall ist es `dam/imageserver`eine Sammlung von Einstellungen im Zusammenhang mit der `imageserver`. Der `getItem` Aufruf gibt einen zurück `ValueMap`. Anschließend lesen wir eine `bgkcolor` Zeichenfolgeneigenschaft und geben den Standardwert &quot;FFFFFF&quot;ein, falls die Eigenschaft (oder das gesamte Konfigurationselement) nicht vorhanden ist.
+Mit dem `Conf`-Objekt können wir nun das spezifische Konfigurationselement abrufen, an dem wir interessiert sind. In diesem Fall ist es `dam/imageserver`, was eine Sammlung von Einstellungen im Zusammenhang mit `imageserver` ist. Der Aufruf von `getItem` gibt ein `ValueMap` zurück. Anschließend lesen wir eine `bgkcolor`-Zeichenfolgeneigenschaft und geben den Standardwert &quot;FFFFFF&quot;an, falls die Eigenschaft (oder das gesamte Konfigurationselement) nicht vorhanden ist.
 
 Sehen wir uns nun den entsprechenden JCR-Inhalt an:
 
@@ -154,13 +154,13 @@ Sehen wir uns nun den entsprechenden JCR-Inhalt an:
             - bgkcolor = "FF0000"
 ```
 
-In diesem Beispiel gehen wir von einem WKND-spezifischen DAM-Ordner und einer entsprechenden Konfiguration aus. Ab diesem Ordner `/content/dam/wknd`sehen wir, dass es eine String-Eigenschaft mit dem Namen gibt, `cq:conf` die auf die Konfiguration verweist, die für die Unterstruktur gelten soll. Die Eigenschaft wird in der Regel auf `jcr:content` einem Asset-Ordner oder einer Seite festgelegt. Diese `conf` Links sind explizit, daher ist es einfach, ihnen zu folgen, indem Sie sich den Inhalt in CRXDE ansehen.
+In diesem Beispiel gehen wir von einem WKND-spezifischen DAM-Ordner und einer entsprechenden Konfiguration aus. Ab diesem Ordner `/content/dam/wknd` wird eine Zeichenfolgeneigenschaft mit dem Namen `cq:conf` angezeigt, die auf die Konfiguration verweist, die für die Unterstruktur gelten soll. Die Eigenschaft wird normalerweise auf dem `jcr:content` eines Asset-Ordners oder einer Asset-Seite eingestellt. Diese `conf` Links sind explizit, sodass es einfach ist, ihnen zu folgen, indem Sie sich den Inhalt in CRXDE ansehen.
 
-Wenn wir hineinspringen `/conf`, folgen wir der Referenz und sehen, dass es einen `/conf/wknd` Knoten gibt. Dies ist eine Konfiguration. Beachten Sie, dass die Suche vollständig transparent für den Anwendungscode ist. Der Beispielcode hat keinen eigenen Verweis darauf, er ist hinter dem `Conf` Objekt versteckt. Welche Konfiguration angewendet wird, wird vollständig über den JCR-Inhalt gesteuert.
+Wenn wir in `/conf` springen, folgen wir dem Verweis und sehen, dass es einen `/conf/wknd`-Knoten gibt. Dies ist eine Konfiguration. Beachten Sie, dass die Suche vollständig transparent für den Anwendungscode ist. Der Beispielcode hat nie einen speziellen Verweis darauf, er ist hinter dem `Conf`-Objekt verborgen. Welche Konfiguration angewendet wird, wird vollständig über den JCR-Inhalt gesteuert.
 
-Die Konfiguration enthält einen festen `settings` Knoten, der die eigentlichen Elemente enthält, einschließlich der `dam/imageserver` , die wir in unserem Fall benötigen. Ein solches Element kann als &quot;Dokument für Einstellungen&quot;betrachtet werden und wird in der Regel durch ein Element dargestellt, `cq:Page` das den eigentlichen Inhalt `jcr:content` enthält.
+Wir sehen, dass die Konfiguration einen festen Knoten mit dem Namen `settings` enthält, der die eigentlichen Elemente enthält, einschließlich der `dam/imageserver`, die wir in unserem Fall benötigen. Ein solches Element kann als &quot;settings-Dokument&quot;betrachtet werden und wird normalerweise durch ein `cq:Page` dargestellt, einschließlich eines `jcr:content`, das den eigentlichen Inhalt enthält.
 
-Schließlich sehen wir die Eigenschaft, `bgkcolor` die unser Beispielcode benötigt. Die `ValueMap` Rückmeldung `getItem` erfolgt auf der Grundlage des `jcr:content` Knotens der Seite.
+Schließlich sehen wir die Eigenschaft `bgkcolor`, die unser Beispielcode benötigt. Das `ValueMap`, das wir von `getItem` erhalten, basiert auf dem `jcr:content`-Knoten der Seite.
 
 ### Konfigurationsauflösung {#configuration-resolution}
 
@@ -169,7 +169,7 @@ Das grundlegende Beispiel oben zeigte eine einzelne Konfiguration. Es gibt jedoc
 Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Vererbungs- und Ausweichmechanismus in der folgenden Reihenfolge:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
-   * Spezifische Konfiguration, auf die `cq:conf` in `/content`
+   * Spezifische Konfiguration, auf die von `cq:conf` irgendwo in `/content` verwiesen wird
    * Die Hierarchie ist willkürlich und kann genau wie Ihre Site-Struktur entworfen werden, es ist nicht Aufgabe des Anwendungscodes, dies zu wissen
    * Zur Laufzeit durch Benutzer mit Konfigurationsberechtigungen ändern
 1. `/conf/<siteconfig>/<parentconfig>`
@@ -181,7 +181,7 @@ Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Ve
 1. `/conf/global`
    * Globale Systemeinstellungen
    * In der Regel gelten globale Standardwerte für Ihre Installation
-   * Durch eine `admin` Rolle festgelegt
+   * Durch eine `admin`-Rolle festgelegt
    * Zur Laufzeit durch Benutzer mit Konfigurationsberechtigungen ändern
 1. `/apps`
    * Anwendungsstandardwerte
@@ -195,13 +195,13 @@ Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Ve
 
 ### Verwenden von Konfigurationen {#using-configurations}
 
-Die Konfigurationen in AEM basieren auf Sling Context-Aware Konfigurationen. Die Sling-Pakete bieten eine Dienst-API, mit der kontextsensitive Konfigurationen abgerufen werden können. Kontextsensitive Konfigurationen sind Konfigurationen, die sich auf eine Inhaltsressource oder eine Ressourcenstruktur beziehen, wie im vorherigen Beispiel [beschrieben.](#developer-example)
+Die Konfigurationen in AEM basieren auf Sling Context-Aware Konfigurationen. Die Sling-Pakete bieten eine Dienst-API, mit der kontextsensitive Konfigurationen abgerufen werden können. Kontextbezogene Konfigurationen sind Konfigurationen, die mit einer Inhaltsressource oder einer Ressourcenstruktur im Zusammenhang stehen, wie im vorherigen Beispiel beschrieben.[](#developer-example)
 
-Weitere Informationen zu Context-Aware-Konfigurationen, Beispielen und deren Verwendung [finden Sie in der Sling-Dokumentation.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Weitere Informationen zu Context-Aware-Konfigurationen, Beispielen und deren Verwendung finden Sie in der Sling-Dokumentation.[](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
 ### ConfMgr Web Console {#confmgr-web-console}
 
-Zu Debuggings- und Testzwecken befindet sich eine **ConfMgr** -Webkonsole `https://<host>:<port>/system/console/conf`, in der Konfigurationen für einen bestimmten Pfad/Element angezeigt werden können.
+Zu Debuggings- und Testzwecken gibt es eine **ConfMgr** Webkonsole unter `https://<host>:<port>/system/console/conf`, die Konfigurationen für einen bestimmten Pfad/Element anzeigen kann.
 
 ![ConfMgr](assets/configuration-confmgr.png)
 
@@ -211,11 +211,11 @@ Geben Sie einfach Folgendes an:
 * **Item**
 * **User**
 
-Klicken Sie auf **Auflösen** , um zu sehen, welche Konfigurationen aufgelöst wurden und Beispielcode erhalten, der diese Konfigurationen löst.
+Klicken Sie auf **Auflösen**, um zu sehen, welche Konfigurationen aufgelöst wurden und Beispielcode erhalten, der diese Konfigurationen löst.
 
-### Kontextsensitive Konfiguration Web Console {#context-aware-web-console}
+### Context-Aware Configuration Web Console {#context-aware-web-console}
 
-Zu Debuggings- und Testzwecken befindet sich eine **kontextabhängige Konfigurationswebkonsole** , `https://<host>:<port>/system/console/slingcaconfig`mit der kontextbezogene Konfigurationen im Repository abgefragt und deren Eigenschaften angezeigt werden können.
+Zu Debuggings- und Testzwecken gibt es eine **Context-Aware-Konfiguration** Webkonsole unter `https://<host>:<port>/system/console/slingcaconfig`, mit der kontextbezogene Konfigurationen im Repository abgefragt und deren Eigenschaften angezeigt werden können.
 
 ![Webkonsole für kontextabhängige Konfiguration](assets/configuration-context-aware-console.png)
 
@@ -224,4 +224,4 @@ Geben Sie einfach Folgendes an:
 * **Inhalts-Pfad**
 * **Konfigurationsname**
 
-Klicken Sie auf **Auflösen** , um die verknüpften Kontextpfade und Eigenschaften für die ausgewählte Konfiguration abzurufen.
+Klicken Sie auf **Auflösen**, um die verknüpften Kontextpfade und Eigenschaften für die ausgewählte Konfiguration abzurufen.
