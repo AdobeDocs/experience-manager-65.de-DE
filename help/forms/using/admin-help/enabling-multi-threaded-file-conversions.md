@@ -40,7 +40,7 @@ Auf der Seite „Benutzerkonten“ in Administration Console können Sie angeben
 
 Wenn Sie unter Windows Server 2003 oder 2008 Benutzer für OpenOffice, Microsoft Word oder Microsoft PowerPoint oder unter Linux oder Sun™ Solaris™ Benutzer für OpenOffice hinzufügen, schließen Sie die anfänglichen Aktivierungsdialogfelder für alle Benutzer.
 
-### Die Berechtigung zum Ersetzen des Tokens auf der Prozessebene hinzufügen {#add-the-right-to-replace-the-process-level-token}
+### Die Berechtigung zum Ersetzen des Tokens auf der Prozessebene hinzufügen  {#add-the-right-to-replace-the-process-level-token}
 
 Unter Windows-Betriebssystemen benötigen die Administrator-Benutzerkonten, die für die PDF-Konvertierung verwendet werden (PDFG-Benutzer), die Berechtigung zum Ersetzen von Tokens auf Prozessebene. Sie können diese Berechtigung mithilfe des Gruppenrichtlinien-Editors hinzufügen:
 
@@ -48,7 +48,7 @@ Unter Windows-Betriebssystemen benötigen die Administrator-Benutzerkonten, die 
 1. Klicken Sie auf „Lokale Computerrichtlinie“ > „Computerkonfiguration“ > „Windows-Einstellungen“ > „Sicherheitseinstellungen“ > „Lokale Richtlinien“ > „Zuweisen von Benutzerrechten“. Bearbeiten Sie die Richtlinie „*Token auf Prozessebene ersetzen*“, damit diese in der Gruppe „Administratoren“ übernommen wird.
 1. Fügen Sie den Benutzer dem Eintrag „Token auf Prozessebene ersetzen“ hinzu.
 
-### Weitere für OpenOffice, Microsoft Word und Microsoft PowerPoint unter Windows Server 2008 erforderliche Konfigurationen {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
+### Weitere für OpenOffice, Microsoft Word und Microsoft PowerPoint unter Windows Server 2008 erforderliche Konfigurationen  {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
 
 Wenn Sie OpenOffice, Microsoft Word oder Microsoft PowerPoint auf einem System unter Windows Server 2008 ausführen, deaktivieren Sie die Benutzerkontensteuerung (User Account Control, UAC) für jeden hinzugefügten Benutzer.
 
@@ -56,7 +56,7 @@ Wenn Sie OpenOffice, Microsoft Word oder Microsoft PowerPoint auf einem System u
 1. Deaktivieren Sie das Kontrollkästchen „Benutzerkontensteuerung (UAC) zum Schutz des Computers verwenden“ und klicken Sie auf „OK“.
 1. Starten Sie den Computer neu, um die Einstellungen zu übernehmen.
 
-### Weitere für OpenOffice unter Linux oder Solaris erforderliche Konfigurationen {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
+### Weitere für OpenOffice unter Linux oder Solaris erforderliche Konfigurationen  {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
 1. Benutzerkonten hinzufügen. (Siehe [Benutzerkonto erstellen](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
 1. Als Nächstes nehmen Sie Änderungen an der Datei „/etc/sudoers“ vor. Die Standardberechtigung für diese Datei ist „440“. Ändern Sie die Berechtigung für diese Datei auf Schreibberechtigung.
@@ -105,14 +105,14 @@ Wenn Sie OpenOffice, Microsoft Word oder Microsoft PowerPoint auf einem System u
 
 1. Starten Sie den Formularserver neu.
 
-### Einen Benutzer aus der Liste für mehrprozessgestützte Dateikonvertierungen entfernen {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
+### Einen Benutzer aus der Liste für mehrprozessgestützte Dateikonvertierungen entfernen  {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Benutzerkonten“.
 1. Aktivieren Sie das Kontrollkästchen neben dem Benutzer, den Sie entfernen möchten, und klicken Sie auf „Löschen“.
 1. Klicken Sie auf der Bestätigungsseite auf „Löschen“.
 1. Starten Sie den Formularserver neu.
 
-### Kennwort für ein Konto ändern {#change-the-password-for-an-account}
+### Kennwort für ein Konto ändern  {#change-the-password-for-an-account}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Benutzerkonten“.
 1. Klicken Sie auf den Benutzernamen, geben Sie das neue Kennwort ein und bestätigen Sie es. Dieses Kennwort muss mit dem Systemkennwort des Benutzers übereinstimmen.
