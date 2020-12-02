@@ -34,15 +34,15 @@ Der Java API(SOAP) Quick-Beginn ist für Prozesse verfügbar. Eine *Prozessinsta
 
 [Quick Beginn (SOAP-Modus): Abrufen des Status eines Auftrags mit der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Quick-Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Quick-Beginn, die sich unter Programmieren mit AEM Forms befinden, basieren auf dem Forms, wenn Sie ein anderes Betriebssystem verwenden, z. B. Unix, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-## Quick Beginn (SOAP-Modus): Suchen nach Prozessinstanzen mithilfe der Java-API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Suchen nach Prozessinstanzen mit der Java-API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem *MortgageLoan - Prebuild* -Prozess basieren.
+Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem Prozess *Hypothekendarlehen - Vorgefertigt* basieren.
 
 ```java
  /*
@@ -250,7 +250,7 @@ Im folgenden Java-Codebeispiel wird eine Prozessinstanz ausgesetzt. Um eine Proz
  
 ```
 
-## Quick Beginn (SOAP-Modus): Starten von Prozessinstanzen mit der Java-API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Ausgesetzte Prozessinstanzen mit der Java-API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api} starten
 
 Im folgenden Java-Codebeispiel wird eine ausgesetzte Prozessinstanz Beginn.
 
@@ -338,7 +338,7 @@ Im folgenden Java-Codebeispiel wird eine ausgesetzte Prozessinstanz Beginn.
  
 ```
 
-## Quick Beginn (SOAP-Modus): Prozessinstanzen mit der Java-API beenden {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Beenden von Prozessinstanzen mit der Java-API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Bezeichnerwert 756c22860a242fb101ec7a5bc0977fd6 beendet.
 
@@ -429,9 +429,9 @@ Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Bezeichnerwert 7
  
 ```
 
-## Quick Beginn (SOAP-Modus): Prozessdaten mithilfe der Java-API bereinigen {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Prozessdaten mithilfe der Java-API {#quick-start-soap-mode-purging-process-data-using-the-java-api} bereinigen
 
-Der folgende Java-Code entfernt Daten aus einem Prozess namens *SecureDocument*. Ein Filter wird verwendet, der angibt, Daten für jene Prozessinstanzen zu bereinigen, bei denen die Prozessvariable *inValue* größer als 200 ist.
+Der folgende Java-Code entfernt Daten aus einem Prozess mit dem Namen *SecureDocument*. Ein Filter wird verwendet, der angibt, Daten für jene Prozessinstanzen zu bereinigen, bei denen die Prozessvariable *inValue* größer als 200 ist.
 
 ```java
  /*
