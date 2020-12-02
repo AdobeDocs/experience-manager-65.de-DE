@@ -20,9 +20,9 @@ ht-degree: 2%
 
 # Essentials zur Abstimmung {#voting-essentials}
 
-Die stimmberechtigte Komponente, eine [tally](tally.md) -Unterklasse, ist ein nützliches Werkzeug, mit dem Mitglieder einen bestimmten Inhalt bewerten können, indem sie einfach Pfeiltasten nach oben oder unten wählen, um ihre Meinung zu äußern.
+Die stimmberechtigte Komponente, eine Unterklasse [tally](tally.md), ist ein nützliches Werkzeug, mit dem Mitglieder einen bestimmten Inhalt bewerten können, indem sie einfach Pfeile nach oben oder unten auswählen, um ihre Meinung anzugeben.
 
-Die Platzierung mehrerer Instanzen einer stimmberechtigten Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` Eigenschaft konfiguriert werden.
+Die Platzierung mehrerer Instanzen einer stimmberechtigten Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name`-Eigenschaft konfiguriert werden.
 
 Anonyme Entsendung einer Stimme wird nicht unterstützt. Site-Besucher müssen sich nur einmal registrieren und sich anmelden, um an der Abstimmung teilzunehmen. Der unterzeichnete Besucher (Mitglied) kann ihre Stimme jederzeit ändern.
 
@@ -36,7 +36,7 @@ Anonyme Entsendung einer Stimme wird nicht unterstützt. Site-Besucher müssen s
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließbar</strong></a></td>
-   <td>Ja - Eigenschaften können im <i>Designmodus bearbeitet </i>werden</td>
+   <td>Ja - Eigenschaften können im <i>design </i>mode bearbeitet werden</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -67,19 +67,19 @@ Anonyme Entsendung einer Stimme wird nicht unterstützt. Site-Besucher müssen s
 
 * [Serverseitige Anpassungen](server-customize.md)
 
-### Zugreifen auf gepostete Abstimmungen {#accessing-posted-voting-ugc}
+### Zugriff auf gepostete Abstimmungen (UGC) {#accessing-posted-voting-ugc}
 
 UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe:
 
-* [Übersicht über](srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils Refactoring](socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Übersicht über](srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](srp-and-ugc.md)  - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](accessing-ugc-with-srp.md) -Codierungsrichtlinien.
+* [SocialUtils Refactoring](socialutils.md)  - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
