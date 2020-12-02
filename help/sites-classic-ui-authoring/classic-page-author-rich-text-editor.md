@@ -8,6 +8,9 @@ discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +33,7 @@ Das Editor-Dialogfeld arbeitet nach dem WYSIWYG-Prinzip und bietet eine Vielzahl
 >
 >Welche Features verfügbar sind, richtet sich nach dem jeweiligen Projekt, Ihre spezielle Installation kann also Abweichungen aufweisen.
 
-## Bearbeitung im Kontext {#in-place-editing}
+## Bearbeiten im Kontext {#in-place-editing}
 
 Zusätzlich zu der Bearbeitung in Dialogfeldern durch den Rich-Text-Editor bietet AEM noch die Möglichkeit einer Bearbeitung im Kontext, bei der Sie den Text so bearbeiten, wie er im Layout der Seite erscheint.
 
@@ -54,7 +57,7 @@ Derzeit ist die Bearbeitung im Kontext für Seitenelemente möglich, die durch d
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
-The Rich Text Editor provides a range of featues, these [depend on the configuration](/help/sites-administering/rich-text-editor.md) of the individual component. The features are available for both the touch-optimized and classic UI.
+Der Rich-Text-Editor bietet eine Reihe von Funktionen, die von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente abhängen. Die Funktionen sind sowohl für die touchoptimierte als auch für die klassische Benutzeroberfläche verfügbar.[
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -72,9 +75,9 @@ Hier können Sie Formatierungen auf ausgewählte (markierte) Zeichen anwenden, f
 
 Alle Funktionen arbeiten als Schalter, wenn Sie also erneut darauf klicken, wird die Formatierung wieder entfernt.
 
-### Vordefinierte Stile und Formate {#predefined-styles-and-formats}
+### Vordefinierte Stile und Formate  {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraphen](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraf](assets/cq55_rte_stylesparagraph.png)
 
 Ihre Installation kann außerdem vordefinierte Stile und Formate aufweisen, die in den Dropdownlisten **[!UICONTROL Art]** (also Stil) und **[!UICONTROL Format]** zur Verfügung stehen und auf von Ihnen ausgewählten Text angewendet werden können.
 
@@ -94,7 +97,7 @@ Ein Stil kann entfernt werden. Platzieren Sie dafür den Cursor innerhalb des Te
 >
 >Markieren Sie keine Textbereiche in dem Text, auf den der Stil angewendet wurde, da ansonsten das Symbol nicht verfügbar ist.
 
-### Ausschneiden, Kopieren, Einfügen {#cut-copy-paste}
+### Ausschneiden, Kopieren, Einfügen  {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -102,8 +105,8 @@ Die Standardfunktionen **[!UICONTROL Ausschneiden]** und **[!UICONTROL Kopieren]
 
 * Ausschneiden (Strg+X)
 * Kopieren (Strg-C)
-* Paste
-This is the default paste mechanism (Ctrl-V) for the component; when installed out-of-the-box this is configured to be [!UICONTROL Paste from Word].
+* Einfügen
+Dies ist der standardmäßige Einfügemechanismus (Strg-V) für die Komponente. bei der Installation standardmäßig konfiguriert, dass [!UICONTROL Aus Word einfügen] verwendet wird.
 
 * Als Text einfügen: Entfernt alle Stile und Formatierungen, um nur den Text einzufügen.
 
@@ -149,7 +152,7 @@ Verschachtelte Listen lassen sich durch Einrücken eines oder mehrerer Listenpun
 
 Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor innerhalb der Liste platzieren und einen anderen Stil wählen. Außerdem kann eine Unterliste einen anderen Stil aufweisen als die übergeordnete Liste. Dieser Stil kann angewendet werden, sobald Sie die Unterliste (durch Einrücken) erstellt haben.
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_Listen_use](assets/cq55_rte_lists_use.png)
 
 ### Links {#links}
 
@@ -167,19 +170,19 @@ Sie haben folgende Möglichkeiten:
 
 * Direkte Eingabe einer URI
 * Verwenden Sie die Siteübersicht, um eine Seite innerhalb Ihrer Website auszuwählen.
-* Enter the URI, then append the target anchor; e.g. `www.TargetUri.org#AnchorName`
-* Enter an anchor only (to reference &quot;the current page&quot;); For example, `#anchor`
+* Geben Sie den URI ein und fügen Sie dann den Anker für die Zielgruppe an. z. B. `www.TargetUri.org#AnchorName`
+* Geben Sie nur einen Anker ein (um auf &quot;die aktuelle Seite&quot;zu verweisen). Beispiel: `#anchor`
 * Suchen Sie nach einer Seite in der Inhaltssuche und ziehen Sie dann das Seitensymbol in das Hyperlink-Dialogfeld
 
 >[!NOTE]
 >
->Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. In a standard installation these are `https://`, `ftp://`, and `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
+>Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. Bei einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
 
 Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol[!UICONTROL Verknüpfung aufheben]:
 
 ![](do-not-localize/chlimage_1-10.png)
 
-### Anker {#anchors}
+### Anker  {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -247,7 +250,7 @@ Tabellen können auf zwei Arten eingefügt werden:
 
    >[!NOTE]
    >
-   >Although tables are available in the RTE, it is recommended to use the **Table** component when creating tables.
+   >Obwohl Tabellen in der RTE verfügbar sind, wird empfohlen, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
 
 Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind die Tabellenoptionen über das Kontextmenü verfügbar, das in der Regel durch Klicken mit der rechten Maustaste auf die Tabelle aufgerufen wird. Beispiel:
 
@@ -305,10 +308,10 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 
 * **Breite**
 * **Höhe**
-* **Horizontale Ausrichtung** - Links, Mitte oder rechts
-* **Vertikale Ausrichtung** - Oben, Mitte, Unten oder Grundlinie
-* **Zellentyp**- Daten oder Kopfzeile
-* **** Anwenden auf: Einzelne Zelle, gesamte Zeile, Ganze Spalte
+* **Horizontale Ausrichtung**  - links, zentriert oder rechts
+* **Vertikale Ausrichtung** : oben, Mitte, unten oder Grundlinie
+* **Zellentyp** - Daten oder Kopfzeile
+* **Anwenden auf:** Einzelne Zelle, gesamte Zeile, Gesamte Spalte
 
 #### Zeilen hinzufügen oder löschen {#add-or-delete-rows}
 
@@ -318,7 +321,7 @@ Zeilen können entweder über oder unter der aktuellen Zeile eingefügt werden.
 
 Die aktuelle Zeile kann außerdem gelöscht werden.
 
-#### Spalten hinzufügen oder löschen {#add-or-delete-columns}
+#### Spalten hinzufügen oder löschen  {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -326,7 +329,7 @@ Spalten können entweder links oder rechts von der aktuellen Spalte eingefügt w
 
 Die aktuelle Spalte kann außerdem gelöscht werden.
 
-#### Ganze Zeilen oder Spalten auswählen {#selecting-entire-rows-or-columns}
+#### Ganze Zeilen oder Spalten auswählen  {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -334,12 +337,12 @@ Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Dann sind bestimmte Akti
 
 #### Zellen verbinden {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Wenn Sie eine Gruppe von Zellen ausgewählt haben, können Sie sie zu einer einzigen Zelle zusammenführen.
 * Wenn Sie nur eine Zelle ausgewählt haben, können Sie diese Zelle mit der Zelle rechts davon oder der Zelle unterhalb davon zusammenführen.
 
-#### Zellen teilen {#split-cells}
+#### Zellen teilen  {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -348,7 +351,7 @@ Einzelne Zelle auswählen und teilen
 * Durch die horizontale Teilung einer Zelle wird eine neue Zelle rechts von der aktuellen Zelle und innerhalb der aktuellen Spalte eingefügt.
 * Durch die vertikale Teilung einer Zelle wird eine neue Zelle unterhalb der aktuellen Zelle und innerhalb der aktuellen Zeile eingefügt.
 
-#### Erstellen verschachtelter Tabellen {#creating-nested-tables}
+#### Erstellen verschachtelter Tabellen  {#creating-nested-tables}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -366,7 +369,7 @@ Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle in
 
 ![cq55_rte_removtable](assets/cq55_rte_removetable.png)
 
-Verwenden Sie die Option, um die Tabelle aus der **[!UICONTROL Textkomponente]** zu entfernen.
+Verwenden Sie die Option, um die Tabelle aus der Komponente **[!UICONTROL Text]** zu entfernen.
 
 ### Sonderzeichen {#special-characters}
 
@@ -378,7 +381,7 @@ Je nach Installation können in Ihrem Rich-Text-Editor auch Sonderzeichen verfü
 
 Halten Sie den Mauszieger über ein bestimmtes Zeichen, um eine vergrößerte Vorschau anzuzeigen, und klicken Sie dann darauf, um es an der aktuellen Position in den Text einzufügen.
 
-### Quellbearbeitungsmodus {#source-editing-mode}
+### Quellbearbeitungsmodus  {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 
