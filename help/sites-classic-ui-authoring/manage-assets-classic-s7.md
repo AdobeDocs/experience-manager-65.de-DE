@@ -43,7 +43,7 @@ Weitere Informationen über die Arbeit mit Videokomponenten mit AEM finden Sie u
 
 >[!NOTE]
 >
->If Scene7 assets do not display properly, please make sure that Dynamic media is [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
+>Wenn Scene7-Assets nicht richtig angezeigt werden, stellen Sie sicher, dass das dynamische Medium [deaktiviert](/help/assets/config-dynamic.md#disabling-dynamic-media) ist, und aktualisieren Sie dann die Seite.
 
 ## Manuelles Veröffentlichen über Assets in Scene7 {#manually-publishing-to-scene-from-assets}
 
@@ -58,7 +58,7 @@ Sie können digitale Assets über die Konsole „Assets“ auf der klassischen B
 
 So veröffentlichen Sie über die Konsole „Assets“ in Scene7, wenn sich die Assets in einem Scene7-Zielordner befinden:
 
-1. In the AEM classic UI, click **Digital Assets** to access the digital asset manager.
+1. Klicken Sie in der klassischen Benutzeroberfläche von AEM auf **Digitale Assets**, um auf den digitalen Asset-Manager zuzugreifen.
 
 1. Wählen Sie das Asset (oder die Assets) oder den Ordner innerhalb des Zielordners aus, den Sie in Scene7 veröffentlichen möchten, klicken Sie dann mit der rechten Maustaste und wählen Sie **In Scene7 veröffentlichen** aus. Alternativ können Sie **In Scene7 veröffentlichen** über das Menü **Tools auswählen**.
 
@@ -96,9 +96,9 @@ So veröffentlichen Sie direkt über ein digitales Asset in Scene7:
 
 ### Veröffentlichen von Assets außerhalb des CQ-Zielordners {#publishing-assets-from-outside-the-cq-target-folder}
 
-Adobe empfiehlt, dass Sie Assets nur über die im Scene7-Zielordner befindlichen Assets in Scene7 veröffentlichen. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an **ad-hoc** folder on Scene7.
+Adobe empfiehlt, dass Sie Assets nur über die im Scene7-Zielordner befindlichen Assets in Scene7 veröffentlichen. Wenn Sie jedoch Assets aus einem Ordner außerhalb des Ordners &quot;Zielgruppe&quot;hochladen müssen, können Sie dies dennoch tun, indem Sie sie in den Ordner **ad-hoc** unter Scene7 hochladen.
 
-Dafür müssen Sie zunächst die Cloud-Konfiguration für die Seite konfigurieren, auf der das Asset angezeigt wird. Anschließend fügen Sie der Seite eine Scene7-Komponente hinzu, ziehen ein Asset und legen es auf der Komponente ab. After the page properties are set for that page, a **Publish to Scene7** link appears that when selected triggers uploading to Scene7.
+Dafür müssen Sie zunächst die Cloud-Konfiguration für die Seite konfigurieren, auf der das Asset angezeigt wird. Anschließend fügen Sie der Seite eine Scene7-Komponente hinzu, ziehen ein Asset und legen es auf der Komponente ab. Nachdem die Seiteneigenschaften für diese Seite festgelegt wurden, wird ein Link **Auf Scene7 veröffentlichen** angezeigt, der beim Auswählen den Upload nach Scene7 auslöst.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ So veröffentlichen Sie außerhalb des CQ-Zielordners befindliche Assets:
 
    >[!NOTE]
    >
-   >If the digital asset is in the CQ target folder, then no link to **Check Scene7 Publication Status** appears. Die Assets werden einfach in der Komponente platziert.
+   >Wenn sich das digitale Asset im Ordner &quot;CQ-Zielgruppe&quot;befindet, wird kein Link zu **Scene7-Veröffentlichungsstatus überprüfen** angezeigt. Die Assets werden einfach in der Komponente platziert.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -130,7 +130,7 @@ So veröffentlichen Sie außerhalb des CQ-Zielordners befindliche Assets:
    >
    >Wenn sich das Asset nicht in einem Scene7-synchronisierten Ordner befindet und keine Scene7-Cloud-Konfiguration mit der aktuellen Seite verknüpft ist, ist der Upload fehlerhaft.
 
-## Scene7-Komponenten {#scene-components}
+## Scene7-Komponenten  {#scene-components}
 
 Die folgenden Scene7-Komponenten sind in AEM verfügbar:
 
@@ -148,7 +148,7 @@ Nachdem sie im Designmodus zur Verfügung gestellt wurden, können Sie Komponent
 
 >[!NOTE]
 >
->If you are creating and developing custom S7 viewers and using the Content Finder, you need to explicity add the **allowfullscreen** parameter.
+>Wenn Sie benutzerdefinierte S7-Viewer erstellen und entwickeln und die Inhaltssuche verwenden, müssen Sie den Parameter **allowfullscreen** explizit hinzufügen.
 
 ### Hinweis zur Einstellung von Flash-Viewer {#flash-viewers-end-of-life-notice}
 
@@ -156,7 +156,7 @@ Mit Wirkung vom 31. Januar 2017 wird die Flash-Viewer-Plattform nicht mehr off
 
 Weitere Informationen zu dieser wichtigen Änderung finden Sie unter [Fragen und Antworten zum Lebenszyklusende von Flash Viewer](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
 
-### Hinzufügen einer Scene7-Komponente zu einer Seite {#adding-a-scene-component-to-a-page}
+### Hinzufügen einer Scene7-Komponente zu einer Seite  {#adding-a-scene-component-to-a-page}
 
 Das Hinzufügen einer Scene7-Komponente zu einer Seite entspricht dem Hinzufügen einer Komponente zu einer Seite. Die Scene7-Komponenten werden in den folgenden Abschnitten detailliert beschrieben.
 
@@ -166,7 +166,7 @@ So fügen Sie eine Scene7-Komponente bzw. einen -Viewer zu einer Seite auf der k
 
 1. Klicken Sie bei nicht verfügbaren Scene7-Komponenten auf das Lineal im Sidekick, um in den Modus **Design** zu wechseln. Klicken Sie auf das ParSys **Bearbeiten** und wählen Sie alle **Scene7**-Komponenten aus, um sie verfügbar zu machen.
 
-1. Return to **Edit** mode by clicking the pencil in the sidekick.
+1. Kehren Sie zum Modus **Bearbeiten** zurück, indem Sie auf den Stift im Sidekick klicken.
 
 1. Ziehen Sie eine Komponente aus der **Scene7**-Gruppe in den Sidekick auf die Seite an der gewünschten Position.
 
@@ -174,7 +174,7 @@ So fügen Sie eine Scene7-Komponente bzw. einen -Viewer zu einer Seite auf der k
 
 1. Bearbeiten Sie die Komponente bei Bedarf und klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-### Hinzufügen von interaktiven Anzeigeerlebnissen zu einer dynamischen Website {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Hinzufügen von interaktiven Anzeigeerlebnissen zu einer dynamischen Website  {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Dynamisches Design für Ihre Assets bedeutet, dass Ihre Assets in Abhängigkeit ihrer Anzeigeposition angepasst werden. Mithilfe des dynamischen Designs können dieselben Assets auf mehreren Geräten effektiv dargestellt werden.
 
@@ -184,7 +184,7 @@ So fügen Sie ein interaktives Anzeigeerlebnis zu einer dynamischen Website auf 
 
    >[!NOTE]
    >
-   >Wenn Scene7 WCM-Komponenten nicht verfügbar sind, stellen Sie sicher, dass sie über den Designmodus aktiviert werden.
+   >Wenn keine Scene7 WCM-Komponenten verfügbar sind, müssen Sie sie unbedingt über den Designmodus aktivieren.
 
 1. Ziehen Sie auf einer Website mit aktivierten Scene7-Komponenten einen **Bild**-Viewer auf die Seite.
 1. Bearbeiten Sie die Komponente und passen Sie die Haltepunkte auf der Registerkarte **Scene7-Einstellungen** an.
@@ -193,7 +193,7 @@ So fügen Sie ein interaktives Anzeigeerlebnis zu einer dynamischen Website auf 
 
 1. Bestätigen Sie, dass die Größe der Viewer dynamisch geändert wird und dass alle Interaktionen für Desktopcomputer, Tablets und Mobilgeräte optimiert sind.
 
-### Für alle Scene7-Komponenten gemeinsame Einstellungen {#settings-common-to-all-scene-components}
+### Für alle Scene7-Komponenten gemeinsame Einstellungen  {#settings-common-to-all-scene-components}
 
 Auch wenn sich die Konfigurationsoptionen unterscheiden, sind folgende für alle Scene7-Komponenten gleich:
 
@@ -209,13 +209,13 @@ Sie können diese Konfigurationsoptionen festlegen, indem Sie eine Scene7-Kompon
 
 Die HTML5 Zoom-Komponente zeigt ein größeres Bild an, wenn Sie die Taste „+“ drücken.
 
-Das Asset verfügt unten über Zoomwerkzeuge. Klicken Sie auf **+** zum Vergrößern. Klicken Sie auf **-** zum Verkleinern. Clicking the **x** or the reset zoom arrow brings the image back to the original size it was imported as. Klicken Sie auf die diagonalen Pfeile, um es im Vollbild anzuzeigen. Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. With this component, you can configure [settings common to all Scene7 components](#settings-common-to-all-scene-components).
+Das Asset verfügt unten über Zoomwerkzeuge. Klicken Sie auf **+** zum Vergrößern. Klicken Sie auf **-** zum Verkleinern. Wenn Sie auf den Pfeil **x** oder auf den Pfeil zum Zurücksetzen des Zooms klicken, wird das Bild wieder in der ursprünglichen Größe angezeigt, in der es importiert wurde. Klicken Sie auf die diagonalen Pfeile, um es im Vollbild anzuzeigen. Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. Mit dieser Komponente können Sie [Einstellungen konfigurieren, die allen Scene7-Komponenten gemein sind](#settings-common-to-all-scene-components).
 
 ![](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
 
-In der HTML5 Flyout-Komponente wird das Asset als geteilter Bildschirm angezeigt. Links wird das Asset in der angegebenen Größe angezeigt, rechts wird der Zoomteil angezeigt. Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. With this component, you can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components).
+In der HTML5 Flyout-Komponente wird das Asset als geteilter Bildschirm angezeigt. Links wird das Asset in der angegebenen Größe angezeigt, rechts wird der Zoomteil angezeigt. Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. Mit dieser Komponente können Sie [Einstellungen konfigurieren, die allen Scene7-Komponenten gemein sind](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
 >[!NOTE]
 >
@@ -231,15 +231,15 @@ Mit der Scene7-Bildkomponente können Sie Ihren Bildern Scene7-Funktionen hinzuf
 
 ![](do-not-localize/chlimage_1-4.png)
 
-**Titel, Alt-Text** Fügen Sie auf der Registerkarte Erweitert einen Titel zum Bild und alternativer Text für die Benutzer hinzu, die Grafiken deaktiviert haben.
+**Titel, Alt-** TextFügen Sie auf der Registerkarte &quot;Erweitert&quot;dem Bild einen Titel und Alternativtext für Benutzer hinzu, die Grafiken deaktiviert haben.
 
-**URL, Öffnen in** Sie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
+**URL, Öffnen** inSie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-**Viewer-Vorgabe** Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+**Viewer-** VorgabeWählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-**Scene7-Konfiguration** Wählen Sie die Scene7-Konfiguration aus, die Sie verwenden möchten, um aktive Bildvorgaben aus dem SPS abzurufen.
+**Scene7** ConfigurationWählen Sie die Scene7-Konfiguration aus, die Sie verwenden möchten, um aktive Bildvorgaben aus dem SPS abzurufen.
 
 **Bildvorgabe** Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
@@ -247,31 +247,31 @@ Mit der Scene7-Bildkomponente können Sie Ihren Bildern Scene7-Funktionen hinzuf
 
 **Scharfzeichnen** Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird unter Best Practices für Bildvorgaben und in den Best Practices für das Scharfzeichnen detailliert beschrieben.
 
-**URL-Modifikatoren** Sie können Bildeffekte ändern, indem Sie zusätzliche S7-Bildbefehle bereitstellen. Diese werden unter Bildvorgaben und in der Befehlsreferenz beschrieben.
+**URL-** ModifikatorenSie können Bildeffekte ändern, indem Sie zusätzliche S7-Bildbefehle bereitstellen. Diese werden unter Bildvorgaben und in der Befehlsreferenz beschrieben.
 
-**Haltepunkte** Wenn Ihre Website responsiv ist, sollten Sie die Haltepunkte anpassen. Haltepunkte müssen durch Kommas (,) voneinander getrennt werden.
+**** HaltepunkteWenn Ihre Website responsiv ist, sollten Sie die Haltepunkte anpassen. Haltepunkte müssen durch Kommas (,) voneinander getrennt werden.
 
 ### Bildvorlage {#image-template}
 
 Bei [Scene7-Bildvorlagen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) handelt es sich um Photoshop-Inhalt mit mehreren Ebenen, der in Scene7 importiert wurde, wo Inhalt und Eigenschaften zwecks Variabilität parametrisiert wurden. Mit der Komponente **Bildvorlage** können Sie Bilder importieren und den Text in AEM dynamisch ändern. Zusätzlich können Sie die Komponente **Bildvorlage** dahingehend konfigurieren, dass sie Werte aus dem Clientkontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
 
-Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. You can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
+Klicken Sie auf **Bearbeiten**, um die Komponente zu konfigurieren. Sie können [Einstellungen konfigurieren, die allen Scene7-Komponenten gemeinsam sind](/help/sites-administering/scene7.md#settingscommontoallscene7components) sowie andere in diesem Abschnitt beschriebene Einstellungen.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**Dateiverweis, Breite, Höhe** Siehe Einstellungen, die allen Scene7-Komponenten gemein sind.
+**Dateiverweis, Breite,** HöheSiehe Einstellungen, die allen Scene7-Komponenten gemein sind.
 
 >[!NOTE]
 >
 >Scene7-URL-Befehle und -Parameter können nicht direkt zur Dateiverweis-URL hinzugefügt werden. Sie können nur auf der Komponenten-Benutzeroberfläche im Bedienfeld **Parameter** definiert werden.
 
-**Titel, Alt-Text** Fügen Sie auf der Registerkarte &quot;Scene7-Bildvorlage&quot;dem Bild einen Titel und Alternativtext für Benutzer hinzu, die Grafiken deaktiviert haben.
+**Titel, Alt-** TextFügen Sie auf der Registerkarte &quot;Scene7-Bildvorlage&quot;dem Bild einen Titel und Alternativtext für Benutzer hinzu, die Grafiken deaktiviert haben.
 
-**URL, Öffnen in** Sie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
+**URL, Öffnen** inSie können ein Asset so einstellen, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-**Parameterbedienfeld** Beim Importieren eines Bildes werden die Parameter mit Informationen aus dem Bild vorausgefüllt. Wenn kein Inhalt vorhanden ist, der dynamisch geändert werden kann, ist dieses Fenster leer.
+**Parameter** PanelBeim Importieren eines Bilds werden die Parameter mit Informationen aus dem Bild vorausgefüllt. Wenn kein Inhalt vorhanden ist, der dynamisch geändert werden kann, ist dieses Fenster leer.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -287,7 +287,7 @@ Der Text im Bild ändert sich. Sie können den Text auf den ursprünglichen Wert
 
 #### Ändern von Text zum Berücksichtigen des Werts eines Clientkontextwerts {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, click **Select** to open the client-context menu, select the client context, and click **OK**. In diesem Beispiel ändert sich der Name auf Grundlage der Verknüpfung des Namens mit dem formatierten Namen im Profil.
+Um ein Feld mit einem Clientkontextwert zu verknüpfen, klicken Sie auf **Wählen Sie**, um das Client-Kontextmenü zu öffnen, wählen Sie den Clientkontext aus und klicken Sie auf **OK**. In diesem Beispiel ändert sich der Name auf Grundlage der Verknüpfung des Namens mit dem formatierten Namen im Profil.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -308,7 +308,7 @@ So machen Sie aus der Scene7-Bildvorlagenkomponente einen klickbaren Link:
 
 ### Komponente „Video“{#video-component}
 
-The Scene7 **Video** component (available from the Scene7 section of the sidekick) uses device and bandwidth detection to serve the right video to each screen. Bei dieser Komponente handelt es sich um einen HTML5-Video-Player. Es ist ein einzelner Viewer, der kanalübergreifend verwendet werden kann.
+Die Komponente Scene7 **Video** (verfügbar im Abschnitt &quot;Scene7&quot;des Sidekick) verwendet Geräte- und Bandbreitenerkennung, um das richtige Video für jeden Bildschirm bereitzustellen. Bei dieser Komponente handelt es sich um einen HTML5-Video-Player. Es ist ein einzelner Viewer, der kanalübergreifend verwendet werden kann.
 
 Er kann für adaptive Videosets, ein einzelnes MP4-Video oder ein einzelnes F4V-Video verwendet werden.
 
@@ -318,7 +318,7 @@ Weitere Informationen darüber, wie Videos mit Scene7-Integration funktionieren,
 
 ### Bekannte Einschränkungen für die Videokomponente {#known-limitations-for-the-video-component}
 
-Adobe DAM und WCM zeigen an, ob ein primäres Quellvideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
+Adobe DAM und WCM zeigen an, ob ein Hauptquellvideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
 
 * Kodierte Scene7-Ausgabeformate
 * Adaptive Scene7-Videosets
@@ -327,7 +327,7 @@ Beim Verwenden eines adaptiven Videosets mit der Scene7-Videokomponente muss die
 
 ## Scene7-Inhaltsbrowser {#scene-content-browser}
 
-Mit dem Scene7-Inhaltsbrowser können Sie Inhalt aus Scene7 direkt in AEM anzeigen. To access the content browser, in the Content Finder, select **Scene7** in the touch-optimized user interface or the **S7** icon in the classic user interface. Die Funktionalität ist zwischen den beiden Benutzeroberflächen identisch.
+Mit dem Scene7-Inhaltsbrowser können Sie Inhalt aus Scene7 direkt in AEM anzeigen. Um auf den Inhaltsbrowser zuzugreifen, wählen Sie in der Inhaltssuche in der touchoptimierten Benutzeroberfläche die Option **Scene7** oder in der klassischen Benutzeroberfläche das Symbol **S7** aus. Die Funktionalität ist zwischen den beiden Benutzeroberflächen identisch.
 
 Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die [Standardkonfiguration](/help/sites-administering/scene7.md#configuring-a-default-configuration) an. Sie können unterschiedliche Kategorien direkt im Scene7-Inhaltsbrowser im Dropdownmenü auswählen.
 
@@ -335,7 +335,7 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die 
 >
 >* Im Ad-hoc-Ordner befindliche Assets werden im Scene7-Inhaltsbrowser nicht angezeigt.
 >* Bei [aktivierter sicherer Vorschau](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) werden die auf Scene7 veröffentlichten und nicht veröffentlichten Assets im Scene7-Inhaltsbrowser angezeigt.
->* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+>* Wenn die Option **Scene7** oder das **S7**-Symbol nicht angezeigt wird, müssen Sie [Scene7 für die Verwendung mit AEM](/help/sites-administering/scene7.md) konfigurieren.
 >* Für Videos unterstützt der Scene7-Inhaltsbrowser Folgendes:
    >   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
    >   * Einzelnes MP4-Video
@@ -374,11 +374,11 @@ Sie können die klassische oder Touch-optimierte Benutzeroberfläche verwenden, 
 
 Wenn Sie auf einer der Benutzeroberflächen suchen, können Sie nach den folgenden Kriterien filtern (wird hier in der Touch-optimierten Benutzeroberfläche gezeigt):
 
-**Suchbegriffe** Sie können Assets anhand des Namens suchen. Bei der Suche entsprechen die von Ihnen eingegebenen Keywords dem Beginn des Dateinamens. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Drücken Sie die Eingabetaste, nachdem Sie den Begriff eingegeben haben, um nach dem Asset zu suchen.
+**Geben Sie** Suchbegriffe einSie können Assets anhand des Namens suchen. Bei der Suche entsprechen die von Ihnen eingegebenen Keywords dem Beginn des Dateinamens. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Drücken Sie die Eingabetaste, nachdem Sie den Begriff eingegeben haben, um nach dem Asset zu suchen.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-**Ordner/Pfad** Der Name des angezeigten Ordners basiert auf der ausgewählten Konfiguration. Sie können niedrigere Ebenen anzeigen, indem Sie auf das Ordnersymbol klicken, einen Unterordner auswählen und dann auf das Häkchen klicken, um ihn auszuwählen.
+**Ordner/** PfadDer Name des angezeigten Ordners hängt von der ausgewählten Konfiguration ab. Sie können niedrigere Ebenen anzeigen, indem Sie auf das Ordnersymbol klicken, einen Unterordner auswählen und dann auf das Häkchen klicken, um ihn auszuwählen.
 
 Wenn Sie ein Keyword eingeben und einen Ordner auswählen, durchsucht AEM diesen Ordner und die zugehörigen Unterordner. Wenn Sie jedoch bei der Suche keine Keywords eingeben, wird durch die Auswahl des Ordners das Asset nur in diesem Ordner angezeigt und nicht in Unterordnern.
 
@@ -386,15 +386,15 @@ Standardmäßig durchsucht AEM den ausgewählten Ordner und alle Unterordner.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
-**Asset** -Typ Wählen Sie Scene7, um Scene7-Inhalte zu durchsuchen. Diese Option ist nur verfügbar, wenn Scene7 konfiguriert wurde.
+**Typ von** AssetSelect Scene7, um Scene7-Inhalte zu durchsuchen. Diese Option ist nur verfügbar, wenn Scene7 konfiguriert wurde.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Konfiguration** Wenn in Cloud Services mehr als eine Scene7-Konfiguration definiert ist, können Sie diese hier auswählen. Der Ordner ändert sich anhand der von Ihnen ausgewählten Konfiguration.
+**** ConfigurationWenn Sie mehr als eine Scene7-Konfiguration in Cloud Services definiert haben, können Sie diese hier auswählen. Der Ordner ändert sich anhand der von Ihnen ausgewählten Konfiguration.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Asset-Typ** Im Scene7-Browser können Sie die Ergebnisse filtern, um Folgendes einzuschließen: Bilder, Vorlagen, Videos und adaptive Videosets. Wenn Sie keinen Asset-Typ auswählen, durchsucht AEM standardmäßig alle Asset-Typen.
+**Asset-** TypIm Scene7-Browser können Sie die Ergebnisse filtern, um Folgendes einzuschließen: Bilder, Vorlagen, Videos und adaptive Videosets. Wenn Sie keinen Asset-Typ auswählen, durchsucht AEM standardmäßig alle Asset-Typen.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
