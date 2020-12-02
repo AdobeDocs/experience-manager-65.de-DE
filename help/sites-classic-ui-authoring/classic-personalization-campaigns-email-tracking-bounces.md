@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 87%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 
 >[!NOTE]
 >
->Adobe plant nicht, die Verfolgung von durch den AEM SMTP-Dienst gesendeten/abgeschnittenen E-Mails weiter zu verbessern.
+>Die Adobe plant nicht, die Verfolgung von E-Mails, die von AEM SMTP-Dienst geöffnet/abgeschnitten werden, weiter zu verbessern.
 >
->Es wird empfohlen, Adobe Campaign und seine AEM-Integration [zu nutzen](/help/sites-administering/campaign.md).
+>Die Empfehlung lautet: [Leverage-Adobe Campaign und dessen AEM Integration](/help/sites-administering/campaign.md).
 
 Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird. Der Standardwert für fehlgeschlagene Zustellversuche beträgt 3, er kann jedoch angepasst werden.
 
@@ -51,7 +54,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    **Eigenschaften der POP3-Konfiguration:**
 
-   `pop3.leave.on.server`: Definiert, ob Meldungen auf dem Server bleiben sollen. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Der Standardwert ist „true“.
+   `pop3.leave.on.server`: Definiert, ob Meldungen auf dem Server bleiben sollen oder nicht. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Standardwert ist „true“.
 
    **POP3-Beispiele:**
 
@@ -65,7 +68,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    `imap.flag.SEEN`:Wählen Sie „false“ für eine neue/nicht gelesene Nachricht und „true“ für bereits gelesene Nachrichten
 
-   See [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) for the full list of flags.
+   Die vollständige Liste der Flags finden Sie unter [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
 
    **IMAP-Beispiele:**
 
@@ -76,13 +79,13 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
 1. Speichern Sie die Konfiguration.
 
-## Konfigurieren der Newsletter-Dienstkomponente {#configuring-the-newsletter-service-component}
+## Konfigurieren der Newsletter-Dienstkomponente  {#configuring-the-newsletter-service-component}
 
 Nachdem Sie den Feed Importer konfiguriert haben, müssen Sie die Absenderadresse und den Zähler für nicht erfolgreiche Zustellversuche konfigurieren.
 
 So konfigurieren Sie den Newsletter-Dienst:
 
-1. In the OSGi console at `<host>:<port>/system/console/configMgr` and navigate to **MCM Newsletter**.
+1. Navigieren Sie in der OSGi-Konsole unter `<host>:<port>/system/console/configMgr` zu **MCM-Newsletter**.
 
 1. Konfigurieren Sie den Dienst und speichern Sie anschließend die Änderungen.
 
