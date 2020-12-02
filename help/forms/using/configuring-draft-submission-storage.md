@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 89%
 
 ---
 
 
 # Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen {#configuring-storage-services-for-drafts-and-submissions}
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Mit AEM Forms können Sie speichern:
 
@@ -36,13 +39,13 @@ Neben dem oben erwähnten Standardverfahren steht als Alternative eine Implement
 >
 >Weitere Informationen finden Sie unter [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
 
-## Konfigurieren von Forms Portal-Diensten für Entwürfe und Übermittlungen {#configuring-forms-portal-drafts-and-submissions-services}
+## Konfigurieren von Forms Portal-Diensten für Entwürfe und Übermittlungen  {#configuring-forms-portal-drafts-and-submissions-services}
 
-In the AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`), click to open **Forms Portal Draft and Submission Configuration** in edit mode.
+Klicken Sie in der AEM Web-Konsolenkonfiguration ( `https://[host]:'port'/system/console/configMgr`) auf , um **Forms Portal Draft and Submission Configuration** im Bearbeitungsmodus zu öffnen.
 
 Geben Sie wie unten beschrieben die Werte für die Eigenschaften an wie für Ihre Zwecke benötigt:
 
-### Standardmäßige Dienste zum Speichern der Daten in der Veröffentlichungsinstanz {#out-of-the-box-services-to-store-data-on-publish-instance}
+### Standardmäßige Dienste zum Speichern der Daten in der Veröffentlichungsinstanz  {#out-of-the-box-services-to-store-data-on-publish-instance}
 
 Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
 
@@ -71,7 +74,7 @@ Daten werden auf die konfigurierte Autoreninstanz zurückrepliziert.
  </tbody>
 </table>
 
-### Standardmäßige Dienste zum Speichern der Daten in der Fernverarbeitungsinstanz {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
+### Standardmäßige Dienste zum Speichern der Daten in der Fernverarbeitungsinstanz  {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
 
 Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
 
@@ -102,9 +105,9 @@ Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
 
 Geben Sie außer der oben angegebenen Konfiguration Informationen über die konfigurierte Fernverarbeitungsinstanz an.
 
-In the AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`), click to open **AEM DS Settings Service** in edit mode. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
+Klicken Sie in der AEM Web-Konsolenkonfiguration ( `https://[host]:'port'/system/console/configMgr`) auf , um **AEM DS-Einstellungsdienst** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
 
 >[!NOTE]
 >
->Eine Beispielimplementierung für die Speichern von Benutzerdaten in einer Datenbank wird ebenfalls bereitgestellt. To understand how to configure data and metadata services to store user data in an external database, see [Sample for integrating drafts &amp; submissions component with database](/help/forms/using/integrate-draft-submission-database.md).
+>Eine Beispielimplementierung für die Speichern von Benutzerdaten in einer Datenbank wird ebenfalls bereitgestellt. Informationen zum Konfigurieren von Daten- und Metadatendiensten zum Speichern von Benutzerdaten in einer externen Datenbank finden Sie unter [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
 
