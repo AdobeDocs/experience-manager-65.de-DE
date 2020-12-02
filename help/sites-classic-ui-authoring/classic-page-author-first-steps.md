@@ -44,7 +44,7 @@ Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-classic-
 
 Bei vielen Aktionen, wie beim Bearbeiten, müssen Sie [eine Seite öffnen](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
-### Bearbeiten einer Seite {#editing-a-page}
+### Bearbeiten einer Seite  {#editing-a-page}
 
 Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, haben Sie folgende Möglichkeiten für die [Bearbeitung einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md):
 
@@ -58,11 +58,11 @@ Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder
 * [Sperren einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Entsperren einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### Veröffentlichen einer Seite {#publishing-a-page}
+### Veröffentlichen einer Seite  {#publishing-a-page}
 
 Wenn Sie die Bearbeitung der Seite abgeschlossen haben, möchten Sie [den Inhalt sicherlich veröffentlichen (bzw. aktivieren)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10), damit er für Besucher Ihrer Website verfügbar ist.
 
-## Weitere Aktionen {#further-actions}
+## Weitere Aktionen  {#further-actions}
 
 Neben den allgemeinen Schritten stehen bei der Bearbeitung viele weitere Aktionen zur Verfügung. 
 
@@ -74,7 +74,7 @@ Gelegentlich bietet es sich an, [eine Seite zu kopieren](/help/sites-classic-ui-
 
 [Für das Verschieben und das Umbenennen von Seiten verwenden Sie im Allgemeinen dieselbe Aktion.](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page)
 
-### Veröffentlichen einer Seite rückgängig machen {#unpublishing-a-page}
+### Veröffentlichen einer Seite rückgängig machen  {#unpublishing-a-page}
 
 Um zuvor veröffentlichte (oder aktivierte) Inhalte von Ihrer öffentlichen Website wieder zu entfernen, [machen Sie die Veröffentlichung rückgängig (bzw. deaktivieren Sie die Seite)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
@@ -82,14 +82,14 @@ Um zuvor veröffentlichte (oder aktivierte) Inhalte von Ihrer öffentlichen Webs
 
 Wenn eine Seite nicht mehr benötigt wird, [können Sie sie löschen](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#deleting-a-page).
 
-### Festlegen von Seiteneigenschaften {#setting-the-page-properties}
+### Festlegen von Seiteneigenschaften  {#setting-the-page-properties}
 
 Jede [Seite verfügt über Eigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md), die Sie definieren können, um damit ihre Verwendung zu bestimmen.
 
-### Erstellen einer Seitenversion {#creating-a-version-of-a-page}
+### Erstellen einer Seitenversion  {#creating-a-version-of-a-page}
 
 Sie können [eine Version einer Seite erstellen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) und dann bei Bedarf ihre [frühere Version wiederherstellen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
-## Weitere Informationen {#more-information}
+## Weitere Informationen  {#more-information}
 
 Unter [Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author.md) und [Arbeiten mit der Autorenumgebung](/help/sites-classic-ui-authoring/author-env.md) finden Sie weitere Informationen zur Bearbeitung.
