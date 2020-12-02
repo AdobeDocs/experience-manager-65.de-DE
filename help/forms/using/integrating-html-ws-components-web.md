@@ -20,9 +20,9 @@ ht-degree: 74%
 
 # Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung verwenden. In der folgenden Beispielimplementierung werden Komponenten aus einem AEM Forms Workspace-Dev-Paket verwendet, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten gezeigte Lösung an Ihre spezifischen Anforderungen an. The sample implementation reuses `UserInfo`, `FilterList`, and `TaskList`components inside a web portal.
+Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-reusable-components.md) in Ihrer eigenen Webanwendung verwenden. In der folgenden Beispielimplementierung werden Komponenten aus einem AEM Forms Workspace-Dev-Paket verwendet, das auf einer CRX™-Instanz installiert ist, um eine Webanwendung zu erstellen. Passen Sie die unten gezeigte Lösung an Ihre spezifischen Anforderungen an. Bei der Beispielimplementierung werden die Komponenten `UserInfo`, `FilterList` und `TaskList`innerhalb eines Webportals wiederverwendet.
 
-1. Log into CRXDE Lite environment at `https://'[server]:[port]'/lc/crx/de/`. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
+1. Melden Sie sich bei der Umgebung CRXDE Lite bei `https://'[server]:[port]'/lc/crx/de/` an. Stellen Sie sicher, dass AEM Forms Workpace Dev-Paket installiert ist.
 1. Erstellen Sie einen Pfad `/apps/sampleApplication/wscomponents`.
 1. Kopieren Sie CSS, Bilder, js/libs, js/runtime und js/registry.js
 
@@ -43,9 +43,9 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
        });
    ```
 
-1. Create a node under /content by name `sampleApplication` and type `nt:unstructured`. In the properties of this node add `sling:resourceType` of type String and value `sampleApplication`. Fügen Sie der Zugriffsteuerungsliste dieses Knotens den Eintrag `PERM_WORKSPACE_USER` hinzu, um jcr:read-Zugriff zuzulassen. Also, in the Access Control List of `/apps/sampleApplication` add an entry for `PERM_WORKSPACE_USER` allowing jcr:read privileges.
-1. Aktualisieren Sie `/apps/sampleApplication/wscomponents/js/registry.js` die Pfade von `/lc/libs/ws/` zu `/lc/apps/sampleApplication/wscomponents/` für Vorlagenwerte.
-1. In your portal home page JSP file at `/apps/sampleApplication/GET.jsp`, add the following code to include the required components inside the portal.
+1. Erstellen Sie einen Knoten unter &quot;/content&quot;mit dem Namen `sampleApplication` und geben Sie `nt:unstructured` ein. Fügen Sie in den Eigenschaften dieses Knotens `sling:resourceType` des Typs String und des Werts `sampleApplication` hinzu. Fügen Sie der Zugriffsteuerungsliste dieses Knotens den Eintrag `PERM_WORKSPACE_USER` hinzu, um jcr:read-Zugriff zuzulassen. Fügen Sie außerdem in der Liste &quot;Zugriffskontrolle&quot;von `/apps/sampleApplication` einen Eintrag für `PERM_WORKSPACE_USER` hinzu, um jcr:read-Berechtigungen zuzulassen.
+1. Aktualisieren Sie in `/apps/sampleApplication/wscomponents/js/registry.js` Pfade für Vorlagenwerte von `/lc/libs/ws/` auf `/lc/apps/sampleApplication/wscomponents/`.
+1. Fügen Sie in der JSP-Datei Ihrer Portaldatei unter `/apps/sampleApplication/GET.jsp` den folgenden Code hinzu, um die erforderlichen Startseiten in das Portal einzuschließen.
 
    ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -82,7 +82,7 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
    });
    ```
 
-1. Ändern Sie das Portal-CSS, um das Layout, die Positionierung und den Stil der erforderlichen Komponenten im Portal zu konfigurieren. Beispiel: Sie möchten die Hintergrundfarbe Schwarz in diesem Portal behalten, um die Komponente userInfo gut sichtbar darzustellen. You can do this by changing background color in `/apps/sampleApplication/wscomponents/css/style.css` as follows:
+1. Ändern Sie das Portal-CSS, um das Layout, die Positionierung und den Stil der erforderlichen Komponenten im Portal zu konfigurieren. Beispiel: Sie möchten die Hintergrundfarbe Schwarz in diesem Portal behalten, um die Komponente userInfo gut sichtbar darzustellen. Dazu ändern Sie die Hintergrundfarbe in `/apps/sampleApplication/wscomponents/css/style.css` wie folgt:
 
    ```css
    body {
