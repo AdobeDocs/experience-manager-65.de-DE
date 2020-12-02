@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 82%
 
 ---
 
@@ -29,6 +32,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
    * `.core-wcm`: Die Standardkernkomponenten
    * `.core-wcm-form`: Die Kernkomponenten für die Formularübermittlung
+
    Choose `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
@@ -36,7 +40,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 1. Beachten Sie, dass alle Kernkomponenten mit **v1** benannt sind, was bedeutet, dass dies die erste Version dieser Kernkomponente ist. Künftig werden regelmäßig Versionen veröffentlicht, die mit AEM kompatibel sind und ein einfaches Upgrade ermöglichen, sodass Sie die neuesten Funktionen nutzen können.
 1. Klicken Sie auf **Text (v1)**.
 
-   See that the **Resource Type** of the component is `/apps/core/wcm/components/text/v1/text`. Core components are found under `/apps/core/wcm/components` and are versioned per component.
+   Beachten Sie, dass der **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text` ist. Hauptkomponenten befinden sich unter `/apps/core/wcm/components` und sind pro Komponente versioniert.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -45,11 +49,11 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Wechseln Sie zur Komponentenkonsole zurück. Filtern Sie nach der Gruppe **We.Retail** und wählen Sie die **Textkomponente** aus.
-1. See that the **Resource Type** points to a component as expected under `/apps/weretail` but the **Resource Super Type** points back to the core component `/apps/core/wcm/components/text/v1/text`.
+1. Beachten Sie, dass der **Ressourcentyp** auf eine Komponente verweist, wie unter `/apps/weretail` erwartet, aber der **Resource Super Type** auf die Core-Komponente `/apps/core/wcm/components/text/v1/text` verweist.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Click the **Live Usage** tab to see on which pages this component is currently being used. Klicken Sie auf die erste **Dankeseite**, um die Seite zu bearbeiten.
+1. Klicken Sie auf die Registerkarte **Live Usage**, um zu sehen, auf welchen Seiten diese Komponente derzeit verwendet wird. Klicken Sie auf die erste **Dankeseite**, um die Seite zu bearbeiten.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -84,6 +88,6 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
+Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
 
-Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete details on editable templates.
+Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Ausführliche Informationen zu bearbeitbaren Vorlagen finden Sie im Authoring-Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder auf der Developer Dokument-Seite [Templates - Editable](/help/sites-developing/page-templates-editable.md).
