@@ -1,8 +1,8 @@
 ---
 title: Grundlegende Handhabung
 seo-title: Grundlegende Handhabung
-description: Überblick über die grundlegende Handhabung bei der Verwendung der AEM-Autorenumgebung. Als Grundlage wird die Websites-Konsole verwendet.
-seo-description: Überblick über die grundlegende Handhabung bei der Verwendung der AEM-Autorenumgebung. Als Grundlage wird die Websites-Konsole verwendet.
+description: Überblick über die grundlegende Handhabung bei der Verwendung der AEM-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
+seo-description: Überblick über die grundlegende Handhabung bei der Verwendung der AEM-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -19,11 +22,12 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 
 >[!NOTE]
 >
->* Diese Seite soll einen Überblick über die grundlegende Handhabung der AEM-Autorenumgebung geben. Als Grundlage wird die **Websites-Konsole** verwendet.
+>* Diese Seite soll einen Überblick über die grundlegende Handhabung der AEM-Autorenumgebung geben. Als Grundlage wird die **Sites-Konsole** verwendet.
    >
    >
 * Einige Funktionen stehen nicht in allen Konsolen zur Verfügung bzw. in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+
 >
 
 
@@ -79,7 +83,7 @@ Die Hauptkonsolen sind:
    <td>Mit der Konsole „Sites/Websites“ können Sie <a href="/help/sites-classic-ui-authoring/classic-page-author.md">Websites erstellen, anzeigen und verwalten</a>, die auf Ihrer AEM-Instanz ausgeführt werden. In diesen Konsolen können Sie Website-Seiten erstellen, kopieren und verschieben, Workflows starten und Seiten aktivieren (veröffentlichen). Sie können auch eine Seite zur Bearbeitung öffnen.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Workflows</strong></td>
+   <td><strong>Workflows  </strong></td>
    <td>Bei einem Workflow handelt es sich um eine definierte Abfolge von Schritten, die zum Ausführen einer bestimmten Aufgabe erforderlich sind. In vielen Fällen sind mehrere Personen an einer Aufgabe beteiligt und jede Person muss Ihren Schritt abschließen, bevor die Arbeit an die nächste Person weitergegeben wird. In der Konsole „Workflow“ können Sie Workflow-Modelle erstellen und Workflow-Instanzen verwalten, die ausgeführt werden. Siehe <a href="/help/sites-administering/workflows.md">Arbeiten mit Workflows</a>.<br /> </td>
   </tr>
  </tbody>
@@ -160,7 +164,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>Miniaturansicht</td>
+   <td>Miniaturansicht </td>
    <td>Zeigt eine Miniatur der Seite an.</td>
   </tr>
   <tr>
@@ -204,7 +208,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
    <td>Zeigt an, ob eine Seite gesperrt wurde und von welchem Benutzerkonto sie gesperrt wurde.</td>
   </tr>
   <tr>
-   <td>Live Copy</td>
+   <td>Live Copy </td>
    <td>Zeigt an, ob die Seite Teil einer Live Copy ist.</td>
   </tr>
  </tbody>
