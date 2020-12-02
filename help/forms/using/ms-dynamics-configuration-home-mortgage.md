@@ -20,11 +20,11 @@ ht-degree: 75%
 
 In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 Microsoft® Dynamics 365 ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Unternehmenslösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Interessenten, Chancen und Fällen bietet.
 
-AEM Forms provides a cloud service to integrate Dynamics 365 with [Forms Data Integration](/help/forms/using/data-integration.md) module. Bevor Sie die exemplarische Vorgehensweise für die Hypothekenanwendung mit dem Microsoft® Dynamics-Szenario verwenden können, müssen Sie Microsoft® Dynamics 365 für die Verwendung mit der Referenz-Website We.Finance konfigurieren.
+AEM Forms bietet einen Cloud-Dienst zur Integration von Dynamics 365 mit dem Modul [Forms Data Integration](/help/forms/using/data-integration.md). Bevor Sie die exemplarische Vorgehensweise für die Hypothekenanwendung mit dem Microsoft® Dynamics-Szenario verwenden können, müssen Sie Microsoft® Dynamics 365 für die Verwendung mit der Referenz-Website We.Finance konfigurieren.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -73,5 +73,5 @@ Bevor Sie mit dem Einrichten und Konfigurieren von Dynamics 365 beginnen, stell
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importieren Sie das Paket in Ihre Microsoft® Dynamics-Instanz. In your Microsoft® Dynamics instance, go to **Sales** > **Contacts** and then tap **Import Data**.
+   1. Importieren Sie das Paket in Ihre Microsoft® Dynamics-Instanz. Wechseln Sie in Ihrer Microsoft® Dynamics-Instanz zu **Sales** > **Contacts** und tippen Sie dann auf **Daten importieren**.
 
