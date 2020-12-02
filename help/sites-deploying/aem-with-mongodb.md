@@ -12,6 +12,9 @@ discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56006a1f49e4d357cd7ee44a4a1dd1af7189e70a
+workflow-type: tm+mt
+source-wordcount: '6513'
+ht-degree: 93%
 
 ---
 
@@ -51,7 +54,7 @@ Die AEM-Autoren sind mit den `mongod`-Instanzen verbunden, wobei jeweils eine Ve
 
 Bei dieser Bereitstellung sind alle Komponenten für eine erfolgreiche Implementierung erforderlich. Fehlt nur eine Komponente, ist die Implementierung nicht funktionsfähig.
 
-### Betriebssysteme {#operating-systems}
+### Betriebssysteme  {#operating-systems}
 
 Eine Aufstellung der unterstützten Betriebssysteme für AEM 6 finden Sie auf der Seite [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
@@ -65,7 +68,7 @@ In virtualisierten Umgebungen erfordert MongoDB bestimmte I/O- und VM-Konfigurat
 
 ## Hardwarehinweise {#hardware-considerations}
 
-### Speicher {#storage}
+### Speicherung {#storage}
 
 Um den Lese- und Schreibdurchsatz für eine optimale Leistung zu erreichen, ohne hierzu auf eine vorzeitige horizontale Skalierung angewiesen zu sein, setzt MongoDB im Allgemeinen SSD-Speicher oder Speicher mit einer SSD-ähnlichen Leistung voraus.
 
@@ -88,9 +91,9 @@ Obwohl dieselben Beschränkungen für das WiredTiger-Speichermodul in MongoDB 3
 >
 >Adobe empfiehlt das WiredTiger-Speichermodul für AEM 6.1-Bereitstellungen mit MongoDB 3.0.
 
-### Datenspeicher {#data-store}
+### Datenspeicher  {#data-store}
 
-Aufgrund der Beschränkungen des MongoDB-Workingsets wird empfohlen, den Datenspeicher unabhängig von MongoDB zu verwalten. In den meisten Umgebungen sollte ein für alle AEM-Instanzen verfügbarer `FileDataStore` mit einem NAS verwendet werden. For situations where the Amazon Web Services are used, there is also an `S3 DataStore`. Wenn der Datenspeicher dennoch in MongoDB verwaltet wird, sollten die Größe des Datenspeichers zur Datenbankgesamtgröße hinzugerechnet und die Workingset-Berechnungen entsprechend angepasst werden. Dies bedeutet unter Umständen, dass deutlich mehr RAM bereitgestellt werden muss, um eine Leistung ohne Seitenfehler sicherzustellen.
+Aufgrund der Beschränkungen des MongoDB-Workingsets wird empfohlen, den Datenspeicher unabhängig von MongoDB zu verwalten. In den meisten Umgebungen sollte ein für alle AEM-Instanzen verfügbarer `FileDataStore` mit einem NAS verwendet werden. Für Situationen, in denen die Amazon Web Services verwendet werden, gibt es auch ein `S3 DataStore`. Wenn der Datenspeicher dennoch in MongoDB verwaltet wird, sollten die Größe des Datenspeichers zur Datenbankgesamtgröße hinzugerechnet und die Workingset-Berechnungen entsprechend angepasst werden. Dies bedeutet unter Umständen, dass deutlich mehr RAM bereitgestellt werden muss, um eine Leistung ohne Seitenfehler sicherzustellen.
 
 ## Überwachung {#monitoring}
 
@@ -120,17 +123,17 @@ Weitere Informationen zu MongoDB Cloud Manager finden Sie in der [MongoDB-Dokume
 
 MongoDB Ops Manager entspricht als Software MongoDB Cloud Manager. Im Anschluss an die Registrierung kann Ops Manager heruntergeladen und lokal in einem privaten Datenzentrum oder auf einem beliebigen Laptop oder Desktoprechner installiert werden. Zum Speichern von Daten wird eine lokale MongoDB-Datenbank verwendet; die Kommunikation funktioniert genauso wie zwischen Cloud Manager und verwalteten Servern. Im Falle von Sicherheitsrichtlinien, die die Nutzung eines Überwachungsagenten untersagen, sollten Sie MongoDB Ops Manager verwenden.
 
-### Überwachung von Betriebssystemen {#operating-system-monitoring}
+### Überwachung von Betriebssystemen  {#operating-system-monitoring}
 
 Eine Überwachung auf Betriebssystemebene ist erforderlich, um einen AEM-MongoDB-Cluster auszuführen.
 
 Ganglia ist ein gutes Beispiel für ein solches System. Dieses Tool gibt einen Überblick über das Spektrum und die Details der erforderlichen Informationen, die über grundlegende Integritätsmetriken wie CPU, durchschnittliche Auslastung und freier Festplattenspeicher hinausgehen. Zur Problemdiagnose sind Informationen auf geringerer Ebene wie Entropiepool-Level, I/O-Wartezeiten der CPU, Sockets im FIN_WAIT2-Status erforderlich.
 
-### Log-Aggregation {#log-aggregation}
+### Log-Aggregation  {#log-aggregation}
 
 Bei einem Cluster mehrerer Server gehört die zentrale Aggregation von Protokollen, auch als Log-Aggregation bezeichnet, zu den Anforderungen eines Produktionssystems. Software wie Splunk unterstützt die Log-Aggregation und ermöglicht es Teams, Verhaltensmuster der Anwendung zu analysieren, ohne Protokolle manuell zu sammeln.
 
-## Checklisten {#checklists}
+## Checklisten  {#checklists}
 
 In diesem Abschnitt werden die verschiedenen Schritte behandelt, die Sie ausführen sollten, um sicherzustellen, dass Ihre AEM- und MongoDB-Bereitstellungen ordnungsgemäß eingerichtet sind, bevor Sie ein Projekt implementieren.
 
@@ -178,18 +181,21 @@ wobei:
 Der MongoDB-Server, zu dem AEM eine Verbindung herstellen muss. Verbindungen werden zu allen bekannten Mitgliedern der standardmäßigen Replikatgruppe hergestellt. Wenn MongoDB Cloud Manager verwendet wird, ist die Serversicherheit aktiviert. Die Verbindungszeichenfolge muss daher einen geeigneten Benutzernamen und ein passendes Kennwort enthalten. Nicht-Enterprise-Versionen von MongoDB unterstützen ausschließlich die Authentifizierung per Benutzername und Kennwort. Weitere Informationen zur Syntax der Verbindungszeichenfolge finden Sie in der [Dokumentation](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-Der Name der Datenbank. Der Standardwert für AEM lautet `aem-author`.
+Der Name der Datenbank. Die Standardeinstellung für AEM ist 
+`aem-author`.
 
 * `customBlobStore`
-Wenn Binärdateien im Zuge der Bereitstellung in der Datenbank gespeichert werden, werden diese Teil des Workingsets. For that reason it is advised not to store binaries within MongoDB, perfering an alternative datastore like a `FileSystem` datastore on a NAS.
+Wenn Binärdateien im Zuge der Bereitstellung in der Datenbank gespeichert werden, werden diese Teil des Workingsets. Aus diesem Grund wird empfohlen, keine Binärdateien in MongoDB zu speichern und einen alternativen Datenspeicher wie einen 
+`FileSystem` datastore auf einem NAS.
 
 * `cache`
-Die Cachegröße in Megabytes. Dieser Wert ist über diverse im `DocumentNodeStore` verwendete Cache-Speicher verteilt. Die Standardgröße ist 256 MB. Allerdings profitiert die Oak-Leseleistung von einem größeren Cache.
+Die Cachegröße in Megabytes. Dies wird auf verschiedene Caches verteilt, die im 
+`DocumentNodeStore`. Die Standardgröße ist 256 MB. Allerdings profitiert die Oak-Leseleistung von einem größeren Cache.
 
 * `blobCacheSize`
 Häufig verwendete Blobs können von AEM im Cache gespeichert werden. So wird vermieden, dass sie erneut aus dem Datenspeicher abgerufen werden. Dies wirkt sich deutlich auf die Leistung aus, insbesondere beim Speichern von Blobs in der MongoDB-Datenbank. Alle dateisystembasierten Datenspeicher profitieren von einem Datenträgercache auf Betriebssystemebene.
 
-#### Datenspeicherkonfiguration {#data-store-configuration}
+#### Datenspeicherkonfiguration  {#data-store-configuration}
 
 Der Datenspeicher dient zum Speichern von Dateien, die größer sind als der Schwellenwert. Unterhalb dieses Schwellenwerts werden Dateien als Eigenschaften im Knotenspeicher „Dokument“ gespeichert. Wenn der `MongoBlobStore` verwendet wird, wird in MongoDB eine dedizierte Sammlung zum Speichern der Blobs erstellt. Diese Sammlung trägt zum Workingset der `mongod`-Instanz bei und setzt eine höhere RAM-Menge für die `mongod`-Instanz voraus, um Leistungsprobleme zu vermeiden. Daher wird für Konfigurationen empfohlen, in Produktionsbereitstellungen auf `MongoBlobStore` zu verzichten und einen `FileDataStore` einzusetzen, der von einem von allen AEM-Instanzen genutzten NAS gestützt wird. Da der Cache auf Betriebssystemebene eine effiziente Verwaltung von Dateien ermöglicht, sollte die Mindestgröße einer Datei auf der Festplatte auf einen Wert eingestellt werden, der der Blockgröße der Festplatte nahekommt. So kann das Dateisystem effizient verwendet werden und das Workingset der `mongod`-Instanz wird nicht durch eine große Anzahl kleiner Dokumente übermäßig belastet.
 
@@ -207,18 +213,21 @@ cacheSizeInMB=128
 wobei:
 
 * `minRecordLength`
-Größe in Byte. Kleinere oder diesem Wert entsprechende Binärdateien werden im Knotenspeicher „Dokument“ gespeichert. Anstelle der ID des Blobs wird der Inhalt der Binärdatei gespeichert. Bei Binärdateien, die größer sind als dieser Wert, wird die ID der Binärdatei als Eigenschaft des Dokuments in der Knotensammlung gespeichert und der Hauptteil der Binärdatei wird im `FileDataStore` auf der Festplatte gespeichert. 4096 Byte entspricht einer typischen Dateisystem-Blockgröße.
+Größe in Byte. Kleinere oder diesem Wert entsprechende Binärdateien werden im Knotenspeicher „Dokument“ gespeichert. Anstelle der ID des Blobs wird der Inhalt der Binärdatei gespeichert. Bei Binärdateien, die größer als diese sind, wird die ID der Binärdatei als Eigenschaft des Dokuments in der Knotensammlung gespeichert, und der Hauptteil der Binärdatei wird im 
+`FileDataStore` auf der Festplatte. 4096 Byte entspricht einer typischen Dateisystem-Blockgröße.
 
 * `path`
-Der Pfad zum Stamm des Datenspeichers. Bei einer MongoMK-Bereitstellung muss es sich hier um ein freigegebenes Dateisystem handeln, das für alle AEM-Instanzen verfügbar ist. Normalerweise wird ein Network Attached Storage(NAS)-Server verwendet. Für Cloudbereitstellungen wie Amazon Web Services steht zudem der `S3DataFileStore` zur Verfügung.
+Der Pfad zum Stamm des Datenspeichers. Bei einer MongoMK-Bereitstellung muss es sich hier um ein freigegebenes Dateisystem handeln, das für alle AEM-Instanzen verfügbar ist. Normalerweise wird ein Network Attached Storage(NAS)-Server verwendet. Bei Cloud-Bereitstellungen wie Amazon Web Services wird der 
+`S3DataFileStore` ist auch verfügbar.
 
 * `cacheSizeInMB`
-Die Gesamtgröße des Binärdatencache in Megabyte. Damit werden Binärdateien mit einem Wert, der unterhalb der Einstellung `maxCacheBinarySize` liegt, im Cache gespeichert.
+Die Gesamtgröße des Binärdatencache in Megabyte. Es wird verwendet, um Binärdateien unter dem Wert 
+`maxCacheBinarySize` einstellen.
 
 * `maxCachedBinarySize`
 Die maximale Größe in Byte der im Binärdatencache gespeicherten Binärdatei. Im Falle eines dateisystembasierten Datenspeichers sollten keine hohen Werten für den Datenspeichercache verwendet werden, da die Binärdateien bereits vom Betriebssystem im Cache gespeichert wurden.
 
-#### Deaktivieren von Abfragehinweisen {#disabling-the-query-hint}
+#### Deaktivieren von Abfragehinweisen  {#disabling-the-query-hint}
 
 Es wird empfohlen, den mit allen Abfragen gesendeten Abfragehinweis zu deaktivieren, indem Sie die Eigenschaft
 
@@ -228,11 +237,11 @@ beim AEM-Start hinzufügen. Auf diese Weise führt MongoDB basierend auf interne
 
 Wenn die Abfragehinweise nicht deaktiviert werden, bleibt jedwede AEM-Leistungsoptimierung ohne Wirkung.
 
-#### Aktivieren des persistenten Cache für MongoMK {#enable-persistent-cache-for-mongomk}
+#### Aktivieren des persistenten Cache für MongoMK  {#enable-persistent-cache-for-mongomk}
 
 Es wird empfohlen, eine Konfiguration mit persistentem Cache für MongoDB-Bereitstellungen zu aktivieren, um die Geschwindigkeit für Umgebungen mit höherer I/O-Leseleitung zu maximieren. Weitere Informationen finden Sie in der [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
 
-## MongoDB-Betriebssystemoptimierungen {#mongodb-operating-system-optimizations}
+## MongoDB-Betriebssystemoptimierungen  {#mongodb-operating-system-optimizations}
 
 ### Betriebssystemunterstützung {#operating-system-support}
 
@@ -272,11 +281,11 @@ MongoDB ist für diverse Betriebssysteme verfügbar, darunter eine Vielzahl von 
 
 * Deaktivieren Sie gegebenenfalls die Aktualisierung des NTFS-Attributs „Last Access Time“. Dies entspricht der Deaktivierung von atime auf Unix-artigen Systemen.
 
-### WiredTiger {#wiredtiger}
+### WiredTiger  {#wiredtiger}
 
 Ab MongoDB 3.2 ist WiredTiger das standardmäßige Speichermodul für MongoDB. Dieses Modul bietet einige robuste und skalierbare Funktionen, durch die es für allgemeine Datenbank-Workloads deutlich besser geeignet ist. Diese Funktionen werden in den folgenden Abschnitten beschrieben.
 
-#### Parallelität auf Dokumentebene (Document Level Concurrency) {#document-level-concurrency}
+#### Parallelität auf Dokumentebene (Document Level Concurrency)  {#document-level-concurrency}
 
 WiredTiger steuert die Parallelität von Schreibvorgängen auf Dokumentebene. So können mehrere Clients gleichzeitig verschiedene Dokumente einer Sammlung ändern.
 
@@ -284,7 +293,7 @@ Für die meisten Lese- und Schreibvorgänge nutzt WiredTiger vollständige Paral
 
 Für einige andere Vorgänge, wie das Löschen einer Sammlung, ist weiterhin eine exklusive Datenbanksperrung erforderlich.
 
-#### Snapshots und Checkpoints {#snapshots-and-checkpoints}
+#### Snapshots und Checkpoints  {#snapshots-and-checkpoints}
 
 WiredTiger nutzt MultiVersion Concurrency Control (MVCC). Beim Start eines Vorgangs erstellt WiredTiger eine Momentaufnahme (Point-in-Time-Snapshot) der Daten für die Transaktion. Ein Snapshot enthält eine konsistente Darstellung der In-Memory-Daten.
 
@@ -298,7 +307,7 @@ Der neue Checkpoint wird verfügbar und permanent, sobald die Metadatentabelle v
 
 Wenn WiredTiger ohne [Journal](https://docs.mongodb.com/manual/reference/glossary/#term-durable) verwendet wird, kann MongoDB den letzten Checkpoint wiederherstellen. Um jedoch die Änderungen wiederherzustellen, die nach dem letzten Checkpoint durchgeführt wurden, müssen Sie mit [Journal](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-journal) arbeiten.
 
-#### Journal {#journal}
+#### Journal  {#journal}
 
 WiredTiger verwendet ein Write-Ahead-Transaktionsprotokoll in Kombination mit [Checkpoints](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-checkpoints), um die Dauerhaftigkeit der Daten sicherzustellen.
 
@@ -306,7 +315,7 @@ Das WiredTiger-Journal speichert dauerhaft alle zwischen Checkpoints durchgefüh
 
 Das WiredTiger-Journal wird mit der Datenkomprimierungsbibliothek [snappy](https://docs.mongodb.com/manual/core/journaling/#journal-process) komprimiert. Einen anderen Komprimierungsalgorithmus oder keine Komprimierung können Sie mit der Einstellung [storage.wiredTiger.engineConfig.journalCompressor](https://docs.mongodb.com/manual/reference/configuration-options/#storage.wiredTiger.engineConfig.journalCompressor) festlegen.
 
-For more information see: [Journaling with WiredTiger](https://docs.mongodb.com/manual/core/journaling/#journaling-wiredtiger).
+Weitere Informationen finden Sie unter: [Journaling with WiredTiger](https://docs.mongodb.com/manual/core/journaling/#journaling-wiredtiger).
 
 >[!NOTE]
 >
@@ -375,7 +384,7 @@ Diese Richtlinie ordnet Speicher mittels Roundrobin-Methode über alle CPU-Knote
 
 ### NUMA-Probleme {#numa-issues}
 
-If the `mongod` process is started from a location other than the `/etc/init.d` folder, it is probable that it will not be started with the correct NUMA policy. Je nach Standardrichtlinie können Probleme entstehen. This is because the various Linux package manager installers for MongoDB also install a service with configuration files located in `/etc/init.d` which perform the step outlined above. If you install and run MongoDB directly from an archive ( `.tar.gz`) then you will need to manually run mongod under the `numactl` process.
+Wenn der `mongod`-Prozess von einem anderen Speicherort als dem `/etc/init.d`-Ordner gestartet wird, wird er wahrscheinlich nicht mit der richtigen NUMA-Richtlinie gestartet. Je nach Standardrichtlinie können Probleme entstehen. Das liegt daran, dass die verschiedenen Linux Package Manager-Installationsprogramme für MongoDB auch einen Dienst mit Konfigurationsdateien in `/etc/init.d` installieren, die den oben beschriebenen Schritt ausführen. Wenn Sie MongoDB direkt aus einem Archiv ( `.tar.gz`) installieren und ausführen, müssen Sie Mongod manuell unter dem `numactl`-Prozess ausführen.
 
 >[!NOTE]
 >
@@ -394,7 +403,7 @@ Ordnen Sie nur den aufgelisteten Knoten zu. Mongod ordnet keinen Speicher auf au
 Führen Sie nur auf den Knoten aus. Mongod wird nur auf den aufgeführten Knoten ausgeführt und nutzt nur den auf diesen Knoten verfügbaren Speicher.
 
 * `-physcpubind=<nodes>`
-Nur Ausführung auf aufgelisteten CPUs (Kerne). Mongod wird nur auf den aufgeführten CPUs ausgeführt und nutzt nur den auf diesen CPUs verfügbaren Speicher.
+Führen Sie nur auf aufgelisteten CPUs (Kerne) aus. Mongod wird nur auf den aufgeführten CPUs ausgeführt und nutzt nur den auf diesen CPUs verfügbaren Speicher.
 
 * `--localalloc`
 Speicher wird immer auf dem aktuellen Knoten zugewiesen, aber es werden alle Knoten verwendet, auf denen der Thread ausgeführt wird. Wenn ein Thread die Zuordnung ausführt, wird nur der Speicher verwendet, der der CPU zur Verfügung steht.
@@ -420,9 +429,9 @@ Lesen Sie voraus, damit unnötige Blöcke nicht von der Festplatte gelesen werde
 
 #### Kernel-Mindestversionen {#minimum-kernel-versions}
 
-* **2.6.23** für `ext4` Dateisysteme
+* **2.6.23** für  `ext4` Dateisysteme
 
-* **2.6.25** für `xfs` Dateisysteme
+* **2.6.25** für  `xfs` Dateisysteme
 
 #### Empfohlene Einstellungen für Datenbankfestplatten {#recommended-settings-for-database-disks}
 
@@ -456,7 +465,7 @@ Es wird ein Wert von 32 für die Festplatten empfohlen, von denen MongoDB-Daten
 sudo blockdev --setra <value> <device>
 ```
 
-#### Aktivieren von NTP {#enable-ntp}
+#### Aktivieren von NTP  {#enable-ntp}
 
 Stellen Sie sicher, dass NTP auf dem Rechner installiert und aktiv ist, auf dem die MongoDB-Datenbank gehostet wird. Beispielsweise können Sie NTP über Yum Package Manager auf einem CentOS-Rechner installieren:
 
@@ -466,13 +475,13 @@ sudo yum install ntp
 
 Nachdem der NTP-Daemon installiert und erfolgreich gestartet wurde, können Sie die Drift-Datei auf den Zeitversatz Ihres Servers überprüfen.
 
-#### Deaktivieren von THP {#disable-transparent-huge-pages}
+#### Deaktivieren von THP  {#disable-transparent-huge-pages}
 
 Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP (Transparent Huge Pages). Es wird empfohlen, diesen zu deaktivieren, wenn Sie das Betriebssystem für Datenbankworkloads einsetzen.
 
 Eine Deaktivierung ist mithilfe der folgenden Vorgehensweise möglich:
 
-1. Open the `/etc/grub.conf` file in the text editor of your choice.
+1. Öffnen Sie die Datei `/etc/grub.conf` im Texteditor Ihrer Wahl.
 1. Fügen Sie der Datei „grub.conf“ die folgende Zeile hinzu:
 
    ```xml
@@ -497,7 +506,7 @@ Eine Deaktivierung ist mithilfe der folgenden Vorgehensweise möglich:
 
 #### Deaktivieren von NUMA {#disable-numa}
 
-In most installations where NUMA is enabled, the MongoDB daemon will disable it automatically if it is run as a service from the `/etc/init.d` folder.
+Bei den meisten Installationen, bei denen NUMA aktiviert ist, deaktiviert der MongoDB-Daemon ihn automatisch, wenn er als Dienst aus dem Ordner `/etc/init.d` ausgeführt wird.
 
 Sollte dies nicht der Fall sein, können Sie NUMA prozessweise deaktivieren. Zum Deaktivieren führen Sie diese Befehle aus:
 
@@ -505,7 +514,7 @@ Sollte dies nicht der Fall sein, können Sie NUMA prozessweise deaktivieren. Zum
 numactl --interleave=all <path_to_process>
 ```
 
-Where `<path_to_process>` is the path to the mongod process.
+Dabei ist `<path_to_process>` der Pfad zum Mongod-Prozess.
 
 Deaktivieren Sie dann den „zone_reclaim“-Modus, indem Sie Folgendes ausführen:
 
@@ -519,7 +528,7 @@ Linux ermöglicht mit dem Befehl `ulimit` eine konfigurierbare Steuerung der Res
 
 Sie sollten „ulimit“ für den mongod-Prozess gemäß den [MongoDB-empfohlenen ulimit-Einstellungen](https://docs.mongodb.org/manual/reference/ulimit/#recommended-ulimit-settings) konfigurieren.
 
-#### Testen der MongoDB-I/O-Leistung {#test-mongodb-i-o-performance}
+#### Testen der MongoDB-I/O-Leistung  {#test-mongodb-i-o-performance}
 
 MongoDB bietet ein Tool namens `mongoperf`, das zum Testen der I/O-Leistung entwickelt wurde. Sie sollten damit die Leistung aller MongoDB-Instanzen in Ihrer Infrastruktur testen.
 
@@ -563,7 +572,7 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 
 Die gewünschte Ausgabe sollte 12 MB pro Sekunde und ca. 3.000 IOPS erreichen, bei geringer Variation zwischen der Anzahl der Threads.
 
-## Schritte für virtualisierte Umgebungen {#steps-for-virtualised-environments}
+## Schritte für virtualisierte Umgebungen  {#steps-for-virtualised-environments}
 
 ### VMware {#vmware}
 
@@ -574,7 +583,7 @@ Wenn Sie virtualisierte Umgebungen mithilfe von VMware ESX verwalten und bereits
 1. Weisen Sie dem `mongod`-Prozess über Storage I/O Control genügend I/O-Kapazität zu.
 1. Garantieren Sie den MongoDB-Hostmaschinen CPU-Ressourcen, indem Sie die Option für die [CPU-Reservierung](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html) einstellen.
 
-1. Ziehen Sie die Verwendung von Paravirtual-I/O-Treibern in Betracht. Weitere Informationen dazu finden Sie in diesem [Knowledgebase-Artikel](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).
+1. Ziehen Sie die Verwendung von Paravirtual-I/O-Treibern in Betracht. Weitere Informationen dazu finden Sie in diesem [Knowledgebase-Artikel](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
 
 ### Amazon Web Services {#amazon-web-services}
 
@@ -604,13 +613,13 @@ Weitere Informationen zur entsprechenden Konfiguration finden Sie in der [Dispat
 
 ### Zusätzliche Konfiguration {#additional-configuration}
 
-#### Sticky-Verbindungen  {#sticky-connections}
+#### Sticky-Verbindungen   {#sticky-connections}
 
 Sticky-Verbindungen stellen sicher, dass personalisierte Seiten und Sitzungsdaten für einen Benutzer in derselben AEM-Instanz erstellt werden. Diese Daten werden in der Instanz gespeichert, sodass nachfolgende Anforderungen dieses Benutzers auf dieselbe Instanz zurückgreifen.
 
 Es wird empfohlen, Sticky-Verbindungen für alle Inner-Layer-Routinganforderungen an AEM-Instanzen zu aktivieren, damit spätere Anforderungen nach Möglichkeit dieselbe AEM-Instanz erreichen. Hierdurch wird Latenz minimiert, die sich andernfalls zeigt, wenn Inhalt zwischen Instanzen aktualisiert wird.
 
-#### Lange Ablaufzeiträume {#long-expires}
+#### Lange Ablaufzeiträume  {#long-expires}
 
 Standardmäßig besitzt Inhalt, der von einem AEM-Dispatcher gesendet wird, Last-Modified- und ETag-Header, ohne Angabe eines Ablaufzeitpunkts für den Inhalt. Zwar wird auf diese Weise sichergestellt, dass die Benutzeroberfläche immer die neueste Ressourcenversion erhält, allerdings bedeutet dies auch, dass der Browser einen GET-Vorgang durchführt, um zu überprüfen, ob die Ressource geändert wurde. Dies kann zu mehreren Anforderungen führen, auf die abhängig von der Seitenladezeit die HTTP-Antwort 304 (Nicht geändert) erfolgt. Bei Ressourcen, die bekanntermaßen nicht ablaufen, wird durch Festlegen eines Expires-Headers sowie Entfernen der Last-Modified- und ETag-Header der Inhalt im Cache gespeichert. Außerdem werden erst dann wieder weitere Aktualisierungsanforderungen gestellt, wenn das Datum im Expires-Header erfüllt wird.
 
@@ -618,7 +627,7 @@ Wird diese Methode verwendet, steht jedoch keine sinnvolle Möglichkeit zur Verf
 
 Diese URLs ändern sich auf keinen Fall. Wenn sich der in der URL enthaltene Hauptteil der Ressource ändert, werden diese Änderungen automatisch in der URL widergespiegelt. So ist sichergestellt, dass der Browser die richtige Ressourcenversion anfordert.
 
-Im Rahmen der Standardkonfiguration wird HtmlClientLibraryManager ein Selektor hinzugefügt. Als Selektor wird die Ressource im Cache des Dispatchers mit intaktem Selektor gespeichert. Mit diesem Selektor kann ebenfalls ein korrektes Ablaufverhalten sichergestellt werden. The default selector follows the `lc-.*?-lc` pattern. Die folgenden Apache-HTTPD-Konfigurationsrichtlinien stellen sicher, dass alle Anforderungen, die diesem Muster entsprechen, unter Berücksichtigung einer angemessenen Ablaufzeit erledigt werden.
+Im Rahmen der Standardkonfiguration wird HtmlClientLibraryManager ein Selektor hinzugefügt. Als Selektor wird die Ressource im Cache des Dispatchers mit intaktem Selektor gespeichert. Mit diesem Selektor kann ebenfalls ein korrektes Ablaufverhalten sichergestellt werden. Die Standardauswahl folgt dem Muster `lc-.*?-lc`. Die folgenden Apache-HTTPD-Konfigurationsrichtlinien stellen sicher, dass alle Anforderungen, die diesem Muster entsprechen, unter Berücksichtigung einer angemessenen Ablaufzeit erledigt werden.
 
 ```xml
 Header set Expires "Tue, 20 Jan 2037 04:20:42 GMT" "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*lc-.*?-lc.*/)"
@@ -652,7 +661,7 @@ Header set X-Content-Type-Options "nosniff"  env=jsonp_request
 Header setifempty Content-Type application/javascript env=jsonp_request
 ```
 
-#### Inhaltssicherheitsrichtlinie {#content-security-policy}
+#### Inhaltssicherheitsrichtlinie  {#content-security-policy}
 
 Die standardmäßigen Dispatchereinstellungen ermöglichen das Öffnen einer Inhaltssicherheitsrichtlinie (Content Security Policy, CSP). Hierdurch kann eine Seite Ressourcen von allen Domänen gemäß den Standardrichtlinien der Browser-Sandbox laden.
 
@@ -664,15 +673,15 @@ CPS ermöglicht die Feinabstimmung von Richtlinien. In einer komplexen Anwendung
 >
 >Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtlinie](https://www.owasp.org/index.php/Content_Security_Policy).
 
-### Dimensionierung {#sizing}
+### Dimensionierung  {#sizing}
 
 Weitere Informationen zur Dimensionierung finden Sie in den [Richtlinien zur Hardwaredimensionierung](/help/managing/hardware-sizing-guidelines.md).
 
-### MongoDB-Leistungsoptimierung {#mongodb-performance-optimization}
+### MongoDB-Leistungsoptimierung  {#mongodb-performance-optimization}
 
 Allgemeine Informationen zur MongoDB-Leistung finden Sie unter [Analysieren der MongoDB-Leistung](https://docs.mongodb.org/manual/administration/analyzing-mongodb-performance/).
 
-## Bekannte Einschränkungen {#known-limitations}
+## Bekannte Einschränkungen  {#known-limitations}
 
 ### Gleichzeitige Installationen {#concurrent-installations}
 
@@ -682,9 +691,9 @@ Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer 
 
 ### Seitennamenlänge {#page-name-length}
 
-If AEM is running on a MongoMK persistence manager deployment, [page names are limited to 150 characters.](/help/sites-authoring/managing-pages.md)
+Wenn AEM auf einer MongoMK-Persistenzmanager-Bereitstellung ausgeführt wird, sind die Seitennamen auf 150 Zeichen begrenzt.](/help/sites-authoring/managing-pages.md)[
 
 >[!NOTE]
 >
->[Bitte beachten Sie die MongoDB Dokumentation](https://docs.mongodb.com/manual/reference/limits/) , um sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB selbst vertraut zu machen.
+>[Bitte beachten Sie auch die MongoDB ](https://docs.mongodb.com/manual/reference/limits/) Dokumentation, um sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB selbst vertraut zu machen.
 
