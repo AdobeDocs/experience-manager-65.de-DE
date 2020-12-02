@@ -120,7 +120,7 @@ Sie können [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework
 
 ### Testen neuer Dienste {#testing-the-new-service}
 
-Wenn Sie die Website-Administrationskonsole öffnen und durch Ihre Website navigieren, gibt der Browser einen AJAX-Aufruf aus, um das JSON-Objekt zu erhalten, das zum Erstellen der Konsole verwendet wird. For example, when you browse to the `/content/geometrixx` folder, the following request is sent to the AEM server to build the console:
+Wenn Sie die Website-Administrationskonsole öffnen und durch Ihre Website navigieren, gibt der Browser einen AJAX-Aufruf aus, um das JSON-Objekt zu erhalten, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum Ordner `/content/geometrixx` navigieren, wird die folgende Anforderung zum Erstellen der Konsole an den AEM Server gesendet:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -135,43 +135,43 @@ Gehen Sie wie folgt vor, um sicherzustellen, dass der neue Dienst nach der Berei
 
 ### Anzeigen neuer Spalten {#displaying-the-new-column}
 
-The last step consists in adapting the nodes structure of the Websites Administration console to display the new property for all the Geometrixx pages by overlaying `/libs/wcm/core/content/siteadmin`. Gehen Sie wie folgt vor:
+Der letzte Schritt besteht darin, die Node-Struktur der Websites-Verwaltungskonsole anzupassen, um die neue Eigenschaft für alle Geometrixx anzuzeigen, indem `/libs/wcm/core/content/siteadmin` überlagert wird. Gehen Sie wie folgt vor:
 
-1. In CRXDE Lite, create the nodes structure `/apps/wcm/core/content` with nodes of type `sling:Folder` to reflect the structure `/libs/wcm/core/content`.
+1. Erstellen Sie in CRXDE Lite die Nodes-Struktur `/apps/wcm/core/content` mit Knoten des Typs `sling:Folder`, um die Struktur `/libs/wcm/core/content` widerzuspiegeln.
 
-1. Kopieren Sie den Knoten `/libs/wcm/core/content/siteadmin` und fügen Sie ihn unten ein `/apps/wcm/core/content`.
+1. Kopieren Sie den Knoten `/libs/wcm/core/content/siteadmin` und fügen Sie ihn unterhalb von `/apps/wcm/core/content` ein.
 
 1. Kopieren Sie den Knoten `/apps/wcm/core/content/siteadmin/grid/assets` in `/apps/wcm/core/content/siteadmin/grid/geometrixx` und ändern Sie seine Eigenschaften:
 
    * Entfernen Sie **pageText**.
 
-   * Set **pathRegex** to `/content/geometrixx(/.*)?`
-This will make the grid configuration active for all geometrixx websites.
+   * Setzen Sie **pathRegex** auf `/content/geometrixx(/.*)?`
+Dadurch wird die Rasterkonfiguration für alle geometrixx-Websites aktiv.
 
-   * Set **storeProxySuffix** to `.pages.json`
+   * Setzen Sie **storeProxySuffix** auf `.pages.json`
 
    * Bearbeiten Sie die mehrwertige Eigenschaft **storeReaderFields** und fügen Sie den Wert `starred` hinzu.
 
-   * To activate MSM functionality add the following MSM parameters to the multi-String property **storeReaderFields**:
+   * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zur Eigenschaft &quot;**storeReaderFields**&quot;hinzu:
 
       * **msm:isSource**
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Add a `starred` node (of type **nt:unstructured**) below `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` with the following properties:
+1. hinzufügen einer `starred`-Node (vom Typ **nt:unstructured**) unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften:
 
-   * **dataIndex**: `starred` vom Typ String
+   * **dataIndex**:  `starred` vom Typ String
 
-   * **header**: `Starred` vom Typ String
+   * **header**:  `Starred` vom Typ String
 
-   * **xtype**: `gridcolumn` vom Typ String
+   * **xtype**:  `gridcolumn` vom Typ String
 
-1. (optional) Drop the columns you do not want to display at `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (Optional) Legen Sie die Spalten ab, die nicht unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` angezeigt werden sollen.
 
-1. `/siteadmin` ist ein Eitelkeitspfad, der standardmäßig auf `/libs/wcm/core/content/siteadmin`verweist.
-To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin` define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
+1. `/siteadmin` ist ein Eitelkeitspfad, der standardmäßig auf  `/libs/wcm/core/content/siteadmin`verweist.
+Um dies zu Ihrer Version von siteadmin auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder`, um einen höheren Wert als den für `/libs/wcm/core/content/siteadmin` definierten zu haben. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
 
-1. Wechseln Sie zur Website Websites Administration Console und navigieren Sie zur Website Geometrixx:
+1. Wechseln Sie zur Websites-Verwaltungskonsole und navigieren Sie zur Geometrixx-Site:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. Die neue Spalte **Starred** ist nun verfügbar und zeigt benutzerdefinierte Informationen wie folgt an:
@@ -184,4 +184,4 @@ To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadm
 
 ### Beispielpaket {#sample-package}
 
-The outcome of this tutorial is available in the [Customizing the Websites Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) package on Package Share.
+Das Ergebnis dieses Lernprogramms ist im Paket [Anpassen der Websites Administrationskonsole](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) unter Package Share verfügbar.
