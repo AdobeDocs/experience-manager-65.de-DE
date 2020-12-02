@@ -136,7 +136,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in
 
 ## Quick Beginn (SOAP-Modus): Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird bestimmt, ob das PDF-Eingabedateien PDF/A-kompatibel ist. Das an den DocConverter-Dienst übergebene PDF-Dokument für die Eingabe erhält den Namen *LoanArchive.pdf*. Die Überprüfungsergebnisse werden in eine XML-Datei mit dem Namen *ValidationResults.xml* geschrieben. (Siehe PDF/A-Kompatibilität [programmgesteuert ermitteln](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+Im folgenden Java-Codebeispiel wird bestimmt, ob das PDF-Eingabedateien PDF/A-kompatibel ist. Das an den DocConverter-Dienst übergebene PDF-Eingabedokument trägt den Namen *LoanArchive.pdf*. Die Überprüfungsergebnisse werden in eine XML-Datei mit dem Namen *ValidationResults.xml* geschrieben. (Siehe [Programmatische Bestimmung der PDF/A-Kompatibilität](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*
