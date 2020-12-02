@@ -20,7 +20,7 @@ ht-degree: 86%
 
 # Erstellen von Übersetzungsprojekten für Inhaltsfragmente {#creating-translation-projects-for-content-fragments}
 
-In addition to assets, Adobe Experience Manager (AEM) Assets supports language copy workflows for [content fragments](/help/assets/content-fragments/content-fragments.md) (including variations). Um Sprachkopie-Workflows auf Inhaltsfragmenten auszuführen, ist keine zusätzliche Optimierung erforderlich. In jedem Workflow wird das gesamte Inhaltsfragment zur Übersetzung gesendet.
+Zusätzlich zu den Assets unterstützt Adobe Experience Manager (AEM) Assets die Workflows von Sprachkopien für [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) (einschließlich Variationen). Um Sprachkopie-Workflows auf Inhaltsfragmenten auszuführen, ist keine zusätzliche Optimierung erforderlich. In jedem Workflow wird das gesamte Inhaltsfragment zur Übersetzung gesendet.
 
 Die Arten von Workflows, die Sie bei Inhaltsfragmenten ausführen können, sind den Workflow-Arten ähnlich, die Sie für Assets ausführen können. Die Optionen, die in jeder Workflow-Art verfügbar sind, stimmen mit den Optionen überein, die unter den entsprechenden Workflow-Arten für Assets verfügbar sind.
 
@@ -39,15 +39,15 @@ Wenn das Quellinhaltsfragment aktualisiert oder geändert wird, muss das entspre
 Der Workflow für das Erstellen und Übersetzen umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
 
 * Nur Struktur erstellen: Verfahrensschritte finden Sie unter [Erstellen einer Struktur nur für Assets](translation-projects.md#create-structure-only).
-* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project).
-* Add to existing translation project: For procedure steps, see [Add to existing translation project for assets](translation-projects.md#add-to-existing-translation-project).
+* Erstellen Sie ein neues Übersetzungsprojekt: Anweisungen dazu finden Sie unter [Neues Übersetzungsprojekt für Assets erstellen](translation-projects.md#create-a-new-translation-project).
+* hinzufügen zum bestehenden Übersetzungsprojekt: Anweisungen für die Vorgehensweise finden Sie unter [Hinzufügen des vorhandenen Übersetzungsprojekts für Assets](translation-projects.md#add-to-existing-translation-project).
 
 ## Workflow zum Aktualisieren von Sprachkopien {#update-language-copies-workflow}
 
 Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen. Die mit der jeweiligen Option verbundenen Verfahrensschritte ähneln denen, die mit der entsprechenden Option für Assets verbunden sind.
 
-* Create a new translation project: For procedure steps, see [Create a new translation project for assets](translation-projects.md#create-a-new-translation-project) (update workflow).
-* Add to existing translation project: For procedure steps, see [Add to existing translation project for assets](translation-projects.md#add-to-existing-translation-project) (update workflow).
+* Erstellen Sie ein neues Übersetzungsprojekt: Anweisungen dazu finden Sie unter [Neues Übersetzungsprojekt für Assets erstellen](translation-projects.md#create-a-new-translation-project) (Aktualisierungsarbeitsablauf).
+* hinzufügen zum bestehenden Übersetzungsprojekt: Anweisungen für die Vorgehensweise finden Sie unter [Hinzufügen des vorhandenen Übersetzungsprojekts für Assets](translation-projects.md#add-to-existing-translation-project) (Aktualisierungsarbeitsablauf).
 
 Sie können auch temporäre Sprachkopien für Fragmente erstellen, ähnlich wie Sie temporäre Kopien für Assets erstellen. Weitere Informationen finden Sie unter [Erstellen von temporären Sprachkopien für Assets](translation-projects.md#creating-temporary-language-copies).
 
@@ -59,8 +59,8 @@ Wenn das Inhaltsfragment eine Sammlung umfasst, werden die darin enthaltenen Ass
 
 Um Inhaltsfragmente zu übersetzen, die gemischte Medien enthalten, bearbeiten Sie zunächst das standardmäßige Übersetzungs-Framework, um die Übersetzung von mit Inhaltsfragmenten verknüpften Inline-Assets und Sammlungen zu ermöglichen.
 
-1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
-1. Locate **[!UICONTROL Translation Integration]** under **[!UICONTROL Adobe Marketing Cloud]**, and click/tap **[!UICONTROL Show Configurations]**.
+1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud-Services]**.
+1. Suchen Sie nach **[!UICONTROL Translation Integration]** unter **[!UICONTROL Adobe Marketing Cloud]** und klicken Sie auf **[!UICONTROL Konfigurationen anzeigen]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
@@ -109,7 +109,7 @@ Um Inhaltsfragmente zu übersetzen, die gemischte Medien enthalten, bearbeiten S
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Click/tap **[!UICONTROL Create &amp; Translate]** from at the bottom of the panel to display the **[!UICONTROL Create &amp; Translate]** dialog.
+1. Klicken Sie unten im Bedienfeld auf **[!UICONTROL Erstellen und übersetzen]**, um das Dialogfeld **[!UICONTROL Erstellen und übersetzen]** anzuzeigen.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
