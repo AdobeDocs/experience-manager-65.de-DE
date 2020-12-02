@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „Erweiterte Systemattribute konfigurieren“ ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Configuration > Configure Advanced System Attributes]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Konfiguration > Erweiterte Systemattribute konfigurieren]**.
 1. (Optional) Ändern Sie folgende Sitzungsattribute:
 
    **Sitzungszeitlimit-Grenzwert (Minuten):** Der Zeitraum in Minuten, nach dem ein Benutzer automatisch vom System abgemeldet wird. Standardmäßig beträgt das Zeitlimit von AEM Forms-Komponenten wie Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Der Benutzer muss sich dann erneut anmelden. Gültig sind Werte von `1` bis `1440`. Der Standardwert ist `120` (2 Stunden). Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionValidityInMinutes` in der Konfigurationsdatei.
@@ -30,7 +33,7 @@ Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „
 
    **Assertionsschwellenwert (Sekunden):** Dieser Wert gibt einen Pufferzeitraum an, um den Verzögerungen aufgrund von Systemzeitdifferenzen zwischen AEM Forms-Anwendungsservern in einem Cluster versetzt werden sollen. AEM Forms datiert die Anmeldezeit eines Benutzers um den in dieser Eigenschaft angegebenen Zeitraum (in Sekunden) zurück. Gültig sind Werte von `0` bis `3600`. Der Standardwert ist `60`. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionThresholdInSeconds` in der Konfigurationsdatei.
 
-   **Maximal zulässige Anzahl von Erneuerungen einer Assertion:** Die maximale Anzahl, wie oft die Sitzung eines Benutzers transparent erneuert werden kann, ohne dass eine erneute Anmeldung erforderlich wird. Gültig sind Werte von `0` bis `9999`. Der Wert `0` bedeutet, dass die Assertionen nicht erneuert werden. Der Standardwert ist 10. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/maxAssertionRenewalCount` in der Konfigurationsdatei.
+   **Maximal zulässige Anzahl von Erneuerungen einer Assertion:** Die maximale Anzahl, wie oft die Sitzung eines Benutzers transparent erneuert werden kann, ohne dass eine erneute Anmeldung erforderlich wird. Gültig sind Werte von `0` bis `9999`. Der Wert `0` bedeutet, dass die Assertionen nicht erneuert werden. Der Standardwert ist 10. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/maxAssertionRenewalCount` in der Konfigurationsdatei.
 
 1. (Optional) Ändern Sie folgende Ordnersynchronisierungsattribute:
 
@@ -40,7 +43,7 @@ Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „
 
    **Cluster Job Lock Timeout In Minutes:** Wird in Clusterumgebungen verwendet. Wenn die Synchronisation auf einem Knoten fehlschlägt und die Clustersperre nicht beendet wurde, gibt dieser Wert die Anzahl der Minuten an, die ein anderer Knoten wartet, bevor er die Sperre erzwingt. Der Standardwert ist `15` Minuten. Gültig sind Werte von `1` bis `1440` Minuten.
 
-1. (Optional) Change the following attributes and then click **[!UICONTROL OK]**:
+1. (Optional) Ändern Sie die folgenden Attribute und klicken Sie dann auf **[!UICONTROL OK]**:
 
    **User Manager-Ereignisprüfung:** Wählen Sie diese Option, um die Prüfung von Ordnersynchronisierungsereignissen sowie von Authentifizierungsereignissen wie Erfolg, Fehler und Sperrung zu aktivieren. Standardmäßig ist diese Option nur aktiviert, wenn eine Komponente installiert ist, die Prüfungen erfordert, z. B Rights Management. Diese Einstellung aktualisiert den Eintragsschlüssel `APSAuditService` in der Konfigurationsdatei.
 
