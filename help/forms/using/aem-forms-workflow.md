@@ -31,11 +31,11 @@ Sie können mit AEM-Workflows rasch Workflows auf Basis adaptiver Formulare erst
 
 Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Die Bereitstellung und Verwaltung der Workflows verwendet die gewohnten Funktionen von AEM-Workflow und AEM-Posteingang. Workflows bilden die Grundlage für die Automatisierung realer Geschäftsprozesse, an denen mehrere Softwaresysteme, Netzwerke, Abteilungen und sogar Unternehmen beteiligt sind.
 
-Nachdem Sie diese Workflows eingerichtet haben, können Sie sie manuell auslösen, um einen definierten Prozess auszuführen, oder sie können als Programm ablaufen, wenn Benutzer Formulare oder Briefe aus [Correspondence Management](/help/forms/using/cm-overview.md) senden. AEM Forms bietet mit diesen verbesserten AEM-Workflow-Funktionen zwei verschiedene, aber ähnliche Funktionen. Entscheiden Sie im Rahmen Ihrer Bereitstellungsstrategie, welche für Sie geeignet ist. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Nachdem Sie diese Workflows eingerichtet haben, können Sie sie manuell auslösen, um einen definierten Prozess auszuführen, oder sie können als Programm ablaufen, wenn Benutzer Formulare oder Briefe aus [Correspondence Management](/help/forms/using/cm-overview.md) senden. AEM Forms bietet mit diesen verbesserten AEM-Workflow-Funktionen zwei verschiedene, aber ähnliche Funktionen. Entscheiden Sie im Rahmen Ihrer Bereitstellungsstrategie, welche für Sie geeignet ist. Siehe einen [Vergleich](capabilities-osgi-jee-workflows.md) der Forms-zentrierten AEM Workflows unter OSGi und Process Management on JEE. Die Bereitstellungstopologie finden Sie unter [Architektur- und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 Der formularzentrierte Workflow für OSGi erweitert den [AEM-Posteingang](/help/sites-authoring/inbox.md) und bietet zusätzliche Komponenten (Schritte) für den AEM-Workflow-Editor an, um Unterstützung für AEM Forms-zentrierte Workflows hinzuzufügen. Der erweiterte AEM-Posteingang bietet ähnliche Funktionen wie [AEM Forms Workspace](introduction-html-workspace.md). Sie können mithilfe von AEM-Workflows sowohl Workflows verwalten, die durch Personen ausgeführt werden müssen (Genehmigung, Prüfung usw.), als auch Vorgänge für [Document Services](/help/sites-developing/workflows-step-ref.md) (z. B. Generate PDF) automatisieren und Dokumente elektronisch (mit Adobe Sign) signieren.
 
-Alle Arbeitsablaufschritte von AEM Forms unterstützen die Verwendung von Variablen. Variablen ermöglichen Arbeitsablaufschritte zum Halten und Übergeben von Metadaten zur Laufzeit. Sie können verschiedene Typen von Variablen zum Speichern verschiedener Datentypen erstellen. Sie können auch variable Sammlungen (Array) erstellen, um mehrere Instanzen verwandter, identischer Daten zu speichern. In der Regel verwenden Sie eine Variable oder eine Sammlung von Variablen, wenn Sie eine Entscheidung basierend auf dem Wert treffen müssen, den sie enthält, oder Informationen speichern möchten, die Sie später in einem Prozess benötigen. Weitere Informationen zur Verwendung von Variablen in diesen Forms-zentrierten Workflow-Komponenten (Schritte) finden Sie unter [Forms-zentrierter Workflow unter OSGi - Schritt-Referenz](../../forms/using/aem-forms-workflow-step-reference.md). Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
+Alle Arbeitsablaufschritte von AEM Forms unterstützen die Verwendung von Variablen. Variablen ermöglichen Arbeitsablaufschritte zum Halten und Übergeben von Metadaten zur Laufzeit. Sie können verschiedene Typen von Variablen zum Speichern verschiedener Datentypen erstellen. Sie können auch variable Sammlungen (Array) erstellen, um mehrere Instanzen verwandter, identischer Daten zu speichern. In der Regel verwenden Sie eine Variable oder eine Sammlung von Variablen, wenn Sie eine Entscheidung basierend auf dem Wert treffen müssen, den sie enthält, oder Informationen speichern möchten, die Sie später in einem Prozess benötigen. Weitere Informationen zur Verwendung von Variablen in diesen Forms-zentrierten Workflow-Komponenten (Schritte) finden Sie unter [Forms-zentrierter Workflow unter OSGi - Schritt-Referenz](../../forms/using/aem-forms-workflow-step-reference.md). Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM](../../forms/using/variable-in-aem-workflows.md).
 
 Das folgende Diagramm zeigt einen End-to-End-Vorgang zum Erstellen, Ausführen und Überwachen eines formularzentrierten Workflows in OSGi.
 
@@ -84,17 +84,17 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
 1. Erstellen Sie Workflow-Phasen. Ein Workflow kann mehrere Phasen haben. Diese Phasen werden im AEM-Posteingang angezeigt und geben den Fortschritt des Workflow an.
 
-   To define a stage, tap the ![info-circle](assets/info-circle.png) icon to open workflow model properties, open the **Stages** tab, add stages for the workflow model, and tap **Save &amp; Close**. Für einen Hypothekenantrag könnten Sie beispielsweise die folgenden Phasen erstellen: Darlehensantrag, Status des Darlehensantrags, zu signierende Dokumente und signiertes Antragsdokument.
+   Um eine Phase zu definieren, tippen Sie auf das Symbol ![info-circle](assets/info-circle.png), um die Eigenschaften des Workflow-Modells zu öffnen, öffnen Sie die Registerkarte **Phasen**, fügen Sie Schritte für das Workflow-Modell hinzu und tippen Sie auf **Speichern und Schließen**. Für einen Hypothekenantrag könnten Sie beispielsweise die folgenden Phasen erstellen: Darlehensantrag, Status des Darlehensantrags, zu signierende Dokumente und signiertes Antragsdokument.
 
-1. Drag-and-drop the **Assign Task** steps browser to the workflow model. Definieren Sie ihn als ersten Schritt im Modell.
+1. Ziehen Sie den Schritt-Browser **Aufgabe** dem Workflow-Modell zuweisen. Definieren Sie ihn als ersten Schritt im Modell.
 
    Die Komponente „Aufgabe zuweisen“ weist die durch den Workflow erstellte Aufgabe einem Benutzer oder einer Gruppe zu. Sie können mithilfe der Komponente zusammen mit der Zuweisung der Aufgabe auch das adaptive Formular oder die nicht-interaktive PDF-Datei für die Aufgabe angeben. Das adaptive Formular ist erforderlich, damit die Benutzer Eingaben vornehmen können, und die nicht-interaktive PDF-Datei oder ein schreibgeschütztes adaptives Formular wird in Workflows verwendet, die nur zur Prüfung dienen.
 
-   Sie können mithilfe dieses Schritts auch das Verhalten der Aufgabe steuern. Dies betrifft beispielsweise das automatische Erstellen eines Datensatzdokuments, die Zuweisung der Aufgabe an einen bestimmten Benutzer oder eine Gruppe, den Pfad der übermittelten Daten, den Pfad der im Voraus auszufüllenden Daten sowie Standardaktionen. For detailed information about the options of the assign task step, see [Forms-centric workflow on OSGi - Step Reference](../../forms/using/aem-forms-workflow.md) document.
+   Sie können mithilfe dieses Schritts auch das Verhalten der Aufgabe steuern. Dies betrifft beispielsweise das automatische Erstellen eines Datensatzdokuments, die Zuweisung der Aufgabe an einen bestimmten Benutzer oder eine Gruppe, den Pfad der übermittelten Daten, den Pfad der im Voraus auszufüllenden Daten sowie Standardaktionen. Detaillierte Informationen zu den Optionen des Vorgangs &quot;Aufgabe zuweisen&quot;finden Sie im Dokument [Forms-zentrierter Arbeitsablauf unter OSGi - Schrittreferenz](../../forms/using/aem-forms-workflow.md).
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   Konfigurieren Sie im Beispiel für den Hypothekenantrag  den Schritt „Aufgabe zuweisen“ so, dass ein schreibgeschütztes adaptives Formular verwendet und das PDF-Dokument angezeigt wird, nachdem die Aufgabe abgeschlossen ist. Wählen Sie außerdem die Benutzergruppe aus, die zum Genehmigen des Darlehensantrags berechtigt ist. Deaktivieren Sie auf der Registerkarte **Aktionen** die Option **Senden**. Erstellen Sie eine **actionTaken** -Variable des Datentyps String und geben Sie die Variable als **Route-Variable** an. Dies könnte beispielsweise „actionTaken“ sein. Fügen Sie außerdem die Routen zu Genehmigen und Ablehnen hinzu. Die Routen werden als separate Aktionen (Schaltflächen) im AEM-Posteingang angezeigt. Der Workflow wählt die passende Verzweigung für die Aktion (Schaltfläche), auf die der Benutzer klickt.
+   Konfigurieren Sie im Beispiel für den Hypothekenantrag  den Schritt „Aufgabe zuweisen“ so, dass ein schreibgeschütztes adaptives Formular verwendet und das PDF-Dokument angezeigt wird, nachdem die Aufgabe abgeschlossen ist. Wählen Sie außerdem die Benutzergruppe aus, die zum Genehmigen des Darlehensantrags berechtigt ist. Deaktivieren Sie auf der Registerkarte **Aktionen** die Option **Senden**. Erstellen Sie eine **actionTaken**-Variable des Datentyps String und geben Sie die Variable als **Route-Variable** an. Dies könnte beispielsweise „actionTaken“ sein. Fügen Sie außerdem die Routen zu Genehmigen und Ablehnen hinzu. Die Routen werden als separate Aktionen (Schaltflächen) im AEM-Posteingang angezeigt. Der Workflow wählt die passende Verzweigung für die Aktion (Schaltfläche), auf die der Benutzer klickt.
 
    Sie können das Beispielpaket, das am Anfang des Abschnitts zum Download zur Verfügung steht, importieren, um sämtliche Werte aller Felder im Schritt „Aufgabe zuweisen“ zu erhalten, der für das Beispiel des Hypothekenantrags konfiguriert wurde.
 
@@ -106,13 +106,13 @@ In diesem Beispiel wird ein Workflow-Modell für einen Hypothekenantrag erstellt
 
    **Routing Ausdruck für Zweig 1**
 
-   When a user taps **Approve** in AEM Inbox, Branch 1 is activated.
+   Wenn ein Benutzer in AEM Posteingang auf **Genehmigen** tippt, wird Zweig 1 aktiviert.
 
    ![Beispiel für ODER-Teilung](assets/orsplit_branch1_active_new.png)
 
    **Routing Ausdruck für Zweigstelle 2**
 
-   When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
+   Wenn ein Benutzer in AEM Posteingang auf **Ablehnen** tippt, wird Zweig 2 aktiviert.
 
    ![Beispiel für ODER-Teilung](assets/orsplit_branch2_active_new.png)
 
@@ -136,8 +136,8 @@ Die Anwendung ist das mit dem Workflow verknüpfte adaptive Formular. Wenn eine 
 >
 >Sie müssen Mitglied der Gruppe „fd-administrator“ sein, um Workflow-Anwendungen erstellen und verwalten zu können.
 
-1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
-1. In the Create Workflow Application window, provide inputs for the following fields, and taps **Create**. Eine neue Anwendung wird erstellt und im Bildschirm „Workflow-Anwendungen“ aufgeführt.
+1. Wechseln Sie in Ihrer AEM Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Workflow-Anwendung verwalten]** und tippen Sie auf **[!UICONTROL Erstellen]**.
+1. Geben Sie im Fenster &quot;Workflow-Anwendung erstellen&quot;Eingaben für die folgenden Felder ein und tippen Sie auf **Erstellen**. Eine neue Anwendung wird erstellt und im Bildschirm „Workflow-Anwendungen“ aufgeführt.
 
 <table>
  <tbody>
@@ -200,13 +200,13 @@ Sie können einen formularzentrierten Workflow wie folgt starten oder auslösen:
 
 * [Senden einer interaktiven Kommunikation oder eines Briefes](#letter)
 
-### Senden einer Anwendung aus AEM Inbox {#inbox}
+### Senden einer Anwendung aus AEM Inbox  {#inbox}
 
 Die von Ihnen erstellte Workflow-Anwendung ist als Anwendung im Posteingang verfügbar. Benutzer, die Mitglieder der Gruppe „workflow-users“ sind, können den Antrag ausfüllen und senden, der den zugehörigen Workflow auslöst. Weitere Informationen zur Verwendung des AEM-Posteingangs zum Senden von Anwendungen und Verwalten von Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und Aufgaben im AEM-Posteingang](../../forms/using/manage-applications-inbox.md).
 
 ### Senden einer Anwendung aus der AEM Forms-App {#afa}
 
-Die AEM Forms-App synchronisiert die Daten mit einem AEM Forms-Server und ermöglicht es Ihnen, Änderungen an den Formulardaten an Aufgaben, an Workflow-Anwendungen und gespeicherten Informationen (Entwürfe/Vorlagen) in Ihrem Konto vorzunehmen. For more information, see [AEM Forms app](/help/forms/using/aem-forms-app.md) and related articles.
+Die AEM Forms-App synchronisiert die Daten mit einem AEM Forms-Server und ermöglicht es Ihnen, Änderungen an den Formulardaten an Aufgaben, an Workflow-Anwendungen und gespeicherten Informationen (Entwürfe/Vorlagen) in Ihrem Konto vorzunehmen. Weitere Informationen finden Sie unter [AEM Forms-App](/help/forms/using/aem-forms-app.md) und zugehörige Artikel.
 
 ### Senden eines adaptiven Formulars {#af}
 
@@ -218,7 +218,7 @@ Sie können ein adaptives Formular zum Synchronisieren, Senden und Auslösen ein
 
 Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen Netzwerkordner konfigurieren, um einen vorkonfigurierten Workflow auszuführen, wenn ein Benutzer eine Datei (z. B. eine PDF-Datei) in diesem Ordner ablegt. Nachdem der Arbeitsablauf abgeschlossen ist, kann die Ergebnisdatei in einem angegebenen Ausgabeordner gespeichert werden. Ein solcher Ordern wird als [überwachter Ordner](../../forms/using/watched-folder-in-aem-forms.md) bezeichnet. Führen Sie das folgende Verfahren aus, um einen überwachten Ordner zum Starten eines Workflows zu konfigurieren:
 
-1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. . Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
+1. Wechseln Sie in Ihrer AEM Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. . Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
 1. Tippen Sie auf **[!UICONTROL Neu]**. Eine Liste von Feldern wird angezeigt. Geben Sie Werte für die folgenden Felder ein, um einen überwachten Ordner für einen Workflow zu konfigurieren:
 
 <table>
@@ -232,12 +232,12 @@ Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen N
    <td>Geben Sie den Namen für den überwachten Ordner ein. In diesem Feld muss ein alphanumerischer Wert eingegeben werden.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Pfad          </code></td>
+   <td><span class="uicontrol">Pfad</code></td>
    <td>Geben Sie den physischen Speicherort des überwachten Ordners ein. Verwenden Sie in einer Clusterumgebung einen freigegebenen Netzwerkordner, auf den über einen AEM-Clusterknoten zugegriffen werden kann.</td>
   </tr>
   <tr>
    <td><span class="uicontrol">Prozessdateien, die Folgendes verwenden:</code></td>
-   <td>Select the <span class="uicontrol">Workflow </code>option. </code></td>
+   <td>Wählen Sie die Option <span class="uicontrol">Workflow </code>aus. </code></td>
   </tr>
   <tr>
    <td><span class="uicontrol">Workflow-Modell</code></td>
@@ -250,7 +250,7 @@ Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen N
  </tbody>
 </table>
 
-1. Tippen Sie auf **Erweitert**. Specify a value for the following field and taps **Create**. Damit ist der überwachte Ordner so konfiguriert, dass er einen Arbeitsablauf startet. Wenn nun eine Datei im Eingabeverzeichnis des überwachten Ordners abgelegt wird, wird der angegebene Workflow ausgelöst.
+1. Tippen Sie auf **Erweitert**. Geben Sie einen Wert für das folgende Feld ein und tippen Sie auf **Erstellen**. Damit ist der überwachte Ordner so konfiguriert, dass er einen Arbeitsablauf startet. Wenn nun eine Datei im Eingabeverzeichnis des überwachten Ordners abgelegt wird, wird der angegebene Workflow ausgelöst.
 
    | Feld | Beschreibung |
    |---|---|
@@ -258,11 +258,11 @@ Ein Administrator (ein Mitglied der Gruppe „fd-administrators“) kann einen N
 
    Die Registerkarte „Erweitert“ enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert. Weitere Informationen zu allen Feldern finden Sie im Artikel [Erstellen oder konfigurieren Sie einen überwachten Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
 
-### Senden einer interaktiven Kommunikation oder eines Briefes {#letter}
+### Senden einer interaktiven Kommunikation oder eines Briefes  {#letter}
 
 Sie können einen Forms-zentrierten Arbeitsablauf auf OSGi beim Senden einer interaktiven Kommunikation oder eines Briefs verknüpfen und ausführen. Im Correspondence Management werden Workflows zur Nachbearbeitung von interaktiven Kommunikationen und Briefen verwendet. Dazu gehören beispielsweise Versenden per E-Mail, Drucken, Faxen und Archivieren der endgültigen Briefe. Detaillierte Schritte finden Sie unter [Nachbearbeitung von interaktiver Kommunikation und Briefen](../../forms/using/submit-letter-topostprocess.md).
 
-## Zusätzliche Konfigurationen {#additional-configurations}
+## Zusätzliche Konfigurationen  {#additional-configurations}
 
 ### E-Mail-Dienst konfigurieren {#configure-email-service}
 
@@ -272,6 +272,6 @@ Sie können die Schritte „Aufgabe zuweisen“ und „E-Mail senden“ von AEM-
 1. Öffnen Sie die Konfiguration des **[!UICONTROL Day CQ Mail Service]**. Geben Sie Werte in die Felder **[!UICONTROL SMTP-Server-Hostname]**, **[!UICONTROL SMTP-Server-Anschluss]** und **[!UICONTROL Absenderadresse]** ein. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Geben Sie im Feld **[!UICONTROL Domänen]** den tatsächlichen Hostnamen/die IP-Adresse und die Portnummer für lokale Instanzen sowie Authoring- und Veröffentlichungsinstanzen an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-### Bereinigen von Workflow-Instanzen {#purge-workflow-instances}
+### Bereinigen von Workflow-Instanzen  {#purge-workflow-instances}
 
-Die Minimierung der Anzahl von Workflow-Instanzen steigert die Leistung der Workflow-Engine, sodass Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen können. Ausführliche Informationen finden Sie unter [Regelmäßiges Bereinigen von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular) bereinigen von Workflow-Instanzen
+Die Minimierung der Anzahl von Workflow-Instanzen steigert die Leistung der Workflow-Engine, sodass Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen können. Ausführliche Informationen finden Sie unter [Reguläres Bereinigen von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular) Bereinigen von Workflow-Instanzen
