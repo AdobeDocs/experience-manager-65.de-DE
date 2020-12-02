@@ -21,7 +21,7 @@ ht-degree: 97%
 + Sites-Funktionen {#introduction}
    + [Website-Verwaltung](msm-and-translation.md)
    + [Asynchrone Aufträge](asynchronous-jobs.md)
-   + [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](msm.md)
+   + [Wiederverwenden von Inhalten: Multi-Site-Manager und Live Copy](msm.md)
    + [Konsole „Live Copy-Übersicht“](msm-livecopy-overview.md)
    + [Konfigurieren der Synchronisierung von Live Copies](msm-sync.md)
    + [Erstellen und Synchronisieren von Live Copies](msm-livecopy.md)
@@ -98,7 +98,7 @@ ht-degree: 97%
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personalisierung   {#personalization}
-   + [Personalisierung  ](personalization.md)
+   + [Personalisierung ](personalization.md)
    + [Konfigurieren von ContextHub](/help/sites-developing/ch-configuring.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -117,8 +117,8 @@ ht-degree: 97%
 + Integrationen {#integration}
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
-   + [Integrieren mit Adobe Target](target.md)
-   + [Integrieren mit Adobe Analytics](adobeanalytics.md)
+   + [Integration mit Adobe Target](target.md)
+   + [Integration mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
    + [Konfigurieren der Link-Überwachung für Adobe Analytics](adobeanalytics-link.md)
    + [Zuordnen von Komponentendaten mit Adobe Analytics-Eigenschaften](adobeanalytics-mapping.md)
