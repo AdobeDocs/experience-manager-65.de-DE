@@ -22,7 +22,7 @@ ht-degree: 70%
 
 # Migration der Assets und Dokumente von AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-The Migration utility converts the [Adaptive Forms assets](../../forms/using/introduction-forms-authoring.md), [cloud configrurations](/help/sites-developing/extending-cloud-config.md), and [Correspondence Management assets](/help/forms/using/cm-overview.md) from the format used in the earlier versions to the format used in AEM 6.5 Forms. Wenn Sie das Migrationsdienstprogramm ausführen, werden folgende Elemente migriert:
+Das Migrationsdienstprogramm konvertiert die [Adaptiven Forms-Assets](../../forms/using/introduction-forms-authoring.md), [Cloud-Konfigurationen](/help/sites-developing/extending-cloud-config.md) und [Correspondence Management-Assets](/help/forms/using/cm-overview.md) aus dem in früheren Versionen verwendeten Format in das in AEM 6.5 Forms verwendete Format. Wenn Sie das Migrationsdienstprogramm ausführen, werden folgende Elemente migriert:
 
 * Benutzerdefiniert Komponenten für adaptive Formulare
 * Adaptive Formulare und Correspondence Management-Vorlagen
@@ -35,7 +35,7 @@ The Migration utility converts the [Adaptive Forms assets](../../forms/using/int
 
 ## Verfahren zur Migration {#approach-to-migration}
 
-You can [upgrade](../../forms/using/upgrade.md) to the latest version of AEM Forms 6.5 from AEM Forms 6.4, 6.3, or 6.2 or perform a fresh installation. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
+Sie können [ein Upgrade](../../forms/using/upgrade.md) auf die neueste Version von AEM Forms 6.5 von AEM Forms 6.4, 6.3 oder 6.2 durchführen oder eine Neuinstallation durchführen. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
 
 **Im Falle eines direkten Upgrades**
 
@@ -45,17 +45,17 @@ Dann müssen Sie die Assets und Dokumente aktualisieren, indem Sie das [Migratio
 
 **Bei nicht ersetzender Installation**
 
-If it is an out of place (fresh) installation, before you can use the assets and documents, you will need to install [AEMFD Compatibility package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (includes the Correspondence Management Compatibility package).
+Wenn es sich um eine nicht ersetzende (neue) Installation handelt, müssen Sie das [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (einschließlich Correspondence Management-Kompatibilitätspaket) installieren, bevor Sie die Elemente und Dokumente verwenden können.
 
-Then you need to import your asset package (zip or cmp) on the new setup and then update the assets and documents by [running the Migration utility](#runningmigrationutility). Adobe empfiehlt, neue Assets erst nach dem Ausführen des Migrationsdienstprogramms zu erstellen.
+Anschließend müssen Sie das Asset-Paket (zip oder cmp) in das neue Setup importieren und dann die Elemente und Dokumente aktualisieren, indem Sie [das Migrationsdienstprogramm](#runningmigrationutility) ausführen. Adobe empfiehlt, neue Assets erst nach dem Ausführen des Migrationsdienstprogramms zu erstellen.
 
 Aufgrund der [Abwärtskompatibilität-bezogenen](/help/sites-deploying/backward-compatibility.md) Änderungen werden Speicherorte von einigen Ordnern im CRX-Repository geändert. Exportieren und importieren Sie Abhängigkeiten (benutzerdefinierte Bibliotheken und Assets) vom vorherigen Setup in eine neue Umgebung manuell.
 
-## Read before you proceed with the migration {#prerequisites}
+## Lesen Sie dies, bevor Sie mit der Migration fortfahren.{#prerequisites}
 
 Für Correspondence Management-Assets:
 
-* For the assets that are imported from the previous platform, a property gets added: **fd:version=1.0**.
+* Für die Assets, die von der vorherigen Plattform importiert wurden, wird eine Eigenschaft hinzugefügt: **fd:version=1.0**.
 * Seit AEM 6.1 Forms sind Kommentare nicht standardmäßig verfügbar. Die Kommentare, die zuvor hinzugefügt wurden, stehen in den Assets zur Verfügung, sind jedoch nicht automatisch auf der Oberfläche sichtbar. Sie müssen die Eigenschaft „extendedProperties“ in der AEM Forms-Benutzeroberfläche anpassen, um die Kommentare sichtbar zu machen.
 * In einigen früheren Versionen, beispielsweise LiveCycle ES4, wurde Text mithilfe von Flex RichTextEditor bearbeitet. Seit AEM 6.1 Forms wird HTML-Editor verwendet. Dadurch können sich die Darstellung und das Erscheinungsbild der Schriftarten, Schriftgrößen und Schriftartränder von früheren Versionen in der Autorenbenutzeroberfläche unterscheiden. Die ausgegebenen Briefe sehen jedoch gleich aus.
 * Listen in den Textmodulen wurden verbessert und werden jetzt anders dargestellt. Es gibt möglicherweise visuelle Unterschiede. Wir empfehlen, die Buchstaben an den Stellen darzustellen und anzuzeigen, wo Sie Listen in Textmodulen verwenden. 
@@ -133,16 +133,16 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
       >        * Neue Vorlagen - Vorlagen für adaptive Formulare, die mit dem Vorlageneditor unter /conf erstellt wurden. Das umfasst die Migration von Regeln und Skripten, die mithilfe des Regel-Editors erstellt wurden.
 
 
-   * To migrate adaptive form custom components, tap **Adaptive Forms Custom Components Migration** and in the Custom Components Migration page, tap **Start Migration**. Die folgenden Elemente werden migriert:
+   * Um benutzerdefinierte Komponenten für adaptive Formulare zu migrieren, tippen Sie auf **Adaptive Forms-Komponentenmigration** und tippen Sie auf der Seite &quot;Komponentenmigration&quot;auf **Beginn-Migration**. Die folgenden Elemente werden migriert:
 
       * Benutzerdefinierte Komponenten, die für adaptive Formulare geschrieben wurden
       * Komponentenüberlagerungen, falls vorhanden.
-   * To migrate adaptive form templates, tap **Adaptive Forms Template Migration** and in the Custom Components Migration page, tap **Start Migration**. Die folgenden Elemente werden migriert:
+   * Um Vorlagen für adaptive Formulare zu migrieren, tippen Sie auf **Migration für adaptive Forms-Vorlagen** und tippen Sie auf der Seite zur Migration benutzerdefinierter Komponenten auf **Beginn Migration**. Die folgenden Elemente werden migriert:
 
       * Die adaptiven Formularvorlagen, die unter /Apps oder /Conf mit dem AEM-Vorlageneditor erstellt wurden.
    * Migrieren Sie die AEM Forms Cloud-Konfigurationsdienste, um das neue kontextbezogene Cloud-Dienst-Paradigma zu nutzen, das die Benutzeroberfläche mit Touch-Funktion (unter/conf) umfasst. Wenn Sie AEM Forms Cloud-Konfigurationsdienste migrieren, werden die Cloud-Dienste in /etc nach /conf verschoben. Wenn Sie keine Anpassungen an Cloud-Services vornehmen, die von den alten Pfaden (/etc) abhängen, sollten Sie das Migrationsdienstprogramm unmittelbar nach der Aktualisierung auf 6.5 ausführen und die Touch-Cloud-Konfigurationsschnittstelle für weitere Arbeiten verwenden. Wenn Sie über Anpassungen für die bereits vorhandene Cloud-Dienste verfügen, setzen Sie die klassische Benutzeroberfläche bei der Aktualisierung fort, bis die Anpassungen für die migrierten Pfaden (/conf) abgeschlossen sind, und führen Sie das Migrationshilfsprogramm aus.
 
-   To migrate **AEM Forms cloud services**, which include the following, tap AEM Forms Cloud Configuration Migration (cloud config migration is independent of AEMFD Compatibility package), tap AEM Forms Cloud Configurations Migration and then on the Configuration Migration page, tap **Start Migration**:
+   Um **AEM Forms Cloud-Services** zu migrieren, die Folgendes enthalten, tippen Sie auf AEM Forms Cloud-Konfigurationsmigration (die Migration der Cloud-Konfigurationskonfigurationen ist unabhängig vom AEMFD-Kompatibilitätspaket), tippen Sie auf AEM Forms Cloud-Konfigurationsmigration und anschließend auf der Seite &quot;Konfigurationsmigration&quot;auf **Beginn Migration**:
 
    * Cloud-Dienste für Formulardatenmodell
 
@@ -189,7 +189,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
 1. Nach der Ausführung des Migrationsdienstprogramms fahren Sie mit den [Systemverwaltungsaufgaben](#housekeepingtasks) fort.
 
-### Systemverwaltungsaufgaben nach Ausführung des Migrationsdienstprogramms  {#housekeepingtasks}
+### Systemverwaltungsaufgaben nach Ausführung des Migrationsdienstprogramms   {#housekeepingtasks}
 
 Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende Systemverwaltungsaufgaben durch:[](../../forms/using/import-export-forms-templates.md) 
 
@@ -201,5 +201,5 @@ Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende
    1. Hochladen des XFA in der forms-Benutzeroberfläche.
 
 1. Veröffentlichen Sie alle Assets, die im vorherigen System vor der Migration veröffentlicht wurden. Das Migrationsdienstprogramm aktualisiert die Assets nur im Autorenmodus . Um die Assets in der Veröffentlichungsinstanz (s) zu aktualisieren, müssen Sie die Assets veröffentlichen. 
-1. In AEM Forms 6.4 und 6.5 werden einige Rechte der Benutzergruppen für Formulare geändert. Wenn Sie möchten, dass Ihre Benutzer XDPs und adaptive Formulare hochladen können, die Skripte enthalten oder den Code-Editor verwenden, müssen Sie sie der Gruppe der Forms-Power-User hinzufügen. Ebenso können Vorlagen-Autoren den Code-Editor im Regel-Editor nicht mehr verwenden. Damit Benutzer den Code-Editor verwenden können, fügen Sie sie der Gruppe „af-template-script-writers“ hinzu. For instructions on adding users to groups, see [Managing Users and User Groups](/help/communities/users.md).
+1. In AEM Forms 6.4 und 6.5 werden einige Rechte der Benutzergruppen für Formulare geändert. Wenn Sie möchten, dass Ihre Benutzer XDPs und adaptive Formulare hochladen können, die Skripte enthalten oder den Code-Editor verwenden, müssen Sie sie der Gruppe der Forms-Power-User hinzufügen. Ebenso können Vorlagen-Autoren den Code-Editor im Regel-Editor nicht mehr verwenden. Damit Benutzer den Code-Editor verwenden können, fügen Sie sie der Gruppe „af-template-script-writers“ hinzu. Anweisungen zum Hinzufügen von Benutzern zu Gruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
 
