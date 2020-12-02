@@ -30,7 +30,7 @@ Beispiel: In diesem Karussellbanner verwenden Sie den Produktselektor, wenn Sie 
 
 Wenn Sie auswählen (statt dies manuell einzugeben), wo sich Hotspots oder Imagemaps befinden sollen, verwenden Sie den Selektor. Der Site-Selektor funktioniert nur, wenn Sie AEM Sites-Kunde sind. Der Produktselektor erfordert außerdem AEM Commerce.
 
-## Selecting products {#selecting-products}
+## Auswählen von Produkten {#selecting-products}
 
 Verwenden Sie den Produktselektor, um ein Produkt auszuwählen, wenn Sie möchten, dass ein Hotspot oder eine Imagemap eine Schnellansicht zu einem bestimmten Produkt in Ihrem Produktkatalog zur Verfügung zu stellt.
 
