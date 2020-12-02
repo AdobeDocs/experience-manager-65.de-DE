@@ -12,6 +12,9 @@ discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 61%
 
 ---
 
@@ -26,7 +29,7 @@ Mit dem Seitenvergleich können Benutzer die aktuelle Seite mit Launches, frühe
 
 ## Vorgangsdetails {#operation-details}
 
-Beim Vergleich von Versionen einer Seite wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich](/help/sites-developing/pagediff.md#operation-details)nebeneinander gerendert werden kann.
+Beim Vergleich von Seitenversionen wird die vorherige Version, die der Benutzer vergleichen möchte, von AEM im Hintergrund neu erstellt, um den Unterschied zu erleichtern. Dies ist erforderlich, damit der Inhalt [für einen Vergleich nebeneinander](/help/sites-developing/pagediff.md#operation-details) gerendert werden kann.
 
 Dieser Erholungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert kein Eingreifen. Administratoren, die das Repository beispielsweise in CRX DE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
 
@@ -34,11 +37,11 @@ Beim Vergleich von Inhalten wird die gesamte Struktur bis zur zu vergleichenden 
 
 `/tmp/versionhistory/`
 
-Eine Bereinigungsaufgabe wird automatisch ausgeführt, um diesen temporären Inhalt zu bereinigen.
+Eine Bereinigungs-Aufgabe wird automatisch ausgeführt, um diesen temporären Inhalt zu bereinigen.
 
 ## Berechtigungen {#permissions}
 
-Previously, in Classic UI, special development consideration had to be made to facilitate AEM diffing (such as using `cq:text` tag lib, or custom integrating the `DiffService` OSGi service into components). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
+In der klassischen Benutzeroberfläche mussten bisher besondere Entwicklungsabwägungen vorgenommen werden, um die AEM zu vereinfachen (z. B. `cq:text` tag lib oder benutzerspezifische Integration des `DiffService` OSGi-Dienstes in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
 
 Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
 
