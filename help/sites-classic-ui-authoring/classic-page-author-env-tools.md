@@ -152,7 +152,7 @@ Sie können beliebig viele Platzhalter in einer Abfrage verwenden.
 
 >[!NOTE]
 >
->You can also use [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) search.
+>Sie können auch die [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html)-Suche verwenden.
 
 ## Anzeigen von Verweisen {#showing-references}
 
@@ -164,7 +164,7 @@ So zeigen Sie direkte Seitenverweise an:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
+1. Wählen Sie **Referenzen anzeigen...** AEM öffnet das Fenster &quot;Referenzen&quot;und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -185,9 +185,9 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 ## Seiteninformationen {#page-information}
 
-The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
+Die Website-Konsole bietet auch Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), wie Veröffentlichung, Änderung, Sperrung, Livecopy usw.[
 
-## Seitenmodi   {#page-modes}
+## Seitenmodi    {#page-modes}
 
 Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie verschiedene Modi über die Symbole unten im Sidekick aufrufen:
 
