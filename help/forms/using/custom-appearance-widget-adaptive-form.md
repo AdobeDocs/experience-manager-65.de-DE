@@ -30,13 +30,13 @@ Werfen wir einen Blick auf die in diesem Artikel verwendeten Schlüsselbegriffe 
 
 **Erscheinungsbild** bezieht sich auf den Stil, das Erscheinungsbild und die Organisation verschiedener Elemente eines adaptiven Formularfelds. Es umfasst in der Regel eine Beschriftung, einen interaktiven Bereich für Eingaben, ein Hilfesymbol und kurze und lange Beschreibungen des Feldes. Die in diesem Artikel besprochene Anpassung des Erscheinungsbilds gilt für das Erscheinungsbild des Feld-Eingabebereichs.
 
-**jQuery-Plugin** Stellt einen Standardmechanismus bereit, der auf dem jQuery-Widget-Framework basiert, um ein alternatives Erscheinungsbild zu implementieren.
+**jQuery** pluginStellt einen Standardmechanismus bereit, der auf dem jQuery Widget-Framework basiert, um ein alternatives Erscheinungsbild zu implementieren.
 
-**ClientLib** Ein clientseitiges Bibliothekssystem in der clientseitigen AEM-Verarbeitung, das durch komplexen JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie unter Verwenden clientseitiger Bibliotheken.
+**** ClientLibEin clientseitiges Bibliothekssystem in AEM clientseitigen Verarbeitung, die von komplexem JavaScript- und CSS-Code gesteuert wird. Weitere Informationen finden Sie unter Verwenden clientseitiger Bibliotheken.
 
-**Archetype** A Maven Project Templating Toolkit definiert als ein Originalmuster oder -modell für Maven Projekte. Weitere Informationen finden Sie unter Einführung in Archetypen.
+**** ArchetypeEin Maven-Projektvorlagen-Toolkit, das als Originalmuster oder -modell für Maven-Projekte definiert wurde. Weitere Informationen finden Sie unter Einführung in Archetypen.
 
-**Benutzersteuerelement** bezieht sich auf das Hauptelement in einem Widget, das den Wert des Felds enthält, und wird vom Erscheinungsbild-Framework zum Binden der benutzerdefinierten Widget-Benutzeroberfläche an das adaptive Formularmodell verwendet.
+**Benutzersteuerelement** bezieht sich auf das Hauptelement in einem Widget, das den Wert des Felds enthält, und wird vom Erscheinungsbild-Framework verwendet, um die benutzerdefinierte Widget-Benutzeroberfläche mit dem adaptiven Formularmodell zu binden.
 
 ## Schritte zum Erstellen eines benutzerdefinierten Erscheinungsbilds {#steps-to-create-a-custom-appearance}
 
@@ -114,7 +114,7 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
 
 1. Schließen Sie die Plugin-Abhängigkeit des Fremdanbieters in das Projekt ein.
 
-   1. Place the third-party or custom jQuery plugins in the `jqueryplugin/javascript` folder and related CSS files in the `jqueryplugin/css` folder. For more details, see the JS and CSS files under the `jqueryplugin/javascript and jqueryplugin/css` folder.
+   1. Platzieren Sie die Drittanbieter- oder benutzerdefinierten jQuery-Plugins im Ordner `jqueryplugin/javascript` und die zugehörigen CSS-Dateien im Ordner `jqueryplugin/css`. Weitere Informationen finden Sie in den JS- und CSS-Dateien im Ordner `jqueryplugin/javascript and jqueryplugin/css`.
 
    1. Ändern Sie die Dateien `js.txt` und `css.txt`, um jede zusätzliche JavaScript- und CSS-Datei des jQuery-Plugins einzuschließen.
 
@@ -128,13 +128,13 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. For example, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;li&gt;</code>. The returned element is used as <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td>
+   <td>Die Renderfunktion gibt das jQuery-Objekt für das standardmäßige HTML-Element des Widgets zurück. Das standardmäßige HTML-Element sollte fokussierbar sein. Beispiel: <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> und <code>&lt;li&gt;</code>. Das zurückgegebene Element wird als <code>$userControl</code> verwendet. Wenn <code>$userControl</code> die obige Beschränkung angibt, funktionieren die Funktionen der <code>AbstractWidget</code>-Klasse erwartungsgemäß, andernfalls müssen einige der allgemeinen APIs (focus, click) geändert werden. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
    <td>Gibt eine Zuordnung zur Konvertierung von HTML-Elementen zu XFA-Ereignissen zurück. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Dieses Beispiel zeigt, dass <code>blur</code> es sich um ein HTML-Ereignis handelt und <code>XFA_EXIT_EVENT</code> das entsprechende XFA-Ereignis ist. </td>
+      }</code><br /> Dieses Beispiel zeigt, dass  <code>blur</code> es sich um ein HTML-Ereignis handelt und das entsprechende XFA-Ereignis  <code>XFA_EXIT_EVENT</code> ist. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -146,18 +146,18 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
   </tr>
   <tr>
    <td><code>showValue</code></td>
-   <td>Standardmäßig wird in XFA beim Ereignis „enter“ der <code>rawValue</code> des Felds angezeigt. This function is called to show the <code>rawValue</code> to the user. </td>
+   <td>Standardmäßig wird in XFA beim Ereignis „enter“ der <code>rawValue</code> des Felds angezeigt. Diese Funktion wird aufgerufen, um dem Benutzer das <code>rawValue</code> anzuzeigen. </td>
   </tr>
   <tr>
    <td><code>showDisplayValue</code></td>
-   <td>Standardmäßig wird in XFA beim Ereignis „exit“ der <code>formattedValue</code> des Felds angezeigt. This function is called to show the <code>formattedValue</code> to the user. </td>
+   <td>Standardmäßig wird in XFA beim Ereignis „exit“ der <code>formattedValue</code> des Felds angezeigt. Diese Funktion wird aufgerufen, um dem Benutzer das <code>formattedValue</code> anzuzeigen. </td>
   </tr>
  </tbody>
 </table>
 
 1. Aktualisieren Sie bei Bedarf die JavaScript-Datei im Ordner `integration/javascript`.
 
-   * Replace the text `__widgetName__` with the actual widget name.
+   * Ersetzen Sie den Text `__widgetName__` durch den tatsächlichen Widget-Namen.
    * Erweitern Sie das Widget aus einer geeigneten, sofort einsetzbaren Widget-Klasse. In den meisten Fällen handelt es sich dabei um die Widget-Klasse, die mit dem vorhandenen Widget übereinstimmt, das ersetzt wird. Der Name der übergeordneten Klasse wird an mehreren Standorten verwendet, daher wird empfohlen, nach allen Instanzen der Zeichenfolge `xfaWidget.textField` in der Datei zu suchen und sie durch die eigentliche übergeordnete Klasse zu ersetzen, die verwendet wird.
    * Erweitern Sie die Methode `render`, um eine alternative UI bereitzustellen. Das ist der Standort, von dem aus das jQuery-Plugin aufgerufen wird, um die UI oder das Interaktionsverhalten zu aktualisieren. Die Methode `render` sollte ein Benutzersteuerelement zurückgeben.
 
@@ -189,9 +189,9 @@ So wenden Sie das benutzerdefinierte Erscheinungsbild auf ein adaptives Formular
 
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus.
 1. Öffnen Sie das Dialogfeld **Eigenschaft** für das Feld, auf das Sie das benutzerdefinierte Erscheinungsbild anwenden möchten.
-1. In the **Styling** tab, update the `CSS class` property to add the appearance name in the `widget_<widgetName>` format. Beispiel: **widget_numericstepper**
+1. Aktualisieren Sie auf der Registerkarte **Stile** die Eigenschaft `CSS class`, um den Namen des Erscheinungsbilds im Format `widget_<widgetName>` hinzuzufügen. Beispiel: **widget_numericstepper**
 
-## Beispiel: Benutzerspezifische Berichte erstellen   {#sample-create-a-custom-appearance-nbsp}
+## Beispiel: Benutzerspezifische Berichte erstellen    {#sample-create-a-custom-appearance-nbsp}
 
 Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erscheinungsbild für ein numerisches Feld zu erstellen, damit es als numerischer Schritt oder Schieberegler dargestellt wird. Führen Sie die folgenden Schritte durch:
 
@@ -236,18 +236,18 @@ Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erschein
 
    Überprüfen Sie im Eclipse-Projekt die Datei `plugin.js`, um sicherzustellen, dass sie mit den Anforderungen für das Erscheinungsbild übereinstimmt. In diesem Beispiel erfüllt das Erscheinungsbild die folgenden Anforderungen:
 
-   * The numeric stepper should extend from `- $.xfaWidget.numericInput`.
+   * Die numerischen Schritte sollten von `- $.xfaWidget.numericInput` ausgehen.
    * Die Methode `set value` des Widgets legt den Wert fest, nachdem der Fokus auf das Feld festgelegt wurde. Es ist eine obligatorische Anforderung für das Widget eines adaptiven Formulars.
    * Die Methode `render` muss überschrieben werden, um die Methode `bootstrapNumber` aufzurufen.
 
    * Mit Ausnahme des Haupt-Quellcodes gibt es für das Plugin keine zusätzliche Abhängigkeit.
    * In dem Beispiel werden keine Stile auf die Schritte angewendet und daher ist kein zusätzliches CSS erforderlich.
-   * The `$userControl` object should be available to the `render` method. Es ist ein Feld vom Typ `text`, das mit dem Plugin-Typ geklont wird.
+   * Das `$userControl`-Objekt sollte für die `render`-Methode verfügbar sein. Es ist ein Feld vom Typ `text`, das mit dem Plugin-Typ geklont wird.
 
    * Die Schaltflächen **+** und **-** sollten deaktiviert werden, wenn das Feld deaktiviert wird.
 
 1. Ersetzen Sie den Inhalt des `bootstrap-number-input.js` (jQuery-Plugin) mit dem Inhalt der `numericStepper-plugin.js`-Datei.
-1. In the `numericStepper-widget.js` file, add the following code to override the render method to invoke the plugin and return the `$userControl` object:
+1. Fügen Sie in der Datei `numericStepper-widget.js` den folgenden Code hinzu, um die Methode render zu überschreiben, um das Plug-In aufzurufen und das `$userControl`-Objekt zurückzugeben:
 
    ```javascript
    render : function() {
@@ -267,7 +267,7 @@ Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erschein
    }
    ```
 
-1. In the `numericStepper-widget.js` file, override the `getOptionsMap` property to override the access option, and hide the + and - buttons in disabled mode.
+1. Überschreiben Sie in der Datei `numericStepper-widget.js` die Eigenschaft `getOptionsMap`, um die Zugriffsoption zu überschreiben, und blenden Sie die Schaltflächen + und - im deaktivierten Modus aus.
 
    ```javascript
    getOptionsMap: function(){
@@ -309,7 +309,7 @@ Werfen wir nun einen Blick auf ein Beispiel, um ein benutzerdefiniertes Erschein
     }
    ```
 
-1. Save the changes, navigate to the folder containing the `pom.xml` file, and execute the following Maven command to build the project:
+1. Speichern Sie die Änderungen, navigieren Sie zum Ordner mit der Datei `pom.xml` und führen Sie den folgenden Maven-Befehl aus, um das Projekt zu erstellen:
 
    `mvn clean install`
 
