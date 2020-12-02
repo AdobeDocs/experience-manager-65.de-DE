@@ -12,6 +12,9 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 88%
 
 ---
 
@@ -64,12 +67,12 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   </tr>
   <tr>
    <td>XFA-Skript-API</td>
-   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. For details list of supported constructs, see <a href="/help/forms/using/scripting-support.md">scripting support</a>.</td>
+   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Weitere Informationen zur Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td>
    <td>Unterstützt alle XFA-Skriptkonstrukte.</td>
   </tr>
   <tr>
    <td>Acrobat-Skript-APIs </td>
-   <td>HTML5-Formulare unterstützen die am häufigsten verwendeten APIs. For details, see <a href="/help/forms/using/scripting-support.md">scripting support</a>.</td>
+   <td>HTML5-Formulare unterstützen die am häufigsten verwendeten APIs. Weitere Informationen finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td>
    <td>Wenn die PDF-Datei in Acrobat oder Reader geöffnet ist, unterstützt sie auch alle Skript-APIs, die Acrobat bereitstellt.</td>
   </tr>
   <tr>
