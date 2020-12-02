@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ Weitere Informationen zum Verbessern der Leistung bei der Datenbank- und Ordners
 
 Wenn Sie einen SSL-aktivierten LDAP-Server verwenden, konfigurieren Sie User Management für die Zusammenarbeit mit dem Server. (Siehe [User Management für einen SSL-aktivierten LDAP-Server konfigurieren](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
 
-## Zugriffsrechte für die Verwendung mit Document Security festlegen {#setting-user-privileges-for-use-with-document-security}
+## Zugriffsrechte für die Verwendung mit Document Security festlegen  {#setting-user-privileges-for-use-with-document-security}
 
 Erstellen Sie einen administrativen Benutzer, der über die benötigten Berechtigungen zum Erstellen von Benutzern und Gruppen verfügt. Wenn Ihre AEM Forms-Umgebung Document Security enthält, gewähren Sie die Berechtigung zum Verwalten von eingeladenen und lokalen Benutzern einem Benutzer, der der Administrator für diese Benutzer ist. Weisen Sie außerdem die Administration Console-Benutzerrolle zu, um dem Benutzer Zugriff auf Administration Console zu ermöglichen. (Siehe [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
@@ -37,7 +40,7 @@ Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschr�
 >
 >Das Erstellen von Domänen muss vor dem Erstellen von Richtlinien erfolgen.
 
-### Sichtbare Benutzer und Gruppen festlegen {#set-visible-users-and-groups}
+### Sichtbare Benutzer und Gruppen festlegen  {#set-visible-users-and-groups}
 
 Richten Sie nach der Installation und Konfiguration der AEM Forms-Umgebung mit Document Security alle gewünschten Domänen in User Management ein.
 
@@ -47,7 +50,7 @@ Richten Sie nach der Installation und Konfiguration der AEM Forms-Umgebung mit D
 1. Wechseln Sie zu „Dienste“ > „Document Security“ > „Meine Richtlinien“ und klicken Sie auf die Registerkarte „Sichtbare Benutzer und Gruppen“.
 1. Klicken Sie auf „Domäne(n) hinzufügen“ und fügen Sie den Anforderungen entsprechend vorhandene Domänen hinzu.
 
-## Für den administrativen Benutzer geltende Einschränkungen {#administrator-user-restrictions}
+## Für den administrativen Benutzer geltende Einschränkungen  {#administrator-user-restrictions}
 
 Benutzer mit bestimmten Arten von Administratorberechtigungen dürfen aus Sicherheitsgründen nicht auf Workspace-Webseiten für Endbenutzer zugreifen. Da sich diese Webseiten außerhalb einer Firewall befinden können, ist das Zulassen von Aufgaben auf Administratorebene möglicherweise ein Sicherheitsrisiko. Nur Benutzer mit Administrator- oder Workspace User-Berechtigungen dürfen auf die Workspace-Webseiten für Endbenutzer zugreifen.
 
