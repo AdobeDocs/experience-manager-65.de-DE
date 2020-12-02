@@ -20,9 +20,9 @@ ht-degree: 39%
 
 # Verwenden von Bewertungen und Bewertungszusammenfassung (Anzeige) {#using-reviews-and-reviews-summary-display}
 
-The `Reviews` component is a composite of [Comments](comments.md) and [Rating](rating.md) components ready for use.
+Die Komponente `Reviews` ist ein Composite von Komponenten [Kommentare](comments.md) und [Bewertung](rating.md), die einsatzbereit sind.
 
-The `Reviews Summary (Display)` component provides a summary of an active or closed instance of a `Reviews` component for display elsewhere on the site.
+Die Komponente `Reviews Summary (Display)` stellt eine Zusammenfassung einer aktiven oder geschlossenen Instanz einer Komponente `Reviews` bereit, die an einer anderen Stelle auf der Site angezeigt werden kann.
 
 >[!NOTE]
 >
@@ -30,21 +30,21 @@ The `Reviews Summary (Display)` component provides a summary of an active or clo
 
 ## Hinzufügen einer Bewertung zu einer Seite {#adding-a-review-to-a-page}
 
-Wenn Sie einer Seite im Autorenmodus eine `Reviews` Komponente hinzufügen möchten, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Reviews` und an ihre Position auf einer Seite zu ziehen, z. B. eine Position relativ zur Funktion, die Benutzer überprüfen können.
+Um einer Seite im Autorenmodus eine `Reviews`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach `Communities / Reviews` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, die Benutzer überprüfen müssen.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews` component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](reviews-basics.md#essentials-for-client-side) einbezogen werden, wird die `Reviews`-Komponente so angezeigt.
 
 ![create-review](assets/create-review.png)
 
 ## Konfigurieren von Bewertungen {#configuring-reviews}
 
-Select the placed `Reviews` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Reviews` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
-Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of ratings to be shown to members. The first rating should be an overall/general rating, as it is the rating which provides the average rating for the `Review Summary (Display)` component. Die nächsten beiden Ratings in der Standardkonfiguration sollten einen anderen Titel erhalten als &quot;Unterbewertung 1&quot;oder &quot;Unterbewertung 2&quot;.
+Geben Sie unter der Registerkarte **[!UICONTROL Zulässige Bewertungen]** die vollständige Liste der Bewertungen an, die den Mitgliedern angezeigt werden sollen. Das erste Rating sollte ein allgemeines Rating sein, da es das Rating ist, das das durchschnittliche Rating für die Komponente `Review Summary (Display)` liefert. Die nächsten beiden Ratings in der Standardkonfiguration sollten einen anderen Titel erhalten als &quot;Unterbewertung 1&quot;oder &quot;Unterbewertung 2&quot;.
 
 ![allowed-rating](assets/configure-review1.png)
 
@@ -56,7 +56,7 @@ Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of rat
 
    Klicken Sie auf **[!UICONTROL Element hinzufügen]**, um eine weitere Bewertungsmöglichkeit hinzuzufügen.
 
-Under the **[!UICONTROL Required Ratings]** tab, re-enter items from the list of **[!UICONTROL Allowed Ratings]** that are required to be rated. Wird ein Element lediglich auf der Registerkarte „Zulässige Bewertungen“ genannt, können die Mitglieder dieses Element unbewertet lassen.
+Geben Sie unter der Registerkarte **[!UICONTROL Erforderliche Bewertungen]** erneut Elemente aus der Liste **[!UICONTROL Zulässige Bewertungen]** ein, die bewertet werden müssen. Wird ein Element lediglich auf der Registerkarte „Zulässige Bewertungen“ genannt, können die Mitglieder dieses Element unbewertet lassen.
 
 Auf der Webseite werden erforderliche Bewertungen durch einen Stern gekennzeichnet. Ist die Bewertung eines Elements erforderlich, das jedoch nicht bewertet wurde, erhält das Mitglied eine Meldung und kann das Formular erst absenden, wenn das erforderliche Element bewertet wurde.
 
@@ -72,9 +72,9 @@ Auf der Webseite werden erforderliche Bewertungen durch einen Stern gekennzeichn
 
 >[!NOTE]
 >
->If an item is entered on the **[!UICONTROL Required Ratings]** tab that is not specified on the **[!UICONTROL Allowed Ratings]** tab, then it is not included in the items to rate.
+>Wenn auf der Registerkarte **[!UICONTROL Erforderliche Bewertungen]** ein Element eingegeben wird, das nicht auf der Registerkarte **[!UICONTROL Zulässige Bewertungen]** angegeben ist, wird es nicht in den zu bewertenden Elementen berücksichtigt.
 
-Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
+Geben Sie unter der Registerkarte **[!UICONTROL Reviews]** an, wie Reviews verarbeitet werden.
 
 ![Bewertungen](assets/configure-review3.png)
 
@@ -92,7 +92,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **Max. Dateigröße**
 
-   Relevant nur, wenn &quot;Datei-Uploads **[!UICONTROL zulassen]** &quot;aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 10 MB.
+   Relevant nur, wenn **[!UICONTROL Datei-Uploads zulassen]** aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 10 MB.
 
 * **[!UICONTROL Maximale Nachrichtenlänge]**
 
@@ -100,7 +100,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **[!UICONTROL Zulässige Dateitypen]**
 
-   Relevant nur, wenn &quot;Datei-Uploads **[!UICONTROL zulassen]** &quot;aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Relevant nur, wenn **[!UICONTROL Datei-Uploads zulassen]** aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
@@ -110,7 +110,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
    Wenn diese Option aktiviert ist, schließen Sie die Funktion &quot;Abstimmung&quot;für ein Thema ein. Diese Option ist standardmäßig deaktiviert.
 
-Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Geben Sie unter der Registerkarte **[!UICONTROL Benutzermoderation]** an, wie die veröffentlichten Reviews verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 
 ![user-moderation](assets/configure-review4.png)
 
@@ -152,15 +152,15 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 ### Hinzufügen einer Bewertungszusammenfassung (Anzeige) zu einer Seite {#adding-a-review-summary-display-to-a-page}
 
-To add a `Reviews Summary (Display)` component to a page in author mode, locate the component
+Um eine `Reviews Summary (Display)`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
 
 * `Communities / Reviews Summary (Display)`
 
 und ziehen Sie sie an eine Stelle, an der die Zusammenfassung einer aktiven oder geschlossenen Bewertung angezeigt werden soll.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews Summary (Display)`component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](reviews-basics.md#essentials-for-client-side) einbezogen werden, wird die `Reviews Summary (Display)`Komponente so angezeigt.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -170,7 +170,7 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 
 ### Konfigurieren von Bewertungszusammenfassungen (Anzeige) {#configuring-reviews-summary-display}
 
-Select the placed `Reviews Summary (Display)` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Reviews Summary (Display)` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -180,7 +180,7 @@ Auf der Registerkarte **[!UICONTROL Bewertungszusammenfassung]** können Sie Fol
 
 * `Review Path`
 
-   Geben Sie die platzierte Instanz der `reviews`Komponente ein oder navigieren Sie zu dieser, um sie zusammenzufassen. Wenn Sie sie der Webseite der [Geometrixx Engage-Site hinzufügen,](getting-started.md) lautet der Pfad:
+   Geben Sie die platzierte Instanz der Komponente `reviews`ein oder suchen Sie sie, um sie zusammenzufassen, wenn sie der Webseite der [Geometrixx Engage-Site hinzugefügt wird,](getting-started.md) der Pfad lautet:
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -194,15 +194,15 @@ Grundlage der Komponente „Bewertungen“ ist das Kommentarsystem.
 
 Durch Änderung des Kommentarressourcentyps generiert das Kommentarsystem nicht mehr mithilfe des Standardsystems eine Instanz eines Kommentars, sondern mithilfe einer Einstellung, die von Entwicklern definiert (erweitert) wurde.
 
-Once the custom resource types is known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Comments` component to open a dialog with an additional tab.
+Sobald die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie [Designmodus](../../help/sites-authoring/default-components-designmode.md) ein und klicken Sie mit der Dublette auf die platzierte `Comments`-Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
 
-Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
+Geben Sie auf der Registerkarte **[!UICONTROL Ressourcentypen]** den benutzerdefinierten resourceType für neue Instanzen der `Comments or Voting`-Komponenten an:
 
 ![comments-stimmberechtigt](assets/configure-review7.png)
 
 * **[!UICONTROL Kommentarressourcentyp]**
 
-   Navigieren Sie zum resourceType einer erweiterten `comment`Komponente (ein einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
+   Navigieren Sie zum resourceType einer erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
 
    Diese Ressource identifiziert den resourceType des UGC, der erstellt wird, wenn ein Besucher einen Kommentar veröffentlicht.
 
@@ -214,7 +214,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
 * **[!UICONTROL System-Ressourcen-Typ kommentieren]**
 
-   Navigieren Sie zum resourceType einer erweiterten `comments`Komponente (Kommentarsystem) in /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Weitere Informationen erhalten Sie in den Hilfethemen des[{{include}}-Helpers](handlebars-helpers.md#include).
+   Navigieren Sie zum resourceType einer erweiterten `comments`Komponente (Kommentarsystem) in /apps. Lassen Sie das Feld leer, es sei denn, die Seitenvorlage [enthält dynamisch](scf.md#add-or-include-a-communities-component) das Kommentarsystem im zugrunde liegenden Skript, anstatt der Seite als Ressource (Kommentarknoten) hinzugefügt zu werden. Weitere Informationen erhalten Sie in den Hilfethemen des[{{include}}-Helpers](handlebars-helpers.md#include).
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -222,7 +222,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
 Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er Moderationsaufgaben ausführen, die ihm durch die Komponentenkonfiguration gestattet werden, unabhängig davon, wer die Bewertung verfasst hat.
 
-### Mitglieder {#members}
+### Mitglieder  {#members}
 
 Wenn der Site-Besucher angemeldet ist, kann es je nach Konfiguration zu Folgendem kommen:
 
@@ -233,14 +233,14 @@ Wenn der Site-Besucher angemeldet ist, kann es je nach Konfiguration zu Folgende
 
 Pro Mitglied ist nur eine Bewertung zulässig.  Das Mitglied kann seine Meinung jedoch jederzeit ändern.
 
-### Anonym {#anonymous}
+### Anonym  {#anonymous}
 
 Nicht registrierte oder angemeldete Besucher können veröffentlichte Bewertungen lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Bewertungen hinzufügen und keine Kommentare anderer Benutzer kennzeichnen.
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Review Essentials](reviews-basics.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Grundlegende Elemente überprüfen](reviews-basics.md) für Entwickler.
 
-For moderation of posted comments, see [Moderating User Generated Content](moderate-ugc.md).
+Moderation geposteter Kommentare finden Sie unter [Moderieren von benutzergenerierten Inhalten](moderate-ugc.md).
 
 Informationen zur Übersetzung von Kommentaren finden Sie unter [Übersetzung benutzergenerierter Inhalte](translate-ugc.md).
