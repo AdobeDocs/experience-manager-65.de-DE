@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +40,7 @@ Nachdem diese Aufgaben freigegeben wurden, können Sie vom Benutzer, der Zugriff
 >
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
-### Zugriff auf ausgewählte Benutzerwarteschlangen konfigurieren {#configuring-access-to-a-selected-user-queue}
+### Zugriff auf ausgewählte Benutzerwarteschlangen konfigurieren  {#configuring-access-to-a-selected-user-queue}
 
 1. Melden Sie sich bei Administration Console mithilfe eines Administratorkontos an.
 1. Wählen **Dienste** > **Arbeitsablauf für Formulare** > **Freigegebene Warteschlange**.
@@ -46,7 +49,7 @@ Nachdem diese Aufgaben freigegeben wurden, können Sie vom Benutzer, der Zugriff
 1. Wählen Sie im unteren linken Fenster den Benutzer aus. Klicken Sie auf Freigeben.
 1. Klicken Sie dann auf „Speichern“.
 
-### Zugriff auf ausgewählte Benutzerwarteschlangen sperren {#revoking-access-to-a-selected-user-queue}
+### Zugriff auf ausgewählte Benutzerwarteschlangen sperren  {#revoking-access-to-a-selected-user-queue}
 
 1. Melden Sie sich bei Administration Console mithilfe eines Administratorkontos an.
 1. Wählen **Dienste** > **Arbeitsablauf für Formulare** > **Freigegebene Warteschlange**.
@@ -55,7 +58,7 @@ Nachdem diese Aufgaben freigegeben wurden, können Sie vom Benutzer, der Zugriff
 1. Das untere rechte Fenster zeigt die Liste von Benutzern an, die Zugriff auf die ausgewählte Benutzerwarteschlange haben. Wählen Sie den Benutzer und klicken Sie auf „Sperren“.
 1. Klicken Sie dann auf „Speichern“.
 
-## Einem Benutzer zugewiesene Warteschlangen verwalten {#managing-queues-assigned-to-a-user}
+## Einem Benutzer zugewiesene Warteschlangen verwalten  {#managing-queues-assigned-to-a-user}
 
 Mit der Funktion „Zugriff von einem Benutzer verwalten“ können Sie Warteschlangen verwalten, die einem ausgewählten Benutzer zugewiesen sind. Sie können Zugriff auf Benutzerwarteschlagen für einen ausgewählten Benutzer einzeln gewähren oder sperren. Z. B., wenn Sie Kara Bowman die Benutzerwarteschlangen von Akira Tanaka und John Jacobs zuweisen möchten. Mit der Funktion „Zugriff von einem Benutzer verwalten“ können Sie nach Kara Bowman suchen und Zugriff auf Aufgaben gewähren, die Akira Tanaka und John Jacobs zugewiesen sind. Später können Sie den Zugriff von Kara Bowman auf diese Benutzerwarteschlangen löschen.
 
@@ -65,7 +68,7 @@ Nachdem diese Aufgaben zugewiesen wurden, können sie vom Benutzer, der Workspac
 >
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
-### Zugriff auf ausgewählte Benutzerwarteschlangen gewähren {#granting-access-to-a-selected-user-queue}
+### Zugriff auf ausgewählte Benutzerwarteschlangen gewähren  {#granting-access-to-a-selected-user-queue}
 
 1. Melden Sie sich bei Administration Console mithilfe eines Administratorkontos an.
 1. Wählen **Dienste** > **Arbeitsablauf für Formulare** > **Freigegebene Warteschlange**.
@@ -74,7 +77,7 @@ Nachdem diese Aufgaben zugewiesen wurden, können sie vom Benutzer, der Workspac
 1. Wählen Sie im unteren linken Fenster Benutzerwarteschlangen, die Sie für die ausgewählten Benutzer freigeben möchten. Klicken Sie auf Freigeben.
 1. Klicken Sie dann auf „Speichern“.
 
-### Zugriff auf ausgewählte Benutzerwarteschlangen sperren {#revoking_access_to_a_selected_user_queue-1}
+### Zugriff auf ausgewählte Benutzerwarteschlangen sperren  {#revoking_access_to_a_selected_user_queue-1}
 
 1. Melden Sie sich bei Administration Console mithilfe eines Administratorkontos an.
 1. Wählen **Dienste** > **Arbeitsablauf für Formulare** > **Freigegebene Warteschlange**.
