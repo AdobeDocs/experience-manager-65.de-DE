@@ -33,7 +33,7 @@ Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Blog
 
 ## Grundlagen für clientseitige {#essentials-for-client-side}
 
-Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem Sie die [Blog-Funktion](/help/communities/functions.md#blog-function) hinzufügen oder die Komponenten einer Seite im Autorenbearbeitungsmodus hinzufügen.
+Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem Sie die Funktion [Blog](/help/communities/functions.md#blog-function) hinzufügen oder die Komponenten einer Seite im Bearbeitungsmodus des Autors hinzufügen.
 
 ### Blog {#blog}
 
@@ -49,7 +49,7 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stimting<br /> cq.social.hbs.Protokoll</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stimms<br /> cq.social.hbs.Protokoll</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -88,31 +88,31 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die verfügbar sind, indem 
 
 ### Blogfunktion {#blog-function}
 
-Eine Community-Site-Struktur, die die [Blog-Funktion](/help/communities/functions.md#blog-function) enthält, verfügt über konfigurierte `Blog` und `Blog Sidebar` Komponenten. Die Blog-Funktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](/help/communities/users.md#privileged-members-group).
+Eine Community-Site-Struktur, die die [Blog-Funktion](/help/communities/functions.md#blog-function) enthält, hat `Blog`- und `Blog Sidebar`-Komponenten konfiguriert. Die Blog-Funktion unterstützt die Identifizierung einer [privilegierten Benutzergruppe](/help/communities/users.md#privileged-members-group).
 
 ### Zugriff auf Blog-Einträge (UGC) {#accessing-blog-entries-ugc}
 
 UGC sollte mithilfe einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](/help/communities/working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities umfasst die Verwendung eines [gemeinsamen Speichers](/help/communities/working-with-srp.md) für UGC Programmierungszugriff auf UGC, unabhängig von der gewählten Datenspeicherung (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format des UGC im Repository können ohne Warnung** geändert werden.
 
 Siehe :
 
-* [Übersicht über](/help/communities/srp.md) den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
-* [SRP und UGC Essentials](/help/communities/srp-and-ugc.md) - SRP Dienstprogrammmethoden und Beispiele.
-* [Zugriff auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) - Codierungsrichtlinien.
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
+* [Übersicht über](/help/communities/srp.md)  den Datenspeicherung Resource Provider - Einführung und Übersicht über die Repository-Nutzung.
+* [SRP und UGC Essentials](/help/communities/srp-and-ugc.md)  - SRP Dienstprogrammmethoden und Beispiele.
+* [Zugriff auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) -Codierungsrichtlinien.
+* [SocialUtils Refactoring](/help/communities/socialutils.md)  - Zuordnen von nicht mehr unterstützten Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
 ## Primär Publisher {#primary-publisher}
 
 Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, müssen Sie einen primären Herausgeber identifizieren, der nach Artikeln sucht, deren Veröffentlichung geplant ist.
 
-Weitere Informationen finden Sie unter [Primär Publisher](/help/communities/deploy-communities.md#primary-publisher) .
+Weitere Informationen finden Sie unter [Primär Publisher](/help/communities/deploy-communities.md#primary-publisher).
 
-## Rich Media zulassen {#allowing-rich-media}
+## Zulassen von Rich Media {#allowing-rich-media}
 
 Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie in
 
@@ -120,7 +120,7 @@ Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhi
 
 Ab AEM 6.2 sind die zuvor manuell vorzunehmenden Änderungen in der standardmäßigen AntiSamy-Konfigurationsdatei enthalten.
 
-Rich-Media-Daten werden durch Auswahl des `Embed Media from External Sites` Symbols in einen Blog-Artikel eingebettet:
+Rich-Media-Daten werden in einen Blog-Artikel eingebettet, indem Sie das `Embed Media from External Sites`-Symbol auswählen:
 
 ![media](assets/media-icon.png)
 
