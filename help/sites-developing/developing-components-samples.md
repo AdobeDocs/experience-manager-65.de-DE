@@ -12,6 +12,9 @@ discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +36,7 @@ Informationen zur klassischen Benutzeroberfläche finden Sie unter [AEM-Komponen
 >
 >* [Entwicklermodus](/help/sites-developing/developer-mode.md)
 >* ein [Framework zum Automatisieren von Tests, basierend auf der Hobbes.js-Bibliothek](/help/sites-developing/hobbes.md)
+
 >
 
 
@@ -44,7 +48,7 @@ CODE AUF GITHUB
 Den Code dieser Seite finden Sie auf GitHub
 
 * [Open aem-authoring-dialog-fields-customization project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip) herunter
+* Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip) herunter.
 
 >[!NOTE]
 >
