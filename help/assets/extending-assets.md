@@ -1,5 +1,5 @@
 ---
-title: Anpassen und Erweitern [!DNL Assets]
+title: ' [!DNL Assets] anpassen und erweitern'
 description: Informieren Sie sich, wie Sie die Asset-Freigabe und den Asset-Editor anpassen und erweitern können, um Benutzern eine maßgeschneiderte Oberfläche und passende Funktionen zur Verfügung zu stellen.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 57%
 ---
 
 
-# Anpassen und Erweitern [!DNL Assets] {#customizing-and-extending-assets}
+# [!DNL Assets] {#customizing-and-extending-assets} anpassen und erweitern
 
 Der Asset-Editor ist der Hauptzugriff, den Benutzer einer Adobe Enterprise Manager-Website zum Suchen, Ansichten und Manipulieren der digitalen Assets in Ihrem Repository verwenden.
 
-As an [!DNL Experience Manager] developer, you can customize and extend the Asset Editor in a number of ways, presenting users with a specifically tailored interface and set of functionality.
+Als [!DNL Experience Manager]-Entwickler können Sie den Asset-Editor auf verschiedene Weise anpassen und erweitern, indem Sie den Benutzern eine speziell angepasste Oberfläche und eine Reihe von Funktionen präsentieren.
 
 Die folgenden Funktionen können angepasst bzw. verbessert werden:
 
@@ -26,7 +26,7 @@ Die folgenden Funktionen können angepasst bzw. verbessert werden:
 * [Asset Proxy-Entwicklung](proxy.md)
 * [Empfohlene Vorgehensweisen zum Konfigurieren von ImageMagick](best-practices-for-imagemagick.md)
 
-## Erscheinungsbild anpassen {#customizing-the-look-and-feel}
+## Erscheinungsbild {#customizing-the-look-and-feel} anpassen
 
 Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 
@@ -34,8 +34,8 @@ Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 * Farben und Schriftarten: Sie können die Farben und Schriftarten ändern, die in der Benutzeroberfläche verwendet werden.
 * HTML-Code: Zur besseren Anpassung können Sie den zugrunde liegenden HTML-Code ändern, der die Benutzeroberflächen definiert.
 
-## Darstellungen anpassen {#customizing-renditions}
+## Darstellungen {#customizing-renditions} anpassen
 
-In [!DNL Experience Manager Assets] terminology a rendition is the form in which an asset is presented. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
+In der [!DNL Experience Manager Assets]-Terminologie ist eine Darstellung das Formular, in dem ein Asset angezeigt wird. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
 
 Die Ausgabeformate, in denen ein bestimmtes Asset verfügbar ist, können angepasst werden und es können neue Ausgaben erstellt haben.
