@@ -36,15 +36,15 @@ Die folgenden Quick-Beginn sind für den Aufgabe Manager-Dienst verfügbar.
 
 [Quick Beginn (SOAP-Modus): Abrufen von Informationen zur Aufgabe mit der Java-API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten API von AEM Forms ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP eingestellt sein.
 
 >[!NOTE]
 >
->Sie können nicht mit der Web-Service-API nach Aufgaben suchen, die Benutzern zugewiesen wurden. Der Grund dafür ist, dass Sie die `taskList` Methode nicht aufrufen können. Dies ist ein erforderlicher Methodenaufruf zur Durchführung dieser Aufgabe.
+>Sie können nicht mit der Web-Service-API nach Aufgaben suchen, die Benutzern zugewiesen wurden. Der Grund dafür ist, dass Sie die `taskList`-Methode nicht aufrufen können. Dies ist ein erforderlicher Methodenaufruf zur Durchführung dieser Aufgabe.
 
 >[!NOTE]
 >
->Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Formularserver-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Beginn unter Programmieren mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Beginn (SOAP-Modus): Zuweisen von Aufgaben mit der Java-API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -268,7 +268,7 @@ Im folgenden Java-Codebeispiel wird eine Aufgabe gesperrt, die dem Aufgaben-ID-W
  
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen von Aufgaben, die Benutzern mit der Java-API zugewiesen wurden {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Abrufen von Aufgaben, die Benutzern mit der Java-API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api} zugewiesen wurden
 
 Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die einem Benutzer mit dem Namen *tony blue* zugewiesen sind. Beachten Sie, dass dieser Benutzer in den Verbindungseigenschaften angegeben ist. Es werden Informationen zu zurückgegebenen Aufgaben, z. B. deren Bezeichnerwert und Beschreibung, angezeigt.
 
@@ -716,7 +716,7 @@ Im folgenden Java-Codebeispiel werden Dateianlagen abgerufen. Jede Dateianlage w
 
 ## Quick Beginn (SOAP-Modus): Abrufen von Informationen zur Aufgabe mit der Java-API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die auf einem Prozess mit dem Namen *MortgageLoan - Prebuild* basieren. Der Status jeder zurückgegebenen Aufgabe wird überprüft, um sicherzustellen, dass es sich um eine abgeschlossene Aufgabe handelt. Informationen wie der Name des Benutzers, der die Aufgabe abgeschlossen hat, und das Datum, an dem die Aufgabe abgeschlossen wurde, werden abgerufen und angezeigt.
+Im folgenden Java-Codebeispiel werden alle Aufgaben abgerufen, die auf einem Prozess mit dem Namen *Hypothekendarlehen - Vorgefertigt* basieren. Der Status jeder zurückgegebenen Aufgabe wird überprüft, um sicherzustellen, dass es sich um eine abgeschlossene Aufgabe handelt. Informationen wie der Name des Benutzers, der die Aufgabe abgeschlossen hat, und das Datum, an dem die Aufgabe abgeschlossen wurde, werden abgerufen und angezeigt.
 
 ```java
  /*
