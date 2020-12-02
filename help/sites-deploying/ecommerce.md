@@ -10,6 +10,9 @@ content-type: reference
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5d46836a8b7b66daa8f27bc6fad14319ab1f58a7
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 56%
 
 ---
 
@@ -23,22 +26,22 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
 |  | CIF On-Premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Unterstützte AEM-Versionen | AEM On-Premise oder AMS 6.x | AEM AMS 6.4 und 6.5 |
-| Back-End | - AEM, Java <br> - Monolithische Integration, vorgefertigte Zuordnung (Vorlage)<br> - JCR-Repository | - Magento <br>- Java und Javascript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
+| Back-End | - AEM, Java <br> - Monolithische Integration, vorgefertigte Zuordnung (Vorlage)<br> - JCR-Repository | - Magento <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
 | Front-End | Server-seitig wiedergegebene AEM-Seiten | Gemischte Seitenanwendung (hybrides Rendering) |
-| Produktkatalog | - Produkt-Importer, Editor, Zwischenspeicherung in AEM <br>- Normale Kataloge mit AEM- oder Proxyseiten | - Kein Produktimport <br>- Allgemeine Vorlagen <br>- On-Demand-Daten über Connector |
-| Skalierbarkeit | - Kann bis zu einigen Millionen Produkte unterstützen (je nach Anwendungsfall) <br> - Zwischenspeicherung unter Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung auf Dispatcher oder CDN |
+| Produktkatalog | - Product Importer, Editor, Zwischenspeicherung in AEM <br>- Regelmäßige Kataloge mit AEM- oder Proxy-Seiten | - Kein Produktimport <br>- Allgemeine Vorlagen <br>- On-Demand-Daten über Connector |
+| Skalierbarkeit | - Kann bis zu wenigen Millionen Produkte unterstützen (abhängig vom Anwendungsfall) <br> - Zwischenspeicherung unter Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung auf Dispatcher oder CDN |
 | Standardisiertes Datenmodell | Nein | Ja, Magento GraphQL-Schema |
-| Verfügbarkeit | <br> Ja: - SAP Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 (Standard) zu unterstützen) und die Kompatibilität mit Hybris 4 <br>- Salesforce Commerce Cloud (Connector offen für Unterstützung von AEM 6.4) | Ja, über Open Source von GitHub. <br> Magento Commerce (unterstützt Magento 2.3.2 (standardmäßig) und ist mit Magento 2.3.1 kompatibel). |
+| Verfügbarkeit | Ja:<br> - SAP-Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 zu unterstützen (Standard) und Kompatibilität mit Hybris 4 <br>- Salesforce-Commerce Cloud (Connector offen für Unterstützung von AEM 6.4) | Ja, über Open Source von GitHub. <br> Magento Commerce (unterstützt Magento 2.3.2 (standardmäßig) und ist mit Magento 2.3.1 kompatibel). |
 | Wann ist sie einzusetzen? | Eingeschränkte Anwendungsfälle: In Szenarien, in denen kleine statische Kataloge möglicherweise importiert werden müssen | Bevorzugte Lösung in den meisten Anwendungsfällen |
 
 
 ## Bereitstellen weiterer Implementierungen {#deploying-other-implementations}
 
-For AEM and Magento, please see [AEM and Magento integration](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md) using the [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html).
+AEM und Magento finden Sie unter [AEM und Magento-Integration](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md) mithilfe des [Commerce-Integrationsrahmens](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html).
 
 >[!NOTE]
 >
 >Weitere Informationen zu den Konzepten und zur Verwaltung von eCommerce-Implementierungen finden Sie unter [Verwaltung von eCommerce](/help/sites-administering/ecommerce.md).
 >
->For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>Informationen zum Erweitern der eCommerce-Funktionen finden Sie unter [Entwickeln von eCommerce](/help/sites-developing/ecommerce.md).
 
