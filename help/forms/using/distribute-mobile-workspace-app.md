@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +25,7 @@ Mobile Device Management (MDM) ermöglicht die Bereitstellung von Apps für mobi
 >
 >Die Bereitstellung ist nur für iOS- und Android-Geräte möglich.
 
-## Die folgenden Hauptmerkmale werden im Allgemeinen durch MDM-Lösungen bereitgestellt: {#main-features-generally-provided-by-mdm-solutions}
+## Die folgenden Hauptmerkmale werden im Allgemeinen durch MDM-Lösungen bereitgestellt:  {#main-features-generally-provided-by-mdm-solutions}
 
 * Aktivieren der Geräte-Einschreibung in der Unternehmensumgebung
 * Zulassen der Konfiguration und Aktualisierung von Geräte-Einstellungen
