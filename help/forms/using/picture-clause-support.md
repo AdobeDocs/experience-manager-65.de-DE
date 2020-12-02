@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 96%
 
 ---
 
@@ -90,7 +93,7 @@ Unterstützter Ausdruck für Datums-Picture-Klausel:
  </tbody>
 </table>
 
-## Numerische Picture-Klausel {#numeric-picture-clause}
+## Numerische Picture-Klausel  {#numeric-picture-clause}
 
 HTML5-Formulare unterstützen numerische Picture-Symbole. Bei dieser Unterstützung besteht allerdings ein Unterschied zwischen PDF-Formularen und HTML-Formularen.
 
@@ -104,7 +107,7 @@ Die Zahl **10000** wird sowohl in HTML- als auch in PDF-Formularen als **10.000*
 
 Die Zahl 1000000 wird in PDF-Formularen als 1.000.000 formatiert. In HTML-Formularen bleibt diese Zahl jedoch unformatiert im Format 1000000.
 
-Supported expressions for Numeric Picture clause in **HTML Forms** are:
+Unterstützte Ausdruck für die Numeric Picture-Klausel in **HTML Forms** sind:
 
 * num.integer{}
 * num.decimal{}
@@ -116,7 +119,7 @@ Supported expressions for Numeric Picture clause in **HTML Forms** are:
  <tbody>
   <tr>
    <th><strong>Symbol</strong></th>
-   <th><strong>Interpretation</strong></th>
+   <th><strong>Dolmetschen</strong></th>
    <th>Eingabeanalyse</th>
   </tr>
   <tr>
@@ -197,7 +200,7 @@ Supported expressions for Numeric Picture clause in **HTML Forms** are:
  </tbody>
 </table>
 
-## Text-Picture-Klausel {#text-picture-clause}
+## Text-Picture-Klausel  {#text-picture-clause}
 
 HTML5-Formulare unterstützen die folgenden Text-Picture-Klausel-Ausdrücke:
 
