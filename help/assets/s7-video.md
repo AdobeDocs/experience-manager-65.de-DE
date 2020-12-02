@@ -22,7 +22,7 @@ Assets bieten eine zentralisierte Verwaltung von Video-Assets, mit der Sie Video
 
 Durch die Integration von Videos aus Dynamic Media Classic wird die Reichweite optimierter Videos auf alle Bildschirme (automatische Geräte- und Bandbreitenerkennung) erweitert.
 
-* The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
+* Die Komponente **[!UICONTROL Scene7 Video]** führt automatisch eine Geräte- und Bandbreitenerkennung durch, um das richtige Format und die richtige Videoqualität auf Desktop-, Tablet- und Mobilgeräten wiederzugeben.
 * Assets – Sie können adaptive Videosets statt einzelner Video-Assets verwenden. Ein adaptives Videoset ist ein Container für alle Videoausgabeformate, die zur nahtlosen Wiedergabe von Videos auf verschiedenen Bildschirmen erforderlich sind. Es umfasst Versionen desselben Videos, die mit unterschiedlichen Bitraten und Formaten kodiert wurden, wie 400 kBit/s, 800 kBit/s und 1000 kBit/s. Ein adaptives Videoset wird zusammen mit der S7-Videokomponente für adaptives Videostreaming auf mehreren Bildschirmen verwendet, einschließlich Desktopgeräten und iOS-, Android-, Blackberry- und Windows-Mobilgeräten. Weitere Informationen finden Sie in der [Scene7-Dokumentation zu adaptiven Videosets](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
 
 ## Info zu FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
@@ -52,21 +52,21 @@ Der Speicherort für hochgeladene Videos hängt von folgenden Faktoren ab:
 
 Falls Sie eine der Fragen mit „ja“ beantworten können, laden Sie Ihr Video direkt in Adobe DAM hoch. Wenn beide Fragen mit &quot;Nein&quot;beantwortet werden, laden Sie Ihr Video direkt in Dynamic Media Classic hoch. Der Workflow für die einzelnen Szenarien wird im folgenden Abschnitt beschrieben.
 
-### Wenn Sie Ihr Video direkt in Adobe DAM hochladen {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Wenn Sie Ihr Video direkt in Adobe DAM hochladen  {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, sollten Sie sie zuerst in Adobe DAM hochladen. Der folgende Workflow wird empfohlen:
 
 1. Laden Sie das Video-Asset in Adobe DAM hoch und kodieren und veröffentlichen Sie es automatisch in Dynamic Media Classic.
 1. Öffnen Sie AEM und greifen Sie in WCM auf der Registerkarte **[!UICONTROL Filme]** des Content Finders auf Video-Assets zu.
-1. Author with **[!UICONTROL Scene7 Video]** or **[!UICONTROL Foundation Video]** component.
+1. Autor mit der Komponente **[!UICONTROL Scene7 Video]** oder **[!UICONTROL Foundation Video]**.
 
 ### Wenn Sie Ihr Video in Scene7 hochladen {#if-you-are-uploading-your-video-to-scene}
 
 Wenn Sie keinen Workflow und keine Versionierung für Ihre Assets benötigen, sollten Sie sie in Scene7 hochladen. Der folgende Workflow wird empfohlen:
 
-1. In Dynamic Media Classic, [set up a scheduled FTP uploading and encoding to Scene7 (system automated)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. Richten Sie in Dynamic Media Classic [einen geplanten FTP-Upload und eine geplante FTP-Kodierung nach Scene7 (systemautomatisiert)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html) ein.
 1. Öffnen Sie AEM und greifen Sie in WCM auf der Registerkarte **[!UICONTROL Scene7]** des Content Finders auf Video-Assets zu.
-1. Author with the **[!UICONTROL Scene7 Video]** component.
+1. Autor mit der Komponente **[!UICONTROL Scene7 Video]**.
 
 ## Konfigurieren der Integration mit Scene7-Videos {#configuring-integration-with-scene-video}
 
@@ -85,28 +85,28 @@ So konfigurieren Sie universelle Vorlagen:
 
    >[!NOTE]
    >
-   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >Weitere Informationen über die Bedeutung der Video-Vorgaben finden Sie in der [Dokumentation zu Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
    >
    >Adobe empfiehlt, entweder beide adaptive Videosets bei der Konfiguration der universellen Vorlagen oder die Option **[!UICONTROL Adaptive Videokodierung]** auszuwählen.
 
 1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den CQ DAM-Zielordner, den Sie für diese Scene7-Cloud-Konfiguration einrichten, hochgeladen werden. Sie können mehrere Scene7-Cloud-Konfigurationen mit verschiedenen Zielordnern einrichten, um nach Bedarf verschiedene Kodierungsprofile anzuwenden.
 
-## Aktualisieren von Viewer- und Kodierungsvorlagen {#updating-viewer-and-encoding-presets}
+## Aktualisieren von Viewer- und Kodierungsvorlagen  {#updating-viewer-and-encoding-presets}
 
 Wenn Sie in AEM die Viewer- und Kodierungsvorlagen für Videos aktualisieren müssen, da die Vorlagen in Scene7 aktualisiert wurden, navigieren Sie zur Scene7-Konfiguration in der Cloud-Konfiguration und klicken Sie auf **[!UICONTROL Aktualisieren der Viewer- und Kodierungsvorlagen.]**
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Hochladen des Hauptquellvideos von Adobe DAM nach Scene7 {#uploading-your-master-video}
+## Hochladen des Hauptquellvideos von Adobe DAM nach Scene7{#uploading-your-master-video}
 
 1. Navigieren Sie zum CQ DAM-Zielordner, in dem Sie Ihre Cloud-Konfiguration mit Scene7-Kodierungsprofilen eingerichtet haben.
-1. Klicken Sie auf **[!UICONTROL Hochladen]** , um das primäre Quellvideo hochzuladen. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Klicken Sie auf **[!UICONTROL Hochladen]**, um das primäre Quellvideo hochzuladen. Das Hochladen und Kodieren von Videos ist abgeschlossen, nachdem der Arbeitsablauf [!UICONTROL DAM-Update-Asset] abgeschlossen ist und **[!UICONTROL Auf Scene7 veröffentlichen]** ein Häkchen enthält.
 
    >[!NOTE]
    >
    >Es kann etwas Zeit in Anspruch nehmen, bis die Videominiaturen erstellt wurden.
 
-   Dragging the DAM primary source video on to the video component accesses *all* of the Scene7 encoded proxy renditions for delivery.
+   Wenn Sie das DAM-Hauptquellvideo auf die Videokomponente ziehen, werden auf *alle* der Scene7-kodierten Proxydarstellungen für Versand zugegriffen.
 
 ## Foundation-Videokomponente im Vergleich zur Scene7-Videokomponente {#foundation-video-component-versus-scene-video-component}
 
@@ -126,7 +126,7 @@ Die folgende Matrix verdeutlicht, wann Sie welche Komponente nutzen sollten:
 
 Es wird zwar empfohlen, zum Abspielen von Scene7-Videos die Scene7-Videokomponente zu verwenden, in diesem Abschnitt wird der Vollständigkeit halber aber trotzdem beschrieben, wie Sie Scene7-Videos in AEM mit der Foundation-Videokomponente verwenden.
 
-### Ein Vergleich der AEM-Videokomponente und der Scene7-Videokomponente {#aem-video-and-scene-video-comparison}
+### Ein Vergleich der AEM-Videokomponente und der Scene7-Videokomponente  {#aem-video-and-scene-video-comparison}
 
 In der folgenden Tabelle finden Sie einen Vergleich der unterstützen Funktionen der AEM-Foundation-Videokomponente und der Scene7-Videokomponente:
 
@@ -138,7 +138,7 @@ In der folgenden Tabelle finden Sie einen Vergleich der unterstützen Funktionen
 | Erweiterbarkeit | Ja | Ja (mit Scene7-Viewer-SDK) |
 | Mobile Videos | Ja | Ja |
 
-### Einrichtung {#setting-up}
+### Einrichtung  {#setting-up}
 
 #### Erstellen von Videoprofilen {#creating-video-profiles}
 
@@ -148,9 +148,9 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorlage
 >
 >Neue Videoprofile und Änderungen daran müssen für eine Veröffentlichung aktiviert werden.
 
-1. Tippen Sie AEM auf **[!UICONTROL Werkzeuge]>[!UICONTROL Konfigurationskonsole]**.
-1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Erstellen Sie ein neues S7-Videoprofil. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen.]**
+1. Tippen Sie in AEM auf **[!UICONTROL Tools] > [!UICONTROL Konfigurationskonsole]**.
+1. Navigieren Sie in der Navigationsstruktur unter **[!UICONTROL Konfigurationskonsole]** zu **[!UICONTROL Tools > DAM > Video-Profil]**.
+1. Erstellen Sie ein neues S7-Videoprofil. Im Ordner **[!UICONTROL Neu...Wählen Sie im Menü]** die Option **[!UICONTROL Seite erstellen]** und wählen Sie dann die Scene7 Video-Profil-Vorlage aus. Geben Sie der neuen Videoprofilseite einen Namen und klicken Sie auf **[!UICONTROL Erstellen.]**
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -166,26 +166,26 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorlage
 
    Wiederholen Sie diesen Schritt für alle in der Cloud-Konfiguration ausgewählten Kodierungsvorlagen, die Sie in der Videokomponente verwenden möchten.
 
-#### Configuring design {#configuring-design}
+#### Konfigurieren von Design {#configuring-design}
 
-The **[!UICONTROL Foundation Video]** component must know about what video profiles to use in order to build the video sources list. Sie müssen das Dialogfeld für den Entwurf von Videokomponenten öffnen und den Komponentenentwurf für die Verwendung der neuen Video-Profil konfigurieren.
+Die Komponente **[!UICONTROL Foundation Video]** muss wissen, welche Video-Profil zum Erstellen der Liste der Videoquellen verwendet werden sollen. Sie müssen das Dialogfeld für den Entwurf von Videokomponenten öffnen und den Komponentenentwurf für die Verwendung der neuen Video-Profil konfigurieren.
 
 >[!NOTE]
 >
->If you use the **[!UICONTROL Foundation Video]** component on a mobile page, you might need to repeat these steps on the design of the mobile page.
+>Wenn Sie die Komponente **[!UICONTROL Foundation Video]** auf einer mobilen Seite verwenden, müssen Sie diese Schritte möglicherweise im Design der mobilen Seite wiederholen.
 
 >[!NOTE]
 >
 >Bei Änderungen am Design ist eine Aktivierung des Designs erforderlich, damit sie für die Veröffentlichung übernommen wird.
 
-1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Löschen Sie dann die vordefinierten Profil und fügen Sie die neuen S7-Profil hinzu. Die Reihenfolge der Profil-Liste im Dialogfeld &quot;Entwurf&quot;definiert die Reihenfolge des Videoquellen-Elements beim Rendern.
-1. Bei Browsern, die HTML5 nicht unterstützen, ermöglicht die Videokomponente die Konfiguration eines Flash-Fallback. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Konfigurieren Sie die Flash-Player-Einstellungen und weisen Sie dem Flash-Player ein Fallback-Profil zu.
+1. Öffnen Sie das Designdialogfeld der Komponente **[!UICONTROL Foundation Video]** und wechseln Sie zur Registerkarte **[!UICONTROL Profile]**. Löschen Sie dann die vordefinierten Profil und fügen Sie die neuen S7-Profil hinzu. Die Reihenfolge der Profil-Liste im Dialogfeld &quot;Entwurf&quot;definiert die Reihenfolge des Videoquellen-Elements beim Rendern.
+1. Bei Browsern, die HTML5 nicht unterstützen, ermöglicht die Videokomponente die Konfiguration eines Flash-Fallback. Öffnen Sie das Dialogfeld für den Entwurf von Videokomponenten und wechseln Sie zur Registerkarte **[!UICONTROL Flash]**. Konfigurieren Sie die Flash-Player-Einstellungen und weisen Sie dem Flash-Player ein Fallback-Profil zu.
 
 #### Checkliste {#checklist}
 
 1. Erstellen Sie eine S7-Cloud-Konfiguration. Vergewissern Sie sich, dass die Videokodierungsvorlagen festgelegt sind und das Importprogramm ausgeführt wird.
 1. Erstellen Sie ein S7-Videoprofil für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorlage.
 1. Die Videoprofile müssen aktiviert sein.
-1. Configure the design of the **[!UICONTROL oundation Video]** component on your page.
+1. Konfigurieren Sie das Design der Komponente **[!UICONTROL Untertitel-Video]** auf Ihrer Seite.
 1. Aktivieren Sie das Design, nachdem Sie mit Ihren Designänderungen fertig sind.
 
