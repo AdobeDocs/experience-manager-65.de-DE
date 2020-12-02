@@ -1,6 +1,6 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: AEM Developer Tools for Eclipse
+seo-title: AEM Developer Tools für Eclipse
 description: 'null'
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
 
 ![](do-not-localize/chlimage_1-9.png)
 
-## Überblick {#overview}
+## Überblick{#overview}
 
 AEM Developer Tools for Eclipse ist ein Eclipse-Plug-in, das auf dem [Eclipse-Plug-in für Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) basiert, das unter der Apache-Lizenz 2 veröffentlicht wurde.
 
@@ -37,18 +40,18 @@ Bevor Sie die AEM Developer Tools verwenden, müssen Sie:
 
 * Downloaden und installieren Sie [Eclipse IDE für Java EE Entwickler](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools unterstützen derzeit Eclipse Kepler oder höher
 
-* Kann mit AEM Version 5.6.1 oder höher verwendet werden
-* Configure your eclipse installation to ensure that you have at least 1 gigabyte of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Kann mit AEM Version 5.6.1 oder neuer verwendet werden
+* Konfigurieren Sie Ihre eclipse-Installation, um sicherzustellen, dass Sie über mindestens 1 Gigabyte Heap-Speicher verfügen, indem Sie die Konfigurationsdatei `eclipse.ini` bearbeiten, wie in der [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
 
 >[!NOTE]
 >
->On macOS, you need to right-click on **Eclipse.app** and then select **Show Package Contents** in order to find your `eclipse.ini`**.**
+>Unter macOS müssen Sie mit der rechten Maustaste auf **Eclipse.app** klicken und dann **Paketinhalt anzeigen** auswählen, um Ihre `eclipse.ini`**zu finden.**
 
 ## So installieren Sie die AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
+Nachdem Sie die obigen [Anforderungen](#requirements) erfüllt haben, können Sie das Plugin wie folgt installieren:
 
-1. Durchsuchen Sie die [**AEM **Developer Tools-Website](https://eclipse.adobe.com/aem/dev-tools/).
+1. Durchsuchen Sie die [**AEM** Developer Tools-Website](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Kopieren Sie den **Installationslink**.
 
@@ -70,7 +73,7 @@ Once you have fulfilled the [requirements](#requirements) above, you can install
 
 >[!NOTE]
 >
->See [How to work with a bundle in Eclipse when it was downloaded from AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
+>Siehe [Arbeiten mit einem Bundle in Eclipse, wenn es von AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407) heruntergeladen wurde.
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 
@@ -151,7 +154,7 @@ Stellen Sie sicher, dass Sie die korrekte Version für Ihre Bereitstellung von A
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Das Handbuch zu [**Apache Sling IDE tooling for Eclipse **](https://sling.apache.org/documentation/development/ide-tooling.html)führt Sie durch die von den AEM-Entwicklungstools unterstützten Konzepte, Serverintegrationen und Implementierungsfunktionen.
+* Das Handbuch zu [**Apache Sling IDE tooling for Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html) führt Sie durch die von den AEM-Entwicklungstools unterstützten Konzepte, Serverintegrationen und Implementierungsfunktionen.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
