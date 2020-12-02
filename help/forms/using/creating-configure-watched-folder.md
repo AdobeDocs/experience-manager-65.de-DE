@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 translation-type: tm+mt
 source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+workflow-type: tm+mt
+source-wordcount: '1844'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +33,7 @@ Bevor Sie einen überwachten Ordner konfigurieren, stellen Sie Folgendes sicher:
 
 * Überwachte Ordner ist eine erweiterte Funktion von AEM Forms. Dafür wird das Add-On-Paket für AEM Forms benötigt. Stellen Sie sicher, dass das entsprechende Add-On-Paket für AEM Forms installiert und konfiguriert ist.
 * Sie können den überwachten Ordner auf einem freigegebenen oder lokalen Speicher erstellen. Sorgen Sie dafür, dass der AEM Forms-Benutzer, der den überwachten Ordner ausführen darf, über Lese- und Schreibberechtigungen für den überwachten Ordner verfügt.
-* Sie können einen Dienst, Arbeitsablauf oder ein Skript verwenden, um einen Prozess mithilfe überwachter Ordner zu automatisieren. Stellen Sie sicher, dass der entsprechende Service, der Arbeitsablauf oder ein Skript erstellt wurde und ausgeführt werden kann. For information about creating a Service, Workflow, and Script, see [Various methods of processing files](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
+* Sie können einen Dienst, Arbeitsablauf oder ein Skript verwenden, um einen Prozess mithilfe überwachter Ordner zu automatisieren. Stellen Sie sicher, dass der entsprechende Service, der Arbeitsablauf oder ein Skript erstellt wurde und ausgeführt werden kann. Informationen zum Erstellen eines Dienstes, Workflows und Skripts finden Sie unter [Verschiedene Methoden zur Verarbeitung von Dateien](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Ein überwachter Ordner besitzt verschiedene Eigenschaften, siehe [Eigenschaften für überwachte Ordner](watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstellen:
@@ -47,6 +50,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
       * Für einen Workflow geben Sie das Workflow-Modell an, das ausgeführt werden soll. Beispiel: /etc/workflow/models/&lt;Workflow-Name>/jcr:content/model
       * Für ein Skript geben Sie den JCR-Pfad des auszuführenden Skripts an. Beispiel: /etc/watchfolder/test/testScript.ecma
       * Für einen Dienst geben Sie den Filter an, der zum Suchen nach einem OSGi-Dienst verwendet werden soll. Der Dienst ist als Implementierung der com.adobe.aemfd.watchfolder.service.api.ContentProcessor-Schnittstelle registriert. Beispiel: Der folgende Code ist eine benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle mit der benutzerdefinierten Eigenschaft „foo=bar“.
+
    >[!NOTE]
    >
    >Wenn Sie einen **Dienst** für das Feld **Prozessdateien, die Folgendes verwenden** gewählt haben, muss der Wert des Feldes „Dienstname“ (inputProcessorType) in Klammern gesetzt werden. Beispielsweise (foo = bar).
@@ -72,7 +76,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
    * **Stage-Dateien mit Zeitüberschreitung bei Einschränkung löschen:** Wenn diese Option aktiviert ist, wird der Mechanismus **Zeitüberschreitung für Stage-Dateien nach** nur bei aktivierten Einschränkungen für den überwachten Ordner aktiviert.
    * **Überprüfen des Eingabeordners alle:** Geben Sie das Intervall in Sekunden an, innerhalb dessen der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Anderenfalls könnte es zu einer Überlastung des Systems kommen. Der Wert für den Intervall muss größer als oder gleich eins sein.
    * **Muster für auszuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die von einem überwachten Ordner verwendet wird, um zu ermitteln, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem angegebenen Muster entsprechen, werden nicht für die Verarbeitung überprüft. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Muster für einzuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. For more information about file patterns, see [About File Patterns](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+   * **Muster für einzuschließende Dateien:** Geben Sie eine durch Semikolon (;) getrennte Liste von Mustern an, die vom überwachten Ordner verwendet wird, um zu ermitteln, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Beispiel: Wenn das Muster für einzuschließende Dateien &quot;input&amp;ast;&quot;lautet, alle Dateien und Ordner, die mit &quot;input&amp;ast;&quot; übereinstimmen; abgeholt werden. Der Standardwert ist &amp;ast; und zeigt alle Dateien und Ordner an. Weitere Informationen zu Dateimustern finden Sie unter [Über Dateimuster](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Wartezeit:** Geben Sie die Zeit in Millisekunden an, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0.
 
       Diese Einstellung ist nützlich, um sicherzustellen, dass der gesamte Inhalt einer Datei oder eines Ordners in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und der Download der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&amp;ast;60&amp;ast;1000 Millisekunden. Dieses Intervall verhindert, dass der überwachte Ordner die Datei bereits überprüft, wenn sie noch keine 10 Minuten alt ist.
@@ -98,7 +102,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
       * Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachten Ordner erstellt. Der Standardwert ist „result/%Y/%M/%D/“, der Ergebnisordner im überwachten Ordner. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Fehler-Ordnername:** Geben Sie den Ordner an, in dem die Dateien gespeichert sind. Dieser Speicherort ist stets relativ zum überwachten Ordner. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben.
    * **„Bewahren“-Ordnername:** Der Speicherort, an dem Dateien nach erfolgreicher Überprüfung und Aufnahme gespeichert werden. Dies kann ein absoluter, relativer oder leerer Ordnerpfad sein. Sie können Dateimuster verwenden, wie für „Ergebnisordner“ beschrieben. Der Standardwert ist „preserve/%Y/%M/%D/“.
-   * **Stapelgröße:** Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
+   * **Stapelgröße:** Die Anzahl der Dateien oder Ordner, die pro Überprüfung aufgenommen werden. Mit dieser Einstellung können Sie eine Überlastung des Systems verhindern, da das gleichzeitige Überprüfen zu vieler Dateien zu einem Absturz führen kann. Der Standardwert ist 2.
 
       Wenn das Überprüfungsintervall kurz ist, wird der Eingabeordner häufig von den Threads überprüft. Falls häufig Dateien im überwachten Ordner abgelegt werden, sollten Sie ein kurzes Überprüfungsintervall wählen. Wenn Dateien nicht häufig abgelegt werden, verwenden Sie ein größeres Überprüfungsintervall, damit die anderen Dienste die Threads verwenden können.
 
@@ -111,7 +115,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
 
 
 
-## Die Eigenschaften eines vorhandenen überwachten Ordners ändern {#modify-properties-of-an-existing-watched-folder}
+## Die Eigenschaften eines vorhandenen überwachten Ordners ändern  {#modify-properties-of-an-existing-watched-folder}
 
 Zusätzlich zum Namen des überwachten Ordners können Sie alle Eigenschaften eines vorhandenen überwachten Ordners ändern. Führen Sie die folgenden Schritte aus, um die Eigenschaften eines vorhandenen überwachten Ordner zu ändern:
 
