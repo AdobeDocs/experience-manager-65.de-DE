@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Komponenten und Dienste - Java API Quick Beginn (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Komponenten und Dienste - Java-API-Quick-Beginn (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 Java API Quick Beginn (SOAP) ist für Komponenten und Dienste verfügbar.
 
@@ -47,7 +47,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 
 >[!NOTE]
 >
->Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle verwenden, um DSCs auf demselben lokalen Server aufzurufen, und diese Aufrufe nach einer Aktualisierung nicht mehr funktionieren, verwenden Sie die Aufrufstrategie für In-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem Standard-ServiceClientFactory und erstellen Sie ServiceClientFactory nicht mit SOAP- oder EJB-Protokollen.
+>Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle verwenden, um DSCs auf demselben lokalen Server aufzurufen, und diese Aufrufe nach einer Aktualisierung nicht mehr funktionieren, verwenden Sie die Aufrufstrategie in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem Standard-ServiceClientFactory und erstellen Sie ServiceClientFactory nicht mit SOAP- oder EJB-Protokollen.
 
 ## Quick Beginn (SOAP-Modus): Bereitstellen einer Komponente mit der Java-API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
@@ -153,7 +153,7 @@ Im folgenden Java-Beispiel wird eine Komponente bereitgestellt, die auf einer JA
 
 ## Quick Beginn (SOAP-Modus): Festlegen des Ausführungskontexts eines Dienstes mit der Java-API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird der Ausführungskontext &quot;Run-As Invoker&quot;auf einen Beispieldienst mit dem Namen *EncryptDocument* eingestellt.
+Im folgenden Java-Codebeispiel wird der Ausführungskontext &quot;Run-As Invoker&quot;auf einen Beispieldienst mit dem Namen *EncryptDocument* festgelegt.
 
 ```java
  /* 
@@ -243,7 +243,7 @@ Im folgenden Java-Codebeispiel wird der Ausführungskontext &quot;Run-As Invoker
  
 ```
 
-## Quick Beginn (SOAP-Modus): Dienstsicherheit mit der Java-API deaktivieren {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Quick Beginn (SOAP-Modus): Dienstsicherheit mit der Java-API {#quick-start-soap-mode-disabling-service-security-using-the-java-api} deaktivieren
 
 Im folgenden Java-Codebeispiel werden die Sicherheit des Beispiels EncryptDocument-Dienst und der Dienste deaktiviert, die von diesem Dienst aufgerufen werden (Set Value and Encryption services).
 
