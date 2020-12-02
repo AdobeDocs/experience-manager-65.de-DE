@@ -1,6 +1,6 @@
 ---
-title: Tastaturbefehle für Konsolen
-seo-title: Tastaturbefehle für Konsolen
+title: 'Tastaturbefehle für Konsolen  '
+seo-title: 'Tastaturbefehle für Konsolen  '
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die Seitenbearbeitung.
 seo-description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die Seitenbearbeitung.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 100%
 
 ---
 
@@ -27,6 +30,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
    >
    >
 * Mac: **Befehl** + **Klick** auf die erforderlichen Komponenten.
+
 >
 
 
@@ -36,7 +40,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
 <table>
  <tbody>
   <tr>
-   <th>Position</th>
+   <th>Ort</th>
    <th>Kürzel</th>
    <th>Beschreibung</th>
   </tr>
