@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 translation-type: tm+mt
 source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 82%
 
 ---
 
@@ -21,25 +24,25 @@ In mehreren Verfahren müssen Sie die Instanz von WebSphere, auf der Sie AEM For
 
 ## Status des WebSphere Application Server anzeigen {#view-the-status-of-websphere-application-server}
 
-1. From a command prompt, go to the `[appserver root]/bin` directory.
+1. Wechseln Sie an einer Eingabeaufforderung zum Ordner `[appserver root]/bin`.
 1. Geben Sie den folgenden Befehl ein. Ersetzen Sie dabei *Servername* durch den Namen Ihres WebSphere Application Servers:
 
-   * (Windows) `serverStatus.bat`*server_name *
-   * (Linux, UNIX) ./ `serverStatus.sh`*server_name *
+   * (Windows) `serverStatus.bat`*Servername*
+   * (Linux, UNIX) ./ `serverStatus.sh`*Servername*
 
 ## WebSphere Application Server starten {#start-websphere-application-server}
 
-1. From a command prompt, go to the `[appserver root]/bin` directory.
+1. Wechseln Sie an einer Eingabeaufforderung zum Ordner `[appserver root]/bin`.
 1. Geben Sie den folgenden Befehl ein. Ersetzen Sie dabei *Servername* durch den Namen Ihres WebSphere Application Servers:
 
-   * (Windows) `startServer.bat`*server_name *
-   * (Linux, UNIX) ./ `startServer.sh`*server_name *
+   * (Windows) `startServer.bat`*Servername*
+   * (Linux, UNIX) ./ `startServer.sh`*Servername*
 
 ## WebSphere Application Server beenden {#stop-websphere-application-server}
 
-1. From a command prompt, go to the `[appserver root]/bin` directory.
+1. Wechseln Sie an einer Eingabeaufforderung zum Ordner `[appserver root]/bin`.
 1. Geben Sie den folgenden Befehl ein. Ersetzen Sie dabei *Servername* durch den Namen Ihres WebSphere Application Servers:
 
-   * (Windows) `stopServer.bat`*server_name *
-   * (Linux, UNIX) ./ `stopServer.sh`*server_name *
+   * (Windows) `stopServer.bat`*Servername*
+   * (Linux, UNIX) ./ `stopServer.sh`*Servername*
 
