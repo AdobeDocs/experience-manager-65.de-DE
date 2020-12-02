@@ -47,9 +47,9 @@ Diese Symbolleiste beinhaltet die folgenden Optionen:
 
 ## Bearbeiten im Vollbildmodus {#full-screen-editing}
 
-For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+Bei textbasierten Komponenten wird durch Tippen auf den Vollbildmodus in der Symbolleiste ![](do-not-localize/screen_shot_2018-03-21at163236.png) der Rich-Text-Editor geöffnet und der Rest des Seiteninhalts ausgeblendet.
 
-Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Authoring verwenden können. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
+Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Authoring verwenden können. Die Verfügbarkeit der Optionen [hängt von der Konfiguration](/help/sites-administering/rich-text-editor.md) ab.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
