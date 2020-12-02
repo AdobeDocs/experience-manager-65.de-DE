@@ -12,6 +12,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 90%
 
 ---
 
@@ -55,12 +58,12 @@ Die Vorteile von bearbeitbaren Vorlagen:
 
 * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur auf allen mit dieser Vorlage erstellten Seiten wiedergegeben werden (Änderungen am ursprünglichen Inhalt werden nicht berücksichtigt).
 * Verwendet Inhaltsrichtlinien (die im Vorlageneditor bearbeitet wurden), um die Designeigenschaften beizubehalten (verwendet den Designmodus im Seiteneditor nicht).
-* Are stored under `/conf`
+* Werden unter `/conf` gespeichert
 * Siehe [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) für weitere Informationen.
 
 >[!NOTE]
 >
->An AEM Community Article is available explaining how to develop an Experience Manager site with Editable Templates, see [Creating an Adobe Experience Manager 6.5 website using Editable Templates](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>Es steht ein AEM Community-Artikel zur Verfügung, der erklärt, wie eine Experience Manager-Site mit bearbeitbaren Vorlagen entwickelt wird. Weitere Informationen finden Sie unter [Erstellen einer Adobe Experience Manager 6.5-Website mit bearbeitbaren Vorlagen](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
 
 ### Statische Vorlagen {#static-templates}
 
@@ -71,58 +74,58 @@ Statische Vorlagen:
 * Eine statische Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur wie die zu erstellende Seite, jedoch keinen tatsächlichen Inhalt aufweist.
 * Werden kopiert, um die neue Seite zu erstellen, danach besteht keine dynamische Verbindung mehr.
 * Verwenden den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-* Are stored under `/apps`
+* Werden unter `/apps` gespeichert
 * Siehe [Statische Vorlagen](/help/sites-developing/page-templates-static.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Ab AEM 6.5 gilt die Verwendung von statischen Vorlagen nicht als bewährte Verfahren. Verwenden Sie stattdessen bearbeitbare Vorlagen.
+>Ab AEM 6.5 wird die Verwendung von statischen Vorlagen nicht als bewährtes Verfahren betrachtet. Verwenden Sie stattdessen bearbeitbare Vorlagen.
 >
->[Mit den AEM-Moderationstools](modernization-tools.md) können Sie von statischen zu bearbeitbaren Vorlagen migrieren.
+>[AEM ](modernization-tools.md) Moderationstools können Ihnen bei der Migration von statischen zu bearbeitbaren Vorlagen helfen.
 
 ### Verfügbarkeit der Vorlage {#template-availability}
 
 >[!CAUTION]
 >
->AEM bietet mehrere Eigenschaften, um die unter **Sites** zulässigen Vorlagen zu steuern. Eine Kombination dieser Regeln kann jedoch zu sehr komplexen Regeln führen, die sich nur schwer verfolgen und verwalten lassen.
+>AEM bietet verschiedene Eigenschaften zur Steuerung der unter **Sites** zulässigen Vorlagen. Eine Kombination daraus kann jedoch zu komplexen Regeln führen, die sich nur schwer verfolgen und verwalten lassen.
 >
->Daher empfiehlt Adobe, dass Sie mit einem einfachen Einstieg beginnen, indem Sie Folgendes definieren:
+>Daher empfiehlt Adobe, einfach anzufangen, indem Sie Folgendes definieren:
 >
->* Nur die `cq:allowedTemplates` Eigenschaft
+>* nur die `cq:allowedTemplates`-Eigenschaft
    >
    >
-* nur im Site-Stammordner
+* nur im Site-Stamm
 >
 >
-For an example, see We.Retail: `/content/we-retail/jcr:content`
+Ein Beispiel finden Sie unter We.Retail: `/content/we-retail/jcr:content`
 >
->Die Eigenschaften `allowedPaths`, `allowedParents`und `allowedChildren` können auch in die Vorlagen eingefügt werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *viel* einfacher, weitere `cq:allowedTemplates` Eigenschaften in Unterabschnitten der Site zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden müssen.
+>Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *deutlich* einfacher, in Unterabschnitten der Site weitere `cq:allowedTemplates`-Eigenschaften zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden sollen.
 >
->Ein weiterer Vorteil besteht darin, dass die `cq:allowedTemplates` Eigenschaften von einem Autor auf der Registerkarte &quot; **Erweitert** &quot;der **Seiteneigenschaften** aktualisiert werden können. Die anderen Vorlageneigenschaften können nicht über die (Standard-) Benutzeroberfläche aktualisiert werden. Daher benötigen Sie einen Entwickler, der die Regeln und eine Codebereitstellung für jede Änderung pflegt.
+>Ein weiterer Vorteil besteht darin, dass die `cq:allowedTemplates`-Eigenschaften von einem Autor auf der Registerkarte **Erweitert** der **Seiteneigenschaften** aktualisiert werden können. Die anderen Vorlageneigenschaften können nicht über die (standardmäßige) Benutzeroberfläche aktualisiert werden. Dafür wird ein Entwickler benötigt, der die Regeln und Code-Implementierung für jede Änderung pflegt.
 
 Beim Erstellen einer neuen Seite in der Website-Admin-Oberfläche hängt die Liste der verfügbaren Vorlagen vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab.
 
 Die folgenden Eigenschaften bestimmen, ob eine Vorlage `T` für eine neue Seite verwendet werden darf, die der Seite `P` untergeordnet platziert werden kann. Jede dieser Eigenschaften ist eine mehrwertige Zeichenfolge, welche null oder mehrere regulärere Ausdrücke enthält, die für die Übereinstimmung mit Pfaden verwendet werden:
 
-* The `cq:allowedTemplates` property of the `jcr:content` subnode of `P` or an ancestor of `P`.
+* Die Eigenschaft `cq:allowedTemplates` des Unterknotens `jcr:content` von `P` oder ein Vorgänger von `P`.
 
-* Die `allowedPaths` Eigenschaft von `T`.
+* Die `allowedPaths`-Eigenschaft von `T`.
 
-* Die `allowedParents` Eigenschaft von `T`.
+* Die `allowedParents`-Eigenschaft von `T`.
 
-* The `allowedChildren` property of the template of `P`.
+* Die `allowedChildren`-Eigenschaft der Vorlage von `P`.
 
 Die Bewertung funktioniert wie folgt:
 
-* The first non-empty `cq:allowedTemplates` property found while ascending the page hierarchy starting with `P` is matched against the path of `T`. Wenn keiner der Werte übereinstimmt, wird `T` abgelehnt.
+* Die erste nicht leere Eigenschaft `cq:allowedTemplates`, die beim Aufrufen der mit `P` beginnenden Seitenhierarchie gefunden wird, wird mit dem Pfad von `T` abgeglichen. Wenn keiner der Werte übereinstimmt, wird `T` abgelehnt.
 
-* If `T` has a non-empty `allowedPaths` property, but none of the values match the path of `P`, `T` is rejected.
+* Wenn `T` eine nicht leere `allowedPaths`-Eigenschaft hat, aber keiner der Werte mit dem Pfad von `P` übereinstimmt, wird `T` zurückgewiesen.
 
-* If both of the above properties are either empty or non-existent, `T` is rejected unless it belongs to the same application as `P`. `T` gehört genau dann zurselben Anwendung wie `P`, wenn der Name der zweiten Ebene des Pfades von `T` mit dem Namen der zweiten Ebene des Pfades von `P` übereinstimmt. For example, the template `/apps/geometrixx/templates/foo` belongs to the same application as the page `/content/geometrixx`.
+* Wenn beide oben genannten Eigenschaften entweder leer oder nicht vorhanden sind, wird `T` abgelehnt, es sei denn, es gehört zu derselben Anwendung wie `P`. `T` gehört genau dann zur selben Anwendung wie `P`, wenn der Name der zweiten Ebene des Pfades von `T` mit dem Namen der zweiten Ebene des Pfades von `P` übereinstimmt. Zum Beispiel gehört die Vorlage `/apps/geometrixx/templates/foo` zur selben Anwendung wie die Seite `/content/geometrixx`.
 
-* If `T` has an non-empty `allowedParents` property, but none of the values match the path of `P`, `T` is rejected.
+* Wenn `T` eine nicht leere `allowedParents`-Eigenschaft hat, aber keiner der Werte mit dem Pfad von `P` übereinstimmt, wird `T` zurückgewiesen.
 
-* If the template of `P` has a non-empty `allowedChildren` property, but none of the values match the path of `T`, `T` is rejected.
+* Wenn die Vorlage von `P` eine nicht leere `allowedChildren`-Eigenschaft hat, aber keiner der Werte mit dem Pfad von `T` übereinstimmt, wird `T` zurückgewiesen.
 
 * In allen anderen Fällen ist `T` zulässig.
 
@@ -132,9 +135,9 @@ Das folgende Diagramm zeigt den Vorlagenauswertungsprozess:
 
 #### Einschränkende Vorlagen in untergeordneten Seiten {#limiting-templates-used-in-child-pages}
 
-To limit what templates can be used to create child pages under a given page, use the `cq:allowedTemplates` property of `jcr:content` node of the page to specify the list of templates to be allowed as child pages. Each value in the list must be an absolute path to a template for an allowed child page, for example `/apps/geometrixx/templates/contentpage`.
+Um zu begrenzen, welche Vorlagen zum Erstellen von untergeordneten Seiten unter einer bestimmten Seite verwendet werden können, verwenden Sie die Eigenschaft `cq:allowedTemplates` des Knotens `jcr:content` auf der Seite. Damit lässt sich die Liste der Vorlagen angeben, die als untergeordnete Seiten zulässig sein sollen. Jeder Wert in der Liste muss ein absoluter Pfad zu einer Vorlage für eine zulässige untergeordnete Seite sein, zum Beispiel `/apps/geometrixx/templates/contentpage`.
 
-You can use the `cq:allowedTemplates` property on the template&#39;s  `jcr:content` node to have this configuration applied to all newly created pages that use this template.
+Sie können die Eigenschaft `cq:allowedTemplates` im Knoten `jcr:content` der Vorlage verwenden, damit diese Konfiguration auf alle neu erstellten Seiten angewendet wird, die diese Vorlage nutzen.
 
 Wenn Sie mehrere Einschränkungen hinzufügen möchten, z. B. bezüglich der Vorlagenhierarchie, können Sie die Eigenschaften `allowedParents/allowedChildren` auf der Vorlage verwenden. Sie können dann explizit angeben, dass Seiten, die aus einer Vorlage T erstellt wurden, übergeordnet/untergeordnet von Seiten sein müssen, die aus einer Vorlage T erstellt wurden.
 
