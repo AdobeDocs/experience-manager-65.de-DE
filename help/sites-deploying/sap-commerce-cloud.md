@@ -1,6 +1,6 @@
 ---
 title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
+seo-title: SAP-Commerce Cloud
 description: Hier erfahren Sie, wie Sie eCommerce mit SAP Commerce Cloud bereitstellen können.
 seo-description: Hier erfahren Sie, wie Sie eCommerce mit SAP Commerce Cloud bereitstellen können.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
@@ -12,17 +12,20 @@ discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 translation-type: tm+mt
 source-git-commit: 328e13eb2ce034b0b1ec7e5e0fb184de9435d1bc
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 86%
 
 ---
 
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# SAP-Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
 >Diese Seite enthält Links zur hybris-Website. Für bestimmte Seiten benötigen Sie ein Konto, mit dem Sie sich anmelden können.
 
-## Bereitstellen von eCommerce mit der SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
+## Bereitstellen von eCommerce mit SAP-Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -32,7 +35,7 @@ source-git-commit: 328e13eb2ce034b0b1ec7e5e0fb184de9435d1bc
 
 Durch die Implementierung der [erforderlichen eCommerce-Pakete](#packages-needed-for-ecommerce-with-hybris) wird der volle Funktionsumfang des eCommerce-Frameworks zusammen mit einer Referenzimplementierung der eCommerce-Funktionen bereitgestellt, die im Rahmen einer Demandware Commerce-Implementierung (einschließlich Demo-Katalog) verfügbar sind.
 
-This is available under the English (US) branch ( `/content/geometrixx-outdoors/en_US`) of the Geometrixx Outdoors site:
+Diese ist unter der englischen (US) Niederlassung ( `/content/geometrixx-outdoors/en_US`) der Geometrixx Outdoors-Website verfügbar:
 
 * [Produktinformationen](#productinformationwithcolorvariants) (mit Farbvarianten sofern zutreffend) 
 
@@ -43,18 +46,19 @@ This is available under the English (US) branch ( `/content/geometrixx-outdoors/
 
 ### Technische Anforderungen – hybris-Server {#technical-requirements-hybris-server}
 
-The hybris extension of the eCommerce Integration Framework has been updated to support Hybris 5 (as default), while maintaining backward compatibility with [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+Die hybris Erweiterung des eCommerce Integration Framework wurde aktualisiert, um Hybris 5 (als Standard) zu unterstützen und gleichzeitig die Abwärtskompatibilität mit [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris) zu gewährleisten.
 
 >[!NOTE]
 >
 >* Unterstützt Versionen 18.11 und höher.
 >* Sie benötigen Java 7 für den [hybris 5 Server](https://www.hybris.com/en/architecture-technology).
 >* Das hybris-Add-on, der [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), wird nicht von der AEM-Erweiterung unterstützt.
+
 >
 
 
 
-### Benötigte Pakete für eCommerce mit hybris {#packages-needed-for-ecommerce-with-hybris}
+### Benötigte Pakete für eCommerce mit hybris  {#packages-needed-for-ecommerce-with-hybris}
 
 Zur Installation der eCommerce-Funktionalität benötigen Sie:
 
@@ -72,7 +76,7 @@ Zur Installation der eCommerce-Funktionalität benötigen Sie:
    * `cq-hybris-content-6.3.2`
    * hybris-spezifische API-Implementierung
    * `cq-geometrixx-hybris-content-6.3.2`
-   * a reference implementation to illustrate use of hybris ( `geometrixx-outdoors/en_US`)
+   * eine Referenzimplementierung zur Veranschaulichung der Verwendung von Hybris ( `geometrixx-outdoors/en_US`)
 
 ### Installation von eCommerce mit hybris {#installation-of-ecommerce-with-hybris}
 
@@ -137,7 +141,7 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
    >
    >`ant clean all`
    >
-   >Drücken Sie bei `Return` Bedarf.
+   >Drücken Sie bei Bedarf `Return`.
 
 1. Laden Sie die folgenden Dateien in den Stammordner Ihrer extrahierten Hybris-Distribution herunter,
 
@@ -185,7 +189,7 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
    >
    >Abhängig von Ihrem System kann dies einige Minuten dauern.
 
-### Einrichten des Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
+### Einrichten des Geometrixx Outdoors Store  {#setup-the-geometrixx-outdoors-store}
 
 Mit diesem Verfahren wird das Demonstrationsgeschäft Geometrixx Online hochgeladen und konfiguriert.
 
