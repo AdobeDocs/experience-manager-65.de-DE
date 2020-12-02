@@ -21,7 +21,7 @@ ht-degree: 84%
 
 # Konfigurieren von Layout-Container und Layout-Modus{#configuring-layout-container-and-layout-mode}
 
-[Responsive Layout](/help/sites-authoring/responsive-layout.md) ist ein Mechanismus zum Realisieren von [reaktionsfähigem Webdesign](https://en.wikipedia.org/wiki/Responsive_web_design). Damit lassen sich Webseiten erstellen, deren Layout und Abmessungen von dem Gerät des Benutzers abhängen.
+[Responsive ](/help/sites-authoring/responsive-layout.md) Layouts sind ein Mechanismus zum Realisieren von  [reaktionsfähigem Webdesign](https://en.wikipedia.org/wiki/Responsive_web_design). Damit lassen sich Webseiten erstellen, deren Layout und Abmessungen von dem Gerät des Benutzers abhängen.
 
 >[!NOTE]
 >
@@ -29,11 +29,11 @@ ht-degree: 84%
 
 Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination von Mechanismen ermöglicht:
 
-* [**Layout-Container-Komponente **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
+* [**Layout-Container-Komponente**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
    Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
 
-   * The default **Layout Container** component is defined under:
+   * Die Standardkomponente **Layout Container** wird wie folgt definiert:
 
       /libs/wcm/foundation/components/responsivegrid
 
@@ -45,10 +45,12 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
          Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
-* **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Sobald der Layout-Container auf der Seite positioniert ist, können Sie die
-**Layout** -Modus zum Positionieren von Inhalten im interaktiven Raster.
+* **[Layout-](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
+ModusSobald der Layout-Container auf der Seite positioniert ist, können Sie die Variable 
+**Im** Layoutmodus können Sie Inhalte innerhalb des interaktiven Rasters positionieren.
 
-* [**Emulator **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich mit dem Emulator ansehen wie der Inhalt für bestimmte Geräte gerendert wird.
+* [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
+Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich mit dem Emulator ansehen wie der Inhalt für bestimmte Geräte gerendert wird.
 
 >[!CAUTION]
 >
@@ -77,13 +79,13 @@ Um die Emulator-Unterstützung für Ihre Seiten zu aktivieren, müssen Sie die S
 
 Informationen dazu, wie Sie die Gerätegruppen festlegen, die in der Geräteliste des Emulators angezeigt werden, finden Sie unter [Festlegen der Gerätegruppen](/help/sites-developing/responsive.md#specifying-the-device-groups).
 
-### Verknüpfen der Website mit den festgelegten Gerätegruppen {#link-your-site-to-the-specified-device-groups}
+### Verknüpfen der Website mit den festgelegten Gerätegruppen  {#link-your-site-to-the-specified-device-groups}
 
-Um den Emulator einzubinden, müssen Sie die Website mit den Gerätegruppen verknüpfen. See [Adding the Devices List](/help/sites-developing/responsive.md#adding-the-devices-list) (for both the classic and touch-optimized UI).
+Um den Emulator einzubinden, müssen Sie die Website mit den Gerätegruppen verknüpfen. Siehe [Hinzufügen der Liste &quot;Geräte](/help/sites-developing/responsive.md#adding-the-devices-list)&quot;(sowohl für die klassische als auch für die touchoptimierte Benutzeroberfläche).
 
 ## Aktivieren des Layout-Modus für die Website {#activate-layout-mode-for-your-site}
 
-These procedures are used to enable the **Layout** mode on your site.
+Diese Verfahren werden verwendet, um den Modus **Layout** auf Ihrer Site zu aktivieren.
 
 ### Konfigurieren der Haltepunkte {#configure-the-breakpoints}
 
@@ -127,9 +129,9 @@ Da die Vererbung in Betrieb ist, können Sie diese auf die Stamm-Seite Ihres Inh
 1. Wenn Sie CRXDE Lite (o. ä.) verwenden, navigieren Sie wahlweise zu einer der folgenden Optionen:
 
    * der Vorlagendefinition
-   * The `jcr:content` node of your page.
+   * Der `jcr:content`-Knoten Ihrer Seite.
 
-1. Under `jcr:content` create the node:
+1. Erstellen Sie unter `jcr:content` den Knoten:
 
    * Name: `cq:responsive`
    * Typ: `nt:unstructured`
@@ -148,7 +150,7 @@ Da die Vererbung in Betrieb ist, können Sie diese auf die Stamm-Seite Ihres Inh
 
 #### Konfigurieren von Haltepunkten mit XML {#configuring-breakpoints-using-xml}
 
-Breakpoints are located inside the `<jcr:content>` section of the `.context.html` under the appropriate template (or content) folder.
+Haltepunkte befinden sich im Abschnitt `<jcr:content>` des `.context.html`-Ordners unter der entsprechenden Vorlage (oder dem entsprechenden Inhaltsordner).
 
 Eine Beispieldefinition
 
@@ -161,7 +163,7 @@ Eine Beispieldefinition
 </cq:responsive>
 ```
 
-### Hinzufügen eines responsiven Informationsanbieters {#add-a-responsive-information-provider}
+### Hinzufügen eines responsiven Informationsanbieters  {#add-a-responsive-information-provider}
 
 >[!NOTE]
 >
@@ -173,7 +175,7 @@ Kopieren Sie die folgende `cq:infoProviders`-Knotenstruktur in die übergeordnet
 
 ## Aktivieren der Größenänderung von Komponenten für die Seite {#enable-component-resizing-for-the-page}
 
-These procedures are required so you can resize components in the **Layout** mode.
+Diese Verfahren sind erforderlich, damit Sie die Größe von Komponenten im Modus **Layout** ändern können.
 
 ### Festlegen des Layout-Containers als Haupt-ParSys {#set-layout-container-as-main-parsys}
 
@@ -262,7 +264,7 @@ Jede Änderung der Größe einer Komponente innerhalb des Rasters löst mindeste
 
 * `afterchildedit`
 
-To properly resize and update the content of an adaptive image included in a responsive grid, you need to add an `afterEdit` set to `REFRESH_PAGE` listener into the `EditConfig` file of every contained component.
+Um den Inhalt eines adaptiven Bildes, das in einem interaktiven Raster enthalten ist, korrekt zu ändern und zu aktualisieren, müssen Sie der `EditConfig`-Datei jeder enthaltenen Komponente einen `afterEdit`-Listener hinzufügen, der auf `REFRESH_PAGE` gesetzt ist.
 
 Beispiel:
 
@@ -278,7 +280,7 @@ Der adaptive Bildmechanismus wird über ein Skript bereitgestellt, das die Auswa
 
 Mit den folgenden Aufgaben können Autoren Instanzen der **Layout-Container**-Komponente auf die Seite verschieben.
 
-### Aktivieren der Layout-Container-Komponente für die Seitenbearbeitung {#enable-the-layout-container-component-for-page-editing}
+### Aktivieren der Layout-Container-Komponente für die Seitenbearbeitung  {#enable-the-layout-container-component-for-page-editing}
 
 Um es Autoren zu erlauben, weitere responsive Raster zu den Inhaltsseiten hinzuzufügen, müssen Sie die Layout-Container-Komponente für Ihre Seite hinzufügen. Möglich ist dies über folgende Optionen:
 
