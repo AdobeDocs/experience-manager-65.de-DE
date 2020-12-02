@@ -31,7 +31,7 @@ AEM LiveCycle Connector ist Teil des [AEM Forms-Add-On-Pakets](/help/forms/using
 
 Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigsten erläutert:
 
-* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, Beginn AEM mit der folgenden JVM
+* **Server URL** – gibt die URL für den LiveCycle-Server an. Wenn LiveCycle und AEM über HTTPS kommunizieren sollen, AEM Beginn mit folgender JVM
 
    ```java
    argument
@@ -44,7 +44,7 @@ Obwohl die Eigenschaften selbsterklärend sind, werden im Folgenden die wichtigs
 * **Kennwort** – gibt das Kennwort an.
 * **Dienstname** – gibt die Dienste an, die mit den Benutzeranmeldedaten aus den Feldern für Benutzernamen und Kennwort gestartet werden. Standardmäßig werden beim Starten von LiveCycle-Diensten keine Benutzerinformationen weitergegeben.
 
-## Starten von Document Services {#starting-document-services}
+## Starten von Document Services  {#starting-document-services}
 
 Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java API, Webdienste, Remoting und REST starten. Bei Java-Clients kann die Anwendung LiveCycle SDK verwenden. Das LiveCycle SDK stellt eine Java-API für den ferngesteuerten Start dieser Dienste zur Verfügung. Um beispielsweise ein Microsoft Word-Dokument in ein PDF-Dokument zu konvertieren, startet der Client GeneratePDFService. Der Aufruf wird mittels folgender Schritte ausgeführt:
 
@@ -54,11 +54,11 @@ Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java AP
 
 AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als OSGi-Dienste offengelegt werden, auf die über standardmäßige OSGi-Methoden zugegriffen werden kann. LiveCycle Connector umfasst die folgenden Funktionen:
 
-* Client instances as OSGi Service: The clients packaged as OSGI bundles are listed in the [Document Services list](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) section. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
+* Client-Instanzen als OSGi-Dienst: Die als OSGI-Pakete verpackten Clients werden im Abschnitt [Dokument Services-Liste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
 * Weitergabe von Benutzerinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 
-### Starten über Service References aus der OSGi Service Registry {#starting-via-service-references-from-osgi-service-registry}
+### Starten über Service References aus der OSGi Service Registry  {#starting-via-service-references-from-osgi-service-registry}
 
 Um einen angezeigten Dienst aus AEM zu starten, führen Sie folgende Schritte aus:
 
@@ -160,7 +160,7 @@ Für nahezu jeden Document Service in LiveCycle ist eine Authentifizierung erfor
 
 Die LiveCycle Client SDK-Konfiguration enthält eine Einstellung für Dienstnamen. Diese Konfiguration ist eine Liste der Dienste, für die die Aufruflogik Administratorberechtigungen für den sofortigen Einsatz verwendet. Wenn Sie beispielsweise DirectoryManager-Dienste (Teil der User Management-API) zur Liste hinzufügen, kann jeder Client-Code den Dienst direkt verwenden und die Aufrufebene gibt die konfigurierten Benutzerdaten automatisch im Rahmen der an den LiveCycle-Server gesendeten Anfrage weiter.
 
-### RunAsManager {#runasmanager}
+### RunAsManager  {#runasmanager}
 
 Als Teil der Integration wird ein neuer RunAsManager-Dienst zur Verfügung gestellt. Dieser ermöglicht es Ihnen, die zu verwendenden Anmeldedaten programmgesteuert zu kontrollieren, wenn ein Aufruf zum LiveCycle-Server erfolgt.
 
@@ -192,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### InvocationRequest-Eigenschaft {#invocationrequest-property}
+### InvocationRequest-Eigenschaft  {#invocationrequest-property}
 
 Wenn Sie einen Prozess aufrufen oder die ServiceClientFactory-Klasse direkt verwenden und eine InvocationRequest erstellen, können Sie eine Eigenschaft festlegen, um anzugeben, dass die Aufrufebene konfigurierte Benutzerdaten verwenden soll.
 
