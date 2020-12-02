@@ -12,6 +12,9 @@ discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +26,7 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 Er deckt folgende Themen ab:
 
 * [Erste Schritte](#getting-started)\
-   Detaillierte Darstellung der grundlegenden Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
+   Detaillierte Darstellung der grundlegenden Reihenfolge der Ereignis, die Sie zum Erstellen und Veröffentlichen der ersten Seite benötigen.
 
 * [Weitere Aktionen](#further-actions)\
    Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
@@ -44,7 +47,7 @@ Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-authorin
 
 Bei vielen Aktionen, wie beim Bearbeiten, müssen Sie [eine Seite öffnen](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
-### Bearbeiten einer Seite {#editing-a-page}
+### Bearbeiten einer Seite  {#editing-a-page}
 
 Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, haben Sie folgende Möglichkeiten für die [Bearbeitung einer Seite](/help/sites-authoring/editing-content.md):
 
@@ -57,11 +60,11 @@ Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder
 * [Verwenden des Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode) (um die Darstellung der Seite bei der Veröffentlichung zu prüfen)
 * [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Veröffentlichen einer Seite {#publishing-a-page}
+### Veröffentlichen einer Seite  {#publishing-a-page}
 
 Wenn Sie die Bearbeitung der Seite abgeschlossen haben, möchten Sie [den Inhalt sicherlich veröffentlichen (bzw. aktivieren)](/help/sites-authoring/publishing-pages.md#main-pars-title-10), damit er für Besucher Ihrer Website verfügbar ist.
 
-## Weitere Aktionen {#further-actions}
+## Weitere Aktionen  {#further-actions}
 
 Neben den allgemeinen Schritten gibt es viele weitere Aktionen, die Sie bei der Bearbeitung verwenden können.
 
@@ -73,7 +76,7 @@ Gelegentlich bietet es sich an, [eine Seite zu kopieren](/help/sites-authoring/m
 
 [Für das Verschieben und das Umbenennen von Seiten verwenden Sie im Allgemeinen dieselbe Aktion.](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)
 
-### Veröffentlichen einer Seite rückgängig machen {#unpublishing-a-page}
+### Veröffentlichen einer Seite rückgängig machen  {#unpublishing-a-page}
 
 Um zuvor veröffentlichte (oder aktivierte) Inhalte von Ihrer öffentlichen Website wieder zu entfernen, [machen Sie die Veröffentlichung rückgängig (bzw. deaktivieren Sie die Seite)](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
@@ -81,14 +84,14 @@ Um zuvor veröffentlichte (oder aktivierte) Inhalte von Ihrer öffentlichen Webs
 
 Wenn eine Seite nicht mehr benötigt wird, [können Sie sie löschen](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Festlegen von Seiteneigenschaften {#setting-the-page-properties}
+### Festlegen von Seiteneigenschaften  {#setting-the-page-properties}
 
 Jede [Seite verfügt über Eigenschaften](/help/sites-authoring/editing-page-properties.md), die Sie definieren können, um damit Aspekte ihrer Verwendung zu bestimmen. Diese Eigenschaften können in jeder der beiden Benutzeroberflächen aktualisiert werden.
 
-### Erstellen einer Seitenversion {#creating-a-version-of-a-page}
+### Erstellen einer Seitenversion  {#creating-a-version-of-a-page}
 
 Sie können eine [Version einer Seite erstellen](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) und diese bei Bedarf [wiederherstellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version),
 
-## Weitere Informationen {#more-information}
+## Weitere Informationen  {#more-information}
 
 Weitere Informationen zum Authoring finden Sie unter [Bearbeiten von Seiten (Authoring)](/help/sites-authoring/page-authoring.md).
