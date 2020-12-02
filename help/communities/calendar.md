@@ -28,25 +28,25 @@ Mit der Kalenderfunktion können der Community Veranstaltungsdaten im Kalenderfo
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der Kalenderfunktion zu einer AEM Site
-* Configuration settings for `Calendar` components
+* Konfigurationseinstellungen für `Calendar`-Komponenten
 
 ## Hinzufügen eines Kalenders zu einer Seite {#adding-a-calendar-to-a-page}
 
-To add a `Calendar` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Calendar`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Calendar`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite, beispielsweise in die Nähe einer Eigenschaft, die Benutzer bewerten sollen.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) einbezogen werden, wird die `Calendar`-Komponente so angezeigt.
 
 ![calendar-component](assets/calendar-component.png)
 
 ### Konfigurieren eines Kalenders {#configuring-calendar}
 
-Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Calendar` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -54,7 +54,7 @@ Select the placed `Calendar` component to access and select the `Configure` icon
 
 #### Registerkarte „Settings“{#settings-tab}
 
-Under the **Settings** tab, specify whether or not to allow tags to be applied to calendar entries.
+Geben Sie unter der Registerkarte **Einstellungen** an, ob Tags auf Kalendereinträge angewendet werden dürfen.
 
 * **Ereignisse pro Seite**
 
@@ -74,7 +74,7 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Tagging zulassen**
 
-   If checked, allow members to add tag labels to the events they post (see **Tag field** tab). Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Sie den Mitgliedern gestatten, den von ihnen geposteten Ereignissen Tagbeschriftungen hinzuzufügen (siehe **Feld** Registerkarte). Diese Option ist standardmäßig aktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -86,11 +86,11 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Max. Dateigröße**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
 
 * **Zulässige Dateitypen**
 
-   Relevant nur, wenn `Allow File Uploads` aktiviert. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
+   Relevant nur, wenn `Allow File Uploads` markiert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht angegeben, sodass alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
 
@@ -122,11 +122,11 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [spezieller Inhalt](/help/communities/featured.md)identifiziert werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [gekennzeichneter Inhalt](/help/communities/featured.md) identifiziert werden. Diese Option ist standardmäßig deaktiviert.
 
-Under the **User Moderation** tab, specify how the posted topics and replies (user generated content) are managed. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Geben Sie auf der Registerkarte **Benutzermoderation** an, wie die veröffentlichten Themen und Antworten (vom Benutzer generierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
 * **Posts ablehnen**
 
@@ -162,7 +162,7 @@ Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausg
 
 * **Zulässige Namespaces**
 
-   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert wurde. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` unter der Registerkarte **Einstellungen** markiert ist. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namensraum umfasst &quot;Standard-Tags&quot;(den standardmäßigen Namensraum) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
 
 * **Empfehlungsgrenze**
 
@@ -172,7 +172,7 @@ Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausg
 >
 >Unter [Verwalten von Tags](/help/sites-administering/tags.md) finden Sie Informationen darüber, wie Sie neue Tag-Namespaces (Taxonomie) hinzufügen können.
 
-#### Registerkarte &quot;Übersetzung&quot; {#translation-tab}
+#### Registerkarte Übersetzung {#translation-tab}
 
 Auf der Registerkarte **Übersetzung** können Sie festlegen, ob bei für die Community-Site aktivierten Übersetzungsoption anstatt bestimmter Einträge der gesamte Thread (Veranstaltung und Kommentare) übersetzt werden soll.
 
@@ -196,7 +196,7 @@ Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kan
 
 #### Mitglieder {#members}
 
-When the signed in user is a community member or [privileged member](/help/communities/users.md#privileged-members-group) (depending on configuration), they are able to select `New Event` to create and post a new calendar event.
+Wenn der angemeldete Benutzer ein Community-Mitglied oder [ein privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) ist (je nach Konfiguration), können sie `New Event` auswählen, um ein neues Kalendersymbol zu erstellen und zu posten.
 
 Insbesondere können sie
 
@@ -218,10 +218,10 @@ Nicht registrierte oder angemeldete Besucher können veröffentlichte Veranstalt
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) für Entwickler.
 
 Informationen zur Moderation von Kalenderereignissen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
-For tagging calendar events and comments, see [Tagging User Generated Content](/help/communities/tag-ugc.md).
+Informationen zum Taggen von Kalenderinhalten und -kommentaren finden Sie unter [Tagging von benutzergenerierten Ereignissen](/help/communities/tag-ugc.md).
 
-For translation of calendar events and comments, see [Translating User Generated Content](/help/communities/translate-ugc.md).
+Eine Übersetzung der Kalenderinhalte und Ereignisse finden Sie unter [Übersetzen benutzergenerierter ](/help/communities/translate-ugc.md).
