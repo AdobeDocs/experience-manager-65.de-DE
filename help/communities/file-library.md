@@ -27,32 +27,32 @@ Mithilfe der Dateibibliothek können angemeldete Besucher der Site (Community-Mi
 
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
 
-* Hinzufügen der Dateibibliotheksfunktion zu einer AEM-Site.
-* Configuration settings for the `File Library` component.
+* Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site.
+* Konfigurationseinstellungen für die Komponente `File Library`.
 
 ### Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
 
-To add a `File Library` component to a page in author mode, locate the component:
+Um eine `File Library`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente:
 
 * `Communities / File Library`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-file-library.md#essentials-for-client-side) are included, this is how the `File Library` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) einbezogen werden, wird die `File Library`-Komponente wie folgt angezeigt:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ### Konfigurieren der Dateibibliothek {#configuring-file-library}
 
-Select the placed `File Library` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `File Library` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-431](assets/chlimage_1-431.png)
 
 ![chlimage_1-432](assets/chlimage_1-432.png)
 
-#### Comments tab {#comments-tab}
+#### Kommentar, Registerkarte {#comments-tab}
 
 Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
@@ -102,7 +102,7 @@ Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu ho
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge [benachrichtigt](/help/communities/notifications.md) werden können. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder über neue Beiträge benachrichtigt werden können. [](/help/communities/notifications.md) Diese Option ist standardmäßig deaktiviert.
 
 * **Erwähnung aktivieren**
 
@@ -120,7 +120,7 @@ Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu ho
 
    Wenn diese Option aktiviert ist, können Sie Antworten auf veröffentlichte Kommentare zulassen. Diese Option ist standardmäßig deaktiviert.
 
-#### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
+#### Benutzermoderation, Registerkarte {#user-moderation-tab}
 
 Legen Sie auf der Registerkarte **Benutzermoderation** fest, wie Kommentare moderiert werden sollen, falls diese zugelassen sind:
 
@@ -168,7 +168,7 @@ Als Standard festlegen
 
 ### Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [File Library Essentials](/help/communities/essentials-file-library.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Essentials zur Dateibibliothek](/help/communities/essentials-file-library.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
