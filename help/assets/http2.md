@@ -1,5 +1,5 @@
 ---
-title: Bereitstellung von Inhalt über HTTP/2
+title: 'Bereitstellung von Inhalt über HTTP/2 '
 description: HTTP/2 verbessert die Kommunikation zwischen Browsern und Servern, ermöglicht eine schnellere Übertragung von Informationen und verringert den Verarbeitungsaufwand.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
@@ -9,13 +9,16 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 translation-type: tm+mt
 source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 100%
 
 ---
 
 
-# Bereitstellung von Inhalt über HTTP/2 {#http-delivery-of-content}
+# Bereitstellung von Inhalt über HTTP/2  {#http-delivery-of-content}
 
-Adobe freut sich, die Bereitstellung von Inhalt über HTTP/2 zu präsentieren, die eine Verbesserung der Leistung mit sich bringt. 
+Adobe freut sich, die Bereitstellung von Inhalt über HTTP/2 zu präsentieren, die eine Verbesserung der Leistung mit sich bringt.
 
 ## Was ist HTTP/2? {#what-is-http}
 
@@ -38,7 +41,7 @@ Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und L
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Bin ich berechtigt, auf HTTP/2 umzustellen? {#am-i-eligible-to-switch-over-to-http}
+## Bin ich berechtigt, auf HTTP/2 umzustellen?      {#am-i-eligible-to-switch-over-to-http}
 
 Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
@@ -48,13 +51,13 @@ Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfül
 
    Wenn Sie bereits über eine dedizierte Domäne verfügen, können Sie sich über den technischen Support anmelden.
 
-   Wenn Sie nicht über eine dedizierte Domäne verfügen, verlegt Adobe Ihre Umstellung auf HTTP/2 in das Jahr 2018.
+   Wenn Sie nicht über eine dedizierte Domäne verfügen, wird Adobe Ihre Umstellung auf HTTP/2 für 2018 einplanen.
 
-## Was versteht man unter dem Prozess für die Aktivierung von HTTP/2 für mein Dynamic Media-Konto? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## Wie verläuft der Prozess für die Aktivierung von HTTP/2 für mein Dynamic Media-Konto? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 Sie müssen den Wechsel auf HTTP/2 beantragen, da er nicht automatisch erfolgt.
 
-1. Senden Sie eine Anfrage an den technischen Support, um auf HTTP/2 umzustellen. Siehe [Zugriff auf das AEM-Supportportal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Senden Sie eine Anfrage an den technischen Support, um auf HTTP/2 umzustellen. Siehe [Zugriff auf das AEM-Supportportal](https://helpx.adobe.com/de/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. In der Anfrage geben Sie folgende Informationen an:
 
@@ -80,13 +83,13 @@ Anfragen werden in der Reihenfolge verarbeitet, in der sie beim technischen Supp
 >
 >Die Vorlaufzeit kann lang sein, da die Umstellung auf HTTP/2 die Löschung des Cache erfordert. Es können daher nur wenige Umstellungen zugleich durchgeführt werden.
 
-## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden? {#what-are-the-risks-with-moving-to-http}
+## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden?      {#what-are-the-risks-with-moving-to-http}
 
 Durch die Umstellung auf HTTP/2 wird Ihr Cache im CDN gelöscht, da eine neue CDN-Konfiguration erforderlich ist.
 
 Der nicht zwischengespeicherte Inhalt wird direkt an die ursprünglichen Server von Adobe übertragen, bis der Cache neu aufgebaut wird. Aus diesem Grund führt Adobe nur wenige Umstellungen zugleich durch, wodurch eine akzeptable Leistung aufrechterhalten werden kann, wenn Anforderungen aus unserer Quelle abgerufen werden.
 
-## Wie kann festgestellt werden, ob eine URL oder eine Website mit HTTP/2 aktiviert wurde? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Wie kann festgestellt werden, ob eine URL oder eine Website mit HTTP/2 aktiviert wurde?      {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Da der Browser nicht auf diese Tatsache hinweist, muss eine Erweiterung heruntergeladen werden.
 
