@@ -65,7 +65,7 @@ In einigen Benutzeroberflächenmodulen wird ein Popup-Overlay angezeigt, wenn da
 
 In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Steuern diese Store-Daten Seiteninhalte, können Sie mit dem Formular Änderungen vornehmen, die sich dann in den Seiteninhalten widerspiegeln.
 
-### Vollbildmodus   {#fullscreen-mode}
+### Vollbildmodus    {#fullscreen-mode}
 
 Die Popup-Überlagerung kann ein Symbol enthalten, auf das Sie klicken oder tippen können, um den Popup-Inhalt so zu erweitern, dass er das gesamte Browser-Fenster oder den Bildschirm einnimmt.
 
