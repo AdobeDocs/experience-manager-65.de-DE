@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 100%
 
 ---
 
@@ -30,8 +33,9 @@ Informationen zur Integration von AEM mit anderen Lösungen von Adobe oder mit S
 >
 >Wenn Sie bei Ihrer Integration auch eine benutzerdefinierte Proxykonfiguration verwenden, müssen Sie beide HTTP-Client-Proxykonfigurationen konfigurieren, da einige Funktionen von AEM die APIs der Version 3.x und andere die APIs der Version 4.x verwenden:
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)  konfiguriert.
+>* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+
 >
 
 
