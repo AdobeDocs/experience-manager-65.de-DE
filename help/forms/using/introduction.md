@@ -10,6 +10,9 @@ discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 „HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die das Anzeigen von XFA-Formularvorlagen im HTML5-Format ermöglicht. Diese Funktion ermöglicht das Anzeigen von Formularen auf mobilen Geräten und Desktop-Browsern, auf denen XFA-basierte PDF nicht unterstützt werden. „HTML5-Formulare“ Forms unterstützt nicht nur vorhandene Funktionen XFA-basierter Formularvorlagen, sondern bietet auch neue Funktionen für mobile Geräte wie die Scribble-Signatur.
 
-„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plugins installiert werden. For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+„HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es müssen keine zusätzlichen Browser-Plugins installiert werden. Weitere Informationen zu unterstützten Browsern finden Sie unter [Unterstützte Clientplattformen](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
 ![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
@@ -44,4 +47,4 @@ AEM bietet außerdem eine einheitliche Ansicht für die Auflistung und Verwaltun
 
 ### Anpassung von Formularen {#forms-customization}
 
-„HTML5-Formulare“ zeigt Formularvorlagen mithilfe standardmäßiger HTML5-Konstrukte an. Dies vereinfacht die Anpassung und Erweiterung von Formularen im HTML5-Format mithilfe von Webtechnologien, vorwiegend CSS und JavaScript. Sie können das Erscheinungsbild vorhandener Widgets ganz einfach anpassen und Ihre eigenen benutzerdefinierten Widgets oder benutzerdefinierte Formatierungselemente in Formularen verwenden. For more information about creating custom widgets and customizing existing widgets, see [Plug in custom widgets with HTML5 forms](../../forms/using/custom-widgets.md).
+„HTML5-Formulare“ zeigt Formularvorlagen mithilfe standardmäßiger HTML5-Konstrukte an. Dies vereinfacht die Anpassung und Erweiterung von Formularen im HTML5-Format mithilfe von Webtechnologien, vorwiegend CSS und JavaScript. Sie können das Erscheinungsbild vorhandener Widgets ganz einfach anpassen und Ihre eigenen benutzerdefinierten Widgets oder benutzerdefinierte Formatierungselemente in Formularen verwenden. Weitere Informationen zum Erstellen benutzerdefinierter Widgets und Anpassen vorhandener Widgets finden Sie unter [Benutzerdefinierte Widgets mit HTML5-Formularen ](../../forms/using/custom-widgets.md) hinzufügen.
