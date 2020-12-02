@@ -23,9 +23,9 @@ ht-degree: 74%
 
 Sie können die Felder eines adaptiven Formulars mit vorhandenen Daten vorbefüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Um Daten in einem adaptiven Formular vorzufüllen, stellen Sie die Benutzerdaten als vorbefüllte XML/JSON in dem Format bereit, das der Datenstruktur zum Vorbefüllen von adaptiven Formularen entspricht.
 
-## Structure of prefill data {#the-prefill-structure}
+## Struktur der Daten zum Vorausfüllen {#the-prefill-structure}
 
-Ein adaptives Formular kann eine Mischung aus gebundenen und ungebundenen Feldern enthalten. Bound fields are fields which are dragged from the Content Finder tab and contain non-empty `bindRef` property value in the field edit dialog. Ungebundene Felder werden direkt aus dem Sidekick gezogen und haben einen leeren `bindRef`-Wert.
+Ein adaptives Formular kann eine Mischung aus gebundenen und ungebundenen Feldern enthalten. Gebundene Felder sind Felder, die von der Registerkarte &quot;Inhaltssuche&quot;gezogen werden und die nicht leere `bindRef`-Eigenschaftswerte im Dialogfeld zum Bearbeiten von Feldern enthalten. Ungebundene Felder werden direkt aus dem Sidekick gezogen und haben einen leeren `bindRef`-Wert.
 
 Sie können sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorbefüllen. Die Voreinstellungsdaten enthalten die Abschnitte „afBoundData“ und „afUnBoundData“, um sowohl gebundene als auch ungebundene Felder eines adaptiven Formulars vorzubefüllen. Der Abschnitt `afBoundData` enthält die Daten zum Vorbefüllen für gebundene Felder und Bereiche. Diese Daten müssen mit dem verknüpften Formularmodellschema konform sein:
 
@@ -75,26 +75,27 @@ Sie können sowohl gebundene als auch ungebundene Felder eines adaptiven Formula
 }
 ```
 
-Im Fall von gebundenen Feldern mit demselben „bindref“ oder ungebundenen Feldern mit demselben Namen, werden die im XML-Tag oder JSON-Objekt angegebenen Daten in alle Felder eingefügt. For example, two fields in a form are mapped to the name `textbox` in the prefill data. Wenn das erste Textfeldfeld „A“ enthält, wird Zur Laufzeit im zweiten Textfeld automatisch „A“ ausgefüllt. Diese Verknüpfung wird als Live-Verknüpfung von Feldern adaptiver Formulare bezeichnet.
+Im Fall von gebundenen Feldern mit demselben „bindref“ oder ungebundenen Feldern mit demselben Namen, werden die im XML-Tag oder JSON-Objekt angegebenen Daten in alle Felder eingefügt. So werden beispielsweise zwei Felder in einem Formular dem Namen `textbox` in den Daten zum Vorausfüllen zugeordnet. Wenn das erste Textfeldfeld „A“ enthält, wird Zur Laufzeit im zweiten Textfeld automatisch „A“ ausgefüllt. Diese Verknüpfung wird als Live-Verknüpfung von Feldern adaptiver Formulare bezeichnet.
 
 ### Adaptives Formular mit XFA-Formularvorlage {#xfa-based-af}
 
 Die Struktur der XML zum Vorausfüllen und der gesendeten XML für XFA-basierte adaptive Formulare lautet wie folgt:
 
-* **XML-Struktur zum Vorbefüllen**: Die XML zum Vorausfüllen für XFA-basierte adaptive Formulare muss mit dem Datenschema der XFA-Formularvorlage konform sein. To prefill unbound fields, wrap the prefill XML structure into `/afData/afBoundData` tag.
+* **XML-Struktur zum Vorbefüllen**: Die XML zum Vorausfüllen für XFA-basierte adaptive Formulare muss mit dem Datenschema der XFA-Formularvorlage konform sein. Um ungebundene Felder im Voraus auszufüllen, schließen Sie die XML-Struktur zum Vorausfüllen in das Tag `/afData/afBoundData` ein.
 
 * **Gesendete XML-Struktur**: Wenn keine XML zum Vorausfüllen verwendet wird, enthält die gesendete XML Daten für gebundene und ungebundene Felder im `afData`-Wrapper-Tag. Wenn XML zum Vorbellen verwendet wird, enthält die gesendete XML dieselbe Struktur wie die XML zum Vorbellen. Wenn die XML zum Vorbellen mit dem `afData`-Stamm-Tag beginnt, hat die Ausgabe-XML ebenfalls dasselbe Format. Wenn die XML zum Vorausfüllen nicht den `afData/afBoundData` Wrapper aufweist und stattdessen direkt aus dem Schemastamm-Tag beginnt, wie `employeeData`, beginnt die gesendete XML ebenfalls mit dem `employeeData`-Tag
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[Beispiel für Datei](assets/prefill-submit-data-contentpackage.zip)abrufen, das die Daten zum Vorausfüllen und die gesendeten Daten enthält
+[Abrufen ](assets/prefill-submit-data-contentpackage.zip)
+von FileSample, das die Daten zum Vorausfüllen und die gesendeten Daten enthält
 
 ### XML-Schemabasierte adaptive Formulare  {#xml-schema-af}
 
 Die Struktur von Prefill-XML und von eingereichten XML für adaptive Formulare, die auf XML-Schemata basieren, ist wie folgt:
 
 * **XML-Struktur zum Vorbefüllen**: Die XML zum Vorbefüllen muss mit dem verknüpften XML-Schema konform sein. Um ungebundene Felder vorabzufüllen, umschließen Sie die vorbefüllte XML-Struktur in das Tag /afData/afBoundData
-* **Gesendete XML-Struktur**: Wenn keine XML zum Vorausfüllen verwendet wird, enthält die gesendete XML Daten für gebundene und ungebundene Felder im `afData` Wrapper-Tag. Wenn die XML zum Vorbefüllen verwendet wird, enthält die gesendete XML dieselbe Struktur wie die XML zum Vorbefüllen. Wenn die XML zum Vorbefüllen mit dem `afData`-Stamm-Tag beginnt, hat die Ausgabe-XML dasselbe Format. Wenn die XML zum Vorbefüllen nicht den `afData/afBoundData`-Wrapper aufweist und stattdessen direkt aus dem Schemastamm-Tag beginnt, wie `employeeData`, beginnt die gesendete XML ebenfalls mit dem `employeeData`-Tag.
+* **Gesendete XML-Struktur**: Wenn keine XML zum Vorausfüllen verwendet wird, enthält die gesendete XML Daten für gebundene und ungebundene Felder im  `afData` Wrapper-Tag. Wenn die XML zum Vorbefüllen verwendet wird, enthält die gesendete XML dieselbe Struktur wie die XML zum Vorbefüllen. Wenn die XML zum Vorbefüllen mit dem `afData`-Stamm-Tag beginnt, hat die Ausgabe-XML dasselbe Format. Wenn die XML zum Vorbefüllen nicht den `afData/afBoundData`-Wrapper aufweist und stattdessen direkt aus dem Schemastamm-Tag beginnt, wie `employeeData`, beginnt die gesendete XML ebenfalls mit dem `employeeData`-Tag.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -112,7 +113,7 @@ Die Struktur von Prefill-XML und von eingereichten XML für adaptive Formulare, 
 </xs:schema>
 ```
 
-For fields whose model is XML schema, the data is prefilled in the `afBoundData` tag as shown in the sample XML below. Es kann zum Vorfüllen eines adaptiven Formulars mit einem oder mehreren ungebundenen Textfeldern verwendet werden.
+Bei Feldern, deren Modell XML-Schema ist, werden die Daten im Tag `afBoundData` vorab ausgefüllt, wie in der XML-Beispieldatei unten dargestellt. Es kann zum Vorfüllen eines adaptiven Formulars mit einem oder mehreren ungebundenen Textfeldern verwendet werden.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -166,7 +167,7 @@ Für adaptive Formulare, die auf dem JSON-Schema basieren, wird im Folgenden die
 }}}}}
 ```
 
-Bei Feldern, die das JSON-Schemamodell verwenden, sind die Daten im afBoundData-Objekt bereits vorbefüllt, wie im folgenden Beispiel-JSON gezeigt. Es kann zum Vorfüllen eines adaptiven Formulars mit einem oder mehreren ungebundenen Textfeldern verwendet werden. Below is an example of data with `afData/afBoundData` wrapper:
+Bei Feldern, die das JSON-Schemamodell verwenden, sind die Daten im afBoundData-Objekt bereits vorbefüllt, wie im folgenden Beispiel-JSON gezeigt. Es kann zum Vorfüllen eines adaptiven Formulars mit einem oder mehreren ungebundenen Textfeldern verwendet werden. Nachstehend finden Sie ein Beispiel für Daten mit dem Wrapper `afData/afBoundData`:
 
 ```json
 {
@@ -183,7 +184,7 @@ Bei Feldern, die das JSON-Schemamodell verwenden, sind die Daten im afBoundData-
 }}}}}}}
 ```
 
-Below is an example without `afData/afBoundData` wrapper:
+Unten sehen Sie ein Beispiel ohne `afData/afBoundData`-Wrapper:
 
 ```json
 {
@@ -198,9 +199,9 @@ Below is an example without `afData/afBoundData` wrapper:
 >
 >Die Verwendung von ungebundenen Feldern in gebundenen Bereichen (Bereiche mit nicht-leerem bindRef, die durch Ziehen von Komponenten aus dem Sidekick oder aus der Datenquellenregisterkarte erstellt wurden) wird **nicht** empfohlen, da dies möglicherweise zu Datenverlust der ungebundenen Felder führt. Es wird empfohlen, eindeutige Feldnamen im gesamten Formular zu verwenden, insbesondere für ungebundene Felder.
 
-### Adaptives Formular ohne Formularmodell {#adaptive-form-with-no-form-model}
+### Adaptives Formular ohne Formularmodell  {#adaptive-form-with-no-form-model}
 
-For adaptive forms with no form model, the data for all the fields is under the `<data>` tag of `<afUnboundData> tag`.
+Bei adaptiven Formularen ohne Formularmodell befinden sich die Daten für alle Felder unter dem `<data>`-Tag von `<afUnboundData> tag`.
 
 Außerdem sollten Sie Folgendes beachten:
 
@@ -225,7 +226,7 @@ Die XML-Tags für die Benutzerdaten, die für verschiedene Felder gesendet werde
 </afData>
 ```
 
-## Konfigurieren des Vorbefüllungs-Diensts mithilfe von Configuration Manager {#configuring-prefill-service-using-configuration-manager}
+## Konfigurieren des Vorbefüllungs-Diensts mithilfe von Configuration Manager  {#configuring-prefill-service-using-configuration-manager}
 
 Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vorfülldienstes in der AEM Web-Konsolenkonfiguration an. Führen Sie die folgenden Schritte aus, um den Vorbefüllungs-Dienst zu konfigurieren:
 
@@ -233,7 +234,7 @@ Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vor
 >
 >Die Vorbefüllungs-Dienstkonfiguration ist auf adaptive Formulare, HTML5-Formulare und HTML5-Formularsätze anwendbar.
 
-1. Open **[!UICONTROL Adobe Experience Manager Web Console Configuration]** by using the URL:\
+1. Öffnen Sie **[!UICONTROL Adobe Experience Manager Web Console Configuration]** unter Verwendung der URL:\
    https://&lt;server>:&lt;port>/system/console/configMgr
 1. Suchen und öffnen Sie die **[!UICONTROL standardmäßige Vorbefüllungs-Dienst-Konfiguration]**.
 
@@ -254,7 +255,7 @@ Um den Vorfülldienst zu aktivieren, geben Sie die Standardkonfiguration des Vor
    >
    >Das crx-Protokoll verwaltet die vorbefüllte Datensicherheit und daher ist es standardmäßig zulässig. Vorbefüllen über andere Protokolle mit dem generischen regex verursacht möglicherweise Sicherheitslücken. Geben Sie in der Konfiguration eine sichere URL-Konfiguration zum Schutz Ihrer Daten an.
 
-## Die Besonderheit bei wiederholbaren Bereichen {#the-curious-case-of-repeatable-panels}
+## Die Besonderheit bei wiederholbaren Bereichen  {#the-curious-case-of-repeatable-panels}
 
 Im Allgemeinen werden gebundene (aus Schema) und ungebundene Felder oder Teilformulare in demselben adaptiven Formular erstellt. Im Folgenden werden allerdings einige Ausnahmen genannt, die gelten, falls die gebundenen wiederholbar sind:
 
@@ -265,11 +266,11 @@ Im Allgemeinen werden gebundene (aus Schema) und ungebundene Felder oder Teilfor
 >
 >Generell sollten Sie keine gebundenen und ungebundenen Felder mischen, wenn sie sich in Daten schneiden, die vom Benutzer in ungebundenen Feldern eingegeben werden. Wenn möglich, sollten Sie das XML-Schema oder die XFA-Formularvorlage ändern und einen Eintrag für ungebundene Felder hinzufügen, sodass sie auch gebunden werden und ihre Daten wie andere Felder in den gesendeten Daten verfügbar sind.
 
-## Unterstützte Protokolle zum Vorbefüllen von Benutzerdaten {#supported-protocols-for-prefilling-user-data}
+## Unterstützte Protokolle zum Vorbefüllen von Benutzerdaten  {#supported-protocols-for-prefilling-user-data}
 
 Adaptive Formulare können mit Benutzerdaten im Vorbefülldatenformat über die folgenden Protokolle vorbefüllt werden, wenn sie mit gültigem Regex konfiguriert sind:
 
-### crx://-Protokoll {#the-crx-protocol}
+### crx://-Protokoll  {#the-crx-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
@@ -285,7 +286,7 @@ https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=fil
 
 Die referenzierte Datei muss sich auf demselben Server befinden.
 
-### https:// {#the-http-protocol}
+### Das https://{#the-http-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
@@ -304,9 +305,9 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 >
 >Die Übergabe von Authentifizierungsparametern wird nicht unterstützt.
 
-### Festlegen des Datenattributs in slingRequest {#setting-data-attribute-in-slingrequest}
+### Festlegen des Datenattributs in slingRequest  {#setting-data-attribute-in-slingrequest}
 
-You can also set the `data` attribute in `slingRequest`, where the `data` attribute is a string containing XML or JSON, as shown in the sample code below (Example is for XML):
+Sie können das Attribut `data` auch in `slingRequest` festlegen, wobei das Attribut `data` eine Zeichenfolge mit XML oder JSON ist, wie im folgenden Beispielcode gezeigt (Beispiel: XML):
 
 ```javascript
 <%
@@ -332,7 +333,8 @@ Ein weiteres gutes Beispiel ist ein Szenario, bei dem Sie Daten bei der Anmeldun
 
 prefill-page component.zip
 
-[File](assets/prefill-page-component.zip)Sample prefill.jsp in Seitenkomponente abrufen
+[Abrufen von ](assets/prefill-page-component.zip)
+FileSample prefill.jsp in der Seitenkomponente
 
 ## Benutzerdefinierter AEM Forms-Vorbefüllungs-Dienst {#aem-forms-custom-prefill-service}
 
@@ -359,11 +361,11 @@ Das Bausteinpaket (Vorbefüllungs-Dienst-Beispielpaket) enthält folgende Beispi
    * `nodePath:` Die Knotenpfadvariable, die auf den crx-Repository-Speicherort verweist, enthält den Pfad der Daten(Vorbefüllungs)-Datei. Beispiel: /content/prefillservice.xml
    * `label:` Der Parameter „label“ gibt den Anzeigenamen des Dienstes an. Beispiel: Standard-Vorbefüllungsdienst
 
-1. Save and close the `Prefill.java` file.
-1. Add the `AEM Forms Client SDK` package to the build path of the boilerplate project.
+1. Speichern und schließen Sie die Datei `Prefill.java`.
+1. hinzufügen Sie das `AEM Forms Client SDK`-Paket an den Build-Pfad des Bausteinprojekts.
 1. Kompilieren Sie das Projekt und erstellen Sie die .jar-Datei für das Paket.
 
-#### Starten und verwenden Sie den Vorbefüllungs-Dienst {#start-and-use-the-prefill-service}
+#### Starten und verwenden Sie den Vorbefüllungs-Dienst  {#start-and-use-the-prefill-service}
 
 Um den Vorbefüllungs-Dienst zu starten, laden Sie die JAR-Datei auf AEM Forms Web Console hoch und aktivieren Sie den Dienst. Jetzt wird der Dienst im adaptiven Formular-Editor angezeigt. Verknüpfen eines Vorbefüllungs-Dienstes mit einem adaptiven Formular:
 
@@ -371,7 +373,7 @@ Um den Vorbefüllungs-Dienst zu starten, laden Sie die JAR-Datei auf AEM Forms W
 1. In der Eigenschaftenkonsole navigieren Sie zu „AEM Forms Container“ > „Standard“ > „Vorbefüllungs-Dienst“.
 1. Wählen Sie den Vorbefüllungsdienst und klicken Sie auf **[!UICONTROL Speichern]**. Dieser Dienst ist mit dem Formular verknüpft.
 
-## Daten vorab auf dem Client ausfüllen {#prefill-at-client}
+## Daten vorab auf Client {#prefill-at-client} füllen
 
 Wenn Sie ein adaptives Formular im Voraus ausfüllen, führt der AEM Forms-Server Daten mit einem adaptiven Formular zusammen und liefert das ausgefüllte Formular an Sie weiter. Standardmäßig erfolgt die Datenzusammenführung auf dem Server.
 
@@ -387,4 +389,4 @@ Sie können den AEM Forms-Server so konfigurieren, dass die Datenzusammenführun
 
    * Führen Sie zum Deaktivieren den folgenden cURL-Befehl aus:
       `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Um die vorausgefüllten Daten bei der Client-Option in vollem Umfang nutzen zu können, aktualisieren Sie den Prefill-Dienst, um [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) und [CustomContext zurückzugeben.](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+   Um die Option zum Vorausfüllen der Daten auf Client vollständig nutzen zu können, aktualisieren Sie den Dienst zum Vorausfüllen, um [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) und [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) zurückzugeben.
