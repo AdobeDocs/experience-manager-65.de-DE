@@ -1,6 +1,6 @@
 ---
-title: Wiedergabe von HTML-Formularen mit benutzerdefinierten CSS-Dateien
-seo-title: Wiedergabe von HTML-Formularen mit benutzerdefinierten CSS-Dateien
+title: Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien
+seo-title: Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien
 description: 'null'
 seo-description: 'null'
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
@@ -12,15 +12,18 @@ topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
 source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
+workflow-type: tm+mt
+source-wordcount: '1640'
+ht-degree: 2%
 
 ---
 
 
-# Wiedergabe von HTML-Formularen mit benutzerdefinierten CSS-Dateien {#rendering-html-forms-using-custom-css-files}
+# Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien {#rendering-html-forms-using-custom-css-files}
 
 Der Forms-Dienst gibt HTML-Formulare als Antwort auf eine HTTP-Anforderung eines Webbrowsers wieder. Beim Rendern eines HTML-Formulars kann der Forms-Dienst auf eine benutzerdefinierte CSS-Datei verweisen. Sie können eine benutzerdefinierte CSS-Datei erstellen, um Ihre Geschäftsanforderungen zu erfüllen und auf diese CSS-Datei zu verweisen, wenn Sie den Forms-Dienst zur Wiedergabe von HTML-Formularen verwenden.
 
-Der Forms-Dienst analysiert die benutzerdefinierte CSS-Datei im Hintergrund. Das heißt, der Forms-Dienst meldet keine Fehler, die auftreten können, wenn die benutzerdefinierte CSS-Datei nicht den CSS-Standards entspricht. In diesem Fall ignoriert der Forms-Dienst den Stil und fährt mit den übrigen Stilen in der CSS-Datei fort.
+Der Forms-Dienst analysiert die benutzerdefinierte CSS-Datei im Hintergrund. Das heißt, der Forms-Dienst meldet keine Fehler, die auftreten können, wenn die benutzerdefinierte CSS-Datei nicht den CSS-Standards entspricht. In diesem Fall ignoriert der Forms-Dienst den Stil und fährt mit den verbleibenden Stilen in der CSS-Datei fort.
 
 Die folgende Liste gibt Stile an, die in einer benutzerdefinierten CSS-Datei unterstützt werden:
 
@@ -34,18 +37,18 @@ Sie können eine CSS-Beispieldatei mit der FormsIVS-Anwendung abrufen. Laden Sie
 
 >[!NOTE]
 >
->Bevor Sie ein HTML-Formular wiedergeben, das eine benutzerdefinierte CSS-Datei verwendet, sollten Sie sich mit der Wiedergabe von HTML-Formularen vertraut machen. (Siehe [Wiedergabe von Formularen als HTML](/help/forms/developing/rendering-forms-html.md).)
+>Bevor Sie ein HTML-Formular wiedergeben, das eine benutzerdefinierte CSS-Datei verwendet, sollten Sie sich mit der Wiedergabe von HTML-Formularen vertraut machen. (Siehe [Rendern von Forms als HTML](/help/forms/developing/rendering-forms-html.md).)
 
 >[!NOTE]
 >
->For more information about the Forms service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Forms-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
 So rendern Sie ein HTML-Formular mit einer CSS-Datei:
 
 1. Schließen Sie Projektdateien ein.
-1. Erstellen Sie ein Java-API-Objekt für Forms.
+1. Erstellen Sie ein Forms Java API-Objekt.
 1. Verweisen Sie auf die CSS-Datei.
 1. Wiedergabe eines HTML-Formulars
 1. Schreiben Sie den Formulardatenstream in den Client-Webbrowser.
@@ -54,7 +57,7 @@ So rendern Sie ein HTML-Formular mit einer CSS-Datei:
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxydateien einschließen.
 
-**Java-API-Objekt für Forms erstellen**
+**Forms Java API-Objekt erstellen**
 
 Bevor Sie einen vom Forms-Dienst unterstützten Vorgang programmgesteuert ausführen können, müssen Sie ein Forms-Client-Objekt erstellen.
 
@@ -82,56 +85,57 @@ Wenn der Forms-Dienst ein HTML-Formular wiedergibt, wird ein Formulardatenstream
 
 [Beginn zur Forms Service API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Wiedergeben interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interaktive PDF forms wiedergeben](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Wiedergabe von Formularen als HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendern von Forms als HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Erstellen von Webanwendungen, die Formulare wiedergeben](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Erstellen von Webanwendungen zum Rendern von Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Wiedergabe eines HTML-Formulars, das eine CSS-Datei mit der Java-API verwendet {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
+## Wiedergabe eines HTML-Formulars, das eine CSS-Datei verwendet, mit der Java-API {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
 
-Wiedergabe eines HTML-Formulars, das eine benutzerdefinierte CSS-Datei verwendet, mithilfe der Forms API (Java):
+Wiedergabe eines HTML-Formulars, das eine benutzerdefinierte CSS-Datei verwendet, mit der Forms API (Java):
 
 1. Projektdateien einschließen
 
    Schließen Sie Client-JAR-Dateien wie &quot;adobe-forms-client.jar&quot;im Klassenpfad Ihres Java-Projekts ein.
 
-1. Java-API-Objekt für Forms erstellen
+1. Forms Java API-Objekt erstellen
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
    * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
 1. CSS-Datei referenzieren
 
-   * Create an `HTMLRenderSpec` object by using its constructor.
-   * Um das HTML-Formular wiederzugeben, das eine benutzerdefinierte CSS-Datei verwendet, rufen Sie die `HTMLRenderSpec` `setCustomCSSURI` Objektmethode auf und übergeben Sie einen Zeichenfolgenwert, der den Speicherort und den Namen der CSS-Datei angibt.
+   * Erstellen Sie ein `HTMLRenderSpec`-Objekt mit dem Konstruktor.
+   * Um das HTML-Formular wiederzugeben, das eine benutzerdefinierte CSS-Datei verwendet, rufen Sie die `HTMLRenderSpec`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Speicherort und den Namen der CSS-Datei angibt.`setCustomCSSURI`
 
 1. HTML-Formular wiedergeben
 
-   Rufen Sie die `FormsServiceClient` Objektmethode `(Deprecated) (Deprecated) renderHTMLForm` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsServiceClient`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`(Deprecated) (Deprecated) renderHTMLForm`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo` Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML`an.
-   * Ein `com.adobe.idp.Document` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document` Objekt.
-   * Das `HTMLRenderSpec` Objekt, in dem HTML-Laufzeitoptionen gespeichert werden.
-   * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * Ein `URLSpec` Objekt, das zum Rendern eines HTML-Formulars erforderliche URI-Werte speichert.
-   * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
-   Die `(Deprecated) renderHTMLForm` Methode gibt ein `FormsResult` Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
+   * Ein `TransformTo`-Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
+   * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
+   * Ein Zeichenfolgenwert, der den Header-Wert `HTTP_USER_AGENT` angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Ein `URLSpec`-Objekt, das URI-Werte speichert, die zum Rendern eines HTML-Formulars erforderlich sind.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+
+   Die `(Deprecated) renderHTMLForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
 
-   * Erstellen Sie ein `com.adobe.idp.Document` Objekt, indem Sie die `FormsResult` &quot;s&quot;- `getOutputContent` Methode des Objekts aufrufen.
-   * Rufen Sie den Inhaltstyp des `com.adobe.idp.Document` Objekts ab, indem Sie dessen `getContentType` Methode aufrufen.
-   * Legen Sie den Inhaltstyp des `javax.servlet.http.HttpServletResponse` Objekts fest, indem Sie seine `setContentType` Methode aufrufen und den Inhaltstyp des `com.adobe.idp.Document` Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `javax.servlet.h\ttp.HttpServletResponse` Objektmethode `getOutputStream` aufrufen.
-   * Erstellen Sie ein `java.io.InputStream` Objekt, indem Sie die `com.adobe.idp.Document` Objektmethode `getInputStream` aufrufen.
-   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream` `read` Objektmethode aufrufen und das Bytearray als Argument übergeben.
-   * Rufen Sie die `javax.servlet.ServletOutputStream` Methode des `write` Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Bytearray an die `write` Methode.
+   * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die `FormsResult`-Methode &quot;s `getOutputContent`&quot;aufrufen.
+   * Rufen Sie den Inhaltstyp des `com.adobe.idp.Document`-Objekts ab, indem Sie dessen `getContentType`-Methode aufrufen.
+   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie die `setContentType`-Methode aufrufen und den Inhaltstyp des `com.adobe.idp.Document`-Objekts übergeben.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `getOutputStream`-Methode des Objekts aufrufen.`javax.servlet.h\ttp.HttpServletResponse`
+   * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die `com.adobe.idp.Document`-Methode des Objekts `getInputStream` aufrufen.
+   * Erstellen Sie ein Bytearray und füllen Sie es mit dem Formulardatenstream, indem Sie die `read`-Methode des Objekts aufrufen und das Bytearray als Argument übergeben.`InputStream`
+   * Rufen Sie die `write`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `javax.servlet.ServletOutputStream` Übergeben Sie das Bytearray an die `write`-Methode.
 
 **Siehe auch**
 
-[Wiedergabe von HTML-Formularen mit benutzerdefinierten CSS-Dateien](#rendering-html-forms-using-custom-css-files)
+[Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien](#rendering-html-forms-using-custom-css-files)
 
 [Quick Beginn (SOAP-Modus): Wiedergabe eines HTML-Formulars, das eine CSS-Datei mit der Java-API verwendet](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
@@ -139,55 +143,56 @@ Wiedergabe eines HTML-Formulars, das eine benutzerdefinierte CSS-Datei verwendet
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Wiedergabe eines HTML-Formulars, das eine CSS-Datei mit der Webdienst-API verwendet {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
+## Wiedergabe eines HTML-Formulars, das eine CSS-Datei verwendet, mit der Webdienst-API {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
 
-Wiedergabe eines HTML-Formulars, das eine benutzerdefinierte CSS-Datei verwendet, mithilfe der Forms API (Webdienst):
+Wiedergabe eines HTML-Formulars, das eine benutzerdefinierte CSS-Datei verwendet, mit der Forms API (Webdienst):
 
 1. Projektdateien einschließen
 
    * Erstellen Sie Java-Proxyklassen, die die Forms-Dienst-WSDL verwenden.
    * Schließen Sie die Java-Proxyklassen in Ihren Klassenpfad ein.
 
-1. Java-API-Objekt für Forms erstellen
+1. Forms Java API-Objekt erstellen
 
-   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
 
 1. CSS-Datei referenzieren
 
-   * Create an `HTMLRenderSpec` object by using its constructor.
-   * Um das HTML-Formular wiederzugeben, das eine benutzerdefinierte CSS-Datei verwendet, rufen Sie die `HTMLRenderSpec` `setCustomCSSURI` Objektmethode auf und übergeben Sie einen Zeichenfolgenwert, der den Speicherort und den Namen der CSS-Datei angibt.
+   * Erstellen Sie ein `HTMLRenderSpec`-Objekt mit dem Konstruktor.
+   * Um das HTML-Formular wiederzugeben, das eine benutzerdefinierte CSS-Datei verwendet, rufen Sie die `setCustomCSSURI`-Methode des Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Speicherort und den Namen der CSS-Datei angibt.`HTMLRenderSpec`
 
 1. HTML-Formular wiedergeben
 
-   Rufen Sie die `FormsService` Objektmethode `(Deprecated) renderHTMLForm` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `(Deprecated) renderHTMLForm`-Methode des Objekts auf und übergeben Sie die folgenden Werte:`FormsService`
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `TransformTo` Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML`an.
-   * Ein `BLOB` Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`. (Siehe [Vorausfüllen von Formularen mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
-   * Das `HTMLRenderSpec` Objekt, in dem HTML-Laufzeitoptionen gespeichert werden.
-   * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Sie können eine leere Zeichenfolge übergeben, wenn Sie diesen Wert nicht festlegen möchten.
-   * Ein `URLSpec` Objekt, das zum Rendern eines HTML-Formulars erforderliche URI-Werte speichert.
-   * Ein `java.util.HashMap` Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie angeben können, `null` wenn Sie keine Dateien an das Formular anhängen möchten.
-   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder` Objekt, das durch die `(Deprecated) renderHTMLForm` Methode gefüllt wird. Dieser Parameterwert speichert das wiedergegebene Formular.
-   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder` Objekt, das durch die `(Deprecated) renderHTMLForm` Methode gefüllt wird. Dieser Parameter speichert die XML-Ausgabedaten.
-   * Ein leeres `javax.xml.rpc.holders.LongHolder` Objekt, das durch die `(Deprecated) renderHTMLForm` Methode gefüllt wird. Dieses Argument speichert die Anzahl der Seiten im Formular.
-   * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das durch die `(Deprecated) renderHTMLForm` Methode gefüllt wird. Dieses Argument speichert den Gebietsschemawert.
-   * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das durch die `(Deprecated) renderHTMLForm` Methode gefüllt wird. Dieses Argument speichert den verwendeten HTML-Renderwert.
-   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das die Ergebnisse dieses Vorgangs enthält.
-   Die `(Deprecated) renderHTMLForm` Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder` Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
+   * Ein `TransformTo`-Enum-Wert, der den HTML-Voreinstellungstyp angibt. Um beispielsweise ein HTML-Formular wiederzugeben, das mit dynamischem HTML für Internet Explorer 5.0 oder höher kompatibel ist, geben Sie `TransformTo.MSDHTML` an.
+   * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
+   * Ein Zeichenfolgenwert, der den Header-Wert `HTTP_USER_AGENT` angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Sie können eine leere Zeichenfolge übergeben, wenn Sie diesen Wert nicht festlegen möchten.
+   * Ein `URLSpec`-Objekt, das URI-Werte speichert, die zum Rendern eines HTML-Formulars erforderlich sind.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das mit der `(Deprecated) renderHTMLForm`-Methode gefüllt wird. Dieser Parameterwert speichert das wiedergegebene Formular.
+   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das mit der `(Deprecated) renderHTMLForm`-Methode gefüllt wird. Dieser Parameter speichert die XML-Ausgabedaten.
+   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das mit der `(Deprecated) renderHTMLForm`-Methode gefüllt wird. Dieses Argument speichert die Anzahl der Seiten im Formular.
+   * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das mit der `(Deprecated) renderHTMLForm`-Methode gefüllt wird. Dieses Argument speichert den Gebietsschemawert.
+   * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das mit der `(Deprecated) renderHTMLForm`-Methode gefüllt wird. Dieses Argument speichert den verwendeten HTML-Renderwert.
+   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthält.
+
+   Die `(Deprecated) renderHTMLForm`-Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardatenstreams in den Client-Webbrowser
 
-   * Erstellen Sie ein `FormResult` Objekt, indem Sie den Wert des `com.adobe.idp.services.holders.FormsResultHolder` Objektdatenelements abrufen `value` .
-   * Erstellen Sie ein `BLOB` Objekt, das Formulardaten enthält, indem Sie die `FormsResult` Objektmethode `getOutputContent` aufrufen.
-   * Rufen Sie den Inhaltstyp des `BLOB` Objekts ab, indem Sie dessen `getContentType` Methode aufrufen.
-   * Legen Sie den Inhaltstyp des `javax.servlet.http.HttpServletResponse` Objekts fest, indem Sie seine `setContentType` Methode aufrufen und den Inhaltstyp des `BLOB` Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `javax.servlet.http.HttpServletResponse` Objektmethode `getOutputStream` aufrufen.
-   * Erstellen Sie ein Bytearray und füllen Sie es durch Aufrufen der `BLOB` Objektmethode `getBinaryData` . Diese Aufgabe weist den Inhalt des `FormsResult` Objekts dem Bytearray zu.
-   * Rufen Sie die `javax.servlet.http.HttpServletResponse` Methode des `write` Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Bytearray an die `write` Methode.
+   * Erstellen Sie ein `FormResult`-Objekt, indem Sie den Wert des `com.adobe.idp.services.holders.FormsResultHolder`-Datenelements des Objekts `value` abrufen.
+   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die `getOutputContent`-Methode des Objekts aufrufen.`FormsResult`
+   * Rufen Sie den Inhaltstyp des `BLOB`-Objekts ab, indem Sie dessen `getContentType`-Methode aufrufen.
+   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie die `setContentType`-Methode aufrufen und den Inhaltstyp des `BLOB`-Objekts übergeben.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser verwendet wird, indem Sie die `getOutputStream`-Methode des Objekts aufrufen.`javax.servlet.http.HttpServletResponse`
+   * Erstellen Sie ein Bytearray und füllen Sie es durch Aufrufen der `BLOB`-Methode des Objekts `getBinaryData`. Diese Aufgabe weist dem Bytearray den Inhalt des Objekts `FormsResult` zu.
+   * Rufen Sie die `write`-Methode des Objekts auf, um den Formulardatenstream an den Client-Webbrowser zu senden. `javax.servlet.http.HttpServletResponse` Übergeben Sie das Bytearray an die `write`-Methode.
 
 **Siehe auch**
 
-[Wiedergabe von HTML-Formularen mit benutzerdefinierten CSS-Dateien](#rendering-html-forms-using-custom-css-files)
+[Rendern von HTML Forms mit benutzerdefinierten CSS-Dateien](#rendering-html-forms-using-custom-css-files)
 
-[Aufrufen von AEM Forms mithilfe der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
