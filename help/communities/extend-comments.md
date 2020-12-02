@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Komponente &quot;Kommentare erweitern&quot;  {#extend-comments-component}
+# Komponente Kommentare erweitern {#extend-comments-component}
 
-Die Absicht, eine Standardkomponente zu [erweitern](client-customize.md#extensions) , besteht darin, das Aussehen oder Verhalten einer Komponente für bestimmte Zwecke zu ändern.
+Die Absicht von [extension](client-customize.md#extensions) einer Standardkomponente besteht darin, das Aussehen oder Verhalten einer Komponente für bestimmte Zwecke zu ändern.
 
 Der Pfad zur Komponente ist eindeutig und verweist auf die Standardkomponente als Superressourcentyp. Das Risiko ist geringer, da der Umfang im Vergleich zum globalen Umfang einer Komponentenüberlagerung begrenzt ist.
 
 >[!NOTE]
 >
->Das Erweitern einer [überlagerten](client-customize.md#overlays) Komponente wird nicht unterstützt.
+>Das Erweitern einer [überlappenden](client-customize.md#overlays)-Komponente wird nicht unterstützt.
 
 ## Beispiel {#example}
 
@@ -34,7 +34,7 @@ Angenommen, die Kopfzeile für die Kommentarkomponente muss auf einer Seite der 
 
 Um diese Lösung zu implementieren, erstellen Sie eine neue Komponente, die die vorhandene Komponente erweitert (überschreibt) und das Handlebars-Skript ändert. Der Bereich der Site, der die neuen Kommentare verwendet, kann den erweiterten verwenden, während die Sites, die das Standardbild verwenden, unverändert bleiben.
 
-Die Kommentarkomponente ist eigentlich eine von zwei Komponenten, die das Kommentarsystem umfassen. Es gibt also zwei Komponenten, die erweitert werden müssen: *Kommentare* und *Kommentare*. Das zu bearbeitende Skript befindet sich in der *-Datei der* Kommentarkomponente `header.hbs` , während die übergeordnete Komponente für *Kommentare* (das Kommentarsystem) dem entspricht, was ein Autor der Seite tatsächlich hinzufügt.
+Die Kommentarkomponente ist eigentlich eine von zwei Komponenten, die das Kommentarsystem umfassen. Es gibt also zwei Komponenten, die erweitert werden müssen: *Kommentare* und *Kommentar*. Das zu bearbeitende Skript befindet sich in der Datei *comment* der Komponente `header.hbs`, während die übergeordnete Komponente *comments* (das Kommentarsystem) der Seite tatsächlich hinzugefügt wird.
 
 Um Kommentare zu erweitern, müssen Sie:
 
