@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 59%
 
 ---
 
 
 # Erstellen benutzerdefinierter AEM-Seitenvorlagen mit Adobe Campaign-Formularkomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-This page explains how to build a custom page template that uses [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) components by examining how the Geometrixx-outdoors template ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) is implemented, and points you to important information you may need when creating your own custom template.
+Diese Seite erläutert, wie Sie eine benutzerdefinierte Seitenvorlage erstellen, die [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md)-Komponenten verwendet, indem Sie untersuchen, wie die Geometrixx-Outdoors-Vorlage ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) implementiert ist, und verweist auf wichtige Informationen, die Sie beim Erstellen Ihrer eigenen benutzerdefinierten Vorlage benötigen.
 
 >[!NOTE]
 >
@@ -27,20 +30,22 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **Die richtige resourceSuperType-Klasse**
 
-   Make sure the page-component inherits from `mcm/campaign/components/profile`.
+   Vergewissern Sie sich, dass die Seitenkomponente von `mcm/campaign/components/profile` erbt.
 
    Dies ist erforderlich, damit die Servlets Informationen abrufen und speichern können.
 
    * `com.day.cq.mcm.campaign.servlets.TemplateListServlet`
    * `com.day.cq.mcm.campaign.servlets.SaveProfileServlet`
+
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
 1. **ClientContext-Einstellungen**
 
-   When you look at the clientcontext settings ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) you see the following settings:
+   Wenn Sie sich die clientcontext-Einstellungen ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) ansehen, sehen Sie die folgenden Einstellungen:
 
-   * ClientContext points to `/etc/clientcontext/campaign`
+   * ClientContext verweist auf `/etc/clientcontext/campaign`
    * Es ist außerdem ein zusätzlicher Knoten *config* vorhanden.
+
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
@@ -55,7 +60,7 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   In **body.jsp**, the cloud services are loaded at the bottom of the page:
+   Unter **body.jsp** werden die Cloud-Dienste unten auf der Seite geladen:
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
@@ -71,9 +76,9 @@ Um eine benutzerdefinierte AEM-Seitenvorlage mit Adobe Campaign-Formularkompone
 
 1. **Vorlageneinstellungen**.
 
-   In the template ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) you see the following default values:
+   In der Vorlage ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) werden die folgenden Standardwerte angezeigt:
 
-   | **acMapping** | mapRecipient (für Adobe Campaign 6.1), profile (für Adobe Campaign Standard) |
+   | **acMapping** | mapRecipient (für Adobe Campaign 6.1), Profil (für Adobe Campaign Standard) |
    |---|---|
    | **acTemplateId** | mail |
 
