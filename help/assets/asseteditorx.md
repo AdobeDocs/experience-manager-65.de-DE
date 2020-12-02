@@ -11,15 +11,15 @@ ht-degree: 85%
 ---
 
 
-# Extend Asset Editor {#extending-asset-editor}
+# Erweitern des Asset-Editors {#extending-asset-editor}
 
 Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein über die Asset-Freigabe gefundenes Asset geklickt wird. Er ermöglicht dem Benutzer das Bearbeiten von Aspekten des Assets wie Metadaten, Miniatur, Titel und Tags.
 
 Die Konfiguration des Editors mit den vordefinierten Bearbeitungskomponenten wird in [Erstellen und Konfigurieren einer Asset-Editor-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page) behandelt.
 
-In addition to using pre-existing editor components, [!DNL Adobe Experience Manager] developers can also create their own components.
+Neben der Verwendung bereits vorhandener Editorkomponenten können [!DNL Adobe Experience Manager]-Entwickler auch eigene Komponenten erstellen.
 
-## Create an Asset Editor template {#creating-an-asset-editor-template}
+## Erstellen einer Asset-Editor-Vorlage {#creating-an-asset-editor-template}
 
 Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
@@ -31,7 +31,7 @@ Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
 [!DNL Assets] Komponenten verwenden eine Erweiterung des WCM-Bearbeitungsclientlib. Die clientlibs werden normalerweise in `init.jsp` geladen.
 
-Compared to the default clientlib loading (in core&#39;s `init.jsp`), an [!DNL Assets] template must have the following:
+Im Vergleich zum standardmäßigen clientlib-Laden (im Core `init.jsp`) muss eine [!DNL Assets]-Vorlage Folgendes aufweisen:
 
 * Die Vorlage muss die clientlib `cq.dam.edit` (anstelle von `cq.wcm.edit`) enthalten.
 
@@ -39,19 +39,19 @@ Compared to the default clientlib loading (in core&#39;s `init.jsp`), an [!DNL A
 
 In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorhandene Muster `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) kopiert wird.
 
-### JS-Aktionen konfigurieren {#configuring-js-actions}
+### JS-Aktionen {#configuring-js-actions} konfigurieren
 
-Some of the [!DNL Assets] components require JS functions defined in `component.js`. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
+Einige der [!DNL Assets]-Komponenten erfordern JS-Funktionen, die in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
-### Additional style sheets {#additional-style-sheets}
+### Zusätzliche Stylesheets {#additional-style-sheets}
 
-Some of the [!DNL Assets] components use the widgets library. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Einige der [!DNL Assets]-Komponenten verwenden die Widgets-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -120,7 +120,7 @@ Verwenden Sie im HTML-Teil den vorhergehenden festgelegten Titel (entweder Asset
 <title><%= title %></title>
 ```
 
-## Create a simple form field component {#creating-a-simple-form-field-component}
+## Erstellen einer einfachen Formularfeldkomponente {#creating-a-simple-form-field-component}
 
 In diesem Beispiel wird das Erstellen einer Komponente beschrieben, die die Metadaten eines geladenen Assets anzeigt.
 
