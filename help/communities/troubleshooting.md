@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
@@ -21,17 +24,18 @@ Dieser Abschnitt enthält allgemeine Bedenken und bekannte Probleme.
 
 ## Bekannte Probleme {#known-issues}
 
-### Dispatcher-Neuabruf fehlgeschlagen {#dispatcher-refetch-fails}
+### Dispatcher-Refetch ist fehlgeschlagen {#dispatcher-refetch-fails}
 
 Wenn Sie Dispatcher 4.1.5 mit einer neueren Version von Jetty verwenden, kann eine Reflektion dazu führen, dass &quot;Antwort von Remote-Server kann nicht empfangen werden&quot;angezeigt wird, nachdem auf die Anfrage zum Timeout gewartet wurde.
 
 Dieses Problem kann durch die Verwendung von Dispatcher 4.1.6 oder höher behoben werden.
 
-### Zugriff auf Forumsbeiträge nach einem Upgrade von CQ 5.4 nicht möglich {#cannot-access-forum-post-after-upgrading-from-cq}
+### Kein Zugriff auf Forumsbeiträge nach einem Upgrade von CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Wenn ein Forum für CQ 5.4 und veröffentlichte Themen erstellt wurde und die Site dann auf AEM 5.6.1 oder höher aktualisiert wurde, kann der Versuch, die vorhandenen Beiträge Ansicht, zu einem Fehler auf der Seite führen:
 
-Ungültiges Musterzeichen &#39;a&#39;Kann Anforderung nicht an `/content/demoforums/forum-test.html` diesen Server senden und die Protokolle enthalten Folgendes:
+Ungültiges Musterzeichen &#39;a&#39;
+Anfrage kann nicht an `/content/demoforums/forum-test.html` auf diesem Server gesendet werden, und die Protokolle enthalten Folgendes:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -49,17 +53,17 @@ Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet, Folgendes än
 
 Der Fehler ist beim Erstellen und Veröffentlichen anders. Beim Autor schlägt er leise fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
 
-Weitere Informationen finden Sie in der [API com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
 
 ## Häufige Bedenken {#common-concerns}
 
-### Warnung in Protokollen: Handlebars veraltet {#warning-in-logs-handlebars-deprecated}
+### Warnung in Protokollen: Handlebars nicht mehr unterstützt{#warning-in-logs-handlebars-deprecated}
 
 Während des Starts (nicht der 1., sondern danach alle) kann die folgende Warnung in den Protokollen angezeigt werden:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` wurde ersetzt durch `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` wurde ersetzt durch  `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Diese Warnung kann unbedenklich ignoriert werden, da `jknack.handlebars.Handlebars`sie von [SCF](scf.md#handlebarsjavascripttemplatinglanguage)mit einem eigenen i18n-Hilfsprogramm geliefert wird. Beim Beginn wird er durch einen AEM-spezifischen [i18n-Helfer](handlebars-helpers.md#i-n)ersetzt. Diese Warnung wird von der Drittanbieter-Bibliothek generiert, um die Außerkraftsetzung eines vorhandenen Helfers zu bestätigen.
+Diese Warnung kann unbedenklich ignoriert werden, da `jknack.handlebars.Handlebars`, verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), mit einem eigenen i18n-Hilfsprogramm geliefert wird. Beim Beginn wird er durch einen AEM spezifischen Helfer [i18n](handlebars-helpers.md#i-n) ersetzt. Diese Warnung wird von der Drittanbieter-Bibliothek generiert, um die Außerkraftsetzung eines vorhandenen Helfers zu bestätigen.
 
 ### Warnung in Protokollen: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
@@ -78,7 +82,7 @@ Diese Warnungen können unbedenklich ignoriert werden.
 
 ### Fehler in Protokollen: NoClassDefFoundError für IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Die Aktualisierung von AEM 5.6.1 GA auf die neueste Version von cq-socialgroups-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei während des Starts für eine Bedingung, die sich selbst löst, wie der Fehler zeigt, der beim Neustart nicht erkannt wird.
+Die Aktualisierung von AEM 5.6.1 GA auf die neueste Version von cq-socialgroups-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei während des Starts für eine Bedingung, die sich selbst löst, wie der Fehler, der beim Neustart nicht erkannt wird, zeigt.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
