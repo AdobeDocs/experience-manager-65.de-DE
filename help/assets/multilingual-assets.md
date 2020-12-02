@@ -15,9 +15,9 @@ ht-degree: 40%
 
 [!DNL Adobe Experience Manager Assets]Mit können Sie Übersetzungs-Workflows für Assets automatisieren (einschließlich Binärdateien, Metadaten und Tags), um Assets in anderen Sprachen für die Verwendung in mehrsprachigen Projekten zu generieren.
 
-To automate translation workflows, you integrate translation service providers with [!DNL Experience Manager] and create projects for translating assets into multiple languages. [!DNL Experience Manager] unterstützt menschliche und maschinelle Übersetzungs-Workflows.
+Zur Automatisierung von Workflows integrieren Sie Übersetzungen in Dienstleister mit [!DNL Experience Manager] und erstellen Projekte zur Übersetzung von Assets in mehrere Sprachen. [!DNL Experience Manager] unterstützt menschliche und maschinelle Übersetzungs-Workflows.
 
-Human translation: The translated assets are returned and imported into [!DNL Experience Manager]. When your translation provider is integrated with [!DNL Experience Manager], assets are automatically sent between [!DNL Experience Manager] and the translation provider.
+Humanübersetzung: Die übersetzten Assets werden zurückgegeben und in [!DNL Experience Manager] importiert. Wenn Ihr Übersetzungsanbieter mit [!DNL Experience Manager] integriert ist, werden Assets automatisch zwischen [!DNL Experience Manager] und dem Übersetzungsanbieter gesendet.
 
 Maschinelle Übersetzung: Der Dienst für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
 
@@ -29,6 +29,6 @@ Das Übersetzen von Assets umfasst Folgendes:
 1. [Anwenden von Übersetzungs-Cloud-Services auf Ordner](transition-cloud-services.md)
 1. [Erstellen von Übersetzungsprojekten](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with [!DNL Experience Manager], use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Wenn Ihr Übersetzungs-Dienstleister keinen Connector zur Integration mit [!DNL Experience Manager] bereitstellt, verwenden Sie einen [Alternativprozess](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Also see, [Create translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
+Siehe auch [Übersetzungsprojekte für Inhaltsfragmente erstellen](creating-translation-projects-for-content-fragments.md).
