@@ -23,7 +23,7 @@ ht-degree: 83%
 
 ## Voraussetzungen {#pre-requisites}
 
-AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/de-de/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/de-de/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind 
+Das AEM Forms Designer-Installationsprogramm erfordert die 32-Bit-Version von [Visual C++ Redistributable Runtime Package 2012](https://support.microsoft.com/de-de/help/2977003/the-latest-supported-visual-c-downloads) und [Visual C++ Redistributable Runtime Package 2013](https://support.microsoft.com/de-de/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind 
 
 ## Installieren von Designer {#install-designer}
 
