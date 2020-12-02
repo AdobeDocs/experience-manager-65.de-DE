@@ -8,6 +8,9 @@ contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
 source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 57%
 
 ---
 
@@ -18,15 +21,15 @@ source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
 >
 >GDPR wird als Beispiel in den folgenden Abschnitten verwendet, aber die betreffenden Details gelten für alle Datenschutz- und Datenschutzbestimmungen. wie GDPR, CCPA usw.
 
-## AEM Foundation GDPR support {#aem-foundation-gdpr-support}
+## AEM Foundation GDPR-Unterstützung {#aem-foundation-gdpr-support}
 
-Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das Benutzerprofil. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um DSGVO-bezogene Anfragen zum Datenzugriff bzw. zur Datenlöschung handzuhaben.
+Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das User-Profil. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um DSGVO-bezogene Anfragen zum Datenzugriff bzw. zur Datenlöschung handzuhaben.
 
 ## Zugreifen auf Benutzerprofile {#accessing-a-user-profile}
 
 ### Manuelle Schritte {#manual-steps}
 
-1. Open the User Administration console, by browsing to **[!UICONTROL Settings - Security - Users]** or by browsing directly to `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Öffnen Sie die Konsole &quot;Benutzerverwaltung&quot;, indem Sie zu **[!UICONTROL Einstellungen - Sicherheit - Benutzer]** navigieren oder direkt zu `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html` navigieren.
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -84,29 +87,30 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   Die Benutzeroberfläche zeigt dann an, dass der Benutzer deaktiviert wurde, indem er die Profilkarte ausgrauert und eine Sperre hinzugefügt hat:
+   Die Benutzeroberfläche weist dann darauf hin, dass der Profil deaktiviert wurde, indem er die Karte ausgrauert und eine Sperre hinzugefügt hat:
 
    ![disableuser](assets/disableduser.png)
 
 ### Benutzerprofilinformationen löschen {#delete-user-profile-information}
 
-1. Log in to CRXDE Lite, then search for the `[!UICONTROL userId]`:
+1. Melden Sie sich bei CRXDE Lite an und suchen Sie dann nach dem `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Open the user node which is located under `[!UICONTROL /home/users]` by default:
+1. Öffnen Sie den Knoten &quot;user&quot;, der sich standardmäßig unter `[!UICONTROL /home/users]` befindet:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. Löschen Sie die Profilknoten und die ihnen zugehörigen untergeordneten Elemente. Abhängig von der AEM-Version liegen die Profilknoten in zwei unterschiedlichen Formaten vor:
 
-   1. The default private profile under `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`für neue Profile, die mit AEM 6.5 erstellt wurden.
+   1. Das standardmäßige private Profil unter `[!UICONTROL /profile]`
+   1. `[!UICONTROL /profiles]`, für neue Profil, die mit AEM 6.5 erstellt wurden.
+
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### HTTP-API {#http-api-1}
 
-The following procedures use the `curl` command line tool to illustrate how to disable the user with the **[!UICONTROL cavery]** `userId` and delete her profiles available at the default location.
+Die folgenden Verfahren verwenden das `curl` Befehlszeilenwerkzeug, um zu veranschaulichen, wie Benutzer mit der **[!UICONTROL Aufnahme]** deaktiviert und die entsprechenden Profile am Standardspeicherort gelöscht werden können `userId`.
 
 * *Ermitteln der Benutzerstartseite*
 
@@ -125,7 +129,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Löschen von Benutzerprofilen*
 
-Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom Befehl zur Kontosuche zurückgegeben wird, und der bekannten Out-of-the-Box-Profilknotenspeicherorte:
+Verwenden des Knotenpfads aus der Eigenschaft home der JSON-Payload, der vom Befehl zur Kontosuche zurückgegeben wird, und der bekannten Out-of-the-Box-Profil-Knotenpunkte:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
