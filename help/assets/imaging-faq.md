@@ -112,7 +112,7 @@ Siehe auch [Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?        {#does-smart-imaging-working-with-https-how-about-http}
+## Funktioniert die intelligente Bildbearbeitung mit HTTPS? Und mit HTTP/2?         {#does-smart-imaging-working-with-https-how-about-http}
 
 Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS oder HTTP/2 bereitgestellt wurden.
 
@@ -141,7 +141,7 @@ Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine 
 
        Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an.
 
-      Klicken Sie auf **[!UICONTROL Setup > Anwendungssetup > Allgemeine Einstellungen.]**
+      Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen.]**
 
       Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name.]**
    1. Vergewissern Sie sich, dass Sie CDN über Adobe und nicht verwaltet mit einer direkten Beziehung nutzen.
@@ -149,7 +149,7 @@ Intelligente Bildbearbeitung wird nicht automatisch aktiviert; Sie müssen eine 
 
        Um Ihre Domänen zu suchen, melden Sie sich bei dem Konto bzw. den Konten Ihres Unternehmens an.
 
-      Klicken Sie auf **[!UICONTROL Setup > Anwendungssetup > Allgemeine Einstellungen.]**
+      Klicken Sie auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Allgemeine Einstellungen.]**
 
       Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name.]** Wenn Sie derzeit eine generische Dynamic Media Classic-Domäne verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domäne beantragen.
    1. Geben Sie an, ob Sie auch auf eine Nutzung über HTTP/2 angewiesen sind.
