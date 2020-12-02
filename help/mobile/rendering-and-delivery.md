@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
 source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM-Inhalte können problemlos über [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) gerendert werden, um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate wiederzugeben.
+AEM Inhalte können einfach über [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) gerendert werden, um [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und andere Formate wiederzugeben.
 
 Diese sofort einsetzbaren Renderer führen normalerweise das Repository aus und geben Inhalt wie bisher zurück.
 
@@ -34,7 +37,7 @@ Das folgende Diagramm zeigt die Wiedergabe von Inhaltsdiensten.
 
 ## Anfordern von JSON {#requesting-json}
 
-Verwenden Sie **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** zum Anfordern von JSON.
+Verwenden Sie **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto JSON anfordern.**
 
 <table>
  <tbody>
@@ -44,11 +47,11 @@ Verwenden Sie **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json**
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration gefunden unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> Wenn die standardmäßige Exportkonfiguration <br /> weggelassen wird, wird angewendet </p> </td>
+   <td><p><strong>OPTIONAL</strong><br /> </p> <p>eine Exportkonfiguration gefunden unter /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Wenn keine Exportkonfiguration angegeben wird, wird die Standardexportkonfiguration angewendet. </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>OPTIONALE</strong><br /> <br /> Tiefenrekursion für das Rendering von Kindern, wie beim Sling-Rendering verwendet</td>
+   <td><strong></strong><br /> <br /> OPTIONALdepth-Rekursion für das Rendering von Kindern, wie beim Sling-Rendering verwendet</td>
   </tr>
  </tbody>
 </table>
@@ -107,7 +110,7 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
    <td>Zeichenfolge[]</td>
    <td>alles einschließen</td>
    <td>Eigenschaftsnamen</td>
-   <td><p>Wenn excludePropertyPrefixes festgelegt<br /> sind, enthält dies die angegebenen Eigenschaften, obwohl das Präfix ausgeschlossen wurde,</p> <p>else (Eigenschaften ausschließen ignoriert) schließen Sie nur diese Eigenschaften ein</p> </td>
+   <td><p>Wenn excludePropertyPrefixes set<br /> enthält, enthält dies angegebene Eigenschaften, obwohl das Präfix ausgeschlossen wurde,</p> <p>else (Eigenschaften ausschließen ignoriert) schließen Sie nur diese Eigenschaften ein</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -127,13 +130,13 @@ Die folgende Tabelle zeigt die Eigenschaften von Exportkonfigurationen:
    <td>renameProperties</td>
    <td>Zeichenfolge[]<br /> <br /> </td>
    <td>nichts umbenennen</td>
-   <td>&lt;IST_property_name&gt;,&lt;ERROPTEINSTELLUNGSINSTANZ&gt;</td>
+   <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>Eigenschaften mit Ersetzungen umbenennen</td>
   </tr>
  </tbody>
 </table>
 
-### Außerkraftsetzungen beim Exportieren von Ressourcentypen {#resource-type-export-overrides}
+### Exportbeschränkungen für Ressourcentypen {#resource-type-export-overrides}
 
 Erstellen Sie einen Konfigurationsknoten unter */apps/mobileapps/caas/exportConfigs.*
 
@@ -153,11 +156,11 @@ Die folgende Tabelle zeigt die Eigenschaften:
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
-   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>&lt;selector_to_inc&gt;</td>
    <td>Zeichenfolge[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Bei den folgenden Sling-Ressourcentypen sollten Sie den standardmäßigen CaaS-JSON-Export nicht zurückgeben.<br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Bei den folgenden Sling-Ressourcentypen sollten Sie den standardmäßigen CaaS-JSON-Export nicht zurückgeben.<br /> Geben Sie einen Kunden-JSON-Export zurück, indem Sie die Ressource als;<br /> &lt;resource&gt; wiedergeben.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -173,7 +176,7 @@ Content Services umfasst zwei Exportkonfigurationen:
 
 Die standardmäßige Exportkonfiguration für Content Services wird angewendet, wenn im angeforderten URI eine Konfiguration angegeben ist.
 
-&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
+&lt;resource>.caas[.&lt;depth-int>].json
 
 <table>
  <tbody>
@@ -211,16 +214,16 @@ Die standardmäßige Exportkonfiguration für Content Services wird angewendet, 
   </tr>
   <tr>
    <td>Sling JSON Overrides</td>
-   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReferenz<br /> zu mobileapps/caas/components/data/assetlist</td>
+   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
   </tr>
  </tbody>
 </table>
 
-#### Seitenexport-Konfiguration {#page-export-configuration}
+#### Seitenexportkonfiguration {#page-export-configuration}
 
 Diese Konfiguration erweitert den Standard um die Einbeziehung von untergeordneten Elementen unter einem untergeordneten Knoten.
 
-&lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
+&lt;site_page>.caas.page[.&lt;depth-int>].json
 
 ### Zusätzliche Ressourcen {#additional-resources}
 
