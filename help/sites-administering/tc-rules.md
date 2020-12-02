@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 78%
 
 ---
 
@@ -31,18 +34,18 @@ Die Datei gilt für alle Übersetzungsprojekte.
 
 >[!NOTE]
 >
->Nach einer Aktualisierung auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. See [Common Repository Restructuring in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) for more details.
+>Nach einer Aktualisierung auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. Weitere Informationen finden Sie unter [Allgemeine Repository-Umstrukturierung in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
 
 Die Regeln umfassen die folgenden Informationen:
 
 * Den Pfad des Knotens, auf den die Regel angewendet wird. Die Regel gilt auch für die nachfolgenden Elemente des Knotens.
 * Die Namen der Knoteneigenschaften, die den zu übersetzenden Inhalt enthalten. Die Eigenschaft kann sich speziell auf einen bestimmten Ressourcentyp oder auf alle Ressourcentypen beziehen.
 
-Sie können zum Beispiel eine Regel erstellen, die den von den Autoren hinzugefügten Inhalt für alle AEM Foundation-Textkomponenten auf Ihren Seiten übersetzt. The rule can identify the `/content` node and the `text` property for the `foundation/components/text` component.
+Sie können zum Beispiel eine Regel erstellen, die den von den Autoren hinzugefügten Inhalt für alle AEM Foundation-Textkomponenten auf Ihren Seiten übersetzt. Die Regel kann den Knoten `/content` und die Eigenschaft `text` für die Komponente `foundation/components/text` identifizieren.
 
 Es gibt eine eigene [Konsole](#translation-rules-ui), die für die Konfiguration von Übersetzungsregeln hinzugefügt wurde. Die Definitionen in der Benutzeroberfläche füllen die Datei für Sie auf.
 
-For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
+Eine Übersicht der Inhaltsübersetzungsfunktionen in AEM finden Sie unter [Übersetzung von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).
 
 >[!NOTE]
 >
@@ -61,20 +64,20 @@ Eine Regel ist ein `node`-Element mit einem oder mehreren untergeordneten `prope
 </node>
 ```
 
-Each of these `node` elements has the following characteristics:
+Jedes dieser `node`-Elemente hat die folgenden Eigenschaften:
 
 * Das `path`-Attribut enthält den Pfad zum Stammknoten des Zweigs, für den die Regeln gelten.
 * Die untergeordneten `property`-Elemente identifizieren die Knoteneigenschaften, die für alle Ressourcentypen zu übersetzen sind:
 
    * Das Attribut `name` enthält den Eigenschaftsnamen.
-   * The optional `translate` attribute equals `false` if the property is not translated. Standardmäßig lautet der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
+   * Das optionale Attribut `translate` ist `false`, wenn die Eigenschaft nicht übersetzt wurde. Standardmäßig lautet der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
 
 * Die untergeordneten `node`-Elemente identifizieren die Knoteneigenschaften, die für bestimmte Ressourcentypen zu übersetzen sind:
 
    * Das Attribut `resourceType` enthält den Pfad, der zu der für die Implementierung des Ressourcentyps verantwortlichen Komponente führt.
    * Die untergeordneten `property`-Elemente identifizieren die zu übersetzende Knoteneigenschaft. Verwenden Sie diesen Knoten auf dieselbe Art und Weise wie die untergeordneten `property`-Elemente zu den Knotenregeln.
 
-The following example rule causes the content of all `text` properties to be translated for all pages below the `/content` node. Die Regel gilt für jede Komponente, die Inhalt in einer `text`-Eigenschaft speichert, so zum Beispiel die Foundation-Textkomponente und die Foundation-Bildkomponente.
+Die folgende Beispielregel bewirkt, dass der Inhalt aller `text`-Eigenschaften für alle Seiten unter dem `/content`-Knoten übersetzt wird. Die Regel gilt für jede Komponente, die Inhalt in einer `text`-Eigenschaft speichert, so zum Beispiel die Foundation-Textkomponente und die Foundation-Bildkomponente.
 
 ```xml
 <node path="/content">
@@ -116,7 +119,7 @@ Das folgende Beispiel extrahiert Bilder aus der Foundation-Bildkomponente:
 
 ## Außerkraftsetzungsregeln {#overriding-rules}
 
-Die Datei translation_rules.xml besteht aus einem `nodelist`-Element mit mehreren untergeordneten `node`-Elementen. AEM liest die Knotenliste von oben nach unten. Wenn mehrere Regeln auf denselben Knoten abzielen, wird die in der Datei weiter unten aufgeführte Regel verwendet. For example, the following rules cause all content in `text` properties to be translated except for the `/content/mysite/en` branch of pages:
+Die Datei translation_rules.xml besteht aus einem `nodelist`-Element mit mehreren untergeordneten `node`-Elementen. AEM liest die Knotenliste von oben nach unten. Wenn mehrere Regeln auf denselben Knoten abzielen, wird die in der Datei weiter unten aufgeführte Regel verwendet. Beispielsweise führen die folgenden Regeln dazu, dass alle Inhalte in den `text`-Eigenschaften mit Ausnahme der `/content/mysite/en`-Verzweigung der Seiten übersetzt werden:
 
 ```xml
 <nodelist>
@@ -160,21 +163,21 @@ So können Sie darauf zugreifen:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-From here, you can **Add Context**. Dies ermöglicht Ihnen das Hinzufügen eines Pfads.
+Von hier aus können Sie **Hinzufügen Kontext**. Dies ermöglicht Ihnen das Hinzufügen eines Pfads.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Then you need to select your context and then click **Edit**. Hierdurch wird der Editor für Übersetzungsregeln geöffnet.
+Wählen Sie dann Ihren Kontext aus und klicken Sie dann auf **Bearbeiten**. Hierdurch wird der Editor für Übersetzungsregeln geöffnet.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-There are 4 attributes that you can change via the UI: `isDeep`, `inherit`, `translate` and `updateDestinationLanguage`.
+Es gibt vier Attribute, die Sie über die Benutzeroberfläche ändern können: `isDeep`, `inherit`, `translate` und `updateDestinationLanguage`.
 
-**isDeep** Dieses Attribut ist auf Knotenfilter anwendbar und ist standardmäßig true. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
+**isDeepDieses Attribut** gilt für Node-Filter und ist standardmäßig true. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
 
-For example, child nodes are getting added into a translation job even when the parent node is having property `draftOnly` set to true to flag draft content. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
+Beispielsweise werden untergeordnete Knoten zu einem Übersetzungsauftrag hinzugefügt, selbst wenn die Eigenschaft `draftOnly` des übergeordneten Knotens auf true gesetzt ist, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
 
-In the Editor, you can check/uncheck **Is Deep** in the **Filters** tab.
+Im Editor können Sie **Ist Tief** auf der Registerkarte **Filter** aktivieren/deaktivieren.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
@@ -186,19 +189,19 @@ Im folgenden Beispiel ist die xml dargestellt, die generiert wird, wenn **Is Dee
 </filter>
 ```
 
-**inherit** Dies gilt für Eigenschaften. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
+**** inheritDies gilt für Eigenschaften. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
 
 In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**translate** Das translate-Attribut dient lediglich zur Angabe, ob eine Eigenschaft übersetzt werden soll oder nicht.
+**** translateDas translate-Attribut dient lediglich zur Angabe, ob eine Eigenschaft übersetzt werden soll oder nicht.
 
-In the UI, you can check/uncheck **Translate** in the **Properties** tab.
+In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
-**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes haben, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**** updateDestinationLanguageDieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes haben, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
-In the UI, you can check/uncheck **Translate** in the **Properties** tab, but for the specific properties that have language codes as value.
+In der Benutzeroberfläche können Sie die Option **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, jedoch für die spezifischen Eigenschaften, die Sprachcodes als Wert haben.
 
 Der Unterschied zwischen `updateDestinationLanguage` und `translate` lässt sich hier anhand eines einfachen Beispiels für einen Kontext mit zwei Regeln veranschaulichen:
 
@@ -211,7 +214,7 @@ Das Ergebnis in der xml sieht wie folgt aus:
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## Manuelles Bearbeiten der Regeldatei {#editing-the-rules-file-manually}
+## Manuelles Bearbeiten der Regeldatei  {#editing-the-rules-file-manually}
 
 Die in AEM installierte Datei translation_rules.xml enthält einen Standardsatz an Übersetzungsregeln. Sie können die Datei bearbeiten, damit die Anforderungen Ihrer Übersetzungsprojekte erfüllt werden. Sie können zum Beispiel Regeln hinzufügen, sodass die Inhalte Ihrer benutzerdefinierten Komponenten übersetzt werden.
 
@@ -221,7 +224,7 @@ Wenn Sie die Datei translation_rules.xml bearbeiten, speichern Sie zuvor eine Si
 >
 >Erstellen Sie das Paket nach der Erstellung des Inhaltspakets bei jeder Bearbeitung der Datei neu.
 
-## Beispiel für eine Datei mit Übersetzungsregeln {#example-translation-rules-file}
+## Beispiel für eine Datei mit Übersetzungsregeln  {#example-translation-rules-file}
 
 ```xml
 <nodelist>
