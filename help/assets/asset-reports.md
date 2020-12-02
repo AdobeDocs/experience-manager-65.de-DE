@@ -1,6 +1,6 @@
 ---
 title: Berichte zur Verwendung und Freigabe von Assets
-description: Berichte zu Ihren Assets, [!DNL Adobe Experience Manager Assets] in denen Sie die Nutzung, Aktivität und Freigabe Ihrer digitalen Assets verstehen können.
+description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] mit Informationen zur Nutzung, Aktivität und Freigabe Ihrer digitalen Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
@@ -13,11 +13,11 @@ ht-degree: 47%
 
 # Asset-Berichte     {#asset-reports}
 
-Mit Asset Berichte können Sie das Dienstprogramm Ihrer [!DNL Adobe Experience Manager Assets] Bereitstellung bewerten. Damit [!DNL Assets]können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
+Mit Asset Berichte können Sie das Dienstprogramm Ihrer [!DNL Adobe Experience Manager Assets]-Bereitstellung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren und welche Assets heruntergeladen und freigegeben werden.
 
-Use the information in the reports to derive key success metrics to measure the adoption of [!DNL Assets] within your enterprise and by customers.
+Verwenden Sie die Informationen in den Berichten, um wichtige Erfolgsmetriken abzuleiten, um die Akzeptanz von [!DNL Assets] in Ihrem Unternehmen und nach Kunden zu messen.
 
-The [!DNL Assets] reporting framework uses [!DNL Sling] jobs to asynchronously process report requests in an ordered manner. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
+Das [!DNL Assets]-Berichte-Framework verwendet [!DNL Sling]-Aufträge, um Berichtanforderungen asynchron in einer geordneten Weise zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
@@ -27,8 +27,8 @@ Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und eine
 
 Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
-* Aktivieren Sie den [!UICONTROL Day CQ DAM Ereignis Recorder] -Dienst unter **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
-* Wählen Sie die Aktivitäten oder Ereignis aus, auf denen Sie Berichte haben möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu erstellen, wählen Sie &quot; [!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)]&quot;aus.
+* Aktivieren Sie den Dienst [!UICONTROL Day CQ DAM Ereignis Recorder] unter **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
+* Wählen Sie die Aktivitäten oder Ereignis aus, auf denen Sie Berichte haben möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu erstellen, wählen Sie [!UICONTROL Heruntergeladenes Asset (HERUNTERGELADEN)].
 
 ![Asset-Berichte in der Web-Konsole aktivieren](assets/reports-config-day-cq-dam-event-recorder.png)
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 * Download
 * Ablauf
 * Änderung
-* Veröffentlichen  
+* Veröffentlichen
 * [!DNL Brand Portal] publish
 * Festplattenauslastung
 * Dateien
@@ -48,24 +48,24 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
 [!DNL Adobe Experience Manager] Administratoren können diese Berichte ganz einfach für Ihre Implementierung erstellen und anpassen. Um einen Bericht zu erstellen, müssen Administratoren folgende Schritte durchführen:
 
-1. Klicken Sie in der [!DNL Experience Manager] Benutzeroberfläche auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
+1. Klicken Sie in [!DNL Experience Manager] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
 
    ![Tools-Seite zum Navigieren im Assets-Bericht](assets/AssetsReportNavigation.png)
 
-1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
+1. Klicken Sie auf der Seite [!UICONTROL Asset-Berichte] in der Symbolleiste auf **[!UICONTROL Erstellen]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den zu erstellenden Bericht aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![Berichttyp auswählen](assets/choose_report.png)
 
    >[!NOTE]
    >
-   >By default, the Content Fragments and link shares are included in the Asset [!UICONTROL Download] report. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Downloadbericht auszuschließen.
+   >Standardmäßig sind Inhaltsfragmente und Linkfreigaben im Bericht &quot;Asset [!UICONTROL Download]&quot;enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Downloadbericht auszuschließen.
 
    >[!NOTE]
    >
-   >Der [!UICONTROL Bericht &quot;Herunterladen] &quot;zeigt nur Details zu den Assets an, die heruntergeladen werden, nachdem sie einzeln ausgewählt wurden oder mit der Schnellaktion heruntergeladen wurden. Es enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befinden.
+   >Der Bericht [!UICONTROL Download] zeigt nur Details zu den Assets an, die heruntergeladen werden, nachdem sie einzeln ausgewählt wurden oder mit der Schnellaktion heruntergeladen wurden. Es enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befinden.
 
-1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. By default, the folder path is `/content/dam`. Sie können auch einen anderen Pfad festlegen.
+1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der Ordnerpfad ist standardmäßig `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
    ![Seite zum Hinzufügen von Berichtsdetails](assets/report_configuration.png)
 
@@ -85,51 +85,51 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
    ![Detailseite des Berichts &quot;Festplattennutzung&quot;](assets/disk_usage_configuration.png)
 
-   When you create the **[!UICONTROL Files]** report, you can include/exclude sub-folders. Bei diesem Bericht können Sie jedoch keine Asset-Ausgabeformate miteinbeziehen.
+   Wenn Sie den Bericht **[!UICONTROL Dateien]** erstellen, können Sie Unterordner ein-/ausschließen. Bei diesem Bericht können Sie jedoch keine Asset-Ausgabeformate miteinbeziehen.
 
    ![Detailseite des Dateiberichts](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
+   Der Bericht **[!UICONTROL Linkfreigabe]** zeigt URLs zu Assets an, die von [!DNL Assets] aus für externe Benutzer freigegeben werden. Er enthält E-Mail-IDs des Benutzers, der die Assets freigegeben hat, E-Mail-IDs von Benutzern, für die die Assets freigegeben wurden, Freigabedatum und Ablaufdatum des Links. Die Spalten können nicht angepasst werden.
 
-   The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
+   Der Bericht **[!UICONTROL Linkfreigabe]** enthält keine Optionen für Unterordner und Darstellungen, da er lediglich die freigegebenen URLs veröffentlicht, die unter `/var/dam/share` angezeigt werden.
 
    ![Detailseite des Berichts &quot;Linkfreigabe&quot;](assets/link_share.png)
 
-1. Click **[!UICONTROL Next]** from the toolbar.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
 
 1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können weitere Spalten auswählen. Heben Sie die Auswahl einer Spalte auf, wenn sie nicht im Bericht angezeigt werden soll.
 
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/configure_columns.png)
 
-   To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
+   Um einen benutzerdefinierten Spaltennamen oder Eigenschaftenpfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei unter dem Knoten `jcr:content` in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
 
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
-1. Click **[!UICONTROL Create]** from the toolbar. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. Derselbe Status wird auch im Benachrichtigungsfeld angezeigt.Klicken Sie zur Ansicht der Berichtsseite auf den Link Bericht. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
+1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der Berichtgenerierungsstatus auf dem aktuellen Status des Berichtsauftrags, z. B. [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL Warteschlange] oder [!UICONTROL Eingeplant]. Derselbe Status wird auch im Benachrichtigungsfeld angezeigt.Klicken Sie zur Ansicht der Berichtsseite auf den Link Bericht. Alternativ können Sie den Bericht auswählen und in der Symbolleiste auf **[!UICONTROL Ansicht]** klicken.
 
    ![Ein generierter Bericht](assets/report_page.png)
 
-   Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
+   Klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten     {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten      {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
 * Hochladen
-* Download
+* Herunterladen
 * Ablauf
 * Änderung
-* Veröffentlichen  
+* Veröffentlichen
 * [!DNL Brand Portal] publish
 * Dateien
 
 Gehen Sie wie folgt vor, um benutzerspezifische Spalten zu diesen Berichten hinzuzufügen:
 
-1. Klicken Sie [!DNL Manager interface]im Fenster auf **[!UICONTROL Werkzeuge]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
-1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
+1. Klicken Sie in [!DNL Manager interface] auf **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Berichte]**.
+1. Klicken Sie auf der Seite [!UICONTROL Asset-Berichte] in der Symbolleiste auf **[!UICONTROL Erstellen]**.
 
-1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Bericht erstellen]** den zu erstellenden Bericht aus und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Konfigurieren Sie Berichtsdetails wie Titel, Beschreibung, Miniaturansicht, Ordnerpfad und Datumsbereich wie gewünscht.
 
 1. Um eine benutzerdefinierte Spalte anzuzeigen, geben Sie den Namen der Spalte unter **[!UICONTROL Benutzerdefinierte Spalten]** an.
@@ -140,9 +140,9 @@ Gehen Sie wie folgt vor, um benutzerspezifische Spalten zu diesen Berichten hinz
 
    ![Ordnen Sie den Eigenschaftspfad Pfaden in jcr:content zu](assets/property_picker.png)
 
-   To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
+   Um weitere benutzerdefinierte Spalten hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 5 und 6.
 
-1. Click **[!UICONTROL Create]** from the toolbar. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
 
 ## Konfigurieren des Bereinigungsdiensts {#configure-purging-service}
 
