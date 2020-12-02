@@ -19,13 +19,13 @@ ht-degree: 65%
 
 # Erstellen eines benutzerdefinierten Profils für HTML5-Formulare {#creating-a-custom-profile-for-html-forms}
 
-A profile is a resource node in [Apache Sling](https://sling.apache.org/). Es enthält eine benutzerdefinierte Version des HTML5-Formularen-Render-Dienstes. Sie können den HTML5-Formularwiedergabedienst verwenden, um Erscheinungsbild, Verhalten und Interaktionen der HTML5-Formulare anzupassen. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
+Ein Profil ist ein Ressourcenknoten in [Apache Sling](https://sling.apache.org/). Es enthält eine benutzerdefinierte Version des HTML5-Formularen-Render-Dienstes. Sie können den HTML5-Formularwiedergabedienst verwenden, um Erscheinungsbild, Verhalten und Interaktionen der HTML5-Formulare anzupassen. Im Ordner `/content` im JCR-Repository befindet sich ein Profil-Knoten. Sie können den Knoten direkt unter dem Ordner `/content` oder einem beliebigen Unterordner des Ordners `/content` platzieren.
 
 Der Profilknoten hat die **sling:resourceSuperType**-Eigenschaft und der Standardwert ist **xfaforms/profile**. Das Render-Skript für den Knoten ist unter /libs/xfaforms/profile verfügbar.
 
 Die Sling-Skripte sind JSP-Skripte. Diese JSP-Skripte dienen als Container für den HTML-Code für das angeforderte Formular und die erforderlichen JS-/CSS-Artefakte. Die Sling-Skripte werden auch als **Profil-Renderer-Skripte bezeichnet**. Der Profil-Renderer ruft den Forms OSGi-Dienst auf, um das angeforderte Formular wiederzugeben.
 
-Das Profil-Skript befindet sich in html.jsp und html.POST.jsp für GET- und POST-Anforderungen. Sie können eine oder mehrere Dateien kopieren und verändern, um Ihre Anpassungen zu überschreiben. Nehmen Sie keine ersetzenden Änderungen vor, da diese Änderungen durch das Patch-Update überschrieben werden.
+Das Profil-Skript befindet sich in html.jsp und html.POST.jsp für GET- und POST-Anfragen. Sie können eine oder mehrere Dateien kopieren und verändern, um Ihre Anpassungen zu überschreiben. Nehmen Sie keine ersetzenden Änderungen vor, da diese Änderungen durch das Patch-Update überschrieben werden.
 
 Ein Profil enthält verschiedenen Module. Die Module sind formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp und footer.jsp.
 
@@ -41,7 +41,7 @@ Das config.jsp-Modul enthält verschiedene Konfigurationen wie Protokollierung, 
 
 Die toolbar.jsp enthält Code zum Erstellen einer farbigen Symbolleiste. Um die Symbolleiste zu entfernen, müssen Sie toolbar.jsp aus der html.jsp entfernen.
 
-## formBody.jsp {#formbody-jsp}
+## formBody.jsp  {#formbody-jsp}
 
 Das Modul formBody.jsp dient zur HTML-Darstellung des XFA-Formulars.
 
@@ -59,7 +59,7 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 
 ### Profilknoten erstellen {#create-profile-node}
 
-1. Navigate to the CRX DE interface at the URL: `https://'[server]:[port]'/crx/de` and log in to the interface with administrator credentials.
+1. Navigieren Sie zur CRX DE-Schnittstelle unter der URL: `https://'[server]:[port]'/crx/de` und melden Sie sich mit Administratorberechtigungen bei der Schnittstelle an.
 
 1. Im linken Fensterbereich navigieren Sie zum Speicherort: */content/xfaforms/profiles*.
 
@@ -73,14 +73,14 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 
 Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie Render-Informationen zu diesem Profil hinzu. Nach Erhalt einer Anfrage für das neue Profil prüft CRX das Vorhandensein des Ordners „/apps“, damit die JSP-Seite wiedergegeben werden kann. Erstellen Sie die JSP-Seite im Ordner „/apps“.
 
-1. In the left pane, navigate to the `/apps` folder.
-1. Right-click on the `/apps` folder and choose to create a folder with name **hrform**.
-1. Insider the **hrform** folder create a folder named **demo**.
+1. Navigieren Sie im linken Bereich zum Ordner `/apps`.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und wählen Sie einen Ordner mit dem Namen **hrform**.
+1. Erstellen Sie im Ordner **hrform** einen Ordner mit dem Namen **demo**.
 1. Klicken Sie auf die Schaltfläche **Alle speichern**.
-1. Navigate to `/libs/xfaforms/profile/html.jsp` and copy the node **html.jsp**.
-1. Paste **html.jsp** node into the `/apps/hrform/demo` folder created above with same name **html.jsp** and click **Save**.
+1. Navigieren Sie zu `/libs/xfaforms/profile/html.jsp` und kopieren Sie den Knoten **html.jsp**.
+1. Fügen Sie den Knoten **html.jsp** in den Ordner `/apps/hrform/demo` ein, der oben mit demselben Namen **html.jsp** erstellt wurde, und klicken Sie auf **Speichern**.
 1. Wenn Sie andere Profil-Skript-Komponenten haben, führen Sie die Schritte 1-6 aus, um die Komponenten in den Ordner „/apps/hrform/demo“ zu kopieren.
 
-1. To verify that th profile is created, open URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
+1. Um zu überprüfen, ob das Profil erstellt wurde, öffnen Sie die URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 Um Ihre Formulare zu überprüfen,[ Importieren Sie Ihre Formulare ](/help/forms/using/get-xdp-pdf-documents-aem.md)aus Ihrem lokalen Dateisystem in AEM Forms und[ zeigen Sie eine Vorschau des Formulars](/help/forms/using/previewing-forms.md) in der Autoreninstanz des AEM-Servers an.
