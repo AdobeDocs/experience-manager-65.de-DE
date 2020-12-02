@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 53%
 
 ---
 
 
 # Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR{#how-to-programmatically-access-the-aem-jcr}
 
-Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerhalb des Adobe CQ-Repositorys befinden, das Teil von Adobe Marketing Cloud ist. Für den Zugriff auf das CQ-Repository verwenden Sie die Java Content Repository (JCR)-API. Mit der JCR-API können Sie Erstellungs-, Ersetzungs-, Aktualisierungs- und Lösch- (CRUD)-Vorgänge für Inhalte im Adobe CQ-Repository durchführen. For more information about the Java JCR API, see [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerhalb des Adobe CQ-Repositorys befinden, das Teil von Adobe Marketing Cloud ist. Für den Zugriff auf das CQ-Repository verwenden Sie die Java Content Repository (JCR)-API. Mit der JCR-API können Sie Erstellungs-, Ersetzungs-, Aktualisierungs- und Lösch- (CRUD)-Vorgänge für Inhalte im Adobe CQ-Repository durchführen. Weitere Informationen zur Java JCR-API finden Sie unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Dieser Entwicklungsartikel modifiziert das Adobe CQ-JCR aus einer externen Java-Anwendung. Es besteht auch die Möglichkeit, das JCR aus einem OSGi-Bundle mithilfe der JCR-API zu modifizieren. For details, see [Persisting CQ data in the Java Content Repository](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
+>Dieser Entwicklungsartikel modifiziert das Adobe CQ-JCR aus einer externen Java-Anwendung. Es besteht auch die Möglichkeit, das JCR aus einem OSGi-Bundle mithilfe der JCR-API zu modifizieren. Weitere Informationen finden Sie unter [Beständige CQ-Daten im Java Content Repository](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
->To use the JCR API, add the `jackrabbit-standalone-2.4.0.jar` file to your Java application’s class path. You can obtain this JAR file from the Java JCR API web page at [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Um die JCR-API zu verwenden, fügen Sie die Datei `jackrabbit-standalone-2.4.0.jar` dem Klassenpfad Ihrer Java-Anwendung hinzu. Sie können diese JAR-Datei von der Java JCR API-Webseite unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html) abrufen.
 
 >[!NOTE]
 >
@@ -44,14 +47,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Sitzungsinstanz erstellen {#create-a-session-instance}
 
-The `Repository`instance represents the CRX repository. You use the `Repository`instance to establish a session with the repository. To create a session, invoke the `Repository`instance’s `login`method and pass a `javax.jcr.SimpleCredentials` object. The `login`method returns a `javax.jcr.Session` instance.
+Die `Repository`Instanz stellt das CRX-Repository dar. Sie verwenden die `Repository`Instanz, um eine Sitzung mit dem Repository einzurichten. Um eine Sitzung zu erstellen, rufen Sie die `Repository`Instanz&#39;s `login`Methode auf und übergeben Sie ein `javax.jcr.SimpleCredentials`-Objekt. Die `login`Methode gibt eine `javax.jcr.Session`-Instanz zurück.
 
-You create a `SimpleCredentials`object by using its constructor and passing the following string values:
+Sie erstellen ein `SimpleCredentials`Objekt, indem Sie dessen Konstruktor verwenden und die folgenden Zeichenfolgenwerte übergeben:
 
 * den Benutzernamen und
 * das zugehörige Kennwort
 
-When passing the second parameter, call the String object’s `toCharArray`method. The following code shows how to call the `login`method that returns a `javax.jcr.Sessioninstance`.
+Rufen Sie beim Übergeben des zweiten Parameters die `toCharArray`Methode des String-Objekts auf. Der folgende Code zeigt, wie die `login`Methode aufgerufen wird, die ein `javax.jcr.Sessioninstance` zurückgibt.
 
 ```java
 //Create a Session instance
@@ -60,14 +63,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Knoteninstanz erstellen {#create-a-node-instance}
 
-Use a `Session`instance to create a `javax.jcr.Node` instance. A `Node`instance lets you perform node operations. Beispielsweise können Sie einen neuen Knoten erstellen. To create a node that represents the root node, invoke the `Session`instance&#39;s `getRootNode` method, as shown in the following line of code.
+Verwenden Sie eine `Session`Instanz, um eine `javax.jcr.Node`-Instanz zu erstellen. Mit einer `Node`Instanz können Sie Node-Vorgänge durchführen. Beispielsweise können Sie einen neuen Knoten erstellen. Um einen Knoten zu erstellen, der den Stammknoten darstellt, rufen Sie die `Session`Instanz-Methode `getRootNode` auf, wie in der folgenden Codezeile dargestellt.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Once you create a `Node`instance, you can perform tasks such as creating another node and adding a value to it. Mit dem folgenden Code werden beispielsweise zwei Knoten erstellt und dem zweiten Knoten ein Wert hinzugefügt.
+Nachdem Sie eine `Node`Instanz erstellt haben, können Sie Aufgaben wie das Erstellen eines anderen Knotens und das Hinzufügen eines Werts ausführen. Mit dem folgenden Code werden beispielsweise zwei Knoten erstellt und dem zweiten Knoten ein Wert hinzugefügt.
 
 ```java
 // Store content
@@ -75,9 +78,9 @@ Node day = adobe.addNode("day");
 day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suite!");
 ```
 
-## Knotenwerte abrufen {#retrieve-node-values}
+## Knotenwerte abrufen  {#retrieve-node-values}
 
-To retrieve a node and its value, invoke the `Node`instance’s `getNode`method and pass a string value that represents the fully-qualified path to the node. Betrachten Sie die Knotenstruktur, die im vorherigen Codebeispiel erstellt wurde. Zum Abrufen des Tagesknotens geben Sie „adobe/day“ an, wie das folgende Codebeispiel zeigt:
+Um eine Node und ihren Wert abzurufen, rufen Sie die `Node`Instanzmethode `getNode`auf und übergeben Sie einen Zeichenfolgenwert, der den vollständig qualifizierten Pfad zur Node darstellt. Betrachten Sie die Knotenstruktur, die im vorherigen Codebeispiel erstellt wurde. Zum Abrufen des Tagesknotens geben Sie „adobe/day“ an, wie das folgende Codebeispiel zeigt:
 
 ```java
 // Retrieve content
@@ -86,9 +89,9 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Knoten im Adobe CQ-Repository erstellen {#create-nodes-in-the-adobe-cq-repository}
+## Knoten im Adobe CQ-Repository erstellen  {#create-nodes-in-the-adobe-cq-repository}
 
-The following Java code example represents a Java class that connects to Adobe CQ, creates a `Session`instance, and adds new nodes. Einem Knoten wird ein Datenwert zugewiesen, woraufhin der Wert des Knotens und seines Pfades aus der Konsole geschrieben wird. Wenn Sie die Sitzung abgeschlossen haben, melden Sie sich unbedingt ab.
+Das folgende Java-Codebeispiel stellt eine Java-Klasse dar, die eine Verbindung zu Adobe CQ herstellt, eine `Session`Instanz erstellt und neue Knoten hinzufügt. Einem Knoten wird ein Datenwert zugewiesen, woraufhin der Wert des Knotens und seines Pfades aus der Konsole geschrieben wird. Wenn Sie die Sitzung abgeschlossen haben, melden Sie sich unbedingt ab.
 
 ```java
 /*
@@ -140,7 +143,7 @@ try {
 }
 ```
 
-After you run the full code example and create the nodes, you can view the new nodes in the **[!UICONTROL CRXDE Lite]**, as shown in the following illustration.
+Nachdem Sie das vollständige Codebeispiel ausgeführt und die Nodes erstellt haben, können Sie die neuen Nodes in der CRXDE Lite **[!UICONTROL a1/> Ansicht haben, wie in der folgenden Abbildung dargestellt.]**
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)
 
