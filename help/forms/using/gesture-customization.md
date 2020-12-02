@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 46%
 
 ---
 
@@ -25,15 +28,16 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
 1. Öffnen Sie Ihr Projekt.
 
-   * For iOS, open `Capture.xcodeproj` in Xcode
+   * Für iOS öffnen Sie `Capture.xcodeproj` in Xcode
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * For Windows, open `MWSWindows.sln` in Visual Studio.
+   * Öffnen Sie unter Windows `MWSWindows.sln` in Visual Studio.
 
-1. Navigate to the views folder and open the `task.js` file for editing.
+1. Navigieren Sie zum Ordner &quot;Ansichten&quot;und öffnen Sie die Datei `task.js` zur Bearbeitung.
 
-   * In Xcode, navigate to the **Capture > www > wsmobile > js > runtime > views** folder.
-   * In Eclipse, navigate to the **assets > www > wsmobile > js > runtime > views** folder.
-   * In Visual Studio, navigate to the **MWSWindows > www > wsmobile > js > runtime > views** folder.
+   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > Ansichten**.
+   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > Ansichten**.
+   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > Ansichten**.
+
    >[!NOTE]
    >
    >Die Datei „task.js“ enthält die Backbone-Ansicht, die mit allen Aufgaben oder Startpunkten in der Aufgaben- oder Startpunktliste verknüpft ist.
@@ -44,7 +48,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
    `"EventName Selector": "Function"`
 
-   When you trigger a Javascript event named `EventName`on an HTML element specified by `Selector`, the `Function`is called.
+   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName`für ein HTML-Element auslösen, das von `Selector` angegeben wird, wird `Function`aufgerufen.
 
 1. Suchen
 
@@ -66,7 +70,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
       &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 
-1. Save and close the `task.js` file.
+1. Speichern und schließen Sie die Datei `task.js`.
 1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine Aufgabe mit einem Wischen nach links und rechts öffnen.
 
 Auf ähnliche Weise können Sie Änderungen in anderen Ansichten für verschiedene Kombinationen von Gesten, HTML-Elementen und Funktionen vornehmen.
