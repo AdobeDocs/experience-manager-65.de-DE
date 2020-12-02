@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 85%
 
 ---
 
@@ -23,5 +26,5 @@ Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dess
 
 >[!NOTE]
 >
->Although there is a Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) available, the maintenance and creation of scaffolds as well as creating new pages from scaffolds is done in the classic UI. Weitere Informationen finden Sie unter [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in der Dokumentation für die Bearbeitung in der klassischen Benutzeroberfläche.
+>Obwohl ein Gerüst [Modus](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar ist, erfolgt die Pflege und Erstellung von Gerüsten sowie das Erstellen neuer Seiten aus Gerüsten in der klassischen Benutzeroberfläche. Weitere Informationen finden Sie unter [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in der Dokumentation für die Bearbeitung in der klassischen Benutzeroberfläche.
 
