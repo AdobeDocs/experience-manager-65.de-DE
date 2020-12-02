@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 100%
 
 ---
 
@@ -143,7 +146,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>consult</td>
    <td>ProcessManagementTaskService</td>
-   <td>consult</td>
+   <td>konsultieren</td>
    <td>Bespricht eine Aufgabe mit einem anderen Benutzer.</td>
   </tr>
   <tr>
@@ -221,7 +224,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
-   <td>revokeQueueAccess</td>
+   <td>cancelQueueAccess</td>
    <td>Entfernt einen Benutzer aus der Liste der Benutzer, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td>
   </tr>
   <tr>
@@ -245,7 +248,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
-   <td>saveOutOfOfficeSettingsJson</td>
+   <td>saveOutOfOfficeSettingsJSON</td>
    <td>Speichert Abwesenheitseinstellungen eines Benutzers.</td>
   </tr>
   <tr>
@@ -341,7 +344,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
-   <td>rejectTaskOfDirectReport</td>
+   <td>missTaskOfDirectReport</td>
    <td>Gibt eine Aufgabe eines direkt unterstellten Mitarbeiters an den vorherigen Benutzer zurück.</td>
   </tr>
   <tr>
@@ -353,7 +356,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>removeProperty</td>
    <td>WorkspacePropertyService</td>
-   <td>delete</td>
+   <td>Löschen Sie</td>
    <td>Löscht eine Workspace-Eigenschaft für einen Benutzer.</td>
   </tr>
   <tr>
