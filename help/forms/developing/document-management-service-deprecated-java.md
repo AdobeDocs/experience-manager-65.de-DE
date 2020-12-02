@@ -47,9 +47,9 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms API ausgeführt 
 
 Schnellere Beginn unter Programmieren mit AEM Formularen basieren auf dem Forms-Server, der auf JBoss und dem Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie fensterspezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Beginn (SOAP-Modus): Erstellen Sie mit der Java-API (nicht mehr unterstützt) Inhaltsdienste-Leerzeichen {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## Quick Beginn (SOAP-Modus): Erstellen Sie mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated} Inhaltsdienste-Leerzeichen
 
-Im folgenden Java-Codebeispiel wird ein neuer Bereich mit dem Namen *Testverzeichnis* in der Firma Home erstellt. Der Identifizierungswert des neuen Raums wird in die Konsole geschrieben.
+Im folgenden Java-Codebeispiel wird ein neuer Bereich mit dem Namen *Testverzeichnis* erstellt, der sich in der Firma Home befindet. Der Identifizierungswert des neuen Raums wird in die Konsole geschrieben.
 
 ```java
  /*
@@ -143,7 +143,7 @@ Im folgenden Java-Codebeispiel wird ein neuer Bereich mit dem Namen *Testverzeic
  
 ```
 
-## Quick Beginn (SOAP-Modus): Löschen von Content Services-Inhalten mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Quick Beginn (SOAP-Modus): Löschen Sie Content Services-Inhalte mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 Im folgenden Java-Codebeispiel wird ein Leerzeichen mit dem Namen /Firma Home/Test Directory gelöscht.
 
@@ -243,7 +243,7 @@ Im folgenden Java-Codebeispiel wird ein Leerzeichen mit dem Namen /Firma Home/Te
  
 ```
 
-## Quick Beginn (SOAP-Modus): hinzufügen von Inhalten in Content Services mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## Quick Beginn (SOAP-Modus): hinzufügen von Inhalten in Content Services mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
 Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* zu einem Ordner mit dem Namen /Firma Home/Test Directory hinzugefügt. Die Attribute für Ersteller und Beschreibung werden eingestellt. Der Identifizierungswert des neuen Inhalts wird in die Konsole geschrieben.
 
@@ -366,9 +366,9 @@ Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.p
  
 ```
 
-## Quick Beginn (SOAP-Modus): Abrufen von Inhalten aus Content Services mit der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Quick Beginn (SOAP-Modus): Abrufen von Inhalten aus Content Services mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* von /Firma Home abgerufen. Die PDF-Datei wird im lokalen Dateisystem gespeichert und erhält den Namen *UpdatedMortgageForm.pdf*.
+Im folgenden Java-Codebeispiel wird eine PDF-Datei mit dem Namen *MortgageForm.pdf* von /Firma Home abgerufen. Die PDF-Datei wird im lokalen Dateisystem gespeichert und trägt den Namen *UpdatedMortgageForm.pdf*.
 
 ```java
  /*
@@ -686,7 +686,7 @@ Im folgenden Java-Codebeispiel wird der Inhalt in /Firma Home Liste. Jeder Knote
  
 ```
 
-## Quick Beginn (SOAP-Modus): Content Services-Inhalte mit der Java-API suchen (nicht mehr unterstützt) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Quick Beginn (SOAP-Modus): Suchen Sie Content Services-Inhalte mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 Der folgende Java-Code sucht /Firma Home nach einem Dokument, das den Text MortgageForm enthält. Die Unterordner werden ebenfalls durchsucht.
 
@@ -796,9 +796,9 @@ Der folgende Java-Code sucht /Firma Home nach einem Dokument, das den Text Mortg
  
 ```
 
-## Quick Beginn (SOAP-Modus): Content Services-Berechtigungen mithilfe der Java-API festlegen (nicht mehr unterstützt) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## Quick Beginn (SOAP-Modus): Content Services-Berechtigungen mithilfe der Java-API (nicht mehr unterstützt) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated} festlegen
 
-Im folgenden Java-Codebeispiel wird eine Berechtigung für einen Benutzer mit dem Namen tony blue festgelegt. Die angegebene Domäne ist die Standarddomäne. Die Berechtigung &quot;Consumer&quot;wird angegeben und der Knoten ist `/Company Home/Test Directory`vorhanden.
+Im folgenden Java-Codebeispiel wird eine Berechtigung für einen Benutzer mit dem Namen tony blue festgelegt. Die angegebene Domäne ist die Standarddomäne. Die Verbraucherberechtigung wird angegeben und der Knoten ist `/Company Home/Test Directory`.
 
 ```java
  /*
