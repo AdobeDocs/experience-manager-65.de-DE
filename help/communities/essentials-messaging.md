@@ -79,7 +79,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente Do
    <td>/libs/social/messaging/components/hbs/messagebox/clientlibs/messagebox.css</td>
   </tr>
   <tr>
-   <td><strong>properties</strong></td>
+   <td><strong>Eigenschaften</strong></td>
    <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Messaging konfigurieren</a></td>
   </tr>
   <tr>
@@ -89,19 +89,19 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente Do
  </tbody>
 </table>
 
-Siehe auch [clientseitige Anpassungen](/help/communities/client-customize.md)
+Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
 ## Grundlagen für serverseitige {#essentials-for-server-side}
 
 * [Messaging konfigurieren](/help/communities/configure-messaging.md)
-* [Messaging-Client-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) für SCF-Komponenten
-* [Messaging-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) für den Dienst
+* [Messaging-Client-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) APIs für SCF-Komponenten
+* [Messaging-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) APIs für den Dienst
 * [Messaging-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Serverseitige Anpassungen](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->Der String-Parameter darf für die folgenden MessageBuilder-Methoden *keinen* nachgestellten Schrägstrich &quot;/&quot;enthalten:
+>Der String-Parameter muss für die folgenden MessageBuilder-Methoden einen nachgestellten Schrägstrich &quot;/&quot;enthalten:**
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -118,34 +118,34 @@ Beispiel:
 
 ### Community-Site {#community-site}
 
-Eine mit dem Assistenten erstellte Community-Site-Struktur enthält die Nachrichtenfunktion, wenn diese ausgewählt ist. Siehe `User Management` Einstellungen der [Community-Sites-Konsole](/help/communities/sites-console.md#user-management).
+Eine mit dem Assistenten erstellte Community-Site-Struktur enthält die Nachrichtenfunktion, wenn diese ausgewählt ist. Siehe `User Management`-Einstellungen von [Community-Sites-Konsole](/help/communities/sites-console.md#user-management).
 
 ### Beispielcode: Benachrichtigung erhalten {#sample-code-message-received-notification}
 
-Die Social Messaging-Funktion gibt Ereignis für Vorgänge aus, z. B. `send``marking read`, `marking delete`. Diese Ereignis können abgefangen und anhand der im Ereignis enthaltenen Daten ausgeführt werden.
+Die Funktion Social Messaging gibt Ereignis für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignis können abgefangen und anhand der im Ereignis enthaltenen Daten ausgeführt werden.
 
-Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent` Ereignis überwacht und eine E-Mail an alle Empfänger mit der `Day CQ Mail Service`Funktion sendet.
+Das folgende Beispiel zeigt einen Ereignis-Handler, der auf das `message sent`-Ereignis überwacht und mit dem `Day CQ Mail Service` eine E-Mail an alle Empfänger der Nachricht sendet.
 
 Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungs-Umgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen:
 
-1. Melden Sie sich als Administrator an ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Erstellen Sie ein `bundle node`in `/apps/engage/install` mit beliebigen Namen, z. B.:
+1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](https://localhost:4502/crx/de)` an.
+1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen, z. B.:
 
    * Symbolischer Name: `com.engage.media.social.messaging.MessagingNotification`
    * Name: Erste Schritte - Benachrichtigung über Tutorial-Nachrichten
    * Beschreibung: Ein Beispieldienst zum Senden einer E-Mail-Benachrichtigung an Benutzer, die eine Nachricht erhalten
    * Paket: `com.engage.media.social.messaging.notification`
 
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`und dann:
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` und dann:
 
-   1. Löschen Sie die automatisch erstellte `Activator.java` Klasse.
+   1. Löschen Sie die automatisch erstellte `Activator.java`-Klasse.
    1. Create class `MessageEventHandler.java`.
-   1. Kopieren Sie den unten stehenden Code und fügen Sie ihn ein `MessageEventHandler.java`.
+   1. Kopieren Sie den unten stehenden Code und fügen Sie ihn in `MessageEventHandler.java` ein.
 
 1. Klicken Sie auf **Alle speichern**.
-1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`und fügen Sie alle Importanweisungen wie im `MessageEventHandler.java` Code geschrieben hinzu.
+1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen wie im `MessageEventHandler.java`-Code geschrieben hinzu.
 1. Erstellen Sie das Bundle.
-1. Stellen Sie sicher, dass der `Day CQ Mail Service`OSGi-Dienst konfiguriert ist.
+1. Stellen Sie sicher, dass der Dienst `Day CQ Mail Service`OSGi konfiguriert ist.
 1. Melden Sie sich als Demo-Benutzer an und senden Sie eine E-Mail an einen anderen Benutzer.
 1. Der Empfänger erhält eine E-Mail zu einer neuen Nachricht.
 
