@@ -171,7 +171,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Inhaltsstruktur      {#content-tree}
+## Inhaltsstruktur       {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -286,11 +286,11 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
 
 * [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
-* [In der klassischen Benutzeroberfläche](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) öffnen, wenn diese Optionen von einem Administrator [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
+* [In der klassischen ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) Benutzeroberfläche öffnen, wenn diese Optionen von einem Administrator  [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi   {#page-modes}
+## Seitenmodi    {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
