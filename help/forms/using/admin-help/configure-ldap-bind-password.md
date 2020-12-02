@@ -24,7 +24,7 @@ Um Sicherheitsrisiken zu vermeiden, ist das Feld für das Bindungskennwort in de
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
 1. Um die aktuellen Konfigurationseinstellungen in eine Datei zu exportieren, klicken Sie auf „Exportieren“ und speichern die Konfigurationsdatei an einem anderen Speicherort.
-1. In the file, locate the `Domains` > *[Your domain name]* > `DirectoryConfigs` > `LDAPGroupConfig` node. Beispiel:
+1. Suchen Sie in der Datei den Knoten `Domains` > *[Ihr Domänenname]* > `DirectoryConfigs` > `LDAPGroupConfig`. Beispiel:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -39,7 +39,7 @@ Um Sicherheitsrisiken zu vermeiden, ist das Feld für das Bindungskennwort in de
 
    Geben Sie einen Wert für `bindpassword` ein und speichern Sie die Änderungen.
 
-1. In the file, locate the `Domains` > *[Your domain name]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` node. Beispiel:
+1. Suchen Sie in der Datei den Knoten `Domains` > *[Ihr Domänenname]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Beispiel:
 
    ```xml
     <node name="LDAPUserConfig">
