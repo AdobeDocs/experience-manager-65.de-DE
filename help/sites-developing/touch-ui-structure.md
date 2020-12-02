@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 96%
 
 ---
 
@@ -25,13 +28,13 @@ Die Touch-optimierte Benutzeroberfläche von AEM basiert auf bestimmten Prinzipi
 
 Die Benutzeroberfläche ist für Mobilgeräte sowie Desktop-Computer geeignet. Adobe hat sich dagegen entschieden, zwei verschiedene Layouts zu entwickeln, und verwendet stattdessen ein Layout, das mit allen Bildschirmen und Geräten kompatibel ist.
 
-Alle Module verwenden dasselbe Basislayout. In AEM sieht es wie folgt aus:
+Alle Module verwenden dasselbe Basis-Layout. In AEM sieht es wie folgt aus:
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-Das Layout entspricht einem reaktionsfähigen Designstil und passt sich an die Größe des verwendeten Geräts/Fensters an.
+Das Layout ermöglicht eine schnelle und einfache Bedienung und passt sich an die Größe des verwendeten Bildschirms oder Fensters an.
 
-Wenn beispielsweise die Auflösung unter 1024 px liegt (z. B. auf einem Mobilgerät), wird die Anzeige entsprechend angepasst:
+Wenn beispielsweise die Auflösung unter 1.024 px liegt (z. B. bei einem Mobilgerät), wird die Anzeige entsprechend angepasst:
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -64,7 +67,7 @@ Die möglichen Aktionen hängen auch davon ab, ob eine Ressource ausgewählt ist
 
 Die linke Leiste kann nach Bedarf geöffnet oder ausgeblendet werden. Sie zeigt Folgendes an:
 
-* **Zeitleiste**
+* **Zeitleistensegment**
 * **Verweise**
 * **Filter**
 
@@ -146,7 +149,7 @@ AEM enthält verschiedene vorab implementierte Ebenen für die Seitenbearbeitung
 >
 >Ebenen sind ein Konzept mit hohem Potenzial; sie beeinflussen die Ansicht und die Interaktion des Nutzers mit dem Seiteninhalt. Wenn Sie Ihre eigenen Ebenen entwickeln, stellen Sie sicher, dass die Ebene beim Verlassen eine Bereinigung durchführt.
 
-### Ebenenschalter {#layer-switcher}
+### Ebenenschalter  {#layer-switcher}
 
 Mit dem Ebenenschalter können Sie die Ebene auswählen, die Sie verwenden möchten. Wenn er geschlossen ist, zeigt er die aktuell verwendete Ebene an.
 
@@ -154,11 +157,11 @@ Der Ebenenschalter ist ein Dropdown-Menü in der Symbolleiste (am oberen Rand de
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Komponentensymbolleiste {#component-toolbar}
+### Komponenten-Symbolleiste {#component-toolbar}
 
 Jede Instanz einer Komponente zeigt ihre Symbolleiste an, wenn Sie darauf klicken (entweder einmal oder mit einem langsamen Doppelklick). Die Symbolleiste enthält spezifische Aktionen (z. B. Kopieren, Einfügen, offene Bearbeitung), die für die Komponenteninstanz (bearbeitbar) auf der Seite verfügbar sind.
 
-Je nach verfügbarem Platz werden die Komponentensymbolleisten in der oberen oder unteren rechten Ecke der entsprechenden Komponente platziert.
+Je nach verfügbarem Platz werden die Komponenten-Symbolleisten in der oberen oder unteren rechten Ecke der entsprechenden Komponente platziert.
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -166,5 +169,5 @@ Je nach verfügbarem Platz werden die Komponentensymbolleisten in der oberen ode
 
 Weitere Informationen zu den Konzepten der touchfähigen Benutzeroberfläche finden Sie im Artikel [Konzepte der AEM Touch-Enabled-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
 
-Weitere technische Informationen finden Sie im [JS-Dokumentationssatz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Editor für Touch-fähige Seiten.
+Weitere technische Informationen finden Sie im [JS Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Touch-aktivierten Seiten-Editor.
 
