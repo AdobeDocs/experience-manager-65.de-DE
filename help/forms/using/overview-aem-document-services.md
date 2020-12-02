@@ -11,6 +11,9 @@ discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+workflow-type: tm+mt
+source-wordcount: '1423'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +45,7 @@ Die folgenden vier Output-Dienstvorgänge stehen zur Verwendung zur Verfügung:
 * **generatePrintedOutput**: Führt einen Formularentwurf mit Formulardaten zusammen, um ein Dokument zu erstellen, das entweder an einer Laserdrucker oder einen Beschriftungsnetzwerkdrucker gesendet werden soll.
 
 * **generatePDFOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von PDF-Dateien zu generieren. Es gibt auch eine Option zum Generieren einer einzigen PDF durch Kombinieren aller PDFs
-* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel von Druckdokumenten (PS, PCL, ZPL, DPL, IPL, TPCL) zu generieren. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
+* **generatePrintedOutputBatch**: Führt mehrere Vorlagen mit mehreren Datensätzen in einem einzigen Aufruf zusammen, um einen Stapel gedruckter Dokumente (PS, PCL, ZPL, DPL, IPL, TPCL) zu generieren. Es gibt auch eine Option zum Generieren eines einzigen Druckdokuments.
 
 ## Assembler-Dienst {#assembler-service}
 
@@ -85,7 +88,7 @@ Mithilfe von DDX können zusammen mit der Dokumentzusammenführung und -aufteilu
 
 Sie können eine einfache Eingabezuordnung zum Angeben der Speicherorte für Quell- und Zieldokumente verwenden. Sie können auch die folgenden URL-Typen für externe Daten verwenden:
 
-* Datei
+* File
 * FTP
 * HTTP/HTTPS
 
@@ -105,11 +108,11 @@ Der Signature-Dienst ermöglicht das Arbeiten mit digitalen Signaturen und Dokum
 
 Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust Store gespeichert sind.
 
-### Encryption-Dienst {#encryption-service}
+### Encryption-Dienst  {#encryption-service}
 
 Der Encryption-Dienst ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Beim Verschlüsseln eines PDF-Dokuments können Sie das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alle Daten außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mithilfe eines privaten Schlüssels (Zertifikat) entschlüsseln. Der private Schlüssel, der zum Entschlüsseln des PDF-Dokuments verwendet wird, muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wurde.
 
-### Reader Extension-Dienst {#reader-extension-service}
+### Reader Extension-Dienst  {#reader-extension-service}
 
 Der Reader Extensions-Dienst ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 und höher. Der Dienst fügt dem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
@@ -126,7 +129,7 @@ PDF-Dokumente, denen entsprechende Verwendungsrechte hinzugefügt wurden, ermög
 
 Diese speziellen Benutzerfunktionen werden automatisch aktiviert, wenn ein PDF-Dokument mit aktivierten Benutzerrechten in Adobe Reader geöffnet wird. Wenn der Benutzer die Arbeit mit einem Dokument mit aktivierten Benutzerrechten beendet hat, sind diese Funktionen in Adobe Reader wieder deaktiviert. Sie bleiben deaktiviert, bis der Benutzer ein weiteres PDF-Dokument mit aktivierten Benutzerrechten erhält.
 
-Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. To configure the DocAssurance service, see [Installing and Configuring Configuring Document Services](../../forms/using/install-configure-document-services.md).
+Standardmäßig ist der DocAssurance-Dienst nicht verfügbar. Informationen zum Konfigurieren des DocAssurance-Dienstes finden Sie unter [Installieren und Konfigurieren von Dokument Services](../../forms/using/install-configure-document-services.md).
 
 ## An Drucker senden {#send-to-printer-service}
 
