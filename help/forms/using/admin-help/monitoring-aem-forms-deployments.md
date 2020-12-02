@@ -31,7 +31,7 @@ AEM Forms stellt zwei registrierte MBeans bereit, die Informationen zur Navigati
 * **ServiceStatistic:** Diese MBean stellt Informationen über den Dienstnamen und die Version bereit.
 * **OperationStatistic:** Diese MBean stellt die Statistik jedes Formularserverdienstes bereit. Hier können Administratoren Informationen zu bestimmten Diensten erhalten, z. B. Aufrufzeit, Anzahl der Fehler usw.
 
-### Öffentliche ServiceStatisticMbean-Schnittstellen {#servicestatisticmbean-public-interfaces}
+### Öffentliche ServiceStatisticMbean-Schnittstellen  {#servicestatisticmbean-public-interfaces}
 
 Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
 
@@ -41,7 +41,7 @@ Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken
  public int getMinorVersion();
 ```
 
-### Öffentliche OperationStatisticMbean-Schnittstellen {#operationstatisticmbean-public-interfaces}
+### Öffentliche OperationStatisticMbean-Schnittstellen  {#operationstatisticmbean-public-interfaces}
 
 Auf diese öffentlichen OperationStatistic MBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
 
@@ -69,13 +69,13 @@ Auf diese öffentlichen OperationStatistic MBean-Schnittstellen kann zu Testzwec
  public void setExceptionMessage(String errorMessage);
 ```
 
-### MBean Struktur- &amp; Vorgangsstatistiken {#mbean-tree-operation-statistics}
+### MBean Struktur- &amp; Vorgangsstatistiken  {#mbean-tree-operation-statistics}
 
 Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean bereitgestellt. Diese Statistiken sind Attribute von MBean und können unter der folgenden Hierarchiestruktur gefunden werden:
 
 **MBean-Struktur**
 
-**Adobe-Domänenname:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
+**Domänenname der Adobe:** Abhängig vom Anwendungsserver. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
 
 **ServiceType:** AdobeService ist der Name, der zur Liste aller Dienste verwendet wird.
 
@@ -85,7 +85,7 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **Vorgangsstatistiken**
 
-**Aufrufzeit:** Zeit für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
+**Aufrufzeit:** Zeit, die für die Ausführung der Methode benötigt wird. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
 
 **Anzahl der Aufrufe:** Die Häufigkeit, mit der der Dienst aufgerufen wird.
 
@@ -95,17 +95,17 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **Min. Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**Ausnahmeanzahl:** Anzahl der Aufrufe, die zu Fehlern führten.
+**Anzahl der Ausnahmen:** Anzahl der Aufrufe, die zu Fehlern geführt haben.
 
 **Ausnahmemeldung:** Die Fehlermeldung der letzten aufgetretenen Ausnahme.
 
-**Datum der letzten Probenahme:** Das Datum des letzten Aufrufs.
+**Letztes Sampling Date Time:** Das Datum des letzten Aufrufs.
 
-**Zeiteinheit:** Der Standardwert ist Millisekunde.
+**Zeiteinheit: Der** Standardwert ist Millisekunde.
 
 Zum Aktivieren der JMX-Überwachung müssen Anwendungsserver in der Regel konfiguriert werden. Weitere Informationen dazu erhalten Sie in der Dokumentation für Ihren Anwendungsserver.
 
-### Beispiele zum Einrichten eines offenen JMX-Zugriffs {#examples-of-how-to-set-up-open-jmx-access}
+### Beispiele zum Einrichten eines offenen JMX-Zugriffs  {#examples-of-how-to-set-up-open-jmx-access}
 
 **JBoss 4.0.3/4.2.0 – JVM-Start konfigurieren**
 
@@ -120,7 +120,7 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
 
 **WebLogic 9.2 /10 – JVM-Start konfigurieren**
 
-1. Edit the startWebLogic.bat file that is located under `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
+1. Bearbeiten Sie die Datei &quot;startWebLogic.bat&quot;, die sich unter `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin` befindet.
 1. Suchen Sie die Zeile JAVA_OPTS und fügen Sie Folgendes hinzu:
 
    ```shell
