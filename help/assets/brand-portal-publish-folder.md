@@ -12,21 +12,24 @@ discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 67%
 
 ---
 
 
 # Veröffentlichen von Ordnern in Brand Portal{#publish-folders-to-brand-portal}
 
-Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Assets und Ordner in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow für einen späteren Zeitpunkt planen). Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. For details, see [Configure AEM Assets with Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Assets und Ordner in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow für einen späteren Zeitpunkt planen). Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. Weitere Informationen finden Sie unter [Konfigurieren der von AEM Assets mit Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Nachdem Sie ein Asset oder einen Ordner veröffentlicht haben, steht es Benutzern im Markenportal zur Verfügung.
 
-Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie das Asset oder den Ordner erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass derzeit vorgenommene Änderungen nicht im Markenportal verfügbar sind. Nur genehmigte Änderungen, die von einem Administrator veröffentlicht werden, sind im Markenportal verfügbar.
+Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM Assets vornehmen, werden die Änderungen erst dann im Markenportal übernommen, wenn Sie das Asset oder den Ordner erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. From the AEM Assets interface, hover over the desired folder and select **Publish** option from the quick actions.
+1. Bewegen Sie den Mauszeiger in der AEM Assets-Oberfläche über den gewünschten Ordner und wählen Sie in den Schnellaktionen die Option **Veröffentlichen**.
 
    Alternativ können Sie den gewünschten Ordner auswählen und den weiteren Schritten folgen.
 
@@ -36,25 +39,26 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-   * From the toolbar, select **Quick Publish**. Then from the menu, select **Publish to Brand Portal**.
+   * Wählen Sie in der Symbolleiste **Quick Publish** aus. Wählen Sie dann im Menü **In Markenportal veröffentlichen**.
 
-   * From the toolbar, select **Manage Publication**.
-   1. Wählen Sie in **Aktion** **Auf Markenportal** veröffentlichen, **Planen** **jetzt** aus und klicken Sie auf **Weiter.**
-   1. Bestätigen Sie Ihre Auswahl in **Scope** und klicken Sie auf In Markenportal **veröffentlichen**.
+   * Wählen Sie in der Symbolleiste **Veröffentlichung verwalten** aus.
+   1. Wählen Sie unter **Aktion** **Auf Markenportal veröffentlichen** aus, wählen Sie **Einplanen** **Jetzt** und klicken Sie auf **Weiter.**
+   1. Bestätigen Sie Ihre Auswahl in **Umfang** und klicken Sie auf **In Brand Portal veröffentlichen**.
+
    Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um den veröffentlichten Ordner zu sehen.
 
    **Ordner später veröffentlichen**
 
    So planen Sie die Veröffentlichung von Asset-Ordnern im Brand Portal auf ein späteres Datum oder eine spätere Uhrzeit:
 
-   1. Once you have selected assets/ folders to publish, select **Manage Publication** from the tool bar at the top.
-   1. Wählen Sie in **Aktion** **Auf Markenportal** veröffentlichen aus und wählen Sie **Planung** **Später**.
+   1. Nachdem Sie die zu veröffentlichenden Assets/Ordner ausgewählt haben, wählen Sie in der Symbolleiste oben die Option **Veröffentlichung verwalten**.
+   1. Wählen Sie unter **Aktion** **In Markenportal veröffentlichen** aus und wählen Sie **Einplanen** **Später**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   1. Select an **Activation date** and specify time. Klicken Sie auf **Weiter**.
-   1. Confirm your selection in **Scope**. Klicken Sie auf **Weiter**.
-   1. Specify a Workflow title under **Workflows**. Click **Publish Later**.
+   1. Wählen Sie ein **Aktivierungsdatum** aus und geben Sie die Zeit an. Klicken Sie auf **Weiter**.
+   1. Bestätigen Sie Ihre Auswahl unter **Umfang**. Klicken Sie auf **Weiter**.
+   1. Geben Sie einen Workflow-Titel unter **Workflows** an. Klicken Sie auf **Später veröffentlichen**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
@@ -62,7 +66,7 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
 ## Veröffentlichung von Ordnern in Brand Portal rückgängig machen {#unpublish-folders-from-brand-portal}
 
-Sie können alle in Brand Portal veröffentliche Assets/Ordner entfernen, indem Sie die Veröffentlichung über die AEM-Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des Originalordners rückgängig gemacht haben, steht die Kopie nicht mehr für Markenportal-Benutzer zur Verfügung.
+Sie können alle in Brand Portal veröffentliche Assets/Ordner entfernen, indem Sie die Veröffentlichung über die AEM-Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des ursprünglichen Ordners aufgehoben haben, ist dessen Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
 Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig machen oder diesen Vorgang für einen späteren Zeitpunkt planen. So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgängig:
 
@@ -70,26 +74,27 @@ Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig
 
    ![publish2bp-1](assets/publish2bp.png)
 
-1. From the toolbar, Click **Manage Publication**.
+1. Klicken Sie in der Symbolleiste auf **Veröffentlichung verwalten**.
 
 1. **Veröffentlichung in Brand Portal jetzt rückgängig machen**
 
    So können Sie die Veröffentlichung des gewünschten Ordners in Brand Portal schnell rückgängig machen:
 
-   1. From the toolbar, select **Manage Publication**.
-   1. Wählen Sie in **Aktion** **Veröffentlichung rückgängig machen aus Markenportal**, **Planung** **jetzt** und klicken Sie auf **Weiter.**
-   1. Bestätigen Sie Ihre Auswahl in **Scope** und klicken Sie auf **Veröffentlichung im Markenportal** rückgängig machen.
-   ![verify-unpublish](assets/confirm-unpublish.png)
+   1. Wählen Sie in der Symbolleiste **Veröffentlichung verwalten** aus.
+   1. Wählen Sie unter **Aktion** **Veröffentlichung rückgängig machen aus dem Markenportal** aus **Einplanen** **Jetzt** und klicken Sie auf **Weiter.**
+   1. Bestätigen Sie Ihre Auswahl in **Umfang** und klicken Sie auf **Veröffentlichung in Brand Portal rückgängig machen**.
 
-   **Rückgängigmachen der Veröffentlichung aus dem Markenportal später**
+   ![confirm-unpublish](assets/confirm-unpublish.png)
+
+   **Rückgängigmachen der Veröffentlichung aus dem Markenportal**
 
    So können Sie die Veröffentlichung eines Ordners in Brand Portal zu einem späteren Zeitpunkt rückgängig machen:
 
-   1. From the toolbar, select **Manage Publication**.
-   1. From **Action** select **Unpublish from Brand Portal**, and from **Scheduling** select **Later**.
-   1. Select an **Activation date** and specify the time. Klicken Sie auf **Weiter**.
-   1. Bestätigen Sie Ihre Auswahl in **Scope** und klicken Sie auf **Weiter**.
-   1. Specify a **Workflow title** in **Workflows**. Click **Unpublish Later.**
+   1. Wählen Sie in der Symbolleiste **Veröffentlichung verwalten** aus.
+   1. Wählen Sie unter **Aktion** **Rückgängigmachen der Veröffentlichung im Markenportal** und unter **Einplanen** **Später**.
+   1. Wählen Sie ein **Aktivierungsdatum** aus und geben Sie die Zeit an. Klicken Sie auf **Weiter**.
+   1. Bestätigen Sie Ihre Auswahl unter **Umfang** und klicken Sie auf **Weiter**.
+   1. Geben Sie einen **Workflow-Titel** in **Workflows** an. Klicken Sie auf **Veröffentlichung später rückgängig machen.**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
