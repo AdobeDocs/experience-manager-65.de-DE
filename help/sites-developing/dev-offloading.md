@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 89%
 
 ---
 
@@ -35,13 +38,13 @@ Verwenden Sie die Aufzählung `OffloadingJobProperties`, um auf die Eigenschafts
 
 Für Aufträge sind keine Nutzlasten erforderlich. Eine Nutzlast ist jedoch dann notwendig, wenn der Auftrag die Bearbeitung einer Ressource erfordert und er auf einen Computer abgeladen wird, der den Auftrag nicht erstellt hat.
 
-## Erstellen von Aufträgen für die Abladung {#creating-jobs-for-offloading}
+## Erstellen von Aufträgen für die Abladung  {#creating-jobs-for-offloading}
 
 Erstellen Sie einen Client, der die Methode „JobManager.addJob“ aufruft, um einen Auftrag zu erstellen, den von einem automatisch ausgewählten JobConsumer-Dienst ausgeführt wird. Geben Sie die folgenden Informationen an, um den Auftrag zu erstellen:
 
 * Thema: Das Auftragsthema.
 * Name: (Optional)
-* Properties Map: A `Map<String, Object>` object that contains any number of properties, such as the input payload paths and output Payload paths. Dieses Zuordnungsobjekt ist für das JobConsumer-Objekt verfügbar, das den Auftrag ausführt.
+* Eigenschaftenzuordnung: Ein `Map<String, Object>`-Objekt, das eine beliebige Anzahl von Eigenschaften enthält, z. B. die Payload-Pfade für die Eingabe und die Ausgabe. Dieses Zuordnungsobjekt ist für das JobConsumer-Objekt verfügbar, das den Auftrag ausführt.
 
 Der Dienst im folgenden Beispiel erstellt einen Auftrag für ein bestimmtes Thema und einen bestimmten Nutzlastpfad.
 
@@ -91,7 +94,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-The log contains the following message when JobGeneratorImpl.createJob is called for the `com/adobe/example/offloading` topic and the `/content/geometrixx/de/services` payload:
+Das Protokoll enthält die folgende Meldung, wenn JobGeneratorImpl.createJob für das `com/adobe/example/offloading`-Thema und die `/content/geometrixx/de/services`-Payload aufgerufen wird:
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -101,7 +104,7 @@ The log contains the following message when JobGeneratorImpl.createJob is called
 
 Um Aufträge zu verarbeiten, entwickeln Sie einen OSGi-Dienst, der die Schnittstelle `org.apache.sling.event.jobs.consumer.JobConsumer` implementiert. Identifizieren Sie das zu verarbeitende Thema mithilfe der Eigenschaft `JobConsumer.PROPERTY_TOPICS`.
 
-The following example JobConsumer implementation registers with the `com/adobe/example/offloading` topic. Der JobConsumer-Dienst legt einfach den Wert für die Eigenschaft „Consumed“ des Nutzlast-Inhaltknotens auf „true“ fest.
+Im folgenden Beispiel wird die JobConsumer-Implementierung mit dem `com/adobe/example/offloading`-Thema registriert. Der JobConsumer-Dienst legt einfach den Wert für die Eigenschaft „Consumed“ des Nutzlast-Inhaltknotens auf „true“ fest.
 
 ```java
 package com.adobe.example.offloading;
