@@ -20,14 +20,14 @@ ht-degree: 23%
 
 # Katalogfunktion {#catalog-feature}
 
-The [`Enablement Assignments`](assignments.md) and `Enablement Catalog` components found in the Communities group in the components browser are components of an [enablement community](overview.md#enablement-community).
+Die Komponenten [`Enablement Assignments`](assignments.md) und `Enablement Catalog`, die in der Gruppe Communities im Komponenten-Browser gefunden werden, sind Komponenten einer [Aktivierungs-Community](overview.md#enablement-community).
 
-The `Enablement Catalog` component allows community members to access a catalog of [enablement resources](resources.md). Die Verwendung von AEM-Tags spielt bei der Verwaltung der Aktivierungsressourcenliste in einem Katalog eine große Rolle (siehe [Tagging von Aktivierungsressourcen](tag-resources.md)).
+Die Komponente `Enablement Catalog` ermöglicht es Community-Mitgliedern, auf einen Katalog von [Aktivierungsressourcen](resources.md) zuzugreifen. Die Verwendung von AEM-Tags spielt bei der Verwaltung der Aktivierungsressourcenliste in einem Katalog eine große Rolle (siehe [Tagging von Aktivierungsressourcen](tag-resources.md)).
 
-From the [Getting Started with AEM Communities for Enablement](getting-started-enablement.md) tutorial, see a member&#39;s view of assignments and catalogs in the [Experience the Published Site](enablement-published-site.md) section.
+Sehen Sie sich im Lehrgang [Erste Schritte mit AEM Communities für Aktivierung](getting-started-enablement.md) die Ansicht der Zuweisungen und Kataloge eines Mitglieds im Abschnitt [Erleben Sie die veröffentlichte Site](enablement-published-site.md) an.
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Catalog Essentials](catalog-developer-essentials.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Kataloggrundsätze](catalog-developer-essentials.md) für Entwickler.
 
-The [catalog function](functions.md#catalog-function) is available when creating a [community site](sites-console.md).
+Die [Katalogfunktion](functions.md#catalog-function) ist verfügbar, wenn eine [Community-Site](sites-console.md) erstellt wird.
