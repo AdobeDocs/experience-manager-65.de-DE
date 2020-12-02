@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 89%
 
 ---
 
@@ -26,15 +29,15 @@ In AEM Forms wird der Download-Vorgang für die folgenden Assettypen unterstütz
 
 AEM Forms unterstützt den Download dieser Formulartypen – einzeln oder in einem Ordner mit mindestens einem unterstützten Formular.
 
-Aside from these assets, you can download the `Resource` type of asset if it is present in a folder. Diese Funktion wird bereitgestellt, damit Sie neben dem Formular die Ressource herunterladen können, auf die ein XFA-Formular verweist.
+Neben diesen Assets können Sie den Asset-Typ `Resource` herunterladen, wenn er in einem Ordner vorhanden ist. Diese Funktion wird bereitgestellt, damit Sie neben dem Formular die Ressource herunterladen können, auf die ein XFA-Formular verweist.
 
 ## Herunterladen von einem oder mehreren Formularen {#download-one-or-more-forms}
 
-1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.
+1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche unter `https://<server>:<port>/aem/forms.html` an.
 
 1. Navigieren Sie zum Speicherort des Assets, das Sie herunterladen möchten.
 
-1. Wählen Sie das Asset aus. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Herunterladen]** von ![aem6forms_download](assets/aem6forms_download.png) .
+1. Wählen Sie das Asset aus. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png).
 
    >[!NOTE]
    >
