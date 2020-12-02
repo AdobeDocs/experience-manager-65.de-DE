@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 95%
 
 ---
 
@@ -29,17 +32,17 @@ Sie können festlegen, welche Spalten in den Suchergebnissen angezeigt werden so
 >
 >Die Suchergebnisse enthalten keine Aufgaben, die zu einer Gruppen- oder freigegebenen Aufgabenliste gehörten, auf die Sie Zugriff haben, es sei denn, Sie waren tatsächlich an den Aufgaben beteiligt. Die Ergebnisse enthalten keine abgeschlossenen Prozessinstanzen, die der Administrator entfernt hat.
 
-### Suchen anhand des Prozessnamens {#search-by-process-name}
+### Suchen anhand des Prozessnamens  {#search-by-process-name}
 
 1. Wählen Sie auf der Seite „Verfolgung“ im linken Bereich einen Prozessnamen aus. Im Hauptbereich werden alle Instanzen des Prozesses angezeigt, für den Sie eine Aufgabe gestartet oder abgeschlossen haben.
 1. Klicken Sie auf eine Prozessinstanz, um weitere Informationen dazu anzuzeigen.
 
-### Suchen nach Aufgaben mithilfe von Suchvorlagen {#search-for-a-task-using-a-search-template}
+### Suchen nach Aufgaben mithilfe von Suchvorlagen  {#search-for-a-task-using-a-search-template}
 
 1. Wählen Sie auf der Seite „Verfolgung“ in der Liste auf der linken Seite **Suchen die Option Vorlagen** aus und wählen Sie eine Suchvorlage aus.
 1. Wenn die Vorlage Suchparameter unterstützt, füllen Sie zur Eingrenzung der Suchparameter die Vorlagenfelder aus und klicken Sie auf **Suchen**. Zeigt eine Liste aller Aufgaben an, an denen Sie teilgenommen haben und die den Suchkriterien entsprechen.
 
-## Prozessdetails anzeigen {#view-process-details}
+## Prozessdetails anzeigen  {#view-process-details}
 
 Auf der Seite „Verfolgung“ können Sie einen Prozess auswählen und seine Details anzeigen. Sie können die Prozesse basierend auf verschiedenen Parametern suchen, um die Aufgabendetails anzuzeigen. Sie können auch die Registerkarte „Status“ für Prozesse anzeigen, bei denen mehrere Benutzer parallel Aufgaben erhalten und bei denen die Werkzeuge zur Überprüfung von Dokumenten aktiviert sind.
 
