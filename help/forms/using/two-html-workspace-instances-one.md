@@ -21,16 +21,16 @@ ht-degree: 70%
 
 Die Standardinstallation und -einstellungen von AEM Forms lassen nur die Bereitstellung einer AEM Forms Workspace-Instanz auf dem Server zu. Möglicherweise müssen Sie jedoch zwei verschiedene Instanzen von AEM Forms Workspace auf einem AEM Forms-Server hosten. Sie können auf die beiden Instanzen über unterschiedliche URLs zugreifen.
 
-AEM Forms-Administratoren passen Workspace an, um zwei unterschiedliche URLs zu erstellen und zwei Workspace-Instanzen auf demselben Server bereitzustellen. In diesem Artikel zur Anpassung gehen wir davon aus, dass die beiden Arbeitsbereiche an- `https://'[server]:[port]'/lc/ws` und `https://'[server]:[port]':/lc/ws2`zugänglich sind.
+AEM Forms-Administratoren passen Workspace an, um zwei unterschiedliche URLs zu erstellen und zwei Workspace-Instanzen auf demselben Server bereitzustellen. In diesem Artikel gehen wir davon aus, dass die beiden Arbeitsbereiche unter `https://'[server]:[port]'/lc/ws` und `https://'[server]:[port]':/lc/ws2` verfügbar sind.
 
 Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
 1. Installieren Sie das Dev-Paket von AEM Forms Workspace auf dem Server. Anweisungen zum Erstellen finden Sie unter [Dev-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
-1. Melden Sie sich bei CRXDE Lite als Administrator an, indem Sie darauf zugreifen `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Melden Sie sich bei der CRXDE Lite als Administrator an, indem Sie auf `https://'[server]:[port]'/lc/crx/de/index.jsp` zugreifen.
 1. Kopieren Sie den Knoten „ws“ unter „/content“ und fügen Sie ihn unter „/content“ ein. Benennen Sie den Knoten in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**. Ändern Sie in den Eigenschaften dieses Knotens den Wert `sling:resourceType` in „ws2“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Kopieren Sie den Ordner „ws“ unter „/libs“ und fügen Sie ihn unter „/apps “ein. Benennen Sie den Ordner in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. In `GET.jsp` at `/apps/ws2`, make the following code changes. Ersetzen Sie den Code
+1. Nehmen Sie in `GET.jsp` bei `/apps/ws2` die folgenden Codeänderungen vor. Ersetzen Sie den Code
 
    ```html
    <html lang="en">
@@ -54,7 +54,7 @@ Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
        <meta http-equiv="refresh" content="0;URL='/lc/apps/ws2/index.html'" />
    ```
 
-1. In `registry.js` at `/apps/ws2/js`, change path of templates to refer to templates at `/apps/ws2/js/runtime/templates`. Ersetzen Sie den folgenden Code
+1. Ändern Sie in `registry.js` unter `/apps/ws2/js` den Pfad der Vorlagen, um auf Vorlagen unter `/apps/ws2/js/runtime/templates` zu verweisen. Ersetzen Sie den folgenden Code
 
    ```css
    "tasklist" : {
@@ -82,16 +82,16 @@ Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
    }
    ```
 
-1. Ändern Sie in `userinfo.js` at `/apps/ws2/js/runtime/models` und `/apps/ws2/js/runtime/views`die Zeichenfolge `/lc/content/ws` in `lc/content/ws2`.
+1. Ändern Sie in `userinfo.js` bei `/apps/ws2/js/runtime/models` und `/apps/ws2/js/runtime/views` die Zeichenfolge `/lc/content/ws` in `lc/content/ws2`.
 
-1. Ändern Sie `/apps/ws2/js/runtime/services/service.js`den Pfad in der `getLocalizationData` Funktion in `/lc/apps/ws2/Locale.html`.
+1. Ändern Sie in `/apps/ws2/js/runtime/services/service.js` den Pfad in der Funktion `getLocalizationData` so, dass er auf `/lc/apps/ws2/Locale.html` verweist.
 
-1. To refer to `pdf.html` of the new Workspace, change the path of `pdf.html` in `/apps/ws2/js/runtime/views/forms/pdftaskform.js`.
+1. Um auf `pdf.html` des neuen Arbeitsbereichs zu verweisen, ändern Sie den Pfad von `pdf.html` in `/apps/ws2/js/runtime/views/forms/pdftaskform.js`.
 
-1. To refer to `pdf.html` of the new Workspace, change paths of `pdf.html` and `WsNextAdapter.swf` in `startprocess.html`, `taskdetails.html`, and `processinstancehistory.html` at `/apps/ws2/js/runtime/templates`.
+1. Um auf `pdf.html` des neuen Arbeitsbereichs zu verweisen, ändern Sie die Pfade von `pdf.html` und `WsNextAdapter.swf` in `startprocess.html`, `taskdetails.html` und `processinstancehistory.html` unter `/apps/ws2/js/runtime/templates`.
 
-1. Copy `/etc/map/ws` folder and paste at `/etc/map`. Benennen Sie den neuen Ordner in „ws2“ um. Klicken Sie auf „Alle speichern“.
+1. Kopieren Sie den Ordner `/etc/map/ws` und fügen Sie ihn bei `/etc/map` ein. Benennen Sie den neuen Ordner in „ws2“ um. Klicken Sie auf „Alle speichern“.
 
-1. In properties of `ws2`, change value of `sling:redirect` to `content/ws2`.
+1. Ändern Sie in den Eigenschaften von `ws2` den Wert von `sling:redirect` in `content/ws2`.
 
 1. Ändern Sie den Wert von `sling:match` in `^[^/\||]/[^/\||]/ws2$`.
