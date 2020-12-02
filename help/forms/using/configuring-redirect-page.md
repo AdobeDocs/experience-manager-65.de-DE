@@ -10,6 +10,9 @@ discoiquuid: 0ffbb4d3-9371-4705-8496-f98e22d9c4a6
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 74%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
 
 Formularersteller können für jedes Formular eine Seite konfigurieren, zu der die Formularbenutzer nach dem Senden eines Formulars umgeleitet werden.
 
-1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) > **Adaptive Form Container**, and then click ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, klicken Sie dann auf ![Feldebene](assets/field-level.png) > **Container des adaptiven Formulars** und klicken Sie dann auf ![cmppr](assets/cmppr.png).
 
 1. Klicken Sie in der Randleiste auf **Senden**.
 
@@ -29,11 +32,11 @@ Formularersteller können für jedes Formular eine Seite konfigurieren, zu der d
 
 Konfigurieren der Umleitungsseite
 
-Formularersteller können folgende Parameter verwenden, die zur Dankeseite weitergeleitet werden. For all the available submit actions, `status` and `owner` parameters are passed. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter weitergeleitet:
+Formularersteller können folgende Parameter verwenden, die zur Dankeseite weitergeleitet werden. Für alle verfügbaren Übermittlungsaktionen werden die Parameter `status` und `owner` übergeben. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter weitergeleitet:
 
-* **Aktion** zum Speichern von Inhalten (nicht mehr unterstützt): `contentPath`- der Pfad des Knotens im Repository, in dem die gesendeten Daten gespeichert werden, wird übergeben.
+* **Aktion**  zum Speichern von Inhalten (nicht mehr unterstützt):  `contentPath`—der Pfad des Knotens im Repository, in dem die gesendeten Daten gespeichert werden, wird übergeben.
 
-* **PDF-Aktion** speichern (nicht mehr unterstützt): `contentPath`- der gesendeten Daten und des Pfades zu dem Knoten, der die PDF-Datei im Repository speichert - wird weitergeleitet.
+* **PDF-Aktion**  speichern (nicht mehr unterstützt):  `contentPath`—der gesendeten Daten und des Pfades zum Knoten, der die PDF-Datei im Repository speichert, weitergeleitet werden.
 
 * **An Formular-Workflow übermitteln**: Ausgabeparameter, die aus dem Formular-Workflow zurückgegeben wurden, werden weitergeleitet.
 
