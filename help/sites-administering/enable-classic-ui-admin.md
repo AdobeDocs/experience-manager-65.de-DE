@@ -1,6 +1,6 @@
 ---
 title: Admin Consoles
-seo-title: Admin Consoles
+seo-title: Admin Consolen
 description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
 seo-description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
@@ -12,19 +12,22 @@ discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 69%
 
 ---
 
 
-# Admin Consoles{#admin-consoles}
+# Admin Consolen{#admin-consoles}
 
 In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzeroberfläche über die Admin Consoles nun deaktiviert. Aus diesem Grund werden die Pop-up-Symbole, die beim Bewegen des Mauszeigers auf bestimmte Konsolensymbole angezeigt wurden, um den Zugriff auf die klassische Benutzeroberfläche zu ermöglichen, nicht mehr eingeblendet.
 
-Every console that has a Classic UI version in `/libs/cq/core/content/nav` can be re-enabled individually so that the **Classic UI** option once again pops up over the console icon when it is moused over.
+Jede Konsole mit einer klassischen UI-Version in `/libs/cq/core/content/nav` kann einzeln erneut aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darüber bewegt wird.
 
 In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
-1. Suchen Sie mit CRXDE Lite den Knoten, der der Admin-Konsole entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. Sie finden ihn hier:
+1. Suchen Sie mithilfe von CRXDE Lite den Knoten, der der Admin-Konsole entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. Sie finden ihn hier:
 
    `/libs/cq/core/content/nav`
 
@@ -36,7 +39,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    `/libs/cq/core/content/nav/sites`
 
-1. Create an overlay using the **Overlay Node** option; for example:
+1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten**. Beispiel:
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`
