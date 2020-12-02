@@ -12,6 +12,9 @@ discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 525b11fbb60fc3568ecc028562ffbf174b8e4c37
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 65%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 525b11fbb60fc3568ecc028562ffbf174b8e4c37
 
 >[!CAUTION]
 >
->Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Kunden wird dringend empfohlen, neuere Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [AEM Desktop-App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html) zu verwenden. Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Ordner mit Assets für Benutzer von Adobe Creative Cloud freigeben. For details on how to configure Adobe Marketing Cloud to let you share assets with Adobe Creative Cloud, see [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md).
+Mit Adobe Experience Manager (AEM) Assets können Sie Ordner mit Assets für Benutzer von Adobe Creative Cloud freigeben. Weitere Informationen zum Konfigurieren von Adobe Marketing Cloud für die Freigabe von Assets für Adobe Creative Cloud finden Sie unter [Assets-Creative Cloud-Integration konfigurieren](/help/sites-administering/configure-assets-cc-integration.md).
 
 1. Wählen Sie in der Assets-Konsole den für Creative Cloud freizugebenden Ordner aus.
 
@@ -32,11 +35,11 @@ Mit Adobe Experience Manager (AEM) Assets können Sie Ordner mit Assets für Ben
 
    ![](assets/chlimage_1-140.png)
 
-1. From the list, select the **Adobe Creative Cloud** option.
+1. Wählen Sie in der Liste die Option **Adobe Creative Cloud**.
 
    ![](assets/chlimage_1-141.png)
 
-1. In the **Creative Cloud Sharing** page, add the user to share the folder with and then click **Save**.
+1. Fügen Sie auf der Seite **Freigeben von Creative Clouden** den Benutzer hinzu, für den der Ordner freigegeben werden soll, und klicken Sie dann auf **Speichern**.
 
    ![](assets/chlimage_1-142.png)
 
