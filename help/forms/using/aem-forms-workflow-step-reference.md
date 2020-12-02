@@ -40,73 +40,73 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
 * **Tage:** Die Anzahl der Tage, nach denen die Aufgabe abgeschlossen werden soll. Die Anzahl der Tage wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Tage im Feld „Tage“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Tagen ein Zeitüberschreitungshandler ausgelöst.
 * **Stunden:** Die Anzahl der Tage, innerhalb derer die Aufgabe abgeschlossen werden soll. Die Anzahl der Stunden wird gezählt, nachdem die Aufgabe einem Benutzer zugewiesen wurde. Wenn eine Aufgabe nicht abgeschlossen wurde und die Anzahl der Stunden im Feld „Stunden“ überschreitet, wird bei Auswahl dieser Option nach den fälligen Stunden ein Zeitüberschreitungshandler ausgelöst.
 * **Zeitüberschreitung nach Fälligkeitsdatum:** Wählen Sie diese Option, um das Auswahlfeld „Zeitüberschreitungshandler“ zu aktivieren.
-* **Zeitüberschreitungshandler:** Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Scripts placed in the CRX-repository at [apps]/fd/dashboard/scripts/timeoutHandler are available for selection. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
+* **Zeitüberschreitungshandler:** Wählen Sie das Skript aus, das ausgeführt werden soll, wenn der Schritt „Aufgabe zuweisen“ das Fälligkeitsdatum überschreitet. Skripten, die im CRX-Repository unter [apps]/fd/Dashboard/scripts/timeoutHandler abgelegt werden, stehen zur Auswahl zur Verfügung. Der angegebene Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet.
 * **Markieren Sie Aktion und Kommentar aus der letzten Aufgabe in „Aufgabendetails“:** Wählen Sie diese Option, um die letzte ausgeführte Aktion und den Kommentar, der im Abschnitt „Aufgabendetail“ einer Aufgabe erhalten wurde, anzuzeigen.
 * **Typ:** Wählen Sie den Typ des Dokuments, das ausgefüllt werden soll, wenn der Workflow gestartet wird. Sie können ein adaptives Formular, ein schreibgeschütztes adaptives Formular, ein nicht interaktives PDF-Dokument, eine Interaktive Kommunikationsagent-Benutzeroberfläche oder ein interaktives Kanal für die interaktive Kommunikation auswählen.
 * **Adaptives Formular verwenden:** Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Diese Option ist verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Adaptives Formular&quot;oder &quot;Schreibgeschütztes adaptives Formular&quot;auswählen. Sie können das adaptive Formular verwenden, das an den Workflow gesendet wird, in einem absoluten Pfad verfügbar ist oder in einem Pfad in einer Variablen verfügbar ist. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben.\
    Sie können mehrere adaptive Formulare mit einem Workflow verknüpfen. Daher können Sie mithilfe der verfügbaren Eingabemethoden ein adaptives Formular zur Laufzeit angeben.
 
-* **Interaktive Kommunikation verwenden:** Geben Sie die Methode zum Auffinden der interaktiven Eingabekommunikation an. Sie können die interaktive Kommunikation verwenden, die an den Workflow gesendet wird, an einem absoluten Pfad verfügbar ist oder an einem Pfad in einer Variablen verfügbar ist. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben. Diese Option ist verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent-Benutzeroberfläche&quot;oder &quot;Interactive Communication Web Kanal-Dokument&quot;auswählen.
+* **Interaktive Kommunikation verwenden:** Geben Sie die Methode zum Auffinden der interaktiven Eingangskommunikation an. Sie können die interaktive Kommunikation verwenden, die an den Workflow gesendet wird, an einem absoluten Pfad verfügbar ist oder an einem Pfad in einer Variablen verfügbar ist. Sie können eine Variable des Typs String verwenden, um den Pfad anzugeben. Diese Option ist verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent-Benutzeroberfläche&quot;oder &quot;Interactive Communication Web Kanal-Dokument&quot;auswählen.
 
 >[!NOTE]
 >
 >Für den Zugriff auf die Benutzeroberfläche von Interactive Communications Agent in AEM Posteingang müssen cm-agent-users und Gruppen von Workflow-Benutzern zugewiesen sein.
 
 * **Adaptives Formular oder interaktiver Kommunikationspfad**: Geben Sie den Pfad des adaptiven Formulars oder der interaktiven Kommunikation an. Sie können das adaptive Formular oder die interaktive Kommunikation verwenden, die an den Workflow gesendet wird, an einem absoluten Pfad verfügbar ist, oder das adaptive Formular aus einem Pfad abrufen, der in einer Variablen des Datentyps Zeichenfolge gespeichert ist.
-* **PDF-Eingabedatei auswählen mit:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Nutzlast ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Dokument-Datentyps verwendet. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
+* **PDF-Eingabedatei auswählen mit:** Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Nutzlast ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Dokument-Datentyps verwendet. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Administrator erstellt den Pfad, bevor er ihn verwendet. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die PDF-Pfad-Komponente zu verwenden.
 * **Für abgeschlossene Aufgaben rendern Sie das adaptive Formular wie folgt**: Wenn eine Aufgabe als abgeschlossen markiert ist, können Sie das adaptive Formular als schreibgeschütztes adaptives Formular oder PDF-Dokument ausgeben. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare zum Rendern des adaptiven Formulars als Datensatzdokument.
 * **Vorausgefüllt:** Die folgenden Felder dienen als Eingaben in die Aufgabe:
 
-   * **Wählen Sie die Eingabedatendatei mit:** Pfad der Eingabedatendatei (.json,). XML-, DOC- oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Nutzlast ist, oder die Datei abrufen, die in einer Variablen des Dokument-, XML- oder JSON-Datentyps gespeichert ist. Beispielsweise enthält die Datei die Daten, die für das Formular über eine AEM Inbox-Anwendung gesendet werden. An example path is [Payload_Directory]/workflow/data.
-   * **Wählen Sie Eingabedateien mit:** Die am Speicherort verfügbaren Anlagen werden an das mit der Aufgabe verknüpfte Formular angehängt. Der Pfad ist immer relativ zur Payload. An example path is [Payload_Directory]/attachments/
-   * **Eingabe-JSON auswählen:** Wählen Sie eine JSON-Eingabedatei unter Verwendung eines Pfads aus, der relativ zur Nutzlast ist oder in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodell gespeichert ist. Diese Option ist verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent-Benutzeroberfläche&quot;oder &quot;Interactive Communication Web Kanal-Dokument&quot;auswählen.
-   * **Wählen Sie einen benutzerdefinierten Prefill-Dienst aus:** Wählen Sie den Vorfülldienst aus, um die Daten abzurufen, und füllen Sie das Dokument Interactive Communication Web Kanal oder die Agent-Benutzeroberfläche vorab aus.
+   * **Wählen Sie die Eingabedatendatei mit:** Pfad der Eingabedatendatei (.json,). XML-, DOC- oder Formulardatenmodell). Sie können die Eingabedatendatei mit einem Pfad abrufen, der relativ zur Nutzlast ist, oder die Datei abrufen, die in einer Variablen des Dokument-, XML- oder JSON-Datentyps gespeichert ist. Beispielsweise enthält die Datei die Daten, die für das Formular über eine AEM Inbox-Anwendung gesendet werden. Ein Beispielpfad ist [Payload_Directory]/workflow/data.
+   * **Wählen Sie die gewünschten Anlagen aus, indem Sie die** am Speicherort verfügbaren Anlagen an das mit der Aufgabe verknüpfte Formular anhängen. Der Pfad ist immer relativ zur Payload. Ein Beispielpfad ist [Payload_Directory]/attachments/
+   * **JSON-Eingabedatei auswählen:** Wählen Sie eine JSON-Eingabedatei unter Verwendung eines Pfads aus, der relativ zur Nutzlast ist oder in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodell gespeichert ist. Diese Option ist verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent-Benutzeroberfläche&quot;oder &quot;Interactive Communication Web Kanal-Dokument&quot;auswählen.
+   * **Wählen Sie einen benutzerdefinierten Vorfülldienst:** Wählen Sie den Vorfülldienst aus, um die Daten abzurufen, und füllen Sie das Dokument Interactive Communication Web Kanal oder die Agent-Benutzeroberfläche vorab aus.
 
-   * **Verwenden Sie den oben ausgewählten Dienst zum Vorausfüllen der interaktiven Kommunikation:** Verwenden Sie diese Option, um den Vorfülldienst der interaktiven Kommunikation zu verwenden, der in der Dropdown-Liste Interaktive Kommunikation verwenden definiert ist.
-   * **Zuordnung von Anforderungsattributen:** Verwenden Sie den Abschnitt &quot;Zuordnung von Anforderungsattributen&quot;, um den [Namen und den Wert des Anforderungsattributs](../../forms/using/work-with-form-data-model.md#bindargument)zu definieren. Rufen Sie die Details aus der Datenquelle basierend auf dem in der Anforderung angegebenen Attributnamen und -wert ab. Sie können einen Wert für das Anforderungsattribut mit einem Literalwert oder einer Variablen des Datentyps String definieren.\
+   * **Verwenden Sie den oben ausgewählten interaktiven Kommunikationsdienst zum Vorausfüllen:** Verwenden Sie diese Option, um den in der Dropdown-Liste Interaktive Kommunikation verwenden definierten Dienst für interaktive Kommunikation zu verwenden.
+   * **Zuordnung von Anforderungsattributen:** Verwenden Sie den Abschnitt &quot;Zuordnung von Anforderungsattributen&quot;, um den  [Namen und den Wert des Anforderungsattributs](../../forms/using/work-with-form-data-model.md#bindargument) zu definieren. Rufen Sie die Details aus der Datenquelle basierend auf dem in der Anforderung angegebenen Attributnamen und -wert ab. Sie können einen Wert für das Anforderungsattribut mit einem Literalwert oder einer Variablen des Datentyps String definieren.\
       Die Zuordnungsoptionen für den Vorfülldienst und das Anforderungsattribut sind nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;oder &quot;Interaktives Kommunikations-Web-Kanal&quot;auswählen.
 
 * **Gesendete Informationen:** Die folgenden Felder dienen als Ausgabespeicherorte für die Aufgabe:
 
-   * **Ausgabedatendatei speichern unter:** Speichern Sie die Datendatei (.json,). XML-, DOC- oder Formulardatenmodell). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Sie können die Ausgabedatendatei unter Verwendung eines Pfads speichern, der relativ zur Nutzlast ist, oder sie in einer Variablen des Dokument-, XML- oder JSON-Datentyps speichern. For example, [Payload_Directory]/Workflow/data, where data is a file.
-   * **Anlagen speichern unter:** Speichern Sie die Formularanhänge in einer Aufgabe. Sie können die Anlagen mit einem Pfad speichern, der relativ zur Nutzlast ist, oder sie in einer Variablen des Dokument-Datentyps speichern.
-   * **Dokument aus Datensatz speichern unter:** Pfad zum Speichern eines Dokuments einer Datensatzdatei. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Dokument Datensatz unter Verwendung eines Pfads speichern, der relativ zur Nutzlast ist, oder es in einer Variablen des Dokument-Datentyps speichern. Wenn Sie die Option **Relativ zur Nutzlast** auswählen, wird das Dokument des Datensatzes nicht generiert, wenn das Pfadfeld leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Adaptives Formular&quot;auswählen.
+   * **Speichern Sie die Ausgabedatendatei mit:** Speichern Sie die Datendatei (.json,). XML-, DOC- oder Formulardatenmodell). Die Datendatei enthält Informationen, die über das zugeordnete Formular übermittelt werden. Sie können die Ausgabedatendatei unter Verwendung eines Pfads speichern, der relativ zur Nutzlast ist, oder sie in einer Variablen des Dokument-, XML- oder JSON-Datentyps speichern. Beispiel: [Payload_Directory]/Workflow/data, wobei data eine Datei ist.
+   * **Anlagen speichern unter:** Speichern Sie die in einer Aufgabe bereitgestellten Formularanlagen. Sie können die Anlagen mit einem Pfad speichern, der relativ zur Nutzlast ist, oder sie in einer Variablen des Dokument-Datentyps speichern.
+   * **Speichern Sie Dokument aus Datensatz mit:** Pfad, um ein Dokument aus Datensatzdatei zu speichern. Beispiel: [Payload_Directory]/DocumentofRecord/credit-card.pdf. Sie können das Dokument Datensatz unter Verwendung eines Pfads speichern, der relativ zur Nutzlast ist, oder es in einer Variablen des Dokument-Datentyps speichern. Wenn Sie die Option **Relativ zur Nutzlast** auswählen, wird das Dokument des Datensatzes nicht generiert, wenn das Pfadfeld leer bleibt. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Adaptives Formular&quot;auswählen.
 
    * **Web-Kanal-Daten speichern unter:** Speichern Sie die Web-Kanal-Datendatei unter einem Pfad, der relativ zur Nutzlast ist, oder speichern Sie sie in einer Variablen des Datentyps Dokument, JSON oder Formulardatenmodell. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;auswählen.
-   * **PDF-Dokument speichern unter:** Speichern Sie das PDF-Dokument unter einem Pfad, der relativ zur Nutzlast ist, oder speichern Sie es in einer Variablen des Dokument-Datentyps. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;auswählen.
-   * **Layoutvorlage speichern unter:** Speichern Sie die Layoutvorlage unter einem Pfad, der relativ zur Nutzlast ist, oder speichern Sie sie in einer Variablen des Dokument-Datentyps. Die [Layoutvorlage](../../forms/using/layout-design-details.md) bezieht sich auf eine XDP-Datei, die Sie mit Forms Designer erstellen. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;auswählen.
+   * **PDF-Dokument speichern unter:Das PDF-Dokument unter einem Pfad, der relativ zur Nutzlast ist,** speichern oder in einer Variablen des Dokument-Datentyps speichern. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;auswählen.
+   * **Speichern Sie die Layoutvorlage mit:** Speichern Sie die Layoutvorlage unter einem Pfad, der relativ zur Nutzlast ist, oder speichern Sie sie in einer Variablen des Dokument-Datentyps. Die [Layoutvorlage](../../forms/using/layout-design-details.md) bezieht sich auf eine XDP-Datei, die Sie mit Forms Designer erstellen. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste &quot;Typ&quot;die Option &quot;Interaktive Kommunikationsagent&quot;auswählen.
 
-* **&quot;Verantwortlicher&quot;> &quot;Optionen zuweisen&quot;:** Geben Sie an, wie die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
+* **&quot;Zuweisung&quot;> &quot;Zuweisungsoptionen&quot;:** Geben Sie an, wie die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
 * **Teilnehmerauswahl:** Die Option ist verfügbar, wenn die Option **Dynamically to a user or group (Dynamisch zu einem Benutzer oder einer Gruppe)** im Feld „Optionen zuweisen“ ausgewählt ist. Sie können ein ECMAScript oder einen Dienst verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie im Abschnitt [Dynamisches Zuweisen eines Workflows zu Benutzern](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 * **Teilnehmer:** Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]****im Feld „Teilnehmerauswahl“ ausgewählt ist.** In diesem Feld können Sie Benutzer oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 
-* **Bevollmächtigter:** Das Feld ist verfügbar, wenn im Feld **[!UICONTROL Teilnehmerauswahl]** der Eintrag com.adobe.fd.workspace.step.service.VariableParticipantChooser **** ausgewählt ist. Mit dem Feld können Sie eine Variable des Datentyps String auswählen, um den Verantwortlichen zu definieren.
+* **Zuweisung:** Das Feld ist verfügbar, wenn  **[!UICONTROL com.adobe.fd.workspace.step.service.]** VariableParticipantChooseris im Feld  **&quot;** Teilnehmerauswahl&quot;ausgewählt ist. Mit dem Feld können Sie eine Variable des Datentyps String auswählen, um den Verantwortlichen zu definieren.
 
 * **Argumente:** Das Feld ist verfügbar, wenn ein anderes als das Skript „RandomParticipantChoose“ im Feld „Teilnehmerauswahl“ ausgewählt wurde. In diesem Feld können Sie eine Liste mit durch Kommas getrennten Argumenten für das im Feld „Teilnehmerauswahl“ ausgewählte Skript angeben.
 
 * **Benutzer oder Gruppe:** Die Aufgabe wurde dem ausgewählten Benutzer oder der Gruppe zugewiesen. Die Option ist verfügbar, wenn die Option **To a specific user or group (Zu einer bestimmten Benutzer bzw. einer bestimmten Gruppe)** im Feld „Optionen zuweisen“ ausgewählt ist. **** Das Feld listet alle Benutzer und Gruppen der Workflow-Benutzergruppe auf.\
-   Das Dropdownmenü **Benutzer oder Gruppe** Liste die Benutzer und Gruppen, auf die der angemeldete Benutzer Zugriff hat. Die Anzeige des Benutzernamens hängt davon ab, ob Sie über Zugriffsberechtigungen für den Knoten **Benutzer** im CRX-Repository für diesen bestimmten Benutzer verfügen.
+   Das Dropdownmenü **Benutzer oder Gruppe** Liste die Benutzer und Gruppen, auf die der angemeldete Benutzer Zugriff hat. Die Anzeige des Benutzernamens hängt davon ab, ob Sie über Zugriffsberechtigungen für den Knoten **users** in crx-repository für diesen bestimmten Benutzer verfügen.
 
 * **Bevollmächtigten per E-Mail benachrichtigen:** Wählen Sie diese Option, um E-Mail-Benachrichtigungen an den Bevollmächtigten zu senden. Diese Benachrichtigungen werden gesendet, wenn eine Aufgabe einem Benutzer zugewiesen wird. Aktivieren Sie die Benachrichtigungen von AEM Web Console, bevor Sie die Option verwenden. Für schrittweise Anweisungen siehe [Konfigurieren von E-Mail-Benachrichtigungen für den Schritt „Aufgabe zuweisen“](../../forms/using/aem-forms-workflow.md)
 
 * **HTML-E-Mail-Vorlage**: Wählen Sie die E-Mail-Vorlage für die Benachrichtigungs-E-Mail. Um eine Vorlage zu bearbeiten, ändern Sie die Datei unter /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt im CRX-Repository.
 * **Delegierung zulassen an:** AEM Inbox bietet dem angemeldeten Benutzer eine Option, den zugewiesenen Workflow an einen anderen Benutzer zu übertragen. Sie dürfen innerhalb derselben Gruppe oder an den Workflow-Benutzer einer anderen Gruppe delegieren. Wenn die Aufgabe einem einzelnen Benutzer zugewiesen ist und die Option **Delegierung an Mitglieder der Bevollmächtigten-Gruppe zulassen** aktiviert ist, kann die Aufgabe nicht an einen anderen Benutzer oder eine andere Gruppe übertragen werden.
-* **Freigabeeinstellungen:** AEM Inbox bietet Optionen zum Freigeben einer einzelnen oder aller Aufgaben im Posteingang für andere Benutzer:
-   * Wenn die Option &quot; **Zulassen, dass ein Verantwortlicher explizit in einem Posteingang** freigegeben wird&quot;aktiviert ist, kann der Benutzer auf die Aufgabe klicken und sie für einen anderen AEM freigeben.
-   * Wenn die Option &quot;Freigeben durch **Posteingang** zulassen&quot;aktiviert ist und ein Benutzer seine Posteingangselemente freigibt oder anderen Benutzern den Zugriff auf seine Posteingangselemente erlaubt, werden nur Aufgaben mit aktivierter Option für andere Benutzer freigegeben.
+* **Freigabeeinstellungen:** AEM InBox stehen Optionen zum Freigeben einer einzelnen oder aller Aufgaben im Posteingang für andere Benutzer zur Verfügung:
+   * Wenn die Option **Den Verantwortlichen die explizite Freigabe im Posteingang zulassen** aktiviert ist, kann der Benutzer auf die Aufgabe klicken und sie für einen anderen AEM freigeben.
+   * Wenn die Option **Den Verantwortlichen die Freigabe über den Posteingang gestatten** aktiviert ist und ein Benutzer seine Posteingangselemente freigibt oder anderen Benutzern den Zugriff auf seine Posteingangselemente erlaubt, werden nur Aufgaben mit der oben genannten Option für andere Benutzer freigegeben.
 
 * **Aktionen > Standardaktionen:** Standardmäßig sind die Aktionen &quot;Senden&quot;, &quot;Speichern&quot;und &quot;Zurücksetzen&quot;verfügbar. Alle Standardaktionen sind standardmäßig aktiviert.
 * **Route-Variable:** Name der Route-Variablen. Die Route-Variable erfasst benutzerdefinierte Aktionen, die ein Benutzer in der AEM Inbox auswählt.
-* **Routen:** Eine Aufgabe kann auf verschiedene Routen verzweigen. Bei Auswahl in AEM Inbox gibt die Route einen Wert zurück, und der Workflow verzweigt basierend auf der ausgewählten Route. Sie können Routen entweder in einer Variablen des Datentyps String oder **Literal** speichern, um Routen manuell hinzuzufügen.
+* **Routen:** Eine Aufgabe kann auf verschiedene Routen verzweigen. Bei Auswahl in AEM Inbox gibt die Route einen Wert zurück, und der Workflow verzweigt basierend auf der ausgewählten Route. Sie können Routen entweder in einer Variablen des Datentyps String speichern oder **Literal** auswählen, um Routen manuell hinzuzufügen.
 
 * **Titel**: Geben Sie den Titel für die Route an. Der Titel wird in der AEM Inbox angezeigt.
 * **Korallen-Symbol:** Geben Sie das HTML-Attribut eines Korallensymbols an. Die Adobe CorelUI-Bibliothek bietet eine Vielzahl von Touch-First-Symbolen. Sie können ein Symbol für die Route auswählen und verwenden. Es wird zusammen mit dem Titel in AEM Inbox angezeigt. Wenn Sie die Routen in einer Variablen speichern, verwenden die Routen ein standardmäßiges &quot;Tags&quot;-Korallensymbol.
 * **Bevollmächtigtem erlauben, Kommentare einzufügen**: Wählen Sie diese Option, um Kommentare für die Aufgabe zu aktivieren. Ein Beauftragter kann die Kommentare innerhalb der AEM Inbox zum Zeitpunkt des Aufgabenversands hinzufügen.
-* **Kommentar in Variable speichern:** Speichern Sie den Kommentar in einer Variablen des Datentyps String. Diese Option wird nur angezeigt, wenn Sie das Kontrollkästchen **Hinzufügen von Kommentaren** durch den Verantwortlichen zulassen aktivieren.
+* **Kommentar in Variable speichern:** Speichern Sie den Kommentar in einer Variablen des Datentyps String. Diese Option wird nur angezeigt, wenn Sie das Kontrollkästchen **Dem Verantwortlichen das Hinzufügen eines Kommentars** aktivieren.
 
 * **Bevollmächtigtem erlauben, Anlage(n) der Aufgabe hinzuzufügen**: Wählen Sie diese Option, um Anlagen für die Aufgabe zu aktivieren. Ein Beauftragter kann die Anlagen in der AEM Inbox zum Zeitpunkt der Aufgabensendung hinzufügen.
-* **Speichern Sie Aufgaben-Anhänge mit**: Geben Sie den Speicherort des Anlagenordners an. Sie können Ausgabedateianlagen mit einem Pfad relativ zur Nutzlast oder in einer Variablen des Dokument-Datentyps speichern. Diese Option wird nur angezeigt, wenn Sie das Kontrollkästchen &quot; **Den Verantwortlichen zum Hinzufügen von Anlagen zur Aufgabe** zulassen&quot;aktivieren und in der Dropdown-Liste &quot; **Typ**&quot;auf der Registerkarte &quot;Formular/DokumentLegt fest&quot;die Option &quot; **Adaptives Formular**&quot;, &quot; **Schreibgeschütztes adaptives Formular** &quot;oder &quot; **Nicht-interaktives PDF-Dokument** **** &quot;auswählen.
+* **Speichern Sie Aufgaben-Anhänge mit**: Geben Sie den Speicherort des Anlagenordners an. Sie können Ausgabedateianlagen mit einem Pfad relativ zur Nutzlast oder in einer Variablen des Dokument-Datentyps speichern. Diese Option wird nur angezeigt, wenn Sie das Kontrollkästchen **Den Verantwortlichen das Hinzufügen von Anlagen zur Aufgabe** aktivieren und **Adaptives Formular**, **Schreibgeschütztes adaptives Formular** oder **Nicht interaktives PDF-Dokument** aus der Dropdownliste **Typ** auswählen Liste auf der Registerkarte **Formular/Dokument**.
 
 >[!NOTE]
 >
@@ -130,13 +130,13 @@ Der E-Mail-Schritt verwendet den Day CQ Mail-Dienst Bevor Sie den E-Mail-Schritt
 
 **E-Mail-Betreff:** Betreff kann aus Workflow-Metadaten abgerufen, manuell angegeben oder aus dem in einer Variablen gespeicherten Wert abgerufen werden. Wählen Sie eine der folgenden Optionen aus:
 
-* **Literal -** Geben Sie manuell ein Thema an.
-* **Abrufen von Workflow-Metadaten** - Abrufen des Betreffs von einer Metadateneigenschaft.
+* **Literal -** Geben Sie ein Thema manuell an.
+* **Abrufen von Workflow-Metadaten**  - Abrufen des Betreffs von einer Metadateneigenschaft.
 * **Variable** : Rufen Sie den Betreff aus dem Wert ab, der in einer Variablen des Zeichenfolgen-Datentyps gespeichert ist.
 
 **HTML-E-Mail-Vorlage**: HTML-Vorlage für die E-Mail. Sie können diese Variablen in einer E-Mail-Vorlage verwenden. Der E-Mail-Schritt extrahiert und zeigt alle Variablen an, die in einer Vorlage für Eingaben enthalten sind. 
 
-**E-Mail-Vorlagenmetadaten:** Der Wert der E-Mail-Vorlagenvariablen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor oder dem Veröffentlichungsserver, Bild oder eine Workflow-Metadateneigenschaft sein.
+**Metadaten für E-Mail-Vorlagen: Der** Wert der Variablen für E-Mail-Vorlagen kann ein vom Benutzer angegebener Wert, der Pfad eines Assets auf dem Autor oder dem Veröffentlichungsserver, Bild oder eine Eigenschaft für Workflow-Metadaten sein.
 
 * **Literal:** Verwenden Sie die Option, wenn Sie den genauen, zu spezifizierenden Wert kennen. Beispiel: [example@example.com](mailto:example@example.com).
 
@@ -144,13 +144,13 @@ Der E-Mail-Schritt verwendet den Day CQ Mail-Dienst Bevor Sie den E-Mail-Schritt
 * **Asset-URL:** Verwenden Sie die Option, um einen Weblink einer interaktiven Kommunikation mit der E-Mail einzubetten. Wählen Sie nach Auswahl der Option die einzubettende interaktive Kommunikation aus. Das Asset kann sich auf dem Autoren- oder dem Veröffentlichungsserver befinden.
 * **Bild:** Verwenden Sie die Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;*&quot;/>) verfügbar, die in der E-Mail-Vorlage verfügbar sind.
 
-**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die Option &quot; **Literal** &quot;, um manuell eine E-Mail-Adresse anzugeben, oder wählen Sie die Option &quot; **Abrufen von Workflow-Metadaten** &quot;, um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben. Wählen Sie die Option &quot; **Variable** &quot;aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Zeichenfolgen-Datentyps gespeichert ist.
+**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die  **** Literaloption aus, um manuell eine E-Mail-Adresse anzugeben, oder wählen Sie die Option &quot; **Abruf aus Workflow-** Metadaten&quot;, um die E-Mail-Adresse aus einer Metadateneigenschaft abzurufen. Sie können auch eine Liste von Metadaten-Eigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben. Wählen Sie die Option **Variable** aus, um die E-Mail-Adresse aus dem Wert abzurufen, der in einer Variablen des Zeichenfolgen-Datentyps gespeichert ist.
 
-**Dateianlage:** Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. An example path is [Payload_Directory]/attachments/.
+**Dateianlage:** Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/.
 
-Wählen Sie die Option &quot; **Variable** &quot;aus, um die in einer Variablen des Dokument-, XML- oder JSON-Datentyps gespeicherte Dateianlage abzurufen.
+Wählen Sie die Option **Variable**, um die in einer Variablen des Dokuments-, XML- oder JSON-Datentyps gespeicherte Dateianlage abzurufen.
 
-**Dateiname:** Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den ursprünglichen Dateinamen der Anlage in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft oder einer Variablen abgerufen werden. Verwenden Sie die Option **Literal**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option &quot; **Variable** &quot;, um den Dateinamen aus dem Wert abzurufen, der in einer Variablen des Zeichenfolgen-Datentyps gespeichert ist. Verwenden Sie die Option **Von Workflow-Metadaten abrufen**, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird.
+**Dateiname:** Name der E-Mail-Anhangsdatei. Der E-Mail-Schritt ändert den ursprünglichen Dateinamen der Anlage in den angegebenen Dateinamen. Der Name kann manuell angegeben oder aus einer Workflow-Metadateneigenschaft oder einer Variablen abgerufen werden. Verwenden Sie die Option **Literal**, wenn Sie den genauen zu spezifizierenden Wert kennen. Verwenden Sie die Option **Variable**, um den Dateinamen aus dem Wert abzurufen, der in einer Variablen des Zeichenfolgen-Datentyps gespeichert ist. Verwenden Sie die Option **Von Workflow-Metadaten abrufen**, wenn der zu verwendende Wert in einer Workflow-Metadaten-Eigenschaft gespeichert wird.
 
 ## Schritt „Generieren von Datensatzdokument“{#generate-document-of-record-step}
 
@@ -158,20 +158,20 @@ Wenn ein Formular ausgefüllt oder eingereicht wird, können Sie das Formular in
 
 Der Schritt „Nachweisdokument“ hat die folgenden Eigenschaften:
 
-**Adaptives Formular** verwenden: Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Sie können das adaptive Formular verwenden, das an den Workflow gesendet wird, in einem absoluten Pfad verfügbar ist oder in einem Pfad in einer Variablen verfügbar ist. Sie können eine Variable des Datentyps String verwenden, um den Pfad in der Variablen **Auswählen zum Auflösen** des Felds anzugeben.\
+**Adaptives Formular** verwenden: Geben Sie die Methode zum Suchen des adaptiven Eingabefelds an. Sie können das adaptive Formular verwenden, das an den Workflow gesendet wird, in einem absoluten Pfad verfügbar ist oder in einem Pfad in einer Variablen verfügbar ist. Sie können eine Variable des Datentyps String verwenden, um den Pfad im Feld **Variable auswählen anzugeben, um** aufzulösen.\
 Sie können mehrere adaptive Formulare mit einem Workflow verknüpfen. Daher können Sie mithilfe der verfügbaren Eingabemethoden ein adaptives Formular zur Laufzeit angeben.
 
-**Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie die Option **Verfügbar unter einem absoluten Pfad** im Feld Adaptives Formular **verwenden** auswählen.
+**Adaptiver Formularpfad**: Geben Sie den Pfad des adaptiven Formulars an. Das Feld ist verfügbar, wenn Sie die Option **Verfügbar unter einem absoluten Pfad** im Feld **Adaptives Formular verwenden** auswählen.
 
 **Wählen Sie Eingabedaten mit:** Pfad der Eingabedaten für das adaptive Formular. Sie können die Daten an einem Speicherort relativ zur Nutzlast speichern, einen absoluten Pfad der Daten angeben oder Daten abrufen, die in einer Variablen des Dokument-, JSON- oder XML-Datentyps gespeichert sind. Die Eingabedaten werden mit dem adaptiven Formular zusammengeführt, um ein Datensatzdokument zu erstellen.
 
-**Wählen Sie den Pfad für die Eingabe-Anlage aus:** Pfad der Anlagen. Diese Anhänge sind im Datensatzdokument enthalten. Sie können die Anlagen an einem Speicherort relativ zur Nutzlast belassen, einen absoluten Pfad der Anlagen angeben oder Anlagen abrufen, die in einer Variablen des Dokument-Datentyps gespeichert sind.
+**Wählen Sie den Pfad der Anlage &quot;Eingabe&quot;aus, indem Sie:** Pfad der Anlagen verwenden. Diese Anhänge sind im Datensatzdokument enthalten. Sie können die Anlagen an einem Speicherort relativ zur Nutzlast belassen, einen absoluten Pfad der Anlagen angeben oder Anlagen abrufen, die in einer Variablen des Dokument-Datentyps gespeichert sind.
 
 Wenn Sie den Pfad eines Ordners angeben, z. B. Anlagen, werden alle Dateien, die direkt im Ordner verfügbar sind, an das Datensatzdokument angehängt. Wenn Dateien in den Ordnern verfügbar sind, die im angegebenen Pfad für den Anhang direkt verfügbar sind, werden die Dateien im Datensatzdokument als Anlagen aufgenommen. Wenn sich Ordner in direkt verfügbaren Ordnern befinden, werden diese übersprungen.
 
-**Generiertes Dokument aus Datensatz speichern unter Verwendung der folgenden Optionen:** Geben Sie den Speicherort an, an dem ein Dokument einer Datensatzdatei gespeichert werden soll. Sie können den Payload-Ordner überschreiben, Dokument des Datensatzes an einem Speicherort im Payload-Ordner ablegen oder das Dokument des Datensatzes in einer Variablen des Dokument-Datentyps speichern.
+**Generiertes Dokument aus Datensatz speichern mit folgenden Optionen:** Geben Sie den Speicherort an, an dem ein Dokument Datensatzdatei gespeichert werden soll. Sie können den Payload-Ordner überschreiben, Dokument des Datensatzes an einem Speicherort im Payload-Ordner ablegen oder das Dokument des Datensatzes in einer Variablen des Dokument-Datentyps speichern.
 
-**Gebietsschema**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie &quot; **Literal** &quot;, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie &quot; **Variable** &quot;, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Datentyps Zeichenfolge gespeichert ist. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
+**Gebietsschema**: Geben Sie die Sprache des Datensatzdokuments an. Wählen Sie **Literal** aus, um das Gebietsschema aus einer Dropdown-Liste auszuwählen, oder wählen Sie **Variable**, um das Gebietsschema aus dem Wert abzurufen, der in einer Variablen des Zeichenfolgendatentyps gespeichert ist. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
 ## Schritt „Formulardatenmodelldienst aufrufen“{#invoke-form-data-model-service-step}
 
@@ -246,26 +246,26 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
    * **JSON Dot Notation:** Verwenden Sie die Option, wenn der zu verwendende Wert in einer JSON-Datei enthalten ist. Beispiel: Insurance.customerDetails.emailAddress. Die Option &quot;JSON-Punktnotation&quot;ist nur verfügbar, wenn die Option &quot;Eingabefelder aus Eingabe-JSON zuordnen&quot;ausgewählt ist.
    * **Zuordnen von Eingabefelder aus der Eingabe JSON:** Geben Sie den Pfad einer JSON-Datei an, um den Eingabewert einiger Service-Parameter aus der JSON-Datei abzurufen. Der Pfad der JSON-Datei kann relativ zur Nutzlast, zu einem absoluten Pfad, sein oder Sie können ein JSON-Eingabedatum mit einer JSON- oder dem Formulardatenmodelltyp auswählen.
 
-* **Eingabe für Dienste > Geben Sie Eingabedaten mithilfe einer Variablen oder einer JSON-Datei an:** Wählen Sie die Option, um Werte für alle Argumente aus einer JSON-Datei abzurufen, die unter einem absoluten Pfad, einem Pfad relativ zur Nutzlast oder in einer Variablen gespeichert wurde.
+* **Input for services > Provide input data using variable or a JSON file:** Wählen Sie die Option, um Werte für alle Argumente aus einer JSON-Datei abzurufen, die unter einem absoluten Pfad, einem Pfad relativ zur Payload oder in einer Variablen gespeichert wurde.
 * **Wählen Sie Input JSON-Dokument mit**: Die JSON-Datei, die Werte für alle Dienstargumente enthält. Der Pfad der JSON-Datei kann **relativ zur Payload** oder einem **absoluten Pfad sein.** Sie können das JSON-Eingabedatenmodell auch mit einer Variablen des JSON- oder Formulardatenmodells abrufen.
 
 * **JSON Dot Notation:** Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Service-Parameter zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Parameter zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie ein JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie insurance.customerDetails an, um alle Details eines Kunden als Eingabe für den Dienst anzugeben.
-* **Output of service > Map and write output values to variable or metadata:** Wählen Sie die Option zum Speichern der Ausgabewerte als Eigenschaften des Metadaten-Knotens der Workflow-Instanz im CRX-Repository. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu. Gleichermaßen können Sie die Ausgabe in einer Variablen des Typs &quot;Lang&quot;speichern. Wenn Sie eine Eigenschaft für die Option &quot; **[!UICONTROL Dienstausgabeattribut&quot;auswählen, die zugeordnet]** werden soll, werden nur Variablen, die Daten der ausgewählten Eigenschaft speichern können, für die Option &quot;Ausgabe **[!UICONTROL speichern unter]**&quot;ausgefüllt.
+* **Output of service > Map and write output values to variable or metadata:** Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Dienstausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Output-Dienst zurückgegebene Telefonnummer mit der Eigenschaft phone_number den Workflow-Metadaten zu. Gleichermaßen können Sie die Ausgabe in einer Variablen des Typs &quot;Lang&quot;speichern. Wenn Sie eine Eigenschaft für das Ausgabeattribut **[!UICONTROL Dienst auswählen, das zugeordnet werden soll]**, werden für die Option **[!UICONTROL Ausgabe speichern unter]** nur Variablen gefüllt, die Daten der ausgewählten Eigenschaft speichern können.
 
-* **Output of service > Save output to variable or a JSON file:** Wählen Sie die Option, um die Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, in einem Pfad relativ zur Nutzlast oder in einer Variablen zu speichern.
-* **Output JSON-Dokument mit den folgenden Optionen speichern:** Speichern Sie die JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen des JSON- oder Formulardatenmodells-Datentyps speichern.
+* **Ausgabe des Dienstes > Ausgabe in Variable oder JSON-Datei speichern:** Wählen Sie die Option zum Speichern der Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, in einem Pfad relativ zur Payload oder in einer Variablen .
+* **Speichern Sie Output JSON-Dokument mit den folgenden Optionen:** Speichern Sie die JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen des JSON- oder Formulardatenmodells-Datentyps speichern.
 
 ## Schritt „Dokument signieren“{#sign-document-step}
 
 Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren von Dokumenten verwenden. Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 
-* **Name der Vereinbarung:** Geben Sie den Titel der Vereinbarung an. Der Name der Vereinbarung wird Teil des Betreffs und des Nachrichtentextes der E-Mail, die an die Unterzeichner gesendet wird. Sie können den Namen entweder in einer Variablen des Datentyps String speichern oder **Literal** wählen, um den Namen manuell hinzuzufügen.
+* **Name der Vereinbarung:** Geben Sie den Titel der Vereinbarung an. Der Name der Vereinbarung wird Teil des Betreffs und des Nachrichtentextes der E-Mail, die an die Unterzeichner gesendet wird. Sie können den Namen entweder in einer Variablen des Datentyps String speichern oder **Literal** auswählen, um den Namen manuell hinzuzufügen.
 
-* **Gebietsschema:** Geben Sie die Sprache für die E-Mail- und Bestätigungsoptionen an. Sie können das Gebietsschema entweder in einer Variablen des Datentyps String speichern oder **Literal** wählen, um das Gebietsschema aus der Liste der verfügbaren Optionen auszuwählen. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
+* **Gebietsschema:** Geben Sie die Sprache für die E-Mail- und Bestätigungsoptionen an. Sie können das Gebietsschema entweder in einer Variablen des Datentyps String speichern oder **Literal** auswählen, um das Gebietsschema aus der Liste der verfügbaren Optionen auszuwählen. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
 * **Cloud-Konfiguration für Adobe Sign**: Wählen Sie eine Adobe Sign Cloud-Konfiguration. Wenn Sie Adobe Sign für AEM Forms nicht konfiguriert haben, lesen Sie den Abschnitt [Adobe Sign in AEM Forms integrieren](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
-* **Wählen Sie Dokument aus, mit dem signiert werden soll:** Sie können ein Dokument an einem Speicherort im Verhältnis zur Nutzlast auswählen, Nutzlast als Dokument verwenden, einen absoluten Pfad des Dokuments angeben oder das Dokument abrufen, das in einer Variablen des Dokument-Datentyps gespeichert ist.
+* **Wählen Sie das zu unterzeichnende Dokument aus:** Sie können ein Dokument an einem Speicherort im Verhältnis zur Nutzlast auswählen, Nutzlast als Dokument verwenden, einen absoluten Pfad des Dokuments angeben oder das Dokument abrufen, das in einer Variablen des Dokument-Datentyps gespeichert ist.
 * **Tage bis Abgabetermin:** Ein Dokument wird als „fällig“ (Abgabetermin überschritten) gekennzeichnet, nachdem für die im Feld **Tage bis Abgabetermin** angegebene Anzahl von Tagen keine Aktivität für die Aufgabe ermittelt wurde. Die Anzahl der Tage wird gezählt, nachdem das Dokument einem Benutzer zur Unterzeichnung zugewiesen wurde.
 * **Häufigkeit der E-Mail-Erinnerung:** Sie können eine Erinnerungs-E-Mail im täglichen oder wöchentlichen Intervall senden. Die Woche wird ab dem Tag gezählt, an dem das Dokument einem Benutzer zum Signieren zugewiesen wurde.
 * **Signaturvorgang:** Sie können ein Dokument in einer sequenziellen oder parallelen Reihenfolge signieren. Bei sequenzieller Anordnung erhält jeder Unterzeichner das Formular in Folge. Nachdem der erste Unterzeichner das Dokument signiert hat, wird das Formular an den nächsten Unterzeichner gesendet und so weiter. Bei paralleler Anordnung können mehrere Unterzeichner ein Formular gleichzeitig signieren.
@@ -273,15 +273,15 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 * **Workflow-Phase:** Ein Workflow kann mehrere Phasen enthalten. Diese Phasen werden in der AEM Inbox angezeigt. Sie können diese Phasen in den Eigenschaften des Modells definieren (Sidekick > Seite> Seiteneigenschaften > Phasen).
 * **Unterzeichner wählen:** Geben Sie die Methode zum Auswählen von Unterzeichnern für das Dokument an. Sie können den Workflow einem Benutzer oder einer Gruppe dynamisch zuweisen oder manuell Details einem Unterzeichner hinzufügen.
 * **Skript oder Dienst zur Auswahl von Unterzeichnern:** Die Option ist nur verfügbar, wenn die Option „Dynamisch“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Sie können ein ECMAScript oder einen Dienst angeben, um Unterzeichner und Überprüfungsoptionen für ein Dokument auszuwählen.
-* **Unterzeichnerdetails:** Die Option ist nur verfügbar, wenn die Option „Manuell“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Bestätigungsmechanismus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist. Sie können eine Variable des Datentyps String verwenden, um Werte für die Felder **[!UICONTROL E-Mail]**, **[!UICONTROL Ländercode]** und **[!UICONTROL Telefonnummer]** zu definieren. Die **[!UICONTROL Felder &quot;Ländercode]** &quot;und &quot; **[!UICONTROL Telefonnummer]** &quot;werden nur angezeigt, wenn Sie in der Dropdown-Liste &quot;Überprüfung **[!UICONTROL mit]** zwei Schritten&quot;die Option &quot; **[!UICONTROL Telefonbestätigung]** &quot;auswählen.
+* **Unterzeichnerdetails:** Die Option ist nur verfügbar, wenn die Option „Manuell“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Bestätigungsmechanismus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist. Sie können eine Variable des Datentyps String verwenden, um Werte für die Felder **[!UICONTROL E-Mail]**, **[!UICONTROL Ländercode]** und **[!UICONTROL Telefonnummer]** zu definieren. Die Felder **[!UICONTROL Ländercode]** und **[!UICONTROL Telefonnummer]** werden nur angezeigt, wenn Sie **[!UICONTROL Telefonbestätigung]** aus der Dropdown-Liste **[!UICONTROL 2-stufige Überprüfung]** auswählen.
 * **Statusvariable:** Ein Adobe Sign-aktiviertes Dokument speichert den Signaturstatus des Dokuments in einer Variablen des Datentyps String. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData enthält den Status einer Variablen verfügbar.
-* **Unterschriebenes Dokument mit den folgenden Optionen speichern:** Geben Sie den Speicherort an, an dem die signierten Dokumente aufbewahrt werden sollen. Sie können die Payload-Datei überschreiben, das signierte Dokument an einem Speicherort im Payload-Ordner ablegen oder das signierte Dokument in einer Variablen des Dokuments speichern.
+* **Unterschriebenes Dokument mit den folgenden Optionen speichern:** Geben Sie den Speicherort an, an dem unterschriebene Dokumente aufbewahrt werden sollen. Sie können die Payload-Datei überschreiben, das signierte Dokument an einem Speicherort im Payload-Ordner ablegen oder das signierte Dokument in einer Variablen des Dokuments speichern.
 
 ## Schritt „Document Services“{#document-services-steps}
 
 Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. AEM Forms stellt für jeden Dokument-Dienst einen AEM Workflow-Schritt bereit.
 
-Ähnlich wie bei anderen AEM Forms-Arbeitsablaufschritten wie &quot;Aufgabe zuweisen&quot;, &quot;E-Mail senden&quot;und &quot;Dokument unterschreiben&quot;können Sie Variablen in allen AEM Dokument Services-Schritten verwenden. Weitere Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM Workflows](../../forms/using/variable-in-aem-workflows.md).
+Ähnlich wie bei anderen AEM Forms-Arbeitsablaufschritten wie &quot;Aufgabe zuweisen&quot;, &quot;E-Mail senden&quot;und &quot;Dokument unterschreiben&quot;können Sie Variablen in allen AEM Dokument Services-Schritten verwenden. Weitere Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM](../../forms/using/variable-in-aem-workflows.md).
 
 ### Schritt „Dokumentzeitstempel einfügen“{#apply-document-time-stamp-step}
 
@@ -294,7 +294,7 @@ Konvertiert ein PDF-Dokument in eine Liste von Bildern. Unterstützte Bildformat
 * Eine mehrseitige TIFF-Datei wird generiert.
 * Einige Anmerkungen sind nicht in TIFF-Bildern enthalten. Anmerkungen, die Acrobat zur Erstellung ihrer Darstellung benötigen, sind nicht enthalten.
 
-### Schritt „Nach PDF/A konvertieren“ {#convert-to-pdf-a-step}
+### Schritt „Nach PDF/A konvertieren“  {#convert-to-pdf-a-step}
 
 Konvertiert ein PDF-Dokument mit den verfügbaren Optionen in das PDF/A-Format. Die PDF/A-Version des Portable Document Format (PDF) ist auf die Archivierung und Langzeitarchivierung von Dokumenten spezialisiert. 
 
@@ -302,7 +302,7 @@ Konvertiert ein PDF-Dokument mit den verfügbaren Optionen in das PDF/A-Format. 
 
 Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScript können Sie für den Konvertierungsvorgang das Quelldokument und die PostScript-Ebene (2 oder 3) angeben. Das PDF-Dokument, das in eine PostScript-Datei konvertiert wird, muss nicht interaktiv sein.
 
-### Schritt „PDF vom angegebenen Typ erstellen“ {#create-pdf-from-specified-type-step}
+### Schritt „PDF vom angegebenen Typ erstellen“  {#create-pdf-from-specified-type-step}
 
 Generiert ein PDF-Dokument aus einer Eingabedatei. Das Dokument für die Eingabe kann relativ zur Nutzlast sein, einen absoluten Pfad haben, selbst Nutzlast sein oder in einer Variablen des Dokument-Datentyps gespeichert werden.
 
@@ -310,15 +310,15 @@ Generiert ein PDF-Dokument aus einer Eingabedatei. Das Dokument für die Eingabe
 
 Erstellt ein PDF-Dokument anhand der bereitgestellten URL-, HTML- und ZIP-Datei.
 
-### Schritt „Daten exportieren“ {#export-data-step}
+### Schritt „Daten exportieren“  {#export-data-step}
 
 Exportiert Daten aus einem PDF-Formular oder aus einer XDP-Datei Sie müssen den Dateipfad des Eingabedokuments und das Exportdatenformat eingeben. Die Optionen für das Exportdatenformat sind Auto, XDP und XmlData.
 
-### Schritt „PDF in den angegebenen Format exportieren“ {#export-pdf-to-specified-type-step}
+### Schritt „PDF in den angegebenen Format exportieren“  {#export-pdf-to-specified-type-step}
 
 Konvertiert ein PDF-Dokument in ein ausgewähltes Format.
 
-### Schritt „Nicht interaktive PDF-Dateien generieren“ {#generatenoninteractive}
+### Schritt „Nicht interaktive PDF-Dateien generieren“  {#generatenoninteractive}
 
 Generieren Sie eine nicht interaktive PDF-Datei. Es bietet verschiedene Anpassungsoptionen.
 
@@ -330,7 +330,7 @@ Generieren Sie eine nicht interaktive PDF-Datei. Es bietet verschiedene Anpassun
 
 Führt Formulardaten in einem PDF-Formular zusammen. Sie können Formulardaten in ein PDF-Formular importieren.
 
-### Schritt „DDX aufrufen“ {#invokeddx}
+### Schritt „DDX aufrufen“  {#invokeddx}
 
 Führt die DDX-Datei in der angegebenen Zuordnung von Eingabedokumenten aus und gibt die veränderten PDF-Dokumente zurück.
 
@@ -352,7 +352,7 @@ Die Optimierungseinstellungen geben an, wie Dateien optimiert werden. Hier sind 
 * Entfernen von eingebetteten Schriftarten
 * Festlegen von Transparenzwerten
 
-### Schritt „PDF-Formular ausgeben“ {#renderpdf}
+### Schritt „PDF-Formular ausgeben“  {#renderpdf}
 
 Rendert ein Formular, das in Form Designer (XDP) erstellt wurde, in ein PDF-Formular.
 
@@ -371,7 +371,7 @@ Senden Sie ein Dokument direkt an einen Drucker. Der Dienst unterstützt die fol
 * **Drucker mit direktem Zugriff**: Ein Drucker, der auf demselben Computer installiert ist, wird als Drucker mit direktem Zugriff und der Computer als Druckerhost bezeichnet. Dieser Druckertyp kann ein lokaler Drucker sein, der direkt an den Computer angeschlossen ist.
 * **Drucker mit indirektem Zugriff**: Der Drucker, der auf einem Druckserver installiert ist, steht für den Zugriff von anderen Computern zur Verfügung. Es stehen Technologien wie das Common UNIX® Printing System (CUPS) und das LDP-Protokoll (Line Printer Daemon) zur Verfügung, um eine Verbindung zu einem Netzwerkdrucker herzustellen. Um auf einen Drucker mit indirektem Zugriff zuzugreifen, geben Sie die IP- oder Hostnamen des Druckservers an. Bei Verwendung dieses Mechanismus können Sie ein Dokument an einen LPD-URI senden, wenn im Netzwerk ein LP-Daemon ausgeführt wird. Mit dem Mechanismus können Sie das Dokument zu jedem Drucker weiterleiten, der mit dem Netzwerk verbunden ist, in dem ein LP-Daemon ausgeführt wird.
 
-### Druckten Ausgabeschritt generieren {#generatePrintedOutput}
+### Druckten Ausgabeschritt {#generatePrintedOutput} generieren
 
 Der Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe, sofern ein Formularentwurf und eine Datendatei vorhanden sind. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die durch diesen Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einer Anwendung verwenden möchten. Wenn sich Ihre Formularentwürfe oder Formularentwürfe im Netzwerk, im lokalen Dateisystem oder im HTTP-Speicherort befinden, verwenden Sie den Vorgang generatePrintedOutput.
 
@@ -418,15 +418,13 @@ Der Schritt &quot;Drucken generieren&quot;verfügt über die folgenden Eigenscha
 * **[!UICONTROL Wählen Sie die XCI-Datei mit]**: XCI-Dateien werden verwendet, um Schriftarten und andere Eigenschaften zu beschreiben, die für Formularelemente verwendet werden. Sie können eine XCI-Datei relativ zur Nutzlast an einem absoluten Pfad oder mithilfe einer Variablen des Dokument-Datentyps belassen.
 
 * **[!UICONTROL Gebietsschema]**: Gibt die Sprache an, in der das PDF-Dokument generiert wird. Wenn Sie einen Literalwert angeben, wählen Sie eine Sprache aus der Liste oder einen der folgenden Werte:
-   * **So verwenden Sie den Serverstandard**:
-(Standard) Verwenden Sie die auf dem AEM Forms-Server konfigurierte Spracheinstellung. Die Spracheinstellung wird mithilfe von Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](http://www.adobe.com/go/learn_aemforms_designer_65_de).)
+   * **So verwenden Sie den Serverstandard**: (Standard) Verwenden Sie die auf dem AEM Forms-Server konfigurierte Spracheinstellung. Die Spracheinstellung wird mithilfe von Administration Console konfiguriert. (Weitere Informationen finden Sie in der [Designer-Hilfe](http://www.adobe.com/go/learn_aemforms_designer_65_de).)
 
-   * **So verwenden Sie einen benutzerspezifischen Wert**:
-Geben Sie den Gebietsschema-Code in das Feld &quot;Literal&quot;ein oder wählen Sie eine Zeichenfolgenvariable mit dem Gebietsschema-Code. Eine vollständige Liste der unterstützten Gebietsschemas finden Sie unter http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+   * **So verwenden Sie einen benutzerspezifischen Wert**: Geben Sie den Gebietsschema-Code in das Feld &quot;Literal&quot;ein oder wählen Sie eine Zeichenfolgenvariable mit dem Gebietsschema-Code. Eine vollständige Liste der unterstützten Gebietsschemas finden Sie unter http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
-* **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Exemplare angibt, die für die Ausgabe generiert werden sollen. Der Standardwert ist 1.         
+* **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Exemplare angibt, die für die Ausgabe generiert werden sollen. Der Standardwert ist 1.
 
-* **[!UICONTROL Duplexdruck]**:  Ein Seitenumbruchwert, der angibt, ob der zweiseitige oder einseitige Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
+* **[!UICONTROL Duplexdruck]**: Ein Seitenumbruchwert, der angibt, ob der zweiseitige oder einseitige Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
    * **[!UICONTROL Duplex, lange Kante]**: Verwenden Sie den zweiseitigen Druck und den zweiseitigen Druck unter Verwendung von Seitenumbrüchen.
    * **[!UICONTROL Duplex Kurze Kante]**: Verwenden Sie den zweiseitigen Druck und den zweiseitigen Druck mithilfe der kurzen Seitenumbrüche.
    * **[!UICONTROL Simplex]**: Verwenden Sie den einseitigen Druck.
