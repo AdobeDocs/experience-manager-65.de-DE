@@ -28,7 +28,7 @@ We.Gov ist ein vom Staat geleitetes Unternehmen, bei dem sich Adoptiveltern für
 * Department of the Navy
 * Environmental Protection Agency
 
-For more information on the Freedom Of Information Act, see [www.foia.gov](https://www.foia.gov).
+Weitere Informationen zum Gesetz zur Informationsfreiheit finden Sie unter [www.foia.gov](https://www.foia.gov).
 
 Das Szenario schließt folgende Personen ein:
 
@@ -48,9 +48,9 @@ Im Rahmen des Gesetzes über Informationsfreiheit beantragt Sarah eine Kopie der
 
 ## Sarah stellt ihren Antrag auf Informationen gemäß FOIA.{#sarah-starts-her-application-for-information-under-foia}
 
-Sarah clicks **Apply** and in the Freedom of Information Act Request Form page, Sarah enters information including the following:
+Sarah klickt auf **Apply** und auf der Seite &quot;Anforderungsformular für Informationsfreiheit&quot;gibt Sarah Informationen wie die folgenden ein:
 
-* **Agentur:** Sarah gibt die Agentur an, an die der Antrag gerichtet wurde, als &quot;Justizministerium - Amt für Informationspolitik&quot;.
+* **Agentur:** Sarah gibt die Agentur an, an die das Ersuchen gerichtet wurde, als &quot;Justizministerium - Amt für Informationspolitik&quot;.
 
 * **Will Pay Up To** (Zahle bis zu): Sarah gibt an, dass sie bereit ist, bis zu 100 USD für Druck- und Portoausgaben zu zahlen.
 * **Bitte beschreiben Sie die Anforderung im Detail**: Sarah gibt an, dass &quot;für die Steuerjahre 2013 bis 2016 eine Kopie der Fallprotokolle der Administration für Kinder und Familien angefordert werden muss&quot;.
@@ -63,7 +63,7 @@ Sarah kann jederzeit auf „Save“ (Speichern) tippen, um den Entwurf des Formu
 
 >[!NOTE]
 >
->Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarah&#39;s login credentials are `srose/password`.
+>Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarahs Anmeldeangaben sind `srose/password`.
 
 ## John Jacobs erhält und genehmigt den Antrag {#john-jacobs-receives-and-approves-the-application}
 
@@ -75,7 +75,7 @@ Wenn Sarah den FOIA-Antrag ausfüllt und abschickt, wird eine Aufzeichnung davon
 
 ### Sehen Sie selbst{#see-it-yourself-1} 
 
-Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich beim AEM-Posteingang mit &quot;jjacobs/password&quot;als Benutzername/Kennwort für John Jacobs an und sehen Sie sich die FOIA-Anwendung an. For information about using AEM Inbox for forms-centric workflow tasks, see [Manage Forms applications and tasks in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
+Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich beim AEM-Posteingang mit &quot;jjacobs/password&quot;als Benutzername/Kennwort für John Jacobs an und sehen Sie sich die FOIA-Anwendung an. Weitere Informationen zur Verwendung AEM Inbox für formularorientierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben in AEM Inbox](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -101,7 +101,7 @@ Wenn John Jacobs den FOIA-Antrag genehmigt, wird ein PDF-Dokument oder ein Daten
 
 ### Sehen Sie selbst {#see-for-yourself}
 
-Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios beim AEM-Posteingang an und sehen Sie sich die FOIS-Anforderung an.
+Sie können auf den AEM-Posteingang unter https://&lt;***Hostname***:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html zugreifen. Melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios beim AEM-Posteingang an und sehen Sie sich die FOIS-Anforderung an.
 
 Gloria öffnet den Antrag und sieht sich die Details an. Nach Prüfung der Antragsdetails und der Durchführbarkeit der Bereitstellung der erforderlichen Unterlagen genehmigt Gloria den Antrag.
 
