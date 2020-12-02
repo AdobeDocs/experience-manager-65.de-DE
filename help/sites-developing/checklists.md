@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 39%
 
 ---
 
@@ -21,7 +24,7 @@ Die folgende Checkliste zeigt einige der wichtigsten Probleme - für alle Einzel
 
 | Überprüfen Sie Folgendes | Antwort | Aktion | Inhaber | Fällig am |
 |---|---|---|---|---|
-| Wurde ein klarer, regelmäßiger Berichterstattungsmechanismus eingerichtet? |  |  |  |  |
+| Wurde ein klarer, regelmäßiger Berichte eingeführt? |  |  |  |  |
 | Sind (aus dem Testteam) wichtige Akteure an den Statussitzungen beteiligt? |  |  |  |  |
 | Sind die Verantwortlichkeiten für Tests klar definiert (insbesondere für den Kunden)? |  |  |  |  |
 | Verfügt der Kunde über die notwendige Erfahrung, um seine Testverpflichtungen zu erfüllen? |  |  |  |  |
