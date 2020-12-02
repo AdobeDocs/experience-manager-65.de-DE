@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 71%
 
 ---
 
@@ -32,11 +35,11 @@ Die Web-Konsole umfasst eine Reihe von Registerkarten für die Verwaltung der OS
 
 Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Ein Neustart ist nicht erforderlich.
 
-The console can be accessed from `../system/console`; for example:
+Die Konsole kann von `../system/console` aus aufgerufen werden. Beispiel:
 
 `http://localhost:4502/system/console/components`
 
-## Konfiguration{#configuration}
+## Konfiguration {#configuration}
 
 Die Registerkarte **Konfiguration** dient zur Konfiguration der OSGi-Bundles und bildet deshalb den zugrunde liegenden Mechanismus für die Konfiguration der AEM-Systemparameter.
 
@@ -46,7 +49,7 @@ Die Registerkarte **Konfiguration** dient zur Konfiguration der OSGi-Bundles und
 
 Sie können mit einer der beiden folgenden Methoden auf die Registerkarte **Konfiguration** zugreifen:
 
-* Das Dropdownmenü:
+* Das Dropdown-Menü:
 
    **OSGi >**
 
@@ -103,9 +106,9 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 ## Bundles {#bundles}
 
-The **Bundles** tab is the mechanism for installing the OSGi bundles required for AEM. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Die Registerkarte **Pakete** ist der Mechanismus zum Installieren der OSGi-Pakete, die für AEM erforderlich sind. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
-* Das Dropdownmenü:
+* Das Dropdown-Menü:
 
    **OSGi >**
 
@@ -121,7 +124,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Installieren oder Aktualisieren**
 
-   You can **Browse** to find the file containing your bundle and specify whether it should **Start** immediately and at which **Start Level**.
+   Sie können **Browse** suchen, um die Datei mit Ihrem Bundle zu suchen und anzugeben, ob **Beginn** sofort angezeigt werden soll und auf welcher **Beginn-Ebene**.
 
 * **Neu laden**
 
@@ -135,11 +138,11 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Anfang**
 
-   Startet ein Bundle entsprechend der angegebenen Startstufe.
+   Beginn eines Bundles entsprechend der angegebenen Beginn-Ebene.
 
 * **Stopp**
 
-   Stoppt das Bundle.
+   Hält das Bundle an.
 
 * **Deinstallieren**
 
@@ -155,11 +158,11 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 ## Komponenten {#components}
 
-The **Components** tab allows you to Enable and/or Disable the various components. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Auf der Registerkarte **Komponenten** können Sie die verschiedenen Komponenten aktivieren und/oder deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
-* Das Dropdownmenü:
+* Das Dropdown-Menü:
 
-   **Haupt >**
+   **Main >**
 
 * die URL; Beispiel:
 
