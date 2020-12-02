@@ -25,11 +25,11 @@ Erstellen Sie eine Konfiguration für den Microsoft Translator-Cloud-Service, um
 | Eigenschaft | Beschreibung |
 |---|---|
 | Übersetzungsetikett | Der Anzeigename für den Übersetzungsdienst. |
-| Übersetzungszuteilung | (Optional) For user-generated content, the attribution that appears next to translated text, for example `Translations by Microsoft`. |
+| Übersetzungszuteilung | (Optional) Bei benutzergenerierten Inhalten die Zuordnung, die neben dem übersetzten Text angezeigt wird, z. B. `Translations by Microsoft`. |
 | Workspace-ID | (Optional) Die ID Ihrer angepassten Microsoft Translator-Engine, die verwendet werden soll. |
 | Mitgliedschaftsschlüssel | Ihr Mitgliedschaftsschlüssel für Microsoft Translator. |
 
-After you create the configuration, you need to [activate it](/help/sites-administering/tc-msconf.md#activating-the-translator-service-configurations).
+Nachdem Sie die Konfiguration erstellt haben, müssen Sie [sie aktivieren](/help/sites-administering/tc-msconf.md#activating-the-translator-service-configurations).
 
 Beim folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche verwendet, um eine Microsoft Translator-Konfiguration zu erstellen.
 
@@ -57,7 +57,7 @@ Die Konfiguration „Microsoft Translator-Testlizenz – Geometrixx-Outdoors“ 
 
 Diese Microsoft Translator-Konfiguration ist für die Verwendung mit den Inhaltstypen optimiert, die auf der Geometrixx Outdoors-Beispiel-Website vorkommen.
 
-### Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“ {#upgrading-the-microsoft-translator-trial-license-configuration}
+### Durchführen eines Upgrades für die Konfiguration „Microsoft Translator-Testlizenz“  {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link zur Microsoft-Website, über den Sie ein für Produktionssysteme geeignetes Kontoabonnement erhalten können.
 
@@ -78,10 +78,10 @@ Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link
 1. Klicken oder tippen Sie im Microsoft Translator-Bereich auf „Konfigurationen anzeigen“ und dann auf die Konfiguration, die Sie anpassen möchten.
 1. Klicken Sie auf der Seite der Konfiguration auf „Übersetzung anpassen“. Verwenden Sie die Microsoft-Webseite, die geöffnet wird, um Ihren Dienst anzupassen.
 
-## Aktivieren der Übersetzungsdienstkonfigurationen {#activating-the-translator-service-configurations}
+## Aktivieren der Übersetzungsdienstkonfigurationen  {#activating-the-translator-service-configurations}
 
-Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Use the method of [activating a complete section (tree)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) to activate the repository nodes that store the Microsoft Translator or third-party cloud service configurations. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
+Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Verwenden Sie die Methode [Aktivieren eines vollständigen Abschnitts (tree)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree), um die Repository-Knoten zu aktivieren, die die Microsoft Translator- oder Drittanbieter-Cloud-Dienstkonfigurationen speichern. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
 
 * Microsoft Translation Service: /libs/settings/cloudconfigs/translation/msft-translation
-* Third-party Translation: /etc/cloudservices/machine-translation
+* Übersetzung von Drittanbietern: /etc/cloudservices/machine-translation
 
