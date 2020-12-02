@@ -11,6 +11,9 @@ discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 83%
 
 ---
 
@@ -59,7 +62,7 @@ Weitere Informationen über Mobile Form-Profile finden Sie unter [Erstellen eine
 
 Bei jedem „AssignTask“-Vorgang geben Sie einen Wiedergabe- und Sendeprozess für das Formular an. Diese Prozesse werden von den TaskManager-APIs `renderForm` und `submitForm` aufgerufen, um benutzerdefinierte Behandlung zu ermöglichen. Semantik dieser Prozesse für neue HTML-Formulare:
 
-### Wiedergeben eines neuen HTML-Formulars {#render-a-new-html-form}
+### Wiedergeben eines neuen HTML-Formulars  {#render-a-new-html-form}
 
 Der neue Prozess zum Wiedergeben von HTML hat wie jeder Wiedergabeprozess die folgenden E/A-Parameter –
 
@@ -85,13 +88,13 @@ Ausgabe - `runtimeMap`
 
 Ausgabe - `outputDocument`
 
-The process sets the `outputDocument`to the `inputDocument`retrieved from `taskContext`.
+Der Prozess setzt `outputDocument`auf das `inputDocument`aus `taskContext` abgerufene Element.
 
 ## Standardmäßige Wiedergabe- oder Sendeprozesse und Aktionsprofile {#default-render-or-submit-processes-and-action-profiles}
 
 Die standardmäßigen Wiedergabe- und Sendeprozesse bieten Unterstützung für die Wiedergabe von PDF-Dateien auf einem Desktop und von HTML auf mobilen Geräten (iPad).
 
-### Standardwiedergabeformular {#default-render-form}
+### Standardwiedergabeformular  {#default-render-form}
 
 Dieser Prozess gibt ein XDP-Formular nahtlos auf mehreren Plattformen wieder. Der Prozess ruft den Benutzer-Agenten von `taskContext` ab und verwendet die Daten, um den Prozess zur Wiedergabe von entweder HTML oder PDF aufzurufen.
 
@@ -108,21 +111,21 @@ Dieser Prozess sendet ein XDP-Formular nahtlos auf mehreren Plattformen. Er ruft
 Browser nehmen allmählich die Unterstützung für NPAPI-basierte Plug-ins zurück. Das betrifft auch Zusatzmodule für Adobe Acrobat und Adobe Reader. Sie können die Wiedergabe mobiler Formulare von PDF in HTML folgendermaßen ändern:
 
 1. Melden Sie sich bei Workbench mit gültigen Benutzerdaten an.
-1. Select **File** > **Get Applications**.
+1. Wählen Sie **Datei** > **Anwendungen abrufen**.
 
    Das Dialogfeld „Anwendungen abrufen“ wird angezeigt.
 
-1. Select the applications for which you want to change the mobile form rendering and click **OK**.
+1. Wählen Sie die Anwendungen aus, für die Sie die Wiedergabe des mobilen Formulars ändern möchten, und klicken Sie auf **OK**.
 1. Öffnen Sie den Prozess, für den Sie die Wiedergabe ändern möchten.
 1. Öffnen Sie den/die zielgerichtete/n Startpunkt/Aufgabe, navigieren Sie zum Abschnitt für Präsentation und Daten und klicken Sie auf **Aktionsprofile verwalten**.
 
    Das Dialogfeld &quot;Profil verwalten&quot;wird angezeigt.
-1. Change Default render profile configurations from PDF to HTML and click **OK**.
+1. Ändern Sie die standardmäßigen Render-Profil-Konfigurationen von PDF in HTML und klicken Sie auf **OK**.
 1. Checken Sie den Prozess ein.
 1. Wiederholen Sie diese Schritte, um die Wiedergabe für andere Prozesse zu ändern.
 1. Stellen Sie die Anwendung für die geänderten Prozesse.
 
-### Standardaktionsprofil {#default-action-profile}
+### Standardaktionsprofil  {#default-action-profile}
 
 Das Standardaktionsprofil gab das XDP-Formular als PDF wieder. Dieses Verhalten wurde geändert, sodass jetzt die Prozesse Standardwiedergabeformular und Standardsendeformular verwendet werden.
 
@@ -139,7 +142,7 @@ Einige häufig gestellte Fragen zu Aktionsprofilen lauten wie folgt:
 
 Sowie entsprechende Sendeprozesse.
 
-![gen_Frage_b_20](assets/gen_question_b_20.png) **Welche Aktionssymbole stehen standardmäßig zur Verfügung?**
+![gen_Frage_b_20](assets/gen_question_b_20.png) **Welche Profile stehen standardmäßig zur Verfügung?**
 
 Für XDP-Formulare:
 
@@ -155,7 +158,7 @@ Der Benutzer muss das HTML-Optionsfeld für das Standardprofil auswählen.
 
 ![gen_Question_b_20](assets/gen_question_b_20.png) **Wird sich eine Aktualisierung auf die Änderung des Verhaltens des Profils der Standardaktion auswirken?**
 
-Ja, da die vorherigen dem Standardaktionsprofil zugeordneten Wiedergabe- und Sendedienste unterschiedlich waren, werden sie als Anpassung der vorhandenen Formulare behandelt. On clicking **Restore Defaults**, the default render and submit services are set instead.
+Ja, da die vorherigen dem Standardaktionsprofil zugeordneten Wiedergabe- und Sendedienste unterschiedlich waren, werden sie als Anpassung der vorhandenen Formulare behandelt. Wenn Sie auf **Standardwerte wiederherstellen** klicken, werden stattdessen die standardmäßigen Wiedergabe- und Sendedienste festgelegt.
 
 Wenn Sie die vorhandenen Wiedergabe- oder Sendedienste für PDF-Formulare geändert oder benutzerdefinierte Dienste (z. B. custom1) erstellt haben und nun dieselbe Funktion für die HTML-Wiedergabe verwenden möchten. Sie müssen den neuen Wiedergabe- oder Sendedienst (z. B. custom2) replizieren und ähnliche Anpassungen anwenden. Ändern Sie nun das Aktionsprofil für Ihre XDP, um custom2-Dienste anstelle von custom1-Diensten zum Wiedergeben oder Senden zu verwenden.
 
