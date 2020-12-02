@@ -1,8 +1,8 @@
 ---
-title: Verwenden des Sling Resource Merger in AEM
-seo-title: Verwenden des Sling Resource Merger in AEM
-description: Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen.
-seo-description: Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen.
+title: 'Verwenden des Sling Resource Merger in AEM    '
+seo-title: 'Verwenden des Sling Resource Merger in AEM    '
+description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
+seo-description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 99%
 
 ---
 
 
-# Verwenden des Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
+# Verwenden des Sling Resource Merger in AEM    {#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
 
 Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen. Er stellt Differenzierungsmechanismen bereit für:
 
-* **[Überlagerungen](/help/sites-developing/overlays.md)**von Ressourcen unter Verwendung der[konfigurierten Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* **[Überlagerungen](/help/sites-developing/overlays.md)** von Ressourcen unter Verwendung der [konfigurierten Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
 * **Überschreibungen** von Komponentendialogfeldern für die Touch-optimierte Benutzeroberfläche (`cq:dialog`) unter Verwendung der Ressourcentyphierarchie (anhand der Eigenschaft `sling:resourceSuperType`).
 
@@ -41,29 +44,30 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 
-* ensure that customization changes are not made in `/libs`.
-* reduce the structure that is replicated from `/libs`.
+* Sicherstellen, dass Anpassungsänderungen nicht in `/libs` vorgenommen werden
+* Die Struktur reduzieren, die von `/libs` repliziert wird
 
-   When using the Sling Resource Merger it is not recommended to copy the entire structure from `/libs` as this would result in too much information being held in the customization (usually `/apps`). Das unnötige Duplizieren von Daten erhöht die Wahrscheinlichkeit von Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
+   Bei Verwendung des Sling Resource Merger wird nicht empfohlen, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Informationen in der Anpassung (im Allgemeinen `/apps`) gespeichert werden würden. Das unnötige Duplizieren von Daten erhöht die Wahrscheinlichkeit von Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
 >[!NOTE]
 >
 >Überschreibungen hängen nicht von Suchpfaden ab, sie nutzen die Eigenschaft `sling:resourceSuperType` zur Herstellung der Verbindung.
 >
->However, overrides are often defined under `/apps`, as best practice in AEM is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
+>Trotzdem werden Überschreibungen oft unter `/apps` definiert, denn die Best Practice in AEM besteht in der Definition von Anpassungen unter `/apps`, weil Sie unter `/libs` keine Änderungen vornehmen dürfen.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu
    >
    >
-1. Make any changes within `/apps`
+1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+
 >
 
 
@@ -74,37 +78,37 @@ Der Resource Merger stellt die folgenden Eigenschaften zur Verfügung:
 
 * `sling:hideProperties` ( `String` oder `String[]`)
 
-   Gibt die Eigenschaft bzw. Liste der auszublendenden Eigenschaften an.
+   Gibt die Eigenschaft bzw. Liste der Eigenschaften an, die ausgeblendet werden sollen.
 
-   The wildcard `*` hides all.
+   Der Platzhalter `*` blendet alles aus.
 
 * `sling:hideResource` ( `Boolean`)
 
-   Gibt an, ob die Ressourcen einschließlich der untergeordneten Elemente vollständig ausgeblendet werden sollen.
+   Gibt an, ob die Ressourcen vollständig ausgeblendet werden sollen, einschließlich ihrer untergeordneten Elemente.
 
 * `sling:hideChildren` ( `String` oder `String[]`)
 
-   Enthält den untergeordneten Knoten oder die Liste der untergeordneten Knoten, die ausgeblendet werden sollen. Die Eigenschaften des Knotens werden beibehalten.
+   Enthält den untergeordneten Knoten bzw. die Liste der untergeordneten Knoten, die ausgeblendet werden sollen. Die Eigenschaften des Knotens werden beibehalten.
 
-   The wildcard `*` hides all.
+   Der Platzhalter `*` blendet alles aus.
 
-* `sling:orderBefore` ( `String`)
+* `sling:orderBefore` (  `String`)
 
-   Enthält den Namen des gleichrangigen Knotens, vor dem der aktuellen Knoten platziert werden soll.
+   Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
 
-These properties affect how the corresponding/original resources/properties (from `/libs`) are used by the overlay/override (often in `/apps`).
+Diese Eigenschaften beeinflussen, wie die entsprechenden/ursprünglichen Ressourcen/Eigenschaften (aus `/libs`) von den Überlagerungen/Überschreibungen (häufig in `/apps`) verwendet werden.
 
 ### Erstellen der Struktur {#creating-the-structure}
 
-To create an overlay or override you need to recreate the original node, with the equivalent structure, under the destination (usually `/apps`). Beispiel:
+Zum Erstellen einer Überlagerung oder Überschreibung müssen Sie den ursprünglichen Knoten mit der äquivalenten Struktur unterhalb des Ziels (häufig `/apps`) neu erstellen. Beispiel:
 
 * Überlagerung
 
-   * Die Definition des Navigationseintrags für die Site-Konsole, wie in der Leiste dargestellt, wird wie folgt definiert:
+   * Die Definition des Navigationseintrags für die Sites-Konsole, wie sie in der Leiste angezeigt ist, wird definiert unter:
 
       `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * Erstellen Sie zum Überlagern folgende Node:
+   * Erstellen Sie zum Überlagern folgenden Knoten:
 
       `/apps/cq/core/content/nav/sites`
 
@@ -112,15 +116,15 @@ To create an overlay or override you need to recreate the original node, with th
 
 * Überschreibung
 
-   * Die Definition des touchfähigen Dialoges für die Konsole &quot;Texte&quot;lautet wie folgt:
+   * Die Definition des Touch-fähigen Dialogfelds für die Textkonsole ist definiert unter:
 
       `/libs/foundation/components/text/cq:dialog`
 
-   * Um dies zu überschreiben, erstellen Sie den folgenden Knoten - z. B.:
+   * Um dies zu überschreiben, erstellen Sie den folgenden Knoten, z. B.:
 
       `/apps/the-project/components/text/cq:dialog`
 
-Um eine dieser beiden Optionen zu erstellen, müssen Sie nur die Skelettstruktur neu erstellen. To simplify the recreation of the structure all intermediary nodes can be of type `nt:unstructured` (they do not have to reflect the original node type; for example, in `/libs`).
+Um eine dieser beiden Optionen zu erstellen, müssen Sie nur die Skelettstruktur neu erstellen. Zum Vereinfachen der Neuerstellung der Struktur können alle dazwischenliegenden Knoten vom Typ `nt:unstructured` sein (sie müssen nicht dem ursprünglichen Knotentyp entsprechen, z. B. in `/libs`).
 
 Somit werden im obigen Überlagerungsbeispiel die folgenden Knoten benötigt:
 
@@ -135,7 +139,7 @@ Somit werden im obigen Überlagerungsbeispiel die folgenden Knoten benötigt:
 
 >[!NOTE]
 >
->When using the Sling Resource Merger (i.e. when dealing with the standard, touch-enabled UI) it is not recommended to copy the entire structure from `/libs` as it would result in too much information being held in `/apps`. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
+>Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) ist es nicht empfehlenswert, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Daten in `/apps` gespeichert würden. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
 ### Nutzungsszenarien {#use-cases}
 
@@ -143,38 +147,38 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Eigenschaft hinzufügen**
 
-   The property does not exist in the `/libs` definition, but is required in the `/apps` overlay/override.
+   Die Eigenschaft ist nicht in der `/libs`-Definition vorhanden, ist in der `/apps`-Überlagerung/-Überschreibung aber erforderlich.
 
-   1. Create the corresponding node within `/apps`
-   1. Erstellen Sie die neue Eigenschaft auf diesem Knoten &quot;
+   1. Erstellen Sie den entsprechenden Knoten in `/apps`.
+   1. Erstellen Sie die neue Eigenschaft auf diesem Knoten.
 
 * **Eigenschaft neu definieren (nicht automatisch erstellte Eigenschaften)**
 
-   The property is defined in `/libs`, but a new value is required in the `/apps` overlay/override.
+   Die Eigenschaft ist in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung ist ein neuer Wert erforderlich.
 
-   1. Create the corresponding node within `/apps`
-   1. Erstellen Sie die entsprechende Eigenschaft auf diesem Knoten (unter `apps`/).
+   1. Erstellen Sie den entsprechenden Knoten in `/apps`.
+   1. Erstellen Sie die entsprechende Eigenschaft auf diesem Knoten (unter /`apps`).
 
       * Die Eigenschaft verfügt über eine Priorität, die auf der Konfiguration des Sling Resource Resolver basiert.
       * Das Ändern des Eigenschaftstyps wird unterstützt.
 
-         If you use a property type different to the one used in `/libs`, then the property type you define will be used.
+         Wenn Sie einen Eigenschaftstyp verwenden, der sich von dem in `/libs` verwendeten unterscheidet, wird der von Ihnen definierte Eigenschaftstyp verwendet.
    >[!NOTE]
    >
    >Das Ändern des Eigenschaftstyps wird unterstützt.
 
 * **Automatisch erstellte Eigenschaft neu definieren**
 
-   By default, auto-created properties (such as `jcr:primaryType`) are not subject to an overlay/override to ensure that the node type currently under `/libs` is respected. To impose an overlay/override you have to recreate the node in `/apps`, explicitly hide the property and redefine it:
+   Standardmäßig unterliegen automatisch erstellte Eigenschaften (z. B. `jcr:primaryType`) keinen Überlagerungen/Überschreibungen, um sicherzustellen, dass der aktuell unter `/libs` befindliche Knotentyp respektiert wird. Um eine Überschreibung/Überlagerung vorzuschreiben, müssen Sie den Knoten in `/apps` neu erstellen, die Eigenschaft ausdrücklich ausblenden und neu definieren:
 
-   1. Create the corresponding node under `/apps` with the desired `jcr:primaryType`
-   1. Erstellen Sie die Eigenschaft `sling:hideProperties` auf diesem Knoten, wobei der Wert auf den Wert der automatisch erstellten Eigenschaft eingestellt ist. zum Beispiel `jcr:primaryType`
+   1. Erstellen Sie den entsprechenden Knoten unter `/apps` mit dem gewünschten `jcr:primaryType`.
+   1. Erstellen Sie die Eigenschaft `sling:hideProperties` auf diesem Knoten, wobei der Wert auf den Wert der automatisch erstellten Eigenschaft eingestellt ist, zum Beispiel `jcr:primaryType`.
 
-      Diese Eigenschaft, die unter `/apps`definiert wird, hat jetzt Vorrang vor der Eigenschaft, die unter `/libs`
+      Diese Eigenschaft, die unter `/apps` definiert wird, hat jetzt Vorrang vor der Eigenschaft, die unter `/libs` definiert wurde.
 
 * **Knoten und zugehörige untergeordnete Elemente neu definieren**
 
-   The node and its children are defined in `/libs`, but a new configuration is required in the `/apps` overlay/override.
+   Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber in der `/apps`-Überlagerung/Überschreibung wird eine neue Konfiguration benötigt.
 
    1. Kombinieren Sie folgende Aktionen:
 
@@ -183,9 +187,9 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Eigenschaft ausblenden**
 
-   The property is defined in `/libs`, but not required in the `/apps` overlay/override.
+   Die Eigenschaft ist in `/libs` definiert, ist aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
-   1. Create the corresponding node within `/apps`
+   1. Erstellen Sie den entsprechenden Knoten in `/apps`.
    1. Erstellen Sie eine Eigenschaft `sling:hideProperties` vom Typ `String` oder `String[]`. Geben Sie hiermit an, ob die Eigenschaften verborgen/ignoriert werden sollen. Platzhalter können auch verwendet werden. Beispiel:
 
       * `*`
@@ -195,39 +199,40 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Knoten und zugehörige untergeordnete Elemente ausblenden**
 
-   The node and its children are defined in `/libs`, but not required in the `/apps` overlay/override.
+   Der Knoten und seine untergeordneten Elemente sind in `/libs` definiert, aber für die `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten unter /apps.
-   1. Create a property `sling:hideResource`
+   1. Erstellen Sie eine Eigenschaft `sling:hideResource`.
 
       * Typ: `Boolean`
-      * value: `true`
+      * Wert: `true`
 
 * **Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)**
 
-   The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all of the child nodes are not required in the `/apps` overlay/override.
+   Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps`-Überlagerung/-Überschreibung erforderlich, aber einige oder alle der untergeordneten Knoten sind in der `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
 
    1. Erstellen Sie den entsprechenden Knoten unter `/apps`
-   1. Eigenschaft erstellen `sling:hideChildren`:
+   1. Erstellen Sie die Eigenschaft `sling:hideChildren`:
 
       * Typ: `String[]`
-      * value: a list of the child nodes (as defined in `/libs`) to hide/ignore
-      Der Platzhalter&amp;ast; können alle untergeordneten Knoten ausgeblendet/ignoriert werden.
+      * Wert: eine Liste der auszublendenden/zu ignorierenden untergeordneten Knoten (wie definiert in `/libs`)
+
+      Mit dem Platzhalter &amp;ast; können Sie alle untergeordneten Knoten ausblenden/ignorieren.
 
 
 * **Knoten neu anordnen**
 
-   The node and its siblings are defined in `/libs`. A new position is required so the node is recreated in the `/apps` overlay/override, where the new position is defined in reference to the appropriate sibling node in `/libs`.
+   Der Knoten und die ihm gleichrangigen Elemente sind in `/libs` definiert. Eine neue Position ist erforderlich, damit der Knoten in der `/apps`-Überlagerung/-Überschreibung neu erstellt wird, wobei die neue Position als Verweis auf den entsprechenden gleichrangigen Knoten in `/libs` definiert ist.
 
-   * Use the `sling:orderBefore` property:
+   * Verwenden Sie die Eigenschaft `sling:orderBefore`:
 
       1. Erstellen Sie den entsprechenden Knoten unter `/apps`
-      1. Eigenschaft erstellen `sling:orderBefore`:
+      1. Erstellen Sie die Eigenschaft `sling:orderBefore`:
 
          Dies gibt den Knoten (wie in `/libs`) an, vor dem der aktuelle Knoten positioniert werden soll:
 
          * Typ: `String`
-         * value: `<before-SiblingName>`
+         * Wert: `<before-SiblingName>`
 
 ### Aufrufen des Sling Resource Merger aus dem Code {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -237,13 +242,13 @@ Der Sling Resource Merger umfasst zwei benutzerdefinierte Ressourcenanbieter �
 >
 >Beim Zugriff auf die Ressource sollten Sie den entsprechenden Einhängepunkt verwenden.
 >
->This ensures that the Sling Resource Merger is invoked and the fully merged resource returned (reducing the structure that needs to be replicated from `/libs`).
+>Dadurch wird sichergestellt, dass der Sling Resource Merger aufgerufen und die vollständig zusammengeführte Ressource ausgegeben wird (was das Volumen an Struktur verringert, das aus `/libs` repliziert werden muss).
 
 * Überlagerung:
 
    * Zweck: Ressourcen anhand ihrer Suchpfade zusammenführen
-   * mount point: `/mnt/overlay`
-   * usage: `mount point + relative path`
+   * Einhängepunkt: `/mnt/overlay`
+   * Anwendung: `mount point + relative path`
    * Beispiel:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
@@ -251,8 +256,8 @@ Der Sling Resource Merger umfasst zwei benutzerdefinierte Ressourcenanbieter �
 * Überschreibung:
 
    * Zweck: Ressourcen anhand ihrer Supertypen zusammenführen
-   * mount point: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * Einhängepunkt: `/mnt/overide`
+   * Anwendung: `mount point + absolute path`
    * Beispiel:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
