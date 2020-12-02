@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -24,11 +24,11 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 
 | Benutzerhandbuch | Beschreibung |
 |--- |---|
-| [Benutzerhandbuch für Assets](/help/assets/home.md) | Erstellen, verwalten, liefern und optimieren Sie digitale Kreativelemente. |
+| [Benutzerhandbuch für Assets](/help/assets/home.md) | Erstellen, verwalten, liefern und optimieren Sie digitale Assets. |
 | [Forms Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird das Erstellen, Verwalten, Veröffentlichen und Aktualisieren digitaler Formulare beschrieben. |
 | [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere soziale Funktionen. |
 | [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
-| [Autorenanleitung](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
+| [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Handbuch zur Erstellung der klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM der klassischen Benutzeroberfläche erläutert. |
 | [Screens Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Signaturen zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieser Leitfaden zeigt Ihnen die Grundlagen der AEM. |
@@ -43,13 +43,13 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Hauptkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-## Copyright, licenses, and disclaimers {#copyright-licenses-and-disclaimers}
+## Copyright, Lizenzen und Haftungsausschlüsse {#copyright-licenses-and-disclaimers}
 
 Weitere Informationen finden Sie unter [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/de/legal/terms/enterprise-licensing.html)
 
-Notice of third party licenses: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Bekanntmachung von Lizenzen Dritter: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
