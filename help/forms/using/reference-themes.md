@@ -1,8 +1,8 @@
 ---
 title: Referenzthemen
 seo-title: Referenzthemen
-description: AEM Forms bietet Themen für adaptive Formulare, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können.
-seo-description: AEM Forms bietet Themen für adaptive Formulare, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können.
+description: AEM Forms stellt Themen für adaptive Formulare bereit, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können.
+seo-description: AEM Forms stellt Themen für adaptive Formulare bereit, die Sie aus der Softwareverteilung erhalten und zum Formatieren eines Formulars verwenden können.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 # Referenzthemen{#reference-themes}
 
-[Designs](../../forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. In addition to the default theme, you can get the following themes by installing the [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package:
+[Designs](../../forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Themen abrufen, indem Sie das [AEM-FORMS-REFERENCE-THEMEN](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES)-Paket installieren:
 
 * Beryl
 * Exec
@@ -36,7 +36,7 @@ Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden k�
 
 Die Designs, die in diesem Paket enthalten sind, sind responsive und die Formatierung in diesen Themen ist definiert für Mobil- und Desktopanzeigen. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
 
-For more information on installing the package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+Weitere Informationen zum Installieren des Pakets finden Sie unter [So arbeiten Sie mit Paketen](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
