@@ -12,6 +12,9 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -76,6 +79,7 @@ So fügen Sie eine neue Komponente ein:
 
    * Ziehen Sie eine Komponente aus der unverankerten Symbolleiste (auch Sidekick genannt), um einen neuen Absatz einzufügen.
    * Klicken Sie mit der rechten Maustaste auf einen bestehenden Absatz und wählen Sie **Neu...**. Die Symbolleiste „Neue Komponente einfügen“ wird geöffnet. Wählen Sie eine Komponente aus und klicken Sie auf **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. Sowohl im Sidekick als auch in der Symbolleiste **Neue Komponente einfügen** wird eine Liste der verfügbaren Komponenten (Absatztypen) angezeigt. Diese Liste kann gegliedert sein (z. B. in Allgemein, Spalten usw.), und Sie können die Gliederungen nach Bedarf aus- oder einblenden.
@@ -84,7 +88,7 @@ So fügen Sie eine neue Komponente ein:
 
 1. Fügen Sie die gewünschte Komponente in die Seite ein. Doppelklicken Sie dann auf den Absatz, und ein Fenster wird geöffnet, in dem Sie den Absatz konfigurieren und Inhalte einfügen können.
 
-### Einfügen einer Komponente mit dem Content Finder {#inserting-a-component-using-the-content-finder}
+### Einfügen einer Komponente mit dem Content Finder  {#inserting-a-component-using-the-content-finder}
 
 Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
@@ -103,7 +107,7 @@ Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem 
 
 So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
-1. Öffnen Sie die Seite im Modus [**Bearbeiten **](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
+1. Öffnen Sie die Seite im Modus [**Bearbeiten**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Öffnen Sie den [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Ziehen Sie das gewünschte Asset an die passende Position. Der [Komponenten-Platzhalter](#componentplaceholder) zeigt an, wo die Komponente platziert wird.
 
@@ -111,7 +115,7 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
 1. [Bearbeiten](#editmovecopypastedelete) Sie die Komponente.
 
-## Bearbeiten einer Komponente (Inhalt und Eigenschaften) {#editing-a-component-content-and-properties}
+## Bearbeiten einer Komponente (Inhalt und Eigenschaften)  {#editing-a-component-content-and-properties}
 
 Um einen bestehenden Absatz zu bearbeiten, führen Sie eine der folgenden Aktionen aus:
 
@@ -171,7 +175,7 @@ Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kont
 
 ## Vererbte Komponenten {#inherited-components}
 
-Vererbte Komponenten können sich aus diversen Szenarios ergeben, wie:
+Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 
 * [Multi-Site-Management](/help/sites-administering/msm.md); auch in Verbindung mit [Strukturvorlagen](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance)
 
@@ -185,9 +189,11 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
    Wenn eine Komponente Teil einer Live Copy oder eines Launches ist, wird dies durch ein Schlosssymbol angezeigt. Sie können auf das Vorhängeschloss klicken, um die Vererbung abzubrechen.
 
    * Das Schlosssymbol wird angezeigt, wenn die Komponente ausgewählt wird. Beispiel:
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
    * Das Schloss wird ebenfalls im Dialogfeld von Komponenten angezeigt. Beispiel:
+
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **Vererbungs-Absatzsystem**
@@ -200,7 +206,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 [Anmerkungen](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) bieten anderen Autoren die Möglichkeit Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau {#previewing-pages}
+## Anzeigen einer Seitenvorschau    {#previewing-pages}
 
 Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von Bedeutung:
 
@@ -220,7 +226,7 @@ Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von
 
 ## Suchen und Ersetzen {#find-replace}
 
-Bei umfangreicheren Bearbeitungen desselben Begriffs ermöglicht die Menüoption **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**die Suche nach mehreren Instanzen einer Zeichenfolge innerhalb eines Abschnitts der Website und deren Ersetzung.
+Bei umfangreicheren Bearbeitungen desselben Begriffs ermöglicht die Menüoption **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** die Suche nach mehreren Instanzen einer Zeichenfolge innerhalb eines Abschnitts der Website und deren Ersetzung.
 
 ## Sperren einer Seite {#locking-a-page}
 
@@ -250,7 +256,7 @@ So entsperren Sie eine Seite:
 1. Doppelklicken Sie auf die Seite, um sie zu öffnen.
 1. Wählen Sie auf der Registerkarte **Seite** des Sidekick die Option **Seite entsperren** aus:
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## Rückgängigmachen und Wiederholen von Seitenbearbeitungen {#undoing-and-redoing-page-edits}
 
 Verwenden Sie die folgenden Tastaturbefehle, während der Inhalts-Frame der Seite den Fokus hat:
 
@@ -261,9 +267,9 @@ Wenn Sie das Entfernen, Hinzufügen oder Verschieben von Absätzen rückgängig 
 
 >[!NOTE]
 >
->Siehe [Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie](#undoing-and-redoing-page-edits-the-theory), dort erfahren Sie, was beim Rückgängigmachen und Wiederholen von Seitenbearbeitungen möglich ist.
+>Siehe [Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie](#undoing-and-redoing-page-edits-the-theory); dort erfahren Sie, was beim Rückgängigmachen und Wiederholen von Seitenbearbeitungen möglich ist.
 
-## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
+## Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
@@ -282,6 +288,7 @@ Das Rückgängigmachen und Wiederholen von Befehlen funktioniert ähnlich wie in
 >* Aktionen wiederholen, solange Sie seit dem letzten Rückgängigmachen einer Aktion keine Seitenbearbeitungen durchgeführt haben.
 >* maximal 20 Bearbeitungsaktionen rückgängig machen (Standardeinstellung).
 >* Für das Rückgängigmachen und Wiederholen stehen auch verschiedene [Tastaturbefehle](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zur Verfügung.
+
 >
 
 
@@ -302,4 +309,4 @@ Für Formularfelder, die durch Formular-Komponenten erzeugt werden, dürfen beim
 
 >[!NOTE]
 >
->Spezielle Berechtigungen sind erforderlich, um Änderungen an Dateien und Bildern rückgängig zu machen bzw. zu wiederholen. Außerdem kann das Rückgängigmachen Änderungen an Dateien und Bildern nur einige Stunden garantiert werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Der zuständige Administrator kann Berechtigungen erteilen und die Standarddauer von zehn Stunden ändern.
+>Spezielle Berechtigungen sind erforderlich, um Änderungen rückgängig zu machen bzw. wiederherzustellen, die an Dateien und Bildern vorgenommen wurden. Außerdem kann das Rückgängigmachen Änderungen an Dateien und Bildern nur einige Stunden garantiert werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Der zuständige Administrator kann Berechtigungen erteilen und die Standarddauer von zehn Stunden ändern.
