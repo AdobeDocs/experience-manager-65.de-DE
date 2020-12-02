@@ -18,7 +18,7 @@ ht-degree: 8%
 ---
 
 
-# Funktionen für spezielle Inhalte {#featured-content-feature}
+# Funktion für spezielle Inhalte {#featured-content-feature}
 
 ## Einführung {#introduction}
 
@@ -37,25 +37,25 @@ Die Funktion zum Feature von Inhalten kann pro Komponente zugelassen oder deakti
 Dieser Abschnitt der Dokumentation beschreibt:
 
 * Hinzufügen von speziellen Inhalten zu einer Community-Site.
-* Configuration settings for the `Featured Content` component.
+* Konfigurationseinstellungen für die Komponente `Featured Content`.
 
 ## Hinzufügen von speziellen Inhalten zu einer Seite {#adding-featured-content-to-a-page}
 
-To add a `Featured Content` component to a page in author mode, use the component browser to locate
+Um einer Seite im Autorenmodus eine `Featured Content`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach
 
 * `Communities / Featured Content`
 
 und ziehen Sie es auf eine Seite, auf der der spezielle Inhalt angezeigt werden soll.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content` component will appear:
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-featured.md#essentials-for-client-side) einbezogen werden, wird die `Featured Content`-Komponente wie folgt angezeigt:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
 ## Konfigurieren von speziellen Inhalten {#configuring-featured-content}
 
-Select the placed `Featured Content` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Featured Content` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -63,11 +63,11 @@ Select the placed `Featured Content` component to access and select the `Configu
 
 ### Registerkarte „Settings“{#settings-tab}
 
-Identifizieren Sie auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &quot;den zu verwendenden Inhalt:
+Identifizieren Sie unter der Registerkarte **[!UICONTROL Einstellungen]** den Inhalt, der funktionsfähig sein soll:
 
 * **[!UICONTROL Anzeigename]**
 
-   Der Titel für die Liste von speziellen Inhalten. For example `Featured Questions` or `Featured Ideas`. Die Standardeinstellung ist `Featured Content` bei leerem Feld.
+   Der Titel für die Liste von speziellen Inhalten. Beispiel: `Featured Questions` oder `Featured Ideas`. Die Standardeinstellung ist `Featured Content`, wenn leer gelassen.
 
 * **[!UICONTROL Position des präsentierten Inhalts]**
 
@@ -81,13 +81,13 @@ Identifizieren Sie auf der Registerkarte &quot; **[!UICONTROL Einstellungen]** &
 
 Die Möglichkeit, Inhalte als speziellen Inhalt zu kennzeichnen, erfordert Moderatorenrechte.
 
-Wenn ein Moderator gepostete Inhalte Ansicht, hat er Zugriff auf die kontextbezogenen Moderations-Flags, die das neue `Feature` Flag enthalten.
+Wenn ein Moderator gepostete Inhalte Ansicht, hat er Zugriff auf die kontextbezogenen Moderations-Flags, die das neue `Feature`-Flag enthalten.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Wenn das Flag als Funktion markiert wurde, wird es `Unfeature`zu dem Modeartions-Flag.
+Wenn das Modeartions-Flag als Funktion markiert wurde, wird es zu `Unfeature`.
 
-Die Seite, die die `Featured Content` Komponente enthält, enthält jetzt diesen Beitrag.
+Die Seite, die die Komponente `Featured Content` enthält, enthält jetzt diesen Beitrag.
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -95,6 +95,6 @@ Die Seite, die die `Featured Content` Komponente enthält, enthält jetzt diesen
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Featured Content](essentials-featured.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Vorgestellte Inhalte](essentials-featured.md) für Entwickler.
 
-Informationen zum Anzeigen von Inhalten mit den Funktionen finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
+Informationen zum Anzeigen von Inhalten mit den entsprechenden Funktionen finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
