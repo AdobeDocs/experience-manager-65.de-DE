@@ -20,27 +20,27 @@ ht-degree: 25%
 
 # Verwenden einer Abstimmung {#using-voting}
 
-The `Voting` component is a useful tool that allows community members to rate a particular piece of content, such as an answer within a QnA component. With the `Voting` component, members select up or down arrows to indicate their opinion.
+Die Komponente `Voting` ist ein nützliches Tool, mit dem Community-Mitglieder einen bestimmten Inhalt bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Bei der Komponente `Voting` wählen die Mitglieder Pfeilschaltflächen nach oben oder unten aus, um ihre Meinung anzugeben.
 
 ## Hinzufügen einer Abstimmung zu einer Seite {#adding-voting-to-a-page}
 
-Wenn Sie einer Seite im Autorenmodus eine `Voting` Komponente hinzufügen möchten, verwenden Sie den Komponenten-Browser, um sie zu suchen `Communities / Voting` und an ihre Position auf einer Seite zu ziehen, z. B. eine Position relativ zur Funktion, über die Benutzer abstimmen müssen.
+Um einer Seite im Autorenmodus eine `Voting`-Komponente hinzuzufügen, suchen Sie im Komponentenbrowser nach `Communities / Voting` und ziehen Sie sie auf eine Seite, z. B. eine Position relativ zur Funktion, über die Benutzer abstimmen können.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Die erforderlichen Informationen finden Sie unter [Komponenten der Communities](basics.md).
 
-When the [required client-side libraries](essentials-voting.md#essentials-for-client-side) are included, this is how the `Voting` component will appear.
+Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-voting.md#essentials-for-client-side) einbezogen werden, wird die `Voting`-Komponente so angezeigt.
 
 ![stimmberechtigte Komponente](assets/voting-component.png)
 
 ## Konfigurieren einer Abstimmung {#configuring-voting}
 
-Select the placed `Voting` component to access and select the `Configure` icon which opens the edit dialog.
+Wählen Sie die platzierte Komponente `Voting` aus, auf die zugegriffen werden soll, und wählen Sie das Symbol `Configure` aus, mit dem das Bearbeitungsdialogfeld geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
-Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used to record votes.
+Geben Sie auf der Registerkarte **[!UICONTROL Texte und Bezeichnungen]** die Eigenschaften für die Aufzeichnung von Abstimmungen an.
 
-![stimmetikett](assets/voting-label.png)
+![wahlbeschriftung](assets/voting-label.png)
 
 * **[!UICONTROL Beschriftung für positive Antwort]**
 
@@ -52,7 +52,7 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 * **[!UICONTROL Zählername]**
 
-   (*Required*) The internal, identifiable property name for this instance of a voting component.
+   (*Erforderlich*) Der interne, identifizierbare Eigenschaftsname für diese Instanz einer stimmberechtigten Komponente.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -66,4 +66,4 @@ Eine anonyme Abstimmung wird nicht unterstützt. Besucher der Website müssen si
 
 ## Zusätzliche Informationen {#additional-information}
 
-More information may be found on the [Voting Essentials](essentials-voting.md) page for developers.
+Weitere Informationen finden Sie auf der Seite [Essentials](essentials-voting.md) für Entwickler.
