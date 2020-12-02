@@ -26,8 +26,8 @@ Sie können [adaptive Formulare in eine AEM-Siteseite](/help/forms/using/embed-a
 Führen Sie folgende Schritte aus, bevor Sie ein adaptives Formular in eine externe Webseite einbetten:
 
 * Veröffentlichen Sie das einzubettende adaptive Formular in der Veröffentlichungsinstanz von AEM Forms Server.
-* Erstellen Sie auf Ihrer Website eine Webseite oder legen Sie sie fest, um das adaptive Formular zu hosten. Ensure that the webpage can [read jQuery files from a CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) or has a local copy of the jQuery embeded. jQuery ist erforderlich, um ein adaptives Formular zu rendern.
-* When AEM server and the web page are on different domains, perform the steps listed in sectiion, [enable AEM Forms to serve adaptive forms to a cross domain site](#cross-site).
+* Erstellen Sie auf Ihrer Website eine Webseite oder legen Sie sie fest, um das adaptive Formular zu hosten. Stellen Sie sicher, dass die Webseite jQuery-Dateien aus einem CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) lesen kann oder eine lokale Kopie der jQuery-Datei eingebettet ist. [ jQuery ist erforderlich, um ein adaptives Formular zu rendern.
+* Wenn sich AEM Server und die Webseite auf unterschiedlichen Domänen befinden, führen Sie die Schritte im Abschnitt [Aktivieren Sie AEM Forms, um adaptive Formulare für eine domänenübergreifende Site](#cross-site) bereitzustellen.
 
 ## Adaptives Formular einbetten {#embed-adaptive-form}
 
@@ -98,8 +98,8 @@ Einbetten des adaptiven Formulars:
 
 1. Im eingebetteten Code:
 
-   * Change value of the *options.path* variable with the path of the publish URL of the adaptive form. Wenn der AEM-Server in einem Kontextpfad ausgeführt wird, stellen Sie sicher, dass die URL diesen Pfad enthält. Erwähnen Sie immer den vollständigen Namen des adaptiven Formulars einschließlich der Erweiterung.   Beispiel: Der oben aufgeführte Code und das adaptive Formular befinden sich auf demselben AEM Formularserver, sodass im Beispiel der Kontextpfad des adaptiven Formulars /content/forms/af/locbasic.html verwendet wird.
-   * Ersetzen Sie *options.dataRef* durch Attribute, die mit der URL übertragen werden sollen. You can use the dataref variable to [prefill an adaptive form](/help/forms/using/prepopulate-adaptive-form-fields.md).
+   * Ändern Sie den Wert der Variablen *options.path* mit dem Pfad der Veröffentlichungs-URL des adaptiven Formulars. Wenn der AEM-Server in einem Kontextpfad ausgeführt wird, stellen Sie sicher, dass die URL diesen Pfad enthält. Erwähnen Sie immer den vollständigen Namen des adaptiven Formulars einschließlich der Erweiterung.   Beispiel: Der oben aufgeführte Code und das adaptive Formular befinden sich auf demselben AEM Formularserver, sodass im Beispiel der Kontextpfad des adaptiven Formulars /content/forms/af/locbasic.html verwendet wird.
+   * Ersetzen Sie *options.dataRef* durch Attribute, die mit der URL übertragen werden sollen. Sie können die Variable &quot;dataref&quot;zum Vorausfüllen eines adaptiven Formulars [verwenden.](/help/forms/using/prepopulate-adaptive-form-fields.md)
    * Ersetzen Sie *options.themePath* durch den Pfad zu einem anderen Design als dem im adaptiven Formular konfigurierten Design. Alternativ können Sie den Designpfad mit dem Anforderungsattribut angeben.
    * CSS_Selector ist der CSS-Selektor des Formularcontainers, in den das adaptive Formular eingebettet ist. Beispiel: Die CSS-Klasse &quot;.customafsection&quot;ist im obigen Beispiel der CSS-Selektor.
 
@@ -116,7 +116,7 @@ Das adaptive Formular wird in die Webseite eingebettet. Beobachten Sie Folgendes
 
 Die externe Webseite, in die das adaptive Formular eingebettet wird, sendet Anforderungen an den AEM-Server, der sich in der Regel hinter der Firewall in einem privaten Netzwerk befindet. Um sicherzustellen, dass die Anforderungen sicher auf den AEM-Server geleitet werden, wird empfohlen, einen Reverse-Proxy-Server einzurichten.
 
-Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server ohne Dispatcher einrichten können. In this example, you will host the AEM server with `/forms` context path and map `/forms` for the reverse proxy. It ensures that any request for `/forms` on Apache server are directed to the AEM instance. This topology helps reduces the number of rules at the dispatcher layer as all request prefixed with `/forms` route to the AEM server.
+Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server ohne Dispatcher einrichten können. In diesem Beispiel hosten Sie den AEM-Server mit dem Kontextpfad `/forms` und ordnen `/forms` für den Reverse-Proxy zu. Es stellt sicher, dass alle Anforderungen für `/forms` auf dem Apache-Server an die AEM Instanz weitergeleitet werden. Diese Topologie hilft, die Anzahl der Regeln auf der Dispatcher-Ebene zu reduzieren, da alle Anforderungen mit dem Präfix `/forms` zum AEM Server geleitet werden.
 
 1. Öffnen Sie die Konfigurationsdatei `httpd.conf` und heben Sie den Kommentar für die folgenden Codezeilen auf. Alternativ können Sie die folgenden Codezeilen in die Datei einfügen.
 
@@ -132,7 +132,7 @@ Schauen wir uns ein Beispiel an, wie Sie einen Apache 2.4-Reverse-Proxy-Server o
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Replace `[AEM_Instance]` with the AEM server publish URL in the rules.
+   Ersetzen Sie `[AEM_Instance]` durch die Veröffentlichungs-URL des AEM Servers in den Regeln.
 
 Wenn Sie den AEM-Server nicht auf einem Kontextpfad bereitstellen, lauten die Proxyregeln auf der Apache-Ebene wie folgt:
 
@@ -159,13 +159,13 @@ Berücksichtigen Sie beim Einbetten eines adaptiven Formulars in eine Webseite d
 
 * Stellen Sie sicher, dass die Formatierungsregeln in den Webseite-CSS nicht mit den Formularobjekt-CSS in Konflikt stehen. Um dies zu vermeiden, können Sie die Webseite-CSS im Design für das adaptive Formular mithilfe der AEM-Clientbibliothek wiederverwenden. Weitere Informationen zur Verwendung der Client-Bibliothek in den Designs für adaptive Formulare finden Sie unter [Designs in AEM Forms](../../forms/using/themes.md).
 * Verwenden Sie für den Formularcontainer auf der Webseite die gesamte Fensterbreite. So wird sichergestellt, dass die für mobile Geräte konfigurierten CSS-Regeln ohne Änderungen funktionieren. Wenn der Formularcontainer nicht die gesamte Fensterbreite einnimmt, müssen Sie benutzerdefinierte CSS schreiben, damit sich das Formular an verschiedene mobile Geräte anpasst.
-* Use `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
-* Use `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
+* Verwenden Sie die API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)`, um die XML- oder JSON-Darstellung der Formulardaten im Client abzurufen.
+* Verwenden Sie die API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)`, um das adaptive Formular aus dem HTML-DOM zu entladen.
 * Richten Sie beim Senden der Antwort vom AEM den Header access-control-Herkunft ein.
 
 ## Bereitstellung adaptiver Formulare auf einer domänenübergreifenden Site durch AEM Forms {#cross-site}
 
-1. On AEM author instance, go to AEM Web Console Configuration Manager at `https://'[server]:[port]'/system/console/configMgr`.
+1. Wechseln Sie auf AEM Autoreninstanz zu AEM Web Console Configuration Manager unter `https://'[server]:[port]'/system/console/configMgr`.
 1. Suchen Sie die Konfiguration **Apache Sling Referrer Filter** und öffnen Sie sie.
 1. Geben Sie im Feld Zulässige Hosts die Domäne an, in der sich die Webseite befindet. Dadurch kann der Host POST-Anforderungen an den AEM-Server senden. Sie können auch einen regulären Ausdruck verwenden, um eine Reihe von externen Anwendungsdomänen anzugeben.
 
