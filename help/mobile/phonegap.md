@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 17%
 
 ---
 
@@ -20,17 +23,17 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Adobe Experience Manager (AEM) Mobile ist nur eine Säule, die die vollständige AEM-Plattform bildet.
+Adobe Experience Manager (AEM) Mobile ist nur eine Säule, die die gesamte AEM Plattform ausmacht.
 
-Das Starten einer neuen AEM Mobile-App erfordert einen Zusammenhalt von Rollen, bevor sie zur Inhaltsbearbeitung bereit ist. Die folgenden Rollen sind ein Ausgangspunkt für die Erstellung einer neuen AEM Mobile-Anwendung:
+Das Starten einer neuen AEM Mobile-App erfordert einen Zusammenhalt von Rollen, bevor sie für die Bearbeitung von Inhalten bereit ist. Die folgenden Rollen sind ein Ausgangspunkt für die Erstellung einer neuen AEM Mobile-Anwendung:
 
 * **Administrator**
 * **Entwickler**
 * **Autor**
 
-## Erstellen von PhoneGap-Anwendungen {#authoring-phonegap-applications}
+## Authoring von PhoneGap-Anwendungen {#authoring-phonegap-applications}
 
-Ein ***AEM-Autor *(oder*Marketer *)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag &amp; Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bilder, Videos und Textfragmente (Inhaltsfragmente).
+Ein ***AEM-Autor* (oder *Marketer*)**kann die vordefinierten Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag &amp; Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bilder, Videos und Textfragmente (Inhaltsfragmente).
 
 Sehen Sie sich die folgenden Ressourcen an, um zu beginnen:
 
@@ -42,7 +45,7 @@ Sehen Sie sich die folgenden Ressourcen an, um zu beginnen:
 * [Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen](/help/mobile/phonegap-create-new-app.md)
 * [Eine vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Weitere Informationen zu **Content Services** finden Sie unter Übersicht über [Content Services](/help/mobile/develop-content-as-a-service.md) .
+Weitere Informationen zu **Content Services** finden Sie unter [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md).
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
