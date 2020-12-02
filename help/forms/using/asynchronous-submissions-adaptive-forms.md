@@ -22,7 +22,7 @@ ht-degree: 67%
 
 Webformulare werden herkömmlicherweise für die synchrone Übermittlung konfiguriert. Wenn Benutzer ein Formular synchron senden, werden sie zu einer Bestätigungsseite, zu einer Danksagungsseite oder bei fehlgeschlagener Übermittlung zu einer Fehlerseite umgeleitet. Allerdings sind moderne Webabläufe wie Einzelseitenanwendungen zunehmend beliebt. Dabei bleibt die Webseite unverändert, während die Client-Server-Interaktion im Hintergrund abläuft. Sie können diese Erfahrung jetzt in adaptiven Formularen bieten, indem Sie die asynchrone Übermittlung konfigurieren.
 
-Bei asynchroner Übermittlung fügt der Formularentwickler ein separates Erlebnis ein, z. B. beim Weiterleiten zu einem anderen Formular oder einem separaten Abschnitt der Website. Der Autor kann auch separate Dienste wie das Senden von Daten an einen anderen Datenspeicher oder eine benutzerdefinierte Analytics-Engine hinzufügen. Bei asynchroner Übermittlung verhält sich ein adaptives Formular wie eine Einzelseitenanwendung, da das Formular nicht erneut geladen wird oder sich die URL nicht ändert, wenn die gesendeten Formulardaten auf dem Server validiert werden.
+Bei asynchroner Übermittlung fügt der Formularentwickler ein separates Erlebnis ein, z. B. beim Weiterleiten zu einem anderen Formular oder einem separaten Abschnitt der Website. Der Autor kann auch separate Dienste wie das Senden von Daten an einen anderen Datenspeicher oder eine benutzerdefinierte Analytics-Engine hinzufügen. Bei asynchroner Übermittlung verhält sich ein adaptives Formular wie eine Einzelseitenanwendung, da das Formular nicht erneut geladen wird oder sich seine URL nicht ändert, wenn die gesendeten Formulardaten auf dem Server validiert werden.
 
 Im Folgenden finden Sie Details zu asynchronen Übermittlung in adaptiven Formularen.
 
@@ -30,14 +30,14 @@ Im Folgenden finden Sie Details zu asynchronen Übermittlung in adaptiven Formul
 
 So konfigurieren Sie die asynchrone Übermittlung für eine adaptives Formular:
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![cmppr1](assets/cmppr1.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
+1. Wählen Sie im Authoring-Modus für adaptive Formulare das Objekt &quot;Form Container&quot;aus und tippen Sie auf ![cmppr1](assets/cmppr1.png), um die Eigenschaften zu öffnen.
+1. Aktivieren Sie im Abschnitt **[!UICONTROL Submission]** properties **[!UICONTROL Asynchronous submission]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Beim Absenden]** eine der folgenden Optionen aus, die bei der erfolgreichen Übermittlung des Formulars ausgeführt werden soll.
 
-   * **[!UICONTROL Zu URL umleiten]**: Leitet bei Übermittlung des Formulars an die angegebene URL bzw. auf die angegebene Seite um. You can specify a URL or browse to choose the path to a page in the **[!UICONTROL Redirect URL/Path]** field.
+   * **[!UICONTROL Zu URL umleiten]**: Leitet bei Übermittlung des Formulars an die angegebene URL bzw. auf die angegebene Seite um. Sie können eine URL angeben oder im Feld **[!UICONTROL Umleitungs-URL/Pfad]** den Pfad zu einer Seite auswählen.
    * **[!UICONTROL Nachricht anzeigen]**: Zeigt eine Meldung beim Senden des Formulars an. Sie können eine Nachricht in das Textfeld unter der Option Nachricht anzeigen schreiben. Das Textfeld unterstützt Rich Text-Formatierung.
 
-1. Tap ![check-button1](assets/check-button1.png) to save the properties.
+1. Tippen Sie auf ![check-button1](assets/check-button1.png), um die Eigenschaften zu speichern.
 
 ## Funktionsweise der asynchronen Übermittlung {#how-asynchronous-submission-works}
 
@@ -69,7 +69,7 @@ Die Antwort des Servers für die erfolgreiche Übermittlung eines Formulars enth
 
 Der Erfolgs-Handler liest die Serverantwort und leitet dementsprechend zur konfigurierten Seiten-URL weiter oder zeigt eine Meldung an.
 
-### Serverantwort für Fehlerereignis bei Übermittlung {#server-response-for-submission-error-event}
+### Serverantwort für Fehlerereignis bei Übermittlung  {#server-response-for-submission-error-event}
 
 Die Serverantwort für Fehlerereignis bei Übermittlung weist folgende Struktur auf:
 
@@ -93,13 +93,13 @@ Die Antwort des Servers für eine fehlgeschlagene Übermittlung eines Formulars 
 
 Der Fehler-Handler liest die Serverantwort und zeigt die entsprechende Fehlermeldung im Formular an.
 
-## Standard-Handler mithilfe von Regeln außer Kraft setzen {#custom}
+## Standard-Handler mithilfe von Regeln außer Kraft setzen  {#custom}
 
-Formularautoren und -entwickler können im Codeeditor formularspezifische Regeln schreiben, die die Standard-Handler außer Kraft setzen. The server response for success and error events is exposed at form level, which developers can access using `$event.data` in rules.
+Formularautoren und -entwickler können im Codeeditor formularspezifische Regeln schreiben, die die Standard-Handler außer Kraft setzen. Die Serverantwort auf Erfolgs- und Fehlermeldungen wird auf Formularebene bereitgestellt, auf die Entwickler mithilfe von `$event.data` in Ereignissen zugreifen können.
 
 Führen Sie die folgenden Schritte aus, um im Codeeditor Regeln zu schreiben, um die Erfolgs- und Fehlerereignisse zu verarbeiten.
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![edit-rules1](assets/edit-rules1.png) to open the rule editor.
+1. Öffnen Sie das adaptive Formular im Bearbeitungsmodus, wählen Sie ein beliebiges Formularobjekt aus und tippen Sie auf ![edit-rules1](assets/edit-rules1.png), um den Regeleditor zu öffnen.
 1. Wählen Sie **[!UICONTROL Formular]** in der Struktur „Formularobjekte“ und tippen Sie auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie **[!UICONTROL Codeeditor]** aus der Dropdownliste zur Auswahl des Modus.
 1. Tippen Sie im Codeeditor auf **[!UICONTROL Code bearbeiten]**. Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Bearbeiten]**.
