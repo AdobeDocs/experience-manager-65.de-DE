@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +31,7 @@ Connector für IBM Content Manager aktiviert die Kommunikation zwischen AEM Form
 1. (Optional) Geben Sie in das Feld „Alias-Verbindungszeichenfolge“ zusätzliche Verbindungsargumente ein. In den meisten Fällen sollte dieses Feld leer sein. Weitere Informationen finden Sie in der IMB-Dokumentation.
 1. Klicken Sie auf Speichern.
 
-## Diensteinstellungen überprüfen {#validation-of-service-settings}
+## Diensteinstellungen überprüfen  {#validation-of-service-settings}
 
 Wenn Sie einen falschen Aliasnamen für den Datenspeicher, einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhalten Sie in Abhängigkeit davon, ob der Content Repository Connector für IBM Content Manager-Dienst aktuell ausgeführt wird, folgende Ergebnisse:
 
