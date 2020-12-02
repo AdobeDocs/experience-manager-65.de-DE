@@ -12,33 +12,33 @@ translation-type: tm+mt
 source-git-commit: 0985ba24f7430381fccc40faf3a316d3abd85a30
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 69%
+ht-degree: 98%
 
 ---
 
 
 # Stilsystem{#style-system}
 
-Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, wodurch die Komponente flexibler wird.
+Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um die Komponente flexibler zu gestalten.
 
-So muss nicht eigens für jeden Stil eine benutzerdefinierte Komponente entwickelt oder der Komponentendialog angepasst werden, um eine derartige Stilfunktionalität zu ermöglichen. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Back-End-Entwicklung erforderlich ist.
+So muss nicht eigens für jeden Stil eine benutzerdefinierte Komponente entwickelt oder der Komponentendialog angepasst werden, um eine derartige Stilfunktionalität zu ermöglichen. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Backend-Entwicklung erforderlich ist.
 
-## Nutzungsszenario   {#use-case}
+## Nutzungsszenario  {#use-case}
 
 Vorlagenautoren müssen nicht nur die Funktionsweise der Komponenten für die Inhaltsautoren konfigurieren können, sondern auch eine Reihe alternativer visueller Varianten einer Komponente.
 
 Genauso müssen Inhaltsautoren ihre Inhalte nicht nur strukturieren und anordnen können. Sie müssen auch auswählen können, wie der Inhalt visuell präsentiert wird.
 
-Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen sowohl des Vorlagenautors als auch des Inhaltsautors:
+Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorlagenautors und des Inhaltsautors:
 
 * Vorlagenautoren können in den Inhaltsrichtlinien für Komponenten Stilklassen festlegen.
 * Inhaltsautoren können diese Klassen später aus einem Dropdown-Menü auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die jeweiligen Stile darauf anzuwenden.
 
 Die Stilklasse wird daraufhin in das Decoration-Wrapper-Element der Komponente eingefügt, sodass sich der Komponentenentwickler nicht mit der Handhabung der Stile über die Bereitstellung der CSS-Regeln hinaus befassen muss.
 
-## Übersicht {#overview}
+## Überblick{#overview}
 
-Die Verwendung des Stilsystems nimmt im Allgemeinen folgende Form an.
+Die allgemeine Verwendung des Stilsystems sieht wie folgt aus.
 
 1. Der Webdesigner erstellt unterschiedliche visuelle Varianten einer Komponente.
 
@@ -52,23 +52,23 @@ Die Verwendung des Stilsystems nimmt im Allgemeinen folgende Form an.
 
 1. Der AEM-Entwickler oder der Vorlagenautor konfiguriert die Seitenvorlagen und bearbeitet die Richtlinien für die formatierten Komponenten mit den definierten CSS-Klassen. Dabei legt er benutzerfreundliche Namen für die einzelnen Stile fest und definiert, welche Stile kombiniert werden können.
 
-1. Der AEM-Seitenautor kann die entworfenen Stile daraufhin über das Stilmenü in der Symbolleiste einer Komponente im Seiten-Editor auswählen.
+1. Der AEM-Seitenautor kann die entworfenen Stile daraufhin über das Stilmenü in der Symbolleiste einer Komponente im Seiteneditor auswählen.
 
 Beachten Sie, dass nur die letzten drei Schritte direkt in AEM ausgeführt werden. Das bedeutet, dass die gesamte erforderliche CSS- und JavaScript-Entwicklung ohne AEM durchgeführt werden kann.
 
-Für die eigentliche Implementierung der Stile ist nur die Bereitstellung in AEM sowie die Auswahl innerhalb der Komponenten der gewünschten Vorlagen erforderlich.
+Für die eigentliche Implementierung der Stile ist nur die Implementierung in AEM sowie die Auswahl innerhalb der Komponenten der gewünschten Vorlagen erforderlich.
 
-Das folgende Diagramm zeigt die Architektur des Stilsystems.
+Das folgende Diagramm veranschaulicht die Architektur des Stilsystems.
 
 ![aem-style-system](assets/aem-style-system.png)
 
-## Verwenden Sie {#use}
+## Verwenden {#use}
 
-Zur Veranschaulichung der Funktion wird die Implementierung der [Titelkomponente](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)der Kernkomponente [durch](https://www.adobe.com/go/aem_cmp_title_v2) WKNDs verwendet.
+Zur Veranschaulichung der Funktion werden wir die [WKND](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-Implementierung der Komponente [Titel](https://www.adobe.com/go/aem_cmp_title_v2_de) der Kernkomponente als Beispiel verwenden.
 
-The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+In den folgenden Abschnitten [Als Inhaltsautor](#as-a-content-author) und [Als Vorlagenautor](#as-a-template-author) wird beschrieben, wie Sie die Funktionalität des Stilsystems mit dem WKND-Stilsystem testen können.
 
-Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, führen Sie folgende Schritte aus:
+Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen Sie wie folgt vor:
 
 1. Installieren Sie den CSS-Code als Client-Bibliotheken, wie im Abschnitt [Überblick](#overview) erklärt.
 1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt [Als Vorlagenautor](#as-a-template-author) beschrieben.
@@ -76,8 +76,8 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, führe
 
 ### Als Inhaltsautor   {#as-a-content-author}
 
-1. Nach der Installation des WKND-Projekts navigieren Sie zur englischsprachigen Masterseite von WKND `http://<host>:<port>/sites.html/content/wknd/language-masters/en` und bearbeiten Sie die Startseite.
-1. Wählen Sie eine **Titel** -Komponente weiter unten auf der Seite
+1. Gehen Sie nach der Installation des WKND-Projekts zur englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` und bearbeiten Sie die Seite.
+1. Wählen Sie weiter unten auf der Seite eine Komponente **Titel** aus
 
    ![Stilsystem für den Autor](assets/style-system-author.png)
 
@@ -87,15 +87,15 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, führe
 
    >[!NOTE]
    >
-   >In diesem Beispiel schließen sich die **Farbstile** (**Schwarz**, **Weiß** und **Grau**) gegenseitig aus, während die **Stiloptionen**************(,Align RightundMini Spacing) kombiniert werden können. Dies kann [als Vorlagenautor in der Vorlage konfiguriert werden](#as-a-template-author).
+   >In diesem Beispiel schließen sich die **Farbstile** (**Schwarz**, **Weiß** und **Grau**) gegenseitig aus, während die **Stiloptionen** (**Unterstrichen**, **Rechtsbündig ausrichten** und **Mini-Abstand**) kombiniert werden können. Dies kann [vom Vorlagenautor in der Vorlage konfiguriert werden](#as-a-template-author).
 
 ### Als Vorlagenautor   {#as-a-template-author}
 
-1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
+1. Bei der Bearbeitung der englischsprachigen Primär-Homepage von WKND unter `http://<host>:<port>/sites.html/content/wknd/language-masters/en` können Sie die Vorlage der Seite über **Seiteninformationen > Vorlage bearbeiten** anpassen.
 
    ![Vorlage bearbeiten](assets/style-system-edit-template.png)
 
-1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
+1. Bearbeiten Sie die Richtlinien für die Komponente **Titel**, indem Sie auf die Schaltfläche **Richtlinie** der Komponente klicken.
 
    ![Richtlinie bearbeiten](assets/style-system-edit-policy.png)
 
@@ -107,39 +107,40 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, führe
    * **Stile können kombiniert werden:** Legt fest, dass mehrere Stile innerhalb einer Gruppe gleichzeitig ausgewählt werden können.
    * **Stilname:** Die Beschreibung des Stils, der dem Inhaltsautor bei der Konfiguration des Stils der Komponente angezeigt wird.
    * **CSS-Klassen:** Der tatsächliche Name der dem Stil zugeordneten CSS-Klasse.
+
    Ordnen Sie die Gruppen und die Stile innerhalb der Gruppen mit den Ziehpunkten. Nutzen Sie die Symbole „Hinzufügen“ oder „Löschen“, um Gruppen bzw. Stile innerhalb der Gruppen hinzuzufügen oder zu entfernen.
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (sowie der JavaScript-Code, soweit erforderlich) müssen als [Client-Bibliotheken](/help/sites-developing/clientlibs.md) bereitgestellt werden, damit sie funktionieren.
 
 ## Einrichtung {#setup}
 
-Die Core-Komponenten Version 2 und höher sind vollständig aktiviert, um das Style-System nutzen zu können und erfordern keine zusätzliche Konfiguration.
+Die Kernkomponenten ab Version 2 können die Vorteile des Stilsystems voll nutzen und erfordern keine zusätzliche Konfiguration.
 
-Die folgenden Schritte sind nur erforderlich, um das Stilsystem für Ihre eigenen benutzerdefinierten Komponenten zu aktivieren oder die optionale Registerkarte &quot;Stile&quot;im Dialogfeld &quot;Bearbeiten&quot;zu [aktivieren.](#enable-styles-tab-edit)
+Die folgenden Schritte sind nur erforderlich, um das Stilsystem für Ihre eigenen benutzerdefinierten Komponenten zu aktivieren oder um die [optionale Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ zu aktivieren](#enable-styles-tab-edit).
 
-### Registerkarte &quot;Stil&quot;im Dialogfeld &quot;Design&quot;aktivieren {#enable-styles-tab-design}
+### Aktivieren der Registerkarte „Stil“ im Dialogfeld „Design“ {#enable-styles-tab-design}
 
-Damit eine Komponente mit dem AEM-Stilsystem funktioniert und die Stilregisterkarte im Designdialogfeld angezeigt wird, muss der Komponentenentwickler die Stilregisterkarte mit den folgenden Einstellungen für die Komponente einschließen:
+Damit eine Komponente mit dem Stilsystem von AEM verwendet werden kann und die Registerkarte „Stil“ im Dialogfeld „Design“ angezeigt wird, muss der Komponentenentwickler die Registerkarte „Stil“ mit den folgenden Einstellungen für die Komponente miteinbeziehen:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautoren festgelegten Stile automatisch in den Decoration-Element-Wrapper ein, der automatisch auf alle bearbeitbaren Komponenten angewendet wird. Dafür ist keine weitere Aktion der Komponente erforderlich.
 
-### Registerkarte &quot;Stile&quot;im Dialogfeld &quot;Bearbeiten&quot;aktivieren {#enable-styles-tab-edit}
+### Aktivieren der Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ {#enable-styles-tab-edit}
 
-Ab AEM Version 6.5.3.0 ist jetzt eine optionale Registerkarte &quot;Stile&quot;im Dialogfeld &quot;Bearbeiten&quot;verfügbar. Anders als bei der Registerkarte &quot;Designdialog&quot;ist die Registerkarte im Dialogfeld &quot;Bearbeiten&quot;nicht unbedingt erforderlich, damit das Stilsystem funktioniert, sondern eine optionale alternative Schnittstelle, über die ein Inhaltsersteller Stile festlegen kann.
+Ab AEM Version 6.5.3.0 ist jetzt eine optionale Registerkarte &quot;Stile&quot;im Dialogfeld &quot;Bearbeiten&quot;verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
 
-Die Registerkarte &quot;Dialogfeld bearbeiten&quot;kann ähnlich wie die Registerkarte &quot;Designdialogfeld&quot;eingefügt werden:
+Die Registerkarte für das Bearbeitungsdialogfeld kann auf ähnliche Weise wie die Registerkarte für das Dialogfeld „Design“ eingebunden werden:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
 >
->Die Registerkarte &quot;Stile&quot;im Dialogfeld &quot;Bearbeiten&quot;ist standardmäßig nicht aktiviert.
+>Die Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ ist standardmäßig nicht aktiviert.
 
 ### Stile mit Elementnamen   {#styles-with-element-names}
 
@@ -156,6 +157,7 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 >1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
 >1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
+
 >
 
 
