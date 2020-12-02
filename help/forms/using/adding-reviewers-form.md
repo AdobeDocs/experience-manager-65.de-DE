@@ -43,12 +43,12 @@ Bearbeiten des Metadatenschemas:
     schemalist.html/forms/aem-authored
    ```
 
-1. Select **Adaptive Form** and click **Edit**.
+1. Wählen Sie **Adaptives Formular** und klicken Sie auf **Bearbeiten**.
 1. Wählen Sie auf der Seite „Formular bearbeiten“ **Erweitert**.
-1. In the Advanced tab, drag-and-drop the **Single Line Text** component available under Build Form.
+1. Ziehen Sie auf der Registerkarte &quot;Erweitert&quot;die Komponente **Einzelzeilentext**, die unter &quot;Formular erstellen&quot;verfügbar ist.
 1. Wählen Sie die hinzugefügte Textkomponente aus, um die Einstellungen zu überprüfen.
 
-   Geben Sie unter &quot;Einstellungen&quot; `./jcr:content/metadata/form-submission-reviewer-group` im Feld &quot;Zuordnung zu Eigenschaft&quot;ein.
+   Geben Sie unter &quot;Einstellungen&quot;im Feld &quot;Zu Eigenschaft zuordnen&quot;`./jcr:content/metadata/form-submission-reviewer-group` ein.
 
    Das Feld für die Reviewer-Gruppe-Gruppenfeld in den erweiterten Eigenschaften des adaptiven Formulars wird mit dem Namen aktiviert, den Sie unter „Feldbezeichnung“ angeben.
 
@@ -59,14 +59,14 @@ Mit Benutzergruppen können Sie verschiedene Sätze von Reviewern für Übermitt
 
 Bevor Sie die folgenden Schritte ausführen, lesen Sie die [ Voraussetzungen](../../forms/using/adding-reviewers-form.md#prerequisite).
 
-To create a group and add members to it, navigate to **Tools** > **Operations** > **Security** > **Groups**.
-For more information, see [User Administration and Services](/help/sites-administering/security.md).
-Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Diese Benutzergruppe wird mit AEM Forms geliefert und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
+Um eine Gruppe zu erstellen und ihr Mitglieder hinzuzufügen, navigieren Sie zu **Tools** > **Vorgänge** > **Sicherheit** > **Gruppen**.
+Weitere Informationen finden Sie unter [Benutzerverwaltung und Dienste](/help/sites-administering/security.md).
+Stellen Sie sicher, dass Sie die erstellte Gruppe als Mitglied der vordefinierten Benutzergruppe hinzufügen: **forms-submission-reviewers**. Diese Benutzergruppe wird mit AEM Forms ausgeliefert und stellt sicher, dass Benutzer als Übermittlungsreviewer hinzugefügt werden.
 
 Verknüpfen von Benutzergruppen mit einem adaptiven Formular:
 
 1. Navigieren Sie im Bearbeitungsmodus zu **Formulare** >**Formulare und Dokumente**.
-1. Use the **Select **option to select an adaptive form, and click **View Properties**.
+1. Wählen Sie mit der Option **Select **ein adaptives Formular aus und klicken Sie auf **Ansicht Properties**.
 1. Klicken Sie im Fenster „Eigenschaften“ des Formulars auf **Bearbeiten** und dann auf **ERWEITERT**.
 1. Geben Sie die Gruppe im Feld „Übermittlungs-Reviewer-Gruppe“ ein und klicken Sie auf **Fertig**.
 
