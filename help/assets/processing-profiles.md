@@ -44,7 +44,7 @@ Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen m
 
 >[!NOTE]
 >
->Gilt nur für *dynamische Medien - Scene7-Modus* in AEM 6.4.6.0 oder höher.
+>Gilt nur für *Dynamische Medien - Scene7-Modus* in AEM 6.4.6.0 oder höher.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
@@ -75,18 +75,18 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
    * Wenn sich im ausgewählten Hauptordner ein oder mehrere Unterordner mit Assets befinden, verarbeitet der Workflow jedes Asset in der Ordnerhierarchie neu.
    * Es empfiehlt sich, diesen Workflow nicht in einer Ordnerhierarchie mit mehr als 1.000 Assets auszuführen.
 
-1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Timeline.]**
+1. Klicken Sie oben links auf der Seite in der Dropdown-Liste auf **[!UICONTROL Zeitleiste.]**
 1. Klicken Sie unten links auf der Seite rechts neben dem Kommentarfeld auf das Caret-Symbol (**^**).
 
    ![Workflow zur Neuverarbeitung von Assets 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Klicken Sie auf **[!UICONTROL Workflow starten.]**
-1. From the **[!UICONTROL Start Workflow]** drop-down list, choose **[!UICONTROL Scene7: Reprocess Assets.]**
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Beginn Workflow]** **[!UICONTROL Scene7: Assets neu verarbeiten.]**
 1. (Optional) Geben Sie im Textfeld **Titel des Workflows eingeben** einen Namen für den Workflow ein. Sie können den Namen gegebenenfalls verwenden, um auf die Workflow-Instanz zu verweisen.
 
    ![Assets erneut verarbeiten 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Bestätigen.]**
+1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen.]**
 
    Klicken Sie auf der Hauptseite der AEM-Konsole auf **[!UICONTROL Tools > Workflow, um den Workflow zu überwachen oder dessen Fortschritt zu überprüfen.]** Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf.]** Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
@@ -96,14 +96,14 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows**
 
-1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
+1. Klicken Sie in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um die globale Navigationskonsole aufzurufen, und klicken Sie dann auf das Symbol **[!UICONTROL Tools]** (Hammer) > **[!UICONTROL Workflow > Modelle.]**
 1. Wählen Sie auf der Seite „Workflow-Modelle“ in der Karten- oder Listenansicht **[!UICONTROL Scene7: Assets erneut verarbeiten]** aus.
 
    ![Seite „Workflow-Modelle“ mit „Scene7: Assets erneut verarbeiten“ in der Kartenansicht ausgewählt](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten.]** Eine neue Browser-Registerkarte öffnet die Workflow-Modellseite „Scene7: Assets erneut verarbeiten“.
-1. On the Scene7: Reprocess Assets workflow page, near the upper-right corner, click **[!UICONTROL Edit]** to &quot;unlock&quot; the workflow.
-1. In the workflow, select the Scene7 Batch Upload component to open the toolbar, then click **[!UICONTROL Configure]** on the toolbar.
+1. Scene7: Workflow-Seite &quot;Assets neu verarbeiten&quot;rechts oben auf **[!UICONTROL Bearbeiten]** klicken, um den Workflow zu &quot;entsperren&quot;.
+1. Wählen Sie im Workflow die Komponente Scene7 Batch Upload aus, um die Symbolleiste zu öffnen, und klicken Sie dann auf **[!UICONTROL Configure]** in der Symbolleiste.
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -117,9 +117,9 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Dialogfeld „Eigenschaften“](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done]**.
+1. Klicken Sie in der rechten oberen Ecke des Dialogfelds **[!UICONTROL Batch Upload to Scene7 - Step Properties]** auf **[!UICONTROL Done]**.
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. Oben rechts im Scene7: Die Seite zum Workflow-Modell für Assets neu verarbeiten, klicken Sie auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 
