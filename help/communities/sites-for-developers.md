@@ -29,7 +29,7 @@ Gehen Sie dazu wie folgt vor:
 * Erstellen Sie eine benutzerdefinierte Vorlage.
 * Überlagern Sie den Standardpfad für die Site-Vorlage.
 * hinzufügen die benutzerdefinierte Vorlage an den Überlagerungspfad.
-* Geben Sie die benutzerdefinierte Vorlage an, indem Sie der `page-template` Node eine `configuration` Eigenschaft hinzufügen.
+* Geben Sie die benutzerdefinierte Vorlage an, indem Sie der Node `configuration` eine `page-template`-Eigenschaft hinzufügen.
 
 **Standardvorlage**:
 
@@ -43,7 +43,7 @@ Gehen Sie dazu wie folgt vor:
 
 **Typ**: String
 
-**Wert**: `template-name` (keine Erweiterung)
+**Wert**:  `template-name` (keine Erweiterung)
 
 **Konfigurationsknoten**:
 
@@ -53,43 +53,44 @@ Beispiel: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Alle Knoten im überlagerten Pfad müssen nur vom Typ `Folder`sein.
+>Alle Knoten im überlagerten Pfad müssen nur vom Typ `Folder` sein.
 
 >[!CAUTION]
 >
->Wenn der benutzerdefinierten Vorlage der Name *sitepage.hbs* zugewiesen wird, werden alle Community-Sites angepasst.
+>Wenn die benutzerdefinierte Vorlage den Namen *sitepage.hbs* erhält, werden alle Community-Sites angepasst.
 
-### Beispiel für eine benutzerdefinierte Site {#custom-site-template-example}
+### Beispiel für eine benutzerdefinierte Site-Vorlage {#custom-site-template-example}
 
-Beispiel: `vertical-sitepage.hbs` Eine Sitevorlage, die dazu führt, dass Menülinks vertikal links unten auf der Seite platziert werden, anstatt horizontal unterhalb des Banners.
+Beispiel: `vertical-sitepage.hbs` ist eine Sitevorlage, die dazu führt, dass Menülinks vertikal unten auf der Seite platziert werden, anstatt horizontal unterhalb des Banners.
 
-[Datei abrufen](assets/vertical-sitepage.hbs)Platzieren Sie die benutzerdefinierte Site-Vorlage im Überlagerungsordner:
+[Datei ](assets/vertical-sitepage.hbs)
+abrufenPlatzieren Sie die benutzerdefinierte Sitevorlage im Überlagerungsordner:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie eine `page-template` Eigenschaft zum Konfigurationsknoten hinzufügen:
+Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie dem Konfigurationsknoten eine `page-template`-Eigenschaft hinzufügen:
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Achten Sie darauf, &quot;Alle **speichern** &quot;zu verwenden und benutzerdefinierten Code in allen AEM Instanzen zu replizieren (benutzerspezifischer Code ist nicht enthalten, wenn der Inhalt der Community-Site in der Konsole veröffentlicht wird).
+Stellen Sie sicher, dass Sie **Alle speichern** und benutzerdefinierten Code in allen AEM Instanzen replizieren (benutzerspezifischer Code wird nicht einbezogen, wenn der Inhalt der Community-Site in der Konsole veröffentlicht wird).
 
-Es wird empfohlen, benutzerspezifischen Code zu replizieren, indem Sie ein Paket [erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) und es auf allen Instanzen bereitstellen.
+Die empfohlene Vorgehensweise zum Replizieren von benutzerspezifischem Code ist [Erstellen eines Pakets](../../help/sites-administering/package-manager.md#creating-a-new-package) und Bereitstellen des Pakets auf allen Instanzen.
 
 ## Exportieren einer Community-Site {#exporting-a-community-site}
 
 Nachdem eine Community-Site erstellt wurde, ist es möglich, die Site als AEM Paket zu exportieren, das im Paketmanager gespeichert ist und zum Herunterladen und Hochladen verfügbar ist.
 
-Diese ist in der [Communities Sites-Konsole](sites-console.md#exporting-the-site)verfügbar.
+Diese ist in der Konsole [Communities Sites](sites-console.md#exporting-the-site) verfügbar.
 
 Beachten Sie, dass UGC und benutzerspezifischer Code nicht im Paket der Community-Site enthalten sind.
 
-Um UGC zu exportieren, verwenden Sie das [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), ein Open Source-Migrationswerkzeug, das auf GitHub verfügbar ist.
+Um UGC zu exportieren, verwenden Sie das [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), ein Open Source Migration Tool, das auf GitHub verfügbar ist.
 
 ## Löschen einer Community-Site {#deleting-a-community-site}
 
-Ab AEM Communities 6.3 Service Pack 1 wird das Symbol &quot;Site löschen&quot;angezeigt, wenn Sie den Mauszeiger über die Community-Site von **[!UICONTROL Communities]** > **[!UICONTROL Sites]** -Konsole führen. Wenn Sie während der Entwicklung eine Community-Site und einen Beginn löschen möchten, können Sie diese Funktion verwenden. Wenn Sie eine Community-Site löschen, werden die folgenden Elemente, die mit dieser Site verbunden sind, entfernt:
+Ab AEM Communities 6.3 Service Pack 1 wird das Symbol &quot;Site löschen&quot;angezeigt, wenn Sie den Mauszeiger über die Community-Site von der Konsole **[!UICONTROL Communities]** > **[!UICONTROL Sites]** halten. Wenn Sie während der Entwicklung eine Community-Site und einen Beginn löschen möchten, können Sie diese Funktion verwenden. Wenn Sie eine Community-Site löschen, werden die folgenden Elemente, die mit dieser Site verbunden sind, entfernt:
 
 * [UGC](#user-generated-content)
 * [Benutzergruppen](#community-user-groups)
@@ -102,15 +103,15 @@ Identifizieren der eindeutigen Site-ID, die mit der Community-Site verknüpft is
 
 * Navigieren Sie zum Sprachstamm der Site, z. B. `/content/sites/*<site name>*/en/rep:policy`.
 
-* Suchen Sie den `allow<#>` Knoten mit einem `rep:principalName` in diesem Format `rep:principalName = *community-enable-nrh9h-members*`.
+* Suchen Sie den Knoten `allow<#>` mit einem `rep:principalName` in diesem Format `rep:principalName = *community-enable-nrh9h-members*`.
 
 * Die Site-ID ist die dritte Komponente von `rep:principalName`
 
    Wenn z. B.`rep:principalName = community-enable-nrh9h-members`
 
-   * **site name** = *enable*
-   * **Site-ID** = *nrh9h*
-   * **eindeutige Site-ID** = *enable-nrh9h*
+   * **site name** =  *enable*
+   * **site ID** =  *nrh9h*
+   * **unique site ID** =  *enable-nrh9h*
 
 ### Benutzergenerierte Inhalte {#user-generated-content}
 
@@ -124,14 +125,14 @@ Alle UGC können entfernt werden oder für eine bestimmte Site, z. B.:
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Dadurch werden nur benutzergenerierte Inhalte (die in der Veröffentlichung eingegeben werden) und nicht verfasste Inhalte (die im Autor eingegeben wurden) entfernt. Daher sind [Schattenknoten](srp.md#shadownodes) nicht betroffen.
+Dadurch werden nur benutzergenerierte Inhalte (die in der Veröffentlichung eingegeben werden) und nicht verfasste Inhalte (die im Autor eingegeben wurden) entfernt. Daher sind [Shadow-Knoten](srp.md#shadownodes) nicht betroffen.
 
 ### Community-Benutzergruppen {#community-user-groups}
 
-Suchen Sie in allen Autoren- und Veröffentlichungsinstanzen in der [Sicherheitskonsole](../../help/sites-administering/security.md)nach den [Benutzergruppen](users.md) , die folgende Elemente enthalten:
+Suchen Sie in allen Autor- und Veröffentlichungsinstanzen in der Sicherheitskonsole [die [Benutzergruppen](users.md), die folgende sind:](../../help/sites-administering/security.md)
 
 * Präfix mit `community`
-* Nach [eindeutiger Site-ID](#community-unique-site-id)
+* Gefolgt von [eindeutiger Site-ID](#community-unique-site-id)
 
 Beispiel: `community-engage-x0e11-members`.
 
@@ -139,10 +140,10 @@ Beispiel: `community-engage-x0e11-members`.
 
 In der Hauptkonsole:
 
-* Select **[!UICONTROL Assets]**.
-* Starten Sie den **[!UICONTROL Auswahlmodus]** .
-* Wählen Sie den Ordner mit der [eindeutigen Site-ID](#community-unique-site-id)aus.
-* Wählen Sie &quot; **[!UICONTROL Löschen]** &quot;(unter **[!UICONTROL Mehr...]**).
+* Wählen Sie **[!UICONTROL Assets]**.
+* Geben Sie **[!UICONTROL Select]** mode ein.
+* Wählen Sie den Ordner mit dem Namen [eindeutige Site-ID](#community-unique-site-id).
+* Wählen Sie **[!UICONTROL Löschen]** (unter **[!UICONTROL Mehr...]**).
 
 ### Datenbankdatensätze {#database-records}
 
