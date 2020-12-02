@@ -37,8 +37,7 @@ Am Ende dieser Schulung können Sie Folgendes:
 * Erstellen einer interaktiven Kommunikation
 * Testen und veröffentlichen Sie eine interaktive Kommunikation
 
-## Anwendungsfall{#use-case}
-
+## Anwendungsfall {#use-case}
 
 Die Reise beginnt mit dem Erlernen des Anwendungsfalls:
 
@@ -53,7 +52,7 @@ Ein Telekommunikationsbetreiber sendet monatliche Rechnungen über die E-Mail an
 * Richten Sie eine AEM-Author-Instanz ein.
 * Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz
 * Richten Sie die MYSQL-Datenbank ein
-* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Examples in the tutorial are based on MySQL database and use Oracle&#39;s [MySQL JDBC database driver](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele in der Übung basieren auf der MySQL-Datenbank und verwenden den Oracle-Datenbanktreiber [MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Schritt 1: Planen Sie die interaktive Kommunikation {#step-plan-the-interactive-communication}
 
@@ -77,7 +76,7 @@ So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgen
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Ein Formulardatenmodell ermöglicht es, eine interaktive Kommunikation mit unterschiedlichen Datenquellen zu verbinden. Zum Beispiel AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einer interaktiven Kommunikation verwenden, um Daten aus verbundenen Datenquellen abzurufen. For more information about form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+Ein Formulardatenmodell ermöglicht es, eine interaktive Kommunikation mit unterschiedlichen Datenquellen zu verbinden. Zum Beispiel AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einer interaktiven Kommunikation verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
 **Ziele:**
 
