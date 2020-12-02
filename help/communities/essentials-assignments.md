@@ -19,9 +19,9 @@ ht-degree: 14%
 ---
 
 
-# Grundlagen der Zuweisung {#assignments-essentials}
+# Zuweisungen Essentials {#assignments-essentials}
 
-Lesen Sie weiter, um sich über die wesentlichen Informationen zum Arbeiten mit der Funktion &quot;Aufgaben&quot;auf [Community](/help/communities/overview.md#enablement-community) -Sites zu informieren.
+Lesen Sie weiter, um sich über die wesentlichen Informationen zum Arbeiten mit der Zuweisungsfunktion von [Aktivieren-Community](/help/communities/overview.md#enablement-community)-Sites zu informieren.
 
 Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und Lernpfaden zu Mitgliedern von Communities, die eine Aktivierung ermöglichen.
 
@@ -39,7 +39,7 @@ Die Funktion &quot;Zuweisungen&quot;ermöglicht die Zuweisung von Ressourcen und
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.myassign<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learningPath</td>
+   <td>cq.social.enable.hbs.breadcrumbs<br /> cq.social.enable.hbs.myassign<br /> cq.social.enable.hbs.resource<br /> cq.social.enable.hbs.learn.path</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -77,8 +77,8 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 
 | **Abschluss** | **Success** |
 |---|---|
-| Nicht gestartet | Unknown |
-| Wird ausgeführt | Unknown |
+| Nicht gestartet | unbekannt |
+| Wird ausgeführt | unbekannt |
 | Fertig stellen | Bestanden |
 | Fertig stellen | Fehler |
 
@@ -86,7 +86,7 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 
 ### Zuweisungsfunktion {#assignments-function}
 
-Eine Community-Site-Struktur, die die [Zuweisungsfunktion](/help/communities/functions.md#assignments-function)enthält, enthält eine konfigurierte ` [assignments](/help/communities/assignments.md)` Komponente.
+Eine Community-Site-Struktur, die die Funktion [Zuweisungen](/help/communities/functions.md#assignments-function) enthält, enthält eine konfigurierte Komponente ` [assignments](/help/communities/assignments.md)`.
 
 ### Referenz-APIs {#reference-apis}
 
@@ -94,5 +94,5 @@ Eine Community-Site-Struktur, die die [Zuweisungsfunktion](/help/communities/fun
 
 * [Berichte-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Berichte Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Berichte Analytics-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 
